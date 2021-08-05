@@ -68,8 +68,7 @@ object columnGroupMod {
     @JSImport("rbx/grid/columns/column-group", "COLUMN_GROUP_DEFAULTS.gapSizes")
     @js.native
     def gapSizes: js.Tuple9[`0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`] = js.native
-    @scala.inline
-    def gapSizes_=(x: js.Tuple9[`0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gapSizes")(x.asInstanceOf[js.Any])
+    inline def gapSizes_=(x: js.Tuple9[`0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gapSizes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rbx/grid/columns/column-group", "ColumnGroup")
@@ -82,20 +81,16 @@ object columnGroupMod {
   }
   object ColumnGroupBreakpointOptions {
     
-    @scala.inline
-    def apply(): ColumnGroupBreakpointOptions = {
+    inline def apply(): ColumnGroupBreakpointOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnGroupBreakpointOptions]
     }
     
-    @scala.inline
-    implicit class ColumnGroupBreakpointOptionsMutableBuilder[Self <: ColumnGroupBreakpointOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnGroupBreakpointOptions](x: Self) {
       
-      @scala.inline
-      def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+      inline def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
+      inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     }
   }
   
@@ -127,86 +122,60 @@ object columnGroupMod {
   }
   object ColumnGroupModifierProps {
     
-    @scala.inline
-    def apply(): ColumnGroupModifierProps = {
+    inline def apply(): ColumnGroupModifierProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnGroupModifierProps]
     }
     
-    @scala.inline
-    implicit class ColumnGroupModifierPropsMutableBuilder[Self <: ColumnGroupModifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnGroupModifierProps](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
-      @scala.inline
-      def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+      inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+      inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
       
-      @scala.inline
-      def setDesktop(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setFullhd(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
+      inline def setFullhd(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
+      inline def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
       
-      @scala.inline
-      def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+      inline def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
+      inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
       
-      @scala.inline
-      def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
+      inline def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
+      inline def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
       
-      @scala.inline
-      def setMobile(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setTablet(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+      inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
       
-      @scala.inline
-      def setTouch(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+      inline def setTouch(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+      inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
       
-      @scala.inline
-      def setVcentered(value: Boolean): Self = StObject.set(x, "vcentered", value.asInstanceOf[js.Any])
+      inline def setVcentered(value: Boolean): Self = StObject.set(x, "vcentered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVcenteredUndefined: Self = StObject.set(x, "vcentered", js.undefined)
+      inline def setVcenteredUndefined: Self = StObject.set(x, "vcentered", js.undefined)
       
-      @scala.inline
-      def setWidescreen(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
+      inline def setWidescreen(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
+      inline def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
     }
   }
   
@@ -312,288 +281,196 @@ object columnGroupMod {
   }
   object ColumnGroupProps {
     
-    @scala.inline
-    def apply(): ColumnGroupProps = {
+    inline def apply(): ColumnGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnGroupProps]
     }
     
-    @scala.inline
-    implicit class ColumnGroupPropsMutableBuilder[Self <: ColumnGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnGroupProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(
+      inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
+      inline def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
+      inline def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
       
-      @scala.inline
-      def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
+      inline def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
+      inline def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
       
-      @scala.inline
-      def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
+      inline def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
+      inline def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
       
-      @scala.inline
-      def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
+      inline def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
+      inline def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
-      @scala.inline
-      def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+      inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+      inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
+      inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
+      inline def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
       
-      @scala.inline
-      def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
+      inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
+      inline def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
       
-      @scala.inline
-      def setDesktop(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setFullhd(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
+      inline def setFullhd(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
+      inline def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
       
-      @scala.inline
-      def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+      inline def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
+      inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
       
-      @scala.inline
-      def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
+      inline def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
+      inline def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+      inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+      inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
+      inline def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
+      inline def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
       
-      @scala.inline
-      def setMobile(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
+      inline def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
+      inline def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
       
-      @scala.inline
-      def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+      inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
       
-      @scala.inline
-      def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
+      inline def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
+      inline def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
+      inline def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
+      inline def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
       
-      @scala.inline
-      def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
+      inline def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
+      inline def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
       
-      @scala.inline
-      def setTablet(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+      inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextColor(
+      inline def setTextColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+      inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
       
-      @scala.inline
-      def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
+      inline def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
+      inline def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
+      inline def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
+      inline def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
       
-      @scala.inline
-      def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
+      inline def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
+      inline def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
       
-      @scala.inline
-      def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
+      inline def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
+      inline def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
       
-      @scala.inline
-      def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+      inline def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+      inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
       
-      @scala.inline
-      def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
+      inline def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
+      inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setTouch(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+      inline def setTouch(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+      inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      @scala.inline
-      def setVcentered(value: Boolean): Self = StObject.set(x, "vcentered", value.asInstanceOf[js.Any])
+      inline def setVcentered(value: Boolean): Self = StObject.set(x, "vcentered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVcenteredUndefined: Self = StObject.set(x, "vcentered", js.undefined)
+      inline def setVcenteredUndefined: Self = StObject.set(x, "vcentered", js.undefined)
       
-      @scala.inline
-      def setWidescreen(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
+      inline def setWidescreen(value: ColumnGroupBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
+      inline def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
     }
   }
   
@@ -604,17 +481,14 @@ object columnGroupMod {
   }
   object ColumnGroupVariables {
     
-    @scala.inline
-    def apply(gapSizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): ColumnGroupVariables = {
+    inline def apply(gapSizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): ColumnGroupVariables = {
       val __obj = js.Dynamic.literal(gapSizes = gapSizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnGroupVariables]
     }
     
-    @scala.inline
-    implicit class ColumnGroupVariablesMutableBuilder[Self <: ColumnGroupVariables] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnGroupVariables](x: Self) {
       
-      @scala.inline
-      def setGapSizes(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSizes", value.asInstanceOf[js.Any])
+      inline def setGapSizes(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSizes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -624,17 +498,14 @@ object columnGroupMod {
   }
   object ColumnGroupVariablesDefaults {
     
-    @scala.inline
-    def apply(gapSizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): ColumnGroupVariablesDefaults = {
+    inline def apply(gapSizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): ColumnGroupVariablesDefaults = {
       val __obj = js.Dynamic.literal(gapSizes = gapSizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnGroupVariablesDefaults]
     }
     
-    @scala.inline
-    implicit class ColumnGroupVariablesDefaultsMutableBuilder[Self <: ColumnGroupVariablesDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnGroupVariablesDefaults](x: Self) {
       
-      @scala.inline
-      def setGapSizes(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSizes", value.asInstanceOf[js.Any])
+      inline def setGapSizes(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSizes", value.asInstanceOf[js.Any])
     }
   }
   

@@ -17,8 +17,7 @@ trait DepsExpr extends StObject {
 }
 object DepsExpr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     depsExpr: typings.angularCompiler.outputAstMod.Expression,
     flags: NodeFlags,
     providerExpr: typings.angularCompiler.outputAstMod.Expression,
@@ -28,19 +27,14 @@ object DepsExpr {
     __obj.asInstanceOf[DepsExpr]
   }
   
-  @scala.inline
-  implicit class DepsExprMutableBuilder[Self <: DepsExpr] (val x: Self) extends AnyVal {
+  extension [Self <: DepsExpr](x: Self) {
     
-    @scala.inline
-    def setDepsExpr(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "depsExpr", value.asInstanceOf[js.Any])
+    inline def setDepsExpr(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "depsExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: NodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: NodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderExpr(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "providerExpr", value.asInstanceOf[js.Any])
+    inline def setProviderExpr(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "providerExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenExpr(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "tokenExpr", value.asInstanceOf[js.Any])
+    inline def setTokenExpr(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "tokenExpr", value.asInstanceOf[js.Any])
   }
 }

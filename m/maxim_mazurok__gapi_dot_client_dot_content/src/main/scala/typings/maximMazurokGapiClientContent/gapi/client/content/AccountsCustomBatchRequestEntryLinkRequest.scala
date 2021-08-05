@@ -20,40 +20,29 @@ trait AccountsCustomBatchRequestEntryLinkRequest extends StObject {
 }
 object AccountsCustomBatchRequestEntryLinkRequest {
   
-  @scala.inline
-  def apply(): AccountsCustomBatchRequestEntryLinkRequest = {
+  inline def apply(): AccountsCustomBatchRequestEntryLinkRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountsCustomBatchRequestEntryLinkRequest]
   }
   
-  @scala.inline
-  implicit class AccountsCustomBatchRequestEntryLinkRequestMutableBuilder[Self <: AccountsCustomBatchRequestEntryLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AccountsCustomBatchRequestEntryLinkRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
+    inline def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     
-    @scala.inline
-    def setLinkedAccountId(value: String): Self = StObject.set(x, "linkedAccountId", value.asInstanceOf[js.Any])
+    inline def setLinkedAccountId(value: String): Self = StObject.set(x, "linkedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedAccountIdUndefined: Self = StObject.set(x, "linkedAccountId", js.undefined)
+    inline def setLinkedAccountIdUndefined: Self = StObject.set(x, "linkedAccountId", js.undefined)
     
-    @scala.inline
-    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

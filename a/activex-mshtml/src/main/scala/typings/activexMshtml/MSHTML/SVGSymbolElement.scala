@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGSymbolElement extends StObject {
   
-  @JSName("MSHTML.SVGSymbolElement_typekey")
+  /* private */ @JSName("MSHTML.SVGSymbolElement_typekey")
   var MSHTMLDotSVGSymbolElement_typekey: SVGSymbolElement
   
   val className: SVGAnimatedString
@@ -31,8 +31,7 @@ trait SVGSymbolElement extends StObject {
 }
 object SVGSymbolElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGSymbolElement_typekey: SVGSymbolElement,
     className: SVGAnimatedString,
     externalResourcesRequired: SVGAnimatedBoolean,
@@ -50,40 +49,28 @@ object SVGSymbolElement {
     __obj.asInstanceOf[SVGSymbolElement]
   }
   
-  @scala.inline
-  implicit class SVGSymbolElementMutableBuilder[Self <: SVGSymbolElement] (val x: Self) extends AnyVal {
+  extension [Self <: SVGSymbolElement](x: Self) {
     
-    @scala.inline
-    def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
+    inline def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGSymbolElement_typekey(value: SVGSymbolElement): Self = StObject.set(x, "MSHTML.SVGSymbolElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGSymbolElement_typekey(value: SVGSymbolElement): Self = StObject.set(x, "MSHTML.SVGSymbolElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
+    inline def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+    inline def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewBox(value: SVGAnimatedRect): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    inline def setViewBox(value: SVGAnimatedRect): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
+    inline def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
+    inline def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmllang(value: String): Self = StObject.set(x, "xmllang", value.asInstanceOf[js.Any])
+    inline def setXmllang(value: String): Self = StObject.set(x, "xmllang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlspace(value: String): Self = StObject.set(x, "xmlspace", value.asInstanceOf[js.Any])
+    inline def setXmlspace(value: String): Self = StObject.set(x, "xmlspace", value.asInstanceOf[js.Any])
   }
 }

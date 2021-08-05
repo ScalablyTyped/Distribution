@@ -13,19 +13,15 @@ trait RevocationConfiguration extends StObject {
 }
 object RevocationConfiguration {
   
-  @scala.inline
-  def apply(): RevocationConfiguration = {
+  inline def apply(): RevocationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevocationConfiguration]
   }
   
-  @scala.inline
-  implicit class RevocationConfigurationMutableBuilder[Self <: RevocationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RevocationConfiguration](x: Self) {
     
-    @scala.inline
-    def setCrlConfiguration(value: CrlConfiguration): Self = StObject.set(x, "CrlConfiguration", value.asInstanceOf[js.Any])
+    inline def setCrlConfiguration(value: CrlConfiguration): Self = StObject.set(x, "CrlConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrlConfigurationUndefined: Self = StObject.set(x, "CrlConfiguration", js.undefined)
+    inline def setCrlConfigurationUndefined: Self = StObject.set(x, "CrlConfiguration", js.undefined)
   }
 }

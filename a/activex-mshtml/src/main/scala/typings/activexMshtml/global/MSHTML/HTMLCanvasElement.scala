@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCanvasElement")
 @js.native
-class HTMLCanvasElement protected ()
+/* private */ class HTMLCanvasElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCanvasElement

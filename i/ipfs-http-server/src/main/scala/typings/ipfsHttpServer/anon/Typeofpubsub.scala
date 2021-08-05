@@ -14,22 +14,17 @@ trait Typeofpubsub extends StObject {
 }
 object Typeofpubsub {
   
-  @scala.inline
-  def apply(cancel: Typeofcancel, state: Typeofstate, subs: Typeofsubs): Typeofpubsub = {
+  inline def apply(cancel: Typeofcancel, state: Typeofstate, subs: Typeofsubs): Typeofpubsub = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], subs = subs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofpubsub]
   }
   
-  @scala.inline
-  implicit class TypeofpubsubMutableBuilder[Self <: Typeofpubsub] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofpubsub](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Typeofcancel): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Typeofcancel): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Typeofstate): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Typeofstate): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubs(value: Typeofsubs): Self = StObject.set(x, "subs", value.asInstanceOf[js.Any])
+    inline def setSubs(value: Typeofsubs): Self = StObject.set(x, "subs", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait StartTextTranslationJobResponse extends StObject {
 }
 object StartTextTranslationJobResponse {
   
-  @scala.inline
-  def apply(): StartTextTranslationJobResponse = {
+  inline def apply(): StartTextTranslationJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTextTranslationJobResponse]
   }
   
-  @scala.inline
-  implicit class StartTextTranslationJobResponseMutableBuilder[Self <: StartTextTranslationJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartTextTranslationJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
   }
 }

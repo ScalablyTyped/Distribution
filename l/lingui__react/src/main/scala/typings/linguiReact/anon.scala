@@ -15,23 +15,18 @@ object anon {
   }
   object I18n {
     
-    @scala.inline
-    def apply(i18n: I18n_): I18n = {
+    inline def apply(i18n: I18n_): I18n = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18n]
     }
     
-    @scala.inline
-    implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+    extension [Self <: I18n](x: Self) {
       
-      @scala.inline
-      def setI18n(value: I18n_): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: I18n_): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nHash(value: String): Self = StObject.set(x, "i18nHash", value.asInstanceOf[js.Any])
+      inline def setI18nHash(value: String): Self = StObject.set(x, "i18nHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nHashUndefined: Self = StObject.set(x, "i18nHash", js.undefined)
+      inline def setI18nHashUndefined: Self = StObject.set(x, "i18nHash", js.undefined)
     }
   }
 }

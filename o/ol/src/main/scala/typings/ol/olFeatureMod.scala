@@ -23,12 +23,9 @@ object olFeatureMod {
     def this(opt_geometryOrProperties: StringDictionary[js.Any]) = this()
   }
   
-  @scala.inline
-  def createStyleFunction(obj: js.Array[typings.ol.styleStyleMod.default]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
-  @scala.inline
-  def createStyleFunction(obj: StyleFunction): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
-  @scala.inline
-  def createStyleFunction(obj: typings.ol.styleStyleMod.default): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  inline def createStyleFunction(obj: js.Array[typings.ol.styleStyleMod.default]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  inline def createStyleFunction(obj: StyleFunction): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  inline def createStyleFunction(obj: typings.ol.styleStyleMod.default): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
   
   @js.native
   trait Feature[GeomType /* <: typings.ol.geometryMod.default */]

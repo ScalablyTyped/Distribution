@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLDialog extends StObject {
   
-  @JSName("MSHTML.HTMLDialog_typekey")
+  /* private */ @JSName("MSHTML.HTMLDialog_typekey")
   var MSHTMLDotHTMLDialog_typekey: HTMLDialog
   
   def close(): Unit
@@ -27,8 +27,7 @@ trait HTMLDialog extends StObject {
 }
 object HTMLDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLDialog_typekey: HTMLDialog,
     close: () => Unit,
     dialogArguments: js.Any,
@@ -44,34 +43,24 @@ object HTMLDialog {
     __obj.asInstanceOf[HTMLDialog]
   }
   
-  @scala.inline
-  implicit class HTMLDialogMutableBuilder[Self <: HTMLDialog] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLDialog](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDialogArguments(value: js.Any): Self = StObject.set(x, "dialogArguments", value.asInstanceOf[js.Any])
+    inline def setDialogArguments(value: js.Any): Self = StObject.set(x, "dialogArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogHeight(value: js.Any): Self = StObject.set(x, "dialogHeight", value.asInstanceOf[js.Any])
+    inline def setDialogHeight(value: js.Any): Self = StObject.set(x, "dialogHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogLeft(value: js.Any): Self = StObject.set(x, "dialogLeft", value.asInstanceOf[js.Any])
+    inline def setDialogLeft(value: js.Any): Self = StObject.set(x, "dialogLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogTop(value: js.Any): Self = StObject.set(x, "dialogTop", value.asInstanceOf[js.Any])
+    inline def setDialogTop(value: js.Any): Self = StObject.set(x, "dialogTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogWidth(value: js.Any): Self = StObject.set(x, "dialogWidth", value.asInstanceOf[js.Any])
+    inline def setDialogWidth(value: js.Any): Self = StObject.set(x, "dialogWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLDialog_typekey(value: HTMLDialog): Self = StObject.set(x, "MSHTML.HTMLDialog_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLDialog_typekey(value: HTMLDialog): Self = StObject.set(x, "MSHTML.HTMLDialog_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuArguments(value: js.Any): Self = StObject.set(x, "menuArguments", value.asInstanceOf[js.Any])
+    inline def setMenuArguments(value: js.Any): Self = StObject.set(x, "menuArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

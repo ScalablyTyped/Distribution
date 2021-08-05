@@ -28,34 +28,25 @@ trait GetAttributesRequest extends StObject {
 }
 object GetAttributesRequest {
   
-  @scala.inline
-  def apply(DomainName: String, ItemName: String): GetAttributesRequest = {
+  inline def apply(DomainName: String, ItemName: String): GetAttributesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAttributesRequest]
   }
   
-  @scala.inline
-  implicit class GetAttributesRequestMutableBuilder[Self <: GetAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+    inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
+    inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    @scala.inline
-    def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+    inline def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+    inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

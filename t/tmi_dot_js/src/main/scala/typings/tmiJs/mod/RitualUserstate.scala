@@ -17,25 +17,19 @@ trait RitualUserstate
 }
 object RitualUserstate {
   
-  @scala.inline
-  def apply(): RitualUserstate = {
+  inline def apply(): RitualUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RitualUserstate]
   }
   
-  @scala.inline
-  implicit class RitualUserstateMutableBuilder[Self <: RitualUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: RitualUserstate](x: Self) {
     
-    @scala.inline
-    def `setMessage-type`(value: ritual): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
+    inline def `setMessage-type`(value: ritual): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    inline def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-ritual-name`(value: new_chatter): Self = StObject.set(x, "msg-param-ritual-name", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-ritual-name`(value: new_chatter): Self = StObject.set(x, "msg-param-ritual-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-ritual-nameUndefined`: Self = StObject.set(x, "msg-param-ritual-name", js.undefined)
+    inline def `setMsg-param-ritual-nameUndefined`: Self = StObject.set(x, "msg-param-ritual-name", js.undefined)
   }
 }

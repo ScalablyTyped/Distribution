@@ -29,31 +29,23 @@ trait GoogleActionsTransactionsV3TransactionDecisionValue
 }
 object GoogleActionsTransactionsV3TransactionDecisionValue {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3TransactionDecisionValue = {
+  inline def apply(): GoogleActionsTransactionsV3TransactionDecisionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3TransactionDecisionValue]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3TransactionDecisionValueMutableBuilder[Self <: GoogleActionsTransactionsV3TransactionDecisionValue] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3TransactionDecisionValue](x: Self) {
     
-    @scala.inline
-    def setDeliveryAddress(value: GoogleActionsV2Location): Self = StObject.set(x, "deliveryAddress", value.asInstanceOf[js.Any])
+    inline def setDeliveryAddress(value: GoogleActionsV2Location): Self = StObject.set(x, "deliveryAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryAddressUndefined: Self = StObject.set(x, "deliveryAddress", js.undefined)
+    inline def setDeliveryAddressUndefined: Self = StObject.set(x, "deliveryAddress", js.undefined)
     
-    @scala.inline
-    def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setTransactionDecision(value: GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision): Self = StObject.set(x, "transactionDecision", value.asInstanceOf[js.Any])
+    inline def setTransactionDecision(value: GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision): Self = StObject.set(x, "transactionDecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionDecisionUndefined: Self = StObject.set(x, "transactionDecision", js.undefined)
+    inline def setTransactionDecisionUndefined: Self = StObject.set(x, "transactionDecision", js.undefined)
   }
 }

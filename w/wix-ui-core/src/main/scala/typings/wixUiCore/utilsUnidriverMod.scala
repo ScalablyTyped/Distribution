@@ -12,12 +12,9 @@ object utilsUnidriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ReactBase(base: UniDriver[js.Any]): GetStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("ReactBase")(base.asInstanceOf[js.Any]).asInstanceOf[GetStyle]
+  inline def ReactBase(base: UniDriver[js.Any]): GetStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("ReactBase")(base.asInstanceOf[js.Any]).asInstanceOf[GetStyle]
   
-  @scala.inline
-  def byDataHook(dataHook: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("byDataHook")(dataHook.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def byDataHook(dataHook: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("byDataHook")(dataHook.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def safeGetNative[T](base: UniDriver[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeGetNative")(base.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def safeGetNative[T](base: UniDriver[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeGetNative")(base.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
 }

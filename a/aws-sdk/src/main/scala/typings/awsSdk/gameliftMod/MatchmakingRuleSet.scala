@@ -28,34 +28,25 @@ trait MatchmakingRuleSet extends StObject {
 }
 object MatchmakingRuleSet {
   
-  @scala.inline
-  def apply(RuleSetBody: RuleSetBody): MatchmakingRuleSet = {
+  inline def apply(RuleSetBody: RuleSetBody): MatchmakingRuleSet = {
     val __obj = js.Dynamic.literal(RuleSetBody = RuleSetBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchmakingRuleSet]
   }
   
-  @scala.inline
-  implicit class MatchmakingRuleSetMutableBuilder[Self <: MatchmakingRuleSet] (val x: Self) extends AnyVal {
+  extension [Self <: MatchmakingRuleSet](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setRuleSetArn(value: MatchmakingRuleSetArn): Self = StObject.set(x, "RuleSetArn", value.asInstanceOf[js.Any])
+    inline def setRuleSetArn(value: MatchmakingRuleSetArn): Self = StObject.set(x, "RuleSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetArnUndefined: Self = StObject.set(x, "RuleSetArn", js.undefined)
+    inline def setRuleSetArnUndefined: Self = StObject.set(x, "RuleSetArn", js.undefined)
     
-    @scala.inline
-    def setRuleSetBody(value: RuleSetBody): Self = StObject.set(x, "RuleSetBody", value.asInstanceOf[js.Any])
+    inline def setRuleSetBody(value: RuleSetBody): Self = StObject.set(x, "RuleSetBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetName(value: MatchmakingIdStringModel): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: MatchmakingIdStringModel): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
+    inline def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
   }
 }

@@ -22,35 +22,26 @@ trait ChallengeAbstract extends StObject {
 }
 object ChallengeAbstract {
   
-  @scala.inline
-  def apply(status: pending | processing | valid | invalid, `type`: String, url: String): ChallengeAbstract = {
+  inline def apply(status: pending | processing | valid | invalid, `type`: String, url: String): ChallengeAbstract = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChallengeAbstract]
   }
   
-  @scala.inline
-  implicit class ChallengeAbstractMutableBuilder[Self <: ChallengeAbstract] (val x: Self) extends AnyVal {
+  extension [Self <: ChallengeAbstract](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatus(value: pending | processing | valid | invalid): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: pending | processing | valid | invalid): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidated(value: String): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
+    inline def setValidated(value: String): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedUndefined: Self = StObject.set(x, "validated", js.undefined)
+    inline def setValidatedUndefined: Self = StObject.set(x, "validated", js.undefined)
   }
 }

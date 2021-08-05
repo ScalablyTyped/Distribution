@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(session: FnCall): Instantiable3[
+  inline def apply(session: FnCall): Instantiable3[
     /* options */ Options, 
     /* connection */ js.UndefOr[js.Any], 
     /* callback */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
@@ -38,23 +37,18 @@ object mod {
   }
   object ColumnNames {
     
-    @scala.inline
-    def apply(data: String, expires: String, session_id: String): ColumnNames = {
+    inline def apply(data: String, expires: String, session_id: String): ColumnNames = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], session_id = session_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnNames]
     }
     
-    @scala.inline
-    implicit class ColumnNamesMutableBuilder[Self <: ColumnNames] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnNames](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
+      inline def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,74 +133,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCheckExpirationInterval(value: Double): Self = StObject.set(x, "checkExpirationInterval", value.asInstanceOf[js.Any])
+      inline def setCheckExpirationInterval(value: Double): Self = StObject.set(x, "checkExpirationInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckExpirationIntervalUndefined: Self = StObject.set(x, "checkExpirationInterval", js.undefined)
+      inline def setCheckExpirationIntervalUndefined: Self = StObject.set(x, "checkExpirationInterval", js.undefined)
       
-      @scala.inline
-      def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
+      inline def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
+      inline def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
       
-      @scala.inline
-      def setCreateDatabaseTable(value: Boolean): Self = StObject.set(x, "createDatabaseTable", value.asInstanceOf[js.Any])
+      inline def setCreateDatabaseTable(value: Boolean): Self = StObject.set(x, "createDatabaseTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDatabaseTableUndefined: Self = StObject.set(x, "createDatabaseTable", js.undefined)
+      inline def setCreateDatabaseTableUndefined: Self = StObject.set(x, "createDatabaseTable", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSchema(value: PartialSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: PartialSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -218,20 +190,16 @@ object mod {
   }
   object Schema {
     
-    @scala.inline
-    def apply(columnNames: PartialColumnNames, tableName: String): Schema = {
+    inline def apply(columnNames: PartialColumnNames, tableName: String): Schema = {
       val __obj = js.Dynamic.literal(columnNames = columnNames.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
-    @scala.inline
-    implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+    extension [Self <: Schema](x: Self) {
       
-      @scala.inline
-      def setColumnNames(value: PartialColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
+      inline def setColumnNames(value: PartialColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     }
   }
 }

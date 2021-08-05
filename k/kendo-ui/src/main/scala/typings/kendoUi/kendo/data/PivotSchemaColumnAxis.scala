@@ -10,19 +10,15 @@ trait PivotSchemaColumnAxis extends StObject {
 }
 object PivotSchemaColumnAxis {
   
-  @scala.inline
-  def apply(tuples: js.Array[PivotTupleModel]): PivotSchemaColumnAxis = {
+  inline def apply(tuples: js.Array[PivotTupleModel]): PivotSchemaColumnAxis = {
     val __obj = js.Dynamic.literal(tuples = tuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotSchemaColumnAxis]
   }
   
-  @scala.inline
-  implicit class PivotSchemaColumnAxisMutableBuilder[Self <: PivotSchemaColumnAxis] (val x: Self) extends AnyVal {
+  extension [Self <: PivotSchemaColumnAxis](x: Self) {
     
-    @scala.inline
-    def setTuples(value: js.Array[PivotTupleModel]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
+    inline def setTuples(value: js.Array[PivotTupleModel]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuplesVarargs(value: PivotTupleModel*): Self = StObject.set(x, "tuples", js.Array(value :_*))
+    inline def setTuplesVarargs(value: PivotTupleModel*): Self = StObject.set(x, "tuples", js.Array(value :_*))
   }
 }

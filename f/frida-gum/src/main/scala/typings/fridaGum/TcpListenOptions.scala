@@ -28,31 +28,23 @@ trait TcpListenOptions
 }
 object TcpListenOptions {
   
-  @scala.inline
-  def apply(): TcpListenOptions = {
+  inline def apply(): TcpListenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TcpListenOptions]
   }
   
-  @scala.inline
-  implicit class TcpListenOptionsMutableBuilder[Self <: TcpListenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TcpListenOptions](x: Self) {
     
-    @scala.inline
-    def setFamily(value: ipv4 | ipv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: ipv4 | ipv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

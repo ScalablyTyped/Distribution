@@ -12,8 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def blobReader(blob: Blob, onChunk: js.Function1[/* chunk */ Uint8Array, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobReader")(blob.asInstanceOf[js.Any], onChunk.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def blobReader(blob: Blob, onChunk: js.Function1[/* chunk */ Uint8Array, Unit], chunkSize: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobReader")(blob.asInstanceOf[js.Any], onChunk.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def blobReader(blob: Blob, onChunk: js.Function1[/* chunk */ Uint8Array, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobReader")(blob.asInstanceOf[js.Any], onChunk.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def blobReader(blob: Blob, onChunk: js.Function1[/* chunk */ Uint8Array, Unit], chunkSize: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobReader")(blob.asInstanceOf[js.Any], onChunk.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

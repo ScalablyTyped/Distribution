@@ -18,26 +18,20 @@ object anon {
   }
   object H {
     
-    @scala.inline
-    def apply(h: Double, w: Double, x: Double, y: Double): H = {
+    inline def apply(h: Double, w: Double, x: Double, y: Double): H = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[H]
     }
     
-    @scala.inline
-    implicit class HMutableBuilder[Self <: H] (val x: Self) extends AnyVal {
+    extension [Self <: H](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,21 +43,17 @@ object anon {
   }
   object Href {
     
-    @scala.inline
-    def apply(href: String, `type`: String): Href = {
+    inline def apply(href: String, `type`: String): Href = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Href]
     }
     
-    @scala.inline
-    implicit class HrefMutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
+    extension [Self <: Href](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

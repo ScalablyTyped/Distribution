@@ -18,22 +18,17 @@ trait CreateSystemTemplateRequest extends StObject {
 }
 object CreateSystemTemplateRequest {
   
-  @scala.inline
-  def apply(definition: DefinitionDocument): CreateSystemTemplateRequest = {
+  inline def apply(definition: DefinitionDocument): CreateSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSystemTemplateRequest]
   }
   
-  @scala.inline
-  implicit class CreateSystemTemplateRequestMutableBuilder[Self <: CreateSystemTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSystemTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
+    inline def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
   }
 }

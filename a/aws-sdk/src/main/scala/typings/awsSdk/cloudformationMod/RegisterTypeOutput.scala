@@ -13,19 +13,15 @@ trait RegisterTypeOutput extends StObject {
 }
 object RegisterTypeOutput {
   
-  @scala.inline
-  def apply(): RegisterTypeOutput = {
+  inline def apply(): RegisterTypeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterTypeOutput]
   }
   
-  @scala.inline
-  implicit class RegisterTypeOutputMutableBuilder[Self <: RegisterTypeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTypeOutput](x: Self) {
     
-    @scala.inline
-    def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
+    inline def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationTokenUndefined: Self = StObject.set(x, "RegistrationToken", js.undefined)
+    inline def setRegistrationTokenUndefined: Self = StObject.set(x, "RegistrationToken", js.undefined)
   }
 }

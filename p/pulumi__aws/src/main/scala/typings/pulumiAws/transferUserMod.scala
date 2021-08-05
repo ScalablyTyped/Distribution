@@ -87,21 +87,16 @@ object transferUserMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
     
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean]
   }
   
   trait UserArgs extends StObject {
@@ -150,56 +145,40 @@ object transferUserMod {
   }
   object UserArgs {
     
-    @scala.inline
-    def apply(role: Input[String], serverId: Input[String], userName: Input[String]): UserArgs = {
+    inline def apply(role: Input[String], serverId: Input[String], userName: Input[String]): UserArgs = {
       val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserArgs]
     }
     
-    @scala.inline
-    implicit class UserArgsMutableBuilder[Self <: UserArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserArgs](x: Self) {
       
-      @scala.inline
-      def setHomeDirectory(value: Input[String]): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
+      inline def setHomeDirectory(value: Input[String]): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeDirectoryMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]]]): Self = StObject.set(x, "homeDirectoryMappings", value.asInstanceOf[js.Any])
+      inline def setHomeDirectoryMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]]]): Self = StObject.set(x, "homeDirectoryMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeDirectoryMappingsUndefined: Self = StObject.set(x, "homeDirectoryMappings", js.undefined)
+      inline def setHomeDirectoryMappingsUndefined: Self = StObject.set(x, "homeDirectoryMappings", js.undefined)
       
-      @scala.inline
-      def setHomeDirectoryMappingsVarargs(value: Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]*): Self = StObject.set(x, "homeDirectoryMappings", js.Array(value :_*))
+      inline def setHomeDirectoryMappingsVarargs(value: Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]*): Self = StObject.set(x, "homeDirectoryMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setHomeDirectoryType(value: Input[String]): Self = StObject.set(x, "homeDirectoryType", value.asInstanceOf[js.Any])
+      inline def setHomeDirectoryType(value: Input[String]): Self = StObject.set(x, "homeDirectoryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeDirectoryTypeUndefined: Self = StObject.set(x, "homeDirectoryType", js.undefined)
+      inline def setHomeDirectoryTypeUndefined: Self = StObject.set(x, "homeDirectoryType", js.undefined)
       
-      @scala.inline
-      def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
+      inline def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerId(value: Input[String]): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+      inline def setServerId(value: Input[String]): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,71 +233,50 @@ object transferUserMod {
   }
   object UserState {
     
-    @scala.inline
-    def apply(): UserState = {
+    inline def apply(): UserState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserState]
     }
     
-    @scala.inline
-    implicit class UserStateMutableBuilder[Self <: UserState] (val x: Self) extends AnyVal {
+    extension [Self <: UserState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setHomeDirectory(value: Input[String]): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
+      inline def setHomeDirectory(value: Input[String]): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeDirectoryMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]]]): Self = StObject.set(x, "homeDirectoryMappings", value.asInstanceOf[js.Any])
+      inline def setHomeDirectoryMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]]]): Self = StObject.set(x, "homeDirectoryMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeDirectoryMappingsUndefined: Self = StObject.set(x, "homeDirectoryMappings", js.undefined)
+      inline def setHomeDirectoryMappingsUndefined: Self = StObject.set(x, "homeDirectoryMappings", js.undefined)
       
-      @scala.inline
-      def setHomeDirectoryMappingsVarargs(value: Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]*): Self = StObject.set(x, "homeDirectoryMappings", js.Array(value :_*))
+      inline def setHomeDirectoryMappingsVarargs(value: Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]*): Self = StObject.set(x, "homeDirectoryMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setHomeDirectoryType(value: Input[String]): Self = StObject.set(x, "homeDirectoryType", value.asInstanceOf[js.Any])
+      inline def setHomeDirectoryType(value: Input[String]): Self = StObject.set(x, "homeDirectoryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeDirectoryTypeUndefined: Self = StObject.set(x, "homeDirectoryType", js.undefined)
+      inline def setHomeDirectoryTypeUndefined: Self = StObject.set(x, "homeDirectoryType", js.undefined)
       
-      @scala.inline
-      def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
+      inline def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setServerId(value: Input[String]): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+      inline def setServerId(value: Input[String]): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
+      inline def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     }
   }
 }

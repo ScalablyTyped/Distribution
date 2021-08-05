@@ -49,8 +49,7 @@ trait StackHeaderProps extends StObject {
 }
 object StackHeaderProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     insets: EdgeInsets,
     layout: Layout,
     mode: float | screen,
@@ -62,31 +61,22 @@ object StackHeaderProps {
     __obj.asInstanceOf[StackHeaderProps]
   }
   
-  @scala.inline
-  implicit class StackHeaderPropsMutableBuilder[Self <: StackHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: StackHeaderProps](x: Self) {
     
-    @scala.inline
-    def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
+    inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: float | screen): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: float | screen): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: Scene[Route[String]]): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: Scene[Route[String]]): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
-    @scala.inline
-    def setScene(value: Scene[Route[String]]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: Scene[Route[String]]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "styleInterpolator", js.Any.fromFunction1(value))
+    inline def setStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "styleInterpolator", js.Any.fromFunction1(value))
   }
 }

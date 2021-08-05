@@ -18,28 +18,21 @@ trait ListTypeRegistrationsOutput extends StObject {
 }
 object ListTypeRegistrationsOutput {
   
-  @scala.inline
-  def apply(): ListTypeRegistrationsOutput = {
+  inline def apply(): ListTypeRegistrationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTypeRegistrationsOutput]
   }
   
-  @scala.inline
-  implicit class ListTypeRegistrationsOutputMutableBuilder[Self <: ListTypeRegistrationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypeRegistrationsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegistrationTokenList(value: RegistrationTokenList): Self = StObject.set(x, "RegistrationTokenList", value.asInstanceOf[js.Any])
+    inline def setRegistrationTokenList(value: RegistrationTokenList): Self = StObject.set(x, "RegistrationTokenList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationTokenListUndefined: Self = StObject.set(x, "RegistrationTokenList", js.undefined)
+    inline def setRegistrationTokenListUndefined: Self = StObject.set(x, "RegistrationTokenList", js.undefined)
     
-    @scala.inline
-    def setRegistrationTokenListVarargs(value: RegistrationToken*): Self = StObject.set(x, "RegistrationTokenList", js.Array(value :_*))
+    inline def setRegistrationTokenListVarargs(value: RegistrationToken*): Self = StObject.set(x, "RegistrationTokenList", js.Array(value :_*))
   }
 }

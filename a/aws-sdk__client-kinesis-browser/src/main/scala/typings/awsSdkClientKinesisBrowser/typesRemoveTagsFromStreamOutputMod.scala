@@ -20,17 +20,14 @@ object typesRemoveTagsFromStreamOutputMod {
   }
   object RemoveTagsFromStreamOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): RemoveTagsFromStreamOutput = {
+    inline def apply($metadata: ResponseMetadata): RemoveTagsFromStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveTagsFromStreamOutput]
     }
     
-    @scala.inline
-    implicit class RemoveTagsFromStreamOutputMutableBuilder[Self <: RemoveTagsFromStreamOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveTagsFromStreamOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

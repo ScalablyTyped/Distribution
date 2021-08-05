@@ -18,25 +18,19 @@ trait Loa extends StObject {
 }
 object Loa {
   
-  @scala.inline
-  def apply(): Loa = {
+  inline def apply(): Loa = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Loa]
   }
   
-  @scala.inline
-  implicit class LoaMutableBuilder[Self <: Loa] (val x: Self) extends AnyVal {
+  extension [Self <: Loa](x: Self) {
     
-    @scala.inline
-    def setLoaContent(value: LoaContent): Self = StObject.set(x, "loaContent", value.asInstanceOf[js.Any])
+    inline def setLoaContent(value: LoaContent): Self = StObject.set(x, "loaContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaContentType(value: LoaContentType): Self = StObject.set(x, "loaContentType", value.asInstanceOf[js.Any])
+    inline def setLoaContentType(value: LoaContentType): Self = StObject.set(x, "loaContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaContentTypeUndefined: Self = StObject.set(x, "loaContentType", js.undefined)
+    inline def setLoaContentTypeUndefined: Self = StObject.set(x, "loaContentType", js.undefined)
     
-    @scala.inline
-    def setLoaContentUndefined: Self = StObject.set(x, "loaContent", js.undefined)
+    inline def setLoaContentUndefined: Self = StObject.set(x, "loaContent", js.undefined)
   }
 }

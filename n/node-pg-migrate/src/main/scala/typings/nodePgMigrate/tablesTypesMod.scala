@@ -32,20 +32,15 @@ object tablesTypesMod {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def CASCADE: typings.nodePgMigrate.nodePgMigrateStrings.CASCADE = "CASCADE".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.CASCADE]
+    inline def CASCADE: typings.nodePgMigrate.nodePgMigrateStrings.CASCADE = "CASCADE".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.CASCADE]
     
-    @scala.inline
-    def `NO ACTION`: typings.nodePgMigrate.nodePgMigrateStrings.`NO ACTION` = ("NO ACTION").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`NO ACTION`]
+    inline def `NO ACTION`: typings.nodePgMigrate.nodePgMigrateStrings.`NO ACTION` = ("NO ACTION").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`NO ACTION`]
     
-    @scala.inline
-    def RESTRICT: typings.nodePgMigrate.nodePgMigrateStrings.RESTRICT = "RESTRICT".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.RESTRICT]
+    inline def RESTRICT: typings.nodePgMigrate.nodePgMigrateStrings.RESTRICT = "RESTRICT".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.RESTRICT]
     
-    @scala.inline
-    def `SET DEFAULT`: typings.nodePgMigrate.nodePgMigrateStrings.`SET DEFAULT` = ("SET DEFAULT").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`SET DEFAULT`]
+    inline def `SET DEFAULT`: typings.nodePgMigrate.nodePgMigrateStrings.`SET DEFAULT` = ("SET DEFAULT").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`SET DEFAULT`]
     
-    @scala.inline
-    def `SET NULL`: typings.nodePgMigrate.nodePgMigrateStrings.`SET NULL` = ("SET NULL").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`SET NULL`]
+    inline def `SET NULL`: typings.nodePgMigrate.nodePgMigrateStrings.`SET NULL` = ("SET NULL").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`SET NULL`]
   }
   
   @js.native
@@ -96,85 +91,60 @@ object tablesTypesMod {
   }
   object AlterColumnOptions {
     
-    @scala.inline
-    def apply(): AlterColumnOptions = {
+    inline def apply(): AlterColumnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlterColumnOptions]
     }
     
-    @scala.inline
-    implicit class AlterColumnOptionsMutableBuilder[Self <: AlterColumnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlterColumnOptions](x: Self) {
       
-      @scala.inline
-      def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
+      inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
+      inline def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
       
-      @scala.inline
-      def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+      inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+      inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentNull: Self = StObject.set(x, "comment", null)
+      inline def setCommentNull: Self = StObject.set(x, "comment", null)
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNull: Self = StObject.set(x, "default", null)
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(
+      inline def setDefaultVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
       ): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setGenerated(value: `false` | SequenceGeneratedOptions): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
+      inline def setGenerated(value: `false` | SequenceGeneratedOptions): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratedNull: Self = StObject.set(x, "generated", null)
+      inline def setGeneratedNull: Self = StObject.set(x, "generated", null)
       
-      @scala.inline
-      def setGeneratedUndefined: Self = StObject.set(x, "generated", js.undefined)
+      inline def setGeneratedUndefined: Self = StObject.set(x, "generated", js.undefined)
       
-      @scala.inline
-      def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+      inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+      inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
       
-      @scala.inline
-      def setSequenceGenerated(value: `false` | SequenceGeneratedOptions): Self = StObject.set(x, "sequenceGenerated", value.asInstanceOf[js.Any])
+      inline def setSequenceGenerated(value: `false` | SequenceGeneratedOptions): Self = StObject.set(x, "sequenceGenerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceGeneratedNull: Self = StObject.set(x, "sequenceGenerated", null)
+      inline def setSequenceGeneratedNull: Self = StObject.set(x, "sequenceGenerated", null)
       
-      @scala.inline
-      def setSequenceGeneratedUndefined: Self = StObject.set(x, "sequenceGenerated", js.undefined)
+      inline def setSequenceGeneratedUndefined: Self = StObject.set(x, "sequenceGenerated", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUsing(value: String): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
+      inline def setUsing(value: String): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
+      inline def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
     }
   }
   
@@ -190,17 +160,14 @@ object tablesTypesMod {
   }
   object AlterTableOptions {
     
-    @scala.inline
-    def apply(levelSecurity: DISABLE | ENABLE | FORCE | (`NO FORCE`)): AlterTableOptions = {
+    inline def apply(levelSecurity: DISABLE | ENABLE | FORCE | (`NO FORCE`)): AlterTableOptions = {
       val __obj = js.Dynamic.literal(levelSecurity = levelSecurity.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlterTableOptions]
     }
     
-    @scala.inline
-    implicit class AlterTableOptionsMutableBuilder[Self <: AlterTableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlterTableOptions](x: Self) {
       
-      @scala.inline
-      def setLevelSecurity(value: DISABLE | ENABLE | FORCE | (`NO FORCE`)): Self = StObject.set(x, "levelSecurity", value.asInstanceOf[js.Any])
+      inline def setLevelSecurity(value: DISABLE | ENABLE | FORCE | (`NO FORCE`)): Self = StObject.set(x, "levelSecurity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,137 +217,95 @@ object tablesTypesMod {
   }
   object ColumnDefinition {
     
-    @scala.inline
-    def apply(`type`: String): ColumnDefinition = {
+    inline def apply(`type`: String): ColumnDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnDefinition]
     }
     
-    @scala.inline
-    implicit class ColumnDefinitionMutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnDefinition](x: Self) {
       
-      @scala.inline
-      def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+      inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+      inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentNull: Self = StObject.set(x, "comment", null)
+      inline def setCommentNull: Self = StObject.set(x, "comment", null)
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNull: Self = StObject.set(x, "default", null)
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(
+      inline def setDefaultVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
       ): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
+      inline def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+      inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
       
-      @scala.inline
-      def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+      inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+      inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
       
-      @scala.inline
-      def setExpressionGenerated(value: String): Self = StObject.set(x, "expressionGenerated", value.asInstanceOf[js.Any])
+      inline def setExpressionGenerated(value: String): Self = StObject.set(x, "expressionGenerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionGeneratedUndefined: Self = StObject.set(x, "expressionGenerated", js.undefined)
+      inline def setExpressionGeneratedUndefined: Self = StObject.set(x, "expressionGenerated", js.undefined)
       
-      @scala.inline
-      def setGenerated(value: SequenceGeneratedOptions): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
+      inline def setGenerated(value: SequenceGeneratedOptions): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratedUndefined: Self = StObject.set(x, "generated", js.undefined)
+      inline def setGeneratedUndefined: Self = StObject.set(x, "generated", js.undefined)
       
-      @scala.inline
-      def setMatch(value: FULL | SIMPLE): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: FULL | SIMPLE): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+      inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+      inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
       
-      @scala.inline
-      def setOnDelete(value: Action): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: Action): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: Action): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: Action): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+      inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      @scala.inline
-      def setReferences(value: Name): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: Name): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesConstraintComment(value: String): Self = StObject.set(x, "referencesConstraintComment", value.asInstanceOf[js.Any])
+      inline def setReferencesConstraintComment(value: String): Self = StObject.set(x, "referencesConstraintComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesConstraintCommentUndefined: Self = StObject.set(x, "referencesConstraintComment", js.undefined)
+      inline def setReferencesConstraintCommentUndefined: Self = StObject.set(x, "referencesConstraintComment", js.undefined)
       
-      @scala.inline
-      def setReferencesConstraintName(value: String): Self = StObject.set(x, "referencesConstraintName", value.asInstanceOf[js.Any])
+      inline def setReferencesConstraintName(value: String): Self = StObject.set(x, "referencesConstraintName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesConstraintNameUndefined: Self = StObject.set(x, "referencesConstraintName", js.undefined)
+      inline def setReferencesConstraintNameUndefined: Self = StObject.set(x, "referencesConstraintName", js.undefined)
       
-      @scala.inline
-      def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+      inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      @scala.inline
-      def setSequenceGenerated(value: SequenceGeneratedOptions): Self = StObject.set(x, "sequenceGenerated", value.asInstanceOf[js.Any])
+      inline def setSequenceGenerated(value: SequenceGeneratedOptions): Self = StObject.set(x, "sequenceGenerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceGeneratedUndefined: Self = StObject.set(x, "sequenceGenerated", js.undefined)
+      inline def setSequenceGeneratedUndefined: Self = StObject.set(x, "sequenceGenerated", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     }
   }
   
@@ -406,74 +331,52 @@ object tablesTypesMod {
   }
   object ConstraintOptions {
     
-    @scala.inline
-    def apply(): ConstraintOptions = {
+    inline def apply(): ConstraintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstraintOptions]
     }
     
-    @scala.inline
-    implicit class ConstraintOptionsMutableBuilder[Self <: ConstraintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstraintOptions](x: Self) {
       
-      @scala.inline
-      def setCheck(value: String | js.Array[String]): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: String | js.Array[String]): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setCheckVarargs(value: String*): Self = StObject.set(x, "check", js.Array(value :_*))
+      inline def setCheckVarargs(value: String*): Self = StObject.set(x, "check", js.Array(value :_*))
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
+      inline def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+      inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
       
-      @scala.inline
-      def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+      inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+      inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setForeignKeys(value: ForeignKeyOptions | js.Array[ForeignKeyOptions]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
+      inline def setForeignKeys(value: ForeignKeyOptions | js.Array[ForeignKeyOptions]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
+      inline def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
       
-      @scala.inline
-      def setForeignKeysVarargs(value: ForeignKeyOptions*): Self = StObject.set(x, "foreignKeys", js.Array(value :_*))
+      inline def setForeignKeysVarargs(value: ForeignKeyOptions*): Self = StObject.set(x, "foreignKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setPrimaryKey(value: Name | js.Array[Name]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Name | js.Array[Name]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+      inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      @scala.inline
-      def setPrimaryKeyVarargs(value: Name*): Self = StObject.set(x, "primaryKey", js.Array(value :_*))
+      inline def setPrimaryKeyVarargs(value: Name*): Self = StObject.set(x, "primaryKey", js.Array(value :_*))
       
-      @scala.inline
-      def setUnique(value: Name | (js.Array[Name | js.Array[Name]])): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Name | (js.Array[Name | js.Array[Name]])): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
-      @scala.inline
-      def setUniqueVarargs(value: (Name | js.Array[Name])*): Self = StObject.set(x, "unique", js.Array(value :_*))
+      inline def setUniqueVarargs(value: (Name | js.Array[Name])*): Self = StObject.set(x, "unique", js.Array(value :_*))
     }
   }
   
@@ -537,20 +440,16 @@ object tablesTypesMod {
   }
   object ForeignKeyOptions {
     
-    @scala.inline
-    def apply(columns: Name | js.Array[Name], references: Name): ForeignKeyOptions = {
+    inline def apply(columns: Name | js.Array[Name], references: Name): ForeignKeyOptions = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForeignKeyOptions]
     }
     
-    @scala.inline
-    implicit class ForeignKeyOptionsMutableBuilder[Self <: ForeignKeyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ForeignKeyOptions](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Name | js.Array[Name]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Name | js.Array[Name]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: Name*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Name*): Self = StObject.set(x, "columns", js.Array(value :_*))
     }
   }
   
@@ -567,29 +466,21 @@ object tablesTypesMod {
   trait Like extends StObject
   object Like {
     
-    @scala.inline
-    def ALL: typings.nodePgMigrate.nodePgMigrateStrings.ALL = "ALL".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.ALL]
+    inline def ALL: typings.nodePgMigrate.nodePgMigrateStrings.ALL = "ALL".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.ALL]
     
-    @scala.inline
-    def COMMENTS: typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS = "COMMENTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS]
+    inline def COMMENTS: typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS = "COMMENTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS]
     
-    @scala.inline
-    def CONSTRAINTS: typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS = "CONSTRAINTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS]
+    inline def CONSTRAINTS: typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS = "CONSTRAINTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS]
     
-    @scala.inline
-    def DEFAULTS: typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS = "DEFAULTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS]
+    inline def DEFAULTS: typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS = "DEFAULTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS]
     
-    @scala.inline
-    def IDENTITY: typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY = "IDENTITY".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY]
+    inline def IDENTITY: typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY = "IDENTITY".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY]
     
-    @scala.inline
-    def INDEXES: typings.nodePgMigrate.nodePgMigrateStrings.INDEXES = "INDEXES".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.INDEXES]
+    inline def INDEXES: typings.nodePgMigrate.nodePgMigrateStrings.INDEXES = "INDEXES".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.INDEXES]
     
-    @scala.inline
-    def STATISTICS: typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS = "STATISTICS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS]
+    inline def STATISTICS: typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS = "STATISTICS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS]
     
-    @scala.inline
-    def STORAGE: typings.nodePgMigrate.nodePgMigrateStrings.STORAGE = "STORAGE".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STORAGE]
+    inline def STORAGE: typings.nodePgMigrate.nodePgMigrateStrings.STORAGE = "STORAGE".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STORAGE]
   }
   
   trait LikeOptions extends StObject {
@@ -600,32 +491,24 @@ object tablesTypesMod {
   }
   object LikeOptions {
     
-    @scala.inline
-    def apply(): LikeOptions = {
+    inline def apply(): LikeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LikeOptions]
     }
     
-    @scala.inline
-    implicit class LikeOptionsMutableBuilder[Self <: LikeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LikeOptions](x: Self) {
       
-      @scala.inline
-      def setExcluding(value: Like | js.Array[Like]): Self = StObject.set(x, "excluding", value.asInstanceOf[js.Any])
+      inline def setExcluding(value: Like | js.Array[Like]): Self = StObject.set(x, "excluding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludingUndefined: Self = StObject.set(x, "excluding", js.undefined)
+      inline def setExcludingUndefined: Self = StObject.set(x, "excluding", js.undefined)
       
-      @scala.inline
-      def setExcludingVarargs(value: Like*): Self = StObject.set(x, "excluding", js.Array(value :_*))
+      inline def setExcludingVarargs(value: Like*): Self = StObject.set(x, "excluding", js.Array(value :_*))
       
-      @scala.inline
-      def setIncluding(value: Like | js.Array[Like]): Self = StObject.set(x, "including", value.asInstanceOf[js.Any])
+      inline def setIncluding(value: Like | js.Array[Like]): Self = StObject.set(x, "including", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludingUndefined: Self = StObject.set(x, "including", js.undefined)
+      inline def setIncludingUndefined: Self = StObject.set(x, "including", js.undefined)
       
-      @scala.inline
-      def setIncludingVarargs(value: Like*): Self = StObject.set(x, "including", js.Array(value :_*))
+      inline def setIncludingVarargs(value: Like*): Self = StObject.set(x, "including", js.Array(value :_*))
     }
   }
   
@@ -645,47 +528,34 @@ object tablesTypesMod {
   }
   object ReferencesOptions {
     
-    @scala.inline
-    def apply(references: Name): ReferencesOptions = {
+    inline def apply(references: Name): ReferencesOptions = {
       val __obj = js.Dynamic.literal(references = references.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReferencesOptions]
     }
     
-    @scala.inline
-    implicit class ReferencesOptionsMutableBuilder[Self <: ReferencesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReferencesOptions](x: Self) {
       
-      @scala.inline
-      def setMatch(value: FULL | SIMPLE): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: FULL | SIMPLE): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setOnDelete(value: Action): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: Action): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: Action): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: Action): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setReferences(value: Name): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: Name): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesConstraintComment(value: String): Self = StObject.set(x, "referencesConstraintComment", value.asInstanceOf[js.Any])
+      inline def setReferencesConstraintComment(value: String): Self = StObject.set(x, "referencesConstraintComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesConstraintCommentUndefined: Self = StObject.set(x, "referencesConstraintComment", js.undefined)
+      inline def setReferencesConstraintCommentUndefined: Self = StObject.set(x, "referencesConstraintComment", js.undefined)
       
-      @scala.inline
-      def setReferencesConstraintName(value: String): Self = StObject.set(x, "referencesConstraintName", value.asInstanceOf[js.Any])
+      inline def setReferencesConstraintName(value: String): Self = StObject.set(x, "referencesConstraintName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesConstraintNameUndefined: Self = StObject.set(x, "referencesConstraintName", js.undefined)
+      inline def setReferencesConstraintNameUndefined: Self = StObject.set(x, "referencesConstraintName", js.undefined)
     }
   }
   
@@ -737,17 +607,14 @@ object tablesTypesMod {
   }
   object SequenceGeneratedOptions {
     
-    @scala.inline
-    def apply(precedence: ALWAYS | (`BY DEFAULT`)): SequenceGeneratedOptions = {
+    inline def apply(precedence: ALWAYS | (`BY DEFAULT`)): SequenceGeneratedOptions = {
       val __obj = js.Dynamic.literal(precedence = precedence.asInstanceOf[js.Any])
       __obj.asInstanceOf[SequenceGeneratedOptions]
     }
     
-    @scala.inline
-    implicit class SequenceGeneratedOptionsMutableBuilder[Self <: SequenceGeneratedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SequenceGeneratedOptions](x: Self) {
       
-      @scala.inline
-      def setPrecedence(value: ALWAYS | (`BY DEFAULT`)): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+      inline def setPrecedence(value: ALWAYS | (`BY DEFAULT`)): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     }
   }
   
@@ -767,47 +634,34 @@ object tablesTypesMod {
   }
   object TableOptions {
     
-    @scala.inline
-    def apply(): TableOptions = {
+    inline def apply(): TableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableOptions]
     }
     
-    @scala.inline
-    implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentNull: Self = StObject.set(x, "comment", null)
+      inline def setCommentNull: Self = StObject.set(x, "comment", null)
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setConstraints(value: ConstraintOptions): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: ConstraintOptions): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      @scala.inline
-      def setInherits(value: Name): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+      inline def setInherits(value: Name): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
+      inline def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
       
-      @scala.inline
-      def setLike(value: Name | Options): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
+      inline def setLike(value: Name | Options): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLikeUndefined: Self = StObject.set(x, "like", js.undefined)
+      inline def setLikeUndefined: Self = StObject.set(x, "like", js.undefined)
       
-      @scala.inline
-      def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
     }
   }
 }

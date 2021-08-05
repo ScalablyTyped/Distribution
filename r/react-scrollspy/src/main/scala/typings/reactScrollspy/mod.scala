@@ -56,65 +56,46 @@ object mod {
   }
   object ScrollspyProps {
     
-    @scala.inline
-    def apply(currentClassName: String, items: js.Array[String]): ScrollspyProps = {
+    inline def apply(currentClassName: String, items: js.Array[String]): ScrollspyProps = {
       val __obj = js.Dynamic.literal(currentClassName = currentClassName.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollspyProps]
     }
     
-    @scala.inline
-    implicit class ScrollspyPropsMutableBuilder[Self <: ScrollspyProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollspyProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentTag(value: String | ComponentType[js.Object]): Self = StObject.set(x, "componentTag", value.asInstanceOf[js.Any])
+      inline def setComponentTag(value: String | ComponentType[js.Object]): Self = StObject.set(x, "componentTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentTagUndefined: Self = StObject.set(x, "componentTag", js.undefined)
+      inline def setComponentTagUndefined: Self = StObject.set(x, "componentTag", js.undefined)
       
-      @scala.inline
-      def setCurrentClassName(value: String): Self = StObject.set(x, "currentClassName", value.asInstanceOf[js.Any])
+      inline def setCurrentClassName(value: String): Self = StObject.set(x, "currentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* item */ HTMLElement => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* item */ HTMLElement => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setRootEl(value: String): Self = StObject.set(x, "rootEl", value.asInstanceOf[js.Any])
+      inline def setRootEl(value: String): Self = StObject.set(x, "rootEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootElUndefined: Self = StObject.set(x, "rootEl", js.undefined)
+      inline def setRootElUndefined: Self = StObject.set(x, "rootEl", js.undefined)
       
-      @scala.inline
-      def setScrolledPastClassName(value: String): Self = StObject.set(x, "scrolledPastClassName", value.asInstanceOf[js.Any])
+      inline def setScrolledPastClassName(value: String): Self = StObject.set(x, "scrolledPastClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrolledPastClassNameUndefined: Self = StObject.set(x, "scrolledPastClassName", js.undefined)
+      inline def setScrolledPastClassNameUndefined: Self = StObject.set(x, "scrolledPastClassName", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

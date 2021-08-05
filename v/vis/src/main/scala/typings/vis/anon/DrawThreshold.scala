@@ -18,43 +18,31 @@ trait DrawThreshold extends StObject {
 }
 object DrawThreshold {
   
-  @scala.inline
-  def apply(): DrawThreshold = {
+  inline def apply(): DrawThreshold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawThreshold]
   }
   
-  @scala.inline
-  implicit class DrawThresholdMutableBuilder[Self <: DrawThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: DrawThreshold](x: Self) {
     
-    @scala.inline
-    def setDrawThreshold(value: Double): Self = StObject.set(x, "drawThreshold", value.asInstanceOf[js.Any])
+    inline def setDrawThreshold(value: Double): Self = StObject.set(x, "drawThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawThresholdUndefined: Self = StObject.set(x, "drawThreshold", js.undefined)
+    inline def setDrawThresholdUndefined: Self = StObject.set(x, "drawThreshold", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMaxVisible(value: Double): Self = StObject.set(x, "maxVisible", value.asInstanceOf[js.Any])
+    inline def setMaxVisible(value: Double): Self = StObject.set(x, "maxVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVisibleUndefined: Self = StObject.set(x, "maxVisible", js.undefined)
+    inline def setMaxVisibleUndefined: Self = StObject.set(x, "maxVisible", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

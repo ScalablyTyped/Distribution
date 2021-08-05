@@ -21,52 +21,37 @@ trait IClientTransactionListResponse extends StObject {
 }
 object IClientTransactionListResponse {
   
-  @scala.inline
-  def apply(): IClientTransactionListResponse = {
+  inline def apply(): IClientTransactionListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientTransactionListResponse]
   }
   
-  @scala.inline
-  implicit class IClientTransactionListResponseMutableBuilder[Self <: IClientTransactionListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientTransactionListResponse](x: Self) {
     
-    @scala.inline
-    def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
+    inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadIdNull: Self = StObject.set(x, "headId", null)
+    inline def setHeadIdNull: Self = StObject.set(x, "headId", null)
     
-    @scala.inline
-    def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
+    inline def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
     
-    @scala.inline
-    def setPaging(value: IClientPagingResponse): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+    inline def setPaging(value: IClientPagingResponse): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagingNull: Self = StObject.set(x, "paging", null)
+    inline def setPagingNull: Self = StObject.set(x, "paging", null)
     
-    @scala.inline
-    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+    inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsNull: Self = StObject.set(x, "transactions", null)
+    inline def setTransactionsNull: Self = StObject.set(x, "transactions", null)
     
-    @scala.inline
-    def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
+    inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    @scala.inline
-    def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
   }
 }

@@ -26,19 +26,15 @@ trait TimeLimiter extends StObject {
 }
 object TimeLimiter {
   
-  @scala.inline
-  def apply(allowedToUpload: () => Boolean, beginFrame: () => Unit): TimeLimiter = {
+  inline def apply(allowedToUpload: () => Boolean, beginFrame: () => Unit): TimeLimiter = {
     val __obj = js.Dynamic.literal(allowedToUpload = js.Any.fromFunction0(allowedToUpload), beginFrame = js.Any.fromFunction0(beginFrame))
     __obj.asInstanceOf[TimeLimiter]
   }
   
-  @scala.inline
-  implicit class TimeLimiterMutableBuilder[Self <: TimeLimiter] (val x: Self) extends AnyVal {
+  extension [Self <: TimeLimiter](x: Self) {
     
-    @scala.inline
-    def setAllowedToUpload(value: () => Boolean): Self = StObject.set(x, "allowedToUpload", js.Any.fromFunction0(value))
+    inline def setAllowedToUpload(value: () => Boolean): Self = StObject.set(x, "allowedToUpload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeginFrame(value: () => Unit): Self = StObject.set(x, "beginFrame", js.Any.fromFunction0(value))
+    inline def setBeginFrame(value: () => Unit): Self = StObject.set(x, "beginFrame", js.Any.fromFunction0(value))
   }
 }

@@ -31,61 +31,43 @@ trait ClientSideLoggingObject extends StObject {
 }
 object ClientSideLoggingObject {
   
-  @scala.inline
-  def apply(): ClientSideLoggingObject = {
+  inline def apply(): ClientSideLoggingObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientSideLoggingObject]
   }
   
-  @scala.inline
-  implicit class ClientSideLoggingObjectMutableBuilder[Self <: ClientSideLoggingObject] (val x: Self) extends AnyVal {
+  extension [Self <: ClientSideLoggingObject](x: Self) {
     
-    @scala.inline
-    def setClient_info(value: ClientSideLoggingClientInfoObject): Self = StObject.set(x, "client_info", value.asInstanceOf[js.Any])
+    inline def setClient_info(value: ClientSideLoggingClientInfoObject): Self = StObject.set(x, "client_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_infoUndefined: Self = StObject.set(x, "client_info", js.undefined)
+    inline def setClient_infoUndefined: Self = StObject.set(x, "client_info", js.undefined)
     
-    @scala.inline
-    def setError_url(value: String): Self = StObject.set(x, "error_url", value.asInstanceOf[js.Any])
+    inline def setError_url(value: String): Self = StObject.set(x, "error_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_urlUndefined: Self = StObject.set(x, "error_url", js.undefined)
+    inline def setError_urlUndefined: Self = StObject.set(x, "error_url", js.undefined)
     
-    @scala.inline
-    def setHijack_console(value: Boolean): Self = StObject.set(x, "hijack_console", value.asInstanceOf[js.Any])
+    inline def setHijack_console(value: Boolean): Self = StObject.set(x, "hijack_console", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHijack_consoleUndefined: Self = StObject.set(x, "hijack_console", js.undefined)
+    inline def setHijack_consoleUndefined: Self = StObject.set(x, "hijack_console", js.undefined)
     
-    @scala.inline
-    def setInfo_url(value: String): Self = StObject.set(x, "info_url", value.asInstanceOf[js.Any])
+    inline def setInfo_url(value: String): Self = StObject.set(x, "info_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo_urlUndefined: Self = StObject.set(x, "info_url", js.undefined)
+    inline def setInfo_urlUndefined: Self = StObject.set(x, "info_url", js.undefined)
     
-    @scala.inline
-    def setLog_level(value: Double): Self = StObject.set(x, "log_level", value.asInstanceOf[js.Any])
+    inline def setLog_level(value: Double): Self = StObject.set(x, "log_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_levelUndefined: Self = StObject.set(x, "log_level", js.undefined)
+    inline def setLog_levelUndefined: Self = StObject.set(x, "log_level", js.undefined)
     
-    @scala.inline
-    def setLog_url(value: String): Self = StObject.set(x, "log_url", value.asInstanceOf[js.Any])
+    inline def setLog_url(value: String): Self = StObject.set(x, "log_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_urlUndefined: Self = StObject.set(x, "log_url", js.undefined)
+    inline def setLog_urlUndefined: Self = StObject.set(x, "log_url", js.undefined)
     
-    @scala.inline
-    def setNative_error(value: Boolean): Self = StObject.set(x, "native_error", value.asInstanceOf[js.Any])
+    inline def setNative_error(value: Boolean): Self = StObject.set(x, "native_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative_errorUndefined: Self = StObject.set(x, "native_error", js.undefined)
+    inline def setNative_errorUndefined: Self = StObject.set(x, "native_error", js.undefined)
     
-    @scala.inline
-    def setQuery_var(value: String): Self = StObject.set(x, "query_var", value.asInstanceOf[js.Any])
+    inline def setQuery_var(value: String): Self = StObject.set(x, "query_var", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery_varUndefined: Self = StObject.set(x, "query_var", js.undefined)
+    inline def setQuery_varUndefined: Self = StObject.set(x, "query_var", js.undefined)
   }
 }

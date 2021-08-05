@@ -28,26 +28,20 @@ object typesWriteSegmentRequestMod {
   }
   object UnmarshalledWriteSegmentRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledWriteSegmentRequest = {
+    inline def apply(): UnmarshalledWriteSegmentRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledWriteSegmentRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledWriteSegmentRequestMutableBuilder[Self <: UnmarshalledWriteSegmentRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledWriteSegmentRequest](x: Self) {
       
-      @scala.inline
-      def setDimensions(value: UnmarshalledSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: UnmarshalledSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
       
-      @scala.inline
-      def setSegmentGroups(value: UnmarshalledSegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
+      inline def setSegmentGroups(value: UnmarshalledSegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
+      inline def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
     }
   }
   
@@ -70,32 +64,24 @@ object typesWriteSegmentRequestMod {
   }
   object WriteSegmentRequest {
     
-    @scala.inline
-    def apply(): WriteSegmentRequest = {
+    inline def apply(): WriteSegmentRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteSegmentRequest]
     }
     
-    @scala.inline
-    implicit class WriteSegmentRequestMutableBuilder[Self <: WriteSegmentRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WriteSegmentRequest](x: Self) {
       
-      @scala.inline
-      def setDimensions(value: SegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: SegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setSegmentGroups(value: SegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
+      inline def setSegmentGroups(value: SegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
+      inline def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
     }
   }
 }

@@ -25,8 +25,7 @@ object DashboardSelectionMode {
   @JSGlobal("DashboardSelectionMode.Multiple")
   @js.native
   def Multiple: String = js.native
-  @scala.inline
-  def Multiple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multiple")(x.asInstanceOf[js.Any])
+  inline def Multiple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multiple")(x.asInstanceOf[js.Any])
   
   /**
     * The selection is disabled.
@@ -35,8 +34,7 @@ object DashboardSelectionMode {
   @JSGlobal("DashboardSelectionMode.None")
   @js.native
   def None: String = js.native
-  @scala.inline
-  def None_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**
     * Allows selecting a single element within the dashboard item and disallows clearing this selection.
@@ -45,6 +43,5 @@ object DashboardSelectionMode {
   @JSGlobal("DashboardSelectionMode.Single")
   @js.native
   def Single: String = js.native
-  @scala.inline
-  def Single_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
+  inline def Single_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
 }

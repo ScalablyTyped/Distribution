@@ -29,37 +29,27 @@ trait GoogleActionsOrdersV3Action extends StObject {
 }
 object GoogleActionsOrdersV3Action {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3Action = {
+  inline def apply(): GoogleActionsOrdersV3Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3Action]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3ActionMutableBuilder[Self <: GoogleActionsOrdersV3Action] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3Action](x: Self) {
     
-    @scala.inline
-    def setActionMetadata(value: GoogleActionsOrdersV3ActionActionMetadata): Self = StObject.set(x, "actionMetadata", value.asInstanceOf[js.Any])
+    inline def setActionMetadata(value: GoogleActionsOrdersV3ActionActionMetadata): Self = StObject.set(x, "actionMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionMetadataUndefined: Self = StObject.set(x, "actionMetadata", js.undefined)
+    inline def setActionMetadataUndefined: Self = StObject.set(x, "actionMetadata", js.undefined)
     
-    @scala.inline
-    def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
+    inline def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
+    inline def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3ActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3ActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

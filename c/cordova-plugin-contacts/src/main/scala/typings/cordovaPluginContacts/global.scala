@@ -96,44 +96,37 @@ object global {
     @JSGlobal("ContactError.INVALID_ARGUMENT_ERROR")
     @js.native
     def INVALID_ARGUMENT_ERROR: Double = js.native
-    @scala.inline
-    def INVALID_ARGUMENT_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ARGUMENT_ERROR")(x.asInstanceOf[js.Any])
+    inline def INVALID_ARGUMENT_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ARGUMENT_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ContactError.IO_ERROR")
     @js.native
     def IO_ERROR: Double = js.native
-    @scala.inline
-    def IO_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IO_ERROR")(x.asInstanceOf[js.Any])
+    inline def IO_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IO_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ContactError.NOT_SUPPORTED_ERROR")
     @js.native
     def NOT_SUPPORTED_ERROR: Double = js.native
-    @scala.inline
-    def NOT_SUPPORTED_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_SUPPORTED_ERROR")(x.asInstanceOf[js.Any])
+    inline def NOT_SUPPORTED_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_SUPPORTED_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ContactError.PENDING_OPERATION_ERROR")
     @js.native
     def PENDING_OPERATION_ERROR: Double = js.native
-    @scala.inline
-    def PENDING_OPERATION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_OPERATION_ERROR")(x.asInstanceOf[js.Any])
+    inline def PENDING_OPERATION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_OPERATION_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ContactError.PERMISSION_DENIED_ERROR")
     @js.native
     def PERMISSION_DENIED_ERROR: Double = js.native
-    @scala.inline
-    def PERMISSION_DENIED_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERMISSION_DENIED_ERROR")(x.asInstanceOf[js.Any])
+    inline def PERMISSION_DENIED_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERMISSION_DENIED_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ContactError.TIMEOUT_ERROR")
     @js.native
     def TIMEOUT_ERROR: Double = js.native
-    @scala.inline
-    def TIMEOUT_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERROR")(x.asInstanceOf[js.Any])
+    inline def TIMEOUT_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ContactError.UNKNOWN_ERROR")
     @js.native
     def UNKNOWN_ERROR: Double = js.native
-    @scala.inline
-    def UNKNOWN_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
+    inline def UNKNOWN_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

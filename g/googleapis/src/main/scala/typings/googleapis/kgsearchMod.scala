@@ -36,8 +36,7 @@ object kgsearchMod {
     @JSImport("googleapis/build/src/apis/kgsearch", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Kgsearch] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Kgsearch]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object kgsearchMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object kgsearchMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def kgsearch(options: Options): Kgsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("kgsearch")(options.asInstanceOf[js.Any]).asInstanceOf[Kgsearch]
+  inline def kgsearch(options: Options): Kgsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("kgsearch")(options.asInstanceOf[js.Any]).asInstanceOf[Kgsearch]
   
-  @scala.inline
-  def kgsearch_v1(version: v1): Kgsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("kgsearch")(version.asInstanceOf[js.Any]).asInstanceOf[Kgsearch]
+  inline def kgsearch_v1(version: v1): Kgsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("kgsearch")(version.asInstanceOf[js.Any]).asInstanceOf[Kgsearch]
 }

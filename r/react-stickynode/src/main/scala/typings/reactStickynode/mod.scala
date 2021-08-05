@@ -24,22 +24,19 @@ object mod {
   @JSImport("react-stickynode", "STATUS_FIXED")
   @js.native
   def STATUS_FIXED: typings.reactStickynode.mod.StatusCode.STATUS_FIXED = js.native
-  @scala.inline
-  def STATUS_FIXED_=(x: STATUS_FIXED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_FIXED")(x.asInstanceOf[js.Any])
+  inline def STATUS_FIXED_=(x: STATUS_FIXED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_FIXED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("react-stickynode", "STATUS_ORIGINAL")
   @js.native
   def STATUS_ORIGINAL: typings.reactStickynode.mod.StatusCode.STATUS_ORIGINAL = js.native
-  @scala.inline
-  def STATUS_ORIGINAL_=(x: STATUS_ORIGINAL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_ORIGINAL")(x.asInstanceOf[js.Any])
+  inline def STATUS_ORIGINAL_=(x: STATUS_ORIGINAL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_ORIGINAL")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("react-stickynode", "STATUS_RELEASED")
   @js.native
   def STATUS_RELEASED: typings.reactStickynode.mod.StatusCode.STATUS_RELEASED = js.native
-  @scala.inline
-  def STATUS_RELEASED_=(x: STATUS_RELEASED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_RELEASED")(x.asInstanceOf[js.Any])
+  inline def STATUS_RELEASED_=(x: STATUS_RELEASED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_RELEASED")(x.asInstanceOf[js.Any])
   
   @js.native
   sealed trait StatusCode extends StObject
@@ -78,8 +75,7 @@ object mod {
   @JSImport("react-stickynode", "defaultProps")
   @js.native
   def defaultProps: Props = js.native
-  @scala.inline
-  def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   trait Props extends StObject {
     
@@ -144,89 +140,62 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setBottomBoundary(value: Double | String): Self = StObject.set(x, "bottomBoundary", value.asInstanceOf[js.Any])
+      inline def setBottomBoundary(value: Double | String): Self = StObject.set(x, "bottomBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomBoundaryUndefined: Self = StObject.set(x, "bottomBoundary", js.undefined)
+      inline def setBottomBoundaryUndefined: Self = StObject.set(x, "bottomBoundary", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode | (js.Function1[/* status */ Status, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | (js.Function1[/* status */ Status, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* status */ Status => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* status */ Status => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setEnableTransforms(value: Boolean): Self = StObject.set(x, "enableTransforms", value.asInstanceOf[js.Any])
+      inline def setEnableTransforms(value: Boolean): Self = StObject.set(x, "enableTransforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTransformsUndefined: Self = StObject.set(x, "enableTransforms", js.undefined)
+      inline def setEnableTransformsUndefined: Self = StObject.set(x, "enableTransforms", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setInnerClass(value: String): Self = StObject.set(x, "innerClass", value.asInstanceOf[js.Any])
+      inline def setInnerClass(value: String): Self = StObject.set(x, "innerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerClassUndefined: Self = StObject.set(x, "innerClass", js.undefined)
+      inline def setInnerClassUndefined: Self = StObject.set(x, "innerClass", js.undefined)
       
-      @scala.inline
-      def setInnerZ(value: Double | String): Self = StObject.set(x, "innerZ", value.asInstanceOf[js.Any])
+      inline def setInnerZ(value: Double | String): Self = StObject.set(x, "innerZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerZUndefined: Self = StObject.set(x, "innerZ", js.undefined)
+      inline def setInnerZUndefined: Self = StObject.set(x, "innerZ", js.undefined)
       
-      @scala.inline
-      def setOnStateChange(value: /* status */ Status => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+      inline def setOnStateChange(value: /* status */ Status => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+      inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
       
-      @scala.inline
-      def setReleasedClass(value: String): Self = StObject.set(x, "releasedClass", value.asInstanceOf[js.Any])
+      inline def setReleasedClass(value: String): Self = StObject.set(x, "releasedClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleasedClassUndefined: Self = StObject.set(x, "releasedClass", js.undefined)
+      inline def setReleasedClassUndefined: Self = StObject.set(x, "releasedClass", js.undefined)
       
-      @scala.inline
-      def setShouldFreeze(value: () => Boolean): Self = StObject.set(x, "shouldFreeze", js.Any.fromFunction0(value))
+      inline def setShouldFreeze(value: () => Boolean): Self = StObject.set(x, "shouldFreeze", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldFreezeUndefined: Self = StObject.set(x, "shouldFreeze", js.undefined)
+      inline def setShouldFreezeUndefined: Self = StObject.set(x, "shouldFreeze", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -236,17 +205,14 @@ object mod {
   }
   object Status {
     
-    @scala.inline
-    def apply(status: StatusCode): Status = {
+    inline def apply(status: StatusCode): Status = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Status]
     }
     
-    @scala.inline
-    implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+    extension [Self <: Status](x: Self) {
       
-      @scala.inline
-      def setStatus(value: StatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: StatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   

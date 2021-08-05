@@ -18,8 +18,7 @@ trait In
 }
 object In {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     in: js.Tuple2[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
       js.Array[
@@ -31,11 +30,9 @@ object In {
     __obj.asInstanceOf[In]
   }
   
-  @scala.inline
-  implicit class InMutableBuilder[Self <: In] (val x: Self) extends AnyVal {
+  extension [Self <: In](x: Self) {
     
-    @scala.inline
-    def setIn(
+    inline def setIn(
       value: js.Tuple2[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
           js.Array[

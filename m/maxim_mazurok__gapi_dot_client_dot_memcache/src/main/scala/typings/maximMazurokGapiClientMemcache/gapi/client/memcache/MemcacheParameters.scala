@@ -22,29 +22,23 @@ trait MemcacheParameters extends StObject {
 }
 object MemcacheParameters {
   
-  @scala.inline
-  def apply(): MemcacheParameters = {
+  inline def apply(): MemcacheParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemcacheParameters]
   }
   
-  @scala.inline
-  implicit class MemcacheParametersMutableBuilder[Self <: MemcacheParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MemcacheParameters](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

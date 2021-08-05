@@ -67,7 +67,7 @@ object multiDictionaryMod {
   @js.native
   trait MultiDictionary[K, V] extends StObject {
     
-    var allowDuplicate: js.Any = js.native
+    /* private */ var allowDuplicate: js.Any = js.native
     
     /**
       * Removes all mappings from this dictionary.
@@ -83,9 +83,9 @@ object multiDictionaryMod {
       */
     def containsKey(key: K): Boolean = js.native
     
-    var dict: js.Any = js.native
+    /* private */ var dict: js.Any = js.native
     
-    var equalsF: js.Any = js.native
+    /* private */ var equalsF: js.Any = js.native
     
     /**
       * Returns an array holding the values to which this dictionary maps

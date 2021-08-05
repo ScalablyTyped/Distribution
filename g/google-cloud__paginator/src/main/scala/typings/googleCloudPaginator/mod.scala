@@ -133,56 +133,40 @@ object mod {
   }
   object ParsedArguments {
     
-    @scala.inline
-    def apply(): ParsedArguments = {
+    inline def apply(): ParsedArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParsedArguments]
     }
     
-    @scala.inline
-    implicit class ParsedArgumentsMutableBuilder[Self <: ParsedArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedArguments](x: Self) {
       
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
+      inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
+      inline def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
       
-      @scala.inline
-      def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
+      inline def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
+      inline def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setQuery(value: ParsedArguments): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedArguments): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setStreamOptions(value: ParsedArguments): Self = StObject.set(x, "streamOptions", value.asInstanceOf[js.Any])
+      inline def setStreamOptions(value: ParsedArguments): Self = StObject.set(x, "streamOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamOptionsUndefined: Self = StObject.set(x, "streamOptions", js.undefined)
+      inline def setStreamOptionsUndefined: Self = StObject.set(x, "streamOptions", js.undefined)
     }
   }
 }

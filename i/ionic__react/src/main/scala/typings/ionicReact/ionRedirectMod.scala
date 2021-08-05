@@ -37,35 +37,26 @@ object ionRedirectMod {
   }
   object IonRedirectProps {
     
-    @scala.inline
-    def apply(to: String): IonRedirectProps = {
+    inline def apply(to: String): IonRedirectProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[IonRedirectProps]
     }
     
-    @scala.inline
-    implicit class IonRedirectPropsMutableBuilder[Self <: IonRedirectProps] (val x: Self) extends AnyVal {
+    extension [Self <: IonRedirectProps](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setRouterOptions(value: js.Any): Self = StObject.set(x, "routerOptions", value.asInstanceOf[js.Any])
+      inline def setRouterOptions(value: js.Any): Self = StObject.set(x, "routerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterOptionsUndefined: Self = StObject.set(x, "routerOptions", js.undefined)
+      inline def setRouterOptionsUndefined: Self = StObject.set(x, "routerOptions", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   

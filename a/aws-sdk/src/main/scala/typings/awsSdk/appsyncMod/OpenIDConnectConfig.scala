@@ -28,34 +28,25 @@ trait OpenIDConnectConfig extends StObject {
 }
 object OpenIDConnectConfig {
   
-  @scala.inline
-  def apply(issuer: String): OpenIDConnectConfig = {
+  inline def apply(issuer: String): OpenIDConnectConfig = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenIDConnectConfig]
   }
   
-  @scala.inline
-  implicit class OpenIDConnectConfigMutableBuilder[Self <: OpenIDConnectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OpenIDConnectConfig](x: Self) {
     
-    @scala.inline
-    def setAuthTTL(value: Long): Self = StObject.set(x, "authTTL", value.asInstanceOf[js.Any])
+    inline def setAuthTTL(value: Long): Self = StObject.set(x, "authTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthTTLUndefined: Self = StObject.set(x, "authTTL", js.undefined)
+    inline def setAuthTTLUndefined: Self = StObject.set(x, "authTTL", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setIatTTL(value: Long): Self = StObject.set(x, "iatTTL", value.asInstanceOf[js.Any])
+    inline def setIatTTL(value: Long): Self = StObject.set(x, "iatTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIatTTLUndefined: Self = StObject.set(x, "iatTTL", js.undefined)
+    inline def setIatTTLUndefined: Self = StObject.set(x, "iatTTL", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
   }
 }

@@ -89,8 +89,7 @@ trait XPresenterHelper extends StObject {
 }
 object XPresenterHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     captureMouse: XWindow => Unit,
     createCanvas: (XWindow, Double, String) => XCanvas,
     createSharedCanvas: (XSpriteCanvas, XWindow, XCanvas, XWindow, XWindow) => XCanvas,
@@ -104,31 +103,22 @@ object XPresenterHelper {
     __obj.asInstanceOf[XPresenterHelper]
   }
   
-  @scala.inline
-  implicit class XPresenterHelperMutableBuilder[Self <: XPresenterHelper] (val x: Self) extends AnyVal {
+  extension [Self <: XPresenterHelper](x: Self) {
     
-    @scala.inline
-    def setCaptureMouse(value: XWindow => Unit): Self = StObject.set(x, "captureMouse", js.Any.fromFunction1(value))
+    inline def setCaptureMouse(value: XWindow => Unit): Self = StObject.set(x, "captureMouse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCanvas(value: (XWindow, Double, String) => XCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction3(value))
+    inline def setCreateCanvas(value: (XWindow, Double, String) => XCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateSharedCanvas(value: (XSpriteCanvas, XWindow, XCanvas, XWindow, XWindow) => XCanvas): Self = StObject.set(x, "createSharedCanvas", js.Any.fromFunction5(value))
+    inline def setCreateSharedCanvas(value: (XSpriteCanvas, XWindow, XCanvas, XWindow, XWindow) => XCanvas): Self = StObject.set(x, "createSharedCanvas", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCreateWindow(value: (XWindow, Boolean, Boolean, Boolean, Boolean) => XWindow): Self = StObject.set(x, "createWindow", js.Any.fromFunction5(value))
+    inline def setCreateWindow(value: (XWindow, Boolean, Boolean, Boolean, Boolean) => XWindow): Self = StObject.set(x, "createWindow", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetWindowExtentsRelative(value: (XWindow, XWindow) => Rectangle): Self = StObject.set(x, "getWindowExtentsRelative", js.Any.fromFunction2(value))
+    inline def setGetWindowExtentsRelative(value: (XWindow, XWindow) => Rectangle): Self = StObject.set(x, "getWindowExtentsRelative", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadBitmap(value: (String, XCanvas) => XBitmap): Self = StObject.set(x, "loadBitmap", js.Any.fromFunction2(value))
+    inline def setLoadBitmap(value: (String, XCanvas) => XBitmap): Self = StObject.set(x, "loadBitmap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReleaseMouse(value: XWindow => Unit): Self = StObject.set(x, "releaseMouse", js.Any.fromFunction1(value))
+    inline def setReleaseMouse(value: XWindow => Unit): Self = StObject.set(x, "releaseMouse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToTop(value: XWindow => Unit): Self = StObject.set(x, "toTop", js.Any.fromFunction1(value))
+    inline def setToTop(value: XWindow => Unit): Self = StObject.set(x, "toTop", js.Any.fromFunction1(value))
   }
 }

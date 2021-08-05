@@ -67,68 +67,49 @@ trait FhirStore extends StObject {
 }
 object FhirStore {
   
-  @scala.inline
-  def apply(): FhirStore = {
+  inline def apply(): FhirStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FhirStore]
   }
   
-  @scala.inline
-  implicit class FhirStoreMutableBuilder[Self <: FhirStore] (val x: Self) extends AnyVal {
+  extension [Self <: FhirStore](x: Self) {
     
-    @scala.inline
-    def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
+    inline def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
+    inline def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
     
-    @scala.inline
-    def setDisableResourceVersioning(value: Boolean): Self = StObject.set(x, "disableResourceVersioning", value.asInstanceOf[js.Any])
+    inline def setDisableResourceVersioning(value: Boolean): Self = StObject.set(x, "disableResourceVersioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableResourceVersioningUndefined: Self = StObject.set(x, "disableResourceVersioning", js.undefined)
+    inline def setDisableResourceVersioningUndefined: Self = StObject.set(x, "disableResourceVersioning", js.undefined)
     
-    @scala.inline
-    def setEnableUpdateCreate(value: Boolean): Self = StObject.set(x, "enableUpdateCreate", value.asInstanceOf[js.Any])
+    inline def setEnableUpdateCreate(value: Boolean): Self = StObject.set(x, "enableUpdateCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUpdateCreateUndefined: Self = StObject.set(x, "enableUpdateCreate", js.undefined)
+    inline def setEnableUpdateCreateUndefined: Self = StObject.set(x, "enableUpdateCreate", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationConfig(value: NotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
+    inline def setNotificationConfig(value: NotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
+    inline def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
     
-    @scala.inline
-    def setStreamConfigs(value: js.Array[StreamConfig]): Self = StObject.set(x, "streamConfigs", value.asInstanceOf[js.Any])
+    inline def setStreamConfigs(value: js.Array[StreamConfig]): Self = StObject.set(x, "streamConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamConfigsUndefined: Self = StObject.set(x, "streamConfigs", js.undefined)
+    inline def setStreamConfigsUndefined: Self = StObject.set(x, "streamConfigs", js.undefined)
     
-    @scala.inline
-    def setStreamConfigsVarargs(value: StreamConfig*): Self = StObject.set(x, "streamConfigs", js.Array(value :_*))
+    inline def setStreamConfigsVarargs(value: StreamConfig*): Self = StObject.set(x, "streamConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

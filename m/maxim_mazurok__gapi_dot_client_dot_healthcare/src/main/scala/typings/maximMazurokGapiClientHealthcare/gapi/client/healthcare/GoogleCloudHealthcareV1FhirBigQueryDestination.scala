@@ -20,31 +20,23 @@ trait GoogleCloudHealthcareV1FhirBigQueryDestination extends StObject {
 }
 object GoogleCloudHealthcareV1FhirBigQueryDestination {
   
-  @scala.inline
-  def apply(): GoogleCloudHealthcareV1FhirBigQueryDestination = {
+  inline def apply(): GoogleCloudHealthcareV1FhirBigQueryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudHealthcareV1FhirBigQueryDestination]
   }
   
-  @scala.inline
-  implicit class GoogleCloudHealthcareV1FhirBigQueryDestinationMutableBuilder[Self <: GoogleCloudHealthcareV1FhirBigQueryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudHealthcareV1FhirBigQueryDestination](x: Self) {
     
-    @scala.inline
-    def setDatasetUri(value: String): Self = StObject.set(x, "datasetUri", value.asInstanceOf[js.Any])
+    inline def setDatasetUri(value: String): Self = StObject.set(x, "datasetUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUriUndefined: Self = StObject.set(x, "datasetUri", js.undefined)
+    inline def setDatasetUriUndefined: Self = StObject.set(x, "datasetUri", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setSchemaConfig(value: SchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
+    inline def setSchemaConfig(value: SchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
+    inline def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientDiagramItemClickEventArgs
 }
 object ASPxClientDiagramItemClickEventArgs {
   
-  @scala.inline
-  def apply(item: DiagramItem): ASPxClientDiagramItemClickEventArgs = {
+  inline def apply(item: DiagramItem): ASPxClientDiagramItemClickEventArgs = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDiagramItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDiagramItemClickEventArgsMutableBuilder[Self <: ASPxClientDiagramItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDiagramItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: DiagramItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: DiagramItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

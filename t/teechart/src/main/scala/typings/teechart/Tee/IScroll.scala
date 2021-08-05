@@ -20,8 +20,7 @@ trait IScroll extends StObject {
 }
 object IScroll {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     chart: IChart,
     direction: String,
@@ -33,25 +32,18 @@ object IScroll {
     __obj.asInstanceOf[IScroll]
   }
   
-  @scala.inline
-  implicit class IScrollMutableBuilder[Self <: IScroll] (val x: Self) extends AnyVal {
+  extension [Self <: IScroll](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseButton(value: Double): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
+    inline def setMouseButton(value: Double): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

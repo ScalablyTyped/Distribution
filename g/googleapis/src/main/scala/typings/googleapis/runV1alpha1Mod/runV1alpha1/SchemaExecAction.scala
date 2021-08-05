@@ -22,19 +22,15 @@ trait SchemaExecAction extends StObject {
 }
 object SchemaExecAction {
   
-  @scala.inline
-  def apply(): SchemaExecAction = {
+  inline def apply(): SchemaExecAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecAction]
   }
   
-  @scala.inline
-  implicit class SchemaExecActionMutableBuilder[Self <: SchemaExecAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExecAction](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait UpdateAliasOutput extends StObject {
 }
 object UpdateAliasOutput {
   
-  @scala.inline
-  def apply(): UpdateAliasOutput = {
+  inline def apply(): UpdateAliasOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAliasOutput]
   }
   
-  @scala.inline
-  implicit class UpdateAliasOutputMutableBuilder[Self <: UpdateAliasOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAliasOutput](x: Self) {
     
-    @scala.inline
-    def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
   }
 }

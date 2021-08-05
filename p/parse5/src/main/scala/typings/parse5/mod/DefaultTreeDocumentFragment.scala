@@ -17,16 +17,13 @@ trait DefaultTreeDocumentFragment
 }
 object DefaultTreeDocumentFragment {
   
-  @scala.inline
-  def apply(childNodes: js.Array[DefaultTreeNode]): DefaultTreeDocumentFragment = {
+  inline def apply(childNodes: js.Array[DefaultTreeNode]): DefaultTreeDocumentFragment = {
     val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], nodeName = "#document-fragment")
     __obj.asInstanceOf[DefaultTreeDocumentFragment]
   }
   
-  @scala.inline
-  implicit class DefaultTreeDocumentFragmentMutableBuilder[Self <: DefaultTreeDocumentFragment] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTreeDocumentFragment](x: Self) {
     
-    @scala.inline
-    def setNodeName(value: `Numbersigndocument-fragment`): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: `Numbersigndocument-fragment`): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

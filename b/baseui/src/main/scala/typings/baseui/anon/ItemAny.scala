@@ -13,19 +13,15 @@ trait ItemAny extends StObject {
 }
 object ItemAny {
   
-  @scala.inline
-  def apply(event: typings.std.Event | KeyboardEvent, item: js.Any): ItemAny = {
+  inline def apply(event: typings.std.Event | KeyboardEvent, item: js.Any): ItemAny = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemAny]
   }
   
-  @scala.inline
-  implicit class ItemAnyMutableBuilder[Self <: ItemAny] (val x: Self) extends AnyVal {
+  extension [Self <: ItemAny](x: Self) {
     
-    @scala.inline
-    def setEvent(value: typings.std.Event | KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.std.Event | KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

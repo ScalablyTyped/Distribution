@@ -11,22 +11,17 @@ trait StoreLayoutPagesListResponse extends StObject {
 }
 object StoreLayoutPagesListResponse {
   
-  @scala.inline
-  def apply(): StoreLayoutPagesListResponse = {
+  inline def apply(): StoreLayoutPagesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoreLayoutPagesListResponse]
   }
   
-  @scala.inline
-  implicit class StoreLayoutPagesListResponseMutableBuilder[Self <: StoreLayoutPagesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StoreLayoutPagesListResponse](x: Self) {
     
-    @scala.inline
-    def setPage(value: js.Array[StorePage]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: js.Array[StorePage]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPageVarargs(value: StorePage*): Self = StObject.set(x, "page", js.Array(value :_*))
+    inline def setPageVarargs(value: StorePage*): Self = StObject.set(x, "page", js.Array(value :_*))
   }
 }

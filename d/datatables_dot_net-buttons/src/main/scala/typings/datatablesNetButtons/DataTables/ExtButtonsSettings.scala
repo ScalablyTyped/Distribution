@@ -10,16 +10,13 @@ trait ExtButtonsSettings extends StObject {
 }
 object ExtButtonsSettings {
   
-  @scala.inline
-  def apply(collection: ExtButtonsCollectionSettings): ExtButtonsSettings = {
+  inline def apply(collection: ExtButtonsCollectionSettings): ExtButtonsSettings = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtButtonsSettings]
   }
   
-  @scala.inline
-  implicit class ExtButtonsSettingsMutableBuilder[Self <: ExtButtonsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ExtButtonsSettings](x: Self) {
     
-    @scala.inline
-    def setCollection(value: ExtButtonsCollectionSettings): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: ExtButtonsCollectionSettings): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
   }
 }

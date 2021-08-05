@@ -8,11 +8,9 @@ object d3SliderStrings {
   
   @js.native
   sealed trait slide extends StObject
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait slideend extends StObject
-  @scala.inline
-  def slideend: slideend = "slideend".asInstanceOf[slideend]
+  inline def slideend: slideend = "slideend".asInstanceOf[slideend]
 }

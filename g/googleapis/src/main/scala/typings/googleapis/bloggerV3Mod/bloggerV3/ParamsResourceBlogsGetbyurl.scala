@@ -30,31 +30,23 @@ trait ParamsResourceBlogsGetbyurl
 }
 object ParamsResourceBlogsGetbyurl {
   
-  @scala.inline
-  def apply(): ParamsResourceBlogsGetbyurl = {
+  inline def apply(): ParamsResourceBlogsGetbyurl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBlogsGetbyurl]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBlogsGetbyurlMutableBuilder[Self <: ParamsResourceBlogsGetbyurl] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBlogsGetbyurl](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

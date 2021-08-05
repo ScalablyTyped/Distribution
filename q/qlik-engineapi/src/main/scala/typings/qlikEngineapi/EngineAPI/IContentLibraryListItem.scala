@@ -26,22 +26,17 @@ trait IContentLibraryListItem extends StObject {
 }
 object IContentLibraryListItem {
   
-  @scala.inline
-  def apply(qAppSpecific: Boolean, qMeta: INxMeta, qName: String): IContentLibraryListItem = {
+  inline def apply(qAppSpecific: Boolean, qMeta: INxMeta, qName: String): IContentLibraryListItem = {
     val __obj = js.Dynamic.literal(qAppSpecific = qAppSpecific.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentLibraryListItem]
   }
   
-  @scala.inline
-  implicit class IContentLibraryListItemMutableBuilder[Self <: IContentLibraryListItem] (val x: Self) extends AnyVal {
+  extension [Self <: IContentLibraryListItem](x: Self) {
     
-    @scala.inline
-    def setQAppSpecific(value: Boolean): Self = StObject.set(x, "qAppSpecific", value.asInstanceOf[js.Any])
+    inline def setQAppSpecific(value: Boolean): Self = StObject.set(x, "qAppSpecific", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

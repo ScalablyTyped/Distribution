@@ -40,8 +40,7 @@ trait NxCell extends StObject {
 }
 object NxCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAttrDims: NxAttributeDimValues,
     qAttrExps: NxAttributeExpressionValues,
     qElemNumber: Double,
@@ -59,43 +58,30 @@ object NxCell {
     __obj.asInstanceOf[NxCell]
   }
   
-  @scala.inline
-  implicit class NxCellMutableBuilder[Self <: NxCell] (val x: Self) extends AnyVal {
+  extension [Self <: NxCell](x: Self) {
     
-    @scala.inline
-    def setQAttrDims(value: NxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    inline def setQAttrDims(value: NxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrExps(value: NxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: NxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
+    inline def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFrequency(value: String): Self = StObject.set(x, "qFrequency", value.asInstanceOf[js.Any])
+    inline def setQFrequency(value: String): Self = StObject.set(x, "qFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHighlightRanges(value: NxHighlightRanges): Self = StObject.set(x, "qHighlightRanges", value.asInstanceOf[js.Any])
+    inline def setQHighlightRanges(value: NxHighlightRanges): Self = StObject.set(x, "qHighlightRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsEmpty(value: Boolean): Self = StObject.set(x, "qIsEmpty", value.asInstanceOf[js.Any])
+    inline def setQIsEmpty(value: Boolean): Self = StObject.set(x, "qIsEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsNull(value: Boolean): Self = StObject.set(x, "qIsNull", value.asInstanceOf[js.Any])
+    inline def setQIsNull(value: Boolean): Self = StObject.set(x, "qIsNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsOtherCell(value: Boolean): Self = StObject.set(x, "qIsOtherCell", value.asInstanceOf[js.Any])
+    inline def setQIsOtherCell(value: Boolean): Self = StObject.set(x, "qIsOtherCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsTotalCell(value: Boolean): Self = StObject.set(x, "qIsTotalCell", value.asInstanceOf[js.Any])
+    inline def setQIsTotalCell(value: Boolean): Self = StObject.set(x, "qIsTotalCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQState(value: L | S | O | D | A | X | XS | XL): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
+    inline def setQState(value: L | S | O | D | A | X | XS | XL): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }
 }

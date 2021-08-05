@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProgressBarColor extends StObject
 object ProgressBarColor {
   
-  @scala.inline
-  def red: typings.youtube.youtubeStrings.red = "red".asInstanceOf[typings.youtube.youtubeStrings.red]
+  inline def red: typings.youtube.youtubeStrings.red = "red".asInstanceOf[typings.youtube.youtubeStrings.red]
   
-  @scala.inline
-  def white: typings.youtube.youtubeStrings.white = "white".asInstanceOf[typings.youtube.youtubeStrings.white]
+  inline def white: typings.youtube.youtubeStrings.white = "white".asInstanceOf[typings.youtube.youtubeStrings.white]
 }

@@ -36,37 +36,27 @@ trait SchemaGenerateAccessTokenRequest extends StObject {
 }
 object SchemaGenerateAccessTokenRequest {
   
-  @scala.inline
-  def apply(): SchemaGenerateAccessTokenRequest = {
+  inline def apply(): SchemaGenerateAccessTokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateAccessTokenRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateAccessTokenRequestMutableBuilder[Self <: SchemaGenerateAccessTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateAccessTokenRequest](x: Self) {
     
-    @scala.inline
-    def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+    inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+    inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
-    @scala.inline
-    def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
     
-    @scala.inline
-    def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+    inline def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+    inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

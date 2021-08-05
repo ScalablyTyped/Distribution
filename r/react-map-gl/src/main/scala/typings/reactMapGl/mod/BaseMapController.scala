@@ -12,22 +12,17 @@ trait BaseMapController extends StObject {
 }
 object BaseMapController {
   
-  @scala.inline
-  def apply(events: js.Array[String], handleEvent: MapControlEvent => Unit): BaseMapController = {
+  inline def apply(events: js.Array[String], handleEvent: MapControlEvent => Unit): BaseMapController = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], handleEvent = js.Any.fromFunction1(handleEvent))
     __obj.asInstanceOf[BaseMapController]
   }
   
-  @scala.inline
-  implicit class BaseMapControllerMutableBuilder[Self <: BaseMapController] (val x: Self) extends AnyVal {
+  extension [Self <: BaseMapController](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setHandleEvent(value: MapControlEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: MapControlEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

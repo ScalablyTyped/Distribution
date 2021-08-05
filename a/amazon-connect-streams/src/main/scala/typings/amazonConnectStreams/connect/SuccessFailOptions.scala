@@ -14,25 +14,19 @@ trait SuccessFailOptions extends StObject {
 }
 object SuccessFailOptions {
   
-  @scala.inline
-  def apply(): SuccessFailOptions = {
+  inline def apply(): SuccessFailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessFailOptions]
   }
   
-  @scala.inline
-  implicit class SuccessFailOptionsMutableBuilder[Self <: SuccessFailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessFailOptions](x: Self) {
     
-    @scala.inline
-    def setFailure(value: js.Array[String] => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
+    inline def setFailure(value: js.Array[String] => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

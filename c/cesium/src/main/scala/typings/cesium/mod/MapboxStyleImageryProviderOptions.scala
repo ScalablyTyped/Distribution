@@ -43,46 +43,33 @@ trait MapboxStyleImageryProviderOptions
 }
 object MapboxStyleImageryProviderOptions {
   
-  @scala.inline
-  def apply(styleId: String): MapboxStyleImageryProviderOptions = {
+  inline def apply(styleId: String): MapboxStyleImageryProviderOptions = {
     val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxStyleImageryProviderOptions]
   }
   
-  @scala.inline
-  implicit class MapboxStyleImageryProviderOptionsMutableBuilder[Self <: MapboxStyleImageryProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapboxStyleImageryProviderOptions](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: Boolean): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Boolean): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesize(value: Double): Self = StObject.set(x, "tilesize", value.asInstanceOf[js.Any])
+    inline def setTilesize(value: Double): Self = StObject.set(x, "tilesize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesizeUndefined: Self = StObject.set(x, "tilesize", js.undefined)
+    inline def setTilesizeUndefined: Self = StObject.set(x, "tilesize", js.undefined)
     
-    @scala.inline
-    def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

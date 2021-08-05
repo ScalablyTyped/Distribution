@@ -18,19 +18,15 @@ trait EnableIoTLoggingParams extends StObject {
 }
 object EnableIoTLoggingParams {
   
-  @scala.inline
-  def apply(logLevel: LogLevel, roleArnForLogging: RoleArn): EnableIoTLoggingParams = {
+  inline def apply(logLevel: LogLevel, roleArnForLogging: RoleArn): EnableIoTLoggingParams = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any], roleArnForLogging = roleArnForLogging.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableIoTLoggingParams]
   }
   
-  @scala.inline
-  implicit class EnableIoTLoggingParamsMutableBuilder[Self <: EnableIoTLoggingParams] (val x: Self) extends AnyVal {
+  extension [Self <: EnableIoTLoggingParams](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnForLogging(value: RoleArn): Self = StObject.set(x, "roleArnForLogging", value.asInstanceOf[js.Any])
+    inline def setRoleArnForLogging(value: RoleArn): Self = StObject.set(x, "roleArnForLogging", value.asInstanceOf[js.Any])
   }
 }

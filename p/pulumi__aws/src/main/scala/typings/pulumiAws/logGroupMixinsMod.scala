@@ -59,8 +59,7 @@ object logGroupMixinsMod {
   }
   object DecodedLogGroupEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       logEvents: js.Array[LogGroupEventRecord],
       logGroup: String,
       logStream: String,
@@ -72,32 +71,23 @@ object logGroupMixinsMod {
       __obj.asInstanceOf[DecodedLogGroupEvent]
     }
     
-    @scala.inline
-    implicit class DecodedLogGroupEventMutableBuilder[Self <: DecodedLogGroupEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DecodedLogGroupEvent](x: Self) {
       
-      @scala.inline
-      def setLogEvents(value: js.Array[LogGroupEventRecord]): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
+      inline def setLogEvents(value: js.Array[LogGroupEventRecord]): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogEventsVarargs(value: LogGroupEventRecord*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+      inline def setLogEventsVarargs(value: LogGroupEventRecord*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
+      inline def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogStream(value: String): Self = StObject.set(x, "logStream", value.asInstanceOf[js.Any])
+      inline def setLogStream(value: String): Self = StObject.set(x, "logStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionFilters(value: js.Array[String]): Self = StObject.set(x, "subscriptionFilters", value.asInstanceOf[js.Any])
+      inline def setSubscriptionFilters(value: js.Array[String]): Self = StObject.set(x, "subscriptionFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionFiltersVarargs(value: String*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
+      inline def setSubscriptionFiltersVarargs(value: String*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
     }
   }
   
@@ -107,17 +97,14 @@ object logGroupMixinsMod {
   }
   object LogGroupEvent {
     
-    @scala.inline
-    def apply(awslogs: Data): LogGroupEvent = {
+    inline def apply(awslogs: Data): LogGroupEvent = {
       val __obj = js.Dynamic.literal(awslogs = awslogs.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogGroupEvent]
     }
     
-    @scala.inline
-    implicit class LogGroupEventMutableBuilder[Self <: LogGroupEvent] (val x: Self) extends AnyVal {
+    extension [Self <: LogGroupEvent](x: Self) {
       
-      @scala.inline
-      def setAwslogs(value: Data): Self = StObject.set(x, "awslogs", value.asInstanceOf[js.Any])
+      inline def setAwslogs(value: Data): Self = StObject.set(x, "awslogs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,23 +120,18 @@ object logGroupMixinsMod {
   }
   object LogGroupEventRecord {
     
-    @scala.inline
-    def apply(id: String, message: String, timestamp: Double): LogGroupEventRecord = {
+    inline def apply(id: String, message: String, timestamp: Double): LogGroupEventRecord = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogGroupEventRecord]
     }
     
-    @scala.inline
-    implicit class LogGroupEventRecordMutableBuilder[Self <: LogGroupEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: LogGroupEventRecord](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,20 +145,16 @@ object logGroupMixinsMod {
   }
   object LogGroupEventSubscriptionArgs {
     
-    @scala.inline
-    def apply(): LogGroupEventSubscriptionArgs = {
+    inline def apply(): LogGroupEventSubscriptionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogGroupEventSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class LogGroupEventSubscriptionArgsMutableBuilder[Self <: LogGroupEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LogGroupEventSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setFilterPattern(value: String): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+      inline def setFilterPattern(value: String): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
+      inline def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     }
   }
   

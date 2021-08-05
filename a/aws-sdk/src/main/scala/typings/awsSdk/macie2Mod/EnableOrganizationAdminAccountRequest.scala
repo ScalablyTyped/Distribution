@@ -18,22 +18,17 @@ trait EnableOrganizationAdminAccountRequest extends StObject {
 }
 object EnableOrganizationAdminAccountRequest {
   
-  @scala.inline
-  def apply(adminAccountId: string): EnableOrganizationAdminAccountRequest = {
+  inline def apply(adminAccountId: string): EnableOrganizationAdminAccountRequest = {
     val __obj = js.Dynamic.literal(adminAccountId = adminAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableOrganizationAdminAccountRequest]
   }
   
-  @scala.inline
-  implicit class EnableOrganizationAdminAccountRequestMutableBuilder[Self <: EnableOrganizationAdminAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableOrganizationAdminAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAdminAccountId(value: string): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
+    inline def setAdminAccountId(value: string): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

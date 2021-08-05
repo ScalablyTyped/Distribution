@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(string: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(string: String, maxLength: Double, options: ClipOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(string: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(string: String, maxLength: Double, options: ClipOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ClipHtmlOptions
     extends StObject
@@ -33,23 +31,18 @@ object mod {
   }
   object ClipHtmlOptions {
     
-    @scala.inline
-    def apply(): ClipHtmlOptions = {
+    inline def apply(): ClipHtmlOptions = {
       val __obj = js.Dynamic.literal(html = true)
       __obj.asInstanceOf[ClipHtmlOptions]
     }
     
-    @scala.inline
-    implicit class ClipHtmlOptionsMutableBuilder[Self <: ClipHtmlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClipHtmlOptions](x: Self) {
       
-      @scala.inline
-      def setHtml(value: `true`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: `true`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageWeight(value: Double): Self = StObject.set(x, "imageWeight", value.asInstanceOf[js.Any])
+      inline def setImageWeight(value: Double): Self = StObject.set(x, "imageWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageWeightUndefined: Self = StObject.set(x, "imageWeight", js.undefined)
+      inline def setImageWeightUndefined: Self = StObject.set(x, "imageWeight", js.undefined)
     }
   }
   
@@ -60,14 +53,12 @@ object mod {
   trait ClipOptions extends StObject
   object ClipOptions {
     
-    @scala.inline
-    def ClipHtmlOptions(): typings.textClipper.mod.ClipHtmlOptions = {
+    inline def ClipHtmlOptions(): typings.textClipper.mod.ClipHtmlOptions = {
       val __obj = js.Dynamic.literal(html = true)
       __obj.asInstanceOf[typings.textClipper.mod.ClipHtmlOptions]
     }
     
-    @scala.inline
-    def ClipPlainTextOptions(): typings.textClipper.mod.ClipPlainTextOptions = {
+    inline def ClipPlainTextOptions(): typings.textClipper.mod.ClipPlainTextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.textClipper.mod.ClipPlainTextOptions]
     }
@@ -83,20 +74,16 @@ object mod {
   }
   object ClipPlainTextOptions {
     
-    @scala.inline
-    def apply(): ClipPlainTextOptions = {
+    inline def apply(): ClipPlainTextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClipPlainTextOptions]
     }
     
-    @scala.inline
-    implicit class ClipPlainTextOptionsMutableBuilder[Self <: ClipPlainTextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClipPlainTextOptions](x: Self) {
       
-      @scala.inline
-      def setHtml(value: `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     }
   }
   
@@ -127,38 +114,28 @@ object mod {
   }
   object CommonClipOptions {
     
-    @scala.inline
-    def apply(): CommonClipOptions = {
+    inline def apply(): CommonClipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonClipOptions]
     }
     
-    @scala.inline
-    implicit class CommonClipOptionsMutableBuilder[Self <: CommonClipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonClipOptions](x: Self) {
       
-      @scala.inline
-      def setBreakWords(value: Boolean): Self = StObject.set(x, "breakWords", value.asInstanceOf[js.Any])
+      inline def setBreakWords(value: Boolean): Self = StObject.set(x, "breakWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakWordsUndefined: Self = StObject.set(x, "breakWords", js.undefined)
+      inline def setBreakWordsUndefined: Self = StObject.set(x, "breakWords", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      inline def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+      inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
       
-      @scala.inline
-      def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+      inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
+      inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     }
   }
 }

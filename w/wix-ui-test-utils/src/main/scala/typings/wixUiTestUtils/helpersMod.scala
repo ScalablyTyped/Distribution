@@ -18,17 +18,13 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isClassExists(element: HTMLElement, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassExists")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isClassExists(element: HTMLElement, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassExists")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def makeControlled[T /* <: ControlledComponentProps */](Component: SFC[T]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("makeControlled")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def makeControlled[T /* <: ControlledComponentProps */](Component: SFC[T]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("makeControlled")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
   
-  @scala.inline
-  def reactEventTrigger(): TypeofSimulate = ^.asInstanceOf[js.Dynamic].applyDynamic("reactEventTrigger")().asInstanceOf[TypeofSimulate]
+  inline def reactEventTrigger(): TypeofSimulate = ^.asInstanceOf[js.Dynamic].applyDynamic("reactEventTrigger")().asInstanceOf[TypeofSimulate]
   
-  @scala.inline
-  def sleep(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def sleep(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait ControlledChangeEvent[T]
     extends StObject
@@ -39,8 +35,7 @@ object helpersMod {
   }
   object ControlledChangeEvent {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: EventTarget & T,
@@ -62,11 +57,9 @@ object helpersMod {
       __obj.asInstanceOf[ControlledChangeEvent[T]]
     }
     
-    @scala.inline
-    implicit class ControlledChangeEventMutableBuilder[Self <: ControlledChangeEvent[?], T] (val x: Self & ControlledChangeEvent[T]) extends AnyVal {
+    extension [Self <: ControlledChangeEvent[?], T](x: Self & ControlledChangeEvent[T]) {
       
-      @scala.inline
-      def setTarget(value: ControlledEventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ControlledEventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,26 +73,20 @@ object helpersMod {
   }
   object ControlledComponentProps {
     
-    @scala.inline
-    def apply(): ControlledComponentProps = {
+    inline def apply(): ControlledComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ControlledComponentProps]
     }
     
-    @scala.inline
-    implicit class ControlledComponentPropsMutableBuilder[Self <: ControlledComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ControlledComponentProps](x: Self) {
       
-      @scala.inline
-      def setOnChange(value: /* e */ ChangeEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ ChangeEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -109,17 +96,14 @@ object helpersMod {
   }
   object ControlledComponentState {
     
-    @scala.inline
-    def apply(value: String): ControlledComponentState = {
+    inline def apply(value: String): ControlledComponentState = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlledComponentState]
     }
     
-    @scala.inline
-    implicit class ControlledComponentStateMutableBuilder[Self <: ControlledComponentState] (val x: Self) extends AnyVal {
+    extension [Self <: ControlledComponentState](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

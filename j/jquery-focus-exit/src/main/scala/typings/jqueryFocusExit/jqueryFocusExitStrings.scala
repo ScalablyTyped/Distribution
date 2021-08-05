@@ -8,11 +8,9 @@ object jqueryFocusExitStrings {
   
   @js.native
   sealed trait focusExit extends StObject
-  @scala.inline
-  def focusExit: focusExit = "focusExit".asInstanceOf[focusExit]
+  inline def focusExit: focusExit = "focusExit".asInstanceOf[focusExit]
   
   @js.native
   sealed trait focusin extends StObject
-  @scala.inline
-  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  inline def focusin: focusin = "focusin".asInstanceOf[focusin]
 }

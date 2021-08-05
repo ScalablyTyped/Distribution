@@ -24,31 +24,23 @@ trait ChildLink extends StObject {
 }
 object ChildLink {
   
-  @scala.inline
-  def apply(): ChildLink = {
+  inline def apply(): ChildLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChildLink]
   }
   
-  @scala.inline
-  implicit class ChildLinkMutableBuilder[Self <: ChildLink] (val x: Self) extends AnyVal {
+  extension [Self <: ChildLink](x: Self) {
     
-    @scala.inline
-    def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
+    inline def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildIndexUndefined: Self = StObject.set(x, "childIndex", js.undefined)
+    inline def setChildIndexUndefined: Self = StObject.set(x, "childIndex", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

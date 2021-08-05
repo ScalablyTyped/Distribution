@@ -20,32 +20,24 @@ object EditOptions {
   }
   object EditPolyVerticesEditOptions {
     
-    @scala.inline
-    def apply(): EditPolyVerticesEditOptions = {
+    inline def apply(): EditPolyVerticesEditOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditPolyVerticesEditOptions]
     }
     
-    @scala.inline
-    implicit class EditPolyVerticesEditOptionsMutableBuilder[Self <: EditPolyVerticesEditOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EditPolyVerticesEditOptions](x: Self) {
       
-      @scala.inline
-      def setDrawError(value: DrawErrorOptions): Self = StObject.set(x, "drawError", value.asInstanceOf[js.Any])
+      inline def setDrawError(value: DrawErrorOptions): Self = StObject.set(x, "drawError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawErrorUndefined: Self = StObject.set(x, "drawError", js.undefined)
+      inline def setDrawErrorUndefined: Self = StObject.set(x, "drawError", js.undefined)
       
-      @scala.inline
-      def setIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setTouchIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "touchIcon", value.asInstanceOf[js.Any])
+      inline def setTouchIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "touchIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchIconUndefined: Self = StObject.set(x, "touchIcon", js.undefined)
+      inline def setTouchIconUndefined: Self = StObject.set(x, "touchIcon", js.undefined)
     }
   }
   
@@ -61,38 +53,28 @@ object EditOptions {
   }
   object EditSimpleShapeOptions {
     
-    @scala.inline
-    def apply(): EditSimpleShapeOptions = {
+    inline def apply(): EditSimpleShapeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditSimpleShapeOptions]
     }
     
-    @scala.inline
-    implicit class EditSimpleShapeOptionsMutableBuilder[Self <: EditSimpleShapeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EditSimpleShapeOptions](x: Self) {
       
-      @scala.inline
-      def setMoveIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "moveIcon", value.asInstanceOf[js.Any])
+      inline def setMoveIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "moveIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveIconUndefined: Self = StObject.set(x, "moveIcon", js.undefined)
+      inline def setMoveIconUndefined: Self = StObject.set(x, "moveIcon", js.undefined)
       
-      @scala.inline
-      def setResizeIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "resizeIcon", value.asInstanceOf[js.Any])
+      inline def setResizeIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "resizeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeIconUndefined: Self = StObject.set(x, "resizeIcon", js.undefined)
+      inline def setResizeIconUndefined: Self = StObject.set(x, "resizeIcon", js.undefined)
       
-      @scala.inline
-      def setTouchMoveIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "touchMoveIcon", value.asInstanceOf[js.Any])
+      inline def setTouchMoveIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "touchMoveIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchMoveIconUndefined: Self = StObject.set(x, "touchMoveIcon", js.undefined)
+      inline def setTouchMoveIconUndefined: Self = StObject.set(x, "touchMoveIcon", js.undefined)
       
-      @scala.inline
-      def setTouchResizeIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "touchResizeIcon", value.asInstanceOf[js.Any])
+      inline def setTouchResizeIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "touchResizeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchResizeIconUndefined: Self = StObject.set(x, "touchResizeIcon", js.undefined)
+      inline def setTouchResizeIconUndefined: Self = StObject.set(x, "touchResizeIcon", js.undefined)
     }
   }
 }

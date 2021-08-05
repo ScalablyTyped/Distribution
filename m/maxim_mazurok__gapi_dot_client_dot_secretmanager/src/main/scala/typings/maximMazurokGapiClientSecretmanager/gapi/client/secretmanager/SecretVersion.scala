@@ -26,43 +26,31 @@ trait SecretVersion extends StObject {
 }
 object SecretVersion {
   
-  @scala.inline
-  def apply(): SecretVersion = {
+  inline def apply(): SecretVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecretVersion]
   }
   
-  @scala.inline
-  implicit class SecretVersionMutableBuilder[Self <: SecretVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SecretVersion](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDestroyTime(value: String): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
+    inline def setDestroyTime(value: String): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyTimeUndefined: Self = StObject.set(x, "destroyTime", js.undefined)
+    inline def setDestroyTimeUndefined: Self = StObject.set(x, "destroyTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReplicationStatus(value: ReplicationStatus): Self = StObject.set(x, "replicationStatus", value.asInstanceOf[js.Any])
+    inline def setReplicationStatus(value: ReplicationStatus): Self = StObject.set(x, "replicationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationStatusUndefined: Self = StObject.set(x, "replicationStatus", js.undefined)
+    inline def setReplicationStatusUndefined: Self = StObject.set(x, "replicationStatus", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

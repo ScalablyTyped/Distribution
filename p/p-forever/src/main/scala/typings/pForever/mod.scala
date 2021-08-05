@@ -34,20 +34,17 @@ object mod {
   	});
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
       ValueType | js.Thenable[ValueType] | js.Symbol
     ]
   ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: ValueType
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -88,32 +85,28 @@ object mod {
   	```
   	*/
   // TODO: Remove this for the next major release
-  @scala.inline
-  def default[ValueType](
+  inline def default[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
       ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ]
   ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   // TODO: Remove this for the next major release
-  @scala.inline
-  def default[ValueType](
+  inline def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
       ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: ValueType
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def default[ValueType](
+  inline def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
       ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Symbol used to end the loop.

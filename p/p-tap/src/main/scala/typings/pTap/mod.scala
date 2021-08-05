@@ -26,8 +26,7 @@ object mod {
   		});
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](tapHandler: js.Function1[/* value */ ValueType, js.Any]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(tapHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
+  inline def apply[ValueType](tapHandler: js.Function1[/* value */ ValueType, js.Any]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(tapHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
   
   @JSImport("p-tap", JSImport.Namespace)
   @js.native
@@ -57,8 +56,7 @@ object mod {
   	```
   	*/
   // TODO: Remove this for the next major release
-  @scala.inline
-  def default[ValueType](tapHandler: js.Function1[/* value */ ValueType, js.Any]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
+  inline def default[ValueType](tapHandler: js.Function1[/* value */ ValueType, js.Any]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
   
   /**
   	Tap into a promise chain without affecting its value or state. Use this in a `.catch()` method.
@@ -73,9 +71,7 @@ object mod {
   		.catch(handleError);
   	```
   	*/
-  @scala.inline
-  def `catch`[ErrorType](tapHandler: js.Function1[/* error */ ErrorType, js.Any]): js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")(tapHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]]]
+  inline def `catch`[ErrorType](tapHandler: js.Function1[/* error */ ErrorType, js.Any]): js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")(tapHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]]]
   
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

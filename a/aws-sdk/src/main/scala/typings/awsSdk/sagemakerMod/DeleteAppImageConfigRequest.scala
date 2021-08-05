@@ -13,16 +13,13 @@ trait DeleteAppImageConfigRequest extends StObject {
 }
 object DeleteAppImageConfigRequest {
   
-  @scala.inline
-  def apply(AppImageConfigName: AppImageConfigName): DeleteAppImageConfigRequest = {
+  inline def apply(AppImageConfigName: AppImageConfigName): DeleteAppImageConfigRequest = {
     val __obj = js.Dynamic.literal(AppImageConfigName = AppImageConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppImageConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppImageConfigRequestMutableBuilder[Self <: DeleteAppImageConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppImageConfigRequest](x: Self) {
     
-    @scala.inline
-    def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
+    inline def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
   }
 }

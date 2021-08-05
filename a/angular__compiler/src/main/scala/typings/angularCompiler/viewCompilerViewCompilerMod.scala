@@ -31,7 +31,7 @@ object viewCompilerViewCompilerMod {
   class ViewCompiler protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
-    var _reflector: js.Any = js.native
+    /* private */ var _reflector: js.Any = js.native
     
     def compileComponent(
       outputCtx: OutputContext,
@@ -42,8 +42,6 @@ object viewCompilerViewCompilerMod {
     ): ViewCompileResult = js.native
   }
   
-  @scala.inline
-  def elementEventFullName(target: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("elementEventFullName")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def elementEventFullName(target: Null, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("elementEventFullName")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def elementEventFullName(target: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("elementEventFullName")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def elementEventFullName(target: Null, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("elementEventFullName")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

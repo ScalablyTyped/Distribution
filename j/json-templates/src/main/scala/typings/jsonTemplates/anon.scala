@@ -14,20 +14,16 @@ object anon {
   }
   object DefaultValue {
     
-    @scala.inline
-    def apply(defaultValue: String, key: String): DefaultValue = {
+    inline def apply(defaultValue: String, key: String): DefaultValue = {
       val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultValue]
     }
     
-    @scala.inline
-    implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultValue](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,20 +33,16 @@ object anon {
   }
   object Parameters {
     
-    @scala.inline
-    def apply(parameters: js.Array[DefaultValue]): Parameters = {
+    inline def apply(parameters: js.Array[DefaultValue]): Parameters = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parameters]
     }
     
-    @scala.inline
-    implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+    extension [Self <: Parameters](x: Self) {
       
-      @scala.inline
-      def setParameters(value: js.Array[DefaultValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[DefaultValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersVarargs(value: DefaultValue*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: DefaultValue*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     }
   }
 }

@@ -14,22 +14,17 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): Progress = {
+  inline def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): Progress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
+    inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
+    inline def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
   }
 }

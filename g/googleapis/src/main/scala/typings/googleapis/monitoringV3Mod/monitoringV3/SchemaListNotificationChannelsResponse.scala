@@ -23,28 +23,21 @@ trait SchemaListNotificationChannelsResponse extends StObject {
 }
 object SchemaListNotificationChannelsResponse {
   
-  @scala.inline
-  def apply(): SchemaListNotificationChannelsResponse = {
+  inline def apply(): SchemaListNotificationChannelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListNotificationChannelsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListNotificationChannelsResponseMutableBuilder[Self <: SchemaListNotificationChannelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListNotificationChannelsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNotificationChannels(value: js.Array[SchemaNotificationChannel]): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
+    inline def setNotificationChannels(value: js.Array[SchemaNotificationChannel]): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
+    inline def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
     
-    @scala.inline
-    def setNotificationChannelsVarargs(value: SchemaNotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
+    inline def setNotificationChannelsVarargs(value: SchemaNotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
   }
 }

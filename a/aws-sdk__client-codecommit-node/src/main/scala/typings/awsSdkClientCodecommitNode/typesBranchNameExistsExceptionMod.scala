@@ -16,17 +16,14 @@ object typesBranchNameExistsExceptionMod {
   }
   object BranchNameExistsException {
     
-    @scala.inline
-    def apply(): BranchNameExistsException = {
+    inline def apply(): BranchNameExistsException = {
       val __obj = js.Dynamic.literal(name = "BranchNameExistsException")
       __obj.asInstanceOf[BranchNameExistsException]
     }
     
-    @scala.inline
-    implicit class BranchNameExistsExceptionMutableBuilder[Self <: BranchNameExistsException] (val x: Self) extends AnyVal {
+    extension [Self <: BranchNameExistsException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameExistsException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

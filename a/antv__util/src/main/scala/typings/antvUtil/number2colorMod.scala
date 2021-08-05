@@ -10,6 +10,5 @@ object number2colorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(num.asInstanceOf[js.Any]).asInstanceOf[String]
 }

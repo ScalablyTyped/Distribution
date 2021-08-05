@@ -20,37 +20,27 @@ trait Route extends StObject {
 }
 object Route {
   
-  @scala.inline
-  def apply(): Route = {
+  inline def apply(): Route = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Route]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+  extension [Self <: Route](x: Self) {
     
-    @scala.inline
-    def setDestRange(value: String): Self = StObject.set(x, "destRange", value.asInstanceOf[js.Any])
+    inline def setDestRange(value: String): Self = StObject.set(x, "destRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestRangeUndefined: Self = StObject.set(x, "destRange", js.undefined)
+    inline def setDestRangeUndefined: Self = StObject.set(x, "destRange", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setNextHopGateway(value: String): Self = StObject.set(x, "nextHopGateway", value.asInstanceOf[js.Any])
+    inline def setNextHopGateway(value: String): Self = StObject.set(x, "nextHopGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextHopGatewayUndefined: Self = StObject.set(x, "nextHopGateway", js.undefined)
+    inline def setNextHopGatewayUndefined: Self = StObject.set(x, "nextHopGateway", js.undefined)
   }
 }

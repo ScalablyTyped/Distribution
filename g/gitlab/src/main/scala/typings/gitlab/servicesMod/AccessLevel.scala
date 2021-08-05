@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessLevel extends StObject
 object AccessLevel {
   
-  @scala.inline
-  def `10`: typings.gitlab.gitlabNumbers.`10` = 10.asInstanceOf[typings.gitlab.gitlabNumbers.`10`]
+  inline def `10`: typings.gitlab.gitlabNumbers.`10` = 10.asInstanceOf[typings.gitlab.gitlabNumbers.`10`]
   
-  @scala.inline
-  def `20`: typings.gitlab.gitlabNumbers.`20` = 20.asInstanceOf[typings.gitlab.gitlabNumbers.`20`]
+  inline def `20`: typings.gitlab.gitlabNumbers.`20` = 20.asInstanceOf[typings.gitlab.gitlabNumbers.`20`]
   
-  @scala.inline
-  def `30`: typings.gitlab.gitlabNumbers.`30` = 30.asInstanceOf[typings.gitlab.gitlabNumbers.`30`]
+  inline def `30`: typings.gitlab.gitlabNumbers.`30` = 30.asInstanceOf[typings.gitlab.gitlabNumbers.`30`]
   
-  @scala.inline
-  def `40`: typings.gitlab.gitlabNumbers.`40` = 40.asInstanceOf[typings.gitlab.gitlabNumbers.`40`]
+  inline def `40`: typings.gitlab.gitlabNumbers.`40` = 40.asInstanceOf[typings.gitlab.gitlabNumbers.`40`]
   
-  @scala.inline
-  def `50`: typings.gitlab.gitlabNumbers.`50` = 50.asInstanceOf[typings.gitlab.gitlabNumbers.`50`]
+  inline def `50`: typings.gitlab.gitlabNumbers.`50` = 50.asInstanceOf[typings.gitlab.gitlabNumbers.`50`]
 }

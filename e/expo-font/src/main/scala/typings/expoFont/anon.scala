@@ -14,20 +14,16 @@ object anon {
   }
   object PickFontResourcedisplay {
     
-    @scala.inline
-    def apply(): PickFontResourcedisplay = {
+    inline def apply(): PickFontResourcedisplay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickFontResourcedisplay]
     }
     
-    @scala.inline
-    implicit class PickFontResourcedisplayMutableBuilder[Self <: PickFontResourcedisplay] (val x: Self) extends AnyVal {
+    extension [Self <: PickFontResourcedisplay](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     }
   }
 }

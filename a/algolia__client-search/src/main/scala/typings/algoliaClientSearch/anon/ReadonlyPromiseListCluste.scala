@@ -16,8 +16,7 @@ trait ReadonlyPromiseListCluste extends StObject {
 }
 object ReadonlyPromiseListCluste {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[ListClustersResponse | js.Any],
     `finally`: () => js.Promise[ListClustersResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseListCluste {
     __obj.asInstanceOf[ReadonlyPromiseListCluste]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseListClusteMutableBuilder[Self <: ReadonlyPromiseListCluste] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseListCluste](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[ListClustersResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[ListClustersResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[ListClustersResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[ListClustersResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

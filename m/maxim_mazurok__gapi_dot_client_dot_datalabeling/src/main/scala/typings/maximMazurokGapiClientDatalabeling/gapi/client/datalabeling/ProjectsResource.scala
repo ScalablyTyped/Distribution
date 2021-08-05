@@ -20,8 +20,7 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotationSpecSets: AnnotationSpecSetsResource,
     datasets: DatasetsResource,
     evaluationJobs: EvaluationJobsResource,
@@ -33,25 +32,18 @@ object ProjectsResource {
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSets(value: AnnotationSpecSetsResource): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSets(value: AnnotationSpecSetsResource): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasets(value: DatasetsResource): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: DatasetsResource): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationJobs(value: EvaluationJobsResource): Self = StObject.set(x, "evaluationJobs", value.asInstanceOf[js.Any])
+    inline def setEvaluationJobs(value: EvaluationJobsResource): Self = StObject.set(x, "evaluationJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluations(value: EvaluationsResource): Self = StObject.set(x, "evaluations", value.asInstanceOf[js.Any])
+    inline def setEvaluations(value: EvaluationsResource): Self = StObject.set(x, "evaluations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructions(value: InstructionsResource): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: InstructionsResource): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

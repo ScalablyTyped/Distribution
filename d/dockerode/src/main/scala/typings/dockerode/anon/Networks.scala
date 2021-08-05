@@ -12,16 +12,13 @@ trait Networks extends StObject {
 }
 object Networks {
   
-  @scala.inline
-  def apply(Networks: StringDictionary[NetworkInfo]): Networks = {
+  inline def apply(Networks: StringDictionary[NetworkInfo]): Networks = {
     val __obj = js.Dynamic.literal(Networks = Networks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Networks]
   }
   
-  @scala.inline
-  implicit class NetworksMutableBuilder[Self <: Networks] (val x: Self) extends AnyVal {
+  extension [Self <: Networks](x: Self) {
     
-    @scala.inline
-    def setNetworks(value: StringDictionary[NetworkInfo]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: StringDictionary[NetworkInfo]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
   }
 }

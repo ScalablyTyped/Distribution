@@ -18,19 +18,15 @@ trait SetVariableAction extends StObject {
 }
 object SetVariableAction {
   
-  @scala.inline
-  def apply(value: VariableValue, variableName: VariableName): SetVariableAction = {
+  inline def apply(value: VariableValue, variableName: VariableName): SetVariableAction = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVariableAction]
   }
   
-  @scala.inline
-  implicit class SetVariableActionMutableBuilder[Self <: SetVariableAction] (val x: Self) extends AnyVal {
+  extension [Self <: SetVariableAction](x: Self) {
     
-    @scala.inline
-    def setValue(value: VariableValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: VariableValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableName(value: VariableName): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
+    inline def setVariableName(value: VariableName): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
   }
 }

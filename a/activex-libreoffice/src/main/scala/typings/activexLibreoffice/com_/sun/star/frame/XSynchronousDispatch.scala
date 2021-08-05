@@ -30,8 +30,7 @@ trait XSynchronousDispatch
 }
 object XSynchronousDispatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dispatchWithReturnValue: (URL, SeqEquiv[PropertyValue]) => js.Any,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XSynchronousDispatch {
     __obj.asInstanceOf[XSynchronousDispatch]
   }
   
-  @scala.inline
-  implicit class XSynchronousDispatchMutableBuilder[Self <: XSynchronousDispatch] (val x: Self) extends AnyVal {
+  extension [Self <: XSynchronousDispatch](x: Self) {
     
-    @scala.inline
-    def setDispatchWithReturnValue(value: (URL, SeqEquiv[PropertyValue]) => js.Any): Self = StObject.set(x, "dispatchWithReturnValue", js.Any.fromFunction2(value))
+    inline def setDispatchWithReturnValue(value: (URL, SeqEquiv[PropertyValue]) => js.Any): Self = StObject.set(x, "dispatchWithReturnValue", js.Any.fromFunction2(value))
   }
 }

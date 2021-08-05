@@ -18,25 +18,19 @@ trait MotionImageInsertionFramerate extends StObject {
 }
 object MotionImageInsertionFramerate {
   
-  @scala.inline
-  def apply(): MotionImageInsertionFramerate = {
+  inline def apply(): MotionImageInsertionFramerate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionImageInsertionFramerate]
   }
   
-  @scala.inline
-  implicit class MotionImageInsertionFramerateMutableBuilder[Self <: MotionImageInsertionFramerate] (val x: Self) extends AnyVal {
+  extension [Self <: MotionImageInsertionFramerate](x: Self) {
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1Max17895697): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1Max17895697): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
+    inline def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin1Max2147483640): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin1Max2147483640): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
+    inline def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
   }
 }

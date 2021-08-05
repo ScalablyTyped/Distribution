@@ -12,19 +12,15 @@ trait Dx extends StObject {
 }
 object Dx {
   
-  @scala.inline
-  def apply(dx: Double, dy: Double): Dx = {
+  inline def apply(dx: Double, dy: Double): Dx = {
     val __obj = js.Dynamic.literal(dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dx]
   }
   
-  @scala.inline
-  implicit class DxMutableBuilder[Self <: Dx] (val x: Self) extends AnyVal {
+  extension [Self <: Dx](x: Self) {
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
   }
 }

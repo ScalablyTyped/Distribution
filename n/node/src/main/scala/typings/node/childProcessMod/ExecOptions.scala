@@ -17,31 +17,23 @@ trait ExecOptions
 }
 object ExecOptions {
   
-  @scala.inline
-  def apply(): ExecOptions = {
+  inline def apply(): ExecOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecOptions]
   }
   
-  @scala.inline
-  implicit class ExecOptionsMutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecOptions](x: Self) {
     
-    @scala.inline
-    def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+    inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+    inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
     
-    @scala.inline
-    def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
+    inline def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
+    inline def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
     
-    @scala.inline
-    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+    inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
   }
 }

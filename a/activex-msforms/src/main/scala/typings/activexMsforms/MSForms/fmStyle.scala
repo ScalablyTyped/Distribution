@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmStyle extends StObject
 object fmStyle {
   
-  @scala.inline
-  def fmStyleDropDownCombo: `0` = 0.asInstanceOf[`0`]
+  inline def fmStyleDropDownCombo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmStyleDropDownList: `2` = 2.asInstanceOf[`2`]
+  inline def fmStyleDropDownList: `2` = 2.asInstanceOf[`2`]
 }

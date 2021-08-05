@@ -26,17 +26,14 @@ object inputGroupButtonDropdownMod {
   }
   object InputGroupButtonDropdownProps {
     
-    @scala.inline
-    def apply(addonType: prepend | append): InputGroupButtonDropdownProps = {
+    inline def apply(addonType: prepend | append): InputGroupButtonDropdownProps = {
       val __obj = js.Dynamic.literal(addonType = addonType.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputGroupButtonDropdownProps]
     }
     
-    @scala.inline
-    implicit class InputGroupButtonDropdownPropsMutableBuilder[Self <: InputGroupButtonDropdownProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputGroupButtonDropdownProps](x: Self) {
       
-      @scala.inline
-      def setAddonType(value: prepend | append): Self = StObject.set(x, "addonType", value.asInstanceOf[js.Any])
+      inline def setAddonType(value: prepend | append): Self = StObject.set(x, "addonType", value.asInstanceOf[js.Any])
     }
   }
 }

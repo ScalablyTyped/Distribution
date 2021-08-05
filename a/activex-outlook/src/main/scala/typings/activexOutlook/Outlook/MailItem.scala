@@ -125,7 +125,7 @@ trait MailItem extends StObject {
   
   var OriginatorDeliveryReportRequested: Boolean = js.native
   
-  @JSName("Outlook.MailItem_typekey")
+  /* private */ @JSName("Outlook.MailItem_typekey")
   var OutlookDotMailItem_typekey: MailItem = js.native
   
   val OutlookInternalVersion: Double = js.native

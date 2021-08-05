@@ -13,7 +13,7 @@ trait ErrorObject extends StObject {
   
   var ErrorCode: Double
   
-  @JSName("InfoPath.ErrorObject_typekey")
+  /* private */ @JSName("InfoPath.ErrorObject_typekey")
   var InfoPathDotErrorObject_typekey: ErrorObject
   
   val Node: IXMLDOMNode
@@ -24,8 +24,7 @@ trait ErrorObject extends StObject {
 }
 object ErrorObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConditionName: js.Any,
     DetailedErrorMessage: String,
     ErrorCode: Double,
@@ -39,28 +38,20 @@ object ErrorObject {
     __obj.asInstanceOf[ErrorObject]
   }
   
-  @scala.inline
-  implicit class ErrorObjectMutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorObject](x: Self) {
     
-    @scala.inline
-    def setConditionName(value: js.Any): Self = StObject.set(x, "ConditionName", value.asInstanceOf[js.Any])
+    inline def setConditionName(value: js.Any): Self = StObject.set(x, "ConditionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedErrorMessage(value: String): Self = StObject.set(x, "DetailedErrorMessage", value.asInstanceOf[js.Any])
+    inline def setDetailedErrorMessage(value: String): Self = StObject.set(x, "DetailedErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotErrorObject_typekey(value: ErrorObject): Self = StObject.set(x, "InfoPath.ErrorObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotErrorObject_typekey(value: ErrorObject): Self = StObject.set(x, "InfoPath.ErrorObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: IXMLDOMNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+    inline def setNode(value: IXMLDOMNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortErrorMessage(value: String): Self = StObject.set(x, "ShortErrorMessage", value.asInstanceOf[js.Any])
+    inline def setShortErrorMessage(value: String): Self = StObject.set(x, "ShortErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait CanAddRow extends StObject {
 }
 object CanAddRow {
   
-  @scala.inline
-  def apply(canAddRow: Boolean, question: IQuestion): CanAddRow = {
+  inline def apply(canAddRow: Boolean, question: IQuestion): CanAddRow = {
     val __obj = js.Dynamic.literal(canAddRow = canAddRow.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanAddRow]
   }
   
-  @scala.inline
-  implicit class CanAddRowMutableBuilder[Self <: CanAddRow] (val x: Self) extends AnyVal {
+  extension [Self <: CanAddRow](x: Self) {
     
-    @scala.inline
-    def setCanAddRow(value: Boolean): Self = StObject.set(x, "canAddRow", value.asInstanceOf[js.Any])
+    inline def setCanAddRow(value: Boolean): Self = StObject.set(x, "canAddRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: IQuestion): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: IQuestion): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
   }
 }

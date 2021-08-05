@@ -9,7 +9,7 @@ trait UI extends StObject {
   
   def Alert(bstrAlertString: String): Unit = js.native
   
-  @JSName("InfoPath.UI_typekey")
+  /* private */ @JSName("InfoPath.UI_typekey")
   var InfoPathDotUI_typekey: UI = js.native
   
   def ShowMailItem(bstrTo: String, bstrCC: String, bstrBCC: String, bstrSubject: String, bstrBody: String): Unit = js.native

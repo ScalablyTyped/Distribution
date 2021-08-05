@@ -98,8 +98,7 @@ trait ProtocolApi extends StObject {
 }
 object ProtocolApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accessibility: AccessibilityApi,
     Animation: AnimationApi,
     ApplicationCache: ApplicationCacheApi,
@@ -150,142 +149,96 @@ object ProtocolApi {
     __obj.asInstanceOf[ProtocolApi]
   }
   
-  @scala.inline
-  implicit class ProtocolApiMutableBuilder[Self <: ProtocolApi] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolApi](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: AccessibilityApi): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: AccessibilityApi): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimation(value: AnimationApi): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationApi): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationCache(value: ApplicationCacheApi): Self = StObject.set(x, "ApplicationCache", value.asInstanceOf[js.Any])
+    inline def setApplicationCache(value: ApplicationCacheApi): Self = StObject.set(x, "ApplicationCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudits(value: AuditsApi): Self = StObject.set(x, "Audits", value.asInstanceOf[js.Any])
+    inline def setAudits(value: AuditsApi): Self = StObject.set(x, "Audits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundService(value: BackgroundServiceApi): Self = StObject.set(x, "BackgroundService", value.asInstanceOf[js.Any])
+    inline def setBackgroundService(value: BackgroundServiceApi): Self = StObject.set(x, "BackgroundService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: BrowserApi): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: BrowserApi): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSS(value: CSSApi): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
+    inline def setCSS(value: CSSApi): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheStorage(value: CacheStorageApi): Self = StObject.set(x, "CacheStorage", value.asInstanceOf[js.Any])
+    inline def setCacheStorage(value: CacheStorageApi): Self = StObject.set(x, "CacheStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCast(value: CastApi): Self = StObject.set(x, "Cast", value.asInstanceOf[js.Any])
+    inline def setCast(value: CastApi): Self = StObject.set(x, "Cast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsole(value: ConsoleApi): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
+    inline def setConsole(value: ConsoleApi): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOM(value: DOMApi): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    inline def setDOM(value: DOMApi): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOMDebugger(value: DOMDebuggerApi): Self = StObject.set(x, "DOMDebugger", value.asInstanceOf[js.Any])
+    inline def setDOMDebugger(value: DOMDebuggerApi): Self = StObject.set(x, "DOMDebugger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOMSnapshot(value: DOMSnapshotApi): Self = StObject.set(x, "DOMSnapshot", value.asInstanceOf[js.Any])
+    inline def setDOMSnapshot(value: DOMSnapshotApi): Self = StObject.set(x, "DOMSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOMStorage(value: DOMStorageApi): Self = StObject.set(x, "DOMStorage", value.asInstanceOf[js.Any])
+    inline def setDOMStorage(value: DOMStorageApi): Self = StObject.set(x, "DOMStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabase(value: DatabaseApi): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DatabaseApi): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugger(value: DebuggerApi): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
+    inline def setDebugger(value: DebuggerApi): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceOrientation(value: DeviceOrientationApi): Self = StObject.set(x, "DeviceOrientation", value.asInstanceOf[js.Any])
+    inline def setDeviceOrientation(value: DeviceOrientationApi): Self = StObject.set(x, "DeviceOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmulation(value: EmulationApi): Self = StObject.set(x, "Emulation", value.asInstanceOf[js.Any])
+    inline def setEmulation(value: EmulationApi): Self = StObject.set(x, "Emulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetch(value: FetchApi): Self = StObject.set(x, "Fetch", value.asInstanceOf[js.Any])
+    inline def setFetch(value: FetchApi): Self = StObject.set(x, "Fetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlessExperimental(value: HeadlessExperimentalApi): Self = StObject.set(x, "HeadlessExperimental", value.asInstanceOf[js.Any])
+    inline def setHeadlessExperimental(value: HeadlessExperimentalApi): Self = StObject.set(x, "HeadlessExperimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeapProfiler(value: HeapProfilerApi): Self = StObject.set(x, "HeapProfiler", value.asInstanceOf[js.Any])
+    inline def setHeapProfiler(value: HeapProfilerApi): Self = StObject.set(x, "HeapProfiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIO(value: IOApi): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
+    inline def setIO(value: IOApi): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexedDB(value: IndexedDBApi): Self = StObject.set(x, "IndexedDB", value.asInstanceOf[js.Any])
+    inline def setIndexedDB(value: IndexedDBApi): Self = StObject.set(x, "IndexedDB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: InputApi): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: InputApi): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspector(value: InspectorApi): Self = StObject.set(x, "Inspector", value.asInstanceOf[js.Any])
+    inline def setInspector(value: InspectorApi): Self = StObject.set(x, "Inspector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerTree(value: LayerTreeApi): Self = StObject.set(x, "LayerTree", value.asInstanceOf[js.Any])
+    inline def setLayerTree(value: LayerTreeApi): Self = StObject.set(x, "LayerTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: LogApi): Self = StObject.set(x, "Log", value.asInstanceOf[js.Any])
+    inline def setLog(value: LogApi): Self = StObject.set(x, "Log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: MediaApi): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: MediaApi): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: MemoryApi): Self = StObject.set(x, "Memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: MemoryApi): Self = StObject.set(x, "Memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetwork(value: NetworkApi): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: NetworkApi): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlay(value: OverlayApi): Self = StObject.set(x, "Overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: OverlayApi): Self = StObject.set(x, "Overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: PageApi): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    inline def setPage(value: PageApi): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformance(value: PerformanceApi): Self = StObject.set(x, "Performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: PerformanceApi): Self = StObject.set(x, "Performance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfiler(value: ProfilerApi): Self = StObject.set(x, "Profiler", value.asInstanceOf[js.Any])
+    inline def setProfiler(value: ProfilerApi): Self = StObject.set(x, "Profiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntime(value: RuntimeApi): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: RuntimeApi): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: SchemaApi): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: SchemaApi): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurity(value: SecurityApi): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
+    inline def setSecurity(value: SecurityApi): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceWorker(value: ServiceWorkerApi): Self = StObject.set(x, "ServiceWorker", value.asInstanceOf[js.Any])
+    inline def setServiceWorker(value: ServiceWorkerApi): Self = StObject.set(x, "ServiceWorker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: StorageApi): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: StorageApi): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemInfo(value: SystemInfoApi): Self = StObject.set(x, "SystemInfo", value.asInstanceOf[js.Any])
+    inline def setSystemInfo(value: SystemInfoApi): Self = StObject.set(x, "SystemInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: TargetApi): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TargetApi): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTethering(value: TetheringApi): Self = StObject.set(x, "Tethering", value.asInstanceOf[js.Any])
+    inline def setTethering(value: TetheringApi): Self = StObject.set(x, "Tethering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracing(value: TracingApi): Self = StObject.set(x, "Tracing", value.asInstanceOf[js.Any])
+    inline def setTracing(value: TracingApi): Self = StObject.set(x, "Tracing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAudio(value: WebAudioApi): Self = StObject.set(x, "WebAudio", value.asInstanceOf[js.Any])
+    inline def setWebAudio(value: WebAudioApi): Self = StObject.set(x, "WebAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAuthn(value: WebAuthnApi): Self = StObject.set(x, "WebAuthn", value.asInstanceOf[js.Any])
+    inline def setWebAuthn(value: WebAuthnApi): Self = StObject.set(x, "WebAuthn", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait PanGestureHandlerEventExtra extends StObject {
 }
 object PanGestureHandlerEventExtra {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absoluteX: Double,
     absoluteY: Double,
     translationX: Double,
@@ -39,31 +38,22 @@ object PanGestureHandlerEventExtra {
     __obj.asInstanceOf[PanGestureHandlerEventExtra]
   }
   
-  @scala.inline
-  implicit class PanGestureHandlerEventExtraMutableBuilder[Self <: PanGestureHandlerEventExtra] (val x: Self) extends AnyVal {
+  extension [Self <: PanGestureHandlerEventExtra](x: Self) {
     
-    @scala.inline
-    def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
+    inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteY(value: Double): Self = StObject.set(x, "absoluteY", value.asInstanceOf[js.Any])
+    inline def setAbsoluteY(value: Double): Self = StObject.set(x, "absoluteY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationX(value: Double): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
+    inline def setTranslationX(value: Double): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationY(value: Double): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
+    inline def setTranslationY(value: Double): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
+    inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
+    inline def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

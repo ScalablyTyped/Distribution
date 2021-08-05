@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Envelope")
 @js.native
-class Envelope protected ()
+/* private */ class Envelope ()
   extends StObject
      with typings.activexWord.Word.Envelope {
   
@@ -213,7 +213,7 @@ class Envelope protected ()
   /* CompleteClass */
   var Vertical: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Envelope_typekey")
   var WordDotEnvelope_typekey: typings.activexWord.Word.Envelope = js.native
 }

@@ -12,26 +12,21 @@ object filesystemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fileExistsAsync(
+  inline def fileExistsAsync(
     path2: String,
     callback2: js.Function2[/* err */ js.UndefOr[Error], /* exists */ js.UndefOr[Boolean], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsAsync")(path2.asInstanceOf[js.Any], callback2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fileExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def fileExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def readJsonFromDiskAsync(
+  inline def readJsonFromDiskAsync(
     path: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* content */ js.UndefOr[js.Any], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonFromDiskAsync")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def readJsonFromDiskSync(packageJsonPath: String): js.UndefOr[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonFromDiskSync")(packageJsonPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Any]]
+  inline def readJsonFromDiskSync(packageJsonPath: String): js.UndefOr[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonFromDiskSync")(packageJsonPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Any]]
   
-  @scala.inline
-  def removeExtension(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def removeExtension(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type FileExistsAsync_ = js.Function2[
     /* path */ String, 

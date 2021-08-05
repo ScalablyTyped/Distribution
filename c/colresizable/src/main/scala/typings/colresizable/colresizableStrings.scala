@@ -8,16 +8,13 @@ object colresizableStrings {
   
   @js.native
   sealed trait fit extends StObject
-  @scala.inline
-  def fit: fit = "fit".asInstanceOf[fit]
+  inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
   sealed trait flex extends StObject
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
+  inline def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
   sealed trait overflow extends StObject
-  @scala.inline
-  def overflow: overflow = "overflow".asInstanceOf[overflow]
+  inline def overflow: overflow = "overflow".asInstanceOf[overflow]
 }

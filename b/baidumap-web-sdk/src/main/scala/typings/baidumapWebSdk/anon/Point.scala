@@ -18,8 +18,7 @@ trait Point extends StObject {
 }
 object Point {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pixel: typings.baidumapWebSdk.BMap.Pixel,
     point: typings.baidumapWebSdk.BMap.Point,
     target: js.Any,
@@ -31,22 +30,16 @@ object Point {
     __obj.asInstanceOf[Point]
   }
   
-  @scala.inline
-  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+  extension [Self <: Point](x: Self) {
     
-    @scala.inline
-    def setPixel(value: typings.baidumapWebSdk.BMap.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
+    inline def setPixel(value: typings.baidumapWebSdk.BMap.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

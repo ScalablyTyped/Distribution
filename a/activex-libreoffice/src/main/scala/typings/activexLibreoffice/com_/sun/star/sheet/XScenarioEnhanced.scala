@@ -27,8 +27,7 @@ trait XScenarioEnhanced
 }
 object XScenarioEnhanced {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Ranges: SafeArray[CellRangeAddress],
     acquire: () => Unit,
     getRanges: () => SafeArray[CellRangeAddress],
@@ -39,13 +38,10 @@ object XScenarioEnhanced {
     __obj.asInstanceOf[XScenarioEnhanced]
   }
   
-  @scala.inline
-  implicit class XScenarioEnhancedMutableBuilder[Self <: XScenarioEnhanced] (val x: Self) extends AnyVal {
+  extension [Self <: XScenarioEnhanced](x: Self) {
     
-    @scala.inline
-    def setGetRanges(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
+    inline def setGetRanges(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRanges(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
   }
 }

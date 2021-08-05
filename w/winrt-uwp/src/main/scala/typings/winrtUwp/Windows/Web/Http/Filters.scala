@@ -133,8 +133,7 @@ object Filters {
   }
   object HttpBaseProtocolFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowAutoRedirect: Boolean,
       allowUI: Boolean,
       automaticDecompression: Boolean,
@@ -155,55 +154,39 @@ object Filters {
       __obj.asInstanceOf[HttpBaseProtocolFilter]
     }
     
-    @scala.inline
-    implicit class HttpBaseProtocolFilterMutableBuilder[Self <: HttpBaseProtocolFilter] (val x: Self) extends AnyVal {
+    extension [Self <: HttpBaseProtocolFilter](x: Self) {
       
-      @scala.inline
-      def setAllowAutoRedirect(value: Boolean): Self = StObject.set(x, "allowAutoRedirect", value.asInstanceOf[js.Any])
+      inline def setAllowAutoRedirect(value: Boolean): Self = StObject.set(x, "allowAutoRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUI(value: Boolean): Self = StObject.set(x, "allowUI", value.asInstanceOf[js.Any])
+      inline def setAllowUI(value: Boolean): Self = StObject.set(x, "allowUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticDecompression(value: Boolean): Self = StObject.set(x, "automaticDecompression", value.asInstanceOf[js.Any])
+      inline def setAutomaticDecompression(value: Boolean): Self = StObject.set(x, "automaticDecompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControl(value: HttpCacheControl): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: HttpCacheControl): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+      inline def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCookieManager(value: HttpCookieManager): Self = StObject.set(x, "cookieManager", value.asInstanceOf[js.Any])
+      inline def setCookieManager(value: HttpCookieManager): Self = StObject.set(x, "cookieManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUsageBehavior(value: HttpCookieUsageBehavior): Self = StObject.set(x, "cookieUsageBehavior", value.asInstanceOf[js.Any])
+      inline def setCookieUsageBehavior(value: HttpCookieUsageBehavior): Self = StObject.set(x, "cookieUsageBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorableServerCertificateErrors(value: IVector[ChainValidationResult]): Self = StObject.set(x, "ignorableServerCertificateErrors", value.asInstanceOf[js.Any])
+      inline def setIgnorableServerCertificateErrors(value: IVector[ChainValidationResult]): Self = StObject.set(x, "ignorableServerCertificateErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnectionsPerServer(value: Double): Self = StObject.set(x, "maxConnectionsPerServer", value.asInstanceOf[js.Any])
+      inline def setMaxConnectionsPerServer(value: Double): Self = StObject.set(x, "maxConnectionsPerServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxVersion(value: HttpVersion): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+      inline def setMaxVersion(value: HttpVersion): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
+      inline def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendRequestAsync(
+      inline def setSendRequestAsync(
         value: HttpRequestMessage => IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]
       ): Self = StObject.set(x, "sendRequestAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
+      inline def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseProxy(value: Boolean): Self = StObject.set(x, "useProxy", value.asInstanceOf[js.Any])
+      inline def setUseProxy(value: Boolean): Self = StObject.set(x, "useProxy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,20 +201,16 @@ object Filters {
   }
   object HttpCacheControl {
     
-    @scala.inline
-    def apply(readBehavior: HttpCacheReadBehavior, writeBehavior: HttpCacheWriteBehavior): HttpCacheControl = {
+    inline def apply(readBehavior: HttpCacheReadBehavior, writeBehavior: HttpCacheWriteBehavior): HttpCacheControl = {
       val __obj = js.Dynamic.literal(readBehavior = readBehavior.asInstanceOf[js.Any], writeBehavior = writeBehavior.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpCacheControl]
     }
     
-    @scala.inline
-    implicit class HttpCacheControlMutableBuilder[Self <: HttpCacheControl] (val x: Self) extends AnyVal {
+    extension [Self <: HttpCacheControl](x: Self) {
       
-      @scala.inline
-      def setReadBehavior(value: HttpCacheReadBehavior): Self = StObject.set(x, "readBehavior", value.asInstanceOf[js.Any])
+      inline def setReadBehavior(value: HttpCacheReadBehavior): Self = StObject.set(x, "readBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteBehavior(value: HttpCacheWriteBehavior): Self = StObject.set(x, "writeBehavior", value.asInstanceOf[js.Any])
+      inline def setWriteBehavior(value: HttpCacheWriteBehavior): Self = StObject.set(x, "writeBehavior", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,8 +228,7 @@ object Filters {
   }
   object IHttpFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       sendRequestAsync: HttpRequestMessage => IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]
     ): IHttpFilter = {
@@ -258,11 +236,9 @@ object Filters {
       __obj.asInstanceOf[IHttpFilter]
     }
     
-    @scala.inline
-    implicit class IHttpFilterMutableBuilder[Self <: IHttpFilter] (val x: Self) extends AnyVal {
+    extension [Self <: IHttpFilter](x: Self) {
       
-      @scala.inline
-      def setSendRequestAsync(
+      inline def setSendRequestAsync(
         value: HttpRequestMessage => IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]
       ): Self = StObject.set(x, "sendRequestAsync", js.Any.fromFunction1(value))
     }

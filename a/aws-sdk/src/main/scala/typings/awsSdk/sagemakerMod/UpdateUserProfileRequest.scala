@@ -23,25 +23,19 @@ trait UpdateUserProfileRequest extends StObject {
 }
 object UpdateUserProfileRequest {
   
-  @scala.inline
-  def apply(DomainId: DomainId, UserProfileName: UserProfileName): UpdateUserProfileRequest = {
+  inline def apply(DomainId: DomainId, UserProfileName: UserProfileName): UpdateUserProfileRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], UserProfileName = UserProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserProfileRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserProfileRequestMutableBuilder[Self <: UpdateUserProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserProfileRequest](x: Self) {
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
+    inline def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSettings(value: UserSettings): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
+    inline def setUserSettings(value: UserSettings): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
+    inline def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
   }
 }

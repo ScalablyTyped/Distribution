@@ -23,8 +23,7 @@ trait ASPxClientRateOfChange
 }
 object ASPxClientRateOfChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -37,13 +36,10 @@ object ASPxClientRateOfChange {
     __obj.asInstanceOf[ASPxClientRateOfChange]
   }
   
-  @scala.inline
-  implicit class ASPxClientRateOfChangeMutableBuilder[Self <: ASPxClientRateOfChange] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRateOfChange](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

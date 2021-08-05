@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpeedLimitUnit extends StObject
 object SpeedLimitUnit {
   
-  @scala.inline
-  def KPH: typings.googleMaps.googleMapsStrings.KPH = "KPH".asInstanceOf[typings.googleMaps.googleMapsStrings.KPH]
+  inline def KPH: typings.googleMaps.googleMapsStrings.KPH = "KPH".asInstanceOf[typings.googleMaps.googleMapsStrings.KPH]
   
-  @scala.inline
-  def MPH: typings.googleMaps.googleMapsStrings.MPH = "MPH".asInstanceOf[typings.googleMaps.googleMapsStrings.MPH]
+  inline def MPH: typings.googleMaps.googleMapsStrings.MPH = "MPH".asInstanceOf[typings.googleMaps.googleMapsStrings.MPH]
 }

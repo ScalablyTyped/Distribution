@@ -16,37 +16,27 @@ trait SerializableError extends StObject {
 }
 object SerializableError {
   
-  @scala.inline
-  def apply(message: String): SerializableError = {
+  inline def apply(message: String): SerializableError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializableError]
   }
   
-  @scala.inline
-  implicit class SerializableErrorMutableBuilder[Self <: SerializableError] (val x: Self) extends AnyVal {
+  extension [Self <: SerializableError](x: Self) {
     
-    @scala.inline
-    def setCode(value: js.Any): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: js.Any): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNull: Self = StObject.set(x, "stack", null)
+    inline def setStackNull: Self = StObject.set(x, "stack", null)
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

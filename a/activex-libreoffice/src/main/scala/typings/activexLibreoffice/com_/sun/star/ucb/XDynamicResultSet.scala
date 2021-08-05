@@ -94,8 +94,7 @@ trait XDynamicResultSet
 }
 object XDynamicResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Capabilities: Double,
     StaticResultSet: XResultSet,
     acquire: () => Unit,
@@ -113,25 +112,18 @@ object XDynamicResultSet {
     __obj.asInstanceOf[XDynamicResultSet]
   }
   
-  @scala.inline
-  implicit class XDynamicResultSetMutableBuilder[Self <: XDynamicResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: XDynamicResultSet](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: Double): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: Double): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectToCache(value: XDynamicResultSet => Unit): Self = StObject.set(x, "connectToCache", js.Any.fromFunction1(value))
+    inline def setConnectToCache(value: XDynamicResultSet => Unit): Self = StObject.set(x, "connectToCache", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCapabilities(value: () => Double): Self = StObject.set(x, "getCapabilities", js.Any.fromFunction0(value))
+    inline def setGetCapabilities(value: () => Double): Self = StObject.set(x, "getCapabilities", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStaticResultSet(value: () => XResultSet): Self = StObject.set(x, "getStaticResultSet", js.Any.fromFunction0(value))
+    inline def setGetStaticResultSet(value: () => XResultSet): Self = StObject.set(x, "getStaticResultSet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetListener(value: XDynamicResultSetListener => Unit): Self = StObject.set(x, "setListener", js.Any.fromFunction1(value))
+    inline def setSetListener(value: XDynamicResultSetListener => Unit): Self = StObject.set(x, "setListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStaticResultSet(value: XResultSet): Self = StObject.set(x, "StaticResultSet", value.asInstanceOf[js.Any])
+    inline def setStaticResultSet(value: XResultSet): Self = StObject.set(x, "StaticResultSet", value.asInstanceOf[js.Any])
   }
 }

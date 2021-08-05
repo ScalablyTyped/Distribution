@@ -31,8 +31,7 @@ trait XModuleTypeDescription
 }
 object XModuleTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Members: SafeArray[XTypeDescription],
     Name: String,
     TypeClass: TypeClass,
@@ -47,13 +46,10 @@ object XModuleTypeDescription {
     __obj.asInstanceOf[XModuleTypeDescription]
   }
   
-  @scala.inline
-  implicit class XModuleTypeDescriptionMutableBuilder[Self <: XModuleTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XModuleTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetMembers(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
+    inline def setGetMembers(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMembers(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
   }
 }

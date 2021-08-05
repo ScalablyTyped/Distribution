@@ -18,25 +18,19 @@ trait CancelledSpotInstanceRequest extends StObject {
 }
 object CancelledSpotInstanceRequest {
   
-  @scala.inline
-  def apply(): CancelledSpotInstanceRequest = {
+  inline def apply(): CancelledSpotInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelledSpotInstanceRequest]
   }
   
-  @scala.inline
-  implicit class CancelledSpotInstanceRequestMutableBuilder[Self <: CancelledSpotInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelledSpotInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setSpotInstanceRequestId(value: String): Self = StObject.set(x, "SpotInstanceRequestId", value.asInstanceOf[js.Any])
+    inline def setSpotInstanceRequestId(value: String): Self = StObject.set(x, "SpotInstanceRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotInstanceRequestIdUndefined: Self = StObject.set(x, "SpotInstanceRequestId", js.undefined)
+    inline def setSpotInstanceRequestIdUndefined: Self = StObject.set(x, "SpotInstanceRequestId", js.undefined)
     
-    @scala.inline
-    def setState(value: CancelSpotInstanceRequestState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CancelSpotInstanceRequestState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

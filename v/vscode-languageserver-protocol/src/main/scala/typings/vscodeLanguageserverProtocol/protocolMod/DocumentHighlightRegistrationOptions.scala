@@ -10,8 +10,7 @@ trait DocumentHighlightRegistrationOptions
      with WorkDoneProgressOptions
 object DocumentHighlightRegistrationOptions {
   
-  @scala.inline
-  def apply(): DocumentHighlightRegistrationOptions = {
+  inline def apply(): DocumentHighlightRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[DocumentHighlightRegistrationOptions]
   }

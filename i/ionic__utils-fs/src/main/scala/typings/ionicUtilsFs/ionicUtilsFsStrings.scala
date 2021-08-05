@@ -9,25 +9,21 @@ object ionicUtilsFsStrings {
   
   @js.native
   sealed trait buffer extends StObject
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait data extends StObject
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait directory
     extends StObject
        with FileType
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait file
     extends StObject
        with FileType
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
 }

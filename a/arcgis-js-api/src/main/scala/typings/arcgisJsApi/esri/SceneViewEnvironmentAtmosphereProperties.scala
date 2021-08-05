@@ -21,8 +21,7 @@ trait SceneViewEnvironmentAtmosphereProperties
 }
 object SceneViewEnvironmentAtmosphereProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -31,13 +30,10 @@ object SceneViewEnvironmentAtmosphereProperties {
     __obj.asInstanceOf[SceneViewEnvironmentAtmosphereProperties]
   }
   
-  @scala.inline
-  implicit class SceneViewEnvironmentAtmospherePropertiesMutableBuilder[Self <: SceneViewEnvironmentAtmosphereProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewEnvironmentAtmosphereProperties](x: Self) {
     
-    @scala.inline
-    def setQuality(value: low | high): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: low | high): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

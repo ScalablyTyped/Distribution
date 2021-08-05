@@ -17,38 +17,32 @@ object tagResourceExceptionsUnionMod {
   trait TagResourceExceptionsUnion extends StObject
   object TagResourceExceptionsUnion {
     
-    @scala.inline
-    def InvalidArnException(): typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
+    inline def InvalidArnException(): typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
       val __obj = js.Dynamic.literal(name = "InvalidArnException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException]
     }
     
-    @scala.inline
-    def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
+    inline def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
       val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException]
     }
     
-    @scala.inline
-    def KMSInvalidStateException(): typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException = {
+    inline def KMSInvalidStateException(): typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException = {
       val __obj = js.Dynamic.literal(name = "KMSInvalidStateException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException]
     }
     
-    @scala.inline
-    def LimitExceededException(): typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException = {
+    inline def LimitExceededException(): typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException = {
       val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
-    @scala.inline
-    def NotFoundException(): typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException = {
+    inline def NotFoundException(): typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException = {
       val __obj = js.Dynamic.literal(name = "NotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException]
     }
     
-    @scala.inline
-    def TagException(): typings.awsSdkClientKmsNode.typesTagExceptionMod.TagException = {
+    inline def TagException(): typings.awsSdkClientKmsNode.typesTagExceptionMod.TagException = {
       val __obj = js.Dynamic.literal(name = "TagException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesTagExceptionMod.TagException]
     }

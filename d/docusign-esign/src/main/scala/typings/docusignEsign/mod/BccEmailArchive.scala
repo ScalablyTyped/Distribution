@@ -64,73 +64,51 @@ trait BccEmailArchive extends StObject {
 }
 object BccEmailArchive {
   
-  @scala.inline
-  def apply(): BccEmailArchive = {
+  inline def apply(): BccEmailArchive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BccEmailArchive]
   }
   
-  @scala.inline
-  implicit class BccEmailArchiveMutableBuilder[Self <: BccEmailArchive] (val x: Self) extends AnyVal {
+  extension [Self <: BccEmailArchive](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBccEmailArchiveId(value: String): Self = StObject.set(x, "bccEmailArchiveId", value.asInstanceOf[js.Any])
+    inline def setBccEmailArchiveId(value: String): Self = StObject.set(x, "bccEmailArchiveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccEmailArchiveIdUndefined: Self = StObject.set(x, "bccEmailArchiveId", js.undefined)
+    inline def setBccEmailArchiveIdUndefined: Self = StObject.set(x, "bccEmailArchiveId", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: UserInfo): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: UserInfo): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNotificationId(value: String): Self = StObject.set(x, "emailNotificationId", value.asInstanceOf[js.Any])
+    inline def setEmailNotificationId(value: String): Self = StObject.set(x, "emailNotificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNotificationIdUndefined: Self = StObject.set(x, "emailNotificationId", js.undefined)
+    inline def setEmailNotificationIdUndefined: Self = StObject.set(x, "emailNotificationId", js.undefined)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedBy(value: UserInfo): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
+    inline def setModifiedBy(value: UserInfo): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedByUndefined: Self = StObject.set(x, "modifiedBy", js.undefined)
+    inline def setModifiedByUndefined: Self = StObject.set(x, "modifiedBy", js.undefined)
     
-    @scala.inline
-    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+    inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -73,8 +73,7 @@ trait SamplingRule extends StObject {
 }
 object SamplingRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FixedRate: FixedRate,
     HTTPMethod: HTTPMethod,
     Host: Host,
@@ -90,55 +89,38 @@ object SamplingRule {
     __obj.asInstanceOf[SamplingRule]
   }
   
-  @scala.inline
-  implicit class SamplingRuleMutableBuilder[Self <: SamplingRule] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingRule](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setFixedRate(value: FixedRate): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
+    inline def setFixedRate(value: FixedRate): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTTPMethod(value: HTTPMethod): Self = StObject.set(x, "HTTPMethod", value.asInstanceOf[js.Any])
+    inline def setHTTPMethod(value: HTTPMethod): Self = StObject.set(x, "HTTPMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservoirSize(value: ReservoirSize): Self = StObject.set(x, "ReservoirSize", value.asInstanceOf[js.Any])
+    inline def setReservoirSize(value: ReservoirSize): Self = StObject.set(x, "ReservoirSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
+    inline def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
+    inline def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLPath(value: URLPath): Self = StObject.set(x, "URLPath", value.asInstanceOf[js.Any])
+    inline def setURLPath(value: URLPath): Self = StObject.set(x, "URLPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

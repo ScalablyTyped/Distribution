@@ -32,22 +32,17 @@ trait AnimationAttributes extends StObject {
 }
 object AnimationAttributes {
   
-  @scala.inline
-  def apply(Duration: Double, RepeatMode: Double, UntransformedSize: RealSize2D): AnimationAttributes = {
+  inline def apply(Duration: Double, RepeatMode: Double, UntransformedSize: RealSize2D): AnimationAttributes = {
     val __obj = js.Dynamic.literal(Duration = Duration.asInstanceOf[js.Any], RepeatMode = RepeatMode.asInstanceOf[js.Any], UntransformedSize = UntransformedSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationAttributes]
   }
   
-  @scala.inline
-  implicit class AnimationAttributesMutableBuilder[Self <: AnimationAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationAttributes](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatMode(value: Double): Self = StObject.set(x, "RepeatMode", value.asInstanceOf[js.Any])
+    inline def setRepeatMode(value: Double): Self = StObject.set(x, "RepeatMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntransformedSize(value: RealSize2D): Self = StObject.set(x, "UntransformedSize", value.asInstanceOf[js.Any])
+    inline def setUntransformedSize(value: RealSize2D): Self = StObject.set(x, "UntransformedSize", value.asInstanceOf[js.Any])
   }
 }

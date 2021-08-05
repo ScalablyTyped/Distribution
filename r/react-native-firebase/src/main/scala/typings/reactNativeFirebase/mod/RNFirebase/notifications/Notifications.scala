@@ -51,8 +51,7 @@ trait Notifications extends StObject {
 }
 object Notifications {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     android: AndroidNotifications,
     cancelAllNotifications: () => Unit,
     cancelNotification: String => Unit,
@@ -72,49 +71,34 @@ object Notifications {
     __obj.asInstanceOf[Notifications]
   }
   
-  @scala.inline
-  implicit class NotificationsMutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
+  extension [Self <: Notifications](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: AndroidNotifications): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: AndroidNotifications): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelAllNotifications(value: () => Unit): Self = StObject.set(x, "cancelAllNotifications", js.Any.fromFunction0(value))
+    inline def setCancelAllNotifications(value: () => Unit): Self = StObject.set(x, "cancelAllNotifications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancelNotification(value: String => Unit): Self = StObject.set(x, "cancelNotification", js.Any.fromFunction1(value))
+    inline def setCancelNotification(value: String => Unit): Self = StObject.set(x, "cancelNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayNotification(value: Notification => js.Promise[Unit]): Self = StObject.set(x, "displayNotification", js.Any.fromFunction1(value))
+    inline def setDisplayNotification(value: Notification => js.Promise[Unit]): Self = StObject.set(x, "displayNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBadge(value: () => js.Promise[Double]): Self = StObject.set(x, "getBadge", js.Any.fromFunction0(value))
+    inline def setGetBadge(value: () => js.Promise[Double]): Self = StObject.set(x, "getBadge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInitialNotification(value: () => js.Promise[NotificationOpen]): Self = StObject.set(x, "getInitialNotification", js.Any.fromFunction0(value))
+    inline def setGetInitialNotification(value: () => js.Promise[NotificationOpen]): Self = StObject.set(x, "getInitialNotification", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScheduledNotifications(value: () => js.Promise[js.Array[Notification]]): Self = StObject.set(x, "getScheduledNotifications", js.Any.fromFunction0(value))
+    inline def setGetScheduledNotifications(value: () => js.Promise[js.Array[Notification]]): Self = StObject.set(x, "getScheduledNotifications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnNotification(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
+    inline def setOnNotification(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNotificationDisplayed(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationDisplayed", js.Any.fromFunction1(value))
+    inline def setOnNotificationDisplayed(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationDisplayed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNotificationOpened(value: js.Function1[/* notificationOpen */ NotificationOpen, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationOpened", js.Any.fromFunction1(value))
+    inline def setOnNotificationOpened(value: js.Function1[/* notificationOpen */ NotificationOpen, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationOpened", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAllDeliveredNotifications(value: () => Unit): Self = StObject.set(x, "removeAllDeliveredNotifications", js.Any.fromFunction0(value))
+    inline def setRemoveAllDeliveredNotifications(value: () => Unit): Self = StObject.set(x, "removeAllDeliveredNotifications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveDeliveredNotification(value: String => Unit): Self = StObject.set(x, "removeDeliveredNotification", js.Any.fromFunction1(value))
+    inline def setRemoveDeliveredNotification(value: String => Unit): Self = StObject.set(x, "removeDeliveredNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScheduleNotification(value: (Notification, Schedule) => js.Any): Self = StObject.set(x, "scheduleNotification", js.Any.fromFunction2(value))
+    inline def setScheduleNotification(value: (Notification, Schedule) => js.Any): Self = StObject.set(x, "scheduleNotification", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBadge(value: Double => Unit): Self = StObject.set(x, "setBadge", js.Any.fromFunction1(value))
+    inline def setSetBadge(value: Double => Unit): Self = StObject.set(x, "setBadge", js.Any.fromFunction1(value))
   }
 }

@@ -23,46 +23,33 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(args: TableMetadataArgs, connection: typings.typeorm.connectionConnectionMod.Connection): Connection = {
+  inline def apply(args: TableMetadataArgs, connection: typings.typeorm.connectionConnectionMod.Connection): Connection = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setArgs(value: TableMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: TableMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: typings.typeorm.connectionConnectionMod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: typings.typeorm.connectionConnectionMod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritancePattern(value: STI): Self = StObject.set(x, "inheritancePattern", value.asInstanceOf[js.Any])
+    inline def setInheritancePattern(value: STI): Self = StObject.set(x, "inheritancePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritancePatternUndefined: Self = StObject.set(x, "inheritancePattern", js.undefined)
+    inline def setInheritancePatternUndefined: Self = StObject.set(x, "inheritancePattern", js.undefined)
     
-    @scala.inline
-    def setInheritanceTree(value: js.Array[js.Function]): Self = StObject.set(x, "inheritanceTree", value.asInstanceOf[js.Any])
+    inline def setInheritanceTree(value: js.Array[js.Function]): Self = StObject.set(x, "inheritanceTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritanceTreeUndefined: Self = StObject.set(x, "inheritanceTree", js.undefined)
+    inline def setInheritanceTreeUndefined: Self = StObject.set(x, "inheritanceTree", js.undefined)
     
-    @scala.inline
-    def setInheritanceTreeVarargs(value: js.Function*): Self = StObject.set(x, "inheritanceTree", js.Array(value :_*))
+    inline def setInheritanceTreeVarargs(value: js.Function*): Self = StObject.set(x, "inheritanceTree", js.Array(value :_*))
     
-    @scala.inline
-    def setParentClosureEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "parentClosureEntityMetadata", value.asInstanceOf[js.Any])
+    inline def setParentClosureEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "parentClosureEntityMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentClosureEntityMetadataUndefined: Self = StObject.set(x, "parentClosureEntityMetadata", js.undefined)
+    inline def setParentClosureEntityMetadataUndefined: Self = StObject.set(x, "parentClosureEntityMetadata", js.undefined)
     
-    @scala.inline
-    def setTableTree(value: TreeMetadataArgs): Self = StObject.set(x, "tableTree", value.asInstanceOf[js.Any])
+    inline def setTableTree(value: TreeMetadataArgs): Self = StObject.set(x, "tableTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableTreeUndefined: Self = StObject.set(x, "tableTree", js.undefined)
+    inline def setTableTreeUndefined: Self = StObject.set(x, "tableTree", js.undefined)
   }
 }

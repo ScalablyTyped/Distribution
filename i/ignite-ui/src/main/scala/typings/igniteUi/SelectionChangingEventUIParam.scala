@@ -23,31 +23,23 @@ trait SelectionChangingEventUIParam extends StObject {
 }
 object SelectionChangingEventUIParam {
   
-  @scala.inline
-  def apply(): SelectionChangingEventUIParam = {
+  inline def apply(): SelectionChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectionChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class SelectionChangingEventUIParamMutableBuilder[Self <: SelectionChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentItems(value: js.Any): Self = StObject.set(x, "currentItems", value.asInstanceOf[js.Any])
+    inline def setCurrentItems(value: js.Any): Self = StObject.set(x, "currentItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItemsUndefined: Self = StObject.set(x, "currentItems", js.undefined)
+    inline def setCurrentItemsUndefined: Self = StObject.set(x, "currentItems", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

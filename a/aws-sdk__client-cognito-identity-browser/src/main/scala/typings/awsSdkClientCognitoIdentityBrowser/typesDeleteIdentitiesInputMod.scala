@@ -42,40 +42,30 @@ object typesDeleteIdentitiesInputMod {
   }
   object DeleteIdentitiesInput {
     
-    @scala.inline
-    def apply(IdentityIdsToDelete: js.Array[String] | Iterable[String]): DeleteIdentitiesInput = {
+    inline def apply(IdentityIdsToDelete: js.Array[String] | Iterable[String]): DeleteIdentitiesInput = {
       val __obj = js.Dynamic.literal(IdentityIdsToDelete = IdentityIdsToDelete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteIdentitiesInput]
     }
     
-    @scala.inline
-    implicit class DeleteIdentitiesInputMutableBuilder[Self <: DeleteIdentitiesInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteIdentitiesInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setIdentityIdsToDelete(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
+      inline def setIdentityIdsToDelete(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityIdsToDeleteVarargs(value: String*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value :_*))
+      inline def setIdentityIdsToDeleteVarargs(value: String*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value :_*))
     }
   }
 }

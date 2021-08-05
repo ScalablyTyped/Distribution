@@ -23,25 +23,19 @@ trait DescribeVirtualRouterInput extends StObject {
 }
 object DescribeVirtualRouterInput {
   
-  @scala.inline
-  def apply(meshName: ResourceName, virtualRouterName: ResourceName): DescribeVirtualRouterInput = {
+  inline def apply(meshName: ResourceName, virtualRouterName: ResourceName): DescribeVirtualRouterInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVirtualRouterInput]
   }
   
-  @scala.inline
-  implicit class DescribeVirtualRouterInputMutableBuilder[Self <: DescribeVirtualRouterInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVirtualRouterInput](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+    inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+    inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
     
-    @scala.inline
-    def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
+    inline def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }
 }

@@ -20,31 +20,23 @@ trait GoogleCloudDialogflowV2OutputAudioConfig extends StObject {
 }
 object GoogleCloudDialogflowV2OutputAudioConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2OutputAudioConfig = {
+  inline def apply(): GoogleCloudDialogflowV2OutputAudioConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2OutputAudioConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2OutputAudioConfigMutableBuilder[Self <: GoogleCloudDialogflowV2OutputAudioConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2OutputAudioConfig](x: Self) {
     
-    @scala.inline
-    def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
+    inline def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
+    inline def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
     
-    @scala.inline
-    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
+    inline def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
     
-    @scala.inline
-    def setSynthesizeSpeechConfig(value: GoogleCloudDialogflowV2SynthesizeSpeechConfig): Self = StObject.set(x, "synthesizeSpeechConfig", value.asInstanceOf[js.Any])
+    inline def setSynthesizeSpeechConfig(value: GoogleCloudDialogflowV2SynthesizeSpeechConfig): Self = StObject.set(x, "synthesizeSpeechConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynthesizeSpeechConfigUndefined: Self = StObject.set(x, "synthesizeSpeechConfig", js.undefined)
+    inline def setSynthesizeSpeechConfigUndefined: Self = StObject.set(x, "synthesizeSpeechConfig", js.undefined)
   }
 }

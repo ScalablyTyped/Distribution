@@ -15,19 +15,15 @@ trait TypeofTouch extends StObject {
 }
 object TypeofTouch {
   
-  @scala.inline
-  def apply(extend: js.Object => Touch, fn: Touch): TypeofTouch = {
+  inline def apply(extend: js.Object => Touch, fn: Touch): TypeofTouch = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTouch]
   }
   
-  @scala.inline
-  implicit class TypeofTouchMutableBuilder[Self <: TypeofTouch] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTouch](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Touch): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Touch): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Touch): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Touch): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

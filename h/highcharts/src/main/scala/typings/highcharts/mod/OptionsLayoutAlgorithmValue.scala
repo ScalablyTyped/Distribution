@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsLayoutAlgorithmValue extends StObject
 object OptionsLayoutAlgorithmValue {
   
-  @scala.inline
-  def sliceAndDice: typings.highcharts.highchartsStrings.sliceAndDice = "sliceAndDice".asInstanceOf[typings.highcharts.highchartsStrings.sliceAndDice]
+  inline def sliceAndDice: typings.highcharts.highchartsStrings.sliceAndDice = "sliceAndDice".asInstanceOf[typings.highcharts.highchartsStrings.sliceAndDice]
   
-  @scala.inline
-  def squarified: typings.highcharts.highchartsStrings.squarified = "squarified".asInstanceOf[typings.highcharts.highchartsStrings.squarified]
+  inline def squarified: typings.highcharts.highchartsStrings.squarified = "squarified".asInstanceOf[typings.highcharts.highchartsStrings.squarified]
   
-  @scala.inline
-  def strip: typings.highcharts.highchartsStrings.strip = "strip".asInstanceOf[typings.highcharts.highchartsStrings.strip]
+  inline def strip: typings.highcharts.highchartsStrings.strip = "strip".asInstanceOf[typings.highcharts.highchartsStrings.strip]
   
-  @scala.inline
-  def stripes: typings.highcharts.highchartsStrings.stripes = "stripes".asInstanceOf[typings.highcharts.highchartsStrings.stripes]
+  inline def stripes: typings.highcharts.highchartsStrings.stripes = "stripes".asInstanceOf[typings.highcharts.highchartsStrings.stripes]
 }

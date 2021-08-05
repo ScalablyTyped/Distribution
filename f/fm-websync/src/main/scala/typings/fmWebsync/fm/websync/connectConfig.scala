@@ -48,49 +48,35 @@ trait connectConfig
 }
 object connectConfig {
   
-  @scala.inline
-  def apply(): connectConfig = {
+  inline def apply(): connectConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[connectConfig]
   }
   
-  @scala.inline
-  implicit class connectConfigMutableBuilder[Self <: connectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: connectConfig](x: Self) {
     
-    @scala.inline
-    def setOnComplete(value: /* args */ connectCompleteArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: /* args */ connectCompleteArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    @scala.inline
-    def setOnFailure(value: /* args */ connectFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+    inline def setOnFailure(value: /* args */ connectFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    @scala.inline
-    def setOnStreamFailure(value: /* args */ streamFailureArgs => Unit): Self = StObject.set(x, "onStreamFailure", js.Any.fromFunction1(value))
+    inline def setOnStreamFailure(value: /* args */ streamFailureArgs => Unit): Self = StObject.set(x, "onStreamFailure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStreamFailureUndefined: Self = StObject.set(x, "onStreamFailure", js.undefined)
+    inline def setOnStreamFailureUndefined: Self = StObject.set(x, "onStreamFailure", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: /* args */ connectSuccessArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+    inline def setOnSuccess(value: /* args */ connectSuccessArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
-    @scala.inline
-    def setOnUnhandledReceive(value: /* args */ receiveArgs => Unit): Self = StObject.set(x, "onUnhandledReceive", js.Any.fromFunction1(value))
+    inline def setOnUnhandledReceive(value: /* args */ receiveArgs => Unit): Self = StObject.set(x, "onUnhandledReceive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUnhandledReceiveUndefined: Self = StObject.set(x, "onUnhandledReceive", js.undefined)
+    inline def setOnUnhandledReceiveUndefined: Self = StObject.set(x, "onUnhandledReceive", js.undefined)
     
-    @scala.inline
-    def setStayConnected(value: Boolean): Self = StObject.set(x, "stayConnected", value.asInstanceOf[js.Any])
+    inline def setStayConnected(value: Boolean): Self = StObject.set(x, "stayConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStayConnectedUndefined: Self = StObject.set(x, "stayConnected", js.undefined)
+    inline def setStayConnectedUndefined: Self = StObject.set(x, "stayConnected", js.undefined)
   }
 }

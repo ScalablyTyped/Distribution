@@ -17,8 +17,7 @@ trait Typeofentry extends StObject {
 }
 object Typeofentry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapEntry: (AxiosInstance, EntryProp) => Entry,
     wrapEntryCollection: (AxiosInstance, CollectionProp[EntryProp]) => Collection[Entry, EntryProp]
   ): Typeofentry = {
@@ -26,13 +25,10 @@ object Typeofentry {
     __obj.asInstanceOf[Typeofentry]
   }
   
-  @scala.inline
-  implicit class TypeofentryMutableBuilder[Self <: Typeofentry] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofentry](x: Self) {
     
-    @scala.inline
-    def setWrapEntry(value: (AxiosInstance, EntryProp) => Entry): Self = StObject.set(x, "wrapEntry", js.Any.fromFunction2(value))
+    inline def setWrapEntry(value: (AxiosInstance, EntryProp) => Entry): Self = StObject.set(x, "wrapEntry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapEntryCollection(value: (AxiosInstance, CollectionProp[EntryProp]) => Collection[Entry, EntryProp]): Self = StObject.set(x, "wrapEntryCollection", js.Any.fromFunction2(value))
+    inline def setWrapEntryCollection(value: (AxiosInstance, CollectionProp[EntryProp]) => Collection[Entry, EntryProp]): Self = StObject.set(x, "wrapEntryCollection", js.Any.fromFunction2(value))
   }
 }

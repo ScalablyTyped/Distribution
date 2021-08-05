@@ -18,25 +18,19 @@ trait CreateActivityInput extends StObject {
 }
 object CreateActivityInput {
   
-  @scala.inline
-  def apply(name: Name): CreateActivityInput = {
+  inline def apply(name: Name): CreateActivityInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateActivityInput]
   }
   
-  @scala.inline
-  implicit class CreateActivityInputMutableBuilder[Self <: CreateActivityInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateActivityInput](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

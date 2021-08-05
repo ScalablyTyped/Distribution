@@ -18,8 +18,7 @@ trait ListReelMediaViewerFeedResponseDonationAmountConfig extends StObject {
 }
 object ListReelMediaViewerFeedResponseDonationAmountConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     default_selected_donation_value: Double,
     donation_amount_selector_values: js.Array[Double],
     maximum_donation_amount: Double,
@@ -30,25 +29,18 @@ object ListReelMediaViewerFeedResponseDonationAmountConfig {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseDonationAmountConfig]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseDonationAmountConfigMutableBuilder[Self <: ListReelMediaViewerFeedResponseDonationAmountConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseDonationAmountConfig](x: Self) {
     
-    @scala.inline
-    def setDefault_selected_donation_value(value: Double): Self = StObject.set(x, "default_selected_donation_value", value.asInstanceOf[js.Any])
+    inline def setDefault_selected_donation_value(value: Double): Self = StObject.set(x, "default_selected_donation_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonation_amount_selector_values(value: js.Array[Double]): Self = StObject.set(x, "donation_amount_selector_values", value.asInstanceOf[js.Any])
+    inline def setDonation_amount_selector_values(value: js.Array[Double]): Self = StObject.set(x, "donation_amount_selector_values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonation_amount_selector_valuesVarargs(value: Double*): Self = StObject.set(x, "donation_amount_selector_values", js.Array(value :_*))
+    inline def setDonation_amount_selector_valuesVarargs(value: Double*): Self = StObject.set(x, "donation_amount_selector_values", js.Array(value :_*))
     
-    @scala.inline
-    def setMaximum_donation_amount(value: Double): Self = StObject.set(x, "maximum_donation_amount", value.asInstanceOf[js.Any])
+    inline def setMaximum_donation_amount(value: Double): Self = StObject.set(x, "maximum_donation_amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum_donation_amount(value: Double): Self = StObject.set(x, "minimum_donation_amount", value.asInstanceOf[js.Any])
+    inline def setMinimum_donation_amount(value: Double): Self = StObject.set(x, "minimum_donation_amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_currency(value: String): Self = StObject.set(x, "user_currency", value.asInstanceOf[js.Any])
+    inline def setUser_currency(value: String): Self = StObject.set(x, "user_currency", value.asInstanceOf[js.Any])
   }
 }

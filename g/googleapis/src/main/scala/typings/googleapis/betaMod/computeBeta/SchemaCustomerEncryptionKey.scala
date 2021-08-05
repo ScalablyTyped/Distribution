@@ -40,37 +40,27 @@ trait SchemaCustomerEncryptionKey extends StObject {
 }
 object SchemaCustomerEncryptionKey {
   
-  @scala.inline
-  def apply(): SchemaCustomerEncryptionKey = {
+  inline def apply(): SchemaCustomerEncryptionKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomerEncryptionKey]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerEncryptionKeyMutableBuilder[Self <: SchemaCustomerEncryptionKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomerEncryptionKey](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    @scala.inline
-    def setRawKey(value: String): Self = StObject.set(x, "rawKey", value.asInstanceOf[js.Any])
+    inline def setRawKey(value: String): Self = StObject.set(x, "rawKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawKeyUndefined: Self = StObject.set(x, "rawKey", js.undefined)
+    inline def setRawKeyUndefined: Self = StObject.set(x, "rawKey", js.undefined)
     
-    @scala.inline
-    def setRsaEncryptedKey(value: String): Self = StObject.set(x, "rsaEncryptedKey", value.asInstanceOf[js.Any])
+    inline def setRsaEncryptedKey(value: String): Self = StObject.set(x, "rsaEncryptedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaEncryptedKeyUndefined: Self = StObject.set(x, "rsaEncryptedKey", js.undefined)
+    inline def setRsaEncryptedKeyUndefined: Self = StObject.set(x, "rsaEncryptedKey", js.undefined)
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

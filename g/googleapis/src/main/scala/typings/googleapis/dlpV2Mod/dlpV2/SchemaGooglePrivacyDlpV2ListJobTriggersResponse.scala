@@ -22,28 +22,21 @@ trait SchemaGooglePrivacyDlpV2ListJobTriggersResponse extends StObject {
 }
 object SchemaGooglePrivacyDlpV2ListJobTriggersResponse {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2ListJobTriggersResponse = {
+  inline def apply(): SchemaGooglePrivacyDlpV2ListJobTriggersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ListJobTriggersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ListJobTriggersResponseMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ListJobTriggersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2ListJobTriggersResponse](x: Self) {
     
-    @scala.inline
-    def setJobTriggers(value: js.Array[SchemaGooglePrivacyDlpV2JobTrigger]): Self = StObject.set(x, "jobTriggers", value.asInstanceOf[js.Any])
+    inline def setJobTriggers(value: js.Array[SchemaGooglePrivacyDlpV2JobTrigger]): Self = StObject.set(x, "jobTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTriggersUndefined: Self = StObject.set(x, "jobTriggers", js.undefined)
+    inline def setJobTriggersUndefined: Self = StObject.set(x, "jobTriggers", js.undefined)
     
-    @scala.inline
-    def setJobTriggersVarargs(value: SchemaGooglePrivacyDlpV2JobTrigger*): Self = StObject.set(x, "jobTriggers", js.Array(value :_*))
+    inline def setJobTriggersVarargs(value: SchemaGooglePrivacyDlpV2JobTrigger*): Self = StObject.set(x, "jobTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

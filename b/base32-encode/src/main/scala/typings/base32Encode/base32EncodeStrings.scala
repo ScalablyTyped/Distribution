@@ -11,27 +11,23 @@ object base32EncodeStrings {
   sealed trait Crockford
     extends StObject
        with Variant
-  @scala.inline
-  def Crockford: Crockford = "Crockford".asInstanceOf[Crockford]
+  inline def Crockford: Crockford = "Crockford".asInstanceOf[Crockford]
   
   @js.native
   sealed trait RFC3548
     extends StObject
        with Variant
-  @scala.inline
-  def RFC3548: RFC3548 = "RFC3548".asInstanceOf[RFC3548]
+  inline def RFC3548: RFC3548 = "RFC3548".asInstanceOf[RFC3548]
   
   @js.native
   sealed trait RFC4648
     extends StObject
        with Variant
-  @scala.inline
-  def RFC4648: RFC4648 = "RFC4648".asInstanceOf[RFC4648]
+  inline def RFC4648: RFC4648 = "RFC4648".asInstanceOf[RFC4648]
   
   @js.native
   sealed trait `RFC4648-HEX`
     extends StObject
        with Variant
-  @scala.inline
-  def `RFC4648-HEX`: `RFC4648-HEX` = "RFC4648-HEX".asInstanceOf[`RFC4648-HEX`]
+  inline def `RFC4648-HEX`: `RFC4648-HEX` = "RFC4648-HEX".asInstanceOf[`RFC4648-HEX`]
 }

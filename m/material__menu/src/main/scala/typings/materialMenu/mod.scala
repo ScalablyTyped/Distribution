@@ -69,8 +69,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialMenu.componentMod.MDCMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialMenu.componentMod.MDCMenu]
+    inline def attachTo(root: Element): typings.materialMenu.componentMod.MDCMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialMenu.componentMod.MDCMenu]
   }
   
   @JSImport("@material/menu", "MDCMenuFoundation")
@@ -111,20 +110,17 @@ object mod {
     @JSImport("@material/menu", "cssClasses.MENU_SELECTED_LIST_ITEM")
     @js.native
     def MENU_SELECTED_LIST_ITEM: String = js.native
-    @scala.inline
-    def MENU_SELECTED_LIST_ITEM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTED_LIST_ITEM")(x.asInstanceOf[js.Any])
+    inline def MENU_SELECTED_LIST_ITEM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTED_LIST_ITEM")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/menu", "cssClasses.MENU_SELECTION_GROUP")
     @js.native
     def MENU_SELECTION_GROUP: String = js.native
-    @scala.inline
-    def MENU_SELECTION_GROUP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTION_GROUP")(x.asInstanceOf[js.Any])
+    inline def MENU_SELECTION_GROUP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTION_GROUP")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/menu", "cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -136,8 +132,7 @@ object mod {
     @JSImport("@material/menu", "numbers.FOCUS_ROOT_INDEX")
     @js.native
     def FOCUS_ROOT_INDEX: Double = js.native
-    @scala.inline
-    def FOCUS_ROOT_INDEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUS_ROOT_INDEX")(x.asInstanceOf[js.Any])
+    inline def FOCUS_ROOT_INDEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUS_ROOT_INDEX")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -149,31 +144,26 @@ object mod {
     @JSImport("@material/menu", "strings.ARIA_CHECKED_ATTR")
     @js.native
     def ARIA_CHECKED_ATTR: String = js.native
-    @scala.inline
-    def ARIA_CHECKED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_ATTR")(x.asInstanceOf[js.Any])
+    inline def ARIA_CHECKED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_ATTR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/menu", "strings.ARIA_DISABLED_ATTR")
     @js.native
     def ARIA_DISABLED_ATTR: String = js.native
-    @scala.inline
-    def ARIA_DISABLED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DISABLED_ATTR")(x.asInstanceOf[js.Any])
+    inline def ARIA_DISABLED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DISABLED_ATTR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/menu", "strings.CHECKBOX_SELECTOR")
     @js.native
     def CHECKBOX_SELECTOR: String = js.native
-    @scala.inline
-    def CHECKBOX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def CHECKBOX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/menu", "strings.LIST_SELECTOR")
     @js.native
     def LIST_SELECTOR: String = js.native
-    @scala.inline
-    def LIST_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def LIST_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/menu", "strings.SELECTED_EVENT")
     @js.native
     def SELECTED_EVENT: String = js.native
-    @scala.inline
-    def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
+    inline def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
   }
 }

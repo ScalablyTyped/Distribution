@@ -16,7 +16,7 @@ object helpersMod {
     
     def getHelpers(): js.Any = js.native
     
-    var helpers: js.Any = js.native
+    /* private */ var helpers: js.Any = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/utils/resources/helpers", "HelperStack")
@@ -25,6 +25,6 @@ object helpersMod {
     
     def addCoreHelpers(): Unit = js.native
     
-    var registeredNames: js.Any = js.native
+    /* private */ var registeredNames: js.Any = js.native
   }
 }

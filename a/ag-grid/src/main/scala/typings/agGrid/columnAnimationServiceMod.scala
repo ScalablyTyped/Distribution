@@ -11,17 +11,17 @@ object columnAnimationServiceMod {
   @js.native
   class ColumnAnimationService () extends StObject {
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var animationThreadCount: js.Any = js.native
+    /* private */ var animationThreadCount: js.Any = js.native
     
     /* private */ def ensureAnimationCssClassPresent(): js.Any = js.native
     
-    var executeLaterFuncs: js.Any = js.native
+    /* private */ var executeLaterFuncs: js.Any = js.native
     
     def executeLaterVMTurn(func: js.Function): Unit = js.native
     
-    var executeNextFuncs: js.Any = js.native
+    /* private */ var executeNextFuncs: js.Any = js.native
     
     def executeNextVMTurn(func: js.Function): Unit = js.native
     
@@ -29,9 +29,9 @@ object columnAnimationServiceMod {
     
     def flush(): Unit = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     def isActive(): Boolean = js.native
     

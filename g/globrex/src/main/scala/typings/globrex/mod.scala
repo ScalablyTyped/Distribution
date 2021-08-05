@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(glob: String): Results = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[Results]
-  @scala.inline
-  def apply(glob: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
+  inline def apply(glob: String): Results = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[Results]
+  inline def apply(glob: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
   
   @JSImport("globrex", JSImport.Namespace)
   @js.native
@@ -56,38 +54,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+      inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
       
-      @scala.inline
-      def setFilepath(value: Boolean): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+      inline def setFilepath(value: Boolean): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+      inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
       
-      @scala.inline
-      def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
+      inline def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobstarUndefined: Self = StObject.set(x, "globstar", js.undefined)
+      inline def setGlobstarUndefined: Self = StObject.set(x, "globstar", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -115,26 +103,20 @@ object mod {
   }
   object Path {
     
-    @scala.inline
-    def apply(regex: RegExp, segments: js.Array[RegExp], string: String): Path = {
+    inline def apply(regex: RegExp, segments: js.Array[RegExp], string: String): Path = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegments(value: js.Array[RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsVarargs(value: RegExp*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: RegExp*): Self = StObject.set(x, "segments", js.Array(value :_*))
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,23 +130,18 @@ object mod {
   }
   object Results {
     
-    @scala.inline
-    def apply(regex: RegExp): Results = {
+    inline def apply(regex: RegExp): Results = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
 }

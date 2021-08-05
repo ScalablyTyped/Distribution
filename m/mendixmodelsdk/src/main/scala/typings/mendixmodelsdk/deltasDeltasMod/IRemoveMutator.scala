@@ -15,19 +15,15 @@ trait IRemoveMutator
 }
 object IRemoveMutator {
   
-  @scala.inline
-  def apply(removalIndex: Double): IRemoveMutator = {
+  inline def apply(removalIndex: Double): IRemoveMutator = {
     val __obj = js.Dynamic.literal(mutatorType = "REMOVE", removalIndex = removalIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemoveMutator]
   }
   
-  @scala.inline
-  implicit class IRemoveMutatorMutableBuilder[Self <: IRemoveMutator] (val x: Self) extends AnyVal {
+  extension [Self <: IRemoveMutator](x: Self) {
     
-    @scala.inline
-    def setMutatorType(value: REMOVE): Self = StObject.set(x, "mutatorType", value.asInstanceOf[js.Any])
+    inline def setMutatorType(value: REMOVE): Self = StObject.set(x, "mutatorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovalIndex(value: Double): Self = StObject.set(x, "removalIndex", value.asInstanceOf[js.Any])
+    inline def setRemovalIndex(value: Double): Self = StObject.set(x, "removalIndex", value.asInstanceOf[js.Any])
   }
 }

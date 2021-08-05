@@ -39,46 +39,33 @@ trait VideoFileConfig extends StObject {
 }
 object VideoFileConfig {
   
-  @scala.inline
-  def apply(key: String | VideoFileConfig): VideoFileConfig = {
+  inline def apply(key: String | VideoFileConfig): VideoFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFileConfig]
   }
   
-  @scala.inline
-  implicit class VideoFileConfigMutableBuilder[Self <: VideoFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: VideoFileConfig](x: Self) {
     
-    @scala.inline
-    def setAsBlob(value: Boolean): Self = StObject.set(x, "asBlob", value.asInstanceOf[js.Any])
+    inline def setAsBlob(value: Boolean): Self = StObject.set(x, "asBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsBlobUndefined: Self = StObject.set(x, "asBlob", js.undefined)
+    inline def setAsBlobUndefined: Self = StObject.set(x, "asBlob", js.undefined)
     
-    @scala.inline
-    def setKey(value: String | VideoFileConfig): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | VideoFileConfig): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadEvent(value: String): Self = StObject.set(x, "loadEvent", value.asInstanceOf[js.Any])
+    inline def setLoadEvent(value: String): Self = StObject.set(x, "loadEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadEventUndefined: Self = StObject.set(x, "loadEvent", js.undefined)
+    inline def setLoadEventUndefined: Self = StObject.set(x, "loadEvent", js.undefined)
     
-    @scala.inline
-    def setNoAudio(value: Boolean): Self = StObject.set(x, "noAudio", value.asInstanceOf[js.Any])
+    inline def setNoAudio(value: Boolean): Self = StObject.set(x, "noAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAudioUndefined: Self = StObject.set(x, "noAudio", js.undefined)
+    inline def setNoAudioUndefined: Self = StObject.set(x, "noAudio", js.undefined)
     
-    @scala.inline
-    def setUrlConfig(value: js.Any): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
+    inline def setUrlConfig(value: js.Any): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlConfigUndefined: Self = StObject.set(x, "urlConfig", js.undefined)
+    inline def setUrlConfigUndefined: Self = StObject.set(x, "urlConfig", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

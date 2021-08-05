@@ -24,16 +24,13 @@ object applyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def apply(repo: Repository, diff: Diff, location: LOCATION, options: ApplyOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(repo.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def apply(repo: Repository, diff: Diff, location: LOCATION, options: ApplyOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(repo.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def toTree(repo: Repository, preimage: Tree, diff: Diff, options: ApplyOptions): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTree")(repo.asInstanceOf[js.Any], preimage.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
+    inline def toTree(repo: Repository, preimage: Tree, diff: Diff, options: ApplyOptions): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTree")(repo.asInstanceOf[js.Any], preimage.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
     
     object FLAGS {
       
-      @scala.inline
-      def CHECK: `1` = 1.asInstanceOf[`1`]
+      inline def CHECK: `1` = 1.asInstanceOf[`1`]
     }
     type FLAGS = `1`
     
@@ -45,14 +42,11 @@ object applyMod {
     trait LOCATION extends StObject
     object LOCATION {
       
-      @scala.inline
-      def BOTH: `2` = 2.asInstanceOf[`2`]
+      inline def BOTH: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def INDEX: `1` = 1.asInstanceOf[`1`]
+      inline def INDEX: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def WORKDIR: `0` = 0.asInstanceOf[`0`]
+      inline def WORKDIR: `0` = 0.asInstanceOf[`0`]
     }
   }
 }

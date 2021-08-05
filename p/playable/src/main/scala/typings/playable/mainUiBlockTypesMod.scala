@@ -25,8 +25,7 @@ object mainUiBlockTypesMod {
   }
   object IMainUIBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       disableShowingContent: () => Unit,
       enableShowingContent: () => Unit,
@@ -39,29 +38,21 @@ object mainUiBlockTypesMod {
       __obj.asInstanceOf[IMainUIBlock]
     }
     
-    @scala.inline
-    implicit class IMainUIBlockMutableBuilder[Self <: IMainUIBlock] (val x: Self) extends AnyVal {
+    extension [Self <: IMainUIBlock](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableShowingContent(value: () => Unit): Self = StObject.set(x, "disableShowingContent", js.Any.fromFunction0(value))
+      inline def setDisableShowingContent(value: () => Unit): Self = StObject.set(x, "disableShowingContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableShowingContent(value: () => Unit): Self = StObject.set(x, "enableShowingContent", js.Any.fromFunction0(value))
+      inline def setEnableShowingContent(value: () => Unit): Self = StObject.set(x, "enableShowingContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetShouldAlwaysShow(value: Boolean => Unit): Self = StObject.set(x, "setShouldAlwaysShow", js.Any.fromFunction1(value))
+      inline def setSetShouldAlwaysShow(value: Boolean => Unit): Self = StObject.set(x, "setShouldAlwaysShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -71,20 +62,16 @@ object mainUiBlockTypesMod {
   }
   object IMainUIBlockAPI {
     
-    @scala.inline
-    def apply(): IMainUIBlockAPI = {
+    inline def apply(): IMainUIBlockAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMainUIBlockAPI]
     }
     
-    @scala.inline
-    implicit class IMainUIBlockAPIMutableBuilder[Self <: IMainUIBlockAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IMainUIBlockAPI](x: Self) {
       
-      @scala.inline
-      def setSetMainUIShouldAlwaysShow(value: /* flag */ Boolean => Unit): Self = StObject.set(x, "setMainUIShouldAlwaysShow", js.Any.fromFunction1(value))
+      inline def setSetMainUIShouldAlwaysShow(value: /* flag */ Boolean => Unit): Self = StObject.set(x, "setMainUIShouldAlwaysShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMainUIShouldAlwaysShowUndefined: Self = StObject.set(x, "setMainUIShouldAlwaysShow", js.undefined)
+      inline def setSetMainUIShouldAlwaysShowUndefined: Self = StObject.set(x, "setMainUIShouldAlwaysShow", js.undefined)
     }
   }
   
@@ -94,17 +81,14 @@ object mainUiBlockTypesMod {
   }
   object IMainUIBlockViewConfig {
     
-    @scala.inline
-    def apply(elements: IMainUIBlockViewElements): IMainUIBlockViewConfig = {
+    inline def apply(elements: IMainUIBlockViewElements): IMainUIBlockViewConfig = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMainUIBlockViewConfig]
     }
     
-    @scala.inline
-    implicit class IMainUIBlockViewConfigMutableBuilder[Self <: IMainUIBlockViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IMainUIBlockViewConfig](x: Self) {
       
-      @scala.inline
-      def setElements(value: IMainUIBlockViewElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: IMainUIBlockViewElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,23 +102,18 @@ object mainUiBlockTypesMod {
   }
   object IMainUIBlockViewElements {
     
-    @scala.inline
-    def apply(bottomBlock: HTMLElement, tooltipContainer: HTMLElement, topBlock: HTMLElement): IMainUIBlockViewElements = {
+    inline def apply(bottomBlock: HTMLElement, tooltipContainer: HTMLElement, topBlock: HTMLElement): IMainUIBlockViewElements = {
       val __obj = js.Dynamic.literal(bottomBlock = bottomBlock.asInstanceOf[js.Any], tooltipContainer = tooltipContainer.asInstanceOf[js.Any], topBlock = topBlock.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMainUIBlockViewElements]
     }
     
-    @scala.inline
-    implicit class IMainUIBlockViewElementsMutableBuilder[Self <: IMainUIBlockViewElements] (val x: Self) extends AnyVal {
+    extension [Self <: IMainUIBlockViewElements](x: Self) {
       
-      @scala.inline
-      def setBottomBlock(value: HTMLElement): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
+      inline def setBottomBlock(value: HTMLElement): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipContainer(value: HTMLElement): Self = StObject.set(x, "tooltipContainer", value.asInstanceOf[js.Any])
+      inline def setTooltipContainer(value: HTMLElement): Self = StObject.set(x, "tooltipContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopBlock(value: HTMLElement): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
+      inline def setTopBlock(value: HTMLElement): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,23 +127,18 @@ object mainUiBlockTypesMod {
   }
   object IMainUIBlockViewStyles {
     
-    @scala.inline
-    def apply(hidden: String, mainUiBlock: String, tooltipContainerWrapper: String): IMainUIBlockViewStyles = {
+    inline def apply(hidden: String, mainUiBlock: String, tooltipContainerWrapper: String): IMainUIBlockViewStyles = {
       val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], mainUiBlock = mainUiBlock.asInstanceOf[js.Any], tooltipContainerWrapper = tooltipContainerWrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMainUIBlockViewStyles]
     }
     
-    @scala.inline
-    implicit class IMainUIBlockViewStylesMutableBuilder[Self <: IMainUIBlockViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IMainUIBlockViewStyles](x: Self) {
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainUiBlock(value: String): Self = StObject.set(x, "mainUiBlock", value.asInstanceOf[js.Any])
+      inline def setMainUiBlock(value: String): Self = StObject.set(x, "mainUiBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipContainerWrapper(value: String): Self = StObject.set(x, "tooltipContainerWrapper", value.asInstanceOf[js.Any])
+      inline def setTooltipContainerWrapper(value: String): Self = StObject.set(x, "tooltipContainerWrapper", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,40 +33,29 @@ trait PatchRule extends StObject {
 }
 object PatchRule {
   
-  @scala.inline
-  def apply(PatchFilterGroup: PatchFilterGroup): PatchRule = {
+  inline def apply(PatchFilterGroup: PatchFilterGroup): PatchRule = {
     val __obj = js.Dynamic.literal(PatchFilterGroup = PatchFilterGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchRule]
   }
   
-  @scala.inline
-  implicit class PatchRuleMutableBuilder[Self <: PatchRule] (val x: Self) extends AnyVal {
+  extension [Self <: PatchRule](x: Self) {
     
-    @scala.inline
-    def setApproveAfterDays(value: ApproveAfterDays): Self = StObject.set(x, "ApproveAfterDays", value.asInstanceOf[js.Any])
+    inline def setApproveAfterDays(value: ApproveAfterDays): Self = StObject.set(x, "ApproveAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproveAfterDaysUndefined: Self = StObject.set(x, "ApproveAfterDays", js.undefined)
+    inline def setApproveAfterDaysUndefined: Self = StObject.set(x, "ApproveAfterDays", js.undefined)
     
-    @scala.inline
-    def setApproveUntilDate(value: PatchStringDateTime): Self = StObject.set(x, "ApproveUntilDate", value.asInstanceOf[js.Any])
+    inline def setApproveUntilDate(value: PatchStringDateTime): Self = StObject.set(x, "ApproveUntilDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproveUntilDateUndefined: Self = StObject.set(x, "ApproveUntilDate", js.undefined)
+    inline def setApproveUntilDateUndefined: Self = StObject.set(x, "ApproveUntilDate", js.undefined)
     
-    @scala.inline
-    def setComplianceLevel(value: PatchComplianceLevel): Self = StObject.set(x, "ComplianceLevel", value.asInstanceOf[js.Any])
+    inline def setComplianceLevel(value: PatchComplianceLevel): Self = StObject.set(x, "ComplianceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceLevelUndefined: Self = StObject.set(x, "ComplianceLevel", js.undefined)
+    inline def setComplianceLevelUndefined: Self = StObject.set(x, "ComplianceLevel", js.undefined)
     
-    @scala.inline
-    def setEnableNonSecurity(value: Boolean): Self = StObject.set(x, "EnableNonSecurity", value.asInstanceOf[js.Any])
+    inline def setEnableNonSecurity(value: Boolean): Self = StObject.set(x, "EnableNonSecurity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNonSecurityUndefined: Self = StObject.set(x, "EnableNonSecurity", js.undefined)
+    inline def setEnableNonSecurityUndefined: Self = StObject.set(x, "EnableNonSecurity", js.undefined)
     
-    @scala.inline
-    def setPatchFilterGroup(value: PatchFilterGroup): Self = StObject.set(x, "PatchFilterGroup", value.asInstanceOf[js.Any])
+    inline def setPatchFilterGroup(value: PatchFilterGroup): Self = StObject.set(x, "PatchFilterGroup", value.asInstanceOf[js.Any])
   }
 }

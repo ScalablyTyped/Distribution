@@ -66,8 +66,7 @@ object datetimeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+    inline def fromDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   }
   
   @JSImport("rrule/dist/esm/src/datetime", "Time")

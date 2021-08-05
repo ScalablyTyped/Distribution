@@ -10,8 +10,7 @@ trait StandardPropertiesHyphenFallback[TLength]
      with StandardShorthandPropertiesHyphenFallback[TLength]
 object StandardPropertiesHyphenFallback {
   
-  @scala.inline
-  def apply[TLength](): StandardPropertiesHyphenFallback[TLength] = {
+  inline def apply[TLength](): StandardPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardPropertiesHyphenFallback[TLength]]
   }

@@ -24,14 +24,11 @@ object FinishReason {
     *
     * script execution was cancelled.
     */
-  @scala.inline
-  def Cancel: `1` = 1.asInstanceOf[`1`]
+  inline def Cancel: `1` = 1.asInstanceOf[`1`]
   
   /** error occurred during script execution or compiling. */
-  @scala.inline
-  def Error: `2` = 2.asInstanceOf[`2`]
+  inline def Error: `2` = 2.asInstanceOf[`2`]
   
   /** script in the engine terminated normally. */
-  @scala.inline
-  def OK: `0` = 0.asInstanceOf[`0`]
+  inline def OK: `0` = 0.asInstanceOf[`0`]
 }

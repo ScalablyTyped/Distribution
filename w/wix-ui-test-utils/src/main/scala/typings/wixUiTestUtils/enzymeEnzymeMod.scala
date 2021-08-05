@@ -21,11 +21,9 @@ object enzymeEnzymeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enzymeTestkitFactoryCreator[T /* <: BaseDriver */](driverFactory: EnzymeDriverFactory[T]): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
+  inline def enzymeTestkitFactoryCreator[T /* <: BaseDriver */](driverFactory: EnzymeDriverFactory[T]): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
   
-  @scala.inline
-  def enzymeUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
+  inline def enzymeUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
     driverFactory: js.Function3[
       /* base */ UniDriver[js.Any], 
       /* body */ UniDriver[js.Any], 
@@ -34,28 +32,24 @@ object enzymeEnzymeMod {
     ]
   ): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeUniTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
   
-  @scala.inline
-  def isEnzymeTestkitExists[T /* <: BaseDriver */](
+  inline def isEnzymeTestkitExists[T /* <: BaseDriver */](
     Element: ReactElement,
     testkitFactory: js.Function1[/* obj */ WrapperData, T],
     mount: MountFunctionType
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnzymeTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any], mount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isEnzymeTestkitExists[T /* <: BaseDriver */](
+  inline def isEnzymeTestkitExists[T /* <: BaseDriver */](
     Element: ReactElement,
     testkitFactory: js.Function1[/* obj */ WrapperData, T],
     mount: MountFunctionType,
     options: Options
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnzymeTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any], mount.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUniEnzymeTestkitExists[T /* <: BaseUniDriver */](
+  inline def isUniEnzymeTestkitExists[T /* <: BaseUniDriver */](
     Element: ReactElement,
     testkitFactory: js.Function1[/* obj */ WrapperData, T],
     mount: MountFunctionType
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isUniEnzymeTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any], mount.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isUniEnzymeTestkitExists[T /* <: BaseUniDriver */](
+  inline def isUniEnzymeTestkitExists[T /* <: BaseUniDriver */](
     Element: ReactElement,
     testkitFactory: js.Function1[/* obj */ WrapperData, T],
     mount: MountFunctionType,
@@ -82,26 +76,20 @@ object enzymeEnzymeMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDataHookPropName(value: `data-hook` | dataHook): Self = StObject.set(x, "dataHookPropName", value.asInstanceOf[js.Any])
+      inline def setDataHookPropName(value: `data-hook` | dataHook): Self = StObject.set(x, "dataHookPropName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookPropNameUndefined: Self = StObject.set(x, "dataHookPropName", js.undefined)
+      inline def setDataHookPropNameUndefined: Self = StObject.set(x, "dataHookPropName", js.undefined)
       
-      @scala.inline
-      def setWithoutDataHook(value: Boolean): Self = StObject.set(x, "withoutDataHook", value.asInstanceOf[js.Any])
+      inline def setWithoutDataHook(value: Boolean): Self = StObject.set(x, "withoutDataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutDataHookUndefined: Self = StObject.set(x, "withoutDataHook", js.undefined)
+      inline def setWithoutDataHookUndefined: Self = StObject.set(x, "withoutDataHook", js.undefined)
     }
   }
   
@@ -113,8 +101,7 @@ object enzymeEnzymeMod {
   }
   object WrapperData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataHook: String,
       wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]
     ): WrapperData = {
@@ -122,14 +109,11 @@ object enzymeEnzymeMod {
       __obj.asInstanceOf[WrapperData]
     }
     
-    @scala.inline
-    implicit class WrapperDataMutableBuilder[Self <: WrapperData] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperData](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

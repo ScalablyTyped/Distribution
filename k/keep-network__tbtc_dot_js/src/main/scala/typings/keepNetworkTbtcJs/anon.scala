@@ -39,8 +39,7 @@ object anon {
   }
   object ACTIVE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACTIVE: Double,
       AWAITING_BTC_FUNDING_PROOF: Double,
       AWAITING_SIGNER_SETUP: Double,
@@ -58,44 +57,31 @@ object anon {
       __obj.asInstanceOf[ACTIVE]
     }
     
-    @scala.inline
-    implicit class ACTIVEMutableBuilder[Self <: ACTIVE] (val x: Self) extends AnyVal {
+    extension [Self <: ACTIVE](x: Self) {
       
-      @scala.inline
-      def setACTIVE(value: Double): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
+      inline def setACTIVE(value: Double): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWAITING_BTC_FUNDING_PROOF(value: Double): Self = StObject.set(x, "AWAITING_BTC_FUNDING_PROOF", value.asInstanceOf[js.Any])
+      inline def setAWAITING_BTC_FUNDING_PROOF(value: Double): Self = StObject.set(x, "AWAITING_BTC_FUNDING_PROOF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWAITING_SIGNER_SETUP(value: Double): Self = StObject.set(x, "AWAITING_SIGNER_SETUP", value.asInstanceOf[js.Any])
+      inline def setAWAITING_SIGNER_SETUP(value: Double): Self = StObject.set(x, "AWAITING_SIGNER_SETUP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWAITING_WITHDRAWAL_PROOF(value: Double): Self = StObject.set(x, "AWAITING_WITHDRAWAL_PROOF", value.asInstanceOf[js.Any])
+      inline def setAWAITING_WITHDRAWAL_PROOF(value: Double): Self = StObject.set(x, "AWAITING_WITHDRAWAL_PROOF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWAITING_WITHDRAWAL_SIGNATURE(value: Double): Self = StObject.set(x, "AWAITING_WITHDRAWAL_SIGNATURE", value.asInstanceOf[js.Any])
+      inline def setAWAITING_WITHDRAWAL_SIGNATURE(value: Double): Self = StObject.set(x, "AWAITING_WITHDRAWAL_SIGNATURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOURTESY_CALL(value: Double): Self = StObject.set(x, "COURTESY_CALL", value.asInstanceOf[js.Any])
+      inline def setCOURTESY_CALL(value: Double): Self = StObject.set(x, "COURTESY_CALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFAILED_SETUP(value: Double): Self = StObject.set(x, "FAILED_SETUP", value.asInstanceOf[js.Any])
+      inline def setFAILED_SETUP(value: Double): Self = StObject.set(x, "FAILED_SETUP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFRAUD_LIQUIDATION_IN_PROGRESS(value: Double): Self = StObject.set(x, "FRAUD_LIQUIDATION_IN_PROGRESS", value.asInstanceOf[js.Any])
+      inline def setFRAUD_LIQUIDATION_IN_PROGRESS(value: Double): Self = StObject.set(x, "FRAUD_LIQUIDATION_IN_PROGRESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIQUIDATED(value: Double): Self = StObject.set(x, "LIQUIDATED", value.asInstanceOf[js.Any])
+      inline def setLIQUIDATED(value: Double): Self = StObject.set(x, "LIQUIDATED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIQUIDATION_IN_PROGRESS(value: Double): Self = StObject.set(x, "LIQUIDATION_IN_PROGRESS", value.asInstanceOf[js.Any])
+      inline def setLIQUIDATION_IN_PROGRESS(value: Double): Self = StObject.set(x, "LIQUIDATION_IN_PROGRESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREDEEMED(value: Double): Self = StObject.set(x, "REDEEMED", value.asInstanceOf[js.Any])
+      inline def setREDEEMED(value: Double): Self = StObject.set(x, "REDEEMED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTART(value: Double): Self = StObject.set(x, "START", value.asInstanceOf[js.Any])
+      inline def setSTART(value: Double): Self = StObject.set(x, "START", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +121,7 @@ object anon {
   }
   object AddWitnessSignature {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addWitnessSignature: (String, Double, String, String, String) => String,
       broadcast: String => js.Promise[TransactionID],
       checkForConfirmations: (String, Double) => js.Promise[Double],
@@ -156,50 +141,35 @@ object anon {
       __obj.asInstanceOf[AddWitnessSignature]
     }
     
-    @scala.inline
-    implicit class AddWitnessSignatureMutableBuilder[Self <: AddWitnessSignature] (val x: Self) extends AnyVal {
+    extension [Self <: AddWitnessSignature](x: Self) {
       
-      @scala.inline
-      def setAddWitnessSignature(value: (String, Double, String, String, String) => String): Self = StObject.set(x, "addWitnessSignature", js.Any.fromFunction5(value))
+      inline def setAddWitnessSignature(value: (String, Double, String, String, String) => String): Self = StObject.set(x, "addWitnessSignature", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setBroadcast(value: String => js.Promise[TransactionID]): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
+      inline def setBroadcast(value: String => js.Promise[TransactionID]): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCheckForConfirmations(value: (String, Double) => js.Promise[Double]): Self = StObject.set(x, "checkForConfirmations", js.Any.fromFunction2(value))
+      inline def setCheckForConfirmations(value: (String, Double) => js.Promise[Double]): Self = StObject.set(x, "checkForConfirmations", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConstructOneInputOneOutputWitnessTransaction(value: (String, Double, Double, String) => String): Self = StObject.set(x, "constructOneInputOneOutputWitnessTransaction", js.Any.fromFunction4(value))
+      inline def setConstructOneInputOneOutputWitnessTransaction(value: (String, Double, Double, String) => String): Self = StObject.set(x, "constructOneInputOneOutputWitnessTransaction", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setEstimateFee(value: js.Any => js.Promise[Double]): Self = StObject.set(x, "estimateFee", js.Any.fromFunction1(value))
+      inline def setEstimateFee(value: js.Any => js.Promise[Double]): Self = StObject.set(x, "estimateFee", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFind(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
+      inline def setFind(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindAllUnspent(value: String => js.Promise[js.Array[FoundTransaction]]): Self = StObject.set(x, "findAllUnspent", js.Any.fromFunction1(value))
+      inline def setFindAllUnspent(value: String => js.Promise[js.Array[FoundTransaction]]): Self = StObject.set(x, "findAllUnspent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindAllUnspentWithClient(value: (default, String) => js.Promise[js.Array[FoundTransaction]]): Self = StObject.set(x, "findAllUnspentWithClient", js.Any.fromFunction2(value))
+      inline def setFindAllUnspentWithClient(value: (default, String) => js.Promise[js.Array[FoundTransaction]]): Self = StObject.set(x, "findAllUnspentWithClient", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindOrWaitFor(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "findOrWaitFor", js.Any.fromFunction2(value))
+      inline def setFindOrWaitFor(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "findOrWaitFor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindScript(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "findScript", js.Any.fromFunction2(value))
+      inline def setFindScript(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "findScript", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindWithClient(value: (default, String, Double) => js.Promise[js.UndefOr[FoundTransaction]]): Self = StObject.set(x, "findWithClient", js.Any.fromFunction3(value))
+      inline def setFindWithClient(value: (default, String, Double) => js.Promise[js.UndefOr[FoundTransaction]]): Self = StObject.set(x, "findWithClient", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetBalance(value: String => js.Promise[Double]): Self = StObject.set(x, "getBalance", js.Any.fromFunction1(value))
+      inline def setGetBalance(value: String => js.Promise[Double]): Self = StObject.set(x, "getBalance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSPVProof(value: (String, Double) => js.Promise[SPVProof]): Self = StObject.set(x, "getSPVProof", js.Any.fromFunction2(value))
+      inline def setGetSPVProof(value: (String, Double) => js.Promise[SPVProof]): Self = StObject.set(x, "getSPVProof", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWaitForConfirmations(value: (String, Double, js.Function1[/* tx */ Confirmations, Unit]) => js.Promise[Double]): Self = StObject.set(x, "waitForConfirmations", js.Any.fromFunction3(value))
+      inline def setWaitForConfirmations(value: (String, Double, js.Function1[/* tx */ Confirmations, Unit]) => js.Promise[Double]): Self = StObject.set(x, "waitForConfirmations", js.Any.fromFunction3(value))
     }
   }
   
@@ -209,17 +179,14 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: String): Address = {
+    inline def apply(address: String): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,20 +198,16 @@ object anon {
   }
   object Confirmations {
     
-    @scala.inline
-    def apply(confirmations: Double, transactionID: String): Confirmations = {
+    inline def apply(confirmations: Double, transactionID: String): Confirmations = {
       val __obj = js.Dynamic.literal(confirmations = confirmations.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
       __obj.asInstanceOf[Confirmations]
     }
     
-    @scala.inline
-    implicit class ConfirmationsMutableBuilder[Self <: Confirmations] (val x: Self) extends AnyVal {
+    extension [Self <: Confirmations](x: Self) {
       
-      @scala.inline
-      def setConfirmations(value: Double): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
+      inline def setConfirmations(value: Double): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+      inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,20 +219,16 @@ object anon {
   }
   object DepositAddress {
     
-    @scala.inline
-    def apply(depositAddress: String, keepAddress: String): DepositAddress = {
+    inline def apply(depositAddress: String, keepAddress: String): DepositAddress = {
       val __obj = js.Dynamic.literal(depositAddress = depositAddress.asInstanceOf[js.Any], keepAddress = keepAddress.asInstanceOf[js.Any])
       __obj.asInstanceOf[DepositAddress]
     }
     
-    @scala.inline
-    implicit class DepositAddressMutableBuilder[Self <: DepositAddress] (val x: Self) extends AnyVal {
+    extension [Self <: DepositAddress](x: Self) {
       
-      @scala.inline
-      def setDepositAddress(value: String): Self = StObject.set(x, "depositAddress", value.asInstanceOf[js.Any])
+      inline def setDepositAddress(value: String): Self = StObject.set(x, "depositAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAddress(value: String): Self = StObject.set(x, "keepAddress", value.asInstanceOf[js.Any])
+      inline def setKeepAddress(value: String): Self = StObject.set(x, "keepAddress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,8 +246,7 @@ object anon {
   }
   object Digest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _digest: String,
       _outpoint: String,
       _redeemerOutputScript: String,
@@ -299,23 +257,17 @@ object anon {
       __obj.asInstanceOf[Digest]
     }
     
-    @scala.inline
-    implicit class DigestMutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
+    extension [Self <: Digest](x: Self) {
       
-      @scala.inline
-      def set_digest(value: String): Self = StObject.set(x, "_digest", value.asInstanceOf[js.Any])
+      inline def set_digest(value: String): Self = StObject.set(x, "_digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_outpoint(value: String): Self = StObject.set(x, "_outpoint", value.asInstanceOf[js.Any])
+      inline def set_outpoint(value: String): Self = StObject.set(x, "_outpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_redeemerOutputScript(value: String): Self = StObject.set(x, "_redeemerOutputScript", value.asInstanceOf[js.Any])
+      inline def set_redeemerOutputScript(value: String): Self = StObject.set(x, "_redeemerOutputScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_requestedFee(value: String): Self = StObject.set(x, "_requestedFee", value.asInstanceOf[js.Any])
+      inline def set_requestedFee(value: String): Self = StObject.set(x, "_requestedFee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_utxoValue(value: String): Self = StObject.set(x, "_utxoValue", value.asInstanceOf[js.Any])
+      inline def set_utxoValue(value: String): Self = StObject.set(x, "_utxoValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -331,26 +283,20 @@ object anon {
   }
   object Locktime {
     
-    @scala.inline
-    def apply(locktime: js.Any, txInVector: js.Any, txOutVector: js.Any, version: js.Any): Locktime = {
+    inline def apply(locktime: js.Any, txInVector: js.Any, txOutVector: js.Any, version: js.Any): Locktime = {
       val __obj = js.Dynamic.literal(locktime = locktime.asInstanceOf[js.Any], txInVector = txInVector.asInstanceOf[js.Any], txOutVector = txOutVector.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locktime]
     }
     
-    @scala.inline
-    implicit class LocktimeMutableBuilder[Self <: Locktime] (val x: Self) extends AnyVal {
+    extension [Self <: Locktime](x: Self) {
       
-      @scala.inline
-      def setLocktime(value: js.Any): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
+      inline def setLocktime(value: js.Any): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxInVector(value: js.Any): Self = StObject.set(x, "txInVector", value.asInstanceOf[js.Any])
+      inline def setTxInVector(value: js.Any): Self = StObject.set(x, "txInVector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxOutVector(value: js.Any): Self = StObject.set(x, "txOutVector", value.asInstanceOf[js.Any])
+      inline def setTxOutVector(value: js.Any): Self = StObject.set(x, "txOutVector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,23 +310,18 @@ object anon {
   }
   object MAINNET {
     
-    @scala.inline
-    def apply(MAINNET: String, SIMNET: String, TESTNET: String): MAINNET = {
+    inline def apply(MAINNET: String, SIMNET: String, TESTNET: String): MAINNET = {
       val __obj = js.Dynamic.literal(MAINNET = MAINNET.asInstanceOf[js.Any], SIMNET = SIMNET.asInstanceOf[js.Any], TESTNET = TESTNET.asInstanceOf[js.Any])
       __obj.asInstanceOf[MAINNET]
     }
     
-    @scala.inline
-    implicit class MAINNETMutableBuilder[Self <: MAINNET] (val x: Self) extends AnyVal {
+    extension [Self <: MAINNET](x: Self) {
       
-      @scala.inline
-      def setMAINNET(value: String): Self = StObject.set(x, "MAINNET", value.asInstanceOf[js.Any])
+      inline def setMAINNET(value: String): Self = StObject.set(x, "MAINNET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSIMNET(value: String): Self = StObject.set(x, "SIMNET", value.asInstanceOf[js.Any])
+      inline def setSIMNET(value: String): Self = StObject.set(x, "SIMNET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTESTNET(value: String): Self = StObject.set(x, "TESTNET", value.asInstanceOf[js.Any])
+      inline def setTESTNET(value: String): Self = StObject.set(x, "TESTNET", value.asInstanceOf[js.Any])
     }
   }
   
@@ -393,20 +334,16 @@ object anon {
   }
   object OmitFoundTransactionvalue {
     
-    @scala.inline
-    def apply(outputPosition: Double, transactionID: String): OmitFoundTransactionvalue = {
+    inline def apply(outputPosition: Double, transactionID: String): OmitFoundTransactionvalue = {
       val __obj = js.Dynamic.literal(outputPosition = outputPosition.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
       __obj.asInstanceOf[OmitFoundTransactionvalue]
     }
     
-    @scala.inline
-    implicit class OmitFoundTransactionvalueMutableBuilder[Self <: OmitFoundTransactionvalue] (val x: Self) extends AnyVal {
+    extension [Self <: OmitFoundTransactionvalue](x: Self) {
       
-      @scala.inline
-      def setOutputPosition(value: Double): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
+      inline def setOutputPosition(value: Double): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+      inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -426,8 +363,7 @@ object anon {
   }
   object PubKeyHashFrom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       pubKeyHashFrom: String => Buffer | Null,
       pubKeyHashToBech32: (String, BitcoinNetworkType) => String,
       publicKeyPointToP2WPKHAddress: (String, String, BitcoinNetworkType) => String,
@@ -439,26 +375,19 @@ object anon {
       __obj.asInstanceOf[PubKeyHashFrom]
     }
     
-    @scala.inline
-    implicit class PubKeyHashFromMutableBuilder[Self <: PubKeyHashFrom] (val x: Self) extends AnyVal {
+    extension [Self <: PubKeyHashFrom](x: Self) {
       
-      @scala.inline
-      def setPubKeyHashFrom(value: String => Buffer | Null): Self = StObject.set(x, "pubKeyHashFrom", js.Any.fromFunction1(value))
+      inline def setPubKeyHashFrom(value: String => Buffer | Null): Self = StObject.set(x, "pubKeyHashFrom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPubKeyHashToBech32(value: (String, BitcoinNetworkType) => String): Self = StObject.set(x, "pubKeyHashToBech32", js.Any.fromFunction2(value))
+      inline def setPubKeyHashToBech32(value: (String, BitcoinNetworkType) => String): Self = StObject.set(x, "pubKeyHashToBech32", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPublicKeyPointToP2WPKHAddress(value: (String, String, BitcoinNetworkType) => String): Self = StObject.set(x, "publicKeyPointToP2WPKHAddress", js.Any.fromFunction3(value))
+      inline def setPublicKeyPointToP2WPKHAddress(value: (String, String, BitcoinNetworkType) => String): Self = StObject.set(x, "publicKeyPointToP2WPKHAddress", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPublicKeyToP2WPKHAddress(value: (String, BitcoinNetworkType) => String): Self = StObject.set(x, "publicKeyToP2WPKHAddress", js.Any.fromFunction2(value))
+      inline def setPublicKeyToP2WPKHAddress(value: (String, BitcoinNetworkType) => String): Self = StObject.set(x, "publicKeyToP2WPKHAddress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToRawScript(value: String => Buffer): Self = StObject.set(x, "toRawScript", js.Any.fromFunction1(value))
+      inline def setToRawScript(value: String => Buffer): Self = StObject.set(x, "toRawScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToScript(value: String => String): Self = StObject.set(x, "toScript", js.Any.fromFunction1(value))
+      inline def setToScript(value: String => String): Self = StObject.set(x, "toScript", js.Any.fromFunction1(value))
     }
   }
   
@@ -470,20 +399,16 @@ object anon {
   }
   object RequiredConfirmations {
     
-    @scala.inline
-    def apply(requiredConfirmations: Double, transaction: FoundTransaction): RequiredConfirmations = {
+    inline def apply(requiredConfirmations: Double, transaction: FoundTransaction): RequiredConfirmations = {
       val __obj = js.Dynamic.literal(requiredConfirmations = requiredConfirmations.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredConfirmations]
     }
     
-    @scala.inline
-    implicit class RequiredConfirmationsMutableBuilder[Self <: RequiredConfirmations] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredConfirmations](x: Self) {
       
-      @scala.inline
-      def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
+      inline def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction(value: FoundTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: FoundTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -495,20 +420,16 @@ object anon {
   }
   object RequiredConfirmationsTransactionID {
     
-    @scala.inline
-    def apply(requiredConfirmations: Double, transactionID: String): RequiredConfirmationsTransactionID = {
+    inline def apply(requiredConfirmations: Double, transactionID: String): RequiredConfirmationsTransactionID = {
       val __obj = js.Dynamic.literal(requiredConfirmations = requiredConfirmations.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredConfirmationsTransactionID]
     }
     
-    @scala.inline
-    implicit class RequiredConfirmationsTransactionIDMutableBuilder[Self <: RequiredConfirmationsTransactionID] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredConfirmationsTransactionID](x: Self) {
       
-      @scala.inline
-      def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
+      inline def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+      inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,17 +439,14 @@ object anon {
   }
   object TransactionID {
     
-    @scala.inline
-    def apply(transactionID: String): TransactionID = {
+    inline def apply(transactionID: String): TransactionID = {
       val __obj = js.Dynamic.literal(transactionID = transactionID.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionID]
     }
     
-    @scala.inline
-    implicit class TransactionIDMutableBuilder[Self <: TransactionID] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionID](x: Self) {
       
-      @scala.inline
-      def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+      inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     }
   }
 }

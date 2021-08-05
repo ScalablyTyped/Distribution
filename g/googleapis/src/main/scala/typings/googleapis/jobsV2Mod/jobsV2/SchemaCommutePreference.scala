@@ -51,49 +51,35 @@ trait SchemaCommutePreference extends StObject {
 }
 object SchemaCommutePreference {
   
-  @scala.inline
-  def apply(): SchemaCommutePreference = {
+  inline def apply(): SchemaCommutePreference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommutePreference]
   }
   
-  @scala.inline
-  implicit class SchemaCommutePreferenceMutableBuilder[Self <: SchemaCommutePreference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommutePreference](x: Self) {
     
-    @scala.inline
-    def setAllowNonStreetLevelAddress(value: Boolean): Self = StObject.set(x, "allowNonStreetLevelAddress", value.asInstanceOf[js.Any])
+    inline def setAllowNonStreetLevelAddress(value: Boolean): Self = StObject.set(x, "allowNonStreetLevelAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNonStreetLevelAddressUndefined: Self = StObject.set(x, "allowNonStreetLevelAddress", js.undefined)
+    inline def setAllowNonStreetLevelAddressUndefined: Self = StObject.set(x, "allowNonStreetLevelAddress", js.undefined)
     
-    @scala.inline
-    def setDepartureHourLocal(value: Double): Self = StObject.set(x, "departureHourLocal", value.asInstanceOf[js.Any])
+    inline def setDepartureHourLocal(value: Double): Self = StObject.set(x, "departureHourLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartureHourLocalUndefined: Self = StObject.set(x, "departureHourLocal", js.undefined)
+    inline def setDepartureHourLocalUndefined: Self = StObject.set(x, "departureHourLocal", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setRoadTraffic(value: String): Self = StObject.set(x, "roadTraffic", value.asInstanceOf[js.Any])
+    inline def setRoadTraffic(value: String): Self = StObject.set(x, "roadTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoadTrafficUndefined: Self = StObject.set(x, "roadTraffic", js.undefined)
+    inline def setRoadTrafficUndefined: Self = StObject.set(x, "roadTraffic", js.undefined)
     
-    @scala.inline
-    def setStartLocation(value: SchemaLatLng): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
+    inline def setStartLocation(value: SchemaLatLng): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
+    inline def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
-    @scala.inline
-    def setTravelTime(value: String): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
+    inline def setTravelTime(value: String): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelTimeUndefined: Self = StObject.set(x, "travelTime", js.undefined)
+    inline def setTravelTimeUndefined: Self = StObject.set(x, "travelTime", js.undefined)
   }
 }

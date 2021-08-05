@@ -18,25 +18,19 @@ trait MovingAddressStatus extends StObject {
 }
 object MovingAddressStatus {
   
-  @scala.inline
-  def apply(): MovingAddressStatus = {
+  inline def apply(): MovingAddressStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MovingAddressStatus]
   }
   
-  @scala.inline
-  implicit class MovingAddressStatusMutableBuilder[Self <: MovingAddressStatus] (val x: Self) extends AnyVal {
+  extension [Self <: MovingAddressStatus](x: Self) {
     
-    @scala.inline
-    def setMoveStatus(value: MoveStatus): Self = StObject.set(x, "MoveStatus", value.asInstanceOf[js.Any])
+    inline def setMoveStatus(value: MoveStatus): Self = StObject.set(x, "MoveStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveStatusUndefined: Self = StObject.set(x, "MoveStatus", js.undefined)
+    inline def setMoveStatusUndefined: Self = StObject.set(x, "MoveStatus", js.undefined)
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }
 }

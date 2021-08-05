@@ -15,28 +15,21 @@ trait Domain extends StObject {
 }
 object Domain {
   
-  @scala.inline
-  def apply(domain: js.Array[Double], name: String): Domain = {
+  inline def apply(domain: js.Array[Double], name: String): Domain = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domain]
   }
   
-  @scala.inline
-  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+  extension [Self <: Domain](x: Self) {
     
-    @scala.inline
-    def setDomain(value: js.Array[Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: js.Array[Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainVarargs(value: Double*): Self = StObject.set(x, "domain", js.Array(value :_*))
+    inline def setDomainVarargs(value: Double*): Self = StObject.set(x, "domain", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickFormat(value: /* tick */ js.Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
+    inline def setTickFormat(value: /* tick */ js.Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
+    inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
   }
 }

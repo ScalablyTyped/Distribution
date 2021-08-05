@@ -11,19 +11,15 @@ trait StoryCta extends StObject {
 }
 object StoryCta {
   
-  @scala.inline
-  def apply(links: js.Array[WebUri]): StoryCta = {
+  inline def apply(links: js.Array[WebUri]): StoryCta = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryCta]
   }
   
-  @scala.inline
-  implicit class StoryCtaMutableBuilder[Self <: StoryCta] (val x: Self) extends AnyVal {
+  extension [Self <: StoryCta](x: Self) {
     
-    @scala.inline
-    def setLinks(value: js.Array[WebUri]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[WebUri]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: WebUri*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: WebUri*): Self = StObject.set(x, "links", js.Array(value :_*))
   }
 }

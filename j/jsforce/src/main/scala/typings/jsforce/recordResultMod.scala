@@ -19,23 +19,18 @@ object recordResultMod {
   }
   object ErrorResult {
     
-    @scala.inline
-    def apply(errors: js.Array[String]): ErrorResult = {
+    inline def apply(errors: js.Array[String]): ErrorResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = false)
       __obj.asInstanceOf[ErrorResult]
     }
     
-    @scala.inline
-    implicit class ErrorResultMutableBuilder[Self <: ErrorResult] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,14 +41,12 @@ object recordResultMod {
   trait RecordResult extends StObject
   object RecordResult {
     
-    @scala.inline
-    def ErrorResult(errors: js.Array[String]): typings.jsforce.recordResultMod.ErrorResult = {
+    inline def ErrorResult(errors: js.Array[String]): typings.jsforce.recordResultMod.ErrorResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = false)
       __obj.asInstanceOf[typings.jsforce.recordResultMod.ErrorResult]
     }
     
-    @scala.inline
-    def SuccessResult(id: SalesforceId): typings.jsforce.recordResultMod.SuccessResult = {
+    inline def SuccessResult(id: SalesforceId): typings.jsforce.recordResultMod.SuccessResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[typings.jsforce.recordResultMod.SuccessResult]
     }
@@ -69,20 +62,16 @@ object recordResultMod {
   }
   object SuccessResult {
     
-    @scala.inline
-    def apply(id: SalesforceId): SuccessResult = {
+    inline def apply(id: SalesforceId): SuccessResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[SuccessResult]
     }
     
-    @scala.inline
-    implicit class SuccessResultMutableBuilder[Self <: SuccessResult] (val x: Self) extends AnyVal {
+    extension [Self <: SuccessResult](x: Self) {
       
-      @scala.inline
-      def setId(value: SalesforceId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: SalesforceId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
 }

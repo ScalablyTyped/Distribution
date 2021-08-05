@@ -37,12 +37,12 @@ object routerMod {
     /** @internal */ @JSName("$id")
     var $id: Double = js.native
     
-    /** @internal */ var _disposables: js.Any = js.native
+    /** @internal */ /* private */ var _disposables: js.Any = js.native
     
     /** @internal */ var _disposed: Boolean = js.native
     
     /** @internal plugin instances are registered here */
-    var _plugins: js.Any = js.native
+    /* private */ var _plugins: js.Any = js.native
     
     /** Registers an object to be notified when the router is disposed */
     def disposable(disposable: Disposable): Unit = js.native

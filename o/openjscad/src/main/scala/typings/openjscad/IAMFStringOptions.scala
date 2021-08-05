@@ -10,16 +10,13 @@ trait IAMFStringOptions extends StObject {
 }
 object IAMFStringOptions {
   
-  @scala.inline
-  def apply(unit: String): IAMFStringOptions = {
+  inline def apply(unit: String): IAMFStringOptions = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAMFStringOptions]
   }
   
-  @scala.inline
-  implicit class IAMFStringOptionsMutableBuilder[Self <: IAMFStringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAMFStringOptions](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

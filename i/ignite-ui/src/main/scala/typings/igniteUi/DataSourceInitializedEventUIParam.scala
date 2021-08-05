@@ -28,37 +28,27 @@ trait DataSourceInitializedEventUIParam extends StObject {
 }
 object DataSourceInitializedEventUIParam {
   
-  @scala.inline
-  def apply(): DataSourceInitializedEventUIParam = {
+  inline def apply(): DataSourceInitializedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceInitializedEventUIParam]
   }
   
-  @scala.inline
-  implicit class DataSourceInitializedEventUIParamMutableBuilder[Self <: DataSourceInitializedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceInitializedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setMetadataTreeRoot(value: js.Any): Self = StObject.set(x, "metadataTreeRoot", value.asInstanceOf[js.Any])
+    inline def setMetadataTreeRoot(value: js.Any): Self = StObject.set(x, "metadataTreeRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataTreeRootUndefined: Self = StObject.set(x, "metadataTreeRoot", js.undefined)
+    inline def setMetadataTreeRootUndefined: Self = StObject.set(x, "metadataTreeRoot", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

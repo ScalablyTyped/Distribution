@@ -20,31 +20,23 @@ trait Commit extends StObject {
 }
 object Commit {
   
-  @scala.inline
-  def apply(all: js.Any, commit: js.Any, ctx: IpfsPrint, number: js.Any, repo: js.Any, timeout: js.Any): Commit = {
+  inline def apply(all: js.Any, commit: js.Any, ctx: IpfsPrint, number: js.Any, repo: js.Any, timeout: js.Any): Commit = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Commit]
   }
   
-  @scala.inline
-  implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
+  extension [Self <: Commit](x: Self) {
     
-    @scala.inline
-    def setAll(value: js.Any): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: js.Any): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: js.Any): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: js.Any): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: IpfsPrint): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: IpfsPrint): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: js.Any): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: js.Any): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: js.Any): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: js.Any): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

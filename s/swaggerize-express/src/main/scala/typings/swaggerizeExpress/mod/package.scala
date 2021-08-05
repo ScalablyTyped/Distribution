@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(options: typings.swaggerizeExpress.mod.Options): typings.express.mod.RequestHandler[
+inline def apply(options: typings.swaggerizeExpress.mod.Options): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 

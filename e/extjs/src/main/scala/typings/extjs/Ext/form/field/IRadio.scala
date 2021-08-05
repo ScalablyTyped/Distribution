@@ -28,37 +28,27 @@ trait IRadio
 }
 object IRadio {
   
-  @scala.inline
-  def apply(): IRadio = {
+  inline def apply(): IRadio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRadio]
   }
   
-  @scala.inline
-  implicit class IRadioMutableBuilder[Self <: IRadio] (val x: Self) extends AnyVal {
+  extension [Self <: IRadio](x: Self) {
     
-    @scala.inline
-    def setGetGroupValue(value: () => String): Self = StObject.set(x, "getGroupValue", js.Any.fromFunction0(value))
+    inline def setGetGroupValue(value: () => String): Self = StObject.set(x, "getGroupValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
+    inline def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
     
-    @scala.inline
-    def setGetModelData(value: () => js.Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
+    inline def setGetModelData(value: () => js.Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
+    inline def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
     
-    @scala.inline
-    def setIsRadio(value: Boolean): Self = StObject.set(x, "isRadio", value.asInstanceOf[js.Any])
+    inline def setIsRadio(value: Boolean): Self = StObject.set(x, "isRadio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRadioUndefined: Self = StObject.set(x, "isRadio", js.undefined)
+    inline def setIsRadioUndefined: Self = StObject.set(x, "isRadio", js.undefined)
     
-    @scala.inline
-    def setOnRemoved(value: () => Unit): Self = StObject.set(x, "onRemoved", js.Any.fromFunction0(value))
+    inline def setOnRemoved(value: () => Unit): Self = StObject.set(x, "onRemoved", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRemovedUndefined: Self = StObject.set(x, "onRemoved", js.undefined)
+    inline def setOnRemovedUndefined: Self = StObject.set(x, "onRemoved", js.undefined)
   }
 }

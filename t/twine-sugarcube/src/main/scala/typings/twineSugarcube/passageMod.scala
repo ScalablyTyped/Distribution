@@ -33,8 +33,7 @@ object passageMod {
   }
   object Passage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: () => String,
       domId: String,
       processText: () => String,
@@ -46,17 +45,13 @@ object passageMod {
       __obj.asInstanceOf[Passage]
     }
     
-    @scala.inline
-    implicit class PassageMutableBuilder[Self <: Passage] (val x: Self) extends AnyVal {
+    extension [Self <: Passage](x: Self) {
       
-      @scala.inline
-      def setDescription(value: () => String): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
+      inline def setDescription(value: () => String): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDomId(value: String): Self = StObject.set(x, "domId", value.asInstanceOf[js.Any])
+      inline def setDomId(value: String): Self = StObject.set(x, "domId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessText(value: () => String): Self = StObject.set(x, "processText", js.Any.fromFunction0(value))
+      inline def setProcessText(value: () => String): Self = StObject.set(x, "processText", js.Any.fromFunction0(value))
     }
   }
   
@@ -82,23 +77,18 @@ object passageMod {
   }
   object PassageBase {
     
-    @scala.inline
-    def apply(tags: Array[String], text: String, title: String): PassageBase = {
+    inline def apply(tags: Array[String], text: String, title: String): PassageBase = {
       val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[PassageBase]
     }
     
-    @scala.inline
-    implicit class PassageBaseMutableBuilder[Self <: PassageBase] (val x: Self) extends AnyVal {
+    extension [Self <: PassageBase](x: Self) {
       
-      @scala.inline
-      def setTags(value: Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

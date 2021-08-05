@@ -22,20 +22,16 @@ object textAreaItalicMod extends Shortcut {
   }
   object TextAreaItalicProps {
     
-    @scala.inline
-    def apply(): TextAreaItalicProps = {
+    inline def apply(): TextAreaItalicProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaItalicProps]
     }
     
-    @scala.inline
-    implicit class TextAreaItalicPropsMutableBuilder[Self <: TextAreaItalicProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaItalicProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

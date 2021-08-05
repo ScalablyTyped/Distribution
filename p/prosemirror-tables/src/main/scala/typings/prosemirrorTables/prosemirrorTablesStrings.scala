@@ -11,32 +11,27 @@ object prosemirrorTablesStrings {
   sealed trait cell
     extends StObject
        with TableRoles
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
+  inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
   sealed trait column extends StObject
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait header_cell
     extends StObject
        with TableRoles
-  @scala.inline
-  def header_cell: header_cell = "header_cell".asInstanceOf[header_cell]
+  inline def header_cell: header_cell = "header_cell".asInstanceOf[header_cell]
   
   @js.native
   sealed trait row
     extends StObject
        with TableRoles
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait table
     extends StObject
        with TableRoles
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
+  inline def table: table = "table".asInstanceOf[table]
 }

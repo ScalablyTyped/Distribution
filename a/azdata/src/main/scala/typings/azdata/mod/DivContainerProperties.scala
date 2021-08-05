@@ -26,31 +26,23 @@ trait DivContainerProperties
 }
 object DivContainerProperties {
   
-  @scala.inline
-  def apply(): DivContainerProperties = {
+  inline def apply(): DivContainerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DivContainerProperties]
   }
   
-  @scala.inline
-  implicit class DivContainerPropertiesMutableBuilder[Self <: DivContainerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DivContainerProperties](x: Self) {
     
-    @scala.inline
-    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    @scala.inline
-    def setOverflowY(value: String): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+    inline def setOverflowY(value: String): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+    inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
-    @scala.inline
-    def setYOffsetChange(value: Double): Self = StObject.set(x, "yOffsetChange", value.asInstanceOf[js.Any])
+    inline def setYOffsetChange(value: Double): Self = StObject.set(x, "yOffsetChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetChangeUndefined: Self = StObject.set(x, "yOffsetChange", js.undefined)
+    inline def setYOffsetChangeUndefined: Self = StObject.set(x, "yOffsetChange", js.undefined)
   }
 }

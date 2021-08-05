@@ -14,19 +14,15 @@ trait CloudEndpoints extends StObject {
 }
 object CloudEndpoints {
   
-  @scala.inline
-  def apply(): CloudEndpoints = {
+  inline def apply(): CloudEndpoints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudEndpoints]
   }
   
-  @scala.inline
-  implicit class CloudEndpointsMutableBuilder[Self <: CloudEndpoints] (val x: Self) extends AnyVal {
+  extension [Self <: CloudEndpoints](x: Self) {
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait PersistenceUpdateDocOptions extends StObject {
 }
 object PersistenceUpdateDocOptions {
   
-  @scala.inline
-  def apply(): PersistenceUpdateDocOptions = {
+  inline def apply(): PersistenceUpdateDocOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistenceUpdateDocOptions]
   }
   
-  @scala.inline
-  implicit class PersistenceUpdateDocOptionsMutableBuilder[Self <: PersistenceUpdateDocOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceUpdateDocOptions](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

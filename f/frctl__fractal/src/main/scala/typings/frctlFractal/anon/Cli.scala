@@ -12,19 +12,15 @@ trait Cli extends StObject {
 }
 object Cli {
   
-  @scala.inline
-  def apply(cli: String, local: String): Cli = {
+  inline def apply(cli: String, local: String): Cli = {
     val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cli]
   }
   
-  @scala.inline
-  implicit class CliMutableBuilder[Self <: Cli] (val x: Self) extends AnyVal {
+  extension [Self <: Cli](x: Self) {
     
-    @scala.inline
-    def setCli(value: String): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+    inline def setCli(value: String): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
   }
 }

@@ -31,6 +31,5 @@ object adaptorMod {
     def on(eventType: EventType, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  @scala.inline
-  def adaptor(options: js.Any): LayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptor")(options.asInstanceOf[js.Any]).asInstanceOf[LayoutAdaptor]
+  inline def adaptor(options: js.Any): LayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptor")(options.asInstanceOf[js.Any]).asInstanceOf[LayoutAdaptor]
 }

@@ -26,14 +26,12 @@ object commonsMod {
     @JSImport("plottable/build/src/plots/commons", "Animator.MAIN")
     @js.native
     def MAIN: String = js.native
-    @scala.inline
-    def MAIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAIN")(x.asInstanceOf[js.Any])
+    inline def MAIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAIN")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/commons", "Animator.RESET")
     @js.native
     def RESET: String = js.native
-    @scala.inline
-    def RESET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESET")(x.asInstanceOf[js.Any])
+    inline def RESET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESET")(x.asInstanceOf[js.Any])
   }
   
   trait IAccessorScaleBinding[D, R] extends StObject {
@@ -75,29 +73,22 @@ object commonsMod {
   }
   object IAccessorScaleBinding {
     
-    @scala.inline
-    def apply[D, R](accessor: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): IAccessorScaleBinding[D, R] = {
+    inline def apply[D, R](accessor: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): IAccessorScaleBinding[D, R] = {
       val __obj = js.Dynamic.literal(accessor = js.Any.fromFunction3(accessor))
       __obj.asInstanceOf[IAccessorScaleBinding[D, R]]
     }
     
-    @scala.inline
-    implicit class IAccessorScaleBindingMutableBuilder[Self <: IAccessorScaleBinding[?, ?], D, R] (val x: Self & (IAccessorScaleBinding[D, R])) extends AnyVal {
+    extension [Self <: IAccessorScaleBinding[?, ?], D, R](x: Self & (IAccessorScaleBinding[D, R])) {
       
-      @scala.inline
-      def setAccessor(value: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+      inline def setAccessor(value: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostScale(value: (R, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
+      inline def setPostScale(value: (R, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPostScaleUndefined: Self = StObject.set(x, "postScale", js.undefined)
+      inline def setPostScaleUndefined: Self = StObject.set(x, "postScale", js.undefined)
       
-      @scala.inline
-      def setScale(value: Scale[D, R]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Scale[D, R]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     }
   }
   
@@ -121,8 +112,7 @@ object commonsMod {
   }
   object ILightweightPlotEntity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       component: Plot,
       dataset: Dataset,
       datasetIndex: Double,
@@ -136,32 +126,23 @@ object commonsMod {
       __obj.asInstanceOf[ILightweightPlotEntity]
     }
     
-    @scala.inline
-    implicit class ILightweightPlotEntityMutableBuilder[Self <: ILightweightPlotEntity] (val x: Self) extends AnyVal {
+    extension [Self <: ILightweightPlotEntity](x: Self) {
       
-      @scala.inline
-      def setComponent(value: Plot): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Plot): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
+      inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatum(value: js.Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: js.Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawer(value: IDrawer): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
+      inline def setDrawer(value: IDrawer): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidDatumIndex(value: Double): Self = StObject.set(x, "validDatumIndex", value.asInstanceOf[js.Any])
+      inline def setValidDatumIndex(value: Double): Self = StObject.set(x, "validDatumIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,8 +158,7 @@ object commonsMod {
   }
   object IPlotEntity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: IEntityBounds,
       component: Plot,
       dataset: Dataset,
@@ -192,17 +172,13 @@ object commonsMod {
       __obj.asInstanceOf[IPlotEntity]
     }
     
-    @scala.inline
-    implicit class IPlotEntityMutableBuilder[Self <: IPlotEntity] (val x: Self) extends AnyVal {
+    extension [Self <: IPlotEntity](x: Self) {
       
-      @scala.inline
-      def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
+      inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,29 +194,22 @@ object commonsMod {
   }
   object ITransformableAccessorScaleBinding {
     
-    @scala.inline
-    def apply[D, R](accessor: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): ITransformableAccessorScaleBinding[D, R] = {
+    inline def apply[D, R](accessor: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): ITransformableAccessorScaleBinding[D, R] = {
       val __obj = js.Dynamic.literal(accessor = js.Any.fromFunction3(accessor))
       __obj.asInstanceOf[ITransformableAccessorScaleBinding[D, R]]
     }
     
-    @scala.inline
-    implicit class ITransformableAccessorScaleBindingMutableBuilder[Self <: ITransformableAccessorScaleBinding[?, ?], D, R] (val x: Self & (ITransformableAccessorScaleBinding[D, R])) extends AnyVal {
+    extension [Self <: ITransformableAccessorScaleBinding[?, ?], D, R](x: Self & (ITransformableAccessorScaleBinding[D, R])) {
       
-      @scala.inline
-      def setAccessor(value: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+      inline def setAccessor(value: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostScale(value: (R, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
+      inline def setPostScale(value: (R, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPostScaleUndefined: Self = StObject.set(x, "postScale", js.undefined)
+      inline def setPostScaleUndefined: Self = StObject.set(x, "postScale", js.undefined)
       
-      @scala.inline
-      def setScale(value: TransformableScale[D, R]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: TransformableScale[D, R]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     }
   }
 }

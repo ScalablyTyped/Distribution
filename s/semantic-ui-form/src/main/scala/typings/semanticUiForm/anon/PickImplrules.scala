@@ -13,16 +13,13 @@ trait PickImplrules extends StObject {
 }
 object PickImplrules {
   
-  @scala.inline
-  def apply(rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]): PickImplrules = {
+  inline def apply(rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]): PickImplrules = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrules]
   }
   
-  @scala.inline
-  implicit class PickImplrulesMutableBuilder[Self <: PickImplrules] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrules](x: Self) {
     
-    @scala.inline
-    def setRules(value: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
   }
 }

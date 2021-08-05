@@ -47,8 +47,7 @@ object BackgroundService {
   }
   object BackgroundServiceEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eventMetadata: js.Array[EventMetadata],
       eventName: String,
       instanceId: String,
@@ -61,32 +60,23 @@ object BackgroundService {
       __obj.asInstanceOf[BackgroundServiceEvent]
     }
     
-    @scala.inline
-    implicit class BackgroundServiceEventMutableBuilder[Self <: BackgroundServiceEvent] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundServiceEvent](x: Self) {
       
-      @scala.inline
-      def setEventMetadata(value: js.Array[EventMetadata]): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
+      inline def setEventMetadata(value: js.Array[EventMetadata]): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventMetadataVarargs(value: EventMetadata*): Self = StObject.set(x, "eventMetadata", js.Array(value :_*))
+      inline def setEventMetadataVarargs(value: EventMetadata*): Self = StObject.set(x, "eventMetadata", js.Array(value :_*))
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceWorkerRegistrationId(value: RegistrationID): Self = StObject.set(x, "serviceWorkerRegistrationId", value.asInstanceOf[js.Any])
+      inline def setServiceWorkerRegistrationId(value: RegistrationID): Self = StObject.set(x, "serviceWorkerRegistrationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,17 +86,14 @@ object BackgroundService {
   }
   object BackgroundServiceEventReceivedEvent {
     
-    @scala.inline
-    def apply(backgroundServiceEvent: BackgroundServiceEvent): BackgroundServiceEventReceivedEvent = {
+    inline def apply(backgroundServiceEvent: BackgroundServiceEvent): BackgroundServiceEventReceivedEvent = {
       val __obj = js.Dynamic.literal(backgroundServiceEvent = backgroundServiceEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackgroundServiceEventReceivedEvent]
     }
     
-    @scala.inline
-    implicit class BackgroundServiceEventReceivedEventMutableBuilder[Self <: BackgroundServiceEventReceivedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundServiceEventReceivedEvent](x: Self) {
       
-      @scala.inline
-      def setBackgroundServiceEvent(value: BackgroundServiceEvent): Self = StObject.set(x, "backgroundServiceEvent", value.asInstanceOf[js.Any])
+      inline def setBackgroundServiceEvent(value: BackgroundServiceEvent): Self = StObject.set(x, "backgroundServiceEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,17 +103,14 @@ object BackgroundService {
   }
   object ClearEventsRequest {
     
-    @scala.inline
-    def apply(service: ServiceName): ClearEventsRequest = {
+    inline def apply(service: ServiceName): ClearEventsRequest = {
       val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClearEventsRequest]
     }
     
-    @scala.inline
-    implicit class ClearEventsRequestMutableBuilder[Self <: ClearEventsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ClearEventsRequest](x: Self) {
       
-      @scala.inline
-      def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,20 +122,16 @@ object BackgroundService {
   }
   object EventMetadata {
     
-    @scala.inline
-    def apply(key: String, value: String): EventMetadata = {
+    inline def apply(key: String, value: String): EventMetadata = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMetadata]
     }
     
-    @scala.inline
-    implicit class EventMetadataMutableBuilder[Self <: EventMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: EventMetadata](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,20 +143,16 @@ object BackgroundService {
   }
   object RecordingStateChangedEvent {
     
-    @scala.inline
-    def apply(isRecording: Boolean, service: ServiceName): RecordingStateChangedEvent = {
+    inline def apply(isRecording: Boolean, service: ServiceName): RecordingStateChangedEvent = {
       val __obj = js.Dynamic.literal(isRecording = isRecording.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordingStateChangedEvent]
     }
     
-    @scala.inline
-    implicit class RecordingStateChangedEventMutableBuilder[Self <: RecordingStateChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RecordingStateChangedEvent](x: Self) {
       
-      @scala.inline
-      def setIsRecording(value: Boolean): Self = StObject.set(x, "isRecording", value.asInstanceOf[js.Any])
+      inline def setIsRecording(value: Boolean): Self = StObject.set(x, "isRecording", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,23 +167,17 @@ object BackgroundService {
   trait ServiceName extends StObject
   object ServiceName {
     
-    @scala.inline
-    def backgroundFetch: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch = "backgroundFetch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch]
+    inline def backgroundFetch: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch = "backgroundFetch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch]
     
-    @scala.inline
-    def backgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync = "backgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync]
+    inline def backgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync = "backgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync]
     
-    @scala.inline
-    def notifications: typings.devtoolsProtocol.devtoolsProtocolStrings.notifications = "notifications".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.notifications]
+    inline def notifications: typings.devtoolsProtocol.devtoolsProtocolStrings.notifications = "notifications".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.notifications]
     
-    @scala.inline
-    def paymentHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler = "paymentHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler]
+    inline def paymentHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler = "paymentHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler]
     
-    @scala.inline
-    def periodicBackgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync = "periodicBackgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync]
+    inline def periodicBackgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync = "periodicBackgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync]
     
-    @scala.inline
-    def pushMessaging: typings.devtoolsProtocol.devtoolsProtocolStrings.pushMessaging = "pushMessaging".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pushMessaging]
+    inline def pushMessaging: typings.devtoolsProtocol.devtoolsProtocolStrings.pushMessaging = "pushMessaging".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pushMessaging]
   }
   
   trait SetRecordingRequest extends StObject {
@@ -218,20 +188,16 @@ object BackgroundService {
   }
   object SetRecordingRequest {
     
-    @scala.inline
-    def apply(service: ServiceName, shouldRecord: Boolean): SetRecordingRequest = {
+    inline def apply(service: ServiceName, shouldRecord: Boolean): SetRecordingRequest = {
       val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any], shouldRecord = shouldRecord.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetRecordingRequest]
     }
     
-    @scala.inline
-    implicit class SetRecordingRequestMutableBuilder[Self <: SetRecordingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetRecordingRequest](x: Self) {
       
-      @scala.inline
-      def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRecord(value: Boolean): Self = StObject.set(x, "shouldRecord", value.asInstanceOf[js.Any])
+      inline def setShouldRecord(value: Boolean): Self = StObject.set(x, "shouldRecord", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,17 +207,14 @@ object BackgroundService {
   }
   object StartObservingRequest {
     
-    @scala.inline
-    def apply(service: ServiceName): StartObservingRequest = {
+    inline def apply(service: ServiceName): StartObservingRequest = {
       val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartObservingRequest]
     }
     
-    @scala.inline
-    implicit class StartObservingRequestMutableBuilder[Self <: StartObservingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartObservingRequest](x: Self) {
       
-      @scala.inline
-      def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,17 +224,14 @@ object BackgroundService {
   }
   object StopObservingRequest {
     
-    @scala.inline
-    def apply(service: ServiceName): StopObservingRequest = {
+    inline def apply(service: ServiceName): StopObservingRequest = {
       val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[StopObservingRequest]
     }
     
-    @scala.inline
-    implicit class StopObservingRequestMutableBuilder[Self <: StopObservingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StopObservingRequest](x: Self) {
       
-      @scala.inline
-      def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
 }

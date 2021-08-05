@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReaderArgumentDefinition extends StObject
 object ReaderArgumentDefinition {
   
-  @scala.inline
-  def ReaderLocalArgument(defaultValue: js.Any, kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderLocalArgument = {
+  inline def ReaderLocalArgument(defaultValue: js.Any, kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderLocalArgument = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderLocalArgument]
   }
   
-  @scala.inline
-  def ReaderRootArgument(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderRootArgument = {
+  inline def ReaderRootArgument(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderRootArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderRootArgument]
   }

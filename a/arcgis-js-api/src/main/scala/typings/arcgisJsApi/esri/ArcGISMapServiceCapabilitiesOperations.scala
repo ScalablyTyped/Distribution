@@ -40,8 +40,7 @@ trait ArcGISMapServiceCapabilitiesOperations
 }
 object ArcGISMapServiceCapabilitiesOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -54,19 +53,14 @@ object ArcGISMapServiceCapabilitiesOperations {
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
   }
   
-  @scala.inline
-  implicit class ArcGISMapServiceCapabilitiesOperationsMutableBuilder[Self <: ArcGISMapServiceCapabilitiesOperations] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISMapServiceCapabilitiesOperations](x: Self) {
     
-    @scala.inline
-    def setSupportsExportMap(value: Boolean): Self = StObject.set(x, "supportsExportMap", value.asInstanceOf[js.Any])
+    inline def setSupportsExportMap(value: Boolean): Self = StObject.set(x, "supportsExportMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsExportTiles(value: Boolean): Self = StObject.set(x, "supportsExportTiles", value.asInstanceOf[js.Any])
+    inline def setSupportsExportTiles(value: Boolean): Self = StObject.set(x, "supportsExportTiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQuery(value: Boolean): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
+    inline def setSupportsQuery(value: Boolean): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTileMap(value: Boolean): Self = StObject.set(x, "supportsTileMap", value.asInstanceOf[js.Any])
+    inline def setSupportsTileMap(value: Boolean): Self = StObject.set(x, "supportsTileMap", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait XTerminateListener
 }
 object XTerminateListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyTermination: EventObject => Unit,
@@ -48,13 +47,10 @@ object XTerminateListener {
     __obj.asInstanceOf[XTerminateListener]
   }
   
-  @scala.inline
-  implicit class XTerminateListenerMutableBuilder[Self <: XTerminateListener] (val x: Self) extends AnyVal {
+  extension [Self <: XTerminateListener](x: Self) {
     
-    @scala.inline
-    def setNotifyTermination(value: EventObject => Unit): Self = StObject.set(x, "notifyTermination", js.Any.fromFunction1(value))
+    inline def setNotifyTermination(value: EventObject => Unit): Self = StObject.set(x, "notifyTermination", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryTermination(value: EventObject => Unit): Self = StObject.set(x, "queryTermination", js.Any.fromFunction1(value))
+    inline def setQueryTermination(value: EventObject => Unit): Self = StObject.set(x, "queryTermination", js.Any.fromFunction1(value))
   }
 }

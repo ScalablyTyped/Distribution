@@ -12,16 +12,13 @@ trait BillingData extends StObject {
 }
 object BillingData {
   
-  @scala.inline
-  def apply(Address: Address | AddressData | String): BillingData = {
+  inline def apply(Address: Address | AddressData | String): BillingData = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingData]
   }
   
-  @scala.inline
-  implicit class BillingDataMutableBuilder[Self <: BillingData] (val x: Self) extends AnyVal {
+  extension [Self <: BillingData](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address | AddressData | String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address | AddressData | String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
   }
 }

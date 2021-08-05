@@ -14,8 +14,6 @@ object declarationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
-  @scala.inline
-  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind, name: String): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
+  inline def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
+  inline def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind, name: String): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
 }

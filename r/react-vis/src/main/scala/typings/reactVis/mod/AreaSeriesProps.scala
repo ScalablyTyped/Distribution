@@ -12,19 +12,15 @@ trait AreaSeriesProps
 }
 object AreaSeriesProps {
   
-  @scala.inline
-  def apply(): AreaSeriesProps = {
+  inline def apply(): AreaSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaSeriesProps]
   }
   
-  @scala.inline
-  implicit class AreaSeriesPropsMutableBuilder[Self <: AreaSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: AreaSeriesProps](x: Self) {
     
-    @scala.inline
-    def setGetNull(value: AreaSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
+    inline def setGetNull(value: AreaSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
+    inline def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
   }
 }

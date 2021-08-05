@@ -12,8 +12,7 @@ trait KoliteAsyncCommand
 }
 object KoliteAsyncCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canExecute: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any,
     execute: /* repeated */ js.Any => js.Any,
     isExecuting: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
@@ -22,11 +21,9 @@ object KoliteAsyncCommand {
     __obj.asInstanceOf[KoliteAsyncCommand]
   }
   
-  @scala.inline
-  implicit class KoliteAsyncCommandMutableBuilder[Self <: KoliteAsyncCommand] (val x: Self) extends AnyVal {
+  extension [Self <: KoliteAsyncCommand](x: Self) {
     
-    @scala.inline
-    def setIsExecuting(
+    inline def setIsExecuting(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "isExecuting", value.asInstanceOf[js.Any])
   }

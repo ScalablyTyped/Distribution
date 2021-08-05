@@ -14,25 +14,19 @@ trait AgentOtherDeviceId extends StObject {
 }
 object AgentOtherDeviceId {
   
-  @scala.inline
-  def apply(): AgentOtherDeviceId = {
+  inline def apply(): AgentOtherDeviceId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgentOtherDeviceId]
   }
   
-  @scala.inline
-  implicit class AgentOtherDeviceIdMutableBuilder[Self <: AgentOtherDeviceId] (val x: Self) extends AnyVal {
+  extension [Self <: AgentOtherDeviceId](x: Self) {
     
-    @scala.inline
-    def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
+    inline def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
   }
 }

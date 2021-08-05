@@ -14,28 +14,21 @@ trait GooglePrivacyDlpV2ListInspectTemplatesResponse extends StObject {
 }
 object GooglePrivacyDlpV2ListInspectTemplatesResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ListInspectTemplatesResponse = {
+  inline def apply(): GooglePrivacyDlpV2ListInspectTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ListInspectTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ListInspectTemplatesResponseMutableBuilder[Self <: GooglePrivacyDlpV2ListInspectTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ListInspectTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setInspectTemplates(value: js.Array[GooglePrivacyDlpV2InspectTemplate]): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
+    inline def setInspectTemplates(value: js.Array[GooglePrivacyDlpV2InspectTemplate]): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplatesUndefined: Self = StObject.set(x, "inspectTemplates", js.undefined)
+    inline def setInspectTemplatesUndefined: Self = StObject.set(x, "inspectTemplates", js.undefined)
     
-    @scala.inline
-    def setInspectTemplatesVarargs(value: GooglePrivacyDlpV2InspectTemplate*): Self = StObject.set(x, "inspectTemplates", js.Array(value :_*))
+    inline def setInspectTemplatesVarargs(value: GooglePrivacyDlpV2InspectTemplate*): Self = StObject.set(x, "inspectTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

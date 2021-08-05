@@ -16,19 +16,15 @@ trait Printing3DTextureResource extends StObject {
 }
 object Printing3DTextureResource {
   
-  @scala.inline
-  def apply(name: String, textureData: IRandomAccessStreamWithContentType): Printing3DTextureResource = {
+  inline def apply(name: String, textureData: IRandomAccessStreamWithContentType): Printing3DTextureResource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], textureData = textureData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DTextureResource]
   }
   
-  @scala.inline
-  implicit class Printing3DTextureResourceMutableBuilder[Self <: Printing3DTextureResource] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DTextureResource](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureData(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "textureData", value.asInstanceOf[js.Any])
+    inline def setTextureData(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "textureData", value.asInstanceOf[js.Any])
   }
 }

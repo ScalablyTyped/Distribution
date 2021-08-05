@@ -28,8 +28,7 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: Double,
     l1: Double,
     l2: Double,
@@ -45,37 +44,26 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
+    inline def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL2(value: Double): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
+    inline def setL2(value: Double): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL3(value: Double): Self = StObject.set(x, "l3", value.asInstanceOf[js.Any])
+    inline def setL3(value: Double): Self = StObject.set(x, "l3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM1(value: Double): Self = StObject.set(x, "m1", value.asInstanceOf[js.Any])
+    inline def setM1(value: Double): Self = StObject.set(x, "m1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM2(value: Double): Self = StObject.set(x, "m2", value.asInstanceOf[js.Any])
+    inline def setM2(value: Double): Self = StObject.set(x, "m2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM3(value: Double): Self = StObject.set(x, "m3", value.asInstanceOf[js.Any])
+    inline def setM3(value: Double): Self = StObject.set(x, "m3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS1(value: Double): Self = StObject.set(x, "s1", value.asInstanceOf[js.Any])
+    inline def setS1(value: Double): Self = StObject.set(x, "s1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS2(value: Double): Self = StObject.set(x, "s2", value.asInstanceOf[js.Any])
+    inline def setS2(value: Double): Self = StObject.set(x, "s2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3(value: Double): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: Double): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
   }
 }

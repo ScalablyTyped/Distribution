@@ -13,16 +13,13 @@ trait GetCertificateRequest extends StObject {
 }
 object GetCertificateRequest {
   
-  @scala.inline
-  def apply(origin: String): GetCertificateRequest = {
+  inline def apply(origin: String): GetCertificateRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateRequest]
   }
   
-  @scala.inline
-  implicit class GetCertificateRequestMutableBuilder[Self <: GetCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

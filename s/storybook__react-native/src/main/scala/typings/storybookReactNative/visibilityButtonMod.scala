@@ -17,17 +17,14 @@ object visibilityButtonMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(onPress: () => Unit): Props = {
+    inline def apply(onPress: () => Unit): Props = {
       val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction0(onPress))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     }
   }
   

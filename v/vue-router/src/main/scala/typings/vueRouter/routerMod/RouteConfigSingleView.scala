@@ -20,20 +20,16 @@ trait RouteConfigSingleView
 }
 object RouteConfigSingleView {
   
-  @scala.inline
-  def apply(path: String): RouteConfigSingleView = {
+  inline def apply(path: String): RouteConfigSingleView = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfigSingleView]
   }
   
-  @scala.inline
-  implicit class RouteConfigSingleViewMutableBuilder[Self <: RouteConfigSingleView] (val x: Self) extends AnyVal {
+  extension [Self <: RouteConfigSingleView](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentFunction0(
+    inline def setComponentFunction0(
       value: () => typings.vue.anon.Component[
           DefaultData[scala.Nothing], 
           DefaultMethods[scala.Nothing], 
@@ -42,8 +38,7 @@ object RouteConfigSingleView {
         ]
     ): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentFunction2(
+    inline def setComponentFunction2(
       value: (/* resolve */ js.Function1[
           /* component */ typings.vue.optionsMod.Component[
             DefaultData[scala.Nothing], 
@@ -62,16 +57,12 @@ object RouteConfigSingleView {
         ]) | Unit
     ): Self = StObject.set(x, "component", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setProps(value: Boolean | js.Object | RoutePropsFunction): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Boolean | js.Object | RoutePropsFunction): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsFunction1(value: /* route */ Route => js.Object): Self = StObject.set(x, "props", js.Any.fromFunction1(value))
+    inline def setPropsFunction1(value: /* route */ Route => js.Object): Self = StObject.set(x, "props", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
   }
 }

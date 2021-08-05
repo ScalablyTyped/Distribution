@@ -75,128 +75,88 @@ object fx {
   }
   object IAnim {
     
-    @scala.inline
-    def apply(): IAnim = {
+    inline def apply(): IAnim = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAnim]
     }
     
-    @scala.inline
-    implicit class IAnimMutableBuilder[Self <: IAnim] (val x: Self) extends AnyVal {
+    extension [Self <: IAnim](x: Self) {
       
-      @scala.inline
-      def setAlternate(value: Boolean): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+      inline def setAlternate(value: Boolean): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
+      inline def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
       
-      @scala.inline
-      def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
+      inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
+      inline def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
+      inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
       
-      @scala.inline
-      def setEasing(value: java.lang.String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: java.lang.String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setIsAnimation(value: Boolean): Self = StObject.set(x, "isAnimation", value.asInstanceOf[js.Any])
+      inline def setIsAnimation(value: Boolean): Self = StObject.set(x, "isAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAnimationUndefined: Self = StObject.set(x, "isAnimation", js.undefined)
+      inline def setIsAnimationUndefined: Self = StObject.set(x, "isAnimation", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setKeyframes(value: js.Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: js.Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
+      inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
+      inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -245,92 +205,64 @@ object fx {
   }
   object IAnimator {
     
-    @scala.inline
-    def apply(): IAnimator = {
+    inline def apply(): IAnimator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAnimator]
     }
     
-    @scala.inline
-    implicit class IAnimatorMutableBuilder[Self <: IAnimator] (val x: Self) extends AnyVal {
+    extension [Self <: IAnimator](x: Self) {
       
-      @scala.inline
-      def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
+      inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
+      inline def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
+      inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
       
-      @scala.inline
-      def setEasing(value: java.lang.String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: java.lang.String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setIsAnimator(value: Boolean): Self = StObject.set(x, "isAnimator", value.asInstanceOf[js.Any])
+      inline def setIsAnimator(value: Boolean): Self = StObject.set(x, "isAnimator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAnimatorUndefined: Self = StObject.set(x, "isAnimator", js.undefined)
+      inline def setIsAnimatorUndefined: Self = StObject.set(x, "isAnimator", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setKeyframeStep(value: Double): Self = StObject.set(x, "keyframeStep", value.asInstanceOf[js.Any])
+      inline def setKeyframeStep(value: Double): Self = StObject.set(x, "keyframeStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframeStepUndefined: Self = StObject.set(x, "keyframeStep", js.undefined)
+      inline def setKeyframeStepUndefined: Self = StObject.set(x, "keyframeStep", js.undefined)
       
-      @scala.inline
-      def setKeyframes(value: js.Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: js.Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
+      inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
+      inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
       
-      @scala.inline
-      def setTarget(value: ITarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ITarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -343,8 +275,7 @@ object fx {
        with IBase
   object IManager {
     
-    @scala.inline
-    def apply(): IManager = {
+    inline def apply(): IManager = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IManager]
     }
@@ -369,20 +300,16 @@ object fx {
     }
     object ICompositeElement {
       
-      @scala.inline
-      def apply(): typings.extjs.Ext.fx.target.ICompositeElement = {
+      inline def apply(): typings.extjs.Ext.fx.target.ICompositeElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.extjs.Ext.fx.target.ICompositeElement]
       }
       
-      @scala.inline
-      implicit class ICompositeElementMutableBuilder[Self <: typings.extjs.Ext.fx.target.ICompositeElement] (val x: Self) extends AnyVal {
+      extension [Self <: typings.extjs.Ext.fx.target.ICompositeElement](x: Self) {
         
-        @scala.inline
-        def setIsComposite(value: Boolean): Self = StObject.set(x, "isComposite", value.asInstanceOf[js.Any])
+        inline def setIsComposite(value: Boolean): Self = StObject.set(x, "isComposite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsCompositeUndefined: Self = StObject.set(x, "isComposite", js.undefined)
+        inline def setIsCompositeUndefined: Self = StObject.set(x, "isComposite", js.undefined)
       }
     }
     

@@ -16,8 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(x: Typeofzdog): Typeofzdog = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(x.asInstanceOf[js.Any]).asInstanceOf[Typeofzdog]
+  inline def init(x: Typeofzdog): Typeofzdog = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(x.asInstanceOf[js.Any]).asInstanceOf[Typeofzdog]
   
   /* augmented module */
   object zdogAugmentingMod {
@@ -131,8 +130,7 @@ object mod {
       * Returns a {@link Promise} which resolves as soon as all the fonts currently added to the scene are loaded and ready for use.
       * @see {@link https://github.com/jaames/zfont#zdogtext Zfont API}
       */
-    @scala.inline
-    def waitForFonts(): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForFonts")().asInstanceOf[js.Promise[js.Array[Unit]]]
+    inline def waitForFonts(): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForFonts")().asInstanceOf[js.Promise[js.Array[Unit]]]
     
     /**
       * @see {@link Font}
@@ -145,17 +143,14 @@ object mod {
     }
     object FontOptions {
       
-      @scala.inline
-      def apply(src: String): FontOptions = {
+      inline def apply(src: String): FontOptions = {
         val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
         __obj.asInstanceOf[FontOptions]
       }
       
-      @scala.inline
-      implicit class FontOptionsMutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FontOptions](x: Self) {
         
-        @scala.inline
-        def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+        inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       }
     }
     
@@ -175,14 +170,11 @@ object mod {
     trait TextAlign extends StObject
     object TextAlign {
       
-      @scala.inline
-      def center: typings.zfont.zfontStrings.center = "center".asInstanceOf[typings.zfont.zfontStrings.center]
+      inline def center: typings.zfont.zfontStrings.center = "center".asInstanceOf[typings.zfont.zfontStrings.center]
       
-      @scala.inline
-      def left: typings.zfont.zfontStrings.left = "left".asInstanceOf[typings.zfont.zfontStrings.left]
+      inline def left: typings.zfont.zfontStrings.left = "left".asInstanceOf[typings.zfont.zfontStrings.left]
       
-      @scala.inline
-      def right: typings.zfont.zfontStrings.right = "right".asInstanceOf[typings.zfont.zfontStrings.right]
+      inline def right: typings.zfont.zfontStrings.right = "right".asInstanceOf[typings.zfont.zfontStrings.right]
     }
     
     /**
@@ -198,14 +190,11 @@ object mod {
     trait TextBaseline extends StObject
     object TextBaseline {
       
-      @scala.inline
-      def bottom: typings.zfont.zfontStrings.bottom = "bottom".asInstanceOf[typings.zfont.zfontStrings.bottom]
+      inline def bottom: typings.zfont.zfontStrings.bottom = "bottom".asInstanceOf[typings.zfont.zfontStrings.bottom]
       
-      @scala.inline
-      def middle: typings.zfont.zfontStrings.middle = "middle".asInstanceOf[typings.zfont.zfontStrings.middle]
+      inline def middle: typings.zfont.zfontStrings.middle = "middle".asInstanceOf[typings.zfont.zfontStrings.middle]
       
-      @scala.inline
-      def top: typings.zfont.zfontStrings.top = "top".asInstanceOf[typings.zfont.zfontStrings.top]
+      inline def top: typings.zfont.zfontStrings.top = "top".asInstanceOf[typings.zfont.zfontStrings.top]
     }
     
     /**
@@ -264,59 +253,42 @@ object mod {
     }
     object TextGroupOptions {
       
-      @scala.inline
-      def apply[T /* <: MultilineText */](font: Font): TextGroupOptions[T] = {
+      inline def apply[T /* <: MultilineText */](font: Font): TextGroupOptions[T] = {
         val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
         __obj.asInstanceOf[TextGroupOptions[T]]
       }
       
-      @scala.inline
-      implicit class TextGroupOptionsMutableBuilder[Self <: TextGroupOptions[?], T /* <: MultilineText */] (val x: Self & TextGroupOptions[T]) extends AnyVal {
+      extension [Self <: TextGroupOptions[?], T /* <: MultilineText */](x: Self & TextGroupOptions[T]) {
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+        inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+        inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
         
-        @scala.inline
-        def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+        inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
         
-        @scala.inline
-        def setStroke(value: Double | `false`): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+        inline def setStroke(value: Double | `false`): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+        inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
         
-        @scala.inline
-        def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+        inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+        inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
         
-        @scala.inline
-        def setTextBaseline(value: TextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+        inline def setTextBaseline(value: TextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
+        inline def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
         
-        @scala.inline
-        def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -358,41 +330,30 @@ object mod {
     }
     object TextOptions {
       
-      @scala.inline
-      def apply[T /* <: MultilineText */](font: Font): TextOptions[T] = {
+      inline def apply[T /* <: MultilineText */](font: Font): TextOptions[T] = {
         val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
         __obj.asInstanceOf[TextOptions[T]]
       }
       
-      @scala.inline
-      implicit class TextOptionsMutableBuilder[Self <: TextOptions[?], T /* <: MultilineText */] (val x: Self & TextOptions[T]) extends AnyVal {
+      extension [Self <: TextOptions[?], T /* <: MultilineText */](x: Self & TextOptions[T]) {
         
-        @scala.inline
-        def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+        inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
         
-        @scala.inline
-        def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+        inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+        inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
         
-        @scala.inline
-        def setTextBaseline(value: TextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+        inline def setTextBaseline(value: TextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
+        inline def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
         
-        @scala.inline
-        def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
   }

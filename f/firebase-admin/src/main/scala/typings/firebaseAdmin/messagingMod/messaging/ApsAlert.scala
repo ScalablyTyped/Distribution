@@ -30,88 +30,61 @@ trait ApsAlert extends StObject {
 }
 object ApsAlert {
   
-  @scala.inline
-  def apply(): ApsAlert = {
+  inline def apply(): ApsAlert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApsAlert]
   }
   
-  @scala.inline
-  implicit class ApsAlertMutableBuilder[Self <: ApsAlert] (val x: Self) extends AnyVal {
+  extension [Self <: ApsAlert](x: Self) {
     
-    @scala.inline
-    def setActionLocKey(value: String): Self = StObject.set(x, "actionLocKey", value.asInstanceOf[js.Any])
+    inline def setActionLocKey(value: String): Self = StObject.set(x, "actionLocKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionLocKeyUndefined: Self = StObject.set(x, "actionLocKey", js.undefined)
+    inline def setActionLocKeyUndefined: Self = StObject.set(x, "actionLocKey", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setLaunchImage(value: String): Self = StObject.set(x, "launchImage", value.asInstanceOf[js.Any])
+    inline def setLaunchImage(value: String): Self = StObject.set(x, "launchImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchImageUndefined: Self = StObject.set(x, "launchImage", js.undefined)
+    inline def setLaunchImageUndefined: Self = StObject.set(x, "launchImage", js.undefined)
     
-    @scala.inline
-    def setLocArgs(value: js.Array[String]): Self = StObject.set(x, "locArgs", value.asInstanceOf[js.Any])
+    inline def setLocArgs(value: js.Array[String]): Self = StObject.set(x, "locArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocArgsUndefined: Self = StObject.set(x, "locArgs", js.undefined)
+    inline def setLocArgsUndefined: Self = StObject.set(x, "locArgs", js.undefined)
     
-    @scala.inline
-    def setLocArgsVarargs(value: String*): Self = StObject.set(x, "locArgs", js.Array(value :_*))
+    inline def setLocArgsVarargs(value: String*): Self = StObject.set(x, "locArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setLocKey(value: String): Self = StObject.set(x, "locKey", value.asInstanceOf[js.Any])
+    inline def setLocKey(value: String): Self = StObject.set(x, "locKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocKeyUndefined: Self = StObject.set(x, "locKey", js.undefined)
+    inline def setLocKeyUndefined: Self = StObject.set(x, "locKey", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "subtitleLocArgs", value.asInstanceOf[js.Any])
+    inline def setSubtitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "subtitleLocArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleLocArgsUndefined: Self = StObject.set(x, "subtitleLocArgs", js.undefined)
+    inline def setSubtitleLocArgsUndefined: Self = StObject.set(x, "subtitleLocArgs", js.undefined)
     
-    @scala.inline
-    def setSubtitleLocArgsVarargs(value: String*): Self = StObject.set(x, "subtitleLocArgs", js.Array(value :_*))
+    inline def setSubtitleLocArgsVarargs(value: String*): Self = StObject.set(x, "subtitleLocArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setSubtitleLocKey(value: String): Self = StObject.set(x, "subtitleLocKey", value.asInstanceOf[js.Any])
+    inline def setSubtitleLocKey(value: String): Self = StObject.set(x, "subtitleLocKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleLocKeyUndefined: Self = StObject.set(x, "subtitleLocKey", js.undefined)
+    inline def setSubtitleLocKeyUndefined: Self = StObject.set(x, "subtitleLocKey", js.undefined)
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "titleLocArgs", value.asInstanceOf[js.Any])
+    inline def setTitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "titleLocArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLocArgsUndefined: Self = StObject.set(x, "titleLocArgs", js.undefined)
+    inline def setTitleLocArgsUndefined: Self = StObject.set(x, "titleLocArgs", js.undefined)
     
-    @scala.inline
-    def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value :_*))
+    inline def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setTitleLocKey(value: String): Self = StObject.set(x, "titleLocKey", value.asInstanceOf[js.Any])
+    inline def setTitleLocKey(value: String): Self = StObject.set(x, "titleLocKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLocKeyUndefined: Self = StObject.set(x, "titleLocKey", js.undefined)
+    inline def setTitleLocKeyUndefined: Self = StObject.set(x, "titleLocKey", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

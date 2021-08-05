@@ -20,37 +20,27 @@ trait RaidUserstate
 }
 object RaidUserstate {
   
-  @scala.inline
-  def apply(): RaidUserstate = {
+  inline def apply(): RaidUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RaidUserstate]
   }
   
-  @scala.inline
-  implicit class RaidUserstateMutableBuilder[Self <: RaidUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: RaidUserstate](x: Self) {
     
-    @scala.inline
-    def `setMessage-type`(value: raid): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
+    inline def `setMessage-type`(value: raid): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    inline def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-displayName`(value: String): Self = StObject.set(x, "msg-param-displayName", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-displayName`(value: String): Self = StObject.set(x, "msg-param-displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-displayNameUndefined`: Self = StObject.set(x, "msg-param-displayName", js.undefined)
+    inline def `setMsg-param-displayNameUndefined`: Self = StObject.set(x, "msg-param-displayName", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-login`(value: String): Self = StObject.set(x, "msg-param-login", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-login`(value: String): Self = StObject.set(x, "msg-param-login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-loginUndefined`: Self = StObject.set(x, "msg-param-login", js.undefined)
+    inline def `setMsg-param-loginUndefined`: Self = StObject.set(x, "msg-param-login", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-viewerCount`(value: String): Self = StObject.set(x, "msg-param-viewerCount", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-viewerCount`(value: String): Self = StObject.set(x, "msg-param-viewerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-viewerCountUndefined`: Self = StObject.set(x, "msg-param-viewerCount", js.undefined)
+    inline def `setMsg-param-viewerCountUndefined`: Self = StObject.set(x, "msg-param-viewerCount", js.undefined)
   }
 }

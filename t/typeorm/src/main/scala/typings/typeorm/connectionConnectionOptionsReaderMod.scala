@@ -21,17 +21,17 @@ object connectionConnectionOptionsReaderMod {
     /**
       * Gets configuration file name.
       */
-    val baseConfigName: String = js.native
+    /* protected */ val baseConfigName: String = js.native
     
     /**
       * Gets directory where configuration file should be located.
       */
-    val baseDirectory: String = js.native
+    /* protected */ val baseDirectory: String = js.native
     
     /**
       * Gets directory where configuration file should be located and configuration file name.
       */
-    val baseFilePath: String = js.native
+    /* protected */ val baseFilePath: String = js.native
     
     /**
       * Gets a connection with a given name read from ormconfig.
@@ -57,6 +57,6 @@ object connectionConnectionOptionsReaderMod {
       */
     /* protected */ def normalizeConnectionOptions(connectionOptions: ConnectionOptions): js.Array[ConnectionOptions] = js.native
     
-    var options: js.UndefOr[ConfigName] = js.native
+    /* protected */ var options: js.UndefOr[ConfigName] = js.native
   }
 }

@@ -107,68 +107,48 @@ object anon {
   }
   object ActiveDirectoryEndpointUrl {
     
-    @scala.inline
-    def apply(): ActiveDirectoryEndpointUrl = {
+    inline def apply(): ActiveDirectoryEndpointUrl = {
       val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.microsoftonline.com/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.windows.net/", activeDirectoryResourceId = "https://management.core.windows.net/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "azuredatalakeanalytics.net", azureDataLakeStoreFileSystemEndpointSuffix = "azuredatalakestore.net", batchResourceId = "https://batch.core.windows.net/", galleryEndpointUrl = "https://gallery.azure.com/", keyVaultDnsSuffix = ".vault.azure.net", managementEndpointUrl = "https://management.core.windows.net", name = "Azure", portalUrl = "https://portal.azure.com", publishingProfileUrl = "https://go.microsoft.com/fwlink/?LinkId=254432", resourceManagerEndpointUrl = "https://management.azure.com/", sqlManagementEndpointUrl = "https://management.core.windows.net:8443/", sqlServerHostnameSuffix = ".database.windows.net", storageEndpointSuffix = ".core.windows.net", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryEndpointUrl]
     }
     
-    @scala.inline
-    implicit class ActiveDirectoryEndpointUrlMutableBuilder[Self <: ActiveDirectoryEndpointUrl] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveDirectoryEndpointUrl](x: Self) {
       
-      @scala.inline
-      def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotwindowsDotnetSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotwindowsDotnetSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: azuredatalakeanalyticsDotnet): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: azuredatalakeanalyticsDotnet): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeStoreFileSystemEndpointSuffix(value: azuredatalakestoreDotnet): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeStoreFileSystemEndpointSuffix(value: azuredatalakestoreDotnet): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchResourceId(value: httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
+      inline def setBatchResourceId(value: httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotazureDotcomSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotazureDotcomSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVaultDnsSuffix(value: DotvaultDotazureDotnet): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
+      inline def setKeyVaultDnsSuffix(value: DotvaultDotazureDotnet): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Azure): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Azure): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalUrl(value: httpsColonSlashSlashportalDotazureDotcom): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+      inline def setPortalUrl(value: httpsColonSlashSlashportalDotazureDotcom): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishingProfileUrl(value: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
+      inline def setPublishingProfileUrl(value: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotazureDotcomSlash): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotazureDotcomSlash): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlServerHostnameSuffix(value: DotdatabaseDotwindowsDotnet): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
+      inline def setSqlServerHostnameSuffix(value: DotdatabaseDotwindowsDotnet): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageEndpointSuffix(value: DotcoreDotwindowsDotnet): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setStorageEndpointSuffix(value: DotcoreDotwindowsDotnet): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
+      inline def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,68 +193,48 @@ object anon {
   }
   object ActiveDirectoryGraphApiVersion {
     
-    @scala.inline
-    def apply(): ActiveDirectoryGraphApiVersion = {
+    inline def apply(): ActiveDirectoryGraphApiVersion = {
       val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.chinacloudapi.cn/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.chinacloudapi.cn/", activeDirectoryResourceId = "https://management.core.chinacloudapi.cn/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "N/A", azureDataLakeStoreFileSystemEndpointSuffix = "N/A", batchResourceId = "https://batch.chinacloudapi.cn/", galleryEndpointUrl = "https://gallery.chinacloudapi.cn/", keyVaultDnsSuffix = ".vault.azure.cn", managementEndpointUrl = "https://management.core.chinacloudapi.cn", name = "AzureChina", portalUrl = "https://portal.azure.cn", publishingProfileUrl = "https://go.microsoft.com/fwlink/?LinkID=301774", resourceManagerEndpointUrl = "https://management.chinacloudapi.cn", sqlManagementEndpointUrl = "https://management.core.chinacloudapi.cn:8443/", sqlServerHostnameSuffix = ".database.chinacloudapi.cn", storageEndpointSuffix = ".core.chinacloudapi.cn", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryGraphApiVersion]
     }
     
-    @scala.inline
-    implicit class ActiveDirectoryGraphApiVersionMutableBuilder[Self <: ActiveDirectoryGraphApiVersion] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveDirectoryGraphApiVersion](x: Self) {
       
-      @scala.inline
-      def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeStoreFileSystemEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeStoreFileSystemEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchResourceId(value: httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
+      inline def setBatchResourceId(value: httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVaultDnsSuffix(value: DotvaultDotazureDotcn): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
+      inline def setKeyVaultDnsSuffix(value: DotvaultDotazureDotcn): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: AzureChina): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: AzureChina): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalUrl(value: httpsColonSlashSlashportalDotazureDotcn): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+      inline def setPortalUrl(value: httpsColonSlashSlashportalDotazureDotcn): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishingProfileUrl(value: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
+      inline def setPublishingProfileUrl(value: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotchinacloudapiDotcn): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotchinacloudapiDotcn): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlServerHostnameSuffix(value: DotdatabaseDotchinacloudapiDotcn): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
+      inline def setSqlServerHostnameSuffix(value: DotdatabaseDotchinacloudapiDotcn): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageEndpointSuffix(value: DotcoreDotchinacloudapiDotcn): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setStorageEndpointSuffix(value: DotcoreDotchinacloudapiDotcn): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
+      inline def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -318,68 +278,48 @@ object anon {
   }
   object ActiveDirectoryGraphResourceId {
     
-    @scala.inline
-    def apply(): ActiveDirectoryGraphResourceId = {
+    inline def apply(): ActiveDirectoryGraphResourceId = {
       val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.microsoftonline.us/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.windows.net/", activeDirectoryResourceId = "https://management.core.usgovcloudapi.net/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "N/A", azureDataLakeStoreFileSystemEndpointSuffix = "N/A", batchResourceId = "https://batch.core.usgovcloudapi.net/", galleryEndpointUrl = "https://gallery.usgovcloudapi.net/", keyVaultDnsSuffix = ".vault.usgovcloudapi.net", managementEndpointUrl = "https://management.core.usgovcloudapi.net", name = "AzureUSGovernment", portalUrl = "https://portal.azure.us", publishingProfileUrl = "https://manage.windowsazure.us/publishsettings/index", resourceManagerEndpointUrl = "https://management.usgovcloudapi.net", sqlManagementEndpointUrl = "https://management.core.usgovcloudapi.net:8443/", sqlServerHostnameSuffix = ".database.usgovcloudapi.net", storageEndpointSuffix = ".core.usgovcloudapi.net", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryGraphResourceId]
     }
     
-    @scala.inline
-    implicit class ActiveDirectoryGraphResourceIdMutableBuilder[Self <: ActiveDirectoryGraphResourceId] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveDirectoryGraphResourceId](x: Self) {
       
-      @scala.inline
-      def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotwindowsDotnetSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotwindowsDotnetSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeStoreFileSystemEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeStoreFileSystemEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchResourceId(value: httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
+      inline def setBatchResourceId(value: httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVaultDnsSuffix(value: DotvaultDotusgovcloudapiDotnet): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
+      inline def setKeyVaultDnsSuffix(value: DotvaultDotusgovcloudapiDotnet): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: AzureUSGovernment): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: AzureUSGovernment): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalUrl(value: httpsColonSlashSlashportalDotazureDotus): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+      inline def setPortalUrl(value: httpsColonSlashSlashportalDotazureDotus): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishingProfileUrl(value: httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
+      inline def setPublishingProfileUrl(value: httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotusgovcloudapiDotnet): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotusgovcloudapiDotnet): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlServerHostnameSuffix(value: DotdatabaseDotusgovcloudapiDotnet): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
+      inline def setSqlServerHostnameSuffix(value: DotdatabaseDotusgovcloudapiDotnet): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageEndpointSuffix(value: DotcoreDotusgovcloudapiDotnet): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setStorageEndpointSuffix(value: DotcoreDotusgovcloudapiDotnet): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
+      inline def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -423,68 +363,48 @@ object anon {
   }
   object ActiveDirectoryResourceId {
     
-    @scala.inline
-    def apply(): ActiveDirectoryResourceId = {
+    inline def apply(): ActiveDirectoryResourceId = {
       val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.microsoftonline.de/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.cloudapi.de/", activeDirectoryResourceId = "https://management.core.cloudapi.de/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "N/A", azureDataLakeStoreFileSystemEndpointSuffix = "N/A", batchResourceId = "https://batch.microsoftazure.de/", galleryEndpointUrl = "https://gallery.cloudapi.de/", keyVaultDnsSuffix = ".vault.microsoftazure.de", managementEndpointUrl = "https://management.core.cloudapi.de", name = "AzureGermanCloud", portalUrl = "https://portal.microsoftazure.de/", publishingProfileUrl = "https://manage.microsoftazure.de/publishsettings/index", resourceManagerEndpointUrl = "https://management.microsoftazure.de", sqlManagementEndpointUrl = "https://management.core.cloudapi.de:8443/", sqlServerHostnameSuffix = ".database.cloudapi.de", storageEndpointSuffix = ".core.cloudapi.de", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryResourceId]
     }
     
-    @scala.inline
-    implicit class ActiveDirectoryResourceIdMutableBuilder[Self <: ActiveDirectoryResourceId] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveDirectoryResourceId](x: Self) {
       
-      @scala.inline
-      def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphApiVersion(value: `2013-04-05`): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotcloudapiDotdeSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryGraphResourceId(value: httpsColonSlashSlashgraphDotcloudapiDotdeSlash): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryResourceId(value: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAzureDataLakeStoreFileSystemEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setAzureDataLakeStoreFileSystemEndpointSuffix(value: NSlashA): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchResourceId(value: httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
+      inline def setBatchResourceId(value: httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotcloudapiDotdeSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setGalleryEndpointUrl(value: httpsColonSlashSlashgalleryDotcloudapiDotdeSlash): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVaultDnsSuffix(value: DotvaultDotmicrosoftazureDotde): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
+      inline def setKeyVaultDnsSuffix(value: DotvaultDotmicrosoftazureDotde): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: AzureGermanCloud): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: AzureGermanCloud): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalUrl(value: httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+      inline def setPortalUrl(value: httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishingProfileUrl(value: httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
+      inline def setPublishingProfileUrl(value: httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotmicrosoftazureDotde): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setResourceManagerEndpointUrl(value: httpsColonSlashSlashmanagementDotmicrosoftazureDotde): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
+      inline def setSqlManagementEndpointUrl(value: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlServerHostnameSuffix(value: DotdatabaseDotcloudapiDotde): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
+      inline def setSqlServerHostnameSuffix(value: DotdatabaseDotcloudapiDotde): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageEndpointSuffix(value: DotcoreDotcloudapiDotde): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
+      inline def setStorageEndpointSuffix(value: DotcoreDotcloudapiDotde): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
+      inline def setValidateAuthority(value: `true`): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -494,20 +414,16 @@ object anon {
   }
   object CustomHeaders {
     
-    @scala.inline
-    def apply(): CustomHeaders = {
+    inline def apply(): CustomHeaders = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomHeaders]
     }
     
-    @scala.inline
-    implicit class CustomHeadersMutableBuilder[Self <: CustomHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: CustomHeaders](x: Self) {
       
-      @scala.inline
-      def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     }
   }
 }

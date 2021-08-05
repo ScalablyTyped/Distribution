@@ -14,25 +14,19 @@ trait OrderShipmentScheduledDeliveryDetails extends StObject {
 }
 object OrderShipmentScheduledDeliveryDetails {
   
-  @scala.inline
-  def apply(): OrderShipmentScheduledDeliveryDetails = {
+  inline def apply(): OrderShipmentScheduledDeliveryDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderShipmentScheduledDeliveryDetails]
   }
   
-  @scala.inline
-  implicit class OrderShipmentScheduledDeliveryDetailsMutableBuilder[Self <: OrderShipmentScheduledDeliveryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OrderShipmentScheduledDeliveryDetails](x: Self) {
     
-    @scala.inline
-    def setCarrierPhoneNumber(value: String): Self = StObject.set(x, "carrierPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setCarrierPhoneNumber(value: String): Self = StObject.set(x, "carrierPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierPhoneNumberUndefined: Self = StObject.set(x, "carrierPhoneNumber", js.undefined)
+    inline def setCarrierPhoneNumberUndefined: Self = StObject.set(x, "carrierPhoneNumber", js.undefined)
     
-    @scala.inline
-    def setScheduledDate(value: String): Self = StObject.set(x, "scheduledDate", value.asInstanceOf[js.Any])
+    inline def setScheduledDate(value: String): Self = StObject.set(x, "scheduledDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledDateUndefined: Self = StObject.set(x, "scheduledDate", js.undefined)
+    inline def setScheduledDateUndefined: Self = StObject.set(x, "scheduledDate", js.undefined)
   }
 }

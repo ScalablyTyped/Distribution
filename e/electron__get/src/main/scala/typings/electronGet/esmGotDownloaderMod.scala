@@ -37,26 +37,20 @@ object esmGotDownloaderMod {
   }
   object GotDownloaderOptions {
     
-    @scala.inline
-    def apply(): GotDownloaderOptions = {
+    inline def apply(): GotDownloaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GotDownloaderOptions]
     }
     
-    @scala.inline
-    implicit class GotDownloaderOptionsMutableBuilder[Self <: GotDownloaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GotDownloaderOptions](x: Self) {
       
-      @scala.inline
-      def setGetProgressCallback(value: /* progress */ Progress => js.Promise[Unit]): Self = StObject.set(x, "getProgressCallback", js.Any.fromFunction1(value))
+      inline def setGetProgressCallback(value: /* progress */ Progress => js.Promise[Unit]): Self = StObject.set(x, "getProgressCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProgressCallbackUndefined: Self = StObject.set(x, "getProgressCallback", js.undefined)
+      inline def setGetProgressCallbackUndefined: Self = StObject.set(x, "getProgressCallback", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     }
   }
 }

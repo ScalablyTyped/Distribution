@@ -14,22 +14,17 @@ trait Milk extends StObject {
 }
 object Milk {
   
-  @scala.inline
-  def apply(icon: js.Tuple2[Double, Double], name: String, pic: String): Milk = {
+  inline def apply(icon: js.Tuple2[Double, Double], name: String, pic: String): Milk = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pic = pic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Milk]
   }
   
-  @scala.inline
-  implicit class MilkMutableBuilder[Self <: Milk] (val x: Self) extends AnyVal {
+  extension [Self <: Milk](x: Self) {
     
-    @scala.inline
-    def setIcon(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
   }
 }

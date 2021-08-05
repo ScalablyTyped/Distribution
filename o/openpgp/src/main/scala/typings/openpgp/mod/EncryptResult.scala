@@ -11,16 +11,13 @@ trait EncryptResult extends StObject {
 }
 object EncryptResult {
   
-  @scala.inline
-  def apply(sessionKey: AeadAlgorithm): EncryptResult = {
+  inline def apply(sessionKey: AeadAlgorithm): EncryptResult = {
     val __obj = js.Dynamic.literal(sessionKey = sessionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptResult]
   }
   
-  @scala.inline
-  implicit class EncryptResultMutableBuilder[Self <: EncryptResult] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptResult](x: Self) {
     
-    @scala.inline
-    def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+    inline def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
   }
 }

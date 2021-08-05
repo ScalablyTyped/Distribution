@@ -19,20 +19,16 @@ object typesEventsRequestMod {
   }
   object EventsRequest {
     
-    @scala.inline
-    def apply(): EventsRequest = {
+    inline def apply(): EventsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventsRequest]
     }
     
-    @scala.inline
-    implicit class EventsRequestMutableBuilder[Self <: EventsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EventsRequest](x: Self) {
       
-      @scala.inline
-      def setBatchItem(value: StringDictionary[EventsBatch] | (Iterable[js.Tuple2[String, EventsBatch]])): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
+      inline def setBatchItem(value: StringDictionary[EventsBatch] | (Iterable[js.Tuple2[String, EventsBatch]])): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchItemUndefined: Self = StObject.set(x, "BatchItem", js.undefined)
+      inline def setBatchItemUndefined: Self = StObject.set(x, "BatchItem", js.undefined)
     }
   }
   
@@ -48,20 +44,16 @@ object typesEventsRequestMod {
   }
   object UnmarshalledEventsRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledEventsRequest = {
+    inline def apply(): UnmarshalledEventsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEventsRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEventsRequestMutableBuilder[Self <: UnmarshalledEventsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEventsRequest](x: Self) {
       
-      @scala.inline
-      def setBatchItem(value: StringDictionary[UnmarshalledEventsBatch]): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
+      inline def setBatchItem(value: StringDictionary[UnmarshalledEventsBatch]): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchItemUndefined: Self = StObject.set(x, "BatchItem", js.undefined)
+      inline def setBatchItemUndefined: Self = StObject.set(x, "BatchItem", js.undefined)
     }
   }
 }

@@ -16,25 +16,19 @@ trait DryRun extends StObject {
 }
 object DryRun {
   
-  @scala.inline
-  def apply(ctx: js.Any, dryRun: js.Any, profile: js.Any, timeout: js.Any): DryRun = {
+  inline def apply(ctx: js.Any, dryRun: js.Any, profile: js.Any, timeout: js.Any): DryRun = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], dryRun = dryRun.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DryRun]
   }
   
-  @scala.inline
-  implicit class DryRunMutableBuilder[Self <: DryRun] (val x: Self) extends AnyVal {
+  extension [Self <: DryRun](x: Self) {
     
-    @scala.inline
-    def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: js.Any): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: js.Any): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait CursorPositionParameters extends StObject {
 }
 object CursorPositionParameters {
   
-  @scala.inline
-  def apply(candidateID: Double, contextID: Double): CursorPositionParameters = {
+  inline def apply(candidateID: Double, contextID: Double): CursorPositionParameters = {
     val __obj = js.Dynamic.literal(candidateID = candidateID.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorPositionParameters]
   }
   
-  @scala.inline
-  implicit class CursorPositionParametersMutableBuilder[Self <: CursorPositionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CursorPositionParameters](x: Self) {
     
-    @scala.inline
-    def setCandidateID(value: Double): Self = StObject.set(x, "candidateID", value.asInstanceOf[js.Any])
+    inline def setCandidateID(value: Double): Self = StObject.set(x, "candidateID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
   }
 }

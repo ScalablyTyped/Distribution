@@ -10,16 +10,13 @@ trait IAsymmetricKeyAlgorithmProviderStatics extends StObject {
 }
 object IAsymmetricKeyAlgorithmProviderStatics {
   
-  @scala.inline
-  def apply(openAlgorithm: String => AsymmetricKeyAlgorithmProvider): IAsymmetricKeyAlgorithmProviderStatics = {
+  inline def apply(openAlgorithm: String => AsymmetricKeyAlgorithmProvider): IAsymmetricKeyAlgorithmProviderStatics = {
     val __obj = js.Dynamic.literal(openAlgorithm = js.Any.fromFunction1(openAlgorithm))
     __obj.asInstanceOf[IAsymmetricKeyAlgorithmProviderStatics]
   }
   
-  @scala.inline
-  implicit class IAsymmetricKeyAlgorithmProviderStaticsMutableBuilder[Self <: IAsymmetricKeyAlgorithmProviderStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IAsymmetricKeyAlgorithmProviderStatics](x: Self) {
     
-    @scala.inline
-    def setOpenAlgorithm(value: String => AsymmetricKeyAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
+    inline def setOpenAlgorithm(value: String => AsymmetricKeyAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
   }
 }

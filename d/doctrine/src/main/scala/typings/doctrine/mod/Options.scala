@@ -51,58 +51,41 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
+    inline def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
+    inline def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
     
-    @scala.inline
-    def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+    inline def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
+    inline def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
     
-    @scala.inline
-    def setRecoverable(value: Boolean): Self = StObject.set(x, "recoverable", value.asInstanceOf[js.Any])
+    inline def setRecoverable(value: Boolean): Self = StObject.set(x, "recoverable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoverableUndefined: Self = StObject.set(x, "recoverable", js.undefined)
+    inline def setRecoverableUndefined: Self = StObject.set(x, "recoverable", js.undefined)
     
-    @scala.inline
-    def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
+    inline def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
+    inline def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
+    inline def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
+    inline def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
   }
 }

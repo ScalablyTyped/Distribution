@@ -20,8 +20,7 @@ trait AttachmentLoader extends StObject {
 }
 object AttachmentLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newBoundingBoxAttachment: (Skin, String) => BoundingBoxAttachment,
     newClippingAttachment: (Skin, String) => ClippingAttachment,
     newMeshAttachment: (Skin, String, String) => MeshAttachment,
@@ -33,25 +32,18 @@ object AttachmentLoader {
     __obj.asInstanceOf[AttachmentLoader]
   }
   
-  @scala.inline
-  implicit class AttachmentLoaderMutableBuilder[Self <: AttachmentLoader] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentLoader](x: Self) {
     
-    @scala.inline
-    def setNewBoundingBoxAttachment(value: (Skin, String) => BoundingBoxAttachment): Self = StObject.set(x, "newBoundingBoxAttachment", js.Any.fromFunction2(value))
+    inline def setNewBoundingBoxAttachment(value: (Skin, String) => BoundingBoxAttachment): Self = StObject.set(x, "newBoundingBoxAttachment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNewClippingAttachment(value: (Skin, String) => ClippingAttachment): Self = StObject.set(x, "newClippingAttachment", js.Any.fromFunction2(value))
+    inline def setNewClippingAttachment(value: (Skin, String) => ClippingAttachment): Self = StObject.set(x, "newClippingAttachment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNewMeshAttachment(value: (Skin, String, String) => MeshAttachment): Self = StObject.set(x, "newMeshAttachment", js.Any.fromFunction3(value))
+    inline def setNewMeshAttachment(value: (Skin, String, String) => MeshAttachment): Self = StObject.set(x, "newMeshAttachment", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNewPathAttachment(value: (Skin, String) => PathAttachment): Self = StObject.set(x, "newPathAttachment", js.Any.fromFunction2(value))
+    inline def setNewPathAttachment(value: (Skin, String) => PathAttachment): Self = StObject.set(x, "newPathAttachment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNewPointAttachment(value: (Skin, String) => PointAttachment): Self = StObject.set(x, "newPointAttachment", js.Any.fromFunction2(value))
+    inline def setNewPointAttachment(value: (Skin, String) => PointAttachment): Self = StObject.set(x, "newPointAttachment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNewRegionAttachment(value: (Skin, String, String) => RegionAttachment): Self = StObject.set(x, "newRegionAttachment", js.Any.fromFunction3(value))
+    inline def setNewRegionAttachment(value: (Skin, String, String) => RegionAttachment): Self = StObject.set(x, "newRegionAttachment", js.Any.fromFunction3(value))
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryValueType extends StObject
 object QueryValueType {
   
-  @scala.inline
-  def ElementRef: `0` = 0.asInstanceOf[`0`]
+  inline def ElementRef: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Provider: `4` = 4.asInstanceOf[`4`]
+  inline def Provider: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def RenderElement: `1` = 1.asInstanceOf[`1`]
+  inline def RenderElement: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TemplateRef: `2` = 2.asInstanceOf[`2`]
+  inline def TemplateRef: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ViewContainerRef: `3` = 3.asInstanceOf[`3`]
+  inline def ViewContainerRef: `3` = 3.asInstanceOf[`3`]
 }

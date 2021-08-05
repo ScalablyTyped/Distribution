@@ -18,22 +18,17 @@ trait AttachLoadBalancerToSubnetsInput extends StObject {
 }
 object AttachLoadBalancerToSubnetsInput {
   
-  @scala.inline
-  def apply(LoadBalancerName: AccessPointName, Subnets: Subnets): AttachLoadBalancerToSubnetsInput = {
+  inline def apply(LoadBalancerName: AccessPointName, Subnets: Subnets): AttachLoadBalancerToSubnetsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], Subnets = Subnets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachLoadBalancerToSubnetsInput]
   }
   
-  @scala.inline
-  implicit class AttachLoadBalancerToSubnetsInputMutableBuilder[Self <: AttachLoadBalancerToSubnetsInput] (val x: Self) extends AnyVal {
+  extension [Self <: AttachLoadBalancerToSubnetsInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
   }
 }

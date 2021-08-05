@@ -33,8 +33,7 @@ trait RuleGroupRuleStatementOrStatementStatementByteMatchStatement extends StObj
 }
 object RuleGroupRuleStatementOrStatementStatementByteMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     positionalConstraint: Input[String],
     searchString: Input[String],
     textTransformations: Input[
@@ -47,23 +46,17 @@ object RuleGroupRuleStatementOrStatementStatementByteMatchStatement {
     __obj.asInstanceOf[RuleGroupRuleStatementOrStatementStatementByteMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementByteMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatementByteMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementOrStatementStatementByteMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: Input[RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setPositionalConstraint(value: Input[String]): Self = StObject.set(x, "positionalConstraint", value.asInstanceOf[js.Any])
+    inline def setPositionalConstraint(value: Input[String]): Self = StObject.set(x, "positionalConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchString(value: Input[String]): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: Input[String]): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: Input[
           js.Array[
             Input[RuleGroupRuleStatementOrStatementStatementByteMatchStatementTextTransformation]
@@ -71,7 +64,6 @@ object RuleGroupRuleStatementOrStatementStatementByteMatchStatement {
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementOrStatementStatementByteMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementOrStatementStatementByteMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

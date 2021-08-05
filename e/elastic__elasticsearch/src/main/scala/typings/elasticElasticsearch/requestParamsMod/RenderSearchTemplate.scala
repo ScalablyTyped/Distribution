@@ -14,25 +14,19 @@ trait RenderSearchTemplate[T]
 }
 object RenderSearchTemplate {
   
-  @scala.inline
-  def apply[T](): RenderSearchTemplate[T] = {
+  inline def apply[T](): RenderSearchTemplate[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderSearchTemplate[T]]
   }
   
-  @scala.inline
-  implicit class RenderSearchTemplateMutableBuilder[Self <: RenderSearchTemplate[?], T] (val x: Self & RenderSearchTemplate[T]) extends AnyVal {
+  extension [Self <: RenderSearchTemplate[?], T](x: Self & RenderSearchTemplate[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

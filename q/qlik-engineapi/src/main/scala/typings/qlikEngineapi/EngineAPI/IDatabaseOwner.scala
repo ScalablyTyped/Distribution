@@ -16,16 +16,13 @@ trait IDatabaseOwner extends StObject {
 }
 object IDatabaseOwner {
   
-  @scala.inline
-  def apply(qName: String): IDatabaseOwner = {
+  inline def apply(qName: String): IDatabaseOwner = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatabaseOwner]
   }
   
-  @scala.inline
-  implicit class IDatabaseOwnerMutableBuilder[Self <: IDatabaseOwner] (val x: Self) extends AnyVal {
+  extension [Self <: IDatabaseOwner](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

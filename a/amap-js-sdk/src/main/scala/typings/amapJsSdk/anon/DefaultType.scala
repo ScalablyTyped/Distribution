@@ -14,31 +14,23 @@ trait DefaultType extends StObject {
 }
 object DefaultType {
   
-  @scala.inline
-  def apply(): DefaultType = {
+  inline def apply(): DefaultType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultType]
   }
   
-  @scala.inline
-  implicit class DefaultTypeMutableBuilder[Self <: DefaultType] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultType](x: Self) {
     
-    @scala.inline
-    def setDefaultType(value: Double): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+    inline def setDefaultType(value: Double): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
+    inline def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
-    @scala.inline
-    def setShowRoad(value: Boolean): Self = StObject.set(x, "showRoad", value.asInstanceOf[js.Any])
+    inline def setShowRoad(value: Boolean): Self = StObject.set(x, "showRoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRoadUndefined: Self = StObject.set(x, "showRoad", js.undefined)
+    inline def setShowRoadUndefined: Self = StObject.set(x, "showRoad", js.undefined)
     
-    @scala.inline
-    def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
+    inline def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
+    inline def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
   }
 }

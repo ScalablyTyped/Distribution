@@ -891,19 +891,14 @@ object nodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _createNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def _createNode(obj: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _createNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def _createNode(obj: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def create(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create(data: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(data: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @scala.inline
-  def addName(node: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addName")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addName(node: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addName")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("konva/types/Node", "ids")
   @js.native
@@ -913,11 +908,9 @@ object nodeMod {
   @js.native
   val names: js.Any = js.native
   
-  @scala.inline
-  def removeId(id: String, node: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeId")(id.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeId(id: String, node: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeId")(id.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeName(name: String, _id: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeName")(name.asInstanceOf[js.Any], _id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeName(name: String, _id: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeName")(name.asInstanceOf[js.Any], _id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AnimTo
     extends StObject
@@ -931,32 +924,24 @@ object nodeMod {
   }
   object AnimTo {
     
-    @scala.inline
-    def apply(): AnimTo = {
+    inline def apply(): AnimTo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimTo]
     }
     
-    @scala.inline
-    implicit class AnimToMutableBuilder[Self <: AnimTo] (val x: Self) extends AnyVal {
+    extension [Self <: AnimTo](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setOnFinish(value: js.Function): Self = StObject.set(x, "onFinish", value.asInstanceOf[js.Any])
+      inline def setOnFinish(value: js.Function): Self = StObject.set(x, "onFinish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
+      inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     }
   }
   
@@ -978,8 +963,7 @@ object nodeMod {
   }
   object KonvaEventObject {
     
-    @scala.inline
-    def apply[EventType](
+    inline def apply[EventType](
       cancelBubble: Boolean,
       currentTarget: Node[NodeConfig],
       evt: EventType,
@@ -989,26 +973,19 @@ object nodeMod {
       __obj.asInstanceOf[KonvaEventObject[EventType]]
     }
     
-    @scala.inline
-    implicit class KonvaEventObjectMutableBuilder[Self <: KonvaEventObject[?], EventType] (val x: Self & KonvaEventObject[EventType]) extends AnyVal {
+    extension [Self <: KonvaEventObject[?], EventType](x: Self & KonvaEventObject[EventType]) {
       
-      @scala.inline
-      def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+      inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChild(value: Node[NodeConfig]): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+      inline def setChild(value: Node[NodeConfig]): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
+      inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
-      @scala.inline
-      def setCurrentTarget(value: Node[NodeConfig]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Node[NodeConfig]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvt(value: EventType): Self = StObject.set(x, "evt", value.asInstanceOf[js.Any])
+      inline def setEvt(value: EventType): Self = StObject.set(x, "evt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Shape[ShapeConfig] | Stage): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Shape[ShapeConfig] | Stage): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1064,155 +1041,106 @@ object nodeMod {
   }
   object NodeConfig {
     
-    @scala.inline
-    def apply(): NodeConfig = {
+    inline def apply(): NodeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeConfig]
     }
     
-    @scala.inline
-    implicit class NodeConfigMutableBuilder[Self <: NodeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NodeConfig](x: Self) {
       
-      @scala.inline
-      def setDragBoundFunc(value: js.ThisFunction1[/* this */ Node[NodeConfig], /* pos */ Vector2d, Vector2d]): Self = StObject.set(x, "dragBoundFunc", value.asInstanceOf[js.Any])
+      inline def setDragBoundFunc(value: js.ThisFunction1[/* this */ Node[NodeConfig], /* pos */ Vector2d, Vector2d]): Self = StObject.set(x, "dragBoundFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragBoundFuncUndefined: Self = StObject.set(x, "dragBoundFunc", js.undefined)
+      inline def setDragBoundFuncUndefined: Self = StObject.set(x, "dragBoundFunc", js.undefined)
       
-      @scala.inline
-      def setDragDistance(value: Double): Self = StObject.set(x, "dragDistance", value.asInstanceOf[js.Any])
+      inline def setDragDistance(value: Double): Self = StObject.set(x, "dragDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragDistanceUndefined: Self = StObject.set(x, "dragDistance", js.undefined)
+      inline def setDragDistanceUndefined: Self = StObject.set(x, "dragDistance", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobalCompositeOperation(value: globalCompositeOperationType): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
+      inline def setGlobalCompositeOperation(value: globalCompositeOperationType): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalCompositeOperationUndefined: Self = StObject.set(x, "globalCompositeOperation", js.undefined)
+      inline def setGlobalCompositeOperationUndefined: Self = StObject.set(x, "globalCompositeOperation", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setListening(value: Boolean): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
+      inline def setListening(value: Boolean): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListeningUndefined: Self = StObject.set(x, "listening", js.undefined)
+      inline def setListeningUndefined: Self = StObject.set(x, "listening", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Vector2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Vector2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Number): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Number): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationDeg(value: Double): Self = StObject.set(x, "rotationDeg", value.asInstanceOf[js.Any])
+      inline def setRotationDeg(value: Double): Self = StObject.set(x, "rotationDeg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationDegUndefined: Self = StObject.set(x, "rotationDeg", js.undefined)
+      inline def setRotationDegUndefined: Self = StObject.set(x, "rotationDeg", js.undefined)
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setScale(value: Vector2d): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Vector2d): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+      inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+      inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -1222,8 +1150,7 @@ object nodeMod {
        with /* index */ StringDictionary[js.Any]
   object NodeEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -1349,85 +1276,58 @@ object nodeMod {
   trait globalCompositeOperationType extends StObject
   object globalCompositeOperationType {
     
-    @scala.inline
-    def _empty: typings.konva.konvaStrings._empty = "".asInstanceOf[typings.konva.konvaStrings._empty]
+    inline def _empty: typings.konva.konvaStrings._empty = "".asInstanceOf[typings.konva.konvaStrings._empty]
     
-    @scala.inline
-    def color: typings.konva.konvaStrings.color = "color".asInstanceOf[typings.konva.konvaStrings.color]
+    inline def color: typings.konva.konvaStrings.color = "color".asInstanceOf[typings.konva.konvaStrings.color]
     
-    @scala.inline
-    def `color-burn`: typings.konva.konvaStrings.`color-burn` = "color-burn".asInstanceOf[typings.konva.konvaStrings.`color-burn`]
+    inline def `color-burn`: typings.konva.konvaStrings.`color-burn` = "color-burn".asInstanceOf[typings.konva.konvaStrings.`color-burn`]
     
-    @scala.inline
-    def `color-dodge`: typings.konva.konvaStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.konva.konvaStrings.`color-dodge`]
+    inline def `color-dodge`: typings.konva.konvaStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.konva.konvaStrings.`color-dodge`]
     
-    @scala.inline
-    def copy: typings.konva.konvaStrings.copy = "copy".asInstanceOf[typings.konva.konvaStrings.copy]
+    inline def copy: typings.konva.konvaStrings.copy = "copy".asInstanceOf[typings.konva.konvaStrings.copy]
     
-    @scala.inline
-    def darken: typings.konva.konvaStrings.darken = "darken".asInstanceOf[typings.konva.konvaStrings.darken]
+    inline def darken: typings.konva.konvaStrings.darken = "darken".asInstanceOf[typings.konva.konvaStrings.darken]
     
-    @scala.inline
-    def `destination-atop`: typings.konva.konvaStrings.`destination-atop` = "destination-atop".asInstanceOf[typings.konva.konvaStrings.`destination-atop`]
+    inline def `destination-atop`: typings.konva.konvaStrings.`destination-atop` = "destination-atop".asInstanceOf[typings.konva.konvaStrings.`destination-atop`]
     
-    @scala.inline
-    def `destination-in`: typings.konva.konvaStrings.`destination-in` = "destination-in".asInstanceOf[typings.konva.konvaStrings.`destination-in`]
+    inline def `destination-in`: typings.konva.konvaStrings.`destination-in` = "destination-in".asInstanceOf[typings.konva.konvaStrings.`destination-in`]
     
-    @scala.inline
-    def `destination-out`: typings.konva.konvaStrings.`destination-out` = "destination-out".asInstanceOf[typings.konva.konvaStrings.`destination-out`]
+    inline def `destination-out`: typings.konva.konvaStrings.`destination-out` = "destination-out".asInstanceOf[typings.konva.konvaStrings.`destination-out`]
     
-    @scala.inline
-    def `destination-over`: typings.konva.konvaStrings.`destination-over` = "destination-over".asInstanceOf[typings.konva.konvaStrings.`destination-over`]
+    inline def `destination-over`: typings.konva.konvaStrings.`destination-over` = "destination-over".asInstanceOf[typings.konva.konvaStrings.`destination-over`]
     
-    @scala.inline
-    def difference: typings.konva.konvaStrings.difference = "difference".asInstanceOf[typings.konva.konvaStrings.difference]
+    inline def difference: typings.konva.konvaStrings.difference = "difference".asInstanceOf[typings.konva.konvaStrings.difference]
     
-    @scala.inline
-    def exclusion: typings.konva.konvaStrings.exclusion = "exclusion".asInstanceOf[typings.konva.konvaStrings.exclusion]
+    inline def exclusion: typings.konva.konvaStrings.exclusion = "exclusion".asInstanceOf[typings.konva.konvaStrings.exclusion]
     
-    @scala.inline
-    def `hard-light`: typings.konva.konvaStrings.`hard-light` = "hard-light".asInstanceOf[typings.konva.konvaStrings.`hard-light`]
+    inline def `hard-light`: typings.konva.konvaStrings.`hard-light` = "hard-light".asInstanceOf[typings.konva.konvaStrings.`hard-light`]
     
-    @scala.inline
-    def hue: typings.konva.konvaStrings.hue = "hue".asInstanceOf[typings.konva.konvaStrings.hue]
+    inline def hue: typings.konva.konvaStrings.hue = "hue".asInstanceOf[typings.konva.konvaStrings.hue]
     
-    @scala.inline
-    def lighten: typings.konva.konvaStrings.lighten = "lighten".asInstanceOf[typings.konva.konvaStrings.lighten]
+    inline def lighten: typings.konva.konvaStrings.lighten = "lighten".asInstanceOf[typings.konva.konvaStrings.lighten]
     
-    @scala.inline
-    def lighter: typings.konva.konvaStrings.lighter = "lighter".asInstanceOf[typings.konva.konvaStrings.lighter]
+    inline def lighter: typings.konva.konvaStrings.lighter = "lighter".asInstanceOf[typings.konva.konvaStrings.lighter]
     
-    @scala.inline
-    def luminosity: typings.konva.konvaStrings.luminosity = "luminosity".asInstanceOf[typings.konva.konvaStrings.luminosity]
+    inline def luminosity: typings.konva.konvaStrings.luminosity = "luminosity".asInstanceOf[typings.konva.konvaStrings.luminosity]
     
-    @scala.inline
-    def multiply: typings.konva.konvaStrings.multiply = "multiply".asInstanceOf[typings.konva.konvaStrings.multiply]
+    inline def multiply: typings.konva.konvaStrings.multiply = "multiply".asInstanceOf[typings.konva.konvaStrings.multiply]
     
-    @scala.inline
-    def overlay: typings.konva.konvaStrings.overlay = "overlay".asInstanceOf[typings.konva.konvaStrings.overlay]
+    inline def overlay: typings.konva.konvaStrings.overlay = "overlay".asInstanceOf[typings.konva.konvaStrings.overlay]
     
-    @scala.inline
-    def saturation: typings.konva.konvaStrings.saturation = "saturation".asInstanceOf[typings.konva.konvaStrings.saturation]
+    inline def saturation: typings.konva.konvaStrings.saturation = "saturation".asInstanceOf[typings.konva.konvaStrings.saturation]
     
-    @scala.inline
-    def screen: typings.konva.konvaStrings.screen = "screen".asInstanceOf[typings.konva.konvaStrings.screen]
+    inline def screen: typings.konva.konvaStrings.screen = "screen".asInstanceOf[typings.konva.konvaStrings.screen]
     
-    @scala.inline
-    def `soft-light`: typings.konva.konvaStrings.`soft-light` = "soft-light".asInstanceOf[typings.konva.konvaStrings.`soft-light`]
+    inline def `soft-light`: typings.konva.konvaStrings.`soft-light` = "soft-light".asInstanceOf[typings.konva.konvaStrings.`soft-light`]
     
-    @scala.inline
-    def `source-atop`: typings.konva.konvaStrings.`source-atop` = "source-atop".asInstanceOf[typings.konva.konvaStrings.`source-atop`]
+    inline def `source-atop`: typings.konva.konvaStrings.`source-atop` = "source-atop".asInstanceOf[typings.konva.konvaStrings.`source-atop`]
     
-    @scala.inline
-    def `source-in`: typings.konva.konvaStrings.`source-in` = "source-in".asInstanceOf[typings.konva.konvaStrings.`source-in`]
+    inline def `source-in`: typings.konva.konvaStrings.`source-in` = "source-in".asInstanceOf[typings.konva.konvaStrings.`source-in`]
     
-    @scala.inline
-    def `source-out`: typings.konva.konvaStrings.`source-out` = "source-out".asInstanceOf[typings.konva.konvaStrings.`source-out`]
+    inline def `source-out`: typings.konva.konvaStrings.`source-out` = "source-out".asInstanceOf[typings.konva.konvaStrings.`source-out`]
     
-    @scala.inline
-    def `source-over`: typings.konva.konvaStrings.`source-over` = "source-over".asInstanceOf[typings.konva.konvaStrings.`source-over`]
+    inline def `source-over`: typings.konva.konvaStrings.`source-over` = "source-over".asInstanceOf[typings.konva.konvaStrings.`source-over`]
     
-    @scala.inline
-    def xor: typings.konva.konvaStrings.xor = "xor".asInstanceOf[typings.konva.konvaStrings.xor]
+    inline def xor: typings.konva.konvaStrings.xor = "xor".asInstanceOf[typings.konva.konvaStrings.xor]
   }
 }

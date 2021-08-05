@@ -13,16 +13,13 @@ trait RestoreFromSnapshotRequest extends StObject {
 }
 object RestoreFromSnapshotRequest {
   
-  @scala.inline
-  def apply(SnapshotId: SnapshotId): RestoreFromSnapshotRequest = {
+  inline def apply(SnapshotId: SnapshotId): RestoreFromSnapshotRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreFromSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class RestoreFromSnapshotRequestMutableBuilder[Self <: RestoreFromSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreFromSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
   }
 }

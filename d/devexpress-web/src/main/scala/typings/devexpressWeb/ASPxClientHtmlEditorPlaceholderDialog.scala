@@ -18,8 +18,7 @@ trait ASPxClientHtmlEditorPlaceholderDialog
 }
 object ASPxClientHtmlEditorPlaceholderDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCancelButton: () => ASPxClientButton,
     GetFormLayout: () => ASPxClientFormLayout,
     GetOkButton: () => ASPxClientButton,
@@ -29,10 +28,8 @@ object ASPxClientHtmlEditorPlaceholderDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorPlaceholderDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorPlaceholderDialogMutableBuilder[Self <: ASPxClientHtmlEditorPlaceholderDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorPlaceholderDialog](x: Self) {
     
-    @scala.inline
-    def setGetPlaceholderNameListBox(value: () => ASPxClientListBox): Self = StObject.set(x, "GetPlaceholderNameListBox", js.Any.fromFunction0(value))
+    inline def setGetPlaceholderNameListBox(value: () => ASPxClientListBox): Self = StObject.set(x, "GetPlaceholderNameListBox", js.Any.fromFunction0(value))
   }
 }

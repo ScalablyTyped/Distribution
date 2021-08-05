@@ -23,31 +23,18 @@ object zipMod {
   @js.native
   val ZIP_STORED: /* 0 */ Double = js.native
   
-  @scala.inline
-  def isZipFile(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isZipFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isZipFile(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isZipFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def open(data: ClassBuffer): ClassZipFile = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any]).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(data: ClassBuffer, mod: String): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(data: ClassBuffer, mod: String, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(data: ClassBuffer, mod: Unit, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(path: String): ClassZipFile = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(path: String, mod: String): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(path: String, mod: String, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(path: String, mod: Unit, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(strm: ClassSeekableStream): ClassZipFile = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any]).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(strm: ClassSeekableStream, mod: String): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(strm: ClassSeekableStream, mod: String, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
-  @scala.inline
-  def open(strm: ClassSeekableStream, mod: Unit, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(data: ClassBuffer): ClassZipFile = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any]).asInstanceOf[ClassZipFile]
+  inline def open(data: ClassBuffer, mod: String): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(data: ClassBuffer, mod: String, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(data: ClassBuffer, mod: Unit, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(data.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(path: String): ClassZipFile = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[ClassZipFile]
+  inline def open(path: String, mod: String): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(path: String, mod: String, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(path: String, mod: Unit, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(strm: ClassSeekableStream): ClassZipFile = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any]).asInstanceOf[ClassZipFile]
+  inline def open(strm: ClassSeekableStream, mod: String): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(strm: ClassSeekableStream, mod: String, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
+  inline def open(strm: ClassSeekableStream, mod: Unit, compress_type: Double): ClassZipFile = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(strm.asInstanceOf[js.Any], mod.asInstanceOf[js.Any], compress_type.asInstanceOf[js.Any])).asInstanceOf[ClassZipFile]
 }

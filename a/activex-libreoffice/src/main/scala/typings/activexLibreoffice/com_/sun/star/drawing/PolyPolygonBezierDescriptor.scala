@@ -22,8 +22,7 @@ trait PolyPolygonBezierDescriptor extends StObject {
 }
 object PolyPolygonBezierDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Geometry: PolyPolygonBezierCoords,
     PolyPolygonBezier: PolyPolygonBezierCoords,
     PolygonKind: PolygonKind
@@ -32,16 +31,12 @@ object PolyPolygonBezierDescriptor {
     __obj.asInstanceOf[PolyPolygonBezierDescriptor]
   }
   
-  @scala.inline
-  implicit class PolyPolygonBezierDescriptorMutableBuilder[Self <: PolyPolygonBezierDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PolyPolygonBezierDescriptor](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: PolyPolygonBezierCoords): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: PolyPolygonBezierCoords): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyPolygonBezier(value: PolyPolygonBezierCoords): Self = StObject.set(x, "PolyPolygonBezier", value.asInstanceOf[js.Any])
+    inline def setPolyPolygonBezier(value: PolyPolygonBezierCoords): Self = StObject.set(x, "PolyPolygonBezier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonKind(value: PolygonKind): Self = StObject.set(x, "PolygonKind", value.asInstanceOf[js.Any])
+    inline def setPolygonKind(value: PolygonKind): Self = StObject.set(x, "PolygonKind", value.asInstanceOf[js.Any])
   }
 }

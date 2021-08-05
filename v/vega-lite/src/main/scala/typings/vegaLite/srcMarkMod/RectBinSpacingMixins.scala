@@ -17,19 +17,15 @@ trait RectBinSpacingMixins extends StObject {
 }
 object RectBinSpacingMixins {
   
-  @scala.inline
-  def apply(): RectBinSpacingMixins = {
+  inline def apply(): RectBinSpacingMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RectBinSpacingMixins]
   }
   
-  @scala.inline
-  implicit class RectBinSpacingMixinsMutableBuilder[Self <: RectBinSpacingMixins] (val x: Self) extends AnyVal {
+  extension [Self <: RectBinSpacingMixins](x: Self) {
     
-    @scala.inline
-    def setBinSpacing(value: Double): Self = StObject.set(x, "binSpacing", value.asInstanceOf[js.Any])
+    inline def setBinSpacing(value: Double): Self = StObject.set(x, "binSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinSpacingUndefined: Self = StObject.set(x, "binSpacing", js.undefined)
+    inline def setBinSpacingUndefined: Self = StObject.set(x, "binSpacing", js.undefined)
   }
 }

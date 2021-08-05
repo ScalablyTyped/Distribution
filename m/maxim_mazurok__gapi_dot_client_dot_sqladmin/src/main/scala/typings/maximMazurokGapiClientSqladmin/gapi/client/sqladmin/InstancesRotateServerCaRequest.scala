@@ -11,19 +11,15 @@ trait InstancesRotateServerCaRequest extends StObject {
 }
 object InstancesRotateServerCaRequest {
   
-  @scala.inline
-  def apply(): InstancesRotateServerCaRequest = {
+  inline def apply(): InstancesRotateServerCaRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesRotateServerCaRequest]
   }
   
-  @scala.inline
-  implicit class InstancesRotateServerCaRequestMutableBuilder[Self <: InstancesRotateServerCaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesRotateServerCaRequest](x: Self) {
     
-    @scala.inline
-    def setRotateServerCaContext(value: RotateServerCaContext): Self = StObject.set(x, "rotateServerCaContext", value.asInstanceOf[js.Any])
+    inline def setRotateServerCaContext(value: RotateServerCaContext): Self = StObject.set(x, "rotateServerCaContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateServerCaContextUndefined: Self = StObject.set(x, "rotateServerCaContext", js.undefined)
+    inline def setRotateServerCaContextUndefined: Self = StObject.set(x, "rotateServerCaContext", js.undefined)
   }
 }

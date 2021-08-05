@@ -15,10 +15,8 @@ object eksGetClusterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
-  @scala.inline
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
   
   trait GetClusterArgs extends StObject {
     
@@ -34,23 +32,18 @@ object eksGetClusterMod {
   }
   object GetClusterArgs {
     
-    @scala.inline
-    def apply(name: String): GetClusterArgs = {
+    inline def apply(name: String): GetClusterArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterArgs]
     }
     
-    @scala.inline
-    implicit class GetClusterArgsMutableBuilder[Self <: GetClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -125,8 +118,7 @@ object eksGetClusterMod {
   }
   object GetClusterResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       certificateAuthority: GetClusterCertificateAuthority,
       createdAt: String,
@@ -146,56 +138,39 @@ object eksGetClusterMod {
       __obj.asInstanceOf[GetClusterResult]
     }
     
-    @scala.inline
-    implicit class GetClusterResultMutableBuilder[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateAuthority(value: GetClusterCertificateAuthority): Self = StObject.set(x, "certificateAuthority", value.asInstanceOf[js.Any])
+      inline def setCertificateAuthority(value: GetClusterCertificateAuthority): Self = StObject.set(x, "certificateAuthority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledClusterLogTypes(value: js.Array[String]): Self = StObject.set(x, "enabledClusterLogTypes", value.asInstanceOf[js.Any])
+      inline def setEnabledClusterLogTypes(value: js.Array[String]): Self = StObject.set(x, "enabledClusterLogTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledClusterLogTypesVarargs(value: String*): Self = StObject.set(x, "enabledClusterLogTypes", js.Array(value :_*))
+      inline def setEnabledClusterLogTypesVarargs(value: String*): Self = StObject.set(x, "enabledClusterLogTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentities(value: js.Array[GetClusterIdentity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+      inline def setIdentities(value: js.Array[GetClusterIdentity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitiesVarargs(value: GetClusterIdentity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+      inline def setIdentitiesVarargs(value: GetClusterIdentity*): Self = StObject.set(x, "identities", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+      inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfig(value: GetClusterVpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: GetClusterVpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
     }
   }
 }

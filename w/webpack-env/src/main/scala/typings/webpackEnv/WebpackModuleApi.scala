@@ -74,68 +74,48 @@ object WebpackModuleApi {
   }
   object AcceptOptions {
     
-    @scala.inline
-    def apply(): AcceptOptions = {
+    inline def apply(): AcceptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceptOptions]
     }
     
-    @scala.inline
-    implicit class AcceptOptionsMutableBuilder[Self <: AcceptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AcceptOptions](x: Self) {
       
-      @scala.inline
-      def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
+      inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
+      inline def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
       
-      @scala.inline
-      def setIgnoreDeclined(value: Boolean): Self = StObject.set(x, "ignoreDeclined", value.asInstanceOf[js.Any])
+      inline def setIgnoreDeclined(value: Boolean): Self = StObject.set(x, "ignoreDeclined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDeclinedUndefined: Self = StObject.set(x, "ignoreDeclined", js.undefined)
+      inline def setIgnoreDeclinedUndefined: Self = StObject.set(x, "ignoreDeclined", js.undefined)
       
-      @scala.inline
-      def setIgnoreErrored(value: Boolean): Self = StObject.set(x, "ignoreErrored", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrored(value: Boolean): Self = StObject.set(x, "ignoreErrored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErroredUndefined: Self = StObject.set(x, "ignoreErrored", js.undefined)
+      inline def setIgnoreErroredUndefined: Self = StObject.set(x, "ignoreErrored", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnaccepted(value: Boolean): Self = StObject.set(x, "ignoreUnaccepted", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnaccepted(value: Boolean): Self = StObject.set(x, "ignoreUnaccepted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnacceptedUndefined: Self = StObject.set(x, "ignoreUnaccepted", js.undefined)
+      inline def setIgnoreUnacceptedUndefined: Self = StObject.set(x, "ignoreUnaccepted", js.undefined)
       
-      @scala.inline
-      def setOnAccepted(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onAccepted", js.Any.fromFunction1(value))
+      inline def setOnAccepted(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onAccepted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAcceptedUndefined: Self = StObject.set(x, "onAccepted", js.undefined)
+      inline def setOnAcceptedUndefined: Self = StObject.set(x, "onAccepted", js.undefined)
       
-      @scala.inline
-      def setOnDeclined(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onDeclined", js.Any.fromFunction1(value))
+      inline def setOnDeclined(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onDeclined", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeclinedUndefined: Self = StObject.set(x, "onDeclined", js.undefined)
+      inline def setOnDeclinedUndefined: Self = StObject.set(x, "onDeclined", js.undefined)
       
-      @scala.inline
-      def setOnDisposed(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onDisposed", js.Any.fromFunction1(value))
+      inline def setOnDisposed(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onDisposed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisposedUndefined: Self = StObject.set(x, "onDisposed", js.undefined)
+      inline def setOnDisposedUndefined: Self = StObject.set(x, "onDisposed", js.undefined)
       
-      @scala.inline
-      def setOnErrored(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onErrored", js.Any.fromFunction1(value))
+      inline def setOnErrored(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onErrored", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErroredUndefined: Self = StObject.set(x, "onErrored", js.undefined)
+      inline def setOnErroredUndefined: Self = StObject.set(x, "onErrored", js.undefined)
       
-      @scala.inline
-      def setOnUnaccepted(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onUnaccepted", js.Any.fromFunction1(value))
+      inline def setOnUnaccepted(value: /* info */ HotNotifierInfo => Unit): Self = StObject.set(x, "onUnaccepted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUnacceptedUndefined: Self = StObject.set(x, "onUnaccepted", js.undefined)
+      inline def setOnUnacceptedUndefined: Self = StObject.set(x, "onUnaccepted", js.undefined)
     }
   }
   
@@ -320,8 +300,7 @@ object WebpackModuleApi {
   }
   object HotNotifierInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       moduleId: Double,
       `type`: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`
     ): HotNotifierInfo = {
@@ -330,62 +309,43 @@ object WebpackModuleApi {
       __obj.asInstanceOf[HotNotifierInfo]
     }
     
-    @scala.inline
-    implicit class HotNotifierInfoMutableBuilder[Self <: HotNotifierInfo] (val x: Self) extends AnyVal {
+    extension [Self <: HotNotifierInfo](x: Self) {
       
-      @scala.inline
-      def setChain(value: js.Array[Double]): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
+      inline def setChain(value: js.Array[Double]): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
+      inline def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
       
-      @scala.inline
-      def setChainVarargs(value: Double*): Self = StObject.set(x, "chain", js.Array(value :_*))
+      inline def setChainVarargs(value: Double*): Self = StObject.set(x, "chain", js.Array(value :_*))
       
-      @scala.inline
-      def setDependencyId(value: Double): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
+      inline def setDependencyId(value: Double): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependencyIdUndefined: Self = StObject.set(x, "dependencyId", js.undefined)
+      inline def setDependencyIdUndefined: Self = StObject.set(x, "dependencyId", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setModuleId(value: Double): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+      inline def setModuleId(value: Double): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
+      inline def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
       
-      @scala.inline
-      def setOutdatedDependencies(value: NumberDictionary[js.Array[Double]]): Self = StObject.set(x, "outdatedDependencies", value.asInstanceOf[js.Any])
+      inline def setOutdatedDependencies(value: NumberDictionary[js.Array[Double]]): Self = StObject.set(x, "outdatedDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutdatedDependenciesUndefined: Self = StObject.set(x, "outdatedDependencies", js.undefined)
+      inline def setOutdatedDependenciesUndefined: Self = StObject.set(x, "outdatedDependencies", js.undefined)
       
-      @scala.inline
-      def setOutdatedModules(value: js.Array[Double]): Self = StObject.set(x, "outdatedModules", value.asInstanceOf[js.Any])
+      inline def setOutdatedModules(value: js.Array[Double]): Self = StObject.set(x, "outdatedModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutdatedModulesUndefined: Self = StObject.set(x, "outdatedModules", js.undefined)
+      inline def setOutdatedModulesUndefined: Self = StObject.set(x, "outdatedModules", js.undefined)
       
-      @scala.inline
-      def setOutdatedModulesVarargs(value: Double*): Self = StObject.set(x, "outdatedModules", js.Array(value :_*))
+      inline def setOutdatedModulesVarargs(value: Double*): Self = StObject.set(x, "outdatedModules", js.Array(value :_*))
       
-      @scala.inline
-      def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -409,47 +369,34 @@ object WebpackModuleApi {
   }
   object Module {
     
-    @scala.inline
-    def apply(children: js.Array[NodeModule], exports: js.Any, filename: String, id: String, loaded: Boolean): Module = {
+    inline def apply(children: js.Array[NodeModule], exports: js.Any, filename: String, id: String, loaded: Boolean): Module = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[NodeModule]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[NodeModule]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: NodeModule*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NodeModule*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHot(value: Hot): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
+      inline def setHot(value: Hot): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotUndefined: Self = StObject.set(x, "hot", js.undefined)
+      inline def setHotUndefined: Self = StObject.set(x, "hot", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: NodeModule): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: NodeModule): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     }
   }
   
@@ -464,20 +411,16 @@ object WebpackModuleApi {
   }
   object NodeProcess {
     
-    @scala.inline
-    def apply(): NodeProcess = {
+    inline def apply(): NodeProcess = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeProcess]
     }
     
-    @scala.inline
-    implicit class NodeProcessMutableBuilder[Self <: NodeProcess] (val x: Self) extends AnyVal {
+    extension [Self <: NodeProcess](x: Self) {
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   

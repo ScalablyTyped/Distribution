@@ -42,8 +42,7 @@ trait MergeRecoveryRequest
 }
 object MergeRecoveryRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     ErrorDetails: js.Any,
     ErrorLayerId: String,
@@ -54,16 +53,12 @@ object MergeRecoveryRequest {
     __obj.asInstanceOf[MergeRecoveryRequest]
   }
   
-  @scala.inline
-  implicit class MergeRecoveryRequestMutableBuilder[Self <: MergeRecoveryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MergeRecoveryRequest](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(value: js.Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: js.Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorLayerId(value: String): Self = StObject.set(x, "ErrorLayerId", value.asInstanceOf[js.Any])
+    inline def setErrorLayerId(value: String): Self = StObject.set(x, "ErrorLayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRemovalRequest(value: Boolean): Self = StObject.set(x, "IsRemovalRequest", value.asInstanceOf[js.Any])
+    inline def setIsRemovalRequest(value: Boolean): Self = StObject.set(x, "IsRemovalRequest", value.asInstanceOf[js.Any])
   }
 }

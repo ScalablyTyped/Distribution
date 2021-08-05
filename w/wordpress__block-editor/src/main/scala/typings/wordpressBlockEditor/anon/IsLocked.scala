@@ -12,22 +12,17 @@ trait IsLocked extends StObject {
 }
 object IsLocked {
   
-  @scala.inline
-  def apply(isLocked: Boolean): IsLocked = {
+  inline def apply(isLocked: Boolean): IsLocked = {
     val __obj = js.Dynamic.literal(isLocked = isLocked.asInstanceOf[js.Any], user = null)
     __obj.asInstanceOf[IsLocked]
   }
   
-  @scala.inline
-  implicit class IsLockedMutableBuilder[Self <: IsLocked] (val x: Self) extends AnyVal {
+  extension [Self <: IsLocked](x: Self) {
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNull: Self = StObject.set(x, "user", null)
+    inline def setUserNull: Self = StObject.set(x, "user", null)
   }
 }

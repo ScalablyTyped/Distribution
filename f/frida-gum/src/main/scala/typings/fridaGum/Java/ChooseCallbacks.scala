@@ -23,19 +23,15 @@ trait ChooseCallbacks extends StObject {
 }
 object ChooseCallbacks {
   
-  @scala.inline
-  def apply(onComplete: () => Unit, onMatch: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
+  inline def apply(onComplete: () => Unit, onMatch: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
     __obj.asInstanceOf[ChooseCallbacks]
   }
   
-  @scala.inline
-  implicit class ChooseCallbacksMutableBuilder[Self <: ChooseCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
+    inline def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
   }
 }

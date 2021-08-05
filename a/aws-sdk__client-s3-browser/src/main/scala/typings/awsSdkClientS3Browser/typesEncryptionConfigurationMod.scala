@@ -15,20 +15,16 @@ object typesEncryptionConfigurationMod {
   }
   object EncryptionConfiguration {
     
-    @scala.inline
-    def apply(): EncryptionConfiguration = {
+    inline def apply(): EncryptionConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncryptionConfiguration]
     }
     
-    @scala.inline
-    implicit class EncryptionConfigurationMutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionConfiguration](x: Self) {
       
-      @scala.inline
-      def setReplicaKmsKeyID(value: String): Self = StObject.set(x, "ReplicaKmsKeyID", value.asInstanceOf[js.Any])
+      inline def setReplicaKmsKeyID(value: String): Self = StObject.set(x, "ReplicaKmsKeyID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaKmsKeyIDUndefined: Self = StObject.set(x, "ReplicaKmsKeyID", js.undefined)
+      inline def setReplicaKmsKeyIDUndefined: Self = StObject.set(x, "ReplicaKmsKeyID", js.undefined)
     }
   }
   

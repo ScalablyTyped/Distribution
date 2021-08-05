@@ -18,25 +18,19 @@ trait SchemaLiveChatPollVotedDetails extends StObject {
 }
 object SchemaLiveChatPollVotedDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatPollVotedDetails = {
+  inline def apply(): SchemaLiveChatPollVotedDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatPollVotedDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatPollVotedDetailsMutableBuilder[Self <: SchemaLiveChatPollVotedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatPollVotedDetails](x: Self) {
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setPollId(value: String): Self = StObject.set(x, "pollId", value.asInstanceOf[js.Any])
+    inline def setPollId(value: String): Self = StObject.set(x, "pollId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollIdUndefined: Self = StObject.set(x, "pollId", js.undefined)
+    inline def setPollIdUndefined: Self = StObject.set(x, "pollId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GetProxySessionResponse extends StObject {
 }
 object GetProxySessionResponse {
   
-  @scala.inline
-  def apply(): GetProxySessionResponse = {
+  inline def apply(): GetProxySessionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProxySessionResponse]
   }
   
-  @scala.inline
-  implicit class GetProxySessionResponseMutableBuilder[Self <: GetProxySessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetProxySessionResponse](x: Self) {
     
-    @scala.inline
-    def setProxySession(value: ProxySession): Self = StObject.set(x, "ProxySession", value.asInstanceOf[js.Any])
+    inline def setProxySession(value: ProxySession): Self = StObject.set(x, "ProxySession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxySessionUndefined: Self = StObject.set(x, "ProxySession", js.undefined)
+    inline def setProxySessionUndefined: Self = StObject.set(x, "ProxySession", js.undefined)
   }
 }

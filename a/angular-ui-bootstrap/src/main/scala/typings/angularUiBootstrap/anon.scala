@@ -16,32 +16,24 @@ object anon {
   }
   object Date {
     
-    @scala.inline
-    def apply(): Date = {
+    inline def apply(): Date = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def `setDatetime-local`(value: String): Self = StObject.set(x, "datetime-local", value.asInstanceOf[js.Any])
+      inline def `setDatetime-local`(value: String): Self = StObject.set(x, "datetime-local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDatetime-localUndefined`: Self = StObject.set(x, "datetime-local", js.undefined)
+      inline def `setDatetime-localUndefined`: Self = StObject.set(x, "datetime-local", js.undefined)
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     }
   }
 }

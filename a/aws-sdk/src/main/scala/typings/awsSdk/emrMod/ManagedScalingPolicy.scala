@@ -13,19 +13,15 @@ trait ManagedScalingPolicy extends StObject {
 }
 object ManagedScalingPolicy {
   
-  @scala.inline
-  def apply(): ManagedScalingPolicy = {
+  inline def apply(): ManagedScalingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedScalingPolicy]
   }
   
-  @scala.inline
-  implicit class ManagedScalingPolicyMutableBuilder[Self <: ManagedScalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedScalingPolicy](x: Self) {
     
-    @scala.inline
-    def setComputeLimits(value: ComputeLimits): Self = StObject.set(x, "ComputeLimits", value.asInstanceOf[js.Any])
+    inline def setComputeLimits(value: ComputeLimits): Self = StObject.set(x, "ComputeLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeLimitsUndefined: Self = StObject.set(x, "ComputeLimits", js.undefined)
+    inline def setComputeLimitsUndefined: Self = StObject.set(x, "ComputeLimits", js.undefined)
   }
 }

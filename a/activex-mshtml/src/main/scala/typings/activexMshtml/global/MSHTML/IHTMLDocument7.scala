@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDocument7")
 @js.native
-class IHTMLDocument7 protected ()
+/* private */ class IHTMLDocument7 ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDocument7 {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLDocument7_typekey")
   var MSHTMLDotIHTMLDocument7_typekey: typings.activexMshtml.MSHTML.IHTMLDocument7 = js.native
   

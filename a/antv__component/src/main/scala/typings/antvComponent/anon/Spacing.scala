@@ -12,19 +12,15 @@ trait Spacing extends StObject {
 }
 object Spacing {
   
-  @scala.inline
-  def apply(spacing: Double, style: FillFontSize): Spacing = {
+  inline def apply(spacing: Double, style: FillFontSize): Spacing = {
     val __obj = js.Dynamic.literal(spacing = spacing.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spacing]
   }
   
-  @scala.inline
-  implicit class SpacingMutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
+  extension [Self <: Spacing](x: Self) {
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: FillFontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: FillFontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

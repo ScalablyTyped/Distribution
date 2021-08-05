@@ -10,19 +10,15 @@ trait Show extends StObject {
 }
 object Show {
   
-  @scala.inline
-  def apply(): Show = {
+  inline def apply(): Show = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Show]
   }
   
-  @scala.inline
-  implicit class ShowMutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
+  extension [Self <: Show](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

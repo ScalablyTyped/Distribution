@@ -14,20 +14,16 @@ trait SlotsObjectExpression
 }
 object SlotsObjectExpression {
   
-  @scala.inline
-  def apply(loc: SourceLocation, properties: js.Array[SlotsObjectProperty]): SlotsObjectExpression = {
+  inline def apply(loc: SourceLocation, properties: js.Array[SlotsObjectProperty]): SlotsObjectExpression = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(15)
     __obj.asInstanceOf[SlotsObjectExpression]
   }
   
-  @scala.inline
-  implicit class SlotsObjectExpressionMutableBuilder[Self <: SlotsObjectExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SlotsObjectExpression](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[SlotsObjectProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[SlotsObjectProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: SlotsObjectProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SlotsObjectProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

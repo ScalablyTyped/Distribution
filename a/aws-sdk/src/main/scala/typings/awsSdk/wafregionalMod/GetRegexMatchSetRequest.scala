@@ -13,16 +13,13 @@ trait GetRegexMatchSetRequest extends StObject {
 }
 object GetRegexMatchSetRequest {
   
-  @scala.inline
-  def apply(RegexMatchSetId: ResourceId): GetRegexMatchSetRequest = {
+  inline def apply(RegexMatchSetId: ResourceId): GetRegexMatchSetRequest = {
     val __obj = js.Dynamic.literal(RegexMatchSetId = RegexMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRegexMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class GetRegexMatchSetRequestMutableBuilder[Self <: GetRegexMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRegexMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
+    inline def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
   }
 }

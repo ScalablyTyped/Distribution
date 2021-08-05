@@ -51,49 +51,35 @@ trait ParamsResourceProjectsLocationsServicesDelete
 }
 object ParamsResourceProjectsLocationsServicesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsServicesDelete = {
+  inline def apply(): ParamsResourceProjectsLocationsServicesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsServicesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsServicesDeleteMutableBuilder[Self <: ParamsResourceProjectsLocationsServicesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsServicesDelete](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrphanDependents(value: Boolean): Self = StObject.set(x, "orphanDependents", value.asInstanceOf[js.Any])
+    inline def setOrphanDependents(value: Boolean): Self = StObject.set(x, "orphanDependents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrphanDependentsUndefined: Self = StObject.set(x, "orphanDependents", js.undefined)
+    inline def setOrphanDependentsUndefined: Self = StObject.set(x, "orphanDependents", js.undefined)
     
-    @scala.inline
-    def setPropagationPolicy(value: String): Self = StObject.set(x, "propagationPolicy", value.asInstanceOf[js.Any])
+    inline def setPropagationPolicy(value: String): Self = StObject.set(x, "propagationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropagationPolicyUndefined: Self = StObject.set(x, "propagationPolicy", js.undefined)
+    inline def setPropagationPolicyUndefined: Self = StObject.set(x, "propagationPolicy", js.undefined)
   }
 }

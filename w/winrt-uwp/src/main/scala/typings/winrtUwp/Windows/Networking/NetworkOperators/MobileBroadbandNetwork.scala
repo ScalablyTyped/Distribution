@@ -51,8 +51,7 @@ trait MobileBroadbandNetwork extends StObject {
 }
 object MobileBroadbandNetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessPointName: String,
     activationNetworkError: Double,
     getVoiceCallSupportAsync: () => IPromiseWithIAsyncOperation[Boolean],
@@ -70,43 +69,30 @@ object MobileBroadbandNetwork {
     __obj.asInstanceOf[MobileBroadbandNetwork]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandNetworkMutableBuilder[Self <: MobileBroadbandNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandNetwork](x: Self) {
     
-    @scala.inline
-    def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
+    inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationNetworkError(value: Double): Self = StObject.set(x, "activationNetworkError", value.asInstanceOf[js.Any])
+    inline def setActivationNetworkError(value: Double): Self = StObject.set(x, "activationNetworkError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetVoiceCallSupportAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "getVoiceCallSupportAsync", js.Any.fromFunction0(value))
+    inline def setGetVoiceCallSupportAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "getVoiceCallSupportAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
+    inline def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkRegistrationState(value: NetworkRegistrationState): Self = StObject.set(x, "networkRegistrationState", value.asInstanceOf[js.Any])
+    inline def setNetworkRegistrationState(value: NetworkRegistrationState): Self = StObject.set(x, "networkRegistrationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketAttachNetworkError(value: Double): Self = StObject.set(x, "packetAttachNetworkError", value.asInstanceOf[js.Any])
+    inline def setPacketAttachNetworkError(value: Double): Self = StObject.set(x, "packetAttachNetworkError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredDataClass(value: DataClasses): Self = StObject.set(x, "registeredDataClass", value.asInstanceOf[js.Any])
+    inline def setRegisteredDataClass(value: DataClasses): Self = StObject.set(x, "registeredDataClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredProviderId(value: String): Self = StObject.set(x, "registeredProviderId", value.asInstanceOf[js.Any])
+    inline def setRegisteredProviderId(value: String): Self = StObject.set(x, "registeredProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredProviderName(value: String): Self = StObject.set(x, "registeredProviderName", value.asInstanceOf[js.Any])
+    inline def setRegisteredProviderName(value: String): Self = StObject.set(x, "registeredProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationNetworkError(value: Double): Self = StObject.set(x, "registrationNetworkError", value.asInstanceOf[js.Any])
+    inline def setRegistrationNetworkError(value: Double): Self = StObject.set(x, "registrationNetworkError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationUiccApps(value: IVectorView[MobileBroadbandUiccApp]): Self = StObject.set(x, "registrationUiccApps", value.asInstanceOf[js.Any])
+    inline def setRegistrationUiccApps(value: IVectorView[MobileBroadbandUiccApp]): Self = StObject.set(x, "registrationUiccApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowConnectionUI(value: () => Unit): Self = StObject.set(x, "showConnectionUI", js.Any.fromFunction0(value))
+    inline def setShowConnectionUI(value: () => Unit): Self = StObject.set(x, "showConnectionUI", js.Any.fromFunction0(value))
   }
 }

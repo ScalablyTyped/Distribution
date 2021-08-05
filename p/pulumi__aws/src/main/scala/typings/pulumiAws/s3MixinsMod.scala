@@ -41,23 +41,18 @@ object s3MixinsMod {
   }
   object BucketEvent {
     
-    @scala.inline
-    def apply(): BucketEvent = {
+    inline def apply(): BucketEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketEvent]
     }
     
-    @scala.inline
-    implicit class BucketEventMutableBuilder[Self <: BucketEvent] (val x: Self) extends AnyVal {
+    extension [Self <: BucketEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[BucketRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[BucketRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
+      inline def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
       
-      @scala.inline
-      def setRecordsVarargs(value: BucketRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: BucketRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -74,20 +69,16 @@ object s3MixinsMod {
   }
   object BucketEventSubscriptionArgs {
     
-    @scala.inline
-    def apply(events: js.Array[String]): BucketEventSubscriptionArgs = {
+    inline def apply(events: js.Array[String]): BucketEventSubscriptionArgs = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketEventSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class BucketEventSubscriptionArgsMutableBuilder[Self <: BucketEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BucketEventSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     }
   }
   
@@ -113,8 +104,7 @@ object s3MixinsMod {
   }
   object BucketRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsRegion: String,
       eventName: String,
       eventSource: String,
@@ -129,35 +119,25 @@ object s3MixinsMod {
       __obj.asInstanceOf[BucketRecord]
     }
     
-    @scala.inline
-    implicit class BucketRecordMutableBuilder[Self <: BucketRecord] (val x: Self) extends AnyVal {
+    extension [Self <: BucketRecord](x: Self) {
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+      inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
+      inline def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestParameters(value: SourceIPAddress): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
+      inline def setRequestParameters(value: SourceIPAddress): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseElements(value: Xamzid2): Self = StObject.set(x, "responseElements", value.asInstanceOf[js.Any])
+      inline def setResponseElements(value: Xamzid2): Self = StObject.set(x, "responseElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3(value: typings.pulumiAws.anon.Bucket): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(value: typings.pulumiAws.anon.Bucket): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdentity(value: PrincipalIdString): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
+      inline def setUserIdentity(value: PrincipalIdString): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,26 +157,20 @@ object s3MixinsMod {
   }
   object CommonBucketSubscriptionArgs {
     
-    @scala.inline
-    def apply(): CommonBucketSubscriptionArgs = {
+    inline def apply(): CommonBucketSubscriptionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonBucketSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class CommonBucketSubscriptionArgsMutableBuilder[Self <: CommonBucketSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CommonBucketSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setFilterPrefix(value: String): Self = StObject.set(x, "filterPrefix", value.asInstanceOf[js.Any])
+      inline def setFilterPrefix(value: String): Self = StObject.set(x, "filterPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPrefixUndefined: Self = StObject.set(x, "filterPrefix", js.undefined)
+      inline def setFilterPrefixUndefined: Self = StObject.set(x, "filterPrefix", js.undefined)
       
-      @scala.inline
-      def setFilterSuffix(value: String): Self = StObject.set(x, "filterSuffix", value.asInstanceOf[js.Any])
+      inline def setFilterSuffix(value: String): Self = StObject.set(x, "filterSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterSuffixUndefined: Self = StObject.set(x, "filterSuffix", js.undefined)
+      inline def setFilterSuffixUndefined: Self = StObject.set(x, "filterSuffix", js.undefined)
     }
   }
   
@@ -208,20 +182,16 @@ object s3MixinsMod {
   }
   object ObjectCreatedSubscriptionArgs {
     
-    @scala.inline
-    def apply(): ObjectCreatedSubscriptionArgs = {
+    inline def apply(): ObjectCreatedSubscriptionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectCreatedSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class ObjectCreatedSubscriptionArgsMutableBuilder[Self <: ObjectCreatedSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectCreatedSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setEvent(value: Asterisk | Put | Post | Copy | CompleteMultipartUpload): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Asterisk | Put | Post | Copy | CompleteMultipartUpload): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     }
   }
   
@@ -233,20 +203,16 @@ object s3MixinsMod {
   }
   object ObjectRemovedSubscriptionArgs {
     
-    @scala.inline
-    def apply(): ObjectRemovedSubscriptionArgs = {
+    inline def apply(): ObjectRemovedSubscriptionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectRemovedSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class ObjectRemovedSubscriptionArgsMutableBuilder[Self <: ObjectRemovedSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectRemovedSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setEvent(value: Asterisk | Delete | DeleteMarkerCreated): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Asterisk | Delete | DeleteMarkerCreated): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     }
   }
   

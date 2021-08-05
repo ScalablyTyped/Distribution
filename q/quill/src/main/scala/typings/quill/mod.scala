@@ -33,27 +33,18 @@ object mod {
     val ^ : js.Any = js.native
     
     // static methods: debug, import, register, find
-    @scala.inline
-    def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
-    @scala.inline
-    def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
+    inline def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
+    inline def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
     
-    @scala.inline
-    def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("quill", "Quill")
@@ -217,27 +208,18 @@ object mod {
     val ^ : js.Any = js.native
     
     // static methods: debug, import, register, find
-    @scala.inline
-    def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
-    @scala.inline
-    def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
+    inline def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
+    inline def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
     
-    @scala.inline
-    def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("quill", "RangeStatic")
@@ -265,32 +247,24 @@ object mod {
   }
   object BoundsStatic {
     
-    @scala.inline
-    def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): BoundsStatic = {
+    inline def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): BoundsStatic = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundsStatic]
     }
     
-    @scala.inline
-    implicit class BoundsStaticMutableBuilder[Self <: BoundsStatic] (val x: Self) extends AnyVal {
+    extension [Self <: BoundsStatic](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,32 +306,24 @@ object mod {
   }
   object DeltaOperation {
     
-    @scala.inline
-    def apply(): DeltaOperation = {
+    inline def apply(): DeltaOperation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeltaOperation]
     }
     
-    @scala.inline
-    implicit class DeltaOperationMutableBuilder[Self <: DeltaOperation] (val x: Self) extends AnyVal {
+    extension [Self <: DeltaOperation](x: Self) {
       
-      @scala.inline
-      def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setInsert(value: js.Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: js.Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setRetain(value: Double): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
+      inline def setRetain(value: Double): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
+      inline def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
     }
   }
   
@@ -402,23 +368,18 @@ object mod {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String | Double): Key = {
+    inline def apply(key: String | Double): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortKey(value: Boolean): Self = StObject.set(x, "shortKey", value.asInstanceOf[js.Any])
+      inline def setShortKey(value: Boolean): Self = StObject.set(x, "shortKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortKeyUndefined: Self = StObject.set(x, "shortKey", js.undefined)
+      inline def setShortKeyUndefined: Self = StObject.set(x, "shortKey", js.undefined)
     }
   }
   
@@ -439,20 +400,16 @@ object mod {
   }
   object OptionalAttributes {
     
-    @scala.inline
-    def apply(): OptionalAttributes = {
+    inline def apply(): OptionalAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalAttributes]
     }
     
-    @scala.inline
-    implicit class OptionalAttributesMutableBuilder[Self <: OptionalAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalAttributes](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
@@ -478,71 +435,50 @@ object mod {
   }
   object QuillOptionsStatic {
     
-    @scala.inline
-    def apply(): QuillOptionsStatic = {
+    inline def apply(): QuillOptionsStatic = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QuillOptionsStatic]
     }
     
-    @scala.inline
-    implicit class QuillOptionsStaticMutableBuilder[Self <: QuillOptionsStatic] (val x: Self) extends AnyVal {
+    extension [Self <: QuillOptionsStatic](x: Self) {
       
-      @scala.inline
-      def setBounds(value: HTMLElement | String): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: HTMLElement | String): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setDebug(value: String | Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String | Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
       
-      @scala.inline
-      def setModules(value: StringMap): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: StringMap): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setScrollingContainer(value: HTMLElement | String): Self = StObject.set(x, "scrollingContainer", value.asInstanceOf[js.Any])
+      inline def setScrollingContainer(value: HTMLElement | String): Self = StObject.set(x, "scrollingContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingContainerUndefined: Self = StObject.set(x, "scrollingContainer", js.undefined)
+      inline def setScrollingContainerUndefined: Self = StObject.set(x, "scrollingContainer", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -556,14 +492,11 @@ object mod {
   trait Sources extends StObject
   object Sources {
     
-    @scala.inline
-    def api: typings.quill.quillStrings.api = "api".asInstanceOf[typings.quill.quillStrings.api]
+    inline def api: typings.quill.quillStrings.api = "api".asInstanceOf[typings.quill.quillStrings.api]
     
-    @scala.inline
-    def silent: typings.quill.quillStrings.silent = "silent".asInstanceOf[typings.quill.quillStrings.silent]
+    inline def silent: typings.quill.quillStrings.silent = "silent".asInstanceOf[typings.quill.quillStrings.silent]
     
-    @scala.inline
-    def user: typings.quill.quillStrings.user = "user".asInstanceOf[typings.quill.quillStrings.user]
+    inline def user: typings.quill.quillStrings.user = "user".asInstanceOf[typings.quill.quillStrings.user]
   }
   
   type StringMap = StringDictionary[js.Any]

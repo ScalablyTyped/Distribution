@@ -18,19 +18,15 @@ trait GetContactAttributesRequest extends StObject {
 }
 object GetContactAttributesRequest {
   
-  @scala.inline
-  def apply(InitialContactId: ContactId, InstanceId: InstanceId): GetContactAttributesRequest = {
+  inline def apply(InitialContactId: ContactId, InstanceId: InstanceId): GetContactAttributesRequest = {
     val __obj = js.Dynamic.literal(InitialContactId = InitialContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContactAttributesRequest]
   }
   
-  @scala.inline
-  implicit class GetContactAttributesRequestMutableBuilder[Self <: GetContactAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetContactAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
+    inline def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

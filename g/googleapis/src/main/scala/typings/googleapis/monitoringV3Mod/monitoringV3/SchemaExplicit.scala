@@ -21,22 +21,17 @@ trait SchemaExplicit extends StObject {
 }
 object SchemaExplicit {
   
-  @scala.inline
-  def apply(): SchemaExplicit = {
+  inline def apply(): SchemaExplicit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExplicit]
   }
   
-  @scala.inline
-  implicit class SchemaExplicitMutableBuilder[Self <: SchemaExplicit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExplicit](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
   }
 }

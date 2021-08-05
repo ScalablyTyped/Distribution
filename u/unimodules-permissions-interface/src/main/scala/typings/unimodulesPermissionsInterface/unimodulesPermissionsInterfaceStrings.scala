@@ -8,6 +8,5 @@ object unimodulesPermissionsInterfaceStrings {
   
   @js.native
   sealed trait never extends StObject
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
+  inline def never: never = "never".asInstanceOf[never]
 }

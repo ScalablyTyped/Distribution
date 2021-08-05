@@ -13,40 +13,22 @@ object timerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def timer(): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")().asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Double): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Double, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Double, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Double, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Double, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Double, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Unit, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Unit, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Unit, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Unit, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Unit, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Date): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Date, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Date, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Date, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Date, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
-  @scala.inline
-  def timer(dueTime: Date, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")().asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Double): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Double, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Double, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Double, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Double, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Double, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Unit, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Unit, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Unit, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Unit, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Unit, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Date): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Date, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Date, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Date, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Date, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  inline def timer(dueTime: Date, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
 }

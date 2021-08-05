@@ -16,20 +16,16 @@ trait GithubRepoAssociation
 }
 object GithubRepoAssociation {
   
-  @scala.inline
-  def apply(clone_url: String, full_name: String, html_url: String, id: Double): GithubRepoAssociation = {
+  inline def apply(clone_url: String, full_name: String, html_url: String, id: Double): GithubRepoAssociation = {
     val __obj = js.Dynamic.literal(clone_url = clone_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("github")
     __obj.asInstanceOf[GithubRepoAssociation]
   }
   
-  @scala.inline
-  implicit class GithubRepoAssociationMutableBuilder[Self <: GithubRepoAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: GithubRepoAssociation](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: github): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: github): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

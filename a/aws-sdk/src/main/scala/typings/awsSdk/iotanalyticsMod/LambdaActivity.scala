@@ -28,28 +28,21 @@ trait LambdaActivity extends StObject {
 }
 object LambdaActivity {
   
-  @scala.inline
-  def apply(batchSize: ActivityBatchSize, lambdaName: LambdaName, name: ActivityName): LambdaActivity = {
+  inline def apply(batchSize: ActivityBatchSize, lambdaName: LambdaName, name: ActivityName): LambdaActivity = {
     val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], lambdaName = lambdaName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaActivity]
   }
   
-  @scala.inline
-  implicit class LambdaActivityMutableBuilder[Self <: LambdaActivity] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaActivity](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: ActivityBatchSize): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: ActivityBatchSize): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaName(value: LambdaName): Self = StObject.set(x, "lambdaName", value.asInstanceOf[js.Any])
+    inline def setLambdaName(value: LambdaName): Self = StObject.set(x, "lambdaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

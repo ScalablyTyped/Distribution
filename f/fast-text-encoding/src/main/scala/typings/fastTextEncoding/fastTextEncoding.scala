@@ -43,17 +43,14 @@ object fastTextEncoding {
   }
   object TextDecoderOptions {
     
-    @scala.inline
-    def apply(fatal: Boolean): TextDecoderOptions = {
+    inline def apply(fatal: Boolean): TextDecoderOptions = {
       val __obj = js.Dynamic.literal(fatal = fatal.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextDecoderOptions]
     }
     
-    @scala.inline
-    implicit class TextDecoderOptionsMutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextDecoderOptions](x: Self) {
       
-      @scala.inline
-      def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,17 +80,14 @@ object fastTextEncoding {
   }
   object TextEncodingOptions {
     
-    @scala.inline
-    def apply(stream: Boolean): TextEncodingOptions = {
+    inline def apply(stream: Boolean): TextEncodingOptions = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextEncodingOptions]
     }
     
-    @scala.inline
-    implicit class TextEncodingOptionsMutableBuilder[Self <: TextEncodingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextEncodingOptions](x: Self) {
       
-      @scala.inline
-      def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

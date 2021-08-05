@@ -21,19 +21,15 @@ trait DataRecordOptions extends StObject {
 }
 object DataRecordOptions {
   
-  @scala.inline
-  def apply(activeRecordIndex: Double, recordCount: Double): DataRecordOptions = {
+  inline def apply(activeRecordIndex: Double, recordCount: Double): DataRecordOptions = {
     val __obj = js.Dynamic.literal(activeRecordIndex = activeRecordIndex.asInstanceOf[js.Any], recordCount = recordCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRecordOptions]
   }
   
-  @scala.inline
-  implicit class DataRecordOptionsMutableBuilder[Self <: DataRecordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DataRecordOptions](x: Self) {
     
-    @scala.inline
-    def setActiveRecordIndex(value: Double): Self = StObject.set(x, "activeRecordIndex", value.asInstanceOf[js.Any])
+    inline def setActiveRecordIndex(value: Double): Self = StObject.set(x, "activeRecordIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
+    inline def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
   }
 }

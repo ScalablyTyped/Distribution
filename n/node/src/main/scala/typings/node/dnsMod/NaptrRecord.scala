@@ -20,8 +20,7 @@ trait NaptrRecord extends StObject {
 }
 object NaptrRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: String,
     order: Double,
     preference: Double,
@@ -33,25 +32,18 @@ object NaptrRecord {
     __obj.asInstanceOf[NaptrRecord]
   }
   
-  @scala.inline
-  implicit class NaptrRecordMutableBuilder[Self <: NaptrRecord] (val x: Self) extends AnyVal {
+  extension [Self <: NaptrRecord](x: Self) {
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreference(value: Double): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: Double): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SchemaResourceAnnotation extends StObject {
 }
 object SchemaResourceAnnotation {
   
-  @scala.inline
-  def apply(): SchemaResourceAnnotation = {
+  inline def apply(): SchemaResourceAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaResourceAnnotationMutableBuilder[Self <: SchemaResourceAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceAnnotation](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

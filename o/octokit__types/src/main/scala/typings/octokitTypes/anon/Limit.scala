@@ -14,22 +14,17 @@ trait Limit extends StObject {
 }
 object Limit {
   
-  @scala.inline
-  def apply(limit: Double, remaining: Double, reset: Double): Limit = {
+  inline def apply(limit: Double, remaining: Double, reset: Double): Limit = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
   
-  @scala.inline
-  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+  extension [Self <: Limit](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+    inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: Double): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Double): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait AttachInternetGatewayRequest extends StObject {
 }
 object AttachInternetGatewayRequest {
   
-  @scala.inline
-  def apply(InternetGatewayId: InternetGatewayId, VpcId: VpcId): AttachInternetGatewayRequest = {
+  inline def apply(InternetGatewayId: InternetGatewayId, VpcId: VpcId): AttachInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(InternetGatewayId = InternetGatewayId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachInternetGatewayRequest]
   }
   
-  @scala.inline
-  implicit class AttachInternetGatewayRequestMutableBuilder[Self <: AttachInternetGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachInternetGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInternetGatewayId(value: InternetGatewayId): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
+    inline def setInternetGatewayId(value: InternetGatewayId): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

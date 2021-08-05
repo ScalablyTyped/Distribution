@@ -14,16 +14,13 @@ trait GatewayRouteSpecHttpRouteMatch extends StObject {
 }
 object GatewayRouteSpecHttpRouteMatch {
   
-  @scala.inline
-  def apply(prefix: Input[String]): GatewayRouteSpecHttpRouteMatch = {
+  inline def apply(prefix: Input[String]): GatewayRouteSpecHttpRouteMatch = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayRouteSpecHttpRouteMatch]
   }
   
-  @scala.inline
-  implicit class GatewayRouteSpecHttpRouteMatchMutableBuilder[Self <: GatewayRouteSpecHttpRouteMatch] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteSpecHttpRouteMatch](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

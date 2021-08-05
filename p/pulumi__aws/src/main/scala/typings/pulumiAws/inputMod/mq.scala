@@ -21,26 +21,20 @@ object mq {
   }
   object BrokerConfiguration {
     
-    @scala.inline
-    def apply(): BrokerConfiguration = {
+    inline def apply(): BrokerConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrokerConfiguration]
     }
     
-    @scala.inline
-    implicit class BrokerConfigurationMutableBuilder[Self <: BrokerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerConfiguration](x: Self) {
       
-      @scala.inline
-      def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setRevision(value: Input[Double]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Input[Double]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+      inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     }
   }
   
@@ -58,26 +52,20 @@ object mq {
   }
   object BrokerEncryptionOptions {
     
-    @scala.inline
-    def apply(): BrokerEncryptionOptions = {
+    inline def apply(): BrokerEncryptionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrokerEncryptionOptions]
     }
     
-    @scala.inline
-    implicit class BrokerEncryptionOptionsMutableBuilder[Self <: BrokerEncryptionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerEncryptionOptions](x: Self) {
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setUseAwsOwnedKey(value: Input[Boolean]): Self = StObject.set(x, "useAwsOwnedKey", value.asInstanceOf[js.Any])
+      inline def setUseAwsOwnedKey(value: Input[Boolean]): Self = StObject.set(x, "useAwsOwnedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAwsOwnedKeyUndefined: Self = StObject.set(x, "useAwsOwnedKey", js.undefined)
+      inline def setUseAwsOwnedKeyUndefined: Self = StObject.set(x, "useAwsOwnedKey", js.undefined)
     }
   }
   
@@ -91,35 +79,26 @@ object mq {
   }
   object BrokerInstance {
     
-    @scala.inline
-    def apply(): BrokerInstance = {
+    inline def apply(): BrokerInstance = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrokerInstance]
     }
     
-    @scala.inline
-    implicit class BrokerInstanceMutableBuilder[Self <: BrokerInstance] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerInstance](x: Self) {
       
-      @scala.inline
-      def setConsoleUrl(value: Input[String]): Self = StObject.set(x, "consoleUrl", value.asInstanceOf[js.Any])
+      inline def setConsoleUrl(value: Input[String]): Self = StObject.set(x, "consoleUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUrlUndefined: Self = StObject.set(x, "consoleUrl", js.undefined)
+      inline def setConsoleUrlUndefined: Self = StObject.set(x, "consoleUrl", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
+      inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
       
-      @scala.inline
-      def setEndpointsVarargs(value: Input[String]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Input[String]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     }
   }
   
@@ -137,26 +116,20 @@ object mq {
   }
   object BrokerLogs {
     
-    @scala.inline
-    def apply(): BrokerLogs = {
+    inline def apply(): BrokerLogs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrokerLogs]
     }
     
-    @scala.inline
-    implicit class BrokerLogsMutableBuilder[Self <: BrokerLogs] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerLogs](x: Self) {
       
-      @scala.inline
-      def setAudit(value: Input[Boolean]): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+      inline def setAudit(value: Input[Boolean]): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
+      inline def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
       
-      @scala.inline
-      def setGeneral(value: Input[Boolean]): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
+      inline def setGeneral(value: Input[Boolean]): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneralUndefined: Self = StObject.set(x, "general", js.undefined)
+      inline def setGeneralUndefined: Self = StObject.set(x, "general", js.undefined)
     }
   }
   
@@ -179,23 +152,18 @@ object mq {
   }
   object BrokerMaintenanceWindowStartTime {
     
-    @scala.inline
-    def apply(dayOfWeek: Input[String], timeOfDay: Input[String], timeZone: Input[String]): BrokerMaintenanceWindowStartTime = {
+    inline def apply(dayOfWeek: Input[String], timeOfDay: Input[String], timeZone: Input[String]): BrokerMaintenanceWindowStartTime = {
       val __obj = js.Dynamic.literal(dayOfWeek = dayOfWeek.asInstanceOf[js.Any], timeOfDay = timeOfDay.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokerMaintenanceWindowStartTime]
     }
     
-    @scala.inline
-    implicit class BrokerMaintenanceWindowStartTimeMutableBuilder[Self <: BrokerMaintenanceWindowStartTime] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerMaintenanceWindowStartTime](x: Self) {
       
-      @scala.inline
-      def setDayOfWeek(value: Input[String]): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+      inline def setDayOfWeek(value: Input[String]): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeOfDay(value: Input[String]): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
+      inline def setTimeOfDay(value: Input[String]): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZone(value: Input[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: Input[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,35 +191,26 @@ object mq {
   }
   object BrokerUser {
     
-    @scala.inline
-    def apply(password: Input[String], username: Input[String]): BrokerUser = {
+    inline def apply(password: Input[String], username: Input[String]): BrokerUser = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokerUser]
     }
     
-    @scala.inline
-    implicit class BrokerUserMutableBuilder[Self <: BrokerUser] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerUser](x: Self) {
       
-      @scala.inline
-      def setConsoleAccess(value: Input[Boolean]): Self = StObject.set(x, "consoleAccess", value.asInstanceOf[js.Any])
+      inline def setConsoleAccess(value: Input[Boolean]): Self = StObject.set(x, "consoleAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleAccessUndefined: Self = StObject.set(x, "consoleAccess", js.undefined)
+      inline def setConsoleAccessUndefined: Self = StObject.set(x, "consoleAccess", js.undefined)
       
-      @scala.inline
-      def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,26 +222,20 @@ object mq {
   }
   object GetBrokerLogs {
     
-    @scala.inline
-    def apply(): GetBrokerLogs = {
+    inline def apply(): GetBrokerLogs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetBrokerLogs]
     }
     
-    @scala.inline
-    implicit class GetBrokerLogsMutableBuilder[Self <: GetBrokerLogs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBrokerLogs](x: Self) {
       
-      @scala.inline
-      def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+      inline def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
+      inline def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
       
-      @scala.inline
-      def setGeneral(value: Boolean): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
+      inline def setGeneral(value: Boolean): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneralUndefined: Self = StObject.set(x, "general", js.undefined)
+      inline def setGeneralUndefined: Self = StObject.set(x, "general", js.undefined)
     }
   }
 }

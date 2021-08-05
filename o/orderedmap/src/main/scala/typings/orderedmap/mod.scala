@@ -17,12 +17,9 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def from[T](): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[OrderedMap[T]]
-  @scala.inline
-  def from[T](value: StringDictionary[T]): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[OrderedMap[T]]
-  @scala.inline
-  def from[T](value: OrderedMap[T]): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[OrderedMap[T]]
+  inline def from[T](): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[OrderedMap[T]]
+  inline def from[T](value: StringDictionary[T]): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[OrderedMap[T]]
+  inline def from[T](value: OrderedMap[T]): OrderedMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[OrderedMap[T]]
   
   @js.native
   trait OrderedMap[T] extends StObject {

@@ -54,8 +54,7 @@ trait CustomShape
 }
 object CustomShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CustomShapeData: String,
     CustomShapeEngine: String,
     CustomShapeGeometry: SafeArray[PropertyValue],
@@ -158,19 +157,14 @@ object CustomShape {
     __obj.asInstanceOf[CustomShape]
   }
   
-  @scala.inline
-  implicit class CustomShapeMutableBuilder[Self <: CustomShape] (val x: Self) extends AnyVal {
+  extension [Self <: CustomShape](x: Self) {
     
-    @scala.inline
-    def setCustomShapeData(value: String): Self = StObject.set(x, "CustomShapeData", value.asInstanceOf[js.Any])
+    inline def setCustomShapeData(value: String): Self = StObject.set(x, "CustomShapeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomShapeEngine(value: String): Self = StObject.set(x, "CustomShapeEngine", value.asInstanceOf[js.Any])
+    inline def setCustomShapeEngine(value: String): Self = StObject.set(x, "CustomShapeEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomShapeGeometry(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CustomShapeGeometry", value.asInstanceOf[js.Any])
+    inline def setCustomShapeGeometry(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CustomShapeGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomShapeReplacementURL(value: String): Self = StObject.set(x, "CustomShapeReplacementURL", value.asInstanceOf[js.Any])
+    inline def setCustomShapeReplacementURL(value: String): Self = StObject.set(x, "CustomShapeReplacementURL", value.asInstanceOf[js.Any])
   }
 }

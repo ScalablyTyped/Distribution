@@ -12,19 +12,15 @@ trait IReaddirOptions
 }
 object IReaddirOptions {
   
-  @scala.inline
-  def apply(): IReaddirOptions = {
+  inline def apply(): IReaddirOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReaddirOptions]
   }
   
-  @scala.inline
-  implicit class IReaddirOptionsMutableBuilder[Self <: IReaddirOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IReaddirOptions](x: Self) {
     
-    @scala.inline
-    def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
+    inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
+    inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
   }
 }

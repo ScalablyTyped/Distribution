@@ -55,56 +55,40 @@ object contacts {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetContacts(value: /* config */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getContacts", js.Any.fromFunction1(value))
+      inline def setGetContacts(value: /* config */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getContacts", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContactsUndefined: Self = StObject.set(x, "getContacts", js.undefined)
+      inline def setGetContactsUndefined: Self = StObject.set(x, "getContacts", js.undefined)
       
-      @scala.inline
-      def setGetIncludeImages(value: () => Boolean): Self = StObject.set(x, "getIncludeImages", js.Any.fromFunction0(value))
+      inline def setGetIncludeImages(value: () => Boolean): Self = StObject.set(x, "getIncludeImages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIncludeImagesUndefined: Self = StObject.set(x, "getIncludeImages", js.undefined)
+      inline def setGetIncludeImagesUndefined: Self = StObject.set(x, "getIncludeImages", js.undefined)
       
-      @scala.inline
-      def setGetLocalizedLabel(value: /* config */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getLocalizedLabel", js.Any.fromFunction1(value))
+      inline def setGetLocalizedLabel(value: /* config */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getLocalizedLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLocalizedLabelUndefined: Self = StObject.set(x, "getLocalizedLabel", js.undefined)
+      inline def setGetLocalizedLabelUndefined: Self = StObject.set(x, "getLocalizedLabel", js.undefined)
       
-      @scala.inline
-      def setGetThumbnail(value: /* config */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
+      inline def setGetThumbnail(value: /* config */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetThumbnailUndefined: Self = StObject.set(x, "getThumbnail", js.undefined)
+      inline def setGetThumbnailUndefined: Self = StObject.set(x, "getThumbnail", js.undefined)
       
-      @scala.inline
-      def setIncludeImages(value: Boolean): Self = StObject.set(x, "includeImages", value.asInstanceOf[js.Any])
+      inline def setIncludeImages(value: Boolean): Self = StObject.set(x, "includeImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeImagesUndefined: Self = StObject.set(x, "includeImages", js.undefined)
+      inline def setIncludeImagesUndefined: Self = StObject.set(x, "includeImages", js.undefined)
       
-      @scala.inline
-      def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      @scala.inline
-      def setSetIncludeImages(value: /* includeImages */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setIncludeImages", js.Any.fromFunction1(value))
+      inline def setSetIncludeImages(value: /* includeImages */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setIncludeImages", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIncludeImagesUndefined: Self = StObject.set(x, "setIncludeImages", js.undefined)
+      inline def setSetIncludeImagesUndefined: Self = StObject.set(x, "setIncludeImages", js.undefined)
     }
   }
   
@@ -113,8 +97,7 @@ object contacts {
        with IAbstract
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
@@ -125,8 +108,7 @@ object contacts {
        with IAbstract
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
@@ -137,8 +119,7 @@ object contacts {
        with IAbstract
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }

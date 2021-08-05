@@ -12,6 +12,5 @@ object deleteInstallationRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deleteInstallationRequest(appConfig: AppConfig, installationEntry: RegisteredInstallationEntry): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallationRequest")(appConfig.asInstanceOf[js.Any], installationEntry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def deleteInstallationRequest(appConfig: AppConfig, installationEntry: RegisteredInstallationEntry): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallationRequest")(appConfig.asInstanceOf[js.Any], installationEntry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

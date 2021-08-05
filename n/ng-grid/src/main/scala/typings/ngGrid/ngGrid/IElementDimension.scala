@@ -20,49 +20,35 @@ trait IElementDimension extends StObject {
 }
 object IElementDimension {
   
-  @scala.inline
-  def apply(): IElementDimension = {
+  inline def apply(): IElementDimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IElementDimension]
   }
   
-  @scala.inline
-  implicit class IElementDimensionMutableBuilder[Self <: IElementDimension] (val x: Self) extends AnyVal {
+  extension [Self <: IElementDimension](x: Self) {
     
-    @scala.inline
-    def setRootMaxH(value: Double): Self = StObject.set(x, "rootMaxH", value.asInstanceOf[js.Any])
+    inline def setRootMaxH(value: Double): Self = StObject.set(x, "rootMaxH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootMaxHUndefined: Self = StObject.set(x, "rootMaxH", js.undefined)
+    inline def setRootMaxHUndefined: Self = StObject.set(x, "rootMaxH", js.undefined)
     
-    @scala.inline
-    def setRootMaxW(value: Double): Self = StObject.set(x, "rootMaxW", value.asInstanceOf[js.Any])
+    inline def setRootMaxW(value: Double): Self = StObject.set(x, "rootMaxW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootMaxWUndefined: Self = StObject.set(x, "rootMaxW", js.undefined)
+    inline def setRootMaxWUndefined: Self = StObject.set(x, "rootMaxW", js.undefined)
     
-    @scala.inline
-    def setRowIndexCellW(value: Double): Self = StObject.set(x, "rowIndexCellW", value.asInstanceOf[js.Any])
+    inline def setRowIndexCellW(value: Double): Self = StObject.set(x, "rowIndexCellW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexCellWUndefined: Self = StObject.set(x, "rowIndexCellW", js.undefined)
+    inline def setRowIndexCellWUndefined: Self = StObject.set(x, "rowIndexCellW", js.undefined)
     
-    @scala.inline
-    def setRowSelectedCellW(value: Double): Self = StObject.set(x, "rowSelectedCellW", value.asInstanceOf[js.Any])
+    inline def setRowSelectedCellW(value: Double): Self = StObject.set(x, "rowSelectedCellW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectedCellWUndefined: Self = StObject.set(x, "rowSelectedCellW", js.undefined)
+    inline def setRowSelectedCellWUndefined: Self = StObject.set(x, "rowSelectedCellW", js.undefined)
     
-    @scala.inline
-    def setScrollH(value: Double): Self = StObject.set(x, "scrollH", value.asInstanceOf[js.Any])
+    inline def setScrollH(value: Double): Self = StObject.set(x, "scrollH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollHUndefined: Self = StObject.set(x, "scrollH", js.undefined)
+    inline def setScrollHUndefined: Self = StObject.set(x, "scrollH", js.undefined)
     
-    @scala.inline
-    def setScrollW(value: Double): Self = StObject.set(x, "scrollW", value.asInstanceOf[js.Any])
+    inline def setScrollW(value: Double): Self = StObject.set(x, "scrollW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollWUndefined: Self = StObject.set(x, "scrollW", js.undefined)
+    inline def setScrollWUndefined: Self = StObject.set(x, "scrollW", js.undefined)
   }
 }

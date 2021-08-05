@@ -12,19 +12,15 @@ trait Hour extends StObject {
 }
 object Hour {
   
-  @scala.inline
-  def apply(hour: String, minute: String): Hour = {
+  inline def apply(hour: String, minute: String): Hour = {
     val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hour]
   }
   
-  @scala.inline
-  implicit class HourMutableBuilder[Self <: Hour] (val x: Self) extends AnyVal {
+  extension [Self <: Hour](x: Self) {
     
-    @scala.inline
-    def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
   }
 }

@@ -47,58 +47,41 @@ trait ChooseVideoOptions extends StObject {
 }
 object ChooseVideoOptions {
   
-  @scala.inline
-  def apply(): ChooseVideoOptions = {
+  inline def apply(): ChooseVideoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseVideoOptions]
   }
   
-  @scala.inline
-  implicit class ChooseVideoOptionsMutableBuilder[Self <: ChooseVideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseVideoOptions](x: Self) {
     
-    @scala.inline
-    def setCamera(value: front | back): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: front | back): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
+    inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
+    inline def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: String | js.Array[js.Any]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String | js.Array[js.Any]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    @scala.inline
-    def setSourceTypeVarargs(value: js.Any*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: js.Any*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* result */ ChooseVideoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ ChooseVideoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

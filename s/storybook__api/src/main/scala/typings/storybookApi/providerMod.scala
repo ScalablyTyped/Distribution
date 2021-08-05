@@ -42,34 +42,26 @@ object providerMod {
   }
   object Provider {
     
-    @scala.inline
-    def apply(getConfig: () => themeThemeVarsundefinedre, handleAPI: API => Unit): Provider = {
+    inline def apply(getConfig: () => themeThemeVarsundefinedre, handleAPI: API => Unit): Provider = {
       val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction0(getConfig), handleAPI = js.Any.fromFunction1(handleAPI))
       __obj.asInstanceOf[Provider]
     }
     
-    @scala.inline
-    implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+    extension [Self <: Provider](x: Self) {
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setGetConfig(value: () => themeThemeVarsundefinedre): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
+      inline def setGetConfig(value: () => themeThemeVarsundefinedre): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleAPI(value: API => Unit): Self = StObject.set(x, "handleAPI", js.Any.fromFunction1(value))
+      inline def setHandleAPI(value: API => Unit): Self = StObject.set(x, "handleAPI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderPreview(
+      inline def setRenderPreview(
         value: (/* storyId */ String, /* viewMode */ ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
       ): Self = StObject.set(x, "renderPreview", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setRenderPreviewUndefined: Self = StObject.set(x, "renderPreview", js.undefined)
+      inline def setRenderPreviewUndefined: Self = StObject.set(x, "renderPreview", js.undefined)
     }
   }
   
@@ -79,22 +71,18 @@ object providerMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(): SubAPI = {
+    inline def apply(): SubAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setRenderPreview(
+      inline def setRenderPreview(
         value: (/* storyId */ String, /* viewMode */ ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
       ): Self = StObject.set(x, "renderPreview", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setRenderPreviewUndefined: Self = StObject.set(x, "renderPreview", js.undefined)
+      inline def setRenderPreviewUndefined: Self = StObject.set(x, "renderPreview", js.undefined)
     }
   }
 }

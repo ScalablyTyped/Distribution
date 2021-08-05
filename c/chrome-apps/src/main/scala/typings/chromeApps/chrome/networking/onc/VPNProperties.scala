@@ -22,31 +22,23 @@ trait VPNProperties[M /* <: ManagedObject */, B, S] extends StObject {
 }
 object VPNProperties {
   
-  @scala.inline
-  def apply[M /* <: ManagedObject */, B, S](): VPNProperties[M, B, S] = {
+  inline def apply[M /* <: ManagedObject */, B, S](): VPNProperties[M, B, S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VPNProperties[M, B, S]]
   }
   
-  @scala.inline
-  implicit class VPNPropertiesMutableBuilder[Self <: VPNProperties[?, ?, ?], M /* <: ManagedObject */, B, S] (val x: Self & (VPNProperties[M, B, S])) extends AnyVal {
+  extension [Self <: VPNProperties[?, ?, ?], M /* <: ManagedObject */, B, S](x: Self & (VPNProperties[M, B, S])) {
     
-    @scala.inline
-    def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
+    inline def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
+    inline def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
-    @scala.inline
-    def setHost(value: S): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: S): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
-    @scala.inline
-    def setType(value: S): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: S): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -15,25 +15,19 @@ trait Instant
 }
 object Instant {
   
-  @scala.inline
-  def apply(): Instant = {
+  inline def apply(): Instant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instant]
   }
   
-  @scala.inline
-  implicit class InstantMutableBuilder[Self <: Instant] (val x: Self) extends AnyVal {
+  extension [Self <: Instant](x: Self) {
     
-    @scala.inline
-    def setEpochSecond(value: Double): Self = StObject.set(x, "epochSecond", value.asInstanceOf[js.Any])
+    inline def setEpochSecond(value: Double): Self = StObject.set(x, "epochSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpochSecondUndefined: Self = StObject.set(x, "epochSecond", js.undefined)
+    inline def setEpochSecondUndefined: Self = StObject.set(x, "epochSecond", js.undefined)
     
-    @scala.inline
-    def setNano(value: Double): Self = StObject.set(x, "nano", value.asInstanceOf[js.Any])
+    inline def setNano(value: Double): Self = StObject.set(x, "nano", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanoUndefined: Self = StObject.set(x, "nano", js.undefined)
+    inline def setNanoUndefined: Self = StObject.set(x, "nano", js.undefined)
   }
 }

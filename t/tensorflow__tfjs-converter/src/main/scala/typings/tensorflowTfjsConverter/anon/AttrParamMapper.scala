@@ -20,8 +20,7 @@ trait AttrParamMapper extends StObject {
 }
 object AttrParamMapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttrParamMapper: Required,
     Category: Enum,
     InputParamMapper: Properties,
@@ -33,25 +32,18 @@ object AttrParamMapper {
     __obj.asInstanceOf[AttrParamMapper]
   }
   
-  @scala.inline
-  implicit class AttrParamMapperMutableBuilder[Self <: AttrParamMapper] (val x: Self) extends AnyVal {
+  extension [Self <: AttrParamMapper](x: Self) {
     
-    @scala.inline
-    def setAttrParamMapper(value: Required): Self = StObject.set(x, "AttrParamMapper", value.asInstanceOf[js.Any])
+    inline def setAttrParamMapper(value: Required): Self = StObject.set(x, "AttrParamMapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: Enum): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Enum): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputParamMapper(value: Properties): Self = StObject.set(x, "InputParamMapper", value.asInstanceOf[js.Any])
+    inline def setInputParamMapper(value: Properties): Self = StObject.set(x, "InputParamMapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpExecutor(value: AdditionalPropertiesType): Self = StObject.set(x, "OpExecutor", value.asInstanceOf[js.Any])
+    inline def setOpExecutor(value: AdditionalPropertiesType): Self = StObject.set(x, "OpExecutor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpMapper(value: AdditionalProperties): Self = StObject.set(x, "OpMapper", value.asInstanceOf[js.Any])
+    inline def setOpMapper(value: AdditionalProperties): Self = StObject.set(x, "OpMapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamTypes(value: Enum): Self = StObject.set(x, "ParamTypes", value.asInstanceOf[js.Any])
+    inline def setParamTypes(value: Enum): Self = StObject.set(x, "ParamTypes", value.asInstanceOf[js.Any])
   }
 }

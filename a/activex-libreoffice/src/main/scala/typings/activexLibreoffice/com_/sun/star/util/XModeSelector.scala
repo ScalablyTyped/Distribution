@@ -32,8 +32,7 @@ trait XModeSelector
 }
 object XModeSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Mode: String,
     SupportedModes: SafeArray[String],
     acquire: () => Unit,
@@ -48,25 +47,18 @@ object XModeSelector {
     __obj.asInstanceOf[XModeSelector]
   }
   
-  @scala.inline
-  implicit class XModeSelectorMutableBuilder[Self <: XModeSelector] (val x: Self) extends AnyVal {
+  extension [Self <: XModeSelector](x: Self) {
     
-    @scala.inline
-    def setGetMode(value: () => String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
+    inline def setGetMode(value: () => String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedModes(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedModes", js.Any.fromFunction0(value))
+    inline def setGetSupportedModes(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedModes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMode(value: String => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
+    inline def setSetMode(value: String => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedModes(value: SafeArray[String]): Self = StObject.set(x, "SupportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: SafeArray[String]): Self = StObject.set(x, "SupportedModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMode(value: String => Boolean): Self = StObject.set(x, "supportsMode", js.Any.fromFunction1(value))
+    inline def setSupportsMode(value: String => Boolean): Self = StObject.set(x, "supportsMode", js.Any.fromFunction1(value))
   }
 }

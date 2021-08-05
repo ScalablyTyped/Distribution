@@ -18,19 +18,15 @@ trait ReceiptIpFilter extends StObject {
 }
 object ReceiptIpFilter {
   
-  @scala.inline
-  def apply(Cidr: Cidr, Policy: ReceiptFilterPolicy): ReceiptIpFilter = {
+  inline def apply(Cidr: Cidr, Policy: ReceiptFilterPolicy): ReceiptIpFilter = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptIpFilter]
   }
   
-  @scala.inline
-  implicit class ReceiptIpFilterMutableBuilder[Self <: ReceiptIpFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiptIpFilter](x: Self) {
     
-    @scala.inline
-    def setCidr(value: Cidr): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: Cidr): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: ReceiptFilterPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ReceiptFilterPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

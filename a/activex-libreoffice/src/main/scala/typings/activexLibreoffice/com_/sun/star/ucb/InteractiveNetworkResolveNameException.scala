@@ -17,16 +17,13 @@ trait InteractiveNetworkResolveNameException
 }
 object InteractiveNetworkResolveNameException {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Server: String): InteractiveNetworkResolveNameException = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Server: String): InteractiveNetworkResolveNameException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Server = Server.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveNetworkResolveNameException]
   }
   
-  @scala.inline
-  implicit class InteractiveNetworkResolveNameExceptionMutableBuilder[Self <: InteractiveNetworkResolveNameException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveNetworkResolveNameException](x: Self) {
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
   }
 }

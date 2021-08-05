@@ -13,27 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdNumberStyleWordBasicBiDi extends StObject
 object WdNumberStyleWordBasicBiDi {
   
-  @scala.inline
-  def wdCaptionNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
+  inline def wdCaptionNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def wdCaptionNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
+  inline def wdCaptionNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def wdListNumberStyleBidi1: `49` = 49.asInstanceOf[`49`]
+  inline def wdListNumberStyleBidi1: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def wdListNumberStyleBidi2: `50` = 50.asInstanceOf[`50`]
+  inline def wdListNumberStyleBidi2: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def wdNoteNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
+  inline def wdNoteNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def wdNoteNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
+  inline def wdNoteNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def wdPageNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
+  inline def wdPageNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def wdPageNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
+  inline def wdPageNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
 }

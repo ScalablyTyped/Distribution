@@ -15,8 +15,7 @@ object motionSensorsPolyfillStrings {
        with AccelerometerLocalCoordinateSystem
        with GyroscopeLocalCoordinateSystem
        with OrientationSensorLocalCoordinateSystem
-  @scala.inline
-  def device: device = "device".asInstanceOf[device]
+  inline def device: device = "device".asInstanceOf[device]
   
   @js.native
   sealed trait screen
@@ -24,6 +23,5 @@ object motionSensorsPolyfillStrings {
        with AccelerometerLocalCoordinateSystem
        with GyroscopeLocalCoordinateSystem
        with OrientationSensorLocalCoordinateSystem
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
+  inline def screen: screen = "screen".asInstanceOf[screen]
 }

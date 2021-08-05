@@ -18,28 +18,21 @@ trait Icon extends StObject {
 }
 object Icon {
   
-  @scala.inline
-  def apply(icon: String, item: String, locationBottom: String, locationTop: String, root: String): Icon = {
+  inline def apply(icon: String, item: String, locationBottom: String, locationTop: String, root: String): Icon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], locationBottom = locationBottom.asInstanceOf[js.Any], locationTop = locationTop.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icon]
   }
   
-  @scala.inline
-  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+  extension [Self <: Icon](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationBottom(value: String): Self = StObject.set(x, "locationBottom", value.asInstanceOf[js.Any])
+    inline def setLocationBottom(value: String): Self = StObject.set(x, "locationBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTop(value: String): Self = StObject.set(x, "locationTop", value.asInstanceOf[js.Any])
+    inline def setLocationTop(value: String): Self = StObject.set(x, "locationTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

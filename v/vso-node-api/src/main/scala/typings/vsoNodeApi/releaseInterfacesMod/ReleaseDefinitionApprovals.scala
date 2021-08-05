@@ -12,22 +12,17 @@ trait ReleaseDefinitionApprovals extends StObject {
 }
 object ReleaseDefinitionApprovals {
   
-  @scala.inline
-  def apply(approvalOptions: ApprovalOptions, approvals: js.Array[ReleaseDefinitionApprovalStep]): ReleaseDefinitionApprovals = {
+  inline def apply(approvalOptions: ApprovalOptions, approvals: js.Array[ReleaseDefinitionApprovalStep]): ReleaseDefinitionApprovals = {
     val __obj = js.Dynamic.literal(approvalOptions = approvalOptions.asInstanceOf[js.Any], approvals = approvals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionApprovals]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionApprovalsMutableBuilder[Self <: ReleaseDefinitionApprovals] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionApprovals](x: Self) {
     
-    @scala.inline
-    def setApprovalOptions(value: ApprovalOptions): Self = StObject.set(x, "approvalOptions", value.asInstanceOf[js.Any])
+    inline def setApprovalOptions(value: ApprovalOptions): Self = StObject.set(x, "approvalOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovals(value: js.Array[ReleaseDefinitionApprovalStep]): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
+    inline def setApprovals(value: js.Array[ReleaseDefinitionApprovalStep]): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalsVarargs(value: ReleaseDefinitionApprovalStep*): Self = StObject.set(x, "approvals", js.Array(value :_*))
+    inline def setApprovalsVarargs(value: ReleaseDefinitionApprovalStep*): Self = StObject.set(x, "approvals", js.Array(value :_*))
   }
 }

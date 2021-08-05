@@ -14,19 +14,15 @@ trait Signal
 }
 object Signal {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, id: String, name: String, structureRef: ItemDefinition): Signal = {
+  inline def apply($parent: TypeDerived, $type: ElementType, id: String, name: String, structureRef: ItemDefinition): Signal = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], structureRef = structureRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Signal]
   }
   
-  @scala.inline
-  implicit class SignalMutableBuilder[Self <: Signal] (val x: Self) extends AnyVal {
+  extension [Self <: Signal](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureRef(value: ItemDefinition): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
+    inline def setStructureRef(value: ItemDefinition): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
   }
 }

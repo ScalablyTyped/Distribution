@@ -10,16 +10,13 @@ trait Text extends StObject {
 }
 object Text {
   
-  @scala.inline
-  def apply(text: () => js.Promise[String]): Text = {
+  inline def apply(text: () => js.Promise[String]): Text = {
     val __obj = js.Dynamic.literal(text = js.Any.fromFunction0(text))
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
   }
 }

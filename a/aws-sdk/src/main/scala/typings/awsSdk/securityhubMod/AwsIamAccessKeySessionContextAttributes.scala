@@ -18,25 +18,19 @@ trait AwsIamAccessKeySessionContextAttributes extends StObject {
 }
 object AwsIamAccessKeySessionContextAttributes {
   
-  @scala.inline
-  def apply(): AwsIamAccessKeySessionContextAttributes = {
+  inline def apply(): AwsIamAccessKeySessionContextAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamAccessKeySessionContextAttributes]
   }
   
-  @scala.inline
-  implicit class AwsIamAccessKeySessionContextAttributesMutableBuilder[Self <: AwsIamAccessKeySessionContextAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamAccessKeySessionContextAttributes](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: NonEmptyString): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: NonEmptyString): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setMfaAuthenticated(value: Boolean): Self = StObject.set(x, "MfaAuthenticated", value.asInstanceOf[js.Any])
+    inline def setMfaAuthenticated(value: Boolean): Self = StObject.set(x, "MfaAuthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMfaAuthenticatedUndefined: Self = StObject.set(x, "MfaAuthenticated", js.undefined)
+    inline def setMfaAuthenticatedUndefined: Self = StObject.set(x, "MfaAuthenticated", js.undefined)
   }
 }

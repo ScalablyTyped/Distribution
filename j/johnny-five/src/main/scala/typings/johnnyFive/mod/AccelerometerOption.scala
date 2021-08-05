@@ -10,16 +10,13 @@ trait AccelerometerOption extends StObject {
 }
 object AccelerometerOption {
   
-  @scala.inline
-  def apply(controller: String): AccelerometerOption = {
+  inline def apply(controller: String): AccelerometerOption = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerOption]
   }
   
-  @scala.inline
-  implicit class AccelerometerOptionMutableBuilder[Self <: AccelerometerOption] (val x: Self) extends AnyVal {
+  extension [Self <: AccelerometerOption](x: Self) {
     
-    @scala.inline
-    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
   }
 }

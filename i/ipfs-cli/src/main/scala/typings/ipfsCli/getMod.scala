@@ -29,6 +29,5 @@ object getMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxKeyTimeout: Key): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxKeyTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxKeyTimeout: Key): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxKeyTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

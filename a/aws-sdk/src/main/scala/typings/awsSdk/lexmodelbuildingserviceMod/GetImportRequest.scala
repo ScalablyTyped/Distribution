@@ -13,16 +13,13 @@ trait GetImportRequest extends StObject {
 }
 object GetImportRequest {
   
-  @scala.inline
-  def apply(importId: String): GetImportRequest = {
+  inline def apply(importId: String): GetImportRequest = {
     val __obj = js.Dynamic.literal(importId = importId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImportRequest]
   }
   
-  @scala.inline
-  implicit class GetImportRequestMutableBuilder[Self <: GetImportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetImportRequest](x: Self) {
     
-    @scala.inline
-    def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
+    inline def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
   }
 }

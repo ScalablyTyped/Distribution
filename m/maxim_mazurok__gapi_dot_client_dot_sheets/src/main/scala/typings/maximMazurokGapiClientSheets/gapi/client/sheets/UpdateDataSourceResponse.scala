@@ -14,25 +14,19 @@ trait UpdateDataSourceResponse extends StObject {
 }
 object UpdateDataSourceResponse {
   
-  @scala.inline
-  def apply(): UpdateDataSourceResponse = {
+  inline def apply(): UpdateDataSourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDataSourceResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDataSourceResponseMutableBuilder[Self <: UpdateDataSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDataSourceResponse](x: Self) {
     
-    @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
+    inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
+    inline def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
   }
 }

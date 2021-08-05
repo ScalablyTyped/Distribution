@@ -15,22 +15,17 @@ trait RTCRtpContributingSource extends StObject {
 }
 object RTCRtpContributingSource {
   
-  @scala.inline
-  def apply(source: Double): RTCRtpContributingSource = {
+  inline def apply(source: Double): RTCRtpContributingSource = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
   
-  @scala.inline
-  implicit class RTCRtpContributingSourceMutableBuilder[Self <: RTCRtpContributingSource] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpContributingSource](x: Self) {
     
-    @scala.inline
-    def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceActivityFlag(value: Boolean): Self = StObject.set(x, "voiceActivityFlag", value.asInstanceOf[js.Any])
+    inline def setVoiceActivityFlag(value: Boolean): Self = StObject.set(x, "voiceActivityFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceActivityFlagUndefined: Self = StObject.set(x, "voiceActivityFlag", js.undefined)
+    inline def setVoiceActivityFlagUndefined: Self = StObject.set(x, "voiceActivityFlag", js.undefined)
   }
 }

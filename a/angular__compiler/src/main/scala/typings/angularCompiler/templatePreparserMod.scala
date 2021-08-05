@@ -73,6 +73,5 @@ object templatePreparserMod {
     /* 2 */ val STYLESHEET: typings.angularCompiler.templatePreparserMod.PreparsedElementType.STYLESHEET & Double = js.native
   }
   
-  @scala.inline
-  def preparseElement(ast: Element): PreparsedElement = ^.asInstanceOf[js.Dynamic].applyDynamic("preparseElement")(ast.asInstanceOf[js.Any]).asInstanceOf[PreparsedElement]
+  inline def preparseElement(ast: Element): PreparsedElement = ^.asInstanceOf[js.Dynamic].applyDynamic("preparseElement")(ast.asInstanceOf[js.Any]).asInstanceOf[PreparsedElement]
 }

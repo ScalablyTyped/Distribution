@@ -22,32 +22,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FunctionTypeParam_ {
   
-  @scala.inline
-  def apply(typeAnnotation: FlowType): FunctionTypeParam_ = {
+  inline def apply(typeAnnotation: FlowType): FunctionTypeParam_ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, name = null, optional = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("FunctionTypeParam")
     __obj.asInstanceOf[FunctionTypeParam_]
   }
   
-  @scala.inline
-  implicit class FunctionTypeParam_MutableBuilder[Self <: FunctionTypeParam_] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionTypeParam_](x: Self) {
     
-    @scala.inline
-    def setName(value: Identifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Identifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalNull: Self = StObject.set(x, "optional", null)
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    @scala.inline
-    def setType(value: FunctionTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FunctionTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

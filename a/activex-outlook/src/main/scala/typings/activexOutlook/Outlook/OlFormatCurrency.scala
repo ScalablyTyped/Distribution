@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlFormatCurrency extends StObject
 object OlFormatCurrency {
   
-  @scala.inline
-  def olFormatCurrencyDecimal: `1` = 1.asInstanceOf[`1`]
+  inline def olFormatCurrencyDecimal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFormatCurrencyNonDecimal: `2` = 2.asInstanceOf[`2`]
+  inline def olFormatCurrencyNonDecimal: `2` = 2.asInstanceOf[`2`]
 }

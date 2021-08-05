@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MSTransportType extends StObject
 object MSTransportType {
   
-  @scala.inline
-  def BT: typings.std.stdStrings.BT = "BT".asInstanceOf[typings.std.stdStrings.BT]
+  inline def BT: typings.std.stdStrings.BT = "BT".asInstanceOf[typings.std.stdStrings.BT]
   
-  @scala.inline
-  def Embedded: typings.std.stdStrings.Embedded = "Embedded".asInstanceOf[typings.std.stdStrings.Embedded]
+  inline def Embedded: typings.std.stdStrings.Embedded = "Embedded".asInstanceOf[typings.std.stdStrings.Embedded]
   
-  @scala.inline
-  def NFC: typings.std.stdStrings.NFC = "NFC".asInstanceOf[typings.std.stdStrings.NFC]
+  inline def NFC: typings.std.stdStrings.NFC = "NFC".asInstanceOf[typings.std.stdStrings.NFC]
   
-  @scala.inline
-  def USB: typings.std.stdStrings.USB = "USB".asInstanceOf[typings.std.stdStrings.USB]
+  inline def USB: typings.std.stdStrings.USB = "USB".asInstanceOf[typings.std.stdStrings.USB]
 }

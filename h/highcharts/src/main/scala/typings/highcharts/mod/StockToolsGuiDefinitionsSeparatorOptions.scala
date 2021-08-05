@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsSeparatorOptions extends StObject {
 }
 object StockToolsGuiDefinitionsSeparatorOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsSeparatorOptions = {
+  inline def apply(): StockToolsGuiDefinitionsSeparatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsSeparatorOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsSeparatorOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsSeparatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsSeparatorOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

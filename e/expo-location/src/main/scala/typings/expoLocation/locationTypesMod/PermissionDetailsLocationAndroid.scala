@@ -13,16 +13,13 @@ trait PermissionDetailsLocationAndroid extends StObject {
 }
 object PermissionDetailsLocationAndroid {
   
-  @scala.inline
-  def apply(scope: fine | coarse | none): PermissionDetailsLocationAndroid = {
+  inline def apply(scope: fine | coarse | none): PermissionDetailsLocationAndroid = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionDetailsLocationAndroid]
   }
   
-  @scala.inline
-  implicit class PermissionDetailsLocationAndroidMutableBuilder[Self <: PermissionDetailsLocationAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionDetailsLocationAndroid](x: Self) {
     
-    @scala.inline
-    def setScope(value: fine | coarse | none): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: fine | coarse | none): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

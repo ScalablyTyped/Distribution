@@ -23,22 +23,17 @@ trait DeleteRouteRequestParameterRequest extends StObject {
 }
 object DeleteRouteRequestParameterRequest {
   
-  @scala.inline
-  def apply(ApiId: string, RequestParameterKey: string, RouteId: string): DeleteRouteRequestParameterRequest = {
+  inline def apply(ApiId: string, RequestParameterKey: string, RouteId: string): DeleteRouteRequestParameterRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RequestParameterKey = RequestParameterKey.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRouteRequestParameterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRouteRequestParameterRequestMutableBuilder[Self <: DeleteRouteRequestParameterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRouteRequestParameterRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestParameterKey(value: string): Self = StObject.set(x, "RequestParameterKey", value.asInstanceOf[js.Any])
+    inline def setRequestParameterKey(value: string): Self = StObject.set(x, "RequestParameterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteId(value: string): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
+    inline def setRouteId(value: string): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
   }
 }

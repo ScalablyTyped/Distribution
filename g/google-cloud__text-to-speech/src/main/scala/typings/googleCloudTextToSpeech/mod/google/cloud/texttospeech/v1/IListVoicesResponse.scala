@@ -12,25 +12,19 @@ trait IListVoicesResponse extends StObject {
 }
 object IListVoicesResponse {
   
-  @scala.inline
-  def apply(): IListVoicesResponse = {
+  inline def apply(): IListVoicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListVoicesResponse]
   }
   
-  @scala.inline
-  implicit class IListVoicesResponseMutableBuilder[Self <: IListVoicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListVoicesResponse](x: Self) {
     
-    @scala.inline
-    def setVoices(value: js.Array[IVoice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
+    inline def setVoices(value: js.Array[IVoice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoicesNull: Self = StObject.set(x, "voices", null)
+    inline def setVoicesNull: Self = StObject.set(x, "voices", null)
     
-    @scala.inline
-    def setVoicesUndefined: Self = StObject.set(x, "voices", js.undefined)
+    inline def setVoicesUndefined: Self = StObject.set(x, "voices", js.undefined)
     
-    @scala.inline
-    def setVoicesVarargs(value: IVoice*): Self = StObject.set(x, "voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: IVoice*): Self = StObject.set(x, "voices", js.Array(value :_*))
   }
 }

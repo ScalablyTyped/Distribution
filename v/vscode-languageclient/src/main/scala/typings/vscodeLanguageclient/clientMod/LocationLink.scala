@@ -18,14 +18,12 @@ object LocationLink {
     * @param targetSelectionRange The span of the symbol definition at the target.
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
-  @scala.inline
-  def create(
+  inline def create(
     targetUri: DocumentUri,
     targetRange: typings.vscodeLanguageserverTypes.mod.Range,
     targetSelectionRange: typings.vscodeLanguageserverTypes.mod.Range
   ): typings.vscodeLanguageserverTypes.mod.LocationLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(targetUri.asInstanceOf[js.Any], targetRange.asInstanceOf[js.Any], targetSelectionRange.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.LocationLink]
-  @scala.inline
-  def create(
+  inline def create(
     targetUri: DocumentUri,
     targetRange: typings.vscodeLanguageserverTypes.mod.Range,
     targetSelectionRange: typings.vscodeLanguageserverTypes.mod.Range,
@@ -35,6 +33,5 @@ object LocationLink {
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
 }

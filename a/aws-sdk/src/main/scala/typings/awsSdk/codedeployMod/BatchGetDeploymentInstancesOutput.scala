@@ -18,28 +18,21 @@ trait BatchGetDeploymentInstancesOutput extends StObject {
 }
 object BatchGetDeploymentInstancesOutput {
   
-  @scala.inline
-  def apply(): BatchGetDeploymentInstancesOutput = {
+  inline def apply(): BatchGetDeploymentInstancesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetDeploymentInstancesOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetDeploymentInstancesOutputMutableBuilder[Self <: BatchGetDeploymentInstancesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDeploymentInstancesOutput](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setInstancesSummary(value: InstanceSummaryList): Self = StObject.set(x, "instancesSummary", value.asInstanceOf[js.Any])
+    inline def setInstancesSummary(value: InstanceSummaryList): Self = StObject.set(x, "instancesSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesSummaryUndefined: Self = StObject.set(x, "instancesSummary", js.undefined)
+    inline def setInstancesSummaryUndefined: Self = StObject.set(x, "instancesSummary", js.undefined)
     
-    @scala.inline
-    def setInstancesSummaryVarargs(value: InstanceSummary*): Self = StObject.set(x, "instancesSummary", js.Array(value :_*))
+    inline def setInstancesSummaryVarargs(value: InstanceSummary*): Self = StObject.set(x, "instancesSummary", js.Array(value :_*))
   }
 }

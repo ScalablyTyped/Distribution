@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThemeTypeAdditionalBackgroundsTiling extends StObject
 object ThemeTypeAdditionalBackgroundsTiling {
   
-  @scala.inline
-  def `no-repeat`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat` = "no-repeat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat`]
+  inline def `no-repeat`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat` = "no-repeat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat`]
   
-  @scala.inline
-  def repeat: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat = "repeat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat]
+  inline def repeat: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat = "repeat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat]
   
-  @scala.inline
-  def `repeat-x`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x` = "repeat-x".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x`]
+  inline def `repeat-x`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x` = "repeat-x".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x`]
   
-  @scala.inline
-  def `repeat-y`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y` = "repeat-y".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y`]
+  inline def `repeat-y`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y` = "repeat-y".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y`]
 }

@@ -18,19 +18,15 @@ trait GetIdentityProviderByIdentifierRequest extends StObject {
 }
 object GetIdentityProviderByIdentifierRequest {
   
-  @scala.inline
-  def apply(IdpIdentifier: IdpIdentifierType, UserPoolId: UserPoolIdType): GetIdentityProviderByIdentifierRequest = {
+  inline def apply(IdpIdentifier: IdpIdentifierType, UserPoolId: UserPoolIdType): GetIdentityProviderByIdentifierRequest = {
     val __obj = js.Dynamic.literal(IdpIdentifier = IdpIdentifier.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityProviderByIdentifierRequest]
   }
   
-  @scala.inline
-  implicit class GetIdentityProviderByIdentifierRequestMutableBuilder[Self <: GetIdentityProviderByIdentifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityProviderByIdentifierRequest](x: Self) {
     
-    @scala.inline
-    def setIdpIdentifier(value: IdpIdentifierType): Self = StObject.set(x, "IdpIdentifier", value.asInstanceOf[js.Any])
+    inline def setIdpIdentifier(value: IdpIdentifierType): Self = StObject.set(x, "IdpIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

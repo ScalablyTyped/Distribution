@@ -11,16 +11,13 @@ trait TypeofConnectionPool extends StObject {
 }
 object TypeofConnectionPool {
   
-  @scala.inline
-  def apply(resurrectStrategies: None): TypeofConnectionPool = {
+  inline def apply(resurrectStrategies: None): TypeofConnectionPool = {
     val __obj = js.Dynamic.literal(resurrectStrategies = resurrectStrategies.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofConnectionPool]
   }
   
-  @scala.inline
-  implicit class TypeofConnectionPoolMutableBuilder[Self <: TypeofConnectionPool] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofConnectionPool](x: Self) {
     
-    @scala.inline
-    def setResurrectStrategies(value: None): Self = StObject.set(x, "resurrectStrategies", value.asInstanceOf[js.Any])
+    inline def setResurrectStrategies(value: None): Self = StObject.set(x, "resurrectStrategies", value.asInstanceOf[js.Any])
   }
 }

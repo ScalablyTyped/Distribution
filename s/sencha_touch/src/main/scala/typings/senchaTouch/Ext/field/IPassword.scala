@@ -9,8 +9,7 @@ trait IPassword
      with IText
 object IPassword {
   
-  @scala.inline
-  def apply(): IPassword = {
+  inline def apply(): IPassword = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPassword]
   }

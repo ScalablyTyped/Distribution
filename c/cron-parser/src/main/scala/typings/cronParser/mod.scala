@@ -13,18 +13,14 @@ object mod {
   val ^ : js.Any = js.native
   
   /** Wrapper for CronExpression.parse method */
-  @scala.inline
-  def parseExpression(expression: String): CronExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[CronExpression]
-  @scala.inline
-  def parseExpression(expression: String, options: ParserOptions): CronExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CronExpression]
+  inline def parseExpression(expression: String): CronExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[CronExpression]
+  inline def parseExpression(expression: String, options: ParserOptions): CronExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CronExpression]
   
   /** Parse crontab file */
-  @scala.inline
-  def parseFile(filePath: String, callback: js.Function2[/* err */ js.Any, /* data */ StringResult, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseFile(filePath: String, callback: js.Function2[/* err */ js.Any, /* data */ StringResult, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Parse content string */
-  @scala.inline
-  def parseString(data: String): StringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[StringResult]
+  inline def parseString(data: String): StringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[StringResult]
   
   trait CronDate extends StObject {
     
@@ -108,8 +104,7 @@ object mod {
   }
   object CronDate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDay: () => Unit,
       addHour: () => Unit,
       addMinute: () => Unit,
@@ -154,125 +149,85 @@ object mod {
       __obj.asInstanceOf[CronDate]
     }
     
-    @scala.inline
-    implicit class CronDateMutableBuilder[Self <: CronDate] (val x: Self) extends AnyVal {
+    extension [Self <: CronDate](x: Self) {
       
-      @scala.inline
-      def setAddDay(value: () => Unit): Self = StObject.set(x, "addDay", js.Any.fromFunction0(value))
+      inline def setAddDay(value: () => Unit): Self = StObject.set(x, "addDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddHour(value: () => Unit): Self = StObject.set(x, "addHour", js.Any.fromFunction0(value))
+      inline def setAddHour(value: () => Unit): Self = StObject.set(x, "addHour", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddMinute(value: () => Unit): Self = StObject.set(x, "addMinute", js.Any.fromFunction0(value))
+      inline def setAddMinute(value: () => Unit): Self = StObject.set(x, "addMinute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddMonth(value: () => Unit): Self = StObject.set(x, "addMonth", js.Any.fromFunction0(value))
+      inline def setAddMonth(value: () => Unit): Self = StObject.set(x, "addMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddSecond(value: () => Unit): Self = StObject.set(x, "addSecond", js.Any.fromFunction0(value))
+      inline def setAddSecond(value: () => Unit): Self = StObject.set(x, "addSecond", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddYear(value: () => Unit): Self = StObject.set(x, "addYear", js.Any.fromFunction0(value))
+      inline def setAddYear(value: () => Unit): Self = StObject.set(x, "addYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDate(value: () => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+      inline def setGetDate(value: () => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDay(value: () => Double): Self = StObject.set(x, "getDay", js.Any.fromFunction0(value))
+      inline def setGetDay(value: () => Double): Self = StObject.set(x, "getDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFullYear(value: () => Double): Self = StObject.set(x, "getFullYear", js.Any.fromFunction0(value))
+      inline def setGetFullYear(value: () => Double): Self = StObject.set(x, "getFullYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHours(value: () => Double): Self = StObject.set(x, "getHours", js.Any.fromFunction0(value))
+      inline def setGetHours(value: () => Double): Self = StObject.set(x, "getHours", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMilliseconds(value: () => Double): Self = StObject.set(x, "getMilliseconds", js.Any.fromFunction0(value))
+      inline def setGetMilliseconds(value: () => Double): Self = StObject.set(x, "getMilliseconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinutes(value: () => Double): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
+      inline def setGetMinutes(value: () => Double): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMonth(value: () => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
+      inline def setGetMonth(value: () => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
+      inline def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      inline def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCDate(value: () => Double): Self = StObject.set(x, "getUTCDate", js.Any.fromFunction0(value))
+      inline def setGetUTCDate(value: () => Double): Self = StObject.set(x, "getUTCDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCDay(value: () => Double): Self = StObject.set(x, "getUTCDay", js.Any.fromFunction0(value))
+      inline def setGetUTCDay(value: () => Double): Self = StObject.set(x, "getUTCDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCFullYear(value: () => Double): Self = StObject.set(x, "getUTCFullYear", js.Any.fromFunction0(value))
+      inline def setGetUTCFullYear(value: () => Double): Self = StObject.set(x, "getUTCFullYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCHours(value: () => Double): Self = StObject.set(x, "getUTCHours", js.Any.fromFunction0(value))
+      inline def setGetUTCHours(value: () => Double): Self = StObject.set(x, "getUTCHours", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCMinutes(value: () => Double): Self = StObject.set(x, "getUTCMinutes", js.Any.fromFunction0(value))
+      inline def setGetUTCMinutes(value: () => Double): Self = StObject.set(x, "getUTCMinutes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCMonth(value: () => Double): Self = StObject.set(x, "getUTCMonth", js.Any.fromFunction0(value))
+      inline def setGetUTCMonth(value: () => Double): Self = StObject.set(x, "getUTCMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUTCSeconds(value: () => Double): Self = StObject.set(x, "getUTCSeconds", js.Any.fromFunction0(value))
+      inline def setGetUTCSeconds(value: () => Double): Self = StObject.set(x, "getUTCSeconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDate(value: Double => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
+      inline def setSetDate(value: Double => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDay(value: Double => Unit): Self = StObject.set(x, "setDay", js.Any.fromFunction1(value))
+      inline def setSetDay(value: Double => Unit): Self = StObject.set(x, "setDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFullYear(value: Double => Unit): Self = StObject.set(x, "setFullYear", js.Any.fromFunction1(value))
+      inline def setSetFullYear(value: Double => Unit): Self = StObject.set(x, "setFullYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHours(value: Double => Unit): Self = StObject.set(x, "setHours", js.Any.fromFunction1(value))
+      inline def setSetHours(value: Double => Unit): Self = StObject.set(x, "setHours", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMilliseconds(value: Double => Unit): Self = StObject.set(x, "setMilliseconds", js.Any.fromFunction1(value))
+      inline def setSetMilliseconds(value: Double => Unit): Self = StObject.set(x, "setMilliseconds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinutes(value: Double => Unit): Self = StObject.set(x, "setMinutes", js.Any.fromFunction1(value))
+      inline def setSetMinutes(value: Double => Unit): Self = StObject.set(x, "setMinutes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMonth(value: Double => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
+      inline def setSetMonth(value: Double => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSeconds(value: Double => Unit): Self = StObject.set(x, "setSeconds", js.Any.fromFunction1(value))
+      inline def setSetSeconds(value: Double => Unit): Self = StObject.set(x, "setSeconds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtractDay(value: () => Unit): Self = StObject.set(x, "subtractDay", js.Any.fromFunction0(value))
+      inline def setSubtractDay(value: () => Unit): Self = StObject.set(x, "subtractDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtractHour(value: () => Unit): Self = StObject.set(x, "subtractHour", js.Any.fromFunction0(value))
+      inline def setSubtractHour(value: () => Unit): Self = StObject.set(x, "subtractHour", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtractMinute(value: () => Unit): Self = StObject.set(x, "subtractMinute", js.Any.fromFunction0(value))
+      inline def setSubtractMinute(value: () => Unit): Self = StObject.set(x, "subtractMinute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtractMonth(value: () => Unit): Self = StObject.set(x, "subtractMonth", js.Any.fromFunction0(value))
+      inline def setSubtractMonth(value: () => Unit): Self = StObject.set(x, "subtractMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtractSecond(value: () => Unit): Self = StObject.set(x, "subtractSecond", js.Any.fromFunction0(value))
+      inline def setSubtractSecond(value: () => Unit): Self = StObject.set(x, "subtractSecond", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtractYear(value: () => Unit): Self = StObject.set(x, "subtractYear", js.Any.fromFunction0(value))
+      inline def setSubtractYear(value: () => Unit): Self = StObject.set(x, "subtractYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
+      inline def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToISOString(value: () => String): Self = StObject.set(x, "toISOString", js.Any.fromFunction0(value))
+      inline def setToISOString(value: () => String): Self = StObject.set(x, "toISOString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -324,50 +279,36 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setCurrentDate(value: String | Double | Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: String | Double | Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
+      inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: String | Double | Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: String | Double | Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setIterator(value: Boolean): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
+      inline def setIterator(value: Boolean): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIteratorUndefined: Self = StObject.set(x, "iterator", js.undefined)
+      inline def setIteratorUndefined: Self = StObject.set(x, "iterator", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: String | Double | Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: String | Double | Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      @scala.inline
-      def setTz(value: String): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
+      inline def setTz(value: String): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
+      inline def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
     }
   }
   
@@ -381,8 +322,7 @@ object mod {
   }
   object StringResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: StringDictionary[String],
       expressions: js.Array[CronExpression],
       variables: StringDictionary[String]
@@ -391,20 +331,15 @@ object mod {
       __obj.asInstanceOf[StringResult]
     }
     
-    @scala.inline
-    implicit class StringResultMutableBuilder[Self <: StringResult] (val x: Self) extends AnyVal {
+    extension [Self <: StringResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: StringDictionary[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: StringDictionary[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions(value: js.Array[CronExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+      inline def setExpressions(value: js.Array[CronExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionsVarargs(value: CronExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+      inline def setExpressionsVarargs(value: CronExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
       
-      @scala.inline
-      def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -138,8 +138,7 @@ object unitsMod {
   }
   object IAbstractUnit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       container: IStructuralUnit,
       delete: () => Unit,
@@ -161,20 +160,15 @@ object unitsMod {
       __obj.asInstanceOf[IAbstractUnit]
     }
     
-    @scala.inline
-    implicit class IAbstractUnitMutableBuilder[Self <: IAbstractUnit] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstractUnit](x: Self) {
       
-      @scala.inline
-      def setContainer(value: IStructuralUnit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: IStructuralUnit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoadable(value: Boolean): Self = StObject.set(x, "isLoadable", value.asInstanceOf[js.Any])
+      inline def setIsLoadable(value: Boolean): Self = StObject.set(x, "isLoadable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+      inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,8 +203,7 @@ object unitsMod {
        with IContainer
   object IStructuralUnit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       container: IStructuralUnit,
       delete: () => Unit,

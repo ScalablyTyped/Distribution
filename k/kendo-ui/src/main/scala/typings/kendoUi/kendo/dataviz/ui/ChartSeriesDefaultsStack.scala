@@ -10,19 +10,15 @@ trait ChartSeriesDefaultsStack extends StObject {
 }
 object ChartSeriesDefaultsStack {
   
-  @scala.inline
-  def apply(): ChartSeriesDefaultsStack = {
+  inline def apply(): ChartSeriesDefaultsStack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesDefaultsStack]
   }
   
-  @scala.inline
-  implicit class ChartSeriesDefaultsStackMutableBuilder[Self <: ChartSeriesDefaultsStack] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesDefaultsStack](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

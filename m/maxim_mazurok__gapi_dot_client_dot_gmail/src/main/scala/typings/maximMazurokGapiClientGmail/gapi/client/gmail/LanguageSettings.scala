@@ -16,19 +16,15 @@ trait LanguageSettings extends StObject {
 }
 object LanguageSettings {
   
-  @scala.inline
-  def apply(): LanguageSettings = {
+  inline def apply(): LanguageSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageSettings]
   }
   
-  @scala.inline
-  implicit class LanguageSettingsMutableBuilder[Self <: LanguageSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageSettings](x: Self) {
     
-    @scala.inline
-    def setDisplayLanguage(value: String): Self = StObject.set(x, "displayLanguage", value.asInstanceOf[js.Any])
+    inline def setDisplayLanguage(value: String): Self = StObject.set(x, "displayLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLanguageUndefined: Self = StObject.set(x, "displayLanguage", js.undefined)
+    inline def setDisplayLanguageUndefined: Self = StObject.set(x, "displayLanguage", js.undefined)
   }
 }

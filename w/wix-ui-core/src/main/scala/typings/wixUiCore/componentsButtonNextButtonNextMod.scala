@@ -64,62 +64,44 @@ object componentsButtonNextButtonNextMod {
   }
   object ButtonProps {
     
-    @scala.inline
-    def apply(): ButtonProps = {
+    inline def apply(): ButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonProps]
     }
     
-    @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: String | ComponentType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String | ComponentType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentRef(value: RefObject[HTMLSpanElement]): Self = StObject.set(x, "contentRef", value.asInstanceOf[js.Any])
+      inline def setContentRef(value: RefObject[HTMLSpanElement]): Self = StObject.set(x, "contentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentRefUndefined: Self = StObject.set(x, "contentRef", js.undefined)
+      inline def setContentRefUndefined: Self = StObject.set(x, "contentRef", js.undefined)
       
-      @scala.inline
-      def setFocusableOnBlur(value: () => Unit): Self = StObject.set(x, "focusableOnBlur", js.Any.fromFunction0(value))
+      inline def setFocusableOnBlur(value: () => Unit): Self = StObject.set(x, "focusableOnBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusableOnBlurUndefined: Self = StObject.set(x, "focusableOnBlur", js.undefined)
+      inline def setFocusableOnBlurUndefined: Self = StObject.set(x, "focusableOnBlur", js.undefined)
       
-      @scala.inline
-      def setFocusableOnFocus(value: () => Unit): Self = StObject.set(x, "focusableOnFocus", js.Any.fromFunction0(value))
+      inline def setFocusableOnFocus(value: () => Unit): Self = StObject.set(x, "focusableOnFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusableOnFocusUndefined: Self = StObject.set(x, "focusableOnFocus", js.undefined)
+      inline def setFocusableOnFocusUndefined: Self = StObject.set(x, "focusableOnFocus", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setPrefixIcon(value: ReactElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
+      inline def setPrefixIcon(value: ReactElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
+      inline def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
       
-      @scala.inline
-      def setSuffixIcon(value: ReactElement): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
+      inline def setSuffixIcon(value: ReactElement): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
+      inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
     }
   }
 }

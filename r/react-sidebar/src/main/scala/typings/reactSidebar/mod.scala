@@ -60,134 +60,92 @@ object mod {
   }
   object SidebarProps {
     
-    @scala.inline
-    def apply(): SidebarProps = {
+    inline def apply(): SidebarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarProps]
     }
     
-    @scala.inline
-    implicit class SidebarPropsMutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarProps](x: Self) {
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+      inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
+      inline def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
       
-      @scala.inline
-      def setDefaultSidebarWidth(value: Double): Self = StObject.set(x, "defaultSidebarWidth", value.asInstanceOf[js.Any])
+      inline def setDefaultSidebarWidth(value: Double): Self = StObject.set(x, "defaultSidebarWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSidebarWidthUndefined: Self = StObject.set(x, "defaultSidebarWidth", js.undefined)
+      inline def setDefaultSidebarWidthUndefined: Self = StObject.set(x, "defaultSidebarWidth", js.undefined)
       
-      @scala.inline
-      def setDocked(value: Boolean): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
+      inline def setDocked(value: Boolean): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
+      inline def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
       
-      @scala.inline
-      def setDragToggleDistance(value: Double): Self = StObject.set(x, "dragToggleDistance", value.asInstanceOf[js.Any])
+      inline def setDragToggleDistance(value: Double): Self = StObject.set(x, "dragToggleDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragToggleDistanceUndefined: Self = StObject.set(x, "dragToggleDistance", js.undefined)
+      inline def setDragToggleDistanceUndefined: Self = StObject.set(x, "dragToggleDistance", js.undefined)
       
-      @scala.inline
-      def setOnSetOpen(value: /* open */ Boolean => Unit): Self = StObject.set(x, "onSetOpen", js.Any.fromFunction1(value))
+      inline def setOnSetOpen(value: /* open */ Boolean => Unit): Self = StObject.set(x, "onSetOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSetOpenUndefined: Self = StObject.set(x, "onSetOpen", js.undefined)
+      inline def setOnSetOpenUndefined: Self = StObject.set(x, "onSetOpen", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
+      inline def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
+      inline def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
       
-      @scala.inline
-      def setOverlayId(value: String): Self = StObject.set(x, "overlayId", value.asInstanceOf[js.Any])
+      inline def setOverlayId(value: String): Self = StObject.set(x, "overlayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayIdUndefined: Self = StObject.set(x, "overlayId", js.undefined)
+      inline def setOverlayIdUndefined: Self = StObject.set(x, "overlayId", js.undefined)
       
-      @scala.inline
-      def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
+      inline def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRightUndefined: Self = StObject.set(x, "pullRight", js.undefined)
+      inline def setPullRightUndefined: Self = StObject.set(x, "pullRight", js.undefined)
       
-      @scala.inline
-      def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
+      inline def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
+      inline def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
       
-      @scala.inline
-      def setRootId(value: String): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
+      inline def setRootId(value: String): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIdUndefined: Self = StObject.set(x, "rootId", js.undefined)
+      inline def setRootIdUndefined: Self = StObject.set(x, "rootId", js.undefined)
       
-      @scala.inline
-      def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+      inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+      inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
       
-      @scala.inline
-      def setSidebar(value: ReactNode): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+      inline def setSidebar(value: ReactNode): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebarClassName(value: String): Self = StObject.set(x, "sidebarClassName", value.asInstanceOf[js.Any])
+      inline def setSidebarClassName(value: String): Self = StObject.set(x, "sidebarClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebarClassNameUndefined: Self = StObject.set(x, "sidebarClassName", js.undefined)
+      inline def setSidebarClassNameUndefined: Self = StObject.set(x, "sidebarClassName", js.undefined)
       
-      @scala.inline
-      def setSidebarId(value: String): Self = StObject.set(x, "sidebarId", value.asInstanceOf[js.Any])
+      inline def setSidebarId(value: String): Self = StObject.set(x, "sidebarId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebarIdUndefined: Self = StObject.set(x, "sidebarId", js.undefined)
+      inline def setSidebarIdUndefined: Self = StObject.set(x, "sidebarId", js.undefined)
       
-      @scala.inline
-      def setSidebarUndefined: Self = StObject.set(x, "sidebar", js.undefined)
+      inline def setSidebarUndefined: Self = StObject.set(x, "sidebar", js.undefined)
       
-      @scala.inline
-      def setStyles(value: SidebarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: SidebarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+      inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchHandleWidth(value: Double): Self = StObject.set(x, "touchHandleWidth", value.asInstanceOf[js.Any])
+      inline def setTouchHandleWidth(value: Double): Self = StObject.set(x, "touchHandleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchHandleWidthUndefined: Self = StObject.set(x, "touchHandleWidth", js.undefined)
+      inline def setTouchHandleWidthUndefined: Self = StObject.set(x, "touchHandleWidth", js.undefined)
       
-      @scala.inline
-      def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+      inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
       
-      @scala.inline
-      def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+      inline def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+      inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
     }
   }
   
@@ -205,44 +163,32 @@ object mod {
   }
   object SidebarStyles {
     
-    @scala.inline
-    def apply(): SidebarStyles = {
+    inline def apply(): SidebarStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarStyles]
     }
     
-    @scala.inline
-    implicit class SidebarStylesMutableBuilder[Self <: SidebarStyles] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarStyles](x: Self) {
       
-      @scala.inline
-      def setContent(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDragHandle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
+      inline def setDragHandle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
+      inline def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setRoot(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSidebar(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+      inline def setSidebar(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebarUndefined: Self = StObject.set(x, "sidebar", js.undefined)
+      inline def setSidebarUndefined: Self = StObject.set(x, "sidebar", js.undefined)
     }
   }
 }

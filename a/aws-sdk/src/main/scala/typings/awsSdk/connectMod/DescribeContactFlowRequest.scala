@@ -18,19 +18,15 @@ trait DescribeContactFlowRequest extends StObject {
 }
 object DescribeContactFlowRequest {
   
-  @scala.inline
-  def apply(ContactFlowId: ContactFlowId, InstanceId: InstanceId): DescribeContactFlowRequest = {
+  inline def apply(ContactFlowId: ContactFlowId, InstanceId: InstanceId): DescribeContactFlowRequest = {
     val __obj = js.Dynamic.literal(ContactFlowId = ContactFlowId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContactFlowRequest]
   }
   
-  @scala.inline
-  implicit class DescribeContactFlowRequestMutableBuilder[Self <: DescribeContactFlowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContactFlowRequest](x: Self) {
     
-    @scala.inline
-    def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
+    inline def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

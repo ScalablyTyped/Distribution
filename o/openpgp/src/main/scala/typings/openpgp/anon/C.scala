@@ -12,8 +12,7 @@ trait C extends StObject {
 }
 object C {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     C: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     V: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): C = {
@@ -21,16 +20,13 @@ object C {
     __obj.asInstanceOf[C]
   }
   
-  @scala.inline
-  implicit class CMutableBuilder[Self <: C] (val x: Self) extends AnyVal {
+  extension [Self <: C](x: Self) {
     
-    @scala.inline
-    def setC(
+    inline def setC(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(
+    inline def setV(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }

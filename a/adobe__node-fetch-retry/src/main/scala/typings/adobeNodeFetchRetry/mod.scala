@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
-  @scala.inline
-  def apply(url: Request, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def apply(url: String, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def apply(url: Request, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
   @JSImport("@adobe/node-fetch-retry", JSImport.Namespace)
   @js.native
@@ -33,20 +31,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
+      inline def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryOptionsUndefined: Self = StObject.set(x, "retryOptions", js.undefined)
+      inline def setRetryOptionsUndefined: Self = StObject.set(x, "retryOptions", js.undefined)
     }
   }
   
@@ -87,50 +81,36 @@ object mod {
   }
   object RetryOptions {
     
-    @scala.inline
-    def apply(): RetryOptions = {
+    inline def apply(): RetryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryOptions]
     }
     
-    @scala.inline
-    implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RetryOptions](x: Self) {
       
-      @scala.inline
-      def setForceSocketTimeout(value: Boolean): Self = StObject.set(x, "forceSocketTimeout", value.asInstanceOf[js.Any])
+      inline def setForceSocketTimeout(value: Boolean): Self = StObject.set(x, "forceSocketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSocketTimeoutUndefined: Self = StObject.set(x, "forceSocketTimeout", js.undefined)
+      inline def setForceSocketTimeoutUndefined: Self = StObject.set(x, "forceSocketTimeout", js.undefined)
       
-      @scala.inline
-      def setRetryBackoff(value: Double): Self = StObject.set(x, "retryBackoff", value.asInstanceOf[js.Any])
+      inline def setRetryBackoff(value: Double): Self = StObject.set(x, "retryBackoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryBackoffUndefined: Self = StObject.set(x, "retryBackoff", js.undefined)
+      inline def setRetryBackoffUndefined: Self = StObject.set(x, "retryBackoff", js.undefined)
       
-      @scala.inline
-      def setRetryInitialDelay(value: Double): Self = StObject.set(x, "retryInitialDelay", value.asInstanceOf[js.Any])
+      inline def setRetryInitialDelay(value: Double): Self = StObject.set(x, "retryInitialDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryInitialDelayUndefined: Self = StObject.set(x, "retryInitialDelay", js.undefined)
+      inline def setRetryInitialDelayUndefined: Self = StObject.set(x, "retryInitialDelay", js.undefined)
       
-      @scala.inline
-      def setRetryMaxDuration(value: Double): Self = StObject.set(x, "retryMaxDuration", value.asInstanceOf[js.Any])
+      inline def setRetryMaxDuration(value: Double): Self = StObject.set(x, "retryMaxDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryMaxDurationUndefined: Self = StObject.set(x, "retryMaxDuration", js.undefined)
+      inline def setRetryMaxDurationUndefined: Self = StObject.set(x, "retryMaxDuration", js.undefined)
       
-      @scala.inline
-      def setRetryOnHttpResponse(value: /* response */ Response => Boolean): Self = StObject.set(x, "retryOnHttpResponse", js.Any.fromFunction1(value))
+      inline def setRetryOnHttpResponse(value: /* response */ Response => Boolean): Self = StObject.set(x, "retryOnHttpResponse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetryOnHttpResponseUndefined: Self = StObject.set(x, "retryOnHttpResponse", js.undefined)
+      inline def setRetryOnHttpResponseUndefined: Self = StObject.set(x, "retryOnHttpResponse", js.undefined)
       
-      @scala.inline
-      def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
+      inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
+      inline def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
     }
   }
 }

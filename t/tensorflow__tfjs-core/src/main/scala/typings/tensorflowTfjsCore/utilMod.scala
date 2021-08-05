@@ -10,6 +10,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseAndEvaluateSnippets(tf: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAndEvaluateSnippets")(tf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def parseAndEvaluateSnippets(tf: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAndEvaluateSnippets")(tf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

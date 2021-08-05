@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VideoType extends StObject
 object VideoType {
   
-  @scala.inline
-  def auto: typings.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typings.dplayer.dplayerStrings.auto]
+  inline def auto: typings.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typings.dplayer.dplayerStrings.auto]
   
-  @scala.inline
-  def dash: typings.dplayer.dplayerStrings.dash = "dash".asInstanceOf[typings.dplayer.dplayerStrings.dash]
+  inline def dash: typings.dplayer.dplayerStrings.dash = "dash".asInstanceOf[typings.dplayer.dplayerStrings.dash]
   
-  @scala.inline
-  def flv: typings.dplayer.dplayerStrings.flv = "flv".asInstanceOf[typings.dplayer.dplayerStrings.flv]
+  inline def flv: typings.dplayer.dplayerStrings.flv = "flv".asInstanceOf[typings.dplayer.dplayerStrings.flv]
   
-  @scala.inline
-  def hls: typings.dplayer.dplayerStrings.hls = "hls".asInstanceOf[typings.dplayer.dplayerStrings.hls]
+  inline def hls: typings.dplayer.dplayerStrings.hls = "hls".asInstanceOf[typings.dplayer.dplayerStrings.hls]
   
-  @scala.inline
-  def normal: typings.dplayer.dplayerStrings.normal = "normal".asInstanceOf[typings.dplayer.dplayerStrings.normal]
+  inline def normal: typings.dplayer.dplayerStrings.normal = "normal".asInstanceOf[typings.dplayer.dplayerStrings.normal]
   
-  @scala.inline
-  def webtorrent: typings.dplayer.dplayerStrings.webtorrent = "webtorrent".asInstanceOf[typings.dplayer.dplayerStrings.webtorrent]
+  inline def webtorrent: typings.dplayer.dplayerStrings.webtorrent = "webtorrent".asInstanceOf[typings.dplayer.dplayerStrings.webtorrent]
 }

@@ -19,8 +19,7 @@ trait Footnotes extends StObject {
 }
 object Footnotes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     footnotes: js.Array[Id],
     groups: js.Array[MetadataGroup],
@@ -31,28 +30,20 @@ object Footnotes {
     __obj.asInstanceOf[Footnotes]
   }
   
-  @scala.inline
-  implicit class FootnotesMutableBuilder[Self <: Footnotes] (val x: Self) extends AnyVal {
+  extension [Self <: Footnotes](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnotes(value: js.Array[Id]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
+    inline def setFootnotes(value: js.Array[Id]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnotesVarargs(value: Id*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+    inline def setFootnotesVarargs(value: Id*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
     
-    @scala.inline
-    def setGroups(value: js.Array[MetadataGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[MetadataGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: MetadataGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: MetadataGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

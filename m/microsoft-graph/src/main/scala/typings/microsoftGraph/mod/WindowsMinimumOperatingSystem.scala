@@ -17,31 +17,23 @@ trait WindowsMinimumOperatingSystem extends StObject {
 }
 object WindowsMinimumOperatingSystem {
   
-  @scala.inline
-  def apply(): WindowsMinimumOperatingSystem = {
+  inline def apply(): WindowsMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsMinimumOperatingSystem]
   }
   
-  @scala.inline
-  implicit class WindowsMinimumOperatingSystemMutableBuilder[Self <: WindowsMinimumOperatingSystem] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsMinimumOperatingSystem](x: Self) {
     
-    @scala.inline
-    def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
+    inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
+    inline def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
     
-    @scala.inline
-    def setV8_0(value: Boolean): Self = StObject.set(x, "v8_0", value.asInstanceOf[js.Any])
+    inline def setV8_0(value: Boolean): Self = StObject.set(x, "v8_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV8_0Undefined: Self = StObject.set(x, "v8_0", js.undefined)
+    inline def setV8_0Undefined: Self = StObject.set(x, "v8_0", js.undefined)
     
-    @scala.inline
-    def setV8_1(value: Boolean): Self = StObject.set(x, "v8_1", value.asInstanceOf[js.Any])
+    inline def setV8_1(value: Boolean): Self = StObject.set(x, "v8_1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV8_1Undefined: Self = StObject.set(x, "v8_1", js.undefined)
+    inline def setV8_1Undefined: Self = StObject.set(x, "v8_1", js.undefined)
   }
 }

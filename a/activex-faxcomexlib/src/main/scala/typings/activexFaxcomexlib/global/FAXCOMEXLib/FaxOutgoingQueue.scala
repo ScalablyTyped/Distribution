@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxOutgoingQueue Class */
 @JSGlobal("FAXCOMEXLib.FaxOutgoingQueue")
 @js.native
-class FaxOutgoingQueue protected ()
+/* private */ class FaxOutgoingQueue ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutgoingQueue {
   
@@ -37,7 +37,7 @@ class FaxOutgoingQueue protected ()
   /* CompleteClass */
   var DiscountRateStart: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxOutgoingQueue_typekey")
   var FAXCOMEXLibDotFaxOutgoingQueue_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutgoingQueue = js.native
   

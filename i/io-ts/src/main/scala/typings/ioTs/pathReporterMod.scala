@@ -16,9 +16,7 @@ object pathReporterMod {
   @js.native
   val PathReporter: Reporter[js.Array[String]] = js.native
   
-  @scala.inline
-  def failure(es: js.Array[ValidationError]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("failure")(es.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def failure(es: js.Array[ValidationError]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("failure")(es.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def success(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("success")().asInstanceOf[js.Array[String]]
+  inline def success(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("success")().asInstanceOf[js.Array[String]]
 }

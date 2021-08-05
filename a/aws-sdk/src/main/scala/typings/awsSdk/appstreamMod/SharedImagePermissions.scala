@@ -18,19 +18,15 @@ trait SharedImagePermissions extends StObject {
 }
 object SharedImagePermissions {
   
-  @scala.inline
-  def apply(imagePermissions: ImagePermissions, sharedAccountId: AwsAccountId): SharedImagePermissions = {
+  inline def apply(imagePermissions: ImagePermissions, sharedAccountId: AwsAccountId): SharedImagePermissions = {
     val __obj = js.Dynamic.literal(imagePermissions = imagePermissions.asInstanceOf[js.Any], sharedAccountId = sharedAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedImagePermissions]
   }
   
-  @scala.inline
-  implicit class SharedImagePermissionsMutableBuilder[Self <: SharedImagePermissions] (val x: Self) extends AnyVal {
+  extension [Self <: SharedImagePermissions](x: Self) {
     
-    @scala.inline
-    def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "imagePermissions", value.asInstanceOf[js.Any])
+    inline def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "imagePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountId(value: AwsAccountId): Self = StObject.set(x, "sharedAccountId", value.asInstanceOf[js.Any])
+    inline def setSharedAccountId(value: AwsAccountId): Self = StObject.set(x, "sharedAccountId", value.asInstanceOf[js.Any])
   }
 }

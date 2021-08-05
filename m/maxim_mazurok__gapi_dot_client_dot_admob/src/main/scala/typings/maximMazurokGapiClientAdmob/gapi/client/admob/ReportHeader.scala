@@ -17,31 +17,23 @@ trait ReportHeader extends StObject {
 }
 object ReportHeader {
   
-  @scala.inline
-  def apply(): ReportHeader = {
+  inline def apply(): ReportHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportHeader]
   }
   
-  @scala.inline
-  implicit class ReportHeaderMutableBuilder[Self <: ReportHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ReportHeader](x: Self) {
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
+    inline def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizationSettingsUndefined: Self = StObject.set(x, "localizationSettings", js.undefined)
+    inline def setLocalizationSettingsUndefined: Self = StObject.set(x, "localizationSettings", js.undefined)
     
-    @scala.inline
-    def setReportingTimeZone(value: String): Self = StObject.set(x, "reportingTimeZone", value.asInstanceOf[js.Any])
+    inline def setReportingTimeZone(value: String): Self = StObject.set(x, "reportingTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingTimeZoneUndefined: Self = StObject.set(x, "reportingTimeZone", js.undefined)
+    inline def setReportingTimeZoneUndefined: Self = StObject.set(x, "reportingTimeZone", js.undefined)
   }
 }

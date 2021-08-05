@@ -17,16 +17,13 @@ trait ActivationLayerArgs
 }
 object ActivationLayerArgs {
   
-  @scala.inline
-  def apply(activation: ActivationIdentifier): ActivationLayerArgs = {
+  inline def apply(activation: ActivationIdentifier): ActivationLayerArgs = {
     val __obj = js.Dynamic.literal(activation = activation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivationLayerArgs]
   }
   
-  @scala.inline
-  implicit class ActivationLayerArgsMutableBuilder[Self <: ActivationLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ActivationLayerArgs](x: Self) {
     
-    @scala.inline
-    def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
   }
 }

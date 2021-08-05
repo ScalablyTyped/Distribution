@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait GLSLVersion extends StObject
 object GLSLVersion {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[GLSLVersion & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("GLSLVersion")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GLSLVersion & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[GLSLVersion & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("GLSLVersion")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GLSLVersion & scala.Nothing]]
 }

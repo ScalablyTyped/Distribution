@@ -14,22 +14,17 @@ trait Handle extends StObject {
 }
 object Handle {
   
-  @scala.inline
-  def apply(handle: js.Function, register: js.Function, unregister: js.Function): Handle = {
+  inline def apply(handle: js.Function, register: js.Function, unregister: js.Function): Handle = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], register = register.asInstanceOf[js.Any], unregister = unregister.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handle]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+  extension [Self <: Handle](x: Self) {
     
-    @scala.inline
-    def setHandle(value: js.Function): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: js.Function): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegister(value: js.Function): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    inline def setRegister(value: js.Function): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnregister(value: js.Function): Self = StObject.set(x, "unregister", value.asInstanceOf[js.Any])
+    inline def setUnregister(value: js.Function): Self = StObject.set(x, "unregister", value.asInstanceOf[js.Any])
   }
 }

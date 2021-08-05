@@ -18,28 +18,21 @@ trait DialogFacebookResultSelection extends StObject {
 }
 object DialogFacebookResultSelection {
   
-  @scala.inline
-  def apply(first_name: String, gender: String, id: String, last_name: String, name: String): DialogFacebookResultSelection = {
+  inline def apply(first_name: String, gender: String, id: String, last_name: String, name: String): DialogFacebookResultSelection = {
     val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogFacebookResultSelection]
   }
   
-  @scala.inline
-  implicit class DialogFacebookResultSelectionMutableBuilder[Self <: DialogFacebookResultSelection] (val x: Self) extends AnyVal {
+  extension [Self <: DialogFacebookResultSelection](x: Self) {
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

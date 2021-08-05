@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BindingScope extends StObject
 object BindingScope {
   
-  @scala.inline
-  def Request: typings.inversify.inversifyStrings.Request = "Request".asInstanceOf[typings.inversify.inversifyStrings.Request]
+  inline def Request: typings.inversify.inversifyStrings.Request = "Request".asInstanceOf[typings.inversify.inversifyStrings.Request]
   
-  @scala.inline
-  def Singleton: typings.inversify.inversifyStrings.Singleton = "Singleton".asInstanceOf[typings.inversify.inversifyStrings.Singleton]
+  inline def Singleton: typings.inversify.inversifyStrings.Singleton = "Singleton".asInstanceOf[typings.inversify.inversifyStrings.Singleton]
   
-  @scala.inline
-  def Transient: typings.inversify.inversifyStrings.Transient = "Transient".asInstanceOf[typings.inversify.inversifyStrings.Transient]
+  inline def Transient: typings.inversify.inversifyStrings.Transient = "Transient".asInstanceOf[typings.inversify.inversifyStrings.Transient]
 }

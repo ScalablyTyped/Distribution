@@ -13,16 +13,13 @@ trait DeleteLoadBalancerRequest extends StObject {
 }
 object DeleteLoadBalancerRequest {
   
-  @scala.inline
-  def apply(loadBalancerName: ResourceName): DeleteLoadBalancerRequest = {
+  inline def apply(loadBalancerName: ResourceName): DeleteLoadBalancerRequest = {
     val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoadBalancerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLoadBalancerRequestMutableBuilder[Self <: DeleteLoadBalancerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLoadBalancerRequest](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }
 }

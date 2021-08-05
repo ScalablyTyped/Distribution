@@ -13,16 +13,13 @@ trait DeleteLifecyclePolicyRequest extends StObject {
 }
 object DeleteLifecyclePolicyRequest {
   
-  @scala.inline
-  def apply(PolicyId: PolicyId): DeleteLifecyclePolicyRequest = {
+  inline def apply(PolicyId: PolicyId): DeleteLifecyclePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLifecyclePolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLifecyclePolicyRequestMutableBuilder[Self <: DeleteLifecyclePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLifecyclePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
   }
 }

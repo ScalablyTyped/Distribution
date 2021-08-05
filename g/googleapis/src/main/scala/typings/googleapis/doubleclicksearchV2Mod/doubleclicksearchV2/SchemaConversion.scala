@@ -201,217 +201,147 @@ trait SchemaConversion extends StObject {
 }
 object SchemaConversion {
   
-  @scala.inline
-  def apply(): SchemaConversion = {
+  inline def apply(): SchemaConversion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConversion]
   }
   
-  @scala.inline
-  implicit class SchemaConversionMutableBuilder[Self <: SchemaConversion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConversion](x: Self) {
     
-    @scala.inline
-    def setAdGroupId(value: String): Self = StObject.set(x, "adGroupId", value.asInstanceOf[js.Any])
+    inline def setAdGroupId(value: String): Self = StObject.set(x, "adGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdGroupIdUndefined: Self = StObject.set(x, "adGroupId", js.undefined)
+    inline def setAdGroupIdUndefined: Self = StObject.set(x, "adGroupId", js.undefined)
     
-    @scala.inline
-    def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
+    inline def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
+    inline def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
+    inline def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
+    inline def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
     
-    @scala.inline
-    def setAttributionModel(value: String): Self = StObject.set(x, "attributionModel", value.asInstanceOf[js.Any])
+    inline def setAttributionModel(value: String): Self = StObject.set(x, "attributionModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionModelUndefined: Self = StObject.set(x, "attributionModel", js.undefined)
+    inline def setAttributionModelUndefined: Self = StObject.set(x, "attributionModel", js.undefined)
     
-    @scala.inline
-    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+    inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setClickId(value: String): Self = StObject.set(x, "clickId", value.asInstanceOf[js.Any])
+    inline def setClickId(value: String): Self = StObject.set(x, "clickId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickIdUndefined: Self = StObject.set(x, "clickId", js.undefined)
+    inline def setClickIdUndefined: Self = StObject.set(x, "clickId", js.undefined)
     
-    @scala.inline
-    def setConversionId(value: String): Self = StObject.set(x, "conversionId", value.asInstanceOf[js.Any])
+    inline def setConversionId(value: String): Self = StObject.set(x, "conversionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionIdUndefined: Self = StObject.set(x, "conversionId", js.undefined)
+    inline def setConversionIdUndefined: Self = StObject.set(x, "conversionId", js.undefined)
     
-    @scala.inline
-    def setConversionModifiedTimestamp(value: String): Self = StObject.set(x, "conversionModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setConversionModifiedTimestamp(value: String): Self = StObject.set(x, "conversionModifiedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionModifiedTimestampUndefined: Self = StObject.set(x, "conversionModifiedTimestamp", js.undefined)
+    inline def setConversionModifiedTimestampUndefined: Self = StObject.set(x, "conversionModifiedTimestamp", js.undefined)
     
-    @scala.inline
-    def setConversionTimestamp(value: String): Self = StObject.set(x, "conversionTimestamp", value.asInstanceOf[js.Any])
+    inline def setConversionTimestamp(value: String): Self = StObject.set(x, "conversionTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionTimestampUndefined: Self = StObject.set(x, "conversionTimestamp", js.undefined)
+    inline def setConversionTimestampUndefined: Self = StObject.set(x, "conversionTimestamp", js.undefined)
     
-    @scala.inline
-    def setCountMillis(value: String): Self = StObject.set(x, "countMillis", value.asInstanceOf[js.Any])
+    inline def setCountMillis(value: String): Self = StObject.set(x, "countMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountMillisUndefined: Self = StObject.set(x, "countMillis", js.undefined)
+    inline def setCountMillisUndefined: Self = StObject.set(x, "countMillis", js.undefined)
     
-    @scala.inline
-    def setCriterionId(value: String): Self = StObject.set(x, "criterionId", value.asInstanceOf[js.Any])
+    inline def setCriterionId(value: String): Self = StObject.set(x, "criterionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriterionIdUndefined: Self = StObject.set(x, "criterionId", js.undefined)
+    inline def setCriterionIdUndefined: Self = StObject.set(x, "criterionId", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setCustomDimension(value: js.Array[SchemaCustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
+    inline def setCustomDimension(value: js.Array[SchemaCustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
+    inline def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
     
-    @scala.inline
-    def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
+    inline def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomMetric(value: js.Array[SchemaCustomMetric]): Self = StObject.set(x, "customMetric", value.asInstanceOf[js.Any])
+    inline def setCustomMetric(value: js.Array[SchemaCustomMetric]): Self = StObject.set(x, "customMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMetricUndefined: Self = StObject.set(x, "customMetric", js.undefined)
+    inline def setCustomMetricUndefined: Self = StObject.set(x, "customMetric", js.undefined)
     
-    @scala.inline
-    def setCustomMetricVarargs(value: SchemaCustomMetric*): Self = StObject.set(x, "customMetric", js.Array(value :_*))
+    inline def setCustomMetricVarargs(value: SchemaCustomMetric*): Self = StObject.set(x, "customMetric", js.Array(value :_*))
     
-    @scala.inline
-    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
-    @scala.inline
-    def setDsConversionId(value: String): Self = StObject.set(x, "dsConversionId", value.asInstanceOf[js.Any])
+    inline def setDsConversionId(value: String): Self = StObject.set(x, "dsConversionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsConversionIdUndefined: Self = StObject.set(x, "dsConversionId", js.undefined)
+    inline def setDsConversionIdUndefined: Self = StObject.set(x, "dsConversionId", js.undefined)
     
-    @scala.inline
-    def setEngineAccountId(value: String): Self = StObject.set(x, "engineAccountId", value.asInstanceOf[js.Any])
+    inline def setEngineAccountId(value: String): Self = StObject.set(x, "engineAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineAccountIdUndefined: Self = StObject.set(x, "engineAccountId", js.undefined)
+    inline def setEngineAccountIdUndefined: Self = StObject.set(x, "engineAccountId", js.undefined)
     
-    @scala.inline
-    def setFloodlightOrderId(value: String): Self = StObject.set(x, "floodlightOrderId", value.asInstanceOf[js.Any])
+    inline def setFloodlightOrderId(value: String): Self = StObject.set(x, "floodlightOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightOrderIdUndefined: Self = StObject.set(x, "floodlightOrderId", js.undefined)
+    inline def setFloodlightOrderIdUndefined: Self = StObject.set(x, "floodlightOrderId", js.undefined)
     
-    @scala.inline
-    def setInventoryAccountId(value: String): Self = StObject.set(x, "inventoryAccountId", value.asInstanceOf[js.Any])
+    inline def setInventoryAccountId(value: String): Self = StObject.set(x, "inventoryAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryAccountIdUndefined: Self = StObject.set(x, "inventoryAccountId", js.undefined)
+    inline def setInventoryAccountIdUndefined: Self = StObject.set(x, "inventoryAccountId", js.undefined)
     
-    @scala.inline
-    def setProductCountry(value: String): Self = StObject.set(x, "productCountry", value.asInstanceOf[js.Any])
+    inline def setProductCountry(value: String): Self = StObject.set(x, "productCountry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCountryUndefined: Self = StObject.set(x, "productCountry", js.undefined)
+    inline def setProductCountryUndefined: Self = StObject.set(x, "productCountry", js.undefined)
     
-    @scala.inline
-    def setProductGroupId(value: String): Self = StObject.set(x, "productGroupId", value.asInstanceOf[js.Any])
+    inline def setProductGroupId(value: String): Self = StObject.set(x, "productGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductGroupIdUndefined: Self = StObject.set(x, "productGroupId", js.undefined)
+    inline def setProductGroupIdUndefined: Self = StObject.set(x, "productGroupId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setProductLanguage(value: String): Self = StObject.set(x, "productLanguage", value.asInstanceOf[js.Any])
+    inline def setProductLanguage(value: String): Self = StObject.set(x, "productLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductLanguageUndefined: Self = StObject.set(x, "productLanguage", js.undefined)
+    inline def setProductLanguageUndefined: Self = StObject.set(x, "productLanguage", js.undefined)
     
-    @scala.inline
-    def setQuantityMillis(value: String): Self = StObject.set(x, "quantityMillis", value.asInstanceOf[js.Any])
+    inline def setQuantityMillis(value: String): Self = StObject.set(x, "quantityMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityMillisUndefined: Self = StObject.set(x, "quantityMillis", js.undefined)
+    inline def setQuantityMillisUndefined: Self = StObject.set(x, "quantityMillis", js.undefined)
     
-    @scala.inline
-    def setRevenueMicros(value: String): Self = StObject.set(x, "revenueMicros", value.asInstanceOf[js.Any])
+    inline def setRevenueMicros(value: String): Self = StObject.set(x, "revenueMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevenueMicrosUndefined: Self = StObject.set(x, "revenueMicros", js.undefined)
+    inline def setRevenueMicrosUndefined: Self = StObject.set(x, "revenueMicros", js.undefined)
     
-    @scala.inline
-    def setSegmentationId(value: String): Self = StObject.set(x, "segmentationId", value.asInstanceOf[js.Any])
+    inline def setSegmentationId(value: String): Self = StObject.set(x, "segmentationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationIdUndefined: Self = StObject.set(x, "segmentationId", js.undefined)
+    inline def setSegmentationIdUndefined: Self = StObject.set(x, "segmentationId", js.undefined)
     
-    @scala.inline
-    def setSegmentationName(value: String): Self = StObject.set(x, "segmentationName", value.asInstanceOf[js.Any])
+    inline def setSegmentationName(value: String): Self = StObject.set(x, "segmentationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationNameUndefined: Self = StObject.set(x, "segmentationName", js.undefined)
+    inline def setSegmentationNameUndefined: Self = StObject.set(x, "segmentationName", js.undefined)
     
-    @scala.inline
-    def setSegmentationType(value: String): Self = StObject.set(x, "segmentationType", value.asInstanceOf[js.Any])
+    inline def setSegmentationType(value: String): Self = StObject.set(x, "segmentationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationTypeUndefined: Self = StObject.set(x, "segmentationType", js.undefined)
+    inline def setSegmentationTypeUndefined: Self = StObject.set(x, "segmentationType", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+    inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
+    inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

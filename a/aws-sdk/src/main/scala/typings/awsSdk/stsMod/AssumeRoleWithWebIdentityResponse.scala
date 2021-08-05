@@ -38,49 +38,35 @@ trait AssumeRoleWithWebIdentityResponse extends StObject {
 }
 object AssumeRoleWithWebIdentityResponse {
   
-  @scala.inline
-  def apply(): AssumeRoleWithWebIdentityResponse = {
+  inline def apply(): AssumeRoleWithWebIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssumeRoleWithWebIdentityResponse]
   }
   
-  @scala.inline
-  implicit class AssumeRoleWithWebIdentityResponseMutableBuilder[Self <: AssumeRoleWithWebIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssumeRoleWithWebIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
+    inline def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
+    inline def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
     
-    @scala.inline
-    def setAudience(value: Audience): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: Audience): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
+    inline def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
+    inline def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
     
-    @scala.inline
-    def setProvider(value: Issuer): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Issuer): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "Provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "Provider", js.undefined)
     
-    @scala.inline
-    def setSubjectFromWebIdentityToken(value: webIdentitySubjectType): Self = StObject.set(x, "SubjectFromWebIdentityToken", value.asInstanceOf[js.Any])
+    inline def setSubjectFromWebIdentityToken(value: webIdentitySubjectType): Self = StObject.set(x, "SubjectFromWebIdentityToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectFromWebIdentityTokenUndefined: Self = StObject.set(x, "SubjectFromWebIdentityToken", js.undefined)
+    inline def setSubjectFromWebIdentityTokenUndefined: Self = StObject.set(x, "SubjectFromWebIdentityToken", js.undefined)
   }
 }

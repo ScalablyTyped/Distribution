@@ -43,52 +43,37 @@ trait AuthProvider extends StObject {
 }
 object AuthProvider {
   
-  @scala.inline
-  def apply(): AuthProvider = {
+  inline def apply(): AuthProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthProvider]
   }
   
-  @scala.inline
-  implicit class AuthProviderMutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AuthProvider](x: Self) {
     
-    @scala.inline
-    def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+    inline def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+    inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
+    inline def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setJwksUri(value: String): Self = StObject.set(x, "jwksUri", value.asInstanceOf[js.Any])
+    inline def setJwksUri(value: String): Self = StObject.set(x, "jwksUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwksUriUndefined: Self = StObject.set(x, "jwksUri", js.undefined)
+    inline def setJwksUriUndefined: Self = StObject.set(x, "jwksUri", js.undefined)
     
-    @scala.inline
-    def setJwtLocations(value: js.Array[JwtLocation]): Self = StObject.set(x, "jwtLocations", value.asInstanceOf[js.Any])
+    inline def setJwtLocations(value: js.Array[JwtLocation]): Self = StObject.set(x, "jwtLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtLocationsUndefined: Self = StObject.set(x, "jwtLocations", js.undefined)
+    inline def setJwtLocationsUndefined: Self = StObject.set(x, "jwtLocations", js.undefined)
     
-    @scala.inline
-    def setJwtLocationsVarargs(value: JwtLocation*): Self = StObject.set(x, "jwtLocations", js.Array(value :_*))
+    inline def setJwtLocationsVarargs(value: JwtLocation*): Self = StObject.set(x, "jwtLocations", js.Array(value :_*))
   }
 }

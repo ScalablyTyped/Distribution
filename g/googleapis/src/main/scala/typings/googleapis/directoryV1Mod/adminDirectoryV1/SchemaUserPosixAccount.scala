@@ -62,73 +62,51 @@ trait SchemaUserPosixAccount extends StObject {
 }
 object SchemaUserPosixAccount {
   
-  @scala.inline
-  def apply(): SchemaUserPosixAccount = {
+  inline def apply(): SchemaUserPosixAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserPosixAccount]
   }
   
-  @scala.inline
-  implicit class SchemaUserPosixAccountMutableBuilder[Self <: SchemaUserPosixAccount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserPosixAccount](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setGecos(value: String): Self = StObject.set(x, "gecos", value.asInstanceOf[js.Any])
+    inline def setGecos(value: String): Self = StObject.set(x, "gecos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGecosUndefined: Self = StObject.set(x, "gecos", js.undefined)
+    inline def setGecosUndefined: Self = StObject.set(x, "gecos", js.undefined)
     
-    @scala.inline
-    def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+    inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+    inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
     
-    @scala.inline
-    def setHomeDirectory(value: String): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
+    inline def setHomeDirectory(value: String): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
+    inline def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemType(value: String): Self = StObject.set(x, "operatingSystemType", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemType(value: String): Self = StObject.set(x, "operatingSystemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemTypeUndefined: Self = StObject.set(x, "operatingSystemType", js.undefined)
+    inline def setOperatingSystemTypeUndefined: Self = StObject.set(x, "operatingSystemType", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+    inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
+    inline def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -43,55 +43,39 @@ trait GetPolicyResponse extends StObject {
 }
 object GetPolicyResponse {
   
-  @scala.inline
-  def apply(): GetPolicyResponse = {
+  inline def apply(): GetPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetPolicyResponseMutableBuilder[Self <: GetPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setDefaultVersionId(value: PolicyVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
+    inline def setDefaultVersionId(value: PolicyVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
+    inline def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
     
-    @scala.inline
-    def setGenerationId(value: GenerationId): Self = StObject.set(x, "generationId", value.asInstanceOf[js.Any])
+    inline def setGenerationId(value: GenerationId): Self = StObject.set(x, "generationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationIdUndefined: Self = StObject.set(x, "generationId", js.undefined)
+    inline def setGenerationIdUndefined: Self = StObject.set(x, "generationId", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
+    inline def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
     
-    @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+    inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
+    inline def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
   }
 }

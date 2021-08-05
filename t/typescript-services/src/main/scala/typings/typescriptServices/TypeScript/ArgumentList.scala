@@ -16,8 +16,7 @@ trait ArgumentList
 }
 object ArgumentList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,16 +45,12 @@ object ArgumentList {
     __obj.asInstanceOf[ArgumentList]
   }
   
-  @scala.inline
-  implicit class ArgumentListMutableBuilder[Self <: ArgumentList] (val x: Self) extends AnyVal {
+  extension [Self <: ArgumentList](x: Self) {
     
-    @scala.inline
-    def setArguments(value: ISeparatedSyntaxList2): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: ISeparatedSyntaxList2): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseParenToken(value: ASTSpan): Self = StObject.set(x, "closeParenToken", value.asInstanceOf[js.Any])
+    inline def setCloseParenToken(value: ASTSpan): Self = StObject.set(x, "closeParenToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentList(value: TypeArgumentList): Self = StObject.set(x, "typeArgumentList", value.asInstanceOf[js.Any])
+    inline def setTypeArgumentList(value: TypeArgumentList): Self = StObject.set(x, "typeArgumentList", value.asInstanceOf[js.Any])
   }
 }

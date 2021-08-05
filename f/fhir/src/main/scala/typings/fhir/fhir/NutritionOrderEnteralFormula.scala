@@ -73,88 +73,61 @@ trait NutritionOrderEnteralFormula
 }
 object NutritionOrderEnteralFormula {
   
-  @scala.inline
-  def apply(): NutritionOrderEnteralFormula = {
+  inline def apply(): NutritionOrderEnteralFormula = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NutritionOrderEnteralFormula]
   }
   
-  @scala.inline
-  implicit class NutritionOrderEnteralFormulaMutableBuilder[Self <: NutritionOrderEnteralFormula] (val x: Self) extends AnyVal {
+  extension [Self <: NutritionOrderEnteralFormula](x: Self) {
     
-    @scala.inline
-    def setAdditiveProductName(value: String): Self = StObject.set(x, "additiveProductName", value.asInstanceOf[js.Any])
+    inline def setAdditiveProductName(value: String): Self = StObject.set(x, "additiveProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditiveProductNameUndefined: Self = StObject.set(x, "additiveProductName", js.undefined)
+    inline def setAdditiveProductNameUndefined: Self = StObject.set(x, "additiveProductName", js.undefined)
     
-    @scala.inline
-    def setAdditiveType(value: CodeableConcept): Self = StObject.set(x, "additiveType", value.asInstanceOf[js.Any])
+    inline def setAdditiveType(value: CodeableConcept): Self = StObject.set(x, "additiveType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditiveTypeUndefined: Self = StObject.set(x, "additiveType", js.undefined)
+    inline def setAdditiveTypeUndefined: Self = StObject.set(x, "additiveType", js.undefined)
     
-    @scala.inline
-    def setAdministration(value: js.Array[NutritionOrderEnteralFormulaAdministration]): Self = StObject.set(x, "administration", value.asInstanceOf[js.Any])
+    inline def setAdministration(value: js.Array[NutritionOrderEnteralFormulaAdministration]): Self = StObject.set(x, "administration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministrationInstruction(value: String): Self = StObject.set(x, "administrationInstruction", value.asInstanceOf[js.Any])
+    inline def setAdministrationInstruction(value: String): Self = StObject.set(x, "administrationInstruction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministrationInstructionUndefined: Self = StObject.set(x, "administrationInstruction", js.undefined)
+    inline def setAdministrationInstructionUndefined: Self = StObject.set(x, "administrationInstruction", js.undefined)
     
-    @scala.inline
-    def setAdministrationUndefined: Self = StObject.set(x, "administration", js.undefined)
+    inline def setAdministrationUndefined: Self = StObject.set(x, "administration", js.undefined)
     
-    @scala.inline
-    def setAdministrationVarargs(value: NutritionOrderEnteralFormulaAdministration*): Self = StObject.set(x, "administration", js.Array(value :_*))
+    inline def setAdministrationVarargs(value: NutritionOrderEnteralFormulaAdministration*): Self = StObject.set(x, "administration", js.Array(value :_*))
     
-    @scala.inline
-    def setBaseFormulaProductName(value: String): Self = StObject.set(x, "baseFormulaProductName", value.asInstanceOf[js.Any])
+    inline def setBaseFormulaProductName(value: String): Self = StObject.set(x, "baseFormulaProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFormulaProductNameUndefined: Self = StObject.set(x, "baseFormulaProductName", js.undefined)
+    inline def setBaseFormulaProductNameUndefined: Self = StObject.set(x, "baseFormulaProductName", js.undefined)
     
-    @scala.inline
-    def setBaseFormulaType(value: CodeableConcept): Self = StObject.set(x, "baseFormulaType", value.asInstanceOf[js.Any])
+    inline def setBaseFormulaType(value: CodeableConcept): Self = StObject.set(x, "baseFormulaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFormulaTypeUndefined: Self = StObject.set(x, "baseFormulaType", js.undefined)
+    inline def setBaseFormulaTypeUndefined: Self = StObject.set(x, "baseFormulaType", js.undefined)
     
-    @scala.inline
-    def setCaloricDensity(value: Quantity): Self = StObject.set(x, "caloricDensity", value.asInstanceOf[js.Any])
+    inline def setCaloricDensity(value: Quantity): Self = StObject.set(x, "caloricDensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaloricDensityUndefined: Self = StObject.set(x, "caloricDensity", js.undefined)
+    inline def setCaloricDensityUndefined: Self = StObject.set(x, "caloricDensity", js.undefined)
     
-    @scala.inline
-    def setMaxVolumeToDeliver(value: Quantity): Self = StObject.set(x, "maxVolumeToDeliver", value.asInstanceOf[js.Any])
+    inline def setMaxVolumeToDeliver(value: Quantity): Self = StObject.set(x, "maxVolumeToDeliver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVolumeToDeliverUndefined: Self = StObject.set(x, "maxVolumeToDeliver", js.undefined)
+    inline def setMaxVolumeToDeliverUndefined: Self = StObject.set(x, "maxVolumeToDeliver", js.undefined)
     
-    @scala.inline
-    def setRouteofAdministration(value: CodeableConcept): Self = StObject.set(x, "routeofAdministration", value.asInstanceOf[js.Any])
+    inline def setRouteofAdministration(value: CodeableConcept): Self = StObject.set(x, "routeofAdministration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteofAdministrationUndefined: Self = StObject.set(x, "routeofAdministration", js.undefined)
+    inline def setRouteofAdministrationUndefined: Self = StObject.set(x, "routeofAdministration", js.undefined)
     
-    @scala.inline
-    def set_additiveProductName(value: Element): Self = StObject.set(x, "_additiveProductName", value.asInstanceOf[js.Any])
+    inline def set_additiveProductName(value: Element): Self = StObject.set(x, "_additiveProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_additiveProductNameUndefined: Self = StObject.set(x, "_additiveProductName", js.undefined)
+    inline def set_additiveProductNameUndefined: Self = StObject.set(x, "_additiveProductName", js.undefined)
     
-    @scala.inline
-    def set_administrationInstruction(value: Element): Self = StObject.set(x, "_administrationInstruction", value.asInstanceOf[js.Any])
+    inline def set_administrationInstruction(value: Element): Self = StObject.set(x, "_administrationInstruction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_administrationInstructionUndefined: Self = StObject.set(x, "_administrationInstruction", js.undefined)
+    inline def set_administrationInstructionUndefined: Self = StObject.set(x, "_administrationInstruction", js.undefined)
     
-    @scala.inline
-    def set_baseFormulaProductName(value: Element): Self = StObject.set(x, "_baseFormulaProductName", value.asInstanceOf[js.Any])
+    inline def set_baseFormulaProductName(value: Element): Self = StObject.set(x, "_baseFormulaProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_baseFormulaProductNameUndefined: Self = StObject.set(x, "_baseFormulaProductName", js.undefined)
+    inline def set_baseFormulaProductNameUndefined: Self = StObject.set(x, "_baseFormulaProductName", js.undefined)
   }
 }

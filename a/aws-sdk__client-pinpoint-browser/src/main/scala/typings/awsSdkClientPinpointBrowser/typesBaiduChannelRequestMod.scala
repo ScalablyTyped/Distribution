@@ -25,32 +25,24 @@ object typesBaiduChannelRequestMod {
   }
   object BaiduChannelRequest {
     
-    @scala.inline
-    def apply(): BaiduChannelRequest = {
+    inline def apply(): BaiduChannelRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaiduChannelRequest]
     }
     
-    @scala.inline
-    implicit class BaiduChannelRequestMutableBuilder[Self <: BaiduChannelRequest] (val x: Self) extends AnyVal {
+    extension [Self <: BaiduChannelRequest](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "ApiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "ApiKey", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
     }
   }
   

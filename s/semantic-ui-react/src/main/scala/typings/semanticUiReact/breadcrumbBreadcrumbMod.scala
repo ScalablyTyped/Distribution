@@ -74,8 +74,7 @@ object breadcrumbBreadcrumbMod {
        with /* key */ StringDictionary[js.Any]
   object BreadcrumbProps {
     
-    @scala.inline
-    def apply(): BreadcrumbProps = {
+    inline def apply(): BreadcrumbProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbProps]
     }
@@ -108,64 +107,46 @@ object breadcrumbBreadcrumbMod {
   }
   object StrictBreadcrumbProps {
     
-    @scala.inline
-    def apply(): StrictBreadcrumbProps = {
+    inline def apply(): StrictBreadcrumbProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictBreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class StrictBreadcrumbPropsMutableBuilder[Self <: StrictBreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictBreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDivider(value: SemanticShorthandContent): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: SemanticShorthandContent): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setIcon(value: SemanticShorthandItem[IconProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: SemanticShorthandItem[IconProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconFunction3(
+      inline def setIconFunction3(
         value: (/* component */ ElementType[IconProps], IconProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "icon", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setSections(value: SemanticShorthandCollection[BreadcrumbSectionProps]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+      inline def setSections(value: SemanticShorthandCollection[BreadcrumbSectionProps]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+      inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
       
-      @scala.inline
-      def setSectionsVarargs(value: SemanticShorthandItem[BreadcrumbSectionProps]*): Self = StObject.set(x, "sections", js.Array(value :_*))
+      inline def setSectionsVarargs(value: SemanticShorthandItem[BreadcrumbSectionProps]*): Self = StObject.set(x, "sections", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

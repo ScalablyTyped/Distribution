@@ -13,16 +13,13 @@ trait ReleaseDefinitionUndeleteParameter extends StObject {
 }
 object ReleaseDefinitionUndeleteParameter {
   
-  @scala.inline
-  def apply(comment: String): ReleaseDefinitionUndeleteParameter = {
+  inline def apply(comment: String): ReleaseDefinitionUndeleteParameter = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionUndeleteParameter]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionUndeleteParameterMutableBuilder[Self <: ReleaseDefinitionUndeleteParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionUndeleteParameter](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
   }
 }

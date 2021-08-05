@@ -21,17 +21,17 @@ object winPackagerMod {
   class WinPackager protected () extends PlatformPackager[WindowsConfiguration] {
     def this(info: Packager) = this()
     
-    var _iconPath: js.Any = js.native
+    /* private */ var _iconPath: js.Any = js.native
     
     val computedPublisherName: Lazy[js.Array[String] | Null] = js.native
     
     val cscInfo: Lazy[FileCodeSigningInfo | CertificateFromStoreInfo | Null] = js.native
     
-    var doSign: js.Any = js.native
+    /* private */ var doSign: js.Any = js.native
     
     def isForceCodeSigningVerification: Boolean = js.native
     
-    var isSignDlls: js.Any = js.native
+    /* private */ var isSignDlls: js.Any = js.native
     
     val lazyCertInfo: Lazy[CertificateInfo | Null] = js.native
     

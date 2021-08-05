@@ -18,19 +18,15 @@ trait AnalyticsApplicationOutputLambda extends StObject {
 }
 object AnalyticsApplicationOutputLambda {
   
-  @scala.inline
-  def apply(resourceArn: String, roleArn: String): AnalyticsApplicationOutputLambda = {
+  inline def apply(resourceArn: String, roleArn: String): AnalyticsApplicationOutputLambda = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationOutputLambda]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationOutputLambdaMutableBuilder[Self <: AnalyticsApplicationOutputLambda] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationOutputLambda](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

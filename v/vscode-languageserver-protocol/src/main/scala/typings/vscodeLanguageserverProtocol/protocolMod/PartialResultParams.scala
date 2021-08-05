@@ -15,19 +15,15 @@ trait PartialResultParams extends StObject {
 }
 object PartialResultParams {
   
-  @scala.inline
-  def apply(): PartialResultParams = {
+  inline def apply(): PartialResultParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialResultParams]
   }
   
-  @scala.inline
-  implicit class PartialResultParamsMutableBuilder[Self <: PartialResultParams] (val x: Self) extends AnyVal {
+  extension [Self <: PartialResultParams](x: Self) {
     
-    @scala.inline
-    def setPartialResultToken(value: ProgressToken): Self = StObject.set(x, "partialResultToken", value.asInstanceOf[js.Any])
+    inline def setPartialResultToken(value: ProgressToken): Self = StObject.set(x, "partialResultToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialResultTokenUndefined: Self = StObject.set(x, "partialResultToken", js.undefined)
+    inline def setPartialResultTokenUndefined: Self = StObject.set(x, "partialResultToken", js.undefined)
   }
 }

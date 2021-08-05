@@ -42,7 +42,7 @@ object loadingMod {
       */
     var duration: Double = js.native
     
-    var durationTimeout: js.Any = js.native
+    /* private */ var durationTimeout: js.Any = js.native
     
     @JSName("el")
     var el_Loading: HTMLIonLoadingElement = js.native
@@ -54,7 +54,7 @@ object loadingMod {
       */
     var message: js.UndefOr[String | IonicSafeString] = js.native
     
-    var onBackdropTap: js.Any = js.native
+    /* private */ var onBackdropTap: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the loading did dismiss.

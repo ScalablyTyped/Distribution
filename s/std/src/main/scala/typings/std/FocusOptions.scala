@@ -10,19 +10,15 @@ trait FocusOptions extends StObject {
 }
 object FocusOptions {
   
-  @scala.inline
-  def apply(): FocusOptions = {
+  inline def apply(): FocusOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FocusOptions]
   }
   
-  @scala.inline
-  implicit class FocusOptionsMutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FocusOptions](x: Self) {
     
-    @scala.inline
-    def setPreventScroll(value: scala.Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+    inline def setPreventScroll(value: scala.Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
+    inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
   }
 }

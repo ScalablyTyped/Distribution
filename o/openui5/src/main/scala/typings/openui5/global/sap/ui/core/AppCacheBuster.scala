@@ -17,8 +17,7 @@ object AppCacheBuster {
     * @param sUrl any URL
     * @returns modified URL when matching the index or unmodified when not
     */
-  @scala.inline
-  def convertURL(sUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertURL")(sUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertURL(sUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertURL")(sUrl.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Callback function which can be overwritten to programmatically decidewhether to rewrite the given
@@ -26,16 +25,14 @@ object AppCacheBuster {
     * @param sUrl any URL
     * @returns <code>true</code> to rewrite or <code>false</code> to ignore
     */
-  @scala.inline
-  def handleURL(sUrl: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleURL")(sUrl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def handleURL(sUrl: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleURL")(sUrl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Normalizes the given URL and make it absolute.
     * @param sUrl any URL
     * @returns normalized URL
     */
-  @scala.inline
-  def normalizeURL(sUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeURL")(sUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizeURL(sUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeURL")(sUrl.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Registers an application. Loads the cachebuster index file from thislocations. All registered files
@@ -43,6 +40,5 @@ object AppCacheBuster {
     * file.
     * @param base URL of an application providing a cachebuster index file
     */
-  @scala.inline
-  def register(base: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(base.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def register(base: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(base.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

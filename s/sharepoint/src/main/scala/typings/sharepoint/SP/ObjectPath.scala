@@ -10,16 +10,13 @@ trait ObjectPath extends StObject {
 }
 object ObjectPath {
   
-  @scala.inline
-  def apply(setPendingReplace: () => Unit): ObjectPath = {
+  inline def apply(setPendingReplace: () => Unit): ObjectPath = {
     val __obj = js.Dynamic.literal(setPendingReplace = js.Any.fromFunction0(setPendingReplace))
     __obj.asInstanceOf[ObjectPath]
   }
   
-  @scala.inline
-  implicit class ObjectPathMutableBuilder[Self <: ObjectPath] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectPath](x: Self) {
     
-    @scala.inline
-    def setSetPendingReplace(value: () => Unit): Self = StObject.set(x, "setPendingReplace", js.Any.fromFunction0(value))
+    inline def setSetPendingReplace(value: () => Unit): Self = StObject.set(x, "setPendingReplace", js.Any.fromFunction0(value))
   }
 }

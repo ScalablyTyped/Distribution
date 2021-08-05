@@ -13,16 +13,13 @@ trait PickImpliframe extends StObject {
 }
 object PickImpliframe {
   
-  @scala.inline
-  def apply(iframe: (/* url */ String, /* parameters */ String) => String): PickImpliframe = {
+  inline def apply(iframe: (/* url */ String, /* parameters */ String) => String): PickImpliframe = {
     val __obj = js.Dynamic.literal(iframe = js.Any.fromFunction2(iframe))
     __obj.asInstanceOf[PickImpliframe]
   }
   
-  @scala.inline
-  implicit class PickImpliframeMutableBuilder[Self <: PickImpliframe] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpliframe](x: Self) {
     
-    @scala.inline
-    def setIframe(value: (/* url */ String, /* parameters */ String) => String): Self = StObject.set(x, "iframe", js.Any.fromFunction2(value))
+    inline def setIframe(value: (/* url */ String, /* parameters */ String) => String): Self = StObject.set(x, "iframe", js.Any.fromFunction2(value))
   }
 }

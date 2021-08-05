@@ -8,31 +8,25 @@ object maximMazurokGapiClientNetworkmanagementStrings {
   
   @js.native
   sealed trait ConnectivityTest extends StObject
-  @scala.inline
-  def ConnectivityTest: ConnectivityTest = "ConnectivityTest".asInstanceOf[ConnectivityTest]
+  inline def ConnectivityTest: ConnectivityTest = "ConnectivityTest".asInstanceOf[ConnectivityTest]
   
   @js.native
   sealed trait Location extends StObject
-  @scala.inline
-  def Location: Location = "Location".asInstanceOf[Location]
+  inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
   sealed trait Operation extends StObject
-  @scala.inline
-  def Operation: Operation = "Operation".asInstanceOf[Operation]
+  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait networkmanagement extends StObject
-  @scala.inline
-  def networkmanagement: networkmanagement = "networkmanagement".asInstanceOf[networkmanagement]
+  inline def networkmanagement: networkmanagement = "networkmanagement".asInstanceOf[networkmanagement]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -15,8 +15,7 @@ trait FlatDataItem
 }
 object FlatDataItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lowerSiblingCounts: js.Array[Double],
     node: TreeItem,
     parentNode: TreeItem,
@@ -26,16 +25,12 @@ object FlatDataItem {
     __obj.asInstanceOf[FlatDataItem]
   }
   
-  @scala.inline
-  implicit class FlatDataItemMutableBuilder[Self <: FlatDataItem] (val x: Self) extends AnyVal {
+  extension [Self <: FlatDataItem](x: Self) {
     
-    @scala.inline
-    def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
+    inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
   }
 }

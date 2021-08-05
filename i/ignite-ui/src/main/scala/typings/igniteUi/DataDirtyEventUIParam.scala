@@ -13,19 +13,15 @@ trait DataDirtyEventUIParam extends StObject {
 }
 object DataDirtyEventUIParam {
   
-  @scala.inline
-  def apply(): DataDirtyEventUIParam = {
+  inline def apply(): DataDirtyEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataDirtyEventUIParam]
   }
   
-  @scala.inline
-  implicit class DataDirtyEventUIParamMutableBuilder[Self <: DataDirtyEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DataDirtyEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

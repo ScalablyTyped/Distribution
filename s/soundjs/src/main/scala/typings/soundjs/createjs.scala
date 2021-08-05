@@ -40,8 +40,7 @@ object createjs {
   }
   object AbstractPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: (String, Double, Double) => AbstractSoundInstance,
       getVolume: () => Double,
       isPreloadComplete: String => Boolean,
@@ -58,41 +57,29 @@ object createjs {
       __obj.asInstanceOf[AbstractPlugin]
     }
     
-    @scala.inline
-    implicit class AbstractPluginMutableBuilder[Self <: AbstractPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractPlugin](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (String, Double, Double) => AbstractSoundInstance): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+      inline def setCreate(value: (String, Double, Double) => AbstractSoundInstance): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
+      inline def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPreloadComplete(value: String => Boolean): Self = StObject.set(x, "isPreloadComplete", js.Any.fromFunction1(value))
+      inline def setIsPreloadComplete(value: String => Boolean): Self = StObject.set(x, "isPreloadComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsPreloadStarted(value: String => Boolean): Self = StObject.set(x, "isPreloadStarted", js.Any.fromFunction1(value))
+      inline def setIsPreloadStarted(value: String => Boolean): Self = StObject.set(x, "isPreloadStarted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
+      inline def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreload(value: js.Object => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
+      inline def setPreload(value: js.Object => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegister(value: (String, Double) => js.Object): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, Double) => js.Object): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAllSounds(value: String => Unit): Self = StObject.set(x, "removeAllSounds", js.Any.fromFunction1(value))
+      inline def setRemoveAllSounds(value: String => Unit): Self = StObject.set(x, "removeAllSounds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveSound(value: String => Unit): Self = StObject.set(x, "removeSound", js.Any.fromFunction1(value))
+      inline def setRemoveSound(value: String => Unit): Self = StObject.set(x, "removeSound", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMute(value: Boolean => Boolean): Self = StObject.set(x, "setMute", js.Any.fromFunction1(value))
+      inline def setSetMute(value: Boolean => Boolean): Self = StObject.set(x, "setMute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetVolume(value: Double => Boolean): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
+      inline def setSetVolume(value: Double => Boolean): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
     }
   }
   
@@ -190,8 +177,7 @@ object createjs {
   }
   object FlashAudioPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: (String, Double, Double) => AbstractSoundInstance,
       flashReady: Boolean,
       getVolume: () => Double,
@@ -210,14 +196,11 @@ object createjs {
       __obj.asInstanceOf[FlashAudioPlugin]
     }
     
-    @scala.inline
-    implicit class FlashAudioPluginMutableBuilder[Self <: FlashAudioPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: FlashAudioPlugin](x: Self) {
       
-      @scala.inline
-      def setFlashReady(value: Boolean): Self = StObject.set(x, "flashReady", value.asInstanceOf[js.Any])
+      inline def setFlashReady(value: Boolean): Self = StObject.set(x, "flashReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOutput(value: Boolean): Self = StObject.set(x, "showOutput", value.asInstanceOf[js.Any])
+      inline def setShowOutput(value: Boolean): Self = StObject.set(x, "showOutput", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,8 +233,7 @@ object createjs {
   }
   object FlashPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: String => AbstractSoundInstance,
       flashReady: Boolean,
       getVolume: () => Double,
@@ -268,41 +250,29 @@ object createjs {
       __obj.asInstanceOf[FlashPlugin]
     }
     
-    @scala.inline
-    implicit class FlashPluginMutableBuilder[Self <: FlashPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: FlashPlugin](x: Self) {
       
-      @scala.inline
-      def setCreate(value: String => AbstractSoundInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: String => AbstractSoundInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlashReady(value: Boolean): Self = StObject.set(x, "flashReady", value.asInstanceOf[js.Any])
+      inline def setFlashReady(value: Boolean): Self = StObject.set(x, "flashReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
+      inline def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPreloadStarted(value: String => Boolean): Self = StObject.set(x, "isPreloadStarted", js.Any.fromFunction1(value))
+      inline def setIsPreloadStarted(value: String => Boolean): Self = StObject.set(x, "isPreloadStarted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreload(value: (String, js.Object) => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction2(value))
+      inline def setPreload(value: (String, js.Object) => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegister(value: (String, Double) => js.Object): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, Double) => js.Object): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAllSounds(value: () => Unit): Self = StObject.set(x, "removeAllSounds", js.Any.fromFunction0(value))
+      inline def setRemoveAllSounds(value: () => Unit): Self = StObject.set(x, "removeAllSounds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveSound(value: String => Unit): Self = StObject.set(x, "removeSound", js.Any.fromFunction1(value))
+      inline def setRemoveSound(value: String => Unit): Self = StObject.set(x, "removeSound", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMute(value: Boolean => Boolean): Self = StObject.set(x, "setMute", js.Any.fromFunction1(value))
+      inline def setSetMute(value: Boolean => Boolean): Self = StObject.set(x, "setMute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetVolume(value: Double => Boolean): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
+      inline def setSetVolume(value: Double => Boolean): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowOutput(value: Boolean): Self = StObject.set(x, "showOutput", value.asInstanceOf[js.Any])
+      inline def setShowOutput(value: Boolean): Self = StObject.set(x, "showOutput", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,8 +287,7 @@ object createjs {
   }
   object HTMLAudioPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: (String, Double, Double) => AbstractSoundInstance,
       defaultNumChannels: Double,
       enableIOS: Boolean,
@@ -337,14 +306,11 @@ object createjs {
       __obj.asInstanceOf[HTMLAudioPlugin]
     }
     
-    @scala.inline
-    implicit class HTMLAudioPluginMutableBuilder[Self <: HTMLAudioPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLAudioPlugin](x: Self) {
       
-      @scala.inline
-      def setDefaultNumChannels(value: Double): Self = StObject.set(x, "defaultNumChannels", value.asInstanceOf[js.Any])
+      inline def setDefaultNumChannels(value: Double): Self = StObject.set(x, "defaultNumChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableIOS(value: Boolean): Self = StObject.set(x, "enableIOS", value.asInstanceOf[js.Any])
+      inline def setEnableIOS(value: Boolean): Self = StObject.set(x, "enableIOS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,8 +340,7 @@ object createjs {
   }
   object PlayPropsConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: Double,
       duration: Double,
       interrupt: String,
@@ -390,35 +355,25 @@ object createjs {
       __obj.asInstanceOf[PlayPropsConfig]
     }
     
-    @scala.inline
-    implicit class PlayPropsConfigMutableBuilder[Self <: PlayPropsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PlayPropsConfig](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterrupt(value: String): Self = StObject.set(x, "interrupt", value.asInstanceOf[js.Any])
+      inline def setInterrupt(value: String): Self = StObject.set(x, "interrupt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+      inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: js.Any => PlayPropsConfig): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: js.Any => PlayPropsConfig): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     }
   }
   
@@ -440,8 +395,7 @@ object createjs {
   }
   object WebAudioPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       context: AudioContext,
       create: (String, Double, Double) => AbstractSoundInstance,
       dynamicsCompressorNode: DynamicsCompressorNode,
@@ -461,17 +415,13 @@ object createjs {
       __obj.asInstanceOf[WebAudioPlugin]
     }
     
-    @scala.inline
-    implicit class WebAudioPluginMutableBuilder[Self <: WebAudioPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: WebAudioPlugin](x: Self) {
       
-      @scala.inline
-      def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicsCompressorNode(value: DynamicsCompressorNode): Self = StObject.set(x, "dynamicsCompressorNode", value.asInstanceOf[js.Any])
+      inline def setDynamicsCompressorNode(value: DynamicsCompressorNode): Self = StObject.set(x, "dynamicsCompressorNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGainNode(value: GainNode): Self = StObject.set(x, "gainNode", value.asInstanceOf[js.Any])
+      inline def setGainNode(value: GainNode): Self = StObject.set(x, "gainNode", value.asInstanceOf[js.Any])
     }
   }
   

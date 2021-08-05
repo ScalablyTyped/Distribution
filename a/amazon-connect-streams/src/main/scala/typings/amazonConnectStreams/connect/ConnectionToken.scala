@@ -11,16 +11,13 @@ trait ConnectionToken extends StObject {
 }
 object ConnectionToken {
   
-  @scala.inline
-  def apply(chatTokenTransport: Expiry): ConnectionToken = {
+  inline def apply(chatTokenTransport: Expiry): ConnectionToken = {
     val __obj = js.Dynamic.literal(chatTokenTransport = chatTokenTransport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionToken]
   }
   
-  @scala.inline
-  implicit class ConnectionTokenMutableBuilder[Self <: ConnectionToken] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionToken](x: Self) {
     
-    @scala.inline
-    def setChatTokenTransport(value: Expiry): Self = StObject.set(x, "chatTokenTransport", value.asInstanceOf[js.Any])
+    inline def setChatTokenTransport(value: Expiry): Self = StObject.set(x, "chatTokenTransport", value.asInstanceOf[js.Any])
   }
 }

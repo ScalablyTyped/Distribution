@@ -98,67 +98,47 @@ trait ParamsResourceVideosInsert
 }
 object ParamsResourceVideosInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceVideosInsert = {
+  inline def apply(): ParamsResourceVideosInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVideosInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVideosInsertMutableBuilder[Self <: ParamsResourceVideosInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVideosInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setAutoLevels(value: Boolean): Self = StObject.set(x, "autoLevels", value.asInstanceOf[js.Any])
+    inline def setAutoLevels(value: Boolean): Self = StObject.set(x, "autoLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLevelsUndefined: Self = StObject.set(x, "autoLevels", js.undefined)
+    inline def setAutoLevelsUndefined: Self = StObject.set(x, "autoLevels", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setNotifySubscribers(value: Boolean): Self = StObject.set(x, "notifySubscribers", value.asInstanceOf[js.Any])
+    inline def setNotifySubscribers(value: Boolean): Self = StObject.set(x, "notifySubscribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifySubscribersUndefined: Self = StObject.set(x, "notifySubscribers", js.undefined)
+    inline def setNotifySubscribersUndefined: Self = StObject.set(x, "notifySubscribers", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerChannel(value: String): Self = StObject.set(x, "onBehalfOfContentOwnerChannel", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwnerChannel(value: String): Self = StObject.set(x, "onBehalfOfContentOwnerChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerChannelUndefined: Self = StObject.set(x, "onBehalfOfContentOwnerChannel", js.undefined)
+    inline def setOnBehalfOfContentOwnerChannelUndefined: Self = StObject.set(x, "onBehalfOfContentOwnerChannel", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaVideo): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaVideo): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setStabilize(value: Boolean): Self = StObject.set(x, "stabilize", value.asInstanceOf[js.Any])
+    inline def setStabilize(value: Boolean): Self = StObject.set(x, "stabilize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStabilizeUndefined: Self = StObject.set(x, "stabilize", js.undefined)
+    inline def setStabilizeUndefined: Self = StObject.set(x, "stabilize", js.undefined)
   }
 }

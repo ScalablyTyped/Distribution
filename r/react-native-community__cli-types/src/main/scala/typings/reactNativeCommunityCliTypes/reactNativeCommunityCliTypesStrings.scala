@@ -8,16 +8,13 @@ object reactNativeCommunityCliTypesStrings {
   
   @js.native
   sealed trait after_compile extends StObject
-  @scala.inline
-  def after_compile: after_compile = "after_compile".asInstanceOf[after_compile]
+  inline def after_compile: after_compile = "after_compile".asInstanceOf[after_compile]
   
   @js.native
   sealed trait any extends StObject
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait before_compile extends StObject
-  @scala.inline
-  def before_compile: before_compile = "before_compile".asInstanceOf[before_compile]
+  inline def before_compile: before_compile = "before_compile".asInstanceOf[before_compile]
 }

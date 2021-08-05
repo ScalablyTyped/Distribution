@@ -21,38 +21,33 @@ object KnownPerceptionVideoProfileProperties {
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoProfileProperties.bitmapAlphaMode")
   @js.native
   def bitmapAlphaMode: String = js.native
-  @scala.inline
-  def bitmapAlphaMode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmapAlphaMode")(x.asInstanceOf[js.Any])
+  inline def bitmapAlphaMode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmapAlphaMode")(x.asInstanceOf[js.Any])
   
   /** Gets a string key used to retrieve an enumeration property indicating the bitmap pixel format. */
   /* static member */
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoProfileProperties.bitmapPixelFormat")
   @js.native
   def bitmapPixelFormat: String = js.native
-  @scala.inline
-  def bitmapPixelFormat_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmapPixelFormat")(x.asInstanceOf[js.Any])
+  inline def bitmapPixelFormat_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmapPixelFormat")(x.asInstanceOf[js.Any])
   
   /** Gets a string key used to retrieve a TimeSpan property indicating the time duration of each frame. */
   /* static member */
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoProfileProperties.frameDuration")
   @js.native
   def frameDuration: String = js.native
-  @scala.inline
-  def frameDuration_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameDuration")(x.asInstanceOf[js.Any])
+  inline def frameDuration_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameDuration")(x.asInstanceOf[js.Any])
   
   /** Gets a string key used to retrieve a 32-bit unsigned integer property indicating the frame height, in pixels. */
   /* static member */
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoProfileProperties.height")
   @js.native
   def height: String = js.native
-  @scala.inline
-  def height_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+  inline def height_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
   
   /** Gets a string key used to retrieve a 32-bit unsigned integer property indicating the frame width, in pixels. */
   /* static member */
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoProfileProperties.width")
   @js.native
   def width: String = js.native
-  @scala.inline
-  def width_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+  inline def width_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
 }

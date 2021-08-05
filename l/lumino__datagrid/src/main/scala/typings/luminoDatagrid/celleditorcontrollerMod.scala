@@ -20,11 +20,11 @@ object celleditorcontrollerMod {
     extends StObject
        with ICellEditorController {
     
-    var _cell: js.Any = js.native
+    /* private */ var _cell: js.Any = js.native
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
-    var _getDataTypeKey: js.Any = js.native
+    /* private */ var _getDataTypeKey: js.Any = js.native
     
     /**
       * Choose the most appropriate cell editor to use based on overrides / cell data type.
@@ -33,27 +33,26 @@ object celleditorcontrollerMod {
       * data type then TextCellEditor is used as default cell editor. If 'default' cell editor
       * is overridden, then it is used instead of TextCellEditor for default.
       */
-    var _getEditor: js.Any = js.native
+    /* private */ var _getEditor: js.Any = js.native
     
-    var _getMetadataBasedEditor: js.Any = js.native
+    /* private */ var _getMetadataBasedEditor: js.Any = js.native
     
-    var _metadataBasedOverrides: js.Any = js.native
+    /* private */ var _metadataBasedOverrides: js.Any = js.native
     
-    var _metadataIdentifierToKey: js.Any = js.native
+    /* private */ var _metadataIdentifierToKey: js.Any = js.native
     
-    var _metadataMatchesIdentifier: js.Any = js.native
+    /* private */ var _metadataMatchesIdentifier: js.Any = js.native
     
-    var _objectToKey: js.Any = js.native
+    /* private */ var _objectToKey: js.Any = js.native
     
-    var _onCancel: js.Any = js.native
+    /* private */ var _onCancel: js.Any = js.native
     
-    var _onCommit: js.Any = js.native
+    /* private */ var _onCommit: js.Any = js.native
     
-    var _typeBasedOverrides: js.Any = js.native
+    /* private */ var _typeBasedOverrides: js.Any = js.native
   }
   
-  @scala.inline
-  def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   
   type ConfigFunc[T] = js.Function1[/* config */ CellConfig, T]
   

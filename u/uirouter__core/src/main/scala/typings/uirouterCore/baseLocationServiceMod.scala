@@ -33,7 +33,7 @@ object baseLocationServiceMod {
     
     def _listener(evt: js.Any): Unit = js.native
     
-    var _listeners: js.Any = js.native
+    /* private */ var _listeners: js.Any = js.native
     
     var _location: LocationLike = js.native
     

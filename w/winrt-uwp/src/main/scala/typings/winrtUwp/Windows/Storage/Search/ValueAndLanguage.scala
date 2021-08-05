@@ -15,19 +15,15 @@ trait ValueAndLanguage extends StObject {
 }
 object ValueAndLanguage {
   
-  @scala.inline
-  def apply(language: String, value: js.Any): ValueAndLanguage = {
+  inline def apply(language: String, value: js.Any): ValueAndLanguage = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAndLanguage]
   }
   
-  @scala.inline
-  implicit class ValueAndLanguageMutableBuilder[Self <: ValueAndLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: ValueAndLanguage](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

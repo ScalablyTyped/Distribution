@@ -10,8 +10,6 @@ object priorities {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get(priority: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(priority.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def get(priority: PriorityString): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(priority.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def get(priority: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(priority.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def get(priority: PriorityString): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(priority.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

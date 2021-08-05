@@ -11,6 +11,5 @@ object createApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createApi(scope: js.Any): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("createApi")(scope.asInstanceOf[js.Any]).asInstanceOf[Call]
+  inline def createApi(scope: js.Any): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("createApi")(scope.asInstanceOf[js.Any]).asInstanceOf[Call]
 }

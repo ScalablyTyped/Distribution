@@ -22,40 +22,29 @@ trait CustomTimeZone
 }
 object CustomTimeZone {
   
-  @scala.inline
-  def apply(): CustomTimeZone = {
+  inline def apply(): CustomTimeZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomTimeZone]
   }
   
-  @scala.inline
-  implicit class CustomTimeZoneMutableBuilder[Self <: CustomTimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: CustomTimeZone](x: Self) {
     
-    @scala.inline
-    def setBias(value: NullableOption[Double]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: NullableOption[Double]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiasNull: Self = StObject.set(x, "bias", null)
+    inline def setBiasNull: Self = StObject.set(x, "bias", null)
     
-    @scala.inline
-    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+    inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    @scala.inline
-    def setDaylightOffset(value: NullableOption[DaylightTimeZoneOffset]): Self = StObject.set(x, "daylightOffset", value.asInstanceOf[js.Any])
+    inline def setDaylightOffset(value: NullableOption[DaylightTimeZoneOffset]): Self = StObject.set(x, "daylightOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaylightOffsetNull: Self = StObject.set(x, "daylightOffset", null)
+    inline def setDaylightOffsetNull: Self = StObject.set(x, "daylightOffset", null)
     
-    @scala.inline
-    def setDaylightOffsetUndefined: Self = StObject.set(x, "daylightOffset", js.undefined)
+    inline def setDaylightOffsetUndefined: Self = StObject.set(x, "daylightOffset", js.undefined)
     
-    @scala.inline
-    def setStandardOffset(value: NullableOption[StandardTimeZoneOffset]): Self = StObject.set(x, "standardOffset", value.asInstanceOf[js.Any])
+    inline def setStandardOffset(value: NullableOption[StandardTimeZoneOffset]): Self = StObject.set(x, "standardOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardOffsetNull: Self = StObject.set(x, "standardOffset", null)
+    inline def setStandardOffsetNull: Self = StObject.set(x, "standardOffset", null)
     
-    @scala.inline
-    def setStandardOffsetUndefined: Self = StObject.set(x, "standardOffset", js.undefined)
+    inline def setStandardOffsetUndefined: Self = StObject.set(x, "standardOffset", js.undefined)
   }
 }

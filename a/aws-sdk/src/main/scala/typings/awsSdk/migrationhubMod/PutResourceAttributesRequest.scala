@@ -28,8 +28,7 @@ trait PutResourceAttributesRequest extends StObject {
 }
 object PutResourceAttributesRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
     ResourceAttributeList: ResourceAttributeList
@@ -38,25 +37,18 @@ object PutResourceAttributesRequest {
     __obj.asInstanceOf[PutResourceAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutResourceAttributesRequestMutableBuilder[Self <: PutResourceAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResourceAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
+    inline def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAttributeList(value: ResourceAttributeList): Self = StObject.set(x, "ResourceAttributeList", value.asInstanceOf[js.Any])
+    inline def setResourceAttributeList(value: ResourceAttributeList): Self = StObject.set(x, "ResourceAttributeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = StObject.set(x, "ResourceAttributeList", js.Array(value :_*))
+    inline def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = StObject.set(x, "ResourceAttributeList", js.Array(value :_*))
   }
 }

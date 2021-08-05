@@ -11,16 +11,13 @@ trait TokenizerBuilder[T] extends StObject {
 }
 object TokenizerBuilder {
   
-  @scala.inline
-  def apply[T](build: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): TokenizerBuilder[T] = {
+  inline def apply[T](build: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): TokenizerBuilder[T] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build))
     __obj.asInstanceOf[TokenizerBuilder[T]]
   }
   
-  @scala.inline
-  implicit class TokenizerBuilderMutableBuilder[Self <: TokenizerBuilder[?], T] (val x: Self & TokenizerBuilder[T]) extends AnyVal {
+  extension [Self <: TokenizerBuilder[?], T](x: Self & TokenizerBuilder[T]) {
     
-    @scala.inline
-    def setBuild(value: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
+    inline def setBuild(value: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
   }
 }

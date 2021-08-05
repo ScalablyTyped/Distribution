@@ -20,23 +20,18 @@ object dynamicUrlDeclarationMod {
   }
   object DynamicUrlDeclaration {
     
-    @scala.inline
-    def apply[T](): DynamicUrlDeclaration[T] = {
+    inline def apply[T](): DynamicUrlDeclaration[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DynamicUrlDeclaration[T]]
     }
     
-    @scala.inline
-    implicit class DynamicUrlDeclarationMutableBuilder[Self <: DynamicUrlDeclaration[?], T] (val x: Self & DynamicUrlDeclaration[T]) extends AnyVal {
+    extension [Self <: DynamicUrlDeclaration[?], T](x: Self & DynamicUrlDeclaration[T]) {
       
-      @scala.inline
-      def setUrl(value: String | (js.Function1[/* args */ T, String | StaticUrlDeclaration])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | (js.Function1[/* args */ T, String | StaticUrlDeclaration])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlFunction1(value: /* args */ T => String | StaticUrlDeclaration): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
+      inline def setUrlFunction1(value: /* args */ T => String | StaticUrlDeclaration): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

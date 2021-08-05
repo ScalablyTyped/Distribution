@@ -26,31 +26,23 @@ trait SchemaUserExternalId extends StObject {
 }
 object SchemaUserExternalId {
   
-  @scala.inline
-  def apply(): SchemaUserExternalId = {
+  inline def apply(): SchemaUserExternalId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserExternalId]
   }
   
-  @scala.inline
-  implicit class SchemaUserExternalIdMutableBuilder[Self <: SchemaUserExternalId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserExternalId](x: Self) {
     
-    @scala.inline
-    def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
+    inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

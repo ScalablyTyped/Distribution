@@ -13,16 +13,13 @@ trait ResultAttribute extends StObject {
 }
 object ResultAttribute {
   
-  @scala.inline
-  def apply(TypeName: InventoryItemTypeName): ResultAttribute = {
+  inline def apply(TypeName: InventoryItemTypeName): ResultAttribute = {
     val __obj = js.Dynamic.literal(TypeName = TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultAttribute]
   }
   
-  @scala.inline
-  implicit class ResultAttributeMutableBuilder[Self <: ResultAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ResultAttribute](x: Self) {
     
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }
 }

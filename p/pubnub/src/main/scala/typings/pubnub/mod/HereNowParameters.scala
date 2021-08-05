@@ -17,43 +17,31 @@ trait HereNowParameters extends StObject {
 }
 object HereNowParameters {
   
-  @scala.inline
-  def apply(): HereNowParameters = {
+  inline def apply(): HereNowParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HereNowParameters]
   }
   
-  @scala.inline
-  implicit class HereNowParametersMutableBuilder[Self <: HereNowParameters] (val x: Self) extends AnyVal {
+  extension [Self <: HereNowParameters](x: Self) {
     
-    @scala.inline
-    def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
+    inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
+    inline def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
     
-    @scala.inline
-    def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
+    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeState(value: Boolean): Self = StObject.set(x, "includeState", value.asInstanceOf[js.Any])
+    inline def setIncludeState(value: Boolean): Self = StObject.set(x, "includeState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStateUndefined: Self = StObject.set(x, "includeState", js.undefined)
+    inline def setIncludeStateUndefined: Self = StObject.set(x, "includeState", js.undefined)
     
-    @scala.inline
-    def setIncludeUUIDs(value: Boolean): Self = StObject.set(x, "includeUUIDs", value.asInstanceOf[js.Any])
+    inline def setIncludeUUIDs(value: Boolean): Self = StObject.set(x, "includeUUIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUUIDsUndefined: Self = StObject.set(x, "includeUUIDs", js.undefined)
+    inline def setIncludeUUIDsUndefined: Self = StObject.set(x, "includeUUIDs", js.undefined)
   }
 }

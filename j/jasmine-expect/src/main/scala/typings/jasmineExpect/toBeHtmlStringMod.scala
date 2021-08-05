@@ -22,17 +22,14 @@ object toBeHtmlStringMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeHtmlString: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
+        inline def apply[T](toBeHtmlString: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeHtmlString = js.Any.fromFunction1(toBeHtmlString))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeHtmlString(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeHtmlString", js.Any.fromFunction1(value))
+          inline def setToBeHtmlString(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeHtmlString", js.Any.fromFunction1(value))
         }
       }
     }

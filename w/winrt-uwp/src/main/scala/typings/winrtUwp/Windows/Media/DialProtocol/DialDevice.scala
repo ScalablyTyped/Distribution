@@ -26,8 +26,7 @@ trait DialDevice extends StObject {
 }
 object DialDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     getDialApp: String => DialApp,
     id: String,
@@ -37,19 +36,14 @@ object DialDevice {
     __obj.asInstanceOf[DialDevice]
   }
   
-  @scala.inline
-  implicit class DialDeviceMutableBuilder[Self <: DialDevice] (val x: Self) extends AnyVal {
+  extension [Self <: DialDevice](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDialApp(value: String => DialApp): Self = StObject.set(x, "getDialApp", js.Any.fromFunction1(value))
+    inline def setGetDialApp(value: String => DialApp): Self = StObject.set(x, "getDialApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

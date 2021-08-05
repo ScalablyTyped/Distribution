@@ -28,40 +28,29 @@ trait StartHCEOptions extends StObject {
 }
 object StartHCEOptions {
   
-  @scala.inline
-  def apply(): StartHCEOptions = {
+  inline def apply(): StartHCEOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartHCEOptions]
   }
   
-  @scala.inline
-  implicit class StartHCEOptionsMutableBuilder[Self <: StartHCEOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartHCEOptions](x: Self) {
     
-    @scala.inline
-    def setAid_list(value: js.Array[js.Any]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
+    inline def setAid_list(value: js.Array[js.Any]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAid_listUndefined: Self = StObject.set(x, "aid_list", js.undefined)
+    inline def setAid_listUndefined: Self = StObject.set(x, "aid_list", js.undefined)
     
-    @scala.inline
-    def setAid_listVarargs(value: js.Any*): Self = StObject.set(x, "aid_list", js.Array(value :_*))
+    inline def setAid_listVarargs(value: js.Any*): Self = StObject.set(x, "aid_list", js.Array(value :_*))
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

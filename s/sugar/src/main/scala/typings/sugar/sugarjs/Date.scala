@@ -1543,56 +1543,40 @@ object Date {
   }
   object DateCreateOptions {
     
-    @scala.inline
-    def apply(): DateCreateOptions = {
+    inline def apply(): DateCreateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateCreateOptions]
     }
     
-    @scala.inline
-    implicit class DateCreateOptionsMutableBuilder[Self <: DateCreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateCreateOptions](x: Self) {
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setFromUTC(value: Boolean): Self = StObject.set(x, "fromUTC", value.asInstanceOf[js.Any])
+      inline def setFromUTC(value: Boolean): Self = StObject.set(x, "fromUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUTCUndefined: Self = StObject.set(x, "fromUTC", js.undefined)
+      inline def setFromUTCUndefined: Self = StObject.set(x, "fromUTC", js.undefined)
       
-      @scala.inline
-      def setFuture(value: Boolean): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      inline def setFuture(value: Boolean): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
+      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
       
-      @scala.inline
-      def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPast(value: Boolean): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
+      inline def setPast(value: Boolean): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastUndefined: Self = StObject.set(x, "past", js.undefined)
+      inline def setPastUndefined: Self = StObject.set(x, "past", js.undefined)
       
-      @scala.inline
-      def setSetUTC(value: Boolean): Self = StObject.set(x, "setUTC", value.asInstanceOf[js.Any])
+      inline def setSetUTC(value: Boolean): Self = StObject.set(x, "setUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUTCUndefined: Self = StObject.set(x, "setUTC", js.undefined)
+      inline def setSetUTCUndefined: Self = StObject.set(x, "setUTC", js.undefined)
     }
   }
   
@@ -1602,17 +1586,14 @@ object Date {
   }
   object DateOptions {
     
-    @scala.inline
-    def apply(newDateInternal: typings.sugar.Function): DateOptions = {
+    inline def apply(newDateInternal: typings.sugar.Function): DateOptions = {
       val __obj = js.Dynamic.literal(newDateInternal = newDateInternal.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateOptions]
     }
     
-    @scala.inline
-    implicit class DateOptionsMutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateOptions](x: Self) {
       
-      @scala.inline
-      def setNewDateInternal(value: typings.sugar.Function): Self = StObject.set(x, "newDateInternal", value.asInstanceOf[js.Any])
+      inline def setNewDateInternal(value: typings.sugar.Function): Self = StObject.set(x, "newDateInternal", value.asInstanceOf[js.Any])
     }
   }
 }

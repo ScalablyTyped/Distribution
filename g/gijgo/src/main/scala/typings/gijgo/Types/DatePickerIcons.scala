@@ -11,19 +11,15 @@ trait DatePickerIcons extends StObject {
 }
 object DatePickerIcons {
   
-  @scala.inline
-  def apply(): DatePickerIcons = {
+  inline def apply(): DatePickerIcons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatePickerIcons]
   }
   
-  @scala.inline
-  implicit class DatePickerIconsMutableBuilder[Self <: DatePickerIcons] (val x: Self) extends AnyVal {
+  extension [Self <: DatePickerIcons](x: Self) {
     
-    @scala.inline
-    def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+    inline def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
+    inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
   }
 }

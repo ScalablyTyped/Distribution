@@ -15,9 +15,9 @@ object postsInsightsFeedMod {
   class PostsInsightsFeed protected () extends Feed[PostsInsightsFeedResponseRootObject, PostsInsightsFeedResponseEdgesItem] {
     def this(client: IgApiClient) = this()
     
-    var nextCursor: js.Any = js.native
+    /* private */ var nextCursor: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def request(): js.Promise[PostsInsightsFeedResponseRootObject] = js.native
   }

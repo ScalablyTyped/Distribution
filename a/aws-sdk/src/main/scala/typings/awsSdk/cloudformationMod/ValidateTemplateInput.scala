@@ -18,25 +18,19 @@ trait ValidateTemplateInput extends StObject {
 }
 object ValidateTemplateInput {
   
-  @scala.inline
-  def apply(): ValidateTemplateInput = {
+  inline def apply(): ValidateTemplateInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateTemplateInput]
   }
   
-  @scala.inline
-  implicit class ValidateTemplateInputMutableBuilder[Self <: ValidateTemplateInput] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateTemplateInput](x: Self) {
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
     
-    @scala.inline
-    def setTemplateURL(value: TemplateURL): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
+    inline def setTemplateURL(value: TemplateURL): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateURLUndefined: Self = StObject.set(x, "TemplateURL", js.undefined)
+    inline def setTemplateURLUndefined: Self = StObject.set(x, "TemplateURL", js.undefined)
   }
 }

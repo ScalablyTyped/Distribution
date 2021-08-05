@@ -21,25 +21,19 @@ trait SchemaGooglePrivacyDlpV2BigQueryField extends StObject {
 }
 object SchemaGooglePrivacyDlpV2BigQueryField {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2BigQueryField = {
+  inline def apply(): SchemaGooglePrivacyDlpV2BigQueryField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2BigQueryField]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BigQueryFieldMutableBuilder[Self <: SchemaGooglePrivacyDlpV2BigQueryField] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2BigQueryField](x: Self) {
     
-    @scala.inline
-    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

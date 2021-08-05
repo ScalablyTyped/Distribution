@@ -12,16 +12,13 @@ trait ConnectionRequestedEventArgs extends StObject {
 }
 object ConnectionRequestedEventArgs {
   
-  @scala.inline
-  def apply(peerInformation: PeerInformation): ConnectionRequestedEventArgs = {
+  inline def apply(peerInformation: PeerInformation): ConnectionRequestedEventArgs = {
     val __obj = js.Dynamic.literal(peerInformation = peerInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class ConnectionRequestedEventArgsMutableBuilder[Self <: ConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPeerInformation(value: PeerInformation): Self = StObject.set(x, "peerInformation", value.asInstanceOf[js.Any])
+    inline def setPeerInformation(value: PeerInformation): Self = StObject.set(x, "peerInformation", value.asInstanceOf[js.Any])
   }
 }

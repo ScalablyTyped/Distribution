@@ -22,8 +22,7 @@ object DeviceAccessInformation {
     * @return The DeviceAccessInformation object for the given DeviceClass .
     */
   /* static member */
-  @scala.inline
-  def createFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceClass")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
+  inline def createFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceClass")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
   
   /**
     * Initializes a DeviceAccessInformation object based on a device class id.
@@ -31,8 +30,7 @@ object DeviceAccessInformation {
     * @return The DeviceAccessInformation object for the given device class id.
     */
   /* static member */
-  @scala.inline
-  def createFromDeviceClassId(deviceClassId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceClassId")(deviceClassId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
+  inline def createFromDeviceClassId(deviceClassId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceClassId")(deviceClassId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
   
   /**
     * Initializes a DeviceAccessInformation object based on a device id.
@@ -40,6 +38,5 @@ object DeviceAccessInformation {
     * @return The DeviceAccessInformation object for the given device id.
     */
   /* static member */
-  @scala.inline
-  def createFromId(deviceId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
+  inline def createFromId(deviceId: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation]
 }

@@ -14,19 +14,15 @@ trait SchemaProjectReference extends StObject {
 }
 object SchemaProjectReference {
   
-  @scala.inline
-  def apply(): SchemaProjectReference = {
+  inline def apply(): SchemaProjectReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProjectReference]
   }
   
-  @scala.inline
-  implicit class SchemaProjectReferenceMutableBuilder[Self <: SchemaProjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProjectReference](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

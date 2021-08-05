@@ -85,8 +85,7 @@ object packages {
        with XChangesBatch
   object Package {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       PendingChanges: ChangesSet,
       acquire: () => Unit,
       commitChanges: () => Unit,
@@ -118,8 +117,7 @@ object packages {
        with XPropertySet
   object PackageFolder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ElementNames: SafeArray[String],
       ElementType: `type`,
       Name: String,
@@ -173,8 +171,7 @@ object packages {
        with XPropertySet
   object PackageStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       InputStream: XInputStream,
       Name: String,
       Parent: XInterface,
@@ -288,8 +285,7 @@ object packages {
   }
   object XDataSinkEncrSupport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DataStream: XInputStream,
       PlainRawStream: XInputStream,
       RawStream: XInputStream,
@@ -306,32 +302,23 @@ object packages {
       __obj.asInstanceOf[XDataSinkEncrSupport]
     }
     
-    @scala.inline
-    implicit class XDataSinkEncrSupportMutableBuilder[Self <: XDataSinkEncrSupport] (val x: Self) extends AnyVal {
+    extension [Self <: XDataSinkEncrSupport](x: Self) {
       
-      @scala.inline
-      def setDataStream(value: XInputStream): Self = StObject.set(x, "DataStream", value.asInstanceOf[js.Any])
+      inline def setDataStream(value: XInputStream): Self = StObject.set(x, "DataStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDataStream(value: () => XInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
+      inline def setGetDataStream(value: () => XInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlainRawStream(value: () => XInputStream): Self = StObject.set(x, "getPlainRawStream", js.Any.fromFunction0(value))
+      inline def setGetPlainRawStream(value: () => XInputStream): Self = StObject.set(x, "getPlainRawStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRawStream(value: () => XInputStream): Self = StObject.set(x, "getRawStream", js.Any.fromFunction0(value))
+      inline def setGetRawStream(value: () => XInputStream): Self = StObject.set(x, "getRawStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlainRawStream(value: XInputStream): Self = StObject.set(x, "PlainRawStream", value.asInstanceOf[js.Any])
+      inline def setPlainRawStream(value: XInputStream): Self = StObject.set(x, "PlainRawStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawStream(value: XInputStream): Self = StObject.set(x, "RawStream", value.asInstanceOf[js.Any])
+      inline def setRawStream(value: XInputStream): Self = StObject.set(x, "RawStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDataStream(value: XInputStream => Unit): Self = StObject.set(x, "setDataStream", js.Any.fromFunction1(value))
+      inline def setSetDataStream(value: XInputStream => Unit): Self = StObject.set(x, "setDataStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRawStream(value: XInputStream => Unit): Self = StObject.set(x, "setRawStream", js.Any.fromFunction1(value))
+      inline def setSetRawStream(value: XInputStream => Unit): Self = StObject.set(x, "setRawStream", js.Any.fromFunction1(value))
     }
   }
   
@@ -354,8 +341,7 @@ object packages {
     }
     object XManifestReader {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acquire: () => Unit,
         queryInterface: `type` => js.Any,
         readManifestSequence: XInputStream => SafeArray[SafeArray[PropertyValue]],
@@ -365,11 +351,9 @@ object packages {
         __obj.asInstanceOf[XManifestReader]
       }
       
-      @scala.inline
-      implicit class XManifestReaderMutableBuilder[Self <: XManifestReader] (val x: Self) extends AnyVal {
+      extension [Self <: XManifestReader](x: Self) {
         
-        @scala.inline
-        def setReadManifestSequence(value: XInputStream => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "readManifestSequence", js.Any.fromFunction1(value))
+        inline def setReadManifestSequence(value: XInputStream => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "readManifestSequence", js.Any.fromFunction1(value))
       }
     }
     
@@ -386,8 +370,7 @@ object packages {
     }
     object XManifestWriter {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acquire: () => Unit,
         queryInterface: `type` => js.Any,
         release: () => Unit,
@@ -397,11 +380,9 @@ object packages {
         __obj.asInstanceOf[XManifestWriter]
       }
       
-      @scala.inline
-      implicit class XManifestWriterMutableBuilder[Self <: XManifestWriter] (val x: Self) extends AnyVal {
+      extension [Self <: XManifestWriter](x: Self) {
         
-        @scala.inline
-        def setWriteManifestSequence(value: (XOutputStream, SeqEquiv[SeqEquiv[PropertyValue]]) => Unit): Self = StObject.set(x, "writeManifestSequence", js.Any.fromFunction2(value))
+        inline def setWriteManifestSequence(value: (XOutputStream, SeqEquiv[SeqEquiv[PropertyValue]]) => Unit): Self = StObject.set(x, "writeManifestSequence", js.Any.fromFunction2(value))
       }
     }
   }
@@ -423,8 +404,7 @@ object packages {
     }
     object XZipFileAccess {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acquire: () => Unit,
         getStreamByPattern: String => XInputStream,
         queryInterface: `type` => js.Any,
@@ -434,11 +414,9 @@ object packages {
         __obj.asInstanceOf[XZipFileAccess]
       }
       
-      @scala.inline
-      implicit class XZipFileAccessMutableBuilder[Self <: XZipFileAccess] (val x: Self) extends AnyVal {
+      extension [Self <: XZipFileAccess](x: Self) {
         
-        @scala.inline
-        def setGetStreamByPattern(value: String => XInputStream): Self = StObject.set(x, "getStreamByPattern", js.Any.fromFunction1(value))
+        inline def setGetStreamByPattern(value: String => XInputStream): Self = StObject.set(x, "getStreamByPattern", js.Any.fromFunction1(value))
       }
     }
     
@@ -452,8 +430,7 @@ object packages {
          with XNameAccess
     object XZipFileAccess2 {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         ElementNames: SafeArray[String],
         ElementType: `type`,
         acquire: () => Unit,
@@ -507,161 +484,109 @@ object packages {
       trait Constants extends StObject
       object Constants {
         
-        @scala.inline
-        def BEST_COMPRESSION: `9` = 9.asInstanceOf[`9`]
+        inline def BEST_COMPRESSION: `9` = 9.asInstanceOf[`9`]
         
-        @scala.inline
-        def BEST_SPEED: `1` = 1.asInstanceOf[`1`]
+        inline def BEST_SPEED: `1` = 1.asInstanceOf[`1`]
         
-        @scala.inline
-        def CENATT: `36` = 36.asInstanceOf[`36`]
+        inline def CENATT: `36` = 36.asInstanceOf[`36`]
         
-        @scala.inline
-        def CENATX: `38` = 38.asInstanceOf[`38`]
+        inline def CENATX: `38` = 38.asInstanceOf[`38`]
         
-        @scala.inline
-        def CENCOM: `32` = 32.asInstanceOf[`32`]
+        inline def CENCOM: `32` = 32.asInstanceOf[`32`]
         
-        @scala.inline
-        def CENCRC: `16` = 16.asInstanceOf[`16`]
+        inline def CENCRC: `16` = 16.asInstanceOf[`16`]
         
-        @scala.inline
-        def CENDAT: `14` = 14.asInstanceOf[`14`]
+        inline def CENDAT: `14` = 14.asInstanceOf[`14`]
         
-        @scala.inline
-        def CENDSK: `34` = 34.asInstanceOf[`34`]
+        inline def CENDSK: `34` = 34.asInstanceOf[`34`]
         
-        @scala.inline
-        def CENEXT: `30` = 30.asInstanceOf[`30`]
+        inline def CENEXT: `30` = 30.asInstanceOf[`30`]
         
-        @scala.inline
-        def CENFLG: `8` = 8.asInstanceOf[`8`]
+        inline def CENFLG: `8` = 8.asInstanceOf[`8`]
         
-        @scala.inline
-        def CENHDR: `46` = 46.asInstanceOf[`46`]
+        inline def CENHDR: `46` = 46.asInstanceOf[`46`]
         
-        @scala.inline
-        def CENHOW: `10` = 10.asInstanceOf[`10`]
+        inline def CENHOW: `10` = 10.asInstanceOf[`10`]
         
-        @scala.inline
-        def CENLEN: `24` = 24.asInstanceOf[`24`]
+        inline def CENLEN: `24` = 24.asInstanceOf[`24`]
         
-        @scala.inline
-        def CENNAM: `28` = 28.asInstanceOf[`28`]
+        inline def CENNAM: `28` = 28.asInstanceOf[`28`]
         
-        @scala.inline
-        def CENOFF: `42` = 42.asInstanceOf[`42`]
+        inline def CENOFF: `42` = 42.asInstanceOf[`42`]
         
-        @scala.inline
-        def CENSIG: `33639248` = 33639248.asInstanceOf[`33639248`]
+        inline def CENSIG: `33639248` = 33639248.asInstanceOf[`33639248`]
         
-        @scala.inline
-        def CENSIZ: `20` = 20.asInstanceOf[`20`]
+        inline def CENSIZ: `20` = 20.asInstanceOf[`20`]
         
-        @scala.inline
-        def CENTIM: `12` = 12.asInstanceOf[`12`]
+        inline def CENTIM: `12` = 12.asInstanceOf[`12`]
         
-        @scala.inline
-        def CENVEM: `4` = 4.asInstanceOf[`4`]
+        inline def CENVEM: `4` = 4.asInstanceOf[`4`]
         
-        @scala.inline
-        def CENVER: `6` = 6.asInstanceOf[`6`]
+        inline def CENVER: `6` = 6.asInstanceOf[`6`]
         
-        @scala.inline
-        def DEFAULT_COMPRESSION: `-1` = -1.asInstanceOf[`-1`]
+        inline def DEFAULT_COMPRESSION: `-1` = -1.asInstanceOf[`-1`]
         
-        @scala.inline
-        def DEFAULT_STRATEGY: `0` = 0.asInstanceOf[`0`]
+        inline def DEFAULT_STRATEGY: `0` = 0.asInstanceOf[`0`]
         
-        @scala.inline
-        def DEFLATED: `8` = 8.asInstanceOf[`8`]
+        inline def DEFLATED: `8` = 8.asInstanceOf[`8`]
         
-        @scala.inline
-        def DEF_MEM_LEVEL: `8` = 8.asInstanceOf[`8`]
+        inline def DEF_MEM_LEVEL: `8` = 8.asInstanceOf[`8`]
         
-        @scala.inline
-        def ENDCOM: `20` = 20.asInstanceOf[`20`]
+        inline def ENDCOM: `20` = 20.asInstanceOf[`20`]
         
-        @scala.inline
-        def ENDHDR: `22` = 22.asInstanceOf[`22`]
+        inline def ENDHDR: `22` = 22.asInstanceOf[`22`]
         
-        @scala.inline
-        def ENDOFF: `16` = 16.asInstanceOf[`16`]
+        inline def ENDOFF: `16` = 16.asInstanceOf[`16`]
         
-        @scala.inline
-        def ENDSIG: `101010256` = 101010256.asInstanceOf[`101010256`]
+        inline def ENDSIG: `101010256` = 101010256.asInstanceOf[`101010256`]
         
-        @scala.inline
-        def ENDSIZ: `12` = 12.asInstanceOf[`12`]
+        inline def ENDSIZ: `12` = 12.asInstanceOf[`12`]
         
-        @scala.inline
-        def ENDSUB: `8` = 8.asInstanceOf[`8`]
+        inline def ENDSUB: `8` = 8.asInstanceOf[`8`]
         
-        @scala.inline
-        def ENDTOT: `10` = 10.asInstanceOf[`10`]
+        inline def ENDTOT: `10` = 10.asInstanceOf[`10`]
         
-        @scala.inline
-        def EXTCRC: `4` = 4.asInstanceOf[`4`]
+        inline def EXTCRC: `4` = 4.asInstanceOf[`4`]
         
-        @scala.inline
-        def EXTHDR: `16` = 16.asInstanceOf[`16`]
+        inline def EXTHDR: `16` = 16.asInstanceOf[`16`]
         
-        @scala.inline
-        def EXTLEN: `12` = 12.asInstanceOf[`12`]
+        inline def EXTLEN: `12` = 12.asInstanceOf[`12`]
         
-        @scala.inline
-        def EXTSIG: `134695760` = 134695760.asInstanceOf[`134695760`]
+        inline def EXTSIG: `134695760` = 134695760.asInstanceOf[`134695760`]
         
-        @scala.inline
-        def EXTSIZ: `8` = 8.asInstanceOf[`8`]
+        inline def EXTSIZ: `8` = 8.asInstanceOf[`8`]
         
-        @scala.inline
-        def FILTERED: `1` = 1.asInstanceOf[`1`]
+        inline def FILTERED: `1` = 1.asInstanceOf[`1`]
         
-        @scala.inline
-        def HUFFMAN_ONLY: `2` = 2.asInstanceOf[`2`]
+        inline def HUFFMAN_ONLY: `2` = 2.asInstanceOf[`2`]
         
-        @scala.inline
-        def LOCCRC: `14` = 14.asInstanceOf[`14`]
+        inline def LOCCRC: `14` = 14.asInstanceOf[`14`]
         
-        @scala.inline
-        def LOCEXT: `28` = 28.asInstanceOf[`28`]
+        inline def LOCEXT: `28` = 28.asInstanceOf[`28`]
         
-        @scala.inline
-        def LOCFLG: `6` = 6.asInstanceOf[`6`]
+        inline def LOCFLG: `6` = 6.asInstanceOf[`6`]
         
-        @scala.inline
-        def LOCHDR: `30` = 30.asInstanceOf[`30`]
+        inline def LOCHDR: `30` = 30.asInstanceOf[`30`]
         
-        @scala.inline
-        def LOCHOW: `8` = 8.asInstanceOf[`8`]
+        inline def LOCHOW: `8` = 8.asInstanceOf[`8`]
         
-        @scala.inline
-        def LOCLEN: `22` = 22.asInstanceOf[`22`]
+        inline def LOCLEN: `22` = 22.asInstanceOf[`22`]
         
-        @scala.inline
-        def LOCNAM: `26` = 26.asInstanceOf[`26`]
+        inline def LOCNAM: `26` = 26.asInstanceOf[`26`]
         
-        @scala.inline
-        def LOCSIG: `67324752` = 67324752.asInstanceOf[`67324752`]
+        inline def LOCSIG: `67324752` = 67324752.asInstanceOf[`67324752`]
         
-        @scala.inline
-        def LOCSIZ: `18` = 18.asInstanceOf[`18`]
+        inline def LOCSIZ: `18` = 18.asInstanceOf[`18`]
         
-        @scala.inline
-        def LOCTIM: `10` = 10.asInstanceOf[`10`]
+        inline def LOCTIM: `10` = 10.asInstanceOf[`10`]
         
-        @scala.inline
-        def LOCVER: `4` = 4.asInstanceOf[`4`]
+        inline def LOCVER: `4` = 4.asInstanceOf[`4`]
         
-        @scala.inline
-        def NO_COMPRESSION: `0` = 0.asInstanceOf[`0`]
+        inline def NO_COMPRESSION: `0` = 0.asInstanceOf[`0`]
         
-        @scala.inline
-        def SPANSIG: `134695760` = 134695760.asInstanceOf[`134695760`]
+        inline def SPANSIG: `134695760` = 134695760.asInstanceOf[`134695760`]
         
-        @scala.inline
-        def STORED: `0` = 0.asInstanceOf[`0`]
+        inline def STORED: `0` = 0.asInstanceOf[`0`]
       }
     }
     
@@ -710,8 +635,7 @@ object packages {
     }
     object ZipEntry {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         extra: SafeArray[Double],
         nCompressedSize: Double,
         nCrc: Double,
@@ -729,44 +653,31 @@ object packages {
         __obj.asInstanceOf[ZipEntry]
       }
       
-      @scala.inline
-      implicit class ZipEntryMutableBuilder[Self <: ZipEntry] (val x: Self) extends AnyVal {
+      extension [Self <: ZipEntry](x: Self) {
         
-        @scala.inline
-        def setExtra(value: SafeArray[Double]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: SafeArray[Double]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNCompressedSize(value: Double): Self = StObject.set(x, "nCompressedSize", value.asInstanceOf[js.Any])
+        inline def setNCompressedSize(value: Double): Self = StObject.set(x, "nCompressedSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNCrc(value: Double): Self = StObject.set(x, "nCrc", value.asInstanceOf[js.Any])
+        inline def setNCrc(value: Double): Self = StObject.set(x, "nCrc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNDiskNumber(value: Double): Self = StObject.set(x, "nDiskNumber", value.asInstanceOf[js.Any])
+        inline def setNDiskNumber(value: Double): Self = StObject.set(x, "nDiskNumber", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNFlag(value: Double): Self = StObject.set(x, "nFlag", value.asInstanceOf[js.Any])
+        inline def setNFlag(value: Double): Self = StObject.set(x, "nFlag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNMethod(value: Double): Self = StObject.set(x, "nMethod", value.asInstanceOf[js.Any])
+        inline def setNMethod(value: Double): Self = StObject.set(x, "nMethod", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNOffset(value: Double): Self = StObject.set(x, "nOffset", value.asInstanceOf[js.Any])
+        inline def setNOffset(value: Double): Self = StObject.set(x, "nOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNSize(value: Double): Self = StObject.set(x, "nSize", value.asInstanceOf[js.Any])
+        inline def setNSize(value: Double): Self = StObject.set(x, "nSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNTime(value: Double): Self = StObject.set(x, "nTime", value.asInstanceOf[js.Any])
+        inline def setNTime(value: Double): Self = StObject.set(x, "nTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNVersion(value: Double): Self = StObject.set(x, "nVersion", value.asInstanceOf[js.Any])
+        inline def setNVersion(value: Double): Self = StObject.set(x, "nVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSComment(value: String): Self = StObject.set(x, "sComment", value.asInstanceOf[js.Any])
+        inline def setSComment(value: String): Self = StObject.set(x, "sComment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
+        inline def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
       }
     }
     
@@ -786,8 +697,7 @@ object packages {
     }
     object ZipFileAccess {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         ElementNames: SafeArray[String],
         ElementType: `type`,
         acquire: () => Unit,
@@ -805,11 +715,9 @@ object packages {
         __obj.asInstanceOf[ZipFileAccess]
       }
       
-      @scala.inline
-      implicit class ZipFileAccessMutableBuilder[Self <: ZipFileAccess] (val x: Self) extends AnyVal {
+      extension [Self <: ZipFileAccess](x: Self) {
         
-        @scala.inline
-        def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
+        inline def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
       }
     }
     

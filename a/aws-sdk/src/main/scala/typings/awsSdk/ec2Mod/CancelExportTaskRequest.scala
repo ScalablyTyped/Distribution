@@ -13,16 +13,13 @@ trait CancelExportTaskRequest extends StObject {
 }
 object CancelExportTaskRequest {
   
-  @scala.inline
-  def apply(ExportTaskId: ExportVmTaskId): CancelExportTaskRequest = {
+  inline def apply(ExportTaskId: ExportVmTaskId): CancelExportTaskRequest = {
     val __obj = js.Dynamic.literal(ExportTaskId = ExportTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelExportTaskRequest]
   }
   
-  @scala.inline
-  implicit class CancelExportTaskRequestMutableBuilder[Self <: CancelExportTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelExportTaskRequest](x: Self) {
     
-    @scala.inline
-    def setExportTaskId(value: ExportVmTaskId): Self = StObject.set(x, "ExportTaskId", value.asInstanceOf[js.Any])
+    inline def setExportTaskId(value: ExportVmTaskId): Self = StObject.set(x, "ExportTaskId", value.asInstanceOf[js.Any])
   }
 }

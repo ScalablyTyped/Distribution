@@ -42,8 +42,7 @@ trait CreateBatchParams extends StObject {
 }
 object CreateBatchParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _function: Function | String,
     input_bucket_location: String,
     input_bucket_name: String,
@@ -56,46 +55,32 @@ object CreateBatchParams {
     __obj.asInstanceOf[CreateBatchParams]
   }
   
-  @scala.inline
-  implicit class CreateBatchParamsMutableBuilder[Self <: CreateBatchParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBatchParams](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setInput_bucket_location(value: String): Self = StObject.set(x, "input_bucket_location", value.asInstanceOf[js.Any])
+    inline def setInput_bucket_location(value: String): Self = StObject.set(x, "input_bucket_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_bucket_name(value: String): Self = StObject.set(x, "input_bucket_name", value.asInstanceOf[js.Any])
+    inline def setInput_bucket_name(value: String): Self = StObject.set(x, "input_bucket_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "input_credentials_file", value.asInstanceOf[js.Any])
+    inline def setInput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "input_credentials_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setOutput_bucket_location(value: String): Self = StObject.set(x, "output_bucket_location", value.asInstanceOf[js.Any])
+    inline def setOutput_bucket_location(value: String): Self = StObject.set(x, "output_bucket_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_bucket_name(value: String): Self = StObject.set(x, "output_bucket_name", value.asInstanceOf[js.Any])
+    inline def setOutput_bucket_name(value: String): Self = StObject.set(x, "output_bucket_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "output_credentials_file", value.asInstanceOf[js.Any])
+    inline def setOutput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "output_credentials_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def set_function(value: Function | String): Self = StObject.set(x, "_function", value.asInstanceOf[js.Any])
+    inline def set_function(value: Function | String): Self = StObject.set(x, "_function", value.asInstanceOf[js.Any])
   }
 }

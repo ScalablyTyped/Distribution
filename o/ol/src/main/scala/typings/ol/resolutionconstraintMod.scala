@@ -12,40 +12,32 @@ object resolutionconstraintMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMinMaxResolution(maxResolution: Double, minResolution: Double): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(
+  inline def createMinMaxResolution(maxResolution: Double, minResolution: Double): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createMinMaxResolution(
     maxResolution: Double,
     minResolution: Double,
     opt_smooth: Boolean,
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Boolean, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(
+  inline def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Boolean, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createMinMaxResolution(
     maxResolution: Double,
     minResolution: Double,
     opt_smooth: Boolean,
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(
+  inline def createMinMaxResolution(
     maxResolution: Double,
     minResolution: Double,
     opt_smooth: Unit,
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Unit, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createMinMaxResolution(
+  inline def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Unit, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createMinMaxResolution(
     maxResolution: Double,
     minResolution: Double,
     opt_smooth: Unit,
@@ -53,14 +45,10 @@ object resolutionconstraintMod {
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinMaxResolution")(maxResolution.asInstanceOf[js.Any], minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
   
-  @scala.inline
-  def createSnapToPower(power: Double, maxResolution: Double): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Double): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Double, opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(power: Double, maxResolution: Double): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Double): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Double, opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Double,
@@ -68,16 +56,14 @@ object resolutionconstraintMod {
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Double,
     opt_smooth: Boolean,
     opt_maxExtent: Extent
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Double,
@@ -85,8 +71,7 @@ object resolutionconstraintMod {
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Double,
@@ -94,16 +79,14 @@ object resolutionconstraintMod {
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Double,
     opt_smooth: Unit,
     opt_maxExtent: Extent
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Double,
@@ -111,10 +94,8 @@ object resolutionconstraintMod {
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Unit, opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Unit, opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Unit,
@@ -122,16 +103,14 @@ object resolutionconstraintMod {
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Unit,
     opt_smooth: Boolean,
     opt_maxExtent: Extent
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Unit,
@@ -139,8 +118,7 @@ object resolutionconstraintMod {
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Unit,
@@ -148,16 +126,14 @@ object resolutionconstraintMod {
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Unit,
     opt_smooth: Unit,
     opt_maxExtent: Extent
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToPower(
+  inline def createSnapToPower(
     power: Double,
     maxResolution: Double,
     opt_minResolution: Unit,
@@ -166,32 +142,24 @@ object resolutionconstraintMod {
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToPower")(power.asInstanceOf[js.Any], maxResolution.asInstanceOf[js.Any], opt_minResolution.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
   
-  @scala.inline
-  def createSnapToResolutions(resolutions: js.Array[Double]): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any]).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(
+  inline def createSnapToResolutions(resolutions: js.Array[Double]): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any]).asInstanceOf[Type]
+  inline def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToResolutions(
     resolutions: js.Array[Double],
     opt_smooth: Boolean,
     opt_maxExtent: Unit,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Boolean, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(
+  inline def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Boolean, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToResolutions(
     resolutions: js.Array[Double],
     opt_smooth: Boolean,
     opt_maxExtent: Extent,
     opt_showFullExtent: Boolean
   ): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Unit, opt_maxExtent: Unit, opt_showFullExtent: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Unit, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
-  @scala.inline
-  def createSnapToResolutions(
+  inline def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Unit, opt_maxExtent: Unit, opt_showFullExtent: Boolean): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any], opt_showFullExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Unit, opt_maxExtent: Extent): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("createSnapToResolutions")(resolutions.asInstanceOf[js.Any], opt_smooth.asInstanceOf[js.Any], opt_maxExtent.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def createSnapToResolutions(
     resolutions: js.Array[Double],
     opt_smooth: Unit,
     opt_maxExtent: Extent,

@@ -16,37 +16,28 @@ trait WalkOptionsVisit[NodeType /* <: CssNode */] extends StObject {
 }
 object WalkOptionsVisit {
   
-  @scala.inline
-  def apply[NodeType /* <: CssNode */](
+  inline def apply[NodeType /* <: CssNode */](
     visit: /* import warning: importer.ImportType#apply Failed type conversion: NodeType['type'] */ js.Any
   ): WalkOptionsVisit[NodeType] = {
     val __obj = js.Dynamic.literal(visit = visit.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkOptionsVisit[NodeType]]
   }
   
-  @scala.inline
-  implicit class WalkOptionsVisitMutableBuilder[Self <: WalkOptionsVisit[?], NodeType /* <: CssNode */] (val x: Self & WalkOptionsVisit[NodeType]) extends AnyVal {
+  extension [Self <: WalkOptionsVisit[?], NodeType /* <: CssNode */](x: Self & WalkOptionsVisit[NodeType]) {
     
-    @scala.inline
-    def setEnter(value: EnterOrLeaveFn[NodeType]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: EnterOrLeaveFn[NodeType]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setLeave(value: EnterOrLeaveFn[NodeType]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+    inline def setLeave(value: EnterOrLeaveFn[NodeType]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+    inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setVisit(
+    inline def setVisit(
       value: /* import warning: importer.ImportType#apply Failed type conversion: NodeType['type'] */ js.Any
     ): Self = StObject.set(x, "visit", value.asInstanceOf[js.Any])
   }

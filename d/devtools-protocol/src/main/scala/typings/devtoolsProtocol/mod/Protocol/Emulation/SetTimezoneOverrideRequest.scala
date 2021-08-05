@@ -14,16 +14,13 @@ trait SetTimezoneOverrideRequest extends StObject {
 }
 object SetTimezoneOverrideRequest {
   
-  @scala.inline
-  def apply(timezoneId: String): SetTimezoneOverrideRequest = {
+  inline def apply(timezoneId: String): SetTimezoneOverrideRequest = {
     val __obj = js.Dynamic.literal(timezoneId = timezoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTimezoneOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetTimezoneOverrideRequestMutableBuilder[Self <: SetTimezoneOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetTimezoneOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setTimezoneId(value: String): Self = StObject.set(x, "timezoneId", value.asInstanceOf[js.Any])
+    inline def setTimezoneId(value: String): Self = StObject.set(x, "timezoneId", value.asInstanceOf[js.Any])
   }
 }

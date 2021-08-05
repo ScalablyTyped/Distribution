@@ -17,13 +17,10 @@ object TableValidationVisibility {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def INVISIBLE: `0` = 0.asInstanceOf[`0`]
+    inline def INVISIBLE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SORTEDASCENDING: `2` = 2.asInstanceOf[`2`]
+    inline def SORTEDASCENDING: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def UNSORTED: `1` = 1.asInstanceOf[`1`]
+    inline def UNSORTED: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -22,17 +22,14 @@ object typesIdempotencyParameterMismatchExceptionMod {
   }
   object IdempotencyParameterMismatchException {
     
-    @scala.inline
-    def apply(): IdempotencyParameterMismatchException = {
+    inline def apply(): IdempotencyParameterMismatchException = {
       val __obj = js.Dynamic.literal(name = "IdempotencyParameterMismatchException")
       __obj.asInstanceOf[IdempotencyParameterMismatchException]
     }
     
-    @scala.inline
-    implicit class IdempotencyParameterMismatchExceptionMutableBuilder[Self <: IdempotencyParameterMismatchException] (val x: Self) extends AnyVal {
+    extension [Self <: IdempotencyParameterMismatchException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.IdempotencyParameterMismatchException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

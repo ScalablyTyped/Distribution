@@ -23,31 +23,23 @@ trait CreateDetectorVersionResult extends StObject {
 }
 object CreateDetectorVersionResult {
   
-  @scala.inline
-  def apply(): CreateDetectorVersionResult = {
+  inline def apply(): CreateDetectorVersionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDetectorVersionResult]
   }
   
-  @scala.inline
-  implicit class CreateDetectorVersionResultMutableBuilder[Self <: CreateDetectorVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDetectorVersionResult](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+    inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
     
-    @scala.inline
-    def setDetectorVersionId(value: nonEmptyString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: nonEmptyString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
+    inline def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DetectorVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DetectorVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

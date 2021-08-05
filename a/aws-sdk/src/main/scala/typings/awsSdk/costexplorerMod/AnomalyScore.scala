@@ -18,19 +18,15 @@ trait AnomalyScore extends StObject {
 }
 object AnomalyScore {
   
-  @scala.inline
-  def apply(CurrentScore: GenericDouble, MaxScore: GenericDouble): AnomalyScore = {
+  inline def apply(CurrentScore: GenericDouble, MaxScore: GenericDouble): AnomalyScore = {
     val __obj = js.Dynamic.literal(CurrentScore = CurrentScore.asInstanceOf[js.Any], MaxScore = MaxScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnomalyScore]
   }
   
-  @scala.inline
-  implicit class AnomalyScoreMutableBuilder[Self <: AnomalyScore] (val x: Self) extends AnyVal {
+  extension [Self <: AnomalyScore](x: Self) {
     
-    @scala.inline
-    def setCurrentScore(value: GenericDouble): Self = StObject.set(x, "CurrentScore", value.asInstanceOf[js.Any])
+    inline def setCurrentScore(value: GenericDouble): Self = StObject.set(x, "CurrentScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScore(value: GenericDouble): Self = StObject.set(x, "MaxScore", value.asInstanceOf[js.Any])
+    inline def setMaxScore(value: GenericDouble): Self = StObject.set(x, "MaxScore", value.asInstanceOf[js.Any])
   }
 }

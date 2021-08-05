@@ -18,25 +18,19 @@ trait CancelChangeSetResponse extends StObject {
 }
 object CancelChangeSetResponse {
   
-  @scala.inline
-  def apply(): CancelChangeSetResponse = {
+  inline def apply(): CancelChangeSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelChangeSetResponse]
   }
   
-  @scala.inline
-  implicit class CancelChangeSetResponseMutableBuilder[Self <: CancelChangeSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelChangeSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeSetArn(value: ARN): Self = StObject.set(x, "ChangeSetArn", value.asInstanceOf[js.Any])
+    inline def setChangeSetArn(value: ARN): Self = StObject.set(x, "ChangeSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetArnUndefined: Self = StObject.set(x, "ChangeSetArn", js.undefined)
+    inline def setChangeSetArnUndefined: Self = StObject.set(x, "ChangeSetArn", js.undefined)
     
-    @scala.inline
-    def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
+    inline def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
+    inline def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
   }
 }

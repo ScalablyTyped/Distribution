@@ -10,19 +10,15 @@ trait ModifyOptionGroupResult extends StObject {
 }
 object ModifyOptionGroupResult {
   
-  @scala.inline
-  def apply(): ModifyOptionGroupResult = {
+  inline def apply(): ModifyOptionGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyOptionGroupResult]
   }
   
-  @scala.inline
-  implicit class ModifyOptionGroupResultMutableBuilder[Self <: ModifyOptionGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyOptionGroupResult](x: Self) {
     
-    @scala.inline
-    def setOptionGroup(value: OptionGroup): Self = StObject.set(x, "OptionGroup", value.asInstanceOf[js.Any])
+    inline def setOptionGroup(value: OptionGroup): Self = StObject.set(x, "OptionGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupUndefined: Self = StObject.set(x, "OptionGroup", js.undefined)
+    inline def setOptionGroupUndefined: Self = StObject.set(x, "OptionGroup", js.undefined)
   }
 }

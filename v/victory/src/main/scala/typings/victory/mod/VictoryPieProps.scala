@@ -175,136 +175,95 @@ trait VictoryPieProps
 }
 object VictoryPieProps {
   
-  @scala.inline
-  def apply(): VictoryPieProps = {
+  inline def apply(): VictoryPieProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryPieProps]
   }
   
-  @scala.inline
-  implicit class VictoryPiePropsMutableBuilder[Self <: VictoryPieProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryPieProps](x: Self) {
     
-    @scala.inline
-    def setColorScale(value: ColorScalePropType): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: ColorScalePropType): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
+    inline def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
-    @scala.inline
-    def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
+    inline def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
     
-    @scala.inline
-    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])
+    inline def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataComponentUndefined: Self = StObject.set(x, "dataComponent", js.undefined)
+    inline def setDataComponentUndefined: Self = StObject.set(x, "dataComponent", js.undefined)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+    inline def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
+    inline def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+    inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
-    @scala.inline
-    def setEvents(
+    inline def setEvents(
       value: js.Array[
           EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback | (js.Array[Double | String])]
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(
+    inline def setEventsVarargs(
       value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback | (js.Array[Double | String])])*
     ): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setInnerRadius(value: Double | (js.Function1[/* props */ VictorySliceProps, Double])): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: Double | (js.Function1[/* props */ VictorySliceProps, Double])): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadiusFunction1(value: /* props */ VictorySliceProps => Double): Self = StObject.set(x, "innerRadius", js.Any.fromFunction1(value))
+    inline def setInnerRadiusFunction1(value: /* props */ VictorySliceProps => Double): Self = StObject.set(x, "innerRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
-    @scala.inline
-    def setLabelRadius(value: Double): Self = StObject.set(x, "labelRadius", value.asInstanceOf[js.Any])
+    inline def setLabelRadius(value: Double): Self = StObject.set(x, "labelRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelRadiusUndefined: Self = StObject.set(x, "labelRadius", js.undefined)
+    inline def setLabelRadiusUndefined: Self = StObject.set(x, "labelRadius", js.undefined)
     
-    @scala.inline
-    def setPadAngle(value: Double): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
+    inline def setPadAngle(value: Double): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
+    inline def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
-    @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setX(value: DataGetterPropType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: DataGetterPropType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
+    inline def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
     
-    @scala.inline
-    def setY(value: DataGetterPropType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: DataGetterPropType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
+    inline def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

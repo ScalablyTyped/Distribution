@@ -18,22 +18,17 @@ trait UpdateRegistryRequest extends StObject {
 }
 object UpdateRegistryRequest {
   
-  @scala.inline
-  def apply(RegistryName: string): UpdateRegistryRequest = {
+  inline def apply(RegistryName: string): UpdateRegistryRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRegistryRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRegistryRequestMutableBuilder[Self <: UpdateRegistryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRegistryRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
   }
 }

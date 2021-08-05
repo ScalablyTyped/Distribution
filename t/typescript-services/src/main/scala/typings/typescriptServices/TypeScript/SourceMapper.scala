@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SourceMapper extends StObject {
   
-  var allSourceMappings: js.Any
+  /* private */ var allSourceMappings: js.Any
   
   var currentMappings: js.Array[js.Array[SourceMapping]]
   
@@ -20,11 +20,11 @@ trait SourceMapper extends StObject {
   
   def increaseMappingLevel(ast: IASTSpan): Unit
   
-  var jsFile: js.Any
+  /* private */ var jsFile: js.Any
   
-  var jsFileName: js.Any
+  /* private */ var jsFileName: js.Any
   
-  var mappingLevel: js.Any
+  /* private */ var mappingLevel: js.Any
   
   var names: js.Array[String]
   
@@ -34,22 +34,21 @@ trait SourceMapper extends StObject {
   
   /* private */ def setSourceMapOptions(document: js.Any, jsFilePath: js.Any, emitOptions: js.Any, resolvePath: js.Any): js.Any
   
-  var sourceMapDirectory: js.Any
+  /* private */ var sourceMapDirectory: js.Any
   
-  var sourceMapEntries: js.Any
+  /* private */ var sourceMapEntries: js.Any
   
-  var sourceMapOut: js.Any
+  /* private */ var sourceMapOut: js.Any
   
-  var sourceMapPath: js.Any
+  /* private */ var sourceMapPath: js.Any
   
-  var sourceRoot: js.Any
+  /* private */ var sourceRoot: js.Any
   
-  var tsFilePaths: js.Any
+  /* private */ var tsFilePaths: js.Any
 }
 object SourceMapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allSourceMappings: js.Any,
     currentMappings: js.Array[js.Array[SourceMapping]],
     currentNameIndex: js.Array[Double],
@@ -75,76 +74,52 @@ object SourceMapper {
     __obj.asInstanceOf[SourceMapper]
   }
   
-  @scala.inline
-  implicit class SourceMapperMutableBuilder[Self <: SourceMapper] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMapper](x: Self) {
     
-    @scala.inline
-    def setAllSourceMappings(value: js.Any): Self = StObject.set(x, "allSourceMappings", value.asInstanceOf[js.Any])
+    inline def setAllSourceMappings(value: js.Any): Self = StObject.set(x, "allSourceMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentMappings(value: js.Array[js.Array[SourceMapping]]): Self = StObject.set(x, "currentMappings", value.asInstanceOf[js.Any])
+    inline def setCurrentMappings(value: js.Array[js.Array[SourceMapping]]): Self = StObject.set(x, "currentMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentMappingsVarargs(value: js.Array[SourceMapping]*): Self = StObject.set(x, "currentMappings", js.Array(value :_*))
+    inline def setCurrentMappingsVarargs(value: js.Array[SourceMapping]*): Self = StObject.set(x, "currentMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentNameIndex(value: js.Array[Double]): Self = StObject.set(x, "currentNameIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentNameIndex(value: js.Array[Double]): Self = StObject.set(x, "currentNameIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentNameIndexVarargs(value: Double*): Self = StObject.set(x, "currentNameIndex", js.Array(value :_*))
+    inline def setCurrentNameIndexVarargs(value: Double*): Self = StObject.set(x, "currentNameIndex", js.Array(value :_*))
     
-    @scala.inline
-    def setDecreaseMappingLevel(value: IASTSpan => Unit): Self = StObject.set(x, "decreaseMappingLevel", js.Any.fromFunction1(value))
+    inline def setDecreaseMappingLevel(value: IASTSpan => Unit): Self = StObject.set(x, "decreaseMappingLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitSourceMapping(value: () => Unit): Self = StObject.set(x, "emitSourceMapping", js.Any.fromFunction0(value))
+    inline def setEmitSourceMapping(value: () => Unit): Self = StObject.set(x, "emitSourceMapping", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOutputFile(value: () => OutputFile): Self = StObject.set(x, "getOutputFile", js.Any.fromFunction0(value))
+    inline def setGetOutputFile(value: () => OutputFile): Self = StObject.set(x, "getOutputFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncreaseMappingLevel(value: IASTSpan => Unit): Self = StObject.set(x, "increaseMappingLevel", js.Any.fromFunction1(value))
+    inline def setIncreaseMappingLevel(value: IASTSpan => Unit): Self = StObject.set(x, "increaseMappingLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJsFile(value: js.Any): Self = StObject.set(x, "jsFile", value.asInstanceOf[js.Any])
+    inline def setJsFile(value: js.Any): Self = StObject.set(x, "jsFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsFileName(value: js.Any): Self = StObject.set(x, "jsFileName", value.asInstanceOf[js.Any])
+    inline def setJsFileName(value: js.Any): Self = StObject.set(x, "jsFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingLevel(value: js.Any): Self = StObject.set(x, "mappingLevel", value.asInstanceOf[js.Any])
+    inline def setMappingLevel(value: js.Any): Self = StObject.set(x, "mappingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setSetNewSourceFile(value: (Document, EmitOptions) => Unit): Self = StObject.set(x, "setNewSourceFile", js.Any.fromFunction2(value))
+    inline def setSetNewSourceFile(value: (Document, EmitOptions) => Unit): Self = StObject.set(x, "setNewSourceFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetNewSourceFilePath(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setNewSourceFilePath", js.Any.fromFunction2(value))
+    inline def setSetNewSourceFilePath(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setNewSourceFilePath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSourceMapOptions(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "setSourceMapOptions", js.Any.fromFunction4(value))
+    inline def setSetSourceMapOptions(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "setSourceMapOptions", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSourceMapDirectory(value: js.Any): Self = StObject.set(x, "sourceMapDirectory", value.asInstanceOf[js.Any])
+    inline def setSourceMapDirectory(value: js.Any): Self = StObject.set(x, "sourceMapDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapEntries(value: js.Any): Self = StObject.set(x, "sourceMapEntries", value.asInstanceOf[js.Any])
+    inline def setSourceMapEntries(value: js.Any): Self = StObject.set(x, "sourceMapEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapOut(value: js.Any): Self = StObject.set(x, "sourceMapOut", value.asInstanceOf[js.Any])
+    inline def setSourceMapOut(value: js.Any): Self = StObject.set(x, "sourceMapOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapPath(value: js.Any): Self = StObject.set(x, "sourceMapPath", value.asInstanceOf[js.Any])
+    inline def setSourceMapPath(value: js.Any): Self = StObject.set(x, "sourceMapPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRoot(value: js.Any): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+    inline def setSourceRoot(value: js.Any): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTsFilePaths(value: js.Any): Self = StObject.set(x, "tsFilePaths", value.asInstanceOf[js.Any])
+    inline def setTsFilePaths(value: js.Any): Self = StObject.set(x, "tsFilePaths", value.asInstanceOf[js.Any])
   }
 }

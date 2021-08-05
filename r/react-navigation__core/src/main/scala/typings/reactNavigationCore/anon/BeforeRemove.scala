@@ -15,8 +15,7 @@ trait BeforeRemove extends StObject {
 }
 object BeforeRemove {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beforeRemove: Record[String, js.UndefOr[ChildBeforeRemoveListener]],
     getState: Record[String, js.UndefOr[GetStateListener]]
   ): BeforeRemove = {
@@ -24,13 +23,10 @@ object BeforeRemove {
     __obj.asInstanceOf[BeforeRemove]
   }
   
-  @scala.inline
-  implicit class BeforeRemoveMutableBuilder[Self <: BeforeRemove] (val x: Self) extends AnyVal {
+  extension [Self <: BeforeRemove](x: Self) {
     
-    @scala.inline
-    def setBeforeRemove(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
+    inline def setBeforeRemove(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetState(value: Record[String, js.UndefOr[GetStateListener]]): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
+    inline def setGetState(value: Record[String, js.UndefOr[GetStateListener]]): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
   }
 }

@@ -16,17 +16,14 @@ object typesInvalidActorArnExceptionMod {
   }
   object InvalidActorArnException {
     
-    @scala.inline
-    def apply(): InvalidActorArnException = {
+    inline def apply(): InvalidActorArnException = {
       val __obj = js.Dynamic.literal(name = "InvalidActorArnException")
       __obj.asInstanceOf[InvalidActorArnException]
     }
     
-    @scala.inline
-    implicit class InvalidActorArnExceptionMutableBuilder[Self <: InvalidActorArnException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidActorArnException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidActorArnException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

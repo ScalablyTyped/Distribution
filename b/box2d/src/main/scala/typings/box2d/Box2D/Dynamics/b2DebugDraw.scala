@@ -157,8 +157,7 @@ trait b2DebugDraw extends StObject {
 }
 object b2DebugDraw {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppendFlags: Double => Unit,
     ClearFlags: Double => Unit,
     DrawCircle: (b2Vec2, Double, b2Color) => Unit,
@@ -186,73 +185,50 @@ object b2DebugDraw {
     __obj.asInstanceOf[b2DebugDraw]
   }
   
-  @scala.inline
-  implicit class b2DebugDrawMutableBuilder[Self <: b2DebugDraw] (val x: Self) extends AnyVal {
+  extension [Self <: b2DebugDraw](x: Self) {
     
-    @scala.inline
-    def setAppendFlags(value: Double => Unit): Self = StObject.set(x, "AppendFlags", js.Any.fromFunction1(value))
+    inline def setAppendFlags(value: Double => Unit): Self = StObject.set(x, "AppendFlags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearFlags(value: Double => Unit): Self = StObject.set(x, "ClearFlags", js.Any.fromFunction1(value))
+    inline def setClearFlags(value: Double => Unit): Self = StObject.set(x, "ClearFlags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrawCircle(value: (b2Vec2, Double, b2Color) => Unit): Self = StObject.set(x, "DrawCircle", js.Any.fromFunction3(value))
+    inline def setDrawCircle(value: (b2Vec2, Double, b2Color) => Unit): Self = StObject.set(x, "DrawCircle", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawPolygon(value: (js.Array[b2Vec2], Double, b2Color) => Unit): Self = StObject.set(x, "DrawPolygon", js.Any.fromFunction3(value))
+    inline def setDrawPolygon(value: (js.Array[b2Vec2], Double, b2Color) => Unit): Self = StObject.set(x, "DrawPolygon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawSegment(value: (b2Vec2, b2Vec2, b2Color) => Unit): Self = StObject.set(x, "DrawSegment", js.Any.fromFunction3(value))
+    inline def setDrawSegment(value: (b2Vec2, b2Vec2, b2Color) => Unit): Self = StObject.set(x, "DrawSegment", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawSolidCircle(value: (b2Vec2, Double, b2Vec2, b2Color) => Unit): Self = StObject.set(x, "DrawSolidCircle", js.Any.fromFunction4(value))
+    inline def setDrawSolidCircle(value: (b2Vec2, Double, b2Vec2, b2Color) => Unit): Self = StObject.set(x, "DrawSolidCircle", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawSolidPolygon(value: (js.Array[b2Vec2], Double, b2Color) => Unit): Self = StObject.set(x, "DrawSolidPolygon", js.Any.fromFunction3(value))
+    inline def setDrawSolidPolygon(value: (js.Array[b2Vec2], Double, b2Color) => Unit): Self = StObject.set(x, "DrawSolidPolygon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawTransform(value: b2Transform => Unit): Self = StObject.set(x, "DrawTransform", js.Any.fromFunction1(value))
+    inline def setDrawTransform(value: b2Transform => Unit): Self = StObject.set(x, "DrawTransform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAlpha(value: () => Double): Self = StObject.set(x, "GetAlpha", js.Any.fromFunction0(value))
+    inline def setGetAlpha(value: () => Double): Self = StObject.set(x, "GetAlpha", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDrawScale(value: () => Double): Self = StObject.set(x, "GetDrawScale", js.Any.fromFunction0(value))
+    inline def setGetDrawScale(value: () => Double): Self = StObject.set(x, "GetDrawScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFillAlpha(value: () => Double): Self = StObject.set(x, "GetFillAlpha", js.Any.fromFunction0(value))
+    inline def setGetFillAlpha(value: () => Double): Self = StObject.set(x, "GetFillAlpha", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFlags(value: () => Double): Self = StObject.set(x, "GetFlags", js.Any.fromFunction0(value))
+    inline def setGetFlags(value: () => Double): Self = StObject.set(x, "GetFlags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLineThickness(value: () => Double): Self = StObject.set(x, "GetLineThickness", js.Any.fromFunction0(value))
+    inline def setGetLineThickness(value: () => Double): Self = StObject.set(x, "GetLineThickness", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSprite(value: () => CanvasRenderingContext2D): Self = StObject.set(x, "GetSprite", js.Any.fromFunction0(value))
+    inline def setGetSprite(value: () => CanvasRenderingContext2D): Self = StObject.set(x, "GetSprite", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXFormScale(value: () => Double): Self = StObject.set(x, "GetXFormScale", js.Any.fromFunction0(value))
+    inline def setGetXFormScale(value: () => Double): Self = StObject.set(x, "GetXFormScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "SetAlpha", js.Any.fromFunction1(value))
+    inline def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "SetAlpha", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDrawScale(value: Double => Unit): Self = StObject.set(x, "SetDrawScale", js.Any.fromFunction1(value))
+    inline def setSetDrawScale(value: Double => Unit): Self = StObject.set(x, "SetDrawScale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFillAlpha(value: Double => Unit): Self = StObject.set(x, "SetFillAlpha", js.Any.fromFunction1(value))
+    inline def setSetFillAlpha(value: Double => Unit): Self = StObject.set(x, "SetFillAlpha", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFlags(value: Double => Unit): Self = StObject.set(x, "SetFlags", js.Any.fromFunction1(value))
+    inline def setSetFlags(value: Double => Unit): Self = StObject.set(x, "SetFlags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLineThickness(value: Double => Unit): Self = StObject.set(x, "SetLineThickness", js.Any.fromFunction1(value))
+    inline def setSetLineThickness(value: Double => Unit): Self = StObject.set(x, "SetLineThickness", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSprite(value: CanvasRenderingContext2D => Unit): Self = StObject.set(x, "SetSprite", js.Any.fromFunction1(value))
+    inline def setSetSprite(value: CanvasRenderingContext2D => Unit): Self = StObject.set(x, "SetSprite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXFormScale(value: Double => Unit): Self = StObject.set(x, "SetXFormScale", js.Any.fromFunction1(value))
+    inline def setSetXFormScale(value: Double => Unit): Self = StObject.set(x, "SetXFormScale", js.Any.fromFunction1(value))
   }
 }

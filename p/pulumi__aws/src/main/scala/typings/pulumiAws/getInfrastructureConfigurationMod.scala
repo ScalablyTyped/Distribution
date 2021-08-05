@@ -13,10 +13,8 @@ object getInfrastructureConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
-  @scala.inline
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
+  inline def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
+  inline def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
   
   trait GetInfrastructureConfigurationArgs extends StObject {
     
@@ -37,29 +35,22 @@ object getInfrastructureConfigurationMod {
   }
   object GetInfrastructureConfigurationArgs {
     
-    @scala.inline
-    def apply(arn: String): GetInfrastructureConfigurationArgs = {
+    inline def apply(arn: String): GetInfrastructureConfigurationArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetInfrastructureConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class GetInfrastructureConfigurationArgsMutableBuilder[Self <: GetInfrastructureConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInfrastructureConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTags(value: StringDictionary[String]): Self = StObject.set(x, "resourceTags", value.asInstanceOf[js.Any])
+      inline def setResourceTags(value: StringDictionary[String]): Self = StObject.set(x, "resourceTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTagsUndefined: Self = StObject.set(x, "resourceTags", js.undefined)
+      inline def setResourceTagsUndefined: Self = StObject.set(x, "resourceTags", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -141,8 +132,7 @@ object getInfrastructureConfigurationMod {
   }
   object GetInfrastructureConfigurationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       dateCreated: String,
       dateUpdated: String,
@@ -164,65 +154,45 @@ object getInfrastructureConfigurationMod {
       __obj.asInstanceOf[GetInfrastructureConfigurationResult]
     }
     
-    @scala.inline
-    implicit class GetInfrastructureConfigurationResultMutableBuilder[Self <: GetInfrastructureConfigurationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInfrastructureConfigurationResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUpdated(value: String): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
+      inline def setDateUpdated(value: String): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceProfileName(value: String): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
+      inline def setInstanceProfileName(value: String): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+      inline def setInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+      inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyPair(value: String): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
+      inline def setKeyPair(value: String): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggings(value: js.Array[GetInfrastructureConfigurationLogging]): Self = StObject.set(x, "loggings", value.asInstanceOf[js.Any])
+      inline def setLoggings(value: js.Array[GetInfrastructureConfigurationLogging]): Self = StObject.set(x, "loggings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingsVarargs(value: GetInfrastructureConfigurationLogging*): Self = StObject.set(x, "loggings", js.Array(value :_*))
+      inline def setLoggingsVarargs(value: GetInfrastructureConfigurationLogging*): Self = StObject.set(x, "loggings", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTags(value: StringDictionary[String]): Self = StObject.set(x, "resourceTags", value.asInstanceOf[js.Any])
+      inline def setResourceTags(value: StringDictionary[String]): Self = StObject.set(x, "resourceTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSnsTopicArn(value: String): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: String): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminateInstanceOnFailure(value: Boolean): Self = StObject.set(x, "terminateInstanceOnFailure", value.asInstanceOf[js.Any])
+      inline def setTerminateInstanceOnFailure(value: Boolean): Self = StObject.set(x, "terminateInstanceOnFailure", value.asInstanceOf[js.Any])
     }
   }
 }

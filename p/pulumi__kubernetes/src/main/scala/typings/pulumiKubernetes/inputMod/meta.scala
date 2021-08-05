@@ -27,29 +27,22 @@ object meta {
     }
     object LabelSelector {
       
-      @scala.inline
-      def apply(): LabelSelector = {
+      inline def apply(): LabelSelector = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LabelSelector]
       }
       
-      @scala.inline
-      implicit class LabelSelectorMutableBuilder[Self <: LabelSelector] (val x: Self) extends AnyVal {
+      extension [Self <: LabelSelector](x: Self) {
         
-        @scala.inline
-        def setMatchExpressions(value: Input[js.Array[Input[LabelSelectorRequirement]]]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
+        inline def setMatchExpressions(value: Input[js.Array[Input[LabelSelectorRequirement]]]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchExpressionsUndefined: Self = StObject.set(x, "matchExpressions", js.undefined)
+        inline def setMatchExpressionsUndefined: Self = StObject.set(x, "matchExpressions", js.undefined)
         
-        @scala.inline
-        def setMatchExpressionsVarargs(value: Input[LabelSelectorRequirement]*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
+        inline def setMatchExpressionsVarargs(value: Input[LabelSelectorRequirement]*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
         
-        @scala.inline
-        def setMatchLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "matchLabels", value.asInstanceOf[js.Any])
+        inline def setMatchLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "matchLabels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchLabelsUndefined: Self = StObject.set(x, "matchLabels", js.undefined)
+        inline def setMatchLabelsUndefined: Self = StObject.set(x, "matchLabels", js.undefined)
       }
     }
     
@@ -75,29 +68,22 @@ object meta {
     }
     object LabelSelectorRequirement {
       
-      @scala.inline
-      def apply(key: Input[String], operator: Input[String]): LabelSelectorRequirement = {
+      inline def apply(key: Input[String], operator: Input[String]): LabelSelectorRequirement = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
         __obj.asInstanceOf[LabelSelectorRequirement]
       }
       
-      @scala.inline
-      implicit class LabelSelectorRequirementMutableBuilder[Self <: LabelSelectorRequirement] (val x: Self) extends AnyVal {
+      extension [Self <: LabelSelectorRequirement](x: Self) {
         
-        @scala.inline
-        def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+        inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        @scala.inline
-        def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
       }
     }
     
@@ -130,38 +116,28 @@ object meta {
     }
     object ListMeta {
       
-      @scala.inline
-      def apply(): ListMeta = {
+      inline def apply(): ListMeta = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListMeta]
       }
       
-      @scala.inline
-      implicit class ListMetaMutableBuilder[Self <: ListMeta] (val x: Self) extends AnyVal {
+      extension [Self <: ListMeta](x: Self) {
         
-        @scala.inline
-        def setContinue(value: Input[String]): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+        inline def setContinue(value: Input[String]): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
+        inline def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
         
-        @scala.inline
-        def setRemainingItemCount(value: Input[Double]): Self = StObject.set(x, "remainingItemCount", value.asInstanceOf[js.Any])
+        inline def setRemainingItemCount(value: Input[Double]): Self = StObject.set(x, "remainingItemCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemainingItemCountUndefined: Self = StObject.set(x, "remainingItemCount", js.undefined)
+        inline def setRemainingItemCountUndefined: Self = StObject.set(x, "remainingItemCount", js.undefined)
         
-        @scala.inline
-        def setResourceVersion(value: Input[String]): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+        inline def setResourceVersion(value: Input[String]): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
+        inline def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
         
-        @scala.inline
-        def setSelfLink(value: Input[String]): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: Input[String]): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+        inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
       }
     }
     
@@ -202,50 +178,36 @@ object meta {
     }
     object ManagedFieldsEntry {
       
-      @scala.inline
-      def apply(): ManagedFieldsEntry = {
+      inline def apply(): ManagedFieldsEntry = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ManagedFieldsEntry]
       }
       
-      @scala.inline
-      implicit class ManagedFieldsEntryMutableBuilder[Self <: ManagedFieldsEntry] (val x: Self) extends AnyVal {
+      extension [Self <: ManagedFieldsEntry](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setFieldsType(value: Input[String]): Self = StObject.set(x, "fieldsType", value.asInstanceOf[js.Any])
+        inline def setFieldsType(value: Input[String]): Self = StObject.set(x, "fieldsType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsTypeUndefined: Self = StObject.set(x, "fieldsType", js.undefined)
+        inline def setFieldsTypeUndefined: Self = StObject.set(x, "fieldsType", js.undefined)
         
-        @scala.inline
-        def setFieldsV1(value: js.Any): Self = StObject.set(x, "fieldsV1", value.asInstanceOf[js.Any])
+        inline def setFieldsV1(value: js.Any): Self = StObject.set(x, "fieldsV1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsV1Undefined: Self = StObject.set(x, "fieldsV1", js.undefined)
+        inline def setFieldsV1Undefined: Self = StObject.set(x, "fieldsV1", js.undefined)
         
-        @scala.inline
-        def setManager(value: Input[String]): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: Input[String]): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManagerUndefined: Self = StObject.set(x, "manager", js.undefined)
+        inline def setManagerUndefined: Self = StObject.set(x, "manager", js.undefined)
         
-        @scala.inline
-        def setOperation(value: Input[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+        inline def setOperation(value: Input[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+        inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
         
-        @scala.inline
-        def setTime(value: Input[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+        inline def setTime(value: Input[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+        inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       }
     }
     
@@ -352,119 +314,82 @@ object meta {
     }
     object ObjectMeta {
       
-      @scala.inline
-      def apply(): ObjectMeta = {
+      inline def apply(): ObjectMeta = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ObjectMeta]
       }
       
-      @scala.inline
-      implicit class ObjectMetaMutableBuilder[Self <: ObjectMeta] (val x: Self) extends AnyVal {
+      extension [Self <: ObjectMeta](x: Self) {
         
-        @scala.inline
-        def setAnnotations(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+        inline def setAnnotations(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+        inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
         
-        @scala.inline
-        def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+        inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+        inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
         
-        @scala.inline
-        def setCreationTimestamp(value: Input[String]): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+        inline def setCreationTimestamp(value: Input[String]): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+        inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
         
-        @scala.inline
-        def setDeletionGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
+        inline def setDeletionGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletionGracePeriodSecondsUndefined: Self = StObject.set(x, "deletionGracePeriodSeconds", js.undefined)
+        inline def setDeletionGracePeriodSecondsUndefined: Self = StObject.set(x, "deletionGracePeriodSeconds", js.undefined)
         
-        @scala.inline
-        def setDeletionTimestamp(value: Input[String]): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
+        inline def setDeletionTimestamp(value: Input[String]): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletionTimestampUndefined: Self = StObject.set(x, "deletionTimestamp", js.undefined)
+        inline def setDeletionTimestampUndefined: Self = StObject.set(x, "deletionTimestamp", js.undefined)
         
-        @scala.inline
-        def setFinalizers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
+        inline def setFinalizers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFinalizersUndefined: Self = StObject.set(x, "finalizers", js.undefined)
+        inline def setFinalizersUndefined: Self = StObject.set(x, "finalizers", js.undefined)
         
-        @scala.inline
-        def setFinalizersVarargs(value: Input[String]*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
+        inline def setFinalizersVarargs(value: Input[String]*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
         
-        @scala.inline
-        def setGenerateName(value: Input[String]): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
+        inline def setGenerateName(value: Input[String]): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGenerateNameUndefined: Self = StObject.set(x, "generateName", js.undefined)
+        inline def setGenerateNameUndefined: Self = StObject.set(x, "generateName", js.undefined)
         
-        @scala.inline
-        def setGeneration(value: Input[Double]): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+        inline def setGeneration(value: Input[Double]): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+        inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
         
-        @scala.inline
-        def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+        inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
         
-        @scala.inline
-        def setManagedFields(value: Input[js.Array[Input[ManagedFieldsEntry]]]): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
+        inline def setManagedFields(value: Input[js.Array[Input[ManagedFieldsEntry]]]): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManagedFieldsUndefined: Self = StObject.set(x, "managedFields", js.undefined)
+        inline def setManagedFieldsUndefined: Self = StObject.set(x, "managedFields", js.undefined)
         
-        @scala.inline
-        def setManagedFieldsVarargs(value: Input[ManagedFieldsEntry]*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
+        inline def setManagedFieldsVarargs(value: Input[ManagedFieldsEntry]*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setOwnerReferences(value: Input[js.Array[Input[OwnerReference]]]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
+        inline def setOwnerReferences(value: Input[js.Array[Input[OwnerReference]]]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerReferencesUndefined: Self = StObject.set(x, "ownerReferences", js.undefined)
+        inline def setOwnerReferencesUndefined: Self = StObject.set(x, "ownerReferences", js.undefined)
         
-        @scala.inline
-        def setOwnerReferencesVarargs(value: Input[OwnerReference]*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
+        inline def setOwnerReferencesVarargs(value: Input[OwnerReference]*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
         
-        @scala.inline
-        def setResourceVersion(value: Input[String]): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+        inline def setResourceVersion(value: Input[String]): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
+        inline def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
         
-        @scala.inline
-        def setSelfLink(value: Input[String]): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: Input[String]): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+        inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+        inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       }
     }
     
@@ -505,38 +430,28 @@ object meta {
     }
     object OwnerReference {
       
-      @scala.inline
-      def apply(apiVersion: Input[String], kind: Input[String], name: Input[String], uid: Input[String]): OwnerReference = {
+      inline def apply(apiVersion: Input[String], kind: Input[String], name: Input[String], uid: Input[String]): OwnerReference = {
         val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
         __obj.asInstanceOf[OwnerReference]
       }
       
-      @scala.inline
-      implicit class OwnerReferenceMutableBuilder[Self <: OwnerReference] (val x: Self) extends AnyVal {
+      extension [Self <: OwnerReference](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockOwnerDeletion(value: Input[Boolean]): Self = StObject.set(x, "blockOwnerDeletion", value.asInstanceOf[js.Any])
+        inline def setBlockOwnerDeletion(value: Input[Boolean]): Self = StObject.set(x, "blockOwnerDeletion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockOwnerDeletionUndefined: Self = StObject.set(x, "blockOwnerDeletion", js.undefined)
+        inline def setBlockOwnerDeletionUndefined: Self = StObject.set(x, "blockOwnerDeletion", js.undefined)
         
-        @scala.inline
-        def setController(value: Input[Boolean]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+        inline def setController(value: Input[Boolean]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+        inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       }
     }
     
@@ -566,32 +481,24 @@ object meta {
     }
     object StatusCause {
       
-      @scala.inline
-      def apply(): StatusCause = {
+      inline def apply(): StatusCause = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StatusCause]
       }
       
-      @scala.inline
-      implicit class StatusCauseMutableBuilder[Self <: StatusCause] (val x: Self) extends AnyVal {
+      extension [Self <: StatusCause](x: Self) {
         
-        @scala.inline
-        def setField(value: Input[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+        inline def setField(value: Input[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+        inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       }
     }
     
@@ -632,53 +539,38 @@ object meta {
     }
     object StatusDetails {
       
-      @scala.inline
-      def apply(): StatusDetails = {
+      inline def apply(): StatusDetails = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StatusDetails]
       }
       
-      @scala.inline
-      implicit class StatusDetailsMutableBuilder[Self <: StatusDetails] (val x: Self) extends AnyVal {
+      extension [Self <: StatusDetails](x: Self) {
         
-        @scala.inline
-        def setCauses(value: Input[js.Array[Input[StatusCause]]]): Self = StObject.set(x, "causes", value.asInstanceOf[js.Any])
+        inline def setCauses(value: Input[js.Array[Input[StatusCause]]]): Self = StObject.set(x, "causes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCausesUndefined: Self = StObject.set(x, "causes", js.undefined)
+        inline def setCausesUndefined: Self = StObject.set(x, "causes", js.undefined)
         
-        @scala.inline
-        def setCausesVarargs(value: Input[StatusCause]*): Self = StObject.set(x, "causes", js.Array(value :_*))
+        inline def setCausesVarargs(value: Input[StatusCause]*): Self = StObject.set(x, "causes", js.Array(value :_*))
         
-        @scala.inline
-        def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setRetryAfterSeconds(value: Input[Double]): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
+        inline def setRetryAfterSeconds(value: Input[Double]): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetryAfterSecondsUndefined: Self = StObject.set(x, "retryAfterSeconds", js.undefined)
+        inline def setRetryAfterSecondsUndefined: Self = StObject.set(x, "retryAfterSeconds", js.undefined)
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+        inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       }
     }
   }

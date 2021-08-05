@@ -18,19 +18,15 @@ trait ChartClickEventAxisObject extends StObject {
 }
 object ChartClickEventAxisObject {
   
-  @scala.inline
-  def apply(axis: Axis, value: Double): ChartClickEventAxisObject = {
+  inline def apply(axis: Axis, value: Double): ChartClickEventAxisObject = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartClickEventAxisObject]
   }
   
-  @scala.inline
-  implicit class ChartClickEventAxisObjectMutableBuilder[Self <: ChartClickEventAxisObject] (val x: Self) extends AnyVal {
+  extension [Self <: ChartClickEventAxisObject](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

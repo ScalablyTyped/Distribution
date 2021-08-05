@@ -37,8 +37,7 @@ trait ApplicationDataContainer extends StObject {
 }
 object ApplicationDataContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containers: IMapView[String, ApplicationDataContainer],
     createContainer: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer,
     deleteContainer: String => Unit,
@@ -50,25 +49,18 @@ object ApplicationDataContainer {
     __obj.asInstanceOf[ApplicationDataContainer]
   }
   
-  @scala.inline
-  implicit class ApplicationDataContainerMutableBuilder[Self <: ApplicationDataContainer] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationDataContainer](x: Self) {
     
-    @scala.inline
-    def setContainers(value: IMapView[String, ApplicationDataContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: IMapView[String, ApplicationDataContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateContainer(value: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
+    inline def setCreateContainer(value: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeleteContainer(value: String => Unit): Self = StObject.set(x, "deleteContainer", js.Any.fromFunction1(value))
+    inline def setDeleteContainer(value: String => Unit): Self = StObject.set(x, "deleteContainer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocality(value: ApplicationDataLocality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: ApplicationDataLocality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: IPropertySet): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: IPropertySet): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

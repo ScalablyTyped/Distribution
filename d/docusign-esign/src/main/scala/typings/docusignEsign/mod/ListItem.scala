@@ -37,49 +37,35 @@ trait ListItem extends StObject {
 }
 object ListItem {
   
-  @scala.inline
-  def apply(): ListItem = {
+  inline def apply(): ListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItem]
   }
   
-  @scala.inline
-  implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
+  extension [Self <: ListItem](x: Self) {
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "selectedMetadata", value.asInstanceOf[js.Any])
+    inline def setSelectedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "selectedMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedMetadataUndefined: Self = StObject.set(x, "selectedMetadata", js.undefined)
+    inline def setSelectedMetadataUndefined: Self = StObject.set(x, "selectedMetadata", js.undefined)
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "textMetadata", value.asInstanceOf[js.Any])
+    inline def setTextMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "textMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMetadataUndefined: Self = StObject.set(x, "textMetadata", js.undefined)
+    inline def setTextMetadataUndefined: Self = StObject.set(x, "textMetadata", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "valueMetadata", value.asInstanceOf[js.Any])
+    inline def setValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "valueMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
+    inline def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

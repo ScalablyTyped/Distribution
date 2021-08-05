@@ -18,25 +18,19 @@ trait DescribeVirtualInterfacesRequest extends StObject {
 }
 object DescribeVirtualInterfacesRequest {
   
-  @scala.inline
-  def apply(): DescribeVirtualInterfacesRequest = {
+  inline def apply(): DescribeVirtualInterfacesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVirtualInterfacesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeVirtualInterfacesRequestMutableBuilder[Self <: DescribeVirtualInterfacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVirtualInterfacesRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
+    inline def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait RotateSecretResponse extends StObject {
 }
 object RotateSecretResponse {
   
-  @scala.inline
-  def apply(): RotateSecretResponse = {
+  inline def apply(): RotateSecretResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotateSecretResponse]
   }
   
-  @scala.inline
-  implicit class RotateSecretResponseMutableBuilder[Self <: RotateSecretResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RotateSecretResponse](x: Self) {
     
-    @scala.inline
-    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: SecretVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: SecretVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

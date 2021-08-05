@@ -12,8 +12,7 @@ trait UniqueESSymbolType
 }
 object UniqueESSymbolType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     escapedName: String,
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
@@ -44,10 +43,8 @@ object UniqueESSymbolType {
     __obj.asInstanceOf[UniqueESSymbolType]
   }
   
-  @scala.inline
-  implicit class UniqueESSymbolTypeMutableBuilder[Self <: UniqueESSymbolType] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueESSymbolType](x: Self) {
     
-    @scala.inline
-    def setEscapedName(value: String): Self = StObject.set(x, "escapedName", value.asInstanceOf[js.Any])
+    inline def setEscapedName(value: String): Self = StObject.set(x, "escapedName", value.asInstanceOf[js.Any])
   }
 }

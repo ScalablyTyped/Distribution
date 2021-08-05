@@ -24,25 +24,19 @@ trait SchemaChannelCredentials extends StObject {
 }
 object SchemaChannelCredentials {
   
-  @scala.inline
-  def apply(): SchemaChannelCredentials = {
+  inline def apply(): SchemaChannelCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelCredentials]
   }
   
-  @scala.inline
-  implicit class SchemaChannelCredentialsMutableBuilder[Self <: SchemaChannelCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelCredentials](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: SchemaTlsCertificatePaths): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: SchemaTlsCertificatePaths): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
+    inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    @scala.inline
-    def setChannelCredentialType(value: String): Self = StObject.set(x, "channelCredentialType", value.asInstanceOf[js.Any])
+    inline def setChannelCredentialType(value: String): Self = StObject.set(x, "channelCredentialType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCredentialTypeUndefined: Self = StObject.set(x, "channelCredentialType", js.undefined)
+    inline def setChannelCredentialTypeUndefined: Self = StObject.set(x, "channelCredentialType", js.undefined)
   }
 }

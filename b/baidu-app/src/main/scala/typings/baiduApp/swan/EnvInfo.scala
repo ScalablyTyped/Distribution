@@ -22,28 +22,21 @@ trait EnvInfo extends StObject {
 }
 object EnvInfo {
   
-  @scala.inline
-  def apply(appKey: String, appName: String, lastAppURL: String, scheme: String, sdkVersion: String): EnvInfo = {
+  inline def apply(appKey: String, appName: String, lastAppURL: String, scheme: String, sdkVersion: String): EnvInfo = {
     val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], lastAppURL = lastAppURL.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], sdkVersion = sdkVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvInfo]
   }
   
-  @scala.inline
-  implicit class EnvInfoMutableBuilder[Self <: EnvInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EnvInfo](x: Self) {
     
-    @scala.inline
-    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+    inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAppURL(value: String): Self = StObject.set(x, "lastAppURL", value.asInstanceOf[js.Any])
+    inline def setLastAppURL(value: String): Self = StObject.set(x, "lastAppURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
   }
 }

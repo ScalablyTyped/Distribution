@@ -8,11 +8,9 @@ object maximMazurokGapiClientLibraryagentStrings {
   
   @js.native
   sealed trait libraryagent extends StObject
-  @scala.inline
-  def libraryagent: libraryagent = "libraryagent".asInstanceOf[libraryagent]
+  inline def libraryagent: libraryagent = "libraryagent".asInstanceOf[libraryagent]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

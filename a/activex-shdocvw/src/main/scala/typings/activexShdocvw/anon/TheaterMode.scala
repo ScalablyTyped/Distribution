@@ -10,16 +10,13 @@ trait TheaterMode extends StObject {
 }
 object TheaterMode {
   
-  @scala.inline
-  def apply(TheaterMode: Boolean): TheaterMode = {
+  inline def apply(TheaterMode: Boolean): TheaterMode = {
     val __obj = js.Dynamic.literal(TheaterMode = TheaterMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TheaterMode]
   }
   
-  @scala.inline
-  implicit class TheaterModeMutableBuilder[Self <: TheaterMode] (val x: Self) extends AnyVal {
+  extension [Self <: TheaterMode](x: Self) {
     
-    @scala.inline
-    def setTheaterMode(value: Boolean): Self = StObject.set(x, "TheaterMode", value.asInstanceOf[js.Any])
+    inline def setTheaterMode(value: Boolean): Self = StObject.set(x, "TheaterMode", value.asInstanceOf[js.Any])
   }
 }

@@ -73,205 +73,139 @@ trait IFileOptions extends StObject {
 }
 object IFileOptions {
   
-  @scala.inline
-  def apply(): IFileOptions = {
+  inline def apply(): IFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileOptions]
   }
   
-  @scala.inline
-  implicit class IFileOptionsMutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFileOptions](x: Self) {
     
-    @scala.inline
-    def setCcEnableArenas(value: Boolean): Self = StObject.set(x, "ccEnableArenas", value.asInstanceOf[js.Any])
+    inline def setCcEnableArenas(value: Boolean): Self = StObject.set(x, "ccEnableArenas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcEnableArenasNull: Self = StObject.set(x, "ccEnableArenas", null)
+    inline def setCcEnableArenasNull: Self = StObject.set(x, "ccEnableArenas", null)
     
-    @scala.inline
-    def setCcEnableArenasUndefined: Self = StObject.set(x, "ccEnableArenas", js.undefined)
+    inline def setCcEnableArenasUndefined: Self = StObject.set(x, "ccEnableArenas", js.undefined)
     
-    @scala.inline
-    def setCcGenericServices(value: Boolean): Self = StObject.set(x, "ccGenericServices", value.asInstanceOf[js.Any])
+    inline def setCcGenericServices(value: Boolean): Self = StObject.set(x, "ccGenericServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcGenericServicesNull: Self = StObject.set(x, "ccGenericServices", null)
+    inline def setCcGenericServicesNull: Self = StObject.set(x, "ccGenericServices", null)
     
-    @scala.inline
-    def setCcGenericServicesUndefined: Self = StObject.set(x, "ccGenericServices", js.undefined)
+    inline def setCcGenericServicesUndefined: Self = StObject.set(x, "ccGenericServices", js.undefined)
     
-    @scala.inline
-    def setCsharpNamespace(value: String): Self = StObject.set(x, "csharpNamespace", value.asInstanceOf[js.Any])
+    inline def setCsharpNamespace(value: String): Self = StObject.set(x, "csharpNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsharpNamespaceNull: Self = StObject.set(x, "csharpNamespace", null)
+    inline def setCsharpNamespaceNull: Self = StObject.set(x, "csharpNamespace", null)
     
-    @scala.inline
-    def setCsharpNamespaceUndefined: Self = StObject.set(x, "csharpNamespace", js.undefined)
+    inline def setCsharpNamespaceUndefined: Self = StObject.set(x, "csharpNamespace", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
+    inline def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setGoPackage(value: String): Self = StObject.set(x, "goPackage", value.asInstanceOf[js.Any])
+    inline def setGoPackage(value: String): Self = StObject.set(x, "goPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoPackageNull: Self = StObject.set(x, "goPackage", null)
+    inline def setGoPackageNull: Self = StObject.set(x, "goPackage", null)
     
-    @scala.inline
-    def setGoPackageUndefined: Self = StObject.set(x, "goPackage", js.undefined)
+    inline def setGoPackageUndefined: Self = StObject.set(x, "goPackage", js.undefined)
     
-    @scala.inline
-    def setJavaGenerateEqualsAndHash(value: Boolean): Self = StObject.set(x, "javaGenerateEqualsAndHash", value.asInstanceOf[js.Any])
+    inline def setJavaGenerateEqualsAndHash(value: Boolean): Self = StObject.set(x, "javaGenerateEqualsAndHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaGenerateEqualsAndHashNull: Self = StObject.set(x, "javaGenerateEqualsAndHash", null)
+    inline def setJavaGenerateEqualsAndHashNull: Self = StObject.set(x, "javaGenerateEqualsAndHash", null)
     
-    @scala.inline
-    def setJavaGenerateEqualsAndHashUndefined: Self = StObject.set(x, "javaGenerateEqualsAndHash", js.undefined)
+    inline def setJavaGenerateEqualsAndHashUndefined: Self = StObject.set(x, "javaGenerateEqualsAndHash", js.undefined)
     
-    @scala.inline
-    def setJavaGenericServices(value: Boolean): Self = StObject.set(x, "javaGenericServices", value.asInstanceOf[js.Any])
+    inline def setJavaGenericServices(value: Boolean): Self = StObject.set(x, "javaGenericServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaGenericServicesNull: Self = StObject.set(x, "javaGenericServices", null)
+    inline def setJavaGenericServicesNull: Self = StObject.set(x, "javaGenericServices", null)
     
-    @scala.inline
-    def setJavaGenericServicesUndefined: Self = StObject.set(x, "javaGenericServices", js.undefined)
+    inline def setJavaGenericServicesUndefined: Self = StObject.set(x, "javaGenericServices", js.undefined)
     
-    @scala.inline
-    def setJavaMultipleFiles(value: Boolean): Self = StObject.set(x, "javaMultipleFiles", value.asInstanceOf[js.Any])
+    inline def setJavaMultipleFiles(value: Boolean): Self = StObject.set(x, "javaMultipleFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaMultipleFilesNull: Self = StObject.set(x, "javaMultipleFiles", null)
+    inline def setJavaMultipleFilesNull: Self = StObject.set(x, "javaMultipleFiles", null)
     
-    @scala.inline
-    def setJavaMultipleFilesUndefined: Self = StObject.set(x, "javaMultipleFiles", js.undefined)
+    inline def setJavaMultipleFilesUndefined: Self = StObject.set(x, "javaMultipleFiles", js.undefined)
     
-    @scala.inline
-    def setJavaOuterClassname(value: String): Self = StObject.set(x, "javaOuterClassname", value.asInstanceOf[js.Any])
+    inline def setJavaOuterClassname(value: String): Self = StObject.set(x, "javaOuterClassname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaOuterClassnameNull: Self = StObject.set(x, "javaOuterClassname", null)
+    inline def setJavaOuterClassnameNull: Self = StObject.set(x, "javaOuterClassname", null)
     
-    @scala.inline
-    def setJavaOuterClassnameUndefined: Self = StObject.set(x, "javaOuterClassname", js.undefined)
+    inline def setJavaOuterClassnameUndefined: Self = StObject.set(x, "javaOuterClassname", js.undefined)
     
-    @scala.inline
-    def setJavaPackage(value: String): Self = StObject.set(x, "javaPackage", value.asInstanceOf[js.Any])
+    inline def setJavaPackage(value: String): Self = StObject.set(x, "javaPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaPackageNull: Self = StObject.set(x, "javaPackage", null)
+    inline def setJavaPackageNull: Self = StObject.set(x, "javaPackage", null)
     
-    @scala.inline
-    def setJavaPackageUndefined: Self = StObject.set(x, "javaPackage", js.undefined)
+    inline def setJavaPackageUndefined: Self = StObject.set(x, "javaPackage", js.undefined)
     
-    @scala.inline
-    def setJavaStringCheckUtf8(value: Boolean): Self = StObject.set(x, "javaStringCheckUtf8", value.asInstanceOf[js.Any])
+    inline def setJavaStringCheckUtf8(value: Boolean): Self = StObject.set(x, "javaStringCheckUtf8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaStringCheckUtf8Null: Self = StObject.set(x, "javaStringCheckUtf8", null)
+    inline def setJavaStringCheckUtf8Null: Self = StObject.set(x, "javaStringCheckUtf8", null)
     
-    @scala.inline
-    def setJavaStringCheckUtf8Undefined: Self = StObject.set(x, "javaStringCheckUtf8", js.undefined)
+    inline def setJavaStringCheckUtf8Undefined: Self = StObject.set(x, "javaStringCheckUtf8", js.undefined)
     
-    @scala.inline
-    def setObjcClassPrefix(value: String): Self = StObject.set(x, "objcClassPrefix", value.asInstanceOf[js.Any])
+    inline def setObjcClassPrefix(value: String): Self = StObject.set(x, "objcClassPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjcClassPrefixNull: Self = StObject.set(x, "objcClassPrefix", null)
+    inline def setObjcClassPrefixNull: Self = StObject.set(x, "objcClassPrefix", null)
     
-    @scala.inline
-    def setObjcClassPrefixUndefined: Self = StObject.set(x, "objcClassPrefix", js.undefined)
+    inline def setObjcClassPrefixUndefined: Self = StObject.set(x, "objcClassPrefix", js.undefined)
     
-    @scala.inline
-    def setOptimizeFor(value: OptimizeMode): Self = StObject.set(x, "optimizeFor", value.asInstanceOf[js.Any])
+    inline def setOptimizeFor(value: OptimizeMode): Self = StObject.set(x, "optimizeFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeForNull: Self = StObject.set(x, "optimizeFor", null)
+    inline def setOptimizeForNull: Self = StObject.set(x, "optimizeFor", null)
     
-    @scala.inline
-    def setOptimizeForUndefined: Self = StObject.set(x, "optimizeFor", js.undefined)
+    inline def setOptimizeForUndefined: Self = StObject.set(x, "optimizeFor", js.undefined)
     
-    @scala.inline
-    def setPhpClassPrefix(value: String): Self = StObject.set(x, "phpClassPrefix", value.asInstanceOf[js.Any])
+    inline def setPhpClassPrefix(value: String): Self = StObject.set(x, "phpClassPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhpClassPrefixNull: Self = StObject.set(x, "phpClassPrefix", null)
+    inline def setPhpClassPrefixNull: Self = StObject.set(x, "phpClassPrefix", null)
     
-    @scala.inline
-    def setPhpClassPrefixUndefined: Self = StObject.set(x, "phpClassPrefix", js.undefined)
+    inline def setPhpClassPrefixUndefined: Self = StObject.set(x, "phpClassPrefix", js.undefined)
     
-    @scala.inline
-    def setPhpGenericServices(value: Boolean): Self = StObject.set(x, "phpGenericServices", value.asInstanceOf[js.Any])
+    inline def setPhpGenericServices(value: Boolean): Self = StObject.set(x, "phpGenericServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhpGenericServicesNull: Self = StObject.set(x, "phpGenericServices", null)
+    inline def setPhpGenericServicesNull: Self = StObject.set(x, "phpGenericServices", null)
     
-    @scala.inline
-    def setPhpGenericServicesUndefined: Self = StObject.set(x, "phpGenericServices", js.undefined)
+    inline def setPhpGenericServicesUndefined: Self = StObject.set(x, "phpGenericServices", js.undefined)
     
-    @scala.inline
-    def setPhpMetadataNamespace(value: String): Self = StObject.set(x, "phpMetadataNamespace", value.asInstanceOf[js.Any])
+    inline def setPhpMetadataNamespace(value: String): Self = StObject.set(x, "phpMetadataNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhpMetadataNamespaceNull: Self = StObject.set(x, "phpMetadataNamespace", null)
+    inline def setPhpMetadataNamespaceNull: Self = StObject.set(x, "phpMetadataNamespace", null)
     
-    @scala.inline
-    def setPhpMetadataNamespaceUndefined: Self = StObject.set(x, "phpMetadataNamespace", js.undefined)
+    inline def setPhpMetadataNamespaceUndefined: Self = StObject.set(x, "phpMetadataNamespace", js.undefined)
     
-    @scala.inline
-    def setPhpNamespace(value: String): Self = StObject.set(x, "phpNamespace", value.asInstanceOf[js.Any])
+    inline def setPhpNamespace(value: String): Self = StObject.set(x, "phpNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhpNamespaceNull: Self = StObject.set(x, "phpNamespace", null)
+    inline def setPhpNamespaceNull: Self = StObject.set(x, "phpNamespace", null)
     
-    @scala.inline
-    def setPhpNamespaceUndefined: Self = StObject.set(x, "phpNamespace", js.undefined)
+    inline def setPhpNamespaceUndefined: Self = StObject.set(x, "phpNamespace", js.undefined)
     
-    @scala.inline
-    def setPyGenericServices(value: Boolean): Self = StObject.set(x, "pyGenericServices", value.asInstanceOf[js.Any])
+    inline def setPyGenericServices(value: Boolean): Self = StObject.set(x, "pyGenericServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPyGenericServicesNull: Self = StObject.set(x, "pyGenericServices", null)
+    inline def setPyGenericServicesNull: Self = StObject.set(x, "pyGenericServices", null)
     
-    @scala.inline
-    def setPyGenericServicesUndefined: Self = StObject.set(x, "pyGenericServices", js.undefined)
+    inline def setPyGenericServicesUndefined: Self = StObject.set(x, "pyGenericServices", js.undefined)
     
-    @scala.inline
-    def setRubyPackage(value: String): Self = StObject.set(x, "rubyPackage", value.asInstanceOf[js.Any])
+    inline def setRubyPackage(value: String): Self = StObject.set(x, "rubyPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRubyPackageNull: Self = StObject.set(x, "rubyPackage", null)
+    inline def setRubyPackageNull: Self = StObject.set(x, "rubyPackage", null)
     
-    @scala.inline
-    def setRubyPackageUndefined: Self = StObject.set(x, "rubyPackage", js.undefined)
+    inline def setRubyPackageUndefined: Self = StObject.set(x, "rubyPackage", js.undefined)
     
-    @scala.inline
-    def setSwiftPrefix(value: String): Self = StObject.set(x, "swiftPrefix", value.asInstanceOf[js.Any])
+    inline def setSwiftPrefix(value: String): Self = StObject.set(x, "swiftPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwiftPrefixNull: Self = StObject.set(x, "swiftPrefix", null)
+    inline def setSwiftPrefixNull: Self = StObject.set(x, "swiftPrefix", null)
     
-    @scala.inline
-    def setSwiftPrefixUndefined: Self = StObject.set(x, "swiftPrefix", js.undefined)
+    inline def setSwiftPrefixUndefined: Self = StObject.set(x, "swiftPrefix", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
+    inline def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
+    inline def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
     
-    @scala.inline
-    def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
+    inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
   }
 }

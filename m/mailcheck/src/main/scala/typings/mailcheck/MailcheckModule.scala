@@ -24,71 +24,50 @@ object MailcheckModule {
   }
   object IAsynchronousOptions {
     
-    @scala.inline
-    def apply(email: String, suggested: ISuggested | IJQuerySuggested): IAsynchronousOptions = {
+    inline def apply(email: String, suggested: ISuggested | IJQuerySuggested): IAsynchronousOptions = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], suggested = suggested.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAsynchronousOptions]
     }
     
-    @scala.inline
-    implicit class IAsynchronousOptionsMutableBuilder[Self <: IAsynchronousOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAsynchronousOptions](x: Self) {
       
-      @scala.inline
-      def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = StObject.set(x, "distanceFunction", js.Any.fromFunction2(value))
+      inline def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = StObject.set(x, "distanceFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDistanceFunctionUndefined: Self = StObject.set(x, "distanceFunction", js.undefined)
+      inline def setDistanceFunctionUndefined: Self = StObject.set(x, "distanceFunction", js.undefined)
       
-      @scala.inline
-      def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+      inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
       
-      @scala.inline
-      def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmpty(value: IEmpty | IJQueryEmpty): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: IEmpty | IJQueryEmpty): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyFunction0(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmptyFunction0(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmptyFunction1(value: /* element */ JQuery => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
+      inline def setEmptyFunction1(value: /* element */ JQuery => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setSecondLevelDomains(value: js.Array[String]): Self = StObject.set(x, "secondLevelDomains", value.asInstanceOf[js.Any])
+      inline def setSecondLevelDomains(value: js.Array[String]): Self = StObject.set(x, "secondLevelDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondLevelDomainsUndefined: Self = StObject.set(x, "secondLevelDomains", js.undefined)
+      inline def setSecondLevelDomainsUndefined: Self = StObject.set(x, "secondLevelDomains", js.undefined)
       
-      @scala.inline
-      def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value :_*))
+      inline def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggested(value: ISuggested | IJQuerySuggested): Self = StObject.set(x, "suggested", value.asInstanceOf[js.Any])
+      inline def setSuggested(value: ISuggested | IJQuerySuggested): Self = StObject.set(x, "suggested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedFunction1(value: /* suggested */ ISuggestion => Unit): Self = StObject.set(x, "suggested", js.Any.fromFunction1(value))
+      inline def setSuggestedFunction1(value: /* suggested */ ISuggestion => Unit): Self = StObject.set(x, "suggested", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuggestedFunction2(value: (/* element */ JQuery, /* suggested */ ISuggestion) => Unit): Self = StObject.set(x, "suggested", js.Any.fromFunction2(value))
+      inline def setSuggestedFunction2(value: (/* element */ JQuery, /* suggested */ ISuggestion) => Unit): Self = StObject.set(x, "suggested", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTopLevelDomains(value: js.Array[String]): Self = StObject.set(x, "topLevelDomains", value.asInstanceOf[js.Any])
+      inline def setTopLevelDomains(value: js.Array[String]): Self = StObject.set(x, "topLevelDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLevelDomainsUndefined: Self = StObject.set(x, "topLevelDomains", js.undefined)
+      inline def setTopLevelDomainsUndefined: Self = StObject.set(x, "topLevelDomains", js.undefined)
       
-      @scala.inline
-      def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value :_*))
+      inline def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value :_*))
     }
   }
   
@@ -110,32 +89,24 @@ object MailcheckModule {
   }
   object ISplitEmail {
     
-    @scala.inline
-    def apply(): ISplitEmail = {
+    inline def apply(): ISplitEmail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISplitEmail]
     }
     
-    @scala.inline
-    implicit class ISplitEmailMutableBuilder[Self <: ISplitEmail] (val x: Self) extends AnyVal {
+    extension [Self <: ISplitEmail](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setTopLevelDomain(value: String): Self = StObject.set(x, "topLevelDomain", value.asInstanceOf[js.Any])
+      inline def setTopLevelDomain(value: String): Self = StObject.set(x, "topLevelDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLevelDomainUndefined: Self = StObject.set(x, "topLevelDomain", js.undefined)
+      inline def setTopLevelDomainUndefined: Self = StObject.set(x, "topLevelDomain", js.undefined)
     }
   }
   
@@ -159,23 +130,18 @@ object MailcheckModule {
   }
   object ISuggestion {
     
-    @scala.inline
-    def apply(address: String, domain: String, full: String): ISuggestion = {
+    inline def apply(address: String, domain: String, full: String): ISuggestion = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestion]
     }
     
-    @scala.inline
-    implicit class ISuggestionMutableBuilder[Self <: ISuggestion] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestion](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,50 +159,36 @@ object MailcheckModule {
   }
   object ISynchronousOptions {
     
-    @scala.inline
-    def apply(email: String): ISynchronousOptions = {
+    inline def apply(email: String): ISynchronousOptions = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISynchronousOptions]
     }
     
-    @scala.inline
-    implicit class ISynchronousOptionsMutableBuilder[Self <: ISynchronousOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISynchronousOptions](x: Self) {
       
-      @scala.inline
-      def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = StObject.set(x, "distanceFunction", js.Any.fromFunction2(value))
+      inline def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = StObject.set(x, "distanceFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDistanceFunctionUndefined: Self = StObject.set(x, "distanceFunction", js.undefined)
+      inline def setDistanceFunctionUndefined: Self = StObject.set(x, "distanceFunction", js.undefined)
       
-      @scala.inline
-      def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+      inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
       
-      @scala.inline
-      def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondLevelDomains(value: js.Array[String]): Self = StObject.set(x, "secondLevelDomains", value.asInstanceOf[js.Any])
+      inline def setSecondLevelDomains(value: js.Array[String]): Self = StObject.set(x, "secondLevelDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondLevelDomainsUndefined: Self = StObject.set(x, "secondLevelDomains", js.undefined)
+      inline def setSecondLevelDomainsUndefined: Self = StObject.set(x, "secondLevelDomains", js.undefined)
       
-      @scala.inline
-      def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value :_*))
+      inline def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value :_*))
       
-      @scala.inline
-      def setTopLevelDomains(value: js.Array[String]): Self = StObject.set(x, "topLevelDomains", value.asInstanceOf[js.Any])
+      inline def setTopLevelDomains(value: js.Array[String]): Self = StObject.set(x, "topLevelDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLevelDomainsUndefined: Self = StObject.set(x, "topLevelDomains", js.undefined)
+      inline def setTopLevelDomainsUndefined: Self = StObject.set(x, "topLevelDomains", js.undefined)
       
-      @scala.inline
-      def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value :_*))
+      inline def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value :_*))
     }
   }
   

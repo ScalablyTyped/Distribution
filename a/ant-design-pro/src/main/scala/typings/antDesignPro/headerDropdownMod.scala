@@ -34,29 +34,22 @@ object headerDropdownMod {
   }
   object HeaderDropdownProps {
     
-    @scala.inline
-    def apply(): HeaderDropdownProps = {
+    inline def apply(): HeaderDropdownProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderDropdownProps]
     }
     
-    @scala.inline
-    implicit class HeaderDropdownPropsMutableBuilder[Self <: HeaderDropdownProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderDropdownProps](x: Self) {
       
-      @scala.inline
-      def setOverlay(value: ReactNode | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: ReactNode | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayFunction0(value: () => ReactNode): Self = StObject.set(x, "overlay", js.Any.fromFunction0(value))
+      inline def setOverlayFunction0(value: () => ReactNode): Self = StObject.set(x, "overlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: bottomLeft | bottomRight | topLeft | topCenter | topRight | bottomCenter): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: bottomLeft | bottomRight | topLeft | topCenter | topRight | bottomCenter): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     }
   }
   

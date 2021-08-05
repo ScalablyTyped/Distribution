@@ -21,7 +21,7 @@ trait BootstrapCardViewCellInfo extends StObject {
   
   def hasChanges(): Boolean = js.native
   
-  val instance: js.Any = js.native
+  /* protected */ val instance: js.Any = js.native
   
   def moveFocusBackward(): Boolean = js.native
   

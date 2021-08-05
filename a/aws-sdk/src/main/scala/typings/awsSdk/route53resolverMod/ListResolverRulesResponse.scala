@@ -23,34 +23,25 @@ trait ListResolverRulesResponse extends StObject {
 }
 object ListResolverRulesResponse {
   
-  @scala.inline
-  def apply(): ListResolverRulesResponse = {
+  inline def apply(): ListResolverRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResolverRulesResponse]
   }
   
-  @scala.inline
-  implicit class ListResolverRulesResponseMutableBuilder[Self <: ListResolverRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResolverRulesResponse](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResolverRules(value: ResolverRules): Self = StObject.set(x, "ResolverRules", value.asInstanceOf[js.Any])
+    inline def setResolverRules(value: ResolverRules): Self = StObject.set(x, "ResolverRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRulesUndefined: Self = StObject.set(x, "ResolverRules", js.undefined)
+    inline def setResolverRulesUndefined: Self = StObject.set(x, "ResolverRules", js.undefined)
     
-    @scala.inline
-    def setResolverRulesVarargs(value: ResolverRule*): Self = StObject.set(x, "ResolverRules", js.Array(value :_*))
+    inline def setResolverRulesVarargs(value: ResolverRule*): Self = StObject.set(x, "ResolverRules", js.Array(value :_*))
   }
 }

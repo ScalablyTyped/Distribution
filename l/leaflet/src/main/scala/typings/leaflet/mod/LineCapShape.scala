@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineCapShape extends StObject
 object LineCapShape {
   
-  @scala.inline
-  def butt: typings.leaflet.leafletStrings.butt = "butt".asInstanceOf[typings.leaflet.leafletStrings.butt]
+  inline def butt: typings.leaflet.leafletStrings.butt = "butt".asInstanceOf[typings.leaflet.leafletStrings.butt]
   
-  @scala.inline
-  def inherit: typings.leaflet.leafletStrings.inherit = "inherit".asInstanceOf[typings.leaflet.leafletStrings.inherit]
+  inline def inherit: typings.leaflet.leafletStrings.inherit = "inherit".asInstanceOf[typings.leaflet.leafletStrings.inherit]
   
-  @scala.inline
-  def round: typings.leaflet.leafletStrings.round = "round".asInstanceOf[typings.leaflet.leafletStrings.round]
+  inline def round: typings.leaflet.leafletStrings.round = "round".asInstanceOf[typings.leaflet.leafletStrings.round]
   
-  @scala.inline
-  def square: typings.leaflet.leafletStrings.square = "square".asInstanceOf[typings.leaflet.leafletStrings.square]
+  inline def square: typings.leaflet.leafletStrings.square = "square".asInstanceOf[typings.leaflet.leafletStrings.square]
 }

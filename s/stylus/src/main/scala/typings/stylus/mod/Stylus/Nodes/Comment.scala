@@ -17,8 +17,7 @@ trait Comment
 }
 object Comment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -41,16 +40,12 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setInline(value: scala.Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: scala.Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStr(value: java.lang.String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: java.lang.String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppress(value: scala.Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
+    inline def setSuppress(value: scala.Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
   }
 }

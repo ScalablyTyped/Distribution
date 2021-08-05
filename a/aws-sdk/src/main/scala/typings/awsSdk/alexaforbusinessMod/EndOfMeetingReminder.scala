@@ -23,34 +23,25 @@ trait EndOfMeetingReminder extends StObject {
 }
 object EndOfMeetingReminder {
   
-  @scala.inline
-  def apply(): EndOfMeetingReminder = {
+  inline def apply(): EndOfMeetingReminder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndOfMeetingReminder]
   }
   
-  @scala.inline
-  implicit class EndOfMeetingReminderMutableBuilder[Self <: EndOfMeetingReminder] (val x: Self) extends AnyVal {
+  extension [Self <: EndOfMeetingReminder](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = StObject.set(x, "ReminderAtMinutes", value.asInstanceOf[js.Any])
+    inline def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = StObject.set(x, "ReminderAtMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderAtMinutesUndefined: Self = StObject.set(x, "ReminderAtMinutes", js.undefined)
+    inline def setReminderAtMinutesUndefined: Self = StObject.set(x, "ReminderAtMinutes", js.undefined)
     
-    @scala.inline
-    def setReminderAtMinutesVarargs(value: Minutes*): Self = StObject.set(x, "ReminderAtMinutes", js.Array(value :_*))
+    inline def setReminderAtMinutesVarargs(value: Minutes*): Self = StObject.set(x, "ReminderAtMinutes", js.Array(value :_*))
     
-    @scala.inline
-    def setReminderType(value: EndOfMeetingReminderType): Self = StObject.set(x, "ReminderType", value.asInstanceOf[js.Any])
+    inline def setReminderType(value: EndOfMeetingReminderType): Self = StObject.set(x, "ReminderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderTypeUndefined: Self = StObject.set(x, "ReminderType", js.undefined)
+    inline def setReminderTypeUndefined: Self = StObject.set(x, "ReminderType", js.undefined)
   }
 }

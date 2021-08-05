@@ -29,19 +29,15 @@ trait XConfigurationControllerRequestQueue extends StObject {
 }
 object XConfigurationControllerRequestQueue {
   
-  @scala.inline
-  def apply(hasPendingRequests: () => Boolean, postChangeRequest: XConfigurationChangeRequest => Unit): XConfigurationControllerRequestQueue = {
+  inline def apply(hasPendingRequests: () => Boolean, postChangeRequest: XConfigurationChangeRequest => Unit): XConfigurationControllerRequestQueue = {
     val __obj = js.Dynamic.literal(hasPendingRequests = js.Any.fromFunction0(hasPendingRequests), postChangeRequest = js.Any.fromFunction1(postChangeRequest))
     __obj.asInstanceOf[XConfigurationControllerRequestQueue]
   }
   
-  @scala.inline
-  implicit class XConfigurationControllerRequestQueueMutableBuilder[Self <: XConfigurationControllerRequestQueue] (val x: Self) extends AnyVal {
+  extension [Self <: XConfigurationControllerRequestQueue](x: Self) {
     
-    @scala.inline
-    def setHasPendingRequests(value: () => Boolean): Self = StObject.set(x, "hasPendingRequests", js.Any.fromFunction0(value))
+    inline def setHasPendingRequests(value: () => Boolean): Self = StObject.set(x, "hasPendingRequests", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostChangeRequest(value: XConfigurationChangeRequest => Unit): Self = StObject.set(x, "postChangeRequest", js.Any.fromFunction1(value))
+    inline def setPostChangeRequest(value: XConfigurationChangeRequest => Unit): Self = StObject.set(x, "postChangeRequest", js.Any.fromFunction1(value))
   }
 }

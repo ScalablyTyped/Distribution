@@ -10,8 +10,7 @@ trait TrackViewModelProperties
      with GoToProperties
 object TrackViewModelProperties {
   
-  @scala.inline
-  def apply(): TrackViewModelProperties = {
+  inline def apply(): TrackViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackViewModelProperties]
   }

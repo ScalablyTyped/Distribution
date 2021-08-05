@@ -27,8 +27,7 @@ trait IPropertyValueForDisplay extends StObject {
 }
 object IPropertyValueForDisplay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IPropertyValueForDisplay,
     ContentType: MFContentType,
     DataType: MFDataType,
@@ -42,31 +41,22 @@ object IPropertyValueForDisplay {
     __obj.asInstanceOf[IPropertyValueForDisplay]
   }
   
-  @scala.inline
-  implicit class IPropertyValueForDisplayMutableBuilder[Self <: IPropertyValueForDisplay] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValueForDisplay](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyValueForDisplay): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyValueForDisplay): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContentType(value: MFContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: MFContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
+    inline def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDefName(value: String): Self = StObject.set(x, "PropertyDefName", value.asInstanceOf[js.Any])
+    inline def setPropertyDefName(value: String): Self = StObject.set(x, "PropertyDefName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyValue(value: IPropertyValue): Self = StObject.set(x, "PropertyValue", value.asInstanceOf[js.Any])
+    inline def setPropertyValue(value: IPropertyValue): Self = StObject.set(x, "PropertyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
   }
 }

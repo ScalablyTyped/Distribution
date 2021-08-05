@@ -56,23 +56,18 @@ object mod {
   }
   object Levenshtein {
     
-    @scala.inline
-    def apply(distance: Double, getMatrix: () => js.Array[js.Array[Double]], inspect: () => String): Levenshtein = {
+    inline def apply(distance: Double, getMatrix: () => js.Array[js.Array[Double]], inspect: () => String): Levenshtein = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], getMatrix = js.Any.fromFunction0(getMatrix), inspect = js.Any.fromFunction0(inspect))
       __obj.asInstanceOf[Levenshtein]
     }
     
-    @scala.inline
-    implicit class LevenshteinMutableBuilder[Self <: Levenshtein] (val x: Self) extends AnyVal {
+    extension [Self <: Levenshtein](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMatrix(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getMatrix", js.Any.fromFunction0(value))
+      inline def setGetMatrix(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getMatrix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
     }
   }
 }

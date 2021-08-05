@@ -19,9 +19,9 @@ object callFunctionMethodStubMod {
     /* CompleteClass */
     override def execute(args: js.Array[js.Any]): Unit = js.native
     
-    var func: js.Any = js.native
+    /* private */ var func: js.Any = js.native
     
-    var functionResult: js.Any = js.native
+    /* private */ var functionResult: js.Any = js.native
     
     /* InferMemberOverrides */
     override def getGroupIndex(): Double = js.native
@@ -32,8 +32,8 @@ object callFunctionMethodStubMod {
     /* CompleteClass */
     override def isApplicable(args: js.Array[js.Any]): Boolean = js.native
     
-    var matchers: js.Any = js.native
+    /* private */ var matchers: js.Any = js.native
     
-    var validator: js.Any = js.native
+    /* private */ var validator: js.Any = js.native
   }
 }

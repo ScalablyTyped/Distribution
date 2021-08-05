@@ -23,34 +23,25 @@ trait ResolveRoomResponse extends StObject {
 }
 object ResolveRoomResponse {
   
-  @scala.inline
-  def apply(): ResolveRoomResponse = {
+  inline def apply(): ResolveRoomResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveRoomResponse]
   }
   
-  @scala.inline
-  implicit class ResolveRoomResponseMutableBuilder[Self <: ResolveRoomResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveRoomResponse](x: Self) {
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
-    @scala.inline
-    def setRoomName(value: RoomName): Self = StObject.set(x, "RoomName", value.asInstanceOf[js.Any])
+    inline def setRoomName(value: RoomName): Self = StObject.set(x, "RoomName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomNameUndefined: Self = StObject.set(x, "RoomName", js.undefined)
+    inline def setRoomNameUndefined: Self = StObject.set(x, "RoomName", js.undefined)
     
-    @scala.inline
-    def setRoomSkillParameters(value: RoomSkillParameters): Self = StObject.set(x, "RoomSkillParameters", value.asInstanceOf[js.Any])
+    inline def setRoomSkillParameters(value: RoomSkillParameters): Self = StObject.set(x, "RoomSkillParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomSkillParametersUndefined: Self = StObject.set(x, "RoomSkillParameters", js.undefined)
+    inline def setRoomSkillParametersUndefined: Self = StObject.set(x, "RoomSkillParameters", js.undefined)
     
-    @scala.inline
-    def setRoomSkillParametersVarargs(value: RoomSkillParameter*): Self = StObject.set(x, "RoomSkillParameters", js.Array(value :_*))
+    inline def setRoomSkillParametersVarargs(value: RoomSkillParameter*): Self = StObject.set(x, "RoomSkillParameters", js.Array(value :_*))
   }
 }

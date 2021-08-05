@@ -50,61 +50,43 @@ trait IClusterLayerOptions extends StObject {
 }
 object IClusterLayerOptions {
   
-  @scala.inline
-  def apply(): IClusterLayerOptions = {
+  inline def apply(): IClusterLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClusterLayerOptions]
   }
   
-  @scala.inline
-  implicit class IClusterLayerOptionsMutableBuilder[Self <: IClusterLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IClusterLayerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setClusterPlacementType(value: ClusterPlacementType): Self = StObject.set(x, "clusterPlacementType", value.asInstanceOf[js.Any])
+    inline def setClusterPlacementType(value: ClusterPlacementType): Self = StObject.set(x, "clusterPlacementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterPlacementTypeUndefined: Self = StObject.set(x, "clusterPlacementType", js.undefined)
+    inline def setClusterPlacementTypeUndefined: Self = StObject.set(x, "clusterPlacementType", js.undefined)
     
-    @scala.inline
-    def setClusteredPinCallback(value: /* pin */ ClusterPushpin => Unit): Self = StObject.set(x, "clusteredPinCallback", js.Any.fromFunction1(value))
+    inline def setClusteredPinCallback(value: /* pin */ ClusterPushpin => Unit): Self = StObject.set(x, "clusteredPinCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClusteredPinCallbackUndefined: Self = StObject.set(x, "clusteredPinCallback", js.undefined)
+    inline def setClusteredPinCallbackUndefined: Self = StObject.set(x, "clusteredPinCallback", js.undefined)
     
-    @scala.inline
-    def setClusteringEnabled(value: Boolean): Self = StObject.set(x, "clusteringEnabled", value.asInstanceOf[js.Any])
+    inline def setClusteringEnabled(value: Boolean): Self = StObject.set(x, "clusteringEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusteringEnabledUndefined: Self = StObject.set(x, "clusteringEnabled", js.undefined)
+    inline def setClusteringEnabledUndefined: Self = StObject.set(x, "clusteringEnabled", js.undefined)
     
-    @scala.inline
-    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+    inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
-    @scala.inline
-    def setLayerOffset(value: Point): Self = StObject.set(x, "layerOffset", value.asInstanceOf[js.Any])
+    inline def setLayerOffset(value: Point): Self = StObject.set(x, "layerOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerOffsetUndefined: Self = StObject.set(x, "layerOffset", js.undefined)
+    inline def setLayerOffsetUndefined: Self = StObject.set(x, "layerOffset", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

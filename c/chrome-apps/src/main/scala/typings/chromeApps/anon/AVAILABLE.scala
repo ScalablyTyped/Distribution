@@ -17,22 +17,17 @@ trait AVAILABLE extends StObject {
 }
 object AVAILABLE {
   
-  @scala.inline
-  def apply(): AVAILABLE = {
+  inline def apply(): AVAILABLE = {
     val __obj = js.Dynamic.literal(AVAILABLE = "available", ENABLED = "enabled", UNKNOWN = "unknown")
     __obj.asInstanceOf[AVAILABLE]
   }
   
-  @scala.inline
-  implicit class AVAILABLEMutableBuilder[Self <: AVAILABLE] (val x: Self) extends AnyVal {
+  extension [Self <: AVAILABLE](x: Self) {
     
-    @scala.inline
-    def setAVAILABLE(value: available): Self = StObject.set(x, "AVAILABLE", value.asInstanceOf[js.Any])
+    inline def setAVAILABLE(value: available): Self = StObject.set(x, "AVAILABLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENABLED(value: enabled_): Self = StObject.set(x, "ENABLED", value.asInstanceOf[js.Any])
+    inline def setENABLED(value: enabled_): Self = StObject.set(x, "ENABLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

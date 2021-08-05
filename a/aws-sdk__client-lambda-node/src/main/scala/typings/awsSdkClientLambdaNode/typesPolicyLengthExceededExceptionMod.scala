@@ -16,17 +16,14 @@ object typesPolicyLengthExceededExceptionMod {
   }
   object PolicyLengthExceededException {
     
-    @scala.inline
-    def apply(): PolicyLengthExceededException = {
+    inline def apply(): PolicyLengthExceededException = {
       val __obj = js.Dynamic.literal(name = "PolicyLengthExceededException")
       __obj.asInstanceOf[PolicyLengthExceededException]
     }
     
-    @scala.inline
-    implicit class PolicyLengthExceededExceptionMutableBuilder[Self <: PolicyLengthExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyLengthExceededException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PolicyLengthExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PolicyLengthExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,26 +41,20 @@ object typesPolicyLengthExceededExceptionMod {
   }
   object PolicyLengthExceededExceptionDetails {
     
-    @scala.inline
-    def apply(): PolicyLengthExceededExceptionDetails = {
+    inline def apply(): PolicyLengthExceededExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyLengthExceededExceptionDetails]
     }
     
-    @scala.inline
-    implicit class PolicyLengthExceededExceptionDetailsMutableBuilder[Self <: PolicyLengthExceededExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyLengthExceededExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

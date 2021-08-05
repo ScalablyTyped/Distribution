@@ -33,8 +33,7 @@ trait ParametersInCacheKeyAndForwardedToOrigin extends StObject {
 }
 object ParametersInCacheKeyAndForwardedToOrigin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CookiesConfig: CachePolicyCookiesConfig,
     EnableAcceptEncodingGzip: Boolean,
     HeadersConfig: CachePolicyHeadersConfig,
@@ -44,25 +43,18 @@ object ParametersInCacheKeyAndForwardedToOrigin {
     __obj.asInstanceOf[ParametersInCacheKeyAndForwardedToOrigin]
   }
   
-  @scala.inline
-  implicit class ParametersInCacheKeyAndForwardedToOriginMutableBuilder[Self <: ParametersInCacheKeyAndForwardedToOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersInCacheKeyAndForwardedToOrigin](x: Self) {
     
-    @scala.inline
-    def setCookiesConfig(value: CachePolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
+    inline def setCookiesConfig(value: CachePolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAcceptEncodingBrotli(value: Boolean): Self = StObject.set(x, "EnableAcceptEncodingBrotli", value.asInstanceOf[js.Any])
+    inline def setEnableAcceptEncodingBrotli(value: Boolean): Self = StObject.set(x, "EnableAcceptEncodingBrotli", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAcceptEncodingBrotliUndefined: Self = StObject.set(x, "EnableAcceptEncodingBrotli", js.undefined)
+    inline def setEnableAcceptEncodingBrotliUndefined: Self = StObject.set(x, "EnableAcceptEncodingBrotli", js.undefined)
     
-    @scala.inline
-    def setEnableAcceptEncodingGzip(value: Boolean): Self = StObject.set(x, "EnableAcceptEncodingGzip", value.asInstanceOf[js.Any])
+    inline def setEnableAcceptEncodingGzip(value: Boolean): Self = StObject.set(x, "EnableAcceptEncodingGzip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersConfig(value: CachePolicyHeadersConfig): Self = StObject.set(x, "HeadersConfig", value.asInstanceOf[js.Any])
+    inline def setHeadersConfig(value: CachePolicyHeadersConfig): Self = StObject.set(x, "HeadersConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringsConfig(value: CachePolicyQueryStringsConfig): Self = StObject.set(x, "QueryStringsConfig", value.asInstanceOf[js.Any])
+    inline def setQueryStringsConfig(value: CachePolicyQueryStringsConfig): Self = StObject.set(x, "QueryStringsConfig", value.asInstanceOf[js.Any])
   }
 }

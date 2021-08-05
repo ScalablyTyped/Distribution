@@ -20,16 +20,13 @@ trait FilePickerEvent
 }
 object FilePickerEvent {
   
-  @scala.inline
-  def apply(ElementId: Double, Source: XInterface): FilePickerEvent = {
+  inline def apply(ElementId: Double, Source: XInterface): FilePickerEvent = {
     val __obj = js.Dynamic.literal(ElementId = ElementId.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePickerEvent]
   }
   
-  @scala.inline
-  implicit class FilePickerEventMutableBuilder[Self <: FilePickerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FilePickerEvent](x: Self) {
     
-    @scala.inline
-    def setElementId(value: Double): Self = StObject.set(x, "ElementId", value.asInstanceOf[js.Any])
+    inline def setElementId(value: Double): Self = StObject.set(x, "ElementId", value.asInstanceOf[js.Any])
   }
 }

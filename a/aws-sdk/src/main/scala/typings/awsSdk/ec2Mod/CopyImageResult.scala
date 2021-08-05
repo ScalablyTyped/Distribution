@@ -13,19 +13,15 @@ trait CopyImageResult extends StObject {
 }
 object CopyImageResult {
   
-  @scala.inline
-  def apply(): CopyImageResult = {
+  inline def apply(): CopyImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyImageResult]
   }
   
-  @scala.inline
-  implicit class CopyImageResultMutableBuilder[Self <: CopyImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyImageResult](x: Self) {
     
-    @scala.inline
-    def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait CreatedButton extends StObject {
 }
 object CreatedButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => Unit,
     image: String,
@@ -46,34 +45,24 @@ object CreatedButton {
     __obj.asInstanceOf[CreatedButton]
   }
   
-  @scala.inline
-  implicit class CreatedButtonMutableBuilder[Self <: CreatedButton] (val x: Self) extends AnyVal {
+  extension [Self <: CreatedButton](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
+    inline def setOffTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+    inline def setOnTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyle(value: ButtonStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ButtonStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

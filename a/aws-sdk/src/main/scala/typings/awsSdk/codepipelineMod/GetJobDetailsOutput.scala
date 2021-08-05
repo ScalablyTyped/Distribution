@@ -13,19 +13,15 @@ trait GetJobDetailsOutput extends StObject {
 }
 object GetJobDetailsOutput {
   
-  @scala.inline
-  def apply(): GetJobDetailsOutput = {
+  inline def apply(): GetJobDetailsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetJobDetailsOutput]
   }
   
-  @scala.inline
-  implicit class GetJobDetailsOutputMutableBuilder[Self <: GetJobDetailsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobDetailsOutput](x: Self) {
     
-    @scala.inline
-    def setJobDetails(value: JobDetails): Self = StObject.set(x, "jobDetails", value.asInstanceOf[js.Any])
+    inline def setJobDetails(value: JobDetails): Self = StObject.set(x, "jobDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobDetailsUndefined: Self = StObject.set(x, "jobDetails", js.undefined)
+    inline def setJobDetailsUndefined: Self = StObject.set(x, "jobDetails", js.undefined)
   }
 }

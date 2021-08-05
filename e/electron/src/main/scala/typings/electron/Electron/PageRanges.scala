@@ -18,19 +18,15 @@ trait PageRanges extends StObject {
 }
 object PageRanges {
   
-  @scala.inline
-  def apply(from: Double, to: Double): PageRanges = {
+  inline def apply(from: Double, to: Double): PageRanges = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageRanges]
   }
   
-  @scala.inline
-  implicit class PageRangesMutableBuilder[Self <: PageRanges] (val x: Self) extends AnyVal {
+  extension [Self <: PageRanges](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

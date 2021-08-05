@@ -26,20 +26,16 @@ object anon {
   }
   object Direction {
     
-    @scala.inline
-    def apply(direction: asc | desc, field: String | `@`): Direction = {
+    inline def apply(direction: asc | desc, field: String | `@`): Direction = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
-    @scala.inline
-    implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+    extension [Self <: Direction](x: Self) {
       
-      @scala.inline
-      def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField(value: String | `@`): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String | `@`): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,20 +47,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: SerializableNode, start: SerializableNode): End = {
+    inline def apply(end: SerializableNode, start: SerializableNode): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: SerializableNode): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: SerializableNode): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: SerializableNode): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: SerializableNode): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,8 +70,7 @@ object anon {
   }
   object Field {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       field: String | `@`,
       relation: EqualssignEqualssign | ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign,
       value: String
@@ -88,19 +79,15 @@ object anon {
       __obj.asInstanceOf[Field]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+    extension [Self <: Field](x: Self) {
       
-      @scala.inline
-      def setField(value: String | `@`): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String | `@`): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelation(
+      inline def setRelation(
         value: EqualssignEqualssign | ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign
       ): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,20 +97,16 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(fields: js.Array[String]): Fields = {
+    inline def apply(fields: js.Array[String]): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     }
   }
   
@@ -135,23 +118,18 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(options: js.Array[String], startFrom: Double): Options = {
+    inline def apply(options: js.Array[String], startFrom: Double): Options = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], startFrom = startFrom.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setStartFrom(value: Double): Self = StObject.set(x, "startFrom", value.asInstanceOf[js.Any])
+      inline def setStartFrom(value: Double): Self = StObject.set(x, "startFrom", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,26 +143,20 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(field: String, path: js.Array[String], value: String): Path = {
+    inline def apply(field: String, path: js.Array[String], value: String): Path = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,20 +166,16 @@ object anon {
   }
   object PathJSONPath {
     
-    @scala.inline
-    def apply(path: JSONPath): PathJSONPath = {
+    inline def apply(path: JSONPath): PathJSONPath = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathJSONPath]
     }
     
-    @scala.inline
-    implicit class PathJSONPathMutableBuilder[Self <: PathJSONPath] (val x: Self) extends AnyVal {
+    extension [Self <: PathJSONPath](x: Self) {
       
-      @scala.inline
-      def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -221,23 +189,18 @@ object anon {
   }
   object Start {
     
-    @scala.inline
-    def apply(end: SelectionPosition, start: SelectionPosition, text: String): Start = {
+    inline def apply(end: SelectionPosition, start: SelectionPosition, text: String): Start = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Start]
     }
     
-    @scala.inline
-    implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+    extension [Self <: Start](x: Self) {
       
-      @scala.inline
-      def setEnd(value: SelectionPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: SelectionPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: SelectionPosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: SelectionPosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

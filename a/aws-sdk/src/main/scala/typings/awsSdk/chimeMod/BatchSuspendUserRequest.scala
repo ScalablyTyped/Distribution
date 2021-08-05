@@ -18,22 +18,17 @@ trait BatchSuspendUserRequest extends StObject {
 }
 object BatchSuspendUserRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, UserIdList: UserIdList): BatchSuspendUserRequest = {
+  inline def apply(AccountId: NonEmptyString, UserIdList: UserIdList): BatchSuspendUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserIdList = UserIdList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchSuspendUserRequest]
   }
   
-  @scala.inline
-  implicit class BatchSuspendUserRequestMutableBuilder[Self <: BatchSuspendUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchSuspendUserRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdList(value: UserIdList): Self = StObject.set(x, "UserIdList", value.asInstanceOf[js.Any])
+    inline def setUserIdList(value: UserIdList): Self = StObject.set(x, "UserIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdListVarargs(value: NonEmptyString*): Self = StObject.set(x, "UserIdList", js.Array(value :_*))
+    inline def setUserIdListVarargs(value: NonEmptyString*): Self = StObject.set(x, "UserIdList", js.Array(value :_*))
   }
 }

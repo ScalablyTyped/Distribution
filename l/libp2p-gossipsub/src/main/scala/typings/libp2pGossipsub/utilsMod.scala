@@ -14,21 +14,14 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createGossipRpc(): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")().asInstanceOf[RPC]
-  @scala.inline
-  def createGossipRpc(msgs: js.Array[Message]): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any]).asInstanceOf[RPC]
-  @scala.inline
-  def createGossipRpc(msgs: js.Array[Message], control: PartialControlMessage): RPC = (^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any], control.asInstanceOf[js.Any])).asInstanceOf[RPC]
-  @scala.inline
-  def createGossipRpc(msgs: Unit, control: PartialControlMessage): RPC = (^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any], control.asInstanceOf[js.Any])).asInstanceOf[RPC]
+  inline def createGossipRpc(): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")().asInstanceOf[RPC]
+  inline def createGossipRpc(msgs: js.Array[Message]): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any]).asInstanceOf[RPC]
+  inline def createGossipRpc(msgs: js.Array[Message], control: PartialControlMessage): RPC = (^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any], control.asInstanceOf[js.Any])).asInstanceOf[RPC]
+  inline def createGossipRpc(msgs: Unit, control: PartialControlMessage): RPC = (^.asInstanceOf[js.Dynamic].applyDynamic("createGossipRpc")(msgs.asInstanceOf[js.Any], control.asInstanceOf[js.Any])).asInstanceOf[RPC]
   
-  @scala.inline
-  def hasGossipProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGossipProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasGossipProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGossipProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def messageIdToString(msgId: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("messageIdToString")(msgId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def messageIdToString(msgId: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("messageIdToString")(msgId.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def shuffle[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def shuffle[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

@@ -39,6 +39,5 @@ object TaskHistoryRecord {
     * Create a new instance of Excel.TaskHistoryRecord object
     */
   /* static member */
-  @scala.inline
-  def newObject(context: ClientRequestContext): typings.officeJsPreview.Excel.TaskHistoryRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJsPreview.Excel.TaskHistoryRecord]
+  inline def newObject(context: ClientRequestContext): typings.officeJsPreview.Excel.TaskHistoryRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJsPreview.Excel.TaskHistoryRecord]
 }

@@ -12,8 +12,7 @@ object createNgcProgramMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createNgcProgram(
+  inline def createNgcProgram(
     createHost: js.Function1[
       /* options */ CompilerOptions, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerHost */ js.Any

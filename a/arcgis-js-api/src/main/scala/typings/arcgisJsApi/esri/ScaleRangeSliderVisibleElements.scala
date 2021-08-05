@@ -19,8 +19,7 @@ trait ScaleRangeSliderVisibleElements
 }
 object ScaleRangeSliderVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     preview: Boolean,
@@ -30,10 +29,8 @@ object ScaleRangeSliderVisibleElements {
     __obj.asInstanceOf[ScaleRangeSliderVisibleElements]
   }
   
-  @scala.inline
-  implicit class ScaleRangeSliderVisibleElementsMutableBuilder[Self <: ScaleRangeSliderVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleRangeSliderVisibleElements](x: Self) {
     
-    @scala.inline
-    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

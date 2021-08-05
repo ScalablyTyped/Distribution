@@ -19,8 +19,7 @@ trait CreditCardGateway extends StObject {
 }
 object CreditCardGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: CreditCardCreateRequest => js.Promise[ValidatedResponse[CreditCard]],
     delete: String => js.Promise[Unit],
     expiringBetween: (Date, Date) => js.Promise[CreditCard],
@@ -31,22 +30,16 @@ object CreditCardGateway {
     __obj.asInstanceOf[CreditCardGateway]
   }
   
-  @scala.inline
-  implicit class CreditCardGatewayMutableBuilder[Self <: CreditCardGateway] (val x: Self) extends AnyVal {
+  extension [Self <: CreditCardGateway](x: Self) {
     
-    @scala.inline
-    def setCreate(value: CreditCardCreateRequest => js.Promise[ValidatedResponse[CreditCard]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: CreditCardCreateRequest => js.Promise[ValidatedResponse[CreditCard]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpiringBetween(value: (Date, Date) => js.Promise[CreditCard]): Self = StObject.set(x, "expiringBetween", js.Any.fromFunction2(value))
+    inline def setExpiringBetween(value: (Date, Date) => js.Promise[CreditCard]): Self = StObject.set(x, "expiringBetween", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFind(value: String => js.Promise[CreditCard]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => js.Promise[CreditCard]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: (String, CreditCardUpdateRequest) => js.Promise[ValidatedResponse[CreditCard]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (String, CreditCardUpdateRequest) => js.Promise[ValidatedResponse[CreditCard]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

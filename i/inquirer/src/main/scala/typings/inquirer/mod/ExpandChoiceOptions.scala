@@ -21,19 +21,15 @@ trait ExpandChoiceOptions[T /* <: Answers */]
 }
 object ExpandChoiceOptions {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): ExpandChoiceOptions[T] = {
+  inline def apply[T /* <: Answers */](): ExpandChoiceOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpandChoiceOptions[T]]
   }
   
-  @scala.inline
-  implicit class ExpandChoiceOptionsMutableBuilder[Self <: ExpandChoiceOptions[?], T /* <: Answers */] (val x: Self & ExpandChoiceOptions[T]) extends AnyVal {
+  extension [Self <: ExpandChoiceOptions[?], T /* <: Answers */](x: Self & ExpandChoiceOptions[T]) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

@@ -40,8 +40,7 @@ object categoryMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emojiProps: EmojiProps,
       i18n: I18n,
       id: CategoryName,
@@ -53,50 +52,35 @@ object categoryMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setEmojiProps(value: EmojiProps): Self = StObject.set(x, "emojiProps", value.asInstanceOf[js.Any])
+      inline def setEmojiProps(value: EmojiProps): Self = StObject.set(x, "emojiProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojis(value: js.Array[String | EmojiData]): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
+      inline def setEmojis(value: js.Array[String | EmojiData]): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojisUndefined: Self = StObject.set(x, "emojis", js.undefined)
+      inline def setEmojisUndefined: Self = StObject.set(x, "emojis", js.undefined)
       
-      @scala.inline
-      def setEmojisVarargs(value: (String | EmojiData)*): Self = StObject.set(x, "emojis", js.Array(value :_*))
+      inline def setEmojisVarargs(value: (String | EmojiData)*): Self = StObject.set(x, "emojis", js.Array(value :_*))
       
-      @scala.inline
-      def setHasStickyPosition(value: Boolean): Self = StObject.set(x, "hasStickyPosition", value.asInstanceOf[js.Any])
+      inline def setHasStickyPosition(value: Boolean): Self = StObject.set(x, "hasStickyPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasStickyPositionUndefined: Self = StObject.set(x, "hasStickyPosition", js.undefined)
+      inline def setHasStickyPositionUndefined: Self = StObject.set(x, "hasStickyPosition", js.undefined)
       
-      @scala.inline
-      def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: CategoryName): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: CategoryName): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+      inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerLine(value: Double): Self = StObject.set(x, "perLine", value.asInstanceOf[js.Any])
+      inline def setPerLine(value: Double): Self = StObject.set(x, "perLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecent(value: js.Array[String]): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
+      inline def setRecent(value: js.Array[String]): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
+      inline def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
       
-      @scala.inline
-      def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value :_*))
+      inline def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value :_*))
     }
   }
 }

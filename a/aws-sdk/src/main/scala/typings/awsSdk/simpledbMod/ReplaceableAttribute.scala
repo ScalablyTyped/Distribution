@@ -23,25 +23,19 @@ trait ReplaceableAttribute extends StObject {
 }
 object ReplaceableAttribute {
   
-  @scala.inline
-  def apply(Name: String, Value: String): ReplaceableAttribute = {
+  inline def apply(Name: String, Value: String): ReplaceableAttribute = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceableAttribute]
   }
   
-  @scala.inline
-  implicit class ReplaceableAttributeMutableBuilder[Self <: ReplaceableAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceableAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "Replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "Replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "Replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "Replace", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

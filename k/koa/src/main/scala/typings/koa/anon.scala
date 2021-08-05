@@ -27,17 +27,14 @@ object anon {
   }
   object State {
     
-    @scala.inline
-    def apply[StateT](state: StateT): State[StateT] = {
+    inline def apply[StateT](state: StateT): State[StateT] = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[State[StateT]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], StateT] (val x: Self & State[StateT]) extends AnyVal {
+    extension [Self <: State[?], StateT](x: Self & State[StateT]) {
       
-      @scala.inline
-      def setState(value: StateT): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StateT): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

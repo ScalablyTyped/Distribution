@@ -20,29 +20,22 @@ trait Attributetypeboolean extends StObject {
 }
 object Attributetypeboolean {
   
-  @scala.inline
-  def apply(attribute: String, `type`: (js.UndefOr[string | boolean]) & boolean): Attributetypeboolean = {
+  inline def apply(attribute: String, `type`: (js.UndefOr[string | boolean]) & boolean): Attributetypeboolean = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributetypeboolean]
   }
   
-  @scala.inline
-  implicit class AttributetypebooleanMutableBuilder[Self <: Attributetypeboolean] (val x: Self) extends AnyVal {
+  extension [Self <: Attributetypeboolean](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSource(value: attribute): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: attribute): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: (js.UndefOr[string | boolean]) & boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (js.UndefOr[string | boolean]) & boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

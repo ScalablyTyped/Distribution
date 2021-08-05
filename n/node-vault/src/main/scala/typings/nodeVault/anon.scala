@@ -17,23 +17,18 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: js.Any, request: Option, statusCode: Double): Body = {
+    inline def apply(body: js.Any, request: Option, statusCode: Double): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: Option): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Option): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,23 +42,18 @@ object anon {
   }
   object Method {
     
-    @scala.inline
-    def apply(method: String, path: String, scheme: js.Any): Method = {
+    inline def apply(method: String, path: String, scheme: js.Any): Method = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Method]
     }
     
-    @scala.inline
-    implicit class MethodMutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
+    extension [Self <: Method](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,32 +67,24 @@ object anon {
   }
   object Query {
     
-    @scala.inline
-    def apply(): Query = {
+    inline def apply(): Query = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setQuery(value: Option): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Option): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setReq(value: Option): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Option): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+      inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
       
-      @scala.inline
-      def setRes(value: Option): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Option): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+      inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
     }
   }
 }

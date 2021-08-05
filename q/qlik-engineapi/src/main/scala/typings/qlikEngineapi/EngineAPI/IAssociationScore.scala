@@ -48,8 +48,7 @@ trait IAssociationScore extends StObject {
 }
 object IAssociationScore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qField1Scores: IFieldScores,
     qField2Scores: IFieldScores,
     qFieldPairName: String,
@@ -59,19 +58,14 @@ object IAssociationScore {
     __obj.asInstanceOf[IAssociationScore]
   }
   
-  @scala.inline
-  implicit class IAssociationScoreMutableBuilder[Self <: IAssociationScore] (val x: Self) extends AnyVal {
+  extension [Self <: IAssociationScore](x: Self) {
     
-    @scala.inline
-    def setQField1Scores(value: IFieldScores): Self = StObject.set(x, "qField1Scores", value.asInstanceOf[js.Any])
+    inline def setQField1Scores(value: IFieldScores): Self = StObject.set(x, "qField1Scores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQField2Scores(value: IFieldScores): Self = StObject.set(x, "qField2Scores", value.asInstanceOf[js.Any])
+    inline def setQField2Scores(value: IFieldScores): Self = StObject.set(x, "qField2Scores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldPairName(value: String): Self = StObject.set(x, "qFieldPairName", value.asInstanceOf[js.Any])
+    inline def setQFieldPairName(value: String): Self = StObject.set(x, "qFieldPairName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQScoreSummary(value: Double): Self = StObject.set(x, "qScoreSummary", value.asInstanceOf[js.Any])
+    inline def setQScoreSummary(value: Double): Self = StObject.set(x, "qScoreSummary", value.asInstanceOf[js.Any])
   }
 }

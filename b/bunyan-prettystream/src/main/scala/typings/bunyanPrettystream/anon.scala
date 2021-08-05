@@ -12,20 +12,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(): End = {
+    inline def apply(): End = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     }
   }
   
@@ -37,26 +33,20 @@ object anon {
   }
   object Mode {
     
-    @scala.inline
-    def apply(): Mode = {
+    inline def apply(): Mode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mode]
     }
     
-    @scala.inline
-    implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+    extension [Self <: Mode](x: Self) {
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setUseColor(value: Boolean): Self = StObject.set(x, "useColor", value.asInstanceOf[js.Any])
+      inline def setUseColor(value: Boolean): Self = StObject.set(x, "useColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseColorUndefined: Self = StObject.set(x, "useColor", js.undefined)
+      inline def setUseColorUndefined: Self = StObject.set(x, "useColor", js.undefined)
     }
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLStyleMedia")
 @js.native
-class HTMLStyleMedia protected ()
+/* private */ class HTMLStyleMedia ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLStyleMedia {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLStyleMedia_typekey")
   var MSHTMLDotHTMLStyleMedia_typekey: typings.activexMshtml.MSHTML.HTMLStyleMedia = js.native
   

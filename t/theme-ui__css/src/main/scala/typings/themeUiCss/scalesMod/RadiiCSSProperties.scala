@@ -26,67 +26,47 @@ trait RadiiCSSProperties extends StObject {
 }
 object RadiiCSSProperties {
   
-  @scala.inline
-  def apply(): RadiiCSSProperties = {
+  inline def apply(): RadiiCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadiiCSSProperties]
   }
   
-  @scala.inline
-  implicit class RadiiCSSPropertiesMutableBuilder[Self <: RadiiCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RadiiCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBorderBottomLeftRadius(value: Radii): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomLeftRadius(value: Radii): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
+    inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
-    @scala.inline
-    def setBorderBottomRightRadius(value: Radii): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomRightRadius(value: Radii): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
+    inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
-    @scala.inline
-    def setBorderEndEndRadius(value: Radii): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
+    inline def setBorderEndEndRadius(value: Radii): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
+    inline def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
     
-    @scala.inline
-    def setBorderEndStartRadius(value: Radii): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
+    inline def setBorderEndStartRadius(value: Radii): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
+    inline def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
     
-    @scala.inline
-    def setBorderRadius(value: Radii): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Radii): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    @scala.inline
-    def setBorderStartEndRadius(value: Radii): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
+    inline def setBorderStartEndRadius(value: Radii): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
+    inline def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
     
-    @scala.inline
-    def setBorderStartStartRadius(value: Radii): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
+    inline def setBorderStartStartRadius(value: Radii): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
+    inline def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
     
-    @scala.inline
-    def setBorderTopLeftRadius(value: Radii): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBorderTopLeftRadius(value: Radii): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
+    inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
-    @scala.inline
-    def setBorderTopRightRadius(value: Radii): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
+    inline def setBorderTopRightRadius(value: Radii): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
+    inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
   }
 }

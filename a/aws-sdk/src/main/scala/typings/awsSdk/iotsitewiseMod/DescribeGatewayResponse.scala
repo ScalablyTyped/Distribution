@@ -43,8 +43,7 @@ trait DescribeGatewayResponse extends StObject {
 }
 object DescribeGatewayResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     creationDate: Timestamp,
     gatewayArn: ARN,
     gatewayCapabilitySummaries: GatewayCapabilitySummaries,
@@ -56,34 +55,24 @@ object DescribeGatewayResponse {
     __obj.asInstanceOf[DescribeGatewayResponse]
   }
   
-  @scala.inline
-  implicit class DescribeGatewayResponseMutableBuilder[Self <: DescribeGatewayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGatewayResponse](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayArn(value: ARN): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+    inline def setGatewayArn(value: ARN): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayCapabilitySummaries(value: GatewayCapabilitySummaries): Self = StObject.set(x, "gatewayCapabilitySummaries", value.asInstanceOf[js.Any])
+    inline def setGatewayCapabilitySummaries(value: GatewayCapabilitySummaries): Self = StObject.set(x, "gatewayCapabilitySummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayCapabilitySummariesVarargs(value: GatewayCapabilitySummary*): Self = StObject.set(x, "gatewayCapabilitySummaries", js.Array(value :_*))
+    inline def setGatewayCapabilitySummariesVarargs(value: GatewayCapabilitySummary*): Self = StObject.set(x, "gatewayCapabilitySummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayPlatform(value: GatewayPlatform): Self = StObject.set(x, "gatewayPlatform", value.asInstanceOf[js.Any])
+    inline def setGatewayPlatform(value: GatewayPlatform): Self = StObject.set(x, "gatewayPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayPlatformUndefined: Self = StObject.set(x, "gatewayPlatform", js.undefined)
+    inline def setGatewayPlatformUndefined: Self = StObject.set(x, "gatewayPlatform", js.undefined)
     
-    @scala.inline
-    def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
   }
 }

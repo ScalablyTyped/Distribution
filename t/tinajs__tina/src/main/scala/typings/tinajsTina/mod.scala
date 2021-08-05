@@ -29,11 +29,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def define(definitions: PartialComponentDefinitio): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def define(definitions: PartialComponentDefinitio): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def mixin(definitions: PartialComponentDefinitio): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mixin(definitions: PartialComponentDefinitio): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tinajs/tina", "Page")
@@ -46,15 +44,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def define(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def define(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def mixin(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mixin(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def use(plugin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def use(plugin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ComponentDefinitions
     extends StObject
@@ -72,8 +67,7 @@ object mod {
   }
   object ComponentDefinitions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attached: () => Unit,
       compute: StringDictionary[js.Any] => StringDictionary[js.Any],
       created: () => Unit,
@@ -89,26 +83,19 @@ object mod {
       __obj.asInstanceOf[ComponentDefinitions]
     }
     
-    @scala.inline
-    implicit class ComponentDefinitionsMutableBuilder[Self <: ComponentDefinitions] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentDefinitions](x: Self) {
       
-      @scala.inline
-      def setCompute(value: StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      inline def setCompute(value: StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixins(value: js.Array[PartialComponentDefinitio]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      inline def setMixins(value: js.Array[PartialComponentDefinitio]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinsVarargs(value: PartialComponentDefinitio*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: PartialComponentDefinitio*): Self = StObject.set(x, "mixins", js.Array(value :_*))
       
-      @scala.inline
-      def setProperties(value: ComponentProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: ComponentProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,8 +113,7 @@ object mod {
   }
   object ComponentLifecycles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attached: () => Unit,
       created: () => Unit,
       detached: () => Unit,
@@ -138,23 +124,17 @@ object mod {
       __obj.asInstanceOf[ComponentLifecycles]
     }
     
-    @scala.inline
-    implicit class ComponentLifecyclesMutableBuilder[Self <: ComponentLifecycles] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentLifecycles](x: Self) {
       
-      @scala.inline
-      def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
+      inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+      inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
+      inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
+      inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+      inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     }
   }
   
@@ -183,8 +163,7 @@ object mod {
   }
   object PageEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onPageScroll: Page => Unit,
       onPullDownRefresh: Page => Unit,
       onReachBottom: Page => Unit,
@@ -194,20 +173,15 @@ object mod {
       __obj.asInstanceOf[PageEvents]
     }
     
-    @scala.inline
-    implicit class PageEventsMutableBuilder[Self <: PageEvents] (val x: Self) extends AnyVal {
+    extension [Self <: PageEvents](x: Self) {
       
-      @scala.inline
-      def setOnPageScroll(value: Page => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
+      inline def setOnPageScroll(value: Page => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPullDownRefresh(value: Page => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
+      inline def setOnPullDownRefresh(value: Page => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReachBottom(value: Page => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
+      inline def setOnReachBottom(value: Page => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShareAppMessage(value: Page => Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
+      inline def setOnShareAppMessage(value: Page => Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     }
   }
   

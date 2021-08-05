@@ -15,19 +15,15 @@ trait IsConnected extends StObject {
 }
 object IsConnected {
   
-  @scala.inline
-  def apply(isConnected: Boolean, networkType: NetworkType): IsConnected = {
+  inline def apply(isConnected: Boolean, networkType: NetworkType): IsConnected = {
     val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsConnected]
   }
   
-  @scala.inline
-  implicit class IsConnectedMutableBuilder[Self <: IsConnected] (val x: Self) extends AnyVal {
+  extension [Self <: IsConnected](x: Self) {
     
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

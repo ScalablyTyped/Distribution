@@ -20,52 +20,37 @@ trait BundleDetails extends StObject {
 }
 object BundleDetails {
   
-  @scala.inline
-  def apply(): BundleDetails = {
+  inline def apply(): BundleDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BundleDetails]
   }
   
-  @scala.inline
-  implicit class BundleDetailsMutableBuilder[Self <: BundleDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BundleDetails](x: Self) {
     
-    @scala.inline
-    def setAvailablePlatforms(value: Platforms): Self = StObject.set(x, "availablePlatforms", value.asInstanceOf[js.Any])
+    inline def setAvailablePlatforms(value: Platforms): Self = StObject.set(x, "availablePlatforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailablePlatformsUndefined: Self = StObject.set(x, "availablePlatforms", js.undefined)
+    inline def setAvailablePlatformsUndefined: Self = StObject.set(x, "availablePlatforms", js.undefined)
     
-    @scala.inline
-    def setAvailablePlatformsVarargs(value: Platform*): Self = StObject.set(x, "availablePlatforms", js.Array(value :_*))
+    inline def setAvailablePlatformsVarargs(value: Platform*): Self = StObject.set(x, "availablePlatforms", js.Array(value :_*))
     
-    @scala.inline
-    def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: BundleDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: BundleDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: IconUrl): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: IconUrl): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: BundleTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: BundleTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVersion(value: BundleVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: BundleVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

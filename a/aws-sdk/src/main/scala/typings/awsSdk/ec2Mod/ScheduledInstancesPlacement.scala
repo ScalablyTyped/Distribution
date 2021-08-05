@@ -18,25 +18,19 @@ trait ScheduledInstancesPlacement extends StObject {
 }
 object ScheduledInstancesPlacement {
   
-  @scala.inline
-  def apply(): ScheduledInstancesPlacement = {
+  inline def apply(): ScheduledInstancesPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledInstancesPlacement]
   }
   
-  @scala.inline
-  implicit class ScheduledInstancesPlacementMutableBuilder[Self <: ScheduledInstancesPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledInstancesPlacement](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait DynatreeNamespace extends StObject {
 }
 object DynatreeNamespace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNode: HTMLElement => DynaTreeNode,
     getPersistData: (String, DynaTreeCookieOptions) => js.Any,
     version: Double
@@ -25,16 +24,12 @@ object DynatreeNamespace {
     __obj.asInstanceOf[DynatreeNamespace]
   }
   
-  @scala.inline
-  implicit class DynatreeNamespaceMutableBuilder[Self <: DynatreeNamespace] (val x: Self) extends AnyVal {
+  extension [Self <: DynatreeNamespace](x: Self) {
     
-    @scala.inline
-    def setGetNode(value: HTMLElement => DynaTreeNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
+    inline def setGetNode(value: HTMLElement => DynaTreeNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPersistData(value: (String, DynaTreeCookieOptions) => js.Any): Self = StObject.set(x, "getPersistData", js.Any.fromFunction2(value))
+    inline def setGetPersistData(value: (String, DynaTreeCookieOptions) => js.Any): Self = StObject.set(x, "getPersistData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

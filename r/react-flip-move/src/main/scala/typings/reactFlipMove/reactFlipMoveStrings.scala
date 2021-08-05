@@ -11,34 +11,29 @@ object reactFlipMoveStrings {
   sealed trait accordionHorizontal
     extends StObject
        with AnimationPreset
-  @scala.inline
-  def accordionHorizontal: accordionHorizontal = "accordionHorizontal".asInstanceOf[accordionHorizontal]
+  inline def accordionHorizontal: accordionHorizontal = "accordionHorizontal".asInstanceOf[accordionHorizontal]
   
   @js.native
   sealed trait accordionVertical
     extends StObject
        with AnimationPreset
-  @scala.inline
-  def accordionVertical: accordionVertical = "accordionVertical".asInstanceOf[accordionVertical]
+  inline def accordionVertical: accordionVertical = "accordionVertical".asInstanceOf[accordionVertical]
   
   @js.native
   sealed trait elevator
     extends StObject
        with AnimationPreset
-  @scala.inline
-  def elevator: elevator = "elevator".asInstanceOf[elevator]
+  inline def elevator: elevator = "elevator".asInstanceOf[elevator]
   
   @js.native
   sealed trait fade
     extends StObject
        with AnimationPreset
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait none
     extends StObject
        with AnimationPreset
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

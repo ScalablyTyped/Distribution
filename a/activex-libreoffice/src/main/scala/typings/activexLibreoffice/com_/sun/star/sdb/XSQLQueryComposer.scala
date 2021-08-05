@@ -130,8 +130,7 @@ trait XSQLQueryComposer
 }
 object XSQLQueryComposer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComposedQuery: String,
     Filter: String,
     Order: String,
@@ -155,52 +154,36 @@ object XSQLQueryComposer {
     __obj.asInstanceOf[XSQLQueryComposer]
   }
   
-  @scala.inline
-  implicit class XSQLQueryComposerMutableBuilder[Self <: XSQLQueryComposer] (val x: Self) extends AnyVal {
+  extension [Self <: XSQLQueryComposer](x: Self) {
     
-    @scala.inline
-    def setAppendFilterByColumn(value: XPropertySet => Unit): Self = StObject.set(x, "appendFilterByColumn", js.Any.fromFunction1(value))
+    inline def setAppendFilterByColumn(value: XPropertySet => Unit): Self = StObject.set(x, "appendFilterByColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendOrderByColumn(value: (XPropertySet, Boolean) => Unit): Self = StObject.set(x, "appendOrderByColumn", js.Any.fromFunction2(value))
+    inline def setAppendOrderByColumn(value: (XPropertySet, Boolean) => Unit): Self = StObject.set(x, "appendOrderByColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComposedQuery(value: String): Self = StObject.set(x, "ComposedQuery", value.asInstanceOf[js.Any])
+    inline def setComposedQuery(value: String): Self = StObject.set(x, "ComposedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetComposedQuery(value: () => String): Self = StObject.set(x, "getComposedQuery", js.Any.fromFunction0(value))
+    inline def setGetComposedQuery(value: () => String): Self = StObject.set(x, "getComposedQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilter(value: () => String): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
+    inline def setGetFilter(value: () => String): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrder(value: () => String): Self = StObject.set(x, "getOrder", js.Any.fromFunction0(value))
+    inline def setGetOrder(value: () => String): Self = StObject.set(x, "getOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQuery(value: () => String): Self = StObject.set(x, "getQuery", js.Any.fromFunction0(value))
+    inline def setGetQuery(value: () => String): Self = StObject.set(x, "getQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStructuredFilter(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getStructuredFilter", js.Any.fromFunction0(value))
+    inline def setGetStructuredFilter(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getStructuredFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFilter(value: String => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
+    inline def setSetFilter(value: String => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrder(value: String => Unit): Self = StObject.set(x, "setOrder", js.Any.fromFunction1(value))
+    inline def setSetOrder(value: String => Unit): Self = StObject.set(x, "setOrder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetQuery(value: String => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
+    inline def setSetQuery(value: String => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStructuredFilter(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "StructuredFilter", value.asInstanceOf[js.Any])
+    inline def setStructuredFilter(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "StructuredFilter", value.asInstanceOf[js.Any])
   }
 }

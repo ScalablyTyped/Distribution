@@ -13,16 +13,13 @@ trait DeleteCacheParameterGroupMessage extends StObject {
 }
 object DeleteCacheParameterGroupMessage {
   
-  @scala.inline
-  def apply(CacheParameterGroupName: String): DeleteCacheParameterGroupMessage = {
+  inline def apply(CacheParameterGroupName: String): DeleteCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCacheParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteCacheParameterGroupMessageMutableBuilder[Self <: DeleteCacheParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCacheParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
   }
 }

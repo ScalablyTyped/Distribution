@@ -15,23 +15,18 @@ trait AddUniqueConstraintOptions
 }
 object AddUniqueConstraintOptions {
   
-  @scala.inline
-  def apply(): AddUniqueConstraintOptions = {
+  inline def apply(): AddUniqueConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("unique")
     __obj.asInstanceOf[AddUniqueConstraintOptions]
   }
   
-  @scala.inline
-  implicit class AddUniqueConstraintOptionsMutableBuilder[Self <: AddUniqueConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddUniqueConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: unique_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: unique_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

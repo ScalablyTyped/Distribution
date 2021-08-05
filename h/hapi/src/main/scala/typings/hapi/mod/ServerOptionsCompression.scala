@@ -10,16 +10,13 @@ trait ServerOptionsCompression extends StObject {
 }
 object ServerOptionsCompression {
   
-  @scala.inline
-  def apply(minBytes: Double): ServerOptionsCompression = {
+  inline def apply(minBytes: Double): ServerOptionsCompression = {
     val __obj = js.Dynamic.literal(minBytes = minBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptionsCompression]
   }
   
-  @scala.inline
-  implicit class ServerOptionsCompressionMutableBuilder[Self <: ServerOptionsCompression] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptionsCompression](x: Self) {
     
-    @scala.inline
-    def setMinBytes(value: Double): Self = StObject.set(x, "minBytes", value.asInstanceOf[js.Any])
+    inline def setMinBytes(value: Double): Self = StObject.set(x, "minBytes", value.asInstanceOf[js.Any])
   }
 }

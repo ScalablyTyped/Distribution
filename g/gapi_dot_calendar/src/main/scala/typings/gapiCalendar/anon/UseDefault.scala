@@ -12,25 +12,19 @@ trait UseDefault extends StObject {
 }
 object UseDefault {
   
-  @scala.inline
-  def apply(useDefault: Boolean): UseDefault = {
+  inline def apply(useDefault: Boolean): UseDefault = {
     val __obj = js.Dynamic.literal(useDefault = useDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseDefault]
   }
   
-  @scala.inline
-  implicit class UseDefaultMutableBuilder[Self <: UseDefault] (val x: Self) extends AnyVal {
+  extension [Self <: UseDefault](x: Self) {
     
-    @scala.inline
-    def setOverrides(value: js.Array[Method]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: js.Array[Method]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: Method*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: Method*): Self = StObject.set(x, "overrides", js.Array(value :_*))
     
-    @scala.inline
-    def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
+    inline def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
   }
 }

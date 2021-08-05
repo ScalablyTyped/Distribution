@@ -140,16 +140,14 @@ object Binding {
   @JSImport("go", "Binding.OneWay")
   @js.native
   def OneWay: EnumValue = js.native
-  @scala.inline
-  def OneWay_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneWay")(x.asInstanceOf[js.Any])
+  inline def OneWay_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneWay")(x.asInstanceOf[js.Any])
   
   /**This value for Binding.mode uses data source values and GraphObject properties and keeps them in sync.*/
   /* static member */
   @JSImport("go", "Binding.TwoWay")
   @js.native
   def TwoWay: EnumValue = js.native
-  @scala.inline
-  def TwoWay_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoWay")(x.asInstanceOf[js.Any])
+  inline def TwoWay_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoWay")(x.asInstanceOf[js.Any])
   
   /**
     * This static function can be used to create a function that parses
@@ -165,8 +163,7 @@ object Binding {
     * @param {EnumValue} defval the default enumerated value to return if it fails to parse the given string.
     */
   /* static member */
-  @scala.inline
-  def parseEnum(ctor: Constructor, defval: EnumValue): js.Function1[/* a */ String, EnumValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseEnum")(ctor.asInstanceOf[js.Any], defval.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ String, EnumValue]]
+  inline def parseEnum(ctor: Constructor, defval: EnumValue): js.Function1[/* a */ String, EnumValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseEnum")(ctor.asInstanceOf[js.Any], defval.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ String, EnumValue]]
   
   /**
     * This static function can be used to convert an object to a string,
@@ -175,6 +172,5 @@ object Binding {
     * @param {*} val
     */
   /* static member */
-  @scala.inline
-  def toString_(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

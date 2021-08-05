@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlXmlExportResult extends StObject
 object XlXmlExportResult {
   
-  @scala.inline
-  def xlXmlExportSuccess: `0` = 0.asInstanceOf[`0`]
+  inline def xlXmlExportSuccess: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlXmlExportValidationFailed: `1` = 1.asInstanceOf[`1`]
+  inline def xlXmlExportValidationFailed: `1` = 1.asInstanceOf[`1`]
 }

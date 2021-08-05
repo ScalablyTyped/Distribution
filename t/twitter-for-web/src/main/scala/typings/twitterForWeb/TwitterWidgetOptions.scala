@@ -36,43 +36,31 @@ trait TwitterWidgetOptions extends StObject {
 }
 object TwitterWidgetOptions {
   
-  @scala.inline
-  def apply(): TwitterWidgetOptions = {
+  inline def apply(): TwitterWidgetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TwitterWidgetOptions]
   }
   
-  @scala.inline
-  implicit class TwitterWidgetOptionsMutableBuilder[Self <: TwitterWidgetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterWidgetOptions](x: Self) {
     
-    @scala.inline
-    def setDnt(value: Boolean): Self = StObject.set(x, "dnt", value.asInstanceOf[js.Any])
+    inline def setDnt(value: Boolean): Self = StObject.set(x, "dnt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDntUndefined: Self = StObject.set(x, "dnt", js.undefined)
+    inline def setDntUndefined: Self = StObject.set(x, "dnt", js.undefined)
     
-    @scala.inline
-    def setHashtags(value: String): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
+    inline def setHashtags(value: String): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashtagsUndefined: Self = StObject.set(x, "hashtags", js.undefined)
+    inline def setHashtagsUndefined: Self = StObject.set(x, "hashtags", js.undefined)
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setRelated(value: String): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+    inline def setRelated(value: String): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+    inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
-    @scala.inline
-    def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
+    inline def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
+    inline def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
   }
 }

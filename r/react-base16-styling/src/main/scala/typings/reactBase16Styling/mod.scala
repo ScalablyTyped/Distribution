@@ -26,16 +26,11 @@ object mod {
     StylingFunction
   ] = js.native
   
-  @scala.inline
-  def getBase16Theme(theme: Theme): js.UndefOr[Base16Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBase16Theme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Base16Theme]]
-  @scala.inline
-  def getBase16Theme(theme: Theme, base16Themes: StringDictionary[Base16Theme]): js.UndefOr[Base16Theme] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBase16Theme")(theme.asInstanceOf[js.Any], base16Themes.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Base16Theme]]
+  inline def getBase16Theme(theme: Theme): js.UndefOr[Base16Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBase16Theme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Base16Theme]]
+  inline def getBase16Theme(theme: Theme, base16Themes: StringDictionary[Base16Theme]): js.UndefOr[Base16Theme] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBase16Theme")(theme.asInstanceOf[js.Any], base16Themes.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Base16Theme]]
   
-  @scala.inline
-  def invertBase16Theme(base16Theme: Base16Theme): Base16Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("invertBase16Theme")(base16Theme.asInstanceOf[js.Any]).asInstanceOf[Base16Theme]
+  inline def invertBase16Theme(base16Theme: Base16Theme): Base16Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("invertBase16Theme")(base16Theme.asInstanceOf[js.Any]).asInstanceOf[Base16Theme]
   
-  @scala.inline
-  def invertTheme(): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("invertTheme")().asInstanceOf[js.UndefOr[Theme]]
-  @scala.inline
-  def invertTheme(theme: Theme): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("invertTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Theme]]
+  inline def invertTheme(): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("invertTheme")().asInstanceOf[js.UndefOr[Theme]]
+  inline def invertTheme(theme: Theme): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("invertTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Theme]]
 }

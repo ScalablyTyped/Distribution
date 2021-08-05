@@ -15,16 +15,13 @@ trait AccelerometerOptions
 }
 object AccelerometerOptions {
   
-  @scala.inline
-  def apply(interval: game | ui | normal): AccelerometerOptions = {
+  inline def apply(interval: game | ui | normal): AccelerometerOptions = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerOptions]
   }
   
-  @scala.inline
-  implicit class AccelerometerOptionsMutableBuilder[Self <: AccelerometerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccelerometerOptions](x: Self) {
     
-    @scala.inline
-    def setInterval(value: game | ui | normal): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: game | ui | normal): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }
 }

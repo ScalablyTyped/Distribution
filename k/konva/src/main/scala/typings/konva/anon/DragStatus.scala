@@ -24,8 +24,7 @@ trait DragStatus extends StObject {
 }
 object DragStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dragStatus: stopped | ready | dragging,
     node: Node[NodeConfig],
     offset: Vector2d,
@@ -35,25 +34,18 @@ object DragStatus {
     __obj.asInstanceOf[DragStatus]
   }
   
-  @scala.inline
-  implicit class DragStatusMutableBuilder[Self <: DragStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DragStatus](x: Self) {
     
-    @scala.inline
-    def setDragStatus(value: stopped | ready | dragging): Self = StObject.set(x, "dragStatus", value.asInstanceOf[js.Any])
+    inline def setDragStatus(value: stopped | ready | dragging): Self = StObject.set(x, "dragStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Node[NodeConfig]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node[NodeConfig]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Vector2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Vector2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+    inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
+    inline def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
     
-    @scala.inline
-    def setStartPointerPos(value: Vector2d): Self = StObject.set(x, "startPointerPos", value.asInstanceOf[js.Any])
+    inline def setStartPointerPos(value: Vector2d): Self = StObject.set(x, "startPointerPos", value.asInstanceOf[js.Any])
   }
 }

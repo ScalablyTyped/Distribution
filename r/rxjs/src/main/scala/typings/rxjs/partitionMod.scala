@@ -12,10 +12,8 @@ object partitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def partition[T](source: ObservableInput[T], predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Tuple2[Observable[T], Observable[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Observable[T], Observable[T]]]
-  @scala.inline
-  def partition[T](
+  inline def partition[T](source: ObservableInput[T], predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Tuple2[Observable[T], Observable[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Observable[T], Observable[T]]]
+  inline def partition[T](
     source: ObservableInput[T],
     predicate: js.Function2[/* value */ T, /* index */ Double, Boolean],
     thisArg: js.Any

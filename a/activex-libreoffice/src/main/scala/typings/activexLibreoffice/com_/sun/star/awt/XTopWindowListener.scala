@@ -42,8 +42,7 @@ trait XTopWindowListener
 }
 object XTopWindowListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -60,28 +59,20 @@ object XTopWindowListener {
     __obj.asInstanceOf[XTopWindowListener]
   }
   
-  @scala.inline
-  implicit class XTopWindowListenerMutableBuilder[Self <: XTopWindowListener] (val x: Self) extends AnyVal {
+  extension [Self <: XTopWindowListener](x: Self) {
     
-    @scala.inline
-    def setWindowActivated(value: EventObject => Unit): Self = StObject.set(x, "windowActivated", js.Any.fromFunction1(value))
+    inline def setWindowActivated(value: EventObject => Unit): Self = StObject.set(x, "windowActivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowClosed(value: EventObject => Unit): Self = StObject.set(x, "windowClosed", js.Any.fromFunction1(value))
+    inline def setWindowClosed(value: EventObject => Unit): Self = StObject.set(x, "windowClosed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowClosing(value: EventObject => Unit): Self = StObject.set(x, "windowClosing", js.Any.fromFunction1(value))
+    inline def setWindowClosing(value: EventObject => Unit): Self = StObject.set(x, "windowClosing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowDeactivated(value: EventObject => Unit): Self = StObject.set(x, "windowDeactivated", js.Any.fromFunction1(value))
+    inline def setWindowDeactivated(value: EventObject => Unit): Self = StObject.set(x, "windowDeactivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowMinimized(value: EventObject => Unit): Self = StObject.set(x, "windowMinimized", js.Any.fromFunction1(value))
+    inline def setWindowMinimized(value: EventObject => Unit): Self = StObject.set(x, "windowMinimized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowNormalized(value: EventObject => Unit): Self = StObject.set(x, "windowNormalized", js.Any.fromFunction1(value))
+    inline def setWindowNormalized(value: EventObject => Unit): Self = StObject.set(x, "windowNormalized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowOpened(value: EventObject => Unit): Self = StObject.set(x, "windowOpened", js.Any.fromFunction1(value))
+    inline def setWindowOpened(value: EventObject => Unit): Self = StObject.set(x, "windowOpened", js.Any.fromFunction1(value))
   }
 }

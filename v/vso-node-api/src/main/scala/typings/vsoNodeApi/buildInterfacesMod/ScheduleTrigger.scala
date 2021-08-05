@@ -12,19 +12,15 @@ trait ScheduleTrigger
 }
 object ScheduleTrigger {
   
-  @scala.inline
-  def apply(schedules: js.Array[Schedule], triggerType: DefinitionTriggerType): ScheduleTrigger = {
+  inline def apply(schedules: js.Array[Schedule], triggerType: DefinitionTriggerType): ScheduleTrigger = {
     val __obj = js.Dynamic.literal(schedules = schedules.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleTrigger]
   }
   
-  @scala.inline
-  implicit class ScheduleTriggerMutableBuilder[Self <: ScheduleTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleTrigger](x: Self) {
     
-    @scala.inline
-    def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+    inline def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
   }
 }

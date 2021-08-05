@@ -8,16 +8,13 @@ object xdomainStrings {
   
   @js.native
   sealed trait log extends StObject
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait timeout extends StObject
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
   sealed trait warn extends StObject
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

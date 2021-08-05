@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Comment")
 @js.native
-class Comment protected ()
+/* private */ class Comment ()
   extends StObject
      with typings.activexWord.Word.Comment {
   
@@ -53,7 +53,7 @@ class Comment protected ()
   /* CompleteClass */
   var ShowTip: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Comment_typekey")
   var WordDotComment_typekey: typings.activexWord.Word.Comment = js.native
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmBorders extends StObject
 object fmBorders {
   
-  @scala.inline
-  def fmBordersBox: `1` = 1.asInstanceOf[`1`]
+  inline def fmBordersBox: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmBordersLeft: `2` = 2.asInstanceOf[`2`]
+  inline def fmBordersLeft: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmBordersNone: `0` = 0.asInstanceOf[`0`]
+  inline def fmBordersNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmBordersTop: `3` = 3.asInstanceOf[`3`]
+  inline def fmBordersTop: `3` = 3.asInstanceOf[`3`]
 }

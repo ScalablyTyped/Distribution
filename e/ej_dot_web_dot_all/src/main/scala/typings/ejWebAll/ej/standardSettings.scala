@@ -22,8 +22,7 @@ trait standardSettings extends StObject {
 }
 object standardSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AM: js.Array[String],
     PM: js.Array[String],
     days: daySettings,
@@ -36,34 +35,24 @@ object standardSettings {
     __obj.asInstanceOf[standardSettings]
   }
   
-  @scala.inline
-  implicit class standardSettingsMutableBuilder[Self <: standardSettings] (val x: Self) extends AnyVal {
+  extension [Self <: standardSettings](x: Self) {
     
-    @scala.inline
-    def setAM(value: js.Array[String]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
+    inline def setAM(value: js.Array[String]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value :_*))
+    inline def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value :_*))
     
-    @scala.inline
-    def setDays(value: daySettings): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: daySettings): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
+    inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: monthSettings): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: monthSettings): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPM(value: js.Array[String]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
+    inline def setPM(value: js.Array[String]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value :_*))
+    inline def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value :_*))
     
-    @scala.inline
-    def setPatterns(value: patternSettings): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: patternSettings): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
+    inline def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
   }
 }

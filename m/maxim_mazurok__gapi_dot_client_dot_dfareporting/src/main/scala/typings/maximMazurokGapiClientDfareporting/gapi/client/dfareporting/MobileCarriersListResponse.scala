@@ -14,28 +14,21 @@ trait MobileCarriersListResponse extends StObject {
 }
 object MobileCarriersListResponse {
   
-  @scala.inline
-  def apply(): MobileCarriersListResponse = {
+  inline def apply(): MobileCarriersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MobileCarriersListResponse]
   }
   
-  @scala.inline
-  implicit class MobileCarriersListResponseMutableBuilder[Self <: MobileCarriersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MobileCarriersListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMobileCarriers(value: js.Array[MobileCarrier]): Self = StObject.set(x, "mobileCarriers", value.asInstanceOf[js.Any])
+    inline def setMobileCarriers(value: js.Array[MobileCarrier]): Self = StObject.set(x, "mobileCarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
+    inline def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
     
-    @scala.inline
-    def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
+    inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
   }
 }

@@ -19,25 +19,19 @@ trait GoogleActionsV2TransactionRequirementsCheckSpec extends StObject {
 }
 object GoogleActionsV2TransactionRequirementsCheckSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2TransactionRequirementsCheckSpec = {
+  inline def apply(): GoogleActionsV2TransactionRequirementsCheckSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2TransactionRequirementsCheckSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2TransactionRequirementsCheckSpecMutableBuilder[Self <: GoogleActionsV2TransactionRequirementsCheckSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2TransactionRequirementsCheckSpec](x: Self) {
     
-    @scala.inline
-    def setOrderOptions(value: GoogleActionsV2OrdersOrderOptions): Self = StObject.set(x, "orderOptions", value.asInstanceOf[js.Any])
+    inline def setOrderOptions(value: GoogleActionsV2OrdersOrderOptions): Self = StObject.set(x, "orderOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderOptionsUndefined: Self = StObject.set(x, "orderOptions", js.undefined)
+    inline def setOrderOptionsUndefined: Self = StObject.set(x, "orderOptions", js.undefined)
     
-    @scala.inline
-    def setPaymentOptions(value: GoogleActionsV2OrdersPaymentOptions): Self = StObject.set(x, "paymentOptions", value.asInstanceOf[js.Any])
+    inline def setPaymentOptions(value: GoogleActionsV2OrdersPaymentOptions): Self = StObject.set(x, "paymentOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentOptionsUndefined: Self = StObject.set(x, "paymentOptions", js.undefined)
+    inline def setPaymentOptionsUndefined: Self = StObject.set(x, "paymentOptions", js.undefined)
   }
 }

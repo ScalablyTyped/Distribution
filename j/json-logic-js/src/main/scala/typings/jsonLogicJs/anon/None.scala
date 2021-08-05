@@ -18,8 +18,7 @@ trait None
 }
 object None {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     none: js.Tuple2[
       (js.Array[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
@@ -31,11 +30,9 @@ object None {
     __obj.asInstanceOf[None]
   }
   
-  @scala.inline
-  implicit class NoneMutableBuilder[Self <: None] (val x: Self) extends AnyVal {
+  extension [Self <: None](x: Self) {
     
-    @scala.inline
-    def setNone(
+    inline def setNone(
       value: js.Tuple2[
           (js.Array[
             /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object

@@ -12,17 +12,14 @@ object anon {
   }
   object Exec {
     
-    @scala.inline
-    def apply(exec: js.Any): Exec = {
+    inline def apply(exec: js.Any): Exec = {
       val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exec]
     }
     
-    @scala.inline
-    implicit class ExecMutableBuilder[Self <: Exec] (val x: Self) extends AnyVal {
+    extension [Self <: Exec](x: Self) {
       
-      @scala.inline
-      def setExec(value: js.Any): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+      inline def setExec(value: js.Any): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     }
   }
 }

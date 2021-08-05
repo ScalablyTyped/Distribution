@@ -93,8 +93,7 @@ object DOM {
   }
   object RequestAnimationFrame {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callback: /* time */ Double => Unit,
       destroy: () => Unit,
       isRunning: Boolean,
@@ -112,44 +111,31 @@ object DOM {
       __obj.asInstanceOf[RequestAnimationFrame]
     }
     
-    @scala.inline
-    implicit class RequestAnimationFrameMutableBuilder[Self <: RequestAnimationFrame] (val x: Self) extends AnyVal {
+    extension [Self <: RequestAnimationFrame](x: Self) {
       
-      @scala.inline
-      def setCallback(value: /* time */ Double => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* time */ Double => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+      inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSetTimeOut(value: Boolean): Self = StObject.set(x, "isSetTimeOut", value.asInstanceOf[js.Any])
+      inline def setIsSetTimeOut(value: Boolean): Self = StObject.set(x, "isSetTimeOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
+      inline def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: (FrameRequestCallback, Boolean, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+      inline def setStart(value: (FrameRequestCallback, Boolean, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStep(value: /* time */ Double => Unit): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
+      inline def setStep(value: /* time */ Double => Unit): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStepTimeout(value: js.Function): Self = StObject.set(x, "stepTimeout", value.asInstanceOf[js.Any])
+      inline def setStepTimeout(value: js.Function): Self = StObject.set(x, "stepTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+      inline def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeOutID(value: Double): Self = StObject.set(x, "timeOutID", value.asInstanceOf[js.Any])
+      inline def setTimeOutID(value: Double): Self = StObject.set(x, "timeOutID", value.asInstanceOf[js.Any])
     }
   }
 }

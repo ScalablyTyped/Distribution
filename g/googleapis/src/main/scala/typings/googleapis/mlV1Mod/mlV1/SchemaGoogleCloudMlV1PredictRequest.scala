@@ -16,19 +16,15 @@ trait SchemaGoogleCloudMlV1PredictRequest extends StObject {
 }
 object SchemaGoogleCloudMlV1PredictRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1PredictRequest = {
+  inline def apply(): SchemaGoogleCloudMlV1PredictRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1PredictRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1PredictRequestMutableBuilder[Self <: SchemaGoogleCloudMlV1PredictRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1PredictRequest](x: Self) {
     
-    @scala.inline
-    def setHttpBody(value: SchemaGoogleApiHttpBody): Self = StObject.set(x, "httpBody", value.asInstanceOf[js.Any])
+    inline def setHttpBody(value: SchemaGoogleApiHttpBody): Self = StObject.set(x, "httpBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpBodyUndefined: Self = StObject.set(x, "httpBody", js.undefined)
+    inline def setHttpBodyUndefined: Self = StObject.set(x, "httpBody", js.undefined)
   }
 }

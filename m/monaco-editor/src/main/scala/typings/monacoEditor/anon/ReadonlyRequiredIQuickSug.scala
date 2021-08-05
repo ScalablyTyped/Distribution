@@ -15,22 +15,17 @@ trait ReadonlyRequiredIQuickSug extends StObject {
 }
 object ReadonlyRequiredIQuickSug {
   
-  @scala.inline
-  def apply(comments: Boolean, other: Boolean, strings: Boolean): ReadonlyRequiredIQuickSug = {
+  inline def apply(comments: Boolean, other: Boolean, strings: Boolean): ReadonlyRequiredIQuickSug = {
     val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyRequiredIQuickSug]
   }
   
-  @scala.inline
-  implicit class ReadonlyRequiredIQuickSugMutableBuilder[Self <: ReadonlyRequiredIQuickSug] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyRequiredIQuickSug](x: Self) {
     
-    @scala.inline
-    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: Boolean): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Boolean): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
   }
 }

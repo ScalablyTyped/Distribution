@@ -23,22 +23,17 @@ trait CreateImageVersionRequest extends StObject {
 }
 object CreateImageVersionRequest {
   
-  @scala.inline
-  def apply(BaseImage: ImageBaseImage, ClientToken: ClientToken, ImageName: ImageName): CreateImageVersionRequest = {
+  inline def apply(BaseImage: ImageBaseImage, ClientToken: ClientToken, ImageName: ImageName): CreateImageVersionRequest = {
     val __obj = js.Dynamic.literal(BaseImage = BaseImage.asInstanceOf[js.Any], ClientToken = ClientToken.asInstanceOf[js.Any], ImageName = ImageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImageVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateImageVersionRequestMutableBuilder[Self <: CreateImageVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImageVersionRequest](x: Self) {
     
-    @scala.inline
-    def setBaseImage(value: ImageBaseImage): Self = StObject.set(x, "BaseImage", value.asInstanceOf[js.Any])
+    inline def setBaseImage(value: ImageBaseImage): Self = StObject.set(x, "BaseImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
   }
 }

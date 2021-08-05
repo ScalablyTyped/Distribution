@@ -18,8 +18,7 @@ trait ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extend
 }
 object ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
     request: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions,
     response: OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
     __obj.asInstanceOf[ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpointMutableBuilder[Self <: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

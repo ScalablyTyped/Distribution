@@ -16,13 +16,10 @@ object mod {
   @js.native
   val TypeName: /* "emoji" */ String = js.native
   
-  @scala.inline
-  def parse(text: String): js.Array[EmojiEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[EmojiEntity]]
-  @scala.inline
-  def parse(text: String, options: ParsingOptions): js.Array[EmojiEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[EmojiEntity]]
+  inline def parse(text: String): js.Array[EmojiEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[EmojiEntity]]
+  inline def parse(text: String, options: ParsingOptions): js.Array[EmojiEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[EmojiEntity]]
   
-  @scala.inline
-  def toCodePoints(unicodeSurrogates: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCodePoints")(unicodeSurrogates.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def toCodePoints(unicodeSurrogates: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCodePoints")(unicodeSurrogates.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   trait EmojiEntity extends StObject {
     
@@ -45,27 +42,21 @@ object mod {
   }
   object EmojiEntity {
     
-    @scala.inline
-    def apply(indices: js.Tuple2[Double, Double], text: String, `type`: /* "emoji" */ String, url: String): EmojiEntity = {
+    inline def apply(indices: js.Tuple2[Double, Double], text: String, `type`: /* "emoji" */ String, url: String): EmojiEntity = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmojiEntity]
     }
     
-    @scala.inline
-    implicit class EmojiEntityMutableBuilder[Self <: EmojiEntity] (val x: Self) extends AnyVal {
+    extension [Self <: EmojiEntity](x: Self) {
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "emoji" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "emoji" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,26 +71,20 @@ object mod {
   }
   object ParsingOptions {
     
-    @scala.inline
-    def apply(): ParsingOptions = {
+    inline def apply(): ParsingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParsingOptions]
     }
     
-    @scala.inline
-    implicit class ParsingOptionsMutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParsingOptions](x: Self) {
       
-      @scala.inline
-      def setAssetType(value: png | svg): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+      inline def setAssetType(value: png | svg): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+      inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
       
-      @scala.inline
-      def setBuildUrl(value: (/* codepoints */ String, /* assetType */ String) => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction2(value))
+      inline def setBuildUrl(value: (/* codepoints */ String, /* assetType */ String) => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
+      inline def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
     }
   }
 }

@@ -77,7 +77,7 @@ object webgl {
     ) = this()
     def this(context: WebGLRenderingContext, image: HTMLImageElement, useMipMaps: Boolean) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _image: HTMLImageElement = js.native
     
     /* InferMemberOverrides */
@@ -182,7 +182,7 @@ object webgl {
     /* CompleteClass */
     override def removeRestorable(restorable: Restorable): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var restorables: js.Any = js.native
   }
   
@@ -248,36 +248,31 @@ object webgl {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def initTemps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initTemps")().asInstanceOf[Unit]
+    inline def initTemps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initTemps")().asInstanceOf[Unit]
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.tmpMatrix")
     @js.native
     def tmpMatrix: js.Any = js.native
-    @scala.inline
-    def tmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tmpMatrix")(x.asInstanceOf[js.Any])
+    inline def tmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tmpMatrix")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.xAxis")
     @js.native
     def xAxis: js.Any = js.native
-    @scala.inline
-    def xAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xAxis")(x.asInstanceOf[js.Any])
+    inline def xAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xAxis")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.yAxis")
     @js.native
     def yAxis: js.Any = js.native
-    @scala.inline
-    def yAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yAxis")(x.asInstanceOf[js.Any])
+    inline def yAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yAxis")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.zAxis")
     @js.native
     def zAxis: js.Any = js.native
-    @scala.inline
-    def zAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zAxis")(x.asInstanceOf[js.Any])
+    inline def zAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zAxis")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("spine.webgl.Mesh")
@@ -298,19 +293,19 @@ object webgl {
       maxIndices: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var attributes: js.Any = js.native
     
     /* CompleteClass */
     override def bind(shader: typings.phaser.spine.webgl.Shader): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var context: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dirtyIndices: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dirtyVertices: js.Any = js.native
     
     /* CompleteClass */
@@ -322,7 +317,7 @@ object webgl {
     /* CompleteClass */
     override def drawWithOffset(shader: typings.phaser.spine.webgl.Shader, primitiveType: Double, offset: Double, count: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var elementsPerVertex: js.Any = js.native
     
     /* CompleteClass */
@@ -337,13 +332,13 @@ object webgl {
     /* CompleteClass */
     override def getVertices(): Float32Array = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indices: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indicesBuffer: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indicesLength: js.Any = js.native
     
     /* CompleteClass */
@@ -376,16 +371,16 @@ object webgl {
     /* CompleteClass */
     override def unbind(shader: typings.phaser.spine.webgl.Shader): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var update: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var vertices: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var verticesBuffer: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var verticesLength: js.Any = js.native
   }
   
@@ -423,7 +418,7 @@ object webgl {
     /* CompleteClass */
     override def setViewport(viewportWidth: Double, viewportHeight: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tmp: js.Any = js.native
     
     /* CompleteClass */
@@ -470,7 +465,7 @@ object webgl {
     /* CompleteClass */
     override def begin(shader: typings.phaser.spine.webgl.Shader): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var context: js.Any = js.native
     
     /* CompleteClass */
@@ -483,43 +478,43 @@ object webgl {
       indices: js.Array[Double]
     ): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawCalls: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dstBlend: js.Any = js.native
     
     /* CompleteClass */
     override def end(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var flush: js.Any = js.native
     
     /* CompleteClass */
     override def getDrawCalls(): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indicesLength: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var isDrawing: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var lastTexture: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var mesh: js.Any = js.native
     
     /* CompleteClass */
     override def setBlendMode(srcBlend: Double, dstBlend: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var shader: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var srcBlend: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var verticesLength: js.Any = js.native
   }
   
@@ -602,28 +597,28 @@ object webgl {
     /* CompleteClass */
     override def bind(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compile: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compileProgram: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compileShader: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var context: js.Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var fragmentShader: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var fs: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var fsSource: js.Any = js.native
     
     /* CompleteClass */
@@ -647,7 +642,7 @@ object webgl {
     /* CompleteClass */
     override def getVertexShaderSource(): String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var program: js.Any = js.native
     
     /* CompleteClass */
@@ -677,25 +672,25 @@ object webgl {
     /* CompleteClass */
     override def setUniformi(uniform: String, value: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tmp2x2: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tmp3x3: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tmp4x4: js.Any = js.native
     
     /* CompleteClass */
     override def unbind(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var vertexShader: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var vs: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var vsSource: js.Any = js.native
   }
   object Shader {
@@ -713,57 +708,45 @@ object webgl {
     @JSGlobal("spine.webgl.Shader.COLOR2")
     @js.native
     def COLOR2: String = js.native
-    @scala.inline
-    def COLOR2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLOR2")(x.asInstanceOf[js.Any])
+    inline def COLOR2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLOR2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def COLOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLOR")(x.asInstanceOf[js.Any])
+    inline def COLOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLOR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Shader.MVP_MATRIX")
     @js.native
     def MVP_MATRIX: String = js.native
-    @scala.inline
-    def MVP_MATRIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MVP_MATRIX")(x.asInstanceOf[js.Any])
+    inline def MVP_MATRIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MVP_MATRIX")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Shader.POSITION")
     @js.native
     def POSITION: String = js.native
-    @scala.inline
-    def POSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION")(x.asInstanceOf[js.Any])
+    inline def POSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Shader.SAMPLER")
     @js.native
     def SAMPLER: String = js.native
-    @scala.inline
-    def SAMPLER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAMPLER")(x.asInstanceOf[js.Any])
+    inline def SAMPLER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAMPLER")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Shader.TEXCOORDS")
     @js.native
     def TEXCOORDS: String = js.native
-    @scala.inline
-    def TEXCOORDS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXCOORDS")(x.asInstanceOf[js.Any])
+    inline def TEXCOORDS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXCOORDS")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def newColored(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColored")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
-    @scala.inline
-    def newColored(context: WebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColored")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
+    inline def newColored(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColored")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
+    inline def newColored(context: WebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColored")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
     
     /* static member */
-    @scala.inline
-    def newColoredTextured(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
-    @scala.inline
-    def newColoredTextured(context: WebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
+    inline def newColoredTextured(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
+    inline def newColoredTextured(context: WebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
     
     /* static member */
-    @scala.inline
-    def newTwoColoredTextured(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newTwoColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
-    @scala.inline
-    def newTwoColoredTextured(context: WebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newTwoColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
+    inline def newTwoColoredTextured(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newTwoColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
+    inline def newTwoColoredTextured(context: WebGLRenderingContext): typings.phaser.spine.webgl.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("newTwoColoredTextured")(context.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.webgl.Shader]
   }
   
   @JSGlobal("spine.webgl.ShapeRenderer")
@@ -815,15 +798,13 @@ object webgl {
     @JSGlobal("spine.webgl.SkeletonDebugRenderer.GREEN")
     @js.native
     def GREEN: js.Any = js.native
-    @scala.inline
-    def GREEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
+    inline def GREEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.SkeletonDebugRenderer.LIGHT_GRAY")
     @js.native
     def LIGHT_GRAY: js.Any = js.native
-    @scala.inline
-    def LIGHT_GRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY")(x.asInstanceOf[js.Any])
+    inline def LIGHT_GRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("spine.webgl.SkeletonRenderer")
@@ -844,8 +825,7 @@ object webgl {
     @JSGlobal("spine.webgl.SkeletonRenderer.QUAD_TRIANGLES")
     @js.native
     def QUAD_TRIANGLES: js.Array[Double] = js.native
-    @scala.inline
-    def QUAD_TRIANGLES_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUAD_TRIANGLES")(x.asInstanceOf[js.Any])
+    inline def QUAD_TRIANGLES_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUAD_TRIANGLES")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("spine.webgl.TexCoordAttribute")
@@ -966,73 +946,61 @@ object webgl {
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.DST_ALPHA")
     @js.native
     def DST_ALPHA: Double = js.native
-    @scala.inline
-    def DST_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DST_ALPHA")(x.asInstanceOf[js.Any])
+    inline def DST_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DST_ALPHA")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.DST_COLOR")
     @js.native
     def DST_COLOR: Double = js.native
-    @scala.inline
-    def DST_COLOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DST_COLOR")(x.asInstanceOf[js.Any])
+    inline def DST_COLOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DST_COLOR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.ONE")
     @js.native
     def ONE: Double = js.native
-    @scala.inline
-    def ONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.ONE_MINUS_DST_ALPHA")
     @js.native
     def ONE_MINUS_DST_ALPHA: Double = js.native
-    @scala.inline
-    def ONE_MINUS_DST_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS_DST_ALPHA")(x.asInstanceOf[js.Any])
+    inline def ONE_MINUS_DST_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS_DST_ALPHA")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.ONE_MINUS_SRC_ALPHA")
     @js.native
     def ONE_MINUS_SRC_ALPHA: Double = js.native
-    @scala.inline
-    def ONE_MINUS_SRC_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS_SRC_ALPHA")(x.asInstanceOf[js.Any])
+    inline def ONE_MINUS_SRC_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS_SRC_ALPHA")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.ONE_MINUS_SRC_COLOR")
     @js.native
     def ONE_MINUS_SRC_COLOR: Double = js.native
-    @scala.inline
-    def ONE_MINUS_SRC_COLOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS_SRC_COLOR")(x.asInstanceOf[js.Any])
+    inline def ONE_MINUS_SRC_COLOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS_SRC_COLOR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.SRC_ALPHA")
     @js.native
     def SRC_ALPHA: Double = js.native
-    @scala.inline
-    def SRC_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SRC_ALPHA")(x.asInstanceOf[js.Any])
+    inline def SRC_ALPHA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SRC_ALPHA")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.SRC_COLOR")
     @js.native
     def SRC_COLOR: Double = js.native
-    @scala.inline
-    def SRC_COLOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SRC_COLOR")(x.asInstanceOf[js.Any])
+    inline def SRC_COLOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SRC_COLOR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.WebGLBlendModeConverter.ZERO")
     @js.native
     def ZERO: Double = js.native
-    @scala.inline
-    def ZERO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def getDestGLBlendMode(blendMode: typings.phaser.spine.BlendMode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDestGLBlendMode")(blendMode.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getDestGLBlendMode(blendMode: typings.phaser.spine.BlendMode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDestGLBlendMode")(blendMode.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def getSourceGLBlendMode(blendMode: typings.phaser.spine.BlendMode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceGLBlendMode")(blendMode.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def getSourceGLBlendMode(blendMode: typings.phaser.spine.BlendMode, premultipliedAlpha: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceGLBlendMode")(blendMode.asInstanceOf[js.Any], premultipliedAlpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getSourceGLBlendMode(blendMode: typings.phaser.spine.BlendMode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceGLBlendMode")(blendMode.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getSourceGLBlendMode(blendMode: typings.phaser.spine.BlendMode, premultipliedAlpha: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceGLBlendMode")(blendMode.asInstanceOf[js.Any], premultipliedAlpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

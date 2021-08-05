@@ -13,8 +13,7 @@ object tapStartToConnectAndRunReporterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tapStartToConnectAndRunReporter(
+  inline def tapStartToConnectAndRunReporter(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     reporter: ReporterRpcClient,
     configuration: ForkTsCheckerWebpackPluginConfiguration,

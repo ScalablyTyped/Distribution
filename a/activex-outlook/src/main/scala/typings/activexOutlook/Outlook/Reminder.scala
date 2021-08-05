@@ -24,7 +24,7 @@ trait Reminder extends StObject {
   
   val OriginalReminderDate: VarDate = js.native
   
-  @JSName("Outlook.Reminder_typekey")
+  /* private */ @JSName("Outlook.Reminder_typekey")
   var OutlookDotReminder_typekey: Reminder = js.native
   
   val Parent: js.Any = js.native

@@ -14,19 +14,15 @@ trait InstantExperiencesAdsDialogResponse
 }
 object InstantExperiencesAdsDialogResponse {
   
-  @scala.inline
-  def apply(id: String, success: Boolean): InstantExperiencesAdsDialogResponse = {
+  inline def apply(id: String, success: Boolean): InstantExperiencesAdsDialogResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesAdsDialogResponse]
   }
   
-  @scala.inline
-  implicit class InstantExperiencesAdsDialogResponseMutableBuilder[Self <: InstantExperiencesAdsDialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InstantExperiencesAdsDialogResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait GoogleCloudMlV1IntegratedGradientsAttribution extends StObject {
 }
 object GoogleCloudMlV1IntegratedGradientsAttribution {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1IntegratedGradientsAttribution = {
+  inline def apply(): GoogleCloudMlV1IntegratedGradientsAttribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1IntegratedGradientsAttribution]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1IntegratedGradientsAttributionMutableBuilder[Self <: GoogleCloudMlV1IntegratedGradientsAttribution] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1IntegratedGradientsAttribution](x: Self) {
     
-    @scala.inline
-    def setNumIntegralSteps(value: Double): Self = StObject.set(x, "numIntegralSteps", value.asInstanceOf[js.Any])
+    inline def setNumIntegralSteps(value: Double): Self = StObject.set(x, "numIntegralSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumIntegralStepsUndefined: Self = StObject.set(x, "numIntegralSteps", js.undefined)
+    inline def setNumIntegralStepsUndefined: Self = StObject.set(x, "numIntegralSteps", js.undefined)
   }
 }

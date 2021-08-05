@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KnownResourceType extends StObject
 object KnownResourceType {
   
-  @scala.inline
-  def icon: typings.ionic.ionicStrings.icon = "icon".asInstanceOf[typings.ionic.ionicStrings.icon]
+  inline def icon: typings.ionic.ionicStrings.icon = "icon".asInstanceOf[typings.ionic.ionicStrings.icon]
   
-  @scala.inline
-  def splash: typings.ionic.ionicStrings.splash = "splash".asInstanceOf[typings.ionic.ionicStrings.splash]
+  inline def splash: typings.ionic.ionicStrings.splash = "splash".asInstanceOf[typings.ionic.ionicStrings.splash]
 }

@@ -24,18 +24,18 @@ object urlRulesMod {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
-    /** @internal */ var _id: js.Any = js.native
+    /** @internal */ /* private */ var _id: js.Any = js.native
     
-    /** @internal */ var _otherwiseFn: js.Any = js.native
+    /** @internal */ /* private */ var _otherwiseFn: js.Any = js.native
     
-    /** @internal */ var _rules: js.Any = js.native
+    /** @internal */ /* private */ var _rules: js.Any = js.native
     
-    /** @internal */ var _sortFn: js.Any = js.native
+    /** @internal */ /* private */ var _sortFn: js.Any = js.native
     
-    /** @internal */ var _sorted: js.Any = js.native
+    /** @internal */ /* private */ var _sorted: js.Any = js.native
     
     /** @internal */
-    var ensureSorted: js.Any = js.native
+    /* private */ var ensureSorted: js.Any = js.native
     
     /**
       * Defines the initial state, path, or behavior to use when the app starts.
@@ -132,7 +132,7 @@ object urlRulesMod {
       */
     def removeRule(rule: js.Any): Unit = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /**
       * Manually adds a URL Rule.
@@ -201,7 +201,7 @@ object urlRulesMod {
     def sort(compareFn: js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]): Unit = js.native
     
     /** @internal */
-    var stableSort: js.Any = js.native
+    /* private */ var stableSort: js.Any = js.native
     
     /** used to create [[UrlRule]] objects for common cases */
     var urlRuleFactory: UrlRuleFactory = js.native

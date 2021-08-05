@@ -29,57 +29,41 @@ trait ColumnSharedType[RecordType] extends StObject {
 }
 object ColumnSharedType {
   
-  @scala.inline
-  def apply[RecordType](): ColumnSharedType[RecordType] = {
+  inline def apply[RecordType](): ColumnSharedType[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnSharedType[RecordType]]
   }
   
-  @scala.inline
-  implicit class ColumnSharedTypeMutableBuilder[Self <: ColumnSharedType[?], RecordType] (val x: Self & ColumnSharedType[RecordType]) extends AnyVal {
+  extension [Self <: ColumnSharedType[?], RecordType](x: Self & ColumnSharedType[RecordType]) {
     
-    @scala.inline
-    def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setEllipsis(value: CellEllipsisType): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: CellEllipsisType): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
-    @scala.inline
-    def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOnHeaderCell(
+    inline def setOnHeaderCell(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
     ): Self = StObject.set(x, "onHeaderCell", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnHeaderCellUndefined: Self = StObject.set(x, "onHeaderCell", js.undefined)
+    inline def setOnHeaderCellUndefined: Self = StObject.set(x, "onHeaderCell", js.undefined)
     
-    @scala.inline
-    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

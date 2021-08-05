@@ -19,16 +19,13 @@ trait OnMemoryWarningCallbackResult extends StObject {
 }
 object OnMemoryWarningCallbackResult {
   
-  @scala.inline
-  def apply(level: `5` | `10` | `15`): OnMemoryWarningCallbackResult = {
+  inline def apply(level: `5` | `10` | `15`): OnMemoryWarningCallbackResult = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnMemoryWarningCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnMemoryWarningCallbackResultMutableBuilder[Self <: OnMemoryWarningCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnMemoryWarningCallbackResult](x: Self) {
     
-    @scala.inline
-    def setLevel(value: `5` | `10` | `15`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: `5` | `10` | `15`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

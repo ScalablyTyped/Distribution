@@ -17,20 +17,16 @@ object anon {
   }
   object Anchor {
     
-    @scala.inline
-    def apply(anchor: Double, head: Double): Anchor = {
+    inline def apply(anchor: Double, head: Double): Anchor = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
       __obj.asInstanceOf[Anchor]
     }
     
-    @scala.inline
-    implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+    extension [Self <: Anchor](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,26 +42,20 @@ object anon {
   }
   object Buttom {
     
-    @scala.inline
-    def apply(buttom: Double, left: Double, right: Double, top: Double): Buttom = {
+    inline def apply(buttom: Double, left: Double, right: Double, top: Double): Buttom = {
       val __obj = js.Dynamic.literal(buttom = buttom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buttom]
     }
     
-    @scala.inline
-    implicit class ButtomMutableBuilder[Self <: Buttom] (val x: Self) extends AnyVal {
+    extension [Self <: Buttom](x: Self) {
       
-      @scala.inline
-      def setButtom(value: Double): Self = StObject.set(x, "buttom", value.asInstanceOf[js.Any])
+      inline def setButtom(value: Double): Self = StObject.set(x, "buttom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,32 +69,24 @@ object anon {
   }
   object CellMinWidth {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](): CellMinWidth[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](): CellMinWidth[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellMinWidth[S]]
     }
     
-    @scala.inline
-    implicit class CellMinWidthMutableBuilder[Self <: CellMinWidth[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & CellMinWidth[S]) extends AnyVal {
+    extension [Self <: CellMinWidth[?], S /* <: Schema[js.Any, js.Any] */](x: Self & CellMinWidth[S]) {
       
-      @scala.inline
-      def setCellMinWidth(value: Double): Self = StObject.set(x, "cellMinWidth", value.asInstanceOf[js.Any])
+      inline def setCellMinWidth(value: Double): Self = StObject.set(x, "cellMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellMinWidthUndefined: Self = StObject.set(x, "cellMinWidth", js.undefined)
+      inline def setCellMinWidthUndefined: Self = StObject.set(x, "cellMinWidth", js.undefined)
       
-      @scala.inline
-      def setHandleWidth(value: Double): Self = StObject.set(x, "handleWidth", value.asInstanceOf[js.Any])
+      inline def setHandleWidth(value: Double): Self = StObject.set(x, "handleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleWidthUndefined: Self = StObject.set(x, "handleWidth", js.undefined)
+      inline def setHandleWidthUndefined: Self = StObject.set(x, "handleWidth", js.undefined)
       
-      @scala.inline
-      def setView(value: NodeView[S]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+      inline def setView(value: NodeView[S]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
     }
   }
   
@@ -121,8 +103,7 @@ object anon {
   }
   object RecordTableRolesNodeTypea {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cell: NodeType[js.Any],
       header_cell: NodeType[js.Any],
       row: NodeType[js.Any],
@@ -132,20 +113,15 @@ object anon {
       __obj.asInstanceOf[RecordTableRolesNodeTypea]
     }
     
-    @scala.inline
-    implicit class RecordTableRolesNodeTypeaMutableBuilder[Self <: RecordTableRolesNodeTypea] (val x: Self) extends AnyVal {
+    extension [Self <: RecordTableRolesNodeTypea](x: Self) {
       
-      @scala.inline
-      def setCell(value: NodeType[js.Any]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: NodeType[js.Any]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader_cell(value: NodeType[js.Any]): Self = StObject.set(x, "header_cell", value.asInstanceOf[js.Any])
+      inline def setHeader_cell(value: NodeType[js.Any]): Self = StObject.set(x, "header_cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: NodeType[js.Any]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: NodeType[js.Any]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTable(value: NodeType[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: NodeType[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,20 +131,16 @@ object anon {
   }
   object UseDeprecatedLogic {
     
-    @scala.inline
-    def apply(): UseDeprecatedLogic = {
+    inline def apply(): UseDeprecatedLogic = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UseDeprecatedLogic]
     }
     
-    @scala.inline
-    implicit class UseDeprecatedLogicMutableBuilder[Self <: UseDeprecatedLogic] (val x: Self) extends AnyVal {
+    extension [Self <: UseDeprecatedLogic](x: Self) {
       
-      @scala.inline
-      def setUseDeprecatedLogic(value: Boolean): Self = StObject.set(x, "useDeprecatedLogic", value.asInstanceOf[js.Any])
+      inline def setUseDeprecatedLogic(value: Boolean): Self = StObject.set(x, "useDeprecatedLogic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDeprecatedLogicUndefined: Self = StObject.set(x, "useDeprecatedLogic", js.undefined)
+      inline def setUseDeprecatedLogicUndefined: Self = StObject.set(x, "useDeprecatedLogic", js.undefined)
     }
   }
 }

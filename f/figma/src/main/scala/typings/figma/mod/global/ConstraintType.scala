@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConstraintType extends StObject
 object ConstraintType {
   
-  @scala.inline
-  def CENTER: typings.figma.figmaStrings.CENTER = "CENTER".asInstanceOf[typings.figma.figmaStrings.CENTER]
+  inline def CENTER: typings.figma.figmaStrings.CENTER = "CENTER".asInstanceOf[typings.figma.figmaStrings.CENTER]
   
-  @scala.inline
-  def MAX: typings.figma.figmaStrings.MAX = "MAX".asInstanceOf[typings.figma.figmaStrings.MAX]
+  inline def MAX: typings.figma.figmaStrings.MAX = "MAX".asInstanceOf[typings.figma.figmaStrings.MAX]
   
-  @scala.inline
-  def MIN: typings.figma.figmaStrings.MIN = "MIN".asInstanceOf[typings.figma.figmaStrings.MIN]
+  inline def MIN: typings.figma.figmaStrings.MIN = "MIN".asInstanceOf[typings.figma.figmaStrings.MIN]
   
-  @scala.inline
-  def SCALE: typings.figma.figmaStrings.SCALE = "SCALE".asInstanceOf[typings.figma.figmaStrings.SCALE]
+  inline def SCALE: typings.figma.figmaStrings.SCALE = "SCALE".asInstanceOf[typings.figma.figmaStrings.SCALE]
   
-  @scala.inline
-  def STRETCH: typings.figma.figmaStrings.STRETCH = "STRETCH".asInstanceOf[typings.figma.figmaStrings.STRETCH]
+  inline def STRETCH: typings.figma.figmaStrings.STRETCH = "STRETCH".asInstanceOf[typings.figma.figmaStrings.STRETCH]
 }

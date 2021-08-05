@@ -18,8 +18,7 @@ trait ParametersMigrationsSetLfsPreferenceEndpoint extends StObject {
 }
 object ParametersMigrationsSetLfsPreferenceEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsSetLfsPreferenceEndpoint,
     request: MigrationsSetLfsPreferenceRequestOptions,
     response: OctokitResponse[MigrationsSetLfsPreferenceResponseData]
@@ -28,16 +27,12 @@ object ParametersMigrationsSetLfsPreferenceEndpoint {
     __obj.asInstanceOf[ParametersMigrationsSetLfsPreferenceEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsSetLfsPreferenceEndpointMutableBuilder[Self <: ParametersMigrationsSetLfsPreferenceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsSetLfsPreferenceEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsSetLfsPreferenceEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsSetLfsPreferenceEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsSetLfsPreferenceRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsSetLfsPreferenceRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsSetLfsPreferenceResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsSetLfsPreferenceResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

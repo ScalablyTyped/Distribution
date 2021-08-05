@@ -13,19 +13,15 @@ trait GetContactReachabilityStatusRequest extends StObject {
 }
 object GetContactReachabilityStatusRequest {
   
-  @scala.inline
-  def apply(): GetContactReachabilityStatusRequest = {
+  inline def apply(): GetContactReachabilityStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContactReachabilityStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetContactReachabilityStatusRequestMutableBuilder[Self <: GetContactReachabilityStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetContactReachabilityStatusRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
   }
 }

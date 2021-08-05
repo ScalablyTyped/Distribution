@@ -11,16 +11,13 @@ trait PEventSignEventObject extends StObject {
 }
 object PEventSignEventObject {
   
-  @scala.inline
-  def apply(pEvent: SignEventObject): PEventSignEventObject = {
+  inline def apply(pEvent: SignEventObject): PEventSignEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEventSignEventObject]
   }
   
-  @scala.inline
-  implicit class PEventSignEventObjectMutableBuilder[Self <: PEventSignEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PEventSignEventObject](x: Self) {
     
-    @scala.inline
-    def setPEvent(value: SignEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
+    inline def setPEvent(value: SignEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }
 }

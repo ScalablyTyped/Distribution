@@ -17,25 +17,19 @@ trait SuggestedPositionedObjectProperties extends StObject {
 }
 object SuggestedPositionedObjectProperties {
   
-  @scala.inline
-  def apply(): SuggestedPositionedObjectProperties = {
+  inline def apply(): SuggestedPositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestedPositionedObjectProperties]
   }
   
-  @scala.inline
-  implicit class SuggestedPositionedObjectPropertiesMutableBuilder[Self <: SuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestedPositionedObjectProperties](x: Self) {
     
-    @scala.inline
-    def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
+    inline def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedObjectPropertiesSuggestionState(value: PositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    inline def setPositionedObjectPropertiesSuggestionState(value: PositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
+    inline def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
     
-    @scala.inline
-    def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
+    inline def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
   }
 }

@@ -23,37 +23,27 @@ trait KeySet extends StObject {
 }
 object KeySet {
   
-  @scala.inline
-  def apply(): KeySet = {
+  inline def apply(): KeySet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeySet]
   }
   
-  @scala.inline
-  implicit class KeySetMutableBuilder[Self <: KeySet] (val x: Self) extends AnyVal {
+  extension [Self <: KeySet](x: Self) {
     
-    @scala.inline
-    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setKeys(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setRanges(value: js.Array[KeyRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[KeyRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: KeyRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: KeyRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

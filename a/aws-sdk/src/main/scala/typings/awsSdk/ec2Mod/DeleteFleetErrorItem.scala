@@ -18,25 +18,19 @@ trait DeleteFleetErrorItem extends StObject {
 }
 object DeleteFleetErrorItem {
   
-  @scala.inline
-  def apply(): DeleteFleetErrorItem = {
+  inline def apply(): DeleteFleetErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFleetErrorItem]
   }
   
-  @scala.inline
-  implicit class DeleteFleetErrorItemMutableBuilder[Self <: DeleteFleetErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFleetErrorItem](x: Self) {
     
-    @scala.inline
-    def setError(value: DeleteFleetError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: DeleteFleetError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
   }
 }

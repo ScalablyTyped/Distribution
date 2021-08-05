@@ -15,8 +15,7 @@ object constantsMod {
     @JSImport("@storybook/addon-options/dist/constants", "default.SET")
     @js.native
     def SET: String = js.native
-    @scala.inline
-    def SET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SET")(x.asInstanceOf[js.Any])
+    inline def SET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SET")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/addon-options/dist/constants", "ADDON_ID")

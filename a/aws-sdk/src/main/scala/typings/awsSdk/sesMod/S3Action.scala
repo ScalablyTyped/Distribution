@@ -28,34 +28,25 @@ trait S3Action extends StObject {
 }
 object S3Action {
   
-  @scala.inline
-  def apply(BucketName: S3BucketName): S3Action = {
+  inline def apply(BucketName: S3BucketName): S3Action = {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Action]
   }
   
-  @scala.inline
-  implicit class S3ActionMutableBuilder[Self <: S3Action] (val x: Self) extends AnyVal {
+  extension [Self <: S3Action](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: S3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: S3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArn(value: AmazonResourceName): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: AmazonResourceName): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setObjectKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "ObjectKeyPrefix", value.asInstanceOf[js.Any])
+    inline def setObjectKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "ObjectKeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectKeyPrefixUndefined: Self = StObject.set(x, "ObjectKeyPrefix", js.undefined)
+    inline def setObjectKeyPrefixUndefined: Self = StObject.set(x, "ObjectKeyPrefix", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

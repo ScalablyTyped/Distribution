@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Interior")
 @js.native
-class Interior protected ()
+/* private */ class Interior ()
   extends StObject
      with typings.activexExcel.Excel.Interior {
   
@@ -27,7 +27,7 @@ class Interior protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Interior_typekey")
   var ExcelDotInterior_typekey: typings.activexExcel.Excel.Interior = js.native
   

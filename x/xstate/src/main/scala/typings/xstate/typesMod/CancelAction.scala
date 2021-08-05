@@ -12,17 +12,14 @@ trait CancelAction
 }
 object CancelAction {
   
-  @scala.inline
-  def apply(sendId: String | Double, `type`: String): CancelAction = {
+  inline def apply(sendId: String | Double, `type`: String): CancelAction = {
     val __obj = js.Dynamic.literal(sendId = sendId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelAction]
   }
   
-  @scala.inline
-  implicit class CancelActionMutableBuilder[Self <: CancelAction] (val x: Self) extends AnyVal {
+  extension [Self <: CancelAction](x: Self) {
     
-    @scala.inline
-    def setSendId(value: String | Double): Self = StObject.set(x, "sendId", value.asInstanceOf[js.Any])
+    inline def setSendId(value: String | Double): Self = StObject.set(x, "sendId", value.asInstanceOf[js.Any])
   }
 }

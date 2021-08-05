@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetEmitTouchEventsForMouseRequestConfiguration extends StObject
 object SetEmitTouchEventsForMouseRequestConfiguration {
   
-  @scala.inline
-  def Desktop: desktop = "desktop".asInstanceOf[desktop]
+  inline def Desktop: desktop = "desktop".asInstanceOf[desktop]
   
-  @scala.inline
-  def Mobile: mobile = "mobile".asInstanceOf[mobile]
+  inline def Mobile: mobile = "mobile".asInstanceOf[mobile]
 }

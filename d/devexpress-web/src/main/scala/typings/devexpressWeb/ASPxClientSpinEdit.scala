@@ -57,8 +57,7 @@ trait ASPxClientSpinEdit
 }
 object ASPxClientSpinEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     Focus: () => Unit,
@@ -120,31 +119,22 @@ object ASPxClientSpinEdit {
     __obj.asInstanceOf[ASPxClientSpinEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpinEditMutableBuilder[Self <: ASPxClientSpinEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpinEdit](x: Self) {
     
-    @scala.inline
-    def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
+    inline def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinValue(value: () => Double): Self = StObject.set(x, "GetMinValue", js.Any.fromFunction0(value))
+    inline def setGetMinValue(value: () => Double): Self = StObject.set(x, "GetMinValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumber(value: () => Double): Self = StObject.set(x, "GetNumber", js.Any.fromFunction0(value))
+    inline def setGetNumber(value: () => Double): Self = StObject.set(x, "GetNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEdit]]): Self = StObject.set(x, "NumberChanged", value.asInstanceOf[js.Any])
+    inline def setNumberChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEdit]]): Self = StObject.set(x, "NumberChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMaxValue(value: Double => Unit): Self = StObject.set(x, "SetMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: Double => Unit): Self = StObject.set(x, "SetMaxValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValue(value: Double => Unit): Self = StObject.set(x, "SetMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: Double => Unit): Self = StObject.set(x, "SetMinValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNumber(value: Double => Unit): Self = StObject.set(x, "SetNumber", js.Any.fromFunction1(value))
+    inline def setSetNumber(value: Double => Unit): Self = StObject.set(x, "SetNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
   }
 }

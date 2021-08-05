@@ -12,25 +12,19 @@ trait NavigationPreloadState extends StObject {
 }
 object NavigationPreloadState {
   
-  @scala.inline
-  def apply(): NavigationPreloadState = {
+  inline def apply(): NavigationPreloadState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationPreloadState]
   }
   
-  @scala.inline
-  implicit class NavigationPreloadStateMutableBuilder[Self <: NavigationPreloadState] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPreloadState](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: scala.Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: scala.Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHeaderValue(value: java.lang.String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: java.lang.String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
+    inline def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait SchemaGooglePrivacyDlpV2TimePartConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TimePartConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TimePartConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TimePartConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TimePartConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TimePartConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TimePartConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TimePartConfig](x: Self) {
     
-    @scala.inline
-    def setPartToExtract(value: String): Self = StObject.set(x, "partToExtract", value.asInstanceOf[js.Any])
+    inline def setPartToExtract(value: String): Self = StObject.set(x, "partToExtract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartToExtractUndefined: Self = StObject.set(x, "partToExtract", js.undefined)
+    inline def setPartToExtractUndefined: Self = StObject.set(x, "partToExtract", js.undefined)
   }
 }

@@ -24,25 +24,19 @@ trait SchemaManagedConfigurationTemplate extends StObject {
 }
 object SchemaManagedConfigurationTemplate {
   
-  @scala.inline
-  def apply(): SchemaManagedConfigurationTemplate = {
+  inline def apply(): SchemaManagedConfigurationTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedConfigurationTemplate]
   }
   
-  @scala.inline
-  implicit class SchemaManagedConfigurationTemplateMutableBuilder[Self <: SchemaManagedConfigurationTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedConfigurationTemplate](x: Self) {
     
-    @scala.inline
-    def setConfigurationVariables(value: StringDictionary[String]): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
+    inline def setConfigurationVariables(value: StringDictionary[String]): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)
+    inline def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

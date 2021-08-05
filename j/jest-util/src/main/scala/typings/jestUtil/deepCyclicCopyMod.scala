@@ -12,14 +12,10 @@ object deepCyclicCopyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def default[T](value: T, options: Unit, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def default[T](value: T, options: DeepCyclicCopyOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def default[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](value: T, options: Unit, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](value: T, options: DeepCyclicCopyOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait DeepCyclicCopyOptions extends StObject {
     
@@ -29,26 +25,20 @@ object deepCyclicCopyMod {
   }
   object DeepCyclicCopyOptions {
     
-    @scala.inline
-    def apply(): DeepCyclicCopyOptions = {
+    inline def apply(): DeepCyclicCopyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeepCyclicCopyOptions]
     }
     
-    @scala.inline
-    implicit class DeepCyclicCopyOptionsMutableBuilder[Self <: DeepCyclicCopyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeepCyclicCopyOptions](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: Set[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: Set[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setKeepPrototype(value: Boolean): Self = StObject.set(x, "keepPrototype", value.asInstanceOf[js.Any])
+      inline def setKeepPrototype(value: Boolean): Self = StObject.set(x, "keepPrototype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepPrototypeUndefined: Self = StObject.set(x, "keepPrototype", js.undefined)
+      inline def setKeepPrototypeUndefined: Self = StObject.set(x, "keepPrototype", js.undefined)
     }
   }
 }

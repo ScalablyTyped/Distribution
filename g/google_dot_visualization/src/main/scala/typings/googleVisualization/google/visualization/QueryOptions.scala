@@ -12,25 +12,19 @@ trait QueryOptions extends StObject {
 }
 object QueryOptions {
   
-  @scala.inline
-  def apply(): QueryOptions = {
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryOptions]
   }
   
-  @scala.inline
-  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptions](x: Self) {
     
-    @scala.inline
-    def setMakeRequestParams(value: js.Object): Self = StObject.set(x, "makeRequestParams", value.asInstanceOf[js.Any])
+    inline def setMakeRequestParams(value: js.Object): Self = StObject.set(x, "makeRequestParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeRequestParamsUndefined: Self = StObject.set(x, "makeRequestParams", js.undefined)
+    inline def setMakeRequestParamsUndefined: Self = StObject.set(x, "makeRequestParams", js.undefined)
     
-    @scala.inline
-    def setSendMethod(value: String): Self = StObject.set(x, "sendMethod", value.asInstanceOf[js.Any])
+    inline def setSendMethod(value: String): Self = StObject.set(x, "sendMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMethodUndefined: Self = StObject.set(x, "sendMethod", js.undefined)
+    inline def setSendMethodUndefined: Self = StObject.set(x, "sendMethod", js.undefined)
   }
 }

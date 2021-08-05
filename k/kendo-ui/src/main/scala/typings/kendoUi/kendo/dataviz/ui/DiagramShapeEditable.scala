@@ -12,28 +12,21 @@ trait DiagramShapeEditable extends StObject {
 }
 object DiagramShapeEditable {
   
-  @scala.inline
-  def apply(): DiagramShapeEditable = {
+  inline def apply(): DiagramShapeEditable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramShapeEditable]
   }
   
-  @scala.inline
-  implicit class DiagramShapeEditableMutableBuilder[Self <: DiagramShapeEditable] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShapeEditable](x: Self) {
     
-    @scala.inline
-    def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    @scala.inline
-    def setTools(value: js.Array[DiagramShapeEditableTool]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    inline def setTools(value: js.Array[DiagramShapeEditableTool]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     
-    @scala.inline
-    def setToolsVarargs(value: DiagramShapeEditableTool*): Self = StObject.set(x, "tools", js.Array(value :_*))
+    inline def setToolsVarargs(value: DiagramShapeEditableTool*): Self = StObject.set(x, "tools", js.Array(value :_*))
   }
 }

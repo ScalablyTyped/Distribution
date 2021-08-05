@@ -11,6 +11,5 @@ object enhanceWithMethodsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[B /* <: Record[String, js.Any] */, M /* <: Record[String, js.Function] */](baseObject: B, methodsObject: M): M & B = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(baseObject.asInstanceOf[js.Any], methodsObject.asInstanceOf[js.Any])).asInstanceOf[M & B]
+  inline def default[B /* <: Record[String, js.Any] */, M /* <: Record[String, js.Function] */](baseObject: B, methodsObject: M): M & B = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(baseObject.asInstanceOf[js.Any], methodsObject.asInstanceOf[js.Any])).asInstanceOf[M & B]
 }

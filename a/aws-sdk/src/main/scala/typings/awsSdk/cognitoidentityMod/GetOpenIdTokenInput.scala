@@ -21,22 +21,17 @@ trait GetOpenIdTokenInput
 }
 object GetOpenIdTokenInput {
   
-  @scala.inline
-  def apply(IdentityId: IdentityId): GetOpenIdTokenInput = {
+  inline def apply(IdentityId: IdentityId): GetOpenIdTokenInput = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenIdTokenInput]
   }
   
-  @scala.inline
-  implicit class GetOpenIdTokenInputMutableBuilder[Self <: GetOpenIdTokenInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOpenIdTokenInput](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }
 }

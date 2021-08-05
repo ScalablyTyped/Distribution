@@ -31,85 +31,59 @@ trait DAVCollectionOptions[T] extends StObject {
 }
 object DAVCollectionOptions {
   
-  @scala.inline
-  def apply[T](): DAVCollectionOptions[T] = {
+  inline def apply[T](): DAVCollectionOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DAVCollectionOptions[T]]
   }
   
-  @scala.inline
-  implicit class DAVCollectionOptionsMutableBuilder[Self <: DAVCollectionOptions[?], T] (val x: Self & DAVCollectionOptions[T]) extends AnyVal {
+  extension [Self <: DAVCollectionOptions[?], T](x: Self & DAVCollectionOptions[T]) {
     
-    @scala.inline
-    def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setConstructor(value: /* options */ DAVCollectionOptions[T] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ DAVCollectionOptions[T] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
-    @scala.inline
-    def setCtag(value: String): Self = StObject.set(x, "ctag", value.asInstanceOf[js.Any])
+    inline def setCtag(value: String): Self = StObject.set(x, "ctag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtagUndefined: Self = StObject.set(x, "ctag", js.undefined)
+    inline def setCtagUndefined: Self = StObject.set(x, "ctag", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setObjects(value: js.Array[T]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[T]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+    inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
-    @scala.inline
-    def setObjectsVarargs(value: T*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: T*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
-    @scala.inline
-    def setReports(value: js.Array[String]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+    inline def setReports(value: js.Array[String]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+    inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    @scala.inline
-    def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcetype(value: String): Self = StObject.set(x, "resourcetype", value.asInstanceOf[js.Any])
+    inline def setResourcetype(value: String): Self = StObject.set(x, "resourcetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcetypeUndefined: Self = StObject.set(x, "resourcetype", js.undefined)
+    inline def setResourcetypeUndefined: Self = StObject.set(x, "resourcetype", js.undefined)
     
-    @scala.inline
-    def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
+    inline def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
+    inline def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -15,6 +15,5 @@ class Client protected () extends IClient {
 }
 object Client {
   
-  @scala.inline
-  def apply: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient] = ^.asInstanceOf[js.Dynamic].selectDynamic("Client").asInstanceOf[Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient]]
+  inline def apply: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient] = ^.asInstanceOf[js.Dynamic].selectDynamic("Client").asInstanceOf[Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient]]
 }

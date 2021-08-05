@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilePatternTypes extends StObject
 object FilePatternTypes {
   
-  @scala.inline
-  def css: typings.karma.karmaStrings.css = "css".asInstanceOf[typings.karma.karmaStrings.css]
+  inline def css: typings.karma.karmaStrings.css = "css".asInstanceOf[typings.karma.karmaStrings.css]
   
-  @scala.inline
-  def dart: typings.karma.karmaStrings.dart = "dart".asInstanceOf[typings.karma.karmaStrings.dart]
+  inline def dart: typings.karma.karmaStrings.dart = "dart".asInstanceOf[typings.karma.karmaStrings.dart]
   
-  @scala.inline
-  def dom: typings.karma.karmaStrings.dom = "dom".asInstanceOf[typings.karma.karmaStrings.dom]
+  inline def dom: typings.karma.karmaStrings.dom = "dom".asInstanceOf[typings.karma.karmaStrings.dom]
   
-  @scala.inline
-  def html: typings.karma.karmaStrings.html = "html".asInstanceOf[typings.karma.karmaStrings.html]
+  inline def html: typings.karma.karmaStrings.html = "html".asInstanceOf[typings.karma.karmaStrings.html]
   
-  @scala.inline
-  def js_ : typings.karma.karmaStrings.js_ = "js".asInstanceOf[typings.karma.karmaStrings.js_]
+  inline def js_ : typings.karma.karmaStrings.js_ = "js".asInstanceOf[typings.karma.karmaStrings.js_]
   
-  @scala.inline
-  def module: typings.karma.karmaStrings.module = "module".asInstanceOf[typings.karma.karmaStrings.module]
+  inline def module: typings.karma.karmaStrings.module = "module".asInstanceOf[typings.karma.karmaStrings.module]
 }

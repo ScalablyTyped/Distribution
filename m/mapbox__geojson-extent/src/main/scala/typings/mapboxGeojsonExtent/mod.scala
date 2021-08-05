@@ -9,16 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(geoJson: GeoJSON): BBox = ^.asInstanceOf[js.Dynamic].apply(geoJson.asInstanceOf[js.Any]).asInstanceOf[BBox]
+  inline def apply(geoJson: GeoJSON): BBox = ^.asInstanceOf[js.Dynamic].apply(geoJson.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
   @JSImport("@mapbox/geojson-extent", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bboxify(geoJson: GeoJSON): GeoJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("bboxify")(geoJson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON]
+  inline def bboxify(geoJson: GeoJSON): GeoJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("bboxify")(geoJson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON]
   
-  @scala.inline
-  def polygon(geoJson: GeoJSON): Polygon | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(geoJson.asInstanceOf[js.Any]).asInstanceOf[Polygon | Null]
+  inline def polygon(geoJson: GeoJSON): Polygon | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(geoJson.asInstanceOf[js.Any]).asInstanceOf[Polygon | Null]
 }

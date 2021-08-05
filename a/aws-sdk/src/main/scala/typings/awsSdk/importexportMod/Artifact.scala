@@ -12,25 +12,19 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(): Artifact = {
+  inline def apply(): Artifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setURL(value: URL): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: URL): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
+    inline def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
   }
 }

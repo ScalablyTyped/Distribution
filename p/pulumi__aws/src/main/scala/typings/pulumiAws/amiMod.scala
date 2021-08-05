@@ -130,21 +130,16 @@ object amiMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Ami]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Ami]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AmiState): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Ami]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AmiState, opts: CustomResourceOptions): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Ami]
+    inline def get(name: String, id: Input[ID]): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Ami]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Ami]
+    inline def get(name: String, id: Input[ID], state: AmiState): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Ami]
+    inline def get(name: String, id: Input[ID], state: AmiState, opts: CustomResourceOptions): Ami = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Ami]
     
     /**
       * Returns true if the given object is an instance of Ami.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/ami.Ami */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/ami.Ami */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/ami.Ami */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/ami.Ami */ Boolean]
   }
   
   trait AmiArgs extends StObject {
@@ -224,98 +219,68 @@ object amiMod {
   }
   object AmiArgs {
     
-    @scala.inline
-    def apply(): AmiArgs = {
+    inline def apply(): AmiArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AmiArgs]
     }
     
-    @scala.inline
-    implicit class AmiArgsMutableBuilder[Self <: AmiArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AmiArgs](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: Input[String]): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: Input[String]): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+      inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEbsBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]]]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
+      inline def setEbsBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]]]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsBlockDevicesUndefined: Self = StObject.set(x, "ebsBlockDevices", js.undefined)
+      inline def setEbsBlockDevicesUndefined: Self = StObject.set(x, "ebsBlockDevices", js.undefined)
       
-      @scala.inline
-      def setEbsBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
+      inline def setEbsBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setEnaSupport(value: Input[Boolean]): Self = StObject.set(x, "enaSupport", value.asInstanceOf[js.Any])
+      inline def setEnaSupport(value: Input[Boolean]): Self = StObject.set(x, "enaSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnaSupportUndefined: Self = StObject.set(x, "enaSupport", js.undefined)
+      inline def setEnaSupportUndefined: Self = StObject.set(x, "enaSupport", js.undefined)
       
-      @scala.inline
-      def setEphemeralBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]]]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
+      inline def setEphemeralBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]]]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralBlockDevicesUndefined: Self = StObject.set(x, "ephemeralBlockDevices", js.undefined)
+      inline def setEphemeralBlockDevicesUndefined: Self = StObject.set(x, "ephemeralBlockDevices", js.undefined)
       
-      @scala.inline
-      def setEphemeralBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
+      inline def setEphemeralBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setImageLocation(value: Input[String]): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
+      inline def setImageLocation(value: Input[String]): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
+      inline def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
       
-      @scala.inline
-      def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
+      inline def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
+      inline def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRamdiskId(value: Input[String]): Self = StObject.set(x, "ramdiskId", value.asInstanceOf[js.Any])
+      inline def setRamdiskId(value: Input[String]): Self = StObject.set(x, "ramdiskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamdiskIdUndefined: Self = StObject.set(x, "ramdiskId", js.undefined)
+      inline def setRamdiskIdUndefined: Self = StObject.set(x, "ramdiskId", js.undefined)
       
-      @scala.inline
-      def setRootDeviceName(value: Input[String]): Self = StObject.set(x, "rootDeviceName", value.asInstanceOf[js.Any])
+      inline def setRootDeviceName(value: Input[String]): Self = StObject.set(x, "rootDeviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDeviceNameUndefined: Self = StObject.set(x, "rootDeviceName", js.undefined)
+      inline def setRootDeviceNameUndefined: Self = StObject.set(x, "rootDeviceName", js.undefined)
       
-      @scala.inline
-      def setSriovNetSupport(value: Input[String]): Self = StObject.set(x, "sriovNetSupport", value.asInstanceOf[js.Any])
+      inline def setSriovNetSupport(value: Input[String]): Self = StObject.set(x, "sriovNetSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSriovNetSupportUndefined: Self = StObject.set(x, "sriovNetSupport", js.undefined)
+      inline def setSriovNetSupportUndefined: Self = StObject.set(x, "sriovNetSupport", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualizationType(value: Input[String]): Self = StObject.set(x, "virtualizationType", value.asInstanceOf[js.Any])
+      inline def setVirtualizationType(value: Input[String]): Self = StObject.set(x, "virtualizationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualizationTypeUndefined: Self = StObject.set(x, "virtualizationType", js.undefined)
+      inline def setVirtualizationTypeUndefined: Self = StObject.set(x, "virtualizationType", js.undefined)
     }
   }
   
@@ -408,116 +373,80 @@ object amiMod {
   }
   object AmiState {
     
-    @scala.inline
-    def apply(): AmiState = {
+    inline def apply(): AmiState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AmiState]
     }
     
-    @scala.inline
-    implicit class AmiStateMutableBuilder[Self <: AmiState] (val x: Self) extends AnyVal {
+    extension [Self <: AmiState](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: Input[String]): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: Input[String]): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+      inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEbsBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]]]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
+      inline def setEbsBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]]]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsBlockDevicesUndefined: Self = StObject.set(x, "ebsBlockDevices", js.undefined)
+      inline def setEbsBlockDevicesUndefined: Self = StObject.set(x, "ebsBlockDevices", js.undefined)
       
-      @scala.inline
-      def setEbsBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
+      inline def setEbsBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEbsBlockDevice]*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setEnaSupport(value: Input[Boolean]): Self = StObject.set(x, "enaSupport", value.asInstanceOf[js.Any])
+      inline def setEnaSupport(value: Input[Boolean]): Self = StObject.set(x, "enaSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnaSupportUndefined: Self = StObject.set(x, "enaSupport", js.undefined)
+      inline def setEnaSupportUndefined: Self = StObject.set(x, "enaSupport", js.undefined)
       
-      @scala.inline
-      def setEphemeralBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]]]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
+      inline def setEphemeralBlockDevices(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]]]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralBlockDevicesUndefined: Self = StObject.set(x, "ephemeralBlockDevices", js.undefined)
+      inline def setEphemeralBlockDevicesUndefined: Self = StObject.set(x, "ephemeralBlockDevices", js.undefined)
       
-      @scala.inline
-      def setEphemeralBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
+      inline def setEphemeralBlockDevicesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.AmiEphemeralBlockDevice]*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setImageLocation(value: Input[String]): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
+      inline def setImageLocation(value: Input[String]): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
+      inline def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
       
-      @scala.inline
-      def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
+      inline def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
+      inline def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
       
-      @scala.inline
-      def setManageEbsSnapshots(value: Input[Boolean]): Self = StObject.set(x, "manageEbsSnapshots", value.asInstanceOf[js.Any])
+      inline def setManageEbsSnapshots(value: Input[Boolean]): Self = StObject.set(x, "manageEbsSnapshots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManageEbsSnapshotsUndefined: Self = StObject.set(x, "manageEbsSnapshots", js.undefined)
+      inline def setManageEbsSnapshotsUndefined: Self = StObject.set(x, "manageEbsSnapshots", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRamdiskId(value: Input[String]): Self = StObject.set(x, "ramdiskId", value.asInstanceOf[js.Any])
+      inline def setRamdiskId(value: Input[String]): Self = StObject.set(x, "ramdiskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamdiskIdUndefined: Self = StObject.set(x, "ramdiskId", js.undefined)
+      inline def setRamdiskIdUndefined: Self = StObject.set(x, "ramdiskId", js.undefined)
       
-      @scala.inline
-      def setRootDeviceName(value: Input[String]): Self = StObject.set(x, "rootDeviceName", value.asInstanceOf[js.Any])
+      inline def setRootDeviceName(value: Input[String]): Self = StObject.set(x, "rootDeviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDeviceNameUndefined: Self = StObject.set(x, "rootDeviceName", js.undefined)
+      inline def setRootDeviceNameUndefined: Self = StObject.set(x, "rootDeviceName", js.undefined)
       
-      @scala.inline
-      def setRootSnapshotId(value: Input[String]): Self = StObject.set(x, "rootSnapshotId", value.asInstanceOf[js.Any])
+      inline def setRootSnapshotId(value: Input[String]): Self = StObject.set(x, "rootSnapshotId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootSnapshotIdUndefined: Self = StObject.set(x, "rootSnapshotId", js.undefined)
+      inline def setRootSnapshotIdUndefined: Self = StObject.set(x, "rootSnapshotId", js.undefined)
       
-      @scala.inline
-      def setSriovNetSupport(value: Input[String]): Self = StObject.set(x, "sriovNetSupport", value.asInstanceOf[js.Any])
+      inline def setSriovNetSupport(value: Input[String]): Self = StObject.set(x, "sriovNetSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSriovNetSupportUndefined: Self = StObject.set(x, "sriovNetSupport", js.undefined)
+      inline def setSriovNetSupportUndefined: Self = StObject.set(x, "sriovNetSupport", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualizationType(value: Input[String]): Self = StObject.set(x, "virtualizationType", value.asInstanceOf[js.Any])
+      inline def setVirtualizationType(value: Input[String]): Self = StObject.set(x, "virtualizationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualizationTypeUndefined: Self = StObject.set(x, "virtualizationType", js.undefined)
+      inline def setVirtualizationTypeUndefined: Self = StObject.set(x, "virtualizationType", js.undefined)
     }
   }
 }

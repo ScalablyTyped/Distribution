@@ -13,90 +13,77 @@ object broccoliNodeApiStrings {
   sealed trait __broccoliFeatures__
     extends StObject
        with Node
-  @scala.inline
-  def __broccoliFeatures__ : __broccoliFeatures__ = "__broccoliFeatures__".asInstanceOf[__broccoliFeatures__]
+  inline def __broccoliFeatures__ : __broccoliFeatures__ = "__broccoliFeatures__".asInstanceOf[__broccoliFeatures__]
   
   @js.native
   sealed trait __broccoliGetInfo__
     extends StObject
        with Node
-  @scala.inline
-  def __broccoliGetInfo__ : __broccoliGetInfo__ = "__broccoliGetInfo__".asInstanceOf[__broccoliGetInfo__]
+  inline def __broccoliGetInfo__ : __broccoliGetInfo__ = "__broccoliGetInfo__".asInstanceOf[__broccoliGetInfo__]
   
   @js.native
   sealed trait getCallbackObject
     extends StObject
        with NodeInfo
-  @scala.inline
-  def getCallbackObject: getCallbackObject = "getCallbackObject".asInstanceOf[getCallbackObject]
+  inline def getCallbackObject: getCallbackObject = "getCallbackObject".asInstanceOf[getCallbackObject]
   
   @js.native
   sealed trait inputNodes
     extends StObject
        with NodeInfo
-  @scala.inline
-  def inputNodes: inputNodes = "inputNodes".asInstanceOf[inputNodes]
+  inline def inputNodes: inputNodes = "inputNodes".asInstanceOf[inputNodes]
   
   @js.native
   sealed trait needsCache
     extends StObject
        with NodeInfo
-  @scala.inline
-  def needsCache: needsCache = "needsCache".asInstanceOf[needsCache]
+  inline def needsCache: needsCache = "needsCache".asInstanceOf[needsCache]
   
   @js.native
   sealed trait persistentOutput
     extends StObject
        with NodeInfo
-  @scala.inline
-  def persistentOutput: persistentOutput = "persistentOutput".asInstanceOf[persistentOutput]
+  inline def persistentOutput: persistentOutput = "persistentOutput".asInstanceOf[persistentOutput]
   
   @js.native
   sealed trait setup
     extends StObject
        with NodeInfo
-  @scala.inline
-  def setup: setup = "setup".asInstanceOf[setup]
+  inline def setup: setup = "setup".asInstanceOf[setup]
   
   @js.native
   sealed trait source
     extends StObject
        with NodeType
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
+  inline def source: source = "source".asInstanceOf[source]
   
   @js.native
   sealed trait sourceDirectory
     extends StObject
        with NodeInfo
-  @scala.inline
-  def sourceDirectory: sourceDirectory = "sourceDirectory".asInstanceOf[sourceDirectory]
+  inline def sourceDirectory: sourceDirectory = "sourceDirectory".asInstanceOf[sourceDirectory]
   
   @js.native
   sealed trait trackInputChanges
     extends StObject
        with NodeInfo
-  @scala.inline
-  def trackInputChanges: trackInputChanges = "trackInputChanges".asInstanceOf[trackInputChanges]
+  inline def trackInputChanges: trackInputChanges = "trackInputChanges".asInstanceOf[trackInputChanges]
   
   @js.native
   sealed trait transform
     extends StObject
        with NodeType
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
+  inline def transform: transform = "transform".asInstanceOf[transform]
   
   @js.native
   sealed trait volatile
     extends StObject
        with NodeInfo
-  @scala.inline
-  def volatile: volatile = "volatile".asInstanceOf[volatile]
+  inline def volatile: volatile = "volatile".asInstanceOf[volatile]
   
   @js.native
   sealed trait watched
     extends StObject
        with NodeInfo
-  @scala.inline
-  def watched: watched = "watched".asInstanceOf[watched]
+  inline def watched: watched = "watched".asInstanceOf[watched]
 }

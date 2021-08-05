@@ -16,37 +16,27 @@ trait BidProtocol extends StObject {
 }
 object BidProtocol {
   
-  @scala.inline
-  def apply(): BidProtocol = {
+  inline def apply(): BidProtocol = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BidProtocol]
   }
   
-  @scala.inline
-  implicit class BidProtocolMutableBuilder[Self <: BidProtocol] (val x: Self) extends AnyVal {
+  extension [Self <: BidProtocol](x: Self) {
     
-    @scala.inline
-    def setBidProtocol(value: String): Self = StObject.set(x, "bidProtocol", value.asInstanceOf[js.Any])
+    inline def setBidProtocol(value: String): Self = StObject.set(x, "bidProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidProtocolUndefined: Self = StObject.set(x, "bidProtocol", js.undefined)
+    inline def setBidProtocolUndefined: Self = StObject.set(x, "bidProtocol", js.undefined)
     
-    @scala.inline
-    def setMaximumQps(value: Double): Self = StObject.set(x, "maximumQps", value.asInstanceOf[js.Any])
+    inline def setMaximumQps(value: Double): Self = StObject.set(x, "maximumQps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumQpsUndefined: Self = StObject.set(x, "maximumQps", js.undefined)
+    inline def setMaximumQpsUndefined: Self = StObject.set(x, "maximumQps", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

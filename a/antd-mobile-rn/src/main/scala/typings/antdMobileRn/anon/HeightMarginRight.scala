@@ -14,22 +14,17 @@ trait HeightMarginRight extends StObject {
 }
 object HeightMarginRight {
   
-  @scala.inline
-  def apply(height: Double, marginRight: Double, width: Double): HeightMarginRight = {
+  inline def apply(height: Double, marginRight: Double, width: Double): HeightMarginRight = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightMarginRight]
   }
   
-  @scala.inline
-  implicit class HeightMarginRightMutableBuilder[Self <: HeightMarginRight] (val x: Self) extends AnyVal {
+  extension [Self <: HeightMarginRight](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

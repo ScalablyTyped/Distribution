@@ -35,47 +35,35 @@ trait PubsubMessage extends StObject {
 }
 object PubsubMessage {
   
-  @scala.inline
-  def apply(): PubsubMessage = {
+  inline def apply(): PubsubMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PubsubMessage]
   }
   
-  @scala.inline
-  implicit class PubsubMessageMutableBuilder[Self <: PubsubMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PubsubMessage](x: Self) {
     
-    @scala.inline
-    def setAttributes(
+    inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PubsubMessage & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
+    inline def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
+    inline def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
     
-    @scala.inline
-    def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
+    inline def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
+    inline def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
   }
 }

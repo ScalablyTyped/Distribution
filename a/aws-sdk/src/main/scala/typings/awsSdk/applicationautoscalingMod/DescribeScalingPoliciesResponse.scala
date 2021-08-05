@@ -18,28 +18,21 @@ trait DescribeScalingPoliciesResponse extends StObject {
 }
 object DescribeScalingPoliciesResponse {
   
-  @scala.inline
-  def apply(): DescribeScalingPoliciesResponse = {
+  inline def apply(): DescribeScalingPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeScalingPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeScalingPoliciesResponseMutableBuilder[Self <: DescribeScalingPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScalingPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScalingPolicies(value: ScalingPolicies): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
+    inline def setScalingPolicies(value: ScalingPolicies): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
+    inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
     
-    @scala.inline
-    def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+    inline def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
   }
 }

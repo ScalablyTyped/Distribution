@@ -11,6 +11,5 @@ object squashTextNodesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: DOMElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(node: DOMElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 }

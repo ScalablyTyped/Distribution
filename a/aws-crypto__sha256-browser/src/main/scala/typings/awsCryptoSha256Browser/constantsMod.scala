@@ -23,8 +23,7 @@ object constantsMod {
     @JSImport("@aws-crypto/sha256-browser/build/constants", "SHA_256_HASH.name")
     @js.native
     def name: `SHA-256` = js.native
-    @scala.inline
-    def name_=(x: `SHA-256`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: `SHA-256`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
   object SHA_256_HMAC_ALGO {
@@ -36,13 +35,11 @@ object constantsMod {
     @JSImport("@aws-crypto/sha256-browser/build/constants", "SHA_256_HMAC_ALGO.hash")
     @js.native
     def hash: Name = js.native
-    @scala.inline
-    def hash_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
+    inline def hash_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-crypto/sha256-browser/build/constants", "SHA_256_HMAC_ALGO.name")
     @js.native
     def name: HMAC = js.native
-    @scala.inline
-    def name_=(x: HMAC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: HMAC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
 }

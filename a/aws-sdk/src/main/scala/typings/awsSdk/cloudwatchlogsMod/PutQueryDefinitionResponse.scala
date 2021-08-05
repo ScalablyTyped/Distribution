@@ -13,19 +13,15 @@ trait PutQueryDefinitionResponse extends StObject {
 }
 object PutQueryDefinitionResponse {
   
-  @scala.inline
-  def apply(): PutQueryDefinitionResponse = {
+  inline def apply(): PutQueryDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutQueryDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class PutQueryDefinitionResponseMutableBuilder[Self <: PutQueryDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutQueryDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
+    inline def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryDefinitionIdUndefined: Self = StObject.set(x, "queryDefinitionId", js.undefined)
+    inline def setQueryDefinitionIdUndefined: Self = StObject.set(x, "queryDefinitionId", js.undefined)
   }
 }

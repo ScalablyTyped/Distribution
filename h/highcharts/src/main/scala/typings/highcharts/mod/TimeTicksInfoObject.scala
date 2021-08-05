@@ -14,22 +14,17 @@ trait TimeTicksInfoObject
 }
 object TimeTicksInfoObject {
   
-  @scala.inline
-  def apply(count: Double, higherRanks: js.Array[String], totalRange: Double, unitRange: Double): TimeTicksInfoObject = {
+  inline def apply(count: Double, higherRanks: js.Array[String], totalRange: Double, unitRange: Double): TimeTicksInfoObject = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], higherRanks = higherRanks.asInstanceOf[js.Any], totalRange = totalRange.asInstanceOf[js.Any], unitRange = unitRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeTicksInfoObject]
   }
   
-  @scala.inline
-  implicit class TimeTicksInfoObjectMutableBuilder[Self <: TimeTicksInfoObject] (val x: Self) extends AnyVal {
+  extension [Self <: TimeTicksInfoObject](x: Self) {
     
-    @scala.inline
-    def setHigherRanks(value: js.Array[String]): Self = StObject.set(x, "higherRanks", value.asInstanceOf[js.Any])
+    inline def setHigherRanks(value: js.Array[String]): Self = StObject.set(x, "higherRanks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigherRanksVarargs(value: String*): Self = StObject.set(x, "higherRanks", js.Array(value :_*))
+    inline def setHigherRanksVarargs(value: String*): Self = StObject.set(x, "higherRanks", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalRange(value: Double): Self = StObject.set(x, "totalRange", value.asInstanceOf[js.Any])
+    inline def setTotalRange(value: Double): Self = StObject.set(x, "totalRange", value.asInstanceOf[js.Any])
   }
 }

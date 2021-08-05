@@ -13,16 +13,13 @@ trait CalendarEventActionResponse extends StObject {
 }
 object CalendarEventActionResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): CalendarEventActionResponse = {
+  inline def apply(printJson: () => String): CalendarEventActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[CalendarEventActionResponse]
   }
   
-  @scala.inline
-  implicit class CalendarEventActionResponseMutableBuilder[Self <: CalendarEventActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarEventActionResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

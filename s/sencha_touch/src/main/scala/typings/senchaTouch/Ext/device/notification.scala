@@ -21,26 +21,20 @@ object notification {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setShow(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setVibrate(value: () => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction0(value))
+      inline def setVibrate(value: () => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
+      inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     }
   }
   
@@ -56,20 +50,16 @@ object notification {
   }
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
     
-    @scala.inline
-    implicit class ICordovaMutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
+    extension [Self <: ICordova](x: Self) {
       
-      @scala.inline
-      def setVibrate(value: /* time */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
+      inline def setVibrate(value: /* time */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
+      inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     }
   }
   
@@ -85,20 +75,16 @@ object notification {
   }
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    @scala.inline
-    implicit class IPhoneGapMutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
+    extension [Self <: IPhoneGap](x: Self) {
       
-      @scala.inline
-      def setVibrate(value: /* time */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
+      inline def setVibrate(value: /* time */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
+      inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     }
   }
   
@@ -112,20 +98,16 @@ object notification {
   }
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
     
-    @scala.inline
-    implicit class ISenchaMutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
+    extension [Self <: ISencha](x: Self) {
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     }
   }
   
@@ -139,20 +121,16 @@ object notification {
   }
   object ISimulator {
     
-    @scala.inline
-    def apply(): ISimulator = {
+    inline def apply(): ISimulator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISimulator]
     }
     
-    @scala.inline
-    implicit class ISimulatorMutableBuilder[Self <: ISimulator] (val x: Self) extends AnyVal {
+    extension [Self <: ISimulator](x: Self) {
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     }
   }
 }

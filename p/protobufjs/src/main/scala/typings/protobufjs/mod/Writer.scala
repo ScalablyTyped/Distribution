@@ -180,13 +180,11 @@ object Writer {
     * @param size Buffer size
     * @returns Buffer
     */
-  @scala.inline
-  def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
   /**
     * Creates a new writer.
     * @returns A {@link BufferWriter} when Buffers are supported, otherwise a {@link Writer}
     */
-  @scala.inline
-  def create(): BufferWriter | Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BufferWriter | Writer]
+  inline def create(): BufferWriter | Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BufferWriter | Writer]
 }

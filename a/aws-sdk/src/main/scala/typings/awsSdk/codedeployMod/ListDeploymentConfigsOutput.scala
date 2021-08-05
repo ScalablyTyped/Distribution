@@ -18,28 +18,21 @@ trait ListDeploymentConfigsOutput extends StObject {
 }
 object ListDeploymentConfigsOutput {
   
-  @scala.inline
-  def apply(): ListDeploymentConfigsOutput = {
+  inline def apply(): ListDeploymentConfigsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeploymentConfigsOutput]
   }
   
-  @scala.inline
-  implicit class ListDeploymentConfigsOutputMutableBuilder[Self <: ListDeploymentConfigsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeploymentConfigsOutput](x: Self) {
     
-    @scala.inline
-    def setDeploymentConfigsList(value: DeploymentConfigsList): Self = StObject.set(x, "deploymentConfigsList", value.asInstanceOf[js.Any])
+    inline def setDeploymentConfigsList(value: DeploymentConfigsList): Self = StObject.set(x, "deploymentConfigsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentConfigsListUndefined: Self = StObject.set(x, "deploymentConfigsList", js.undefined)
+    inline def setDeploymentConfigsListUndefined: Self = StObject.set(x, "deploymentConfigsList", js.undefined)
     
-    @scala.inline
-    def setDeploymentConfigsListVarargs(value: DeploymentConfigName*): Self = StObject.set(x, "deploymentConfigsList", js.Array(value :_*))
+    inline def setDeploymentConfigsListVarargs(value: DeploymentConfigName*): Self = StObject.set(x, "deploymentConfigsList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

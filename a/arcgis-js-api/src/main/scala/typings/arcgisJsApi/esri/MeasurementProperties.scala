@@ -72,47 +72,35 @@ trait MeasurementProperties
 }
 object MeasurementProperties {
   
-  @scala.inline
-  def apply(): MeasurementProperties = {
+  inline def apply(): MeasurementProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeasurementProperties]
   }
   
-  @scala.inline
-  implicit class MeasurementPropertiesMutableBuilder[Self <: MeasurementProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeasurementProperties](x: Self) {
     
-    @scala.inline
-    def setActiveTool(value: area | distance | `direct-line`): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
+    inline def setActiveTool(value: area | distance | `direct-line`): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveToolUndefined: Self = StObject.set(x, "activeTool", js.undefined)
+    inline def setActiveToolUndefined: Self = StObject.set(x, "activeTool", js.undefined)
     
-    @scala.inline
-    def setAreaUnit(
+    inline def setAreaUnit(
       value: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
     ): Self = StObject.set(x, "areaUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
+    inline def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
     
-    @scala.inline
-    def setLinearUnit(
+    inline def setLinearUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ): Self = StObject.set(x, "linearUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearUnitUndefined: Self = StObject.set(x, "linearUnit", js.undefined)
+    inline def setLinearUnitUndefined: Self = StObject.set(x, "linearUnit", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: MeasurementViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: MeasurementViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

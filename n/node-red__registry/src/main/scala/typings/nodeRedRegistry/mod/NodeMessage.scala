@@ -12,25 +12,19 @@ trait NodeMessage extends StObject {
 }
 object NodeMessage {
   
-  @scala.inline
-  def apply(): NodeMessage = {
+  inline def apply(): NodeMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeMessage]
   }
   
-  @scala.inline
-  implicit class NodeMessageMutableBuilder[Self <: NodeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: NodeMessage](x: Self) {
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def set_msgid(value: String): Self = StObject.set(x, "_msgid", value.asInstanceOf[js.Any])
+    inline def set_msgid(value: String): Self = StObject.set(x, "_msgid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_msgidUndefined: Self = StObject.set(x, "_msgid", js.undefined)
+    inline def set_msgidUndefined: Self = StObject.set(x, "_msgid", js.undefined)
   }
 }

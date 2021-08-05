@@ -26,8 +26,7 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: account | cardholder | card,
     name: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits
   ): Entity = {
@@ -35,13 +34,10 @@ object Entity {
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setEntity(value: account | cardholder | card): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: account | cardholder | card): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

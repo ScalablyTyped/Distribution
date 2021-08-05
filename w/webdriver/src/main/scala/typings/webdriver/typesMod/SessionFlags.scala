@@ -22,8 +22,7 @@ trait SessionFlags extends StObject {
 }
 object SessionFlags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isAndroid: Boolean,
     isChrome: Boolean,
     isIOS: Boolean,
@@ -36,28 +35,20 @@ object SessionFlags {
     __obj.asInstanceOf[SessionFlags]
   }
   
-  @scala.inline
-  implicit class SessionFlagsMutableBuilder[Self <: SessionFlags] (val x: Self) extends AnyVal {
+  extension [Self <: SessionFlags](x: Self) {
     
-    @scala.inline
-    def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+    inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+    inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+    inline def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
+    inline def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSeleniumStandalone(value: Boolean): Self = StObject.set(x, "isSeleniumStandalone", value.asInstanceOf[js.Any])
+    inline def setIsSeleniumStandalone(value: Boolean): Self = StObject.set(x, "isSeleniumStandalone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
+    inline def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
   }
 }

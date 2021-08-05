@@ -23,28 +23,21 @@ trait CreateRelationalDatabaseSnapshotRequest extends StObject {
 }
 object CreateRelationalDatabaseSnapshotRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName, relationalDatabaseSnapshotName: ResourceName): CreateRelationalDatabaseSnapshotRequest = {
+  inline def apply(relationalDatabaseName: ResourceName, relationalDatabaseSnapshotName: ResourceName): CreateRelationalDatabaseSnapshotRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any], relationalDatabaseSnapshotName = relationalDatabaseSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRelationalDatabaseSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateRelationalDatabaseSnapshotRequestMutableBuilder[Self <: CreateRelationalDatabaseSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRelationalDatabaseSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

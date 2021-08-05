@@ -14,31 +14,23 @@ trait ZoneBoundary extends StObject {
 }
 object ZoneBoundary {
   
-  @scala.inline
-  def apply(): ZoneBoundary = {
+  inline def apply(): ZoneBoundary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneBoundary]
   }
   
-  @scala.inline
-  implicit class ZoneBoundaryMutableBuilder[Self <: ZoneBoundary] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneBoundary](x: Self) {
     
-    @scala.inline
-    def setCondition(value: js.Array[Condition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: js.Array[Condition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
+    inline def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
+    inline def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
     
-    @scala.inline
-    def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
+    inline def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
   }
 }

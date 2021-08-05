@@ -10,19 +10,15 @@ trait GetBucketReplicationOutput extends StObject {
 }
 object GetBucketReplicationOutput {
   
-  @scala.inline
-  def apply(): GetBucketReplicationOutput = {
+  inline def apply(): GetBucketReplicationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketReplicationOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketReplicationOutputMutableBuilder[Self <: GetBucketReplicationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketReplicationOutput](x: Self) {
     
-    @scala.inline
-    def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
+    inline def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationConfigurationUndefined: Self = StObject.set(x, "ReplicationConfiguration", js.undefined)
+    inline def setReplicationConfigurationUndefined: Self = StObject.set(x, "ReplicationConfiguration", js.undefined)
   }
 }

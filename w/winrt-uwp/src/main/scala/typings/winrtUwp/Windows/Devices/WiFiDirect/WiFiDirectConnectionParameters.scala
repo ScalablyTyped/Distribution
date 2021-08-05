@@ -19,8 +19,7 @@ trait WiFiDirectConnectionParameters extends StObject {
 }
 object WiFiDirectConnectionParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groupOwnerIntent: Double,
     preferenceOrderedConfigurationMethods: IVector[WiFiDirectConfigurationMethod],
     preferredPairingProcedure: WiFiDirectPairingProcedure
@@ -29,16 +28,12 @@ object WiFiDirectConnectionParameters {
     __obj.asInstanceOf[WiFiDirectConnectionParameters]
   }
   
-  @scala.inline
-  implicit class WiFiDirectConnectionParametersMutableBuilder[Self <: WiFiDirectConnectionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectConnectionParameters](x: Self) {
     
-    @scala.inline
-    def setGroupOwnerIntent(value: Double): Self = StObject.set(x, "groupOwnerIntent", value.asInstanceOf[js.Any])
+    inline def setGroupOwnerIntent(value: Double): Self = StObject.set(x, "groupOwnerIntent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceOrderedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "preferenceOrderedConfigurationMethods", value.asInstanceOf[js.Any])
+    inline def setPreferenceOrderedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "preferenceOrderedConfigurationMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredPairingProcedure(value: WiFiDirectPairingProcedure): Self = StObject.set(x, "preferredPairingProcedure", value.asInstanceOf[js.Any])
+    inline def setPreferredPairingProcedure(value: WiFiDirectPairingProcedure): Self = StObject.set(x, "preferredPairingProcedure", value.asInstanceOf[js.Any])
   }
 }

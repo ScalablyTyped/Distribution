@@ -16,8 +16,7 @@ trait TimeZoneInformation
 }
 object TimeZoneInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -31,16 +30,12 @@ object TimeZoneInformation {
     __obj.asInstanceOf[TimeZoneInformation]
   }
   
-  @scala.inline
-  implicit class TimeZoneInformationMutableBuilder[Self <: TimeZoneInformation] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZoneInformation](x: Self) {
     
-    @scala.inline
-    def setGet_bias(value: () => Double): Self = StObject.set(x, "get_bias", js.Any.fromFunction0(value))
+    inline def setGet_bias(value: () => Double): Self = StObject.set(x, "get_bias", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_daylightBias(value: () => Double): Self = StObject.set(x, "get_daylightBias", js.Any.fromFunction0(value))
+    inline def setGet_daylightBias(value: () => Double): Self = StObject.set(x, "get_daylightBias", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_standardBias(value: () => Double): Self = StObject.set(x, "get_standardBias", js.Any.fromFunction0(value))
+    inline def setGet_standardBias(value: () => Double): Self = StObject.set(x, "get_standardBias", js.Any.fromFunction0(value))
   }
 }

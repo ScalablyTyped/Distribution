@@ -10,16 +10,13 @@ trait ICenter extends StObject {
 }
 object ICenter {
   
-  @scala.inline
-  def apply(center: js.Array[String] => CxG): ICenter = {
+  inline def apply(center: js.Array[String] => CxG): ICenter = {
     val __obj = js.Dynamic.literal(center = js.Any.fromFunction1(center))
     __obj.asInstanceOf[ICenter]
   }
   
-  @scala.inline
-  implicit class ICenterMutableBuilder[Self <: ICenter] (val x: Self) extends AnyVal {
+  extension [Self <: ICenter](x: Self) {
     
-    @scala.inline
-    def setCenter(value: js.Array[String] => CxG): Self = StObject.set(x, "center", js.Any.fromFunction1(value))
+    inline def setCenter(value: js.Array[String] => CxG): Self = StObject.set(x, "center", js.Any.fromFunction1(value))
   }
 }

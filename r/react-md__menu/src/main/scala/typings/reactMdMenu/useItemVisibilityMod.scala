@@ -18,10 +18,8 @@ object useItemVisibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useItemVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useItemVisibility")().asInstanceOf[ReturnValue]
-  @scala.inline
-  def useItemVisibility(
+  inline def useItemVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useItemVisibility")().asInstanceOf[ReturnValue]
+  inline def useItemVisibility(
     hasHorizontalPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange: ItemVisibilityOptions
   ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useItemVisibility")(hasHorizontalPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
@@ -37,32 +35,24 @@ object useItemVisibilityMod {
   }
   object ItemVisibilityOptions {
     
-    @scala.inline
-    def apply(): ItemVisibilityOptions = {
+    inline def apply(): ItemVisibilityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemVisibilityOptions]
     }
     
-    @scala.inline
-    implicit class ItemVisibilityOptionsMutableBuilder[Self <: ItemVisibilityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ItemVisibilityOptions](x: Self) {
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -81,35 +71,26 @@ object useItemVisibilityMod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply(defaultFocus: FocusType, hide: () => Unit, visible: Boolean): ReturnValue = {
+    inline def apply(defaultFocus: FocusType, hide: () => Unit, visible: Boolean): ReturnValue = {
       val __obj = js.Dynamic.literal(defaultFocus = defaultFocus.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReturnValue]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnValue](x: Self) {
       
-      @scala.inline
-      def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

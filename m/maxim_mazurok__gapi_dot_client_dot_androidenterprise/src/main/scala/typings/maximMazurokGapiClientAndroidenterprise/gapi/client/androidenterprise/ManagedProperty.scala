@@ -29,61 +29,43 @@ trait ManagedProperty extends StObject {
 }
 object ManagedProperty {
   
-  @scala.inline
-  def apply(): ManagedProperty = {
+  inline def apply(): ManagedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedProperty]
   }
   
-  @scala.inline
-  implicit class ManagedPropertyMutableBuilder[Self <: ManagedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedProperty](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValueBool(value: Boolean): Self = StObject.set(x, "valueBool", value.asInstanceOf[js.Any])
+    inline def setValueBool(value: Boolean): Self = StObject.set(x, "valueBool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBoolUndefined: Self = StObject.set(x, "valueBool", js.undefined)
+    inline def setValueBoolUndefined: Self = StObject.set(x, "valueBool", js.undefined)
     
-    @scala.inline
-    def setValueBundle(value: ManagedPropertyBundle): Self = StObject.set(x, "valueBundle", value.asInstanceOf[js.Any])
+    inline def setValueBundle(value: ManagedPropertyBundle): Self = StObject.set(x, "valueBundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBundleArray(value: js.Array[ManagedPropertyBundle]): Self = StObject.set(x, "valueBundleArray", value.asInstanceOf[js.Any])
+    inline def setValueBundleArray(value: js.Array[ManagedPropertyBundle]): Self = StObject.set(x, "valueBundleArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBundleArrayUndefined: Self = StObject.set(x, "valueBundleArray", js.undefined)
+    inline def setValueBundleArrayUndefined: Self = StObject.set(x, "valueBundleArray", js.undefined)
     
-    @scala.inline
-    def setValueBundleArrayVarargs(value: ManagedPropertyBundle*): Self = StObject.set(x, "valueBundleArray", js.Array(value :_*))
+    inline def setValueBundleArrayVarargs(value: ManagedPropertyBundle*): Self = StObject.set(x, "valueBundleArray", js.Array(value :_*))
     
-    @scala.inline
-    def setValueBundleUndefined: Self = StObject.set(x, "valueBundle", js.undefined)
+    inline def setValueBundleUndefined: Self = StObject.set(x, "valueBundle", js.undefined)
     
-    @scala.inline
-    def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
+    inline def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
+    inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
-    @scala.inline
-    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
+    inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStringArray(value: js.Array[String]): Self = StObject.set(x, "valueStringArray", value.asInstanceOf[js.Any])
+    inline def setValueStringArray(value: js.Array[String]): Self = StObject.set(x, "valueStringArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStringArrayUndefined: Self = StObject.set(x, "valueStringArray", js.undefined)
+    inline def setValueStringArrayUndefined: Self = StObject.set(x, "valueStringArray", js.undefined)
     
-    @scala.inline
-    def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value :_*))
+    inline def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value :_*))
     
-    @scala.inline
-    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
+    inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
   }
 }

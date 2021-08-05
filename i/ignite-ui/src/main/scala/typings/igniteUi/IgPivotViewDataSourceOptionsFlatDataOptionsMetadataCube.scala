@@ -34,40 +34,29 @@ trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube
 }
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube {
   
-  @scala.inline
-  def apply(): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube = {
+  inline def apply(): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube]
   }
   
-  @scala.inline
-  implicit class IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMutableBuilder[Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMeasuresDimension(value: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension): Self = StObject.set(x, "measuresDimension", value.asInstanceOf[js.Any])
+    inline def setMeasuresDimension(value: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension): Self = StObject.set(x, "measuresDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasuresDimensionUndefined: Self = StObject.set(x, "measuresDimension", js.undefined)
+    inline def setMeasuresDimensionUndefined: Self = StObject.set(x, "measuresDimension", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

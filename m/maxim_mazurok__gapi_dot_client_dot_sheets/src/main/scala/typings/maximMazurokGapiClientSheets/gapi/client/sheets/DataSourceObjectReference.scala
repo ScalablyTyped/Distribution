@@ -23,43 +23,31 @@ trait DataSourceObjectReference extends StObject {
 }
 object DataSourceObjectReference {
   
-  @scala.inline
-  def apply(): DataSourceObjectReference = {
+  inline def apply(): DataSourceObjectReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceObjectReference]
   }
   
-  @scala.inline
-  implicit class DataSourceObjectReferenceMutableBuilder[Self <: DataSourceObjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceObjectReference](x: Self) {
     
-    @scala.inline
-    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+    inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
-    @scala.inline
-    def setDataSourceFormulaCell(value: GridCoordinate): Self = StObject.set(x, "dataSourceFormulaCell", value.asInstanceOf[js.Any])
+    inline def setDataSourceFormulaCell(value: GridCoordinate): Self = StObject.set(x, "dataSourceFormulaCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceFormulaCellUndefined: Self = StObject.set(x, "dataSourceFormulaCell", js.undefined)
+    inline def setDataSourceFormulaCellUndefined: Self = StObject.set(x, "dataSourceFormulaCell", js.undefined)
     
-    @scala.inline
-    def setDataSourcePivotTableAnchorCell(value: GridCoordinate): Self = StObject.set(x, "dataSourcePivotTableAnchorCell", value.asInstanceOf[js.Any])
+    inline def setDataSourcePivotTableAnchorCell(value: GridCoordinate): Self = StObject.set(x, "dataSourcePivotTableAnchorCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcePivotTableAnchorCellUndefined: Self = StObject.set(x, "dataSourcePivotTableAnchorCell", js.undefined)
+    inline def setDataSourcePivotTableAnchorCellUndefined: Self = StObject.set(x, "dataSourcePivotTableAnchorCell", js.undefined)
     
-    @scala.inline
-    def setDataSourceTableAnchorCell(value: GridCoordinate): Self = StObject.set(x, "dataSourceTableAnchorCell", value.asInstanceOf[js.Any])
+    inline def setDataSourceTableAnchorCell(value: GridCoordinate): Self = StObject.set(x, "dataSourceTableAnchorCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceTableAnchorCellUndefined: Self = StObject.set(x, "dataSourceTableAnchorCell", js.undefined)
+    inline def setDataSourceTableAnchorCellUndefined: Self = StObject.set(x, "dataSourceTableAnchorCell", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: String): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: String): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

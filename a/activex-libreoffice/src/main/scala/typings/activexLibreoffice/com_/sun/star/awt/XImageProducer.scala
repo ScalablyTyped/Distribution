@@ -37,8 +37,7 @@ trait XImageProducer
 }
 object XImageProducer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addConsumer: XImageConsumer => Unit,
     queryInterface: `type` => js.Any,
@@ -50,16 +49,12 @@ object XImageProducer {
     __obj.asInstanceOf[XImageProducer]
   }
   
-  @scala.inline
-  implicit class XImageProducerMutableBuilder[Self <: XImageProducer] (val x: Self) extends AnyVal {
+  extension [Self <: XImageProducer](x: Self) {
     
-    @scala.inline
-    def setAddConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "addConsumer", js.Any.fromFunction1(value))
+    inline def setAddConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "addConsumer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "removeConsumer", js.Any.fromFunction1(value))
+    inline def setRemoveConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "removeConsumer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartProduction(value: () => Unit): Self = StObject.set(x, "startProduction", js.Any.fromFunction0(value))
+    inline def setStartProduction(value: () => Unit): Self = StObject.set(x, "startProduction", js.Any.fromFunction0(value))
   }
 }

@@ -29,24 +29,21 @@ object Gpio {
       * @return When the method completes successfully, it returns a list of values that represent the controllers available on the system.
       */
     /* static member */
-    @scala.inline
-    def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets the default general-purpose I/O (GPIO) controller for the system.
       * @return The default GPIO controller for the system, or null if the system has no GPIO controller.
       */
     /* static member */
-    @scala.inline
-    def getDefault(): typings.winrtUwp.Windows.Devices.Gpio.GpioController = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Gpio.GpioController]
+    inline def getDefault(): typings.winrtUwp.Windows.Devices.Gpio.GpioController = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Gpio.GpioController]
     
     /**
       * Gets the default general-purpose I/O (GPIO) controller for the system.
       * @return The default GPIO controller for the system, or null if the system has no GPIO controller.
       */
     /* static member */
-    @scala.inline
-    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController]]
+    inline def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController]]
   }
   
   /** Describes the possible results of opening a pin with the GpioPin.TryOpenPin method. */
@@ -174,18 +171,15 @@ object Gpio {
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.inputPullDown")
       @js.native
       def inputPullDown: js.Any = js.native
-      @scala.inline
-      def inputPullDown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullDown")(x.asInstanceOf[js.Any])
+      inline def inputPullDown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullDown")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.inputPullUp")
       @js.native
       def inputPullUp: js.Any = js.native
-      @scala.inline
-      def inputPullUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullUp")(x.asInstanceOf[js.Any])
+      inline def inputPullUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullUp")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def input_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+      inline def input_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.output")
@@ -201,11 +195,9 @@ object Gpio {
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenDrainPullUp")
       @js.native
       def outputOpenDrainPullUp: js.Any = js.native
-      @scala.inline
-      def outputOpenDrainPullUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrainPullUp")(x.asInstanceOf[js.Any])
+      inline def outputOpenDrainPullUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrainPullUp")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def outputOpenDrain_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrain")(x.asInstanceOf[js.Any])
+      inline def outputOpenDrain_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrain")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenSource")
@@ -216,14 +208,11 @@ object Gpio {
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenSourcePullDown")
       @js.native
       def outputOpenSourcePullDown: js.Any = js.native
-      @scala.inline
-      def outputOpenSourcePullDown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSourcePullDown")(x.asInstanceOf[js.Any])
+      inline def outputOpenSourcePullDown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSourcePullDown")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def outputOpenSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSource")(x.asInstanceOf[js.Any])
+      inline def outputOpenSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSource")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def output_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("output")(x.asInstanceOf[js.Any])
+      inline def output_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("output")(x.asInstanceOf[js.Any])
     }
     
     object ProviderGpioPinEdge {
@@ -235,15 +224,13 @@ object Gpio {
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinEdge.fallingEdge")
       @js.native
       def fallingEdge: js.Any = js.native
-      @scala.inline
-      def fallingEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallingEdge")(x.asInstanceOf[js.Any])
+      inline def fallingEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallingEdge")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinEdge.risingEdge")
       @js.native
       def risingEdge: js.Any = js.native
-      @scala.inline
-      def risingEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("risingEdge")(x.asInstanceOf[js.Any])
+      inline def risingEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("risingEdge")(x.asInstanceOf[js.Any])
     }
     
     object ProviderGpioPinValue {
@@ -256,14 +243,12 @@ object Gpio {
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinValue.high")
       @js.native
       def high: js.Any = js.native
-      @scala.inline
-      def high_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high")(x.asInstanceOf[js.Any])
+      inline def high_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinValue.low")
       @js.native
       def low: js.Any = js.native
-      @scala.inline
-      def low_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("low")(x.asInstanceOf[js.Any])
+      inline def low_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("low")(x.asInstanceOf[js.Any])
     }
     
     object ProviderGpioSharingMode {
@@ -275,15 +260,13 @@ object Gpio {
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioSharingMode.exclusive")
       @js.native
       def exclusive: js.Any = js.native
-      @scala.inline
-      def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
+      inline def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioSharingMode.sharedReadOnly")
       @js.native
       def sharedReadOnly: js.Any = js.native
-      @scala.inline
-      def sharedReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedReadOnly")(x.asInstanceOf[js.Any])
+      inline def sharedReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedReadOnly")(x.asInstanceOf[js.Any])
     }
   }
 }

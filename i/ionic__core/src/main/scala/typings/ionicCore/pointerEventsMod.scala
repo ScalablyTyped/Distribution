@@ -14,8 +14,7 @@ object pointerEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPointerEvents(el: Node, pointerDown: js.Any, pointerMove: js.Any, pointerUp: js.Any, options: Capture): Destroy = (^.asInstanceOf[js.Dynamic].applyDynamic("createPointerEvents")(el.asInstanceOf[js.Any], pointerDown.asInstanceOf[js.Any], pointerMove.asInstanceOf[js.Any], pointerUp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Destroy]
+  inline def createPointerEvents(el: Node, pointerDown: js.Any, pointerMove: js.Any, pointerUp: js.Any, options: Capture): Destroy = (^.asInstanceOf[js.Dynamic].applyDynamic("createPointerEvents")(el.asInstanceOf[js.Any], pointerDown.asInstanceOf[js.Any], pointerMove.asInstanceOf[js.Any], pointerUp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Destroy]
   
   trait PointerEventsConfig extends StObject {
     
@@ -35,53 +34,38 @@ object pointerEventsMod {
   }
   object PointerEventsConfig {
     
-    @scala.inline
-    def apply(pointerDown: js.Any => Boolean): PointerEventsConfig = {
+    inline def apply(pointerDown: js.Any => Boolean): PointerEventsConfig = {
       val __obj = js.Dynamic.literal(pointerDown = js.Any.fromFunction1(pointerDown))
       __obj.asInstanceOf[PointerEventsConfig]
     }
     
-    @scala.inline
-    implicit class PointerEventsConfigMutableBuilder[Self <: PointerEventsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PointerEventsConfig](x: Self) {
       
-      @scala.inline
-      def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
       
-      @scala.inline
-      def setPointerDown(value: js.Any => Boolean): Self = StObject.set(x, "pointerDown", js.Any.fromFunction1(value))
+      inline def setPointerDown(value: js.Any => Boolean): Self = StObject.set(x, "pointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPointerMove(value: /* ev */ js.Any => Unit): Self = StObject.set(x, "pointerMove", js.Any.fromFunction1(value))
+      inline def setPointerMove(value: /* ev */ js.Any => Unit): Self = StObject.set(x, "pointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPointerMoveUndefined: Self = StObject.set(x, "pointerMove", js.undefined)
+      inline def setPointerMoveUndefined: Self = StObject.set(x, "pointerMove", js.undefined)
       
-      @scala.inline
-      def setPointerUp(value: /* ev */ js.Any => Unit): Self = StObject.set(x, "pointerUp", js.Any.fromFunction1(value))
+      inline def setPointerUp(value: /* ev */ js.Any => Unit): Self = StObject.set(x, "pointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPointerUpUndefined: Self = StObject.set(x, "pointerUp", js.undefined)
+      inline def setPointerUpUndefined: Self = StObject.set(x, "pointerUp", js.undefined)
       
-      @scala.inline
-      def setZone(value: Boolean): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+      inline def setZone(value: Boolean): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+      inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     }
   }
 }

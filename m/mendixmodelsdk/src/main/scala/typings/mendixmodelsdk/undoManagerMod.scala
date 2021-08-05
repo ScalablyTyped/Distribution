@@ -14,17 +14,17 @@ object undoManagerMod {
   class UndoManager protected () extends StObject {
     def this(_model: IAbstractModel) = this()
     
-    val deltaManager: js.Any = js.native
+    /* private */ val deltaManager: js.Any = js.native
     
     def getUndoState(modelUnitId: String): UndoState = js.native
     
-    var onChangeCompleted: js.Any = js.native
+    /* private */ var onChangeCompleted: js.Any = js.native
     
-    var onChangeDiscarded: js.Any = js.native
+    /* private */ var onChangeDiscarded: js.Any = js.native
     
-    var onNewDelta: js.Any = js.native
+    /* private */ var onNewDelta: js.Any = js.native
     
-    var onUnitLoaded: js.Any = js.native
+    /* private */ var onUnitLoaded: js.Any = js.native
     
     def withoutUndo[T](performAction: js.Function0[T]): T = js.native
   }
@@ -40,7 +40,7 @@ object undoManagerMod {
     
     def clear(): Unit = js.native
     
-    var deltaManager: js.Any = js.native
+    /* private */ var deltaManager: js.Any = js.native
     
     def redo(): Unit = js.native
     
@@ -57,20 +57,16 @@ object undoManagerMod {
   }
   object IDeltaChange {
     
-    @scala.inline
-    def apply(delta: Delta, reversedDelta: Delta): IDeltaChange = {
+    inline def apply(delta: Delta, reversedDelta: Delta): IDeltaChange = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], reversedDelta = reversedDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDeltaChange]
     }
     
-    @scala.inline
-    implicit class IDeltaChangeMutableBuilder[Self <: IDeltaChange] (val x: Self) extends AnyVal {
+    extension [Self <: IDeltaChange](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedDelta(value: Delta): Self = StObject.set(x, "reversedDelta", value.asInstanceOf[js.Any])
+      inline def setReversedDelta(value: Delta): Self = StObject.set(x, "reversedDelta", value.asInstanceOf[js.Any])
     }
   }
 }

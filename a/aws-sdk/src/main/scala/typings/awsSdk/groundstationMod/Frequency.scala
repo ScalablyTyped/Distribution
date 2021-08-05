@@ -18,19 +18,15 @@ trait Frequency extends StObject {
 }
 object Frequency {
   
-  @scala.inline
-  def apply(units: FrequencyUnits, value: Double): Frequency = {
+  inline def apply(units: FrequencyUnits, value: Double): Frequency = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frequency]
   }
   
-  @scala.inline
-  implicit class FrequencyMutableBuilder[Self <: Frequency] (val x: Self) extends AnyVal {
+  extension [Self <: Frequency](x: Self) {
     
-    @scala.inline
-    def setUnits(value: FrequencyUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: FrequencyUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

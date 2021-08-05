@@ -14,25 +14,19 @@ trait PopSettings extends StObject {
 }
 object PopSettings {
   
-  @scala.inline
-  def apply(): PopSettings = {
+  inline def apply(): PopSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopSettings]
   }
   
-  @scala.inline
-  implicit class PopSettingsMutableBuilder[Self <: PopSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PopSettings](x: Self) {
     
-    @scala.inline
-    def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
+    inline def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessWindowUndefined: Self = StObject.set(x, "accessWindow", js.undefined)
+    inline def setAccessWindowUndefined: Self = StObject.set(x, "accessWindow", js.undefined)
     
-    @scala.inline
-    def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+    inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+    inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
   }
 }

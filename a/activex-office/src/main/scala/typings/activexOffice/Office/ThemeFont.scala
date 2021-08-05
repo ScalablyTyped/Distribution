@@ -12,15 +12,14 @@ trait ThemeFont extends StObject {
   
   var Name: String
   
-  @JSName("Office.ThemeFont_typekey")
+  /* private */ @JSName("Office.ThemeFont_typekey")
   var OfficeDotThemeFont_typekey: ThemeFont
   
   val Parent: js.Any
 }
 object ThemeFont {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Name: String,
@@ -32,22 +31,16 @@ object ThemeFont {
     __obj.asInstanceOf[ThemeFont]
   }
   
-  @scala.inline
-  implicit class ThemeFontMutableBuilder[Self <: ThemeFont] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeFont](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotThemeFont_typekey(value: ThemeFont): Self = StObject.set(x, "Office.ThemeFont_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotThemeFont_typekey(value: ThemeFont): Self = StObject.set(x, "Office.ThemeFont_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

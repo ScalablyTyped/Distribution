@@ -75,8 +75,7 @@ trait BaseLayerViewGL2DTile
 }
 object BaseLayerViewGL2DTile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: js.Array[Double],
     col: Double,
     constructor: js.Function,
@@ -94,40 +93,28 @@ object BaseLayerViewGL2DTile {
     __obj.asInstanceOf[BaseLayerViewGL2DTile]
   }
   
-  @scala.inline
-  implicit class BaseLayerViewGL2DTileMutableBuilder[Self <: BaseLayerViewGL2DTile] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayerViewGL2DTile](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+    inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorld(value: Double): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+    inline def setWorld(value: Double): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
   }
 }

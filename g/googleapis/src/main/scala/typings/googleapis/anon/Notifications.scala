@@ -11,22 +11,17 @@ trait Notifications extends StObject {
 }
 object Notifications {
   
-  @scala.inline
-  def apply(): Notifications = {
+  inline def apply(): Notifications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notifications]
   }
   
-  @scala.inline
-  implicit class NotificationsMutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
+  extension [Self <: Notifications](x: Self) {
     
-    @scala.inline
-    def setNotifications(value: js.Array[SchemaCalendarNotification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: js.Array[SchemaCalendarNotification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    @scala.inline
-    def setNotificationsVarargs(value: SchemaCalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: SchemaCalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
   }
 }

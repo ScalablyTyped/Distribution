@@ -10,19 +10,15 @@ trait ReactiveGeom extends StObject {
 }
 object ReactiveGeom {
   
-  @scala.inline
-  def apply(): ReactiveGeom = {
+  inline def apply(): ReactiveGeom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReactiveGeom]
   }
   
-  @scala.inline
-  implicit class ReactiveGeomMutableBuilder[Self <: ReactiveGeom] (val x: Self) extends AnyVal {
+  extension [Self <: ReactiveGeom](x: Self) {
     
-    @scala.inline
-    def setReactiveGeom(value: Boolean): Self = StObject.set(x, "reactiveGeom", value.asInstanceOf[js.Any])
+    inline def setReactiveGeom(value: Boolean): Self = StObject.set(x, "reactiveGeom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactiveGeomUndefined: Self = StObject.set(x, "reactiveGeom", js.undefined)
+    inline def setReactiveGeomUndefined: Self = StObject.set(x, "reactiveGeom", js.undefined)
   }
 }

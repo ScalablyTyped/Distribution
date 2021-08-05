@@ -8,11 +8,9 @@ object maximMazurokGapiClientRealtimebiddingStrings {
   
   @js.native
   sealed trait realtimebidding extends StObject
-  @scala.inline
-  def realtimebidding: realtimebidding = "realtimebidding".asInstanceOf[realtimebidding]
+  inline def realtimebidding: realtimebidding = "realtimebidding".asInstanceOf[realtimebidding]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -23,25 +23,19 @@ trait GetSubscriptionDefinitionVersionRequest extends StObject {
 }
 object GetSubscriptionDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(SubscriptionDefinitionId: string, SubscriptionDefinitionVersionId: string): GetSubscriptionDefinitionVersionRequest = {
+  inline def apply(SubscriptionDefinitionId: string, SubscriptionDefinitionVersionId: string): GetSubscriptionDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionDefinitionId = SubscriptionDefinitionId.asInstanceOf[js.Any], SubscriptionDefinitionVersionId = SubscriptionDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubscriptionDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetSubscriptionDefinitionVersionRequestMutableBuilder[Self <: GetSubscriptionDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSubscriptionDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionDefinitionVersionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionDefinitionVersionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionVersionId", value.asInstanceOf[js.Any])
   }
 }

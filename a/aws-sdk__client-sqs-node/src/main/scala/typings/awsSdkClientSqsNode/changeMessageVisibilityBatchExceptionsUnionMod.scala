@@ -15,26 +15,22 @@ object changeMessageVisibilityBatchExceptionsUnionMod {
   trait ChangeMessageVisibilityBatchExceptionsUnion extends StObject
   object ChangeMessageVisibilityBatchExceptionsUnion {
     
-    @scala.inline
-    def BatchEntryIdsNotDistinct(): typings.awsSdkClientSqsNode.typesBatchEntryIdsNotDistinctMod.BatchEntryIdsNotDistinct = {
+    inline def BatchEntryIdsNotDistinct(): typings.awsSdkClientSqsNode.typesBatchEntryIdsNotDistinctMod.BatchEntryIdsNotDistinct = {
       val __obj = js.Dynamic.literal(name = "BatchEntryIdsNotDistinct")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesBatchEntryIdsNotDistinctMod.BatchEntryIdsNotDistinct]
     }
     
-    @scala.inline
-    def EmptyBatchRequest(): typings.awsSdkClientSqsNode.typesEmptyBatchRequestMod.EmptyBatchRequest = {
+    inline def EmptyBatchRequest(): typings.awsSdkClientSqsNode.typesEmptyBatchRequestMod.EmptyBatchRequest = {
       val __obj = js.Dynamic.literal(name = "EmptyBatchRequest")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesEmptyBatchRequestMod.EmptyBatchRequest]
     }
     
-    @scala.inline
-    def InvalidBatchEntryId(): typings.awsSdkClientSqsNode.typesInvalidBatchEntryIdMod.InvalidBatchEntryId = {
+    inline def InvalidBatchEntryId(): typings.awsSdkClientSqsNode.typesInvalidBatchEntryIdMod.InvalidBatchEntryId = {
       val __obj = js.Dynamic.literal(name = "InvalidBatchEntryId")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesInvalidBatchEntryIdMod.InvalidBatchEntryId]
     }
     
-    @scala.inline
-    def TooManyEntriesInBatchRequest(): typings.awsSdkClientSqsNode.typesTooManyEntriesInBatchRequestMod.TooManyEntriesInBatchRequest = {
+    inline def TooManyEntriesInBatchRequest(): typings.awsSdkClientSqsNode.typesTooManyEntriesInBatchRequestMod.TooManyEntriesInBatchRequest = {
       val __obj = js.Dynamic.literal(name = "TooManyEntriesInBatchRequest")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesTooManyEntriesInBatchRequestMod.TooManyEntriesInBatchRequest]
     }

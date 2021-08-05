@@ -23,22 +23,17 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(AppName: ResourceName, Port: IPPortNumber, Protocol: Protocol): App = {
+  inline def apply(AppName: ResourceName, Port: IPPortNumber, Protocol: Protocol): App = {
     val __obj = js.Dynamic.literal(AppName = AppName.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setAppName(value: ResourceName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: ResourceName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: IPPortNumber): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IPPortNumber): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait InsightImpactGraphEdge extends StObject {
 }
 object InsightImpactGraphEdge {
   
-  @scala.inline
-  def apply(): InsightImpactGraphEdge = {
+  inline def apply(): InsightImpactGraphEdge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightImpactGraphEdge]
   }
   
-  @scala.inline
-  implicit class InsightImpactGraphEdgeMutableBuilder[Self <: InsightImpactGraphEdge] (val x: Self) extends AnyVal {
+  extension [Self <: InsightImpactGraphEdge](x: Self) {
     
-    @scala.inline
-    def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
+    inline def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
   }
 }

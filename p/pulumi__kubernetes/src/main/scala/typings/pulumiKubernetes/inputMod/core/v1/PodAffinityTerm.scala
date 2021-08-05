@@ -28,31 +28,23 @@ trait PodAffinityTerm extends StObject {
 }
 object PodAffinityTerm {
   
-  @scala.inline
-  def apply(topologyKey: Input[String]): PodAffinityTerm = {
+  inline def apply(topologyKey: Input[String]): PodAffinityTerm = {
     val __obj = js.Dynamic.literal(topologyKey = topologyKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodAffinityTerm]
   }
   
-  @scala.inline
-  implicit class PodAffinityTermMutableBuilder[Self <: PodAffinityTerm] (val x: Self) extends AnyVal {
+  extension [Self <: PodAffinityTerm](x: Self) {
     
-    @scala.inline
-    def setLabelSelector(value: Input[LabelSelector]): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
+    inline def setLabelSelector(value: Input[LabelSelector]): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelSelectorUndefined: Self = StObject.set(x, "labelSelector", js.undefined)
+    inline def setLabelSelectorUndefined: Self = StObject.set(x, "labelSelector", js.undefined)
     
-    @scala.inline
-    def setNamespaces(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+    inline def setNamespaces(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+    inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
-    @scala.inline
-    def setNamespacesVarargs(value: Input[String]*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: Input[String]*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
-    @scala.inline
-    def setTopologyKey(value: Input[String]): Self = StObject.set(x, "topologyKey", value.asInstanceOf[js.Any])
+    inline def setTopologyKey(value: Input[String]): Self = StObject.set(x, "topologyKey", value.asInstanceOf[js.Any])
   }
 }

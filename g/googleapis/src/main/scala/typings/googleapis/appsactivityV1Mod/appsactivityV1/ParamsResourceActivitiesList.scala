@@ -62,61 +62,43 @@ trait ParamsResourceActivitiesList
 }
 object ParamsResourceActivitiesList {
   
-  @scala.inline
-  def apply(): ParamsResourceActivitiesList = {
+  inline def apply(): ParamsResourceActivitiesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceActivitiesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceActivitiesListMutableBuilder[Self <: ParamsResourceActivitiesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceActivitiesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDriveDotancestorId(value: String): Self = StObject.set(x, "drive.ancestorId", value.asInstanceOf[js.Any])
+    inline def setDriveDotancestorId(value: String): Self = StObject.set(x, "drive.ancestorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveDotancestorIdUndefined: Self = StObject.set(x, "drive.ancestorId", js.undefined)
+    inline def setDriveDotancestorIdUndefined: Self = StObject.set(x, "drive.ancestorId", js.undefined)
     
-    @scala.inline
-    def setDriveDotfileId(value: String): Self = StObject.set(x, "drive.fileId", value.asInstanceOf[js.Any])
+    inline def setDriveDotfileId(value: String): Self = StObject.set(x, "drive.fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveDotfileIdUndefined: Self = StObject.set(x, "drive.fileId", js.undefined)
+    inline def setDriveDotfileIdUndefined: Self = StObject.set(x, "drive.fileId", js.undefined)
     
-    @scala.inline
-    def setGroupingStrategy(value: String): Self = StObject.set(x, "groupingStrategy", value.asInstanceOf[js.Any])
+    inline def setGroupingStrategy(value: String): Self = StObject.set(x, "groupingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingStrategyUndefined: Self = StObject.set(x, "groupingStrategy", js.undefined)
+    inline def setGroupingStrategyUndefined: Self = StObject.set(x, "groupingStrategy", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

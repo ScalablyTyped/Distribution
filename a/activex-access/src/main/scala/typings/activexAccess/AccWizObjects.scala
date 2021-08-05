@@ -63,8 +63,7 @@ object AccWizObjects {
     }
     object FieldListDragOverParameter {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         SourceCtlName: String,
         SourceFieldList: Double,
         SourceRow: Double,
@@ -76,26 +75,19 @@ object AccWizObjects {
         __obj.asInstanceOf[FieldListDragOverParameter]
       }
       
-      @scala.inline
-      implicit class FieldListDragOverParameterMutableBuilder[Self <: FieldListDragOverParameter] (val x: Self) extends AnyVal {
+      extension [Self <: FieldListDragOverParameter](x: Self) {
         
-        @scala.inline
-        def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
+        inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
+        inline def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
+        inline def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+        inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
       }
     }
     
@@ -117,8 +109,7 @@ object AccWizObjects {
     }
     object FieldListFldListDragDropParameter {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         SourceCtlName: String,
         SourceFieldList: Double,
         SourceRow: Double,
@@ -130,26 +121,19 @@ object AccWizObjects {
         __obj.asInstanceOf[FieldListFldListDragDropParameter]
       }
       
-      @scala.inline
-      implicit class FieldListFldListDragDropParameterMutableBuilder[Self <: FieldListFldListDragDropParameter] (val x: Self) extends AnyVal {
+      extension [Self <: FieldListFldListDragDropParameter](x: Self) {
         
-        @scala.inline
-        def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
+        inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
+        inline def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
+        inline def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetCtlName(value: String): Self = StObject.set(x, "TargetCtlName", value.asInstanceOf[js.Any])
+        inline def setTargetCtlName(value: String): Self = StObject.set(x, "TargetCtlName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetFieldList(value: Double): Self = StObject.set(x, "TargetFieldList", value.asInstanceOf[js.Any])
+        inline def setTargetFieldList(value: Double): Self = StObject.set(x, "TargetFieldList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetRow(value: Double): Self = StObject.set(x, "TargetRow", value.asInstanceOf[js.Any])
+        inline def setTargetRow(value: Double): Self = StObject.set(x, "TargetRow", value.asInstanceOf[js.Any])
       }
     }
     
@@ -173,8 +157,7 @@ object AccWizObjects {
     }
     object FieldListFldListDragOverParameter {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         SourceCtlName: String,
         SourceFieldList: Double,
         SourceRow: Double,
@@ -187,29 +170,21 @@ object AccWizObjects {
         __obj.asInstanceOf[FieldListFldListDragOverParameter]
       }
       
-      @scala.inline
-      implicit class FieldListFldListDragOverParameterMutableBuilder[Self <: FieldListFldListDragOverParameter] (val x: Self) extends AnyVal {
+      extension [Self <: FieldListFldListDragOverParameter](x: Self) {
         
-        @scala.inline
-        def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
+        inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
+        inline def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
+        inline def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+        inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetCtlName(value: String): Self = StObject.set(x, "TargetCtlName", value.asInstanceOf[js.Any])
+        inline def setTargetCtlName(value: String): Self = StObject.set(x, "TargetCtlName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetFieldList(value: Double): Self = StObject.set(x, "TargetFieldList", value.asInstanceOf[js.Any])
+        inline def setTargetFieldList(value: Double): Self = StObject.set(x, "TargetFieldList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetRow(value: Double): Self = StObject.set(x, "TargetRow", value.asInstanceOf[js.Any])
+        inline def setTargetRow(value: Double): Self = StObject.set(x, "TargetRow", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -217,7 +192,7 @@ object AccWizObjects {
   /** Field List Control */
   trait FieldList extends StObject {
     
-    @JSName("AccWizObjects.FieldList_typekey")
+    /* private */ @JSName("AccWizObjects.FieldList_typekey")
     var AccWizObjectsDotFieldList_typekey: FieldList
     
     def AddFieldList(
@@ -271,8 +246,7 @@ object AccWizObjects {
   }
   object FieldList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccWizObjectsDotFieldList_typekey: FieldList,
       AddFieldList: (String, Double, Double, Double, Double, Double, Double, Boolean) => Unit,
       AddJoinLine: (Double, Double, Double, Double, Double) => Unit,
@@ -297,69 +271,50 @@ object AccWizObjects {
       __obj.asInstanceOf[FieldList]
     }
     
-    @scala.inline
-    implicit class FieldListMutableBuilder[Self <: FieldList] (val x: Self) extends AnyVal {
+    extension [Self <: FieldList](x: Self) {
       
-      @scala.inline
-      def setAccWizObjectsDotFieldList_typekey(value: FieldList): Self = StObject.set(x, "AccWizObjects.FieldList_typekey", value.asInstanceOf[js.Any])
+      inline def setAccWizObjectsDotFieldList_typekey(value: FieldList): Self = StObject.set(x, "AccWizObjects.FieldList_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddFieldList(value: (String, Double, Double, Double, Double, Double, Double, Boolean) => Unit): Self = StObject.set(x, "AddFieldList", js.Any.fromFunction8(value))
+      inline def setAddFieldList(value: (String, Double, Double, Double, Double, Double, Double, Boolean) => Unit): Self = StObject.set(x, "AddFieldList", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setAddJoinLine(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "AddJoinLine", js.Any.fromFunction5(value))
+      inline def setAddJoinLine(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "AddJoinLine", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setDeleteFieldList(value: Double => Unit): Self = StObject.set(x, "DeleteFieldList", js.Any.fromFunction1(value))
+      inline def setDeleteFieldList(value: Double => Unit): Self = StObject.set(x, "DeleteFieldList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteJoinLine(value: Double => Unit): Self = StObject.set(x, "DeleteJoinLine", js.Any.fromFunction1(value))
+      inline def setDeleteJoinLine(value: Double => Unit): Self = StObject.set(x, "DeleteJoinLine", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFieldListCount(value: Double): Self = StObject.set(x, "FieldListCount", value.asInstanceOf[js.Any])
+      inline def setFieldListCount(value: Double): Self = StObject.set(x, "FieldListCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldLists(value: Double => js.Any): Self = StObject.set(x, "FieldLists", js.Any.fromFunction1(value))
+      inline def setFieldLists(value: Double => js.Any): Self = StObject.set(x, "FieldLists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHScrollPos(value: Double): Self = StObject.set(x, "HScrollPos", value.asInstanceOf[js.Any])
+      inline def setHScrollPos(value: Double): Self = StObject.set(x, "HScrollPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinLineCount(value: Double): Self = StObject.set(x, "JoinLineCount", value.asInstanceOf[js.Any])
+      inline def setJoinLineCount(value: Double): Self = StObject.set(x, "JoinLineCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinLines(value: Double => js.Any): Self = StObject.set(x, "JoinLines", js.Any.fromFunction1(value))
+      inline def setJoinLines(value: Double => js.Any): Self = StObject.set(x, "JoinLines", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPersistentHighlight(value: Boolean): Self = StObject.set(x, "PersistentHighlight", value.asInstanceOf[js.Any])
+      inline def setPersistentHighlight(value: Boolean): Self = StObject.set(x, "PersistentHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicture(value: IPictureDisp): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: IPictureDisp): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureCols(value: Double): Self = StObject.set(x, "PictureCols", value.asInstanceOf[js.Any])
+      inline def setPictureCols(value: Double): Self = StObject.set(x, "PictureCols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureRows(value: Double): Self = StObject.set(x, "PictureRows", value.asInstanceOf[js.Any])
+      inline def setPictureRows(value: Double): Self = StObject.set(x, "PictureRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollBars(value: Double): Self = StObject.set(x, "ScrollBars", value.asInstanceOf[js.Any])
+      inline def setScrollBars(value: Double): Self = StObject.set(x, "ScrollBars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedFieldListIndex(value: Double): Self = StObject.set(x, "SelectedFieldListIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedFieldListIndex(value: Double): Self = StObject.set(x, "SelectedFieldListIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetCursor(value: Double => Unit): Self = StObject.set(x, "SetCursor", js.Any.fromFunction1(value))
+      inline def setSetCursor(value: Double => Unit): Self = StObject.set(x, "SetCursor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVScrollPos(value: Double): Self = StObject.set(x, "VScrollPos", value.asInstanceOf[js.Any])
+      inline def setVScrollPos(value: Double): Self = StObject.set(x, "VScrollPos", value.asInstanceOf[js.Any])
     }
   }
   
   /** ImexGrid Control */
   trait ImexGrid extends StObject {
     
-    @JSName("AccWizObjects.ImexGrid_typekey")
+    /* private */ @JSName("AccWizObjects.ImexGrid_typekey")
     var AccWizObjectsDotImexGrid_typekey: ImexGrid
     
     def AddColumn(ColumnCaption: String, ColumnWidth: Double, Index: Double): Unit
@@ -424,8 +379,7 @@ object AccWizObjects {
   }
   object ImexGrid {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccWizObjectsDotImexGrid_typekey: ImexGrid,
       AddColumn: (String, Double, Double) => Unit,
       AddRow: (String, Double) => Unit,
@@ -463,101 +417,69 @@ object AccWizObjects {
       __obj.asInstanceOf[ImexGrid]
     }
     
-    @scala.inline
-    implicit class ImexGridMutableBuilder[Self <: ImexGrid] (val x: Self) extends AnyVal {
+    extension [Self <: ImexGrid](x: Self) {
       
-      @scala.inline
-      def setAccWizObjectsDotImexGrid_typekey(value: ImexGrid): Self = StObject.set(x, "AccWizObjects.ImexGrid_typekey", value.asInstanceOf[js.Any])
+      inline def setAccWizObjectsDotImexGrid_typekey(value: ImexGrid): Self = StObject.set(x, "AccWizObjects.ImexGrid_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddColumn(value: (String, Double, Double) => Unit): Self = StObject.set(x, "AddColumn", js.Any.fromFunction3(value))
+      inline def setAddColumn(value: (String, Double, Double) => Unit): Self = StObject.set(x, "AddColumn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddRow(value: (String, Double) => Unit): Self = StObject.set(x, "AddRow", js.Any.fromFunction2(value))
+      inline def setAddRow(value: (String, Double) => Unit): Self = StObject.set(x, "AddRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAllowColumnSizing(value: Boolean): Self = StObject.set(x, "AllowColumnSizing", value.asInstanceOf[js.Any])
+      inline def setAllowColumnSizing(value: Boolean): Self = StObject.set(x, "AllowColumnSizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+      inline def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalcBestColumns(value: () => Unit): Self = StObject.set(x, "CalcBestColumns", js.Any.fromFunction0(value))
+      inline def setCalcBestColumns(value: () => Unit): Self = StObject.set(x, "CalcBestColumns", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearColumns(value: () => Unit): Self = StObject.set(x, "ClearColumns", js.Any.fromFunction0(value))
+      inline def setClearColumns(value: () => Unit): Self = StObject.set(x, "ClearColumns", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearRows(value: () => Unit): Self = StObject.set(x, "ClearRows", js.Any.fromFunction0(value))
+      inline def setClearRows(value: () => Unit): Self = StObject.set(x, "ClearRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColumnClickBehavior(value: Double): Self = StObject.set(x, "ColumnClickBehavior", value.asInstanceOf[js.Any])
+      inline def setColumnClickBehavior(value: Double): Self = StObject.set(x, "ColumnClickBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnState(value: js.Any): Self = StObject.set(x, "ColumnState", value.asInstanceOf[js.Any])
+      inline def setColumnState(value: js.Any): Self = StObject.set(x, "ColumnState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumns(value: Double => js.Any): Self = StObject.set(x, "Columns", js.Any.fromFunction1(value))
+      inline def setColumns(value: Double => js.Any): Self = StObject.set(x, "Columns", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteColumn(value: Double => Unit): Self = StObject.set(x, "DeleteColumn", js.Any.fromFunction1(value))
+      inline def setDeleteColumn(value: Double => Unit): Self = StObject.set(x, "DeleteColumn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteRow(value: Double => Unit): Self = StObject.set(x, "DeleteRow", js.Any.fromFunction1(value))
+      inline def setDeleteRow(value: Double => Unit): Self = StObject.set(x, "DeleteRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelimiters(value: String): Self = StObject.set(x, "Delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: String): Self = StObject.set(x, "Delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawTextLogicalOrder(value: Boolean): Self = StObject.set(x, "DrawTextLogicalOrder", value.asInstanceOf[js.Any])
+      inline def setDrawTextLogicalOrder(value: Boolean): Self = StObject.set(x, "DrawTextLogicalOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstRowNumber(value: Double): Self = StObject.set(x, "FirstRowNumber", value.asInstanceOf[js.Any])
+      inline def setFirstRowNumber(value: Double): Self = StObject.set(x, "FirstRowNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: IFontDisp): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+      inline def setFont(value: IFontDisp): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridBackColor(value: OLE_COLOR): Self = StObject.set(x, "GridBackColor", value.asInstanceOf[js.Any])
+      inline def setGridBackColor(value: OLE_COLOR): Self = StObject.set(x, "GridBackColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridFont(value: IFontDisp): Self = StObject.set(x, "GridFont", value.asInstanceOf[js.Any])
+      inline def setGridFont(value: IFontDisp): Self = StObject.set(x, "GridFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridHeader(value: Double): Self = StObject.set(x, "GridHeader", value.asInstanceOf[js.Any])
+      inline def setGridHeader(value: Double): Self = StObject.set(x, "GridHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPainting(value: Boolean): Self = StObject.set(x, "Painting", value.asInstanceOf[js.Any])
+      inline def setPainting(value: Boolean): Self = StObject.set(x, "Painting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetHScrollPos(value: () => Unit): Self = StObject.set(x, "ResetHScrollPos", js.Any.fromFunction0(value))
+      inline def setResetHScrollPos(value: () => Unit): Self = StObject.set(x, "ResetHScrollPos", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetVScrollPos(value: () => Unit): Self = StObject.set(x, "ResetVScrollPos", js.Any.fromFunction0(value))
+      inline def setResetVScrollPos(value: () => Unit): Self = StObject.set(x, "ResetVScrollPos", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowText(value: Double => String): Self = StObject.set(x, "RowText", js.Any.fromFunction1(value))
+      inline def setRowText(value: Double => String): Self = StObject.set(x, "RowText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowColLines(value: Boolean): Self = StObject.set(x, "ShowColLines", value.asInstanceOf[js.Any])
+      inline def setShowColLines(value: Boolean): Self = StObject.set(x, "ShowColLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRowHeaders(value: Boolean): Self = StObject.set(x, "ShowRowHeaders", value.asInstanceOf[js.Any])
+      inline def setShowRowHeaders(value: Boolean): Self = StObject.set(x, "ShowRowHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDelimiters(value: String): Self = StObject.set(x, "StringDelimiters", value.asInstanceOf[js.Any])
+      inline def setStringDelimiters(value: String): Self = StObject.set(x, "StringDelimiters", value.asInstanceOf[js.Any])
     }
   }
   
@@ -589,74 +511,51 @@ object AccWizObjects {
   trait WIZ_CSIDL_FLAGS extends StObject
   object WIZ_CSIDL_FLAGS {
     
-    @scala.inline
-    def WIZ_CSIDL_APPDATA: `26` = 26.asInstanceOf[`26`]
+    inline def WIZ_CSIDL_APPDATA: `26` = 26.asInstanceOf[`26`]
     
-    @scala.inline
-    def WIZ_CSIDL_BITBUCKET: `10` = 10.asInstanceOf[`10`]
+    inline def WIZ_CSIDL_BITBUCKET: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def WIZ_CSIDL_COMMON_DESKTOPDIRECTORY: `25` = 25.asInstanceOf[`25`]
+    inline def WIZ_CSIDL_COMMON_DESKTOPDIRECTORY: `25` = 25.asInstanceOf[`25`]
     
-    @scala.inline
-    def WIZ_CSIDL_COMMON_PROGRAMS: `23` = 23.asInstanceOf[`23`]
+    inline def WIZ_CSIDL_COMMON_PROGRAMS: `23` = 23.asInstanceOf[`23`]
     
-    @scala.inline
-    def WIZ_CSIDL_COMMON_STARTMENU: `22` = 22.asInstanceOf[`22`]
+    inline def WIZ_CSIDL_COMMON_STARTMENU: `22` = 22.asInstanceOf[`22`]
     
-    @scala.inline
-    def WIZ_CSIDL_COMMON_STARTUP: `24` = 24.asInstanceOf[`24`]
+    inline def WIZ_CSIDL_COMMON_STARTUP: `24` = 24.asInstanceOf[`24`]
     
-    @scala.inline
-    def WIZ_CSIDL_CONTROLS: `3` = 3.asInstanceOf[`3`]
+    inline def WIZ_CSIDL_CONTROLS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def WIZ_CSIDL_DESKTOP: `0` = 0.asInstanceOf[`0`]
+    inline def WIZ_CSIDL_DESKTOP: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def WIZ_CSIDL_DESKTOPDIRECTORY: `16` = 16.asInstanceOf[`16`]
+    inline def WIZ_CSIDL_DESKTOPDIRECTORY: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def WIZ_CSIDL_DRIVES: `17` = 17.asInstanceOf[`17`]
+    inline def WIZ_CSIDL_DRIVES: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def WIZ_CSIDL_FAVORITES: `6` = 6.asInstanceOf[`6`]
+    inline def WIZ_CSIDL_FAVORITES: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def WIZ_CSIDL_FONTS: `20` = 20.asInstanceOf[`20`]
+    inline def WIZ_CSIDL_FONTS: `20` = 20.asInstanceOf[`20`]
     
-    @scala.inline
-    def WIZ_CSIDL_NETHOOD: `19` = 19.asInstanceOf[`19`]
+    inline def WIZ_CSIDL_NETHOOD: `19` = 19.asInstanceOf[`19`]
     
-    @scala.inline
-    def WIZ_CSIDL_NETWORK: `18` = 18.asInstanceOf[`18`]
+    inline def WIZ_CSIDL_NETWORK: `18` = 18.asInstanceOf[`18`]
     
-    @scala.inline
-    def WIZ_CSIDL_PERSONAL: `5` = 5.asInstanceOf[`5`]
+    inline def WIZ_CSIDL_PERSONAL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def WIZ_CSIDL_PRINTERS: `4` = 4.asInstanceOf[`4`]
+    inline def WIZ_CSIDL_PRINTERS: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def WIZ_CSIDL_PRINTHOOD: `27` = 27.asInstanceOf[`27`]
+    inline def WIZ_CSIDL_PRINTHOOD: `27` = 27.asInstanceOf[`27`]
     
-    @scala.inline
-    def WIZ_CSIDL_PROGRAMS: `2` = 2.asInstanceOf[`2`]
+    inline def WIZ_CSIDL_PROGRAMS: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WIZ_CSIDL_RECENT: `8` = 8.asInstanceOf[`8`]
+    inline def WIZ_CSIDL_RECENT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def WIZ_CSIDL_SENDTO: `9` = 9.asInstanceOf[`9`]
+    inline def WIZ_CSIDL_SENDTO: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def WIZ_CSIDL_STARTMENU: `11` = 11.asInstanceOf[`11`]
+    inline def WIZ_CSIDL_STARTMENU: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def WIZ_CSIDL_STARTUP: `7` = 7.asInstanceOf[`7`]
+    inline def WIZ_CSIDL_STARTUP: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def WIZ_CSIDL_TEMPLATES: `21` = 21.asInstanceOf[`21`]
+    inline def WIZ_CSIDL_TEMPLATES: `21` = 21.asInstanceOf[`21`]
   }
   
   trait WIZ_FILETIME extends StObject {
@@ -667,20 +566,16 @@ object AccWizObjects {
   }
   object WIZ_FILETIME {
     
-    @scala.inline
-    def apply(dwHighDateTime: Double, dwLowDateTime: Double): WIZ_FILETIME = {
+    inline def apply(dwHighDateTime: Double, dwLowDateTime: Double): WIZ_FILETIME = {
       val __obj = js.Dynamic.literal(dwHighDateTime = dwHighDateTime.asInstanceOf[js.Any], dwLowDateTime = dwLowDateTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[WIZ_FILETIME]
     }
     
-    @scala.inline
-    implicit class WIZ_FILETIMEMutableBuilder[Self <: WIZ_FILETIME] (val x: Self) extends AnyVal {
+    extension [Self <: WIZ_FILETIME](x: Self) {
       
-      @scala.inline
-      def setDwHighDateTime(value: Double): Self = StObject.set(x, "dwHighDateTime", value.asInstanceOf[js.Any])
+      inline def setDwHighDateTime(value: Double): Self = StObject.set(x, "dwHighDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwLowDateTime(value: Double): Self = StObject.set(x, "dwLowDateTime", value.asInstanceOf[js.Any])
+      inline def setDwLowDateTime(value: Double): Self = StObject.set(x, "dwLowDateTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -691,11 +586,9 @@ object AccWizObjects {
   trait WIZ_SLGP_FLAGS extends StObject
   object WIZ_SLGP_FLAGS {
     
-    @scala.inline
-    def WIZ_SLGP_SHORTPATH: `1` = 1.asInstanceOf[`1`]
+    inline def WIZ_SLGP_SHORTPATH: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def WIZ_SLGP_UNCPRIORITY: `2` = 2.asInstanceOf[`2`]
+    inline def WIZ_SLGP_UNCPRIORITY: `2` = 2.asInstanceOf[`2`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -706,14 +599,11 @@ object AccWizObjects {
   trait WIZ_SLR_FLAGS extends StObject
   object WIZ_SLR_FLAGS {
     
-    @scala.inline
-    def WIZ_SLR_ANY_MATCH: `2` = 2.asInstanceOf[`2`]
+    inline def WIZ_SLR_ANY_MATCH: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WIZ_SLR_NO_UI: `1` = 1.asInstanceOf[`1`]
+    inline def WIZ_SLR_NO_UI: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def WIZ_SLR_UPDATE: `4` = 4.asInstanceOf[`4`]
+    inline def WIZ_SLR_UPDATE: `4` = 4.asInstanceOf[`4`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -724,14 +614,11 @@ object AccWizObjects {
   trait WIZ_SW_FLAGS extends StObject
   object WIZ_SW_FLAGS {
     
-    @scala.inline
-    def WIZ_SW_MAXIMIZE: `3` = 3.asInstanceOf[`3`]
+    inline def WIZ_SW_MAXIMIZE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def WIZ_SW_MINIMIZE: `7` = 7.asInstanceOf[`7`]
+    inline def WIZ_SW_MINIMIZE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def WIZ_SW_NORMAL: `5` = 5.asInstanceOf[`5`]
+    inline def WIZ_SW_NORMAL: `5` = 5.asInstanceOf[`5`]
   }
   
   trait WIZ_WIN32_FIND_DATA extends StObject {
@@ -758,8 +645,7 @@ object AccWizObjects {
   }
   object WIZ_WIN32_FIND_DATA {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cAlternate: SafeArray[Double],
       cFileName: SafeArray[Double],
       dwFileAttributes: Double,
@@ -775,45 +661,34 @@ object AccWizObjects {
       __obj.asInstanceOf[WIZ_WIN32_FIND_DATA]
     }
     
-    @scala.inline
-    implicit class WIZ_WIN32_FIND_DATAMutableBuilder[Self <: WIZ_WIN32_FIND_DATA] (val x: Self) extends AnyVal {
+    extension [Self <: WIZ_WIN32_FIND_DATA](x: Self) {
       
-      @scala.inline
-      def setCAlternate(value: SafeArray[Double]): Self = StObject.set(x, "cAlternate", value.asInstanceOf[js.Any])
+      inline def setCAlternate(value: SafeArray[Double]): Self = StObject.set(x, "cAlternate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCFileName(value: SafeArray[Double]): Self = StObject.set(x, "cFileName", value.asInstanceOf[js.Any])
+      inline def setCFileName(value: SafeArray[Double]): Self = StObject.set(x, "cFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwFileAttributes(value: Double): Self = StObject.set(x, "dwFileAttributes", value.asInstanceOf[js.Any])
+      inline def setDwFileAttributes(value: Double): Self = StObject.set(x, "dwFileAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwReserved0(value: Double): Self = StObject.set(x, "dwReserved0", value.asInstanceOf[js.Any])
+      inline def setDwReserved0(value: Double): Self = StObject.set(x, "dwReserved0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwReserved1(value: Double): Self = StObject.set(x, "dwReserved1", value.asInstanceOf[js.Any])
+      inline def setDwReserved1(value: Double): Self = StObject.set(x, "dwReserved1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFtCreationTime(value: WIZ_FILETIME): Self = StObject.set(x, "ftCreationTime", value.asInstanceOf[js.Any])
+      inline def setFtCreationTime(value: WIZ_FILETIME): Self = StObject.set(x, "ftCreationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFtLastAccessTime(value: WIZ_FILETIME): Self = StObject.set(x, "ftLastAccessTime", value.asInstanceOf[js.Any])
+      inline def setFtLastAccessTime(value: WIZ_FILETIME): Self = StObject.set(x, "ftLastAccessTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFtLastWriteTime(value: WIZ_FILETIME): Self = StObject.set(x, "ftLastWriteTime", value.asInstanceOf[js.Any])
+      inline def setFtLastWriteTime(value: WIZ_FILETIME): Self = StObject.set(x, "ftLastWriteTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNFileSizeHigh(value: Double): Self = StObject.set(x, "nFileSizeHigh", value.asInstanceOf[js.Any])
+      inline def setNFileSizeHigh(value: Double): Self = StObject.set(x, "nFileSizeHigh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNFileSizeLow(value: Double): Self = StObject.set(x, "nFileSizeLow", value.asInstanceOf[js.Any])
+      inline def setNFileSizeLow(value: Double): Self = StObject.set(x, "nFileSizeLow", value.asInstanceOf[js.Any])
     }
   }
   
   /** WizShellLinkA Class */
   trait WizShellLinkA extends StObject {
     
-    @JSName("AccWizObjects.WizShellLinkA_typekey")
+    /* private */ @JSName("AccWizObjects.WizShellLinkA_typekey")
     var AccWizObjectsDotWizShellLinkA_typekey: WizShellLinkA
     
     /** GetArguments */
@@ -872,8 +747,7 @@ object AccWizObjects {
   }
   object WizShellLinkA {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccWizObjectsDotWizShellLinkA_typekey: WizShellLinkA,
       GetArguments: (String, Double) => Unit,
       GetDescription: (String, Double) => Unit,
@@ -899,65 +773,45 @@ object AccWizObjects {
       __obj.asInstanceOf[WizShellLinkA]
     }
     
-    @scala.inline
-    implicit class WizShellLinkAMutableBuilder[Self <: WizShellLinkA] (val x: Self) extends AnyVal {
+    extension [Self <: WizShellLinkA](x: Self) {
       
-      @scala.inline
-      def setAccWizObjectsDotWizShellLinkA_typekey(value: WizShellLinkA): Self = StObject.set(x, "AccWizObjects.WizShellLinkA_typekey", value.asInstanceOf[js.Any])
+      inline def setAccWizObjectsDotWizShellLinkA_typekey(value: WizShellLinkA): Self = StObject.set(x, "AccWizObjects.WizShellLinkA_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetArguments(value: (String, Double) => Unit): Self = StObject.set(x, "GetArguments", js.Any.fromFunction2(value))
+      inline def setGetArguments(value: (String, Double) => Unit): Self = StObject.set(x, "GetArguments", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDescription(value: (String, Double) => Unit): Self = StObject.set(x, "GetDescription", js.Any.fromFunction2(value))
+      inline def setGetDescription(value: (String, Double) => Unit): Self = StObject.set(x, "GetDescription", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetHotkey(value: Double => Unit): Self = StObject.set(x, "GetHotkey", js.Any.fromFunction1(value))
+      inline def setGetHotkey(value: Double => Unit): Self = StObject.set(x, "GetHotkey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIDList(value: WIZ_CSIDL_FLAGS => Unit): Self = StObject.set(x, "GetIDList", js.Any.fromFunction1(value))
+      inline def setGetIDList(value: WIZ_CSIDL_FLAGS => Unit): Self = StObject.set(x, "GetIDList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIconLocation(value: (String, Double, Double) => Unit): Self = StObject.set(x, "GetIconLocation", js.Any.fromFunction3(value))
+      inline def setGetIconLocation(value: (String, Double, Double) => Unit): Self = StObject.set(x, "GetIconLocation", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetPath(value: (String, Double, WIZ_WIN32_FIND_DATA, Double) => Unit): Self = StObject.set(x, "GetPath", js.Any.fromFunction4(value))
+      inline def setGetPath(value: (String, Double, WIZ_WIN32_FIND_DATA, Double) => Unit): Self = StObject.set(x, "GetPath", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetShowCmd(value: WIZ_SW_FLAGS => Unit): Self = StObject.set(x, "GetShowCmd", js.Any.fromFunction1(value))
+      inline def setGetShowCmd(value: WIZ_SW_FLAGS => Unit): Self = StObject.set(x, "GetShowCmd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWorkingDirectory(value: (String, Double) => Unit): Self = StObject.set(x, "GetWorkingDirectory", js.Any.fromFunction2(value))
+      inline def setGetWorkingDirectory(value: (String, Double) => Unit): Self = StObject.set(x, "GetWorkingDirectory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolve(value: (Double, Double) => Unit): Self = StObject.set(x, "Resolve", js.Any.fromFunction2(value))
+      inline def setResolve(value: (Double, Double) => Unit): Self = StObject.set(x, "Resolve", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetArguments(value: String => Unit): Self = StObject.set(x, "SetArguments", js.Any.fromFunction1(value))
+      inline def setSetArguments(value: String => Unit): Self = StObject.set(x, "SetArguments", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDescription(value: String => Unit): Self = StObject.set(x, "SetDescription", js.Any.fromFunction1(value))
+      inline def setSetDescription(value: String => Unit): Self = StObject.set(x, "SetDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHotkey(value: Double => Unit): Self = StObject.set(x, "SetHotkey", js.Any.fromFunction1(value))
+      inline def setSetHotkey(value: Double => Unit): Self = StObject.set(x, "SetHotkey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIDList(value: WIZ_CSIDL_FLAGS => Unit): Self = StObject.set(x, "SetIDList", js.Any.fromFunction1(value))
+      inline def setSetIDList(value: WIZ_CSIDL_FLAGS => Unit): Self = StObject.set(x, "SetIDList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIconLocation(value: (String, Double) => Unit): Self = StObject.set(x, "SetIconLocation", js.Any.fromFunction2(value))
+      inline def setSetIconLocation(value: (String, Double) => Unit): Self = StObject.set(x, "SetIconLocation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetPath(value: String => Unit): Self = StObject.set(x, "SetPath", js.Any.fromFunction1(value))
+      inline def setSetPath(value: String => Unit): Self = StObject.set(x, "SetPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRelativePath(value: (String, Double) => Unit): Self = StObject.set(x, "SetRelativePath", js.Any.fromFunction2(value))
+      inline def setSetRelativePath(value: (String, Double) => Unit): Self = StObject.set(x, "SetRelativePath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetShowCmd(value: WIZ_SW_FLAGS => Unit): Self = StObject.set(x, "SetShowCmd", js.Any.fromFunction1(value))
+      inline def setSetShowCmd(value: WIZ_SW_FLAGS => Unit): Self = StObject.set(x, "SetShowCmd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWorkingDirectory(value: String => Unit): Self = StObject.set(x, "SetWorkingDirectory", js.Any.fromFunction1(value))
+      inline def setSetWorkingDirectory(value: String => Unit): Self = StObject.set(x, "SetWorkingDirectory", js.Any.fromFunction1(value))
     }
   }
 }

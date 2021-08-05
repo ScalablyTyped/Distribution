@@ -80,97 +80,67 @@ trait SchemaJobStatistics extends StObject {
 }
 object SchemaJobStatistics {
   
-  @scala.inline
-  def apply(): SchemaJobStatistics = {
+  inline def apply(): SchemaJobStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobStatistics]
   }
   
-  @scala.inline
-  implicit class SchemaJobStatisticsMutableBuilder[Self <: SchemaJobStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobStatistics](x: Self) {
     
-    @scala.inline
-    def setCompletionRatio(value: Double): Self = StObject.set(x, "completionRatio", value.asInstanceOf[js.Any])
+    inline def setCompletionRatio(value: Double): Self = StObject.set(x, "completionRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionRatioUndefined: Self = StObject.set(x, "completionRatio", js.undefined)
+    inline def setCompletionRatioUndefined: Self = StObject.set(x, "completionRatio", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setExtract(value: SchemaJobStatistics4): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+    inline def setExtract(value: SchemaJobStatistics4): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
+    inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
     
-    @scala.inline
-    def setLoad(value: SchemaJobStatistics3): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: SchemaJobStatistics3): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setNumChildJobs(value: String): Self = StObject.set(x, "numChildJobs", value.asInstanceOf[js.Any])
+    inline def setNumChildJobs(value: String): Self = StObject.set(x, "numChildJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumChildJobsUndefined: Self = StObject.set(x, "numChildJobs", js.undefined)
+    inline def setNumChildJobsUndefined: Self = StObject.set(x, "numChildJobs", js.undefined)
     
-    @scala.inline
-    def setParentJobId(value: String): Self = StObject.set(x, "parentJobId", value.asInstanceOf[js.Any])
+    inline def setParentJobId(value: String): Self = StObject.set(x, "parentJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentJobIdUndefined: Self = StObject.set(x, "parentJobId", js.undefined)
+    inline def setParentJobIdUndefined: Self = StObject.set(x, "parentJobId", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaJobStatistics2): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaJobStatistics2): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setQuotaDeferments(value: js.Array[String]): Self = StObject.set(x, "quotaDeferments", value.asInstanceOf[js.Any])
+    inline def setQuotaDeferments(value: js.Array[String]): Self = StObject.set(x, "quotaDeferments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaDefermentsUndefined: Self = StObject.set(x, "quotaDeferments", js.undefined)
+    inline def setQuotaDefermentsUndefined: Self = StObject.set(x, "quotaDeferments", js.undefined)
     
-    @scala.inline
-    def setQuotaDefermentsVarargs(value: String*): Self = StObject.set(x, "quotaDeferments", js.Array(value :_*))
+    inline def setQuotaDefermentsVarargs(value: String*): Self = StObject.set(x, "quotaDeferments", js.Array(value :_*))
     
-    @scala.inline
-    def setReservationUsage(value: js.Array[SlotMs]): Self = StObject.set(x, "reservationUsage", value.asInstanceOf[js.Any])
+    inline def setReservationUsage(value: js.Array[SlotMs]): Self = StObject.set(x, "reservationUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationUsageUndefined: Self = StObject.set(x, "reservationUsage", js.undefined)
+    inline def setReservationUsageUndefined: Self = StObject.set(x, "reservationUsage", js.undefined)
     
-    @scala.inline
-    def setReservationUsageVarargs(value: SlotMs*): Self = StObject.set(x, "reservationUsage", js.Array(value :_*))
+    inline def setReservationUsageVarargs(value: SlotMs*): Self = StObject.set(x, "reservationUsage", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTotalBytesProcessed(value: String): Self = StObject.set(x, "totalBytesProcessed", value.asInstanceOf[js.Any])
+    inline def setTotalBytesProcessed(value: String): Self = StObject.set(x, "totalBytesProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesProcessedUndefined: Self = StObject.set(x, "totalBytesProcessed", js.undefined)
+    inline def setTotalBytesProcessedUndefined: Self = StObject.set(x, "totalBytesProcessed", js.undefined)
     
-    @scala.inline
-    def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
+    inline def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
+    inline def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
   }
 }

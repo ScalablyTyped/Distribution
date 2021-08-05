@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd-scrollzone"
-version := "5.0-dt-20191119Z-ffd67f"
+version := "5.0-dt-20191119Z-a6b6bc"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

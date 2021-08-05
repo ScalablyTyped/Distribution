@@ -23,31 +23,23 @@ trait TriangulationStatusChangedEventUIParam extends StObject {
 }
 object TriangulationStatusChangedEventUIParam {
   
-  @scala.inline
-  def apply(): TriangulationStatusChangedEventUIParam = {
+  inline def apply(): TriangulationStatusChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriangulationStatusChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class TriangulationStatusChangedEventUIParamMutableBuilder[Self <: TriangulationStatusChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: TriangulationStatusChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentStatus(value: js.Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
+    inline def setCurrentStatus(value: js.Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStatusUndefined: Self = StObject.set(x, "currentStatus", js.undefined)
+    inline def setCurrentStatusUndefined: Self = StObject.set(x, "currentStatus", js.undefined)
     
-    @scala.inline
-    def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
   }
 }

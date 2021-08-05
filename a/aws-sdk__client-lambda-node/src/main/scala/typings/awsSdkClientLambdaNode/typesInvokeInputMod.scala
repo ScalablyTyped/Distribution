@@ -73,67 +73,48 @@ object typesInvokeInputMod {
   }
   object InvokeInput {
     
-    @scala.inline
-    def apply(FunctionName: String): InvokeInput = {
+    inline def apply(FunctionName: String): InvokeInput = {
       val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeInput]
     }
     
-    @scala.inline
-    implicit class InvokeInputMutableBuilder[Self <: InvokeInput] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setClientContext(value: String): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
+      inline def setClientContext(value: String): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
+      inline def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationType(value: Event | RequestResponse | DryRun | String): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
+      inline def setInvocationType(value: Event | RequestResponse | DryRun | String): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
+      inline def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
       
-      @scala.inline
-      def setLogType(value: None | Tail | String): Self = StObject.set(x, "LogType", value.asInstanceOf[js.Any])
+      inline def setLogType(value: None | Tail | String): Self = StObject.set(x, "LogType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogTypeUndefined: Self = StObject.set(x, "LogType", js.undefined)
+      inline def setLogTypeUndefined: Self = StObject.set(x, "LogType", js.undefined)
       
-      @scala.inline
-      def setPayload(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
     }
   }
 }

@@ -30,50 +30,50 @@ object dateInputMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDateInput(): Unit = js.native
     
-    var formatDate: js.Any = js.native
+    /* private */ var formatDate: js.Any = js.native
     
-    var getLastTabbableElement: js.Any = js.native
+    /* private */ var getLastTabbableElement: js.Any = js.native
     
-    var handleClosePopover: js.Any = js.native
+    /* private */ var handleClosePopover: js.Any = js.native
     
-    var handleDateChange: js.Any = js.native
+    /* private */ var handleDateChange: js.Any = js.native
     
-    var handleInputBlur: js.Any = js.native
+    /* private */ var handleInputBlur: js.Any = js.native
     
-    var handleInputChange: js.Any = js.native
+    /* private */ var handleInputChange: js.Any = js.native
     
-    var handleInputClick: js.Any = js.native
+    /* private */ var handleInputClick: js.Any = js.native
     
-    var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputFocus: js.Any = js.native
     
-    var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputKeyDown: js.Any = js.native
     
-    var handlePopoverBlur: js.Any = js.native
+    /* private */ var handlePopoverBlur: js.Any = js.native
     
-    var handleShortcutChange: js.Any = js.native
+    /* private */ var handleShortcutChange: js.Any = js.native
     
-    var hasMonthChanged: js.Any = js.native
+    /* private */ var hasMonthChanged: js.Any = js.native
     
-    var hasTimeChanged: js.Any = js.native
+    /* private */ var hasTimeChanged: js.Any = js.native
     
-    var inputEl: js.Any = js.native
+    /* private */ var inputEl: js.Any = js.native
     
-    var isDateInRange: js.Any = js.native
+    /* private */ var isDateInRange: js.Any = js.native
     
-    var lastTabbableElement: js.Any = js.native
+    /* private */ var lastTabbableElement: js.Any = js.native
     
-    var parseDate: js.Any = js.native
+    /* private */ var parseDate: js.Any = js.native
     
-    var popoverContentEl: js.Any = js.native
+    /* private */ var popoverContentEl: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var registerPopoverBlurHandler: js.Any = js.native
+    /* private */ var registerPopoverBlurHandler: js.Any = js.native
     
     /** safe wrapper around invoking input props event handler (prop defaults to undefined) */
-    var safeInvokeInputProp: js.Any = js.native
+    /* private */ var safeInvokeInputProp: js.Any = js.native
     
-    var unregisterPopoverBlurHandler: js.Any = js.native
+    /* private */ var unregisterPopoverBlurHandler: js.Any = js.native
   }
   /* static members */
   object DateInput {
@@ -85,14 +85,12 @@ object dateInputMod {
     @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput.defaultProps")
     @js.native
     def defaultProps: PartialIDateInputProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIDateInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIDateInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -250,32 +248,24 @@ object dateInputMod {
   }
   object IDateInputState {
     
-    @scala.inline
-    def apply(isInputFocused: Boolean, isOpen: Boolean, value: Date, valueString: String): IDateInputState = {
+    inline def apply(isInputFocused: Boolean, isOpen: Boolean, value: Date, valueString: String): IDateInputState = {
       val __obj = js.Dynamic.literal(isInputFocused = isInputFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueString = valueString.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDateInputState]
     }
     
-    @scala.inline
-    implicit class IDateInputStateMutableBuilder[Self <: IDateInputState] (val x: Self) extends AnyVal {
+    extension [Self <: IDateInputState](x: Self) {
       
-      @scala.inline
-      def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
+      inline def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
+      inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     }
   }
 }

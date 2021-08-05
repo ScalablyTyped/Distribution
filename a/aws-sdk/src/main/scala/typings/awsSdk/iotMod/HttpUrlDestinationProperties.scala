@@ -13,19 +13,15 @@ trait HttpUrlDestinationProperties extends StObject {
 }
 object HttpUrlDestinationProperties {
   
-  @scala.inline
-  def apply(): HttpUrlDestinationProperties = {
+  inline def apply(): HttpUrlDestinationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpUrlDestinationProperties]
   }
   
-  @scala.inline
-  implicit class HttpUrlDestinationPropertiesMutableBuilder[Self <: HttpUrlDestinationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HttpUrlDestinationProperties](x: Self) {
     
-    @scala.inline
-    def setConfirmationUrl(value: Url): Self = StObject.set(x, "confirmationUrl", value.asInstanceOf[js.Any])
+    inline def setConfirmationUrl(value: Url): Self = StObject.set(x, "confirmationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationUrlUndefined: Self = StObject.set(x, "confirmationUrl", js.undefined)
+    inline def setConfirmationUrlUndefined: Self = StObject.set(x, "confirmationUrl", js.undefined)
   }
 }

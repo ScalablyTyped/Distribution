@@ -38,49 +38,35 @@ trait Preservezoom extends StObject {
 }
 object Preservezoom {
   
-  @scala.inline
-  def apply(): Preservezoom = {
+  inline def apply(): Preservezoom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Preservezoom]
   }
   
-  @scala.inline
-  implicit class PreservezoomMutableBuilder[Self <: Preservezoom] (val x: Self) extends AnyVal {
+  extension [Self <: Preservezoom](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+    inline def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
-    @scala.inline
-    def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
+    inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
+    inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
-    @scala.inline
-    def `setBorder-width`(value: js.Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    inline def `setBorder-width`(value: js.Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
+    inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
-    @scala.inline
-    def setLabel(value: BorderwidthFontcolor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderwidthFontcolor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def `setPreserve-zoom`(value: Boolean): Self = StObject.set(x, "preserve-zoom", value.asInstanceOf[js.Any])
+    inline def `setPreserve-zoom`(value: Boolean): Self = StObject.set(x, "preserve-zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPreserve-zoomUndefined`: Self = StObject.set(x, "preserve-zoom", js.undefined)
+    inline def `setPreserve-zoomUndefined`: Self = StObject.set(x, "preserve-zoom", js.undefined)
   }
 }

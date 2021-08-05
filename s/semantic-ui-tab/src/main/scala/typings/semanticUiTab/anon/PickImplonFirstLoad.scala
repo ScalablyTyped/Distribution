@@ -20,8 +20,7 @@ trait PickImplonFirstLoad extends StObject {
 }
 object PickImplonFirstLoad {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onFirstLoad: js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
@@ -34,11 +33,9 @@ object PickImplonFirstLoad {
     __obj.asInstanceOf[PickImplonFirstLoad]
   }
   
-  @scala.inline
-  implicit class PickImplonFirstLoadMutableBuilder[Self <: PickImplonFirstLoad] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonFirstLoad](x: Self) {
     
-    @scala.inline
-    def setOnFirstLoad(
+    inline def setOnFirstLoad(
       value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 

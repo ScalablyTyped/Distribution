@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdStyleSheetLinkType extends StObject
 object WdStyleSheetLinkType {
   
-  @scala.inline
-  def wdStyleSheetLinkTypeImported: `1` = 1.asInstanceOf[`1`]
+  inline def wdStyleSheetLinkTypeImported: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdStyleSheetLinkTypeLinked: `0` = 0.asInstanceOf[`0`]
+  inline def wdStyleSheetLinkTypeLinked: `0` = 0.asInstanceOf[`0`]
 }

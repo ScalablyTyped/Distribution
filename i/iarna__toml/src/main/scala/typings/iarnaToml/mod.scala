@@ -71,8 +71,7 @@ object mod {
        with /* key */ StringDictionary[AnyJson]
   object JsonMap {
     
-    @scala.inline
-    def apply(): JsonMap = {
+    inline def apply(): JsonMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonMap]
     }
@@ -87,17 +86,14 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(blocksize: Double): ParseOptions = {
+    inline def apply(blocksize: Double): ParseOptions = {
       val __obj = js.Dynamic.literal(blocksize = blocksize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
+      inline def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
     }
   }
 }

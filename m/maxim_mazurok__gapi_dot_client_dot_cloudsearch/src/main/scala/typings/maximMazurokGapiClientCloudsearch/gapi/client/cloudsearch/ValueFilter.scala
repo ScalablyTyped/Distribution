@@ -18,25 +18,19 @@ trait ValueFilter extends StObject {
 }
 object ValueFilter {
   
-  @scala.inline
-  def apply(): ValueFilter = {
+  inline def apply(): ValueFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueFilter]
   }
   
-  @scala.inline
-  implicit class ValueFilterMutableBuilder[Self <: ValueFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ValueFilter](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

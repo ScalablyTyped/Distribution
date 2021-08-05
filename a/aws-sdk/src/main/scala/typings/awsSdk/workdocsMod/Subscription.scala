@@ -23,31 +23,23 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(): Subscription = {
+  inline def apply(): Subscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setEndPoint(value: SubscriptionEndPointType): Self = StObject.set(x, "EndPoint", value.asInstanceOf[js.Any])
+    inline def setEndPoint(value: SubscriptionEndPointType): Self = StObject.set(x, "EndPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPointUndefined: Self = StObject.set(x, "EndPoint", js.undefined)
+    inline def setEndPointUndefined: Self = StObject.set(x, "EndPoint", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: SubscriptionProtocolType): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: SubscriptionProtocolType): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setSubscriptionId(value: IdType): Self = StObject.set(x, "SubscriptionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionId(value: IdType): Self = StObject.set(x, "SubscriptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionIdUndefined: Self = StObject.set(x, "SubscriptionId", js.undefined)
+    inline def setSubscriptionIdUndefined: Self = StObject.set(x, "SubscriptionId", js.undefined)
   }
 }

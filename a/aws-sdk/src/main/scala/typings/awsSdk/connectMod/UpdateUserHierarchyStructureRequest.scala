@@ -18,19 +18,15 @@ trait UpdateUserHierarchyStructureRequest extends StObject {
 }
 object UpdateUserHierarchyStructureRequest {
   
-  @scala.inline
-  def apply(HierarchyStructure: HierarchyStructureUpdate, InstanceId: InstanceId): UpdateUserHierarchyStructureRequest = {
+  inline def apply(HierarchyStructure: HierarchyStructureUpdate, InstanceId: InstanceId): UpdateUserHierarchyStructureRequest = {
     val __obj = js.Dynamic.literal(HierarchyStructure = HierarchyStructure.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserHierarchyStructureRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserHierarchyStructureRequestMutableBuilder[Self <: UpdateUserHierarchyStructureRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserHierarchyStructureRequest](x: Self) {
     
-    @scala.inline
-    def setHierarchyStructure(value: HierarchyStructureUpdate): Self = StObject.set(x, "HierarchyStructure", value.asInstanceOf[js.Any])
+    inline def setHierarchyStructure(value: HierarchyStructureUpdate): Self = StObject.set(x, "HierarchyStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

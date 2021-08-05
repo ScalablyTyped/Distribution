@@ -38,8 +38,7 @@ trait XInterceptorInfo
 }
 object XInterceptorInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InterceptedURLs: SafeArray[String],
     acquire: () => Unit,
     getInterceptedURLs: () => SafeArray[String],
@@ -50,13 +49,10 @@ object XInterceptorInfo {
     __obj.asInstanceOf[XInterceptorInfo]
   }
   
-  @scala.inline
-  implicit class XInterceptorInfoMutableBuilder[Self <: XInterceptorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XInterceptorInfo](x: Self) {
     
-    @scala.inline
-    def setGetInterceptedURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getInterceptedURLs", js.Any.fromFunction0(value))
+    inline def setGetInterceptedURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getInterceptedURLs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInterceptedURLs(value: SafeArray[String]): Self = StObject.set(x, "InterceptedURLs", value.asInstanceOf[js.Any])
+    inline def setInterceptedURLs(value: SafeArray[String]): Self = StObject.set(x, "InterceptedURLs", value.asInstanceOf[js.Any])
   }
 }

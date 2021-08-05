@@ -20,28 +20,21 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse ext
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponseMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setAssociations(value: js.Array[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: js.Array[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    @scala.inline
-    def setAssociationsVarargs(value: SchemaGoogleCloudPrivatecatalogproducerV1beta1Association*): Self = StObject.set(x, "associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: SchemaGoogleCloudPrivatecatalogproducerV1beta1Association*): Self = StObject.set(x, "associations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

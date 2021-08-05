@@ -26,9 +26,9 @@ object linesMod {
     def bootstrapSliceString(start: Pos, end: Pos): String = js.native
     def bootstrapSliceString(start: Pos, end: Pos, options: Options): String = js.native
     
-    var cachedSourceMap: js.Any = js.native
+    /* private */ var cachedSourceMap: js.Any = js.native
     
-    var cachedTabWidth: js.Any = js.native
+    /* private */ var cachedTabWidth: js.Any = js.native
     
     def charAt(pos: Pos): String = js.native
     
@@ -54,7 +54,7 @@ object linesMod {
     
     def indentTail(by: Double): Lines = js.native
     
-    var infos: js.Any = js.native
+    /* private */ var infos: js.Any = js.native
     
     def isEmpty(): Boolean = js.native
     
@@ -70,7 +70,7 @@ object linesMod {
     
     def lockIndentTail(): Lines = js.native
     
-    var mappings: js.Any = js.native
+    /* private */ var mappings: js.Any = js.native
     
     val name: String | Null = js.native
     
@@ -112,22 +112,15 @@ object linesMod {
     def trimRight(): Lines = js.native
   }
   
-  @scala.inline
-  def concat(elements: js.Any): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(elements.asInstanceOf[js.Any]).asInstanceOf[Lines]
+  inline def concat(elements: js.Any): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(elements.asInstanceOf[js.Any]).asInstanceOf[Lines]
   
-  @scala.inline
-  def countSpaces(spaces: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countSpaces")(spaces.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def countSpaces(spaces: js.Any, tabWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countSpaces")(spaces.asInstanceOf[js.Any], tabWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def countSpaces(spaces: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countSpaces")(spaces.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def countSpaces(spaces: js.Any, tabWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countSpaces")(spaces.asInstanceOf[js.Any], tabWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fromString(string: String): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Lines]
-  @scala.inline
-  def fromString(string: String, options: Options): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Lines]
-  @scala.inline
-  def fromString(string: Lines): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Lines]
-  @scala.inline
-  def fromString(string: Lines, options: Options): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Lines]
+  inline def fromString(string: String): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Lines]
+  inline def fromString(string: String, options: Options): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Lines]
+  inline def fromString(string: Lines): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Lines]
+  inline def fromString(string: Lines, options: Options): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Lines]
   
   trait LineInfo extends StObject {
     
@@ -143,29 +136,22 @@ object linesMod {
   }
   object LineInfo {
     
-    @scala.inline
-    def apply(indent: Double, line: String, locked: Boolean, sliceEnd: Double, sliceStart: Double): LineInfo = {
+    inline def apply(indent: Double, line: String, locked: Boolean, sliceEnd: Double, sliceStart: Double): LineInfo = {
       val __obj = js.Dynamic.literal(indent = indent.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], sliceEnd = sliceEnd.asInstanceOf[js.Any], sliceStart = sliceStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineInfo]
     }
     
-    @scala.inline
-    implicit class LineInfoMutableBuilder[Self <: LineInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LineInfo](x: Self) {
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceEnd(value: Double): Self = StObject.set(x, "sliceEnd", value.asInstanceOf[js.Any])
+      inline def setSliceEnd(value: Double): Self = StObject.set(x, "sliceEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceStart(value: Double): Self = StObject.set(x, "sliceStart", value.asInstanceOf[js.Any])
+      inline def setSliceStart(value: Double): Self = StObject.set(x, "sliceStart", value.asInstanceOf[js.Any])
     }
   }
   

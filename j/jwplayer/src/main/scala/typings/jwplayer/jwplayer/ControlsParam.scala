@@ -10,16 +10,13 @@ trait ControlsParam extends StObject {
 }
 object ControlsParam {
   
-  @scala.inline
-  def apply(controls: Boolean): ControlsParam = {
+  inline def apply(controls: Boolean): ControlsParam = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlsParam]
   }
   
-  @scala.inline
-  implicit class ControlsParamMutableBuilder[Self <: ControlsParam] (val x: Self) extends AnyVal {
+  extension [Self <: ControlsParam](x: Self) {
     
-    @scala.inline
-    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
   }
 }

@@ -26,20 +26,16 @@ object typesUpdateEndpointsBatchOutputMod {
   }
   object UpdateEndpointsBatchOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, MessageBody: UnmarshalledMessageBody): UpdateEndpointsBatchOutput = {
+    inline def apply($metadata: ResponseMetadata, MessageBody: UnmarshalledMessageBody): UpdateEndpointsBatchOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], MessageBody = MessageBody.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateEndpointsBatchOutput]
     }
     
-    @scala.inline
-    implicit class UpdateEndpointsBatchOutputMutableBuilder[Self <: UpdateEndpointsBatchOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateEndpointsBatchOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageBody(value: UnmarshalledMessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+      inline def setMessageBody(value: UnmarshalledMessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
     }
   }
 }

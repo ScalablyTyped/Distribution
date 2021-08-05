@@ -11,6 +11,5 @@ object pairwiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](ins: Stream[T]): Stream[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Tuple2[T, T]]]
+  inline def default[T](ins: Stream[T]): Stream[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Tuple2[T, T]]]
 }

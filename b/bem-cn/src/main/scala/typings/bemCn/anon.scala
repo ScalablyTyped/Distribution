@@ -23,44 +23,32 @@ object anon {
   }
   object PartialBemSettings {
     
-    @scala.inline
-    def apply(): PartialBemSettings = {
+    inline def apply(): PartialBemSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialBemSettings]
     }
     
-    @scala.inline
-    implicit class PartialBemSettingsMutableBuilder[Self <: PartialBemSettings] (val x: Self) extends AnyVal {
+    extension [Self <: PartialBemSettings](x: Self) {
       
-      @scala.inline
-      def setClassMap(value: Record[String, String]): Self = StObject.set(x, "classMap", value.asInstanceOf[js.Any])
+      inline def setClassMap(value: Record[String, String]): Self = StObject.set(x, "classMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassMapUndefined: Self = StObject.set(x, "classMap", js.undefined)
+      inline def setClassMapUndefined: Self = StObject.set(x, "classMap", js.undefined)
       
-      @scala.inline
-      def setEl(value: String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setMod(value: String): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+      inline def setMod(value: String): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
+      inline def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
       
-      @scala.inline
-      def setModValue(value: String): Self = StObject.set(x, "modValue", value.asInstanceOf[js.Any])
+      inline def setModValue(value: String): Self = StObject.set(x, "modValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModValueUndefined: Self = StObject.set(x, "modValue", js.undefined)
+      inline def setModValueUndefined: Self = StObject.set(x, "modValue", js.undefined)
       
-      @scala.inline
-      def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
+      inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     }
   }
   

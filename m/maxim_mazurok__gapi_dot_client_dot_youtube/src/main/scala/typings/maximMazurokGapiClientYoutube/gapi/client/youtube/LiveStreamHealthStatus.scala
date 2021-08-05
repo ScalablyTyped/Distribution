@@ -17,34 +17,25 @@ trait LiveStreamHealthStatus extends StObject {
 }
 object LiveStreamHealthStatus {
   
-  @scala.inline
-  def apply(): LiveStreamHealthStatus = {
+  inline def apply(): LiveStreamHealthStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveStreamHealthStatus]
   }
   
-  @scala.inline
-  implicit class LiveStreamHealthStatusMutableBuilder[Self <: LiveStreamHealthStatus] (val x: Self) extends AnyVal {
+  extension [Self <: LiveStreamHealthStatus](x: Self) {
     
-    @scala.inline
-    def setConfigurationIssues(value: js.Array[LiveStreamConfigurationIssue]): Self = StObject.set(x, "configurationIssues", value.asInstanceOf[js.Any])
+    inline def setConfigurationIssues(value: js.Array[LiveStreamConfigurationIssue]): Self = StObject.set(x, "configurationIssues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIssuesUndefined: Self = StObject.set(x, "configurationIssues", js.undefined)
+    inline def setConfigurationIssuesUndefined: Self = StObject.set(x, "configurationIssues", js.undefined)
     
-    @scala.inline
-    def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value :_*))
+    inline def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value :_*))
     
-    @scala.inline
-    def setLastUpdateTimeSeconds(value: String): Self = StObject.set(x, "lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTimeSeconds(value: String): Self = StObject.set(x, "lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeSecondsUndefined: Self = StObject.set(x, "lastUpdateTimeSeconds", js.undefined)
+    inline def setLastUpdateTimeSecondsUndefined: Self = StObject.set(x, "lastUpdateTimeSeconds", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -16,16 +16,12 @@ object mod {
     @js.native
     val isCompatible: Boolean = js.native
     
-    @scala.inline
-    def off(eventName: String, handler: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def off(eventName: String, handler: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def on(eventName: String, handler: js.Function1[/* event */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def on(eventName: String, handler: js.Function1[/* event */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def startReader(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("startReader")().asInstanceOf[js.Promise[Boolean]]
+    inline def startReader(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("startReader")().asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def stopReader(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopReader")().asInstanceOf[js.Promise[Unit]]
+    inline def stopReader(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopReader")().asInstanceOf[js.Promise[Unit]]
   }
 }

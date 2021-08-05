@@ -13,16 +13,13 @@ trait ContentToc
 }
 object ContentToc {
   
-  @scala.inline
-  def apply(toc: TableOfContent): ContentToc = {
+  inline def apply(toc: TableOfContent): ContentToc = {
     val __obj = js.Dynamic.literal(toc = toc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentToc]
   }
   
-  @scala.inline
-  implicit class ContentTocMutableBuilder[Self <: ContentToc] (val x: Self) extends AnyVal {
+  extension [Self <: ContentToc](x: Self) {
     
-    @scala.inline
-    def setToc(value: TableOfContent): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
+    inline def setToc(value: TableOfContent): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
   }
 }

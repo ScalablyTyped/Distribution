@@ -8,11 +8,9 @@ object vueStrings {
   
   @js.native
   sealed trait Accessors extends StObject
-  @scala.inline
-  def Accessors: Accessors = "Accessors".asInstanceOf[Accessors]
+  inline def Accessors: Accessors = "Accessors".asInstanceOf[Accessors]
   
   @js.native
   sealed trait RecordPropsDefinition extends StObject
-  @scala.inline
-  def RecordPropsDefinition: RecordPropsDefinition = "RecordPropsDefinition".asInstanceOf[RecordPropsDefinition]
+  inline def RecordPropsDefinition: RecordPropsDefinition = "RecordPropsDefinition".asInstanceOf[RecordPropsDefinition]
 }

@@ -18,28 +18,21 @@ trait AnomalyDetectorConfiguration extends StObject {
 }
 object AnomalyDetectorConfiguration {
   
-  @scala.inline
-  def apply(): AnomalyDetectorConfiguration = {
+  inline def apply(): AnomalyDetectorConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnomalyDetectorConfiguration]
   }
   
-  @scala.inline
-  implicit class AnomalyDetectorConfigurationMutableBuilder[Self <: AnomalyDetectorConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AnomalyDetectorConfiguration](x: Self) {
     
-    @scala.inline
-    def setExcludedTimeRanges(value: AnomalyDetectorExcludedTimeRanges): Self = StObject.set(x, "ExcludedTimeRanges", value.asInstanceOf[js.Any])
+    inline def setExcludedTimeRanges(value: AnomalyDetectorExcludedTimeRanges): Self = StObject.set(x, "ExcludedTimeRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedTimeRangesUndefined: Self = StObject.set(x, "ExcludedTimeRanges", js.undefined)
+    inline def setExcludedTimeRangesUndefined: Self = StObject.set(x, "ExcludedTimeRanges", js.undefined)
     
-    @scala.inline
-    def setExcludedTimeRangesVarargs(value: Range*): Self = StObject.set(x, "ExcludedTimeRanges", js.Array(value :_*))
+    inline def setExcludedTimeRangesVarargs(value: Range*): Self = StObject.set(x, "ExcludedTimeRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricTimezone(value: AnomalyDetectorMetricTimezone): Self = StObject.set(x, "MetricTimezone", value.asInstanceOf[js.Any])
+    inline def setMetricTimezone(value: AnomalyDetectorMetricTimezone): Self = StObject.set(x, "MetricTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTimezoneUndefined: Self = StObject.set(x, "MetricTimezone", js.undefined)
+    inline def setMetricTimezoneUndefined: Self = StObject.set(x, "MetricTimezone", js.undefined)
   }
 }

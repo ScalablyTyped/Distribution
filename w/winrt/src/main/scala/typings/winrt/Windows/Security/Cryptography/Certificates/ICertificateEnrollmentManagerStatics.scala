@@ -23,8 +23,7 @@ trait ICertificateEnrollmentManagerStatics extends StObject {
 }
 object ICertificateEnrollmentManagerStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createRequestAsync: CertificateRequestProperties => IAsyncOperation[String],
     importPfxDataAsync: (String, String, ExportOption, KeyProtectionLevel, InstallOptions, String) => IAsyncAction,
     installCertificateAsync: (String, InstallOptions) => IAsyncAction
@@ -33,16 +32,12 @@ object ICertificateEnrollmentManagerStatics {
     __obj.asInstanceOf[ICertificateEnrollmentManagerStatics]
   }
   
-  @scala.inline
-  implicit class ICertificateEnrollmentManagerStaticsMutableBuilder[Self <: ICertificateEnrollmentManagerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICertificateEnrollmentManagerStatics](x: Self) {
     
-    @scala.inline
-    def setCreateRequestAsync(value: CertificateRequestProperties => IAsyncOperation[String]): Self = StObject.set(x, "createRequestAsync", js.Any.fromFunction1(value))
+    inline def setCreateRequestAsync(value: CertificateRequestProperties => IAsyncOperation[String]): Self = StObject.set(x, "createRequestAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImportPfxDataAsync(value: (String, String, ExportOption, KeyProtectionLevel, InstallOptions, String) => IAsyncAction): Self = StObject.set(x, "importPfxDataAsync", js.Any.fromFunction6(value))
+    inline def setImportPfxDataAsync(value: (String, String, ExportOption, KeyProtectionLevel, InstallOptions, String) => IAsyncAction): Self = StObject.set(x, "importPfxDataAsync", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setInstallCertificateAsync(value: (String, InstallOptions) => IAsyncAction): Self = StObject.set(x, "installCertificateAsync", js.Any.fromFunction2(value))
+    inline def setInstallCertificateAsync(value: (String, InstallOptions) => IAsyncAction): Self = StObject.set(x, "installCertificateAsync", js.Any.fromFunction2(value))
   }
 }

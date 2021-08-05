@@ -64,36 +64,28 @@ object anon {
   }
   object AdditionalProperties {
     
-    @scala.inline
-    def apply(): AdditionalProperties = {
+    inline def apply(): AdditionalProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdditionalProperties]
     }
     
-    @scala.inline
-    implicit class AdditionalPropertiesMutableBuilder[Self <: AdditionalProperties] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalProperties](x: Self) {
       
-      @scala.inline
-      def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+      inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+      inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
       
-      @scala.inline
-      def setPostProcessFnc(
+      inline def setPostProcessFnc(
         value: (/* schema */ JSONSchema3or4, /* obj */ js.Any, /* defaultFnc */ js.Function2[/* schema */ JSONSchema3or4, /* obj */ js.Any, JSONSchema3or4]) => JSONSchema3or4
       ): Self = StObject.set(x, "postProcessFnc", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostProcessFncUndefined: Self = StObject.set(x, "postProcessFnc", js.undefined)
+      inline def setPostProcessFncUndefined: Self = StObject.set(x, "postProcessFnc", js.undefined)
       
-      @scala.inline
-      def setPreProcessFnc(
+      inline def setPreProcessFnc(
         value: (/* obj */ js.Any, /* defaultFunc */ js.Function1[/* obj */ js.Any, JSONSchema3or4]) => JSONSchema3or4
       ): Self = StObject.set(x, "preProcessFnc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreProcessFncUndefined: Self = StObject.set(x, "preProcessFnc", js.undefined)
+      inline def setPreProcessFncUndefined: Self = StObject.set(x, "preProcessFnc", js.undefined)
     }
   }
   
@@ -142,28 +134,22 @@ object anon {
   }
   object DetectFormat {
     
-    @scala.inline
-    def apply(): DetectFormat = {
+    inline def apply(): DetectFormat = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DetectFormat]
     }
     
-    @scala.inline
-    implicit class DetectFormatMutableBuilder[Self <: DetectFormat] (val x: Self) extends AnyVal {
+    extension [Self <: DetectFormat](x: Self) {
       
-      @scala.inline
-      def setDetectFormat(value: Boolean): Self = StObject.set(x, "detectFormat", value.asInstanceOf[js.Any])
+      inline def setDetectFormat(value: Boolean): Self = StObject.set(x, "detectFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectFormatUndefined: Self = StObject.set(x, "detectFormat", js.undefined)
+      inline def setDetectFormatUndefined: Self = StObject.set(x, "detectFormat", js.undefined)
       
-      @scala.inline
-      def setPreProcessFnc(
+      inline def setPreProcessFnc(
         value: (/* value */ String, /* defaultFnc */ js.Function1[/* value */ String, JSONSchema3or4]) => JSONSchema3or4
       ): Self = StObject.set(x, "preProcessFnc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreProcessFncUndefined: Self = StObject.set(x, "preProcessFnc", js.undefined)
+      inline def setPreProcessFncUndefined: Self = StObject.set(x, "preProcessFnc", js.undefined)
     }
   }
   
@@ -188,20 +174,16 @@ object anon {
   }
   object Mode {
     
-    @scala.inline
-    def apply(): Mode = {
+    inline def apply(): Mode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mode]
     }
     
-    @scala.inline
-    implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+    extension [Self <: Mode](x: Self) {
       
-      @scala.inline
-      def setMode(value: all | first | uniform | tuple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: all | first | uniform | tuple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

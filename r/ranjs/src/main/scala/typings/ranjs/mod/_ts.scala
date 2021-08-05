@@ -14,20 +14,16 @@ object _ts {
   }
   object Commons {
     
-    @scala.inline
-    def apply(reset: () => Unit, update: js.Array[Double] => Unit): Commons = {
+    inline def apply(reset: () => Unit, update: js.Array[Double] => Unit): Commons = {
       val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Commons]
     }
     
-    @scala.inline
-    implicit class CommonsMutableBuilder[Self <: Commons] (val x: Self) extends AnyVal {
+    extension [Self <: Commons](x: Self) {
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: js.Array[Double] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: js.Array[Double] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

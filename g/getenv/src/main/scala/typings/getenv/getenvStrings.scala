@@ -11,46 +11,39 @@ object getenvStrings {
   sealed trait bool
     extends StObject
        with ParseTypes
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
+  inline def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
   sealed trait boolish
     extends StObject
        with ParseTypes
-  @scala.inline
-  def boolish: boolish = "boolish".asInstanceOf[boolish]
+  inline def boolish: boolish = "boolish".asInstanceOf[boolish]
   
   @js.native
   sealed trait float
     extends StObject
        with ParseTypes
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait int
     extends StObject
        with ParseTypes
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
   sealed trait multi extends StObject
-  @scala.inline
-  def multi: multi = "multi".asInstanceOf[multi]
+  inline def multi: multi = "multi".asInstanceOf[multi]
   
   @js.native
   sealed trait string
     extends StObject
        with ParseTypes
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait url
     extends StObject
        with ParseTypes
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
 }

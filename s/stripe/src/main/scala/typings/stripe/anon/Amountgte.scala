@@ -20,19 +20,15 @@ trait Amountgte extends StObject {
 }
 object Amountgte {
   
-  @scala.inline
-  def apply(amount_gte: Double, reset_billing_cycle_anchor: Boolean): Amountgte = {
+  inline def apply(amount_gte: Double, reset_billing_cycle_anchor: Boolean): Amountgte = {
     val __obj = js.Dynamic.literal(amount_gte = amount_gte.asInstanceOf[js.Any], reset_billing_cycle_anchor = reset_billing_cycle_anchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amountgte]
   }
   
-  @scala.inline
-  implicit class AmountgteMutableBuilder[Self <: Amountgte] (val x: Self) extends AnyVal {
+  extension [Self <: Amountgte](x: Self) {
     
-    @scala.inline
-    def setAmount_gte(value: Double): Self = StObject.set(x, "amount_gte", value.asInstanceOf[js.Any])
+    inline def setAmount_gte(value: Double): Self = StObject.set(x, "amount_gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset_billing_cycle_anchor(value: Boolean): Self = StObject.set(x, "reset_billing_cycle_anchor", value.asInstanceOf[js.Any])
+    inline def setReset_billing_cycle_anchor(value: Boolean): Self = StObject.set(x, "reset_billing_cycle_anchor", value.asInstanceOf[js.Any])
   }
 }

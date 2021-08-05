@@ -40,35 +40,26 @@ object mod {
     }
     object IDeepStateRedirectConfig {
       
-      @scala.inline
-      def apply(): IDeepStateRedirectConfig = {
+      inline def apply(): IDeepStateRedirectConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDeepStateRedirectConfig]
       }
       
-      @scala.inline
-      implicit class IDeepStateRedirectConfigMutableBuilder[Self <: IDeepStateRedirectConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IDeepStateRedirectConfig](x: Self) {
         
-        @scala.inline
-        def setDefault(value: String | IRedirectParams): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: String | IRedirectParams): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+        inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
-        @scala.inline
-        def setFn(value: /* $dsr$ */ Redirect => Boolean | IRedirectParams): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+        inline def setFn(value: /* $dsr$ */ Redirect => Boolean | IRedirectParams): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+        inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
         
-        @scala.inline
-        def setParams(value: Boolean | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: Boolean | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+        inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
       }
     }
     
@@ -115,24 +106,19 @@ object mod {
     }
     object IFutureState {
       
-      @scala.inline
-      def apply(stateName: String, `type`: String, url: String): IFutureState = {
+      inline def apply(stateName: String, `type`: String, url: String): IFutureState = {
         val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IFutureState]
       }
       
-      @scala.inline
-      implicit class IFutureStateMutableBuilder[Self <: IFutureState] (val x: Self) extends AnyVal {
+      extension [Self <: IFutureState](x: Self) {
         
-        @scala.inline
-        def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+        inline def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -171,8 +157,7 @@ object mod {
     }
     object IFutureStateProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addResolve: IResolveFunction => Unit,
         futureState: IFutureState => Unit,
         stateFactory: (String, IFutureStateFactory) => Unit
@@ -181,17 +166,13 @@ object mod {
         __obj.asInstanceOf[IFutureStateProvider]
       }
       
-      @scala.inline
-      implicit class IFutureStateProviderMutableBuilder[Self <: IFutureStateProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IFutureStateProvider](x: Self) {
         
-        @scala.inline
-        def setAddResolve(value: IResolveFunction => Unit): Self = StObject.set(x, "addResolve", js.Any.fromFunction1(value))
+        inline def setAddResolve(value: IResolveFunction => Unit): Self = StObject.set(x, "addResolve", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFutureState(value: IFutureState => Unit): Self = StObject.set(x, "futureState", js.Any.fromFunction1(value))
+        inline def setFutureState(value: IFutureState => Unit): Self = StObject.set(x, "futureState", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStateFactory(value: (String, IFutureStateFactory) => Unit): Self = StObject.set(x, "stateFactory", js.Any.fromFunction2(value))
+        inline def setStateFactory(value: (String, IFutureStateFactory) => Unit): Self = StObject.set(x, "stateFactory", js.Any.fromFunction2(value))
       }
     }
     
@@ -210,27 +191,22 @@ object mod {
     }
     object IPreviousState {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
       ): IPreviousState = {
         val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPreviousState]
       }
       
-      @scala.inline
-      implicit class IPreviousStateMutableBuilder[Self <: IPreviousState] (val x: Self) extends AnyVal {
+      extension [Self <: IPreviousState](x: Self) {
         
-        @scala.inline
-        def setParams(
+        inline def setParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
         ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setState(
+        inline def setState(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
         ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
@@ -290,25 +266,20 @@ object mod {
     }
     object IRedirectParams {
       
-      @scala.inline
-      def apply(state: String): IRedirectParams = {
+      inline def apply(state: String): IRedirectParams = {
         val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRedirectParams]
       }
       
-      @scala.inline
-      implicit class IRedirectParamsMutableBuilder[Self <: IRedirectParams] (val x: Self) extends AnyVal {
+      extension [Self <: IRedirectParams](x: Self) {
         
-        @scala.inline
-        def setParams(
+        inline def setParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
         ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
     }
     
@@ -368,54 +339,40 @@ object mod {
     }
     object IStickyState {
       
-      @scala.inline
-      def apply(): IStickyState = {
+      inline def apply(): IStickyState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IStickyState]
       }
       
-      @scala.inline
-      implicit class IStickyStateMutableBuilder[Self <: IStickyState] (val x: Self) extends AnyVal {
+      extension [Self <: IStickyState](x: Self) {
         
-        @scala.inline
-        def setDeepStateRedirect(value: Boolean | IDeepStateRedirectConfig): Self = StObject.set(x, "deepStateRedirect", value.asInstanceOf[js.Any])
+        inline def setDeepStateRedirect(value: Boolean | IDeepStateRedirectConfig): Self = StObject.set(x, "deepStateRedirect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeepStateRedirectUndefined: Self = StObject.set(x, "deepStateRedirect", js.undefined)
+        inline def setDeepStateRedirectUndefined: Self = StObject.set(x, "deepStateRedirect", js.undefined)
         
-        @scala.inline
-        def setDsr(value: Boolean | IDeepStateRedirectConfig): Self = StObject.set(x, "dsr", value.asInstanceOf[js.Any])
+        inline def setDsr(value: Boolean | IDeepStateRedirectConfig): Self = StObject.set(x, "dsr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDsrUndefined: Self = StObject.set(x, "dsr", js.undefined)
+        inline def setDsrUndefined: Self = StObject.set(x, "dsr", js.undefined)
         
-        @scala.inline
-        def setOnInactivate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onInactivate", js.Any.fromFunction1(value))
+        inline def setOnInactivate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onInactivate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnInactivateUndefined: Self = StObject.set(x, "onInactivate", js.undefined)
+        inline def setOnInactivateUndefined: Self = StObject.set(x, "onInactivate", js.undefined)
         
-        @scala.inline
-        def setOnReactivate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onReactivate", js.Any.fromFunction1(value))
+        inline def setOnReactivate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onReactivate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnReactivateUndefined: Self = StObject.set(x, "onReactivate", js.undefined)
+        inline def setOnReactivateUndefined: Self = StObject.set(x, "onReactivate", js.undefined)
         
-        @scala.inline
-        def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+        inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+        inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
         
-        @scala.inline
-        def setViews(
+        inline def setViews(
           value: StringDictionary[
                   /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
                 ]
         ): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+        inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
       }
     }
     
@@ -434,8 +391,7 @@ object mod {
     }
     object IStickyStateProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         $get: js.Any,
         debugMode: () => Boolean,
         enableDebug: Boolean => Boolean,
@@ -445,17 +401,13 @@ object mod {
         __obj.asInstanceOf[IStickyStateProvider]
       }
       
-      @scala.inline
-      implicit class IStickyStateProviderMutableBuilder[Self <: IStickyStateProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IStickyStateProvider](x: Self) {
         
-        @scala.inline
-        def setDebugMode(value: () => Boolean): Self = StObject.set(x, "debugMode", js.Any.fromFunction0(value))
+        inline def setDebugMode(value: () => Boolean): Self = StObject.set(x, "debugMode", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnableDebug(value: Boolean => Boolean): Self = StObject.set(x, "enableDebug", js.Any.fromFunction1(value))
+        inline def setEnableDebug(value: Boolean => Boolean): Self = StObject.set(x, "enableDebug", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRegisterStickyState(value: IStickyState => Unit): Self = StObject.set(x, "registerStickyState", js.Any.fromFunction1(value))
+        inline def setRegisterStickyState(value: IStickyState => Unit): Self = StObject.set(x, "registerStickyState", js.Any.fromFunction1(value))
       }
     }
     

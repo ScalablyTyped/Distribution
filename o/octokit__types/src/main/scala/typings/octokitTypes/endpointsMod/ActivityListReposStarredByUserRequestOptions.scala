@@ -20,25 +20,19 @@ trait ActivityListReposStarredByUserRequestOptions extends StObject {
 }
 object ActivityListReposStarredByUserRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActivityListReposStarredByUserRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActivityListReposStarredByUserRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/users/:username/starred")
     __obj.asInstanceOf[ActivityListReposStarredByUserRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActivityListReposStarredByUserRequestOptionsMutableBuilder[Self <: ActivityListReposStarredByUserRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityListReposStarredByUserRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashusersSlashColonusernameSlashstarred): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashusersSlashColonusernameSlashstarred): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

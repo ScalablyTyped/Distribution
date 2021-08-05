@@ -32,6 +32,5 @@ object BulkRegistration {
     * Creates a new bulk registration.
     * @return an empty bulk registration.
     */
-  @scala.inline
-  def create(): BulkRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BulkRegistration]
+  inline def create(): BulkRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BulkRegistration]
 }

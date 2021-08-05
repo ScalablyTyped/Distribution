@@ -11,13 +11,11 @@ object degeneratorStrings {
   sealed trait async
     extends StObject
        with DegeneratorOutput
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
   sealed trait generator
     extends StObject
        with DegeneratorOutput
-  @scala.inline
-  def generator: generator = "generator".asInstanceOf[generator]
+  inline def generator: generator = "generator".asInstanceOf[generator]
 }

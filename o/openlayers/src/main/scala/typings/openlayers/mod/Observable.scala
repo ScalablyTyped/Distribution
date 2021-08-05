@@ -98,14 +98,12 @@ object Observable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unByKey(key: js.Array[EventsKey]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unByKey(key: js.Array[EventsKey]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Removes an event listener using the key returned by `on()` or `once()`.
     * @param key The key returned by `on()`
     *     or `once()` (or an array of keys).
     * @api stable
     */
-  @scala.inline
-  def unByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

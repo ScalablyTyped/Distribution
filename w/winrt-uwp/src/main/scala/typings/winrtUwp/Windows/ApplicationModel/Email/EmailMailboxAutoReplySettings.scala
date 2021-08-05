@@ -31,8 +31,7 @@ trait EmailMailboxAutoReplySettings extends StObject {
 }
 object EmailMailboxAutoReplySettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endTime: Date,
     internalReply: EmailMailboxAutoReply,
     isEnabled: Boolean,
@@ -45,28 +44,20 @@ object EmailMailboxAutoReplySettings {
     __obj.asInstanceOf[EmailMailboxAutoReplySettings]
   }
   
-  @scala.inline
-  implicit class EmailMailboxAutoReplySettingsMutableBuilder[Self <: EmailMailboxAutoReplySettings] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxAutoReplySettings](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "internalReply", value.asInstanceOf[js.Any])
+    inline def setInternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "internalReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "knownExternalReply", value.asInstanceOf[js.Any])
+    inline def setKnownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "knownExternalReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseKind(value: EmailMailboxAutoReplyMessageResponseKind): Self = StObject.set(x, "responseKind", value.asInstanceOf[js.Any])
+    inline def setResponseKind(value: EmailMailboxAutoReplyMessageResponseKind): Self = StObject.set(x, "responseKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "unknownExternalReply", value.asInstanceOf[js.Any])
+    inline def setUnknownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "unknownExternalReply", value.asInstanceOf[js.Any])
   }
 }

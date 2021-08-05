@@ -13,16 +13,13 @@ trait CreateCodeRepositoryOutput extends StObject {
 }
 object CreateCodeRepositoryOutput {
   
-  @scala.inline
-  def apply(CodeRepositoryArn: CodeRepositoryArn): CreateCodeRepositoryOutput = {
+  inline def apply(CodeRepositoryArn: CodeRepositoryArn): CreateCodeRepositoryOutput = {
     val __obj = js.Dynamic.literal(CodeRepositoryArn = CodeRepositoryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCodeRepositoryOutput]
   }
   
-  @scala.inline
-  implicit class CreateCodeRepositoryOutputMutableBuilder[Self <: CreateCodeRepositoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCodeRepositoryOutput](x: Self) {
     
-    @scala.inline
-    def setCodeRepositoryArn(value: CodeRepositoryArn): Self = StObject.set(x, "CodeRepositoryArn", value.asInstanceOf[js.Any])
+    inline def setCodeRepositoryArn(value: CodeRepositoryArn): Self = StObject.set(x, "CodeRepositoryArn", value.asInstanceOf[js.Any])
   }
 }

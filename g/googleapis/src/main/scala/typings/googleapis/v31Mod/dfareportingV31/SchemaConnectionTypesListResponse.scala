@@ -22,28 +22,21 @@ trait SchemaConnectionTypesListResponse extends StObject {
 }
 object SchemaConnectionTypesListResponse {
   
-  @scala.inline
-  def apply(): SchemaConnectionTypesListResponse = {
+  inline def apply(): SchemaConnectionTypesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConnectionTypesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaConnectionTypesListResponseMutableBuilder[Self <: SchemaConnectionTypesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConnectionTypesListResponse](x: Self) {
     
-    @scala.inline
-    def setConnectionTypes(value: js.Array[SchemaConnectionType]): Self = StObject.set(x, "connectionTypes", value.asInstanceOf[js.Any])
+    inline def setConnectionTypes(value: js.Array[SchemaConnectionType]): Self = StObject.set(x, "connectionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
+    inline def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
     
-    @scala.inline
-    def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
+    inline def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

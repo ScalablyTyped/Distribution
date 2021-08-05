@@ -33,43 +33,31 @@ trait GetNamespaceDeletionStatusResponse extends StObject {
 }
 object GetNamespaceDeletionStatusResponse {
   
-  @scala.inline
-  def apply(): GetNamespaceDeletionStatusResponse = {
+  inline def apply(): GetNamespaceDeletionStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNamespaceDeletionStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetNamespaceDeletionStatusResponseMutableBuilder[Self <: GetNamespaceDeletionStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNamespaceDeletionStatusResponse](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: NamespaceDeletionStatusErrorCodes): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: NamespaceDeletionStatusErrorCodes): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
+    inline def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
+    inline def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
     
-    @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
+    inline def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NamespaceDeletionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NamespaceDeletionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

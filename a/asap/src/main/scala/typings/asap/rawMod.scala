@@ -10,8 +10,7 @@ object rawMod {
     * Executes a task as soon as possible.
     * @param task Function or any object that implements `call()`.
     */
-  @scala.inline
-  def apply(task: Task): Unit = ^.asInstanceOf[js.Dynamic].apply(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(task: Task): Unit = ^.asInstanceOf[js.Dynamic].apply(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("asap/raw", JSImport.Namespace)
   @js.native
@@ -20,8 +19,7 @@ object rawMod {
   /**
     * Flushes the event queue.
     */
-  @scala.inline
-  def requestFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFlush")().asInstanceOf[Unit]
+  inline def requestFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFlush")().asInstanceOf[Unit]
   
   trait Task extends StObject {
     
@@ -29,17 +27,14 @@ object rawMod {
   }
   object Task {
     
-    @scala.inline
-    def apply(call: /* repeated */ js.Any => js.Any): Task = {
+    inline def apply(call: /* repeated */ js.Any => js.Any): Task = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction1(call))
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setCall(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
+      inline def setCall(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
     }
   }
 }

@@ -31,10 +31,8 @@ object mod {
     * // Logs: 'Eating meat is deprecated and will be removed from the earth in the future. Please use vegetables instead. Note: You may find it beneficial to transition gradually.'
     * ```
     */
-  @scala.inline
-  def default(feature: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(feature.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(feature: String, options: DeprecatedOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(feature.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(feature: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(feature.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(feature: String, options: DeprecatedOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(feature.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@wordpress/deprecated", "logged")
   @js.native
@@ -69,44 +67,32 @@ object mod {
   }
   object DeprecatedOptions {
     
-    @scala.inline
-    def apply(): DeprecatedOptions = {
+    inline def apply(): DeprecatedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeprecatedOptions]
     }
     
-    @scala.inline
-    implicit class DeprecatedOptionsMutableBuilder[Self <: DeprecatedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeprecatedOptions](x: Self) {
       
-      @scala.inline
-      def setAlternative(value: String): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
+      inline def setAlternative(value: String): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternativeUndefined: Self = StObject.set(x, "alternative", js.undefined)
+      inline def setAlternativeUndefined: Self = StObject.set(x, "alternative", js.undefined)
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

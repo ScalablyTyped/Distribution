@@ -32,31 +32,23 @@ trait SchemaContainerStartedEvent extends StObject {
 }
 object SchemaContainerStartedEvent {
   
-  @scala.inline
-  def apply(): SchemaContainerStartedEvent = {
+  inline def apply(): SchemaContainerStartedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContainerStartedEvent]
   }
   
-  @scala.inline
-  implicit class SchemaContainerStartedEventMutableBuilder[Self <: SchemaContainerStartedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContainerStartedEvent](x: Self) {
     
-    @scala.inline
-    def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setPortMappings(value: StringDictionary[Double]): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
+    inline def setPortMappings(value: StringDictionary[Double]): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
+    inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait Expression
 }
 object Expression {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, body: String, id: String): Expression = {
+  inline def apply($parent: TypeDerived, $type: ElementType, body: String, id: String): Expression = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   
-  @scala.inline
-  implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+  extension [Self <: Expression](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

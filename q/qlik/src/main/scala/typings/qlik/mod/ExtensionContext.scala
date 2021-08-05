@@ -49,8 +49,7 @@ trait ExtensionContext extends StObject {
 }
 object ExtensionContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $element: JQuery[HTMLElement],
     $scope: js.Any,
     _inAnalysisState: Boolean,
@@ -67,40 +66,28 @@ object ExtensionContext {
     __obj.asInstanceOf[ExtensionContext]
   }
   
-  @scala.inline
-  implicit class ExtensionContextMutableBuilder[Self <: ExtensionContext] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionContext](x: Self) {
     
-    @scala.inline
-    def set$element(value: JQuery[HTMLElement]): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
+    inline def set$element(value: JQuery[HTMLElement]): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+    inline def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendApi(value: BackendApi): Self = StObject.set(x, "backendApi", value.asInstanceOf[js.Any])
+    inline def setBackendApi(value: BackendApi): Self = StObject.set(x, "backendApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaint(value: Paint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: Paint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectValues(value: (Double, js.Array[Double], Boolean) => Unit): Self = StObject.set(x, "selectValues", js.Any.fromFunction3(value))
+    inline def setSelectValues(value: (Double, js.Array[Double], Boolean) => Unit): Self = StObject.set(x, "selectValues", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSelectionsEnabled(value: Boolean): Self = StObject.set(x, "selectionsEnabled", value.asInstanceOf[js.Any])
+    inline def setSelectionsEnabled(value: Boolean): Self = StObject.set(x, "selectionsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleLasso(value: () => Unit): Self = StObject.set(x, "toggleLasso", js.Any.fromFunction0(value))
+    inline def setToggleLasso(value: () => Unit): Self = StObject.set(x, "toggleLasso", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_inAnalysisState(value: Boolean): Self = StObject.set(x, "_inAnalysisState", value.asInstanceOf[js.Any])
+    inline def set_inAnalysisState(value: Boolean): Self = StObject.set(x, "_inAnalysisState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_inEditState(value: Boolean): Self = StObject.set(x, "_inEditState", value.asInstanceOf[js.Any])
+    inline def set_inEditState(value: Boolean): Self = StObject.set(x, "_inEditState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_interactionState(value: Double): Self = StObject.set(x, "_interactionState", value.asInstanceOf[js.Any])
+    inline def set_interactionState(value: Double): Self = StObject.set(x, "_interactionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_on(value: Boolean): Self = StObject.set(x, "_on", value.asInstanceOf[js.Any])
+    inline def set_on(value: Boolean): Self = StObject.set(x, "_on", value.asInstanceOf[js.Any])
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fnClearImmediateMod {
   
   /* was `typeof core.clearImmediate` */
-  @scala.inline
-  def apply(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].apply(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].apply(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("core-js/library/fn/clear-immediate", JSImport.Namespace)
   @js.native

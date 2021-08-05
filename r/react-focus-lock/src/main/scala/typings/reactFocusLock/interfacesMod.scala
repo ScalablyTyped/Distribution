@@ -24,32 +24,24 @@ object interfacesMod {
   }
   object AutoFocusProps {
     
-    @scala.inline
-    def apply(): AutoFocusProps = {
+    inline def apply(): AutoFocusProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoFocusProps]
     }
     
-    @scala.inline
-    implicit class AutoFocusPropsMutableBuilder[Self <: AutoFocusProps] (val x: Self) extends AnyVal {
+    extension [Self <: AutoFocusProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     }
   }
   
@@ -59,20 +51,16 @@ object interfacesMod {
   }
   object FreeFocusProps {
     
-    @scala.inline
-    def apply(): FreeFocusProps = {
+    inline def apply(): FreeFocusProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FreeFocusProps]
     }
     
-    @scala.inline
-    implicit class FreeFocusPropsMutableBuilder[Self <: FreeFocusProps] (val x: Self) extends AnyVal {
+    extension [Self <: FreeFocusProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -82,20 +70,16 @@ object interfacesMod {
   }
   object InFocusGuardProps {
     
-    @scala.inline
-    def apply(): InFocusGuardProps = {
+    inline def apply(): InFocusGuardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InFocusGuardProps]
     }
     
-    @scala.inline
-    implicit class InFocusGuardPropsMutableBuilder[Self <: InFocusGuardProps] (val x: Self) extends AnyVal {
+    extension [Self <: InFocusGuardProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -188,125 +172,86 @@ object interfacesMod {
   }
   object ReactFocusLockProps {
     
-    @scala.inline
-    def apply[ChildrenType, LockProps](): ReactFocusLockProps[ChildrenType, LockProps] = {
+    inline def apply[ChildrenType, LockProps](): ReactFocusLockProps[ChildrenType, LockProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactFocusLockProps[ChildrenType, LockProps]]
     }
     
-    @scala.inline
-    implicit class ReactFocusLockPropsMutableBuilder[Self <: ReactFocusLockProps[?, ?], ChildrenType, LockProps] (val x: Self & (ReactFocusLockProps[ChildrenType, LockProps])) extends AnyVal {
+    extension [Self <: ReactFocusLockProps[?, ?], ChildrenType, LockProps](x: Self & (ReactFocusLockProps[ChildrenType, LockProps])) {
       
-      @scala.inline
-      def setAllowTextSelection(value: Boolean): Self = StObject.set(x, "allowTextSelection", value.asInstanceOf[js.Any])
+      inline def setAllowTextSelection(value: Boolean): Self = StObject.set(x, "allowTextSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTextSelectionUndefined: Self = StObject.set(x, "allowTextSelection", js.undefined)
+      inline def setAllowTextSelectionUndefined: Self = StObject.set(x, "allowTextSelection", js.undefined)
       
-      @scala.inline
-      def setAs(value: String | (ElementType[LockProps & ChildrenChildrenType[ChildrenType]])): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String | (ElementType[LockProps & ChildrenChildrenType[ChildrenType]])): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ChildrenType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ChildrenType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCrossFrame(value: Boolean): Self = StObject.set(x, "crossFrame", value.asInstanceOf[js.Any])
+      inline def setCrossFrame(value: Boolean): Self = StObject.set(x, "crossFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossFrameUndefined: Self = StObject.set(x, "crossFrame", js.undefined)
+      inline def setCrossFrameUndefined: Self = StObject.set(x, "crossFrame", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setLockProps(value: LockProps): Self = StObject.set(x, "lockProps", value.asInstanceOf[js.Any])
+      inline def setLockProps(value: LockProps): Self = StObject.set(x, "lockProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockPropsUndefined: Self = StObject.set(x, "lockProps", js.undefined)
+      inline def setLockPropsUndefined: Self = StObject.set(x, "lockProps", js.undefined)
       
-      @scala.inline
-      def setNoFocusGuards(value: Boolean | tail): Self = StObject.set(x, "noFocusGuards", value.asInstanceOf[js.Any])
+      inline def setNoFocusGuards(value: Boolean | tail): Self = StObject.set(x, "noFocusGuards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoFocusGuardsUndefined: Self = StObject.set(x, "noFocusGuards", js.undefined)
+      inline def setNoFocusGuardsUndefined: Self = StObject.set(x, "noFocusGuards", js.undefined)
       
-      @scala.inline
-      def setOnActivation(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onActivation", js.Any.fromFunction1(value))
+      inline def setOnActivation(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onActivation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnActivationUndefined: Self = StObject.set(x, "onActivation", js.undefined)
+      inline def setOnActivationUndefined: Self = StObject.set(x, "onActivation", js.undefined)
       
-      @scala.inline
-      def setOnDeactivation(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onDeactivation", js.Any.fromFunction1(value))
+      inline def setOnDeactivation(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onDeactivation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeactivationUndefined: Self = StObject.set(x, "onDeactivation", js.undefined)
+      inline def setOnDeactivationUndefined: Self = StObject.set(x, "onDeactivation", js.undefined)
       
-      @scala.inline
-      def setPersistentFocus(value: Boolean): Self = StObject.set(x, "persistentFocus", value.asInstanceOf[js.Any])
+      inline def setPersistentFocus(value: Boolean): Self = StObject.set(x, "persistentFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentFocusUndefined: Self = StObject.set(x, "persistentFocus", js.undefined)
+      inline def setPersistentFocusUndefined: Self = StObject.set(x, "persistentFocus", js.undefined)
       
-      @scala.inline
-      def setRef(value: Ref[HTMLElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[HTMLElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setReturnFocus(value: Boolean | FocusOptions): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
+      inline def setReturnFocus(value: Boolean | FocusOptions): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
+      inline def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
       
-      @scala.inline
-      def setShards(value: js.Array[RefObject[js.Any] | HTMLElement]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
+      inline def setShards(value: js.Array[RefObject[js.Any] | HTMLElement]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
+      inline def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
       
-      @scala.inline
-      def setShardsVarargs(value: (RefObject[js.Any] | HTMLElement)*): Self = StObject.set(x, "shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: (RefObject[js.Any] | HTMLElement)*): Self = StObject.set(x, "shards", js.Array(value :_*))
       
-      @scala.inline
-      def setWhiteList(value: /* activeElement */ HTMLElement => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))
+      inline def setWhiteList(value: /* activeElement */ HTMLElement => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhiteListUndefined: Self = StObject.set(x, "whiteList", js.undefined)
+      inline def setWhiteListUndefined: Self = StObject.set(x, "whiteList", js.undefined)
     }
   }
 }

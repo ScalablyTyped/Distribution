@@ -30,19 +30,15 @@ trait ShapeMouseEnterEventArgs extends StObject {
 }
 object ShapeMouseEnterEventArgs {
   
-  @scala.inline
-  def apply(pageName: String, shapeName: String): ShapeMouseEnterEventArgs = {
+  inline def apply(pageName: String, shapeName: String): ShapeMouseEnterEventArgs = {
     val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], shapeName = shapeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeMouseEnterEventArgs]
   }
   
-  @scala.inline
-  implicit class ShapeMouseEnterEventArgsMutableBuilder[Self <: ShapeMouseEnterEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeMouseEnterEventArgs](x: Self) {
     
-    @scala.inline
-    def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
+    inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeName(value: String): Self = StObject.set(x, "shapeName", value.asInstanceOf[js.Any])
+    inline def setShapeName(value: String): Self = StObject.set(x, "shapeName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait ImportApiKeysRequest extends StObject {
 }
 object ImportApiKeysRequest {
   
-  @scala.inline
-  def apply(body: _Blob, format: ApiKeysFormat): ImportApiKeysRequest = {
+  inline def apply(body: _Blob, format: ApiKeysFormat): ImportApiKeysRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportApiKeysRequest]
   }
   
-  @scala.inline
-  implicit class ImportApiKeysRequestMutableBuilder[Self <: ImportApiKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportApiKeysRequest](x: Self) {
     
-    @scala.inline
-    def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
+    inline def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
+    inline def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ApiKeysFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ApiKeysFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

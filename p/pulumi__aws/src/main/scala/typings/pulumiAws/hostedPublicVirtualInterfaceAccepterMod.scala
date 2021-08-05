@@ -56,14 +56,10 @@ object hostedPublicVirtualInterfaceAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterfaceAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterfaceAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceAccepterState): HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterfaceAccepter]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterfaceAccepter]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterfaceAccepter]
+    inline def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceAccepterState): HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterfaceAccepter]
+    inline def get(
       name: String,
       id: Input[ID],
       state: HostedPublicVirtualInterfaceAccepterState,
@@ -74,8 +70,7 @@ object hostedPublicVirtualInterfaceAccepterMod {
       * Returns true if the given object is an instance of HostedPublicVirtualInterfaceAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean]
   }
   
   trait HostedPublicVirtualInterfaceAccepterArgs extends StObject {
@@ -92,23 +87,18 @@ object hostedPublicVirtualInterfaceAccepterMod {
   }
   object HostedPublicVirtualInterfaceAccepterArgs {
     
-    @scala.inline
-    def apply(virtualInterfaceId: Input[String]): HostedPublicVirtualInterfaceAccepterArgs = {
+    inline def apply(virtualInterfaceId: Input[String]): HostedPublicVirtualInterfaceAccepterArgs = {
       val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedPublicVirtualInterfaceAccepterArgs]
     }
     
-    @scala.inline
-    implicit class HostedPublicVirtualInterfaceAccepterArgsMutableBuilder[Self <: HostedPublicVirtualInterfaceAccepterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HostedPublicVirtualInterfaceAccepterArgs](x: Self) {
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+      inline def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,32 +121,24 @@ object hostedPublicVirtualInterfaceAccepterMod {
   }
   object HostedPublicVirtualInterfaceAccepterState {
     
-    @scala.inline
-    def apply(): HostedPublicVirtualInterfaceAccepterState = {
+    inline def apply(): HostedPublicVirtualInterfaceAccepterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HostedPublicVirtualInterfaceAccepterState]
     }
     
-    @scala.inline
-    implicit class HostedPublicVirtualInterfaceAccepterStateMutableBuilder[Self <: HostedPublicVirtualInterfaceAccepterState] (val x: Self) extends AnyVal {
+    extension [Self <: HostedPublicVirtualInterfaceAccepterState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+      inline def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
+      inline def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
     }
   }
 }

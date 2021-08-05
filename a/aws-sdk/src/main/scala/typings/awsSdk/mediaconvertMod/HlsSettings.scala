@@ -38,49 +38,35 @@ trait HlsSettings extends StObject {
 }
 object HlsSettings {
   
-  @scala.inline
-  def apply(): HlsSettings = {
+  inline def apply(): HlsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsSettings]
   }
   
-  @scala.inline
-  implicit class HlsSettingsMutableBuilder[Self <: HlsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsSettings](x: Self) {
     
-    @scala.inline
-    def setAudioGroupId(value: string): Self = StObject.set(x, "AudioGroupId", value.asInstanceOf[js.Any])
+    inline def setAudioGroupId(value: string): Self = StObject.set(x, "AudioGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioGroupIdUndefined: Self = StObject.set(x, "AudioGroupId", js.undefined)
+    inline def setAudioGroupIdUndefined: Self = StObject.set(x, "AudioGroupId", js.undefined)
     
-    @scala.inline
-    def setAudioOnlyContainer(value: HlsAudioOnlyContainer): Self = StObject.set(x, "AudioOnlyContainer", value.asInstanceOf[js.Any])
+    inline def setAudioOnlyContainer(value: HlsAudioOnlyContainer): Self = StObject.set(x, "AudioOnlyContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioOnlyContainerUndefined: Self = StObject.set(x, "AudioOnlyContainer", js.undefined)
+    inline def setAudioOnlyContainerUndefined: Self = StObject.set(x, "AudioOnlyContainer", js.undefined)
     
-    @scala.inline
-    def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
+    inline def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioRenditionSetsUndefined: Self = StObject.set(x, "AudioRenditionSets", js.undefined)
+    inline def setAudioRenditionSetsUndefined: Self = StObject.set(x, "AudioRenditionSets", js.undefined)
     
-    @scala.inline
-    def setAudioTrackType(value: HlsAudioTrackType): Self = StObject.set(x, "AudioTrackType", value.asInstanceOf[js.Any])
+    inline def setAudioTrackType(value: HlsAudioTrackType): Self = StObject.set(x, "AudioTrackType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioTrackTypeUndefined: Self = StObject.set(x, "AudioTrackType", js.undefined)
+    inline def setAudioTrackTypeUndefined: Self = StObject.set(x, "AudioTrackType", js.undefined)
     
-    @scala.inline
-    def setIFrameOnlyManifest(value: HlsIFrameOnlyManifest): Self = StObject.set(x, "IFrameOnlyManifest", value.asInstanceOf[js.Any])
+    inline def setIFrameOnlyManifest(value: HlsIFrameOnlyManifest): Self = StObject.set(x, "IFrameOnlyManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIFrameOnlyManifestUndefined: Self = StObject.set(x, "IFrameOnlyManifest", js.undefined)
+    inline def setIFrameOnlyManifestUndefined: Self = StObject.set(x, "IFrameOnlyManifest", js.undefined)
     
-    @scala.inline
-    def setSegmentModifier(value: string): Self = StObject.set(x, "SegmentModifier", value.asInstanceOf[js.Any])
+    inline def setSegmentModifier(value: string): Self = StObject.set(x, "SegmentModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentModifierUndefined: Self = StObject.set(x, "SegmentModifier", js.undefined)
+    inline def setSegmentModifierUndefined: Self = StObject.set(x, "SegmentModifier", js.undefined)
   }
 }

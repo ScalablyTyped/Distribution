@@ -16,8 +16,7 @@ trait ITXMode extends StObject {
 }
 object ITXMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TransactionMode: Instantiable1[/* options */ js.UndefOr[Deferrable], TransactionMode],
     isolationLevel: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isolationLevel */ js.Any
   ): ITXMode = {
@@ -25,15 +24,12 @@ object ITXMode {
     __obj.asInstanceOf[ITXMode]
   }
   
-  @scala.inline
-  implicit class ITXModeMutableBuilder[Self <: ITXMode] (val x: Self) extends AnyVal {
+  extension [Self <: ITXMode](x: Self) {
     
-    @scala.inline
-    def setIsolationLevel(
+    inline def setIsolationLevel(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isolationLevel */ js.Any
     ): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionMode(value: Instantiable1[/* options */ js.UndefOr[Deferrable], TransactionMode]): Self = StObject.set(x, "TransactionMode", value.asInstanceOf[js.Any])
+    inline def setTransactionMode(value: Instantiable1[/* options */ js.UndefOr[Deferrable], TransactionMode]): Self = StObject.set(x, "TransactionMode", value.asInstanceOf[js.Any])
   }
 }

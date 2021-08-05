@@ -14,25 +14,19 @@ trait DealServingMetadata extends StObject {
 }
 object DealServingMetadata {
   
-  @scala.inline
-  def apply(): DealServingMetadata = {
+  inline def apply(): DealServingMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DealServingMetadata]
   }
   
-  @scala.inline
-  implicit class DealServingMetadataMutableBuilder[Self <: DealServingMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DealServingMetadata](x: Self) {
     
-    @scala.inline
-    def setAlcoholAdsAllowed(value: Boolean): Self = StObject.set(x, "alcoholAdsAllowed", value.asInstanceOf[js.Any])
+    inline def setAlcoholAdsAllowed(value: Boolean): Self = StObject.set(x, "alcoholAdsAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlcoholAdsAllowedUndefined: Self = StObject.set(x, "alcoholAdsAllowed", js.undefined)
+    inline def setAlcoholAdsAllowedUndefined: Self = StObject.set(x, "alcoholAdsAllowed", js.undefined)
     
-    @scala.inline
-    def setDealPauseStatus(value: DealServingMetadataDealPauseStatus): Self = StObject.set(x, "dealPauseStatus", value.asInstanceOf[js.Any])
+    inline def setDealPauseStatus(value: DealServingMetadataDealPauseStatus): Self = StObject.set(x, "dealPauseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealPauseStatusUndefined: Self = StObject.set(x, "dealPauseStatus", js.undefined)
+    inline def setDealPauseStatusUndefined: Self = StObject.set(x, "dealPauseStatus", js.undefined)
   }
 }

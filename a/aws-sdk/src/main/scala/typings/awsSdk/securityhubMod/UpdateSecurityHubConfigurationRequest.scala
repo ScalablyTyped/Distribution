@@ -13,19 +13,15 @@ trait UpdateSecurityHubConfigurationRequest extends StObject {
 }
 object UpdateSecurityHubConfigurationRequest {
   
-  @scala.inline
-  def apply(): UpdateSecurityHubConfigurationRequest = {
+  inline def apply(): UpdateSecurityHubConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSecurityHubConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSecurityHubConfigurationRequestMutableBuilder[Self <: UpdateSecurityHubConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSecurityHubConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
+    inline def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoEnableControlsUndefined: Self = StObject.set(x, "AutoEnableControls", js.undefined)
+    inline def setAutoEnableControlsUndefined: Self = StObject.set(x, "AutoEnableControls", js.undefined)
   }
 }

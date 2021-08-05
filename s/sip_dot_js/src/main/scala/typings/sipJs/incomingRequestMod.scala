@@ -81,26 +81,20 @@ object incomingRequestMod {
   }
   object IncomingRequestDelegate {
     
-    @scala.inline
-    def apply(): IncomingRequestDelegate = {
+    inline def apply(): IncomingRequestDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IncomingRequestDelegate]
     }
     
-    @scala.inline
-    implicit class IncomingRequestDelegateMutableBuilder[Self <: IncomingRequestDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: IncomingRequestDelegate](x: Self) {
       
-      @scala.inline
-      def setOnCancel(value: /* message */ IncomingRequestMessage => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: /* message */ IncomingRequestMessage => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnTransportError(value: /* error */ TransportError => Unit): Self = StObject.set(x, "onTransportError", js.Any.fromFunction1(value))
+      inline def setOnTransportError(value: /* error */ TransportError => Unit): Self = StObject.set(x, "onTransportError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransportErrorUndefined: Self = StObject.set(x, "onTransportError", js.undefined)
+      inline def setOnTransportErrorUndefined: Self = StObject.set(x, "onTransportError", js.undefined)
     }
   }
 }

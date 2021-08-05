@@ -10,19 +10,15 @@ trait MapControlsNavigator extends StObject {
 }
 object MapControlsNavigator {
   
-  @scala.inline
-  def apply(): MapControlsNavigator = {
+  inline def apply(): MapControlsNavigator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapControlsNavigator]
   }
   
-  @scala.inline
-  implicit class MapControlsNavigatorMutableBuilder[Self <: MapControlsNavigator] (val x: Self) extends AnyVal {
+  extension [Self <: MapControlsNavigator](x: Self) {
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

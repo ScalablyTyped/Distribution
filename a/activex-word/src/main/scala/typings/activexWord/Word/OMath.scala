@@ -52,13 +52,12 @@ trait OMath extends StObject {
   
   var Type: WdOMathType
   
-  @JSName("Word.OMath_typekey")
+  /* private */ @JSName("Word.OMath_typekey")
   var WordDotOMath_typekey: OMath
 }
 object OMath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlignPoint: Double,
     Application: Application,
     ArgIndex: Double,
@@ -89,79 +88,54 @@ object OMath {
     __obj.asInstanceOf[OMath]
   }
   
-  @scala.inline
-  implicit class OMathMutableBuilder[Self <: OMath] (val x: Self) extends AnyVal {
+  extension [Self <: OMath](x: Self) {
     
-    @scala.inline
-    def setAlignPoint(value: Double): Self = StObject.set(x, "AlignPoint", value.asInstanceOf[js.Any])
+    inline def setAlignPoint(value: Double): Self = StObject.set(x, "AlignPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgIndex(value: Double): Self = StObject.set(x, "ArgIndex", value.asInstanceOf[js.Any])
+    inline def setArgIndex(value: Double): Self = StObject.set(x, "ArgIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgSize(value: Double): Self = StObject.set(x, "ArgSize", value.asInstanceOf[js.Any])
+    inline def setArgSize(value: Double): Self = StObject.set(x, "ArgSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreaks(value: OMathBreaks): Self = StObject.set(x, "Breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: OMathBreaks): Self = StObject.set(x, "Breaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUp(value: () => Unit): Self = StObject.set(x, "BuildUp", js.Any.fromFunction0(value))
+    inline def setBuildUp(value: () => Unit): Self = StObject.set(x, "BuildUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConvertToLiteralText(value: () => Unit): Self = StObject.set(x, "ConvertToLiteralText", js.Any.fromFunction0(value))
+    inline def setConvertToLiteralText(value: () => Unit): Self = StObject.set(x, "ConvertToLiteralText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConvertToMathText(value: () => Unit): Self = StObject.set(x, "ConvertToMathText", js.Any.fromFunction0(value))
+    inline def setConvertToMathText(value: () => Unit): Self = StObject.set(x, "ConvertToMathText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConvertToNormalText(value: () => Unit): Self = StObject.set(x, "ConvertToNormalText", js.Any.fromFunction0(value))
+    inline def setConvertToNormalText(value: () => Unit): Self = StObject.set(x, "ConvertToNormalText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctions(value: OMathFunctions): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: OMathFunctions): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustification(value: WdOMathJc): Self = StObject.set(x, "Justification", value.asInstanceOf[js.Any])
+    inline def setJustification(value: WdOMathJc): Self = StObject.set(x, "Justification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearize(value: () => Unit): Self = StObject.set(x, "Linearize", js.Any.fromFunction0(value))
+    inline def setLinearize(value: () => Unit): Self = StObject.set(x, "Linearize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNestingLevel(value: Double): Self = StObject.set(x, "NestingLevel", value.asInstanceOf[js.Any])
+    inline def setNestingLevel(value: Double): Self = StObject.set(x, "NestingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentArg(value: OMath): Self = StObject.set(x, "ParentArg", value.asInstanceOf[js.Any])
+    inline def setParentArg(value: OMath): Self = StObject.set(x, "ParentArg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCol(value: OMathMatCol): Self = StObject.set(x, "ParentCol", value.asInstanceOf[js.Any])
+    inline def setParentCol(value: OMathMatCol): Self = StObject.set(x, "ParentCol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFunction(value: OMathFunction): Self = StObject.set(x, "ParentFunction", value.asInstanceOf[js.Any])
+    inline def setParentFunction(value: OMathFunction): Self = StObject.set(x, "ParentFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentOMath(value: OMath): Self = StObject.set(x, "ParentOMath", value.asInstanceOf[js.Any])
+    inline def setParentOMath(value: OMath): Self = StObject.set(x, "ParentOMath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRow(value: OMathMatRow): Self = StObject.set(x, "ParentRow", value.asInstanceOf[js.Any])
+    inline def setParentRow(value: OMathMatRow): Self = StObject.set(x, "ParentRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: WdOMathType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdOMathType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMath_typekey(value: OMath): Self = StObject.set(x, "Word.OMath_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMath_typekey(value: OMath): Self = StObject.set(x, "Word.OMath_typekey", value.asInstanceOf[js.Any])
   }
 }

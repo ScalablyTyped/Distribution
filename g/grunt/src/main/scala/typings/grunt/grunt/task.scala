@@ -239,8 +239,7 @@ object task {
        with IFilesConfig
   object ITaskCompactOptions {
     
-    @scala.inline
-    def apply(): ITaskCompactOptions = {
+    inline def apply(): ITaskCompactOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITaskCompactOptions]
     }
@@ -262,26 +261,20 @@ object task {
   }
   object ITaskOptions {
     
-    @scala.inline
-    def apply(): ITaskOptions = {
+    inline def apply(): ITaskOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITaskOptions]
     }
     
-    @scala.inline
-    implicit class ITaskOptionsMutableBuilder[Self <: ITaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITaskOptions](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   

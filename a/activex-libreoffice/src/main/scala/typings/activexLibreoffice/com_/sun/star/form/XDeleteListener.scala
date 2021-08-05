@@ -27,8 +27,7 @@ trait XDeleteListener
 }
 object XDeleteListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveDelete: EventObject => Boolean,
     deleted: EventObject => Unit,
@@ -40,13 +39,10 @@ object XDeleteListener {
     __obj.asInstanceOf[XDeleteListener]
   }
   
-  @scala.inline
-  implicit class XDeleteListenerMutableBuilder[Self <: XDeleteListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDeleteListener](x: Self) {
     
-    @scala.inline
-    def setApproveDelete(value: EventObject => Boolean): Self = StObject.set(x, "approveDelete", js.Any.fromFunction1(value))
+    inline def setApproveDelete(value: EventObject => Boolean): Self = StObject.set(x, "approveDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleted(value: EventObject => Unit): Self = StObject.set(x, "deleted", js.Any.fromFunction1(value))
+    inline def setDeleted(value: EventObject => Unit): Self = StObject.set(x, "deleted", js.Any.fromFunction1(value))
   }
 }

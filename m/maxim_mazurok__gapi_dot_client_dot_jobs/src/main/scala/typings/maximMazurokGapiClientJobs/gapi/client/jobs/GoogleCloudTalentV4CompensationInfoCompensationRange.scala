@@ -14,25 +14,19 @@ trait GoogleCloudTalentV4CompensationInfoCompensationRange extends StObject {
 }
 object GoogleCloudTalentV4CompensationInfoCompensationRange {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4CompensationInfoCompensationRange = {
+  inline def apply(): GoogleCloudTalentV4CompensationInfoCompensationRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4CompensationInfoCompensationRange]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4CompensationInfoCompensationRangeMutableBuilder[Self <: GoogleCloudTalentV4CompensationInfoCompensationRange] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4CompensationInfoCompensationRange](x: Self) {
     
-    @scala.inline
-    def setMaxCompensation(value: Money): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
+    inline def setMaxCompensation(value: Money): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
+    inline def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
     
-    @scala.inline
-    def setMinCompensation(value: Money): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
+    inline def setMinCompensation(value: Money): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
+    inline def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
   }
 }

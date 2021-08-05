@@ -8,6 +8,5 @@ object reduxBatchedActionsStrings {
   
   @js.native
   sealed trait BATCHING_REDUCERDotBATCH extends StObject
-  @scala.inline
-  def BATCHING_REDUCERDotBATCH: BATCHING_REDUCERDotBATCH = "BATCHING_REDUCER.BATCH".asInstanceOf[BATCHING_REDUCERDotBATCH]
+  inline def BATCHING_REDUCERDotBATCH: BATCHING_REDUCERDotBATCH = "BATCHING_REDUCER.BATCH".asInstanceOf[BATCHING_REDUCERDotBATCH]
 }

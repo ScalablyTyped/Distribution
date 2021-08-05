@@ -89,8 +89,7 @@ object mod {
   }
   object RingBuffer {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       _elements: js.Array[T],
       _evictedCb: T => js.Any,
       _first: Double,
@@ -110,53 +109,37 @@ object mod {
       __obj.asInstanceOf[RingBuffer[T]]
     }
     
-    @scala.inline
-    implicit class RingBufferMutableBuilder[Self <: RingBuffer[?], T] (val x: Self & RingBuffer[T]) extends AnyVal {
+    extension [Self <: RingBuffer[?], T](x: Self & RingBuffer[T]) {
       
-      @scala.inline
-      def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))
+      inline def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeq(value: () => T): Self = StObject.set(x, "deq", js.Any.fromFunction0(value))
+      inline def setDeq(value: () => T): Self = StObject.set(x, "deq", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeqN(value: Double => js.Array[T]): Self = StObject.set(x, "deqN", js.Any.fromFunction1(value))
+      inline def setDeqN(value: Double => js.Array[T]): Self = StObject.set(x, "deqN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnq(value: T => Double): Self = StObject.set(x, "enq", js.Any.fromFunction1(value))
+      inline def setEnq(value: T => Double): Self = StObject.set(x, "enq", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFull(value: () => Boolean): Self = StObject.set(x, "isFull", js.Any.fromFunction0(value))
+      inline def setIsFull(value: () => Boolean): Self = StObject.set(x, "isFull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeekN(value: Double => js.Array[T]): Self = StObject.set(x, "peekN", js.Any.fromFunction1(value))
+      inline def setPeekN(value: Double => js.Array[T]): Self = StObject.set(x, "peekN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_elements(value: js.Array[T]): Self = StObject.set(x, "_elements", value.asInstanceOf[js.Any])
+      inline def set_elements(value: js.Array[T]): Self = StObject.set(x, "_elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_elementsVarargs(value: T*): Self = StObject.set(x, "_elements", js.Array(value :_*))
+      inline def set_elementsVarargs(value: T*): Self = StObject.set(x, "_elements", js.Array(value :_*))
       
-      @scala.inline
-      def set_evictedCb(value: T => js.Any): Self = StObject.set(x, "_evictedCb", js.Any.fromFunction1(value))
+      inline def set_evictedCb(value: T => js.Any): Self = StObject.set(x, "_evictedCb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_first(value: Double): Self = StObject.set(x, "_first", value.asInstanceOf[js.Any])
+      inline def set_first(value: Double): Self = StObject.set(x, "_first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_last(value: Double): Self = StObject.set(x, "_last", value.asInstanceOf[js.Any])
+      inline def set_last(value: Double): Self = StObject.set(x, "_last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_size(value: Double): Self = StObject.set(x, "_size", value.asInstanceOf[js.Any])
+      inline def set_size(value: Double): Self = StObject.set(x, "_size", value.asInstanceOf[js.Any])
     }
   }
 }

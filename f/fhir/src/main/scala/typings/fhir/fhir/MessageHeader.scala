@@ -79,88 +79,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MessageHeader {
   
-  @scala.inline
-  def apply(event: Coding, source: MessageHeaderSource, timestamp: instant): MessageHeader = {
+  inline def apply(event: Coding, source: MessageHeaderSource, timestamp: instant): MessageHeader = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageHeader]
   }
   
-  @scala.inline
-  implicit class MessageHeaderMutableBuilder[Self <: MessageHeader] (val x: Self) extends AnyVal {
+  extension [Self <: MessageHeader](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setDestination(value: js.Array[MessageHeaderDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: js.Array[MessageHeaderDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDestinationVarargs(value: MessageHeaderDestination*): Self = StObject.set(x, "destination", js.Array(value :_*))
+    inline def setDestinationVarargs(value: MessageHeaderDestination*): Self = StObject.set(x, "destination", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
+    inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
     
-    @scala.inline
-    def setEvent(value: Coding): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Coding): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: js.Array[Reference]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: js.Array[Reference]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setFocusVarargs(value: Reference*): Self = StObject.set(x, "focus", js.Array(value :_*))
+    inline def setFocusVarargs(value: Reference*): Self = StObject.set(x, "focus", js.Array(value :_*))
     
-    @scala.inline
-    def setReason(value: CodeableConcept): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: CodeableConcept): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setReceiver(value: Reference): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+    inline def setReceiver(value: Reference): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
+    inline def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
     
-    @scala.inline
-    def setResponse(value: MessageHeaderResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: MessageHeaderResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setResponsible(value: Reference): Self = StObject.set(x, "responsible", value.asInstanceOf[js.Any])
+    inline def setResponsible(value: Reference): Self = StObject.set(x, "responsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsibleUndefined: Self = StObject.set(x, "responsible", js.undefined)
+    inline def setResponsibleUndefined: Self = StObject.set(x, "responsible", js.undefined)
     
-    @scala.inline
-    def setSender(value: Reference): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Reference): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
-    @scala.inline
-    def setSource(value: MessageHeaderSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: MessageHeaderSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: instant): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: instant): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_timestamp(value: Element): Self = StObject.set(x, "_timestamp", value.asInstanceOf[js.Any])
+    inline def set_timestamp(value: Element): Self = StObject.set(x, "_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_timestampUndefined: Self = StObject.set(x, "_timestamp", js.undefined)
+    inline def set_timestampUndefined: Self = StObject.set(x, "_timestamp", js.undefined)
   }
 }

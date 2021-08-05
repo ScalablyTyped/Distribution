@@ -23,34 +23,25 @@ trait AlarmConfiguration extends StObject {
 }
 object AlarmConfiguration {
   
-  @scala.inline
-  def apply(): AlarmConfiguration = {
+  inline def apply(): AlarmConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlarmConfiguration]
   }
   
-  @scala.inline
-  implicit class AlarmConfigurationMutableBuilder[Self <: AlarmConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AlarmConfiguration](x: Self) {
     
-    @scala.inline
-    def setAlarms(value: AlarmList): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+    inline def setAlarms(value: AlarmList): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
+    inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
     
-    @scala.inline
-    def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "alarms", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIgnorePollAlarmFailure(value: Boolean): Self = StObject.set(x, "ignorePollAlarmFailure", value.asInstanceOf[js.Any])
+    inline def setIgnorePollAlarmFailure(value: Boolean): Self = StObject.set(x, "ignorePollAlarmFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePollAlarmFailureUndefined: Self = StObject.set(x, "ignorePollAlarmFailure", js.undefined)
+    inline def setIgnorePollAlarmFailureUndefined: Self = StObject.set(x, "ignorePollAlarmFailure", js.undefined)
   }
 }

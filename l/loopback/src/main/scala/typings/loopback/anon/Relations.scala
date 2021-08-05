@@ -12,22 +12,17 @@ trait Relations extends StObject {
 }
 object Relations {
   
-  @scala.inline
-  def apply(dataSource: js.Any): Relations = {
+  inline def apply(dataSource: js.Any): Relations = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relations]
   }
   
-  @scala.inline
-  implicit class RelationsMutableBuilder[Self <: Relations] (val x: Self) extends AnyVal {
+  extension [Self <: Relations](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelations(value: js.Any): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: js.Any): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
+    inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
   }
 }

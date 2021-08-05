@@ -40,34 +40,29 @@ object desktopCapture {
     @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.AUDIO")
     @js.native
     def AUDIO: audio_ = js.native
-    @scala.inline
-    def AUDIO_=(x: audio_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO")(x.asInstanceOf[js.Any])
+    inline def AUDIO_=(x: audio_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.SCREEN")
     @js.native
     def SCREEN: screen_ = js.native
-    @scala.inline
-    def SCREEN_=(x: screen_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
+    inline def SCREEN_=(x: screen_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.TAB")
     @js.native
     def TAB: tab_ = js.native
-    @scala.inline
-    def TAB_=(x: tab_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
+    inline def TAB_=(x: tab_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.WINDOW")
     @js.native
     def WINDOW: window_ = js.native
-    @scala.inline
-    def WINDOW_=(x: window_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOW")(x.asInstanceOf[js.Any])
+    inline def WINDOW_=(x: window_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOW")(x.asInstanceOf[js.Any])
   }
   
   /**
     * Hides desktop media picker dialog shown by chooseDesktopMedia().
     * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
     */
-  @scala.inline
-  def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelChooseDesktopMedia")(desktopMediaRequestId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelChooseDesktopMedia")(desktopMediaRequestId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Shows desktop media picker UI with the specified set of sources.
@@ -77,8 +72,7 @@ object desktopCapture {
     *                 The created streamId can be used only once and expires after a few seconds when it is not used.
     * @return Request ID to be used by cancelChooseDesktopMedia
     */
-  @scala.inline
-  def chooseDesktopMedia(
+  inline def chooseDesktopMedia(
     sources: js.Array[
       ToStringLiteral[
         AUDIO, 

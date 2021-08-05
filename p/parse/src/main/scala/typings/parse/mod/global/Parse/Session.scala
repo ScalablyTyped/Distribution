@@ -16,6 +16,5 @@ trait Session[T /* <: Attributes */]
 }
 object Session {
   
-  @scala.inline
-  def apply: SessionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Session").asInstanceOf[SessionConstructor]
+  inline def apply: SessionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Session").asInstanceOf[SessionConstructor]
 }

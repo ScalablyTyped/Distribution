@@ -10,92 +10,77 @@ object twitStrings {
   
   @js.native
   sealed trait crop extends StObject
-  @scala.inline
-  def crop: crop = "crop".asInstanceOf[crop]
+  inline def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
   sealed trait fit extends StObject
-  @scala.inline
-  def fit: fit = "fit".asInstanceOf[fit]
+  inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
   sealed trait low extends StObject
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait medium extends StObject
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait mixed
     extends StObject
        with ResultType
-  @scala.inline
-  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait popular
     extends StObject
        with ResultType
-  @scala.inline
-  def popular: popular = "popular".asInstanceOf[popular]
+  inline def popular: popular = "popular".asInstanceOf[popular]
   
   @js.native
   sealed trait `private` extends StObject
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait public extends StObject
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait recent
     extends StObject
        with ResultType
-  @scala.inline
-  def recent: recent = "recent".asInstanceOf[recent]
+  inline def recent: recent = "recent".asInstanceOf[recent]
   
   @js.native
   sealed trait site
     extends StObject
        with StreamEndpoint
-  @scala.inline
-  def site: site = "site".asInstanceOf[site]
+  inline def site: site = "site".asInstanceOf[site]
   
   @js.native
   sealed trait statusesSlashfilter
     extends StObject
        with StreamEndpoint
-  @scala.inline
-  def statusesSlashfilter: statusesSlashfilter = "statuses/filter".asInstanceOf[statusesSlashfilter]
+  inline def statusesSlashfilter: statusesSlashfilter = "statuses/filter".asInstanceOf[statusesSlashfilter]
   
   @js.native
   sealed trait statusesSlashfirehose
     extends StObject
        with StreamEndpoint
-  @scala.inline
-  def statusesSlashfirehose: statusesSlashfirehose = "statuses/firehose".asInstanceOf[statusesSlashfirehose]
+  inline def statusesSlashfirehose: statusesSlashfirehose = "statuses/firehose".asInstanceOf[statusesSlashfirehose]
   
   @js.native
   sealed trait statusesSlashsample
     extends StObject
        with StreamEndpoint
-  @scala.inline
-  def statusesSlashsample: statusesSlashsample = "statuses/sample".asInstanceOf[statusesSlashsample]
+  inline def statusesSlashsample: statusesSlashsample = "statuses/sample".asInstanceOf[statusesSlashsample]
   
   @js.native
   sealed trait user
     extends StObject
        with StreamEndpoint
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
 }

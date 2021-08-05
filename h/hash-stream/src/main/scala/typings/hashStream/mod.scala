@@ -9,18 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(filename: String, algorithm: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def apply(
+  inline def apply(filename: String, algorithm: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def apply(
     filename: String,
     algorithm: String,
     callback: js.Function2[/* error */ Error | Null, /* hash */ Buffer, Unit]
   ): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def apply(stream: Readable, algorithm: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def apply(
+  inline def apply(stream: Readable, algorithm: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def apply(
     stream: Readable,
     algorithm: String,
     callback: js.Function2[/* error */ js.Any, /* hash */ Buffer, Unit]

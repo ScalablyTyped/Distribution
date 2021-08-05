@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnimationEasingType extends StObject
 object AnimationEasingType {
   
-  @scala.inline
-  def ease: typings.recharts.rechartsStrings.ease = "ease".asInstanceOf[typings.recharts.rechartsStrings.ease]
+  inline def ease: typings.recharts.rechartsStrings.ease = "ease".asInstanceOf[typings.recharts.rechartsStrings.ease]
   
-  @scala.inline
-  def `ease-in`: typings.recharts.rechartsStrings.`ease-in` = "ease-in".asInstanceOf[typings.recharts.rechartsStrings.`ease-in`]
+  inline def `ease-in`: typings.recharts.rechartsStrings.`ease-in` = "ease-in".asInstanceOf[typings.recharts.rechartsStrings.`ease-in`]
   
-  @scala.inline
-  def `ease-in-out`: typings.recharts.rechartsStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.recharts.rechartsStrings.`ease-in-out`]
+  inline def `ease-in-out`: typings.recharts.rechartsStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.recharts.rechartsStrings.`ease-in-out`]
   
-  @scala.inline
-  def `ease-out`: typings.recharts.rechartsStrings.`ease-out` = "ease-out".asInstanceOf[typings.recharts.rechartsStrings.`ease-out`]
+  inline def `ease-out`: typings.recharts.rechartsStrings.`ease-out` = "ease-out".asInstanceOf[typings.recharts.rechartsStrings.`ease-out`]
   
-  @scala.inline
-  def linear: typings.recharts.rechartsStrings.linear = "linear".asInstanceOf[typings.recharts.rechartsStrings.linear]
+  inline def linear: typings.recharts.rechartsStrings.linear = "linear".asInstanceOf[typings.recharts.rechartsStrings.linear]
 }

@@ -13,16 +13,13 @@ trait AddInspectedHeapObjectRequest extends StObject {
 }
 object AddInspectedHeapObjectRequest {
   
-  @scala.inline
-  def apply(heapObjectId: HeapSnapshotObjectId): AddInspectedHeapObjectRequest = {
+  inline def apply(heapObjectId: HeapSnapshotObjectId): AddInspectedHeapObjectRequest = {
     val __obj = js.Dynamic.literal(heapObjectId = heapObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddInspectedHeapObjectRequest]
   }
   
-  @scala.inline
-  implicit class AddInspectedHeapObjectRequestMutableBuilder[Self <: AddInspectedHeapObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddInspectedHeapObjectRequest](x: Self) {
     
-    @scala.inline
-    def setHeapObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapObjectId", value.asInstanceOf[js.Any])
+    inline def setHeapObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapObjectId", value.asInstanceOf[js.Any])
   }
 }

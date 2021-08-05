@@ -24,43 +24,31 @@ trait Gateway extends StObject {
 }
 object Gateway {
   
-  @scala.inline
-  def apply(): Gateway = {
+  inline def apply(): Gateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Gateway]
   }
   
-  @scala.inline
-  implicit class GatewayMutableBuilder[Self <: Gateway] (val x: Self) extends AnyVal {
+  extension [Self <: Gateway](x: Self) {
     
-    @scala.inline
-    def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
+    inline def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway_idUndefined: Self = StObject.set(x, "gateway_id", js.undefined)
+    inline def setGateway_idUndefined: Self = StObject.set(x, "gateway_id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
-    @scala.inline
-    def setToken_id(value: String): Self = StObject.set(x, "token_id", value.asInstanceOf[js.Any])
+    inline def setToken_id(value: String): Self = StObject.set(x, "token_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken_idUndefined: Self = StObject.set(x, "token_id", js.undefined)
+    inline def setToken_idUndefined: Self = StObject.set(x, "token_id", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait NewView extends StObject {
 }
 object NewView {
   
-  @scala.inline
-  def apply(Cancel: Boolean, NewView: js.Any): NewView = {
+  inline def apply(Cancel: Boolean, NewView: js.Any): NewView = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], NewView = NewView.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewView]
   }
   
-  @scala.inline
-  implicit class NewViewMutableBuilder[Self <: NewView] (val x: Self) extends AnyVal {
+  extension [Self <: NewView](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewView(value: js.Any): Self = StObject.set(x, "NewView", value.asInstanceOf[js.Any])
+    inline def setNewView(value: js.Any): Self = StObject.set(x, "NewView", value.asInstanceOf[js.Any])
   }
 }

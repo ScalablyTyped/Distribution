@@ -33,56 +33,40 @@ object anon {
   }
   object FieldNameSize {
     
-    @scala.inline
-    def apply(): FieldNameSize = {
+    inline def apply(): FieldNameSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldNameSize]
     }
     
-    @scala.inline
-    implicit class FieldNameSizeMutableBuilder[Self <: FieldNameSize] (val x: Self) extends AnyVal {
+    extension [Self <: FieldNameSize](x: Self) {
       
-      @scala.inline
-      def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
+      inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
+      inline def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
       
-      @scala.inline
-      def setFieldSize(value: Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
+      inline def setFieldSize(value: Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
+      inline def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
       
-      @scala.inline
-      def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setHeaderPairs(value: Double): Self = StObject.set(x, "headerPairs", value.asInstanceOf[js.Any])
+      inline def setHeaderPairs(value: Double): Self = StObject.set(x, "headerPairs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPairsUndefined: Self = StObject.set(x, "headerPairs", js.undefined)
+      inline def setHeaderPairsUndefined: Self = StObject.set(x, "headerPairs", js.undefined)
       
-      @scala.inline
-      def setParts(value: Double): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: Double): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+      inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     }
   }
   
@@ -111,74 +95,52 @@ object anon {
   }
   object PartialFile {
     
-    @scala.inline
-    def apply(): PartialFile = {
+    inline def apply(): PartialFile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFile]
     }
     
-    @scala.inline
-    implicit class PartialFileMutableBuilder[Self <: PartialFile] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFile](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFieldname(value: String): Self = StObject.set(x, "fieldname", value.asInstanceOf[js.Any])
+      inline def setFieldname(value: String): Self = StObject.set(x, "fieldname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldnameUndefined: Self = StObject.set(x, "fieldname", js.undefined)
+      inline def setFieldnameUndefined: Self = StObject.set(x, "fieldname", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+      inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
+      inline def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
       
-      @scala.inline
-      def setOriginalname(value: String): Self = StObject.set(x, "originalname", value.asInstanceOf[js.Any])
+      inline def setOriginalname(value: String): Self = StObject.set(x, "originalname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalnameUndefined: Self = StObject.set(x, "originalname", js.undefined)
+      inline def setOriginalnameUndefined: Self = StObject.set(x, "originalname", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStream(value: Readable): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Readable): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }
   }
 }

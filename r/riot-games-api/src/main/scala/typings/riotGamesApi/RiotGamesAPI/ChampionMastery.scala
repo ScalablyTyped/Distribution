@@ -31,8 +31,7 @@ object ChampionMastery {
   }
   object ChampionMasteryDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       championId: Double,
       championLevel: Double,
       championPoints: Double,
@@ -47,35 +46,25 @@ object ChampionMastery {
       __obj.asInstanceOf[ChampionMasteryDto]
     }
     
-    @scala.inline
-    implicit class ChampionMasteryDtoMutableBuilder[Self <: ChampionMasteryDto] (val x: Self) extends AnyVal {
+    extension [Self <: ChampionMasteryDto](x: Self) {
       
-      @scala.inline
-      def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+      inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionLevel(value: Double): Self = StObject.set(x, "championLevel", value.asInstanceOf[js.Any])
+      inline def setChampionLevel(value: Double): Self = StObject.set(x, "championLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionPoints(value: Double): Self = StObject.set(x, "championPoints", value.asInstanceOf[js.Any])
+      inline def setChampionPoints(value: Double): Self = StObject.set(x, "championPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionPointsSinceLastLevel(value: Double): Self = StObject.set(x, "championPointsSinceLastLevel", value.asInstanceOf[js.Any])
+      inline def setChampionPointsSinceLastLevel(value: Double): Self = StObject.set(x, "championPointsSinceLastLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionPointsUntilNextLevel(value: Double): Self = StObject.set(x, "championPointsUntilNextLevel", value.asInstanceOf[js.Any])
+      inline def setChampionPointsUntilNextLevel(value: Double): Self = StObject.set(x, "championPointsUntilNextLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChestGranted(value: Boolean): Self = StObject.set(x, "chestGranted", value.asInstanceOf[js.Any])
+      inline def setChestGranted(value: Boolean): Self = StObject.set(x, "chestGranted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighestGrade(value: String): Self = StObject.set(x, "highestGrade", value.asInstanceOf[js.Any])
+      inline def setHighestGrade(value: String): Self = StObject.set(x, "highestGrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPlayTime(value: Double): Self = StObject.set(x, "lastPlayTime", value.asInstanceOf[js.Any])
+      inline def setLastPlayTime(value: Double): Self = StObject.set(x, "lastPlayTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerId(value: Double): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+      inline def setPlayerId(value: Double): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
   }
 }

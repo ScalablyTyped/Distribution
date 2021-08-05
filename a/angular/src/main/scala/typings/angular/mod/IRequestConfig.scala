@@ -38,31 +38,23 @@ trait IRequestConfig
 }
 object IRequestConfig {
   
-  @scala.inline
-  def apply(method: String, url: String): IRequestConfig = {
+  inline def apply(method: String, url: String): IRequestConfig = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestConfig]
   }
   
-  @scala.inline
-  implicit class IRequestConfigMutableBuilder[Self <: IRequestConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IRequestConfig](x: Self) {
     
-    @scala.inline
-    def setEventHandlers(value: StringDictionary[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
+    inline def setEventHandlers(value: StringDictionary[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
+    inline def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadEventHandlers(value: StringDictionary[EventListenerOrEventListenerObject]): Self = StObject.set(x, "uploadEventHandlers", value.asInstanceOf[js.Any])
+    inline def setUploadEventHandlers(value: StringDictionary[EventListenerOrEventListenerObject]): Self = StObject.set(x, "uploadEventHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadEventHandlersUndefined: Self = StObject.set(x, "uploadEventHandlers", js.undefined)
+    inline def setUploadEventHandlersUndefined: Self = StObject.set(x, "uploadEventHandlers", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -32,37 +32,27 @@ trait SchemaOperationPerDevice extends StObject {
 }
 object SchemaOperationPerDevice {
   
-  @scala.inline
-  def apply(): SchemaOperationPerDevice = {
+  inline def apply(): SchemaOperationPerDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperationPerDevice]
   }
   
-  @scala.inline
-  implicit class SchemaOperationPerDeviceMutableBuilder[Self <: SchemaOperationPerDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperationPerDevice](x: Self) {
     
-    @scala.inline
-    def setClaim(value: SchemaPartnerClaim): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
+    inline def setClaim(value: SchemaPartnerClaim): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
+    inline def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
     
-    @scala.inline
-    def setResult(value: SchemaPerDeviceStatusInBatch): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaPerDeviceStatusInBatch): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setUnclaim(value: SchemaPartnerUnclaim): Self = StObject.set(x, "unclaim", value.asInstanceOf[js.Any])
+    inline def setUnclaim(value: SchemaPartnerUnclaim): Self = StObject.set(x, "unclaim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnclaimUndefined: Self = StObject.set(x, "unclaim", js.undefined)
+    inline def setUnclaimUndefined: Self = StObject.set(x, "unclaim", js.undefined)
     
-    @scala.inline
-    def setUpdateMetadata(value: SchemaUpdateMetadataArguments): Self = StObject.set(x, "updateMetadata", value.asInstanceOf[js.Any])
+    inline def setUpdateMetadata(value: SchemaUpdateMetadataArguments): Self = StObject.set(x, "updateMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMetadataUndefined: Self = StObject.set(x, "updateMetadata", js.undefined)
+    inline def setUpdateMetadataUndefined: Self = StObject.set(x, "updateMetadata", js.undefined)
   }
 }

@@ -110,23 +110,18 @@ object mod {
   }
   object Iterator {
     
-    @scala.inline
-    def apply[T](data: () => T, next: () => T, prev: () => T): Iterator[T] = {
+    inline def apply[T](data: () => T, next: () => T, prev: () => T): Iterator[T] = {
       val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev))
       __obj.asInstanceOf[Iterator[T]]
     }
     
-    @scala.inline
-    implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
+    extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
       
-      @scala.inline
-      def setData(value: () => T): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => T): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => T): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => T): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrev(value: () => T): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+      inline def setPrev(value: () => T): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     }
   }
   
@@ -156,8 +151,7 @@ object mod {
   }
   object TreeBase {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clear: () => Unit,
       each: Callback[T] => Unit,
       find: T => T,
@@ -174,41 +168,29 @@ object mod {
       __obj.asInstanceOf[TreeBase[T]]
     }
     
-    @scala.inline
-    implicit class TreeBaseMutableBuilder[Self <: TreeBase[?], T] (val x: Self & TreeBase[T]) extends AnyVal {
+    extension [Self <: TreeBase[?], T](x: Self & TreeBase[T]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEach(value: Callback[T] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+      inline def setEach(value: Callback[T] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFind(value: T => T): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: T => T): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindIter(value: T => Iterator[T]): Self = StObject.set(x, "findIter", js.Any.fromFunction1(value))
+      inline def setFindIter(value: T => Iterator[T]): Self = StObject.set(x, "findIter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIterator(value: () => Iterator[T]): Self = StObject.set(x, "iterator", js.Any.fromFunction0(value))
+      inline def setIterator(value: () => Iterator[T]): Self = StObject.set(x, "iterator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLowerBound(value: T => Iterator[T]): Self = StObject.set(x, "lowerBound", js.Any.fromFunction1(value))
+      inline def setLowerBound(value: T => Iterator[T]): Self = StObject.set(x, "lowerBound", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMax(value: () => T): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
+      inline def setMax(value: () => T): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMin(value: () => T): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
+      inline def setMin(value: () => T): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReach(value: Callback[T] => Unit): Self = StObject.set(x, "reach", js.Any.fromFunction1(value))
+      inline def setReach(value: Callback[T] => Unit): Self = StObject.set(x, "reach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpperBound(value: T => Iterator[T]): Self = StObject.set(x, "upperBound", js.Any.fromFunction1(value))
+      inline def setUpperBound(value: T => Iterator[T]): Self = StObject.set(x, "upperBound", js.Any.fromFunction1(value))
     }
   }
 }

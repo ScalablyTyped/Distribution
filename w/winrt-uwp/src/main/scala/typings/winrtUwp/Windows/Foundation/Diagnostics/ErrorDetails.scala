@@ -19,22 +19,17 @@ trait ErrorDetails extends StObject {
 }
 object ErrorDetails {
   
-  @scala.inline
-  def apply(description: String, helpUri: Uri, longDescription: String): ErrorDetails = {
+  inline def apply(description: String, helpUri: Uri, longDescription: String): ErrorDetails = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], helpUri = helpUri.asInstanceOf[js.Any], longDescription = longDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorDetails]
   }
   
-  @scala.inline
-  implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorDetails](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUri(value: Uri): Self = StObject.set(x, "helpUri", value.asInstanceOf[js.Any])
+    inline def setHelpUri(value: Uri): Self = StObject.set(x, "helpUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
+    inline def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
   }
 }

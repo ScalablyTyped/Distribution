@@ -23,31 +23,23 @@ trait ExportProjectResult extends StObject {
 }
 object ExportProjectResult {
   
-  @scala.inline
-  def apply(): ExportProjectResult = {
+  inline def apply(): ExportProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportProjectResult]
   }
   
-  @scala.inline
-  implicit class ExportProjectResultMutableBuilder[Self <: ExportProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExportProjectResult](x: Self) {
     
-    @scala.inline
-    def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
-    @scala.inline
-    def setShareUrl(value: ShareUrl): Self = StObject.set(x, "shareUrl", value.asInstanceOf[js.Any])
+    inline def setShareUrl(value: ShareUrl): Self = StObject.set(x, "shareUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareUrlUndefined: Self = StObject.set(x, "shareUrl", js.undefined)
+    inline def setShareUrlUndefined: Self = StObject.set(x, "shareUrl", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

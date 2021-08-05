@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoCompleteElementType extends StObject
 object AutoCompleteElementType {
   
-  @scala.inline
-  def field: typings.jsoneditor.jsoneditorStrings.field = "field".asInstanceOf[typings.jsoneditor.jsoneditorStrings.field]
+  inline def field: typings.jsoneditor.jsoneditorStrings.field = "field".asInstanceOf[typings.jsoneditor.jsoneditorStrings.field]
   
-  @scala.inline
-  def value: typings.jsoneditor.jsoneditorStrings.value = "value".asInstanceOf[typings.jsoneditor.jsoneditorStrings.value]
+  inline def value: typings.jsoneditor.jsoneditorStrings.value = "value".asInstanceOf[typings.jsoneditor.jsoneditorStrings.value]
 }

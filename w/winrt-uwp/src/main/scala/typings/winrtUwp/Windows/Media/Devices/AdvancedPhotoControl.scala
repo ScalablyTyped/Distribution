@@ -25,8 +25,7 @@ trait AdvancedPhotoControl extends StObject {
 }
 object AdvancedPhotoControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configure: AdvancedPhotoCaptureSettings => Unit,
     mode: AdvancedPhotoMode,
     supported: Boolean,
@@ -36,19 +35,14 @@ object AdvancedPhotoControl {
     __obj.asInstanceOf[AdvancedPhotoControl]
   }
   
-  @scala.inline
-  implicit class AdvancedPhotoControlMutableBuilder[Self <: AdvancedPhotoControl] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedPhotoControl](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: AdvancedPhotoCaptureSettings => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+    inline def setConfigure(value: AdvancedPhotoCaptureSettings => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedModes(value: IVectorView[AdvancedPhotoMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: IVectorView[AdvancedPhotoMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
   }
 }

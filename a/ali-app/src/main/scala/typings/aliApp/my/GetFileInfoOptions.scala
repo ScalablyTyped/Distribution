@@ -21,28 +21,21 @@ trait GetFileInfoOptions
 }
 object GetFileInfoOptions {
   
-  @scala.inline
-  def apply(apFilePath: String): GetFileInfoOptions = {
+  inline def apply(apFilePath: String): GetFileInfoOptions = {
     val __obj = js.Dynamic.literal(apFilePath = apFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetFileInfoOptionsMutableBuilder[Self <: GetFileInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileInfoOptions](x: Self) {
     
-    @scala.inline
-    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
+    inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestAlgorithm(value: md5 | sha1): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+    inline def setDigestAlgorithm(value: md5 | sha1): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+    inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* options */ GetFileInfoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* options */ GetFileInfoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

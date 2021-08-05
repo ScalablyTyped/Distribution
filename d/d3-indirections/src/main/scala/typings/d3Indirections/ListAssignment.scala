@@ -17,16 +17,13 @@ trait ListAssignment
 }
 object ListAssignment {
   
-  @scala.inline
-  def apply(resourceIndex: Double, uid: String): ListAssignment = {
+  inline def apply(resourceIndex: Double, uid: String): ListAssignment = {
     val __obj = js.Dynamic.literal(resourceIndex = resourceIndex.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssignment]
   }
   
-  @scala.inline
-  implicit class ListAssignmentMutableBuilder[Self <: ListAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssignment](x: Self) {
     
-    @scala.inline
-    def setResourceIndex(value: Double): Self = StObject.set(x, "resourceIndex", value.asInstanceOf[js.Any])
+    inline def setResourceIndex(value: Double): Self = StObject.set(x, "resourceIndex", value.asInstanceOf[js.Any])
   }
 }

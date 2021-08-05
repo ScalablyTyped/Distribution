@@ -46,23 +46,18 @@ object entryValueMod {
   }
   object EntryValue {
     
-    @scala.inline
-    def apply(value: String): EntryValue = {
+    inline def apply(value: String): EntryValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryValue]
     }
     
-    @scala.inline
-    implicit class EntryValueMutableBuilder[Self <: EntryValue] (val x: Self) extends AnyVal {
+    extension [Self <: EntryValue](x: Self) {
       
-      @scala.inline
-      def setTtl(value: EntryTtl): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: EntryTtl): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

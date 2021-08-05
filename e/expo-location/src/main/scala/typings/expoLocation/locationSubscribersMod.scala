@@ -21,8 +21,7 @@ object locationSubscribersMod {
   @js.native
   val LocationSubscriber: Subscriber[LocationCallback] = js.native
   
-  @scala.inline
-  def getCurrentWatchId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_getCurrentWatchId")().asInstanceOf[Double]
+  inline def getCurrentWatchId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_getCurrentWatchId")().asInstanceOf[Double]
   
   trait EventObject
     extends StObject
@@ -32,29 +31,26 @@ object locationSubscribersMod {
   }
   object EventObject {
     
-    @scala.inline
-    def apply(watchId: Double): EventObject = {
+    inline def apply(watchId: Double): EventObject = {
       val __obj = js.Dynamic.literal(watchId = watchId.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventObject]
     }
     
-    @scala.inline
-    implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+    extension [Self <: EventObject](x: Self) {
       
-      @scala.inline
-      def setWatchId(value: Double): Self = StObject.set(x, "watchId", value.asInstanceOf[js.Any])
+      inline def setWatchId(value: Double): Self = StObject.set(x, "watchId", value.asInstanceOf[js.Any])
     }
   }
   
   trait Subscriber[CallbackType /* <: LocationCallback | LocationHeadingCallback */] extends StObject {
     
-    var callbacks: js.Any
+    /* private */ var callbacks: js.Any
     
-    var eventDataField: js.Any
+    /* private */ var eventDataField: js.Any
     
-    var eventName: js.Any
+    /* private */ var eventName: js.Any
     
-    var eventSubscription: js.Any
+    /* private */ var eventSubscription: js.Any
     
     def maybeInitializeSubscription(): Unit
     
@@ -72,8 +68,7 @@ object locationSubscribersMod {
   }
   object Subscriber {
     
-    @scala.inline
-    def apply[CallbackType /* <: LocationCallback | LocationHeadingCallback */](
+    inline def apply[CallbackType /* <: LocationCallback | LocationHeadingCallback */](
       callbacks: js.Any,
       eventDataField: js.Any,
       eventName: js.Any,
@@ -87,32 +82,23 @@ object locationSubscribersMod {
       __obj.asInstanceOf[Subscriber[CallbackType]]
     }
     
-    @scala.inline
-    implicit class SubscriberMutableBuilder[Self <: Subscriber[?], CallbackType /* <: LocationCallback | LocationHeadingCallback */] (val x: Self & Subscriber[CallbackType]) extends AnyVal {
+    extension [Self <: Subscriber[?], CallbackType /* <: LocationCallback | LocationHeadingCallback */](x: Self & Subscriber[CallbackType]) {
       
-      @scala.inline
-      def setCallbacks(value: js.Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: js.Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDataField(value: js.Any): Self = StObject.set(x, "eventDataField", value.asInstanceOf[js.Any])
+      inline def setEventDataField(value: js.Any): Self = StObject.set(x, "eventDataField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: js.Any): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: js.Any): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSubscription(value: js.Any): Self = StObject.set(x, "eventSubscription", value.asInstanceOf[js.Any])
+      inline def setEventSubscription(value: js.Any): Self = StObject.set(x, "eventSubscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaybeInitializeSubscription(value: () => Unit): Self = StObject.set(x, "maybeInitializeSubscription", js.Any.fromFunction0(value))
+      inline def setMaybeInitializeSubscription(value: () => Unit): Self = StObject.set(x, "maybeInitializeSubscription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterCallback(value: CallbackType => Double): Self = StObject.set(x, "registerCallback", js.Any.fromFunction1(value))
+      inline def setRegisterCallback(value: CallbackType => Double): Self = StObject.set(x, "registerCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrigger(value: EventObject => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
+      inline def setTrigger(value: EventObject => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnregisterCallback(value: Double => Unit): Self = StObject.set(x, "unregisterCallback", js.Any.fromFunction1(value))
+      inline def setUnregisterCallback(value: Double => Unit): Self = StObject.set(x, "unregisterCallback", js.Any.fromFunction1(value))
     }
   }
 }

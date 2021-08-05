@@ -13,22 +13,17 @@ trait InferenceAcceleratorInfo extends StObject {
 }
 object InferenceAcceleratorInfo {
   
-  @scala.inline
-  def apply(): InferenceAcceleratorInfo = {
+  inline def apply(): InferenceAcceleratorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InferenceAcceleratorInfo]
   }
   
-  @scala.inline
-  implicit class InferenceAcceleratorInfoMutableBuilder[Self <: InferenceAcceleratorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InferenceAcceleratorInfo](x: Self) {
     
-    @scala.inline
-    def setAccelerators(value: InferenceDeviceInfoList): Self = StObject.set(x, "Accelerators", value.asInstanceOf[js.Any])
+    inline def setAccelerators(value: InferenceDeviceInfoList): Self = StObject.set(x, "Accelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
     
-    @scala.inline
-    def setAcceleratorsVarargs(value: InferenceDeviceInfo*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: InferenceDeviceInfo*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
   }
 }

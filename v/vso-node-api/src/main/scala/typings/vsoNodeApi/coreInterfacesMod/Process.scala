@@ -20,8 +20,7 @@ trait Process
 }
 object Process {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     description: String,
     id: String,
@@ -35,22 +34,16 @@ object Process {
     __obj.asInstanceOf[Process]
   }
   
-  @scala.inline
-  implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+  extension [Self <: Process](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ProcessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProcessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

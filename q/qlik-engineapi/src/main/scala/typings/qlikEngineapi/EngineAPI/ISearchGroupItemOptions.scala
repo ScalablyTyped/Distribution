@@ -34,22 +34,17 @@ trait ISearchGroupItemOptions extends StObject {
 }
 object ISearchGroupItemOptions {
   
-  @scala.inline
-  def apply(qCount: Double, qGroupItemType: IGenericObject, qOffset: Double): ISearchGroupItemOptions = {
+  inline def apply(qCount: Double, qGroupItemType: IGenericObject, qOffset: Double): ISearchGroupItemOptions = {
     val __obj = js.Dynamic.literal(qCount = qCount.asInstanceOf[js.Any], qGroupItemType = qGroupItemType.asInstanceOf[js.Any], qOffset = qOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchGroupItemOptions]
   }
   
-  @scala.inline
-  implicit class ISearchGroupItemOptionsMutableBuilder[Self <: ISearchGroupItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchGroupItemOptions](x: Self) {
     
-    @scala.inline
-    def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
+    inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupItemType(value: IGenericObject): Self = StObject.set(x, "qGroupItemType", value.asInstanceOf[js.Any])
+    inline def setQGroupItemType(value: IGenericObject): Self = StObject.set(x, "qGroupItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOffset(value: Double): Self = StObject.set(x, "qOffset", value.asInstanceOf[js.Any])
+    inline def setQOffset(value: Double): Self = StObject.set(x, "qOffset", value.asInstanceOf[js.Any])
   }
 }

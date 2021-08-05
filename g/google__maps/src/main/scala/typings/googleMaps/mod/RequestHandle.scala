@@ -22,20 +22,16 @@ trait RequestHandle[T] extends StObject {
 }
 object RequestHandle {
   
-  @scala.inline
-  def apply[T](cancel: () => Unit, `finally`: js.Function0[Unit] => RequestHandle[T]): RequestHandle[T] = {
+  inline def apply[T](cancel: () => Unit, `finally`: js.Function0[Unit] => RequestHandle[T]): RequestHandle[T] = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
     __obj.updateDynamic("finally")(js.Any.fromFunction1(`finally`))
     __obj.asInstanceOf[RequestHandle[T]]
   }
   
-  @scala.inline
-  implicit class RequestHandleMutableBuilder[Self <: RequestHandle[?], T] (val x: Self & RequestHandle[T]) extends AnyVal {
+  extension [Self <: RequestHandle[?], T](x: Self & RequestHandle[T]) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: js.Function0[Unit] => RequestHandle[T]): Self = StObject.set(x, "finally", js.Any.fromFunction1(value))
+    inline def setFinally(value: js.Function0[Unit] => RequestHandle[T]): Self = StObject.set(x, "finally", js.Any.fromFunction1(value))
   }
 }

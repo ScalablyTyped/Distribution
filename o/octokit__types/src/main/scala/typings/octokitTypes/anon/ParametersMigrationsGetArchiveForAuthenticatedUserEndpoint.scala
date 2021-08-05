@@ -17,8 +17,7 @@ trait ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint extends StObjec
 }
 object ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsGetArchiveForAuthenticatedUserEndpoint,
     request: MigrationsGetArchiveForAuthenticatedUserRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsGetArchiveForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsGetArchiveForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsGetArchiveForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsGetArchiveForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsGetArchiveForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

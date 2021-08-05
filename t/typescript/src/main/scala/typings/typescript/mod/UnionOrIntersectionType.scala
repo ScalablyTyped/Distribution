@@ -12,8 +12,7 @@ trait UnionOrIntersectionType
 }
 object UnionOrIntersectionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -44,13 +43,10 @@ object UnionOrIntersectionType {
     __obj.asInstanceOf[UnionOrIntersectionType]
   }
   
-  @scala.inline
-  implicit class UnionOrIntersectionTypeMutableBuilder[Self <: UnionOrIntersectionType] (val x: Self) extends AnyVal {
+  extension [Self <: UnionOrIntersectionType](x: Self) {
     
-    @scala.inline
-    def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

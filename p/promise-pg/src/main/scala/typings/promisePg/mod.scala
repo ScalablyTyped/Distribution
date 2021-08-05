@@ -77,13 +77,10 @@ object mod {
     var promise: Promise[QueryResult] = js.native
   }
   
-  @scala.inline
-  def connect(connection: String): Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connection.asInstanceOf[js.Any]).asInstanceOf[Promise[Client]]
-  @scala.inline
-  def connect(connection: typings.pg.mod.ClientConfig): Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connection.asInstanceOf[js.Any]).asInstanceOf[Promise[Client]]
+  inline def connect(connection: String): Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connection.asInstanceOf[js.Any]).asInstanceOf[Promise[Client]]
+  inline def connect(connection: typings.pg.mod.ClientConfig): Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connection.asInstanceOf[js.Any]).asInstanceOf[Promise[Client]]
   
-  @scala.inline
-  def end(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Promise[Unit]]
+  inline def end(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Promise[Unit]]
   
   object raw {
     
@@ -154,22 +151,17 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayParser")(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayParser")(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
       
       @JSImport("promise-pg", "raw.types.builtins")
       @js.native
       val builtins: TypesBuiltins = js.native
       
-      @scala.inline
-      def getTypeParser(id: TypeId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      @scala.inline
-      def getTypeParser(id: TypeId, format: TypeFormat): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def getTypeParser(id: TypeId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def getTypeParser(id: TypeId, format: TypeFormat): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @scala.inline
-      def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
   
@@ -183,20 +175,16 @@ object mod {
   }
   object QueryConfig {
     
-    @scala.inline
-    def apply(text: String): QueryConfig = {
+    inline def apply(text: String): QueryConfig = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryConfig]
     }
     
-    @scala.inline
-    implicit class QueryConfigMutableBuilder[Self <: QueryConfig] (val x: Self) extends AnyVal {
+    extension [Self <: QueryConfig](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     }
   }
   

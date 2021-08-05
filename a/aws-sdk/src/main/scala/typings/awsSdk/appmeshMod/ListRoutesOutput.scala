@@ -18,25 +18,19 @@ trait ListRoutesOutput extends StObject {
 }
 object ListRoutesOutput {
   
-  @scala.inline
-  def apply(routes: RouteList): ListRoutesOutput = {
+  inline def apply(routes: RouteList): ListRoutesOutput = {
     val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRoutesOutput]
   }
   
-  @scala.inline
-  implicit class ListRoutesOutputMutableBuilder[Self <: ListRoutesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRoutesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: RouteList): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: RouteList): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: RouteRef*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: RouteRef*): Self = StObject.set(x, "routes", js.Array(value :_*))
   }
 }

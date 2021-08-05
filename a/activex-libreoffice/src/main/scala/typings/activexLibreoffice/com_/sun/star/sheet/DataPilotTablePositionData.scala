@@ -38,19 +38,15 @@ trait DataPilotTablePositionData extends StObject {
 }
 object DataPilotTablePositionData {
   
-  @scala.inline
-  def apply(PositionData: js.Any, PositionType: Double): DataPilotTablePositionData = {
+  inline def apply(PositionData: js.Any, PositionType: Double): DataPilotTablePositionData = {
     val __obj = js.Dynamic.literal(PositionData = PositionData.asInstanceOf[js.Any], PositionType = PositionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotTablePositionData]
   }
   
-  @scala.inline
-  implicit class DataPilotTablePositionDataMutableBuilder[Self <: DataPilotTablePositionData] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotTablePositionData](x: Self) {
     
-    @scala.inline
-    def setPositionData(value: js.Any): Self = StObject.set(x, "PositionData", value.asInstanceOf[js.Any])
+    inline def setPositionData(value: js.Any): Self = StObject.set(x, "PositionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionType(value: Double): Self = StObject.set(x, "PositionType", value.asInstanceOf[js.Any])
+    inline def setPositionType(value: Double): Self = StObject.set(x, "PositionType", value.asInstanceOf[js.Any])
   }
 }

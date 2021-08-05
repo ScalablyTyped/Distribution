@@ -17,16 +17,13 @@ trait EmailIdentifier
 }
 object EmailIdentifier {
   
-  @scala.inline
-  def apply(email: String): EmailIdentifier = {
+  inline def apply(email: String): EmailIdentifier = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailIdentifier]
   }
   
-  @scala.inline
-  implicit class EmailIdentifierMutableBuilder[Self <: EmailIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: EmailIdentifier](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentChangeType extends StObject
 object DocumentChangeType {
   
-  @scala.inline
-  def added: typings.firebase.firebaseStrings.added = "added".asInstanceOf[typings.firebase.firebaseStrings.added]
+  inline def added: typings.firebase.firebaseStrings.added = "added".asInstanceOf[typings.firebase.firebaseStrings.added]
   
-  @scala.inline
-  def modified: typings.firebase.firebaseStrings.modified = "modified".asInstanceOf[typings.firebase.firebaseStrings.modified]
+  inline def modified: typings.firebase.firebaseStrings.modified = "modified".asInstanceOf[typings.firebase.firebaseStrings.modified]
   
-  @scala.inline
-  def removed: typings.firebase.firebaseStrings.removed = "removed".asInstanceOf[typings.firebase.firebaseStrings.removed]
+  inline def removed: typings.firebase.firebaseStrings.removed = "removed".asInstanceOf[typings.firebase.firebaseStrings.removed]
 }

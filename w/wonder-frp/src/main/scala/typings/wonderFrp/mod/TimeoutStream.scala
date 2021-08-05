@@ -17,6 +17,5 @@ object TimeoutStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(time: Double, scheduler: typings.wonderFrp.schedulerMod.Scheduler): typings.wonderFrp.timeoutStreamMod.TimeoutStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.timeoutStreamMod.TimeoutStream]
+  inline def create(time: Double, scheduler: typings.wonderFrp.schedulerMod.Scheduler): typings.wonderFrp.timeoutStreamMod.TimeoutStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.timeoutStreamMod.TimeoutStream]
 }

@@ -57,61 +57,43 @@ trait SchemaAchievementConfiguration extends StObject {
 }
 object SchemaAchievementConfiguration {
   
-  @scala.inline
-  def apply(): SchemaAchievementConfiguration = {
+  inline def apply(): SchemaAchievementConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementConfigurationMutableBuilder[Self <: SchemaAchievementConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementConfiguration](x: Self) {
     
-    @scala.inline
-    def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
+    inline def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
+    inline def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
     
-    @scala.inline
-    def setDraft(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPublished(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+    inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
-    @scala.inline
-    def setStepsToUnlock(value: Double): Self = StObject.set(x, "stepsToUnlock", value.asInstanceOf[js.Any])
+    inline def setStepsToUnlock(value: Double): Self = StObject.set(x, "stepsToUnlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsToUnlockUndefined: Self = StObject.set(x, "stepsToUnlock", js.undefined)
+    inline def setStepsToUnlockUndefined: Self = StObject.set(x, "stepsToUnlock", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

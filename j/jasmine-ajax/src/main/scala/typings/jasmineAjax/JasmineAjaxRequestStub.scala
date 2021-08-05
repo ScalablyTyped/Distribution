@@ -27,8 +27,7 @@ trait JasmineAjaxRequestStub extends StObject {
 }
 object JasmineAjaxRequestStub {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     andCallFunction: js.Function1[/* request */ JasmineAjaxRequest, Unit] => Unit,
     andError: JasmineAjaxRequestStubErrorOptions => Unit,
     andReturn: JasmineAjaxResponse => Unit,
@@ -43,34 +42,24 @@ object JasmineAjaxRequestStub {
     __obj.asInstanceOf[JasmineAjaxRequestStub]
   }
   
-  @scala.inline
-  implicit class JasmineAjaxRequestStubMutableBuilder[Self <: JasmineAjaxRequestStub] (val x: Self) extends AnyVal {
+  extension [Self <: JasmineAjaxRequestStub](x: Self) {
     
-    @scala.inline
-    def setAndCallFunction(value: js.Function1[/* request */ JasmineAjaxRequest, Unit] => Unit): Self = StObject.set(x, "andCallFunction", js.Any.fromFunction1(value))
+    inline def setAndCallFunction(value: js.Function1[/* request */ JasmineAjaxRequest, Unit] => Unit): Self = StObject.set(x, "andCallFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAndError(value: JasmineAjaxRequestStubErrorOptions => Unit): Self = StObject.set(x, "andError", js.Any.fromFunction1(value))
+    inline def setAndError(value: JasmineAjaxRequestStubErrorOptions => Unit): Self = StObject.set(x, "andError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAndReturn(value: JasmineAjaxResponse => Unit): Self = StObject.set(x, "andReturn", js.Any.fromFunction1(value))
+    inline def setAndReturn(value: JasmineAjaxResponse => Unit): Self = StObject.set(x, "andReturn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAndTimeout(value: () => Unit): Self = StObject.set(x, "andTimeout", js.Any.fromFunction0(value))
+    inline def setAndTimeout(value: () => Unit): Self = StObject.set(x, "andTimeout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: (String, String, String) => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction3(value))
+    inline def setMatches(value: (String, String, String) => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: RegExp | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: RegExp | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

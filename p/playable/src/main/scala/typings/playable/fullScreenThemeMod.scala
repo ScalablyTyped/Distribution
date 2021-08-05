@@ -16,7 +16,6 @@ object fullScreenThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/full-screen/full-screen.theme", "default.fullScreenSvgFill")
     @js.native
     def fullScreenSvgFill: Fill = js.native
-    @scala.inline
-    def fullScreenSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullScreenSvgFill")(x.asInstanceOf[js.Any])
+    inline def fullScreenSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullScreenSvgFill")(x.asInstanceOf[js.Any])
   }
 }

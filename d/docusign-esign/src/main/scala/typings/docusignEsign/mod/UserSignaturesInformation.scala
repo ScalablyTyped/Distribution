@@ -13,22 +13,17 @@ trait UserSignaturesInformation extends StObject {
 }
 object UserSignaturesInformation {
   
-  @scala.inline
-  def apply(): UserSignaturesInformation = {
+  inline def apply(): UserSignaturesInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserSignaturesInformation]
   }
   
-  @scala.inline
-  implicit class UserSignaturesInformationMutableBuilder[Self <: UserSignaturesInformation] (val x: Self) extends AnyVal {
+  extension [Self <: UserSignaturesInformation](x: Self) {
     
-    @scala.inline
-    def setUserSignatures(value: js.Array[UserSignature]): Self = StObject.set(x, "userSignatures", value.asInstanceOf[js.Any])
+    inline def setUserSignatures(value: js.Array[UserSignature]): Self = StObject.set(x, "userSignatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSignaturesUndefined: Self = StObject.set(x, "userSignatures", js.undefined)
+    inline def setUserSignaturesUndefined: Self = StObject.set(x, "userSignatures", js.undefined)
     
-    @scala.inline
-    def setUserSignaturesVarargs(value: UserSignature*): Self = StObject.set(x, "userSignatures", js.Array(value :_*))
+    inline def setUserSignaturesVarargs(value: UserSignature*): Self = StObject.set(x, "userSignatures", js.Array(value :_*))
   }
 }

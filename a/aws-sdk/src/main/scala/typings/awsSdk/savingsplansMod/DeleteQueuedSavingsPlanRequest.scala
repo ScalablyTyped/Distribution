@@ -13,16 +13,13 @@ trait DeleteQueuedSavingsPlanRequest extends StObject {
 }
 object DeleteQueuedSavingsPlanRequest {
   
-  @scala.inline
-  def apply(savingsPlanId: SavingsPlanId): DeleteQueuedSavingsPlanRequest = {
+  inline def apply(savingsPlanId: SavingsPlanId): DeleteQueuedSavingsPlanRequest = {
     val __obj = js.Dynamic.literal(savingsPlanId = savingsPlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQueuedSavingsPlanRequest]
   }
   
-  @scala.inline
-  implicit class DeleteQueuedSavingsPlanRequestMutableBuilder[Self <: DeleteQueuedSavingsPlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQueuedSavingsPlanRequest](x: Self) {
     
-    @scala.inline
-    def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
+    inline def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
   }
 }

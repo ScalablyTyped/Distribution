@@ -28,67 +28,47 @@ trait WorkbookChartFont
 }
 object WorkbookChartFont {
   
-  @scala.inline
-  def apply(): WorkbookChartFont = {
+  inline def apply(): WorkbookChartFont = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartFont]
   }
   
-  @scala.inline
-  implicit class WorkbookChartFontMutableBuilder[Self <: WorkbookChartFont] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartFont](x: Self) {
     
-    @scala.inline
-    def setBold(value: NullableOption[Boolean]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: NullableOption[Boolean]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldNull: Self = StObject.set(x, "bold", null)
+    inline def setBoldNull: Self = StObject.set(x, "bold", null)
     
-    @scala.inline
-    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
-    @scala.inline
-    def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setItalic(value: NullableOption[Boolean]): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: NullableOption[Boolean]): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalicNull: Self = StObject.set(x, "italic", null)
+    inline def setItalicNull: Self = StObject.set(x, "italic", null)
     
-    @scala.inline
-    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeNull: Self = StObject.set(x, "size", null)
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUnderline(value: NullableOption[String]): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: NullableOption[String]): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineNull: Self = StObject.set(x, "underline", null)
+    inline def setUnderlineNull: Self = StObject.set(x, "underline", null)
     
-    @scala.inline
-    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait FileSavePicker
      with IFileSavePicker
 object FileSavePicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     continuationData: ValueSet,
     defaultFileExtension: String,

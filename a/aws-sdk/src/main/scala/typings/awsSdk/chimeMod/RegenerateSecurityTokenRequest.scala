@@ -18,19 +18,15 @@ trait RegenerateSecurityTokenRequest extends StObject {
 }
 object RegenerateSecurityTokenRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, BotId: NonEmptyString): RegenerateSecurityTokenRequest = {
+  inline def apply(AccountId: NonEmptyString, BotId: NonEmptyString): RegenerateSecurityTokenRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BotId = BotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegenerateSecurityTokenRequest]
   }
   
-  @scala.inline
-  implicit class RegenerateSecurityTokenRequestMutableBuilder[Self <: RegenerateSecurityTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegenerateSecurityTokenRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
+    inline def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
   }
 }

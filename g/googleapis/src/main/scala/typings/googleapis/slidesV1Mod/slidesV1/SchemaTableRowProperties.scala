@@ -18,19 +18,15 @@ trait SchemaTableRowProperties extends StObject {
 }
 object SchemaTableRowProperties {
   
-  @scala.inline
-  def apply(): SchemaTableRowProperties = {
+  inline def apply(): SchemaTableRowProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableRowProperties]
   }
   
-  @scala.inline
-  implicit class SchemaTableRowPropertiesMutableBuilder[Self <: SchemaTableRowProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableRowProperties](x: Self) {
     
-    @scala.inline
-    def setMinRowHeight(value: SchemaDimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+    inline def setMinRowHeight(value: SchemaDimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
+    inline def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
   }
 }

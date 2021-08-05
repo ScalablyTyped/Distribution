@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InteractionPixiEvents extends StObject
 object InteractionPixiEvents {
   
-  @scala.inline
-  def added: typings.pixiJs.pixiJsStrings.added = "added".asInstanceOf[typings.pixiJs.pixiJsStrings.added]
+  inline def added: typings.pixiJs.pixiJsStrings.added = "added".asInstanceOf[typings.pixiJs.pixiJsStrings.added]
   
-  @scala.inline
-  def removed: typings.pixiJs.pixiJsStrings.removed = "removed".asInstanceOf[typings.pixiJs.pixiJsStrings.removed]
+  inline def removed: typings.pixiJs.pixiJsStrings.removed = "removed".asInstanceOf[typings.pixiJs.pixiJsStrings.removed]
 }

@@ -70,17 +70,14 @@ object typesRepositoryNameRequiredExceptionMod {
   }
   object RepositoryNameRequiredException {
     
-    @scala.inline
-    def apply(): RepositoryNameRequiredException = {
+    inline def apply(): RepositoryNameRequiredException = {
       val __obj = js.Dynamic.literal(name = "RepositoryNameRequiredException")
       __obj.asInstanceOf[RepositoryNameRequiredException]
     }
     
-    @scala.inline
-    implicit class RepositoryNameRequiredExceptionMutableBuilder[Self <: RepositoryNameRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryNameRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNameRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

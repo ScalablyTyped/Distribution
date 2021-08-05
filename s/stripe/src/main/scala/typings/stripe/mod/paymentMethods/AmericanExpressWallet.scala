@@ -14,17 +14,14 @@ trait AmericanExpressWallet
 }
 object AmericanExpressWallet {
   
-  @scala.inline
-  def apply(): AmericanExpressWallet = {
+  inline def apply(): AmericanExpressWallet = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("amex_express_checkout")
     __obj.asInstanceOf[AmericanExpressWallet]
   }
   
-  @scala.inline
-  implicit class AmericanExpressWalletMutableBuilder[Self <: AmericanExpressWallet] (val x: Self) extends AnyVal {
+  extension [Self <: AmericanExpressWallet](x: Self) {
     
-    @scala.inline
-    def setType(value: amex_express_checkout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: amex_express_checkout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

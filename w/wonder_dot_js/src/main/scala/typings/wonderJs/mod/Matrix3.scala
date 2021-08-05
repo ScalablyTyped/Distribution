@@ -18,8 +18,6 @@ object Matrix3 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.matrix3Mod.Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.matrix3Mod.Matrix3]
-  @scala.inline
-  def create(mat: Float32Array): typings.wonderJs.matrix3Mod.Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.matrix3Mod.Matrix3]
+  inline def create(): typings.wonderJs.matrix3Mod.Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.matrix3Mod.Matrix3]
+  inline def create(mat: Float32Array): typings.wonderJs.matrix3Mod.Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.matrix3Mod.Matrix3]
 }

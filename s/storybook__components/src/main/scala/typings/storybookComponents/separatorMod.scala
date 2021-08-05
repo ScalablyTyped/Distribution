@@ -23,8 +23,7 @@ object separatorMod {
     Theme
   ] = js.native
   
-  @scala.inline
-  def interleaveSeparators(list: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def interleaveSeparators(list: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait SeparatorProps extends StObject {
     
@@ -32,20 +31,16 @@ object separatorMod {
   }
   object SeparatorProps {
     
-    @scala.inline
-    def apply(): SeparatorProps = {
+    inline def apply(): SeparatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SeparatorProps]
     }
     
-    @scala.inline
-    implicit class SeparatorPropsMutableBuilder[Self <: SeparatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: SeparatorProps](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     }
   }
 }

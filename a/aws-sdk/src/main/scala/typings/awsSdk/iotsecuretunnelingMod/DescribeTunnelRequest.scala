@@ -13,16 +13,13 @@ trait DescribeTunnelRequest extends StObject {
 }
 object DescribeTunnelRequest {
   
-  @scala.inline
-  def apply(tunnelId: TunnelId): DescribeTunnelRequest = {
+  inline def apply(tunnelId: TunnelId): DescribeTunnelRequest = {
     val __obj = js.Dynamic.literal(tunnelId = tunnelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTunnelRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTunnelRequestMutableBuilder[Self <: DescribeTunnelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTunnelRequest](x: Self) {
     
-    @scala.inline
-    def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
+    inline def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
   }
 }

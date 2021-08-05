@@ -20,52 +20,37 @@ trait TreeOption extends StObject {
 }
 object TreeOption {
   
-  @scala.inline
-  def apply(): TreeOption = {
+  inline def apply(): TreeOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeOption]
   }
   
-  @scala.inline
-  implicit class TreeOptionMutableBuilder[Self <: TreeOption] (val x: Self) extends AnyVal {
+  extension [Self <: TreeOption](x: Self) {
     
-    @scala.inline
-    def setClick(value: /* node */ TreeNode => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: /* node */ TreeNode => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setElem(value: String): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
+    inline def setElem(value: String): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
+    inline def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setNodes(value: TreeNode | js.Array[TreeNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: TreeNode | js.Array[TreeNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: TreeNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: TreeNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

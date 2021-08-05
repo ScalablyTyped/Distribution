@@ -12,25 +12,19 @@ trait ScaleControlOptions extends StObject {
 }
 object ScaleControlOptions {
   
-  @scala.inline
-  def apply(): ScaleControlOptions = {
+  inline def apply(): ScaleControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleControlOptions]
   }
   
-  @scala.inline
-  implicit class ScaleControlOptionsMutableBuilder[Self <: ScaleControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleControlOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

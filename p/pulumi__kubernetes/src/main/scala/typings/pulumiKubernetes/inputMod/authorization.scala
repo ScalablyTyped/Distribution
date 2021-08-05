@@ -27,26 +27,20 @@ object authorization {
     }
     object NonResourceAttributes {
       
-      @scala.inline
-      def apply(): NonResourceAttributes = {
+      inline def apply(): NonResourceAttributes = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NonResourceAttributes]
       }
       
-      @scala.inline
-      implicit class NonResourceAttributesMutableBuilder[Self <: NonResourceAttributes] (val x: Self) extends AnyVal {
+      extension [Self <: NonResourceAttributes](x: Self) {
         
-        @scala.inline
-        def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+        inline def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+        inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
       }
     }
     
@@ -92,56 +86,40 @@ object authorization {
     }
     object ResourceAttributes {
       
-      @scala.inline
-      def apply(): ResourceAttributes = {
+      inline def apply(): ResourceAttributes = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResourceAttributes]
       }
       
-      @scala.inline
-      implicit class ResourceAttributesMutableBuilder[Self <: ResourceAttributes] (val x: Self) extends AnyVal {
+      extension [Self <: ResourceAttributes](x: Self) {
         
-        @scala.inline
-        def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+        inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+        inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
         
-        @scala.inline
-        def setSubresource(value: Input[String]): Self = StObject.set(x, "subresource", value.asInstanceOf[js.Any])
+        inline def setSubresource(value: Input[String]): Self = StObject.set(x, "subresource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubresourceUndefined: Self = StObject.set(x, "subresource", js.undefined)
+        inline def setSubresourceUndefined: Self = StObject.set(x, "subresource", js.undefined)
         
-        @scala.inline
-        def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+        inline def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+        inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
         
-        @scala.inline
-        def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
     
@@ -162,26 +140,20 @@ object authorization {
     }
     object SelfSubjectAccessReviewSpec {
       
-      @scala.inline
-      def apply(): SelfSubjectAccessReviewSpec = {
+      inline def apply(): SelfSubjectAccessReviewSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SelfSubjectAccessReviewSpec]
       }
       
-      @scala.inline
-      implicit class SelfSubjectAccessReviewSpecMutableBuilder[Self <: SelfSubjectAccessReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: SelfSubjectAccessReviewSpec](x: Self) {
         
-        @scala.inline
-        def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
+        inline def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
+        inline def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
         
-        @scala.inline
-        def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
+        inline def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
+        inline def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
       }
     }
     
@@ -194,20 +166,16 @@ object authorization {
     }
     object SelfSubjectRulesReviewSpec {
       
-      @scala.inline
-      def apply(): SelfSubjectRulesReviewSpec = {
+      inline def apply(): SelfSubjectRulesReviewSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SelfSubjectRulesReviewSpec]
       }
       
-      @scala.inline
-      implicit class SelfSubjectRulesReviewSpecMutableBuilder[Self <: SelfSubjectRulesReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: SelfSubjectRulesReviewSpec](x: Self) {
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       }
     }
     
@@ -248,53 +216,38 @@ object authorization {
     }
     object SubjectAccessReviewSpec {
       
-      @scala.inline
-      def apply(): SubjectAccessReviewSpec = {
+      inline def apply(): SubjectAccessReviewSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SubjectAccessReviewSpec]
       }
       
-      @scala.inline
-      implicit class SubjectAccessReviewSpecMutableBuilder[Self <: SubjectAccessReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: SubjectAccessReviewSpec](x: Self) {
         
-        @scala.inline
-        def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+        inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
         
-        @scala.inline
-        def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        inline def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+        inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
         
-        @scala.inline
-        def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
         
-        @scala.inline
-        def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
+        inline def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
+        inline def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
         
-        @scala.inline
-        def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
+        inline def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
+        inline def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+        inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
         
-        @scala.inline
-        def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       }
     }
   }
@@ -318,26 +271,20 @@ object authorization {
     }
     object NonResourceAttributes {
       
-      @scala.inline
-      def apply(): NonResourceAttributes = {
+      inline def apply(): NonResourceAttributes = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NonResourceAttributes]
       }
       
-      @scala.inline
-      implicit class NonResourceAttributesMutableBuilder[Self <: NonResourceAttributes] (val x: Self) extends AnyVal {
+      extension [Self <: NonResourceAttributes](x: Self) {
         
-        @scala.inline
-        def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+        inline def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+        inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
       }
     }
     
@@ -383,56 +330,40 @@ object authorization {
     }
     object ResourceAttributes {
       
-      @scala.inline
-      def apply(): ResourceAttributes = {
+      inline def apply(): ResourceAttributes = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResourceAttributes]
       }
       
-      @scala.inline
-      implicit class ResourceAttributesMutableBuilder[Self <: ResourceAttributes] (val x: Self) extends AnyVal {
+      extension [Self <: ResourceAttributes](x: Self) {
         
-        @scala.inline
-        def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+        inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+        inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
         
-        @scala.inline
-        def setSubresource(value: Input[String]): Self = StObject.set(x, "subresource", value.asInstanceOf[js.Any])
+        inline def setSubresource(value: Input[String]): Self = StObject.set(x, "subresource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubresourceUndefined: Self = StObject.set(x, "subresource", js.undefined)
+        inline def setSubresourceUndefined: Self = StObject.set(x, "subresource", js.undefined)
         
-        @scala.inline
-        def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+        inline def setVerb(value: Input[String]): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+        inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
         
-        @scala.inline
-        def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
     
@@ -453,26 +384,20 @@ object authorization {
     }
     object SelfSubjectAccessReviewSpec {
       
-      @scala.inline
-      def apply(): SelfSubjectAccessReviewSpec = {
+      inline def apply(): SelfSubjectAccessReviewSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SelfSubjectAccessReviewSpec]
       }
       
-      @scala.inline
-      implicit class SelfSubjectAccessReviewSpecMutableBuilder[Self <: SelfSubjectAccessReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: SelfSubjectAccessReviewSpec](x: Self) {
         
-        @scala.inline
-        def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
+        inline def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
+        inline def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
         
-        @scala.inline
-        def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
+        inline def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
+        inline def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
       }
     }
     
@@ -485,20 +410,16 @@ object authorization {
     }
     object SelfSubjectRulesReviewSpec {
       
-      @scala.inline
-      def apply(): SelfSubjectRulesReviewSpec = {
+      inline def apply(): SelfSubjectRulesReviewSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SelfSubjectRulesReviewSpec]
       }
       
-      @scala.inline
-      implicit class SelfSubjectRulesReviewSpecMutableBuilder[Self <: SelfSubjectRulesReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: SelfSubjectRulesReviewSpec](x: Self) {
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       }
     }
     
@@ -539,53 +460,38 @@ object authorization {
     }
     object SubjectAccessReviewSpec {
       
-      @scala.inline
-      def apply(): SubjectAccessReviewSpec = {
+      inline def apply(): SubjectAccessReviewSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SubjectAccessReviewSpec]
       }
       
-      @scala.inline
-      implicit class SubjectAccessReviewSpecMutableBuilder[Self <: SubjectAccessReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: SubjectAccessReviewSpec](x: Self) {
         
-        @scala.inline
-        def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+        inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
         
-        @scala.inline
-        def setGroup(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setGroupVarargs(value: Input[String]*): Self = StObject.set(x, "group", js.Array(value :_*))
+        inline def setGroupVarargs(value: Input[String]*): Self = StObject.set(x, "group", js.Array(value :_*))
         
-        @scala.inline
-        def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
+        inline def setNonResourceAttributes(value: Input[NonResourceAttributes]): Self = StObject.set(x, "nonResourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
+        inline def setNonResourceAttributesUndefined: Self = StObject.set(x, "nonResourceAttributes", js.undefined)
         
-        @scala.inline
-        def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
+        inline def setResourceAttributes(value: Input[ResourceAttributes]): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
+        inline def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+        inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
         
-        @scala.inline
-        def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       }
     }
   }

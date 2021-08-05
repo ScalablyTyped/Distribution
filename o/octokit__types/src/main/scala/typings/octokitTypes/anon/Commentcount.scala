@@ -22,8 +22,7 @@ trait Commentcount extends StObject {
 }
 object Commentcount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: DateEmail,
     comment_count: Double,
     committer: DateEmail,
@@ -36,28 +35,20 @@ object Commentcount {
     __obj.asInstanceOf[Commentcount]
   }
   
-  @scala.inline
-  implicit class CommentcountMutableBuilder[Self <: Commentcount] (val x: Self) extends AnyVal {
+  extension [Self <: Commentcount](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: DateEmail): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: DateEmail): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+    inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitter(value: DateEmail): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: DateEmail): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

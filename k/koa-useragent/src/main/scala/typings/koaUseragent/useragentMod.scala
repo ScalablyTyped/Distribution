@@ -161,7 +161,7 @@ object useragentMod {
     
     def SilkAccelerated: Boolean = js.native
     
-    val _agent: js.Any = js.native
+    /* private */ val _agent: js.Any = js.native
     
     @JSName("browser")
     def browser_MUserAgent: String = js.native

@@ -11,8 +11,7 @@ object scriptLoader {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: String,
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -20,8 +19,7 @@ object scriptLoader {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: String,
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -30,8 +28,7 @@ object scriptLoader {
     ],
     scope: js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: String,
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -41,8 +38,7 @@ object scriptLoader {
     scope: js.Any,
     showBusy: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], showBusy.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: String,
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -52,8 +48,7 @@ object scriptLoader {
     scope: Unit,
     showBusy: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], showBusy.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: js.Array[String],
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -61,8 +56,7 @@ object scriptLoader {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: js.Array[String],
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -71,8 +65,7 @@ object scriptLoader {
     ],
     scope: js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: js.Array[String],
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -82,8 +75,7 @@ object scriptLoader {
     scope: js.Any,
     showBusy: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], showBusy.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     scriptUrls: js.Array[String],
     callback: js.Function2[
       /* succeededUrls */ Boolean | js.Array[String], 
@@ -94,8 +86,6 @@ object scriptLoader {
     showBusy: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptUrls.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], showBusy.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def queue(scriptUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")(scriptUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def queue(scriptUrl: String, callback: js.Function1[/* succeeded */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queue")(scriptUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def queue(scriptUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")(scriptUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def queue(scriptUrl: String, callback: js.Function1[/* succeeded */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queue")(scriptUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

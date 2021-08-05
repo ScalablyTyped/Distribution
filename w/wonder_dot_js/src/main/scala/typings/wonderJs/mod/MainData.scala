@@ -18,12 +18,10 @@ object MainData {
   @JSImport("wonder.js/dist/es2015", "MainData.isTest")
   @js.native
   def isTest: Boolean = js.native
-  @scala.inline
-  def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
+  inline def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "MainData.screenSize")
   @js.native
   def screenSize: typings.wonderJs.escreensizeMod.EScreenSize & typings.wonderJs.rectRegionMod.RectRegion = js.native
-  @scala.inline
-  def screenSize_=(x: typings.wonderJs.escreensizeMod.EScreenSize & typings.wonderJs.rectRegionMod.RectRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenSize")(x.asInstanceOf[js.Any])
+  inline def screenSize_=(x: typings.wonderJs.escreensizeMod.EScreenSize & typings.wonderJs.rectRegionMod.RectRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenSize")(x.asInstanceOf[js.Any])
 }

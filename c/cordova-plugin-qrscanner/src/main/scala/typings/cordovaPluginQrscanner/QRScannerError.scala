@@ -47,22 +47,17 @@ trait QRScannerError extends StObject {
 }
 object QRScannerError {
   
-  @scala.inline
-  def apply(_message: String, code: Double, name: String): QRScannerError = {
+  inline def apply(_message: String, code: Double, name: String): QRScannerError = {
     val __obj = js.Dynamic.literal(_message = _message.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRScannerError]
   }
   
-  @scala.inline
-  implicit class QRScannerErrorMutableBuilder[Self <: QRScannerError] (val x: Self) extends AnyVal {
+  extension [Self <: QRScannerError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_message(value: String): Self = StObject.set(x, "_message", value.asInstanceOf[js.Any])
+    inline def set_message(value: String): Self = StObject.set(x, "_message", value.asInstanceOf[js.Any])
   }
 }

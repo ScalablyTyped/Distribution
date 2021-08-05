@@ -22,20 +22,16 @@ object fileDocumentSmallMod extends Shortcut {
   }
   object FileDocumentSmallProps {
     
-    @scala.inline
-    def apply(): FileDocumentSmallProps = {
+    inline def apply(): FileDocumentSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileDocumentSmallProps]
     }
     
-    @scala.inline
-    implicit class FileDocumentSmallPropsMutableBuilder[Self <: FileDocumentSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: FileDocumentSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

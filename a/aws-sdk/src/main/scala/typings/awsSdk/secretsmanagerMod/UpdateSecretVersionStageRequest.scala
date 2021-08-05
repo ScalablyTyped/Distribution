@@ -28,31 +28,23 @@ trait UpdateSecretVersionStageRequest extends StObject {
 }
 object UpdateSecretVersionStageRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType, VersionStage: SecretVersionStageType): UpdateSecretVersionStageRequest = {
+  inline def apply(SecretId: SecretIdType, VersionStage: SecretVersionStageType): UpdateSecretVersionStageRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any], VersionStage = VersionStage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecretVersionStageRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSecretVersionStageRequestMutableBuilder[Self <: UpdateSecretVersionStageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSecretVersionStageRequest](x: Self) {
     
-    @scala.inline
-    def setMoveToVersionId(value: SecretVersionIdType): Self = StObject.set(x, "MoveToVersionId", value.asInstanceOf[js.Any])
+    inline def setMoveToVersionId(value: SecretVersionIdType): Self = StObject.set(x, "MoveToVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToVersionIdUndefined: Self = StObject.set(x, "MoveToVersionId", js.undefined)
+    inline def setMoveToVersionIdUndefined: Self = StObject.set(x, "MoveToVersionId", js.undefined)
     
-    @scala.inline
-    def setRemoveFromVersionId(value: SecretVersionIdType): Self = StObject.set(x, "RemoveFromVersionId", value.asInstanceOf[js.Any])
+    inline def setRemoveFromVersionId(value: SecretVersionIdType): Self = StObject.set(x, "RemoveFromVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFromVersionIdUndefined: Self = StObject.set(x, "RemoveFromVersionId", js.undefined)
+    inline def setRemoveFromVersionIdUndefined: Self = StObject.set(x, "RemoveFromVersionId", js.undefined)
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionStage(value: SecretVersionStageType): Self = StObject.set(x, "VersionStage", value.asInstanceOf[js.Any])
+    inline def setVersionStage(value: SecretVersionStageType): Self = StObject.set(x, "VersionStage", value.asInstanceOf[js.Any])
   }
 }

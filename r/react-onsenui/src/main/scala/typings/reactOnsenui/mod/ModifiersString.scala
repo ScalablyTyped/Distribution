@@ -12,25 +12,19 @@ trait ModifiersString extends StObject {
 }
 object ModifiersString {
   
-  @scala.inline
-  def apply(): ModifiersString = {
+  inline def apply(): ModifiersString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifiersString]
   }
   
-  @scala.inline
-  implicit class ModifiersStringMutableBuilder[Self <: ModifiersString] (val x: Self) extends AnyVal {
+  extension [Self <: ModifiersString](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: String): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: String): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
   }
 }

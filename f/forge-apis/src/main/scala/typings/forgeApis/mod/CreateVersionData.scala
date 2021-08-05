@@ -14,29 +14,22 @@ trait CreateVersionData extends StObject {
 }
 object CreateVersionData {
   
-  @scala.inline
-  def apply(`type`: String): CreateVersionData = {
+  inline def apply(`type`: String): CreateVersionData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVersionData]
   }
   
-  @scala.inline
-  implicit class CreateVersionDataMutableBuilder[Self <: CreateVersionData] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVersionData](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: CreateStorageDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: CreateStorageDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setRelationships(value: CreateVersionDataRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: CreateVersionDataRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

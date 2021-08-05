@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSyncCompareType extends StObject
 object MsoSyncCompareType {
   
-  @scala.inline
-  def msoSyncCompareAndMerge: `0` = 0.asInstanceOf[`0`]
+  inline def msoSyncCompareAndMerge: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSyncCompareSideBySide: `1` = 1.asInstanceOf[`1`]
+  inline def msoSyncCompareSideBySide: `1` = 1.asInstanceOf[`1`]
 }

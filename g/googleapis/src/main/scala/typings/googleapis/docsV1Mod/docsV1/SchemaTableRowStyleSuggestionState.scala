@@ -18,19 +18,15 @@ trait SchemaTableRowStyleSuggestionState extends StObject {
 }
 object SchemaTableRowStyleSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaTableRowStyleSuggestionState = {
+  inline def apply(): SchemaTableRowStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableRowStyleSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaTableRowStyleSuggestionStateMutableBuilder[Self <: SchemaTableRowStyleSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableRowStyleSuggestionState](x: Self) {
     
-    @scala.inline
-    def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
+    inline def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRowHeightSuggestedUndefined: Self = StObject.set(x, "minRowHeightSuggested", js.undefined)
+    inline def setMinRowHeightSuggestedUndefined: Self = StObject.set(x, "minRowHeightSuggested", js.undefined)
   }
 }

@@ -18,38 +18,28 @@ object anon {
   }
   object Attributes {
     
-    @scala.inline
-    def apply[InitialProps](): Attributes[InitialProps] = {
+    inline def apply[InitialProps](): Attributes[InitialProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes[InitialProps]]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes[?], InitialProps] (val x: Self & Attributes[InitialProps]) extends AnyVal {
+    extension [Self <: Attributes[?], InitialProps](x: Self & Attributes[InitialProps]) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[AttributeExpressionData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[AttributeExpressionData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: AttributeExpressionData*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: AttributeExpressionData*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setProps(value: InitialProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: InitialProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setSlots(value: js.Array[SlotBindingData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: js.Array[SlotBindingData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      @scala.inline
-      def setSlotsVarargs(value: SlotBindingData*): Self = StObject.set(x, "slots", js.Array(value :_*))
+      inline def setSlotsVarargs(value: SlotBindingData*): Self = StObject.set(x, "slots", js.Array(value :_*))
     }
   }
   
@@ -63,8 +53,7 @@ object anon {
   }
   object ParentScope {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[AttributeExpressionData],
       parentScope: js.Any,
       slots: js.Array[SlotBindingData]
@@ -73,23 +62,17 @@ object anon {
       __obj.asInstanceOf[ParentScope]
     }
     
-    @scala.inline
-    implicit class ParentScopeMutableBuilder[Self <: ParentScope] (val x: Self) extends AnyVal {
+    extension [Self <: ParentScope](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[AttributeExpressionData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[AttributeExpressionData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: AttributeExpressionData*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: AttributeExpressionData*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setParentScope(value: js.Any): Self = StObject.set(x, "parentScope", value.asInstanceOf[js.Any])
+      inline def setParentScope(value: js.Any): Self = StObject.set(x, "parentScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlots(value: js.Array[SlotBindingData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: js.Array[SlotBindingData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsVarargs(value: SlotBindingData*): Self = StObject.set(x, "slots", js.Array(value :_*))
+      inline def setSlotsVarargs(value: SlotBindingData*): Self = StObject.set(x, "slots", js.Array(value :_*))
     }
   }
 }

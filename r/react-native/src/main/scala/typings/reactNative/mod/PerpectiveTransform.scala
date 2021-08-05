@@ -10,16 +10,13 @@ trait PerpectiveTransform extends StObject {
 }
 object PerpectiveTransform {
   
-  @scala.inline
-  def apply(perspective: Double): PerpectiveTransform = {
+  inline def apply(perspective: Double): PerpectiveTransform = {
     val __obj = js.Dynamic.literal(perspective = perspective.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerpectiveTransform]
   }
   
-  @scala.inline
-  implicit class PerpectiveTransformMutableBuilder[Self <: PerpectiveTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PerpectiveTransform](x: Self) {
     
-    @scala.inline
-    def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+    inline def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
   }
 }

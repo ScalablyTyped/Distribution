@@ -13,19 +13,15 @@ trait DocumentSymbolProviderMetadata extends StObject {
 }
 object DocumentSymbolProviderMetadata {
   
-  @scala.inline
-  def apply(): DocumentSymbolProviderMetadata = {
+  inline def apply(): DocumentSymbolProviderMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentSymbolProviderMetadata]
   }
   
-  @scala.inline
-  implicit class DocumentSymbolProviderMetadataMutableBuilder[Self <: DocumentSymbolProviderMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSymbolProviderMetadata](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

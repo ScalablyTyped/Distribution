@@ -18,19 +18,15 @@ trait DebugSetting extends StObject {
 }
 object DebugSetting {
   
-  @scala.inline
-  def apply(): DebugSetting = {
+  inline def apply(): DebugSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugSetting]
   }
   
-  @scala.inline
-  implicit class DebugSettingMutableBuilder[Self <: DebugSetting] (val x: Self) extends AnyVal {
+  extension [Self <: DebugSetting](x: Self) {
     
-    @scala.inline
-    def setDetailLevel(value: String): Self = StObject.set(x, "detailLevel", value.asInstanceOf[js.Any])
+    inline def setDetailLevel(value: String): Self = StObject.set(x, "detailLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailLevelUndefined: Self = StObject.set(x, "detailLevel", js.undefined)
+    inline def setDetailLevelUndefined: Self = StObject.set(x, "detailLevel", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ trait Recommendation extends StObject {
 }
 object Recommendation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allMatchesCount: Integer,
     allMatchesSum: Double,
     endTime: Timestamp,
@@ -51,28 +50,20 @@ object Recommendation {
     __obj.asInstanceOf[Recommendation]
   }
   
-  @scala.inline
-  implicit class RecommendationMutableBuilder[Self <: Recommendation] (val x: Self) extends AnyVal {
+  extension [Self <: Recommendation](x: Self) {
     
-    @scala.inline
-    def setAllMatchesCount(value: Integer): Self = StObject.set(x, "allMatchesCount", value.asInstanceOf[js.Any])
+    inline def setAllMatchesCount(value: Integer): Self = StObject.set(x, "allMatchesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllMatchesSum(value: Double): Self = StObject.set(x, "allMatchesSum", value.asInstanceOf[js.Any])
+    inline def setAllMatchesSum(value: Double): Self = StObject.set(x, "allMatchesSum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMatches(value: Matches): Self = StObject.set(x, "topMatches", value.asInstanceOf[js.Any])
+    inline def setTopMatches(value: Matches): Self = StObject.set(x, "topMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMatchesVarargs(value: Match*): Self = StObject.set(x, "topMatches", js.Array(value :_*))
+    inline def setTopMatchesVarargs(value: Match*): Self = StObject.set(x, "topMatches", js.Array(value :_*))
   }
 }

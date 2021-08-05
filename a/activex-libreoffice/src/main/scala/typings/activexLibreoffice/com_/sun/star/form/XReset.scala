@@ -32,8 +32,7 @@ trait XReset
 }
 object XReset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addResetListener: XResetListener => Unit,
     queryInterface: `type` => js.Any,
@@ -45,16 +44,12 @@ object XReset {
     __obj.asInstanceOf[XReset]
   }
   
-  @scala.inline
-  implicit class XResetMutableBuilder[Self <: XReset] (val x: Self) extends AnyVal {
+  extension [Self <: XReset](x: Self) {
     
-    @scala.inline
-    def setAddResetListener(value: XResetListener => Unit): Self = StObject.set(x, "addResetListener", js.Any.fromFunction1(value))
+    inline def setAddResetListener(value: XResetListener => Unit): Self = StObject.set(x, "addResetListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveResetListener(value: XResetListener => Unit): Self = StObject.set(x, "removeResetListener", js.Any.fromFunction1(value))
+    inline def setRemoveResetListener(value: XResetListener => Unit): Self = StObject.set(x, "removeResetListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

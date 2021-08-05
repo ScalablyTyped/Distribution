@@ -11,6 +11,5 @@ object elementClickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasElementId: ElementId): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def default(hasElementId: ElementId): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

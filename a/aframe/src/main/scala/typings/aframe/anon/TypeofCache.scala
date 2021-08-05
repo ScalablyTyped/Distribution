@@ -20,8 +20,7 @@ trait TypeofCache extends StObject {
 }
 object TypeofCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, js.Any) => Unit,
     clear: () => Unit,
     enabled: Boolean,
@@ -33,25 +32,18 @@ object TypeofCache {
     __obj.asInstanceOf[TypeofCache]
   }
   
-  @scala.inline
-  implicit class TypeofCacheMutableBuilder[Self <: TypeofCache] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofCache](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, js.Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, js.Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

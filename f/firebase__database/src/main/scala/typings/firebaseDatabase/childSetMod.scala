@@ -12,23 +12,19 @@ object childSetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildChildSet[K, V](childList: js.Array[NamedNode], cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double]): SortedMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildChildSet")(childList.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[SortedMap[K, V]]
-  @scala.inline
-  def buildChildSet[K, V](
+  inline def buildChildSet[K, V](childList: js.Array[NamedNode], cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double]): SortedMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildChildSet")(childList.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[SortedMap[K, V]]
+  inline def buildChildSet[K, V](
     childList: js.Array[NamedNode],
     cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double],
     keyFn: js.Function1[/* a */ NamedNode, K]
   ): SortedMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildChildSet")(childList.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], keyFn.asInstanceOf[js.Any])).asInstanceOf[SortedMap[K, V]]
-  @scala.inline
-  def buildChildSet[K, V](
+  inline def buildChildSet[K, V](
     childList: js.Array[NamedNode],
     cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double],
     keyFn: js.Function1[/* a */ NamedNode, K],
     mapSortFn: js.Function2[/* a */ K, /* b */ K, Double]
   ): SortedMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildChildSet")(childList.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any], keyFn.asInstanceOf[js.Any], mapSortFn.asInstanceOf[js.Any])).asInstanceOf[SortedMap[K, V]]
-  @scala.inline
-  def buildChildSet[K, V](
+  inline def buildChildSet[K, V](
     childList: js.Array[NamedNode],
     cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double],
     keyFn: Unit,

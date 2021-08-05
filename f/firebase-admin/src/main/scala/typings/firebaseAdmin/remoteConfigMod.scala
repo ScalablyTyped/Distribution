@@ -20,10 +20,8 @@ object remoteConfigMod {
   
   object remoteConfig {
     
-    @scala.inline
-    def apply(): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RemoteConfig]
-    @scala.inline
-    def apply(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
+    inline def apply(): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RemoteConfig]
+    inline def apply(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
     
     @JSImport("firebase-admin/lib/remote-config", "remoteConfig")
     @js.native
@@ -43,17 +41,14 @@ object remoteConfigMod {
     }
     object ExplicitParameterValue {
       
-      @scala.inline
-      def apply(value: String): ExplicitParameterValue = {
+      inline def apply(value: String): ExplicitParameterValue = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExplicitParameterValue]
       }
       
-      @scala.inline
-      implicit class ExplicitParameterValueMutableBuilder[Self <: ExplicitParameterValue] (val x: Self) extends AnyVal {
+      extension [Self <: ExplicitParameterValue](x: Self) {
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -71,17 +66,14 @@ object remoteConfigMod {
     }
     object InAppDefaultValue {
       
-      @scala.inline
-      def apply(useInAppDefault: Boolean): InAppDefaultValue = {
+      inline def apply(useInAppDefault: Boolean): InAppDefaultValue = {
         val __obj = js.Dynamic.literal(useInAppDefault = useInAppDefault.asInstanceOf[js.Any])
         __obj.asInstanceOf[InAppDefaultValue]
       }
       
-      @scala.inline
-      implicit class InAppDefaultValueMutableBuilder[Self <: InAppDefaultValue] (val x: Self) extends AnyVal {
+      extension [Self <: InAppDefaultValue](x: Self) {
         
-        @scala.inline
-        def setUseInAppDefault(value: Boolean): Self = StObject.set(x, "useInAppDefault", value.asInstanceOf[js.Any])
+        inline def setUseInAppDefault(value: Boolean): Self = StObject.set(x, "useInAppDefault", value.asInstanceOf[js.Any])
       }
     }
     
@@ -120,44 +112,32 @@ object remoteConfigMod {
     }
     object ListVersionsOptions {
       
-      @scala.inline
-      def apply(): ListVersionsOptions = {
+      inline def apply(): ListVersionsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListVersionsOptions]
       }
       
-      @scala.inline
-      implicit class ListVersionsOptionsMutableBuilder[Self <: ListVersionsOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ListVersionsOptions](x: Self) {
         
-        @scala.inline
-        def setEndTime(value: Date | String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+        inline def setEndTime(value: Date | String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+        inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
         
-        @scala.inline
-        def setEndVersionNumber(value: String | Double): Self = StObject.set(x, "endVersionNumber", value.asInstanceOf[js.Any])
+        inline def setEndVersionNumber(value: String | Double): Self = StObject.set(x, "endVersionNumber", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndVersionNumberUndefined: Self = StObject.set(x, "endVersionNumber", js.undefined)
+        inline def setEndVersionNumberUndefined: Self = StObject.set(x, "endVersionNumber", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: Date | String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: Date | String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+        inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       }
     }
     
@@ -179,26 +159,20 @@ object remoteConfigMod {
     }
     object ListVersionsResult {
       
-      @scala.inline
-      def apply(versions: js.Array[Version]): ListVersionsResult = {
+      inline def apply(versions: js.Array[Version]): ListVersionsResult = {
         val __obj = js.Dynamic.literal(versions = versions.asInstanceOf[js.Any])
         __obj.asInstanceOf[ListVersionsResult]
       }
       
-      @scala.inline
-      implicit class ListVersionsResultMutableBuilder[Self <: ListVersionsResult] (val x: Self) extends AnyVal {
+      extension [Self <: ListVersionsResult](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setVersions(value: js.Array[Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+        inline def setVersions(value: js.Array[Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionsVarargs(value: Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
+        inline def setVersionsVarargs(value: Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
       }
     }
     
@@ -321,26 +295,20 @@ object remoteConfigMod {
     }
     object RemoteConfigCondition {
       
-      @scala.inline
-      def apply(expression: String, name: String): RemoteConfigCondition = {
+      inline def apply(expression: String, name: String): RemoteConfigCondition = {
         val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[RemoteConfigCondition]
       }
       
-      @scala.inline
-      implicit class RemoteConfigConditionMutableBuilder[Self <: RemoteConfigCondition] (val x: Self) extends AnyVal {
+      extension [Self <: RemoteConfigCondition](x: Self) {
         
-        @scala.inline
-        def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+        inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagColor(value: TagColor): Self = StObject.set(x, "tagColor", value.asInstanceOf[js.Any])
+        inline def setTagColor(value: TagColor): Self = StObject.set(x, "tagColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagColorUndefined: Self = StObject.set(x, "tagColor", js.undefined)
+        inline def setTagColorUndefined: Self = StObject.set(x, "tagColor", js.undefined)
       }
     }
     
@@ -371,32 +339,24 @@ object remoteConfigMod {
     }
     object RemoteConfigParameter {
       
-      @scala.inline
-      def apply(): RemoteConfigParameter = {
+      inline def apply(): RemoteConfigParameter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RemoteConfigParameter]
       }
       
-      @scala.inline
-      implicit class RemoteConfigParameterMutableBuilder[Self <: RemoteConfigParameter] (val x: Self) extends AnyVal {
+      extension [Self <: RemoteConfigParameter](x: Self) {
         
-        @scala.inline
-        def setConditionalValues(value: StringDictionary[RemoteConfigParameterValue]): Self = StObject.set(x, "conditionalValues", value.asInstanceOf[js.Any])
+        inline def setConditionalValues(value: StringDictionary[RemoteConfigParameterValue]): Self = StObject.set(x, "conditionalValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionalValuesUndefined: Self = StObject.set(x, "conditionalValues", js.undefined)
+        inline def setConditionalValuesUndefined: Self = StObject.set(x, "conditionalValues", js.undefined)
         
-        @scala.inline
-        def setDefaultValue(value: RemoteConfigParameterValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+        inline def setDefaultValue(value: RemoteConfigParameterValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+        inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       }
     }
     
@@ -423,23 +383,18 @@ object remoteConfigMod {
     }
     object RemoteConfigParameterGroup {
       
-      @scala.inline
-      def apply(parameters: StringDictionary[RemoteConfigParameter]): RemoteConfigParameterGroup = {
+      inline def apply(parameters: StringDictionary[RemoteConfigParameter]): RemoteConfigParameterGroup = {
         val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
         __obj.asInstanceOf[RemoteConfigParameterGroup]
       }
       
-      @scala.inline
-      implicit class RemoteConfigParameterGroupMutableBuilder[Self <: RemoteConfigParameterGroup] (val x: Self) extends AnyVal {
+      extension [Self <: RemoteConfigParameterGroup](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setParameters(value: StringDictionary[RemoteConfigParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        inline def setParameters(value: StringDictionary[RemoteConfigParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       }
     }
     
@@ -455,14 +410,12 @@ object remoteConfigMod {
     trait RemoteConfigParameterValue extends StObject
     object RemoteConfigParameterValue {
       
-      @scala.inline
-      def ExplicitParameterValue(value: String): typings.firebaseAdmin.remoteConfigMod.remoteConfig.ExplicitParameterValue = {
+      inline def ExplicitParameterValue(value: String): typings.firebaseAdmin.remoteConfigMod.remoteConfig.ExplicitParameterValue = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.firebaseAdmin.remoteConfigMod.remoteConfig.ExplicitParameterValue]
       }
       
-      @scala.inline
-      def InAppDefaultValue(useInAppDefault: Boolean): typings.firebaseAdmin.remoteConfigMod.remoteConfig.InAppDefaultValue = {
+      inline def InAppDefaultValue(useInAppDefault: Boolean): typings.firebaseAdmin.remoteConfigMod.remoteConfig.InAppDefaultValue = {
         val __obj = js.Dynamic.literal(useInAppDefault = useInAppDefault.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.firebaseAdmin.remoteConfigMod.remoteConfig.InAppDefaultValue]
       }
@@ -503,8 +456,7 @@ object remoteConfigMod {
     }
     object RemoteConfigTemplate {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         conditions: js.Array[RemoteConfigCondition],
         etag: String,
         parameterGroups: StringDictionary[RemoteConfigParameterGroup],
@@ -514,29 +466,21 @@ object remoteConfigMod {
         __obj.asInstanceOf[RemoteConfigTemplate]
       }
       
-      @scala.inline
-      implicit class RemoteConfigTemplateMutableBuilder[Self <: RemoteConfigTemplate] (val x: Self) extends AnyVal {
+      extension [Self <: RemoteConfigTemplate](x: Self) {
         
-        @scala.inline
-        def setConditions(value: js.Array[RemoteConfigCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: js.Array[RemoteConfigCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsVarargs(value: RemoteConfigCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: RemoteConfigCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterGroups(value: StringDictionary[RemoteConfigParameterGroup]): Self = StObject.set(x, "parameterGroups", value.asInstanceOf[js.Any])
+        inline def setParameterGroups(value: StringDictionary[RemoteConfigParameterGroup]): Self = StObject.set(x, "parameterGroups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameters(value: StringDictionary[RemoteConfigParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        inline def setParameters(value: StringDictionary[RemoteConfigParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
     
@@ -562,29 +506,22 @@ object remoteConfigMod {
     }
     object RemoteConfigUser {
       
-      @scala.inline
-      def apply(email: String): RemoteConfigUser = {
+      inline def apply(email: String): RemoteConfigUser = {
         val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
         __obj.asInstanceOf[RemoteConfigUser]
       }
       
-      @scala.inline
-      implicit class RemoteConfigUserMutableBuilder[Self <: RemoteConfigUser] (val x: Self) extends AnyVal {
+      extension [Self <: RemoteConfigUser](x: Self) {
         
-        @scala.inline
-        def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+        inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+        inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+        inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -607,38 +544,27 @@ object remoteConfigMod {
     trait TagColor extends StObject
     object TagColor {
       
-      @scala.inline
-      def BLUE: typings.firebaseAdmin.firebaseAdminStrings.BLUE = "BLUE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.BLUE]
+      inline def BLUE: typings.firebaseAdmin.firebaseAdminStrings.BLUE = "BLUE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.BLUE]
       
-      @scala.inline
-      def BROWN: typings.firebaseAdmin.firebaseAdminStrings.BROWN = "BROWN".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.BROWN]
+      inline def BROWN: typings.firebaseAdmin.firebaseAdminStrings.BROWN = "BROWN".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.BROWN]
       
-      @scala.inline
-      def CYAN: typings.firebaseAdmin.firebaseAdminStrings.CYAN = "CYAN".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.CYAN]
+      inline def CYAN: typings.firebaseAdmin.firebaseAdminStrings.CYAN = "CYAN".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.CYAN]
       
-      @scala.inline
-      def DEEP_ORANGE: typings.firebaseAdmin.firebaseAdminStrings.DEEP_ORANGE = "DEEP_ORANGE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.DEEP_ORANGE]
+      inline def DEEP_ORANGE: typings.firebaseAdmin.firebaseAdminStrings.DEEP_ORANGE = "DEEP_ORANGE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.DEEP_ORANGE]
       
-      @scala.inline
-      def GREEN: typings.firebaseAdmin.firebaseAdminStrings.GREEN = "GREEN".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.GREEN]
+      inline def GREEN: typings.firebaseAdmin.firebaseAdminStrings.GREEN = "GREEN".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.GREEN]
       
-      @scala.inline
-      def INDIGO: typings.firebaseAdmin.firebaseAdminStrings.INDIGO = "INDIGO".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.INDIGO]
+      inline def INDIGO: typings.firebaseAdmin.firebaseAdminStrings.INDIGO = "INDIGO".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.INDIGO]
       
-      @scala.inline
-      def LIME: typings.firebaseAdmin.firebaseAdminStrings.LIME = "LIME".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.LIME]
+      inline def LIME: typings.firebaseAdmin.firebaseAdminStrings.LIME = "LIME".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.LIME]
       
-      @scala.inline
-      def ORANGE: typings.firebaseAdmin.firebaseAdminStrings.ORANGE = "ORANGE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.ORANGE]
+      inline def ORANGE: typings.firebaseAdmin.firebaseAdminStrings.ORANGE = "ORANGE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.ORANGE]
       
-      @scala.inline
-      def PINK: typings.firebaseAdmin.firebaseAdminStrings.PINK = "PINK".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.PINK]
+      inline def PINK: typings.firebaseAdmin.firebaseAdminStrings.PINK = "PINK".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.PINK]
       
-      @scala.inline
-      def PURPLE: typings.firebaseAdmin.firebaseAdminStrings.PURPLE = "PURPLE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.PURPLE]
+      inline def PURPLE: typings.firebaseAdmin.firebaseAdminStrings.PURPLE = "PURPLE".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.PURPLE]
       
-      @scala.inline
-      def TEAL: typings.firebaseAdmin.firebaseAdminStrings.TEAL = "TEAL".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.TEAL]
+      inline def TEAL: typings.firebaseAdmin.firebaseAdminStrings.TEAL = "TEAL".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.TEAL]
     }
     
     /**
@@ -697,62 +623,44 @@ object remoteConfigMod {
     }
     object Version {
       
-      @scala.inline
-      def apply(): Version = {
+      inline def apply(): Version = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Version]
       }
       
-      @scala.inline
-      implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+      extension [Self <: Version](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setIsLegacy(value: Boolean): Self = StObject.set(x, "isLegacy", value.asInstanceOf[js.Any])
+        inline def setIsLegacy(value: Boolean): Self = StObject.set(x, "isLegacy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsLegacyUndefined: Self = StObject.set(x, "isLegacy", js.undefined)
+        inline def setIsLegacyUndefined: Self = StObject.set(x, "isLegacy", js.undefined)
         
-        @scala.inline
-        def setRollbackSource(value: String): Self = StObject.set(x, "rollbackSource", value.asInstanceOf[js.Any])
+        inline def setRollbackSource(value: String): Self = StObject.set(x, "rollbackSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRollbackSourceUndefined: Self = StObject.set(x, "rollbackSource", js.undefined)
+        inline def setRollbackSourceUndefined: Self = StObject.set(x, "rollbackSource", js.undefined)
         
-        @scala.inline
-        def setUpdateOrigin(value: REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED | CONSOLE | REST_API | ADMIN_SDK_NODE): Self = StObject.set(x, "updateOrigin", value.asInstanceOf[js.Any])
+        inline def setUpdateOrigin(value: REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED | CONSOLE | REST_API | ADMIN_SDK_NODE): Self = StObject.set(x, "updateOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateOriginUndefined: Self = StObject.set(x, "updateOrigin", js.undefined)
+        inline def setUpdateOriginUndefined: Self = StObject.set(x, "updateOrigin", js.undefined)
         
-        @scala.inline
-        def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+        inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+        inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
         
-        @scala.inline
-        def setUpdateType(value: REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED | INCREMENTAL_UPDATE | FORCED_UPDATE | ROLLBACK): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
+        inline def setUpdateType(value: REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED | INCREMENTAL_UPDATE | FORCED_UPDATE | ROLLBACK): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTypeUndefined: Self = StObject.set(x, "updateType", js.undefined)
+        inline def setUpdateTypeUndefined: Self = StObject.set(x, "updateType", js.undefined)
         
-        @scala.inline
-        def setUpdateUser(value: RemoteConfigUser): Self = StObject.set(x, "updateUser", value.asInstanceOf[js.Any])
+        inline def setUpdateUser(value: RemoteConfigUser): Self = StObject.set(x, "updateUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateUserUndefined: Self = StObject.set(x, "updateUser", js.undefined)
+        inline def setUpdateUserUndefined: Self = StObject.set(x, "updateUser", js.undefined)
         
-        @scala.inline
-        def setVersionNumber(value: String): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
+        inline def setVersionNumber(value: String): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
+        inline def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
       }
     }
   }

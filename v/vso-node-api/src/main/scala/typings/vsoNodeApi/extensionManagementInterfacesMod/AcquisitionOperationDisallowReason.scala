@@ -18,20 +18,16 @@ trait AcquisitionOperationDisallowReason extends StObject {
 }
 object AcquisitionOperationDisallowReason {
   
-  @scala.inline
-  def apply(message: String, `type`: String): AcquisitionOperationDisallowReason = {
+  inline def apply(message: String, `type`: String): AcquisitionOperationDisallowReason = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcquisitionOperationDisallowReason]
   }
   
-  @scala.inline
-  implicit class AcquisitionOperationDisallowReasonMutableBuilder[Self <: AcquisitionOperationDisallowReason] (val x: Self) extends AnyVal {
+  extension [Self <: AcquisitionOperationDisallowReason](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -174,8 +174,7 @@ trait IServerValidationManager extends StObject {
 }
 object IServerValidationManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFieldError: (String, String) => Unit,
     addPropertyError: (String, String, String) => Unit,
     clear: () => Unit,
@@ -194,46 +193,32 @@ object IServerValidationManager {
     __obj.asInstanceOf[IServerValidationManager]
   }
   
-  @scala.inline
-  implicit class IServerValidationManagerMutableBuilder[Self <: IServerValidationManager] (val x: Self) extends AnyVal {
+  extension [Self <: IServerValidationManager](x: Self) {
     
-    @scala.inline
-    def setAddFieldError(value: (String, String) => Unit): Self = StObject.set(x, "addFieldError", js.Any.fromFunction2(value))
+    inline def setAddFieldError(value: (String, String) => Unit): Self = StObject.set(x, "addFieldError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddPropertyError(value: (String, String, String) => Unit): Self = StObject.set(x, "addPropertyError", js.Any.fromFunction3(value))
+    inline def setAddPropertyError(value: (String, String, String) => Unit): Self = StObject.set(x, "addPropertyError", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecuteAndClearAllSubscriptions(value: () => Unit): Self = StObject.set(x, "executeAndClearAllSubscriptions", js.Any.fromFunction0(value))
+    inline def setExecuteAndClearAllSubscriptions(value: () => Unit): Self = StObject.set(x, "executeAndClearAllSubscriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldCallbacks(value: String => js.Any): Self = StObject.set(x, "getFieldCallbacks", js.Any.fromFunction1(value))
+    inline def setGetFieldCallbacks(value: String => js.Any): Self = StObject.set(x, "getFieldCallbacks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFieldError(value: String => String): Self = StObject.set(x, "getFieldError", js.Any.fromFunction1(value))
+    inline def setGetFieldError(value: String => String): Self = StObject.set(x, "getFieldError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyCallbacks(value: (String, String) => Unit): Self = StObject.set(x, "getPropertyCallbacks", js.Any.fromFunction2(value))
+    inline def setGetPropertyCallbacks(value: (String, String) => Unit): Self = StObject.set(x, "getPropertyCallbacks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPropertyError(value: (String, String) => String): Self = StObject.set(x, "getPropertyError", js.Any.fromFunction2(value))
+    inline def setGetPropertyError(value: (String, String) => String): Self = StObject.set(x, "getPropertyError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasFieldError(value: String => Boolean): Self = StObject.set(x, "hasFieldError", js.Any.fromFunction1(value))
+    inline def setHasFieldError(value: String => Boolean): Self = StObject.set(x, "hasFieldError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPropertyError(value: (String, String) => Boolean): Self = StObject.set(x, "hasPropertyError", js.Any.fromFunction2(value))
+    inline def setHasPropertyError(value: (String, String) => Boolean): Self = StObject.set(x, "hasPropertyError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemovePropertyError(value: (String, String) => Unit): Self = StObject.set(x, "removePropertyError", js.Any.fromFunction2(value))
+    inline def setRemovePropertyError(value: (String, String) => Unit): Self = StObject.set(x, "removePropertyError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubscribe(value: (String, String, js.Function) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
+    inline def setSubscribe(value: (String, String, js.Function) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
   }
 }

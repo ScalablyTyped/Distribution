@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelTextAnchorType extends StObject
 object RaphaelTextAnchorType {
   
-  @scala.inline
-  def end: typings.raphael.raphaelStrings.end = "end".asInstanceOf[typings.raphael.raphaelStrings.end]
+  inline def end: typings.raphael.raphaelStrings.end = "end".asInstanceOf[typings.raphael.raphaelStrings.end]
   
-  @scala.inline
-  def middle: typings.raphael.raphaelStrings.middle = "middle".asInstanceOf[typings.raphael.raphaelStrings.middle]
+  inline def middle: typings.raphael.raphaelStrings.middle = "middle".asInstanceOf[typings.raphael.raphaelStrings.middle]
   
-  @scala.inline
-  def start: typings.raphael.raphaelStrings.start = "start".asInstanceOf[typings.raphael.raphaelStrings.start]
+  inline def start: typings.raphael.raphaelStrings.start = "start".asInstanceOf[typings.raphael.raphaelStrings.start]
 }

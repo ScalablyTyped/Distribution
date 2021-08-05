@@ -25,23 +25,18 @@ object typesPurchaseProvisionedCapacityOutputMod {
   }
   object PurchaseProvisionedCapacityOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PurchaseProvisionedCapacityOutput = {
+    inline def apply($metadata: ResponseMetadata): PurchaseProvisionedCapacityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurchaseProvisionedCapacityOutput]
     }
     
-    @scala.inline
-    implicit class PurchaseProvisionedCapacityOutputMutableBuilder[Self <: PurchaseProvisionedCapacityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PurchaseProvisionedCapacityOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityId(value: String): Self = StObject.set(x, "capacityId", value.asInstanceOf[js.Any])
+      inline def setCapacityId(value: String): Self = StObject.set(x, "capacityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityIdUndefined: Self = StObject.set(x, "capacityId", js.undefined)
+      inline def setCapacityIdUndefined: Self = StObject.set(x, "capacityId", js.undefined)
     }
   }
 }

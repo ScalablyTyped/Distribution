@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object EnumDefaultedMember_ {
   
-  @scala.inline
-  def apply(id: Identifier_): EnumDefaultedMember_ = {
+  inline def apply(id: Identifier_): EnumDefaultedMember_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumDefaultedMember")
     __obj.asInstanceOf[EnumDefaultedMember_]
   }
   
-  @scala.inline
-  implicit class EnumDefaultedMember_MutableBuilder[Self <: EnumDefaultedMember_] (val x: Self) extends AnyVal {
+  extension [Self <: EnumDefaultedMember_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EnumDefaultedMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EnumDefaultedMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

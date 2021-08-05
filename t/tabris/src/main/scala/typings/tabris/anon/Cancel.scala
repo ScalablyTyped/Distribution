@@ -14,31 +14,23 @@ trait Cancel extends StObject {
 }
 object Cancel {
   
-  @scala.inline
-  def apply(): Cancel = {
+  inline def apply(): Cancel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cancel]
   }
   
-  @scala.inline
-  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+  extension [Self <: Cancel](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setNeutral(value: String): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
+    inline def setNeutral(value: String): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeutralUndefined: Self = StObject.set(x, "neutral", js.undefined)
+    inline def setNeutralUndefined: Self = StObject.set(x, "neutral", js.undefined)
     
-    @scala.inline
-    def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+    inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
   }
 }

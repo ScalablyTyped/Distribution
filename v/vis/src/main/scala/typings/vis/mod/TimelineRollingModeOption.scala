@@ -12,25 +12,19 @@ trait TimelineRollingModeOption extends StObject {
 }
 object TimelineRollingModeOption {
   
-  @scala.inline
-  def apply(): TimelineRollingModeOption = {
+  inline def apply(): TimelineRollingModeOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineRollingModeOption]
   }
   
-  @scala.inline
-  implicit class TimelineRollingModeOptionMutableBuilder[Self <: TimelineRollingModeOption] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineRollingModeOption](x: Self) {
     
-    @scala.inline
-    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object isNumericMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNumeric(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNumeric(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -23,45 +23,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilePondEventPrefixed extends StObject
 object FilePondEventPrefixed {
   
-  @scala.inline
-  def FilePondColonaddfile: typings.filepond.filepondStrings.FilePondColonaddfile = "FilePond:addfile".asInstanceOf[typings.filepond.filepondStrings.FilePondColonaddfile]
+  inline def FilePondColonaddfile: typings.filepond.filepondStrings.FilePondColonaddfile = "FilePond:addfile".asInstanceOf[typings.filepond.filepondStrings.FilePondColonaddfile]
   
-  @scala.inline
-  def FilePondColonaddfileprogress: typings.filepond.filepondStrings.FilePondColonaddfileprogress = "FilePond:addfileprogress".asInstanceOf[typings.filepond.filepondStrings.FilePondColonaddfileprogress]
+  inline def FilePondColonaddfileprogress: typings.filepond.filepondStrings.FilePondColonaddfileprogress = "FilePond:addfileprogress".asInstanceOf[typings.filepond.filepondStrings.FilePondColonaddfileprogress]
   
-  @scala.inline
-  def FilePondColonaddfilestart: typings.filepond.filepondStrings.FilePondColonaddfilestart = "FilePond:addfilestart".asInstanceOf[typings.filepond.filepondStrings.FilePondColonaddfilestart]
+  inline def FilePondColonaddfilestart: typings.filepond.filepondStrings.FilePondColonaddfilestart = "FilePond:addfilestart".asInstanceOf[typings.filepond.filepondStrings.FilePondColonaddfilestart]
   
-  @scala.inline
-  def FilePondColonerror: typings.filepond.filepondStrings.FilePondColonerror = "FilePond:error".asInstanceOf[typings.filepond.filepondStrings.FilePondColonerror]
+  inline def FilePondColonerror: typings.filepond.filepondStrings.FilePondColonerror = "FilePond:error".asInstanceOf[typings.filepond.filepondStrings.FilePondColonerror]
   
-  @scala.inline
-  def FilePondColoninit: typings.filepond.filepondStrings.FilePondColoninit = "FilePond:init".asInstanceOf[typings.filepond.filepondStrings.FilePondColoninit]
+  inline def FilePondColoninit: typings.filepond.filepondStrings.FilePondColoninit = "FilePond:init".asInstanceOf[typings.filepond.filepondStrings.FilePondColoninit]
   
-  @scala.inline
-  def FilePondColonprocessfile: typings.filepond.filepondStrings.FilePondColonprocessfile = "FilePond:processfile".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfile]
+  inline def FilePondColonprocessfile: typings.filepond.filepondStrings.FilePondColonprocessfile = "FilePond:processfile".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfile]
   
-  @scala.inline
-  def FilePondColonprocessfileabort: typings.filepond.filepondStrings.FilePondColonprocessfileabort = "FilePond:processfileabort".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfileabort]
+  inline def FilePondColonprocessfileabort: typings.filepond.filepondStrings.FilePondColonprocessfileabort = "FilePond:processfileabort".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfileabort]
   
-  @scala.inline
-  def FilePondColonprocessfileprogress: typings.filepond.filepondStrings.FilePondColonprocessfileprogress = "FilePond:processfileprogress".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfileprogress]
+  inline def FilePondColonprocessfileprogress: typings.filepond.filepondStrings.FilePondColonprocessfileprogress = "FilePond:processfileprogress".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfileprogress]
   
-  @scala.inline
-  def FilePondColonprocessfilerevert: typings.filepond.filepondStrings.FilePondColonprocessfilerevert = "FilePond:processfilerevert".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfilerevert]
+  inline def FilePondColonprocessfilerevert: typings.filepond.filepondStrings.FilePondColonprocessfilerevert = "FilePond:processfilerevert".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfilerevert]
   
-  @scala.inline
-  def FilePondColonprocessfilestart: typings.filepond.filepondStrings.FilePondColonprocessfilestart = "FilePond:processfilestart".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfilestart]
+  inline def FilePondColonprocessfilestart: typings.filepond.filepondStrings.FilePondColonprocessfilestart = "FilePond:processfilestart".asInstanceOf[typings.filepond.filepondStrings.FilePondColonprocessfilestart]
   
-  @scala.inline
-  def FilePondColonremovefile: typings.filepond.filepondStrings.FilePondColonremovefile = "FilePond:removefile".asInstanceOf[typings.filepond.filepondStrings.FilePondColonremovefile]
+  inline def FilePondColonremovefile: typings.filepond.filepondStrings.FilePondColonremovefile = "FilePond:removefile".asInstanceOf[typings.filepond.filepondStrings.FilePondColonremovefile]
   
-  @scala.inline
-  def FilePondColonreorderfiles: typings.filepond.filepondStrings.FilePondColonreorderfiles = "FilePond:reorderfiles".asInstanceOf[typings.filepond.filepondStrings.FilePondColonreorderfiles]
+  inline def FilePondColonreorderfiles: typings.filepond.filepondStrings.FilePondColonreorderfiles = "FilePond:reorderfiles".asInstanceOf[typings.filepond.filepondStrings.FilePondColonreorderfiles]
   
-  @scala.inline
-  def FilePondColonupdatefiles: typings.filepond.filepondStrings.FilePondColonupdatefiles = "FilePond:updatefiles".asInstanceOf[typings.filepond.filepondStrings.FilePondColonupdatefiles]
+  inline def FilePondColonupdatefiles: typings.filepond.filepondStrings.FilePondColonupdatefiles = "FilePond:updatefiles".asInstanceOf[typings.filepond.filepondStrings.FilePondColonupdatefiles]
   
-  @scala.inline
-  def FilePondColonwarning: typings.filepond.filepondStrings.FilePondColonwarning = "FilePond:warning".asInstanceOf[typings.filepond.filepondStrings.FilePondColonwarning]
+  inline def FilePondColonwarning: typings.filepond.filepondStrings.FilePondColonwarning = "FilePond:warning".asInstanceOf[typings.filepond.filepondStrings.FilePondColonwarning]
 }

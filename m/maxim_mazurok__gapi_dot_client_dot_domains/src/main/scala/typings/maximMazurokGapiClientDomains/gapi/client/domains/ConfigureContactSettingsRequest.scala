@@ -23,40 +23,29 @@ trait ConfigureContactSettingsRequest extends StObject {
 }
 object ConfigureContactSettingsRequest {
   
-  @scala.inline
-  def apply(): ConfigureContactSettingsRequest = {
+  inline def apply(): ConfigureContactSettingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigureContactSettingsRequest]
   }
   
-  @scala.inline
-  implicit class ConfigureContactSettingsRequestMutableBuilder[Self <: ConfigureContactSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureContactSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
+    inline def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
+    inline def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
     
-    @scala.inline
-    def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
+    inline def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
     
-    @scala.inline
-    def setContactSettings(value: ContactSettings): Self = StObject.set(x, "contactSettings", value.asInstanceOf[js.Any])
+    inline def setContactSettings(value: ContactSettings): Self = StObject.set(x, "contactSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactSettingsUndefined: Self = StObject.set(x, "contactSettings", js.undefined)
+    inline def setContactSettingsUndefined: Self = StObject.set(x, "contactSettings", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

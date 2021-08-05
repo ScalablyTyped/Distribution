@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ReferenceReflection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: ReflectionFlags,
     id: ModelToObject[Double] | Double,
     kind: ModelToObject[ReflectionKind] | ReflectionKind,
@@ -27,10 +26,8 @@ object ReferenceReflection {
     __obj.asInstanceOf[ReferenceReflection]
   }
   
-  @scala.inline
-  implicit class ReferenceReflectionMutableBuilder[Self <: ReferenceReflection] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceReflection](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

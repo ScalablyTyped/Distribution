@@ -18,19 +18,15 @@ trait AssetDetails extends StObject {
 }
 object AssetDetails {
   
-  @scala.inline
-  def apply(answers: Answers, publisherNaturalIdentifier: String): AssetDetails = {
+  inline def apply(answers: Answers, publisherNaturalIdentifier: String): AssetDetails = {
     val __obj = js.Dynamic.literal(answers = answers.asInstanceOf[js.Any], publisherNaturalIdentifier = publisherNaturalIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDetails]
   }
   
-  @scala.inline
-  implicit class AssetDetailsMutableBuilder[Self <: AssetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AssetDetails](x: Self) {
     
-    @scala.inline
-    def setAnswers(value: Answers): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
+    inline def setAnswers(value: Answers): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherNaturalIdentifier(value: String): Self = StObject.set(x, "publisherNaturalIdentifier", value.asInstanceOf[js.Any])
+    inline def setPublisherNaturalIdentifier(value: String): Self = StObject.set(x, "publisherNaturalIdentifier", value.asInstanceOf[js.Any])
   }
 }

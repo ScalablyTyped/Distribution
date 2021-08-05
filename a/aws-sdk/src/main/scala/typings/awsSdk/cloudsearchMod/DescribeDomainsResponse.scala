@@ -10,19 +10,15 @@ trait DescribeDomainsResponse extends StObject {
 }
 object DescribeDomainsResponse {
   
-  @scala.inline
-  def apply(DomainStatusList: DomainStatusList): DescribeDomainsResponse = {
+  inline def apply(DomainStatusList: DomainStatusList): DescribeDomainsResponse = {
     val __obj = js.Dynamic.literal(DomainStatusList = DomainStatusList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDomainsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDomainsResponseMutableBuilder[Self <: DescribeDomainsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDomainsResponse](x: Self) {
     
-    @scala.inline
-    def setDomainStatusList(value: DomainStatusList): Self = StObject.set(x, "DomainStatusList", value.asInstanceOf[js.Any])
+    inline def setDomainStatusList(value: DomainStatusList): Self = StObject.set(x, "DomainStatusList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainStatusListVarargs(value: DomainStatus*): Self = StObject.set(x, "DomainStatusList", js.Array(value :_*))
+    inline def setDomainStatusListVarargs(value: DomainStatus*): Self = StObject.set(x, "DomainStatusList", js.Array(value :_*))
   }
 }

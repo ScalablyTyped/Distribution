@@ -13,8 +13,7 @@ object Editors {
        with Editor[T]
   object Checkbox {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,
@@ -41,8 +40,7 @@ object Editors {
   }
   object Date {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,
@@ -59,17 +57,13 @@ object Editors {
       __obj.asInstanceOf[Date[T]]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date[?], T /* <: SlickData */] (val x: Self & Date[T]) extends AnyVal {
+    extension [Self <: Date[?], T /* <: SlickData */](x: Self & Date[T]) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPosition(value: Position => Unit): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+      inline def setPosition(value: Position => Unit): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -93,8 +87,7 @@ object Editors {
   }
   object Editor {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,
@@ -108,32 +101,23 @@ object Editors {
       __obj.asInstanceOf[Editor[T]]
     }
     
-    @scala.inline
-    implicit class EditorMutableBuilder[Self <: Editor[?], T /* <: SlickData */] (val x: Self & Editor[T]) extends AnyVal {
+    extension [Self <: Editor[?], T /* <: SlickData */](x: Self & Editor[T]) {
       
-      @scala.inline
-      def setApplyValue(value: (T, String) => Unit): Self = StObject.set(x, "applyValue", js.Any.fromFunction2(value))
+      inline def setApplyValue(value: (T, String) => Unit): Self = StObject.set(x, "applyValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValueChanged(value: () => Boolean): Self = StObject.set(x, "isValueChanged", js.Any.fromFunction0(value))
+      inline def setIsValueChanged(value: () => Boolean): Self = StObject.set(x, "isValueChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadValue(value: T => Unit): Self = StObject.set(x, "loadValue", js.Any.fromFunction1(value))
+      inline def setLoadValue(value: T => Unit): Self = StObject.set(x, "loadValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeValue(value: () => js.Any): Self = StObject.set(x, "serializeValue", js.Any.fromFunction0(value))
+      inline def setSerializeValue(value: () => js.Any): Self = StObject.set(x, "serializeValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidate(value: () => ValidateResults): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+      inline def setValidate(value: () => ValidateResults): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
   }
   
@@ -157,53 +141,38 @@ object Editors {
   }
   object EditorOptions {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](column: Column[T], container: HTMLElement, grid: Grid[T]): EditorOptions[T] = {
+    inline def apply[T /* <: SlickData */](column: Column[T], container: HTMLElement, grid: Grid[T]): EditorOptions[T] = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditorOptions[T]]
     }
     
-    @scala.inline
-    implicit class EditorOptionsMutableBuilder[Self <: EditorOptions[?], T /* <: SlickData */] (val x: Self & EditorOptions[T]) extends AnyVal {
+    extension [Self <: EditorOptions[?], T /* <: SlickData */](x: Self & EditorOptions[T]) {
       
-      @scala.inline
-      def setCancelChanges(value: () => Unit): Self = StObject.set(x, "cancelChanges", js.Any.fromFunction0(value))
+      inline def setCancelChanges(value: () => Unit): Self = StObject.set(x, "cancelChanges", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancelChangesUndefined: Self = StObject.set(x, "cancelChanges", js.undefined)
+      inline def setCancelChangesUndefined: Self = StObject.set(x, "cancelChanges", js.undefined)
       
-      @scala.inline
-      def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitChanges(value: () => Unit): Self = StObject.set(x, "commitChanges", js.Any.fromFunction0(value))
+      inline def setCommitChanges(value: () => Unit): Self = StObject.set(x, "commitChanges", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommitChangesUndefined: Self = StObject.set(x, "commitChanges", js.undefined)
+      inline def setCommitChangesUndefined: Self = StObject.set(x, "commitChanges", js.undefined)
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid(value: Grid[T]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Grid[T]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridPosition(value: CellPosition): Self = StObject.set(x, "gridPosition", value.asInstanceOf[js.Any])
+      inline def setGridPosition(value: CellPosition): Self = StObject.set(x, "gridPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridPositionUndefined: Self = StObject.set(x, "gridPosition", js.undefined)
+      inline def setGridPositionUndefined: Self = StObject.set(x, "gridPosition", js.undefined)
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setPosition(value: CellPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: CellPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -212,8 +181,7 @@ object Editors {
        with Editor[T]
   object Integer {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,
@@ -246,8 +214,7 @@ object Editors {
   }
   object LongText {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       cancel: () => Unit,
       destroy: () => Unit,
@@ -267,26 +234,19 @@ object Editors {
       __obj.asInstanceOf[LongText[T]]
     }
     
-    @scala.inline
-    implicit class LongTextMutableBuilder[Self <: LongText[?], T /* <: SlickData */] (val x: Self & LongText[T]) extends AnyVal {
+    extension [Self <: LongText[?], T /* <: SlickData */](x: Self & LongText[T]) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleKeyDown(value: DOMEvent => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
+      inline def setHandleKeyDown(value: DOMEvent => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPosition(value: Position => Unit): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+      inline def setPosition(value: Position => Unit): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -295,8 +255,7 @@ object Editors {
        with Editor[T]
   object PercentComplete {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,
@@ -321,8 +280,7 @@ object Editors {
   }
   object Text {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,
@@ -338,14 +296,11 @@ object Editors {
       __obj.asInstanceOf[Text[T]]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text[?], T /* <: SlickData */] (val x: Self & Text[T]) extends AnyVal {
+    extension [Self <: Text[?], T /* <: SlickData */](x: Self & Text[T]) {
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -354,8 +309,7 @@ object Editors {
        with Editor[T]
   object YesNoSelect {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](
+    inline def apply[T /* <: SlickData */](
       applyValue: (T, String) => Unit,
       destroy: () => Unit,
       focus: () => Unit,

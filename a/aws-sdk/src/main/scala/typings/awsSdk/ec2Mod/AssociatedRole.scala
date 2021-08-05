@@ -28,37 +28,27 @@ trait AssociatedRole extends StObject {
 }
 object AssociatedRole {
   
-  @scala.inline
-  def apply(): AssociatedRole = {
+  inline def apply(): AssociatedRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociatedRole]
   }
   
-  @scala.inline
-  implicit class AssociatedRoleMutableBuilder[Self <: AssociatedRole] (val x: Self) extends AnyVal {
+  extension [Self <: AssociatedRole](x: Self) {
     
-    @scala.inline
-    def setAssociatedRoleArn(value: ResourceArn): Self = StObject.set(x, "AssociatedRoleArn", value.asInstanceOf[js.Any])
+    inline def setAssociatedRoleArn(value: ResourceArn): Self = StObject.set(x, "AssociatedRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedRoleArnUndefined: Self = StObject.set(x, "AssociatedRoleArn", js.undefined)
+    inline def setAssociatedRoleArnUndefined: Self = StObject.set(x, "AssociatedRoleArn", js.undefined)
     
-    @scala.inline
-    def setCertificateS3BucketName(value: String): Self = StObject.set(x, "CertificateS3BucketName", value.asInstanceOf[js.Any])
+    inline def setCertificateS3BucketName(value: String): Self = StObject.set(x, "CertificateS3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateS3BucketNameUndefined: Self = StObject.set(x, "CertificateS3BucketName", js.undefined)
+    inline def setCertificateS3BucketNameUndefined: Self = StObject.set(x, "CertificateS3BucketName", js.undefined)
     
-    @scala.inline
-    def setCertificateS3ObjectKey(value: String): Self = StObject.set(x, "CertificateS3ObjectKey", value.asInstanceOf[js.Any])
+    inline def setCertificateS3ObjectKey(value: String): Self = StObject.set(x, "CertificateS3ObjectKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateS3ObjectKeyUndefined: Self = StObject.set(x, "CertificateS3ObjectKey", js.undefined)
+    inline def setCertificateS3ObjectKeyUndefined: Self = StObject.set(x, "CertificateS3ObjectKey", js.undefined)
     
-    @scala.inline
-    def setEncryptionKmsKeyId(value: String): Self = StObject.set(x, "EncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setEncryptionKmsKeyId(value: String): Self = StObject.set(x, "EncryptionKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "EncryptionKmsKeyId", js.undefined)
+    inline def setEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "EncryptionKmsKeyId", js.undefined)
   }
 }

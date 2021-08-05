@@ -15,19 +15,15 @@ trait HttpLanguageRangeWithQualityHeaderValue extends StObject {
 }
 object HttpLanguageRangeWithQualityHeaderValue {
   
-  @scala.inline
-  def apply(languageRange: String, quality: Double): HttpLanguageRangeWithQualityHeaderValue = {
+  inline def apply(languageRange: String, quality: Double): HttpLanguageRangeWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(languageRange = languageRange.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpLanguageRangeWithQualityHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpLanguageRangeWithQualityHeaderValueMutableBuilder[Self <: HttpLanguageRangeWithQualityHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpLanguageRangeWithQualityHeaderValue](x: Self) {
     
-    @scala.inline
-    def setLanguageRange(value: String): Self = StObject.set(x, "languageRange", value.asInstanceOf[js.Any])
+    inline def setLanguageRange(value: String): Self = StObject.set(x, "languageRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }
 }

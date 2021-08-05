@@ -40,8 +40,7 @@ trait b2ManifoldPoint extends StObject {
 }
 object b2ManifoldPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Reset: () => Unit,
     Set: b2ManifoldPoint => Unit,
     m_id: b2ContactID,
@@ -53,25 +52,18 @@ object b2ManifoldPoint {
     __obj.asInstanceOf[b2ManifoldPoint]
   }
   
-  @scala.inline
-  implicit class b2ManifoldPointMutableBuilder[Self <: b2ManifoldPoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2ManifoldPoint](x: Self) {
     
-    @scala.inline
-    def setM_id(value: b2ContactID): Self = StObject.set(x, "m_id", value.asInstanceOf[js.Any])
+    inline def setM_id(value: b2ContactID): Self = StObject.set(x, "m_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_localpoint(value: b2Vec2): Self = StObject.set(x, "m_localpoint", value.asInstanceOf[js.Any])
+    inline def setM_localpoint(value: b2Vec2): Self = StObject.set(x, "m_localpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_normalImpulse(value: Double): Self = StObject.set(x, "m_normalImpulse", value.asInstanceOf[js.Any])
+    inline def setM_normalImpulse(value: Double): Self = StObject.set(x, "m_normalImpulse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_tangentImpulse(value: Double): Self = StObject.set(x, "m_tangentImpulse", value.asInstanceOf[js.Any])
+    inline def setM_tangentImpulse(value: Double): Self = StObject.set(x, "m_tangentImpulse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: b2ManifoldPoint => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+    inline def setSet(value: b2ManifoldPoint => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }
 }

@@ -28,26 +28,20 @@ trait HttpProgressEvent
 }
 object HttpProgressEvent {
   
-  @scala.inline
-  def apply(loaded: Double, `type`: DownloadProgress | UploadProgress): HttpProgressEvent = {
+  inline def apply(loaded: Double, `type`: DownloadProgress | UploadProgress): HttpProgressEvent = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpProgressEvent]
   }
   
-  @scala.inline
-  implicit class HttpProgressEventMutableBuilder[Self <: HttpProgressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HttpProgressEvent](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setType(value: DownloadProgress | UploadProgress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DownloadProgress | UploadProgress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

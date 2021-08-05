@@ -13,16 +13,13 @@ trait EnterpriseAdminGetSharedStorageBillingGheEndpoint extends StObject {
 }
 object EnterpriseAdminGetSharedStorageBillingGheEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String): EnterpriseAdminGetSharedStorageBillingGheEndpoint = {
+  inline def apply(enterprise: String): EnterpriseAdminGetSharedStorageBillingGheEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminGetSharedStorageBillingGheEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetSharedStorageBillingGheEndpointMutableBuilder[Self <: EnterpriseAdminGetSharedStorageBillingGheEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetSharedStorageBillingGheEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
   }
 }

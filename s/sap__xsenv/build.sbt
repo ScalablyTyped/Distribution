@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sap__xsenv"
-version := "2.0-dt-20200925Z-e9e778"
+version := "2.0-dt-20200925Z-452ec9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

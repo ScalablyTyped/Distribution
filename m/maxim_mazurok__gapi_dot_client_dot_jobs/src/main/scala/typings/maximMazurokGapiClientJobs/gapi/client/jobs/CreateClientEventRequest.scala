@@ -11,19 +11,15 @@ trait CreateClientEventRequest extends StObject {
 }
 object CreateClientEventRequest {
   
-  @scala.inline
-  def apply(): CreateClientEventRequest = {
+  inline def apply(): CreateClientEventRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClientEventRequest]
   }
   
-  @scala.inline
-  implicit class CreateClientEventRequestMutableBuilder[Self <: CreateClientEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClientEventRequest](x: Self) {
     
-    @scala.inline
-    def setClientEvent(value: ClientEvent): Self = StObject.set(x, "clientEvent", value.asInstanceOf[js.Any])
+    inline def setClientEvent(value: ClientEvent): Self = StObject.set(x, "clientEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientEventUndefined: Self = StObject.set(x, "clientEvent", js.undefined)
+    inline def setClientEventUndefined: Self = StObject.set(x, "clientEvent", js.undefined)
   }
 }

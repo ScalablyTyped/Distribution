@@ -13,16 +13,13 @@ trait RestoreApiKeyResponse extends StObject {
 }
 object RestoreApiKeyResponse {
   
-  @scala.inline
-  def apply(createdAt: String): RestoreApiKeyResponse = {
+  inline def apply(createdAt: String): RestoreApiKeyResponse = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreApiKeyResponse]
   }
   
-  @scala.inline
-  implicit class RestoreApiKeyResponseMutableBuilder[Self <: RestoreApiKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreApiKeyResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
   }
 }

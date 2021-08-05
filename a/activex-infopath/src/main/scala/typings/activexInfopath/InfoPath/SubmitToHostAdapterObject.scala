@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SubmitToHostAdapterObject extends StObject {
   
-  @JSName("InfoPath.SubmitToHostAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.SubmitToHostAdapterObject_typekey")
   var InfoPathDotSubmitToHostAdapterObject_typekey: SubmitToHostAdapterObject
   
   val Name: String
@@ -21,8 +21,7 @@ trait SubmitToHostAdapterObject extends StObject {
 }
 object SubmitToHostAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotSubmitToHostAdapterObject_typekey: SubmitToHostAdapterObject,
     Name: String,
     Query: () => Unit,
@@ -35,25 +34,18 @@ object SubmitToHostAdapterObject {
     __obj.asInstanceOf[SubmitToHostAdapterObject]
   }
   
-  @scala.inline
-  implicit class SubmitToHostAdapterObjectMutableBuilder[Self <: SubmitToHostAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitToHostAdapterObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotSubmitToHostAdapterObject_typekey(value: SubmitToHostAdapterObject): Self = StObject.set(x, "InfoPath.SubmitToHostAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSubmitToHostAdapterObject_typekey(value: SubmitToHostAdapterObject): Self = StObject.set(x, "InfoPath.SubmitToHostAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
   }
 }

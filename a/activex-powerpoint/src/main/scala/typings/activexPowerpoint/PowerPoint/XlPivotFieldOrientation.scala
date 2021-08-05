@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotFieldOrientation extends StObject
 object XlPivotFieldOrientation {
   
-  @scala.inline
-  def xlColumnField: `2` = 2.asInstanceOf[`2`]
+  inline def xlColumnField: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlDataField: `4` = 4.asInstanceOf[`4`]
+  inline def xlDataField: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlHidden: `0` = 0.asInstanceOf[`0`]
+  inline def xlHidden: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlPageField: `3` = 3.asInstanceOf[`3`]
+  inline def xlPageField: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlRowField: `1` = 1.asInstanceOf[`1`]
+  inline def xlRowField: `1` = 1.asInstanceOf[`1`]
 }

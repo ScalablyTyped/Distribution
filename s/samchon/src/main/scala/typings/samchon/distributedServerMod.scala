@@ -54,11 +54,11 @@ object distributedServerMod {
     /**
       * IP address of target external system to connect.
       */
-    var ip: String = js.native
+    /* protected */ var ip: String = js.native
     
     /**
       * Port number of target external system to connect.
       */
-    var port: Double = js.native
+    /* protected */ var port: Double = js.native
   }
 }

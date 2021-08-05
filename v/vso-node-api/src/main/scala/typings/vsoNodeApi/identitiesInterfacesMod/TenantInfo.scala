@@ -14,22 +14,17 @@ trait TenantInfo extends StObject {
 }
 object TenantInfo {
   
-  @scala.inline
-  def apply(homeTenant: Boolean, tenantId: String, tenantName: String): TenantInfo = {
+  inline def apply(homeTenant: Boolean, tenantId: String, tenantName: String): TenantInfo = {
     val __obj = js.Dynamic.literal(homeTenant = homeTenant.asInstanceOf[js.Any], tenantId = tenantId.asInstanceOf[js.Any], tenantName = tenantName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TenantInfo]
   }
   
-  @scala.inline
-  implicit class TenantInfoMutableBuilder[Self <: TenantInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TenantInfo](x: Self) {
     
-    @scala.inline
-    def setHomeTenant(value: Boolean): Self = StObject.set(x, "homeTenant", value.asInstanceOf[js.Any])
+    inline def setHomeTenant(value: Boolean): Self = StObject.set(x, "homeTenant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantName(value: String): Self = StObject.set(x, "tenantName", value.asInstanceOf[js.Any])
+    inline def setTenantName(value: String): Self = StObject.set(x, "tenantName", value.asInstanceOf[js.Any])
   }
 }

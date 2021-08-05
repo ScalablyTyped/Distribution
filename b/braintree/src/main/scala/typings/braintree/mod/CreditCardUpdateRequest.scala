@@ -23,55 +23,39 @@ trait CreditCardUpdateRequest extends StObject {
 }
 object CreditCardUpdateRequest {
   
-  @scala.inline
-  def apply(): CreditCardUpdateRequest = {
+  inline def apply(): CreditCardUpdateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreditCardUpdateRequest]
   }
   
-  @scala.inline
-  implicit class CreditCardUpdateRequestMutableBuilder[Self <: CreditCardUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreditCardUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setBillingAddress(value: CountryCodeAlpha2): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: CountryCodeAlpha2): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
     
-    @scala.inline
-    def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+    inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
+    inline def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
-    @scala.inline
-    def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
-    @scala.inline
-    def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait IXmlDocumentFragment
      with IXmlNode
 object IXmlDocumentFragment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,

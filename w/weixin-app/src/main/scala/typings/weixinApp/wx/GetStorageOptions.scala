@@ -18,19 +18,15 @@ trait GetStorageOptions
 }
 object GetStorageOptions {
   
-  @scala.inline
-  def apply(key: String, success: `0` => Unit): GetStorageOptions = {
+  inline def apply(key: String, success: `0` => Unit): GetStorageOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetStorageOptions]
   }
   
-  @scala.inline
-  implicit class GetStorageOptionsMutableBuilder[Self <: GetStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: `0` => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: `0` => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallType extends StObject
 object CallType {
   
-  @scala.inline
-  def `1`: typings.algoliaTransporter.algoliaTransporterNumbers.`1` = 1.asInstanceOf[typings.algoliaTransporter.algoliaTransporterNumbers.`1`]
+  inline def `1`: typings.algoliaTransporter.algoliaTransporterNumbers.`1` = 1.asInstanceOf[typings.algoliaTransporter.algoliaTransporterNumbers.`1`]
   
-  @scala.inline
-  def `2`: typings.algoliaTransporter.algoliaTransporterNumbers.`2` = 2.asInstanceOf[typings.algoliaTransporter.algoliaTransporterNumbers.`2`]
+  inline def `2`: typings.algoliaTransporter.algoliaTransporterNumbers.`2` = 2.asInstanceOf[typings.algoliaTransporter.algoliaTransporterNumbers.`2`]
   
-  @scala.inline
-  def `3`: typings.algoliaTransporter.algoliaTransporterNumbers.`3` = 3.asInstanceOf[typings.algoliaTransporter.algoliaTransporterNumbers.`3`]
+  inline def `3`: typings.algoliaTransporter.algoliaTransporterNumbers.`3` = 3.asInstanceOf[typings.algoliaTransporter.algoliaTransporterNumbers.`3`]
 }

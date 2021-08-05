@@ -13,16 +13,13 @@ trait IAddResult
 }
 object IAddResult {
   
-  @scala.inline
-  def apply(_id: DocumentId, errMsg: String): IAddResult = {
+  inline def apply(_id: DocumentId, errMsg: String): IAddResult = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddResult]
   }
   
-  @scala.inline
-  implicit class IAddResultMutableBuilder[Self <: IAddResult] (val x: Self) extends AnyVal {
+  extension [Self <: IAddResult](x: Self) {
     
-    @scala.inline
-    def set_id(value: DocumentId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: DocumentId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

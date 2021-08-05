@@ -28,8 +28,7 @@ trait DockingEvent
 }
 object DockingEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MousePos: Point,
     Source: XInterface,
     TrackingRectangle: Rectangle,
@@ -40,19 +39,14 @@ object DockingEvent {
     __obj.asInstanceOf[DockingEvent]
   }
   
-  @scala.inline
-  implicit class DockingEventMutableBuilder[Self <: DockingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DockingEvent](x: Self) {
     
-    @scala.inline
-    def setBInteractive(value: Boolean): Self = StObject.set(x, "bInteractive", value.asInstanceOf[js.Any])
+    inline def setBInteractive(value: Boolean): Self = StObject.set(x, "bInteractive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBLiveMode(value: Boolean): Self = StObject.set(x, "bLiveMode", value.asInstanceOf[js.Any])
+    inline def setBLiveMode(value: Boolean): Self = StObject.set(x, "bLiveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePos(value: Point): Self = StObject.set(x, "MousePos", value.asInstanceOf[js.Any])
+    inline def setMousePos(value: Point): Self = StObject.set(x, "MousePos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingRectangle(value: Rectangle): Self = StObject.set(x, "TrackingRectangle", value.asInstanceOf[js.Any])
+    inline def setTrackingRectangle(value: Rectangle): Self = StObject.set(x, "TrackingRectangle", value.asInstanceOf[js.Any])
   }
 }

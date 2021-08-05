@@ -38,43 +38,31 @@ trait RegisterTypeInput extends StObject {
 }
 object RegisterTypeInput {
   
-  @scala.inline
-  def apply(SchemaHandlerPackage: S3Url, TypeName: TypeName): RegisterTypeInput = {
+  inline def apply(SchemaHandlerPackage: S3Url, TypeName: TypeName): RegisterTypeInput = {
     val __obj = js.Dynamic.literal(SchemaHandlerPackage = SchemaHandlerPackage.asInstanceOf[js.Any], TypeName = TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterTypeInput]
   }
   
-  @scala.inline
-  implicit class RegisterTypeInputMutableBuilder[Self <: RegisterTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTypeInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: RequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: RequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
-    @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "LoggingConfig", value.asInstanceOf[js.Any])
+    inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "LoggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigUndefined: Self = StObject.set(x, "LoggingConfig", js.undefined)
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "LoggingConfig", js.undefined)
     
-    @scala.inline
-    def setSchemaHandlerPackage(value: S3Url): Self = StObject.set(x, "SchemaHandlerPackage", value.asInstanceOf[js.Any])
+    inline def setSchemaHandlerPackage(value: S3Url): Self = StObject.set(x, "SchemaHandlerPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait DocumentHeaderField extends StObject {
 }
 object DocumentHeaderField {
   
-  @scala.inline
-  def apply(Name: String, Value: String): DocumentHeaderField = {
+  inline def apply(Name: String, Value: String): DocumentHeaderField = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentHeaderField]
   }
   
-  @scala.inline
-  implicit class DocumentHeaderFieldMutableBuilder[Self <: DocumentHeaderField] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHeaderField](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

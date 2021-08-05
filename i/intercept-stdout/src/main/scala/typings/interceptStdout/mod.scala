@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(stdoutIntercept: hookFunction): unhookFunction = ^.asInstanceOf[js.Dynamic].apply(stdoutIntercept.asInstanceOf[js.Any]).asInstanceOf[unhookFunction]
-  @scala.inline
-  def apply(stdoutIntercept: hookFunction, stderrIntercept: hookFunction): unhookFunction = (^.asInstanceOf[js.Dynamic].apply(stdoutIntercept.asInstanceOf[js.Any], stderrIntercept.asInstanceOf[js.Any])).asInstanceOf[unhookFunction]
+  inline def apply(stdoutIntercept: hookFunction): unhookFunction = ^.asInstanceOf[js.Dynamic].apply(stdoutIntercept.asInstanceOf[js.Any]).asInstanceOf[unhookFunction]
+  inline def apply(stdoutIntercept: hookFunction, stderrIntercept: hookFunction): unhookFunction = (^.asInstanceOf[js.Dynamic].apply(stdoutIntercept.asInstanceOf[js.Any], stderrIntercept.asInstanceOf[js.Any])).asInstanceOf[unhookFunction]
   
   @JSImport("intercept-stdout", JSImport.Namespace)
   @js.native

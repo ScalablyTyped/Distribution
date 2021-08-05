@@ -13,8 +13,7 @@ object combinetemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](template: T): Property[CombinedTemplate[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(template.asInstanceOf[js.Any]).asInstanceOf[Property[CombinedTemplate[T]]]
+  inline def default[T](template: T): Property[CombinedTemplate[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(template.asInstanceOf[js.Any]).asInstanceOf[Property[CombinedTemplate[T]]]
   
   @js.native
   trait ArrayTemplate[A]

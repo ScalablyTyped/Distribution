@@ -14,16 +14,13 @@ trait InstanceFleetLaunchSpecificationsOnDemandSpecification extends StObject {
 }
 object InstanceFleetLaunchSpecificationsOnDemandSpecification {
   
-  @scala.inline
-  def apply(allocationStrategy: Input[String]): InstanceFleetLaunchSpecificationsOnDemandSpecification = {
+  inline def apply(allocationStrategy: Input[String]): InstanceFleetLaunchSpecificationsOnDemandSpecification = {
     val __obj = js.Dynamic.literal(allocationStrategy = allocationStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetLaunchSpecificationsOnDemandSpecification]
   }
   
-  @scala.inline
-  implicit class InstanceFleetLaunchSpecificationsOnDemandSpecificationMutableBuilder[Self <: InstanceFleetLaunchSpecificationsOnDemandSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetLaunchSpecificationsOnDemandSpecification](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
   }
 }

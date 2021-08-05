@@ -12,105 +12,89 @@ object convictStrings {
   sealed trait Asterisk
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait InternalSchema extends StObject
-  @scala.inline
-  def InternalSchema: InternalSchema = "InternalSchema".asInstanceOf[InternalSchema]
+  inline def InternalSchema: InternalSchema = "InternalSchema".asInstanceOf[InternalSchema]
   
   @js.native
   sealed trait Overwrite extends StObject
-  @scala.inline
-  def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
+  inline def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
   
   @js.native
   sealed trait Schema extends StObject
-  @scala.inline
-  def Schema: Schema = "Schema".asInstanceOf[Schema]
+  inline def Schema: Schema = "Schema".asInstanceOf[Schema]
   
   @js.native
   sealed trait duration
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
   sealed trait email
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait int
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
   sealed trait ipaddress
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def ipaddress: ipaddress = "ipaddress".asInstanceOf[ipaddress]
+  inline def ipaddress: ipaddress = "ipaddress".asInstanceOf[ipaddress]
   
   @js.native
   sealed trait nat
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def nat: nat = "nat".asInstanceOf[nat]
+  inline def nat: nat = "nat".asInstanceOf[nat]
   
   @js.native
   sealed trait port
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def port: port = "port".asInstanceOf[port]
+  inline def port: port = "port".asInstanceOf[port]
   
   @js.native
   sealed trait port_or_windows_named_pipe
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def port_or_windows_named_pipe: port_or_windows_named_pipe = "port_or_windows_named_pipe".asInstanceOf[port_or_windows_named_pipe]
+  inline def port_or_windows_named_pipe: port_or_windows_named_pipe = "port_or_windows_named_pipe".asInstanceOf[port_or_windows_named_pipe]
   
   @js.native
   sealed trait strict
     extends StObject
        with ValidationMethod
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
   sealed trait timestamp
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
   sealed trait url
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
   sealed trait warn
     extends StObject
        with ValidationMethod
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait windows_named_pipe
     extends StObject
        with _PredefinedFormat
-  @scala.inline
-  def windows_named_pipe: windows_named_pipe = "windows_named_pipe".asInstanceOf[windows_named_pipe]
+  inline def windows_named_pipe: windows_named_pipe = "windows_named_pipe".asInstanceOf[windows_named_pipe]
 }

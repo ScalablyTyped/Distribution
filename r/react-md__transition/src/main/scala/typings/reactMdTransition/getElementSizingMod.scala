@@ -11,10 +11,8 @@ object getElementSizingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
-  @scala.inline
-  def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
+  inline def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
+  inline def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
   
   trait CollapseSizing extends StObject {
     
@@ -26,32 +24,24 @@ object getElementSizingMod {
   }
   object CollapseSizing {
     
-    @scala.inline
-    def apply(): CollapseSizing = {
+    inline def apply(): CollapseSizing = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapseSizing]
     }
     
-    @scala.inline
-    implicit class CollapseSizingMutableBuilder[Self <: CollapseSizing] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseSizing](x: Self) {
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+      inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      @scala.inline
-      def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+      inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     }
   }
 }

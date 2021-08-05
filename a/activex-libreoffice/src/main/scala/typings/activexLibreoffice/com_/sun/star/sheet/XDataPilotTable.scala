@@ -26,8 +26,7 @@ trait XDataPilotTable
 }
 object XDataPilotTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputRange: CellRangeAddress,
     acquire: () => Unit,
     getOutputRange: () => CellRangeAddress,
@@ -39,16 +38,12 @@ object XDataPilotTable {
     __obj.asInstanceOf[XDataPilotTable]
   }
   
-  @scala.inline
-  implicit class XDataPilotTableMutableBuilder[Self <: XDataPilotTable] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotTable](x: Self) {
     
-    @scala.inline
-    def setGetOutputRange(value: () => CellRangeAddress): Self = StObject.set(x, "getOutputRange", js.Any.fromFunction0(value))
+    inline def setGetOutputRange(value: () => CellRangeAddress): Self = StObject.set(x, "getOutputRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutputRange(value: CellRangeAddress): Self = StObject.set(x, "OutputRange", value.asInstanceOf[js.Any])
+    inline def setOutputRange(value: CellRangeAddress): Self = StObject.set(x, "OutputRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

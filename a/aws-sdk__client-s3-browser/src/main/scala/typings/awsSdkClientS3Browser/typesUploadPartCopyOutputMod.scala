@@ -55,56 +55,40 @@ object typesUploadPartCopyOutputMod {
   }
   object UploadPartCopyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UploadPartCopyOutput = {
+    inline def apply($metadata: ResponseMetadata): UploadPartCopyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadPartCopyOutput]
     }
     
-    @scala.inline
-    implicit class UploadPartCopyOutputMutableBuilder[Self <: UploadPartCopyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UploadPartCopyOutput](x: Self) {
       
-      @scala.inline
-      def setCopyPartResult(value: UnmarshalledCopyPartResult): Self = StObject.set(x, "CopyPartResult", value.asInstanceOf[js.Any])
+      inline def setCopyPartResult(value: UnmarshalledCopyPartResult): Self = StObject.set(x, "CopyPartResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyPartResultUndefined: Self = StObject.set(x, "CopyPartResult", js.undefined)
+      inline def setCopyPartResultUndefined: Self = StObject.set(x, "CopyPartResult", js.undefined)
       
-      @scala.inline
-      def setCopySourceVersionId(value: String): Self = StObject.set(x, "CopySourceVersionId", value.asInstanceOf[js.Any])
+      inline def setCopySourceVersionId(value: String): Self = StObject.set(x, "CopySourceVersionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopySourceVersionIdUndefined: Self = StObject.set(x, "CopySourceVersionId", js.undefined)
+      inline def setCopySourceVersionIdUndefined: Self = StObject.set(x, "CopySourceVersionId", js.undefined)
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
       
-      @scala.inline
-      def setSSECustomerAlgorithm(value: String): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSSECustomerAlgorithm(value: String): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
+      inline def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
       
-      @scala.inline
-      def setSSECustomerKeyMD5(value: String): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+      inline def setSSECustomerKeyMD5(value: String): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
+      inline def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
       
-      @scala.inline
-      def setSSEKMSKeyId(value: String): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
+      inline def setSSEKMSKeyId(value: String): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
+      inline def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryption(value: AES256 | awsColonkms | String): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: AES256 | awsColonkms | String): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
     }
   }
 }

@@ -36,91 +36,63 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(): Config = {
+  inline def apply(): Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setBloomrun(value: BloomrunConfig): Self = StObject.set(x, "bloomrun", value.asInstanceOf[js.Any])
+    inline def setBloomrun(value: BloomrunConfig): Self = StObject.set(x, "bloomrun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBloomrunUndefined: Self = StObject.set(x, "bloomrun", js.undefined)
+    inline def setBloomrunUndefined: Self = StObject.set(x, "bloomrun", js.undefined)
     
-    @scala.inline
-    def setChildLogger(value: Boolean): Self = StObject.set(x, "childLogger", value.asInstanceOf[js.Any])
+    inline def setChildLogger(value: Boolean): Self = StObject.set(x, "childLogger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildLoggerUndefined: Self = StObject.set(x, "childLogger", js.undefined)
+    inline def setChildLoggerUndefined: Self = StObject.set(x, "childLogger", js.undefined)
     
-    @scala.inline
-    def setErrio(value: ErrioConfig): Self = StObject.set(x, "errio", value.asInstanceOf[js.Any])
+    inline def setErrio(value: ErrioConfig): Self = StObject.set(x, "errio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrioUndefined: Self = StObject.set(x, "errio", js.undefined)
+    inline def setErrioUndefined: Self = StObject.set(x, "errio", js.undefined)
     
-    @scala.inline
-    def setLoad(value: LoadConfig): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: LoadConfig): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setLogger(value: Logger | Stream): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Logger | Stream): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    @scala.inline
-    def setMaxRecursion(value: Double): Self = StObject.set(x, "maxRecursion", value.asInstanceOf[js.Any])
+    inline def setMaxRecursion(value: Double): Self = StObject.set(x, "maxRecursion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecursionUndefined: Self = StObject.set(x, "maxRecursion", js.undefined)
+    inline def setMaxRecursionUndefined: Self = StObject.set(x, "maxRecursion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPluginTimeout(value: Double): Self = StObject.set(x, "pluginTimeout", value.asInstanceOf[js.Any])
+    inline def setPluginTimeout(value: Double): Self = StObject.set(x, "pluginTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginTimeoutUndefined: Self = StObject.set(x, "pluginTimeout", js.undefined)
+    inline def setPluginTimeoutUndefined: Self = StObject.set(x, "pluginTimeout", js.undefined)
     
-    @scala.inline
-    def setPrettyLog(value: Boolean): Self = StObject.set(x, "prettyLog", value.asInstanceOf[js.Any])
+    inline def setPrettyLog(value: Boolean): Self = StObject.set(x, "prettyLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyLogUndefined: Self = StObject.set(x, "prettyLog", js.undefined)
+    inline def setPrettyLogUndefined: Self = StObject.set(x, "prettyLog", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double | `2000`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double | `2000`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTraceLog(value: Boolean): Self = StObject.set(x, "traceLog", value.asInstanceOf[js.Any])
+    inline def setTraceLog(value: Boolean): Self = StObject.set(x, "traceLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceLogUndefined: Self = StObject.set(x, "traceLog", js.undefined)
+    inline def setTraceLogUndefined: Self = StObject.set(x, "traceLog", js.undefined)
   }
 }

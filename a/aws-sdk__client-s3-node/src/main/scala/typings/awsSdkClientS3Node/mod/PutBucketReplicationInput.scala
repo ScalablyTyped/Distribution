@@ -10,8 +10,7 @@ trait PutBucketReplicationInput
      with typings.awsSdkClientS3Node.typesPutBucketReplicationInputMod.PutBucketReplicationInput
 object PutBucketReplicationInput {
   
-  @scala.inline
-  def apply(Bucket: String, ReplicationConfiguration: ReplicationConfiguration): PutBucketReplicationInput = {
+  inline def apply(Bucket: String, ReplicationConfiguration: ReplicationConfiguration): PutBucketReplicationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ReplicationConfiguration = ReplicationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketReplicationInput]
   }

@@ -8,6 +8,5 @@ object reactLoadableStrings {
   
   @js.native
   sealed trait OptionsWithMap extends StObject
-  @scala.inline
-  def OptionsWithMap: OptionsWithMap = "OptionsWithMap".asInstanceOf[OptionsWithMap]
+  inline def OptionsWithMap: OptionsWithMap = "OptionsWithMap".asInstanceOf[OptionsWithMap]
 }

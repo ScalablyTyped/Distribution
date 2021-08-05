@@ -10,16 +10,13 @@ trait GeoChartSelection extends StObject {
 }
 object GeoChartSelection {
   
-  @scala.inline
-  def apply(row: Double): GeoChartSelection = {
+  inline def apply(row: Double): GeoChartSelection = {
     val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoChartSelection]
   }
   
-  @scala.inline
-  implicit class GeoChartSelectionMutableBuilder[Self <: GeoChartSelection] (val x: Self) extends AnyVal {
+  extension [Self <: GeoChartSelection](x: Self) {
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

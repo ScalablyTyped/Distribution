@@ -14,28 +14,21 @@ trait GoogleCloudRecommendationengineV1beta1ListUserEventsResponse extends StObj
 }
 object GoogleCloudRecommendationengineV1beta1ListUserEventsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ListUserEventsResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ListUserEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ListUserEventsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ListUserEventsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ListUserEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ListUserEventsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setUserEvents(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
+    inline def setUserEvents(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEventsUndefined: Self = StObject.set(x, "userEvents", js.undefined)
+    inline def setUserEventsUndefined: Self = StObject.set(x, "userEvents", js.undefined)
     
-    @scala.inline
-    def setUserEventsVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEvents", js.Array(value :_*))
+    inline def setUserEventsVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEvents", js.Array(value :_*))
   }
 }

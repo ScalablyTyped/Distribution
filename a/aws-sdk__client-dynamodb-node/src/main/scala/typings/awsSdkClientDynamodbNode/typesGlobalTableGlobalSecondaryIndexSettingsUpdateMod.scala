@@ -27,29 +27,22 @@ object typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod {
   }
   object GlobalTableGlobalSecondaryIndexSettingsUpdate {
     
-    @scala.inline
-    def apply(IndexName: String): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
+    inline def apply(IndexName: String): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class GlobalTableGlobalSecondaryIndexSettingsUpdateMutableBuilder[Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setProvisionedWriteCapacityUnits(value: Double): Self = StObject.set(x, "ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityUnits(value: Double): Self = StObject.set(x, "ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityUnits", js.undefined)
+      inline def setProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityUnits", js.undefined)
     }
   }
   
@@ -65,20 +58,16 @@ object typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod {
   }
   object UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate {
     
-    @scala.inline
-    def apply(IndexName: String): UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate = {
+    inline def apply(IndexName: String): UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdateMutableBuilder[Self <: UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: UnmarshalledAutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: UnmarshalledAutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
     }
   }
 }

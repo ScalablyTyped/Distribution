@@ -12,19 +12,15 @@ trait Critical extends StObject {
 }
 object Critical {
   
-  @scala.inline
-  def apply(draggable: DraggableDescriptor, droppable: DroppableDescriptor): Critical = {
+  inline def apply(draggable: DraggableDescriptor, droppable: DroppableDescriptor): Critical = {
     val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], droppable = droppable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Critical]
   }
   
-  @scala.inline
-  implicit class CriticalMutableBuilder[Self <: Critical] (val x: Self) extends AnyVal {
+  extension [Self <: Critical](x: Self) {
     
-    @scala.inline
-    def setDraggable(value: DraggableDescriptor): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: DraggableDescriptor): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppable(value: DroppableDescriptor): Self = StObject.set(x, "droppable", value.asInstanceOf[js.Any])
+    inline def setDroppable(value: DroppableDescriptor): Self = StObject.set(x, "droppable", value.asInstanceOf[js.Any])
   }
 }

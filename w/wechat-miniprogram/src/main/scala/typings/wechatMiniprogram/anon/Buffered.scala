@@ -11,16 +11,13 @@ trait Buffered extends StObject {
 }
 object Buffered {
   
-  @scala.inline
-  def apply(buffered: Double): Buffered = {
+  inline def apply(buffered: Double): Buffered = {
     val __obj = js.Dynamic.literal(buffered = buffered.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffered]
   }
   
-  @scala.inline
-  implicit class BufferedMutableBuilder[Self <: Buffered] (val x: Self) extends AnyVal {
+  extension [Self <: Buffered](x: Self) {
     
-    @scala.inline
-    def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+    inline def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
   }
 }

@@ -62,20 +62,17 @@ object keyDispatcherMod {
     @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._DISPATCHER_KEY")
     @js.native
     def _DISPATCHER_KEY: js.Any = js.native
-    @scala.inline
-    def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    inline def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._KEYDOWN_EVENT_NAME")
     @js.native
     def _KEYDOWN_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _KEYDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _KEYDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._KEYUP_EVENT_NAME")
     @js.native
     def _KEYUP_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _KEYUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _KEYUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Key Dispatcher. If one already exists it will be returned;
@@ -83,8 +80,7 @@ object keyDispatcherMod {
       *
       * @return {Dispatchers.Key}
       */
-    @scala.inline
-    def getDispatcher(): typings.plottable.dispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typings.plottable.dispatchersMod.Key]
+    inline def getDispatcher(): typings.plottable.dispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typings.plottable.dispatchersMod.Key]
   }
   
   type KeyCallback = js.Function2[/* keyCode */ Double, /* event */ KeyboardEvent, Unit]

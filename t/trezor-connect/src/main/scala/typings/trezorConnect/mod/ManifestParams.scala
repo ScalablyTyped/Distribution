@@ -12,19 +12,15 @@ trait ManifestParams extends StObject {
 }
 object ManifestParams {
   
-  @scala.inline
-  def apply(appUrl: String, email: String): ManifestParams = {
+  inline def apply(appUrl: String, email: String): ManifestParams = {
     val __obj = js.Dynamic.literal(appUrl = appUrl.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestParams]
   }
   
-  @scala.inline
-  implicit class ManifestParamsMutableBuilder[Self <: ManifestParams] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestParams](x: Self) {
     
-    @scala.inline
-    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
+    inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

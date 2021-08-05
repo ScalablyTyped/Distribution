@@ -15,20 +15,16 @@ trait SliderMinimumAction
 }
 object SliderMinimumAction {
   
-  @scala.inline
-  def apply(min: Double): SliderMinimumAction = {
+  inline def apply(min: Double): SliderMinimumAction = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("minimum")
     __obj.asInstanceOf[SliderMinimumAction]
   }
   
-  @scala.inline
-  implicit class SliderMinimumActionMutableBuilder[Self <: SliderMinimumAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderMinimumAction](x: Self) {
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: minimum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: minimum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

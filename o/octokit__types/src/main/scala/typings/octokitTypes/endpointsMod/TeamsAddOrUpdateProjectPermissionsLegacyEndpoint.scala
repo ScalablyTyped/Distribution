@@ -28,25 +28,19 @@ trait TeamsAddOrUpdateProjectPermissionsLegacyEndpoint
 }
 object TeamsAddOrUpdateProjectPermissionsLegacyEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], project_id: Double, team_id: Double): TeamsAddOrUpdateProjectPermissionsLegacyEndpoint = {
+  inline def apply(mediaType: `0`[inertia], project_id: Double, team_id: Double): TeamsAddOrUpdateProjectPermissionsLegacyEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateProjectPermissionsLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsAddOrUpdateProjectPermissionsLegacyEndpointMutableBuilder[Self <: TeamsAddOrUpdateProjectPermissionsLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAddOrUpdateProjectPermissionsLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setPermission(value: read | write | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: read | write | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

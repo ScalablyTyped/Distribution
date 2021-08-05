@@ -18,25 +18,19 @@ trait GetConnectionStatusResponse extends StObject {
 }
 object GetConnectionStatusResponse {
   
-  @scala.inline
-  def apply(): GetConnectionStatusResponse = {
+  inline def apply(): GetConnectionStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectionStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetConnectionStatusResponseMutableBuilder[Self <: GetConnectionStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionStatusResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

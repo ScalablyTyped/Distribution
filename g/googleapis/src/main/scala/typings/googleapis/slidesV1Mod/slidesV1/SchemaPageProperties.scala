@@ -28,25 +28,19 @@ trait SchemaPageProperties extends StObject {
 }
 object SchemaPageProperties {
   
-  @scala.inline
-  def apply(): SchemaPageProperties = {
+  inline def apply(): SchemaPageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPageProperties]
   }
   
-  @scala.inline
-  implicit class SchemaPagePropertiesMutableBuilder[Self <: SchemaPageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPageProperties](x: Self) {
     
-    @scala.inline
-    def setColorScheme(value: SchemaColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    inline def setColorScheme(value: SchemaColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
-    @scala.inline
-    def setPageBackgroundFill(value: SchemaPageBackgroundFill): Self = StObject.set(x, "pageBackgroundFill", value.asInstanceOf[js.Any])
+    inline def setPageBackgroundFill(value: SchemaPageBackgroundFill): Self = StObject.set(x, "pageBackgroundFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageBackgroundFillUndefined: Self = StObject.set(x, "pageBackgroundFill", js.undefined)
+    inline def setPageBackgroundFillUndefined: Self = StObject.set(x, "pageBackgroundFill", js.undefined)
   }
 }

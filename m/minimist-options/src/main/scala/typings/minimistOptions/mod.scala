@@ -20,10 +20,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Opts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Opts]
-  @scala.inline
-  def default(options: Options): Opts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Opts]
+  inline def default(): Opts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Opts]
+  inline def default(options: Options): Opts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Opts]
   
   trait BaseOption[TypeOptionType /* <: OptionType */, DefaultOptionType] extends StObject {
     
@@ -44,35 +42,26 @@ object mod {
   }
   object BaseOption {
     
-    @scala.inline
-    def apply[TypeOptionType /* <: OptionType */, DefaultOptionType](): BaseOption[TypeOptionType, DefaultOptionType] = {
+    inline def apply[TypeOptionType /* <: OptionType */, DefaultOptionType](): BaseOption[TypeOptionType, DefaultOptionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseOption[TypeOptionType, DefaultOptionType]]
     }
     
-    @scala.inline
-    implicit class BaseOptionMutableBuilder[Self <: BaseOption[?, ?], TypeOptionType /* <: OptionType */, DefaultOptionType] (val x: Self & (BaseOption[TypeOptionType, DefaultOptionType])) extends AnyVal {
+    extension [Self <: BaseOption[?, ?], TypeOptionType /* <: OptionType */, DefaultOptionType](x: Self & (BaseOption[TypeOptionType, DefaultOptionType])) {
       
-      @scala.inline
-      def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: DefaultOptionType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: DefaultOptionType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setType(value: TypeOptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TypeOptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -100,26 +89,19 @@ object mod {
   trait OptionType extends StObject
   object OptionType {
     
-    @scala.inline
-    def array: typings.minimistOptions.minimistOptionsStrings.array = "array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.array]
+    inline def array: typings.minimistOptions.minimistOptionsStrings.array = "array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.array]
     
-    @scala.inline
-    def boolean: typings.minimistOptions.minimistOptionsStrings.boolean = "boolean".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.boolean]
+    inline def boolean: typings.minimistOptions.minimistOptionsStrings.boolean = "boolean".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.boolean]
     
-    @scala.inline
-    def `boolean-array`: typings.minimistOptions.minimistOptionsStrings.`boolean-array` = "boolean-array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.`boolean-array`]
+    inline def `boolean-array`: typings.minimistOptions.minimistOptionsStrings.`boolean-array` = "boolean-array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.`boolean-array`]
     
-    @scala.inline
-    def number: typings.minimistOptions.minimistOptionsStrings.number = "number".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.number]
+    inline def number: typings.minimistOptions.minimistOptionsStrings.number = "number".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.number]
     
-    @scala.inline
-    def `number-array`: typings.minimistOptions.minimistOptionsStrings.`number-array` = "number-array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.`number-array`]
+    inline def `number-array`: typings.minimistOptions.minimistOptionsStrings.`number-array` = "number-array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.`number-array`]
     
-    @scala.inline
-    def string: typings.minimistOptions.minimistOptionsStrings.string = "string".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.string]
+    inline def string: typings.minimistOptions.minimistOptionsStrings.string = "string".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.string]
     
-    @scala.inline
-    def `string-array`: typings.minimistOptions.minimistOptionsStrings.`string-array` = "string-array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.`string-array`]
+    inline def `string-array`: typings.minimistOptions.minimistOptionsStrings.`string-array` = "string-array".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.`string-array`]
   }
   
   type Options = StringDictionary[

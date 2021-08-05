@@ -26,8 +26,7 @@ object swatchesUniDriverMod {
   }
   object SwatchesUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addButtonExists: () => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       clickEmptySwatch: () => js.Promise[Unit],
@@ -42,26 +41,19 @@ object swatchesUniDriverMod {
       __obj.asInstanceOf[SwatchesUniDriver]
     }
     
-    @scala.inline
-    implicit class SwatchesUniDriverMutableBuilder[Self <: SwatchesUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SwatchesUniDriver](x: Self) {
       
-      @scala.inline
-      def setAddButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "addButtonExists", js.Any.fromFunction0(value))
+      inline def setAddButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "addButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickEmptySwatch(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickEmptySwatch", js.Any.fromFunction0(value))
+      inline def setClickEmptySwatch(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickEmptySwatch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSwatch(value: Double => js.Promise[FillPreviewUniDriver]): Self = StObject.set(x, "getSwatch", js.Any.fromFunction1(value))
+      inline def setGetSwatch(value: Double => js.Promise[FillPreviewUniDriver]): Self = StObject.set(x, "getSwatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSwatchCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getSwatchCount", js.Any.fromFunction0(value))
+      inline def setGetSwatchCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getSwatchCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEmptySwatchSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isEmptySwatchSelected", js.Any.fromFunction0(value))
+      inline def setIsEmptySwatchSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isEmptySwatchSelected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSwatchSelectedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isSwatchSelectedAt", js.Any.fromFunction1(value))
+      inline def setIsSwatchSelectedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isSwatchSelectedAt", js.Any.fromFunction1(value))
     }
   }
 }

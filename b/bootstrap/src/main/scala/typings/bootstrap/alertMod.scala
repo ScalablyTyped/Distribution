@@ -51,8 +51,7 @@ object alertMod {
       * DOM element, you can use it like this: getInstance(alert)
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Alert = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Alert]
+    inline def getInstance(element: Element): Alert = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Alert]
   }
   
   trait Alert extends StObject {
@@ -71,8 +70,7 @@ object alertMod {
   }
   object Alert {
     
-    @scala.inline
-    def apply(close: () => Unit, dispose: () => Unit): Alert = {
+    inline def apply(close: () => Unit, dispose: () => Unit): Alert = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[Alert]
     }
@@ -101,14 +99,11 @@ object alertMod {
            with Events
     }
     
-    @scala.inline
-    implicit class AlertMutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
+    extension [Self <: Alert](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
 }

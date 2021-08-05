@@ -18,31 +18,23 @@ trait BatchDeleteImageResponse extends StObject {
 }
 object BatchDeleteImageResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteImageResponse = {
+  inline def apply(): BatchDeleteImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteImageResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteImageResponseMutableBuilder[Self <: BatchDeleteImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteImageResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: ImageFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: ImageFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
+    inline def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdsUndefined: Self = StObject.set(x, "imageIds", js.undefined)
+    inline def setImageIdsUndefined: Self = StObject.set(x, "imageIds", js.undefined)
     
-    @scala.inline
-    def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
   }
 }

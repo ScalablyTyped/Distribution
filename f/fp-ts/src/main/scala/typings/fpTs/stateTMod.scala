@@ -17,18 +17,12 @@ object stateTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStateM[M](M: Monad[M]): StateM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM[M]]
-  @scala.inline
-  def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): StateM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM1[M]]
-  @scala.inline
-  def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): StateM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM2[M]]
-  @scala.inline
-  def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](M: Monad3[M]): StateM3[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM3[M]]
-  @scala.inline
-  def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): StateM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM2C[M, E]]
-  @scala.inline
-  def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](M: Monad3C[M, E]): StateM3C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM3C[M, E]]
+  inline def getStateM[M](M: Monad[M]): StateM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM[M]]
+  inline def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): StateM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM1[M]]
+  inline def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): StateM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM2[M]]
+  inline def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](M: Monad3[M]): StateM3[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM3[M]]
+  inline def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): StateM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM2C[M, E]]
+  inline def getStateM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](M: Monad3C[M, E]): StateM3C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateM")(M.asInstanceOf[js.Any]).asInstanceOf[StateM3C[M, E]]
   
   trait StateM[M] extends StObject {
     
@@ -60,8 +54,7 @@ object stateTMod {
   }
   object StateM {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       ap: (StateT[M, js.Any, js.Function1[js.Any, js.Any]], StateT[M, js.Any, js.Any]) => StateT[M, js.Any, js.Any],
       chain: (StateT[M, js.Any, js.Any], js.Function1[js.Any, StateT[M, js.Any, js.Any]]) => StateT[M, js.Any, js.Any],
       evalState: (StateT[M, js.Any, js.Any], js.Any) => js.Any,
@@ -79,50 +72,37 @@ object stateTMod {
       __obj.asInstanceOf[StateM[M]]
     }
     
-    @scala.inline
-    implicit class StateMMutableBuilder[Self <: StateM[?], M] (val x: Self & StateM[M]) extends AnyVal {
+    extension [Self <: StateM[?], M](x: Self & StateM[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (StateT[M, js.Any, js.Function1[js.Any, js.Any]], StateT[M, js.Any, js.Any]) => StateT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (StateT[M, js.Any, js.Any], js.Function1[js.Any, StateT[M, js.Any, js.Any]]) => StateT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalState(value: (StateT[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
+      inline def setEvalState(value: (StateT[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecState(value: (StateT[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
+      inline def setExecState(value: (StateT[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any => StateT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromState(value: State_[js.Any, js.Any] => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
+      inline def setFromState(value: State_[js.Any, js.Any] => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGets(value: js.Function1[js.Any, js.Any] => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
+      inline def setGets(value: js.Function1[js.Any, js.Any] => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: (StateT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (StateT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModify(value: js.Function1[js.Any, js.Any] => StateT[M, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: js.Function1[js.Any, js.Any] => StateT[M, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => StateT[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: js.Any => StateT[M, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: js.Any => StateT[M, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     }
   }
   
@@ -156,8 +136,7 @@ object stateTMod {
   }
   object StateM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       ap: (StateT1[M, js.Any, js.Function1[js.Any, js.Any]], StateT1[M, js.Any, js.Any]) => StateT1[M, js.Any, js.Any],
       chain: (StateT1[M, js.Any, js.Any], js.Function1[js.Any, StateT1[M, js.Any, js.Any]]) => StateT1[M, js.Any, js.Any],
       evalState: (StateT1[M, js.Any, js.Any], js.Any) => js.Any,
@@ -175,50 +154,37 @@ object stateTMod {
       __obj.asInstanceOf[StateM1[M]]
     }
     
-    @scala.inline
-    implicit class StateM1MutableBuilder[Self <: StateM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & StateM1[M]) extends AnyVal {
+    extension [Self <: StateM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & StateM1[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (StateT1[M, js.Any, js.Function1[js.Any, js.Any]], StateT1[M, js.Any, js.Any]) => StateT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (StateT1[M, js.Any, js.Any], js.Function1[js.Any, StateT1[M, js.Any, js.Any]]) => StateT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalState(value: (StateT1[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
+      inline def setEvalState(value: (StateT1[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecState(value: (StateT1[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
+      inline def setExecState(value: (StateT1[M, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any => StateT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromState(value: State_[js.Any, js.Any] => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
+      inline def setFromState(value: State_[js.Any, js.Any] => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGets(value: js.Function1[js.Any, js.Any] => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
+      inline def setGets(value: js.Function1[js.Any, js.Any] => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: (StateT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (StateT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModify(value: js.Function1[js.Any, js.Any] => StateT1[M, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: js.Function1[js.Any, js.Any] => StateT1[M, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => StateT1[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: js.Any => StateT1[M, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: js.Any => StateT1[M, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     }
   }
   
@@ -252,8 +218,7 @@ object stateTMod {
   }
   object StateM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       ap: (StateT2[M, js.Any, js.Any, js.Function1[js.Any, js.Any]], StateT2[M, js.Any, js.Any, js.Any]) => StateT2[M, js.Any, js.Any, js.Any],
       chain: (StateT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, StateT2[M, js.Any, js.Any, js.Any]]) => StateT2[M, js.Any, js.Any, js.Any],
       evalState: (StateT2[M, js.Any, js.Any, js.Any], js.Any) => js.Any,
@@ -271,52 +236,39 @@ object stateTMod {
       __obj.asInstanceOf[StateM2[M]]
     }
     
-    @scala.inline
-    implicit class StateM2MutableBuilder[Self <: StateM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & StateM2[M]) extends AnyVal {
+    extension [Self <: StateM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & StateM2[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (StateT2[M, js.Any, js.Any, js.Function1[js.Any, js.Any]], StateT2[M, js.Any, js.Any, js.Any]) => StateT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (StateT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, StateT2[M, js.Any, js.Any, js.Any]]) => StateT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalState(value: (StateT2[M, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
+      inline def setEvalState(value: (StateT2[M, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecState(value: (StateT2[M, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
+      inline def setExecState(value: (StateT2[M, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any => StateT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromState(value: State_[js.Any, js.Any] => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
+      inline def setFromState(value: State_[js.Any, js.Any] => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGets(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
+      inline def setGets(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (StateT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => StateT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModify(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => StateT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: js.Any => StateT2[M, js.Any, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: js.Any => StateT2[M, js.Any, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     }
   }
   
@@ -350,8 +302,7 @@ object stateTMod {
   }
   object StateM2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       ap: (StateT2[M, js.Any, E, js.Function1[js.Any, js.Any]], StateT2[M, js.Any, E, js.Any]) => StateT2[M, js.Any, E, js.Any],
       chain: (StateT2[M, js.Any, E, js.Any], js.Function1[js.Any, StateT2[M, js.Any, E, js.Any]]) => StateT2[M, js.Any, E, js.Any],
       evalState: (StateT2[M, js.Any, E, js.Any], js.Any) => js.Any,
@@ -369,52 +320,39 @@ object stateTMod {
       __obj.asInstanceOf[StateM2C[M, E]]
     }
     
-    @scala.inline
-    implicit class StateM2CMutableBuilder[Self <: StateM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (StateM2C[M, E])) extends AnyVal {
+    extension [Self <: StateM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (StateM2C[M, E])) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (StateT2[M, js.Any, E, js.Function1[js.Any, js.Any]], StateT2[M, js.Any, E, js.Any]) => StateT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (StateT2[M, js.Any, E, js.Any], js.Function1[js.Any, StateT2[M, js.Any, E, js.Any]]) => StateT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalState(value: (StateT2[M, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
+      inline def setEvalState(value: (StateT2[M, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecState(value: (StateT2[M, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
+      inline def setExecState(value: (StateT2[M, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any => StateT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromState(value: State_[js.Any, js.Any] => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
+      inline def setFromState(value: State_[js.Any, js.Any] => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGets(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
+      inline def setGets(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (StateT2[M, js.Any, E, js.Any], js.Function1[js.Any, js.Any]) => StateT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModify(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, E, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: js.Function1[js.Any, js.Any] => StateT2[M, js.Any, E, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => StateT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: js.Any => StateT2[M, js.Any, E, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: js.Any => StateT2[M, js.Any, E, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     }
   }
   
@@ -448,8 +386,7 @@ object stateTMod {
   }
   object StateM3 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       ap: (StateT3[M, js.Any, js.Any, js.Any, js.Function1[js.Any, js.Any]], StateT3[M, js.Any, js.Any, js.Any, js.Any]) => StateT3[M, js.Any, js.Any, js.Any, js.Any],
       chain: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, StateT3[M, js.Any, js.Any, js.Any, js.Any]]) => StateT3[M, js.Any, js.Any, js.Any, js.Any],
       evalState: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Any) => js.Any,
@@ -467,52 +404,39 @@ object stateTMod {
       __obj.asInstanceOf[StateM3[M]]
     }
     
-    @scala.inline
-    implicit class StateM3MutableBuilder[Self <: StateM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & StateM3[M]) extends AnyVal {
+    extension [Self <: StateM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & StateM3[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (StateT3[M, js.Any, js.Any, js.Any, js.Function1[js.Any, js.Any]], StateT3[M, js.Any, js.Any, js.Any, js.Any]) => StateT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, StateT3[M, js.Any, js.Any, js.Any, js.Any]]) => StateT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalState(value: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
+      inline def setEvalState(value: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecState(value: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
+      inline def setExecState(value: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ js.Any => StateT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromState(value: State_[js.Any, js.Any] => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
+      inline def setFromState(value: State_[js.Any, js.Any] => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGets(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
+      inline def setGets(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (StateT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => StateT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModify(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, js.Any, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => StateT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: js.Any => StateT3[M, js.Any, js.Any, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: js.Any => StateT3[M, js.Any, js.Any, js.Any, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     }
   }
   
@@ -546,8 +470,7 @@ object stateTMod {
   }
   object StateM3C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       ap: (StateT3[M, js.Any, js.Any, E, js.Function1[js.Any, js.Any]], StateT3[M, js.Any, js.Any, E, js.Any]) => StateT3[M, js.Any, js.Any, E, js.Any],
       chain: (StateT3[M, js.Any, js.Any, E, js.Any], js.Function1[js.Any, StateT3[M, js.Any, js.Any, E, js.Any]]) => StateT3[M, js.Any, js.Any, E, js.Any],
       evalState: (StateT3[M, js.Any, js.Any, E, js.Any], js.Any) => js.Any,
@@ -565,52 +488,39 @@ object stateTMod {
       __obj.asInstanceOf[StateM3C[M, E]]
     }
     
-    @scala.inline
-    implicit class StateM3CMutableBuilder[Self <: StateM3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (StateM3C[M, E])) extends AnyVal {
+    extension [Self <: StateM3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (StateM3C[M, E])) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (StateT3[M, js.Any, js.Any, E, js.Function1[js.Any, js.Any]], StateT3[M, js.Any, js.Any, E, js.Any]) => StateT3[M, js.Any, js.Any, E, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (StateT3[M, js.Any, js.Any, E, js.Any], js.Function1[js.Any, StateT3[M, js.Any, js.Any, E, js.Any]]) => StateT3[M, js.Any, js.Any, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalState(value: (StateT3[M, js.Any, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
+      inline def setEvalState(value: (StateT3[M, js.Any, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "evalState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecState(value: (StateT3[M, js.Any, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
+      inline def setExecState(value: (StateT3[M, js.Any, js.Any, E, js.Any], js.Any) => js.Any): Self = StObject.set(x, "execState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ js.Any => StateT3[M, js.Any, js.Any, E, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromState(value: State_[js.Any, js.Any] => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
+      inline def setFromState(value: State_[js.Any, js.Any] => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGets(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
+      inline def setGets(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "gets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (StateT3[M, js.Any, js.Any, E, js.Any], js.Function1[js.Any, js.Any]) => StateT3[M, js.Any, js.Any, E, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModify(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, E, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: js.Function1[js.Any, js.Any] => StateT3[M, js.Any, js.Any, E, Unit]): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => StateT3[M, js.Any, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: js.Any => StateT3[M, js.Any, js.Any, E, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: js.Any => StateT3[M, js.Any, js.Any, E, Unit]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     }
   }
   

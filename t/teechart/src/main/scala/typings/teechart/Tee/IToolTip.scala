@@ -26,8 +26,7 @@ trait IToolTip
 }
 object IToolTip {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     add: String => IAnnotation,
     animated: Double,
@@ -57,31 +56,22 @@ object IToolTip {
     __obj.asInstanceOf[IToolTip]
   }
   
-  @scala.inline
-  implicit class IToolTipMutableBuilder[Self <: IToolTip] (val x: Self) extends AnyVal {
+  extension [Self <: IToolTip](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Double): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Double): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+    inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRedraw(value: Boolean): Self = StObject.set(x, "autoRedraw", value.asInstanceOf[js.Any])
+    inline def setAutoRedraw(value: Boolean): Self = StObject.set(x, "autoRedraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSeries(value: ISeries): Self = StObject.set(x, "currentSeries", value.asInstanceOf[js.Any])
+    inline def setCurrentSeries(value: ISeries): Self = StObject.set(x, "currentSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefresh(value: (ISeries, Double) => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction2(value))
+    inline def setRefresh(value: (ISeries, Double) => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction2(value))
   }
 }

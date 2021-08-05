@@ -17,17 +17,14 @@ trait TextMark
 }
 object TextMark {
   
-  @scala.inline
-  def apply(): TextMark = {
+  inline def apply(): TextMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[TextMark]
   }
   
-  @scala.inline
-  implicit class TextMarkMutableBuilder[Self <: TextMark] (val x: Self) extends AnyVal {
+  extension [Self <: TextMark](x: Self) {
     
-    @scala.inline
-    def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

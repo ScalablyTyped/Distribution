@@ -17,31 +17,23 @@ trait RectangleSelectors extends StObject {
 }
 object RectangleSelectors {
   
-  @scala.inline
-  def apply(): RectangleSelectors = {
+  inline def apply(): RectangleSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RectangleSelectors]
   }
   
-  @scala.inline
-  implicit class RectangleSelectorsMutableBuilder[Self <: RectangleSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: RectangleSelectors](x: Self) {
     
-    @scala.inline
-    def setBody(value: SVGRectAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: SVGRectAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setLabel(value: SVGTextAttributes): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: SVGTextAttributes): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

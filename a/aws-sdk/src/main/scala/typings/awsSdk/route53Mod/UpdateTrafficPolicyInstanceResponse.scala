@@ -13,16 +13,13 @@ trait UpdateTrafficPolicyInstanceResponse extends StObject {
 }
 object UpdateTrafficPolicyInstanceResponse {
   
-  @scala.inline
-  def apply(TrafficPolicyInstance: TrafficPolicyInstance): UpdateTrafficPolicyInstanceResponse = {
+  inline def apply(TrafficPolicyInstance: TrafficPolicyInstance): UpdateTrafficPolicyInstanceResponse = {
     val __obj = js.Dynamic.literal(TrafficPolicyInstance = TrafficPolicyInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTrafficPolicyInstanceResponse]
   }
   
-  @scala.inline
-  implicit class UpdateTrafficPolicyInstanceResponseMutableBuilder[Self <: UpdateTrafficPolicyInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTrafficPolicyInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setTrafficPolicyInstance(value: TrafficPolicyInstance): Self = StObject.set(x, "TrafficPolicyInstance", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyInstance(value: TrafficPolicyInstance): Self = StObject.set(x, "TrafficPolicyInstance", value.asInstanceOf[js.Any])
   }
 }

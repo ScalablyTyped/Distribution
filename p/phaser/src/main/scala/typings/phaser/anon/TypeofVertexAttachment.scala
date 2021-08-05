@@ -11,16 +11,13 @@ trait TypeofVertexAttachment extends StObject {
 }
 object TypeofVertexAttachment {
   
-  @scala.inline
-  def apply(nextID: js.Any): TypeofVertexAttachment = {
+  inline def apply(nextID: js.Any): TypeofVertexAttachment = {
     val __obj = js.Dynamic.literal(nextID = nextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofVertexAttachment]
   }
   
-  @scala.inline
-  implicit class TypeofVertexAttachmentMutableBuilder[Self <: TypeofVertexAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofVertexAttachment](x: Self) {
     
-    @scala.inline
-    def setNextID(value: js.Any): Self = StObject.set(x, "nextID", value.asInstanceOf[js.Any])
+    inline def setNextID(value: js.Any): Self = StObject.set(x, "nextID", value.asInstanceOf[js.Any])
   }
 }

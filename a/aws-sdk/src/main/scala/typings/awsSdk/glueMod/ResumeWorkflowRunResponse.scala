@@ -18,28 +18,21 @@ trait ResumeWorkflowRunResponse extends StObject {
 }
 object ResumeWorkflowRunResponse {
   
-  @scala.inline
-  def apply(): ResumeWorkflowRunResponse = {
+  inline def apply(): ResumeWorkflowRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResumeWorkflowRunResponse]
   }
   
-  @scala.inline
-  implicit class ResumeWorkflowRunResponseMutableBuilder[Self <: ResumeWorkflowRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeWorkflowRunResponse](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: NodeIdList): Self = StObject.set(x, "NodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: NodeIdList): Self = StObject.set(x, "NodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsUndefined: Self = StObject.set(x, "NodeIds", js.undefined)
+    inline def setNodeIdsUndefined: Self = StObject.set(x, "NodeIds", js.undefined)
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NameString*): Self = StObject.set(x, "NodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NameString*): Self = StObject.set(x, "NodeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
   }
 }

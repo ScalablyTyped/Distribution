@@ -36,8 +36,7 @@ trait MediaTrackSettings extends StObject {
 }
 object MediaTrackSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brightness: Double,
     colorTemperature: Double,
     contrast: Double,
@@ -57,52 +56,36 @@ object MediaTrackSettings {
     __obj.asInstanceOf[MediaTrackSettings]
   }
   
-  @scala.inline
-  implicit class MediaTrackSettingsMutableBuilder[Self <: MediaTrackSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTrackSettings](x: Self) {
     
-    @scala.inline
-    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorTemperature(value: Double): Self = StObject.set(x, "colorTemperature", value.asInstanceOf[js.Any])
+    inline def setColorTemperature(value: Double): Self = StObject.set(x, "colorTemperature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureCompensation(value: Double): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
+    inline def setExposureCompensation(value: Double): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureMode(value: MeteringMode): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
+    inline def setExposureMode(value: MeteringMode): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusDistance(value: Double): Self = StObject.set(x, "focusDistance", value.asInstanceOf[js.Any])
+    inline def setFocusDistance(value: Double): Self = StObject.set(x, "focusDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusMode(value: MeteringMode): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
+    inline def setFocusMode(value: MeteringMode): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIso(value: Double): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
+    inline def setIso(value: Double): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsOfInterest(value: js.Array[Point2D]): Self = StObject.set(x, "pointsOfInterest", value.asInstanceOf[js.Any])
+    inline def setPointsOfInterest(value: js.Array[Point2D]): Self = StObject.set(x, "pointsOfInterest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsOfInterestVarargs(value: Point2D*): Self = StObject.set(x, "pointsOfInterest", js.Array(value :_*))
+    inline def setPointsOfInterestVarargs(value: Point2D*): Self = StObject.set(x, "pointsOfInterest", js.Array(value :_*))
     
-    @scala.inline
-    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
+    inline def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTorch(value: Boolean): Self = StObject.set(x, "torch", value.asInstanceOf[js.Any])
+    inline def setTorch(value: Boolean): Self = StObject.set(x, "torch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteBalanceMode(value: MeteringMode): Self = StObject.set(x, "whiteBalanceMode", value.asInstanceOf[js.Any])
+    inline def setWhiteBalanceMode(value: MeteringMode): Self = StObject.set(x, "whiteBalanceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

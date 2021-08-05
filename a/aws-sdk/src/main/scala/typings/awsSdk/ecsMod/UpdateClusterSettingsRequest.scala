@@ -18,22 +18,17 @@ trait UpdateClusterSettingsRequest extends StObject {
 }
 object UpdateClusterSettingsRequest {
   
-  @scala.inline
-  def apply(cluster: String, settings: ClusterSettings): UpdateClusterSettingsRequest = {
+  inline def apply(cluster: String, settings: ClusterSettings): UpdateClusterSettingsRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateClusterSettingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateClusterSettingsRequestMutableBuilder[Self <: UpdateClusterSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateClusterSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: ClusterSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: ClusterSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsVarargs(value: ClusterSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: ClusterSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

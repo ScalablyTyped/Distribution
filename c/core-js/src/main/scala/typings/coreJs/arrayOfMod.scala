@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object arrayOfMod {
   
   /* was `typeof core.Array.of` */
-  @scala.inline
-  def apply[T](items: T*): Array[T] = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
+  inline def apply[T](items: T*): Array[T] = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
   
   @JSImport("core-js/library/fn/array/of", JSImport.Namespace)
   @js.native

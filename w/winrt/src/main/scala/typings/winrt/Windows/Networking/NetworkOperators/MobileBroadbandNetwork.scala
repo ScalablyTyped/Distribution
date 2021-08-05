@@ -10,8 +10,7 @@ trait MobileBroadbandNetwork
      with IMobileBroadbandNetwork
 object MobileBroadbandNetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessPointName: String,
     activationNetworkError: Double,
     networkAdapter: NetworkAdapter,

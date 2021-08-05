@@ -31,34 +31,25 @@ trait SchemaListCreativeStatusBreakdownByDetailResponse extends StObject {
 }
 object SchemaListCreativeStatusBreakdownByDetailResponse {
   
-  @scala.inline
-  def apply(): SchemaListCreativeStatusBreakdownByDetailResponse = {
+  inline def apply(): SchemaListCreativeStatusBreakdownByDetailResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListCreativeStatusBreakdownByDetailResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListCreativeStatusBreakdownByDetailResponseMutableBuilder[Self <: SchemaListCreativeStatusBreakdownByDetailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListCreativeStatusBreakdownByDetailResponse](x: Self) {
     
-    @scala.inline
-    def setDetailType(value: String): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
+    inline def setDetailType(value: String): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailTypeUndefined: Self = StObject.set(x, "detailType", js.undefined)
+    inline def setDetailTypeUndefined: Self = StObject.set(x, "detailType", js.undefined)
     
-    @scala.inline
-    def setFilteredBidDetailRows(value: js.Array[SchemaFilteredBidDetailRow]): Self = StObject.set(x, "filteredBidDetailRows", value.asInstanceOf[js.Any])
+    inline def setFilteredBidDetailRows(value: js.Array[SchemaFilteredBidDetailRow]): Self = StObject.set(x, "filteredBidDetailRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteredBidDetailRowsUndefined: Self = StObject.set(x, "filteredBidDetailRows", js.undefined)
+    inline def setFilteredBidDetailRowsUndefined: Self = StObject.set(x, "filteredBidDetailRows", js.undefined)
     
-    @scala.inline
-    def setFilteredBidDetailRowsVarargs(value: SchemaFilteredBidDetailRow*): Self = StObject.set(x, "filteredBidDetailRows", js.Array(value :_*))
+    inline def setFilteredBidDetailRowsVarargs(value: SchemaFilteredBidDetailRow*): Self = StObject.set(x, "filteredBidDetailRows", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

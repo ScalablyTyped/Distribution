@@ -40,8 +40,7 @@ object proximitybeaconMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Proximitybeacon
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object proximitybeaconMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object proximitybeaconMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def proximitybeacon(options: Options): Proximitybeacon = ^.asInstanceOf[js.Dynamic].applyDynamic("proximitybeacon")(options.asInstanceOf[js.Any]).asInstanceOf[Proximitybeacon]
+  inline def proximitybeacon(options: Options): Proximitybeacon = ^.asInstanceOf[js.Dynamic].applyDynamic("proximitybeacon")(options.asInstanceOf[js.Any]).asInstanceOf[Proximitybeacon]
   
-  @scala.inline
-  def proximitybeacon_v1beta1(version: v1beta1): Proximitybeacon = ^.asInstanceOf[js.Dynamic].applyDynamic("proximitybeacon")(version.asInstanceOf[js.Any]).asInstanceOf[Proximitybeacon]
+  inline def proximitybeacon_v1beta1(version: v1beta1): Proximitybeacon = ^.asInstanceOf[js.Dynamic].applyDynamic("proximitybeacon")(version.asInstanceOf[js.Any]).asInstanceOf[Proximitybeacon]
 }

@@ -14,31 +14,23 @@ trait Outline extends StObject {
 }
 object Outline {
   
-  @scala.inline
-  def apply(): Outline = {
+  inline def apply(): Outline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Outline]
   }
   
-  @scala.inline
-  implicit class OutlineMutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
+  extension [Self <: Outline](x: Self) {
     
-    @scala.inline
-    def setBorder(value: `3`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: `3`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setOutline(value: ColorSize): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: ColorSize): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setShadow(value: ColorSize): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: ColorSize): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
   }
 }

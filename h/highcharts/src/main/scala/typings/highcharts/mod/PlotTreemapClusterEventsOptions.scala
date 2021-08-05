@@ -16,19 +16,15 @@ trait PlotTreemapClusterEventsOptions extends StObject {
 }
 object PlotTreemapClusterEventsOptions {
   
-  @scala.inline
-  def apply(): PlotTreemapClusterEventsOptions = {
+  inline def apply(): PlotTreemapClusterEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTreemapClusterEventsOptions]
   }
   
-  @scala.inline
-  implicit class PlotTreemapClusterEventsOptionsMutableBuilder[Self <: PlotTreemapClusterEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTreemapClusterEventsOptions](x: Self) {
     
-    @scala.inline
-    def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
+    inline def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillToClusterUndefined: Self = StObject.set(x, "drillToCluster", js.undefined)
+    inline def setDrillToClusterUndefined: Self = StObject.set(x, "drillToCluster", js.undefined)
   }
 }

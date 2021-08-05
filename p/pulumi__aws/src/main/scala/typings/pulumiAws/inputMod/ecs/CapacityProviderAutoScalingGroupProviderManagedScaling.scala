@@ -29,37 +29,27 @@ trait CapacityProviderAutoScalingGroupProviderManagedScaling extends StObject {
 }
 object CapacityProviderAutoScalingGroupProviderManagedScaling {
   
-  @scala.inline
-  def apply(): CapacityProviderAutoScalingGroupProviderManagedScaling = {
+  inline def apply(): CapacityProviderAutoScalingGroupProviderManagedScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapacityProviderAutoScalingGroupProviderManagedScaling]
   }
   
-  @scala.inline
-  implicit class CapacityProviderAutoScalingGroupProviderManagedScalingMutableBuilder[Self <: CapacityProviderAutoScalingGroupProviderManagedScaling] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityProviderAutoScalingGroupProviderManagedScaling](x: Self) {
     
-    @scala.inline
-    def setMaximumScalingStepSize(value: Input[Double]): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
+    inline def setMaximumScalingStepSize(value: Input[Double]): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumScalingStepSizeUndefined: Self = StObject.set(x, "maximumScalingStepSize", js.undefined)
+    inline def setMaximumScalingStepSizeUndefined: Self = StObject.set(x, "maximumScalingStepSize", js.undefined)
     
-    @scala.inline
-    def setMinimumScalingStepSize(value: Input[Double]): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
+    inline def setMinimumScalingStepSize(value: Input[Double]): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumScalingStepSizeUndefined: Self = StObject.set(x, "minimumScalingStepSize", js.undefined)
+    inline def setMinimumScalingStepSizeUndefined: Self = StObject.set(x, "minimumScalingStepSize", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTargetCapacity(value: Input[Double]): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetCapacity(value: Input[Double]): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCapacityUndefined: Self = StObject.set(x, "targetCapacity", js.undefined)
+    inline def setTargetCapacityUndefined: Self = StObject.set(x, "targetCapacity", js.undefined)
   }
 }

@@ -66,8 +66,7 @@ trait MagneticStripeReaderAamvaCardDataReceivedEventArgs extends StObject {
 }
 object MagneticStripeReaderAamvaCardDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     birthDate: String,
     city: String,
@@ -93,64 +92,44 @@ object MagneticStripeReaderAamvaCardDataReceivedEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderAamvaCardDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderAamvaCardDataReceivedEventArgsMutableBuilder[Self <: MagneticStripeReaderAamvaCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderAamvaCardDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthDate(value: String): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
+    inline def setBirthDate(value: String): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndorsements(value: String): Self = StObject.set(x, "endorsements", value.asInstanceOf[js.Any])
+    inline def setEndorsements(value: String): Self = StObject.set(x, "endorsements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEyeColor(value: String): Self = StObject.set(x, "eyeColor", value.asInstanceOf[js.Any])
+    inline def setEyeColor(value: String): Self = StObject.set(x, "eyeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHairColor(value: String): Self = StObject.set(x, "hairColor", value.asInstanceOf[js.Any])
+    inline def setHairColor(value: String): Self = StObject.set(x, "hairColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseNumber(value: String): Self = StObject.set(x, "licenseNumber", value.asInstanceOf[js.Any])
+    inline def setLicenseNumber(value: String): Self = StObject.set(x, "licenseNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictions(value: String): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: String): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
+    inline def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Inject extends StObject {
 }
 object Inject {
   
-  @scala.inline
-  def apply(token: js.Any): Inject = {
+  inline def apply(token: js.Any): Inject = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inject]
   }
   
-  @scala.inline
-  implicit class InjectMutableBuilder[Self <: Inject] (val x: Self) extends AnyVal {
+  extension [Self <: Inject](x: Self) {
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

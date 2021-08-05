@@ -20,8 +20,7 @@ trait KnockstrapProgressDefaults extends StObject {
 }
 object KnockstrapProgressDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animated: Boolean,
     css: String,
     striped: Boolean,
@@ -34,25 +33,18 @@ object KnockstrapProgressDefaults {
     __obj.asInstanceOf[KnockstrapProgressDefaults]
   }
   
-  @scala.inline
-  implicit class KnockstrapProgressDefaultsMutableBuilder[Self <: KnockstrapProgressDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapProgressDefaults](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
+    inline def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextHidden(value: Boolean): Self = StObject.set(x, "textHidden", value.asInstanceOf[js.Any])
+    inline def setTextHidden(value: Boolean): Self = StObject.set(x, "textHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

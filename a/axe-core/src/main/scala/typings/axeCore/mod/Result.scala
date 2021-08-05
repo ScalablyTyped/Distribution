@@ -22,8 +22,7 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     help: String,
     helpUrl: String,
@@ -35,40 +34,28 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
+    inline def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpact(value: ImpactValue): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
+    inline def setImpact(value: ImpactValue): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpactNull: Self = StObject.set(x, "impact", null)
+    inline def setImpactNull: Self = StObject.set(x, "impact", null)
     
-    @scala.inline
-    def setImpactUndefined: Self = StObject.set(x, "impact", js.undefined)
+    inline def setImpactUndefined: Self = StObject.set(x, "impact", js.undefined)
     
-    @scala.inline
-    def setNodes(value: js.Array[NodeResult]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[NodeResult]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: NodeResult*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeResult*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: js.Array[TagValue]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[TagValue]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: TagValue*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagValue*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

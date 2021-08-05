@@ -13,22 +13,17 @@ trait GetRelationalDatabaseLogStreamsResult extends StObject {
 }
 object GetRelationalDatabaseLogStreamsResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseLogStreamsResult = {
+  inline def apply(): GetRelationalDatabaseLogStreamsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseLogStreamsResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseLogStreamsResultMutableBuilder[Self <: GetRelationalDatabaseLogStreamsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseLogStreamsResult](x: Self) {
     
-    @scala.inline
-    def setLogStreams(value: StringList): Self = StObject.set(x, "logStreams", value.asInstanceOf[js.Any])
+    inline def setLogStreams(value: StringList): Self = StObject.set(x, "logStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamsUndefined: Self = StObject.set(x, "logStreams", js.undefined)
+    inline def setLogStreamsUndefined: Self = StObject.set(x, "logStreams", js.undefined)
     
-    @scala.inline
-    def setLogStreamsVarargs(value: String*): Self = StObject.set(x, "logStreams", js.Array(value :_*))
+    inline def setLogStreamsVarargs(value: String*): Self = StObject.set(x, "logStreams", js.Array(value :_*))
   }
 }

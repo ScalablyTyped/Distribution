@@ -13,16 +13,13 @@ trait MakeSnapshotResponse extends StObject {
 }
 object MakeSnapshotResponse {
   
-  @scala.inline
-  def apply(snapshotId: SnapshotId): MakeSnapshotResponse = {
+  inline def apply(snapshotId: SnapshotId): MakeSnapshotResponse = {
     val __obj = js.Dynamic.literal(snapshotId = snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class MakeSnapshotResponseMutableBuilder[Self <: MakeSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MakeSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
   }
 }

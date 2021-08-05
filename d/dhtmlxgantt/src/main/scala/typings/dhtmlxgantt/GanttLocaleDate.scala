@@ -16,8 +16,7 @@ trait GanttLocaleDate extends StObject {
 }
 object GanttLocaleDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     day_full: js.Array[String],
     day_short: js.Array[String],
     month_full: js.Array[String],
@@ -27,31 +26,22 @@ object GanttLocaleDate {
     __obj.asInstanceOf[GanttLocaleDate]
   }
   
-  @scala.inline
-  implicit class GanttLocaleDateMutableBuilder[Self <: GanttLocaleDate] (val x: Self) extends AnyVal {
+  extension [Self <: GanttLocaleDate](x: Self) {
     
-    @scala.inline
-    def setDay_full(value: js.Array[String]): Self = StObject.set(x, "day_full", value.asInstanceOf[js.Any])
+    inline def setDay_full(value: js.Array[String]): Self = StObject.set(x, "day_full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay_fullVarargs(value: String*): Self = StObject.set(x, "day_full", js.Array(value :_*))
+    inline def setDay_fullVarargs(value: String*): Self = StObject.set(x, "day_full", js.Array(value :_*))
     
-    @scala.inline
-    def setDay_short(value: js.Array[String]): Self = StObject.set(x, "day_short", value.asInstanceOf[js.Any])
+    inline def setDay_short(value: js.Array[String]): Self = StObject.set(x, "day_short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay_shortVarargs(value: String*): Self = StObject.set(x, "day_short", js.Array(value :_*))
+    inline def setDay_shortVarargs(value: String*): Self = StObject.set(x, "day_short", js.Array(value :_*))
     
-    @scala.inline
-    def setMonth_full(value: js.Array[String]): Self = StObject.set(x, "month_full", value.asInstanceOf[js.Any])
+    inline def setMonth_full(value: js.Array[String]): Self = StObject.set(x, "month_full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth_fullVarargs(value: String*): Self = StObject.set(x, "month_full", js.Array(value :_*))
+    inline def setMonth_fullVarargs(value: String*): Self = StObject.set(x, "month_full", js.Array(value :_*))
     
-    @scala.inline
-    def setMonth_short(value: js.Array[String]): Self = StObject.set(x, "month_short", value.asInstanceOf[js.Any])
+    inline def setMonth_short(value: js.Array[String]): Self = StObject.set(x, "month_short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth_shortVarargs(value: String*): Self = StObject.set(x, "month_short", js.Array(value :_*))
+    inline def setMonth_shortVarargs(value: String*): Self = StObject.set(x, "month_short", js.Array(value :_*))
   }
 }

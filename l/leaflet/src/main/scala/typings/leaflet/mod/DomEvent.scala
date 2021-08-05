@@ -16,64 +16,40 @@ object DomEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def addListener(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def addListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def addListener(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def addListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def disableClickPropagation(el: HTMLElement): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("disableClickPropagation")(el.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
+  inline def disableClickPropagation(el: HTMLElement): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("disableClickPropagation")(el.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def disableScrollPropagation(el: HTMLElement): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("disableScrollPropagation")(el.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
+  inline def disableScrollPropagation(el: HTMLElement): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("disableScrollPropagation")(el.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def getMousePosition(ev: MouseEvent): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(ev.asInstanceOf[js.Any]).asInstanceOf[Point_]
-  @scala.inline
-  def getMousePosition(ev: MouseEvent, container: HTMLElement): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(ev.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Point_]
+  inline def getMousePosition(ev: MouseEvent): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(ev.asInstanceOf[js.Any]).asInstanceOf[Point_]
+  inline def getMousePosition(ev: MouseEvent, container: HTMLElement): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(ev.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Point_]
   
-  @scala.inline
-  def getWheelDelta(ev: Event): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDelta")(ev.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getWheelDelta(ev: Event): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDelta")(ev.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def off(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def off(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def off(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def off(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def on(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def on(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def on(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def on(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def preventDefault(ev: Event): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
+  inline def preventDefault(ev: Event): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  @scala.inline
-  def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def stop(ev: PropagableEvent): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
+  inline def stop(ev: PropagableEvent): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
-  @scala.inline
-  def stopPropagation(ev: PropagableEvent): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
+  inline def stopPropagation(ev: PropagableEvent): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
   type EventHandlerFn = js.Function1[/* event */ Event, Unit]
   
@@ -88,15 +64,13 @@ object DomEvent {
   trait _PropagableEvent extends StObject
   object _PropagableEvent {
     
-    @scala.inline
-    def LeafletEvent(layer: js.Any, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): typings.leaflet.mod.LeafletEvent = {
+    inline def LeafletEvent(layer: js.Any, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): typings.leaflet.mod.LeafletEvent = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.leaflet.mod.LeafletEvent]
     }
     
-    @scala.inline
-    def LeafletKeyboardEvent(
+    inline def LeafletKeyboardEvent(
       layer: js.Any,
       originalEvent: KeyboardEvent,
       propagatedFrom: js.Any,
@@ -109,8 +83,7 @@ object DomEvent {
       __obj.asInstanceOf[typings.leaflet.mod.LeafletKeyboardEvent]
     }
     
-    @scala.inline
-    def LeafletMouseEvent(
+    inline def LeafletMouseEvent(
       containerPoint: Point_,
       latlng: LatLng_,
       layer: js.Any,

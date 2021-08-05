@@ -13,16 +13,13 @@ trait ExecutionContextDestroyedEventDataType extends StObject {
 }
 object ExecutionContextDestroyedEventDataType {
   
-  @scala.inline
-  def apply(executionContextId: ExecutionContextId): ExecutionContextDestroyedEventDataType = {
+  inline def apply(executionContextId: ExecutionContextId): ExecutionContextDestroyedEventDataType = {
     val __obj = js.Dynamic.literal(executionContextId = executionContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionContextDestroyedEventDataType]
   }
   
-  @scala.inline
-  implicit class ExecutionContextDestroyedEventDataTypeMutableBuilder[Self <: ExecutionContextDestroyedEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionContextDestroyedEventDataType](x: Self) {
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
   }
 }

@@ -81,8 +81,7 @@ trait CanvasHeightChanged[TEntity] extends StObject {
 }
 object CanvasHeightChanged {
   
-  @scala.inline
-  def apply[TEntity](
+  inline def apply[TEntity](
     canvasHeightChanged: (IScope, canvasHeightChangedHandler) => Unit,
     columnVisibilityChanged: (IScope, columnVisibilityChangedHandler[TEntity]) => Unit,
     filterChanged: (IScope, filterChangedHandler[TEntity]) => Unit,
@@ -96,31 +95,22 @@ object CanvasHeightChanged {
     __obj.asInstanceOf[CanvasHeightChanged[TEntity]]
   }
   
-  @scala.inline
-  implicit class CanvasHeightChangedMutableBuilder[Self <: CanvasHeightChanged[?], TEntity] (val x: Self & CanvasHeightChanged[TEntity]) extends AnyVal {
+  extension [Self <: CanvasHeightChanged[?], TEntity](x: Self & CanvasHeightChanged[TEntity]) {
     
-    @scala.inline
-    def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = StObject.set(x, "canvasHeightChanged", js.Any.fromFunction2(value))
+    inline def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = StObject.set(x, "canvasHeightChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnVisibilityChanged(value: (IScope, columnVisibilityChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "columnVisibilityChanged", js.Any.fromFunction2(value))
+    inline def setColumnVisibilityChanged(value: (IScope, columnVisibilityChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "columnVisibilityChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterChanged(value: (IScope, filterChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "filterChanged", js.Any.fromFunction2(value))
+    inline def setFilterChanged(value: (IScope, filterChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "filterChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowsRendered(value: (IScope, rowsRenderedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowsRendered", js.Any.fromFunction2(value))
+    inline def setRowsRendered(value: (IScope, rowsRenderedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowsRendered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowsVisibleChanged(value: (IScope, rowsVisibleChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowsVisibleChanged", js.Any.fromFunction2(value))
+    inline def setRowsVisibleChanged(value: (IScope, rowsVisibleChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowsVisibleChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScrollBegin(value: (IScope, scrollBeginHandler) => Unit): Self = StObject.set(x, "scrollBegin", js.Any.fromFunction2(value))
+    inline def setScrollBegin(value: (IScope, scrollBeginHandler) => Unit): Self = StObject.set(x, "scrollBegin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScrollEnd(value: (IScope, scrollEndHandler) => Unit): Self = StObject.set(x, "scrollEnd", js.Any.fromFunction2(value))
+    inline def setScrollEnd(value: (IScope, scrollEndHandler) => Unit): Self = StObject.set(x, "scrollEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSortChanged(value: (IScope, sortChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "sortChanged", js.Any.fromFunction2(value))
+    inline def setSortChanged(value: (IScope, sortChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "sortChanged", js.Any.fromFunction2(value))
   }
 }

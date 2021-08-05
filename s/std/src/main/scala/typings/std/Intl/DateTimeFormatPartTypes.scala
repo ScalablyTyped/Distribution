@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DateTimeFormatPartTypes extends StObject
 object DateTimeFormatPartTypes {
   
-  @scala.inline
-  def day: typings.std.stdStrings.day = "day".asInstanceOf[typings.std.stdStrings.day]
+  inline def day: typings.std.stdStrings.day = "day".asInstanceOf[typings.std.stdStrings.day]
   
-  @scala.inline
-  def dayPeriod: typings.std.stdStrings.dayPeriod = "dayPeriod".asInstanceOf[typings.std.stdStrings.dayPeriod]
+  inline def dayPeriod: typings.std.stdStrings.dayPeriod = "dayPeriod".asInstanceOf[typings.std.stdStrings.dayPeriod]
   
-  @scala.inline
-  def era: typings.std.stdStrings.era = "era".asInstanceOf[typings.std.stdStrings.era]
+  inline def era: typings.std.stdStrings.era = "era".asInstanceOf[typings.std.stdStrings.era]
   
-  @scala.inline
-  def hour: typings.std.stdStrings.hour = "hour".asInstanceOf[typings.std.stdStrings.hour]
+  inline def hour: typings.std.stdStrings.hour = "hour".asInstanceOf[typings.std.stdStrings.hour]
   
-  @scala.inline
-  def literal: typings.std.stdStrings.literal = "literal".asInstanceOf[typings.std.stdStrings.literal]
+  inline def literal: typings.std.stdStrings.literal = "literal".asInstanceOf[typings.std.stdStrings.literal]
   
-  @scala.inline
-  def minute: typings.std.stdStrings.minute = "minute".asInstanceOf[typings.std.stdStrings.minute]
+  inline def minute: typings.std.stdStrings.minute = "minute".asInstanceOf[typings.std.stdStrings.minute]
   
-  @scala.inline
-  def month: typings.std.stdStrings.month = "month".asInstanceOf[typings.std.stdStrings.month]
+  inline def month: typings.std.stdStrings.month = "month".asInstanceOf[typings.std.stdStrings.month]
   
-  @scala.inline
-  def second: typings.std.stdStrings.second = "second".asInstanceOf[typings.std.stdStrings.second]
+  inline def second: typings.std.stdStrings.second = "second".asInstanceOf[typings.std.stdStrings.second]
   
-  @scala.inline
-  def timeZoneName: typings.std.stdStrings.timeZoneName = "timeZoneName".asInstanceOf[typings.std.stdStrings.timeZoneName]
+  inline def timeZoneName: typings.std.stdStrings.timeZoneName = "timeZoneName".asInstanceOf[typings.std.stdStrings.timeZoneName]
   
-  @scala.inline
-  def weekday: typings.std.stdStrings.weekday = "weekday".asInstanceOf[typings.std.stdStrings.weekday]
+  inline def weekday: typings.std.stdStrings.weekday = "weekday".asInstanceOf[typings.std.stdStrings.weekday]
   
-  @scala.inline
-  def year: typings.std.stdStrings.year = "year".asInstanceOf[typings.std.stdStrings.year]
+  inline def year: typings.std.stdStrings.year = "year".asInstanceOf[typings.std.stdStrings.year]
 }

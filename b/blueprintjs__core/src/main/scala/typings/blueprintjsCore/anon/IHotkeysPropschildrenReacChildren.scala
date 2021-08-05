@@ -25,31 +25,23 @@ trait IHotkeysPropschildrenReacChildren extends StObject {
 }
 object IHotkeysPropschildrenReacChildren {
   
-  @scala.inline
-  def apply(): IHotkeysPropschildrenReacChildren = {
+  inline def apply(): IHotkeysPropschildrenReacChildren = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHotkeysPropschildrenReacChildren]
   }
   
-  @scala.inline
-  implicit class IHotkeysPropschildrenReacChildrenMutableBuilder[Self <: IHotkeysPropschildrenReacChildren] (val x: Self) extends AnyVal {
+  extension [Self <: IHotkeysPropschildrenReacChildren](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

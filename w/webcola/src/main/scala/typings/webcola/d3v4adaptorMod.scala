@@ -24,13 +24,13 @@ object d3v4adaptorMod {
        with ID3StyleLayoutAdaptor {
     def this(d3Context: D3Context) = this()
     
-    var d3Context: js.Any = js.native
+    /* private */ var d3Context: js.Any = js.native
     
-    /* InferMemberOverrides */
-    /* protected */ override def kick(): Unit = js.native
+    /* protected */ /* InferMemberOverrides */
+    override def kick(): Unit = js.native
     
-    /* InferMemberOverrides */
-    /* protected */ override def trigger(e: Event): Unit = js.native
+    /* protected */ /* InferMemberOverrides */
+    override def trigger(e: Event): Unit = js.native
   }
   
   trait D3Context extends StObject {
@@ -56,26 +56,20 @@ object d3v4adaptorMod {
   }
   object D3Context {
     
-    @scala.inline
-    def apply(dispatch: FnCallTypes, drag: Fn0, event: js.Any, timer: FnCall): D3Context = {
+    inline def apply(dispatch: FnCallTypes, drag: Fn0, event: js.Any, timer: FnCall): D3Context = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any])
       __obj.asInstanceOf[D3Context]
     }
     
-    @scala.inline
-    implicit class D3ContextMutableBuilder[Self <: D3Context] (val x: Self) extends AnyVal {
+    extension [Self <: D3Context](x: Self) {
       
-      @scala.inline
-      def setDispatch(value: FnCallTypes): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: FnCallTypes): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrag(value: Fn0): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+      inline def setDrag(value: Fn0): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimer(value: FnCall): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: FnCall): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     }
   }
 }

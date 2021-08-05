@@ -11,8 +11,7 @@ object ngCommand {
        with ICommand
   object Command {
     
-    @scala.inline
-    def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): Command = {
+    inline def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): Command = {
       val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command]
     }
@@ -40,23 +39,18 @@ object ngCommand {
   }
   object ICommand {
     
-    @scala.inline
-    def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): ICommand = {
+    inline def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): ICommand = {
       val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICommand]
     }
     
-    @scala.inline
-    implicit class ICommandMutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
+    extension [Self <: ICommand](x: Self) {
       
-      @scala.inline
-      def setCanExecute(value: Boolean): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
+      inline def setCanExecute(value: Boolean): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsExecuting(value: Boolean): Self = StObject.set(x, "isExecuting", value.asInstanceOf[js.Any])
+      inline def setIsExecuting(value: Boolean): Self = StObject.set(x, "isExecuting", value.asInstanceOf[js.Any])
     }
   }
   

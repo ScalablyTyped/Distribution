@@ -19,10 +19,8 @@ object mod {
     /**
       * Create a layer support marker cluster group, optionally given marker cluster group options.
       */
-    @scala.inline
-    def layerSupport(): LayerSupport = ^.asInstanceOf[js.Dynamic].applyDynamic("layerSupport")().asInstanceOf[LayerSupport]
-    @scala.inline
-    def layerSupport(options: MarkerClusterGroupLayerSupportOptions): LayerSupport = ^.asInstanceOf[js.Dynamic].applyDynamic("layerSupport")(options.asInstanceOf[js.Any]).asInstanceOf[LayerSupport]
+    inline def layerSupport(): LayerSupport = ^.asInstanceOf[js.Dynamic].applyDynamic("layerSupport")().asInstanceOf[LayerSupport]
+    inline def layerSupport(options: MarkerClusterGroupLayerSupportOptions): LayerSupport = ^.asInstanceOf[js.Dynamic].applyDynamic("layerSupport")(options.asInstanceOf[js.Any]).asInstanceOf[LayerSupport]
   }
   
   trait MarkerClusterGroupLayerSupportOptions
@@ -36,17 +34,14 @@ object mod {
   }
   object MarkerClusterGroupLayerSupportOptions {
     
-    @scala.inline
-    def apply(singleAddRemoveBufferDuration: Double): MarkerClusterGroupLayerSupportOptions = {
+    inline def apply(singleAddRemoveBufferDuration: Double): MarkerClusterGroupLayerSupportOptions = {
       val __obj = js.Dynamic.literal(singleAddRemoveBufferDuration = singleAddRemoveBufferDuration.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkerClusterGroupLayerSupportOptions]
     }
     
-    @scala.inline
-    implicit class MarkerClusterGroupLayerSupportOptionsMutableBuilder[Self <: MarkerClusterGroupLayerSupportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MarkerClusterGroupLayerSupportOptions](x: Self) {
       
-      @scala.inline
-      def setSingleAddRemoveBufferDuration(value: Double): Self = StObject.set(x, "singleAddRemoveBufferDuration", value.asInstanceOf[js.Any])
+      inline def setSingleAddRemoveBufferDuration(value: Double): Self = StObject.set(x, "singleAddRemoveBufferDuration", value.asInstanceOf[js.Any])
     }
   }
   

@@ -21,29 +21,22 @@ object relativeTimeMod extends Shortcut {
   }
   object RelativeTimeOptions {
     
-    @scala.inline
-    def apply(): RelativeTimeOptions = {
+    inline def apply(): RelativeTimeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelativeTimeOptions]
     }
     
-    @scala.inline
-    implicit class RelativeTimeOptionsMutableBuilder[Self <: RelativeTimeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTimeOptions](x: Self) {
       
-      @scala.inline
-      def setRounding(value: /* num */ Double => Double): Self = StObject.set(x, "rounding", js.Any.fromFunction1(value))
+      inline def setRounding(value: /* num */ Double => Double): Self = StObject.set(x, "rounding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
+      inline def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
       
-      @scala.inline
-      def setThresholds(value: js.Array[RelativeTimeThreshold]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+      inline def setThresholds(value: js.Array[RelativeTimeThreshold]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+      inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
       
-      @scala.inline
-      def setThresholdsVarargs(value: RelativeTimeThreshold*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+      inline def setThresholdsVarargs(value: RelativeTimeThreshold*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
     }
   }
   
@@ -57,29 +50,22 @@ object relativeTimeMod extends Shortcut {
   }
   object RelativeTimeThreshold {
     
-    @scala.inline
-    def apply(l: String): RelativeTimeThreshold = {
+    inline def apply(l: String): RelativeTimeThreshold = {
       val __obj = js.Dynamic.literal(l = l.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTimeThreshold]
     }
     
-    @scala.inline
-    implicit class RelativeTimeThresholdMutableBuilder[Self <: RelativeTimeThreshold] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTimeThreshold](x: Self) {
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
       
-      @scala.inline
-      def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     }
   }
   

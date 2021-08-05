@@ -17,31 +17,23 @@ trait AccountRef extends StObject {
 }
 object AccountRef {
   
-  @scala.inline
-  def apply(): AccountRef = {
+  inline def apply(): AccountRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountRef]
   }
   
-  @scala.inline
-  implicit class AccountRefMutableBuilder[Self <: AccountRef] (val x: Self) extends AnyVal {
+  extension [Self <: AccountRef](x: Self) {
     
-    @scala.inline
-    def setAccountRef(value: SchemaAccountRef): Self = StObject.set(x, "accountRef", value.asInstanceOf[js.Any])
+    inline def setAccountRef(value: SchemaAccountRef): Self = StObject.set(x, "accountRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountRefUndefined: Self = StObject.set(x, "accountRef", js.undefined)
+    inline def setAccountRefUndefined: Self = StObject.set(x, "accountRef", js.undefined)
     
-    @scala.inline
-    def setProfileRef(value: SchemaProfileRef): Self = StObject.set(x, "profileRef", value.asInstanceOf[js.Any])
+    inline def setProfileRef(value: SchemaProfileRef): Self = StObject.set(x, "profileRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileRefUndefined: Self = StObject.set(x, "profileRef", js.undefined)
+    inline def setProfileRefUndefined: Self = StObject.set(x, "profileRef", js.undefined)
     
-    @scala.inline
-    def setWebPropertyRef(value: SchemaWebPropertyRef): Self = StObject.set(x, "webPropertyRef", value.asInstanceOf[js.Any])
+    inline def setWebPropertyRef(value: SchemaWebPropertyRef): Self = StObject.set(x, "webPropertyRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyRefUndefined: Self = StObject.set(x, "webPropertyRef", js.undefined)
+    inline def setWebPropertyRefUndefined: Self = StObject.set(x, "webPropertyRef", js.undefined)
   }
 }

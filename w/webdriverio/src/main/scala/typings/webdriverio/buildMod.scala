@@ -17,24 +17,17 @@ object buildMod {
     def this(message: String) = this()
   }
   
-  @scala.inline
-  def attach(params: js.Any): js.Promise[
+  inline def attach(params: js.Any): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Client */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Client */ js.Any
   ]]
   
-  @scala.inline
-  def multiremote(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")().asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def multiremote(params: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def multiremote(params: js.Object, config: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def multiremote(params: Unit, config: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def multiremote(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")().asInstanceOf[js.Promise[js.Any]]
+  inline def multiremote(params: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def multiremote(params: js.Object, config: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def multiremote(params: Unit, config: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def remote(params: js.Object, remoteModifier: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(params.asInstanceOf[js.Any], remoteModifier.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def remote(params: Unit, remoteModifier: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(params.asInstanceOf[js.Any], remoteModifier.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def remote(params: js.Object, remoteModifier: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(params.asInstanceOf[js.Any], remoteModifier.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def remote(params: Unit, remoteModifier: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(params.asInstanceOf[js.Any], remoteModifier.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

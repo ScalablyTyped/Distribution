@@ -14,8 +14,7 @@ trait Events extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emit: (String, /* repeated */ js.Any) => Unit,
     off: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit,
     on: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit
@@ -24,16 +23,12 @@ object Events {
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOff(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

@@ -10,16 +10,13 @@ trait MismatchString extends StObject {
 }
 object MismatchString {
   
-  @scala.inline
-  def apply(mismatch: String): MismatchString = {
+  inline def apply(mismatch: String): MismatchString = {
     val __obj = js.Dynamic.literal(mismatch = mismatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[MismatchString]
   }
   
-  @scala.inline
-  implicit class MismatchStringMutableBuilder[Self <: MismatchString] (val x: Self) extends AnyVal {
+  extension [Self <: MismatchString](x: Self) {
     
-    @scala.inline
-    def setMismatch(value: String): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+    inline def setMismatch(value: String): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
   }
 }

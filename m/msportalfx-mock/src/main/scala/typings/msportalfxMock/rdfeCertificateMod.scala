@@ -31,8 +31,7 @@ object rdfeCertificateMod {
   }
   object SubscriptionCertificate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: Date,
       subscriptionCertificateData: String,
       subscriptionCertificatePublicKey: String,
@@ -42,20 +41,15 @@ object rdfeCertificateMod {
       __obj.asInstanceOf[SubscriptionCertificate]
     }
     
-    @scala.inline
-    implicit class SubscriptionCertificateMutableBuilder[Self <: SubscriptionCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionCertificate](x: Self) {
       
-      @scala.inline
-      def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionCertificateData(value: String): Self = StObject.set(x, "subscriptionCertificateData", value.asInstanceOf[js.Any])
+      inline def setSubscriptionCertificateData(value: String): Self = StObject.set(x, "subscriptionCertificateData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionCertificatePublicKey(value: String): Self = StObject.set(x, "subscriptionCertificatePublicKey", value.asInstanceOf[js.Any])
+      inline def setSubscriptionCertificatePublicKey(value: String): Self = StObject.set(x, "subscriptionCertificatePublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionCertificateThumbprint(value: String): Self = StObject.set(x, "subscriptionCertificateThumbprint", value.asInstanceOf[js.Any])
+      inline def setSubscriptionCertificateThumbprint(value: String): Self = StObject.set(x, "subscriptionCertificateThumbprint", value.asInstanceOf[js.Any])
     }
   }
 }

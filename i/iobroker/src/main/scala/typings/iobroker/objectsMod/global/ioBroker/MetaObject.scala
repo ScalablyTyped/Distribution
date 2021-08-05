@@ -19,20 +19,16 @@ trait MetaObject
 }
 object MetaObject {
   
-  @scala.inline
-  def apply(_id: String, common: MetaCommon, native: Record[String, js.Any]): MetaObject = {
+  inline def apply(_id: String, common: MetaCommon, native: Record[String, js.Any]): MetaObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("meta")
     __obj.asInstanceOf[MetaObject]
   }
   
-  @scala.inline
-  implicit class MetaObjectMutableBuilder[Self <: MetaObject] (val x: Self) extends AnyVal {
+  extension [Self <: MetaObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: MetaCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: MetaCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: meta): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: meta): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

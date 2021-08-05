@@ -105,23 +105,18 @@ object switchTransitionMod {
   }
   object SwitchTransitionProps {
     
-    @scala.inline
-    def apply(children: ReactElement): SwitchTransitionProps = {
+    inline def apply(children: ReactElement): SwitchTransitionProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitchTransitionProps]
     }
     
-    @scala.inline
-    implicit class SwitchTransitionPropsMutableBuilder[Self <: SwitchTransitionProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchTransitionProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: `out-in` | `in-out`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: `out-in` | `in-out`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

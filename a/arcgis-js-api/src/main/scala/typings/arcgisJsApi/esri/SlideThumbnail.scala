@@ -19,8 +19,7 @@ trait SlideThumbnail
 }
 object SlideThumbnail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,13 +29,10 @@ object SlideThumbnail {
     __obj.asInstanceOf[SlideThumbnail]
   }
   
-  @scala.inline
-  implicit class SlideThumbnailMutableBuilder[Self <: SlideThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: SlideThumbnail](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

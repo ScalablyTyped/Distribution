@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontStyle extends StObject
 object FontStyle {
   
-  @scala.inline
-  def italic: typings.reactNativeSvg.reactNativeSvgStrings.italic = "italic".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.italic]
+  inline def italic: typings.reactNativeSvg.reactNativeSvgStrings.italic = "italic".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.italic]
   
-  @scala.inline
-  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
+  inline def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
   
-  @scala.inline
-  def oblique: typings.reactNativeSvg.reactNativeSvgStrings.oblique = "oblique".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.oblique]
+  inline def oblique: typings.reactNativeSvg.reactNativeSvgStrings.oblique = "oblique".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.oblique]
 }

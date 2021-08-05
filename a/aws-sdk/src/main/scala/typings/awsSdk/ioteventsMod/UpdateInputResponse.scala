@@ -13,19 +13,15 @@ trait UpdateInputResponse extends StObject {
 }
 object UpdateInputResponse {
   
-  @scala.inline
-  def apply(): UpdateInputResponse = {
+  inline def apply(): UpdateInputResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateInputResponse]
   }
   
-  @scala.inline
-  implicit class UpdateInputResponseMutableBuilder[Self <: UpdateInputResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInputResponse](x: Self) {
     
-    @scala.inline
-    def setInputConfiguration(value: InputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputConfiguration(value: InputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
+    inline def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
   }
 }

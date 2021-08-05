@@ -17,8 +17,7 @@ trait ParametersReposDeletePagesSiteEndpoint extends StObject {
 }
 object ParametersReposDeletePagesSiteEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposDeletePagesSiteEndpoint,
     request: ReposDeletePagesSiteRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersReposDeletePagesSiteEndpoint {
     __obj.asInstanceOf[ParametersReposDeletePagesSiteEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposDeletePagesSiteEndpointMutableBuilder[Self <: ParametersReposDeletePagesSiteEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposDeletePagesSiteEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposDeletePagesSiteEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposDeletePagesSiteEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposDeletePagesSiteRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposDeletePagesSiteRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

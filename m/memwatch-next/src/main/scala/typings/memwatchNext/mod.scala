@@ -21,8 +21,7 @@ object mod {
     def end(): Unit = js.native
   }
   
-  @scala.inline
-  def on(eventName: String, callback: EventCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: String, callback: EventCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type EventCallback = js.Function1[/* data */ LeakInformation | StatsInformation | js.Object, Unit]
   
@@ -54,26 +53,20 @@ object mod {
   }
   object LeakInformation {
     
-    @scala.inline
-    def apply(end: Date, growth: Double, reason: String, start: Date): LeakInformation = {
+    inline def apply(end: Date, growth: Double, reason: String, start: Date): LeakInformation = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], growth = growth.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeakInformation]
     }
     
-    @scala.inline
-    implicit class LeakInformationMutableBuilder[Self <: LeakInformation] (val x: Self) extends AnyVal {
+    extension [Self <: LeakInformation](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowth(value: Double): Self = StObject.set(x, "growth", value.asInstanceOf[js.Any])
+      inline def setGrowth(value: Double): Self = StObject.set(x, "growth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,8 +90,7 @@ object mod {
   }
   object StatsInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current_base: Double,
       estimated_base: Double,
       heap_compactions: Double,
@@ -112,32 +104,23 @@ object mod {
       __obj.asInstanceOf[StatsInformation]
     }
     
-    @scala.inline
-    implicit class StatsInformationMutableBuilder[Self <: StatsInformation] (val x: Self) extends AnyVal {
+    extension [Self <: StatsInformation](x: Self) {
       
-      @scala.inline
-      def setCurrent_base(value: Double): Self = StObject.set(x, "current_base", value.asInstanceOf[js.Any])
+      inline def setCurrent_base(value: Double): Self = StObject.set(x, "current_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimated_base(value: Double): Self = StObject.set(x, "estimated_base", value.asInstanceOf[js.Any])
+      inline def setEstimated_base(value: Double): Self = StObject.set(x, "estimated_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeap_compactions(value: Double): Self = StObject.set(x, "heap_compactions", value.asInstanceOf[js.Any])
+      inline def setHeap_compactions(value: Double): Self = StObject.set(x, "heap_compactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_full_gc(value: Double): Self = StObject.set(x, "num_full_gc", value.asInstanceOf[js.Any])
+      inline def setNum_full_gc(value: Double): Self = StObject.set(x, "num_full_gc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_inc_gc(value: Double): Self = StObject.set(x, "num_inc_gc", value.asInstanceOf[js.Any])
+      inline def setNum_inc_gc(value: Double): Self = StObject.set(x, "num_inc_gc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage_trend(value: Double): Self = StObject.set(x, "usage_trend", value.asInstanceOf[js.Any])
+      inline def setUsage_trend(value: Double): Self = StObject.set(x, "usage_trend", value.asInstanceOf[js.Any])
     }
   }
 }

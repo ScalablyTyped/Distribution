@@ -61,134 +61,92 @@ object mod {
   }
   object FsLightboxProps {
     
-    @scala.inline
-    def apply(toggler: Boolean): FsLightboxProps = {
+    inline def apply(toggler: Boolean): FsLightboxProps = {
       val __obj = js.Dynamic.literal(toggler = toggler.asInstanceOf[js.Any])
       __obj.asInstanceOf[FsLightboxProps]
     }
     
-    @scala.inline
-    implicit class FsLightboxPropsMutableBuilder[Self <: FsLightboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: FsLightboxProps](x: Self) {
       
-      @scala.inline
-      def setCustomSources(value: js.Array[Element]): Self = StObject.set(x, "customSources", value.asInstanceOf[js.Any])
+      inline def setCustomSources(value: js.Array[Element]): Self = StObject.set(x, "customSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSourcesUndefined: Self = StObject.set(x, "customSources", js.undefined)
+      inline def setCustomSourcesUndefined: Self = StObject.set(x, "customSources", js.undefined)
       
-      @scala.inline
-      def setCustomSourcesVarargs(value: Element*): Self = StObject.set(x, "customSources", js.Array(value :_*))
+      inline def setCustomSourcesVarargs(value: Element*): Self = StObject.set(x, "customSources", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableLocalStorage(value: Boolean): Self = StObject.set(x, "disableLocalStorage", value.asInstanceOf[js.Any])
+      inline def setDisableLocalStorage(value: Boolean): Self = StObject.set(x, "disableLocalStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLocalStorageUndefined: Self = StObject.set(x, "disableLocalStorage", js.undefined)
+      inline def setDisableLocalStorageUndefined: Self = StObject.set(x, "disableLocalStorage", js.undefined)
       
-      @scala.inline
-      def setLoadOnlyCurrentSource(value: Boolean): Self = StObject.set(x, "loadOnlyCurrentSource", value.asInstanceOf[js.Any])
+      inline def setLoadOnlyCurrentSource(value: Boolean): Self = StObject.set(x, "loadOnlyCurrentSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadOnlyCurrentSourceUndefined: Self = StObject.set(x, "loadOnlyCurrentSource", js.undefined)
+      inline def setLoadOnlyCurrentSourceUndefined: Self = StObject.set(x, "loadOnlyCurrentSource", js.undefined)
       
-      @scala.inline
-      def setMaxYoutubeVideoDimensions(value: VideoDimensions): Self = StObject.set(x, "maxYoutubeVideoDimensions", value.asInstanceOf[js.Any])
+      inline def setMaxYoutubeVideoDimensions(value: VideoDimensions): Self = StObject.set(x, "maxYoutubeVideoDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxYoutubeVideoDimensionsUndefined: Self = StObject.set(x, "maxYoutubeVideoDimensions", js.undefined)
+      inline def setMaxYoutubeVideoDimensionsUndefined: Self = StObject.set(x, "maxYoutubeVideoDimensions", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+      inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOpenOnMount(value: Boolean): Self = StObject.set(x, "openOnMount", value.asInstanceOf[js.Any])
+      inline def setOpenOnMount(value: Boolean): Self = StObject.set(x, "openOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnMountUndefined: Self = StObject.set(x, "openOnMount", js.undefined)
+      inline def setOpenOnMountUndefined: Self = StObject.set(x, "openOnMount", js.undefined)
       
-      @scala.inline
-      def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
+      inline def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideDistance(value: Double): Self = StObject.set(x, "slideDistance", value.asInstanceOf[js.Any])
+      inline def setSlideDistance(value: Double): Self = StObject.set(x, "slideDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideDistanceUndefined: Self = StObject.set(x, "slideDistance", js.undefined)
+      inline def setSlideDistanceUndefined: Self = StObject.set(x, "slideDistance", js.undefined)
       
-      @scala.inline
-      def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
+      inline def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+      inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIndexUndefined: Self = StObject.set(x, "sourceIndex", js.undefined)
+      inline def setSourceIndexUndefined: Self = StObject.set(x, "sourceIndex", js.undefined)
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+      inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      @scala.inline
-      def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
       
-      @scala.inline
-      def setToggler(value: Boolean): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
+      inline def setToggler(value: Boolean): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[SourceType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[SourceType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: SourceType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: SourceType*): Self = StObject.set(x, "types", js.Array(value :_*))
       
-      @scala.inline
-      def setVideosPosters(value: js.Array[VideoPoster]): Self = StObject.set(x, "videosPosters", value.asInstanceOf[js.Any])
+      inline def setVideosPosters(value: js.Array[VideoPoster]): Self = StObject.set(x, "videosPosters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideosPostersUndefined: Self = StObject.set(x, "videosPosters", js.undefined)
+      inline def setVideosPostersUndefined: Self = StObject.set(x, "videosPosters", js.undefined)
       
-      @scala.inline
-      def setVideosPostersVarargs(value: VideoPoster*): Self = StObject.set(x, "videosPosters", js.Array(value :_*))
+      inline def setVideosPostersVarargs(value: VideoPoster*): Self = StObject.set(x, "videosPosters", js.Array(value :_*))
     }
   }
   
@@ -208,20 +166,16 @@ object mod {
   }
   object VideoDimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): VideoDimensions = {
+    inline def apply(height: Double, width: Double): VideoDimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[VideoDimensions]
     }
     
-    @scala.inline
-    implicit class VideoDimensionsMutableBuilder[Self <: VideoDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: VideoDimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

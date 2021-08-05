@@ -18,25 +18,19 @@ trait BootstrapModeSettings
 }
 object BootstrapModeSettings {
   
-  @scala.inline
-  def apply(): BootstrapModeSettings = {
+  inline def apply(): BootstrapModeSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BootstrapModeSettings]
   }
   
-  @scala.inline
-  implicit class BootstrapModeSettingsMutableBuilder[Self <: BootstrapModeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapModeSettings](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setVisibilityTester(value: js.Any): Self = StObject.set(x, "visibilityTester", value.asInstanceOf[js.Any])
+    inline def setVisibilityTester(value: js.Any): Self = StObject.set(x, "visibilityTester", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityTesterUndefined: Self = StObject.set(x, "visibilityTester", js.undefined)
+    inline def setVisibilityTesterUndefined: Self = StObject.set(x, "visibilityTester", js.undefined)
   }
 }

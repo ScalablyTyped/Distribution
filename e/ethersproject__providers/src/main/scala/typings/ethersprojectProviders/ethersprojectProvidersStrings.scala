@@ -8,6 +8,5 @@ object ethersprojectProvidersStrings {
   
   @js.native
   sealed trait pending extends StObject
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
 }

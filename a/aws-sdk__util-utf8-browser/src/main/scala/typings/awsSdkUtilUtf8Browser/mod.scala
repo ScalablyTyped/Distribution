@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromUtf8(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def fromUtf8(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @scala.inline
-  def toUtf8(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toUtf8(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

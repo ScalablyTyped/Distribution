@@ -13,19 +13,15 @@ trait UserData extends StObject {
 }
 object UserData {
   
-  @scala.inline
-  def apply(): UserData = {
+  inline def apply(): UserData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserData]
   }
   
-  @scala.inline
-  implicit class UserDataMutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
+  extension [Self <: UserData](x: Self) {
     
-    @scala.inline
-    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
   }
 }

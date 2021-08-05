@@ -23,31 +23,23 @@ trait IncludeAttributedIPConversions extends StObject {
 }
 object IncludeAttributedIPConversions {
   
-  @scala.inline
-  def apply(): IncludeAttributedIPConversions = {
+  inline def apply(): IncludeAttributedIPConversions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeAttributedIPConversions]
   }
   
-  @scala.inline
-  implicit class IncludeAttributedIPConversionsMutableBuilder[Self <: IncludeAttributedIPConversions] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeAttributedIPConversions](x: Self) {
     
-    @scala.inline
-    def setIncludeAttributedIPConversions(value: Boolean): Self = StObject.set(x, "includeAttributedIPConversions", value.asInstanceOf[js.Any])
+    inline def setIncludeAttributedIPConversions(value: Boolean): Self = StObject.set(x, "includeAttributedIPConversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAttributedIPConversionsUndefined: Self = StObject.set(x, "includeAttributedIPConversions", js.undefined)
+    inline def setIncludeAttributedIPConversionsUndefined: Self = StObject.set(x, "includeAttributedIPConversions", js.undefined)
     
-    @scala.inline
-    def setIncludeUnattributedCookieConversions(value: Boolean): Self = StObject.set(x, "includeUnattributedCookieConversions", value.asInstanceOf[js.Any])
+    inline def setIncludeUnattributedCookieConversions(value: Boolean): Self = StObject.set(x, "includeUnattributedCookieConversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUnattributedCookieConversionsUndefined: Self = StObject.set(x, "includeUnattributedCookieConversions", js.undefined)
+    inline def setIncludeUnattributedCookieConversionsUndefined: Self = StObject.set(x, "includeUnattributedCookieConversions", js.undefined)
     
-    @scala.inline
-    def setIncludeUnattributedIPConversions(value: Boolean): Self = StObject.set(x, "includeUnattributedIPConversions", value.asInstanceOf[js.Any])
+    inline def setIncludeUnattributedIPConversions(value: Boolean): Self = StObject.set(x, "includeUnattributedIPConversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUnattributedIPConversionsUndefined: Self = StObject.set(x, "includeUnattributedIPConversions", js.undefined)
+    inline def setIncludeUnattributedIPConversionsUndefined: Self = StObject.set(x, "includeUnattributedIPConversions", js.undefined)
   }
 }

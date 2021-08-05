@@ -23,25 +23,19 @@ trait ImageSource extends StObject {
 }
 object ImageSource {
   
-  @scala.inline
-  def apply(): ImageSource = {
+  inline def apply(): ImageSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageSource]
   }
   
-  @scala.inline
-  implicit class ImageSourceMutableBuilder[Self <: ImageSource] (val x: Self) extends AnyVal {
+  extension [Self <: ImageSource](x: Self) {
     
-    @scala.inline
-    def setGcsImageUri(value: String): Self = StObject.set(x, "gcsImageUri", value.asInstanceOf[js.Any])
+    inline def setGcsImageUri(value: String): Self = StObject.set(x, "gcsImageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsImageUriUndefined: Self = StObject.set(x, "gcsImageUri", js.undefined)
+    inline def setGcsImageUriUndefined: Self = StObject.set(x, "gcsImageUri", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

@@ -39,85 +39,59 @@ trait Reminder extends StObject {
 }
 object Reminder {
   
-  @scala.inline
-  def apply(): Reminder = {
+  inline def apply(): Reminder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reminder]
   }
   
-  @scala.inline
-  implicit class ReminderMutableBuilder[Self <: Reminder] (val x: Self) extends AnyVal {
+  extension [Self <: Reminder](x: Self) {
     
-    @scala.inline
-    def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeKeyNull: Self = StObject.set(x, "changeKey", null)
+    inline def setChangeKeyNull: Self = StObject.set(x, "changeKey", null)
     
-    @scala.inline
-    def setChangeKeyUndefined: Self = StObject.set(x, "changeKey", js.undefined)
+    inline def setChangeKeyUndefined: Self = StObject.set(x, "changeKey", js.undefined)
     
-    @scala.inline
-    def setEventEndTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "eventEndTime", value.asInstanceOf[js.Any])
+    inline def setEventEndTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "eventEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEndTimeNull: Self = StObject.set(x, "eventEndTime", null)
+    inline def setEventEndTimeNull: Self = StObject.set(x, "eventEndTime", null)
     
-    @scala.inline
-    def setEventEndTimeUndefined: Self = StObject.set(x, "eventEndTime", js.undefined)
+    inline def setEventEndTimeUndefined: Self = StObject.set(x, "eventEndTime", js.undefined)
     
-    @scala.inline
-    def setEventId(value: NullableOption[String]): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: NullableOption[String]): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdNull: Self = StObject.set(x, "eventId", null)
+    inline def setEventIdNull: Self = StObject.set(x, "eventId", null)
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setEventLocation(value: NullableOption[Location]): Self = StObject.set(x, "eventLocation", value.asInstanceOf[js.Any])
+    inline def setEventLocation(value: NullableOption[Location]): Self = StObject.set(x, "eventLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLocationNull: Self = StObject.set(x, "eventLocation", null)
+    inline def setEventLocationNull: Self = StObject.set(x, "eventLocation", null)
     
-    @scala.inline
-    def setEventLocationUndefined: Self = StObject.set(x, "eventLocation", js.undefined)
+    inline def setEventLocationUndefined: Self = StObject.set(x, "eventLocation", js.undefined)
     
-    @scala.inline
-    def setEventStartTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "eventStartTime", value.asInstanceOf[js.Any])
+    inline def setEventStartTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "eventStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStartTimeNull: Self = StObject.set(x, "eventStartTime", null)
+    inline def setEventStartTimeNull: Self = StObject.set(x, "eventStartTime", null)
     
-    @scala.inline
-    def setEventStartTimeUndefined: Self = StObject.set(x, "eventStartTime", js.undefined)
+    inline def setEventStartTimeUndefined: Self = StObject.set(x, "eventStartTime", js.undefined)
     
-    @scala.inline
-    def setEventSubject(value: NullableOption[String]): Self = StObject.set(x, "eventSubject", value.asInstanceOf[js.Any])
+    inline def setEventSubject(value: NullableOption[String]): Self = StObject.set(x, "eventSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSubjectNull: Self = StObject.set(x, "eventSubject", null)
+    inline def setEventSubjectNull: Self = StObject.set(x, "eventSubject", null)
     
-    @scala.inline
-    def setEventSubjectUndefined: Self = StObject.set(x, "eventSubject", js.undefined)
+    inline def setEventSubjectUndefined: Self = StObject.set(x, "eventSubject", js.undefined)
     
-    @scala.inline
-    def setEventWebLink(value: NullableOption[String]): Self = StObject.set(x, "eventWebLink", value.asInstanceOf[js.Any])
+    inline def setEventWebLink(value: NullableOption[String]): Self = StObject.set(x, "eventWebLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventWebLinkNull: Self = StObject.set(x, "eventWebLink", null)
+    inline def setEventWebLinkNull: Self = StObject.set(x, "eventWebLink", null)
     
-    @scala.inline
-    def setEventWebLinkUndefined: Self = StObject.set(x, "eventWebLink", js.undefined)
+    inline def setEventWebLinkUndefined: Self = StObject.set(x, "eventWebLink", js.undefined)
     
-    @scala.inline
-    def setReminderFireTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "reminderFireTime", value.asInstanceOf[js.Any])
+    inline def setReminderFireTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "reminderFireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderFireTimeNull: Self = StObject.set(x, "reminderFireTime", null)
+    inline def setReminderFireTimeNull: Self = StObject.set(x, "reminderFireTime", null)
     
-    @scala.inline
-    def setReminderFireTimeUndefined: Self = StObject.set(x, "reminderFireTime", js.undefined)
+    inline def setReminderFireTimeUndefined: Self = StObject.set(x, "reminderFireTime", js.undefined)
   }
 }

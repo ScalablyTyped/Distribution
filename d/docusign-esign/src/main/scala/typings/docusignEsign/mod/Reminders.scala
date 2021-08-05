@@ -24,31 +24,23 @@ trait Reminders extends StObject {
 }
 object Reminders {
   
-  @scala.inline
-  def apply(): Reminders = {
+  inline def apply(): Reminders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reminders]
   }
   
-  @scala.inline
-  implicit class RemindersMutableBuilder[Self <: Reminders] (val x: Self) extends AnyVal {
+  extension [Self <: Reminders](x: Self) {
     
-    @scala.inline
-    def setReminderDelay(value: String): Self = StObject.set(x, "reminderDelay", value.asInstanceOf[js.Any])
+    inline def setReminderDelay(value: String): Self = StObject.set(x, "reminderDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderDelayUndefined: Self = StObject.set(x, "reminderDelay", js.undefined)
+    inline def setReminderDelayUndefined: Self = StObject.set(x, "reminderDelay", js.undefined)
     
-    @scala.inline
-    def setReminderEnabled(value: String): Self = StObject.set(x, "reminderEnabled", value.asInstanceOf[js.Any])
+    inline def setReminderEnabled(value: String): Self = StObject.set(x, "reminderEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderEnabledUndefined: Self = StObject.set(x, "reminderEnabled", js.undefined)
+    inline def setReminderEnabledUndefined: Self = StObject.set(x, "reminderEnabled", js.undefined)
     
-    @scala.inline
-    def setReminderFrequency(value: String): Self = StObject.set(x, "reminderFrequency", value.asInstanceOf[js.Any])
+    inline def setReminderFrequency(value: String): Self = StObject.set(x, "reminderFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderFrequencyUndefined: Self = StObject.set(x, "reminderFrequency", js.undefined)
+    inline def setReminderFrequencyUndefined: Self = StObject.set(x, "reminderFrequency", js.undefined)
   }
 }

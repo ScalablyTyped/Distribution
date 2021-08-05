@@ -17,25 +17,19 @@ trait ExportDicomDataRequest extends StObject {
 }
 object ExportDicomDataRequest {
   
-  @scala.inline
-  def apply(): ExportDicomDataRequest = {
+  inline def apply(): ExportDicomDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportDicomDataRequest]
   }
   
-  @scala.inline
-  implicit class ExportDicomDataRequestMutableBuilder[Self <: ExportDicomDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportDicomDataRequest](x: Self) {
     
-    @scala.inline
-    def setBigqueryDestination(value: GoogleCloudHealthcareV1DicomBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
+    inline def setBigqueryDestination(value: GoogleCloudHealthcareV1DicomBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
+    inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
-    @scala.inline
-    def setGcsDestination(value: GoogleCloudHealthcareV1DicomGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: GoogleCloudHealthcareV1DicomGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

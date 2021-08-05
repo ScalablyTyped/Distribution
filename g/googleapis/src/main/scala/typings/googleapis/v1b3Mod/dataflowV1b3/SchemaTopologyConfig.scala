@@ -38,49 +38,35 @@ trait SchemaTopologyConfig extends StObject {
 }
 object SchemaTopologyConfig {
   
-  @scala.inline
-  def apply(): SchemaTopologyConfig = {
+  inline def apply(): SchemaTopologyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTopologyConfig]
   }
   
-  @scala.inline
-  implicit class SchemaTopologyConfigMutableBuilder[Self <: SchemaTopologyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTopologyConfig](x: Self) {
     
-    @scala.inline
-    def setComputations(value: js.Array[SchemaComputationTopology]): Self = StObject.set(x, "computations", value.asInstanceOf[js.Any])
+    inline def setComputations(value: js.Array[SchemaComputationTopology]): Self = StObject.set(x, "computations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputationsUndefined: Self = StObject.set(x, "computations", js.undefined)
+    inline def setComputationsUndefined: Self = StObject.set(x, "computations", js.undefined)
     
-    @scala.inline
-    def setComputationsVarargs(value: SchemaComputationTopology*): Self = StObject.set(x, "computations", js.Array(value :_*))
+    inline def setComputationsVarargs(value: SchemaComputationTopology*): Self = StObject.set(x, "computations", js.Array(value :_*))
     
-    @scala.inline
-    def setDataDiskAssignments(value: js.Array[SchemaDataDiskAssignment]): Self = StObject.set(x, "dataDiskAssignments", value.asInstanceOf[js.Any])
+    inline def setDataDiskAssignments(value: js.Array[SchemaDataDiskAssignment]): Self = StObject.set(x, "dataDiskAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskAssignmentsUndefined: Self = StObject.set(x, "dataDiskAssignments", js.undefined)
+    inline def setDataDiskAssignmentsUndefined: Self = StObject.set(x, "dataDiskAssignments", js.undefined)
     
-    @scala.inline
-    def setDataDiskAssignmentsVarargs(value: SchemaDataDiskAssignment*): Self = StObject.set(x, "dataDiskAssignments", js.Array(value :_*))
+    inline def setDataDiskAssignmentsVarargs(value: SchemaDataDiskAssignment*): Self = StObject.set(x, "dataDiskAssignments", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardingKeyBits(value: Double): Self = StObject.set(x, "forwardingKeyBits", value.asInstanceOf[js.Any])
+    inline def setForwardingKeyBits(value: Double): Self = StObject.set(x, "forwardingKeyBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingKeyBitsUndefined: Self = StObject.set(x, "forwardingKeyBits", js.undefined)
+    inline def setForwardingKeyBitsUndefined: Self = StObject.set(x, "forwardingKeyBits", js.undefined)
     
-    @scala.inline
-    def setPersistentStateVersion(value: Double): Self = StObject.set(x, "persistentStateVersion", value.asInstanceOf[js.Any])
+    inline def setPersistentStateVersion(value: Double): Self = StObject.set(x, "persistentStateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentStateVersionUndefined: Self = StObject.set(x, "persistentStateVersion", js.undefined)
+    inline def setPersistentStateVersionUndefined: Self = StObject.set(x, "persistentStateVersion", js.undefined)
     
-    @scala.inline
-    def setUserStageToComputationNameMap(value: StringDictionary[String]): Self = StObject.set(x, "userStageToComputationNameMap", value.asInstanceOf[js.Any])
+    inline def setUserStageToComputationNameMap(value: StringDictionary[String]): Self = StObject.set(x, "userStageToComputationNameMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStageToComputationNameMapUndefined: Self = StObject.set(x, "userStageToComputationNameMap", js.undefined)
+    inline def setUserStageToComputationNameMapUndefined: Self = StObject.set(x, "userStageToComputationNameMap", js.undefined)
   }
 }

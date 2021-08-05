@@ -10,15 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isHttpUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def isHttpUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def isHttpsUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpsUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def isHttpsUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpsUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def isUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def isUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def isWebUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def isWebUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

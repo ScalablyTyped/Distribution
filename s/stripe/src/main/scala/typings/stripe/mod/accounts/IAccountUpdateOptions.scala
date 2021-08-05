@@ -43,37 +43,27 @@ trait IAccountUpdateOptions
 }
 object IAccountUpdateOptions {
   
-  @scala.inline
-  def apply(): IAccountUpdateOptions = {
+  inline def apply(): IAccountUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAccountUpdateOptions]
   }
   
-  @scala.inline
-  implicit class IAccountUpdateOptionsMutableBuilder[Self <: IAccountUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAccountUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setAccount_token(value: String): Self = StObject.set(x, "account_token", value.asInstanceOf[js.Any])
+    inline def setAccount_token(value: String): Self = StObject.set(x, "account_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccount_tokenUndefined: Self = StObject.set(x, "account_token", js.undefined)
+    inline def setAccount_tokenUndefined: Self = StObject.set(x, "account_token", js.undefined)
     
-    @scala.inline
-    def setCompany(value: ICompanyCreateUpdateOptions): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: ICompanyCreateUpdateOptions): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    @scala.inline
-    def setExternal_account(value: Accountholdername): Self = StObject.set(x, "external_account", value.asInstanceOf[js.Any])
+    inline def setExternal_account(value: Accountholdername): Self = StObject.set(x, "external_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_accountUndefined: Self = StObject.set(x, "external_account", js.undefined)
+    inline def setExternal_accountUndefined: Self = StObject.set(x, "external_account", js.undefined)
     
-    @scala.inline
-    def setIndividual(value: IIndividualCreateUpdateOptions): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: IIndividualCreateUpdateOptions): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
+    inline def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
   }
 }

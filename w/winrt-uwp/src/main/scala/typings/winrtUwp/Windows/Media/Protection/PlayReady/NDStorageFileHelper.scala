@@ -18,16 +18,13 @@ trait NDStorageFileHelper extends StObject {
 }
 object NDStorageFileHelper {
   
-  @scala.inline
-  def apply(getFileURLs: IStorageFile => IVector[String]): NDStorageFileHelper = {
+  inline def apply(getFileURLs: IStorageFile => IVector[String]): NDStorageFileHelper = {
     val __obj = js.Dynamic.literal(getFileURLs = js.Any.fromFunction1(getFileURLs))
     __obj.asInstanceOf[NDStorageFileHelper]
   }
   
-  @scala.inline
-  implicit class NDStorageFileHelperMutableBuilder[Self <: NDStorageFileHelper] (val x: Self) extends AnyVal {
+  extension [Self <: NDStorageFileHelper](x: Self) {
     
-    @scala.inline
-    def setGetFileURLs(value: IStorageFile => IVector[String]): Self = StObject.set(x, "getFileURLs", js.Any.fromFunction1(value))
+    inline def setGetFileURLs(value: IStorageFile => IVector[String]): Self = StObject.set(x, "getFileURLs", js.Any.fromFunction1(value))
   }
 }

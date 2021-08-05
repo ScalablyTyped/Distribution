@@ -21,8 +21,7 @@ object horizontalMenuHorizontalMenuContextMod {
   @js.native
   val HorizontalMenuContext: Context[HorizontalMenuContextValue] = js.native
   
-  @scala.inline
-  def withHorizontalMenuContext[P /* <: WithHorizontalMenuContextProps */](WrappedComponent: ComponentType[P]): FC[Omit[P, menuContext]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHorizontalMenuContext")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[FC[Omit[P, menuContext]]]
+  inline def withHorizontalMenuContext[P /* <: WithHorizontalMenuContextProps */](WrappedComponent: ComponentType[P]): FC[Omit[P, menuContext]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHorizontalMenuContext")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[FC[Omit[P, menuContext]]]
   
   trait HorizontalMenuContextValue extends StObject {
     
@@ -36,8 +35,7 @@ object horizontalMenuHorizontalMenuContextMod {
   }
   object HorizontalMenuContextValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnsLayoutClassName: String,
       gridLayoutClassName: String,
       menuItemClassName: String,
@@ -47,20 +45,15 @@ object horizontalMenuHorizontalMenuContextMod {
       __obj.asInstanceOf[HorizontalMenuContextValue]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuContextValueMutableBuilder[Self <: HorizontalMenuContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuContextValue](x: Self) {
       
-      @scala.inline
-      def setColumnsLayoutClassName(value: String): Self = StObject.set(x, "columnsLayoutClassName", value.asInstanceOf[js.Any])
+      inline def setColumnsLayoutClassName(value: String): Self = StObject.set(x, "columnsLayoutClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridLayoutClassName(value: String): Self = StObject.set(x, "gridLayoutClassName", value.asInstanceOf[js.Any])
+      inline def setGridLayoutClassName(value: String): Self = StObject.set(x, "gridLayoutClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemClassName(value: String): Self = StObject.set(x, "menuItemClassName", value.asInstanceOf[js.Any])
+      inline def setMenuItemClassName(value: String): Self = StObject.set(x, "menuItemClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootMenuRef(value: RefObject[HTMLUListElement]): Self = StObject.set(x, "rootMenuRef", value.asInstanceOf[js.Any])
+      inline def setRootMenuRef(value: RefObject[HTMLUListElement]): Self = StObject.set(x, "rootMenuRef", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,17 +63,14 @@ object horizontalMenuHorizontalMenuContextMod {
   }
   object WithHorizontalMenuContextProps {
     
-    @scala.inline
-    def apply(menuContext: HorizontalMenuContextValue): WithHorizontalMenuContextProps = {
+    inline def apply(menuContext: HorizontalMenuContextValue): WithHorizontalMenuContextProps = {
       val __obj = js.Dynamic.literal(menuContext = menuContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithHorizontalMenuContextProps]
     }
     
-    @scala.inline
-    implicit class WithHorizontalMenuContextPropsMutableBuilder[Self <: WithHorizontalMenuContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: WithHorizontalMenuContextProps](x: Self) {
       
-      @scala.inline
-      def setMenuContext(value: HorizontalMenuContextValue): Self = StObject.set(x, "menuContext", value.asInstanceOf[js.Any])
+      inline def setMenuContext(value: HorizontalMenuContextValue): Self = StObject.set(x, "menuContext", value.asInstanceOf[js.Any])
     }
   }
 }

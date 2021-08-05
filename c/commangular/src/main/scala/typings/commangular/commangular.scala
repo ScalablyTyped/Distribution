@@ -100,8 +100,7 @@ object commangular {
   }
   object ICommAngularProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asFlow: () => ICommAngularDescriptor,
       asParallel: () => ICommAngularDescriptor,
       asSequence: () => ICommAngularDescriptor,
@@ -112,23 +111,17 @@ object commangular {
       __obj.asInstanceOf[ICommAngularProvider]
     }
     
-    @scala.inline
-    implicit class ICommAngularProviderMutableBuilder[Self <: ICommAngularProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ICommAngularProvider](x: Self) {
       
-      @scala.inline
-      def setAsFlow(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asFlow", js.Any.fromFunction0(value))
+      inline def setAsFlow(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asFlow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsParallel(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asParallel", js.Any.fromFunction0(value))
+      inline def setAsParallel(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asParallel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsSequence(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asSequence", js.Any.fromFunction0(value))
+      inline def setAsSequence(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asSequence", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindCommand(value: String => ICommAngularDescriptor): Self = StObject.set(x, "findCommand", js.Any.fromFunction1(value))
+      inline def setFindCommand(value: String => ICommAngularDescriptor): Self = StObject.set(x, "findCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapTo(value: String => ICommAngularDescriptor): Self = StObject.set(x, "mapTo", js.Any.fromFunction1(value))
+      inline def setMapTo(value: String => ICommAngularDescriptor): Self = StObject.set(x, "mapTo", js.Any.fromFunction1(value))
     }
   }
   
@@ -254,17 +247,14 @@ object commangular {
   }
   object ICommand {
     
-    @scala.inline
-    def apply(execute: () => js.Any): ICommand = {
+    inline def apply(execute: () => js.Any): ICommand = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
       __obj.asInstanceOf[ICommand]
     }
     
-    @scala.inline
-    implicit class ICommandMutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
+    extension [Self <: ICommand](x: Self) {
       
-      @scala.inline
-      def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     }
   }
   
@@ -283,23 +273,18 @@ object commangular {
   }
   object ICommandCall {
     
-    @scala.inline
-    def apply(command: String): ICommandCall = {
+    inline def apply(command: String): ICommandCall = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICommandCall]
     }
     
-    @scala.inline
-    implicit class ICommandCallMutableBuilder[Self <: ICommandCall] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandCall](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
   }
   
@@ -318,17 +303,14 @@ object commangular {
   }
   object ICommandConfig {
     
-    @scala.inline
-    def apply(resultKey: String): ICommandConfig = {
+    inline def apply(resultKey: String): ICommandConfig = {
       val __obj = js.Dynamic.literal(resultKey = resultKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICommandConfig]
     }
     
-    @scala.inline
-    implicit class ICommandConfigMutableBuilder[Self <: ICommandConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandConfig](x: Self) {
       
-      @scala.inline
-      def setResultKey(value: String): Self = StObject.set(x, "resultKey", value.asInstanceOf[js.Any])
+      inline def setResultKey(value: String): Self = StObject.set(x, "resultKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,8 +345,7 @@ object commangular {
   }
   object ICommandInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canceled: () => Boolean,
       commandExecuted: () => Boolean,
       dataPassed: String => js.Any,
@@ -374,20 +355,15 @@ object commangular {
       __obj.asInstanceOf[ICommandInfo]
     }
     
-    @scala.inline
-    implicit class ICommandInfoMutableBuilder[Self <: ICommandInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandInfo](x: Self) {
       
-      @scala.inline
-      def setCanceled(value: () => Boolean): Self = StObject.set(x, "canceled", js.Any.fromFunction0(value))
+      inline def setCanceled(value: () => Boolean): Self = StObject.set(x, "canceled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommandExecuted(value: () => Boolean): Self = StObject.set(x, "commandExecuted", js.Any.fromFunction0(value))
+      inline def setCommandExecuted(value: () => Boolean): Self = StObject.set(x, "commandExecuted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataPassed(value: String => js.Any): Self = StObject.set(x, "dataPassed", js.Any.fromFunction1(value))
+      inline def setDataPassed(value: String => js.Any): Self = StObject.set(x, "dataPassed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResultKey(value: String => js.Any): Self = StObject.set(x, "resultKey", js.Any.fromFunction1(value))
+      inline def setResultKey(value: String => js.Any): Self = StObject.set(x, "resultKey", js.Any.fromFunction1(value))
     }
   }
   
@@ -405,17 +381,14 @@ object commangular {
   }
   object ICommandResult {
     
-    @scala.inline
-    def apply(lastResult: js.Any): ICommandResult = {
+    inline def apply(lastResult: js.Any): ICommandResult = {
       val __obj = js.Dynamic.literal(lastResult = lastResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICommandResult]
     }
     
-    @scala.inline
-    implicit class ICommandResultMutableBuilder[Self <: ICommandResult] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandResult](x: Self) {
       
-      @scala.inline
-      def setLastResult(value: js.Any): Self = StObject.set(x, "lastResult", value.asInstanceOf[js.Any])
+      inline def setLastResult(value: js.Any): Self = StObject.set(x, "lastResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -439,20 +412,16 @@ object commangular {
   }
   object IResultCommand {
     
-    @scala.inline
-    def apply(execute: () => js.Any, onError: Error => Unit, onResult: js.Any => Unit): IResultCommand = {
+    inline def apply(execute: () => js.Any, onError: Error => Unit, onResult: js.Any => Unit): IResultCommand = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), onError = js.Any.fromFunction1(onError), onResult = js.Any.fromFunction1(onResult))
       __obj.asInstanceOf[IResultCommand]
     }
     
-    @scala.inline
-    implicit class IResultCommandMutableBuilder[Self <: IResultCommand] (val x: Self) extends AnyVal {
+    extension [Self <: IResultCommand](x: Self) {
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResult(value: js.Any => Unit): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
+      inline def setOnResult(value: js.Any => Unit): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
     }
   }
 }

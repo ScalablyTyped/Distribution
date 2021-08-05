@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dir: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def apply(dir: String, callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Double], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(dir: String, options: Options): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def apply(
+  inline def apply(dir: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def apply(dir: String, callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Double], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(dir: String, options: Options): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def apply(
     dir: String,
     options: Options,
     callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Double], js.Any]
@@ -32,26 +28,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDisk(value: Boolean): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+      inline def setDisk(value: Boolean): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
+      inline def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* dir */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* dir */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
 }

@@ -29,28 +29,21 @@ trait CSSKeyframeRule extends StObject {
 }
 object CSSKeyframeRule {
   
-  @scala.inline
-  def apply(keyText: Value, origin: StyleSheetOrigin, style: CSSStyle): CSSKeyframeRule = {
+  inline def apply(keyText: Value, origin: StyleSheetOrigin, style: CSSStyle): CSSKeyframeRule = {
     val __obj = js.Dynamic.literal(keyText = keyText.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSKeyframeRule]
   }
   
-  @scala.inline
-  implicit class CSSKeyframeRuleMutableBuilder[Self <: CSSKeyframeRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSKeyframeRule](x: Self) {
     
-    @scala.inline
-    def setKeyText(value: Value): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
+    inline def setKeyText(value: Value): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
+    inline def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
   }
 }

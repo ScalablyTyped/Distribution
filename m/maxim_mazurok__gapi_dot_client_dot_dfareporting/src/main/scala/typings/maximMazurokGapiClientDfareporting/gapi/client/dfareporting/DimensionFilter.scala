@@ -17,31 +17,23 @@ trait DimensionFilter extends StObject {
 }
 object DimensionFilter {
   
-  @scala.inline
-  def apply(): DimensionFilter = {
+  inline def apply(): DimensionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionFilter]
   }
   
-  @scala.inline
-  implicit class DimensionFilterMutableBuilder[Self <: DimensionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionFilter](x: Self) {
     
-    @scala.inline
-    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+    inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(npt: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(npt.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def parse(npt: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(npt.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
 }

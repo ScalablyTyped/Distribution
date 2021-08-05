@@ -30,17 +30,14 @@ object driverUtilsMod {
       *
       * @return An alias allowing to select/transform the target `column`.
       */
-    @scala.inline
-    def buildColumnAlias(hasMaxAliasLength: Driver, alias: String, column: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumnAlias")(hasMaxAliasLength.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildColumnAlias(hasMaxAliasLength: Driver, alias: String, column: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumnAlias")(hasMaxAliasLength.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Normalizes and builds a new driver options.
       * Extracts settings from connection url and sets to a new options object.
       */
-    @scala.inline
-    def buildDriverOptions(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDriverOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def buildDriverOptions(options: js.Any, buildOptions: UseSid): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDriverOptions")(options.asInstanceOf[js.Any], buildOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def buildDriverOptions(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDriverOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def buildDriverOptions(options: js.Any, buildOptions: UseSid): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDriverOptions")(options.asInstanceOf[js.Any], buildOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Extracts connection data from the connection url.
@@ -48,7 +45,6 @@ object driverUtilsMod {
     @JSImport("typeorm/browser/driver/DriverUtils", "DriverUtils.parseConnectionUrl")
     @js.native
     def parseConnectionUrl: js.Any = js.native
-    @scala.inline
-    def parseConnectionUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseConnectionUrl")(x.asInstanceOf[js.Any])
+    inline def parseConnectionUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseConnectionUrl")(x.asInstanceOf[js.Any])
   }
 }

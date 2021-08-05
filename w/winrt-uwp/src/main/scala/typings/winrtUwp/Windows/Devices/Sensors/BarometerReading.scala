@@ -16,19 +16,15 @@ trait BarometerReading extends StObject {
 }
 object BarometerReading {
   
-  @scala.inline
-  def apply(stationPressureInHectopascals: Double, timestamp: Date): BarometerReading = {
+  inline def apply(stationPressureInHectopascals: Double, timestamp: Date): BarometerReading = {
     val __obj = js.Dynamic.literal(stationPressureInHectopascals = stationPressureInHectopascals.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarometerReading]
   }
   
-  @scala.inline
-  implicit class BarometerReadingMutableBuilder[Self <: BarometerReading] (val x: Self) extends AnyVal {
+  extension [Self <: BarometerReading](x: Self) {
     
-    @scala.inline
-    def setStationPressureInHectopascals(value: Double): Self = StObject.set(x, "stationPressureInHectopascals", value.asInstanceOf[js.Any])
+    inline def setStationPressureInHectopascals(value: Double): Self = StObject.set(x, "stationPressureInHectopascals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

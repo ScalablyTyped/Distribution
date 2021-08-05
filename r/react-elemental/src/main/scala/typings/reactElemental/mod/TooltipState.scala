@@ -10,16 +10,13 @@ trait TooltipState extends StObject {
 }
 object TooltipState {
   
-  @scala.inline
-  def apply(displayTooltip: js.Any): TooltipState = {
+  inline def apply(displayTooltip: js.Any): TooltipState = {
     val __obj = js.Dynamic.literal(displayTooltip = displayTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipState]
   }
   
-  @scala.inline
-  implicit class TooltipStateMutableBuilder[Self <: TooltipState] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipState](x: Self) {
     
-    @scala.inline
-    def setDisplayTooltip(value: js.Any): Self = StObject.set(x, "displayTooltip", value.asInstanceOf[js.Any])
+    inline def setDisplayTooltip(value: js.Any): Self = StObject.set(x, "displayTooltip", value.asInstanceOf[js.Any])
   }
 }

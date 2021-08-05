@@ -10,16 +10,13 @@ trait BreakpointsObject extends StObject {
 }
 object BreakpointsObject {
   
-  @scala.inline
-  def apply(breakpoints: js.Object): BreakpointsObject = {
+  inline def apply(breakpoints: js.Object): BreakpointsObject = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointsObject]
   }
   
-  @scala.inline
-  implicit class BreakpointsObjectMutableBuilder[Self <: BreakpointsObject] (val x: Self) extends AnyVal {
+  extension [Self <: BreakpointsObject](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
   }
 }

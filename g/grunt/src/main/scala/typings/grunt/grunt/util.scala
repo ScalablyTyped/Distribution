@@ -43,47 +43,34 @@ object util {
   }
   object ISpawnOptions {
     
-    @scala.inline
-    def apply(): ISpawnOptions = {
+    inline def apply(): ISpawnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISpawnOptions]
     }
     
-    @scala.inline
-    implicit class ISpawnOptionsMutableBuilder[Self <: ISpawnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISpawnOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+      inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
+      inline def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
       
-      @scala.inline
-      def setFallback(value: js.Any): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: js.Any): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setGrunt(value: Boolean): Self = StObject.set(x, "grunt", value.asInstanceOf[js.Any])
+      inline def setGrunt(value: Boolean): Self = StObject.set(x, "grunt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGruntUndefined: Self = StObject.set(x, "grunt", js.undefined)
+      inline def setGruntUndefined: Self = StObject.set(x, "grunt", js.undefined)
       
-      @scala.inline
-      def setOpts(value: Custom): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Custom): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
     }
   }
   
@@ -103,23 +90,18 @@ object util {
   }
   object ISpawnResult {
     
-    @scala.inline
-    def apply(code: Double, stderr: String, stdout: String): ISpawnResult = {
+    inline def apply(code: Double, stderr: String, stdout: String): ISpawnResult = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpawnResult]
     }
     
-    @scala.inline
-    implicit class ISpawnResultMutableBuilder[Self <: ISpawnResult] (val x: Self) extends AnyVal {
+    extension [Self <: ISpawnResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,26 +134,20 @@ object util {
   }
   object ISpawnedChild {
     
-    @scala.inline
-    def apply(forever: () => Unit, kill: () => Unit, once: () => Unit, start: () => Unit): ISpawnedChild = {
+    inline def apply(forever: () => Unit, kill: () => Unit, once: () => Unit, start: () => Unit): ISpawnedChild = {
       val __obj = js.Dynamic.literal(forever = js.Any.fromFunction0(forever), kill = js.Any.fromFunction0(kill), once = js.Any.fromFunction0(once), start = js.Any.fromFunction0(start))
       __obj.asInstanceOf[ISpawnedChild]
     }
     
-    @scala.inline
-    implicit class ISpawnedChildMutableBuilder[Self <: ISpawnedChild] (val x: Self) extends AnyVal {
+    extension [Self <: ISpawnedChild](x: Self) {
       
-      @scala.inline
-      def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
+      inline def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKill(value: () => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+      inline def setKill(value: () => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnce(value: () => Unit): Self = StObject.set(x, "once", js.Any.fromFunction0(value))
+      inline def setOnce(value: () => Unit): Self = StObject.set(x, "once", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   

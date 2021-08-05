@@ -13,7 +13,7 @@ trait TreeviewControl extends StObject {
   
   var Drilled: js.Any
   
-  @JSName("Excel.TreeviewControl_typekey")
+  /* private */ @JSName("Excel.TreeviewControl_typekey")
   var ExcelDotTreeviewControl_typekey: TreeviewControl
   
   var Hidden: SafeArray[SafeArray[String]]
@@ -22,8 +22,7 @@ trait TreeviewControl extends StObject {
 }
 object TreeviewControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Drilled: js.Any,
@@ -36,25 +35,18 @@ object TreeviewControl {
     __obj.asInstanceOf[TreeviewControl]
   }
   
-  @scala.inline
-  implicit class TreeviewControlMutableBuilder[Self <: TreeviewControl] (val x: Self) extends AnyVal {
+  extension [Self <: TreeviewControl](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrilled(value: js.Any): Self = StObject.set(x, "Drilled", value.asInstanceOf[js.Any])
+    inline def setDrilled(value: js.Any): Self = StObject.set(x, "Drilled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotTreeviewControl_typekey(value: TreeviewControl): Self = StObject.set(x, "Excel.TreeviewControl_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotTreeviewControl_typekey(value: TreeviewControl): Self = StObject.set(x, "Excel.TreeviewControl_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

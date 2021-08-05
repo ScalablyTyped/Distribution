@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(name: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: String, parameters: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: String, parameters: js.Object, Constructor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], Constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: String, parameters: Unit, Constructor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], Constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(name: String, parameters: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: String, parameters: js.Object, Constructor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], Constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: String, parameters: Unit, Constructor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], Constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("custom-error-generator", JSImport.Namespace)
   @js.native

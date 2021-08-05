@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MailingLabel")
 @js.native
-class MailingLabel protected ()
+/* private */ class MailingLabel ()
   extends StObject
      with typings.activexWord.Word.MailingLabel

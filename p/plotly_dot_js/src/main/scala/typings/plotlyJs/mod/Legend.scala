@@ -39,8 +39,7 @@ trait Legend
 }
 object Legend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bgcolor: String,
     bordercolor: String,
     borderwidth: Double,
@@ -57,31 +56,22 @@ object Legend {
     __obj.asInstanceOf[Legend]
   }
   
-  @scala.inline
-  implicit class LegendMutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
+  extension [Self <: Legend](x: Self) {
     
-    @scala.inline
-    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
+    inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: v | h): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: v | h): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracegroupgap(value: Double): Self = StObject.set(x, "tracegroupgap", value.asInstanceOf[js.Any])
+    inline def setTracegroupgap(value: Double): Self = StObject.set(x, "tracegroupgap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceorder(value: grouped | normal | reversed): Self = StObject.set(x, "traceorder", value.asInstanceOf[js.Any])
+    inline def setTraceorder(value: grouped | normal | reversed): Self = StObject.set(x, "traceorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
+    inline def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
+    inline def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
   }
 }

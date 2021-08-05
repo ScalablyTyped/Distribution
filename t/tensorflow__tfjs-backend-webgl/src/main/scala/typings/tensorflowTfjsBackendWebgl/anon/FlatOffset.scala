@@ -13,19 +13,15 @@ trait FlatOffset extends StObject {
 }
 object FlatOffset {
   
-  @scala.inline
-  def apply(flatOffset: Double, origDataId: DataId): FlatOffset = {
+  inline def apply(flatOffset: Double, origDataId: DataId): FlatOffset = {
     val __obj = js.Dynamic.literal(flatOffset = flatOffset.asInstanceOf[js.Any], origDataId = origDataId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlatOffset]
   }
   
-  @scala.inline
-  implicit class FlatOffsetMutableBuilder[Self <: FlatOffset] (val x: Self) extends AnyVal {
+  extension [Self <: FlatOffset](x: Self) {
     
-    @scala.inline
-    def setFlatOffset(value: Double): Self = StObject.set(x, "flatOffset", value.asInstanceOf[js.Any])
+    inline def setFlatOffset(value: Double): Self = StObject.set(x, "flatOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigDataId(value: DataId): Self = StObject.set(x, "origDataId", value.asInstanceOf[js.Any])
+    inline def setOrigDataId(value: DataId): Self = StObject.set(x, "origDataId", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoCharacters")
 @js.native
-class IMsoCharacters protected ()
+/* private */ class IMsoCharacters ()
   extends StObject
      with typings.activexOffice.Office.IMsoCharacters {
   
@@ -31,7 +31,7 @@ class IMsoCharacters protected ()
   /* CompleteClass */
   override def Insert(bstr: String): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoCharacters_typekey")
   var OfficeDotIMsoCharacters_typekey: typings.activexOffice.Office.IMsoCharacters = js.native
   

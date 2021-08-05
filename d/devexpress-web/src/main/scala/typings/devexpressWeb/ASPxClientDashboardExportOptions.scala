@@ -125,8 +125,7 @@ trait ASPxClientDashboardExportOptions extends StObject {
 }
 object ASPxClientDashboardExportOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoFitPageCount: Double,
     CardOptions: CardExportOptions,
     ChartOptions: ChartExportOptions,
@@ -151,64 +150,44 @@ object ASPxClientDashboardExportOptions {
     __obj.asInstanceOf[ASPxClientDashboardExportOptions]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardExportOptionsMutableBuilder[Self <: ASPxClientDashboardExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutoFitPageCount(value: Double): Self = StObject.set(x, "AutoFitPageCount", value.asInstanceOf[js.Any])
+    inline def setAutoFitPageCount(value: Double): Self = StObject.set(x, "AutoFitPageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardOptions(value: CardExportOptions): Self = StObject.set(x, "CardOptions", value.asInstanceOf[js.Any])
+    inline def setCardOptions(value: CardExportOptions): Self = StObject.set(x, "CardOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartOptions(value: ChartExportOptions): Self = StObject.set(x, "ChartOptions", value.asInstanceOf[js.Any])
+    inline def setChartOptions(value: ChartExportOptions): Self = StObject.set(x, "ChartOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelOptions(value: ExcelFormatOptions): Self = StObject.set(x, "ExcelOptions", value.asInstanceOf[js.Any])
+    inline def setExcelOptions(value: ExcelFormatOptions): Self = StObject.set(x, "ExcelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterState(value: String): Self = StObject.set(x, "FilterState", value.asInstanceOf[js.Any])
+    inline def setFilterState(value: String): Self = StObject.set(x, "FilterState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaugeOptions(value: GaugeExportOptions): Self = StObject.set(x, "GaugeOptions", value.asInstanceOf[js.Any])
+    inline def setGaugeOptions(value: GaugeExportOptions): Self = StObject.set(x, "GaugeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridOptions(value: GridExportOptions): Self = StObject.set(x, "GridOptions", value.asInstanceOf[js.Any])
+    inline def setGridOptions(value: GridExportOptions): Self = StObject.set(x, "GridOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOptions(value: ImageFormatOptions): Self = StObject.set(x, "ImageOptions", value.asInstanceOf[js.Any])
+    inline def setImageOptions(value: ImageFormatOptions): Self = StObject.set(x, "ImageOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapOptions(value: MapExportOptions): Self = StObject.set(x, "MapOptions", value.asInstanceOf[js.Any])
+    inline def setMapOptions(value: MapExportOptions): Self = StObject.set(x, "MapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLayout(value: String): Self = StObject.set(x, "PageLayout", value.asInstanceOf[js.Any])
+    inline def setPageLayout(value: String): Self = StObject.set(x, "PageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperKind(value: String): Self = StObject.set(x, "PaperKind", value.asInstanceOf[js.Any])
+    inline def setPaperKind(value: String): Self = StObject.set(x, "PaperKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPieOptions(value: PieExportOptions): Self = StObject.set(x, "PieOptions", value.asInstanceOf[js.Any])
+    inline def setPieOptions(value: PieExportOptions): Self = StObject.set(x, "PieOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotOptions(value: PivotExportOptions): Self = StObject.set(x, "PivotOptions", value.asInstanceOf[js.Any])
+    inline def setPivotOptions(value: PivotExportOptions): Self = StObject.set(x, "PivotOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeFilterOptions(value: RangeFilterExportOptions): Self = StObject.set(x, "RangeFilterOptions", value.asInstanceOf[js.Any])
+    inline def setRangeFilterOptions(value: RangeFilterExportOptions): Self = StObject.set(x, "RangeFilterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "ScaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "ScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMode(value: String): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: String): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTitle(value: Boolean): Self = StObject.set(x, "ShowTitle", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "ShowTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreemapOptions(value: TreemapExportOptions): Self = StObject.set(x, "TreemapOptions", value.asInstanceOf[js.Any])
+    inline def setTreemapOptions(value: TreemapExportOptions): Self = StObject.set(x, "TreemapOptions", value.asInstanceOf[js.Any])
   }
 }

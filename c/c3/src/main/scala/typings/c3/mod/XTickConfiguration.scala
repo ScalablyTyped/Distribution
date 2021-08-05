@@ -45,58 +45,41 @@ trait XTickConfiguration
 }
 object XTickConfiguration {
   
-  @scala.inline
-  def apply(): XTickConfiguration = {
+  inline def apply(): XTickConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XTickConfiguration]
   }
   
-  @scala.inline
-  implicit class XTickConfigurationMutableBuilder[Self <: XTickConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: XTickConfiguration](x: Self) {
     
-    @scala.inline
-    def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+    inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+    inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
-    @scala.inline
-    def setCulling(value: Boolean | MaxNumber): Self = StObject.set(x, "culling", value.asInstanceOf[js.Any])
+    inline def setCulling(value: Boolean | MaxNumber): Self = StObject.set(x, "culling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCullingUndefined: Self = StObject.set(x, "culling", js.undefined)
+    inline def setCullingUndefined: Self = StObject.set(x, "culling", js.undefined)
     
-    @scala.inline
-    def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String | (js.Function1[/* x */ Double | Date, String | Double])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | (js.Function1[/* x */ Double | Date, String | Double])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatFunction1(value: /* x */ Double | Date => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormatFunction1(value: /* x */ Double | Date => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultilineMax(value: Double): Self = StObject.set(x, "multilineMax", value.asInstanceOf[js.Any])
+    inline def setMultilineMax(value: Double): Self = StObject.set(x, "multilineMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultilineMaxUndefined: Self = StObject.set(x, "multilineMax", js.undefined)
+    inline def setMultilineMaxUndefined: Self = StObject.set(x, "multilineMax", js.undefined)
     
-    @scala.inline
-    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

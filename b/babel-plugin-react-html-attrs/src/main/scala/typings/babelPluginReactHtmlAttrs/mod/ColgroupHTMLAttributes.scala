@@ -12,19 +12,15 @@ trait ColgroupHTMLAttributes[T]
 }
 object ColgroupHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): ColgroupHTMLAttributes[T] = {
+  inline def apply[T](): ColgroupHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColgroupHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class ColgroupHTMLAttributesMutableBuilder[Self <: ColgroupHTMLAttributes[?], T] (val x: Self & ColgroupHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: ColgroupHTMLAttributes[?], T](x: Self & ColgroupHTMLAttributes[T]) {
     
-    @scala.inline
-    def setSpan(value: Double | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: Double | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+    inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ object isFiniteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isFinite[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def isFinite[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

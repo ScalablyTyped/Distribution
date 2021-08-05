@@ -12,19 +12,15 @@ trait PDFViewerRenderEvent
 }
 object PDFViewerRenderEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PDFViewer): PDFViewerRenderEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PDFViewer): PDFViewerRenderEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerRenderEvent]
   }
   
-  @scala.inline
-  implicit class PDFViewerRenderEventMutableBuilder[Self <: PDFViewerRenderEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerRenderEvent](x: Self) {
     
-    @scala.inline
-    def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

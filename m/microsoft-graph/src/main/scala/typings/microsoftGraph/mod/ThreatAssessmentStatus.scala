@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreatAssessmentStatus extends StObject
 object ThreatAssessmentStatus {
   
-  @scala.inline
-  def completed: completed_ = "completed".asInstanceOf[completed_]
+  inline def completed: completed_ = "completed".asInstanceOf[completed_]
   
-  @scala.inline
-  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
+  inline def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
 }

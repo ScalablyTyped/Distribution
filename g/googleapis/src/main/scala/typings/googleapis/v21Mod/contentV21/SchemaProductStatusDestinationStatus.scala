@@ -15,25 +15,19 @@ trait SchemaProductStatusDestinationStatus extends StObject {
 }
 object SchemaProductStatusDestinationStatus {
   
-  @scala.inline
-  def apply(): SchemaProductStatusDestinationStatus = {
+  inline def apply(): SchemaProductStatusDestinationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductStatusDestinationStatus]
   }
   
-  @scala.inline
-  implicit class SchemaProductStatusDestinationStatusMutableBuilder[Self <: SchemaProductStatusDestinationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductStatusDestinationStatus](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

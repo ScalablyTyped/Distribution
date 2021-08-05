@@ -27,32 +27,24 @@ object gapi {
       }
       object Bin {
         
-        @scala.inline
-        def apply(): Bin = {
+        inline def apply(): Bin = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Bin]
         }
         
-        @scala.inline
-        implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+        extension [Self <: Bin](x: Self) {
           
-          @scala.inline
-          def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+          inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+          inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
           
-          @scala.inline
-          def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+          inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+          inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
           
-          @scala.inline
-          def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+          inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+          inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         }
       }
       
@@ -82,38 +74,28 @@ object gapi {
       }
       object Key {
         
-        @scala.inline
-        def apply(): Key = {
+        inline def apply(): Key = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Key]
         }
         
-        @scala.inline
-        implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+        extension [Self <: Key](x: Self) {
           
-          @scala.inline
-          def setEffectiveConnectionType(value: String): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
+          inline def setEffectiveConnectionType(value: String): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEffectiveConnectionTypeUndefined: Self = StObject.set(x, "effectiveConnectionType", js.undefined)
+          inline def setEffectiveConnectionTypeUndefined: Self = StObject.set(x, "effectiveConnectionType", js.undefined)
           
-          @scala.inline
-          def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
+          inline def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
+          inline def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
           
-          @scala.inline
-          def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+          inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+          inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         }
       }
       
@@ -127,29 +109,22 @@ object gapi {
       }
       object Metric {
         
-        @scala.inline
-        def apply(): Metric = {
+        inline def apply(): Metric = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Metric]
         }
         
-        @scala.inline
-        implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+        extension [Self <: Metric](x: Self) {
           
-          @scala.inline
-          def setHistogram(value: js.Array[Bin]): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
+          inline def setHistogram(value: js.Array[Bin]): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
+          inline def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
           
-          @scala.inline
-          def setHistogramVarargs(value: Bin*): Self = StObject.set(x, "histogram", js.Array(value :_*))
+          inline def setHistogramVarargs(value: Bin*): Self = StObject.set(x, "histogram", js.Array(value :_*))
           
-          @scala.inline
-          def setPercentiles(value: Percentiles): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
+          inline def setPercentiles(value: Percentiles): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
+          inline def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
         }
       }
       
@@ -160,20 +135,16 @@ object gapi {
       }
       object Percentiles {
         
-        @scala.inline
-        def apply(): Percentiles = {
+        inline def apply(): Percentiles = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Percentiles]
         }
         
-        @scala.inline
-        implicit class PercentilesMutableBuilder[Self <: Percentiles] (val x: Self) extends AnyVal {
+        extension [Self <: Percentiles](x: Self) {
           
-          @scala.inline
-          def setP75(value: js.Any): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
+          inline def setP75(value: js.Any): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setP75Undefined: Self = StObject.set(x, "p75", js.undefined)
+          inline def setP75Undefined: Self = StObject.set(x, "p75", js.undefined)
         }
       }
       
@@ -206,47 +177,34 @@ object gapi {
       }
       object QueryRequest {
         
-        @scala.inline
-        def apply(): QueryRequest = {
+        inline def apply(): QueryRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[QueryRequest]
         }
         
-        @scala.inline
-        implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
+        extension [Self <: QueryRequest](x: Self) {
           
-          @scala.inline
-          def setEffectiveConnectionType(value: String): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
+          inline def setEffectiveConnectionType(value: String): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEffectiveConnectionTypeUndefined: Self = StObject.set(x, "effectiveConnectionType", js.undefined)
+          inline def setEffectiveConnectionTypeUndefined: Self = StObject.set(x, "effectiveConnectionType", js.undefined)
           
-          @scala.inline
-          def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
+          inline def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
+          inline def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
           
-          @scala.inline
-          def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+          inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+          inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
           
-          @scala.inline
-          def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+          inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
           
-          @scala.inline
-          def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+          inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+          inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         }
       }
       
@@ -260,26 +218,20 @@ object gapi {
       }
       object QueryResponse {
         
-        @scala.inline
-        def apply(): QueryResponse = {
+        inline def apply(): QueryResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[QueryResponse]
         }
         
-        @scala.inline
-        implicit class QueryResponseMutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
+        extension [Self <: QueryResponse](x: Self) {
           
-          @scala.inline
-          def setRecord(value: Record): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+          inline def setRecord(value: Record): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+          inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
           
-          @scala.inline
-          def setUrlNormalizationDetails(value: UrlNormalization): Self = StObject.set(x, "urlNormalizationDetails", value.asInstanceOf[js.Any])
+          inline def setUrlNormalizationDetails(value: UrlNormalization): Self = StObject.set(x, "urlNormalizationDetails", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlNormalizationDetailsUndefined: Self = StObject.set(x, "urlNormalizationDetails", js.undefined)
+          inline def setUrlNormalizationDetailsUndefined: Self = StObject.set(x, "urlNormalizationDetails", js.undefined)
         }
       }
       
@@ -300,30 +252,24 @@ object gapi {
       }
       object Record {
         
-        @scala.inline
-        def apply(): Record = {
+        inline def apply(): Record = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Record]
         }
         
-        @scala.inline
-        implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+        extension [Self <: Record](x: Self) {
           
-          @scala.inline
-          def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+          inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+          inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
           
-          @scala.inline
-          def setMetrics(
+          inline def setMetrics(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
             */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[js.Any]
           ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+          inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         }
       }
       
@@ -348,26 +294,20 @@ object gapi {
       }
       object UrlNormalization {
         
-        @scala.inline
-        def apply(): UrlNormalization = {
+        inline def apply(): UrlNormalization = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[UrlNormalization]
         }
         
-        @scala.inline
-        implicit class UrlNormalizationMutableBuilder[Self <: UrlNormalization] (val x: Self) extends AnyVal {
+        extension [Self <: UrlNormalization](x: Self) {
           
-          @scala.inline
-          def setNormalizedUrl(value: String): Self = StObject.set(x, "normalizedUrl", value.asInstanceOf[js.Any])
+          inline def setNormalizedUrl(value: String): Self = StObject.set(x, "normalizedUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNormalizedUrlUndefined: Self = StObject.set(x, "normalizedUrl", js.undefined)
+          inline def setNormalizedUrlUndefined: Self = StObject.set(x, "normalizedUrl", js.undefined)
           
-          @scala.inline
-          def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
+          inline def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
+          inline def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
         }
       }
     }

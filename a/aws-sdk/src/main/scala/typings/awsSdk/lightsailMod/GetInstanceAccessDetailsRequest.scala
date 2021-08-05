@@ -18,22 +18,17 @@ trait GetInstanceAccessDetailsRequest extends StObject {
 }
 object GetInstanceAccessDetailsRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName): GetInstanceAccessDetailsRequest = {
+  inline def apply(instanceName: ResourceName): GetInstanceAccessDetailsRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceAccessDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GetInstanceAccessDetailsRequestMutableBuilder[Self <: GetInstanceAccessDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceAccessDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: InstanceAccessProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: InstanceAccessProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait HealthCounts extends StObject {
 }
 object HealthCounts {
   
-  @scala.inline
-  def apply(errorCount: Double, errorPercentage: Double, totalCount: Double): HealthCounts = {
+  inline def apply(errorCount: Double, errorPercentage: Double, totalCount: Double): HealthCounts = {
     val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any], errorPercentage = errorPercentage.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCounts]
   }
   
-  @scala.inline
-  implicit class HealthCountsMutableBuilder[Self <: HealthCounts] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCounts](x: Self) {
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorPercentage(value: Double): Self = StObject.set(x, "errorPercentage", value.asInstanceOf[js.Any])
+    inline def setErrorPercentage(value: Double): Self = StObject.set(x, "errorPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

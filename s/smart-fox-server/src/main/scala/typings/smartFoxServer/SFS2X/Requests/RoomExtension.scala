@@ -17,22 +17,17 @@ trait RoomExtension extends StObject {
 }
 object RoomExtension {
   
-  @scala.inline
-  def apply(className: String, id: String, propertiesFile: String): RoomExtension = {
+  inline def apply(className: String, id: String, propertiesFile: String): RoomExtension = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], propertiesFile = propertiesFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomExtension]
   }
   
-  @scala.inline
-  implicit class RoomExtensionMutableBuilder[Self <: RoomExtension] (val x: Self) extends AnyVal {
+  extension [Self <: RoomExtension](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesFile(value: String): Self = StObject.set(x, "propertiesFile", value.asInstanceOf[js.Any])
+    inline def setPropertiesFile(value: String): Self = StObject.set(x, "propertiesFile", value.asInstanceOf[js.Any])
   }
 }

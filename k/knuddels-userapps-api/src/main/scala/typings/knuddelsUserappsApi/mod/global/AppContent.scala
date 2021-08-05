@@ -88,32 +88,27 @@ object AppContent {
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_headerbarContent
   		 */
   /* static member */
-  @scala.inline
-  def headerbarContent(htmlFile: HTMLFile, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("headerbarContent")(htmlFile.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
+  inline def headerbarContent(htmlFile: HTMLFile, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("headerbarContent")(htmlFile.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_overlayContent
   		 */
   /* static member */
-  @scala.inline
-  def overlayContent(htmlFile: HTMLFile): AppContent = ^.asInstanceOf[js.Dynamic].applyDynamic("overlayContent")(htmlFile.asInstanceOf[js.Any]).asInstanceOf[AppContent]
+  inline def overlayContent(htmlFile: HTMLFile): AppContent = ^.asInstanceOf[js.Dynamic].applyDynamic("overlayContent")(htmlFile.asInstanceOf[js.Any]).asInstanceOf[AppContent]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_overlayContent
   		 */
   /* static member */
-  @scala.inline
-  def overlayContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("overlayContent")(htmlFile.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
+  inline def overlayContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("overlayContent")(htmlFile.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_popupContent
   		 */
   /* static member */
-  @scala.inline
-  def popupContent(htmlFile: HTMLFile): AppContent = ^.asInstanceOf[js.Dynamic].applyDynamic("popupContent")(htmlFile.asInstanceOf[js.Any]).asInstanceOf[AppContent]
+  inline def popupContent(htmlFile: HTMLFile): AppContent = ^.asInstanceOf[js.Dynamic].applyDynamic("popupContent")(htmlFile.asInstanceOf[js.Any]).asInstanceOf[AppContent]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_popupContent
   		 */
   /* static member */
-  @scala.inline
-  def popupContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("popupContent")(htmlFile.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
+  inline def popupContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("popupContent")(htmlFile.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
 }

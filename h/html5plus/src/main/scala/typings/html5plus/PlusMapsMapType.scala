@@ -29,25 +29,19 @@ trait PlusMapsMapType extends StObject {
 }
 object PlusMapsMapType {
   
-  @scala.inline
-  def apply(): PlusMapsMapType = {
+  inline def apply(): PlusMapsMapType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsMapType]
   }
   
-  @scala.inline
-  implicit class PlusMapsMapTypeMutableBuilder[Self <: PlusMapsMapType] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsMapType](x: Self) {
     
-    @scala.inline
-    def setMAPTYPE_NORMAL(value: Double): Self = StObject.set(x, "MAPTYPE_NORMAL", value.asInstanceOf[js.Any])
+    inline def setMAPTYPE_NORMAL(value: Double): Self = StObject.set(x, "MAPTYPE_NORMAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAPTYPE_NORMALUndefined: Self = StObject.set(x, "MAPTYPE_NORMAL", js.undefined)
+    inline def setMAPTYPE_NORMALUndefined: Self = StObject.set(x, "MAPTYPE_NORMAL", js.undefined)
     
-    @scala.inline
-    def setMAPTYPE_SATELLITE(value: Double): Self = StObject.set(x, "MAPTYPE_SATELLITE", value.asInstanceOf[js.Any])
+    inline def setMAPTYPE_SATELLITE(value: Double): Self = StObject.set(x, "MAPTYPE_SATELLITE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAPTYPE_SATELLITEUndefined: Self = StObject.set(x, "MAPTYPE_SATELLITE", js.undefined)
+    inline def setMAPTYPE_SATELLITEUndefined: Self = StObject.set(x, "MAPTYPE_SATELLITE", js.undefined)
   }
 }

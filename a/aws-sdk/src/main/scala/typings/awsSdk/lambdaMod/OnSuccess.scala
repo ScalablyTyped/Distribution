@@ -13,19 +13,15 @@ trait OnSuccess extends StObject {
 }
 object OnSuccess {
   
-  @scala.inline
-  def apply(): OnSuccess = {
+  inline def apply(): OnSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnSuccess]
   }
   
-  @scala.inline
-  implicit class OnSuccessMutableBuilder[Self <: OnSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: OnSuccess](x: Self) {
     
-    @scala.inline
-    def setDestination(value: DestinationArn): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: DestinationArn): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
   }
 }

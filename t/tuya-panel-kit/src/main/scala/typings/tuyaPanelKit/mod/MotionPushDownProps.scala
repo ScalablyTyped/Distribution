@@ -14,25 +14,19 @@ trait MotionPushDownProps
 }
 object MotionPushDownProps {
   
-  @scala.inline
-  def apply(): MotionPushDownProps = {
+  inline def apply(): MotionPushDownProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionPushDownProps]
   }
   
-  @scala.inline
-  implicit class MotionPushDownPropsMutableBuilder[Self <: MotionPushDownProps] (val x: Self) extends AnyVal {
+  extension [Self <: MotionPushDownProps](x: Self) {
     
-    @scala.inline
-    def setDropHeight(value: Double): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
+    inline def setDropHeight(value: Double): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
+    inline def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
     
-    @scala.inline
-    def setIsAlign(value: Boolean): Self = StObject.set(x, "isAlign", value.asInstanceOf[js.Any])
+    inline def setIsAlign(value: Boolean): Self = StObject.set(x, "isAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlignUndefined: Self = StObject.set(x, "isAlign", js.undefined)
+    inline def setIsAlignUndefined: Self = StObject.set(x, "isAlign", js.undefined)
   }
 }

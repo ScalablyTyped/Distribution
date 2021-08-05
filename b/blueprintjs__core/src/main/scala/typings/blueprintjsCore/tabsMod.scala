@@ -33,37 +33,37 @@ object tabsMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTabs(prevProps: ITabsProps, prevState: ITabsState): Unit = js.native
     
-    var getInitialSelectedTabId: js.Any = js.native
+    /* private */ var getInitialSelectedTabId: js.Any = js.native
     
-    var getKeyCodeDirection: js.Any = js.native
+    /* private */ var getKeyCodeDirection: js.Any = js.native
     
     /** Filters children to only `<Tab>`s */
-    var getTabChildren: js.Any = js.native
+    /* private */ var getTabChildren: js.Any = js.native
     
-    var getTabChildrenProps: js.Any = js.native
+    /* private */ var getTabChildrenProps: js.Any = js.native
     
     /** Queries root HTML element for all tabs with optional filter selector */
-    var getTabElements: js.Any = js.native
+    /* private */ var getTabElements: js.Any = js.native
     
-    var handleKeyDown: js.Any = js.native
+    /* private */ var handleKeyDown: js.Any = js.native
     
-    var handleKeyPress: js.Any = js.native
+    /* private */ var handleKeyPress: js.Any = js.native
     
-    var handleTabClick: js.Any = js.native
+    /* private */ var handleTabClick: js.Any = js.native
     
     /**
       * Calculate the new height, width, and position of the tab indicator.
       * Store the CSS values so the transition animation can start.
       */
-    var moveSelectionIndicator: js.Any = js.native
+    /* private */ var moveSelectionIndicator: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderTabPanel: js.Any = js.native
+    /* private */ var renderTabPanel: js.Any = js.native
     
-    var renderTabTitle: js.Any = js.native
+    /* private */ var renderTabTitle: js.Any = js.native
     
-    var tablistElement: js.Any = js.native
+    /* private */ var tablistElement: js.Any = js.native
   }
   /* static members */
   object Tabs {
@@ -76,29 +76,24 @@ object tabsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.Expander")
     @js.native
     def Expander: FunctionComponent[js.Object] = js.native
-    @scala.inline
-    def Expander_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expander")(x.asInstanceOf[js.Any])
+    inline def Expander_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expander")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.Tab")
     @js.native
     def Tab: TypeofTab = js.native
-    @scala.inline
-    def Tab_=(x: TypeofTab): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
+    inline def Tab_=(x: TypeofTab): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.defaultProps")
     @js.native
     def defaultProps: PartialITabsProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialITabsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialITabsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): SelectedTabId | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedTabId.asInstanceOf[js.Any]).asInstanceOf[SelectedTabId | Null]
+    inline def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): SelectedTabId | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedTabId.asInstanceOf[js.Any]).asInstanceOf[SelectedTabId | Null]
   }
   
   trait ITabsProps
@@ -167,61 +162,44 @@ object tabsMod {
   }
   object ITabsProps {
     
-    @scala.inline
-    def apply(id: TabId): ITabsProps = {
+    inline def apply(id: TabId): ITabsProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITabsProps]
     }
     
-    @scala.inline
-    implicit class ITabsPropsMutableBuilder[Self <: ITabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITabsProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedTabId(value: TabId): Self = StObject.set(x, "defaultSelectedTabId", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedTabId(value: TabId): Self = StObject.set(x, "defaultSelectedTabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedTabIdUndefined: Self = StObject.set(x, "defaultSelectedTabId", js.undefined)
+      inline def setDefaultSelectedTabIdUndefined: Self = StObject.set(x, "defaultSelectedTabId", js.undefined)
       
-      @scala.inline
-      def setId(value: TabId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: TabId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* newTabId */ TabId, /* prevTabId */ js.UndefOr[TabId], /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setRenderActiveTabPanelOnly(value: Boolean): Self = StObject.set(x, "renderActiveTabPanelOnly", value.asInstanceOf[js.Any])
+      inline def setRenderActiveTabPanelOnly(value: Boolean): Self = StObject.set(x, "renderActiveTabPanelOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderActiveTabPanelOnlyUndefined: Self = StObject.set(x, "renderActiveTabPanelOnly", js.undefined)
+      inline def setRenderActiveTabPanelOnlyUndefined: Self = StObject.set(x, "renderActiveTabPanelOnly", js.undefined)
       
-      @scala.inline
-      def setSelectedTabId(value: TabId): Self = StObject.set(x, "selectedTabId", value.asInstanceOf[js.Any])
+      inline def setSelectedTabId(value: TabId): Self = StObject.set(x, "selectedTabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedTabIdUndefined: Self = StObject.set(x, "selectedTabId", js.undefined)
+      inline def setSelectedTabIdUndefined: Self = StObject.set(x, "selectedTabId", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -233,26 +211,20 @@ object tabsMod {
   }
   object ITabsState {
     
-    @scala.inline
-    def apply(): ITabsState = {
+    inline def apply(): ITabsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITabsState]
     }
     
-    @scala.inline
-    implicit class ITabsStateMutableBuilder[Self <: ITabsState] (val x: Self) extends AnyVal {
+    extension [Self <: ITabsState](x: Self) {
       
-      @scala.inline
-      def setIndicatorWrapperStyle(value: CSSProperties): Self = StObject.set(x, "indicatorWrapperStyle", value.asInstanceOf[js.Any])
+      inline def setIndicatorWrapperStyle(value: CSSProperties): Self = StObject.set(x, "indicatorWrapperStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorWrapperStyleUndefined: Self = StObject.set(x, "indicatorWrapperStyle", js.undefined)
+      inline def setIndicatorWrapperStyleUndefined: Self = StObject.set(x, "indicatorWrapperStyle", js.undefined)
       
-      @scala.inline
-      def setSelectedTabId(value: TabId): Self = StObject.set(x, "selectedTabId", value.asInstanceOf[js.Any])
+      inline def setSelectedTabId(value: TabId): Self = StObject.set(x, "selectedTabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedTabIdUndefined: Self = StObject.set(x, "selectedTabId", js.undefined)
+      inline def setSelectedTabIdUndefined: Self = StObject.set(x, "selectedTabId", js.undefined)
     }
   }
 }

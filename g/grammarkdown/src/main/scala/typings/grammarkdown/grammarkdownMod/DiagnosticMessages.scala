@@ -11,25 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DiagnosticMessages () extends StObject {
   
-  var compareDiagnostics: js.Any = js.native
+  /* private */ var compareDiagnostics: js.Any = js.native
   
   def copyFrom(other: DiagnosticMessages): Unit = js.native
   
   def count(): Double = js.native
   
-  var deduplicateDiagnostics: js.Any = js.native
+  /* private */ var deduplicateDiagnostics: js.Any = js.native
   
-  var detailedDiagnosticMessages: js.Any = js.native
+  /* private */ var detailedDiagnosticMessages: js.Any = js.native
   
-  var diagnostics: js.Any = js.native
+  /* private */ var diagnostics: js.Any = js.native
   
-  var diagnosticsArguments: js.Any = js.native
+  /* private */ var diagnosticsArguments: js.Any = js.native
   
-  var diagnosticsLength: js.Any = js.native
+  /* private */ var diagnosticsLength: js.Any = js.native
   
-  var diagnosticsNode: js.Any = js.native
+  /* private */ var diagnosticsNode: js.Any = js.native
   
-  var diagnosticsPos: js.Any = js.native
+  /* private */ var diagnosticsPos: js.Any = js.native
   
   def forEach(callback: js.Function2[/* message */ String, /* diagnosticIndex */ Double, Unit]): Unit = js.native
   
@@ -37,9 +37,9 @@ class DiagnosticMessages () extends StObject {
   
   def getDiagnosticArguments(diagnosticIndex: Double): js.UndefOr[js.Array[js.Any]] = js.native
   
-  var getDiagnosticCode: js.Any = js.native
+  /* private */ var getDiagnosticCode: js.Any = js.native
   
-  var getDiagnosticErrorLevel: js.Any = js.native
+  /* private */ var getDiagnosticErrorLevel: js.Any = js.native
   
   def getDiagnosticInfo(diagnosticIndex: Double): js.UndefOr[DiagnosticInfo] = js.native
   def getDiagnosticInfo(diagnosticIndex: Double, options: FormatMessage): js.UndefOr[DiagnosticInfo] = js.native
@@ -50,11 +50,11 @@ class DiagnosticMessages () extends StObject {
   def getDiagnosticInfosForSourceFile(sourceFile: SourceFile): js.Array[DiagnosticInfo] = js.native
   def getDiagnosticInfosForSourceFile(sourceFile: SourceFile, options: FormatMessage): js.Array[DiagnosticInfo] = js.native
   
-  var getDiagnosticLength: js.Any = js.native
+  /* private */ var getDiagnosticLength: js.Any = js.native
   
   def getDiagnosticNode(diagnosticIndex: Double): js.UndefOr[Node2[SyntaxKind]] = js.native
   
-  var getDiagnosticPos: js.Any = js.native
+  /* private */ var getDiagnosticPos: js.Any = js.native
   
   def getDiagnosticRange(diagnosticIndex: Double): js.UndefOr[Range2] = js.native
   
@@ -63,31 +63,31 @@ class DiagnosticMessages () extends StObject {
   def getMessage(diagnosticIndex: Double): String = js.native
   def getMessage(diagnosticIndex: Double, options: `0`): String = js.native
   
-  var getSortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
+  /* private */ var getSortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
   
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[Generator[js.UndefOr[DiagnosticInfo], Unit, js.Any]] = js.native
   
   def report(pos: Double, message: Diagnostic, args: js.Any*): Unit = js.native
   
-  var reportDiagnostic: js.Any = js.native
+  /* private */ var reportDiagnostic: js.Any = js.native
   
   def reportNode(sourceFile: Unit, node: Node2[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
   def reportNode(sourceFile: SourceFile, node: Node2[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
   
   def setSourceFile(sourceFile: SourceFile): Unit = js.native
   
-  var simpleDiagnosticMessages: js.Any = js.native
+  /* private */ var simpleDiagnosticMessages: js.Any = js.native
   
   def size: Double = js.native
   
-  var sortDiagnostics: js.Any = js.native
+  /* private */ var sortDiagnostics: js.Any = js.native
   
-  var sortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
+  /* private */ var sortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
   
-  var sourceFiles: js.Any = js.native
+  /* private */ var sourceFiles: js.Any = js.native
   
-  var sourceFilesDiagnosticOffset: js.Any = js.native
+  /* private */ var sourceFilesDiagnosticOffset: js.Any = js.native
   
   def values(): Generator[js.UndefOr[DiagnosticInfo], Unit, js.Any] = js.native
 }

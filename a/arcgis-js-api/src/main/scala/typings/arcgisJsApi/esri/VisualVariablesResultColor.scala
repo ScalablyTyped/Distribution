@@ -26,8 +26,7 @@ trait VisualVariablesResultColor
 }
 object VisualVariablesResultColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colorScheme: ColorScheme,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object VisualVariablesResultColor {
     __obj.asInstanceOf[VisualVariablesResultColor]
   }
   
-  @scala.inline
-  implicit class VisualVariablesResultColorMutableBuilder[Self <: VisualVariablesResultColor] (val x: Self) extends AnyVal {
+  extension [Self <: VisualVariablesResultColor](x: Self) {
     
-    @scala.inline
-    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariable(value: ColorVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
+    inline def setVisualVariable(value: ColorVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
   }
 }

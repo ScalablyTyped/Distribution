@@ -41,15 +41,15 @@ object resizeHandleMod {
       */
     def this(props: IResizeHandleProps, context: js.Any) = this()
     
-    var handleActivate: js.Any = js.native
+    /* private */ var handleActivate: js.Any = js.native
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
     
-    var handleDoubleClick: js.Any = js.native
+    /* private */ var handleDoubleClick: js.Any = js.native
     
-    var handleDragEnd: js.Any = js.native
+    /* private */ var handleDragEnd: js.Any = js.native
     
-    var handleDragMove: js.Any = js.native
+    /* private */ var handleDragMove: js.Any = js.native
   }
   
   @js.native
@@ -102,17 +102,14 @@ object resizeHandleMod {
   }
   object IResizeHandleState {
     
-    @scala.inline
-    def apply(isDragging: Boolean): IResizeHandleState = {
+    inline def apply(isDragging: Boolean): IResizeHandleState = {
       val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResizeHandleState]
     }
     
-    @scala.inline
-    implicit class IResizeHandleStateMutableBuilder[Self <: IResizeHandleState] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeHandleState](x: Self) {
       
-      @scala.inline
-      def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     }
   }
 }

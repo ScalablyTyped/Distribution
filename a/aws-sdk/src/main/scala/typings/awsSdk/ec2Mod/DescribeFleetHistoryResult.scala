@@ -33,46 +33,33 @@ trait DescribeFleetHistoryResult extends StObject {
 }
 object DescribeFleetHistoryResult {
   
-  @scala.inline
-  def apply(): DescribeFleetHistoryResult = {
+  inline def apply(): DescribeFleetHistoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetHistoryResult]
   }
   
-  @scala.inline
-  implicit class DescribeFleetHistoryResultMutableBuilder[Self <: DescribeFleetHistoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetHistoryResult](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setHistoryRecords(value: HistoryRecordSet): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
+    inline def setHistoryRecords(value: HistoryRecordSet): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
+    inline def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
     
-    @scala.inline
-    def setHistoryRecordsVarargs(value: HistoryRecordEntry*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
+    inline def setHistoryRecordsVarargs(value: HistoryRecordEntry*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
+    inline def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

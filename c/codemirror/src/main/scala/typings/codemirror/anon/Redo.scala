@@ -12,19 +12,15 @@ trait Redo extends StObject {
 }
 object Redo {
   
-  @scala.inline
-  def apply(redo: Double, undo: Double): Redo = {
+  inline def apply(redo: Double, undo: Double): Redo = {
     val __obj = js.Dynamic.literal(redo = redo.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redo]
   }
   
-  @scala.inline
-  implicit class RedoMutableBuilder[Self <: Redo] (val x: Self) extends AnyVal {
+  extension [Self <: Redo](x: Self) {
     
-    @scala.inline
-    def setRedo(value: Double): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    inline def setRedo(value: Double): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo(value: Double): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: Double): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
   }
 }

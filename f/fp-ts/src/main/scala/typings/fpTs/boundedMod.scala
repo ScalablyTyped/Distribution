@@ -22,21 +22,17 @@ object boundedMod {
   }
   object Bounded {
     
-    @scala.inline
-    def apply[A](bottom: A, compare: (A, A) => Ordering, equals_ : (A, A) => Boolean, top: A): Bounded[A] = {
+    inline def apply[A](bottom: A, compare: (A, A) => Ordering, equals_ : (A, A) => Boolean, top: A): Bounded[A] = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], compare = js.Any.fromFunction2(compare), top = top.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction2(equals_))
       __obj.asInstanceOf[Bounded[A]]
     }
     
-    @scala.inline
-    implicit class BoundedMutableBuilder[Self <: Bounded[?], A] (val x: Self & Bounded[A]) extends AnyVal {
+    extension [Self <: Bounded[?], A](x: Self & Bounded[A]) {
       
-      @scala.inline
-      def setBottom(value: A): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: A): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: A): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: A): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

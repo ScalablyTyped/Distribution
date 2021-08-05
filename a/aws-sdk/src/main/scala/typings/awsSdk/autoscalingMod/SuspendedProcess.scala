@@ -18,25 +18,19 @@ trait SuspendedProcess extends StObject {
 }
 object SuspendedProcess {
   
-  @scala.inline
-  def apply(): SuspendedProcess = {
+  inline def apply(): SuspendedProcess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspendedProcess]
   }
   
-  @scala.inline
-  implicit class SuspendedProcessMutableBuilder[Self <: SuspendedProcess] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendedProcess](x: Self) {
     
-    @scala.inline
-    def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
+    inline def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessNameUndefined: Self = StObject.set(x, "ProcessName", js.undefined)
+    inline def setProcessNameUndefined: Self = StObject.set(x, "ProcessName", js.undefined)
     
-    @scala.inline
-    def setSuspensionReason(value: XmlStringMaxLen255): Self = StObject.set(x, "SuspensionReason", value.asInstanceOf[js.Any])
+    inline def setSuspensionReason(value: XmlStringMaxLen255): Self = StObject.set(x, "SuspensionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspensionReasonUndefined: Self = StObject.set(x, "SuspensionReason", js.undefined)
+    inline def setSuspensionReasonUndefined: Self = StObject.set(x, "SuspensionReason", js.undefined)
   }
 }

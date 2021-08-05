@@ -14,22 +14,17 @@ trait IObjectTypeTargetForBrowsing extends StObject {
 }
 object IObjectTypeTargetForBrowsing {
   
-  @scala.inline
-  def apply(Clone: () => IObjectTypeTargetForBrowsing, TargetObjectType: Double, ViewCollection: Double): IObjectTypeTargetForBrowsing = {
+  inline def apply(Clone: () => IObjectTypeTargetForBrowsing, TargetObjectType: Double, ViewCollection: Double): IObjectTypeTargetForBrowsing = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), TargetObjectType = TargetObjectType.asInstanceOf[js.Any], ViewCollection = ViewCollection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectTypeTargetForBrowsing]
   }
   
-  @scala.inline
-  implicit class IObjectTypeTargetForBrowsingMutableBuilder[Self <: IObjectTypeTargetForBrowsing] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectTypeTargetForBrowsing](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IObjectTypeTargetForBrowsing): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IObjectTypeTargetForBrowsing): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTargetObjectType(value: Double): Self = StObject.set(x, "TargetObjectType", value.asInstanceOf[js.Any])
+    inline def setTargetObjectType(value: Double): Self = StObject.set(x, "TargetObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewCollection(value: Double): Self = StObject.set(x, "ViewCollection", value.asInstanceOf[js.Any])
+    inline def setViewCollection(value: Double): Self = StObject.set(x, "ViewCollection", value.asInstanceOf[js.Any])
   }
 }

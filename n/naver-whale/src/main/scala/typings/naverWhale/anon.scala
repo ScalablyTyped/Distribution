@@ -49,23 +49,18 @@ object anon {
   }
   object Typeofdevtools {
     
-    @scala.inline
-    def apply(inspectedWindow: js.Any, network: js.Any, panels: js.Any): Typeofdevtools = {
+    inline def apply(inspectedWindow: js.Any, network: js.Any, panels: js.Any): Typeofdevtools = {
       val __obj = js.Dynamic.literal(inspectedWindow = inspectedWindow.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofdevtools]
     }
     
-    @scala.inline
-    implicit class TypeofdevtoolsMutableBuilder[Self <: Typeofdevtools] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofdevtools](x: Self) {
       
-      @scala.inline
-      def setInspectedWindow(value: js.Any): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
+      inline def setInspectedWindow(value: js.Any): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: js.Any): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: js.Any): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanels(value: js.Any): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+      inline def setPanels(value: js.Any): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,17 +70,14 @@ object anon {
   }
   object Typeofdownloads {
     
-    @scala.inline
-    def apply(State: StateType): Typeofdownloads = {
+    inline def apply(State: StateType): Typeofdownloads = {
       val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofdownloads]
     }
     
-    @scala.inline
-    implicit class TypeofdownloadsMutableBuilder[Self <: Typeofdownloads] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofdownloads](x: Self) {
       
-      @scala.inline
-      def setState(value: StateType): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: StateType): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,23 +162,18 @@ object anon {
   }
   object Typeofsystem {
     
-    @scala.inline
-    def apply(cpu: js.Any, memory: js.Any, storage: js.Any): Typeofsystem = {
+    inline def apply(cpu: js.Any, memory: js.Any, storage: js.Any): Typeofsystem = {
       val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofsystem]
     }
     
-    @scala.inline
-    implicit class TypeofsystemMutableBuilder[Self <: Typeofsystem] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofsystem](x: Self) {
       
-      @scala.inline
-      def setCpu(value: js.Any): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: js.Any): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: js.Any): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: js.Any): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -602,8 +589,7 @@ object anon {
   }
   object Typeofwhale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alarms: js.Any,
       bookmarks: js.Any,
       browserAction: js.Any,
@@ -652,134 +638,91 @@ object anon {
       __obj.asInstanceOf[Typeofwhale]
     }
     
-    @scala.inline
-    implicit class TypeofwhaleMutableBuilder[Self <: Typeofwhale] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofwhale](x: Self) {
       
-      @scala.inline
-      def setAlarms(value: js.Any): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+      inline def setAlarms(value: js.Any): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBookmarks(value: js.Any): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+      inline def setBookmarks(value: js.Any): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserAction(value: js.Any): Self = StObject.set(x, "browserAction", value.asInstanceOf[js.Any])
+      inline def setBrowserAction(value: js.Any): Self = StObject.set(x, "browserAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowsingData(value: js.Any): Self = StObject.set(x, "browsingData", value.asInstanceOf[js.Any])
+      inline def setBrowsingData(value: js.Any): Self = StObject.set(x, "browsingData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentSettings(value: js.Any): Self = StObject.set(x, "contentSettings", value.asInstanceOf[js.Any])
+      inline def setContentSettings(value: js.Any): Self = StObject.set(x, "contentSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMenus(value: js.Any): Self = StObject.set(x, "contextMenus", value.asInstanceOf[js.Any])
+      inline def setContextMenus(value: js.Any): Self = StObject.set(x, "contextMenus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarativeContent(value: js.Any): Self = StObject.set(x, "declarativeContent", value.asInstanceOf[js.Any])
+      inline def setDeclarativeContent(value: js.Any): Self = StObject.set(x, "declarativeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopCapture(value: js.Any): Self = StObject.set(x, "desktopCapture", value.asInstanceOf[js.Any])
+      inline def setDesktopCapture(value: js.Any): Self = StObject.set(x, "desktopCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevtools(value: Typeofdevtools): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
+      inline def setDevtools(value: Typeofdevtools): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloads(value: Typeofdownloads): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
+      inline def setDownloads(value: Typeofdownloads): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtension(value: js.Any): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: js.Any): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSettings(value: js.Any): Self = StObject.set(x, "fontSettings", value.asInstanceOf[js.Any])
+      inline def setFontSettings(value: js.Any): Self = StObject.set(x, "fontSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGcm(value: js.Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+      inline def setGcm(value: js.Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdle(value: js.Any): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: js.Any): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagement(value: js.Any): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
+      inline def setManagement(value: js.Any): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifications(value: js.Any): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Any): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmnibox(value: js.Any): Self = StObject.set(x, "omnibox", value.asInstanceOf[js.Any])
+      inline def setOmnibox(value: js.Any): Self = StObject.set(x, "omnibox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageAction(value: js.Any): Self = StObject.set(x, "pageAction", value.asInstanceOf[js.Any])
+      inline def setPageAction(value: js.Any): Self = StObject.set(x, "pageAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageCapture(value: js.Any): Self = StObject.set(x, "pageCapture", value.asInstanceOf[js.Any])
+      inline def setPageCapture(value: js.Any): Self = StObject.set(x, "pageCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissions(value: js.Any): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: js.Any): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPower(value: js.Any): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+      inline def setPower(value: js.Any): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinterProvider(value: js.Any): Self = StObject.set(x, "printerProvider", value.asInstanceOf[js.Any])
+      inline def setPrinterProvider(value: js.Any): Self = StObject.set(x, "printerProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivacy(value: js.Any): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+      inline def setPrivacy(value: js.Any): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: js.Any): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: js.Any): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebarAction(value: TypeofsidebarAction): Self = StObject.set(x, "sidebarAction", value.asInstanceOf[js.Any])
+      inline def setSidebarAction(value: TypeofsidebarAction): Self = StObject.set(x, "sidebarAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystem(value: Typeofsystem): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: Typeofsystem): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabCapture(value: js.Any): Self = StObject.set(x, "tabCapture", value.asInstanceOf[js.Any])
+      inline def setTabCapture(value: js.Any): Self = StObject.set(x, "tabCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: js.Any): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Any): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopSites(value: TypeoftopSites): Self = StObject.set(x, "topSites", value.asInstanceOf[js.Any])
+      inline def setTopSites(value: TypeoftopSites): Self = StObject.set(x, "topSites", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTts(value: js.Any): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
+      inline def setTts(value: js.Any): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtsEngine(value: js.Any): Self = StObject.set(x, "ttsEngine", value.asInstanceOf[js.Any])
+      inline def setTtsEngine(value: js.Any): Self = StObject.set(x, "ttsEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebNavigation(value: js.Any): Self = StObject.set(x, "webNavigation", value.asInstanceOf[js.Any])
+      inline def setWebNavigation(value: js.Any): Self = StObject.set(x, "webNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRequest(value: js.Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
+      inline def setWebRequest(value: js.Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindows(value: js.Any): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: js.Any): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     }
   }
 }

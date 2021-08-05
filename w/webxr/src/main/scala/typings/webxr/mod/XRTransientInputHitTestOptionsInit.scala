@@ -14,31 +14,23 @@ trait XRTransientInputHitTestOptionsInit extends StObject {
 }
 object XRTransientInputHitTestOptionsInit {
   
-  @scala.inline
-  def apply(profile: String): XRTransientInputHitTestOptionsInit = {
+  inline def apply(profile: String): XRTransientInputHitTestOptionsInit = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRTransientInputHitTestOptionsInit]
   }
   
-  @scala.inline
-  implicit class XRTransientInputHitTestOptionsInitMutableBuilder[Self <: XRTransientInputHitTestOptionsInit] (val x: Self) extends AnyVal {
+  extension [Self <: XRTransientInputHitTestOptionsInit](x: Self) {
     
-    @scala.inline
-    def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
+    inline def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+    inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    @scala.inline
-    def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetRay(value: XRRay): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
+    inline def setOffsetRay(value: XRRay): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
+    inline def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

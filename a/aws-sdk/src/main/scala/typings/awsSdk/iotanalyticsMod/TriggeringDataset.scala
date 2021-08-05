@@ -13,16 +13,13 @@ trait TriggeringDataset extends StObject {
 }
 object TriggeringDataset {
   
-  @scala.inline
-  def apply(name: DatasetName): TriggeringDataset = {
+  inline def apply(name: DatasetName): TriggeringDataset = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggeringDataset]
   }
   
-  @scala.inline
-  implicit class TriggeringDatasetMutableBuilder[Self <: TriggeringDataset] (val x: Self) extends AnyVal {
+  extension [Self <: TriggeringDataset](x: Self) {
     
-    @scala.inline
-    def setName(value: DatasetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DatasetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait And
 }
 object And {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ]
@@ -25,18 +24,15 @@ object And {
     __obj.asInstanceOf[And]
   }
   
-  @scala.inline
-  implicit class AndMutableBuilder[Self <: And] (val x: Self) extends AnyVal {
+  extension [Self <: And](x: Self) {
     
-    @scala.inline
-    def setAnd(
+    inline def setAnd(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]
     ): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndVarargs(
+    inline def setAndVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)*
     ): Self = StObject.set(x, "and", js.Array(value :_*))
   }

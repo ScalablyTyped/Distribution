@@ -49,26 +49,19 @@ object specMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAnyConcatSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAnyConcatSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isFacetSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean]
+  inline def isFacetSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean]
   
-  @scala.inline
-  def isHConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean]
+  inline def isHConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean]
   
-  @scala.inline
-  def isLayerSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean]
+  inline def isLayerSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean]
   
-  @scala.inline
-  def isRepeatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean]
+  inline def isRepeatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean]
   
-  @scala.inline
-  def isUnitSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnitSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUnitSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnitSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
+  inline def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
   
   type GenericSpec[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, R /* <: RepeatSpec */, F /* <: Field */] = U | L | R | (GenericFacetSpec[U, L, F]) | (GenericConcatSpec[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F> */ js.Object
@@ -242,8 +235,7 @@ object specMod {
   }
   object TopLevelFacetSpec {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: (js.UndefOr[Data | Null]) & Data,
       facet: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]]),
       spec: LayerSpec | UnitSpecWithFrame
@@ -252,136 +244,93 @@ object specMod {
       __obj.asInstanceOf[TopLevelFacetSpec]
     }
     
-    @scala.inline
-    implicit class TopLevelFacetSpecMutableBuilder[Self <: TopLevelFacetSpec] (val x: Self) extends AnyVal {
+    extension [Self <: TopLevelFacetSpec](x: Self) {
       
-      @scala.inline
-      def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
+      inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
+      inline def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
       
-      @scala.inline
-      def setAlign(value: LayoutAlign | RowCol[LayoutAlign]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: LayoutAlign | RowCol[LayoutAlign]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
+      inline def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
+      inline def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
       
-      @scala.inline
-      def setBackground(value: Color | ExprRef | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Color | ExprRef | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setBounds(value: full | flush): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: full | flush): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean | RowCol[Boolean]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean | RowCol[Boolean]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setConfig(value: Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setData(value: (js.UndefOr[Data | Null]) & Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: (js.UndefOr[Data | Null]) & Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasets(value: Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+      inline def setDatasets(value: Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
+      inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFacet(
+      inline def setFacet(
         value: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]])
       ): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding | ExprRef | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding | ExprRef | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: Double | RowCol[Double]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double | RowCol[Double]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       
-      @scala.inline
-      def setSpec(value: LayerSpec | UnitSpecWithFrame): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: LayerSpec | UnitSpecWithFrame): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: Text | (TitleParams[ExprRef | SignalRef])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Text | (TitleParams[ExprRef | SignalRef])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
       
-      @scala.inline
-      def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
       
-      @scala.inline
-      def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+      inline def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
+      inline def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
     }
   }
   
@@ -399,8 +348,7 @@ object specMod {
   trait _TopLevelSpec extends StObject
   object _TopLevelSpec {
     
-    @scala.inline
-    def TopLevelFacetSpec(
+    inline def TopLevelFacetSpec(
       data: (js.UndefOr[Data | Null]) & Data,
       facet: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]]),
       spec: LayerSpec | UnitSpecWithFrame
@@ -409,32 +357,27 @@ object specMod {
       __obj.asInstanceOf[typings.vegaLite.specMod.TopLevelFacetSpec]
     }
     
-    @scala.inline
-    def TopLevelGenericConcatSpec(concat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericConcatSpec = {
+    inline def TopLevelGenericConcatSpec(concat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericConcatSpec = {
       val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelGenericConcatSpec]
     }
     
-    @scala.inline
-    def TopLevelGenericHConcatSpe(hconcat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericHConcatSpe = {
+    inline def TopLevelGenericHConcatSpe(hconcat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericHConcatSpe = {
       val __obj = js.Dynamic.literal(hconcat = hconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelGenericHConcatSpe]
     }
     
-    @scala.inline
-    def TopLevelGenericVConcatSpe(vconcat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericVConcatSpe = {
+    inline def TopLevelGenericVConcatSpe(vconcat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericVConcatSpe = {
       val __obj = js.Dynamic.literal(vconcat = vconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelGenericVConcatSpe]
     }
     
-    @scala.inline
-    def TopLevelLayerSpec(layer: js.Array[LayerSpec | UnitSpec]): typings.vegaLite.anon.TopLevelLayerSpec = {
+    inline def TopLevelLayerSpec(layer: js.Array[LayerSpec | UnitSpec]): typings.vegaLite.anon.TopLevelLayerSpec = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelLayerSpec]
     }
     
-    @scala.inline
-    def TopLevelUnitSpec(data: (js.UndefOr[Data | Null]) & Data, mark: AnyMark): typings.vegaLite.specUnitMod.TopLevelUnitSpec = {
+    inline def TopLevelUnitSpec(data: (js.UndefOr[Data | Null]) & Data, mark: AnyMark): typings.vegaLite.specUnitMod.TopLevelUnitSpec = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.specUnitMod.TopLevelUnitSpec]
     }

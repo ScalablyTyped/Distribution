@@ -30,40 +30,29 @@ trait DescribeDeploymentsReques extends StObject {
 }
 object DescribeDeploymentsReques {
   
-  @scala.inline
-  def apply(): DescribeDeploymentsReques = {
+  inline def apply(): DescribeDeploymentsReques = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDeploymentsReques]
   }
   
-  @scala.inline
-  implicit class DescribeDeploymentsRequesMutableBuilder[Self <: DescribeDeploymentsReques] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeploymentsReques](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "AppId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "AppId", js.undefined)
     
-    @scala.inline
-    def setDeploymentIds(value: Strings): Self = StObject.set(x, "DeploymentIds", value.asInstanceOf[js.Any])
+    inline def setDeploymentIds(value: Strings): Self = StObject.set(x, "DeploymentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdsUndefined: Self = StObject.set(x, "DeploymentIds", js.undefined)
+    inline def setDeploymentIdsUndefined: Self = StObject.set(x, "DeploymentIds", js.undefined)
     
-    @scala.inline
-    def setDeploymentIdsVarargs(value: String*): Self = StObject.set(x, "DeploymentIds", js.Array(value :_*))
+    inline def setDeploymentIdsVarargs(value: String*): Self = StObject.set(x, "DeploymentIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

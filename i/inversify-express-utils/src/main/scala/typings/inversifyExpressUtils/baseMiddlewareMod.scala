@@ -22,6 +22,6 @@ object baseMiddlewareMod {
     
     def handler(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], next: NextFunction): Unit = js.native
     
-    val httpContext: HttpContext = js.native
+    /* protected */ val httpContext: HttpContext = js.native
   }
 }

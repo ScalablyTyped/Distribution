@@ -13,25 +13,19 @@ trait ServiceHostedMediaConfig
 }
 object ServiceHostedMediaConfig {
   
-  @scala.inline
-  def apply(): ServiceHostedMediaConfig = {
+  inline def apply(): ServiceHostedMediaConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceHostedMediaConfig]
   }
   
-  @scala.inline
-  implicit class ServiceHostedMediaConfigMutableBuilder[Self <: ServiceHostedMediaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceHostedMediaConfig](x: Self) {
     
-    @scala.inline
-    def setPreFetchMedia(value: NullableOption[js.Array[MediaInfo]]): Self = StObject.set(x, "preFetchMedia", value.asInstanceOf[js.Any])
+    inline def setPreFetchMedia(value: NullableOption[js.Array[MediaInfo]]): Self = StObject.set(x, "preFetchMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreFetchMediaNull: Self = StObject.set(x, "preFetchMedia", null)
+    inline def setPreFetchMediaNull: Self = StObject.set(x, "preFetchMedia", null)
     
-    @scala.inline
-    def setPreFetchMediaUndefined: Self = StObject.set(x, "preFetchMedia", js.undefined)
+    inline def setPreFetchMediaUndefined: Self = StObject.set(x, "preFetchMedia", js.undefined)
     
-    @scala.inline
-    def setPreFetchMediaVarargs(value: MediaInfo*): Self = StObject.set(x, "preFetchMedia", js.Array(value :_*))
+    inline def setPreFetchMediaVarargs(value: MediaInfo*): Self = StObject.set(x, "preFetchMedia", js.Array(value :_*))
   }
 }

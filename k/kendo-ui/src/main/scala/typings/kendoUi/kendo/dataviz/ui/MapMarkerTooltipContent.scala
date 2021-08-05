@@ -10,19 +10,15 @@ trait MapMarkerTooltipContent extends StObject {
 }
 object MapMarkerTooltipContent {
   
-  @scala.inline
-  def apply(): MapMarkerTooltipContent = {
+  inline def apply(): MapMarkerTooltipContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapMarkerTooltipContent]
   }
   
-  @scala.inline
-  implicit class MapMarkerTooltipContentMutableBuilder[Self <: MapMarkerTooltipContent] (val x: Self) extends AnyVal {
+  extension [Self <: MapMarkerTooltipContent](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

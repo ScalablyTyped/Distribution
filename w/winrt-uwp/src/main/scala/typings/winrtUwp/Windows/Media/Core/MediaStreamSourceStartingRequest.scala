@@ -24,8 +24,7 @@ trait MediaStreamSourceStartingRequest extends StObject {
 }
 object MediaStreamSourceStartingRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => MediaStreamSourceStartingRequestDeferral,
     setActualStartPosition: Double => Unit,
     startPosition: Double
@@ -34,16 +33,12 @@ object MediaStreamSourceStartingRequest {
     __obj.asInstanceOf[MediaStreamSourceStartingRequest]
   }
   
-  @scala.inline
-  implicit class MediaStreamSourceStartingRequestMutableBuilder[Self <: MediaStreamSourceStartingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSourceStartingRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => MediaStreamSourceStartingRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => MediaStreamSourceStartingRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActualStartPosition(value: Double => Unit): Self = StObject.set(x, "setActualStartPosition", js.Any.fromFunction1(value))
+    inline def setSetActualStartPosition(value: Double => Unit): Self = StObject.set(x, "setActualStartPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
   }
 }

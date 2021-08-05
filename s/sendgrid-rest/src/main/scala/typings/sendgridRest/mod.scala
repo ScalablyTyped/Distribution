@@ -30,14 +30,12 @@ object mod {
   @JSImport("sendgrid-rest", "emptyRequest")
   @js.native
   def emptyRequest: Request_ = js.native
-  @scala.inline
-  def emptyRequest_=(x: Request_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyRequest")(x.asInstanceOf[js.Any])
+  inline def emptyRequest_=(x: Request_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyRequest")(x.asInstanceOf[js.Any])
   
   @JSImport("sendgrid-rest", "request")
   @js.native
   def request: Request_ = js.native
-  @scala.inline
-  def request_=(x: Request_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
+  inline def request_=(x: Request_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
   
   trait Request_ extends StObject {
     
@@ -59,8 +57,7 @@ object mod {
   }
   object Request_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: js.Object | String,
       headers: StringDictionary[js.Any],
       host: String,
@@ -74,32 +71,23 @@ object mod {
       __obj.asInstanceOf[Request_]
     }
     
-    @scala.inline
-    implicit class Request_MutableBuilder[Self <: Request_] (val x: Self) extends AnyVal {
+    extension [Self <: Request_](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,23 +101,18 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(body: js.Object | String, headers: StringDictionary[js.Any], statusCode: String): Response = {
+    inline def apply(body: js.Object | String, headers: StringDictionary[js.Any], statusCode: String): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

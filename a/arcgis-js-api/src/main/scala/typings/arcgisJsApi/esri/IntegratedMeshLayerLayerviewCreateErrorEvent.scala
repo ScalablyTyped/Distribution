@@ -12,19 +12,15 @@ trait IntegratedMeshLayerLayerviewCreateErrorEvent extends StObject {
 }
 object IntegratedMeshLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): IntegratedMeshLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): IntegratedMeshLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegratedMeshLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class IntegratedMeshLayerLayerviewCreateErrorEventMutableBuilder[Self <: IntegratedMeshLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IntegratedMeshLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

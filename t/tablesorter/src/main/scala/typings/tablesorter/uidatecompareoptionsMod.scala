@@ -18,8 +18,7 @@ object uidatecompareoptionsMod {
        with ComparableOptions
   object UIDateCompareOptions {
     
-    @scala.inline
-    def apply(): UIDateCompareOptions = {
+    inline def apply(): UIDateCompareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIDateCompareOptions]
     }

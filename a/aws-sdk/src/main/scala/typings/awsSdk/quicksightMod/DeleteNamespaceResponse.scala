@@ -18,25 +18,19 @@ trait DeleteNamespaceResponse extends StObject {
 }
 object DeleteNamespaceResponse {
   
-  @scala.inline
-  def apply(): DeleteNamespaceResponse = {
+  inline def apply(): DeleteNamespaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteNamespaceResponse]
   }
   
-  @scala.inline
-  implicit class DeleteNamespaceResponseMutableBuilder[Self <: DeleteNamespaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNamespaceResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Milliseconds extends StObject {
 }
 object Milliseconds {
   
-  @scala.inline
-  def apply(id: js.Any, milliseconds: Double): Milliseconds = {
+  inline def apply(id: js.Any, milliseconds: Double): Milliseconds = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Milliseconds]
   }
   
-  @scala.inline
-  implicit class MillisecondsMutableBuilder[Self <: Milliseconds] (val x: Self) extends AnyVal {
+  extension [Self <: Milliseconds](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+    inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
   }
 }

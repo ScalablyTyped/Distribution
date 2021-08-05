@@ -10,16 +10,13 @@ trait CtxAny extends StObject {
 }
 object CtxAny {
   
-  @scala.inline
-  def apply(ctx: js.Any): CtxAny = {
+  inline def apply(ctx: js.Any): CtxAny = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtxAny]
   }
   
-  @scala.inline
-  implicit class CtxAnyMutableBuilder[Self <: CtxAny] (val x: Self) extends AnyVal {
+  extension [Self <: CtxAny](x: Self) {
     
-    @scala.inline
-    def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
   }
 }

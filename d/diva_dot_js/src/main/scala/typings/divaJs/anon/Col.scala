@@ -19,8 +19,7 @@ trait Col extends StObject {
 }
 object Col {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     col: Double,
     dimensions: typings.divaJs.interfacesMod.Dimensions,
     offset: Offset,
@@ -31,22 +30,16 @@ object Col {
     __obj.asInstanceOf[Col]
   }
   
-  @scala.inline
-  implicit class ColMutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
+  extension [Self <: Col](x: Self) {
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensions(value: typings.divaJs.interfacesMod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: typings.divaJs.interfacesMod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

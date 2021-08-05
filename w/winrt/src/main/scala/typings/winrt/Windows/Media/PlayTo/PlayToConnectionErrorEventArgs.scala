@@ -9,8 +9,7 @@ trait PlayToConnectionErrorEventArgs
      with IPlayToConnectionErrorEventArgs
 object PlayToConnectionErrorEventArgs {
   
-  @scala.inline
-  def apply(code: PlayToConnectionError, message: String): PlayToConnectionErrorEventArgs = {
+  inline def apply(code: PlayToConnectionError, message: String): PlayToConnectionErrorEventArgs = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToConnectionErrorEventArgs]
   }

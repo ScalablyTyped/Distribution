@@ -22,19 +22,15 @@ trait ScaleRangeLayer extends StObject {
 }
 object ScaleRangeLayer {
   
-  @scala.inline
-  def apply(maxScale: Double, minScale: Double): ScaleRangeLayer = {
+  inline def apply(maxScale: Double, minScale: Double): ScaleRangeLayer = {
     val __obj = js.Dynamic.literal(maxScale = maxScale.asInstanceOf[js.Any], minScale = minScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleRangeLayer]
   }
   
-  @scala.inline
-  implicit class ScaleRangeLayerMutableBuilder[Self <: ScaleRangeLayer] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleRangeLayer](x: Self) {
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
   }
 }

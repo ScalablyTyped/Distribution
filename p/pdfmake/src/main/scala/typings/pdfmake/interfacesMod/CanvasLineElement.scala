@@ -15,31 +15,23 @@ trait CanvasLineElement extends StObject {
 }
 object CanvasLineElement {
   
-  @scala.inline
-  def apply(): CanvasLineElement = {
+  inline def apply(): CanvasLineElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasLineElement]
   }
   
-  @scala.inline
-  implicit class CanvasLineElementMutableBuilder[Self <: CanvasLineElement] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasLineElement](x: Self) {
     
-    @scala.inline
-    def setDash(value: Length): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: Length): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
+    inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    @scala.inline
-    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

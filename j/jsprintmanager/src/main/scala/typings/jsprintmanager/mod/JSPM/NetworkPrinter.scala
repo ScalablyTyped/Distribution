@@ -19,11 +19,11 @@ class NetworkPrinter protected ()
   @JSName("Id")
   var Id_NetworkPrinter: Double = js.native
   
-  var _dnsName: js.Any = js.native
+  /* private */ var _dnsName: js.Any = js.native
   
-  var _networkIPAddress: js.Any = js.native
+  /* private */ var _networkIPAddress: js.Any = js.native
   
-  var _networkPort: js.Any = js.native
+  /* private */ var _networkPort: js.Any = js.native
   
   var dnsName: String = js.native
   

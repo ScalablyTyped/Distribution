@@ -43,73 +43,51 @@ trait Win32LobAppPowerShellScriptRule
 }
 object Win32LobAppPowerShellScriptRule {
   
-  @scala.inline
-  def apply(): Win32LobAppPowerShellScriptRule = {
+  inline def apply(): Win32LobAppPowerShellScriptRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppPowerShellScriptRule]
   }
   
-  @scala.inline
-  implicit class Win32LobAppPowerShellScriptRuleMutableBuilder[Self <: Win32LobAppPowerShellScriptRule] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppPowerShellScriptRule](x: Self) {
     
-    @scala.inline
-    def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
+    inline def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnforceSignatureCheck(value: Boolean): Self = StObject.set(x, "enforceSignatureCheck", value.asInstanceOf[js.Any])
+    inline def setEnforceSignatureCheck(value: Boolean): Self = StObject.set(x, "enforceSignatureCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceSignatureCheckUndefined: Self = StObject.set(x, "enforceSignatureCheck", js.undefined)
+    inline def setEnforceSignatureCheckUndefined: Self = StObject.set(x, "enforceSignatureCheck", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: Win32LobAppPowerShellScriptRuleOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: Win32LobAppPowerShellScriptRuleOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setRunAs32Bit(value: Boolean): Self = StObject.set(x, "runAs32Bit", value.asInstanceOf[js.Any])
+    inline def setRunAs32Bit(value: Boolean): Self = StObject.set(x, "runAs32Bit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAs32BitUndefined: Self = StObject.set(x, "runAs32Bit", js.undefined)
+    inline def setRunAs32BitUndefined: Self = StObject.set(x, "runAs32Bit", js.undefined)
     
-    @scala.inline
-    def setRunAsAccount(value: NullableOption[RunAsAccountType]): Self = StObject.set(x, "runAsAccount", value.asInstanceOf[js.Any])
+    inline def setRunAsAccount(value: NullableOption[RunAsAccountType]): Self = StObject.set(x, "runAsAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsAccountNull: Self = StObject.set(x, "runAsAccount", null)
+    inline def setRunAsAccountNull: Self = StObject.set(x, "runAsAccount", null)
     
-    @scala.inline
-    def setRunAsAccountUndefined: Self = StObject.set(x, "runAsAccount", js.undefined)
+    inline def setRunAsAccountUndefined: Self = StObject.set(x, "runAsAccount", js.undefined)
     
-    @scala.inline
-    def setScriptContent(value: NullableOption[String]): Self = StObject.set(x, "scriptContent", value.asInstanceOf[js.Any])
+    inline def setScriptContent(value: NullableOption[String]): Self = StObject.set(x, "scriptContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptContentNull: Self = StObject.set(x, "scriptContent", null)
+    inline def setScriptContentNull: Self = StObject.set(x, "scriptContent", null)
     
-    @scala.inline
-    def setScriptContentUndefined: Self = StObject.set(x, "scriptContent", js.undefined)
+    inline def setScriptContentUndefined: Self = StObject.set(x, "scriptContent", js.undefined)
   }
 }

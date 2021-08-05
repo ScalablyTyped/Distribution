@@ -13,8 +13,7 @@ object stepsStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): StepsStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[StepsStyle]
+  inline def default(theme: Theme): StepsStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[StepsStyle]
   
   trait StepsStyle extends StObject {
     
@@ -68,8 +67,7 @@ object stepsStyleMod {
   }
   object StepsStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content_l: ViewStyle,
       content_s: ViewStyle,
       content_s_h: ViewStyle,
@@ -99,80 +97,55 @@ object stepsStyleMod {
       __obj.asInstanceOf[StepsStyle]
     }
     
-    @scala.inline
-    implicit class StepsStyleMutableBuilder[Self <: StepsStyle] (val x: Self) extends AnyVal {
+    extension [Self <: StepsStyle](x: Self) {
       
-      @scala.inline
-      def setContent_l(value: ViewStyle): Self = StObject.set(x, "content_l", value.asInstanceOf[js.Any])
+      inline def setContent_l(value: ViewStyle): Self = StObject.set(x, "content_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_s(value: ViewStyle): Self = StObject.set(x, "content_s", value.asInstanceOf[js.Any])
+      inline def setContent_s(value: ViewStyle): Self = StObject.set(x, "content_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_s_h(value: ViewStyle): Self = StObject.set(x, "content_s_h", value.asInstanceOf[js.Any])
+      inline def setContent_s_h(value: ViewStyle): Self = StObject.set(x, "content_s_h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription_l(value: TextStyle): Self = StObject.set(x, "description_l", value.asInstanceOf[js.Any])
+      inline def setDescription_l(value: TextStyle): Self = StObject.set(x, "description_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription_s(value: TextStyle): Self = StObject.set(x, "description_s", value.asInstanceOf[js.Any])
+      inline def setDescription_s(value: TextStyle): Self = StObject.set(x, "description_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_blue_l(value: ViewStyle): Self = StObject.set(x, "head_blue_l", value.asInstanceOf[js.Any])
+      inline def setHead_blue_l(value: ViewStyle): Self = StObject.set(x, "head_blue_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_blue_s(value: ViewStyle): Self = StObject.set(x, "head_blue_s", value.asInstanceOf[js.Any])
+      inline def setHead_blue_s(value: ViewStyle): Self = StObject.set(x, "head_blue_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_default_l(value: ViewStyle): Self = StObject.set(x, "head_default_l", value.asInstanceOf[js.Any])
+      inline def setHead_default_l(value: ViewStyle): Self = StObject.set(x, "head_default_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_default_s(value: ViewStyle): Self = StObject.set(x, "head_default_s", value.asInstanceOf[js.Any])
+      inline def setHead_default_s(value: ViewStyle): Self = StObject.set(x, "head_default_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_gray_l(value: ViewStyle): Self = StObject.set(x, "head_gray_l", value.asInstanceOf[js.Any])
+      inline def setHead_gray_l(value: ViewStyle): Self = StObject.set(x, "head_gray_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_gray_s(value: ViewStyle): Self = StObject.set(x, "head_gray_s", value.asInstanceOf[js.Any])
+      inline def setHead_gray_s(value: ViewStyle): Self = StObject.set(x, "head_gray_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_red_l(value: ViewStyle): Self = StObject.set(x, "head_red_l", value.asInstanceOf[js.Any])
+      inline def setHead_red_l(value: ViewStyle): Self = StObject.set(x, "head_red_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_red_s(value: ViewStyle): Self = StObject.set(x, "head_red_s", value.asInstanceOf[js.Any])
+      inline def setHead_red_s(value: ViewStyle): Self = StObject.set(x, "head_red_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_l(value: TextStyle): Self = StObject.set(x, "icon_l", value.asInstanceOf[js.Any])
+      inline def setIcon_l(value: TextStyle): Self = StObject.set(x, "icon_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_s(value: TextStyle): Self = StObject.set(x, "icon_s", value.asInstanceOf[js.Any])
+      inline def setIcon_s(value: TextStyle): Self = StObject.set(x, "icon_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_blue(value: ViewStyle): Self = StObject.set(x, "tail_blue", value.asInstanceOf[js.Any])
+      inline def setTail_blue(value: ViewStyle): Self = StObject.set(x, "tail_blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_default_l(value: ViewStyle): Self = StObject.set(x, "tail_default_l", value.asInstanceOf[js.Any])
+      inline def setTail_default_l(value: ViewStyle): Self = StObject.set(x, "tail_default_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_default_s(value: ViewStyle): Self = StObject.set(x, "tail_default_s", value.asInstanceOf[js.Any])
+      inline def setTail_default_s(value: ViewStyle): Self = StObject.set(x, "tail_default_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_default_s_h(value: ViewStyle): Self = StObject.set(x, "tail_default_s_h", value.asInstanceOf[js.Any])
+      inline def setTail_default_s_h(value: ViewStyle): Self = StObject.set(x, "tail_default_s_h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_error(value: ViewStyle): Self = StObject.set(x, "tail_error", value.asInstanceOf[js.Any])
+      inline def setTail_error(value: ViewStyle): Self = StObject.set(x, "tail_error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_gray(value: ViewStyle): Self = StObject.set(x, "tail_gray", value.asInstanceOf[js.Any])
+      inline def setTail_gray(value: ViewStyle): Self = StObject.set(x, "tail_gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_last(value: ViewStyle): Self = StObject.set(x, "tail_last", value.asInstanceOf[js.Any])
+      inline def setTail_last(value: ViewStyle): Self = StObject.set(x, "tail_last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle_l(value: TextStyle): Self = StObject.set(x, "title_l", value.asInstanceOf[js.Any])
+      inline def setTitle_l(value: TextStyle): Self = StObject.set(x, "title_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle_s(value: TextStyle): Self = StObject.set(x, "title_s", value.asInstanceOf[js.Any])
+      inline def setTitle_s(value: TextStyle): Self = StObject.set(x, "title_s", value.asInstanceOf[js.Any])
     }
   }
 }

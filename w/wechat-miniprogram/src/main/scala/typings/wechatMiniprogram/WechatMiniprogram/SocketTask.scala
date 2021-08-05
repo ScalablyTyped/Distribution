@@ -42,8 +42,7 @@ trait SocketTask extends StObject {
 }
 object SocketTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: SocketTaskCloseOption => Unit,
     onClose: SocketTaskOnCloseCallback => Unit,
     onError: UDPSocketOnErrorCallback => Unit,
@@ -55,25 +54,18 @@ object SocketTask {
     __obj.asInstanceOf[SocketTask]
   }
   
-  @scala.inline
-  implicit class SocketTaskMutableBuilder[Self <: SocketTask] (val x: Self) extends AnyVal {
+  extension [Self <: SocketTask](x: Self) {
     
-    @scala.inline
-    def setClose(value: SocketTaskCloseOption => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: SocketTaskCloseOption => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClose(value: SocketTaskOnCloseCallback => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: SocketTaskOnCloseCallback => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnError(value: UDPSocketOnErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: UDPSocketOnErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMessage(value: SocketTaskOnMessageCallback => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: SocketTaskOnMessageCallback => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpen(value: OnOpenCallback => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    inline def setOnOpen(value: OnOpenCallback => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSend(value: SocketTaskSendOption => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: SocketTaskSendOption => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }
 }

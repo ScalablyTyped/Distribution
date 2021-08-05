@@ -23,31 +23,23 @@ trait SSESpecification extends StObject {
 }
 object SSESpecification {
   
-  @scala.inline
-  def apply(): SSESpecification = {
+  inline def apply(): SSESpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSESpecification]
   }
   
-  @scala.inline
-  implicit class SSESpecificationMutableBuilder[Self <: SSESpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SSESpecification](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
+    inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
+    inline def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
     
-    @scala.inline
-    def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
+    inline def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
+    inline def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
   }
 }

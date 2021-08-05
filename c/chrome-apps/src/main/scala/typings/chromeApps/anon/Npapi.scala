@@ -11,16 +11,13 @@ trait Npapi extends StObject {
 }
 object Npapi {
   
-  @scala.inline
-  def apply(npapi: Boolean): Npapi = {
+  inline def apply(npapi: Boolean): Npapi = {
     val __obj = js.Dynamic.literal(npapi = npapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[Npapi]
   }
   
-  @scala.inline
-  implicit class NpapiMutableBuilder[Self <: Npapi] (val x: Self) extends AnyVal {
+  extension [Self <: Npapi](x: Self) {
     
-    @scala.inline
-    def setNpapi(value: Boolean): Self = StObject.set(x, "npapi", value.asInstanceOf[js.Any])
+    inline def setNpapi(value: Boolean): Self = StObject.set(x, "npapi", value.asInstanceOf[js.Any])
   }
 }

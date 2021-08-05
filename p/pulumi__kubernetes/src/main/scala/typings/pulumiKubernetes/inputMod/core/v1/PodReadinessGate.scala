@@ -17,16 +17,13 @@ trait PodReadinessGate extends StObject {
 }
 object PodReadinessGate {
   
-  @scala.inline
-  def apply(conditionType: Input[String]): PodReadinessGate = {
+  inline def apply(conditionType: Input[String]): PodReadinessGate = {
     val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodReadinessGate]
   }
   
-  @scala.inline
-  implicit class PodReadinessGateMutableBuilder[Self <: PodReadinessGate] (val x: Self) extends AnyVal {
+  extension [Self <: PodReadinessGate](x: Self) {
     
-    @scala.inline
-    def setConditionType(value: Input[String]): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: Input[String]): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
   }
 }

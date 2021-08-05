@@ -23,31 +23,23 @@ trait TableVersionError extends StObject {
 }
 object TableVersionError {
   
-  @scala.inline
-  def apply(): TableVersionError = {
+  inline def apply(): TableVersionError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableVersionError]
   }
   
-  @scala.inline
-  implicit class TableVersionErrorMutableBuilder[Self <: TableVersionError] (val x: Self) extends AnyVal {
+  extension [Self <: TableVersionError](x: Self) {
     
-    @scala.inline
-    def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
+    inline def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
+    inline def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

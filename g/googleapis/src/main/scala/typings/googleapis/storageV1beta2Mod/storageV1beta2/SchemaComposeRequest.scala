@@ -28,34 +28,25 @@ trait SchemaComposeRequest extends StObject {
 }
 object SchemaComposeRequest {
   
-  @scala.inline
-  def apply(): SchemaComposeRequest = {
+  inline def apply(): SchemaComposeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaComposeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaComposeRequestMutableBuilder[Self <: SchemaComposeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaComposeRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: SchemaObject): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: SchemaObject): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSourceObjects(value: js.Array[Generation]): Self = StObject.set(x, "sourceObjects", value.asInstanceOf[js.Any])
+    inline def setSourceObjects(value: js.Array[Generation]): Self = StObject.set(x, "sourceObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
+    inline def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
     
-    @scala.inline
-    def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
+    inline def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
   }
 }

@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UndocumentedPermissions extends StObject
 object UndocumentedPermissions {
   
-  @scala.inline
-  def appDotwindowDotime: typings.chromeApps.chromeAppsStrings.appDotwindowDotime = "app.window.ime".asInstanceOf[typings.chromeApps.chromeAppsStrings.appDotwindowDotime]
+  inline def appDotwindowDotime: typings.chromeApps.chromeAppsStrings.appDotwindowDotime = "app.window.ime".asInstanceOf[typings.chromeApps.chromeAppsStrings.appDotwindowDotime]
   
-  @scala.inline
-  def fullscreen: fullscreen_ = "fullscreen".asInstanceOf[fullscreen_]
+  inline def fullscreen: fullscreen_ = "fullscreen".asInstanceOf[fullscreen_]
   
-  @scala.inline
-  def overrideEscFullscreen: typings.chromeApps.chromeAppsStrings.overrideEscFullscreen = "overrideEscFullscreen".asInstanceOf[typings.chromeApps.chromeAppsStrings.overrideEscFullscreen]
+  inline def overrideEscFullscreen: typings.chromeApps.chromeAppsStrings.overrideEscFullscreen = "overrideEscFullscreen".asInstanceOf[typings.chromeApps.chromeAppsStrings.overrideEscFullscreen]
 }

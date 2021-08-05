@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AbiDefinition extends StObject
 object AbiDefinition {
   
-  @scala.inline
-  def ConstructorAbi(
+  inline def ConstructorAbi(
     inputs: js.Array[DataItem],
     payable: Boolean,
     stateMutability: ConstructorStateMutability,
@@ -27,22 +26,19 @@ object AbiDefinition {
     __obj.asInstanceOf[typings.ethereumProtocol.mod.ConstructorAbi]
   }
   
-  @scala.inline
-  def EventAbi(anonymous: Boolean, inputs: js.Array[EventParameter], name: String, `type`: Event): typings.ethereumProtocol.mod.EventAbi = {
+  inline def EventAbi(anonymous: Boolean, inputs: js.Array[EventParameter], name: String, `type`: Event): typings.ethereumProtocol.mod.EventAbi = {
     val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ethereumProtocol.mod.EventAbi]
   }
   
-  @scala.inline
-  def FallbackAbi(payable: Boolean, `type`: Fallback): typings.ethereumProtocol.mod.FallbackAbi = {
+  inline def FallbackAbi(payable: Boolean, `type`: Fallback): typings.ethereumProtocol.mod.FallbackAbi = {
     val __obj = js.Dynamic.literal(payable = payable.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ethereumProtocol.mod.FallbackAbi]
   }
   
-  @scala.inline
-  def MethodAbi(
+  inline def MethodAbi(
     constant: Boolean,
     inputs: js.Array[DataItem],
     name: String,

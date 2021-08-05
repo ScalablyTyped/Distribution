@@ -12,25 +12,19 @@ trait VideoSelectorSettings extends StObject {
 }
 object VideoSelectorSettings {
   
-  @scala.inline
-  def apply(): VideoSelectorSettings = {
+  inline def apply(): VideoSelectorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSelectorSettings]
   }
   
-  @scala.inline
-  implicit class VideoSelectorSettingsMutableBuilder[Self <: VideoSelectorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSelectorSettings](x: Self) {
     
-    @scala.inline
-    def setVideoSelectorPid(value: VideoSelectorPid): Self = StObject.set(x, "VideoSelectorPid", value.asInstanceOf[js.Any])
+    inline def setVideoSelectorPid(value: VideoSelectorPid): Self = StObject.set(x, "VideoSelectorPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSelectorPidUndefined: Self = StObject.set(x, "VideoSelectorPid", js.undefined)
+    inline def setVideoSelectorPidUndefined: Self = StObject.set(x, "VideoSelectorPid", js.undefined)
     
-    @scala.inline
-    def setVideoSelectorProgramId(value: VideoSelectorProgramId): Self = StObject.set(x, "VideoSelectorProgramId", value.asInstanceOf[js.Any])
+    inline def setVideoSelectorProgramId(value: VideoSelectorProgramId): Self = StObject.set(x, "VideoSelectorProgramId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSelectorProgramIdUndefined: Self = StObject.set(x, "VideoSelectorProgramId", js.undefined)
+    inline def setVideoSelectorProgramIdUndefined: Self = StObject.set(x, "VideoSelectorProgramId", js.undefined)
   }
 }

@@ -16,32 +16,24 @@ object anon {
   }
   object Ident {
     
-    @scala.inline
-    def apply(): Ident = {
+    inline def apply(): Ident = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ident]
     }
     
-    @scala.inline
-    implicit class IdentMutableBuilder[Self <: Ident] (val x: Self) extends AnyVal {
+    extension [Self <: Ident](x: Self) {
       
-      @scala.inline
-      def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+      inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+      inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
       
-      @scala.inline
-      def setLiteral(value: String): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: String): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
+      inline def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
   
@@ -51,17 +43,14 @@ object anon {
   }
   object Pattern {
     
-    @scala.inline
-    def apply(pattern: Ident): Pattern = {
+    inline def apply(pattern: Ident): Pattern = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pattern]
     }
     
-    @scala.inline
-    implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+    extension [Self <: Pattern](x: Self) {
       
-      @scala.inline
-      def setPattern(value: Ident): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Ident): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
 }

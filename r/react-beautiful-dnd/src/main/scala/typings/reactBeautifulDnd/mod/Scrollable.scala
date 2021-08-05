@@ -23,8 +23,7 @@ trait Scrollable extends StObject {
 }
 object Scrollable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameClient: BoxModel,
     pageMarginBox: Rect,
     scroll: ScrollDetails,
@@ -35,22 +34,16 @@ object Scrollable {
     __obj.asInstanceOf[Scrollable]
   }
   
-  @scala.inline
-  implicit class ScrollableMutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
+  extension [Self <: Scrollable](x: Self) {
     
-    @scala.inline
-    def setFrameClient(value: BoxModel): Self = StObject.set(x, "frameClient", value.asInstanceOf[js.Any])
+    inline def setFrameClient(value: BoxModel): Self = StObject.set(x, "frameClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageMarginBox(value: Rect): Self = StObject.set(x, "pageMarginBox", value.asInstanceOf[js.Any])
+    inline def setPageMarginBox(value: Rect): Self = StObject.set(x, "pageMarginBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll(value: ScrollDetails): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: ScrollDetails): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollSize(value: ScrollSize): Self = StObject.set(x, "scrollSize", value.asInstanceOf[js.Any])
+    inline def setScrollSize(value: ScrollSize): Self = StObject.set(x, "scrollSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldClipSubject(value: Boolean): Self = StObject.set(x, "shouldClipSubject", value.asInstanceOf[js.Any])
+    inline def setShouldClipSubject(value: Boolean): Self = StObject.set(x, "shouldClipSubject", value.asInstanceOf[js.Any])
   }
 }

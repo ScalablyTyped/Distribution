@@ -10,19 +10,15 @@ trait PreserveLeadingWhitespace extends StObject {
 }
 object PreserveLeadingWhitespace {
   
-  @scala.inline
-  def apply(): PreserveLeadingWhitespace = {
+  inline def apply(): PreserveLeadingWhitespace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreserveLeadingWhitespace]
   }
   
-  @scala.inline
-  implicit class PreserveLeadingWhitespaceMutableBuilder[Self <: PreserveLeadingWhitespace] (val x: Self) extends AnyVal {
+  extension [Self <: PreserveLeadingWhitespace](x: Self) {
     
-    @scala.inline
-    def setPreserveLeadingWhitespace(value: Boolean): Self = StObject.set(x, "preserveLeadingWhitespace", value.asInstanceOf[js.Any])
+    inline def setPreserveLeadingWhitespace(value: Boolean): Self = StObject.set(x, "preserveLeadingWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveLeadingWhitespaceUndefined: Self = StObject.set(x, "preserveLeadingWhitespace", js.undefined)
+    inline def setPreserveLeadingWhitespaceUndefined: Self = StObject.set(x, "preserveLeadingWhitespace", js.undefined)
   }
 }

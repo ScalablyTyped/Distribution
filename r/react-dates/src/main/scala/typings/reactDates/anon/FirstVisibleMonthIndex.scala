@@ -38,88 +38,61 @@ trait FirstVisibleMonthIndex extends StObject {
 }
 object FirstVisibleMonthIndex {
   
-  @scala.inline
-  def apply(): FirstVisibleMonthIndex = {
+  inline def apply(): FirstVisibleMonthIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirstVisibleMonthIndex]
   }
   
-  @scala.inline
-  implicit class FirstVisibleMonthIndexMutableBuilder[Self <: FirstVisibleMonthIndex] (val x: Self) extends AnyVal {
+  extension [Self <: FirstVisibleMonthIndex](x: Self) {
     
-    @scala.inline
-    def setFirstVisibleMonthIndex(value: Double): Self = StObject.set(x, "firstVisibleMonthIndex", value.asInstanceOf[js.Any])
+    inline def setFirstVisibleMonthIndex(value: Double): Self = StObject.set(x, "firstVisibleMonthIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstVisibleMonthIndexUndefined: Self = StObject.set(x, "firstVisibleMonthIndex", js.undefined)
+    inline def setFirstVisibleMonthIndexUndefined: Self = StObject.set(x, "firstVisibleMonthIndex", js.undefined)
     
-    @scala.inline
-    def setInitialMonth(value: Moment): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
+    inline def setInitialMonth(value: Moment): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
+    inline def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
     
-    @scala.inline
-    def setIsAnimating(value: Boolean): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
+    inline def setIsAnimating(value: Boolean): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnimatingUndefined: Self = StObject.set(x, "isAnimating", js.undefined)
+    inline def setIsAnimatingUndefined: Self = StObject.set(x, "isAnimating", js.undefined)
     
-    @scala.inline
-    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+    inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
+    inline def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: Record[String, Record[String, ModifiersShape]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Record[String, Record[String, ModifiersShape]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setNumberOfMonths(value: Double): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
+    inline def setNumberOfMonths(value: Double): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
+    inline def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
     
-    @scala.inline
-    def setOnMonthChange(value: /* newMonth */ Moment => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
+    inline def setOnMonthChange(value: /* newMonth */ Moment => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
+    inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
     
-    @scala.inline
-    def setOnMonthTransitionEnd(value: /* event */ js.UndefOr[TransitionEvent[HTMLDivElement]] => Unit): Self = StObject.set(x, "onMonthTransitionEnd", js.Any.fromFunction1(value))
+    inline def setOnMonthTransitionEnd(value: /* event */ js.UndefOr[TransitionEvent[HTMLDivElement]] => Unit): Self = StObject.set(x, "onMonthTransitionEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMonthTransitionEndUndefined: Self = StObject.set(x, "onMonthTransitionEnd", js.undefined)
+    inline def setOnMonthTransitionEndUndefined: Self = StObject.set(x, "onMonthTransitionEnd", js.undefined)
     
-    @scala.inline
-    def setOnYearChange(value: /* newMonth */ Moment => Unit): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
+    inline def setOnYearChange(value: /* newMonth */ Moment => Unit): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
+    inline def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: ScrollableOrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: ScrollableOrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+    inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    @scala.inline
-    def setTranslationValue(value: Double): Self = StObject.set(x, "translationValue", value.asInstanceOf[js.Any])
+    inline def setTranslationValue(value: Double): Self = StObject.set(x, "translationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationValueNull: Self = StObject.set(x, "translationValue", null)
+    inline def setTranslationValueNull: Self = StObject.set(x, "translationValue", null)
     
-    @scala.inline
-    def setTranslationValueUndefined: Self = StObject.set(x, "translationValue", js.undefined)
+    inline def setTranslationValueUndefined: Self = StObject.set(x, "translationValue", js.undefined)
   }
 }

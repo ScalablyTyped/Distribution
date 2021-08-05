@@ -128,22 +128,19 @@ object aclMod {
     @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.accessMethods")
     @js.native
     def accessMethods: js.Any = js.native
-    @scala.inline
-    def accessMethods_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessMethods")(x.asInstanceOf[js.Any])
+    inline def accessMethods_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessMethods")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.entities")
     @js.native
     def entities: js.Any = js.native
-    @scala.inline
-    def entities_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entities")(x.asInstanceOf[js.Any])
+    inline def entities_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entities")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.roles")
     @js.native
     def roles: js.Any = js.native
-    @scala.inline
-    def roles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
+    inline def roles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
   }
   
   trait AccessControlObject extends StObject {
@@ -156,23 +153,18 @@ object aclMod {
   }
   object AccessControlObject {
     
-    @scala.inline
-    def apply(entity: String, projectTeam: String, role: String): AccessControlObject = {
+    inline def apply(entity: String, projectTeam: String, role: String): AccessControlObject = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], projectTeam = projectTeam.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessControlObject]
     }
     
-    @scala.inline
-    implicit class AccessControlObjectMutableBuilder[Self <: AccessControlObject] (val x: Self) extends AnyVal {
+    extension [Self <: AccessControlObject](x: Self) {
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectTeam(value: String): Self = StObject.set(x, "projectTeam", value.asInstanceOf[js.Any])
+      inline def setProjectTeam(value: String): Self = StObject.set(x, "projectTeam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +176,16 @@ object aclMod {
   }
   object AclOptions {
     
-    @scala.inline
-    def apply(pathPrefix: String, request: (DecorateRequestOptions, BodyResponseCallback) => Unit): AclOptions = {
+    inline def apply(pathPrefix: String, request: (DecorateRequestOptions, BodyResponseCallback) => Unit): AclOptions = {
       val __obj = js.Dynamic.literal(pathPrefix = pathPrefix.asInstanceOf[js.Any], request = js.Any.fromFunction2(request))
       __obj.asInstanceOf[AclOptions]
     }
     
-    @scala.inline
-    implicit class AclOptionsMutableBuilder[Self <: AclOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AclOptions](x: Self) {
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: (DecorateRequestOptions, BodyResponseCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      inline def setRequest(value: (DecorateRequestOptions, BodyResponseCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
     }
   }
   
@@ -220,32 +208,24 @@ object aclMod {
   }
   object AddAclOptions {
     
-    @scala.inline
-    def apply(entity: String, role: String): AddAclOptions = {
+    inline def apply(entity: String, role: String): AddAclOptions = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddAclOptions]
     }
     
-    @scala.inline
-    implicit class AddAclOptionsMutableBuilder[Self <: AddAclOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddAclOptions](x: Self) {
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -268,29 +248,22 @@ object aclMod {
   }
   object GetAclOptions {
     
-    @scala.inline
-    def apply(entity: String): GetAclOptions = {
+    inline def apply(entity: String): GetAclOptions = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAclOptions]
     }
     
-    @scala.inline
-    implicit class GetAclOptionsMutableBuilder[Self <: GetAclOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetAclOptions](x: Self) {
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -308,29 +281,22 @@ object aclMod {
   }
   object RemoveAclOptions {
     
-    @scala.inline
-    def apply(entity: String): RemoveAclOptions = {
+    inline def apply(entity: String): RemoveAclOptions = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveAclOptions]
     }
     
-    @scala.inline
-    implicit class RemoveAclOptionsMutableBuilder[Self <: RemoveAclOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveAclOptions](x: Self) {
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -355,32 +321,24 @@ object aclMod {
   }
   object UpdateAclOptions {
     
-    @scala.inline
-    def apply(entity: String, role: String): UpdateAclOptions = {
+    inline def apply(entity: String, role: String): UpdateAclOptions = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateAclOptions]
     }
     
-    @scala.inline
-    implicit class UpdateAclOptionsMutableBuilder[Self <: UpdateAclOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateAclOptions](x: Self) {
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   

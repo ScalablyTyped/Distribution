@@ -22,26 +22,20 @@ object Sprite {
   }
   object SpriteConfig {
     
-    @scala.inline
-    def apply(): SpriteConfig = {
+    inline def apply(): SpriteConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpriteConfig]
     }
     
-    @scala.inline
-    implicit class SpriteConfigMutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SpriteConfig](x: Self) {
       
-      @scala.inline
-      def setFrame(value: Double | String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Double | String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
 }

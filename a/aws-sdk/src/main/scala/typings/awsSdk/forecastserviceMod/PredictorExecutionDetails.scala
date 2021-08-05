@@ -13,22 +13,17 @@ trait PredictorExecutionDetails extends StObject {
 }
 object PredictorExecutionDetails {
   
-  @scala.inline
-  def apply(): PredictorExecutionDetails = {
+  inline def apply(): PredictorExecutionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PredictorExecutionDetails]
   }
   
-  @scala.inline
-  implicit class PredictorExecutionDetailsMutableBuilder[Self <: PredictorExecutionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PredictorExecutionDetails](x: Self) {
     
-    @scala.inline
-    def setPredictorExecutions(value: PredictorExecutions): Self = StObject.set(x, "PredictorExecutions", value.asInstanceOf[js.Any])
+    inline def setPredictorExecutions(value: PredictorExecutions): Self = StObject.set(x, "PredictorExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictorExecutionsUndefined: Self = StObject.set(x, "PredictorExecutions", js.undefined)
+    inline def setPredictorExecutionsUndefined: Self = StObject.set(x, "PredictorExecutions", js.undefined)
     
-    @scala.inline
-    def setPredictorExecutionsVarargs(value: PredictorExecution*): Self = StObject.set(x, "PredictorExecutions", js.Array(value :_*))
+    inline def setPredictorExecutionsVarargs(value: PredictorExecution*): Self = StObject.set(x, "PredictorExecutions", js.Array(value :_*))
   }
 }

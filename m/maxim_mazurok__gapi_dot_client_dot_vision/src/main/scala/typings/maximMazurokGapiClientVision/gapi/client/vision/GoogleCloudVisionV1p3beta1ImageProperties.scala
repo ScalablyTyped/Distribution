@@ -11,19 +11,15 @@ trait GoogleCloudVisionV1p3beta1ImageProperties extends StObject {
 }
 object GoogleCloudVisionV1p3beta1ImageProperties {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p3beta1ImageProperties = {
+  inline def apply(): GoogleCloudVisionV1p3beta1ImageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1ImageProperties]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p3beta1ImagePropertiesMutableBuilder[Self <: GoogleCloudVisionV1p3beta1ImageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p3beta1ImageProperties](x: Self) {
     
-    @scala.inline
-    def setDominantColors(value: GoogleCloudVisionV1p3beta1DominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
+    inline def setDominantColors(value: GoogleCloudVisionV1p3beta1DominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
+    inline def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
   }
 }

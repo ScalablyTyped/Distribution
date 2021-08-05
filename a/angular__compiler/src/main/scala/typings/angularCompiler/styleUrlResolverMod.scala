@@ -21,9 +21,7 @@ object styleUrlResolverMod {
     var styleUrls: js.Array[String] = js.native
   }
   
-  @scala.inline
-  def extractStyleUrls(resolver: UrlResolver, baseUrl: String, cssText: String): StyleWithImports = (^.asInstanceOf[js.Dynamic].applyDynamic("extractStyleUrls")(resolver.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[StyleWithImports]
+  inline def extractStyleUrls(resolver: UrlResolver, baseUrl: String, cssText: String): StyleWithImports = (^.asInstanceOf[js.Dynamic].applyDynamic("extractStyleUrls")(resolver.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[StyleWithImports]
   
-  @scala.inline
-  def isStyleUrlResolvable(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyleUrlResolvable")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStyleUrlResolvable(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyleUrlResolvable")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

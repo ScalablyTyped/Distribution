@@ -15,22 +15,17 @@ trait SubscriberAdvertisement
 }
 object SubscriberAdvertisement {
   
-  @scala.inline
-  def apply(name: String): SubscriberAdvertisement = {
+  inline def apply(name: String): SubscriberAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriberAdvertisement]
   }
   
-  @scala.inline
-  implicit class SubscriberAdvertisementMutableBuilder[Self <: SubscriberAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriberAdvertisement](x: Self) {
     
-    @scala.inline
-    def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
+    inline def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
+    inline def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
     
-    @scala.inline
-    def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
+    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
   }
 }

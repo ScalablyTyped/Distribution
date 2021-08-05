@@ -18,22 +18,17 @@ trait JapanesePhoneme extends StObject {
 }
 object JapanesePhoneme {
   
-  @scala.inline
-  def apply(displayText: String, isPhraseStart: Boolean, yomiText: String): JapanesePhoneme = {
+  inline def apply(displayText: String, isPhraseStart: Boolean, yomiText: String): JapanesePhoneme = {
     val __obj = js.Dynamic.literal(displayText = displayText.asInstanceOf[js.Any], isPhraseStart = isPhraseStart.asInstanceOf[js.Any], yomiText = yomiText.asInstanceOf[js.Any])
     __obj.asInstanceOf[JapanesePhoneme]
   }
   
-  @scala.inline
-  implicit class JapanesePhonemeMutableBuilder[Self <: JapanesePhoneme] (val x: Self) extends AnyVal {
+  extension [Self <: JapanesePhoneme](x: Self) {
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPhraseStart(value: Boolean): Self = StObject.set(x, "isPhraseStart", value.asInstanceOf[js.Any])
+    inline def setIsPhraseStart(value: Boolean): Self = StObject.set(x, "isPhraseStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYomiText(value: String): Self = StObject.set(x, "yomiText", value.asInstanceOf[js.Any])
+    inline def setYomiText(value: String): Self = StObject.set(x, "yomiText", value.asInstanceOf[js.Any])
   }
 }

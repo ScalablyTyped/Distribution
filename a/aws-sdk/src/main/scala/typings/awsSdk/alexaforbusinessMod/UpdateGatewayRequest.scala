@@ -28,34 +28,25 @@ trait UpdateGatewayRequest extends StObject {
 }
 object UpdateGatewayRequest {
   
-  @scala.inline
-  def apply(GatewayArn: Arn): UpdateGatewayRequest = {
+  inline def apply(GatewayArn: Arn): UpdateGatewayRequest = {
     val __obj = js.Dynamic.literal(GatewayArn = GatewayArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGatewayRequestMutableBuilder[Self <: UpdateGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: GatewayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: GatewayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setGatewayArn(value: Arn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
+    inline def setGatewayArn(value: Arn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: GatewayName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GatewayName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSoftwareVersion(value: GatewayVersion): Self = StObject.set(x, "SoftwareVersion", value.asInstanceOf[js.Any])
+    inline def setSoftwareVersion(value: GatewayVersion): Self = StObject.set(x, "SoftwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareVersionUndefined: Self = StObject.set(x, "SoftwareVersion", js.undefined)
+    inline def setSoftwareVersionUndefined: Self = StObject.set(x, "SoftwareVersion", js.undefined)
   }
 }

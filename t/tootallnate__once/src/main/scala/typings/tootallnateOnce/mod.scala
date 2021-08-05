@@ -7,15 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](emitter: EventEmitter, name: String): CancelablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[T]]
+  inline def apply[T](emitter: EventEmitter, name: String): CancelablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[T]]
   
   @JSImport("@tootallnate/once", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def spread[T /* <: js.Array[js.Any] */](emitter: EventEmitter, name: String): CancelablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[T]]
+  inline def spread[T /* <: js.Array[js.Any] */](emitter: EventEmitter, name: String): CancelablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[T]]
   
   type CancelFunction = js.Function0[Unit]
   

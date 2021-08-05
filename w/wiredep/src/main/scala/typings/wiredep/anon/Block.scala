@@ -18,22 +18,17 @@ trait Block extends StObject {
 }
 object Block {
   
-  @scala.inline
-  def apply(block: RegExp, detect: TypeOfBowerFile, replace: AnotherTypeOfBowerFile): Block = {
+  inline def apply(block: RegExp, detect: TypeOfBowerFile, replace: AnotherTypeOfBowerFile): Block = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], detect = detect.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setBlock(value: RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect(value: TypeOfBowerFile): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
+    inline def setDetect(value: TypeOfBowerFile): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: AnotherTypeOfBowerFile): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: AnotherTypeOfBowerFile): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
   }
 }

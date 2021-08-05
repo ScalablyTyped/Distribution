@@ -14,19 +14,15 @@ trait BatchDeleteJobsRequest extends StObject {
 }
 object BatchDeleteJobsRequest {
   
-  @scala.inline
-  def apply(): BatchDeleteJobsRequest = {
+  inline def apply(): BatchDeleteJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteJobsRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteJobsRequestMutableBuilder[Self <: BatchDeleteJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteJobsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

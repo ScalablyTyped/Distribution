@@ -12,8 +12,7 @@ trait PositionedList
 }
 object PositionedList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _element: js.Any,
     _fullStart: js.Any,
     _parent: js.Any,
@@ -42,10 +41,8 @@ object PositionedList {
     __obj.asInstanceOf[PositionedList]
   }
   
-  @scala.inline
-  implicit class PositionedListMutableBuilder[Self <: PositionedList] (val x: Self) extends AnyVal {
+  extension [Self <: PositionedList](x: Self) {
     
-    @scala.inline
-    def setList(value: () => ISyntaxList): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => ISyntaxList): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
   }
 }

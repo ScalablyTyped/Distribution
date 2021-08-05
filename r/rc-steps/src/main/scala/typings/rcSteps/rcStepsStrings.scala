@@ -9,49 +9,41 @@ object rcStepsStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait error
     extends StObject
        with Status
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait finish
     extends StObject
        with Status
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
+  inline def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait navigation extends StObject
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
   sealed trait process
     extends StObject
        with Status
-  @scala.inline
-  def process: process = "process".asInstanceOf[process]
+  inline def process: process = "process".asInstanceOf[process]
   
   @js.native
   sealed trait small extends StObject
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait wait

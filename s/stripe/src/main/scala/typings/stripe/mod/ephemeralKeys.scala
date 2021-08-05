@@ -15,21 +15,17 @@ object ephemeralKeys {
   }
   object IAssociatedObject {
     
-    @scala.inline
-    def apply(id: String, `type`: String): IAssociatedObject = {
+    inline def apply(id: String, `type`: String): IAssociatedObject = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAssociatedObject]
     }
     
-    @scala.inline
-    implicit class IAssociatedObjectMutableBuilder[Self <: IAssociatedObject] (val x: Self) extends AnyVal {
+    extension [Self <: IAssociatedObject](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,17 +38,14 @@ object ephemeralKeys {
   }
   object ICustomer {
     
-    @scala.inline
-    def apply(customer: String): ICustomer = {
+    inline def apply(customer: String): ICustomer = {
       val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomer]
     }
     
-    @scala.inline
-    implicit class ICustomerMutableBuilder[Self <: ICustomer] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomer](x: Self) {
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,8 +68,7 @@ object ephemeralKeys {
   }
   object IEphemeralKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       associated_objects: js.Array[IAssociatedObject],
       created: Double,
       expires: Double,
@@ -89,29 +81,21 @@ object ephemeralKeys {
       __obj.asInstanceOf[IEphemeralKey]
     }
     
-    @scala.inline
-    implicit class IEphemeralKeyMutableBuilder[Self <: IEphemeralKey] (val x: Self) extends AnyVal {
+    extension [Self <: IEphemeralKey](x: Self) {
       
-      @scala.inline
-      def setAssociated_objects(value: js.Array[IAssociatedObject]): Self = StObject.set(x, "associated_objects", value.asInstanceOf[js.Any])
+      inline def setAssociated_objects(value: js.Array[IAssociatedObject]): Self = StObject.set(x, "associated_objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociated_objectsVarargs(value: IAssociatedObject*): Self = StObject.set(x, "associated_objects", js.Array(value :_*))
+      inline def setAssociated_objectsVarargs(value: IAssociatedObject*): Self = StObject.set(x, "associated_objects", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: ephemeral_key): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ephemeral_key): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,17 +108,14 @@ object ephemeralKeys {
   }
   object IStripeVersion {
     
-    @scala.inline
-    def apply(stripe_version: String): IStripeVersion = {
+    inline def apply(stripe_version: String): IStripeVersion = {
       val __obj = js.Dynamic.literal(stripe_version = stripe_version.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStripeVersion]
     }
     
-    @scala.inline
-    implicit class IStripeVersionMutableBuilder[Self <: IStripeVersion] (val x: Self) extends AnyVal {
+    extension [Self <: IStripeVersion](x: Self) {
       
-      @scala.inline
-      def setStripe_version(value: String): Self = StObject.set(x, "stripe_version", value.asInstanceOf[js.Any])
+      inline def setStripe_version(value: String): Self = StObject.set(x, "stripe_version", value.asInstanceOf[js.Any])
     }
   }
 }

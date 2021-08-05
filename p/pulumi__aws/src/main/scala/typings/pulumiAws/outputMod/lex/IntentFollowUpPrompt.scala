@@ -20,19 +20,15 @@ trait IntentFollowUpPrompt extends StObject {
 }
 object IntentFollowUpPrompt {
   
-  @scala.inline
-  def apply(prompt: IntentFollowUpPromptPrompt, rejectionStatement: IntentFollowUpPromptRejectionStatement): IntentFollowUpPrompt = {
+  inline def apply(prompt: IntentFollowUpPromptPrompt, rejectionStatement: IntentFollowUpPromptRejectionStatement): IntentFollowUpPrompt = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any], rejectionStatement = rejectionStatement.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentFollowUpPrompt]
   }
   
-  @scala.inline
-  implicit class IntentFollowUpPromptMutableBuilder[Self <: IntentFollowUpPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: IntentFollowUpPrompt](x: Self) {
     
-    @scala.inline
-    def setPrompt(value: IntentFollowUpPromptPrompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: IntentFollowUpPromptPrompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectionStatement(value: IntentFollowUpPromptRejectionStatement): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
+    inline def setRejectionStatement(value: IntentFollowUpPromptRejectionStatement): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
   }
 }

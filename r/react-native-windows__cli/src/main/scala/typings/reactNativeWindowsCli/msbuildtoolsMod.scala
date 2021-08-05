@@ -28,11 +28,9 @@ object msbuildtoolsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def findAvailableVersion(buildArch: BuildArch, verbose: Boolean): MSBuildTools = (^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableVersion")(buildArch.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[MSBuildTools]
+    inline def findAvailableVersion(buildArch: BuildArch, verbose: Boolean): MSBuildTools = (^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableVersion")(buildArch.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[MSBuildTools]
     
-    @scala.inline
-    def getAllAvailableUAPVersions(): js.Array[typings.reactNativeWindowsCli.versionMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAvailableUAPVersions")().asInstanceOf[js.Array[typings.reactNativeWindowsCli.versionMod.default]]
+    inline def getAllAvailableUAPVersions(): js.Array[typings.reactNativeWindowsCli.versionMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAvailableUAPVersions")().asInstanceOf[js.Array[typings.reactNativeWindowsCli.versionMod.default]]
   }
   
   @js.native

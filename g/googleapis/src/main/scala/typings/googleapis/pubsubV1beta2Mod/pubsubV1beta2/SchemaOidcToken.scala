@@ -31,25 +31,19 @@ trait SchemaOidcToken extends StObject {
 }
 object SchemaOidcToken {
   
-  @scala.inline
-  def apply(): SchemaOidcToken = {
+  inline def apply(): SchemaOidcToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOidcToken]
   }
   
-  @scala.inline
-  implicit class SchemaOidcTokenMutableBuilder[Self <: SchemaOidcToken] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOidcToken](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+    inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait NamedRange extends StObject {
 }
 object NamedRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getName: () => String,
     getRange: () => Range,
     remove: () => Unit,
@@ -35,22 +34,16 @@ object NamedRange {
     __obj.asInstanceOf[NamedRange]
   }
   
-  @scala.inline
-  implicit class NamedRangeMutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
+  extension [Self <: NamedRange](x: Self) {
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+    inline def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetName(value: String => NamedRange): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => NamedRange): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRange(value: Range => NamedRange): Self = StObject.set(x, "setRange", js.Any.fromFunction1(value))
+    inline def setSetRange(value: Range => NamedRange): Self = StObject.set(x, "setRange", js.Any.fromFunction1(value))
   }
 }

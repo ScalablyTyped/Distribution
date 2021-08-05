@@ -11,20 +11,17 @@ object nodeZopfliStrings {
   sealed trait deflate
     extends StObject
        with Format
-  @scala.inline
-  def deflate: deflate = "deflate".asInstanceOf[deflate]
+  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
   
   @js.native
   sealed trait gzip
     extends StObject
        with Format
-  @scala.inline
-  def gzip: gzip = "gzip".asInstanceOf[gzip]
+  inline def gzip: gzip = "gzip".asInstanceOf[gzip]
   
   @js.native
   sealed trait zlib
     extends StObject
        with Format
-  @scala.inline
-  def zlib: zlib = "zlib".asInstanceOf[zlib]
+  inline def zlib: zlib = "zlib".asInstanceOf[zlib]
 }

@@ -43,8 +43,7 @@ object MicroflowObjectCollection {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowObjectCollection]
+  inline def create(model: IModel): MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowObjectCollection]
   
   /**
     * Creates and returns a new MicroflowObjectCollection instance in the SDK and on the server.
@@ -52,8 +51,7 @@ object MicroflowObjectCollection {
     * of the parent LoopedActivity element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInLoopedActivityUnderObjectCollection(container: LoopedActivity): MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoopedActivityUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowObjectCollection]
+  inline def createInLoopedActivityUnderObjectCollection(container: LoopedActivity): MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoopedActivityUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowObjectCollection]
   
   /**
     * Creates and returns a new MicroflowObjectCollection instance in the SDK and on the server.
@@ -61,20 +59,17 @@ object MicroflowObjectCollection {
     * of the parent MicroflowBase element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowBaseUnderObjectCollection(container: MicroflowBase): MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowObjectCollection]
+  inline def createInMicroflowBaseUnderObjectCollection(container: MicroflowBase): MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowObjectCollection]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowObjectCollection.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowObjectCollection.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

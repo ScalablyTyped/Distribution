@@ -19,43 +19,31 @@ trait UserData
 }
 object UserData {
   
-  @scala.inline
-  def apply(created: String, eTag: String, id: String, name: String, updated: String): UserData = {
+  inline def apply(created: String, eTag: String, id: String, name: String, updated: String): UserData = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserData]
   }
   
-  @scala.inline
-  implicit class UserDataMutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
+  extension [Self <: UserData](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNull: Self = StObject.set(x, "email", null)
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
+    inline def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUrlNull: Self = StObject.set(x, "profileUrl", null)
+    inline def setProfileUrlNull: Self = StObject.set(x, "profileUrl", null)
     
-    @scala.inline
-    def setProfileUrlUndefined: Self = StObject.set(x, "profileUrl", js.undefined)
+    inline def setProfileUrlUndefined: Self = StObject.set(x, "profileUrl", js.undefined)
   }
 }

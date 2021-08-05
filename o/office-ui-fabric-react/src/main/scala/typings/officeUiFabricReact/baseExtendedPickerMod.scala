@@ -35,7 +35,7 @@ object baseExtendedPickerMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MBaseExtendedPicker(newProps: P): Unit = js.native
     
-    var _addProcessedItem: js.Any = js.native
+    /* private */ var _addProcessedItem: js.Any = js.native
     
     /* protected */ def _onSelectedItemsChanged(): Unit = js.native
     
@@ -50,7 +50,7 @@ object baseExtendedPickerMod {
       *
       * Called when the suggestions is shown or closed
       */
-    var _onSuggestionsShownOrHidden: js.Any = js.native
+    /* private */ var _onSuggestionsShownOrHidden: js.Any = js.native
     
     /* protected */ def canAddItems(): Boolean = js.native
     
@@ -61,7 +61,7 @@ object baseExtendedPickerMod {
     
     var floatingPicker: RefObject[BaseFloatingPicker[T, IBaseFloatingPickerProps[T]]] = js.native
     
-    var floatingPickerProps: IBaseFloatingPickerProps[T] = js.native
+    /* protected */ var floatingPickerProps: IBaseFloatingPickerProps[T] = js.native
     
     /** Sets focus to the input. */
     /* CompleteClass */
@@ -69,7 +69,7 @@ object baseExtendedPickerMod {
     
     val highlightedItems: js.Array[T] = js.native
     
-    var input: RefObject[Autofill] = js.native
+    /* protected */ var input: RefObject[Autofill] = js.native
     
     val inputElement: HTMLInputElement | Null = js.native
     
@@ -92,13 +92,13 @@ object baseExtendedPickerMod {
     
     /* protected */ def renderSelectedItemsList(): Element = js.native
     
-    var root: RefObject[HTMLDivElement] = js.native
+    /* protected */ var root: RefObject[HTMLDivElement] = js.native
     
     var selectedItemsList: RefObject[BaseSelectedItemsList[T, IBaseSelectedItemsListProps[T]]] = js.native
     
-    var selectedItemsListProps: IBaseSelectedItemsListProps[T] = js.native
+    /* protected */ var selectedItemsListProps: IBaseSelectedItemsListProps[T] = js.native
     
-    var selection: Selection[IObjectWithKey] = js.native
+    /* protected */ var selection: Selection[IObjectWithKey] = js.native
   }
   
   trait IBaseExtendedPickerState[T] extends StObject {
@@ -111,38 +111,28 @@ object baseExtendedPickerMod {
   }
   object IBaseExtendedPickerState {
     
-    @scala.inline
-    def apply[T](): IBaseExtendedPickerState[T] = {
+    inline def apply[T](): IBaseExtendedPickerState[T] = {
       val __obj = js.Dynamic.literal(queryString = null, selectedItems = null, suggestionItems = null)
       __obj.asInstanceOf[IBaseExtendedPickerState[T]]
     }
     
-    @scala.inline
-    implicit class IBaseExtendedPickerStateMutableBuilder[Self <: IBaseExtendedPickerState[?], T] (val x: Self & IBaseExtendedPickerState[T]) extends AnyVal {
+    extension [Self <: IBaseExtendedPickerState[?], T](x: Self & IBaseExtendedPickerState[T]) {
       
-      @scala.inline
-      def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+      inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringNull: Self = StObject.set(x, "queryString", null)
+      inline def setQueryStringNull: Self = StObject.set(x, "queryString", null)
       
-      @scala.inline
-      def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemsNull: Self = StObject.set(x, "selectedItems", null)
+      inline def setSelectedItemsNull: Self = StObject.set(x, "selectedItems", null)
       
-      @scala.inline
-      def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggestionItems(value: js.Array[T]): Self = StObject.set(x, "suggestionItems", value.asInstanceOf[js.Any])
+      inline def setSuggestionItems(value: js.Array[T]): Self = StObject.set(x, "suggestionItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionItemsNull: Self = StObject.set(x, "suggestionItems", null)
+      inline def setSuggestionItemsNull: Self = StObject.set(x, "suggestionItems", null)
       
-      @scala.inline
-      def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value :_*))
+      inline def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value :_*))
     }
   }
 }

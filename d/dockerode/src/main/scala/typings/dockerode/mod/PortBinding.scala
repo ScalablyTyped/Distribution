@@ -12,25 +12,19 @@ trait PortBinding extends StObject {
 }
 object PortBinding {
   
-  @scala.inline
-  def apply(): PortBinding = {
+  inline def apply(): PortBinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortBinding]
   }
   
-  @scala.inline
-  implicit class PortBindingMutableBuilder[Self <: PortBinding] (val x: Self) extends AnyVal {
+  extension [Self <: PortBinding](x: Self) {
     
-    @scala.inline
-    def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
+    inline def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIpUndefined: Self = StObject.set(x, "HostIp", js.undefined)
+    inline def setHostIpUndefined: Self = StObject.set(x, "HostIp", js.undefined)
     
-    @scala.inline
-    def setHostPort(value: String): Self = StObject.set(x, "HostPort", value.asInstanceOf[js.Any])
+    inline def setHostPort(value: String): Self = StObject.set(x, "HostPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPortUndefined: Self = StObject.set(x, "HostPort", js.undefined)
+    inline def setHostPortUndefined: Self = StObject.set(x, "HostPort", js.undefined)
   }
 }

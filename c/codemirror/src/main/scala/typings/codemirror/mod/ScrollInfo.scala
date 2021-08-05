@@ -20,8 +20,7 @@ trait ScrollInfo extends StObject {
 }
 object ScrollInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientHeight: js.Any,
     clientWidth: js.Any,
     height: js.Any,
@@ -33,25 +32,18 @@ object ScrollInfo {
     __obj.asInstanceOf[ScrollInfo]
   }
   
-  @scala.inline
-  implicit class ScrollInfoMutableBuilder[Self <: ScrollInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollInfo](x: Self) {
     
-    @scala.inline
-    def setClientHeight(value: js.Any): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+    inline def setClientHeight(value: js.Any): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientWidth(value: js.Any): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+    inline def setClientWidth(value: js.Any): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

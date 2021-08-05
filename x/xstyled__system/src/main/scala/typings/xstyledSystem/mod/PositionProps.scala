@@ -14,27 +14,22 @@ trait PositionProps extends StObject {
 }
 object PositionProps {
   
-  @scala.inline
-  def apply(): PositionProps = {
+  inline def apply(): PositionProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionProps]
   }
   
-  @scala.inline
-  implicit class PositionPropsMutableBuilder[Self <: PositionProps] (val x: Self) extends AnyVal {
+  extension [Self <: PositionProps](x: Self) {
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any
         ]
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositionVarargs(
+    inline def setPositionVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any)*
     ): Self = StObject.set(x, "position", js.Array(value :_*))
   }

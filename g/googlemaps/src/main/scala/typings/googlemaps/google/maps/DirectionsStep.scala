@@ -15,8 +15,7 @@ trait DirectionsStep
 }
 object DirectionsStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Distance,
     duration: Duration,
     end_location: LatLng,
@@ -31,13 +30,10 @@ object DirectionsStep {
     __obj.asInstanceOf[DirectionsStep]
   }
   
-  @scala.inline
-  implicit class DirectionsStepMutableBuilder[Self <: DirectionsStep] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsStep](x: Self) {
     
-    @scala.inline
-    def setSteps(value: js.Array[BaseDirectionsStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[BaseDirectionsStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: BaseDirectionsStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: BaseDirectionsStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

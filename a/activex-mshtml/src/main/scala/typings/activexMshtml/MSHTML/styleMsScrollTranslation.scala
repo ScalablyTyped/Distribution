@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsScrollTranslation extends StObject
 object styleMsScrollTranslation {
   
-  @scala.inline
-  def styleMsScrollTranslationNone: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsScrollTranslationNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsScrollTranslationNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsScrollTranslationNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsScrollTranslationVtoH: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsScrollTranslationVtoH: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsScrollTranslation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsScrollTranslation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

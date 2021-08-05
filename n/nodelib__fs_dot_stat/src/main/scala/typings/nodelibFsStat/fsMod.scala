@@ -23,10 +23,8 @@ object fsMod {
   @js.native
   val FILE_SYSTEM_ADAPTER: FileSystemAdapter = js.native
   
-  @scala.inline
-  def createFileSystemAdapter(): FileSystemAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemAdapter")().asInstanceOf[FileSystemAdapter]
-  @scala.inline
-  def createFileSystemAdapter(fsMethods: PartialFileSystemAdapter): FileSystemAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemAdapter")(fsMethods.asInstanceOf[js.Any]).asInstanceOf[FileSystemAdapter]
+  inline def createFileSystemAdapter(): FileSystemAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemAdapter")().asInstanceOf[FileSystemAdapter]
+  inline def createFileSystemAdapter(fsMethods: PartialFileSystemAdapter): FileSystemAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemAdapter")(fsMethods.asInstanceOf[js.Any]).asInstanceOf[FileSystemAdapter]
   
   trait FileSystemAdapter extends StObject {
     
@@ -46,26 +44,20 @@ object fsMod {
   }
   object FileSystemAdapter {
     
-    @scala.inline
-    def apply(lstat: Typeoflstat, lstatSync: /* path */ PathLike => Stats, stat: Typeofstat, statSync: FnCall): FileSystemAdapter = {
+    inline def apply(lstat: Typeoflstat, lstatSync: /* path */ PathLike => Stats, stat: Typeofstat, statSync: FnCall): FileSystemAdapter = {
       val __obj = js.Dynamic.literal(lstat = lstat.asInstanceOf[js.Any], lstatSync = js.Any.fromFunction1(lstatSync), stat = stat.asInstanceOf[js.Any], statSync = statSync.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileSystemAdapter]
     }
     
-    @scala.inline
-    implicit class FileSystemAdapterMutableBuilder[Self <: FileSystemAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemAdapter](x: Self) {
       
-      @scala.inline
-      def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
+      inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
+      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+      inline def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
     }
   }
 }

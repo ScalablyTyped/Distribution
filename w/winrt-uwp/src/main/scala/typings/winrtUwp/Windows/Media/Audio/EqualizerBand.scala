@@ -18,22 +18,17 @@ trait EqualizerBand extends StObject {
 }
 object EqualizerBand {
   
-  @scala.inline
-  def apply(bandwidth: Double, frequencyCenter: Double, gain: Double): EqualizerBand = {
+  inline def apply(bandwidth: Double, frequencyCenter: Double, gain: Double): EqualizerBand = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], frequencyCenter = frequencyCenter.asInstanceOf[js.Any], gain = gain.asInstanceOf[js.Any])
     __obj.asInstanceOf[EqualizerBand]
   }
   
-  @scala.inline
-  implicit class EqualizerBandMutableBuilder[Self <: EqualizerBand] (val x: Self) extends AnyVal {
+  extension [Self <: EqualizerBand](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyCenter(value: Double): Self = StObject.set(x, "frequencyCenter", value.asInstanceOf[js.Any])
+    inline def setFrequencyCenter(value: Double): Self = StObject.set(x, "frequencyCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+    inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
   }
 }

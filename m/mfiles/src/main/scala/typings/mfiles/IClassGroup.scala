@@ -23,8 +23,7 @@ trait IClassGroup extends StObject {
 }
 object IClassGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddMember: Double => Unit,
     Clone: () => IClassGroup,
     ID: Double,
@@ -37,28 +36,20 @@ object IClassGroup {
     __obj.asInstanceOf[IClassGroup]
   }
   
-  @scala.inline
-  implicit class IClassGroupMutableBuilder[Self <: IClassGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IClassGroup](x: Self) {
     
-    @scala.inline
-    def setAddMember(value: Double => Unit): Self = StObject.set(x, "AddMember", js.Any.fromFunction1(value))
+    inline def setAddMember(value: Double => Unit): Self = StObject.set(x, "AddMember", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClone(value: () => IClassGroup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IClassGroup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: IIDs): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: IIDs): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMember(value: Double => Unit): Self = StObject.set(x, "RemoveMember", js.Any.fromFunction1(value))
+    inline def setRemoveMember(value: Double => Unit): Self = StObject.set(x, "RemoveMember", js.Any.fromFunction1(value))
   }
 }

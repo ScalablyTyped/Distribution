@@ -19,19 +19,15 @@ trait SchemaMutualTls extends StObject {
 }
 object SchemaMutualTls {
   
-  @scala.inline
-  def apply(): SchemaMutualTls = {
+  inline def apply(): SchemaMutualTls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMutualTls]
   }
   
-  @scala.inline
-  implicit class SchemaMutualTlsMutableBuilder[Self <: SchemaMutualTls] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMutualTls](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

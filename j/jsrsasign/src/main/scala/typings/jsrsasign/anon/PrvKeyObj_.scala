@@ -13,19 +13,15 @@ trait PrvKeyObj_ extends StObject {
 }
 object PrvKeyObj_ {
   
-  @scala.inline
-  def apply(prvKeyObj: RSAKey, pubKeyObj: RSAKey): PrvKeyObj_ = {
+  inline def apply(prvKeyObj: RSAKey, pubKeyObj: RSAKey): PrvKeyObj_ = {
     val __obj = js.Dynamic.literal(prvKeyObj = prvKeyObj.asInstanceOf[js.Any], pubKeyObj = pubKeyObj.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrvKeyObj_]
   }
   
-  @scala.inline
-  implicit class PrvKeyObj_MutableBuilder[Self <: PrvKeyObj_] (val x: Self) extends AnyVal {
+  extension [Self <: PrvKeyObj_](x: Self) {
     
-    @scala.inline
-    def setPrvKeyObj(value: RSAKey): Self = StObject.set(x, "prvKeyObj", value.asInstanceOf[js.Any])
+    inline def setPrvKeyObj(value: RSAKey): Self = StObject.set(x, "prvKeyObj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubKeyObj(value: RSAKey): Self = StObject.set(x, "pubKeyObj", value.asInstanceOf[js.Any])
+    inline def setPubKeyObj(value: RSAKey): Self = StObject.set(x, "pubKeyObj", value.asInstanceOf[js.Any])
   }
 }

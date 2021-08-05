@@ -27,25 +27,19 @@ trait SchemaAccountAdsLink extends StObject {
 }
 object SchemaAccountAdsLink {
   
-  @scala.inline
-  def apply(): SchemaAccountAdsLink = {
+  inline def apply(): SchemaAccountAdsLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountAdsLink]
   }
   
-  @scala.inline
-  implicit class SchemaAccountAdsLinkMutableBuilder[Self <: SchemaAccountAdsLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountAdsLink](x: Self) {
     
-    @scala.inline
-    def setAdsId(value: String): Self = StObject.set(x, "adsId", value.asInstanceOf[js.Any])
+    inline def setAdsId(value: String): Self = StObject.set(x, "adsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdsIdUndefined: Self = StObject.set(x, "adsId", js.undefined)
+    inline def setAdsIdUndefined: Self = StObject.set(x, "adsId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

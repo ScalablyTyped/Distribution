@@ -18,22 +18,17 @@ trait SpeechRecognizerTimeouts extends StObject {
 }
 object SpeechRecognizerTimeouts {
   
-  @scala.inline
-  def apply(babbleTimeout: Double, endSilenceTimeout: Double, initialSilenceTimeout: Double): SpeechRecognizerTimeouts = {
+  inline def apply(babbleTimeout: Double, endSilenceTimeout: Double, initialSilenceTimeout: Double): SpeechRecognizerTimeouts = {
     val __obj = js.Dynamic.literal(babbleTimeout = babbleTimeout.asInstanceOf[js.Any], endSilenceTimeout = endSilenceTimeout.asInstanceOf[js.Any], initialSilenceTimeout = initialSilenceTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognizerTimeouts]
   }
   
-  @scala.inline
-  implicit class SpeechRecognizerTimeoutsMutableBuilder[Self <: SpeechRecognizerTimeouts] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognizerTimeouts](x: Self) {
     
-    @scala.inline
-    def setBabbleTimeout(value: Double): Self = StObject.set(x, "babbleTimeout", value.asInstanceOf[js.Any])
+    inline def setBabbleTimeout(value: Double): Self = StObject.set(x, "babbleTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSilenceTimeout(value: Double): Self = StObject.set(x, "endSilenceTimeout", value.asInstanceOf[js.Any])
+    inline def setEndSilenceTimeout(value: Double): Self = StObject.set(x, "endSilenceTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSilenceTimeout(value: Double): Self = StObject.set(x, "initialSilenceTimeout", value.asInstanceOf[js.Any])
+    inline def setInitialSilenceTimeout(value: Double): Self = StObject.set(x, "initialSilenceTimeout", value.asInstanceOf[js.Any])
   }
 }

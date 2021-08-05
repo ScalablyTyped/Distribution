@@ -18,25 +18,19 @@ trait FailedQueuedPurchaseDeletion extends StObject {
 }
 object FailedQueuedPurchaseDeletion {
   
-  @scala.inline
-  def apply(): FailedQueuedPurchaseDeletion = {
+  inline def apply(): FailedQueuedPurchaseDeletion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedQueuedPurchaseDeletion]
   }
   
-  @scala.inline
-  implicit class FailedQueuedPurchaseDeletionMutableBuilder[Self <: FailedQueuedPurchaseDeletion] (val x: Self) extends AnyVal {
+  extension [Self <: FailedQueuedPurchaseDeletion](x: Self) {
     
-    @scala.inline
-    def setError(value: DeleteQueuedReservedInstancesError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: DeleteQueuedReservedInstancesError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
+    inline def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
   }
 }

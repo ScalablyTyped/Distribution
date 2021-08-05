@@ -15,8 +15,6 @@ object offsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOffset(channel: PolarPositionChannel, markDef: MarkDef[Mark, SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getOffset")(channel.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
-  @scala.inline
-  def getOffset(channel: PositionChannel, markDef: MarkDef[Mark, SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getOffset")(channel.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def getOffset(channel: PolarPositionChannel, markDef: MarkDef[Mark, SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getOffset")(channel.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def getOffset(channel: PositionChannel, markDef: MarkDef[Mark, SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getOffset")(channel.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
 }

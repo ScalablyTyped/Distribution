@@ -13,19 +13,15 @@ trait LifecyclePolicy extends StObject {
 }
 object LifecyclePolicy {
   
-  @scala.inline
-  def apply(): LifecyclePolicy = {
+  inline def apply(): LifecyclePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecyclePolicy]
   }
   
-  @scala.inline
-  implicit class LifecyclePolicyMutableBuilder[Self <: LifecyclePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: LifecyclePolicy](x: Self) {
     
-    @scala.inline
-    def setTransitionToIA(value: TransitionToIARules): Self = StObject.set(x, "TransitionToIA", value.asInstanceOf[js.Any])
+    inline def setTransitionToIA(value: TransitionToIARules): Self = StObject.set(x, "TransitionToIA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionToIAUndefined: Self = StObject.set(x, "TransitionToIA", js.undefined)
+    inline def setTransitionToIAUndefined: Self = StObject.set(x, "TransitionToIA", js.undefined)
   }
 }

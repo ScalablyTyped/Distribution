@@ -15,20 +15,16 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: String, latlng: LatLng_): Address = {
+    inline def apply(address: String, latlng: LatLng_): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatlng(value: LatLng_): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+      inline def setLatlng(value: LatLng_): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,20 +34,16 @@ object anon {
   }
   object Results {
     
-    @scala.inline
-    def apply(results: js.Array[js.Any]): Results = {
+    inline def apply(results: js.Array[js.Any]): Results = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
 }

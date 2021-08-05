@@ -13,19 +13,15 @@ trait DescribePlatformVersionResult extends StObject {
 }
 object DescribePlatformVersionResult {
   
-  @scala.inline
-  def apply(): DescribePlatformVersionResult = {
+  inline def apply(): DescribePlatformVersionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePlatformVersionResult]
   }
   
-  @scala.inline
-  implicit class DescribePlatformVersionResultMutableBuilder[Self <: DescribePlatformVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePlatformVersionResult](x: Self) {
     
-    @scala.inline
-    def setPlatformDescription(value: PlatformDescription): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
+    inline def setPlatformDescription(value: PlatformDescription): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformDescriptionUndefined: Self = StObject.set(x, "PlatformDescription", js.undefined)
+    inline def setPlatformDescriptionUndefined: Self = StObject.set(x, "PlatformDescription", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait BucketStore[T, Q] extends StObject {
 }
 object BucketStore {
   
-  @scala.inline
-  def apply[T, Q](
+  inline def apply[T, Q](
     find: (Q, EntitiesCallback[BucketObject[T], Error | Null]) => Unit,
     get: (EntityId, EntityCallback[BucketObject[T], Error | Null]) => Unit,
     remove: (EntityId, js.Function0[Unit]) => Unit,
@@ -33,19 +32,14 @@ object BucketStore {
     __obj.asInstanceOf[BucketStore[T, Q]]
   }
   
-  @scala.inline
-  implicit class BucketStoreMutableBuilder[Self <: BucketStore[?, ?], T, Q] (val x: Self & (BucketStore[T, Q])) extends AnyVal {
+  extension [Self <: BucketStore[?, ?], T, Q](x: Self & (BucketStore[T, Q])) {
     
-    @scala.inline
-    def setFind(value: (Q, EntitiesCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
+    inline def setFind(value: (Q, EntitiesCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGet(value: (EntityId, EntityCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (EntityId, EntityCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: (EntityId, js.Function0[Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (EntityId, js.Function0[Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: (EntityId, T, Boolean, EntityCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
+    inline def setUpdate(value: (EntityId, T, Boolean, EntityCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
   }
 }

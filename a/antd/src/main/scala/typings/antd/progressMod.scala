@@ -21,7 +21,6 @@ object progressMod {
     @JSImport("antd/lib/progress", "default.defaultProps")
     @js.native
     def defaultProps: GapDegree = js.native
-    @scala.inline
-    def defaultProps_=(x: GapDegree): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: GapDegree): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

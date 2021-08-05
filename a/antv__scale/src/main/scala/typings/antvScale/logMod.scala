@@ -24,6 +24,6 @@ object logMod {
     
     /* protected */ def getScalePercent(value: Double): js.Any = js.native
     
-    var positiveMin: js.Any = js.native
+    /* private */ var positiveMin: js.Any = js.native
   }
 }

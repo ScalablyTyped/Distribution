@@ -8,11 +8,9 @@ object connectAzuretablesStrings {
   
   @js.native
   sealed trait SET extends StObject
-  @scala.inline
-  def SET: SET = "SET".asInstanceOf[SET]
+  inline def SET: SET = "SET".asInstanceOf[SET]
   
   @js.native
   sealed trait TOUCH extends StObject
-  @scala.inline
-  def TOUCH: TOUCH = "TOUCH".asInstanceOf[TOUCH]
+  inline def TOUCH: TOUCH = "TOUCH".asInstanceOf[TOUCH]
 }

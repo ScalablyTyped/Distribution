@@ -48,17 +48,12 @@ object drawMod {
          with DrawEventType
   }
   
-  @scala.inline
-  def createBox(): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")().asInstanceOf[GeometryFunction]
+  inline def createBox(): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")().asInstanceOf[GeometryFunction]
   
-  @scala.inline
-  def createRegularPolygon(): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")().asInstanceOf[GeometryFunction]
-  @scala.inline
-  def createRegularPolygon(opt_sides: Double): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any]).asInstanceOf[GeometryFunction]
-  @scala.inline
-  def createRegularPolygon(opt_sides: Double, opt_angle: Double): GeometryFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[GeometryFunction]
-  @scala.inline
-  def createRegularPolygon(opt_sides: Unit, opt_angle: Double): GeometryFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[GeometryFunction]
+  inline def createRegularPolygon(): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")().asInstanceOf[GeometryFunction]
+  inline def createRegularPolygon(opt_sides: Double): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any]).asInstanceOf[GeometryFunction]
+  inline def createRegularPolygon(opt_sides: Double, opt_angle: Double): GeometryFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[GeometryFunction]
+  inline def createRegularPolygon(opt_sides: Unit, opt_angle: Double): GeometryFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[GeometryFunction]
   
   @js.native
   trait Draw
@@ -185,124 +180,87 @@ object drawMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(`type`: GeometryType): Options = {
+    inline def apply(`type`: GeometryType): Options = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
+      inline def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickToleranceUndefined: Self = StObject.set(x, "clickTolerance", js.undefined)
+      inline def setClickToleranceUndefined: Self = StObject.set(x, "clickTolerance", js.undefined)
       
-      @scala.inline
-      def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setDragVertexDelay(value: Double): Self = StObject.set(x, "dragVertexDelay", value.asInstanceOf[js.Any])
+      inline def setDragVertexDelay(value: Double): Self = StObject.set(x, "dragVertexDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragVertexDelayUndefined: Self = StObject.set(x, "dragVertexDelay", js.undefined)
+      inline def setDragVertexDelayUndefined: Self = StObject.set(x, "dragVertexDelay", js.undefined)
       
-      @scala.inline
-      def setFeatures(
+      inline def setFeatures(
         value: typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
       ): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      @scala.inline
-      def setFinishCondition(value: Condition): Self = StObject.set(x, "finishCondition", value.asInstanceOf[js.Any])
+      inline def setFinishCondition(value: Condition): Self = StObject.set(x, "finishCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishConditionUndefined: Self = StObject.set(x, "finishCondition", js.undefined)
+      inline def setFinishConditionUndefined: Self = StObject.set(x, "finishCondition", js.undefined)
       
-      @scala.inline
-      def setFreehand(value: Boolean): Self = StObject.set(x, "freehand", value.asInstanceOf[js.Any])
+      inline def setFreehand(value: Boolean): Self = StObject.set(x, "freehand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreehandCondition(value: Condition): Self = StObject.set(x, "freehandCondition", value.asInstanceOf[js.Any])
+      inline def setFreehandCondition(value: Condition): Self = StObject.set(x, "freehandCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreehandConditionUndefined: Self = StObject.set(x, "freehandCondition", js.undefined)
+      inline def setFreehandConditionUndefined: Self = StObject.set(x, "freehandCondition", js.undefined)
       
-      @scala.inline
-      def setFreehandUndefined: Self = StObject.set(x, "freehand", js.undefined)
+      inline def setFreehandUndefined: Self = StObject.set(x, "freehand", js.undefined)
       
-      @scala.inline
-      def setGeometryFunction(
+      inline def setGeometryFunction(
         value: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], /* p2 */ js.UndefOr[typings.ol.projectionMod.default]) => typings.ol.simpleGeometryMod.default
       ): Self = StObject.set(x, "geometryFunction", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGeometryFunctionUndefined: Self = StObject.set(x, "geometryFunction", js.undefined)
+      inline def setGeometryFunctionUndefined: Self = StObject.set(x, "geometryFunction", js.undefined)
       
-      @scala.inline
-      def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+      inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+      inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
       
-      @scala.inline
-      def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
+      inline def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPointsUndefined: Self = StObject.set(x, "maxPoints", js.undefined)
+      inline def setMaxPointsUndefined: Self = StObject.set(x, "maxPoints", js.undefined)
       
-      @scala.inline
-      def setMinPoints(value: Double): Self = StObject.set(x, "minPoints", value.asInstanceOf[js.Any])
+      inline def setMinPoints(value: Double): Self = StObject.set(x, "minPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPointsUndefined: Self = StObject.set(x, "minPoints", js.undefined)
+      inline def setMinPointsUndefined: Self = StObject.set(x, "minPoints", js.undefined)
       
-      @scala.inline
-      def setSnapTolerance(value: Double): Self = StObject.set(x, "snapTolerance", value.asInstanceOf[js.Any])
+      inline def setSnapTolerance(value: Double): Self = StObject.set(x, "snapTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapToleranceUndefined: Self = StObject.set(x, "snapTolerance", js.undefined)
+      inline def setSnapToleranceUndefined: Self = StObject.set(x, "snapTolerance", js.undefined)
       
-      @scala.inline
-      def setSource(value: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setStopClick(value: Boolean): Self = StObject.set(x, "stopClick", value.asInstanceOf[js.Any])
+      inline def setStopClick(value: Boolean): Self = StObject.set(x, "stopClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopClickUndefined: Self = StObject.set(x, "stopClick", js.undefined)
+      inline def setStopClickUndefined: Self = StObject.set(x, "stopClick", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleLike): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleLike): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+      inline def setStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: GeometryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: GeometryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+      inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+      inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
     }
   }
   

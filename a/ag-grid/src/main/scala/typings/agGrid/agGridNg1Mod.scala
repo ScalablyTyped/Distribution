@@ -10,6 +10,5 @@ object agGridNg1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initialiseAgGridWithAngular1(angular: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialiseAgGridWithAngular1")(angular.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialiseAgGridWithAngular1(angular: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialiseAgGridWithAngular1")(angular.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

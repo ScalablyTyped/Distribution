@@ -86,21 +86,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
+    inline def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
+    inline def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.s3AccessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3AccessPointMod.AccessPoint]
     
     /**
       * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "AccountPublicAccessBlock")
@@ -135,21 +130,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountPublicAccessBlockState): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountPublicAccessBlockState, opts: CustomResourceOptions): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
+    inline def get(name: String, id: Input[ID], state: AccountPublicAccessBlockState): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
+    inline def get(name: String, id: Input[ID], state: AccountPublicAccessBlockState, opts: CustomResourceOptions): typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accountPublicAccessBlockMod.AccountPublicAccessBlock]
     
     /**
       * Returns true if the given object is an instance of AccountPublicAccessBlock.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accountPublicAccessBlock.AccountPublicAccessBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accountPublicAccessBlock.AccountPublicAccessBlock */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accountPublicAccessBlock.AccountPublicAccessBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accountPublicAccessBlock.AccountPublicAccessBlock */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "AnalyticsConfiguration")
@@ -182,34 +172,27 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.analyticsConfigurationMod.AnalyticsConfiguration]
     
     /**
       * Returns true if the given object is an instance of AnalyticsConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "AuthenticatedReadAcl")
   @js.native
   def AuthenticatedReadAcl: CannedAcl = js.native
-  @scala.inline
-  def AuthenticatedReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthenticatedReadAcl")(x.asInstanceOf[js.Any])
+  inline def AuthenticatedReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthenticatedReadAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "AwsExecReadAcl")
   @js.native
   def AwsExecReadAcl: CannedAcl = js.native
-  @scala.inline
-  def AwsExecReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AwsExecReadAcl")(x.asInstanceOf[js.Any])
+  inline def AwsExecReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AwsExecReadAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "Bucket")
   @js.native
@@ -243,21 +226,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketState): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
+    inline def get(name: String, id: Input[ID], state: BucketState): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
+    inline def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): typings.pulumiAws.s3BucketMod.Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketMod.Bucket]
     
     /**
       * Returns true if the given object is an instance of Bucket.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "BucketEventSubscription")
@@ -309,21 +287,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketMetricState): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketMetricState, opts: CustomResourceOptions): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
+    inline def get(name: String, id: Input[ID], state: BucketMetricState): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
+    inline def get(name: String, id: Input[ID], state: BucketMetricState, opts: CustomResourceOptions): typings.pulumiAws.bucketMetricMod.BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketMetricMod.BucketMetric]
     
     /**
       * Returns true if the given object is an instance of BucketMetric.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "BucketNotification")
@@ -356,21 +329,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketNotificationState): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketNotificationState, opts: CustomResourceOptions): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
+    inline def get(name: String, id: Input[ID], state: BucketNotificationState): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
+    inline def get(name: String, id: Input[ID], state: BucketNotificationState, opts: CustomResourceOptions): typings.pulumiAws.bucketNotificationMod.BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketNotificationMod.BucketNotification]
     
     /**
       * Returns true if the given object is an instance of BucketNotification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "BucketObject")
@@ -403,34 +371,27 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketObjectState): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketObjectState, opts: CustomResourceOptions): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
+    inline def get(name: String, id: Input[ID], state: BucketObjectState): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
+    inline def get(name: String, id: Input[ID], state: BucketObjectState, opts: CustomResourceOptions): typings.pulumiAws.bucketObjectMod.BucketObject = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketObjectMod.BucketObject]
     
     /**
       * Returns true if the given object is an instance of BucketObject.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketObject.BucketObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketObject.BucketObject */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketObject.BucketObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketObject.BucketObject */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "BucketOwnerFullControlAcl")
   @js.native
   def BucketOwnerFullControlAcl: CannedAcl = js.native
-  @scala.inline
-  def BucketOwnerFullControlAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BucketOwnerFullControlAcl")(x.asInstanceOf[js.Any])
+  inline def BucketOwnerFullControlAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BucketOwnerFullControlAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "BucketOwnerReadAcl")
   @js.native
   def BucketOwnerReadAcl: CannedAcl = js.native
-  @scala.inline
-  def BucketOwnerReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BucketOwnerReadAcl")(x.asInstanceOf[js.Any])
+  inline def BucketOwnerReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BucketOwnerReadAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "BucketOwnershipControls")
   @js.native
@@ -462,21 +423,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState, opts: CustomResourceOptions): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID], state: BucketOwnershipControlsState): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID], state: BucketOwnershipControlsState, opts: CustomResourceOptions): typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketOwnershipControlsMod.BucketOwnershipControls]
     
     /**
       * Returns true if the given object is an instance of BucketOwnershipControls.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "BucketPolicy")
@@ -509,21 +465,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketPolicyState): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketPolicyState, opts: CustomResourceOptions): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
+    inline def get(name: String, id: Input[ID], state: BucketPolicyState): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
+    inline def get(name: String, id: Input[ID], state: BucketPolicyState, opts: CustomResourceOptions): typings.pulumiAws.s3BucketPolicyMod.BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.s3BucketPolicyMod.BucketPolicy]
     
     /**
       * Returns true if the given object is an instance of BucketPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "BucketPublicAccessBlock")
@@ -556,21 +507,16 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState, opts: CustomResourceOptions): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
+    inline def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
+    inline def get(name: String, id: Input[ID], state: BucketPublicAccessBlockState, opts: CustomResourceOptions): typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bucketPublicAccessBlockMod.BucketPublicAccessBlock]
     
     /**
       * Returns true if the given object is an instance of BucketPublicAccessBlock.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ Boolean]
   }
   
   object CannedAcl {
@@ -638,61 +584,46 @@ object s3Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InventoryState): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InventoryState, opts: CustomResourceOptions): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
+    inline def get(name: String, id: Input[ID], state: InventoryState): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
+    inline def get(name: String, id: Input[ID], state: InventoryState, opts: CustomResourceOptions): typings.pulumiAws.inventoryMod.Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inventoryMod.Inventory]
     
     /**
       * Returns true if the given object is an instance of Inventory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean]
   }
   
   @JSImport("@pulumi/aws/s3", "LogDeliveryWriteAcl")
   @js.native
   def LogDeliveryWriteAcl: CannedAcl = js.native
-  @scala.inline
-  def LogDeliveryWriteAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogDeliveryWriteAcl")(x.asInstanceOf[js.Any])
+  inline def LogDeliveryWriteAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogDeliveryWriteAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "PrivateAcl")
   @js.native
   def PrivateAcl: CannedAcl = js.native
-  @scala.inline
-  def PrivateAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrivateAcl")(x.asInstanceOf[js.Any])
+  inline def PrivateAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrivateAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "PublicReadAcl")
   @js.native
   def PublicReadAcl: CannedAcl = js.native
-  @scala.inline
-  def PublicReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicReadAcl")(x.asInstanceOf[js.Any])
+  inline def PublicReadAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicReadAcl")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/s3", "PublicReadWriteAcl")
   @js.native
   def PublicReadWriteAcl: CannedAcl = js.native
-  @scala.inline
-  def PublicReadWriteAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicReadWriteAcl")(x.asInstanceOf[js.Any])
+  inline def PublicReadWriteAcl_=(x: CannedAcl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicReadWriteAcl")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getBucket(args: GetBucketArgs): js.Promise[GetBucketResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketResult]]
-  @scala.inline
-  def getBucket(args: GetBucketArgs, opts: InvokeOptions): js.Promise[GetBucketResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketResult]]
+  inline def getBucket(args: GetBucketArgs): js.Promise[GetBucketResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketResult]]
+  inline def getBucket(args: GetBucketArgs, opts: InvokeOptions): js.Promise[GetBucketResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketResult]]
   
-  @scala.inline
-  def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectResult]]
-  @scala.inline
-  def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectResult]]
+  inline def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectResult]]
+  inline def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectResult]]
   
-  @scala.inline
-  def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectsResult]]
-  @scala.inline
-  def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectsResult]]
+  inline def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectsResult]]
+  inline def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectsResult]]
   
   /* augmented module */
   object pulumiAwsS3BucketAugmentingMod {

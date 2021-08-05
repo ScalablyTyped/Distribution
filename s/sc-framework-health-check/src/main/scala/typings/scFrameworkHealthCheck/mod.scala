@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach(worker: typings.socketcluster.scworkerMod.^, expressApp: Express): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(worker.asInstanceOf[js.Any], expressApp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(worker: typings.socketcluster.scworkerMod.^, expressApp: Express): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(worker.asInstanceOf[js.Any], expressApp.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

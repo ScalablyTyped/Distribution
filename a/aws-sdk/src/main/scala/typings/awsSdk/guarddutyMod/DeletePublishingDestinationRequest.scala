@@ -18,19 +18,15 @@ trait DeletePublishingDestinationRequest extends StObject {
 }
 object DeletePublishingDestinationRequest {
   
-  @scala.inline
-  def apply(DestinationId: String, DetectorId: DetectorId): DeletePublishingDestinationRequest = {
+  inline def apply(DestinationId: String, DetectorId: DetectorId): DeletePublishingDestinationRequest = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePublishingDestinationRequest]
   }
   
-  @scala.inline
-  implicit class DeletePublishingDestinationRequestMutableBuilder[Self <: DeletePublishingDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePublishingDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

@@ -77,61 +77,43 @@ trait VictoryCursorContainerProps
 }
 object VictoryCursorContainerProps {
   
-  @scala.inline
-  def apply(): VictoryCursorContainerProps = {
+  inline def apply(): VictoryCursorContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryCursorContainerProps]
   }
   
-  @scala.inline
-  implicit class VictoryCursorContainerPropsMutableBuilder[Self <: VictoryCursorContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryCursorContainerProps](x: Self) {
     
-    @scala.inline
-    def setCursorComponent(value: ReactElement): Self = StObject.set(x, "cursorComponent", value.asInstanceOf[js.Any])
+    inline def setCursorComponent(value: ReactElement): Self = StObject.set(x, "cursorComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorComponentUndefined: Self = StObject.set(x, "cursorComponent", js.undefined)
+    inline def setCursorComponentUndefined: Self = StObject.set(x, "cursorComponent", js.undefined)
     
-    @scala.inline
-    def setCursorDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "cursorDimension", value.asInstanceOf[js.Any])
+    inline def setCursorDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "cursorDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorDimensionUndefined: Self = StObject.set(x, "cursorDimension", js.undefined)
+    inline def setCursorDimensionUndefined: Self = StObject.set(x, "cursorDimension", js.undefined)
     
-    @scala.inline
-    def setCursorLabel(value: /* point */ CursorData => Unit): Self = StObject.set(x, "cursorLabel", js.Any.fromFunction1(value))
+    inline def setCursorLabel(value: /* point */ CursorData => Unit): Self = StObject.set(x, "cursorLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCursorLabelComponent(value: ReactElement): Self = StObject.set(x, "cursorLabelComponent", value.asInstanceOf[js.Any])
+    inline def setCursorLabelComponent(value: ReactElement): Self = StObject.set(x, "cursorLabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorLabelComponentUndefined: Self = StObject.set(x, "cursorLabelComponent", js.undefined)
+    inline def setCursorLabelComponentUndefined: Self = StObject.set(x, "cursorLabelComponent", js.undefined)
     
-    @scala.inline
-    def setCursorLabelOffset(value: Double | CursorData): Self = StObject.set(x, "cursorLabelOffset", value.asInstanceOf[js.Any])
+    inline def setCursorLabelOffset(value: Double | CursorData): Self = StObject.set(x, "cursorLabelOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorLabelOffsetUndefined: Self = StObject.set(x, "cursorLabelOffset", js.undefined)
+    inline def setCursorLabelOffsetUndefined: Self = StObject.set(x, "cursorLabelOffset", js.undefined)
     
-    @scala.inline
-    def setCursorLabelUndefined: Self = StObject.set(x, "cursorLabel", js.undefined)
+    inline def setCursorLabelUndefined: Self = StObject.set(x, "cursorLabel", js.undefined)
     
-    @scala.inline
-    def setDefaultCursorValue(value: Double | CursorData): Self = StObject.set(x, "defaultCursorValue", value.asInstanceOf[js.Any])
+    inline def setDefaultCursorValue(value: Double | CursorData): Self = StObject.set(x, "defaultCursorValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCursorValueUndefined: Self = StObject.set(x, "defaultCursorValue", js.undefined)
+    inline def setDefaultCursorValueUndefined: Self = StObject.set(x, "defaultCursorValue", js.undefined)
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setOnCursorChange(value: (/* value */ CursorData, VictoryCursorContainerProps) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
+    inline def setOnCursorChange(value: (/* value */ CursorData, VictoryCursorContainerProps) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
+    inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nanoidGenerateMod {
   
-  @scala.inline
-  def apply(alphabet: String, size: Double): String = (^.asInstanceOf[js.Dynamic].apply(alphabet.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(alphabet: String, size: Double): String = (^.asInstanceOf[js.Dynamic].apply(alphabet.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("nanoid/generate", JSImport.Namespace)
   @js.native

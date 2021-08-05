@@ -29,20 +29,16 @@ object commonMod {
   }
   object FocusOptionsPolyfill {
     
-    @scala.inline
-    def apply(): FocusOptionsPolyfill = {
+    inline def apply(): FocusOptionsPolyfill = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusOptionsPolyfill]
     }
     
-    @scala.inline
-    implicit class FocusOptionsPolyfillMutableBuilder[Self <: FocusOptionsPolyfill] (val x: Self) extends AnyVal {
+    extension [Self <: FocusOptionsPolyfill](x: Self) {
       
-      @scala.inline
-      def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+      inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
+      inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
     }
   }
   
@@ -56,26 +52,20 @@ object commonMod {
   }
   object InjectedFocusableProps {
     
-    @scala.inline
-    def apply(): InjectedFocusableProps = {
+    inline def apply(): InjectedFocusableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InjectedFocusableProps]
     }
     
-    @scala.inline
-    implicit class InjectedFocusablePropsMutableBuilder[Self <: InjectedFocusableProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedFocusableProps](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+      inline def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     }
   }
   
@@ -87,26 +77,20 @@ object commonMod {
   }
   object MoveByOffset {
     
-    @scala.inline
-    def apply(): MoveByOffset = {
+    inline def apply(): MoveByOffset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MoveByOffset]
     }
     
-    @scala.inline
-    implicit class MoveByOffsetMutableBuilder[Self <: MoveByOffset] (val x: Self) extends AnyVal {
+    extension [Self <: MoveByOffset](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -150,119 +134,82 @@ object commonMod {
   }
   object PopoverCommonProps {
     
-    @scala.inline
-    def apply(): PopoverCommonProps = {
+    inline def apply(): PopoverCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopoverCommonProps]
     }
     
-    @scala.inline
-    implicit class PopoverCommonPropsMutableBuilder[Self <: PopoverCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverCommonProps](x: Self) {
       
-      @scala.inline
-      def setAppendTo(value: AppendTo): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: AppendTo): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToFunction1(value: /* s */ Element => Boolean): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+      inline def setAppendToFunction1(value: /* s */ Element => Boolean): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      @scala.inline
-      def setDynamicWidth(value: Boolean): Self = StObject.set(x, "dynamicWidth", value.asInstanceOf[js.Any])
+      inline def setDynamicWidth(value: Boolean): Self = StObject.set(x, "dynamicWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicWidthUndefined: Self = StObject.set(x, "dynamicWidth", js.undefined)
+      inline def setDynamicWidthUndefined: Self = StObject.set(x, "dynamicWidth", js.undefined)
       
-      @scala.inline
-      def setExcludeClass(value: String): Self = StObject.set(x, "excludeClass", value.asInstanceOf[js.Any])
+      inline def setExcludeClass(value: String): Self = StObject.set(x, "excludeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeClassUndefined: Self = StObject.set(x, "excludeClass", js.undefined)
+      inline def setExcludeClassUndefined: Self = StObject.set(x, "excludeClass", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+      inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+      inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setMoveArrowTo(value: Double): Self = StObject.set(x, "moveArrowTo", value.asInstanceOf[js.Any])
+      inline def setMoveArrowTo(value: Double): Self = StObject.set(x, "moveArrowTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveArrowToUndefined: Self = StObject.set(x, "moveArrowTo", js.undefined)
+      inline def setMoveArrowToUndefined: Self = StObject.set(x, "moveArrowTo", js.undefined)
       
-      @scala.inline
-      def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
+      inline def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
+      inline def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
+      inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
+      inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double | Enter): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | Enter): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -274,26 +221,20 @@ object commonMod {
   }
   object ScrollableContainerCommonProps {
     
-    @scala.inline
-    def apply(): ScrollableContainerCommonProps = {
+    inline def apply(): ScrollableContainerCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollableContainerCommonProps]
     }
     
-    @scala.inline
-    implicit class ScrollableContainerCommonPropsMutableBuilder[Self <: ScrollableContainerCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollableContainerCommonProps](x: Self) {
       
-      @scala.inline
-      def setOnScrollAreaChanged(value: /* scrollChangedData */ ScrollAreaData => Unit): Self = StObject.set(x, "onScrollAreaChanged", js.Any.fromFunction1(value))
+      inline def setOnScrollAreaChanged(value: /* scrollChangedData */ ScrollAreaData => Unit): Self = StObject.set(x, "onScrollAreaChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollAreaChangedUndefined: Self = StObject.set(x, "onScrollAreaChanged", js.undefined)
+      inline def setOnScrollAreaChangedUndefined: Self = StObject.set(x, "onScrollAreaChanged", js.undefined)
       
-      @scala.inline
-      def setOnScrollChanged(value: /* target */ HTMLElement => Unit): Self = StObject.set(x, "onScrollChanged", js.Any.fromFunction1(value))
+      inline def setOnScrollChanged(value: /* target */ HTMLElement => Unit): Self = StObject.set(x, "onScrollChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollChangedUndefined: Self = StObject.set(x, "onScrollChanged", js.undefined)
+      inline def setOnScrollChangedUndefined: Self = StObject.set(x, "onScrollChanged", js.undefined)
     }
   }
   
@@ -314,35 +255,25 @@ object commonMod {
        with _BoxCssSizingProperty
   object Spacing {
     
-    @scala.inline
-    def SP1: typings.wixStyleReact.wixStyleReactStrings.SP1 = "SP1".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP1]
+    inline def SP1: typings.wixStyleReact.wixStyleReactStrings.SP1 = "SP1".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP1]
     
-    @scala.inline
-    def SP10: typings.wixStyleReact.wixStyleReactStrings.SP10 = "SP10".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP10]
+    inline def SP10: typings.wixStyleReact.wixStyleReactStrings.SP10 = "SP10".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP10]
     
-    @scala.inline
-    def SP2: typings.wixStyleReact.wixStyleReactStrings.SP2 = "SP2".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP2]
+    inline def SP2: typings.wixStyleReact.wixStyleReactStrings.SP2 = "SP2".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP2]
     
-    @scala.inline
-    def SP3: typings.wixStyleReact.wixStyleReactStrings.SP3 = "SP3".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP3]
+    inline def SP3: typings.wixStyleReact.wixStyleReactStrings.SP3 = "SP3".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP3]
     
-    @scala.inline
-    def SP4: typings.wixStyleReact.wixStyleReactStrings.SP4 = "SP4".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP4]
+    inline def SP4: typings.wixStyleReact.wixStyleReactStrings.SP4 = "SP4".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP4]
     
-    @scala.inline
-    def SP5: typings.wixStyleReact.wixStyleReactStrings.SP5 = "SP5".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP5]
+    inline def SP5: typings.wixStyleReact.wixStyleReactStrings.SP5 = "SP5".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP5]
     
-    @scala.inline
-    def SP6: typings.wixStyleReact.wixStyleReactStrings.SP6 = "SP6".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP6]
+    inline def SP6: typings.wixStyleReact.wixStyleReactStrings.SP6 = "SP6".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP6]
     
-    @scala.inline
-    def SP7: typings.wixStyleReact.wixStyleReactStrings.SP7 = "SP7".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP7]
+    inline def SP7: typings.wixStyleReact.wixStyleReactStrings.SP7 = "SP7".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP7]
     
-    @scala.inline
-    def SP8: typings.wixStyleReact.wixStyleReactStrings.SP8 = "SP8".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP8]
+    inline def SP8: typings.wixStyleReact.wixStyleReactStrings.SP8 = "SP8".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP8]
     
-    @scala.inline
-    def SP9: typings.wixStyleReact.wixStyleReactStrings.SP9 = "SP9".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP9]
+    inline def SP9: typings.wixStyleReact.wixStyleReactStrings.SP9 = "SP9".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.SP9]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -353,14 +284,11 @@ object commonMod {
   trait StatusIndications extends StObject
   object StatusIndications {
     
-    @scala.inline
-    def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
+    inline def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
     
-    @scala.inline
-    def loading: typings.wixStyleReact.wixStyleReactStrings.loading = "loading".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.loading]
+    inline def loading: typings.wixStyleReact.wixStyleReactStrings.loading = "loading".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.loading]
     
-    @scala.inline
-    def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
+    inline def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
   }
   
   trait TooltipCommonProps extends StObject {
@@ -405,112 +333,80 @@ object commonMod {
   }
   object TooltipCommonProps {
     
-    @scala.inline
-    def apply(): TooltipCommonProps = {
+    inline def apply(): TooltipCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooltipCommonProps]
     }
     
-    @scala.inline
-    implicit class TooltipCommonPropsMutableBuilder[Self <: TooltipCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipCommonProps](x: Self) {
       
-      @scala.inline
-      def setAppendTo(
+      inline def setAppendTo(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AppendTo */ js.Any
       ): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
+      inline def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
+      inline def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
       
-      @scala.inline
-      def setExitDelay(value: Double): Self = StObject.set(x, "exitDelay", value.asInstanceOf[js.Any])
+      inline def setExitDelay(value: Double): Self = StObject.set(x, "exitDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitDelayUndefined: Self = StObject.set(x, "exitDelay", js.undefined)
+      inline def setExitDelayUndefined: Self = StObject.set(x, "exitDelay", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(
+      inline def setMaxWidth(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.CSSProperties['maxWidth'] */ js.Any
       ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMoveArrowTo(value: Double): Self = StObject.set(x, "moveArrowTo", value.asInstanceOf[js.Any])
+      inline def setMoveArrowTo(value: Double): Self = StObject.set(x, "moveArrowTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveArrowToUndefined: Self = StObject.set(x, "moveArrowTo", js.undefined)
+      inline def setMoveArrowToUndefined: Self = StObject.set(x, "moveArrowTo", js.undefined)
       
-      @scala.inline
-      def setMoveBy(value: MoveByOffset): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
+      inline def setMoveBy(value: MoveByOffset): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
+      inline def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setPlacement(
+      inline def setPlacement(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Placement */ js.Any
       ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setSize(value: TooltipSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: TooltipSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: TooltipTextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: TooltipTextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setZIndex(
+      inline def setZIndex(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.CSSProperties['zIndex'] */ js.Any
       ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait GetCustomDataIdentifierRequest extends StObject {
 }
 object GetCustomDataIdentifierRequest {
   
-  @scala.inline
-  def apply(id: string): GetCustomDataIdentifierRequest = {
+  inline def apply(id: string): GetCustomDataIdentifierRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCustomDataIdentifierRequest]
   }
   
-  @scala.inline
-  implicit class GetCustomDataIdentifierRequestMutableBuilder[Self <: GetCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCustomDataIdentifierRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

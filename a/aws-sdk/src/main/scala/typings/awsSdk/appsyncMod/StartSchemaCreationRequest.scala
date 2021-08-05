@@ -18,19 +18,15 @@ trait StartSchemaCreationRequest extends StObject {
 }
 object StartSchemaCreationRequest {
   
-  @scala.inline
-  def apply(apiId: String, definition: _Blob): StartSchemaCreationRequest = {
+  inline def apply(apiId: String, definition: _Blob): StartSchemaCreationRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSchemaCreationRequest]
   }
   
-  @scala.inline
-  implicit class StartSchemaCreationRequestMutableBuilder[Self <: StartSchemaCreationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSchemaCreationRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: _Blob): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: _Blob): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
   }
 }

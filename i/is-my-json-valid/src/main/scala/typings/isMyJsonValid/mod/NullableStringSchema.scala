@@ -14,20 +14,16 @@ trait NullableStringSchema
 }
 object NullableStringSchema {
   
-  @scala.inline
-  def apply(`type`: js.Array[string | `null`]): NullableStringSchema = {
+  inline def apply(`type`: js.Array[string | `null`]): NullableStringSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableStringSchema]
   }
   
-  @scala.inline
-  implicit class NullableStringSchemaMutableBuilder[Self <: NullableStringSchema] (val x: Self) extends AnyVal {
+  extension [Self <: NullableStringSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: js.Array[string | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[string | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: (string | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (string | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

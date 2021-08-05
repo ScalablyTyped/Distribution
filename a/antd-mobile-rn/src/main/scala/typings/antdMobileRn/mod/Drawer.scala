@@ -19,6 +19,5 @@ object Drawer {
   @JSImport("antd-mobile-rn", "Drawer.defaultProps")
   @js.native
   def defaultProps: DrawerWidth = js.native
-  @scala.inline
-  def defaultProps_=(x: DrawerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: DrawerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

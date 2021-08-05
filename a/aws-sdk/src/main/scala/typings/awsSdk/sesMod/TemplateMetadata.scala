@@ -18,25 +18,19 @@ trait TemplateMetadata extends StObject {
 }
 object TemplateMetadata {
   
-  @scala.inline
-  def apply(): TemplateMetadata = {
+  inline def apply(): TemplateMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateMetadata]
   }
   
-  @scala.inline
-  implicit class TemplateMetadataMutableBuilder[Self <: TemplateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateMetadata](x: Self) {
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setName(value: TemplateName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TemplateName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

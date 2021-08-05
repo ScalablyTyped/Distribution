@@ -16,45 +16,35 @@ trait ExpandedCallback extends StObject {
 }
 object ExpandedCallback {
   
-  @scala.inline
-  def apply(): ExpandedCallback = {
+  inline def apply(): ExpandedCallback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpandedCallback]
   }
   
-  @scala.inline
-  implicit class ExpandedCallbackMutableBuilder[Self <: ExpandedCallback] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandedCallback](x: Self) {
     
-    @scala.inline
-    def setLoad(
+    inline def setLoad(
       value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
     ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setSetup(
+    inline def setSetup(
       value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
     ): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+    inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
-    @scala.inline
-    def setTeardown(
+    inline def setTeardown(
       value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
     ): Self = StObject.set(x, "teardown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+    inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
     
-    @scala.inline
-    def setUnload(
+    inline def setUnload(
       value: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any
     ): Self = StObject.set(x, "unload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
+    inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
   }
 }

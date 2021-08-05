@@ -15,22 +15,17 @@ trait DisableHeight extends StObject {
 }
 object DisableHeight {
   
-  @scala.inline
-  def apply(onResize: () => Unit): DisableHeight = {
+  inline def apply(onResize: () => Unit): DisableHeight = {
     val __obj = js.Dynamic.literal(disableHeight = false, disableWidth = false, onResize = js.Any.fromFunction0(onResize))
     __obj.asInstanceOf[DisableHeight]
   }
   
-  @scala.inline
-  implicit class DisableHeightMutableBuilder[Self <: DisableHeight] (val x: Self) extends AnyVal {
+  extension [Self <: DisableHeight](x: Self) {
     
-    @scala.inline
-    def setDisableHeight(value: `false`): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
+    inline def setDisableHeight(value: `false`): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableWidth(value: `false`): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
+    inline def setDisableWidth(value: `false`): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
+    inline def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
   }
 }

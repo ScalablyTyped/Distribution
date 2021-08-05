@@ -8,16 +8,13 @@ object babelGeneratorStrings {
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait double extends StObject
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait single extends StObject
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  inline def single: single = "single".asInstanceOf[single]
 }

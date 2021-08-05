@@ -41,51 +41,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFolderUIStateLocationType extends StObject
 object MFFolderUIStateLocationType {
   
-  @scala.inline
-  def ClearLocalCacheUI: `12` = 12.asInstanceOf[`12`]
+  inline def ClearLocalCacheUI: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def CollectionMembersUI: `10` = 10.asInstanceOf[`10`]
+  inline def CollectionMembersUI: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def HistoryUI: `8` = 8.asInstanceOf[`8`]
+  inline def HistoryUI: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def LocalTemporaryItemsContainer: `15` = 15.asInstanceOf[`15`]
+  inline def LocalTemporaryItemsContainer: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def ObjectFilesContainer: `5` = 5.asInstanceOf[`5`]
+  inline def ObjectFilesContainer: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ObjectsContainer: `4` = 4.asInstanceOf[`4`]
+  inline def ObjectsContainer: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def PropertyFoldersContainer: `3` = 3.asInstanceOf[`3`]
+  inline def PropertyFoldersContainer: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def RelationshipsUIAllTab: `14` = 14.asInstanceOf[`14`]
+  inline def RelationshipsUIAllTab: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def RelationshipsUIFromTab: `9` = 9.asInstanceOf[`9`]
+  inline def RelationshipsUIFromTab: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def RelationshipsUIToTab: `13` = 13.asInstanceOf[`13`]
+  inline def RelationshipsUIToTab: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def RootFolder: `1` = 1.asInstanceOf[`1`]
+  inline def RootFolder: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SearchResultsContainer: `7` = 7.asInstanceOf[`7`]
+  inline def SearchResultsContainer: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def SubobjectsUI: `11` = 11.asInstanceOf[`11`]
+  inline def SubobjectsUI: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def TraditionalFolder: `6` = 6.asInstanceOf[`6`]
+  inline def TraditionalFolder: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Unknown: `0` = 0.asInstanceOf[`0`]
+  inline def Unknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ViewFoldersContainer: `2` = 2.asInstanceOf[`2`]
+  inline def ViewFoldersContainer: `2` = 2.asInstanceOf[`2`]
 }

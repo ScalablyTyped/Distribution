@@ -190,13 +190,10 @@ object recurlyMod {
   trait RecurlyEvent extends StObject
   object RecurlyEvent {
     
-    @scala.inline
-    def change: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.change = "change".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.change]
+    inline def change: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.change = "change".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.change]
     
-    @scala.inline
-    def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
+    inline def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
     
-    @scala.inline
-    def fieldColonsubmit: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.fieldColonsubmit = "field:submit".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.fieldColonsubmit]
+    inline def fieldColonsubmit: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.fieldColonsubmit = "field:submit".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.fieldColonsubmit]
   }
 }

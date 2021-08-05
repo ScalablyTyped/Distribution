@@ -35,8 +35,7 @@ object Team {
   }
   object MatchHistorySummaryDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assists: Double,
       date: Double,
       deaths: Double,
@@ -53,41 +52,29 @@ object Team {
       __obj.asInstanceOf[MatchHistorySummaryDto]
     }
     
-    @scala.inline
-    implicit class MatchHistorySummaryDtoMutableBuilder[Self <: MatchHistorySummaryDto] (val x: Self) extends AnyVal {
+    extension [Self <: MatchHistorySummaryDto](x: Self) {
       
-      @scala.inline
-      def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
+      inline def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeaths(value: Double): Self = StObject.set(x, "deaths", value.asInstanceOf[js.Any])
+      inline def setDeaths(value: Double): Self = StObject.set(x, "deaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
+      inline def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameMode(value: String): Self = StObject.set(x, "gameMode", value.asInstanceOf[js.Any])
+      inline def setGameMode(value: String): Self = StObject.set(x, "gameMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKills(value: Double): Self = StObject.set(x, "kills", value.asInstanceOf[js.Any])
+      inline def setKills(value: Double): Self = StObject.set(x, "kills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+      inline def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpposingTeamKills(value: Double): Self = StObject.set(x, "opposingTeamKills", value.asInstanceOf[js.Any])
+      inline def setOpposingTeamKills(value: Double): Self = StObject.set(x, "opposingTeamKills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpposingTeamName(value: String): Self = StObject.set(x, "opposingTeamName", value.asInstanceOf[js.Any])
+      inline def setOpposingTeamName(value: String): Self = StObject.set(x, "opposingTeamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWin(value: Boolean): Self = StObject.set(x, "win", value.asInstanceOf[js.Any])
+      inline def setWin(value: Boolean): Self = StObject.set(x, "win", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,23 +86,18 @@ object Team {
   }
   object RosterDto {
     
-    @scala.inline
-    def apply(memberList: js.Array[TeamMemberInfoDto], ownerId: Double): RosterDto = {
+    inline def apply(memberList: js.Array[TeamMemberInfoDto], ownerId: Double): RosterDto = {
       val __obj = js.Dynamic.literal(memberList = memberList.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RosterDto]
     }
     
-    @scala.inline
-    implicit class RosterDtoMutableBuilder[Self <: RosterDto] (val x: Self) extends AnyVal {
+    extension [Self <: RosterDto](x: Self) {
       
-      @scala.inline
-      def setMemberList(value: js.Array[TeamMemberInfoDto]): Self = StObject.set(x, "memberList", value.asInstanceOf[js.Any])
+      inline def setMemberList(value: js.Array[TeamMemberInfoDto]): Self = StObject.set(x, "memberList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberListVarargs(value: TeamMemberInfoDto*): Self = StObject.set(x, "memberList", js.Array(value :_*))
+      inline def setMemberListVarargs(value: TeamMemberInfoDto*): Self = StObject.set(x, "memberList", js.Array(value :_*))
       
-      @scala.inline
-      def setOwnerId(value: Double): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Double): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,8 +133,7 @@ object Team {
   }
   object TeamDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createDate: Double,
       fullId: String,
       lastGameDate: Double,
@@ -172,56 +153,39 @@ object Team {
       __obj.asInstanceOf[TeamDto]
     }
     
-    @scala.inline
-    implicit class TeamDtoMutableBuilder[Self <: TeamDto] (val x: Self) extends AnyVal {
+    extension [Self <: TeamDto](x: Self) {
       
-      @scala.inline
-      def setCreateDate(value: Double): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: Double): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullId(value: String): Self = StObject.set(x, "fullId", value.asInstanceOf[js.Any])
+      inline def setFullId(value: String): Self = StObject.set(x, "fullId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastGameDate(value: Double): Self = StObject.set(x, "lastGameDate", value.asInstanceOf[js.Any])
+      inline def setLastGameDate(value: Double): Self = StObject.set(x, "lastGameDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastJoinDate(value: Double): Self = StObject.set(x, "lastJoinDate", value.asInstanceOf[js.Any])
+      inline def setLastJoinDate(value: Double): Self = StObject.set(x, "lastJoinDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastJoinedRankedTeamQueueDate(value: Double): Self = StObject.set(x, "lastJoinedRankedTeamQueueDate", value.asInstanceOf[js.Any])
+      inline def setLastJoinedRankedTeamQueueDate(value: Double): Self = StObject.set(x, "lastJoinedRankedTeamQueueDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchHistory(value: js.Array[MatchHistorySummaryDto]): Self = StObject.set(x, "matchHistory", value.asInstanceOf[js.Any])
+      inline def setMatchHistory(value: js.Array[MatchHistorySummaryDto]): Self = StObject.set(x, "matchHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchHistoryVarargs(value: MatchHistorySummaryDto*): Self = StObject.set(x, "matchHistory", js.Array(value :_*))
+      inline def setMatchHistoryVarargs(value: MatchHistorySummaryDto*): Self = StObject.set(x, "matchHistory", js.Array(value :_*))
       
-      @scala.inline
-      def setModifyDate(value: Double): Self = StObject.set(x, "modifyDate", value.asInstanceOf[js.Any])
+      inline def setModifyDate(value: Double): Self = StObject.set(x, "modifyDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoster(value: RosterDto): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
+      inline def setRoster(value: RosterDto): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondLastJoinDate(value: Double): Self = StObject.set(x, "secondLastJoinDate", value.asInstanceOf[js.Any])
+      inline def setSecondLastJoinDate(value: Double): Self = StObject.set(x, "secondLastJoinDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamStatDetails(value: js.Array[TeamStatDetailDto]): Self = StObject.set(x, "teamStatDetails", value.asInstanceOf[js.Any])
+      inline def setTeamStatDetails(value: js.Array[TeamStatDetailDto]): Self = StObject.set(x, "teamStatDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamStatDetailsVarargs(value: TeamStatDetailDto*): Self = StObject.set(x, "teamStatDetails", js.Array(value :_*))
+      inline def setTeamStatDetailsVarargs(value: TeamStatDetailDto*): Self = StObject.set(x, "teamStatDetails", js.Array(value :_*))
       
-      @scala.inline
-      def setThirdLastJoinDate(value: Double): Self = StObject.set(x, "thirdLastJoinDate", value.asInstanceOf[js.Any])
+      inline def setThirdLastJoinDate(value: Double): Self = StObject.set(x, "thirdLastJoinDate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,26 +201,20 @@ object Team {
   }
   object TeamMemberInfoDto {
     
-    @scala.inline
-    def apply(inviteDate: Double, joinDate: Double, playerId: Double, status: String): TeamMemberInfoDto = {
+    inline def apply(inviteDate: Double, joinDate: Double, playerId: Double, status: String): TeamMemberInfoDto = {
       val __obj = js.Dynamic.literal(inviteDate = inviteDate.asInstanceOf[js.Any], joinDate = joinDate.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[TeamMemberInfoDto]
     }
     
-    @scala.inline
-    implicit class TeamMemberInfoDtoMutableBuilder[Self <: TeamMemberInfoDto] (val x: Self) extends AnyVal {
+    extension [Self <: TeamMemberInfoDto](x: Self) {
       
-      @scala.inline
-      def setInviteDate(value: Double): Self = StObject.set(x, "inviteDate", value.asInstanceOf[js.Any])
+      inline def setInviteDate(value: Double): Self = StObject.set(x, "inviteDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
+      inline def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerId(value: Double): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+      inline def setPlayerId(value: Double): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,26 +230,20 @@ object Team {
   }
   object TeamStatDetailDto {
     
-    @scala.inline
-    def apply(averageGamesPlayed: Double, losses: Double, teamStatType: String, wins: Double): TeamStatDetailDto = {
+    inline def apply(averageGamesPlayed: Double, losses: Double, teamStatType: String, wins: Double): TeamStatDetailDto = {
       val __obj = js.Dynamic.literal(averageGamesPlayed = averageGamesPlayed.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], teamStatType = teamStatType.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any])
       __obj.asInstanceOf[TeamStatDetailDto]
     }
     
-    @scala.inline
-    implicit class TeamStatDetailDtoMutableBuilder[Self <: TeamStatDetailDto] (val x: Self) extends AnyVal {
+    extension [Self <: TeamStatDetailDto](x: Self) {
       
-      @scala.inline
-      def setAverageGamesPlayed(value: Double): Self = StObject.set(x, "averageGamesPlayed", value.asInstanceOf[js.Any])
+      inline def setAverageGamesPlayed(value: Double): Self = StObject.set(x, "averageGamesPlayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLosses(value: Double): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
+      inline def setLosses(value: Double): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamStatType(value: String): Self = StObject.set(x, "teamStatType", value.asInstanceOf[js.Any])
+      inline def setTeamStatType(value: String): Self = StObject.set(x, "teamStatType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWins(value: Double): Self = StObject.set(x, "wins", value.asInstanceOf[js.Any])
+      inline def setWins(value: Double): Self = StObject.set(x, "wins", value.asInstanceOf[js.Any])
     }
   }
 }

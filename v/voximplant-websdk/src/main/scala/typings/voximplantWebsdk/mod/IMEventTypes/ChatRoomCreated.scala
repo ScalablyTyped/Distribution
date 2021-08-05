@@ -19,16 +19,13 @@ trait ChatRoomCreated
 }
 object ChatRoomCreated {
   
-  @scala.inline
-  def apply(room: String): ChatRoomCreated = {
+  inline def apply(room: String): ChatRoomCreated = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomCreated]
   }
   
-  @scala.inline
-  implicit class ChatRoomCreatedMutableBuilder[Self <: ChatRoomCreated] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomCreated](x: Self) {
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

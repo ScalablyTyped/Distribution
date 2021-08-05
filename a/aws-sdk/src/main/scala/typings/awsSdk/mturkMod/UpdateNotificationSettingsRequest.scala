@@ -23,28 +23,21 @@ trait UpdateNotificationSettingsRequest extends StObject {
 }
 object UpdateNotificationSettingsRequest {
   
-  @scala.inline
-  def apply(HITTypeId: EntityId): UpdateNotificationSettingsRequest = {
+  inline def apply(HITTypeId: EntityId): UpdateNotificationSettingsRequest = {
     val __obj = js.Dynamic.literal(HITTypeId = HITTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotificationSettingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNotificationSettingsRequestMutableBuilder[Self <: UpdateNotificationSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNotificationSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    @scala.inline
-    def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
+    inline def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification(value: NotificationSpecification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: NotificationSpecification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
   }
 }

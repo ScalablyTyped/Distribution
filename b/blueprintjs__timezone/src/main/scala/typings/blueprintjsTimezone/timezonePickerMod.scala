@@ -30,29 +30,25 @@ object timezonePickerMod {
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezoneDisplayFormat.ABBREVIATION")
     @js.native
     def ABBREVIATION: abbreviation = js.native
-    @scala.inline
-    def ABBREVIATION_=(x: abbreviation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABBREVIATION")(x.asInstanceOf[js.Any])
+    inline def ABBREVIATION_=(x: abbreviation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABBREVIATION")(x.asInstanceOf[js.Any])
     
     /** Composite format: `"Pacific/Honolulu (HST) -10:00"` */
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezoneDisplayFormat.COMPOSITE")
     @js.native
     def COMPOSITE: composite = js.native
-    @scala.inline
-    def COMPOSITE_=(x: composite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPOSITE")(x.asInstanceOf[js.Any])
+    inline def COMPOSITE_=(x: composite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPOSITE")(x.asInstanceOf[js.Any])
     
     /** Name format: `"Pacific/Honolulu"` */
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezoneDisplayFormat.NAME")
     @js.native
     def NAME: name = js.native
-    @scala.inline
-    def NAME_=(x: name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+    inline def NAME_=(x: name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
     
     /** Offset format: `"-10:00"` */
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezoneDisplayFormat.OFFSET")
     @js.native
     def OFFSET: offset = js.native
-    @scala.inline
-    def OFFSET_=(x: offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET")(x.asInstanceOf[js.Any])
+    inline def OFFSET_=(x: offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker")
@@ -65,19 +61,19 @@ object timezonePickerMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTimezonePicker(prevProps: ITimezonePickerProps, prevState: ITimezonePickerState): Unit = js.native
     
-    var filterItems: js.Any = js.native
+    /* private */ var filterItems: js.Any = js.native
     
-    var handleItemSelect: js.Any = js.native
+    /* private */ var handleItemSelect: js.Any = js.native
     
-    var handleQueryChange: js.Any = js.native
+    /* private */ var handleQueryChange: js.Any = js.native
     
-    var initialTimezoneItems: js.Any = js.native
+    /* private */ var initialTimezoneItems: js.Any = js.native
     
-    var renderButton: js.Any = js.native
+    /* private */ var renderButton: js.Any = js.native
     
-    var renderItem: js.Any = js.native
+    /* private */ var renderItem: js.Any = js.native
     
-    var timezoneItems: js.Any = js.native
+    /* private */ var timezoneItems: js.Any = js.native
     
     /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
   }
@@ -91,14 +87,12 @@ object timezonePickerMod {
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker.defaultProps")
     @js.native
     def defaultProps: PartialITimezonePickerPro = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialITimezonePickerPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialITimezonePickerPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait ITimezonePickerProps
@@ -169,71 +163,50 @@ object timezonePickerMod {
   }
   object ITimezonePickerProps {
     
-    @scala.inline
-    def apply(onChange: String => Unit): ITimezonePickerProps = {
+    inline def apply(onChange: String => Unit): ITimezonePickerProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[ITimezonePickerProps]
     }
     
-    @scala.inline
-    implicit class ITimezonePickerPropsMutableBuilder[Self <: ITimezonePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITimezonePickerProps](x: Self) {
       
-      @scala.inline
-      def setButtonProps(value: PartialIButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: PartialIButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
+      inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: IInputGroupProps & HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: IInputGroupProps & HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPopoverProps(value: PartialIPopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PartialIPopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
+      inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      @scala.inline
-      def setShowLocalTimezone(value: Boolean): Self = StObject.set(x, "showLocalTimezone", value.asInstanceOf[js.Any])
+      inline def setShowLocalTimezone(value: Boolean): Self = StObject.set(x, "showLocalTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLocalTimezoneUndefined: Self = StObject.set(x, "showLocalTimezone", js.undefined)
+      inline def setShowLocalTimezoneUndefined: Self = StObject.set(x, "showLocalTimezone", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueDisplayFormat(value: TimezoneDisplayFormat): Self = StObject.set(x, "valueDisplayFormat", value.asInstanceOf[js.Any])
+      inline def setValueDisplayFormat(value: TimezoneDisplayFormat): Self = StObject.set(x, "valueDisplayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueDisplayFormatUndefined: Self = StObject.set(x, "valueDisplayFormat", js.undefined)
+      inline def setValueDisplayFormatUndefined: Self = StObject.set(x, "valueDisplayFormat", js.undefined)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -243,17 +216,14 @@ object timezonePickerMod {
   }
   object ITimezonePickerState {
     
-    @scala.inline
-    def apply(query: String): ITimezonePickerState = {
+    inline def apply(query: String): ITimezonePickerState = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITimezonePickerState]
     }
     
-    @scala.inline
-    implicit class ITimezonePickerStateMutableBuilder[Self <: ITimezonePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: ITimezonePickerState](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
 }

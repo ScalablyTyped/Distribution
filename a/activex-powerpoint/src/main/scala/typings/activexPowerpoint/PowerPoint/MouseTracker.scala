@@ -10,13 +10,12 @@ trait MouseTracker extends StObject {
   
   def OnTrack(X: Double, Y: Double): Unit
   
-  @JSName("PowerPoint.MouseTracker_typekey")
+  /* private */ @JSName("PowerPoint.MouseTracker_typekey")
   var PowerPointDotMouseTracker_typekey: MouseTracker
 }
 object MouseTracker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTrack: (Double, Double) => Unit,
     OnTrack: (Double, Double) => Unit,
     PowerPointDotMouseTracker_typekey: MouseTracker
@@ -26,16 +25,12 @@ object MouseTracker {
     __obj.asInstanceOf[MouseTracker]
   }
   
-  @scala.inline
-  implicit class MouseTrackerMutableBuilder[Self <: MouseTracker] (val x: Self) extends AnyVal {
+  extension [Self <: MouseTracker](x: Self) {
     
-    @scala.inline
-    def setEndTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "EndTrack", js.Any.fromFunction2(value))
+    inline def setEndTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "EndTrack", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "OnTrack", js.Any.fromFunction2(value))
+    inline def setOnTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "OnTrack", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPowerPointDotMouseTracker_typekey(value: MouseTracker): Self = StObject.set(x, "PowerPoint.MouseTracker_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotMouseTracker_typekey(value: MouseTracker): Self = StObject.set(x, "PowerPoint.MouseTracker_typekey", value.asInstanceOf[js.Any])
   }
 }

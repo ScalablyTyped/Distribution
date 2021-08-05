@@ -57,13 +57,9 @@ object mod {
     /**
       * Creates a feature subgroup, optionally given an initial parent group and a set of layers.
       */
-    @scala.inline
-    def subGroup(): SubGroup[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")().asInstanceOf[SubGroup[js.Any]]
-    @scala.inline
-    def subGroup(parentGroup: Unit, layers: js.Array[Layer]): SubGroup[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[js.Any]]
-    @scala.inline
-    def subGroup(parentGroup: LayerGroup_[js.Any]): SubGroup[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any]).asInstanceOf[SubGroup[js.Any]]
-    @scala.inline
-    def subGroup(parentGroup: LayerGroup_[js.Any], layers: js.Array[Layer]): SubGroup[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[js.Any]]
+    inline def subGroup(): SubGroup[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")().asInstanceOf[SubGroup[js.Any]]
+    inline def subGroup(parentGroup: Unit, layers: js.Array[Layer]): SubGroup[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[js.Any]]
+    inline def subGroup(parentGroup: LayerGroup_[js.Any]): SubGroup[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any]).asInstanceOf[SubGroup[js.Any]]
+    inline def subGroup(parentGroup: LayerGroup_[js.Any], layers: js.Array[Layer]): SubGroup[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[js.Any]]
   }
 }

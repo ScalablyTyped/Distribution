@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ISAMStatsEnum extends StObject
 object ISAMStatsEnum {
   
-  @scala.inline
-  def DiskReads: `0` = 0.asInstanceOf[`0`]
+  inline def DiskReads: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def DiskWrites: `1` = 1.asInstanceOf[`1`]
+  inline def DiskWrites: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def LocksPlaced: `4` = 4.asInstanceOf[`4`]
+  inline def LocksPlaced: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def LocksReleased: `5` = 5.asInstanceOf[`5`]
+  inline def LocksReleased: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ReadsFromCache: `2` = 2.asInstanceOf[`2`]
+  inline def ReadsFromCache: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ReadsFromReadAheadCache: `3` = 3.asInstanceOf[`3`]
+  inline def ReadsFromReadAheadCache: `3` = 3.asInstanceOf[`3`]
 }

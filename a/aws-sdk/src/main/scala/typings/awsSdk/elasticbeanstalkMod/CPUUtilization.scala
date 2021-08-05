@@ -48,61 +48,43 @@ trait CPUUtilization extends StObject {
 }
 object CPUUtilization {
   
-  @scala.inline
-  def apply(): CPUUtilization = {
+  inline def apply(): CPUUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CPUUtilization]
   }
   
-  @scala.inline
-  implicit class CPUUtilizationMutableBuilder[Self <: CPUUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: CPUUtilization](x: Self) {
     
-    @scala.inline
-    def setIOWait(value: NullableDouble): Self = StObject.set(x, "IOWait", value.asInstanceOf[js.Any])
+    inline def setIOWait(value: NullableDouble): Self = StObject.set(x, "IOWait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOWaitUndefined: Self = StObject.set(x, "IOWait", js.undefined)
+    inline def setIOWaitUndefined: Self = StObject.set(x, "IOWait", js.undefined)
     
-    @scala.inline
-    def setIRQ(value: NullableDouble): Self = StObject.set(x, "IRQ", value.asInstanceOf[js.Any])
+    inline def setIRQ(value: NullableDouble): Self = StObject.set(x, "IRQ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIRQUndefined: Self = StObject.set(x, "IRQ", js.undefined)
+    inline def setIRQUndefined: Self = StObject.set(x, "IRQ", js.undefined)
     
-    @scala.inline
-    def setIdle(value: NullableDouble): Self = StObject.set(x, "Idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: NullableDouble): Self = StObject.set(x, "Idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "Idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "Idle", js.undefined)
     
-    @scala.inline
-    def setNice(value: NullableDouble): Self = StObject.set(x, "Nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: NullableDouble): Self = StObject.set(x, "Nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNiceUndefined: Self = StObject.set(x, "Nice", js.undefined)
+    inline def setNiceUndefined: Self = StObject.set(x, "Nice", js.undefined)
     
-    @scala.inline
-    def setPrivileged(value: NullableDouble): Self = StObject.set(x, "Privileged", value.asInstanceOf[js.Any])
+    inline def setPrivileged(value: NullableDouble): Self = StObject.set(x, "Privileged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegedUndefined: Self = StObject.set(x, "Privileged", js.undefined)
+    inline def setPrivilegedUndefined: Self = StObject.set(x, "Privileged", js.undefined)
     
-    @scala.inline
-    def setSoftIRQ(value: NullableDouble): Self = StObject.set(x, "SoftIRQ", value.asInstanceOf[js.Any])
+    inline def setSoftIRQ(value: NullableDouble): Self = StObject.set(x, "SoftIRQ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftIRQUndefined: Self = StObject.set(x, "SoftIRQ", js.undefined)
+    inline def setSoftIRQUndefined: Self = StObject.set(x, "SoftIRQ", js.undefined)
     
-    @scala.inline
-    def setSystem(value: NullableDouble): Self = StObject.set(x, "System", value.asInstanceOf[js.Any])
+    inline def setSystem(value: NullableDouble): Self = StObject.set(x, "System", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "System", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "System", js.undefined)
     
-    @scala.inline
-    def setUser(value: NullableDouble): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: NullableDouble): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

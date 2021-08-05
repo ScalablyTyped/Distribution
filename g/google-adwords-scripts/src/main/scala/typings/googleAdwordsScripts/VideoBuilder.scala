@@ -12,16 +12,13 @@ trait VideoBuilder[Media]
 }
 object VideoBuilder {
   
-  @scala.inline
-  def apply[Media](build: () => AdWordsOperation[Media], withYouTubeVideoId: String => VideoBuilder[Media]): VideoBuilder[Media] = {
+  inline def apply[Media](build: () => AdWordsOperation[Media], withYouTubeVideoId: String => VideoBuilder[Media]): VideoBuilder[Media] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withYouTubeVideoId = js.Any.fromFunction1(withYouTubeVideoId))
     __obj.asInstanceOf[VideoBuilder[Media]]
   }
   
-  @scala.inline
-  implicit class VideoBuilderMutableBuilder[Self <: VideoBuilder[?], Media] (val x: Self & VideoBuilder[Media]) extends AnyVal {
+  extension [Self <: VideoBuilder[?], Media](x: Self & VideoBuilder[Media]) {
     
-    @scala.inline
-    def setWithYouTubeVideoId(value: String => VideoBuilder[Media]): Self = StObject.set(x, "withYouTubeVideoId", js.Any.fromFunction1(value))
+    inline def setWithYouTubeVideoId(value: String => VideoBuilder[Media]): Self = StObject.set(x, "withYouTubeVideoId", js.Any.fromFunction1(value))
   }
 }

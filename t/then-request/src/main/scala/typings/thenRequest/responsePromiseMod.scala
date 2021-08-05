@@ -12,8 +12,7 @@ object responsePromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(result: ThenPromise[typings.httpResponseObject.mod.^[Buffer | String]]): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(result.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+  inline def default(result: ThenPromise[typings.httpResponseObject.mod.^[Buffer | String]]): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(result.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
   
   @JSImport("then-request/lib/ResponsePromise", "ResponsePromise")
   @js.native

@@ -15,16 +15,13 @@ trait ExistingSansProvider
 }
 object ExistingSansProvider {
   
-  @scala.inline
-  def apply(useExisting: js.Any): ExistingSansProvider = {
+  inline def apply(useExisting: js.Any): ExistingSansProvider = {
     val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingSansProvider]
   }
   
-  @scala.inline
-  implicit class ExistingSansProviderMutableBuilder[Self <: ExistingSansProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ExistingSansProvider](x: Self) {
     
-    @scala.inline
-    def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+    inline def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutosuggestProps[TSuggestion, TSection] extends StObject
 object AutosuggestProps {
   
-  @scala.inline
-  def AutosuggestPropsMultiSection[TSuggestion, TSection](
+  inline def AutosuggestPropsMultiSection[TSuggestion, TSection](
     getSuggestionValue: TSuggestion => String,
     inputProps: InputProps[TSuggestion],
     onSuggestionsFetchRequested: /* request */ SuggestionsFetchRequestedParams => Unit,
@@ -24,8 +23,7 @@ object AutosuggestProps {
     __obj.asInstanceOf[typings.reactAutosuggest.mod.AutosuggestPropsMultiSection[TSuggestion, TSection]]
   }
   
-  @scala.inline
-  def AutosuggestPropsSingleSection[TSuggestion](
+  inline def AutosuggestPropsSingleSection[TSuggestion](
     getSuggestionValue: TSuggestion => String,
     inputProps: InputProps[TSuggestion],
     onSuggestionsFetchRequested: /* request */ SuggestionsFetchRequestedParams => Unit,

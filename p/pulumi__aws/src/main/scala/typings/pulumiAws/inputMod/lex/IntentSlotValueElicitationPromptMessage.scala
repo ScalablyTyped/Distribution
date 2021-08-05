@@ -25,25 +25,19 @@ trait IntentSlotValueElicitationPromptMessage extends StObject {
 }
 object IntentSlotValueElicitationPromptMessage {
   
-  @scala.inline
-  def apply(content: Input[String], contentType: Input[String]): IntentSlotValueElicitationPromptMessage = {
+  inline def apply(content: Input[String], contentType: Input[String]): IntentSlotValueElicitationPromptMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentSlotValueElicitationPromptMessage]
   }
   
-  @scala.inline
-  implicit class IntentSlotValueElicitationPromptMessageMutableBuilder[Self <: IntentSlotValueElicitationPromptMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IntentSlotValueElicitationPromptMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumber(value: Input[Double]): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
+    inline def setGroupNumber(value: Input[Double]): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
+    inline def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

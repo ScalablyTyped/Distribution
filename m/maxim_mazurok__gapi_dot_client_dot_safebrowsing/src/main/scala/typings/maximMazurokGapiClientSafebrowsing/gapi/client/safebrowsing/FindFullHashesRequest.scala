@@ -20,40 +20,29 @@ trait FindFullHashesRequest extends StObject {
 }
 object FindFullHashesRequest {
   
-  @scala.inline
-  def apply(): FindFullHashesRequest = {
+  inline def apply(): FindFullHashesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindFullHashesRequest]
   }
   
-  @scala.inline
-  implicit class FindFullHashesRequestMutableBuilder[Self <: FindFullHashesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FindFullHashesRequest](x: Self) {
     
-    @scala.inline
-    def setApiClient(value: ClientInfo): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
+    inline def setApiClient(value: ClientInfo): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
+    inline def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
     
-    @scala.inline
-    def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientStates(value: js.Array[String]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
+    inline def setClientStates(value: js.Array[String]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientStatesUndefined: Self = StObject.set(x, "clientStates", js.undefined)
+    inline def setClientStatesUndefined: Self = StObject.set(x, "clientStates", js.undefined)
     
-    @scala.inline
-    def setClientStatesVarargs(value: String*): Self = StObject.set(x, "clientStates", js.Array(value :_*))
+    inline def setClientStatesVarargs(value: String*): Self = StObject.set(x, "clientStates", js.Array(value :_*))
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setThreatInfo(value: ThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
+    inline def setThreatInfo(value: ThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
+    inline def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
   }
 }

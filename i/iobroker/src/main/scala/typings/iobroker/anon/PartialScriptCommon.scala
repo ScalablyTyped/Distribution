@@ -40,100 +40,69 @@ trait PartialScriptCommon extends StObject {
 }
 object PartialScriptCommon {
   
-  @scala.inline
-  def apply(custom: Unit): PartialScriptCommon = {
+  inline def apply(custom: Unit): PartialScriptCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialScriptCommon]
   }
   
-  @scala.inline
-  implicit class PartialScriptCommonMutableBuilder[Self <: PartialScriptCommon] (val x: Self) extends AnyVal {
+  extension [Self <: PartialScriptCommon](x: Self) {
     
-    @scala.inline
-    def setCompiled(value: String): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
+    inline def setCompiled(value: String): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
+    inline def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDeclarations(value: String): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: String): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
+    inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    @scala.inline
-    def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
+    inline def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontDeleteUndefined: Self = StObject.set(x, "dontDelete", js.undefined)
+    inline def setDontDeleteUndefined: Self = StObject.set(x, "dontDelete", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineType(value: String): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+    inline def setEngineType(value: String): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineTypeUndefined: Self = StObject.set(x, "engineType", js.undefined)
+    inline def setEngineTypeUndefined: Self = StObject.set(x, "engineType", js.undefined)
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
-    @scala.inline
-    def setExpert(value: `true`): Self = StObject.set(x, "expert", value.asInstanceOf[js.Any])
+    inline def setExpert(value: `true`): Self = StObject.set(x, "expert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
+    inline def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHash(value: String): Self = StObject.set(x, "sourceHash", value.asInstanceOf[js.Any])
+    inline def setSourceHash(value: String): Self = StObject.set(x, "sourceHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHashUndefined: Self = StObject.set(x, "sourceHash", js.undefined)
+    inline def setSourceHashUndefined: Self = StObject.set(x, "sourceHash", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

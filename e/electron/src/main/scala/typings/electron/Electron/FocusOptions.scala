@@ -15,16 +15,13 @@ trait FocusOptions extends StObject {
 }
 object FocusOptions {
   
-  @scala.inline
-  def apply(steal: Boolean): FocusOptions = {
+  inline def apply(steal: Boolean): FocusOptions = {
     val __obj = js.Dynamic.literal(steal = steal.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusOptions]
   }
   
-  @scala.inline
-  implicit class FocusOptionsMutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FocusOptions](x: Self) {
     
-    @scala.inline
-    def setSteal(value: Boolean): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
+    inline def setSteal(value: Boolean): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
   }
 }

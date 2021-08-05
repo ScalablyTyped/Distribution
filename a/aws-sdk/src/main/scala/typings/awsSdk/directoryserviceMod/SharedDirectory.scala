@@ -53,67 +53,47 @@ trait SharedDirectory extends StObject {
 }
 object SharedDirectory {
   
-  @scala.inline
-  def apply(): SharedDirectory = {
+  inline def apply(): SharedDirectory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedDirectory]
   }
   
-  @scala.inline
-  implicit class SharedDirectoryMutableBuilder[Self <: SharedDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: SharedDirectory](x: Self) {
     
-    @scala.inline
-    def setCreatedDateTime(value: CreatedDateTime): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: CreatedDateTime): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "CreatedDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "CreatedDateTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setOwnerAccountId(value: CustomerId): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
+    inline def setOwnerAccountId(value: CustomerId): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
+    inline def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
     
-    @scala.inline
-    def setOwnerDirectoryId(value: DirectoryId): Self = StObject.set(x, "OwnerDirectoryId", value.asInstanceOf[js.Any])
+    inline def setOwnerDirectoryId(value: DirectoryId): Self = StObject.set(x, "OwnerDirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerDirectoryIdUndefined: Self = StObject.set(x, "OwnerDirectoryId", js.undefined)
+    inline def setOwnerDirectoryIdUndefined: Self = StObject.set(x, "OwnerDirectoryId", js.undefined)
     
-    @scala.inline
-    def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
+    inline def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareMethodUndefined: Self = StObject.set(x, "ShareMethod", js.undefined)
+    inline def setShareMethodUndefined: Self = StObject.set(x, "ShareMethod", js.undefined)
     
-    @scala.inline
-    def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
+    inline def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
+    inline def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
     
-    @scala.inline
-    def setShareStatus(value: ShareStatus): Self = StObject.set(x, "ShareStatus", value.asInstanceOf[js.Any])
+    inline def setShareStatus(value: ShareStatus): Self = StObject.set(x, "ShareStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareStatusUndefined: Self = StObject.set(x, "ShareStatus", js.undefined)
+    inline def setShareStatusUndefined: Self = StObject.set(x, "ShareStatus", js.undefined)
     
-    @scala.inline
-    def setSharedAccountId(value: CustomerId): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
+    inline def setSharedAccountId(value: CustomerId): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountIdUndefined: Self = StObject.set(x, "SharedAccountId", js.undefined)
+    inline def setSharedAccountIdUndefined: Self = StObject.set(x, "SharedAccountId", js.undefined)
     
-    @scala.inline
-    def setSharedDirectoryId(value: DirectoryId): Self = StObject.set(x, "SharedDirectoryId", value.asInstanceOf[js.Any])
+    inline def setSharedDirectoryId(value: DirectoryId): Self = StObject.set(x, "SharedDirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDirectoryIdUndefined: Self = StObject.set(x, "SharedDirectoryId", js.undefined)
+    inline def setSharedDirectoryIdUndefined: Self = StObject.set(x, "SharedDirectoryId", js.undefined)
   }
 }

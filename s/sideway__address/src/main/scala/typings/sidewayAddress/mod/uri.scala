@@ -20,8 +20,7 @@ object uri {
     * 
     * @returns the decoded string or null if invalid.
     */
-  @scala.inline
-  def decode(string: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def decode(string: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /**
     * Generates a regular expression used to validate URI addresses.
@@ -30,10 +29,8 @@ object uri {
     *
     * @returns an object with the regular expression and meta data.
     */
-  @scala.inline
-  def regex(): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")().asInstanceOf[Expression]
-  @scala.inline
-  def regex(options: Options): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(options.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def regex(): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")().asInstanceOf[Expression]
+  inline def regex(options: Options): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(options.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
   trait Expression extends StObject {
     
@@ -49,20 +46,16 @@ object uri {
   }
   object Expression {
     
-    @scala.inline
-    def apply(raw: String, regex: RegExp): Expression = {
+    inline def apply(raw: String, regex: RegExp): Expression = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expression]
     }
     
-    @scala.inline
-    implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+    extension [Self <: Expression](x: Self) {
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,35 +86,26 @@ object uri {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.sidewayAddress.mod.uri.Options.Options = {
+      inline def apply(): typings.sidewayAddress.mod.uri.Options.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.sidewayAddress.mod.uri.Options.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.sidewayAddress.mod.uri.Options.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.sidewayAddress.mod.uri.Options.Options](x: Self) {
         
-        @scala.inline
-        def setAllowRelative(value: Boolean): Self = StObject.set(x, "allowRelative", value.asInstanceOf[js.Any])
+        inline def setAllowRelative(value: Boolean): Self = StObject.set(x, "allowRelative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowRelativeUndefined: Self = StObject.set(x, "allowRelative", js.undefined)
+        inline def setAllowRelativeUndefined: Self = StObject.set(x, "allowRelative", js.undefined)
         
-        @scala.inline
-        def setDomain(value: Boolean): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: Boolean): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+        inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        @scala.inline
-        def setScheme(value: Scheme | js.Array[Scheme]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+        inline def setScheme(value: Scheme | js.Array[Scheme]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+        inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
         
-        @scala.inline
-        def setSchemeVarargs(value: Scheme*): Self = StObject.set(x, "scheme", js.Array(value :_*))
+        inline def setSchemeVarargs(value: Scheme*): Self = StObject.set(x, "scheme", js.Array(value :_*))
       }
     }
     
@@ -136,20 +120,16 @@ object uri {
     }
     object Query {
       
-      @scala.inline
-      def apply(): Query = {
+      inline def apply(): Query = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Query]
       }
       
-      @scala.inline
-      implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+      extension [Self <: Query](x: Self) {
         
-        @scala.inline
-        def setAllowQuerySquareBrackets(value: Boolean): Self = StObject.set(x, "allowQuerySquareBrackets", value.asInstanceOf[js.Any])
+        inline def setAllowQuerySquareBrackets(value: Boolean): Self = StObject.set(x, "allowQuerySquareBrackets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowQuerySquareBracketsUndefined: Self = StObject.set(x, "allowQuerySquareBrackets", js.undefined)
+        inline def setAllowQuerySquareBracketsUndefined: Self = StObject.set(x, "allowQuerySquareBrackets", js.undefined)
       }
     }
     
@@ -166,20 +146,16 @@ object uri {
     }
     object Relative {
       
-      @scala.inline
-      def apply(): Relative = {
+      inline def apply(): Relative = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Relative]
       }
       
-      @scala.inline
-      implicit class RelativeMutableBuilder[Self <: Relative] (val x: Self) extends AnyVal {
+      extension [Self <: Relative](x: Self) {
         
-        @scala.inline
-        def setRelativeOnly(value: Boolean): Self = StObject.set(x, "relativeOnly", value.asInstanceOf[js.Any])
+        inline def setRelativeOnly(value: Boolean): Self = StObject.set(x, "relativeOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRelativeOnlyUndefined: Self = StObject.set(x, "relativeOnly", js.undefined)
+        inline def setRelativeOnlyUndefined: Self = StObject.set(x, "relativeOnly", js.undefined)
       }
     }
     

@@ -33,49 +33,35 @@ trait TargetLocation extends StObject {
 }
 object TargetLocation {
   
-  @scala.inline
-  def apply(): TargetLocation = {
+  inline def apply(): TargetLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetLocation]
   }
   
-  @scala.inline
-  implicit class TargetLocationMutableBuilder[Self <: TargetLocation] (val x: Self) extends AnyVal {
+  extension [Self <: TargetLocation](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: Accounts): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: Accounts): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setExecutionRoleName(value: ExecutionRoleName): Self = StObject.set(x, "ExecutionRoleName", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleName(value: ExecutionRoleName): Self = StObject.set(x, "ExecutionRoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleNameUndefined: Self = StObject.set(x, "ExecutionRoleName", js.undefined)
+    inline def setExecutionRoleNameUndefined: Self = StObject.set(x, "ExecutionRoleName", js.undefined)
     
-    @scala.inline
-    def setRegions(value: Regions): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: Regions): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetLocationMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "TargetLocationMaxConcurrency", value.asInstanceOf[js.Any])
+    inline def setTargetLocationMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "TargetLocationMaxConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLocationMaxConcurrencyUndefined: Self = StObject.set(x, "TargetLocationMaxConcurrency", js.undefined)
+    inline def setTargetLocationMaxConcurrencyUndefined: Self = StObject.set(x, "TargetLocationMaxConcurrency", js.undefined)
     
-    @scala.inline
-    def setTargetLocationMaxErrors(value: MaxErrors): Self = StObject.set(x, "TargetLocationMaxErrors", value.asInstanceOf[js.Any])
+    inline def setTargetLocationMaxErrors(value: MaxErrors): Self = StObject.set(x, "TargetLocationMaxErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLocationMaxErrorsUndefined: Self = StObject.set(x, "TargetLocationMaxErrors", js.undefined)
+    inline def setTargetLocationMaxErrorsUndefined: Self = StObject.set(x, "TargetLocationMaxErrors", js.undefined)
   }
 }

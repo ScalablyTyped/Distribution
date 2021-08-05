@@ -27,8 +27,7 @@ trait IUtilArray extends StObject {
 }
 object IUtilArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     invoke: (js.Array[js.Any], String) => js.Array[js.Any],
     max: (js.Array[js.Any], String) => js.Any,
     min: (js.Array[js.Any], String) => js.Any
@@ -37,16 +36,12 @@ object IUtilArray {
     __obj.asInstanceOf[IUtilArray]
   }
   
-  @scala.inline
-  implicit class IUtilArrayMutableBuilder[Self <: IUtilArray] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilArray](x: Self) {
     
-    @scala.inline
-    def setInvoke(value: (js.Array[js.Any], String) => js.Array[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+    inline def setInvoke(value: (js.Array[js.Any], String) => js.Array[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMax(value: (js.Array[js.Any], String) => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+    inline def setMax(value: (js.Array[js.Any], String) => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMin(value: (js.Array[js.Any], String) => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+    inline def setMin(value: (js.Array[js.Any], String) => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
   }
 }

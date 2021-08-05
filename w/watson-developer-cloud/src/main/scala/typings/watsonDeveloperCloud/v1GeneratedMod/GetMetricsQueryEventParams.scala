@@ -23,43 +23,31 @@ trait GetMetricsQueryEventParams extends StObject {
 }
 object GetMetricsQueryEventParams {
   
-  @scala.inline
-  def apply(): GetMetricsQueryEventParams = {
+  inline def apply(): GetMetricsQueryEventParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMetricsQueryEventParams]
   }
   
-  @scala.inline
-  implicit class GetMetricsQueryEventParamsMutableBuilder[Self <: GetMetricsQueryEventParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricsQueryEventParams](x: Self) {
     
-    @scala.inline
-    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
+    inline def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
+    inline def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setResult_type(value: ResultType | String): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
+    inline def setResult_type(value: ResultType | String): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
+    inline def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
+    inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
   }
 }

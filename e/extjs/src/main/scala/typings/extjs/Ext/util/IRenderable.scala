@@ -51,55 +51,39 @@ trait IRenderable
 }
 object IRenderable {
   
-  @scala.inline
-  def apply(): IRenderable = {
+  inline def apply(): IRenderable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRenderable]
   }
   
-  @scala.inline
-  implicit class IRenderableMutableBuilder[Self <: IRenderable] (val x: Self) extends AnyVal {
+  extension [Self <: IRenderable](x: Self) {
     
-    @scala.inline
-    def setAfterRender(value: () => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction0(value))
+    inline def setAfterRender(value: () => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
+    inline def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
-    @scala.inline
-    def setDoAutoRender(value: () => Unit): Self = StObject.set(x, "doAutoRender", js.Any.fromFunction0(value))
+    inline def setDoAutoRender(value: () => Unit): Self = StObject.set(x, "doAutoRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoAutoRenderUndefined: Self = StObject.set(x, "doAutoRender", js.undefined)
+    inline def setDoAutoRenderUndefined: Self = StObject.set(x, "doAutoRender", js.undefined)
     
-    @scala.inline
-    def setEnsureAttachedToBody(value: /* runLayout */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "ensureAttachedToBody", js.Any.fromFunction1(value))
+    inline def setEnsureAttachedToBody(value: /* runLayout */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "ensureAttachedToBody", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnsureAttachedToBodyUndefined: Self = StObject.set(x, "ensureAttachedToBody", js.undefined)
+    inline def setEnsureAttachedToBodyUndefined: Self = StObject.set(x, "ensureAttachedToBody", js.undefined)
     
-    @scala.inline
-    def setGetInsertPosition(value: /* position */ js.UndefOr[js.Any] => HTMLElement): Self = StObject.set(x, "getInsertPosition", js.Any.fromFunction1(value))
+    inline def setGetInsertPosition(value: /* position */ js.UndefOr[js.Any] => HTMLElement): Self = StObject.set(x, "getInsertPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInsertPositionUndefined: Self = StObject.set(x, "getInsertPosition", js.undefined)
+    inline def setGetInsertPositionUndefined: Self = StObject.set(x, "getInsertPosition", js.undefined)
     
-    @scala.inline
-    def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    inline def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
+    inline def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
-    @scala.inline
-    def setOnRender(value: (/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
+    inline def setOnRender(value: (/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+    inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    @scala.inline
-    def setRender(value: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

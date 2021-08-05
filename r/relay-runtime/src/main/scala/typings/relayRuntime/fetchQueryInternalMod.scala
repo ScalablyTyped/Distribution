@@ -15,19 +15,15 @@ object fetchQueryInternalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fetchQuery(environment: Environment, operation: OperationDescriptor): RelayObservable[GraphQLResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[GraphQLResponse]]
+  inline def fetchQuery(environment: Environment, operation: OperationDescriptor): RelayObservable[GraphQLResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[GraphQLResponse]]
   
-  @scala.inline
-  def fetchQueryDeduped(
+  inline def fetchQueryDeduped(
     environment: Environment,
     request: RequestDescriptor,
     fetchFn: js.Function0[RelayObservable[GraphQLResponse]]
   ): RelayObservable[GraphQLResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQueryDeduped")(environment.asInstanceOf[js.Any], request.asInstanceOf[js.Any], fetchFn.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[GraphQLResponse]]
   
-  @scala.inline
-  def getObservableForActiveRequest(environment: Environment, request: RequestDescriptor): RelayObservable[Unit] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getObservableForActiveRequest")(environment.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[Unit] | Null]
+  inline def getObservableForActiveRequest(environment: Environment, request: RequestDescriptor): RelayObservable[Unit] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getObservableForActiveRequest")(environment.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[Unit] | Null]
   
-  @scala.inline
-  def getPromiseForActiveRequest(environment: Environment, request: RequestDescriptor): js.Promise[Unit] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPromiseForActiveRequest")(environment.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Null]
+  inline def getPromiseForActiveRequest(environment: Environment, request: RequestDescriptor): js.Promise[Unit] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPromiseForActiveRequest")(environment.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Null]
 }

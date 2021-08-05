@@ -13,19 +13,15 @@ trait InputFilter extends StObject {
 }
 object InputFilter {
   
-  @scala.inline
-  def apply(conditions: js.Array[InputFilterCondition]): InputFilter = {
+  inline def apply(conditions: js.Array[InputFilterCondition]): InputFilter = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputFilter]
   }
   
-  @scala.inline
-  implicit class InputFilterMutableBuilder[Self <: InputFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InputFilter](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[InputFilterCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[InputFilterCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: InputFilterCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: InputFilterCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

@@ -10,8 +10,6 @@ object isValidTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidType(`type`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isValidType(`type`: js.Any, allowArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidType(`type`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidType(`type`: js.Any, allowArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

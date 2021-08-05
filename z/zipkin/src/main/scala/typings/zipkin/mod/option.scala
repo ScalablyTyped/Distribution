@@ -45,14 +45,11 @@ object option {
   }
   
   // Throw error is not a valid option
-  @scala.inline
-  def fromNullable[V](nullable: V): IOption[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[IOption[V]]
+  inline def fromNullable[V](nullable: V): IOption[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[IOption[V]]
   
-  @scala.inline
-  def isOptional(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOptional(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def verifyIsOptional(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyIsOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def verifyIsOptional(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyIsOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait INone[T]

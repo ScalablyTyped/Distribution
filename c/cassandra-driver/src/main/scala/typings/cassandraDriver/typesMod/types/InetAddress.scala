@@ -27,6 +27,5 @@ object InetAddress {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromString(value: String): InetAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[InetAddress]
+  inline def fromString(value: String): InetAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[InetAddress]
 }

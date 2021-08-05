@@ -17,25 +17,19 @@ trait Changed extends StObject {
 }
 object Changed {
   
-  @scala.inline
-  def apply(changed: js.Object, config: js.Object, rev: String): Changed = {
+  inline def apply(changed: js.Object, config: js.Object, rev: String): Changed = {
     val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any], t = "replace")
     __obj.asInstanceOf[Changed]
   }
   
-  @scala.inline
-  implicit class ChangedMutableBuilder[Self <: Changed] (val x: Self) extends AnyVal {
+  extension [Self <: Changed](x: Self) {
     
-    @scala.inline
-    def setChanged(value: js.Object): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+    inline def setChanged(value: js.Object): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: replace): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: replace): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

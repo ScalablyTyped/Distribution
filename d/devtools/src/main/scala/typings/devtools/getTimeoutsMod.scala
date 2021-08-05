@@ -11,6 +11,5 @@ object getTimeoutsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Implicit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Implicit]
+  inline def default(): Implicit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Implicit]
 }

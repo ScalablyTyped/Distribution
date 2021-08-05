@@ -187,154 +187,105 @@ trait SecureContextOptions extends StObject {
 }
 object SecureContextOptions {
   
-  @scala.inline
-  def apply(): SecureContextOptions = {
+  inline def apply(): SecureContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecureContextOptions]
   }
   
-  @scala.inline
-  implicit class SecureContextOptionsMutableBuilder[Self <: SecureContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SecureContextOptions](x: Self) {
     
-    @scala.inline
-    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+    inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+    inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    @scala.inline
-    def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
-    @scala.inline
-    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    @scala.inline
-    def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+    inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
     
-    @scala.inline
-    def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
+    inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
+    inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
     
-    @scala.inline
-    def setClientCertEngine(value: String): Self = StObject.set(x, "clientCertEngine", value.asInstanceOf[js.Any])
+    inline def setClientCertEngine(value: String): Self = StObject.set(x, "clientCertEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertEngineUndefined: Self = StObject.set(x, "clientCertEngine", js.undefined)
+    inline def setClientCertEngineUndefined: Self = StObject.set(x, "clientCertEngine", js.undefined)
     
-    @scala.inline
-    def setCrl(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+    inline def setCrl(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
+    inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
     
-    @scala.inline
-    def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value :_*))
+    inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value :_*))
     
-    @scala.inline
-    def setDhparam(value: String | Buffer): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
+    inline def setDhparam(value: String | Buffer): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDhparamUndefined: Self = StObject.set(x, "dhparam", js.undefined)
+    inline def setDhparamUndefined: Self = StObject.set(x, "dhparam", js.undefined)
     
-    @scala.inline
-    def setEcdhCurve(value: String): Self = StObject.set(x, "ecdhCurve", value.asInstanceOf[js.Any])
+    inline def setEcdhCurve(value: String): Self = StObject.set(x, "ecdhCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdhCurveUndefined: Self = StObject.set(x, "ecdhCurve", js.undefined)
+    inline def setEcdhCurveUndefined: Self = StObject.set(x, "ecdhCurve", js.undefined)
     
-    @scala.inline
-    def setHonorCipherOrder(value: Boolean): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
+    inline def setHonorCipherOrder(value: Boolean): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
+    inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
     
-    @scala.inline
-    def setKey(value: String | Buffer | (js.Array[Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | Buffer | (js.Array[Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setKeyVarargs(value: (Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value :_*))
+    inline def setKeyVarargs(value: (Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxVersion(value: SecureVersion): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+    inline def setMaxVersion(value: SecureVersion): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
+    inline def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
     
-    @scala.inline
-    def setMinVersion(value: SecureVersion): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
+    inline def setMinVersion(value: SecureVersion): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
+    inline def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
-    @scala.inline
-    def setPfx(value: String | Buffer | (js.Array[String | Buffer | PxfObject])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+    inline def setPfx(value: String | Buffer | (js.Array[String | Buffer | PxfObject])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+    inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
     
-    @scala.inline
-    def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+    inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
     
-    @scala.inline
-    def setPrivateKeyEngine(value: String): Self = StObject.set(x, "privateKeyEngine", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyEngine(value: String): Self = StObject.set(x, "privateKeyEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyEngineUndefined: Self = StObject.set(x, "privateKeyEngine", js.undefined)
+    inline def setPrivateKeyEngineUndefined: Self = StObject.set(x, "privateKeyEngine", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyIdentifier(value: String): Self = StObject.set(x, "privateKeyIdentifier", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyIdentifier(value: String): Self = StObject.set(x, "privateKeyIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyIdentifierUndefined: Self = StObject.set(x, "privateKeyIdentifier", js.undefined)
+    inline def setPrivateKeyIdentifierUndefined: Self = StObject.set(x, "privateKeyIdentifier", js.undefined)
     
-    @scala.inline
-    def setSecureOptions(value: Double): Self = StObject.set(x, "secureOptions", value.asInstanceOf[js.Any])
+    inline def setSecureOptions(value: Double): Self = StObject.set(x, "secureOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureOptionsUndefined: Self = StObject.set(x, "secureOptions", js.undefined)
+    inline def setSecureOptionsUndefined: Self = StObject.set(x, "secureOptions", js.undefined)
     
-    @scala.inline
-    def setSecureProtocol(value: String): Self = StObject.set(x, "secureProtocol", value.asInstanceOf[js.Any])
+    inline def setSecureProtocol(value: String): Self = StObject.set(x, "secureProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureProtocolUndefined: Self = StObject.set(x, "secureProtocol", js.undefined)
+    inline def setSecureProtocolUndefined: Self = StObject.set(x, "secureProtocol", js.undefined)
     
-    @scala.inline
-    def setSessionIdContext(value: String): Self = StObject.set(x, "sessionIdContext", value.asInstanceOf[js.Any])
+    inline def setSessionIdContext(value: String): Self = StObject.set(x, "sessionIdContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdContextUndefined: Self = StObject.set(x, "sessionIdContext", js.undefined)
+    inline def setSessionIdContextUndefined: Self = StObject.set(x, "sessionIdContext", js.undefined)
     
-    @scala.inline
-    def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+    inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+    inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     
-    @scala.inline
-    def setSigalgs(value: String): Self = StObject.set(x, "sigalgs", value.asInstanceOf[js.Any])
+    inline def setSigalgs(value: String): Self = StObject.set(x, "sigalgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigalgsUndefined: Self = StObject.set(x, "sigalgs", js.undefined)
+    inline def setSigalgsUndefined: Self = StObject.set(x, "sigalgs", js.undefined)
     
-    @scala.inline
-    def setTicketKeys(value: Buffer): Self = StObject.set(x, "ticketKeys", value.asInstanceOf[js.Any])
+    inline def setTicketKeys(value: Buffer): Self = StObject.set(x, "ticketKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketKeysUndefined: Self = StObject.set(x, "ticketKeys", js.undefined)
+    inline def setTicketKeysUndefined: Self = StObject.set(x, "ticketKeys", js.undefined)
   }
 }

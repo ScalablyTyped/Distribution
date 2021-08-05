@@ -52,9 +52,7 @@ object Pin {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def read(pin: Double, cb: js.Function2[/* error */ Error, /* data */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pin.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def read(pin: Double, cb: js.Function2[/* error */ Error, /* data */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pin.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def write(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

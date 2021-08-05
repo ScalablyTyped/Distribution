@@ -16,25 +16,19 @@ trait Avatar extends StObject {
 }
 object Avatar {
   
-  @scala.inline
-  def apply(medium: AvatarConfig, small: AvatarConfig, thumb: AvatarConfig, tiny: AvatarConfig): Avatar = {
+  inline def apply(medium: AvatarConfig, small: AvatarConfig, thumb: AvatarConfig, tiny: AvatarConfig): Avatar = {
     val __obj = js.Dynamic.literal(medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], tiny = tiny.asInstanceOf[js.Any])
     __obj.asInstanceOf[Avatar]
   }
   
-  @scala.inline
-  implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
+  extension [Self <: Avatar](x: Self) {
     
-    @scala.inline
-    def setMedium(value: AvatarConfig): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: AvatarConfig): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: AvatarConfig): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: AvatarConfig): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumb(value: AvatarConfig): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: AvatarConfig): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiny(value: AvatarConfig): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+    inline def setTiny(value: AvatarConfig): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
   }
 }

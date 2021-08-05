@@ -23,16 +23,13 @@ trait NightwatchTestSettingScreenshots
 }
 object NightwatchTestSettingScreenshots {
   
-  @scala.inline
-  def apply(screenshots: NightwatchScreenshotOptions): NightwatchTestSettingScreenshots = {
+  inline def apply(screenshots: NightwatchScreenshotOptions): NightwatchTestSettingScreenshots = {
     val __obj = js.Dynamic.literal(screenshots = screenshots.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestSettingScreenshots]
   }
   
-  @scala.inline
-  implicit class NightwatchTestSettingScreenshotsMutableBuilder[Self <: NightwatchTestSettingScreenshots] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchTestSettingScreenshots](x: Self) {
     
-    @scala.inline
-    def setScreenshots(value: NightwatchScreenshotOptions): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
+    inline def setScreenshots(value: NightwatchScreenshotOptions): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
   }
 }

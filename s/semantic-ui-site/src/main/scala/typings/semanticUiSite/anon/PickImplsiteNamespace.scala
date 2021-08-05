@@ -11,16 +11,13 @@ trait PickImplsiteNamespace extends StObject {
 }
 object PickImplsiteNamespace {
   
-  @scala.inline
-  def apply(siteNamespace: String): PickImplsiteNamespace = {
+  inline def apply(siteNamespace: String): PickImplsiteNamespace = {
     val __obj = js.Dynamic.literal(siteNamespace = siteNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsiteNamespace]
   }
   
-  @scala.inline
-  implicit class PickImplsiteNamespaceMutableBuilder[Self <: PickImplsiteNamespace] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsiteNamespace](x: Self) {
     
-    @scala.inline
-    def setSiteNamespace(value: String): Self = StObject.set(x, "siteNamespace", value.asInstanceOf[js.Any])
+    inline def setSiteNamespace(value: String): Self = StObject.set(x, "siteNamespace", value.asInstanceOf[js.Any])
   }
 }

@@ -20,12 +20,10 @@ object DatePickerView {
   @JSImport("@ant-design/react-native", "DatePickerView.contextTypes")
   @js.native
   def contextTypes: AntLocale = js.native
-  @scala.inline
-  def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "DatePickerView.defaultProps")
   @js.native
   def defaultProps: MinuteStep = js.native
-  @scala.inline
-  def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

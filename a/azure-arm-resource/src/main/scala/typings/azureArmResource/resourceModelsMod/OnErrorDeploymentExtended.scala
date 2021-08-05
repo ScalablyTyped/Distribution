@@ -24,31 +24,23 @@ trait OnErrorDeploymentExtended extends StObject {
 }
 object OnErrorDeploymentExtended {
   
-  @scala.inline
-  def apply(): OnErrorDeploymentExtended = {
+  inline def apply(): OnErrorDeploymentExtended = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnErrorDeploymentExtended]
   }
   
-  @scala.inline
-  implicit class OnErrorDeploymentExtendedMutableBuilder[Self <: OnErrorDeploymentExtended] (val x: Self) extends AnyVal {
+  extension [Self <: OnErrorDeploymentExtended](x: Self) {
     
-    @scala.inline
-    def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
+    inline def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentNameUndefined: Self = StObject.set(x, "deploymentName", js.undefined)
+    inline def setDeploymentNameUndefined: Self = StObject.set(x, "deploymentName", js.undefined)
     
-    @scala.inline
-    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
+    inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
+    inline def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

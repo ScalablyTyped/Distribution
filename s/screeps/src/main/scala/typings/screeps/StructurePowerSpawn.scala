@@ -52,8 +52,7 @@ trait StructurePowerSpawn
 }
 object StructurePowerSpawn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     energy: Double,
@@ -76,25 +75,18 @@ object StructurePowerSpawn {
     __obj.asInstanceOf[StructurePowerSpawn]
   }
   
-  @scala.inline
-  implicit class StructurePowerSpawnMutableBuilder[Self <: StructurePowerSpawn] (val x: Self) extends AnyVal {
+  extension [Self <: StructurePowerSpawn](x: Self) {
     
-    @scala.inline
-    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
+    inline def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerCapacity(value: Double): Self = StObject.set(x, "powerCapacity", value.asInstanceOf[js.Any])
+    inline def setPowerCapacity(value: Double): Self = StObject.set(x, "powerCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessPower(value: () => ScreepsReturnCode): Self = StObject.set(x, "processPower", js.Any.fromFunction0(value))
+    inline def setProcessPower(value: () => ScreepsReturnCode): Self = StObject.set(x, "processPower", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStore(value: StoreRESOURCEENERGYRESOUR): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreRESOURCEENERGYRESOUR): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

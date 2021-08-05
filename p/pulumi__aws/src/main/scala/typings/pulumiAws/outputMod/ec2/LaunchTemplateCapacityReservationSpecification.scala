@@ -18,25 +18,19 @@ trait LaunchTemplateCapacityReservationSpecification extends StObject {
 }
 object LaunchTemplateCapacityReservationSpecification {
   
-  @scala.inline
-  def apply(): LaunchTemplateCapacityReservationSpecification = {
+  inline def apply(): LaunchTemplateCapacityReservationSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateCapacityReservationSpecification]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateCapacityReservationSpecificationMutableBuilder[Self <: LaunchTemplateCapacityReservationSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateCapacityReservationSpecification](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationPreference(value: String): Self = StObject.set(x, "capacityReservationPreference", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationPreference(value: String): Self = StObject.set(x, "capacityReservationPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationPreferenceUndefined: Self = StObject.set(x, "capacityReservationPreference", js.undefined)
+    inline def setCapacityReservationPreferenceUndefined: Self = StObject.set(x, "capacityReservationPreference", js.undefined)
     
-    @scala.inline
-    def setCapacityReservationTarget(value: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget): Self = StObject.set(x, "capacityReservationTarget", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationTarget(value: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget): Self = StObject.set(x, "capacityReservationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationTargetUndefined: Self = StObject.set(x, "capacityReservationTarget", js.undefined)
+    inline def setCapacityReservationTargetUndefined: Self = StObject.set(x, "capacityReservationTarget", js.undefined)
   }
 }

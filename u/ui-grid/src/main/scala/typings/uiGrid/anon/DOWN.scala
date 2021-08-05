@@ -18,28 +18,21 @@ trait DOWN extends StObject {
 }
 object DOWN {
   
-  @scala.inline
-  def apply(DOWN: String, LEFT: String, NONE: String, RIGHT: String, UP: String): DOWN = {
+  inline def apply(DOWN: String, LEFT: String, NONE: String, RIGHT: String, UP: String): DOWN = {
     val __obj = js.Dynamic.literal(DOWN = DOWN.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], UP = UP.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOWN]
   }
   
-  @scala.inline
-  implicit class DOWNMutableBuilder[Self <: DOWN] (val x: Self) extends AnyVal {
+  extension [Self <: DOWN](x: Self) {
     
-    @scala.inline
-    def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
+    inline def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLEFT(value: String): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
+    inline def setLEFT(value: String): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNONE(value: String): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: String): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIGHT(value: String): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
+    inline def setRIGHT(value: String): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUP(value: String): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
+    inline def setUP(value: String): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
   }
 }

@@ -25,19 +25,15 @@ trait Defaulted[T] extends StObject {
 }
 object Defaulted {
   
-  @scala.inline
-  def apply[T](IsDefaulted: Boolean, Value: T): Defaulted[T] = {
+  inline def apply[T](IsDefaulted: Boolean, Value: T): Defaulted[T] = {
     val __obj = js.Dynamic.literal(IsDefaulted = IsDefaulted.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Defaulted[T]]
   }
   
-  @scala.inline
-  implicit class DefaultedMutableBuilder[Self <: Defaulted[?], T] (val x: Self & Defaulted[T]) extends AnyVal {
+  extension [Self <: Defaulted[?], T](x: Self & Defaulted[T]) {
     
-    @scala.inline
-    def setIsDefaulted(value: Boolean): Self = StObject.set(x, "IsDefaulted", value.asInstanceOf[js.Any])
+    inline def setIsDefaulted(value: Boolean): Self = StObject.set(x, "IsDefaulted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

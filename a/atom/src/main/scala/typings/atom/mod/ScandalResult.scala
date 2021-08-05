@@ -13,22 +13,17 @@ trait ScandalResult extends StObject {
 }
 object ScandalResult {
   
-  @scala.inline
-  def apply(filePath: String, matches: js.Array[LeadingContextLines]): ScandalResult = {
+  inline def apply(filePath: String, matches: js.Array[LeadingContextLines]): ScandalResult = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScandalResult]
   }
   
-  @scala.inline
-  implicit class ScandalResultMutableBuilder[Self <: ScandalResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScandalResult](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: js.Array[LeadingContextLines]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[LeadingContextLines]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: LeadingContextLines*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: LeadingContextLines*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

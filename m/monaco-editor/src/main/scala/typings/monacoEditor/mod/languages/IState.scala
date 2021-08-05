@@ -10,17 +10,14 @@ trait IState extends StObject {
 }
 object IState {
   
-  @scala.inline
-  def apply(equals_ : IState => Boolean): IState = {
+  inline def apply(equals_ : IState => Boolean): IState = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[IState]
   }
   
-  @scala.inline
-  implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+  extension [Self <: IState](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: IState => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: IState => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
   }
 }

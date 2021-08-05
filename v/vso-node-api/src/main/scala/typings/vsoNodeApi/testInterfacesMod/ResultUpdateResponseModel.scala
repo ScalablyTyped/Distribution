@@ -10,16 +10,13 @@ trait ResultUpdateResponseModel extends StObject {
 }
 object ResultUpdateResponseModel {
   
-  @scala.inline
-  def apply(revision: Double): ResultUpdateResponseModel = {
+  inline def apply(revision: Double): ResultUpdateResponseModel = {
     val __obj = js.Dynamic.literal(revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultUpdateResponseModel]
   }
   
-  @scala.inline
-  implicit class ResultUpdateResponseModelMutableBuilder[Self <: ResultUpdateResponseModel] (val x: Self) extends AnyVal {
+  extension [Self <: ResultUpdateResponseModel](x: Self) {
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

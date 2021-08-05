@@ -23,40 +23,29 @@ trait AutoInstallPolicy extends StObject {
 }
 object AutoInstallPolicy {
   
-  @scala.inline
-  def apply(): AutoInstallPolicy = {
+  inline def apply(): AutoInstallPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoInstallPolicy]
   }
   
-  @scala.inline
-  implicit class AutoInstallPolicyMutableBuilder[Self <: AutoInstallPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AutoInstallPolicy](x: Self) {
     
-    @scala.inline
-    def setAutoInstallConstraint(value: js.Array[AutoInstallConstraint]): Self = StObject.set(x, "autoInstallConstraint", value.asInstanceOf[js.Any])
+    inline def setAutoInstallConstraint(value: js.Array[AutoInstallConstraint]): Self = StObject.set(x, "autoInstallConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoInstallConstraintUndefined: Self = StObject.set(x, "autoInstallConstraint", js.undefined)
+    inline def setAutoInstallConstraintUndefined: Self = StObject.set(x, "autoInstallConstraint", js.undefined)
     
-    @scala.inline
-    def setAutoInstallConstraintVarargs(value: AutoInstallConstraint*): Self = StObject.set(x, "autoInstallConstraint", js.Array(value :_*))
+    inline def setAutoInstallConstraintVarargs(value: AutoInstallConstraint*): Self = StObject.set(x, "autoInstallConstraint", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoInstallMode(value: String): Self = StObject.set(x, "autoInstallMode", value.asInstanceOf[js.Any])
+    inline def setAutoInstallMode(value: String): Self = StObject.set(x, "autoInstallMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoInstallModeUndefined: Self = StObject.set(x, "autoInstallMode", js.undefined)
+    inline def setAutoInstallModeUndefined: Self = StObject.set(x, "autoInstallMode", js.undefined)
     
-    @scala.inline
-    def setAutoInstallPriority(value: Double): Self = StObject.set(x, "autoInstallPriority", value.asInstanceOf[js.Any])
+    inline def setAutoInstallPriority(value: Double): Self = StObject.set(x, "autoInstallPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoInstallPriorityUndefined: Self = StObject.set(x, "autoInstallPriority", js.undefined)
+    inline def setAutoInstallPriorityUndefined: Self = StObject.set(x, "autoInstallPriority", js.undefined)
     
-    @scala.inline
-    def setMinimumVersionCode(value: Double): Self = StObject.set(x, "minimumVersionCode", value.asInstanceOf[js.Any])
+    inline def setMinimumVersionCode(value: Double): Self = StObject.set(x, "minimumVersionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumVersionCodeUndefined: Self = StObject.set(x, "minimumVersionCode", js.undefined)
+    inline def setMinimumVersionCodeUndefined: Self = StObject.set(x, "minimumVersionCode", js.undefined)
   }
 }

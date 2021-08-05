@@ -12,19 +12,15 @@ trait IPrintCustomItemDetails extends StObject {
 }
 object IPrintCustomItemDetails {
   
-  @scala.inline
-  def apply(itemDisplayName: String, itemId: String): IPrintCustomItemDetails = {
+  inline def apply(itemDisplayName: String, itemId: String): IPrintCustomItemDetails = {
     val __obj = js.Dynamic.literal(itemDisplayName = itemDisplayName.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintCustomItemDetails]
   }
   
-  @scala.inline
-  implicit class IPrintCustomItemDetailsMutableBuilder[Self <: IPrintCustomItemDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintCustomItemDetails](x: Self) {
     
-    @scala.inline
-    def setItemDisplayName(value: String): Self = StObject.set(x, "itemDisplayName", value.asInstanceOf[js.Any])
+    inline def setItemDisplayName(value: String): Self = StObject.set(x, "itemDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
   }
 }

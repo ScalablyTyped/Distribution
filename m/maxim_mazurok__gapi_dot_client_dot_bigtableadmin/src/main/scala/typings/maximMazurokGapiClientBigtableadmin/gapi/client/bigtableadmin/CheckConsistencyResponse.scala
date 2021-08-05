@@ -11,19 +11,15 @@ trait CheckConsistencyResponse extends StObject {
 }
 object CheckConsistencyResponse {
   
-  @scala.inline
-  def apply(): CheckConsistencyResponse = {
+  inline def apply(): CheckConsistencyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckConsistencyResponse]
   }
   
-  @scala.inline
-  implicit class CheckConsistencyResponseMutableBuilder[Self <: CheckConsistencyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CheckConsistencyResponse](x: Self) {
     
-    @scala.inline
-    def setConsistent(value: Boolean): Self = StObject.set(x, "consistent", value.asInstanceOf[js.Any])
+    inline def setConsistent(value: Boolean): Self = StObject.set(x, "consistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistentUndefined: Self = StObject.set(x, "consistent", js.undefined)
+    inline def setConsistentUndefined: Self = StObject.set(x, "consistent", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteAlarmRequest extends StObject {
 }
 object DeleteAlarmRequest {
   
-  @scala.inline
-  def apply(alarmName: ResourceName): DeleteAlarmRequest = {
+  inline def apply(alarmName: ResourceName): DeleteAlarmRequest = {
     val __obj = js.Dynamic.literal(alarmName = alarmName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAlarmRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAlarmRequestMutableBuilder[Self <: DeleteAlarmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAlarmRequest](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
   }
 }

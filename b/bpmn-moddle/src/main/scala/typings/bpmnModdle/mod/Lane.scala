@@ -20,8 +20,7 @@ trait Lane
 }
 object Lane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     childLaneSet: LaneSet,
@@ -35,25 +34,18 @@ object Lane {
     __obj.asInstanceOf[Lane]
   }
   
-  @scala.inline
-  implicit class LaneMutableBuilder[Self <: Lane] (val x: Self) extends AnyVal {
+  extension [Self <: Lane](x: Self) {
     
-    @scala.inline
-    def setChildLaneSet(value: LaneSet): Self = StObject.set(x, "childLaneSet", value.asInstanceOf[js.Any])
+    inline def setChildLaneSet(value: LaneSet): Self = StObject.set(x, "childLaneSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowNodeRef(value: js.Array[FlowNode]): Self = StObject.set(x, "flowNodeRef", value.asInstanceOf[js.Any])
+    inline def setFlowNodeRef(value: js.Array[FlowNode]): Self = StObject.set(x, "flowNodeRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowNodeRefVarargs(value: FlowNode*): Self = StObject.set(x, "flowNodeRef", js.Array(value :_*))
+    inline def setFlowNodeRefVarargs(value: FlowNode*): Self = StObject.set(x, "flowNodeRef", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionElement(value: BaseElement): Self = StObject.set(x, "partitionElement", value.asInstanceOf[js.Any])
+    inline def setPartitionElement(value: BaseElement): Self = StObject.set(x, "partitionElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionElementRef(value: BaseElement): Self = StObject.set(x, "partitionElementRef", value.asInstanceOf[js.Any])
+    inline def setPartitionElementRef(value: BaseElement): Self = StObject.set(x, "partitionElementRef", value.asInstanceOf[js.Any])
   }
 }

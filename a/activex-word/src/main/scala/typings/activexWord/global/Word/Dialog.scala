@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Dialog")
 @js.native
-class Dialog protected ()
+/* private */ class Dialog ()
   extends StObject
      with typings.activexWord.Word.Dialog

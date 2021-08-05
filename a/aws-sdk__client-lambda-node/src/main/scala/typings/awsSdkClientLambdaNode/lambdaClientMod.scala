@@ -16,7 +16,7 @@ object lambdaClientMod {
   class LambdaClient protected () extends StObject {
     def this(configuration: LambdaConfiguration) = this()
     
-    val config: LambdaResolvedConfiguration = js.native
+    /* protected */ val config: LambdaResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

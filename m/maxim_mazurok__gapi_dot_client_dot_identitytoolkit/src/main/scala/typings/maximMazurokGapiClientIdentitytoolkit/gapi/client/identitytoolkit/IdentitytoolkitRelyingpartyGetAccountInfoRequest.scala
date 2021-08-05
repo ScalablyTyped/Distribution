@@ -23,52 +23,37 @@ trait IdentitytoolkitRelyingpartyGetAccountInfoRequest extends StObject {
 }
 object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartyGetAccountInfoRequest = {
+  inline def apply(): IdentitytoolkitRelyingpartyGetAccountInfoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyGetAccountInfoRequest]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartyGetAccountInfoRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyGetAccountInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartyGetAccountInfoRequest](x: Self) {
     
-    @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
+    inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
+    inline def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
-    @scala.inline
-    def setEmail(value: js.Array[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: js.Array[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value :_*))
+    inline def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value :_*))
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setLocalId(value: js.Array[String]): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: js.Array[String]): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
+    inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
     
-    @scala.inline
-    def setLocalIdVarargs(value: String*): Self = StObject.set(x, "localId", js.Array(value :_*))
+    inline def setLocalIdVarargs(value: String*): Self = StObject.set(x, "localId", js.Array(value :_*))
     
-    @scala.inline
-    def setPhoneNumber(value: js.Array[String]): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: js.Array[String]): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberVarargs(value: String*): Self = StObject.set(x, "phoneNumber", js.Array(value :_*))
+    inline def setPhoneNumberVarargs(value: String*): Self = StObject.set(x, "phoneNumber", js.Array(value :_*))
   }
 }

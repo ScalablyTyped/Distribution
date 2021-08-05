@@ -27,20 +27,16 @@ object linkLayerWidgetMod {
   }
   object LinkLayerProps {
     
-    @scala.inline
-    def apply(diagramEngine: DiagramEngine, pointAdded: (PointModel, MouseEvent) => js.Any): LinkLayerProps = {
+    inline def apply(diagramEngine: DiagramEngine, pointAdded: (PointModel, MouseEvent) => js.Any): LinkLayerProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], pointAdded = js.Any.fromFunction2(pointAdded))
       __obj.asInstanceOf[LinkLayerProps]
     }
     
-    @scala.inline
-    implicit class LinkLayerPropsMutableBuilder[Self <: LinkLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkLayerProps](x: Self) {
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointAdded(value: (PointModel, MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
+      inline def setPointAdded(value: (PointModel, MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
     }
   }
   

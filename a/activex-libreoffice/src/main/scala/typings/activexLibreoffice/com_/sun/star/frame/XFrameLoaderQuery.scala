@@ -43,8 +43,7 @@ trait XFrameLoaderQuery
 }
 object XFrameLoaderQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableFilterNames: SafeArray[String],
     acquire: () => Unit,
     getAvailableFilterNames: () => SafeArray[String],
@@ -57,19 +56,14 @@ object XFrameLoaderQuery {
     __obj.asInstanceOf[XFrameLoaderQuery]
   }
   
-  @scala.inline
-  implicit class XFrameLoaderQueryMutableBuilder[Self <: XFrameLoaderQuery] (val x: Self) extends AnyVal {
+  extension [Self <: XFrameLoaderQuery](x: Self) {
     
-    @scala.inline
-    def setAvailableFilterNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableFilterNames", value.asInstanceOf[js.Any])
+    inline def setAvailableFilterNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableFilterNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableFilterNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableFilterNames", js.Any.fromFunction0(value))
+    inline def setGetAvailableFilterNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableFilterNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoaderProperties(value: String => SafeArray[PropertyValue]): Self = StObject.set(x, "getLoaderProperties", js.Any.fromFunction1(value))
+    inline def setGetLoaderProperties(value: String => SafeArray[PropertyValue]): Self = StObject.set(x, "getLoaderProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchFilter(value: (String, SeqEquiv[PropertyValue]) => String): Self = StObject.set(x, "searchFilter", js.Any.fromFunction2(value))
+    inline def setSearchFilter(value: (String, SeqEquiv[PropertyValue]) => String): Self = StObject.set(x, "searchFilter", js.Any.fromFunction2(value))
   }
 }

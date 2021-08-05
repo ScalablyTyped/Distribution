@@ -22,53 +22,38 @@ object anon {
   }
   object DisableQuery {
     
-    @scala.inline
-    def apply(): DisableQuery = {
+    inline def apply(): DisableQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisableQuery]
     }
     
-    @scala.inline
-    implicit class DisableQueryMutableBuilder[Self <: DisableQuery] (val x: Self) extends AnyVal {
+    extension [Self <: DisableQuery](x: Self) {
       
-      @scala.inline
-      def setDisableQuery(value: Boolean): Self = StObject.set(x, "disableQuery", value.asInstanceOf[js.Any])
+      inline def setDisableQuery(value: Boolean): Self = StObject.set(x, "disableQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableQueryUndefined: Self = StObject.set(x, "disableQuery", js.undefined)
+      inline def setDisableQueryUndefined: Self = StObject.set(x, "disableQuery", js.undefined)
       
-      @scala.inline
-      def setExcludedMethods(value: js.Array[String]): Self = StObject.set(x, "excludedMethods", value.asInstanceOf[js.Any])
+      inline def setExcludedMethods(value: js.Array[String]): Self = StObject.set(x, "excludedMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedMethodsUndefined: Self = StObject.set(x, "excludedMethods", js.undefined)
+      inline def setExcludedMethodsUndefined: Self = StObject.set(x, "excludedMethods", js.undefined)
       
-      @scala.inline
-      def setExcludedMethodsVarargs(value: String*): Self = StObject.set(x, "excludedMethods", js.Array(value :_*))
+      inline def setExcludedMethodsVarargs(value: String*): Self = StObject.set(x, "excludedMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setInvalidSessionSecretMessage(value: String): Self = StObject.set(x, "invalidSessionSecretMessage", value.asInstanceOf[js.Any])
+      inline def setInvalidSessionSecretMessage(value: String): Self = StObject.set(x, "invalidSessionSecretMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidSessionSecretMessageUndefined: Self = StObject.set(x, "invalidSessionSecretMessage", js.undefined)
+      inline def setInvalidSessionSecretMessageUndefined: Self = StObject.set(x, "invalidSessionSecretMessage", js.undefined)
       
-      @scala.inline
-      def setInvalidSessionSecretStatusCode(value: Double): Self = StObject.set(x, "invalidSessionSecretStatusCode", value.asInstanceOf[js.Any])
+      inline def setInvalidSessionSecretStatusCode(value: Double): Self = StObject.set(x, "invalidSessionSecretStatusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidSessionSecretStatusCodeUndefined: Self = StObject.set(x, "invalidSessionSecretStatusCode", js.undefined)
+      inline def setInvalidSessionSecretStatusCodeUndefined: Self = StObject.set(x, "invalidSessionSecretStatusCode", js.undefined)
       
-      @scala.inline
-      def setInvalidTokenMessage(value: String): Self = StObject.set(x, "invalidTokenMessage", value.asInstanceOf[js.Any])
+      inline def setInvalidTokenMessage(value: String): Self = StObject.set(x, "invalidTokenMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidTokenMessageUndefined: Self = StObject.set(x, "invalidTokenMessage", js.undefined)
+      inline def setInvalidTokenMessageUndefined: Self = StObject.set(x, "invalidTokenMessage", js.undefined)
       
-      @scala.inline
-      def setInvalidTokenStatusCode(value: Double): Self = StObject.set(x, "invalidTokenStatusCode", value.asInstanceOf[js.Any])
+      inline def setInvalidTokenStatusCode(value: Double): Self = StObject.set(x, "invalidTokenStatusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidTokenStatusCodeUndefined: Self = StObject.set(x, "invalidTokenStatusCode", js.undefined)
+      inline def setInvalidTokenStatusCodeUndefined: Self = StObject.set(x, "invalidTokenStatusCode", js.undefined)
     }
   }
 }

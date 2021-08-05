@@ -11,16 +11,13 @@ trait DropdownMenu extends StObject {
 }
 object DropdownMenu {
   
-  @scala.inline
-  def apply(destroy: () => Unit): DropdownMenu = {
+  inline def apply(destroy: () => Unit): DropdownMenu = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[DropdownMenu]
   }
   
-  @scala.inline
-  implicit class DropdownMenuMutableBuilder[Self <: DropdownMenu] (val x: Self) extends AnyVal {
+  extension [Self <: DropdownMenu](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

@@ -12,19 +12,15 @@ trait AnimationEffectReadOnly extends StObject {
 }
 object AnimationEffectReadOnly {
   
-  @scala.inline
-  def apply(getComputedTiming: () => ComputedTimingProperties, timing: Double): AnimationEffectReadOnly = {
+  inline def apply(getComputedTiming: () => ComputedTimingProperties, timing: Double): AnimationEffectReadOnly = {
     val __obj = js.Dynamic.literal(getComputedTiming = js.Any.fromFunction0(getComputedTiming), timing = timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationEffectReadOnly]
   }
   
-  @scala.inline
-  implicit class AnimationEffectReadOnlyMutableBuilder[Self <: AnimationEffectReadOnly] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationEffectReadOnly](x: Self) {
     
-    @scala.inline
-    def setGetComputedTiming(value: () => ComputedTimingProperties): Self = StObject.set(x, "getComputedTiming", js.Any.fromFunction0(value))
+    inline def setGetComputedTiming(value: () => ComputedTimingProperties): Self = StObject.set(x, "getComputedTiming", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTiming(value: Double): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: Double): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
   }
 }

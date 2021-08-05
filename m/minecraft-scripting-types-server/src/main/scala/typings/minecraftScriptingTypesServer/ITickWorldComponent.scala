@@ -32,8 +32,7 @@ trait ITickWorldComponent extends StObject {
 }
 object ITickWorldComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance_to_players: Double,
     never_despawn: Boolean,
     radius: Double,
@@ -43,19 +42,14 @@ object ITickWorldComponent {
     __obj.asInstanceOf[ITickWorldComponent]
   }
   
-  @scala.inline
-  implicit class ITickWorldComponentMutableBuilder[Self <: ITickWorldComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ITickWorldComponent](x: Self) {
     
-    @scala.inline
-    def setDistance_to_players(value: Double): Self = StObject.set(x, "distance_to_players", value.asInstanceOf[js.Any])
+    inline def setDistance_to_players(value: Double): Self = StObject.set(x, "distance_to_players", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNever_despawn(value: Boolean): Self = StObject.set(x, "never_despawn", value.asInstanceOf[js.Any])
+    inline def setNever_despawn(value: Boolean): Self = StObject.set(x, "never_despawn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicking_area(value: IEntityTickingArea): Self = StObject.set(x, "ticking_area", value.asInstanceOf[js.Any])
+    inline def setTicking_area(value: IEntityTickingArea): Self = StObject.set(x, "ticking_area", value.asInstanceOf[js.Any])
   }
 }

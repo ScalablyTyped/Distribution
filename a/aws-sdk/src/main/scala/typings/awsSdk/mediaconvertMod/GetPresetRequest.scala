@@ -13,16 +13,13 @@ trait GetPresetRequest extends StObject {
 }
 object GetPresetRequest {
   
-  @scala.inline
-  def apply(Name: string): GetPresetRequest = {
+  inline def apply(Name: string): GetPresetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPresetRequest]
   }
   
-  @scala.inline
-  implicit class GetPresetRequestMutableBuilder[Self <: GetPresetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPresetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

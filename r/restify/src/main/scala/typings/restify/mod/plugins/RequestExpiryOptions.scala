@@ -23,31 +23,23 @@ trait RequestExpiryOptions extends StObject {
 }
 object RequestExpiryOptions {
   
-  @scala.inline
-  def apply(): RequestExpiryOptions = {
+  inline def apply(): RequestExpiryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestExpiryOptions]
   }
   
-  @scala.inline
-  implicit class RequestExpiryOptionsMutableBuilder[Self <: RequestExpiryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestExpiryOptions](x: Self) {
     
-    @scala.inline
-    def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
+    inline def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteHeaderUndefined: Self = StObject.set(x, "absoluteHeader", js.undefined)
+    inline def setAbsoluteHeaderUndefined: Self = StObject.set(x, "absoluteHeader", js.undefined)
     
-    @scala.inline
-    def setStartHeader(value: String): Self = StObject.set(x, "startHeader", value.asInstanceOf[js.Any])
+    inline def setStartHeader(value: String): Self = StObject.set(x, "startHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartHeaderUndefined: Self = StObject.set(x, "startHeader", js.undefined)
+    inline def setStartHeaderUndefined: Self = StObject.set(x, "startHeader", js.undefined)
     
-    @scala.inline
-    def setTimeoutHeader(value: String): Self = StObject.set(x, "timeoutHeader", value.asInstanceOf[js.Any])
+    inline def setTimeoutHeader(value: String): Self = StObject.set(x, "timeoutHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutHeaderUndefined: Self = StObject.set(x, "timeoutHeader", js.undefined)
+    inline def setTimeoutHeaderUndefined: Self = StObject.set(x, "timeoutHeader", js.undefined)
   }
 }

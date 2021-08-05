@@ -18,31 +18,23 @@ trait BatchStopJobRunResponse extends StObject {
 }
 object BatchStopJobRunResponse {
   
-  @scala.inline
-  def apply(): BatchStopJobRunResponse = {
+  inline def apply(): BatchStopJobRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchStopJobRunResponse]
   }
   
-  @scala.inline
-  implicit class BatchStopJobRunResponseMutableBuilder[Self <: BatchStopJobRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchStopJobRunResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: BatchStopJobRunErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchStopJobRunErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: BatchStopJobRunError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchStopJobRunError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessfulSubmissions(value: BatchStopJobRunSuccessfulSubmissionList): Self = StObject.set(x, "SuccessfulSubmissions", value.asInstanceOf[js.Any])
+    inline def setSuccessfulSubmissions(value: BatchStopJobRunSuccessfulSubmissionList): Self = StObject.set(x, "SuccessfulSubmissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulSubmissionsUndefined: Self = StObject.set(x, "SuccessfulSubmissions", js.undefined)
+    inline def setSuccessfulSubmissionsUndefined: Self = StObject.set(x, "SuccessfulSubmissions", js.undefined)
     
-    @scala.inline
-    def setSuccessfulSubmissionsVarargs(value: BatchStopJobRunSuccessfulSubmission*): Self = StObject.set(x, "SuccessfulSubmissions", js.Array(value :_*))
+    inline def setSuccessfulSubmissionsVarargs(value: BatchStopJobRunSuccessfulSubmission*): Self = StObject.set(x, "SuccessfulSubmissions", js.Array(value :_*))
   }
 }

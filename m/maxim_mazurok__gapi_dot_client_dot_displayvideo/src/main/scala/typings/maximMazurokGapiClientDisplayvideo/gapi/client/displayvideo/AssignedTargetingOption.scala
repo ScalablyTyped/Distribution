@@ -149,259 +149,175 @@ trait AssignedTargetingOption extends StObject {
 }
 object AssignedTargetingOption {
   
-  @scala.inline
-  def apply(): AssignedTargetingOption = {
+  inline def apply(): AssignedTargetingOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignedTargetingOption]
   }
   
-  @scala.inline
-  implicit class AssignedTargetingOptionMutableBuilder[Self <: AssignedTargetingOption] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedTargetingOption](x: Self) {
     
-    @scala.inline
-    def setAgeRangeDetails(value: AgeRangeAssignedTargetingOptionDetails): Self = StObject.set(x, "ageRangeDetails", value.asInstanceOf[js.Any])
+    inline def setAgeRangeDetails(value: AgeRangeAssignedTargetingOptionDetails): Self = StObject.set(x, "ageRangeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeRangeDetailsUndefined: Self = StObject.set(x, "ageRangeDetails", js.undefined)
+    inline def setAgeRangeDetailsUndefined: Self = StObject.set(x, "ageRangeDetails", js.undefined)
     
-    @scala.inline
-    def setAppCategoryDetails(value: AppCategoryAssignedTargetingOptionDetails): Self = StObject.set(x, "appCategoryDetails", value.asInstanceOf[js.Any])
+    inline def setAppCategoryDetails(value: AppCategoryAssignedTargetingOptionDetails): Self = StObject.set(x, "appCategoryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppCategoryDetailsUndefined: Self = StObject.set(x, "appCategoryDetails", js.undefined)
+    inline def setAppCategoryDetailsUndefined: Self = StObject.set(x, "appCategoryDetails", js.undefined)
     
-    @scala.inline
-    def setAppDetails(value: AppAssignedTargetingOptionDetails): Self = StObject.set(x, "appDetails", value.asInstanceOf[js.Any])
+    inline def setAppDetails(value: AppAssignedTargetingOptionDetails): Self = StObject.set(x, "appDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppDetailsUndefined: Self = StObject.set(x, "appDetails", js.undefined)
+    inline def setAppDetailsUndefined: Self = StObject.set(x, "appDetails", js.undefined)
     
-    @scala.inline
-    def setAssignedTargetingOptionId(value: String): Self = StObject.set(x, "assignedTargetingOptionId", value.asInstanceOf[js.Any])
+    inline def setAssignedTargetingOptionId(value: String): Self = StObject.set(x, "assignedTargetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedTargetingOptionIdUndefined: Self = StObject.set(x, "assignedTargetingOptionId", js.undefined)
+    inline def setAssignedTargetingOptionIdUndefined: Self = StObject.set(x, "assignedTargetingOptionId", js.undefined)
     
-    @scala.inline
-    def setAudienceGroupDetails(value: AudienceGroupAssignedTargetingOptionDetails): Self = StObject.set(x, "audienceGroupDetails", value.asInstanceOf[js.Any])
+    inline def setAudienceGroupDetails(value: AudienceGroupAssignedTargetingOptionDetails): Self = StObject.set(x, "audienceGroupDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceGroupDetailsUndefined: Self = StObject.set(x, "audienceGroupDetails", js.undefined)
+    inline def setAudienceGroupDetailsUndefined: Self = StObject.set(x, "audienceGroupDetails", js.undefined)
     
-    @scala.inline
-    def setAuthorizedSellerStatusDetails(value: AuthorizedSellerStatusAssignedTargetingOptionDetails): Self = StObject.set(x, "authorizedSellerStatusDetails", value.asInstanceOf[js.Any])
+    inline def setAuthorizedSellerStatusDetails(value: AuthorizedSellerStatusAssignedTargetingOptionDetails): Self = StObject.set(x, "authorizedSellerStatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedSellerStatusDetailsUndefined: Self = StObject.set(x, "authorizedSellerStatusDetails", js.undefined)
+    inline def setAuthorizedSellerStatusDetailsUndefined: Self = StObject.set(x, "authorizedSellerStatusDetails", js.undefined)
     
-    @scala.inline
-    def setBrowserDetails(value: BrowserAssignedTargetingOptionDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
+    inline def setBrowserDetails(value: BrowserAssignedTargetingOptionDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserDetailsUndefined: Self = StObject.set(x, "browserDetails", js.undefined)
+    inline def setBrowserDetailsUndefined: Self = StObject.set(x, "browserDetails", js.undefined)
     
-    @scala.inline
-    def setCarrierAndIspDetails(value: CarrierAndIspAssignedTargetingOptionDetails): Self = StObject.set(x, "carrierAndIspDetails", value.asInstanceOf[js.Any])
+    inline def setCarrierAndIspDetails(value: CarrierAndIspAssignedTargetingOptionDetails): Self = StObject.set(x, "carrierAndIspDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierAndIspDetailsUndefined: Self = StObject.set(x, "carrierAndIspDetails", js.undefined)
+    inline def setCarrierAndIspDetailsUndefined: Self = StObject.set(x, "carrierAndIspDetails", js.undefined)
     
-    @scala.inline
-    def setCategoryDetails(value: CategoryAssignedTargetingOptionDetails): Self = StObject.set(x, "categoryDetails", value.asInstanceOf[js.Any])
+    inline def setCategoryDetails(value: CategoryAssignedTargetingOptionDetails): Self = StObject.set(x, "categoryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryDetailsUndefined: Self = StObject.set(x, "categoryDetails", js.undefined)
+    inline def setCategoryDetailsUndefined: Self = StObject.set(x, "categoryDetails", js.undefined)
     
-    @scala.inline
-    def setChannelDetails(value: ChannelAssignedTargetingOptionDetails): Self = StObject.set(x, "channelDetails", value.asInstanceOf[js.Any])
+    inline def setChannelDetails(value: ChannelAssignedTargetingOptionDetails): Self = StObject.set(x, "channelDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelDetailsUndefined: Self = StObject.set(x, "channelDetails", js.undefined)
+    inline def setChannelDetailsUndefined: Self = StObject.set(x, "channelDetails", js.undefined)
     
-    @scala.inline
-    def setContentInstreamPositionDetails(value: ContentInstreamPositionAssignedTargetingOptionDetails): Self = StObject.set(x, "contentInstreamPositionDetails", value.asInstanceOf[js.Any])
+    inline def setContentInstreamPositionDetails(value: ContentInstreamPositionAssignedTargetingOptionDetails): Self = StObject.set(x, "contentInstreamPositionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentInstreamPositionDetailsUndefined: Self = StObject.set(x, "contentInstreamPositionDetails", js.undefined)
+    inline def setContentInstreamPositionDetailsUndefined: Self = StObject.set(x, "contentInstreamPositionDetails", js.undefined)
     
-    @scala.inline
-    def setContentOutstreamPositionDetails(value: ContentOutstreamPositionAssignedTargetingOptionDetails): Self = StObject.set(x, "contentOutstreamPositionDetails", value.asInstanceOf[js.Any])
+    inline def setContentOutstreamPositionDetails(value: ContentOutstreamPositionAssignedTargetingOptionDetails): Self = StObject.set(x, "contentOutstreamPositionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentOutstreamPositionDetailsUndefined: Self = StObject.set(x, "contentOutstreamPositionDetails", js.undefined)
+    inline def setContentOutstreamPositionDetailsUndefined: Self = StObject.set(x, "contentOutstreamPositionDetails", js.undefined)
     
-    @scala.inline
-    def setDayAndTimeDetails(value: DayAndTimeAssignedTargetingOptionDetails): Self = StObject.set(x, "dayAndTimeDetails", value.asInstanceOf[js.Any])
+    inline def setDayAndTimeDetails(value: DayAndTimeAssignedTargetingOptionDetails): Self = StObject.set(x, "dayAndTimeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayAndTimeDetailsUndefined: Self = StObject.set(x, "dayAndTimeDetails", js.undefined)
+    inline def setDayAndTimeDetailsUndefined: Self = StObject.set(x, "dayAndTimeDetails", js.undefined)
     
-    @scala.inline
-    def setDeviceMakeModelDetails(value: DeviceMakeModelAssignedTargetingOptionDetails): Self = StObject.set(x, "deviceMakeModelDetails", value.asInstanceOf[js.Any])
+    inline def setDeviceMakeModelDetails(value: DeviceMakeModelAssignedTargetingOptionDetails): Self = StObject.set(x, "deviceMakeModelDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMakeModelDetailsUndefined: Self = StObject.set(x, "deviceMakeModelDetails", js.undefined)
+    inline def setDeviceMakeModelDetailsUndefined: Self = StObject.set(x, "deviceMakeModelDetails", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeDetails(value: DeviceTypeAssignedTargetingOptionDetails): Self = StObject.set(x, "deviceTypeDetails", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeDetails(value: DeviceTypeAssignedTargetingOptionDetails): Self = StObject.set(x, "deviceTypeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeDetailsUndefined: Self = StObject.set(x, "deviceTypeDetails", js.undefined)
+    inline def setDeviceTypeDetailsUndefined: Self = StObject.set(x, "deviceTypeDetails", js.undefined)
     
-    @scala.inline
-    def setDigitalContentLabelExclusionDetails(value: DigitalContentLabelAssignedTargetingOptionDetails): Self = StObject.set(x, "digitalContentLabelExclusionDetails", value.asInstanceOf[js.Any])
+    inline def setDigitalContentLabelExclusionDetails(value: DigitalContentLabelAssignedTargetingOptionDetails): Self = StObject.set(x, "digitalContentLabelExclusionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitalContentLabelExclusionDetailsUndefined: Self = StObject.set(x, "digitalContentLabelExclusionDetails", js.undefined)
+    inline def setDigitalContentLabelExclusionDetailsUndefined: Self = StObject.set(x, "digitalContentLabelExclusionDetails", js.undefined)
     
-    @scala.inline
-    def setEnvironmentDetails(value: EnvironmentAssignedTargetingOptionDetails): Self = StObject.set(x, "environmentDetails", value.asInstanceOf[js.Any])
+    inline def setEnvironmentDetails(value: EnvironmentAssignedTargetingOptionDetails): Self = StObject.set(x, "environmentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentDetailsUndefined: Self = StObject.set(x, "environmentDetails", js.undefined)
+    inline def setEnvironmentDetailsUndefined: Self = StObject.set(x, "environmentDetails", js.undefined)
     
-    @scala.inline
-    def setExchangeDetails(value: ExchangeAssignedTargetingOptionDetails): Self = StObject.set(x, "exchangeDetails", value.asInstanceOf[js.Any])
+    inline def setExchangeDetails(value: ExchangeAssignedTargetingOptionDetails): Self = StObject.set(x, "exchangeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeDetailsUndefined: Self = StObject.set(x, "exchangeDetails", js.undefined)
+    inline def setExchangeDetailsUndefined: Self = StObject.set(x, "exchangeDetails", js.undefined)
     
-    @scala.inline
-    def setGenderDetails(value: GenderAssignedTargetingOptionDetails): Self = StObject.set(x, "genderDetails", value.asInstanceOf[js.Any])
+    inline def setGenderDetails(value: GenderAssignedTargetingOptionDetails): Self = StObject.set(x, "genderDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderDetailsUndefined: Self = StObject.set(x, "genderDetails", js.undefined)
+    inline def setGenderDetailsUndefined: Self = StObject.set(x, "genderDetails", js.undefined)
     
-    @scala.inline
-    def setGeoRegionDetails(value: GeoRegionAssignedTargetingOptionDetails): Self = StObject.set(x, "geoRegionDetails", value.asInstanceOf[js.Any])
+    inline def setGeoRegionDetails(value: GeoRegionAssignedTargetingOptionDetails): Self = StObject.set(x, "geoRegionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoRegionDetailsUndefined: Self = StObject.set(x, "geoRegionDetails", js.undefined)
+    inline def setGeoRegionDetailsUndefined: Self = StObject.set(x, "geoRegionDetails", js.undefined)
     
-    @scala.inline
-    def setHouseholdIncomeDetails(value: HouseholdIncomeAssignedTargetingOptionDetails): Self = StObject.set(x, "householdIncomeDetails", value.asInstanceOf[js.Any])
+    inline def setHouseholdIncomeDetails(value: HouseholdIncomeAssignedTargetingOptionDetails): Self = StObject.set(x, "householdIncomeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHouseholdIncomeDetailsUndefined: Self = StObject.set(x, "householdIncomeDetails", js.undefined)
+    inline def setHouseholdIncomeDetailsUndefined: Self = StObject.set(x, "householdIncomeDetails", js.undefined)
     
-    @scala.inline
-    def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
+    inline def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritanceUndefined: Self = StObject.set(x, "inheritance", js.undefined)
+    inline def setInheritanceUndefined: Self = StObject.set(x, "inheritance", js.undefined)
     
-    @scala.inline
-    def setInventorySourceDetails(value: InventorySourceAssignedTargetingOptionDetails): Self = StObject.set(x, "inventorySourceDetails", value.asInstanceOf[js.Any])
+    inline def setInventorySourceDetails(value: InventorySourceAssignedTargetingOptionDetails): Self = StObject.set(x, "inventorySourceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceDetailsUndefined: Self = StObject.set(x, "inventorySourceDetails", js.undefined)
+    inline def setInventorySourceDetailsUndefined: Self = StObject.set(x, "inventorySourceDetails", js.undefined)
     
-    @scala.inline
-    def setInventorySourceGroupDetails(value: InventorySourceGroupAssignedTargetingOptionDetails): Self = StObject.set(x, "inventorySourceGroupDetails", value.asInstanceOf[js.Any])
+    inline def setInventorySourceGroupDetails(value: InventorySourceGroupAssignedTargetingOptionDetails): Self = StObject.set(x, "inventorySourceGroupDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceGroupDetailsUndefined: Self = StObject.set(x, "inventorySourceGroupDetails", js.undefined)
+    inline def setInventorySourceGroupDetailsUndefined: Self = StObject.set(x, "inventorySourceGroupDetails", js.undefined)
     
-    @scala.inline
-    def setKeywordDetails(value: KeywordAssignedTargetingOptionDetails): Self = StObject.set(x, "keywordDetails", value.asInstanceOf[js.Any])
+    inline def setKeywordDetails(value: KeywordAssignedTargetingOptionDetails): Self = StObject.set(x, "keywordDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordDetailsUndefined: Self = StObject.set(x, "keywordDetails", js.undefined)
+    inline def setKeywordDetailsUndefined: Self = StObject.set(x, "keywordDetails", js.undefined)
     
-    @scala.inline
-    def setLanguageDetails(value: LanguageAssignedTargetingOptionDetails): Self = StObject.set(x, "languageDetails", value.asInstanceOf[js.Any])
+    inline def setLanguageDetails(value: LanguageAssignedTargetingOptionDetails): Self = StObject.set(x, "languageDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageDetailsUndefined: Self = StObject.set(x, "languageDetails", js.undefined)
+    inline def setLanguageDetailsUndefined: Self = StObject.set(x, "languageDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNegativeKeywordListDetails(value: NegativeKeywordListAssignedTargetingOptionDetails): Self = StObject.set(x, "negativeKeywordListDetails", value.asInstanceOf[js.Any])
+    inline def setNegativeKeywordListDetails(value: NegativeKeywordListAssignedTargetingOptionDetails): Self = StObject.set(x, "negativeKeywordListDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeKeywordListDetailsUndefined: Self = StObject.set(x, "negativeKeywordListDetails", js.undefined)
+    inline def setNegativeKeywordListDetailsUndefined: Self = StObject.set(x, "negativeKeywordListDetails", js.undefined)
     
-    @scala.inline
-    def setOnScreenPositionDetails(value: OnScreenPositionAssignedTargetingOptionDetails): Self = StObject.set(x, "onScreenPositionDetails", value.asInstanceOf[js.Any])
+    inline def setOnScreenPositionDetails(value: OnScreenPositionAssignedTargetingOptionDetails): Self = StObject.set(x, "onScreenPositionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnScreenPositionDetailsUndefined: Self = StObject.set(x, "onScreenPositionDetails", js.undefined)
+    inline def setOnScreenPositionDetailsUndefined: Self = StObject.set(x, "onScreenPositionDetails", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemDetails(value: OperatingSystemAssignedTargetingOptionDetails): Self = StObject.set(x, "operatingSystemDetails", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemDetails(value: OperatingSystemAssignedTargetingOptionDetails): Self = StObject.set(x, "operatingSystemDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemDetailsUndefined: Self = StObject.set(x, "operatingSystemDetails", js.undefined)
+    inline def setOperatingSystemDetailsUndefined: Self = StObject.set(x, "operatingSystemDetails", js.undefined)
     
-    @scala.inline
-    def setParentalStatusDetails(value: ParentalStatusAssignedTargetingOptionDetails): Self = StObject.set(x, "parentalStatusDetails", value.asInstanceOf[js.Any])
+    inline def setParentalStatusDetails(value: ParentalStatusAssignedTargetingOptionDetails): Self = StObject.set(x, "parentalStatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentalStatusDetailsUndefined: Self = StObject.set(x, "parentalStatusDetails", js.undefined)
+    inline def setParentalStatusDetailsUndefined: Self = StObject.set(x, "parentalStatusDetails", js.undefined)
     
-    @scala.inline
-    def setProximityLocationListDetails(value: ProximityLocationListAssignedTargetingOptionDetails): Self = StObject.set(x, "proximityLocationListDetails", value.asInstanceOf[js.Any])
+    inline def setProximityLocationListDetails(value: ProximityLocationListAssignedTargetingOptionDetails): Self = StObject.set(x, "proximityLocationListDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityLocationListDetailsUndefined: Self = StObject.set(x, "proximityLocationListDetails", js.undefined)
+    inline def setProximityLocationListDetailsUndefined: Self = StObject.set(x, "proximityLocationListDetails", js.undefined)
     
-    @scala.inline
-    def setRegionalLocationListDetails(value: RegionalLocationListAssignedTargetingOptionDetails): Self = StObject.set(x, "regionalLocationListDetails", value.asInstanceOf[js.Any])
+    inline def setRegionalLocationListDetails(value: RegionalLocationListAssignedTargetingOptionDetails): Self = StObject.set(x, "regionalLocationListDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalLocationListDetailsUndefined: Self = StObject.set(x, "regionalLocationListDetails", js.undefined)
+    inline def setRegionalLocationListDetailsUndefined: Self = StObject.set(x, "regionalLocationListDetails", js.undefined)
     
-    @scala.inline
-    def setSensitiveCategoryExclusionDetails(value: SensitiveCategoryAssignedTargetingOptionDetails): Self = StObject.set(x, "sensitiveCategoryExclusionDetails", value.asInstanceOf[js.Any])
+    inline def setSensitiveCategoryExclusionDetails(value: SensitiveCategoryAssignedTargetingOptionDetails): Self = StObject.set(x, "sensitiveCategoryExclusionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitiveCategoryExclusionDetailsUndefined: Self = StObject.set(x, "sensitiveCategoryExclusionDetails", js.undefined)
+    inline def setSensitiveCategoryExclusionDetailsUndefined: Self = StObject.set(x, "sensitiveCategoryExclusionDetails", js.undefined)
     
-    @scala.inline
-    def setSubExchangeDetails(value: SubExchangeAssignedTargetingOptionDetails): Self = StObject.set(x, "subExchangeDetails", value.asInstanceOf[js.Any])
+    inline def setSubExchangeDetails(value: SubExchangeAssignedTargetingOptionDetails): Self = StObject.set(x, "subExchangeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubExchangeDetailsUndefined: Self = StObject.set(x, "subExchangeDetails", js.undefined)
+    inline def setSubExchangeDetailsUndefined: Self = StObject.set(x, "subExchangeDetails", js.undefined)
     
-    @scala.inline
-    def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingTypeUndefined: Self = StObject.set(x, "targetingType", js.undefined)
+    inline def setTargetingTypeUndefined: Self = StObject.set(x, "targetingType", js.undefined)
     
-    @scala.inline
-    def setThirdPartyVerifierDetails(value: ThirdPartyVerifierAssignedTargetingOptionDetails): Self = StObject.set(x, "thirdPartyVerifierDetails", value.asInstanceOf[js.Any])
+    inline def setThirdPartyVerifierDetails(value: ThirdPartyVerifierAssignedTargetingOptionDetails): Self = StObject.set(x, "thirdPartyVerifierDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyVerifierDetailsUndefined: Self = StObject.set(x, "thirdPartyVerifierDetails", js.undefined)
+    inline def setThirdPartyVerifierDetailsUndefined: Self = StObject.set(x, "thirdPartyVerifierDetails", js.undefined)
     
-    @scala.inline
-    def setUrlDetails(value: UrlAssignedTargetingOptionDetails): Self = StObject.set(x, "urlDetails", value.asInstanceOf[js.Any])
+    inline def setUrlDetails(value: UrlAssignedTargetingOptionDetails): Self = StObject.set(x, "urlDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlDetailsUndefined: Self = StObject.set(x, "urlDetails", js.undefined)
+    inline def setUrlDetailsUndefined: Self = StObject.set(x, "urlDetails", js.undefined)
     
-    @scala.inline
-    def setUserRewardedContentDetails(value: UserRewardedContentAssignedTargetingOptionDetails): Self = StObject.set(x, "userRewardedContentDetails", value.asInstanceOf[js.Any])
+    inline def setUserRewardedContentDetails(value: UserRewardedContentAssignedTargetingOptionDetails): Self = StObject.set(x, "userRewardedContentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRewardedContentDetailsUndefined: Self = StObject.set(x, "userRewardedContentDetails", js.undefined)
+    inline def setUserRewardedContentDetailsUndefined: Self = StObject.set(x, "userRewardedContentDetails", js.undefined)
     
-    @scala.inline
-    def setVideoPlayerSizeDetails(value: VideoPlayerSizeAssignedTargetingOptionDetails): Self = StObject.set(x, "videoPlayerSizeDetails", value.asInstanceOf[js.Any])
+    inline def setVideoPlayerSizeDetails(value: VideoPlayerSizeAssignedTargetingOptionDetails): Self = StObject.set(x, "videoPlayerSizeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPlayerSizeDetailsUndefined: Self = StObject.set(x, "videoPlayerSizeDetails", js.undefined)
+    inline def setVideoPlayerSizeDetailsUndefined: Self = StObject.set(x, "videoPlayerSizeDetails", js.undefined)
     
-    @scala.inline
-    def setViewabilityDetails(value: ViewabilityAssignedTargetingOptionDetails): Self = StObject.set(x, "viewabilityDetails", value.asInstanceOf[js.Any])
+    inline def setViewabilityDetails(value: ViewabilityAssignedTargetingOptionDetails): Self = StObject.set(x, "viewabilityDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewabilityDetailsUndefined: Self = StObject.set(x, "viewabilityDetails", js.undefined)
+    inline def setViewabilityDetailsUndefined: Self = StObject.set(x, "viewabilityDetails", js.undefined)
   }
 }

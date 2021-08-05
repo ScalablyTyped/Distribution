@@ -23,28 +23,21 @@ trait DetectModerationLabelsRequest extends StObject {
 }
 object DetectModerationLabelsRequest {
   
-  @scala.inline
-  def apply(Image: Image): DetectModerationLabelsRequest = {
+  inline def apply(Image: Image): DetectModerationLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectModerationLabelsRequest]
   }
   
-  @scala.inline
-  implicit class DetectModerationLabelsRequestMutableBuilder[Self <: DetectModerationLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectModerationLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
+    inline def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopConfigUndefined: Self = StObject.set(x, "HumanLoopConfig", js.undefined)
+    inline def setHumanLoopConfigUndefined: Self = StObject.set(x, "HumanLoopConfig", js.undefined)
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
+    inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
+    inline def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
   }
 }

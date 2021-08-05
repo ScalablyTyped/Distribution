@@ -11,16 +11,13 @@ trait TrackResult extends StObject {
 }
 object TrackResult {
   
-  @scala.inline
-  def apply(track: Albumid): TrackResult = {
+  inline def apply(track: Albumid): TrackResult = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackResult]
   }
   
-  @scala.inline
-  implicit class TrackResultMutableBuilder[Self <: TrackResult] (val x: Self) extends AnyVal {
+  extension [Self <: TrackResult](x: Self) {
     
-    @scala.inline
-    def setTrack(value: Albumid): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: Albumid): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

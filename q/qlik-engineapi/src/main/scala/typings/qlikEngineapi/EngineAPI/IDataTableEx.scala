@@ -31,25 +31,19 @@ trait IDataTableEx extends StObject {
 }
 object IDataTableEx {
   
-  @scala.inline
-  def apply(qFields: js.Array[IDataField], qFormatSpec: String, qName: String): IDataTableEx = {
+  inline def apply(qFields: js.Array[IDataField], qFormatSpec: String, qName: String): IDataTableEx = {
     val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qFormatSpec = qFormatSpec.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataTableEx]
   }
   
-  @scala.inline
-  implicit class IDataTableExMutableBuilder[Self <: IDataTableEx] (val x: Self) extends AnyVal {
+  extension [Self <: IDataTableEx](x: Self) {
     
-    @scala.inline
-    def setQFields(value: js.Array[IDataField]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
+    inline def setQFields(value: js.Array[IDataField]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldsVarargs(value: IDataField*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: IDataField*): Self = StObject.set(x, "qFields", js.Array(value :_*))
     
-    @scala.inline
-    def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
+    inline def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

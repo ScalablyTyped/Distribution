@@ -49,6 +49,5 @@ object Service {
     * @returns Created service
     * @throws {TypeError} If arguments are invalid
     */
-  @scala.inline
-  def fromJSON(name: String, json: IService): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Service]
+  inline def fromJSON(name: String, json: IService): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Service]
 }

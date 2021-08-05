@@ -193,20 +193,12 @@ object BinaryReader {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alloc(): BinaryReader = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: Unit, start: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: Unit, start: Double, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: Unit, start: Unit, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: ByteSource): BinaryReader = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any]).asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: ByteSource, start: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
-  @scala.inline
-  def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  inline def alloc(): BinaryReader = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryReader]
+  inline def alloc(bytes: Unit, start: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  inline def alloc(bytes: Unit, start: Double, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  inline def alloc(bytes: Unit, start: Unit, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  inline def alloc(bytes: ByteSource): BinaryReader = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any]).asInstanceOf[BinaryReader]
+  inline def alloc(bytes: ByteSource, start: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  inline def alloc(bytes: ByteSource, start: Double, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  inline def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
 }

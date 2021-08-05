@@ -24,25 +24,19 @@ trait ProjectsMoveCardEndpoint
 }
 object ProjectsMoveCardEndpoint {
   
-  @scala.inline
-  def apply(card_id: Double, mediaType: `0`[inertia], position: String): ProjectsMoveCardEndpoint = {
+  inline def apply(card_id: Double, mediaType: `0`[inertia], position: String): ProjectsMoveCardEndpoint = {
     val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsMoveCardEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsMoveCardEndpointMutableBuilder[Self <: ProjectsMoveCardEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsMoveCardEndpoint](x: Self) {
     
-    @scala.inline
-    def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
+    inline def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
+    inline def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn_idUndefined: Self = StObject.set(x, "column_id", js.undefined)
+    inline def setColumn_idUndefined: Self = StObject.set(x, "column_id", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait ICellEditor
      with IEditor
 object ICellEditor {
   
-  @scala.inline
-  def apply(): ICellEditor = {
+  inline def apply(): ICellEditor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICellEditor]
   }

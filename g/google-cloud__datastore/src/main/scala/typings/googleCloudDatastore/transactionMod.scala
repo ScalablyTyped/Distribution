@@ -37,17 +37,14 @@ object transactionMod {
   }
   object BeginTransactionResponse {
     
-    @scala.inline
-    def apply(transaction: String): BeginTransactionResponse = {
+    inline def apply(transaction: String): BeginTransactionResponse = {
       val __obj = js.Dynamic.literal(transaction = transaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeginTransactionResponse]
     }
     
-    @scala.inline
-    implicit class BeginTransactionResponseMutableBuilder[Self <: BeginTransactionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: BeginTransactionResponse](x: Self) {
       
-      @scala.inline
-      def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     }
   }
   

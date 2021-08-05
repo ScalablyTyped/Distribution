@@ -13,19 +13,15 @@ trait GetNetworkProfileResult extends StObject {
 }
 object GetNetworkProfileResult {
   
-  @scala.inline
-  def apply(): GetNetworkProfileResult = {
+  inline def apply(): GetNetworkProfileResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNetworkProfileResult]
   }
   
-  @scala.inline
-  implicit class GetNetworkProfileResultMutableBuilder[Self <: GetNetworkProfileResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkProfileResult](x: Self) {
     
-    @scala.inline
-    def setNetworkProfile(value: NetworkProfile): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
+    inline def setNetworkProfile(value: NetworkProfile): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
+    inline def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
   }
 }

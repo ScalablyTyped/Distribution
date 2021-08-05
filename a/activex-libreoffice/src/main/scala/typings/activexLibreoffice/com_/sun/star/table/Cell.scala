@@ -25,8 +25,7 @@ trait Cell
      with XText
 object Cell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsianVerticalMode: Boolean,
     BottomBorder: BorderLine,
     BottomBorder2: BorderLine2,

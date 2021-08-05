@@ -31,7 +31,7 @@ object packetReceiverMod {
     
     var onClose: js.Function0[Unit] | Null = js.native
     
-    var onMessage_ : js.Any = js.native
+    /* private */ var onMessage_ : js.Any = js.native
     
     var pendingResponses: js.Array[js.Any] = js.native
   }

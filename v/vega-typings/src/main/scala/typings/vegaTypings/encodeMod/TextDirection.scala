@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDirection extends StObject
 object TextDirection {
   
-  @scala.inline
-  def ltr: typings.vegaTypings.vegaTypingsStrings.ltr = "ltr".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ltr]
+  inline def ltr: typings.vegaTypings.vegaTypingsStrings.ltr = "ltr".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ltr]
   
-  @scala.inline
-  def rtl: typings.vegaTypings.vegaTypingsStrings.rtl = "rtl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rtl]
+  inline def rtl: typings.vegaTypings.vegaTypingsStrings.rtl = "rtl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rtl]
 }

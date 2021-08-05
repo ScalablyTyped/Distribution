@@ -60,62 +60,44 @@ trait SendMoneyOpts extends StObject {
 }
 object SendMoneyOpts {
   
-  @scala.inline
-  def apply(amount: String, currency: String, to: String): SendMoneyOpts = {
+  inline def apply(amount: String, currency: String, to: String): SendMoneyOpts = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("send")
     __obj.asInstanceOf[SendMoneyOpts]
   }
   
-  @scala.inline
-  implicit class SendMoneyOptsMutableBuilder[Self <: SendMoneyOpts] (val x: Self) extends AnyVal {
+  extension [Self <: SendMoneyOpts](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFee(value: String): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
+    inline def setFee(value: String): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
+    inline def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
     
-    @scala.inline
-    def setFinancial_institution_website(value: String): Self = StObject.set(x, "financial_institution_website", value.asInstanceOf[js.Any])
+    inline def setFinancial_institution_website(value: String): Self = StObject.set(x, "financial_institution_website", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinancial_institution_websiteUndefined: Self = StObject.set(x, "financial_institution_website", js.undefined)
+    inline def setFinancial_institution_websiteUndefined: Self = StObject.set(x, "financial_institution_website", js.undefined)
     
-    @scala.inline
-    def setIdem(value: String): Self = StObject.set(x, "idem", value.asInstanceOf[js.Any])
+    inline def setIdem(value: String): Self = StObject.set(x, "idem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdemUndefined: Self = StObject.set(x, "idem", js.undefined)
+    inline def setIdemUndefined: Self = StObject.set(x, "idem", js.undefined)
     
-    @scala.inline
-    def setSkip_notifications(value: Boolean): Self = StObject.set(x, "skip_notifications", value.asInstanceOf[js.Any])
+    inline def setSkip_notifications(value: Boolean): Self = StObject.set(x, "skip_notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_notificationsUndefined: Self = StObject.set(x, "skip_notifications", js.undefined)
+    inline def setSkip_notificationsUndefined: Self = StObject.set(x, "skip_notifications", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo_financial_institution(value: Boolean): Self = StObject.set(x, "to_financial_institution", value.asInstanceOf[js.Any])
+    inline def setTo_financial_institution(value: Boolean): Self = StObject.set(x, "to_financial_institution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo_financial_institutionUndefined: Self = StObject.set(x, "to_financial_institution", js.undefined)
+    inline def setTo_financial_institutionUndefined: Self = StObject.set(x, "to_financial_institution", js.undefined)
     
-    @scala.inline
-    def setType(value: send): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: send): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

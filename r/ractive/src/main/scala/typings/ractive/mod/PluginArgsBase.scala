@@ -11,16 +11,13 @@ trait PluginArgsBase extends StObject {
 }
 object PluginArgsBase {
   
-  @scala.inline
-  def apply(Ractive: Instantiable): PluginArgsBase = {
+  inline def apply(Ractive: Instantiable): PluginArgsBase = {
     val __obj = js.Dynamic.literal(Ractive = Ractive.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginArgsBase]
   }
   
-  @scala.inline
-  implicit class PluginArgsBaseMutableBuilder[Self <: PluginArgsBase] (val x: Self) extends AnyVal {
+  extension [Self <: PluginArgsBase](x: Self) {
     
-    @scala.inline
-    def setRactive(value: Instantiable): Self = StObject.set(x, "Ractive", value.asInstanceOf[js.Any])
+    inline def setRactive(value: Instantiable): Self = StObject.set(x, "Ractive", value.asInstanceOf[js.Any])
   }
 }

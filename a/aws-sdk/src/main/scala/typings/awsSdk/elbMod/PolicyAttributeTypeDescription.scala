@@ -33,43 +33,31 @@ trait PolicyAttributeTypeDescription extends StObject {
 }
 object PolicyAttributeTypeDescription {
   
-  @scala.inline
-  def apply(): PolicyAttributeTypeDescription = {
+  inline def apply(): PolicyAttributeTypeDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyAttributeTypeDescription]
   }
   
-  @scala.inline
-  implicit class PolicyAttributeTypeDescriptionMutableBuilder[Self <: PolicyAttributeTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyAttributeTypeDescription](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
+    inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
     
-    @scala.inline
-    def setCardinality(value: Cardinality): Self = StObject.set(x, "Cardinality", value.asInstanceOf[js.Any])
+    inline def setCardinality(value: Cardinality): Self = StObject.set(x, "Cardinality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalityUndefined: Self = StObject.set(x, "Cardinality", js.undefined)
+    inline def setCardinalityUndefined: Self = StObject.set(x, "Cardinality", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

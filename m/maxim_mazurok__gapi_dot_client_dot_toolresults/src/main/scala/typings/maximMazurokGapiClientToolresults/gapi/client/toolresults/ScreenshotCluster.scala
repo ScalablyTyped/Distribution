@@ -23,40 +23,29 @@ trait ScreenshotCluster extends StObject {
 }
 object ScreenshotCluster {
   
-  @scala.inline
-  def apply(): ScreenshotCluster = {
+  inline def apply(): ScreenshotCluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScreenshotCluster]
   }
   
-  @scala.inline
-  implicit class ScreenshotClusterMutableBuilder[Self <: ScreenshotCluster] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenshotCluster](x: Self) {
     
-    @scala.inline
-    def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
+    inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
-    @scala.inline
-    def setKeyScreen(value: Screen): Self = StObject.set(x, "keyScreen", value.asInstanceOf[js.Any])
+    inline def setKeyScreen(value: Screen): Self = StObject.set(x, "keyScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyScreenUndefined: Self = StObject.set(x, "keyScreen", js.undefined)
+    inline def setKeyScreenUndefined: Self = StObject.set(x, "keyScreen", js.undefined)
     
-    @scala.inline
-    def setScreens(value: js.Array[Screen]): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+    inline def setScreens(value: js.Array[Screen]): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
+    inline def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
     
-    @scala.inline
-    def setScreensVarargs(value: Screen*): Self = StObject.set(x, "screens", js.Array(value :_*))
+    inline def setScreensVarargs(value: Screen*): Self = StObject.set(x, "screens", js.Array(value :_*))
   }
 }

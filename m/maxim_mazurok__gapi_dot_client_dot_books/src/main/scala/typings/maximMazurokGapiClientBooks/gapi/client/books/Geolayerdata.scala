@@ -16,31 +16,23 @@ trait Geolayerdata extends StObject {
 }
 object Geolayerdata {
   
-  @scala.inline
-  def apply(): Geolayerdata = {
+  inline def apply(): Geolayerdata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Geolayerdata]
   }
   
-  @scala.inline
-  implicit class GeolayerdataMutableBuilder[Self <: Geolayerdata] (val x: Self) extends AnyVal {
+  extension [Self <: Geolayerdata](x: Self) {
     
-    @scala.inline
-    def setCommon(value: Lang): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: Lang): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+    inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
-    @scala.inline
-    def setGeo(value: Boundary): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+    inline def setGeo(value: Boundary): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

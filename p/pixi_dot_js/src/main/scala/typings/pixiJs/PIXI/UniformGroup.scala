@@ -17,7 +17,7 @@ trait UniformGroup extends StObject {
     * @protected
     * @member {number} PIXI.UniformGroup#dirtyId
     */
-  var dirtyId: Double
+  /* protected */ var dirtyId: Double
   
   /**
     * Its a group and not a single uniforms
@@ -32,7 +32,7 @@ trait UniformGroup extends StObject {
     * @protected
     * @member {number} PIXI.UniformGroup#id
     */
-  var id: Double
+  /* protected */ var id: Double
   
   /**
     * Uniforms wont be changed after creation
@@ -49,28 +49,21 @@ trait UniformGroup extends StObject {
 }
 object UniformGroup {
   
-  @scala.inline
-  def apply(dirtyId: Double, group: Boolean, id: Double, static: Boolean, uniforms: js.Any): UniformGroup = {
+  inline def apply(dirtyId: Double, group: Boolean, id: Double, static: Boolean, uniforms: js.Any): UniformGroup = {
     val __obj = js.Dynamic.literal(dirtyId = dirtyId.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[UniformGroup]
   }
   
-  @scala.inline
-  implicit class UniformGroupMutableBuilder[Self <: UniformGroup] (val x: Self) extends AnyVal {
+  extension [Self <: UniformGroup](x: Self) {
     
-    @scala.inline
-    def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
+    inline def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+    inline def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
   }
 }

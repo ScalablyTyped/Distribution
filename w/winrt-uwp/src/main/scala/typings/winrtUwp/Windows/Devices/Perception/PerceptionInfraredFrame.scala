@@ -16,19 +16,15 @@ trait PerceptionInfraredFrame extends StObject {
 }
 object PerceptionInfraredFrame {
   
-  @scala.inline
-  def apply(close: () => Unit, videoFrame: VideoFrame): PerceptionInfraredFrame = {
+  inline def apply(close: () => Unit, videoFrame: VideoFrame): PerceptionInfraredFrame = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), videoFrame = videoFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionInfraredFrame]
   }
   
-  @scala.inline
-  implicit class PerceptionInfraredFrameMutableBuilder[Self <: PerceptionInfraredFrame] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionInfraredFrame](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVideoFrame(value: VideoFrame): Self = StObject.set(x, "videoFrame", value.asInstanceOf[js.Any])
+    inline def setVideoFrame(value: VideoFrame): Self = StObject.set(x, "videoFrame", value.asInstanceOf[js.Any])
   }
 }

@@ -31,7 +31,7 @@ object staticRequestMod {
     def this(requestOptions: RequestArgs) = this()
     
     /** Type of the request body **/
-    var contentType: js.Any = js.native
+    /* private */ var contentType: js.Any = js.native
     
     /**
       * Returns the content type enum based on header options.

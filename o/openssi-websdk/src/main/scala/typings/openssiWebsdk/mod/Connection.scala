@@ -20,37 +20,27 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(id: String, properties: Properties, role: String, state: ConnectionState): Connection = {
+  inline def apply(id: String, properties: Properties, role: String, state: ConnectionState): Connection = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: ConnectionAgent): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: ConnectionAgent): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemote(value: ConnectionAgent): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: ConnectionAgent): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ConnectionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ConnectionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

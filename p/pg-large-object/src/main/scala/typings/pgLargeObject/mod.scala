@@ -157,26 +157,20 @@ object mod {
   }
   object LargeObjectManagerSettings {
     
-    @scala.inline
-    def apply(): LargeObjectManagerSettings = {
+    inline def apply(): LargeObjectManagerSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LargeObjectManagerSettings]
     }
     
-    @scala.inline
-    implicit class LargeObjectManagerSettingsMutableBuilder[Self <: LargeObjectManagerSettings] (val x: Self) extends AnyVal {
+    extension [Self <: LargeObjectManagerSettings](x: Self) {
       
-      @scala.inline
-      def setPg(value: Client): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
+      inline def setPg(value: Client): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgPromise(value: js.Object): Self = StObject.set(x, "pgPromise", value.asInstanceOf[js.Any])
+      inline def setPgPromise(value: js.Object): Self = StObject.set(x, "pgPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgPromiseUndefined: Self = StObject.set(x, "pgPromise", js.undefined)
+      inline def setPgPromiseUndefined: Self = StObject.set(x, "pgPromise", js.undefined)
       
-      @scala.inline
-      def setPgUndefined: Self = StObject.set(x, "pg", js.undefined)
+      inline def setPgUndefined: Self = StObject.set(x, "pg", js.undefined)
     }
   }
 }

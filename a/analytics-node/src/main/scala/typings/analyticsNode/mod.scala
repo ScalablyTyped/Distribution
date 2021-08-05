@@ -71,26 +71,20 @@ object mod {
     }
     object Data {
       
-      @scala.inline
-      def apply(batch: js.Array[Message], sentAt: Date, timestamp: Date): Data = {
+      inline def apply(batch: js.Array[Message], sentAt: Date, timestamp: Date): Data = {
         val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any], sentAt = sentAt.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
         __obj.asInstanceOf[Data]
       }
       
-      @scala.inline
-      implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+      extension [Self <: Data](x: Self) {
         
-        @scala.inline
-        def setBatch(value: js.Array[Message]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+        inline def setBatch(value: js.Array[Message]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBatchVarargs(value: Message*): Self = StObject.set(x, "batch", js.Array(value :_*))
+        inline def setBatchVarargs(value: Message*): Self = StObject.set(x, "batch", js.Array(value :_*))
         
-        @scala.inline
-        def setSentAt(value: Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
+        inline def setSentAt(value: Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       }
     }
     
@@ -101,14 +95,12 @@ object mod {
     trait Identity extends StObject
     object Identity {
       
-      @scala.inline
-      def AnonymousId(anonymousId: String | Double): typings.analyticsNode.anon.AnonymousId = {
+      inline def AnonymousId(anonymousId: String | Double): typings.analyticsNode.anon.AnonymousId = {
         val __obj = js.Dynamic.literal(anonymousId = anonymousId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.analyticsNode.anon.AnonymousId]
       }
       
-      @scala.inline
-      def UserId(userId: String | Double): typings.analyticsNode.anon.UserId = {
+      inline def UserId(userId: String | Double): typings.analyticsNode.anon.UserId = {
         val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.analyticsNode.anon.UserId]
       }

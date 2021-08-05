@@ -13,19 +13,15 @@ trait PutDestinationResponse extends StObject {
 }
 object PutDestinationResponse {
   
-  @scala.inline
-  def apply(): PutDestinationResponse = {
+  inline def apply(): PutDestinationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutDestinationResponse]
   }
   
-  @scala.inline
-  implicit class PutDestinationResponseMutableBuilder[Self <: PutDestinationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutDestinationResponse](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
   }
 }

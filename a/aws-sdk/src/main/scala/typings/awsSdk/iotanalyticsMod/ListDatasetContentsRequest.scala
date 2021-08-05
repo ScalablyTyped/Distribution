@@ -33,40 +33,29 @@ trait ListDatasetContentsRequest extends StObject {
 }
 object ListDatasetContentsRequest {
   
-  @scala.inline
-  def apply(datasetName: DatasetName): ListDatasetContentsRequest = {
+  inline def apply(datasetName: DatasetName): ListDatasetContentsRequest = {
     val __obj = js.Dynamic.literal(datasetName = datasetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatasetContentsRequest]
   }
   
-  @scala.inline
-  implicit class ListDatasetContentsRequestMutableBuilder[Self <: ListDatasetContentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDatasetContentsRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setScheduledBefore(value: Timestamp): Self = StObject.set(x, "scheduledBefore", value.asInstanceOf[js.Any])
+    inline def setScheduledBefore(value: Timestamp): Self = StObject.set(x, "scheduledBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledBeforeUndefined: Self = StObject.set(x, "scheduledBefore", js.undefined)
+    inline def setScheduledBeforeUndefined: Self = StObject.set(x, "scheduledBefore", js.undefined)
     
-    @scala.inline
-    def setScheduledOnOrAfter(value: Timestamp): Self = StObject.set(x, "scheduledOnOrAfter", value.asInstanceOf[js.Any])
+    inline def setScheduledOnOrAfter(value: Timestamp): Self = StObject.set(x, "scheduledOnOrAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledOnOrAfterUndefined: Self = StObject.set(x, "scheduledOnOrAfter", js.undefined)
+    inline def setScheduledOnOrAfterUndefined: Self = StObject.set(x, "scheduledOnOrAfter", js.undefined)
   }
 }

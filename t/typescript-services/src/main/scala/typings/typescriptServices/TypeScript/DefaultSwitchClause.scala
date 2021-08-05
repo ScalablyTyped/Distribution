@@ -14,8 +14,7 @@ trait DefaultSwitchClause
 }
 object DefaultSwitchClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object DefaultSwitchClause {
     __obj.asInstanceOf[DefaultSwitchClause]
   }
   
-  @scala.inline
-  implicit class DefaultSwitchClauseMutableBuilder[Self <: DefaultSwitchClause] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultSwitchClause](x: Self) {
     
-    @scala.inline
-    def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (DefaultSwitchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (DefaultSwitchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

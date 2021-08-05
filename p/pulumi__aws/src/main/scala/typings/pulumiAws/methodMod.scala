@@ -95,21 +95,16 @@ object methodMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Method]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Method]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MethodState): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Method]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MethodState, opts: CustomResourceOptions): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Method]
+    inline def get(name: String, id: Input[ID]): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Method]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Method]
+    inline def get(name: String, id: Input[ID], state: MethodState): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Method]
+    inline def get(name: String, id: Input[ID], state: MethodState, opts: CustomResourceOptions): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Method]
     
     /**
       * Returns true if the given object is an instance of Method.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ Boolean]
   }
   
   trait MethodArgs extends StObject {
@@ -169,8 +164,7 @@ object methodMod {
   }
   object MethodArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorization: Input[String],
       httpMethod: Input[String],
       resourceId: Input[String],
@@ -180,59 +174,41 @@ object methodMod {
       __obj.asInstanceOf[MethodArgs]
     }
     
-    @scala.inline
-    implicit class MethodArgsMutableBuilder[Self <: MethodArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MethodArgs](x: Self) {
       
-      @scala.inline
-      def setApiKeyRequired(value: Input[Boolean]): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
+      inline def setApiKeyRequired(value: Input[Boolean]): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyRequiredUndefined: Self = StObject.set(x, "apiKeyRequired", js.undefined)
+      inline def setApiKeyRequiredUndefined: Self = StObject.set(x, "apiKeyRequired", js.undefined)
       
-      @scala.inline
-      def setAuthorization(value: Input[String]): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: Input[String]): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "authorizationScopes", value.asInstanceOf[js.Any])
+      inline def setAuthorizationScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "authorizationScopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationScopesUndefined: Self = StObject.set(x, "authorizationScopes", js.undefined)
+      inline def setAuthorizationScopesUndefined: Self = StObject.set(x, "authorizationScopes", js.undefined)
       
-      @scala.inline
-      def setAuthorizationScopesVarargs(value: Input[String]*): Self = StObject.set(x, "authorizationScopes", js.Array(value :_*))
+      inline def setAuthorizationScopesVarargs(value: Input[String]*): Self = StObject.set(x, "authorizationScopes", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthorizerId(value: Input[String]): Self = StObject.set(x, "authorizerId", value.asInstanceOf[js.Any])
+      inline def setAuthorizerId(value: Input[String]): Self = StObject.set(x, "authorizerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerIdUndefined: Self = StObject.set(x, "authorizerId", js.undefined)
+      inline def setAuthorizerIdUndefined: Self = StObject.set(x, "authorizerId", js.undefined)
       
-      @scala.inline
-      def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "requestModels", value.asInstanceOf[js.Any])
+      inline def setRequestModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "requestModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestModelsUndefined: Self = StObject.set(x, "requestModels", js.undefined)
+      inline def setRequestModelsUndefined: Self = StObject.set(x, "requestModels", js.undefined)
       
-      @scala.inline
-      def setRequestParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
+      inline def setRequestParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
+      inline def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
       
-      @scala.inline
-      def setRequestValidatorId(value: Input[String]): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
+      inline def setRequestValidatorId(value: Input[String]): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestValidatorIdUndefined: Self = StObject.set(x, "requestValidatorId", js.undefined)
+      inline def setRequestValidatorIdUndefined: Self = StObject.set(x, "requestValidatorId", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,77 +269,54 @@ object methodMod {
   }
   object MethodState {
     
-    @scala.inline
-    def apply(): MethodState = {
+    inline def apply(): MethodState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MethodState]
     }
     
-    @scala.inline
-    implicit class MethodStateMutableBuilder[Self <: MethodState] (val x: Self) extends AnyVal {
+    extension [Self <: MethodState](x: Self) {
       
-      @scala.inline
-      def setApiKeyRequired(value: Input[Boolean]): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
+      inline def setApiKeyRequired(value: Input[Boolean]): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyRequiredUndefined: Self = StObject.set(x, "apiKeyRequired", js.undefined)
+      inline def setApiKeyRequiredUndefined: Self = StObject.set(x, "apiKeyRequired", js.undefined)
       
-      @scala.inline
-      def setAuthorization(value: Input[String]): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: Input[String]): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "authorizationScopes", value.asInstanceOf[js.Any])
+      inline def setAuthorizationScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "authorizationScopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationScopesUndefined: Self = StObject.set(x, "authorizationScopes", js.undefined)
+      inline def setAuthorizationScopesUndefined: Self = StObject.set(x, "authorizationScopes", js.undefined)
       
-      @scala.inline
-      def setAuthorizationScopesVarargs(value: Input[String]*): Self = StObject.set(x, "authorizationScopes", js.Array(value :_*))
+      inline def setAuthorizationScopesVarargs(value: Input[String]*): Self = StObject.set(x, "authorizationScopes", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
+      inline def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
       
-      @scala.inline
-      def setAuthorizerId(value: Input[String]): Self = StObject.set(x, "authorizerId", value.asInstanceOf[js.Any])
+      inline def setAuthorizerId(value: Input[String]): Self = StObject.set(x, "authorizerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerIdUndefined: Self = StObject.set(x, "authorizerId", js.undefined)
+      inline def setAuthorizerIdUndefined: Self = StObject.set(x, "authorizerId", js.undefined)
       
-      @scala.inline
-      def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+      inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
       
-      @scala.inline
-      def setRequestModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "requestModels", value.asInstanceOf[js.Any])
+      inline def setRequestModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "requestModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestModelsUndefined: Self = StObject.set(x, "requestModels", js.undefined)
+      inline def setRequestModelsUndefined: Self = StObject.set(x, "requestModels", js.undefined)
       
-      @scala.inline
-      def setRequestParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
+      inline def setRequestParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
+      inline def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
       
-      @scala.inline
-      def setRequestValidatorId(value: Input[String]): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
+      inline def setRequestValidatorId(value: Input[String]): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestValidatorIdUndefined: Self = StObject.set(x, "requestValidatorId", js.undefined)
+      inline def setRequestValidatorIdUndefined: Self = StObject.set(x, "requestValidatorId", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+      inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
+      inline def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
     }
   }
 }

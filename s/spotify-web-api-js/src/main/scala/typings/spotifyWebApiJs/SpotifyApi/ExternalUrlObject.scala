@@ -16,16 +16,13 @@ trait ExternalUrlObject extends StObject {
 }
 object ExternalUrlObject {
   
-  @scala.inline
-  def apply(spotify: String): ExternalUrlObject = {
+  inline def apply(spotify: String): ExternalUrlObject = {
     val __obj = js.Dynamic.literal(spotify = spotify.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalUrlObject]
   }
   
-  @scala.inline
-  implicit class ExternalUrlObjectMutableBuilder[Self <: ExternalUrlObject] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalUrlObject](x: Self) {
     
-    @scala.inline
-    def setSpotify(value: String): Self = StObject.set(x, "spotify", value.asInstanceOf[js.Any])
+    inline def setSpotify(value: String): Self = StObject.set(x, "spotify", value.asInstanceOf[js.Any])
   }
 }

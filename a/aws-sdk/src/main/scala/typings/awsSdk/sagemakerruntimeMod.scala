@@ -35,20 +35,16 @@ object sagemakerruntimeMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -102,50 +98,36 @@ object sagemakerruntimeMod {
   }
   object InvokeEndpointInput {
     
-    @scala.inline
-    def apply(Body: BodyBlob, EndpointName: EndpointName): InvokeEndpointInput = {
+    inline def apply(Body: BodyBlob, EndpointName: EndpointName): InvokeEndpointInput = {
       val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeEndpointInput]
     }
     
-    @scala.inline
-    implicit class InvokeEndpointInputMutableBuilder[Self <: InvokeEndpointInput] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeEndpointInput](x: Self) {
       
-      @scala.inline
-      def setAccept(value: Header): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: Header): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "Accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "Accept", js.undefined)
       
-      @scala.inline
-      def setBody(value: BodyBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: BodyBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: Header): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: Header): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
       
-      @scala.inline
-      def setCustomAttributes(value: CustomAttributesHeader): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
+      inline def setCustomAttributes(value: CustomAttributesHeader): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttributesUndefined: Self = StObject.set(x, "CustomAttributes", js.undefined)
+      inline def setCustomAttributesUndefined: Self = StObject.set(x, "CustomAttributes", js.undefined)
       
-      @scala.inline
-      def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+      inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetModel(value: TargetModelHeader): Self = StObject.set(x, "TargetModel", value.asInstanceOf[js.Any])
+      inline def setTargetModel(value: TargetModelHeader): Self = StObject.set(x, "TargetModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetModelUndefined: Self = StObject.set(x, "TargetModel", js.undefined)
+      inline def setTargetModelUndefined: Self = StObject.set(x, "TargetModel", js.undefined)
       
-      @scala.inline
-      def setTargetVariant(value: TargetVariantHeader): Self = StObject.set(x, "TargetVariant", value.asInstanceOf[js.Any])
+      inline def setTargetVariant(value: TargetVariantHeader): Self = StObject.set(x, "TargetVariant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVariantUndefined: Self = StObject.set(x, "TargetVariant", js.undefined)
+      inline def setTargetVariantUndefined: Self = StObject.set(x, "TargetVariant", js.undefined)
     }
   }
   
@@ -173,35 +155,26 @@ object sagemakerruntimeMod {
   }
   object InvokeEndpointOutput {
     
-    @scala.inline
-    def apply(Body: BodyBlob): InvokeEndpointOutput = {
+    inline def apply(Body: BodyBlob): InvokeEndpointOutput = {
       val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeEndpointOutput]
     }
     
-    @scala.inline
-    implicit class InvokeEndpointOutputMutableBuilder[Self <: InvokeEndpointOutput] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeEndpointOutput](x: Self) {
       
-      @scala.inline
-      def setBody(value: BodyBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: BodyBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: Header): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: Header): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
       
-      @scala.inline
-      def setCustomAttributes(value: CustomAttributesHeader): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
+      inline def setCustomAttributes(value: CustomAttributesHeader): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttributesUndefined: Self = StObject.set(x, "CustomAttributes", js.undefined)
+      inline def setCustomAttributesUndefined: Self = StObject.set(x, "CustomAttributes", js.undefined)
       
-      @scala.inline
-      def setInvokedProductionVariant(value: Header): Self = StObject.set(x, "InvokedProductionVariant", value.asInstanceOf[js.Any])
+      inline def setInvokedProductionVariant(value: Header): Self = StObject.set(x, "InvokedProductionVariant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokedProductionVariantUndefined: Self = StObject.set(x, "InvokedProductionVariant", js.undefined)
+      inline def setInvokedProductionVariantUndefined: Self = StObject.set(x, "InvokedProductionVariant", js.undefined)
     }
   }
   

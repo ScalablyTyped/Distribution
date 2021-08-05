@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdWrapSideType extends StObject
 object WdWrapSideType {
   
-  @scala.inline
-  def wdWrapBoth: `0` = 0.asInstanceOf[`0`]
+  inline def wdWrapBoth: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWrapLargest: `3` = 3.asInstanceOf[`3`]
+  inline def wdWrapLargest: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdWrapLeft: `1` = 1.asInstanceOf[`1`]
+  inline def wdWrapLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdWrapRight: `2` = 2.asInstanceOf[`2`]
+  inline def wdWrapRight: `2` = 2.asInstanceOf[`2`]
 }

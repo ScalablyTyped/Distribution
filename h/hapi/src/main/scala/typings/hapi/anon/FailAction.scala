@@ -15,30 +15,23 @@ trait FailAction extends StObject {
 }
 object FailAction {
   
-  @scala.inline
-  def apply(): FailAction = {
+  inline def apply(): FailAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailAction]
   }
   
-  @scala.inline
-  implicit class FailActionMutableBuilder[Self <: FailAction] (val x: Self) extends AnyVal {
+  extension [Self <: FailAction](x: Self) {
     
-    @scala.inline
-    def setFailAction(value: typings.hapi.mod.Lifecycle.FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    inline def setFailAction(value: typings.hapi.mod.Lifecycle.FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailActionFunction3(
+    inline def setFailActionFunction3(
       value: (/* request */ typings.hapi.mod.Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
+    inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
-    @scala.inline
-    def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
   }
 }

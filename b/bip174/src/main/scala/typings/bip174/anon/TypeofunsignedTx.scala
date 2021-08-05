@@ -12,16 +12,13 @@ trait TypeofunsignedTx extends StObject {
 }
 object TypeofunsignedTx {
   
-  @scala.inline
-  def apply(encode: Transaction => KeyValue): TypeofunsignedTx = {
+  inline def apply(encode: Transaction => KeyValue): TypeofunsignedTx = {
     val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
     __obj.asInstanceOf[TypeofunsignedTx]
   }
   
-  @scala.inline
-  implicit class TypeofunsignedTxMutableBuilder[Self <: TypeofunsignedTx] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofunsignedTx](x: Self) {
     
-    @scala.inline
-    def setEncode(value: Transaction => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: Transaction => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
   }
 }

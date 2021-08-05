@@ -11,16 +11,13 @@ trait NewGroup extends StObject {
 }
 object NewGroup {
   
-  @scala.inline
-  def apply(NewGroup: OutlookBarGroup): NewGroup = {
+  inline def apply(NewGroup: OutlookBarGroup): NewGroup = {
     val __obj = js.Dynamic.literal(NewGroup = NewGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewGroup]
   }
   
-  @scala.inline
-  implicit class NewGroupMutableBuilder[Self <: NewGroup] (val x: Self) extends AnyVal {
+  extension [Self <: NewGroup](x: Self) {
     
-    @scala.inline
-    def setNewGroup(value: OutlookBarGroup): Self = StObject.set(x, "NewGroup", value.asInstanceOf[js.Any])
+    inline def setNewGroup(value: OutlookBarGroup): Self = StObject.set(x, "NewGroup", value.asInstanceOf[js.Any])
   }
 }

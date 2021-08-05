@@ -30,29 +30,22 @@ trait LogEvent
 }
 object LogEvent {
   
-  @scala.inline
-  def apply(level: String, message: String, progress: Double, timestamp: Date): LogEvent = {
+  inline def apply(level: String, message: String, progress: Double, timestamp: Date): LogEvent = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[LogEvent]
   }
   
-  @scala.inline
-  implicit class LogEventMutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LogEvent](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

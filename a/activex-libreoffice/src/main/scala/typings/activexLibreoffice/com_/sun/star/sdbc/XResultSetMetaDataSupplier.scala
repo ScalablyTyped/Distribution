@@ -32,8 +32,7 @@ trait XResultSetMetaDataSupplier
 }
 object XResultSetMetaDataSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MetaData: XResultSetMetaData,
     acquire: () => Unit,
     getMetaData: () => XResultSetMetaData,
@@ -44,13 +43,10 @@ object XResultSetMetaDataSupplier {
     __obj.asInstanceOf[XResultSetMetaDataSupplier]
   }
   
-  @scala.inline
-  implicit class XResultSetMetaDataSupplierMutableBuilder[Self <: XResultSetMetaDataSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XResultSetMetaDataSupplier](x: Self) {
     
-    @scala.inline
-    def setGetMetaData(value: () => XResultSetMetaData): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
+    inline def setGetMetaData(value: () => XResultSetMetaData): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetaData(value: XResultSetMetaData): Self = StObject.set(x, "MetaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: XResultSetMetaData): Self = StObject.set(x, "MetaData", value.asInstanceOf[js.Any])
   }
 }

@@ -44,64 +44,45 @@ trait CriterionAdditionalProperties extends StObject {
 }
 object CriterionAdditionalProperties {
   
-  @scala.inline
-  def apply(): CriterionAdditionalProperties = {
+  inline def apply(): CriterionAdditionalProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CriterionAdditionalProperties]
   }
   
-  @scala.inline
-  implicit class CriterionAdditionalPropertiesMutableBuilder[Self <: CriterionAdditionalProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CriterionAdditionalProperties](x: Self) {
     
-    @scala.inline
-    def setEqExactMatch(value: listOfString): Self = StObject.set(x, "eqExactMatch", value.asInstanceOf[js.Any])
+    inline def setEqExactMatch(value: listOfString): Self = StObject.set(x, "eqExactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqExactMatchUndefined: Self = StObject.set(x, "eqExactMatch", js.undefined)
+    inline def setEqExactMatchUndefined: Self = StObject.set(x, "eqExactMatch", js.undefined)
     
-    @scala.inline
-    def setEqExactMatchVarargs(value: string*): Self = StObject.set(x, "eqExactMatch", js.Array(value :_*))
+    inline def setEqExactMatchVarargs(value: string*): Self = StObject.set(x, "eqExactMatch", js.Array(value :_*))
     
-    @scala.inline
-    def setEq_(value: listOfString): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    inline def setEq_(value: listOfString): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
-    @scala.inline
-    def setEq_Varargs(value: string*): Self = StObject.set(x, "eq", js.Array(value :_*))
+    inline def setEq_Varargs(value: string*): Self = StObject.set(x, "eq", js.Array(value :_*))
     
-    @scala.inline
-    def setGt(value: long): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+    inline def setGt(value: long): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+    inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
-    @scala.inline
-    def setGte(value: long): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+    inline def setGte(value: long): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+    inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
     
-    @scala.inline
-    def setLt(value: long): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+    inline def setLt(value: long): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+    inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
-    @scala.inline
-    def setLte(value: long): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+    inline def setLte(value: long): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+    inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
     
-    @scala.inline
-    def setNeq(value: listOfString): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    inline def setNeq(value: listOfString): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
     
-    @scala.inline
-    def setNeqVarargs(value: string*): Self = StObject.set(x, "neq", js.Array(value :_*))
+    inline def setNeqVarargs(value: string*): Self = StObject.set(x, "neq", js.Array(value :_*))
   }
 }

@@ -27,8 +27,7 @@ trait QueryParameterValues
 }
 object QueryParameterValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
@@ -39,16 +38,12 @@ object QueryParameterValues {
     __obj.asInstanceOf[QueryParameterValues]
   }
   
-  @scala.inline
-  implicit class QueryParameterValuesMutableBuilder[Self <: QueryParameterValues] (val x: Self) extends AnyVal {
+  extension [Self <: QueryParameterValues](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | (js.Array[Date | Double | String]) | Double | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | (js.Array[Date | Double | String]) | Double | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

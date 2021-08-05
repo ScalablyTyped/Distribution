@@ -83,8 +83,7 @@ object mod {
   }
   object Model {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addData: String => Unit,
       dataList: js.Array[Data],
       errorCorrectLevel: Double,
@@ -99,50 +98,35 @@ object mod {
       __obj.asInstanceOf[Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+    extension [Self <: Model](x: Self) {
       
-      @scala.inline
-      def setAddData(value: String => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction1(value))
+      inline def setAddData(value: String => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataCache(value: js.Array[Double]): Self = StObject.set(x, "dataCache", value.asInstanceOf[js.Any])
+      inline def setDataCache(value: js.Array[Double]): Self = StObject.set(x, "dataCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataCacheNull: Self = StObject.set(x, "dataCache", null)
+      inline def setDataCacheNull: Self = StObject.set(x, "dataCache", null)
       
-      @scala.inline
-      def setDataCacheVarargs(value: Double*): Self = StObject.set(x, "dataCache", js.Array(value :_*))
+      inline def setDataCacheVarargs(value: Double*): Self = StObject.set(x, "dataCache", js.Array(value :_*))
       
-      @scala.inline
-      def setDataList(value: js.Array[Data]): Self = StObject.set(x, "dataList", value.asInstanceOf[js.Any])
+      inline def setDataList(value: js.Array[Data]): Self = StObject.set(x, "dataList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataListVarargs(value: Data*): Self = StObject.set(x, "dataList", js.Array(value :_*))
+      inline def setDataListVarargs(value: Data*): Self = StObject.set(x, "dataList", js.Array(value :_*))
       
-      @scala.inline
-      def setErrorCorrectLevel(value: Double): Self = StObject.set(x, "errorCorrectLevel", value.asInstanceOf[js.Any])
+      inline def setErrorCorrectLevel(value: Double): Self = StObject.set(x, "errorCorrectLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetModuleCount(value: () => Double): Self = StObject.set(x, "getModuleCount", js.Any.fromFunction0(value))
+      inline def setGetModuleCount(value: () => Double): Self = StObject.set(x, "getModuleCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDark(value: (Double, Double) => Boolean): Self = StObject.set(x, "isDark", js.Any.fromFunction2(value))
+      inline def setIsDark(value: (Double, Double) => Boolean): Self = StObject.set(x, "isDark", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMake(value: () => Unit): Self = StObject.set(x, "make", js.Any.fromFunction0(value))
+      inline def setMake(value: () => Unit): Self = StObject.set(x, "make", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setModuleCount(value: Double): Self = StObject.set(x, "moduleCount", value.asInstanceOf[js.Any])
+      inline def setModuleCount(value: Double): Self = StObject.set(x, "moduleCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModules(value: js.Array[js.Array[Boolean]]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: js.Array[js.Array[Boolean]]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesVarargs(value: js.Array[Boolean]*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: js.Array[Boolean]*): Self = StObject.set(x, "modules", js.Array(value :_*))
       
-      @scala.inline
-      def setTypeNumber(value: Double): Self = StObject.set(x, "typeNumber", value.asInstanceOf[js.Any])
+      inline def setTypeNumber(value: Double): Self = StObject.set(x, "typeNumber", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,89 +182,62 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(content: String): Options = {
+    inline def apply(content: String): Options = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setContainer(value: svg | `svg-viewbox` | g | none): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: svg | `svg-viewbox` | g | none): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcl(value: L | M | H | Q): Self = StObject.set(x, "ecl", value.asInstanceOf[js.Any])
+      inline def setEcl(value: L | M | H | Q): Self = StObject.set(x, "ecl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEclUndefined: Self = StObject.set(x, "ecl", js.undefined)
+      inline def setEclUndefined: Self = StObject.set(x, "ecl", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setJoin(value: Boolean): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: Boolean): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+      inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPredefined(value: Boolean): Self = StObject.set(x, "predefined", value.asInstanceOf[js.Any])
+      inline def setPredefined(value: Boolean): Self = StObject.set(x, "predefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredefinedUndefined: Self = StObject.set(x, "predefined", js.undefined)
+      inline def setPredefinedUndefined: Self = StObject.set(x, "predefined", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      @scala.inline
-      def setSwap(value: Boolean): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
+      inline def setSwap(value: Boolean): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwapUndefined: Self = StObject.set(x, "swap", js.undefined)
+      inline def setSwapUndefined: Self = StObject.set(x, "swap", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setXmlDeclaration(value: Boolean): Self = StObject.set(x, "xmlDeclaration", value.asInstanceOf[js.Any])
+      inline def setXmlDeclaration(value: Boolean): Self = StObject.set(x, "xmlDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlDeclarationUndefined: Self = StObject.set(x, "xmlDeclaration", js.undefined)
+      inline def setXmlDeclarationUndefined: Self = StObject.set(x, "xmlDeclaration", js.undefined)
     }
   }
   

@@ -12,19 +12,15 @@ trait CPSigners extends StObject {
 }
 object CPSigners {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => CPSigner): CPSigners = {
+  inline def apply(Count: Double, Item: Double => CPSigner): CPSigners = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[CPSigners]
   }
   
-  @scala.inline
-  implicit class CPSignersMutableBuilder[Self <: CPSigners] (val x: Self) extends AnyVal {
+  extension [Self <: CPSigners](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => CPSigner): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => CPSigner): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

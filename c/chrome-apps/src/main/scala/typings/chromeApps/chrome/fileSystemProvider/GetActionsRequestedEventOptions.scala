@@ -15,19 +15,15 @@ trait GetActionsRequestedEventOptions
 }
 object GetActionsRequestedEventOptions {
   
-  @scala.inline
-  def apply(entryPaths: js.Array[String], fileSystemId: String, requestId: integer): GetActionsRequestedEventOptions = {
+  inline def apply(entryPaths: js.Array[String], fileSystemId: String, requestId: integer): GetActionsRequestedEventOptions = {
     val __obj = js.Dynamic.literal(entryPaths = entryPaths.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetActionsRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class GetActionsRequestedEventOptionsMutableBuilder[Self <: GetActionsRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetActionsRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setEntryPaths(value: js.Array[String]): Self = StObject.set(x, "entryPaths", value.asInstanceOf[js.Any])
+    inline def setEntryPaths(value: js.Array[String]): Self = StObject.set(x, "entryPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPathsVarargs(value: String*): Self = StObject.set(x, "entryPaths", js.Array(value :_*))
+    inline def setEntryPathsVarargs(value: String*): Self = StObject.set(x, "entryPaths", js.Array(value :_*))
   }
 }

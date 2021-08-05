@@ -30,19 +30,15 @@ trait Highlight extends StObject {
 }
 object Highlight {
   
-  @scala.inline
-  def apply(color: String, width: Double): Highlight = {
+  inline def apply(color: String, width: Double): Highlight = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Highlight]
   }
   
-  @scala.inline
-  implicit class HighlightMutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
+  extension [Self <: Highlight](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

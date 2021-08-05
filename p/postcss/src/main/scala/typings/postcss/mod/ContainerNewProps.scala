@@ -18,28 +18,21 @@ trait ContainerNewProps
 }
 object ContainerNewProps {
   
-  @scala.inline
-  def apply(): ContainerNewProps = {
+  inline def apply(): ContainerNewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerNewProps]
   }
   
-  @scala.inline
-  implicit class ContainerNewPropsMutableBuilder[Self <: ContainerNewProps] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerNewProps](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: ChildNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: ChildNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRaws(value: ContainerRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: ContainerRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
+    inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
   }
 }

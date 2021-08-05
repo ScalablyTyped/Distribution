@@ -53,103 +53,71 @@ trait PatchJob extends StObject {
 }
 object PatchJob {
   
-  @scala.inline
-  def apply(): PatchJob = {
+  inline def apply(): PatchJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchJob]
   }
   
-  @scala.inline
-  implicit class PatchJobMutableBuilder[Self <: PatchJob] (val x: Self) extends AnyVal {
+  extension [Self <: PatchJob](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setInstanceDetailsSummary(value: PatchJobInstanceDetailsSummary): Self = StObject.set(x, "instanceDetailsSummary", value.asInstanceOf[js.Any])
+    inline def setInstanceDetailsSummary(value: PatchJobInstanceDetailsSummary): Self = StObject.set(x, "instanceDetailsSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceDetailsSummaryUndefined: Self = StObject.set(x, "instanceDetailsSummary", js.undefined)
+    inline def setInstanceDetailsSummaryUndefined: Self = StObject.set(x, "instanceDetailsSummary", js.undefined)
     
-    @scala.inline
-    def setInstanceFilter(value: PatchInstanceFilter): Self = StObject.set(x, "instanceFilter", value.asInstanceOf[js.Any])
+    inline def setInstanceFilter(value: PatchInstanceFilter): Self = StObject.set(x, "instanceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFilterUndefined: Self = StObject.set(x, "instanceFilter", js.undefined)
+    inline def setInstanceFilterUndefined: Self = StObject.set(x, "instanceFilter", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPatchConfig(value: PatchConfig): Self = StObject.set(x, "patchConfig", value.asInstanceOf[js.Any])
+    inline def setPatchConfig(value: PatchConfig): Self = StObject.set(x, "patchConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchConfigUndefined: Self = StObject.set(x, "patchConfig", js.undefined)
+    inline def setPatchConfigUndefined: Self = StObject.set(x, "patchConfig", js.undefined)
     
-    @scala.inline
-    def setPatchDeployment(value: String): Self = StObject.set(x, "patchDeployment", value.asInstanceOf[js.Any])
+    inline def setPatchDeployment(value: String): Self = StObject.set(x, "patchDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchDeploymentUndefined: Self = StObject.set(x, "patchDeployment", js.undefined)
+    inline def setPatchDeploymentUndefined: Self = StObject.set(x, "patchDeployment", js.undefined)
     
-    @scala.inline
-    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
-    @scala.inline
-    def setRollout(value: PatchRollout): Self = StObject.set(x, "rollout", value.asInstanceOf[js.Any])
+    inline def setRollout(value: PatchRollout): Self = StObject.set(x, "rollout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloutUndefined: Self = StObject.set(x, "rollout", js.undefined)
+    inline def setRolloutUndefined: Self = StObject.set(x, "rollout", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

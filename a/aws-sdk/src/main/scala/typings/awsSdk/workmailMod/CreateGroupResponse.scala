@@ -13,19 +13,15 @@ trait CreateGroupResponse extends StObject {
 }
 object CreateGroupResponse {
   
-  @scala.inline
-  def apply(): CreateGroupResponse = {
+  inline def apply(): CreateGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateGroupResponseMutableBuilder[Self <: CreateGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGroupResponse](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: WorkMailIdentifier): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: WorkMailIdentifier): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait CACHESDIRECTORYPATH extends StObject {
 }
 object CACHESDIRECTORYPATH {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CACHES_DIRECTORY_PATH: String,
     DOCUMENT_DIRECTORY_PATH: String,
     EXTERNAL_DIRECTORY_PATH: String,
@@ -42,34 +41,24 @@ object CACHESDIRECTORYPATH {
     __obj.asInstanceOf[CACHESDIRECTORYPATH]
   }
   
-  @scala.inline
-  implicit class CACHESDIRECTORYPATHMutableBuilder[Self <: CACHESDIRECTORYPATH] (val x: Self) extends AnyVal {
+  extension [Self <: CACHESDIRECTORYPATH](x: Self) {
     
-    @scala.inline
-    def setCACHES_DIRECTORY_PATH(value: String): Self = StObject.set(x, "CACHES_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+    inline def setCACHES_DIRECTORY_PATH(value: String): Self = StObject.set(x, "CACHES_DIRECTORY_PATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOCUMENT_DIRECTORY_PATH(value: String): Self = StObject.set(x, "DOCUMENT_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+    inline def setDOCUMENT_DIRECTORY_PATH(value: String): Self = StObject.set(x, "DOCUMENT_DIRECTORY_PATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXTERNAL_DIRECTORY_PATH(value: String): Self = StObject.set(x, "EXTERNAL_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+    inline def setEXTERNAL_DIRECTORY_PATH(value: String): Self = StObject.set(x, "EXTERNAL_DIRECTORY_PATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXTERNAL_STORAGE_DIRECTORY_PATH(value: String): Self = StObject.set(x, "EXTERNAL_STORAGE_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+    inline def setEXTERNAL_STORAGE_DIRECTORY_PATH(value: String): Self = StObject.set(x, "EXTERNAL_STORAGE_DIRECTORY_PATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFILETYPE_DIRECTORY(value: String): Self = StObject.set(x, "FILETYPE_DIRECTORY", value.asInstanceOf[js.Any])
+    inline def setFILETYPE_DIRECTORY(value: String): Self = StObject.set(x, "FILETYPE_DIRECTORY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFILETYPE_REGULAR(value: String): Self = StObject.set(x, "FILETYPE_REGULAR", value.asInstanceOf[js.Any])
+    inline def setFILETYPE_REGULAR(value: String): Self = StObject.set(x, "FILETYPE_REGULAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIBRARY_DIRECTORY_PATH(value: String): Self = StObject.set(x, "LIBRARY_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+    inline def setLIBRARY_DIRECTORY_PATH(value: String): Self = StObject.set(x, "LIBRARY_DIRECTORY_PATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAIN_BUNDLE_PATH(value: String): Self = StObject.set(x, "MAIN_BUNDLE_PATH", value.asInstanceOf[js.Any])
+    inline def setMAIN_BUNDLE_PATH(value: String): Self = StObject.set(x, "MAIN_BUNDLE_PATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEMP_DIRECTORY_PATH(value: String): Self = StObject.set(x, "TEMP_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+    inline def setTEMP_DIRECTORY_PATH(value: String): Self = StObject.set(x, "TEMP_DIRECTORY_PATH", value.asInstanceOf[js.Any])
   }
 }

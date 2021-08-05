@@ -13,19 +13,15 @@ trait EnvironmentResourcesDescription extends StObject {
 }
 object EnvironmentResourcesDescription {
   
-  @scala.inline
-  def apply(): EnvironmentResourcesDescription = {
+  inline def apply(): EnvironmentResourcesDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentResourcesDescription]
   }
   
-  @scala.inline
-  implicit class EnvironmentResourcesDescriptionMutableBuilder[Self <: EnvironmentResourcesDescription] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentResourcesDescription](x: Self) {
     
-    @scala.inline
-    def setLoadBalancer(value: LoadBalancerDescription): Self = StObject.set(x, "LoadBalancer", value.asInstanceOf[js.Any])
+    inline def setLoadBalancer(value: LoadBalancerDescription): Self = StObject.set(x, "LoadBalancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerUndefined: Self = StObject.set(x, "LoadBalancer", js.undefined)
+    inline def setLoadBalancerUndefined: Self = StObject.set(x, "LoadBalancer", js.undefined)
   }
 }

@@ -21,32 +21,24 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: ASTNode, comments: js.Array[ASTNode], domain: ASTNode, local: ASTNode, name: ASTNode): Address = {
+    inline def apply(address: ASTNode, comments: js.Array[ASTNode], domain: ASTNode, local: ASTNode, name: ASTNode): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: ASTNode): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: ASTNode): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComments(value: js.Array[ASTNode]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[ASTNode]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsVarargs(value: ASTNode*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: ASTNode*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setDomain(value: ASTNode): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: ASTNode): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal(value: ASTNode): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: ASTNode): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: ASTNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: ASTNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,17 +48,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: ASTNode): Name = {
+    inline def apply(name: ASTNode): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: ASTNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: ASTNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

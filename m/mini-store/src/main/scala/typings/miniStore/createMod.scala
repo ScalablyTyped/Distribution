@@ -11,8 +11,7 @@ object createMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create[S](initialState: S): Store[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialState.asInstanceOf[js.Any]).asInstanceOf[Store[S]]
+  inline def create[S](initialState: S): Store[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialState.asInstanceOf[js.Any]).asInstanceOf[Store[S]]
   
   type Listener = js.Function0[Unit]
 }

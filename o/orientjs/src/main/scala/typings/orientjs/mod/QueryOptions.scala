@@ -27,55 +27,39 @@ trait QueryOptions extends StObject {
 }
 object QueryOptions {
   
-  @scala.inline
-  def apply(): QueryOptions = {
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryOptions]
   }
   
-  @scala.inline
-  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptions](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setFetchPlan(value: js.Any): Self = StObject.set(x, "fetchPlan", value.asInstanceOf[js.Any])
+    inline def setFetchPlan(value: js.Any): Self = StObject.set(x, "fetchPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchPlanUndefined: Self = StObject.set(x, "fetchPlan", js.undefined)
+    inline def setFetchPlanUndefined: Self = StObject.set(x, "fetchPlan", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: SQL | Javascript): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: SQL | Javascript): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMode(value: s | a | l): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: s | a | l): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

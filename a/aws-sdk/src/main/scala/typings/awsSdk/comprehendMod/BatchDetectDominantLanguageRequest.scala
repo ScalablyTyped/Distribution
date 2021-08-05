@@ -13,19 +13,15 @@ trait BatchDetectDominantLanguageRequest extends StObject {
 }
 object BatchDetectDominantLanguageRequest {
   
-  @scala.inline
-  def apply(TextList: CustomerInputStringList): BatchDetectDominantLanguageRequest = {
+  inline def apply(TextList: CustomerInputStringList): BatchDetectDominantLanguageRequest = {
     val __obj = js.Dynamic.literal(TextList = TextList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectDominantLanguageRequest]
   }
   
-  @scala.inline
-  implicit class BatchDetectDominantLanguageRequestMutableBuilder[Self <: BatchDetectDominantLanguageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectDominantLanguageRequest](x: Self) {
     
-    @scala.inline
-    def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
+    inline def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
+    inline def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
   }
 }

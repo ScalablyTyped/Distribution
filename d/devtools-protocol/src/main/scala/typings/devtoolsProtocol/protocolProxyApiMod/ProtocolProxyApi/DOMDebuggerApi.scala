@@ -63,8 +63,7 @@ trait DOMDebuggerApi extends StObject {
 }
 object DOMDebuggerApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventListeners: GetEventListenersRequest => js.Promise[GetEventListenersResponse],
     removeDOMBreakpoint: RemoveDOMBreakpointRequest => js.Promise[Unit],
     removeEventListenerBreakpoint: RemoveEventListenerBreakpointRequest => js.Promise[Unit],
@@ -79,34 +78,24 @@ object DOMDebuggerApi {
     __obj.asInstanceOf[DOMDebuggerApi]
   }
   
-  @scala.inline
-  implicit class DOMDebuggerApiMutableBuilder[Self <: DOMDebuggerApi] (val x: Self) extends AnyVal {
+  extension [Self <: DOMDebuggerApi](x: Self) {
     
-    @scala.inline
-    def setGetEventListeners(value: GetEventListenersRequest => js.Promise[GetEventListenersResponse]): Self = StObject.set(x, "getEventListeners", js.Any.fromFunction1(value))
+    inline def setGetEventListeners(value: GetEventListenersRequest => js.Promise[GetEventListenersResponse]): Self = StObject.set(x, "getEventListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveDOMBreakpoint(value: RemoveDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeDOMBreakpoint", js.Any.fromFunction1(value))
+    inline def setRemoveDOMBreakpoint(value: RemoveDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeDOMBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEventListenerBreakpoint(value: RemoveEventListenerBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeEventListenerBreakpoint", js.Any.fromFunction1(value))
+    inline def setRemoveEventListenerBreakpoint(value: RemoveEventListenerBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeEventListenerBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveInstrumentationBreakpoint(value: RemoveInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeInstrumentationBreakpoint", js.Any.fromFunction1(value))
+    inline def setRemoveInstrumentationBreakpoint(value: RemoveInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeInstrumentationBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveXHRBreakpoint(value: RemoveXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeXHRBreakpoint", js.Any.fromFunction1(value))
+    inline def setRemoveXHRBreakpoint(value: RemoveXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeXHRBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDOMBreakpoint(value: SetDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setDOMBreakpoint", js.Any.fromFunction1(value))
+    inline def setSetDOMBreakpoint(value: SetDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setDOMBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEventListenerBreakpoint(value: SetEventListenerBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setEventListenerBreakpoint", js.Any.fromFunction1(value))
+    inline def setSetEventListenerBreakpoint(value: SetEventListenerBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setEventListenerBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInstrumentationBreakpoint(value: SetInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setInstrumentationBreakpoint", js.Any.fromFunction1(value))
+    inline def setSetInstrumentationBreakpoint(value: SetInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setInstrumentationBreakpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXHRBreakpoint(value: SetXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setXHRBreakpoint", js.Any.fromFunction1(value))
+    inline def setSetXHRBreakpoint(value: SetXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setXHRBreakpoint", js.Any.fromFunction1(value))
   }
 }

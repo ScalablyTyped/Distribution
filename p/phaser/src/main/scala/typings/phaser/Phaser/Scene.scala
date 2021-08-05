@@ -187,8 +187,7 @@ trait Scene extends StObject {
 }
 object Scene {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: GameObjectFactory,
     anims: AnimationManager,
     cache: CacheManager,
@@ -219,82 +218,56 @@ object Scene {
     __obj.asInstanceOf[Scene]
   }
   
-  @scala.inline
-  implicit class SceneMutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
+  extension [Self <: Scene](x: Self) {
     
-    @scala.inline
-    def setAdd(value: GameObjectFactory): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: GameObjectFactory): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnims(value: AnimationManager): Self = StObject.set(x, "anims", value.asInstanceOf[js.Any])
+    inline def setAnims(value: AnimationManager): Self = StObject.set(x, "anims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache(value: CacheManager): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: CacheManager): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameras(value: CameraManager): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
+    inline def setCameras(value: CameraManager): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: DisplayList): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: DisplayList): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: DataManager): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataManager): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebook(value: FacebookInstantGamesPlugin): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+    inline def setFacebook(value: FacebookInstantGamesPlugin): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
+    inline def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: InputPlugin): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: InputPlugin): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights(value: LightsManager): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
+    inline def setLights(value: LightsManager): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: LoaderPlugin): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: LoaderPlugin): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMake(value: GameObjectCreator): Self = StObject.set(x, "make", value.asInstanceOf[js.Any])
+    inline def setMake(value: GameObjectCreator): Self = StObject.set(x, "make", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatter(value: MatterPhysics): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
+    inline def setMatter(value: MatterPhysics): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysics(value: ArcadePhysics): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+    inline def setPhysics(value: ArcadePhysics): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugins(value: PluginManager): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: PluginManager): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistry(value: DataManager): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: DataManager): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: ScaleManager): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ScaleManager): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: ScenePlugin): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: ScenePlugin): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSound(value: BaseSoundManager): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: BaseSoundManager): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSys(value: Systems): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+    inline def setSys(value: Systems): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextures(value: TextureManager): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: TextureManager): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Clock): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Clock): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTweens(value: TweenManager): Self = StObject.set(x, "tweens", value.asInstanceOf[js.Any])
+    inline def setTweens(value: TweenManager): Self = StObject.set(x, "tweens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

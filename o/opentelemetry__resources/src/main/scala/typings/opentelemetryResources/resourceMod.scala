@@ -49,13 +49,11 @@ object resourceMod {
     /**
       * Returns a Resource that indentifies the SDK in use.
       */
-    @scala.inline
-    def createTelemetrySDKResource(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetrySDKResource")().asInstanceOf[Resource]
+    inline def createTelemetrySDKResource(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetrySDKResource")().asInstanceOf[Resource]
     
     /**
       * Returns an empty Resource
       */
-    @scala.inline
-    def empty(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Resource]
+    inline def empty(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Resource]
   }
 }

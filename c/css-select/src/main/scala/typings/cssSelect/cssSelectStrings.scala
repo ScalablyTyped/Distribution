@@ -8,6 +8,5 @@ object cssSelectStrings {
   
   @js.native
   sealed trait _flexibleDescendant extends StObject
-  @scala.inline
-  def _flexibleDescendant: _flexibleDescendant = "_flexibleDescendant".asInstanceOf[_flexibleDescendant]
+  inline def _flexibleDescendant: _flexibleDescendant = "_flexibleDescendant".asInstanceOf[_flexibleDescendant]
 }

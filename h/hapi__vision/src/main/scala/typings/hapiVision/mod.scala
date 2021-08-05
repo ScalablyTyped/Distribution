@@ -45,23 +45,18 @@ object mod extends Shortcut {
   }
   object EnginesConfiguration {
     
-    @scala.inline
-    def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions): EnginesConfiguration = {
+    inline def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions): EnginesConfiguration = {
       val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnginesConfiguration]
     }
     
-    @scala.inline
-    implicit class EnginesConfigurationMutableBuilder[Self <: EnginesConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EnginesConfiguration](x: Self) {
       
-      @scala.inline
-      def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
+      inline def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExtensionUndefined: Self = StObject.set(x, "defaultExtension", js.undefined)
+      inline def setDefaultExtensionUndefined: Self = StObject.set(x, "defaultExtension", js.undefined)
       
-      @scala.inline
-      def setEngines(value: StringDictionary[NpmModule] | ServerViewsEnginesOptions): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
+      inline def setEngines(value: StringDictionary[NpmModule] | ServerViewsEnginesOptions): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,45 +99,34 @@ object mod extends Shortcut {
   }
   object NpmModule {
     
-    @scala.inline
-    def apply(compile: ServerViewCompile): NpmModule = {
+    inline def apply(compile: ServerViewCompile): NpmModule = {
       val __obj = js.Dynamic.literal(compile = compile.asInstanceOf[js.Any])
       __obj.asInstanceOf[NpmModule]
     }
     
-    @scala.inline
-    implicit class NpmModuleMutableBuilder[Self <: NpmModule] (val x: Self) extends AnyVal {
+    extension [Self <: NpmModule](x: Self) {
       
-      @scala.inline
-      def setCompile(value: ServerViewCompile): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
+      inline def setCompile(value: ServerViewCompile): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileFunction2(
+      inline def setCompileFunction2(
         value: (/* template */ String, /* options */ js.Any) => js.Function2[/* context */ js.Any, /* options */ js.Any, Unit]
       ): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompileFunction3(value: (/* template */ String, /* options */ js.Any, /* next */ ServerViewCompileNext) => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
+      inline def setCompileFunction3(value: (/* template */ String, /* options */ js.Any, /* next */ ServerViewCompileNext) => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPrepare(
+      inline def setPrepare(
         value: (/* config */ EngineConfigurationObject, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit
       ): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
+      inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
       
-      @scala.inline
-      def setRegisterHelper(value: (/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
+      inline def setRegisterHelper(value: (/* name */ String, /* helper */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterHelperUndefined: Self = StObject.set(x, "registerHelper", js.undefined)
+      inline def setRegisterHelperUndefined: Self = StObject.set(x, "registerHelper", js.undefined)
       
-      @scala.inline
-      def setRegisterPartial(value: (/* name */ String, /* src */ String) => Unit): Self = StObject.set(x, "registerPartial", js.Any.fromFunction2(value))
+      inline def setRegisterPartial(value: (/* name */ String, /* src */ String) => Unit): Self = StObject.set(x, "registerPartial", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterPartialUndefined: Self = StObject.set(x, "registerPartial", js.undefined)
+      inline def setRegisterPartialUndefined: Self = StObject.set(x, "registerPartial", js.undefined)
     }
   }
   
@@ -221,38 +205,28 @@ object mod extends Shortcut {
   }
   object ServerViewsConfiguration {
     
-    @scala.inline
-    def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions): ServerViewsConfiguration = {
+    inline def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions): ServerViewsConfiguration = {
       val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerViewsConfiguration]
     }
     
-    @scala.inline
-    implicit class ServerViewsConfigurationMutableBuilder[Self <: ServerViewsConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ServerViewsConfiguration](x: Self) {
       
-      @scala.inline
-      def setHelpersPath(value: String | js.Array[String]): Self = StObject.set(x, "helpersPath", value.asInstanceOf[js.Any])
+      inline def setHelpersPath(value: String | js.Array[String]): Self = StObject.set(x, "helpersPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpersPathUndefined: Self = StObject.set(x, "helpersPath", js.undefined)
+      inline def setHelpersPathUndefined: Self = StObject.set(x, "helpersPath", js.undefined)
       
-      @scala.inline
-      def setHelpersPathVarargs(value: String*): Self = StObject.set(x, "helpersPath", js.Array(value :_*))
+      inline def setHelpersPathVarargs(value: String*): Self = StObject.set(x, "helpersPath", js.Array(value :_*))
       
-      @scala.inline
-      def setIsCached(value: Boolean): Self = StObject.set(x, "isCached", value.asInstanceOf[js.Any])
+      inline def setIsCached(value: Boolean): Self = StObject.set(x, "isCached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCachedUndefined: Self = StObject.set(x, "isCached", js.undefined)
+      inline def setIsCachedUndefined: Self = StObject.set(x, "isCached", js.undefined)
       
-      @scala.inline
-      def setPartialsPath(value: String | js.Array[String]): Self = StObject.set(x, "partialsPath", value.asInstanceOf[js.Any])
+      inline def setPartialsPath(value: String | js.Array[String]): Self = StObject.set(x, "partialsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialsPathUndefined: Self = StObject.set(x, "partialsPath", js.undefined)
+      inline def setPartialsPathUndefined: Self = StObject.set(x, "partialsPath", js.undefined)
       
-      @scala.inline
-      def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value :_*))
+      inline def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value :_*))
     }
   }
   
@@ -271,17 +245,14 @@ object mod extends Shortcut {
   }
   object ServerViewsEnginesOptions {
     
-    @scala.inline
-    def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions, module: NpmModule): ServerViewsEnginesOptions = {
+    inline def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions, module: NpmModule): ServerViewsEnginesOptions = {
       val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerViewsEnginesOptions]
     }
     
-    @scala.inline
-    implicit class ServerViewsEnginesOptionsMutableBuilder[Self <: ServerViewsEnginesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerViewsEnginesOptions](x: Self) {
       
-      @scala.inline
-      def setModule(value: NpmModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: NpmModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,101 +319,70 @@ object mod extends Shortcut {
   }
   object ViewHandlerOrReplyOptions {
     
-    @scala.inline
-    def apply(): ViewHandlerOrReplyOptions = {
+    inline def apply(): ViewHandlerOrReplyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewHandlerOrReplyOptions]
     }
     
-    @scala.inline
-    implicit class ViewHandlerOrReplyOptionsMutableBuilder[Self <: ViewHandlerOrReplyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewHandlerOrReplyOptions](x: Self) {
       
-      @scala.inline
-      def setAllowAbsolutePaths(value: Boolean): Self = StObject.set(x, "allowAbsolutePaths", value.asInstanceOf[js.Any])
+      inline def setAllowAbsolutePaths(value: Boolean): Self = StObject.set(x, "allowAbsolutePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAbsolutePathsUndefined: Self = StObject.set(x, "allowAbsolutePaths", js.undefined)
+      inline def setAllowAbsolutePathsUndefined: Self = StObject.set(x, "allowAbsolutePaths", js.undefined)
       
-      @scala.inline
-      def setAllowInsecureAccess(value: Boolean): Self = StObject.set(x, "allowInsecureAccess", value.asInstanceOf[js.Any])
+      inline def setAllowInsecureAccess(value: Boolean): Self = StObject.set(x, "allowInsecureAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowInsecureAccessUndefined: Self = StObject.set(x, "allowInsecureAccess", js.undefined)
+      inline def setAllowInsecureAccessUndefined: Self = StObject.set(x, "allowInsecureAccess", js.undefined)
       
-      @scala.inline
-      def setCompileMode(value: sync | async): Self = StObject.set(x, "compileMode", value.asInstanceOf[js.Any])
+      inline def setCompileMode(value: sync | async): Self = StObject.set(x, "compileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileModeUndefined: Self = StObject.set(x, "compileMode", js.undefined)
+      inline def setCompileModeUndefined: Self = StObject.set(x, "compileMode", js.undefined)
       
-      @scala.inline
-      def setCompileOptions(value: CompileOptions): Self = StObject.set(x, "compileOptions", value.asInstanceOf[js.Any])
+      inline def setCompileOptions(value: CompileOptions): Self = StObject.set(x, "compileOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileOptionsUndefined: Self = StObject.set(x, "compileOptions", js.undefined)
+      inline def setCompileOptionsUndefined: Self = StObject.set(x, "compileOptions", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Object | (js.Function1[/* request */ Request, js.Object])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object | (js.Function1[/* request */ Request, js.Object])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextFunction1(value: /* request */ Request => js.Object): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+      inline def setContextFunction1(value: /* request */ Request => js.Object): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Boolean | String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Boolean | String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutKeyword(value: String): Self = StObject.set(x, "layoutKeyword", value.asInstanceOf[js.Any])
+      inline def setLayoutKeyword(value: String): Self = StObject.set(x, "layoutKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutKeywordUndefined: Self = StObject.set(x, "layoutKeyword", js.undefined)
+      inline def setLayoutKeywordUndefined: Self = StObject.set(x, "layoutKeyword", js.undefined)
       
-      @scala.inline
-      def setLayoutPath(value: String | js.Array[String]): Self = StObject.set(x, "layoutPath", value.asInstanceOf[js.Any])
+      inline def setLayoutPath(value: String | js.Array[String]): Self = StObject.set(x, "layoutPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutPathUndefined: Self = StObject.set(x, "layoutPath", js.undefined)
+      inline def setLayoutPathUndefined: Self = StObject.set(x, "layoutPath", js.undefined)
       
-      @scala.inline
-      def setLayoutPathVarargs(value: String*): Self = StObject.set(x, "layoutPath", js.Array(value :_*))
+      inline def setLayoutPathVarargs(value: String*): Self = StObject.set(x, "layoutPath", js.Array(value :_*))
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+      inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+      inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
       
-      @scala.inline
-      def setRuntimeOptions(value: RuntimeOptions): Self = StObject.set(x, "runtimeOptions", value.asInstanceOf[js.Any])
+      inline def setRuntimeOptions(value: RuntimeOptions): Self = StObject.set(x, "runtimeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeOptionsUndefined: Self = StObject.set(x, "runtimeOptions", js.undefined)
+      inline def setRuntimeOptionsUndefined: Self = StObject.set(x, "runtimeOptions", js.undefined)
     }
   }
   
@@ -479,8 +419,7 @@ object mod extends Shortcut {
   }
   object ViewManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       registerHelper: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit,
       render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
     ): ViewManager = {
@@ -488,14 +427,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ViewManager]
     }
     
-    @scala.inline
-    implicit class ViewManagerMutableBuilder[Self <: ViewManager] (val x: Self) extends AnyVal {
+    extension [Self <: ViewManager](x: Self) {
       
-      @scala.inline
-      def setRegisterHelper(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
+      inline def setRegisterHelper(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     }
@@ -524,20 +460,16 @@ object mod extends Shortcut {
     }
     object HandlerDecorations {
       
-      @scala.inline
-      def apply(): HandlerDecorations = {
+      inline def apply(): HandlerDecorations = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HandlerDecorations]
       }
       
-      @scala.inline
-      implicit class HandlerDecorationsMutableBuilder[Self <: HandlerDecorations] (val x: Self) extends AnyVal {
+      extension [Self <: HandlerDecorations](x: Self) {
         
-        @scala.inline
-        def setView(value: String | Context): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+        inline def setView(value: String | Context): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+        inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       }
     }
     
@@ -577,8 +509,7 @@ object mod extends Shortcut {
     }
     object Request {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getViewsManager: () => ViewManager,
         render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
       ): typings.hapiVision.mod.hapiHapiAugmentingMod.Request = {
@@ -586,14 +517,11 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.hapiVision.mod.hapiHapiAugmentingMod.Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: typings.hapiVision.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
+      extension [Self <: typings.hapiVision.mod.hapiHapiAugmentingMod.Request](x: Self) {
         
-        @scala.inline
-        def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
+        inline def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRender(
+        inline def setRender(
           value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
         ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       }
@@ -657,8 +585,7 @@ object mod extends Shortcut {
     }
     object Server {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getViewsManager: () => ViewManager,
         render: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String],
         views: ServerViewsConfiguration => ViewManager
@@ -667,19 +594,15 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Server]
       }
       
-      @scala.inline
-      implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+      extension [Self <: Server](x: Self) {
         
-        @scala.inline
-        def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
+        inline def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRender(
+        inline def setRender(
           value: (/* template */ String, /* context */ js.UndefOr[js.Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
         ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setViews(value: ServerViewsConfiguration => ViewManager): Self = StObject.set(x, "views", js.Any.fromFunction1(value))
+        inline def setViews(value: ServerViewsConfiguration => ViewManager): Self = StObject.set(x, "views", js.Any.fromFunction1(value))
       }
     }
   }

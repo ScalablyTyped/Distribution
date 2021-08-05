@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlBorderWeight extends StObject
 object XlBorderWeight {
   
-  @scala.inline
-  def xlHairline: `1` = 1.asInstanceOf[`1`]
+  inline def xlHairline: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlMedium: `-4138` = -4138.asInstanceOf[`-4138`]
+  inline def xlMedium: `-4138` = -4138.asInstanceOf[`-4138`]
   
-  @scala.inline
-  def xlThick: `4` = 4.asInstanceOf[`4`]
+  inline def xlThick: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlThin: `2` = 2.asInstanceOf[`2`]
+  inline def xlThin: `2` = 2.asInstanceOf[`2`]
 }

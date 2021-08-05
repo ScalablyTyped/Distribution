@@ -21,20 +21,16 @@ object startMod {
   }
   object StartProps {
     
-    @scala.inline
-    def apply(): StartProps = {
+    inline def apply(): StartProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartProps]
     }
     
-    @scala.inline
-    implicit class StartPropsMutableBuilder[Self <: StartProps] (val x: Self) extends AnyVal {
+    extension [Self <: StartProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

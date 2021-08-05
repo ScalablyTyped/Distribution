@@ -74,8 +74,7 @@ trait ModuleMap extends StObject {
 }
 object ModuleMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     find: NativePointerValue => Module | Null,
     findName: NativePointerValue => String | Null,
     findPath: NativePointerValue => String | Null,
@@ -90,34 +89,24 @@ object ModuleMap {
     __obj.asInstanceOf[ModuleMap]
   }
   
-  @scala.inline
-  implicit class ModuleMapMutableBuilder[Self <: ModuleMap] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleMap](x: Self) {
     
-    @scala.inline
-    def setFind(value: NativePointerValue => Module | Null): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: NativePointerValue => Module | Null): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindName(value: NativePointerValue => String | Null): Self = StObject.set(x, "findName", js.Any.fromFunction1(value))
+    inline def setFindName(value: NativePointerValue => String | Null): Self = StObject.set(x, "findName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindPath(value: NativePointerValue => String | Null): Self = StObject.set(x, "findPath", js.Any.fromFunction1(value))
+    inline def setFindPath(value: NativePointerValue => String | Null): Self = StObject.set(x, "findPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: NativePointerValue => Module): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: NativePointerValue => Module): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetName(value: NativePointerValue => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
+    inline def setGetName(value: NativePointerValue => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPath(value: NativePointerValue => String): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
+    inline def setGetPath(value: NativePointerValue => String): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: NativePointerValue => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: NativePointerValue => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValues(value: () => js.Array[Module]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+    inline def setValues(value: () => js.Array[Module]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

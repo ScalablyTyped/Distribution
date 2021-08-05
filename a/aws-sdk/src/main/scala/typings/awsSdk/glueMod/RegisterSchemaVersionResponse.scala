@@ -23,31 +23,23 @@ trait RegisterSchemaVersionResponse extends StObject {
 }
 object RegisterSchemaVersionResponse {
   
-  @scala.inline
-  def apply(): RegisterSchemaVersionResponse = {
+  inline def apply(): RegisterSchemaVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterSchemaVersionResponse]
   }
   
-  @scala.inline
-  implicit class RegisterSchemaVersionResponseMutableBuilder[Self <: RegisterSchemaVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterSchemaVersionResponse](x: Self) {
     
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
+    inline def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

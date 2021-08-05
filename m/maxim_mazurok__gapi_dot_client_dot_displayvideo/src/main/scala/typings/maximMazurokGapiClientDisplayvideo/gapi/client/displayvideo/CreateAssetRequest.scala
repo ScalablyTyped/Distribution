@@ -11,19 +11,15 @@ trait CreateAssetRequest extends StObject {
 }
 object CreateAssetRequest {
   
-  @scala.inline
-  def apply(): CreateAssetRequest = {
+  inline def apply(): CreateAssetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAssetRequest]
   }
   
-  @scala.inline
-  implicit class CreateAssetRequestMutableBuilder[Self <: CreateAssetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAssetRequest](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
   }
 }

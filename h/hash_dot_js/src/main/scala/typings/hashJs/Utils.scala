@@ -14,19 +14,15 @@ trait Utils extends StObject {
 }
 object Utils {
   
-  @scala.inline
-  def apply(toArray: (js.Any, hex) => js.Array[Double], toHex: js.Any => String): Utils = {
+  inline def apply(toArray: (js.Any, hex) => js.Array[Double], toHex: js.Any => String): Utils = {
     val __obj = js.Dynamic.literal(toArray = js.Any.fromFunction2(toArray), toHex = js.Any.fromFunction1(toHex))
     __obj.asInstanceOf[Utils]
   }
   
-  @scala.inline
-  implicit class UtilsMutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
+  extension [Self <: Utils](x: Self) {
     
-    @scala.inline
-    def setToArray(value: (js.Any, hex) => js.Array[Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction2(value))
+    inline def setToArray(value: (js.Any, hex) => js.Array[Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToHex(value: js.Any => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
+    inline def setToHex(value: js.Any => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
   }
 }

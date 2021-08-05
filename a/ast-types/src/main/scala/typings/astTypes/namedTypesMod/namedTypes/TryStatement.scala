@@ -42,70 +42,48 @@ object TryStatement {
   @js.native
   val ^ : Type[TryStatement] = js.native
   
-  @scala.inline
-  implicit class TryStatementMutableBuilder[Self <: TryStatement] (val x: Self) extends AnyVal {
+  extension [Self <: TryStatement](x: Self) {
     
-    @scala.inline
-    def setBlock(value: BlockStatementKind): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockStatementKind): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setFinalizer(value: BlockStatementKind): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
+    inline def setFinalizer(value: BlockStatementKind): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizerNull: Self = StObject.set(x, "finalizer", null)
+    inline def setFinalizerNull: Self = StObject.set(x, "finalizer", null)
     
-    @scala.inline
-    def setFinalizerUndefined: Self = StObject.set(x, "finalizer", js.undefined)
+    inline def setFinalizerUndefined: Self = StObject.set(x, "finalizer", js.undefined)
     
-    @scala.inline
-    def setGuardedHandlers(value: js.Array[CatchClauseKind]): Self = StObject.set(x, "guardedHandlers", value.asInstanceOf[js.Any])
+    inline def setGuardedHandlers(value: js.Array[CatchClauseKind]): Self = StObject.set(x, "guardedHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuardedHandlersUndefined: Self = StObject.set(x, "guardedHandlers", js.undefined)
+    inline def setGuardedHandlersUndefined: Self = StObject.set(x, "guardedHandlers", js.undefined)
     
-    @scala.inline
-    def setGuardedHandlersVarargs(value: CatchClauseKind*): Self = StObject.set(x, "guardedHandlers", js.Array(value :_*))
+    inline def setGuardedHandlersVarargs(value: CatchClauseKind*): Self = StObject.set(x, "guardedHandlers", js.Array(value :_*))
     
-    @scala.inline
-    def setHandler(value: CatchClauseKind): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: CatchClauseKind): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerNull: Self = StObject.set(x, "handler", null)
+    inline def setHandlerNull: Self = StObject.set(x, "handler", null)
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    @scala.inline
-    def setHandlers(value: js.Array[CatchClauseKind]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    inline def setHandlers(value: js.Array[CatchClauseKind]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+    inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
-    @scala.inline
-    def setHandlersVarargs(value: CatchClauseKind*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+    inline def setHandlersVarargs(value: CatchClauseKind*): Self = StObject.set(x, "handlers", js.Array(value :_*))
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLCSSNamespaceRule extends StObject {
   
-  @JSName("MSHTML.HTMLCSSNamespaceRule_typekey")
+  /* private */ @JSName("MSHTML.HTMLCSSNamespaceRule_typekey")
   var MSHTMLDotHTMLCSSNamespaceRule_typekey: HTMLCSSNamespaceRule
   
   var cssText: String
@@ -23,8 +23,7 @@ trait HTMLCSSNamespaceRule extends StObject {
 }
 object HTMLCSSNamespaceRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLCSSNamespaceRule_typekey: HTMLCSSNamespaceRule,
     cssText: String,
     namespaceURI: String,
@@ -39,28 +38,20 @@ object HTMLCSSNamespaceRule {
     __obj.asInstanceOf[HTMLCSSNamespaceRule]
   }
   
-  @scala.inline
-  implicit class HTMLCSSNamespaceRuleMutableBuilder[Self <: HTMLCSSNamespaceRule] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLCSSNamespaceRule](x: Self) {
     
-    @scala.inline
-    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLCSSNamespaceRule_typekey(value: HTMLCSSNamespaceRule): Self = StObject.set(x, "MSHTML.HTMLCSSNamespaceRule_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLCSSNamespaceRule_typekey(value: HTMLCSSNamespaceRule): Self = StObject.set(x, "MSHTML.HTMLCSSNamespaceRule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+    inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
+    inline def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
+    inline def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

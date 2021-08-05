@@ -52,8 +52,7 @@ trait XTolerantMultiPropertySet
 }
 object XTolerantMultiPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDirectPropertyValuesTolerant: SeqEquiv[String] => SafeArray[GetDirectPropertyTolerantResult],
     getPropertyValuesTolerant: SeqEquiv[String] => SafeArray[GetPropertyTolerantResult],
@@ -65,16 +64,12 @@ object XTolerantMultiPropertySet {
     __obj.asInstanceOf[XTolerantMultiPropertySet]
   }
   
-  @scala.inline
-  implicit class XTolerantMultiPropertySetMutableBuilder[Self <: XTolerantMultiPropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: XTolerantMultiPropertySet](x: Self) {
     
-    @scala.inline
-    def setGetDirectPropertyValuesTolerant(value: SeqEquiv[String] => SafeArray[GetDirectPropertyTolerantResult]): Self = StObject.set(x, "getDirectPropertyValuesTolerant", js.Any.fromFunction1(value))
+    inline def setGetDirectPropertyValuesTolerant(value: SeqEquiv[String] => SafeArray[GetDirectPropertyTolerantResult]): Self = StObject.set(x, "getDirectPropertyValuesTolerant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyValuesTolerant(value: SeqEquiv[String] => SafeArray[GetPropertyTolerantResult]): Self = StObject.set(x, "getPropertyValuesTolerant", js.Any.fromFunction1(value))
+    inline def setGetPropertyValuesTolerant(value: SeqEquiv[String] => SafeArray[GetPropertyTolerantResult]): Self = StObject.set(x, "getPropertyValuesTolerant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyValuesTolerant(value: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed]): Self = StObject.set(x, "setPropertyValuesTolerant", js.Any.fromFunction2(value))
+    inline def setSetPropertyValuesTolerant(value: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed]): Self = StObject.set(x, "setPropertyValuesTolerant", js.Any.fromFunction2(value))
   }
 }

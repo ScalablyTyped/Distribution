@@ -18,22 +18,17 @@ trait CreateLunaClientRequest extends StObject {
 }
 object CreateLunaClientRequest {
   
-  @scala.inline
-  def apply(Certificate: Certificate): CreateLunaClientRequest = {
+  inline def apply(Certificate: Certificate): CreateLunaClientRequest = {
     val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLunaClientRequest]
   }
   
-  @scala.inline
-  implicit class CreateLunaClientRequestMutableBuilder[Self <: CreateLunaClientRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLunaClientRequest](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: ClientLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ClientLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
   }
 }

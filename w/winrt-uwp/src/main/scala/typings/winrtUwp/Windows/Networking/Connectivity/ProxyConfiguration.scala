@@ -17,19 +17,15 @@ trait ProxyConfiguration extends StObject {
 }
 object ProxyConfiguration {
   
-  @scala.inline
-  def apply(canConnectDirectly: Boolean, proxyUris: IVectorView[Uri]): ProxyConfiguration = {
+  inline def apply(canConnectDirectly: Boolean, proxyUris: IVectorView[Uri]): ProxyConfiguration = {
     val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly.asInstanceOf[js.Any], proxyUris = proxyUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfiguration]
   }
   
-  @scala.inline
-  implicit class ProxyConfigurationMutableBuilder[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyConfiguration](x: Self) {
     
-    @scala.inline
-    def setCanConnectDirectly(value: Boolean): Self = StObject.set(x, "canConnectDirectly", value.asInstanceOf[js.Any])
+    inline def setCanConnectDirectly(value: Boolean): Self = StObject.set(x, "canConnectDirectly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUris(value: IVectorView[Uri]): Self = StObject.set(x, "proxyUris", value.asInstanceOf[js.Any])
+    inline def setProxyUris(value: IVectorView[Uri]): Self = StObject.set(x, "proxyUris", value.asInstanceOf[js.Any])
   }
 }

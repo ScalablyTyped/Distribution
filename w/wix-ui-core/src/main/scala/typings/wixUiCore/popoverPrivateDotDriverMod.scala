@@ -12,6 +12,5 @@ object popoverPrivateDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def popoverPrivateDriverFactory(hasElementEventTrigger: Element): ClickOnContent = ^.asInstanceOf[js.Dynamic].applyDynamic("popoverPrivateDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[ClickOnContent]
+  inline def popoverPrivateDriverFactory(hasElementEventTrigger: Element): ClickOnContent = ^.asInstanceOf[js.Dynamic].applyDynamic("popoverPrivateDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[ClickOnContent]
 }

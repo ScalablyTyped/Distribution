@@ -31,26 +31,20 @@ object mod {
   }
   object CacheMap {
     
-    @scala.inline
-    def apply[K, V](clear: () => js.Any, delete: K => js.Any, get: K => V | Unit, set: (K, V) => js.Any): CacheMap[K, V] = {
+    inline def apply[K, V](clear: () => js.Any, delete: K => js.Any, get: K => V | Unit, set: (K, V) => js.Any): CacheMap[K, V] = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[CacheMap[K, V]]
     }
     
-    @scala.inline
-    implicit class CacheMapMutableBuilder[Self <: CacheMap[?, ?], K, V] (val x: Self & (CacheMap[K, V])) extends AnyVal {
+    extension [Self <: CacheMap[?, ?], K, V](x: Self & (CacheMap[K, V])) {
       
-      @scala.inline
-      def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: K => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: K => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: K => V | Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: K => V | Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (K, V) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (K, V) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -141,53 +135,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[K, V, C](): Options[K, V, C] = {
+    inline def apply[K, V, C](): Options[K, V, C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[K, V, C]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?], K, V, C] (val x: Self & (Options[K, V, C])) extends AnyVal {
+    extension [Self <: Options[?, ?, ?], K, V, C](x: Self & (Options[K, V, C])) {
       
-      @scala.inline
-      def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+      inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchScheduleFn(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "batchScheduleFn", js.Any.fromFunction1(value))
+      inline def setBatchScheduleFn(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "batchScheduleFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBatchScheduleFnUndefined: Self = StObject.set(x, "batchScheduleFn", js.undefined)
+      inline def setBatchScheduleFnUndefined: Self = StObject.set(x, "batchScheduleFn", js.undefined)
       
-      @scala.inline
-      def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+      inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKeyFn(value: /* key */ K => C): Self = StObject.set(x, "cacheKeyFn", js.Any.fromFunction1(value))
+      inline def setCacheKeyFn(value: /* key */ K => C): Self = StObject.set(x, "cacheKeyFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCacheKeyFnUndefined: Self = StObject.set(x, "cacheKeyFn", js.undefined)
+      inline def setCacheKeyFnUndefined: Self = StObject.set(x, "cacheKeyFn", js.undefined)
       
-      @scala.inline
-      def setCacheMap(value: CacheMap[C, js.Promise[V]]): Self = StObject.set(x, "cacheMap", value.asInstanceOf[js.Any])
+      inline def setCacheMap(value: CacheMap[C, js.Promise[V]]): Self = StObject.set(x, "cacheMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheMapNull: Self = StObject.set(x, "cacheMap", null)
+      inline def setCacheMapNull: Self = StObject.set(x, "cacheMap", null)
       
-      @scala.inline
-      def setCacheMapUndefined: Self = StObject.set(x, "cacheMap", js.undefined)
+      inline def setCacheMapUndefined: Self = StObject.set(x, "cacheMap", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setMaxBatchSize(value: Double): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+      inline def setMaxBatchSize(value: Double): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
+      inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
     }
   }
 }

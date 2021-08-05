@@ -14,22 +14,17 @@ trait Additions extends StObject {
 }
 object Additions {
   
-  @scala.inline
-  def apply(additions: Double, deletions: Double, total: Double): Additions = {
+  inline def apply(additions: Double, deletions: Double, total: Double): Additions = {
     val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Additions]
   }
   
-  @scala.inline
-  implicit class AdditionsMutableBuilder[Self <: Additions] (val x: Self) extends AnyVal {
+  extension [Self <: Additions](x: Self) {
     
-    @scala.inline
-    def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+    inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+    inline def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

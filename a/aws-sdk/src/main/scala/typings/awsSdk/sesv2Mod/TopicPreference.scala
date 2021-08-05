@@ -18,19 +18,15 @@ trait TopicPreference extends StObject {
 }
 object TopicPreference {
   
-  @scala.inline
-  def apply(SubscriptionStatus: SubscriptionStatus, TopicName: TopicName): TopicPreference = {
+  inline def apply(SubscriptionStatus: SubscriptionStatus, TopicName: TopicName): TopicPreference = {
     val __obj = js.Dynamic.literal(SubscriptionStatus = SubscriptionStatus.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicPreference]
   }
   
-  @scala.inline
-  implicit class TopicPreferenceMutableBuilder[Self <: TopicPreference] (val x: Self) extends AnyVal {
+  extension [Self <: TopicPreference](x: Self) {
     
-    @scala.inline
-    def setSubscriptionStatus(value: SubscriptionStatus): Self = StObject.set(x, "SubscriptionStatus", value.asInstanceOf[js.Any])
+    inline def setSubscriptionStatus(value: SubscriptionStatus): Self = StObject.set(x, "SubscriptionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

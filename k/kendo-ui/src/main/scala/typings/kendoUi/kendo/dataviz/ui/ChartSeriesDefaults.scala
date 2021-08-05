@@ -58,163 +58,111 @@ trait ChartSeriesDefaults extends StObject {
 }
 object ChartSeriesDefaults {
   
-  @scala.inline
-  def apply(): ChartSeriesDefaults = {
+  inline def apply(): ChartSeriesDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesDefaults]
   }
   
-  @scala.inline
-  implicit class ChartSeriesDefaultsMutableBuilder[Self <: ChartSeriesDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesDefaults](x: Self) {
     
-    @scala.inline
-    def setArea(value: js.Any): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: js.Any): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setBar(value: js.Any): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: js.Any): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
+    inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    @scala.inline
-    def setBorder(value: ChartSeriesDefaultsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ChartSeriesDefaultsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setBubble(value: js.Any): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
+    inline def setBubble(value: js.Any): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
+    inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
-    @scala.inline
-    def setCandlestick(value: js.Any): Self = StObject.set(x, "candlestick", value.asInstanceOf[js.Any])
+    inline def setCandlestick(value: js.Any): Self = StObject.set(x, "candlestick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandlestickUndefined: Self = StObject.set(x, "candlestick", js.undefined)
+    inline def setCandlestickUndefined: Self = StObject.set(x, "candlestick", js.undefined)
     
-    @scala.inline
-    def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
+    inline def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
+    inline def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
-    @scala.inline
-    def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    @scala.inline
-    def setLabels(value: ChartSeriesDefaultsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: ChartSeriesDefaultsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setNotes(value: ChartSeriesDefaultsNotes): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: ChartSeriesDefaultsNotes): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setOhlc(value: js.Any): Self = StObject.set(x, "ohlc", value.asInstanceOf[js.Any])
+    inline def setOhlc(value: js.Any): Self = StObject.set(x, "ohlc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOhlcUndefined: Self = StObject.set(x, "ohlc", js.undefined)
+    inline def setOhlcUndefined: Self = StObject.set(x, "ohlc", js.undefined)
     
-    @scala.inline
-    def setOverlay(value: ChartSeriesDefaultsOverlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: ChartSeriesDefaultsOverlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    @scala.inline
-    def setPie(value: js.Any): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
+    inline def setPie(value: js.Any): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
+    inline def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     
-    @scala.inline
-    def setRangeArea(value: js.Any): Self = StObject.set(x, "rangeArea", value.asInstanceOf[js.Any])
+    inline def setRangeArea(value: js.Any): Self = StObject.set(x, "rangeArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeAreaUndefined: Self = StObject.set(x, "rangeArea", js.undefined)
+    inline def setRangeAreaUndefined: Self = StObject.set(x, "rangeArea", js.undefined)
     
-    @scala.inline
-    def setScatter(value: js.Any): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
+    inline def setScatter(value: js.Any): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterLine(value: js.Any): Self = StObject.set(x, "scatterLine", value.asInstanceOf[js.Any])
+    inline def setScatterLine(value: js.Any): Self = StObject.set(x, "scatterLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterLineUndefined: Self = StObject.set(x, "scatterLine", js.undefined)
+    inline def setScatterLineUndefined: Self = StObject.set(x, "scatterLine", js.undefined)
     
-    @scala.inline
-    def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
+    inline def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    @scala.inline
-    def setStack(value: Boolean | ChartSeriesDefaultsStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Boolean | ChartSeriesDefaultsStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: ChartSeriesDefaultsTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: ChartSeriesDefaultsTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVerticalArea(value: js.Any): Self = StObject.set(x, "verticalArea", value.asInstanceOf[js.Any])
+    inline def setVerticalArea(value: js.Any): Self = StObject.set(x, "verticalArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAreaUndefined: Self = StObject.set(x, "verticalArea", js.undefined)
+    inline def setVerticalAreaUndefined: Self = StObject.set(x, "verticalArea", js.undefined)
     
-    @scala.inline
-    def setVerticalLine(value: js.Any): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
+    inline def setVerticalLine(value: js.Any): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
+    inline def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
     
-    @scala.inline
-    def setVerticalRangeArea(value: js.Any): Self = StObject.set(x, "verticalRangeArea", value.asInstanceOf[js.Any])
+    inline def setVerticalRangeArea(value: js.Any): Self = StObject.set(x, "verticalRangeArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalRangeAreaUndefined: Self = StObject.set(x, "verticalRangeArea", js.undefined)
+    inline def setVerticalRangeAreaUndefined: Self = StObject.set(x, "verticalRangeArea", js.undefined)
     
-    @scala.inline
-    def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
+    inline def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
+    inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
   }
 }

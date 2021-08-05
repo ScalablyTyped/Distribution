@@ -10,19 +10,15 @@ trait SparklineSeriesDefaultsStack extends StObject {
 }
 object SparklineSeriesDefaultsStack {
   
-  @scala.inline
-  def apply(): SparklineSeriesDefaultsStack = {
+  inline def apply(): SparklineSeriesDefaultsStack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineSeriesDefaultsStack]
   }
   
-  @scala.inline
-  implicit class SparklineSeriesDefaultsStackMutableBuilder[Self <: SparklineSeriesDefaultsStack] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineSeriesDefaultsStack](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

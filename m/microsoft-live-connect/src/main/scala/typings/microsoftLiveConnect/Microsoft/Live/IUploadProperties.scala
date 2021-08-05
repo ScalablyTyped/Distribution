@@ -32,25 +32,19 @@ trait IUploadProperties extends StObject {
 }
 object IUploadProperties {
   
-  @scala.inline
-  def apply(element: String, path: String): IUploadProperties = {
+  inline def apply(element: String, path: String): IUploadProperties = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUploadProperties]
   }
   
-  @scala.inline
-  implicit class IUploadPropertiesMutableBuilder[Self <: IUploadProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IUploadProperties](x: Self) {
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

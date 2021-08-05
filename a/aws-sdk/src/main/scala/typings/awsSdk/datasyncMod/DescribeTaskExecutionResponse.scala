@@ -65,91 +65,63 @@ trait DescribeTaskExecutionResponse extends StObject {
 }
 object DescribeTaskExecutionResponse {
   
-  @scala.inline
-  def apply(): DescribeTaskExecutionResponse = {
+  inline def apply(): DescribeTaskExecutionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTaskExecutionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTaskExecutionResponseMutableBuilder[Self <: DescribeTaskExecutionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTaskExecutionResponse](x: Self) {
     
-    @scala.inline
-    def setBytesTransferred(value: long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
+    inline def setBytesTransferred(value: long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesTransferredUndefined: Self = StObject.set(x, "BytesTransferred", js.undefined)
+    inline def setBytesTransferredUndefined: Self = StObject.set(x, "BytesTransferred", js.undefined)
     
-    @scala.inline
-    def setBytesWritten(value: long): Self = StObject.set(x, "BytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: long): Self = StObject.set(x, "BytesWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesWrittenUndefined: Self = StObject.set(x, "BytesWritten", js.undefined)
+    inline def setBytesWrittenUndefined: Self = StObject.set(x, "BytesWritten", js.undefined)
     
-    @scala.inline
-    def setEstimatedBytesToTransfer(value: long): Self = StObject.set(x, "EstimatedBytesToTransfer", value.asInstanceOf[js.Any])
+    inline def setEstimatedBytesToTransfer(value: long): Self = StObject.set(x, "EstimatedBytesToTransfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedBytesToTransferUndefined: Self = StObject.set(x, "EstimatedBytesToTransfer", js.undefined)
+    inline def setEstimatedBytesToTransferUndefined: Self = StObject.set(x, "EstimatedBytesToTransfer", js.undefined)
     
-    @scala.inline
-    def setEstimatedFilesToTransfer(value: long): Self = StObject.set(x, "EstimatedFilesToTransfer", value.asInstanceOf[js.Any])
+    inline def setEstimatedFilesToTransfer(value: long): Self = StObject.set(x, "EstimatedFilesToTransfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedFilesToTransferUndefined: Self = StObject.set(x, "EstimatedFilesToTransfer", js.undefined)
+    inline def setEstimatedFilesToTransferUndefined: Self = StObject.set(x, "EstimatedFilesToTransfer", js.undefined)
     
-    @scala.inline
-    def setExcludes(value: FilterList): Self = StObject.set(x, "Excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: FilterList): Self = StObject.set(x, "Excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
+    inline def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
     
-    @scala.inline
-    def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value :_*))
     
-    @scala.inline
-    def setFilesTransferred(value: long): Self = StObject.set(x, "FilesTransferred", value.asInstanceOf[js.Any])
+    inline def setFilesTransferred(value: long): Self = StObject.set(x, "FilesTransferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesTransferredUndefined: Self = StObject.set(x, "FilesTransferred", js.undefined)
+    inline def setFilesTransferredUndefined: Self = StObject.set(x, "FilesTransferred", js.undefined)
     
-    @scala.inline
-    def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
+    inline def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
     
-    @scala.inline
-    def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    @scala.inline
-    def setResult(value: TaskExecutionResultDetail): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TaskExecutionResultDetail): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
+    inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskExecutionArnUndefined: Self = StObject.set(x, "TaskExecutionArn", js.undefined)
+    inline def setTaskExecutionArnUndefined: Self = StObject.set(x, "TaskExecutionArn", js.undefined)
   }
 }

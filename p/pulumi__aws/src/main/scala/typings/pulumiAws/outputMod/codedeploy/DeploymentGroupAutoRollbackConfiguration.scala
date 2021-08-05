@@ -18,28 +18,21 @@ trait DeploymentGroupAutoRollbackConfiguration extends StObject {
 }
 object DeploymentGroupAutoRollbackConfiguration {
   
-  @scala.inline
-  def apply(): DeploymentGroupAutoRollbackConfiguration = {
+  inline def apply(): DeploymentGroupAutoRollbackConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupAutoRollbackConfiguration]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupAutoRollbackConfigurationMutableBuilder[Self <: DeploymentGroupAutoRollbackConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupAutoRollbackConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

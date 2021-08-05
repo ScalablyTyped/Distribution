@@ -13,19 +13,15 @@ trait DeleteSynonymOptions extends StObject {
 }
 object DeleteSynonymOptions {
   
-  @scala.inline
-  def apply(): DeleteSynonymOptions = {
+  inline def apply(): DeleteSynonymOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSynonymOptions]
   }
   
-  @scala.inline
-  implicit class DeleteSynonymOptionsMutableBuilder[Self <: DeleteSynonymOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSynonymOptions](x: Self) {
     
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
+    inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
+    inline def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
   }
 }

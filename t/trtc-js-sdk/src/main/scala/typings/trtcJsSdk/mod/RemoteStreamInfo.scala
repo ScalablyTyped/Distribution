@@ -10,16 +10,13 @@ trait RemoteStreamInfo extends StObject {
 }
 object RemoteStreamInfo {
   
-  @scala.inline
-  def apply(stream: RemoteStream): RemoteStreamInfo = {
+  inline def apply(stream: RemoteStream): RemoteStreamInfo = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteStreamInfo]
   }
   
-  @scala.inline
-  implicit class RemoteStreamInfoMutableBuilder[Self <: RemoteStreamInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteStreamInfo](x: Self) {
     
-    @scala.inline
-    def setStream(value: RemoteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: RemoteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

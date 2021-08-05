@@ -61,17 +61,14 @@ object customResourceDefinitionListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): CustomResourceDefinitionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CustomResourceDefinitionList]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CustomResourceDefinitionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomResourceDefinitionList]
+    inline def get(name: String, id: Input[ID]): CustomResourceDefinitionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CustomResourceDefinitionList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): CustomResourceDefinitionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomResourceDefinitionList]
     
     /**
       * Returns true if the given object is an instance of CustomResourceDefinitionList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean]
   }
   
   trait CustomResourceDefinitionListArgs extends StObject {
@@ -101,8 +98,7 @@ object customResourceDefinitionListMod {
   }
   object CustomResourceDefinitionListArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       items: Input[
           js.Array[
             Input[typings.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinition]
@@ -113,17 +109,13 @@ object customResourceDefinitionListMod {
       __obj.asInstanceOf[CustomResourceDefinitionListArgs]
     }
     
-    @scala.inline
-    implicit class CustomResourceDefinitionListArgsMutableBuilder[Self <: CustomResourceDefinitionListArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CustomResourceDefinitionListArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[apiextensionsDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[apiextensionsDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setItems(
+      inline def setItems(
         value: Input[
               js.Array[
                 Input[typings.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinition]
@@ -131,20 +123,15 @@ object customResourceDefinitionListMod {
             ]
       ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinition]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinition]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CustomResourceDefinitionList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CustomResourceDefinitionList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
 }

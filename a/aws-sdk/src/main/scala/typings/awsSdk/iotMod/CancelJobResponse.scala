@@ -23,31 +23,23 @@ trait CancelJobResponse extends StObject {
 }
 object CancelJobResponse {
   
-  @scala.inline
-  def apply(): CancelJobResponse = {
+  inline def apply(): CancelJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelJobResponse]
   }
   
-  @scala.inline
-  implicit class CancelJobResponseMutableBuilder[Self <: CancelJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelJobResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
+    inline def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
+    inline def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }

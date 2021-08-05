@@ -13,19 +13,15 @@ trait LaunchTemplateEnclaveOptions extends StObject {
 }
 object LaunchTemplateEnclaveOptions {
   
-  @scala.inline
-  def apply(): LaunchTemplateEnclaveOptions = {
+  inline def apply(): LaunchTemplateEnclaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateEnclaveOptions]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateEnclaveOptionsMutableBuilder[Self <: LaunchTemplateEnclaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateEnclaveOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

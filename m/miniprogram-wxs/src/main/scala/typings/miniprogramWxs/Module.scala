@@ -13,16 +13,13 @@ trait Module extends StObject {
 }
 object Module {
   
-  @scala.inline
-  def apply(exports: js.Any): Module = {
+  inline def apply(exports: js.Any): Module = {
     val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
   
-  @scala.inline
-  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+  extension [Self <: Module](x: Self) {
     
-    @scala.inline
-    def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
   }
 }

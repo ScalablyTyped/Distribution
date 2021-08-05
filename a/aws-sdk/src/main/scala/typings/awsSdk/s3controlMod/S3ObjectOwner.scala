@@ -18,25 +18,19 @@ trait S3ObjectOwner extends StObject {
 }
 object S3ObjectOwner {
   
-  @scala.inline
-  def apply(): S3ObjectOwner = {
+  inline def apply(): S3ObjectOwner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3ObjectOwner]
   }
   
-  @scala.inline
-  implicit class S3ObjectOwnerMutableBuilder[Self <: S3ObjectOwner] (val x: Self) extends AnyVal {
+  extension [Self <: S3ObjectOwner](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setID(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+    inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
   }
 }

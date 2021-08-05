@@ -18,25 +18,19 @@ trait PatchGroupPatchBaselineMapping extends StObject {
 }
 object PatchGroupPatchBaselineMapping {
   
-  @scala.inline
-  def apply(): PatchGroupPatchBaselineMapping = {
+  inline def apply(): PatchGroupPatchBaselineMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchGroupPatchBaselineMapping]
   }
   
-  @scala.inline
-  implicit class PatchGroupPatchBaselineMappingMutableBuilder[Self <: PatchGroupPatchBaselineMapping] (val x: Self) extends AnyVal {
+  extension [Self <: PatchGroupPatchBaselineMapping](x: Self) {
     
-    @scala.inline
-    def setBaselineIdentity(value: PatchBaselineIdentity): Self = StObject.set(x, "BaselineIdentity", value.asInstanceOf[js.Any])
+    inline def setBaselineIdentity(value: PatchBaselineIdentity): Self = StObject.set(x, "BaselineIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineIdentityUndefined: Self = StObject.set(x, "BaselineIdentity", js.undefined)
+    inline def setBaselineIdentityUndefined: Self = StObject.set(x, "BaselineIdentity", js.undefined)
     
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
+    inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchGroupUndefined: Self = StObject.set(x, "PatchGroup", js.undefined)
+    inline def setPatchGroupUndefined: Self = StObject.set(x, "PatchGroup", js.undefined)
   }
 }

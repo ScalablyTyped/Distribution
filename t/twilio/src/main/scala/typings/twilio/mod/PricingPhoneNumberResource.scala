@@ -10,16 +10,13 @@ trait PricingPhoneNumberResource extends StObject {
 }
 object PricingPhoneNumberResource {
   
-  @scala.inline
-  def apply(countries: CountryResource): PricingPhoneNumberResource = {
+  inline def apply(countries: CountryResource): PricingPhoneNumberResource = {
     val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingPhoneNumberResource]
   }
   
-  @scala.inline
-  implicit class PricingPhoneNumberResourceMutableBuilder[Self <: PricingPhoneNumberResource] (val x: Self) extends AnyVal {
+  extension [Self <: PricingPhoneNumberResource](x: Self) {
     
-    @scala.inline
-    def setCountries(value: CountryResource): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+    inline def setCountries(value: CountryResource): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
   }
 }

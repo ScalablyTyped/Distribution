@@ -19,8 +19,7 @@ trait ChainE[W, M /* <: /* import warning: transforms.QualifyReferences#resolveT
 }
 object ChainE {
   
-  @scala.inline
-  def apply[W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+  inline def apply[W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
     _E: W,
     ap: (WriterT2[M, E, W, js.Function1[js.Any, js.Any]], WriterT2[M, E, W, js.Any]) => WriterT2[M, E, W, js.Any],
     chain: (WriterT2[M, E, W, js.Any], js.Function1[js.Any, WriterT2[M, E, W, js.Any]]) => WriterT2[M, E, W, js.Any],
@@ -31,26 +30,20 @@ object ChainE {
     __obj.asInstanceOf[ChainE[W, M, E]]
   }
   
-  @scala.inline
-  implicit class ChainEMutableBuilder[Self <: ChainE[?, ?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (ChainE[W, M, E])) extends AnyVal {
+  extension [Self <: ChainE[?, ?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (ChainE[W, M, E])) {
     
-    @scala.inline
-    def setAp(
+    inline def setAp(
       value: (WriterT2[M, E, W, js.Function1[js.Any, js.Any]], WriterT2[M, E, W, js.Any]) => WriterT2[M, E, W, js.Any]
     ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChain(
+    inline def setChain(
       value: (WriterT2[M, E, W, js.Any], js.Function1[js.Any, WriterT2[M, E, W, js.Any]]) => WriterT2[M, E, W, js.Any]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMap(value: (WriterT2[M, E, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, E, W, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (WriterT2[M, E, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, E, W, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOf(value: js.Any => WriterT2[M, E, W, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: js.Any => WriterT2[M, E, W, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_E(value: W): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+    inline def set_E(value: W): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }
 }

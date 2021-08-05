@@ -13,16 +13,13 @@ trait DeleteHsmConfigurationMessage extends StObject {
 }
 object DeleteHsmConfigurationMessage {
   
-  @scala.inline
-  def apply(HsmConfigurationIdentifier: String): DeleteHsmConfigurationMessage = {
+  inline def apply(HsmConfigurationIdentifier: String): DeleteHsmConfigurationMessage = {
     val __obj = js.Dynamic.literal(HsmConfigurationIdentifier = HsmConfigurationIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHsmConfigurationMessage]
   }
   
-  @scala.inline
-  implicit class DeleteHsmConfigurationMessageMutableBuilder[Self <: DeleteHsmConfigurationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHsmConfigurationMessage](x: Self) {
     
-    @scala.inline
-    def setHsmConfigurationIdentifier(value: String): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
+    inline def setHsmConfigurationIdentifier(value: String): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
   }
 }

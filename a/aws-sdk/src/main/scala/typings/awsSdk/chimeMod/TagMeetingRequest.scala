@@ -18,22 +18,17 @@ trait TagMeetingRequest extends StObject {
 }
 object TagMeetingRequest {
   
-  @scala.inline
-  def apply(MeetingId: GuidString, Tags: MeetingTagList): TagMeetingRequest = {
+  inline def apply(MeetingId: GuidString, Tags: MeetingTagList): TagMeetingRequest = {
     val __obj = js.Dynamic.literal(MeetingId = MeetingId.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagMeetingRequest]
   }
   
-  @scala.inline
-  implicit class TagMeetingRequestMutableBuilder[Self <: TagMeetingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TagMeetingRequest](x: Self) {
     
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
+    inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: MeetingTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MeetingTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

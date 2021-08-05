@@ -12,16 +12,13 @@ trait SpeechRecognitionQualityDegradingEventArgs extends StObject {
 }
 object SpeechRecognitionQualityDegradingEventArgs {
   
-  @scala.inline
-  def apply(problem: SpeechRecognitionAudioProblem): SpeechRecognitionQualityDegradingEventArgs = {
+  inline def apply(problem: SpeechRecognitionAudioProblem): SpeechRecognitionQualityDegradingEventArgs = {
     val __obj = js.Dynamic.literal(problem = problem.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionQualityDegradingEventArgs]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionQualityDegradingEventArgsMutableBuilder[Self <: SpeechRecognitionQualityDegradingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionQualityDegradingEventArgs](x: Self) {
     
-    @scala.inline
-    def setProblem(value: SpeechRecognitionAudioProblem): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
+    inline def setProblem(value: SpeechRecognitionAudioProblem): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
   }
 }

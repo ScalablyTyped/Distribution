@@ -18,25 +18,19 @@ trait SuggestStatus extends StObject {
 }
 object SuggestStatus {
   
-  @scala.inline
-  def apply(): SuggestStatus = {
+  inline def apply(): SuggestStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestStatus]
   }
   
-  @scala.inline
-  implicit class SuggestStatusMutableBuilder[Self <: SuggestStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestStatus](x: Self) {
     
-    @scala.inline
-    def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
+    inline def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRidUndefined: Self = StObject.set(x, "rid", js.undefined)
+    inline def setRidUndefined: Self = StObject.set(x, "rid", js.undefined)
     
-    @scala.inline
-    def setTimems(value: Long): Self = StObject.set(x, "timems", value.asInstanceOf[js.Any])
+    inline def setTimems(value: Long): Self = StObject.set(x, "timems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimemsUndefined: Self = StObject.set(x, "timems", js.undefined)
+    inline def setTimemsUndefined: Self = StObject.set(x, "timems", js.undefined)
   }
 }

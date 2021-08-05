@@ -12,8 +12,7 @@ object headerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     hasPrefixClsPrevIconNextIconSuperPrevIconSuperNextIconOnSuperPrevOnSuperNextOnPrevOnNextChildren: HeaderProps
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsPrevIconNextIconSuperPrevIconSuperNextIconOnSuperPrevOnSuperNextOnPrevOnNextChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -45,71 +44,50 @@ object headerMod {
   }
   object HeaderProps {
     
-    @scala.inline
-    def apply(prefixCls: String): HeaderProps = {
+    inline def apply(prefixCls: String): HeaderProps = {
       val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeaderProps]
     }
     
-    @scala.inline
-    implicit class HeaderPropsMutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setNextIcon(value: ReactNode): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
+      inline def setNextIcon(value: ReactNode): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
+      inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
       
-      @scala.inline
-      def setOnNext(value: () => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
+      inline def setOnNext(value: () => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
+      inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
       
-      @scala.inline
-      def setOnPrev(value: () => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
+      inline def setOnPrev(value: () => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPrevUndefined: Self = StObject.set(x, "onPrev", js.undefined)
+      inline def setOnPrevUndefined: Self = StObject.set(x, "onPrev", js.undefined)
       
-      @scala.inline
-      def setOnSuperNext(value: () => Unit): Self = StObject.set(x, "onSuperNext", js.Any.fromFunction0(value))
+      inline def setOnSuperNext(value: () => Unit): Self = StObject.set(x, "onSuperNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuperNextUndefined: Self = StObject.set(x, "onSuperNext", js.undefined)
+      inline def setOnSuperNextUndefined: Self = StObject.set(x, "onSuperNext", js.undefined)
       
-      @scala.inline
-      def setOnSuperPrev(value: () => Unit): Self = StObject.set(x, "onSuperPrev", js.Any.fromFunction0(value))
+      inline def setOnSuperPrev(value: () => Unit): Self = StObject.set(x, "onSuperPrev", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuperPrevUndefined: Self = StObject.set(x, "onSuperPrev", js.undefined)
+      inline def setOnSuperPrevUndefined: Self = StObject.set(x, "onSuperPrev", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
+      inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
+      inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
       
-      @scala.inline
-      def setSuperNextIcon(value: ReactNode): Self = StObject.set(x, "superNextIcon", value.asInstanceOf[js.Any])
+      inline def setSuperNextIcon(value: ReactNode): Self = StObject.set(x, "superNextIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperNextIconUndefined: Self = StObject.set(x, "superNextIcon", js.undefined)
+      inline def setSuperNextIconUndefined: Self = StObject.set(x, "superNextIcon", js.undefined)
       
-      @scala.inline
-      def setSuperPrevIcon(value: ReactNode): Self = StObject.set(x, "superPrevIcon", value.asInstanceOf[js.Any])
+      inline def setSuperPrevIcon(value: ReactNode): Self = StObject.set(x, "superPrevIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperPrevIconUndefined: Self = StObject.set(x, "superPrevIcon", js.undefined)
+      inline def setSuperPrevIconUndefined: Self = StObject.set(x, "superPrevIcon", js.undefined)
     }
   }
 }

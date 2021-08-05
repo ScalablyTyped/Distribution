@@ -23,31 +23,23 @@ trait PurchaseScheduledInstancesRequest extends StObject {
 }
 object PurchaseScheduledInstancesRequest {
   
-  @scala.inline
-  def apply(PurchaseRequests: PurchaseRequestSet): PurchaseScheduledInstancesRequest = {
+  inline def apply(PurchaseRequests: PurchaseRequestSet): PurchaseScheduledInstancesRequest = {
     val __obj = js.Dynamic.literal(PurchaseRequests = PurchaseRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseScheduledInstancesRequest]
   }
   
-  @scala.inline
-  implicit class PurchaseScheduledInstancesRequestMutableBuilder[Self <: PurchaseScheduledInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseScheduledInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPurchaseRequests(value: PurchaseRequestSet): Self = StObject.set(x, "PurchaseRequests", value.asInstanceOf[js.Any])
+    inline def setPurchaseRequests(value: PurchaseRequestSet): Self = StObject.set(x, "PurchaseRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseRequestsVarargs(value: PurchaseRequest*): Self = StObject.set(x, "PurchaseRequests", js.Array(value :_*))
+    inline def setPurchaseRequestsVarargs(value: PurchaseRequest*): Self = StObject.set(x, "PurchaseRequests", js.Array(value :_*))
   }
 }

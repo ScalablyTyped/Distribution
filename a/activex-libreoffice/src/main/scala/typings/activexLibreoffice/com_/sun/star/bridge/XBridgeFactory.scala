@@ -40,8 +40,7 @@ trait XBridgeFactory
 }
 object XBridgeFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExistingBridges: SafeArray[XBridge],
     acquire: () => Unit,
     createBridge: (String, String, XConnection, XInstanceProvider) => XBridge,
@@ -54,19 +53,14 @@ object XBridgeFactory {
     __obj.asInstanceOf[XBridgeFactory]
   }
   
-  @scala.inline
-  implicit class XBridgeFactoryMutableBuilder[Self <: XBridgeFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XBridgeFactory](x: Self) {
     
-    @scala.inline
-    def setCreateBridge(value: (String, String, XConnection, XInstanceProvider) => XBridge): Self = StObject.set(x, "createBridge", js.Any.fromFunction4(value))
+    inline def setCreateBridge(value: (String, String, XConnection, XInstanceProvider) => XBridge): Self = StObject.set(x, "createBridge", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setExistingBridges(value: SafeArray[XBridge]): Self = StObject.set(x, "ExistingBridges", value.asInstanceOf[js.Any])
+    inline def setExistingBridges(value: SafeArray[XBridge]): Self = StObject.set(x, "ExistingBridges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBridge(value: String => XBridge): Self = StObject.set(x, "getBridge", js.Any.fromFunction1(value))
+    inline def setGetBridge(value: String => XBridge): Self = StObject.set(x, "getBridge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetExistingBridges(value: () => SafeArray[XBridge]): Self = StObject.set(x, "getExistingBridges", js.Any.fromFunction0(value))
+    inline def setGetExistingBridges(value: () => SafeArray[XBridge]): Self = StObject.set(x, "getExistingBridges", js.Any.fromFunction0(value))
   }
 }

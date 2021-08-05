@@ -48,8 +48,7 @@ object Video {
   }
   object EmbedCodeConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -78,62 +77,43 @@ object Video {
       __obj.asInstanceOf[EmbedCodeConfiguration]
     }
     
-    @scala.inline
-    implicit class EmbedCodeConfigurationMutableBuilder[Self <: EmbedCodeConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EmbedCodeConfiguration](x: Self) {
       
-      @scala.inline
-      def setGet_autoPlay(value: () => Boolean): Self = StObject.set(x, "get_autoPlay", js.Any.fromFunction0(value))
+      inline def setGet_autoPlay(value: () => Boolean): Self = StObject.set(x, "get_autoPlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_displayTitle(value: () => Boolean): Self = StObject.set(x, "get_displayTitle", js.Any.fromFunction0(value))
+      inline def setGet_displayTitle(value: () => Boolean): Self = StObject.set(x, "get_displayTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_linkToOwnerProfilePage(value: () => Boolean): Self = StObject.set(x, "get_linkToOwnerProfilePage", js.Any.fromFunction0(value))
+      inline def setGet_linkToOwnerProfilePage(value: () => Boolean): Self = StObject.set(x, "get_linkToOwnerProfilePage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_linkToVideoHomePage(value: () => Boolean): Self = StObject.set(x, "get_linkToVideoHomePage", js.Any.fromFunction0(value))
+      inline def setGet_linkToVideoHomePage(value: () => Boolean): Self = StObject.set(x, "get_linkToVideoHomePage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_loop(value: () => Boolean): Self = StObject.set(x, "get_loop", js.Any.fromFunction0(value))
+      inline def setGet_loop(value: () => Boolean): Self = StObject.set(x, "get_loop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_pixelHeight(value: () => Double): Self = StObject.set(x, "get_pixelHeight", js.Any.fromFunction0(value))
+      inline def setGet_pixelHeight(value: () => Double): Self = StObject.set(x, "get_pixelHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_pixelWidth(value: () => Double): Self = StObject.set(x, "get_pixelWidth", js.Any.fromFunction0(value))
+      inline def setGet_pixelWidth(value: () => Double): Self = StObject.set(x, "get_pixelWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_previewImagePath(value: () => String): Self = StObject.set(x, "get_previewImagePath", js.Any.fromFunction0(value))
+      inline def setGet_previewImagePath(value: () => String): Self = StObject.set(x, "get_previewImagePath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_startTime(value: () => Double): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
+      inline def setGet_startTime(value: () => Double): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_autoPlay(value: Boolean => Boolean): Self = StObject.set(x, "set_autoPlay", js.Any.fromFunction1(value))
+      inline def setSet_autoPlay(value: Boolean => Boolean): Self = StObject.set(x, "set_autoPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_displayTitle(value: Boolean => Boolean): Self = StObject.set(x, "set_displayTitle", js.Any.fromFunction1(value))
+      inline def setSet_displayTitle(value: Boolean => Boolean): Self = StObject.set(x, "set_displayTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_linkToOwnerProfilePage(value: Boolean => Boolean): Self = StObject.set(x, "set_linkToOwnerProfilePage", js.Any.fromFunction1(value))
+      inline def setSet_linkToOwnerProfilePage(value: Boolean => Boolean): Self = StObject.set(x, "set_linkToOwnerProfilePage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_linkToVideoHomePage(value: Boolean => Boolean): Self = StObject.set(x, "set_linkToVideoHomePage", js.Any.fromFunction1(value))
+      inline def setSet_linkToVideoHomePage(value: Boolean => Boolean): Self = StObject.set(x, "set_linkToVideoHomePage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_loop(value: Boolean => Boolean): Self = StObject.set(x, "set_loop", js.Any.fromFunction1(value))
+      inline def setSet_loop(value: Boolean => Boolean): Self = StObject.set(x, "set_loop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_pixelHeight(value: Double => Double): Self = StObject.set(x, "set_pixelHeight", js.Any.fromFunction1(value))
+      inline def setSet_pixelHeight(value: Double => Double): Self = StObject.set(x, "set_pixelHeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_pixelWidth(value: Double => Double): Self = StObject.set(x, "set_pixelWidth", js.Any.fromFunction1(value))
+      inline def setSet_pixelWidth(value: Double => Double): Self = StObject.set(x, "set_pixelWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_previewImagePath(value: String => String): Self = StObject.set(x, "set_previewImagePath", js.Any.fromFunction1(value))
+      inline def setSet_previewImagePath(value: String => String): Self = StObject.set(x, "set_previewImagePath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_startTime(value: Double => Double): Self = StObject.set(x, "set_startTime", js.Any.fromFunction1(value))
+      inline def setSet_startTime(value: Double => Double): Self = StObject.set(x, "set_startTime", js.Any.fromFunction1(value))
     }
   }
   

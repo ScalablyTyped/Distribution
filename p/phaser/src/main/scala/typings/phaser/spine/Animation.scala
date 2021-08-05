@@ -30,8 +30,7 @@ trait Animation extends StObject {
 }
 object Animation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, Boolean, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     duration: Double,
     hasTimeline: Double => Boolean,
@@ -43,33 +42,24 @@ object Animation {
     __obj.asInstanceOf[Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+  extension [Self <: Animation](x: Self) {
     
-    @scala.inline
-    def setApply(
+    inline def setApply(
       value: (Skeleton, Double, Double, Boolean, js.Array[Event], Double, MixBlend, MixDirection) => Unit
     ): Self = StObject.set(x, "apply", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTimeline(value: Double => Boolean): Self = StObject.set(x, "hasTimeline", js.Any.fromFunction1(value))
+    inline def setHasTimeline(value: Double => Boolean): Self = StObject.set(x, "hasTimeline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineIds(value: js.Array[Boolean]): Self = StObject.set(x, "timelineIds", value.asInstanceOf[js.Any])
+    inline def setTimelineIds(value: js.Array[Boolean]): Self = StObject.set(x, "timelineIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineIdsVarargs(value: Boolean*): Self = StObject.set(x, "timelineIds", js.Array(value :_*))
+    inline def setTimelineIdsVarargs(value: Boolean*): Self = StObject.set(x, "timelineIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTimelines(value: js.Array[Timeline]): Self = StObject.set(x, "timelines", value.asInstanceOf[js.Any])
+    inline def setTimelines(value: js.Array[Timeline]): Self = StObject.set(x, "timelines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelinesVarargs(value: Timeline*): Self = StObject.set(x, "timelines", js.Array(value :_*))
+    inline def setTimelinesVarargs(value: Timeline*): Self = StObject.set(x, "timelines", js.Array(value :_*))
   }
 }

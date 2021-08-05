@@ -25,8 +25,7 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     globalParameters: Parameters,
     globals: Args,
     kindParameters: StringDictionary[Parameters],
@@ -36,28 +35,20 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setGlobalParameters(value: Parameters): Self = StObject.set(x, "globalParameters", value.asInstanceOf[js.Any])
+    inline def setGlobalParameters(value: Parameters): Self = StObject.set(x, "globalParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindParameters(value: StringDictionary[Parameters]): Self = StObject.set(x, "kindParameters", value.asInstanceOf[js.Any])
+    inline def setKindParameters(value: StringDictionary[Parameters]): Self = StObject.set(x, "kindParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStories(value: StoriesRaw): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+    inline def setStories(value: StoriesRaw): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: `2`): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: `2`): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

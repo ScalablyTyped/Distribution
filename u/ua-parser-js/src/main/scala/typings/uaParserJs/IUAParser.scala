@@ -19,23 +19,18 @@ object IUAParser {
   }
   object BROWSER {
     
-    @scala.inline
-    def apply(MAJOR: String, NAME: String, VERSION: String): BROWSER = {
+    inline def apply(MAJOR: String, NAME: String, VERSION: String): BROWSER = {
       val __obj = js.Dynamic.literal(MAJOR = MAJOR.asInstanceOf[js.Any], NAME = NAME.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
       __obj.asInstanceOf[BROWSER]
     }
     
-    @scala.inline
-    implicit class BROWSERMutableBuilder[Self <: BROWSER] (val x: Self) extends AnyVal {
+    extension [Self <: BROWSER](x: Self) {
       
-      @scala.inline
-      def setMAJOR(value: String): Self = StObject.set(x, "MAJOR", value.asInstanceOf[js.Any])
+      inline def setMAJOR(value: String): Self = StObject.set(x, "MAJOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
+      inline def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+      inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,17 +40,14 @@ object IUAParser {
   }
   object CPU {
     
-    @scala.inline
-    def apply(ARCHITECTURE: String): CPU = {
+    inline def apply(ARCHITECTURE: String): CPU = {
       val __obj = js.Dynamic.literal(ARCHITECTURE = ARCHITECTURE.asInstanceOf[js.Any])
       __obj.asInstanceOf[CPU]
     }
     
-    @scala.inline
-    implicit class CPUMutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
+    extension [Self <: CPU](x: Self) {
       
-      @scala.inline
-      def setARCHITECTURE(value: String): Self = StObject.set(x, "ARCHITECTURE", value.asInstanceOf[js.Any])
+      inline def setARCHITECTURE(value: String): Self = StObject.set(x, "ARCHITECTURE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +73,7 @@ object IUAParser {
   }
   object DEVICE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CONSOLE: String,
       EMBEDDED: String,
       MOBILE: String,
@@ -97,35 +88,25 @@ object IUAParser {
       __obj.asInstanceOf[DEVICE]
     }
     
-    @scala.inline
-    implicit class DEVICEMutableBuilder[Self <: DEVICE] (val x: Self) extends AnyVal {
+    extension [Self <: DEVICE](x: Self) {
       
-      @scala.inline
-      def setCONSOLE(value: String): Self = StObject.set(x, "CONSOLE", value.asInstanceOf[js.Any])
+      inline def setCONSOLE(value: String): Self = StObject.set(x, "CONSOLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMBEDDED(value: String): Self = StObject.set(x, "EMBEDDED", value.asInstanceOf[js.Any])
+      inline def setEMBEDDED(value: String): Self = StObject.set(x, "EMBEDDED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOBILE(value: String): Self = StObject.set(x, "MOBILE", value.asInstanceOf[js.Any])
+      inline def setMOBILE(value: String): Self = StObject.set(x, "MOBILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODEL(value: String): Self = StObject.set(x, "MODEL", value.asInstanceOf[js.Any])
+      inline def setMODEL(value: String): Self = StObject.set(x, "MODEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMARTTV(value: String): Self = StObject.set(x, "SMARTTV", value.asInstanceOf[js.Any])
+      inline def setSMARTTV(value: String): Self = StObject.set(x, "SMARTTV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTABLET(value: String): Self = StObject.set(x, "TABLET", value.asInstanceOf[js.Any])
+      inline def setTABLET(value: String): Self = StObject.set(x, "TABLET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTYPE(value: String): Self = StObject.set(x, "TYPE", value.asInstanceOf[js.Any])
+      inline def setTYPE(value: String): Self = StObject.set(x, "TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVENDOR(value: String): Self = StObject.set(x, "VENDOR", value.asInstanceOf[js.Any])
+      inline def setVENDOR(value: String): Self = StObject.set(x, "VENDOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWEARABLE(value: String): Self = StObject.set(x, "WEARABLE", value.asInstanceOf[js.Any])
+      inline def setWEARABLE(value: String): Self = StObject.set(x, "WEARABLE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,20 +118,16 @@ object IUAParser {
   }
   object ENGINE {
     
-    @scala.inline
-    def apply(NAME: String, VERSION: String): ENGINE = {
+    inline def apply(NAME: String, VERSION: String): ENGINE = {
       val __obj = js.Dynamic.literal(NAME = NAME.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
       __obj.asInstanceOf[ENGINE]
     }
     
-    @scala.inline
-    implicit class ENGINEMutableBuilder[Self <: ENGINE] (val x: Self) extends AnyVal {
+    extension [Self <: ENGINE](x: Self) {
       
-      @scala.inline
-      def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
+      inline def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+      inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,32 +160,24 @@ object IUAParser {
   }
   object IBrowser {
     
-    @scala.inline
-    def apply(): IBrowser = {
+    inline def apply(): IBrowser = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBrowser]
     }
     
-    @scala.inline
-    implicit class IBrowserMutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowser](x: Self) {
       
-      @scala.inline
-      def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+      inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -223,20 +192,16 @@ object IUAParser {
   }
   object ICPU {
     
-    @scala.inline
-    def apply(): ICPU = {
+    inline def apply(): ICPU = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICPU]
     }
     
-    @scala.inline
-    implicit class ICPUMutableBuilder[Self <: ICPU] (val x: Self) extends AnyVal {
+    extension [Self <: ICPU](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+      inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     }
   }
   
@@ -264,32 +229,24 @@ object IUAParser {
   }
   object IDevice {
     
-    @scala.inline
-    def apply(): IDevice = {
+    inline def apply(): IDevice = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDevice]
     }
     
-    @scala.inline
-    implicit class IDeviceMutableBuilder[Self <: IDevice] (val x: Self) extends AnyVal {
+    extension [Self <: IDevice](x: Self) {
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+      inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+      inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
     }
   }
   
@@ -309,26 +266,20 @@ object IUAParser {
   }
   object IEngine {
     
-    @scala.inline
-    def apply(): IEngine = {
+    inline def apply(): IEngine = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEngine]
     }
     
-    @scala.inline
-    implicit class IEngineMutableBuilder[Self <: IEngine] (val x: Self) extends AnyVal {
+    extension [Self <: IEngine](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -352,26 +303,20 @@ object IUAParser {
   }
   object IOS {
     
-    @scala.inline
-    def apply(): IOS = {
+    inline def apply(): IOS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOS]
     }
     
-    @scala.inline
-    implicit class IOSMutableBuilder[Self <: IOS] (val x: Self) extends AnyVal {
+    extension [Self <: IOS](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -391,32 +336,24 @@ object IUAParser {
   }
   object IResult {
     
-    @scala.inline
-    def apply(browser: IBrowser, cpu: ICPU, device: IDevice, engine: IEngine, os: IOS, ua: String): IResult = {
+    inline def apply(browser: IBrowser, cpu: ICPU, device: IDevice, engine: IEngine, os: IOS, ua: String): IResult = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], ua = ua.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResult]
     }
     
-    @scala.inline
-    implicit class IResultMutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
+    extension [Self <: IResult](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: IBrowser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: IBrowser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpu(value: ICPU): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: ICPU): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice(value: IDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: IDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngine(value: IEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: IEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: IOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: IOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUa(value: String): Self = StObject.set(x, "ua", value.asInstanceOf[js.Any])
+      inline def setUa(value: String): Self = StObject.set(x, "ua", value.asInstanceOf[js.Any])
     }
   }
   
@@ -428,20 +365,16 @@ object IUAParser {
   }
   object OS {
     
-    @scala.inline
-    def apply(NAME: String, VERSION: String): OS = {
+    inline def apply(NAME: String, VERSION: String): OS = {
       val __obj = js.Dynamic.literal(NAME = NAME.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
       __obj.asInstanceOf[OS]
     }
     
-    @scala.inline
-    implicit class OSMutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
+    extension [Self <: OS](x: Self) {
       
-      @scala.inline
-      def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
+      inline def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+      inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
     }
   }
 }

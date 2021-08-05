@@ -18,28 +18,21 @@ trait GetSlotTypesResponse extends StObject {
 }
 object GetSlotTypesResponse {
   
-  @scala.inline
-  def apply(): GetSlotTypesResponse = {
+  inline def apply(): GetSlotTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSlotTypesResponse]
   }
   
-  @scala.inline
-  implicit class GetSlotTypesResponseMutableBuilder[Self <: GetSlotTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSlotTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSlotTypes(value: SlotTypeMetadataList): Self = StObject.set(x, "slotTypes", value.asInstanceOf[js.Any])
+    inline def setSlotTypes(value: SlotTypeMetadataList): Self = StObject.set(x, "slotTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotTypesUndefined: Self = StObject.set(x, "slotTypes", js.undefined)
+    inline def setSlotTypesUndefined: Self = StObject.set(x, "slotTypes", js.undefined)
     
-    @scala.inline
-    def setSlotTypesVarargs(value: SlotTypeMetadata*): Self = StObject.set(x, "slotTypes", js.Array(value :_*))
+    inline def setSlotTypesVarargs(value: SlotTypeMetadata*): Self = StObject.set(x, "slotTypes", js.Array(value :_*))
   }
 }

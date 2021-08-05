@@ -26,20 +26,15 @@ object mod {
     * @param sourceRoot optional sourceRoot of the map to be generated
     * @return Combiner instance to which source maps can be added and later combined
     */
-  @scala.inline
-  def create(): Combiner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Combiner]
-  @scala.inline
-  def create(file: String): Combiner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any]).asInstanceOf[Combiner]
-  @scala.inline
-  def create(file: String, sourceRoot: String): Combiner = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], sourceRoot.asInstanceOf[js.Any])).asInstanceOf[Combiner]
-  @scala.inline
-  def create(file: Unit, sourceRoot: String): Combiner = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], sourceRoot.asInstanceOf[js.Any])).asInstanceOf[Combiner]
+  inline def create(): Combiner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Combiner]
+  inline def create(file: String): Combiner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any]).asInstanceOf[Combiner]
+  inline def create(file: String, sourceRoot: String): Combiner = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], sourceRoot.asInstanceOf[js.Any])).asInstanceOf[Combiner]
+  inline def create(file: Unit, sourceRoot: String): Combiner = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], sourceRoot.asInstanceOf[js.Any])).asInstanceOf[Combiner]
   
   /**
     * @return src with all sourceMappingUrl comments removed
     */
-  @scala.inline
-  def removeComments(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeComments")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def removeComments(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeComments")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait Combiner extends StObject {
@@ -83,26 +78,20 @@ object mod {
   }
   object Offset {
     
-    @scala.inline
-    def apply(): Offset = {
+    inline def apply(): Offset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Offset]
     }
     
-    @scala.inline
-    implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    extension [Self <: Offset](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     }
   }
 }

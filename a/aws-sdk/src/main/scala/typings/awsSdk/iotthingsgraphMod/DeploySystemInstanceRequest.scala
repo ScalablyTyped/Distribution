@@ -13,19 +13,15 @@ trait DeploySystemInstanceRequest extends StObject {
 }
 object DeploySystemInstanceRequest {
   
-  @scala.inline
-  def apply(): DeploySystemInstanceRequest = {
+  inline def apply(): DeploySystemInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploySystemInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeploySystemInstanceRequestMutableBuilder[Self <: DeploySystemInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeploySystemInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

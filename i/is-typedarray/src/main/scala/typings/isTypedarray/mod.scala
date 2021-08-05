@@ -16,18 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
+  inline def apply(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
   
   @JSImport("is-typedarray", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loose(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loose")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
+  inline def loose(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loose")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
   
-  @scala.inline
-  def strict(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("strict")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
+  inline def strict(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("strict")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is is-typedarray.is-typedarray.TypedArray */ Boolean]
   
   type TypedArray = Int8Array | Int16Array | Int32Array | Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Float32Array | Float64Array | Buffer
 }

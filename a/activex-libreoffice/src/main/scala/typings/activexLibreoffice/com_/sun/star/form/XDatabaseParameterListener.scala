@@ -22,8 +22,7 @@ trait XDatabaseParameterListener
 }
 object XDatabaseParameterListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveParameter: DatabaseParameterEvent => Boolean,
     disposing: EventObject => Unit,
@@ -34,10 +33,8 @@ object XDatabaseParameterListener {
     __obj.asInstanceOf[XDatabaseParameterListener]
   }
   
-  @scala.inline
-  implicit class XDatabaseParameterListenerMutableBuilder[Self <: XDatabaseParameterListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseParameterListener](x: Self) {
     
-    @scala.inline
-    def setApproveParameter(value: DatabaseParameterEvent => Boolean): Self = StObject.set(x, "approveParameter", js.Any.fromFunction1(value))
+    inline def setApproveParameter(value: DatabaseParameterEvent => Boolean): Self = StObject.set(x, "approveParameter", js.Any.fromFunction1(value))
   }
 }

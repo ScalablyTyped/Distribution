@@ -31,25 +31,19 @@ trait Taint extends StObject {
 }
 object Taint {
   
-  @scala.inline
-  def apply(effect: String, key: String, timeAdded: String, value: String): Taint = {
+  inline def apply(effect: String, key: String, timeAdded: String, value: String): Taint = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], timeAdded = timeAdded.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Taint]
   }
   
-  @scala.inline
-  implicit class TaintMutableBuilder[Self <: Taint] (val x: Self) extends AnyVal {
+  extension [Self <: Taint](x: Self) {
     
-    @scala.inline
-    def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeAdded(value: String): Self = StObject.set(x, "timeAdded", value.asInstanceOf[js.Any])
+    inline def setTimeAdded(value: String): Self = StObject.set(x, "timeAdded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

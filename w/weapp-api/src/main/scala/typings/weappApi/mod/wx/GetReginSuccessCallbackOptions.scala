@@ -14,19 +14,15 @@ trait GetReginSuccessCallbackOptions extends StObject {
 }
 object GetReginSuccessCallbackOptions {
   
-  @scala.inline
-  def apply(northeast: Double, southwest: Double): GetReginSuccessCallbackOptions = {
+  inline def apply(northeast: Double, southwest: Double): GetReginSuccessCallbackOptions = {
     val __obj = js.Dynamic.literal(northeast = northeast.asInstanceOf[js.Any], southwest = southwest.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReginSuccessCallbackOptions]
   }
   
-  @scala.inline
-  implicit class GetReginSuccessCallbackOptionsMutableBuilder[Self <: GetReginSuccessCallbackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetReginSuccessCallbackOptions](x: Self) {
     
-    @scala.inline
-    def setNortheast(value: Double): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
+    inline def setNortheast(value: Double): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouthwest(value: Double): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
+    inline def setSouthwest(value: Double): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait RadioMixin extends StObject {
 }
 object RadioMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindEvents: js.Any,
     bindRequests: js.Any,
     getChannel: js.Any,
@@ -30,22 +29,16 @@ object RadioMixin {
     __obj.asInstanceOf[RadioMixin]
   }
   
-  @scala.inline
-  implicit class RadioMixinMutableBuilder[Self <: RadioMixin] (val x: Self) extends AnyVal {
+  extension [Self <: RadioMixin](x: Self) {
     
-    @scala.inline
-    def setBindEvents(value: js.Any): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
+    inline def setBindEvents(value: js.Any): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindRequests(value: js.Any): Self = StObject.set(x, "bindRequests", value.asInstanceOf[js.Any])
+    inline def setBindRequests(value: js.Any): Self = StObject.set(x, "bindRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChannel(value: js.Any): Self = StObject.set(x, "getChannel", value.asInstanceOf[js.Any])
+    inline def setGetChannel(value: js.Any): Self = StObject.set(x, "getChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbindEvents(value: js.Any): Self = StObject.set(x, "unbindEvents", value.asInstanceOf[js.Any])
+    inline def setUnbindEvents(value: js.Any): Self = StObject.set(x, "unbindEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbindRequests(value: js.Any): Self = StObject.set(x, "unbindRequests", value.asInstanceOf[js.Any])
+    inline def setUnbindRequests(value: js.Any): Self = StObject.set(x, "unbindRequests", value.asInstanceOf[js.Any])
   }
 }

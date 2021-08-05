@@ -74,8 +74,7 @@ trait ChartDataRowProperties
 }
 object ChartDataRowProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Axis: Double,
     CharAutoKerning: Boolean,
     CharBackColor: Color,
@@ -223,19 +222,14 @@ object ChartDataRowProperties {
     __obj.asInstanceOf[ChartDataRowProperties]
   }
   
-  @scala.inline
-  implicit class ChartDataRowPropertiesMutableBuilder[Self <: ChartDataRowProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataRowProperties](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataErrorProperties(value: XPropertySet): Self = StObject.set(x, "DataErrorProperties", value.asInstanceOf[js.Any])
+    inline def setDataErrorProperties(value: XPropertySet): Self = StObject.set(x, "DataErrorProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataMeanValueProperties(value: XPropertySet): Self = StObject.set(x, "DataMeanValueProperties", value.asInstanceOf[js.Any])
+    inline def setDataMeanValueProperties(value: XPropertySet): Self = StObject.set(x, "DataMeanValueProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRegressionProperties(value: XPropertySet): Self = StObject.set(x, "DataRegressionProperties", value.asInstanceOf[js.Any])
+    inline def setDataRegressionProperties(value: XPropertySet): Self = StObject.set(x, "DataRegressionProperties", value.asInstanceOf[js.Any])
   }
 }

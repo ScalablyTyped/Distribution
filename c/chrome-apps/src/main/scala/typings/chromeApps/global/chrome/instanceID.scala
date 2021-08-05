@@ -28,8 +28,7 @@ object instanceID {
     * @param callback Function called when the deletion completes.
     *                 The instance identifier was revoked successfully if runtime.lastError is not set.
     */
-  @scala.inline
-  def deleteID(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deleteID(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Revokes a granted token.
@@ -37,8 +36,7 @@ object instanceID {
     * @param callback Function called when the token deletion completes.
     *                 The token was revoked successfully if runtime.lastError is not set.
     */
-  @scala.inline
-  def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteToken")(deleteTokenParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteToken")(deleteTokenParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves the time when the InstanceID has been generated.
@@ -48,8 +46,7 @@ object instanceID {
     *                 Provides `creationTime` (double)
     *                  > The time when the Instance ID has been generated, represented in milliseconds since the epoch.
     */
-  @scala.inline
-  def getCreationTime(callback: js.Function1[/* creationTime */ integer, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCreationTime")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getCreationTime(callback: js.Function1[/* creationTime */ integer, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCreationTime")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Retrieves an identifier for the app instance.
@@ -60,16 +57,14 @@ object instanceID {
     *                 It should check runtime.lastError for error when instanceID is empty.
     *                 Will be provided with instanceID: An Instance ID assigned to the app instance.
     */
-  @scala.inline
-  def getID(callback: js.Function1[/* instanceId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getID(callback: js.Function1[/* instanceId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Return a token that allows the authorized entity to access the service defined by scope.
     * @param getTokenParams Parameters for getToken.
     * @param callback Function called when the retrieval completes. It should check runtime.lastError for error when token is empty.
     */
-  @scala.inline
-  def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(getTokenParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(getTokenParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Fired when all the granted tokens need to be refreshed. */
   @JSGlobal("chrome.instanceID.onTokenRefresh")

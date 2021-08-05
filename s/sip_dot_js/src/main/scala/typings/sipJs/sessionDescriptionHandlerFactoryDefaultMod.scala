@@ -14,10 +14,8 @@ object sessionDescriptionHandlerFactoryDefaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")().asInstanceOf[SessionDescriptionHandlerFactory]
-  @scala.inline
-  def defaultSessionDescriptionHandlerFactory(
+  inline def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")().asInstanceOf[SessionDescriptionHandlerFactory]
+  inline def defaultSessionDescriptionHandlerFactory(
     mediaStreamFactory: js.Function2[
       /* constraints */ MediaStreamConstraints, 
       /* sessionDescriptionHandler */ SessionDescriptionHandler, 

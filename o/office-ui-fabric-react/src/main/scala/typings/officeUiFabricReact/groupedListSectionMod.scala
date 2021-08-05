@@ -31,11 +31,11 @@ object groupedListSectionMod {
     extends Component[IGroupedListSectionProps, IGroupedListSectionState, js.Any] {
     def this(props: IGroupedListSectionProps) = this()
     
-    var _dragDropSubscription: js.Any = js.native
+    /* private */ var _dragDropSubscription: js.Any = js.native
     
-    var _droppingClassName: js.Any = js.native
+    /* private */ var _droppingClassName: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     /**
       * get the correct css class to reflect the dropping state for a given group
@@ -44,38 +44,38 @@ object groupedListSectionMod {
       * Otherwise, return '';
       *
       */
-    var _getDroppingClassName: js.Any = js.native
+    /* private */ var _getDroppingClassName: js.Any = js.native
     
     /**
       * collect all the data we need to enable drag/drop for a group
       */
-    var _getGroupDragDropOptions: js.Any = js.native
+    /* private */ var _getGroupDragDropOptions: js.Any = js.native
     
-    var _getGroupKey: js.Any = js.native
+    /* private */ var _getGroupKey: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _list: js.Any = js.native
+    /* private */ var _list: js.Any = js.native
     
-    var _onRenderGroup: js.Any = js.native
+    /* private */ var _onRenderGroup: js.Any = js.native
     
-    var _onRenderGroupCell: js.Any = js.native
+    /* private */ var _onRenderGroupCell: js.Any = js.native
     
-    var _onRenderGroupFooter: js.Any = js.native
+    /* private */ var _onRenderGroupFooter: js.Any = js.native
     
-    var _onRenderGroupHeader: js.Any = js.native
+    /* private */ var _onRenderGroupHeader: js.Any = js.native
     
-    var _onRenderGroupShowAll: js.Any = js.native
+    /* private */ var _onRenderGroupShowAll: js.Any = js.native
     
-    var _onSelectionChange: js.Any = js.native
+    /* private */ var _onSelectionChange: js.Any = js.native
     
-    var _renderSubGroup: js.Any = js.native
+    /* private */ var _renderSubGroup: js.Any = js.native
     
-    var _returnOne: js.Any = js.native
+    /* private */ var _returnOne: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _subGroupRefs: js.Any = js.native
+    /* private */ var _subGroupRefs: js.Any = js.native
     
     /**
       * update groupIsDropping state based on the input value, which is used to change style during drag and drop
@@ -83,7 +83,7 @@ object groupedListSectionMod {
       * @param newValue - new isDropping state value
       * @param event - the event trigger dropping state change which can be dragenter, dragleave etc
       */
-    var _updateDroppingState: js.Any = js.native
+    /* private */ var _updateDroppingState: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MGroupedListSection(): Unit = js.native
@@ -201,26 +201,20 @@ object groupedListSectionMod {
   }
   object IGroupedListSectionState {
     
-    @scala.inline
-    def apply(): IGroupedListSectionState = {
+    inline def apply(): IGroupedListSectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupedListSectionState]
     }
     
-    @scala.inline
-    implicit class IGroupedListSectionStateMutableBuilder[Self <: IGroupedListSectionState] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupedListSectionState](x: Self) {
       
-      @scala.inline
-      def setIsDropping(value: Boolean): Self = StObject.set(x, "isDropping", value.asInstanceOf[js.Any])
+      inline def setIsDropping(value: Boolean): Self = StObject.set(x, "isDropping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDroppingUndefined: Self = StObject.set(x, "isDropping", js.undefined)
+      inline def setIsDroppingUndefined: Self = StObject.set(x, "isDropping", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait ConnectData
 }
 object ConnectData {
   
-  @scala.inline
-  def apply(id: String, isAuthenticated: Boolean, pingTimeout: Double, processPendingSubscriptions: () => Unit): ConnectData = {
+  inline def apply(id: String, isAuthenticated: Boolean, pingTimeout: Double, processPendingSubscriptions: () => Unit): ConnectData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any], processPendingSubscriptions = js.Any.fromFunction0(processPendingSubscriptions), authToken = null)
     __obj.asInstanceOf[ConnectData]
   }
   
-  @scala.inline
-  implicit class ConnectDataMutableBuilder[Self <: ConnectData] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectData](x: Self) {
     
-    @scala.inline
-    def setProcessPendingSubscriptions(value: () => Unit): Self = StObject.set(x, "processPendingSubscriptions", js.Any.fromFunction0(value))
+    inline def setProcessPendingSubscriptions(value: () => Unit): Self = StObject.set(x, "processPendingSubscriptions", js.Any.fromFunction0(value))
   }
 }

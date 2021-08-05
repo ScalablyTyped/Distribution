@@ -28,28 +28,21 @@ trait RestoreManagedPrefixListVersionRequest extends StObject {
 }
 object RestoreManagedPrefixListVersionRequest {
   
-  @scala.inline
-  def apply(CurrentVersion: Long, PrefixListId: PrefixListResourceId, PreviousVersion: Long): RestoreManagedPrefixListVersionRequest = {
+  inline def apply(CurrentVersion: Long, PrefixListId: PrefixListResourceId, PreviousVersion: Long): RestoreManagedPrefixListVersionRequest = {
     val __obj = js.Dynamic.literal(CurrentVersion = CurrentVersion.asInstanceOf[js.Any], PrefixListId = PrefixListId.asInstanceOf[js.Any], PreviousVersion = PreviousVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreManagedPrefixListVersionRequest]
   }
   
-  @scala.inline
-  implicit class RestoreManagedPrefixListVersionRequestMutableBuilder[Self <: RestoreManagedPrefixListVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreManagedPrefixListVersionRequest](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousVersion(value: Long): Self = StObject.set(x, "PreviousVersion", value.asInstanceOf[js.Any])
+    inline def setPreviousVersion(value: Long): Self = StObject.set(x, "PreviousVersion", value.asInstanceOf[js.Any])
   }
 }

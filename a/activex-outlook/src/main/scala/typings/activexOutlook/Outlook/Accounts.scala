@@ -14,7 +14,7 @@ trait Accounts extends StObject {
   
   def Item(Index: js.Any): Account
   
-  @JSName("Outlook.Accounts_typekey")
+  /* private */ @JSName("Outlook.Accounts_typekey")
   var OutlookDotAccounts_typekey: Accounts
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait Accounts extends StObject {
 }
 object Accounts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
@@ -38,28 +37,20 @@ object Accounts {
     __obj.asInstanceOf[Accounts]
   }
   
-  @scala.inline
-  implicit class AccountsMutableBuilder[Self <: Accounts] (val x: Self) extends AnyVal {
+  extension [Self <: Accounts](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Account): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Account): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotAccounts_typekey(value: Accounts): Self = StObject.set(x, "Outlook.Accounts_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAccounts_typekey(value: Accounts): Self = StObject.set(x, "Outlook.Accounts_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

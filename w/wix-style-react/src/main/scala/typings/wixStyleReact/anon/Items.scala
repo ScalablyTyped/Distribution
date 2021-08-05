@@ -13,22 +13,17 @@ trait Items extends StObject {
 }
 object Items {
   
-  @scala.inline
-  def apply(items: js.Array[ModalSelectorLayoutItem], totalCount: Double): Items = {
+  inline def apply(items: js.Array[ModalSelectorLayoutItem], totalCount: Double): Items = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Items]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
+  extension [Self <: Items](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ModalSelectorLayoutItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ModalSelectorLayoutItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ModalSelectorLayoutItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ModalSelectorLayoutItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

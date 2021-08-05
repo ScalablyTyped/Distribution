@@ -15,19 +15,15 @@ trait SliderPropsAndroid
 }
 object SliderPropsAndroid {
   
-  @scala.inline
-  def apply(): SliderPropsAndroid = {
+  inline def apply(): SliderPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderPropsAndroid]
   }
   
-  @scala.inline
-  implicit class SliderPropsAndroidMutableBuilder[Self <: SliderPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: SliderPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setThumbTintColor(value: ColorValue): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
+    inline def setThumbTintColor(value: ColorValue): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
+    inline def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
   }
 }

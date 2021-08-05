@@ -22,28 +22,21 @@ trait ButtonMenuViewModelProperties extends StObject {
 }
 object ButtonMenuViewModelProperties {
   
-  @scala.inline
-  def apply(): ButtonMenuViewModelProperties = {
+  inline def apply(): ButtonMenuViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonMenuViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ButtonMenuViewModelPropertiesMutableBuilder[Self <: ButtonMenuViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonMenuViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ButtonMenuItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ButtonMenuItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

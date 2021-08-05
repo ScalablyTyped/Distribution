@@ -18,19 +18,15 @@ trait SetOuterHTMLRequest extends StObject {
 }
 object SetOuterHTMLRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId, outerHTML: String): SetOuterHTMLRequest = {
+  inline def apply(nodeId: NodeId, outerHTML: String): SetOuterHTMLRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], outerHTML = outerHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOuterHTMLRequest]
   }
   
-  @scala.inline
-  implicit class SetOuterHTMLRequestMutableBuilder[Self <: SetOuterHTMLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetOuterHTMLRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
+    inline def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
   }
 }

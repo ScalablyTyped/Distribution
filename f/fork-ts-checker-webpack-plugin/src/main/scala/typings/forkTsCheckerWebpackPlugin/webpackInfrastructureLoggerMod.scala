@@ -11,8 +11,7 @@ object webpackInfrastructureLoggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createWebpackInfrastructureLogger(
+  inline def createWebpackInfrastructureLogger(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): js.UndefOr[Logger] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebpackInfrastructureLogger")(compiler.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Logger]]
 }

@@ -27,17 +27,17 @@ object raygunBatchMod {
   class RaygunBatchTransport protected () extends StObject {
     def this(options: HttpOptions) = this()
     
-    var batchId: js.Any = js.native
+    /* private */ var batchId: js.Any = js.native
     
-    var httpOptions: js.Any = js.native
+    /* private */ var httpOptions: js.Any = js.native
     
-    var interval: js.Any = js.native
+    /* private */ var interval: js.Any = js.native
     
-    var intervalId: js.Any = js.native
+    /* private */ var intervalId: js.Any = js.native
     
-    var messageQueue: js.Any = js.native
+    /* private */ var messageQueue: js.Any = js.native
     
-    var process: js.Any = js.native
+    /* private */ var process: js.Any = js.native
     
     def send(message: String, callback: Callback[IncomingMessage]): Unit = js.native
     
@@ -46,8 +46,7 @@ object raygunBatchMod {
     def stopProcessing(): Unit = js.native
   }
   
-  @scala.inline
-  def prepareBatch(messageQueue: js.Array[MessageAndCallback]): PreparedBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareBatch")(messageQueue.asInstanceOf[js.Any]).asInstanceOf[PreparedBatch]
+  inline def prepareBatch(messageQueue: js.Array[MessageAndCallback]): PreparedBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareBatch")(messageQueue.asInstanceOf[js.Any]).asInstanceOf[PreparedBatch]
   
   trait MessageAndCallback extends StObject {
     
@@ -57,29 +56,22 @@ object raygunBatchMod {
   }
   object MessageAndCallback {
     
-    @scala.inline
-    def apply(serializedMessage: String): MessageAndCallback = {
+    inline def apply(serializedMessage: String): MessageAndCallback = {
       val __obj = js.Dynamic.literal(serializedMessage = serializedMessage.asInstanceOf[js.Any], callback = null)
       __obj.asInstanceOf[MessageAndCallback]
     }
     
-    @scala.inline
-    implicit class MessageAndCallbackMutableBuilder[Self <: MessageAndCallback] (val x: Self) extends AnyVal {
+    extension [Self <: MessageAndCallback](x: Self) {
       
-      @scala.inline
-      def setCallback(value: Callback[IncomingMessage]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: Callback[IncomingMessage]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackFunction1(value: /* t */ IncomingMessage | Null => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallbackFunction1(value: /* t */ IncomingMessage | Null => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackFunction2(value: (/* e */ Error | Null, /* t */ IncomingMessage | Null) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallbackFunction2(value: (/* e */ Error | Null, /* t */ IncomingMessage | Null) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackNull: Self = StObject.set(x, "callback", null)
+      inline def setCallbackNull: Self = StObject.set(x, "callback", null)
       
-      @scala.inline
-      def setSerializedMessage(value: String): Self = StObject.set(x, "serializedMessage", value.asInstanceOf[js.Any])
+      inline def setSerializedMessage(value: String): Self = StObject.set(x, "serializedMessage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,26 +85,20 @@ object raygunBatchMod {
   }
   object PreparedBatch {
     
-    @scala.inline
-    def apply(callbacks: js.Array[Callback[IncomingMessage]], messageCount: Double, payload: String): PreparedBatch = {
+    inline def apply(callbacks: js.Array[Callback[IncomingMessage]], messageCount: Double, payload: String): PreparedBatch = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], messageCount = messageCount.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreparedBatch]
     }
     
-    @scala.inline
-    implicit class PreparedBatchMutableBuilder[Self <: PreparedBatch] (val x: Self) extends AnyVal {
+    extension [Self <: PreparedBatch](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: js.Array[Callback[IncomingMessage]]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: js.Array[Callback[IncomingMessage]]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksVarargs(value: Callback[IncomingMessage]*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: Callback[IncomingMessage]*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+      inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
 }

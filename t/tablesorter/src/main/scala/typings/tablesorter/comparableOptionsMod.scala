@@ -15,23 +15,18 @@ object comparableOptionsMod {
   }
   object ComparableOptions {
     
-    @scala.inline
-    def apply(): ComparableOptions = {
+    inline def apply(): ComparableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComparableOptions]
     }
     
-    @scala.inline
-    implicit class ComparableOptionsMutableBuilder[Self <: ComparableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComparableOptions](x: Self) {
       
-      @scala.inline
-      def setCompare(value: String | js.Array[String]): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+      inline def setCompare(value: String | js.Array[String]): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+      inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
       
-      @scala.inline
-      def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value :_*))
+      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value :_*))
     }
   }
 }

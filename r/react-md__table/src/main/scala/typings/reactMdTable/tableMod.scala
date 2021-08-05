@@ -21,8 +21,7 @@ object tableMod {
        with TableConfiguration
   object TableProps {
     
-    @scala.inline
-    def apply(): TableProps = {
+    inline def apply(): TableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableProps]
     }

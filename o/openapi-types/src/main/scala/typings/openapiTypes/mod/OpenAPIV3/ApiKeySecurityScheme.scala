@@ -19,29 +19,22 @@ trait ApiKeySecurityScheme
 }
 object ApiKeySecurityScheme {
   
-  @scala.inline
-  def apply(in: String, name: String): ApiKeySecurityScheme = {
+  inline def apply(in: String, name: String): ApiKeySecurityScheme = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("apiKey")
     __obj.asInstanceOf[ApiKeySecurityScheme]
   }
   
-  @scala.inline
-  implicit class ApiKeySecuritySchemeMutableBuilder[Self <: ApiKeySecurityScheme] (val x: Self) extends AnyVal {
+  extension [Self <: ApiKeySecurityScheme](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: apiKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: apiKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

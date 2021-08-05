@@ -16,22 +16,17 @@ trait SchemaListSendAsResponse extends StObject {
 }
 object SchemaListSendAsResponse {
   
-  @scala.inline
-  def apply(): SchemaListSendAsResponse = {
+  inline def apply(): SchemaListSendAsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListSendAsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListSendAsResponseMutableBuilder[Self <: SchemaListSendAsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListSendAsResponse](x: Self) {
     
-    @scala.inline
-    def setSendAs(value: js.Array[SchemaSendAs]): Self = StObject.set(x, "sendAs", value.asInstanceOf[js.Any])
+    inline def setSendAs(value: js.Array[SchemaSendAs]): Self = StObject.set(x, "sendAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
+    inline def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
     
-    @scala.inline
-    def setSendAsVarargs(value: SchemaSendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
+    inline def setSendAsVarargs(value: SchemaSendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
   }
 }

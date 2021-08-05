@@ -13,19 +13,15 @@ trait SendCustomVerificationEmailResponse extends StObject {
 }
 object SendCustomVerificationEmailResponse {
   
-  @scala.inline
-  def apply(): SendCustomVerificationEmailResponse = {
+  inline def apply(): SendCustomVerificationEmailResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendCustomVerificationEmailResponse]
   }
   
-  @scala.inline
-  implicit class SendCustomVerificationEmailResponseMutableBuilder[Self <: SendCustomVerificationEmailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendCustomVerificationEmailResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

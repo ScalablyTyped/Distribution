@@ -29,55 +29,39 @@ trait PartialOption extends StObject {
 }
 object PartialOption {
   
-  @scala.inline
-  def apply(): PartialOption = {
+  inline def apply(): PartialOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOption]
   }
   
-  @scala.inline
-  implicit class PartialOptionMutableBuilder[Self <: PartialOption] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOption](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* error */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnLaunch(value: /* options */ LaunchShowOption => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
+    inline def setOnLaunch(value: /* options */ LaunchShowOption => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
+    inline def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
     
-    @scala.inline
-    def setOnPageNotFound(value: /* options */ PageNotFoundOption => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction1(value))
+    inline def setOnPageNotFound(value: /* options */ PageNotFoundOption => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
+    inline def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: /* options */ LaunchShowOption => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* options */ LaunchShowOption => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setOnThemeChange(value: /* result */ OnThemeChangeCallbackResult => Unit): Self = StObject.set(x, "onThemeChange", js.Any.fromFunction1(value))
+    inline def setOnThemeChange(value: /* result */ OnThemeChangeCallbackResult => Unit): Self = StObject.set(x, "onThemeChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnThemeChangeUndefined: Self = StObject.set(x, "onThemeChange", js.undefined)
+    inline def setOnThemeChangeUndefined: Self = StObject.set(x, "onThemeChange", js.undefined)
     
-    @scala.inline
-    def setOnUnhandledRejection(value: /* result */ OnUnhandledRejectionCallbackResult => Unit): Self = StObject.set(x, "onUnhandledRejection", js.Any.fromFunction1(value))
+    inline def setOnUnhandledRejection(value: /* result */ OnUnhandledRejectionCallbackResult => Unit): Self = StObject.set(x, "onUnhandledRejection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUnhandledRejectionUndefined: Self = StObject.set(x, "onUnhandledRejection", js.undefined)
+    inline def setOnUnhandledRejectionUndefined: Self = StObject.set(x, "onUnhandledRejection", js.undefined)
   }
 }

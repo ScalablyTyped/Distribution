@@ -8,11 +8,9 @@ object packageJsonStrings {
   
   @js.native
   sealed trait PackageNotFoundError extends StObject
-  @scala.inline
-  def PackageNotFoundError: PackageNotFoundError = "PackageNotFoundError".asInstanceOf[PackageNotFoundError]
+  inline def PackageNotFoundError: PackageNotFoundError = "PackageNotFoundError".asInstanceOf[PackageNotFoundError]
   
   @js.native
   sealed trait VersionNotFoundError extends StObject
-  @scala.inline
-  def VersionNotFoundError: VersionNotFoundError = "VersionNotFoundError".asInstanceOf[VersionNotFoundError]
+  inline def VersionNotFoundError: VersionNotFoundError = "VersionNotFoundError".asInstanceOf[VersionNotFoundError]
 }

@@ -16,25 +16,19 @@ trait HeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends S
 }
 object HeightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): HeightProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): HeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeightProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class HeightPropsMutableBuilder[Self <: HeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (HeightProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: HeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (HeightProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "height", js.Array(value :_*))
+    inline def setHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "height", js.Array(value :_*))
   }
 }

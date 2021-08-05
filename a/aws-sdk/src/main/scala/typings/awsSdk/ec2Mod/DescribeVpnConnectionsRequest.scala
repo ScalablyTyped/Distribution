@@ -23,37 +23,27 @@ trait DescribeVpnConnectionsRequest extends StObject {
 }
 object DescribeVpnConnectionsRequest {
   
-  @scala.inline
-  def apply(): DescribeVpnConnectionsRequest = {
+  inline def apply(): DescribeVpnConnectionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpnConnectionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeVpnConnectionsRequestMutableBuilder[Self <: DescribeVpnConnectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpnConnectionsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setVpnConnectionIds(value: VpnConnectionIdStringList): Self = StObject.set(x, "VpnConnectionIds", value.asInstanceOf[js.Any])
+    inline def setVpnConnectionIds(value: VpnConnectionIdStringList): Self = StObject.set(x, "VpnConnectionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConnectionIdsUndefined: Self = StObject.set(x, "VpnConnectionIds", js.undefined)
+    inline def setVpnConnectionIdsUndefined: Self = StObject.set(x, "VpnConnectionIds", js.undefined)
     
-    @scala.inline
-    def setVpnConnectionIdsVarargs(value: VpnConnectionId*): Self = StObject.set(x, "VpnConnectionIds", js.Array(value :_*))
+    inline def setVpnConnectionIdsVarargs(value: VpnConnectionId*): Self = StObject.set(x, "VpnConnectionIds", js.Array(value :_*))
   }
 }

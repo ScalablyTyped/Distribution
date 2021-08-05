@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "riot-api-nodejs"
-version := "0.0-unknown-dt-20201002Z-d59b2c"
+version := "0.0-unknown-dt-20201002Z-976d17"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "riot-games-api" % "0.0-unknown-dt-20201002Z-7d933c",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "riot-games-api" % "0.0-unknown-dt-20201002Z-f482ef",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

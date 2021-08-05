@@ -17,31 +17,23 @@ trait DoubleVerifyVideoViewability extends StObject {
 }
 object DoubleVerifyVideoViewability {
   
-  @scala.inline
-  def apply(): DoubleVerifyVideoViewability = {
+  inline def apply(): DoubleVerifyVideoViewability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleVerifyVideoViewability]
   }
   
-  @scala.inline
-  implicit class DoubleVerifyVideoViewabilityMutableBuilder[Self <: DoubleVerifyVideoViewability] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleVerifyVideoViewability](x: Self) {
     
-    @scala.inline
-    def setPlayerImpressionRate(value: String): Self = StObject.set(x, "playerImpressionRate", value.asInstanceOf[js.Any])
+    inline def setPlayerImpressionRate(value: String): Self = StObject.set(x, "playerImpressionRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerImpressionRateUndefined: Self = StObject.set(x, "playerImpressionRate", js.undefined)
+    inline def setPlayerImpressionRateUndefined: Self = StObject.set(x, "playerImpressionRate", js.undefined)
     
-    @scala.inline
-    def setVideoIab(value: String): Self = StObject.set(x, "videoIab", value.asInstanceOf[js.Any])
+    inline def setVideoIab(value: String): Self = StObject.set(x, "videoIab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIabUndefined: Self = StObject.set(x, "videoIab", js.undefined)
+    inline def setVideoIabUndefined: Self = StObject.set(x, "videoIab", js.undefined)
     
-    @scala.inline
-    def setVideoViewableRate(value: String): Self = StObject.set(x, "videoViewableRate", value.asInstanceOf[js.Any])
+    inline def setVideoViewableRate(value: String): Self = StObject.set(x, "videoViewableRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoViewableRateUndefined: Self = StObject.set(x, "videoViewableRate", js.undefined)
+    inline def setVideoViewableRateUndefined: Self = StObject.set(x, "videoViewableRate", js.undefined)
   }
 }

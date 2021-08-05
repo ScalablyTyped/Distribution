@@ -10,6 +10,5 @@ object global {
   @JSGlobal("deferredBootstrapper")
   @js.native
   def deferredBootstrapper: IDeferredBootstrapperStatic = js.native
-  @scala.inline
-  def deferredBootstrapper_=(x: IDeferredBootstrapperStatic): Unit = js.Dynamic.global.updateDynamic("deferredBootstrapper")(x.asInstanceOf[js.Any])
+  inline def deferredBootstrapper_=(x: IDeferredBootstrapperStatic): Unit = js.Dynamic.global.updateDynamic("deferredBootstrapper")(x.asInstanceOf[js.Any])
 }

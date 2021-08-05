@@ -20,43 +20,31 @@ trait ButtonTheme extends StObject {
 }
 object ButtonTheme {
   
-  @scala.inline
-  def apply(fontSize: Double, iconSize: Double, margin: js.Array[Double]): ButtonTheme = {
+  inline def apply(fontSize: Double, iconSize: Double, margin: js.Array[Double]): ButtonTheme = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], bgHeight = null, bgRadius = null, bgWidth = null)
     __obj.asInstanceOf[ButtonTheme]
   }
   
-  @scala.inline
-  implicit class ButtonThemeMutableBuilder[Self <: ButtonTheme] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonTheme](x: Self) {
     
-    @scala.inline
-    def setBgHeight(value: Double): Self = StObject.set(x, "bgHeight", value.asInstanceOf[js.Any])
+    inline def setBgHeight(value: Double): Self = StObject.set(x, "bgHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgHeightNull: Self = StObject.set(x, "bgHeight", null)
+    inline def setBgHeightNull: Self = StObject.set(x, "bgHeight", null)
     
-    @scala.inline
-    def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
+    inline def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgRadiusNull: Self = StObject.set(x, "bgRadius", null)
+    inline def setBgRadiusNull: Self = StObject.set(x, "bgRadius", null)
     
-    @scala.inline
-    def setBgWidth(value: Double): Self = StObject.set(x, "bgWidth", value.asInstanceOf[js.Any])
+    inline def setBgWidth(value: Double): Self = StObject.set(x, "bgWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgWidthNull: Self = StObject.set(x, "bgWidth", null)
+    inline def setBgWidthNull: Self = StObject.set(x, "bgWidth", null)
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+    inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
   }
 }

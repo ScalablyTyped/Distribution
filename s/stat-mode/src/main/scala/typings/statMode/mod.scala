@@ -6,12 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Mode = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mode]
-  @scala.inline
-  def apply(stat: Double): Mode = ^.asInstanceOf[js.Dynamic].apply(stat.asInstanceOf[js.Any]).asInstanceOf[Mode]
-  @scala.inline
-  def apply(stat: StatsMode): Mode = ^.asInstanceOf[js.Dynamic].apply(stat.asInstanceOf[js.Any]).asInstanceOf[Mode]
+  inline def apply(): Mode = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mode]
+  inline def apply(stat: Double): Mode = ^.asInstanceOf[js.Dynamic].apply(stat.asInstanceOf[js.Any]).asInstanceOf[Mode]
+  inline def apply(stat: StatsMode): Mode = ^.asInstanceOf[js.Dynamic].apply(stat.asInstanceOf[js.Any]).asInstanceOf[Mode]
   
   @JSImport("stat-mode", JSImport.Namespace)
   @js.native
@@ -32,22 +29,19 @@ object mod {
     @JSImport("stat-mode", "Group.r")
     @js.native
     def r: Double = js.native
-    @scala.inline
-    def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
+    inline def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "Group.w")
     @js.native
     def w: Double = js.native
-    @scala.inline
-    def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
+    inline def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "Group.x")
     @js.native
     def x: Double = js.native
-    @scala.inline
-    def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
+    inline def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("stat-mode", "Mode")
@@ -56,7 +50,7 @@ object mod {
     def this(stat: Double) = this()
     def this(stat: StatsMode) = this()
     
-    var checkModeProperty: js.Any = js.native
+    /* private */ var checkModeProperty: js.Any = js.native
     
     var group: Group = js.native
     
@@ -91,7 +85,7 @@ object mod {
     def setuid: Boolean = js.native
     def setuid_=(v: Boolean): Unit = js.native
     
-    var stat: js.Any = js.native
+    /* private */ var stat: js.Any = js.native
     
     def sticky: Boolean = js.native
     def sticky_=(v: Boolean): Unit = js.native
@@ -122,22 +116,19 @@ object mod {
     @JSImport("stat-mode", "Others.r")
     @js.native
     def r: Double = js.native
-    @scala.inline
-    def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
+    inline def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "Others.w")
     @js.native
     def w: Double = js.native
-    @scala.inline
-    def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
+    inline def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "Others.x")
     @js.native
     def x: Double = js.native
-    @scala.inline
-    def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
+    inline def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("stat-mode", "Owner")
@@ -155,22 +146,19 @@ object mod {
     @JSImport("stat-mode", "Owner.r")
     @js.native
     def r: Double = js.native
-    @scala.inline
-    def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
+    inline def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "Owner.w")
     @js.native
     def w: Double = js.native
-    @scala.inline
-    def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
+    inline def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "Owner.x")
     @js.native
     def x: Double = js.native
-    @scala.inline
-    def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
+    inline def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("stat-mode", "RWX")
@@ -184,7 +172,7 @@ object mod {
     def read: Boolean = js.native
     def read_=(v: Boolean): Unit = js.native
     
-    var stat: js.Any = js.native
+    /* private */ var stat: js.Any = js.native
     
     def write: Boolean = js.native
     def write_=(v: Boolean): Unit = js.native
@@ -199,26 +187,22 @@ object mod {
     @JSImport("stat-mode", "RWX.r")
     @js.native
     def r: Double = js.native
-    @scala.inline
-    def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
+    inline def r_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("r")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "RWX.w")
     @js.native
     def w: Double = js.native
-    @scala.inline
-    def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
+    inline def w_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("w")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("stat-mode", "RWX.x")
     @js.native
     def x: Double = js.native
-    @scala.inline
-    def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
+    inline def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isStatsMode(v: js.Any): /* is stat-mode.stat-mode.StatsMode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatsMode")(v.asInstanceOf[js.Any]).asInstanceOf[/* is stat-mode.stat-mode.StatsMode */ Boolean]
+  inline def isStatsMode(v: js.Any): /* is stat-mode.stat-mode.StatsMode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatsMode")(v.asInstanceOf[js.Any]).asInstanceOf[/* is stat-mode.stat-mode.StatsMode */ Boolean]
   
   /* Inlined std.Pick<node.fs.Stats, 'mode'> */
   trait StatsMode extends StObject {
@@ -227,17 +211,14 @@ object mod {
   }
   object StatsMode {
     
-    @scala.inline
-    def apply(mode: Double): StatsMode = {
+    inline def apply(mode: Double): StatsMode = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatsMode]
     }
     
-    @scala.inline
-    implicit class StatsModeMutableBuilder[Self <: StatsMode] (val x: Self) extends AnyVal {
+    extension [Self <: StatsMode](x: Self) {
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
 }

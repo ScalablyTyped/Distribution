@@ -25,28 +25,21 @@ trait TeamsCreateDiscussionLegacyEndpoint extends StObject {
 }
 object TeamsCreateDiscussionLegacyEndpoint {
   
-  @scala.inline
-  def apply(body: String, team_id: Double, title: String): TeamsCreateDiscussionLegacyEndpoint = {
+  inline def apply(body: String, team_id: Double, title: String): TeamsCreateDiscussionLegacyEndpoint = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCreateDiscussionLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsCreateDiscussionLegacyEndpointMutableBuilder[Self <: TeamsCreateDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCreateDiscussionLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

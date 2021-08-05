@@ -24,8 +24,7 @@ trait SingularAnimationOptionsBase extends StObject {
 }
 object SingularAnimationOptionsBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     easing: TransitionTimingFunction,
     position: Position,
@@ -36,22 +35,16 @@ object SingularAnimationOptionsBase {
     __obj.asInstanceOf[SingularAnimationOptionsBase]
   }
   
-  @scala.inline
-  implicit class SingularAnimationOptionsBaseMutableBuilder[Self <: SingularAnimationOptionsBase] (val x: Self) extends AnyVal {
+  extension [Self <: SingularAnimationOptionsBase](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: TransitionTimingFunction): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: TransitionTimingFunction): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
+    inline def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

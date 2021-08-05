@@ -19,37 +19,27 @@ trait IconParams
 }
 object IconParams {
   
-  @scala.inline
-  def apply(): IconParams = {
+  inline def apply(): IconParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconParams]
   }
   
-  @scala.inline
-  implicit class IconParamsMutableBuilder[Self <: IconParams] (val x: Self) extends AnyVal {
+  extension [Self <: IconParams](x: Self) {
     
-    @scala.inline
-    def setMask(value: IconLookup): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: IconLookup): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskId(value: String): Self = StObject.set(x, "maskId", value.asInstanceOf[js.Any])
+    inline def setMaskId(value: String): Self = StObject.set(x, "maskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskIdUndefined: Self = StObject.set(x, "maskId", js.undefined)
+    inline def setMaskIdUndefined: Self = StObject.set(x, "maskId", js.undefined)
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: FaSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: FaSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

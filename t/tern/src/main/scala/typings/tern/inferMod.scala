@@ -67,53 +67,37 @@ object inferMod {
     @js.native
     val ^ : ANull = js.native
     
-    @scala.inline
-    implicit class ANullMutableBuilder[Self <: ANull] (val x: Self) extends AnyVal {
+    extension [Self <: ANull](x: Self) {
       
-      @scala.inline
-      def setAddType(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction1(value))
+      inline def setAddType(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForAllProps(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "forAllProps", js.Any.fromFunction1(value))
+      inline def setForAllProps(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "forAllProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGatherProperties(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gatherProperties", js.Any.fromFunction1(value))
+      inline def setGatherProperties(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gatherProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFunctionType(value: /* repeated */ js.Any => js.UndefOr[ANull]): Self = StObject.set(x, "getFunctionType", js.Any.fromFunction1(value))
+      inline def setGetFunctionType(value: /* repeated */ js.Any => js.UndefOr[ANull]): Self = StObject.set(x, "getFunctionType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetObjType(value: /* repeated */ js.Any => js.UndefOr[ANull | Null]): Self = StObject.set(x, "getObjType", js.Any.fromFunction1(value))
+      inline def setGetObjType(value: /* repeated */ js.Any => js.UndefOr[ANull | Null]): Self = StObject.set(x, "getObjType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProp(value: /* repeated */ js.Any => ANull): Self = StObject.set(x, "getProp", js.Any.fromFunction1(value))
+      inline def setGetProp(value: /* repeated */ js.Any => ANull): Self = StObject.set(x, "getProp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSymbolType(value: /* repeated */ js.Any => js.UndefOr[ANull]): Self = StObject.set(x, "getSymbolType", js.Any.fromFunction1(value))
+      inline def setGetSymbolType(value: /* repeated */ js.Any => js.UndefOr[ANull]): Self = StObject.set(x, "getSymbolType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetType(value: /* repeated */ js.Any => js.UndefOr[ANull | Null]): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+      inline def setGetType(value: /* repeated */ js.Any => js.UndefOr[ANull | Null]): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasType(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "hasType", js.Any.fromFunction1(value))
+      inline def setHasType(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "hasType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+      inline def setIsEmpty(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPropHint(value: /* repeated */ js.Any => js.UndefOr[String]): Self = StObject.set(x, "propHint", js.Any.fromFunction1(value))
+      inline def setPropHint(value: /* repeated */ js.Any => js.UndefOr[String]): Self = StObject.set(x, "propHint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPropagate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "propagate", js.Any.fromFunction1(value))
+      inline def setPropagate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "propagate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPropagatesTo(value: () => js.Any): Self = StObject.set(x, "propagatesTo", js.Any.fromFunction0(value))
+      inline def setPropagatesTo(value: () => js.Any): Self = StObject.set(x, "propagatesTo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToString_(value: /* repeated */ js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+      inline def setToString_(value: /* repeated */ js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTypeHint(value: /* repeated */ js.Any => js.UndefOr[ANull | Null]): Self = StObject.set(x, "typeHint", js.Any.fromFunction1(value))
+      inline def setTypeHint(value: /* repeated */ js.Any => js.UndefOr[ANull | Null]): Self = StObject.set(x, "typeHint", js.Any.fromFunction1(value))
     }
   }
   
@@ -343,26 +327,19 @@ object inferMod {
     @js.native
     val ^ : ContextConstructor = js.native
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setBool(value: Primnamebool): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: Primnamebool): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum(value: Primnamenumber): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+      inline def setNum(value: Primnamenumber): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Server): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Server): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setStr(value: Primnamestring): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+      inline def setStr(value: Primnamestring): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopScope(value: typings.tern.inferMod.Scope): Self = StObject.set(x, "topScope", value.asInstanceOf[js.Any])
+      inline def setTopScope(value: typings.tern.inferMod.Scope): Self = StObject.set(x, "topScope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -625,20 +602,15 @@ object inferMod {
     @js.native
     val ^ : PrimConstructor = js.native
     
-    @scala.inline
-    implicit class PrimMutableBuilder[Self <: Prim] (val x: Self) extends AnyVal {
+    extension [Self <: Prim](x: Self) {
       
-      @scala.inline
-      def setGatherProperties(value: (js.Function1[/* repeated */ js.Any, Unit], Double) => Unit): Self = StObject.set(x, "gatherProperties", js.Any.fromFunction2(value))
+      inline def setGatherProperties(value: (js.Function1[/* repeated */ js.Any, Unit], Double) => Unit): Self = StObject.set(x, "gatherProperties", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetProp(value: String => typings.tern.inferMod.AVal): Self = StObject.set(x, "getProp", js.Any.fromFunction1(value))
+      inline def setGetProp(value: String => typings.tern.inferMod.AVal): Self = StObject.set(x, "getProp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: string | bool | number): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: string | bool | number): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProto(value: Objnamestring): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
+      inline def setProto(value: Objnamestring): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
     }
   }
   
@@ -814,10 +786,8 @@ object inferMod {
   @js.native
   val Type: TypeConstructor = js.native
   
-  @scala.inline
-  def analyze(ast: Program, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def analyze(ast: Program, name: String, scope: typings.tern.inferMod.Scope): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def analyze(ast: Program, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def analyze(ast: Program, name: String, scope: typings.tern.inferMod.Scope): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(ast.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("tern/lib/infer", "constraint")
@@ -831,44 +801,28 @@ object inferMod {
   @js.native
   val constraint: ConstraintConstructor = js.native
   
-  @scala.inline
-  def cx(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("cx")().asInstanceOf[Context]
+  inline def cx(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("cx")().asInstanceOf[Context]
   
-  @scala.inline
-  def didGuess(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didGuess")().asInstanceOf[Boolean]
+  inline def didGuess(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didGuess")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def expressionType(expr: State): typings.tern.inferMod.AVal | typings.tern.inferMod.Type = ^.asInstanceOf[js.Dynamic].applyDynamic("expressionType")(expr.asInstanceOf[js.Any]).asInstanceOf[typings.tern.inferMod.AVal | typings.tern.inferMod.Type]
+  inline def expressionType(expr: State): typings.tern.inferMod.AVal | typings.tern.inferMod.Type = ^.asInstanceOf[js.Dynamic].applyDynamic("expressionType")(expr.asInstanceOf[js.Any]).asInstanceOf[typings.tern.inferMod.AVal | typings.tern.inferMod.Type]
   
-  @scala.inline
-  def findClosestExpression(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findClosestExpression(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findClosestExpression(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findClosestExpression(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findClosestExpression(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findClosestExpression(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findClosestExpression(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findClosestExpression(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestExpression")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
   
-  @scala.inline
-  def findExpressionAround(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findExpressionAround(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findExpressionAround(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findExpressionAround(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAround(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAround(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAround(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAround(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAround")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
   
-  @scala.inline
-  def findExpressionAt(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findExpressionAt(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findExpressionAt(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
-  @scala.inline
-  def findExpressionAt(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAt(ast: Program, start: Double, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAt(ast: Program, start: Double, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAt(ast: Program, start: Unit, end: Double): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
+  inline def findExpressionAt(ast: Program, start: Unit, end: Double, scope: typings.tern.inferMod.Scope): typings.tern.anon.Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExpressionAt")(ast.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.anon.Node | Null]
   
-  @scala.inline
-  def findPropRefs(
+  inline def findPropRefs(
     ast: Program,
     scope: typings.tern.inferMod.Scope,
     objType: typings.tern.inferMod.Obj,
@@ -876,8 +830,7 @@ object inferMod {
     f: js.Function1[/* Node */ Node, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findPropRefs")(ast.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], objType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def findRefs(
+  inline def findRefs(
     ast: Program,
     scope: typings.tern.inferMod.Scope,
     name: String,
@@ -885,44 +838,28 @@ object inferMod {
     f: js.Function2[/* Node */ Node, /* Scope */ typings.tern.inferMod.Scope, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findRefs")(ast.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], name.asInstanceOf[js.Any], refScope.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Unit, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def markVariablesDefinedBy(scope: typings.tern.inferMod.Scope, origins: js.Array[String], start: Unit, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markVariablesDefinedBy")(scope.asInstanceOf[js.Any], origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def parse(text: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Program]
-  @scala.inline
-  def parse(text: String, options: js.Object): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parse(text: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Program]
+  inline def parse(text: String, options: js.Object): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  @scala.inline
-  def purgeMarkedVariables(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeMarkedVariables")().asInstanceOf[Unit]
+  inline def purgeMarkedVariables(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeMarkedVariables")().asInstanceOf[Unit]
   
-  @scala.inline
-  def purgeTypes(origins: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def purgeTypes(origins: js.Array[String], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def purgeTypes(origins: js.Array[String], start: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def purgeTypes(origins: js.Array[String], start: Unit, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def purgeTypes(origins: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def purgeTypes(origins: js.Array[String], start: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def purgeTypes(origins: js.Array[String], start: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def purgeTypes(origins: js.Array[String], start: Unit, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("purgeTypes")(origins.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def resetGuessing(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGuessing")().asInstanceOf[Unit]
-  @scala.inline
-  def resetGuessing(`val`: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGuessing")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetGuessing(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGuessing")().asInstanceOf[Unit]
+  inline def resetGuessing(`val`: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGuessing")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def scopeAt(ast: Program, pos: Double): typings.tern.inferMod.Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeAt")(ast.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.tern.inferMod.Scope]
-  @scala.inline
-  def scopeAt(ast: Program, pos: Double, scope: typings.tern.inferMod.Scope): typings.tern.inferMod.Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeAt")(ast.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.inferMod.Scope]
+  inline def scopeAt(ast: Program, pos: Double): typings.tern.inferMod.Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeAt")(ast.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.tern.inferMod.Scope]
+  inline def scopeAt(ast: Program, pos: Double, scope: typings.tern.inferMod.Scope): typings.tern.inferMod.Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeAt")(ast.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.tern.inferMod.Scope]
   
-  @scala.inline
-  def withContext[R](context: Context, f: js.Function0[R]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(context.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[R]
+  inline def withContext[R](context: Context, f: js.Function0[R]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(context.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[R]
   
   // #### Abstract Values ####
   @js.native
@@ -955,8 +892,7 @@ object inferMod {
   }
   object Constraint_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addType: /* repeated */ js.Any => Unit,
       forAllProps: /* repeated */ js.Any => Unit,
       gatherProperties: /* repeated */ js.Any => Unit,
@@ -978,14 +914,11 @@ object inferMod {
       __obj.asInstanceOf[Constraint_]
     }
     
-    @scala.inline
-    implicit class Constraint_MutableBuilder[Self <: Constraint_] (val x: Self) extends AnyVal {
+    extension [Self <: Constraint_](x: Self) {
       
-      @scala.inline
-      def setPropHint(value: () => js.UndefOr[String]): Self = StObject.set(x, "propHint", js.Any.fromFunction0(value))
+      inline def setPropHint(value: () => js.UndefOr[String]): Self = StObject.set(x, "propHint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTypeHint(value: () => js.UndefOr[typings.tern.inferMod.Type]): Self = StObject.set(x, "typeHint", js.Any.fromFunction0(value))
+      inline def setTypeHint(value: () => js.UndefOr[typings.tern.inferMod.Type]): Self = StObject.set(x, "typeHint", js.Any.fromFunction0(value))
     }
   }
   
@@ -1031,8 +964,7 @@ object inferMod {
   }
   object IType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addType: /* repeated */ js.Any => Unit,
       forAllProps: /* repeated */ js.Any => Unit,
       gatherProperties: /* repeated */ js.Any => Unit,
@@ -1055,26 +987,19 @@ object inferMod {
       __obj.asInstanceOf[IType]
     }
     
-    @scala.inline
-    implicit class ITypeMutableBuilder[Self <: IType] (val x: Self) extends AnyVal {
+    extension [Self <: IType](x: Self) {
       
-      @scala.inline
-      def setGetType(value: () => typings.tern.inferMod.Type): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => typings.tern.inferMod.Type): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasType(value: typings.tern.inferMod.Type => Boolean): Self = StObject.set(x, "hasType", js.Any.fromFunction1(value))
+      inline def setHasType(value: typings.tern.inferMod.Type => Boolean): Self = StObject.set(x, "hasType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginNode(value: Node): Self = StObject.set(x, "originNode", value.asInstanceOf[js.Any])
+      inline def setOriginNode(value: Node): Self = StObject.set(x, "originNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginNodeUndefined: Self = StObject.set(x, "originNode", js.undefined)
+      inline def setOriginNodeUndefined: Self = StObject.set(x, "originNode", js.undefined)
       
-      @scala.inline
-      def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+      inline def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     }
   }
   

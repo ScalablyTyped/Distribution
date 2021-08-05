@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Displace = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Displace]
+  inline def default(): Displace = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Displace]
   
   @js.native
   trait Displace extends StObject {

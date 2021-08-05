@@ -49,8 +49,7 @@ trait XContextChangeEventMultiplexer
 }
 object XContextChangeEventMultiplexer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addContextChangeEventListener: (XContextChangeEventListener, XInterface) => Unit,
     broadcastContextChangeEvent: (ContextChangeEventObject, XInterface) => Unit,
@@ -63,19 +62,14 @@ object XContextChangeEventMultiplexer {
     __obj.asInstanceOf[XContextChangeEventMultiplexer]
   }
   
-  @scala.inline
-  implicit class XContextChangeEventMultiplexerMutableBuilder[Self <: XContextChangeEventMultiplexer] (val x: Self) extends AnyVal {
+  extension [Self <: XContextChangeEventMultiplexer](x: Self) {
     
-    @scala.inline
-    def setAddContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "addContextChangeEventListener", js.Any.fromFunction2(value))
+    inline def setAddContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "addContextChangeEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBroadcastContextChangeEvent(value: (ContextChangeEventObject, XInterface) => Unit): Self = StObject.set(x, "broadcastContextChangeEvent", js.Any.fromFunction2(value))
+    inline def setBroadcastContextChangeEvent(value: (ContextChangeEventObject, XInterface) => Unit): Self = StObject.set(x, "broadcastContextChangeEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveAllContextChangeEventListeners(value: XContextChangeEventListener => Unit): Self = StObject.set(x, "removeAllContextChangeEventListeners", js.Any.fromFunction1(value))
+    inline def setRemoveAllContextChangeEventListeners(value: XContextChangeEventListener => Unit): Self = StObject.set(x, "removeAllContextChangeEventListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "removeContextChangeEventListener", js.Any.fromFunction2(value))
+    inline def setRemoveContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "removeContextChangeEventListener", js.Any.fromFunction2(value))
   }
 }

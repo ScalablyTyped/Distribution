@@ -59,73 +59,51 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(): Address = {
+  inline def apply(): Address = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setAbsoluteAddress(value: Double): Self = StObject.set(x, "absoluteAddress", value.asInstanceOf[js.Any])
+    inline def setAbsoluteAddress(value: Double): Self = StObject.set(x, "absoluteAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteAddressUndefined: Self = StObject.set(x, "absoluteAddress", js.undefined)
+    inline def setAbsoluteAddressUndefined: Self = StObject.set(x, "absoluteAddress", js.undefined)
     
-    @scala.inline
-    def setFullyQualifiedName(value: String): Self = StObject.set(x, "fullyQualifiedName", value.asInstanceOf[js.Any])
+    inline def setFullyQualifiedName(value: String): Self = StObject.set(x, "fullyQualifiedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyQualifiedNameUndefined: Self = StObject.set(x, "fullyQualifiedName", js.undefined)
+    inline def setFullyQualifiedNameUndefined: Self = StObject.set(x, "fullyQualifiedName", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOffsetFromParent(value: Double): Self = StObject.set(x, "offsetFromParent", value.asInstanceOf[js.Any])
+    inline def setOffsetFromParent(value: Double): Self = StObject.set(x, "offsetFromParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetFromParentUndefined: Self = StObject.set(x, "offsetFromParent", js.undefined)
+    inline def setOffsetFromParentUndefined: Self = StObject.set(x, "offsetFromParent", js.undefined)
     
-    @scala.inline
-    def setParentIndex(value: Double): Self = StObject.set(x, "parentIndex", value.asInstanceOf[js.Any])
+    inline def setParentIndex(value: Double): Self = StObject.set(x, "parentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
+    inline def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRelativeAddress(value: Double): Self = StObject.set(x, "relativeAddress", value.asInstanceOf[js.Any])
+    inline def setRelativeAddress(value: Double): Self = StObject.set(x, "relativeAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeAddressUndefined: Self = StObject.set(x, "relativeAddress", js.undefined)
+    inline def setRelativeAddressUndefined: Self = StObject.set(x, "relativeAddress", js.undefined)
   }
 }

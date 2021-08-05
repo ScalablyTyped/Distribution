@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach(scMasterInstance: typings.socketcluster.mod.^): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(scMasterInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def attach(scMasterInstance: typings.socketcluster.mod.^, options: WatchOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(scMasterInstance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(scMasterInstance: typings.socketcluster.mod.^): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(scMasterInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def attach(scMasterInstance: typings.socketcluster.mod.^, options: WatchOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(scMasterInstance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

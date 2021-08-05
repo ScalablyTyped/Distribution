@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Double]]
+  inline def apply(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Double]]
   
   @JSImport("battery-level", JSImport.Namespace)
   @js.native

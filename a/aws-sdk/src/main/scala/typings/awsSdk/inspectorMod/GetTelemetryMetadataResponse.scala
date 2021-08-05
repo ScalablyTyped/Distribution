@@ -13,19 +13,15 @@ trait GetTelemetryMetadataResponse extends StObject {
 }
 object GetTelemetryMetadataResponse {
   
-  @scala.inline
-  def apply(telemetryMetadata: TelemetryMetadataList): GetTelemetryMetadataResponse = {
+  inline def apply(telemetryMetadata: TelemetryMetadataList): GetTelemetryMetadataResponse = {
     val __obj = js.Dynamic.literal(telemetryMetadata = telemetryMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTelemetryMetadataResponse]
   }
   
-  @scala.inline
-  implicit class GetTelemetryMetadataResponseMutableBuilder[Self <: GetTelemetryMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTelemetryMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setTelemetryMetadata(value: TelemetryMetadataList): Self = StObject.set(x, "telemetryMetadata", value.asInstanceOf[js.Any])
+    inline def setTelemetryMetadata(value: TelemetryMetadataList): Self = StObject.set(x, "telemetryMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryMetadataVarargs(value: TelemetryMetadata*): Self = StObject.set(x, "telemetryMetadata", js.Array(value :_*))
+    inline def setTelemetryMetadataVarargs(value: TelemetryMetadata*): Self = StObject.set(x, "telemetryMetadata", js.Array(value :_*))
   }
 }

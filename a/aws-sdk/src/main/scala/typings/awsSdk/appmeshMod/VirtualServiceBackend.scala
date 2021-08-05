@@ -18,22 +18,17 @@ trait VirtualServiceBackend extends StObject {
 }
 object VirtualServiceBackend {
   
-  @scala.inline
-  def apply(virtualServiceName: ServiceName): VirtualServiceBackend = {
+  inline def apply(virtualServiceName: ServiceName): VirtualServiceBackend = {
     val __obj = js.Dynamic.literal(virtualServiceName = virtualServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualServiceBackend]
   }
   
-  @scala.inline
-  implicit class VirtualServiceBackendMutableBuilder[Self <: VirtualServiceBackend] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceBackend](x: Self) {
     
-    @scala.inline
-    def setClientPolicy(value: ClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
+    inline def setClientPolicy(value: ClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientPolicyUndefined: Self = StObject.set(x, "clientPolicy", js.undefined)
+    inline def setClientPolicyUndefined: Self = StObject.set(x, "clientPolicy", js.undefined)
     
-    @scala.inline
-    def setVirtualServiceName(value: ServiceName): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
+    inline def setVirtualServiceName(value: ServiceName): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
   }
 }

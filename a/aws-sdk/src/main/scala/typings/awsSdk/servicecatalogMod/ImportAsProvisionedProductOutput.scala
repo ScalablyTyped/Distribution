@@ -10,19 +10,15 @@ trait ImportAsProvisionedProductOutput extends StObject {
 }
 object ImportAsProvisionedProductOutput {
   
-  @scala.inline
-  def apply(): ImportAsProvisionedProductOutput = {
+  inline def apply(): ImportAsProvisionedProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportAsProvisionedProductOutput]
   }
   
-  @scala.inline
-  implicit class ImportAsProvisionedProductOutputMutableBuilder[Self <: ImportAsProvisionedProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAsProvisionedProductOutput](x: Self) {
     
-    @scala.inline
-    def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
+    inline def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDetailUndefined: Self = StObject.set(x, "RecordDetail", js.undefined)
+    inline def setRecordDetailUndefined: Self = StObject.set(x, "RecordDetail", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait SliceClickEventUIParam extends StObject {
 }
 object SliceClickEventUIParam {
   
-  @scala.inline
-  def apply(): SliceClickEventUIParam = {
+  inline def apply(): SliceClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliceClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class SliceClickEventUIParamMutableBuilder[Self <: SliceClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SliceClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
-    @scala.inline
-    def setSlice(value: js.Any): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: js.Any): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

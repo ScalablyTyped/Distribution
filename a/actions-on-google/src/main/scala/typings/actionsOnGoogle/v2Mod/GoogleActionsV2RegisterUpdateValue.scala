@@ -13,19 +13,15 @@ trait GoogleActionsV2RegisterUpdateValue extends StObject {
 }
 object GoogleActionsV2RegisterUpdateValue {
   
-  @scala.inline
-  def apply(): GoogleActionsV2RegisterUpdateValue = {
+  inline def apply(): GoogleActionsV2RegisterUpdateValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2RegisterUpdateValue]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2RegisterUpdateValueMutableBuilder[Self <: GoogleActionsV2RegisterUpdateValue] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2RegisterUpdateValue](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GoogleActionsV2RegisterUpdateValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleActionsV2RegisterUpdateValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

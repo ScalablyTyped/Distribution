@@ -22,8 +22,7 @@ trait VoiceCommandResponse extends StObject {
 }
 object VoiceCommandResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appLaunchArgument: String,
     message: VoiceCommandUserMessage,
     repeatMessage: VoiceCommandUserMessage,
@@ -33,19 +32,14 @@ object VoiceCommandResponse {
     __obj.asInstanceOf[VoiceCommandResponse]
   }
   
-  @scala.inline
-  implicit class VoiceCommandResponseMutableBuilder[Self <: VoiceCommandResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandResponse](x: Self) {
     
-    @scala.inline
-    def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
+    inline def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: VoiceCommandUserMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: VoiceCommandUserMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatMessage(value: VoiceCommandUserMessage): Self = StObject.set(x, "repeatMessage", value.asInstanceOf[js.Any])
+    inline def setRepeatMessage(value: VoiceCommandUserMessage): Self = StObject.set(x, "repeatMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceCommandContentTiles(value: IVector[VoiceCommandContentTile]): Self = StObject.set(x, "voiceCommandContentTiles", value.asInstanceOf[js.Any])
+    inline def setVoiceCommandContentTiles(value: IVector[VoiceCommandContentTile]): Self = StObject.set(x, "voiceCommandContentTiles", value.asInstanceOf[js.Any])
   }
 }

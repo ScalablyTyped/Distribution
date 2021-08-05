@@ -10,6 +10,5 @@ object ss7ops {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isupToJson(proto: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isup_to_json")(proto.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def isupToJson(proto: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isup_to_json")(proto.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

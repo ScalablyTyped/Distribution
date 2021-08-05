@@ -18,25 +18,19 @@ trait Compliance extends StObject {
 }
 object Compliance {
   
-  @scala.inline
-  def apply(): Compliance = {
+  inline def apply(): Compliance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Compliance]
   }
   
-  @scala.inline
-  implicit class ComplianceMutableBuilder[Self <: Compliance] (val x: Self) extends AnyVal {
+  extension [Self <: Compliance](x: Self) {
     
-    @scala.inline
-    def setComplianceContributorCount(value: ComplianceContributorCount): Self = StObject.set(x, "ComplianceContributorCount", value.asInstanceOf[js.Any])
+    inline def setComplianceContributorCount(value: ComplianceContributorCount): Self = StObject.set(x, "ComplianceContributorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceContributorCountUndefined: Self = StObject.set(x, "ComplianceContributorCount", js.undefined)
+    inline def setComplianceContributorCountUndefined: Self = StObject.set(x, "ComplianceContributorCount", js.undefined)
     
-    @scala.inline
-    def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
+    inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
   }
 }

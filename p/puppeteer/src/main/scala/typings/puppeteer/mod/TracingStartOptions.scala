@@ -14,34 +14,25 @@ trait TracingStartOptions extends StObject {
 }
 object TracingStartOptions {
   
-  @scala.inline
-  def apply(): TracingStartOptions = {
+  inline def apply(): TracingStartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TracingStartOptions]
   }
   
-  @scala.inline
-  implicit class TracingStartOptionsMutableBuilder[Self <: TracingStartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TracingStartOptions](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setScreenshots(value: Boolean): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
+    inline def setScreenshots(value: Boolean): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
+    inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
   }
 }

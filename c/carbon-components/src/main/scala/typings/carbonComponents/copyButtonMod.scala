@@ -30,8 +30,7 @@ object copyButtonMod {
     @JSImport("carbon-components/components/copy-button/copy-button", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -43,20 +42,16 @@ object copyButtonMod {
   }
   object CopyButton {
     
-    @scala.inline
-    def apply(handleAnimationEnd: js.Any => Unit, handleClick: () => Unit): CopyButton = {
+    inline def apply(handleAnimationEnd: js.Any => Unit, handleClick: () => Unit): CopyButton = {
       val __obj = js.Dynamic.literal(handleAnimationEnd = js.Any.fromFunction1(handleAnimationEnd), handleClick = js.Any.fromFunction0(handleClick))
       __obj.asInstanceOf[CopyButton]
     }
     
-    @scala.inline
-    implicit class CopyButtonMutableBuilder[Self <: CopyButton] (val x: Self) extends AnyVal {
+    extension [Self <: CopyButton](x: Self) {
       
-      @scala.inline
-      def setHandleAnimationEnd(value: js.Any => Unit): Self = StObject.set(x, "handleAnimationEnd", js.Any.fromFunction1(value))
+      inline def setHandleAnimationEnd(value: js.Any => Unit): Self = StObject.set(x, "handleAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
+      inline def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
     }
   }
 }

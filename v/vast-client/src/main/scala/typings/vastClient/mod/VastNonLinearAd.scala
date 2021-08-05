@@ -40,8 +40,7 @@ trait VastNonLinearAd extends StObject {
 }
 object VastNonLinearAd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apiFramework: String,
     expandedHeight: String,
     expandedWidth: String,
@@ -57,79 +56,54 @@ object VastNonLinearAd {
     __obj.asInstanceOf[VastNonLinearAd]
   }
   
-  @scala.inline
-  implicit class VastNonLinearAdMutableBuilder[Self <: VastNonLinearAd] (val x: Self) extends AnyVal {
+  extension [Self <: VastNonLinearAd](x: Self) {
     
-    @scala.inline
-    def setAdParameters(value: String): Self = StObject.set(x, "adParameters", value.asInstanceOf[js.Any])
+    inline def setAdParameters(value: String): Self = StObject.set(x, "adParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdParametersNull: Self = StObject.set(x, "adParameters", null)
+    inline def setAdParametersNull: Self = StObject.set(x, "adParameters", null)
     
-    @scala.inline
-    def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
+    inline def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedHeight(value: String): Self = StObject.set(x, "expandedHeight", value.asInstanceOf[js.Any])
+    inline def setExpandedHeight(value: String): Self = StObject.set(x, "expandedHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedWidth(value: String): Self = StObject.set(x, "expandedWidth", value.asInstanceOf[js.Any])
+    inline def setExpandedWidth(value: String): Self = StObject.set(x, "expandedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlResource(value: String): Self = StObject.set(x, "htmlResource", value.asInstanceOf[js.Any])
+    inline def setHtmlResource(value: String): Self = StObject.set(x, "htmlResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlResourceNull: Self = StObject.set(x, "htmlResource", null)
+    inline def setHtmlResourceNull: Self = StObject.set(x, "htmlResource", null)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIframeResource(value: String): Self = StObject.set(x, "iframeResource", value.asInstanceOf[js.Any])
+    inline def setIframeResource(value: String): Self = StObject.set(x, "iframeResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIframeResourceNull: Self = StObject.set(x, "iframeResource", null)
+    inline def setIframeResourceNull: Self = StObject.set(x, "iframeResource", null)
     
-    @scala.inline
-    def setMaintainAspectRatio(value: Boolean): Self = StObject.set(x, "maintainAspectRatio", value.asInstanceOf[js.Any])
+    inline def setMaintainAspectRatio(value: Boolean): Self = StObject.set(x, "maintainAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSuggestedDuration(value: Double): Self = StObject.set(x, "minSuggestedDuration", value.asInstanceOf[js.Any])
+    inline def setMinSuggestedDuration(value: Double): Self = StObject.set(x, "minSuggestedDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonLinearClickThroughURLTemplate(value: String): Self = StObject.set(x, "nonLinearClickThroughURLTemplate", value.asInstanceOf[js.Any])
+    inline def setNonLinearClickThroughURLTemplate(value: String): Self = StObject.set(x, "nonLinearClickThroughURLTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonLinearClickThroughURLTemplateNull: Self = StObject.set(x, "nonLinearClickThroughURLTemplate", null)
+    inline def setNonLinearClickThroughURLTemplateNull: Self = StObject.set(x, "nonLinearClickThroughURLTemplate", null)
     
-    @scala.inline
-    def setNonLinearClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    inline def setNonLinearClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonLinearClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", js.Array(value :_*))
+    inline def setNonLinearClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
+    inline def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticResource(value: String): Self = StObject.set(x, "staticResource", value.asInstanceOf[js.Any])
+    inline def setStaticResource(value: String): Self = StObject.set(x, "staticResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticResourceNull: Self = StObject.set(x, "staticResource", null)
+    inline def setStaticResourceNull: Self = StObject.set(x, "staticResource", null)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

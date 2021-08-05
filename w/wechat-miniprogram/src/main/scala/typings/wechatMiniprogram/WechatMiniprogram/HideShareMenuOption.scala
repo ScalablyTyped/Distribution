@@ -22,40 +22,29 @@ trait HideShareMenuOption extends StObject {
 }
 object HideShareMenuOption {
   
-  @scala.inline
-  def apply(): HideShareMenuOption = {
+  inline def apply(): HideShareMenuOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HideShareMenuOption]
   }
   
-  @scala.inline
-  implicit class HideShareMenuOptionMutableBuilder[Self <: HideShareMenuOption] (val x: Self) extends AnyVal {
+  extension [Self <: HideShareMenuOption](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMenus(value: js.Array[String]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
+    inline def setMenus(value: js.Array[String]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
+    inline def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
     
-    @scala.inline
-    def setMenusVarargs(value: String*): Self = StObject.set(x, "menus", js.Array(value :_*))
+    inline def setMenusVarargs(value: String*): Self = StObject.set(x, "menus", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

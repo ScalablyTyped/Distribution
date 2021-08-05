@@ -14,25 +14,19 @@ trait PartitionCursor extends StObject {
 }
 object PartitionCursor {
   
-  @scala.inline
-  def apply(): PartitionCursor = {
+  inline def apply(): PartitionCursor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionCursor]
   }
   
-  @scala.inline
-  implicit class PartitionCursorMutableBuilder[Self <: PartitionCursor] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionCursor](x: Self) {
     
-    @scala.inline
-    def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
   }
 }

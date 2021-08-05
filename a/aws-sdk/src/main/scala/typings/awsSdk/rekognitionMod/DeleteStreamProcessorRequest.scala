@@ -13,16 +13,13 @@ trait DeleteStreamProcessorRequest extends StObject {
 }
 object DeleteStreamProcessorRequest {
   
-  @scala.inline
-  def apply(Name: StreamProcessorName): DeleteStreamProcessorRequest = {
+  inline def apply(Name: StreamProcessorName): DeleteStreamProcessorRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStreamProcessorRequest]
   }
   
-  @scala.inline
-  implicit class DeleteStreamProcessorRequestMutableBuilder[Self <: DeleteStreamProcessorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStreamProcessorRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

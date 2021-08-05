@@ -27,8 +27,7 @@ object labelWithOptionsDotProtractorDriverMod {
   }
   object LabelWithOptionsDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       dropdownContent: () => DropdownContentDriver,
       element: () => ElementFinder,
@@ -45,14 +44,11 @@ object labelWithOptionsDotProtractorDriverMod {
       __obj.asInstanceOf[LabelWithOptionsDriver]
     }
     
-    @scala.inline
-    implicit class LabelWithOptionsDriverMutableBuilder[Self <: LabelWithOptionsDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LabelWithOptionsDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCheckboxModeOn(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCheckboxModeOn", js.Any.fromFunction0(value))
+      inline def setIsCheckboxModeOn(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCheckboxModeOn", js.Any.fromFunction0(value))
     }
   }
 }

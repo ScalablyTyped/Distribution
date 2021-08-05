@@ -10,7 +10,7 @@ trait HTMLLabelElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLLabelElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLLabelElement_typekey")
   var MSHTMLDotHTMLLabelElement_typekey: HTMLLabelElement = js.native
   
   var accessKey: String = js.native

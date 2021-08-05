@@ -30,46 +30,33 @@ trait StageState extends StObject {
 }
 object StageState {
   
-  @scala.inline
-  def apply(): StageState = {
+  inline def apply(): StageState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StageState]
   }
   
-  @scala.inline
-  implicit class StageStateMutableBuilder[Self <: StageState] (val x: Self) extends AnyVal {
+  extension [Self <: StageState](x: Self) {
     
-    @scala.inline
-    def setActionStates(value: ActionStateList): Self = StObject.set(x, "actionStates", value.asInstanceOf[js.Any])
+    inline def setActionStates(value: ActionStateList): Self = StObject.set(x, "actionStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionStatesUndefined: Self = StObject.set(x, "actionStates", js.undefined)
+    inline def setActionStatesUndefined: Self = StObject.set(x, "actionStates", js.undefined)
     
-    @scala.inline
-    def setActionStatesVarargs(value: ActionState*): Self = StObject.set(x, "actionStates", js.Array(value :_*))
+    inline def setActionStatesVarargs(value: ActionState*): Self = StObject.set(x, "actionStates", js.Array(value :_*))
     
-    @scala.inline
-    def setInboundExecution(value: StageExecution): Self = StObject.set(x, "inboundExecution", value.asInstanceOf[js.Any])
+    inline def setInboundExecution(value: StageExecution): Self = StObject.set(x, "inboundExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundExecutionUndefined: Self = StObject.set(x, "inboundExecution", js.undefined)
+    inline def setInboundExecutionUndefined: Self = StObject.set(x, "inboundExecution", js.undefined)
     
-    @scala.inline
-    def setInboundTransitionState(value: TransitionState): Self = StObject.set(x, "inboundTransitionState", value.asInstanceOf[js.Any])
+    inline def setInboundTransitionState(value: TransitionState): Self = StObject.set(x, "inboundTransitionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundTransitionStateUndefined: Self = StObject.set(x, "inboundTransitionState", js.undefined)
+    inline def setInboundTransitionStateUndefined: Self = StObject.set(x, "inboundTransitionState", js.undefined)
     
-    @scala.inline
-    def setLatestExecution(value: StageExecution): Self = StObject.set(x, "latestExecution", value.asInstanceOf[js.Any])
+    inline def setLatestExecution(value: StageExecution): Self = StObject.set(x, "latestExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestExecutionUndefined: Self = StObject.set(x, "latestExecution", js.undefined)
+    inline def setLatestExecutionUndefined: Self = StObject.set(x, "latestExecution", js.undefined)
     
-    @scala.inline
-    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
   }
 }

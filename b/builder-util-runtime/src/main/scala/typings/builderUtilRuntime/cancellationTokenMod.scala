@@ -26,9 +26,9 @@ object cancellationTokenMod {
   class CancellationToken () extends EventEmitter {
     def this(parent: CancellationToken) = this()
     
-    var _cancelled: js.Any = js.native
+    /* private */ var _cancelled: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
     def cancel(): Unit = js.native
     
@@ -45,12 +45,12 @@ object cancellationTokenMod {
     
     def dispose(): Unit = js.native
     
-    var onCancel: js.Any = js.native
+    /* private */ var onCancel: js.Any = js.native
     
-    var parentCancelHandler: js.Any = js.native
+    /* private */ var parentCancelHandler: js.Any = js.native
     
     def parent_=(value: CancellationToken): Unit = js.native
     
-    var removeParentCancelHandler: js.Any = js.native
+    /* private */ var removeParentCancelHandler: js.Any = js.native
   }
 }

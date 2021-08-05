@@ -86,175 +86,119 @@ trait MarketplaceDeal extends StObject {
 }
 object MarketplaceDeal {
   
-  @scala.inline
-  def apply(): MarketplaceDeal = {
+  inline def apply(): MarketplaceDeal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarketplaceDeal]
   }
   
-  @scala.inline
-  implicit class MarketplaceDealMutableBuilder[Self <: MarketplaceDeal] (val x: Self) extends AnyVal {
+  extension [Self <: MarketplaceDeal](x: Self) {
     
-    @scala.inline
-    def setBuyerPrivateData(value: PrivateData): Self = StObject.set(x, "buyerPrivateData", value.asInstanceOf[js.Any])
+    inline def setBuyerPrivateData(value: PrivateData): Self = StObject.set(x, "buyerPrivateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyerPrivateDataUndefined: Self = StObject.set(x, "buyerPrivateData", js.undefined)
+    inline def setBuyerPrivateDataUndefined: Self = StObject.set(x, "buyerPrivateData", js.undefined)
     
-    @scala.inline
-    def setCreationTimeMs(value: String): Self = StObject.set(x, "creationTimeMs", value.asInstanceOf[js.Any])
+    inline def setCreationTimeMs(value: String): Self = StObject.set(x, "creationTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeMsUndefined: Self = StObject.set(x, "creationTimeMs", js.undefined)
+    inline def setCreationTimeMsUndefined: Self = StObject.set(x, "creationTimeMs", js.undefined)
     
-    @scala.inline
-    def setCreativePreApprovalPolicy(value: String): Self = StObject.set(x, "creativePreApprovalPolicy", value.asInstanceOf[js.Any])
+    inline def setCreativePreApprovalPolicy(value: String): Self = StObject.set(x, "creativePreApprovalPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativePreApprovalPolicyUndefined: Self = StObject.set(x, "creativePreApprovalPolicy", js.undefined)
+    inline def setCreativePreApprovalPolicyUndefined: Self = StObject.set(x, "creativePreApprovalPolicy", js.undefined)
     
-    @scala.inline
-    def setCreativeSafeFrameCompatibility(value: String): Self = StObject.set(x, "creativeSafeFrameCompatibility", value.asInstanceOf[js.Any])
+    inline def setCreativeSafeFrameCompatibility(value: String): Self = StObject.set(x, "creativeSafeFrameCompatibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeSafeFrameCompatibilityUndefined: Self = StObject.set(x, "creativeSafeFrameCompatibility", js.undefined)
+    inline def setCreativeSafeFrameCompatibilityUndefined: Self = StObject.set(x, "creativeSafeFrameCompatibility", js.undefined)
     
-    @scala.inline
-    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
+    inline def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
+    inline def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
     
-    @scala.inline
-    def setDealServingMetadata(value: DealServingMetadata): Self = StObject.set(x, "dealServingMetadata", value.asInstanceOf[js.Any])
+    inline def setDealServingMetadata(value: DealServingMetadata): Self = StObject.set(x, "dealServingMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealServingMetadataUndefined: Self = StObject.set(x, "dealServingMetadata", js.undefined)
+    inline def setDealServingMetadataUndefined: Self = StObject.set(x, "dealServingMetadata", js.undefined)
     
-    @scala.inline
-    def setDeliveryControl(value: DeliveryControl): Self = StObject.set(x, "deliveryControl", value.asInstanceOf[js.Any])
+    inline def setDeliveryControl(value: DeliveryControl): Self = StObject.set(x, "deliveryControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryControlUndefined: Self = StObject.set(x, "deliveryControl", js.undefined)
+    inline def setDeliveryControlUndefined: Self = StObject.set(x, "deliveryControl", js.undefined)
     
-    @scala.inline
-    def setExternalDealId(value: String): Self = StObject.set(x, "externalDealId", value.asInstanceOf[js.Any])
+    inline def setExternalDealId(value: String): Self = StObject.set(x, "externalDealId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalDealIdUndefined: Self = StObject.set(x, "externalDealId", js.undefined)
+    inline def setExternalDealIdUndefined: Self = StObject.set(x, "externalDealId", js.undefined)
     
-    @scala.inline
-    def setFlightEndTimeMs(value: String): Self = StObject.set(x, "flightEndTimeMs", value.asInstanceOf[js.Any])
+    inline def setFlightEndTimeMs(value: String): Self = StObject.set(x, "flightEndTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlightEndTimeMsUndefined: Self = StObject.set(x, "flightEndTimeMs", js.undefined)
+    inline def setFlightEndTimeMsUndefined: Self = StObject.set(x, "flightEndTimeMs", js.undefined)
     
-    @scala.inline
-    def setFlightStartTimeMs(value: String): Self = StObject.set(x, "flightStartTimeMs", value.asInstanceOf[js.Any])
+    inline def setFlightStartTimeMs(value: String): Self = StObject.set(x, "flightStartTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlightStartTimeMsUndefined: Self = StObject.set(x, "flightStartTimeMs", js.undefined)
+    inline def setFlightStartTimeMsUndefined: Self = StObject.set(x, "flightStartTimeMs", js.undefined)
     
-    @scala.inline
-    def setInventoryDescription(value: String): Self = StObject.set(x, "inventoryDescription", value.asInstanceOf[js.Any])
+    inline def setInventoryDescription(value: String): Self = StObject.set(x, "inventoryDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryDescriptionUndefined: Self = StObject.set(x, "inventoryDescription", js.undefined)
+    inline def setInventoryDescriptionUndefined: Self = StObject.set(x, "inventoryDescription", js.undefined)
     
-    @scala.inline
-    def setIsRfpTemplate(value: Boolean): Self = StObject.set(x, "isRfpTemplate", value.asInstanceOf[js.Any])
+    inline def setIsRfpTemplate(value: Boolean): Self = StObject.set(x, "isRfpTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRfpTemplateUndefined: Self = StObject.set(x, "isRfpTemplate", js.undefined)
+    inline def setIsRfpTemplateUndefined: Self = StObject.set(x, "isRfpTemplate", js.undefined)
     
-    @scala.inline
-    def setIsSetupComplete(value: Boolean): Self = StObject.set(x, "isSetupComplete", value.asInstanceOf[js.Any])
+    inline def setIsSetupComplete(value: Boolean): Self = StObject.set(x, "isSetupComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSetupCompleteUndefined: Self = StObject.set(x, "isSetupComplete", js.undefined)
+    inline def setIsSetupCompleteUndefined: Self = StObject.set(x, "isSetupComplete", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTimeMs(value: String): Self = StObject.set(x, "lastUpdateTimeMs", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTimeMs(value: String): Self = StObject.set(x, "lastUpdateTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeMsUndefined: Self = StObject.set(x, "lastUpdateTimeMs", js.undefined)
+    inline def setLastUpdateTimeMsUndefined: Self = StObject.set(x, "lastUpdateTimeMs", js.undefined)
     
-    @scala.inline
-    def setMakegoodRequestedReason(value: String): Self = StObject.set(x, "makegoodRequestedReason", value.asInstanceOf[js.Any])
+    inline def setMakegoodRequestedReason(value: String): Self = StObject.set(x, "makegoodRequestedReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakegoodRequestedReasonUndefined: Self = StObject.set(x, "makegoodRequestedReason", js.undefined)
+    inline def setMakegoodRequestedReasonUndefined: Self = StObject.set(x, "makegoodRequestedReason", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setProductRevisionNumber(value: String): Self = StObject.set(x, "productRevisionNumber", value.asInstanceOf[js.Any])
+    inline def setProductRevisionNumber(value: String): Self = StObject.set(x, "productRevisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductRevisionNumberUndefined: Self = StObject.set(x, "productRevisionNumber", js.undefined)
+    inline def setProductRevisionNumberUndefined: Self = StObject.set(x, "productRevisionNumber", js.undefined)
     
-    @scala.inline
-    def setProgrammaticCreativeSource(value: String): Self = StObject.set(x, "programmaticCreativeSource", value.asInstanceOf[js.Any])
+    inline def setProgrammaticCreativeSource(value: String): Self = StObject.set(x, "programmaticCreativeSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgrammaticCreativeSourceUndefined: Self = StObject.set(x, "programmaticCreativeSource", js.undefined)
+    inline def setProgrammaticCreativeSourceUndefined: Self = StObject.set(x, "programmaticCreativeSource", js.undefined)
     
-    @scala.inline
-    def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
+    inline def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     
-    @scala.inline
-    def setSellerContacts(value: js.Array[ContactInformation]): Self = StObject.set(x, "sellerContacts", value.asInstanceOf[js.Any])
+    inline def setSellerContacts(value: js.Array[ContactInformation]): Self = StObject.set(x, "sellerContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerContactsUndefined: Self = StObject.set(x, "sellerContacts", js.undefined)
+    inline def setSellerContactsUndefined: Self = StObject.set(x, "sellerContacts", js.undefined)
     
-    @scala.inline
-    def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value :_*))
+    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value :_*))
     
-    @scala.inline
-    def setSharedTargetings(value: js.Array[SharedTargeting]): Self = StObject.set(x, "sharedTargetings", value.asInstanceOf[js.Any])
+    inline def setSharedTargetings(value: js.Array[SharedTargeting]): Self = StObject.set(x, "sharedTargetings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedTargetingsUndefined: Self = StObject.set(x, "sharedTargetings", js.undefined)
+    inline def setSharedTargetingsUndefined: Self = StObject.set(x, "sharedTargetings", js.undefined)
     
-    @scala.inline
-    def setSharedTargetingsVarargs(value: SharedTargeting*): Self = StObject.set(x, "sharedTargetings", js.Array(value :_*))
+    inline def setSharedTargetingsVarargs(value: SharedTargeting*): Self = StObject.set(x, "sharedTargetings", js.Array(value :_*))
     
-    @scala.inline
-    def setSyndicationProduct(value: String): Self = StObject.set(x, "syndicationProduct", value.asInstanceOf[js.Any])
+    inline def setSyndicationProduct(value: String): Self = StObject.set(x, "syndicationProduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyndicationProductUndefined: Self = StObject.set(x, "syndicationProduct", js.undefined)
+    inline def setSyndicationProductUndefined: Self = StObject.set(x, "syndicationProduct", js.undefined)
     
-    @scala.inline
-    def setTerms(value: DealTerms): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: DealTerms): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
-    @scala.inline
-    def setWebPropertyCode(value: String): Self = StObject.set(x, "webPropertyCode", value.asInstanceOf[js.Any])
+    inline def setWebPropertyCode(value: String): Self = StObject.set(x, "webPropertyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyCodeUndefined: Self = StObject.set(x, "webPropertyCode", js.undefined)
+    inline def setWebPropertyCodeUndefined: Self = StObject.set(x, "webPropertyCode", js.undefined)
   }
 }

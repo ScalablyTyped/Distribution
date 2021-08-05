@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LDMLPluralRule extends StObject
 object LDMLPluralRule {
   
-  @scala.inline
-  def few: typings.std.stdStrings.few = "few".asInstanceOf[typings.std.stdStrings.few]
+  inline def few: typings.std.stdStrings.few = "few".asInstanceOf[typings.std.stdStrings.few]
   
-  @scala.inline
-  def many: typings.std.stdStrings.many = "many".asInstanceOf[typings.std.stdStrings.many]
+  inline def many: typings.std.stdStrings.many = "many".asInstanceOf[typings.std.stdStrings.many]
   
-  @scala.inline
-  def one: typings.std.stdStrings.one = "one".asInstanceOf[typings.std.stdStrings.one]
+  inline def one: typings.std.stdStrings.one = "one".asInstanceOf[typings.std.stdStrings.one]
   
-  @scala.inline
-  def other: typings.std.stdStrings.other = "other".asInstanceOf[typings.std.stdStrings.other]
+  inline def other: typings.std.stdStrings.other = "other".asInstanceOf[typings.std.stdStrings.other]
   
-  @scala.inline
-  def two: typings.std.stdStrings.two = "two".asInstanceOf[typings.std.stdStrings.two]
+  inline def two: typings.std.stdStrings.two = "two".asInstanceOf[typings.std.stdStrings.two]
   
-  @scala.inline
-  def zero: typings.std.stdStrings.zero = "zero".asInstanceOf[typings.std.stdStrings.zero]
+  inline def zero: typings.std.stdStrings.zero = "zero".asInstanceOf[typings.std.stdStrings.zero]
 }

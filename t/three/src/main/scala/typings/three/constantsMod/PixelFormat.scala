@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait PixelFormat extends StObject
 object PixelFormat {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[PixelFormat & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("PixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[PixelFormat & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[PixelFormat & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("PixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[PixelFormat & scala.Nothing]]
 }

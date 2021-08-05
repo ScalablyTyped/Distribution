@@ -16,16 +16,13 @@ trait TitleChangedEvent
 }
 object TitleChangedEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, Title: String): TitleChangedEvent = {
+  inline def apply(Source: XInterface, Title: String): TitleChangedEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleChangedEvent]
   }
   
-  @scala.inline
-  implicit class TitleChangedEventMutableBuilder[Self <: TitleChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TitleChangedEvent](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

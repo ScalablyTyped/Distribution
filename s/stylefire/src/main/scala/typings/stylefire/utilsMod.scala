@@ -10,6 +10,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def camelToDash(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelToDash")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelToDash(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelToDash")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -12,8 +12,7 @@ trait GetItemInput
      with typings.awsSdkClientDynamodbBrowser.typesGetItemInputMod.GetItemInput
 object GetItemInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
     TableName: String
   ): GetItemInput = {

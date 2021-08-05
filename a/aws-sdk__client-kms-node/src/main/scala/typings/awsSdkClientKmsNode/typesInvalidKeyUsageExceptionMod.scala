@@ -22,17 +22,14 @@ object typesInvalidKeyUsageExceptionMod {
   }
   object InvalidKeyUsageException {
     
-    @scala.inline
-    def apply(): InvalidKeyUsageException = {
+    inline def apply(): InvalidKeyUsageException = {
       val __obj = js.Dynamic.literal(name = "InvalidKeyUsageException")
       __obj.asInstanceOf[InvalidKeyUsageException]
     }
     
-    @scala.inline
-    implicit class InvalidKeyUsageExceptionMutableBuilder[Self <: InvalidKeyUsageException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidKeyUsageException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidKeyUsageException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidKeyUsageException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +42,16 @@ object typesInvalidKeyUsageExceptionMod {
   }
   object InvalidKeyUsageExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidKeyUsageExceptionDetails = {
+    inline def apply(): InvalidKeyUsageExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidKeyUsageExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidKeyUsageExceptionDetailsMutableBuilder[Self <: InvalidKeyUsageExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidKeyUsageExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

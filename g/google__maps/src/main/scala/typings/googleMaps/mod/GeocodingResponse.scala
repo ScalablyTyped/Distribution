@@ -25,25 +25,19 @@ trait GeocodingResponse[STATUSES] extends StObject {
 }
 object GeocodingResponse {
   
-  @scala.inline
-  def apply[STATUSES](error_message: String, results: js.Array[GeocodingResult], status: STATUSES): GeocodingResponse[STATUSES] = {
+  inline def apply[STATUSES](error_message: String, results: js.Array[GeocodingResult], status: STATUSES): GeocodingResponse[STATUSES] = {
     val __obj = js.Dynamic.literal(error_message = error_message.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodingResponse[STATUSES]]
   }
   
-  @scala.inline
-  implicit class GeocodingResponseMutableBuilder[Self <: GeocodingResponse[?], STATUSES] (val x: Self & GeocodingResponse[STATUSES]) extends AnyVal {
+  extension [Self <: GeocodingResponse[?], STATUSES](x: Self & GeocodingResponse[STATUSES]) {
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[GeocodingResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[GeocodingResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: GeocodingResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GeocodingResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: STATUSES): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: STATUSES): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

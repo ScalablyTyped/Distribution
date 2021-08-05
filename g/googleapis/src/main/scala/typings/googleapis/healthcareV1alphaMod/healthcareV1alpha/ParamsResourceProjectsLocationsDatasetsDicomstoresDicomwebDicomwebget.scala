@@ -31,31 +31,23 @@ trait ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget
 }
 object ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget = {
+  inline def apply(): ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebgetMutableBuilder[Self <: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDicomWebPath(value: String): Self = StObject.set(x, "dicomWebPath", value.asInstanceOf[js.Any])
+    inline def setDicomWebPath(value: String): Self = StObject.set(x, "dicomWebPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDicomWebPathUndefined: Self = StObject.set(x, "dicomWebPath", js.undefined)
+    inline def setDicomWebPathUndefined: Self = StObject.set(x, "dicomWebPath", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ trait XContentCreator
 }
 object XContentCreator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createNewContent: ContentInfo => XContent,
     queryCreatableContentsInfo: () => SafeArray[ContentInfo],
@@ -50,13 +49,10 @@ object XContentCreator {
     __obj.asInstanceOf[XContentCreator]
   }
   
-  @scala.inline
-  implicit class XContentCreatorMutableBuilder[Self <: XContentCreator] (val x: Self) extends AnyVal {
+  extension [Self <: XContentCreator](x: Self) {
     
-    @scala.inline
-    def setCreateNewContent(value: ContentInfo => XContent): Self = StObject.set(x, "createNewContent", js.Any.fromFunction1(value))
+    inline def setCreateNewContent(value: ContentInfo => XContent): Self = StObject.set(x, "createNewContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryCreatableContentsInfo(value: () => SafeArray[ContentInfo]): Self = StObject.set(x, "queryCreatableContentsInfo", js.Any.fromFunction0(value))
+    inline def setQueryCreatableContentsInfo(value: () => SafeArray[ContentInfo]): Self = StObject.set(x, "queryCreatableContentsInfo", js.Any.fromFunction0(value))
   }
 }

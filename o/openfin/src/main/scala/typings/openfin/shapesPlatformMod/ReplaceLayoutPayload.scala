@@ -13,19 +13,15 @@ trait ReplaceLayoutPayload extends StObject {
 }
 object ReplaceLayoutPayload {
   
-  @scala.inline
-  def apply(opts: ReplaceLayoutOpts, target: Identity): ReplaceLayoutPayload = {
+  inline def apply(opts: ReplaceLayoutOpts, target: Identity): ReplaceLayoutPayload = {
     val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceLayoutPayload]
   }
   
-  @scala.inline
-  implicit class ReplaceLayoutPayloadMutableBuilder[Self <: ReplaceLayoutPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceLayoutPayload](x: Self) {
     
-    @scala.inline
-    def setOpts(value: ReplaceLayoutOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: ReplaceLayoutOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

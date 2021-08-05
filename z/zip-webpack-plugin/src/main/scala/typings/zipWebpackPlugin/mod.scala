@@ -85,74 +85,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setFileOptions(value: fileOptions): Self = StObject.set(x, "fileOptions", value.asInstanceOf[js.Any])
+      inline def setFileOptions(value: fileOptions): Self = StObject.set(x, "fileOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileOptionsUndefined: Self = StObject.set(x, "fileOptions", js.undefined)
+      inline def setFileOptionsUndefined: Self = StObject.set(x, "fileOptions", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathMapper(value: /* assetPath */ String => String): Self = StObject.set(x, "pathMapper", js.Any.fromFunction1(value))
+      inline def setPathMapper(value: /* assetPath */ String => String): Self = StObject.set(x, "pathMapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPathMapperUndefined: Self = StObject.set(x, "pathMapper", js.undefined)
+      inline def setPathMapperUndefined: Self = StObject.set(x, "pathMapper", js.undefined)
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setZipOptions(value: zipOptions): Self = StObject.set(x, "zipOptions", value.asInstanceOf[js.Any])
+      inline def setZipOptions(value: zipOptions): Self = StObject.set(x, "zipOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipOptionsUndefined: Self = StObject.set(x, "zipOptions", js.undefined)
+      inline def setZipOptionsUndefined: Self = StObject.set(x, "zipOptions", js.undefined)
     }
   }
   
@@ -169,19 +147,16 @@ object mod {
   }
   object ZipPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
     ): ZipPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[ZipPlugin]
     }
     
-    @scala.inline
-    implicit class ZipPluginMutableBuilder[Self <: ZipPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ZipPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -215,38 +190,28 @@ object mod {
   }
   object fileOptions {
     
-    @scala.inline
-    def apply(): fileOptions = {
+    inline def apply(): fileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[fileOptions]
     }
     
-    @scala.inline
-    implicit class fileOptionsMutableBuilder[Self <: fileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: fileOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
+      inline def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
+      inline def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }
   }
   
@@ -260,20 +225,16 @@ object mod {
   }
   object zipOptions {
     
-    @scala.inline
-    def apply(): zipOptions = {
+    inline def apply(): zipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[zipOptions]
     }
     
-    @scala.inline
-    implicit class zipOptionsMutableBuilder[Self <: zipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: zipOptions](x: Self) {
       
-      @scala.inline
-      def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
+      inline def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
+      inline def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
     }
   }
 }

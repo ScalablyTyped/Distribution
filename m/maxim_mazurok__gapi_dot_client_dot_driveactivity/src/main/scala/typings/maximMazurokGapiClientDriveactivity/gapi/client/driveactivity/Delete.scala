@@ -11,19 +11,15 @@ trait Delete extends StObject {
 }
 object Delete {
   
-  @scala.inline
-  def apply(): Delete = {
+  inline def apply(): Delete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Delete]
   }
   
-  @scala.inline
-  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+  extension [Self <: Delete](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

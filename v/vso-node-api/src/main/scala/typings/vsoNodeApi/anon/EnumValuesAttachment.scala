@@ -10,16 +10,13 @@ trait EnumValuesAttachment extends StObject {
 }
 object EnumValuesAttachment {
   
-  @scala.inline
-  def apply(enumValues: Attachment): EnumValuesAttachment = {
+  inline def apply(enumValues: Attachment): EnumValuesAttachment = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAttachment]
   }
   
-  @scala.inline
-  implicit class EnumValuesAttachmentMutableBuilder[Self <: EnumValuesAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAttachment](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Attachment): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Attachment): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait SplitInt64 extends StObject {
 }
 object SplitInt64 {
   
-  @scala.inline
-  def apply(): SplitInt64 = {
+  inline def apply(): SplitInt64 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitInt64]
   }
   
-  @scala.inline
-  implicit class SplitInt64MutableBuilder[Self <: SplitInt64] (val x: Self) extends AnyVal {
+  extension [Self <: SplitInt64](x: Self) {
     
-    @scala.inline
-    def setHighBits(value: Double): Self = StObject.set(x, "highBits", value.asInstanceOf[js.Any])
+    inline def setHighBits(value: Double): Self = StObject.set(x, "highBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighBitsUndefined: Self = StObject.set(x, "highBits", js.undefined)
+    inline def setHighBitsUndefined: Self = StObject.set(x, "highBits", js.undefined)
     
-    @scala.inline
-    def setLowBits(value: Double): Self = StObject.set(x, "lowBits", value.asInstanceOf[js.Any])
+    inline def setLowBits(value: Double): Self = StObject.set(x, "lowBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowBitsUndefined: Self = StObject.set(x, "lowBits", js.undefined)
+    inline def setLowBitsUndefined: Self = StObject.set(x, "lowBits", js.undefined)
   }
 }

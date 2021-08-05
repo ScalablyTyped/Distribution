@@ -13,19 +13,15 @@ trait DescribeTagsInput extends StObject {
 }
 object DescribeTagsInput {
   
-  @scala.inline
-  def apply(LoadBalancerNames: LoadBalancerNamesMax20): DescribeTagsInput = {
+  inline def apply(LoadBalancerNames: LoadBalancerNamesMax20): DescribeTagsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerNames = LoadBalancerNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsInput]
   }
   
-  @scala.inline
-  implicit class DescribeTagsInputMutableBuilder[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagsInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerNames(value: LoadBalancerNamesMax20): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerNames(value: LoadBalancerNamesMax20): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNamesVarargs(value: AccessPointName*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
+    inline def setLoadBalancerNamesVarargs(value: AccessPointName*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
   }
 }

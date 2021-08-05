@@ -10,16 +10,13 @@ trait Chargeback extends StObject {
 }
 object Chargeback {
   
-  @scala.inline
-  def apply(Chargeback: String): Chargeback = {
+  inline def apply(Chargeback: String): Chargeback = {
     val __obj = js.Dynamic.literal(Chargeback = Chargeback.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chargeback]
   }
   
-  @scala.inline
-  implicit class ChargebackMutableBuilder[Self <: Chargeback] (val x: Self) extends AnyVal {
+  extension [Self <: Chargeback](x: Self) {
     
-    @scala.inline
-    def setChargeback(value: String): Self = StObject.set(x, "Chargeback", value.asInstanceOf[js.Any])
+    inline def setChargeback(value: String): Self = StObject.set(x, "Chargeback", value.asInstanceOf[js.Any])
   }
 }

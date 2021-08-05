@@ -10,18 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(extensionReference: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(extensionReference: String, forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(extensionReference: js.Array[ExtensionReference | String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(extensionReference: js.Array[ExtensionReference | String], forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(extensionReference: ExtensionReference): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(extensionReference: ExtensionReference, forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def default(extensionReference: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(extensionReference: String, forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def default(extensionReference: js.Array[ExtensionReference | String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(extensionReference: js.Array[ExtensionReference | String], forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def default(extensionReference: ExtensionReference): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(extensionReference: ExtensionReference, forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("electron-devtools-installer", "ANGULARJS_BATARANG")
   @js.native
@@ -75,20 +69,16 @@ object mod {
   }
   object ExtensionReference {
     
-    @scala.inline
-    def apply(electron: String, id: String): ExtensionReference = {
+    inline def apply(electron: String, id: String): ExtensionReference = {
       val __obj = js.Dynamic.literal(electron = electron.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtensionReference]
     }
     
-    @scala.inline
-    implicit class ExtensionReferenceMutableBuilder[Self <: ExtensionReference] (val x: Self) extends AnyVal {
+    extension [Self <: ExtensionReference](x: Self) {
       
-      @scala.inline
-      def setElectron(value: String): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
+      inline def setElectron(value: String): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

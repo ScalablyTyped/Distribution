@@ -49,8 +49,7 @@ trait WindowDescriptor extends StObject {
 }
 object WindowDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bounds: Rectangle,
     Parent: XWindowPeer,
     ParentIndex: Double,
@@ -62,25 +61,18 @@ object WindowDescriptor {
     __obj.asInstanceOf[WindowDescriptor]
   }
   
-  @scala.inline
-  implicit class WindowDescriptorMutableBuilder[Self <: WindowDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: WindowDescriptor](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: XWindowPeer): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: XWindowPeer): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIndex(value: Double): Self = StObject.set(x, "ParentIndex", value.asInstanceOf[js.Any])
+    inline def setParentIndex(value: Double): Self = StObject.set(x, "ParentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WindowClass): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WindowClass): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowAttributes(value: Double): Self = StObject.set(x, "WindowAttributes", value.asInstanceOf[js.Any])
+    inline def setWindowAttributes(value: Double): Self = StObject.set(x, "WindowAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowServiceName(value: String): Self = StObject.set(x, "WindowServiceName", value.asInstanceOf[js.Any])
+    inline def setWindowServiceName(value: String): Self = StObject.set(x, "WindowServiceName", value.asInstanceOf[js.Any])
   }
 }

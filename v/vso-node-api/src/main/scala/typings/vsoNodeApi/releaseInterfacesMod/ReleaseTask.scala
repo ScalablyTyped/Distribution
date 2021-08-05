@@ -39,8 +39,7 @@ trait ReleaseTask extends StObject {
 }
 object ReleaseTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agentName: String,
     dateEnded: Date,
     dateStarted: Date,
@@ -61,55 +60,38 @@ object ReleaseTask {
     __obj.asInstanceOf[ReleaseTask]
   }
   
-  @scala.inline
-  implicit class ReleaseTaskMutableBuilder[Self <: ReleaseTask] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseTask](x: Self) {
     
-    @scala.inline
-    def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
+    inline def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateEnded(value: Date): Self = StObject.set(x, "dateEnded", value.asInstanceOf[js.Any])
+    inline def setDateEnded(value: Date): Self = StObject.set(x, "dateEnded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateStarted(value: Date): Self = StObject.set(x, "dateStarted", value.asInstanceOf[js.Any])
+    inline def setDateStarted(value: Date): Self = StObject.set(x, "dateStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+    inline def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
-    @scala.inline
-    def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
+    inline def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
+    inline def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: WorkflowTaskReference): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: WorkflowTaskReference): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineRecordId(value: String): Self = StObject.set(x, "timelineRecordId", value.asInstanceOf[js.Any])
+    inline def setTimelineRecordId(value: String): Self = StObject.set(x, "timelineRecordId", value.asInstanceOf[js.Any])
   }
 }

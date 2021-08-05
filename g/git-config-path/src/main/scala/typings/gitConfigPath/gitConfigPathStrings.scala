@@ -8,6 +8,5 @@ object gitConfigPathStrings {
   
   @js.native
   sealed trait global extends StObject
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
+  inline def global: global = "global".asInstanceOf[global]
 }

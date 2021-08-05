@@ -30,28 +30,21 @@ trait ActionTrigger extends StObject {
 }
 object ActionTrigger {
   
-  @scala.inline
-  def apply(CommandURL: String, HelpURL: String, Image: XBitmap, SubContainer: XIndexContainer, Text: String): ActionTrigger = {
+  inline def apply(CommandURL: String, HelpURL: String, Image: XBitmap, SubContainer: XIndexContainer, Text: String): ActionTrigger = {
     val __obj = js.Dynamic.literal(CommandURL = CommandURL.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], SubContainer = SubContainer.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionTrigger]
   }
   
-  @scala.inline
-  implicit class ActionTriggerMutableBuilder[Self <: ActionTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ActionTrigger](x: Self) {
     
-    @scala.inline
-    def setCommandURL(value: String): Self = StObject.set(x, "CommandURL", value.asInstanceOf[js.Any])
+    inline def setCommandURL(value: String): Self = StObject.set(x, "CommandURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: XBitmap): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: XBitmap): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubContainer(value: XIndexContainer): Self = StObject.set(x, "SubContainer", value.asInstanceOf[js.Any])
+    inline def setSubContainer(value: XIndexContainer): Self = StObject.set(x, "SubContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait UpdateInstanceCustomHealthStatusRequest extends StObject {
 }
 object UpdateInstanceCustomHealthStatusRequest {
   
-  @scala.inline
-  def apply(InstanceId: ResourceId, ServiceId: ResourceId, Status: CustomHealthStatus): UpdateInstanceCustomHealthStatusRequest = {
+  inline def apply(InstanceId: ResourceId, ServiceId: ResourceId, Status: CustomHealthStatus): UpdateInstanceCustomHealthStatusRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], ServiceId = ServiceId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInstanceCustomHealthStatusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateInstanceCustomHealthStatusRequestMutableBuilder[Self <: UpdateInstanceCustomHealthStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInstanceCustomHealthStatusRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: ResourceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: ResourceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: CustomHealthStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CustomHealthStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -26,19 +26,15 @@ trait IFieldDefEx extends StObject {
 }
 object IFieldDefEx {
   
-  @scala.inline
-  def apply(qName: String, qType: FieldDefExType): IFieldDefEx = {
+  inline def apply(qName: String, qType: FieldDefExType): IFieldDefEx = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldDefEx]
   }
   
-  @scala.inline
-  implicit class IFieldDefExMutableBuilder[Self <: IFieldDefEx] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldDefEx](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: FieldDefExType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: FieldDefExType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

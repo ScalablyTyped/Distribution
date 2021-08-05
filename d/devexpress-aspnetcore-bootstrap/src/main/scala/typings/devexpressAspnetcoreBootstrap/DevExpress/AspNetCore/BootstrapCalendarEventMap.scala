@@ -28,8 +28,7 @@ trait BootstrapCalendarEventMap
 }
 object BootstrapCalendarEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginCallback: BeginCallbackEventArgs,
     callbackError: CallbackErrorEventArgs,
     customDisabledDate: CalendarCustomDisabledDateEventArgs,
@@ -49,34 +48,24 @@ object BootstrapCalendarEventMap {
     __obj.asInstanceOf[BootstrapCalendarEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapCalendarEventMapMutableBuilder[Self <: BootstrapCalendarEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapCalendarEventMap](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDisabledDate(value: CalendarCustomDisabledDateEventArgs): Self = StObject.set(x, "customDisabledDate", value.asInstanceOf[js.Any])
+    inline def setCustomDisabledDate(value: CalendarCustomDisabledDateEventArgs): Self = StObject.set(x, "customDisabledDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
+    inline def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
+    inline def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
+    inline def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
+    inline def setSelectionChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleMonthChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "visibleMonthChanged", value.asInstanceOf[js.Any])
+    inline def setVisibleMonthChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "visibleMonthChanged", value.asInstanceOf[js.Any])
   }
 }

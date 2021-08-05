@@ -25,8 +25,7 @@ trait WiFiDirectAdvertisement extends StObject {
 }
 object WiFiDirectAdvertisement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     informationElements: IVector[WiFiDirectInformationElement],
     isAutonomousGroupOwnerEnabled: Boolean,
     legacySettings: WiFiDirectLegacySettings,
@@ -37,22 +36,16 @@ object WiFiDirectAdvertisement {
     __obj.asInstanceOf[WiFiDirectAdvertisement]
   }
   
-  @scala.inline
-  implicit class WiFiDirectAdvertisementMutableBuilder[Self <: WiFiDirectAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectAdvertisement](x: Self) {
     
-    @scala.inline
-    def setInformationElements(value: IVector[WiFiDirectInformationElement]): Self = StObject.set(x, "informationElements", value.asInstanceOf[js.Any])
+    inline def setInformationElements(value: IVector[WiFiDirectInformationElement]): Self = StObject.set(x, "informationElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutonomousGroupOwnerEnabled(value: Boolean): Self = StObject.set(x, "isAutonomousGroupOwnerEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAutonomousGroupOwnerEnabled(value: Boolean): Self = StObject.set(x, "isAutonomousGroupOwnerEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacySettings(value: WiFiDirectLegacySettings): Self = StObject.set(x, "legacySettings", value.asInstanceOf[js.Any])
+    inline def setLegacySettings(value: WiFiDirectLegacySettings): Self = StObject.set(x, "legacySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenStateDiscoverability(value: WiFiDirectAdvertisementListenStateDiscoverability): Self = StObject.set(x, "listenStateDiscoverability", value.asInstanceOf[js.Any])
+    inline def setListenStateDiscoverability(value: WiFiDirectAdvertisementListenStateDiscoverability): Self = StObject.set(x, "listenStateDiscoverability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "supportedConfigurationMethods", value.asInstanceOf[js.Any])
+    inline def setSupportedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "supportedConfigurationMethods", value.asInstanceOf[js.Any])
   }
 }

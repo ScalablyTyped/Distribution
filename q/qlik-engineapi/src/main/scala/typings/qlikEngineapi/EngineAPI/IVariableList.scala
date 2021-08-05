@@ -13,19 +13,15 @@ trait IVariableList extends StObject {
 }
 object IVariableList {
   
-  @scala.inline
-  def apply(qItems: js.Array[INxVariableListItem]): IVariableList = {
+  inline def apply(qItems: js.Array[INxVariableListItem]): IVariableList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVariableList]
   }
   
-  @scala.inline
-  implicit class IVariableListMutableBuilder[Self <: IVariableList] (val x: Self) extends AnyVal {
+  extension [Self <: IVariableList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: js.Array[INxVariableListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: js.Array[INxVariableListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItemsVarargs(value: INxVariableListItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: INxVariableListItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
   }
 }

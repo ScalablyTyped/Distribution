@@ -18,22 +18,17 @@ trait SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress extends S
 }
 object SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgressMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress](x: Self) {
     
-    @scala.inline
-    def setAnnotationProgress(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress]): Self = StObject.set(x, "annotationProgress", value.asInstanceOf[js.Any])
+    inline def setAnnotationProgress(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress]): Self = StObject.set(x, "annotationProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationProgressUndefined: Self = StObject.set(x, "annotationProgress", js.undefined)
+    inline def setAnnotationProgressUndefined: Self = StObject.set(x, "annotationProgress", js.undefined)
     
-    @scala.inline
-    def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value :_*))
+    inline def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value :_*))
   }
 }

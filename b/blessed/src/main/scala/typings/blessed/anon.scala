@@ -14,26 +14,20 @@ object anon {
   }
   object Bg {
     
-    @scala.inline
-    def apply(): Bg = {
+    inline def apply(): Bg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bg]
     }
     
-    @scala.inline
-    implicit class BgMutableBuilder[Self <: Bg] (val x: Self) extends AnyVal {
+    extension [Self <: Bg](x: Self) {
       
-      @scala.inline
-      def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+      inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      @scala.inline
-      def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
+      inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
     }
   }
   
@@ -55,8 +49,7 @@ object anon {
   }
   object BoolCount {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       boolCount: Double,
       dataSize: Double,
       headerSize: Double,
@@ -69,29 +62,21 @@ object anon {
       __obj.asInstanceOf[BoolCount]
     }
     
-    @scala.inline
-    implicit class BoolCountMutableBuilder[Self <: BoolCount] (val x: Self) extends AnyVal {
+    extension [Self <: BoolCount](x: Self) {
       
-      @scala.inline
-      def setBoolCount(value: Double): Self = StObject.set(x, "boolCount", value.asInstanceOf[js.Any])
+      inline def setBoolCount(value: Double): Self = StObject.set(x, "boolCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+      inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderSize(value: Double): Self = StObject.set(x, "headerSize", value.asInstanceOf[js.Any])
+      inline def setHeaderSize(value: Double): Self = StObject.set(x, "headerSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastStrTableOffset(value: Double): Self = StObject.set(x, "lastStrTableOffset", value.asInstanceOf[js.Any])
+      inline def setLastStrTableOffset(value: Double): Self = StObject.set(x, "lastStrTableOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumCount(value: Double): Self = StObject.set(x, "numCount", value.asInstanceOf[js.Any])
+      inline def setNumCount(value: Double): Self = StObject.set(x, "numCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrCount(value: Double): Self = StObject.set(x, "strCount", value.asInstanceOf[js.Any])
+      inline def setStrCount(value: Double): Self = StObject.set(x, "strCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrTableSize(value: Double): Self = StObject.set(x, "strTableSize", value.asInstanceOf[js.Any])
+      inline def setStrTableSize(value: Double): Self = StObject.set(x, "strTableSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +98,7 @@ object anon {
   }
   object Bools {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bools: js.Any,
       desc: String,
       header: DataSize,
@@ -127,32 +111,23 @@ object anon {
       __obj.asInstanceOf[Bools]
     }
     
-    @scala.inline
-    implicit class BoolsMutableBuilder[Self <: Bools] (val x: Self) extends AnyVal {
+    extension [Self <: Bools](x: Self) {
       
-      @scala.inline
-      def setBools(value: js.Any): Self = StObject.set(x, "bools", value.asInstanceOf[js.Any])
+      inline def setBools(value: js.Any): Self = StObject.set(x, "bools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: DataSize): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: DataSize): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setNumbers(value: js.Any): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: js.Any): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrings(value: js.Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: js.Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,32 +141,24 @@ object anon {
   }
   object Ch {
     
-    @scala.inline
-    def apply(): Ch = {
+    inline def apply(): Ch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ch]
     }
     
-    @scala.inline
-    implicit class ChMutableBuilder[Self <: Ch] (val x: Self) extends AnyVal {
+    extension [Self <: Ch](x: Self) {
       
-      @scala.inline
-      def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
+      inline def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
+      inline def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTrack(value: js.Any): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: js.Any): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     }
   }
   
@@ -217,8 +184,7 @@ object anon {
   }
   object DataSize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       boolCount: Double,
       dataSize: Double,
       extended: BoolCount,
@@ -233,35 +199,25 @@ object anon {
       __obj.asInstanceOf[DataSize]
     }
     
-    @scala.inline
-    implicit class DataSizeMutableBuilder[Self <: DataSize] (val x: Self) extends AnyVal {
+    extension [Self <: DataSize](x: Self) {
       
-      @scala.inline
-      def setBoolCount(value: Double): Self = StObject.set(x, "boolCount", value.asInstanceOf[js.Any])
+      inline def setBoolCount(value: Double): Self = StObject.set(x, "boolCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+      inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtended(value: BoolCount): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      inline def setExtended(value: BoolCount): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderSize(value: Double): Self = StObject.set(x, "headerSize", value.asInstanceOf[js.Any])
+      inline def setHeaderSize(value: Double): Self = StObject.set(x, "headerSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagicNumber(value: Boolean): Self = StObject.set(x, "magicNumber", value.asInstanceOf[js.Any])
+      inline def setMagicNumber(value: Boolean): Self = StObject.set(x, "magicNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesSize(value: Double): Self = StObject.set(x, "namesSize", value.asInstanceOf[js.Any])
+      inline def setNamesSize(value: Double): Self = StObject.set(x, "namesSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumCount(value: Double): Self = StObject.set(x, "numCount", value.asInstanceOf[js.Any])
+      inline def setNumCount(value: Double): Self = StObject.set(x, "numCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrCount(value: Double): Self = StObject.set(x, "strCount", value.asInstanceOf[js.Any])
+      inline def setStrCount(value: Double): Self = StObject.set(x, "strCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrTableSize(value: Double): Self = StObject.set(x, "strTableSize", value.asInstanceOf[js.Any])
+      inline def setStrTableSize(value: Double): Self = StObject.set(x, "strTableSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,20 +229,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

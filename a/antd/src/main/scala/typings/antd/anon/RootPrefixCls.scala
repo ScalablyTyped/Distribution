@@ -10,19 +10,15 @@ trait RootPrefixCls extends StObject {
 }
 object RootPrefixCls {
   
-  @scala.inline
-  def apply(): RootPrefixCls = {
+  inline def apply(): RootPrefixCls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RootPrefixCls]
   }
   
-  @scala.inline
-  implicit class RootPrefixClsMutableBuilder[Self <: RootPrefixCls] (val x: Self) extends AnyVal {
+  extension [Self <: RootPrefixCls](x: Self) {
     
-    @scala.inline
-    def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
+    inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
+    inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
   }
 }

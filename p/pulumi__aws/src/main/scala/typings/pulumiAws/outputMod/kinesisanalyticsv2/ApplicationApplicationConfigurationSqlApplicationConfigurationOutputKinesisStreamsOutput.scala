@@ -13,16 +13,13 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesi
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput {
   
-  @scala.inline
-  def apply(resourceArn: String): ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput = {
+  inline def apply(resourceArn: String): ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

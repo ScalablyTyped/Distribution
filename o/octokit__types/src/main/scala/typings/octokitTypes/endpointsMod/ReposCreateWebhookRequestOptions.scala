@@ -20,25 +20,19 @@ trait ReposCreateWebhookRequestOptions extends StObject {
 }
 object ReposCreateWebhookRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposCreateWebhookRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposCreateWebhookRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/hooks")
     __obj.asInstanceOf[ReposCreateWebhookRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposCreateWebhookRequestOptionsMutableBuilder[Self <: ReposCreateWebhookRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateWebhookRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashhooks): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashhooks): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

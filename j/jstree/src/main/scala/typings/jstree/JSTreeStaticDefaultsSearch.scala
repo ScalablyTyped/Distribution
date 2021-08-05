@@ -78,8 +78,7 @@ trait JSTreeStaticDefaultsSearch extends StObject {
 }
 object JSTreeStaticDefaultsSearch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ajax: js.Any,
     case_sensitive: Boolean,
     close_opened_onclear: Boolean,
@@ -93,31 +92,22 @@ object JSTreeStaticDefaultsSearch {
     __obj.asInstanceOf[JSTreeStaticDefaultsSearch]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsSearchMutableBuilder[Self <: JSTreeStaticDefaultsSearch] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsSearch](x: Self) {
     
-    @scala.inline
-    def setAjax(value: js.Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+    inline def setAjax(value: js.Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
+    inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose_opened_onclear(value: Boolean): Self = StObject.set(x, "close_opened_onclear", value.asInstanceOf[js.Any])
+    inline def setClose_opened_onclear(value: Boolean): Self = StObject.set(x, "close_opened_onclear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
+    inline def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch_callback(value: js.Any): Self = StObject.set(x, "search_callback", value.asInstanceOf[js.Any])
+    inline def setSearch_callback(value: js.Any): Self = StObject.set(x, "search_callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch_leaves_only(value: Boolean): Self = StObject.set(x, "search_leaves_only", value.asInstanceOf[js.Any])
+    inline def setSearch_leaves_only(value: Boolean): Self = StObject.set(x, "search_leaves_only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_only_matches(value: Boolean): Self = StObject.set(x, "show_only_matches", value.asInstanceOf[js.Any])
+    inline def setShow_only_matches(value: Boolean): Self = StObject.set(x, "show_only_matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_only_matches_children(value: Boolean): Self = StObject.set(x, "show_only_matches_children", value.asInstanceOf[js.Any])
+    inline def setShow_only_matches_children(value: Boolean): Self = StObject.set(x, "show_only_matches_children", value.asInstanceOf[js.Any])
   }
 }

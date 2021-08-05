@@ -30,8 +30,7 @@ trait FoldableWithIndex2C[F /* <: /* import warning: transforms.QualifyReference
 }
 object FoldableWithIndex2C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E](
     URI: F,
     _E: E,
     foldMap: Monoid[js.Any] => js.Function2[
@@ -53,11 +52,9 @@ object FoldableWithIndex2C {
     __obj.asInstanceOf[FoldableWithIndex2C[F, I, E]]
   }
   
-  @scala.inline
-  implicit class FoldableWithIndex2CMutableBuilder[Self <: FoldableWithIndex2C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E] (val x: Self & (FoldableWithIndex2C[F, I, E])) extends AnyVal {
+  extension [Self <: FoldableWithIndex2C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E](x: Self & (FoldableWithIndex2C[F, I, E])) {
     
-    @scala.inline
-    def setFoldMapWithIndex(
+    inline def setFoldMapWithIndex(
       value: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
           /* f */ js.Function2[/* i */ I, /* a */ js.Any, js.Any], 
@@ -65,13 +62,11 @@ object FoldableWithIndex2C {
         ]
     ): Self = StObject.set(x, "foldMapWithIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduceRightWithIndex(
+    inline def setReduceRightWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceRightWithIndex", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReduceWithIndex(
+    inline def setReduceWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceWithIndex", js.Any.fromFunction3(value))
   }

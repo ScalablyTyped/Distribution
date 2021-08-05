@@ -10,16 +10,13 @@ trait EnumValuesBadRequest extends StObject {
 }
 object EnumValuesBadRequest {
   
-  @scala.inline
-  def apply(enumValues: BadRequest): EnumValuesBadRequest = {
+  inline def apply(enumValues: BadRequest): EnumValuesBadRequest = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBadRequest]
   }
   
-  @scala.inline
-  implicit class EnumValuesBadRequestMutableBuilder[Self <: EnumValuesBadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBadRequest](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: BadRequest): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: BadRequest): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

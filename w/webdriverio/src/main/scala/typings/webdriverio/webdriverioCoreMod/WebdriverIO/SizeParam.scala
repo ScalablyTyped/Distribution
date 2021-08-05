@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SizeParam extends StObject
 object SizeParam {
   
-  @scala.inline
-  def height: typings.webdriverio.webdriverioStrings.height = "height".asInstanceOf[typings.webdriverio.webdriverioStrings.height]
+  inline def height: typings.webdriverio.webdriverioStrings.height = "height".asInstanceOf[typings.webdriverio.webdriverioStrings.height]
   
-  @scala.inline
-  def width: typings.webdriverio.webdriverioStrings.width = "width".asInstanceOf[typings.webdriverio.webdriverioStrings.width]
+  inline def width: typings.webdriverio.webdriverioStrings.width = "width".asInstanceOf[typings.webdriverio.webdriverioStrings.width]
 }

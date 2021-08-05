@@ -12,16 +12,13 @@ trait SceneAnalyzedEventArgs extends StObject {
 }
 object SceneAnalyzedEventArgs {
   
-  @scala.inline
-  def apply(resultFrame: SceneAnalysisEffectFrame): SceneAnalyzedEventArgs = {
+  inline def apply(resultFrame: SceneAnalysisEffectFrame): SceneAnalyzedEventArgs = {
     val __obj = js.Dynamic.literal(resultFrame = resultFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneAnalyzedEventArgs]
   }
   
-  @scala.inline
-  implicit class SceneAnalyzedEventArgsMutableBuilder[Self <: SceneAnalyzedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SceneAnalyzedEventArgs](x: Self) {
     
-    @scala.inline
-    def setResultFrame(value: SceneAnalysisEffectFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
+    inline def setResultFrame(value: SceneAnalysisEffectFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
   }
 }

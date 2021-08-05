@@ -14,19 +14,15 @@ trait ShWorksheet extends StObject {
 }
 object ShWorksheet {
   
-  @scala.inline
-  def apply(Sh: Worksheet, Target: Hyperlink): ShWorksheet = {
+  inline def apply(Sh: Worksheet, Target: Hyperlink): ShWorksheet = {
     val __obj = js.Dynamic.literal(Sh = Sh.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShWorksheet]
   }
   
-  @scala.inline
-  implicit class ShWorksheetMutableBuilder[Self <: ShWorksheet] (val x: Self) extends AnyVal {
+  extension [Self <: ShWorksheet](x: Self) {
     
-    @scala.inline
-    def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
+    inline def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Hyperlink): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Hyperlink): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

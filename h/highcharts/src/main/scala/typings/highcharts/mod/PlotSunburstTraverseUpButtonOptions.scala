@@ -13,19 +13,15 @@ trait PlotSunburstTraverseUpButtonOptions extends StObject {
 }
 object PlotSunburstTraverseUpButtonOptions {
   
-  @scala.inline
-  def apply(): PlotSunburstTraverseUpButtonOptions = {
+  inline def apply(): PlotSunburstTraverseUpButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSunburstTraverseUpButtonOptions]
   }
   
-  @scala.inline
-  implicit class PlotSunburstTraverseUpButtonOptionsMutableBuilder[Self <: PlotSunburstTraverseUpButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSunburstTraverseUpButtonOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: PlotSunburstTraverseUpButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PlotSunburstTraverseUpButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

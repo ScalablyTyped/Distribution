@@ -12,17 +12,14 @@ object anon {
   }
   object OutputId {
     
-    @scala.inline
-    def apply(outputId: String): OutputId = {
+    inline def apply(outputId: String): OutputId = {
       val __obj = js.Dynamic.literal(outputId = outputId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputId]
     }
     
-    @scala.inline
-    implicit class OutputIdMutableBuilder[Self <: OutputId] (val x: Self) extends AnyVal {
+    extension [Self <: OutputId](x: Self) {
       
-      @scala.inline
-      def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
+      inline def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
     }
   }
 }

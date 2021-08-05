@@ -33,9 +33,7 @@ object vector2Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Vector2]
-    @scala.inline
-    def create(x: js.Any, y: js.Any): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    inline def create(): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Vector2]
+    inline def create(x: js.Any, y: js.Any): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Vector2]
   }
 }

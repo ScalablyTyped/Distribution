@@ -20,16 +20,13 @@ trait DesktopCapturer extends StObject {
 }
 object DesktopCapturer {
   
-  @scala.inline
-  def apply(getSources: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): DesktopCapturer = {
+  inline def apply(getSources: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): DesktopCapturer = {
     val __obj = js.Dynamic.literal(getSources = js.Any.fromFunction1(getSources))
     __obj.asInstanceOf[DesktopCapturer]
   }
   
-  @scala.inline
-  implicit class DesktopCapturerMutableBuilder[Self <: DesktopCapturer] (val x: Self) extends AnyVal {
+  extension [Self <: DesktopCapturer](x: Self) {
     
-    @scala.inline
-    def setGetSources(value: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): Self = StObject.set(x, "getSources", js.Any.fromFunction1(value))
+    inline def setGetSources(value: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): Self = StObject.set(x, "getSources", js.Any.fromFunction1(value))
   }
 }

@@ -18,19 +18,15 @@ trait VoiceConnectorItem extends StObject {
 }
 object VoiceConnectorItem {
   
-  @scala.inline
-  def apply(Priority: VoiceConnectorItemPriority, VoiceConnectorId: NonEmptyString): VoiceConnectorItem = {
+  inline def apply(Priority: VoiceConnectorItemPriority, VoiceConnectorId: NonEmptyString): VoiceConnectorItem = {
     val __obj = js.Dynamic.literal(Priority = Priority.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceConnectorItem]
   }
   
-  @scala.inline
-  implicit class VoiceConnectorItemMutableBuilder[Self <: VoiceConnectorItem] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceConnectorItem](x: Self) {
     
-    @scala.inline
-    def setPriority(value: VoiceConnectorItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: VoiceConnectorItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

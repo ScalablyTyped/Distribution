@@ -24,8 +24,7 @@ trait AlwaysShowLogo extends StObject {
 }
 object AlwaysShowLogo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysShowLogo: Boolean,
     hideMainUI: Boolean,
     logoUrl: String,
@@ -39,31 +38,22 @@ object AlwaysShowLogo {
     __obj.asInstanceOf[AlwaysShowLogo]
   }
   
-  @scala.inline
-  implicit class AlwaysShowLogoMutableBuilder[Self <: AlwaysShowLogo] (val x: Self) extends AnyVal {
+  extension [Self <: AlwaysShowLogo](x: Self) {
     
-    @scala.inline
-    def setAlwaysShowLogo(value: Boolean): Self = StObject.set(x, "alwaysShowLogo", value.asInstanceOf[js.Any])
+    inline def setAlwaysShowLogo(value: Boolean): Self = StObject.set(x, "alwaysShowLogo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideMainUI(value: Boolean): Self = StObject.set(x, "hideMainUI", value.asInstanceOf[js.Any])
+    inline def setHideMainUI(value: Boolean): Self = StObject.set(x, "hideMainUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUrl(value: String): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
+    inline def setLogoUrl(value: String): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayButton(value: String): Self = StObject.set(x, "playButton", value.asInstanceOf[js.Any])
+    inline def setPlayButton(value: String): Self = StObject.set(x, "playButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+    inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreload(value: String): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: String): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexts(value: Liveindicatortext): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: Liveindicatortext): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

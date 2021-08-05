@@ -15,19 +15,15 @@ trait TypeofRotator extends StObject {
 }
 object TypeofRotator {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Rotator): TypeofRotator = {
+  inline def apply(Locale: js.Any, fn: Rotator): TypeofRotator = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRotator]
   }
   
-  @scala.inline
-  implicit class TypeofRotatorMutableBuilder[Self <: TypeofRotator] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRotator](x: Self) {
     
-    @scala.inline
-    def setFn(value: Rotator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Rotator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

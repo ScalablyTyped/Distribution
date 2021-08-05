@@ -13,19 +13,15 @@ trait DescribeCampaignResponse extends StObject {
 }
 object DescribeCampaignResponse {
   
-  @scala.inline
-  def apply(): DescribeCampaignResponse = {
+  inline def apply(): DescribeCampaignResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCampaignResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCampaignResponseMutableBuilder[Self <: DescribeCampaignResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCampaignResponse](x: Self) {
     
-    @scala.inline
-    def setCampaign(value: Campaign): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
+    inline def setCampaign(value: Campaign): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
+    inline def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
   }
 }

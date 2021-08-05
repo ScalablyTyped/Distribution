@@ -40,8 +40,7 @@ trait TargetInfo extends StObject {
 }
 object TargetInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attached: Boolean,
     canAccessOpener: Boolean,
     targetId: TargetID,
@@ -54,43 +53,30 @@ object TargetInfo {
     __obj.asInstanceOf[TargetInfo]
   }
   
-  @scala.inline
-  implicit class TargetInfoMutableBuilder[Self <: TargetInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TargetInfo](x: Self) {
     
-    @scala.inline
-    def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+    inline def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
+    inline def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
-    @scala.inline
-    def setCanAccessOpener(value: Boolean): Self = StObject.set(x, "canAccessOpener", value.asInstanceOf[js.Any])
+    inline def setCanAccessOpener(value: Boolean): Self = StObject.set(x, "canAccessOpener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenerFrameId(value: FrameId): Self = StObject.set(x, "openerFrameId", value.asInstanceOf[js.Any])
+    inline def setOpenerFrameId(value: FrameId): Self = StObject.set(x, "openerFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenerFrameIdUndefined: Self = StObject.set(x, "openerFrameId", js.undefined)
+    inline def setOpenerFrameIdUndefined: Self = StObject.set(x, "openerFrameId", js.undefined)
     
-    @scala.inline
-    def setOpenerId(value: TargetID): Self = StObject.set(x, "openerId", value.asInstanceOf[js.Any])
+    inline def setOpenerId(value: TargetID): Self = StObject.set(x, "openerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenerIdUndefined: Self = StObject.set(x, "openerId", js.undefined)
+    inline def setOpenerIdUndefined: Self = StObject.set(x, "openerId", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ExportToCSVOption extends StObject {
 }
 object ExportToCSVOption {
   
-  @scala.inline
-  def apply(): ExportToCSVOption = {
+  inline def apply(): ExportToCSVOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportToCSVOption]
   }
   
-  @scala.inline
-  implicit class ExportToCSVOptionMutableBuilder[Self <: ExportToCSVOption] (val x: Self) extends AnyVal {
+  extension [Self <: ExportToCSVOption](x: Self) {
     
-    @scala.inline
-    def setAvailabilityStatus(value: DashboardBehavior): Self = StObject.set(x, "AvailabilityStatus", value.asInstanceOf[js.Any])
+    inline def setAvailabilityStatus(value: DashboardBehavior): Self = StObject.set(x, "AvailabilityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityStatusUndefined: Self = StObject.set(x, "AvailabilityStatus", js.undefined)
+    inline def setAvailabilityStatusUndefined: Self = StObject.set(x, "AvailabilityStatus", js.undefined)
   }
 }

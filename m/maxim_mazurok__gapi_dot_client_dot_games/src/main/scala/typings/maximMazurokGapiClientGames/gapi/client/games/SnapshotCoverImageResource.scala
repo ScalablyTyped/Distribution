@@ -34,49 +34,35 @@ trait SnapshotCoverImageResource extends StObject {
 }
 object SnapshotCoverImageResource {
   
-  @scala.inline
-  def apply(): SnapshotCoverImageResource = {
+  inline def apply(): SnapshotCoverImageResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotCoverImageResource]
   }
   
-  @scala.inline
-  implicit class SnapshotCoverImageResourceMutableBuilder[Self <: SnapshotCoverImageResource] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotCoverImageResource](x: Self) {
     
-    @scala.inline
-    def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
+    inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
+    inline def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
     
-    @scala.inline
-    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

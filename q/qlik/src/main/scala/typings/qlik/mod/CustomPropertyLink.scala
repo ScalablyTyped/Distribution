@@ -16,22 +16,17 @@ trait CustomPropertyLink
 }
 object CustomPropertyLink {
   
-  @scala.inline
-  def apply(): CustomPropertyLink = {
+  inline def apply(): CustomPropertyLink = {
     val __obj = js.Dynamic.literal(component = "link")
     __obj.asInstanceOf[CustomPropertyLink]
   }
   
-  @scala.inline
-  implicit class CustomPropertyLinkMutableBuilder[Self <: CustomPropertyLink] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyLink](x: Self) {
     
-    @scala.inline
-    def setComponent(value: link): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: link): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

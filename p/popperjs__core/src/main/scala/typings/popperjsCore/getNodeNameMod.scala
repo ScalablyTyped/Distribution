@@ -12,10 +12,7 @@ object getNodeNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[String | Null]]
-  @scala.inline
-  def default(element: Window): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
-  @scala.inline
-  def default(element: Node): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
+  inline def default(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[String | Null]]
+  inline def default(element: Window): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
+  inline def default(element: Node): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
 }

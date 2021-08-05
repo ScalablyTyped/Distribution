@@ -21,13 +21,11 @@ object PivotGrid {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.PivotGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.PivotGrid]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.PivotGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.PivotGrid]
   
   /* static member */
   @JSGlobal("kendo.ui.PivotGrid.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.PivotGrid = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.PivotGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.PivotGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

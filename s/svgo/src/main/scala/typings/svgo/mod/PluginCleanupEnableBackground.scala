@@ -12,16 +12,13 @@ trait PluginCleanupEnableBackground
 }
 object PluginCleanupEnableBackground {
   
-  @scala.inline
-  def apply(cleanupEnableBackground: Boolean | js.Object): PluginCleanupEnableBackground = {
+  inline def apply(cleanupEnableBackground: Boolean | js.Object): PluginCleanupEnableBackground = {
     val __obj = js.Dynamic.literal(cleanupEnableBackground = cleanupEnableBackground.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginCleanupEnableBackground]
   }
   
-  @scala.inline
-  implicit class PluginCleanupEnableBackgroundMutableBuilder[Self <: PluginCleanupEnableBackground] (val x: Self) extends AnyVal {
+  extension [Self <: PluginCleanupEnableBackground](x: Self) {
     
-    @scala.inline
-    def setCleanupEnableBackground(value: Boolean | js.Object): Self = StObject.set(x, "cleanupEnableBackground", value.asInstanceOf[js.Any])
+    inline def setCleanupEnableBackground(value: Boolean | js.Object): Self = StObject.set(x, "cleanupEnableBackground", value.asInstanceOf[js.Any])
   }
 }

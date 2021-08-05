@@ -115,8 +115,7 @@ trait _empty extends StObject {
 }
 object _empty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `10122`: CategoryLevel,
     `10123`: CategoryLevel,
     `10124`: CategoryLevel,
@@ -228,166 +227,112 @@ object _empty {
     __obj.asInstanceOf[_empty]
   }
   
-  @scala.inline
-  implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+  extension [Self <: _empty](x: Self) {
     
-    @scala.inline
-    def set10122(value: CategoryLevel): Self = StObject.set(x, "10122", value.asInstanceOf[js.Any])
+    inline def set10122(value: CategoryLevel): Self = StObject.set(x, "10122", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10123(value: CategoryLevel): Self = StObject.set(x, "10123", value.asInstanceOf[js.Any])
+    inline def set10123(value: CategoryLevel): Self = StObject.set(x, "10123", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10124(value: CategoryLevel): Self = StObject.set(x, "10124", value.asInstanceOf[js.Any])
+    inline def set10124(value: CategoryLevel): Self = StObject.set(x, "10124", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10125(value: CategoryLevel): Self = StObject.set(x, "10125", value.asInstanceOf[js.Any])
+    inline def set10125(value: CategoryLevel): Self = StObject.set(x, "10125", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10126(value: CategoryLevel): Self = StObject.set(x, "10126", value.asInstanceOf[js.Any])
+    inline def set10126(value: CategoryLevel): Self = StObject.set(x, "10126", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10226(value: Text): Self = StObject.set(x, "10226", value.asInstanceOf[js.Any])
+    inline def set10226(value: Text): Self = StObject.set(x, "10226", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11321(value: Text): Self = StObject.set(x, "11321", value.asInstanceOf[js.Any])
+    inline def set11321(value: Text): Self = StObject.set(x, "11321", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11322(value: LevelText): Self = StObject.set(x, "11322", value.asInstanceOf[js.Any])
+    inline def set11322(value: LevelText): Self = StObject.set(x, "11322", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11323(value: LevelText): Self = StObject.set(x, "11323", value.asInstanceOf[js.Any])
+    inline def set11323(value: LevelText): Self = StObject.set(x, "11323", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11324(value: Level): Self = StObject.set(x, "11324", value.asInstanceOf[js.Any])
+    inline def set11324(value: Level): Self = StObject.set(x, "11324", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11325(value: LevelText): Self = StObject.set(x, "11325", value.asInstanceOf[js.Any])
+    inline def set11325(value: LevelText): Self = StObject.set(x, "11325", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11326(value: LevelText): Self = StObject.set(x, "11326", value.asInstanceOf[js.Any])
+    inline def set11326(value: LevelText): Self = StObject.set(x, "11326", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11327(value: LevelText): Self = StObject.set(x, "11327", value.asInstanceOf[js.Any])
+    inline def set11327(value: LevelText): Self = StObject.set(x, "11327", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11328(value: LevelText): Self = StObject.set(x, "11328", value.asInstanceOf[js.Any])
+    inline def set11328(value: LevelText): Self = StObject.set(x, "11328", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11329(value: Level): Self = StObject.set(x, "11329", value.asInstanceOf[js.Any])
+    inline def set11329(value: Level): Self = StObject.set(x, "11329", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11330(value: CategoryLevel): Self = StObject.set(x, "11330", value.asInstanceOf[js.Any])
+    inline def set11330(value: CategoryLevel): Self = StObject.set(x, "11330", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11331(value: CategoryLevel): Self = StObject.set(x, "11331", value.asInstanceOf[js.Any])
+    inline def set11331(value: CategoryLevel): Self = StObject.set(x, "11331", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11467(value: DocsUrl): Self = StObject.set(x, "11467", value.asInstanceOf[js.Any])
+    inline def set11467(value: DocsUrl): Self = StObject.set(x, "11467", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11521(value: DocsUrlLevel): Self = StObject.set(x, "11521", value.asInstanceOf[js.Any])
+    inline def set11521(value: DocsUrlLevel): Self = StObject.set(x, "11521", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11522(value: DocsUrlLevelText): Self = StObject.set(x, "11522", value.asInstanceOf[js.Any])
+    inline def set11522(value: DocsUrlLevelText): Self = StObject.set(x, "11522", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11610(value: Category): Self = StObject.set(x, "11610", value.asInstanceOf[js.Any])
+    inline def set11610(value: Category): Self = StObject.set(x, "11610", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11611(value: Category): Self = StObject.set(x, "11611", value.asInstanceOf[js.Any])
+    inline def set11611(value: Category): Self = StObject.set(x, "11611", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11612(value: Category): Self = StObject.set(x, "11612", value.asInstanceOf[js.Any])
+    inline def set11612(value: Category): Self = StObject.set(x, "11612", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11613(value: DocsUrl): Self = StObject.set(x, "11613", value.asInstanceOf[js.Any])
+    inline def set11613(value: DocsUrl): Self = StObject.set(x, "11613", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11614(value: DocsUrlString): Self = StObject.set(x, "11614", value.asInstanceOf[js.Any])
+    inline def set11614(value: DocsUrlString): Self = StObject.set(x, "11614", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set11701(value: Level): Self = StObject.set(x, "11701", value.asInstanceOf[js.Any])
+    inline def set11701(value: Level): Self = StObject.set(x, "11701", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85901(value: Text): Self = StObject.set(x, "85901", value.asInstanceOf[js.Any])
+    inline def set85901(value: Text): Self = StObject.set(x, "85901", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85907(value: Text): Self = StObject.set(x, "85907", value.asInstanceOf[js.Any])
+    inline def set85907(value: Text): Self = StObject.set(x, "85907", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85908(value: CategoryLevel): Self = StObject.set(x, "85908", value.asInstanceOf[js.Any])
+    inline def set85908(value: CategoryLevel): Self = StObject.set(x, "85908", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85909(value: Text): Self = StObject.set(x, "85909", value.asInstanceOf[js.Any])
+    inline def set85909(value: Text): Self = StObject.set(x, "85909", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85910(value: CategoryDocsUrl): Self = StObject.set(x, "85910", value.asInstanceOf[js.Any])
+    inline def set85910(value: CategoryDocsUrl): Self = StObject.set(x, "85910", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85911(value: CategoryLevel): Self = StObject.set(x, "85911", value.asInstanceOf[js.Any])
+    inline def set85911(value: CategoryLevel): Self = StObject.set(x, "85911", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85912(value: Text): Self = StObject.set(x, "85912", value.asInstanceOf[js.Any])
+    inline def set85912(value: Text): Self = StObject.set(x, "85912", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85913(value: Text): Self = StObject.set(x, "85913", value.asInstanceOf[js.Any])
+    inline def set85913(value: Text): Self = StObject.set(x, "85913", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85914(value: Text): Self = StObject.set(x, "85914", value.asInstanceOf[js.Any])
+    inline def set85914(value: Text): Self = StObject.set(x, "85914", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85915(value: Text): Self = StObject.set(x, "85915", value.asInstanceOf[js.Any])
+    inline def set85915(value: Text): Self = StObject.set(x, "85915", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85916(value: CategoryLevel): Self = StObject.set(x, "85916", value.asInstanceOf[js.Any])
+    inline def set85916(value: CategoryLevel): Self = StObject.set(x, "85916", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85917(value: Text): Self = StObject.set(x, "85917", value.asInstanceOf[js.Any])
+    inline def set85917(value: Text): Self = StObject.set(x, "85917", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85918(value: CategoryLevel): Self = StObject.set(x, "85918", value.asInstanceOf[js.Any])
+    inline def set85918(value: CategoryLevel): Self = StObject.set(x, "85918", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85919(value: CategoryLevel): Self = StObject.set(x, "85919", value.asInstanceOf[js.Any])
+    inline def set85919(value: CategoryLevel): Self = StObject.set(x, "85919", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85920(value: CategoryLevel): Self = StObject.set(x, "85920", value.asInstanceOf[js.Any])
+    inline def set85920(value: CategoryLevel): Self = StObject.set(x, "85920", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85921(value: CategoryLevel): Self = StObject.set(x, "85921", value.asInstanceOf[js.Any])
+    inline def set85921(value: CategoryLevel): Self = StObject.set(x, "85921", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85922(value: CategoryLevel): Self = StObject.set(x, "85922", value.asInstanceOf[js.Any])
+    inline def set85922(value: CategoryLevel): Self = StObject.set(x, "85922", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85923(value: CategoryLevel): Self = StObject.set(x, "85923", value.asInstanceOf[js.Any])
+    inline def set85923(value: CategoryLevel): Self = StObject.set(x, "85923", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85924(value: CategoryLevel): Self = StObject.set(x, "85924", value.asInstanceOf[js.Any])
+    inline def set85924(value: CategoryLevel): Self = StObject.set(x, "85924", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85925(value: CategoryLevel): Self = StObject.set(x, "85925", value.asInstanceOf[js.Any])
+    inline def set85925(value: CategoryLevel): Self = StObject.set(x, "85925", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85926(value: CategoryLevel): Self = StObject.set(x, "85926", value.asInstanceOf[js.Any])
+    inline def set85926(value: CategoryLevel): Self = StObject.set(x, "85926", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set85927(value: CategoryLevel): Self = StObject.set(x, "85927", value.asInstanceOf[js.Any])
+    inline def set85927(value: CategoryLevel): Self = StObject.set(x, "85927", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set95312(value: Category): Self = StObject.set(x, "95312", value.asInstanceOf[js.Any])
+    inline def set95312(value: Category): Self = StObject.set(x, "95312", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set95313(value: DocsUrl): Self = StObject.set(x, "95313", value.asInstanceOf[js.Any])
+    inline def set95313(value: DocsUrl): Self = StObject.set(x, "95313", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set98123(value: Text): Self = StObject.set(x, "98123", value.asInstanceOf[js.Any])
+    inline def set98123(value: Text): Self = StObject.set(x, "98123", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set98124(value: CategoryLevel): Self = StObject.set(x, "98124", value.asInstanceOf[js.Any])
+    inline def set98124(value: CategoryLevel): Self = StObject.set(x, "98124", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_empty(value: Level): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
+    inline def set_empty(value: Level): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ object gridStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): GridStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[GridStyle]
+  inline def default(theme: Theme): GridStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[GridStyle]
   
   trait GridStyle extends StObject {
     
@@ -27,23 +26,18 @@ object gridStyleMod {
   }
   object GridStyle {
     
-    @scala.inline
-    def apply(grayBorderBox: ViewStyle, icon: ImageStyle, text: TextStyle): GridStyle = {
+    inline def apply(grayBorderBox: ViewStyle, icon: ImageStyle, text: TextStyle): GridStyle = {
       val __obj = js.Dynamic.literal(grayBorderBox = grayBorderBox.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridStyle]
     }
     
-    @scala.inline
-    implicit class GridStyleMutableBuilder[Self <: GridStyle] (val x: Self) extends AnyVal {
+    extension [Self <: GridStyle](x: Self) {
       
-      @scala.inline
-      def setGrayBorderBox(value: ViewStyle): Self = StObject.set(x, "grayBorderBox", value.asInstanceOf[js.Any])
+      inline def setGrayBorderBox(value: ViewStyle): Self = StObject.set(x, "grayBorderBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: ImageStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ImageStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

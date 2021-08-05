@@ -15,25 +15,19 @@ trait SetChannelMetadataParameters[Custom /* <: ObjectCustom */] extends StObjec
 }
 object SetChannelMetadataParameters {
   
-  @scala.inline
-  def apply[Custom /* <: ObjectCustom */](channel: String, data: ChannelMetadata[Custom]): SetChannelMetadataParameters[Custom] = {
+  inline def apply[Custom /* <: ObjectCustom */](channel: String, data: ChannelMetadata[Custom]): SetChannelMetadataParameters[Custom] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetChannelMetadataParameters[Custom]]
   }
   
-  @scala.inline
-  implicit class SetChannelMetadataParametersMutableBuilder[Self <: SetChannelMetadataParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetChannelMetadataParameters[Custom]) extends AnyVal {
+  extension [Self <: SetChannelMetadataParameters[?], Custom /* <: ObjectCustom */](x: Self & SetChannelMetadataParameters[Custom]) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: ChannelMetadata[Custom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ChannelMetadata[Custom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
   }
 }

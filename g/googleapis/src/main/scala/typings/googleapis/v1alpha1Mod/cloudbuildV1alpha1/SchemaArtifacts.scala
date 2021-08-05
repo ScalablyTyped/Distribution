@@ -32,28 +32,21 @@ trait SchemaArtifacts extends StObject {
 }
 object SchemaArtifacts {
   
-  @scala.inline
-  def apply(): SchemaArtifacts = {
+  inline def apply(): SchemaArtifacts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaArtifacts]
   }
   
-  @scala.inline
-  implicit class SchemaArtifactsMutableBuilder[Self <: SchemaArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaArtifacts](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setObjects(value: SchemaArtifactObjects): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: SchemaArtifactObjects): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+    inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
   }
 }

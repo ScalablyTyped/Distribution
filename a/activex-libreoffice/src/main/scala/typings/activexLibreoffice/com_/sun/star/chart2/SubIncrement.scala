@@ -14,19 +14,15 @@ trait SubIncrement extends StObject {
 }
 object SubIncrement {
   
-  @scala.inline
-  def apply(IntervalCount: js.Any, PostEquidistant: js.Any): SubIncrement = {
+  inline def apply(IntervalCount: js.Any, PostEquidistant: js.Any): SubIncrement = {
     val __obj = js.Dynamic.literal(IntervalCount = IntervalCount.asInstanceOf[js.Any], PostEquidistant = PostEquidistant.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubIncrement]
   }
   
-  @scala.inline
-  implicit class SubIncrementMutableBuilder[Self <: SubIncrement] (val x: Self) extends AnyVal {
+  extension [Self <: SubIncrement](x: Self) {
     
-    @scala.inline
-    def setIntervalCount(value: js.Any): Self = StObject.set(x, "IntervalCount", value.asInstanceOf[js.Any])
+    inline def setIntervalCount(value: js.Any): Self = StObject.set(x, "IntervalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostEquidistant(value: js.Any): Self = StObject.set(x, "PostEquidistant", value.asInstanceOf[js.Any])
+    inline def setPostEquidistant(value: js.Any): Self = StObject.set(x, "PostEquidistant", value.asInstanceOf[js.Any])
   }
 }

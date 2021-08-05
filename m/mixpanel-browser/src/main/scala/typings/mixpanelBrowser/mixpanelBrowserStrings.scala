@@ -11,23 +11,19 @@ object mixpanelBrowserStrings {
   sealed trait cookie
     extends StObject
        with Persistence
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
   sealed trait localStorage
     extends StObject
        with Persistence
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
   sealed trait sendBeacon extends StObject
-  @scala.inline
-  def sendBeacon: sendBeacon = "sendBeacon".asInstanceOf[sendBeacon]
+  inline def sendBeacon: sendBeacon = "sendBeacon".asInstanceOf[sendBeacon]
   
   @js.native
   sealed trait xhr extends StObject
-  @scala.inline
-  def xhr: xhr = "xhr".asInstanceOf[xhr]
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
 }

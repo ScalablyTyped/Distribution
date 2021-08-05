@@ -16,23 +16,18 @@ trait ValuesNode
 }
 object ValuesNode {
   
-  @scala.inline
-  def apply(nodes: js.Array[ValueNode]): ValuesNode = {
+  inline def apply(nodes: js.Array[ValueNode]): ValuesNode = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("values")
     __obj.asInstanceOf[ValuesNode]
   }
   
-  @scala.inline
-  implicit class ValuesNodeMutableBuilder[Self <: ValuesNode] (val x: Self) extends AnyVal {
+  extension [Self <: ValuesNode](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[ValueNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[ValueNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: ValueNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: ValueNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: values): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: values): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

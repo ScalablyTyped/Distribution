@@ -18,25 +18,19 @@ trait GetAdminAccountResponse extends StObject {
 }
 object GetAdminAccountResponse {
   
-  @scala.inline
-  def apply(): GetAdminAccountResponse = {
+  inline def apply(): GetAdminAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAdminAccountResponse]
   }
   
-  @scala.inline
-  implicit class GetAdminAccountResponseMutableBuilder[Self <: GetAdminAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAdminAccountResponse](x: Self) {
     
-    @scala.inline
-    def setAdminAccount(value: AWSAccountId): Self = StObject.set(x, "AdminAccount", value.asInstanceOf[js.Any])
+    inline def setAdminAccount(value: AWSAccountId): Self = StObject.set(x, "AdminAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminAccountUndefined: Self = StObject.set(x, "AdminAccount", js.undefined)
+    inline def setAdminAccountUndefined: Self = StObject.set(x, "AdminAccount", js.undefined)
     
-    @scala.inline
-    def setRoleStatus(value: AccountRoleStatus): Self = StObject.set(x, "RoleStatus", value.asInstanceOf[js.Any])
+    inline def setRoleStatus(value: AccountRoleStatus): Self = StObject.set(x, "RoleStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleStatusUndefined: Self = StObject.set(x, "RoleStatus", js.undefined)
+    inline def setRoleStatusUndefined: Self = StObject.set(x, "RoleStatus", js.undefined)
   }
 }

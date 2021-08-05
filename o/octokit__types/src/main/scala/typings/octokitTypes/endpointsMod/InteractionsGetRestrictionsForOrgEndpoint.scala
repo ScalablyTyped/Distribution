@@ -15,17 +15,14 @@ trait InteractionsGetRestrictionsForOrgEndpoint
 }
 object InteractionsGetRestrictionsForOrgEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[sombra], org_ : String): InteractionsGetRestrictionsForOrgEndpoint = {
+  inline def apply(mediaType: `0`[sombra], org_ : String): InteractionsGetRestrictionsForOrgEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionsGetRestrictionsForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class InteractionsGetRestrictionsForOrgEndpointMutableBuilder[Self <: InteractionsGetRestrictionsForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsGetRestrictionsForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

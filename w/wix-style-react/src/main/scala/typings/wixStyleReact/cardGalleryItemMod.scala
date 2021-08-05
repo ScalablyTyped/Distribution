@@ -39,65 +39,46 @@ object cardGalleryItemMod {
   }
   object CardGalleryItemProps {
     
-    @scala.inline
-    def apply(primaryActionProps: DisabledMessage): CardGalleryItemProps = {
+    inline def apply(primaryActionProps: DisabledMessage): CardGalleryItemProps = {
       val __obj = js.Dynamic.literal(primaryActionProps = primaryActionProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardGalleryItemProps]
     }
     
-    @scala.inline
-    implicit class CardGalleryItemPropsMutableBuilder[Self <: CardGalleryItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardGalleryItemProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundImageNode(value: ReactNode): Self = StObject.set(x, "backgroundImageNode", value.asInstanceOf[js.Any])
+      inline def setBackgroundImageNode(value: ReactNode): Self = StObject.set(x, "backgroundImageNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundImageNodeUndefined: Self = StObject.set(x, "backgroundImageNode", js.undefined)
+      inline def setBackgroundImageNodeUndefined: Self = StObject.set(x, "backgroundImageNode", js.undefined)
       
-      @scala.inline
-      def setBackgroundImageUrl(value: String): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
+      inline def setBackgroundImageUrl(value: String): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundImageUrlUndefined: Self = StObject.set(x, "backgroundImageUrl", js.undefined)
+      inline def setBackgroundImageUrlUndefined: Self = StObject.set(x, "backgroundImageUrl", js.undefined)
       
-      @scala.inline
-      def setBadge(value: ReactNode): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: ReactNode): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setPrimaryActionProps(value: DisabledMessage): Self = StObject.set(x, "primaryActionProps", value.asInstanceOf[js.Any])
+      inline def setPrimaryActionProps(value: DisabledMessage): Self = StObject.set(x, "primaryActionProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryActionProps(value: Label): Self = StObject.set(x, "secondaryActionProps", value.asInstanceOf[js.Any])
+      inline def setSecondaryActionProps(value: Label): Self = StObject.set(x, "secondaryActionProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryActionPropsUndefined: Self = StObject.set(x, "secondaryActionProps", js.undefined)
+      inline def setSecondaryActionPropsUndefined: Self = StObject.set(x, "secondaryActionProps", js.undefined)
       
-      @scala.inline
-      def setSettingsMenu(value: ReactNode): Self = StObject.set(x, "settingsMenu", value.asInstanceOf[js.Any])
+      inline def setSettingsMenu(value: ReactNode): Self = StObject.set(x, "settingsMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsMenuUndefined: Self = StObject.set(x, "settingsMenu", js.undefined)
+      inline def setSettingsMenuUndefined: Self = StObject.set(x, "settingsMenu", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

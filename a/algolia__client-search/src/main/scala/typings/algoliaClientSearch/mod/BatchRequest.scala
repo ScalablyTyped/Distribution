@@ -20,19 +20,15 @@ trait BatchRequest extends StObject {
 }
 object BatchRequest {
   
-  @scala.inline
-  def apply(action: BatchActionType, body: Record[String, js.Any]): BatchRequest = {
+  inline def apply(action: BatchActionType, body: Record[String, js.Any]): BatchRequest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchRequest]
   }
   
-  @scala.inline
-  implicit class BatchRequestMutableBuilder[Self <: BatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: BatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: BatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

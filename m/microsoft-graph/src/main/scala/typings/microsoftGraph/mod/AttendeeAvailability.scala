@@ -20,31 +20,23 @@ trait AttendeeAvailability extends StObject {
 }
 object AttendeeAvailability {
   
-  @scala.inline
-  def apply(): AttendeeAvailability = {
+  inline def apply(): AttendeeAvailability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttendeeAvailability]
   }
   
-  @scala.inline
-  implicit class AttendeeAvailabilityMutableBuilder[Self <: AttendeeAvailability] (val x: Self) extends AnyVal {
+  extension [Self <: AttendeeAvailability](x: Self) {
     
-    @scala.inline
-    def setAttendee(value: NullableOption[AttendeeBase]): Self = StObject.set(x, "attendee", value.asInstanceOf[js.Any])
+    inline def setAttendee(value: NullableOption[AttendeeBase]): Self = StObject.set(x, "attendee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeeNull: Self = StObject.set(x, "attendee", null)
+    inline def setAttendeeNull: Self = StObject.set(x, "attendee", null)
     
-    @scala.inline
-    def setAttendeeUndefined: Self = StObject.set(x, "attendee", js.undefined)
+    inline def setAttendeeUndefined: Self = StObject.set(x, "attendee", js.undefined)
     
-    @scala.inline
-    def setAvailability(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityNull: Self = StObject.set(x, "availability", null)
+    inline def setAvailabilityNull: Self = StObject.set(x, "availability", null)
     
-    @scala.inline
-    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
   }
 }

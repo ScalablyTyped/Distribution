@@ -26,8 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: js.Array[AnyCommand]): js.Array[AbsAnyCommand] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[AbsAnyCommand]]
+  inline def apply(path: js.Array[AnyCommand]): js.Array[AbsAnyCommand] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[AbsAnyCommand]]
   
   @JSImport("abs-svg-path", JSImport.Namespace)
   @js.native

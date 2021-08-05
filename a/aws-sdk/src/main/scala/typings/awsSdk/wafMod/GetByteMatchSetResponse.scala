@@ -13,19 +13,15 @@ trait GetByteMatchSetResponse extends StObject {
 }
 object GetByteMatchSetResponse {
   
-  @scala.inline
-  def apply(): GetByteMatchSetResponse = {
+  inline def apply(): GetByteMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetByteMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class GetByteMatchSetResponseMutableBuilder[Self <: GetByteMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetByteMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setByteMatchSet(value: ByteMatchSet): Self = StObject.set(x, "ByteMatchSet", value.asInstanceOf[js.Any])
+    inline def setByteMatchSet(value: ByteMatchSet): Self = StObject.set(x, "ByteMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchSetUndefined: Self = StObject.set(x, "ByteMatchSet", js.undefined)
+    inline def setByteMatchSetUndefined: Self = StObject.set(x, "ByteMatchSet", js.undefined)
   }
 }

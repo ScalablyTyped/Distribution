@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectionModeType extends StObject
 object SelectionModeType {
   
-  @scala.inline
-  def CONFIRM: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM = "CONFIRM".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM]
+  inline def CONFIRM: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM = "CONFIRM".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM]
   
-  @scala.inline
-  def QUICK: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK = "QUICK".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK]
+  inline def QUICK: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK = "QUICK".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK]
 }

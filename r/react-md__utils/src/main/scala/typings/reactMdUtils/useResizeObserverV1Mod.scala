@@ -12,21 +12,15 @@ object useResizeObserverV1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getResizeObserverTarget(target: ResizeObserverTarget[HTMLElement]): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getResizeObserverTarget")(target.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  inline def getResizeObserverTarget(target: ResizeObserverTarget[HTMLElement]): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getResizeObserverTarget")(target.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
   
-  @scala.inline
-  def isHeightChange(prevSize: Unit, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHeightChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isHeightChange(prevSize: ElementSize, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHeightChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isHeightChange(prevSize: Unit, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHeightChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isHeightChange(prevSize: ElementSize, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHeightChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isWidthChange(prevSize: Unit, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isWidthChange(prevSize: ElementSize, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isWidthChange(prevSize: Unit, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isWidthChange(prevSize: ElementSize, nextSize: ElementSize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthChange")(prevSize.asInstanceOf[js.Any], nextSize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def useResizeObserverV1[E /* <: HTMLElement */](hasDisableHeightDisableWidthOnResizeTarget: UseResizeObserverV1Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserverV1")(hasDisableHeightDisableWidthOnResizeTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useResizeObserverV1[E /* <: HTMLElement */](hasDisableHeightDisableWidthOnResizeTarget: UseResizeObserverV1Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserverV1")(hasDisableHeightDisableWidthOnResizeTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object warnedOnce {
     
@@ -37,14 +31,12 @@ object useResizeObserverV1Mod {
     @JSImport("@react-md/utils/types/sizing/useResizeObserverV1", "warnedOnce.comp")
     @js.native
     def comp: Boolean = js.native
-    @scala.inline
-    def comp_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comp")(x.asInstanceOf[js.Any])
+    inline def comp_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comp")(x.asInstanceOf[js.Any])
     
     @JSImport("@react-md/utils/types/sizing/useResizeObserverV1", "warnedOnce.hook")
     @js.native
     def hook: Boolean = js.native
-    @scala.inline
-    def hook_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hook")(x.asInstanceOf[js.Any])
+    inline def hook_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hook")(x.asInstanceOf[js.Any])
   }
   
   trait ElementSize extends StObject {
@@ -71,26 +63,20 @@ object useResizeObserverV1Mod {
   }
   object ElementSize {
     
-    @scala.inline
-    def apply(height: Double, scrollHeight: Double, scrollWidth: Double, width: Double): ElementSize = {
+    inline def apply(height: Double, scrollHeight: Double, scrollWidth: Double, width: Double): ElementSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementSize]
     }
     
-    @scala.inline
-    implicit class ElementSizeMutableBuilder[Self <: ElementSize] (val x: Self) extends AnyVal {
+    extension [Self <: ElementSize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+      inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +97,14 @@ object useResizeObserverV1Mod {
   }
   object ObservedResizeData {
     
-    @scala.inline
-    def apply(element: HTMLElement, height: Double, scrollHeight: Double, scrollWidth: Double, width: Double): ObservedResizeData = {
+    inline def apply(element: HTMLElement, height: Double, scrollHeight: Double, scrollWidth: Double, width: Double): ObservedResizeData = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObservedResizeData]
     }
     
-    @scala.inline
-    implicit class ObservedResizeDataMutableBuilder[Self <: ObservedResizeData] (val x: Self) extends AnyVal {
+    extension [Self <: ObservedResizeData](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,38 +126,28 @@ object useResizeObserverV1Mod {
   }
   object UseResizeObserverV1Options {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](onResize: /* event */ ObservedResizeData => Unit): UseResizeObserverV1Options[E] = {
+    inline def apply[E /* <: HTMLElement */](onResize: /* event */ ObservedResizeData => Unit): UseResizeObserverV1Options[E] = {
       val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize), target = null)
       __obj.asInstanceOf[UseResizeObserverV1Options[E]]
     }
     
-    @scala.inline
-    implicit class UseResizeObserverV1OptionsMutableBuilder[Self <: UseResizeObserverV1Options[?], E /* <: HTMLElement */] (val x: Self & UseResizeObserverV1Options[E]) extends AnyVal {
+    extension [Self <: UseResizeObserverV1Options[?], E /* <: HTMLElement */](x: Self & UseResizeObserverV1Options[E]) {
       
-      @scala.inline
-      def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
+      inline def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
+      inline def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
       
-      @scala.inline
-      def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
+      inline def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
+      inline def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* event */ ObservedResizeData => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* event */ ObservedResizeData => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTarget(value: ResizeObserverTarget[E]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ResizeObserverTarget[E]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetFunction0(value: () => E | Null): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
+      inline def setTargetFunction0(value: () => E | Null): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
     }
   }
 }

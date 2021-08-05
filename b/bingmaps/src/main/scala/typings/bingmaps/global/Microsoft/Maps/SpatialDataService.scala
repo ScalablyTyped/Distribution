@@ -119,15 +119,13 @@ object SpatialDataService {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
@@ -139,16 +137,14 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
@@ -160,15 +156,13 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -180,16 +174,14 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -201,15 +193,13 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
@@ -221,16 +211,14 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
@@ -242,15 +230,13 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -262,16 +248,14 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -283,15 +267,13 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
@@ -303,16 +285,14 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
@@ -324,15 +304,13 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -344,16 +322,14 @@ object SpatialDataService {
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def getBoundary(
+    inline def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -373,58 +349,50 @@ object SpatialDataService {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: Unit,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: Unit,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def search(
+    inline def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],

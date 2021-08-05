@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaFlowState extends StObject
 object MediaFlowState {
   
-  @scala.inline
-  def FLOWING: typings.kurentoClient.kurentoClientStrings.FLOWING = "FLOWING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.FLOWING]
+  inline def FLOWING: typings.kurentoClient.kurentoClientStrings.FLOWING = "FLOWING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.FLOWING]
   
-  @scala.inline
-  def NOT_FLOWING: typings.kurentoClient.kurentoClientStrings.NOT_FLOWING = "NOT_FLOWING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.NOT_FLOWING]
+  inline def NOT_FLOWING: typings.kurentoClient.kurentoClientStrings.NOT_FLOWING = "NOT_FLOWING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.NOT_FLOWING]
 }

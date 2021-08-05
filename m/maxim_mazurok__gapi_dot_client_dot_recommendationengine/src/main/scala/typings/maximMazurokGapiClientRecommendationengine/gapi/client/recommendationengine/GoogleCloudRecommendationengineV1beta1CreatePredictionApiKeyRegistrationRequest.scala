@@ -11,19 +11,15 @@ trait GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRe
 }
 object GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest](x: Self) {
     
-    @scala.inline
-    def setPredictionApiKeyRegistration(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration): Self = StObject.set(x, "predictionApiKeyRegistration", value.asInstanceOf[js.Any])
+    inline def setPredictionApiKeyRegistration(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration): Self = StObject.set(x, "predictionApiKeyRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionApiKeyRegistrationUndefined: Self = StObject.set(x, "predictionApiKeyRegistration", js.undefined)
+    inline def setPredictionApiKeyRegistrationUndefined: Self = StObject.set(x, "predictionApiKeyRegistration", js.undefined)
   }
 }

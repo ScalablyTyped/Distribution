@@ -17,22 +17,17 @@ trait AzureKeyVaultVariableGroupProviderData
 }
 object AzureKeyVaultVariableGroupProviderData {
   
-  @scala.inline
-  def apply(lastRefreshedOn: Date, serviceEndpointId: String, vault: String): AzureKeyVaultVariableGroupProviderData = {
+  inline def apply(lastRefreshedOn: Date, serviceEndpointId: String, vault: String): AzureKeyVaultVariableGroupProviderData = {
     val __obj = js.Dynamic.literal(lastRefreshedOn = lastRefreshedOn.asInstanceOf[js.Any], serviceEndpointId = serviceEndpointId.asInstanceOf[js.Any], vault = vault.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureKeyVaultVariableGroupProviderData]
   }
   
-  @scala.inline
-  implicit class AzureKeyVaultVariableGroupProviderDataMutableBuilder[Self <: AzureKeyVaultVariableGroupProviderData] (val x: Self) extends AnyVal {
+  extension [Self <: AzureKeyVaultVariableGroupProviderData](x: Self) {
     
-    @scala.inline
-    def setLastRefreshedOn(value: Date): Self = StObject.set(x, "lastRefreshedOn", value.asInstanceOf[js.Any])
+    inline def setLastRefreshedOn(value: Date): Self = StObject.set(x, "lastRefreshedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceEndpointId(value: String): Self = StObject.set(x, "serviceEndpointId", value.asInstanceOf[js.Any])
+    inline def setServiceEndpointId(value: String): Self = StObject.set(x, "serviceEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVault(value: String): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
+    inline def setVault(value: String): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
   }
 }

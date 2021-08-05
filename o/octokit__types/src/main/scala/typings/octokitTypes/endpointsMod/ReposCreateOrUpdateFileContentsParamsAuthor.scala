@@ -12,19 +12,15 @@ trait ReposCreateOrUpdateFileContentsParamsAuthor extends StObject {
 }
 object ReposCreateOrUpdateFileContentsParamsAuthor {
   
-  @scala.inline
-  def apply(email: String, name: String): ReposCreateOrUpdateFileContentsParamsAuthor = {
+  inline def apply(email: String, name: String): ReposCreateOrUpdateFileContentsParamsAuthor = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateOrUpdateFileContentsParamsAuthor]
   }
   
-  @scala.inline
-  implicit class ReposCreateOrUpdateFileContentsParamsAuthorMutableBuilder[Self <: ReposCreateOrUpdateFileContentsParamsAuthor] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateOrUpdateFileContentsParamsAuthor](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

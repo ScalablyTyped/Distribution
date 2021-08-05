@@ -29,52 +29,37 @@ trait Pivot extends StObject {
 }
 object Pivot {
   
-  @scala.inline
-  def apply(): Pivot = {
+  inline def apply(): Pivot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pivot]
   }
   
-  @scala.inline
-  implicit class PivotMutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
+  extension [Self <: Pivot](x: Self) {
     
-    @scala.inline
-    def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+    inline def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+    inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
     
-    @scala.inline
-    def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMetricAggregations(value: js.Array[String]): Self = StObject.set(x, "metricAggregations", value.asInstanceOf[js.Any])
+    inline def setMetricAggregations(value: js.Array[String]): Self = StObject.set(x, "metricAggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricAggregationsUndefined: Self = StObject.set(x, "metricAggregations", js.undefined)
+    inline def setMetricAggregationsUndefined: Self = StObject.set(x, "metricAggregations", js.undefined)
     
-    @scala.inline
-    def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value :_*))
+    inline def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
+    inline def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
+    inline def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
     
-    @scala.inline
-    def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
+    inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
   }
 }

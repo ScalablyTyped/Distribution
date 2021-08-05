@@ -13,16 +13,13 @@ trait ActiveXObject extends StObject {
 }
 object ActiveXObject {
   
-  @scala.inline
-  def apply(set: (WshEnvironment, Item, js.Array[String], String) => Unit): ActiveXObject = {
+  inline def apply(set: (WshEnvironment, Item, js.Array[String], String) => Unit): ActiveXObject = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction4(set))
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectMutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObject](x: Self) {
     
-    @scala.inline
-    def setSet(value: (WshEnvironment, Item, js.Array[String], String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (WshEnvironment, Item, js.Array[String], String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
   }
 }

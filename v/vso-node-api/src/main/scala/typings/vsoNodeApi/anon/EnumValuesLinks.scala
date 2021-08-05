@@ -10,16 +10,13 @@ trait EnumValuesLinks extends StObject {
 }
 object EnumValuesLinks {
   
-  @scala.inline
-  def apply(enumValues: Links): EnumValuesLinks = {
+  inline def apply(enumValues: Links): EnumValuesLinks = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesLinks]
   }
   
-  @scala.inline
-  implicit class EnumValuesLinksMutableBuilder[Self <: EnumValuesLinks] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesLinks](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Links): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Links): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

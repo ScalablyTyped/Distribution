@@ -20,18 +20,13 @@ object Config {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def current(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[Config]
+  inline def current(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[Config]
   
   /* static member */
-  @scala.inline
-  def get(): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[Config]]
-  @scala.inline
-  def get(options: UseMasterKeyOption): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
+  inline def get(): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[Config]]
+  inline def get(options: UseMasterKeyOption): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
   
   /* static member */
-  @scala.inline
-  def save(attr: js.Any): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
-  @scala.inline
-  def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
+  inline def save(attr: js.Any): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
+  inline def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
 }

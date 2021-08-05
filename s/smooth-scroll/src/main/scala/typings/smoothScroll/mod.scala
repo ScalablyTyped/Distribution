@@ -35,44 +35,31 @@ object mod {
   trait Easing extends StObject
   object Easing {
     
-    @scala.inline
-    def Linear: typings.smoothScroll.smoothScrollStrings.Linear = "Linear".asInstanceOf[typings.smoothScroll.smoothScrollStrings.Linear]
+    inline def Linear: typings.smoothScroll.smoothScrollStrings.Linear = "Linear".asInstanceOf[typings.smoothScroll.smoothScrollStrings.Linear]
     
-    @scala.inline
-    def easeInCubic: typings.smoothScroll.smoothScrollStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInCubic]
+    inline def easeInCubic: typings.smoothScroll.smoothScrollStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInCubic]
     
-    @scala.inline
-    def easeInOutCubic: typings.smoothScroll.smoothScrollStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutCubic]
+    inline def easeInOutCubic: typings.smoothScroll.smoothScrollStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutCubic]
     
-    @scala.inline
-    def easeInOutQuad: typings.smoothScroll.smoothScrollStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutQuad]
+    inline def easeInOutQuad: typings.smoothScroll.smoothScrollStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutQuad]
     
-    @scala.inline
-    def easeInOutQuart: typings.smoothScroll.smoothScrollStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutQuart]
+    inline def easeInOutQuart: typings.smoothScroll.smoothScrollStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutQuart]
     
-    @scala.inline
-    def easeInOutQuint: typings.smoothScroll.smoothScrollStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutQuint]
+    inline def easeInOutQuint: typings.smoothScroll.smoothScrollStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInOutQuint]
     
-    @scala.inline
-    def easeInQuad: typings.smoothScroll.smoothScrollStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInQuad]
+    inline def easeInQuad: typings.smoothScroll.smoothScrollStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInQuad]
     
-    @scala.inline
-    def easeInQuart: typings.smoothScroll.smoothScrollStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInQuart]
+    inline def easeInQuart: typings.smoothScroll.smoothScrollStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInQuart]
     
-    @scala.inline
-    def easeInQuint: typings.smoothScroll.smoothScrollStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInQuint]
+    inline def easeInQuint: typings.smoothScroll.smoothScrollStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeInQuint]
     
-    @scala.inline
-    def easeOutCubic: typings.smoothScroll.smoothScrollStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutCubic]
+    inline def easeOutCubic: typings.smoothScroll.smoothScrollStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutCubic]
     
-    @scala.inline
-    def easeOutQuad: typings.smoothScroll.smoothScrollStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuad]
+    inline def easeOutQuad: typings.smoothScroll.smoothScrollStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuad]
     
-    @scala.inline
-    def easeOutQuart: typings.smoothScroll.smoothScrollStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuart]
+    inline def easeOutQuart: typings.smoothScroll.smoothScrollStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuart]
     
-    @scala.inline
-    def easeOutQuint: typings.smoothScroll.smoothScrollStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuint]
+    inline def easeOutQuint: typings.smoothScroll.smoothScrollStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.smoothScroll.smoothScrollStrings.easeOutQuint]
   }
   
   trait Options extends StObject {
@@ -117,71 +104,50 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      @scala.inline
-      def setCustomEasing(value: /* time */ Double => Double): Self = StObject.set(x, "customEasing", js.Any.fromFunction1(value))
+      inline def setCustomEasing(value: /* time */ Double => Double): Self = StObject.set(x, "customEasing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomEasingUndefined: Self = StObject.set(x, "customEasing", js.undefined)
+      inline def setCustomEasingUndefined: Self = StObject.set(x, "customEasing", js.undefined)
       
-      @scala.inline
-      def setDurationMax(value: Double): Self = StObject.set(x, "durationMax", value.asInstanceOf[js.Any])
+      inline def setDurationMax(value: Double): Self = StObject.set(x, "durationMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationMaxNull: Self = StObject.set(x, "durationMax", null)
+      inline def setDurationMaxNull: Self = StObject.set(x, "durationMax", null)
       
-      @scala.inline
-      def setDurationMaxUndefined: Self = StObject.set(x, "durationMax", js.undefined)
+      inline def setDurationMaxUndefined: Self = StObject.set(x, "durationMax", js.undefined)
       
-      @scala.inline
-      def setDurationMin(value: Double): Self = StObject.set(x, "durationMin", value.asInstanceOf[js.Any])
+      inline def setDurationMin(value: Double): Self = StObject.set(x, "durationMin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationMinNull: Self = StObject.set(x, "durationMin", null)
+      inline def setDurationMinNull: Self = StObject.set(x, "durationMin", null)
       
-      @scala.inline
-      def setDurationMinUndefined: Self = StObject.set(x, "durationMin", js.undefined)
+      inline def setDurationMinUndefined: Self = StObject.set(x, "durationMin", js.undefined)
       
-      @scala.inline
-      def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEmitEvents(value: Boolean): Self = StObject.set(x, "emitEvents", value.asInstanceOf[js.Any])
+      inline def setEmitEvents(value: Boolean): Self = StObject.set(x, "emitEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitEventsUndefined: Self = StObject.set(x, "emitEvents", js.undefined)
+      inline def setEmitEventsUndefined: Self = StObject.set(x, "emitEvents", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setOffset(
+      inline def setOffset(
         value: Double | (js.Function2[
               /* anchor */ js.UndefOr[Element | Double | Null], 
               /* toggle */ js.UndefOr[Element | Null], 
@@ -189,43 +155,31 @@ object mod {
             ])
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetFunction2(
+      inline def setOffsetFunction2(
         value: (/* anchor */ js.UndefOr[Element | Double | Null], /* toggle */ js.UndefOr[Element | Null]) => Double
       ): Self = StObject.set(x, "offset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPopstate(value: Boolean): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
+      inline def setPopstate(value: Boolean): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopstateUndefined: Self = StObject.set(x, "popstate", js.undefined)
+      inline def setPopstateUndefined: Self = StObject.set(x, "popstate", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedAsDuration(value: Boolean): Self = StObject.set(x, "speedAsDuration", value.asInstanceOf[js.Any])
+      inline def setSpeedAsDuration(value: Boolean): Self = StObject.set(x, "speedAsDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedAsDurationUndefined: Self = StObject.set(x, "speedAsDuration", js.undefined)
+      inline def setSpeedAsDurationUndefined: Self = StObject.set(x, "speedAsDuration", js.undefined)
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setTopOnEmptyHash(value: Boolean): Self = StObject.set(x, "topOnEmptyHash", value.asInstanceOf[js.Any])
+      inline def setTopOnEmptyHash(value: Boolean): Self = StObject.set(x, "topOnEmptyHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOnEmptyHashUndefined: Self = StObject.set(x, "topOnEmptyHash", js.undefined)
+      inline def setTopOnEmptyHashUndefined: Self = StObject.set(x, "topOnEmptyHash", js.undefined)
       
-      @scala.inline
-      def setUpdateURL(value: Boolean): Self = StObject.set(x, "updateURL", value.asInstanceOf[js.Any])
+      inline def setUpdateURL(value: Boolean): Self = StObject.set(x, "updateURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateURLUndefined: Self = StObject.set(x, "updateURL", js.undefined)
+      inline def setUpdateURLUndefined: Self = StObject.set(x, "updateURL", js.undefined)
     }
   }
   

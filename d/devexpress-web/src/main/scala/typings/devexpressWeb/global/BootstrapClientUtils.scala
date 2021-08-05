@@ -19,6 +19,5 @@ object BootstrapClientUtils {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def UpdateDefaultStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDefaultStyles")().asInstanceOf[Unit]
+  inline def UpdateDefaultStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDefaultStyles")().asInstanceOf[Unit]
 }

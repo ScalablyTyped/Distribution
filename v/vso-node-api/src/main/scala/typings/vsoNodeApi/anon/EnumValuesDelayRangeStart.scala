@@ -10,16 +10,13 @@ trait EnumValuesDelayRangeStart extends StObject {
 }
 object EnumValuesDelayRangeStart {
   
-  @scala.inline
-  def apply(enumValues: DelayRangeStart): EnumValuesDelayRangeStart = {
+  inline def apply(enumValues: DelayRangeStart): EnumValuesDelayRangeStart = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDelayRangeStart]
   }
   
-  @scala.inline
-  implicit class EnumValuesDelayRangeStartMutableBuilder[Self <: EnumValuesDelayRangeStart] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDelayRangeStart](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: DelayRangeStart): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: DelayRangeStart): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

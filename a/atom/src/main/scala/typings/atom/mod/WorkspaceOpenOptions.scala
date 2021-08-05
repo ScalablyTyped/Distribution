@@ -66,61 +66,43 @@ trait WorkspaceOpenOptions extends StObject {
 }
 object WorkspaceOpenOptions {
   
-  @scala.inline
-  def apply(): WorkspaceOpenOptions = {
+  inline def apply(): WorkspaceOpenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceOpenOptions]
   }
   
-  @scala.inline
-  implicit class WorkspaceOpenOptionsMutableBuilder[Self <: WorkspaceOpenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceOpenOptions](x: Self) {
     
-    @scala.inline
-    def setActivateItem(value: Boolean): Self = StObject.set(x, "activateItem", value.asInstanceOf[js.Any])
+    inline def setActivateItem(value: Boolean): Self = StObject.set(x, "activateItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivateItemUndefined: Self = StObject.set(x, "activateItem", js.undefined)
+    inline def setActivateItemUndefined: Self = StObject.set(x, "activateItem", js.undefined)
     
-    @scala.inline
-    def setActivatePane(value: Boolean): Self = StObject.set(x, "activatePane", value.asInstanceOf[js.Any])
+    inline def setActivatePane(value: Boolean): Self = StObject.set(x, "activatePane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivatePaneUndefined: Self = StObject.set(x, "activatePane", js.undefined)
+    inline def setActivatePaneUndefined: Self = StObject.set(x, "activatePane", js.undefined)
     
-    @scala.inline
-    def setInitialColumn(value: Double): Self = StObject.set(x, "initialColumn", value.asInstanceOf[js.Any])
+    inline def setInitialColumn(value: Double): Self = StObject.set(x, "initialColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialColumnUndefined: Self = StObject.set(x, "initialColumn", js.undefined)
+    inline def setInitialColumnUndefined: Self = StObject.set(x, "initialColumn", js.undefined)
     
-    @scala.inline
-    def setInitialLine(value: Double): Self = StObject.set(x, "initialLine", value.asInstanceOf[js.Any])
+    inline def setInitialLine(value: Double): Self = StObject.set(x, "initialLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialLineUndefined: Self = StObject.set(x, "initialLine", js.undefined)
+    inline def setInitialLineUndefined: Self = StObject.set(x, "initialLine", js.undefined)
     
-    @scala.inline
-    def setLocation(value: left_ | right_ | bottom_ | center): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: left_ | right_ | bottom_ | center): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
-    @scala.inline
-    def setSearchAllPanes(value: Boolean): Self = StObject.set(x, "searchAllPanes", value.asInstanceOf[js.Any])
+    inline def setSearchAllPanes(value: Boolean): Self = StObject.set(x, "searchAllPanes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchAllPanesUndefined: Self = StObject.set(x, "searchAllPanes", js.undefined)
+    inline def setSearchAllPanesUndefined: Self = StObject.set(x, "searchAllPanes", js.undefined)
     
-    @scala.inline
-    def setSplit(value: left_ | right_ | up | down): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: left_ | right_ | up | down): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
   }
 }

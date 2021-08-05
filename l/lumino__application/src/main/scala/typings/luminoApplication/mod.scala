@@ -26,13 +26,13 @@ object mod {
       */
     def this(options: IOptions[T]) = this()
     
-    var _delegate: js.Any = js.native
+    /* private */ var _delegate: js.Any = js.native
     
-    var _pluginMap: js.Any = js.native
+    /* private */ var _pluginMap: js.Any = js.native
     
-    var _serviceMap: js.Any = js.native
+    /* private */ var _serviceMap: js.Any = js.native
     
-    var _started: js.Any = js.native
+    /* private */ var _started: js.Any = js.native
     
     /**
       * Activate the plugin with the given id.
@@ -273,23 +273,18 @@ object mod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: Widget */](shell: T): IOptions[T] = {
+      inline def apply[T /* <: Widget */](shell: T): IOptions[T] = {
         val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T /* <: Widget */] (val x: Self & IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T /* <: Widget */](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setContextMenuRenderer(value: IRenderer): Self = StObject.set(x, "contextMenuRenderer", value.asInstanceOf[js.Any])
+        inline def setContextMenuRenderer(value: IRenderer): Self = StObject.set(x, "contextMenuRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContextMenuRendererUndefined: Self = StObject.set(x, "contextMenuRenderer", js.undefined)
+        inline def setContextMenuRendererUndefined: Self = StObject.set(x, "contextMenuRenderer", js.undefined)
         
-        @scala.inline
-        def setShell(value: T): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+        inline def setShell(value: T): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       }
     }
     
@@ -324,38 +319,28 @@ object mod {
     }
     object IStartOptions {
       
-      @scala.inline
-      def apply(): IStartOptions = {
+      inline def apply(): IStartOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IStartOptions]
       }
       
-      @scala.inline
-      implicit class IStartOptionsMutableBuilder[Self <: IStartOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IStartOptions](x: Self) {
         
-        @scala.inline
-        def setHostID(value: String): Self = StObject.set(x, "hostID", value.asInstanceOf[js.Any])
+        inline def setHostID(value: String): Self = StObject.set(x, "hostID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostIDUndefined: Self = StObject.set(x, "hostID", js.undefined)
+        inline def setHostIDUndefined: Self = StObject.set(x, "hostID", js.undefined)
         
-        @scala.inline
-        def setIgnorePlugins(value: js.Array[String]): Self = StObject.set(x, "ignorePlugins", value.asInstanceOf[js.Any])
+        inline def setIgnorePlugins(value: js.Array[String]): Self = StObject.set(x, "ignorePlugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnorePluginsUndefined: Self = StObject.set(x, "ignorePlugins", js.undefined)
+        inline def setIgnorePluginsUndefined: Self = StObject.set(x, "ignorePlugins", js.undefined)
         
-        @scala.inline
-        def setIgnorePluginsVarargs(value: String*): Self = StObject.set(x, "ignorePlugins", js.Array(value :_*))
+        inline def setIgnorePluginsVarargs(value: String*): Self = StObject.set(x, "ignorePlugins", js.Array(value :_*))
         
-        @scala.inline
-        def setStartPlugins(value: js.Array[String]): Self = StObject.set(x, "startPlugins", value.asInstanceOf[js.Any])
+        inline def setStartPlugins(value: js.Array[String]): Self = StObject.set(x, "startPlugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartPluginsUndefined: Self = StObject.set(x, "startPlugins", js.undefined)
+        inline def setStartPluginsUndefined: Self = StObject.set(x, "startPlugins", js.undefined)
         
-        @scala.inline
-        def setStartPluginsVarargs(value: String*): Self = StObject.set(x, "startPlugins", js.Array(value :_*))
+        inline def setStartPluginsVarargs(value: String*): Self = StObject.set(x, "startPlugins", js.Array(value :_*))
       }
     }
   }
@@ -436,50 +421,36 @@ object mod {
   }
   object IPlugin {
     
-    @scala.inline
-    def apply[T, U](activate: (T, /* repeated */ js.Any) => U | js.Promise[U], id: String): IPlugin[T, U] = {
+    inline def apply[T, U](activate: (T, /* repeated */ js.Any) => U | js.Promise[U], id: String): IPlugin[T, U] = {
       val __obj = js.Dynamic.literal(activate = js.Any.fromFunction2(activate), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlugin[T, U]]
     }
     
-    @scala.inline
-    implicit class IPluginMutableBuilder[Self <: IPlugin[?, ?], T, U] (val x: Self & (IPlugin[T, U])) extends AnyVal {
+    extension [Self <: IPlugin[?, ?], T, U](x: Self & (IPlugin[T, U])) {
       
-      @scala.inline
-      def setActivate(value: (T, /* repeated */ js.Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
+      inline def setActivate(value: (T, /* repeated */ js.Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setOptionalVarargs(value: Token[js.Any]*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: Token[js.Any]*): Self = StObject.set(x, "optional", js.Array(value :_*))
       
-      @scala.inline
-      def setProvides(value: Token[U]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
+      inline def setProvides(value: Token[U]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
+      inline def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
       
-      @scala.inline
-      def setRequires(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+      inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
       
-      @scala.inline
-      def setRequiresVarargs(value: Token[js.Any]*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: Token[js.Any]*): Self = StObject.set(x, "requires", js.Array(value :_*))
     }
   }
 }

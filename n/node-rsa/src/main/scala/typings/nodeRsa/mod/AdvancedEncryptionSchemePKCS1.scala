@@ -15,19 +15,15 @@ trait AdvancedEncryptionSchemePKCS1
 }
 object AdvancedEncryptionSchemePKCS1 {
   
-  @scala.inline
-  def apply(padding: Double): AdvancedEncryptionSchemePKCS1 = {
+  inline def apply(padding: Double): AdvancedEncryptionSchemePKCS1 = {
     val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], scheme = "pkcs1")
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1]
   }
   
-  @scala.inline
-  implicit class AdvancedEncryptionSchemePKCS1MutableBuilder[Self <: AdvancedEncryptionSchemePKCS1] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedEncryptionSchemePKCS1](x: Self) {
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: pkcs1): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: pkcs1): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

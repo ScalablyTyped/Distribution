@@ -47,7 +47,7 @@ object mod {
     def this(token: String, baseUrl: String) = this()
     def this(token: String, baseUrl: String, options: Options) = this()
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     /**
       * Gets media from media service
@@ -57,9 +57,9 @@ object mod {
       */
     def get(sid: String): js.Promise[typings.twilioMcsClient.mediaMod.Media] = js.native
     
-    var network: js.Any = js.native
+    /* private */ var network: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Posts raw content to media service
@@ -81,7 +81,7 @@ object mod {
       */
     def postFormData(formData: FormData): js.Promise[typings.twilioMcsClient.mediaMod.Media] = js.native
     
-    val transport: js.Any = js.native
+    /* private */ val transport: js.Any = js.native
     
     /**
       * These options can be passed to Client constructor
@@ -182,35 +182,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelNull: Self = StObject.set(x, "logLevel", null)
+      inline def setLogLevelNull: Self = StObject.set(x, "logLevel", null)
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   

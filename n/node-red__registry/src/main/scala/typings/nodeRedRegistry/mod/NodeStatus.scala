@@ -14,31 +14,23 @@ trait NodeStatus extends StObject {
 }
 object NodeStatus {
   
-  @scala.inline
-  def apply(): NodeStatus = {
+  inline def apply(): NodeStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeStatus]
   }
   
-  @scala.inline
-  implicit class NodeStatusMutableBuilder[Self <: NodeStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NodeStatus](x: Self) {
     
-    @scala.inline
-    def setFill(value: NodeStatusFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: NodeStatusFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setShape(value: NodeStatusShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: NodeStatusShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

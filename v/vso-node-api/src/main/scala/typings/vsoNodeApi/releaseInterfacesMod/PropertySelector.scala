@@ -12,22 +12,17 @@ trait PropertySelector extends StObject {
 }
 object PropertySelector {
   
-  @scala.inline
-  def apply(properties: js.Array[String], selectorType: PropertySelectorType): PropertySelector = {
+  inline def apply(properties: js.Array[String], selectorType: PropertySelectorType): PropertySelector = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], selectorType = selectorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertySelector]
   }
   
-  @scala.inline
-  implicit class PropertySelectorMutableBuilder[Self <: PropertySelector] (val x: Self) extends AnyVal {
+  extension [Self <: PropertySelector](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectorType(value: PropertySelectorType): Self = StObject.set(x, "selectorType", value.asInstanceOf[js.Any])
+    inline def setSelectorType(value: PropertySelectorType): Self = StObject.set(x, "selectorType", value.asInstanceOf[js.Any])
   }
 }

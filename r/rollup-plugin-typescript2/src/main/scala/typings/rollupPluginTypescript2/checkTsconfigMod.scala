@@ -11,6 +11,5 @@ object checkTsconfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkTsConfig(parsedConfig: ParsedCommandLine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkTsConfig")(parsedConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkTsConfig(parsedConfig: ParsedCommandLine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkTsConfig")(parsedConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

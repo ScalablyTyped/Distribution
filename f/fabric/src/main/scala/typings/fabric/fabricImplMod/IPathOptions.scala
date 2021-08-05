@@ -15,22 +15,17 @@ trait IPathOptions
 }
 object IPathOptions {
   
-  @scala.inline
-  def apply(): IPathOptions = {
+  inline def apply(): IPathOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPathOptions]
   }
   
-  @scala.inline
-  implicit class IPathOptionsMutableBuilder[Self <: IPathOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPathOptions](x: Self) {
     
-    @scala.inline
-    def setPath(value: js.Array[Point]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Point]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathVarargs(value: Point*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Point*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

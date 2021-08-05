@@ -102,80 +102,56 @@ object userAgentDelegateMod {
   }
   object UserAgentDelegate {
     
-    @scala.inline
-    def apply(): UserAgentDelegate = {
+    inline def apply(): UserAgentDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserAgentDelegate]
     }
     
-    @scala.inline
-    implicit class UserAgentDelegateMutableBuilder[Self <: UserAgentDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentDelegate](x: Self) {
       
-      @scala.inline
-      def setOnConnect(value: () => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction0(value))
+      inline def setOnConnect(value: () => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
+      inline def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
+      inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       
-      @scala.inline
-      def setOnInvite(value: /* invitation */ Invitation => Unit): Self = StObject.set(x, "onInvite", js.Any.fromFunction1(value))
+      inline def setOnInvite(value: /* invitation */ Invitation => Unit): Self = StObject.set(x, "onInvite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInviteUndefined: Self = StObject.set(x, "onInvite", js.undefined)
+      inline def setOnInviteUndefined: Self = StObject.set(x, "onInvite", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: /* message */ Message => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* message */ Message => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      @scala.inline
-      def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
       
-      @scala.inline
-      def setOnRefer(value: /* referral */ Referral => Unit): Self = StObject.set(x, "onRefer", js.Any.fromFunction1(value))
+      inline def setOnRefer(value: /* referral */ Referral => Unit): Self = StObject.set(x, "onRefer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReferRequest(value: /* request */ IncomingReferRequest => Unit): Self = StObject.set(x, "onReferRequest", js.Any.fromFunction1(value))
+      inline def setOnReferRequest(value: /* request */ IncomingReferRequest => Unit): Self = StObject.set(x, "onReferRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReferRequestUndefined: Self = StObject.set(x, "onReferRequest", js.undefined)
+      inline def setOnReferRequestUndefined: Self = StObject.set(x, "onReferRequest", js.undefined)
       
-      @scala.inline
-      def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
+      inline def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
       
-      @scala.inline
-      def setOnRegister(value: /* registration */ js.Any => Unit): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
+      inline def setOnRegister(value: /* registration */ js.Any => Unit): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRegisterRequest(value: /* request */ IncomingRegisterRequest => Unit): Self = StObject.set(x, "onRegisterRequest", js.Any.fromFunction1(value))
+      inline def setOnRegisterRequest(value: /* request */ IncomingRegisterRequest => Unit): Self = StObject.set(x, "onRegisterRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRegisterRequestUndefined: Self = StObject.set(x, "onRegisterRequest", js.undefined)
+      inline def setOnRegisterRequestUndefined: Self = StObject.set(x, "onRegisterRequest", js.undefined)
       
-      @scala.inline
-      def setOnRegisterUndefined: Self = StObject.set(x, "onRegister", js.undefined)
+      inline def setOnRegisterUndefined: Self = StObject.set(x, "onRegister", js.undefined)
       
-      @scala.inline
-      def setOnSubscribe(value: /* subscription */ Subscription => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction1(value))
+      inline def setOnSubscribe(value: /* subscription */ Subscription => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubscribeRequest(value: /* request */ IncomingSubscribeRequest => Unit): Self = StObject.set(x, "onSubscribeRequest", js.Any.fromFunction1(value))
+      inline def setOnSubscribeRequest(value: /* request */ IncomingSubscribeRequest => Unit): Self = StObject.set(x, "onSubscribeRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubscribeRequestUndefined: Self = StObject.set(x, "onSubscribeRequest", js.undefined)
+      inline def setOnSubscribeRequestUndefined: Self = StObject.set(x, "onSubscribeRequest", js.undefined)
       
-      @scala.inline
-      def setOnSubscribeUndefined: Self = StObject.set(x, "onSubscribe", js.undefined)
+      inline def setOnSubscribeUndefined: Self = StObject.set(x, "onSubscribe", js.undefined)
     }
   }
 }

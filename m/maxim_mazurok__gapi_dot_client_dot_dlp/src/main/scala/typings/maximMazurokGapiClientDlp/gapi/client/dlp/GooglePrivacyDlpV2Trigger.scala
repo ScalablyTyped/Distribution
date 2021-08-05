@@ -17,25 +17,19 @@ trait GooglePrivacyDlpV2Trigger extends StObject {
 }
 object GooglePrivacyDlpV2Trigger {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Trigger = {
+  inline def apply(): GooglePrivacyDlpV2Trigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Trigger]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2TriggerMutableBuilder[Self <: GooglePrivacyDlpV2Trigger] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Trigger](x: Self) {
     
-    @scala.inline
-    def setManual(value: js.Any): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: js.Any): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
+    inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: GooglePrivacyDlpV2Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: GooglePrivacyDlpV2Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }
 }

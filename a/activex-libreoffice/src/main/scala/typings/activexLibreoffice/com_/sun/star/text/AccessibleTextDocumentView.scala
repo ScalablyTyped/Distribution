@@ -30,8 +30,7 @@ trait AccessibleTextDocumentView
      with XAccessibleEventBroadcaster
 object AccessibleTextDocumentView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

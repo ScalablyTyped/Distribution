@@ -6,16 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(address: String): JID_ = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[JID_]
-  @scala.inline
-  def apply(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def apply(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def apply(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def apply(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def apply(address: String): JID_ = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[JID_]
+  inline def apply(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def apply(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def apply(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def apply(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
   
   @JSImport("@xmpp/jid", JSImport.Namespace)
   @js.native
@@ -71,40 +66,25 @@ object mod {
     def toString(unescape: Boolean): String = js.native
   }
   
-  @scala.inline
-  def createJID(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def createJID(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def createJID(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def createJID(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def createJID(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def createJID(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def createJID(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def createJID(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
   
-  @scala.inline
-  def detectEscape(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEscape")().asInstanceOf[Boolean]
-  @scala.inline
-  def detectEscape(local: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEscape")(local.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def detectEscape(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEscape")().asInstanceOf[Boolean]
+  inline def detectEscape(local: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEscape")(local.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def equal(a: JID_, b: JID_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equal(a: JID_, b: JID_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def escapeLocal(local: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeLocal")(local.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeLocal(local: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeLocal")(local.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def jid(address: String): JID_ = ^.asInstanceOf[js.Dynamic].applyDynamic("jid")(address.asInstanceOf[js.Any]).asInstanceOf[JID_]
-  @scala.inline
-  def jid(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def jid(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def jid(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
-  @scala.inline
-  def jid(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def jid(address: String): JID_ = ^.asInstanceOf[js.Dynamic].applyDynamic("jid")(address.asInstanceOf[js.Any]).asInstanceOf[JID_]
+  inline def jid(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def jid(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def jid(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  inline def jid(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
   
-  @scala.inline
-  def parse(s: String): JID_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any]).asInstanceOf[JID_]
+  inline def parse(s: String): JID_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any]).asInstanceOf[JID_]
   
-  @scala.inline
-  def unescapeLocal(local: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeLocal")(local.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescapeLocal(local: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeLocal")(local.asInstanceOf[js.Any]).asInstanceOf[String]
 }

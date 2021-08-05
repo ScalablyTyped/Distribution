@@ -54,130 +54,91 @@ trait IAgent extends StObject {
 }
 object IAgent {
   
-  @scala.inline
-  def apply(): IAgent = {
+  inline def apply(): IAgent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAgent]
   }
   
-  @scala.inline
-  implicit class IAgentMutableBuilder[Self <: IAgent] (val x: Self) extends AnyVal {
+  extension [Self <: IAgent](x: Self) {
     
-    @scala.inline
-    def setApiVersion(
+    inline def setApiVersion(
       value: ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.ApiVersion * / any */ String)
     ): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionNull: Self = StObject.set(x, "apiVersion", null)
+    inline def setApiVersionNull: Self = StObject.set(x, "apiVersion", null)
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setAvatarUri(value: String): Self = StObject.set(x, "avatarUri", value.asInstanceOf[js.Any])
+    inline def setAvatarUri(value: String): Self = StObject.set(x, "avatarUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarUriNull: Self = StObject.set(x, "avatarUri", null)
+    inline def setAvatarUriNull: Self = StObject.set(x, "avatarUri", null)
     
-    @scala.inline
-    def setAvatarUriUndefined: Self = StObject.set(x, "avatarUri", js.undefined)
+    inline def setAvatarUriUndefined: Self = StObject.set(x, "avatarUri", js.undefined)
     
-    @scala.inline
-    def setClassificationThreshold(value: Double): Self = StObject.set(x, "classificationThreshold", value.asInstanceOf[js.Any])
+    inline def setClassificationThreshold(value: Double): Self = StObject.set(x, "classificationThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationThresholdNull: Self = StObject.set(x, "classificationThreshold", null)
+    inline def setClassificationThresholdNull: Self = StObject.set(x, "classificationThreshold", null)
     
-    @scala.inline
-    def setClassificationThresholdUndefined: Self = StObject.set(x, "classificationThreshold", js.undefined)
+    inline def setClassificationThresholdUndefined: Self = StObject.set(x, "classificationThreshold", js.undefined)
     
-    @scala.inline
-    def setDefaultLanguageCode(value: String): Self = StObject.set(x, "defaultLanguageCode", value.asInstanceOf[js.Any])
+    inline def setDefaultLanguageCode(value: String): Self = StObject.set(x, "defaultLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLanguageCodeNull: Self = StObject.set(x, "defaultLanguageCode", null)
+    inline def setDefaultLanguageCodeNull: Self = StObject.set(x, "defaultLanguageCode", null)
     
-    @scala.inline
-    def setDefaultLanguageCodeUndefined: Self = StObject.set(x, "defaultLanguageCode", js.undefined)
+    inline def setDefaultLanguageCodeUndefined: Self = StObject.set(x, "defaultLanguageCode", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+    inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLoggingNull: Self = StObject.set(x, "enableLogging", null)
+    inline def setEnableLoggingNull: Self = StObject.set(x, "enableLogging", null)
     
-    @scala.inline
-    def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+    inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
     
-    @scala.inline
-    def setMatchMode(
+    inline def setMatchMode(
       value: MatchMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.MatchMode * / any */ String)
     ): Self = StObject.set(x, "matchMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchModeNull: Self = StObject.set(x, "matchMode", null)
+    inline def setMatchModeNull: Self = StObject.set(x, "matchMode", null)
     
-    @scala.inline
-    def setMatchModeUndefined: Self = StObject.set(x, "matchMode", js.undefined)
+    inline def setMatchModeUndefined: Self = StObject.set(x, "matchMode", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setSupportedLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "supportedLanguageCodes", value.asInstanceOf[js.Any])
+    inline def setSupportedLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "supportedLanguageCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLanguageCodesNull: Self = StObject.set(x, "supportedLanguageCodes", null)
+    inline def setSupportedLanguageCodesNull: Self = StObject.set(x, "supportedLanguageCodes", null)
     
-    @scala.inline
-    def setSupportedLanguageCodesUndefined: Self = StObject.set(x, "supportedLanguageCodes", js.undefined)
+    inline def setSupportedLanguageCodesUndefined: Self = StObject.set(x, "supportedLanguageCodes", js.undefined)
     
-    @scala.inline
-    def setSupportedLanguageCodesVarargs(value: String*): Self = StObject.set(x, "supportedLanguageCodes", js.Array(value :_*))
+    inline def setSupportedLanguageCodesVarargs(value: String*): Self = StObject.set(x, "supportedLanguageCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setTier(
+    inline def setTier(
       value: Tier | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.Tier * / any */ String)
     ): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierNull: Self = StObject.set(x, "tier", null)
+    inline def setTierNull: Self = StObject.set(x, "tier", null)
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
+    inline def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

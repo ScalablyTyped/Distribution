@@ -44,8 +44,7 @@ trait XPersistentPropertySet
 }
 object XPersistentPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: String,
     PropertySetInfo: XPropertySetInfo,
     Registry: XPropertySetRegistry,
@@ -66,19 +65,14 @@ object XPersistentPropertySet {
     __obj.asInstanceOf[XPersistentPropertySet]
   }
   
-  @scala.inline
-  implicit class XPersistentPropertySetMutableBuilder[Self <: XPersistentPropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: XPersistentPropertySet](x: Self) {
     
-    @scala.inline
-    def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
+    inline def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegistry(value: () => XPropertySetRegistry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction0(value))
+    inline def setGetRegistry(value: () => XPropertySetRegistry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistry(value: XPropertySetRegistry): Self = StObject.set(x, "Registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: XPropertySetRegistry): Self = StObject.set(x, "Registry", value.asInstanceOf[js.Any])
   }
 }

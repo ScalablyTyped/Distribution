@@ -18,22 +18,17 @@ trait RoutingRule extends StObject {
 }
 object RoutingRule {
   
-  @scala.inline
-  def apply(Redirect: Redirect): RoutingRule = {
+  inline def apply(Redirect: Redirect): RoutingRule = {
     val __obj = js.Dynamic.literal(Redirect = Redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutingRule]
   }
   
-  @scala.inline
-  implicit class RoutingRuleMutableBuilder[Self <: RoutingRule] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingRule](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setRedirect(value: Redirect): Self = StObject.set(x, "Redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: Redirect): Self = StObject.set(x, "Redirect", value.asInstanceOf[js.Any])
   }
 }

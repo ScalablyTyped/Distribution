@@ -172,56 +172,32 @@ object mod {
     var year: RecurrenceSegment = js.native
   }
   
-  @scala.inline
-  def cancelJob(job: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def cancelJob(job: Job): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def cancelJob(job: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def cancelJob(job: Job): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def rescheduleJob(job: String, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: String, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: String, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: String, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: String, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: Job, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: Job, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: Job, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def rescheduleJob(job: Job, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: String, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: String, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: String, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: String, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: String, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: Job, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: Job, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: Job, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: Job, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   
-  @scala.inline
-  def scheduleJob(name: String, rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(name: String, rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(name: String, rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(name: String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(name: String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(name: String, rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  @scala.inline
-  def scheduleJob(rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   
   type JobCallback = js.Function1[/* fireDate */ Date, Unit]
   
@@ -253,35 +229,26 @@ object mod {
   }
   object RecurrenceSpecDateRange {
     
-    @scala.inline
-    def apply(rule: String): RecurrenceSpecDateRange = {
+    inline def apply(rule: String): RecurrenceSpecDateRange = {
       val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecurrenceSpecDateRange]
     }
     
-    @scala.inline
-    implicit class RecurrenceSpecDateRangeMutableBuilder[Self <: RecurrenceSpecDateRange] (val x: Self) extends AnyVal {
+    extension [Self <: RecurrenceSpecDateRange](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Date | String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Date | String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Date | String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Date | String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setTz(value: Timezone): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
+      inline def setTz(value: Timezone): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
+      inline def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
     }
   }
   
@@ -311,83 +278,58 @@ object mod {
   }
   object RecurrenceSpecObjLit {
     
-    @scala.inline
-    def apply(): RecurrenceSpecObjLit = {
+    inline def apply(): RecurrenceSpecObjLit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecurrenceSpecObjLit]
     }
     
-    @scala.inline
-    implicit class RecurrenceSpecObjLitMutableBuilder[Self <: RecurrenceSpecObjLit] (val x: Self) extends AnyVal {
+    extension [Self <: RecurrenceSpecObjLit](x: Self) {
       
-      @scala.inline
-      def setDate(value: RecurrenceSegment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: RecurrenceSegment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDateVarargs(value: Recurrence*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: Recurrence*): Self = StObject.set(x, "date", js.Array(value :_*))
       
-      @scala.inline
-      def setDayOfWeek(value: RecurrenceSegment): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+      inline def setDayOfWeek(value: RecurrenceSegment): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+      inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
       
-      @scala.inline
-      def setDayOfWeekVarargs(value: Recurrence*): Self = StObject.set(x, "dayOfWeek", js.Array(value :_*))
+      inline def setDayOfWeekVarargs(value: Recurrence*): Self = StObject.set(x, "dayOfWeek", js.Array(value :_*))
       
-      @scala.inline
-      def setHour(value: RecurrenceSegment): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: RecurrenceSegment): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setHourVarargs(value: Recurrence*): Self = StObject.set(x, "hour", js.Array(value :_*))
+      inline def setHourVarargs(value: Recurrence*): Self = StObject.set(x, "hour", js.Array(value :_*))
       
-      @scala.inline
-      def setMinute(value: RecurrenceSegment): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: RecurrenceSegment): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMinuteVarargs(value: Recurrence*): Self = StObject.set(x, "minute", js.Array(value :_*))
+      inline def setMinuteVarargs(value: Recurrence*): Self = StObject.set(x, "minute", js.Array(value :_*))
       
-      @scala.inline
-      def setMonth(value: RecurrenceSegment): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: RecurrenceSegment): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setMonthVarargs(value: Recurrence*): Self = StObject.set(x, "month", js.Array(value :_*))
+      inline def setMonthVarargs(value: Recurrence*): Self = StObject.set(x, "month", js.Array(value :_*))
       
-      @scala.inline
-      def setSecond(value: RecurrenceSegment): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: RecurrenceSegment): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setSecondVarargs(value: Recurrence*): Self = StObject.set(x, "second", js.Array(value :_*))
+      inline def setSecondVarargs(value: Recurrence*): Self = StObject.set(x, "second", js.Array(value :_*))
       
-      @scala.inline
-      def setTz(value: Timezone): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
+      inline def setTz(value: Timezone): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
+      inline def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
       
-      @scala.inline
-      def setYear(value: RecurrenceSegment): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: RecurrenceSegment): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
       
-      @scala.inline
-      def setYearVarargs(value: Recurrence*): Self = StObject.set(x, "year", js.Array(value :_*))
+      inline def setYearVarargs(value: Recurrence*): Self = StObject.set(x, "year", js.Array(value :_*))
     }
   }
   

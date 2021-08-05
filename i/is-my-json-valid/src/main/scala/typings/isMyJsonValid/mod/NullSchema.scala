@@ -13,17 +13,14 @@ trait NullSchema
 }
 object NullSchema {
   
-  @scala.inline
-  def apply(): NullSchema = {
+  inline def apply(): NullSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("null")
     __obj.asInstanceOf[NullSchema]
   }
   
-  @scala.inline
-  implicit class NullSchemaMutableBuilder[Self <: NullSchema] (val x: Self) extends AnyVal {
+  extension [Self <: NullSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: `null`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `null`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

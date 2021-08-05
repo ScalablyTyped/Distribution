@@ -11,8 +11,7 @@ trait IDragDropHelper
      with typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
 object IDragDropHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     subscribe: (HTMLElement, typings.officeUiFabricReact.utilitiesMod.EventGroup, typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropOptions) => Dispose,
     unsubscribe: (HTMLElement, String) => Unit

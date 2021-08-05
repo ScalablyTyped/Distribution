@@ -15,19 +15,15 @@ trait ParametersSearchCommitsEndpoint extends StObject {
 }
 object ParametersSearchCommitsEndpoint {
   
-  @scala.inline
-  def apply(parameters: SearchCommitsEndpoint, response: OctokitResponse[SearchCommitsResponseData] & `18`): ParametersSearchCommitsEndpoint = {
+  inline def apply(parameters: SearchCommitsEndpoint, response: OctokitResponse[SearchCommitsResponseData] & `18`): ParametersSearchCommitsEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersSearchCommitsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersSearchCommitsEndpointMutableBuilder[Self <: ParametersSearchCommitsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersSearchCommitsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: SearchCommitsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SearchCommitsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[SearchCommitsResponseData] & `18`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[SearchCommitsResponseData] & `18`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

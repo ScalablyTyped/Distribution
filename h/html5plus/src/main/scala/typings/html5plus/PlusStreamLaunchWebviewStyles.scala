@@ -49,37 +49,27 @@ trait PlusStreamLaunchWebviewStyles extends StObject {
 }
 object PlusStreamLaunchWebviewStyles {
   
-  @scala.inline
-  def apply(): PlusStreamLaunchWebviewStyles = {
+  inline def apply(): PlusStreamLaunchWebviewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamLaunchWebviewStyles]
   }
   
-  @scala.inline
-  implicit class PlusStreamLaunchWebviewStylesMutableBuilder[Self <: PlusStreamLaunchWebviewStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusStreamLaunchWebviewStyles](x: Self) {
     
-    @scala.inline
-    def setBlockNetworkImage(value: Boolean): Self = StObject.set(x, "blockNetworkImage", value.asInstanceOf[js.Any])
+    inline def setBlockNetworkImage(value: Boolean): Self = StObject.set(x, "blockNetworkImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNetworkImageUndefined: Self = StObject.set(x, "blockNetworkImage", js.undefined)
+    inline def setBlockNetworkImageUndefined: Self = StObject.set(x, "blockNetworkImage", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLaunch_path(value: String): Self = StObject.set(x, "launch_path", value.asInstanceOf[js.Any])
+    inline def setLaunch_path(value: String): Self = StObject.set(x, "launch_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunch_pathUndefined: Self = StObject.set(x, "launch_path", js.undefined)
+    inline def setLaunch_pathUndefined: Self = StObject.set(x, "launch_path", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

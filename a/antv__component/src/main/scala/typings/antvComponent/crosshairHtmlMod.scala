@@ -16,14 +16,14 @@ object crosshairHtmlMod {
   trait HtmlCrosshair[T /* <: HtmlCrossHairCfg */]
     extends typings.antvComponent.htmlComponentMod.default[HtmlComponentCfg] {
     
-    var alignText: js.Any = js.native
+    /* private */ var alignText: js.Any = js.native
     
-    var getTextPoint: js.Any = js.native
+    /* private */ var getTextPoint: js.Any = js.native
     
-    var initCrossHair: js.Any = js.native
+    /* private */ var initCrossHair: js.Any = js.native
     
-    var isVertical: js.Any = js.native
+    /* private */ var isVertical: js.Any = js.native
     
-    var resetText: js.Any = js.native
+    /* private */ var resetText: js.Any = js.native
   }
 }

@@ -14,6 +14,6 @@ object documentCardLogoBaseMod {
     extends Component[IDocumentCardLogoProps, js.Any, js.Any] {
     def this(props: IDocumentCardLogoProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
   }
 }

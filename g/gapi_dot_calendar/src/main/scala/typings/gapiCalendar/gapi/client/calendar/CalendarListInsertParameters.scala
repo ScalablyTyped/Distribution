@@ -15,22 +15,17 @@ trait CalendarListInsertParameters extends StObject {
 }
 object CalendarListInsertParameters {
   
-  @scala.inline
-  def apply(resource: CalendarListInput): CalendarListInsertParameters = {
+  inline def apply(resource: CalendarListInput): CalendarListInsertParameters = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListInsertParameters]
   }
   
-  @scala.inline
-  implicit class CalendarListInsertParametersMutableBuilder[Self <: CalendarListInsertParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarListInsertParameters](x: Self) {
     
-    @scala.inline
-    def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
+    inline def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRgbFormatUndefined: Self = StObject.set(x, "colorRgbFormat", js.undefined)
+    inline def setColorRgbFormatUndefined: Self = StObject.set(x, "colorRgbFormat", js.undefined)
     
-    @scala.inline
-    def setResource(value: CalendarListInput): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CalendarListInput): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

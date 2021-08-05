@@ -42,7 +42,7 @@ trait Rule extends StObject {
   
   var Name: String = js.native
   
-  @JSName("Outlook.Rule_typekey")
+  /* private */ @JSName("Outlook.Rule_typekey")
   var OutlookDotRule_typekey: Rule = js.native
   
   val Parent: js.Any = js.native

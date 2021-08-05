@@ -11,22 +11,17 @@ trait ListForwardingAddressesResponse extends StObject {
 }
 object ListForwardingAddressesResponse {
   
-  @scala.inline
-  def apply(): ListForwardingAddressesResponse = {
+  inline def apply(): ListForwardingAddressesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListForwardingAddressesResponse]
   }
   
-  @scala.inline
-  implicit class ListForwardingAddressesResponseMutableBuilder[Self <: ListForwardingAddressesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListForwardingAddressesResponse](x: Self) {
     
-    @scala.inline
-    def setForwardingAddresses(value: js.Array[ForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
+    inline def setForwardingAddresses(value: js.Array[ForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
+    inline def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
     
-    @scala.inline
-    def setForwardingAddressesVarargs(value: ForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
+    inline def setForwardingAddressesVarargs(value: ForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
   }
 }

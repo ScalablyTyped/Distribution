@@ -33,43 +33,31 @@ trait ColumnDragStartEventUIParam extends StObject {
 }
 object ColumnDragStartEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnDragStartEventUIParam = {
+  inline def apply(): ColumnDragStartEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnDragStartEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnDragStartEventUIParamMutableBuilder[Self <: ColumnDragStartEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnDragStartEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -38,15 +38,13 @@ object global {
         * and replace frequent keys and values with single letter substitutes.
         * @param config A GoldenLayout configuration object
         */
-      @scala.inline
-      def minifyConfig(config: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("minifyConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def minifyConfig(config: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("minifyConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /**
         * Static method on the GoldenLayout constructor! This method will reverse the minifications of minifyConfig.
         * @param minifiedConfig A minified GoldenLayout configuration object
         */
-      @scala.inline
-      def unminifyConfig(minifiedConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unminifyConfig")(minifiedConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def unminifyConfig(minifiedConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unminifyConfig")(minifiedConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
   }
 }

@@ -13,16 +13,13 @@ trait GetResolverRulePolicyRequest extends StObject {
 }
 object GetResolverRulePolicyRequest {
   
-  @scala.inline
-  def apply(Arn: Arn): GetResolverRulePolicyRequest = {
+  inline def apply(Arn: Arn): GetResolverRulePolicyRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverRulePolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetResolverRulePolicyRequestMutableBuilder[Self <: GetResolverRulePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResolverRulePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

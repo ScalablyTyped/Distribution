@@ -20,22 +20,17 @@ trait ocrBankCardOptions
 }
 object ocrBankCardOptions {
   
-  @scala.inline
-  def apply(image: String): ocrBankCardOptions = {
+  inline def apply(image: String): ocrBankCardOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrBankCardOptions]
   }
   
-  @scala.inline
-  implicit class ocrBankCardOptionsMutableBuilder[Self <: ocrBankCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ocrBankCardOptions](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ ocrBankCardResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ocrBankCardResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

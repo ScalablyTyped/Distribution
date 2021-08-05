@@ -13,16 +13,13 @@ trait DescribeWorkforceRequest extends StObject {
 }
 object DescribeWorkforceRequest {
   
-  @scala.inline
-  def apply(WorkforceName: WorkforceName): DescribeWorkforceRequest = {
+  inline def apply(WorkforceName: WorkforceName): DescribeWorkforceRequest = {
     val __obj = js.Dynamic.literal(WorkforceName = WorkforceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkforceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorkforceRequestMutableBuilder[Self <: DescribeWorkforceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkforceRequest](x: Self) {
     
-    @scala.inline
-    def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
+    inline def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
   }
 }

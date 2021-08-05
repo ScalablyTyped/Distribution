@@ -24,19 +24,15 @@ trait ChangeTableBorderRepositoryItemCommand
 }
 object ChangeTableBorderRepositoryItemCommand {
   
-  @scala.inline
-  def apply(execute: TableBorderSettings => Boolean, getState: () => CommandState[TableBorderSettings]): ChangeTableBorderRepositoryItemCommand = {
+  inline def apply(execute: TableBorderSettings => Boolean, getState: () => CommandState[TableBorderSettings]): ChangeTableBorderRepositoryItemCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTableBorderRepositoryItemCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableBorderRepositoryItemCommandMutableBuilder[Self <: ChangeTableBorderRepositoryItemCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableBorderRepositoryItemCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TableBorderSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TableBorderSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableBorderSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableBorderSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

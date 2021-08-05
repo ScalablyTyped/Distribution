@@ -11,19 +11,15 @@ trait LineFill extends StObject {
 }
 object LineFill {
   
-  @scala.inline
-  def apply(): LineFill = {
+  inline def apply(): LineFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineFill]
   }
   
-  @scala.inline
-  implicit class LineFillMutableBuilder[Self <: LineFill] (val x: Self) extends AnyVal {
+  extension [Self <: LineFill](x: Self) {
     
-    @scala.inline
-    def setSolidFill(value: SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+    inline def setSolidFill(value: SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+    inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListRegionalBucketsResult extends StObject {
 }
 object ListRegionalBucketsResult {
   
-  @scala.inline
-  def apply(): ListRegionalBucketsResult = {
+  inline def apply(): ListRegionalBucketsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRegionalBucketsResult]
   }
   
-  @scala.inline
-  implicit class ListRegionalBucketsResultMutableBuilder[Self <: ListRegionalBucketsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegionalBucketsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegionalBucketList(value: RegionalBucketList): Self = StObject.set(x, "RegionalBucketList", value.asInstanceOf[js.Any])
+    inline def setRegionalBucketList(value: RegionalBucketList): Self = StObject.set(x, "RegionalBucketList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalBucketListUndefined: Self = StObject.set(x, "RegionalBucketList", js.undefined)
+    inline def setRegionalBucketListUndefined: Self = StObject.set(x, "RegionalBucketList", js.undefined)
     
-    @scala.inline
-    def setRegionalBucketListVarargs(value: RegionalBucket*): Self = StObject.set(x, "RegionalBucketList", js.Array(value :_*))
+    inline def setRegionalBucketListVarargs(value: RegionalBucket*): Self = StObject.set(x, "RegionalBucketList", js.Array(value :_*))
   }
 }

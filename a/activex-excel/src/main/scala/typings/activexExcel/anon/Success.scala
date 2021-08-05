@@ -13,19 +13,15 @@ trait Success extends StObject {
 }
 object Success {
   
-  @scala.inline
-  def apply(Success: Boolean, Wb: Workbook): Success = {
+  inline def apply(Success: Boolean, Wb: Workbook): Success = {
     val __obj = js.Dynamic.literal(Success = Success.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Success]
   }
   
-  @scala.inline
-  implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
+  extension [Self <: Success](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
+    inline def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
   }
 }

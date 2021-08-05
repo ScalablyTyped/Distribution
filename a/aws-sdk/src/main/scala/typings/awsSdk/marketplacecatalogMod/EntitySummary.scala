@@ -38,49 +38,35 @@ trait EntitySummary extends StObject {
 }
 object EntitySummary {
   
-  @scala.inline
-  def apply(): EntitySummary = {
+  inline def apply(): EntitySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntitySummary]
   }
   
-  @scala.inline
-  implicit class EntitySummaryMutableBuilder[Self <: EntitySummary] (val x: Self) extends AnyVal {
+  extension [Self <: EntitySummary](x: Self) {
     
-    @scala.inline
-    def setEntityArn(value: ARN): Self = StObject.set(x, "EntityArn", value.asInstanceOf[js.Any])
+    inline def setEntityArn(value: ARN): Self = StObject.set(x, "EntityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityArnUndefined: Self = StObject.set(x, "EntityArn", js.undefined)
+    inline def setEntityArnUndefined: Self = StObject.set(x, "EntityArn", js.undefined)
     
-    @scala.inline
-    def setEntityId(value: ResourceId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: ResourceId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "EntityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "EntityId", js.undefined)
     
-    @scala.inline
-    def setEntityType(value: EntityType): Self = StObject.set(x, "EntityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: EntityType): Self = StObject.set(x, "EntityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "EntityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "EntityType", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: StringValue): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: StringValue): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setName(value: StringValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StringValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: StringValue): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: StringValue): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

@@ -32,20 +32,16 @@ object optionMod {
   }
   object OptionProps {
     
-    @scala.inline
-    def apply(focused: Boolean, selected: Boolean): OptionProps = {
+    inline def apply(focused: Boolean, selected: Boolean): OptionProps = {
       val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionProps]
     }
     
-    @scala.inline
-    implicit class OptionPropsMutableBuilder[Self <: OptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: OptionProps](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

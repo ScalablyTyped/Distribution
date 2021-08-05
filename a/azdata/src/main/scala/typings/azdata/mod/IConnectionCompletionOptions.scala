@@ -35,34 +35,25 @@ trait IConnectionCompletionOptions extends StObject {
 }
 object IConnectionCompletionOptions {
   
-  @scala.inline
-  def apply(saveConnection: Boolean): IConnectionCompletionOptions = {
+  inline def apply(saveConnection: Boolean): IConnectionCompletionOptions = {
     val __obj = js.Dynamic.literal(saveConnection = saveConnection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnectionCompletionOptions]
   }
   
-  @scala.inline
-  implicit class IConnectionCompletionOptionsMutableBuilder[Self <: IConnectionCompletionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IConnectionCompletionOptions](x: Self) {
     
-    @scala.inline
-    def setSaveConnection(value: Boolean): Self = StObject.set(x, "saveConnection", value.asInstanceOf[js.Any])
+    inline def setSaveConnection(value: Boolean): Self = StObject.set(x, "saveConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowConnectionDialogOnError(value: Boolean): Self = StObject.set(x, "showConnectionDialogOnError", value.asInstanceOf[js.Any])
+    inline def setShowConnectionDialogOnError(value: Boolean): Self = StObject.set(x, "showConnectionDialogOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowConnectionDialogOnErrorUndefined: Self = StObject.set(x, "showConnectionDialogOnError", js.undefined)
+    inline def setShowConnectionDialogOnErrorUndefined: Self = StObject.set(x, "showConnectionDialogOnError", js.undefined)
     
-    @scala.inline
-    def setShowDashboard(value: Boolean): Self = StObject.set(x, "showDashboard", value.asInstanceOf[js.Any])
+    inline def setShowDashboard(value: Boolean): Self = StObject.set(x, "showDashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDashboardUndefined: Self = StObject.set(x, "showDashboard", js.undefined)
+    inline def setShowDashboardUndefined: Self = StObject.set(x, "showDashboard", js.undefined)
     
-    @scala.inline
-    def setShowFirewallRuleOnError(value: Boolean): Self = StObject.set(x, "showFirewallRuleOnError", value.asInstanceOf[js.Any])
+    inline def setShowFirewallRuleOnError(value: Boolean): Self = StObject.set(x, "showFirewallRuleOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFirewallRuleOnErrorUndefined: Self = StObject.set(x, "showFirewallRuleOnError", js.undefined)
+    inline def setShowFirewallRuleOnErrorUndefined: Self = StObject.set(x, "showFirewallRuleOnError", js.undefined)
   }
 }

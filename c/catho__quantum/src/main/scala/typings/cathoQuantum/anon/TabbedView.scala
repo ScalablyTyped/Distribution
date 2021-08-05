@@ -10,19 +10,15 @@ trait TabbedView extends StObject {
 }
 object TabbedView {
   
-  @scala.inline
-  def apply(): TabbedView = {
+  inline def apply(): TabbedView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabbedView]
   }
   
-  @scala.inline
-  implicit class TabbedViewMutableBuilder[Self <: TabbedView] (val x: Self) extends AnyVal {
+  extension [Self <: TabbedView](x: Self) {
     
-    @scala.inline
-    def setTabbedView(value: js.Object): Self = StObject.set(x, "tabbedView", value.asInstanceOf[js.Any])
+    inline def setTabbedView(value: js.Object): Self = StObject.set(x, "tabbedView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabbedViewUndefined: Self = StObject.set(x, "tabbedView", js.undefined)
+    inline def setTabbedViewUndefined: Self = StObject.set(x, "tabbedView", js.undefined)
   }
 }

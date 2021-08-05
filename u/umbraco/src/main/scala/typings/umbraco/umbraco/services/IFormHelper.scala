@@ -73,8 +73,7 @@ trait IFormHelper extends StObject {
 }
 object IFormHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handleError: js.Object => Unit,
     handleServerValidation: IModelState => Unit,
     resetForm: /* repeated */ js.Any => Unit,
@@ -84,19 +83,14 @@ object IFormHelper {
     __obj.asInstanceOf[IFormHelper]
   }
   
-  @scala.inline
-  implicit class IFormHelperMutableBuilder[Self <: IFormHelper] (val x: Self) extends AnyVal {
+  extension [Self <: IFormHelper](x: Self) {
     
-    @scala.inline
-    def setHandleError(value: js.Object => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction1(value))
+    inline def setHandleError(value: js.Object => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleServerValidation(value: IModelState => Unit): Self = StObject.set(x, "handleServerValidation", js.Any.fromFunction1(value))
+    inline def setHandleServerValidation(value: IModelState => Unit): Self = StObject.set(x, "handleServerValidation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction1(value))
+    inline def setResetForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmitForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
+    inline def setSubmitForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
   }
 }

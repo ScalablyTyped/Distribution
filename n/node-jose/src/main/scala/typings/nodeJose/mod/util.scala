@@ -11,14 +11,10 @@ object util {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asBuffer(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def asBuffer(input: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def asBuffer(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def asBuffer(input: Buffer, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def asBuffer(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def asBuffer(input: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def asBuffer(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def asBuffer(input: Buffer, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("asBuffer")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   object base64url {
     
@@ -26,21 +22,15 @@ object util {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decode(base64url: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64url.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def decode(base64url: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64url.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @scala.inline
-    def encode(buffer: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def encode(buffer: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def encode(buffer: Buffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encode(buffer: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encode(buffer: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encode(buffer: Buffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @scala.inline
-  def randomBytes(len: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(len.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def randomBytes(len: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(len.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   object utf8 {
     
@@ -48,10 +38,8 @@ object util {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

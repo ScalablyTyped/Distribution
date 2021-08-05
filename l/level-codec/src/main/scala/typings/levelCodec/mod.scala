@@ -75,27 +75,21 @@ object mod {
   }
   object CodecEncoder {
     
-    @scala.inline
-    def apply(buffer: Boolean, decode: js.Any => js.Any, encode: js.Any => js.Any, `type`: String): CodecEncoder = {
+    inline def apply(buffer: Boolean, decode: js.Any => js.Any, encode: js.Any => js.Any, `type`: String): CodecEncoder = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodecEncoder]
     }
     
-    @scala.inline
-    implicit class CodecEncoderMutableBuilder[Self <: CodecEncoder] (val x: Self) extends AnyVal {
+    extension [Self <: CodecEncoder](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecode(value: js.Any => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: js.Any => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: js.Any => js.Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Any => js.Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,26 +101,20 @@ object mod {
   }
   object CodecOptions {
     
-    @scala.inline
-    def apply(): CodecOptions = {
+    inline def apply(): CodecOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CodecOptions]
     }
     
-    @scala.inline
-    implicit class CodecOptionsMutableBuilder[Self <: CodecOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CodecOptions](x: Self) {
       
-      @scala.inline
-      def setKeyEncoding(value: String | CodecEncoder): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
+      inline def setKeyEncoding(value: String | CodecEncoder): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
+      inline def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
       
-      @scala.inline
-      def setValueEncoding(value: String | CodecEncoder): Self = StObject.set(x, "valueEncoding", value.asInstanceOf[js.Any])
+      inline def setValueEncoding(value: String | CodecEncoder): Self = StObject.set(x, "valueEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueEncodingUndefined: Self = StObject.set(x, "valueEncoding", js.undefined)
+      inline def setValueEncodingUndefined: Self = StObject.set(x, "valueEncoding", js.undefined)
     }
   }
 }

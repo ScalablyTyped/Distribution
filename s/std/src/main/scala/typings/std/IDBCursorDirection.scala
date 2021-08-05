@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDBCursorDirection extends StObject
 object IDBCursorDirection {
   
-  @scala.inline
-  def next: typings.std.stdStrings.next = "next".asInstanceOf[typings.std.stdStrings.next]
+  inline def next: typings.std.stdStrings.next = "next".asInstanceOf[typings.std.stdStrings.next]
   
-  @scala.inline
-  def nextunique: typings.std.stdStrings.nextunique = "nextunique".asInstanceOf[typings.std.stdStrings.nextunique]
+  inline def nextunique: typings.std.stdStrings.nextunique = "nextunique".asInstanceOf[typings.std.stdStrings.nextunique]
   
-  @scala.inline
-  def prev: typings.std.stdStrings.prev = "prev".asInstanceOf[typings.std.stdStrings.prev]
+  inline def prev: typings.std.stdStrings.prev = "prev".asInstanceOf[typings.std.stdStrings.prev]
   
-  @scala.inline
-  def prevunique: typings.std.stdStrings.prevunique = "prevunique".asInstanceOf[typings.std.stdStrings.prevunique]
+  inline def prevunique: typings.std.stdStrings.prevunique = "prevunique".asInstanceOf[typings.std.stdStrings.prevunique]
 }

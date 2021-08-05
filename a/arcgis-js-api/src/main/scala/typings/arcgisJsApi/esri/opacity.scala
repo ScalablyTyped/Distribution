@@ -20,16 +20,13 @@ trait opacity extends StObject {
 }
 object opacity {
   
-  @scala.inline
-  def apply(createVisualVariable: opacityCreateVisualVariableParams => js.Promise[opacityVisualVariableResult]): opacity = {
+  inline def apply(createVisualVariable: opacityCreateVisualVariableParams => js.Promise[opacityVisualVariableResult]): opacity = {
     val __obj = js.Dynamic.literal(createVisualVariable = js.Any.fromFunction1(createVisualVariable))
     __obj.asInstanceOf[opacity]
   }
   
-  @scala.inline
-  implicit class opacityMutableBuilder[Self <: opacity] (val x: Self) extends AnyVal {
+  extension [Self <: opacity](x: Self) {
     
-    @scala.inline
-    def setCreateVisualVariable(value: opacityCreateVisualVariableParams => js.Promise[opacityVisualVariableResult]): Self = StObject.set(x, "createVisualVariable", js.Any.fromFunction1(value))
+    inline def setCreateVisualVariable(value: opacityCreateVisualVariableParams => js.Promise[opacityVisualVariableResult]): Self = StObject.set(x, "createVisualVariable", js.Any.fromFunction1(value))
   }
 }

@@ -36,41 +36,30 @@ object mod {
   }
   object AddonParameters {
     
-    @scala.inline
-    def apply(): AddonParameters = {
+    inline def apply(): AddonParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddonParameters]
     }
     
-    @scala.inline
-    implicit class AddonParametersMutableBuilder[Self <: AddonParameters] (val x: Self) extends AnyVal {
+    extension [Self <: AddonParameters](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String | displayNameFunc): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String | displayNameFunc): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameFunction1(value: /* element */ ReactElement => String): Self = StObject.set(x, "displayName", js.Any.fromFunction1(value))
+      inline def setDisplayNameFunction1(value: /* element */ ReactElement => String): Self = StObject.set(x, "displayName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setEnableBeautify(value: Boolean): Self = StObject.set(x, "enableBeautify", value.asInstanceOf[js.Any])
+      inline def setEnableBeautify(value: Boolean): Self = StObject.set(x, "enableBeautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableBeautifyUndefined: Self = StObject.set(x, "enableBeautify", js.undefined)
+      inline def setEnableBeautifyUndefined: Self = StObject.set(x, "enableBeautify", js.undefined)
       
-      @scala.inline
-      def setOnBeforeRender(value: /* domString */ String => String): Self = StObject.set(x, "onBeforeRender", js.Any.fromFunction1(value))
+      inline def setOnBeforeRender(value: /* domString */ String => String): Self = StObject.set(x, "onBeforeRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeRenderUndefined: Self = StObject.set(x, "onBeforeRender", js.undefined)
+      inline def setOnBeforeRenderUndefined: Self = StObject.set(x, "onBeforeRender", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   
@@ -89,8 +78,7 @@ object mod {
     }
     object ClientStoryApi {
       
-      @scala.inline
-      def apply[StoryFnReturnType](
+      inline def apply[StoryFnReturnType](
         addDecorator: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType],
         addParameters: ParametersjsxAddonParamet => StoryApi[StoryFnReturnType],
         storiesOf: (String, NodeModule) => StoryApi[StoryFnReturnType] & AddWithJSX[StoryFnReturnType]
@@ -99,17 +87,13 @@ object mod {
         __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
       }
       
-      @scala.inline
-      implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
+      extension [Self <: ClientStoryApi[?], StoryFnReturnType](x: Self & ClientStoryApi[StoryFnReturnType]) {
         
-        @scala.inline
-        def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
+        inline def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddParameters(value: ParametersjsxAddonParamet => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
+        inline def setAddParameters(value: ParametersjsxAddonParamet => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStoriesOf(value: (String, NodeModule) => StoryApi[StoryFnReturnType] & AddWithJSX[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
+        inline def setStoriesOf(value: (String, NodeModule) => StoryApi[StoryFnReturnType] & AddWithJSX[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
       }
     }
   }

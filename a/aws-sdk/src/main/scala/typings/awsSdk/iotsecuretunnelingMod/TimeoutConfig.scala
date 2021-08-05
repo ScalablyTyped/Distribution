@@ -13,19 +13,15 @@ trait TimeoutConfig extends StObject {
 }
 object TimeoutConfig {
   
-  @scala.inline
-  def apply(): TimeoutConfig = {
+  inline def apply(): TimeoutConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeoutConfig]
   }
   
-  @scala.inline
-  implicit class TimeoutConfigMutableBuilder[Self <: TimeoutConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TimeoutConfig](x: Self) {
     
-    @scala.inline
-    def setMaxLifetimeTimeoutMinutes(value: TimeoutInMin): Self = StObject.set(x, "maxLifetimeTimeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setMaxLifetimeTimeoutMinutes(value: TimeoutInMin): Self = StObject.set(x, "maxLifetimeTimeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLifetimeTimeoutMinutesUndefined: Self = StObject.set(x, "maxLifetimeTimeoutMinutes", js.undefined)
+    inline def setMaxLifetimeTimeoutMinutesUndefined: Self = StObject.set(x, "maxLifetimeTimeoutMinutes", js.undefined)
   }
 }

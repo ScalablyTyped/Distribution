@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Toolbar")
 @js.native
-class Toolbar protected ()
+/* private */ class Toolbar ()
   extends StObject
      with typings.activexExcel.Excel.Toolbar {
   
@@ -25,7 +25,7 @@ class Toolbar protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Toolbar_typekey")
   var ExcelDotToolbar_typekey: typings.activexExcel.Excel.Toolbar = js.native
   

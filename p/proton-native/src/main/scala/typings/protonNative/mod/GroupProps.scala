@@ -38,43 +38,31 @@ trait GroupProps
 }
 object GroupProps {
   
-  @scala.inline
-  def apply(): GroupProps = {
+  inline def apply(): GroupProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupProps]
   }
   
-  @scala.inline
-  implicit class GroupPropsMutableBuilder[Self <: GroupProps] (val x: Self) extends AnyVal {
+  extension [Self <: GroupProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMargined(value: Boolean): Self = StObject.set(x, "margined", value.asInstanceOf[js.Any])
+    inline def setMargined(value: Boolean): Self = StObject.set(x, "margined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginedUndefined: Self = StObject.set(x, "margined", js.undefined)
+    inline def setMarginedUndefined: Self = StObject.set(x, "margined", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

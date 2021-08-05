@@ -13,16 +13,13 @@ trait GetDomainAssociationResult extends StObject {
 }
 object GetDomainAssociationResult {
   
-  @scala.inline
-  def apply(domainAssociation: DomainAssociation): GetDomainAssociationResult = {
+  inline def apply(domainAssociation: DomainAssociation): GetDomainAssociationResult = {
     val __obj = js.Dynamic.literal(domainAssociation = domainAssociation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainAssociationResult]
   }
   
-  @scala.inline
-  implicit class GetDomainAssociationResultMutableBuilder[Self <: GetDomainAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainAssociationResult](x: Self) {
     
-    @scala.inline
-    def setDomainAssociation(value: DomainAssociation): Self = StObject.set(x, "domainAssociation", value.asInstanceOf[js.Any])
+    inline def setDomainAssociation(value: DomainAssociation): Self = StObject.set(x, "domainAssociation", value.asInstanceOf[js.Any])
   }
 }

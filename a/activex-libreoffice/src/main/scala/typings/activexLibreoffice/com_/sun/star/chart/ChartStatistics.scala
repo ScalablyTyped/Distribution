@@ -95,8 +95,7 @@ trait ChartStatistics
 }
 object ChartStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConstantErrorHigh: Double,
     ConstantErrorLow: Double,
     ErrorBarRangeNegative: String,
@@ -124,40 +123,28 @@ object ChartStatistics {
     __obj.asInstanceOf[ChartStatistics]
   }
   
-  @scala.inline
-  implicit class ChartStatisticsMutableBuilder[Self <: ChartStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ChartStatistics](x: Self) {
     
-    @scala.inline
-    def setConstantErrorHigh(value: Double): Self = StObject.set(x, "ConstantErrorHigh", value.asInstanceOf[js.Any])
+    inline def setConstantErrorHigh(value: Double): Self = StObject.set(x, "ConstantErrorHigh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantErrorLow(value: Double): Self = StObject.set(x, "ConstantErrorLow", value.asInstanceOf[js.Any])
+    inline def setConstantErrorLow(value: Double): Self = StObject.set(x, "ConstantErrorLow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorBarRangeNegative(value: String): Self = StObject.set(x, "ErrorBarRangeNegative", value.asInstanceOf[js.Any])
+    inline def setErrorBarRangeNegative(value: String): Self = StObject.set(x, "ErrorBarRangeNegative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorBarRangePositive(value: String): Self = StObject.set(x, "ErrorBarRangePositive", value.asInstanceOf[js.Any])
+    inline def setErrorBarRangePositive(value: String): Self = StObject.set(x, "ErrorBarRangePositive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorBarStyle(value: Double): Self = StObject.set(x, "ErrorBarStyle", value.asInstanceOf[js.Any])
+    inline def setErrorBarStyle(value: Double): Self = StObject.set(x, "ErrorBarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCategory(value: ChartErrorCategory): Self = StObject.set(x, "ErrorCategory", value.asInstanceOf[js.Any])
+    inline def setErrorCategory(value: ChartErrorCategory): Self = StObject.set(x, "ErrorCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorIndicator(value: ChartErrorIndicatorType): Self = StObject.set(x, "ErrorIndicator", value.asInstanceOf[js.Any])
+    inline def setErrorIndicator(value: ChartErrorIndicatorType): Self = StObject.set(x, "ErrorIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMargin(value: Double): Self = StObject.set(x, "ErrorMargin", value.asInstanceOf[js.Any])
+    inline def setErrorMargin(value: Double): Self = StObject.set(x, "ErrorMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanValue(value: Boolean): Self = StObject.set(x, "MeanValue", value.asInstanceOf[js.Any])
+    inline def setMeanValue(value: Boolean): Self = StObject.set(x, "MeanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageError(value: Double): Self = StObject.set(x, "PercentageError", value.asInstanceOf[js.Any])
+    inline def setPercentageError(value: Double): Self = StObject.set(x, "PercentageError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegressionCurves(value: ChartRegressionCurveType): Self = StObject.set(x, "RegressionCurves", value.asInstanceOf[js.Any])
+    inline def setRegressionCurves(value: ChartRegressionCurveType): Self = StObject.set(x, "RegressionCurves", value.asInstanceOf[js.Any])
   }
 }

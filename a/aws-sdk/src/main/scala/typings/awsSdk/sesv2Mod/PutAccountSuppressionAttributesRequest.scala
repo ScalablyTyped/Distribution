@@ -13,22 +13,17 @@ trait PutAccountSuppressionAttributesRequest extends StObject {
 }
 object PutAccountSuppressionAttributesRequest {
   
-  @scala.inline
-  def apply(): PutAccountSuppressionAttributesRequest = {
+  inline def apply(): PutAccountSuppressionAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAccountSuppressionAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutAccountSuppressionAttributesRequestMutableBuilder[Self <: PutAccountSuppressionAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountSuppressionAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
+    inline def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
+    inline def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
     
-    @scala.inline
-    def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
+    inline def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
   }
 }

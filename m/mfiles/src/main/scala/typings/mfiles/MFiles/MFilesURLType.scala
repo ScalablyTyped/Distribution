@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFilesURLType extends StObject
 object MFilesURLType {
   
-  @scala.inline
-  def Edit: `3` = 3.asInstanceOf[`3`]
+  inline def Edit: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Open: `1` = 1.asInstanceOf[`1`]
+  inline def Open: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Show: `0` = 0.asInstanceOf[`0`]
+  inline def Show: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ShowMetadata: `6` = 6.asInstanceOf[`6`]
+  inline def ShowMetadata: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def View: `2` = 2.asInstanceOf[`2`]
+  inline def View: `2` = 2.asInstanceOf[`2`]
 }

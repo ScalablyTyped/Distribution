@@ -13,22 +13,17 @@ trait ParameterConstraints extends StObject {
 }
 object ParameterConstraints {
   
-  @scala.inline
-  def apply(): ParameterConstraints = {
+  inline def apply(): ParameterConstraints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterConstraints]
   }
   
-  @scala.inline
-  implicit class ParameterConstraintsMutableBuilder[Self <: ParameterConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterConstraints](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: AllowedValues): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: AllowedValues): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
+    inline def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: AllowedValue*): Self = StObject.set(x, "AllowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: AllowedValue*): Self = StObject.set(x, "AllowedValues", js.Array(value :_*))
   }
 }

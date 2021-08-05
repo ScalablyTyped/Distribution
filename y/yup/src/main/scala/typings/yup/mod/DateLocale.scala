@@ -15,31 +15,23 @@ trait DateLocale extends StObject {
 }
 object DateLocale {
   
-  @scala.inline
-  def apply(): DateLocale = {
+  inline def apply(): DateLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateLocale]
   }
   
-  @scala.inline
-  implicit class DateLocaleMutableBuilder[Self <: DateLocale] (val x: Self) extends AnyVal {
+  extension [Self <: DateLocale](x: Self) {
     
-    @scala.inline
-    def setMax(value: TestOptionsMessage[`1`, js.Any]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: TestOptionsMessage[`1`, js.Any]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFunction1(value: /* params */ `1` & PartialTestMessageParams => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMaxFunction1(value: /* params */ `1` & PartialTestMessageParams => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: TestOptionsMessage[`0`, js.Any]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: TestOptionsMessage[`0`, js.Any]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFunction1(value: /* params */ `0` & PartialTestMessageParams => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMinFunction1(value: /* params */ `0` & PartialTestMessageParams => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait GooglePrivacyDlpV2RedactImageResponse extends StObject {
 }
 object GooglePrivacyDlpV2RedactImageResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2RedactImageResponse = {
+  inline def apply(): GooglePrivacyDlpV2RedactImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2RedactImageResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RedactImageResponseMutableBuilder[Self <: GooglePrivacyDlpV2RedactImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2RedactImageResponse](x: Self) {
     
-    @scala.inline
-    def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
+    inline def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractedTextUndefined: Self = StObject.set(x, "extractedText", js.undefined)
+    inline def setExtractedTextUndefined: Self = StObject.set(x, "extractedText", js.undefined)
     
-    @scala.inline
-    def setInspectResult(value: GooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "inspectResult", value.asInstanceOf[js.Any])
+    inline def setInspectResult(value: GooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "inspectResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectResultUndefined: Self = StObject.set(x, "inspectResult", js.undefined)
+    inline def setInspectResultUndefined: Self = StObject.set(x, "inspectResult", js.undefined)
     
-    @scala.inline
-    def setRedactedImage(value: String): Self = StObject.set(x, "redactedImage", value.asInstanceOf[js.Any])
+    inline def setRedactedImage(value: String): Self = StObject.set(x, "redactedImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactedImageUndefined: Self = StObject.set(x, "redactedImage", js.undefined)
+    inline def setRedactedImageUndefined: Self = StObject.set(x, "redactedImage", js.undefined)
   }
 }

@@ -21,31 +21,25 @@ trait FlexWrapProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
 }
 object FlexWrapProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexWrapProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexWrapProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexWrapProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class FlexWrapPropsMutableBuilder[Self <: FlexWrapProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexWrapProps[ThemeType]) extends AnyVal {
+  extension [Self <: FlexWrapProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FlexWrapProps[ThemeType]) {
     
-    @scala.inline
-    def setFlexWrap(
+    inline def setFlexWrap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexWrapNull: Self = StObject.set(x, "flexWrap", null)
+    inline def setFlexWrapNull: Self = StObject.set(x, "flexWrap", null)
     
-    @scala.inline
-    def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+    inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
-    @scala.inline
-    def setFlexWrapVarargs(
+    inline def setFlexWrapVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any) | Null)*
     ): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
   }

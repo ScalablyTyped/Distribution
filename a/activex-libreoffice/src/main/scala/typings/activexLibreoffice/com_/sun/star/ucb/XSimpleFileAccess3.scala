@@ -36,8 +36,7 @@ trait XSimpleFileAccess3
 }
 object XSimpleFileAccess3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     copy: (String, String) => Unit,
     createFolder: String => Unit,
@@ -65,13 +64,10 @@ object XSimpleFileAccess3 {
     __obj.asInstanceOf[XSimpleFileAccess3]
   }
   
-  @scala.inline
-  implicit class XSimpleFileAccess3MutableBuilder[Self <: XSimpleFileAccess3] (val x: Self) extends AnyVal {
+  extension [Self <: XSimpleFileAccess3](x: Self) {
     
-    @scala.inline
-    def setIsHidden(value: String => Boolean): Self = StObject.set(x, "isHidden", js.Any.fromFunction1(value))
+    inline def setIsHidden(value: String => Boolean): Self = StObject.set(x, "isHidden", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHidden(value: (String, Boolean) => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction2(value))
+    inline def setSetHidden(value: (String, Boolean) => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction2(value))
   }
 }

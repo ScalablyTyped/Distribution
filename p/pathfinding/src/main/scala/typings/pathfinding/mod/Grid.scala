@@ -29,6 +29,5 @@ trait Grid
 }
 object Grid {
   
-  @scala.inline
-  def apply: Grid = ^.asInstanceOf[js.Dynamic].selectDynamic("Grid").asInstanceOf[Grid]
+  inline def apply: Grid = ^.asInstanceOf[js.Dynamic].selectDynamic("Grid").asInstanceOf[Grid]
 }

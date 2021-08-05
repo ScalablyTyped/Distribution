@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ColorFormat")
 @js.native
-class ColorFormat protected ()
+/* private */ class ColorFormat ()
   extends StObject
      with typings.activexWord.Word.ColorFormat {
   
@@ -61,7 +61,7 @@ class ColorFormat protected ()
   /* CompleteClass */
   override val Type: MsoColorType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ColorFormat_typekey")
   var WordDotColorFormat_typekey: typings.activexWord.Word.ColorFormat = js.native
   

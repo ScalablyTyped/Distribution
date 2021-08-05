@@ -50,67 +50,47 @@ trait RegionDescription extends StObject {
 }
 object RegionDescription {
   
-  @scala.inline
-  def apply(): RegionDescription = {
+  inline def apply(): RegionDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionDescription]
   }
   
-  @scala.inline
-  implicit class RegionDescriptionMutableBuilder[Self <: RegionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: RegionDescription](x: Self) {
     
-    @scala.inline
-    def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
+    inline def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredNumberOfDomainControllersUndefined: Self = StObject.set(x, "DesiredNumberOfDomainControllers", js.undefined)
+    inline def setDesiredNumberOfDomainControllersUndefined: Self = StObject.set(x, "DesiredNumberOfDomainControllers", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
+    inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     
-    @scala.inline
-    def setRegionType(value: RegionType): Self = StObject.set(x, "RegionType", value.asInstanceOf[js.Any])
+    inline def setRegionType(value: RegionType): Self = StObject.set(x, "RegionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionTypeUndefined: Self = StObject.set(x, "RegionType", js.undefined)
+    inline def setRegionTypeUndefined: Self = StObject.set(x, "RegionType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DirectoryStage): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DirectoryStage): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLastUpdatedDateTime(value: StateLastUpdatedDateTime): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStatusLastUpdatedDateTime(value: StateLastUpdatedDateTime): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StatusLastUpdatedDateTime", js.undefined)
+    inline def setStatusLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StatusLastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVpcSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
+    inline def setVpcSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSettingsUndefined: Self = StObject.set(x, "VpcSettings", js.undefined)
+    inline def setVpcSettingsUndefined: Self = StObject.set(x, "VpcSettings", js.undefined)
   }
 }

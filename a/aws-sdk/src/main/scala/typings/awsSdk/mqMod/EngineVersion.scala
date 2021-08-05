@@ -13,19 +13,15 @@ trait EngineVersion extends StObject {
 }
 object EngineVersion {
   
-  @scala.inline
-  def apply(): EngineVersion = {
+  inline def apply(): EngineVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EngineVersion]
   }
   
-  @scala.inline
-  implicit class EngineVersionMutableBuilder[Self <: EngineVersion] (val x: Self) extends AnyVal {
+  extension [Self <: EngineVersion](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -35,40 +35,29 @@ trait BucketReplicationConfigurationRuleDestination extends StObject {
 }
 object BucketReplicationConfigurationRuleDestination {
   
-  @scala.inline
-  def apply(bucket: Input[String]): BucketReplicationConfigurationRuleDestination = {
+  inline def apply(bucket: Input[String]): BucketReplicationConfigurationRuleDestination = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRuleDestination]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationRuleDestinationMutableBuilder[Self <: BucketReplicationConfigurationRuleDestination] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfigurationRuleDestination](x: Self) {
     
-    @scala.inline
-    def setAccessControlTranslation(value: Input[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]): Self = StObject.set(x, "accessControlTranslation", value.asInstanceOf[js.Any])
+    inline def setAccessControlTranslation(value: Input[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]): Self = StObject.set(x, "accessControlTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlTranslationUndefined: Self = StObject.set(x, "accessControlTranslation", js.undefined)
+    inline def setAccessControlTranslationUndefined: Self = StObject.set(x, "accessControlTranslation", js.undefined)
     
-    @scala.inline
-    def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaKmsKeyId(value: Input[String]): Self = StObject.set(x, "replicaKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setReplicaKmsKeyId(value: Input[String]): Self = StObject.set(x, "replicaKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaKmsKeyIdUndefined: Self = StObject.set(x, "replicaKmsKeyId", js.undefined)
+    inline def setReplicaKmsKeyIdUndefined: Self = StObject.set(x, "replicaKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
   }
 }

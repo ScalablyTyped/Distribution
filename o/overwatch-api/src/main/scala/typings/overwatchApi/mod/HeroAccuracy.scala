@@ -12,16 +12,13 @@ trait HeroAccuracy
 }
 object HeroAccuracy {
   
-  @scala.inline
-  def apply(hero: String, img: String, weapon_accuracy: String): HeroAccuracy = {
+  inline def apply(hero: String, img: String, weapon_accuracy: String): HeroAccuracy = {
     val __obj = js.Dynamic.literal(hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], weapon_accuracy = weapon_accuracy.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeroAccuracy]
   }
   
-  @scala.inline
-  implicit class HeroAccuracyMutableBuilder[Self <: HeroAccuracy] (val x: Self) extends AnyVal {
+  extension [Self <: HeroAccuracy](x: Self) {
     
-    @scala.inline
-    def setWeapon_accuracy(value: String): Self = StObject.set(x, "weapon_accuracy", value.asInstanceOf[js.Any])
+    inline def setWeapon_accuracy(value: String): Self = StObject.set(x, "weapon_accuracy", value.asInstanceOf[js.Any])
   }
 }

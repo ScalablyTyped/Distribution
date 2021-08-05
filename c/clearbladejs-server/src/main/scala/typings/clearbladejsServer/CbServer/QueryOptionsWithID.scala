@@ -10,8 +10,7 @@ trait QueryOptionsWithID
      with QueryOptions
 object QueryOptionsWithID {
   
-  @scala.inline
-  def apply(collectionID: String): QueryOptionsWithID = {
+  inline def apply(collectionID: String): QueryOptionsWithID = {
     val __obj = js.Dynamic.literal(collectionID = collectionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptionsWithID]
   }

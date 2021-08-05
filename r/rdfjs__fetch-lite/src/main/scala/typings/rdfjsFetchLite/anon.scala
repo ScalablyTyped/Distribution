@@ -27,17 +27,14 @@ object anon {
   }
   object PickparsersSinkMapEventEm {
     
-    @scala.inline
-    def apply(parsers: SinkMap[EventEmitter, Stream[Quad]]): PickparsersSinkMapEventEm = {
+    inline def apply(parsers: SinkMap[EventEmitter, Stream[Quad]]): PickparsersSinkMapEventEm = {
       val __obj = js.Dynamic.literal(parsers = parsers.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickparsersSinkMapEventEm]
     }
     
-    @scala.inline
-    implicit class PickparsersSinkMapEventEmMutableBuilder[Self <: PickparsersSinkMapEventEm] (val x: Self) extends AnyVal {
+    extension [Self <: PickparsersSinkMapEventEm](x: Self) {
       
-      @scala.inline
-      def setParsers(value: SinkMap[EventEmitter, Stream[Quad]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+      inline def setParsers(value: SinkMap[EventEmitter, Stream[Quad]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     }
   }
 }

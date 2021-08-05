@@ -24,31 +24,23 @@ trait ProjectLogsConfigCloudwatchLogs extends StObject {
 }
 object ProjectLogsConfigCloudwatchLogs {
   
-  @scala.inline
-  def apply(): ProjectLogsConfigCloudwatchLogs = {
+  inline def apply(): ProjectLogsConfigCloudwatchLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectLogsConfigCloudwatchLogs]
   }
   
-  @scala.inline
-  implicit class ProjectLogsConfigCloudwatchLogsMutableBuilder[Self <: ProjectLogsConfigCloudwatchLogs] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectLogsConfigCloudwatchLogs](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: Input[String]): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: Input[String]): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: Input[String]): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: Input[String]): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

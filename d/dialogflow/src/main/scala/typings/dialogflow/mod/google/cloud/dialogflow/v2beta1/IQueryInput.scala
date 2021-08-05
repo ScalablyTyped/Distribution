@@ -18,40 +18,29 @@ trait IQueryInput extends StObject {
 }
 object IQueryInput {
   
-  @scala.inline
-  def apply(): IQueryInput = {
+  inline def apply(): IQueryInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IQueryInput]
   }
   
-  @scala.inline
-  implicit class IQueryInputMutableBuilder[Self <: IQueryInput] (val x: Self) extends AnyVal {
+  extension [Self <: IQueryInput](x: Self) {
     
-    @scala.inline
-    def setAudioConfig(value: IInputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+    inline def setAudioConfig(value: IInputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioConfigNull: Self = StObject.set(x, "audioConfig", null)
+    inline def setAudioConfigNull: Self = StObject.set(x, "audioConfig", null)
     
-    @scala.inline
-    def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+    inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
-    @scala.inline
-    def setEvent(value: IEventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: IEventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNull: Self = StObject.set(x, "event", null)
+    inline def setEventNull: Self = StObject.set(x, "event", null)
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setText(value: ITextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: ITextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

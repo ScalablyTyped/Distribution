@@ -18,20 +18,16 @@ trait TestSessionWorkItemReference extends StObject {
 }
 object TestSessionWorkItemReference {
   
-  @scala.inline
-  def apply(id: Double, `type`: String): TestSessionWorkItemReference = {
+  inline def apply(id: Double, `type`: String): TestSessionWorkItemReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSessionWorkItemReference]
   }
   
-  @scala.inline
-  implicit class TestSessionWorkItemReferenceMutableBuilder[Self <: TestSessionWorkItemReference] (val x: Self) extends AnyVal {
+  extension [Self <: TestSessionWorkItemReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

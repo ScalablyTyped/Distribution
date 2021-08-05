@@ -31,31 +31,23 @@ trait DatumDef[F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | S
 }
 object DatumDef {
   
-  @scala.inline
-  def apply[F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */](): DatumDef[F, V] = {
+  inline def apply[F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */](): DatumDef[F, V] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatumDef[F, V]]
   }
   
-  @scala.inline
-  implicit class DatumDefMutableBuilder[Self <: DatumDef[?, ?], F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */] (val x: Self & (DatumDef[F, V])) extends AnyVal {
+  extension [Self <: DatumDef[?, ?], F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */](x: Self & (DatumDef[F, V])) {
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setDatum(value: V | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: V | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListFargateProfilesResponse extends StObject {
 }
 object ListFargateProfilesResponse {
   
-  @scala.inline
-  def apply(): ListFargateProfilesResponse = {
+  inline def apply(): ListFargateProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFargateProfilesResponse]
   }
   
-  @scala.inline
-  implicit class ListFargateProfilesResponseMutableBuilder[Self <: ListFargateProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFargateProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setFargateProfileNames(value: StringList): Self = StObject.set(x, "fargateProfileNames", value.asInstanceOf[js.Any])
+    inline def setFargateProfileNames(value: StringList): Self = StObject.set(x, "fargateProfileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFargateProfileNamesUndefined: Self = StObject.set(x, "fargateProfileNames", js.undefined)
+    inline def setFargateProfileNamesUndefined: Self = StObject.set(x, "fargateProfileNames", js.undefined)
     
-    @scala.inline
-    def setFargateProfileNamesVarargs(value: String*): Self = StObject.set(x, "fargateProfileNames", js.Array(value :_*))
+    inline def setFargateProfileNamesVarargs(value: String*): Self = StObject.set(x, "fargateProfileNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

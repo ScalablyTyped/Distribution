@@ -15,12 +15,10 @@ object testConfig {
   @JSImport("rascal", "testConfig.defaults")
   @js.native
   def defaults: Redeliveries = js.native
-  @scala.inline
-  def defaults_=(x: Redeliveries): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  inline def defaults_=(x: Redeliveries): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
   @JSImport("rascal", "testConfig.redeliveries")
   @js.native
   def redeliveries: Counters = js.native
-  @scala.inline
-  def redeliveries_=(x: Counters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("redeliveries")(x.asInstanceOf[js.Any])
+  inline def redeliveries_=(x: Counters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("redeliveries")(x.asInstanceOf[js.Any])
 }

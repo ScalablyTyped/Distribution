@@ -10,6 +10,5 @@ object global {
   @JSGlobal("Sugar")
   @js.native
   def Sugar: typings.sugarCore.sugarjs.Sugar = js.native
-  @scala.inline
-  def Sugar_=(x: Sugar): Unit = js.Dynamic.global.updateDynamic("Sugar")(x.asInstanceOf[js.Any])
+  inline def Sugar_=(x: Sugar): Unit = js.Dynamic.global.updateDynamic("Sugar")(x.asInstanceOf[js.Any])
 }

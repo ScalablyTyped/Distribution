@@ -12,22 +12,17 @@ trait RelayOption extends StObject {
 }
 object RelayOption {
   
-  @scala.inline
-  def apply(pin: Double | String): RelayOption = {
+  inline def apply(pin: Double | String): RelayOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayOption]
   }
   
-  @scala.inline
-  implicit class RelayOptionMutableBuilder[Self <: RelayOption] (val x: Self) extends AnyVal {
+  extension [Self <: RelayOption](x: Self) {
     
-    @scala.inline
-    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -9,7 +9,7 @@ trait UtilObject extends StObject {
   
   val Date: VarDate
   
-  @JSName("InfoPath.UtilObject_typekey")
+  /* private */ @JSName("InfoPath.UtilObject_typekey")
   var InfoPathDotUtilObject_typekey: UtilObject
   
   def Match(bstrValue: String, bstrPattern: String): Boolean
@@ -18,8 +18,7 @@ trait UtilObject extends StObject {
 }
 object UtilObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Date: VarDate,
     InfoPathDotUtilObject_typekey: UtilObject,
     Match: (String, String) => Boolean,
@@ -30,19 +29,14 @@ object UtilObject {
     __obj.asInstanceOf[UtilObject]
   }
   
-  @scala.inline
-  implicit class UtilObjectMutableBuilder[Self <: UtilObject] (val x: Self) extends AnyVal {
+  extension [Self <: UtilObject](x: Self) {
     
-    @scala.inline
-    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotUtilObject_typekey(value: UtilObject): Self = StObject.set(x, "InfoPath.UtilObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotUtilObject_typekey(value: UtilObject): Self = StObject.set(x, "InfoPath.UtilObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: (String, String) => Boolean): Self = StObject.set(x, "Match", js.Any.fromFunction2(value))
+    inline def setMatch(value: (String, String) => Boolean): Self = StObject.set(x, "Match", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMath(value: MathObject): Self = StObject.set(x, "Math", value.asInstanceOf[js.Any])
+    inline def setMath(value: MathObject): Self = StObject.set(x, "Math", value.asInstanceOf[js.Any])
   }
 }

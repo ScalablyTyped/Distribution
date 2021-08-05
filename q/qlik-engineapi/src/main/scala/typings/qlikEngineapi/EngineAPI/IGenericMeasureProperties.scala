@@ -15,16 +15,13 @@ trait IGenericMeasureProperties
 }
 object IGenericMeasureProperties {
   
-  @scala.inline
-  def apply(qInfo: INxInfo, qMeasure: INxLibraryMeasureDef): IGenericMeasureProperties = {
+  inline def apply(qInfo: INxInfo, qMeasure: INxLibraryMeasureDef): IGenericMeasureProperties = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeasure = qMeasure.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericMeasureProperties]
   }
   
-  @scala.inline
-  implicit class IGenericMeasurePropertiesMutableBuilder[Self <: IGenericMeasureProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericMeasureProperties](x: Self) {
     
-    @scala.inline
-    def setQMeasure(value: INxLibraryMeasureDef): Self = StObject.set(x, "qMeasure", value.asInstanceOf[js.Any])
+    inline def setQMeasure(value: INxLibraryMeasureDef): Self = StObject.set(x, "qMeasure", value.asInstanceOf[js.Any])
   }
 }

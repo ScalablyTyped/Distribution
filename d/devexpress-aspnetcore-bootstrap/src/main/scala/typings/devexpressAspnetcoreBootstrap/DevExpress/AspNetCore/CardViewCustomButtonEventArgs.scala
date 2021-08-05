@@ -14,19 +14,15 @@ trait CardViewCustomButtonEventArgs
 }
 object CardViewCustomButtonEventArgs {
   
-  @scala.inline
-  def apply(buttonID: String, processOnServer: Boolean, sender: Control, visibleIndex: Double): CardViewCustomButtonEventArgs = {
+  inline def apply(buttonID: String, processOnServer: Boolean, sender: Control, visibleIndex: Double): CardViewCustomButtonEventArgs = {
     val __obj = js.Dynamic.literal(buttonID = buttonID.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewCustomButtonEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewCustomButtonEventArgsMutableBuilder[Self <: CardViewCustomButtonEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewCustomButtonEventArgs](x: Self) {
     
-    @scala.inline
-    def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
+    inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

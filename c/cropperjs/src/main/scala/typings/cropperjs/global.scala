@@ -26,11 +26,9 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def noConflict(): typings.cropperjs.Cropper = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.cropperjs.Cropper]
+    inline def noConflict(): typings.cropperjs.Cropper = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.cropperjs.Cropper]
     
     /* static member */
-    @scala.inline
-    def setDefaults(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaults(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

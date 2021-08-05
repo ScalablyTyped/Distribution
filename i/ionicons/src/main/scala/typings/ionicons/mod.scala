@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addIcons(icons: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIcons")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addIcons(icons: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIcons")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

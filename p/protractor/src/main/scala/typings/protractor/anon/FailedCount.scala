@@ -13,22 +13,17 @@ trait FailedCount extends StObject {
 }
 object FailedCount {
   
-  @scala.inline
-  def apply(failedCount: Double, specResults: js.Array[SpecResult]): FailedCount = {
+  inline def apply(failedCount: Double, specResults: js.Array[SpecResult]): FailedCount = {
     val __obj = js.Dynamic.literal(failedCount = failedCount.asInstanceOf[js.Any], specResults = specResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedCount]
   }
   
-  @scala.inline
-  implicit class FailedCountMutableBuilder[Self <: FailedCount] (val x: Self) extends AnyVal {
+  extension [Self <: FailedCount](x: Self) {
     
-    @scala.inline
-    def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
+    inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecResults(value: js.Array[SpecResult]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
+    inline def setSpecResults(value: js.Array[SpecResult]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecResultsVarargs(value: SpecResult*): Self = StObject.set(x, "specResults", js.Array(value :_*))
+    inline def setSpecResultsVarargs(value: SpecResult*): Self = StObject.set(x, "specResults", js.Array(value :_*))
   }
 }

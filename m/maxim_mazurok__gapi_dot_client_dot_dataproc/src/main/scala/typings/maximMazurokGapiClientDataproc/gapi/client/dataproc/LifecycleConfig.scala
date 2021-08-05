@@ -29,37 +29,27 @@ trait LifecycleConfig extends StObject {
 }
 object LifecycleConfig {
   
-  @scala.inline
-  def apply(): LifecycleConfig = {
+  inline def apply(): LifecycleConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecycleConfig]
   }
   
-  @scala.inline
-  implicit class LifecycleConfigMutableBuilder[Self <: LifecycleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleConfig](x: Self) {
     
-    @scala.inline
-    def setAutoDeleteTime(value: String): Self = StObject.set(x, "autoDeleteTime", value.asInstanceOf[js.Any])
+    inline def setAutoDeleteTime(value: String): Self = StObject.set(x, "autoDeleteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteTimeUndefined: Self = StObject.set(x, "autoDeleteTime", js.undefined)
+    inline def setAutoDeleteTimeUndefined: Self = StObject.set(x, "autoDeleteTime", js.undefined)
     
-    @scala.inline
-    def setAutoDeleteTtl(value: String): Self = StObject.set(x, "autoDeleteTtl", value.asInstanceOf[js.Any])
+    inline def setAutoDeleteTtl(value: String): Self = StObject.set(x, "autoDeleteTtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteTtlUndefined: Self = StObject.set(x, "autoDeleteTtl", js.undefined)
+    inline def setAutoDeleteTtlUndefined: Self = StObject.set(x, "autoDeleteTtl", js.undefined)
     
-    @scala.inline
-    def setIdleDeleteTtl(value: String): Self = StObject.set(x, "idleDeleteTtl", value.asInstanceOf[js.Any])
+    inline def setIdleDeleteTtl(value: String): Self = StObject.set(x, "idleDeleteTtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleDeleteTtlUndefined: Self = StObject.set(x, "idleDeleteTtl", js.undefined)
+    inline def setIdleDeleteTtlUndefined: Self = StObject.set(x, "idleDeleteTtl", js.undefined)
     
-    @scala.inline
-    def setIdleStartTime(value: String): Self = StObject.set(x, "idleStartTime", value.asInstanceOf[js.Any])
+    inline def setIdleStartTime(value: String): Self = StObject.set(x, "idleStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleStartTimeUndefined: Self = StObject.set(x, "idleStartTime", js.undefined)
+    inline def setIdleStartTimeUndefined: Self = StObject.set(x, "idleStartTime", js.undefined)
   }
 }

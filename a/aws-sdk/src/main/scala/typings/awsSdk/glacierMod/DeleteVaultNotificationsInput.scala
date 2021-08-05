@@ -18,19 +18,15 @@ trait DeleteVaultNotificationsInput extends StObject {
 }
 object DeleteVaultNotificationsInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): DeleteVaultNotificationsInput = {
+  inline def apply(accountId: String, vaultName: String): DeleteVaultNotificationsInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVaultNotificationsInput]
   }
   
-  @scala.inline
-  implicit class DeleteVaultNotificationsInputMutableBuilder[Self <: DeleteVaultNotificationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVaultNotificationsInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

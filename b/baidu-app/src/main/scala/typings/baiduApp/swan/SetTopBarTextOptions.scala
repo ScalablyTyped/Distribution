@@ -16,16 +16,13 @@ trait SetTopBarTextOptions
 }
 object SetTopBarTextOptions {
   
-  @scala.inline
-  def apply(text: String): SetTopBarTextOptions = {
+  inline def apply(text: String): SetTopBarTextOptions = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTopBarTextOptions]
   }
   
-  @scala.inline
-  implicit class SetTopBarTextOptionsMutableBuilder[Self <: SetTopBarTextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetTopBarTextOptions](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

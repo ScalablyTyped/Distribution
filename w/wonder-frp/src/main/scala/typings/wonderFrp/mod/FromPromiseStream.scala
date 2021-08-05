@@ -17,6 +17,5 @@ object FromPromiseStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(promise: js.Any, scheduler: typings.wonderFrp.schedulerMod.Scheduler): typings.wonderFrp.fromPromiseStreamMod.FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.fromPromiseStreamMod.FromPromiseStream]
+  inline def create(promise: js.Any, scheduler: typings.wonderFrp.schedulerMod.Scheduler): typings.wonderFrp.fromPromiseStreamMod.FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.fromPromiseStreamMod.FromPromiseStream]
 }

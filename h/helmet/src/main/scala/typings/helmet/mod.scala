@@ -28,8 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function3[
+  inline def apply(): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
@@ -40,8 +39,7 @@ object mod {
     /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
     Unit
   ]]
-  @scala.inline
-  def apply(options: ReadonlyHelmetOptions): js.Function3[
+  inline def apply(options: ReadonlyHelmetOptions): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
@@ -59,8 +57,7 @@ object mod {
   
   object contentSecurityPolicy {
     
-    @scala.inline
-    def apply(): js.Function3[
+    inline def apply(): js.Function3[
         /* req */ IncomingMessage, 
         /* res */ ServerResponse, 
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
@@ -71,8 +68,7 @@ object mod {
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
         Unit
       ]]
-    @scala.inline
-    def apply(options: ReadonlyContentSecurityPo): js.Function3[
+    inline def apply(options: ReadonlyContentSecurityPo): js.Function3[
         /* req */ IncomingMessage, 
         /* res */ ServerResponse, 
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
@@ -88,14 +84,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultDirectives")().asInstanceOf[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]
+    inline def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultDirectives")().asInstanceOf[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]
     @JSImport("helmet/dist", "contentSecurityPolicy.getDefaultDirectives")
     @js.native
     def getDefaultDirectives_FcontentSecurityPolicy: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]] = js.native
     
-    @scala.inline
-    def getDefaultDirectives_FcontentSecurityPolicy_=(x: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultDirectives")(x.asInstanceOf[js.Any])
+    inline def getDefaultDirectives_FcontentSecurityPolicy_=(x: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultDirectives")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("helmet/dist", "dnsPrefetchControl")
@@ -109,8 +103,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def dnsPrefetchControl_=(
+  inline def dnsPrefetchControl_=(
     x: js.Function1[
       /* options */ js.UndefOr[ReadonlyXDnsPrefetchContr], 
       js.Function3[
@@ -133,8 +126,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def expectCt_=(
+  inline def expectCt_=(
     x: js.Function1[
       /* options */ js.UndefOr[ReadonlyExpectCtOptions], 
       js.Function3[
@@ -149,8 +141,7 @@ object mod {
   @JSImport("helmet/dist", "featurePolicy")
   @js.native
   def featurePolicy: js.Function0[scala.Nothing] = js.native
-  @scala.inline
-  def featurePolicy_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("featurePolicy")(x.asInstanceOf[js.Any])
+  inline def featurePolicy_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("featurePolicy")(x.asInstanceOf[js.Any])
   
   @JSImport("helmet/dist", "frameguard")
   @js.native
@@ -163,8 +154,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def frameguard_=(
+  inline def frameguard_=(
     x: js.Function1[
       /* options */ js.UndefOr[ReadonlyXFrameOptionsOpti], 
       js.Function3[
@@ -186,8 +176,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def hidePoweredBy_=(
+  inline def hidePoweredBy_=(
     x: js.Function0[
       js.Function3[
         /* _req */ IncomingMessage, 
@@ -201,8 +190,7 @@ object mod {
   @JSImport("helmet/dist", "hpkp")
   @js.native
   def hpkp: js.Function0[scala.Nothing] = js.native
-  @scala.inline
-  def hpkp_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hpkp")(x.asInstanceOf[js.Any])
+  inline def hpkp_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hpkp")(x.asInstanceOf[js.Any])
   
   @JSImport("helmet/dist", "hsts")
   @js.native
@@ -215,8 +203,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def hsts_=(
+  inline def hsts_=(
     x: js.Function1[
       /* options */ js.UndefOr[ReadonlyStrictTransportSe], 
       js.Function3[
@@ -238,8 +225,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def ieNoOpen_=(
+  inline def ieNoOpen_=(
     x: js.Function0[
       js.Function3[
         /* _req */ IncomingMessage, 
@@ -253,8 +239,7 @@ object mod {
   @JSImport("helmet/dist", "noCache")
   @js.native
   def noCache: js.Function0[scala.Nothing] = js.native
-  @scala.inline
-  def noCache_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noCache")(x.asInstanceOf[js.Any])
+  inline def noCache_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noCache")(x.asInstanceOf[js.Any])
   
   @JSImport("helmet/dist", "noSniff")
   @js.native
@@ -266,8 +251,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def noSniff_=(
+  inline def noSniff_=(
     x: js.Function0[
       js.Function3[
         /* _req */ IncomingMessage, 
@@ -289,8 +273,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def permittedCrossDomainPolicies_=(
+  inline def permittedCrossDomainPolicies_=(
     x: js.Function1[
       /* options */ js.UndefOr[ReadonlyXPermittedCrossDo], 
       js.Function3[
@@ -313,8 +296,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def referrerPolicy_=(
+  inline def referrerPolicy_=(
     x: js.Function1[
       /* options */ js.UndefOr[ReadonlyReferrerPolicyOpt], 
       js.Function3[
@@ -336,8 +318,7 @@ object mod {
       Unit
     ]
   ] = js.native
-  @scala.inline
-  def xssFilter_=(
+  inline def xssFilter_=(
     x: js.Function0[
       js.Function3[
         /* _req */ IncomingMessage, 
@@ -374,80 +355,56 @@ object mod {
   }
   object HelmetOptions {
     
-    @scala.inline
-    def apply(): HelmetOptions = {
+    inline def apply(): HelmetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelmetOptions]
     }
     
-    @scala.inline
-    implicit class HelmetOptionsMutableBuilder[Self <: HelmetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetOptions](x: Self) {
       
-      @scala.inline
-      def setContentSecurityPolicy(value: MiddlewareOption[ContentSecurityPolicyOptions]): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
+      inline def setContentSecurityPolicy(value: MiddlewareOption[ContentSecurityPolicyOptions]): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentSecurityPolicyUndefined: Self = StObject.set(x, "contentSecurityPolicy", js.undefined)
+      inline def setContentSecurityPolicyUndefined: Self = StObject.set(x, "contentSecurityPolicy", js.undefined)
       
-      @scala.inline
-      def setDnsPrefetchControl(value: MiddlewareOption[XDnsPrefetchControlOptions]): Self = StObject.set(x, "dnsPrefetchControl", value.asInstanceOf[js.Any])
+      inline def setDnsPrefetchControl(value: MiddlewareOption[XDnsPrefetchControlOptions]): Self = StObject.set(x, "dnsPrefetchControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsPrefetchControlUndefined: Self = StObject.set(x, "dnsPrefetchControl", js.undefined)
+      inline def setDnsPrefetchControlUndefined: Self = StObject.set(x, "dnsPrefetchControl", js.undefined)
       
-      @scala.inline
-      def setExpectCt(value: MiddlewareOption[ExpectCtOptions]): Self = StObject.set(x, "expectCt", value.asInstanceOf[js.Any])
+      inline def setExpectCt(value: MiddlewareOption[ExpectCtOptions]): Self = StObject.set(x, "expectCt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectCtUndefined: Self = StObject.set(x, "expectCt", js.undefined)
+      inline def setExpectCtUndefined: Self = StObject.set(x, "expectCt", js.undefined)
       
-      @scala.inline
-      def setFrameguard(value: MiddlewareOption[XFrameOptionsOptions]): Self = StObject.set(x, "frameguard", value.asInstanceOf[js.Any])
+      inline def setFrameguard(value: MiddlewareOption[XFrameOptionsOptions]): Self = StObject.set(x, "frameguard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameguardUndefined: Self = StObject.set(x, "frameguard", js.undefined)
+      inline def setFrameguardUndefined: Self = StObject.set(x, "frameguard", js.undefined)
       
-      @scala.inline
-      def setHidePoweredBy(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "hidePoweredBy", value.asInstanceOf[js.Any])
+      inline def setHidePoweredBy(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "hidePoweredBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePoweredByUndefined: Self = StObject.set(x, "hidePoweredBy", js.undefined)
+      inline def setHidePoweredByUndefined: Self = StObject.set(x, "hidePoweredBy", js.undefined)
       
-      @scala.inline
-      def setHsts(value: MiddlewareOption[StrictTransportSecurityOptions]): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
+      inline def setHsts(value: MiddlewareOption[StrictTransportSecurityOptions]): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
+      inline def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
       
-      @scala.inline
-      def setIeNoOpen(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "ieNoOpen", value.asInstanceOf[js.Any])
+      inline def setIeNoOpen(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "ieNoOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIeNoOpenUndefined: Self = StObject.set(x, "ieNoOpen", js.undefined)
+      inline def setIeNoOpenUndefined: Self = StObject.set(x, "ieNoOpen", js.undefined)
       
-      @scala.inline
-      def setNoSniff(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
+      inline def setNoSniff(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
+      inline def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
       
-      @scala.inline
-      def setPermittedCrossDomainPolicies(value: MiddlewareOption[XPermittedCrossDomainPoliciesOptions]): Self = StObject.set(x, "permittedCrossDomainPolicies", value.asInstanceOf[js.Any])
+      inline def setPermittedCrossDomainPolicies(value: MiddlewareOption[XPermittedCrossDomainPoliciesOptions]): Self = StObject.set(x, "permittedCrossDomainPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermittedCrossDomainPoliciesUndefined: Self = StObject.set(x, "permittedCrossDomainPolicies", js.undefined)
+      inline def setPermittedCrossDomainPoliciesUndefined: Self = StObject.set(x, "permittedCrossDomainPolicies", js.undefined)
       
-      @scala.inline
-      def setReferrerPolicy(value: MiddlewareOption[ReferrerPolicyOptions]): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: MiddlewareOption[ReferrerPolicyOptions]): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setXssFilter(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "xssFilter", value.asInstanceOf[js.Any])
+      inline def setXssFilter(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "xssFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXssFilterUndefined: Self = StObject.set(x, "xssFilter", js.undefined)
+      inline def setXssFilterUndefined: Self = StObject.set(x, "xssFilter", js.undefined)
     }
   }
   

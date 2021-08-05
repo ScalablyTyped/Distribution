@@ -12,8 +12,7 @@ object useHeightsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](getKey: GetKey[T]): js.Tuple4[
+  inline def default[T](getKey: GetKey[T]): js.Tuple4[
     js.Function2[/* item */ T, /* instance */ HTMLElement, Unit], 
     js.Function0[Unit], 
     typings.rcVirtualList.cacheMapMod.default, 
@@ -24,8 +23,7 @@ object useHeightsMod {
     typings.rcVirtualList.cacheMapMod.default, 
     Double
   ]]
-  @scala.inline
-  def default[T](getKey: GetKey[T], onItemAdd: js.Function1[/* item */ T, Unit]): js.Tuple4[
+  inline def default[T](getKey: GetKey[T], onItemAdd: js.Function1[/* item */ T, Unit]): js.Tuple4[
     js.Function2[/* item */ T, /* instance */ HTMLElement, Unit], 
     js.Function0[Unit], 
     typings.rcVirtualList.cacheMapMod.default, 
@@ -36,8 +34,7 @@ object useHeightsMod {
     typings.rcVirtualList.cacheMapMod.default, 
     Double
   ]]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     getKey: GetKey[T],
     onItemAdd: js.Function1[/* item */ T, Unit],
     onItemRemove: js.Function1[/* item */ T, Unit]
@@ -52,8 +49,7 @@ object useHeightsMod {
     typings.rcVirtualList.cacheMapMod.default, 
     Double
   ]]
-  @scala.inline
-  def default[T](getKey: GetKey[T], onItemAdd: Unit, onItemRemove: js.Function1[/* item */ T, Unit]): js.Tuple4[
+  inline def default[T](getKey: GetKey[T], onItemAdd: Unit, onItemRemove: js.Function1[/* item */ T, Unit]): js.Tuple4[
     js.Function2[/* item */ T, /* instance */ HTMLElement, Unit], 
     js.Function0[Unit], 
     typings.rcVirtualList.cacheMapMod.default, 

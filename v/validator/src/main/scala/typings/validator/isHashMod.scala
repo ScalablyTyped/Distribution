@@ -15,8 +15,7 @@ object isHashMod {
     *
     * @param algorithm - HashAlgorithm
     */
-  @scala.inline
-  def default(str: String, algorithm: typings.validator.mod.validator.HashAlgorithm): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(str: String, algorithm: typings.validator.mod.validator.HashAlgorithm): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type HashAlgorithm = typings.validator.mod.validator.HashAlgorithm
 }

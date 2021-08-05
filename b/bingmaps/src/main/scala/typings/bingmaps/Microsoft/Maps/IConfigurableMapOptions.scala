@@ -14,22 +14,17 @@ trait IConfigurableMapOptions extends StObject {
 }
 object IConfigurableMapOptions {
   
-  @scala.inline
-  def apply(mapOptions: IMapOptions, modules: js.Array[IConfigurableMapModule]): IConfigurableMapOptions = {
+  inline def apply(mapOptions: IMapOptions, modules: js.Array[IConfigurableMapModule]): IConfigurableMapOptions = {
     val __obj = js.Dynamic.literal(mapOptions = mapOptions.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfigurableMapOptions]
   }
   
-  @scala.inline
-  implicit class IConfigurableMapOptionsMutableBuilder[Self <: IConfigurableMapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IConfigurableMapOptions](x: Self) {
     
-    @scala.inline
-    def setMapOptions(value: IMapOptions): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
+    inline def setMapOptions(value: IMapOptions): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModules(value: js.Array[IConfigurableMapModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[IConfigurableMapModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesVarargs(value: IConfigurableMapModule*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: IConfigurableMapModule*): Self = StObject.set(x, "modules", js.Array(value :_*))
   }
 }

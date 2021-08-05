@@ -17,31 +17,23 @@ trait AutoInstallConstraint extends StObject {
 }
 object AutoInstallConstraint {
   
-  @scala.inline
-  def apply(): AutoInstallConstraint = {
+  inline def apply(): AutoInstallConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoInstallConstraint]
   }
   
-  @scala.inline
-  implicit class AutoInstallConstraintMutableBuilder[Self <: AutoInstallConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: AutoInstallConstraint](x: Self) {
     
-    @scala.inline
-    def setChargingStateConstraint(value: String): Self = StObject.set(x, "chargingStateConstraint", value.asInstanceOf[js.Any])
+    inline def setChargingStateConstraint(value: String): Self = StObject.set(x, "chargingStateConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargingStateConstraintUndefined: Self = StObject.set(x, "chargingStateConstraint", js.undefined)
+    inline def setChargingStateConstraintUndefined: Self = StObject.set(x, "chargingStateConstraint", js.undefined)
     
-    @scala.inline
-    def setDeviceIdleStateConstraint(value: String): Self = StObject.set(x, "deviceIdleStateConstraint", value.asInstanceOf[js.Any])
+    inline def setDeviceIdleStateConstraint(value: String): Self = StObject.set(x, "deviceIdleStateConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdleStateConstraintUndefined: Self = StObject.set(x, "deviceIdleStateConstraint", js.undefined)
+    inline def setDeviceIdleStateConstraintUndefined: Self = StObject.set(x, "deviceIdleStateConstraint", js.undefined)
     
-    @scala.inline
-    def setNetworkTypeConstraint(value: String): Self = StObject.set(x, "networkTypeConstraint", value.asInstanceOf[js.Any])
+    inline def setNetworkTypeConstraint(value: String): Self = StObject.set(x, "networkTypeConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTypeConstraintUndefined: Self = StObject.set(x, "networkTypeConstraint", js.undefined)
+    inline def setNetworkTypeConstraintUndefined: Self = StObject.set(x, "networkTypeConstraint", js.undefined)
   }
 }

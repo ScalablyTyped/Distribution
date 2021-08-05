@@ -77,79 +77,55 @@ trait GoogleActionsV2Argument extends StObject {
 }
 object GoogleActionsV2Argument {
   
-  @scala.inline
-  def apply(): GoogleActionsV2Argument = {
+  inline def apply(): GoogleActionsV2Argument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2Argument]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2ArgumentMutableBuilder[Self <: GoogleActionsV2Argument] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2Argument](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setDatetimeValue(value: GoogleActionsV2DateTime): Self = StObject.set(x, "datetimeValue", value.asInstanceOf[js.Any])
+    inline def setDatetimeValue(value: GoogleActionsV2DateTime): Self = StObject.set(x, "datetimeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetimeValueUndefined: Self = StObject.set(x, "datetimeValue", js.undefined)
+    inline def setDatetimeValueUndefined: Self = StObject.set(x, "datetimeValue", js.undefined)
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
+    inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
+    inline def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
-    @scala.inline
-    def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
+    inline def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
+    inline def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPlaceValue(value: GoogleActionsV2Location): Self = StObject.set(x, "placeValue", value.asInstanceOf[js.Any])
+    inline def setPlaceValue(value: GoogleActionsV2Location): Self = StObject.set(x, "placeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceValueUndefined: Self = StObject.set(x, "placeValue", js.undefined)
+    inline def setPlaceValueUndefined: Self = StObject.set(x, "placeValue", js.undefined)
     
-    @scala.inline
-    def setRawText(value: String): Self = StObject.set(x, "rawText", value.asInstanceOf[js.Any])
+    inline def setRawText(value: String): Self = StObject.set(x, "rawText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawTextUndefined: Self = StObject.set(x, "rawText", js.undefined)
+    inline def setRawTextUndefined: Self = StObject.set(x, "rawText", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStructuredValue(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "structuredValue", value.asInstanceOf[js.Any])
+    inline def setStructuredValue(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "structuredValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredValueUndefined: Self = StObject.set(x, "structuredValue", js.undefined)
+    inline def setStructuredValueUndefined: Self = StObject.set(x, "structuredValue", js.undefined)
     
-    @scala.inline
-    def setTextValue(value: String): Self = StObject.set(x, "textValue", value.asInstanceOf[js.Any])
+    inline def setTextValue(value: String): Self = StObject.set(x, "textValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextValueUndefined: Self = StObject.set(x, "textValue", js.undefined)
+    inline def setTextValueUndefined: Self = StObject.set(x, "textValue", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait WriteOptions
 }
 object WriteOptions {
   
-  @scala.inline
-  def apply(): WriteOptions = {
+  inline def apply(): WriteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteOptions]
   }
   
-  @scala.inline
-  implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WriteOptions](x: Self) {
     
-    @scala.inline
-    def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
+    inline def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
+    inline def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
     
-    @scala.inline
-    def setFs(value: js.Object): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    inline def setFs(value: js.Object): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+    inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
-    @scala.inline
-    def setReplacer(value: js.Any): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+    inline def setReplacer(value: js.Any): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+    inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
     
-    @scala.inline
-    def setSpaces(value: Double | String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: Double | String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
   }
 }

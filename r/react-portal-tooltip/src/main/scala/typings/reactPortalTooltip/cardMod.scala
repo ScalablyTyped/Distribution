@@ -48,50 +48,36 @@ object cardMod {
     }
     object CardProps {
       
-      @scala.inline
-      def apply(): CardProps = {
+      inline def apply(): CardProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CardProps]
       }
       
-      @scala.inline
-      implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+      extension [Self <: CardProps](x: Self) {
         
-        @scala.inline
-        def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+        inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignNull: Self = StObject.set(x, "align", null)
+        inline def setAlignNull: Self = StObject.set(x, "align", null)
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setArrow(value: Arrow): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+        inline def setArrow(value: Arrow): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArrowNull: Self = StObject.set(x, "arrow", null)
+        inline def setArrowNull: Self = StObject.set(x, "arrow", null)
         
-        @scala.inline
-        def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+        inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setStyle(value: ArrowStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: ArrowStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setUseHover(value: Boolean): Self = StObject.set(x, "useHover", value.asInstanceOf[js.Any])
+        inline def setUseHover(value: Boolean): Self = StObject.set(x, "useHover", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseHoverUndefined: Self = StObject.set(x, "useHover", js.undefined)
+        inline def setUseHoverUndefined: Self = StObject.set(x, "useHover", js.undefined)
       }
     }
     
@@ -104,17 +90,13 @@ object cardMod {
     trait Position extends StObject
     object Position {
       
-      @scala.inline
-      def bottom: typings.reactPortalTooltip.reactPortalTooltipStrings.bottom = "bottom".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.bottom]
+      inline def bottom: typings.reactPortalTooltip.reactPortalTooltipStrings.bottom = "bottom".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.bottom]
       
-      @scala.inline
-      def left: typings.reactPortalTooltip.reactPortalTooltipStrings.left = "left".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.left]
+      inline def left: typings.reactPortalTooltip.reactPortalTooltipStrings.left = "left".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.left]
       
-      @scala.inline
-      def right: typings.reactPortalTooltip.reactPortalTooltipStrings.right = "right".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.right]
+      inline def right: typings.reactPortalTooltip.reactPortalTooltipStrings.right = "right".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.right]
       
-      @scala.inline
-      def top: typings.reactPortalTooltip.reactPortalTooltipStrings.top = "top".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.top]
+      inline def top: typings.reactPortalTooltip.reactPortalTooltipStrings.top = "top".asInstanceOf[typings.reactPortalTooltip.reactPortalTooltipStrings.top]
     }
     
     trait _Align extends StObject

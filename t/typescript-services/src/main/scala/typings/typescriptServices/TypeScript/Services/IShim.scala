@@ -10,16 +10,13 @@ trait IShim extends StObject {
 }
 object IShim {
   
-  @scala.inline
-  def apply(dispose: js.Any => Unit): IShim = {
+  inline def apply(dispose: js.Any => Unit): IShim = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction1(dispose))
     __obj.asInstanceOf[IShim]
   }
   
-  @scala.inline
-  implicit class IShimMutableBuilder[Self <: IShim] (val x: Self) extends AnyVal {
+  extension [Self <: IShim](x: Self) {
     
-    @scala.inline
-    def setDispose(value: js.Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: js.Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
   }
 }

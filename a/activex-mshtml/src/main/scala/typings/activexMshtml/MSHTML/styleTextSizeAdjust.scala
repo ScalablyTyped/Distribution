@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTextSizeAdjust extends StObject
 object styleTextSizeAdjust {
   
-  @scala.inline
-  def styleTextSizeAdjustAuto: `1` = 1.asInstanceOf[`1`]
+  inline def styleTextSizeAdjustAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTextSizeAdjustNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleTextSizeAdjustNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTextSizeAdjust_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTextSizeAdjust_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

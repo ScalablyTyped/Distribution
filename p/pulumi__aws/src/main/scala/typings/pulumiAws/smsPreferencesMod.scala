@@ -72,21 +72,16 @@ object smsPreferencesMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SmsPreferencesState): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SmsPreferencesState, opts: CustomResourceOptions): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
+    inline def get(name: String, id: Input[ID]): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
+    inline def get(name: String, id: Input[ID], state: SmsPreferencesState): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
+    inline def get(name: String, id: Input[ID], state: SmsPreferencesState, opts: CustomResourceOptions): SmsPreferences = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsPreferences]
     
     /**
       * Returns true if the given object is an instance of SmsPreferences.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ Boolean]
   }
   
   trait SmsPreferencesArgs extends StObject {
@@ -123,50 +118,36 @@ object smsPreferencesMod {
   }
   object SmsPreferencesArgs {
     
-    @scala.inline
-    def apply(): SmsPreferencesArgs = {
+    inline def apply(): SmsPreferencesArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmsPreferencesArgs]
     }
     
-    @scala.inline
-    implicit class SmsPreferencesArgsMutableBuilder[Self <: SmsPreferencesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SmsPreferencesArgs](x: Self) {
       
-      @scala.inline
-      def setDefaultSenderId(value: Input[String]): Self = StObject.set(x, "defaultSenderId", value.asInstanceOf[js.Any])
+      inline def setDefaultSenderId(value: Input[String]): Self = StObject.set(x, "defaultSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSenderIdUndefined: Self = StObject.set(x, "defaultSenderId", js.undefined)
+      inline def setDefaultSenderIdUndefined: Self = StObject.set(x, "defaultSenderId", js.undefined)
       
-      @scala.inline
-      def setDefaultSmsType(value: Input[String]): Self = StObject.set(x, "defaultSmsType", value.asInstanceOf[js.Any])
+      inline def setDefaultSmsType(value: Input[String]): Self = StObject.set(x, "defaultSmsType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSmsTypeUndefined: Self = StObject.set(x, "defaultSmsType", js.undefined)
+      inline def setDefaultSmsTypeUndefined: Self = StObject.set(x, "defaultSmsType", js.undefined)
       
-      @scala.inline
-      def setDeliveryStatusIamRoleArn(value: Input[String]): Self = StObject.set(x, "deliveryStatusIamRoleArn", value.asInstanceOf[js.Any])
+      inline def setDeliveryStatusIamRoleArn(value: Input[String]): Self = StObject.set(x, "deliveryStatusIamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryStatusIamRoleArnUndefined: Self = StObject.set(x, "deliveryStatusIamRoleArn", js.undefined)
+      inline def setDeliveryStatusIamRoleArnUndefined: Self = StObject.set(x, "deliveryStatusIamRoleArn", js.undefined)
       
-      @scala.inline
-      def setDeliveryStatusSuccessSamplingRate(value: Input[String]): Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", value.asInstanceOf[js.Any])
+      inline def setDeliveryStatusSuccessSamplingRate(value: Input[String]): Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryStatusSuccessSamplingRateUndefined: Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", js.undefined)
+      inline def setDeliveryStatusSuccessSamplingRateUndefined: Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", js.undefined)
       
-      @scala.inline
-      def setMonthlySpendLimit(value: Input[String]): Self = StObject.set(x, "monthlySpendLimit", value.asInstanceOf[js.Any])
+      inline def setMonthlySpendLimit(value: Input[String]): Self = StObject.set(x, "monthlySpendLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthlySpendLimitUndefined: Self = StObject.set(x, "monthlySpendLimit", js.undefined)
+      inline def setMonthlySpendLimitUndefined: Self = StObject.set(x, "monthlySpendLimit", js.undefined)
       
-      @scala.inline
-      def setUsageReportS3Bucket(value: Input[String]): Self = StObject.set(x, "usageReportS3Bucket", value.asInstanceOf[js.Any])
+      inline def setUsageReportS3Bucket(value: Input[String]): Self = StObject.set(x, "usageReportS3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageReportS3BucketUndefined: Self = StObject.set(x, "usageReportS3Bucket", js.undefined)
+      inline def setUsageReportS3BucketUndefined: Self = StObject.set(x, "usageReportS3Bucket", js.undefined)
     }
   }
   
@@ -204,50 +185,36 @@ object smsPreferencesMod {
   }
   object SmsPreferencesState {
     
-    @scala.inline
-    def apply(): SmsPreferencesState = {
+    inline def apply(): SmsPreferencesState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmsPreferencesState]
     }
     
-    @scala.inline
-    implicit class SmsPreferencesStateMutableBuilder[Self <: SmsPreferencesState] (val x: Self) extends AnyVal {
+    extension [Self <: SmsPreferencesState](x: Self) {
       
-      @scala.inline
-      def setDefaultSenderId(value: Input[String]): Self = StObject.set(x, "defaultSenderId", value.asInstanceOf[js.Any])
+      inline def setDefaultSenderId(value: Input[String]): Self = StObject.set(x, "defaultSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSenderIdUndefined: Self = StObject.set(x, "defaultSenderId", js.undefined)
+      inline def setDefaultSenderIdUndefined: Self = StObject.set(x, "defaultSenderId", js.undefined)
       
-      @scala.inline
-      def setDefaultSmsType(value: Input[String]): Self = StObject.set(x, "defaultSmsType", value.asInstanceOf[js.Any])
+      inline def setDefaultSmsType(value: Input[String]): Self = StObject.set(x, "defaultSmsType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSmsTypeUndefined: Self = StObject.set(x, "defaultSmsType", js.undefined)
+      inline def setDefaultSmsTypeUndefined: Self = StObject.set(x, "defaultSmsType", js.undefined)
       
-      @scala.inline
-      def setDeliveryStatusIamRoleArn(value: Input[String]): Self = StObject.set(x, "deliveryStatusIamRoleArn", value.asInstanceOf[js.Any])
+      inline def setDeliveryStatusIamRoleArn(value: Input[String]): Self = StObject.set(x, "deliveryStatusIamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryStatusIamRoleArnUndefined: Self = StObject.set(x, "deliveryStatusIamRoleArn", js.undefined)
+      inline def setDeliveryStatusIamRoleArnUndefined: Self = StObject.set(x, "deliveryStatusIamRoleArn", js.undefined)
       
-      @scala.inline
-      def setDeliveryStatusSuccessSamplingRate(value: Input[String]): Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", value.asInstanceOf[js.Any])
+      inline def setDeliveryStatusSuccessSamplingRate(value: Input[String]): Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryStatusSuccessSamplingRateUndefined: Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", js.undefined)
+      inline def setDeliveryStatusSuccessSamplingRateUndefined: Self = StObject.set(x, "deliveryStatusSuccessSamplingRate", js.undefined)
       
-      @scala.inline
-      def setMonthlySpendLimit(value: Input[String]): Self = StObject.set(x, "monthlySpendLimit", value.asInstanceOf[js.Any])
+      inline def setMonthlySpendLimit(value: Input[String]): Self = StObject.set(x, "monthlySpendLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthlySpendLimitUndefined: Self = StObject.set(x, "monthlySpendLimit", js.undefined)
+      inline def setMonthlySpendLimitUndefined: Self = StObject.set(x, "monthlySpendLimit", js.undefined)
       
-      @scala.inline
-      def setUsageReportS3Bucket(value: Input[String]): Self = StObject.set(x, "usageReportS3Bucket", value.asInstanceOf[js.Any])
+      inline def setUsageReportS3Bucket(value: Input[String]): Self = StObject.set(x, "usageReportS3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageReportS3BucketUndefined: Self = StObject.set(x, "usageReportS3Bucket", js.undefined)
+      inline def setUsageReportS3BucketUndefined: Self = StObject.set(x, "usageReportS3Bucket", js.undefined)
     }
   }
 }

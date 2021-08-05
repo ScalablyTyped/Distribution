@@ -13,28 +13,21 @@ trait GoogleCloudMlV1Location extends StObject {
 }
 object GoogleCloudMlV1Location {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Location = {
+  inline def apply(): GoogleCloudMlV1Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Location]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1LocationMutableBuilder[Self <: GoogleCloudMlV1Location] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Location](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: js.Array[GoogleCloudMlV1Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[GoogleCloudMlV1Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: GoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: GoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

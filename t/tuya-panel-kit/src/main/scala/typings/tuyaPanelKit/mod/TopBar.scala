@@ -27,24 +27,20 @@ object TopBar {
   @JSImport("tuya-panel-kit", "TopBar.Action")
   @js.native
   def Action: ElementType[TopBarActionProps] = js.native
-  @scala.inline
-  def Action_=(x: ElementType[TopBarActionProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
+  inline def Action_=(x: ElementType[TopBarActionProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TopBar.Container")
   @js.native
   def Container: ElementType[TopBarContainerProps] = js.native
-  @scala.inline
-  def Container_=(x: ElementType[TopBarContainerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
+  inline def Container_=(x: ElementType[TopBarContainerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TopBar.Content")
   @js.native
   def Content: ElementType[TopBarContentProps] = js.native
-  @scala.inline
-  def Content_=(x: ElementType[TopBarContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: ElementType[TopBarContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TopBar.height")
   @js.native
   def height: Double = js.native
-  @scala.inline
-  def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+  inline def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
 }

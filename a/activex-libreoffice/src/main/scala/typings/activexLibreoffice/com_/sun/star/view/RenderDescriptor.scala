@@ -16,16 +16,13 @@ trait RenderDescriptor extends StObject {
 }
 object RenderDescriptor {
   
-  @scala.inline
-  def apply(PageSize: Size): RenderDescriptor = {
+  inline def apply(PageSize: Size): RenderDescriptor = {
     val __obj = js.Dynamic.literal(PageSize = PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderDescriptor]
   }
   
-  @scala.inline
-  implicit class RenderDescriptorMutableBuilder[Self <: RenderDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: RenderDescriptor](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: Size): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Size): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
   }
 }

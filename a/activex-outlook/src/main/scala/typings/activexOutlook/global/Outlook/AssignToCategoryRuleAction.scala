@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AssignToCategoryRuleAction")
 @js.native
-class AssignToCategoryRuleAction protected ()
+/* private */ class AssignToCategoryRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.AssignToCategoryRuleAction {
   
@@ -27,7 +27,7 @@ class AssignToCategoryRuleAction protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.AssignToCategoryRuleAction_typekey")
   var OutlookDotAssignToCategoryRuleAction_typekey: typings.activexOutlook.Outlook.AssignToCategoryRuleAction = js.native
   

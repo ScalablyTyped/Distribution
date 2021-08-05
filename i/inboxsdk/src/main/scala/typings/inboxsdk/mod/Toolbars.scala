@@ -28,41 +28,30 @@ object Toolbars {
   }
   object AppToolbarButtonDescriptor {
     
-    @scala.inline
-    def apply(iconUrl: String, onClick: AppToolbarButtonEvent => Unit, title: String): AppToolbarButtonDescriptor = {
+    inline def apply(iconUrl: String, onClick: AppToolbarButtonEvent => Unit, title: String): AppToolbarButtonDescriptor = {
       val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppToolbarButtonDescriptor]
     }
     
-    @scala.inline
-    implicit class AppToolbarButtonDescriptorMutableBuilder[Self <: AppToolbarButtonDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: AppToolbarButtonDescriptor](x: Self) {
       
-      @scala.inline
-      def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
+      inline def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowColorUndefined: Self = StObject.set(x, "arrowColor", js.undefined)
+      inline def setArrowColorUndefined: Self = StObject.set(x, "arrowColor", js.undefined)
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: AppToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: AppToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleClass(value: String): Self = StObject.set(x, "titleClass", value.asInstanceOf[js.Any])
+      inline def setTitleClass(value: String): Self = StObject.set(x, "titleClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleClassUndefined: Self = StObject.set(x, "titleClass", js.undefined)
+      inline def setTitleClassUndefined: Self = StObject.set(x, "titleClass", js.undefined)
     }
   }
   
@@ -72,17 +61,14 @@ object Toolbars {
   }
   object AppToolbarButtonEvent {
     
-    @scala.inline
-    def apply(dropdown: DropdownView): AppToolbarButtonEvent = {
+    inline def apply(dropdown: DropdownView): AppToolbarButtonEvent = {
       val __obj = js.Dynamic.literal(dropdown = dropdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppToolbarButtonEvent]
     }
     
-    @scala.inline
-    implicit class AppToolbarButtonEventMutableBuilder[Self <: AppToolbarButtonEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AppToolbarButtonEvent](x: Self) {
       
-      @scala.inline
-      def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,8 +87,7 @@ object Toolbars {
   }
   object AppToolbarButtonView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       destroyed: Boolean,
       on: (destroy, js.Function0[Unit]) => Unit,
@@ -113,23 +98,17 @@ object Toolbars {
       __obj.asInstanceOf[AppToolbarButtonView]
     }
     
-    @scala.inline
-    implicit class AppToolbarButtonViewMutableBuilder[Self <: AppToolbarButtonView] (val x: Self) extends AnyVal {
+    extension [Self <: AppToolbarButtonView](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
   
@@ -153,53 +132,38 @@ object Toolbars {
   }
   object LegacyToolbarButtonDescriptor {
     
-    @scala.inline
-    def apply(onClick: LegacyToolbarButtonEvent => Unit, section: SectionNames, title: String): LegacyToolbarButtonDescriptor = {
+    inline def apply(onClick: LegacyToolbarButtonEvent => Unit, section: SectionNames, title: String): LegacyToolbarButtonDescriptor = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), section = section.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegacyToolbarButtonDescriptor]
     }
     
-    @scala.inline
-    implicit class LegacyToolbarButtonDescriptorMutableBuilder[Self <: LegacyToolbarButtonDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: LegacyToolbarButtonDescriptor](x: Self) {
       
-      @scala.inline
-      def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
+      inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
+      inline def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
       
-      @scala.inline
-      def setHideFor(value: /* routeView */ RouteView => Unit): Self = StObject.set(x, "hideFor", js.Any.fromFunction1(value))
+      inline def setHideFor(value: /* routeView */ RouteView => Unit): Self = StObject.set(x, "hideFor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHideForUndefined: Self = StObject.set(x, "hideFor", js.undefined)
+      inline def setHideForUndefined: Self = StObject.set(x, "hideFor", js.undefined)
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setKeyboardShortcutHandle(value: KeyboardShortcutHandle): Self = StObject.set(x, "keyboardShortcutHandle", value.asInstanceOf[js.Any])
+      inline def setKeyboardShortcutHandle(value: KeyboardShortcutHandle): Self = StObject.set(x, "keyboardShortcutHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardShortcutHandleUndefined: Self = StObject.set(x, "keyboardShortcutHandle", js.undefined)
+      inline def setKeyboardShortcutHandleUndefined: Self = StObject.set(x, "keyboardShortcutHandle", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: LegacyToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: LegacyToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSection(value: SectionNames): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: SectionNames): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,8 +179,7 @@ object Toolbars {
   }
   object LegacyToolbarButtonEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       selectedThreadRowViews: js.Array[ThreadRowView],
       threadRowViews: js.Array[ThreadRowView],
       threadView: ThreadView
@@ -225,29 +188,21 @@ object Toolbars {
       __obj.asInstanceOf[LegacyToolbarButtonEvent]
     }
     
-    @scala.inline
-    implicit class LegacyToolbarButtonEventMutableBuilder[Self <: LegacyToolbarButtonEvent] (val x: Self) extends AnyVal {
+    extension [Self <: LegacyToolbarButtonEvent](x: Self) {
       
-      @scala.inline
-      def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+      inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
       
-      @scala.inline
-      def setSelectedThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "selectedThreadRowViews", value.asInstanceOf[js.Any])
+      inline def setSelectedThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "selectedThreadRowViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value :_*))
+      inline def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value :_*))
       
-      @scala.inline
-      def setThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "threadRowViews", value.asInstanceOf[js.Any])
+      inline def setThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "threadRowViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "threadRowViews", js.Array(value :_*))
+      inline def setThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "threadRowViews", js.Array(value :_*))
       
-      @scala.inline
-      def setThreadView(value: ThreadView): Self = StObject.set(x, "threadView", value.asInstanceOf[js.Any])
+      inline def setThreadView(value: ThreadView): Self = StObject.set(x, "threadView", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,14 +214,11 @@ object Toolbars {
   trait SectionNames extends StObject
   object SectionNames {
     
-    @scala.inline
-    def INBOX_STATE: typings.inboxsdk.inboxsdkStrings.INBOX_STATE = "INBOX_STATE".asInstanceOf[typings.inboxsdk.inboxsdkStrings.INBOX_STATE]
+    inline def INBOX_STATE: typings.inboxsdk.inboxsdkStrings.INBOX_STATE = "INBOX_STATE".asInstanceOf[typings.inboxsdk.inboxsdkStrings.INBOX_STATE]
     
-    @scala.inline
-    def METADATA_STATE: typings.inboxsdk.inboxsdkStrings.METADATA_STATE = "METADATA_STATE".asInstanceOf[typings.inboxsdk.inboxsdkStrings.METADATA_STATE]
+    inline def METADATA_STATE: typings.inboxsdk.inboxsdkStrings.METADATA_STATE = "METADATA_STATE".asInstanceOf[typings.inboxsdk.inboxsdkStrings.METADATA_STATE]
     
-    @scala.inline
-    def OTHER: typings.inboxsdk.inboxsdkStrings.OTHER = "OTHER".asInstanceOf[typings.inboxsdk.inboxsdkStrings.OTHER]
+    inline def OTHER: typings.inboxsdk.inboxsdkStrings.OTHER = "OTHER".asInstanceOf[typings.inboxsdk.inboxsdkStrings.OTHER]
   }
   
   trait ToolbarButtonDescriptor extends StObject {
@@ -295,77 +247,54 @@ object Toolbars {
   }
   object ToolbarButtonDescriptor {
     
-    @scala.inline
-    def apply(onClick: ToolbarButtonEvent => Unit, title: String): ToolbarButtonDescriptor = {
+    inline def apply(onClick: ToolbarButtonEvent => Unit, title: String): ToolbarButtonDescriptor = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToolbarButtonDescriptor]
     }
     
-    @scala.inline
-    implicit class ToolbarButtonDescriptorMutableBuilder[Self <: ToolbarButtonDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarButtonDescriptor](x: Self) {
       
-      @scala.inline
-      def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
+      inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
+      inline def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
       
-      @scala.inline
-      def setHideFor(value: /* routeView */ RouteView => Unit): Self = StObject.set(x, "hideFor", js.Any.fromFunction1(value))
+      inline def setHideFor(value: /* routeView */ RouteView => Unit): Self = StObject.set(x, "hideFor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHideForUndefined: Self = StObject.set(x, "hideFor", js.undefined)
+      inline def setHideForUndefined: Self = StObject.set(x, "hideFor", js.undefined)
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setKeyboardShortcutHandle(value: KeyboardShortcutHandle): Self = StObject.set(x, "keyboardShortcutHandle", value.asInstanceOf[js.Any])
+      inline def setKeyboardShortcutHandle(value: KeyboardShortcutHandle): Self = StObject.set(x, "keyboardShortcutHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardShortcutHandleUndefined: Self = StObject.set(x, "keyboardShortcutHandle", js.undefined)
+      inline def setKeyboardShortcutHandleUndefined: Self = StObject.set(x, "keyboardShortcutHandle", js.undefined)
       
-      @scala.inline
-      def setListSection(value: SectionNames): Self = StObject.set(x, "listSection", value.asInstanceOf[js.Any])
+      inline def setListSection(value: SectionNames): Self = StObject.set(x, "listSection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListSectionUndefined: Self = StObject.set(x, "listSection", js.undefined)
+      inline def setListSectionUndefined: Self = StObject.set(x, "listSection", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: ToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: ToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+      inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+      inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
       
-      @scala.inline
-      def setPositions(value: js.Array[ToolbarButtonPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+      inline def setPositions(value: js.Array[ToolbarButtonPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+      inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
       
-      @scala.inline
-      def setPositionsVarargs(value: ToolbarButtonPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: ToolbarButtonPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
       
-      @scala.inline
-      def setThreadSection(value: SectionNames): Self = StObject.set(x, "threadSection", value.asInstanceOf[js.Any])
+      inline def setThreadSection(value: SectionNames): Self = StObject.set(x, "threadSection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadSectionUndefined: Self = StObject.set(x, "threadSection", js.undefined)
+      inline def setThreadSectionUndefined: Self = StObject.set(x, "threadSection", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -381,8 +310,7 @@ object Toolbars {
   }
   object ToolbarButtonEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       position: ToolbarButtonPosition,
       selectedThreadRowViews: js.Array[ThreadRowView],
       selectedThreadViews: js.Array[ThreadView]
@@ -391,29 +319,21 @@ object Toolbars {
       __obj.asInstanceOf[ToolbarButtonEvent]
     }
     
-    @scala.inline
-    implicit class ToolbarButtonEventMutableBuilder[Self <: ToolbarButtonEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarButtonEvent](x: Self) {
       
-      @scala.inline
-      def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+      inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ToolbarButtonPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ToolbarButtonPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "selectedThreadRowViews", value.asInstanceOf[js.Any])
+      inline def setSelectedThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "selectedThreadRowViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value :_*))
+      inline def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedThreadViews(value: js.Array[ThreadView]): Self = StObject.set(x, "selectedThreadViews", value.asInstanceOf[js.Any])
+      inline def setSelectedThreadViews(value: js.Array[ThreadView]): Self = StObject.set(x, "selectedThreadViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedThreadViewsVarargs(value: ThreadView*): Self = StObject.set(x, "selectedThreadViews", js.Array(value :_*))
+      inline def setSelectedThreadViewsVarargs(value: ThreadView*): Self = StObject.set(x, "selectedThreadViews", js.Array(value :_*))
     }
   }
   
@@ -425,14 +345,11 @@ object Toolbars {
   trait ToolbarButtonPosition extends StObject
   object ToolbarButtonPosition {
     
-    @scala.inline
-    def LIST: typings.inboxsdk.inboxsdkStrings.LIST = "LIST".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LIST]
+    inline def LIST: typings.inboxsdk.inboxsdkStrings.LIST = "LIST".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LIST]
     
-    @scala.inline
-    def ROW: typings.inboxsdk.inboxsdkStrings.ROW = "ROW".asInstanceOf[typings.inboxsdk.inboxsdkStrings.ROW]
+    inline def ROW: typings.inboxsdk.inboxsdkStrings.ROW = "ROW".asInstanceOf[typings.inboxsdk.inboxsdkStrings.ROW]
     
-    @scala.inline
-    def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typings.inboxsdk.inboxsdkStrings.THREAD]
+    inline def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typings.inboxsdk.inboxsdkStrings.THREAD]
   }
   
   trait ToolbarsInstance extends StObject {
@@ -455,8 +372,7 @@ object Toolbars {
   }
   object ToolbarsInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addToolbarButtonForApp: AppToolbarButtonDescriptor => AppToolbarButtonView,
       registerThreadButton: ToolbarButtonDescriptor => js.Function0[Unit],
       registerToolbarButtonForList: LegacyToolbarButtonDescriptor => js.Function0[Unit],
@@ -466,20 +382,15 @@ object Toolbars {
       __obj.asInstanceOf[ToolbarsInstance]
     }
     
-    @scala.inline
-    implicit class ToolbarsInstanceMutableBuilder[Self <: ToolbarsInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarsInstance](x: Self) {
       
-      @scala.inline
-      def setAddToolbarButtonForApp(value: AppToolbarButtonDescriptor => AppToolbarButtonView): Self = StObject.set(x, "addToolbarButtonForApp", js.Any.fromFunction1(value))
+      inline def setAddToolbarButtonForApp(value: AppToolbarButtonDescriptor => AppToolbarButtonView): Self = StObject.set(x, "addToolbarButtonForApp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterThreadButton(value: ToolbarButtonDescriptor => js.Function0[Unit]): Self = StObject.set(x, "registerThreadButton", js.Any.fromFunction1(value))
+      inline def setRegisterThreadButton(value: ToolbarButtonDescriptor => js.Function0[Unit]): Self = StObject.set(x, "registerThreadButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterToolbarButtonForList(value: LegacyToolbarButtonDescriptor => js.Function0[Unit]): Self = StObject.set(x, "registerToolbarButtonForList", js.Any.fromFunction1(value))
+      inline def setRegisterToolbarButtonForList(value: LegacyToolbarButtonDescriptor => js.Function0[Unit]): Self = StObject.set(x, "registerToolbarButtonForList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterToolbarButtonForThreadView(value: LegacyToolbarButtonDescriptor => js.Function0[Unit]): Self = StObject.set(x, "registerToolbarButtonForThreadView", js.Any.fromFunction1(value))
+      inline def setRegisterToolbarButtonForThreadView(value: LegacyToolbarButtonDescriptor => js.Function0[Unit]): Self = StObject.set(x, "registerToolbarButtonForThreadView", js.Any.fromFunction1(value))
     }
   }
 }

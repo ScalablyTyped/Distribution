@@ -23,58 +23,41 @@ trait SecureScoreControlStateUpdate extends StObject {
 }
 object SecureScoreControlStateUpdate {
   
-  @scala.inline
-  def apply(): SecureScoreControlStateUpdate = {
+  inline def apply(): SecureScoreControlStateUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecureScoreControlStateUpdate]
   }
   
-  @scala.inline
-  implicit class SecureScoreControlStateUpdateMutableBuilder[Self <: SecureScoreControlStateUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SecureScoreControlStateUpdate](x: Self) {
     
-    @scala.inline
-    def setAssignedTo(value: NullableOption[String]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: NullableOption[String]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedToNull: Self = StObject.set(x, "assignedTo", null)
+    inline def setAssignedToNull: Self = StObject.set(x, "assignedTo", null)
     
-    @scala.inline
-    def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
+    inline def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
     
-    @scala.inline
-    def setComment(value: NullableOption[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: NullableOption[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentNull: Self = StObject.set(x, "comment", null)
+    inline def setCommentNull: Self = StObject.set(x, "comment", null)
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdatedBy(value: NullableOption[String]): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
+    inline def setUpdatedBy(value: NullableOption[String]): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedByNull: Self = StObject.set(x, "updatedBy", null)
+    inline def setUpdatedByNull: Self = StObject.set(x, "updatedBy", null)
     
-    @scala.inline
-    def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
+    inline def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
     
-    @scala.inline
-    def setUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "updatedDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "updatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDateTimeNull: Self = StObject.set(x, "updatedDateTime", null)
+    inline def setUpdatedDateTimeNull: Self = StObject.set(x, "updatedDateTime", null)
     
-    @scala.inline
-    def setUpdatedDateTimeUndefined: Self = StObject.set(x, "updatedDateTime", js.undefined)
+    inline def setUpdatedDateTimeUndefined: Self = StObject.set(x, "updatedDateTime", js.undefined)
   }
 }

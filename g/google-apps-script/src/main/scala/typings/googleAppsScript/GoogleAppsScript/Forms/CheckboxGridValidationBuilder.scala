@@ -24,16 +24,13 @@ trait CheckboxGridValidationBuilder extends StObject {
 }
 object CheckboxGridValidationBuilder {
   
-  @scala.inline
-  def apply(requireLimitOneResponsePerColumn: () => CheckboxGridValidationBuilder): CheckboxGridValidationBuilder = {
+  inline def apply(requireLimitOneResponsePerColumn: () => CheckboxGridValidationBuilder): CheckboxGridValidationBuilder = {
     val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
     __obj.asInstanceOf[CheckboxGridValidationBuilder]
   }
   
-  @scala.inline
-  implicit class CheckboxGridValidationBuilderMutableBuilder[Self <: CheckboxGridValidationBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxGridValidationBuilder](x: Self) {
     
-    @scala.inline
-    def setRequireLimitOneResponsePerColumn(value: () => CheckboxGridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
+    inline def setRequireLimitOneResponsePerColumn(value: () => CheckboxGridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
   }
 }

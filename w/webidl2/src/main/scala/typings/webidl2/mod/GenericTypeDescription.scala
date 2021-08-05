@@ -16,8 +16,7 @@ trait GenericTypeDescription
      with IDLTypeDescription
 object GenericTypeDescription {
   
-  @scala.inline
-  def FrozenArrayTypeDescription(
+  inline def FrozenArrayTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -28,8 +27,7 @@ object GenericTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.FrozenArrayTypeDescription]
   }
   
-  @scala.inline
-  def ObservableArrayTypeDescription(
+  inline def ObservableArrayTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -40,8 +38,7 @@ object GenericTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.ObservableArrayTypeDescription]
   }
   
-  @scala.inline
-  def PromiseTypeDescription(
+  inline def PromiseTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -52,8 +49,7 @@ object GenericTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.PromiseTypeDescription]
   }
   
-  @scala.inline
-  def RecordTypeDescription(
+  inline def RecordTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
     nullable: Boolean,
@@ -64,8 +60,7 @@ object GenericTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.RecordTypeDescription]
   }
   
-  @scala.inline
-  def SequenceTypeDescription(
+  inline def SequenceTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,

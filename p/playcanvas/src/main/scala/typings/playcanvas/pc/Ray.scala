@@ -39,22 +39,17 @@ trait Ray extends StObject {
 }
 object Ray {
   
-  @scala.inline
-  def apply(direction: Vec3, origin: Vec3, set: (Vec3, Vec3) => Ray): Ray = {
+  inline def apply(direction: Vec3, origin: Vec3, set: (Vec3, Vec3) => Ray): Ray = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[Ray]
   }
   
-  @scala.inline
-  implicit class RayMutableBuilder[Self <: Ray] (val x: Self) extends AnyVal {
+  extension [Self <: Ray](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Vec3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Vec3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: Vec3): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Vec3): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: (Vec3, Vec3) => Ray): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (Vec3, Vec3) => Ray): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

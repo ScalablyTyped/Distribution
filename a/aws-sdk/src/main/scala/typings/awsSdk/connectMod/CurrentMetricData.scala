@@ -18,25 +18,19 @@ trait CurrentMetricData extends StObject {
 }
 object CurrentMetricData {
   
-  @scala.inline
-  def apply(): CurrentMetricData = {
+  inline def apply(): CurrentMetricData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentMetricData]
   }
   
-  @scala.inline
-  implicit class CurrentMetricDataMutableBuilder[Self <: CurrentMetricData] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentMetricData](x: Self) {
     
-    @scala.inline
-    def setMetric(value: CurrentMetric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: CurrentMetric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "Metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "Metric", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

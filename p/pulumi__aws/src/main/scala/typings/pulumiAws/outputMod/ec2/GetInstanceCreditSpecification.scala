@@ -10,16 +10,13 @@ trait GetInstanceCreditSpecification extends StObject {
 }
 object GetInstanceCreditSpecification {
   
-  @scala.inline
-  def apply(cpuCredits: String): GetInstanceCreditSpecification = {
+  inline def apply(cpuCredits: String): GetInstanceCreditSpecification = {
     val __obj = js.Dynamic.literal(cpuCredits = cpuCredits.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceCreditSpecification]
   }
   
-  @scala.inline
-  implicit class GetInstanceCreditSpecificationMutableBuilder[Self <: GetInstanceCreditSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceCreditSpecification](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: String): Self = StObject.set(x, "cpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: String): Self = StObject.set(x, "cpuCredits", value.asInstanceOf[js.Any])
   }
 }

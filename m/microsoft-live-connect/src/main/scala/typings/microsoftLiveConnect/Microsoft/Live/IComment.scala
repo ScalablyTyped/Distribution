@@ -37,25 +37,19 @@ trait IComment extends StObject {
 }
 object IComment {
   
-  @scala.inline
-  def apply(created_time: String, from: IUserInfo, id: String, message: String): IComment = {
+  inline def apply(created_time: String, from: IUserInfo, id: String, message: String): IComment = {
     val __obj = js.Dynamic.literal(created_time = created_time.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComment]
   }
   
-  @scala.inline
-  implicit class ICommentMutableBuilder[Self <: IComment] (val x: Self) extends AnyVal {
+  extension [Self <: IComment](x: Self) {
     
-    @scala.inline
-    def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
+    inline def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: IUserInfo): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: IUserInfo): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

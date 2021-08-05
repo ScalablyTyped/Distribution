@@ -13,19 +13,15 @@ trait TList extends StObject {
 }
 object TList {
   
-  @scala.inline
-  def apply(etype: Type, size: Double): TList = {
+  inline def apply(etype: Type, size: Double): TList = {
     val __obj = js.Dynamic.literal(etype = etype.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TList]
   }
   
-  @scala.inline
-  implicit class TListMutableBuilder[Self <: TList] (val x: Self) extends AnyVal {
+  extension [Self <: TList](x: Self) {
     
-    @scala.inline
-    def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
+    inline def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

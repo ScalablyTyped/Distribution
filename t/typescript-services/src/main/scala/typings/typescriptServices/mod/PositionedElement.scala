@@ -16,13 +16,13 @@ class PositionedElement protected ()
     fullStart: Double
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _element: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fullStart: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _parent: js.Any = js.native
   
   /* CompleteClass */
@@ -89,8 +89,7 @@ object PositionedElement {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     parent: typings.typescriptServices.TypeScript.PositionedElement,
     element: ISyntaxElement,
     fullStart: Double

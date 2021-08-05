@@ -22,28 +22,21 @@ trait SchemaBrowsersListResponse extends StObject {
 }
 object SchemaBrowsersListResponse {
   
-  @scala.inline
-  def apply(): SchemaBrowsersListResponse = {
+  inline def apply(): SchemaBrowsersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBrowsersListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBrowsersListResponseMutableBuilder[Self <: SchemaBrowsersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBrowsersListResponse](x: Self) {
     
-    @scala.inline
-    def setBrowsers(value: js.Array[SchemaBrowser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+    inline def setBrowsers(value: js.Array[SchemaBrowser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+    inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
     
-    @scala.inline
-    def setBrowsersVarargs(value: SchemaBrowser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+    inline def setBrowsersVarargs(value: SchemaBrowser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

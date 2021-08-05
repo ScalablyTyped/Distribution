@@ -61,6 +61,5 @@ object dnsMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintDomainRecursiveFormatTimeout: Domain): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintDomainRecursiveFormatTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintDomainRecursiveFormatTimeout: Domain): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintDomainRecursiveFormatTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

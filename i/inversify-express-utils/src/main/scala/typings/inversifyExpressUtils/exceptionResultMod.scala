@@ -17,10 +17,10 @@ object exceptionResultMod {
        with ExceptionResult {
     def this(error: Error, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var error: js.Any = js.native
     
     /* CompleteClass */
@@ -31,26 +31,22 @@ object exceptionResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var error: js.Any
+    /* private */ var error: js.Any
   }
   object ExceptionResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, error: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): ExceptionResult = {
+    inline def apply(apiController: js.Any, error: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): ExceptionResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
       __obj.asInstanceOf[ExceptionResult]
     }
     
-    @scala.inline
-    implicit class ExceptionResultMutableBuilder[Self <: ExceptionResult] (val x: Self) extends AnyVal {
+    extension [Self <: ExceptionResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
 }

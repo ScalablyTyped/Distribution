@@ -31,32 +31,28 @@ object DashboardSpecialValues {
     * @param value The specified value.
     */
   /* static member */
-  @scala.inline
-  def IsErrorValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsErrorValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsErrorValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsErrorValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns whether the specified value is an DashboardSpecialValues.NullValue. true, if the specified value is an DashboardSpecialValues.NullValue; otherwise, false.
     * @param value The specified value.
     */
   /* static member */
-  @scala.inline
-  def IsNullValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNullValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsNullValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNullValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns whether the specified value is an DashboardSpecialValues.OlapNullValue. true, if the specified value is an DashboardSpecialValues.OlapNullValue; otherwise, false.
     * @param value The specified value.
     */
   /* static member */
-  @scala.inline
-  def IsOlapNullValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOlapNullValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsOlapNullValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOlapNullValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns whether the specified value is an DashboardSpecialValues.OthersValue. true, if the specified value is an DashboardSpecialValues.OthersValue; otherwise, false.
     * @param value The specified value.
     */
   /* static member */
-  @scala.inline
-  def IsOthersValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOthersValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsOthersValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOthersValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Represents a null value.

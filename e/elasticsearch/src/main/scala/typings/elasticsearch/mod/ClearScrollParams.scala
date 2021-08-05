@@ -12,19 +12,15 @@ trait ClearScrollParams
 }
 object ClearScrollParams {
   
-  @scala.inline
-  def apply(scrollId: NameList): ClearScrollParams = {
+  inline def apply(scrollId: NameList): ClearScrollParams = {
     val __obj = js.Dynamic.literal(scrollId = scrollId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearScrollParams]
   }
   
-  @scala.inline
-  implicit class ClearScrollParamsMutableBuilder[Self <: ClearScrollParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClearScrollParams](x: Self) {
     
-    @scala.inline
-    def setScrollId(value: NameList): Self = StObject.set(x, "scrollId", value.asInstanceOf[js.Any])
+    inline def setScrollId(value: NameList): Self = StObject.set(x, "scrollId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollIdVarargs(value: String*): Self = StObject.set(x, "scrollId", js.Array(value :_*))
+    inline def setScrollIdVarargs(value: String*): Self = StObject.set(x, "scrollId", js.Array(value :_*))
   }
 }

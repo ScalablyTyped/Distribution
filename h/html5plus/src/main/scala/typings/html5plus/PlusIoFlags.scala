@@ -29,25 +29,19 @@ trait PlusIoFlags extends StObject {
 }
 object PlusIoFlags {
   
-  @scala.inline
-  def apply(): PlusIoFlags = {
+  inline def apply(): PlusIoFlags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIoFlags]
   }
   
-  @scala.inline
-  implicit class PlusIoFlagsMutableBuilder[Self <: PlusIoFlags] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIoFlags](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
   }
 }

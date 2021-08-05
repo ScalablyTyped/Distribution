@@ -87,85 +87,59 @@ trait SchemaDebuggee extends StObject {
 }
 object SchemaDebuggee {
   
-  @scala.inline
-  def apply(): SchemaDebuggee = {
+  inline def apply(): SchemaDebuggee = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDebuggee]
   }
   
-  @scala.inline
-  implicit class SchemaDebuggeeMutableBuilder[Self <: SchemaDebuggee] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDebuggee](x: Self) {
     
-    @scala.inline
-    def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+    inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
+    inline def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExtSourceContexts(value: js.Array[SchemaExtendedSourceContext]): Self = StObject.set(x, "extSourceContexts", value.asInstanceOf[js.Any])
+    inline def setExtSourceContexts(value: js.Array[SchemaExtendedSourceContext]): Self = StObject.set(x, "extSourceContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtSourceContextsUndefined: Self = StObject.set(x, "extSourceContexts", js.undefined)
+    inline def setExtSourceContextsUndefined: Self = StObject.set(x, "extSourceContexts", js.undefined)
     
-    @scala.inline
-    def setExtSourceContextsVarargs(value: SchemaExtendedSourceContext*): Self = StObject.set(x, "extSourceContexts", js.Array(value :_*))
+    inline def setExtSourceContextsVarargs(value: SchemaExtendedSourceContext*): Self = StObject.set(x, "extSourceContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+    inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
-    @scala.inline
-    def setIsInactive(value: Boolean): Self = StObject.set(x, "isInactive", value.asInstanceOf[js.Any])
+    inline def setIsInactive(value: Boolean): Self = StObject.set(x, "isInactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInactiveUndefined: Self = StObject.set(x, "isInactive", js.undefined)
+    inline def setIsInactiveUndefined: Self = StObject.set(x, "isInactive", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setSourceContexts(value: js.Array[SchemaSourceContext]): Self = StObject.set(x, "sourceContexts", value.asInstanceOf[js.Any])
+    inline def setSourceContexts(value: js.Array[SchemaSourceContext]): Self = StObject.set(x, "sourceContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceContextsUndefined: Self = StObject.set(x, "sourceContexts", js.undefined)
+    inline def setSourceContextsUndefined: Self = StObject.set(x, "sourceContexts", js.undefined)
     
-    @scala.inline
-    def setSourceContextsVarargs(value: SchemaSourceContext*): Self = StObject.set(x, "sourceContexts", js.Array(value :_*))
+    inline def setSourceContextsVarargs(value: SchemaSourceContext*): Self = StObject.set(x, "sourceContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: SchemaStatusMessage): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaStatusMessage): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUniquifier(value: String): Self = StObject.set(x, "uniquifier", value.asInstanceOf[js.Any])
+    inline def setUniquifier(value: String): Self = StObject.set(x, "uniquifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniquifierUndefined: Self = StObject.set(x, "uniquifier", js.undefined)
+    inline def setUniquifierUndefined: Self = StObject.set(x, "uniquifier", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetSecurityConfigurationRequest extends StObject {
 }
 object GetSecurityConfigurationRequest {
   
-  @scala.inline
-  def apply(Name: NameString): GetSecurityConfigurationRequest = {
+  inline def apply(Name: NameString): GetSecurityConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecurityConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetSecurityConfigurationRequestMutableBuilder[Self <: GetSecurityConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

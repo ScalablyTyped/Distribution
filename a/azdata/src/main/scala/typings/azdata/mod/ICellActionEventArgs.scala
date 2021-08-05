@@ -14,22 +14,17 @@ trait ICellActionEventArgs extends StObject {
 }
 object ICellActionEventArgs {
   
-  @scala.inline
-  def apply(column: Double, columnName: Double, row: Double): ICellActionEventArgs = {
+  inline def apply(column: Double, columnName: Double, row: Double): ICellActionEventArgs = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnName = columnName.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICellActionEventArgs]
   }
   
-  @scala.inline
-  implicit class ICellActionEventArgsMutableBuilder[Self <: ICellActionEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICellActionEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnName(value: Double): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: Double): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

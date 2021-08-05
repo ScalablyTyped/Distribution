@@ -13,8 +13,7 @@ trait ICachedFileUpdaterActivatedEventArgs
 }
 object ICachedFileUpdaterActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cachedFileUpdaterUI: CachedFileUpdaterUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -24,10 +23,8 @@ object ICachedFileUpdaterActivatedEventArgs {
     __obj.asInstanceOf[ICachedFileUpdaterActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ICachedFileUpdaterActivatedEventArgsMutableBuilder[Self <: ICachedFileUpdaterActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICachedFileUpdaterActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCachedFileUpdaterUI(value: CachedFileUpdaterUI): Self = StObject.set(x, "cachedFileUpdaterUI", value.asInstanceOf[js.Any])
+    inline def setCachedFileUpdaterUI(value: CachedFileUpdaterUI): Self = StObject.set(x, "cachedFileUpdaterUI", value.asInstanceOf[js.Any])
   }
 }

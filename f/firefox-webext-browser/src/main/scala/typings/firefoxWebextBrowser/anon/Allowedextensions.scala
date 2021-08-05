@@ -24,8 +24,7 @@ trait Allowedextensions
 }
 object Allowedextensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowed_extensions: js.Array[ExtensionID],
     description: String,
     name: String,
@@ -37,25 +36,18 @@ object Allowedextensions {
     __obj.asInstanceOf[Allowedextensions]
   }
   
-  @scala.inline
-  implicit class AllowedextensionsMutableBuilder[Self <: Allowedextensions] (val x: Self) extends AnyVal {
+  extension [Self <: Allowedextensions](x: Self) {
     
-    @scala.inline
-    def setAllowed_extensions(value: js.Array[ExtensionID]): Self = StObject.set(x, "allowed_extensions", value.asInstanceOf[js.Any])
+    inline def setAllowed_extensions(value: js.Array[ExtensionID]): Self = StObject.set(x, "allowed_extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowed_extensionsVarargs(value: ExtensionID*): Self = StObject.set(x, "allowed_extensions", js.Array(value :_*))
+    inline def setAllowed_extensionsVarargs(value: ExtensionID*): Self = StObject.set(x, "allowed_extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pkcs11 | stdio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pkcs11 | stdio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

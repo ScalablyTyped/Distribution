@@ -24,28 +24,21 @@ trait CapacityProviderAutoScalingGroupProvider extends StObject {
 }
 object CapacityProviderAutoScalingGroupProvider {
   
-  @scala.inline
-  def apply(autoScalingGroupArn: Input[String]): CapacityProviderAutoScalingGroupProvider = {
+  inline def apply(autoScalingGroupArn: Input[String]): CapacityProviderAutoScalingGroupProvider = {
     val __obj = js.Dynamic.literal(autoScalingGroupArn = autoScalingGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityProviderAutoScalingGroupProvider]
   }
   
-  @scala.inline
-  implicit class CapacityProviderAutoScalingGroupProviderMutableBuilder[Self <: CapacityProviderAutoScalingGroupProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityProviderAutoScalingGroupProvider](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupArn(value: Input[String]): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupArn(value: Input[String]): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedScaling(value: Input[CapacityProviderAutoScalingGroupProviderManagedScaling]): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
+    inline def setManagedScaling(value: Input[CapacityProviderAutoScalingGroupProviderManagedScaling]): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedScalingUndefined: Self = StObject.set(x, "managedScaling", js.undefined)
+    inline def setManagedScalingUndefined: Self = StObject.set(x, "managedScaling", js.undefined)
     
-    @scala.inline
-    def setManagedTerminationProtection(value: Input[String]): Self = StObject.set(x, "managedTerminationProtection", value.asInstanceOf[js.Any])
+    inline def setManagedTerminationProtection(value: Input[String]): Self = StObject.set(x, "managedTerminationProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedTerminationProtectionUndefined: Self = StObject.set(x, "managedTerminationProtection", js.undefined)
+    inline def setManagedTerminationProtectionUndefined: Self = StObject.set(x, "managedTerminationProtection", js.undefined)
   }
 }

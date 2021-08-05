@@ -13,8 +13,7 @@ object normaliseContentMod {
     * @param {import('./normalise-input').ToContent} input
     * @returns {AsyncIterable<Uint8Array>}
     */
-  @scala.inline
-  def apply(input: ToContent): AsyncIterable[Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Uint8Array]]
+  inline def apply(input: ToContent): AsyncIterable[Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Uint8Array]]
   
   @JSImport("ipfs-core-utils/dist/src/files/normalise-input/normalise-content", JSImport.Namespace)
   @js.native

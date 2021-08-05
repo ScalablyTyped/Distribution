@@ -23,28 +23,21 @@ trait GetConsoleScreenshotRequest extends StObject {
 }
 object GetConsoleScreenshotRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): GetConsoleScreenshotRequest = {
+  inline def apply(InstanceId: InstanceId): GetConsoleScreenshotRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConsoleScreenshotRequest]
   }
   
-  @scala.inline
-  implicit class GetConsoleScreenshotRequestMutableBuilder[Self <: GetConsoleScreenshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConsoleScreenshotRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWakeUp(value: Boolean): Self = StObject.set(x, "WakeUp", value.asInstanceOf[js.Any])
+    inline def setWakeUp(value: Boolean): Self = StObject.set(x, "WakeUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWakeUpUndefined: Self = StObject.set(x, "WakeUp", js.undefined)
+    inline def setWakeUpUndefined: Self = StObject.set(x, "WakeUp", js.undefined)
   }
 }

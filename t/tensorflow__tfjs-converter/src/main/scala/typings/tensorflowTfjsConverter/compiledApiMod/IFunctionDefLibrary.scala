@@ -14,37 +14,27 @@ trait IFunctionDefLibrary extends StObject {
 }
 object IFunctionDefLibrary {
   
-  @scala.inline
-  def apply(): IFunctionDefLibrary = {
+  inline def apply(): IFunctionDefLibrary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFunctionDefLibrary]
   }
   
-  @scala.inline
-  implicit class IFunctionDefLibraryMutableBuilder[Self <: IFunctionDefLibrary] (val x: Self) extends AnyVal {
+  extension [Self <: IFunctionDefLibrary](x: Self) {
     
-    @scala.inline
-    def setFunction(value: js.Array[IFunctionDef]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: js.Array[IFunctionDef]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNull: Self = StObject.set(x, "function", null)
+    inline def setFunctionNull: Self = StObject.set(x, "function", null)
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setFunctionVarargs(value: IFunctionDef*): Self = StObject.set(x, "function", js.Array(value :_*))
+    inline def setFunctionVarargs(value: IFunctionDef*): Self = StObject.set(x, "function", js.Array(value :_*))
     
-    @scala.inline
-    def setGradient(value: js.Array[IGradientDef]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: js.Array[IGradientDef]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientNull: Self = StObject.set(x, "gradient", null)
+    inline def setGradientNull: Self = StObject.set(x, "gradient", null)
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    @scala.inline
-    def setGradientVarargs(value: IGradientDef*): Self = StObject.set(x, "gradient", js.Array(value :_*))
+    inline def setGradientVarargs(value: IGradientDef*): Self = StObject.set(x, "gradient", js.Array(value :_*))
   }
 }

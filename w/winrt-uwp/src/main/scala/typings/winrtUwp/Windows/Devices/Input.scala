@@ -47,17 +47,14 @@ object Input {
   }
   object KeyboardCapabilities {
     
-    @scala.inline
-    def apply(keyboardPresent: Double): KeyboardCapabilities = {
+    inline def apply(keyboardPresent: Double): KeyboardCapabilities = {
       val __obj = js.Dynamic.literal(keyboardPresent = keyboardPresent.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyboardCapabilities]
     }
     
-    @scala.inline
-    implicit class KeyboardCapabilitiesMutableBuilder[Self <: KeyboardCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardCapabilities](x: Self) {
       
-      @scala.inline
-      def setKeyboardPresent(value: Double): Self = StObject.set(x, "keyboardPresent", value.asInstanceOf[js.Any])
+      inline def setKeyboardPresent(value: Double): Self = StObject.set(x, "keyboardPresent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +78,7 @@ object Input {
   }
   object MouseCapabilities {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       horizontalWheelPresent: Double,
       mousePresent: Double,
       numberOfButtons: Double,
@@ -93,23 +89,17 @@ object Input {
       __obj.asInstanceOf[MouseCapabilities]
     }
     
-    @scala.inline
-    implicit class MouseCapabilitiesMutableBuilder[Self <: MouseCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: MouseCapabilities](x: Self) {
       
-      @scala.inline
-      def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
+      inline def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousePresent(value: Double): Self = StObject.set(x, "mousePresent", value.asInstanceOf[js.Any])
+      inline def setMousePresent(value: Double): Self = StObject.set(x, "mousePresent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfButtons(value: Double): Self = StObject.set(x, "numberOfButtons", value.asInstanceOf[js.Any])
+      inline def setNumberOfButtons(value: Double): Self = StObject.set(x, "numberOfButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwapButtons(value: Double): Self = StObject.set(x, "swapButtons", value.asInstanceOf[js.Any])
+      inline def setSwapButtons(value: Double): Self = StObject.set(x, "swapButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalWheelPresent(value: Double): Self = StObject.set(x, "verticalWheelPresent", value.asInstanceOf[js.Any])
+      inline def setVerticalWheelPresent(value: Double): Self = StObject.set(x, "verticalWheelPresent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,20 +114,16 @@ object Input {
   }
   object MouseDelta {
     
-    @scala.inline
-    def apply(x: Double, y: Double): MouseDelta = {
+    inline def apply(x: Double, y: Double): MouseDelta = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[MouseDelta]
     }
     
-    @scala.inline
-    implicit class MouseDeltaMutableBuilder[Self <: MouseDelta] (val x: Self) extends AnyVal {
+    extension [Self <: MouseDelta](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,17 +154,14 @@ object Input {
   }
   object MouseEventArgs {
     
-    @scala.inline
-    def apply(mouseDelta: MouseDelta): MouseEventArgs = {
+    inline def apply(mouseDelta: MouseDelta): MouseEventArgs = {
       val __obj = js.Dynamic.literal(mouseDelta = mouseDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[MouseEventArgs]
     }
     
-    @scala.inline
-    implicit class MouseEventArgsMutableBuilder[Self <: MouseEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MouseEventArgs](x: Self) {
       
-      @scala.inline
-      def setMouseDelta(value: MouseDelta): Self = StObject.set(x, "mouseDelta", value.asInstanceOf[js.Any])
+      inline def setMouseDelta(value: MouseDelta): Self = StObject.set(x, "mouseDelta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,8 +191,7 @@ object Input {
   }
   object PointerDevice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isIntegrated: Boolean,
       maxContacts: Double,
       maxPointersWithZDistance: js.Any,
@@ -222,29 +204,21 @@ object Input {
       __obj.asInstanceOf[PointerDevice]
     }
     
-    @scala.inline
-    implicit class PointerDeviceMutableBuilder[Self <: PointerDevice] (val x: Self) extends AnyVal {
+    extension [Self <: PointerDevice](x: Self) {
       
-      @scala.inline
-      def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
+      inline def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxContacts(value: Double): Self = StObject.set(x, "maxContacts", value.asInstanceOf[js.Any])
+      inline def setMaxContacts(value: Double): Self = StObject.set(x, "maxContacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPointersWithZDistance(value: js.Any): Self = StObject.set(x, "maxPointersWithZDistance", value.asInstanceOf[js.Any])
+      inline def setMaxPointersWithZDistance(value: js.Any): Self = StObject.set(x, "maxPointersWithZDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysicalDeviceRect(value: Rect): Self = StObject.set(x, "physicalDeviceRect", value.asInstanceOf[js.Any])
+      inline def setPhysicalDeviceRect(value: Rect): Self = StObject.set(x, "physicalDeviceRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+      inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenRect(value: Rect): Self = StObject.set(x, "screenRect", value.asInstanceOf[js.Any])
+      inline def setScreenRect(value: Rect): Self = StObject.set(x, "screenRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedUsages(value: IVectorView[PointerDeviceUsage]): Self = StObject.set(x, "supportedUsages", value.asInstanceOf[js.Any])
+      inline def setSupportedUsages(value: IVectorView[PointerDeviceUsage]): Self = StObject.set(x, "supportedUsages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,8 +251,7 @@ object Input {
   }
   object PointerDeviceUsage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxLogical: Double,
       maxPhysical: Double,
       minLogical: Double,
@@ -292,32 +265,23 @@ object Input {
       __obj.asInstanceOf[PointerDeviceUsage]
     }
     
-    @scala.inline
-    implicit class PointerDeviceUsageMutableBuilder[Self <: PointerDeviceUsage] (val x: Self) extends AnyVal {
+    extension [Self <: PointerDeviceUsage](x: Self) {
       
-      @scala.inline
-      def setMaxLogical(value: Double): Self = StObject.set(x, "maxLogical", value.asInstanceOf[js.Any])
+      inline def setMaxLogical(value: Double): Self = StObject.set(x, "maxLogical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPhysical(value: Double): Self = StObject.set(x, "maxPhysical", value.asInstanceOf[js.Any])
+      inline def setMaxPhysical(value: Double): Self = StObject.set(x, "maxPhysical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLogical(value: Double): Self = StObject.set(x, "minLogical", value.asInstanceOf[js.Any])
+      inline def setMinLogical(value: Double): Self = StObject.set(x, "minLogical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPhysical(value: Double): Self = StObject.set(x, "minPhysical", value.asInstanceOf[js.Any])
+      inline def setMinPhysical(value: Double): Self = StObject.set(x, "minPhysical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysicalMultiplier(value: Double): Self = StObject.set(x, "physicalMultiplier", value.asInstanceOf[js.Any])
+      inline def setPhysicalMultiplier(value: Double): Self = StObject.set(x, "physicalMultiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+      inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,20 +296,16 @@ object Input {
   }
   object TouchCapabilities {
     
-    @scala.inline
-    def apply(contacts: Double, touchPresent: Double): TouchCapabilities = {
+    inline def apply(contacts: Double, touchPresent: Double): TouchCapabilities = {
       val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], touchPresent = touchPresent.asInstanceOf[js.Any])
       __obj.asInstanceOf[TouchCapabilities]
     }
     
-    @scala.inline
-    implicit class TouchCapabilitiesMutableBuilder[Self <: TouchCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: TouchCapabilities](x: Self) {
       
-      @scala.inline
-      def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+      inline def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchPresent(value: Double): Self = StObject.set(x, "touchPresent", value.asInstanceOf[js.Any])
+      inline def setTouchPresent(value: Double): Self = StObject.set(x, "touchPresent", value.asInstanceOf[js.Any])
     }
   }
 }

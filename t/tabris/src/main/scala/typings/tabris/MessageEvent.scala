@@ -28,8 +28,7 @@ trait MessageEvent
 }
 object MessageEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AT_TARGET: Double,
     BUBBLING_PHASE: Double,
     CAPTURING_PHASE: Double,
@@ -57,22 +56,16 @@ object MessageEvent {
     __obj.asInstanceOf[MessageEvent]
   }
   
-  @scala.inline
-  implicit class MessageEventMutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MessageEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitMessageEvent(value: (String, Boolean, Boolean, js.Any, String, String, js.Any) => Unit): Self = StObject.set(x, "initMessageEvent", js.Any.fromFunction7(value))
+    inline def setInitMessageEvent(value: (String, Boolean, Boolean, js.Any, String, String, js.Any) => Unit): Self = StObject.set(x, "initMessageEvent", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPorts(value: js.Any): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Any): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

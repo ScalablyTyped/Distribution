@@ -24,40 +24,29 @@ trait ConfigurationStatus extends StObject {
 }
 object ConfigurationStatus {
   
-  @scala.inline
-  def apply(): ConfigurationStatus = {
+  inline def apply(): ConfigurationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationStatus]
   }
   
-  @scala.inline
-  implicit class ConfigurationStatusMutableBuilder[Self <: ConfigurationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setLatestCreatedRevisionName(value: String): Self = StObject.set(x, "latestCreatedRevisionName", value.asInstanceOf[js.Any])
+    inline def setLatestCreatedRevisionName(value: String): Self = StObject.set(x, "latestCreatedRevisionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestCreatedRevisionNameUndefined: Self = StObject.set(x, "latestCreatedRevisionName", js.undefined)
+    inline def setLatestCreatedRevisionNameUndefined: Self = StObject.set(x, "latestCreatedRevisionName", js.undefined)
     
-    @scala.inline
-    def setLatestReadyRevisionName(value: String): Self = StObject.set(x, "latestReadyRevisionName", value.asInstanceOf[js.Any])
+    inline def setLatestReadyRevisionName(value: String): Self = StObject.set(x, "latestReadyRevisionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestReadyRevisionNameUndefined: Self = StObject.set(x, "latestReadyRevisionName", js.undefined)
+    inline def setLatestReadyRevisionNameUndefined: Self = StObject.set(x, "latestReadyRevisionName", js.undefined)
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait IKernelChangedArgs extends StObject {
 }
 object IKernelChangedArgs {
   
-  @scala.inline
-  def apply(): IKernelChangedArgs = {
+  inline def apply(): IKernelChangedArgs = {
     val __obj = js.Dynamic.literal(newValue = null, oldValue = null)
     __obj.asInstanceOf[IKernelChangedArgs]
   }
   
-  @scala.inline
-  implicit class IKernelChangedArgsMutableBuilder[Self <: IKernelChangedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IKernelChangedArgs](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: IKernel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: IKernel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueNull: Self = StObject.set(x, "newValue", null)
+    inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
     
-    @scala.inline
-    def setOldValue(value: IKernel): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: IKernel): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+    inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
   }
 }

@@ -33,8 +33,7 @@ trait XSecuritySAXEventKeeper
 }
 object XSecuritySAXEventKeeper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentBlockingNode: XXMLElementWrapper,
     acquire: () => Unit,
     addBlocker: () => Double,
@@ -56,13 +55,10 @@ object XSecuritySAXEventKeeper {
     __obj.asInstanceOf[XSecuritySAXEventKeeper]
   }
   
-  @scala.inline
-  implicit class XSecuritySAXEventKeeperMutableBuilder[Self <: XSecuritySAXEventKeeper] (val x: Self) extends AnyVal {
+  extension [Self <: XSecuritySAXEventKeeper](x: Self) {
     
-    @scala.inline
-    def setAddSecurityElementCollector(value: (ElementMarkPriority, Boolean) => Double): Self = StObject.set(x, "addSecurityElementCollector", js.Any.fromFunction2(value))
+    inline def setAddSecurityElementCollector(value: (ElementMarkPriority, Boolean) => Double): Self = StObject.set(x, "addSecurityElementCollector", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSecurityId(value: (Double, Double) => Unit): Self = StObject.set(x, "setSecurityId", js.Any.fromFunction2(value))
+    inline def setSetSecurityId(value: (Double, Double) => Unit): Self = StObject.set(x, "setSecurityId", js.Any.fromFunction2(value))
   }
 }

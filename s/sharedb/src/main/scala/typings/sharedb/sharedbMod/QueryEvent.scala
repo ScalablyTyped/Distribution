@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryEvent extends StObject
 object QueryEvent {
   
-  @scala.inline
-  def changed: typings.sharedb.sharedbStrings.changed = "changed".asInstanceOf[typings.sharedb.sharedbStrings.changed]
+  inline def changed: typings.sharedb.sharedbStrings.changed = "changed".asInstanceOf[typings.sharedb.sharedbStrings.changed]
   
-  @scala.inline
-  def error: typings.sharedb.sharedbStrings.error = "error".asInstanceOf[typings.sharedb.sharedbStrings.error]
+  inline def error: typings.sharedb.sharedbStrings.error = "error".asInstanceOf[typings.sharedb.sharedbStrings.error]
   
-  @scala.inline
-  def extra: typings.sharedb.sharedbStrings.extra = "extra".asInstanceOf[typings.sharedb.sharedbStrings.extra]
+  inline def extra: typings.sharedb.sharedbStrings.extra = "extra".asInstanceOf[typings.sharedb.sharedbStrings.extra]
   
-  @scala.inline
-  def insert: typings.sharedb.sharedbStrings.insert = "insert".asInstanceOf[typings.sharedb.sharedbStrings.insert]
+  inline def insert: typings.sharedb.sharedbStrings.insert = "insert".asInstanceOf[typings.sharedb.sharedbStrings.insert]
   
-  @scala.inline
-  def move: typings.sharedb.sharedbStrings.move = "move".asInstanceOf[typings.sharedb.sharedbStrings.move]
+  inline def move: typings.sharedb.sharedbStrings.move = "move".asInstanceOf[typings.sharedb.sharedbStrings.move]
   
-  @scala.inline
-  def ready: typings.sharedb.sharedbStrings.ready = "ready".asInstanceOf[typings.sharedb.sharedbStrings.ready]
+  inline def ready: typings.sharedb.sharedbStrings.ready = "ready".asInstanceOf[typings.sharedb.sharedbStrings.ready]
   
-  @scala.inline
-  def remove: typings.sharedb.sharedbStrings.remove = "remove".asInstanceOf[typings.sharedb.sharedbStrings.remove]
+  inline def remove: typings.sharedb.sharedbStrings.remove = "remove".asInstanceOf[typings.sharedb.sharedbStrings.remove]
 }

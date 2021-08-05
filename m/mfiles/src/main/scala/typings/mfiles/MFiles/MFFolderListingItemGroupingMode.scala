@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFolderListingItemGroupingMode extends StObject
 object MFFolderListingItemGroupingMode {
   
-  @scala.inline
-  def GroupObjectsByObjectType: `1` = 1.asInstanceOf[`1`]
+  inline def GroupObjectsByObjectType: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def GroupViewsAndFoldersByType: `1024` = 1024.asInstanceOf[`1024`]
+  inline def GroupViewsAndFoldersByType: `1024` = 1024.asInstanceOf[`1024`]
   
-  @scala.inline
-  def NoGrouping: `0` = 0.asInstanceOf[`0`]
+  inline def NoGrouping: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Unspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def Unspecified: `-1` = -1.asInstanceOf[`-1`]
 }

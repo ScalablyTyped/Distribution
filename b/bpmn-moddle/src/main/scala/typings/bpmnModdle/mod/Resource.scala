@@ -14,8 +14,7 @@ trait Resource
 }
 object Resource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -26,16 +25,12 @@ object Resource {
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceParameters(value: js.Array[ResourceParameter]): Self = StObject.set(x, "resourceParameters", value.asInstanceOf[js.Any])
+    inline def setResourceParameters(value: js.Array[ResourceParameter]): Self = StObject.set(x, "resourceParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceParametersVarargs(value: ResourceParameter*): Self = StObject.set(x, "resourceParameters", js.Array(value :_*))
+    inline def setResourceParametersVarargs(value: ResourceParameter*): Self = StObject.set(x, "resourceParameters", js.Array(value :_*))
   }
 }

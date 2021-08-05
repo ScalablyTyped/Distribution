@@ -62,8 +62,7 @@ object libResolveMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
+    inline def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
   }
   
   @JSImport("@uirouter/core/lib/resolve", "ResolveContext")
@@ -76,8 +75,7 @@ object libResolveMod {
   @JSImport("@uirouter/core/lib/resolve", "defaultResolvePolicy")
   @js.native
   def defaultResolvePolicy: ResolvePolicy = js.native
-  @scala.inline
-  def defaultResolvePolicy_=(x: ResolvePolicy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolvePolicy")(x.asInstanceOf[js.Any])
+  inline def defaultResolvePolicy_=(x: ResolvePolicy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolvePolicy")(x.asInstanceOf[js.Any])
   
   object resolvePolicies {
     
@@ -88,13 +86,11 @@ object libResolveMod {
     @JSImport("@uirouter/core/lib/resolve", "resolvePolicies.async")
     @js.native
     def async: NOWAIT = js.native
-    @scala.inline
-    def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
+    inline def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/resolve", "resolvePolicies.when")
     @js.native
     def when: EAGER = js.native
-    @scala.inline
-    def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
+    inline def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
   }
 }

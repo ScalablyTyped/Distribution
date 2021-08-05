@@ -22,43 +22,31 @@ trait StandardPropsnevernever extends StObject {
 }
 object StandardPropsnevernever {
   
-  @scala.inline
-  def apply(): StandardPropsnevernever = {
+  inline def apply(): StandardPropsnevernever = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardPropsnevernever]
   }
   
-  @scala.inline
-  implicit class StandardPropsneverneverMutableBuilder[Self <: StandardPropsnevernever] (val x: Self) extends AnyVal {
+  extension [Self <: StandardPropsnevernever](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setClasses(value: Partial[ClassNameMap[scala.Nothing]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: Partial[ClassNameMap[scala.Nothing]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+    inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
-    @scala.inline
-    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+    inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

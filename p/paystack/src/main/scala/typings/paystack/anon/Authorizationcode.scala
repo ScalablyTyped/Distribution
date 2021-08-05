@@ -16,25 +16,19 @@ trait Authorizationcode extends StObject {
 }
 object Authorizationcode {
   
-  @scala.inline
-  def apply(amount: Double, authorization_code: String, email: String, reference: String): Authorizationcode = {
+  inline def apply(amount: Double, authorization_code: String, email: String, reference: String): Authorizationcode = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], authorization_code = authorization_code.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authorizationcode]
   }
   
-  @scala.inline
-  implicit class AuthorizationcodeMutableBuilder[Self <: Authorizationcode] (val x: Self) extends AnyVal {
+  extension [Self <: Authorizationcode](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorization_code(value: String): Self = StObject.set(x, "authorization_code", value.asInstanceOf[js.Any])
+    inline def setAuthorization_code(value: String): Self = StObject.set(x, "authorization_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

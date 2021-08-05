@@ -13,22 +13,17 @@ trait CreateMembersRequest extends StObject {
 }
 object CreateMembersRequest {
   
-  @scala.inline
-  def apply(): CreateMembersRequest = {
+  inline def apply(): CreateMembersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMembersRequest]
   }
   
-  @scala.inline
-  implicit class CreateMembersRequestMutableBuilder[Self <: CreateMembersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMembersRequest](x: Self) {
     
-    @scala.inline
-    def setAccountDetails(value: AccountDetailsList): Self = StObject.set(x, "AccountDetails", value.asInstanceOf[js.Any])
+    inline def setAccountDetails(value: AccountDetailsList): Self = StObject.set(x, "AccountDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountDetailsUndefined: Self = StObject.set(x, "AccountDetails", js.undefined)
+    inline def setAccountDetailsUndefined: Self = StObject.set(x, "AccountDetails", js.undefined)
     
-    @scala.inline
-    def setAccountDetailsVarargs(value: AccountDetails*): Self = StObject.set(x, "AccountDetails", js.Array(value :_*))
+    inline def setAccountDetailsVarargs(value: AccountDetails*): Self = StObject.set(x, "AccountDetails", js.Array(value :_*))
   }
 }

@@ -10,8 +10,7 @@ trait ListKeyPoliciesOutput
      with typings.awsSdkClientKmsBrowser.typesListKeyPoliciesOutputMod.ListKeyPoliciesOutput
 object ListKeyPoliciesOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListKeyPoliciesOutput = {
+  inline def apply($metadata: ResponseMetadata): ListKeyPoliciesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeyPoliciesOutput]
   }

@@ -10,19 +10,15 @@ trait ResolvedModuleWithFailedLookupLocations extends StObject {
 }
 object ResolvedModuleWithFailedLookupLocations {
   
-  @scala.inline
-  def apply(): ResolvedModuleWithFailedLookupLocations = {
+  inline def apply(): ResolvedModuleWithFailedLookupLocations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolvedModuleWithFailedLookupLocations]
   }
   
-  @scala.inline
-  implicit class ResolvedModuleWithFailedLookupLocationsMutableBuilder[Self <: ResolvedModuleWithFailedLookupLocations] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedModuleWithFailedLookupLocations](x: Self) {
     
-    @scala.inline
-    def setResolvedModule(value: ResolvedModuleFull): Self = StObject.set(x, "resolvedModule", value.asInstanceOf[js.Any])
+    inline def setResolvedModule(value: ResolvedModuleFull): Self = StObject.set(x, "resolvedModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedModuleUndefined: Self = StObject.set(x, "resolvedModule", js.undefined)
+    inline def setResolvedModuleUndefined: Self = StObject.set(x, "resolvedModule", js.undefined)
   }
 }

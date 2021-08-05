@@ -10,16 +10,13 @@ trait DataOptionsObject extends StObject {
 }
 object DataOptionsObject {
   
-  @scala.inline
-  def apply(data: OptionsObject): DataOptionsObject = {
+  inline def apply(data: OptionsObject): DataOptionsObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataOptionsObject]
   }
   
-  @scala.inline
-  implicit class DataOptionsObjectMutableBuilder[Self <: DataOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataOptionsObject](x: Self) {
     
-    @scala.inline
-    def setData(value: OptionsObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: OptionsObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

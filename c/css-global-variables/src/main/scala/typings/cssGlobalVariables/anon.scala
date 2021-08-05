@@ -16,32 +16,24 @@ object anon {
   }
   object Autoprefix {
     
-    @scala.inline
-    def apply(): Autoprefix = {
+    inline def apply(): Autoprefix = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Autoprefix]
     }
     
-    @scala.inline
-    implicit class AutoprefixMutableBuilder[Self <: Autoprefix] (val x: Self) extends AnyVal {
+    extension [Self <: Autoprefix](x: Self) {
       
-      @scala.inline
-      def setAutoprefix(value: Boolean): Self = StObject.set(x, "autoprefix", value.asInstanceOf[js.Any])
+      inline def setAutoprefix(value: Boolean): Self = StObject.set(x, "autoprefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoprefixUndefined: Self = StObject.set(x, "autoprefix", js.undefined)
+      inline def setAutoprefixUndefined: Self = StObject.set(x, "autoprefix", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setNormalize(value: /* name */ String => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+      inline def setNormalize(value: /* name */ String => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     }
   }
 }

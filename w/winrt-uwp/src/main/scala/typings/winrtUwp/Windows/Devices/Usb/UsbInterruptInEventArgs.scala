@@ -13,16 +13,13 @@ trait UsbInterruptInEventArgs extends StObject {
 }
 object UsbInterruptInEventArgs {
   
-  @scala.inline
-  def apply(interruptData: IBuffer): UsbInterruptInEventArgs = {
+  inline def apply(interruptData: IBuffer): UsbInterruptInEventArgs = {
     val __obj = js.Dynamic.literal(interruptData = interruptData.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsbInterruptInEventArgs]
   }
   
-  @scala.inline
-  implicit class UsbInterruptInEventArgsMutableBuilder[Self <: UsbInterruptInEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UsbInterruptInEventArgs](x: Self) {
     
-    @scala.inline
-    def setInterruptData(value: IBuffer): Self = StObject.set(x, "interruptData", value.asInstanceOf[js.Any])
+    inline def setInterruptData(value: IBuffer): Self = StObject.set(x, "interruptData", value.asInstanceOf[js.Any])
   }
 }

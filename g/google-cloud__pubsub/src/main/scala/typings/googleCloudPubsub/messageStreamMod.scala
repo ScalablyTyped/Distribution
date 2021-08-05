@@ -51,9 +51,9 @@ object messageStreamMod {
       *
       * @param {stream} stream The StreamingPull stream.
       */
-    var _addStream: js.Any = js.native
+    /* private */ var _addStream: js.Any = js.native
     
-    var _fillHandle: js.Any = js.native
+    /* private */ var _fillHandle: js.Any = js.native
     
     /**
       * Attempts to create and cache the desired number of StreamingPull requests.
@@ -65,7 +65,7 @@ object messageStreamMod {
       *
       * @returns {Promise}
       */
-    var _fillStreamPool: js.Any = js.native
+    /* private */ var _fillStreamPool: js.Any = js.native
     
     /**
       * It is critical that we keep as few `PullResponse` objects in memory as
@@ -77,7 +77,7 @@ object messageStreamMod {
       *
       * @returns {Promise.<object>}
       */
-    var _getClient: js.Any = js.native
+    /* private */ var _getClient: js.Any = js.native
     
     /**
       * Since we do not use the streams to ack/modAck messages, they will close
@@ -85,9 +85,9 @@ object messageStreamMod {
       *
       * @private
       */
-    var _keepAlive: js.Any = js.native
+    /* private */ var _keepAlive: js.Any = js.native
     
-    var _keepAliveHandle: js.Any = js.native
+    /* private */ var _keepAliveHandle: js.Any = js.native
     
     /**
       * Once the stream has nothing left to read, we'll remove it and attempt to
@@ -98,7 +98,7 @@ object messageStreamMod {
       * @param {Duplex} stream The ended stream.
       * @param {object} status The stream status.
       */
-    var _onEnd: js.Any = js.native
+    /* private */ var _onEnd: js.Any = js.native
     
     /**
       * gRPC will usually emit a status as a ServiceError via `error` event before
@@ -110,7 +110,7 @@ object messageStreamMod {
       * @param {stream} stream The stream that errored.
       * @param {Error} err The error.
       */
-    var _onError: js.Any = js.native
+    /* private */ var _onError: js.Any = js.native
     
     /**
       * gRPC streams will emit a status event once the connection has been
@@ -122,9 +122,9 @@ object messageStreamMod {
       * @param {stream} stream The stream that was closed.
       * @param {object} status The status message stating why it was closed.
       */
-    var _onStatus: js.Any = js.native
+    /* private */ var _onStatus: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /**
       * Removes a stream from the combined stream.
@@ -133,9 +133,9 @@ object messageStreamMod {
       *
       * @param {stream} stream The stream to remove.
       */
-    var _removeStream: js.Any = js.native
+    /* private */ var _removeStream: js.Any = js.native
     
-    var _retrier: js.Any = js.native
+    /* private */ var _retrier: js.Any = js.native
     
     /**
       * Neither gRPC or gax allow for the highWaterMark option to be specified.
@@ -150,11 +150,11 @@ object messageStreamMod {
       * @param {Duplex} stream The duplex stream to adjust the
       *     highWaterMarks for.
       */
-    var _setHighWaterMark: js.Any = js.native
+    /* private */ var _setHighWaterMark: js.Any = js.native
     
-    var _streams: js.Any = js.native
+    /* private */ var _streams: js.Any = js.native
     
-    var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: js.Any = js.native
     
     /**
       * Promisified version of gRPCs Client#waitForReady function.
@@ -164,7 +164,7 @@ object messageStreamMod {
       * @param {object} client The gRPC client to wait for.
       * @returns {Promise}
       */
-    var _waitForClientReady: js.Any = js.native
+    /* private */ var _waitForClientReady: js.Any = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "StatusError")
@@ -202,32 +202,24 @@ object messageStreamMod {
   }
   object MessageStreamOptions {
     
-    @scala.inline
-    def apply(): MessageStreamOptions = {
+    inline def apply(): MessageStreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageStreamOptions]
     }
     
-    @scala.inline
-    implicit class MessageStreamOptionsMutableBuilder[Self <: MessageStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MessageStreamOptions](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setMaxStreams(value: Double): Self = StObject.set(x, "maxStreams", value.asInstanceOf[js.Any])
+      inline def setMaxStreams(value: Double): Self = StObject.set(x, "maxStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxStreamsUndefined: Self = StObject.set(x, "maxStreams", js.undefined)
+      inline def setMaxStreamsUndefined: Self = StObject.set(x, "maxStreams", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

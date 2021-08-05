@@ -36,8 +36,7 @@ trait EditorProviderTimePicker extends StObject {
 }
 object EditorProviderTimePicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createEditor: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit,
     destroy: () => Unit,
     isValid: () => Unit,
@@ -53,37 +52,26 @@ object EditorProviderTimePicker {
     __obj.asInstanceOf[EditorProviderTimePicker]
   }
   
-  @scala.inline
-  implicit class EditorProviderTimePickerMutableBuilder[Self <: EditorProviderTimePicker] (val x: Self) extends AnyVal {
+  extension [Self <: EditorProviderTimePicker](x: Self) {
     
-    @scala.inline
-    def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction7(value))
+    inline def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValid(value: () => Unit): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Unit): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshValue(value: () => Unit): Self = StObject.set(x, "refreshValue", js.Any.fromFunction0(value))
+    inline def setRefreshValue(value: () => Unit): Self = StObject.set(x, "refreshValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveFromParent(value: () => Unit): Self = StObject.set(x, "removeFromParent", js.Any.fromFunction0(value))
+    inline def setRemoveFromParent(value: () => Unit): Self = StObject.set(x, "removeFromParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
+    inline def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSize(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
+    inline def setSetSize(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetValue(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
+    inline def setSetValue(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTextChanged(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "textChanged", js.Any.fromFunction2(value))
+    inline def setTextChanged(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "textChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidator(value: () => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction0(value))
+    inline def setValidator(value: () => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction0(value))
   }
 }

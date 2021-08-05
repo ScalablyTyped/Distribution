@@ -26,67 +26,47 @@ trait BaseAuthOptions extends StObject {
 }
 object BaseAuthOptions {
   
-  @scala.inline
-  def apply(): BaseAuthOptions = {
+  inline def apply(): BaseAuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseAuthOptions]
   }
   
-  @scala.inline
-  implicit class BaseAuthOptionsMutableBuilder[Self <: BaseAuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseAuthOptions](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+    inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def set__instate(value: String): Self = StObject.set(x, "__instate", value.asInstanceOf[js.Any])
+    inline def set__instate(value: String): Self = StObject.set(x, "__instate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__instateUndefined: Self = StObject.set(x, "__instate", js.undefined)
+    inline def set__instateUndefined: Self = StObject.set(x, "__instate", js.undefined)
     
-    @scala.inline
-    def set_csrf(value: String): Self = StObject.set(x, "_csrf", value.asInstanceOf[js.Any])
+    inline def set_csrf(value: String): Self = StObject.set(x, "_csrf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_csrfUndefined: Self = StObject.set(x, "_csrf", js.undefined)
+    inline def set_csrfUndefined: Self = StObject.set(x, "_csrf", js.undefined)
   }
 }

@@ -12,20 +12,16 @@ trait PropertiesVisibilities extends StObject {
 }
 object PropertiesVisibilities {
   
-  @scala.inline
-  def apply(properties: Visibilities, `type`: String): PropertiesVisibilities = {
+  inline def apply(properties: Visibilities, `type`: String): PropertiesVisibilities = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesVisibilities]
   }
   
-  @scala.inline
-  implicit class PropertiesVisibilitiesMutableBuilder[Self <: PropertiesVisibilities] (val x: Self) extends AnyVal {
+  extension [Self <: PropertiesVisibilities](x: Self) {
     
-    @scala.inline
-    def setProperties(value: Visibilities): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Visibilities): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

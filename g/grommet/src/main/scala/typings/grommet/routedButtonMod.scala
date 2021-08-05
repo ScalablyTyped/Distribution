@@ -32,23 +32,18 @@ object routedButtonMod {
   }
   object RoutedButtonProps {
     
-    @scala.inline
-    def apply(path: String): RoutedButtonProps = {
+    inline def apply(path: String): RoutedButtonProps = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoutedButtonProps]
     }
     
-    @scala.inline
-    implicit class RoutedButtonPropsMutableBuilder[Self <: RoutedButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: RoutedButtonProps](x: Self) {
       
-      @scala.inline
-      def setMethod(value: push | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: push | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

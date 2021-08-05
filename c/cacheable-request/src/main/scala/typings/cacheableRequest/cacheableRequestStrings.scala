@@ -8,26 +8,21 @@ object cacheableRequestStrings {
   
   @js.native
   sealed trait CacheError extends StObject
-  @scala.inline
-  def CacheError: CacheError = "CacheError".asInstanceOf[CacheError]
+  inline def CacheError: CacheError = "CacheError".asInstanceOf[CacheError]
   
   @js.native
   sealed trait RequestError extends StObject
-  @scala.inline
-  def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
+  inline def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait request extends StObject
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
   sealed trait response extends StObject
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
+  inline def response: response = "response".asInstanceOf[response]
 }

@@ -28,37 +28,27 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: NullableLong): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: NullableLong): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
-    @scala.inline
-    def setDeploymentTime(value: DeploymentTimestamp): Self = StObject.set(x, "DeploymentTime", value.asInstanceOf[js.Any])
+    inline def setDeploymentTime(value: DeploymentTimestamp): Self = StObject.set(x, "DeploymentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTimeUndefined: Self = StObject.set(x, "DeploymentTime", js.undefined)
+    inline def setDeploymentTimeUndefined: Self = StObject.set(x, "DeploymentTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVersionLabel(value: String): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    inline def setVersionLabel(value: String): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

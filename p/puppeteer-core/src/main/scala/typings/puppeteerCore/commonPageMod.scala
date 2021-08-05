@@ -243,71 +243,71 @@ object commonPageMod {
       args: SerializableOrJSHandle*
     ): js.Promise[WrapElementHandle[ReturnType]] = js.native
     
-    var _accessibility: js.Any = js.native
+    /* private */ var _accessibility: js.Any = js.native
     
-    var _addConsoleMessage: js.Any = js.native
+    /* private */ var _addConsoleMessage: js.Any = js.native
     
-    var _buildMetricsObject: js.Any = js.native
+    /* private */ var _buildMetricsObject: js.Any = js.native
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _closed: js.Any = js.native
+    /* private */ var _closed: js.Any = js.native
     
-    var _coverage: js.Any = js.native
+    /* private */ var _coverage: js.Any = js.native
     
-    var _disconnectPromise: js.Any = js.native
+    /* private */ var _disconnectPromise: js.Any = js.native
     
-    var _emitMetrics: js.Any = js.native
+    /* private */ var _emitMetrics: js.Any = js.native
     
-    var _emulationManager: js.Any = js.native
+    /* private */ var _emulationManager: js.Any = js.native
     
-    var _fileChooserInterceptors: js.Any = js.native
+    /* private */ var _fileChooserInterceptors: js.Any = js.native
     
-    var _frameManager: js.Any = js.native
+    /* private */ var _frameManager: js.Any = js.native
     
-    var _go: js.Any = js.native
+    /* private */ var _go: js.Any = js.native
     
-    var _handleException: js.Any = js.native
+    /* private */ var _handleException: js.Any = js.native
     
-    var _initialize: js.Any = js.native
+    /* private */ var _initialize: js.Any = js.native
     
-    var _javascriptEnabled: js.Any = js.native
+    /* private */ var _javascriptEnabled: js.Any = js.native
     
-    var _keyboard: js.Any = js.native
+    /* private */ var _keyboard: js.Any = js.native
     
-    var _mouse: js.Any = js.native
+    /* private */ var _mouse: js.Any = js.native
     
-    var _onBindingCalled: js.Any = js.native
+    /* private */ var _onBindingCalled: js.Any = js.native
     
-    var _onConsoleAPI: js.Any = js.native
+    /* private */ var _onConsoleAPI: js.Any = js.native
     
-    var _onDialog: js.Any = js.native
+    /* private */ var _onDialog: js.Any = js.native
     
-    var _onFileChooser: js.Any = js.native
+    /* private */ var _onFileChooser: js.Any = js.native
     
-    var _onLogEntryAdded: js.Any = js.native
+    /* private */ var _onLogEntryAdded: js.Any = js.native
     
-    var _onTargetCrashed: js.Any = js.native
+    /* private */ var _onTargetCrashed: js.Any = js.native
     
-    var _pageBindings: js.Any = js.native
+    /* private */ var _pageBindings: js.Any = js.native
     
-    var _screenshotTask: js.Any = js.native
+    /* private */ var _screenshotTask: js.Any = js.native
     
-    var _screenshotTaskQueue: js.Any = js.native
+    /* private */ var _screenshotTaskQueue: js.Any = js.native
     
-    var _sessionClosePromise: js.Any = js.native
+    /* private */ var _sessionClosePromise: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
-    var _timeoutSettings: js.Any = js.native
+    /* private */ var _timeoutSettings: js.Any = js.native
     
-    var _touchscreen: js.Any = js.native
+    /* private */ var _touchscreen: js.Any = js.native
     
-    var _tracing: js.Any = js.native
+    /* private */ var _tracing: js.Any = js.native
     
-    var _viewport: js.Any = js.native
+    /* private */ var _viewport: js.Any = js.native
     
-    var _workers: js.Any = js.native
+    /* private */ var _workers: js.Any = js.native
     
     def accessibility: Accessibility = js.native
     
@@ -809,10 +809,8 @@ object commonPageMod {
     /**
       * @internal
       */
-    @scala.inline
-    def create(client: CDPSession, target: Target, ignoreHTTPSErrors: Boolean): js.Promise[Page] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(client.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Page]]
-    @scala.inline
-    def create(
+    inline def create(client: CDPSession, target: Target, ignoreHTTPSErrors: Boolean): js.Promise[Page] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(client.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Page]]
+    inline def create(
       client: CDPSession,
       target: Target,
       ignoreHTTPSErrors: Boolean,
@@ -839,26 +837,20 @@ object commonPageMod {
   }
   object GeolocationOptions {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double): GeolocationOptions = {
+    inline def apply(latitude: Double, longitude: Double): GeolocationOptions = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeolocationOptions]
     }
     
-    @scala.inline
-    implicit class GeolocationOptionsMutableBuilder[Self <: GeolocationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeolocationOptions](x: Self) {
       
-      @scala.inline
-      def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+      inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -870,20 +862,16 @@ object commonPageMod {
   }
   object MediaFeature {
     
-    @scala.inline
-    def apply(name: String, value: String): MediaFeature = {
+    inline def apply(name: String, value: String): MediaFeature = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaFeature]
     }
     
-    @scala.inline
-    implicit class MediaFeatureMutableBuilder[Self <: MediaFeature] (val x: Self) extends AnyVal {
+    extension [Self <: MediaFeature](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -917,92 +905,64 @@ object commonPageMod {
   }
   object Metrics {
     
-    @scala.inline
-    def apply(): Metrics = {
+    inline def apply(): Metrics = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Metrics]
     }
     
-    @scala.inline
-    implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+    extension [Self <: Metrics](x: Self) {
       
-      @scala.inline
-      def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
+      inline def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
+      inline def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
       
-      @scala.inline
-      def setFrames(value: Double): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: Double): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesUndefined: Self = StObject.set(x, "Frames", js.undefined)
+      inline def setFramesUndefined: Self = StObject.set(x, "Frames", js.undefined)
       
-      @scala.inline
-      def setJSEventListeners(value: Double): Self = StObject.set(x, "JSEventListeners", value.asInstanceOf[js.Any])
+      inline def setJSEventListeners(value: Double): Self = StObject.set(x, "JSEventListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSEventListenersUndefined: Self = StObject.set(x, "JSEventListeners", js.undefined)
+      inline def setJSEventListenersUndefined: Self = StObject.set(x, "JSEventListeners", js.undefined)
       
-      @scala.inline
-      def setJSHeapTotalSize(value: Double): Self = StObject.set(x, "JSHeapTotalSize", value.asInstanceOf[js.Any])
+      inline def setJSHeapTotalSize(value: Double): Self = StObject.set(x, "JSHeapTotalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSHeapTotalSizeUndefined: Self = StObject.set(x, "JSHeapTotalSize", js.undefined)
+      inline def setJSHeapTotalSizeUndefined: Self = StObject.set(x, "JSHeapTotalSize", js.undefined)
       
-      @scala.inline
-      def setJSHeapUsedSize(value: Double): Self = StObject.set(x, "JSHeapUsedSize", value.asInstanceOf[js.Any])
+      inline def setJSHeapUsedSize(value: Double): Self = StObject.set(x, "JSHeapUsedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSHeapUsedSizeUndefined: Self = StObject.set(x, "JSHeapUsedSize", js.undefined)
+      inline def setJSHeapUsedSizeUndefined: Self = StObject.set(x, "JSHeapUsedSize", js.undefined)
       
-      @scala.inline
-      def setLayoutCount(value: Double): Self = StObject.set(x, "LayoutCount", value.asInstanceOf[js.Any])
+      inline def setLayoutCount(value: Double): Self = StObject.set(x, "LayoutCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutCountUndefined: Self = StObject.set(x, "LayoutCount", js.undefined)
+      inline def setLayoutCountUndefined: Self = StObject.set(x, "LayoutCount", js.undefined)
       
-      @scala.inline
-      def setLayoutDuration(value: Double): Self = StObject.set(x, "LayoutDuration", value.asInstanceOf[js.Any])
+      inline def setLayoutDuration(value: Double): Self = StObject.set(x, "LayoutDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutDurationUndefined: Self = StObject.set(x, "LayoutDuration", js.undefined)
+      inline def setLayoutDurationUndefined: Self = StObject.set(x, "LayoutDuration", js.undefined)
       
-      @scala.inline
-      def setNodes(value: Double): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: Double): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
+      inline def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
       
-      @scala.inline
-      def setRecalcStyleCount(value: Double): Self = StObject.set(x, "RecalcStyleCount", value.asInstanceOf[js.Any])
+      inline def setRecalcStyleCount(value: Double): Self = StObject.set(x, "RecalcStyleCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecalcStyleCountUndefined: Self = StObject.set(x, "RecalcStyleCount", js.undefined)
+      inline def setRecalcStyleCountUndefined: Self = StObject.set(x, "RecalcStyleCount", js.undefined)
       
-      @scala.inline
-      def setRecalcStyleDuration(value: Double): Self = StObject.set(x, "RecalcStyleDuration", value.asInstanceOf[js.Any])
+      inline def setRecalcStyleDuration(value: Double): Self = StObject.set(x, "RecalcStyleDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecalcStyleDurationUndefined: Self = StObject.set(x, "RecalcStyleDuration", js.undefined)
+      inline def setRecalcStyleDurationUndefined: Self = StObject.set(x, "RecalcStyleDuration", js.undefined)
       
-      @scala.inline
-      def setScriptDuration(value: Double): Self = StObject.set(x, "ScriptDuration", value.asInstanceOf[js.Any])
+      inline def setScriptDuration(value: Double): Self = StObject.set(x, "ScriptDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptDurationUndefined: Self = StObject.set(x, "ScriptDuration", js.undefined)
+      inline def setScriptDurationUndefined: Self = StObject.set(x, "ScriptDuration", js.undefined)
       
-      @scala.inline
-      def setTaskDuration(value: Double): Self = StObject.set(x, "TaskDuration", value.asInstanceOf[js.Any])
+      inline def setTaskDuration(value: Double): Self = StObject.set(x, "TaskDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDurationUndefined: Self = StObject.set(x, "TaskDuration", js.undefined)
+      inline def setTaskDurationUndefined: Self = StObject.set(x, "TaskDuration", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
   }
   
@@ -1030,8 +990,7 @@ object commonPageMod {
   object PageEmittedEvents {
     
     /** Emitted when the page closes. */
-    @scala.inline
-    def Close: close = "close".asInstanceOf[close]
+    inline def Close: close = "close".asInstanceOf[close]
     
     /**
       * Emitted when JavaScript within the page calls one of console API methods,
@@ -1053,49 +1012,41 @@ object commonPageMod {
       *  page.evaluate(() => console.log('hello', 5, {foo: 'bar'}));
       * ```
       */
-    @scala.inline
-    def Console: console = "console".asInstanceOf[console]
+    inline def Console: console = "console".asInstanceOf[console]
     
     /**
       * Emitted when the JavaScript
       * {@link https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded | DOMContentLoaded } event is dispatched.
       */
-    @scala.inline
-    def DOMContentLoaded: domcontentloaded_ = "domcontentloaded".asInstanceOf[domcontentloaded_]
+    inline def DOMContentLoaded: domcontentloaded_ = "domcontentloaded".asInstanceOf[domcontentloaded_]
     
     /**
       * Emitted when a JavaScript dialog appears, such as `alert`, `prompt`,
       * `confirm` or `beforeunload`. Puppeteer can respond to the dialog via
       * {@link Dialog.accept} or {@link Dialog.dismiss}.
       */
-    @scala.inline
-    def Dialog: dialog = "dialog".asInstanceOf[dialog]
+    inline def Dialog: dialog = "dialog".asInstanceOf[dialog]
     
     /**
       * Emitted when the page crashes. Will contain an `Error`.
       */
-    @scala.inline
-    def Error: error = "error".asInstanceOf[error]
+    inline def Error: error = "error".asInstanceOf[error]
     
     /** Emitted when a frame is attached. Will contain a {@link Frame}. */
-    @scala.inline
-    def FrameAttached: frameattached = "frameattached".asInstanceOf[frameattached]
+    inline def FrameAttached: frameattached = "frameattached".asInstanceOf[frameattached]
     
     /** Emitted when a frame is detached. Will contain a {@link Frame}. */
-    @scala.inline
-    def FrameDetached: framedetached = "framedetached".asInstanceOf[framedetached]
+    inline def FrameDetached: framedetached = "framedetached".asInstanceOf[framedetached]
     
     /** Emitted when a frame is navigated to a new URL. Will contain a {@link Frame}. */
-    @scala.inline
-    def FrameNavigated: framenavigated = "framenavigated".asInstanceOf[framenavigated]
+    inline def FrameNavigated: framenavigated = "framenavigated".asInstanceOf[framenavigated]
     
     /**
       * Emitted when the JavaScript
       * {@link https://developer.mozilla.org/en-US/docs/Web/Events/load | load}
       * event is dispatched.
       */
-    @scala.inline
-    def Load: load = "load".asInstanceOf[load]
+    inline def Load: load = "load".asInstanceOf[load]
     
     /**
       * Emitted when the JavaScript code makes a call to `console.timeStamp`. For
@@ -1107,15 +1058,13 @@ object commonPageMod {
       * - `metrics`: objec containing metrics as key/value pairs. The values will
       *   be `number`s.
       */
-    @scala.inline
-    def Metrics: metrics = "metrics".asInstanceOf[metrics]
+    inline def Metrics: metrics = "metrics".asInstanceOf[metrics]
     
     /**
       * Emitted when an uncaught exception happens within the page.
       * Contains an `Error`.
       */
-    @scala.inline
-    def PageError: pageerror = "pageerror".asInstanceOf[pageerror]
+    inline def PageError: pageerror = "pageerror".asInstanceOf[pageerror]
     
     /**
       * Emitted when the page opens a new tab or window.
@@ -1138,8 +1087,7 @@ object commonPageMod {
       * ]);
       * ```
       */
-    @scala.inline
-    def Popup: popup = "popup".asInstanceOf[popup]
+    inline def Popup: popup = "popup".asInstanceOf[popup]
     
     /**
       * Emitted when a page issues a request and contains a {@link HTTPRequest}.
@@ -1148,8 +1096,7 @@ object commonPageMod {
       * The object is readonly. See {@Page.setRequestInterception} for intercepting
       * and mutating requests.
       */
-    @scala.inline
-    def Request: request = "request".asInstanceOf[request]
+    inline def Request: request = "request".asInstanceOf[request]
     
     /**
       * Emitted when a request fails, for example by timing out.
@@ -1162,36 +1109,31 @@ object commonPageMod {
       * responses from HTTP standpoint, so request will complete with
       * `requestfinished` event and not with `requestfailed`.
       */
-    @scala.inline
-    def RequestFailed: requestfailed = "requestfailed".asInstanceOf[requestfailed]
+    inline def RequestFailed: requestfailed = "requestfailed".asInstanceOf[requestfailed]
     
     /**
       * Emitted when a request finishes successfully. Contains a {@link HTTPRequest}.
       */
-    @scala.inline
-    def RequestFinished: requestfinished = "requestfinished".asInstanceOf[requestfinished]
+    inline def RequestFinished: requestfinished = "requestfinished".asInstanceOf[requestfinished]
     
     /**
       * Emitted when a response is received. Contains a {@link HTTPResponse}.
       */
-    @scala.inline
-    def Response: response = "response".asInstanceOf[response]
+    inline def Response: response = "response".asInstanceOf[response]
     
     /**
       * Emitted when a dedicated
       * {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API | WebWorker}
       * is spawned by the page.
       */
-    @scala.inline
-    def WorkerCreated: workercreated = "workercreated".asInstanceOf[workercreated]
+    inline def WorkerCreated: workercreated = "workercreated".asInstanceOf[workercreated]
     
     /**
       * Emitted when a dedicated
       * {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API | WebWorker}
       * is destroyed by the page.
       */
-    @scala.inline
-    def WorkerDestroyed: workerdestroyed = "workerdestroyed".asInstanceOf[workerdestroyed]
+    inline def WorkerDestroyed: workerdestroyed = "workerdestroyed".asInstanceOf[workerdestroyed]
   }
   
   trait ScreenshotClip extends StObject {
@@ -1206,26 +1148,20 @@ object commonPageMod {
   }
   object ScreenshotClip {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): ScreenshotClip = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): ScreenshotClip = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScreenshotClip]
     }
     
-    @scala.inline
-    implicit class ScreenshotClipMutableBuilder[Self <: ScreenshotClip] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenshotClip](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1247,56 +1183,40 @@ object commonPageMod {
   }
   object ScreenshotOptions {
     
-    @scala.inline
-    def apply(): ScreenshotOptions = {
+    inline def apply(): ScreenshotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenshotOptions]
     }
     
-    @scala.inline
-    implicit class ScreenshotOptionsMutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenshotOptions](x: Self) {
       
-      @scala.inline
-      def setClip(value: ScreenshotClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: ScreenshotClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
+      inline def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
+      inline def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
       
-      @scala.inline
-      def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
+      inline def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitBackgroundUndefined: Self = StObject.set(x, "omitBackground", js.undefined)
+      inline def setOmitBackgroundUndefined: Self = StObject.set(x, "omitBackground", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setType(value: png | jpeg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: png | jpeg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1317,29 +1237,22 @@ object commonPageMod {
   }
   object WaitForOptions {
     
-    @scala.inline
-    def apply(): WaitForOptions = {
+    inline def apply(): WaitForOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaitForOptions]
     }
     
-    @scala.inline
-    implicit class WaitForOptionsMutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitForOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWaitUntil(value: PuppeteerLifeCycleEvent | js.Array[PuppeteerLifeCycleEvent]): Self = StObject.set(x, "waitUntil", value.asInstanceOf[js.Any])
+      inline def setWaitUntil(value: PuppeteerLifeCycleEvent | js.Array[PuppeteerLifeCycleEvent]): Self = StObject.set(x, "waitUntil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitUntilUndefined: Self = StObject.set(x, "waitUntil", js.undefined)
+      inline def setWaitUntilUndefined: Self = StObject.set(x, "waitUntil", js.undefined)
       
-      @scala.inline
-      def setWaitUntilVarargs(value: PuppeteerLifeCycleEvent*): Self = StObject.set(x, "waitUntil", js.Array(value :_*))
+      inline def setWaitUntilVarargs(value: PuppeteerLifeCycleEvent*): Self = StObject.set(x, "waitUntil", js.Array(value :_*))
     }
   }
   
@@ -1357,20 +1270,16 @@ object commonPageMod {
   }
   object WaitTimeoutOptions {
     
-    @scala.inline
-    def apply(): WaitTimeoutOptions = {
+    inline def apply(): WaitTimeoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaitTimeoutOptions]
     }
     
-    @scala.inline
-    implicit class WaitTimeoutOptionsMutableBuilder[Self <: WaitTimeoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitTimeoutOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

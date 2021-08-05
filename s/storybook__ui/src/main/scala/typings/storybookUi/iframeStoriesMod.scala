@@ -24,23 +24,19 @@ object iframeStoriesMod {
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "default.component")
     @js.native
     def component: js.Function1[/* props */ IFrameProps & IframeHTMLAttributes[HTMLIFrameElement], Element] = js.native
-    @scala.inline
-    def component_=(x: js.Function1[/* props */ IFrameProps & IframeHTMLAttributes[HTMLIFrameElement], Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: js.Function1[/* props */ IFrameProps & IframeHTMLAttributes[HTMLIFrameElement], Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def missingStory(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("missingStory")().asInstanceOf[Element]
+  inline def missingStory(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("missingStory")().asInstanceOf[Element]
   
   object workingStory {
     
-    @scala.inline
-    def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+    inline def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
     
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "workingStory")
     @js.native
@@ -49,7 +45,6 @@ object iframeStoriesMod {
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "workingStory.parameters")
     @js.native
     def parameters: Chromatic = js.native
-    @scala.inline
-    def parameters_=(x: Chromatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    inline def parameters_=(x: Chromatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
   }
 }

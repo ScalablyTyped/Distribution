@@ -12,7 +12,7 @@ trait ODBCError extends StObject {
   
   val ErrorString: String
   
-  @JSName("Excel.ODBCError_typekey")
+  /* private */ @JSName("Excel.ODBCError_typekey")
   var ExcelDotODBCError_typekey: ODBCError
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait ODBCError extends StObject {
 }
 object ODBCError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ErrorString: String,
@@ -35,25 +34,18 @@ object ODBCError {
     __obj.asInstanceOf[ODBCError]
   }
   
-  @scala.inline
-  implicit class ODBCErrorMutableBuilder[Self <: ODBCError] (val x: Self) extends AnyVal {
+  extension [Self <: ODBCError](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorString(value: String): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
+    inline def setErrorString(value: String): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotODBCError_typekey(value: ODBCError): Self = StObject.set(x, "Excel.ODBCError_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotODBCError_typekey(value: ODBCError): Self = StObject.set(x, "Excel.ODBCError_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
+    inline def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
   }
 }

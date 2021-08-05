@@ -39,8 +39,7 @@ trait QnAItem extends StObject {
 }
 object QnAItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdDate: Date,
     id: Double,
     status: QnAItemStatus,
@@ -52,25 +51,18 @@ object QnAItem {
     __obj.asInstanceOf[QnAItem]
   }
   
-  @scala.inline
-  implicit class QnAItemMutableBuilder[Self <: QnAItem] (val x: Self) extends AnyVal {
+  extension [Self <: QnAItem](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: QnAItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: QnAItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: UserIdentityRef): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserIdentityRef): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

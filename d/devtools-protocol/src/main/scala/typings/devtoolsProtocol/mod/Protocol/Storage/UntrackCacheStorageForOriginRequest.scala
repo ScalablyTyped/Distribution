@@ -13,16 +13,13 @@ trait UntrackCacheStorageForOriginRequest extends StObject {
 }
 object UntrackCacheStorageForOriginRequest {
   
-  @scala.inline
-  def apply(origin: String): UntrackCacheStorageForOriginRequest = {
+  inline def apply(origin: String): UntrackCacheStorageForOriginRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntrackCacheStorageForOriginRequest]
   }
   
-  @scala.inline
-  implicit class UntrackCacheStorageForOriginRequestMutableBuilder[Self <: UntrackCacheStorageForOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UntrackCacheStorageForOriginRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

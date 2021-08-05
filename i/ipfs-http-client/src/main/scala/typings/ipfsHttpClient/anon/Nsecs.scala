@@ -12,19 +12,15 @@ trait Nsecs extends StObject {
 }
 object Nsecs {
   
-  @scala.inline
-  def apply(nsecs: Double, secs: Double): Nsecs = {
+  inline def apply(nsecs: Double, secs: Double): Nsecs = {
     val __obj = js.Dynamic.literal(nsecs = nsecs.asInstanceOf[js.Any], secs = secs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nsecs]
   }
   
-  @scala.inline
-  implicit class NsecsMutableBuilder[Self <: Nsecs] (val x: Self) extends AnyVal {
+  extension [Self <: Nsecs](x: Self) {
     
-    @scala.inline
-    def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+    inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
+    inline def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
   }
 }

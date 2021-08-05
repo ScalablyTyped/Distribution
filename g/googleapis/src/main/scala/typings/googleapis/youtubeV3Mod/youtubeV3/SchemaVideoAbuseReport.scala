@@ -36,43 +36,31 @@ trait SchemaVideoAbuseReport extends StObject {
 }
 object SchemaVideoAbuseReport {
   
-  @scala.inline
-  def apply(): SchemaVideoAbuseReport = {
+  inline def apply(): SchemaVideoAbuseReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoAbuseReport]
   }
   
-  @scala.inline
-  implicit class SchemaVideoAbuseReportMutableBuilder[Self <: SchemaVideoAbuseReport] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoAbuseReport](x: Self) {
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setReasonId(value: String): Self = StObject.set(x, "reasonId", value.asInstanceOf[js.Any])
+    inline def setReasonId(value: String): Self = StObject.set(x, "reasonId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonIdUndefined: Self = StObject.set(x, "reasonId", js.undefined)
+    inline def setReasonIdUndefined: Self = StObject.set(x, "reasonId", js.undefined)
     
-    @scala.inline
-    def setSecondaryReasonId(value: String): Self = StObject.set(x, "secondaryReasonId", value.asInstanceOf[js.Any])
+    inline def setSecondaryReasonId(value: String): Self = StObject.set(x, "secondaryReasonId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryReasonIdUndefined: Self = StObject.set(x, "secondaryReasonId", js.undefined)
+    inline def setSecondaryReasonIdUndefined: Self = StObject.set(x, "secondaryReasonId", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

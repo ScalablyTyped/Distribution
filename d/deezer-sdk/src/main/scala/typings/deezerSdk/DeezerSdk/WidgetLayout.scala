@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WidgetLayout extends StObject
 object WidgetLayout {
   
-  @scala.inline
-  def dark: typings.deezerSdk.deezerSdkStrings.dark = "dark".asInstanceOf[typings.deezerSdk.deezerSdkStrings.dark]
+  inline def dark: typings.deezerSdk.deezerSdkStrings.dark = "dark".asInstanceOf[typings.deezerSdk.deezerSdkStrings.dark]
   
-  @scala.inline
-  def light: typings.deezerSdk.deezerSdkStrings.light = "light".asInstanceOf[typings.deezerSdk.deezerSdkStrings.light]
+  inline def light: typings.deezerSdk.deezerSdkStrings.light = "light".asInstanceOf[typings.deezerSdk.deezerSdkStrings.light]
 }

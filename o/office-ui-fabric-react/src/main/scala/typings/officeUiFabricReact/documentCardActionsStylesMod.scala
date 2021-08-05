@@ -12,6 +12,5 @@ object documentCardActionsStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IDocumentCardActionsStyleProps): IDocumentCardActionsStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardActionsStyles]
+  inline def getStyles(props: IDocumentCardActionsStyleProps): IDocumentCardActionsStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardActionsStyles]
 }

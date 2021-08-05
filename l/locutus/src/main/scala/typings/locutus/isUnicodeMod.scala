@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isUnicodeMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(vr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(vr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(vr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(vr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/var/is_unicode", JSImport.Namespace)
   @js.native

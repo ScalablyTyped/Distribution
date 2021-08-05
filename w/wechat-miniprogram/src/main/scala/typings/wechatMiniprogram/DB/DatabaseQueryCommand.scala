@@ -42,8 +42,7 @@ trait DatabaseQueryCommand
 }
 object DatabaseQueryCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: js.Array[js.Any] => DatabaseLogicCommand,
     and: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand,
     elemMatch: js.Any => DatabaseLogicCommand,
@@ -70,55 +69,38 @@ object DatabaseQueryCommand {
     __obj.asInstanceOf[DatabaseQueryCommand]
   }
   
-  @scala.inline
-  implicit class DatabaseQueryCommandMutableBuilder[Self <: DatabaseQueryCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseQueryCommand](x: Self) {
     
-    @scala.inline
-    def setAll(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
+    inline def setAll(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElemMatch(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "elemMatch", js.Any.fromFunction1(value))
+    inline def setElemMatch(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "elemMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEq_(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
+    inline def setEq_(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExists(value: Boolean => DatabaseLogicCommand): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+    inline def setExists(value: Boolean => DatabaseLogicCommand): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGeoIntersects(value: IGeoIntersectsCommandOptions => DatabaseLogicCommand): Self = StObject.set(x, "geoIntersects", js.Any.fromFunction1(value))
+    inline def setGeoIntersects(value: IGeoIntersectsCommandOptions => DatabaseLogicCommand): Self = StObject.set(x, "geoIntersects", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGeoNear(value: IGeoNearCommandOptions => DatabaseLogicCommand): Self = StObject.set(x, "geoNear", js.Any.fromFunction1(value))
+    inline def setGeoNear(value: IGeoNearCommandOptions => DatabaseLogicCommand): Self = StObject.set(x, "geoNear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGeoWithin(value: IGeoWithinCommandOptions => DatabaseLogicCommand): Self = StObject.set(x, "geoWithin", js.Any.fromFunction1(value))
+    inline def setGeoWithin(value: IGeoWithinCommandOptions => DatabaseLogicCommand): Self = StObject.set(x, "geoWithin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
+    inline def setGt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
+    inline def setGte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
+    inline def setLt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
+    inline def setLte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMod(value: (Double, Double) => DatabaseLogicCommand): Self = StObject.set(x, "mod", js.Any.fromFunction2(value))
+    inline def setMod(value: (Double, Double) => DatabaseLogicCommand): Self = StObject.set(x, "mod", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNeq(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
+    inline def setNeq(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNin(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
+    inline def setNin(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: Double => DatabaseLogicCommand): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    inline def setSize(value: Double => DatabaseLogicCommand): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
   }
 }

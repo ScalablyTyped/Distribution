@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reduceRightMod {
   
   /* was `typeof core.Array.reduceRight` */
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -19,8 +18,7 @@ object reduceRightMod {
       T
     ]
   ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ T, 

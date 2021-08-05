@@ -18,25 +18,19 @@ trait BackupPlanTemplatesListMember extends StObject {
 }
 object BackupPlanTemplatesListMember {
   
-  @scala.inline
-  def apply(): BackupPlanTemplatesListMember = {
+  inline def apply(): BackupPlanTemplatesListMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupPlanTemplatesListMember]
   }
   
-  @scala.inline
-  implicit class BackupPlanTemplatesListMemberMutableBuilder[Self <: BackupPlanTemplatesListMember] (val x: Self) extends AnyVal {
+  extension [Self <: BackupPlanTemplatesListMember](x: Self) {
     
-    @scala.inline
-    def setBackupPlanTemplateId(value: String): Self = StObject.set(x, "BackupPlanTemplateId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanTemplateId(value: String): Self = StObject.set(x, "BackupPlanTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanTemplateIdUndefined: Self = StObject.set(x, "BackupPlanTemplateId", js.undefined)
+    inline def setBackupPlanTemplateIdUndefined: Self = StObject.set(x, "BackupPlanTemplateId", js.undefined)
     
-    @scala.inline
-    def setBackupPlanTemplateName(value: String): Self = StObject.set(x, "BackupPlanTemplateName", value.asInstanceOf[js.Any])
+    inline def setBackupPlanTemplateName(value: String): Self = StObject.set(x, "BackupPlanTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanTemplateNameUndefined: Self = StObject.set(x, "BackupPlanTemplateName", js.undefined)
+    inline def setBackupPlanTemplateNameUndefined: Self = StObject.set(x, "BackupPlanTemplateName", js.undefined)
   }
 }

@@ -37,45 +37,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFDataType extends StObject
 object MFDataType {
   
-  @scala.inline
-  def ACL: `14` = 14.asInstanceOf[`14`]
+  inline def ACL: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def Boolean: `8` = 8.asInstanceOf[`8`]
+  inline def Boolean: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Date: `5` = 5.asInstanceOf[`5`]
+  inline def Date: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def FILETIME: `12` = 12.asInstanceOf[`12`]
+  inline def FILETIME: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def Floating: `3` = 3.asInstanceOf[`3`]
+  inline def Floating: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Integer: `2` = 2.asInstanceOf[`2`]
+  inline def Integer: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Integer64: `11` = 11.asInstanceOf[`11`]
+  inline def Integer64: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def Lookup: `9` = 9.asInstanceOf[`9`]
+  inline def Lookup: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def MultiLineText: `13` = 13.asInstanceOf[`13`]
+  inline def MultiLineText: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def MultiSelectLookup: `10` = 10.asInstanceOf[`10`]
+  inline def MultiSelectLookup: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def Text: `1` = 1.asInstanceOf[`1`]
+  inline def Text: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Time: `6` = 6.asInstanceOf[`6`]
+  inline def Time: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Timestamp: `7` = 7.asInstanceOf[`7`]
+  inline def Timestamp: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def Uninitialized: `0` = 0.asInstanceOf[`0`]
+  inline def Uninitialized: `0` = 0.asInstanceOf[`0`]
 }

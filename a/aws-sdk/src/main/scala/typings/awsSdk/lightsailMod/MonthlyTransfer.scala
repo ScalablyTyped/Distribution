@@ -13,19 +13,15 @@ trait MonthlyTransfer extends StObject {
 }
 object MonthlyTransfer {
   
-  @scala.inline
-  def apply(): MonthlyTransfer = {
+  inline def apply(): MonthlyTransfer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonthlyTransfer]
   }
   
-  @scala.inline
-  implicit class MonthlyTransferMutableBuilder[Self <: MonthlyTransfer] (val x: Self) extends AnyVal {
+  extension [Self <: MonthlyTransfer](x: Self) {
     
-    @scala.inline
-    def setGbPerMonthAllocated(value: integer): Self = StObject.set(x, "gbPerMonthAllocated", value.asInstanceOf[js.Any])
+    inline def setGbPerMonthAllocated(value: integer): Self = StObject.set(x, "gbPerMonthAllocated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGbPerMonthAllocatedUndefined: Self = StObject.set(x, "gbPerMonthAllocated", js.undefined)
+    inline def setGbPerMonthAllocatedUndefined: Self = StObject.set(x, "gbPerMonthAllocated", js.undefined)
   }
 }

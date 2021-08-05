@@ -42,17 +42,14 @@ object media {
   }
   object XFrameGrabber {
     
-    @scala.inline
-    def apply(grabFrame: Double => XGraphic): XFrameGrabber = {
+    inline def apply(grabFrame: Double => XGraphic): XFrameGrabber = {
       val __obj = js.Dynamic.literal(grabFrame = js.Any.fromFunction1(grabFrame))
       __obj.asInstanceOf[XFrameGrabber]
     }
     
-    @scala.inline
-    implicit class XFrameGrabberMutableBuilder[Self <: XFrameGrabber] (val x: Self) extends AnyVal {
+    extension [Self <: XFrameGrabber](x: Self) {
       
-      @scala.inline
-      def setGrabFrame(value: Double => XGraphic): Self = StObject.set(x, "grabFrame", js.Any.fromFunction1(value))
+      inline def setGrabFrame(value: Double => XGraphic): Self = StObject.set(x, "grabFrame", js.Any.fromFunction1(value))
     }
   }
   
@@ -67,17 +64,14 @@ object media {
   }
   object XManager {
     
-    @scala.inline
-    def apply(createPlayer: String => XPlayer): XManager = {
+    inline def apply(createPlayer: String => XPlayer): XManager = {
       val __obj = js.Dynamic.literal(createPlayer = js.Any.fromFunction1(createPlayer))
       __obj.asInstanceOf[XManager]
     }
     
-    @scala.inline
-    implicit class XManagerMutableBuilder[Self <: XManager] (val x: Self) extends AnyVal {
+    extension [Self <: XManager](x: Self) {
       
-      @scala.inline
-      def setCreatePlayer(value: String => XPlayer): Self = StObject.set(x, "createPlayer", js.Any.fromFunction1(value))
+      inline def setCreatePlayer(value: String => XPlayer): Self = StObject.set(x, "createPlayer", js.Any.fromFunction1(value))
     }
   }
   
@@ -191,8 +185,7 @@ object media {
   }
   object XPlayer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Duration: Double,
       MediaTime: Double,
       PreferredPlayerWindowSize: Size,
@@ -217,65 +210,45 @@ object media {
       __obj.asInstanceOf[XPlayer]
     }
     
-    @scala.inline
-    implicit class XPlayerMutableBuilder[Self <: XPlayer] (val x: Self) extends AnyVal {
+    extension [Self <: XPlayer](x: Self) {
       
-      @scala.inline
-      def setCreateFrameGrabber(value: () => XFrameGrabber): Self = StObject.set(x, "createFrameGrabber", js.Any.fromFunction0(value))
+      inline def setCreateFrameGrabber(value: () => XFrameGrabber): Self = StObject.set(x, "createFrameGrabber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreatePlayerWindow(value: SeqEquiv[js.Any] => XPlayerWindow): Self = StObject.set(x, "createPlayerWindow", js.Any.fromFunction1(value))
+      inline def setCreatePlayerWindow(value: SeqEquiv[js.Any] => XPlayerWindow): Self = StObject.set(x, "createPlayerWindow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+      inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMediaTime(value: () => Double): Self = StObject.set(x, "getMediaTime", js.Any.fromFunction0(value))
+      inline def setGetMediaTime(value: () => Double): Self = StObject.set(x, "getMediaTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreferredPlayerWindowSize(value: () => Size): Self = StObject.set(x, "getPreferredPlayerWindowSize", js.Any.fromFunction0(value))
+      inline def setGetPreferredPlayerWindowSize(value: () => Size): Self = StObject.set(x, "getPreferredPlayerWindowSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVolumeDB(value: () => Double): Self = StObject.set(x, "getVolumeDB", js.Any.fromFunction0(value))
+      inline def setGetVolumeDB(value: () => Double): Self = StObject.set(x, "getVolumeDB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMute(value: () => Boolean): Self = StObject.set(x, "isMute", js.Any.fromFunction0(value))
+      inline def setIsMute(value: () => Boolean): Self = StObject.set(x, "isMute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPlaybackLoop(value: () => Boolean): Self = StObject.set(x, "isPlaybackLoop", js.Any.fromFunction0(value))
+      inline def setIsPlaybackLoop(value: () => Boolean): Self = StObject.set(x, "isPlaybackLoop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPlaying(value: () => Boolean): Self = StObject.set(x, "isPlaying", js.Any.fromFunction0(value))
+      inline def setIsPlaying(value: () => Boolean): Self = StObject.set(x, "isPlaying", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMediaTime(value: Double): Self = StObject.set(x, "MediaTime", value.asInstanceOf[js.Any])
+      inline def setMediaTime(value: Double): Self = StObject.set(x, "MediaTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredPlayerWindowSize(value: Size): Self = StObject.set(x, "PreferredPlayerWindowSize", value.asInstanceOf[js.Any])
+      inline def setPreferredPlayerWindowSize(value: Size): Self = StObject.set(x, "PreferredPlayerWindowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetMediaTime(value: Double => Unit): Self = StObject.set(x, "setMediaTime", js.Any.fromFunction1(value))
+      inline def setSetMediaTime(value: Double => Unit): Self = StObject.set(x, "setMediaTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMute(value: Boolean => Unit): Self = StObject.set(x, "setMute", js.Any.fromFunction1(value))
+      inline def setSetMute(value: Boolean => Unit): Self = StObject.set(x, "setMute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPlaybackLoop(value: Boolean => Unit): Self = StObject.set(x, "setPlaybackLoop", js.Any.fromFunction1(value))
+      inline def setSetPlaybackLoop(value: Boolean => Unit): Self = StObject.set(x, "setPlaybackLoop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetVolumeDB(value: Double => Unit): Self = StObject.set(x, "setVolumeDB", js.Any.fromFunction1(value))
+      inline def setSetVolumeDB(value: Double => Unit): Self = StObject.set(x, "setVolumeDB", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVolumeDB(value: Double): Self = StObject.set(x, "VolumeDB", value.asInstanceOf[js.Any])
+      inline def setVolumeDB(value: Double): Self = StObject.set(x, "VolumeDB", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,8 +277,7 @@ object media {
   }
   object XPlayerWindow {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       PosSize: Rectangle,
       ZoomLevel: ZoomLevel,
       acquire: () => Unit,
@@ -340,23 +312,17 @@ object media {
       __obj.asInstanceOf[XPlayerWindow]
     }
     
-    @scala.inline
-    implicit class XPlayerWindowMutableBuilder[Self <: XPlayerWindow] (val x: Self) extends AnyVal {
+    extension [Self <: XPlayerWindow](x: Self) {
       
-      @scala.inline
-      def setGetZoomLevel(value: () => ZoomLevel): Self = StObject.set(x, "getZoomLevel", js.Any.fromFunction0(value))
+      inline def setGetZoomLevel(value: () => ZoomLevel): Self = StObject.set(x, "getZoomLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetPointerType(value: Double => Unit): Self = StObject.set(x, "setPointerType", js.Any.fromFunction1(value))
+      inline def setSetPointerType(value: Double => Unit): Self = StObject.set(x, "setPointerType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetZoomLevel(value: ZoomLevel => Boolean): Self = StObject.set(x, "setZoomLevel", js.Any.fromFunction1(value))
+      inline def setSetZoomLevel(value: ZoomLevel => Boolean): Self = StObject.set(x, "setZoomLevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoomLevel(value: ZoomLevel): Self = StObject.set(x, "ZoomLevel", value.asInstanceOf[js.Any])
+      inline def setZoomLevel(value: ZoomLevel): Self = StObject.set(x, "ZoomLevel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -375,39 +341,30 @@ object media {
   object ZoomLevel {
     
     /** specifies that the video should be zoomed to window size */
-    @scala.inline
-    def FIT_TO_WINDOW: `2` = 2.asInstanceOf[`2`]
+    inline def FIT_TO_WINDOW: `2` = 2.asInstanceOf[`2`]
     
     /** specifies that the video should be zoomed to window size with using a fixed aspect ratio */
-    @scala.inline
-    def FIT_TO_WINDOW_FIXED_ASPECT: `3` = 3.asInstanceOf[`3`]
+    inline def FIT_TO_WINDOW_FIXED_ASPECT: `3` = 3.asInstanceOf[`3`]
     
     /** specifies that the video should be displayed in fullscreen mode, if available */
-    @scala.inline
-    def FULLSCREEN: `4` = 4.asInstanceOf[`4`]
+    inline def FULLSCREEN: `4` = 4.asInstanceOf[`4`]
     
     /** specifies that the video window itself is not available at all, e.g. in cases of pure audio playback */
-    @scala.inline
-    def NOT_AVAILABLE: `0` = 0.asInstanceOf[`0`]
+    inline def NOT_AVAILABLE: `0` = 0.asInstanceOf[`0`]
     
     /** specifies that the video should be displayed with its original size */
-    @scala.inline
-    def ORIGINAL: `1` = 1.asInstanceOf[`1`]
+    inline def ORIGINAL: `1` = 1.asInstanceOf[`1`]
     
     /** specifies that the video should be zoomed to a factor of 1:2 */
-    @scala.inline
-    def ZOOM_1_TO_2: `6` = 6.asInstanceOf[`6`]
+    inline def ZOOM_1_TO_2: `6` = 6.asInstanceOf[`6`]
     
     /** specifies that the video should be zoomed to a factor of 1:4 */
-    @scala.inline
-    def ZOOM_1_TO_4: `5` = 5.asInstanceOf[`5`]
+    inline def ZOOM_1_TO_4: `5` = 5.asInstanceOf[`5`]
     
     /** specifies that the video should be zoomed to a factor of 2:1 */
-    @scala.inline
-    def ZOOM_2_TO_1: `7` = 7.asInstanceOf[`7`]
+    inline def ZOOM_2_TO_1: `7` = 7.asInstanceOf[`7`]
     
     /** specifies that the video should be zoomed to a factor of 4:1 */
-    @scala.inline
-    def ZOOM_4_TO_1: `8` = 8.asInstanceOf[`8`]
+    inline def ZOOM_4_TO_1: `8` = 8.asInstanceOf[`8`]
   }
 }

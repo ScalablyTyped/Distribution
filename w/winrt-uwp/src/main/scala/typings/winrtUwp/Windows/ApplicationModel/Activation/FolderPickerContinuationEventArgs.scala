@@ -26,8 +26,7 @@ trait FolderPickerContinuationEventArgs extends StObject {
 }
 object FolderPickerContinuationEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continuationData: ValueSet,
     folder: StorageFolder,
     kind: ActivationKind,
@@ -38,22 +37,16 @@ object FolderPickerContinuationEventArgs {
     __obj.asInstanceOf[FolderPickerContinuationEventArgs]
   }
   
-  @scala.inline
-  implicit class FolderPickerContinuationEventArgsMutableBuilder[Self <: FolderPickerContinuationEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FolderPickerContinuationEventArgs](x: Self) {
     
-    @scala.inline
-    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
+    inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

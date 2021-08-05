@@ -54,8 +54,7 @@ object featureManagementInterfacesMod {
     @JSImport("vso-node-api/interfaces/FeatureManagementInterfaces", "TypeInfo.ContributedFeatureEnabledValue")
     @js.native
     def ContributedFeatureEnabledValue: EnumValuesEnabled = js.native
-    @scala.inline
-    def ContributedFeatureEnabledValue_=(x: EnumValuesEnabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureEnabledValue")(x.asInstanceOf[js.Any])
+    inline def ContributedFeatureEnabledValue_=(x: EnumValuesEnabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureEnabledValue")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/FeatureManagementInterfaces", "TypeInfo.ContributedFeatureState")
     @js.native
@@ -64,11 +63,9 @@ object featureManagementInterfacesMod {
     @JSImport("vso-node-api/interfaces/FeatureManagementInterfaces", "TypeInfo.ContributedFeatureStateQuery")
     @js.native
     def ContributedFeatureStateQuery: js.Any = js.native
-    @scala.inline
-    def ContributedFeatureStateQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureStateQuery")(x.asInstanceOf[js.Any])
+    inline def ContributedFeatureStateQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureStateQuery")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ContributedFeatureState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureState")(x.asInstanceOf[js.Any])
+    inline def ContributedFeatureState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureState")(x.asInstanceOf[js.Any])
   }
   
   trait ContributedFeature extends StObject {
@@ -120,8 +117,7 @@ object featureManagementInterfacesMod {
   }
   object ContributedFeature {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _links: js.Any,
       defaultState: Boolean,
       defaultValueRules: js.Array[ContributedFeatureValueRule],
@@ -136,44 +132,31 @@ object featureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeature]
     }
     
-    @scala.inline
-    implicit class ContributedFeatureMutableBuilder[Self <: ContributedFeature] (val x: Self) extends AnyVal {
+    extension [Self <: ContributedFeature](x: Self) {
       
-      @scala.inline
-      def setDefaultState(value: Boolean): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
+      inline def setDefaultState(value: Boolean): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueRules(value: js.Array[ContributedFeatureValueRule]): Self = StObject.set(x, "defaultValueRules", value.asInstanceOf[js.Any])
+      inline def setDefaultValueRules(value: js.Array[ContributedFeatureValueRule]): Self = StObject.set(x, "defaultValueRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "defaultValueRules", js.Array(value :_*))
+      inline def setDefaultValueRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "defaultValueRules", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideRules(value: js.Array[ContributedFeatureValueRule]): Self = StObject.set(x, "overrideRules", value.asInstanceOf[js.Any])
+      inline def setOverrideRules(value: js.Array[ContributedFeatureValueRule]): Self = StObject.set(x, "overrideRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "overrideRules", js.Array(value :_*))
+      inline def setOverrideRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "overrideRules", js.Array(value :_*))
       
-      @scala.inline
-      def setScopes(value: js.Array[ContributedFeatureSettingScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[ContributedFeatureSettingScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: ContributedFeatureSettingScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: ContributedFeatureSettingScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceInstanceType(value: String): Self = StObject.set(x, "serviceInstanceType", value.asInstanceOf[js.Any])
+      inline def setServiceInstanceType(value: String): Self = StObject.set(x, "serviceInstanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,20 +174,16 @@ object featureManagementInterfacesMod {
   }
   object ContributedFeatureSettingScope {
     
-    @scala.inline
-    def apply(settingScope: String, userScoped: Boolean): ContributedFeatureSettingScope = {
+    inline def apply(settingScope: String, userScoped: Boolean): ContributedFeatureSettingScope = {
       val __obj = js.Dynamic.literal(settingScope = settingScope.asInstanceOf[js.Any], userScoped = userScoped.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContributedFeatureSettingScope]
     }
     
-    @scala.inline
-    implicit class ContributedFeatureSettingScopeMutableBuilder[Self <: ContributedFeatureSettingScope] (val x: Self) extends AnyVal {
+    extension [Self <: ContributedFeatureSettingScope](x: Self) {
       
-      @scala.inline
-      def setSettingScope(value: String): Self = StObject.set(x, "settingScope", value.asInstanceOf[js.Any])
+      inline def setSettingScope(value: String): Self = StObject.set(x, "settingScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserScoped(value: Boolean): Self = StObject.set(x, "userScoped", value.asInstanceOf[js.Any])
+      inline def setUserScoped(value: Boolean): Self = StObject.set(x, "userScoped", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +216,7 @@ object featureManagementInterfacesMod {
   }
   object ContributedFeatureState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       featureId: String,
       overridden: Boolean,
       reason: String,
@@ -249,23 +227,17 @@ object featureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeatureState]
     }
     
-    @scala.inline
-    implicit class ContributedFeatureStateMutableBuilder[Self <: ContributedFeatureState] (val x: Self) extends AnyVal {
+    extension [Self <: ContributedFeatureState](x: Self) {
       
-      @scala.inline
-      def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
+      inline def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridden(value: Boolean): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
+      inline def setOverridden(value: Boolean): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: ContributedFeatureSettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: ContributedFeatureSettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: ContributedFeatureEnabledValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: ContributedFeatureEnabledValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,8 +260,7 @@ object featureManagementInterfacesMod {
   }
   object ContributedFeatureStateQuery {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       featureIds: js.Array[String],
       featureStates: StringDictionary[ContributedFeatureState],
       scopeValues: StringDictionary[String]
@@ -298,20 +269,15 @@ object featureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeatureStateQuery]
     }
     
-    @scala.inline
-    implicit class ContributedFeatureStateQueryMutableBuilder[Self <: ContributedFeatureStateQuery] (val x: Self) extends AnyVal {
+    extension [Self <: ContributedFeatureStateQuery](x: Self) {
       
-      @scala.inline
-      def setFeatureIds(value: js.Array[String]): Self = StObject.set(x, "featureIds", value.asInstanceOf[js.Any])
+      inline def setFeatureIds(value: js.Array[String]): Self = StObject.set(x, "featureIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureIdsVarargs(value: String*): Self = StObject.set(x, "featureIds", js.Array(value :_*))
+      inline def setFeatureIdsVarargs(value: String*): Self = StObject.set(x, "featureIds", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatureStates(value: StringDictionary[ContributedFeatureState]): Self = StObject.set(x, "featureStates", value.asInstanceOf[js.Any])
+      inline def setFeatureStates(value: StringDictionary[ContributedFeatureState]): Self = StObject.set(x, "featureStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeValues(value: StringDictionary[String]): Self = StObject.set(x, "scopeValues", value.asInstanceOf[js.Any])
+      inline def setScopeValues(value: StringDictionary[String]): Self = StObject.set(x, "scopeValues", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,20 +295,16 @@ object featureManagementInterfacesMod {
   }
   object ContributedFeatureValueRule {
     
-    @scala.inline
-    def apply(name: String, properties: StringDictionary[js.Any]): ContributedFeatureValueRule = {
+    inline def apply(name: String, properties: StringDictionary[js.Any]): ContributedFeatureValueRule = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContributedFeatureValueRule]
     }
     
-    @scala.inline
-    implicit class ContributedFeatureValueRuleMutableBuilder[Self <: ContributedFeatureValueRule] (val x: Self) extends AnyVal {
+    extension [Self <: ContributedFeatureValueRule](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
 }

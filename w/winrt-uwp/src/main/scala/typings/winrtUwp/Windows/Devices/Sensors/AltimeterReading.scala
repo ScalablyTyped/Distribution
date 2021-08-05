@@ -16,19 +16,15 @@ trait AltimeterReading extends StObject {
 }
 object AltimeterReading {
   
-  @scala.inline
-  def apply(altitudeChangeInMeters: Double, timestamp: Date): AltimeterReading = {
+  inline def apply(altitudeChangeInMeters: Double, timestamp: Date): AltimeterReading = {
     val __obj = js.Dynamic.literal(altitudeChangeInMeters = altitudeChangeInMeters.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltimeterReading]
   }
   
-  @scala.inline
-  implicit class AltimeterReadingMutableBuilder[Self <: AltimeterReading] (val x: Self) extends AnyVal {
+  extension [Self <: AltimeterReading](x: Self) {
     
-    @scala.inline
-    def setAltitudeChangeInMeters(value: Double): Self = StObject.set(x, "altitudeChangeInMeters", value.asInstanceOf[js.Any])
+    inline def setAltitudeChangeInMeters(value: Double): Self = StObject.set(x, "altitudeChangeInMeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

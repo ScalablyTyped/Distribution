@@ -18,43 +18,31 @@ trait Icons extends StObject {
 }
 object Icons {
   
-  @scala.inline
-  def apply(labels: js.Array[String], tabs: Double): Icons = {
+  inline def apply(labels: js.Array[String], tabs: Double): Icons = {
     val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icons]
   }
   
-  @scala.inline
-  implicit class IconsMutableBuilder[Self <: Icons] (val x: Self) extends AnyVal {
+  extension [Self <: Icons](x: Self) {
     
-    @scala.inline
-    def setIcons(value: js.Array[String]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: js.Array[String]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setIconsVarargs(value: String*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: String*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setTabs(value: Double): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: Double): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
   }
 }

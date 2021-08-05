@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def grok(imsi: String): IMSIBreakdown | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("grok")(imsi.asInstanceOf[js.Any]).asInstanceOf[IMSIBreakdown | Null]
+  inline def grok(imsi: String): IMSIBreakdown | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("grok")(imsi.asInstanceOf[js.Any]).asInstanceOf[IMSIBreakdown | Null]
   
   trait IMSIBreakdown extends StObject {
     
@@ -29,8 +28,7 @@ object mod {
   }
   object IMSIBreakdown {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       country_code: String,
       country_iso: String,
       country_name: String,
@@ -42,26 +40,19 @@ object mod {
       __obj.asInstanceOf[IMSIBreakdown]
     }
     
-    @scala.inline
-    implicit class IMSIBreakdownMutableBuilder[Self <: IMSIBreakdown] (val x: Self) extends AnyVal {
+    extension [Self <: IMSIBreakdown](x: Self) {
       
-      @scala.inline
-      def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+      inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_iso(value: String): Self = StObject.set(x, "country_iso", value.asInstanceOf[js.Any])
+      inline def setCountry_iso(value: String): Self = StObject.set(x, "country_iso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_name(value: String): Self = StObject.set(x, "country_name", value.asInstanceOf[js.Any])
+      inline def setCountry_name(value: String): Self = StObject.set(x, "country_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMcc(value: String): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
+      inline def setMcc(value: String): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMnc(value: String): Self = StObject.set(x, "mnc", value.asInstanceOf[js.Any])
+      inline def setMnc(value: String): Self = StObject.set(x, "mnc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork_name(value: String): Self = StObject.set(x, "network_name", value.asInstanceOf[js.Any])
+      inline def setNetwork_name(value: String): Self = StObject.set(x, "network_name", value.asInstanceOf[js.Any])
     }
   }
 }

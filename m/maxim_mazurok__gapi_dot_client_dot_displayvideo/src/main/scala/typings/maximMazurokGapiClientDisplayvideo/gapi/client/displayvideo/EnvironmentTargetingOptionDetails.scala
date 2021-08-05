@@ -11,19 +11,15 @@ trait EnvironmentTargetingOptionDetails extends StObject {
 }
 object EnvironmentTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): EnvironmentTargetingOptionDetails = {
+  inline def apply(): EnvironmentTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class EnvironmentTargetingOptionDetailsMutableBuilder[Self <: EnvironmentTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
   }
 }

@@ -51,8 +51,7 @@ trait RemotePlayer extends StObject {
 }
 object RemotePlayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canControlVolume: Boolean,
     canPause: Boolean,
     canSeek: Boolean,
@@ -72,85 +71,58 @@ object RemotePlayer {
     __obj.asInstanceOf[RemotePlayer]
   }
   
-  @scala.inline
-  implicit class RemotePlayerMutableBuilder[Self <: RemotePlayer] (val x: Self) extends AnyVal {
+  extension [Self <: RemotePlayer](x: Self) {
     
-    @scala.inline
-    def setCanControlVolume(value: Boolean): Self = StObject.set(x, "canControlVolume", value.asInstanceOf[js.Any])
+    inline def setCanControlVolume(value: Boolean): Self = StObject.set(x, "canControlVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPause(value: Boolean): Self = StObject.set(x, "canPause", value.asInstanceOf[js.Any])
+    inline def setCanPause(value: Boolean): Self = StObject.set(x, "canPause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSeek(value: Boolean): Self = StObject.set(x, "canSeek", value.asInstanceOf[js.Any])
+    inline def setCanSeek(value: Boolean): Self = StObject.set(x, "canSeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setController(value: RemotePlayerController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: RemotePlayerController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerNull: Self = StObject.set(x, "controller", null)
+    inline def setControllerNull: Self = StObject.set(x, "controller", null)
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayStatus(value: String): Self = StObject.set(x, "displayStatus", value.asInstanceOf[js.Any])
+    inline def setDisplayStatus(value: String): Self = StObject.set(x, "displayStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
+    inline def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
     
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMediaLoaded(value: Boolean): Self = StObject.set(x, "isMediaLoaded", value.asInstanceOf[js.Any])
+    inline def setIsMediaLoaded(value: Boolean): Self = StObject.set(x, "isMediaLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
+    inline def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+    inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSeekableRange(value: LiveSeekableRange): Self = StObject.set(x, "liveSeekableRange", value.asInstanceOf[js.Any])
+    inline def setLiveSeekableRange(value: LiveSeekableRange): Self = StObject.set(x, "liveSeekableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSeekableRangeUndefined: Self = StObject.set(x, "liveSeekableRange", js.undefined)
+    inline def setLiveSeekableRangeUndefined: Self = StObject.set(x, "liveSeekableRange", js.undefined)
     
-    @scala.inline
-    def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
+    inline def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfoUndefined: Self = StObject.set(x, "mediaInfo", js.undefined)
+    inline def setMediaInfoUndefined: Self = StObject.set(x, "mediaInfo", js.undefined)
     
-    @scala.inline
-    def setPlayerState(value: PlayerState): Self = StObject.set(x, "playerState", value.asInstanceOf[js.Any])
+    inline def setPlayerState(value: PlayerState): Self = StObject.set(x, "playerState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerStateNull: Self = StObject.set(x, "playerState", null)
+    inline def setPlayerStateNull: Self = StObject.set(x, "playerState", null)
     
-    @scala.inline
-    def setSavedPlayerState(value: SavedPlayerState): Self = StObject.set(x, "savedPlayerState", value.asInstanceOf[js.Any])
+    inline def setSavedPlayerState(value: SavedPlayerState): Self = StObject.set(x, "savedPlayerState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedPlayerStateNull: Self = StObject.set(x, "savedPlayerState", null)
+    inline def setSavedPlayerStateNull: Self = StObject.set(x, "savedPlayerState", null)
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeLevel(value: Double): Self = StObject.set(x, "volumeLevel", value.asInstanceOf[js.Any])
+    inline def setVolumeLevel(value: Double): Self = StObject.set(x, "volumeLevel", value.asInstanceOf[js.Any])
   }
 }

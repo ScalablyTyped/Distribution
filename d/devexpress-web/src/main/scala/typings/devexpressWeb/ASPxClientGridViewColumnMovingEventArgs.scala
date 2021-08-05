@@ -38,8 +38,7 @@ trait ASPxClientGridViewColumnMovingEventArgs
 }
 object ASPxClientGridViewColumnMovingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow: Boolean,
     destinationColumn: ASPxClientGridViewColumn,
     isDropBefore: Boolean,
@@ -50,22 +49,16 @@ object ASPxClientGridViewColumnMovingEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewColumnMovingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewColumnMovingEventArgsMutableBuilder[Self <: ASPxClientGridViewColumnMovingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewColumnMovingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
+    inline def setDestinationColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDropBefore(value: Boolean): Self = StObject.set(x, "isDropBefore", value.asInstanceOf[js.Any])
+    inline def setIsDropBefore(value: Boolean): Self = StObject.set(x, "isDropBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupPanel(value: Boolean): Self = StObject.set(x, "isGroupPanel", value.asInstanceOf[js.Any])
+    inline def setIsGroupPanel(value: Boolean): Self = StObject.set(x, "isGroupPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    inline def setSourceColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
   }
 }

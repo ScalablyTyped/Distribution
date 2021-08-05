@@ -851,17 +851,14 @@ object mod extends Shortcut {
   }
   object BeanPostProcessor {
     
-    @scala.inline
-    def apply(postProcessBeanFactory: () => Unit): BeanPostProcessor = {
+    inline def apply(postProcessBeanFactory: () => Unit): BeanPostProcessor = {
       val __obj = js.Dynamic.literal(postProcessBeanFactory = js.Any.fromFunction0(postProcessBeanFactory))
       __obj.asInstanceOf[BeanPostProcessor]
     }
     
-    @scala.inline
-    implicit class BeanPostProcessorMutableBuilder[Self <: BeanPostProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: BeanPostProcessor](x: Self) {
       
-      @scala.inline
-      def setPostProcessBeanFactory(value: () => Unit): Self = StObject.set(x, "postProcessBeanFactory", js.Any.fromFunction0(value))
+      inline def setPostProcessBeanFactory(value: () => Unit): Self = StObject.set(x, "postProcessBeanFactory", js.Any.fromFunction0(value))
     }
   }
   
@@ -1133,17 +1130,14 @@ object mod extends Shortcut {
   }
   object BootStrapLoader {
     
-    @scala.inline
-    def apply(load: js.Array[String] => Unit): BootStrapLoader = {
+    inline def apply(load: js.Array[String] => Unit): BootStrapLoader = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load))
       __obj.asInstanceOf[BootStrapLoader]
     }
     
-    @scala.inline
-    implicit class BootStrapLoaderMutableBuilder[Self <: BootStrapLoader] (val x: Self) extends AnyVal {
+    extension [Self <: BootStrapLoader](x: Self) {
       
-      @scala.inline
-      def setLoad(value: js.Array[String] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: js.Array[String] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     }
   }
   
@@ -1180,8 +1174,7 @@ object mod extends Shortcut {
   }
   object ConfigLoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMetaLoader: () => MetaLoader,
       getRecursiveScanPath: (String, js.Array[String], js.Object) => Unit,
       getResources: String => js.Object
@@ -1190,17 +1183,13 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigLoader]
     }
     
-    @scala.inline
-    implicit class ConfigLoaderMutableBuilder[Self <: ConfigLoader] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigLoader](x: Self) {
       
-      @scala.inline
-      def setGetMetaLoader(value: () => MetaLoader): Self = StObject.set(x, "getMetaLoader", js.Any.fromFunction0(value))
+      inline def setGetMetaLoader(value: () => MetaLoader): Self = StObject.set(x, "getMetaLoader", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRecursiveScanPath(value: (String, js.Array[String], js.Object) => Unit): Self = StObject.set(x, "getRecursiveScanPath", js.Any.fromFunction3(value))
+      inline def setGetRecursiveScanPath(value: (String, js.Array[String], js.Object) => Unit): Self = StObject.set(x, "getRecursiveScanPath", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetResources(value: String => js.Object): Self = StObject.set(x, "getResources", js.Any.fromFunction1(value))
+      inline def setGetResources(value: String => js.Object): Self = StObject.set(x, "getResources", js.Any.fromFunction1(value))
     }
   }
   
@@ -1242,8 +1231,7 @@ object mod extends Shortcut {
   }
   object MetaLoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMetaObjects: () => js.Object,
       load: String => js.Object,
       metaObjects: js.Object,
@@ -1253,20 +1241,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MetaLoader]
     }
     
-    @scala.inline
-    implicit class MetaLoaderMutableBuilder[Self <: MetaLoader] (val x: Self) extends AnyVal {
+    extension [Self <: MetaLoader](x: Self) {
       
-      @scala.inline
-      def setGetMetaObjects(value: () => js.Object): Self = StObject.set(x, "getMetaObjects", js.Any.fromFunction0(value))
+      inline def setGetMetaObjects(value: () => js.Object): Self = StObject.set(x, "getMetaObjects", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoad(value: String => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMetaObjects(value: js.Object): Self = StObject.set(x, "metaObjects", value.asInstanceOf[js.Any])
+      inline def setMetaObjects(value: js.Object): Self = StObject.set(x, "metaObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetMetaObject(value: (String, js.Object) => Unit): Self = StObject.set(x, "setMetaObject", js.Any.fromFunction2(value))
+      inline def setSetMetaObject(value: (String, js.Object) => Unit): Self = StObject.set(x, "setMetaObject", js.Any.fromFunction2(value))
     }
   }
   
@@ -1282,8 +1265,7 @@ object mod extends Shortcut {
   }
   object ModuleFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       define: (String, js.Object) => Unit,
       factoryMap: js.Object,
       moduleMap: js.Object,
@@ -1293,20 +1275,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ModuleFactory]
     }
     
-    @scala.inline
-    implicit class ModuleFactoryMutableBuilder[Self <: ModuleFactory] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleFactory](x: Self) {
       
-      @scala.inline
-      def setDefine(value: (String, js.Object) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
+      inline def setDefine(value: (String, js.Object) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFactoryMap(value: js.Object): Self = StObject.set(x, "factoryMap", value.asInstanceOf[js.Any])
+      inline def setFactoryMap(value: js.Object): Self = StObject.set(x, "factoryMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleMap(value: js.Object): Self = StObject.set(x, "moduleMap", value.asInstanceOf[js.Any])
+      inline def setModuleMap(value: js.Object): Self = StObject.set(x, "moduleMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+      inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
     }
   }
   
@@ -1345,8 +1322,7 @@ object mod extends Shortcut {
   }
   object ResourceLoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addLoadPath: String => Unit,
       getConfigLoader: () => ConfigLoader,
       load: String => js.Object,
@@ -1357,23 +1333,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ResourceLoader]
     }
     
-    @scala.inline
-    implicit class ResourceLoaderMutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceLoader](x: Self) {
       
-      @scala.inline
-      def setAddLoadPath(value: String => Unit): Self = StObject.set(x, "addLoadPath", js.Any.fromFunction1(value))
+      inline def setAddLoadPath(value: String => Unit): Self = StObject.set(x, "addLoadPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetConfigLoader(value: () => ConfigLoader): Self = StObject.set(x, "getConfigLoader", js.Any.fromFunction0(value))
+      inline def setGetConfigLoader(value: () => ConfigLoader): Self = StObject.set(x, "getConfigLoader", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoad(value: String => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadPathMap(value: js.Object): Self = StObject.set(x, "loadPathMap", value.asInstanceOf[js.Any])
+      inline def setLoadPathMap(value: js.Object): Self = StObject.set(x, "loadPathMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadPaths(value: String): Self = StObject.set(x, "loadPaths", value.asInstanceOf[js.Any])
+      inline def setLoadPaths(value: String): Self = StObject.set(x, "loadPaths", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1427,8 +1397,7 @@ object mod extends Shortcut {
   }
   object SingletonBeanFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addSingleton: (String, js.Object) => Unit,
       beanFactory: BeanFactory,
       containsSingleton: String => Boolean,
@@ -1441,29 +1410,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SingletonBeanFactory]
     }
     
-    @scala.inline
-    implicit class SingletonBeanFactoryMutableBuilder[Self <: SingletonBeanFactory] (val x: Self) extends AnyVal {
+    extension [Self <: SingletonBeanFactory](x: Self) {
       
-      @scala.inline
-      def setAddSingleton(value: (String, js.Object) => Unit): Self = StObject.set(x, "addSingleton", js.Any.fromFunction2(value))
+      inline def setAddSingleton(value: (String, js.Object) => Unit): Self = StObject.set(x, "addSingleton", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeanFactory(value: BeanFactory): Self = StObject.set(x, "beanFactory", value.asInstanceOf[js.Any])
+      inline def setBeanFactory(value: BeanFactory): Self = StObject.set(x, "beanFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsSingleton(value: String => Boolean): Self = StObject.set(x, "containsSingleton", js.Any.fromFunction1(value))
+      inline def setContainsSingleton(value: String => Boolean): Self = StObject.set(x, "containsSingleton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSingleton(value: String => js.Object): Self = StObject.set(x, "getSingleton", js.Any.fromFunction1(value))
+      inline def setGetSingleton(value: String => js.Object): Self = StObject.set(x, "getSingleton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSingletonNames(value: () => js.Array[String]): Self = StObject.set(x, "getSingletonNames", js.Any.fromFunction0(value))
+      inline def setGetSingletonNames(value: () => js.Array[String]): Self = StObject.set(x, "getSingletonNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveSingleton(value: String => Unit): Self = StObject.set(x, "removeSingleton", js.Any.fromFunction1(value))
+      inline def setRemoveSingleton(value: String => Unit): Self = StObject.set(x, "removeSingleton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSingletonObjects(value: js.Object): Self = StObject.set(x, "singletonObjects", value.asInstanceOf[js.Any])
+      inline def setSingletonObjects(value: js.Object): Self = StObject.set(x, "singletonObjects", value.asInstanceOf[js.Any])
     }
   }
   

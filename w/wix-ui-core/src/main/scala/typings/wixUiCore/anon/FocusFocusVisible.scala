@@ -12,19 +12,15 @@ trait FocusFocusVisible extends StObject {
 }
 object FocusFocusVisible {
   
-  @scala.inline
-  def apply(focus: Boolean, focusVisible: Boolean): FocusFocusVisible = {
+  inline def apply(focus: Boolean, focusVisible: Boolean): FocusFocusVisible = {
     val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusFocusVisible]
   }
   
-  @scala.inline
-  implicit class FocusFocusVisibleMutableBuilder[Self <: FocusFocusVisible] (val x: Self) extends AnyVal {
+  extension [Self <: FocusFocusVisible](x: Self) {
     
-    @scala.inline
-    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
   }
 }

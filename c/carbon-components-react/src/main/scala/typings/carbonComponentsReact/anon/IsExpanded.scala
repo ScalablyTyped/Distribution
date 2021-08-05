@@ -17,31 +17,23 @@ trait IsExpanded extends StObject {
 }
 object IsExpanded {
   
-  @scala.inline
-  def apply(id: String, isExpanded: Boolean): IsExpanded = {
+  inline def apply(id: String, isExpanded: Boolean): IsExpanded = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsExpanded]
   }
   
-  @scala.inline
-  implicit class IsExpandedMutableBuilder[Self <: IsExpanded] (val x: Self) extends AnyVal {
+  extension [Self <: IsExpanded](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

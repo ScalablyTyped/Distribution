@@ -45,49 +45,35 @@ trait FontWarnings extends StObject {
 }
 object FontWarnings {
   
-  @scala.inline
-  def apply(): FontWarnings = {
+  inline def apply(): FontWarnings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontWarnings]
   }
   
-  @scala.inline
-  implicit class FontWarningsMutableBuilder[Self <: FontWarnings] (val x: Self) extends AnyVal {
+  extension [Self <: FontWarnings](x: Self) {
     
-    @scala.inline
-    def setFadeoutSteps(value: Double): Self = StObject.set(x, "fadeoutSteps", value.asInstanceOf[js.Any])
+    inline def setFadeoutSteps(value: Double): Self = StObject.set(x, "fadeoutSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeoutStepsUndefined: Self = StObject.set(x, "fadeoutSteps", js.undefined)
+    inline def setFadeoutStepsUndefined: Self = StObject.set(x, "fadeoutSteps", js.undefined)
     
-    @scala.inline
-    def setFadeoutTime(value: Double): Self = StObject.set(x, "fadeoutTime", value.asInstanceOf[js.Any])
+    inline def setFadeoutTime(value: Double): Self = StObject.set(x, "fadeoutTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeoutTimeUndefined: Self = StObject.set(x, "fadeoutTime", js.undefined)
+    inline def setFadeoutTimeUndefined: Self = StObject.set(x, "fadeoutTime", js.undefined)
     
-    @scala.inline
-    def setHTML(value: HTMLSnippets): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
+    inline def setHTML(value: HTMLSnippets): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLUndefined: Self = StObject.set(x, "HTML", js.undefined)
+    inline def setHTMLUndefined: Self = StObject.set(x, "HTML", js.undefined)
     
-    @scala.inline
-    def setMessage(value: HTMLMessages): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: HTMLMessages): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageStyle(value: js.Any): Self = StObject.set(x, "messageStyle", value.asInstanceOf[js.Any])
+    inline def setMessageStyle(value: js.Any): Self = StObject.set(x, "messageStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageStyleUndefined: Self = StObject.set(x, "messageStyle", js.undefined)
+    inline def setMessageStyleUndefined: Self = StObject.set(x, "messageStyle", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setRemoveAfter(value: Double): Self = StObject.set(x, "removeAfter", value.asInstanceOf[js.Any])
+    inline def setRemoveAfter(value: Double): Self = StObject.set(x, "removeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAfterUndefined: Self = StObject.set(x, "removeAfter", js.undefined)
+    inline def setRemoveAfterUndefined: Self = StObject.set(x, "removeAfter", js.undefined)
   }
 }

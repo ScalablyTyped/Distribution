@@ -88,8 +88,7 @@ object loggerMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
       error: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
       fatal: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
@@ -101,26 +100,19 @@ object loggerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFatal(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction2(value))
+      inline def setFatal(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInfo(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTrace(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction2(value))
+      inline def setTrace(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarn(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
     }
   }
 }

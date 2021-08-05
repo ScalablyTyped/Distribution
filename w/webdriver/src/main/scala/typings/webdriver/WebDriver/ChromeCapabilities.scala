@@ -14,31 +14,23 @@ trait ChromeCapabilities extends StObject {
 }
 object ChromeCapabilities {
   
-  @scala.inline
-  def apply(): ChromeCapabilities = {
+  inline def apply(): ChromeCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChromeCapabilities]
   }
   
-  @scala.inline
-  implicit class ChromeCapabilitiesMutableBuilder[Self <: ChromeCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ChromeCapabilities](x: Self) {
     
-    @scala.inline
-    def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+    inline def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromeOptions(value: ChromeOptions): Self = StObject.set(x, "chromeOptions", value.asInstanceOf[js.Any])
+    inline def setChromeOptions(value: ChromeOptions): Self = StObject.set(x, "chromeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromeOptionsUndefined: Self = StObject.set(x, "chromeOptions", js.undefined)
+    inline def setChromeOptionsUndefined: Self = StObject.set(x, "chromeOptions", js.undefined)
     
-    @scala.inline
-    def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
+    inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
     
-    @scala.inline
-    def setMobileEmulationEnabled(value: Boolean): Self = StObject.set(x, "mobileEmulationEnabled", value.asInstanceOf[js.Any])
+    inline def setMobileEmulationEnabled(value: Boolean): Self = StObject.set(x, "mobileEmulationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileEmulationEnabledUndefined: Self = StObject.set(x, "mobileEmulationEnabled", js.undefined)
+    inline def setMobileEmulationEnabledUndefined: Self = StObject.set(x, "mobileEmulationEnabled", js.undefined)
   }
 }

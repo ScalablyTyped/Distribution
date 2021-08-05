@@ -23,31 +23,23 @@ trait ClientConnectResponseOptions extends StObject {
 }
 object ClientConnectResponseOptions {
   
-  @scala.inline
-  def apply(): ClientConnectResponseOptions = {
+  inline def apply(): ClientConnectResponseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientConnectResponseOptions]
   }
   
-  @scala.inline
-  implicit class ClientConnectResponseOptionsMutableBuilder[Self <: ClientConnectResponseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientConnectResponseOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
+    inline def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ClientVpnEndpointAttributeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClientVpnEndpointAttributeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

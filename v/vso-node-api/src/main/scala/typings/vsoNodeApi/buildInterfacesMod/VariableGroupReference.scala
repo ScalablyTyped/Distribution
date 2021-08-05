@@ -13,16 +13,13 @@ trait VariableGroupReference extends StObject {
 }
 object VariableGroupReference {
   
-  @scala.inline
-  def apply(id: Double): VariableGroupReference = {
+  inline def apply(id: Double): VariableGroupReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableGroupReference]
   }
   
-  @scala.inline
-  implicit class VariableGroupReferenceMutableBuilder[Self <: VariableGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: VariableGroupReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

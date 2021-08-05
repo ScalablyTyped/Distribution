@@ -23,34 +23,25 @@ trait GetRelationalDatabaseLogEventsResult extends StObject {
 }
 object GetRelationalDatabaseLogEventsResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseLogEventsResult = {
+  inline def apply(): GetRelationalDatabaseLogEventsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseLogEventsResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseLogEventsResultMutableBuilder[Self <: GetRelationalDatabaseLogEventsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseLogEventsResult](x: Self) {
     
-    @scala.inline
-    def setNextBackwardToken(value: String): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
+    inline def setNextBackwardToken(value: String): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextBackwardTokenUndefined: Self = StObject.set(x, "nextBackwardToken", js.undefined)
+    inline def setNextBackwardTokenUndefined: Self = StObject.set(x, "nextBackwardToken", js.undefined)
     
-    @scala.inline
-    def setNextForwardToken(value: String): Self = StObject.set(x, "nextForwardToken", value.asInstanceOf[js.Any])
+    inline def setNextForwardToken(value: String): Self = StObject.set(x, "nextForwardToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextForwardTokenUndefined: Self = StObject.set(x, "nextForwardToken", js.undefined)
+    inline def setNextForwardTokenUndefined: Self = StObject.set(x, "nextForwardToken", js.undefined)
     
-    @scala.inline
-    def setResourceLogEvents(value: LogEventList): Self = StObject.set(x, "resourceLogEvents", value.asInstanceOf[js.Any])
+    inline def setResourceLogEvents(value: LogEventList): Self = StObject.set(x, "resourceLogEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLogEventsUndefined: Self = StObject.set(x, "resourceLogEvents", js.undefined)
+    inline def setResourceLogEventsUndefined: Self = StObject.set(x, "resourceLogEvents", js.undefined)
     
-    @scala.inline
-    def setResourceLogEventsVarargs(value: LogEvent*): Self = StObject.set(x, "resourceLogEvents", js.Array(value :_*))
+    inline def setResourceLogEventsVarargs(value: LogEvent*): Self = StObject.set(x, "resourceLogEvents", js.Array(value :_*))
   }
 }

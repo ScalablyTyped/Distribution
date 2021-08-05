@@ -19,23 +19,18 @@ object anon {
   }
   object ErrorDetails {
     
-    @scala.inline
-    def apply(errorDetails: String, isBrowserSupported: Boolean, isFrameworkInstalled: Boolean): ErrorDetails = {
+    inline def apply(errorDetails: String, isBrowserSupported: Boolean, isFrameworkInstalled: Boolean): ErrorDetails = {
       val __obj = js.Dynamic.literal(errorDetails = errorDetails.asInstanceOf[js.Any], isBrowserSupported = isBrowserSupported.asInstanceOf[js.Any], isFrameworkInstalled = isFrameworkInstalled.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorDetails]
     }
     
-    @scala.inline
-    implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorDetails](x: Self) {
       
-      @scala.inline
-      def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+      inline def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBrowserSupported(value: Boolean): Self = StObject.set(x, "isBrowserSupported", value.asInstanceOf[js.Any])
+      inline def setIsBrowserSupported(value: Boolean): Self = StObject.set(x, "isBrowserSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFrameworkInstalled(value: Boolean): Self = StObject.set(x, "isFrameworkInstalled", value.asInstanceOf[js.Any])
+      inline def setIsFrameworkInstalled(value: Boolean): Self = StObject.set(x, "isFrameworkInstalled", value.asInstanceOf[js.Any])
     }
   }
 }

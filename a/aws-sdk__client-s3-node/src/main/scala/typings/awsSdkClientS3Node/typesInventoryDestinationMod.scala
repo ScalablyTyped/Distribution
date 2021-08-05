@@ -17,17 +17,14 @@ object typesInventoryDestinationMod {
   }
   object InventoryDestination {
     
-    @scala.inline
-    def apply(S3BucketDestination: InventoryS3BucketDestination): InventoryDestination = {
+    inline def apply(S3BucketDestination: InventoryS3BucketDestination): InventoryDestination = {
       val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
       __obj.asInstanceOf[InventoryDestination]
     }
     
-    @scala.inline
-    implicit class InventoryDestinationMutableBuilder[Self <: InventoryDestination] (val x: Self) extends AnyVal {
+    extension [Self <: InventoryDestination](x: Self) {
       
-      @scala.inline
-      def setS3BucketDestination(value: InventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
+      inline def setS3BucketDestination(value: InventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +40,14 @@ object typesInventoryDestinationMod {
   }
   object UnmarshalledInventoryDestination {
     
-    @scala.inline
-    def apply(S3BucketDestination: UnmarshalledInventoryS3BucketDestination): UnmarshalledInventoryDestination = {
+    inline def apply(S3BucketDestination: UnmarshalledInventoryS3BucketDestination): UnmarshalledInventoryDestination = {
       val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledInventoryDestination]
     }
     
-    @scala.inline
-    implicit class UnmarshalledInventoryDestinationMutableBuilder[Self <: UnmarshalledInventoryDestination] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledInventoryDestination](x: Self) {
       
-      @scala.inline
-      def setS3BucketDestination(value: UnmarshalledInventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
+      inline def setS3BucketDestination(value: UnmarshalledInventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }
   }
 }

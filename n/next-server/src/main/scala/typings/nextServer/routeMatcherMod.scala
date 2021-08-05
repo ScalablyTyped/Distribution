@@ -14,6 +14,5 @@ object routeMatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRouteMatcher(routeRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]): js.Function1[/* pathname */ js.UndefOr[String], `false` | StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteMatcher")(routeRegex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* pathname */ js.UndefOr[String], `false` | StringDictionary[String]]]
+  inline def getRouteMatcher(routeRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]): js.Function1[/* pathname */ js.UndefOr[String], `false` | StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteMatcher")(routeRegex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* pathname */ js.UndefOr[String], `false` | StringDictionary[String]]]
 }

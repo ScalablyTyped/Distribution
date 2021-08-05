@@ -58,53 +58,38 @@ object progressPluginMod {
   }
   object ProgressPluginOptions {
     
-    @scala.inline
-    def apply(): ProgressPluginOptions = {
+    inline def apply(): ProgressPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressPluginOptions]
     }
     
-    @scala.inline
-    implicit class ProgressPluginOptionsMutableBuilder[Self <: ProgressPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressPluginOptions](x: Self) {
       
-      @scala.inline
-      def setActiveModules(value: Boolean): Self = StObject.set(x, "activeModules", value.asInstanceOf[js.Any])
+      inline def setActiveModules(value: Boolean): Self = StObject.set(x, "activeModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveModulesUndefined: Self = StObject.set(x, "activeModules", js.undefined)
+      inline def setActiveModulesUndefined: Self = StObject.set(x, "activeModules", js.undefined)
       
-      @scala.inline
-      def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      @scala.inline
-      def setHandler(value: HandlerFunction): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: HandlerFunction): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesCount(value: Double): Self = StObject.set(x, "modulesCount", value.asInstanceOf[js.Any])
+      inline def setModulesCount(value: Double): Self = StObject.set(x, "modulesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesCountUndefined: Self = StObject.set(x, "modulesCount", js.undefined)
+      inline def setModulesCountUndefined: Self = StObject.set(x, "modulesCount", js.undefined)
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setProfile(value: `true` | `false`): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: `true` | `false`): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileNull: Self = StObject.set(x, "profile", null)
+      inline def setProfileNull: Self = StObject.set(x, "profile", null)
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     }
   }
 }

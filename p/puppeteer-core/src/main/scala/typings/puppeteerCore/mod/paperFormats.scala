@@ -15,66 +15,55 @@ object paperFormats {
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a0")
   @js.native
   def a0: PaperFormatDimensions = js.native
-  @scala.inline
-  def a0_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a0")(x.asInstanceOf[js.Any])
+  inline def a0_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a0")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a1")
   @js.native
   def a1: PaperFormatDimensions = js.native
-  @scala.inline
-  def a1_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a1")(x.asInstanceOf[js.Any])
+  inline def a1_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a1")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a2")
   @js.native
   def a2: PaperFormatDimensions = js.native
-  @scala.inline
-  def a2_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a2")(x.asInstanceOf[js.Any])
+  inline def a2_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a2")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a3")
   @js.native
   def a3: PaperFormatDimensions = js.native
-  @scala.inline
-  def a3_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a3")(x.asInstanceOf[js.Any])
+  inline def a3_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a3")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a4")
   @js.native
   def a4: PaperFormatDimensions = js.native
-  @scala.inline
-  def a4_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a4")(x.asInstanceOf[js.Any])
+  inline def a4_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a4")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a5")
   @js.native
   def a5: PaperFormatDimensions = js.native
-  @scala.inline
-  def a5_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a5")(x.asInstanceOf[js.Any])
+  inline def a5_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a5")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.a6")
   @js.native
   def a6: PaperFormatDimensions = js.native
-  @scala.inline
-  def a6_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a6")(x.asInstanceOf[js.Any])
+  inline def a6_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a6")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.ledger")
   @js.native
   def ledger: PaperFormatDimensions = js.native
-  @scala.inline
-  def ledger_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ledger")(x.asInstanceOf[js.Any])
+  inline def ledger_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ledger")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.legal")
   @js.native
   def legal: PaperFormatDimensions = js.native
-  @scala.inline
-  def legal_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legal")(x.asInstanceOf[js.Any])
+  inline def legal_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legal")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.letter")
   @js.native
   def letter: PaperFormatDimensions = js.native
-  @scala.inline
-  def letter_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letter")(x.asInstanceOf[js.Any])
+  inline def letter_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letter")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "paperFormats.tabloid")
   @js.native
   def tabloid: PaperFormatDimensions = js.native
-  @scala.inline
-  def tabloid_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabloid")(x.asInstanceOf[js.Any])
+  inline def tabloid_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabloid")(x.asInstanceOf[js.Any])
 }

@@ -16,19 +16,15 @@ trait SchemaUndeleteServiceResponse extends StObject {
 }
 object SchemaUndeleteServiceResponse {
   
-  @scala.inline
-  def apply(): SchemaUndeleteServiceResponse = {
+  inline def apply(): SchemaUndeleteServiceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUndeleteServiceResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUndeleteServiceResponseMutableBuilder[Self <: SchemaUndeleteServiceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUndeleteServiceResponse](x: Self) {
     
-    @scala.inline
-    def setService(value: SchemaManagedService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: SchemaManagedService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

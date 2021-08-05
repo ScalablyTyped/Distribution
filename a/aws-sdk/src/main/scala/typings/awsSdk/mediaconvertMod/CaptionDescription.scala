@@ -33,43 +33,31 @@ trait CaptionDescription extends StObject {
 }
 object CaptionDescription {
   
-  @scala.inline
-  def apply(): CaptionDescription = {
+  inline def apply(): CaptionDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionDescription]
   }
   
-  @scala.inline
-  implicit class CaptionDescriptionMutableBuilder[Self <: CaptionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionDescription](x: Self) {
     
-    @scala.inline
-    def setCaptionSelectorName(value: stringMin1): Self = StObject.set(x, "CaptionSelectorName", value.asInstanceOf[js.Any])
+    inline def setCaptionSelectorName(value: stringMin1): Self = StObject.set(x, "CaptionSelectorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionSelectorNameUndefined: Self = StObject.set(x, "CaptionSelectorName", js.undefined)
+    inline def setCaptionSelectorNameUndefined: Self = StObject.set(x, "CaptionSelectorName", js.undefined)
     
-    @scala.inline
-    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
+    inline def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
+    inline def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
     
-    @scala.inline
-    def setDestinationSettings(value: CaptionDestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
+    inline def setDestinationSettings(value: CaptionDestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
+    inline def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setLanguageDescription(value: string): Self = StObject.set(x, "LanguageDescription", value.asInstanceOf[js.Any])
+    inline def setLanguageDescription(value: string): Self = StObject.set(x, "LanguageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageDescriptionUndefined: Self = StObject.set(x, "LanguageDescription", js.undefined)
+    inline def setLanguageDescriptionUndefined: Self = StObject.set(x, "LanguageDescription", js.undefined)
   }
 }

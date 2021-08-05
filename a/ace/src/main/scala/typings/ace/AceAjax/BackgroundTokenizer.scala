@@ -52,8 +52,7 @@ trait BackgroundTokenizer extends StObject {
 }
 object BackgroundTokenizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fireUpdateEvent: (Double, Double) => Unit,
     getState: Double => String,
     getTokens: Double => js.Array[TokenInfo],
@@ -67,34 +66,24 @@ object BackgroundTokenizer {
     __obj.asInstanceOf[BackgroundTokenizer]
   }
   
-  @scala.inline
-  implicit class BackgroundTokenizerMutableBuilder[Self <: BackgroundTokenizer] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundTokenizer](x: Self) {
     
-    @scala.inline
-    def setFireUpdateEvent(value: (Double, Double) => Unit): Self = StObject.set(x, "fireUpdateEvent", js.Any.fromFunction2(value))
+    inline def setFireUpdateEvent(value: (Double, Double) => Unit): Self = StObject.set(x, "fireUpdateEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetState(value: Double => String): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
+    inline def setGetState(value: Double => String): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTokens(value: Double => js.Array[TokenInfo]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
+    inline def setGetTokens(value: Double => js.Array[TokenInfo]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDocument(value: Document => Unit): Self = StObject.set(x, "setDocument", js.Any.fromFunction1(value))
+    inline def setSetDocument(value: Document => Unit): Self = StObject.set(x, "setDocument", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTokenizer(value: Tokenizer => Unit): Self = StObject.set(x, "setTokenizer", js.Any.fromFunction1(value))
+    inline def setSetTokenizer(value: Tokenizer => Unit): Self = StObject.set(x, "setTokenizer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: Double => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: Double => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStates(value: js.Array[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: js.Array[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesVarargs(value: js.Any*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: js.Any*): Self = StObject.set(x, "states", js.Array(value :_*))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

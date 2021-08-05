@@ -25,46 +25,33 @@ trait WorkbookTableColumn
 }
 object WorkbookTableColumn {
   
-  @scala.inline
-  def apply(): WorkbookTableColumn = {
+  inline def apply(): WorkbookTableColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookTableColumn]
   }
   
-  @scala.inline
-  implicit class WorkbookTableColumnMutableBuilder[Self <: WorkbookTableColumn] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookTableColumn](x: Self) {
     
-    @scala.inline
-    def setFilter(value: NullableOption[WorkbookFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: NullableOption[WorkbookFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterNull: Self = StObject.set(x, "filter", null)
+    inline def setFilterNull: Self = StObject.set(x, "filter", null)
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesNull: Self = StObject.set(x, "values", null)
+    inline def setValuesNull: Self = StObject.set(x, "values", null)
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

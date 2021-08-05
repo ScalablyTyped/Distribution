@@ -238,8 +238,7 @@ trait Media extends StObject {
 }
 object Media {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeTrackIds: js.Array[Double],
     addUpdateListener: js.Function1[/* isAlive */ Boolean, Unit] => Unit,
     currentItemId: Double,
@@ -281,136 +280,92 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
+    inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
+    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
     
-    @scala.inline
-    def setAddUpdateListener(value: js.Function1[/* isAlive */ Boolean, Unit] => Unit): Self = StObject.set(x, "addUpdateListener", js.Any.fromFunction1(value))
+    inline def setAddUpdateListener(value: js.Function1[/* isAlive */ Boolean, Unit] => Unit): Self = StObject.set(x, "addUpdateListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentItemId(value: Double): Self = StObject.set(x, "currentItemId", value.asInstanceOf[js.Any])
+    inline def setCurrentItemId(value: Double): Self = StObject.set(x, "currentItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditTracksInfo(value: (EditTracksInfoRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "editTracksInfo", js.Any.fromFunction3(value))
+    inline def setEditTracksInfo(value: (EditTracksInfoRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "editTracksInfo", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetEstimatedTime(value: () => Double): Self = StObject.set(x, "getEstimatedTime", js.Any.fromFunction0(value))
+    inline def setGetEstimatedTime(value: () => Double): Self = StObject.set(x, "getEstimatedTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatus(value: (GetStatusRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "getStatus", js.Any.fromFunction3(value))
+    inline def setGetStatus(value: (GetStatusRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "getStatus", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIdleReason(value: IdleReason): Self = StObject.set(x, "idleReason", value.asInstanceOf[js.Any])
+    inline def setIdleReason(value: IdleReason): Self = StObject.set(x, "idleReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleReasonNull: Self = StObject.set(x, "idleReason", null)
+    inline def setIdleReasonNull: Self = StObject.set(x, "idleReason", null)
     
-    @scala.inline
-    def setItems(value: js.Array[QueueItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[QueueItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: QueueItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: QueueItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLiveSeekableRange(value: LiveSeekableRange): Self = StObject.set(x, "liveSeekableRange", value.asInstanceOf[js.Any])
+    inline def setLiveSeekableRange(value: LiveSeekableRange): Self = StObject.set(x, "liveSeekableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSeekableRangeUndefined: Self = StObject.set(x, "liveSeekableRange", js.undefined)
+    inline def setLiveSeekableRangeUndefined: Self = StObject.set(x, "liveSeekableRange", js.undefined)
     
-    @scala.inline
-    def setLoadingItemId(value: Double): Self = StObject.set(x, "loadingItemId", value.asInstanceOf[js.Any])
+    inline def setLoadingItemId(value: Double): Self = StObject.set(x, "loadingItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: MediaInfo): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: MediaInfo): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSessionId(value: Double): Self = StObject.set(x, "mediaSessionId", value.asInstanceOf[js.Any])
+    inline def setMediaSessionId(value: Double): Self = StObject.set(x, "mediaSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: (PauseRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction3(value))
+    inline def setPause(value: (PauseRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPlay(value: (PlayRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "play", js.Any.fromFunction3(value))
+    inline def setPlay(value: (PlayRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "play", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerState(value: PlayerState): Self = StObject.set(x, "playerState", value.asInstanceOf[js.Any])
+    inline def setPlayerState(value: PlayerState): Self = StObject.set(x, "playerState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadedItemId(value: Double): Self = StObject.set(x, "preloadedItemId", value.asInstanceOf[js.Any])
+    inline def setPreloadedItemId(value: Double): Self = StObject.set(x, "preloadedItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueAppendItem(value: (QueueItem, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueAppendItem", js.Any.fromFunction3(value))
+    inline def setQueueAppendItem(value: (QueueItem, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueAppendItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueueInsertItems(value: (QueueInsertItemsRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueInsertItems", js.Any.fromFunction3(value))
+    inline def setQueueInsertItems(value: (QueueInsertItemsRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueInsertItems", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueueJumpToItem(value: (Double, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueJumpToItem", js.Any.fromFunction3(value))
+    inline def setQueueJumpToItem(value: (Double, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueJumpToItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueueMoveItemToNewIndex(value: (Double, Double, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueMoveItemToNewIndex", js.Any.fromFunction4(value))
+    inline def setQueueMoveItemToNewIndex(value: (Double, Double, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueMoveItemToNewIndex", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setQueueNext(value: (js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueNext", js.Any.fromFunction2(value))
+    inline def setQueueNext(value: (js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueNext", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueuePrev(value: (js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queuePrev", js.Any.fromFunction2(value))
+    inline def setQueuePrev(value: (js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queuePrev", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueueRemoveItem(value: (Double, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueRemoveItem", js.Any.fromFunction3(value))
+    inline def setQueueRemoveItem(value: (Double, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueRemoveItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueueReorderItems(value: (QueueReorderItemsRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueReorderItems", js.Any.fromFunction3(value))
+    inline def setQueueReorderItems(value: (QueueReorderItemsRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueReorderItems", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueueSetRepeatMode(value: (RepeatMode, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueSetRepeatMode", js.Any.fromFunction3(value))
+    inline def setQueueSetRepeatMode(value: (RepeatMode, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueSetRepeatMode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueueUpdateItems(value: (QueueUpdateItemsRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueUpdateItems", js.Any.fromFunction3(value))
+    inline def setQueueUpdateItems(value: (QueueUpdateItemsRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "queueUpdateItems", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveUpdateListener(value: js.Function1[/* isAlive */ Boolean, Unit] => Unit): Self = StObject.set(x, "removeUpdateListener", js.Any.fromFunction1(value))
+    inline def setRemoveUpdateListener(value: js.Function1[/* isAlive */ Boolean, Unit] => Unit): Self = StObject.set(x, "removeUpdateListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRepeatMode(value: RepeatMode): Self = StObject.set(x, "repeatMode", value.asInstanceOf[js.Any])
+    inline def setRepeatMode(value: RepeatMode): Self = StObject.set(x, "repeatMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeek(value: (SeekRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction3(value))
+    inline def setSeek(value: (SeekRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVolume(value: (VolumeRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "setVolume", js.Any.fromFunction3(value))
+    inline def setSetVolume(value: (VolumeRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "setVolume", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStop(value: (StopRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
+    inline def setStop(value: (StopRequest, js.Function, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSupportedMediaCommands(value: js.Array[MediaCommand]): Self = StObject.set(x, "supportedMediaCommands", value.asInstanceOf[js.Any])
+    inline def setSupportedMediaCommands(value: js.Array[MediaCommand]): Self = StObject.set(x, "supportedMediaCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedMediaCommandsVarargs(value: MediaCommand*): Self = StObject.set(x, "supportedMediaCommands", js.Array(value :_*))
+    inline def setSupportedMediaCommandsVarargs(value: MediaCommand*): Self = StObject.set(x, "supportedMediaCommands", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportsCommand(value: MediaCommand => Boolean): Self = StObject.set(x, "supportsCommand", js.Any.fromFunction1(value))
+    inline def setSupportsCommand(value: MediaCommand => Boolean): Self = StObject.set(x, "supportsCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Tolerance {
     
-    @scala.inline
-    def apply(tolerance: Double): Tolerance = {
+    inline def apply(tolerance: Double): Tolerance = {
       val __obj = js.Dynamic.literal(tolerance = tolerance.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tolerance]
     }
     
-    @scala.inline
-    implicit class ToleranceMutableBuilder[Self <: Tolerance] (val x: Self) extends AnyVal {
+    extension [Self <: Tolerance](x: Self) {
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     }
   }
 }

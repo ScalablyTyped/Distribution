@@ -22,46 +22,33 @@ trait StockToolsGuiDefinitionsCrookedLinesOptions extends StObject {
 }
 object StockToolsGuiDefinitionsCrookedLinesOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsCrookedLinesOptions = {
+  inline def apply(): StockToolsGuiDefinitionsCrookedLinesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsCrookedLinesOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsCrookedLinesOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsCrookedLinesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsCrookedLinesOptions](x: Self) {
     
-    @scala.inline
-    def setCrooked3(value: StockToolsGuiDefinitionsCrookedLinesCrooked3Options): Self = StObject.set(x, "crooked3", value.asInstanceOf[js.Any])
+    inline def setCrooked3(value: StockToolsGuiDefinitionsCrookedLinesCrooked3Options): Self = StObject.set(x, "crooked3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrooked3Undefined: Self = StObject.set(x, "crooked3", js.undefined)
+    inline def setCrooked3Undefined: Self = StObject.set(x, "crooked3", js.undefined)
     
-    @scala.inline
-    def setCrooked5(value: StockToolsGuiDefinitionsCrookedLinesCrooked5Options): Self = StObject.set(x, "crooked5", value.asInstanceOf[js.Any])
+    inline def setCrooked5(value: StockToolsGuiDefinitionsCrookedLinesCrooked5Options): Self = StObject.set(x, "crooked5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrooked5Undefined: Self = StObject.set(x, "crooked5", js.undefined)
+    inline def setCrooked5Undefined: Self = StObject.set(x, "crooked5", js.undefined)
     
-    @scala.inline
-    def setElliott3(value: StockToolsGuiDefinitionsCrookedLinesElliott3Options): Self = StObject.set(x, "elliott3", value.asInstanceOf[js.Any])
+    inline def setElliott3(value: StockToolsGuiDefinitionsCrookedLinesElliott3Options): Self = StObject.set(x, "elliott3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElliott3Undefined: Self = StObject.set(x, "elliott3", js.undefined)
+    inline def setElliott3Undefined: Self = StObject.set(x, "elliott3", js.undefined)
     
-    @scala.inline
-    def setElliott5(value: StockToolsGuiDefinitionsCrookedLinesElliott5Options): Self = StObject.set(x, "elliott5", value.asInstanceOf[js.Any])
+    inline def setElliott5(value: StockToolsGuiDefinitionsCrookedLinesElliott5Options): Self = StObject.set(x, "elliott5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
+    inline def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

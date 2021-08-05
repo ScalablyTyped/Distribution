@@ -89,6 +89,5 @@ object HotspotAuthenticationContext {
     * @param evenToken The event token retrieved from the network operator hotspot authentication event . The token is a GUID in string format.
     */
   /* static member */
-  @scala.inline
-  def tryGetAuthenticationContext(evenToken: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("tryGetAuthenticationContext")(evenToken.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def tryGetAuthenticationContext(evenToken: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("tryGetAuthenticationContext")(evenToken.asInstanceOf[js.Any]).asInstanceOf[Context]
 }

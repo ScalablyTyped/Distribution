@@ -10,16 +10,13 @@ trait ICoreWindowResizeManagerStatics extends StObject {
 }
 object ICoreWindowResizeManagerStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => CoreWindowResizeManager): ICoreWindowResizeManagerStatics = {
+  inline def apply(getForCurrentView: () => CoreWindowResizeManager): ICoreWindowResizeManagerStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
     __obj.asInstanceOf[ICoreWindowResizeManagerStatics]
   }
   
-  @scala.inline
-  implicit class ICoreWindowResizeManagerStaticsMutableBuilder[Self <: ICoreWindowResizeManagerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreWindowResizeManagerStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => CoreWindowResizeManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => CoreWindowResizeManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }
 }

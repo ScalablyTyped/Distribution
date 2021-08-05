@@ -14,25 +14,19 @@ trait PagespeedVersion extends StObject {
 }
 object PagespeedVersion {
   
-  @scala.inline
-  def apply(): PagespeedVersion = {
+  inline def apply(): PagespeedVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PagespeedVersion]
   }
   
-  @scala.inline
-  implicit class PagespeedVersionMutableBuilder[Self <: PagespeedVersion] (val x: Self) extends AnyVal {
+  extension [Self <: PagespeedVersion](x: Self) {
     
-    @scala.inline
-    def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
-    @scala.inline
-    def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
   }
 }

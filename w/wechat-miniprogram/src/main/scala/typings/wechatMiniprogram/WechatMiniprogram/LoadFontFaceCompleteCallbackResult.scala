@@ -11,16 +11,13 @@ trait LoadFontFaceCompleteCallbackResult extends StObject {
 }
 object LoadFontFaceCompleteCallbackResult {
   
-  @scala.inline
-  def apply(status: String): LoadFontFaceCompleteCallbackResult = {
+  inline def apply(status: String): LoadFontFaceCompleteCallbackResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadFontFaceCompleteCallbackResult]
   }
   
-  @scala.inline
-  implicit class LoadFontFaceCompleteCallbackResultMutableBuilder[Self <: LoadFontFaceCompleteCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: LoadFontFaceCompleteCallbackResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

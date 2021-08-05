@@ -18,19 +18,15 @@ trait ITreeState extends StObject {
 }
 object ITreeState {
   
-  @scala.inline
-  def apply(currentRootNode: js.Any, selectedNode: js.Any): ITreeState = {
+  inline def apply(currentRootNode: js.Any, selectedNode: js.Any): ITreeState = {
     val __obj = js.Dynamic.literal(currentRootNode = currentRootNode.asInstanceOf[js.Any], selectedNode = selectedNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITreeState]
   }
   
-  @scala.inline
-  implicit class ITreeStateMutableBuilder[Self <: ITreeState] (val x: Self) extends AnyVal {
+  extension [Self <: ITreeState](x: Self) {
     
-    @scala.inline
-    def setCurrentRootNode(value: js.Any): Self = StObject.set(x, "currentRootNode", value.asInstanceOf[js.Any])
+    inline def setCurrentRootNode(value: js.Any): Self = StObject.set(x, "currentRootNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNode(value: js.Any): Self = StObject.set(x, "selectedNode", value.asInstanceOf[js.Any])
+    inline def setSelectedNode(value: js.Any): Self = StObject.set(x, "selectedNode", value.asInstanceOf[js.Any])
   }
 }

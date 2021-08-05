@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Chain_(): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("Chain")().asInstanceOf[IChain]
+  inline def Chain_(): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("Chain")().asInstanceOf[IChain]
   
   @JSImport("swiz", "Cidr")
   @js.native
@@ -131,14 +130,11 @@ object mod {
     def setSchema(schema: IValveSchema): Valve = js.native
   }
   
-  @scala.inline
-  def chain(): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")().asInstanceOf[IChain]
+  inline def chain(): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")().asInstanceOf[IChain]
   
-  @scala.inline
-  def defToValve(`def`: js.Array[IObj]): js.Array[IValveSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("defToValve")(`def`.asInstanceOf[js.Any]).asInstanceOf[js.Array[IValveSchema]]
+  inline def defToValve(`def`: js.Array[IObj]): js.Array[IValveSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("defToValve")(`def`.asInstanceOf[js.Any]).asInstanceOf[js.Array[IValveSchema]]
   
-  @scala.inline
-  def stripSerializerTypes(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSerializerTypes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stripSerializerTypes(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSerializerTypes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object struct {
     
@@ -146,18 +142,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Field(name: String): IField = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(name.asInstanceOf[js.Any]).asInstanceOf[IField]
-    @scala.inline
-    def Field(name: String, options: IFieldOptions): IField = (^.asInstanceOf[js.Dynamic].applyDynamic("Field")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IField]
+    inline def Field(name: String): IField = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(name.asInstanceOf[js.Any]).asInstanceOf[IField]
+    inline def Field(name: String, options: IFieldOptions): IField = (^.asInstanceOf[js.Dynamic].applyDynamic("Field")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IField]
     
-    @scala.inline
-    def Obj(name: String): IObj = ^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any]).asInstanceOf[IObj]
-    @scala.inline
-    def Obj(name: String, options: IObjOptions): IObj = (^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObj]
+    inline def Obj(name: String): IObj = ^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any]).asInstanceOf[IObj]
+    inline def Obj(name: String, options: IObjOptions): IObj = (^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObj]
     
-    @scala.inline
-    def coerce(value: js.Any, coerceTo: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(value.asInstanceOf[js.Any], coerceTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def coerce(value: js.Any, coerceTo: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(value.asInstanceOf[js.Any], coerceTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     trait IField extends StObject {
       
@@ -187,8 +178,7 @@ object mod {
     }
     object IField {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         attribute: Boolean,
         coerceTo: js.Any,
         enumerated: Boolean,
@@ -204,53 +194,37 @@ object mod {
         __obj.asInstanceOf[IField]
       }
       
-      @scala.inline
-      implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
+      extension [Self <: IField](x: Self) {
         
-        @scala.inline
-        def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+        inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCoerceTo(value: js.Any): Self = StObject.set(x, "coerceTo", value.asInstanceOf[js.Any])
+        inline def setCoerceTo(value: js.Any): Self = StObject.set(x, "coerceTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+        inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
-        @scala.inline
-        def setEnumerated(value: Boolean): Self = StObject.set(x, "enumerated", value.asInstanceOf[js.Any])
+        inline def setEnumerated(value: Boolean): Self = StObject.set(x, "enumerated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterFrom(value: js.Array[String]): Self = StObject.set(x, "filterFrom", value.asInstanceOf[js.Any])
+        inline def setFilterFrom(value: js.Array[String]): Self = StObject.set(x, "filterFrom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value :_*))
+        inline def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value :_*))
         
-        @scala.inline
-        def setIgnorePublic(value: Boolean): Self = StObject.set(x, "ignorePublic", value.asInstanceOf[js.Any])
+        inline def setIgnorePublic(value: Boolean): Self = StObject.set(x, "ignorePublic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: IFieldOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: IFieldOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+        inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+        inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+        inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVal(value: IChain): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+        inline def setVal(value: IChain): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+        inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
       }
     }
     
@@ -278,77 +252,54 @@ object mod {
     }
     object IFieldOptions {
       
-      @scala.inline
-      def apply(): IFieldOptions = {
+      inline def apply(): IFieldOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IFieldOptions]
       }
       
-      @scala.inline
-      implicit class IFieldOptionsMutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IFieldOptions](x: Self) {
         
-        @scala.inline
-        def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+        inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+        inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
         
-        @scala.inline
-        def setCoerceTo(value: String): Self = StObject.set(x, "coerceTo", value.asInstanceOf[js.Any])
+        inline def setCoerceTo(value: String): Self = StObject.set(x, "coerceTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCoerceToUndefined: Self = StObject.set(x, "coerceTo", js.undefined)
+        inline def setCoerceToUndefined: Self = StObject.set(x, "coerceTo", js.undefined)
         
-        @scala.inline
-        def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+        inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
-        @scala.inline
-        def setEnumerated(value: js.Any): Self = StObject.set(x, "enumerated", value.asInstanceOf[js.Any])
+        inline def setEnumerated(value: js.Any): Self = StObject.set(x, "enumerated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnumeratedUndefined: Self = StObject.set(x, "enumerated", js.undefined)
+        inline def setEnumeratedUndefined: Self = StObject.set(x, "enumerated", js.undefined)
         
-        @scala.inline
-        def setFilterFrom(value: js.Array[String]): Self = StObject.set(x, "filterFrom", value.asInstanceOf[js.Any])
+        inline def setFilterFrom(value: js.Array[String]): Self = StObject.set(x, "filterFrom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterFromUndefined: Self = StObject.set(x, "filterFrom", js.undefined)
+        inline def setFilterFromUndefined: Self = StObject.set(x, "filterFrom", js.undefined)
         
-        @scala.inline
-        def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value :_*))
+        inline def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value :_*))
         
-        @scala.inline
-        def setIgnorePublic(value: Boolean): Self = StObject.set(x, "ignorePublic", value.asInstanceOf[js.Any])
+        inline def setIgnorePublic(value: Boolean): Self = StObject.set(x, "ignorePublic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnorePublicUndefined: Self = StObject.set(x, "ignorePublic", js.undefined)
+        inline def setIgnorePublicUndefined: Self = StObject.set(x, "ignorePublic", js.undefined)
         
-        @scala.inline
-        def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+        inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
+        inline def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
         
-        @scala.inline
-        def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+        inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
+        inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
         
-        @scala.inline
-        def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+        inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+        inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
         
-        @scala.inline
-        def setVal(value: IChain): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+        inline def setVal(value: IChain): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+        inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
       }
     }
     
@@ -366,32 +317,24 @@ object mod {
     }
     object IObj {
       
-      @scala.inline
-      def apply(fields: js.Array[IField], name: String, options: IObjOptions, plural: String, singular: String): IObj = {
+      inline def apply(fields: js.Array[IField], name: String, options: IObjOptions, plural: String, singular: String): IObj = {
         val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
         __obj.asInstanceOf[IObj]
       }
       
-      @scala.inline
-      implicit class IObjMutableBuilder[Self <: IObj] (val x: Self) extends AnyVal {
+      extension [Self <: IObj](x: Self) {
         
-        @scala.inline
-        def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: IObjOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: IObjOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+        inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+        inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       }
     }
     
@@ -405,35 +348,26 @@ object mod {
     }
     object IObjOptions {
       
-      @scala.inline
-      def apply(): IObjOptions = {
+      inline def apply(): IObjOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IObjOptions]
       }
       
-      @scala.inline
-      implicit class IObjOptionsMutableBuilder[Self <: IObjOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IObjOptions](x: Self) {
         
-        @scala.inline
-        def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+        inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
+        inline def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
         
-        @scala.inline
-        def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+        inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
+        inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
       }
     }
   }
@@ -585,20 +519,16 @@ object mod {
   }
   object ICheckOptions {
     
-    @scala.inline
-    def apply(): ICheckOptions = {
+    inline def apply(): ICheckOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICheckOptions]
     }
     
-    @scala.inline
-    implicit class ICheckOptionsMutableBuilder[Self <: ICheckOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICheckOptions](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -608,17 +538,14 @@ object mod {
   }
   object ISerializable {
     
-    @scala.inline
-    def apply(getSerializerType: () => String): ISerializable = {
+    inline def apply(getSerializerType: () => String): ISerializable = {
       val __obj = js.Dynamic.literal(getSerializerType = js.Any.fromFunction0(getSerializerType))
       __obj.asInstanceOf[ISerializable]
     }
     
-    @scala.inline
-    implicit class ISerializableMutableBuilder[Self <: ISerializable] (val x: Self) extends AnyVal {
+    extension [Self <: ISerializable](x: Self) {
       
-      @scala.inline
-      def setGetSerializerType(value: () => String): Self = StObject.set(x, "getSerializerType", js.Any.fromFunction0(value))
+      inline def setGetSerializerType(value: () => String): Self = StObject.set(x, "getSerializerType", js.Any.fromFunction0(value))
     }
   }
   
@@ -632,32 +559,24 @@ object mod {
   }
   object ISwizOptions {
     
-    @scala.inline
-    def apply(): ISwizOptions = {
+    inline def apply(): ISwizOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISwizOptions]
     }
     
-    @scala.inline
-    implicit class ISwizOptionsMutableBuilder[Self <: ISwizOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISwizOptions](x: Self) {
       
-      @scala.inline
-      def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+      inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForUndefined: Self = StObject.set(x, "for", js.undefined)
+      inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
       
-      @scala.inline
-      def setStripNulls(value: Boolean): Self = StObject.set(x, "stripNulls", value.asInstanceOf[js.Any])
+      inline def setStripNulls(value: Boolean): Self = StObject.set(x, "stripNulls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripNullsUndefined: Self = StObject.set(x, "stripNulls", js.undefined)
+      inline def setStripNullsUndefined: Self = StObject.set(x, "stripNulls", js.undefined)
       
-      @scala.inline
-      def setStripSerializerType(value: Boolean): Self = StObject.set(x, "stripSerializerType", value.asInstanceOf[js.Any])
+      inline def setStripSerializerType(value: Boolean): Self = StObject.set(x, "stripSerializerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripSerializerTypeUndefined: Self = StObject.set(x, "stripSerializerType", js.undefined)
+      inline def setStripSerializerTypeUndefined: Self = StObject.set(x, "stripSerializerType", js.undefined)
     }
   }
   
@@ -671,23 +590,18 @@ object mod {
   }
   object IValidator {
     
-    @scala.inline
-    def apply(func: (js.Any, js.Any, js.Function) => Unit, help: String, name: String): IValidator = {
+    inline def apply(func: (js.Any, js.Any, js.Function) => Unit, help: String, name: String): IValidator = {
       val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValidator]
     }
     
-    @scala.inline
-    implicit class IValidatorMutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
+    extension [Self <: IValidator](x: Self) {
       
-      @scala.inline
-      def setFunc(value: (js.Any, js.Any, js.Function) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
+      inline def setFunc(value: (js.Any, js.Any, js.Function) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -701,8 +615,7 @@ object mod {
        with /* index */ StringDictionary[IValveSchemaMember]
   object IValveSchemaMemberArray {
     
-    @scala.inline
-    def apply(): IValveSchemaMemberArray = {
+    inline def apply(): IValveSchemaMemberArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IValveSchemaMemberArray]
     }

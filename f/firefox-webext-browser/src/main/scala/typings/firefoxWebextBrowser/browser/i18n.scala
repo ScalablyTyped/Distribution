@@ -22,23 +22,18 @@ object i18n {
   }
   object DetectLanguageReturnResult {
     
-    @scala.inline
-    def apply(isReliable: Boolean, languages: js.Array[DetectLanguageReturnResultLanguages]): DetectLanguageReturnResult = {
+    inline def apply(isReliable: Boolean, languages: js.Array[DetectLanguageReturnResultLanguages]): DetectLanguageReturnResult = {
       val __obj = js.Dynamic.literal(isReliable = isReliable.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectLanguageReturnResult]
     }
     
-    @scala.inline
-    implicit class DetectLanguageReturnResultMutableBuilder[Self <: DetectLanguageReturnResult] (val x: Self) extends AnyVal {
+    extension [Self <: DetectLanguageReturnResult](x: Self) {
       
-      @scala.inline
-      def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
+      inline def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguages(value: js.Array[DetectLanguageReturnResultLanguages]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: js.Array[DetectLanguageReturnResultLanguages]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesVarargs(value: DetectLanguageReturnResultLanguages*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: DetectLanguageReturnResultLanguages*): Self = StObject.set(x, "languages", js.Array(value :_*))
     }
   }
   
@@ -52,20 +47,16 @@ object i18n {
   }
   object DetectLanguageReturnResultLanguages {
     
-    @scala.inline
-    def apply(language: LanguageCode, percentage: Double): DetectLanguageReturnResultLanguages = {
+    inline def apply(language: LanguageCode, percentage: Double): DetectLanguageReturnResultLanguages = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectLanguageReturnResultLanguages]
     }
     
-    @scala.inline
-    implicit class DetectLanguageReturnResultLanguagesMutableBuilder[Self <: DetectLanguageReturnResultLanguages] (val x: Self) extends AnyVal {
+    extension [Self <: DetectLanguageReturnResultLanguages](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: LanguageCode): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: LanguageCode): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     }
   }
   

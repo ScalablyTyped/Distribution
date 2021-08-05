@@ -11,19 +11,15 @@ trait DiagnoseClusterResults extends StObject {
 }
 object DiagnoseClusterResults {
   
-  @scala.inline
-  def apply(): DiagnoseClusterResults = {
+  inline def apply(): DiagnoseClusterResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagnoseClusterResults]
   }
   
-  @scala.inline
-  implicit class DiagnoseClusterResultsMutableBuilder[Self <: DiagnoseClusterResults] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnoseClusterResults](x: Self) {
     
-    @scala.inline
-    def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
+    inline def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
+    inline def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait LoadBalancerState extends StObject {
 }
 object LoadBalancerState {
   
-  @scala.inline
-  def apply(): LoadBalancerState = {
+  inline def apply(): LoadBalancerState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerState]
   }
   
-  @scala.inline
-  implicit class LoadBalancerStateMutableBuilder[Self <: LoadBalancerState] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerState](x: Self) {
     
-    @scala.inline
-    def setCode(value: NonEmptyString): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: NonEmptyString): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setReason(value: NonEmptyString): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: NonEmptyString): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

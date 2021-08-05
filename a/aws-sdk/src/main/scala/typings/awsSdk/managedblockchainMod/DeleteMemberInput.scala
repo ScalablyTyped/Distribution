@@ -18,19 +18,15 @@ trait DeleteMemberInput extends StObject {
 }
 object DeleteMemberInput {
   
-  @scala.inline
-  def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): DeleteMemberInput = {
+  inline def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): DeleteMemberInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMemberInput]
   }
   
-  @scala.inline
-  implicit class DeleteMemberInputMutableBuilder[Self <: DeleteMemberInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMemberInput](x: Self) {
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
   }
 }

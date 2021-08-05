@@ -22,11 +22,9 @@ object mod {
     def this(error: Error) = this()
   }
   
-  @scala.inline
-  def start(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Any]
+  inline def start(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def stop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[js.Any]
+  inline def stop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[js.Any]
   
   trait Callback extends StObject {
     
@@ -36,20 +34,16 @@ object mod {
   }
   object Callback {
     
-    @scala.inline
-    def apply(lineNumber: Double, traceLine: js.Object | js.Any): Callback = {
+    inline def apply(lineNumber: Double, traceLine: js.Object | js.Any): Callback = {
       val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], traceLine = traceLine.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+    extension [Self <: Callback](x: Self) {
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceLine(value: js.Object | js.Any): Self = StObject.set(x, "traceLine", value.asInstanceOf[js.Any])
+      inline def setTraceLine(value: js.Object | js.Any): Self = StObject.set(x, "traceLine", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,77 +68,54 @@ object mod {
   }
   object ConfigObject {
     
-    @scala.inline
-    def apply(): ConfigObject = {
+    inline def apply(): ConfigObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigObject]
     }
     
-    @scala.inline
-    implicit class ConfigObjectMutableBuilder[Self <: ConfigObject] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigObject](x: Self) {
       
-      @scala.inline
-      def setAliases(value: Boolean | js.Object): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: Boolean | js.Object): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: Callback*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Callback*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+      inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
+      inline def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
       
-      @scala.inline
-      def setParsedErrorFilters(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "parsedErrorFilters", value.asInstanceOf[js.Any])
+      inline def setParsedErrorFilters(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "parsedErrorFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedErrorFiltersUndefined: Self = StObject.set(x, "parsedErrorFilters", js.undefined)
+      inline def setParsedErrorFiltersUndefined: Self = StObject.set(x, "parsedErrorFilters", js.undefined)
       
-      @scala.inline
-      def setParsedErrorFiltersVarargs(value: Callback*): Self = StObject.set(x, "parsedErrorFilters", js.Array(value :_*))
+      inline def setParsedErrorFiltersVarargs(value: Callback*): Self = StObject.set(x, "parsedErrorFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setSkip(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipNodeFiles(value: Boolean | js.Any): Self = StObject.set(x, "skipNodeFiles", value.asInstanceOf[js.Any])
+      inline def setSkipNodeFiles(value: Boolean | js.Any): Self = StObject.set(x, "skipNodeFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipNodeFilesUndefined: Self = StObject.set(x, "skipNodeFiles", js.undefined)
+      inline def setSkipNodeFilesUndefined: Self = StObject.set(x, "skipNodeFiles", js.undefined)
       
-      @scala.inline
-      def setSkipPackages(value: Boolean | js.Array[String]): Self = StObject.set(x, "skipPackages", value.asInstanceOf[js.Any])
+      inline def setSkipPackages(value: Boolean | js.Array[String]): Self = StObject.set(x, "skipPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPackagesUndefined: Self = StObject.set(x, "skipPackages", js.undefined)
+      inline def setSkipPackagesUndefined: Self = StObject.set(x, "skipPackages", js.undefined)
       
-      @scala.inline
-      def setSkipPackagesVarargs(value: String*): Self = StObject.set(x, "skipPackages", js.Array(value :_*))
+      inline def setSkipPackagesVarargs(value: String*): Self = StObject.set(x, "skipPackages", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipPaths(value: Boolean | js.Array[String]): Self = StObject.set(x, "skipPaths", value.asInstanceOf[js.Any])
+      inline def setSkipPaths(value: Boolean | js.Array[String]): Self = StObject.set(x, "skipPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPathsUndefined: Self = StObject.set(x, "skipPaths", js.undefined)
+      inline def setSkipPathsUndefined: Self = StObject.set(x, "skipPaths", js.undefined)
       
-      @scala.inline
-      def setSkipPathsVarargs(value: String*): Self = StObject.set(x, "skipPaths", js.Array(value :_*))
+      inline def setSkipPathsVarargs(value: String*): Self = StObject.set(x, "skipPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSkipVarargs(value: Callback*): Self = StObject.set(x, "skip", js.Array(value :_*))
+      inline def setSkipVarargs(value: Callback*): Self = StObject.set(x, "skip", js.Array(value :_*))
     }
   }
   

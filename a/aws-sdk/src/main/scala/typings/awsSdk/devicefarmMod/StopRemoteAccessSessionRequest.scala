@@ -13,16 +13,13 @@ trait StopRemoteAccessSessionRequest extends StObject {
 }
 object StopRemoteAccessSessionRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): StopRemoteAccessSessionRequest = {
+  inline def apply(arn: AmazonResourceName): StopRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRemoteAccessSessionRequest]
   }
   
-  @scala.inline
-  implicit class StopRemoteAccessSessionRequestMutableBuilder[Self <: StopRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopRemoteAccessSessionRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

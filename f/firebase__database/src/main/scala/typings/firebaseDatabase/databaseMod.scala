@@ -34,14 +34,14 @@ object databaseMod {
     /**
       * @param {string} apiName
       */
-    var checkDeleted_ : js.Any = js.native
+    /* private */ var checkDeleted_ : js.Any = js.native
     
     def goOffline(): Unit = js.native
     
     def goOnline(): Unit = js.native
     
     /** Track if the instance has been used (root or repo accessed) */
-    var instanceStarted_ : js.Any = js.native
+    /* private */ var instanceStarted_ : js.Any = js.native
     
     /**
       * Returns a reference to the root or to the path specified in the provided
@@ -66,12 +66,12 @@ object databaseMod {
       */
     def refFromURL(url: String): Reference = js.native
     
-    var repoInternal_ : js.Any = js.native
+    /* private */ var repoInternal_ : js.Any = js.native
     
     /* private */ def repo_ : js.Any = js.native
     
     /** Backing state for root_ */
-    var rootInternal_ : js.Any = js.native
+    /* private */ var rootInternal_ : js.Any = js.native
     
     def root_ : Reference = js.native
     

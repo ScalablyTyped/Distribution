@@ -33,43 +33,31 @@ trait ListWorkforcesRequest extends StObject {
 }
 object ListWorkforcesRequest {
   
-  @scala.inline
-  def apply(): ListWorkforcesRequest = {
+  inline def apply(): ListWorkforcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorkforcesRequest]
   }
   
-  @scala.inline
-  implicit class ListWorkforcesRequestMutableBuilder[Self <: ListWorkforcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkforcesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNameContains(value: WorkforceName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
+    inline def setNameContains(value: WorkforceName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
+    inline def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: ListWorkforcesSortByOptions): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: ListWorkforcesSortByOptions): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StrategyType extends StObject
 object StrategyType {
   
-  @scala.inline
-  def none: typings.algoliaClientSearch.algoliaClientSearchStrings.none = "none".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.none]
+  inline def none: typings.algoliaClientSearch.algoliaClientSearchStrings.none = "none".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.none]
   
-  @scala.inline
-  def stopIfEnoughMatches: typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches = "stopIfEnoughMatches".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches]
+  inline def stopIfEnoughMatches: typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches = "stopIfEnoughMatches".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches]
 }

@@ -33,37 +33,27 @@ trait ParamsResourceDisksGet
 }
 object ParamsResourceDisksGet {
   
-  @scala.inline
-  def apply(): ParamsResourceDisksGet = {
+  inline def apply(): ParamsResourceDisksGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDisksGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDisksGetMutableBuilder[Self <: ParamsResourceDisksGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDisksGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+    inline def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
+    inline def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

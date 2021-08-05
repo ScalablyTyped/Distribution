@@ -30,8 +30,7 @@ trait XSearchableDictionaryList
 }
 object XSearchableDictionaryList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     Dictionaries: SafeArray[XDictionary],
     acquire: () => Unit,
@@ -54,10 +53,8 @@ object XSearchableDictionaryList {
     __obj.asInstanceOf[XSearchableDictionaryList]
   }
   
-  @scala.inline
-  implicit class XSearchableDictionaryListMutableBuilder[Self <: XSearchableDictionaryList] (val x: Self) extends AnyVal {
+  extension [Self <: XSearchableDictionaryList](x: Self) {
     
-    @scala.inline
-    def setQueryDictionaryEntry(value: (String, Locale, Boolean, Boolean) => XDictionaryEntry): Self = StObject.set(x, "queryDictionaryEntry", js.Any.fromFunction4(value))
+    inline def setQueryDictionaryEntry(value: (String, Locale, Boolean, Boolean) => XDictionaryEntry): Self = StObject.set(x, "queryDictionaryEntry", js.Any.fromFunction4(value))
   }
 }

@@ -20,49 +20,35 @@ trait IConfig extends StObject {
 }
 object IConfig {
   
-  @scala.inline
-  def apply(): IConfig = {
+  inline def apply(): IConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConfig]
   }
   
-  @scala.inline
-  implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IConfig](x: Self) {
     
-    @scala.inline
-    def setDailymotion(value: IDailyMotionConfig): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
+    inline def setDailymotion(value: IDailyMotionConfig): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailymotionUndefined: Self = StObject.set(x, "dailymotion", js.undefined)
+    inline def setDailymotionUndefined: Self = StObject.set(x, "dailymotion", js.undefined)
     
-    @scala.inline
-    def setFacebook(value: IFacebookConfig): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+    inline def setFacebook(value: IFacebookConfig): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
+    inline def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
     
-    @scala.inline
-    def setPlayable(value: IPlayableConfig): Self = StObject.set(x, "playable", value.asInstanceOf[js.Any])
+    inline def setPlayable(value: IPlayableConfig): Self = StObject.set(x, "playable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayableUndefined: Self = StObject.set(x, "playable", js.undefined)
+    inline def setPlayableUndefined: Self = StObject.set(x, "playable", js.undefined)
     
-    @scala.inline
-    def setTwitch(value: ITwitchConfig): Self = StObject.set(x, "twitch", value.asInstanceOf[js.Any])
+    inline def setTwitch(value: ITwitchConfig): Self = StObject.set(x, "twitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitchUndefined: Self = StObject.set(x, "twitch", js.undefined)
+    inline def setTwitchUndefined: Self = StObject.set(x, "twitch", js.undefined)
     
-    @scala.inline
-    def setVimeo(value: IVimeoConfig): Self = StObject.set(x, "vimeo", value.asInstanceOf[js.Any])
+    inline def setVimeo(value: IVimeoConfig): Self = StObject.set(x, "vimeo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVimeoUndefined: Self = StObject.set(x, "vimeo", js.undefined)
+    inline def setVimeoUndefined: Self = StObject.set(x, "vimeo", js.undefined)
     
-    @scala.inline
-    def setYoutube(value: IYouTubeMotionConfig): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
+    inline def setYoutube(value: IYouTubeMotionConfig): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutubeUndefined: Self = StObject.set(x, "youtube", js.undefined)
+    inline def setYoutubeUndefined: Self = StObject.set(x, "youtube", js.undefined)
   }
 }

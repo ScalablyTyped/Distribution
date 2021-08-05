@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def path(): Path_ = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[Path_]
+  inline def path(): Path_ = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[Path_]
   
   @js.native
   trait Path_ extends StObject {

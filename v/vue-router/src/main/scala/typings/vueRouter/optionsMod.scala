@@ -23,38 +23,28 @@ object optionsMod {
   }
   object ComponentOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
       
-      @scala.inline
-      def setBeforeRouteEnter(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteEnter", js.Any.fromFunction3(value))
+      inline def setBeforeRouteEnter(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteEnter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBeforeRouteEnterUndefined: Self = StObject.set(x, "beforeRouteEnter", js.undefined)
+      inline def setBeforeRouteEnterUndefined: Self = StObject.set(x, "beforeRouteEnter", js.undefined)
       
-      @scala.inline
-      def setBeforeRouteLeave(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteLeave", js.Any.fromFunction3(value))
+      inline def setBeforeRouteLeave(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteLeave", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBeforeRouteLeaveUndefined: Self = StObject.set(x, "beforeRouteLeave", js.undefined)
+      inline def setBeforeRouteLeaveUndefined: Self = StObject.set(x, "beforeRouteLeave", js.undefined)
       
-      @scala.inline
-      def setBeforeRouteUpdate(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteUpdate", js.Any.fromFunction3(value))
+      inline def setBeforeRouteUpdate(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any): Self = StObject.set(x, "beforeRouteUpdate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBeforeRouteUpdateUndefined: Self = StObject.set(x, "beforeRouteUpdate", js.undefined)
+      inline def setBeforeRouteUpdateUndefined: Self = StObject.set(x, "beforeRouteUpdate", js.undefined)
       
-      @scala.inline
-      def setRouter(value: default): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: default): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
+      inline def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     }
   }
 }

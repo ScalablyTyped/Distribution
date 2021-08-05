@@ -22,8 +22,7 @@ trait KnockoutSubscribableFunctions[T] extends StObject {
 }
 object KnockoutSubscribableFunctions {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     clearError: () => Unit,
     error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any,
     isModified: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
@@ -36,38 +35,30 @@ object KnockoutSubscribableFunctions {
     __obj.asInstanceOf[KnockoutSubscribableFunctions[T]]
   }
   
-  @scala.inline
-  implicit class KnockoutSubscribableFunctionsMutableBuilder[Self <: KnockoutSubscribableFunctions[?], T] (val x: Self & KnockoutSubscribableFunctions[T]) extends AnyVal {
+  extension [Self <: KnockoutSubscribableFunctions[?], T](x: Self & KnockoutSubscribableFunctions[T]) {
     
-    @scala.inline
-    def setClearError(value: () => Unit): Self = StObject.set(x, "clearError", js.Any.fromFunction0(value))
+    inline def setClearError(value: () => Unit): Self = StObject.set(x, "clearError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(
+    inline def setError(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any
     ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsModified(
+    inline def setIsModified(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValid(
+    inline def setIsValid(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
     ): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidating(
+    inline def setIsValidating(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "isValidating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(
+    inline def setRules(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<KnockoutValidationRule> */ js.Any
     ): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetError(value: String => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+    inline def setSetError(value: String => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
   }
 }

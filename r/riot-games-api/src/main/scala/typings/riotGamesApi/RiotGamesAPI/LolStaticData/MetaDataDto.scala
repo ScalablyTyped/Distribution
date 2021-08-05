@@ -14,23 +14,18 @@ trait MetaDataDto extends StObject {
 }
 object MetaDataDto {
   
-  @scala.inline
-  def apply(isRune: Boolean, tier: String, `type`: String): MetaDataDto = {
+  inline def apply(isRune: Boolean, tier: String, `type`: String): MetaDataDto = {
     val __obj = js.Dynamic.literal(isRune = isRune.asInstanceOf[js.Any], tier = tier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaDataDto]
   }
   
-  @scala.inline
-  implicit class MetaDataDtoMutableBuilder[Self <: MetaDataDto] (val x: Self) extends AnyVal {
+  extension [Self <: MetaDataDto](x: Self) {
     
-    @scala.inline
-    def setIsRune(value: Boolean): Self = StObject.set(x, "isRune", value.asInstanceOf[js.Any])
+    inline def setIsRune(value: Boolean): Self = StObject.set(x, "isRune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

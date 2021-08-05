@@ -25,47 +25,34 @@ object anon {
   }
   object DownscaleOptionsreturnBlo {
     
-    @scala.inline
-    def apply(returnBlob: js.UndefOr[Boolean] & `true`): DownscaleOptionsreturnBlo = {
+    inline def apply(returnBlob: js.UndefOr[Boolean] & `true`): DownscaleOptionsreturnBlo = {
       val __obj = js.Dynamic.literal(returnBlob = returnBlob.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownscaleOptionsreturnBlo]
     }
     
-    @scala.inline
-    implicit class DownscaleOptionsreturnBloMutableBuilder[Self <: DownscaleOptionsreturnBlo] (val x: Self) extends AnyVal {
+    extension [Self <: DownscaleOptionsreturnBlo](x: Self) {
       
-      @scala.inline
-      def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+      inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setReturnBlob(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
+      inline def setReturnBlob(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnCanvas(value: Boolean): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      inline def setReturnCanvas(value: Boolean): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnCanvasUndefined: Self = StObject.set(x, "returnCanvas", js.undefined)
+      inline def setReturnCanvasUndefined: Self = StObject.set(x, "returnCanvas", js.undefined)
       
-      @scala.inline
-      def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
+      inline def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceXUndefined: Self = StObject.set(x, "sourceX", js.undefined)
+      inline def setSourceXUndefined: Self = StObject.set(x, "sourceX", js.undefined)
       
-      @scala.inline
-      def setSourceY(value: Double): Self = StObject.set(x, "sourceY", value.asInstanceOf[js.Any])
+      inline def setSourceY(value: Double): Self = StObject.set(x, "sourceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceYUndefined: Self = StObject.set(x, "sourceY", js.undefined)
+      inline def setSourceYUndefined: Self = StObject.set(x, "sourceY", js.undefined)
     }
   }
   
@@ -86,8 +73,7 @@ object anon {
   }
   object DownscaleOptionsreturnBloImageType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       returnBlob: js.UndefOr[Boolean] & js.UndefOr[`false`],
       returnCanvas: js.UndefOr[Boolean] & js.UndefOr[`false`]
     ): DownscaleOptionsreturnBloImageType = {
@@ -95,38 +81,27 @@ object anon {
       __obj.asInstanceOf[DownscaleOptionsreturnBloImageType]
     }
     
-    @scala.inline
-    implicit class DownscaleOptionsreturnBloImageTypeMutableBuilder[Self <: DownscaleOptionsreturnBloImageType] (val x: Self) extends AnyVal {
+    extension [Self <: DownscaleOptionsreturnBloImageType](x: Self) {
       
-      @scala.inline
-      def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+      inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setReturnBlob(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
+      inline def setReturnBlob(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnCanvas(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      inline def setReturnCanvas(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
+      inline def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceXUndefined: Self = StObject.set(x, "sourceX", js.undefined)
+      inline def setSourceXUndefined: Self = StObject.set(x, "sourceX", js.undefined)
       
-      @scala.inline
-      def setSourceY(value: Double): Self = StObject.set(x, "sourceY", value.asInstanceOf[js.Any])
+      inline def setSourceY(value: Double): Self = StObject.set(x, "sourceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceYUndefined: Self = StObject.set(x, "sourceY", js.undefined)
+      inline def setSourceYUndefined: Self = StObject.set(x, "sourceY", js.undefined)
     }
   }
   
@@ -147,47 +122,34 @@ object anon {
   }
   object DownscaleOptionsreturnCan {
     
-    @scala.inline
-    def apply(returnCanvas: js.UndefOr[Boolean] & `true`): DownscaleOptionsreturnCan = {
+    inline def apply(returnCanvas: js.UndefOr[Boolean] & `true`): DownscaleOptionsreturnCan = {
       val __obj = js.Dynamic.literal(returnCanvas = returnCanvas.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownscaleOptionsreturnCan]
     }
     
-    @scala.inline
-    implicit class DownscaleOptionsreturnCanMutableBuilder[Self <: DownscaleOptionsreturnCan] (val x: Self) extends AnyVal {
+    extension [Self <: DownscaleOptionsreturnCan](x: Self) {
       
-      @scala.inline
-      def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+      inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setReturnBlob(value: Boolean): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
+      inline def setReturnBlob(value: Boolean): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnBlobUndefined: Self = StObject.set(x, "returnBlob", js.undefined)
+      inline def setReturnBlobUndefined: Self = StObject.set(x, "returnBlob", js.undefined)
       
-      @scala.inline
-      def setReturnCanvas(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      inline def setReturnCanvas(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
+      inline def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceXUndefined: Self = StObject.set(x, "sourceX", js.undefined)
+      inline def setSourceXUndefined: Self = StObject.set(x, "sourceX", js.undefined)
       
-      @scala.inline
-      def setSourceY(value: Double): Self = StObject.set(x, "sourceY", value.asInstanceOf[js.Any])
+      inline def setSourceY(value: Double): Self = StObject.set(x, "sourceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceYUndefined: Self = StObject.set(x, "sourceY", js.undefined)
+      inline def setSourceYUndefined: Self = StObject.set(x, "sourceY", js.undefined)
     }
   }
 }

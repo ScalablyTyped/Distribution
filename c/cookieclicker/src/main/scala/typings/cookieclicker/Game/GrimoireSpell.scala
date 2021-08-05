@@ -48,49 +48,35 @@ trait GrimoireSpell extends StObject {
 }
 object GrimoireSpell {
   
-  @scala.inline
-  def apply(costMin: Double, desc: String, icon: Icon, id: Double, name: String, win: () => `-1` | Unit): GrimoireSpell = {
+  inline def apply(costMin: Double, desc: String, icon: Icon, id: Double, name: String, win: () => `-1` | Unit): GrimoireSpell = {
     val __obj = js.Dynamic.literal(costMin = costMin.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], win = js.Any.fromFunction0(win))
     __obj.asInstanceOf[GrimoireSpell]
   }
   
-  @scala.inline
-  implicit class GrimoireSpellMutableBuilder[Self <: GrimoireSpell] (val x: Self) extends AnyVal {
+  extension [Self <: GrimoireSpell](x: Self) {
     
-    @scala.inline
-    def setCostMin(value: Double): Self = StObject.set(x, "costMin", value.asInstanceOf[js.Any])
+    inline def setCostMin(value: Double): Self = StObject.set(x, "costMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostPercent(value: Double): Self = StObject.set(x, "costPercent", value.asInstanceOf[js.Any])
+    inline def setCostPercent(value: Double): Self = StObject.set(x, "costPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostPercentUndefined: Self = StObject.set(x, "costPercent", js.undefined)
+    inline def setCostPercentUndefined: Self = StObject.set(x, "costPercent", js.undefined)
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFail(value: () => `-1` | Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => `-1` | Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailDesc(value: String): Self = StObject.set(x, "failDesc", value.asInstanceOf[js.Any])
+    inline def setFailDesc(value: String): Self = StObject.set(x, "failDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailDescUndefined: Self = StObject.set(x, "failDesc", js.undefined)
+    inline def setFailDescUndefined: Self = StObject.set(x, "failDesc", js.undefined)
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWin(value: () => `-1` | Unit): Self = StObject.set(x, "win", js.Any.fromFunction0(value))
+    inline def setWin(value: () => `-1` | Unit): Self = StObject.set(x, "win", js.Any.fromFunction0(value))
   }
 }

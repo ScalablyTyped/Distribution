@@ -122,8 +122,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def userHash(opts: IdentityVerificationOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("userHash")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def userHash(opts: IdentityVerificationOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("userHash")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("intercom-client", "Leads")
@@ -242,20 +241,16 @@ object mod {
   }
   object IdentityVerificationOptions {
     
-    @scala.inline
-    def apply(identifier: String, secretKey: String): IdentityVerificationOptions = {
+    inline def apply(identifier: String, secretKey: String): IdentityVerificationOptions = {
       val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentityVerificationOptions]
     }
     
-    @scala.inline
-    implicit class IdentityVerificationOptionsMutableBuilder[Self <: IdentityVerificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityVerificationOptions](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
   

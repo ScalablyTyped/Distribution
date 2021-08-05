@@ -21,25 +21,19 @@ trait SchemaEncryptResponse extends StObject {
 }
 object SchemaEncryptResponse {
   
-  @scala.inline
-  def apply(): SchemaEncryptResponse = {
+  inline def apply(): SchemaEncryptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEncryptResponse]
   }
   
-  @scala.inline
-  implicit class SchemaEncryptResponseMutableBuilder[Self <: SchemaEncryptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEncryptResponse](x: Self) {
     
-    @scala.inline
-    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+    inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
+    inline def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnchorDirectionShape extends StObject
 object AnchorDirectionShape {
   
-  @scala.inline
-  def left: typings.reactDates.reactDatesStrings.left = "left".asInstanceOf[typings.reactDates.reactDatesStrings.left]
+  inline def left: typings.reactDates.reactDatesStrings.left = "left".asInstanceOf[typings.reactDates.reactDatesStrings.left]
   
-  @scala.inline
-  def right: typings.reactDates.reactDatesStrings.right = "right".asInstanceOf[typings.reactDates.reactDatesStrings.right]
+  inline def right: typings.reactDates.reactDatesStrings.right = "right".asInstanceOf[typings.reactDates.reactDatesStrings.right]
 }

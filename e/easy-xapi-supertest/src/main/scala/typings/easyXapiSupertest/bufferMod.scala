@@ -18,6 +18,5 @@ object bufferMod {
   @JSImport("buffer", "INSPECT_MAX_BYTES")
   @js.native
   def INSPECT_MAX_BYTES: Double = js.native
-  @scala.inline
-  def INSPECT_MAX_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSPECT_MAX_BYTES")(x.asInstanceOf[js.Any])
+  inline def INSPECT_MAX_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSPECT_MAX_BYTES")(x.asInstanceOf[js.Any])
 }

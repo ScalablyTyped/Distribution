@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rx-core-binding"
-version := "4.0-dt-20200515Z-50c235"
+version := "4.0-dt-20200515Z-330f01"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20200515Z-958742",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20200515Z-352dc4",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

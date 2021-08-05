@@ -28,21 +28,17 @@ object mod {
   @js.native
   def impl: MobileDetectImpl = js.native
   
-  @scala.inline
-  def impl_=(x: MobileDetectImpl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_impl")(x.asInstanceOf[js.Any])
+  inline def impl_=(x: MobileDetectImpl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_impl")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def isPhoneSized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneSized")().asInstanceOf[Boolean]
-  @scala.inline
-  def isPhoneSized(maxPhoneWidth: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneSized")(maxPhoneWidth.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPhoneSized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneSized")().asInstanceOf[Boolean]
+  inline def isPhoneSized(maxPhoneWidth: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneSized")(maxPhoneWidth.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   @JSImport("mobile-detect", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @js.native
   trait MobileDetect extends StObject {

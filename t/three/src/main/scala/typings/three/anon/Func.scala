@@ -15,22 +15,17 @@ trait Func extends StObject {
 }
 object Func {
   
-  @scala.inline
-  def apply(func: (Double, Double, Vector3) => Unit, slices: Double, stacks: Double): Func = {
+  inline def apply(func: (Double, Double, Vector3) => Unit, slices: Double, stacks: Double): Func = {
     val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), slices = slices.asInstanceOf[js.Any], stacks = stacks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Func]
   }
   
-  @scala.inline
-  implicit class FuncMutableBuilder[Self <: Func] (val x: Self) extends AnyVal {
+  extension [Self <: Func](x: Self) {
     
-    @scala.inline
-    def setFunc(value: (Double, Double, Vector3) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
+    inline def setFunc(value: (Double, Double, Vector3) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStacks(value: Double): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
+    inline def setStacks(value: Double): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
   }
 }

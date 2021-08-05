@@ -11,19 +11,15 @@ trait Entrypoint extends StObject {
 }
 object Entrypoint {
   
-  @scala.inline
-  def apply(): Entrypoint = {
+  inline def apply(): Entrypoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Entrypoint]
   }
   
-  @scala.inline
-  implicit class EntrypointMutableBuilder[Self <: Entrypoint] (val x: Self) extends AnyVal {
+  extension [Self <: Entrypoint](x: Self) {
     
-    @scala.inline
-    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+    inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
   }
 }

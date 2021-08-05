@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExceptionsBehavior extends StObject
 object ExceptionsBehavior {
   
-  @scala.inline
-  def propagate: typings.fridaGum.fridaGumStrings.propagate = "propagate".asInstanceOf[typings.fridaGum.fridaGumStrings.propagate]
+  inline def propagate: typings.fridaGum.fridaGumStrings.propagate = "propagate".asInstanceOf[typings.fridaGum.fridaGumStrings.propagate]
   
-  @scala.inline
-  def steal: typings.fridaGum.fridaGumStrings.steal = "steal".asInstanceOf[typings.fridaGum.fridaGumStrings.steal]
+  inline def steal: typings.fridaGum.fridaGumStrings.steal = "steal".asInstanceOf[typings.fridaGum.fridaGumStrings.steal]
 }

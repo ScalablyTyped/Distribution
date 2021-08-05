@@ -10,19 +10,15 @@ trait VisSelectProperties extends StObject {
 }
 object VisSelectProperties {
   
-  @scala.inline
-  def apply(items: js.Array[Double]): VisSelectProperties = {
+  inline def apply(items: js.Array[Double]): VisSelectProperties = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisSelectProperties]
   }
   
-  @scala.inline
-  implicit class VisSelectPropertiesMutableBuilder[Self <: VisSelectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VisSelectProperties](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[Double]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Double]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

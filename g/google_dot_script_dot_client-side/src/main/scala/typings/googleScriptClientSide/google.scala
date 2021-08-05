@@ -55,8 +55,7 @@ object google {
     }
     object Runner {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         withFailureHandler: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit] => Runner,
         withSuccessHandler: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit] => Runner,
         withUserObject: js.Any => Runner
@@ -65,19 +64,15 @@ object google {
         __obj.asInstanceOf[Runner]
       }
       
-      @scala.inline
-      implicit class RunnerMutableBuilder[Self <: Runner] (val x: Self) extends AnyVal {
+      extension [Self <: Runner](x: Self) {
         
-        @scala.inline
-        def setWithFailureHandler(value: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit] => Runner): Self = StObject.set(x, "withFailureHandler", js.Any.fromFunction1(value))
+        inline def setWithFailureHandler(value: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit] => Runner): Self = StObject.set(x, "withFailureHandler", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWithSuccessHandler(
+        inline def setWithSuccessHandler(
           value: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit] => Runner
         ): Self = StObject.set(x, "withSuccessHandler", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWithUserObject(value: js.Any => Runner): Self = StObject.set(x, "withUserObject", js.Any.fromFunction1(value))
+        inline def setWithUserObject(value: js.Any => Runner): Self = StObject.set(x, "withUserObject", js.Any.fromFunction1(value))
       }
     }
     
@@ -103,23 +98,18 @@ object google {
     }
     object UrlLocation {
       
-      @scala.inline
-      def apply(hash: String, parameter: StringDictionary[String], parameters: StringDictionary[js.Array[String]]): UrlLocation = {
+      inline def apply(hash: String, parameter: StringDictionary[String], parameters: StringDictionary[js.Array[String]]): UrlLocation = {
         val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
         __obj.asInstanceOf[UrlLocation]
       }
       
-      @scala.inline
-      implicit class UrlLocationMutableBuilder[Self <: UrlLocation] (val x: Self) extends AnyVal {
+      extension [Self <: UrlLocation](x: Self) {
         
-        @scala.inline
-        def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+        inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameter(value: StringDictionary[String]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+        inline def setParameter(value: StringDictionary[String]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        inline def setParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       }
     }
     
@@ -140,23 +130,18 @@ object google {
       }
       object HistoryChangeEvent {
         
-        @scala.inline
-        def apply(location: UrlLocation): HistoryChangeEvent = {
+        inline def apply(location: UrlLocation): HistoryChangeEvent = {
           val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], state = null)
           __obj.asInstanceOf[HistoryChangeEvent]
         }
         
-        @scala.inline
-        implicit class HistoryChangeEventMutableBuilder[Self <: HistoryChangeEvent] (val x: Self) extends AnyVal {
+        extension [Self <: HistoryChangeEvent](x: Self) {
           
-          @scala.inline
-          def setLocation(value: UrlLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+          inline def setLocation(value: UrlLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+          inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStateNull: Self = StObject.set(x, "state", null)
+          inline def setStateNull: Self = StObject.set(x, "state", null)
         }
       }
       

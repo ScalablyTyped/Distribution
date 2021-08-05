@@ -18,25 +18,19 @@ trait PageRequest extends StObject {
 }
 object PageRequest {
   
-  @scala.inline
-  def apply(): PageRequest = {
+  inline def apply(): PageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageRequest]
   }
   
-  @scala.inline
-  implicit class PageRequestMutableBuilder[Self <: PageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PageRequest](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
   }
 }

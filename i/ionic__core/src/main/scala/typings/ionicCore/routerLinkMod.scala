@@ -29,7 +29,7 @@ object routerLinkMod {
       */
     var href: js.UndefOr[String] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     /**
       * Specifies the relationship of the target object to the link object.

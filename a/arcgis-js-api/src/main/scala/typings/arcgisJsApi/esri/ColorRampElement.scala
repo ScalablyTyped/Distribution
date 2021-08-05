@@ -34,8 +34,7 @@ trait ColorRampElement
 }
 object ColorRampElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[ColorRampStop],
@@ -48,19 +47,14 @@ object ColorRampElement {
     __obj.asInstanceOf[ColorRampElement]
   }
   
-  @scala.inline
-  implicit class ColorRampElementMutableBuilder[Self <: ColorRampElement] (val x: Self) extends AnyVal {
+  extension [Self <: ColorRampElement](x: Self) {
     
-    @scala.inline
-    def setInfos(value: js.Array[ColorRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[ColorRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfosVarargs(value: ColorRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: ColorRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

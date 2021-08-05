@@ -17,14 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(number: String): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(number: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(number: Double): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(number: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(number: String): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(number: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(number: Double): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(number: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("extenso", JSImport.Namespace)
   @js.native
@@ -42,32 +38,24 @@ object mod {
     }
     object BaseOptions {
       
-      @scala.inline
-      def apply(): BaseOptions = {
+      inline def apply(): BaseOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BaseOptions]
       }
       
-      @scala.inline
-      implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+      extension [Self <: BaseOptions](x: Self) {
         
-        @scala.inline
-        def setLocale(value: br | pt): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: br | pt): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+        inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
         
-        @scala.inline
-        def setNegative(value: formal | informal): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+        inline def setNegative(value: formal | informal): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+        inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
         
-        @scala.inline
-        def setScale(value: short | long): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: short | long): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+        inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       }
     }
     
@@ -82,23 +70,18 @@ object mod {
     }
     object CurrencyModeOptions {
       
-      @scala.inline
-      def apply(): CurrencyModeOptions = {
+      inline def apply(): CurrencyModeOptions = {
         val __obj = js.Dynamic.literal(mode = "currency")
         __obj.asInstanceOf[CurrencyModeOptions]
       }
       
-      @scala.inline
-      implicit class CurrencyModeOptionsMutableBuilder[Self <: CurrencyModeOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CurrencyModeOptions](x: Self) {
         
-        @scala.inline
-        def setCurrency(value: Type): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: Type): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setMode(value: currency): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: currency): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       }
     }
     
@@ -113,26 +96,20 @@ object mod {
     }
     object NumberModeOptions {
       
-      @scala.inline
-      def apply(): NumberModeOptions = {
+      inline def apply(): NumberModeOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NumberModeOptions]
       }
       
-      @scala.inline
-      implicit class NumberModeOptionsMutableBuilder[Self <: NumberModeOptions] (val x: Self) extends AnyVal {
+      extension [Self <: NumberModeOptions](x: Self) {
         
-        @scala.inline
-        def setMode(value: number): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: number): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setNumber(value: Decimal): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+        inline def setNumber(value: Decimal): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+        inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       }
     }
     
@@ -143,14 +120,12 @@ object mod {
     trait Options extends StObject
     object Options {
       
-      @scala.inline
-      def CurrencyModeOptions(): typings.extenso.mod.Extenso.CurrencyModeOptions = {
+      inline def CurrencyModeOptions(): typings.extenso.mod.Extenso.CurrencyModeOptions = {
         val __obj = js.Dynamic.literal(mode = "currency")
         __obj.asInstanceOf[typings.extenso.mod.Extenso.CurrencyModeOptions]
       }
       
-      @scala.inline
-      def NumberModeOptions(): typings.extenso.mod.Extenso.NumberModeOptions = {
+      inline def NumberModeOptions(): typings.extenso.mod.Extenso.NumberModeOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.extenso.mod.Extenso.NumberModeOptions]
       }

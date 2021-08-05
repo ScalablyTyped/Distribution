@@ -24,40 +24,29 @@ trait Absolute extends StObject {
 }
 object Absolute {
   
-  @scala.inline
-  def apply(actions: OnSelect & (Record[String, js.Any]), panels: Record[String, js.Any], shortcuts: Shortcuts): Absolute = {
+  inline def apply(actions: OnSelect & (Record[String, js.Any]), panels: Record[String, js.Any], shortcuts: Shortcuts): Absolute = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any], shortcuts = shortcuts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Absolute]
   }
   
-  @scala.inline
-  implicit class AbsoluteMutableBuilder[Self <: Absolute] (val x: Self) extends AnyVal {
+  extension [Self <: Absolute](x: Self) {
     
-    @scala.inline
-    def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+    inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+    inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
-    @scala.inline
-    def setActions(value: OnSelect & (Record[String, js.Any])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: OnSelect & (Record[String, js.Any])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelPosition(value: bottom | right): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
+    inline def setPanelPosition(value: bottom | right): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
+    inline def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
     
-    @scala.inline
-    def setPanels(value: Record[String, js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+    inline def setPanels(value: Record[String, js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
+    inline def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
+    inline def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
     
-    @scala.inline
-    def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+    inline def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
   }
 }

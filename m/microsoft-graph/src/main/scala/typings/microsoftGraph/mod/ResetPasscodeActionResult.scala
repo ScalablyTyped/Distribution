@@ -13,22 +13,17 @@ trait ResetPasscodeActionResult
 }
 object ResetPasscodeActionResult {
   
-  @scala.inline
-  def apply(): ResetPasscodeActionResult = {
+  inline def apply(): ResetPasscodeActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetPasscodeActionResult]
   }
   
-  @scala.inline
-  implicit class ResetPasscodeActionResultMutableBuilder[Self <: ResetPasscodeActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ResetPasscodeActionResult](x: Self) {
     
-    @scala.inline
-    def setPasscode(value: NullableOption[String]): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
+    inline def setPasscode(value: NullableOption[String]): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasscodeNull: Self = StObject.set(x, "passcode", null)
+    inline def setPasscodeNull: Self = StObject.set(x, "passcode", null)
     
-    @scala.inline
-    def setPasscodeUndefined: Self = StObject.set(x, "passcode", js.undefined)
+    inline def setPasscodeUndefined: Self = StObject.set(x, "passcode", js.undefined)
   }
 }

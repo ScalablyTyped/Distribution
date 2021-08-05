@@ -17,26 +17,20 @@ trait TeamsCheckPermissionsForRepoInOrgEndpoint extends StObject {
 }
 object TeamsCheckPermissionsForRepoInOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, owner: String, repo: String, team_slug: String): TeamsCheckPermissionsForRepoInOrgEndpoint = {
+  inline def apply(org_ : String, owner: String, repo: String, team_slug: String): TeamsCheckPermissionsForRepoInOrgEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCheckPermissionsForRepoInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsCheckPermissionsForRepoInOrgEndpointMutableBuilder[Self <: TeamsCheckPermissionsForRepoInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCheckPermissionsForRepoInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

@@ -9,29 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ApplicationRef () extends StObject {
   
-  var _componentFactoryResolver: js.Any = js.native
+  /* private */ var _componentFactoryResolver: js.Any = js.native
   
-  var _console: js.Any = js.native
+  /* private */ var _console: js.Any = js.native
   
-  var _enforceNoNewChanges: js.Any = js.native
+  /* private */ var _enforceNoNewChanges: js.Any = js.native
   
-  var _exceptionHandler: js.Any = js.native
+  /* private */ var _exceptionHandler: js.Any = js.native
   
-  var _initStatus: js.Any = js.native
+  /* private */ var _initStatus: js.Any = js.native
   
-  var _injector: js.Any = js.native
+  /* private */ var _injector: js.Any = js.native
   
-  var _loadComponent: js.Any = js.native
+  /* private */ var _loadComponent: js.Any = js.native
   
-  var _runningTick: js.Any = js.native
+  /* private */ var _runningTick: js.Any = js.native
   
-  var _stable: js.Any = js.native
+  /* private */ var _stable: js.Any = js.native
   
-  var _unloadComponent: js.Any = js.native
+  /* private */ var _unloadComponent: js.Any = js.native
   
-  var _views: js.Any = js.native
+  /* private */ var _views: js.Any = js.native
   
-  var _zone: js.Any = js.native
+  /* private */ var _zone: js.Any = js.native
   
   /**
     * Attaches a view so that it will be dirty checked.

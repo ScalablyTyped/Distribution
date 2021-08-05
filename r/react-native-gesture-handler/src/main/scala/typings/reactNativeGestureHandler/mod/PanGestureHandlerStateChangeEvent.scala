@@ -13,16 +13,13 @@ trait PanGestureHandlerStateChangeEvent
 }
 object PanGestureHandlerStateChangeEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & PanGestureHandlerEventExtra): PanGestureHandlerStateChangeEvent = {
+  inline def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & PanGestureHandlerEventExtra): PanGestureHandlerStateChangeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanGestureHandlerStateChangeEvent]
   }
   
-  @scala.inline
-  implicit class PanGestureHandlerStateChangeEventMutableBuilder[Self <: PanGestureHandlerStateChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PanGestureHandlerStateChangeEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & PanGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & PanGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

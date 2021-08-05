@@ -40,8 +40,7 @@ object adexchangebuyer2Mod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Adexchangebuyer2
       ] = js.native
-    @scala.inline
-    def v2beta1_=(
+    inline def v2beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -50,11 +49,9 @@ object adexchangebuyer2Mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2beta1")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def adexchangebuyer2(options: Options): Adexchangebuyer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer2")(options.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer2]
+  inline def adexchangebuyer2(options: Options): Adexchangebuyer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer2")(options.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer2]
   
-  @scala.inline
-  def adexchangebuyer2_v2beta1(version: v2beta1): Adexchangebuyer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer2")(version.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer2]
+  inline def adexchangebuyer2_v2beta1(version: v2beta1): Adexchangebuyer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer2")(version.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer2]
   
   object auth extends Shortcut {
     
@@ -89,8 +86,7 @@ object adexchangebuyer2Mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

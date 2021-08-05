@@ -30,36 +30,31 @@ object xmlCdataMod {
   }
   object IXmlCdataOptions {
     
-    @scala.inline
-    def apply(charData: String): IXmlCdataOptions = {
+    inline def apply(charData: String): IXmlCdataOptions = {
       val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlCdataOptions]
     }
     
-    @scala.inline
-    implicit class IXmlCdataOptionsMutableBuilder[Self <: IXmlCdataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlCdataOptions](x: Self) {
       
-      @scala.inline
-      def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
+      inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsInCharData(value: Boolean): Self = StObject.set(x, "replaceInvalidCharsInCharData", value.asInstanceOf[js.Any])
+      inline def setReplaceInvalidCharsInCharData(value: Boolean): Self = StObject.set(x, "replaceInvalidCharsInCharData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsInCharDataUndefined: Self = StObject.set(x, "replaceInvalidCharsInCharData", js.undefined)
+      inline def setReplaceInvalidCharsInCharDataUndefined: Self = StObject.set(x, "replaceInvalidCharsInCharData", js.undefined)
     }
   }
   
   @js.native
   trait XmlCdata[Parent] extends StObject {
     
-    var _charData: js.Any = js.native
+    /* private */ var _charData: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _replaceInvalidCharsInCharData: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInCharData: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the character data of this CDATA section.

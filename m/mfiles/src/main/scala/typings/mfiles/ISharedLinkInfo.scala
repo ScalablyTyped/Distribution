@@ -26,8 +26,7 @@ trait ISharedLinkInfo extends StObject {
 }
 object ISharedLinkInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessKey: String,
     Clone: () => ISharedLinkInfo,
     CreatedByUser: Double,
@@ -42,34 +41,24 @@ object ISharedLinkInfo {
     __obj.asInstanceOf[ISharedLinkInfo]
   }
   
-  @scala.inline
-  implicit class ISharedLinkInfoMutableBuilder[Self <: ISharedLinkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ISharedLinkInfo](x: Self) {
     
-    @scala.inline
-    def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
+    inline def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ISharedLinkInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISharedLinkInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatedByUser(value: Double): Self = StObject.set(x, "CreatedByUser", value.asInstanceOf[js.Any])
+    inline def setCreatedByUser(value: Double): Self = StObject.set(x, "CreatedByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: ITimestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: ITimestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTime(value: ITimestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: ITimestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileVer(value: IFileVer): Self = StObject.set(x, "FileVer", value.asInstanceOf[js.Any])
+    inline def setFileVer(value: IFileVer): Self = StObject.set(x, "FileVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
+    inline def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: (IObjVer, IFileVer) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction2(value))
+    inline def setSet(value: (IObjVer, IFileVer) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction2(value))
   }
 }

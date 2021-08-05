@@ -34,8 +34,7 @@ trait XShapeArranger
 }
 object XShapeArranger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     arrange: (XShapes, Arrangement) => Unit,
     bringToFront: (XShapes, Double) => Unit,
@@ -50,25 +49,18 @@ object XShapeArranger {
     __obj.asInstanceOf[XShapeArranger]
   }
   
-  @scala.inline
-  implicit class XShapeArrangerMutableBuilder[Self <: XShapeArranger] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeArranger](x: Self) {
     
-    @scala.inline
-    def setArrange(value: (XShapes, Arrangement) => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction2(value))
+    inline def setArrange(value: (XShapes, Arrangement) => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBringToFront(value: (XShapes, Double) => Unit): Self = StObject.set(x, "bringToFront", js.Any.fromFunction2(value))
+    inline def setBringToFront(value: (XShapes, Double) => Unit): Self = StObject.set(x, "bringToFront", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReverseOrder(value: XShapes => Unit): Self = StObject.set(x, "reverseOrder", js.Any.fromFunction1(value))
+    inline def setReverseOrder(value: XShapes => Unit): Self = StObject.set(x, "reverseOrder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendToBack(value: (XShapes, Double) => Unit): Self = StObject.set(x, "sendToBack", js.Any.fromFunction2(value))
+    inline def setSendToBack(value: (XShapes, Double) => Unit): Self = StObject.set(x, "sendToBack", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBehindShape(value: (XShapes, XShape) => Unit): Self = StObject.set(x, "setBehindShape", js.Any.fromFunction2(value))
+    inline def setSetBehindShape(value: (XShapes, XShape) => Unit): Self = StObject.set(x, "setBehindShape", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetInFrontOf(value: (XShapes, XShape) => Unit): Self = StObject.set(x, "setInFrontOf", js.Any.fromFunction2(value))
+    inline def setSetInFrontOf(value: (XShapes, XShape) => Unit): Self = StObject.set(x, "setInFrontOf", js.Any.fromFunction2(value))
   }
 }

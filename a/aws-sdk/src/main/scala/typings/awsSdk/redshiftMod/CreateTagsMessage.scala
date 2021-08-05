@@ -18,22 +18,17 @@ trait CreateTagsMessage extends StObject {
 }
 object CreateTagsMessage {
   
-  @scala.inline
-  def apply(ResourceName: String, Tags: TagList): CreateTagsMessage = {
+  inline def apply(ResourceName: String, Tags: TagList): CreateTagsMessage = {
     val __obj = js.Dynamic.literal(ResourceName = ResourceName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTagsMessage]
   }
   
-  @scala.inline
-  implicit class CreateTagsMessageMutableBuilder[Self <: CreateTagsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTagsMessage](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

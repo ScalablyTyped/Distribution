@@ -49,74 +49,53 @@ trait CustomElementsDefineOptions extends StObject {
 }
 object CustomElementsDefineOptions {
   
-  @scala.inline
-  def apply(): CustomElementsDefineOptions = {
+  inline def apply(): CustomElementsDefineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomElementsDefineOptions]
   }
   
-  @scala.inline
-  implicit class CustomElementsDefineOptionsMutableBuilder[Self <: CustomElementsDefineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CustomElementsDefineOptions](x: Self) {
     
-    @scala.inline
-    def setAel(
+    inline def setAel(
       value: (/* el */ EventTarget, /* eventName */ String, /* listener */ EventListenerOrEventListenerObject, /* options */ Boolean | AddEventListenerOptions) => Unit
     ): Self = StObject.set(x, "ael", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAelUndefined: Self = StObject.set(x, "ael", js.undefined)
+    inline def setAelUndefined: Self = StObject.set(x, "ael", js.undefined)
     
-    @scala.inline
-    def setCe(value: (/* eventName */ String, /* opts */ js.UndefOr[js.Any]) => CustomEvent[js.Any]): Self = StObject.set(x, "ce", js.Any.fromFunction2(value))
+    inline def setCe(value: (/* eventName */ String, /* opts */ js.UndefOr[js.Any]) => CustomEvent[js.Any]): Self = StObject.set(x, "ce", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCeUndefined: Self = StObject.set(x, "ce", js.undefined)
+    inline def setCeUndefined: Self = StObject.set(x, "ce", js.undefined)
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setJmp(value: /* c */ js.Function => js.Any): Self = StObject.set(x, "jmp", js.Any.fromFunction1(value))
+    inline def setJmp(value: /* c */ js.Function => js.Any): Self = StObject.set(x, "jmp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJmpUndefined: Self = StObject.set(x, "jmp", js.undefined)
+    inline def setJmpUndefined: Self = StObject.set(x, "jmp", js.undefined)
     
-    @scala.inline
-    def setRaf(value: /* c */ FrameRequestCallback => Double): Self = StObject.set(x, "raf", js.Any.fromFunction1(value))
+    inline def setRaf(value: /* c */ FrameRequestCallback => Double): Self = StObject.set(x, "raf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRafUndefined: Self = StObject.set(x, "raf", js.undefined)
+    inline def setRafUndefined: Self = StObject.set(x, "raf", js.undefined)
     
-    @scala.inline
-    def setRel(
+    inline def setRel(
       value: (/* el */ EventTarget, /* eventName */ String, /* listener */ EventListenerOrEventListenerObject, /* options */ Boolean | AddEventListenerOptions) => Unit
     ): Self = StObject.set(x, "rel", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
-    @scala.inline
-    def setResourcesUrl(value: String): Self = StObject.set(x, "resourcesUrl", value.asInstanceOf[js.Any])
+    inline def setResourcesUrl(value: String): Self = StObject.set(x, "resourcesUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUrlUndefined: Self = StObject.set(x, "resourcesUrl", js.undefined)
+    inline def setResourcesUrlUndefined: Self = StObject.set(x, "resourcesUrl", js.undefined)
     
-    @scala.inline
-    def setSyncQueue(value: Boolean): Self = StObject.set(x, "syncQueue", value.asInstanceOf[js.Any])
+    inline def setSyncQueue(value: Boolean): Self = StObject.set(x, "syncQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncQueueUndefined: Self = StObject.set(x, "syncQueue", js.undefined)
+    inline def setSyncQueueUndefined: Self = StObject.set(x, "syncQueue", js.undefined)
     
-    @scala.inline
-    def setTransformTagName(value: /* tagName */ String => String): Self = StObject.set(x, "transformTagName", js.Any.fromFunction1(value))
+    inline def setTransformTagName(value: /* tagName */ String => String): Self = StObject.set(x, "transformTagName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformTagNameUndefined: Self = StObject.set(x, "transformTagName", js.undefined)
+    inline def setTransformTagNameUndefined: Self = StObject.set(x, "transformTagName", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait QueryRenameQuery extends StObject {
 }
 object QueryRenameQuery {
   
-  @scala.inline
-  def apply(query: RenameQuery, result: RenameQueryResult): QueryRenameQuery = {
+  inline def apply(query: RenameQuery, result: RenameQueryResult): QueryRenameQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRenameQuery]
   }
   
-  @scala.inline
-  implicit class QueryRenameQueryMutableBuilder[Self <: QueryRenameQuery] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRenameQuery](x: Self) {
     
-    @scala.inline
-    def setQuery(value: RenameQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: RenameQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: RenameQueryResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RenameQueryResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

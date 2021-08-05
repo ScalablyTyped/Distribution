@@ -77,23 +77,18 @@ object requestMod {
   }
   object CommitResponse {
     
-    @scala.inline
-    def apply(indexUpdates: Double, mutationResults: js.Array[MutationResult]): CommitResponse = {
+    inline def apply(indexUpdates: Double, mutationResults: js.Array[MutationResult]): CommitResponse = {
       val __obj = js.Dynamic.literal(indexUpdates = indexUpdates.asInstanceOf[js.Any], mutationResults = mutationResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommitResponse]
     }
     
-    @scala.inline
-    implicit class CommitResponseMutableBuilder[Self <: CommitResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CommitResponse](x: Self) {
       
-      @scala.inline
-      def setIndexUpdates(value: Double): Self = StObject.set(x, "indexUpdates", value.asInstanceOf[js.Any])
+      inline def setIndexUpdates(value: Double): Self = StObject.set(x, "indexUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutationResults(value: js.Array[MutationResult]): Self = StObject.set(x, "mutationResults", value.asInstanceOf[js.Any])
+      inline def setMutationResults(value: js.Array[MutationResult]): Self = StObject.set(x, "mutationResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutationResultsVarargs(value: MutationResult*): Self = StObject.set(x, "mutationResults", js.Array(value :_*))
+      inline def setMutationResultsVarargs(value: MutationResult*): Self = StObject.set(x, "mutationResults", js.Array(value :_*))
     }
   }
   
@@ -111,23 +106,18 @@ object requestMod {
   }
   object MutationResult {
     
-    @scala.inline
-    def apply(conflictDetected: Boolean, key: DatastoreKey, version: Double): MutationResult = {
+    inline def apply(conflictDetected: Boolean, key: DatastoreKey, version: Double): MutationResult = {
       val __obj = js.Dynamic.literal(conflictDetected = conflictDetected.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[MutationResult]
     }
     
-    @scala.inline
-    implicit class MutationResultMutableBuilder[Self <: MutationResult] (val x: Self) extends AnyVal {
+    extension [Self <: MutationResult](x: Self) {
       
-      @scala.inline
-      def setConflictDetected(value: Boolean): Self = StObject.set(x, "conflictDetected", value.asInstanceOf[js.Any])
+      inline def setConflictDetected(value: Boolean): Self = StObject.set(x, "conflictDetected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: DatastoreKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: DatastoreKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

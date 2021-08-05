@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lowerCaseFirst(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerCaseFirst")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def lowerCaseFirst(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerCaseFirst")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -16,16 +16,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyPatch(`object`: js.Any, patch: js.Array[Operation]): js.Array[MissingError | TestError | InvalidOperationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(`object`.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[js.Array[MissingError | TestError | InvalidOperationError]]
+  inline def applyPatch(`object`: js.Any, patch: js.Array[Operation]): js.Array[MissingError | TestError | InvalidOperationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(`object`.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[js.Array[MissingError | TestError | InvalidOperationError]]
   
-  @scala.inline
-  def createPatch(input: js.Any, output: js.Any): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPatch")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
-  @scala.inline
-  def createPatch(input: js.Any, output: js.Any, diff: VoidableDiff): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPatch")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  inline def createPatch(input: js.Any, output: js.Any): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPatch")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  inline def createPatch(input: js.Any, output: js.Any, diff: VoidableDiff): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPatch")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @scala.inline
-  def createTests(input: js.Any, patch: js.Array[Operation]): js.Array[TestOperation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTests")(input.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestOperation]]
+  inline def createTests(input: js.Any, patch: js.Array[Operation]): js.Array[TestOperation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTests")(input.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestOperation]]
   
   type Patch = js.Array[Operation]
 }

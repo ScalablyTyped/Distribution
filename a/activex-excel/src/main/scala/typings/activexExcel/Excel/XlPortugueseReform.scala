@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPortugueseReform extends StObject
 object XlPortugueseReform {
   
-  @scala.inline
-  def xlPortugueseBoth: `3` = 3.asInstanceOf[`3`]
+  inline def xlPortugueseBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlPortuguesePostReform: `2` = 2.asInstanceOf[`2`]
+  inline def xlPortuguesePostReform: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPortuguesePreReform: `1` = 1.asInstanceOf[`1`]
+  inline def xlPortuguesePreReform: `1` = 1.asInstanceOf[`1`]
 }

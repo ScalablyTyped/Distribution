@@ -11,12 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def check(password: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(password.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def check(password: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(password.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def checkPassword(password: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(password.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkPassword(password: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(password.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def rateOfUsage(password: String): Frequency = ^.asInstanceOf[js.Dynamic].applyDynamic("rateOfUsage")(password.asInstanceOf[js.Any]).asInstanceOf[Frequency]
+  inline def rateOfUsage(password: String): Frequency = ^.asInstanceOf[js.Dynamic].applyDynamic("rateOfUsage")(password.asInstanceOf[js.Any]).asInstanceOf[Frequency]
 }

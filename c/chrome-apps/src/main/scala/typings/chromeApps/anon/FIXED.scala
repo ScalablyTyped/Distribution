@@ -17,22 +17,17 @@ trait FIXED extends StObject {
 }
 object FIXED {
   
-  @scala.inline
-  def apply(): FIXED = {
+  inline def apply(): FIXED = {
     val __obj = js.Dynamic.literal(FIXED = "fixed", REMOVABLE = "removable", UNKNOWN = "unknown")
     __obj.asInstanceOf[FIXED]
   }
   
-  @scala.inline
-  implicit class FIXEDMutableBuilder[Self <: FIXED] (val x: Self) extends AnyVal {
+  extension [Self <: FIXED](x: Self) {
     
-    @scala.inline
-    def setFIXED(value: fixed_): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
+    inline def setFIXED(value: fixed_): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREMOVABLE(value: removable_): Self = StObject.set(x, "REMOVABLE", value.asInstanceOf[js.Any])
+    inline def setREMOVABLE(value: removable_): Self = StObject.set(x, "REMOVABLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

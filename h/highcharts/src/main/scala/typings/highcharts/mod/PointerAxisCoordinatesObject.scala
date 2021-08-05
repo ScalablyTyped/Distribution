@@ -18,25 +18,19 @@ trait PointerAxisCoordinatesObject extends StObject {
 }
 object PointerAxisCoordinatesObject {
   
-  @scala.inline
-  def apply(xAxis: js.Array[PointerAxisCoordinateObject], yAxis: js.Array[PointerAxisCoordinateObject]): PointerAxisCoordinatesObject = {
+  inline def apply(xAxis: js.Array[PointerAxisCoordinateObject], yAxis: js.Array[PointerAxisCoordinateObject]): PointerAxisCoordinatesObject = {
     val __obj = js.Dynamic.literal(xAxis = xAxis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerAxisCoordinatesObject]
   }
   
-  @scala.inline
-  implicit class PointerAxisCoordinatesObjectMutableBuilder[Self <: PointerAxisCoordinatesObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointerAxisCoordinatesObject](x: Self) {
     
-    @scala.inline
-    def setXAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisVarargs(value: PointerAxisCoordinateObject*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
+    inline def setXAxisVarargs(value: PointerAxisCoordinateObject*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
     
-    @scala.inline
-    def setYAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisVarargs(value: PointerAxisCoordinateObject*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
+    inline def setYAxisVarargs(value: PointerAxisCoordinateObject*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
   }
 }

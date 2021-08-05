@@ -19,8 +19,7 @@ object env {
   @js.native
   val appRoot: String = js.native
   
-  @scala.inline
-  def asExternalUri(target: Uri): Thenable[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("asExternalUri")(target.asInstanceOf[js.Any]).asInstanceOf[Thenable[Uri]]
+  inline def asExternalUri(target: Uri): Thenable[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("asExternalUri")(target.asInstanceOf[js.Any]).asInstanceOf[Thenable[Uri]]
   
   @JSImport("vscode", "env.clipboard")
   @js.native
@@ -34,8 +33,7 @@ object env {
   @js.native
   val machineId: String = js.native
   
-  @scala.inline
-  def openExternal(target: Uri): Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openExternal")(target.asInstanceOf[js.Any]).asInstanceOf[Thenable[Boolean]]
+  inline def openExternal(target: Uri): Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openExternal")(target.asInstanceOf[js.Any]).asInstanceOf[Thenable[Boolean]]
   
   @JSImport("vscode", "env.remoteName")
   @js.native

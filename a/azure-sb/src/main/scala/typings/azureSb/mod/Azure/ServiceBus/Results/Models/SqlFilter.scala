@@ -20,31 +20,23 @@ trait SqlFilter extends StObject {
 }
 object SqlFilter {
   
-  @scala.inline
-  def apply(CompatibilityLevel: String, SqlExpression: String): SqlFilter = {
+  inline def apply(CompatibilityLevel: String, SqlExpression: String): SqlFilter = {
     val __obj = js.Dynamic.literal(CompatibilityLevel = CompatibilityLevel.asInstanceOf[js.Any], SqlExpression = SqlExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlFilter]
   }
   
-  @scala.inline
-  implicit class SqlFilterMutableBuilder[Self <: SqlFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SqlFilter](x: Self) {
     
-    @scala.inline
-    def setCompatibilityLevel(value: String): Self = StObject.set(x, "CompatibilityLevel", value.asInstanceOf[js.Any])
+    inline def setCompatibilityLevel(value: String): Self = StObject.set(x, "CompatibilityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: Dictionary[js.Any]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Dictionary[js.Any]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setRequiresPreprocessing(value: String): Self = StObject.set(x, "RequiresPreprocessing", value.asInstanceOf[js.Any])
+    inline def setRequiresPreprocessing(value: String): Self = StObject.set(x, "RequiresPreprocessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresPreprocessingUndefined: Self = StObject.set(x, "RequiresPreprocessing", js.undefined)
+    inline def setRequiresPreprocessingUndefined: Self = StObject.set(x, "RequiresPreprocessing", js.undefined)
     
-    @scala.inline
-    def setSqlExpression(value: String): Self = StObject.set(x, "SqlExpression", value.asInstanceOf[js.Any])
+    inline def setSqlExpression(value: String): Self = StObject.set(x, "SqlExpression", value.asInstanceOf[js.Any])
   }
 }

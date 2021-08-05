@@ -14,22 +14,17 @@ trait ServiceEndpointRequestResult extends StObject {
 }
 object ServiceEndpointRequestResult {
   
-  @scala.inline
-  def apply(errorMessage: String, result: js.Any, statusCode: String): ServiceEndpointRequestResult = {
+  inline def apply(errorMessage: String, result: js.Any, statusCode: String): ServiceEndpointRequestResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceEndpointRequestResult]
   }
   
-  @scala.inline
-  implicit class ServiceEndpointRequestResultMutableBuilder[Self <: ServiceEndpointRequestResult] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEndpointRequestResult](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

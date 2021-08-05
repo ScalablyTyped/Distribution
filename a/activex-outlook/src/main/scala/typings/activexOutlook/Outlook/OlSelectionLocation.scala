@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSelectionLocation extends StObject
 object OlSelectionLocation {
   
-  @scala.inline
-  def olAttachmentWell: `4` = 4.asInstanceOf[`4`]
+  inline def olAttachmentWell: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olDailyTaskList: `3` = 3.asInstanceOf[`3`]
+  inline def olDailyTaskList: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olToDoBarAppointmentList: `2` = 2.asInstanceOf[`2`]
+  inline def olToDoBarAppointmentList: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olToDoBarTaskList: `1` = 1.asInstanceOf[`1`]
+  inline def olToDoBarTaskList: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olViewList: `0` = 0.asInstanceOf[`0`]
+  inline def olViewList: `0` = 0.asInstanceOf[`0`]
 }

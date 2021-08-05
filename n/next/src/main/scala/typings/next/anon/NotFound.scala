@@ -16,16 +16,13 @@ trait NotFound
 }
 object NotFound {
   
-  @scala.inline
-  def apply(): NotFound = {
+  inline def apply(): NotFound = {
     val __obj = js.Dynamic.literal(notFound = true)
     __obj.asInstanceOf[NotFound]
   }
   
-  @scala.inline
-  implicit class NotFoundMutableBuilder[Self <: NotFound] (val x: Self) extends AnyVal {
+  extension [Self <: NotFound](x: Self) {
     
-    @scala.inline
-    def setNotFound(value: `true`): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: `true`): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
   }
 }

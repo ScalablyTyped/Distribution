@@ -10,19 +10,15 @@ trait TreePath extends StObject {
 }
 object TreePath {
   
-  @scala.inline
-  def apply(path: NumberOrStringArray): TreePath = {
+  inline def apply(path: NumberOrStringArray): TreePath = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreePath]
   }
   
-  @scala.inline
-  implicit class TreePathMutableBuilder[Self <: TreePath] (val x: Self) extends AnyVal {
+  extension [Self <: TreePath](x: Self) {
     
-    @scala.inline
-    def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

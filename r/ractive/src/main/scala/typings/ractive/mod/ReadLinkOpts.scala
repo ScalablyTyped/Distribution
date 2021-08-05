@@ -11,19 +11,15 @@ trait ReadLinkOpts extends StObject {
 }
 object ReadLinkOpts {
   
-  @scala.inline
-  def apply(): ReadLinkOpts = {
+  inline def apply(): ReadLinkOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadLinkOpts]
   }
   
-  @scala.inline
-  implicit class ReadLinkOptsMutableBuilder[Self <: ReadLinkOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ReadLinkOpts](x: Self) {
     
-    @scala.inline
-    def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+    inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
+    inline def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
   }
 }

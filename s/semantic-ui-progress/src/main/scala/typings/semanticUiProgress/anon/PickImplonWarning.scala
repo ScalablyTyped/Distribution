@@ -14,16 +14,13 @@ trait PickImplonWarning extends StObject {
 }
 object PickImplonWarning {
   
-  @scala.inline
-  def apply(onWarning: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): PickImplonWarning = {
+  inline def apply(onWarning: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): PickImplonWarning = {
     val __obj = js.Dynamic.literal(onWarning = onWarning.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonWarning]
   }
   
-  @scala.inline
-  implicit class PickImplonWarningMutableBuilder[Self <: PickImplonWarning] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonWarning](x: Self) {
     
-    @scala.inline
-    def setOnWarning(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onWarning", value.asInstanceOf[js.Any])
+    inline def setOnWarning(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onWarning", value.asInstanceOf[js.Any])
   }
 }

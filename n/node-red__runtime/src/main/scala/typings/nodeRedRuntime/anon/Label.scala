@@ -21,23 +21,18 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(icon: String, label: String): Label = {
+  inline def apply(icon: String, label: String): Label = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("simple")
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: simple): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: simple): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

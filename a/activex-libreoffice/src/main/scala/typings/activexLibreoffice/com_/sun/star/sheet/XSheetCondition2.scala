@@ -27,8 +27,7 @@ trait XSheetCondition2
 }
 object XSheetCondition2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConditionOperator: Double,
     Formula1: String,
     Formula2: String,
@@ -52,16 +51,12 @@ object XSheetCondition2 {
     __obj.asInstanceOf[XSheetCondition2]
   }
   
-  @scala.inline
-  implicit class XSheetCondition2MutableBuilder[Self <: XSheetCondition2] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetCondition2](x: Self) {
     
-    @scala.inline
-    def setConditionOperator(value: Double): Self = StObject.set(x, "ConditionOperator", value.asInstanceOf[js.Any])
+    inline def setConditionOperator(value: Double): Self = StObject.set(x, "ConditionOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConditionOperator(value: () => Double): Self = StObject.set(x, "getConditionOperator", js.Any.fromFunction0(value))
+    inline def setGetConditionOperator(value: () => Double): Self = StObject.set(x, "getConditionOperator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetConditionOperator(value: Double => Unit): Self = StObject.set(x, "setConditionOperator", js.Any.fromFunction1(value))
+    inline def setSetConditionOperator(value: Double => Unit): Self = StObject.set(x, "setConditionOperator", js.Any.fromFunction1(value))
   }
 }

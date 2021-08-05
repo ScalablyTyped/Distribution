@@ -47,7 +47,7 @@ object segmentFoundationMod {
       *
       * @param value Value that represents selected status
       */
-    var setAriaAttr: js.Any = js.native
+    /* private */ var setAriaAttr: js.Any = js.native
     
     /**
       * Sets segment to be selected
@@ -62,6 +62,6 @@ object segmentFoundationMod {
     /**
       * Sets segment from not selected to selected, or selected to not selected
       */
-    var toggleSelection: js.Any = js.native
+    /* private */ var toggleSelection: js.Any = js.native
   }
 }

@@ -37,8 +37,7 @@ trait ExpectProperties extends StObject {
 }
 object ExpectProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSnapshotSerializer: /* serializer */ SnapshotSerializerPlugin => Unit,
     any: /* classType */ js.Any => js.Any,
     anything: () => js.Any,
@@ -57,46 +56,32 @@ object ExpectProperties {
     __obj.asInstanceOf[ExpectProperties]
   }
   
-  @scala.inline
-  implicit class ExpectPropertiesMutableBuilder[Self <: ExpectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ExpectProperties](x: Self) {
     
-    @scala.inline
-    def setAddSnapshotSerializer(value: /* serializer */ SnapshotSerializerPlugin => Unit): Self = StObject.set(x, "addSnapshotSerializer", js.Any.fromFunction1(value))
+    inline def setAddSnapshotSerializer(value: /* serializer */ SnapshotSerializerPlugin => Unit): Self = StObject.set(x, "addSnapshotSerializer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAny(value: /* classType */ js.Any => js.Any): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
+    inline def setAny(value: /* classType */ js.Any => js.Any): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnything(value: () => js.Any): Self = StObject.set(x, "anything", js.Any.fromFunction0(value))
+    inline def setAnything(value: () => js.Any): Self = StObject.set(x, "anything", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setArrayContaining(value: /* arr */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "arrayContaining", js.Any.fromFunction1(value))
+    inline def setArrayContaining(value: /* arr */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "arrayContaining", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssertions(value: /* num */ Double => Unit): Self = StObject.set(x, "assertions", js.Any.fromFunction1(value))
+    inline def setAssertions(value: /* num */ Double => Unit): Self = StObject.set(x, "assertions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtend(value: /* obj */ ExpectExtendMap => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: /* obj */ ExpectExtendMap => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => MatcherState & (Record[String, js.Any])): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => MatcherState & (Record[String, js.Any])): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAssertions(value: () => Unit): Self = StObject.set(x, "hasAssertions", js.Any.fromFunction0(value))
+    inline def setHasAssertions(value: () => Unit): Self = StObject.set(x, "hasAssertions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNot(value: InverseAsymmetricMatchers): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: InverseAsymmetricMatchers): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectContaining(value: /* obj */ js.Object => js.Any): Self = StObject.set(x, "objectContaining", js.Any.fromFunction1(value))
+    inline def setObjectContaining(value: /* obj */ js.Object => js.Any): Self = StObject.set(x, "objectContaining", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetState(value: /* state */ js.Object => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    inline def setSetState(value: /* state */ js.Object => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringContaining(value: /* str */ String => js.Any): Self = StObject.set(x, "stringContaining", js.Any.fromFunction1(value))
+    inline def setStringContaining(value: /* str */ String => js.Any): Self = StObject.set(x, "stringContaining", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringMatching(value: /* str */ String | RegExp => js.Any): Self = StObject.set(x, "stringMatching", js.Any.fromFunction1(value))
+    inline def setStringMatching(value: /* str */ String | RegExp => js.Any): Self = StObject.set(x, "stringMatching", js.Any.fromFunction1(value))
   }
 }

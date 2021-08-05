@@ -12,13 +12,13 @@ object pathModelMod {
     extends StObject
        with PathModel {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _httpMethods: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _methodName: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _pattern: js.Any = js.native
     
     /* CompleteClass */
@@ -33,11 +33,11 @@ object pathModelMod {
   
   trait PathModel extends StObject {
     
-    var _httpMethods: js.Any
+    /* private */ var _httpMethods: js.Any
     
-    var _methodName: js.Any
+    /* private */ var _methodName: js.Any
     
-    var _pattern: js.Any
+    /* private */ var _pattern: js.Any
     
     var httpMethods: js.Array[String]
     
@@ -47,8 +47,7 @@ object pathModelMod {
   }
   object PathModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _httpMethods: js.Any,
       _methodName: js.Any,
       _pattern: js.Any,
@@ -60,29 +59,21 @@ object pathModelMod {
       __obj.asInstanceOf[PathModel]
     }
     
-    @scala.inline
-    implicit class PathModelMutableBuilder[Self <: PathModel] (val x: Self) extends AnyVal {
+    extension [Self <: PathModel](x: Self) {
       
-      @scala.inline
-      def setHttpMethods(value: js.Array[String]): Self = StObject.set(x, "httpMethods", value.asInstanceOf[js.Any])
+      inline def setHttpMethods(value: js.Array[String]): Self = StObject.set(x, "httpMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethodsVarargs(value: String*): Self = StObject.set(x, "httpMethods", js.Array(value :_*))
+      inline def setHttpMethodsVarargs(value: String*): Self = StObject.set(x, "httpMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_httpMethods(value: js.Any): Self = StObject.set(x, "_httpMethods", value.asInstanceOf[js.Any])
+      inline def set_httpMethods(value: js.Any): Self = StObject.set(x, "_httpMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_methodName(value: js.Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
+      inline def set_methodName(value: js.Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_pattern(value: js.Any): Self = StObject.set(x, "_pattern", value.asInstanceOf[js.Any])
+      inline def set_pattern(value: js.Any): Self = StObject.set(x, "_pattern", value.asInstanceOf[js.Any])
     }
   }
 }

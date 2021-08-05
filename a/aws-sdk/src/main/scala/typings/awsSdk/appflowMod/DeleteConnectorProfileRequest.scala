@@ -18,22 +18,17 @@ trait DeleteConnectorProfileRequest extends StObject {
 }
 object DeleteConnectorProfileRequest {
   
-  @scala.inline
-  def apply(connectorProfileName: ConnectorProfileName): DeleteConnectorProfileRequest = {
+  inline def apply(connectorProfileName: ConnectorProfileName): DeleteConnectorProfileRequest = {
     val __obj = js.Dynamic.literal(connectorProfileName = connectorProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConnectorProfileRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConnectorProfileRequestMutableBuilder[Self <: DeleteConnectorProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConnectorProfileRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
+    inline def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
+    inline def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
   }
 }

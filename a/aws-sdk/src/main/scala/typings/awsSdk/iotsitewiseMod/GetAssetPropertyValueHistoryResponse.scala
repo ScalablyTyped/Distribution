@@ -18,25 +18,19 @@ trait GetAssetPropertyValueHistoryResponse extends StObject {
 }
 object GetAssetPropertyValueHistoryResponse {
   
-  @scala.inline
-  def apply(assetPropertyValueHistory: AssetPropertyValueHistory): GetAssetPropertyValueHistoryResponse = {
+  inline def apply(assetPropertyValueHistory: AssetPropertyValueHistory): GetAssetPropertyValueHistoryResponse = {
     val __obj = js.Dynamic.literal(assetPropertyValueHistory = assetPropertyValueHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetPropertyValueHistoryResponse]
   }
   
-  @scala.inline
-  implicit class GetAssetPropertyValueHistoryResponseMutableBuilder[Self <: GetAssetPropertyValueHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssetPropertyValueHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setAssetPropertyValueHistory(value: AssetPropertyValueHistory): Self = StObject.set(x, "assetPropertyValueHistory", value.asInstanceOf[js.Any])
+    inline def setAssetPropertyValueHistory(value: AssetPropertyValueHistory): Self = StObject.set(x, "assetPropertyValueHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetPropertyValueHistoryVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "assetPropertyValueHistory", js.Array(value :_*))
+    inline def setAssetPropertyValueHistoryVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "assetPropertyValueHistory", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

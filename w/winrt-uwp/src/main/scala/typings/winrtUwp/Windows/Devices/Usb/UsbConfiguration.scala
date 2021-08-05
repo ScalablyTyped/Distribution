@@ -19,8 +19,7 @@ trait UsbConfiguration extends StObject {
 }
 object UsbConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configurationDescriptor: UsbConfigurationDescriptor,
     descriptors: IVectorView[UsbDescriptor],
     usbInterfaces: IVectorView[UsbInterface]
@@ -29,16 +28,12 @@ object UsbConfiguration {
     __obj.asInstanceOf[UsbConfiguration]
   }
   
-  @scala.inline
-  implicit class UsbConfigurationMutableBuilder[Self <: UsbConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UsbConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationDescriptor(value: UsbConfigurationDescriptor): Self = StObject.set(x, "configurationDescriptor", value.asInstanceOf[js.Any])
+    inline def setConfigurationDescriptor(value: UsbConfigurationDescriptor): Self = StObject.set(x, "configurationDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsbInterfaces(value: IVectorView[UsbInterface]): Self = StObject.set(x, "usbInterfaces", value.asInstanceOf[js.Any])
+    inline def setUsbInterfaces(value: IVectorView[UsbInterface]): Self = StObject.set(x, "usbInterfaces", value.asInstanceOf[js.Any])
   }
 }

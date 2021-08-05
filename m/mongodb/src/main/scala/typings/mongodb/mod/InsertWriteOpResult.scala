@@ -23,8 +23,7 @@ trait InsertWriteOpResult[TSchema /* <: IdAny */] extends StObject {
 }
 object InsertWriteOpResult {
   
-  @scala.inline
-  def apply[TSchema /* <: IdAny */](
+  inline def apply[TSchema /* <: IdAny */](
     connection: js.Any,
     insertedCount: scala.Double,
     insertedIds: NumberDictionary[
@@ -37,29 +36,22 @@ object InsertWriteOpResult {
     __obj.asInstanceOf[InsertWriteOpResult[TSchema]]
   }
   
-  @scala.inline
-  implicit class InsertWriteOpResultMutableBuilder[Self <: InsertWriteOpResult[?], TSchema /* <: IdAny */] (val x: Self & InsertWriteOpResult[TSchema]) extends AnyVal {
+  extension [Self <: InsertWriteOpResult[?], TSchema /* <: IdAny */](x: Self & InsertWriteOpResult[TSchema]) {
     
-    @scala.inline
-    def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedCount(value: scala.Double): Self = StObject.set(x, "insertedCount", value.asInstanceOf[js.Any])
+    inline def setInsertedCount(value: scala.Double): Self = StObject.set(x, "insertedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedIds(
+    inline def setInsertedIds(
       value: NumberDictionary[
           /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any
         ]
     ): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(value: js.Array[TSchema]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: js.Array[TSchema]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsVarargs(value: TSchema*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: TSchema*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: Ok): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Ok): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

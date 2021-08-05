@@ -33,8 +33,7 @@ trait GetRouteTableAssociation extends StObject {
 }
 object GetRouteTableAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gatewayId: String,
     main: Boolean,
     routeTableAssociationId: String,
@@ -45,22 +44,16 @@ object GetRouteTableAssociation {
     __obj.asInstanceOf[GetRouteTableAssociation]
   }
   
-  @scala.inline
-  implicit class GetRouteTableAssociationMutableBuilder[Self <: GetRouteTableAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: GetRouteTableAssociation](x: Self) {
     
-    @scala.inline
-    def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+    inline def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTableAssociationId(value: String): Self = StObject.set(x, "routeTableAssociationId", value.asInstanceOf[js.Any])
+    inline def setRouteTableAssociationId(value: String): Self = StObject.set(x, "routeTableAssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTableId(value: String): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+    inline def setRouteTableId(value: String): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait Rule extends StObject {
 }
 object Rule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clauses: js.Array[FilterClause],
     filter: String,
     isEnabled: String,
@@ -30,25 +29,18 @@ object Rule {
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setClauses(value: js.Array[FilterClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
+    inline def setClauses(value: js.Array[FilterClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClausesVarargs(value: FilterClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: FilterClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: String): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: String): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: attribute): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: attribute): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }
 }

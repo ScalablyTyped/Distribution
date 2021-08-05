@@ -16,8 +16,7 @@ trait `8`
 }
 object `8` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Plussign: (js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ]) | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)
@@ -27,18 +26,15 @@ object `8` {
     __obj.asInstanceOf[`8`]
   }
   
-  @scala.inline
-  implicit class `8MutableBuilder`[Self <: `8`] (val x: Self) extends AnyVal {
+  extension [Self <: `8`](x: Self) {
     
-    @scala.inline
-    def setPlussign(
+    inline def setPlussign(
       value: (js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]) | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)
     ): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlussignVarargs(
+    inline def setPlussignVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)*
     ): Self = StObject.set(x, "+", js.Array(value :_*))
   }

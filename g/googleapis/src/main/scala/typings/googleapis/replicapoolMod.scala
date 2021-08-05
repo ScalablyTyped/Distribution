@@ -40,8 +40,7 @@ object replicapoolMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Replicapool
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object replicapoolMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object replicapoolMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def replicapool(options: Options): Replicapool = ^.asInstanceOf[js.Dynamic].applyDynamic("replicapool")(options.asInstanceOf[js.Any]).asInstanceOf[Replicapool]
+  inline def replicapool(options: Options): Replicapool = ^.asInstanceOf[js.Dynamic].applyDynamic("replicapool")(options.asInstanceOf[js.Any]).asInstanceOf[Replicapool]
   
-  @scala.inline
-  def replicapool_v1beta1(version: v1beta1): Replicapool = ^.asInstanceOf[js.Dynamic].applyDynamic("replicapool")(version.asInstanceOf[js.Any]).asInstanceOf[Replicapool]
+  inline def replicapool_v1beta1(version: v1beta1): Replicapool = ^.asInstanceOf[js.Dynamic].applyDynamic("replicapool")(version.asInstanceOf[js.Any]).asInstanceOf[Replicapool]
 }

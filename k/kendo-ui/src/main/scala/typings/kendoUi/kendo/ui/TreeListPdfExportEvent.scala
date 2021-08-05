@@ -13,19 +13,15 @@ trait TreeListPdfExportEvent
 }
 object TreeListPdfExportEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeList): TreeListPdfExportEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeList): TreeListPdfExportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListPdfExportEvent]
   }
   
-  @scala.inline
-  implicit class TreeListPdfExportEventMutableBuilder[Self <: TreeListPdfExportEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListPdfExportEvent](x: Self) {
     
-    @scala.inline
-    def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

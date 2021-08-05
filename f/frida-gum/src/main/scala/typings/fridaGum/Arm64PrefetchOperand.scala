@@ -16,20 +16,16 @@ trait Arm64PrefetchOperand
 }
 object Arm64PrefetchOperand {
   
-  @scala.inline
-  def apply(value: Double): Arm64PrefetchOperand = {
+  inline def apply(value: Double): Arm64PrefetchOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("prefetch")
     __obj.asInstanceOf[Arm64PrefetchOperand]
   }
   
-  @scala.inline
-  implicit class Arm64PrefetchOperandMutableBuilder[Self <: Arm64PrefetchOperand] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64PrefetchOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: prefetch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: prefetch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

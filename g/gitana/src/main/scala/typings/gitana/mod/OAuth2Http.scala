@@ -25,65 +25,53 @@ object OAuth2Http {
   @JSImport("gitana", "OAuth2Http.AUTHORIZATION_CODE")
   @js.native
   def AUTHORIZATION_CODE: String = js.native
-  @scala.inline
-  def AUTHORIZATION_CODE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTHORIZATION_CODE")(x.asInstanceOf[js.Any])
+  inline def AUTHORIZATION_CODE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTHORIZATION_CODE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("gitana", "OAuth2Http.COOKIE")
   @js.native
   def COOKIE: String = js.native
-  @scala.inline
-  def COOKIE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COOKIE")(x.asInstanceOf[js.Any])
+  inline def COOKIE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COOKIE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("gitana", "OAuth2Http.PASSWORD")
   @js.native
   def PASSWORD: String = js.native
-  @scala.inline
-  def PASSWORD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD")(x.asInstanceOf[js.Any])
+  inline def PASSWORD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def Storage(scope: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Storage")(scope.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Storage(scope: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Storage")(scope.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
   @JSImport("gitana", "OAuth2Http.TICKET")
   @js.native
   def TICKET: String = js.native
-  @scala.inline
-  def TICKET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICKET")(x.asInstanceOf[js.Any])
+  inline def TICKET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICKET")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("gitana", "OAuth2Http.TOKEN")
   @js.native
   def TOKEN: String = js.native
-  @scala.inline
-  def TOKEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN")(x.asInstanceOf[js.Any])
+  inline def TOKEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("gitana", "OAuth2Http.TOKEN_METHOD")
   @js.native
   def TOKEN_METHOD: String = js.native
-  @scala.inline
-  def TOKEN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN_METHOD")(x.asInstanceOf[js.Any])
+  inline def TOKEN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN_METHOD")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

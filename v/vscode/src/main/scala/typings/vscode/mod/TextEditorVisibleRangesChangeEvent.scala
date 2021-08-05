@@ -18,22 +18,17 @@ trait TextEditorVisibleRangesChangeEvent extends StObject {
 }
 object TextEditorVisibleRangesChangeEvent {
   
-  @scala.inline
-  def apply(textEditor: TextEditor, visibleRanges: js.Array[Range]): TextEditorVisibleRangesChangeEvent = {
+  inline def apply(textEditor: TextEditor, visibleRanges: js.Array[Range]): TextEditorVisibleRangesChangeEvent = {
     val __obj = js.Dynamic.literal(textEditor = textEditor.asInstanceOf[js.Any], visibleRanges = visibleRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEditorVisibleRangesChangeEvent]
   }
   
-  @scala.inline
-  implicit class TextEditorVisibleRangesChangeEventMutableBuilder[Self <: TextEditorVisibleRangesChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorVisibleRangesChangeEvent](x: Self) {
     
-    @scala.inline
-    def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
+    inline def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRanges(value: js.Array[Range]): Self = StObject.set(x, "visibleRanges", value.asInstanceOf[js.Any])
+    inline def setVisibleRanges(value: js.Array[Range]): Self = StObject.set(x, "visibleRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRangesVarargs(value: Range*): Self = StObject.set(x, "visibleRanges", js.Array(value :_*))
+    inline def setVisibleRangesVarargs(value: Range*): Self = StObject.set(x, "visibleRanges", js.Array(value :_*))
   }
 }

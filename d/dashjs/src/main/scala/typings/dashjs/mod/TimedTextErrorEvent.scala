@@ -21,23 +21,18 @@ trait TimedTextErrorEvent
 }
 object TimedTextErrorEvent {
   
-  @scala.inline
-  def apply(event: Cc): TimedTextErrorEvent = {
+  inline def apply(event: Cc): TimedTextErrorEvent = {
     val __obj = js.Dynamic.literal(error = "cc", event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[TimedTextErrorEvent]
   }
   
-  @scala.inline
-  implicit class TimedTextErrorEventMutableBuilder[Self <: TimedTextErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: cc): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: cc): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: Cc): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Cc): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

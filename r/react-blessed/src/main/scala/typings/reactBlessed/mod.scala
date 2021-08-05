@@ -13,13 +13,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createBlessedRenderer(bls: js.Any): renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlessedRenderer")(bls.asInstanceOf[js.Any]).asInstanceOf[renderer]
+  inline def createBlessedRenderer(bls: js.Any): renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlessedRenderer")(bls.asInstanceOf[js.Any]).asInstanceOf[renderer]
   
-  @scala.inline
-  def render(c: Element, s: Screen): (Component[js.Any, js.Any, js.Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(c.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[(Component[js.Any, js.Any, js.Any]) | Null]
-  @scala.inline
-  def render(c: Element, s: Screen, callback: Callback): (Component[js.Any, js.Any, js.Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(c.asInstanceOf[js.Any], s.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[(Component[js.Any, js.Any, js.Any]) | Null]
+  inline def render(c: Element, s: Screen): (Component[js.Any, js.Any, js.Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(c.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[(Component[js.Any, js.Any, js.Any]) | Null]
+  inline def render(c: Element, s: Screen, callback: Callback): (Component[js.Any, js.Any, js.Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(c.asInstanceOf[js.Any], s.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[(Component[js.Any, js.Any, js.Any]) | Null]
   
   type Callback = js.Function0[js.UndefOr[Unit | Null]]
   

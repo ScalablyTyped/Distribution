@@ -14,31 +14,23 @@ trait ArimaResult extends StObject {
 }
 object ArimaResult {
   
-  @scala.inline
-  def apply(): ArimaResult = {
+  inline def apply(): ArimaResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArimaResult]
   }
   
-  @scala.inline
-  implicit class ArimaResultMutableBuilder[Self <: ArimaResult] (val x: Self) extends AnyVal {
+  extension [Self <: ArimaResult](x: Self) {
     
-    @scala.inline
-    def setArimaModelInfo(value: js.Array[ArimaModelInfo]): Self = StObject.set(x, "arimaModelInfo", value.asInstanceOf[js.Any])
+    inline def setArimaModelInfo(value: js.Array[ArimaModelInfo]): Self = StObject.set(x, "arimaModelInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArimaModelInfoUndefined: Self = StObject.set(x, "arimaModelInfo", js.undefined)
+    inline def setArimaModelInfoUndefined: Self = StObject.set(x, "arimaModelInfo", js.undefined)
     
-    @scala.inline
-    def setArimaModelInfoVarargs(value: ArimaModelInfo*): Self = StObject.set(x, "arimaModelInfo", js.Array(value :_*))
+    inline def setArimaModelInfoVarargs(value: ArimaModelInfo*): Self = StObject.set(x, "arimaModelInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setSeasonalPeriods(value: js.Array[String]): Self = StObject.set(x, "seasonalPeriods", value.asInstanceOf[js.Any])
+    inline def setSeasonalPeriods(value: js.Array[String]): Self = StObject.set(x, "seasonalPeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeasonalPeriodsUndefined: Self = StObject.set(x, "seasonalPeriods", js.undefined)
+    inline def setSeasonalPeriodsUndefined: Self = StObject.set(x, "seasonalPeriods", js.undefined)
     
-    @scala.inline
-    def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value :_*))
+    inline def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value :_*))
   }
 }

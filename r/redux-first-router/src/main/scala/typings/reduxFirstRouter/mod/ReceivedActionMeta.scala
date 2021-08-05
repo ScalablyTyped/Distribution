@@ -19,38 +19,28 @@ trait ReceivedActionMeta extends StObject {
 }
 object ReceivedActionMeta {
   
-  @scala.inline
-  def apply(meta: NotFoundPath, payload: Payload, `type`: String): ReceivedActionMeta = {
+  inline def apply(meta: NotFoundPath, payload: Payload, `type`: String): ReceivedActionMeta = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceivedActionMeta]
   }
   
-  @scala.inline
-  implicit class ReceivedActionMetaMutableBuilder[Self <: ReceivedActionMeta] (val x: Self) extends AnyVal {
+  extension [Self <: ReceivedActionMeta](x: Self) {
     
-    @scala.inline
-    def setMeta(value: NotFoundPath): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: NotFoundPath): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavKey(value: Nullable[String]): Self = StObject.set(x, "navKey", value.asInstanceOf[js.Any])
+    inline def setNavKey(value: Nullable[String]): Self = StObject.set(x, "navKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavKeyNull: Self = StObject.set(x, "navKey", null)
+    inline def setNavKeyNull: Self = StObject.set(x, "navKey", null)
     
-    @scala.inline
-    def setNavKeyUndefined: Self = StObject.set(x, "navKey", js.undefined)
+    inline def setNavKeyUndefined: Self = StObject.set(x, "navKey", js.undefined)
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteGlobalClusterMessage extends StObject {
 }
 object DeleteGlobalClusterMessage {
   
-  @scala.inline
-  def apply(GlobalClusterIdentifier: String): DeleteGlobalClusterMessage = {
+  inline def apply(GlobalClusterIdentifier: String): DeleteGlobalClusterMessage = {
     val __obj = js.Dynamic.literal(GlobalClusterIdentifier = GlobalClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGlobalClusterMessage]
   }
   
-  @scala.inline
-  implicit class DeleteGlobalClusterMessageMutableBuilder[Self <: DeleteGlobalClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGlobalClusterMessage](x: Self) {
     
-    @scala.inline
-    def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

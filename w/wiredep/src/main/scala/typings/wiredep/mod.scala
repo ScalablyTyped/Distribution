@@ -29,15 +29,13 @@ object mod {
     *     // etc.
     *   }
     */
-  @scala.inline
-  def apply(config: WiredepParams): PathFiles = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[PathFiles]
+  inline def apply(config: WiredepParams): PathFiles = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[PathFiles]
   
   @JSImport("wiredep", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stream(config: WiredepParams): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def stream(config: WiredepParams): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   trait FileObject extends StObject {
     
@@ -58,23 +56,18 @@ object mod {
   }
   object FileObject {
     
-    @scala.inline
-    def apply(block: String, file: String, path: String): FileObject = {
+    inline def apply(block: String, file: String, path: String): FileObject = {
       val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileObject]
     }
     
-    @scala.inline
-    implicit class FileObjectMutableBuilder[Self <: FileObject] (val x: Self) extends AnyVal {
+    extension [Self <: FileObject](x: Self) {
       
-      @scala.inline
-      def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,8 +90,7 @@ object mod {
   }
   object FileTypes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileExtension: Block,
       html: Detect,
       jade: Detect,
@@ -111,29 +103,21 @@ object mod {
       __obj.asInstanceOf[FileTypes]
     }
     
-    @scala.inline
-    implicit class FileTypesMutableBuilder[Self <: FileTypes] (val x: Self) extends AnyVal {
+    extension [Self <: FileTypes](x: Self) {
       
-      @scala.inline
-      def setFileExtension(value: Block): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
+      inline def setFileExtension(value: Block): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: Detect): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Detect): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJade(value: Detect): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
+      inline def setJade(value: Detect): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLess(value: Replace): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
+      inline def setLess(value: Replace): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScss(value: BlockDetect): Self = StObject.set(x, "scss", value.asInstanceOf[js.Any])
+      inline def setScss(value: BlockDetect): Self = StObject.set(x, "scss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyl(value: DetectReplace): Self = StObject.set(x, "styl", value.asInstanceOf[js.Any])
+      inline def setStyl(value: DetectReplace): Self = StObject.set(x, "styl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYaml(value: Detect): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
+      inline def setYaml(value: Detect): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,110 +213,76 @@ object mod {
   }
   object WiredepParams {
     
-    @scala.inline
-    def apply(): WiredepParams = {
+    inline def apply(): WiredepParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WiredepParams]
     }
     
-    @scala.inline
-    implicit class WiredepParamsMutableBuilder[Self <: WiredepParams] (val x: Self) extends AnyVal {
+    extension [Self <: WiredepParams](x: Self) {
       
-      @scala.inline
-      def setBowerJson(value: String): Self = StObject.set(x, "bowerJson", value.asInstanceOf[js.Any])
+      inline def setBowerJson(value: String): Self = StObject.set(x, "bowerJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBowerJsonUndefined: Self = StObject.set(x, "bowerJson", js.undefined)
+      inline def setBowerJsonUndefined: Self = StObject.set(x, "bowerJson", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDependencies(value: Boolean): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: Boolean): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setDevDependencies(value: Boolean): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
+      inline def setDevDependencies(value: Boolean): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
+      inline def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setFileTypes(value: FileTypes): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+      inline def setFileTypes(value: FileTypes): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+      inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
       
-      @scala.inline
-      def setIgnorePath(value: String | RegExp): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
+      inline def setIgnorePath(value: String | RegExp): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
+      inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
       
-      @scala.inline
-      def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
+      inline def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSelfUndefined: Self = StObject.set(x, "includeSelf", js.undefined)
+      inline def setIncludeSelfUndefined: Self = StObject.set(x, "includeSelf", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnFileUpdated(value: /* filePath */ String => Unit): Self = StObject.set(x, "onFileUpdated", js.Any.fromFunction1(value))
+      inline def setOnFileUpdated(value: /* filePath */ String => Unit): Self = StObject.set(x, "onFileUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFileUpdatedUndefined: Self = StObject.set(x, "onFileUpdated", js.undefined)
+      inline def setOnFileUpdatedUndefined: Self = StObject.set(x, "onFileUpdated", js.undefined)
       
-      @scala.inline
-      def setOnMainNotFound(value: /* pkg */ String => Unit): Self = StObject.set(x, "onMainNotFound", js.Any.fromFunction1(value))
+      inline def setOnMainNotFound(value: /* pkg */ String => Unit): Self = StObject.set(x, "onMainNotFound", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMainNotFoundUndefined: Self = StObject.set(x, "onMainNotFound", js.undefined)
+      inline def setOnMainNotFoundUndefined: Self = StObject.set(x, "onMainNotFound", js.undefined)
       
-      @scala.inline
-      def setOnPathInjected(value: /* fileObject */ FileObject => Unit): Self = StObject.set(x, "onPathInjected", js.Any.fromFunction1(value))
+      inline def setOnPathInjected(value: /* fileObject */ FileObject => Unit): Self = StObject.set(x, "onPathInjected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPathInjectedUndefined: Self = StObject.set(x, "onPathInjected", js.undefined)
+      inline def setOnPathInjectedUndefined: Self = StObject.set(x, "onPathInjected", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: js.Object): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: js.Object): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
     }
   }
 }

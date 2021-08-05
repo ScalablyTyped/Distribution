@@ -16,7 +16,6 @@ object defaultMathSymbolsMod {
     @JSImport("polished/lib/math/defaultMathSymbols", "default.symbols")
     @js.native
     def symbols: _empty = js.native
-    @scala.inline
-    def symbols_=(x: _empty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbols")(x.asInstanceOf[js.Any])
+    inline def symbols_=(x: _empty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbols")(x.asInstanceOf[js.Any])
   }
 }

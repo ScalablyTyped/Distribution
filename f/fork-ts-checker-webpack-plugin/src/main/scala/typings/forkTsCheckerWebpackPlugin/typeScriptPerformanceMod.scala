@@ -12,8 +12,7 @@ object typeScriptPerformanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connectTypeScriptPerformance(typescript: Typeofts, performance: Performance): Performance = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTypeScriptPerformance")(typescript.asInstanceOf[js.Any], performance.asInstanceOf[js.Any])).asInstanceOf[Performance]
+  inline def connectTypeScriptPerformance(typescript: Typeofts, performance: Performance): Performance = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTypeScriptPerformance")(typescript.asInstanceOf[js.Any], performance.asInstanceOf[js.Any])).asInstanceOf[Performance]
   
   @js.native
   trait TypeScriptPerformance extends StObject {

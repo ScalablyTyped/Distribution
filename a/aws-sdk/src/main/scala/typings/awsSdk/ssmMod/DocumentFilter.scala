@@ -18,19 +18,15 @@ trait DocumentFilter extends StObject {
 }
 object DocumentFilter {
   
-  @scala.inline
-  def apply(key: DocumentFilterKey, value: DocumentFilterValue): DocumentFilter = {
+  inline def apply(key: DocumentFilterKey, value: DocumentFilterValue): DocumentFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentFilter]
   }
   
-  @scala.inline
-  implicit class DocumentFilterMutableBuilder[Self <: DocumentFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: DocumentFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: DocumentFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DocumentFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DocumentFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

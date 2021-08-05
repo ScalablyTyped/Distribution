@@ -12,19 +12,15 @@ trait Start extends StObject {
 }
 object Start {
   
-  @scala.inline
-  def apply(start: Double, stop: Double): Start = {
+  inline def apply(start: Double, stop: Double): Start = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Start]
   }
   
-  @scala.inline
-  implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+  extension [Self <: Start](x: Self) {
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

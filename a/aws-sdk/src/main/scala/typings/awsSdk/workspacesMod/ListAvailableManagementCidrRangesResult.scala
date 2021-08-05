@@ -18,28 +18,21 @@ trait ListAvailableManagementCidrRangesResult extends StObject {
 }
 object ListAvailableManagementCidrRangesResult {
   
-  @scala.inline
-  def apply(): ListAvailableManagementCidrRangesResult = {
+  inline def apply(): ListAvailableManagementCidrRangesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAvailableManagementCidrRangesResult]
   }
   
-  @scala.inline
-  implicit class ListAvailableManagementCidrRangesResultMutableBuilder[Self <: ListAvailableManagementCidrRangesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListAvailableManagementCidrRangesResult](x: Self) {
     
-    @scala.inline
-    def setManagementCidrRanges(value: DedicatedTenancyCidrRangeList): Self = StObject.set(x, "ManagementCidrRanges", value.asInstanceOf[js.Any])
+    inline def setManagementCidrRanges(value: DedicatedTenancyCidrRangeList): Self = StObject.set(x, "ManagementCidrRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementCidrRangesUndefined: Self = StObject.set(x, "ManagementCidrRanges", js.undefined)
+    inline def setManagementCidrRangesUndefined: Self = StObject.set(x, "ManagementCidrRanges", js.undefined)
     
-    @scala.inline
-    def setManagementCidrRangesVarargs(value: DedicatedTenancyManagementCidrRange*): Self = StObject.set(x, "ManagementCidrRanges", js.Array(value :_*))
+    inline def setManagementCidrRangesVarargs(value: DedicatedTenancyManagementCidrRange*): Self = StObject.set(x, "ManagementCidrRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

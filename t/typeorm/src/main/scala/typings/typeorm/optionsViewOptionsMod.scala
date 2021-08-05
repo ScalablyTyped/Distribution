@@ -27,8 +27,7 @@ object optionsViewOptionsMod {
   }
   object ViewOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expression: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]]),
       name: String
     ): ViewOptions = {
@@ -36,23 +35,17 @@ object optionsViewOptionsMod {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewOptions](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]])): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]])): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionFunction1(value: /* connection */ Connection => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "expression", js.Any.fromFunction1(value))
+      inline def setExpressionFunction1(value: /* connection */ Connection => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "expression", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaterialized(value: Boolean): Self = StObject.set(x, "materialized", value.asInstanceOf[js.Any])
+      inline def setMaterialized(value: Boolean): Self = StObject.set(x, "materialized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaterializedUndefined: Self = StObject.set(x, "materialized", js.undefined)
+      inline def setMaterializedUndefined: Self = StObject.set(x, "materialized", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

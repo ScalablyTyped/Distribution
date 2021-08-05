@@ -100,8 +100,7 @@ object ClassDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     classKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
     openBraceToken: ISyntaxToken,
@@ -109,6 +108,5 @@ object ClassDeclarationSyntax {
   ): typings.typescriptServices.TypeScript.ClassDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(classKeyword.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ClassDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.ClassDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ClassDeclarationSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.ClassDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ClassDeclarationSyntax]
 }

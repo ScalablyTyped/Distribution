@@ -13,16 +13,13 @@ trait BuildTrigger extends StObject {
 }
 object BuildTrigger {
   
-  @scala.inline
-  def apply(triggerType: DefinitionTriggerType): BuildTrigger = {
+  inline def apply(triggerType: DefinitionTriggerType): BuildTrigger = {
     val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildTrigger]
   }
   
-  @scala.inline
-  implicit class BuildTriggerMutableBuilder[Self <: BuildTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: BuildTrigger](x: Self) {
     
-    @scala.inline
-    def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

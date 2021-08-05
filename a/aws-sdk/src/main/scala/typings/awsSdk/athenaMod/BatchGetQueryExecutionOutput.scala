@@ -18,31 +18,23 @@ trait BatchGetQueryExecutionOutput extends StObject {
 }
 object BatchGetQueryExecutionOutput {
   
-  @scala.inline
-  def apply(): BatchGetQueryExecutionOutput = {
+  inline def apply(): BatchGetQueryExecutionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetQueryExecutionOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetQueryExecutionOutputMutableBuilder[Self <: BatchGetQueryExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetQueryExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setQueryExecutions(value: QueryExecutionList): Self = StObject.set(x, "QueryExecutions", value.asInstanceOf[js.Any])
+    inline def setQueryExecutions(value: QueryExecutionList): Self = StObject.set(x, "QueryExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryExecutionsUndefined: Self = StObject.set(x, "QueryExecutions", js.undefined)
+    inline def setQueryExecutionsUndefined: Self = StObject.set(x, "QueryExecutions", js.undefined)
     
-    @scala.inline
-    def setQueryExecutionsVarargs(value: QueryExecution*): Self = StObject.set(x, "QueryExecutions", js.Array(value :_*))
+    inline def setQueryExecutionsVarargs(value: QueryExecution*): Self = StObject.set(x, "QueryExecutions", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedQueryExecutionIds(value: UnprocessedQueryExecutionIdList): Self = StObject.set(x, "UnprocessedQueryExecutionIds", value.asInstanceOf[js.Any])
+    inline def setUnprocessedQueryExecutionIds(value: UnprocessedQueryExecutionIdList): Self = StObject.set(x, "UnprocessedQueryExecutionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedQueryExecutionIdsUndefined: Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.undefined)
+    inline def setUnprocessedQueryExecutionIdsUndefined: Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.undefined)
     
-    @scala.inline
-    def setUnprocessedQueryExecutionIdsVarargs(value: UnprocessedQueryExecutionId*): Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.Array(value :_*))
+    inline def setUnprocessedQueryExecutionIdsVarargs(value: UnprocessedQueryExecutionId*): Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.Array(value :_*))
   }
 }

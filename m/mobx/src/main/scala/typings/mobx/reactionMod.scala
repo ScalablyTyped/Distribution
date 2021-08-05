@@ -49,7 +49,7 @@ object reactionMod {
     
     var diffValue: Double = js.native
     
-    var errorHandler: js.Any = js.native
+    /* private */ var errorHandler: js.Any = js.native
     
     def getDisposer(): IReactionDisposer = js.native
     
@@ -75,7 +75,7 @@ object reactionMod {
     /* CompleteClass */
     override def onBecomeStale(): Unit = js.native
     
-    var onInvalidate: js.Any = js.native
+    /* private */ var onInvalidate: js.Any = js.native
     
     def reportExceptionInDerivation(error: js.Any): Unit = js.native
     
@@ -105,17 +105,13 @@ object reactionMod {
     var unboundDepsCount: Double = js.native
   }
   
-  @scala.inline
-  def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReaction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/reaction.Reaction */ Boolean]
+  inline def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReaction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/reaction.Reaction */ Boolean]
   
-  @scala.inline
-  def onReactionError(handler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("onReactionError")(handler.asInstanceOf[js.Any]).asInstanceOf[Lambda]
+  inline def onReactionError(handler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("onReactionError")(handler.asInstanceOf[js.Any]).asInstanceOf[Lambda]
   
-  @scala.inline
-  def runReactions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runReactions")().asInstanceOf[Unit]
+  inline def runReactions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runReactions")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setReactionScheduler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setReactionScheduler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait IReactionDisposer extends StObject {

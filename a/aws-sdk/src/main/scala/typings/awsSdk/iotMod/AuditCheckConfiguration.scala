@@ -13,19 +13,15 @@ trait AuditCheckConfiguration extends StObject {
 }
 object AuditCheckConfiguration {
   
-  @scala.inline
-  def apply(): AuditCheckConfiguration = {
+  inline def apply(): AuditCheckConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditCheckConfiguration]
   }
   
-  @scala.inline
-  implicit class AuditCheckConfigurationMutableBuilder[Self <: AuditCheckConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AuditCheckConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

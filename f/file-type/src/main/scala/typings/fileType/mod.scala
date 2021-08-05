@@ -30,15 +30,11 @@ object mod {
   	@param buffer - A buffer representing file data. It works best if the buffer contains the entire file, it may work with a smaller portion as well.
   	@returns The detected file type and MIME type, or `undefined` when there is no match.
   	*/
-  @scala.inline
-  def fromBuffer(buffer: Buffer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
-  @scala.inline
-  def fromBuffer(buffer: ArrayBuffer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
-  @scala.inline
-  def fromBuffer(buffer: Uint8Array): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
+  inline def fromBuffer(buffer: Buffer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
+  inline def fromBuffer(buffer: ArrayBuffer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
+  inline def fromBuffer(buffer: Uint8Array): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
   
-  @scala.inline
-  def fromFile(path: String): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
+  inline def fromFile(path: String): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
   
   /**
   	Detect the file type of a Node.js [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable).
@@ -46,8 +42,7 @@ object mod {
   	@param stream - A readable stream representing file data.
   	@returns The detected file type and MIME type, or `undefined` when there is no match.
   	*/
-  @scala.inline
-  def fromStream(stream: Readable): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
+  inline def fromStream(stream: Readable): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
   
   /**
   	Detect the file type from an [`ITokenizer`](https://github.com/Borewit/strtok3#tokenizer) source.
@@ -68,8 +63,7 @@ object mod {
   	@param tokenizer - File source implementing the tokenizer interface.
   	@returns The detected file type and MIME type, or `undefined` when there is no match.
   	*/
-  @scala.inline
-  def fromTokenizer(tokenizer: ITokenizer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenizer")(tokenizer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
+  inline def fromTokenizer(tokenizer: ITokenizer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenizer")(tokenizer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]]]
   
   /**
   	Supported MIME types.
@@ -98,8 +92,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def stream(readableStream: Readable): js.Promise[typings.fileType.coreMod.ReadableStreamWithFileType] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(readableStream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.fileType.coreMod.ReadableStreamWithFileType]]
+  inline def stream(readableStream: Readable): js.Promise[typings.fileType.coreMod.ReadableStreamWithFileType] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(readableStream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.fileType.coreMod.ReadableStreamWithFileType]]
   
   type FileExtension = typings.fileType.coreMod.FileExtension
   

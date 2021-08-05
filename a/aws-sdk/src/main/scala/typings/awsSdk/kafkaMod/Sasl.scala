@@ -15,19 +15,15 @@ trait Sasl extends StObject {
 }
 object Sasl {
   
-  @scala.inline
-  def apply(): Sasl = {
+  inline def apply(): Sasl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sasl]
   }
   
-  @scala.inline
-  implicit class SaslMutableBuilder[Self <: Sasl] (val x: Self) extends AnyVal {
+  extension [Self <: Sasl](x: Self) {
     
-    @scala.inline
-    def setScram(value: Scram): Self = StObject.set(x, "Scram", value.asInstanceOf[js.Any])
+    inline def setScram(value: Scram): Self = StObject.set(x, "Scram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScramUndefined: Self = StObject.set(x, "Scram", js.undefined)
+    inline def setScramUndefined: Self = StObject.set(x, "Scram", js.undefined)
   }
 }

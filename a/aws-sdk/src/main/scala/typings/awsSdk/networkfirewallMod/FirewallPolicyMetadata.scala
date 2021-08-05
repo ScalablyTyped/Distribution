@@ -18,25 +18,19 @@ trait FirewallPolicyMetadata extends StObject {
 }
 object FirewallPolicyMetadata {
   
-  @scala.inline
-  def apply(): FirewallPolicyMetadata = {
+  inline def apply(): FirewallPolicyMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirewallPolicyMetadata]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyMetadataMutableBuilder[Self <: FirewallPolicyMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyMetadata](x: Self) {
     
-    @scala.inline
-    def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

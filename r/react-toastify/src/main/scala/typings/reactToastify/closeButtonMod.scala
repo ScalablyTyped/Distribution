@@ -15,8 +15,7 @@ object closeButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastTypeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastTypeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CloseButtonProps extends StObject {
     
@@ -28,27 +27,21 @@ object closeButtonMod {
   }
   object CloseButtonProps {
     
-    @scala.inline
-    def apply(closeToast: MouseEvent[HTMLElement, NativeMouseEvent] => Unit, `type`: TypeOptions): CloseButtonProps = {
+    inline def apply(closeToast: MouseEvent[HTMLElement, NativeMouseEvent] => Unit, `type`: TypeOptions): CloseButtonProps = {
       val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction1(closeToast))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloseButtonProps]
     }
     
-    @scala.inline
-    implicit class CloseButtonPropsMutableBuilder[Self <: CloseButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CloseButtonProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setCloseToast(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "closeToast", js.Any.fromFunction1(value))
+      inline def setCloseToast(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "closeToast", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

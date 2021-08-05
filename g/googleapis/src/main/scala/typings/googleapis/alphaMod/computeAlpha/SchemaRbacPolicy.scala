@@ -23,37 +23,27 @@ trait SchemaRbacPolicy extends StObject {
 }
 object SchemaRbacPolicy {
   
-  @scala.inline
-  def apply(): SchemaRbacPolicy = {
+  inline def apply(): SchemaRbacPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRbacPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaRbacPolicyMutableBuilder[Self <: SchemaRbacPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRbacPolicy](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipals(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "principals", js.Array(value :_*))
   }
 }

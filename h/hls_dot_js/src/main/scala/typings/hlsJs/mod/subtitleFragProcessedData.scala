@@ -12,19 +12,15 @@ trait subtitleFragProcessedData extends StObject {
 }
 object subtitleFragProcessedData {
   
-  @scala.inline
-  def apply(frag: Fragment, success: Boolean): subtitleFragProcessedData = {
+  inline def apply(frag: Fragment, success: Boolean): subtitleFragProcessedData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[subtitleFragProcessedData]
   }
   
-  @scala.inline
-  implicit class subtitleFragProcessedDataMutableBuilder[Self <: subtitleFragProcessedData] (val x: Self) extends AnyVal {
+  extension [Self <: subtitleFragProcessedData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

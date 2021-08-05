@@ -11,16 +11,13 @@ trait Serializable extends StObject {
 }
 object Serializable {
   
-  @scala.inline
-  def apply(): Serializable = {
+  inline def apply(): Serializable = {
     val __obj = js.Dynamic.literal(serializable = true)
     __obj.asInstanceOf[Serializable]
   }
   
-  @scala.inline
-  implicit class SerializableMutableBuilder[Self <: Serializable] (val x: Self) extends AnyVal {
+  extension [Self <: Serializable](x: Self) {
     
-    @scala.inline
-    def setSerializable(value: `true`): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
+    inline def setSerializable(value: `true`): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
   }
 }

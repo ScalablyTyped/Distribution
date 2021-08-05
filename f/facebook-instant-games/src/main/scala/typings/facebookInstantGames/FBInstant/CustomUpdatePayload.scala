@@ -67,49 +67,35 @@ trait CustomUpdatePayload extends StObject {
 }
 object CustomUpdatePayload {
   
-  @scala.inline
-  def apply(action: UpdateAction, image: String, template: String, text: String | LocalizableContent): CustomUpdatePayload = {
+  inline def apply(action: UpdateAction, image: String, template: String, text: String | LocalizableContent): CustomUpdatePayload = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomUpdatePayload]
   }
   
-  @scala.inline
-  implicit class CustomUpdatePayloadMutableBuilder[Self <: CustomUpdatePayload] (val x: Self) extends AnyVal {
+  extension [Self <: CustomUpdatePayload](x: Self) {
     
-    @scala.inline
-    def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCta(value: String | LocalizableContent): Self = StObject.set(x, "cta", value.asInstanceOf[js.Any])
+    inline def setCta(value: String | LocalizableContent): Self = StObject.set(x, "cta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtaUndefined: Self = StObject.set(x, "cta", js.undefined)
+    inline def setCtaUndefined: Self = StObject.set(x, "cta", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification(value: String): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: String): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String | LocalizableContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | LocalizableContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

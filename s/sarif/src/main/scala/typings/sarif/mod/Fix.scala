@@ -23,31 +23,23 @@ trait Fix extends StObject {
 }
 object Fix {
   
-  @scala.inline
-  def apply(artifactChanges: js.Array[ArtifactChange]): Fix = {
+  inline def apply(artifactChanges: js.Array[ArtifactChange]): Fix = {
     val __obj = js.Dynamic.literal(artifactChanges = artifactChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fix]
   }
   
-  @scala.inline
-  implicit class FixMutableBuilder[Self <: Fix] (val x: Self) extends AnyVal {
+  extension [Self <: Fix](x: Self) {
     
-    @scala.inline
-    def setArtifactChanges(value: js.Array[ArtifactChange]): Self = StObject.set(x, "artifactChanges", value.asInstanceOf[js.Any])
+    inline def setArtifactChanges(value: js.Array[ArtifactChange]): Self = StObject.set(x, "artifactChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactChangesVarargs(value: ArtifactChange*): Self = StObject.set(x, "artifactChanges", js.Array(value :_*))
+    inline def setArtifactChangesVarargs(value: ArtifactChange*): Self = StObject.set(x, "artifactChanges", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

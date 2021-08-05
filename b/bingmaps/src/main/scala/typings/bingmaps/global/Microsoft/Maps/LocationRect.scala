@@ -121,8 +121,7 @@ object LocationRect {
     * @param southeast The south east corner of the LocationRect.
     * @returns A LocationRect using the specified locations for the northwest and southeast corners.
     */
-  @scala.inline
-  def fromCorners(
+  inline def fromCorners(
     northwest: typings.bingmaps.Microsoft.Maps.Location,
     southeast: typings.bingmaps.Microsoft.Maps.Location
   ): typings.bingmaps.Microsoft.Maps.LocationRect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCorners")(northwest.asInstanceOf[js.Any], southeast.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
@@ -135,41 +134,35 @@ object LocationRect {
     * @param east The eastern longitude of the LocationRect.
     * @returns A LocationRect defined by the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries.
     */
-  @scala.inline
-  def fromEdges(north: Double, west: Double, south: Double, east: Double): typings.bingmaps.Microsoft.Maps.LocationRect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEdges")(north.asInstanceOf[js.Any], west.asInstanceOf[js.Any], south.asInstanceOf[js.Any], east.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromEdges(north: Double, west: Double, south: Double, east: Double): typings.bingmaps.Microsoft.Maps.LocationRect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEdges")(north.asInstanceOf[js.Any], west.asInstanceOf[js.Any], south.asInstanceOf[js.Any], east.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   
   /**
     * Gets a LocationRect using a list of locations.
     * @param locations A list of locations.
     * @returns A LocationRect that encloses all the specified locations.
     */
-  @scala.inline
-  def fromLocations(locations: typings.bingmaps.Microsoft.Maps.Location*): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocations")(locations.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromLocations(locations: typings.bingmaps.Microsoft.Maps.Location*): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocations")(locations.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   /**
     * Gets a LocationRect using an array of locations.
     * @param locations An array of locations.
     * @returns A LocationRect that encloses all the specified locations.
     */
-  @scala.inline
-  def fromLocations(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location]): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocations")(locations.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromLocations(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location]): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocations")(locations.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   
-  @scala.inline
-  def fromShapes(shapes: js.Array[IPrimitive | js.Array[IPrimitive]]): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShapes")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromShapes(shapes: js.Array[IPrimitive | js.Array[IPrimitive]]): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShapes")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   /**
     * Calculates the LocationRect for an indivudal shape or an array of shapes.
     * @param shapes An indivudal shape or an array of shapes to calculate the LocationRect for.
     * @returns A LocationRect for the shapes.
     */
-  @scala.inline
-  def fromShapes(shapes: IPrimitive): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShapes")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromShapes(shapes: IPrimitive): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShapes")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   
   /**
     * Creates a LocationRect from a string with the following format: "north,west,south,east". North, west, south and east specify the coordinate number values.
     * @param str A string that repsents a LocationRect with the format "north,west,south,east".
     * @returns A LocationRect defined by the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries that have been parsed by the string.
     */
-  @scala.inline
-  def fromString(str: String): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+  inline def fromString(str: String): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   
   /**
     * A static function that merges two LocationRect to form a new LocationRect which represents the combined area of the two LocationRect objects.
@@ -177,8 +170,7 @@ object LocationRect {
     * @param rect2 The second LocationRect to merge with the first LocationRect.
     * @returns A new LocationRect which represents the combined area of the two LocationRect objects.
     */
-  @scala.inline
-  def merge(
+  inline def merge(
     rect1: typings.bingmaps.Microsoft.Maps.LocationRect,
     rect2: typings.bingmaps.Microsoft.Maps.LocationRect
   ): typings.bingmaps.Microsoft.Maps.LocationRect = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(rect1.asInstanceOf[js.Any], rect2.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]

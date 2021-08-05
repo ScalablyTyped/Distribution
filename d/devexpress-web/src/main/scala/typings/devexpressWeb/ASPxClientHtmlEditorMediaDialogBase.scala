@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorMediaDialogBase
 }
 object ASPxClientHtmlEditorMediaDialogBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBorderColorColorEdit: () => ASPxClientColorEdit,
     GetBorderStyleComboBox: () => ASPxClientComboBox,
     GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
@@ -61,22 +60,16 @@ object ASPxClientHtmlEditorMediaDialogBase {
     __obj.asInstanceOf[ASPxClientHtmlEditorMediaDialogBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorMediaDialogBaseMutableBuilder[Self <: ASPxClientHtmlEditorMediaDialogBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorMediaDialogBase](x: Self) {
     
-    @scala.inline
-    def setGetHeightSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetHeightSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMediaFileSelector(value: () => ASPxClientMediaFileSelector): Self = StObject.set(x, "GetMediaFileSelector", js.Any.fromFunction0(value))
+    inline def setGetMediaFileSelector(value: () => ASPxClientMediaFileSelector): Self = StObject.set(x, "GetMediaFileSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMoreOptionsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetMoreOptionsCheckBox", js.Any.fromFunction0(value))
+    inline def setGetMoreOptionsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetMoreOptionsCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPositionComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetPositionComboBox", js.Any.fromFunction0(value))
+    inline def setGetPositionComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetPositionComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidthSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetWidthSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetWidthSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetWidthSpinEdit", js.Any.fromFunction0(value))
   }
 }

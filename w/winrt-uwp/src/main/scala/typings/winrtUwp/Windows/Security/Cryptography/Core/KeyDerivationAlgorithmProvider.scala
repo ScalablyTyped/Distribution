@@ -20,19 +20,15 @@ trait KeyDerivationAlgorithmProvider extends StObject {
 }
 object KeyDerivationAlgorithmProvider {
   
-  @scala.inline
-  def apply(algorithmName: String, createKey: IBuffer => CryptographicKey): KeyDerivationAlgorithmProvider = {
+  inline def apply(algorithmName: String, createKey: IBuffer => CryptographicKey): KeyDerivationAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createKey = js.Any.fromFunction1(createKey))
     __obj.asInstanceOf[KeyDerivationAlgorithmProvider]
   }
   
-  @scala.inline
-  implicit class KeyDerivationAlgorithmProviderMutableBuilder[Self <: KeyDerivationAlgorithmProvider] (val x: Self) extends AnyVal {
+  extension [Self <: KeyDerivationAlgorithmProvider](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
+    inline def setCreateKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
   }
 }

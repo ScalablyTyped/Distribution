@@ -10,19 +10,15 @@ trait ArtRef extends StObject {
 }
 object ArtRef {
   
-  @scala.inline
-  def apply(): ArtRef = {
+  inline def apply(): ArtRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtRef]
   }
   
-  @scala.inline
-  implicit class ArtRefMutableBuilder[Self <: ArtRef] (val x: Self) extends AnyVal {
+  extension [Self <: ArtRef](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

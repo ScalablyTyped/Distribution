@@ -15,19 +15,15 @@ trait IEventCollision[T]
 }
 object IEventCollision {
   
-  @scala.inline
-  def apply[T](name: String, pairs: js.Array[IPair], source: T, timestamp: Double): IEventCollision[T] = {
+  inline def apply[T](name: String, pairs: js.Array[IPair], source: T, timestamp: Double): IEventCollision[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventCollision[T]]
   }
   
-  @scala.inline
-  implicit class IEventCollisionMutableBuilder[Self <: IEventCollision[?], T] (val x: Self & IEventCollision[T]) extends AnyVal {
+  extension [Self <: IEventCollision[?], T](x: Self & IEventCollision[T]) {
     
-    @scala.inline
-    def setPairs(value: js.Array[IPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
+    inline def setPairs(value: js.Array[IPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPairsVarargs(value: IPair*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+    inline def setPairsVarargs(value: IPair*): Self = StObject.set(x, "pairs", js.Array(value :_*))
   }
 }

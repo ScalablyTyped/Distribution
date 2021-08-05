@@ -37,55 +37,39 @@ trait Organization extends StObject {
 }
 object Organization {
   
-  @scala.inline
-  def apply(): Organization = {
+  inline def apply(): Organization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Organization]
   }
   
-  @scala.inline
-  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
+  extension [Self <: Organization](x: Self) {
     
-    @scala.inline
-    def setCompany_name(value: String): Self = StObject.set(x, "company_name", value.asInstanceOf[js.Any])
+    inline def setCompany_name(value: String): Self = StObject.set(x, "company_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompany_nameUndefined: Self = StObject.set(x, "company_name", js.undefined)
+    inline def setCompany_nameUndefined: Self = StObject.set(x, "company_name", js.undefined)
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+    inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setQcu(value: Double): Self = StObject.set(x, "qcu", value.asInstanceOf[js.Any])
+    inline def setQcu(value: Double): Self = StObject.set(x, "qcu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQcuUndefined: Self = StObject.set(x, "qcu", js.undefined)
+    inline def setQcuUndefined: Self = StObject.set(x, "qcu", js.undefined)
     
-    @scala.inline
-    def setState(value: ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTier(value: FREE | BASIC | PRO | ENTERPRISE): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: FREE | BASIC | PRO | ENTERPRISE): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

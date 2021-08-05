@@ -21,8 +21,7 @@ object Vertices {
     * @param {bool} signed
     * @return {number} The area
     */
-  @scala.inline
-  def area(vertices: js.Array[Vector], signed: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(vertices.asInstanceOf[js.Any], signed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def area(vertices: js.Array[Vector], signed: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(vertices.asInstanceOf[js.Any], signed.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the centre (centroid) of the set of vertices.
@@ -30,11 +29,9 @@ object Vertices {
     * @param {vertices} vertices
     * @return {vector} The centre point
     */
-  @scala.inline
-  def centre(vertices: js.Array[Vector]): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("centre")(vertices.asInstanceOf[js.Any]).asInstanceOf[Vector]
+  inline def centre(vertices: js.Array[Vector]): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("centre")(vertices.asInstanceOf[js.Any]).asInstanceOf[Vector]
   
-  @scala.inline
-  def chamfer(
+  inline def chamfer(
     vertices: js.Array[Vector],
     radius: js.Array[Double],
     quality: Double,
@@ -52,8 +49,7 @@ object Vertices {
     * @param {number} qualityMax
     * @return {vertices} vertices
     */
-  @scala.inline
-  def chamfer(
+  inline def chamfer(
     vertices: js.Array[Vector],
     radius: Double,
     quality: Double,
@@ -67,8 +63,7 @@ object Vertices {
     * @param {vertices} vertices
     * @return {vertices} vertices
     */
-  @scala.inline
-  def clockwiseSort(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("clockwiseSort")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
+  inline def clockwiseSort(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("clockwiseSort")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
   
   /**
     * Returns `true` if the `point` is inside the set of `vertices`.
@@ -77,8 +72,7 @@ object Vertices {
     * @param {vector} point
     * @return {boolean} True if the vertices contains point, otherwise false
     */
-  @scala.inline
-  def contains(vertices: js.Array[Vector], point: Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(vertices.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(vertices: js.Array[Vector], point: Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(vertices.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Creates a new set of `Matter.Body` compatible vertices.
@@ -96,8 +90,7 @@ object Vertices {
     * @param {body} body
     * @return {vertices} vertices
     */
-  @scala.inline
-  def create(points: js.Array[Vector], body: Body): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(points.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
+  inline def create(points: js.Array[Vector], body: Body): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(points.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
   
   /**
     * Parses a string containing ordered x y pairs separated by spaces (and optionally commas),
@@ -108,8 +101,7 @@ object Vertices {
     * @param {body} body
     * @return {vertices} vertices
     */
-  @scala.inline
-  def fromPath(path: String, body: Body): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(path.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
+  inline def fromPath(path: String, body: Body): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(path.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
   
   /**
     * Returns the convex hull of the input vertices as a new array of points.
@@ -117,8 +109,7 @@ object Vertices {
     * @param {vertices} vertices
     * @return [vertex] vertices
     */
-  @scala.inline
-  def hull(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("hull")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
+  inline def hull(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("hull")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
   
   /**
     * Returns the moment of inertia (second moment of area) of the set of vertices given the total mass.
@@ -127,8 +118,7 @@ object Vertices {
     * @param {number} mass
     * @return {number} The polygon's moment of inertia
     */
-  @scala.inline
-  def inertia(vertices: js.Array[Vector], mass: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(vertices.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def inertia(vertices: js.Array[Vector], mass: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(vertices.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns true if the vertices form a convex shape (vertices must be in clockwise order).
@@ -136,8 +126,7 @@ object Vertices {
     * @param {vertices} vertices
     * @return {bool} `true` if the `vertices` are convex, `false` if not (or `null` if not computable).
     */
-  @scala.inline
-  def isConvex(vertices: js.Array[Vector]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvex")(vertices.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isConvex(vertices: js.Array[Vector]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvex")(vertices.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns the average (mean) of the set of vertices.
@@ -145,8 +134,7 @@ object Vertices {
     * @param {vertices} vertices
     * @return {vector} The average point
     */
-  @scala.inline
-  def mean(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
+  inline def mean(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
   
   /**
     * Rotates the set of vertices in-place.
@@ -156,8 +144,7 @@ object Vertices {
     * @param {vector} point
     * @return {vertices} vertices
     */
-  @scala.inline
-  def rotate(vertices: js.Array[Vector], angle: Double, point: Vector): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(vertices.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
+  inline def rotate(vertices: js.Array[Vector], angle: Double, point: Vector): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(vertices.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
   
   /**
     * Scales the vertices from a point (default is centre) in-place.
@@ -168,8 +155,7 @@ object Vertices {
     * @param {vector} point
     * @return {vertices} vertices
     */
-  @scala.inline
-  def scale(vertices: js.Array[Vector], scaleX: Double, scaleY: Double, point: Vector): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(vertices.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
+  inline def scale(vertices: js.Array[Vector], scaleX: Double, scaleY: Double, point: Vector): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(vertices.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
   
   /**
     * Translates the set of vertices in-place.
@@ -179,6 +165,5 @@ object Vertices {
     * @param {number} scalar
     * @return {vertices} vertices
     */
-  @scala.inline
-  def translate(vertices: js.Array[Vector], vector: Vector, scalar: Double): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(vertices.asInstanceOf[js.Any], vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
+  inline def translate(vertices: js.Array[Vector], vector: Vector, scalar: Double): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(vertices.asInstanceOf[js.Any], vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
 }

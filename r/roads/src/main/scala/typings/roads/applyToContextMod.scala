@@ -11,6 +11,5 @@ object applyToContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(key: String, `val`: js.Any): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  inline def default(key: String, `val`: js.Any): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Middleware]
 }

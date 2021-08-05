@@ -12,19 +12,15 @@ trait ObjectsResponse[DataType] extends StObject {
 }
 object ObjectsResponse {
   
-  @scala.inline
-  def apply[DataType](data: DataType, status: Double): ObjectsResponse[DataType] = {
+  inline def apply[DataType](data: DataType, status: Double): ObjectsResponse[DataType] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectsResponse[DataType]]
   }
   
-  @scala.inline
-  implicit class ObjectsResponseMutableBuilder[Self <: ObjectsResponse[?], DataType] (val x: Self & ObjectsResponse[DataType]) extends AnyVal {
+  extension [Self <: ObjectsResponse[?], DataType](x: Self & ObjectsResponse[DataType]) {
     
-    @scala.inline
-    def setData(value: DataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ trait UpdateSimulationApplicationRequest extends StObject {
 }
 object UpdateSimulationApplicationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: Arn,
     robotSoftwareSuite: RobotSoftwareSuite,
     simulationSoftwareSuite: SimulationSoftwareSuite,
@@ -49,34 +48,24 @@ object UpdateSimulationApplicationRequest {
     __obj.asInstanceOf[UpdateSimulationApplicationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSimulationApplicationRequestMutableBuilder[Self <: UpdateSimulationApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSimulationApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
+    inline def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
+    inline def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
     
-    @scala.inline
-    def setRenderingEngine(value: RenderingEngine): Self = StObject.set(x, "renderingEngine", value.asInstanceOf[js.Any])
+    inline def setRenderingEngine(value: RenderingEngine): Self = StObject.set(x, "renderingEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingEngineUndefined: Self = StObject.set(x, "renderingEngine", js.undefined)
+    inline def setRenderingEngineUndefined: Self = StObject.set(x, "renderingEngine", js.undefined)
     
-    @scala.inline
-    def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = StObject.set(x, "robotSoftwareSuite", value.asInstanceOf[js.Any])
+    inline def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = StObject.set(x, "robotSoftwareSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulationSoftwareSuite(value: SimulationSoftwareSuite): Self = StObject.set(x, "simulationSoftwareSuite", value.asInstanceOf[js.Any])
+    inline def setSimulationSoftwareSuite(value: SimulationSoftwareSuite): Self = StObject.set(x, "simulationSoftwareSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSources(value: SourceConfigs): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: SourceConfigs): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

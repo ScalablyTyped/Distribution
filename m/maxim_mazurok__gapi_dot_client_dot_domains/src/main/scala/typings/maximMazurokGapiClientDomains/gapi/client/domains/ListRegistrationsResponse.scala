@@ -14,28 +14,21 @@ trait ListRegistrationsResponse extends StObject {
 }
 object ListRegistrationsResponse {
   
-  @scala.inline
-  def apply(): ListRegistrationsResponse = {
+  inline def apply(): ListRegistrationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRegistrationsResponse]
   }
   
-  @scala.inline
-  implicit class ListRegistrationsResponseMutableBuilder[Self <: ListRegistrationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegistrationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRegistrations(value: js.Array[Registration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
+    inline def setRegistrations(value: js.Array[Registration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationsUndefined: Self = StObject.set(x, "registrations", js.undefined)
+    inline def setRegistrationsUndefined: Self = StObject.set(x, "registrations", js.undefined)
     
-    @scala.inline
-    def setRegistrationsVarargs(value: Registration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
+    inline def setRegistrationsVarargs(value: Registration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
   }
 }

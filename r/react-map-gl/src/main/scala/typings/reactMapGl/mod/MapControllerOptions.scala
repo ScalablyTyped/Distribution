@@ -30,78 +30,55 @@ trait MapControllerOptions extends StObject {
 }
 object MapControllerOptions {
   
-  @scala.inline
-  def apply(isInteractive: Boolean): MapControllerOptions = {
+  inline def apply(isInteractive: Boolean): MapControllerOptions = {
     val __obj = js.Dynamic.literal(isInteractive = isInteractive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControllerOptions]
   }
   
-  @scala.inline
-  implicit class MapControllerOptionsMutableBuilder[Self <: MapControllerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapControllerOptions](x: Self) {
     
-    @scala.inline
-    def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
+    inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
+    inline def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
     
-    @scala.inline
-    def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
+    inline def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
+    inline def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
     
-    @scala.inline
-    def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
+    inline def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
+    inline def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
     
-    @scala.inline
-    def setEventManager(value: js.Any): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
+    inline def setEventManager(value: js.Any): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
+    inline def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
     
-    @scala.inline
-    def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
+    inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    @scala.inline
-    def setOnStateChange(value: /* state */ MapState => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+    inline def setOnStateChange(value: /* state */ MapState => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+    inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
     
-    @scala.inline
-    def setOnViewportChange(
+    inline def setOnViewportChange(
       value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit
     ): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
-    @scala.inline
-    def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
+    inline def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
+    inline def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
     
-    @scala.inline
-    def setTouchRotate(value: Boolean): Self = StObject.set(x, "touchRotate", value.asInstanceOf[js.Any])
+    inline def setTouchRotate(value: Boolean): Self = StObject.set(x, "touchRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchRotateUndefined: Self = StObject.set(x, "touchRotate", js.undefined)
+    inline def setTouchRotateUndefined: Self = StObject.set(x, "touchRotate", js.undefined)
     
-    @scala.inline
-    def setTouchZoom(value: Boolean): Self = StObject.set(x, "touchZoom", value.asInstanceOf[js.Any])
+    inline def setTouchZoom(value: Boolean): Self = StObject.set(x, "touchZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchZoomUndefined: Self = StObject.set(x, "touchZoom", js.undefined)
+    inline def setTouchZoomUndefined: Self = StObject.set(x, "touchZoom", js.undefined)
   }
 }

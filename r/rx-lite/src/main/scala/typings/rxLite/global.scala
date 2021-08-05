@@ -61,15 +61,13 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def create(action: js.Function0[Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+      inline def create(action: js.Function0[Unit]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
       
       /* static member */
       @JSGlobal("Rx.Disposable.empty")
       @js.native
       def empty: IDisposable = js.native
-      @scala.inline
-      def empty_=(x: IDisposable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+      inline def empty_=(x: IDisposable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
     }
     
     // Notifications
@@ -85,16 +83,13 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def createOnCompleted[T](): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnCompleted")().asInstanceOf[typings.rxLite.Rx.Notification[T]]
+      inline def createOnCompleted[T](): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnCompleted")().asInstanceOf[typings.rxLite.Rx.Notification[T]]
       
       /* static member */
-      @scala.inline
-      def createOnError[T](exception: js.Any): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnError")(exception.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
+      inline def createOnError[T](exception: js.Any): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnError")(exception.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
       
       /* static member */
-      @scala.inline
-      def createOnNext[T](value: T): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnNext")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
+      inline def createOnNext[T](value: T): typings.rxLite.Rx.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnNext")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rxLite.Rx.Notification[T]]
     }
     
     @JSGlobal("Rx.Observable")
@@ -304,41 +299,29 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def asArray[T](args: T*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+      inline def asArray[T](args: T*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
       
-      @scala.inline
-      def defaultComparer(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def defaultComparer(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def defaultError(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def defaultError(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def defaultKeySerializer(key: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultKeySerializer")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def defaultKeySerializer(key: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultKeySerializer")(key.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def defaultNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNow")().asInstanceOf[Double]
+      inline def defaultNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNow")().asInstanceOf[Double]
       
-      @scala.inline
-      def defaultSubComparer(left: js.Any, right: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSubComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def defaultSubComparer(left: js.Any, right: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSubComparer")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @scala.inline
-      def identity[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+      inline def identity[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(value.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @scala.inline
-      def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def isPromise(p: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isPromise(p: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
+      inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
       
-      @scala.inline
-      def not(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def not(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def notDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def notDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     object internals {
@@ -392,8 +375,7 @@ object global {
         @JSGlobal("Rx.internals.PriorityQueue.count")
         @js.native
         def count: Double = js.native
-        @scala.inline
-        def count_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("count")(x.asInstanceOf[js.Any])
+        inline def count_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("count")(x.asInstanceOf[js.Any])
       }
       
       @JSGlobal("Rx.internals.ScheduledItem")
@@ -446,11 +428,9 @@ object global {
         var state: TTime = js.native
       }
       
-      @scala.inline
-      def addRef[T](xs: typings.rxLite.Rx.Observable[T], r: GetDisposable): typings.rxLite.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addRef")(xs.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.rxLite.Rx.Observable[T]]
+      inline def addRef[T](xs: typings.rxLite.Rx.Observable[T], r: GetDisposable): typings.rxLite.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addRef")(xs.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.rxLite.Rx.Observable[T]]
       
-      @scala.inline
-      def isEqual(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def isEqual(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
   }
 }

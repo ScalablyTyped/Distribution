@@ -10,9 +10,9 @@ object mimeMod {
   @js.native
   class MimeData () extends StObject {
     
-    var _types: js.Any = js.native
+    /* private */ var _types: js.Any = js.native
     
-    var _values: js.Any = js.native
+    /* private */ var _values: js.Any = js.native
     
     /**
       * Remove all data entries from the dataset.

@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait keyOperation extends StObject
 object keyOperation {
   
-  @scala.inline
-  def decrypt: typings.jose.joseStrings.decrypt = "decrypt".asInstanceOf[typings.jose.joseStrings.decrypt]
+  inline def decrypt: typings.jose.joseStrings.decrypt = "decrypt".asInstanceOf[typings.jose.joseStrings.decrypt]
   
-  @scala.inline
-  def deriveKey: typings.jose.joseStrings.deriveKey = "deriveKey".asInstanceOf[typings.jose.joseStrings.deriveKey]
+  inline def deriveKey: typings.jose.joseStrings.deriveKey = "deriveKey".asInstanceOf[typings.jose.joseStrings.deriveKey]
   
-  @scala.inline
-  def encrypt: typings.jose.joseStrings.encrypt = "encrypt".asInstanceOf[typings.jose.joseStrings.encrypt]
+  inline def encrypt: typings.jose.joseStrings.encrypt = "encrypt".asInstanceOf[typings.jose.joseStrings.encrypt]
   
-  @scala.inline
-  def sign: typings.jose.joseStrings.sign = "sign".asInstanceOf[typings.jose.joseStrings.sign]
+  inline def sign: typings.jose.joseStrings.sign = "sign".asInstanceOf[typings.jose.joseStrings.sign]
   
-  @scala.inline
-  def unwrapKey: typings.jose.joseStrings.unwrapKey = "unwrapKey".asInstanceOf[typings.jose.joseStrings.unwrapKey]
+  inline def unwrapKey: typings.jose.joseStrings.unwrapKey = "unwrapKey".asInstanceOf[typings.jose.joseStrings.unwrapKey]
   
-  @scala.inline
-  def verify: typings.jose.joseStrings.verify = "verify".asInstanceOf[typings.jose.joseStrings.verify]
+  inline def verify: typings.jose.joseStrings.verify = "verify".asInstanceOf[typings.jose.joseStrings.verify]
   
-  @scala.inline
-  def wrapKey: typings.jose.joseStrings.wrapKey = "wrapKey".asInstanceOf[typings.jose.joseStrings.wrapKey]
+  inline def wrapKey: typings.jose.joseStrings.wrapKey = "wrapKey".asInstanceOf[typings.jose.joseStrings.wrapKey]
 }

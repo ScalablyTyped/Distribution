@@ -12,16 +12,13 @@ trait AppointmentStoreChangedDeferral extends StObject {
 }
 object AppointmentStoreChangedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): AppointmentStoreChangedDeferral = {
+  inline def apply(complete: () => Unit): AppointmentStoreChangedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[AppointmentStoreChangedDeferral]
   }
   
-  @scala.inline
-  implicit class AppointmentStoreChangedDeferralMutableBuilder[Self <: AppointmentStoreChangedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentStoreChangedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

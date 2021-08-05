@@ -29,14 +29,12 @@ object srcComponentsMediaImageMod {
     @JSImport("wix-ui-core/src/components/media-image", "MediaImage.defaultProps")
     @js.native
     def defaultProps: `4` = js.native
-    @scala.inline
-    def defaultProps_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/media-image", "MediaImage.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/src/components/media-image", "MediaImageScaling")

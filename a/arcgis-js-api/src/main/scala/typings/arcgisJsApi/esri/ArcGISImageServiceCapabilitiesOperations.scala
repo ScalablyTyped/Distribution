@@ -96,8 +96,7 @@ trait ArcGISImageServiceCapabilitiesOperations
 }
 object ArcGISImageServiceCapabilitiesOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -118,43 +117,30 @@ object ArcGISImageServiceCapabilitiesOperations {
     __obj.asInstanceOf[ArcGISImageServiceCapabilitiesOperations]
   }
   
-  @scala.inline
-  implicit class ArcGISImageServiceCapabilitiesOperationsMutableBuilder[Self <: ArcGISImageServiceCapabilitiesOperations] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISImageServiceCapabilitiesOperations](x: Self) {
     
-    @scala.inline
-    def setSupportsCalculateVolume(value: Unit): Self = StObject.set(x, "supportsCalculateVolume", value.asInstanceOf[js.Any])
+    inline def setSupportsCalculateVolume(value: Unit): Self = StObject.set(x, "supportsCalculateVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsComputeHistograms(value: Unit): Self = StObject.set(x, "supportsComputeHistograms", value.asInstanceOf[js.Any])
+    inline def setSupportsComputeHistograms(value: Unit): Self = StObject.set(x, "supportsComputeHistograms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsComputePixelLocation(value: Unit): Self = StObject.set(x, "supportsComputePixelLocation", value.asInstanceOf[js.Any])
+    inline def setSupportsComputePixelLocation(value: Unit): Self = StObject.set(x, "supportsComputePixelLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsComputeStatisticsHistograms(value: Unit): Self = StObject.set(x, "supportsComputeStatisticsHistograms", value.asInstanceOf[js.Any])
+    inline def setSupportsComputeStatisticsHistograms(value: Unit): Self = StObject.set(x, "supportsComputeStatisticsHistograms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDownload(value: Unit): Self = StObject.set(x, "supportsDownload", value.asInstanceOf[js.Any])
+    inline def setSupportsDownload(value: Unit): Self = StObject.set(x, "supportsDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsExportImage(value: Unit): Self = StObject.set(x, "supportsExportImage", value.asInstanceOf[js.Any])
+    inline def setSupportsExportImage(value: Unit): Self = StObject.set(x, "supportsExportImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsGetSamples(value: Unit): Self = StObject.set(x, "supportsGetSamples", value.asInstanceOf[js.Any])
+    inline def setSupportsGetSamples(value: Unit): Self = StObject.set(x, "supportsGetSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsIdentify(value: Unit): Self = StObject.set(x, "supportsIdentify", value.asInstanceOf[js.Any])
+    inline def setSupportsIdentify(value: Unit): Self = StObject.set(x, "supportsIdentify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMeasure(value: Unit): Self = StObject.set(x, "supportsMeasure", value.asInstanceOf[js.Any])
+    inline def setSupportsMeasure(value: Unit): Self = StObject.set(x, "supportsMeasure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsProject(value: Unit): Self = StObject.set(x, "supportsProject", value.asInstanceOf[js.Any])
+    inline def setSupportsProject(value: Unit): Self = StObject.set(x, "supportsProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQuery(value: Unit): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
+    inline def setSupportsQuery(value: Unit): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQueryBoundary(value: Unit): Self = StObject.set(x, "supportsQueryBoundary", value.asInstanceOf[js.Any])
+    inline def setSupportsQueryBoundary(value: Unit): Self = StObject.set(x, "supportsQueryBoundary", value.asInstanceOf[js.Any])
   }
 }

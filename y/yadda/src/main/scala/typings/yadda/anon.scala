@@ -12,17 +12,14 @@ object anon {
   }
   object TypeofScenarioLevelPlugin {
     
-    @scala.inline
-    def apply(init: js.Any => Unit): TypeofScenarioLevelPlugin = {
+    inline def apply(init: js.Any => Unit): TypeofScenarioLevelPlugin = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
       __obj.asInstanceOf[TypeofScenarioLevelPlugin]
     }
     
-    @scala.inline
-    implicit class TypeofScenarioLevelPluginMutableBuilder[Self <: TypeofScenarioLevelPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofScenarioLevelPlugin](x: Self) {
       
-      @scala.inline
-      def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
   

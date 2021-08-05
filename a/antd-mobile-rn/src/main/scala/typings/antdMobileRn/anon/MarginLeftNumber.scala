@@ -10,16 +10,13 @@ trait MarginLeftNumber extends StObject {
 }
 object MarginLeftNumber {
   
-  @scala.inline
-  def apply(marginLeft: Double): MarginLeftNumber = {
+  inline def apply(marginLeft: Double): MarginLeftNumber = {
     val __obj = js.Dynamic.literal(marginLeft = marginLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginLeftNumber]
   }
   
-  @scala.inline
-  implicit class MarginLeftNumberMutableBuilder[Self <: MarginLeftNumber] (val x: Self) extends AnyVal {
+  extension [Self <: MarginLeftNumber](x: Self) {
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
   }
 }

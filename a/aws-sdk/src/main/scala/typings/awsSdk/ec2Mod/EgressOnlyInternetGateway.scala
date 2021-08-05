@@ -23,37 +23,27 @@ trait EgressOnlyInternetGateway extends StObject {
 }
 object EgressOnlyInternetGateway {
   
-  @scala.inline
-  def apply(): EgressOnlyInternetGateway = {
+  inline def apply(): EgressOnlyInternetGateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EgressOnlyInternetGateway]
   }
   
-  @scala.inline
-  implicit class EgressOnlyInternetGatewayMutableBuilder[Self <: EgressOnlyInternetGateway] (val x: Self) extends AnyVal {
+  extension [Self <: EgressOnlyInternetGateway](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: InternetGatewayAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: InternetGatewayAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setEgressOnlyInternetGatewayId(value: EgressOnlyInternetGatewayId): Self = StObject.set(x, "EgressOnlyInternetGatewayId", value.asInstanceOf[js.Any])
+    inline def setEgressOnlyInternetGatewayId(value: EgressOnlyInternetGatewayId): Self = StObject.set(x, "EgressOnlyInternetGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressOnlyInternetGatewayIdUndefined: Self = StObject.set(x, "EgressOnlyInternetGatewayId", js.undefined)
+    inline def setEgressOnlyInternetGatewayIdUndefined: Self = StObject.set(x, "EgressOnlyInternetGatewayId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

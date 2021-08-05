@@ -18,25 +18,19 @@ trait Nameserver extends StObject {
 }
 object Nameserver {
   
-  @scala.inline
-  def apply(Name: HostName): Nameserver = {
+  inline def apply(Name: HostName): Nameserver = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nameserver]
   }
   
-  @scala.inline
-  implicit class NameserverMutableBuilder[Self <: Nameserver] (val x: Self) extends AnyVal {
+  extension [Self <: Nameserver](x: Self) {
     
-    @scala.inline
-    def setGlueIps(value: GlueIpList): Self = StObject.set(x, "GlueIps", value.asInstanceOf[js.Any])
+    inline def setGlueIps(value: GlueIpList): Self = StObject.set(x, "GlueIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueIpsUndefined: Self = StObject.set(x, "GlueIps", js.undefined)
+    inline def setGlueIpsUndefined: Self = StObject.set(x, "GlueIps", js.undefined)
     
-    @scala.inline
-    def setGlueIpsVarargs(value: GlueIp*): Self = StObject.set(x, "GlueIps", js.Array(value :_*))
+    inline def setGlueIpsVarargs(value: GlueIp*): Self = StObject.set(x, "GlueIps", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

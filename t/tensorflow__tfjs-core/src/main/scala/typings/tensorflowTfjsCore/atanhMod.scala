@@ -13,6 +13,5 @@ object atanhMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atanh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def atanh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

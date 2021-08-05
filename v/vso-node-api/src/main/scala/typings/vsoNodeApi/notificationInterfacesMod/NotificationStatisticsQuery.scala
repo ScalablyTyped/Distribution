@@ -10,19 +10,15 @@ trait NotificationStatisticsQuery extends StObject {
 }
 object NotificationStatisticsQuery {
   
-  @scala.inline
-  def apply(conditions: js.Array[NotificationStatisticsQueryConditions]): NotificationStatisticsQuery = {
+  inline def apply(conditions: js.Array[NotificationStatisticsQueryConditions]): NotificationStatisticsQuery = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationStatisticsQuery]
   }
   
-  @scala.inline
-  implicit class NotificationStatisticsQueryMutableBuilder[Self <: NotificationStatisticsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationStatisticsQuery](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[NotificationStatisticsQueryConditions]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[NotificationStatisticsQueryConditions]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: NotificationStatisticsQueryConditions*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: NotificationStatisticsQueryConditions*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

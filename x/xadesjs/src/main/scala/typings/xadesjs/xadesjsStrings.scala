@@ -12,48 +12,41 @@ object xadesjsStrings {
   sealed trait OIDAsURI
     extends StObject
        with IdentifierQualifier
-  @scala.inline
-  def OIDAsURI: OIDAsURI = "OIDAsURI".asInstanceOf[OIDAsURI]
+  inline def OIDAsURI: OIDAsURI = "OIDAsURI".asInstanceOf[OIDAsURI]
   
   @js.native
   sealed trait OIDAsURN
     extends StObject
        with IdentifierQualifier
-  @scala.inline
-  def OIDAsURN: OIDAsURN = "OIDAsURN".asInstanceOf[OIDAsURN]
+  inline def OIDAsURN: OIDAsURN = "OIDAsURN".asInstanceOf[OIDAsURN]
   
   @js.native
   sealed trait ber
     extends StObject
        with _EncodingType
-  @scala.inline
-  def ber: ber = "ber".asInstanceOf[ber]
+  inline def ber: ber = "ber".asInstanceOf[ber]
   
   @js.native
   sealed trait cer
     extends StObject
        with _EncodingType
-  @scala.inline
-  def cer: cer = "cer".asInstanceOf[cer]
+  inline def cer: cer = "cer".asInstanceOf[cer]
   
   @js.native
   sealed trait der
     extends StObject
        with _EncodingType
-  @scala.inline
-  def der: der = "der".asInstanceOf[der]
+  inline def der: der = "der".asInstanceOf[der]
   
   @js.native
   sealed trait per
     extends StObject
        with _EncodingType
-  @scala.inline
-  def per: per = "per".asInstanceOf[per]
+  inline def per: per = "per".asInstanceOf[per]
   
   @js.native
   sealed trait xer
     extends StObject
        with _EncodingType
-  @scala.inline
-  def xer: xer = "xer".asInstanceOf[xer]
+  inline def xer: xer = "xer".asInstanceOf[xer]
 }

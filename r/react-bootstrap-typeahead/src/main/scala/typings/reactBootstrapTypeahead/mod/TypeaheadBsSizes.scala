@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeaheadBsSizes extends StObject
 object TypeaheadBsSizes {
   
-  @scala.inline
-  def large: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large = "large".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large]
+  inline def large: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large = "large".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large]
   
-  @scala.inline
-  def lg: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg = "lg".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg]
+  inline def lg: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg = "lg".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg]
   
-  @scala.inline
-  def sm: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm = "sm".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm]
+  inline def sm: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm = "sm".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm]
   
-  @scala.inline
-  def small: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small = "small".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small]
+  inline def small: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small = "small".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small]
 }

@@ -12,16 +12,13 @@ trait PickImplstateContext extends StObject {
 }
 object PickImplstateContext {
   
-  @scala.inline
-  def apply(stateContext: String | JQuery): PickImplstateContext = {
+  inline def apply(stateContext: String | JQuery): PickImplstateContext = {
     val __obj = js.Dynamic.literal(stateContext = stateContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplstateContext]
   }
   
-  @scala.inline
-  implicit class PickImplstateContextMutableBuilder[Self <: PickImplstateContext] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplstateContext](x: Self) {
     
-    @scala.inline
-    def setStateContext(value: String | JQuery): Self = StObject.set(x, "stateContext", value.asInstanceOf[js.Any])
+    inline def setStateContext(value: String | JQuery): Self = StObject.set(x, "stateContext", value.asInstanceOf[js.Any])
   }
 }

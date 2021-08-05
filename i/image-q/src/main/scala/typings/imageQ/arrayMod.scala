@@ -63,17 +63,17 @@ object arrayMod {
     ) = this()
     
     /** true = GIMP, false = XNVIEW */
-    var _calculateErrorLikeGIMP: js.Any = js.native
+    /* private */ var _calculateErrorLikeGIMP: js.Any = js.native
     
-    var _distance: js.Any = js.native
+    /* private */ var _distance: js.Any = js.native
     
     /* private */ def _fillErrorLine(errorLine: js.Any, width: js.Any): js.Any = js.native
     
-    var _kernel: js.Any = js.native
+    /* private */ var _kernel: js.Any = js.native
     
-    var _minColorDistance: js.Any = js.native
+    /* private */ var _minColorDistance: js.Any = js.native
     
-    var _serpentine: js.Any = js.native
+    /* private */ var _serpentine: js.Any = js.native
     
     /* private */ def _setKernel(kernel: js.Any): js.Any = js.native
     

@@ -174,80 +174,56 @@ object spanMod {
   }
   object SpanContext {
     
-    @scala.inline
-    def apply(): SpanContext = {
+    inline def apply(): SpanContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpanContext]
     }
     
-    @scala.inline
-    implicit class SpanContextMutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
+    extension [Self <: SpanContext](x: Self) {
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEndTimestamp(value: Double): Self = StObject.set(x, "endTimestamp", value.asInstanceOf[js.Any])
+      inline def setEndTimestamp(value: Double): Self = StObject.set(x, "endTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimestampUndefined: Self = StObject.set(x, "endTimestamp", js.undefined)
+      inline def setEndTimestampUndefined: Self = StObject.set(x, "endTimestamp", js.undefined)
       
-      @scala.inline
-      def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+      inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
       
-      @scala.inline
-      def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
+      inline def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
+      inline def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
       
-      @scala.inline
-      def setSampled(value: Boolean): Self = StObject.set(x, "sampled", value.asInstanceOf[js.Any])
+      inline def setSampled(value: Boolean): Self = StObject.set(x, "sampled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampledUndefined: Self = StObject.set(x, "sampled", js.undefined)
+      inline def setSampledUndefined: Self = StObject.set(x, "sampled", js.undefined)
       
-      @scala.inline
-      def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+      inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+      inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
       
-      @scala.inline
-      def setStartTimestamp(value: Double): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartTimestamp(value: Double): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
+      inline def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
+      inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
     }
   }
 }

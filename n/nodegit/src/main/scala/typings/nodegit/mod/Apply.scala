@@ -16,16 +16,14 @@ object Apply {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def apply(
+  inline def apply(
     repo: typings.nodegit.repositoryMod.Repository,
     diff: typings.nodegit.diffMod.Diff,
     location: LOCATION,
     options: typings.nodegit.applyOptionsMod.ApplyOptions
   ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(repo.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @scala.inline
-  def toTree(
+  inline def toTree(
     repo: typings.nodegit.repositoryMod.Repository,
     preimage: typings.nodegit.treeMod.Tree,
     diff: typings.nodegit.diffMod.Diff,

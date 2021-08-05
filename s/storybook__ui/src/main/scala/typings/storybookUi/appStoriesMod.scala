@@ -23,25 +23,20 @@ object appStoriesMod {
     @JSImport("@storybook/ui/dist/app.stories", "default.component")
     @js.native
     def component: FunctionComponent[RootProps] = js.native
-    @scala.inline
-    def component_=(x: FunctionComponent[RootProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: FunctionComponent[RootProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/app.stories", "default.parameters")
     @js.native
     def parameters: Layout = js.native
-    @scala.inline
-    def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    inline def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/app.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def Default_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Default")().asInstanceOf[Element]
+  inline def Default_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Default")().asInstanceOf[Element]
   
-  @scala.inline
-  def LoadingState(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingState")().asInstanceOf[Element]
+  inline def LoadingState(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingState")().asInstanceOf[Element]
 }

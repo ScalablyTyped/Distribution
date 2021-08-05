@@ -11,12 +11,9 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def selectedKey(value: js.Any, options: OptionsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedKey")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def selectedKey(value: js.Any, options: OptionsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedKey")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def selectedKeys(value: js.Array[js.Any], options: OptionsObject): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedKeys")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def selectedKeys(value: js.Array[js.Any], options: OptionsObject): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedKeys")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def selectedValues(keys: js.Array[String], options: OptionsObject): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedValues")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def selectedValues(keys: js.Array[String], options: OptionsObject): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectedValues")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

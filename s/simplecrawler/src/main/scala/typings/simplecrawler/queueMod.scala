@@ -123,8 +123,7 @@ object queueMod {
   }
   object QueueItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       depth: Double,
       fetched: Boolean,
       host: String,
@@ -142,44 +141,31 @@ object queueMod {
       __obj.asInstanceOf[QueueItem]
     }
     
-    @scala.inline
-    implicit class QueueItemMutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
+    extension [Self <: QueueItem](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetched(value: Boolean): Self = StObject.set(x, "fetched", value.asInstanceOf[js.Any])
+      inline def setFetched(value: Boolean): Self = StObject.set(x, "fetched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateData(value: ActualDataSize): Self = StObject.set(x, "stateData", value.asInstanceOf[js.Any])
+      inline def setStateData(value: ActualDataSize): Self = StObject.set(x, "stateData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: QueueItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: QueueItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriPath(value: String): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
+      inline def setUriPath(value: String): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,25 +181,18 @@ object queueMod {
   trait QueueItemStatus extends StObject
   object QueueItemStatus {
     
-    @scala.inline
-    def downloaded: typings.simplecrawler.simplecrawlerStrings.downloaded = "downloaded".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.downloaded]
+    inline def downloaded: typings.simplecrawler.simplecrawlerStrings.downloaded = "downloaded".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.downloaded]
     
-    @scala.inline
-    def failed: typings.simplecrawler.simplecrawlerStrings.failed = "failed".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.failed]
+    inline def failed: typings.simplecrawler.simplecrawlerStrings.failed = "failed".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.failed]
     
-    @scala.inline
-    def headers: typings.simplecrawler.simplecrawlerStrings.headers = "headers".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.headers]
+    inline def headers: typings.simplecrawler.simplecrawlerStrings.headers = "headers".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.headers]
     
-    @scala.inline
-    def notfound: typings.simplecrawler.simplecrawlerStrings.notfound = "notfound".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.notfound]
+    inline def notfound: typings.simplecrawler.simplecrawlerStrings.notfound = "notfound".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.notfound]
     
-    @scala.inline
-    def queued: typings.simplecrawler.simplecrawlerStrings.queued = "queued".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.queued]
+    inline def queued: typings.simplecrawler.simplecrawlerStrings.queued = "queued".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.queued]
     
-    @scala.inline
-    def redirected: typings.simplecrawler.simplecrawlerStrings.redirected = "redirected".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.redirected]
+    inline def redirected: typings.simplecrawler.simplecrawlerStrings.redirected = "redirected".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.redirected]
     
-    @scala.inline
-    def spooled: typings.simplecrawler.simplecrawlerStrings.spooled = "spooled".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.spooled]
+    inline def spooled: typings.simplecrawler.simplecrawlerStrings.spooled = "spooled".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.spooled]
   }
 }

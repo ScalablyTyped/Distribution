@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmScrollAction extends StObject
 object fmScrollAction {
   
-  @scala.inline
-  def _fmScrollActionAbsoluteChange: `7` = 7.asInstanceOf[`7`]
+  inline def _fmScrollActionAbsoluteChange: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def fmScrollActionBegin: `5` = 5.asInstanceOf[`5`]
+  inline def fmScrollActionBegin: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def fmScrollActionControlRequest: `9` = 9.asInstanceOf[`9`]
+  inline def fmScrollActionControlRequest: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def fmScrollActionEnd: `6` = 6.asInstanceOf[`6`]
+  inline def fmScrollActionEnd: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def fmScrollActionFocusRequest: `10` = 10.asInstanceOf[`10`]
+  inline def fmScrollActionFocusRequest: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def fmScrollActionLineDown: `2` = 2.asInstanceOf[`2`]
+  inline def fmScrollActionLineDown: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmScrollActionLineUp: `1` = 1.asInstanceOf[`1`]
+  inline def fmScrollActionLineUp: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmScrollActionNoChange: `0` = 0.asInstanceOf[`0`]
+  inline def fmScrollActionNoChange: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmScrollActionPageDown: `4` = 4.asInstanceOf[`4`]
+  inline def fmScrollActionPageDown: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def fmScrollActionPageUp: `3` = 3.asInstanceOf[`3`]
+  inline def fmScrollActionPageUp: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmScrollActionPropertyChange: `8` = 8.asInstanceOf[`8`]
+  inline def fmScrollActionPropertyChange: `8` = 8.asInstanceOf[`8`]
 }

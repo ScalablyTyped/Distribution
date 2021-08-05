@@ -12,19 +12,15 @@ trait Stylesheet
 }
 object Stylesheet {
   
-  @scala.inline
-  def apply(): Stylesheet = {
+  inline def apply(): Stylesheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stylesheet]
   }
   
-  @scala.inline
-  implicit class StylesheetMutableBuilder[Self <: Stylesheet] (val x: Self) extends AnyVal {
+  extension [Self <: Stylesheet](x: Self) {
     
-    @scala.inline
-    def setStylesheet(value: StyleRules): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setStylesheet(value: StyleRules): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+    inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
   }
 }

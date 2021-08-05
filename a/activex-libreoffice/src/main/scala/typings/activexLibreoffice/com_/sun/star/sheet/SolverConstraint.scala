@@ -17,22 +17,17 @@ trait SolverConstraint extends StObject {
 }
 object SolverConstraint {
   
-  @scala.inline
-  def apply(Left: CellAddress, Operator: SolverConstraintOperator, Right: js.Any): SolverConstraint = {
+  inline def apply(Left: CellAddress, Operator: SolverConstraintOperator, Right: js.Any): SolverConstraint = {
     val __obj = js.Dynamic.literal(Left = Left.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Right = Right.asInstanceOf[js.Any])
     __obj.asInstanceOf[SolverConstraint]
   }
   
-  @scala.inline
-  implicit class SolverConstraintMutableBuilder[Self <: SolverConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: SolverConstraint](x: Self) {
     
-    @scala.inline
-    def setLeft(value: CellAddress): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: CellAddress): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: SolverConstraintOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: SolverConstraintOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: js.Any): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
+    inline def setRight(value: js.Any): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
   }
 }

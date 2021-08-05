@@ -19,25 +19,19 @@ trait RevisionTemplate extends StObject {
 }
 object RevisionTemplate {
   
-  @scala.inline
-  def apply(): RevisionTemplate = {
+  inline def apply(): RevisionTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevisionTemplate]
   }
   
-  @scala.inline
-  implicit class RevisionTemplateMutableBuilder[Self <: RevisionTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionTemplate](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSpec(value: RevisionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: RevisionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

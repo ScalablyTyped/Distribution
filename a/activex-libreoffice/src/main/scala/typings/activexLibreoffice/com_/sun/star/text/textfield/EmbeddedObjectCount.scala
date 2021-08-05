@@ -27,8 +27,7 @@ trait EmbeddedObjectCount
 }
 object EmbeddedObjectCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object EmbeddedObjectCount {
     __obj.asInstanceOf[EmbeddedObjectCount]
   }
   
-  @scala.inline
-  implicit class EmbeddedObjectCountMutableBuilder[Self <: EmbeddedObjectCount] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedObjectCount](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

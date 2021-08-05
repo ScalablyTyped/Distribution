@@ -16,8 +16,7 @@ trait EventUserLocation
 }
 object EventUserLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: NodeHandle,
@@ -39,10 +38,8 @@ object EventUserLocation {
     __obj.asInstanceOf[EventUserLocation]
   }
   
-  @scala.inline
-  implicit class EventUserLocationMutableBuilder[Self <: EventUserLocation] (val x: Self) extends AnyVal {
+  extension [Self <: EventUserLocation](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: CoordinateAccuracy): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: CoordinateAccuracy): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

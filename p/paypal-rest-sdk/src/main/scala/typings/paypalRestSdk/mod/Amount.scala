@@ -15,25 +15,19 @@ trait Amount extends StObject {
 }
 object Amount {
   
-  @scala.inline
-  def apply(currency: String, total: String): Amount = {
+  inline def apply(currency: String, total: String): Amount = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amount]
   }
   
-  @scala.inline
-  implicit class AmountMutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
+  extension [Self <: Amount](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Giftwrap): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Giftwrap): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

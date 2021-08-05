@@ -10,16 +10,13 @@ trait Provider extends StObject {
 }
 object Provider {
   
-  @scala.inline
-  def apply(sendAsync: (JSONRPCRequestPayload, JSONRPCErrorCallback) => scala.Unit): Provider = {
+  inline def apply(sendAsync: (JSONRPCRequestPayload, JSONRPCErrorCallback) => scala.Unit): Provider = {
     val __obj = js.Dynamic.literal(sendAsync = js.Any.fromFunction2(sendAsync))
     __obj.asInstanceOf[Provider]
   }
   
-  @scala.inline
-  implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+  extension [Self <: Provider](x: Self) {
     
-    @scala.inline
-    def setSendAsync(value: (JSONRPCRequestPayload, JSONRPCErrorCallback) => scala.Unit): Self = StObject.set(x, "sendAsync", js.Any.fromFunction2(value))
+    inline def setSendAsync(value: (JSONRPCRequestPayload, JSONRPCErrorCallback) => scala.Unit): Self = StObject.set(x, "sendAsync", js.Any.fromFunction2(value))
   }
 }

@@ -18,28 +18,21 @@ trait ListDocumentsResult extends StObject {
 }
 object ListDocumentsResult {
   
-  @scala.inline
-  def apply(): ListDocumentsResult = {
+  inline def apply(): ListDocumentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDocumentsResult]
   }
   
-  @scala.inline
-  implicit class ListDocumentsResultMutableBuilder[Self <: ListDocumentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDocumentsResult](x: Self) {
     
-    @scala.inline
-    def setDocumentIdentifiers(value: DocumentIdentifierList): Self = StObject.set(x, "DocumentIdentifiers", value.asInstanceOf[js.Any])
+    inline def setDocumentIdentifiers(value: DocumentIdentifierList): Self = StObject.set(x, "DocumentIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdentifiersUndefined: Self = StObject.set(x, "DocumentIdentifiers", js.undefined)
+    inline def setDocumentIdentifiersUndefined: Self = StObject.set(x, "DocumentIdentifiers", js.undefined)
     
-    @scala.inline
-    def setDocumentIdentifiersVarargs(value: DocumentIdentifier*): Self = StObject.set(x, "DocumentIdentifiers", js.Array(value :_*))
+    inline def setDocumentIdentifiersVarargs(value: DocumentIdentifier*): Self = StObject.set(x, "DocumentIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

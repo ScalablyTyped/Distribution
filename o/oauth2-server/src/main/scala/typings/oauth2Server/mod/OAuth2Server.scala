@@ -43,6 +43,5 @@ trait OAuth2Server extends StObject {
 object OAuth2Server {
   
   /* static member */
-  @scala.inline
-  def apply: Instantiable1[/* options */ ServerOptions, OAuth2Server] = ^.asInstanceOf[js.Dynamic].selectDynamic("OAuth2Server").asInstanceOf[Instantiable1[/* options */ ServerOptions, OAuth2Server]]
+  inline def apply: Instantiable1[/* options */ ServerOptions, OAuth2Server] = ^.asInstanceOf[js.Dynamic].selectDynamic("OAuth2Server").asInstanceOf[Instantiable1[/* options */ ServerOptions, OAuth2Server]]
 }

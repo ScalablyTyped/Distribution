@@ -10,16 +10,13 @@ trait Bounds extends StObject {
 }
 object Bounds {
   
-  @scala.inline
-  def apply(bounds: js.Any): Bounds = {
+  inline def apply(bounds: js.Any): Bounds = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bounds]
   }
   
-  @scala.inline
-  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+  extension [Self <: Bounds](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
   }
 }

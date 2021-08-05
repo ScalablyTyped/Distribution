@@ -18,25 +18,19 @@ trait CodeScanningGetAlertDeprecatedAlertIdEndpoint extends StObject {
 }
 object CodeScanningGetAlertDeprecatedAlertIdEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): CodeScanningGetAlertDeprecatedAlertIdEndpoint = {
+  inline def apply(owner: String, repo: String): CodeScanningGetAlertDeprecatedAlertIdEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeScanningGetAlertDeprecatedAlertIdEndpoint]
   }
   
-  @scala.inline
-  implicit class CodeScanningGetAlertDeprecatedAlertIdEndpointMutableBuilder[Self <: CodeScanningGetAlertDeprecatedAlertIdEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodeScanningGetAlertDeprecatedAlertIdEndpoint](x: Self) {
     
-    @scala.inline
-    def setAlert_id(value: Double): Self = StObject.set(x, "alert_id", value.asInstanceOf[js.Any])
+    inline def setAlert_id(value: Double): Self = StObject.set(x, "alert_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlert_idUndefined: Self = StObject.set(x, "alert_id", js.undefined)
+    inline def setAlert_idUndefined: Self = StObject.set(x, "alert_id", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

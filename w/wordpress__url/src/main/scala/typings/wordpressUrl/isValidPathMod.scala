@@ -10,6 +10,5 @@ object isValidPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidPath(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPath")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidPath(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPath")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

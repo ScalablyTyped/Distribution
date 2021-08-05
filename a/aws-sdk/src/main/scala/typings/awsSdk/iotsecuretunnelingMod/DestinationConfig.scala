@@ -18,25 +18,19 @@ trait DestinationConfig extends StObject {
 }
 object DestinationConfig {
   
-  @scala.inline
-  def apply(services: ServiceList): DestinationConfig = {
+  inline def apply(services: ServiceList): DestinationConfig = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationConfig]
   }
   
-  @scala.inline
-  implicit class DestinationConfigMutableBuilder[Self <: DestinationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationConfig](x: Self) {
     
-    @scala.inline
-    def setServices(value: ServiceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: ServiceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

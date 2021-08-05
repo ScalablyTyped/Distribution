@@ -16,25 +16,19 @@ trait InsHTMLAttributes[T]
 }
 object InsHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): InsHTMLAttributes[T] = {
+  inline def apply[T](): InsHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class InsHTMLAttributesMutableBuilder[Self <: InsHTMLAttributes[?], T] (val x: Self & InsHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: InsHTMLAttributes[?], T](x: Self & InsHTMLAttributes[T]) {
     
-    @scala.inline
-    def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
+    inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
     
-    @scala.inline
-    def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait DescribeInstanceAttributeRequest extends StObject {
 }
 object DescribeInstanceAttributeRequest {
   
-  @scala.inline
-  def apply(Attribute: InstanceAttributeName, InstanceId: InstanceId): DescribeInstanceAttributeRequest = {
+  inline def apply(Attribute: InstanceAttributeName, InstanceId: InstanceId): DescribeInstanceAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceAttributeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceAttributeRequestMutableBuilder[Self <: DescribeInstanceAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: InstanceAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: InstanceAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

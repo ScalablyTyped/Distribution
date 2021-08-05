@@ -9,8 +9,7 @@ trait GenerateDataKeyInput
      with typings.awsSdkClientKmsBrowser.typesGenerateDataKeyInputMod.GenerateDataKeyInput
 object GenerateDataKeyInput {
   
-  @scala.inline
-  def apply(KeyId: String): GenerateDataKeyInput = {
+  inline def apply(KeyId: String): GenerateDataKeyInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyInput]
   }

@@ -26,22 +26,17 @@ trait ASPxClientSchedulerRefreshAction extends StObject {
 }
 object ASPxClientSchedulerRefreshAction {
   
-  @scala.inline
-  def apply(ActiveViewTypeChanged: Double, None: Double, VisibleIntervalChanged: Double): ASPxClientSchedulerRefreshAction = {
+  inline def apply(ActiveViewTypeChanged: Double, None: Double, VisibleIntervalChanged: Double): ASPxClientSchedulerRefreshAction = {
     val __obj = js.Dynamic.literal(ActiveViewTypeChanged = ActiveViewTypeChanged.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], VisibleIntervalChanged = VisibleIntervalChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSchedulerRefreshAction]
   }
   
-  @scala.inline
-  implicit class ASPxClientSchedulerRefreshActionMutableBuilder[Self <: ASPxClientSchedulerRefreshAction] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSchedulerRefreshAction](x: Self) {
     
-    @scala.inline
-    def setActiveViewTypeChanged(value: Double): Self = StObject.set(x, "ActiveViewTypeChanged", value.asInstanceOf[js.Any])
+    inline def setActiveViewTypeChanged(value: Double): Self = StObject.set(x, "ActiveViewTypeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    inline def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIntervalChanged(value: Double): Self = StObject.set(x, "VisibleIntervalChanged", value.asInstanceOf[js.Any])
+    inline def setVisibleIntervalChanged(value: Double): Self = StObject.set(x, "VisibleIntervalChanged", value.asInstanceOf[js.Any])
   }
 }

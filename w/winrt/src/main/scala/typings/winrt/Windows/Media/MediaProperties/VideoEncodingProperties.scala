@@ -9,8 +9,7 @@ trait VideoEncodingProperties
      with IVideoEncodingProperties
 object VideoEncodingProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitrate: Double,
     frameRate: MediaRatio,
     height: Double,

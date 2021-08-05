@@ -10,19 +10,15 @@ trait SchemaServerBinding extends StObject {
 }
 object SchemaServerBinding {
   
-  @scala.inline
-  def apply(): SchemaServerBinding = {
+  inline def apply(): SchemaServerBinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServerBinding]
   }
   
-  @scala.inline
-  implicit class SchemaServerBindingMutableBuilder[Self <: SchemaServerBinding] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServerBinding](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

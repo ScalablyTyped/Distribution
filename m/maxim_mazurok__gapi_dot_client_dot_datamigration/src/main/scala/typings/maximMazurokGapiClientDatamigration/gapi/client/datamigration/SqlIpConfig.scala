@@ -26,40 +26,29 @@ trait SqlIpConfig extends StObject {
 }
 object SqlIpConfig {
   
-  @scala.inline
-  def apply(): SqlIpConfig = {
+  inline def apply(): SqlIpConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlIpConfig]
   }
   
-  @scala.inline
-  implicit class SqlIpConfigMutableBuilder[Self <: SqlIpConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SqlIpConfig](x: Self) {
     
-    @scala.inline
-    def setAuthorizedNetworks(value: js.Array[SqlAclEntry]): Self = StObject.set(x, "authorizedNetworks", value.asInstanceOf[js.Any])
+    inline def setAuthorizedNetworks(value: js.Array[SqlAclEntry]): Self = StObject.set(x, "authorizedNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedNetworksUndefined: Self = StObject.set(x, "authorizedNetworks", js.undefined)
+    inline def setAuthorizedNetworksUndefined: Self = StObject.set(x, "authorizedNetworks", js.undefined)
     
-    @scala.inline
-    def setAuthorizedNetworksVarargs(value: SqlAclEntry*): Self = StObject.set(x, "authorizedNetworks", js.Array(value :_*))
+    inline def setAuthorizedNetworksVarargs(value: SqlAclEntry*): Self = StObject.set(x, "authorizedNetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableIpv4(value: Boolean): Self = StObject.set(x, "enableIpv4", value.asInstanceOf[js.Any])
+    inline def setEnableIpv4(value: Boolean): Self = StObject.set(x, "enableIpv4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIpv4Undefined: Self = StObject.set(x, "enableIpv4", js.undefined)
+    inline def setEnableIpv4Undefined: Self = StObject.set(x, "enableIpv4", js.undefined)
     
-    @scala.inline
-    def setPrivateNetwork(value: String): Self = StObject.set(x, "privateNetwork", value.asInstanceOf[js.Any])
+    inline def setPrivateNetwork(value: String): Self = StObject.set(x, "privateNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateNetworkUndefined: Self = StObject.set(x, "privateNetwork", js.undefined)
+    inline def setPrivateNetworkUndefined: Self = StObject.set(x, "privateNetwork", js.undefined)
     
-    @scala.inline
-    def setRequireSsl(value: Boolean): Self = StObject.set(x, "requireSsl", value.asInstanceOf[js.Any])
+    inline def setRequireSsl(value: Boolean): Self = StObject.set(x, "requireSsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireSslUndefined: Self = StObject.set(x, "requireSsl", js.undefined)
+    inline def setRequireSslUndefined: Self = StObject.set(x, "requireSsl", js.undefined)
   }
 }

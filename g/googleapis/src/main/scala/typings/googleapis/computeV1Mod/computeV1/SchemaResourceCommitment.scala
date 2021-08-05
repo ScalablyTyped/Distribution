@@ -26,25 +26,19 @@ trait SchemaResourceCommitment extends StObject {
 }
 object SchemaResourceCommitment {
   
-  @scala.inline
-  def apply(): SchemaResourceCommitment = {
+  inline def apply(): SchemaResourceCommitment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceCommitment]
   }
   
-  @scala.inline
-  implicit class SchemaResourceCommitmentMutableBuilder[Self <: SchemaResourceCommitment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceCommitment](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

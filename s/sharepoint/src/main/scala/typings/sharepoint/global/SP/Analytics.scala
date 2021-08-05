@@ -18,16 +18,14 @@ object Analytics {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def logAnalyticsAppEvent(
+    inline def logAnalyticsAppEvent(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       appEventTypeId: typings.sharepoint.SP.Guid,
       itemId: String
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logAnalyticsAppEvent")(context.asInstanceOf[js.Any], appEventTypeId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def logAnalyticsAppEvent2(
+    inline def logAnalyticsAppEvent2(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       appEventTypeId: typings.sharepoint.SP.Guid,
       itemId: String,
@@ -37,12 +35,10 @@ object Analytics {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logAnalyticsAppEvent2")(context.asInstanceOf[js.Any], appEventTypeId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], rollupScopeId.asInstanceOf[js.Any], siteId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def logAnalyticsEvent(context: typings.sharepoint.SP.ClientRuntimeContext, eventTypeId: Double, itemId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logAnalyticsEvent")(context.asInstanceOf[js.Any], eventTypeId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def logAnalyticsEvent(context: typings.sharepoint.SP.ClientRuntimeContext, eventTypeId: Double, itemId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logAnalyticsEvent")(context.asInstanceOf[js.Any], eventTypeId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def logAnalyticsEvent2(
+    inline def logAnalyticsEvent2(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       eventTypeId: Double,
       itemId: String,

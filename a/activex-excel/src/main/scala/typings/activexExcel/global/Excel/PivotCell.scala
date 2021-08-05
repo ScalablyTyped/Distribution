@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotCell")
 @js.native
-class PivotCell protected ()
+/* private */ class PivotCell ()
   extends StObject
      with typings.activexExcel.Excel.PivotCell {
   
@@ -51,7 +51,7 @@ class PivotCell protected ()
   /* CompleteClass */
   override val Dummy18: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PivotCell_typekey")
   var ExcelDotPivotCell_typekey: typings.activexExcel.Excel.PivotCell = js.native
   

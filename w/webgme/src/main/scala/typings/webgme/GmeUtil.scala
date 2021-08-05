@@ -14,20 +14,16 @@ object GmeUtil {
   }
   object Canon {
     
-    @scala.inline
-    def apply(parse: js.Any => String, stringify: js.Any => String): Canon = {
+    inline def apply(parse: js.Any => String, stringify: js.Any => String): Canon = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[Canon]
     }
     
-    @scala.inline
-    implicit class CanonMutableBuilder[Self <: Canon] (val x: Self) extends AnyVal {
+    extension [Self <: Canon](x: Self) {
       
-      @scala.inline
-      def setParse(value: js.Any => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: js.Any => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringify(value: js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }
   }
 }

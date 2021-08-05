@@ -14,25 +14,19 @@ trait PartialPickImplkeyofImplError extends StObject {
 }
 object PartialPickImplkeyofImplError {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplError = {
+  inline def apply(): PartialPickImplkeyofImplError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplError]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplErrorMutableBuilder[Self <: PartialPickImplkeyofImplError] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplError](x: Self) {
     
-    @scala.inline
-    def setError(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
+    inline def setPrompt(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
   }
 }

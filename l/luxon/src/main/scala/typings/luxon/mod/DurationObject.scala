@@ -10,8 +10,7 @@ trait DurationObject
      with DurationOptions
 object DurationObject {
   
-  @scala.inline
-  def apply(): DurationObject = {
+  inline def apply(): DurationObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DurationObject]
   }

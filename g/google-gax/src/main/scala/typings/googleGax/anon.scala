@@ -24,17 +24,14 @@ object anon {
   }
   object Auth {
     
-    @scala.inline
-    def apply(auth: OAuth2Client): Auth = {
+    inline def apply(auth: OAuth2Client): Auth = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
       __obj.asInstanceOf[Auth]
     }
     
-    @scala.inline
-    implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+    extension [Self <: Auth](x: Self) {
       
-      @scala.inline
-      def setAuth(value: OAuth2Client): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: OAuth2Client): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,20 +41,16 @@ object anon {
   }
   object Deadline {
     
-    @scala.inline
-    def apply(): Deadline = {
+    inline def apply(): Deadline = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Deadline]
     }
     
-    @scala.inline
-    implicit class DeadlineMutableBuilder[Self <: Deadline] (val x: Self) extends AnyVal {
+    extension [Self <: Deadline](x: Self) {
       
-      @scala.inline
-      def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
+      inline def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
     }
   }
   
@@ -67,17 +60,14 @@ object anon {
   }
   object Encode {
     
-    @scala.inline
-    def apply(encode: js.Object => Finish): Encode = {
+    inline def apply(encode: js.Object => Finish): Encode = {
       val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[Encode]
     }
     
-    @scala.inline
-    implicit class EncodeMutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
+    extension [Self <: Encode](x: Self) {
       
-      @scala.inline
-      def setEncode(value: js.Object => Finish): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Object => Finish): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   
@@ -87,17 +77,14 @@ object anon {
   }
   object Finish {
     
-    @scala.inline
-    def apply(finish: () => js.Array[js.Object]): Finish = {
+    inline def apply(finish: () => js.Array[js.Object]): Finish = {
       val __obj = js.Dynamic.literal(finish = js.Any.fromFunction0(finish))
       __obj.asInstanceOf[Finish]
     }
     
-    @scala.inline
-    implicit class FinishMutableBuilder[Self <: Finish] (val x: Self) extends AnyVal {
+    extension [Self <: Finish](x: Self) {
       
-      @scala.inline
-      def setFinish(value: () => js.Array[js.Object]): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      inline def setFinish(value: () => js.Array[js.Object]): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
     }
   }
   
@@ -215,8 +202,7 @@ object anon {
   }
   object Typeofcredentials {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       combineCallCredentials: (typings.grpcGrpcJs.callCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
       combineChannelCredentials: (typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
       createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any,
@@ -229,41 +215,33 @@ object anon {
       __obj.asInstanceOf[Typeofcredentials]
     }
     
-    @scala.inline
-    implicit class TypeofcredentialsMutableBuilder[Self <: Typeofcredentials] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofcredentials](x: Self) {
       
-      @scala.inline
-      def setCombineCallCredentials(
+      inline def setCombineCallCredentials(
         value: (typings.grpcGrpcJs.callCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.callCredentialsMod.CallCredentials
       ): Self = StObject.set(x, "combineCallCredentials", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCombineChannelCredentials(
+      inline def setCombineChannelCredentials(
         value: (typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
       ): Self = StObject.set(x, "combineChannelCredentials", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateEmpty(
+      inline def setCreateEmpty(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any
       ): Self = StObject.set(x, "createEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromGoogleCredential(
+      inline def setCreateFromGoogleCredential(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any
       ): Self = StObject.set(x, "createFromGoogleCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromMetadataGenerator(
+      inline def setCreateFromMetadataGenerator(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any
       ): Self = StObject.set(x, "createFromMetadataGenerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateInsecure(
+      inline def setCreateInsecure(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any
       ): Self = StObject.set(x, "createInsecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSsl(
+      inline def setCreateSsl(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any
       ): Self = StObject.set(x, "createSsl", value.asInstanceOf[js.Any])
     }

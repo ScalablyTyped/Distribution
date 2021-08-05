@@ -23,39 +23,29 @@ trait DataSourceAssetCallback extends StObject {
 }
 object DataSourceAssetCallback {
   
-  @scala.inline
-  def apply(): DataSourceAssetCallback = {
+  inline def apply(): DataSourceAssetCallback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceAssetCallback]
   }
   
-  @scala.inline
-  implicit class DataSourceAssetCallbackMutableBuilder[Self <: DataSourceAssetCallback] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceAssetCallback](x: Self) {
     
-    @scala.inline
-    def setGetRowData(
+    inline def setGetRowData(
       value: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => js.Any
     ): Self = StObject.set(x, "getRowData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetRowDataUndefined: Self = StObject.set(x, "getRowData", js.undefined)
+    inline def setGetRowDataUndefined: Self = StObject.set(x, "getRowData", js.undefined)
     
-    @scala.inline
-    def setGetSectionHeaderData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => js.Any): Self = StObject.set(x, "getSectionHeaderData", js.Any.fromFunction2(value))
+    inline def setGetSectionHeaderData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => js.Any): Self = StObject.set(x, "getSectionHeaderData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSectionHeaderDataUndefined: Self = StObject.set(x, "getSectionHeaderData", js.undefined)
+    inline def setGetSectionHeaderDataUndefined: Self = StObject.set(x, "getSectionHeaderData", js.undefined)
     
-    @scala.inline
-    def setRowHasChanged(value: (/* r1 */ js.Any, /* r2 */ js.Any) => Boolean): Self = StObject.set(x, "rowHasChanged", js.Any.fromFunction2(value))
+    inline def setRowHasChanged(value: (/* r1 */ js.Any, /* r2 */ js.Any) => Boolean): Self = StObject.set(x, "rowHasChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowHasChangedUndefined: Self = StObject.set(x, "rowHasChanged", js.undefined)
+    inline def setRowHasChangedUndefined: Self = StObject.set(x, "rowHasChanged", js.undefined)
     
-    @scala.inline
-    def setSectionHeaderHasChanged(value: (/* h1 */ js.Any, /* h2 */ js.Any) => Boolean): Self = StObject.set(x, "sectionHeaderHasChanged", js.Any.fromFunction2(value))
+    inline def setSectionHeaderHasChanged(value: (/* h1 */ js.Any, /* h2 */ js.Any) => Boolean): Self = StObject.set(x, "sectionHeaderHasChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSectionHeaderHasChangedUndefined: Self = StObject.set(x, "sectionHeaderHasChanged", js.undefined)
+    inline def setSectionHeaderHasChangedUndefined: Self = StObject.set(x, "sectionHeaderHasChanged", js.undefined)
   }
 }

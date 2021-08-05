@@ -17,22 +17,17 @@ trait SchemaListNamespacesResponse extends StObject {
 }
 object SchemaListNamespacesResponse {
   
-  @scala.inline
-  def apply(): SchemaListNamespacesResponse = {
+  inline def apply(): SchemaListNamespacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListNamespacesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListNamespacesResponseMutableBuilder[Self <: SchemaListNamespacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListNamespacesResponse](x: Self) {
     
-    @scala.inline
-    def setNamespaces(value: js.Array[SchemaNamespace]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+    inline def setNamespaces(value: js.Array[SchemaNamespace]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+    inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
-    @scala.inline
-    def setNamespacesVarargs(value: SchemaNamespace*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: SchemaNamespace*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
   }
 }

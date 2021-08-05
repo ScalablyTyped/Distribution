@@ -47,8 +47,7 @@ trait XAccessibleKeyBinding
 }
 object XAccessibleKeyBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleKeyBindingCount: Double,
     acquire: () => Unit,
     getAccessibleKeyBinding: Double => SafeArray[KeyStroke],
@@ -60,16 +59,12 @@ object XAccessibleKeyBinding {
     __obj.asInstanceOf[XAccessibleKeyBinding]
   }
   
-  @scala.inline
-  implicit class XAccessibleKeyBindingMutableBuilder[Self <: XAccessibleKeyBinding] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleKeyBinding](x: Self) {
     
-    @scala.inline
-    def setAccessibleKeyBindingCount(value: Double): Self = StObject.set(x, "AccessibleKeyBindingCount", value.asInstanceOf[js.Any])
+    inline def setAccessibleKeyBindingCount(value: Double): Self = StObject.set(x, "AccessibleKeyBindingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccessibleKeyBinding(value: Double => SafeArray[KeyStroke]): Self = StObject.set(x, "getAccessibleKeyBinding", js.Any.fromFunction1(value))
+    inline def setGetAccessibleKeyBinding(value: Double => SafeArray[KeyStroke]): Self = StObject.set(x, "getAccessibleKeyBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccessibleKeyBindingCount(value: () => Double): Self = StObject.set(x, "getAccessibleKeyBindingCount", js.Any.fromFunction0(value))
+    inline def setGetAccessibleKeyBindingCount(value: () => Double): Self = StObject.set(x, "getAccessibleKeyBindingCount", js.Any.fromFunction0(value))
   }
 }

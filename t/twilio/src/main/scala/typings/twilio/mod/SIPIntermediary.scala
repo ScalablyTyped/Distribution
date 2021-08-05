@@ -14,8 +14,7 @@ trait SIPIntermediary extends StObject {
 }
 object SIPIntermediary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     credentialLists: CredentialListResource,
     domains: DomainResource,
     ipAccessControlLists: IPAccessControlListResource
@@ -24,16 +23,12 @@ object SIPIntermediary {
     __obj.asInstanceOf[SIPIntermediary]
   }
   
-  @scala.inline
-  implicit class SIPIntermediaryMutableBuilder[Self <: SIPIntermediary] (val x: Self) extends AnyVal {
+  extension [Self <: SIPIntermediary](x: Self) {
     
-    @scala.inline
-    def setCredentialLists(value: CredentialListResource): Self = StObject.set(x, "credentialLists", value.asInstanceOf[js.Any])
+    inline def setCredentialLists(value: CredentialListResource): Self = StObject.set(x, "credentialLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomains(value: DomainResource): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: DomainResource): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAccessControlLists(value: IPAccessControlListResource): Self = StObject.set(x, "ipAccessControlLists", value.asInstanceOf[js.Any])
+    inline def setIpAccessControlLists(value: IPAccessControlListResource): Self = StObject.set(x, "ipAccessControlLists", value.asInstanceOf[js.Any])
   }
 }

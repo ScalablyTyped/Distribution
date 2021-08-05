@@ -15,17 +15,14 @@ object jasmine {
   }
   object Env {
     
-    @scala.inline
-    def apply(defaultTimeoutInterval: Double): Env = {
+    inline def apply(defaultTimeoutInterval: Double): Env = {
       val __obj = js.Dynamic.literal(defaultTimeoutInterval = defaultTimeoutInterval.asInstanceOf[js.Any])
       __obj.asInstanceOf[Env]
     }
     
-    @scala.inline
-    implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+    extension [Self <: Env](x: Self) {
       
-      @scala.inline
-      def setDefaultTimeoutInterval(value: Double): Self = StObject.set(x, "defaultTimeoutInterval", value.asInstanceOf[js.Any])
+      inline def setDefaultTimeoutInterval(value: Double): Self = StObject.set(x, "defaultTimeoutInterval", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,71 +50,50 @@ object jasmine {
   }
   object ExecuteSpecsOptions {
     
-    @scala.inline
-    def apply(regExpSpec: RegExp, specFolders: js.Array[String]): ExecuteSpecsOptions = {
+    inline def apply(regExpSpec: RegExp, specFolders: js.Array[String]): ExecuteSpecsOptions = {
       val __obj = js.Dynamic.literal(regExpSpec = regExpSpec.asInstanceOf[js.Any], specFolders = specFolders.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecuteSpecsOptions]
     }
     
-    @scala.inline
-    implicit class ExecuteSpecsOptionsMutableBuilder[Self <: ExecuteSpecsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExecuteSpecsOptions](x: Self) {
       
-      @scala.inline
-      def setGrowl(value: Boolean): Self = StObject.set(x, "growl", value.asInstanceOf[js.Any])
+      inline def setGrowl(value: Boolean): Self = StObject.set(x, "growl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowlUndefined: Self = StObject.set(x, "growl", js.undefined)
+      inline def setGrowlUndefined: Self = StObject.set(x, "growl", js.undefined)
       
-      @scala.inline
-      def setIncludeStackTrace(value: Boolean): Self = StObject.set(x, "includeStackTrace", value.asInstanceOf[js.Any])
+      inline def setIncludeStackTrace(value: Boolean): Self = StObject.set(x, "includeStackTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeStackTraceUndefined: Self = StObject.set(x, "includeStackTrace", js.undefined)
+      inline def setIncludeStackTraceUndefined: Self = StObject.set(x, "includeStackTrace", js.undefined)
       
-      @scala.inline
-      def setIsVerbose(value: Boolean): Self = StObject.set(x, "isVerbose", value.asInstanceOf[js.Any])
+      inline def setIsVerbose(value: Boolean): Self = StObject.set(x, "isVerbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVerboseUndefined: Self = StObject.set(x, "isVerbose", js.undefined)
+      inline def setIsVerboseUndefined: Self = StObject.set(x, "isVerbose", js.undefined)
       
-      @scala.inline
-      def setJunitreport(value: Consolidate): Self = StObject.set(x, "junitreport", value.asInstanceOf[js.Any])
+      inline def setJunitreport(value: Consolidate): Self = StObject.set(x, "junitreport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJunitreportUndefined: Self = StObject.set(x, "junitreport", js.undefined)
+      inline def setJunitreportUndefined: Self = StObject.set(x, "junitreport", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* runner */ Runner => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* runner */ Runner => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setRegExpSpec(value: RegExp): Self = StObject.set(x, "regExpSpec", value.asInstanceOf[js.Any])
+      inline def setRegExpSpec(value: RegExp): Self = StObject.set(x, "regExpSpec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowColors(value: Boolean): Self = StObject.set(x, "showColors", value.asInstanceOf[js.Any])
+      inline def setShowColors(value: Boolean): Self = StObject.set(x, "showColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowColorsUndefined: Self = StObject.set(x, "showColors", js.undefined)
+      inline def setShowColorsUndefined: Self = StObject.set(x, "showColors", js.undefined)
       
-      @scala.inline
-      def setSpecFolders(value: js.Array[String]): Self = StObject.set(x, "specFolders", value.asInstanceOf[js.Any])
+      inline def setSpecFolders(value: js.Array[String]): Self = StObject.set(x, "specFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecFoldersVarargs(value: String*): Self = StObject.set(x, "specFolders", js.Array(value :_*))
+      inline def setSpecFoldersVarargs(value: String*): Self = StObject.set(x, "specFolders", js.Array(value :_*))
       
-      @scala.inline
-      def setTeamcity(value: String | Boolean): Self = StObject.set(x, "teamcity", value.asInstanceOf[js.Any])
+      inline def setTeamcity(value: String | Boolean): Self = StObject.set(x, "teamcity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamcityUndefined: Self = StObject.set(x, "teamcity", js.undefined)
+      inline def setTeamcityUndefined: Self = StObject.set(x, "teamcity", js.undefined)
       
-      @scala.inline
-      def setUseRequireJs(value: Boolean): Self = StObject.set(x, "useRequireJs", value.asInstanceOf[js.Any])
+      inline def setUseRequireJs(value: Boolean): Self = StObject.set(x, "useRequireJs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseRequireJsUndefined: Self = StObject.set(x, "useRequireJs", js.undefined)
+      inline def setUseRequireJsUndefined: Self = StObject.set(x, "useRequireJs", js.undefined)
     }
   }
   
@@ -129,20 +105,16 @@ object jasmine {
   }
   object JasmineNode {
     
-    @scala.inline
-    def apply(executeSpecsInFolder: ExecuteSpecsOptions => Unit, loadHelpersInFolder: (String, RegExp) => Unit): JasmineNode = {
+    inline def apply(executeSpecsInFolder: ExecuteSpecsOptions => Unit, loadHelpersInFolder: (String, RegExp) => Unit): JasmineNode = {
       val __obj = js.Dynamic.literal(executeSpecsInFolder = js.Any.fromFunction1(executeSpecsInFolder), loadHelpersInFolder = js.Any.fromFunction2(loadHelpersInFolder))
       __obj.asInstanceOf[JasmineNode]
     }
     
-    @scala.inline
-    implicit class JasmineNodeMutableBuilder[Self <: JasmineNode] (val x: Self) extends AnyVal {
+    extension [Self <: JasmineNode](x: Self) {
       
-      @scala.inline
-      def setExecuteSpecsInFolder(value: ExecuteSpecsOptions => Unit): Self = StObject.set(x, "executeSpecsInFolder", js.Any.fromFunction1(value))
+      inline def setExecuteSpecsInFolder(value: ExecuteSpecsOptions => Unit): Self = StObject.set(x, "executeSpecsInFolder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadHelpersInFolder(value: (String, RegExp) => Unit): Self = StObject.set(x, "loadHelpersInFolder", js.Any.fromFunction2(value))
+      inline def setLoadHelpersInFolder(value: (String, RegExp) => Unit): Self = StObject.set(x, "loadHelpersInFolder", js.Any.fromFunction2(value))
     }
   }
 }

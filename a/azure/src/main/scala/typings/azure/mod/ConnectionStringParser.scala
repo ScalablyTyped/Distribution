@@ -34,6 +34,5 @@ object ConnectionStringParser {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(connectionString: String): Dictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Dictionary[String]]
+  inline def parse(connectionString: String): Dictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Dictionary[String]]
 }

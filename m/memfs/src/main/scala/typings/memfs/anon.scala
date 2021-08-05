@@ -18,17 +18,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(bigint = true)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,8 +55,7 @@ object anon {
   }
   object Atime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atime: Double,
       ctime: Double,
       data: String,
@@ -76,44 +72,31 @@ object anon {
       __obj.asInstanceOf[Atime]
     }
     
-    @scala.inline
-    implicit class AtimeMutableBuilder[Self <: Atime] (val x: Self) extends AnyVal {
+    extension [Self <: Atime](x: Self) {
       
-      @scala.inline
-      def setAtime(value: Double): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: Double): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+      inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
+      inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerm(value: Double): Self = StObject.set(x, "perm", value.asInstanceOf[js.Any])
+      inline def setPerm(value: Double): Self = StObject.set(x, "perm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymlink(value: js.Array[String]): Self = StObject.set(x, "symlink", value.asInstanceOf[js.Any])
+      inline def setSymlink(value: js.Array[String]): Self = StObject.set(x, "symlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymlinkVarargs(value: String*): Self = StObject.set(x, "symlink", js.Array(value :_*))
+      inline def setSymlinkVarargs(value: String*): Self = StObject.set(x, "symlink", js.Array(value :_*))
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,17 +106,14 @@ object anon {
   }
   object Bigint {
     
-    @scala.inline
-    def apply(): Bigint = {
+    inline def apply(): Bigint = {
       val __obj = js.Dynamic.literal(bigint = false)
       __obj.asInstanceOf[Bigint]
     }
     
-    @scala.inline
-    implicit class BigintMutableBuilder[Self <: Bigint] (val x: Self) extends AnyVal {
+    extension [Self <: Bigint](x: Self) {
       
-      @scala.inline
-      def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,8 +213,7 @@ object anon {
   }
   object COPYFILEEXCL {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       COPYFILE_EXCL: Double,
       COPYFILE_FICLONE: Double,
       COPYFILE_FICLONE_FORCE: Double,
@@ -286,146 +265,99 @@ object anon {
       __obj.asInstanceOf[COPYFILEEXCL]
     }
     
-    @scala.inline
-    implicit class COPYFILEEXCLMutableBuilder[Self <: COPYFILEEXCL] (val x: Self) extends AnyVal {
+    extension [Self <: COPYFILEEXCL](x: Self) {
       
-      @scala.inline
-      def setCOPYFILE_EXCL(value: Double): Self = StObject.set(x, "COPYFILE_EXCL", value.asInstanceOf[js.Any])
+      inline def setCOPYFILE_EXCL(value: Double): Self = StObject.set(x, "COPYFILE_EXCL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOPYFILE_FICLONE(value: Double): Self = StObject.set(x, "COPYFILE_FICLONE", value.asInstanceOf[js.Any])
+      inline def setCOPYFILE_FICLONE(value: Double): Self = StObject.set(x, "COPYFILE_FICLONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOPYFILE_FICLONE_FORCE(value: Double): Self = StObject.set(x, "COPYFILE_FICLONE_FORCE", value.asInstanceOf[js.Any])
+      inline def setCOPYFILE_FICLONE_FORCE(value: Double): Self = StObject.set(x, "COPYFILE_FICLONE_FORCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_OK(value: Double): Self = StObject.set(x, "F_OK", value.asInstanceOf[js.Any])
+      inline def setF_OK(value: Double): Self = StObject.set(x, "F_OK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_APPEND(value: Double): Self = StObject.set(x, "O_APPEND", value.asInstanceOf[js.Any])
+      inline def setO_APPEND(value: Double): Self = StObject.set(x, "O_APPEND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_CREAT(value: Double): Self = StObject.set(x, "O_CREAT", value.asInstanceOf[js.Any])
+      inline def setO_CREAT(value: Double): Self = StObject.set(x, "O_CREAT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_DIRECT(value: Double): Self = StObject.set(x, "O_DIRECT", value.asInstanceOf[js.Any])
+      inline def setO_DIRECT(value: Double): Self = StObject.set(x, "O_DIRECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_DIRECTORY(value: Double): Self = StObject.set(x, "O_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setO_DIRECTORY(value: Double): Self = StObject.set(x, "O_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_EXCL(value: Double): Self = StObject.set(x, "O_EXCL", value.asInstanceOf[js.Any])
+      inline def setO_EXCL(value: Double): Self = StObject.set(x, "O_EXCL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_NOATIME(value: Double): Self = StObject.set(x, "O_NOATIME", value.asInstanceOf[js.Any])
+      inline def setO_NOATIME(value: Double): Self = StObject.set(x, "O_NOATIME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_NOCTTY(value: Double): Self = StObject.set(x, "O_NOCTTY", value.asInstanceOf[js.Any])
+      inline def setO_NOCTTY(value: Double): Self = StObject.set(x, "O_NOCTTY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_NOFOLLOW(value: Double): Self = StObject.set(x, "O_NOFOLLOW", value.asInstanceOf[js.Any])
+      inline def setO_NOFOLLOW(value: Double): Self = StObject.set(x, "O_NOFOLLOW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_NONBLOCK(value: Double): Self = StObject.set(x, "O_NONBLOCK", value.asInstanceOf[js.Any])
+      inline def setO_NONBLOCK(value: Double): Self = StObject.set(x, "O_NONBLOCK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_RDONLY(value: Double): Self = StObject.set(x, "O_RDONLY", value.asInstanceOf[js.Any])
+      inline def setO_RDONLY(value: Double): Self = StObject.set(x, "O_RDONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_RDWR(value: Double): Self = StObject.set(x, "O_RDWR", value.asInstanceOf[js.Any])
+      inline def setO_RDWR(value: Double): Self = StObject.set(x, "O_RDWR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_SYNC(value: Double): Self = StObject.set(x, "O_SYNC", value.asInstanceOf[js.Any])
+      inline def setO_SYNC(value: Double): Self = StObject.set(x, "O_SYNC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_TRUNC(value: Double): Self = StObject.set(x, "O_TRUNC", value.asInstanceOf[js.Any])
+      inline def setO_TRUNC(value: Double): Self = StObject.set(x, "O_TRUNC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO_WRONLY(value: Double): Self = StObject.set(x, "O_WRONLY", value.asInstanceOf[js.Any])
+      inline def setO_WRONLY(value: Double): Self = StObject.set(x, "O_WRONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR_OK(value: Double): Self = StObject.set(x, "R_OK", value.asInstanceOf[js.Any])
+      inline def setR_OK(value: Double): Self = StObject.set(x, "R_OK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFBLK(value: Double): Self = StObject.set(x, "S_IFBLK", value.asInstanceOf[js.Any])
+      inline def setS_IFBLK(value: Double): Self = StObject.set(x, "S_IFBLK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFCHR(value: Double): Self = StObject.set(x, "S_IFCHR", value.asInstanceOf[js.Any])
+      inline def setS_IFCHR(value: Double): Self = StObject.set(x, "S_IFCHR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFDIR(value: Double): Self = StObject.set(x, "S_IFDIR", value.asInstanceOf[js.Any])
+      inline def setS_IFDIR(value: Double): Self = StObject.set(x, "S_IFDIR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFIFO(value: Double): Self = StObject.set(x, "S_IFIFO", value.asInstanceOf[js.Any])
+      inline def setS_IFIFO(value: Double): Self = StObject.set(x, "S_IFIFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFLNK(value: Double): Self = StObject.set(x, "S_IFLNK", value.asInstanceOf[js.Any])
+      inline def setS_IFLNK(value: Double): Self = StObject.set(x, "S_IFLNK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFMT(value: Double): Self = StObject.set(x, "S_IFMT", value.asInstanceOf[js.Any])
+      inline def setS_IFMT(value: Double): Self = StObject.set(x, "S_IFMT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFREG(value: Double): Self = StObject.set(x, "S_IFREG", value.asInstanceOf[js.Any])
+      inline def setS_IFREG(value: Double): Self = StObject.set(x, "S_IFREG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IFSOCK(value: Double): Self = StObject.set(x, "S_IFSOCK", value.asInstanceOf[js.Any])
+      inline def setS_IFSOCK(value: Double): Self = StObject.set(x, "S_IFSOCK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IRGRP(value: Double): Self = StObject.set(x, "S_IRGRP", value.asInstanceOf[js.Any])
+      inline def setS_IRGRP(value: Double): Self = StObject.set(x, "S_IRGRP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IROTH(value: Double): Self = StObject.set(x, "S_IROTH", value.asInstanceOf[js.Any])
+      inline def setS_IROTH(value: Double): Self = StObject.set(x, "S_IROTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IRUSR(value: Double): Self = StObject.set(x, "S_IRUSR", value.asInstanceOf[js.Any])
+      inline def setS_IRUSR(value: Double): Self = StObject.set(x, "S_IRUSR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IRWXG(value: Double): Self = StObject.set(x, "S_IRWXG", value.asInstanceOf[js.Any])
+      inline def setS_IRWXG(value: Double): Self = StObject.set(x, "S_IRWXG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IRWXO(value: Double): Self = StObject.set(x, "S_IRWXO", value.asInstanceOf[js.Any])
+      inline def setS_IRWXO(value: Double): Self = StObject.set(x, "S_IRWXO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IRWXU(value: Double): Self = StObject.set(x, "S_IRWXU", value.asInstanceOf[js.Any])
+      inline def setS_IRWXU(value: Double): Self = StObject.set(x, "S_IRWXU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IWGRP(value: Double): Self = StObject.set(x, "S_IWGRP", value.asInstanceOf[js.Any])
+      inline def setS_IWGRP(value: Double): Self = StObject.set(x, "S_IWGRP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IWOTH(value: Double): Self = StObject.set(x, "S_IWOTH", value.asInstanceOf[js.Any])
+      inline def setS_IWOTH(value: Double): Self = StObject.set(x, "S_IWOTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IWUSR(value: Double): Self = StObject.set(x, "S_IWUSR", value.asInstanceOf[js.Any])
+      inline def setS_IWUSR(value: Double): Self = StObject.set(x, "S_IWUSR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IXGRP(value: Double): Self = StObject.set(x, "S_IXGRP", value.asInstanceOf[js.Any])
+      inline def setS_IXGRP(value: Double): Self = StObject.set(x, "S_IXGRP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IXOTH(value: Double): Self = StObject.set(x, "S_IXOTH", value.asInstanceOf[js.Any])
+      inline def setS_IXOTH(value: Double): Self = StObject.set(x, "S_IXOTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_IXUSR(value: Double): Self = StObject.set(x, "S_IXUSR", value.asInstanceOf[js.Any])
+      inline def setS_IXUSR(value: Double): Self = StObject.set(x, "S_IXUSR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUV_FS_COPYFILE_EXCL(value: Double): Self = StObject.set(x, "UV_FS_COPYFILE_EXCL", value.asInstanceOf[js.Any])
+      inline def setUV_FS_COPYFILE_EXCL(value: Double): Self = StObject.set(x, "UV_FS_COPYFILE_EXCL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUV_FS_COPYFILE_FICLONE(value: Double): Self = StObject.set(x, "UV_FS_COPYFILE_FICLONE", value.asInstanceOf[js.Any])
+      inline def setUV_FS_COPYFILE_FICLONE(value: Double): Self = StObject.set(x, "UV_FS_COPYFILE_FICLONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUV_FS_COPYFILE_FICLONE_FORCE(value: Double): Self = StObject.set(x, "UV_FS_COPYFILE_FICLONE_FORCE", value.asInstanceOf[js.Any])
+      inline def setUV_FS_COPYFILE_FICLONE_FORCE(value: Double): Self = StObject.set(x, "UV_FS_COPYFILE_FICLONE_FORCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUV_FS_SYMLINK_DIR(value: Double): Self = StObject.set(x, "UV_FS_SYMLINK_DIR", value.asInstanceOf[js.Any])
+      inline def setUV_FS_SYMLINK_DIR(value: Double): Self = StObject.set(x, "UV_FS_SYMLINK_DIR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUV_FS_SYMLINK_JUNCTION(value: Double): Self = StObject.set(x, "UV_FS_SYMLINK_JUNCTION", value.asInstanceOf[js.Any])
+      inline def setUV_FS_SYMLINK_JUNCTION(value: Double): Self = StObject.set(x, "UV_FS_SYMLINK_JUNCTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW_OK(value: Double): Self = StObject.set(x, "W_OK", value.asInstanceOf[js.Any])
+      inline def setW_OK(value: Double): Self = StObject.set(x, "W_OK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX_OK(value: Double): Self = StObject.set(x, "X_OK", value.asInstanceOf[js.Any])
+      inline def setX_OK(value: Double): Self = StObject.set(x, "X_OK", value.asInstanceOf[js.Any])
     }
   }
   
@@ -439,29 +371,22 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: js.Array[String], ino: Double, steps: js.Array[String]): Children = {
+    inline def apply(children: js.Array[String], ino: Double, steps: js.Array[String]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], ino = ino.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+      inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: js.Array[String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
     }
   }
   
@@ -475,8 +400,7 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       File: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File],
       Link: Instantiable1[/* args (repeated) */ js.Any, Link],
       Node: Instantiable1[/* args (repeated) */ js.Any, Node]
@@ -485,17 +409,13 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: Instantiable1[/* args (repeated) */ js.Any, Link]): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
+      inline def setLink(value: Instantiable1[/* args (repeated) */ js.Any, Link]): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Instantiable1[/* args (repeated) */ js.Any, Node]): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Instantiable1[/* args (repeated) */ js.Any, Node]): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     }
   }
   

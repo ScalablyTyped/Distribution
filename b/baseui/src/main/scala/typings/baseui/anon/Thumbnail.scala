@@ -10,19 +10,15 @@ trait Thumbnail extends StObject {
 }
 object Thumbnail {
   
-  @scala.inline
-  def apply(): Thumbnail = {
+  inline def apply(): Thumbnail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thumbnail]
   }
   
-  @scala.inline
-  implicit class ThumbnailMutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: Thumbnail](x: Self) {
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

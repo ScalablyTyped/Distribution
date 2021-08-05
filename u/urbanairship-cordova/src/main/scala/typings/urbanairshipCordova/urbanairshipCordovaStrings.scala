@@ -8,11 +8,9 @@ object urbanairshipCordovaStrings {
   
   @js.native
   sealed trait urbanairshipDotpush extends StObject
-  @scala.inline
-  def urbanairshipDotpush: urbanairshipDotpush = "urbanairship.push".asInstanceOf[urbanairshipDotpush]
+  inline def urbanairshipDotpush: urbanairshipDotpush = "urbanairship.push".asInstanceOf[urbanairshipDotpush]
   
   @js.native
   sealed trait urbanairshipDotregistration extends StObject
-  @scala.inline
-  def urbanairshipDotregistration: urbanairshipDotregistration = "urbanairship.registration".asInstanceOf[urbanairshipDotregistration]
+  inline def urbanairshipDotregistration: urbanairshipDotregistration = "urbanairship.registration".asInstanceOf[urbanairshipDotregistration]
 }

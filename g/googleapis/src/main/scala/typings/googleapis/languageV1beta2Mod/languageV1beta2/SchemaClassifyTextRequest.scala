@@ -16,19 +16,15 @@ trait SchemaClassifyTextRequest extends StObject {
 }
 object SchemaClassifyTextRequest {
   
-  @scala.inline
-  def apply(): SchemaClassifyTextRequest = {
+  inline def apply(): SchemaClassifyTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClassifyTextRequest]
   }
   
-  @scala.inline
-  implicit class SchemaClassifyTextRequestMutableBuilder[Self <: SchemaClassifyTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClassifyTextRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: SchemaDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: SchemaDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
   }
 }

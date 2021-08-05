@@ -14,10 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P, S](wrapper: Cheerio): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapper.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  @scala.inline
-  def default[P, S](wrapper: ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapper.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  @scala.inline
-  def default[P, S](wrapper: ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapper.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default[P, S](wrapper: Cheerio): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapper.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default[P, S](wrapper: ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapper.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default[P, S](wrapper: ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapper.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

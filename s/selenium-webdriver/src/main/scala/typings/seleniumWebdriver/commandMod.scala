@@ -320,8 +320,7 @@ object commandMod {
   }
   object ICommandName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACCEPT_ALERT: String,
       ACTIONS: String,
       ADD_COOKIE: String,
@@ -440,347 +439,233 @@ object commandMod {
       __obj.asInstanceOf[ICommandName]
     }
     
-    @scala.inline
-    implicit class ICommandNameMutableBuilder[Self <: ICommandName] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandName](x: Self) {
       
-      @scala.inline
-      def setACCEPT_ALERT(value: String): Self = StObject.set(x, "ACCEPT_ALERT", value.asInstanceOf[js.Any])
+      inline def setACCEPT_ALERT(value: String): Self = StObject.set(x, "ACCEPT_ALERT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACTIONS(value: String): Self = StObject.set(x, "ACTIONS", value.asInstanceOf[js.Any])
+      inline def setACTIONS(value: String): Self = StObject.set(x, "ACTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADD_COOKIE(value: String): Self = StObject.set(x, "ADD_COOKIE", value.asInstanceOf[js.Any])
+      inline def setADD_COOKIE(value: String): Self = StObject.set(x, "ADD_COOKIE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_ACTIONS(value: String): Self = StObject.set(x, "CLEAR_ACTIONS", value.asInstanceOf[js.Any])
+      inline def setCLEAR_ACTIONS(value: String): Self = StObject.set(x, "CLEAR_ACTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_APP_CACHE(value: String): Self = StObject.set(x, "CLEAR_APP_CACHE", value.asInstanceOf[js.Any])
+      inline def setCLEAR_APP_CACHE(value: String): Self = StObject.set(x, "CLEAR_APP_CACHE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_ELEMENT(value: String): Self = StObject.set(x, "CLEAR_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setCLEAR_ELEMENT(value: String): Self = StObject.set(x, "CLEAR_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_LOCAL_STORAGE(value: String): Self = StObject.set(x, "CLEAR_LOCAL_STORAGE", value.asInstanceOf[js.Any])
+      inline def setCLEAR_LOCAL_STORAGE(value: String): Self = StObject.set(x, "CLEAR_LOCAL_STORAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_SESSION_STORAGE(value: String): Self = StObject.set(x, "CLEAR_SESSION_STORAGE", value.asInstanceOf[js.Any])
+      inline def setCLEAR_SESSION_STORAGE(value: String): Self = StObject.set(x, "CLEAR_SESSION_STORAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLICK(value: String): Self = StObject.set(x, "CLICK", value.asInstanceOf[js.Any])
+      inline def setCLICK(value: String): Self = StObject.set(x, "CLICK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLICK_ELEMENT(value: String): Self = StObject.set(x, "CLICK_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setCLICK_ELEMENT(value: String): Self = StObject.set(x, "CLICK_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLOSE(value: String): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
+      inline def setCLOSE(value: String): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDELETE_ALL_COOKIES(value: String): Self = StObject.set(x, "DELETE_ALL_COOKIES", value.asInstanceOf[js.Any])
+      inline def setDELETE_ALL_COOKIES(value: String): Self = StObject.set(x, "DELETE_ALL_COOKIES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDELETE_COOKIE(value: String): Self = StObject.set(x, "DELETE_COOKIE", value.asInstanceOf[js.Any])
+      inline def setDELETE_COOKIE(value: String): Self = StObject.set(x, "DELETE_COOKIE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESCRIBE_SESSION(value: String): Self = StObject.set(x, "DESCRIBE_SESSION", value.asInstanceOf[js.Any])
+      inline def setDESCRIBE_SESSION(value: String): Self = StObject.set(x, "DESCRIBE_SESSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDISMISS_ALERT(value: String): Self = StObject.set(x, "DISMISS_ALERT", value.asInstanceOf[js.Any])
+      inline def setDISMISS_ALERT(value: String): Self = StObject.set(x, "DISMISS_ALERT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOUBLE_CLICK(value: String): Self = StObject.set(x, "DOUBLE_CLICK", value.asInstanceOf[js.Any])
+      inline def setDOUBLE_CLICK(value: String): Self = StObject.set(x, "DOUBLE_CLICK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setELEMENT_EQUALS(value: String): Self = StObject.set(x, "ELEMENT_EQUALS", value.asInstanceOf[js.Any])
+      inline def setELEMENT_EQUALS(value: String): Self = StObject.set(x, "ELEMENT_EQUALS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXECUTE_ASYNC_SCRIPT(value: String): Self = StObject.set(x, "EXECUTE_ASYNC_SCRIPT", value.asInstanceOf[js.Any])
+      inline def setEXECUTE_ASYNC_SCRIPT(value: String): Self = StObject.set(x, "EXECUTE_ASYNC_SCRIPT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXECUTE_SCRIPT(value: String): Self = StObject.set(x, "EXECUTE_SCRIPT", value.asInstanceOf[js.Any])
+      inline def setEXECUTE_SCRIPT(value: String): Self = StObject.set(x, "EXECUTE_SCRIPT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXECUTE_SQL(value: String): Self = StObject.set(x, "EXECUTE_SQL", value.asInstanceOf[js.Any])
+      inline def setEXECUTE_SQL(value: String): Self = StObject.set(x, "EXECUTE_SQL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIND_CHILD_ELEMENT(value: String): Self = StObject.set(x, "FIND_CHILD_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setFIND_CHILD_ELEMENT(value: String): Self = StObject.set(x, "FIND_CHILD_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIND_CHILD_ELEMENTS(value: String): Self = StObject.set(x, "FIND_CHILD_ELEMENTS", value.asInstanceOf[js.Any])
+      inline def setFIND_CHILD_ELEMENTS(value: String): Self = StObject.set(x, "FIND_CHILD_ELEMENTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIND_ELEMENT(value: String): Self = StObject.set(x, "FIND_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setFIND_ELEMENT(value: String): Self = StObject.set(x, "FIND_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIND_ELEMENTS(value: String): Self = StObject.set(x, "FIND_ELEMENTS", value.asInstanceOf[js.Any])
+      inline def setFIND_ELEMENTS(value: String): Self = StObject.set(x, "FIND_ELEMENTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: String): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: String): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ACTIVE_ELEMENT(value: String): Self = StObject.set(x, "GET_ACTIVE_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setGET_ACTIVE_ELEMENT(value: String): Self = StObject.set(x, "GET_ACTIVE_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ALERT_TEXT(value: String): Self = StObject.set(x, "GET_ALERT_TEXT", value.asInstanceOf[js.Any])
+      inline def setGET_ALERT_TEXT(value: String): Self = StObject.set(x, "GET_ALERT_TEXT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ALL_COOKIES(value: String): Self = StObject.set(x, "GET_ALL_COOKIES", value.asInstanceOf[js.Any])
+      inline def setGET_ALL_COOKIES(value: String): Self = StObject.set(x, "GET_ALL_COOKIES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_APP_CACHE(value: String): Self = StObject.set(x, "GET_APP_CACHE", value.asInstanceOf[js.Any])
+      inline def setGET_APP_CACHE(value: String): Self = StObject.set(x, "GET_APP_CACHE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_APP_CACHE_STATUS(value: String): Self = StObject.set(x, "GET_APP_CACHE_STATUS", value.asInstanceOf[js.Any])
+      inline def setGET_APP_CACHE_STATUS(value: String): Self = StObject.set(x, "GET_APP_CACHE_STATUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_AVAILABLE_LOG_TYPES(value: String): Self = StObject.set(x, "GET_AVAILABLE_LOG_TYPES", value.asInstanceOf[js.Any])
+      inline def setGET_AVAILABLE_LOG_TYPES(value: String): Self = StObject.set(x, "GET_AVAILABLE_LOG_TYPES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_COOKIE(value: String): Self = StObject.set(x, "GET_COOKIE", value.asInstanceOf[js.Any])
+      inline def setGET_COOKIE(value: String): Self = StObject.set(x, "GET_COOKIE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_CURRENT_URL(value: String): Self = StObject.set(x, "GET_CURRENT_URL", value.asInstanceOf[js.Any])
+      inline def setGET_CURRENT_URL(value: String): Self = StObject.set(x, "GET_CURRENT_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_CURRENT_WINDOW_HANDLE(value: String): Self = StObject.set(x, "GET_CURRENT_WINDOW_HANDLE", value.asInstanceOf[js.Any])
+      inline def setGET_CURRENT_WINDOW_HANDLE(value: String): Self = StObject.set(x, "GET_CURRENT_WINDOW_HANDLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_ATTRIBUTE(value: String): Self = StObject.set(x, "GET_ELEMENT_ATTRIBUTE", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_ATTRIBUTE(value: String): Self = StObject.set(x, "GET_ELEMENT_ATTRIBUTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_LOCATION(value: String): Self = StObject.set(x, "GET_ELEMENT_LOCATION", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_LOCATION(value: String): Self = StObject.set(x, "GET_ELEMENT_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_LOCATION_IN_VIEW(value: String): Self = StObject.set(x, "GET_ELEMENT_LOCATION_IN_VIEW", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_LOCATION_IN_VIEW(value: String): Self = StObject.set(x, "GET_ELEMENT_LOCATION_IN_VIEW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_SIZE(value: String): Self = StObject.set(x, "GET_ELEMENT_SIZE", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_SIZE(value: String): Self = StObject.set(x, "GET_ELEMENT_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_TAG_NAME(value: String): Self = StObject.set(x, "GET_ELEMENT_TAG_NAME", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_TAG_NAME(value: String): Self = StObject.set(x, "GET_ELEMENT_TAG_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_TEXT(value: String): Self = StObject.set(x, "GET_ELEMENT_TEXT", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_TEXT(value: String): Self = StObject.set(x, "GET_ELEMENT_TEXT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ELEMENT_VALUE_OF_CSS_PROPERTY(value: String): Self = StObject.set(x, "GET_ELEMENT_VALUE_OF_CSS_PROPERTY", value.asInstanceOf[js.Any])
+      inline def setGET_ELEMENT_VALUE_OF_CSS_PROPERTY(value: String): Self = StObject.set(x, "GET_ELEMENT_VALUE_OF_CSS_PROPERTY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_LOCAL_STORAGE_ITEM(value: String): Self = StObject.set(x, "GET_LOCAL_STORAGE_ITEM", value.asInstanceOf[js.Any])
+      inline def setGET_LOCAL_STORAGE_ITEM(value: String): Self = StObject.set(x, "GET_LOCAL_STORAGE_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_LOCAL_STORAGE_KEYS(value: String): Self = StObject.set(x, "GET_LOCAL_STORAGE_KEYS", value.asInstanceOf[js.Any])
+      inline def setGET_LOCAL_STORAGE_KEYS(value: String): Self = StObject.set(x, "GET_LOCAL_STORAGE_KEYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_LOCAL_STORAGE_SIZE(value: String): Self = StObject.set(x, "GET_LOCAL_STORAGE_SIZE", value.asInstanceOf[js.Any])
+      inline def setGET_LOCAL_STORAGE_SIZE(value: String): Self = StObject.set(x, "GET_LOCAL_STORAGE_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_LOCATION(value: String): Self = StObject.set(x, "GET_LOCATION", value.asInstanceOf[js.Any])
+      inline def setGET_LOCATION(value: String): Self = StObject.set(x, "GET_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_LOG(value: String): Self = StObject.set(x, "GET_LOG", value.asInstanceOf[js.Any])
+      inline def setGET_LOG(value: String): Self = StObject.set(x, "GET_LOG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_PAGE_SOURCE(value: String): Self = StObject.set(x, "GET_PAGE_SOURCE", value.asInstanceOf[js.Any])
+      inline def setGET_PAGE_SOURCE(value: String): Self = StObject.set(x, "GET_PAGE_SOURCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SCREEN_ORIENTATION(value: String): Self = StObject.set(x, "GET_SCREEN_ORIENTATION", value.asInstanceOf[js.Any])
+      inline def setGET_SCREEN_ORIENTATION(value: String): Self = StObject.set(x, "GET_SCREEN_ORIENTATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SERVER_STATUS(value: String): Self = StObject.set(x, "GET_SERVER_STATUS", value.asInstanceOf[js.Any])
+      inline def setGET_SERVER_STATUS(value: String): Self = StObject.set(x, "GET_SERVER_STATUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SESSIONS(value: String): Self = StObject.set(x, "GET_SESSIONS", value.asInstanceOf[js.Any])
+      inline def setGET_SESSIONS(value: String): Self = StObject.set(x, "GET_SESSIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SESSION_LOGS(value: String): Self = StObject.set(x, "GET_SESSION_LOGS", value.asInstanceOf[js.Any])
+      inline def setGET_SESSION_LOGS(value: String): Self = StObject.set(x, "GET_SESSION_LOGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SESSION_STORAGE_ITEM(value: String): Self = StObject.set(x, "GET_SESSION_STORAGE_ITEM", value.asInstanceOf[js.Any])
+      inline def setGET_SESSION_STORAGE_ITEM(value: String): Self = StObject.set(x, "GET_SESSION_STORAGE_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SESSION_STORAGE_KEYS(value: String): Self = StObject.set(x, "GET_SESSION_STORAGE_KEYS", value.asInstanceOf[js.Any])
+      inline def setGET_SESSION_STORAGE_KEYS(value: String): Self = StObject.set(x, "GET_SESSION_STORAGE_KEYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_SESSION_STORAGE_SIZE(value: String): Self = StObject.set(x, "GET_SESSION_STORAGE_SIZE", value.asInstanceOf[js.Any])
+      inline def setGET_SESSION_STORAGE_SIZE(value: String): Self = StObject.set(x, "GET_SESSION_STORAGE_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_TITLE(value: String): Self = StObject.set(x, "GET_TITLE", value.asInstanceOf[js.Any])
+      inline def setGET_TITLE(value: String): Self = StObject.set(x, "GET_TITLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_WINDOW_HANDLES(value: String): Self = StObject.set(x, "GET_WINDOW_HANDLES", value.asInstanceOf[js.Any])
+      inline def setGET_WINDOW_HANDLES(value: String): Self = StObject.set(x, "GET_WINDOW_HANDLES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_WINDOW_POSITION(value: String): Self = StObject.set(x, "GET_WINDOW_POSITION", value.asInstanceOf[js.Any])
+      inline def setGET_WINDOW_POSITION(value: String): Self = StObject.set(x, "GET_WINDOW_POSITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_WINDOW_SIZE(value: String): Self = StObject.set(x, "GET_WINDOW_SIZE", value.asInstanceOf[js.Any])
+      inline def setGET_WINDOW_SIZE(value: String): Self = StObject.set(x, "GET_WINDOW_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGO_BACK(value: String): Self = StObject.set(x, "GO_BACK", value.asInstanceOf[js.Any])
+      inline def setGO_BACK(value: String): Self = StObject.set(x, "GO_BACK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGO_FORWARD(value: String): Self = StObject.set(x, "GO_FORWARD", value.asInstanceOf[js.Any])
+      inline def setGO_FORWARD(value: String): Self = StObject.set(x, "GO_FORWARD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMPLICITLY_WAIT(value: String): Self = StObject.set(x, "IMPLICITLY_WAIT", value.asInstanceOf[js.Any])
+      inline def setIMPLICITLY_WAIT(value: String): Self = StObject.set(x, "IMPLICITLY_WAIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_BROWSER_ONLINE(value: String): Self = StObject.set(x, "IS_BROWSER_ONLINE", value.asInstanceOf[js.Any])
+      inline def setIS_BROWSER_ONLINE(value: String): Self = StObject.set(x, "IS_BROWSER_ONLINE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_ELEMENT_DISPLAYED(value: String): Self = StObject.set(x, "IS_ELEMENT_DISPLAYED", value.asInstanceOf[js.Any])
+      inline def setIS_ELEMENT_DISPLAYED(value: String): Self = StObject.set(x, "IS_ELEMENT_DISPLAYED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_ELEMENT_ENABLED(value: String): Self = StObject.set(x, "IS_ELEMENT_ENABLED", value.asInstanceOf[js.Any])
+      inline def setIS_ELEMENT_ENABLED(value: String): Self = StObject.set(x, "IS_ELEMENT_ENABLED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_ELEMENT_SELECTED(value: String): Self = StObject.set(x, "IS_ELEMENT_SELECTED", value.asInstanceOf[js.Any])
+      inline def setIS_ELEMENT_SELECTED(value: String): Self = StObject.set(x, "IS_ELEMENT_SELECTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_CLICK(value: String): Self = StObject.set(x, "LEGACY_ACTION_CLICK", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_CLICK(value: String): Self = StObject.set(x, "LEGACY_ACTION_CLICK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_DOUBLE_CLICK(value: String): Self = StObject.set(x, "LEGACY_ACTION_DOUBLE_CLICK", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_DOUBLE_CLICK(value: String): Self = StObject.set(x, "LEGACY_ACTION_DOUBLE_CLICK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_MOUSE_DOWN(value: String): Self = StObject.set(x, "LEGACY_ACTION_MOUSE_DOWN", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_MOUSE_DOWN(value: String): Self = StObject.set(x, "LEGACY_ACTION_MOUSE_DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_MOUSE_MOVE(value: String): Self = StObject.set(x, "LEGACY_ACTION_MOUSE_MOVE", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_MOUSE_MOVE(value: String): Self = StObject.set(x, "LEGACY_ACTION_MOUSE_MOVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_MOUSE_UP(value: String): Self = StObject.set(x, "LEGACY_ACTION_MOUSE_UP", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_MOUSE_UP(value: String): Self = StObject.set(x, "LEGACY_ACTION_MOUSE_UP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_SEND_KEYS(value: String): Self = StObject.set(x, "LEGACY_ACTION_SEND_KEYS", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_SEND_KEYS(value: String): Self = StObject.set(x, "LEGACY_ACTION_SEND_KEYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_DOUBLE_TAP(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_DOUBLE_TAP", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_DOUBLE_TAP(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_DOUBLE_TAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_DOWN(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_DOWN", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_DOWN(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_FLICK(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_FLICK", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_FLICK(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_FLICK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_LONG_PRESS(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_LONG_PRESS", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_LONG_PRESS(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_LONG_PRESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_MOVE(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_MOVE", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_MOVE(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_MOVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_SCROLL(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_SCROLL", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_SCROLL(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_SCROLL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_SINGLE_TAP(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_SINGLE_TAP", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_SINGLE_TAP(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_SINGLE_TAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEGACY_ACTION_TOUCH_UP(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_UP", value.asInstanceOf[js.Any])
+      inline def setLEGACY_ACTION_TOUCH_UP(value: String): Self = StObject.set(x, "LEGACY_ACTION_TOUCH_UP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAXIMIZE_WINDOW(value: String): Self = StObject.set(x, "MAXIMIZE_WINDOW", value.asInstanceOf[js.Any])
+      inline def setMAXIMIZE_WINDOW(value: String): Self = StObject.set(x, "MAXIMIZE_WINDOW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOUSE_DOWN(value: String): Self = StObject.set(x, "MOUSE_DOWN", value.asInstanceOf[js.Any])
+      inline def setMOUSE_DOWN(value: String): Self = StObject.set(x, "MOUSE_DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOUSE_UP(value: String): Self = StObject.set(x, "MOUSE_UP", value.asInstanceOf[js.Any])
+      inline def setMOUSE_UP(value: String): Self = StObject.set(x, "MOUSE_UP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOVE_TO(value: String): Self = StObject.set(x, "MOVE_TO", value.asInstanceOf[js.Any])
+      inline def setMOVE_TO(value: String): Self = StObject.set(x, "MOVE_TO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNEW_SESSION(value: String): Self = StObject.set(x, "NEW_SESSION", value.asInstanceOf[js.Any])
+      inline def setNEW_SESSION(value: String): Self = StObject.set(x, "NEW_SESSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUIT(value: String): Self = StObject.set(x, "QUIT", value.asInstanceOf[js.Any])
+      inline def setQUIT(value: String): Self = StObject.set(x, "QUIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREFRESH(value: String): Self = StObject.set(x, "REFRESH", value.asInstanceOf[js.Any])
+      inline def setREFRESH(value: String): Self = StObject.set(x, "REFRESH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMOVE_LOCAL_STORAGE_ITEM(value: String): Self = StObject.set(x, "REMOVE_LOCAL_STORAGE_ITEM", value.asInstanceOf[js.Any])
+      inline def setREMOVE_LOCAL_STORAGE_ITEM(value: String): Self = StObject.set(x, "REMOVE_LOCAL_STORAGE_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMOVE_SESSION_STORAGE_ITEM(value: String): Self = StObject.set(x, "REMOVE_SESSION_STORAGE_ITEM", value.asInstanceOf[js.Any])
+      inline def setREMOVE_SESSION_STORAGE_ITEM(value: String): Self = StObject.set(x, "REMOVE_SESSION_STORAGE_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCREENSHOT(value: String): Self = StObject.set(x, "SCREENSHOT", value.asInstanceOf[js.Any])
+      inline def setSCREENSHOT(value: String): Self = StObject.set(x, "SCREENSHOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEND_KEYS_TO_ACTIVE_ELEMENT(value: String): Self = StObject.set(x, "SEND_KEYS_TO_ACTIVE_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setSEND_KEYS_TO_ACTIVE_ELEMENT(value: String): Self = StObject.set(x, "SEND_KEYS_TO_ACTIVE_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEND_KEYS_TO_ELEMENT(value: String): Self = StObject.set(x, "SEND_KEYS_TO_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setSEND_KEYS_TO_ELEMENT(value: String): Self = StObject.set(x, "SEND_KEYS_TO_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_ALERT_TEXT(value: String): Self = StObject.set(x, "SET_ALERT_TEXT", value.asInstanceOf[js.Any])
+      inline def setSET_ALERT_TEXT(value: String): Self = StObject.set(x, "SET_ALERT_TEXT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_BROWSER_ONLINE(value: String): Self = StObject.set(x, "SET_BROWSER_ONLINE", value.asInstanceOf[js.Any])
+      inline def setSET_BROWSER_ONLINE(value: String): Self = StObject.set(x, "SET_BROWSER_ONLINE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_LOCAL_STORAGE_ITEM(value: String): Self = StObject.set(x, "SET_LOCAL_STORAGE_ITEM", value.asInstanceOf[js.Any])
+      inline def setSET_LOCAL_STORAGE_ITEM(value: String): Self = StObject.set(x, "SET_LOCAL_STORAGE_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_LOCATION(value: String): Self = StObject.set(x, "SET_LOCATION", value.asInstanceOf[js.Any])
+      inline def setSET_LOCATION(value: String): Self = StObject.set(x, "SET_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_SCREEN_ORIENTATION(value: String): Self = StObject.set(x, "SET_SCREEN_ORIENTATION", value.asInstanceOf[js.Any])
+      inline def setSET_SCREEN_ORIENTATION(value: String): Self = StObject.set(x, "SET_SCREEN_ORIENTATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_SCRIPT_TIMEOUT(value: String): Self = StObject.set(x, "SET_SCRIPT_TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setSET_SCRIPT_TIMEOUT(value: String): Self = StObject.set(x, "SET_SCRIPT_TIMEOUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_SESSION_STORAGE_ITEM(value: String): Self = StObject.set(x, "SET_SESSION_STORAGE_ITEM", value.asInstanceOf[js.Any])
+      inline def setSET_SESSION_STORAGE_ITEM(value: String): Self = StObject.set(x, "SET_SESSION_STORAGE_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_TIMEOUT(value: String): Self = StObject.set(x, "SET_TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setSET_TIMEOUT(value: String): Self = StObject.set(x, "SET_TIMEOUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_WINDOW_POSITION(value: String): Self = StObject.set(x, "SET_WINDOW_POSITION", value.asInstanceOf[js.Any])
+      inline def setSET_WINDOW_POSITION(value: String): Self = StObject.set(x, "SET_WINDOW_POSITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_WINDOW_SIZE(value: String): Self = StObject.set(x, "SET_WINDOW_SIZE", value.asInstanceOf[js.Any])
+      inline def setSET_WINDOW_SIZE(value: String): Self = StObject.set(x, "SET_WINDOW_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUBMIT_ELEMENT(value: String): Self = StObject.set(x, "SUBMIT_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setSUBMIT_ELEMENT(value: String): Self = StObject.set(x, "SUBMIT_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSWITCH_TO_FRAME(value: String): Self = StObject.set(x, "SWITCH_TO_FRAME", value.asInstanceOf[js.Any])
+      inline def setSWITCH_TO_FRAME(value: String): Self = StObject.set(x, "SWITCH_TO_FRAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSWITCH_TO_WINDOW(value: String): Self = StObject.set(x, "SWITCH_TO_WINDOW", value.asInstanceOf[js.Any])
+      inline def setSWITCH_TO_WINDOW(value: String): Self = StObject.set(x, "SWITCH_TO_WINDOW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_DOUBLE_TAP(value: String): Self = StObject.set(x, "TOUCH_DOUBLE_TAP", value.asInstanceOf[js.Any])
+      inline def setTOUCH_DOUBLE_TAP(value: String): Self = StObject.set(x, "TOUCH_DOUBLE_TAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_DOWN(value: String): Self = StObject.set(x, "TOUCH_DOWN", value.asInstanceOf[js.Any])
+      inline def setTOUCH_DOWN(value: String): Self = StObject.set(x, "TOUCH_DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_FLICK(value: String): Self = StObject.set(x, "TOUCH_FLICK", value.asInstanceOf[js.Any])
+      inline def setTOUCH_FLICK(value: String): Self = StObject.set(x, "TOUCH_FLICK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_LONG_PRESS(value: String): Self = StObject.set(x, "TOUCH_LONG_PRESS", value.asInstanceOf[js.Any])
+      inline def setTOUCH_LONG_PRESS(value: String): Self = StObject.set(x, "TOUCH_LONG_PRESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_MOVE(value: String): Self = StObject.set(x, "TOUCH_MOVE", value.asInstanceOf[js.Any])
+      inline def setTOUCH_MOVE(value: String): Self = StObject.set(x, "TOUCH_MOVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_SCROLL(value: String): Self = StObject.set(x, "TOUCH_SCROLL", value.asInstanceOf[js.Any])
+      inline def setTOUCH_SCROLL(value: String): Self = StObject.set(x, "TOUCH_SCROLL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_SINGLE_TAP(value: String): Self = StObject.set(x, "TOUCH_SINGLE_TAP", value.asInstanceOf[js.Any])
+      inline def setTOUCH_SINGLE_TAP(value: String): Self = StObject.set(x, "TOUCH_SINGLE_TAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH_UP(value: String): Self = StObject.set(x, "TOUCH_UP", value.asInstanceOf[js.Any])
+      inline def setTOUCH_UP(value: String): Self = StObject.set(x, "TOUCH_UP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPLOAD_FILE(value: String): Self = StObject.set(x, "UPLOAD_FILE", value.asInstanceOf[js.Any])
+      inline def setUPLOAD_FILE(value: String): Self = StObject.set(x, "UPLOAD_FILE", value.asInstanceOf[js.Any])
     }
   }
 }

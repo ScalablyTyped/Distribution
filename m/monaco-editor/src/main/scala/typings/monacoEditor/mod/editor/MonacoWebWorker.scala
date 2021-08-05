@@ -25,8 +25,7 @@ trait MonacoWebWorker[T] extends StObject {
 }
 object MonacoWebWorker {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     dispose: () => Unit,
     getProxy: () => js.Promise[T],
     withSyncedResources: js.Array[Uri] => js.Promise[T]
@@ -35,16 +34,12 @@ object MonacoWebWorker {
     __obj.asInstanceOf[MonacoWebWorker[T]]
   }
   
-  @scala.inline
-  implicit class MonacoWebWorkerMutableBuilder[Self <: MonacoWebWorker[?], T] (val x: Self & MonacoWebWorker[T]) extends AnyVal {
+  extension [Self <: MonacoWebWorker[?], T](x: Self & MonacoWebWorker[T]) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxy(value: () => js.Promise[T]): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => js.Promise[T]): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithSyncedResources(value: js.Array[Uri] => js.Promise[T]): Self = StObject.set(x, "withSyncedResources", js.Any.fromFunction1(value))
+    inline def setWithSyncedResources(value: js.Array[Uri] => js.Promise[T]): Self = StObject.set(x, "withSyncedResources", js.Any.fromFunction1(value))
   }
 }

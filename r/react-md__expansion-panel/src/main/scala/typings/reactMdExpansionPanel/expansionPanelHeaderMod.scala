@@ -62,41 +62,30 @@ object expansionPanelHeaderMod {
   }
   object ExpansionPanelHeaderProps {
     
-    @scala.inline
-    def apply(expanded: Boolean, id: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): ExpansionPanelHeaderProps = {
+    inline def apply(expanded: Boolean, id: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): ExpansionPanelHeaderProps = {
       val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[ExpansionPanelHeaderProps]
     }
     
-    @scala.inline
-    implicit class ExpansionPanelHeaderPropsMutableBuilder[Self <: ExpansionPanelHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExpansionPanelHeaderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+      inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
+      inline def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
 }

@@ -21,25 +21,19 @@ trait GetFileOptions extends StObject {
 }
 object GetFileOptions {
   
-  @scala.inline
-  def apply(): GetFileOptions = {
+  inline def apply(): GetFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFileOptions]
   }
   
-  @scala.inline
-  implicit class GetFileOptionsMutableBuilder[Self <: GetFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
+    inline def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceSizeUndefined: Self = StObject.set(x, "sliceSize", js.undefined)
+    inline def setSliceSizeUndefined: Self = StObject.set(x, "sliceSize", js.undefined)
   }
 }

@@ -34,8 +34,7 @@ object anon {
   }
   object Block {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       block: Confirmationsaccumulated,
       network: CryptoName,
       status: PaymentStatus,
@@ -46,23 +45,17 @@ object anon {
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Confirmationsaccumulated): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Confirmationsaccumulated): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: CryptoName): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: CryptoName): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: PaymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PaymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
+      inline def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Crypto): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Crypto): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,26 +71,20 @@ object anon {
   }
   object Confirmationsaccumulated {
     
-    @scala.inline
-    def apply(confirmations_accumulated: Double, confirmations_required: Double, hash: String, height: Double): Confirmationsaccumulated = {
+    inline def apply(confirmations_accumulated: Double, confirmations_required: Double, hash: String, height: Double): Confirmationsaccumulated = {
       val __obj = js.Dynamic.literal(confirmations_accumulated = confirmations_accumulated.asInstanceOf[js.Any], confirmations_required = confirmations_required.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
       __obj.asInstanceOf[Confirmationsaccumulated]
     }
     
-    @scala.inline
-    implicit class ConfirmationsaccumulatedMutableBuilder[Self <: Confirmationsaccumulated] (val x: Self) extends AnyVal {
+    extension [Self <: Confirmationsaccumulated](x: Self) {
       
-      @scala.inline
-      def setConfirmations_accumulated(value: Double): Self = StObject.set(x, "confirmations_accumulated", value.asInstanceOf[js.Any])
+      inline def setConfirmations_accumulated(value: Double): Self = StObject.set(x, "confirmations_accumulated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmations_required(value: Double): Self = StObject.set(x, "confirmations_required", value.asInstanceOf[js.Any])
+      inline def setConfirmations_required(value: Double): Self = StObject.set(x, "confirmations_required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,26 +107,20 @@ object anon {
   }
   object Context {
     
-    @scala.inline
-    def apply(status: PaymentStatus, time: Timestamp): Context = {
+    inline def apply(status: PaymentStatus, time: Timestamp): Context = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setContext(value: UNDERPAID | OVERPAID | DELAYED | MULTIPLE | MANUAL | OTHER): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: UNDERPAID | OVERPAID | DELAYED | MULTIPLE | MANUAL | OTHER): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setStatus(value: PaymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PaymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,20 +132,16 @@ object anon {
   }
   object Crypto {
     
-    @scala.inline
-    def apply(crypto: Price[CryptoCurrency], local: Price[FiatCurrency]): Crypto = {
+    inline def apply(crypto: Price[CryptoCurrency], local: Price[FiatCurrency]): Crypto = {
       val __obj = js.Dynamic.literal(crypto = crypto.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
       __obj.asInstanceOf[Crypto]
     }
     
-    @scala.inline
-    implicit class CryptoMutableBuilder[Self <: Crypto] (val x: Self) extends AnyVal {
+    extension [Self <: Crypto](x: Self) {
       
-      @scala.inline
-      def setCrypto(value: Price[CryptoCurrency]): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
+      inline def setCrypto(value: Price[CryptoCurrency]): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal(value: Price[FiatCurrency]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: Price[FiatCurrency]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,8 +161,7 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(`User-Agent`: String, `X-CC-Api-Key`: String, `X-CC-Version`: String): Dictkey = {
+    inline def apply(`User-Agent`: String, `X-CC-Api-Key`: String, `X-CC-Version`: String): Dictkey = {
       val __obj = js.Dynamic.literal(Accept = "application/json")
       __obj.updateDynamic("Content-Type")("application/json")
       __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
@@ -194,23 +170,17 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setAccept(value: applicationSlashjson): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: applicationSlashjson): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-Type`(value: applicationSlashjson): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+      inline def `setContent-Type`(value: applicationSlashjson): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+      inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-CC-Api-Key`(value: String): Self = StObject.set(x, "X-CC-Api-Key", value.asInstanceOf[js.Any])
+      inline def `setX-CC-Api-Key`(value: String): Self = StObject.set(x, "X-CC-Api-Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-CC-Version`(value: String): Self = StObject.set(x, "X-CC-Version", value.asInstanceOf[js.Any])
+      inline def `setX-CC-Version`(value: String): Self = StObject.set(x, "X-CC-Version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,17 +190,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String): Id = {
+    inline def apply(id: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,44 +216,32 @@ object anon {
   }
   object PartialRecordCryptoNamest {
     
-    @scala.inline
-    def apply(): PartialRecordCryptoNamest = {
+    inline def apply(): PartialRecordCryptoNamest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecordCryptoNamest]
     }
     
-    @scala.inline
-    implicit class PartialRecordCryptoNamestMutableBuilder[Self <: PartialRecordCryptoNamest] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecordCryptoNamest](x: Self) {
       
-      @scala.inline
-      def setBitcoin(value: String): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
+      inline def setBitcoin(value: String): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitcoinUndefined: Self = StObject.set(x, "bitcoin", js.undefined)
+      inline def setBitcoinUndefined: Self = StObject.set(x, "bitcoin", js.undefined)
       
-      @scala.inline
-      def setBitcoincash(value: String): Self = StObject.set(x, "bitcoincash", value.asInstanceOf[js.Any])
+      inline def setBitcoincash(value: String): Self = StObject.set(x, "bitcoincash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitcoincashUndefined: Self = StObject.set(x, "bitcoincash", js.undefined)
+      inline def setBitcoincashUndefined: Self = StObject.set(x, "bitcoincash", js.undefined)
       
-      @scala.inline
-      def setEthereum(value: String): Self = StObject.set(x, "ethereum", value.asInstanceOf[js.Any])
+      inline def setEthereum(value: String): Self = StObject.set(x, "ethereum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEthereumUndefined: Self = StObject.set(x, "ethereum", js.undefined)
+      inline def setEthereumUndefined: Self = StObject.set(x, "ethereum", js.undefined)
       
-      @scala.inline
-      def setLitecoin(value: String): Self = StObject.set(x, "litecoin", value.asInstanceOf[js.Any])
+      inline def setLitecoin(value: String): Self = StObject.set(x, "litecoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLitecoinUndefined: Self = StObject.set(x, "litecoin", js.undefined)
+      inline def setLitecoinUndefined: Self = StObject.set(x, "litecoin", js.undefined)
       
-      @scala.inline
-      def setUsdc(value: String): Self = StObject.set(x, "usdc", value.asInstanceOf[js.Any])
+      inline def setUsdc(value: String): Self = StObject.set(x, "usdc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsdcUndefined: Self = StObject.set(x, "usdc", js.undefined)
+      inline def setUsdcUndefined: Self = StObject.set(x, "usdc", js.undefined)
     }
   }
 }

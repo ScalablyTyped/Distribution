@@ -19,37 +19,27 @@ trait cardCreateOptions extends StObject {
 }
 object cardCreateOptions {
   
-  @scala.inline
-  def apply(): cardCreateOptions = {
+  inline def apply(): cardCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[cardCreateOptions]
   }
   
-  @scala.inline
-  implicit class cardCreateOptionsMutableBuilder[Self <: cardCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: cardCreateOptions](x: Self) {
     
-    @scala.inline
-    def setCardholderName(value: Boolean | Required): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    inline def setCardholderName(value: Boolean | Required): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
     
-    @scala.inline
-    def setClearFieldsAfterTokenization(value: Boolean): Self = StObject.set(x, "clearFieldsAfterTokenization", value.asInstanceOf[js.Any])
+    inline def setClearFieldsAfterTokenization(value: Boolean): Self = StObject.set(x, "clearFieldsAfterTokenization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFieldsAfterTokenizationUndefined: Self = StObject.set(x, "clearFieldsAfterTokenization", js.undefined)
+    inline def setClearFieldsAfterTokenizationUndefined: Self = StObject.set(x, "clearFieldsAfterTokenization", js.undefined)
     
-    @scala.inline
-    def setOverrides(value: Fields): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: Fields): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setVault(value: AllowVaultCardOverride): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
+    inline def setVault(value: AllowVaultCardOverride): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
+    inline def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait Subject extends StObject {
 }
 object Subject {
   
-  @scala.inline
-  def apply(kind: Input[String]): Subject = {
+  inline def apply(kind: Input[String]): Subject = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subject]
   }
   
-  @scala.inline
-  implicit class SubjectMutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
+  extension [Self <: Subject](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Input[GroupSubject]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Input[GroupSubject]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccount(value: Input[ServiceAccountSubject]): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: Input[ServiceAccountSubject]): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setUser(value: Input[UserSubject]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Input[UserSubject]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

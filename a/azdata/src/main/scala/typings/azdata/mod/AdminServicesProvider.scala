@@ -19,8 +19,7 @@ trait AdminServicesProvider
 }
 object AdminServicesProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createDatabase: (String, DatabaseInfo) => Thenable[CreateDatabaseResponse],
     createLogin: (String, LoginInfo) => Thenable[CreateLoginResponse],
     getDatabaseInfo: String => Thenable[DatabaseInfo],
@@ -31,19 +30,14 @@ object AdminServicesProvider {
     __obj.asInstanceOf[AdminServicesProvider]
   }
   
-  @scala.inline
-  implicit class AdminServicesProviderMutableBuilder[Self <: AdminServicesProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AdminServicesProvider](x: Self) {
     
-    @scala.inline
-    def setCreateDatabase(value: (String, DatabaseInfo) => Thenable[CreateDatabaseResponse]): Self = StObject.set(x, "createDatabase", js.Any.fromFunction2(value))
+    inline def setCreateDatabase(value: (String, DatabaseInfo) => Thenable[CreateDatabaseResponse]): Self = StObject.set(x, "createDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateLogin(value: (String, LoginInfo) => Thenable[CreateLoginResponse]): Self = StObject.set(x, "createLogin", js.Any.fromFunction2(value))
+    inline def setCreateLogin(value: (String, LoginInfo) => Thenable[CreateLoginResponse]): Self = StObject.set(x, "createLogin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDatabaseInfo(value: String => Thenable[DatabaseInfo]): Self = StObject.set(x, "getDatabaseInfo", js.Any.fromFunction1(value))
+    inline def setGetDatabaseInfo(value: String => Thenable[DatabaseInfo]): Self = StObject.set(x, "getDatabaseInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultDatabaseInfo(value: String => Thenable[DatabaseInfo]): Self = StObject.set(x, "getDefaultDatabaseInfo", js.Any.fromFunction1(value))
+    inline def setGetDefaultDatabaseInfo(value: String => Thenable[DatabaseInfo]): Self = StObject.set(x, "getDefaultDatabaseInfo", js.Any.fromFunction1(value))
   }
 }

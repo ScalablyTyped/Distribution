@@ -13,20 +13,16 @@ object anon {
   }
   object ClearCache {
     
-    @scala.inline
-    def apply(): ClearCache = {
+    inline def apply(): ClearCache = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearCache]
     }
     
-    @scala.inline
-    implicit class ClearCacheMutableBuilder[Self <: ClearCache] (val x: Self) extends AnyVal {
+    extension [Self <: ClearCache](x: Self) {
       
-      @scala.inline
-      def setClearCache(value: `true`): Self = StObject.set(x, "clearCache", value.asInstanceOf[js.Any])
+      inline def setClearCache(value: `true`): Self = StObject.set(x, "clearCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearCacheUndefined: Self = StObject.set(x, "clearCache", js.undefined)
+      inline def setClearCacheUndefined: Self = StObject.set(x, "clearCache", js.undefined)
     }
   }
   
@@ -38,20 +34,16 @@ object anon {
   }
   object Stderr {
     
-    @scala.inline
-    def apply(stderr: String, stdout: String): Stderr = {
+    inline def apply(stderr: String, stdout: String): Stderr = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stderr]
     }
     
-    @scala.inline
-    implicit class StderrMutableBuilder[Self <: Stderr] (val x: Self) extends AnyVal {
+    extension [Self <: Stderr](x: Self) {
       
-      @scala.inline
-      def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
 }

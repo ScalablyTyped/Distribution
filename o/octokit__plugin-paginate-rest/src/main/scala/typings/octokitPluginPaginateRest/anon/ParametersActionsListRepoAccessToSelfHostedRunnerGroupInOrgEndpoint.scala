@@ -15,8 +15,7 @@ trait ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extend
 }
 object ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
     response: OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`
   ): ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint = {
@@ -24,13 +23,10 @@ object ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
     __obj.asInstanceOf[ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpointMutableBuilder[Self <: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

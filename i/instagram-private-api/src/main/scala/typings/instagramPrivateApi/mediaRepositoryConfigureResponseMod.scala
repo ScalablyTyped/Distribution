@@ -16,23 +16,18 @@ object mediaRepositoryConfigureResponseMod {
   }
   object MediaRepositoryConfigureResponseCandidatesItem {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): MediaRepositoryConfigureResponseCandidatesItem = {
+    inline def apply(height: Double, url: String, width: Double): MediaRepositoryConfigureResponseCandidatesItem = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureResponseCandidatesItem]
     }
     
-    @scala.inline
-    implicit class MediaRepositoryConfigureResponseCandidatesItemMutableBuilder[Self <: MediaRepositoryConfigureResponseCandidatesItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaRepositoryConfigureResponseCandidatesItem](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +37,16 @@ object mediaRepositoryConfigureResponseMod {
   }
   object MediaRepositoryConfigureResponseFbUserTags {
     
-    @scala.inline
-    def apply(in: js.Array[js.Any]): MediaRepositoryConfigureResponseFbUserTags = {
+    inline def apply(in: js.Array[js.Any]): MediaRepositoryConfigureResponseFbUserTags = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureResponseFbUserTags]
     }
     
-    @scala.inline
-    implicit class MediaRepositoryConfigureResponseFbUserTagsMutableBuilder[Self <: MediaRepositoryConfigureResponseFbUserTags] (val x: Self) extends AnyVal {
+    extension [Self <: MediaRepositoryConfigureResponseFbUserTags](x: Self) {
       
-      @scala.inline
-      def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
     }
   }
   
@@ -65,20 +56,16 @@ object mediaRepositoryConfigureResponseMod {
   }
   object MediaRepositoryConfigureResponseImageVersions2 {
     
-    @scala.inline
-    def apply(candidates: js.Array[MediaRepositoryConfigureResponseCandidatesItem]): MediaRepositoryConfigureResponseImageVersions2 = {
+    inline def apply(candidates: js.Array[MediaRepositoryConfigureResponseCandidatesItem]): MediaRepositoryConfigureResponseImageVersions2 = {
       val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureResponseImageVersions2]
     }
     
-    @scala.inline
-    implicit class MediaRepositoryConfigureResponseImageVersions2MutableBuilder[Self <: MediaRepositoryConfigureResponseImageVersions2] (val x: Self) extends AnyVal {
+    extension [Self <: MediaRepositoryConfigureResponseImageVersions2](x: Self) {
       
-      @scala.inline
-      def setCandidates(value: js.Array[MediaRepositoryConfigureResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+      inline def setCandidates(value: js.Array[MediaRepositoryConfigureResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCandidatesVarargs(value: MediaRepositoryConfigureResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+      inline def setCandidatesVarargs(value: MediaRepositoryConfigureResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
     }
   }
   
@@ -138,8 +125,7 @@ object mediaRepositoryConfigureResponseMod {
   }
   object MediaRepositoryConfigureResponseMedia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       can_view_more_preview_comments: Boolean,
       can_viewer_reshare: Boolean,
       can_viewer_save: Boolean,
@@ -171,89 +157,61 @@ object mediaRepositoryConfigureResponseMod {
       __obj.asInstanceOf[MediaRepositoryConfigureResponseMedia]
     }
     
-    @scala.inline
-    implicit class MediaRepositoryConfigureResponseMediaMutableBuilder[Self <: MediaRepositoryConfigureResponseMedia] (val x: Self) extends AnyVal {
+    extension [Self <: MediaRepositoryConfigureResponseMedia](x: Self) {
       
-      @scala.inline
-      def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
+      inline def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_viewer_reshare(value: Boolean): Self = StObject.set(x, "can_viewer_reshare", value.asInstanceOf[js.Any])
+      inline def setCan_viewer_reshare(value: Boolean): Self = StObject.set(x, "can_viewer_reshare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
+      inline def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
+      inline def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
+      inline def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+      inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
+      inline def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFb_user_tags(value: MediaRepositoryConfigureResponseFbUserTags): Self = StObject.set(x, "fb_user_tags", value.asInstanceOf[js.Any])
+      inline def setFb_user_tags(value: MediaRepositoryConfigureResponseFbUserTags): Self = StObject.set(x, "fb_user_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
+      inline def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_versions2(value: MediaRepositoryConfigureResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
+      inline def setImage_versions2(value: MediaRepositoryConfigureResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
+      inline def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
+      inline def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
+      inline def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
+      inline def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
+      inline def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
+      inline def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      inline def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
+      inline def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
       
-      @scala.inline
-      def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
+      inline def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: MediaRepositoryConfigureResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: MediaRepositoryConfigureResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,23 +225,18 @@ object mediaRepositoryConfigureResponseMod {
   }
   object MediaRepositoryConfigureResponseRootObject {
     
-    @scala.inline
-    def apply(media: MediaRepositoryConfigureResponseMedia, status: String, upload_id: String): MediaRepositoryConfigureResponseRootObject = {
+    inline def apply(media: MediaRepositoryConfigureResponseMedia, status: String, upload_id: String): MediaRepositoryConfigureResponseRootObject = {
       val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureResponseRootObject]
     }
     
-    @scala.inline
-    implicit class MediaRepositoryConfigureResponseRootObjectMutableBuilder[Self <: MediaRepositoryConfigureResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: MediaRepositoryConfigureResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setMedia(value: MediaRepositoryConfigureResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: MediaRepositoryConfigureResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_id(value: String): Self = StObject.set(x, "upload_id", value.asInstanceOf[js.Any])
+      inline def setUpload_id(value: String): Self = StObject.set(x, "upload_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,8 +270,7 @@ object mediaRepositoryConfigureResponseMod {
   }
   object MediaRepositoryConfigureResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowed_commenter_type: String,
       can_boost_post: Boolean,
       can_see_organic_insights: Boolean,
@@ -337,47 +289,33 @@ object mediaRepositoryConfigureResponseMod {
       __obj.asInstanceOf[MediaRepositoryConfigureResponseUser]
     }
     
-    @scala.inline
-    implicit class MediaRepositoryConfigureResponseUserMutableBuilder[Self <: MediaRepositoryConfigureResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: MediaRepositoryConfigureResponseUser](x: Self) {
       
-      @scala.inline
-      def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
+      inline def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
+      inline def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
+      inline def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
+      inline def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
+      inline def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
+      inline def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

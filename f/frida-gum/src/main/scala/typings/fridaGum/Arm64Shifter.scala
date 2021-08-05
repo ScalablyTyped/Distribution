@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Arm64Shifter extends StObject
 object Arm64Shifter {
   
-  @scala.inline
-  def asr: typings.fridaGum.fridaGumStrings.asr = "asr".asInstanceOf[typings.fridaGum.fridaGumStrings.asr]
+  inline def asr: typings.fridaGum.fridaGumStrings.asr = "asr".asInstanceOf[typings.fridaGum.fridaGumStrings.asr]
   
-  @scala.inline
-  def lsl: typings.fridaGum.fridaGumStrings.lsl = "lsl".asInstanceOf[typings.fridaGum.fridaGumStrings.lsl]
+  inline def lsl: typings.fridaGum.fridaGumStrings.lsl = "lsl".asInstanceOf[typings.fridaGum.fridaGumStrings.lsl]
   
-  @scala.inline
-  def lsr: typings.fridaGum.fridaGumStrings.lsr = "lsr".asInstanceOf[typings.fridaGum.fridaGumStrings.lsr]
+  inline def lsr: typings.fridaGum.fridaGumStrings.lsr = "lsr".asInstanceOf[typings.fridaGum.fridaGumStrings.lsr]
   
-  @scala.inline
-  def msl: typings.fridaGum.fridaGumStrings.msl = "msl".asInstanceOf[typings.fridaGum.fridaGumStrings.msl]
+  inline def msl: typings.fridaGum.fridaGumStrings.msl = "msl".asInstanceOf[typings.fridaGum.fridaGumStrings.msl]
   
-  @scala.inline
-  def ror: typings.fridaGum.fridaGumStrings.ror = "ror".asInstanceOf[typings.fridaGum.fridaGumStrings.ror]
+  inline def ror: typings.fridaGum.fridaGumStrings.ror = "ror".asInstanceOf[typings.fridaGum.fridaGumStrings.ror]
 }

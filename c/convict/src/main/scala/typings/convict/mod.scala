@@ -128,32 +128,24 @@ object mod extends Shortcut {
   }
   object Format {
     
-    @scala.inline
-    def apply(): Format = {
+    inline def apply(): Format = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setCoerce(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+      inline def setCoerce(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setValidate(value: /* val */ js.Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* val */ js.Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -165,8 +157,7 @@ object mod extends Shortcut {
   }
   object InternalSchema {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
       */ typings.convict.convictStrings.InternalSchema & TopLevel[js.Any]
@@ -175,11 +166,9 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InternalSchema[T]]
     }
     
-    @scala.inline
-    implicit class InternalSchemaMutableBuilder[Self <: InternalSchema[?], T] (val x: Self & InternalSchema[T]) extends AnyVal {
+    extension [Self <: InternalSchema[?], T](x: Self & InternalSchema[T]) {
       
-      @scala.inline
-      def setProperties(
+      inline def setProperties(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
         */ typings.convict.convictStrings.InternalSchema & TopLevel[js.Any]
@@ -195,29 +184,22 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   
@@ -232,24 +214,19 @@ object mod extends Shortcut {
   }
   object Parser {
     
-    @scala.inline
-    def apply(`extension`: String | js.Array[String], parse: String => js.Any): Parser = {
+    inline def apply(`extension`: String | js.Array[String], parse: String => js.Any): Parser = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parser]
     }
     
-    @scala.inline
-    implicit class ParserMutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
+    extension [Self <: Parser](x: Self) {
       
-      @scala.inline
-      def setExtension(value: String | js.Array[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String | js.Array[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionVarargs(value: String*): Self = StObject.set(x, "extension", js.Array(value :_*))
+      inline def setExtensionVarargs(value: String*): Self = StObject.set(x, "extension", js.Array(value :_*))
       
-      @scala.inline
-      def setParse(value: String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
   
@@ -309,56 +286,40 @@ object mod extends Shortcut {
   }
   object SchemaObj {
     
-    @scala.inline
-    def apply[T](): SchemaObj[T] = {
+    inline def apply[T](): SchemaObj[T] = {
       val __obj = js.Dynamic.literal(default = null)
       __obj.asInstanceOf[SchemaObj[T]]
     }
     
-    @scala.inline
-    implicit class SchemaObjMutableBuilder[Self <: SchemaObj[?], T] (val x: Self & SchemaObj[T]) extends AnyVal {
+    extension [Self <: SchemaObj[?], T](x: Self & SchemaObj[T]) {
       
-      @scala.inline
-      def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
+      inline def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
       
-      @scala.inline
-      def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNull: Self = StObject.set(x, "default", null)
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
       
-      @scala.inline
-      def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setFormat(value: PredefinedFormat | js.Array[js.Any] | (js.Function1[/* val */ js.Any, Unit])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: PredefinedFormat | js.Array[js.Any] | (js.Function1[/* val */ js.Any, Unit])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatFunction1(value: /* val */ js.Any => Unit): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormatFunction1(value: /* val */ js.Any => Unit): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFormatVarargs(value: js.Any*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: js.Any*): Self = StObject.set(x, "format", js.Array(value :_*))
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
     }
   }
   
@@ -377,26 +338,20 @@ object mod extends Shortcut {
   }
   object ValidateOptions {
     
-    @scala.inline
-    def apply(): ValidateOptions = {
+    inline def apply(): ValidateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidateOptions]
     }
     
-    @scala.inline
-    implicit class ValidateOptionsMutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateOptions](x: Self) {
       
-      @scala.inline
-      def setAllowed(value: ValidationMethod): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+      inline def setAllowed(value: ValidationMethod): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+      inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -407,11 +362,9 @@ object mod extends Shortcut {
   trait ValidationMethod extends StObject
   object ValidationMethod {
     
-    @scala.inline
-    def strict: typings.convict.convictStrings.strict = "strict".asInstanceOf[typings.convict.convictStrings.strict]
+    inline def strict: typings.convict.convictStrings.strict = "strict".asInstanceOf[typings.convict.convictStrings.strict]
     
-    @scala.inline
-    def warn: typings.convict.convictStrings.warn = "warn".asInstanceOf[typings.convict.convictStrings.warn]
+    inline def warn: typings.convict.convictStrings.warn = "warn".asInstanceOf[typings.convict.convictStrings.warn]
   }
   
   trait _PredefinedFormat extends StObject

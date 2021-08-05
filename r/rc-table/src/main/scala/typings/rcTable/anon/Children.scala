@@ -10,22 +10,17 @@ trait Children[RecordType /* <: /* import warning: importer.ImportType#apply Fai
 }
 object Children {
   
-  @scala.inline
-  def apply[RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */](): Children[RecordType] = {
+  inline def apply[RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */](): Children[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Children[RecordType]]
   }
   
-  @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children[?], RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */] (val x: Self & Children[RecordType]) extends AnyVal {
+  extension [Self <: Children[?], RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */](x: Self & Children[RecordType]) {
     
-    @scala.inline
-    def setChildren(value: js.Array[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: RecordType*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: RecordType*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

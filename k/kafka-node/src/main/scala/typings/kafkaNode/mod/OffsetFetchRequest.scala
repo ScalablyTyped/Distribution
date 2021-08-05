@@ -14,28 +14,21 @@ trait OffsetFetchRequest extends StObject {
 }
 object OffsetFetchRequest {
   
-  @scala.inline
-  def apply(topic: String): OffsetFetchRequest = {
+  inline def apply(topic: String): OffsetFetchRequest = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetFetchRequest]
   }
   
-  @scala.inline
-  implicit class OffsetFetchRequestMutableBuilder[Self <: OffsetFetchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetFetchRequest](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait GoogleFirestoreAdminV1ExportDocumentsResponse extends StObject {
 }
 object GoogleFirestoreAdminV1ExportDocumentsResponse {
   
-  @scala.inline
-  def apply(): GoogleFirestoreAdminV1ExportDocumentsResponse = {
+  inline def apply(): GoogleFirestoreAdminV1ExportDocumentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleFirestoreAdminV1ExportDocumentsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleFirestoreAdminV1ExportDocumentsResponseMutableBuilder[Self <: GoogleFirestoreAdminV1ExportDocumentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleFirestoreAdminV1ExportDocumentsResponse](x: Self) {
     
-    @scala.inline
-    def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
+    inline def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
   }
 }

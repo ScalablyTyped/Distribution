@@ -60,8 +60,7 @@ trait XHierarchicalStorageAccess extends StObject {
 }
 object XHierarchicalStorageAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     openEncryptedStreamElementByHierarchicalName: (String, Double, String) => XExtendedStorageStream,
     openStreamElementByHierarchicalName: (String, Double) => XExtendedStorageStream,
     removeStreamElementByHierarchicalName: String => Unit
@@ -70,16 +69,12 @@ object XHierarchicalStorageAccess {
     __obj.asInstanceOf[XHierarchicalStorageAccess]
   }
   
-  @scala.inline
-  implicit class XHierarchicalStorageAccessMutableBuilder[Self <: XHierarchicalStorageAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalStorageAccess](x: Self) {
     
-    @scala.inline
-    def setOpenEncryptedStreamElementByHierarchicalName(value: (String, Double, String) => XExtendedStorageStream): Self = StObject.set(x, "openEncryptedStreamElementByHierarchicalName", js.Any.fromFunction3(value))
+    inline def setOpenEncryptedStreamElementByHierarchicalName(value: (String, Double, String) => XExtendedStorageStream): Self = StObject.set(x, "openEncryptedStreamElementByHierarchicalName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOpenStreamElementByHierarchicalName(value: (String, Double) => XExtendedStorageStream): Self = StObject.set(x, "openStreamElementByHierarchicalName", js.Any.fromFunction2(value))
+    inline def setOpenStreamElementByHierarchicalName(value: (String, Double) => XExtendedStorageStream): Self = StObject.set(x, "openStreamElementByHierarchicalName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveStreamElementByHierarchicalName(value: String => Unit): Self = StObject.set(x, "removeStreamElementByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setRemoveStreamElementByHierarchicalName(value: String => Unit): Self = StObject.set(x, "removeStreamElementByHierarchicalName", js.Any.fromFunction1(value))
   }
 }

@@ -35,14 +35,11 @@ object events {
   trait AttrChangeType extends StObject
   object AttrChangeType {
     
-    @scala.inline
-    def ADDITION: `1` = 1.asInstanceOf[`1`]
+    inline def ADDITION: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def MODIFICATION: `0` = 0.asInstanceOf[`0`]
+    inline def MODIFICATION: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def REMOVAL: `2` = 2.asInstanceOf[`2`]
+    inline def REMOVAL: `2` = 2.asInstanceOf[`2`]
   }
   
   trait EventException
@@ -53,17 +50,14 @@ object events {
   }
   object EventException {
     
-    @scala.inline
-    def apply(Context: XInterface, Message: String, code: Double): EventException = {
+    inline def apply(Context: XInterface, Message: String, code: Double): EventException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventException]
     }
     
-    @scala.inline
-    implicit class EventExceptionMutableBuilder[Self <: EventException] (val x: Self) extends AnyVal {
+    extension [Self <: EventException](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,53 +82,37 @@ object events {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def DOMActivate: `2` = 2.asInstanceOf[`2`]
+    inline def DOMActivate: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DOMAttrModified: `14` = 14.asInstanceOf[`14`]
+    inline def DOMAttrModified: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def DOMCharacterDataModified: `15` = 15.asInstanceOf[`15`]
+    inline def DOMCharacterDataModified: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def DOMFocusIn: `0` = 0.asInstanceOf[`0`]
+    inline def DOMFocusIn: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def DOMFocusOut: `1` = 1.asInstanceOf[`1`]
+    inline def DOMFocusOut: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DOMNodeInserted: `10` = 10.asInstanceOf[`10`]
+    inline def DOMNodeInserted: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def DOMNodeInsertedIntoDocument: `13` = 13.asInstanceOf[`13`]
+    inline def DOMNodeInsertedIntoDocument: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def DOMNodeRemoved: `11` = 11.asInstanceOf[`11`]
+    inline def DOMNodeRemoved: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def DOMNodeRemovedFromDocument: `12` = 12.asInstanceOf[`12`]
+    inline def DOMNodeRemovedFromDocument: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def DOMSubtreeModified: `9` = 9.asInstanceOf[`9`]
+    inline def DOMSubtreeModified: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def click: `3` = 3.asInstanceOf[`3`]
+    inline def click: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def mousedown: `4` = 4.asInstanceOf[`4`]
+    inline def mousedown: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def mousemove: `7` = 7.asInstanceOf[`7`]
+    inline def mousemove: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def mouseout: `8` = 8.asInstanceOf[`8`]
+    inline def mouseout: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def mouseover: `6` = 6.asInstanceOf[`6`]
+    inline def mouseover: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def mouseup: `5` = 5.asInstanceOf[`5`]
+    inline def mouseup: `5` = 5.asInstanceOf[`5`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -145,14 +123,11 @@ object events {
   trait PhaseType extends StObject
   object PhaseType {
     
-    @scala.inline
-    def AT_TARGET: `1` = 1.asInstanceOf[`1`]
+    inline def AT_TARGET: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def BUBBLING_PHASE: `2` = 2.asInstanceOf[`2`]
+    inline def BUBBLING_PHASE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CAPTURING_PHASE: `0` = 0.asInstanceOf[`0`]
+    inline def CAPTURING_PHASE: `0` = 0.asInstanceOf[`0`]
   }
   
   trait XDocumentEvent
@@ -163,8 +138,7 @@ object events {
   }
   object XDocumentEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createEvent: String => XEvent,
       queryInterface: `type` => js.Any,
@@ -174,11 +148,9 @@ object events {
       __obj.asInstanceOf[XDocumentEvent]
     }
     
-    @scala.inline
-    implicit class XDocumentEventMutableBuilder[Self <: XDocumentEvent] (val x: Self) extends AnyVal {
+    extension [Self <: XDocumentEvent](x: Self) {
       
-      @scala.inline
-      def setCreateEvent(value: String => XEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
+      inline def setCreateEvent(value: String => XEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -222,8 +194,7 @@ object events {
   }
   object XEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bubbles: Boolean,
       Cancelable: Boolean,
       CurrentTarget: XEventTarget,
@@ -249,59 +220,41 @@ object events {
       __obj.asInstanceOf[XEvent]
     }
     
-    @scala.inline
-    implicit class XEventMutableBuilder[Self <: XEvent] (val x: Self) extends AnyVal {
+    extension [Self <: XEvent](x: Self) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "Bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "Bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "Cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "Cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: XEventTarget): Self = StObject.set(x, "CurrentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: XEventTarget): Self = StObject.set(x, "CurrentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: PhaseType): Self = StObject.set(x, "EventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: PhaseType): Self = StObject.set(x, "EventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBubbles(value: () => Boolean): Self = StObject.set(x, "getBubbles", js.Any.fromFunction0(value))
+      inline def setGetBubbles(value: () => Boolean): Self = StObject.set(x, "getBubbles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCancelable(value: () => Boolean): Self = StObject.set(x, "getCancelable", js.Any.fromFunction0(value))
+      inline def setGetCancelable(value: () => Boolean): Self = StObject.set(x, "getCancelable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentTarget(value: () => XEventTarget): Self = StObject.set(x, "getCurrentTarget", js.Any.fromFunction0(value))
+      inline def setGetCurrentTarget(value: () => XEventTarget): Self = StObject.set(x, "getCurrentTarget", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEventPhase(value: () => PhaseType): Self = StObject.set(x, "getEventPhase", js.Any.fromFunction0(value))
+      inline def setGetEventPhase(value: () => PhaseType): Self = StObject.set(x, "getEventPhase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTarget(value: () => XEventTarget): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      inline def setGetTarget(value: () => XEventTarget): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeStamp(value: () => Time): Self = StObject.set(x, "getTimeStamp", js.Any.fromFunction0(value))
+      inline def setGetTimeStamp(value: () => Time): Self = StObject.set(x, "getTimeStamp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
+      inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: XEventTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: XEventTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Time): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Time): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,8 +266,7 @@ object events {
   }
   object XEventListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       handleEvent: XEvent => Unit,
       queryInterface: `type` => js.Any,
@@ -324,11 +276,9 @@ object events {
       __obj.asInstanceOf[XEventListener]
     }
     
-    @scala.inline
-    implicit class XEventListenerMutableBuilder[Self <: XEventListener] (val x: Self) extends AnyVal {
+    extension [Self <: XEventListener](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: XEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: XEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -344,8 +294,7 @@ object events {
   }
   object XEventTarget {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addEventListener: (String, XEventListener, Boolean) => Unit,
       dispatchEvent: XEvent => Boolean,
@@ -357,17 +306,13 @@ object events {
       __obj.asInstanceOf[XEventTarget]
     }
     
-    @scala.inline
-    implicit class XEventTargetMutableBuilder[Self <: XEventTarget] (val x: Self) extends AnyVal {
+    extension [Self <: XEventTarget](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (String, XEventListener, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+      inline def setAddEventListener(value: (String, XEventListener, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDispatchEvent(value: XEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+      inline def setDispatchEvent(value: XEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: (String, XEventListener, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
+      inline def setRemoveEventListener(value: (String, XEventListener, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
     }
   }
   
@@ -435,8 +380,7 @@ object events {
   }
   object XMouseEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AltKey: Boolean,
       Bubbles: Boolean,
       Button: Double,
@@ -488,73 +432,51 @@ object events {
       __obj.asInstanceOf[XMouseEvent]
     }
     
-    @scala.inline
-    implicit class XMouseEventMutableBuilder[Self <: XMouseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: XMouseEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "AltKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "AltKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "ClientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "ClientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "ClientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "ClientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "CtrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "CtrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAltKey(value: () => Boolean): Self = StObject.set(x, "getAltKey", js.Any.fromFunction0(value))
+      inline def setGetAltKey(value: () => Boolean): Self = StObject.set(x, "getAltKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetButton(value: () => Double): Self = StObject.set(x, "getButton", js.Any.fromFunction0(value))
+      inline def setGetButton(value: () => Double): Self = StObject.set(x, "getButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetClientX(value: () => Double): Self = StObject.set(x, "getClientX", js.Any.fromFunction0(value))
+      inline def setGetClientX(value: () => Double): Self = StObject.set(x, "getClientX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetClientY(value: () => Double): Self = StObject.set(x, "getClientY", js.Any.fromFunction0(value))
+      inline def setGetClientY(value: () => Double): Self = StObject.set(x, "getClientY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCtrlKey(value: () => Boolean): Self = StObject.set(x, "getCtrlKey", js.Any.fromFunction0(value))
+      inline def setGetCtrlKey(value: () => Boolean): Self = StObject.set(x, "getCtrlKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMetaKey(value: () => Boolean): Self = StObject.set(x, "getMetaKey", js.Any.fromFunction0(value))
+      inline def setGetMetaKey(value: () => Boolean): Self = StObject.set(x, "getMetaKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRelatedTarget(value: () => XEventTarget): Self = StObject.set(x, "getRelatedTarget", js.Any.fromFunction0(value))
+      inline def setGetRelatedTarget(value: () => XEventTarget): Self = StObject.set(x, "getRelatedTarget", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScreenX(value: () => Double): Self = StObject.set(x, "getScreenX", js.Any.fromFunction0(value))
+      inline def setGetScreenX(value: () => Double): Self = StObject.set(x, "getScreenX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScreenY(value: () => Double): Self = StObject.set(x, "getScreenY", js.Any.fromFunction0(value))
+      inline def setGetScreenY(value: () => Double): Self = StObject.set(x, "getScreenY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetShiftKey(value: () => Boolean): Self = StObject.set(x, "getShiftKey", js.Any.fromFunction0(value))
+      inline def setGetShiftKey(value: () => Boolean): Self = StObject.set(x, "getShiftKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitMouseEvent(
+      inline def setInitMouseEvent(
         value: (String, Boolean, Boolean, XAbstractView, Double, Double, Double, Double, Double, Boolean, Boolean, Boolean, Boolean, Double, XEventTarget) => Unit
       ): Self = StObject.set(x, "initMouseEvent", js.Any.fromFunction15(value))
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "MetaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "MetaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: XEventTarget): Self = StObject.set(x, "RelatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: XEventTarget): Self = StObject.set(x, "RelatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "ScreenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "ScreenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "ScreenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "ScreenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "ShiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "ShiftKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -595,8 +517,7 @@ object events {
   }
   object XMutationEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AttrChange: AttrChangeType,
       AttrName: String,
       Bubbles: Boolean,
@@ -633,41 +554,29 @@ object events {
       __obj.asInstanceOf[XMutationEvent]
     }
     
-    @scala.inline
-    implicit class XMutationEventMutableBuilder[Self <: XMutationEvent] (val x: Self) extends AnyVal {
+    extension [Self <: XMutationEvent](x: Self) {
       
-      @scala.inline
-      def setAttrChange(value: AttrChangeType): Self = StObject.set(x, "AttrChange", value.asInstanceOf[js.Any])
+      inline def setAttrChange(value: AttrChangeType): Self = StObject.set(x, "AttrChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrName(value: String): Self = StObject.set(x, "AttrName", value.asInstanceOf[js.Any])
+      inline def setAttrName(value: String): Self = StObject.set(x, "AttrName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAttrChange(value: () => AttrChangeType): Self = StObject.set(x, "getAttrChange", js.Any.fromFunction0(value))
+      inline def setGetAttrChange(value: () => AttrChangeType): Self = StObject.set(x, "getAttrChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAttrName(value: () => String): Self = StObject.set(x, "getAttrName", js.Any.fromFunction0(value))
+      inline def setGetAttrName(value: () => String): Self = StObject.set(x, "getAttrName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNewValue(value: () => String): Self = StObject.set(x, "getNewValue", js.Any.fromFunction0(value))
+      inline def setGetNewValue(value: () => String): Self = StObject.set(x, "getNewValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrevValue(value: () => String): Self = StObject.set(x, "getPrevValue", js.Any.fromFunction0(value))
+      inline def setGetPrevValue(value: () => String): Self = StObject.set(x, "getPrevValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRelatedNode(value: () => XNode): Self = StObject.set(x, "getRelatedNode", js.Any.fromFunction0(value))
+      inline def setGetRelatedNode(value: () => XNode): Self = StObject.set(x, "getRelatedNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitMutationEvent(value: (String, Boolean, Boolean, XNode, String, String, String, AttrChangeType) => Unit): Self = StObject.set(x, "initMutationEvent", js.Any.fromFunction8(value))
+      inline def setInitMutationEvent(value: (String, Boolean, Boolean, XNode, String, String, String, AttrChangeType) => Unit): Self = StObject.set(x, "initMutationEvent", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setNewValue(value: String): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: String): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevValue(value: String): Self = StObject.set(x, "PrevValue", value.asInstanceOf[js.Any])
+      inline def setPrevValue(value: String): Self = StObject.set(x, "PrevValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedNode(value: XNode): Self = StObject.set(x, "RelatedNode", value.asInstanceOf[js.Any])
+      inline def setRelatedNode(value: XNode): Self = StObject.set(x, "RelatedNode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -693,8 +602,7 @@ object events {
   }
   object XUIEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bubbles: Boolean,
       Cancelable: Boolean,
       CurrentTarget: XEventTarget,
@@ -725,23 +633,17 @@ object events {
       __obj.asInstanceOf[XUIEvent]
     }
     
-    @scala.inline
-    implicit class XUIEventMutableBuilder[Self <: XUIEvent] (val x: Self) extends AnyVal {
+    extension [Self <: XUIEvent](x: Self) {
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDetail(value: () => Double): Self = StObject.set(x, "getDetail", js.Any.fromFunction0(value))
+      inline def setGetDetail(value: () => Double): Self = StObject.set(x, "getDetail", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetView(value: () => XAbstractView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+      inline def setGetView(value: () => XAbstractView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitUIEvent(value: (String, Boolean, Boolean, XAbstractView, Double) => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction5(value))
+      inline def setInitUIEvent(value: (String, Boolean, Boolean, XAbstractView, Double) => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setView(value: XAbstractView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+      inline def setView(value: XAbstractView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     }
   }
 }

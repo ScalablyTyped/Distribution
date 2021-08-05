@@ -35,8 +35,7 @@ trait FilePicker
 }
 object FilePicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableHeight: Double,
     AvailableWidth: Double,
     CurrentFilter: String,
@@ -80,10 +79,8 @@ object FilePicker {
     __obj.asInstanceOf[FilePicker]
   }
   
-  @scala.inline
-  implicit class FilePickerMutableBuilder[Self <: FilePicker] (val x: Self) extends AnyVal {
+  extension [Self <: FilePicker](x: Self) {
     
-    @scala.inline
-    def setCreateWithMode(value: Double => Unit): Self = StObject.set(x, "createWithMode", js.Any.fromFunction1(value))
+    inline def setCreateWithMode(value: Double => Unit): Self = StObject.set(x, "createWithMode", js.Any.fromFunction1(value))
   }
 }

@@ -17,13 +17,10 @@ object ActionTriggerSeparatorType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def LINE: `0` = 0.asInstanceOf[`0`]
+    inline def LINE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def LINEBREAK: `2` = 2.asInstanceOf[`2`]
+    inline def LINEBREAK: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SPACE: `1` = 1.asInstanceOf[`1`]
+    inline def SPACE: `1` = 1.asInstanceOf[`1`]
   }
 }

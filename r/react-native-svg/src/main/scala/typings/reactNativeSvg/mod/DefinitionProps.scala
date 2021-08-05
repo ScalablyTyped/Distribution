@@ -10,19 +10,15 @@ trait DefinitionProps extends StObject {
 }
 object DefinitionProps {
   
-  @scala.inline
-  def apply(): DefinitionProps = {
+  inline def apply(): DefinitionProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefinitionProps]
   }
   
-  @scala.inline
-  implicit class DefinitionPropsMutableBuilder[Self <: DefinitionProps] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionProps](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class AttributeRevocationRefs ()
   extends typings.xadesjs.xmlMod.AttributeRevocationRefs
 object AttributeRevocationRefs {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.AttributeRevocationRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("AttributeRevocationRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AttributeRevocationRefs]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.AttributeRevocationRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("AttributeRevocationRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AttributeRevocationRefs]]
 }

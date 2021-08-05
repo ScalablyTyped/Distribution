@@ -41,8 +41,7 @@ trait TestStatus extends StObject {
 }
 object TestStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completeTime: String,
     elapsed: Double,
     fvRunsCompleted: Double,
@@ -63,55 +62,38 @@ object TestStatus {
     __obj.asInstanceOf[TestStatus]
   }
   
-  @scala.inline
-  implicit class TestStatusMutableBuilder[Self <: TestStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TestStatus](x: Self) {
     
-    @scala.inline
-    def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
+    inline def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+    inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFvRunsCompleted(value: Double): Self = StObject.set(x, "fvRunsCompleted", value.asInstanceOf[js.Any])
+    inline def setFvRunsCompleted(value: Double): Self = StObject.set(x, "fvRunsCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFvonly(value: Double): Self = StObject.set(x, "fvonly", value.asInstanceOf[js.Any])
+    inline def setFvonly(value: Double): Self = StObject.set(x, "fvonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemote(value: `false`): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: `false`): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRvRunsCompleted(value: Double): Self = StObject.set(x, "rvRunsCompleted", value.asInstanceOf[js.Any])
+    inline def setRvRunsCompleted(value: Double): Self = StObject.set(x, "rvRunsCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestId(value: String): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
+    inline def setTestId(value: String): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestInfo(value: TestInfo): Self = StObject.set(x, "testInfo", value.asInstanceOf[js.Any])
+    inline def setTestInfo(value: TestInfo): Self = StObject.set(x, "testInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsCompleted(value: Double): Self = StObject.set(x, "testsCompleted", value.asInstanceOf[js.Any])
+    inline def setTestsCompleted(value: Double): Self = StObject.set(x, "testsCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsExpected(value: Double): Self = StObject.set(x, "testsExpected", value.asInstanceOf[js.Any])
+    inline def setTestsExpected(value: Double): Self = StObject.set(x, "testsExpected", value.asInstanceOf[js.Any])
   }
 }

@@ -28,55 +28,39 @@ trait ForkOptions
 }
 object ForkOptions {
   
-  @scala.inline
-  def apply(): ForkOptions = {
+  inline def apply(): ForkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForkOptions]
   }
   
-  @scala.inline
-  implicit class ForkOptionsMutableBuilder[Self <: ForkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ForkOptions](x: Self) {
     
-    @scala.inline
-    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    @scala.inline
-    def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
+    inline def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
+    inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
     
-    @scala.inline
-    def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+    inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
     
-    @scala.inline
-    def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+    inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+    inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+    inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
-    @scala.inline
-    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+    inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
     
-    @scala.inline
-    def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
+    inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
+    inline def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
   }
 }

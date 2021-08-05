@@ -48,13 +48,9 @@ object mod {
     override def submit(connection: Connection): Unit = js.native
   }
   
-  @scala.inline
-  def from(txt: String): CopyStreamQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(txt.asInstanceOf[js.Any]).asInstanceOf[CopyStreamQuery]
-  @scala.inline
-  def from(txt: String, options: TransformOptions): CopyStreamQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CopyStreamQuery]
+  inline def from(txt: String): CopyStreamQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(txt.asInstanceOf[js.Any]).asInstanceOf[CopyStreamQuery]
+  inline def from(txt: String, options: TransformOptions): CopyStreamQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CopyStreamQuery]
   
-  @scala.inline
-  def to(txt: String): CopyToStreamQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(txt.asInstanceOf[js.Any]).asInstanceOf[CopyToStreamQuery]
-  @scala.inline
-  def to(txt: String, options: TransformOptions): CopyToStreamQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("to")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CopyToStreamQuery]
+  inline def to(txt: String): CopyToStreamQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(txt.asInstanceOf[js.Any]).asInstanceOf[CopyToStreamQuery]
+  inline def to(txt: String, options: TransformOptions): CopyToStreamQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("to")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CopyToStreamQuery]
 }

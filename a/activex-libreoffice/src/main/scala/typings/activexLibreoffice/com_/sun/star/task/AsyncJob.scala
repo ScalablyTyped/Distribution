@@ -20,8 +20,7 @@ trait AsyncJob
      with XCloseable
 object AsyncJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
     close: Boolean => Unit,

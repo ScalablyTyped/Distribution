@@ -31,73 +31,51 @@ trait SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse extends StObjec
 }
 object SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse {
   
-  @scala.inline
-  def apply(): SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse = {
+  inline def apply(): SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
   }
   
-  @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponseMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse](x: Self) {
     
-    @scala.inline
-    def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+    inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setIsNewUser(value: Boolean): Self = StObject.set(x, "isNewUser", value.asInstanceOf[js.Any])
+    inline def setIsNewUser(value: Boolean): Self = StObject.set(x, "isNewUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNewUserUndefined: Self = StObject.set(x, "isNewUser", js.undefined)
+    inline def setIsNewUserUndefined: Self = StObject.set(x, "isNewUser", js.undefined)
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
+    inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
-    @scala.inline
-    def setTemporaryProof(value: String): Self = StObject.set(x, "temporaryProof", value.asInstanceOf[js.Any])
+    inline def setTemporaryProof(value: String): Self = StObject.set(x, "temporaryProof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryProofExpiresIn(value: String): Self = StObject.set(x, "temporaryProofExpiresIn", value.asInstanceOf[js.Any])
+    inline def setTemporaryProofExpiresIn(value: String): Self = StObject.set(x, "temporaryProofExpiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryProofExpiresInUndefined: Self = StObject.set(x, "temporaryProofExpiresIn", js.undefined)
+    inline def setTemporaryProofExpiresInUndefined: Self = StObject.set(x, "temporaryProofExpiresIn", js.undefined)
     
-    @scala.inline
-    def setTemporaryProofUndefined: Self = StObject.set(x, "temporaryProof", js.undefined)
+    inline def setTemporaryProofUndefined: Self = StObject.set(x, "temporaryProof", js.undefined)
     
-    @scala.inline
-    def setVerificationProof(value: String): Self = StObject.set(x, "verificationProof", value.asInstanceOf[js.Any])
+    inline def setVerificationProof(value: String): Self = StObject.set(x, "verificationProof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationProofExpiresIn(value: String): Self = StObject.set(x, "verificationProofExpiresIn", value.asInstanceOf[js.Any])
+    inline def setVerificationProofExpiresIn(value: String): Self = StObject.set(x, "verificationProofExpiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationProofExpiresInUndefined: Self = StObject.set(x, "verificationProofExpiresIn", js.undefined)
+    inline def setVerificationProofExpiresInUndefined: Self = StObject.set(x, "verificationProofExpiresIn", js.undefined)
     
-    @scala.inline
-    def setVerificationProofUndefined: Self = StObject.set(x, "verificationProof", js.undefined)
+    inline def setVerificationProofUndefined: Self = StObject.set(x, "verificationProof", js.undefined)
   }
 }

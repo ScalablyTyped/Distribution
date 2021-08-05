@@ -12,22 +12,17 @@ trait GetStatusInput extends StObject {
 }
 object GetStatusInput {
   
-  @scala.inline
-  def apply(JobId: JobId): GetStatusInput = {
+  inline def apply(JobId: JobId): GetStatusInput = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStatusInput]
   }
   
-  @scala.inline
-  implicit class GetStatusInputMutableBuilder[Self <: GetStatusInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetStatusInput](x: Self) {
     
-    @scala.inline
-    def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
+    inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
+    inline def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

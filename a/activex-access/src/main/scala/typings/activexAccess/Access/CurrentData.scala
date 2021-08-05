@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CurrentData extends StObject {
   
-  @JSName("Access.CurrentData_typekey")
+  /* private */ @JSName("Access.CurrentData_typekey")
   var AccessDotCurrentData_typekey: CurrentData
   
   def AllDatabaseDiagrams(var_0: String): AccessObject
@@ -43,8 +43,7 @@ trait CurrentData extends StObject {
 }
 object CurrentData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotCurrentData_typekey: CurrentData,
     AllDatabaseDiagrams: AccessObjects,
     AllFunctions: AccessObjects,
@@ -59,31 +58,22 @@ object CurrentData {
     __obj.asInstanceOf[CurrentData]
   }
   
-  @scala.inline
-  implicit class CurrentDataMutableBuilder[Self <: CurrentData] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentData](x: Self) {
     
-    @scala.inline
-    def setAccessDotCurrentData_typekey(value: CurrentData): Self = StObject.set(x, "Access.CurrentData_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotCurrentData_typekey(value: CurrentData): Self = StObject.set(x, "Access.CurrentData_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllDatabaseDiagrams(value: AccessObjects): Self = StObject.set(x, "AllDatabaseDiagrams", value.asInstanceOf[js.Any])
+    inline def setAllDatabaseDiagrams(value: AccessObjects): Self = StObject.set(x, "AllDatabaseDiagrams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllFunctions(value: AccessObjects): Self = StObject.set(x, "AllFunctions", value.asInstanceOf[js.Any])
+    inline def setAllFunctions(value: AccessObjects): Self = StObject.set(x, "AllFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllQueries(value: AccessObjects): Self = StObject.set(x, "AllQueries", value.asInstanceOf[js.Any])
+    inline def setAllQueries(value: AccessObjects): Self = StObject.set(x, "AllQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllStoredProcedures(value: AccessObjects): Self = StObject.set(x, "AllStoredProcedures", value.asInstanceOf[js.Any])
+    inline def setAllStoredProcedures(value: AccessObjects): Self = StObject.set(x, "AllStoredProcedures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllTables(value: AccessObjects): Self = StObject.set(x, "AllTables", value.asInstanceOf[js.Any])
+    inline def setAllTables(value: AccessObjects): Self = StObject.set(x, "AllTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllViews(value: AccessObjects): Self = StObject.set(x, "AllViews", value.asInstanceOf[js.Any])
+    inline def setAllViews(value: AccessObjects): Self = StObject.set(x, "AllViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
   }
 }

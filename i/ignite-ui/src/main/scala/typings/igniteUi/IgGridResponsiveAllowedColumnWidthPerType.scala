@@ -44,43 +44,31 @@ trait IgGridResponsiveAllowedColumnWidthPerType
 }
 object IgGridResponsiveAllowedColumnWidthPerType {
   
-  @scala.inline
-  def apply(): IgGridResponsiveAllowedColumnWidthPerType = {
+  inline def apply(): IgGridResponsiveAllowedColumnWidthPerType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridResponsiveAllowedColumnWidthPerType]
   }
   
-  @scala.inline
-  implicit class IgGridResponsiveAllowedColumnWidthPerTypeMutableBuilder[Self <: IgGridResponsiveAllowedColumnWidthPerType] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridResponsiveAllowedColumnWidthPerType](x: Self) {
     
-    @scala.inline
-    def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+    inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolUndefined: Self = StObject.set(x, "bool", js.undefined)
+    inline def setBoolUndefined: Self = StObject.set(x, "bool", js.undefined)
     
-    @scala.inline
-    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
-    @scala.inline
-    def setString(value: Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

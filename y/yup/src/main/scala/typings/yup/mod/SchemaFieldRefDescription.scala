@@ -14,20 +14,16 @@ trait SchemaFieldRefDescription
 }
 object SchemaFieldRefDescription {
   
-  @scala.inline
-  def apply(key: String): SchemaFieldRefDescription = {
+  inline def apply(key: String): SchemaFieldRefDescription = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ref")
     __obj.asInstanceOf[SchemaFieldRefDescription]
   }
   
-  @scala.inline
-  implicit class SchemaFieldRefDescriptionMutableBuilder[Self <: SchemaFieldRefDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldRefDescription](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.yup.yupStrings.ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.yup.yupStrings.ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

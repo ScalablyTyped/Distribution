@@ -22,20 +22,16 @@ object yandexRuMod extends Shortcut {
   }
   object YandexRuProps {
     
-    @scala.inline
-    def apply(): YandexRuProps = {
+    inline def apply(): YandexRuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[YandexRuProps]
     }
     
-    @scala.inline
-    implicit class YandexRuPropsMutableBuilder[Self <: YandexRuProps] (val x: Self) extends AnyVal {
+    extension [Self <: YandexRuProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

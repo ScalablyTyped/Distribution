@@ -16,8 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Types = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Types]
+  inline def default(): Types = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Types]
   
   type BmpRet = ReturnType[js.Function0[Bmp]]
   

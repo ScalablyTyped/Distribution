@@ -13,20 +13,16 @@ trait KeyType extends StObject {
 }
 object KeyType {
   
-  @scala.inline
-  def apply(key: String): KeyType = {
+  inline def apply(key: String): KeyType = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("route")
     __obj.asInstanceOf[KeyType]
   }
   
-  @scala.inline
-  implicit class KeyTypeMutableBuilder[Self <: KeyType] (val x: Self) extends AnyVal {
+  extension [Self <: KeyType](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: route): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: route): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

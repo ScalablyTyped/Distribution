@@ -18,22 +18,17 @@ trait SNSTopicPublishAction extends StObject {
 }
 object SNSTopicPublishAction {
   
-  @scala.inline
-  def apply(targetArn: AmazonResourceName): SNSTopicPublishAction = {
+  inline def apply(targetArn: AmazonResourceName): SNSTopicPublishAction = {
     val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SNSTopicPublishAction]
   }
   
-  @scala.inline
-  implicit class SNSTopicPublishActionMutableBuilder[Self <: SNSTopicPublishAction] (val x: Self) extends AnyVal {
+  extension [Self <: SNSTopicPublishAction](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: AmazonResourceName): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: AmazonResourceName): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

@@ -20,28 +20,21 @@ trait HttpCookieEvidence extends StObject {
 }
 object HttpCookieEvidence {
   
-  @scala.inline
-  def apply(): HttpCookieEvidence = {
+  inline def apply(): HttpCookieEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpCookieEvidence]
   }
   
-  @scala.inline
-  implicit class HttpCookieEvidenceMutableBuilder[Self <: HttpCookieEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: HttpCookieEvidence](x: Self) {
     
-    @scala.inline
-    def setCookieNames(value: js.Array[String]): Self = StObject.set(x, "cookieNames", value.asInstanceOf[js.Any])
+    inline def setCookieNames(value: js.Array[String]): Self = StObject.set(x, "cookieNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieNamesUndefined: Self = StObject.set(x, "cookieNames", js.undefined)
+    inline def setCookieNamesUndefined: Self = StObject.set(x, "cookieNames", js.undefined)
     
-    @scala.inline
-    def setCookieNamesVarargs(value: String*): Self = StObject.set(x, "cookieNames", js.Array(value :_*))
+    inline def setCookieNamesVarargs(value: String*): Self = StObject.set(x, "cookieNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxCookieCount(value: Double): Self = StObject.set(x, "maxCookieCount", value.asInstanceOf[js.Any])
+    inline def setMaxCookieCount(value: Double): Self = StObject.set(x, "maxCookieCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCookieCountUndefined: Self = StObject.set(x, "maxCookieCount", js.undefined)
+    inline def setMaxCookieCountUndefined: Self = StObject.set(x, "maxCookieCount", js.undefined)
   }
 }

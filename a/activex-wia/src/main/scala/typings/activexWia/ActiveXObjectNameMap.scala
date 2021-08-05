@@ -35,8 +35,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     WIADotCommonDialog: CommonDialog,
     WIADotDeviceManager: DeviceManager,
     WIADotImageFile: ImageFile,
@@ -54,25 +53,18 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setWIADotCommonDialog(value: CommonDialog): Self = StObject.set(x, "WIA.CommonDialog", value.asInstanceOf[js.Any])
+    inline def setWIADotCommonDialog(value: CommonDialog): Self = StObject.set(x, "WIA.CommonDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotDeviceManager(value: DeviceManager): Self = StObject.set(x, "WIA.DeviceManager", value.asInstanceOf[js.Any])
+    inline def setWIADotDeviceManager(value: DeviceManager): Self = StObject.set(x, "WIA.DeviceManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotImageFile(value: ImageFile): Self = StObject.set(x, "WIA.ImageFile", value.asInstanceOf[js.Any])
+    inline def setWIADotImageFile(value: ImageFile): Self = StObject.set(x, "WIA.ImageFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotImageProcess(value: ImageProcess): Self = StObject.set(x, "WIA.ImageProcess", value.asInstanceOf[js.Any])
+    inline def setWIADotImageProcess(value: ImageProcess): Self = StObject.set(x, "WIA.ImageProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotRational(value: Rational): Self = StObject.set(x, "WIA.Rational", value.asInstanceOf[js.Any])
+    inline def setWIADotRational(value: Rational): Self = StObject.set(x, "WIA.Rational", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotVector(value: Vector[js.Any]): Self = StObject.set(x, "WIA.Vector", value.asInstanceOf[js.Any])
+    inline def setWIADotVector(value: Vector[js.Any]): Self = StObject.set(x, "WIA.Vector", value.asInstanceOf[js.Any])
   }
 }

@@ -22,26 +22,20 @@ object volumeTypesMod {
   }
   object IVolumeControl {
     
-    @scala.inline
-    def apply(destroy: () => Unit, getElement: () => HTMLElement, hide: () => Unit, show: () => Unit): IVolumeControl = {
+    inline def apply(destroy: () => Unit, getElement: () => HTMLElement, hide: () => Unit, show: () => Unit): IVolumeControl = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getElement = js.Any.fromFunction0(getElement), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[IVolumeControl]
     }
     
-    @scala.inline
-    implicit class IVolumeControlMutableBuilder[Self <: IVolumeControl] (val x: Self) extends AnyVal {
+    extension [Self <: IVolumeControl](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -59,8 +53,7 @@ object volumeTypesMod {
   }
   object IVolumeViewCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onDragEnd: () => Unit,
       onDragStart: () => Unit,
       onToggleMuteClick: () => Unit,
@@ -71,23 +64,17 @@ object volumeTypesMod {
       __obj.asInstanceOf[IVolumeViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IVolumeViewCallbacksMutableBuilder[Self <: IVolumeViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IVolumeViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
+      inline def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
+      inline def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnToggleMuteClick(value: () => Unit): Self = StObject.set(x, "onToggleMuteClick", js.Any.fromFunction0(value))
+      inline def setOnToggleMuteClick(value: () => Unit): Self = StObject.set(x, "onToggleMuteClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnVolumeLevelChangeFromInput(value: Double => Unit): Self = StObject.set(x, "onVolumeLevelChangeFromInput", js.Any.fromFunction1(value))
+      inline def setOnVolumeLevelChangeFromInput(value: Double => Unit): Self = StObject.set(x, "onVolumeLevelChangeFromInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeLevelChangeFromWheel(value: Double => Unit): Self = StObject.set(x, "onVolumeLevelChangeFromWheel", js.Any.fromFunction1(value))
+      inline def setOnVolumeLevelChangeFromWheel(value: Double => Unit): Self = StObject.set(x, "onVolumeLevelChangeFromWheel", js.Any.fromFunction1(value))
     }
   }
   
@@ -103,8 +90,7 @@ object volumeTypesMod {
   }
   object IVolumeViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: IVolumeViewCallbacks,
       textMap: ITextMap,
       theme: IThemeService,
@@ -114,20 +100,15 @@ object volumeTypesMod {
       __obj.asInstanceOf[IVolumeViewConfig]
     }
     
-    @scala.inline
-    implicit class IVolumeViewConfigMutableBuilder[Self <: IVolumeViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IVolumeViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IVolumeViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IVolumeViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +152,7 @@ object volumeTypesMod {
   }
   object IVolumeViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: String,
       hidden: String,
       hitbox: String,
@@ -196,62 +176,43 @@ object volumeTypesMod {
       __obj.asInstanceOf[IVolumeViewStyles]
     }
     
-    @scala.inline
-    implicit class IVolumeViewStylesMutableBuilder[Self <: IVolumeViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IVolumeViewStyles](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitbox(value: String): Self = StObject.set(x, "hitbox", value.asInstanceOf[js.Any])
+      inline def setHitbox(value: String): Self = StObject.set(x, "hitbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDragging(value: String): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: String): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuteIcon(value: String): Self = StObject.set(x, "muteIcon", value.asInstanceOf[js.Any])
+      inline def setMuteIcon(value: String): Self = StObject.set(x, "muteIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuteToggle(value: String): Self = StObject.set(x, "muteToggle", value.asInstanceOf[js.Any])
+      inline def setMuteToggle(value: String): Self = StObject.set(x, "muteToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuted(value: String): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+      inline def setMuted(value: String): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressBar(value: String): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+      inline def setProgressBar(value: String): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume0(value: String): Self = StObject.set(x, "volume0", value.asInstanceOf[js.Any])
+      inline def setVolume0(value: String): Self = StObject.set(x, "volume0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume0Icon(value: String): Self = StObject.set(x, "volume0Icon", value.asInstanceOf[js.Any])
+      inline def setVolume0Icon(value: String): Self = StObject.set(x, "volume0Icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume100(value: String): Self = StObject.set(x, "volume100", value.asInstanceOf[js.Any])
+      inline def setVolume100(value: String): Self = StObject.set(x, "volume100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume100Icon(value: String): Self = StObject.set(x, "volume100Icon", value.asInstanceOf[js.Any])
+      inline def setVolume100Icon(value: String): Self = StObject.set(x, "volume100Icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume50(value: String): Self = StObject.set(x, "volume50", value.asInstanceOf[js.Any])
+      inline def setVolume50(value: String): Self = StObject.set(x, "volume50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume50Icon(value: String): Self = StObject.set(x, "volume50Icon", value.asInstanceOf[js.Any])
+      inline def setVolume50Icon(value: String): Self = StObject.set(x, "volume50Icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeControl(value: String): Self = StObject.set(x, "volumeControl", value.asInstanceOf[js.Any])
+      inline def setVolumeControl(value: String): Self = StObject.set(x, "volumeControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeInputBlock(value: String): Self = StObject.set(x, "volumeInputBlock", value.asInstanceOf[js.Any])
+      inline def setVolumeInputBlock(value: String): Self = StObject.set(x, "volumeInputBlock", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,16 +16,13 @@ trait PluginsSetDetails
 }
 object PluginsSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | detect_important_content): PluginsSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | detect_important_content): PluginsSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginsSetDetails]
   }
   
-  @scala.inline
-  implicit class PluginsSetDetailsMutableBuilder[Self <: PluginsSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PluginsSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | detect_important_content): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | detect_important_content): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

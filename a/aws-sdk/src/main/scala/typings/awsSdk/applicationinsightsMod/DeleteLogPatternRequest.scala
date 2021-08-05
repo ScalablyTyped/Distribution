@@ -23,8 +23,7 @@ trait DeleteLogPatternRequest extends StObject {
 }
 object DeleteLogPatternRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PatternName: LogPatternName,
     PatternSetName: LogPatternSetName,
     ResourceGroupName: ResourceGroupName
@@ -33,16 +32,12 @@ object DeleteLogPatternRequest {
     __obj.asInstanceOf[DeleteLogPatternRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLogPatternRequestMutableBuilder[Self <: DeleteLogPatternRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLogPatternRequest](x: Self) {
     
-    @scala.inline
-    def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
+    inline def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
+    inline def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

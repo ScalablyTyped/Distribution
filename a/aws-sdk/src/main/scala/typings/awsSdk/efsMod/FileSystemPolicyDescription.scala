@@ -18,25 +18,19 @@ trait FileSystemPolicyDescription extends StObject {
 }
 object FileSystemPolicyDescription {
   
-  @scala.inline
-  def apply(): FileSystemPolicyDescription = {
+  inline def apply(): FileSystemPolicyDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemPolicyDescription]
   }
   
-  @scala.inline
-  implicit class FileSystemPolicyDescriptionMutableBuilder[Self <: FileSystemPolicyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemPolicyDescription](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
+    inline def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

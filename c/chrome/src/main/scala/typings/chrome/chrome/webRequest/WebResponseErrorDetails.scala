@@ -13,8 +13,7 @@ trait WebResponseErrorDetails
 }
 object WebResponseErrorDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: String,
     frameId: Double,
     fromCache: Boolean,
@@ -33,10 +32,8 @@ object WebResponseErrorDetails {
     __obj.asInstanceOf[WebResponseErrorDetails]
   }
   
-  @scala.inline
-  implicit class WebResponseErrorDetailsMutableBuilder[Self <: WebResponseErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebResponseErrorDetails](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait TypeofSignature extends StObject {
 }
 object TypeofSignature {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Signature): TypeofSignature = {
+  inline def apply(Locale: js.Any, fn: Signature): TypeofSignature = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSignature]
   }
   
-  @scala.inline
-  implicit class TypeofSignatureMutableBuilder[Self <: TypeofSignature] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSignature](x: Self) {
     
-    @scala.inline
-    def setFn(value: Signature): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Signature): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

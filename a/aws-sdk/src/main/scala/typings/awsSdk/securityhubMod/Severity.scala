@@ -28,37 +28,27 @@ trait Severity extends StObject {
 }
 object Severity {
   
-  @scala.inline
-  def apply(): Severity = {
+  inline def apply(): Severity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Severity]
   }
   
-  @scala.inline
-  implicit class SeverityMutableBuilder[Self <: Severity] (val x: Self) extends AnyVal {
+  extension [Self <: Severity](x: Self) {
     
-    @scala.inline
-    def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setNormalized(value: Integer): Self = StObject.set(x, "Normalized", value.asInstanceOf[js.Any])
+    inline def setNormalized(value: Integer): Self = StObject.set(x, "Normalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedUndefined: Self = StObject.set(x, "Normalized", js.undefined)
+    inline def setNormalizedUndefined: Self = StObject.set(x, "Normalized", js.undefined)
     
-    @scala.inline
-    def setOriginal(value: NonEmptyString): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: NonEmptyString): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalUndefined: Self = StObject.set(x, "Original", js.undefined)
+    inline def setOriginalUndefined: Self = StObject.set(x, "Original", js.undefined)
     
-    @scala.inline
-    def setProduct(value: Double): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Double): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
   }
 }

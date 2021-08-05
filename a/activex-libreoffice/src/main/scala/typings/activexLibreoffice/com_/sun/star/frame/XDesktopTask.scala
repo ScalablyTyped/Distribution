@@ -30,8 +30,7 @@ trait XDesktopTask
 }
 object XDesktopTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     close: () => Boolean,
@@ -45,13 +44,10 @@ object XDesktopTask {
     __obj.asInstanceOf[XDesktopTask]
   }
   
-  @scala.inline
-  implicit class XDesktopTaskMutableBuilder[Self <: XDesktopTask] (val x: Self) extends AnyVal {
+  extension [Self <: XDesktopTask](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }
 }

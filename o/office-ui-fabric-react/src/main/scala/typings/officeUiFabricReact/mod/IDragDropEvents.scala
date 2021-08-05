@@ -9,8 +9,7 @@ trait IDragDropEvents
      with typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropEvents
 object IDragDropEvents {
   
-  @scala.inline
-  def apply(): IDragDropEvents = {
+  inline def apply(): IDragDropEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDragDropEvents]
   }

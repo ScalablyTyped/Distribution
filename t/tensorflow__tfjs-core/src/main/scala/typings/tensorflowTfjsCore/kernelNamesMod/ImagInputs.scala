@@ -11,19 +11,15 @@ trait ImagInputs extends StObject {
 }
 object ImagInputs {
   
-  @scala.inline
-  def apply(): ImagInputs = {
+  inline def apply(): ImagInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagInputs]
   }
   
-  @scala.inline
-  implicit class ImagInputsMutableBuilder[Self <: ImagInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ImagInputs](x: Self) {
     
-    @scala.inline
-    def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }
 }

@@ -25,37 +25,27 @@ trait TrackedActionLastAccessed extends StObject {
 }
 object TrackedActionLastAccessed {
   
-  @scala.inline
-  def apply(): TrackedActionLastAccessed = {
+  inline def apply(): TrackedActionLastAccessed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackedActionLastAccessed]
   }
   
-  @scala.inline
-  implicit class TrackedActionLastAccessedMutableBuilder[Self <: TrackedActionLastAccessed] (val x: Self) extends AnyVal {
+  extension [Self <: TrackedActionLastAccessed](x: Self) {
     
-    @scala.inline
-    def setActionName(value: stringType): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: stringType): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
     
-    @scala.inline
-    def setLastAccessedEntity(value: arnType): Self = StObject.set(x, "LastAccessedEntity", value.asInstanceOf[js.Any])
+    inline def setLastAccessedEntity(value: arnType): Self = StObject.set(x, "LastAccessedEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedEntityUndefined: Self = StObject.set(x, "LastAccessedEntity", js.undefined)
+    inline def setLastAccessedEntityUndefined: Self = StObject.set(x, "LastAccessedEntity", js.undefined)
     
-    @scala.inline
-    def setLastAccessedRegion(value: stringType): Self = StObject.set(x, "LastAccessedRegion", value.asInstanceOf[js.Any])
+    inline def setLastAccessedRegion(value: stringType): Self = StObject.set(x, "LastAccessedRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedRegionUndefined: Self = StObject.set(x, "LastAccessedRegion", js.undefined)
+    inline def setLastAccessedRegionUndefined: Self = StObject.set(x, "LastAccessedRegion", js.undefined)
     
-    @scala.inline
-    def setLastAccessedTime(value: dateType): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedTime(value: dateType): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
+    inline def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
   }
 }

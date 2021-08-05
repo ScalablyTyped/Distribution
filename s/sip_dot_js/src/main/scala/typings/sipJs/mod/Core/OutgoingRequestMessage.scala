@@ -87,12 +87,10 @@ object OutgoingRequestMessage {
   @JSImport("sip.js", "Core.OutgoingRequestMessage.getDefaultOptions")
   @js.native
   def getDefaultOptions: js.Any = js.native
-  @scala.inline
-  def getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
+  inline def getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("sip.js", "Core.OutgoingRequestMessage.makeNameAddrHeader")
   @js.native
   def makeNameAddrHeader: js.Any = js.native
-  @scala.inline
-  def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
+  inline def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
 }

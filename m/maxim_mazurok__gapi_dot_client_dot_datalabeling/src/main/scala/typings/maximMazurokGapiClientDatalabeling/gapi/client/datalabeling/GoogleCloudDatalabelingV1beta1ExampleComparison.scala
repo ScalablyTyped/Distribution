@@ -14,28 +14,21 @@ trait GoogleCloudDatalabelingV1beta1ExampleComparison extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ExampleComparison {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ExampleComparison = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ExampleComparison = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ExampleComparison]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ExampleComparisonMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ExampleComparison] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ExampleComparison](x: Self) {
     
-    @scala.inline
-    def setGroundTruthExample(value: GoogleCloudDatalabelingV1beta1Example): Self = StObject.set(x, "groundTruthExample", value.asInstanceOf[js.Any])
+    inline def setGroundTruthExample(value: GoogleCloudDatalabelingV1beta1Example): Self = StObject.set(x, "groundTruthExample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundTruthExampleUndefined: Self = StObject.set(x, "groundTruthExample", js.undefined)
+    inline def setGroundTruthExampleUndefined: Self = StObject.set(x, "groundTruthExample", js.undefined)
     
-    @scala.inline
-    def setModelCreatedExamples(value: js.Array[GoogleCloudDatalabelingV1beta1Example]): Self = StObject.set(x, "modelCreatedExamples", value.asInstanceOf[js.Any])
+    inline def setModelCreatedExamples(value: js.Array[GoogleCloudDatalabelingV1beta1Example]): Self = StObject.set(x, "modelCreatedExamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelCreatedExamplesUndefined: Self = StObject.set(x, "modelCreatedExamples", js.undefined)
+    inline def setModelCreatedExamplesUndefined: Self = StObject.set(x, "modelCreatedExamples", js.undefined)
     
-    @scala.inline
-    def setModelCreatedExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "modelCreatedExamples", js.Array(value :_*))
+    inline def setModelCreatedExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "modelCreatedExamples", js.Array(value :_*))
   }
 }

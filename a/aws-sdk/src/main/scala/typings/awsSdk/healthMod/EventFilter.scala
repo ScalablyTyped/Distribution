@@ -73,130 +73,89 @@ trait EventFilter extends StObject {
 }
 object EventFilter {
   
-  @scala.inline
-  def apply(): EventFilter = {
+  inline def apply(): EventFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventFilter]
   }
   
-  @scala.inline
-  implicit class EventFilterMutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EventFilter](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: availabilityZones): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: availabilityZones): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: availabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: availabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setEndTimes(value: dateTimeRangeList): Self = StObject.set(x, "endTimes", value.asInstanceOf[js.Any])
+    inline def setEndTimes(value: dateTimeRangeList): Self = StObject.set(x, "endTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimesUndefined: Self = StObject.set(x, "endTimes", js.undefined)
+    inline def setEndTimesUndefined: Self = StObject.set(x, "endTimes", js.undefined)
     
-    @scala.inline
-    def setEndTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "endTimes", js.Array(value :_*))
+    inline def setEndTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "endTimes", js.Array(value :_*))
     
-    @scala.inline
-    def setEntityArns(value: entityArnList): Self = StObject.set(x, "entityArns", value.asInstanceOf[js.Any])
+    inline def setEntityArns(value: entityArnList): Self = StObject.set(x, "entityArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityArnsUndefined: Self = StObject.set(x, "entityArns", js.undefined)
+    inline def setEntityArnsUndefined: Self = StObject.set(x, "entityArns", js.undefined)
     
-    @scala.inline
-    def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value :_*))
+    inline def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value :_*))
     
-    @scala.inline
-    def setEntityValues(value: entityValueList): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
+    inline def setEntityValues(value: entityValueList): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
+    inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    @scala.inline
-    def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
     
-    @scala.inline
-    def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
+    inline def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
+    inline def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
     
-    @scala.inline
-    def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
     
-    @scala.inline
-    def setEventStatusCodes(value: eventStatusCodeList): Self = StObject.set(x, "eventStatusCodes", value.asInstanceOf[js.Any])
+    inline def setEventStatusCodes(value: eventStatusCodeList): Self = StObject.set(x, "eventStatusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStatusCodesUndefined: Self = StObject.set(x, "eventStatusCodes", js.undefined)
+    inline def setEventStatusCodesUndefined: Self = StObject.set(x, "eventStatusCodes", js.undefined)
     
-    @scala.inline
-    def setEventStatusCodesVarargs(value: eventStatusCode*): Self = StObject.set(x, "eventStatusCodes", js.Array(value :_*))
+    inline def setEventStatusCodesVarargs(value: eventStatusCode*): Self = StObject.set(x, "eventStatusCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setEventTypeCategories(value: eventTypeCategoryList): Self = StObject.set(x, "eventTypeCategories", value.asInstanceOf[js.Any])
+    inline def setEventTypeCategories(value: eventTypeCategoryList): Self = StObject.set(x, "eventTypeCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeCategoriesUndefined: Self = StObject.set(x, "eventTypeCategories", js.undefined)
+    inline def setEventTypeCategoriesUndefined: Self = StObject.set(x, "eventTypeCategories", js.undefined)
     
-    @scala.inline
-    def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = StObject.set(x, "eventTypeCategories", js.Array(value :_*))
+    inline def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = StObject.set(x, "eventTypeCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setEventTypeCodes(value: eventTypeList): Self = StObject.set(x, "eventTypeCodes", value.asInstanceOf[js.Any])
+    inline def setEventTypeCodes(value: eventTypeList): Self = StObject.set(x, "eventTypeCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeCodesUndefined: Self = StObject.set(x, "eventTypeCodes", js.undefined)
+    inline def setEventTypeCodesUndefined: Self = StObject.set(x, "eventTypeCodes", js.undefined)
     
-    @scala.inline
-    def setEventTypeCodesVarargs(value: eventType*): Self = StObject.set(x, "eventTypeCodes", js.Array(value :_*))
+    inline def setEventTypeCodesVarargs(value: eventType*): Self = StObject.set(x, "eventTypeCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setLastUpdatedTimes(value: dateTimeRangeList): Self = StObject.set(x, "lastUpdatedTimes", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimes(value: dateTimeRangeList): Self = StObject.set(x, "lastUpdatedTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimesUndefined: Self = StObject.set(x, "lastUpdatedTimes", js.undefined)
+    inline def setLastUpdatedTimesUndefined: Self = StObject.set(x, "lastUpdatedTimes", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value :_*))
+    inline def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value :_*))
     
-    @scala.inline
-    def setRegions(value: regionList): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: regionList): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: region*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
-    @scala.inline
-    def setServices(value: serviceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: serviceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: service*): Self = StObject.set(x, "services", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTimes(value: dateTimeRangeList): Self = StObject.set(x, "startTimes", value.asInstanceOf[js.Any])
+    inline def setStartTimes(value: dateTimeRangeList): Self = StObject.set(x, "startTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimesUndefined: Self = StObject.set(x, "startTimes", js.undefined)
+    inline def setStartTimesUndefined: Self = StObject.set(x, "startTimes", js.undefined)
     
-    @scala.inline
-    def setStartTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "startTimes", js.Array(value :_*))
+    inline def setStartTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "startTimes", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: tagFilter): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagFilter): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

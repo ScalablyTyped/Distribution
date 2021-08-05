@@ -11,17 +11,14 @@ trait PickImpltype extends StObject {
 }
 object PickImpltype {
   
-  @scala.inline
-  def apply(`type`: String): PickImpltype = {
+  inline def apply(`type`: String): PickImpltype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltype]
   }
   
-  @scala.inline
-  implicit class PickImpltypeMutableBuilder[Self <: PickImpltype] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpltype](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

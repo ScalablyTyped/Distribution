@@ -17,18 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ɵBypassType extends StObject
 object ɵBypassType {
   
-  @scala.inline
-  def Html: HTML = "HTML".asInstanceOf[HTML]
+  inline def Html: HTML = "HTML".asInstanceOf[HTML]
   
-  @scala.inline
-  def ResourceUrl: ResourceURL = "ResourceURL".asInstanceOf[ResourceURL]
+  inline def ResourceUrl: ResourceURL = "ResourceURL".asInstanceOf[ResourceURL]
   
-  @scala.inline
-  def Script: typings.angularCore.angularCoreStrings.Script = "Script".asInstanceOf[typings.angularCore.angularCoreStrings.Script]
+  inline def Script: typings.angularCore.angularCoreStrings.Script = "Script".asInstanceOf[typings.angularCore.angularCoreStrings.Script]
   
-  @scala.inline
-  def Style: typings.angularCore.angularCoreStrings.Style = "Style".asInstanceOf[typings.angularCore.angularCoreStrings.Style]
+  inline def Style: typings.angularCore.angularCoreStrings.Style = "Style".asInstanceOf[typings.angularCore.angularCoreStrings.Style]
   
-  @scala.inline
-  def Url: URL = "URL".asInstanceOf[URL]
+  inline def Url: URL = "URL".asInstanceOf[URL]
 }

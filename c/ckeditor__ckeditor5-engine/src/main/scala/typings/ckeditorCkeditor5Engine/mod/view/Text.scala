@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@ckeditor/ckeditor5-engine", "view.Text")
 @js.native
 class Text protected () extends Node {
-  protected def this(data: String) = this()
+  /* protected */ def this(data: String) = this()
   
-  var _data: String = js.native
+  /* protected */ var _data: String = js.native
   
-  var _textData: String = js.native
+  /* protected */ var _textData: String = js.native
   
   val data: String = js.native
   

@@ -12,19 +12,15 @@ trait ChartArtistsParams
 }
 object ChartArtistsParams {
   
-  @scala.inline
-  def apply(): ChartArtistsParams = {
+  inline def apply(): ChartArtistsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartArtistsParams]
   }
   
-  @scala.inline
-  implicit class ChartArtistsParamsMutableBuilder[Self <: ChartArtistsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ChartArtistsParams](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
   }
 }

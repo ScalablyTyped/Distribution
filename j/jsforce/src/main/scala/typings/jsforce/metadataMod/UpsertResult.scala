@@ -14,22 +14,17 @@ trait UpsertResult extends StObject {
 }
 object UpsertResult {
   
-  @scala.inline
-  def apply(created: Boolean, fullName: String, success: Boolean): UpsertResult = {
+  inline def apply(created: Boolean, fullName: String, success: Boolean): UpsertResult = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpsertResult]
   }
   
-  @scala.inline
-  implicit class UpsertResultMutableBuilder[Self <: UpsertResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpsertResult](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait LocalBooleanValueBlockParams
 }
 object LocalBooleanValueBlockParams {
   
-  @scala.inline
-  def apply(): LocalBooleanValueBlockParams = {
+  inline def apply(): LocalBooleanValueBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalBooleanValueBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalBooleanValueBlockParamsMutableBuilder[Self <: LocalBooleanValueBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalBooleanValueBlockParams](x: Self) {
     
-    @scala.inline
-    def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
+    inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
+    inline def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
     
-    @scala.inline
-    def setValue(value: scala.Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: scala.Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
+    inline def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
+    inline def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

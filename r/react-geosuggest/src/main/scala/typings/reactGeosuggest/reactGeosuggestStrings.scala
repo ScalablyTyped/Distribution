@@ -11,34 +11,29 @@ object reactGeosuggestStrings {
   sealed trait LeftparenthesiscitiesRightparenthesis
     extends StObject
        with QueryType
-  @scala.inline
-  def LeftparenthesiscitiesRightparenthesis: LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[LeftparenthesiscitiesRightparenthesis]
+  inline def LeftparenthesiscitiesRightparenthesis: LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[LeftparenthesiscitiesRightparenthesis]
   
   @js.native
   sealed trait LeftparenthesisregionsRightparenthesis
     extends StObject
        with QueryType
-  @scala.inline
-  def LeftparenthesisregionsRightparenthesis: LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[LeftparenthesisregionsRightparenthesis]
+  inline def LeftparenthesisregionsRightparenthesis: LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[LeftparenthesisregionsRightparenthesis]
   
   @js.native
   sealed trait address
     extends StObject
        with QueryType
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
+  inline def address: address = "address".asInstanceOf[address]
   
   @js.native
   sealed trait establishment
     extends StObject
        with QueryType
-  @scala.inline
-  def establishment: establishment = "establishment".asInstanceOf[establishment]
+  inline def establishment: establishment = "establishment".asInstanceOf[establishment]
   
   @js.native
   sealed trait geocode
     extends StObject
        with QueryType
-  @scala.inline
-  def geocode: geocode = "geocode".asInstanceOf[geocode]
+  inline def geocode: geocode = "geocode".asInstanceOf[geocode]
 }

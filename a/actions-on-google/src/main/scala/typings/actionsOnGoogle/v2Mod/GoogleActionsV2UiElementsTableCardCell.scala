@@ -13,19 +13,15 @@ trait GoogleActionsV2UiElementsTableCardCell extends StObject {
 }
 object GoogleActionsV2UiElementsTableCardCell {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsTableCardCell = {
+  inline def apply(): GoogleActionsV2UiElementsTableCardCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardCell]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsTableCardCellMutableBuilder[Self <: GoogleActionsV2UiElementsTableCardCell] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsTableCardCell](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

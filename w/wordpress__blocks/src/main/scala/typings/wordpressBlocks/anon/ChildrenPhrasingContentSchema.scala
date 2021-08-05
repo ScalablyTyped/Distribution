@@ -11,16 +11,13 @@ trait ChildrenPhrasingContentSchema extends StObject {
 }
 object ChildrenPhrasingContentSchema {
   
-  @scala.inline
-  def apply(children: PhrasingContentSchema): ChildrenPhrasingContentSchema = {
+  inline def apply(children: PhrasingContentSchema): ChildrenPhrasingContentSchema = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenPhrasingContentSchema]
   }
   
-  @scala.inline
-  implicit class ChildrenPhrasingContentSchemaMutableBuilder[Self <: ChildrenPhrasingContentSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenPhrasingContentSchema](x: Self) {
     
-    @scala.inline
-    def setChildren(value: PhrasingContentSchema): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: PhrasingContentSchema): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

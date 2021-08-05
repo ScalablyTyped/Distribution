@@ -10,6 +10,5 @@ object dnsDomainLevelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(host: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(host: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

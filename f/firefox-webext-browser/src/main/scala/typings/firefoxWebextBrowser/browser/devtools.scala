@@ -45,32 +45,24 @@ object devtools {
     }
     object EvalOptions {
       
-      @scala.inline
-      def apply(): EvalOptions = {
+      inline def apply(): EvalOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EvalOptions]
       }
       
-      @scala.inline
-      implicit class EvalOptionsMutableBuilder[Self <: EvalOptions] (val x: Self) extends AnyVal {
+      extension [Self <: EvalOptions](x: Self) {
         
-        @scala.inline
-        def setContextSecurityOrigin(value: String): Self = StObject.set(x, "contextSecurityOrigin", value.asInstanceOf[js.Any])
+        inline def setContextSecurityOrigin(value: String): Self = StObject.set(x, "contextSecurityOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContextSecurityOriginUndefined: Self = StObject.set(x, "contextSecurityOrigin", js.undefined)
+        inline def setContextSecurityOriginUndefined: Self = StObject.set(x, "contextSecurityOrigin", js.undefined)
         
-        @scala.inline
-        def setFrameURL(value: String): Self = StObject.set(x, "frameURL", value.asInstanceOf[js.Any])
+        inline def setFrameURL(value: String): Self = StObject.set(x, "frameURL", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrameURLUndefined: Self = StObject.set(x, "frameURL", js.undefined)
+        inline def setFrameURLUndefined: Self = StObject.set(x, "frameURL", js.undefined)
         
-        @scala.inline
-        def setUseContentScriptContext(value: Boolean): Self = StObject.set(x, "useContentScriptContext", value.asInstanceOf[js.Any])
+        inline def setUseContentScriptContext(value: Boolean): Self = StObject.set(x, "useContentScriptContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseContentScriptContextUndefined: Self = StObject.set(x, "useContentScriptContext", js.undefined)
+        inline def setUseContentScriptContextUndefined: Self = StObject.set(x, "useContentScriptContext", js.undefined)
       }
     }
     
@@ -99,8 +91,7 @@ object devtools {
     }
     object EvalReturnExceptionInfo {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         code: String,
         description: String,
         details: js.Array[js.Any],
@@ -112,29 +103,21 @@ object devtools {
         __obj.asInstanceOf[EvalReturnExceptionInfo]
       }
       
-      @scala.inline
-      implicit class EvalReturnExceptionInfoMutableBuilder[Self <: EvalReturnExceptionInfo] (val x: Self) extends AnyVal {
+      extension [Self <: EvalReturnExceptionInfo](x: Self) {
         
-        @scala.inline
-        def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetails(value: js.Array[js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: js.Array[js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetailsVarargs(value: js.Any*): Self = StObject.set(x, "details", js.Array(value :_*))
+        inline def setDetailsVarargs(value: js.Any*): Self = StObject.set(x, "details", js.Array(value :_*))
         
-        @scala.inline
-        def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
+        inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsException(value: Boolean): Self = StObject.set(x, "isException", value.asInstanceOf[js.Any])
+        inline def setIsException(value: Boolean): Self = StObject.set(x, "isException", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -163,38 +146,28 @@ object devtools {
     }
     object ReloadReloadOptions {
       
-      @scala.inline
-      def apply(): ReloadReloadOptions = {
+      inline def apply(): ReloadReloadOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReloadReloadOptions]
       }
       
-      @scala.inline
-      implicit class ReloadReloadOptionsMutableBuilder[Self <: ReloadReloadOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ReloadReloadOptions](x: Self) {
         
-        @scala.inline
-        def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
+        inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreCacheUndefined: Self = StObject.set(x, "ignoreCache", js.undefined)
+        inline def setIgnoreCacheUndefined: Self = StObject.set(x, "ignoreCache", js.undefined)
         
-        @scala.inline
-        def setInjectedScript(value: String): Self = StObject.set(x, "injectedScript", value.asInstanceOf[js.Any])
+        inline def setInjectedScript(value: String): Self = StObject.set(x, "injectedScript", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInjectedScriptUndefined: Self = StObject.set(x, "injectedScript", js.undefined)
+        inline def setInjectedScriptUndefined: Self = StObject.set(x, "injectedScript", js.undefined)
         
-        @scala.inline
-        def setPreprocessorScript(value: String): Self = StObject.set(x, "preprocessorScript", value.asInstanceOf[js.Any])
+        inline def setPreprocessorScript(value: String): Self = StObject.set(x, "preprocessorScript", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreprocessorScriptUndefined: Self = StObject.set(x, "preprocessorScript", js.undefined)
+        inline def setPreprocessorScriptUndefined: Self = StObject.set(x, "preprocessorScript", js.undefined)
         
-        @scala.inline
-        def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+        inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+        inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       }
     }
     
@@ -223,29 +196,22 @@ object devtools {
     }
     object Resource {
       
-      @scala.inline
-      def apply(url: String): Resource = {
+      inline def apply(url: String): Resource = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[Resource]
       }
       
-      @scala.inline
-      implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+      extension [Self <: Resource](x: Self) {
         
-        @scala.inline
-        def setGetContent(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+        inline def setGetContent(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
+        inline def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
         
-        @scala.inline
-        def setSetContent(value: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
+        inline def setSetContent(value: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
+        inline def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -268,17 +234,14 @@ object devtools {
     }
     object Request {
       
-      @scala.inline
-      def apply(getContent: () => js.Promise[js.Object]): Request = {
+      inline def apply(getContent: () => js.Promise[js.Object]): Request = {
         val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent))
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setGetContent(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+        inline def setGetContent(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       }
     }
   }
@@ -332,8 +295,7 @@ object devtools {
     }
     object Button {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         onClicked: WebExtEvent[js.Function0[Unit]],
         update: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
               js.Function3[
@@ -348,14 +310,11 @@ object devtools {
         __obj.asInstanceOf[Button]
       }
       
-      @scala.inline
-      implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+      extension [Self <: Button](x: Self) {
         
-        @scala.inline
-        def setOnClicked(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
+        inline def setOnClicked(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdate(
+        inline def setUpdate(
           value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
                   js.Function3[
                     /* iconPath */ String, 
@@ -383,8 +342,7 @@ object devtools {
     }
     object ElementsPanel {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createSidebarPane: String => js.Promise[ExtensionSidebarPane],
         onSelectionChanged: WebExtEvent[js.Function0[Unit]]
       ): ElementsPanel = {
@@ -392,14 +350,11 @@ object devtools {
         __obj.asInstanceOf[ElementsPanel]
       }
       
-      @scala.inline
-      implicit class ElementsPanelMutableBuilder[Self <: ElementsPanel] (val x: Self) extends AnyVal {
+      extension [Self <: ElementsPanel](x: Self) {
         
-        @scala.inline
-        def setCreateSidebarPane(value: String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
+        inline def setCreateSidebarPane(value: String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnSelectionChanged(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onSelectionChanged", value.asInstanceOf[js.Any])
+        inline def setOnSelectionChanged(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onSelectionChanged", value.asInstanceOf[js.Any])
       }
     }
     
@@ -436,8 +391,7 @@ object devtools {
     }
     object ExtensionPanel {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         onHidden: WebExtEvent[js.Function0[Unit]],
         onSearch: WebExtEvent[js.Function2[/* action */ String, /* queryString */ js.UndefOr[String], Unit]],
         onShown: WebExtEvent[js.Function1[/* window */ Window, Unit]]
@@ -446,23 +400,17 @@ object devtools {
         __obj.asInstanceOf[ExtensionPanel]
       }
       
-      @scala.inline
-      implicit class ExtensionPanelMutableBuilder[Self <: ExtensionPanel] (val x: Self) extends AnyVal {
+      extension [Self <: ExtensionPanel](x: Self) {
         
-        @scala.inline
-        def setCreateStatusBarButton(value: (/* iconPath */ String, /* tooltipText */ String, /* disabled */ Boolean) => Button): Self = StObject.set(x, "createStatusBarButton", js.Any.fromFunction3(value))
+        inline def setCreateStatusBarButton(value: (/* iconPath */ String, /* tooltipText */ String, /* disabled */ Boolean) => Button): Self = StObject.set(x, "createStatusBarButton", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setCreateStatusBarButtonUndefined: Self = StObject.set(x, "createStatusBarButton", js.undefined)
+        inline def setCreateStatusBarButtonUndefined: Self = StObject.set(x, "createStatusBarButton", js.undefined)
         
-        @scala.inline
-        def setOnHidden(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
+        inline def setOnHidden(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnSearch(value: WebExtEvent[js.Function2[/* action */ String, /* queryString */ js.UndefOr[String], Unit]]): Self = StObject.set(x, "onSearch", value.asInstanceOf[js.Any])
+        inline def setOnSearch(value: WebExtEvent[js.Function2[/* action */ String, /* queryString */ js.UndefOr[String], Unit]]): Self = StObject.set(x, "onSearch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnShown(value: WebExtEvent[js.Function1[/* window */ Window, Unit]]): Self = StObject.set(x, "onShown", value.asInstanceOf[js.Any])
+        inline def setOnShown(value: WebExtEvent[js.Function1[/* window */ Window, Unit]]): Self = StObject.set(x, "onShown", value.asInstanceOf[js.Any])
       }
     }
     
@@ -529,23 +477,18 @@ object devtools {
     }
     object SourcesPanel {
       
-      @scala.inline
-      def apply(onSelectionChanged: WebExtEvent[js.Function0[Unit]]): SourcesPanel = {
+      inline def apply(onSelectionChanged: WebExtEvent[js.Function0[Unit]]): SourcesPanel = {
         val __obj = js.Dynamic.literal(onSelectionChanged = onSelectionChanged.asInstanceOf[js.Any])
         __obj.asInstanceOf[SourcesPanel]
       }
       
-      @scala.inline
-      implicit class SourcesPanelMutableBuilder[Self <: SourcesPanel] (val x: Self) extends AnyVal {
+      extension [Self <: SourcesPanel](x: Self) {
         
-        @scala.inline
-        def setCreateSidebarPane(value: /* title */ String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
+        inline def setCreateSidebarPane(value: /* title */ String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateSidebarPaneUndefined: Self = StObject.set(x, "createSidebarPane", js.undefined)
+        inline def setCreateSidebarPaneUndefined: Self = StObject.set(x, "createSidebarPane", js.undefined)
         
-        @scala.inline
-        def setOnSelectionChanged(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onSelectionChanged", value.asInstanceOf[js.Any])
+        inline def setOnSelectionChanged(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onSelectionChanged", value.asInstanceOf[js.Any])
       }
     }
   }

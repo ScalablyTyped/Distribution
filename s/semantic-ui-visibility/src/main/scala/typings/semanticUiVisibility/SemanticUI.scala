@@ -252,17 +252,14 @@ object SemanticUI {
     }
     object ClassNameSettings {
       
-      @scala.inline
-      def apply(fixed: String & js.UndefOr[String]): ClassNameSettings = {
+      inline def apply(fixed: String & js.UndefOr[String]): ClassNameSettings = {
         val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClassNameSettings]
       }
       
-      @scala.inline
-      implicit class ClassNameSettingsMutableBuilder[Self <: ClassNameSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ClassNameSettings](x: Self) {
         
-        @scala.inline
-        def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+        inline def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       }
       
       trait Impl extends StObject {
@@ -274,17 +271,14 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(fixed: String): Impl = {
+        inline def apply(fixed: String): Impl = {
           val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+          inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         }
       }
       
@@ -295,17 +289,14 @@ object SemanticUI {
       }
       object Param {
         
-        @scala.inline
-        def apply(fixed: String & js.UndefOr[String]): Param = {
+        inline def apply(fixed: String & js.UndefOr[String]): Param = {
           val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
           __obj.asInstanceOf[Param]
         }
         
-        @scala.inline
-        implicit class ParamMutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
+        extension [Self <: Param](x: Self) {
           
-          @scala.inline
-          def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+          inline def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -340,8 +331,7 @@ object SemanticUI {
     }
     object ElementCalculations {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bottom: Double,
         bottomPassed: Boolean,
         bottomVisible: Boolean,
@@ -362,47 +352,33 @@ object SemanticUI {
         __obj.asInstanceOf[ElementCalculations]
       }
       
-      @scala.inline
-      implicit class ElementCalculationsMutableBuilder[Self <: ElementCalculations] (val x: Self) extends AnyVal {
+      extension [Self <: ElementCalculations](x: Self) {
         
-        @scala.inline
-        def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+        inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomPassed(value: Boolean): Self = StObject.set(x, "bottomPassed", value.asInstanceOf[js.Any])
+        inline def setBottomPassed(value: Boolean): Self = StObject.set(x, "bottomPassed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomVisible(value: Boolean): Self = StObject.set(x, "bottomVisible", value.asInstanceOf[js.Any])
+        inline def setBottomVisible(value: Boolean): Self = StObject.set(x, "bottomVisible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+        inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+        inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
         
-        @scala.inline
-        def setOffScreen(value: Boolean): Self = StObject.set(x, "offScreen", value.asInstanceOf[js.Any])
+        inline def setOffScreen(value: Boolean): Self = StObject.set(x, "offScreen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnScreen(value: Boolean): Self = StObject.set(x, "onScreen", value.asInstanceOf[js.Any])
+        inline def setOnScreen(value: Boolean): Self = StObject.set(x, "onScreen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPassing(value: Boolean): Self = StObject.set(x, "passing", value.asInstanceOf[js.Any])
+        inline def setPassing(value: Boolean): Self = StObject.set(x, "passing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPercentagePassed(value: Double): Self = StObject.set(x, "percentagePassed", value.asInstanceOf[js.Any])
+        inline def setPercentagePassed(value: Double): Self = StObject.set(x, "percentagePassed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPixelsPassed(value: Double): Self = StObject.set(x, "pixelsPassed", value.asInstanceOf[js.Any])
+        inline def setPixelsPassed(value: Double): Self = StObject.set(x, "pixelsPassed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopPassed(value: Boolean): Self = StObject.set(x, "topPassed", value.asInstanceOf[js.Any])
+        inline def setTopPassed(value: Boolean): Self = StObject.set(x, "topPassed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopVisible(value: Boolean): Self = StObject.set(x, "topVisible", value.asInstanceOf[js.Any])
+        inline def setTopVisible(value: Boolean): Self = StObject.set(x, "topVisible", value.asInstanceOf[js.Any])
       }
     }
     
@@ -418,26 +394,20 @@ object SemanticUI {
     }
     object ElementPosition {
       
-      @scala.inline
-      def apply(fits: Boolean, height: Double, offset: JQueryCoordinates, width: Double): ElementPosition = {
+      inline def apply(fits: Boolean, height: Double, offset: JQueryCoordinates, width: Double): ElementPosition = {
         val __obj = js.Dynamic.literal(fits = fits.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
         __obj.asInstanceOf[ElementPosition]
       }
       
-      @scala.inline
-      implicit class ElementPositionMutableBuilder[Self <: ElementPosition] (val x: Self) extends AnyVal {
+      extension [Self <: ElementPosition](x: Self) {
         
-        @scala.inline
-        def setFits(value: Boolean): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
+        inline def setFits(value: Boolean): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: JQueryCoordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: JQueryCoordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     
@@ -448,17 +418,14 @@ object SemanticUI {
     }
     object ErrorSettings {
       
-      @scala.inline
-      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
       
-      @scala.inline
-      implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorSettings](x: Self) {
         
-        @scala.inline
-        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
       trait Impl extends StObject {
@@ -470,17 +437,14 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(method: String): Impl = {
+        inline def apply(method: String): Impl = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
       
@@ -491,17 +455,14 @@ object SemanticUI {
       }
       object Param {
         
-        @scala.inline
-        def apply(method: String & js.UndefOr[String]): Param = {
+        inline def apply(method: String & js.UndefOr[String]): Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[Param]
         }
         
-        @scala.inline
-        implicit class ParamMutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
+        extension [Self <: Param](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -514,20 +475,16 @@ object SemanticUI {
     }
     object ScreenCalculations {
       
-      @scala.inline
-      def apply(bottom: Double, top: Double): ScreenCalculations = {
+      inline def apply(bottom: Double, top: Double): ScreenCalculations = {
         val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
         __obj.asInstanceOf[ScreenCalculations]
       }
       
-      @scala.inline
-      implicit class ScreenCalculationsMutableBuilder[Self <: ScreenCalculations] (val x: Self) extends AnyVal {
+      extension [Self <: ScreenCalculations](x: Self) {
         
-        @scala.inline
-        def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+        inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       }
     }
     
@@ -537,17 +494,14 @@ object SemanticUI {
     }
     object ScreenSize {
       
-      @scala.inline
-      def apply(height: Double): ScreenSize = {
+      inline def apply(height: Double): ScreenSize = {
         val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
         __obj.asInstanceOf[ScreenSize]
       }
       
-      @scala.inline
-      implicit class ScreenSizeMutableBuilder[Self <: ScreenSize] (val x: Self) extends AnyVal {
+      extension [Self <: ScreenSize](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -812,8 +766,7 @@ object SemanticUI {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         checkOnRefresh: Boolean,
         className: ClassNameSettings,
         context: String | JQuery,
@@ -861,131 +814,89 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
+        inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+        inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncludeMargin(value: Boolean): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
+        inline def setIncludeMargin(value: Boolean): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
+        inline def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
+        inline def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnAllLoaded(value: () => Unit): Self = StObject.set(x, "onAllLoaded", js.Any.fromFunction0(value))
+        inline def setOnAllLoaded(value: () => Unit): Self = StObject.set(x, "onAllLoaded", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnBottomPassed(value: () => Unit): Self = StObject.set(x, "onBottomPassed", js.Any.fromFunction0(value))
+        inline def setOnBottomPassed(value: () => Unit): Self = StObject.set(x, "onBottomPassed", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnBottomPassedReverse(value: () => Unit): Self = StObject.set(x, "onBottomPassedReverse", js.Any.fromFunction0(value))
+        inline def setOnBottomPassedReverse(value: () => Unit): Self = StObject.set(x, "onBottomPassedReverse", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnBottomVisible(value: () => Unit): Self = StObject.set(x, "onBottomVisible", js.Any.fromFunction0(value))
+        inline def setOnBottomVisible(value: () => Unit): Self = StObject.set(x, "onBottomVisible", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnBottomVisibleReverse(value: () => Unit): Self = StObject.set(x, "onBottomVisibleReverse", js.Any.fromFunction0(value))
+        inline def setOnBottomVisibleReverse(value: () => Unit): Self = StObject.set(x, "onBottomVisibleReverse", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnFixed(value: () => Unit): Self = StObject.set(x, "onFixed", js.Any.fromFunction0(value))
+        inline def setOnFixed(value: () => Unit): Self = StObject.set(x, "onFixed", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+        inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnOffScreen(value: () => Unit): Self = StObject.set(x, "onOffScreen", js.Any.fromFunction0(value))
+        inline def setOnOffScreen(value: () => Unit): Self = StObject.set(x, "onOffScreen", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnOnScreen(value: () => Unit): Self = StObject.set(x, "onOnScreen", js.Any.fromFunction0(value))
+        inline def setOnOnScreen(value: () => Unit): Self = StObject.set(x, "onOnScreen", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnPassing(value: () => Unit): Self = StObject.set(x, "onPassing", js.Any.fromFunction0(value))
+        inline def setOnPassing(value: () => Unit): Self = StObject.set(x, "onPassing", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnPassingReverse(value: () => Unit): Self = StObject.set(x, "onPassingReverse", js.Any.fromFunction0(value))
+        inline def setOnPassingReverse(value: () => Unit): Self = StObject.set(x, "onPassingReverse", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
+        inline def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnTopPassed(value: () => Unit): Self = StObject.set(x, "onTopPassed", js.Any.fromFunction0(value))
+        inline def setOnTopPassed(value: () => Unit): Self = StObject.set(x, "onTopPassed", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnTopPassedReverse(value: () => Unit): Self = StObject.set(x, "onTopPassedReverse", js.Any.fromFunction0(value))
+        inline def setOnTopPassedReverse(value: () => Unit): Self = StObject.set(x, "onTopPassedReverse", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnTopVisible(value: () => Unit): Self = StObject.set(x, "onTopVisible", js.Any.fromFunction0(value))
+        inline def setOnTopVisible(value: () => Unit): Self = StObject.set(x, "onTopVisible", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnTopVisibleReverse(value: () => Unit): Self = StObject.set(x, "onTopVisibleReverse", js.Any.fromFunction0(value))
+        inline def setOnTopVisibleReverse(value: () => Unit): Self = StObject.set(x, "onTopVisibleReverse", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnUnfixed(value: () => Unit): Self = StObject.set(x, "onUnfixed", js.Any.fromFunction0(value))
+        inline def setOnUnfixed(value: () => Unit): Self = StObject.set(x, "onUnfixed", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnUpdate(value: ElementCalculations => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+        inline def setOnUpdate(value: ElementCalculations => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+        inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+        inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshOnLoad(value: Boolean): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
+        inline def setRefreshOnLoad(value: Boolean): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshOnResize(value: Boolean): Self = StObject.set(x, "refreshOnResize", value.asInstanceOf[js.Any])
+        inline def setRefreshOnResize(value: Boolean): Self = StObject.set(x, "refreshOnResize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrottle(value: `false` | Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+        inline def setThrottle(value: `false` | Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransition(value: `false` | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+        inline def setTransition(value: `false` | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `false` | image | fixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `false` | image | fixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+        inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+        inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       }
     }
     

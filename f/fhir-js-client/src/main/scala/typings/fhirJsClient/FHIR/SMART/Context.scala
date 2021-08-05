@@ -31,34 +31,25 @@ trait Context extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply(serviceUrl: String): Context = {
+  inline def apply(serviceUrl: String): Context = {
     val __obj = js.Dynamic.literal(serviceUrl = serviceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+  extension [Self <: Context](x: Self) {
     
-    @scala.inline
-    def setAuth(value: AuthContext): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: AuthContext): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPatientId(value: String): Self = StObject.set(x, "patientId", value.asInstanceOf[js.Any])
+    inline def setPatientId(value: String): Self = StObject.set(x, "patientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatientIdUndefined: Self = StObject.set(x, "patientId", js.undefined)
+    inline def setPatientIdUndefined: Self = StObject.set(x, "patientId", js.undefined)
     
-    @scala.inline
-    def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
+    inline def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

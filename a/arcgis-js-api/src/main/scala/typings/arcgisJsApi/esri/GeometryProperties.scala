@@ -29,31 +29,23 @@ trait GeometryProperties extends StObject {
 }
 object GeometryProperties {
   
-  @scala.inline
-  def apply(): GeometryProperties = {
+  inline def apply(): GeometryProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeometryProperties]
   }
   
-  @scala.inline
-  implicit class GeometryPropertiesMutableBuilder[Self <: GeometryProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GeometryProperties](x: Self) {
     
-    @scala.inline
-    def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
+    inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
+    inline def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
     
-    @scala.inline
-    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+    inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

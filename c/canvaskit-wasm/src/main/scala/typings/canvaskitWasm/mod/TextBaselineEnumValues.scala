@@ -14,19 +14,15 @@ trait TextBaselineEnumValues
 }
 object TextBaselineEnumValues {
   
-  @scala.inline
-  def apply(Alphabetic: TextBaseline, Ideographic: TextBaseline, values: js.Array[Double]): TextBaselineEnumValues = {
+  inline def apply(Alphabetic: TextBaseline, Ideographic: TextBaseline, values: js.Array[Double]): TextBaselineEnumValues = {
     val __obj = js.Dynamic.literal(Alphabetic = Alphabetic.asInstanceOf[js.Any], Ideographic = Ideographic.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextBaselineEnumValues]
   }
   
-  @scala.inline
-  implicit class TextBaselineEnumValuesMutableBuilder[Self <: TextBaselineEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: TextBaselineEnumValues](x: Self) {
     
-    @scala.inline
-    def setAlphabetic(value: TextBaseline): Self = StObject.set(x, "Alphabetic", value.asInstanceOf[js.Any])
+    inline def setAlphabetic(value: TextBaseline): Self = StObject.set(x, "Alphabetic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdeographic(value: TextBaseline): Self = StObject.set(x, "Ideographic", value.asInstanceOf[js.Any])
+    inline def setIdeographic(value: TextBaseline): Self = StObject.set(x, "Ideographic", value.asInstanceOf[js.Any])
   }
 }

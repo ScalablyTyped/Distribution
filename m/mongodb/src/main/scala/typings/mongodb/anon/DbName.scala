@@ -10,19 +10,15 @@ trait DbName extends StObject {
 }
 object DbName {
   
-  @scala.inline
-  def apply(): DbName = {
+  inline def apply(): DbName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DbName]
   }
   
-  @scala.inline
-  implicit class DbNameMutableBuilder[Self <: DbName] (val x: Self) extends AnyVal {
+  extension [Self <: DbName](x: Self) {
     
-    @scala.inline
-    def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
+    inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
+    inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
   }
 }

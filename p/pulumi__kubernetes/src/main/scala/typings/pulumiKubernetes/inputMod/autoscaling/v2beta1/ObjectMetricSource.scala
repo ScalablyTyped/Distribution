@@ -38,34 +38,25 @@ trait ObjectMetricSource extends StObject {
 }
 object ObjectMetricSource {
   
-  @scala.inline
-  def apply(metricName: Input[String], target: Input[CrossVersionObjectReference], targetValue: Input[String]): ObjectMetricSource = {
+  inline def apply(metricName: Input[String], target: Input[CrossVersionObjectReference], targetValue: Input[String]): ObjectMetricSource = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetValue = targetValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectMetricSource]
   }
   
-  @scala.inline
-  implicit class ObjectMetricSourceMutableBuilder[Self <: ObjectMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectMetricSource](x: Self) {
     
-    @scala.inline
-    def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
+    inline def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
+    inline def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetValue(value: Input[String]): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: Input[String]): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
   }
 }

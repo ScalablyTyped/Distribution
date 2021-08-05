@@ -13,16 +13,13 @@ trait DeleteCrawlerRequest extends StObject {
 }
 object DeleteCrawlerRequest {
   
-  @scala.inline
-  def apply(Name: NameString): DeleteCrawlerRequest = {
+  inline def apply(Name: NameString): DeleteCrawlerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCrawlerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCrawlerRequestMutableBuilder[Self <: DeleteCrawlerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCrawlerRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

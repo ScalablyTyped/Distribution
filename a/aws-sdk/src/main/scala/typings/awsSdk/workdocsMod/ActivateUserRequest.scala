@@ -18,22 +18,17 @@ trait ActivateUserRequest extends StObject {
 }
 object ActivateUserRequest {
   
-  @scala.inline
-  def apply(UserId: IdType): ActivateUserRequest = {
+  inline def apply(UserId: IdType): ActivateUserRequest = {
     val __obj = js.Dynamic.literal(UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivateUserRequest]
   }
   
-  @scala.inline
-  implicit class ActivateUserRequestMutableBuilder[Self <: ActivateUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateUserRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setUserId(value: IdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: IdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

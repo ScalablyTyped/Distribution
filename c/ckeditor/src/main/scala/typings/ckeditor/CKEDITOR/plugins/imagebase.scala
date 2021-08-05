@@ -20,23 +20,18 @@ object imagebase {
   }
   object imageWidgetDefinition {
     
-    @scala.inline
-    def apply(features: js.Array[String], upcast: String): imageWidgetDefinition = {
+    inline def apply(features: js.Array[String], upcast: String): imageWidgetDefinition = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], upcast = upcast.asInstanceOf[js.Any])
       __obj.asInstanceOf[imageWidgetDefinition]
     }
     
-    @scala.inline
-    implicit class imageWidgetDefinitionMutableBuilder[Self <: imageWidgetDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: imageWidgetDefinition](x: Self) {
       
-      @scala.inline
-      def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
       
-      @scala.inline
-      def setUpcast(value: String): Self = StObject.set(x, "upcast", value.asInstanceOf[js.Any])
+      inline def setUpcast(value: String): Self = StObject.set(x, "upcast", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,8 +43,7 @@ object imagebase {
   }
   object progressBar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aborted: () => Unit,
       bar: element,
       bindLoader: fileLoader => Unit,
@@ -63,11 +57,9 @@ object imagebase {
       __obj.asInstanceOf[progressBar]
     }
     
-    @scala.inline
-    implicit class progressBarMutableBuilder[Self <: progressBar] (val x: Self) extends AnyVal {
+    extension [Self <: progressBar](x: Self) {
       
-      @scala.inline
-      def setBar(value: element): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+      inline def setBar(value: element): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,8 +81,7 @@ object imagebase {
   }
   object progressReporter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aborted: () => Unit,
       bindLoader: fileLoader => Unit,
       done: () => Unit,
@@ -103,29 +94,21 @@ object imagebase {
       __obj.asInstanceOf[progressReporter]
     }
     
-    @scala.inline
-    implicit class progressReporterMutableBuilder[Self <: progressReporter] (val x: Self) extends AnyVal {
+    extension [Self <: progressReporter](x: Self) {
       
-      @scala.inline
-      def setAborted(value: () => Unit): Self = StObject.set(x, "aborted", js.Any.fromFunction0(value))
+      inline def setAborted(value: () => Unit): Self = StObject.set(x, "aborted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBindLoader(value: fileLoader => Unit): Self = StObject.set(x, "bindLoader", js.Any.fromFunction1(value))
+      inline def setBindLoader(value: fileLoader => Unit): Self = StObject.set(x, "bindLoader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+      inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFailed(value: () => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
+      inline def setFailed(value: () => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdated(value: Double => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction1(value))
+      inline def setUpdated(value: Double => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrapper(value: element): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: element): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

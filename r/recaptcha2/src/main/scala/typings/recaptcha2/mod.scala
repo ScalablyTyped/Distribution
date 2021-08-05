@@ -26,26 +26,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(secretKey: String, siteKey: String): Options = {
+    inline def apply(secretKey: String, siteKey: String): Options = {
       val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any], siteKey = siteKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteKey(value: String): Self = StObject.set(x, "siteKey", value.asInstanceOf[js.Any])
+      inline def setSiteKey(value: String): Self = StObject.set(x, "siteKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     }
   }
   
@@ -76,26 +70,20 @@ object mod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply[T](form: T, uri: String): RequestOptions[T] = {
+    inline def apply[T](form: T, uri: String): RequestOptions[T] = {
       val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], json = true, method = "POST", uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOptions[T]]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[?], T] (val x: Self & RequestOptions[T]) extends AnyVal {
+    extension [Self <: RequestOptions[?], T](x: Self & RequestOptions[T]) {
       
-      @scala.inline
-      def setForm(value: T): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: T): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

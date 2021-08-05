@@ -20,8 +20,7 @@ trait AppointmentResizeEventArgs
 }
 object AppointmentResizeEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appointmentId: String,
     handled: Boolean,
     newInterval: BootstrapTimeInterval,
@@ -33,22 +32,16 @@ object AppointmentResizeEventArgs {
     __obj.asInstanceOf[AppointmentResizeEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentResizeEventArgsMutableBuilder[Self <: AppointmentResizeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentResizeEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
+    inline def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
+    inline def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: BootstrapSchedulerAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: BootstrapSchedulerAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

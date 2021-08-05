@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Queue[T] extends StObject {
   
-  var N: js.Any
+  /* private */ var N: js.Any
   
   def dequeue(): js.UndefOr[T]
   
   def enqueue(item: T): Unit
   
-  var first: js.Any
+  /* private */ var first: js.Any
   
   def isEmpty(): Boolean
   
-  var last: js.Any
+  /* private */ var last: js.Any
   
   def size(): Double
   
@@ -24,8 +24,7 @@ trait Queue[T] extends StObject {
 }
 object Queue {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     N: js.Any,
     dequeue: () => js.UndefOr[T],
     enqueue: T => Unit,
@@ -39,31 +38,22 @@ object Queue {
     __obj.asInstanceOf[Queue[T]]
   }
   
-  @scala.inline
-  implicit class QueueMutableBuilder[Self <: Queue[?], T] (val x: Self & Queue[T]) extends AnyVal {
+  extension [Self <: Queue[?], T](x: Self & Queue[T]) {
     
-    @scala.inline
-    def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+    inline def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnqueue(value: T => Unit): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
+    inline def setEnqueue(value: T => Unit): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirst(value: js.Any): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: js.Any): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLast(value: js.Any): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: js.Any): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+    inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

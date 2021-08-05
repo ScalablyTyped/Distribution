@@ -18,25 +18,19 @@ trait CPUStats extends StObject {
 }
 object CPUStats {
   
-  @scala.inline
-  def apply(cpu_usage: Percpuusage, online_cpus: Double, system_cpu_usage: Double, throttling_data: Periods): CPUStats = {
+  inline def apply(cpu_usage: Percpuusage, online_cpus: Double, system_cpu_usage: Double, throttling_data: Periods): CPUStats = {
     val __obj = js.Dynamic.literal(cpu_usage = cpu_usage.asInstanceOf[js.Any], online_cpus = online_cpus.asInstanceOf[js.Any], system_cpu_usage = system_cpu_usage.asInstanceOf[js.Any], throttling_data = throttling_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPUStats]
   }
   
-  @scala.inline
-  implicit class CPUStatsMutableBuilder[Self <: CPUStats] (val x: Self) extends AnyVal {
+  extension [Self <: CPUStats](x: Self) {
     
-    @scala.inline
-    def setCpu_usage(value: Percpuusage): Self = StObject.set(x, "cpu_usage", value.asInstanceOf[js.Any])
+    inline def setCpu_usage(value: Percpuusage): Self = StObject.set(x, "cpu_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnline_cpus(value: Double): Self = StObject.set(x, "online_cpus", value.asInstanceOf[js.Any])
+    inline def setOnline_cpus(value: Double): Self = StObject.set(x, "online_cpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem_cpu_usage(value: Double): Self = StObject.set(x, "system_cpu_usage", value.asInstanceOf[js.Any])
+    inline def setSystem_cpu_usage(value: Double): Self = StObject.set(x, "system_cpu_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottling_data(value: Periods): Self = StObject.set(x, "throttling_data", value.asInstanceOf[js.Any])
+    inline def setThrottling_data(value: Periods): Self = StObject.set(x, "throttling_data", value.asInstanceOf[js.Any])
   }
 }

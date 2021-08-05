@@ -25,25 +25,19 @@ trait DistributionOrderedCacheBehaviorLambdaFunctionAssociation extends StObject
 }
 object DistributionOrderedCacheBehaviorLambdaFunctionAssociation {
   
-  @scala.inline
-  def apply(eventType: String, lambdaArn: String): DistributionOrderedCacheBehaviorLambdaFunctionAssociation = {
+  inline def apply(eventType: String, lambdaArn: String): DistributionOrderedCacheBehaviorLambdaFunctionAssociation = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], lambdaArn = lambdaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOrderedCacheBehaviorLambdaFunctionAssociation]
   }
   
-  @scala.inline
-  implicit class DistributionOrderedCacheBehaviorLambdaFunctionAssociationMutableBuilder[Self <: DistributionOrderedCacheBehaviorLambdaFunctionAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOrderedCacheBehaviorLambdaFunctionAssociation](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
+    inline def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBodyUndefined: Self = StObject.set(x, "includeBody", js.undefined)
+    inline def setIncludeBodyUndefined: Self = StObject.set(x, "includeBody", js.undefined)
     
-    @scala.inline
-    def setLambdaArn(value: String): Self = StObject.set(x, "lambdaArn", value.asInstanceOf[js.Any])
+    inline def setLambdaArn(value: String): Self = StObject.set(x, "lambdaArn", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait CopyWithin extends StObject {
 }
 object CopyWithin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copyWithin: Boolean,
     entries: Boolean,
     fill: Boolean,
@@ -36,28 +35,20 @@ object CopyWithin {
     __obj.asInstanceOf[CopyWithin]
   }
   
-  @scala.inline
-  implicit class CopyWithinMutableBuilder[Self <: CopyWithin] (val x: Self) extends AnyVal {
+  extension [Self <: CopyWithin](x: Self) {
     
-    @scala.inline
-    def setCopyWithin(value: Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
+    inline def setCopyWithin(value: Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+    inline def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindIndex(value: Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
+    inline def setFindIndex(value: Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

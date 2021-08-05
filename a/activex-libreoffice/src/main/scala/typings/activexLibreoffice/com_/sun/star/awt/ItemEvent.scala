@@ -22,22 +22,17 @@ trait ItemEvent
 }
 object ItemEvent {
   
-  @scala.inline
-  def apply(Highlighted: Double, ItemId: Double, Selected: Double, Source: XInterface): ItemEvent = {
+  inline def apply(Highlighted: Double, ItemId: Double, Selected: Double, Source: XInterface): ItemEvent = {
     val __obj = js.Dynamic.literal(Highlighted = Highlighted.asInstanceOf[js.Any], ItemId = ItemId.asInstanceOf[js.Any], Selected = Selected.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemEvent]
   }
   
-  @scala.inline
-  implicit class ItemEventMutableBuilder[Self <: ItemEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ItemEvent](x: Self) {
     
-    @scala.inline
-    def setHighlighted(value: Double): Self = StObject.set(x, "Highlighted", value.asInstanceOf[js.Any])
+    inline def setHighlighted(value: Double): Self = StObject.set(x, "Highlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: Double): Self = StObject.set(x, "ItemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: Double): Self = StObject.set(x, "ItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Double): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Double): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait WebResponseDetails
 }
 object WebResponseDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: Double,
     parentFrameId: Double,
     requestId: String,
@@ -36,13 +35,10 @@ object WebResponseDetails {
     __obj.asInstanceOf[WebResponseDetails]
   }
   
-  @scala.inline
-  implicit class WebResponseDetailsMutableBuilder[Self <: WebResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebResponseDetails](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
+    inline def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
   }
 }

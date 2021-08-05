@@ -18,25 +18,19 @@ trait RevisionInfo extends StObject {
 }
 object RevisionInfo {
   
-  @scala.inline
-  def apply(): RevisionInfo = {
+  inline def apply(): RevisionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevisionInfo]
   }
   
-  @scala.inline
-  implicit class RevisionInfoMutableBuilder[Self <: RevisionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionInfo](x: Self) {
     
-    @scala.inline
-    def setGenericRevisionInfo(value: GenericRevisionInfo): Self = StObject.set(x, "genericRevisionInfo", value.asInstanceOf[js.Any])
+    inline def setGenericRevisionInfo(value: GenericRevisionInfo): Self = StObject.set(x, "genericRevisionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericRevisionInfoUndefined: Self = StObject.set(x, "genericRevisionInfo", js.undefined)
+    inline def setGenericRevisionInfoUndefined: Self = StObject.set(x, "genericRevisionInfo", js.undefined)
     
-    @scala.inline
-    def setRevisionLocation(value: RevisionLocation): Self = StObject.set(x, "revisionLocation", value.asInstanceOf[js.Any])
+    inline def setRevisionLocation(value: RevisionLocation): Self = StObject.set(x, "revisionLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionLocationUndefined: Self = StObject.set(x, "revisionLocation", js.undefined)
+    inline def setRevisionLocationUndefined: Self = StObject.set(x, "revisionLocation", js.undefined)
   }
 }

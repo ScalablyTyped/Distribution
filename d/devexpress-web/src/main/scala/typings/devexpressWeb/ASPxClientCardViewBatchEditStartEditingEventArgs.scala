@@ -28,22 +28,17 @@ trait ASPxClientCardViewBatchEditStartEditingEventArgs
 }
 object ASPxClientCardViewBatchEditStartEditingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cardValues: js.Any, focusedColumn: ASPxClientCardViewColumn, visibleIndex: Double): ASPxClientCardViewBatchEditStartEditingEventArgs = {
+  inline def apply(cancel: Boolean, cardValues: js.Any, focusedColumn: ASPxClientCardViewColumn, visibleIndex: Double): ASPxClientCardViewBatchEditStartEditingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cardValues = cardValues.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditStartEditingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewBatchEditStartEditingEventArgsMutableBuilder[Self <: ASPxClientCardViewBatchEditStartEditingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewBatchEditStartEditingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
+    inline def setFocusedColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

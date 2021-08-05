@@ -53,6 +53,6 @@ object restpaginatorMod {
     /* CompleteClass */
     override def prevPage(): js.Promise[Paginator[T]] = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
   }
 }

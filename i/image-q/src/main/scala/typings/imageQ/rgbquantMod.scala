@@ -22,15 +22,15 @@ object rgbquantMod {
     
     /* private */ def _buildPalette(idxi32: js.Any): js.Any = js.native
     
-    val _colors: js.Any = js.native
+    /* private */ val _colors: js.Any = js.native
     
-    val _distance: js.Any = js.native
+    /* private */ val _distance: js.Any = js.native
     
-    val _distanceIncrement: js.Any = js.native
+    /* private */ val _distanceIncrement: js.Any = js.native
     
-    val _histogram: js.Any = js.native
+    /* private */ val _histogram: js.Any = js.native
     
-    val _initialDistance: js.Any = js.native
+    /* private */ val _initialDistance: js.Any = js.native
     
     /* CompleteClass */
     override def quantize(): Palette = js.native

@@ -58,76 +58,53 @@ trait StandardsControl extends StObject {
 }
 object StandardsControl {
   
-  @scala.inline
-  def apply(): StandardsControl = {
+  inline def apply(): StandardsControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardsControl]
   }
   
-  @scala.inline
-  implicit class StandardsControlMutableBuilder[Self <: StandardsControl] (val x: Self) extends AnyVal {
+  extension [Self <: StandardsControl](x: Self) {
     
-    @scala.inline
-    def setControlId(value: NonEmptyString): Self = StObject.set(x, "ControlId", value.asInstanceOf[js.Any])
+    inline def setControlId(value: NonEmptyString): Self = StObject.set(x, "ControlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlIdUndefined: Self = StObject.set(x, "ControlId", js.undefined)
+    inline def setControlIdUndefined: Self = StObject.set(x, "ControlId", js.undefined)
     
-    @scala.inline
-    def setControlStatus(value: ControlStatus): Self = StObject.set(x, "ControlStatus", value.asInstanceOf[js.Any])
+    inline def setControlStatus(value: ControlStatus): Self = StObject.set(x, "ControlStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
+    inline def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
     
-    @scala.inline
-    def setControlStatusUpdatedAt(value: Timestamp): Self = StObject.set(x, "ControlStatusUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setControlStatusUpdatedAt(value: Timestamp): Self = StObject.set(x, "ControlStatusUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlStatusUpdatedAtUndefined: Self = StObject.set(x, "ControlStatusUpdatedAt", js.undefined)
+    inline def setControlStatusUpdatedAtUndefined: Self = StObject.set(x, "ControlStatusUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDisabledReason(value: NonEmptyString): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
+    inline def setDisabledReason(value: NonEmptyString): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
+    inline def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
     
-    @scala.inline
-    def setRelatedRequirements(value: RelatedRequirementsList): Self = StObject.set(x, "RelatedRequirements", value.asInstanceOf[js.Any])
+    inline def setRelatedRequirements(value: RelatedRequirementsList): Self = StObject.set(x, "RelatedRequirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
+    inline def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
     
-    @scala.inline
-    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
+    inline def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
     
-    @scala.inline
-    def setRemediationUrl(value: NonEmptyString): Self = StObject.set(x, "RemediationUrl", value.asInstanceOf[js.Any])
+    inline def setRemediationUrl(value: NonEmptyString): Self = StObject.set(x, "RemediationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationUrlUndefined: Self = StObject.set(x, "RemediationUrl", js.undefined)
+    inline def setRemediationUrlUndefined: Self = StObject.set(x, "RemediationUrl", js.undefined)
     
-    @scala.inline
-    def setSeverityRating(value: SeverityRating): Self = StObject.set(x, "SeverityRating", value.asInstanceOf[js.Any])
+    inline def setSeverityRating(value: SeverityRating): Self = StObject.set(x, "SeverityRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityRatingUndefined: Self = StObject.set(x, "SeverityRating", js.undefined)
+    inline def setSeverityRatingUndefined: Self = StObject.set(x, "SeverityRating", js.undefined)
     
-    @scala.inline
-    def setStandardsControlArn(value: NonEmptyString): Self = StObject.set(x, "StandardsControlArn", value.asInstanceOf[js.Any])
+    inline def setStandardsControlArn(value: NonEmptyString): Self = StObject.set(x, "StandardsControlArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsControlArnUndefined: Self = StObject.set(x, "StandardsControlArn", js.undefined)
+    inline def setStandardsControlArnUndefined: Self = StObject.set(x, "StandardsControlArn", js.undefined)
     
-    @scala.inline
-    def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

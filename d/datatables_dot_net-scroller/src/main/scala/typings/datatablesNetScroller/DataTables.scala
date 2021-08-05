@@ -12,17 +12,14 @@ object DataTables {
   }
   object Api {
     
-    @scala.inline
-    def apply(scroller: ScrollerMethodsModel): Api = {
+    inline def apply(scroller: ScrollerMethodsModel): Api = {
       val __obj = js.Dynamic.literal(scroller = scroller.asInstanceOf[js.Any])
       __obj.asInstanceOf[Api]
     }
     
-    @scala.inline
-    implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    extension [Self <: Api](x: Self) {
       
-      @scala.inline
-      def setScroller(value: ScrollerMethodsModel): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+      inline def setScroller(value: ScrollerMethodsModel): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,20 +35,16 @@ object DataTables {
   }
   object PageInfo {
     
-    @scala.inline
-    def apply(end: Double, start: Double): PageInfo = {
+    inline def apply(end: Double, start: Double): PageInfo = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageInfo]
     }
     
-    @scala.inline
-    implicit class PageInfoMutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PageInfo](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,50 +147,36 @@ object DataTables {
   }
   object ScrollerSettings {
     
-    @scala.inline
-    def apply(): ScrollerSettings = {
+    inline def apply(): ScrollerSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollerSettings]
     }
     
-    @scala.inline
-    implicit class ScrollerSettingsMutableBuilder[Self <: ScrollerSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollerSettings](x: Self) {
       
-      @scala.inline
-      def setBoundaryScale(value: Double): Self = StObject.set(x, "boundaryScale", value.asInstanceOf[js.Any])
+      inline def setBoundaryScale(value: Double): Self = StObject.set(x, "boundaryScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryScaleUndefined: Self = StObject.set(x, "boundaryScale", js.undefined)
+      inline def setBoundaryScaleUndefined: Self = StObject.set(x, "boundaryScale", js.undefined)
       
-      @scala.inline
-      def setDisplayBuffer(value: Double): Self = StObject.set(x, "displayBuffer", value.asInstanceOf[js.Any])
+      inline def setDisplayBuffer(value: Double): Self = StObject.set(x, "displayBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayBufferUndefined: Self = StObject.set(x, "displayBuffer", js.undefined)
+      inline def setDisplayBufferUndefined: Self = StObject.set(x, "displayBuffer", js.undefined)
       
-      @scala.inline
-      def setLoadingIndicator(value: Boolean): Self = StObject.set(x, "loadingIndicator", value.asInstanceOf[js.Any])
+      inline def setLoadingIndicator(value: Boolean): Self = StObject.set(x, "loadingIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
+      inline def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
       
-      @scala.inline
-      def setServerWait(value: Double): Self = StObject.set(x, "serverWait", value.asInstanceOf[js.Any])
+      inline def setServerWait(value: Double): Self = StObject.set(x, "serverWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerWaitUndefined: Self = StObject.set(x, "serverWait", js.undefined)
+      inline def setServerWaitUndefined: Self = StObject.set(x, "serverWait", js.undefined)
       
-      @scala.inline
-      def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     }
   }
   
@@ -210,20 +189,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setScroller(value: Boolean | ScrollerSettings): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+      inline def setScroller(value: Boolean | ScrollerSettings): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
+      inline def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
     }
   }
 }

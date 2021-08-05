@@ -23,22 +23,16 @@ object MessageBoxResults {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CANCEL: `0` = 0.asInstanceOf[`0`]
+    inline def CANCEL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def IGNORE: `5` = 5.asInstanceOf[`5`]
+    inline def IGNORE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def NO: `3` = 3.asInstanceOf[`3`]
+    inline def NO: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def OK: `1` = 1.asInstanceOf[`1`]
+    inline def OK: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def RETRY: `4` = 4.asInstanceOf[`4`]
+    inline def RETRY: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def YES: `2` = 2.asInstanceOf[`2`]
+    inline def YES: `2` = 2.asInstanceOf[`2`]
   }
 }

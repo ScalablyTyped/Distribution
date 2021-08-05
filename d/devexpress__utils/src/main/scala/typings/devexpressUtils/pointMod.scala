@@ -54,26 +54,19 @@ object pointMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def equals(a: IPoint, b: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: IPoint, b: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromNumber(num: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def fromNumber(num: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[Point]
     
-    @scala.inline
-    def minus(a: IPoint, b: IPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("minus")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def minus(a: IPoint, b: IPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("minus")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     
-    @scala.inline
-    def plus(a: IPoint, b: IPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("plus")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def plus(a: IPoint, b: IPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("plus")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     
-    @scala.inline
-    def xComparer(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xComparer")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def xComparer(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xComparer")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def yComparer(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("yComparer")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def yComparer(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("yComparer")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def zero(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[Point]
+    inline def zero(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[Point]
   }
   
   type Offset = Point

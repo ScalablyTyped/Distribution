@@ -26,8 +26,7 @@ trait configWorkers
 }
 object configWorkers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object configWorkers {
     __obj.asInstanceOf[configWorkers]
   }
   
-  @scala.inline
-  implicit class configWorkersMutableBuilder[Self <: configWorkers] (val x: Self) extends AnyVal {
+  extension [Self <: configWorkers](x: Self) {
     
-    @scala.inline
-    def setLoaderConfig(value: configWorkersLoaderConfig): Self = StObject.set(x, "loaderConfig", value.asInstanceOf[js.Any])
+    inline def setLoaderConfig(value: configWorkersLoaderConfig): Self = StObject.set(x, "loaderConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderConfigUndefined: Self = StObject.set(x, "loaderConfig", js.undefined)
+    inline def setLoaderConfigUndefined: Self = StObject.set(x, "loaderConfig", js.undefined)
     
-    @scala.inline
-    def setLoaderUrl(value: js.Any): Self = StObject.set(x, "loaderUrl", value.asInstanceOf[js.Any])
+    inline def setLoaderUrl(value: js.Any): Self = StObject.set(x, "loaderUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderUrlUndefined: Self = StObject.set(x, "loaderUrl", js.undefined)
+    inline def setLoaderUrlUndefined: Self = StObject.set(x, "loaderUrl", js.undefined)
   }
 }

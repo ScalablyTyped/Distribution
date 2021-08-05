@@ -13,19 +13,15 @@ trait DescribeAvailabilityOptionsResponse extends StObject {
 }
 object DescribeAvailabilityOptionsResponse {
   
-  @scala.inline
-  def apply(): DescribeAvailabilityOptionsResponse = {
+  inline def apply(): DescribeAvailabilityOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAvailabilityOptionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAvailabilityOptionsResponseMutableBuilder[Self <: DescribeAvailabilityOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAvailabilityOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setAvailabilityOptions(value: AvailabilityOptionsStatus): Self = StObject.set(x, "AvailabilityOptions", value.asInstanceOf[js.Any])
+    inline def setAvailabilityOptions(value: AvailabilityOptionsStatus): Self = StObject.set(x, "AvailabilityOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityOptionsUndefined: Self = StObject.set(x, "AvailabilityOptions", js.undefined)
+    inline def setAvailabilityOptionsUndefined: Self = StObject.set(x, "AvailabilityOptions", js.undefined)
   }
 }

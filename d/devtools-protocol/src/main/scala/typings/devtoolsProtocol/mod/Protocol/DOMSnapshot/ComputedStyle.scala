@@ -13,19 +13,15 @@ trait ComputedStyle extends StObject {
 }
 object ComputedStyle {
   
-  @scala.inline
-  def apply(properties: js.Array[NameValue]): ComputedStyle = {
+  inline def apply(properties: js.Array[NameValue]): ComputedStyle = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputedStyle]
   }
   
-  @scala.inline
-  implicit class ComputedStyleMutableBuilder[Self <: ComputedStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ComputedStyle](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[NameValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[NameValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: NameValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: NameValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

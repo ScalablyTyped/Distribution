@@ -38,49 +38,35 @@ trait SchemaConfiguration extends StObject {
 }
 object SchemaConfiguration {
   
-  @scala.inline
-  def apply(): SchemaConfiguration = {
+  inline def apply(): SchemaConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaConfigurationMutableBuilder[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfiguration](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setRegion(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    @scala.inline
-    def setTableName(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

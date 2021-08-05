@@ -49,58 +49,41 @@ trait MultiAtlasFileConfig extends StObject {
 }
 object MultiAtlasFileConfig {
   
-  @scala.inline
-  def apply(key: String): MultiAtlasFileConfig = {
+  inline def apply(key: String): MultiAtlasFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiAtlasFileConfig]
   }
   
-  @scala.inline
-  implicit class MultiAtlasFileConfigMutableBuilder[Self <: MultiAtlasFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MultiAtlasFileConfig](x: Self) {
     
-    @scala.inline
-    def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
+    inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtlasExtensionUndefined: Self = StObject.set(x, "atlasExtension", js.undefined)
+    inline def setAtlasExtensionUndefined: Self = StObject.set(x, "atlasExtension", js.undefined)
     
-    @scala.inline
-    def setAtlasURL(value: String): Self = StObject.set(x, "atlasURL", value.asInstanceOf[js.Any])
+    inline def setAtlasURL(value: String): Self = StObject.set(x, "atlasURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtlasURLUndefined: Self = StObject.set(x, "atlasURL", js.undefined)
+    inline def setAtlasURLUndefined: Self = StObject.set(x, "atlasURL", js.undefined)
     
-    @scala.inline
-    def setAtlasXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "atlasXhrSettings", value.asInstanceOf[js.Any])
+    inline def setAtlasXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "atlasXhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtlasXhrSettingsUndefined: Self = StObject.set(x, "atlasXhrSettings", js.undefined)
+    inline def setAtlasXhrSettingsUndefined: Self = StObject.set(x, "atlasXhrSettings", js.undefined)
     
-    @scala.inline
-    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+    inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+    inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTextureXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "textureXhrSettings", value.asInstanceOf[js.Any])
+    inline def setTextureXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "textureXhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureXhrSettingsUndefined: Self = StObject.set(x, "textureXhrSettings", js.undefined)
+    inline def setTextureXhrSettingsUndefined: Self = StObject.set(x, "textureXhrSettings", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

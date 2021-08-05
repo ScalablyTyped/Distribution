@@ -18,25 +18,19 @@ trait BrowseRequestData extends StObject {
 }
 object BrowseRequestData {
   
-  @scala.inline
-  def apply(): BrowseRequestData = {
+  inline def apply(): BrowseRequestData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowseRequestData]
   }
   
-  @scala.inline
-  implicit class BrowseRequestDataMutableBuilder[Self <: BrowseRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: BrowseRequestData](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

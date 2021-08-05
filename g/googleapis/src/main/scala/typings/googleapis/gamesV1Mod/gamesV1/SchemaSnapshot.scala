@@ -72,79 +72,55 @@ trait SchemaSnapshot extends StObject {
 }
 object SchemaSnapshot {
   
-  @scala.inline
-  def apply(): SchemaSnapshot = {
+  inline def apply(): SchemaSnapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSnapshot]
   }
   
-  @scala.inline
-  implicit class SchemaSnapshotMutableBuilder[Self <: SchemaSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSnapshot](x: Self) {
     
-    @scala.inline
-    def setCoverImage(value: SchemaSnapshotImage): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
+    inline def setCoverImage(value: SchemaSnapshotImage): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverImageUndefined: Self = StObject.set(x, "coverImage", js.undefined)
+    inline def setCoverImageUndefined: Self = StObject.set(x, "coverImage", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDriveId(value: String): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
+    inline def setDriveId(value: String): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveIdUndefined: Self = StObject.set(x, "driveId", js.undefined)
+    inline def setDriveIdUndefined: Self = StObject.set(x, "driveId", js.undefined)
     
-    @scala.inline
-    def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+    inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLastModifiedMillis(value: String): Self = StObject.set(x, "lastModifiedMillis", value.asInstanceOf[js.Any])
+    inline def setLastModifiedMillis(value: String): Self = StObject.set(x, "lastModifiedMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedMillisUndefined: Self = StObject.set(x, "lastModifiedMillis", js.undefined)
+    inline def setLastModifiedMillisUndefined: Self = StObject.set(x, "lastModifiedMillis", js.undefined)
     
-    @scala.inline
-    def setProgressValue(value: String): Self = StObject.set(x, "progressValue", value.asInstanceOf[js.Any])
+    inline def setProgressValue(value: String): Self = StObject.set(x, "progressValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressValueUndefined: Self = StObject.set(x, "progressValue", js.undefined)
+    inline def setProgressValueUndefined: Self = StObject.set(x, "progressValue", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
   }
 }

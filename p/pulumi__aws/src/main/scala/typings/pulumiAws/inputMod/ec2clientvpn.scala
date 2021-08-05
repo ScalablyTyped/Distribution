@@ -31,36 +31,27 @@ object ec2clientvpn {
   }
   object EndpointAuthenticationOption {
     
-    @scala.inline
-    def apply(`type`: Input[String]): EndpointAuthenticationOption = {
+    inline def apply(`type`: Input[String]): EndpointAuthenticationOption = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointAuthenticationOption]
     }
     
-    @scala.inline
-    implicit class EndpointAuthenticationOptionMutableBuilder[Self <: EndpointAuthenticationOption] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointAuthenticationOption](x: Self) {
       
-      @scala.inline
-      def setActiveDirectoryId(value: Input[String]): Self = StObject.set(x, "activeDirectoryId", value.asInstanceOf[js.Any])
+      inline def setActiveDirectoryId(value: Input[String]): Self = StObject.set(x, "activeDirectoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDirectoryIdUndefined: Self = StObject.set(x, "activeDirectoryId", js.undefined)
+      inline def setActiveDirectoryIdUndefined: Self = StObject.set(x, "activeDirectoryId", js.undefined)
       
-      @scala.inline
-      def setRootCertificateChainArn(value: Input[String]): Self = StObject.set(x, "rootCertificateChainArn", value.asInstanceOf[js.Any])
+      inline def setRootCertificateChainArn(value: Input[String]): Self = StObject.set(x, "rootCertificateChainArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootCertificateChainArnUndefined: Self = StObject.set(x, "rootCertificateChainArn", js.undefined)
+      inline def setRootCertificateChainArnUndefined: Self = StObject.set(x, "rootCertificateChainArn", js.undefined)
       
-      @scala.inline
-      def setSamlProviderArn(value: Input[String]): Self = StObject.set(x, "samlProviderArn", value.asInstanceOf[js.Any])
+      inline def setSamlProviderArn(value: Input[String]): Self = StObject.set(x, "samlProviderArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamlProviderArnUndefined: Self = StObject.set(x, "samlProviderArn", js.undefined)
+      inline def setSamlProviderArnUndefined: Self = StObject.set(x, "samlProviderArn", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,29 +74,22 @@ object ec2clientvpn {
   }
   object EndpointConnectionLogOptions {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean]): EndpointConnectionLogOptions = {
+    inline def apply(enabled: Input[Boolean]): EndpointConnectionLogOptions = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointConnectionLogOptions]
     }
     
-    @scala.inline
-    implicit class EndpointConnectionLogOptionsMutableBuilder[Self <: EndpointConnectionLogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConnectionLogOptions](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLogGroup(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroup", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroup(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogGroupUndefined: Self = StObject.set(x, "cloudwatchLogGroup", js.undefined)
+      inline def setCloudwatchLogGroupUndefined: Self = StObject.set(x, "cloudwatchLogGroup", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLogStream(value: Input[String]): Self = StObject.set(x, "cloudwatchLogStream", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogStream(value: Input[String]): Self = StObject.set(x, "cloudwatchLogStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogStreamUndefined: Self = StObject.set(x, "cloudwatchLogStream", js.undefined)
+      inline def setCloudwatchLogStreamUndefined: Self = StObject.set(x, "cloudwatchLogStream", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

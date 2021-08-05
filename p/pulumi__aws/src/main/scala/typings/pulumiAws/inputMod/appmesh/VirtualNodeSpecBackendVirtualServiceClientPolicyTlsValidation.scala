@@ -14,16 +14,13 @@ trait VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation extends StOb
 }
 object VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
   
-  @scala.inline
-  def apply(trust: Input[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust]): VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation = {
+  inline def apply(trust: Input[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust]): VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation = {
     val __obj = js.Dynamic.literal(trust = trust.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationMutableBuilder[Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation](x: Self) {
     
-    @scala.inline
-    def setTrust(value: Input[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust]): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
+    inline def setTrust(value: Input[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust]): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
   }
 }

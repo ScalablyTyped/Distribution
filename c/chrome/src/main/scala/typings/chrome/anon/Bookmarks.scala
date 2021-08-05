@@ -14,31 +14,23 @@ trait Bookmarks extends StObject {
 }
 object Bookmarks {
   
-  @scala.inline
-  def apply(): Bookmarks = {
+  inline def apply(): Bookmarks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bookmarks]
   }
   
-  @scala.inline
-  implicit class BookmarksMutableBuilder[Self <: Bookmarks] (val x: Self) extends AnyVal {
+  extension [Self <: Bookmarks](x: Self) {
     
-    @scala.inline
-    def setBookmarks(value: String): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: String): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
+    inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    @scala.inline
-    def setHistory(value: String): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: String): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setNewtab(value: String): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
+    inline def setNewtab(value: String): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
+    inline def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
   }
 }

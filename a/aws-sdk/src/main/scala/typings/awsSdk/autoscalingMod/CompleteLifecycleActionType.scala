@@ -33,8 +33,7 @@ trait CompleteLifecycleActionType extends StObject {
 }
 object CompleteLifecycleActionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoScalingGroupName: ResourceName,
     LifecycleActionResult: LifecycleActionResult,
     LifecycleHookName: AsciiStringMaxLen255
@@ -43,28 +42,20 @@ object CompleteLifecycleActionType {
     __obj.asInstanceOf[CompleteLifecycleActionType]
   }
   
-  @scala.inline
-  implicit class CompleteLifecycleActionTypeMutableBuilder[Self <: CompleteLifecycleActionType] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteLifecycleActionType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setLifecycleActionResult(value: LifecycleActionResult): Self = StObject.set(x, "LifecycleActionResult", value.asInstanceOf[js.Any])
+    inline def setLifecycleActionResult(value: LifecycleActionResult): Self = StObject.set(x, "LifecycleActionResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleActionToken(value: LifecycleActionToken): Self = StObject.set(x, "LifecycleActionToken", value.asInstanceOf[js.Any])
+    inline def setLifecycleActionToken(value: LifecycleActionToken): Self = StObject.set(x, "LifecycleActionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleActionTokenUndefined: Self = StObject.set(x, "LifecycleActionToken", js.undefined)
+    inline def setLifecycleActionTokenUndefined: Self = StObject.set(x, "LifecycleActionToken", js.undefined)
     
-    @scala.inline
-    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = StObject.set(x, "LifecycleHookName", value.asInstanceOf[js.Any])
+    inline def setLifecycleHookName(value: AsciiStringMaxLen255): Self = StObject.set(x, "LifecycleHookName", value.asInstanceOf[js.Any])
   }
 }

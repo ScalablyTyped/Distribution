@@ -10,22 +10,17 @@ trait BuildSuggestersResponse extends StObject {
 }
 object BuildSuggestersResponse {
   
-  @scala.inline
-  def apply(): BuildSuggestersResponse = {
+  inline def apply(): BuildSuggestersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildSuggestersResponse]
   }
   
-  @scala.inline
-  implicit class BuildSuggestersResponseMutableBuilder[Self <: BuildSuggestersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuildSuggestersResponse](x: Self) {
     
-    @scala.inline
-    def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
+    inline def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
+    inline def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
     
-    @scala.inline
-    def setFieldNamesVarargs(value: FieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: FieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
   }
 }

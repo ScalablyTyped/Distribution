@@ -23,31 +23,23 @@ trait VpnStaticRoute extends StObject {
 }
 object VpnStaticRoute {
   
-  @scala.inline
-  def apply(): VpnStaticRoute = {
+  inline def apply(): VpnStaticRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnStaticRoute]
   }
   
-  @scala.inline
-  implicit class VpnStaticRouteMutableBuilder[Self <: VpnStaticRoute] (val x: Self) extends AnyVal {
+  extension [Self <: VpnStaticRoute](x: Self) {
     
-    @scala.inline
-    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
+    inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
     
-    @scala.inline
-    def setSource(value: VpnStaticRouteSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: VpnStaticRouteSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setState(value: VpnState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: VpnState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

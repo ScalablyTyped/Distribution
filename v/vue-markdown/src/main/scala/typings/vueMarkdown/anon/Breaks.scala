@@ -26,8 +26,7 @@ trait Breaks extends StObject {
 }
 object Breaks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     breaks: Boolean,
     highlight: js.Any,
     html: Boolean,
@@ -42,34 +41,24 @@ object Breaks {
     __obj.asInstanceOf[Breaks]
   }
   
-  @scala.inline
-  implicit class BreaksMutableBuilder[Self <: Breaks] (val x: Self) extends AnyVal {
+  extension [Self <: Breaks](x: Self) {
     
-    @scala.inline
-    def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
+    inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
+    inline def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNesting(value: Double): Self = StObject.set(x, "maxNesting", value.asInstanceOf[js.Any])
+    inline def setMaxNesting(value: Double): Self = StObject.set(x, "maxNesting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+    inline def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
+    inline def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
+    inline def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
   }
 }

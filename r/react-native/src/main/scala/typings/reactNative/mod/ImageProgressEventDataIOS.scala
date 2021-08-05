@@ -12,19 +12,15 @@ trait ImageProgressEventDataIOS extends StObject {
 }
 object ImageProgressEventDataIOS {
   
-  @scala.inline
-  def apply(loaded: Double, total: Double): ImageProgressEventDataIOS = {
+  inline def apply(loaded: Double, total: Double): ImageProgressEventDataIOS = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProgressEventDataIOS]
   }
   
-  @scala.inline
-  implicit class ImageProgressEventDataIOSMutableBuilder[Self <: ImageProgressEventDataIOS] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProgressEventDataIOS](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

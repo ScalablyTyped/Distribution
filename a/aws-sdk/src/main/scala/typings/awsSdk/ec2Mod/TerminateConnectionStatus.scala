@@ -23,31 +23,23 @@ trait TerminateConnectionStatus extends StObject {
 }
 object TerminateConnectionStatus {
   
-  @scala.inline
-  def apply(): TerminateConnectionStatus = {
+  inline def apply(): TerminateConnectionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateConnectionStatus]
   }
   
-  @scala.inline
-  implicit class TerminateConnectionStatusMutableBuilder[Self <: TerminateConnectionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateConnectionStatus](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: String): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: String): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
     
-    @scala.inline
-    def setCurrentStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "CurrentStatus", value.asInstanceOf[js.Any])
+    inline def setCurrentStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "CurrentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStatusUndefined: Self = StObject.set(x, "CurrentStatus", js.undefined)
+    inline def setCurrentStatusUndefined: Self = StObject.set(x, "CurrentStatus", js.undefined)
     
-    @scala.inline
-    def setPreviousStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "PreviousStatus", value.asInstanceOf[js.Any])
+    inline def setPreviousStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "PreviousStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousStatusUndefined: Self = StObject.set(x, "PreviousStatus", js.undefined)
+    inline def setPreviousStatusUndefined: Self = StObject.set(x, "PreviousStatus", js.undefined)
   }
 }

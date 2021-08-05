@@ -13,25 +13,19 @@ trait Animation extends StObject {
 }
 object Animation {
   
-  @scala.inline
-  def apply(): Animation = {
+  inline def apply(): Animation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+  extension [Self <: Animation](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: animationConfig): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: animationConfig): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setDevice(value: typings.devextreme.mod.DevExpress.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: typings.devextreme.mod.DevExpress.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

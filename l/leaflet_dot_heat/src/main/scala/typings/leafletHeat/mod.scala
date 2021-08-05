@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def heatLayer(latlngs: js.Array[LatLng_ | HeatLatLngTuple], options: HeatMapOptions): HeatLayer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("heatLayer")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HeatLayer_]
+  inline def heatLayer(latlngs: js.Array[LatLng_ | HeatLatLngTuple], options: HeatMapOptions): HeatLayer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("heatLayer")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HeatLayer_]
   
   type ColorGradientConfig = NumberDictionary[String]
   
@@ -48,50 +47,36 @@ object mod {
   }
   object HeatMapOptions {
     
-    @scala.inline
-    def apply(): HeatMapOptions = {
+    inline def apply(): HeatMapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeatMapOptions]
     }
     
-    @scala.inline
-    implicit class HeatMapOptionsMutableBuilder[Self <: HeatMapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeatMapOptions](x: Self) {
       
-      @scala.inline
-      def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setGradient(value: ColorGradientConfig): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: ColorGradientConfig): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+      inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
+      inline def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinOpacityUndefined: Self = StObject.set(x, "minOpacity", js.undefined)
+      inline def setMinOpacityUndefined: Self = StObject.set(x, "minOpacity", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
 }

@@ -14,19 +14,15 @@ trait IGeometryEditorModel
 }
 object IGeometryEditorModel {
   
-  @scala.inline
-  def apply(destroy: () => Unit, events: IEventManager[js.Object], getPixels: () => js.Array[Double]): IGeometryEditorModel = {
+  inline def apply(destroy: () => Unit, events: IEventManager[js.Object], getPixels: () => js.Array[Double]): IGeometryEditorModel = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), events = events.asInstanceOf[js.Any], getPixels = js.Any.fromFunction0(getPixels))
     __obj.asInstanceOf[IGeometryEditorModel]
   }
   
-  @scala.inline
-  implicit class IGeometryEditorModelMutableBuilder[Self <: IGeometryEditorModel] (val x: Self) extends AnyVal {
+  extension [Self <: IGeometryEditorModel](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPixels(value: () => js.Array[Double]): Self = StObject.set(x, "getPixels", js.Any.fromFunction0(value))
+    inline def setGetPixels(value: () => js.Array[Double]): Self = StObject.set(x, "getPixels", js.Any.fromFunction0(value))
   }
 }

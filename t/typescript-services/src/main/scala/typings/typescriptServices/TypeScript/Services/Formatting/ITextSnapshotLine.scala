@@ -28,8 +28,7 @@ trait ITextSnapshotLine extends StObject {
 }
 object ITextSnapshotLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: () => SnapshotPoint,
     endIncludingLineBreak: () => SnapshotPoint,
     endIncludingLineBreakPosition: () => Double,
@@ -45,37 +44,26 @@ object ITextSnapshotLine {
     __obj.asInstanceOf[ITextSnapshotLine]
   }
   
-  @scala.inline
-  implicit class ITextSnapshotLineMutableBuilder[Self <: ITextSnapshotLine] (val x: Self) extends AnyVal {
+  extension [Self <: ITextSnapshotLine](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => SnapshotPoint): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => SnapshotPoint): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndIncludingLineBreak(value: () => SnapshotPoint): Self = StObject.set(x, "endIncludingLineBreak", js.Any.fromFunction0(value))
+    inline def setEndIncludingLineBreak(value: () => SnapshotPoint): Self = StObject.set(x, "endIncludingLineBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndIncludingLineBreakPosition(value: () => Double): Self = StObject.set(x, "endIncludingLineBreakPosition", js.Any.fromFunction0(value))
+    inline def setEndIncludingLineBreakPosition(value: () => Double): Self = StObject.set(x, "endIncludingLineBreakPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndPosition(value: () => Double): Self = StObject.set(x, "endPosition", js.Any.fromFunction0(value))
+    inline def setEndPosition(value: () => Double): Self = StObject.set(x, "endPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineNumber(value: () => Double): Self = StObject.set(x, "lineNumber", js.Any.fromFunction0(value))
+    inline def setLineNumber(value: () => Double): Self = StObject.set(x, "lineNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSnapshot(value: () => ITextSnapshot): Self = StObject.set(x, "snapshot", js.Any.fromFunction0(value))
+    inline def setSnapshot(value: () => ITextSnapshot): Self = StObject.set(x, "snapshot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => SnapshotPoint): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => SnapshotPoint): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartPosition(value: () => Double): Self = StObject.set(x, "startPosition", js.Any.fromFunction0(value))
+    inline def setStartPosition(value: () => Double): Self = StObject.set(x, "startPosition", js.Any.fromFunction0(value))
   }
 }

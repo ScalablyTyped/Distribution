@@ -73,76 +73,54 @@ object keytipLayerTypesMod {
   }
   object IKeytipLayerProps {
     
-    @scala.inline
-    def apply(content: String): IKeytipLayerProps = {
+    inline def apply(content: String): IKeytipLayerProps = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeytipLayerProps]
     }
     
-    @scala.inline
-    implicit class IKeytipLayerPropsMutableBuilder[Self <: IKeytipLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IKeytipLayerProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IKeytipLayer]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IKeytipLayer]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IKeytipLayer | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IKeytipLayer | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipExitSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipExitSequences", value.asInstanceOf[js.Any])
+      inline def setKeytipExitSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipExitSequences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipExitSequencesUndefined: Self = StObject.set(x, "keytipExitSequences", js.undefined)
+      inline def setKeytipExitSequencesUndefined: Self = StObject.set(x, "keytipExitSequences", js.undefined)
       
-      @scala.inline
-      def setKeytipExitSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipExitSequences", js.Array(value :_*))
+      inline def setKeytipExitSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipExitSequences", js.Array(value :_*))
       
-      @scala.inline
-      def setKeytipReturnSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipReturnSequences", value.asInstanceOf[js.Any])
+      inline def setKeytipReturnSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipReturnSequences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipReturnSequencesUndefined: Self = StObject.set(x, "keytipReturnSequences", js.undefined)
+      inline def setKeytipReturnSequencesUndefined: Self = StObject.set(x, "keytipReturnSequences", js.undefined)
       
-      @scala.inline
-      def setKeytipReturnSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipReturnSequences", js.Array(value :_*))
+      inline def setKeytipReturnSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipReturnSequences", js.Array(value :_*))
       
-      @scala.inline
-      def setKeytipStartSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipStartSequences", value.asInstanceOf[js.Any])
+      inline def setKeytipStartSequences(value: js.Array[IKeytipTransitionKey]): Self = StObject.set(x, "keytipStartSequences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipStartSequencesUndefined: Self = StObject.set(x, "keytipStartSequences", js.undefined)
+      inline def setKeytipStartSequencesUndefined: Self = StObject.set(x, "keytipStartSequences", js.undefined)
       
-      @scala.inline
-      def setKeytipStartSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipStartSequences", js.Array(value :_*))
+      inline def setKeytipStartSequencesVarargs(value: IKeytipTransitionKey*): Self = StObject.set(x, "keytipStartSequences", js.Array(value :_*))
       
-      @scala.inline
-      def setOnEnterKeytipMode(value: () => Unit): Self = StObject.set(x, "onEnterKeytipMode", js.Any.fromFunction0(value))
+      inline def setOnEnterKeytipMode(value: () => Unit): Self = StObject.set(x, "onEnterKeytipMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnEnterKeytipModeUndefined: Self = StObject.set(x, "onEnterKeytipMode", js.undefined)
+      inline def setOnEnterKeytipModeUndefined: Self = StObject.set(x, "onEnterKeytipMode", js.undefined)
       
-      @scala.inline
-      def setOnExitKeytipMode(
+      inline def setOnExitKeytipMode(
         value: /* ev */ js.UndefOr[KeyboardEvent[HTMLElement] | (MouseEvent[HTMLElement, NativeMouseEvent])] => Unit
       ): Self = StObject.set(x, "onExitKeytipMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExitKeytipModeUndefined: Self = StObject.set(x, "onExitKeytipMode", js.undefined)
+      inline def setOnExitKeytipModeUndefined: Self = StObject.set(x, "onExitKeytipMode", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IKeytipLayerStyleProps, IKeytipLayerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IKeytipLayerStyleProps, IKeytipLayerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IKeytipLayerStyleProps => DeepPartial[IKeytipLayerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IKeytipLayerStyleProps => DeepPartial[IKeytipLayerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -154,23 +132,18 @@ object keytipLayerTypesMod {
   }
   object IKeytipLayerStyles {
     
-    @scala.inline
-    def apply(): IKeytipLayerStyles = {
+    inline def apply(): IKeytipLayerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IKeytipLayerStyles]
     }
     
-    @scala.inline
-    implicit class IKeytipLayerStylesMutableBuilder[Self <: IKeytipLayerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IKeytipLayerStyles](x: Self) {
       
-      @scala.inline
-      def setInnerContent(value: IStyle): Self = StObject.set(x, "innerContent", value.asInstanceOf[js.Any])
+      inline def setInnerContent(value: IStyle): Self = StObject.set(x, "innerContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContentNull: Self = StObject.set(x, "innerContent", null)
+      inline def setInnerContentNull: Self = StObject.set(x, "innerContent", null)
       
-      @scala.inline
-      def setInnerContentUndefined: Self = StObject.set(x, "innerContent", js.undefined)
+      inline def setInnerContentUndefined: Self = StObject.set(x, "innerContent", js.undefined)
     }
   }
 }

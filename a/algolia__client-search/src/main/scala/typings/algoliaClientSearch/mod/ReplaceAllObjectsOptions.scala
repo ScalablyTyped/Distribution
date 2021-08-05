@@ -15,19 +15,15 @@ trait ReplaceAllObjectsOptions extends StObject {
 }
 object ReplaceAllObjectsOptions {
   
-  @scala.inline
-  def apply(): ReplaceAllObjectsOptions = {
+  inline def apply(): ReplaceAllObjectsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceAllObjectsOptions]
   }
   
-  @scala.inline
-  implicit class ReplaceAllObjectsOptionsMutableBuilder[Self <: ReplaceAllObjectsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAllObjectsOptions](x: Self) {
     
-    @scala.inline
-    def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+    inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+    inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
   }
 }

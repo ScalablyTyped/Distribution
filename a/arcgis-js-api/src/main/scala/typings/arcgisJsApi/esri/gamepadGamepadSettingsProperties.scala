@@ -40,37 +40,27 @@ trait gamepadGamepadSettingsProperties extends StObject {
 }
 object gamepadGamepadSettingsProperties {
   
-  @scala.inline
-  def apply(): gamepadGamepadSettingsProperties = {
+  inline def apply(): gamepadGamepadSettingsProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[gamepadGamepadSettingsProperties]
   }
   
-  @scala.inline
-  implicit class gamepadGamepadSettingsPropertiesMutableBuilder[Self <: gamepadGamepadSettingsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: gamepadGamepadSettingsProperties](x: Self) {
     
-    @scala.inline
-    def setDevice(value: GamepadInputDeviceProperties): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: GamepadInputDeviceProperties): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMode(value: pan | zoom): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: pan | zoom): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setTiltDirection(value: `forward-down` | `forward-up`): Self = StObject.set(x, "tiltDirection", value.asInstanceOf[js.Any])
+    inline def setTiltDirection(value: `forward-down` | `forward-up`): Self = StObject.set(x, "tiltDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltDirectionUndefined: Self = StObject.set(x, "tiltDirection", js.undefined)
+    inline def setTiltDirectionUndefined: Self = StObject.set(x, "tiltDirection", js.undefined)
   }
 }

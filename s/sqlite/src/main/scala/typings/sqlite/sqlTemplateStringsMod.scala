@@ -10,11 +10,9 @@ object sqlTemplateStringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
+  inline def default(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
   
-  @scala.inline
-  def SQL(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
+  inline def SQL(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
   
   @JSImport("sql-template-strings", "SQLStatement")
   @js.native
@@ -64,7 +62,7 @@ object sqlTemplateStringsMod {
       */
     var sql: String = js.native
     
-    var strings: js.Array[String] = js.native
+    /* private */ var strings: js.Array[String] = js.native
     
     /**
       * The SQL Statement for [node-postgres](https://www.npmjs.com/package/pg)

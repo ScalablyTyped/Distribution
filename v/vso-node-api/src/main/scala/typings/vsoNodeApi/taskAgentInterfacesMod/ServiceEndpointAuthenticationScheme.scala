@@ -17,8 +17,7 @@ trait ServiceEndpointAuthenticationScheme extends StObject {
 }
 object ServiceEndpointAuthenticationScheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizationHeaders: js.Array[AuthorizationHeader],
     displayName: String,
     inputDescriptors: js.Array[InputDescriptor],
@@ -28,25 +27,18 @@ object ServiceEndpointAuthenticationScheme {
     __obj.asInstanceOf[ServiceEndpointAuthenticationScheme]
   }
   
-  @scala.inline
-  implicit class ServiceEndpointAuthenticationSchemeMutableBuilder[Self <: ServiceEndpointAuthenticationScheme] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEndpointAuthenticationScheme](x: Self) {
     
-    @scala.inline
-    def setAuthorizationHeaders(value: js.Array[AuthorizationHeader]): Self = StObject.set(x, "authorizationHeaders", value.asInstanceOf[js.Any])
+    inline def setAuthorizationHeaders(value: js.Array[AuthorizationHeader]): Self = StObject.set(x, "authorizationHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationHeadersVarargs(value: AuthorizationHeader*): Self = StObject.set(x, "authorizationHeaders", js.Array(value :_*))
+    inline def setAuthorizationHeadersVarargs(value: AuthorizationHeader*): Self = StObject.set(x, "authorizationHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
+    inline def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
+    inline def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

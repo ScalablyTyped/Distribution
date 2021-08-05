@@ -28,8 +28,7 @@ trait StaveLine extends StObject {
 }
 object StaveLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyFontStyle: () => Unit,
     applyLineStyle: () => Unit,
     draw: () => StaveLine,
@@ -82,31 +81,22 @@ object StaveLine {
          with TextVerticalPosition
   }
   
-  @scala.inline
-  implicit class StaveLineMutableBuilder[Self <: StaveLine] (val x: Self) extends AnyVal {
+  extension [Self <: StaveLine](x: Self) {
     
-    @scala.inline
-    def setApplyFontStyle(value: () => Unit): Self = StObject.set(x, "applyFontStyle", js.Any.fromFunction0(value))
+    inline def setApplyFontStyle(value: () => Unit): Self = StObject.set(x, "applyFontStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyLineStyle(value: () => Unit): Self = StObject.set(x, "applyLineStyle", js.Any.fromFunction0(value))
+    inline def setApplyLineStyle(value: () => Unit): Self = StObject.set(x, "applyLineStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDraw(value: () => StaveLine): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => StaveLine): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender_options(value: Arrowheadangle): Self = StObject.set(x, "render_options", value.asInstanceOf[js.Any])
+    inline def setRender_options(value: Arrowheadangle): Self = StObject.set(x, "render_options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetContext(value: js.Object => StaveLine): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: js.Object => StaveLine): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFont(value: Family => StaveLine): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
+    inline def setSetFont(value: Family => StaveLine): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNotes(value: Lastnote => StaveLine): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
+    inline def setSetNotes(value: Lastnote => StaveLine): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => StaveLine): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => StaveLine): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

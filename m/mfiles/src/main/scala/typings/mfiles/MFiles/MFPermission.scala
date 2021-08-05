@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFPermission extends StObject
 object MFPermission {
   
-  @scala.inline
-  def Allow: `1` = 1.asInstanceOf[`1`]
+  inline def Allow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Deny: `0` = 0.asInstanceOf[`0`]
+  inline def Deny: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def NotSet: `2` = 2.asInstanceOf[`2`]
+  inline def NotSet: `2` = 2.asInstanceOf[`2`]
 }

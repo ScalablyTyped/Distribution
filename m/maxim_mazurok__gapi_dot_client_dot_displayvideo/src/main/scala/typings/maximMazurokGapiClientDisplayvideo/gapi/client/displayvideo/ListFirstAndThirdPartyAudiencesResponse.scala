@@ -17,28 +17,21 @@ trait ListFirstAndThirdPartyAudiencesResponse extends StObject {
 }
 object ListFirstAndThirdPartyAudiencesResponse {
   
-  @scala.inline
-  def apply(): ListFirstAndThirdPartyAudiencesResponse = {
+  inline def apply(): ListFirstAndThirdPartyAudiencesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFirstAndThirdPartyAudiencesResponse]
   }
   
-  @scala.inline
-  implicit class ListFirstAndThirdPartyAudiencesResponseMutableBuilder[Self <: ListFirstAndThirdPartyAudiencesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFirstAndThirdPartyAudiencesResponse](x: Self) {
     
-    @scala.inline
-    def setFirstAndThirdPartyAudiences(value: js.Array[FirstAndThirdPartyAudience]): Self = StObject.set(x, "firstAndThirdPartyAudiences", value.asInstanceOf[js.Any])
+    inline def setFirstAndThirdPartyAudiences(value: js.Array[FirstAndThirdPartyAudience]): Self = StObject.set(x, "firstAndThirdPartyAudiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstAndThirdPartyAudiencesUndefined: Self = StObject.set(x, "firstAndThirdPartyAudiences", js.undefined)
+    inline def setFirstAndThirdPartyAudiencesUndefined: Self = StObject.set(x, "firstAndThirdPartyAudiences", js.undefined)
     
-    @scala.inline
-    def setFirstAndThirdPartyAudiencesVarargs(value: FirstAndThirdPartyAudience*): Self = StObject.set(x, "firstAndThirdPartyAudiences", js.Array(value :_*))
+    inline def setFirstAndThirdPartyAudiencesVarargs(value: FirstAndThirdPartyAudience*): Self = StObject.set(x, "firstAndThirdPartyAudiences", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

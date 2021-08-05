@@ -44,17 +44,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(acceptsUndefined = false)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setAcceptsUndefined(value: `false`): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
+      inline def setAcceptsUndefined(value: `false`): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,20 +61,16 @@ object anon {
   }
   object AcceptsUndefined {
     
-    @scala.inline
-    def apply(): AcceptsUndefined = {
+    inline def apply(): AcceptsUndefined = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceptsUndefined]
     }
     
-    @scala.inline
-    implicit class AcceptsUndefinedMutableBuilder[Self <: AcceptsUndefined] (val x: Self) extends AnyVal {
+    extension [Self <: AcceptsUndefined](x: Self) {
       
-      @scala.inline
-      def setAcceptsUndefined(value: Boolean): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
+      inline def setAcceptsUndefined(value: Boolean): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptsUndefinedUndefined: Self = StObject.set(x, "acceptsUndefined", js.undefined)
+      inline def setAcceptsUndefinedUndefined: Self = StObject.set(x, "acceptsUndefined", js.undefined)
     }
   }
   
@@ -91,32 +84,24 @@ object anon {
   }
   object Actions {
     
-    @scala.inline
-    def apply[A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */](): Actions[A, V, VS] = {
+    inline def apply[A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */](): Actions[A, V, VS] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Actions[A, V, VS]]
     }
     
-    @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions[?, ?, ?], A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */] (val x: Self & (Actions[A, V, VS])) extends AnyVal {
+    extension [Self <: Actions[?, ?, ?], A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */](x: Self & (Actions[A, V, VS])) {
       
-      @scala.inline
-      def setActions(value: A): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: A): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setState(value: VS): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: VS): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setViews(value: V): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: V): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
   

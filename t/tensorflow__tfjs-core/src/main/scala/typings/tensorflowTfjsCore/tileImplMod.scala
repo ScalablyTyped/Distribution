@@ -14,6 +14,5 @@ object tileImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tile[R /* <: Rank */](xBuf: TensorBuffer[R, DataType], reps: js.Array[Double]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(xBuf.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tile[R /* <: Rank */](xBuf: TensorBuffer[R, DataType], reps: js.Array[Double]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(xBuf.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 }

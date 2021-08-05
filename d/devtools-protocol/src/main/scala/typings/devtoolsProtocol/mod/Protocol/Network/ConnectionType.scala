@@ -20,30 +20,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionType extends StObject
 object ConnectionType {
   
-  @scala.inline
-  def bluetooth: typings.devtoolsProtocol.devtoolsProtocolStrings.bluetooth = "bluetooth".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.bluetooth]
+  inline def bluetooth: typings.devtoolsProtocol.devtoolsProtocolStrings.bluetooth = "bluetooth".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.bluetooth]
   
-  @scala.inline
-  def cellular2g: typings.devtoolsProtocol.devtoolsProtocolStrings.cellular2g = "cellular2g".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cellular2g]
+  inline def cellular2g: typings.devtoolsProtocol.devtoolsProtocolStrings.cellular2g = "cellular2g".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cellular2g]
   
-  @scala.inline
-  def cellular3g: typings.devtoolsProtocol.devtoolsProtocolStrings.cellular3g = "cellular3g".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cellular3g]
+  inline def cellular3g: typings.devtoolsProtocol.devtoolsProtocolStrings.cellular3g = "cellular3g".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cellular3g]
   
-  @scala.inline
-  def cellular4g: typings.devtoolsProtocol.devtoolsProtocolStrings.cellular4g = "cellular4g".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cellular4g]
+  inline def cellular4g: typings.devtoolsProtocol.devtoolsProtocolStrings.cellular4g = "cellular4g".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cellular4g]
   
-  @scala.inline
-  def ethernet: typings.devtoolsProtocol.devtoolsProtocolStrings.ethernet = "ethernet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ethernet]
+  inline def ethernet: typings.devtoolsProtocol.devtoolsProtocolStrings.ethernet = "ethernet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ethernet]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def other: other_ = "other".asInstanceOf[other_]
+  inline def other: other_ = "other".asInstanceOf[other_]
   
-  @scala.inline
-  def wifi: typings.devtoolsProtocol.devtoolsProtocolStrings.wifi = "wifi".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wifi]
+  inline def wifi: typings.devtoolsProtocol.devtoolsProtocolStrings.wifi = "wifi".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wifi]
   
-  @scala.inline
-  def wimax: typings.devtoolsProtocol.devtoolsProtocolStrings.wimax = "wimax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wimax]
+  inline def wimax: typings.devtoolsProtocol.devtoolsProtocolStrings.wimax = "wimax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wimax]
 }

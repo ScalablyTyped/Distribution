@@ -11,6 +11,5 @@ object concatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](streams: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(streams.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+  inline def default[T](streams: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(streams.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
 }

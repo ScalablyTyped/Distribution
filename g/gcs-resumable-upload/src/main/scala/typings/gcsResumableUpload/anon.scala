@@ -12,23 +12,18 @@ object anon {
   }
   object Scopes {
     
-    @scala.inline
-    def apply(): Scopes = {
+    inline def apply(): Scopes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Scopes]
     }
     
-    @scala.inline
-    implicit class ScopesMutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
+    extension [Self <: Scopes](x: Self) {
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
 }

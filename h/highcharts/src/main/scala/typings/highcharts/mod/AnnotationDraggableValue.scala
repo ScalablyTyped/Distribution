@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnnotationDraggableValue extends StObject
 object AnnotationDraggableValue {
   
-  @scala.inline
-  def _empty: typings.highcharts.highchartsStrings._empty = "".asInstanceOf[typings.highcharts.highchartsStrings._empty]
+  inline def _empty: typings.highcharts.highchartsStrings._empty = "".asInstanceOf[typings.highcharts.highchartsStrings._empty]
   
-  @scala.inline
-  def x: typings.highcharts.highchartsStrings.x = "x".asInstanceOf[typings.highcharts.highchartsStrings.x]
+  inline def x: typings.highcharts.highchartsStrings.x = "x".asInstanceOf[typings.highcharts.highchartsStrings.x]
   
-  @scala.inline
-  def xy: typings.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typings.highcharts.highchartsStrings.xy]
+  inline def xy: typings.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typings.highcharts.highchartsStrings.xy]
   
-  @scala.inline
-  def y: typings.highcharts.highchartsStrings.y = "y".asInstanceOf[typings.highcharts.highchartsStrings.y]
+  inline def y: typings.highcharts.highchartsStrings.y = "y".asInstanceOf[typings.highcharts.highchartsStrings.y]
 }

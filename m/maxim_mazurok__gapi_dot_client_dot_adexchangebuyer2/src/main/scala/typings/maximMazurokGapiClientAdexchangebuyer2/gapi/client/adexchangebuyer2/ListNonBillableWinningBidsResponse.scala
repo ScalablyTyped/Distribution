@@ -17,28 +17,21 @@ trait ListNonBillableWinningBidsResponse extends StObject {
 }
 object ListNonBillableWinningBidsResponse {
   
-  @scala.inline
-  def apply(): ListNonBillableWinningBidsResponse = {
+  inline def apply(): ListNonBillableWinningBidsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNonBillableWinningBidsResponse]
   }
   
-  @scala.inline
-  implicit class ListNonBillableWinningBidsResponseMutableBuilder[Self <: ListNonBillableWinningBidsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListNonBillableWinningBidsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNonBillableWinningBidStatusRows(value: js.Array[NonBillableWinningBidStatusRow]): Self = StObject.set(x, "nonBillableWinningBidStatusRows", value.asInstanceOf[js.Any])
+    inline def setNonBillableWinningBidStatusRows(value: js.Array[NonBillableWinningBidStatusRow]): Self = StObject.set(x, "nonBillableWinningBidStatusRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonBillableWinningBidStatusRowsUndefined: Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.undefined)
+    inline def setNonBillableWinningBidStatusRowsUndefined: Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.undefined)
     
-    @scala.inline
-    def setNonBillableWinningBidStatusRowsVarargs(value: NonBillableWinningBidStatusRow*): Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.Array(value :_*))
+    inline def setNonBillableWinningBidStatusRowsVarargs(value: NonBillableWinningBidStatusRow*): Self = StObject.set(x, "nonBillableWinningBidStatusRows", js.Array(value :_*))
   }
 }

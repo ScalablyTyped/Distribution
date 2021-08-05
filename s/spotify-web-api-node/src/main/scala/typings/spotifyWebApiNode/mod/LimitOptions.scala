@@ -10,19 +10,15 @@ trait LimitOptions extends StObject {
 }
 object LimitOptions {
   
-  @scala.inline
-  def apply(): LimitOptions = {
+  inline def apply(): LimitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LimitOptions]
   }
   
-  @scala.inline
-  implicit class LimitOptionsMutableBuilder[Self <: LimitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LimitOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

@@ -68,94 +68,65 @@ trait DescribeClusterSnapshotsMessage extends StObject {
 }
 object DescribeClusterSnapshotsMessage {
   
-  @scala.inline
-  def apply(): DescribeClusterSnapshotsMessage = {
+  inline def apply(): DescribeClusterSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClusterSnapshotsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeClusterSnapshotsMessageMutableBuilder[Self <: DescribeClusterSnapshotsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClusterSnapshotsMessage](x: Self) {
     
-    @scala.inline
-    def setClusterExists(value: BooleanOptional): Self = StObject.set(x, "ClusterExists", value.asInstanceOf[js.Any])
+    inline def setClusterExists(value: BooleanOptional): Self = StObject.set(x, "ClusterExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterExistsUndefined: Self = StObject.set(x, "ClusterExists", js.undefined)
+    inline def setClusterExistsUndefined: Self = StObject.set(x, "ClusterExists", js.undefined)
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setOwnerAccount(value: String): Self = StObject.set(x, "OwnerAccount", value.asInstanceOf[js.Any])
+    inline def setOwnerAccount(value: String): Self = StObject.set(x, "OwnerAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccountUndefined: Self = StObject.set(x, "OwnerAccount", js.undefined)
+    inline def setOwnerAccountUndefined: Self = StObject.set(x, "OwnerAccount", js.undefined)
     
-    @scala.inline
-    def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
+    inline def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
     
-    @scala.inline
-    def setSnapshotType(value: String): Self = StObject.set(x, "SnapshotType", value.asInstanceOf[js.Any])
+    inline def setSnapshotType(value: String): Self = StObject.set(x, "SnapshotType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotTypeUndefined: Self = StObject.set(x, "SnapshotType", js.undefined)
+    inline def setSnapshotTypeUndefined: Self = StObject.set(x, "SnapshotType", js.undefined)
     
-    @scala.inline
-    def setSortingEntities(value: SnapshotSortingEntityList): Self = StObject.set(x, "SortingEntities", value.asInstanceOf[js.Any])
+    inline def setSortingEntities(value: SnapshotSortingEntityList): Self = StObject.set(x, "SortingEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingEntitiesUndefined: Self = StObject.set(x, "SortingEntities", js.undefined)
+    inline def setSortingEntitiesUndefined: Self = StObject.set(x, "SortingEntities", js.undefined)
     
-    @scala.inline
-    def setSortingEntitiesVarargs(value: SnapshotSortingEntity*): Self = StObject.set(x, "SortingEntities", js.Array(value :_*))
+    inline def setSortingEntitiesVarargs(value: SnapshotSortingEntity*): Self = StObject.set(x, "SortingEntities", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
+    inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    @scala.inline
-    def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setTagValues(value: TagValueList): Self = StObject.set(x, "TagValues", value.asInstanceOf[js.Any])
+    inline def setTagValues(value: TagValueList): Self = StObject.set(x, "TagValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
+    inline def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
     
-    @scala.inline
-    def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
   }
 }

@@ -16,25 +16,19 @@ trait GeolocationResult extends StObject {
 }
 object GeolocationResult {
   
-  @scala.inline
-  def apply(accuracy: Double, info: String, isConverted: Boolean, position: LngLat): GeolocationResult = {
+  inline def apply(accuracy: Double, info: String, isConverted: Boolean, position: LngLat): GeolocationResult = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationResult]
   }
   
-  @scala.inline
-  implicit class GeolocationResultMutableBuilder[Self <: GeolocationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationResult](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConverted(value: Boolean): Self = StObject.set(x, "isConverted", value.asInstanceOf[js.Any])
+    inline def setIsConverted(value: Boolean): Self = StObject.set(x, "isConverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

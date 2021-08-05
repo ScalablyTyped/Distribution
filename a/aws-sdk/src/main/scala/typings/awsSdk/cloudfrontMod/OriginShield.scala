@@ -18,22 +18,17 @@ trait OriginShield extends StObject {
 }
 object OriginShield {
   
-  @scala.inline
-  def apply(Enabled: Boolean): OriginShield = {
+  inline def apply(Enabled: Boolean): OriginShield = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginShield]
   }
   
-  @scala.inline
-  implicit class OriginShieldMutableBuilder[Self <: OriginShield] (val x: Self) extends AnyVal {
+  extension [Self <: OriginShield](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginShieldRegion(value: OriginShieldRegion): Self = StObject.set(x, "OriginShieldRegion", value.asInstanceOf[js.Any])
+    inline def setOriginShieldRegion(value: OriginShieldRegion): Self = StObject.set(x, "OriginShieldRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginShieldRegionUndefined: Self = StObject.set(x, "OriginShieldRegion", js.undefined)
+    inline def setOriginShieldRegionUndefined: Self = StObject.set(x, "OriginShieldRegion", js.undefined)
   }
 }

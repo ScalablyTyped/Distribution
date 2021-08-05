@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait asymmetricKeyObjectTypes extends StObject
 object asymmetricKeyObjectTypes {
   
-  @scala.inline
-  def `private`: typings.jose.joseStrings.`private` = "private".asInstanceOf[typings.jose.joseStrings.`private`]
+  inline def `private`: typings.jose.joseStrings.`private` = "private".asInstanceOf[typings.jose.joseStrings.`private`]
   
-  @scala.inline
-  def public: typings.jose.joseStrings.public = "public".asInstanceOf[typings.jose.joseStrings.public]
+  inline def public: typings.jose.joseStrings.public = "public".asInstanceOf[typings.jose.joseStrings.public]
 }

@@ -12,22 +12,17 @@ trait Interface extends StObject {
 }
 object Interface {
   
-  @scala.inline
-  def apply(Socket: String, Types: js.Array[PluginInterfaceType]): Interface = {
+  inline def apply(Socket: String, Types: js.Array[PluginInterfaceType]): Interface = {
     val __obj = js.Dynamic.literal(Socket = Socket.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
     __obj.asInstanceOf[Interface]
   }
   
-  @scala.inline
-  implicit class InterfaceMutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
+  extension [Self <: Interface](x: Self) {
     
-    @scala.inline
-    def setSocket(value: String): Self = StObject.set(x, "Socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: String): Self = StObject.set(x, "Socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[PluginInterfaceType]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[PluginInterfaceType]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: PluginInterfaceType*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesVarargs(value: PluginInterfaceType*): Self = StObject.set(x, "Types", js.Array(value :_*))
   }
 }

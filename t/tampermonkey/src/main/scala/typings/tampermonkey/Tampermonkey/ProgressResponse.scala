@@ -10,8 +10,7 @@ trait ProgressResponse[TContext]
      with ProgressResponseBase
 object ProgressResponse {
   
-  @scala.inline
-  def apply[TContext](
+  inline def apply[TContext](
     context: TContext,
     done: Double,
     finalUrl: String,

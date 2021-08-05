@@ -10,19 +10,15 @@ trait MoveOptions extends StObject {
 }
 object MoveOptions {
   
-  @scala.inline
-  def apply(): MoveOptions = {
+  inline def apply(): MoveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveOptions]
   }
   
-  @scala.inline
-  implicit class MoveOptionsMutableBuilder[Self <: MoveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveOptions](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

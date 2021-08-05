@@ -13,16 +13,13 @@ trait GetEndpointAttributesInput extends StObject {
 }
 object GetEndpointAttributesInput {
   
-  @scala.inline
-  def apply(EndpointArn: String): GetEndpointAttributesInput = {
+  inline def apply(EndpointArn: String): GetEndpointAttributesInput = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEndpointAttributesInput]
   }
   
-  @scala.inline
-  implicit class GetEndpointAttributesInputMutableBuilder[Self <: GetEndpointAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetEndpointAttributesInput](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

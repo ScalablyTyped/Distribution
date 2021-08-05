@@ -29,19 +29,16 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     timeEntry: (/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], /* nameOrOption */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => js.Any
   ): JQuery = {
     val __obj = js.Dynamic.literal(timeEntry = js.Any.fromFunction3(timeEntry))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setTimeEntry(
+    inline def setTimeEntry(
       value: (/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], /* nameOrOption */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "timeEntry", js.Any.fromFunction3(value))
   }

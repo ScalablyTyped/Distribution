@@ -46,8 +46,7 @@ trait ASPxClientReminderAlertNotification extends StObject {
 }
 object ASPxClientReminderAlertNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAppointment: () => ASPxClientAppointment,
     GetReminder: () => ASPxClientReminder,
     GetReminderId: () => String,
@@ -60,28 +59,20 @@ object ASPxClientReminderAlertNotification {
     __obj.asInstanceOf[ASPxClientReminderAlertNotification]
   }
   
-  @scala.inline
-  implicit class ASPxClientReminderAlertNotificationMutableBuilder[Self <: ASPxClientReminderAlertNotification] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReminderAlertNotification](x: Self) {
     
-    @scala.inline
-    def setAppointment(value: ASPxClientAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    inline def setAppointment(value: ASPxClientAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
+    inline def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReminder(value: () => ASPxClientReminder): Self = StObject.set(x, "GetReminder", js.Any.fromFunction0(value))
+    inline def setGetReminder(value: () => ASPxClientReminder): Self = StObject.set(x, "GetReminder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReminderId(value: () => String): Self = StObject.set(x, "GetReminderId", js.Any.fromFunction0(value))
+    inline def setGetReminderId(value: () => String): Self = StObject.set(x, "GetReminderId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminder(value: ASPxClientReminder): Self = StObject.set(x, "reminder", value.asInstanceOf[js.Any])
+    inline def setReminder(value: ASPxClientReminder): Self = StObject.set(x, "reminder", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait RegistryId extends StObject {
 }
 object RegistryId {
   
-  @scala.inline
-  def apply(): RegistryId = {
+  inline def apply(): RegistryId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegistryId]
   }
   
-  @scala.inline
-  implicit class RegistryIdMutableBuilder[Self <: RegistryId] (val x: Self) extends AnyVal {
+  extension [Self <: RegistryId](x: Self) {
     
-    @scala.inline
-    def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
+    inline def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
+    inline def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nlLanginfoMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/strings/nl_langinfo", JSImport.Namespace)
   @js.native

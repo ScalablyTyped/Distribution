@@ -17,20 +17,16 @@ trait IdNode
 }
 object IdNode {
   
-  @scala.inline
-  def apply(name: String): IdNode = {
+  inline def apply(name: String): IdNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("id")
     __obj.asInstanceOf[IdNode]
   }
   
-  @scala.inline
-  implicit class IdNodeMutableBuilder[Self <: IdNode] (val x: Self) extends AnyVal {
+  extension [Self <: IdNode](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: id): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: id): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

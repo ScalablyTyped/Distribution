@@ -21,13 +21,11 @@ object LayoutModeType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutModeType.Headline")
   @js.native
   def Headline: LayoutModeType = js.native
-  @scala.inline
-  def Headline_=(x: LayoutModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Headline")(x.asInstanceOf[js.Any])
+  inline def Headline_=(x: LayoutModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Headline")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutModeType.Sidebar")
   @js.native
   def Sidebar: LayoutModeType = js.native
-  @scala.inline
-  def Sidebar_=(x: LayoutModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sidebar")(x.asInstanceOf[js.Any])
+  inline def Sidebar_=(x: LayoutModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sidebar")(x.asInstanceOf[js.Any])
 }

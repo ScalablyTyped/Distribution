@@ -13,16 +13,13 @@ trait DeregisterInstanceRequest extends StObject {
 }
 object DeregisterInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: String): DeregisterInstanceRequest = {
+  inline def apply(InstanceId: String): DeregisterInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterInstanceRequestMutableBuilder[Self <: DeregisterInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

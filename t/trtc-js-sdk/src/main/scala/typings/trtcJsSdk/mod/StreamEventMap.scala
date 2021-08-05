@@ -15,21 +15,17 @@ trait StreamEventMap extends StObject {
 }
 object StreamEventMap {
   
-  @scala.inline
-  def apply(`player-state-changed`: State, `screen-sharing-stopped`: Unit): StreamEventMap = {
+  inline def apply(`player-state-changed`: State, `screen-sharing-stopped`: Unit): StreamEventMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("player-state-changed")(`player-state-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("screen-sharing-stopped")(`screen-sharing-stopped`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamEventMap]
   }
   
-  @scala.inline
-  implicit class StreamEventMapMutableBuilder[Self <: StreamEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: StreamEventMap](x: Self) {
     
-    @scala.inline
-    def `setPlayer-state-changed`(value: State): Self = StObject.set(x, "player-state-changed", value.asInstanceOf[js.Any])
+    inline def `setPlayer-state-changed`(value: State): Self = StObject.set(x, "player-state-changed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScreen-sharing-stopped`(value: Unit): Self = StObject.set(x, "screen-sharing-stopped", value.asInstanceOf[js.Any])
+    inline def `setScreen-sharing-stopped`(value: Unit): Self = StObject.set(x, "screen-sharing-stopped", value.asInstanceOf[js.Any])
   }
 }

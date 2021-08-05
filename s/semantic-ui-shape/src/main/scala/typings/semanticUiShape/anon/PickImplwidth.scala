@@ -13,16 +13,13 @@ trait PickImplwidth extends StObject {
 }
 object PickImplwidth {
   
-  @scala.inline
-  def apply(width: next | initial | Double): PickImplwidth = {
+  inline def apply(width: next | initial | Double): PickImplwidth = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplwidth]
   }
   
-  @scala.inline
-  implicit class PickImplwidthMutableBuilder[Self <: PickImplwidth] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplwidth](x: Self) {
     
-    @scala.inline
-    def setWidth(value: next | initial | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: next | initial | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

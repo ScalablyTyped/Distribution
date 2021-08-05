@@ -26,20 +26,16 @@ object typesDescribeStreamSummaryOutputMod {
   }
   object DescribeStreamSummaryOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, StreamDescriptionSummary: UnmarshalledStreamDescriptionSummary): DescribeStreamSummaryOutput = {
+    inline def apply($metadata: ResponseMetadata, StreamDescriptionSummary: UnmarshalledStreamDescriptionSummary): DescribeStreamSummaryOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], StreamDescriptionSummary = StreamDescriptionSummary.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeStreamSummaryOutput]
     }
     
-    @scala.inline
-    implicit class DescribeStreamSummaryOutputMutableBuilder[Self <: DescribeStreamSummaryOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeStreamSummaryOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamDescriptionSummary(value: UnmarshalledStreamDescriptionSummary): Self = StObject.set(x, "StreamDescriptionSummary", value.asInstanceOf[js.Any])
+      inline def setStreamDescriptionSummary(value: UnmarshalledStreamDescriptionSummary): Self = StObject.set(x, "StreamDescriptionSummary", value.asInstanceOf[js.Any])
     }
   }
 }

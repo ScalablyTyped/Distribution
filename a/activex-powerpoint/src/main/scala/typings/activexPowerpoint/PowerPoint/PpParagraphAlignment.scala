@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpParagraphAlignment extends StObject
 object PpParagraphAlignment {
   
-  @scala.inline
-  def ppAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def ppAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppAlignDistribute: `5` = 5.asInstanceOf[`5`]
+  inline def ppAlignDistribute: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppAlignJustify: `4` = 4.asInstanceOf[`4`]
+  inline def ppAlignJustify: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppAlignJustifyLow: `7` = 7.asInstanceOf[`7`]
+  inline def ppAlignJustifyLow: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ppAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def ppAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppAlignRight: `3` = 3.asInstanceOf[`3`]
+  inline def ppAlignRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppAlignThaiDistribute: `6` = 6.asInstanceOf[`6`]
+  inline def ppAlignThaiDistribute: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppAlignmentMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppAlignmentMixed: `-2` = -2.asInstanceOf[`-2`]
 }

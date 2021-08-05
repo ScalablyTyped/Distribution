@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object generatorMod {
   
-  @scala.inline
-  def apply(x0: Double, y0: Double, x1: Double, y1: Double): Generator[Point, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Generator[Point, js.Any, js.Any]]
+  inline def apply(x0: Double, y0: Double, x1: Double, y1: Double): Generator[Point, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Generator[Point, js.Any, js.Any]]
   
   @JSImport("bresenham/generator", JSImport.Namespace)
   @js.native
@@ -22,20 +21,16 @@ object generatorMod {
   }
   object Point {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point = {
+    inline def apply(x: Double, y: Double): Point = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

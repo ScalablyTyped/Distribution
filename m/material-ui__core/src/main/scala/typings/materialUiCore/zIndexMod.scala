@@ -27,8 +27,7 @@ object zIndexMod extends Shortcut {
   }
   object ZIndex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appBar: Double,
       drawer: Double,
       mobileStepper: Double,
@@ -40,26 +39,19 @@ object zIndexMod extends Shortcut {
       __obj.asInstanceOf[ZIndex]
     }
     
-    @scala.inline
-    implicit class ZIndexMutableBuilder[Self <: ZIndex] (val x: Self) extends AnyVal {
+    extension [Self <: ZIndex](x: Self) {
       
-      @scala.inline
-      def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
+      inline def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawer(value: Double): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
+      inline def setDrawer(value: Double): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileStepper(value: Double): Self = StObject.set(x, "mobileStepper", value.asInstanceOf[js.Any])
+      inline def setMobileStepper(value: Double): Self = StObject.set(x, "mobileStepper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModal(value: Double): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: Double): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnackbar(value: Double): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
+      inline def setSnackbar(value: Double): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltip(value: Double): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Double): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,50 +72,36 @@ object zIndexMod extends Shortcut {
   }
   object ZIndexOptions {
     
-    @scala.inline
-    def apply(): ZIndexOptions = {
+    inline def apply(): ZIndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZIndexOptions]
     }
     
-    @scala.inline
-    implicit class ZIndexOptionsMutableBuilder[Self <: ZIndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ZIndexOptions](x: Self) {
       
-      @scala.inline
-      def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
+      inline def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppBarUndefined: Self = StObject.set(x, "appBar", js.undefined)
+      inline def setAppBarUndefined: Self = StObject.set(x, "appBar", js.undefined)
       
-      @scala.inline
-      def setDrawer(value: Double): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
+      inline def setDrawer(value: Double): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerUndefined: Self = StObject.set(x, "drawer", js.undefined)
+      inline def setDrawerUndefined: Self = StObject.set(x, "drawer", js.undefined)
       
-      @scala.inline
-      def setMobileStepper(value: Double): Self = StObject.set(x, "mobileStepper", value.asInstanceOf[js.Any])
+      inline def setMobileStepper(value: Double): Self = StObject.set(x, "mobileStepper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileStepperUndefined: Self = StObject.set(x, "mobileStepper", js.undefined)
+      inline def setMobileStepperUndefined: Self = StObject.set(x, "mobileStepper", js.undefined)
       
-      @scala.inline
-      def setModal(value: Double): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: Double): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      @scala.inline
-      def setSnackbar(value: Double): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
+      inline def setSnackbar(value: Double): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnackbarUndefined: Self = StObject.set(x, "snackbar", js.undefined)
+      inline def setSnackbarUndefined: Self = StObject.set(x, "snackbar", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Double): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Double): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   

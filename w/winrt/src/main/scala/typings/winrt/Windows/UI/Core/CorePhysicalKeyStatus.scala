@@ -20,8 +20,7 @@ trait CorePhysicalKeyStatus extends StObject {
 }
 object CorePhysicalKeyStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isExtendedKey: Boolean,
     isKeyReleased: Boolean,
     isMenuKeyDown: Boolean,
@@ -33,25 +32,18 @@ object CorePhysicalKeyStatus {
     __obj.asInstanceOf[CorePhysicalKeyStatus]
   }
   
-  @scala.inline
-  implicit class CorePhysicalKeyStatusMutableBuilder[Self <: CorePhysicalKeyStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CorePhysicalKeyStatus](x: Self) {
     
-    @scala.inline
-    def setIsExtendedKey(value: Boolean): Self = StObject.set(x, "isExtendedKey", value.asInstanceOf[js.Any])
+    inline def setIsExtendedKey(value: Boolean): Self = StObject.set(x, "isExtendedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKeyReleased(value: Boolean): Self = StObject.set(x, "isKeyReleased", value.asInstanceOf[js.Any])
+    inline def setIsKeyReleased(value: Boolean): Self = StObject.set(x, "isKeyReleased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMenuKeyDown(value: Boolean): Self = StObject.set(x, "isMenuKeyDown", value.asInstanceOf[js.Any])
+    inline def setIsMenuKeyDown(value: Boolean): Self = StObject.set(x, "isMenuKeyDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatCount(value: Double): Self = StObject.set(x, "repeatCount", value.asInstanceOf[js.Any])
+    inline def setRepeatCount(value: Double): Self = StObject.set(x, "repeatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanCode(value: Double): Self = StObject.set(x, "scanCode", value.asInstanceOf[js.Any])
+    inline def setScanCode(value: Double): Self = StObject.set(x, "scanCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasKeyDown(value: Boolean): Self = StObject.set(x, "wasKeyDown", value.asInstanceOf[js.Any])
+    inline def setWasKeyDown(value: Boolean): Self = StObject.set(x, "wasKeyDown", value.asInstanceOf[js.Any])
   }
 }

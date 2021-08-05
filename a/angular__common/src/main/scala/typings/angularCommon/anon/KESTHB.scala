@@ -22,8 +22,7 @@ trait KESTHB extends StObject {
 }
 object KESTHB {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CDF: js.Array[String],
     JPY: js.Array[String],
     KES: js.Array[String],
@@ -36,49 +35,34 @@ object KESTHB {
     __obj.asInstanceOf[KESTHB]
   }
   
-  @scala.inline
-  implicit class KESTHBMutableBuilder[Self <: KESTHB] (val x: Self) extends AnyVal {
+  extension [Self <: KESTHB](x: Self) {
     
-    @scala.inline
-    def setCDF(value: js.Array[String]): Self = StObject.set(x, "CDF", value.asInstanceOf[js.Any])
+    inline def setCDF(value: js.Array[String]): Self = StObject.set(x, "CDF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCDFVarargs(value: String*): Self = StObject.set(x, "CDF", js.Array(value :_*))
+    inline def setCDFVarargs(value: String*): Self = StObject.set(x, "CDF", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setKES(value: js.Array[String]): Self = StObject.set(x, "KES", value.asInstanceOf[js.Any])
+    inline def setKES(value: js.Array[String]): Self = StObject.set(x, "KES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKESVarargs(value: String*): Self = StObject.set(x, "KES", js.Array(value :_*))
+    inline def setKESVarargs(value: String*): Self = StObject.set(x, "KES", js.Array(value :_*))
     
-    @scala.inline
-    def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
+    inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
     
-    @scala.inline
-    def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
+    inline def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
+    inline def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
     
-    @scala.inline
-    def setTZS(value: js.Array[String]): Self = StObject.set(x, "TZS", value.asInstanceOf[js.Any])
+    inline def setTZS(value: js.Array[String]): Self = StObject.set(x, "TZS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTZSVarargs(value: String*): Self = StObject.set(x, "TZS", js.Array(value :_*))
+    inline def setTZSVarargs(value: String*): Self = StObject.set(x, "TZS", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

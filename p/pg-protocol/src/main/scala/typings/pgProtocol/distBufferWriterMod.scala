@@ -12,7 +12,7 @@ object distBufferWriterMod {
   class Writer () extends StObject {
     def this(size: Double) = this()
     
-    var _ensure: js.Any = js.native
+    /* private */ var _ensure: js.Any = js.native
     
     def add(otherBuffer: Buffer): Writer = js.native
     
@@ -30,22 +30,22 @@ object distBufferWriterMod {
     def addString(): Writer = js.native
     def addString(string: String): Writer = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
     def clear(): Unit = js.native
     
-    val encoding: js.Any = js.native
+    /* private */ val encoding: js.Any = js.native
     
     def flush(): Buffer = js.native
     def flush(code: Double): Buffer = js.native
     
     def getByteLength(): Double = js.native
     
-    var headerPosition: js.Any = js.native
+    /* private */ var headerPosition: js.Any = js.native
     
     def join(): Buffer = js.native
     def join(code: Double): Buffer = js.native
     
-    var offset: js.Any = js.native
+    /* private */ var offset: js.Any = js.native
   }
 }

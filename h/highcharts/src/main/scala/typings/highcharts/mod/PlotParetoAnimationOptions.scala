@@ -10,19 +10,15 @@ trait PlotParetoAnimationOptions extends StObject {
 }
 object PlotParetoAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotParetoAnimationOptions = {
+  inline def apply(): PlotParetoAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotParetoAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotParetoAnimationOptionsMutableBuilder[Self <: PlotParetoAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotParetoAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

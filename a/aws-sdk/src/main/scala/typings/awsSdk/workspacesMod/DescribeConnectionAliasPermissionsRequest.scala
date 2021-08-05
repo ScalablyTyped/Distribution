@@ -23,28 +23,21 @@ trait DescribeConnectionAliasPermissionsRequest extends StObject {
 }
 object DescribeConnectionAliasPermissionsRequest {
   
-  @scala.inline
-  def apply(AliasId: ConnectionAliasId): DescribeConnectionAliasPermissionsRequest = {
+  inline def apply(AliasId: ConnectionAliasId): DescribeConnectionAliasPermissionsRequest = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConnectionAliasPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConnectionAliasPermissionsRequestMutableBuilder[Self <: DescribeConnectionAliasPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectionAliasPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

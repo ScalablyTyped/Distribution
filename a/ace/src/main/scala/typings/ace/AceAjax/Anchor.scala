@@ -43,8 +43,7 @@ trait Anchor extends StObject {
 }
 object Anchor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detach: () => Unit,
     getDocument: () => Document,
     getPosition: () => Position,
@@ -56,25 +55,18 @@ object Anchor {
     __obj.asInstanceOf[Anchor]
   }
   
-  @scala.inline
-  implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+  extension [Self <: Anchor](x: Self) {
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+    inline def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosition(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
+    inline def setSetPosition(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
   }
 }

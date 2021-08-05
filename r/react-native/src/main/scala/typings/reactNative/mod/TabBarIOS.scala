@@ -27,6 +27,5 @@ object TabBarIOS {
   @JSImport("react-native", "TabBarIOS.Item")
   @js.native
   def Item: Instantiable0[TabBarIOSItem] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[TabBarIOSItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[TabBarIOSItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

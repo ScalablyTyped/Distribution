@@ -15,25 +15,19 @@ trait RangePartitioning extends StObject {
 }
 object RangePartitioning {
   
-  @scala.inline
-  def apply(): RangePartitioning = {
+  inline def apply(): RangePartitioning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangePartitioning]
   }
   
-  @scala.inline
-  implicit class RangePartitioningMutableBuilder[Self <: RangePartitioning] (val x: Self) extends AnyVal {
+  extension [Self <: RangePartitioning](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setRange(value: End): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: End): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

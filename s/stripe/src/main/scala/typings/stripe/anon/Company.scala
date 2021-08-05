@@ -12,19 +12,15 @@ trait Company extends StObject {
 }
 object Company {
   
-  @scala.inline
-  def apply(company: Additional, individual: Additional): Company = {
+  inline def apply(company: Additional, individual: Additional): Company = {
     val __obj = js.Dynamic.literal(company = company.asInstanceOf[js.Any], individual = individual.asInstanceOf[js.Any])
     __obj.asInstanceOf[Company]
   }
   
-  @scala.inline
-  implicit class CompanyMutableBuilder[Self <: Company] (val x: Self) extends AnyVal {
+  extension [Self <: Company](x: Self) {
     
-    @scala.inline
-    def setCompany(value: Additional): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: Additional): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividual(value: Additional): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: Additional): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
   }
 }

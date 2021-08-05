@@ -32,31 +32,23 @@ trait SchemaResourceInfo extends StObject {
 }
 object SchemaResourceInfo {
   
-  @scala.inline
-  def apply(): SchemaResourceInfo = {
+  inline def apply(): SchemaResourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceInfo]
   }
   
-  @scala.inline
-  implicit class SchemaResourceInfoMutableBuilder[Self <: SchemaResourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceInfo](x: Self) {
     
-    @scala.inline
-    def setResourceContainer(value: String): Self = StObject.set(x, "resourceContainer", value.asInstanceOf[js.Any])
+    inline def setResourceContainer(value: String): Self = StObject.set(x, "resourceContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceContainerUndefined: Self = StObject.set(x, "resourceContainer", js.undefined)
+    inline def setResourceContainerUndefined: Self = StObject.set(x, "resourceContainer", js.undefined)
     
-    @scala.inline
-    def setResourceLocation(value: String): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
+    inline def setResourceLocation(value: String): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
+    inline def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

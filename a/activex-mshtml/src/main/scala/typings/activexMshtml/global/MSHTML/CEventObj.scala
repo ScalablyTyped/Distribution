@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.CEventObj")
 @js.native
-class CEventObj protected ()
+/* private */ class CEventObj ()
   extends StObject
      with typings.activexMshtml.MSHTML.CEventObj

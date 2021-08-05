@@ -26,20 +26,16 @@ object typesDeleteEventStreamOutputMod {
   }
   object DeleteEventStreamOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): DeleteEventStreamOutput = {
+    inline def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): DeleteEventStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventStream = EventStream.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteEventStreamOutput]
     }
     
-    @scala.inline
-    implicit class DeleteEventStreamOutputMutableBuilder[Self <: DeleteEventStreamOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteEventStreamOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventStream(value: UnmarshalledEventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
+      inline def setEventStream(value: UnmarshalledEventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
     }
   }
 }

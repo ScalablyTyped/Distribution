@@ -33,43 +33,31 @@ trait FederatedUser extends StObject {
 }
 object FederatedUser {
   
-  @scala.inline
-  def apply(): FederatedUser = {
+  inline def apply(): FederatedUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FederatedUser]
   }
   
-  @scala.inline
-  implicit class FederatedUserMutableBuilder[Self <: FederatedUser] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedUser](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: string): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: string): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+    inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
-    @scala.inline
-    def setSessionContext(value: SessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
+    inline def setSessionContext(value: SessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionContextUndefined: Self = StObject.set(x, "sessionContext", js.undefined)
+    inline def setSessionContextUndefined: Self = StObject.set(x, "sessionContext", js.undefined)
   }
 }

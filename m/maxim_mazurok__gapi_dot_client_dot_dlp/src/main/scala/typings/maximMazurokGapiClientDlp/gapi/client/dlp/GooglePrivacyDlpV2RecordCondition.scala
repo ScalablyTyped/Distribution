@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2RecordCondition extends StObject {
 }
 object GooglePrivacyDlpV2RecordCondition {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2RecordCondition = {
+  inline def apply(): GooglePrivacyDlpV2RecordCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2RecordCondition]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RecordConditionMutableBuilder[Self <: GooglePrivacyDlpV2RecordCondition] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2RecordCondition](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: GooglePrivacyDlpV2Expressions): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: GooglePrivacyDlpV2Expressions): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+    inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
   }
 }

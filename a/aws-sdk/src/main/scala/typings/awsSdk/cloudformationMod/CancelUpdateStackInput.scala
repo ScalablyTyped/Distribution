@@ -18,22 +18,17 @@ trait CancelUpdateStackInput extends StObject {
 }
 object CancelUpdateStackInput {
   
-  @scala.inline
-  def apply(StackName: StackName): CancelUpdateStackInput = {
+  inline def apply(StackName: StackName): CancelUpdateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelUpdateStackInput]
   }
   
-  @scala.inline
-  implicit class CancelUpdateStackInputMutableBuilder[Self <: CancelUpdateStackInput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelUpdateStackInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

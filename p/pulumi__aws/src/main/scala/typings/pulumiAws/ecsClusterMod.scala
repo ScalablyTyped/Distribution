@@ -75,21 +75,16 @@ object ecsClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean]
   }
   
   trait ClusterArgs extends StObject {
@@ -125,57 +120,42 @@ object ecsClusterMod {
   }
   object ClusterArgs {
     
-    @scala.inline
-    def apply(): ClusterArgs = {
+    inline def apply(): ClusterArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterArgs]
     }
     
-    @scala.inline
-    implicit class ClusterArgsMutableBuilder[Self <: ClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterArgs](x: Self) {
       
-      @scala.inline
-      def setCapacityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
+      inline def setCapacityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
+      inline def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
       
-      @scala.inline
-      def setCapacityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+      inline def setCapacityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultCapacityProviderStrategies(
+      inline def setDefaultCapacityProviderStrategies(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]]
             ]
       ): Self = StObject.set(x, "defaultCapacityProviderStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCapacityProviderStrategiesUndefined: Self = StObject.set(x, "defaultCapacityProviderStrategies", js.undefined)
+      inline def setDefaultCapacityProviderStrategiesUndefined: Self = StObject.set(x, "defaultCapacityProviderStrategies", js.undefined)
       
-      @scala.inline
-      def setDefaultCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]*): Self = StObject.set(x, "defaultCapacityProviderStrategies", js.Array(value :_*))
+      inline def setDefaultCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]*): Self = StObject.set(x, "defaultCapacityProviderStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -217,63 +197,46 @@ object ecsClusterMod {
   }
   object ClusterState {
     
-    @scala.inline
-    def apply(): ClusterState = {
+    inline def apply(): ClusterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterState]
     }
     
-    @scala.inline
-    implicit class ClusterStateMutableBuilder[Self <: ClusterState] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCapacityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
+      inline def setCapacityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
+      inline def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
       
-      @scala.inline
-      def setCapacityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+      inline def setCapacityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultCapacityProviderStrategies(
+      inline def setDefaultCapacityProviderStrategies(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]]
             ]
       ): Self = StObject.set(x, "defaultCapacityProviderStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCapacityProviderStrategiesUndefined: Self = StObject.set(x, "defaultCapacityProviderStrategies", js.undefined)
+      inline def setDefaultCapacityProviderStrategiesUndefined: Self = StObject.set(x, "defaultCapacityProviderStrategies", js.undefined)
       
-      @scala.inline
-      def setDefaultCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]*): Self = StObject.set(x, "defaultCapacityProviderStrategies", js.Array(value :_*))
+      inline def setDefaultCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]*): Self = StObject.set(x, "defaultCapacityProviderStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

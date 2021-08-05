@@ -12,6 +12,5 @@ object repeatWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def repeatWhen[T](notifier: js.Function1[/* notifications */ Observable[js.Any], Observable[js.Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatWhen")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def repeatWhen[T](notifier: js.Function1[/* notifications */ Observable[js.Any], Observable[js.Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatWhen")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

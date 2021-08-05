@@ -24,28 +24,21 @@ trait ClusterDefaultCapacityProviderStrategy extends StObject {
 }
 object ClusterDefaultCapacityProviderStrategy {
   
-  @scala.inline
-  def apply(capacityProvider: Input[String]): ClusterDefaultCapacityProviderStrategy = {
+  inline def apply(capacityProvider: Input[String]): ClusterDefaultCapacityProviderStrategy = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterDefaultCapacityProviderStrategy]
   }
   
-  @scala.inline
-  implicit class ClusterDefaultCapacityProviderStrategyMutableBuilder[Self <: ClusterDefaultCapacityProviderStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterDefaultCapacityProviderStrategy](x: Self) {
     
-    @scala.inline
-    def setBase(value: Input[Double]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Input[Double]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setCapacityProvider(value: Input[String]): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
+    inline def setCapacityProvider(value: Input[String]): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

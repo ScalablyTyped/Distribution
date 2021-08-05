@@ -99,202 +99,137 @@ trait DeviceInfo extends StObject {
 }
 object DeviceInfo {
   
-  @scala.inline
-  def apply(): DeviceInfo = {
+  inline def apply(): DeviceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceInfo]
   }
   
-  @scala.inline
-  implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInfo](x: Self) {
     
-    @scala.inline
-    def setCaptureDeviceDriver(value: NullableOption[String]): Self = StObject.set(x, "captureDeviceDriver", value.asInstanceOf[js.Any])
+    inline def setCaptureDeviceDriver(value: NullableOption[String]): Self = StObject.set(x, "captureDeviceDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureDeviceDriverNull: Self = StObject.set(x, "captureDeviceDriver", null)
+    inline def setCaptureDeviceDriverNull: Self = StObject.set(x, "captureDeviceDriver", null)
     
-    @scala.inline
-    def setCaptureDeviceDriverUndefined: Self = StObject.set(x, "captureDeviceDriver", js.undefined)
+    inline def setCaptureDeviceDriverUndefined: Self = StObject.set(x, "captureDeviceDriver", js.undefined)
     
-    @scala.inline
-    def setCaptureDeviceName(value: NullableOption[String]): Self = StObject.set(x, "captureDeviceName", value.asInstanceOf[js.Any])
+    inline def setCaptureDeviceName(value: NullableOption[String]): Self = StObject.set(x, "captureDeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureDeviceNameNull: Self = StObject.set(x, "captureDeviceName", null)
+    inline def setCaptureDeviceNameNull: Self = StObject.set(x, "captureDeviceName", null)
     
-    @scala.inline
-    def setCaptureDeviceNameUndefined: Self = StObject.set(x, "captureDeviceName", js.undefined)
+    inline def setCaptureDeviceNameUndefined: Self = StObject.set(x, "captureDeviceName", js.undefined)
     
-    @scala.inline
-    def setCaptureNotFunctioningEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "captureNotFunctioningEventRatio", value.asInstanceOf[js.Any])
+    inline def setCaptureNotFunctioningEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "captureNotFunctioningEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureNotFunctioningEventRatioNull: Self = StObject.set(x, "captureNotFunctioningEventRatio", null)
+    inline def setCaptureNotFunctioningEventRatioNull: Self = StObject.set(x, "captureNotFunctioningEventRatio", null)
     
-    @scala.inline
-    def setCaptureNotFunctioningEventRatioUndefined: Self = StObject.set(x, "captureNotFunctioningEventRatio", js.undefined)
+    inline def setCaptureNotFunctioningEventRatioUndefined: Self = StObject.set(x, "captureNotFunctioningEventRatio", js.undefined)
     
-    @scala.inline
-    def setCpuInsufficentEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "cpuInsufficentEventRatio", value.asInstanceOf[js.Any])
+    inline def setCpuInsufficentEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "cpuInsufficentEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuInsufficentEventRatioNull: Self = StObject.set(x, "cpuInsufficentEventRatio", null)
+    inline def setCpuInsufficentEventRatioNull: Self = StObject.set(x, "cpuInsufficentEventRatio", null)
     
-    @scala.inline
-    def setCpuInsufficentEventRatioUndefined: Self = StObject.set(x, "cpuInsufficentEventRatio", js.undefined)
+    inline def setCpuInsufficentEventRatioUndefined: Self = StObject.set(x, "cpuInsufficentEventRatio", js.undefined)
     
-    @scala.inline
-    def setDeviceClippingEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "deviceClippingEventRatio", value.asInstanceOf[js.Any])
+    inline def setDeviceClippingEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "deviceClippingEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceClippingEventRatioNull: Self = StObject.set(x, "deviceClippingEventRatio", null)
+    inline def setDeviceClippingEventRatioNull: Self = StObject.set(x, "deviceClippingEventRatio", null)
     
-    @scala.inline
-    def setDeviceClippingEventRatioUndefined: Self = StObject.set(x, "deviceClippingEventRatio", js.undefined)
+    inline def setDeviceClippingEventRatioUndefined: Self = StObject.set(x, "deviceClippingEventRatio", js.undefined)
     
-    @scala.inline
-    def setDeviceGlitchEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "deviceGlitchEventRatio", value.asInstanceOf[js.Any])
+    inline def setDeviceGlitchEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "deviceGlitchEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceGlitchEventRatioNull: Self = StObject.set(x, "deviceGlitchEventRatio", null)
+    inline def setDeviceGlitchEventRatioNull: Self = StObject.set(x, "deviceGlitchEventRatio", null)
     
-    @scala.inline
-    def setDeviceGlitchEventRatioUndefined: Self = StObject.set(x, "deviceGlitchEventRatio", js.undefined)
+    inline def setDeviceGlitchEventRatioUndefined: Self = StObject.set(x, "deviceGlitchEventRatio", js.undefined)
     
-    @scala.inline
-    def setHowlingEventCount(value: NullableOption[Double]): Self = StObject.set(x, "howlingEventCount", value.asInstanceOf[js.Any])
+    inline def setHowlingEventCount(value: NullableOption[Double]): Self = StObject.set(x, "howlingEventCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHowlingEventCountNull: Self = StObject.set(x, "howlingEventCount", null)
+    inline def setHowlingEventCountNull: Self = StObject.set(x, "howlingEventCount", null)
     
-    @scala.inline
-    def setHowlingEventCountUndefined: Self = StObject.set(x, "howlingEventCount", js.undefined)
+    inline def setHowlingEventCountUndefined: Self = StObject.set(x, "howlingEventCount", js.undefined)
     
-    @scala.inline
-    def setInitialSignalLevelRootMeanSquare(value: NullableOption[Double]): Self = StObject.set(x, "initialSignalLevelRootMeanSquare", value.asInstanceOf[js.Any])
+    inline def setInitialSignalLevelRootMeanSquare(value: NullableOption[Double]): Self = StObject.set(x, "initialSignalLevelRootMeanSquare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSignalLevelRootMeanSquareNull: Self = StObject.set(x, "initialSignalLevelRootMeanSquare", null)
+    inline def setInitialSignalLevelRootMeanSquareNull: Self = StObject.set(x, "initialSignalLevelRootMeanSquare", null)
     
-    @scala.inline
-    def setInitialSignalLevelRootMeanSquareUndefined: Self = StObject.set(x, "initialSignalLevelRootMeanSquare", js.undefined)
+    inline def setInitialSignalLevelRootMeanSquareUndefined: Self = StObject.set(x, "initialSignalLevelRootMeanSquare", js.undefined)
     
-    @scala.inline
-    def setLowSpeechLevelEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowSpeechLevelEventRatio", value.asInstanceOf[js.Any])
+    inline def setLowSpeechLevelEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowSpeechLevelEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowSpeechLevelEventRatioNull: Self = StObject.set(x, "lowSpeechLevelEventRatio", null)
+    inline def setLowSpeechLevelEventRatioNull: Self = StObject.set(x, "lowSpeechLevelEventRatio", null)
     
-    @scala.inline
-    def setLowSpeechLevelEventRatioUndefined: Self = StObject.set(x, "lowSpeechLevelEventRatio", js.undefined)
+    inline def setLowSpeechLevelEventRatioUndefined: Self = StObject.set(x, "lowSpeechLevelEventRatio", js.undefined)
     
-    @scala.inline
-    def setLowSpeechToNoiseEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowSpeechToNoiseEventRatio", value.asInstanceOf[js.Any])
+    inline def setLowSpeechToNoiseEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowSpeechToNoiseEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowSpeechToNoiseEventRatioNull: Self = StObject.set(x, "lowSpeechToNoiseEventRatio", null)
+    inline def setLowSpeechToNoiseEventRatioNull: Self = StObject.set(x, "lowSpeechToNoiseEventRatio", null)
     
-    @scala.inline
-    def setLowSpeechToNoiseEventRatioUndefined: Self = StObject.set(x, "lowSpeechToNoiseEventRatio", js.undefined)
+    inline def setLowSpeechToNoiseEventRatioUndefined: Self = StObject.set(x, "lowSpeechToNoiseEventRatio", js.undefined)
     
-    @scala.inline
-    def setMicGlitchRate(value: NullableOption[Double]): Self = StObject.set(x, "micGlitchRate", value.asInstanceOf[js.Any])
+    inline def setMicGlitchRate(value: NullableOption[Double]): Self = StObject.set(x, "micGlitchRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicGlitchRateNull: Self = StObject.set(x, "micGlitchRate", null)
+    inline def setMicGlitchRateNull: Self = StObject.set(x, "micGlitchRate", null)
     
-    @scala.inline
-    def setMicGlitchRateUndefined: Self = StObject.set(x, "micGlitchRate", js.undefined)
+    inline def setMicGlitchRateUndefined: Self = StObject.set(x, "micGlitchRate", js.undefined)
     
-    @scala.inline
-    def setReceivedNoiseLevel(value: NullableOption[Double]): Self = StObject.set(x, "receivedNoiseLevel", value.asInstanceOf[js.Any])
+    inline def setReceivedNoiseLevel(value: NullableOption[Double]): Self = StObject.set(x, "receivedNoiseLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedNoiseLevelNull: Self = StObject.set(x, "receivedNoiseLevel", null)
+    inline def setReceivedNoiseLevelNull: Self = StObject.set(x, "receivedNoiseLevel", null)
     
-    @scala.inline
-    def setReceivedNoiseLevelUndefined: Self = StObject.set(x, "receivedNoiseLevel", js.undefined)
+    inline def setReceivedNoiseLevelUndefined: Self = StObject.set(x, "receivedNoiseLevel", js.undefined)
     
-    @scala.inline
-    def setReceivedSignalLevel(value: NullableOption[Double]): Self = StObject.set(x, "receivedSignalLevel", value.asInstanceOf[js.Any])
+    inline def setReceivedSignalLevel(value: NullableOption[Double]): Self = StObject.set(x, "receivedSignalLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedSignalLevelNull: Self = StObject.set(x, "receivedSignalLevel", null)
+    inline def setReceivedSignalLevelNull: Self = StObject.set(x, "receivedSignalLevel", null)
     
-    @scala.inline
-    def setReceivedSignalLevelUndefined: Self = StObject.set(x, "receivedSignalLevel", js.undefined)
+    inline def setReceivedSignalLevelUndefined: Self = StObject.set(x, "receivedSignalLevel", js.undefined)
     
-    @scala.inline
-    def setRenderDeviceDriver(value: NullableOption[String]): Self = StObject.set(x, "renderDeviceDriver", value.asInstanceOf[js.Any])
+    inline def setRenderDeviceDriver(value: NullableOption[String]): Self = StObject.set(x, "renderDeviceDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderDeviceDriverNull: Self = StObject.set(x, "renderDeviceDriver", null)
+    inline def setRenderDeviceDriverNull: Self = StObject.set(x, "renderDeviceDriver", null)
     
-    @scala.inline
-    def setRenderDeviceDriverUndefined: Self = StObject.set(x, "renderDeviceDriver", js.undefined)
+    inline def setRenderDeviceDriverUndefined: Self = StObject.set(x, "renderDeviceDriver", js.undefined)
     
-    @scala.inline
-    def setRenderDeviceName(value: NullableOption[String]): Self = StObject.set(x, "renderDeviceName", value.asInstanceOf[js.Any])
+    inline def setRenderDeviceName(value: NullableOption[String]): Self = StObject.set(x, "renderDeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderDeviceNameNull: Self = StObject.set(x, "renderDeviceName", null)
+    inline def setRenderDeviceNameNull: Self = StObject.set(x, "renderDeviceName", null)
     
-    @scala.inline
-    def setRenderDeviceNameUndefined: Self = StObject.set(x, "renderDeviceName", js.undefined)
+    inline def setRenderDeviceNameUndefined: Self = StObject.set(x, "renderDeviceName", js.undefined)
     
-    @scala.inline
-    def setRenderMuteEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "renderMuteEventRatio", value.asInstanceOf[js.Any])
+    inline def setRenderMuteEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "renderMuteEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderMuteEventRatioNull: Self = StObject.set(x, "renderMuteEventRatio", null)
+    inline def setRenderMuteEventRatioNull: Self = StObject.set(x, "renderMuteEventRatio", null)
     
-    @scala.inline
-    def setRenderMuteEventRatioUndefined: Self = StObject.set(x, "renderMuteEventRatio", js.undefined)
+    inline def setRenderMuteEventRatioUndefined: Self = StObject.set(x, "renderMuteEventRatio", js.undefined)
     
-    @scala.inline
-    def setRenderNotFunctioningEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "renderNotFunctioningEventRatio", value.asInstanceOf[js.Any])
+    inline def setRenderNotFunctioningEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "renderNotFunctioningEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderNotFunctioningEventRatioNull: Self = StObject.set(x, "renderNotFunctioningEventRatio", null)
+    inline def setRenderNotFunctioningEventRatioNull: Self = StObject.set(x, "renderNotFunctioningEventRatio", null)
     
-    @scala.inline
-    def setRenderNotFunctioningEventRatioUndefined: Self = StObject.set(x, "renderNotFunctioningEventRatio", js.undefined)
+    inline def setRenderNotFunctioningEventRatioUndefined: Self = StObject.set(x, "renderNotFunctioningEventRatio", js.undefined)
     
-    @scala.inline
-    def setRenderZeroVolumeEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "renderZeroVolumeEventRatio", value.asInstanceOf[js.Any])
+    inline def setRenderZeroVolumeEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "renderZeroVolumeEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderZeroVolumeEventRatioNull: Self = StObject.set(x, "renderZeroVolumeEventRatio", null)
+    inline def setRenderZeroVolumeEventRatioNull: Self = StObject.set(x, "renderZeroVolumeEventRatio", null)
     
-    @scala.inline
-    def setRenderZeroVolumeEventRatioUndefined: Self = StObject.set(x, "renderZeroVolumeEventRatio", js.undefined)
+    inline def setRenderZeroVolumeEventRatioUndefined: Self = StObject.set(x, "renderZeroVolumeEventRatio", js.undefined)
     
-    @scala.inline
-    def setSentNoiseLevel(value: NullableOption[Double]): Self = StObject.set(x, "sentNoiseLevel", value.asInstanceOf[js.Any])
+    inline def setSentNoiseLevel(value: NullableOption[Double]): Self = StObject.set(x, "sentNoiseLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentNoiseLevelNull: Self = StObject.set(x, "sentNoiseLevel", null)
+    inline def setSentNoiseLevelNull: Self = StObject.set(x, "sentNoiseLevel", null)
     
-    @scala.inline
-    def setSentNoiseLevelUndefined: Self = StObject.set(x, "sentNoiseLevel", js.undefined)
+    inline def setSentNoiseLevelUndefined: Self = StObject.set(x, "sentNoiseLevel", js.undefined)
     
-    @scala.inline
-    def setSentSignalLevel(value: NullableOption[Double]): Self = StObject.set(x, "sentSignalLevel", value.asInstanceOf[js.Any])
+    inline def setSentSignalLevel(value: NullableOption[Double]): Self = StObject.set(x, "sentSignalLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentSignalLevelNull: Self = StObject.set(x, "sentSignalLevel", null)
+    inline def setSentSignalLevelNull: Self = StObject.set(x, "sentSignalLevel", null)
     
-    @scala.inline
-    def setSentSignalLevelUndefined: Self = StObject.set(x, "sentSignalLevel", js.undefined)
+    inline def setSentSignalLevelUndefined: Self = StObject.set(x, "sentSignalLevel", js.undefined)
     
-    @scala.inline
-    def setSpeakerGlitchRate(value: NullableOption[Double]): Self = StObject.set(x, "speakerGlitchRate", value.asInstanceOf[js.Any])
+    inline def setSpeakerGlitchRate(value: NullableOption[Double]): Self = StObject.set(x, "speakerGlitchRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakerGlitchRateNull: Self = StObject.set(x, "speakerGlitchRate", null)
+    inline def setSpeakerGlitchRateNull: Self = StObject.set(x, "speakerGlitchRate", null)
     
-    @scala.inline
-    def setSpeakerGlitchRateUndefined: Self = StObject.set(x, "speakerGlitchRate", js.undefined)
+    inline def setSpeakerGlitchRateUndefined: Self = StObject.set(x, "speakerGlitchRate", js.undefined)
   }
 }

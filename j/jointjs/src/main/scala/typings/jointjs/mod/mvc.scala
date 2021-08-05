@@ -98,20 +98,16 @@ object mvc {
   }
   object ViewOptions {
     
-    @scala.inline
-    def apply[T /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ViewOptions[T] = {
+    inline def apply[T /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ViewOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewOptions[T]]
     }
     
-    @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[?], T /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & ViewOptions[T]) extends AnyVal {
+    extension [Self <: ViewOptions[?], T /* <: Model[js.Any, ModelSetOptions, js.Object] */](x: Self & ViewOptions[T]) {
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   

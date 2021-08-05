@@ -23,28 +23,21 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(Owner: Owner, SourceIdentifier: StringWithCharLimit256): Source = {
+  inline def apply(Owner: Owner, SourceIdentifier: StringWithCharLimit256): Source = {
     val __obj = js.Dynamic.literal(Owner = Owner.asInstanceOf[js.Any], SourceIdentifier = SourceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDetails(value: SourceDetails): Self = StObject.set(x, "SourceDetails", value.asInstanceOf[js.Any])
+    inline def setSourceDetails(value: SourceDetails): Self = StObject.set(x, "SourceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDetailsUndefined: Self = StObject.set(x, "SourceDetails", js.undefined)
+    inline def setSourceDetailsUndefined: Self = StObject.set(x, "SourceDetails", js.undefined)
     
-    @scala.inline
-    def setSourceDetailsVarargs(value: SourceDetail*): Self = StObject.set(x, "SourceDetails", js.Array(value :_*))
+    inline def setSourceDetailsVarargs(value: SourceDetail*): Self = StObject.set(x, "SourceDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceIdentifier(value: StringWithCharLimit256): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: StringWithCharLimit256): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

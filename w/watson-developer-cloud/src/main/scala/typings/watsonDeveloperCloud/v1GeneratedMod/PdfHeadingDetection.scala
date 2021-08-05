@@ -11,22 +11,17 @@ trait PdfHeadingDetection extends StObject {
 }
 object PdfHeadingDetection {
   
-  @scala.inline
-  def apply(): PdfHeadingDetection = {
+  inline def apply(): PdfHeadingDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PdfHeadingDetection]
   }
   
-  @scala.inline
-  implicit class PdfHeadingDetectionMutableBuilder[Self <: PdfHeadingDetection] (val x: Self) extends AnyVal {
+  extension [Self <: PdfHeadingDetection](x: Self) {
     
-    @scala.inline
-    def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+    inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
-    @scala.inline
-    def setFontsVarargs(value: FontSetting*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: FontSetting*): Self = StObject.set(x, "fonts", js.Array(value :_*))
   }
 }

@@ -20,8 +20,7 @@ trait GridViewContextMenuItemClickEventArgs
 }
 object GridViewContextMenuItemClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementIndex: Double,
     handled: Boolean,
     item: BootstrapMenuItem,
@@ -34,22 +33,16 @@ object GridViewContextMenuItemClickEventArgs {
     __obj.asInstanceOf[GridViewContextMenuItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewContextMenuItemClickEventArgsMutableBuilder[Self <: GridViewContextMenuItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewContextMenuItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setElementIndex(value: Double): Self = StObject.set(x, "elementIndex", value.asInstanceOf[js.Any])
+    inline def setElementIndex(value: Double): Self = StObject.set(x, "elementIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
+    inline def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
   }
 }

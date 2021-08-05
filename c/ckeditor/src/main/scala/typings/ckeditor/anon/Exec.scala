@@ -14,19 +14,15 @@ trait Exec extends StObject {
 }
 object Exec {
   
-  @scala.inline
-  def apply(exec: editor => Boolean, refresh: (editor, elementPath) => Double): Exec = {
+  inline def apply(exec: editor => Boolean, refresh: (editor, elementPath) => Double): Exec = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), refresh = js.Any.fromFunction2(refresh))
     __obj.asInstanceOf[Exec]
   }
   
-  @scala.inline
-  implicit class ExecMutableBuilder[Self <: Exec] (val x: Self) extends AnyVal {
+  extension [Self <: Exec](x: Self) {
     
-    @scala.inline
-    def setExec(value: editor => Boolean): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: editor => Boolean): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: (editor, elementPath) => Double): Self = StObject.set(x, "refresh", js.Any.fromFunction2(value))
+    inline def setRefresh(value: (editor, elementPath) => Double): Self = StObject.set(x, "refresh", js.Any.fromFunction2(value))
   }
 }

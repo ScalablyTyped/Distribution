@@ -37,8 +37,7 @@ trait ProcessConfiguration extends StObject {
 }
 object ProcessConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bugWorkItems: CategoryConfiguration,
     portfolioBacklogs: js.Array[CategoryConfiguration],
     requirementBacklog: CategoryConfiguration,
@@ -50,28 +49,20 @@ object ProcessConfiguration {
     __obj.asInstanceOf[ProcessConfiguration]
   }
   
-  @scala.inline
-  implicit class ProcessConfigurationMutableBuilder[Self <: ProcessConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessConfiguration](x: Self) {
     
-    @scala.inline
-    def setBugWorkItems(value: CategoryConfiguration): Self = StObject.set(x, "bugWorkItems", value.asInstanceOf[js.Any])
+    inline def setBugWorkItems(value: CategoryConfiguration): Self = StObject.set(x, "bugWorkItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioBacklogs(value: js.Array[CategoryConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
+    inline def setPortfolioBacklogs(value: js.Array[CategoryConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioBacklogsVarargs(value: CategoryConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
+    inline def setPortfolioBacklogsVarargs(value: CategoryConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
     
-    @scala.inline
-    def setRequirementBacklog(value: CategoryConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
+    inline def setRequirementBacklog(value: CategoryConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskBacklog(value: CategoryConfiguration): Self = StObject.set(x, "taskBacklog", value.asInstanceOf[js.Any])
+    inline def setTaskBacklog(value: CategoryConfiguration): Self = StObject.set(x, "taskBacklog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFields(value: StringDictionary[WorkItemFieldReference]): Self = StObject.set(x, "typeFields", value.asInstanceOf[js.Any])
+    inline def setTypeFields(value: StringDictionary[WorkItemFieldReference]): Self = StObject.set(x, "typeFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

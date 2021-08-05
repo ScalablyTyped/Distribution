@@ -18,33 +18,25 @@ trait StructureMember
 }
 object StructureMember {
   
-  @scala.inline
-  def apply(shape: java.lang.String): StructureMember = {
+  inline def apply(shape: java.lang.String): StructureMember = {
     val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMember]
   }
   
-  @scala.inline
-  implicit class StructureMemberMutableBuilder[Self <: StructureMember] (val x: Self) extends AnyVal {
+  extension [Self <: StructureMember](x: Self) {
     
-    @scala.inline
-    def setLocation(value: MemberLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: MemberLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStreaming(value: scala.Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
+    inline def setStreaming(value: scala.Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
+    inline def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
     
-    @scala.inline
-    def setXmlNamespace(
+    inline def setXmlNamespace(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any) | java.lang.String
     ): Self = StObject.set(x, "xmlNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlNamespaceUndefined: Self = StObject.set(x, "xmlNamespace", js.undefined)
+    inline def setXmlNamespaceUndefined: Self = StObject.set(x, "xmlNamespace", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait WebRequestHeadersDetails
 }
 object WebRequestHeadersDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: integer,
     method: String,
     parentFrameId: integer,
@@ -32,16 +31,12 @@ object WebRequestHeadersDetails {
     __obj.asInstanceOf[WebRequestHeadersDetails]
   }
   
-  @scala.inline
-  implicit class WebRequestHeadersDetailsMutableBuilder[Self <: WebRequestHeadersDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestHeadersDetails](x: Self) {
     
-    @scala.inline
-    def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    inline def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    @scala.inline
-    def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
   }
 }

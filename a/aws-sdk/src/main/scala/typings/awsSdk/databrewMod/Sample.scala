@@ -18,22 +18,17 @@ trait Sample extends StObject {
 }
 object Sample {
   
-  @scala.inline
-  def apply(Type: SampleType): Sample = {
+  inline def apply(Type: SampleType): Sample = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sample]
   }
   
-  @scala.inline
-  implicit class SampleMutableBuilder[Self <: Sample] (val x: Self) extends AnyVal {
+  extension [Self <: Sample](x: Self) {
     
-    @scala.inline
-    def setSize(value: SampleSize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SampleSize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
-    @scala.inline
-    def setType(value: SampleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SampleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,34 +17,25 @@ trait GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse extends StO
 }
 object GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImportUserEventsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse](x: Self) {
     
-    @scala.inline
-    def setErrorSamples(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "errorSamples", value.asInstanceOf[js.Any])
+    inline def setErrorSamples(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "errorSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorSamplesUndefined: Self = StObject.set(x, "errorSamples", js.undefined)
+    inline def setErrorSamplesUndefined: Self = StObject.set(x, "errorSamples", js.undefined)
     
-    @scala.inline
-    def setErrorSamplesVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "errorSamples", js.Array(value :_*))
+    inline def setErrorSamplesVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "errorSamples", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
+    inline def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsConfigUndefined: Self = StObject.set(x, "errorsConfig", js.undefined)
+    inline def setErrorsConfigUndefined: Self = StObject.set(x, "errorsConfig", js.undefined)
     
-    @scala.inline
-    def setImportSummary(value: GoogleCloudRecommendationengineV1beta1UserEventImportSummary): Self = StObject.set(x, "importSummary", value.asInstanceOf[js.Any])
+    inline def setImportSummary(value: GoogleCloudRecommendationengineV1beta1UserEventImportSummary): Self = StObject.set(x, "importSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportSummaryUndefined: Self = StObject.set(x, "importSummary", js.undefined)
+    inline def setImportSummaryUndefined: Self = StObject.set(x, "importSummary", js.undefined)
   }
 }

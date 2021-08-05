@@ -108,8 +108,7 @@ trait MultiFactorResolver extends StObject {
 }
 object MultiFactorResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auth: Auth,
     hints: js.Array[MultiFactorInfo],
     resolveSignIn: MultiFactorAssertion => js.Promise[UserCredential],
@@ -119,22 +118,16 @@ object MultiFactorResolver {
     __obj.asInstanceOf[MultiFactorResolver]
   }
   
-  @scala.inline
-  implicit class MultiFactorResolverMutableBuilder[Self <: MultiFactorResolver] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorResolver](x: Self) {
     
-    @scala.inline
-    def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHints(value: js.Array[MultiFactorInfo]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    inline def setHints(value: js.Array[MultiFactorInfo]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintsVarargs(value: MultiFactorInfo*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: MultiFactorInfo*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
-    @scala.inline
-    def setResolveSignIn(value: MultiFactorAssertion => js.Promise[UserCredential]): Self = StObject.set(x, "resolveSignIn", js.Any.fromFunction1(value))
+    inline def setResolveSignIn(value: MultiFactorAssertion => js.Promise[UserCredential]): Self = StObject.set(x, "resolveSignIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

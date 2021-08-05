@@ -36,37 +36,27 @@ trait SchemaTaskStatus extends StObject {
 }
 object SchemaTaskStatus {
   
-  @scala.inline
-  def apply(): SchemaTaskStatus = {
+  inline def apply(): SchemaTaskStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTaskStatus]
   }
   
-  @scala.inline
-  implicit class SchemaTaskStatusMutableBuilder[Self <: SchemaTaskStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTaskStatus](x: Self) {
     
-    @scala.inline
-    def setAttemptDispatchCount(value: Double): Self = StObject.set(x, "attemptDispatchCount", value.asInstanceOf[js.Any])
+    inline def setAttemptDispatchCount(value: Double): Self = StObject.set(x, "attemptDispatchCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptDispatchCountUndefined: Self = StObject.set(x, "attemptDispatchCount", js.undefined)
+    inline def setAttemptDispatchCountUndefined: Self = StObject.set(x, "attemptDispatchCount", js.undefined)
     
-    @scala.inline
-    def setAttemptResponseCount(value: Double): Self = StObject.set(x, "attemptResponseCount", value.asInstanceOf[js.Any])
+    inline def setAttemptResponseCount(value: Double): Self = StObject.set(x, "attemptResponseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptResponseCountUndefined: Self = StObject.set(x, "attemptResponseCount", js.undefined)
+    inline def setAttemptResponseCountUndefined: Self = StObject.set(x, "attemptResponseCount", js.undefined)
     
-    @scala.inline
-    def setFirstAttemptStatus(value: SchemaAttemptStatus): Self = StObject.set(x, "firstAttemptStatus", value.asInstanceOf[js.Any])
+    inline def setFirstAttemptStatus(value: SchemaAttemptStatus): Self = StObject.set(x, "firstAttemptStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstAttemptStatusUndefined: Self = StObject.set(x, "firstAttemptStatus", js.undefined)
+    inline def setFirstAttemptStatusUndefined: Self = StObject.set(x, "firstAttemptStatus", js.undefined)
     
-    @scala.inline
-    def setLastAttemptStatus(value: SchemaAttemptStatus): Self = StObject.set(x, "lastAttemptStatus", value.asInstanceOf[js.Any])
+    inline def setLastAttemptStatus(value: SchemaAttemptStatus): Self = StObject.set(x, "lastAttemptStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttemptStatusUndefined: Self = StObject.set(x, "lastAttemptStatus", js.undefined)
+    inline def setLastAttemptStatusUndefined: Self = StObject.set(x, "lastAttemptStatus", js.undefined)
   }
 }

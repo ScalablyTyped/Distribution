@@ -20,12 +20,8 @@ object LatLngBounds {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def bounds(latlng: Coord, latlngN: Coord): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
-  @scala.inline
-  def bounds(latlng: Coord, latlngN: LatLngLiteral): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
-  @scala.inline
-  def bounds(latlng: LatLngLiteral, latlngN: Coord): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
-  @scala.inline
-  def bounds(latlng: LatLngLiteral, latlngN: LatLngLiteral): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
+  inline def bounds(latlng: Coord, latlngN: Coord): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
+  inline def bounds(latlng: Coord, latlngN: LatLngLiteral): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
+  inline def bounds(latlng: LatLngLiteral, latlngN: Coord): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
+  inline def bounds(latlng: LatLngLiteral, latlngN: LatLngLiteral): typings.navermaps.naver.maps.LatLngBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(latlng.asInstanceOf[js.Any], latlngN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.LatLngBounds]
 }

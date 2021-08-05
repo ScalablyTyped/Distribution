@@ -26,8 +26,7 @@ trait ClientUserValue extends StObject {
 }
 object ClientUserValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     department: String,
     displayStr: String,
     email: String,
@@ -42,34 +41,24 @@ object ClientUserValue {
     __obj.asInstanceOf[ClientUserValue]
   }
   
-  @scala.inline
-  implicit class ClientUserValueMutableBuilder[Self <: ClientUserValue] (val x: Self) extends AnyVal {
+  extension [Self <: ClientUserValue](x: Self) {
     
-    @scala.inline
-    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+    inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayStr(value: String): Self = StObject.set(x, "displayStr", value.asInstanceOf[js.Any])
+    inline def setDisplayStr(value: String): Self = StObject.set(x, "displayStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
+    inline def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupId(value: Double): Self = StObject.set(x, "lookupId", value.asInstanceOf[js.Any])
+    inline def setLookupId(value: Double): Self = StObject.set(x, "lookupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupValue(value: String): Self = StObject.set(x, "lookupValue", value.asInstanceOf[js.Any])
+    inline def setLookupValue(value: String): Self = StObject.set(x, "lookupValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSip(value: String): Self = StObject.set(x, "sip", value.asInstanceOf[js.Any])
+    inline def setSip(value: String): Self = StObject.set(x, "sip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

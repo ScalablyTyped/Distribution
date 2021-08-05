@@ -31,19 +31,19 @@ trait TypeofQuery
     * @return {{cancel: ?function(Error), context: ?Object}}
     * @private
     */
-  var getCancelAndContextArgs_ : js.Any = js.native
+  /* private */ var getCancelAndContextArgs_ : js.Any = js.native
   
   /**
     * Validates that limit* has been called with the correct combination of parameters
     * @param {!QueryParams} params
     * @private
     */
-  var validateLimit_ : js.Any = js.native
+  /* private */ var validateLimit_ : js.Any = js.native
   
   /**
     * Validates start/end values for queries.
     * @param {!QueryParams} params
     * @private
     */
-  var validateQueryEndpoints_ : js.Any = js.native
+  /* private */ var validateQueryEndpoints_ : js.Any = js.native
 }

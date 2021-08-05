@@ -23,25 +23,19 @@ trait MonitoringS3Output extends StObject {
 }
 object MonitoringS3Output {
   
-  @scala.inline
-  def apply(LocalPath: ProcessingLocalPath, S3Uri: MonitoringS3Uri): MonitoringS3Output = {
+  inline def apply(LocalPath: ProcessingLocalPath, S3Uri: MonitoringS3Uri): MonitoringS3Output = {
     val __obj = js.Dynamic.literal(LocalPath = LocalPath.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringS3Output]
   }
   
-  @scala.inline
-  implicit class MonitoringS3OutputMutableBuilder[Self <: MonitoringS3Output] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringS3Output](x: Self) {
     
-    @scala.inline
-    def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UploadMode(value: ProcessingS3UploadMode): Self = StObject.set(x, "S3UploadMode", value.asInstanceOf[js.Any])
+    inline def setS3UploadMode(value: ProcessingS3UploadMode): Self = StObject.set(x, "S3UploadMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UploadModeUndefined: Self = StObject.set(x, "S3UploadMode", js.undefined)
+    inline def setS3UploadModeUndefined: Self = StObject.set(x, "S3UploadMode", js.undefined)
     
-    @scala.inline
-    def setS3Uri(value: MonitoringS3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: MonitoringS3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

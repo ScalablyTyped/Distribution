@@ -28,28 +28,21 @@ trait RedshiftConnectorProfileProperties extends StObject {
 }
 object RedshiftConnectorProfileProperties {
   
-  @scala.inline
-  def apply(bucketName: BucketName, databaseUrl: DatabaseUrl, roleArn: RoleArn): RedshiftConnectorProfileProperties = {
+  inline def apply(bucketName: BucketName, databaseUrl: DatabaseUrl, roleArn: RoleArn): RedshiftConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], databaseUrl = databaseUrl.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class RedshiftConnectorProfilePropertiesMutableBuilder[Self <: RedshiftConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+    inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+    inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
-    @scala.inline
-    def setDatabaseUrl(value: DatabaseUrl): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
+    inline def setDatabaseUrl(value: DatabaseUrl): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

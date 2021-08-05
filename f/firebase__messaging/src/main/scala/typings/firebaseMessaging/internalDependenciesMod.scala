@@ -24,8 +24,7 @@ object internalDependenciesMod {
   }
   object FirebaseInternalDependencies {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       analyticsProvider: Provider[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ js.Any
         ],
@@ -37,24 +36,19 @@ object internalDependenciesMod {
       __obj.asInstanceOf[FirebaseInternalDependencies]
     }
     
-    @scala.inline
-    implicit class FirebaseInternalDependenciesMutableBuilder[Self <: FirebaseInternalDependencies] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseInternalDependencies](x: Self) {
       
-      @scala.inline
-      def setAnalyticsProvider(
+      inline def setAnalyticsProvider(
         value: Provider[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ js.Any
             ]
       ): Self = StObject.set(x, "analyticsProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppConfig(value: AppConfig): Self = StObject.set(x, "appConfig", value.asInstanceOf[js.Any])
+      inline def setAppConfig(value: AppConfig): Self = StObject.set(x, "appConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallations(value: FirebaseInstallations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
+      inline def setInstallations(value: FirebaseInstallations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
     }
   }
 }

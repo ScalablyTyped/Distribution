@@ -29,49 +29,35 @@ trait Token
 }
 object Token {
   
-  @scala.inline
-  def apply(accessToken: String, client: Client, user: User): Token = {
+  inline def apply(accessToken: String, client: Client, user: User): Token = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   
-  @scala.inline
-  implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+  extension [Self <: Token](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenExpiresAt(value: Date): Self = StObject.set(x, "accessTokenExpiresAt", value.asInstanceOf[js.Any])
+    inline def setAccessTokenExpiresAt(value: Date): Self = StObject.set(x, "accessTokenExpiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenExpiresAtUndefined: Self = StObject.set(x, "accessTokenExpiresAt", js.undefined)
+    inline def setAccessTokenExpiresAtUndefined: Self = StObject.set(x, "accessTokenExpiresAt", js.undefined)
     
-    @scala.inline
-    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenExpiresAt(value: Date): Self = StObject.set(x, "refreshTokenExpiresAt", value.asInstanceOf[js.Any])
+    inline def setRefreshTokenExpiresAt(value: Date): Self = StObject.set(x, "refreshTokenExpiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenExpiresAtUndefined: Self = StObject.set(x, "refreshTokenExpiresAt", js.undefined)
+    inline def setRefreshTokenExpiresAtUndefined: Self = StObject.set(x, "refreshTokenExpiresAt", js.undefined)
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
-    @scala.inline
-    def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

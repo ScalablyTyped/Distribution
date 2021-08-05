@@ -19,11 +19,11 @@ class NgComponentOutlet protected ()
      with OnDestroy {
   def this(_viewContainerRef: ViewContainerRef) = this()
   
-  var _componentRef: js.Any = js.native
+  /* private */ var _componentRef: js.Any = js.native
   
-  var _moduleRef: js.Any = js.native
+  /* private */ var _moduleRef: js.Any = js.native
   
-  var _viewContainerRef: js.Any = js.native
+  /* private */ var _viewContainerRef: js.Any = js.native
   
   var ngComponentOutlet: Type[js.Any] = js.native
   

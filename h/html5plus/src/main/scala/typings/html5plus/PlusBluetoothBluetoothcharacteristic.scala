@@ -27,25 +27,19 @@ trait PlusBluetoothBluetoothcharacteristic extends StObject {
 }
 object PlusBluetoothBluetoothcharacteristic {
   
-  @scala.inline
-  def apply(): PlusBluetoothBluetoothcharacteristic = {
+  inline def apply(): PlusBluetoothBluetoothcharacteristic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusBluetoothBluetoothcharacteristic]
   }
   
-  @scala.inline
-  implicit class PlusBluetoothBluetoothcharacteristicMutableBuilder[Self <: PlusBluetoothBluetoothcharacteristic] (val x: Self) extends AnyVal {
+  extension [Self <: PlusBluetoothBluetoothcharacteristic](x: Self) {
     
-    @scala.inline
-    def setProperties(value: PlusBluetoothBluetoothcharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PlusBluetoothBluetoothcharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

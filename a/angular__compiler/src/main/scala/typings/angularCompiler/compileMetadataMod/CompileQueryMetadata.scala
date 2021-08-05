@@ -20,8 +20,7 @@ trait CompileQueryMetadata extends StObject {
 }
 object CompileQueryMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     descendants: Boolean,
     first: Boolean,
     propertyName: String,
@@ -32,31 +31,22 @@ object CompileQueryMetadata {
     __obj.asInstanceOf[CompileQueryMetadata]
   }
   
-  @scala.inline
-  implicit class CompileQueryMetadataMutableBuilder[Self <: CompileQueryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CompileQueryMetadata](x: Self) {
     
-    @scala.inline
-    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
+    inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: CompileTokenMetadata): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: CompileTokenMetadata): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectors(value: js.Array[CompileTokenMetadata]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[CompileTokenMetadata]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsVarargs(value: CompileTokenMetadata*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: CompileTokenMetadata*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
-    @scala.inline
-    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
   }
 }

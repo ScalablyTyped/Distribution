@@ -110,8 +110,7 @@ trait Measure extends StObject {
 }
 object Measure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggregatorType: js.Object => Double,
     caption: js.Object => String,
     defaultFormatString: js.Object => String,
@@ -125,31 +124,22 @@ object Measure {
     __obj.asInstanceOf[Measure]
   }
   
-  @scala.inline
-  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
+  extension [Self <: Measure](x: Self) {
     
-    @scala.inline
-    def setAggregatorType(value: js.Object => Double): Self = StObject.set(x, "aggregatorType", js.Any.fromFunction1(value))
+    inline def setAggregatorType(value: js.Object => Double): Self = StObject.set(x, "aggregatorType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultFormatString(value: js.Object => String): Self = StObject.set(x, "defaultFormatString", js.Any.fromFunction1(value))
+    inline def setDefaultFormatString(value: js.Object => String): Self = StObject.set(x, "defaultFormatString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeasureDisplayFolder(value: js.Object => String): Self = StObject.set(x, "measureDisplayFolder", js.Any.fromFunction1(value))
+    inline def setMeasureDisplayFolder(value: js.Object => String): Self = StObject.set(x, "measureDisplayFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeasureGroupName(value: js.Object => String): Self = StObject.set(x, "measureGroupName", js.Any.fromFunction1(value))
+    inline def setMeasureGroupName(value: js.Object => String): Self = StObject.set(x, "measureGroupName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
+    inline def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

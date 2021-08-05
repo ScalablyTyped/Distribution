@@ -10,16 +10,13 @@ trait HandshakeFields extends StObject {
 }
 object HandshakeFields {
   
-  @scala.inline
-  def apply(ext: js.Any): HandshakeFields = {
+  inline def apply(ext: js.Any): HandshakeFields = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandshakeFields]
   }
   
-  @scala.inline
-  implicit class HandshakeFieldsMutableBuilder[Self <: HandshakeFields] (val x: Self) extends AnyVal {
+  extension [Self <: HandshakeFields](x: Self) {
     
-    @scala.inline
-    def setExt(value: js.Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: js.Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
   }
 }

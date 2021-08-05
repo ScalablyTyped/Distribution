@@ -11,19 +11,15 @@ trait PartialOptions extends StObject {
 }
 object PartialOptions {
   
-  @scala.inline
-  def apply(): PartialOptions = {
+  inline def apply(): PartialOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptions]
   }
   
-  @scala.inline
-  implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOptions](x: Self) {
     
-    @scala.inline
-    def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+    inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+    inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
   }
 }

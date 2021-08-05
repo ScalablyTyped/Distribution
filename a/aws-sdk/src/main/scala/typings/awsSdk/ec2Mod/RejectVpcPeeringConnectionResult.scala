@@ -13,19 +13,15 @@ trait RejectVpcPeeringConnectionResult extends StObject {
 }
 object RejectVpcPeeringConnectionResult {
   
-  @scala.inline
-  def apply(): RejectVpcPeeringConnectionResult = {
+  inline def apply(): RejectVpcPeeringConnectionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RejectVpcPeeringConnectionResult]
   }
   
-  @scala.inline
-  implicit class RejectVpcPeeringConnectionResultMutableBuilder[Self <: RejectVpcPeeringConnectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: RejectVpcPeeringConnectionResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

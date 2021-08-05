@@ -18,25 +18,19 @@ trait ReplaceRouteTableAssociationResult extends StObject {
 }
 object ReplaceRouteTableAssociationResult {
   
-  @scala.inline
-  def apply(): ReplaceRouteTableAssociationResult = {
+  inline def apply(): ReplaceRouteTableAssociationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceRouteTableAssociationResult]
   }
   
-  @scala.inline
-  implicit class ReplaceRouteTableAssociationResultMutableBuilder[Self <: ReplaceRouteTableAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceRouteTableAssociationResult](x: Self) {
     
-    @scala.inline
-    def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
+    inline def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
+    inline def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
     
-    @scala.inline
-    def setNewAssociationId(value: String): Self = StObject.set(x, "NewAssociationId", value.asInstanceOf[js.Any])
+    inline def setNewAssociationId(value: String): Self = StObject.set(x, "NewAssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAssociationIdUndefined: Self = StObject.set(x, "NewAssociationId", js.undefined)
+    inline def setNewAssociationIdUndefined: Self = StObject.set(x, "NewAssociationId", js.undefined)
   }
 }

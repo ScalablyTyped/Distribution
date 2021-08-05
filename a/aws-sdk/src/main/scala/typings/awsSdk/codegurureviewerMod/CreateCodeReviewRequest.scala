@@ -28,28 +28,21 @@ trait CreateCodeReviewRequest extends StObject {
 }
 object CreateCodeReviewRequest {
   
-  @scala.inline
-  def apply(Name: CodeReviewName, RepositoryAssociationArn: AssociationArn, Type: CodeReviewType): CreateCodeReviewRequest = {
+  inline def apply(Name: CodeReviewName, RepositoryAssociationArn: AssociationArn, Type: CodeReviewType): CreateCodeReviewRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RepositoryAssociationArn = RepositoryAssociationArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCodeReviewRequest]
   }
   
-  @scala.inline
-  implicit class CreateCodeReviewRequestMutableBuilder[Self <: CreateCodeReviewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCodeReviewRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setName(value: CodeReviewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CodeReviewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryAssociationArn(value: AssociationArn): Self = StObject.set(x, "RepositoryAssociationArn", value.asInstanceOf[js.Any])
+    inline def setRepositoryAssociationArn(value: AssociationArn): Self = StObject.set(x, "RepositoryAssociationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CodeReviewType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeReviewType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

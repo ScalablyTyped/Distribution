@@ -19,8 +19,7 @@ trait EventMapDataRefreshStart extends StObject {
 }
 object EventMapDataRefreshStart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: LatLngBounds_,
     dataZoom: Double,
     mapZoom: Double,
@@ -31,22 +30,16 @@ object EventMapDataRefreshStart {
     __obj.asInstanceOf[EventMapDataRefreshStart]
   }
   
-  @scala.inline
-  implicit class EventMapDataRefreshStartMutableBuilder[Self <: EventMapDataRefreshStart] (val x: Self) extends AnyVal {
+  extension [Self <: EventMapDataRefreshStart](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LatLngBounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LatLngBounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataZoom(value: Double): Self = StObject.set(x, "dataZoom", value.asInstanceOf[js.Any])
+    inline def setDataZoom(value: Double): Self = StObject.set(x, "dataZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapZoom(value: Double): Self = StObject.set(x, "mapZoom", value.asInstanceOf[js.Any])
+    inline def setMapZoom(value: Double): Self = StObject.set(x, "mapZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPortalLevel(value: Double): Self = StObject.set(x, "minPortalLevel", value.asInstanceOf[js.Any])
+    inline def setMinPortalLevel(value: Double): Self = StObject.set(x, "minPortalLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileBounds(value: LatLngBounds_): Self = StObject.set(x, "tileBounds", value.asInstanceOf[js.Any])
+    inline def setTileBounds(value: LatLngBounds_): Self = StObject.set(x, "tileBounds", value.asInstanceOf[js.Any])
   }
 }

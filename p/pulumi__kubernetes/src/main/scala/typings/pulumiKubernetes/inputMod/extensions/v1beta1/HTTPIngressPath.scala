@@ -37,28 +37,21 @@ trait HTTPIngressPath extends StObject {
 }
 object HTTPIngressPath {
   
-  @scala.inline
-  def apply(backend: Input[IngressBackend]): HTTPIngressPath = {
+  inline def apply(backend: Input[IngressBackend]): HTTPIngressPath = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPIngressPath]
   }
   
-  @scala.inline
-  implicit class HTTPIngressPathMutableBuilder[Self <: HTTPIngressPath] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPIngressPath](x: Self) {
     
-    @scala.inline
-    def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathType(value: Input[String]): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
+    inline def setPathType(value: Input[String]): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathTypeUndefined: Self = StObject.set(x, "pathType", js.undefined)
+    inline def setPathTypeUndefined: Self = StObject.set(x, "pathType", js.undefined)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

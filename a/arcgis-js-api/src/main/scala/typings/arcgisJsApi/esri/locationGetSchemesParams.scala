@@ -55,8 +55,7 @@ trait locationGetSchemesParams
 }
 object locationGetSchemesParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     geometryType: point | multipoint | polyline | polygon | mesh | multipatch,
     hasOwnProperty: PropertyKey => Boolean,
@@ -66,34 +65,24 @@ object locationGetSchemesParams {
     __obj.asInstanceOf[locationGetSchemesParams]
   }
   
-  @scala.inline
-  implicit class locationGetSchemesParamsMutableBuilder[Self <: locationGetSchemesParams] (val x: Self) extends AnyVal {
+  extension [Self <: locationGetSchemesParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
+    inline def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
+    inline def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
+    inline def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
   }
 }

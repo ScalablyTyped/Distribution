@@ -10,6 +10,5 @@ object inkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeINKLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeINKLogger")().asInstanceOf[Unit]
+  inline def initializeINKLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeINKLogger")().asInstanceOf[Unit]
 }

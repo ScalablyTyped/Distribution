@@ -33,37 +33,27 @@ trait ListAuditMitigationActionsExecutionsRequest extends StObject {
 }
 object ListAuditMitigationActionsExecutionsRequest {
   
-  @scala.inline
-  def apply(findingId: FindingId, taskId: AuditMitigationActionsTaskId): ListAuditMitigationActionsExecutionsRequest = {
+  inline def apply(findingId: FindingId, taskId: AuditMitigationActionsTaskId): ListAuditMitigationActionsExecutionsRequest = {
     val __obj = js.Dynamic.literal(findingId = findingId.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditMitigationActionsExecutionsRequest]
   }
   
-  @scala.inline
-  implicit class ListAuditMitigationActionsExecutionsRequestMutableBuilder[Self <: ListAuditMitigationActionsExecutionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuditMitigationActionsExecutionsRequest](x: Self) {
     
-    @scala.inline
-    def setActionStatus(value: AuditMitigationActionsExecutionStatus): Self = StObject.set(x, "actionStatus", value.asInstanceOf[js.Any])
+    inline def setActionStatus(value: AuditMitigationActionsExecutionStatus): Self = StObject.set(x, "actionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionStatusUndefined: Self = StObject.set(x, "actionStatus", js.undefined)
+    inline def setActionStatusUndefined: Self = StObject.set(x, "actionStatus", js.undefined)
     
-    @scala.inline
-    def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
+    inline def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

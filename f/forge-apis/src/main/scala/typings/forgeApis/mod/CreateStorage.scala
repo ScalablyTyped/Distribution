@@ -12,25 +12,19 @@ trait CreateStorage extends StObject {
 }
 object CreateStorage {
   
-  @scala.inline
-  def apply(): CreateStorage = {
+  inline def apply(): CreateStorage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStorage]
   }
   
-  @scala.inline
-  implicit class CreateStorageMutableBuilder[Self <: CreateStorage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStorage](x: Self) {
     
-    @scala.inline
-    def setData(value: CreateStorageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CreateStorageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
   }
 }

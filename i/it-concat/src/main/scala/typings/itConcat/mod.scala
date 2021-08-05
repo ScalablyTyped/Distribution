@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(source: AsyncIterable[Buffer | String | typings.bl.mod.^]): js.Promise[typings.bl.mod.^] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.bl.mod.^]]
-  @scala.inline
-  def apply(source: AsyncIterable[Buffer | String | typings.bl.mod.^], options: Type): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(source: AsyncIterable[Buffer | typings.bl.mod.^], options: `0`): js.Promise[typings.bl.mod.^] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.bl.mod.^]]
+  inline def apply(source: AsyncIterable[Buffer | String | typings.bl.mod.^]): js.Promise[typings.bl.mod.^] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.bl.mod.^]]
+  inline def apply(source: AsyncIterable[Buffer | String | typings.bl.mod.^], options: Type): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(source: AsyncIterable[Buffer | typings.bl.mod.^], options: `0`): js.Promise[typings.bl.mod.^] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.bl.mod.^]]
   
   @JSImport("it-concat", JSImport.Namespace)
   @js.native

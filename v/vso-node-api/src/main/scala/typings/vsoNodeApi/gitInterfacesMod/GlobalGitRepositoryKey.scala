@@ -23,22 +23,17 @@ trait GlobalGitRepositoryKey extends StObject {
 }
 object GlobalGitRepositoryKey {
   
-  @scala.inline
-  def apply(collectionId: String, projectId: String, repositoryId: String): GlobalGitRepositoryKey = {
+  inline def apply(collectionId: String, projectId: String, repositoryId: String): GlobalGitRepositoryKey = {
     val __obj = js.Dynamic.literal(collectionId = collectionId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalGitRepositoryKey]
   }
   
-  @scala.inline
-  implicit class GlobalGitRepositoryKeyMutableBuilder[Self <: GlobalGitRepositoryKey] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalGitRepositoryKey](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
   }
 }

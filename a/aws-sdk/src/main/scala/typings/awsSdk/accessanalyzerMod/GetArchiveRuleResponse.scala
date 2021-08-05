@@ -10,16 +10,13 @@ trait GetArchiveRuleResponse extends StObject {
 }
 object GetArchiveRuleResponse {
   
-  @scala.inline
-  def apply(archiveRule: ArchiveRuleSummary): GetArchiveRuleResponse = {
+  inline def apply(archiveRule: ArchiveRuleSummary): GetArchiveRuleResponse = {
     val __obj = js.Dynamic.literal(archiveRule = archiveRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetArchiveRuleResponse]
   }
   
-  @scala.inline
-  implicit class GetArchiveRuleResponseMutableBuilder[Self <: GetArchiveRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetArchiveRuleResponse](x: Self) {
     
-    @scala.inline
-    def setArchiveRule(value: ArchiveRuleSummary): Self = StObject.set(x, "archiveRule", value.asInstanceOf[js.Any])
+    inline def setArchiveRule(value: ArchiveRuleSummary): Self = StObject.set(x, "archiveRule", value.asInstanceOf[js.Any])
   }
 }

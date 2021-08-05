@@ -29,23 +29,18 @@ trait DebugConfiguration
 }
 object DebugConfiguration {
   
-  @scala.inline
-  def apply(name: String, request: String, `type`: String): DebugConfiguration = {
+  inline def apply(name: String, request: String, `type`: String): DebugConfiguration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugConfiguration]
   }
   
-  @scala.inline
-  implicit class DebugConfigurationMutableBuilder[Self <: DebugConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DebugConfiguration](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

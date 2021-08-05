@@ -19,8 +19,7 @@ trait CustomerGateway extends StObject {
 }
 object CustomerGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: CustomerCreateRequest => js.Promise[ValidatedResponse[Customer]],
     delete: String => js.Promise[Unit],
     find: String => js.Promise[Customer],
@@ -31,22 +30,16 @@ object CustomerGateway {
     __obj.asInstanceOf[CustomerGateway]
   }
   
-  @scala.inline
-  implicit class CustomerGatewayMutableBuilder[Self <: CustomerGateway] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerGateway](x: Self) {
     
-    @scala.inline
-    def setCreate(value: CustomerCreateRequest => js.Promise[ValidatedResponse[Customer]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: CustomerCreateRequest => js.Promise[ValidatedResponse[Customer]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFind(value: String => js.Promise[Customer]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => js.Promise[Customer]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: (String, CustomerUpdateRequest) => js.Promise[ValidatedResponse[Customer]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (String, CustomerUpdateRequest) => js.Promise[ValidatedResponse[Customer]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

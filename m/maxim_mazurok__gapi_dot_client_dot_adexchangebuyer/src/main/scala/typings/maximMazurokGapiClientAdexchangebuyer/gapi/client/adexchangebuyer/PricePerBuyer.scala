@@ -20,37 +20,27 @@ trait PricePerBuyer extends StObject {
 }
 object PricePerBuyer {
   
-  @scala.inline
-  def apply(): PricePerBuyer = {
+  inline def apply(): PricePerBuyer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PricePerBuyer]
   }
   
-  @scala.inline
-  implicit class PricePerBuyerMutableBuilder[Self <: PricePerBuyer] (val x: Self) extends AnyVal {
+  extension [Self <: PricePerBuyer](x: Self) {
     
-    @scala.inline
-    def setAuctionTier(value: String): Self = StObject.set(x, "auctionTier", value.asInstanceOf[js.Any])
+    inline def setAuctionTier(value: String): Self = StObject.set(x, "auctionTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuctionTierUndefined: Self = StObject.set(x, "auctionTier", js.undefined)
+    inline def setAuctionTierUndefined: Self = StObject.set(x, "auctionTier", js.undefined)
     
-    @scala.inline
-    def setBilledBuyer(value: Buyer): Self = StObject.set(x, "billedBuyer", value.asInstanceOf[js.Any])
+    inline def setBilledBuyer(value: Buyer): Self = StObject.set(x, "billedBuyer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilledBuyerUndefined: Self = StObject.set(x, "billedBuyer", js.undefined)
+    inline def setBilledBuyerUndefined: Self = StObject.set(x, "billedBuyer", js.undefined)
     
-    @scala.inline
-    def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
+    inline def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
+    inline def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
   }
 }

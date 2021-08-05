@@ -14,22 +14,17 @@ trait Custom extends StObject {
 }
 object Custom {
   
-  @scala.inline
-  def apply(custom: scala.Double, latestOnBuild: scala.Double, latestOnQueue: scala.Double): Custom = {
+  inline def apply(custom: scala.Double, latestOnBuild: scala.Double, latestOnQueue: scala.Double): Custom = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], latestOnBuild = latestOnBuild.asInstanceOf[js.Any], latestOnQueue = latestOnQueue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Custom]
   }
   
-  @scala.inline
-  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+  extension [Self <: Custom](x: Self) {
     
-    @scala.inline
-    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestOnBuild(value: scala.Double): Self = StObject.set(x, "latestOnBuild", value.asInstanceOf[js.Any])
+    inline def setLatestOnBuild(value: scala.Double): Self = StObject.set(x, "latestOnBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestOnQueue(value: scala.Double): Self = StObject.set(x, "latestOnQueue", value.asInstanceOf[js.Any])
+    inline def setLatestOnQueue(value: scala.Double): Self = StObject.set(x, "latestOnQueue", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ListAccountAliasesResponse extends StObject {
 }
 object ListAccountAliasesResponse {
   
-  @scala.inline
-  def apply(AccountAliases: accountAliasListType): ListAccountAliasesResponse = {
+  inline def apply(AccountAliases: accountAliasListType): ListAccountAliasesResponse = {
     val __obj = js.Dynamic.literal(AccountAliases = AccountAliases.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccountAliasesResponse]
   }
   
-  @scala.inline
-  implicit class ListAccountAliasesResponseMutableBuilder[Self <: ListAccountAliasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccountAliasesResponse](x: Self) {
     
-    @scala.inline
-    def setAccountAliases(value: accountAliasListType): Self = StObject.set(x, "AccountAliases", value.asInstanceOf[js.Any])
+    inline def setAccountAliases(value: accountAliasListType): Self = StObject.set(x, "AccountAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountAliasesVarargs(value: accountAliasType*): Self = StObject.set(x, "AccountAliases", js.Array(value :_*))
+    inline def setAccountAliasesVarargs(value: accountAliasType*): Self = StObject.set(x, "AccountAliases", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

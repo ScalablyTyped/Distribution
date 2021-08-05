@@ -18,40 +18,29 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(): Comment = {
+  inline def apply(): Comment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setEditAs(value: CommentEditAs): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
+    inline def setEditAs(value: CommentEditAs): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditAsUndefined: Self = StObject.set(x, "editAs", js.undefined)
+    inline def setEditAsUndefined: Self = StObject.set(x, "editAs", js.undefined)
     
-    @scala.inline
-    def setMargins(value: PartialCommentMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    inline def setMargins(value: PartialCommentMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
+    inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
     
-    @scala.inline
-    def setProtection(value: PartialCommentProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PartialCommentProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
+    inline def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
     
-    @scala.inline
-    def setTexts(value: js.Array[RichText]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: js.Array[RichText]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
+    inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
-    @scala.inline
-    def setTextsVarargs(value: RichText*): Self = StObject.set(x, "texts", js.Array(value :_*))
+    inline def setTextsVarargs(value: RichText*): Self = StObject.set(x, "texts", js.Array(value :_*))
   }
 }

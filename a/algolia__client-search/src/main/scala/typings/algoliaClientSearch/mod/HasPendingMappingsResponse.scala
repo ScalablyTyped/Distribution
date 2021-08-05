@@ -19,22 +19,17 @@ trait HasPendingMappingsResponse extends StObject {
 }
 object HasPendingMappingsResponse {
   
-  @scala.inline
-  def apply(pending: Boolean): HasPendingMappingsResponse = {
+  inline def apply(pending: Boolean): HasPendingMappingsResponse = {
     val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasPendingMappingsResponse]
   }
   
-  @scala.inline
-  implicit class HasPendingMappingsResponseMutableBuilder[Self <: HasPendingMappingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: HasPendingMappingsResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
   }
 }

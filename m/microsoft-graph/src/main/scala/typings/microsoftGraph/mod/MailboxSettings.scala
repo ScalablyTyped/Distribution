@@ -36,85 +36,59 @@ trait MailboxSettings extends StObject {
 }
 object MailboxSettings {
   
-  @scala.inline
-  def apply(): MailboxSettings = {
+  inline def apply(): MailboxSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MailboxSettings]
   }
   
-  @scala.inline
-  implicit class MailboxSettingsMutableBuilder[Self <: MailboxSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MailboxSettings](x: Self) {
     
-    @scala.inline
-    def setArchiveFolder(value: NullableOption[String]): Self = StObject.set(x, "archiveFolder", value.asInstanceOf[js.Any])
+    inline def setArchiveFolder(value: NullableOption[String]): Self = StObject.set(x, "archiveFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveFolderNull: Self = StObject.set(x, "archiveFolder", null)
+    inline def setArchiveFolderNull: Self = StObject.set(x, "archiveFolder", null)
     
-    @scala.inline
-    def setArchiveFolderUndefined: Self = StObject.set(x, "archiveFolder", js.undefined)
+    inline def setArchiveFolderUndefined: Self = StObject.set(x, "archiveFolder", js.undefined)
     
-    @scala.inline
-    def setAutomaticRepliesSetting(value: NullableOption[AutomaticRepliesSetting]): Self = StObject.set(x, "automaticRepliesSetting", value.asInstanceOf[js.Any])
+    inline def setAutomaticRepliesSetting(value: NullableOption[AutomaticRepliesSetting]): Self = StObject.set(x, "automaticRepliesSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticRepliesSettingNull: Self = StObject.set(x, "automaticRepliesSetting", null)
+    inline def setAutomaticRepliesSettingNull: Self = StObject.set(x, "automaticRepliesSetting", null)
     
-    @scala.inline
-    def setAutomaticRepliesSettingUndefined: Self = StObject.set(x, "automaticRepliesSetting", js.undefined)
+    inline def setAutomaticRepliesSettingUndefined: Self = StObject.set(x, "automaticRepliesSetting", js.undefined)
     
-    @scala.inline
-    def setDateFormat(value: NullableOption[String]): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: NullableOption[String]): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatNull: Self = StObject.set(x, "dateFormat", null)
+    inline def setDateFormatNull: Self = StObject.set(x, "dateFormat", null)
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDelegateMeetingMessageDeliveryOptions(value: NullableOption[DelegateMeetingMessageDeliveryOptions]): Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", value.asInstanceOf[js.Any])
+    inline def setDelegateMeetingMessageDeliveryOptions(value: NullableOption[DelegateMeetingMessageDeliveryOptions]): Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateMeetingMessageDeliveryOptionsNull: Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", null)
+    inline def setDelegateMeetingMessageDeliveryOptionsNull: Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", null)
     
-    @scala.inline
-    def setDelegateMeetingMessageDeliveryOptionsUndefined: Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", js.undefined)
+    inline def setDelegateMeetingMessageDeliveryOptionsUndefined: Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: NullableOption[LocaleInfo]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: NullableOption[LocaleInfo]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNull: Self = StObject.set(x, "language", null)
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setTimeFormat(value: NullableOption[String]): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+    inline def setTimeFormat(value: NullableOption[String]): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeFormatNull: Self = StObject.set(x, "timeFormat", null)
+    inline def setTimeFormatNull: Self = StObject.set(x, "timeFormat", null)
     
-    @scala.inline
-    def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
+    inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
+    inline def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
-    @scala.inline
-    def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
+    inline def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingHoursNull: Self = StObject.set(x, "workingHours", null)
+    inline def setWorkingHoursNull: Self = StObject.set(x, "workingHours", null)
     
-    @scala.inline
-    def setWorkingHoursUndefined: Self = StObject.set(x, "workingHours", js.undefined)
+    inline def setWorkingHoursUndefined: Self = StObject.set(x, "workingHours", js.undefined)
   }
 }

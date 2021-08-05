@@ -18,22 +18,17 @@ trait BatchUpdateUserRequest extends StObject {
 }
 object BatchUpdateUserRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, UpdateUserRequestItems: UpdateUserRequestItemList): BatchUpdateUserRequest = {
+  inline def apply(AccountId: NonEmptyString, UpdateUserRequestItems: UpdateUserRequestItemList): BatchUpdateUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UpdateUserRequestItems = UpdateUserRequestItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateUserRequest]
   }
   
-  @scala.inline
-  implicit class BatchUpdateUserRequestMutableBuilder[Self <: BatchUpdateUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateUserRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUserRequestItems(value: UpdateUserRequestItemList): Self = StObject.set(x, "UpdateUserRequestItems", value.asInstanceOf[js.Any])
+    inline def setUpdateUserRequestItems(value: UpdateUserRequestItemList): Self = StObject.set(x, "UpdateUserRequestItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUserRequestItemsVarargs(value: UpdateUserRequestItem*): Self = StObject.set(x, "UpdateUserRequestItems", js.Array(value :_*))
+    inline def setUpdateUserRequestItemsVarargs(value: UpdateUserRequestItem*): Self = StObject.set(x, "UpdateUserRequestItems", js.Array(value :_*))
   }
 }

@@ -9,8 +9,7 @@ trait DescribeBackupInput
      with typings.awsSdkClientDynamodbNode.typesDescribeBackupInputMod.DescribeBackupInput
 object DescribeBackupInput {
   
-  @scala.inline
-  def apply(BackupArn: String): DescribeBackupInput = {
+  inline def apply(BackupArn: String): DescribeBackupInput = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBackupInput]
   }

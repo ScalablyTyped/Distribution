@@ -12,25 +12,19 @@ trait NavigateOptions[TState] extends StObject {
 }
 object NavigateOptions {
   
-  @scala.inline
-  def apply[TState](): NavigateOptions[TState] = {
+  inline def apply[TState](): NavigateOptions[TState] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigateOptions[TState]]
   }
   
-  @scala.inline
-  implicit class NavigateOptionsMutableBuilder[Self <: NavigateOptions[?], TState] (val x: Self & NavigateOptions[TState]) extends AnyVal {
+  extension [Self <: NavigateOptions[?], TState](x: Self & NavigateOptions[TState]) {
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

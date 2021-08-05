@@ -38,49 +38,35 @@ trait QualificationRequirement extends StObject {
 }
 object QualificationRequirement {
   
-  @scala.inline
-  def apply(Comparator: Comparator, QualificationTypeId: String): QualificationRequirement = {
+  inline def apply(Comparator: Comparator, QualificationTypeId: String): QualificationRequirement = {
     val __obj = js.Dynamic.literal(Comparator = Comparator.asInstanceOf[js.Any], QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualificationRequirement]
   }
   
-  @scala.inline
-  implicit class QualificationRequirementMutableBuilder[Self <: QualificationRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: QualificationRequirement](x: Self) {
     
-    @scala.inline
-    def setActionsGuarded(value: HITAccessActions): Self = StObject.set(x, "ActionsGuarded", value.asInstanceOf[js.Any])
+    inline def setActionsGuarded(value: HITAccessActions): Self = StObject.set(x, "ActionsGuarded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsGuardedUndefined: Self = StObject.set(x, "ActionsGuarded", js.undefined)
+    inline def setActionsGuardedUndefined: Self = StObject.set(x, "ActionsGuarded", js.undefined)
     
-    @scala.inline
-    def setComparator(value: Comparator): Self = StObject.set(x, "Comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: Comparator): Self = StObject.set(x, "Comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValues(value: IntegerList): Self = StObject.set(x, "IntegerValues", value.asInstanceOf[js.Any])
+    inline def setIntegerValues(value: IntegerList): Self = StObject.set(x, "IntegerValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValuesUndefined: Self = StObject.set(x, "IntegerValues", js.undefined)
+    inline def setIntegerValuesUndefined: Self = StObject.set(x, "IntegerValues", js.undefined)
     
-    @scala.inline
-    def setIntegerValuesVarargs(value: Integer*): Self = StObject.set(x, "IntegerValues", js.Array(value :_*))
+    inline def setIntegerValuesVarargs(value: Integer*): Self = StObject.set(x, "IntegerValues", js.Array(value :_*))
     
-    @scala.inline
-    def setLocaleValues(value: LocaleList): Self = StObject.set(x, "LocaleValues", value.asInstanceOf[js.Any])
+    inline def setLocaleValues(value: LocaleList): Self = StObject.set(x, "LocaleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleValuesUndefined: Self = StObject.set(x, "LocaleValues", js.undefined)
+    inline def setLocaleValuesUndefined: Self = StObject.set(x, "LocaleValues", js.undefined)
     
-    @scala.inline
-    def setLocaleValuesVarargs(value: Locale*): Self = StObject.set(x, "LocaleValues", js.Array(value :_*))
+    inline def setLocaleValuesVarargs(value: Locale*): Self = StObject.set(x, "LocaleValues", js.Array(value :_*))
     
-    @scala.inline
-    def setQualificationTypeId(value: String): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: String): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredToPreview(value: Boolean): Self = StObject.set(x, "RequiredToPreview", value.asInstanceOf[js.Any])
+    inline def setRequiredToPreview(value: Boolean): Self = StObject.set(x, "RequiredToPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredToPreviewUndefined: Self = StObject.set(x, "RequiredToPreview", js.undefined)
+    inline def setRequiredToPreviewUndefined: Self = StObject.set(x, "RequiredToPreview", js.undefined)
   }
 }

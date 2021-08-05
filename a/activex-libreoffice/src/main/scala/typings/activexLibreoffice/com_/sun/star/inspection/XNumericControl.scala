@@ -45,8 +45,7 @@ trait XNumericControl
 }
 object XNumericControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ControlContext: XPropertyControlContext,
     ControlType: Double,
     ControlWindow: XWindow,
@@ -64,22 +63,16 @@ object XNumericControl {
     __obj.asInstanceOf[XNumericControl]
   }
   
-  @scala.inline
-  implicit class XNumericControlMutableBuilder[Self <: XNumericControl] (val x: Self) extends AnyVal {
+  extension [Self <: XNumericControl](x: Self) {
     
-    @scala.inline
-    def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
+    inline def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUnit(value: Double): Self = StObject.set(x, "DisplayUnit", value.asInstanceOf[js.Any])
+    inline def setDisplayUnit(value: Double): Self = StObject.set(x, "DisplayUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Optional[Double]): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Optional[Double]): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Optional[Double]): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Optional[Double]): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUnit(value: Double): Self = StObject.set(x, "ValueUnit", value.asInstanceOf[js.Any])
+    inline def setValueUnit(value: Double): Self = StObject.set(x, "ValueUnit", value.asInstanceOf[js.Any])
   }
 }

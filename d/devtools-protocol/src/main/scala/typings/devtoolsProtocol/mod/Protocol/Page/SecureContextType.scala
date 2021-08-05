@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecureContextType extends StObject
 object SecureContextType {
   
-  @scala.inline
-  def InsecureAncestor: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor = "InsecureAncestor".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor]
+  inline def InsecureAncestor: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor = "InsecureAncestor".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor]
   
-  @scala.inline
-  def InsecureScheme: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme = "InsecureScheme".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme]
+  inline def InsecureScheme: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme = "InsecureScheme".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme]
   
-  @scala.inline
-  def Secure: typings.devtoolsProtocol.devtoolsProtocolStrings.Secure = "Secure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Secure]
+  inline def Secure: typings.devtoolsProtocol.devtoolsProtocolStrings.Secure = "Secure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Secure]
   
-  @scala.inline
-  def SecureLocalhost: typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost = "SecureLocalhost".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost]
+  inline def SecureLocalhost: typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost = "SecureLocalhost".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost]
 }

@@ -18,25 +18,19 @@ trait AwsRedshiftClusterIamRole extends StObject {
 }
 object AwsRedshiftClusterIamRole {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterIamRole = {
+  inline def apply(): AwsRedshiftClusterIamRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterIamRole]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterIamRoleMutableBuilder[Self <: AwsRedshiftClusterIamRole] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterIamRole](x: Self) {
     
-    @scala.inline
-    def setApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ApplyStatus", value.asInstanceOf[js.Any])
+    inline def setApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ApplyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyStatusUndefined: Self = StObject.set(x, "ApplyStatus", js.undefined)
+    inline def setApplyStatusUndefined: Self = StObject.set(x, "ApplyStatus", js.undefined)
     
-    @scala.inline
-    def setIamRoleArn(value: NonEmptyString): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: NonEmptyString): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
   }
 }

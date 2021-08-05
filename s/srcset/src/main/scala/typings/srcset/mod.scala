@@ -29,8 +29,7 @@ object mod {
   	// ]
   	```
   	*/
-  @scala.inline
-  def parse(srcset: String): js.Array[SrcSetDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(srcset.asInstanceOf[js.Any]).asInstanceOf[js.Array[SrcSetDefinition]]
+  inline def parse(srcset: String): js.Array[SrcSetDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(srcset.asInstanceOf[js.Any]).asInstanceOf[js.Array[SrcSetDefinition]]
   
   /**
   	Stringify `SrcSetDefinition`s.
@@ -57,8 +56,7 @@ object mod {
   	// banner-HD.jpg 2x, banner-phone.jpg 100w, banner-phone-HD.jpg 100w 2x
   	```
   	*/
-  @scala.inline
-  def stringify(srcSetDefinitions: js.Array[SrcSetDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(srcSetDefinitions.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(srcSetDefinitions: js.Array[SrcSetDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(srcSetDefinitions.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait SrcSetDefinition extends StObject {
     
@@ -70,29 +68,22 @@ object mod {
   }
   object SrcSetDefinition {
     
-    @scala.inline
-    def apply(url: String): SrcSetDefinition = {
+    inline def apply(url: String): SrcSetDefinition = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[SrcSetDefinition]
     }
     
-    @scala.inline
-    implicit class SrcSetDefinitionMutableBuilder[Self <: SrcSetDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: SrcSetDefinition](x: Self) {
       
-      @scala.inline
-      def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+      inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

@@ -26,22 +26,17 @@ trait ObserverArrayDescriptor[T /* <: Ractive[T] */]
 }
 object ObserverArrayDescriptor {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](array: Boolean, handler: ObserverArrayCallback[T]): ObserverArrayDescriptor[T] = {
+  inline def apply[T /* <: Ractive[T] */](array: Boolean, handler: ObserverArrayCallback[T]): ObserverArrayDescriptor[T] = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverArrayDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class ObserverArrayDescriptorMutableBuilder[Self <: ObserverArrayDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ObserverArrayDescriptor[T]) extends AnyVal {
+  extension [Self <: ObserverArrayDescriptor[?], T /* <: Ractive[T] */](x: Self & ObserverArrayDescriptor[T]) {
     
-    @scala.inline
-    def setHandler(value: ObserverArrayCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: ObserverArrayCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
   }
 }

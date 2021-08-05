@@ -13,16 +13,13 @@ trait DeleteFleetInput extends StObject {
 }
 object DeleteFleetInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn): DeleteFleetInput = {
+  inline def apply(FleetId: FleetIdOrArn): DeleteFleetInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFleetInput]
   }
   
-  @scala.inline
-  implicit class DeleteFleetInputMutableBuilder[Self <: DeleteFleetInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFleetInput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
   }
 }

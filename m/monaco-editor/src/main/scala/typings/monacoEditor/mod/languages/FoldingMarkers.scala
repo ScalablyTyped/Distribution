@@ -13,19 +13,15 @@ trait FoldingMarkers extends StObject {
 }
 object FoldingMarkers {
   
-  @scala.inline
-  def apply(end: RegExp, start: RegExp): FoldingMarkers = {
+  inline def apply(end: RegExp, start: RegExp): FoldingMarkers = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingMarkers]
   }
   
-  @scala.inline
-  implicit class FoldingMarkersMutableBuilder[Self <: FoldingMarkers] (val x: Self) extends AnyVal {
+  extension [Self <: FoldingMarkers](x: Self) {
     
-    @scala.inline
-    def setEnd(value: RegExp): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: RegExp): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: RegExp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: RegExp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

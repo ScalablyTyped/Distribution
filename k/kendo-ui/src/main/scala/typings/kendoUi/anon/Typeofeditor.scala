@@ -12,16 +12,13 @@ trait Typeofeditor extends StObject {
 }
 object Typeofeditor {
   
-  @scala.inline
-  def apply(Toolbar: Instantiable0[Toolbar]): Typeofeditor = {
+  inline def apply(Toolbar: Instantiable0[Toolbar]): Typeofeditor = {
     val __obj = js.Dynamic.literal(Toolbar = Toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofeditor]
   }
   
-  @scala.inline
-  implicit class TypeofeditorMutableBuilder[Self <: Typeofeditor] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofeditor](x: Self) {
     
-    @scala.inline
-    def setToolbar(value: Instantiable0[Toolbar]): Self = StObject.set(x, "Toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: Instantiable0[Toolbar]): Self = StObject.set(x, "Toolbar", value.asInstanceOf[js.Any])
   }
 }

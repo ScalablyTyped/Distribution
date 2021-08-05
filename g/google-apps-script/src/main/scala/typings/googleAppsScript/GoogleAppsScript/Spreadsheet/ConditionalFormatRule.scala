@@ -21,8 +21,7 @@ trait ConditionalFormatRule extends StObject {
 }
 object ConditionalFormatRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => ConditionalFormatRuleBuilder,
     getBooleanCondition: () => BooleanCondition | Null,
     getGradientCondition: () => GradientCondition | Null,
@@ -32,19 +31,14 @@ object ConditionalFormatRule {
     __obj.asInstanceOf[ConditionalFormatRule]
   }
   
-  @scala.inline
-  implicit class ConditionalFormatRuleMutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormatRule](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => ConditionalFormatRuleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => ConditionalFormatRuleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBooleanCondition(value: () => BooleanCondition | Null): Self = StObject.set(x, "getBooleanCondition", js.Any.fromFunction0(value))
+    inline def setGetBooleanCondition(value: () => BooleanCondition | Null): Self = StObject.set(x, "getBooleanCondition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGradientCondition(value: () => GradientCondition | Null): Self = StObject.set(x, "getGradientCondition", js.Any.fromFunction0(value))
+    inline def setGetGradientCondition(value: () => GradientCondition | Null): Self = StObject.set(x, "getGradientCondition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRanges(value: () => js.Array[Range]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
+    inline def setGetRanges(value: () => js.Array[Range]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
   }
 }

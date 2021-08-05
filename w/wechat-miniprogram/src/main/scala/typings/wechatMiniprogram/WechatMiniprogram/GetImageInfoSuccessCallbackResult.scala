@@ -47,8 +47,7 @@ trait GetImageInfoSuccessCallbackResult extends StObject {
 }
 object GetImageInfoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errMsg: String,
     height: Double,
     orientation: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left,
@@ -61,27 +60,20 @@ object GetImageInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetImageInfoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetImageInfoSuccessCallbackResultMutableBuilder[Self <: GetImageInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetImageInfoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(
+    inline def setOrientation(
       value: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left
     ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait SchemaPolicyAlternativeNameServerConfigTargetNameServer extends StObject {
 }
 object SchemaPolicyAlternativeNameServerConfigTargetNameServer {
   
-  @scala.inline
-  def apply(): SchemaPolicyAlternativeNameServerConfigTargetNameServer = {
+  inline def apply(): SchemaPolicyAlternativeNameServerConfigTargetNameServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolicyAlternativeNameServerConfigTargetNameServer]
   }
   
-  @scala.inline
-  implicit class SchemaPolicyAlternativeNameServerConfigTargetNameServerMutableBuilder[Self <: SchemaPolicyAlternativeNameServerConfigTargetNameServer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolicyAlternativeNameServerConfigTargetNameServer](x: Self) {
     
-    @scala.inline
-    def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
+    inline def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
+    inline def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

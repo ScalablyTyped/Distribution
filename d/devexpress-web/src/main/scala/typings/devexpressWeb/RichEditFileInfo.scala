@@ -26,22 +26,17 @@ trait RichEditFileInfo extends StObject {
 }
 object RichEditFileInfo {
   
-  @scala.inline
-  def apply(documentFormat: DocumentFormat, fileName: String, folderPath: String): RichEditFileInfo = {
+  inline def apply(documentFormat: DocumentFormat, fileName: String, folderPath: String): RichEditFileInfo = {
     val __obj = js.Dynamic.literal(documentFormat = documentFormat.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], folderPath = folderPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichEditFileInfo]
   }
   
-  @scala.inline
-  implicit class RichEditFileInfoMutableBuilder[Self <: RichEditFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RichEditFileInfo](x: Self) {
     
-    @scala.inline
-    def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
+    inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
+    inline def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
   }
 }

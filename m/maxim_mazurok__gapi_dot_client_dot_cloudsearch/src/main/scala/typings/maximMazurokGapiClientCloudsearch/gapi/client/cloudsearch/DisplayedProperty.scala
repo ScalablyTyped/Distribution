@@ -14,19 +14,15 @@ trait DisplayedProperty extends StObject {
 }
 object DisplayedProperty {
   
-  @scala.inline
-  def apply(): DisplayedProperty = {
+  inline def apply(): DisplayedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayedProperty]
   }
   
-  @scala.inline
-  implicit class DisplayedPropertyMutableBuilder[Self <: DisplayedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayedProperty](x: Self) {
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
+    inline def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
   }
 }

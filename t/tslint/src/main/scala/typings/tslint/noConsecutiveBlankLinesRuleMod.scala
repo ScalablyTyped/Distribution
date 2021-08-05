@@ -30,19 +30,15 @@ object noConsecutiveBlankLinesRuleMod {
     @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "Rule.DEFAULT_ALLOWED_BLANKS")
     @js.native
     def DEFAULT_ALLOWED_BLANKS: Double = js.native
-    @scala.inline
-    def DEFAULT_ALLOWED_BLANKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALLOWED_BLANKS")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_ALLOWED_BLANKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALLOWED_BLANKS")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FAILURE_STRING_FACTORY(allowed: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(allowed.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_FACTORY(allowed: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(allowed.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noConsecutiveBlankLinesRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getTemplateRanges(sourceFile: SourceFile): js.Array[TextRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateRanges")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[js.Array[TextRange]]
+  inline def getTemplateRanges(sourceFile: SourceFile): js.Array[TextRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateRanges")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[js.Array[TextRange]]
 }

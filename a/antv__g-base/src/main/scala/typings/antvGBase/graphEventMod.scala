@@ -292,8 +292,7 @@ object graphEventMod {
   }
   object GraphEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bubbles: Boolean,
       clientX: Double,
       clientY: Double,
@@ -323,80 +322,55 @@ object graphEventMod {
       __obj.asInstanceOf[GraphEvent]
     }
     
-    @scala.inline
-    implicit class GraphEventMutableBuilder[Self <: GraphEvent] (val x: Self) extends AnyVal {
+    extension [Self <: GraphEvent](x: Self) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: LooseObject): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: LooseObject): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateObject(value: js.Object): Self = StObject.set(x, "delegateObject", value.asInstanceOf[js.Any])
+      inline def setDelegateObject(value: js.Object): Self = StObject.set(x, "delegateObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateTarget(value: LooseObject): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
+      inline def setDelegateTarget(value: LooseObject): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromShape(value: IShape): Self = StObject.set(x, "fromShape", value.asInstanceOf[js.Any])
+      inline def setFromShape(value: IShape): Self = StObject.set(x, "fromShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPropagationPath(value: js.Array[js.Any]): Self = StObject.set(x, "propagationPath", value.asInstanceOf[js.Any])
+      inline def setPropagationPath(value: js.Array[js.Any]): Self = StObject.set(x, "propagationPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagationPathVarargs(value: js.Any*): Self = StObject.set(x, "propagationPath", js.Array(value :_*))
+      inline def setPropagationPathVarargs(value: js.Any*): Self = StObject.set(x, "propagationPath", js.Array(value :_*))
       
-      @scala.inline
-      def setPropagationStopped(value: Boolean): Self = StObject.set(x, "propagationStopped", value.asInstanceOf[js.Any])
+      inline def setPropagationStopped(value: Boolean): Self = StObject.set(x, "propagationStopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+      inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShape(value: IShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: IShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: LooseObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: LooseObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToShape(value: IShape): Self = StObject.set(x, "toShape", value.asInstanceOf[js.Any])
+      inline def setToShape(value: IShape): Self = StObject.set(x, "toShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

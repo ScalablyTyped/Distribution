@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisTitleOptions extends StObject
 object AxisTitleOptions {
   
-  @scala.inline
-  def XAxisTitleOptions(): typings.highcharts.mod.XAxisTitleOptions = {
+  inline def XAxisTitleOptions(): typings.highcharts.mod.XAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.highcharts.mod.XAxisTitleOptions]
   }
   
-  @scala.inline
-  def YAxisTitleOptions(): typings.highcharts.mod.YAxisTitleOptions = {
+  inline def YAxisTitleOptions(): typings.highcharts.mod.YAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.highcharts.mod.YAxisTitleOptions]
   }
   
-  @scala.inline
-  def ZAxisTitleOptions(): typings.highcharts.mod.ZAxisTitleOptions = {
+  inline def ZAxisTitleOptions(): typings.highcharts.mod.ZAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.highcharts.mod.ZAxisTitleOptions]
   }

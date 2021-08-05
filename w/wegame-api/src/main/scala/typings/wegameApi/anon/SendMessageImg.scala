@@ -39,61 +39,43 @@ trait SendMessageImg extends StObject {
 }
 object SendMessageImg {
   
-  @scala.inline
-  def apply(): SendMessageImg = {
+  inline def apply(): SendMessageImg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendMessageImg]
   }
   
-  @scala.inline
-  implicit class SendMessageImgMutableBuilder[Self <: SendMessageImg] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageImg](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSendMessageImg(value: String): Self = StObject.set(x, "sendMessageImg", value.asInstanceOf[js.Any])
+    inline def setSendMessageImg(value: String): Self = StObject.set(x, "sendMessageImg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMessageImgUndefined: Self = StObject.set(x, "sendMessageImg", js.undefined)
+    inline def setSendMessageImgUndefined: Self = StObject.set(x, "sendMessageImg", js.undefined)
     
-    @scala.inline
-    def setSendMessagePath(value: String): Self = StObject.set(x, "sendMessagePath", value.asInstanceOf[js.Any])
+    inline def setSendMessagePath(value: String): Self = StObject.set(x, "sendMessagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMessagePathUndefined: Self = StObject.set(x, "sendMessagePath", js.undefined)
+    inline def setSendMessagePathUndefined: Self = StObject.set(x, "sendMessagePath", js.undefined)
     
-    @scala.inline
-    def setSendMessageTitle(value: String): Self = StObject.set(x, "sendMessageTitle", value.asInstanceOf[js.Any])
+    inline def setSendMessageTitle(value: String): Self = StObject.set(x, "sendMessageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMessageTitleUndefined: Self = StObject.set(x, "sendMessageTitle", js.undefined)
+    inline def setSendMessageTitleUndefined: Self = StObject.set(x, "sendMessageTitle", js.undefined)
     
-    @scala.inline
-    def setSessionFrom(value: String): Self = StObject.set(x, "sessionFrom", value.asInstanceOf[js.Any])
+    inline def setSessionFrom(value: String): Self = StObject.set(x, "sessionFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionFromUndefined: Self = StObject.set(x, "sessionFrom", js.undefined)
+    inline def setSessionFromUndefined: Self = StObject.set(x, "sessionFrom", js.undefined)
     
-    @scala.inline
-    def setShowMessageCard(value: Boolean): Self = StObject.set(x, "showMessageCard", value.asInstanceOf[js.Any])
+    inline def setShowMessageCard(value: Boolean): Self = StObject.set(x, "showMessageCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMessageCardUndefined: Self = StObject.set(x, "showMessageCard", js.undefined)
+    inline def setShowMessageCardUndefined: Self = StObject.set(x, "showMessageCard", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

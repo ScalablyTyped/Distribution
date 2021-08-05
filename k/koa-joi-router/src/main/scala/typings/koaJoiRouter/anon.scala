@@ -25,20 +25,16 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(): Body = {
+    inline def apply(): Body = {
       val __obj = js.Dynamic.literal(body = null)
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
     }
   }
   
@@ -70,98 +66,68 @@ object anon {
   }
   object ContinueOnError {
     
-    @scala.inline
-    def apply(): ContinueOnError = {
+    inline def apply(): ContinueOnError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContinueOnError]
     }
     
-    @scala.inline
-    implicit class ContinueOnErrorMutableBuilder[Self <: ContinueOnError] (val x: Self) extends AnyVal {
+    extension [Self <: ContinueOnError](x: Self) {
       
-      @scala.inline
-      def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+      inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
+      inline def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
       
-      @scala.inline
-      def setFailure(value: Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      inline def setFailure(value: Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+      inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
-      @scala.inline
-      def setFormOptions(value: Options): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
+      inline def setFormOptions(value: Options): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormOptionsUndefined: Self = StObject.set(x, "formOptions", js.undefined)
+      inline def setFormOptionsUndefined: Self = StObject.set(x, "formOptions", js.undefined)
       
-      @scala.inline
-      def setHeader(value: SchemaLike): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: SchemaLike): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderNull: Self = StObject.set(x, "header", null)
+      inline def setHeaderNull: Self = StObject.set(x, "header", null)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setJsonOptions(value: Options): Self = StObject.set(x, "jsonOptions", value.asInstanceOf[js.Any])
+      inline def setJsonOptions(value: Options): Self = StObject.set(x, "jsonOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonOptionsUndefined: Self = StObject.set(x, "jsonOptions", js.undefined)
+      inline def setJsonOptionsUndefined: Self = StObject.set(x, "jsonOptions", js.undefined)
       
-      @scala.inline
-      def setMaxBody(value: Double): Self = StObject.set(x, "maxBody", value.asInstanceOf[js.Any])
+      inline def setMaxBody(value: Double): Self = StObject.set(x, "maxBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBodyUndefined: Self = StObject.set(x, "maxBody", js.undefined)
+      inline def setMaxBodyUndefined: Self = StObject.set(x, "maxBody", js.undefined)
       
-      @scala.inline
-      def setMultipartOptions(value: Options): Self = StObject.set(x, "multipartOptions", value.asInstanceOf[js.Any])
+      inline def setMultipartOptions(value: Options): Self = StObject.set(x, "multipartOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipartOptionsUndefined: Self = StObject.set(x, "multipartOptions", js.undefined)
+      inline def setMultipartOptionsUndefined: Self = StObject.set(x, "multipartOptions", js.undefined)
       
-      @scala.inline
-      def setOutput(value: StringDictionary[OutputValidation]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: StringDictionary[OutputValidation]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setParams(value: SchemaLike): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: SchemaLike): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsNull: Self = StObject.set(x, "params", null)
+      inline def setParamsNull: Self = StObject.set(x, "params", null)
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setQuery(value: SchemaLike): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: SchemaLike): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryNull: Self = StObject.set(x, "query", null)
+      inline def setQueryNull: Self = StObject.set(x, "query", null)
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setType(value: form | json | multipart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: form | json | multipart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -182,20 +148,16 @@ object anon {
   }
   object Headers {
     
-    @scala.inline
-    def apply(): Headers = {
+    inline def apply(): Headers = {
       val __obj = js.Dynamic.literal(headers = null)
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: SchemaLike): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: SchemaLike): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersNull: Self = StObject.set(x, "headers", null)
+      inline def setHeadersNull: Self = StObject.set(x, "headers", null)
     }
   }
   

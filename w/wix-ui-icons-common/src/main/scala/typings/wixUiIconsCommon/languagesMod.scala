@@ -22,20 +22,16 @@ object languagesMod extends Shortcut {
   }
   object LanguagesProps {
     
-    @scala.inline
-    def apply(): LanguagesProps = {
+    inline def apply(): LanguagesProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LanguagesProps]
     }
     
-    @scala.inline
-    implicit class LanguagesPropsMutableBuilder[Self <: LanguagesProps] (val x: Self) extends AnyVal {
+    extension [Self <: LanguagesProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

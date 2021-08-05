@@ -8,11 +8,9 @@ object reactNativeCommunityPickerStrings {
   
   @js.native
   sealed trait dialog extends StObject
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
   sealed trait dropdown extends StObject
-  @scala.inline
-  def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
 }

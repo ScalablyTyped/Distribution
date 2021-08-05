@@ -70,11 +70,9 @@ object hlsMod {
     @JSImport("playable/dist/src/adapters/hls", "default.DEFAULT_HLS_CONFIG")
     @js.native
     def DEFAULT_HLS_CONFIG: js.Any = js.native
-    @scala.inline
-    def DEFAULT_HLS_CONFIG_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HLS_CONFIG")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_HLS_CONFIG_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HLS_CONFIG")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -82,31 +80,31 @@ object hlsMod {
     extends StObject
        with IPlaybackAdapter {
     
-    var _attachOnPlay: js.Any = js.native
+    /* private */ var _attachOnPlay: js.Any = js.native
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _broadcastError: js.Any = js.native
+    /* private */ var _broadcastError: js.Any = js.native
     
-    var _isAttached: js.Any = js.native
+    /* private */ var _isAttached: js.Any = js.native
     
-    var _isDynamicContent: js.Any = js.native
+    /* private */ var _isDynamicContent: js.Any = js.native
     
-    var _isDynamicContentEnded: js.Any = js.native
+    /* private */ var _isDynamicContentEnded: js.Any = js.native
     
-    var _logError: js.Any = js.native
+    /* private */ var _logError: js.Any = js.native
     
-    var _mediaRecoverTimeout: js.Any = js.native
+    /* private */ var _mediaRecoverTimeout: js.Any = js.native
     
-    var _networkRecoverTimeout: js.Any = js.native
+    /* private */ var _networkRecoverTimeout: js.Any = js.native
     
-    var _onEndOfStream: js.Any = js.native
+    /* private */ var _onEndOfStream: js.Any = js.native
     
-    var _onLevelUpdated: js.Any = js.native
+    /* private */ var _onLevelUpdated: js.Any = js.native
     
-    var _tryRecoverMediaError: js.Any = js.native
+    /* private */ var _tryRecoverMediaError: js.Any = js.native
     
-    var _tryRecoverNetworkError: js.Any = js.native
+    /* private */ var _tryRecoverNetworkError: js.Any = js.native
     
     @JSName("currentUrl")
     def currentUrl_MHlsAdapter: String = js.native
@@ -114,9 +112,9 @@ object hlsMod {
     @JSName("debugInfo")
     def debugInfo_MHlsAdapter: BwEstimate = js.native
     
-    var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: js.Any = js.native
     
-    var hls: js.Any = js.native
+    /* private */ var hls: js.Any = js.native
     
     @JSName("isDynamicContentEnded")
     def isDynamicContentEnded_MHlsAdapter: Boolean = js.native
@@ -130,7 +128,7 @@ object hlsMod {
     @JSName("isSyncWithLive")
     def isSyncWithLive_MHlsAdapter: Boolean = js.native
     
-    var mediaStream: js.Any = js.native
+    /* private */ var mediaStream: js.Any = js.native
     
     @JSName("mediaStreamDeliveryPriority")
     def mediaStreamDeliveryPriority_MHlsAdapter: ADAPTIVE_VIA_MSE | FORCED = js.native
@@ -140,6 +138,6 @@ object hlsMod {
     @JSName("syncWithLiveTime")
     def syncWithLiveTime_MHlsAdapter: Double = js.native
     
-    var videoElement: js.Any = js.native
+    /* private */ var videoElement: js.Any = js.native
   }
 }

@@ -38,43 +38,31 @@ trait Mine extends StObject {
 }
 object Mine {
   
-  @scala.inline
-  def apply(pagetoken: String, part: String): Mine = {
+  inline def apply(pagetoken: String, part: String): Mine = {
     val __obj = js.Dynamic.literal(pagetoken = pagetoken.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mine]
   }
   
-  @scala.inline
-  implicit class MineMutableBuilder[Self <: Mine] (val x: Self) extends AnyVal {
+  extension [Self <: Mine](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
+    inline def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
+    inline def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
     
-    @scala.inline
-    def setPagetoken(value: String): Self = StObject.set(x, "pagetoken", value.asInstanceOf[js.Any])
+    inline def setPagetoken(value: String): Self = StObject.set(x, "pagetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
   }
 }

@@ -48,58 +48,41 @@ trait PersistentVolumeClaimSpec extends StObject {
 }
 object PersistentVolumeClaimSpec {
   
-  @scala.inline
-  def apply(): PersistentVolumeClaimSpec = {
+  inline def apply(): PersistentVolumeClaimSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistentVolumeClaimSpec]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimSpecMutableBuilder[Self <: PersistentVolumeClaimSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimSpec](x: Self) {
     
-    @scala.inline
-    def setAccessModes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
+    inline def setAccessModes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessModesUndefined: Self = StObject.set(x, "accessModes", js.undefined)
+    inline def setAccessModesUndefined: Self = StObject.set(x, "accessModes", js.undefined)
     
-    @scala.inline
-    def setAccessModesVarargs(value: Input[String]*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
+    inline def setAccessModesVarargs(value: Input[String]*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setResources(value: Input[ResourceRequirements]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Input[ResourceRequirements]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setStorageClassName(value: Input[String]): Self = StObject.set(x, "storageClassName", value.asInstanceOf[js.Any])
+    inline def setStorageClassName(value: Input[String]): Self = StObject.set(x, "storageClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassNameUndefined: Self = StObject.set(x, "storageClassName", js.undefined)
+    inline def setStorageClassNameUndefined: Self = StObject.set(x, "storageClassName", js.undefined)
     
-    @scala.inline
-    def setVolumeMode(value: Input[String]): Self = StObject.set(x, "volumeMode", value.asInstanceOf[js.Any])
+    inline def setVolumeMode(value: Input[String]): Self = StObject.set(x, "volumeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeModeUndefined: Self = StObject.set(x, "volumeMode", js.undefined)
+    inline def setVolumeModeUndefined: Self = StObject.set(x, "volumeMode", js.undefined)
     
-    @scala.inline
-    def setVolumeName(value: Input[String]): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
+    inline def setVolumeName(value: Input[String]): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeNameUndefined: Self = StObject.set(x, "volumeName", js.undefined)
+    inline def setVolumeNameUndefined: Self = StObject.set(x, "volumeName", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait BindingOptions extends StObject {
 }
 object BindingOptions {
   
-  @scala.inline
-  def apply(): BindingOptions = {
+  inline def apply(): BindingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindingOptions]
   }
   
-  @scala.inline
-  implicit class BindingOptionsMutableBuilder[Self <: BindingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BindingOptions](x: Self) {
     
-    @scala.inline
-    def setBindingParams(value: Boolean): Self = StObject.set(x, "bindingParams", value.asInstanceOf[js.Any])
+    inline def setBindingParams(value: Boolean): Self = StObject.set(x, "bindingParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingParamsUndefined: Self = StObject.set(x, "bindingParams", js.undefined)
+    inline def setBindingParamsUndefined: Self = StObject.set(x, "bindingParams", js.undefined)
     
-    @scala.inline
-    def setValueAccessors(value: Boolean): Self = StObject.set(x, "valueAccessors", value.asInstanceOf[js.Any])
+    inline def setValueAccessors(value: Boolean): Self = StObject.set(x, "valueAccessors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAccessorsUndefined: Self = StObject.set(x, "valueAccessors", js.undefined)
+    inline def setValueAccessorsUndefined: Self = StObject.set(x, "valueAccessors", js.undefined)
   }
 }

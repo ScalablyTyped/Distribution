@@ -21,49 +21,35 @@ trait PartialClassNameMapBadgeC extends StObject {
 }
 object PartialClassNameMapBadgeC {
   
-  @scala.inline
-  def apply(): PartialClassNameMapBadgeC = {
+  inline def apply(): PartialClassNameMapBadgeC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapBadgeC]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapBadgeCMutableBuilder[Self <: PartialClassNameMapBadgeC] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapBadgeC](x: Self) {
     
-    @scala.inline
-    def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
-    @scala.inline
-    def setDot(value: String): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+    inline def setDot(value: String): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+    inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
     
-    @scala.inline
-    def setInvisible(value: String): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+    inline def setInvisible(value: String): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+    inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

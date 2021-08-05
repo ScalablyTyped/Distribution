@@ -22,13 +22,11 @@ object CanvasContext {
   @JSGlobal("Vex.Flow.CanvasContext.HEIGHT")
   @js.native
   def HEIGHT: Double = js.native
-  @scala.inline
-  def HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT")(x.asInstanceOf[js.Any])
+  inline def HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("Vex.Flow.CanvasContext.WIDTH")
   @js.native
   def WIDTH: Double = js.native
-  @scala.inline
-  def WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WIDTH")(x.asInstanceOf[js.Any])
+  inline def WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WIDTH")(x.asInstanceOf[js.Any])
 }

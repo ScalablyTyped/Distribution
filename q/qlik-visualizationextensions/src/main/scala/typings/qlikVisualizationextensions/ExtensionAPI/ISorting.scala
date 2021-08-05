@@ -11,16 +11,13 @@ trait ISorting extends StObject {
 }
 object ISorting {
   
-  @scala.inline
-  def apply(): ISorting = {
+  inline def apply(): ISorting = {
     val __obj = js.Dynamic.literal(uses = "sorting")
     __obj.asInstanceOf[ISorting]
   }
   
-  @scala.inline
-  implicit class ISortingMutableBuilder[Self <: ISorting] (val x: Self) extends AnyVal {
+  extension [Self <: ISorting](x: Self) {
     
-    @scala.inline
-    def setUses(value: sorting): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+    inline def setUses(value: sorting): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
   }
 }

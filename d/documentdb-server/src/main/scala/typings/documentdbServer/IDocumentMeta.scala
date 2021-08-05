@@ -24,8 +24,7 @@ trait IDocumentMeta
 }
 object IDocumentMeta {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _self: String,
     _ts: String,
     constructor: js.Function,
@@ -37,34 +36,24 @@ object IDocumentMeta {
     __obj.asInstanceOf[IDocumentMeta]
   }
   
-  @scala.inline
-  implicit class IDocumentMetaMutableBuilder[Self <: IDocumentMeta] (val x: Self) extends AnyVal {
+  extension [Self <: IDocumentMeta](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_attachments(value: String): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
+    inline def set_attachments(value: String): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_attachmentsUndefined: Self = StObject.set(x, "_attachments", js.undefined)
+    inline def set_attachmentsUndefined: Self = StObject.set(x, "_attachments", js.undefined)
     
-    @scala.inline
-    def set_etag(value: String): Self = StObject.set(x, "_etag", value.asInstanceOf[js.Any])
+    inline def set_etag(value: String): Self = StObject.set(x, "_etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_etagUndefined: Self = StObject.set(x, "_etag", js.undefined)
+    inline def set_etagUndefined: Self = StObject.set(x, "_etag", js.undefined)
     
-    @scala.inline
-    def set_rid(value: String): Self = StObject.set(x, "_rid", value.asInstanceOf[js.Any])
+    inline def set_rid(value: String): Self = StObject.set(x, "_rid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ridUndefined: Self = StObject.set(x, "_rid", js.undefined)
+    inline def set_ridUndefined: Self = StObject.set(x, "_rid", js.undefined)
     
-    @scala.inline
-    def set_self(value: String): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
+    inline def set_self(value: String): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ts(value: String): Self = StObject.set(x, "_ts", value.asInstanceOf[js.Any])
+    inline def set_ts(value: String): Self = StObject.set(x, "_ts", value.asInstanceOf[js.Any])
   }
 }

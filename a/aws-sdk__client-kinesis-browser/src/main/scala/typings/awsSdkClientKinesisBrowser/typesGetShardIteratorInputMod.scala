@@ -67,8 +67,7 @@ object typesGetShardIteratorInputMod {
   }
   object GetShardIteratorInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ShardId: String,
       ShardIteratorType: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String,
       StreamName: String
@@ -77,49 +76,35 @@ object typesGetShardIteratorInputMod {
       __obj.asInstanceOf[GetShardIteratorInput]
     }
     
-    @scala.inline
-    implicit class GetShardIteratorInputMutableBuilder[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetShardIteratorInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+      inline def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardIteratorType(value: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
+      inline def setShardIteratorType(value: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingSequenceNumber(value: String): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setStartingSequenceNumber(value: String): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
+      inline def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
       
-      @scala.inline
-      def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
   }
 }

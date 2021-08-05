@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsFullScreenOptions extends StObject {
 }
 object StockToolsGuiDefinitionsFullScreenOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsFullScreenOptions = {
+  inline def apply(): StockToolsGuiDefinitionsFullScreenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsFullScreenOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsFullScreenOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsFullScreenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsFullScreenOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

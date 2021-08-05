@@ -54,29 +54,22 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setKeepOverrides(value: Boolean): Self = StObject.set(x, "keepOverrides", value.asInstanceOf[js.Any])
+      inline def setKeepOverrides(value: Boolean): Self = StObject.set(x, "keepOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepOverridesUndefined: Self = StObject.set(x, "keepOverrides", js.undefined)
+      inline def setKeepOverridesUndefined: Self = StObject.set(x, "keepOverrides", js.undefined)
       
-      @scala.inline
-      def setOrder(value: SortOrder | SortFunction): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: SortOrder | SortFunction): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderFunction2(value: (/* aProp */ String, /* bProp */ String) => `-1` | `0` | `1`): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
+      inline def setOrderFunction2(value: (/* aProp */ String, /* bProp */ String) => `-1` | `0` | `1`): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   

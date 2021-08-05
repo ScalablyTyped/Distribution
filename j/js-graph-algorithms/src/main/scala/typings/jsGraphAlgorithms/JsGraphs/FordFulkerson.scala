@@ -6,24 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FordFulkerson extends StObject {
   
-  var edgeTo: js.Any
+  /* private */ var edgeTo: js.Any
   
   def hasAugmentedPath(G: FlowNetwork): Boolean
   
-  var marked: js.Any
+  /* private */ var marked: js.Any
   
   def minCut(G: FlowNetwork): js.Array[FlowEdge]
   
-  var s: js.Any
+  /* private */ var s: js.Any
   
-  var t: js.Any
+  /* private */ var t: js.Any
   
   var value: Double
 }
 object FordFulkerson {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     edgeTo: js.Any,
     hasAugmentedPath: FlowNetwork => Boolean,
     marked: js.Any,
@@ -36,28 +35,20 @@ object FordFulkerson {
     __obj.asInstanceOf[FordFulkerson]
   }
   
-  @scala.inline
-  implicit class FordFulkersonMutableBuilder[Self <: FordFulkerson] (val x: Self) extends AnyVal {
+  extension [Self <: FordFulkerson](x: Self) {
     
-    @scala.inline
-    def setEdgeTo(value: js.Any): Self = StObject.set(x, "edgeTo", value.asInstanceOf[js.Any])
+    inline def setEdgeTo(value: js.Any): Self = StObject.set(x, "edgeTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAugmentedPath(value: FlowNetwork => Boolean): Self = StObject.set(x, "hasAugmentedPath", js.Any.fromFunction1(value))
+    inline def setHasAugmentedPath(value: FlowNetwork => Boolean): Self = StObject.set(x, "hasAugmentedPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+    inline def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCut(value: FlowNetwork => js.Array[FlowEdge]): Self = StObject.set(x, "minCut", js.Any.fromFunction1(value))
+    inline def setMinCut(value: FlowNetwork => js.Array[FlowEdge]): Self = StObject.set(x, "minCut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: js.Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: js.Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

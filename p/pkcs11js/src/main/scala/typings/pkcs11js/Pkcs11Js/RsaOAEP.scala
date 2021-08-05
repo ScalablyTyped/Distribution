@@ -19,29 +19,22 @@ trait RsaOAEP
 }
 object RsaOAEP {
   
-  @scala.inline
-  def apply(hashAlg: Double, mgf: Double, source: Double, `type`: Double): RsaOAEP = {
+  inline def apply(hashAlg: Double, mgf: Double, source: Double, `type`: Double): RsaOAEP = {
     val __obj = js.Dynamic.literal(hashAlg = hashAlg.asInstanceOf[js.Any], mgf = mgf.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaOAEP]
   }
   
-  @scala.inline
-  implicit class RsaOAEPMutableBuilder[Self <: RsaOAEP] (val x: Self) extends AnyVal {
+  extension [Self <: RsaOAEP](x: Self) {
     
-    @scala.inline
-    def setHashAlg(value: Double): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: Double): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMgf(value: Double): Self = StObject.set(x, "mgf", value.asInstanceOf[js.Any])
+    inline def setMgf(value: Double): Self = StObject.set(x, "mgf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceData(value: Buffer): Self = StObject.set(x, "sourceData", value.asInstanceOf[js.Any])
+    inline def setSourceData(value: Buffer): Self = StObject.set(x, "sourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDataUndefined: Self = StObject.set(x, "sourceData", js.undefined)
+    inline def setSourceDataUndefined: Self = StObject.set(x, "sourceData", js.undefined)
   }
 }

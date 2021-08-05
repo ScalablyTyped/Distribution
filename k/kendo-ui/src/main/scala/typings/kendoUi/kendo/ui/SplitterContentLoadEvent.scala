@@ -13,19 +13,15 @@ trait SplitterContentLoadEvent
 }
 object SplitterContentLoadEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Splitter): SplitterContentLoadEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Splitter): SplitterContentLoadEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterContentLoadEvent]
   }
   
-  @scala.inline
-  implicit class SplitterContentLoadEventMutableBuilder[Self <: SplitterContentLoadEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SplitterContentLoadEvent](x: Self) {
     
-    @scala.inline
-    def setPane(value: Element): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: Element): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
   }
 }

@@ -14,23 +14,18 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(toastMessageFactory: js.Any): ClassName = {
+    inline def apply(toastMessageFactory: js.Any): ClassName = {
       val __obj = js.Dynamic.literal(toastMessageFactory = toastMessageFactory.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setToastMessageFactory(value: js.Any): Self = StObject.set(x, "toastMessageFactory", value.asInstanceOf[js.Any])
+      inline def setToastMessageFactory(value: js.Any): Self = StObject.set(x, "toastMessageFactory", value.asInstanceOf[js.Any])
     }
   }
 }

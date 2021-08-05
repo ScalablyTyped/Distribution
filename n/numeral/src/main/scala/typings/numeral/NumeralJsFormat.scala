@@ -16,22 +16,17 @@ trait NumeralJsFormat extends StObject {
 }
 object NumeralJsFormat {
   
-  @scala.inline
-  def apply(format: (js.Any, String, RoundingFunction) => String, regexps: Format, unformat: String => Double): NumeralJsFormat = {
+  inline def apply(format: (js.Any, String, RoundingFunction) => String, regexps: Format, unformat: String => Double): NumeralJsFormat = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction3(format), regexps = regexps.asInstanceOf[js.Any], unformat = js.Any.fromFunction1(unformat))
     __obj.asInstanceOf[NumeralJsFormat]
   }
   
-  @scala.inline
-  implicit class NumeralJsFormatMutableBuilder[Self <: NumeralJsFormat] (val x: Self) extends AnyVal {
+  extension [Self <: NumeralJsFormat](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (js.Any, String, RoundingFunction) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+    inline def setFormat(value: (js.Any, String, RoundingFunction) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRegexps(value: Format): Self = StObject.set(x, "regexps", value.asInstanceOf[js.Any])
+    inline def setRegexps(value: Format): Self = StObject.set(x, "regexps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnformat(value: String => Double): Self = StObject.set(x, "unformat", js.Any.fromFunction1(value))
+    inline def setUnformat(value: String => Double): Self = StObject.set(x, "unformat", js.Any.fromFunction1(value))
   }
 }

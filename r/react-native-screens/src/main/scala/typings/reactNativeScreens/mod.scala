@@ -151,13 +151,10 @@ object mod {
   @js.native
   val ScreenStackHeaderRightView: ComponentClass[ViewProps, ComponentState] = js.native
   
-  @scala.inline
-  def enableScreens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScreens")().asInstanceOf[Unit]
-  @scala.inline
-  def enableScreens(shouldEnableScreens: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScreens")(shouldEnableScreens.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableScreens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScreens")().asInstanceOf[Unit]
+  inline def enableScreens(shouldEnableScreens: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScreens")(shouldEnableScreens.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def screensEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("screensEnabled")().asInstanceOf[Boolean]
+  inline def screensEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("screensEnabled")().asInstanceOf[Boolean]
   
   @JSImport("react-native-screens", "shouldUseActivityState")
   @js.native
@@ -188,65 +185,45 @@ object mod {
   trait BlurEffectTypes extends StObject
   object BlurEffectTypes {
     
-    @scala.inline
-    def dark: typings.reactNativeScreens.reactNativeScreensStrings.dark = "dark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.dark]
+    inline def dark: typings.reactNativeScreens.reactNativeScreensStrings.dark = "dark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.dark]
     
-    @scala.inline
-    def extraLight: typings.reactNativeScreens.reactNativeScreensStrings.extraLight = "extraLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.extraLight]
+    inline def extraLight: typings.reactNativeScreens.reactNativeScreensStrings.extraLight = "extraLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.extraLight]
     
-    @scala.inline
-    def light: typings.reactNativeScreens.reactNativeScreensStrings.light = "light".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.light]
+    inline def light: typings.reactNativeScreens.reactNativeScreensStrings.light = "light".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.light]
     
-    @scala.inline
-    def prominent: typings.reactNativeScreens.reactNativeScreensStrings.prominent = "prominent".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.prominent]
+    inline def prominent: typings.reactNativeScreens.reactNativeScreensStrings.prominent = "prominent".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.prominent]
     
-    @scala.inline
-    def regular: typings.reactNativeScreens.reactNativeScreensStrings.regular = "regular".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.regular]
+    inline def regular: typings.reactNativeScreens.reactNativeScreensStrings.regular = "regular".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.regular]
     
-    @scala.inline
-    def systemChromeMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterial = "systemChromeMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterial]
+    inline def systemChromeMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterial = "systemChromeMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterial]
     
-    @scala.inline
-    def systemChromeMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialDark = "systemChromeMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialDark]
+    inline def systemChromeMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialDark = "systemChromeMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialDark]
     
-    @scala.inline
-    def systemChromeMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialLight = "systemChromeMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialLight]
+    inline def systemChromeMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialLight = "systemChromeMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemChromeMaterialLight]
     
-    @scala.inline
-    def systemMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemMaterial = "systemMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemMaterial]
+    inline def systemMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemMaterial = "systemMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemMaterial]
     
-    @scala.inline
-    def systemMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialDark = "systemMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialDark]
+    inline def systemMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialDark = "systemMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialDark]
     
-    @scala.inline
-    def systemMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialLight = "systemMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialLight]
+    inline def systemMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialLight = "systemMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemMaterialLight]
     
-    @scala.inline
-    def systemThickMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterial = "systemThickMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterial]
+    inline def systemThickMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterial = "systemThickMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterial]
     
-    @scala.inline
-    def systemThickMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialDark = "systemThickMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialDark]
+    inline def systemThickMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialDark = "systemThickMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialDark]
     
-    @scala.inline
-    def systemThickMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialLight = "systemThickMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialLight]
+    inline def systemThickMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialLight = "systemThickMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThickMaterialLight]
     
-    @scala.inline
-    def systemThinMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterial = "systemThinMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterial]
+    inline def systemThinMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterial = "systemThinMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterial]
     
-    @scala.inline
-    def systemThinMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialDark = "systemThinMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialDark]
+    inline def systemThinMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialDark = "systemThinMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialDark]
     
-    @scala.inline
-    def systemThinMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialLight = "systemThinMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialLight]
+    inline def systemThinMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialLight = "systemThinMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemThinMaterialLight]
     
-    @scala.inline
-    def systemUltraThinMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterial = "systemUltraThinMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterial]
+    inline def systemUltraThinMaterial: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterial = "systemUltraThinMaterial".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterial]
     
-    @scala.inline
-    def systemUltraThinMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialDark = "systemUltraThinMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialDark]
+    inline def systemUltraThinMaterialDark: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialDark = "systemUltraThinMaterialDark".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialDark]
     
-    @scala.inline
-    def systemUltraThinMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialLight = "systemUltraThinMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialLight]
+    inline def systemUltraThinMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialLight = "systemUltraThinMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialLight]
   }
   
   trait ScreenContainerProps
@@ -260,20 +237,16 @@ object mod {
   }
   object ScreenContainerProps {
     
-    @scala.inline
-    def apply(): ScreenContainerProps = {
+    inline def apply(): ScreenContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenContainerProps]
     }
     
-    @scala.inline
-    implicit class ScreenContainerPropsMutableBuilder[Self <: ScreenContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenContainerProps](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -353,98 +326,68 @@ object mod {
   }
   object ScreenProps {
     
-    @scala.inline
-    def apply(): ScreenProps = {
+    inline def apply(): ScreenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenProps]
     }
     
-    @scala.inline
-    implicit class ScreenPropsMutableBuilder[Self <: ScreenProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: `0` | `1` | AnimatedInterpolation): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: `0` | `1` | AnimatedInterpolation): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setActivityState(value: `0` | `1` | `2` | AnimatedInterpolation): Self = StObject.set(x, "activityState", value.asInstanceOf[js.Any])
+      inline def setActivityState(value: `0` | `1` | `2` | AnimatedInterpolation): Self = StObject.set(x, "activityState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityStateUndefined: Self = StObject.set(x, "activityState", js.undefined)
+      inline def setActivityStateUndefined: Self = StObject.set(x, "activityState", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
+      inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureEnabledUndefined: Self = StObject.set(x, "gestureEnabled", js.undefined)
+      inline def setGestureEnabledUndefined: Self = StObject.set(x, "gestureEnabled", js.undefined)
       
-      @scala.inline
-      def setOnAppear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onAppear", js.Any.fromFunction1(value))
+      inline def setOnAppear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onAppear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAppearUndefined: Self = StObject.set(x, "onAppear", js.undefined)
+      inline def setOnAppearUndefined: Self = StObject.set(x, "onAppear", js.undefined)
       
-      @scala.inline
-      def setOnComponentRef(value: /* view */ js.Any => Unit): Self = StObject.set(x, "onComponentRef", js.Any.fromFunction1(value))
+      inline def setOnComponentRef(value: /* view */ js.Any => Unit): Self = StObject.set(x, "onComponentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnComponentRefUndefined: Self = StObject.set(x, "onComponentRef", js.undefined)
+      inline def setOnComponentRefUndefined: Self = StObject.set(x, "onComponentRef", js.undefined)
       
-      @scala.inline
-      def setOnDisappear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onDisappear", js.Any.fromFunction1(value))
+      inline def setOnDisappear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onDisappear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisappearUndefined: Self = StObject.set(x, "onDisappear", js.undefined)
+      inline def setOnDisappearUndefined: Self = StObject.set(x, "onDisappear", js.undefined)
       
-      @scala.inline
-      def setOnDismissed(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onDismissed", js.Any.fromFunction1(value))
+      inline def setOnDismissed(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onDismissed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
+      inline def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
       
-      @scala.inline
-      def setOnWillAppear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onWillAppear", js.Any.fromFunction1(value))
+      inline def setOnWillAppear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onWillAppear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWillAppearUndefined: Self = StObject.set(x, "onWillAppear", js.undefined)
+      inline def setOnWillAppearUndefined: Self = StObject.set(x, "onWillAppear", js.undefined)
       
-      @scala.inline
-      def setOnWillDisappear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onWillDisappear", js.Any.fromFunction1(value))
+      inline def setOnWillDisappear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onWillDisappear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWillDisappearUndefined: Self = StObject.set(x, "onWillDisappear", js.undefined)
+      inline def setOnWillDisappearUndefined: Self = StObject.set(x, "onWillDisappear", js.undefined)
       
-      @scala.inline
-      def setReplaceAnimation(value: ScreenReplaceTypes): Self = StObject.set(x, "replaceAnimation", value.asInstanceOf[js.Any])
+      inline def setReplaceAnimation(value: ScreenReplaceTypes): Self = StObject.set(x, "replaceAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceAnimationUndefined: Self = StObject.set(x, "replaceAnimation", js.undefined)
+      inline def setReplaceAnimationUndefined: Self = StObject.set(x, "replaceAnimation", js.undefined)
       
-      @scala.inline
-      def setStackAnimation(value: StackAnimationTypes): Self = StObject.set(x, "stackAnimation", value.asInstanceOf[js.Any])
+      inline def setStackAnimation(value: StackAnimationTypes): Self = StObject.set(x, "stackAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackAnimationUndefined: Self = StObject.set(x, "stackAnimation", js.undefined)
+      inline def setStackAnimationUndefined: Self = StObject.set(x, "stackAnimation", js.undefined)
       
-      @scala.inline
-      def setStackPresentation(value: StackPresentationTypes): Self = StObject.set(x, "stackPresentation", value.asInstanceOf[js.Any])
+      inline def setStackPresentation(value: StackPresentationTypes): Self = StObject.set(x, "stackPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackPresentationUndefined: Self = StObject.set(x, "stackPresentation", js.undefined)
+      inline def setStackPresentationUndefined: Self = StObject.set(x, "stackPresentation", js.undefined)
     }
   }
   
@@ -455,11 +398,9 @@ object mod {
   trait ScreenReplaceTypes extends StObject
   object ScreenReplaceTypes {
     
-    @scala.inline
-    def pop: typings.reactNativeScreens.reactNativeScreensStrings.pop = "pop".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.pop]
+    inline def pop: typings.reactNativeScreens.reactNativeScreensStrings.pop = "pop".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.pop]
     
-    @scala.inline
-    def push: typings.reactNativeScreens.reactNativeScreensStrings.push = "push".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.push]
+    inline def push: typings.reactNativeScreens.reactNativeScreensStrings.push = "push".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.push]
   }
   
   trait ScreenStackHeaderConfigProps
@@ -615,176 +556,120 @@ object mod {
   }
   object ScreenStackHeaderConfigProps {
     
-    @scala.inline
-    def apply(): ScreenStackHeaderConfigProps = {
+    inline def apply(): ScreenStackHeaderConfigProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenStackHeaderConfigProps]
     }
     
-    @scala.inline
-    implicit class ScreenStackHeaderConfigPropsMutableBuilder[Self <: ScreenStackHeaderConfigProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenStackHeaderConfigProps](x: Self) {
       
-      @scala.inline
-      def setBackButtonInCustomView(value: Boolean): Self = StObject.set(x, "backButtonInCustomView", value.asInstanceOf[js.Any])
+      inline def setBackButtonInCustomView(value: Boolean): Self = StObject.set(x, "backButtonInCustomView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonInCustomViewUndefined: Self = StObject.set(x, "backButtonInCustomView", js.undefined)
+      inline def setBackButtonInCustomViewUndefined: Self = StObject.set(x, "backButtonInCustomView", js.undefined)
       
-      @scala.inline
-      def setBackTitle(value: String): Self = StObject.set(x, "backTitle", value.asInstanceOf[js.Any])
+      inline def setBackTitle(value: String): Self = StObject.set(x, "backTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackTitleFontFamily(value: String): Self = StObject.set(x, "backTitleFontFamily", value.asInstanceOf[js.Any])
+      inline def setBackTitleFontFamily(value: String): Self = StObject.set(x, "backTitleFontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackTitleFontFamilyUndefined: Self = StObject.set(x, "backTitleFontFamily", js.undefined)
+      inline def setBackTitleFontFamilyUndefined: Self = StObject.set(x, "backTitleFontFamily", js.undefined)
       
-      @scala.inline
-      def setBackTitleFontSize(value: Double): Self = StObject.set(x, "backTitleFontSize", value.asInstanceOf[js.Any])
+      inline def setBackTitleFontSize(value: Double): Self = StObject.set(x, "backTitleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackTitleFontSizeUndefined: Self = StObject.set(x, "backTitleFontSize", js.undefined)
+      inline def setBackTitleFontSizeUndefined: Self = StObject.set(x, "backTitleFontSize", js.undefined)
       
-      @scala.inline
-      def setBackTitleUndefined: Self = StObject.set(x, "backTitle", js.undefined)
+      inline def setBackTitleUndefined: Self = StObject.set(x, "backTitle", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBlurEffect(value: BlurEffectTypes): Self = StObject.set(x, "blurEffect", value.asInstanceOf[js.Any])
+      inline def setBlurEffect(value: BlurEffectTypes): Self = StObject.set(x, "blurEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurEffectUndefined: Self = StObject.set(x, "blurEffect", js.undefined)
+      inline def setBlurEffectUndefined: Self = StObject.set(x, "blurEffect", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDirection(value: rtl | ltr): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: rtl | ltr): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
+      inline def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
+      inline def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
       
-      @scala.inline
-      def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
+      inline def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
+      inline def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
       
-      @scala.inline
-      def setLargeTitle(value: Boolean): Self = StObject.set(x, "largeTitle", value.asInstanceOf[js.Any])
+      inline def setLargeTitle(value: Boolean): Self = StObject.set(x, "largeTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeTitleBackgroundColor(value: String): Self = StObject.set(x, "largeTitleBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setLargeTitleBackgroundColor(value: String): Self = StObject.set(x, "largeTitleBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeTitleBackgroundColorUndefined: Self = StObject.set(x, "largeTitleBackgroundColor", js.undefined)
+      inline def setLargeTitleBackgroundColorUndefined: Self = StObject.set(x, "largeTitleBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setLargeTitleColor(value: String): Self = StObject.set(x, "largeTitleColor", value.asInstanceOf[js.Any])
+      inline def setLargeTitleColor(value: String): Self = StObject.set(x, "largeTitleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeTitleColorUndefined: Self = StObject.set(x, "largeTitleColor", js.undefined)
+      inline def setLargeTitleColorUndefined: Self = StObject.set(x, "largeTitleColor", js.undefined)
       
-      @scala.inline
-      def setLargeTitleFontFamily(value: String): Self = StObject.set(x, "largeTitleFontFamily", value.asInstanceOf[js.Any])
+      inline def setLargeTitleFontFamily(value: String): Self = StObject.set(x, "largeTitleFontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeTitleFontFamilyUndefined: Self = StObject.set(x, "largeTitleFontFamily", js.undefined)
+      inline def setLargeTitleFontFamilyUndefined: Self = StObject.set(x, "largeTitleFontFamily", js.undefined)
       
-      @scala.inline
-      def setLargeTitleFontSize(value: Double): Self = StObject.set(x, "largeTitleFontSize", value.asInstanceOf[js.Any])
+      inline def setLargeTitleFontSize(value: Double): Self = StObject.set(x, "largeTitleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeTitleFontSizeUndefined: Self = StObject.set(x, "largeTitleFontSize", js.undefined)
+      inline def setLargeTitleFontSizeUndefined: Self = StObject.set(x, "largeTitleFontSize", js.undefined)
       
-      @scala.inline
-      def setLargeTitleHideShadow(value: Boolean): Self = StObject.set(x, "largeTitleHideShadow", value.asInstanceOf[js.Any])
+      inline def setLargeTitleHideShadow(value: Boolean): Self = StObject.set(x, "largeTitleHideShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeTitleHideShadowUndefined: Self = StObject.set(x, "largeTitleHideShadow", js.undefined)
+      inline def setLargeTitleHideShadowUndefined: Self = StObject.set(x, "largeTitleHideShadow", js.undefined)
       
-      @scala.inline
-      def setLargeTitleUndefined: Self = StObject.set(x, "largeTitle", js.undefined)
+      inline def setLargeTitleUndefined: Self = StObject.set(x, "largeTitle", js.undefined)
       
-      @scala.inline
-      def setStatusBarAnimation(value: none | fade | slide): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+      inline def setStatusBarAnimation(value: none | fade | slide): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarAnimationUndefined: Self = StObject.set(x, "statusBarAnimation", js.undefined)
+      inline def setStatusBarAnimationUndefined: Self = StObject.set(x, "statusBarAnimation", js.undefined)
       
-      @scala.inline
-      def setStatusBarHidden(value: Boolean): Self = StObject.set(x, "statusBarHidden", value.asInstanceOf[js.Any])
+      inline def setStatusBarHidden(value: Boolean): Self = StObject.set(x, "statusBarHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarHiddenUndefined: Self = StObject.set(x, "statusBarHidden", js.undefined)
+      inline def setStatusBarHiddenUndefined: Self = StObject.set(x, "statusBarHidden", js.undefined)
       
-      @scala.inline
-      def setStatusBarStyle(value: inverted | auto | light | dark): Self = StObject.set(x, "statusBarStyle", value.asInstanceOf[js.Any])
+      inline def setStatusBarStyle(value: inverted | auto | light | dark): Self = StObject.set(x, "statusBarStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarStyleUndefined: Self = StObject.set(x, "statusBarStyle", js.undefined)
+      inline def setStatusBarStyleUndefined: Self = StObject.set(x, "statusBarStyle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+      inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitleFontFamily(value: String): Self = StObject.set(x, "titleFontFamily", value.asInstanceOf[js.Any])
+      inline def setTitleFontFamily(value: String): Self = StObject.set(x, "titleFontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontFamilyUndefined: Self = StObject.set(x, "titleFontFamily", js.undefined)
+      inline def setTitleFontFamilyUndefined: Self = StObject.set(x, "titleFontFamily", js.undefined)
       
-      @scala.inline
-      def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
+      inline def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
+      inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTopInsetEnabled(value: Boolean): Self = StObject.set(x, "topInsetEnabled", value.asInstanceOf[js.Any])
+      inline def setTopInsetEnabled(value: Boolean): Self = StObject.set(x, "topInsetEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopInsetEnabledUndefined: Self = StObject.set(x, "topInsetEnabled", js.undefined)
+      inline def setTopInsetEnabledUndefined: Self = StObject.set(x, "topInsetEnabled", js.undefined)
       
-      @scala.inline
-      def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+      inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+      inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     }
   }
   
@@ -799,20 +684,16 @@ object mod {
   }
   object ScreenStackProps {
     
-    @scala.inline
-    def apply(): ScreenStackProps = {
+    inline def apply(): ScreenStackProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenStackProps]
     }
     
-    @scala.inline
-    implicit class ScreenStackPropsMutableBuilder[Self <: ScreenStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenStackProps](x: Self) {
       
-      @scala.inline
-      def setOnFinishTransitioning(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onFinishTransitioning", js.Any.fromFunction1(value))
+      inline def setOnFinishTransitioning(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onFinishTransitioning", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinishTransitioningUndefined: Self = StObject.set(x, "onFinishTransitioning", js.undefined)
+      inline def setOnFinishTransitioningUndefined: Self = StObject.set(x, "onFinishTransitioning", js.undefined)
     }
   }
   
@@ -825,17 +706,13 @@ object mod {
   trait StackAnimationTypes extends StObject
   object StackAnimationTypes {
     
-    @scala.inline
-    def default: typings.reactNativeScreens.reactNativeScreensStrings.default = "default".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.default]
+    inline def default: typings.reactNativeScreens.reactNativeScreensStrings.default = "default".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.default]
     
-    @scala.inline
-    def fade: typings.reactNativeScreens.reactNativeScreensStrings.fade = "fade".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.fade]
+    inline def fade: typings.reactNativeScreens.reactNativeScreensStrings.fade = "fade".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.fade]
     
-    @scala.inline
-    def flip: typings.reactNativeScreens.reactNativeScreensStrings.flip = "flip".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.flip]
+    inline def flip: typings.reactNativeScreens.reactNativeScreensStrings.flip = "flip".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.flip]
     
-    @scala.inline
-    def none: typings.reactNativeScreens.reactNativeScreensStrings.none = "none".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.none]
+    inline def none: typings.reactNativeScreens.reactNativeScreensStrings.none = "none".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.none]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -850,25 +727,18 @@ object mod {
   trait StackPresentationTypes extends StObject
   object StackPresentationTypes {
     
-    @scala.inline
-    def containedModal: typings.reactNativeScreens.reactNativeScreensStrings.containedModal = "containedModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.containedModal]
+    inline def containedModal: typings.reactNativeScreens.reactNativeScreensStrings.containedModal = "containedModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.containedModal]
     
-    @scala.inline
-    def containedTransparentModal: typings.reactNativeScreens.reactNativeScreensStrings.containedTransparentModal = "containedTransparentModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.containedTransparentModal]
+    inline def containedTransparentModal: typings.reactNativeScreens.reactNativeScreensStrings.containedTransparentModal = "containedTransparentModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.containedTransparentModal]
     
-    @scala.inline
-    def formSheet: typings.reactNativeScreens.reactNativeScreensStrings.formSheet = "formSheet".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.formSheet]
+    inline def formSheet: typings.reactNativeScreens.reactNativeScreensStrings.formSheet = "formSheet".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.formSheet]
     
-    @scala.inline
-    def fullScreenModal: typings.reactNativeScreens.reactNativeScreensStrings.fullScreenModal = "fullScreenModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.fullScreenModal]
+    inline def fullScreenModal: typings.reactNativeScreens.reactNativeScreensStrings.fullScreenModal = "fullScreenModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.fullScreenModal]
     
-    @scala.inline
-    def modal: typings.reactNativeScreens.reactNativeScreensStrings.modal = "modal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.modal]
+    inline def modal: typings.reactNativeScreens.reactNativeScreensStrings.modal = "modal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.modal]
     
-    @scala.inline
-    def push: typings.reactNativeScreens.reactNativeScreensStrings.push = "push".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.push]
+    inline def push: typings.reactNativeScreens.reactNativeScreensStrings.push = "push".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.push]
     
-    @scala.inline
-    def transparentModal: typings.reactNativeScreens.reactNativeScreensStrings.transparentModal = "transparentModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.transparentModal]
+    inline def transparentModal: typings.reactNativeScreens.reactNativeScreensStrings.transparentModal = "transparentModal".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.transparentModal]
   }
 }

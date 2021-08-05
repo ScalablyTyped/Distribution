@@ -21,30 +21,23 @@ trait ValueDefWithCondition[F /* <: (FieldDef[js.Any, js.Any]) | (DatumDef[js.An
 }
 object ValueDefWithCondition {
   
-  @scala.inline
-  def apply[F /* <: (FieldDef[js.Any, js.Any]) | (DatumDef[js.Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */](): ValueDefWithCondition[F, V] = {
+  inline def apply[F /* <: (FieldDef[js.Any, js.Any]) | (DatumDef[js.Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */](): ValueDefWithCondition[F, V] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueDefWithCondition[F, V]]
   }
   
-  @scala.inline
-  implicit class ValueDefWithConditionMutableBuilder[Self <: ValueDefWithCondition[?, ?], F /* <: (FieldDef[js.Any, js.Any]) | (DatumDef[js.Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */] (val x: Self & (ValueDefWithCondition[F, V])) extends AnyVal {
+  extension [Self <: ValueDefWithCondition[?, ?], F /* <: (FieldDef[js.Any, js.Any]) | (DatumDef[js.Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */](x: Self & (ValueDefWithCondition[F, V])) {
     
-    @scala.inline
-    def setCondition(
+    inline def setCondition(
       value: (Conditional[F | (ValueDef[V | ExprRef | SignalRef])]) | (js.Array[Conditional[ValueDef[V | ExprRef | SignalRef]]])
     ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setConditionVarargs(value: (Conditional[ValueDef[V | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: (Conditional[ValueDef[V | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: V | ExprRef | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: V | ExprRef | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

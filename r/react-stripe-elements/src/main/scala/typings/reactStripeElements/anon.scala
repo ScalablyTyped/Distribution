@@ -21,26 +21,20 @@ object anon {
   }
   object apiKeyneverundefinedstrip {
     
-    @scala.inline
-    def apply(): apiKeyneverundefinedstrip = {
+    inline def apply(): apiKeyneverundefinedstrip = {
       val __obj = js.Dynamic.literal(stripe = null)
       __obj.asInstanceOf[apiKeyneverundefinedstrip]
     }
     
-    @scala.inline
-    implicit class apiKeyneverundefinedstripMutableBuilder[Self <: apiKeyneverundefinedstrip] (val x: Self) extends AnyVal {
+    extension [Self <: apiKeyneverundefinedstrip](x: Self) {
       
-      @scala.inline
-      def setStripe(value: Stripe): Self = StObject.set(x, "stripe", value.asInstanceOf[js.Any])
+      inline def setStripe(value: Stripe): Self = StObject.set(x, "stripe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
+      inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
+      inline def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
       
-      @scala.inline
-      def setStripeNull: Self = StObject.set(x, "stripe", null)
+      inline def setStripeNull: Self = StObject.set(x, "stripe", null)
     }
   }
   
@@ -57,23 +51,18 @@ object anon {
   }
   object apiKeystringstripeneverun {
     
-    @scala.inline
-    def apply(apiKey: String): apiKeystringstripeneverun = {
+    inline def apply(apiKey: String): apiKeystringstripeneverun = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[apiKeystringstripeneverun]
     }
     
-    @scala.inline
-    implicit class apiKeystringstripeneverunMutableBuilder[Self <: apiKeystringstripeneverun] (val x: Self) extends AnyVal {
+    extension [Self <: apiKeystringstripeneverun](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
+      inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
+      inline def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
     }
   }
 }

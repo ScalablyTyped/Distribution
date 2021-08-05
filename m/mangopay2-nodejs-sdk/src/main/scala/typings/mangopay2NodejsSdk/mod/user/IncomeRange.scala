@@ -24,21 +24,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IncomeRange extends StObject
 object IncomeRange {
   
-  @scala.inline
-  def `1`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`1` = 1.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`1`]
+  inline def `1`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`1` = 1.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`1`]
   
-  @scala.inline
-  def `2`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`2` = 2.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`2`]
+  inline def `2`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`2` = 2.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`2`]
   
-  @scala.inline
-  def `3`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`3` = 3.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`3`]
+  inline def `3`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`3` = 3.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`3`]
   
-  @scala.inline
-  def `4`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`4` = 4.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`4`]
+  inline def `4`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`4` = 4.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`4`]
   
-  @scala.inline
-  def `5`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`5` = 5.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`5`]
+  inline def `5`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`5` = 5.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`5`]
   
-  @scala.inline
-  def `6`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6` = 6.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6`]
+  inline def `6`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6` = 6.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6`]
 }

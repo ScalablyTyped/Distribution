@@ -64,19 +64,15 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(pickadate: typings.pickadate.Pickadate.Pickadate, pickatime: Pickatime): JQuery = {
+  inline def apply(pickadate: typings.pickadate.Pickadate.Pickadate, pickatime: Pickatime): JQuery = {
     val __obj = js.Dynamic.literal(pickadate = pickadate.asInstanceOf[js.Any], pickatime = pickatime.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setPickadate(value: typings.pickadate.Pickadate.Pickadate): Self = StObject.set(x, "pickadate", value.asInstanceOf[js.Any])
+    inline def setPickadate(value: typings.pickadate.Pickadate.Pickadate): Self = StObject.set(x, "pickadate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickatime(value: Pickatime): Self = StObject.set(x, "pickatime", value.asInstanceOf[js.Any])
+    inline def setPickatime(value: Pickatime): Self = StObject.set(x, "pickatime", value.asInstanceOf[js.Any])
   }
 }

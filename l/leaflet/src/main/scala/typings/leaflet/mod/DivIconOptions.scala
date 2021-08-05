@@ -16,25 +16,19 @@ trait DivIconOptions
 }
 object DivIconOptions {
   
-  @scala.inline
-  def apply(): DivIconOptions = {
+  inline def apply(): DivIconOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DivIconOptions]
   }
   
-  @scala.inline
-  implicit class DivIconOptionsMutableBuilder[Self <: DivIconOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DivIconOptions](x: Self) {
     
-    @scala.inline
-    def setBgPos(value: PointExpression): Self = StObject.set(x, "bgPos", value.asInstanceOf[js.Any])
+    inline def setBgPos(value: PointExpression): Self = StObject.set(x, "bgPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgPosUndefined: Self = StObject.set(x, "bgPos", js.undefined)
+    inline def setBgPosUndefined: Self = StObject.set(x, "bgPos", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String | HTMLElement | `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String | HTMLElement | `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
   }
 }

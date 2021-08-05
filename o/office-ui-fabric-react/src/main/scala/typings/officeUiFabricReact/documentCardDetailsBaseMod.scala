@@ -14,6 +14,6 @@ object documentCardDetailsBaseMod {
     extends Component[IDocumentCardDetailsProps, js.Any, js.Any] {
     def this(props: IDocumentCardDetailsProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
   }
 }

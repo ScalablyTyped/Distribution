@@ -18,25 +18,19 @@ trait DatasetTrigger extends StObject {
 }
 object DatasetTrigger {
   
-  @scala.inline
-  def apply(): DatasetTrigger = {
+  inline def apply(): DatasetTrigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatasetTrigger]
   }
   
-  @scala.inline
-  implicit class DatasetTriggerMutableBuilder[Self <: DatasetTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetTrigger](x: Self) {
     
-    @scala.inline
-    def setDataset(value: TriggeringDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: TriggeringDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }
 }

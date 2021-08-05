@@ -21,19 +21,15 @@ trait IDatabase extends StObject {
 }
 object IDatabase {
   
-  @scala.inline
-  def apply(qIsDefault: Boolean, qName: String): IDatabase = {
+  inline def apply(qIsDefault: Boolean, qName: String): IDatabase = {
     val __obj = js.Dynamic.literal(qIsDefault = qIsDefault.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatabase]
   }
   
-  @scala.inline
-  implicit class IDatabaseMutableBuilder[Self <: IDatabase] (val x: Self) extends AnyVal {
+  extension [Self <: IDatabase](x: Self) {
     
-    @scala.inline
-    def setQIsDefault(value: Boolean): Self = StObject.set(x, "qIsDefault", value.asInstanceOf[js.Any])
+    inline def setQIsDefault(value: Boolean): Self = StObject.set(x, "qIsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

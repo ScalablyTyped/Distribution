@@ -29,8 +29,7 @@ trait BaseClient extends StObject {
 }
 object BaseClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilities: DesiredCapabilities,
     isAndroid: Boolean,
     isIOS: Boolean,
@@ -42,25 +41,18 @@ object BaseClient {
     __obj.asInstanceOf[BaseClient]
   }
   
-  @scala.inline
-  implicit class BaseClientMutableBuilder[Self <: BaseClient] (val x: Self) extends AnyVal {
+  extension [Self <: BaseClient](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+    inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+    inline def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "requestedCapabilities", value.asInstanceOf[js.Any])
+    inline def setRequestedCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "requestedCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

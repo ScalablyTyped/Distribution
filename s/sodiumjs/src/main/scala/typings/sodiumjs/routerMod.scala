@@ -17,11 +17,11 @@ object routerMod {
       keyToStr: js.Function1[/* k */ K, String]
     ) = this()
     
-    var _inStream: js.Any = js.native
+    /* private */ var _inStream: js.Any = js.native
     
-    var _table: js.Any = js.native
+    /* private */ var _table: js.Any = js.native
     
-    var _vertex: js.Any = js.native
+    /* private */ var _vertex: js.Any = js.native
     
     def filterMatches(k: K): Stream[A] = js.native
   }

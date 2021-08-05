@@ -10,8 +10,7 @@ trait GenericCompositionLayoutWithColumns
      with ColumnMixins
 object GenericCompositionLayoutWithColumns {
   
-  @scala.inline
-  def apply(): GenericCompositionLayoutWithColumns = {
+  inline def apply(): GenericCompositionLayoutWithColumns = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericCompositionLayoutWithColumns]
   }

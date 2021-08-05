@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[A /* <: js.Function */](f: A): Clear & A = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Clear & A]
-  @scala.inline
-  def apply[A /* <: js.Function */](f: A, interval: Double): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
-  @scala.inline
-  def apply[A /* <: js.Function */](f: A, interval: Double, immediate: Boolean): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
-  @scala.inline
-  def apply[A /* <: js.Function */](f: A, interval: Unit, immediate: Boolean): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A): Clear & A = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A, interval: Double): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A, interval: Double, immediate: Boolean): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A, interval: Unit, immediate: Boolean): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
   
   @JSImport("debounce", JSImport.Namespace)
   @js.native

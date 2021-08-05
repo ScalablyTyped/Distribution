@@ -19,22 +19,17 @@ trait DescribeChannelRequestwai extends StObject {
 }
 object DescribeChannelRequestwai {
   
-  @scala.inline
-  def apply(ChannelId: string): DescribeChannelRequestwai = {
+  inline def apply(ChannelId: string): DescribeChannelRequestwai = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelRequestwai]
   }
   
-  @scala.inline
-  implicit class DescribeChannelRequestwaiMutableBuilder[Self <: DescribeChannelRequestwai] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelRequestwai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
   }
 }

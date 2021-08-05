@@ -17,7 +17,6 @@ object basicMaterialMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): BasicMaterial = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicMaterial]
+    inline def create(): BasicMaterial = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicMaterial]
   }
 }

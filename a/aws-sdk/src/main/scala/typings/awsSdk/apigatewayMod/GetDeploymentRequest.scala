@@ -23,28 +23,21 @@ trait GetDeploymentRequest extends StObject {
 }
 object GetDeploymentRequest {
   
-  @scala.inline
-  def apply(deploymentId: String, restApiId: String): GetDeploymentRequest = {
+  inline def apply(deploymentId: String, restApiId: String): GetDeploymentRequest = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class GetDeploymentRequestMutableBuilder[Self <: GetDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbed(value: ListOfString): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: ListOfString): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
+    inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    @scala.inline
-    def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
+    inline def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

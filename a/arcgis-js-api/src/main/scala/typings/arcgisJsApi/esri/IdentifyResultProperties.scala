@@ -36,37 +36,27 @@ trait IdentifyResultProperties extends StObject {
 }
 object IdentifyResultProperties {
   
-  @scala.inline
-  def apply(): IdentifyResultProperties = {
+  inline def apply(): IdentifyResultProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentifyResultProperties]
   }
   
-  @scala.inline
-  implicit class IdentifyResultPropertiesMutableBuilder[Self <: IdentifyResultProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifyResultProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
+    inline def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
+    inline def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
     
-    @scala.inline
-    def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
+    inline def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
   }
 }

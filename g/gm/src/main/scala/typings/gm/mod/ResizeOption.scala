@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResizeOption extends StObject
 object ResizeOption {
   
-  @scala.inline
-  def ^ : typings.gm.gmStrings.^ = "^".asInstanceOf[typings.gm.gmStrings.^]
+  inline def ^ : typings.gm.gmStrings.^ = "^".asInstanceOf[typings.gm.gmStrings.^]
   
-  @scala.inline
-  def `@`: typings.gm.gmStrings.`@` = "@".asInstanceOf[typings.gm.gmStrings.`@`]
+  inline def `@`: typings.gm.gmStrings.`@` = "@".asInstanceOf[typings.gm.gmStrings.`@`]
   
-  @scala.inline
-  def Exclamationmark: typings.gm.gmStrings.Exclamationmark = "!".asInstanceOf[typings.gm.gmStrings.Exclamationmark]
+  inline def Exclamationmark: typings.gm.gmStrings.Exclamationmark = "!".asInstanceOf[typings.gm.gmStrings.Exclamationmark]
   
-  @scala.inline
-  def Greaterthansign: typings.gm.gmStrings.Greaterthansign = ">".asInstanceOf[typings.gm.gmStrings.Greaterthansign]
+  inline def Greaterthansign: typings.gm.gmStrings.Greaterthansign = ">".asInstanceOf[typings.gm.gmStrings.Greaterthansign]
   
-  @scala.inline
-  def Lessthansign: typings.gm.gmStrings.Lessthansign = "<".asInstanceOf[typings.gm.gmStrings.Lessthansign]
+  inline def Lessthansign: typings.gm.gmStrings.Lessthansign = "<".asInstanceOf[typings.gm.gmStrings.Lessthansign]
   
-  @scala.inline
-  def Percentsign: typings.gm.gmStrings.Percentsign = "%".asInstanceOf[typings.gm.gmStrings.Percentsign]
+  inline def Percentsign: typings.gm.gmStrings.Percentsign = "%".asInstanceOf[typings.gm.gmStrings.Percentsign]
 }

@@ -17,31 +17,23 @@ trait PickupServicesPickupService extends StObject {
 }
 object PickupServicesPickupService {
   
-  @scala.inline
-  def apply(): PickupServicesPickupService = {
+  inline def apply(): PickupServicesPickupService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickupServicesPickupService]
   }
   
-  @scala.inline
-  implicit class PickupServicesPickupServiceMutableBuilder[Self <: PickupServicesPickupService] (val x: Self) extends AnyVal {
+  extension [Self <: PickupServicesPickupService](x: Self) {
     
-    @scala.inline
-    def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
+    inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
+    inline def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

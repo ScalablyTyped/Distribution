@@ -15,17 +15,14 @@ object mod {
     }
     object Context {
       
-      @scala.inline
-      def apply(csrf: String): Context = {
+      inline def apply(csrf: String): Context = {
         val __obj = js.Dynamic.literal(csrf = csrf.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      extension [Self <: Context](x: Self) {
         
-        @scala.inline
-        def setCsrf(value: String): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
+        inline def setCsrf(value: String): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
       }
     }
   }

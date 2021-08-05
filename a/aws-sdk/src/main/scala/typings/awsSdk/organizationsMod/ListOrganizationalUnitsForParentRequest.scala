@@ -23,28 +23,21 @@ trait ListOrganizationalUnitsForParentRequest extends StObject {
 }
 object ListOrganizationalUnitsForParentRequest {
   
-  @scala.inline
-  def apply(ParentId: ParentId): ListOrganizationalUnitsForParentRequest = {
+  inline def apply(ParentId: ParentId): ListOrganizationalUnitsForParentRequest = {
     val __obj = js.Dynamic.literal(ParentId = ParentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOrganizationalUnitsForParentRequest]
   }
   
-  @scala.inline
-  implicit class ListOrganizationalUnitsForParentRequestMutableBuilder[Self <: ListOrganizationalUnitsForParentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListOrganizationalUnitsForParentRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParentId(value: ParentId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: ParentId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
   }
 }

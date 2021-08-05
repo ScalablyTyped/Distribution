@@ -11,16 +11,13 @@ trait PickImplactionURL extends StObject {
 }
 object PickImplactionURL {
   
-  @scala.inline
-  def apply(actionURL: String): PickImplactionURL = {
+  inline def apply(actionURL: String): PickImplactionURL = {
     val __obj = js.Dynamic.literal(actionURL = actionURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplactionURL]
   }
   
-  @scala.inline
-  implicit class PickImplactionURLMutableBuilder[Self <: PickImplactionURL] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplactionURL](x: Self) {
     
-    @scala.inline
-    def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
+    inline def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
   }
 }

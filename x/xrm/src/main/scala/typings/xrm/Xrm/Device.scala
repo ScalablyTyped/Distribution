@@ -87,26 +87,20 @@ object Device {
   }
   object CaptureFileResponse {
     
-    @scala.inline
-    def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): CaptureFileResponse = {
+    inline def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): CaptureFileResponse = {
       val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaptureFileResponse]
     }
     
-    @scala.inline
-    implicit class CaptureFileResponseMutableBuilder[Self <: CaptureFileResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureFileResponse](x: Self) {
       
-      @scala.inline
-      def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,29 +136,22 @@ object Device {
   }
   object CaptureImageOptions {
     
-    @scala.inline
-    def apply(allowEdit: Boolean, height: Double, preferFrontCamera: Boolean, quality: Double, width: Double): CaptureImageOptions = {
+    inline def apply(allowEdit: Boolean, height: Double, preferFrontCamera: Boolean, quality: Double, width: Double): CaptureImageOptions = {
       val __obj = js.Dynamic.literal(allowEdit = allowEdit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], preferFrontCamera = preferFrontCamera.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaptureImageOptions]
     }
     
-    @scala.inline
-    implicit class CaptureImageOptionsMutableBuilder[Self <: CaptureImageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureImageOptions](x: Self) {
       
-      @scala.inline
-      def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
+      inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferFrontCamera(value: Boolean): Self = StObject.set(x, "preferFrontCamera", value.asInstanceOf[js.Any])
+      inline def setPreferFrontCamera(value: Boolean): Self = StObject.set(x, "preferFrontCamera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,20 +172,16 @@ object Device {
   }
   object GetCurrentPositionResponse {
     
-    @scala.inline
-    def apply(coords: js.Any, timestamp: Double): GetCurrentPositionResponse = {
+    inline def apply(coords: js.Any, timestamp: Double): GetCurrentPositionResponse = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCurrentPositionResponse]
     }
     
-    @scala.inline
-    implicit class GetCurrentPositionResponseMutableBuilder[Self <: GetCurrentPositionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetCurrentPositionResponse](x: Self) {
       
-      @scala.inline
-      def setCoords(value: js.Any): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Any): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,23 +207,18 @@ object Device {
   }
   object PickFileOptions {
     
-    @scala.inline
-    def apply(accept: PickFileTypes, allowMultipleFiles: Boolean, maximumAllowedFileSize: Double): PickFileOptions = {
+    inline def apply(accept: PickFileTypes, allowMultipleFiles: Boolean, maximumAllowedFileSize: Double): PickFileOptions = {
       val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], allowMultipleFiles = allowMultipleFiles.asInstanceOf[js.Any], maximumAllowedFileSize = maximumAllowedFileSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickFileOptions]
     }
     
-    @scala.inline
-    implicit class PickFileOptionsMutableBuilder[Self <: PickFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PickFileOptions](x: Self) {
       
-      @scala.inline
-      def setAccept(value: PickFileTypes): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: PickFileTypes): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultipleFiles(value: Boolean): Self = StObject.set(x, "allowMultipleFiles", value.asInstanceOf[js.Any])
+      inline def setAllowMultipleFiles(value: Boolean): Self = StObject.set(x, "allowMultipleFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumAllowedFileSize(value: Double): Self = StObject.set(x, "maximumAllowedFileSize", value.asInstanceOf[js.Any])
+      inline def setMaximumAllowedFileSize(value: Double): Self = StObject.set(x, "maximumAllowedFileSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,13 +234,10 @@ object Device {
   trait PickFileTypes extends StObject
   object PickFileTypes {
     
-    @scala.inline
-    def audio: typings.xrm.xrmStrings.audio = "audio".asInstanceOf[typings.xrm.xrmStrings.audio]
+    inline def audio: typings.xrm.xrmStrings.audio = "audio".asInstanceOf[typings.xrm.xrmStrings.audio]
     
-    @scala.inline
-    def image: typings.xrm.xrmStrings.image = "image".asInstanceOf[typings.xrm.xrmStrings.image]
+    inline def image: typings.xrm.xrmStrings.image = "image".asInstanceOf[typings.xrm.xrmStrings.image]
     
-    @scala.inline
-    def video: typings.xrm.xrmStrings.video = "video".asInstanceOf[typings.xrm.xrmStrings.video]
+    inline def video: typings.xrm.xrmStrings.video = "video".asInstanceOf[typings.xrm.xrmStrings.video]
   }
 }

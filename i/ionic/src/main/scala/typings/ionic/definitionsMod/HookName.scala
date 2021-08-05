@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HookName extends StObject
 object HookName {
   
-  @scala.inline
-  def buildColonafter: typings.ionic.ionicStrings.buildColonafter = "build:after".asInstanceOf[typings.ionic.ionicStrings.buildColonafter]
+  inline def buildColonafter: typings.ionic.ionicStrings.buildColonafter = "build:after".asInstanceOf[typings.ionic.ionicStrings.buildColonafter]
   
-  @scala.inline
-  def buildColonbefore: typings.ionic.ionicStrings.buildColonbefore = "build:before".asInstanceOf[typings.ionic.ionicStrings.buildColonbefore]
+  inline def buildColonbefore: typings.ionic.ionicStrings.buildColonbefore = "build:before".asInstanceOf[typings.ionic.ionicStrings.buildColonbefore]
   
-  @scala.inline
-  def serveColonafter: typings.ionic.ionicStrings.serveColonafter = "serve:after".asInstanceOf[typings.ionic.ionicStrings.serveColonafter]
+  inline def serveColonafter: typings.ionic.ionicStrings.serveColonafter = "serve:after".asInstanceOf[typings.ionic.ionicStrings.serveColonafter]
   
-  @scala.inline
-  def serveColonbefore: typings.ionic.ionicStrings.serveColonbefore = "serve:before".asInstanceOf[typings.ionic.ionicStrings.serveColonbefore]
+  inline def serveColonbefore: typings.ionic.ionicStrings.serveColonbefore = "serve:before".asInstanceOf[typings.ionic.ionicStrings.serveColonbefore]
 }

@@ -78,85 +78,59 @@ trait SequenceReferenceSeq
 }
 object SequenceReferenceSeq {
   
-  @scala.inline
-  def apply(windowEnd: integer, windowStart: integer): SequenceReferenceSeq = {
+  inline def apply(windowEnd: integer, windowStart: integer): SequenceReferenceSeq = {
     val __obj = js.Dynamic.literal(windowEnd = windowEnd.asInstanceOf[js.Any], windowStart = windowStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceReferenceSeq]
   }
   
-  @scala.inline
-  implicit class SequenceReferenceSeqMutableBuilder[Self <: SequenceReferenceSeq] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceReferenceSeq](x: Self) {
     
-    @scala.inline
-    def setChromosome(value: CodeableConcept): Self = StObject.set(x, "chromosome", value.asInstanceOf[js.Any])
+    inline def setChromosome(value: CodeableConcept): Self = StObject.set(x, "chromosome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromosomeUndefined: Self = StObject.set(x, "chromosome", js.undefined)
+    inline def setChromosomeUndefined: Self = StObject.set(x, "chromosome", js.undefined)
     
-    @scala.inline
-    def setGenomeBuild(value: String): Self = StObject.set(x, "genomeBuild", value.asInstanceOf[js.Any])
+    inline def setGenomeBuild(value: String): Self = StObject.set(x, "genomeBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenomeBuildUndefined: Self = StObject.set(x, "genomeBuild", js.undefined)
+    inline def setGenomeBuildUndefined: Self = StObject.set(x, "genomeBuild", js.undefined)
     
-    @scala.inline
-    def setReferenceSeqId(value: CodeableConcept): Self = StObject.set(x, "referenceSeqId", value.asInstanceOf[js.Any])
+    inline def setReferenceSeqId(value: CodeableConcept): Self = StObject.set(x, "referenceSeqId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSeqIdUndefined: Self = StObject.set(x, "referenceSeqId", js.undefined)
+    inline def setReferenceSeqIdUndefined: Self = StObject.set(x, "referenceSeqId", js.undefined)
     
-    @scala.inline
-    def setReferenceSeqPointer(value: Reference): Self = StObject.set(x, "referenceSeqPointer", value.asInstanceOf[js.Any])
+    inline def setReferenceSeqPointer(value: Reference): Self = StObject.set(x, "referenceSeqPointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSeqPointerUndefined: Self = StObject.set(x, "referenceSeqPointer", js.undefined)
+    inline def setReferenceSeqPointerUndefined: Self = StObject.set(x, "referenceSeqPointer", js.undefined)
     
-    @scala.inline
-    def setReferenceSeqString(value: String): Self = StObject.set(x, "referenceSeqString", value.asInstanceOf[js.Any])
+    inline def setReferenceSeqString(value: String): Self = StObject.set(x, "referenceSeqString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSeqStringUndefined: Self = StObject.set(x, "referenceSeqString", js.undefined)
+    inline def setReferenceSeqStringUndefined: Self = StObject.set(x, "referenceSeqString", js.undefined)
     
-    @scala.inline
-    def setStrand(value: integer): Self = StObject.set(x, "strand", value.asInstanceOf[js.Any])
+    inline def setStrand(value: integer): Self = StObject.set(x, "strand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrandUndefined: Self = StObject.set(x, "strand", js.undefined)
+    inline def setStrandUndefined: Self = StObject.set(x, "strand", js.undefined)
     
-    @scala.inline
-    def setWindowEnd(value: integer): Self = StObject.set(x, "windowEnd", value.asInstanceOf[js.Any])
+    inline def setWindowEnd(value: integer): Self = StObject.set(x, "windowEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowStart(value: integer): Self = StObject.set(x, "windowStart", value.asInstanceOf[js.Any])
+    inline def setWindowStart(value: integer): Self = StObject.set(x, "windowStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_genomeBuild(value: Element): Self = StObject.set(x, "_genomeBuild", value.asInstanceOf[js.Any])
+    inline def set_genomeBuild(value: Element): Self = StObject.set(x, "_genomeBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_genomeBuildUndefined: Self = StObject.set(x, "_genomeBuild", js.undefined)
+    inline def set_genomeBuildUndefined: Self = StObject.set(x, "_genomeBuild", js.undefined)
     
-    @scala.inline
-    def set_referenceSeqString(value: Element): Self = StObject.set(x, "_referenceSeqString", value.asInstanceOf[js.Any])
+    inline def set_referenceSeqString(value: Element): Self = StObject.set(x, "_referenceSeqString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_referenceSeqStringUndefined: Self = StObject.set(x, "_referenceSeqString", js.undefined)
+    inline def set_referenceSeqStringUndefined: Self = StObject.set(x, "_referenceSeqString", js.undefined)
     
-    @scala.inline
-    def set_strand(value: Element): Self = StObject.set(x, "_strand", value.asInstanceOf[js.Any])
+    inline def set_strand(value: Element): Self = StObject.set(x, "_strand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_strandUndefined: Self = StObject.set(x, "_strand", js.undefined)
+    inline def set_strandUndefined: Self = StObject.set(x, "_strand", js.undefined)
     
-    @scala.inline
-    def set_windowEnd(value: Element): Self = StObject.set(x, "_windowEnd", value.asInstanceOf[js.Any])
+    inline def set_windowEnd(value: Element): Self = StObject.set(x, "_windowEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_windowEndUndefined: Self = StObject.set(x, "_windowEnd", js.undefined)
+    inline def set_windowEndUndefined: Self = StObject.set(x, "_windowEnd", js.undefined)
     
-    @scala.inline
-    def set_windowStart(value: Element): Self = StObject.set(x, "_windowStart", value.asInstanceOf[js.Any])
+    inline def set_windowStart(value: Element): Self = StObject.set(x, "_windowStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_windowStartUndefined: Self = StObject.set(x, "_windowStart", js.undefined)
+    inline def set_windowStartUndefined: Self = StObject.set(x, "_windowStart", js.undefined)
   }
 }

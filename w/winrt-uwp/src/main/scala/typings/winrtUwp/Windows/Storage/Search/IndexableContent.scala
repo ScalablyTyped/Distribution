@@ -23,8 +23,7 @@ trait IndexableContent extends StObject {
 }
 object IndexableContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     properties: IMap[String, js.Any],
     stream: IRandomAccessStream,
@@ -34,19 +33,14 @@ object IndexableContent {
     __obj.asInstanceOf[IndexableContent]
   }
   
-  @scala.inline
-  implicit class IndexableContentMutableBuilder[Self <: IndexableContent] (val x: Self) extends AnyVal {
+  extension [Self <: IndexableContent](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamContentType(value: String): Self = StObject.set(x, "streamContentType", value.asInstanceOf[js.Any])
+    inline def setStreamContentType(value: String): Self = StObject.set(x, "streamContentType", value.asInstanceOf[js.Any])
   }
 }

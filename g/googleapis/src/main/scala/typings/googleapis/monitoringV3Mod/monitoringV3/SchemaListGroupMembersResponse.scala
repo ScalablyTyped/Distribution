@@ -28,34 +28,25 @@ trait SchemaListGroupMembersResponse extends StObject {
 }
 object SchemaListGroupMembersResponse {
   
-  @scala.inline
-  def apply(): SchemaListGroupMembersResponse = {
+  inline def apply(): SchemaListGroupMembersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListGroupMembersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListGroupMembersResponseMutableBuilder[Self <: SchemaListGroupMembersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListGroupMembersResponse](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[SchemaMonitoredResource]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[SchemaMonitoredResource]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: SchemaMonitoredResource*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: SchemaMonitoredResource*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

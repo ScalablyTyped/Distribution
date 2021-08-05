@@ -21,25 +21,19 @@ trait MakeDirectoryOptions extends StObject {
 }
 object MakeDirectoryOptions {
   
-  @scala.inline
-  def apply(): MakeDirectoryOptions = {
+  inline def apply(): MakeDirectoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeDirectoryOptions]
   }
   
-  @scala.inline
-  implicit class MakeDirectoryOptionsMutableBuilder[Self <: MakeDirectoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MakeDirectoryOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

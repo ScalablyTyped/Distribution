@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.MsoDebugOptions")
 @js.native
-class MsoDebugOptions protected ()
+/* private */ class MsoDebugOptions ()
   extends StObject
      with typings.activexOffice.Office.MsoDebugOptions {
   
@@ -22,7 +22,7 @@ class MsoDebugOptions protected ()
   /* CompleteClass */
   var FeatureReports: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.MsoDebugOptions_typekey")
   var OfficeDotMsoDebugOptions_typekey: typings.activexOffice.Office.MsoDebugOptions = js.native
   

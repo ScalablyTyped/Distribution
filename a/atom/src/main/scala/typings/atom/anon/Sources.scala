@@ -14,37 +14,27 @@ trait Sources extends StObject {
 }
 object Sources {
   
-  @scala.inline
-  def apply(): Sources = {
+  inline def apply(): Sources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sources]
   }
   
-  @scala.inline
-  implicit class SourcesMutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
+  extension [Self <: Sources](x: Self) {
     
-    @scala.inline
-    def setExcludeSources(value: js.Array[String]): Self = StObject.set(x, "excludeSources", value.asInstanceOf[js.Any])
+    inline def setExcludeSources(value: js.Array[String]): Self = StObject.set(x, "excludeSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeSourcesUndefined: Self = StObject.set(x, "excludeSources", js.undefined)
+    inline def setExcludeSourcesUndefined: Self = StObject.set(x, "excludeSources", js.undefined)
     
-    @scala.inline
-    def setExcludeSourcesVarargs(value: String*): Self = StObject.set(x, "excludeSources", js.Array(value :_*))
+    inline def setExcludeSourcesVarargs(value: String*): Self = StObject.set(x, "excludeSources", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

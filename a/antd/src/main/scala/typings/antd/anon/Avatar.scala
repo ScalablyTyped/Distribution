@@ -14,22 +14,17 @@ trait Avatar extends StObject {
 }
 object Avatar {
   
-  @scala.inline
-  def apply(avatar: Boolean, paragraph: Boolean, title: Boolean): Avatar = {
+  inline def apply(avatar: Boolean, paragraph: Boolean, title: Boolean): Avatar = {
     val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Avatar]
   }
   
-  @scala.inline
-  implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
+  extension [Self <: Avatar](x: Self) {
     
-    @scala.inline
-    def setAvatar(value: Boolean): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: Boolean): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraph(value: Boolean): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: Boolean): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

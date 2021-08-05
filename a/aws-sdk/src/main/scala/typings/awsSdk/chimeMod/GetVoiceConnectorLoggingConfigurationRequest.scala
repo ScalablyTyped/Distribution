@@ -13,16 +13,13 @@ trait GetVoiceConnectorLoggingConfigurationRequest extends StObject {
 }
 object GetVoiceConnectorLoggingConfigurationRequest {
   
-  @scala.inline
-  def apply(VoiceConnectorId: NonEmptyString): GetVoiceConnectorLoggingConfigurationRequest = {
+  inline def apply(VoiceConnectorId: NonEmptyString): GetVoiceConnectorLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVoiceConnectorLoggingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetVoiceConnectorLoggingConfigurationRequestMutableBuilder[Self <: GetVoiceConnectorLoggingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceConnectorLoggingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

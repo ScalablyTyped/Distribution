@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DownBars")
 @js.native
-class DownBars protected ()
+/* private */ class DownBars ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DownBars {
   
@@ -37,7 +37,7 @@ class DownBars protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.DownBars_typekey")
   var PowerPointDotDownBars_typekey: typings.activexPowerpoint.PowerPoint.DownBars = js.native
   

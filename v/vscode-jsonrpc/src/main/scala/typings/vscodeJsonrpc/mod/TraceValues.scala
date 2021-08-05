@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TraceValues extends StObject
 object TraceValues {
   
-  @scala.inline
-  def messages: typings.vscodeJsonrpc.vscodeJsonrpcStrings.messages = "messages".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.messages]
+  inline def messages: typings.vscodeJsonrpc.vscodeJsonrpcStrings.messages = "messages".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.messages]
   
-  @scala.inline
-  def off: typings.vscodeJsonrpc.vscodeJsonrpcStrings.off = "off".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.off]
+  inline def off: typings.vscodeJsonrpc.vscodeJsonrpcStrings.off = "off".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.off]
   
-  @scala.inline
-  def verbose: typings.vscodeJsonrpc.vscodeJsonrpcStrings.verbose = "verbose".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.verbose]
+  inline def verbose: typings.vscodeJsonrpc.vscodeJsonrpcStrings.verbose = "verbose".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.verbose]
 }

@@ -18,31 +18,23 @@ trait BatchGetRepositoriesOutput extends StObject {
 }
 object BatchGetRepositoriesOutput {
   
-  @scala.inline
-  def apply(): BatchGetRepositoriesOutput = {
+  inline def apply(): BatchGetRepositoriesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetRepositoriesOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetRepositoriesOutputMutableBuilder[Self <: BatchGetRepositoriesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetRepositoriesOutput](x: Self) {
     
-    @scala.inline
-    def setRepositories(value: RepositoryMetadataList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: RepositoryMetadataList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoriesNotFound(value: RepositoryNotFoundList): Self = StObject.set(x, "repositoriesNotFound", value.asInstanceOf[js.Any])
+    inline def setRepositoriesNotFound(value: RepositoryNotFoundList): Self = StObject.set(x, "repositoriesNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
+    inline def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
     
-    @scala.inline
-    def setRepositoriesNotFoundVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
+    inline def setRepositoriesNotFoundVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
+    inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    @scala.inline
-    def setRepositoriesVarargs(value: RepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: RepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
   }
 }

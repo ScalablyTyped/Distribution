@@ -9,8 +9,7 @@ trait ISO8601Localizer
      with localizer
 object ISO8601Localizer {
   
-  @scala.inline
-  def apply(localize: () => String, returnAs: String => localizer, to: Double => localizer): ISO8601Localizer = {
+  inline def apply(localize: () => String, returnAs: String => localizer, to: Double => localizer): ISO8601Localizer = {
     val __obj = js.Dynamic.literal(localize = js.Any.fromFunction0(localize), returnAs = js.Any.fromFunction1(returnAs), to = js.Any.fromFunction1(to))
     __obj.asInstanceOf[ISO8601Localizer]
   }

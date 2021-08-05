@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdContentControlType extends StObject
 object WdContentControlType {
   
-  @scala.inline
-  def wdContentControlBuildingBlockGallery: `5` = 5.asInstanceOf[`5`]
+  inline def wdContentControlBuildingBlockGallery: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdContentControlCheckBox: `8` = 8.asInstanceOf[`8`]
+  inline def wdContentControlCheckBox: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdContentControlComboBox: `3` = 3.asInstanceOf[`3`]
+  inline def wdContentControlComboBox: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdContentControlDate: `6` = 6.asInstanceOf[`6`]
+  inline def wdContentControlDate: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdContentControlDropdownList: `4` = 4.asInstanceOf[`4`]
+  inline def wdContentControlDropdownList: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdContentControlGroup: `7` = 7.asInstanceOf[`7`]
+  inline def wdContentControlGroup: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdContentControlPicture: `2` = 2.asInstanceOf[`2`]
+  inline def wdContentControlPicture: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdContentControlRichText: `0` = 0.asInstanceOf[`0`]
+  inline def wdContentControlRichText: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdContentControlText: `1` = 1.asInstanceOf[`1`]
+  inline def wdContentControlText: `1` = 1.asInstanceOf[`1`]
 }

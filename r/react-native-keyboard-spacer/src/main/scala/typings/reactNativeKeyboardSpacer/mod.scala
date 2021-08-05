@@ -26,35 +26,26 @@ object mod {
   }
   object KeyboardSpacerProps {
     
-    @scala.inline
-    def apply(): KeyboardSpacerProps = {
+    inline def apply(): KeyboardSpacerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyboardSpacerProps]
     }
     
-    @scala.inline
-    implicit class KeyboardSpacerPropsMutableBuilder[Self <: KeyboardSpacerProps] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardSpacerProps](x: Self) {
       
-      @scala.inline
-      def setOnToggle(value: (/* keyboardIsOpen */ Boolean, /* keyboardSpace */ Double) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
+      inline def setOnToggle(value: (/* keyboardIsOpen */ Boolean, /* keyboardSpace */ Double) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+      inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTopSpacing(value: Double): Self = StObject.set(x, "topSpacing", value.asInstanceOf[js.Any])
+      inline def setTopSpacing(value: Double): Self = StObject.set(x, "topSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopSpacingUndefined: Self = StObject.set(x, "topSpacing", js.undefined)
+      inline def setTopSpacingUndefined: Self = StObject.set(x, "topSpacing", js.undefined)
     }
   }
 }

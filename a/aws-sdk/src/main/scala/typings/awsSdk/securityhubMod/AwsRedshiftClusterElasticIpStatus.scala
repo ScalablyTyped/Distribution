@@ -18,25 +18,19 @@ trait AwsRedshiftClusterElasticIpStatus extends StObject {
 }
 object AwsRedshiftClusterElasticIpStatus {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterElasticIpStatus = {
+  inline def apply(): AwsRedshiftClusterElasticIpStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterElasticIpStatus]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterElasticIpStatusMutableBuilder[Self <: AwsRedshiftClusterElasticIpStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterElasticIpStatus](x: Self) {
     
-    @scala.inline
-    def setElasticIp(value: NonEmptyString): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
+    inline def setElasticIp(value: NonEmptyString): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
+    inline def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

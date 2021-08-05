@@ -14,7 +14,7 @@ object proxyTracerProviderMod {
     extends StObject
        with TracerProvider {
     
-    var _delegate: js.Any = js.native
+    /* private */ var _delegate: js.Any = js.native
     
     def getDelegate(): TracerProvider = js.native
     

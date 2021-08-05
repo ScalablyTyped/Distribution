@@ -15,25 +15,19 @@ trait ListItemProps
 }
 object ListItemProps {
   
-  @scala.inline
-  def apply(): ListItemProps = {
+  inline def apply(): ListItemProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemProps]
   }
   
-  @scala.inline
-  implicit class ListItemPropsMutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemProps](x: Self) {
     
-    @scala.inline
-    def setThreeLine(value: Boolean): Self = StObject.set(x, "threeLine", value.asInstanceOf[js.Any])
+    inline def setThreeLine(value: Boolean): Self = StObject.set(x, "threeLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeLineUndefined: Self = StObject.set(x, "threeLine", js.undefined)
+    inline def setThreeLineUndefined: Self = StObject.set(x, "threeLine", js.undefined)
     
-    @scala.inline
-    def setTwoLine(value: Boolean): Self = StObject.set(x, "twoLine", value.asInstanceOf[js.Any])
+    inline def setTwoLine(value: Boolean): Self = StObject.set(x, "twoLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoLineUndefined: Self = StObject.set(x, "twoLine", js.undefined)
+    inline def setTwoLineUndefined: Self = StObject.set(x, "twoLine", js.undefined)
   }
 }

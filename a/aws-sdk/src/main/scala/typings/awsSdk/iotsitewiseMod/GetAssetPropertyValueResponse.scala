@@ -13,19 +13,15 @@ trait GetAssetPropertyValueResponse extends StObject {
 }
 object GetAssetPropertyValueResponse {
   
-  @scala.inline
-  def apply(): GetAssetPropertyValueResponse = {
+  inline def apply(): GetAssetPropertyValueResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAssetPropertyValueResponse]
   }
   
-  @scala.inline
-  implicit class GetAssetPropertyValueResponseMutableBuilder[Self <: GetAssetPropertyValueResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssetPropertyValueResponse](x: Self) {
     
-    @scala.inline
-    def setPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+    inline def setPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyValueUndefined: Self = StObject.set(x, "propertyValue", js.undefined)
+    inline def setPropertyValueUndefined: Self = StObject.set(x, "propertyValue", js.undefined)
   }
 }

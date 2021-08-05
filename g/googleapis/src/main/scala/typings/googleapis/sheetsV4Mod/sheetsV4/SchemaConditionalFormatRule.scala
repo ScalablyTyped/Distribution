@@ -28,34 +28,25 @@ trait SchemaConditionalFormatRule extends StObject {
 }
 object SchemaConditionalFormatRule {
   
-  @scala.inline
-  def apply(): SchemaConditionalFormatRule = {
+  inline def apply(): SchemaConditionalFormatRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConditionalFormatRule]
   }
   
-  @scala.inline
-  implicit class SchemaConditionalFormatRuleMutableBuilder[Self <: SchemaConditionalFormatRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConditionalFormatRule](x: Self) {
     
-    @scala.inline
-    def setBooleanRule(value: SchemaBooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
+    inline def setBooleanRule(value: SchemaBooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanRuleUndefined: Self = StObject.set(x, "booleanRule", js.undefined)
+    inline def setBooleanRuleUndefined: Self = StObject.set(x, "booleanRule", js.undefined)
     
-    @scala.inline
-    def setGradientRule(value: SchemaGradientRule): Self = StObject.set(x, "gradientRule", value.asInstanceOf[js.Any])
+    inline def setGradientRule(value: SchemaGradientRule): Self = StObject.set(x, "gradientRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientRuleUndefined: Self = StObject.set(x, "gradientRule", js.undefined)
+    inline def setGradientRuleUndefined: Self = StObject.set(x, "gradientRule", js.undefined)
     
-    @scala.inline
-    def setRanges(value: js.Array[SchemaGridRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[SchemaGridRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: SchemaGridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: SchemaGridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

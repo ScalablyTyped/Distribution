@@ -218,8 +218,7 @@ object colorMod {
     @JSImport("three/src/math/Color", "Color.NAMES")
     @js.native
     def NAMES: Record[String, Double] = js.native
-    @scala.inline
-    def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
+    inline def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
   }
   
   trait HSL extends StObject {
@@ -232,23 +231,18 @@ object colorMod {
   }
   object HSL {
     
-    @scala.inline
-    def apply(h: Double, l: Double, s: Double): HSL = {
+    inline def apply(h: Double, l: Double, s: Double): HSL = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[HSL]
     }
     
-    @scala.inline
-    implicit class HSLMutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
+    extension [Self <: HSL](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
 }

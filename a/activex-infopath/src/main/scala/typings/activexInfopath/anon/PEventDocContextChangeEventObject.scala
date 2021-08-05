@@ -11,16 +11,13 @@ trait PEventDocContextChangeEventObject extends StObject {
 }
 object PEventDocContextChangeEventObject {
   
-  @scala.inline
-  def apply(pEvent: DocContextChangeEventObject): PEventDocContextChangeEventObject = {
+  inline def apply(pEvent: DocContextChangeEventObject): PEventDocContextChangeEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEventDocContextChangeEventObject]
   }
   
-  @scala.inline
-  implicit class PEventDocContextChangeEventObjectMutableBuilder[Self <: PEventDocContextChangeEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PEventDocContextChangeEventObject](x: Self) {
     
-    @scala.inline
-    def setPEvent(value: DocContextChangeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
+    inline def setPEvent(value: DocContextChangeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }
 }

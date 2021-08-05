@@ -50,38 +50,28 @@ object org_ {
   }
   object MemberSelectors {
     
-    @scala.inline
-    def apply(): MemberSelectors = {
+    inline def apply(): MemberSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MemberSelectors]
     }
     
-    @scala.inline
-    implicit class MemberSelectorsMutableBuilder[Self <: MemberSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: MemberSelectors](x: Self) {
       
-      @scala.inline
-      def setDotcard(value: SVGRectAttributes): Self = StObject.set(x, ".card", value.asInstanceOf[js.Any])
+      inline def setDotcard(value: SVGRectAttributes): Self = StObject.set(x, ".card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotcardUndefined: Self = StObject.set(x, ".card", js.undefined)
+      inline def setDotcardUndefined: Self = StObject.set(x, ".card", js.undefined)
       
-      @scala.inline
-      def setDotname(value: SVGTextAttributes): Self = StObject.set(x, ".name", value.asInstanceOf[js.Any])
+      inline def setDotname(value: SVGTextAttributes): Self = StObject.set(x, ".name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotnameUndefined: Self = StObject.set(x, ".name", js.undefined)
+      inline def setDotnameUndefined: Self = StObject.set(x, ".name", js.undefined)
       
-      @scala.inline
-      def setDotrank(value: SVGTextAttributes): Self = StObject.set(x, ".rank", value.asInstanceOf[js.Any])
+      inline def setDotrank(value: SVGTextAttributes): Self = StObject.set(x, ".rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotrankUndefined: Self = StObject.set(x, ".rank", js.undefined)
+      inline def setDotrankUndefined: Self = StObject.set(x, ".rank", js.undefined)
       
-      @scala.inline
-      def setImage(value: SVGImageAttributes): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: SVGImageAttributes): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     }
   }
 }

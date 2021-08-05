@@ -74,19 +74,16 @@ object recognizeStreamMod {
   @JSImport("watson-developer-cloud/lib/recognize-stream", "ERROR_UNRECOGNIZED_FORMAT")
   @js.native
   def ERROR_UNRECOGNIZED_FORMAT: String = js.native
-  @scala.inline
-  def ERROR_UNRECOGNIZED_FORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR_UNRECOGNIZED_FORMAT")(x.asInstanceOf[js.Any])
+  inline def ERROR_UNRECOGNIZED_FORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR_UNRECOGNIZED_FORMAT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("watson-developer-cloud/lib/recognize-stream", "WEBSOCKET_CONNECTION_ERROR")
   @js.native
   def WEBSOCKET_CONNECTION_ERROR: String = js.native
-  @scala.inline
-  def WEBSOCKET_CONNECTION_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBSOCKET_CONNECTION_ERROR")(x.asInstanceOf[js.Any])
+  inline def WEBSOCKET_CONNECTION_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBSOCKET_CONNECTION_ERROR")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def getContentType(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getContentType(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * pipe()-able Node.js Readable/Writeable stream - accepts binary audio and emits text in its `data` events.
@@ -125,11 +122,11 @@ object recognizeStreamMod {
       */
     def afterSend(next: js.Any): Unit = js.native
     
-    var authenticated: js.Any = js.native
+    /* private */ var authenticated: js.Any = js.native
     
     def finish(): Unit = js.native
     
-    var finished: js.Any = js.native
+    /* private */ var finished: js.Any = js.native
     
     /**
       * Returns a Promise that resolves with Watson Transaction ID from the X-Transaction-ID header
@@ -142,11 +139,11 @@ object recognizeStreamMod {
     
     def initialize(): Unit = js.native
     
-    var initialized: js.Any = js.native
+    /* private */ var initialized: js.Any = js.native
     
-    var listening: js.Any = js.native
+    /* private */ var listening: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def sendData(data: js.Any): Unit = js.native
     
@@ -163,7 +160,7 @@ object recognizeStreamMod {
       */
     def setAuthorizationHeaderToken(callback: js.Any): Unit = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
     
     /**
       * Prevents any more audio from being sent over the WebSocket and gracefully closes the connection.

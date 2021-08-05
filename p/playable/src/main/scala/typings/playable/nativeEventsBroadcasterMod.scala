@@ -15,34 +15,34 @@ object nativeEventsBroadcasterMod {
        with NativeEventsBroadcaster {
     def this(eventEmitter: IEventEmitter, output: HTMLVideoElement) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindCallbacks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _checkVolumeChanges: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _currentMute: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _currentVolume: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _processEventFromVideo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _shouldCheckVolume: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _video: js.Any = js.native
     
     /* CompleteClass */
@@ -58,25 +58,25 @@ object nativeEventsBroadcasterMod {
   
   trait NativeEventsBroadcaster extends StObject {
     
-    var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _checkVolumeChanges: js.Any
+    /* private */ var _checkVolumeChanges: js.Any
     
-    var _currentMute: js.Any
+    /* private */ var _currentMute: js.Any
     
-    var _currentVolume: js.Any
+    /* private */ var _currentVolume: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _processEventFromVideo: js.Any
+    /* private */ var _processEventFromVideo: js.Any
     
-    var _shouldCheckVolume: js.Any
+    /* private */ var _shouldCheckVolume: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
-    var _video: js.Any
+    /* private */ var _video: js.Any
     
     def checkVolumeChangeAfterLoadStart(): Unit
     
@@ -84,8 +84,7 @@ object nativeEventsBroadcasterMod {
   }
   object NativeEventsBroadcaster {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindCallbacks: js.Any,
       _bindEvents: js.Any,
       _checkVolumeChanges: js.Any,
@@ -103,44 +102,31 @@ object nativeEventsBroadcasterMod {
       __obj.asInstanceOf[NativeEventsBroadcaster]
     }
     
-    @scala.inline
-    implicit class NativeEventsBroadcasterMutableBuilder[Self <: NativeEventsBroadcaster] (val x: Self) extends AnyVal {
+    extension [Self <: NativeEventsBroadcaster](x: Self) {
       
-      @scala.inline
-      def setCheckVolumeChangeAfterLoadStart(value: () => Unit): Self = StObject.set(x, "checkVolumeChangeAfterLoadStart", js.Any.fromFunction0(value))
+      inline def setCheckVolumeChangeAfterLoadStart(value: () => Unit): Self = StObject.set(x, "checkVolumeChangeAfterLoadStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_checkVolumeChanges(value: js.Any): Self = StObject.set(x, "_checkVolumeChanges", value.asInstanceOf[js.Any])
+      inline def set_checkVolumeChanges(value: js.Any): Self = StObject.set(x, "_checkVolumeChanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentMute(value: js.Any): Self = StObject.set(x, "_currentMute", value.asInstanceOf[js.Any])
+      inline def set_currentMute(value: js.Any): Self = StObject.set(x, "_currentMute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentVolume(value: js.Any): Self = StObject.set(x, "_currentVolume", value.asInstanceOf[js.Any])
+      inline def set_currentVolume(value: js.Any): Self = StObject.set(x, "_currentVolume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_processEventFromVideo(value: js.Any): Self = StObject.set(x, "_processEventFromVideo", value.asInstanceOf[js.Any])
+      inline def set_processEventFromVideo(value: js.Any): Self = StObject.set(x, "_processEventFromVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_shouldCheckVolume(value: js.Any): Self = StObject.set(x, "_shouldCheckVolume", value.asInstanceOf[js.Any])
+      inline def set_shouldCheckVolume(value: js.Any): Self = StObject.set(x, "_shouldCheckVolume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_video(value: js.Any): Self = StObject.set(x, "_video", value.asInstanceOf[js.Any])
+      inline def set_video(value: js.Any): Self = StObject.set(x, "_video", value.asInstanceOf[js.Any])
     }
   }
 }

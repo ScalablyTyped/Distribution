@@ -10,22 +10,17 @@ trait LicenseProcessingState extends StObject {
 }
 object LicenseProcessingState {
   
-  @scala.inline
-  def apply(): LicenseProcessingState = {
+  inline def apply(): LicenseProcessingState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseProcessingState]
   }
   
-  @scala.inline
-  implicit class LicenseProcessingStateMutableBuilder[Self <: LicenseProcessingState] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseProcessingState](x: Self) {
     
-    @scala.inline
-    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

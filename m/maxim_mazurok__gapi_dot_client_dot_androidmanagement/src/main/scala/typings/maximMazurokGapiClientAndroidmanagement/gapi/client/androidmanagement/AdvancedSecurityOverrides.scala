@@ -19,25 +19,19 @@ trait AdvancedSecurityOverrides extends StObject {
 }
 object AdvancedSecurityOverrides {
   
-  @scala.inline
-  def apply(): AdvancedSecurityOverrides = {
+  inline def apply(): AdvancedSecurityOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvancedSecurityOverrides]
   }
   
-  @scala.inline
-  implicit class AdvancedSecurityOverridesMutableBuilder[Self <: AdvancedSecurityOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedSecurityOverrides](x: Self) {
     
-    @scala.inline
-    def setCommonCriteriaMode(value: String): Self = StObject.set(x, "commonCriteriaMode", value.asInstanceOf[js.Any])
+    inline def setCommonCriteriaMode(value: String): Self = StObject.set(x, "commonCriteriaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonCriteriaModeUndefined: Self = StObject.set(x, "commonCriteriaMode", js.undefined)
+    inline def setCommonCriteriaModeUndefined: Self = StObject.set(x, "commonCriteriaMode", js.undefined)
     
-    @scala.inline
-    def setUntrustedAppsPolicy(value: String): Self = StObject.set(x, "untrustedAppsPolicy", value.asInstanceOf[js.Any])
+    inline def setUntrustedAppsPolicy(value: String): Self = StObject.set(x, "untrustedAppsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntrustedAppsPolicyUndefined: Self = StObject.set(x, "untrustedAppsPolicy", js.undefined)
+    inline def setUntrustedAppsPolicyUndefined: Self = StObject.set(x, "untrustedAppsPolicy", js.undefined)
   }
 }

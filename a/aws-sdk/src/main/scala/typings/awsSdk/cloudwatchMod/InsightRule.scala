@@ -28,8 +28,7 @@ trait InsightRule extends StObject {
 }
 object InsightRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Definition: InsightRuleDefinition,
     Name: InsightRuleName,
     Schema: InsightRuleSchema,
@@ -39,19 +38,14 @@ object InsightRule {
     __obj.asInstanceOf[InsightRule]
   }
   
-  @scala.inline
-  implicit class InsightRuleMutableBuilder[Self <: InsightRule] (val x: Self) extends AnyVal {
+  extension [Self <: InsightRule](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: InsightRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: InsightRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: InsightRuleSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: InsightRuleSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: InsightRuleState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: InsightRuleState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

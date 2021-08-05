@@ -28,29 +28,29 @@ object rowHeaderMod {
       */
     def this(props: IRowHeaderProps, context: js.Any) = this()
     
-    var convertPointToRow: js.Any = js.native
+    /* private */ var convertPointToRow: js.Any = js.native
     
-    var getCellExtremaClasses: js.Any = js.native
+    /* private */ var getCellExtremaClasses: js.Any = js.native
     
-    var getDragCoordinate: js.Any = js.native
+    /* private */ var getDragCoordinate: js.Any = js.native
     
-    var getMouseCoordinate: js.Any = js.native
+    /* private */ var getMouseCoordinate: js.Any = js.native
     
-    var getRowHeight: js.Any = js.native
+    /* private */ var getRowHeight: js.Any = js.native
     
-    var handleResizeEnd: js.Any = js.native
+    /* private */ var handleResizeEnd: js.Any = js.native
     
-    var handleSizeChanged: js.Any = js.native
+    /* private */ var handleSizeChanged: js.Any = js.native
     
-    var isCellSelected: js.Any = js.native
+    /* private */ var isCellSelected: js.Any = js.native
     
-    var isGhostIndex: js.Any = js.native
+    /* private */ var isGhostIndex: js.Any = js.native
     
-    var renderGhostCell: js.Any = js.native
+    /* private */ var renderGhostCell: js.Any = js.native
     
-    var toRegion: js.Any = js.native
+    /* private */ var toRegion: js.Any = js.native
     
-    var wrapCells: js.Any = js.native
+    /* private */ var wrapCells: js.Any = js.native
   }
   /* static members */
   object RowHeader {
@@ -62,12 +62,10 @@ object rowHeaderMod {
     @JSImport("@blueprintjs/table/lib/esm/headers/rowHeader", "RowHeader.defaultProps")
     @js.native
     def defaultProps: RowHeaderCellRenderer = js.native
-    @scala.inline
-    def defaultProps_=(x: RowHeaderCellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: RowHeaderCellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def renderDefaultRowHeader(rowIndex: Double): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderDefaultRowHeader")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def renderDefaultRowHeader(rowIndex: Double): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderDefaultRowHeader")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait IRowHeaderProps
@@ -99,32 +97,24 @@ object rowHeaderMod {
   }
   object IRowHeights {
     
-    @scala.inline
-    def apply(): IRowHeights = {
+    inline def apply(): IRowHeights = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRowHeights]
     }
     
-    @scala.inline
-    implicit class IRowHeightsMutableBuilder[Self <: IRowHeights] (val x: Self) extends AnyVal {
+    extension [Self <: IRowHeights](x: Self) {
       
-      @scala.inline
-      def setDefaultRowHeight(value: Double): Self = StObject.set(x, "defaultRowHeight", value.asInstanceOf[js.Any])
+      inline def setDefaultRowHeight(value: Double): Self = StObject.set(x, "defaultRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRowHeightUndefined: Self = StObject.set(x, "defaultRowHeight", js.undefined)
+      inline def setDefaultRowHeightUndefined: Self = StObject.set(x, "defaultRowHeight", js.undefined)
       
-      @scala.inline
-      def setMaxRowHeight(value: Double): Self = StObject.set(x, "maxRowHeight", value.asInstanceOf[js.Any])
+      inline def setMaxRowHeight(value: Double): Self = StObject.set(x, "maxRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRowHeightUndefined: Self = StObject.set(x, "maxRowHeight", js.undefined)
+      inline def setMaxRowHeightUndefined: Self = StObject.set(x, "maxRowHeight", js.undefined)
       
-      @scala.inline
-      def setMinRowHeight(value: Double): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+      inline def setMinRowHeight(value: Double): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
+      inline def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
     }
   }
 }

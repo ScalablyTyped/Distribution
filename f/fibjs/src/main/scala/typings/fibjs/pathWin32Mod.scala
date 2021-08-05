@@ -15,51 +15,39 @@ object pathWin32Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("path_win32", "delimiter")
   @js.native
   val delimiter: String = js.native
   
-  @scala.inline
-  def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fullpath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullpath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fullpath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullpath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def join(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def join(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("path_win32", "posix")
   @js.native
   val posix: js.Object = js.native
   
-  @scala.inline
-  def relative(_from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(_from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def relative(_from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(_from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def resolve(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolve(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("path_win32", "sep")
   @js.native
   val sep: String = js.native
   
-  @scala.inline
-  def toNamespacedPath(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")().asInstanceOf[js.Any]
-  @scala.inline
-  def toNamespacedPath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toNamespacedPath(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")().asInstanceOf[js.Any]
+  inline def toNamespacedPath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("path_win32", "win32")
   @js.native

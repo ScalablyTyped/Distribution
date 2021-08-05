@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcPrintColor extends StObject
 object AcPrintColor {
   
-  @scala.inline
-  def acPRCMColor: `2` = 2.asInstanceOf[`2`]
+  inline def acPRCMColor: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acPRCMMonochrome: `1` = 1.asInstanceOf[`1`]
+  inline def acPRCMMonochrome: `1` = 1.asInstanceOf[`1`]
 }

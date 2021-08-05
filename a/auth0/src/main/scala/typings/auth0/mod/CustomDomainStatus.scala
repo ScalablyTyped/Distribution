@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomDomainStatus extends StObject
 object CustomDomainStatus {
   
-  @scala.inline
-  def disabled: typings.auth0.auth0Strings.disabled = "disabled".asInstanceOf[typings.auth0.auth0Strings.disabled]
+  inline def disabled: typings.auth0.auth0Strings.disabled = "disabled".asInstanceOf[typings.auth0.auth0Strings.disabled]
   
-  @scala.inline
-  def pending: typings.auth0.auth0Strings.pending = "pending".asInstanceOf[typings.auth0.auth0Strings.pending]
+  inline def pending: typings.auth0.auth0Strings.pending = "pending".asInstanceOf[typings.auth0.auth0Strings.pending]
   
-  @scala.inline
-  def pending_verification: typings.auth0.auth0Strings.pending_verification = "pending_verification".asInstanceOf[typings.auth0.auth0Strings.pending_verification]
+  inline def pending_verification: typings.auth0.auth0Strings.pending_verification = "pending_verification".asInstanceOf[typings.auth0.auth0Strings.pending_verification]
   
-  @scala.inline
-  def ready: typings.auth0.auth0Strings.ready = "ready".asInstanceOf[typings.auth0.auth0Strings.ready]
+  inline def ready: typings.auth0.auth0Strings.ready = "ready".asInstanceOf[typings.auth0.auth0Strings.ready]
 }

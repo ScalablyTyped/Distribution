@@ -21,25 +21,19 @@ trait IonCardTitle extends StObject {
 }
 object IonCardTitle {
   
-  @scala.inline
-  def apply(): IonCardTitle = {
+  inline def apply(): IonCardTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonCardTitle]
   }
   
-  @scala.inline
-  implicit class IonCardTitleMutableBuilder[Self <: IonCardTitle] (val x: Self) extends AnyVal {
+  extension [Self <: IonCardTitle](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

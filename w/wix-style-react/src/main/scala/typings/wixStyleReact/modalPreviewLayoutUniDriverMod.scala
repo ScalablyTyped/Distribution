@@ -24,8 +24,7 @@ object modalPreviewLayoutUniDriverMod {
   }
   object ModalPreviewLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickClose: () => js.Promise[Unit],
       clickOverlay: () => js.Promise[Unit],
@@ -39,23 +38,17 @@ object modalPreviewLayoutUniDriverMod {
       __obj.asInstanceOf[ModalPreviewLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class ModalPreviewLayoutUniDriverMutableBuilder[Self <: ModalPreviewLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ModalPreviewLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
+      inline def setClickClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOverlay(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOverlay", js.Any.fromFunction0(value))
+      inline def setClickOverlay(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOverlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviewActions(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPreviewActions", js.Any.fromFunction0(value))
+      inline def setGetPreviewActions(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPreviewActions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviewContent(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPreviewContent", js.Any.fromFunction0(value))
+      inline def setGetPreviewContent(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPreviewContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviewTitle(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPreviewTitle", js.Any.fromFunction0(value))
+      inline def setGetPreviewTitle(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPreviewTitle", js.Any.fromFunction0(value))
     }
   }
 }

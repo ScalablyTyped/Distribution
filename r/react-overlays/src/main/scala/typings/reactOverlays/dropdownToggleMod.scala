@@ -25,8 +25,7 @@ object dropdownToggleMod {
       * @displayName DropdownToggle
       * @memberOf Dropdown
       */
-    @scala.inline
-    def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-overlays/cjs/DropdownToggle", JSImport.Default)
     @js.native
@@ -35,8 +34,7 @@ object dropdownToggleMod {
     @JSImport("react-overlays/cjs/DropdownToggle", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     object propTypes {
       
@@ -62,13 +60,11 @@ object dropdownToggleMod {
       @JSImport("react-overlays/cjs/DropdownToggle", "default.propTypes.children")
       @js.native
       def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      @scala.inline
-      def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
+  inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
   
   trait DropdownToggleProps extends StObject {
     
@@ -76,17 +72,14 @@ object dropdownToggleMod {
   }
   object DropdownToggleProps {
     
-    @scala.inline
-    def apply(children: UseDropdownToggleHelpersp => ReactNode): DropdownToggleProps = {
+    inline def apply(children: UseDropdownToggleHelpersp => ReactNode): DropdownToggleProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[DropdownToggleProps]
     }
     
-    @scala.inline
-    implicit class DropdownTogglePropsMutableBuilder[Self <: DropdownToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownToggleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: UseDropdownToggleHelpersp => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: UseDropdownToggleHelpersp => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -102,8 +95,7 @@ object dropdownToggleMod {
   }
   object UseDropdownToggleHelpers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       show: Boolean,
       toggle: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[typings.std.Element, Event]) | Event]) => Unit
     ): UseDropdownToggleHelpers = {
@@ -111,14 +103,11 @@ object dropdownToggleMod {
       __obj.asInstanceOf[UseDropdownToggleHelpers]
     }
     
-    @scala.inline
-    implicit class UseDropdownToggleHelpersMutableBuilder[Self <: UseDropdownToggleHelpers] (val x: Self) extends AnyVal {
+    extension [Self <: UseDropdownToggleHelpers](x: Self) {
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggle(
+      inline def setToggle(
         value: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[typings.std.Element, Event]) | Event]) => Unit
       ): Self = StObject.set(x, "toggle", js.Any.fromFunction2(value))
     }
@@ -134,25 +123,20 @@ object dropdownToggleMod {
   }
   object UseDropdownToggleProps {
     
-    @scala.inline
-    def apply(`aria-expanded`: Boolean, `aria-haspopup`: Boolean, ref: /* ref */ HTMLElement | Null => Unit): UseDropdownToggleProps = {
+    inline def apply(`aria-expanded`: Boolean, `aria-haspopup`: Boolean, ref: /* ref */ HTMLElement | Null => Unit): UseDropdownToggleProps = {
       val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref))
       __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
       __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseDropdownToggleProps]
     }
     
-    @scala.inline
-    implicit class UseDropdownTogglePropsMutableBuilder[Self <: UseDropdownToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: UseDropdownToggleProps](x: Self) {
       
-      @scala.inline
-      def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-haspopup`(value: Boolean): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
   }
 }

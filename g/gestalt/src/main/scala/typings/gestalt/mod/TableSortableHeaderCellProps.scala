@@ -28,8 +28,7 @@ trait TableSortableHeaderCellProps
 }
 object TableSortableHeaderCellProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onSortChange: /* arg */ js.Object & (Event[
       (MouseEvent[HTMLTableCellElement, NativeMouseEvent]) | KeyboardEvent[HTMLTableCellElement]
     ]) => Unit,
@@ -40,20 +39,16 @@ object TableSortableHeaderCellProps {
     __obj.asInstanceOf[TableSortableHeaderCellProps]
   }
   
-  @scala.inline
-  implicit class TableSortableHeaderCellPropsMutableBuilder[Self <: TableSortableHeaderCellProps] (val x: Self) extends AnyVal {
+  extension [Self <: TableSortableHeaderCellProps](x: Self) {
     
-    @scala.inline
-    def setOnSortChange(
+    inline def setOnSortChange(
       value: /* arg */ js.Object & (Event[
           (MouseEvent[HTMLTableCellElement, NativeMouseEvent]) | KeyboardEvent[HTMLTableCellElement]
         ]) => Unit
     ): Self = StObject.set(x, "onSortChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: active | inactive): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: active | inactive): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

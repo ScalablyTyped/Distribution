@@ -100,211 +100,143 @@ trait WindowsPhone81GeneralConfiguration
 }
 object WindowsPhone81GeneralConfiguration {
   
-  @scala.inline
-  def apply(): WindowsPhone81GeneralConfiguration = {
+  inline def apply(): WindowsPhone81GeneralConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsPhone81GeneralConfiguration]
   }
   
-  @scala.inline
-  implicit class WindowsPhone81GeneralConfigurationMutableBuilder[Self <: WindowsPhone81GeneralConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsPhone81GeneralConfiguration](x: Self) {
     
-    @scala.inline
-    def setApplyOnlyToWindowsPhone81(value: Boolean): Self = StObject.set(x, "applyOnlyToWindowsPhone81", value.asInstanceOf[js.Any])
+    inline def setApplyOnlyToWindowsPhone81(value: Boolean): Self = StObject.set(x, "applyOnlyToWindowsPhone81", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyOnlyToWindowsPhone81Undefined: Self = StObject.set(x, "applyOnlyToWindowsPhone81", js.undefined)
+    inline def setApplyOnlyToWindowsPhone81Undefined: Self = StObject.set(x, "applyOnlyToWindowsPhone81", js.undefined)
     
-    @scala.inline
-    def setAppsBlockCopyPaste(value: Boolean): Self = StObject.set(x, "appsBlockCopyPaste", value.asInstanceOf[js.Any])
+    inline def setAppsBlockCopyPaste(value: Boolean): Self = StObject.set(x, "appsBlockCopyPaste", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsBlockCopyPasteUndefined: Self = StObject.set(x, "appsBlockCopyPaste", js.undefined)
+    inline def setAppsBlockCopyPasteUndefined: Self = StObject.set(x, "appsBlockCopyPaste", js.undefined)
     
-    @scala.inline
-    def setBluetoothBlocked(value: Boolean): Self = StObject.set(x, "bluetoothBlocked", value.asInstanceOf[js.Any])
+    inline def setBluetoothBlocked(value: Boolean): Self = StObject.set(x, "bluetoothBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluetoothBlockedUndefined: Self = StObject.set(x, "bluetoothBlocked", js.undefined)
+    inline def setBluetoothBlockedUndefined: Self = StObject.set(x, "bluetoothBlocked", js.undefined)
     
-    @scala.inline
-    def setCameraBlocked(value: Boolean): Self = StObject.set(x, "cameraBlocked", value.asInstanceOf[js.Any])
+    inline def setCameraBlocked(value: Boolean): Self = StObject.set(x, "cameraBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraBlockedUndefined: Self = StObject.set(x, "cameraBlocked", js.undefined)
+    inline def setCameraBlockedUndefined: Self = StObject.set(x, "cameraBlocked", js.undefined)
     
-    @scala.inline
-    def setCellularBlockWifiTethering(value: Boolean): Self = StObject.set(x, "cellularBlockWifiTethering", value.asInstanceOf[js.Any])
+    inline def setCellularBlockWifiTethering(value: Boolean): Self = StObject.set(x, "cellularBlockWifiTethering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellularBlockWifiTetheringUndefined: Self = StObject.set(x, "cellularBlockWifiTethering", js.undefined)
+    inline def setCellularBlockWifiTetheringUndefined: Self = StObject.set(x, "cellularBlockWifiTethering", js.undefined)
     
-    @scala.inline
-    def setCompliantAppListType(value: AppListType): Self = StObject.set(x, "compliantAppListType", value.asInstanceOf[js.Any])
+    inline def setCompliantAppListType(value: AppListType): Self = StObject.set(x, "compliantAppListType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliantAppListTypeUndefined: Self = StObject.set(x, "compliantAppListType", js.undefined)
+    inline def setCompliantAppListTypeUndefined: Self = StObject.set(x, "compliantAppListType", js.undefined)
     
-    @scala.inline
-    def setCompliantAppsList(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "compliantAppsList", value.asInstanceOf[js.Any])
+    inline def setCompliantAppsList(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "compliantAppsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliantAppsListNull: Self = StObject.set(x, "compliantAppsList", null)
+    inline def setCompliantAppsListNull: Self = StObject.set(x, "compliantAppsList", null)
     
-    @scala.inline
-    def setCompliantAppsListUndefined: Self = StObject.set(x, "compliantAppsList", js.undefined)
+    inline def setCompliantAppsListUndefined: Self = StObject.set(x, "compliantAppsList", js.undefined)
     
-    @scala.inline
-    def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value :_*))
+    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value :_*))
     
-    @scala.inline
-    def setDiagnosticDataBlockSubmission(value: Boolean): Self = StObject.set(x, "diagnosticDataBlockSubmission", value.asInstanceOf[js.Any])
+    inline def setDiagnosticDataBlockSubmission(value: Boolean): Self = StObject.set(x, "diagnosticDataBlockSubmission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticDataBlockSubmissionUndefined: Self = StObject.set(x, "diagnosticDataBlockSubmission", js.undefined)
+    inline def setDiagnosticDataBlockSubmissionUndefined: Self = StObject.set(x, "diagnosticDataBlockSubmission", js.undefined)
     
-    @scala.inline
-    def setEmailBlockAddingAccounts(value: Boolean): Self = StObject.set(x, "emailBlockAddingAccounts", value.asInstanceOf[js.Any])
+    inline def setEmailBlockAddingAccounts(value: Boolean): Self = StObject.set(x, "emailBlockAddingAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailBlockAddingAccountsUndefined: Self = StObject.set(x, "emailBlockAddingAccounts", js.undefined)
+    inline def setEmailBlockAddingAccountsUndefined: Self = StObject.set(x, "emailBlockAddingAccounts", js.undefined)
     
-    @scala.inline
-    def setLocationServicesBlocked(value: Boolean): Self = StObject.set(x, "locationServicesBlocked", value.asInstanceOf[js.Any])
+    inline def setLocationServicesBlocked(value: Boolean): Self = StObject.set(x, "locationServicesBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationServicesBlockedUndefined: Self = StObject.set(x, "locationServicesBlocked", js.undefined)
+    inline def setLocationServicesBlockedUndefined: Self = StObject.set(x, "locationServicesBlocked", js.undefined)
     
-    @scala.inline
-    def setMicrosoftAccountBlocked(value: Boolean): Self = StObject.set(x, "microsoftAccountBlocked", value.asInstanceOf[js.Any])
+    inline def setMicrosoftAccountBlocked(value: Boolean): Self = StObject.set(x, "microsoftAccountBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrosoftAccountBlockedUndefined: Self = StObject.set(x, "microsoftAccountBlocked", js.undefined)
+    inline def setMicrosoftAccountBlockedUndefined: Self = StObject.set(x, "microsoftAccountBlocked", js.undefined)
     
-    @scala.inline
-    def setNfcBlocked(value: Boolean): Self = StObject.set(x, "nfcBlocked", value.asInstanceOf[js.Any])
+    inline def setNfcBlocked(value: Boolean): Self = StObject.set(x, "nfcBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcBlockedUndefined: Self = StObject.set(x, "nfcBlocked", js.undefined)
+    inline def setNfcBlockedUndefined: Self = StObject.set(x, "nfcBlocked", js.undefined)
     
-    @scala.inline
-    def setPasswordBlockSimple(value: Boolean): Self = StObject.set(x, "passwordBlockSimple", value.asInstanceOf[js.Any])
+    inline def setPasswordBlockSimple(value: Boolean): Self = StObject.set(x, "passwordBlockSimple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordBlockSimpleUndefined: Self = StObject.set(x, "passwordBlockSimple", js.undefined)
+    inline def setPasswordBlockSimpleUndefined: Self = StObject.set(x, "passwordBlockSimple", js.undefined)
     
-    @scala.inline
-    def setPasswordExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordExpirationDays", value.asInstanceOf[js.Any])
+    inline def setPasswordExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordExpirationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordExpirationDaysNull: Self = StObject.set(x, "passwordExpirationDays", null)
+    inline def setPasswordExpirationDaysNull: Self = StObject.set(x, "passwordExpirationDays", null)
     
-    @scala.inline
-    def setPasswordExpirationDaysUndefined: Self = StObject.set(x, "passwordExpirationDays", js.undefined)
+    inline def setPasswordExpirationDaysUndefined: Self = StObject.set(x, "passwordExpirationDays", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumCharacterSetCount(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinimumCharacterSetCount", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumCharacterSetCount(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinimumCharacterSetCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumCharacterSetCountNull: Self = StObject.set(x, "passwordMinimumCharacterSetCount", null)
+    inline def setPasswordMinimumCharacterSetCountNull: Self = StObject.set(x, "passwordMinimumCharacterSetCount", null)
     
-    @scala.inline
-    def setPasswordMinimumCharacterSetCountUndefined: Self = StObject.set(x, "passwordMinimumCharacterSetCount", js.undefined)
+    inline def setPasswordMinimumCharacterSetCountUndefined: Self = StObject.set(x, "passwordMinimumCharacterSetCount", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinimumLength", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumLengthNull: Self = StObject.set(x, "passwordMinimumLength", null)
+    inline def setPasswordMinimumLengthNull: Self = StObject.set(x, "passwordMinimumLength", null)
     
-    @scala.inline
-    def setPasswordMinimumLengthUndefined: Self = StObject.set(x, "passwordMinimumLength", js.undefined)
+    inline def setPasswordMinimumLengthUndefined: Self = StObject.set(x, "passwordMinimumLength", js.undefined)
     
-    @scala.inline
-    def setPasswordMinutesOfInactivityBeforeScreenTimeout(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", value.asInstanceOf[js.Any])
+    inline def setPasswordMinutesOfInactivityBeforeScreenTimeout(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinutesOfInactivityBeforeScreenTimeoutNull: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", null)
+    inline def setPasswordMinutesOfInactivityBeforeScreenTimeoutNull: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", null)
     
-    @scala.inline
-    def setPasswordMinutesOfInactivityBeforeScreenTimeoutUndefined: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", js.undefined)
+    inline def setPasswordMinutesOfInactivityBeforeScreenTimeoutUndefined: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", js.undefined)
     
-    @scala.inline
-    def setPasswordPreviousPasswordBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "passwordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
+    inline def setPasswordPreviousPasswordBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "passwordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordPreviousPasswordBlockCountNull: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", null)
+    inline def setPasswordPreviousPasswordBlockCountNull: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", null)
     
-    @scala.inline
-    def setPasswordPreviousPasswordBlockCountUndefined: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", js.undefined)
+    inline def setPasswordPreviousPasswordBlockCountUndefined: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", js.undefined)
     
-    @scala.inline
-    def setPasswordRequired(value: Boolean): Self = StObject.set(x, "passwordRequired", value.asInstanceOf[js.Any])
+    inline def setPasswordRequired(value: Boolean): Self = StObject.set(x, "passwordRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRequiredType(value: RequiredPasswordType): Self = StObject.set(x, "passwordRequiredType", value.asInstanceOf[js.Any])
+    inline def setPasswordRequiredType(value: RequiredPasswordType): Self = StObject.set(x, "passwordRequiredType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRequiredTypeUndefined: Self = StObject.set(x, "passwordRequiredType", js.undefined)
+    inline def setPasswordRequiredTypeUndefined: Self = StObject.set(x, "passwordRequiredType", js.undefined)
     
-    @scala.inline
-    def setPasswordRequiredUndefined: Self = StObject.set(x, "passwordRequired", js.undefined)
+    inline def setPasswordRequiredUndefined: Self = StObject.set(x, "passwordRequired", js.undefined)
     
-    @scala.inline
-    def setPasswordSignInFailureCountBeforeFactoryReset(value: NullableOption[Double]): Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", value.asInstanceOf[js.Any])
+    inline def setPasswordSignInFailureCountBeforeFactoryReset(value: NullableOption[Double]): Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordSignInFailureCountBeforeFactoryResetNull: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", null)
+    inline def setPasswordSignInFailureCountBeforeFactoryResetNull: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", null)
     
-    @scala.inline
-    def setPasswordSignInFailureCountBeforeFactoryResetUndefined: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", js.undefined)
+    inline def setPasswordSignInFailureCountBeforeFactoryResetUndefined: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", js.undefined)
     
-    @scala.inline
-    def setScreenCaptureBlocked(value: Boolean): Self = StObject.set(x, "screenCaptureBlocked", value.asInstanceOf[js.Any])
+    inline def setScreenCaptureBlocked(value: Boolean): Self = StObject.set(x, "screenCaptureBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenCaptureBlockedUndefined: Self = StObject.set(x, "screenCaptureBlocked", js.undefined)
+    inline def setScreenCaptureBlockedUndefined: Self = StObject.set(x, "screenCaptureBlocked", js.undefined)
     
-    @scala.inline
-    def setStorageBlockRemovableStorage(value: Boolean): Self = StObject.set(x, "storageBlockRemovableStorage", value.asInstanceOf[js.Any])
+    inline def setStorageBlockRemovableStorage(value: Boolean): Self = StObject.set(x, "storageBlockRemovableStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageBlockRemovableStorageUndefined: Self = StObject.set(x, "storageBlockRemovableStorage", js.undefined)
+    inline def setStorageBlockRemovableStorageUndefined: Self = StObject.set(x, "storageBlockRemovableStorage", js.undefined)
     
-    @scala.inline
-    def setStorageRequireEncryption(value: Boolean): Self = StObject.set(x, "storageRequireEncryption", value.asInstanceOf[js.Any])
+    inline def setStorageRequireEncryption(value: Boolean): Self = StObject.set(x, "storageRequireEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageRequireEncryptionUndefined: Self = StObject.set(x, "storageRequireEncryption", js.undefined)
+    inline def setStorageRequireEncryptionUndefined: Self = StObject.set(x, "storageRequireEncryption", js.undefined)
     
-    @scala.inline
-    def setWebBrowserBlocked(value: Boolean): Self = StObject.set(x, "webBrowserBlocked", value.asInstanceOf[js.Any])
+    inline def setWebBrowserBlocked(value: Boolean): Self = StObject.set(x, "webBrowserBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebBrowserBlockedUndefined: Self = StObject.set(x, "webBrowserBlocked", js.undefined)
+    inline def setWebBrowserBlockedUndefined: Self = StObject.set(x, "webBrowserBlocked", js.undefined)
     
-    @scala.inline
-    def setWifiBlockAutomaticConnectHotspots(value: Boolean): Self = StObject.set(x, "wifiBlockAutomaticConnectHotspots", value.asInstanceOf[js.Any])
+    inline def setWifiBlockAutomaticConnectHotspots(value: Boolean): Self = StObject.set(x, "wifiBlockAutomaticConnectHotspots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiBlockAutomaticConnectHotspotsUndefined: Self = StObject.set(x, "wifiBlockAutomaticConnectHotspots", js.undefined)
+    inline def setWifiBlockAutomaticConnectHotspotsUndefined: Self = StObject.set(x, "wifiBlockAutomaticConnectHotspots", js.undefined)
     
-    @scala.inline
-    def setWifiBlockHotspotReporting(value: Boolean): Self = StObject.set(x, "wifiBlockHotspotReporting", value.asInstanceOf[js.Any])
+    inline def setWifiBlockHotspotReporting(value: Boolean): Self = StObject.set(x, "wifiBlockHotspotReporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiBlockHotspotReportingUndefined: Self = StObject.set(x, "wifiBlockHotspotReporting", js.undefined)
+    inline def setWifiBlockHotspotReportingUndefined: Self = StObject.set(x, "wifiBlockHotspotReporting", js.undefined)
     
-    @scala.inline
-    def setWifiBlocked(value: Boolean): Self = StObject.set(x, "wifiBlocked", value.asInstanceOf[js.Any])
+    inline def setWifiBlocked(value: Boolean): Self = StObject.set(x, "wifiBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiBlockedUndefined: Self = StObject.set(x, "wifiBlocked", js.undefined)
+    inline def setWifiBlockedUndefined: Self = StObject.set(x, "wifiBlocked", js.undefined)
     
-    @scala.inline
-    def setWindowsStoreBlocked(value: Boolean): Self = StObject.set(x, "windowsStoreBlocked", value.asInstanceOf[js.Any])
+    inline def setWindowsStoreBlocked(value: Boolean): Self = StObject.set(x, "windowsStoreBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsStoreBlockedUndefined: Self = StObject.set(x, "windowsStoreBlocked", js.undefined)
+    inline def setWindowsStoreBlockedUndefined: Self = StObject.set(x, "windowsStoreBlocked", js.undefined)
   }
 }

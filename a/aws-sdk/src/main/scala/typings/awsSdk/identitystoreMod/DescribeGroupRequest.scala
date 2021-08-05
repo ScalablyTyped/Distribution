@@ -18,19 +18,15 @@ trait DescribeGroupRequest extends StObject {
 }
 object DescribeGroupRequest {
   
-  @scala.inline
-  def apply(GroupId: ResourceId, IdentityStoreId: IdentityStoreId): DescribeGroupRequest = {
+  inline def apply(GroupId: ResourceId, IdentityStoreId: IdentityStoreId): DescribeGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], IdentityStoreId = IdentityStoreId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGroupRequest]
   }
   
-  @scala.inline
-  implicit class DescribeGroupRequestMutableBuilder[Self <: DescribeGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: ResourceId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: ResourceId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityStoreId(value: IdentityStoreId): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
+    inline def setIdentityStoreId(value: IdentityStoreId): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
   }
 }

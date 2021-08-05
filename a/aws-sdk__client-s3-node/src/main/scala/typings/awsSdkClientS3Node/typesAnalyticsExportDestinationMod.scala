@@ -17,17 +17,14 @@ object typesAnalyticsExportDestinationMod {
   }
   object AnalyticsExportDestination {
     
-    @scala.inline
-    def apply(S3BucketDestination: AnalyticsS3BucketDestination): AnalyticsExportDestination = {
+    inline def apply(S3BucketDestination: AnalyticsS3BucketDestination): AnalyticsExportDestination = {
       val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyticsExportDestination]
     }
     
-    @scala.inline
-    implicit class AnalyticsExportDestinationMutableBuilder[Self <: AnalyticsExportDestination] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsExportDestination](x: Self) {
       
-      @scala.inline
-      def setS3BucketDestination(value: AnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
+      inline def setS3BucketDestination(value: AnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +40,14 @@ object typesAnalyticsExportDestinationMod {
   }
   object UnmarshalledAnalyticsExportDestination {
     
-    @scala.inline
-    def apply(S3BucketDestination: UnmarshalledAnalyticsS3BucketDestination): UnmarshalledAnalyticsExportDestination = {
+    inline def apply(S3BucketDestination: UnmarshalledAnalyticsS3BucketDestination): UnmarshalledAnalyticsExportDestination = {
       val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledAnalyticsExportDestination]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAnalyticsExportDestinationMutableBuilder[Self <: UnmarshalledAnalyticsExportDestination] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAnalyticsExportDestination](x: Self) {
       
-      @scala.inline
-      def setS3BucketDestination(value: UnmarshalledAnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
+      inline def setS3BucketDestination(value: UnmarshalledAnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }
   }
 }

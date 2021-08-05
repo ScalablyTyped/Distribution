@@ -18,28 +18,21 @@ trait ListUploadsResult extends StObject {
 }
 object ListUploadsResult {
   
-  @scala.inline
-  def apply(): ListUploadsResult = {
+  inline def apply(): ListUploadsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUploadsResult]
   }
   
-  @scala.inline
-  implicit class ListUploadsResultMutableBuilder[Self <: ListUploadsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListUploadsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setUploads(value: Uploads): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
+    inline def setUploads(value: Uploads): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
+    inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
     
-    @scala.inline
-    def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value :_*))
+    inline def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value :_*))
   }
 }

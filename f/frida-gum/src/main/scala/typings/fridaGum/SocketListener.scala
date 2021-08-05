@@ -14,14 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocketListener extends StObject
 object SocketListener {
   
-  @scala.inline
-  def TcpListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], port: Double): typings.fridaGum.TcpListener = {
+  inline def TcpListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], port: Double): typings.fridaGum.TcpListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close), port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.TcpListener]
   }
   
-  @scala.inline
-  def UnixListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], path: String): typings.fridaGum.UnixListener = {
+  inline def UnixListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], path: String): typings.fridaGum.UnixListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close), path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.UnixListener]
   }

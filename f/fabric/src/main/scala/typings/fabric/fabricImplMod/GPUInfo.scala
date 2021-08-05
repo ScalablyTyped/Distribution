@@ -12,19 +12,15 @@ trait GPUInfo extends StObject {
 }
 object GPUInfo {
   
-  @scala.inline
-  def apply(renderer: String, vendor: String): GPUInfo = {
+  inline def apply(renderer: String, vendor: String): GPUInfo = {
     val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUInfo]
   }
   
-  @scala.inline
-  implicit class GPUInfoMutableBuilder[Self <: GPUInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GPUInfo](x: Self) {
     
-    @scala.inline
-    def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

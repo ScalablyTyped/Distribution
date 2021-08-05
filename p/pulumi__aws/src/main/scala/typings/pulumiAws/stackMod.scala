@@ -118,21 +118,16 @@ object stackMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stack]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackState): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stack]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID]): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID], state: StackState): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
     
     /**
       * Returns true if the given object is an instance of Stack.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean]
   }
   
   trait StackArgs extends StObject {
@@ -209,98 +204,68 @@ object stackMod {
   }
   object StackArgs {
     
-    @scala.inline
-    def apply(): StackArgs = {
+    inline def apply(): StackArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackArgs]
     }
     
-    @scala.inline
-    implicit class StackArgsMutableBuilder[Self <: StackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StackArgs](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableRollback(value: Input[Boolean]): Self = StObject.set(x, "disableRollback", value.asInstanceOf[js.Any])
+      inline def setDisableRollback(value: Input[Boolean]): Self = StObject.set(x, "disableRollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRollbackUndefined: Self = StObject.set(x, "disableRollback", js.undefined)
+      inline def setDisableRollbackUndefined: Self = StObject.set(x, "disableRollback", js.undefined)
       
-      @scala.inline
-      def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+      inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotificationArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
+      inline def setNotificationArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationArnsUndefined: Self = StObject.set(x, "notificationArns", js.undefined)
+      inline def setNotificationArnsUndefined: Self = StObject.set(x, "notificationArns", js.undefined)
       
-      @scala.inline
-      def setNotificationArnsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
+      inline def setNotificationArnsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
       
-      @scala.inline
-      def setOnFailure(value: Input[String]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+      inline def setOnFailure(value: Input[String]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+      inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setPolicyBody(value: Input[String]): Self = StObject.set(x, "policyBody", value.asInstanceOf[js.Any])
+      inline def setPolicyBody(value: Input[String]): Self = StObject.set(x, "policyBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyBodyUndefined: Self = StObject.set(x, "policyBody", js.undefined)
+      inline def setPolicyBodyUndefined: Self = StObject.set(x, "policyBody", js.undefined)
       
-      @scala.inline
-      def setPolicyUrl(value: Input[String]): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
+      inline def setPolicyUrl(value: Input[String]): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
+      inline def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+      inline def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+      inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
       
-      @scala.inline
-      def setTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+      inline def setTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutInMinutesUndefined: Self = StObject.set(x, "timeoutInMinutes", js.undefined)
+      inline def setTimeoutInMinutesUndefined: Self = StObject.set(x, "timeoutInMinutes", js.undefined)
     }
   }
   
@@ -383,104 +348,72 @@ object stackMod {
   }
   object StackState {
     
-    @scala.inline
-    def apply(): StackState = {
+    inline def apply(): StackState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackState]
     }
     
-    @scala.inline
-    implicit class StackStateMutableBuilder[Self <: StackState] (val x: Self) extends AnyVal {
+    extension [Self <: StackState](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableRollback(value: Input[Boolean]): Self = StObject.set(x, "disableRollback", value.asInstanceOf[js.Any])
+      inline def setDisableRollback(value: Input[Boolean]): Self = StObject.set(x, "disableRollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRollbackUndefined: Self = StObject.set(x, "disableRollback", js.undefined)
+      inline def setDisableRollbackUndefined: Self = StObject.set(x, "disableRollback", js.undefined)
       
-      @scala.inline
-      def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+      inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotificationArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
+      inline def setNotificationArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationArnsUndefined: Self = StObject.set(x, "notificationArns", js.undefined)
+      inline def setNotificationArnsUndefined: Self = StObject.set(x, "notificationArns", js.undefined)
       
-      @scala.inline
-      def setNotificationArnsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
+      inline def setNotificationArnsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
       
-      @scala.inline
-      def setOnFailure(value: Input[String]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+      inline def setOnFailure(value: Input[String]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+      inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setPolicyBody(value: Input[String]): Self = StObject.set(x, "policyBody", value.asInstanceOf[js.Any])
+      inline def setPolicyBody(value: Input[String]): Self = StObject.set(x, "policyBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyBodyUndefined: Self = StObject.set(x, "policyBody", js.undefined)
+      inline def setPolicyBodyUndefined: Self = StObject.set(x, "policyBody", js.undefined)
       
-      @scala.inline
-      def setPolicyUrl(value: Input[String]): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
+      inline def setPolicyUrl(value: Input[String]): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
+      inline def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+      inline def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+      inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
       
-      @scala.inline
-      def setTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+      inline def setTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutInMinutesUndefined: Self = StObject.set(x, "timeoutInMinutes", js.undefined)
+      inline def setTimeoutInMinutesUndefined: Self = StObject.set(x, "timeoutInMinutes", js.undefined)
     }
   }
 }

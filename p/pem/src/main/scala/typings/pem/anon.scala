@@ -14,20 +14,16 @@ object anon {
   }
   object ClientKey {
     
-    @scala.inline
-    def apply(clientKey: String, csr: String): ClientKey = {
+    inline def apply(clientKey: String, csr: String): ClientKey = {
       val __obj = js.Dynamic.literal(clientKey = clientKey.asInstanceOf[js.Any], csr = csr.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientKey]
     }
     
-    @scala.inline
-    implicit class ClientKeyMutableBuilder[Self <: ClientKey] (val x: Self) extends AnyVal {
+    extension [Self <: ClientKey](x: Self) {
       
-      @scala.inline
-      def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
+      inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsr(value: String): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
+      inline def setCsr(value: String): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Dhparam {
     
-    @scala.inline
-    def apply(dhparam: js.Any): Dhparam = {
+    inline def apply(dhparam: js.Any): Dhparam = {
       val __obj = js.Dynamic.literal(dhparam = dhparam.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dhparam]
     }
     
-    @scala.inline
-    implicit class DhparamMutableBuilder[Self <: Dhparam] (val x: Self) extends AnyVal {
+    extension [Self <: Dhparam](x: Self) {
       
-      @scala.inline
-      def setDhparam(value: js.Any): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
+      inline def setDhparam(value: js.Any): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +50,14 @@ object anon {
   }
   object Fingerprint {
     
-    @scala.inline
-    def apply(fingerprint: String): Fingerprint = {
+    inline def apply(fingerprint: String): Fingerprint = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fingerprint]
     }
     
-    @scala.inline
-    implicit class FingerprintMutableBuilder[Self <: Fingerprint] (val x: Self) extends AnyVal {
+    extension [Self <: Fingerprint](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,17 +67,14 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String): Key = {
+    inline def apply(key: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,17 +84,14 @@ object anon {
   }
   object Modulus {
     
-    @scala.inline
-    def apply(modulus: js.Any): Modulus = {
+    inline def apply(modulus: js.Any): Modulus = {
       val __obj = js.Dynamic.literal(modulus = modulus.asInstanceOf[js.Any])
       __obj.asInstanceOf[Modulus]
     }
     
-    @scala.inline
-    implicit class ModulusMutableBuilder[Self <: Modulus] (val x: Self) extends AnyVal {
+    extension [Self <: Modulus](x: Self) {
       
-      @scala.inline
-      def setModulus(value: js.Any): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
+      inline def setModulus(value: js.Any): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,17 +101,14 @@ object anon {
   }
   object Pkcs12 {
     
-    @scala.inline
-    def apply(pkcs12: js.Any): Pkcs12 = {
+    inline def apply(pkcs12: js.Any): Pkcs12 = {
       val __obj = js.Dynamic.literal(pkcs12 = pkcs12.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pkcs12]
     }
     
-    @scala.inline
-    implicit class Pkcs12MutableBuilder[Self <: Pkcs12] (val x: Self) extends AnyVal {
+    extension [Self <: Pkcs12](x: Self) {
       
-      @scala.inline
-      def setPkcs12(value: js.Any): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
+      inline def setPkcs12(value: js.Any): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,20 +120,16 @@ object anon {
   }
   object Prime {
     
-    @scala.inline
-    def apply(prime: js.Any, size: js.Any): Prime = {
+    inline def apply(prime: js.Any, size: js.Any): Prime = {
       val __obj = js.Dynamic.literal(prime = prime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Prime]
     }
     
-    @scala.inline
-    implicit class PrimeMutableBuilder[Self <: Prime] (val x: Self) extends AnyVal {
+    extension [Self <: Prime](x: Self) {
       
-      @scala.inline
-      def setPrime(value: js.Any): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
+      inline def setPrime(value: js.Any): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,17 +139,14 @@ object anon {
   }
   object PublicKey {
     
-    @scala.inline
-    def apply(publicKey: String): PublicKey = {
+    inline def apply(publicKey: String): PublicKey = {
       val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublicKey]
     }
     
-    @scala.inline
-    implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+    extension [Self <: PublicKey](x: Self) {
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,6 +12,5 @@ object endDragMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEndDrag(manager: DragDropManager): js.Function0[SentinelAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEndDrag")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function0[SentinelAction]]
+  inline def createEndDrag(manager: DragDropManager): js.Function0[SentinelAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEndDrag")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function0[SentinelAction]]
 }

@@ -15,16 +15,13 @@ trait CanvasKitInitOptions extends StObject {
 }
 object CanvasKitInitOptions {
   
-  @scala.inline
-  def apply(locateFile: String => String): CanvasKitInitOptions = {
+  inline def apply(locateFile: String => String): CanvasKitInitOptions = {
     val __obj = js.Dynamic.literal(locateFile = js.Any.fromFunction1(locateFile))
     __obj.asInstanceOf[CanvasKitInitOptions]
   }
   
-  @scala.inline
-  implicit class CanvasKitInitOptionsMutableBuilder[Self <: CanvasKitInitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasKitInitOptions](x: Self) {
     
-    @scala.inline
-    def setLocateFile(value: String => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction1(value))
+    inline def setLocateFile(value: String => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction1(value))
   }
 }

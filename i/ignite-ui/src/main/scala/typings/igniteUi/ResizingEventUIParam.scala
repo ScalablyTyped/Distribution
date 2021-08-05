@@ -13,19 +13,15 @@ trait ResizingEventUIParam extends StObject {
 }
 object ResizingEventUIParam {
   
-  @scala.inline
-  def apply(): ResizingEventUIParam = {
+  inline def apply(): ResizingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ResizingEventUIParamMutableBuilder[Self <: ResizingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ResizingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

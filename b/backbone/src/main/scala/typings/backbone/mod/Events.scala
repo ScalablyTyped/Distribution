@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Events extends StObject
 object Events {
   
-  @scala.inline
-  def apply: Events = ^.asInstanceOf[js.Dynamic].selectDynamic("Events").asInstanceOf[Events]
+  inline def apply: Events = ^.asInstanceOf[js.Dynamic].selectDynamic("Events").asInstanceOf[Events]
 }

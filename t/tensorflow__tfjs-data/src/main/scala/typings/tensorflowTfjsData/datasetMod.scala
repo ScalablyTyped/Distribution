@@ -309,16 +309,12 @@ object datasetMod {
     val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
   
-  @scala.inline
-  def array[T /* <: TensorContainer */](items: js.Array[T]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(items.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
+  inline def array[T /* <: TensorContainer */](items: js.Array[T]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(items.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
   
-  @scala.inline
-  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("datasetFromIteratorFn")(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
-  @scala.inline
-  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]], size: Double): Dataset[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("datasetFromIteratorFn")(iteratorFn.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Dataset[T]]
+  inline def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("datasetFromIteratorFn")(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
+  inline def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]], size: Double): Dataset[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("datasetFromIteratorFn")(iteratorFn.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Dataset[T]]
   
-  @scala.inline
-  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): Dataset[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(datasets.asInstanceOf[js.Any]).asInstanceOf[Dataset[O]]
+  inline def zip[O /* <: TensorContainer */](datasets: DatasetContainer): Dataset[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(datasets.asInstanceOf[js.Any]).asInstanceOf[Dataset[O]]
   
   type DatasetContainer = Container[Dataset[TensorContainer]]
 }

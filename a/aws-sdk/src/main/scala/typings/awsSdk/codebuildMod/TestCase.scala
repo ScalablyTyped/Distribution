@@ -48,61 +48,43 @@ trait TestCase extends StObject {
 }
 object TestCase {
   
-  @scala.inline
-  def apply(): TestCase = {
+  inline def apply(): TestCase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestCase]
   }
   
-  @scala.inline
-  implicit class TestCaseMutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
+  extension [Self <: TestCase](x: Self) {
     
-    @scala.inline
-    def setDurationInNanoSeconds(value: WrapperLong): Self = StObject.set(x, "durationInNanoSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInNanoSeconds(value: WrapperLong): Self = StObject.set(x, "durationInNanoSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInNanoSecondsUndefined: Self = StObject.set(x, "durationInNanoSeconds", js.undefined)
+    inline def setDurationInNanoSecondsUndefined: Self = StObject.set(x, "durationInNanoSeconds", js.undefined)
     
-    @scala.inline
-    def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+    inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setReportArn(value: NonEmptyString): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
+    inline def setReportArn(value: NonEmptyString): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportArnUndefined: Self = StObject.set(x, "reportArn", js.undefined)
+    inline def setReportArnUndefined: Self = StObject.set(x, "reportArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTestRawDataPath(value: String): Self = StObject.set(x, "testRawDataPath", value.asInstanceOf[js.Any])
+    inline def setTestRawDataPath(value: String): Self = StObject.set(x, "testRawDataPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRawDataPathUndefined: Self = StObject.set(x, "testRawDataPath", js.undefined)
+    inline def setTestRawDataPathUndefined: Self = StObject.set(x, "testRawDataPath", js.undefined)
   }
 }

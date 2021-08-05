@@ -12,16 +12,14 @@ object promiseOrCallbacksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def promiseOrCallbacks[T](
+  inline def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
       /* reject */ js.Function1[/* err */ js.Any, Unit], 
       Unit
     ]
   ): js.Promise[T] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T] | Unit]
-  @scala.inline
-  def promiseOrCallbacks[T](
+  inline def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
       /* reject */ js.Function1[/* err */ js.Any, Unit], 
@@ -30,8 +28,7 @@ object promiseOrCallbacksMod {
     callback: Unit,
     errorCallback: IErrorCallback
   ): js.Promise[T] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T] | Unit]
-  @scala.inline
-  def promiseOrCallbacks[T](
+  inline def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
       /* reject */ js.Function1[/* err */ js.Any, Unit], 
@@ -39,8 +36,7 @@ object promiseOrCallbacksMod {
     ],
     callback: ICallback[T]
   ): js.Promise[T] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T] | Unit]
-  @scala.inline
-  def promiseOrCallbacks[T](
+  inline def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
       /* reject */ js.Function1[/* err */ js.Any, Unit], 

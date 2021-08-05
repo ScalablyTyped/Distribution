@@ -50,58 +50,41 @@ trait SeriesMapbubbleDataOptions extends StObject {
 }
 object SeriesMapbubbleDataOptions {
   
-  @scala.inline
-  def apply(): SeriesMapbubbleDataOptions = {
+  inline def apply(): SeriesMapbubbleDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesMapbubbleDataOptions]
   }
   
-  @scala.inline
-  implicit class SeriesMapbubbleDataOptionsMutableBuilder[Self <: SeriesMapbubbleDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesMapbubbleDataOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDataLabels(value: DataLabelsOptions): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    inline def setDataLabels(value: DataLabelsOptions): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    @scala.inline
-    def setDrilldown(value: String): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
+    inline def setDrilldown(value: String): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
+    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
     
-    @scala.inline
-    def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZNull: Self = StObject.set(x, "z", null)
+    inline def setZNull: Self = StObject.set(x, "z", null)
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

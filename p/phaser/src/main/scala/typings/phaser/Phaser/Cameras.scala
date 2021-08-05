@@ -157,8 +157,7 @@ object Cameras {
     }
     object FixedKeyControl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         active: Boolean,
         camera: Camera,
         destroy: () => Unit,
@@ -180,56 +179,39 @@ object Cameras {
         __obj.asInstanceOf[FixedKeyControl]
       }
       
-      @scala.inline
-      implicit class FixedKeyControlMutableBuilder[Self <: FixedKeyControl] (val x: Self) extends AnyVal {
+      extension [Self <: FixedKeyControl](x: Self) {
         
-        @scala.inline
-        def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+        inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+        inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetCamera(value: Camera => FixedKeyControl): Self = StObject.set(x, "setCamera", js.Any.fromFunction1(value))
+        inline def setSetCamera(value: Camera => FixedKeyControl): Self = StObject.set(x, "setCamera", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSpeedX(value: Double): Self = StObject.set(x, "speedX", value.asInstanceOf[js.Any])
+        inline def setSpeedX(value: Double): Self = StObject.set(x, "speedX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeedY(value: Double): Self = StObject.set(x, "speedY", value.asInstanceOf[js.Any])
+        inline def setSpeedY(value: Double): Self = StObject.set(x, "speedY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStart(value: () => FixedKeyControl): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+        inline def setStart(value: () => FixedKeyControl): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStop(value: () => FixedKeyControl): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+        inline def setStop(value: () => FixedKeyControl): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+        inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+        inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+        inline def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+        inline def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
+        inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
       }
     }
     
@@ -365,8 +347,7 @@ object Cameras {
     }
     object SmoothedKeyControl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accelX: Double,
         accelY: Double,
         active: Boolean,
@@ -392,68 +373,47 @@ object Cameras {
         __obj.asInstanceOf[SmoothedKeyControl]
       }
       
-      @scala.inline
-      implicit class SmoothedKeyControlMutableBuilder[Self <: SmoothedKeyControl] (val x: Self) extends AnyVal {
+      extension [Self <: SmoothedKeyControl](x: Self) {
         
-        @scala.inline
-        def setAccelX(value: Double): Self = StObject.set(x, "accelX", value.asInstanceOf[js.Any])
+        inline def setAccelX(value: Double): Self = StObject.set(x, "accelX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccelY(value: Double): Self = StObject.set(x, "accelY", value.asInstanceOf[js.Any])
+        inline def setAccelY(value: Double): Self = StObject.set(x, "accelY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+        inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+        inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragX(value: Double): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
+        inline def setDragX(value: Double): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragY(value: Double): Self = StObject.set(x, "dragY", value.asInstanceOf[js.Any])
+        inline def setDragY(value: Double): Self = StObject.set(x, "dragY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxSpeedX(value: Double): Self = StObject.set(x, "maxSpeedX", value.asInstanceOf[js.Any])
+        inline def setMaxSpeedX(value: Double): Self = StObject.set(x, "maxSpeedX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxSpeedY(value: Double): Self = StObject.set(x, "maxSpeedY", value.asInstanceOf[js.Any])
+        inline def setMaxSpeedY(value: Double): Self = StObject.set(x, "maxSpeedY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetCamera(value: Camera => SmoothedKeyControl): Self = StObject.set(x, "setCamera", js.Any.fromFunction1(value))
+        inline def setSetCamera(value: Camera => SmoothedKeyControl): Self = StObject.set(x, "setCamera", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStart(value: () => SmoothedKeyControl): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+        inline def setStart(value: () => SmoothedKeyControl): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStop(value: () => SmoothedKeyControl): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+        inline def setStop(value: () => SmoothedKeyControl): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+        inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+        inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+        inline def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+        inline def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
+        inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -2280,8 +2240,7 @@ object Cameras {
       }
       object Fade {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           camera: Camera,
           destroy: () => Unit,
           direction: Boolean,
@@ -2300,49 +2259,35 @@ object Cameras {
           __obj.asInstanceOf[Fade]
         }
         
-        @scala.inline
-        implicit class FadeMutableBuilder[Self <: Fade] (val x: Self) extends AnyVal {
+        extension [Self <: Fade](x: Self) {
           
-          @scala.inline
-          def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+          inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+          inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+          inline def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
+          inline def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsComplete(value: Boolean): Self = StObject.set(x, "isComplete", value.asInstanceOf[js.Any])
+          inline def setIsComplete(value: Boolean): Self = StObject.set(x, "isComplete", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+          inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPostRenderCanvas(value: CanvasRenderingContext2D => Boolean): Self = StObject.set(x, "postRenderCanvas", js.Any.fromFunction1(value))
+          inline def setPostRenderCanvas(value: CanvasRenderingContext2D => Boolean): Self = StObject.set(x, "postRenderCanvas", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPostRenderWebGL(value: (TextureTintPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
+          inline def setPostRenderWebGL(value: (TextureTintPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+          inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+          inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setStart(
+          inline def setStart(
             value: (js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[Boolean], js.UndefOr[CameraFadeCallback], js.UndefOr[js.Any]) => Camera
           ): Self = StObject.set(x, "start", js.Any.fromFunction8(value))
           
-          @scala.inline
-          def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+          inline def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
         }
       }
       
@@ -2438,8 +2383,7 @@ object Cameras {
       }
       object Flash {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           camera: Camera,
           destroy: () => Unit,
           duration: integer,
@@ -2456,43 +2400,31 @@ object Cameras {
           __obj.asInstanceOf[Flash]
         }
         
-        @scala.inline
-        implicit class FlashMutableBuilder[Self <: Flash] (val x: Self) extends AnyVal {
+        extension [Self <: Flash](x: Self) {
           
-          @scala.inline
-          def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+          inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+          inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
+          inline def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+          inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPostRenderCanvas(value: CanvasRenderingContext2D => Boolean): Self = StObject.set(x, "postRenderCanvas", js.Any.fromFunction1(value))
+          inline def setPostRenderCanvas(value: CanvasRenderingContext2D => Boolean): Self = StObject.set(x, "postRenderCanvas", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPostRenderWebGL(value: (TextureTintPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
+          inline def setPostRenderWebGL(value: (TextureTintPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+          inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+          inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setStart(
+          inline def setStart(
             value: (js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[Boolean], js.UndefOr[CameraFlashCallback], js.UndefOr[js.Any]) => Camera
           ): Self = StObject.set(x, "start", js.Any.fromFunction7(value))
           
-          @scala.inline
-          def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+          inline def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
         }
       }
       
@@ -2936,8 +2868,7 @@ object Cameras {
       }
       object RotateTo {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           camera: Camera,
           clockwise: Boolean,
           current: Double,
@@ -2958,55 +2889,39 @@ object Cameras {
           __obj.asInstanceOf[RotateTo]
         }
         
-        @scala.inline
-        implicit class RotateToMutableBuilder[Self <: RotateTo] (val x: Self) extends AnyVal {
+        extension [Self <: RotateTo](x: Self) {
           
-          @scala.inline
-          def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+          inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+          inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+          inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+          inline def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+          inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+          inline def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
+          inline def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+          inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+          inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+          inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setShortestPath(value: Boolean): Self = StObject.set(x, "shortestPath", value.asInstanceOf[js.Any])
+          inline def setShortestPath(value: Boolean): Self = StObject.set(x, "shortestPath", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+          inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStart(
+          inline def setStart(
             value: (Double, js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[js.Any]) => Camera
           ): Self = StObject.set(x, "start", js.Any.fromFunction7(value))
           
-          @scala.inline
-          def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+          inline def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
         }
       }
       

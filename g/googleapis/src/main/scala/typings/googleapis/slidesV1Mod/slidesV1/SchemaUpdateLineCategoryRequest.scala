@@ -25,25 +25,19 @@ trait SchemaUpdateLineCategoryRequest extends StObject {
 }
 object SchemaUpdateLineCategoryRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateLineCategoryRequest = {
+  inline def apply(): SchemaUpdateLineCategoryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateLineCategoryRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateLineCategoryRequestMutableBuilder[Self <: SchemaUpdateLineCategoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateLineCategoryRequest](x: Self) {
     
-    @scala.inline
-    def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
+    inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
+    inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

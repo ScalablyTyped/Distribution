@@ -14,20 +14,16 @@ trait StopActionObject extends StObject {
 }
 object StopActionObject {
   
-  @scala.inline
-  def apply(activity: Id, `type`: Stop): StopActionObject = {
+  inline def apply(activity: Id, `type`: Stop): StopActionObject = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopActionObject]
   }
   
-  @scala.inline
-  implicit class StopActionObjectMutableBuilder[Self <: StopActionObject] (val x: Self) extends AnyVal {
+  extension [Self <: StopActionObject](x: Self) {
     
-    @scala.inline
-    def setActivity(value: Id): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: Id): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait GetFacetRequest extends StObject {
 }
 object GetFacetRequest {
   
-  @scala.inline
-  def apply(Name: FacetName, SchemaArn: Arn): GetFacetRequest = {
+  inline def apply(Name: FacetName, SchemaArn: Arn): GetFacetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFacetRequest]
   }
   
-  @scala.inline
-  implicit class GetFacetRequestMutableBuilder[Self <: GetFacetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFacetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

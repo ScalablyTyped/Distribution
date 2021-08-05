@@ -17,19 +17,15 @@ trait WorksheetCustomPropertyUpdateData extends StObject {
 }
 object WorksheetCustomPropertyUpdateData {
   
-  @scala.inline
-  def apply(): WorksheetCustomPropertyUpdateData = {
+  inline def apply(): WorksheetCustomPropertyUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetCustomPropertyUpdateData]
   }
   
-  @scala.inline
-  implicit class WorksheetCustomPropertyUpdateDataMutableBuilder[Self <: WorksheetCustomPropertyUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetCustomPropertyUpdateData](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

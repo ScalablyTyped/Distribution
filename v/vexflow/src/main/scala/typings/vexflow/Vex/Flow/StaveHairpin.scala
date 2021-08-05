@@ -25,8 +25,7 @@ trait StaveHairpin extends StObject {
 }
 object StaveHairpin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     draw: () => Boolean,
     renderHairpin: Firstx => Unit,
     setContext: IRenderContext => StaveHairpin,
@@ -55,25 +54,18 @@ object StaveHairpin {
          with `type`
   }
   
-  @scala.inline
-  implicit class StaveHairpinMutableBuilder[Self <: StaveHairpin] (val x: Self) extends AnyVal {
+  extension [Self <: StaveHairpin](x: Self) {
     
-    @scala.inline
-    def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderHairpin(value: Firstx => Unit): Self = StObject.set(x, "renderHairpin", js.Any.fromFunction1(value))
+    inline def setRenderHairpin(value: Firstx => Unit): Self = StObject.set(x, "renderHairpin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => StaveHairpin): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => StaveHairpin): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNotes(value: Firstnote => StaveHairpin): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
+    inline def setSetNotes(value: Firstnote => StaveHairpin): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosition(value: Position => StaveHairpin): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Position => StaveHairpin): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRenderOptions(value: Leftshiftpx => StaveHairpin): Self = StObject.set(x, "setRenderOptions", js.Any.fromFunction1(value))
+    inline def setSetRenderOptions(value: Leftshiftpx => StaveHairpin): Self = StObject.set(x, "setRenderOptions", js.Any.fromFunction1(value))
   }
 }

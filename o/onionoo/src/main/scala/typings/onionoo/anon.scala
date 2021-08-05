@@ -29,32 +29,24 @@ object anon {
   }
   object Accept {
     
-    @scala.inline
-    def apply(): Accept = {
+    inline def apply(): Accept = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Accept]
     }
     
-    @scala.inline
-    implicit class AcceptMutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
+    extension [Self <: Accept](x: Self) {
       
-      @scala.inline
-      def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
       
-      @scala.inline
-      def setReject(value: js.Array[String]): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+      inline def setReject(value: js.Array[String]): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
+      inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
       
-      @scala.inline
-      def setRejectVarargs(value: String*): Self = StObject.set(x, "reject", js.Array(value :_*))
+      inline def setRejectVarargs(value: String*): Self = StObject.set(x, "reject", js.Array(value :_*))
     }
   }
   
@@ -115,44 +107,32 @@ object anon {
   }
   object PartialRecord1week1month6 {
     
-    @scala.inline
-    def apply(): PartialRecord1week1month6 = {
+    inline def apply(): PartialRecord1week1month6 = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecord1week1month6]
     }
     
-    @scala.inline
-    implicit class PartialRecord1week1month6MutableBuilder[Self <: PartialRecord1week1month6] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecord1week1month6](x: Self) {
       
-      @scala.inline
-      def set1_month(value: Histogram): Self = StObject.set(x, "1_month", value.asInstanceOf[js.Any])
+      inline def set1_month(value: Histogram): Self = StObject.set(x, "1_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_monthUndefined: Self = StObject.set(x, "1_month", js.undefined)
+      inline def set1_monthUndefined: Self = StObject.set(x, "1_month", js.undefined)
       
-      @scala.inline
-      def set1_week(value: Histogram): Self = StObject.set(x, "1_week", value.asInstanceOf[js.Any])
+      inline def set1_week(value: Histogram): Self = StObject.set(x, "1_week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_weekUndefined: Self = StObject.set(x, "1_week", js.undefined)
+      inline def set1_weekUndefined: Self = StObject.set(x, "1_week", js.undefined)
       
-      @scala.inline
-      def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
+      inline def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_yearUndefined: Self = StObject.set(x, "1_year", js.undefined)
+      inline def set1_yearUndefined: Self = StObject.set(x, "1_year", js.undefined)
       
-      @scala.inline
-      def set5_years(value: Histogram): Self = StObject.set(x, "5_years", value.asInstanceOf[js.Any])
+      inline def set5_years(value: Histogram): Self = StObject.set(x, "5_years", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5_yearsUndefined: Self = StObject.set(x, "5_years", js.undefined)
+      inline def set5_yearsUndefined: Self = StObject.set(x, "5_years", js.undefined)
       
-      @scala.inline
-      def set6_months(value: Histogram): Self = StObject.set(x, "6_months", value.asInstanceOf[js.Any])
+      inline def set6_months(value: Histogram): Self = StObject.set(x, "6_months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6_monthsUndefined: Self = StObject.set(x, "6_months", js.undefined)
+      inline def set6_monthsUndefined: Self = StObject.set(x, "6_months", js.undefined)
     }
   }
   
@@ -173,50 +153,36 @@ object anon {
   }
   object PartialRecord3days1week1m {
     
-    @scala.inline
-    def apply(): PartialRecord3days1week1m = {
+    inline def apply(): PartialRecord3days1week1m = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecord3days1week1m]
     }
     
-    @scala.inline
-    implicit class PartialRecord3days1week1mMutableBuilder[Self <: PartialRecord3days1week1m] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecord3days1week1m](x: Self) {
       
-      @scala.inline
-      def set1_month(value: Histogram): Self = StObject.set(x, "1_month", value.asInstanceOf[js.Any])
+      inline def set1_month(value: Histogram): Self = StObject.set(x, "1_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_monthUndefined: Self = StObject.set(x, "1_month", js.undefined)
+      inline def set1_monthUndefined: Self = StObject.set(x, "1_month", js.undefined)
       
-      @scala.inline
-      def set1_week(value: Histogram): Self = StObject.set(x, "1_week", value.asInstanceOf[js.Any])
+      inline def set1_week(value: Histogram): Self = StObject.set(x, "1_week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_weekUndefined: Self = StObject.set(x, "1_week", js.undefined)
+      inline def set1_weekUndefined: Self = StObject.set(x, "1_week", js.undefined)
       
-      @scala.inline
-      def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
+      inline def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_yearUndefined: Self = StObject.set(x, "1_year", js.undefined)
+      inline def set1_yearUndefined: Self = StObject.set(x, "1_year", js.undefined)
       
-      @scala.inline
-      def set3_days(value: Histogram): Self = StObject.set(x, "3_days", value.asInstanceOf[js.Any])
+      inline def set3_days(value: Histogram): Self = StObject.set(x, "3_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3_daysUndefined: Self = StObject.set(x, "3_days", js.undefined)
+      inline def set3_daysUndefined: Self = StObject.set(x, "3_days", js.undefined)
       
-      @scala.inline
-      def set5_years(value: Histogram): Self = StObject.set(x, "5_years", value.asInstanceOf[js.Any])
+      inline def set5_years(value: Histogram): Self = StObject.set(x, "5_years", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5_yearsUndefined: Self = StObject.set(x, "5_years", js.undefined)
+      inline def set5_yearsUndefined: Self = StObject.set(x, "5_years", js.undefined)
       
-      @scala.inline
-      def set6_months(value: Histogram): Self = StObject.set(x, "6_months", value.asInstanceOf[js.Any])
+      inline def set6_months(value: Histogram): Self = StObject.set(x, "6_months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6_monthsUndefined: Self = StObject.set(x, "6_months", js.undefined)
+      inline def set6_monthsUndefined: Self = StObject.set(x, "6_months", js.undefined)
     }
   }
   
@@ -231,32 +197,24 @@ object anon {
   }
   object PartialRecord6months1year {
     
-    @scala.inline
-    def apply(): PartialRecord6months1year = {
+    inline def apply(): PartialRecord6months1year = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecord6months1year]
     }
     
-    @scala.inline
-    implicit class PartialRecord6months1yearMutableBuilder[Self <: PartialRecord6months1year] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecord6months1year](x: Self) {
       
-      @scala.inline
-      def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
+      inline def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1_yearUndefined: Self = StObject.set(x, "1_year", js.undefined)
+      inline def set1_yearUndefined: Self = StObject.set(x, "1_year", js.undefined)
       
-      @scala.inline
-      def set5_years(value: Histogram): Self = StObject.set(x, "5_years", value.asInstanceOf[js.Any])
+      inline def set5_years(value: Histogram): Self = StObject.set(x, "5_years", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5_yearsUndefined: Self = StObject.set(x, "5_years", js.undefined)
+      inline def set5_yearsUndefined: Self = StObject.set(x, "5_years", js.undefined)
       
-      @scala.inline
-      def set6_months(value: Histogram): Self = StObject.set(x, "6_months", value.asInstanceOf[js.Any])
+      inline def set6_months(value: Histogram): Self = StObject.set(x, "6_months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6_monthsUndefined: Self = StObject.set(x, "6_months", js.undefined)
+      inline def set6_monthsUndefined: Self = StObject.set(x, "6_months", js.undefined)
     }
   }
 }

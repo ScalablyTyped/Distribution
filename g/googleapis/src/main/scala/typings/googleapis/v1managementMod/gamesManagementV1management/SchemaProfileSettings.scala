@@ -23,25 +23,19 @@ trait SchemaProfileSettings extends StObject {
 }
 object SchemaProfileSettings {
   
-  @scala.inline
-  def apply(): SchemaProfileSettings = {
+  inline def apply(): SchemaProfileSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProfileSettings]
   }
   
-  @scala.inline
-  implicit class SchemaProfileSettingsMutableBuilder[Self <: SchemaProfileSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProfileSettings](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfileVisible(value: Boolean): Self = StObject.set(x, "profileVisible", value.asInstanceOf[js.Any])
+    inline def setProfileVisible(value: Boolean): Self = StObject.set(x, "profileVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileVisibleUndefined: Self = StObject.set(x, "profileVisible", js.undefined)
+    inline def setProfileVisibleUndefined: Self = StObject.set(x, "profileVisible", js.undefined)
   }
 }

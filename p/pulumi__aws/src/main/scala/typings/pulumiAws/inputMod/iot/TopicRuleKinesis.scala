@@ -24,25 +24,19 @@ trait TopicRuleKinesis extends StObject {
 }
 object TopicRuleKinesis {
   
-  @scala.inline
-  def apply(roleArn: Input[String], streamName: Input[String]): TopicRuleKinesis = {
+  inline def apply(roleArn: Input[String], streamName: Input[String]): TopicRuleKinesis = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], streamName = streamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleKinesis]
   }
   
-  @scala.inline
-  implicit class TopicRuleKinesisMutableBuilder[Self <: TopicRuleKinesis] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleKinesis](x: Self) {
     
-    @scala.inline
-    def setPartitionKey(value: Input[String]): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: Input[String]): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+    inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamName(value: Input[String]): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: Input[String]): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
   }
 }

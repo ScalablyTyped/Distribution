@@ -16,8 +16,7 @@ trait EpisodeObjectFull
 }
 object EpisodeObjectFull {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     duration_ms: Double,
     explicit: Boolean,
@@ -40,10 +39,8 @@ object EpisodeObjectFull {
     __obj.asInstanceOf[EpisodeObjectFull]
   }
   
-  @scala.inline
-  implicit class EpisodeObjectFullMutableBuilder[Self <: EpisodeObjectFull] (val x: Self) extends AnyVal {
+  extension [Self <: EpisodeObjectFull](x: Self) {
     
-    @scala.inline
-    def setShow(value: ShowObjectSimplified): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: ShowObjectSimplified): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

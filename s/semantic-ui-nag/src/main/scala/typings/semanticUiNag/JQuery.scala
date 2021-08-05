@@ -123,16 +123,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(nag: Nag): JQuery = {
+  inline def apply(nag: Nag): JQuery = {
     val __obj = js.Dynamic.literal(nag = nag.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setNag(value: Nag): Self = StObject.set(x, "nag", value.asInstanceOf[js.Any])
+    inline def setNag(value: Nag): Self = StObject.set(x, "nag", value.asInstanceOf[js.Any])
   }
 }

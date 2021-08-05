@@ -43,52 +43,37 @@ trait SchemaNotification extends StObject {
 }
 object SchemaNotification {
   
-  @scala.inline
-  def apply(): SchemaNotification = {
+  inline def apply(): SchemaNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotification]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationMutableBuilder[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotification](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setUserActions(value: js.Array[SchemaUserAction]): Self = StObject.set(x, "userActions", value.asInstanceOf[js.Any])
+    inline def setUserActions(value: js.Array[SchemaUserAction]): Self = StObject.set(x, "userActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserActionsUndefined: Self = StObject.set(x, "userActions", js.undefined)
+    inline def setUserActionsUndefined: Self = StObject.set(x, "userActions", js.undefined)
     
-    @scala.inline
-    def setUserActionsVarargs(value: SchemaUserAction*): Self = StObject.set(x, "userActions", js.Array(value :_*))
+    inline def setUserActionsVarargs(value: SchemaUserAction*): Self = StObject.set(x, "userActions", js.Array(value :_*))
     
-    @scala.inline
-    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
+    inline def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
+    inline def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
     
-    @scala.inline
-    def setVerifyToken(value: String): Self = StObject.set(x, "verifyToken", value.asInstanceOf[js.Any])
+    inline def setVerifyToken(value: String): Self = StObject.set(x, "verifyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyTokenUndefined: Self = StObject.set(x, "verifyToken", js.undefined)
+    inline def setVerifyTokenUndefined: Self = StObject.set(x, "verifyToken", js.undefined)
   }
 }

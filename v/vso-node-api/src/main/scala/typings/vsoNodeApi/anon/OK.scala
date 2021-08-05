@@ -14,22 +14,17 @@ trait OK extends StObject {
 }
 object OK {
   
-  @scala.inline
-  def apply(error: scala.Double, oK: scala.Double, warning: scala.Double): OK = {
+  inline def apply(error: scala.Double, oK: scala.Double, warning: scala.Double): OK = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], oK = oK.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[OK]
   }
   
-  @scala.inline
-  implicit class OKMutableBuilder[Self <: OK] (val x: Self) extends AnyVal {
+  extension [Self <: OK](x: Self) {
     
-    @scala.inline
-    def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
+    inline def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

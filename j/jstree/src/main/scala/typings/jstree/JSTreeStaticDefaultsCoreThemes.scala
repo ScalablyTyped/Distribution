@@ -64,67 +64,47 @@ trait JSTreeStaticDefaultsCoreThemes extends StObject {
 }
 object JSTreeStaticDefaultsCoreThemes {
   
-  @scala.inline
-  def apply(): JSTreeStaticDefaultsCoreThemes = {
+  inline def apply(): JSTreeStaticDefaultsCoreThemes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSTreeStaticDefaultsCoreThemes]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsCoreThemesMutableBuilder[Self <: JSTreeStaticDefaultsCoreThemes] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsCoreThemes](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+    inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
     
-    @scala.inline
-    def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
-    @scala.inline
-    def setIcons(value: Boolean): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Boolean): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
-    @scala.inline
-    def setStripes(value: Boolean): Self = StObject.set(x, "stripes", value.asInstanceOf[js.Any])
+    inline def setStripes(value: Boolean): Self = StObject.set(x, "stripes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripesUndefined: Self = StObject.set(x, "stripes", js.undefined)
+    inline def setStripesUndefined: Self = StObject.set(x, "stripes", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVariant(value: js.Any): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: js.Any): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

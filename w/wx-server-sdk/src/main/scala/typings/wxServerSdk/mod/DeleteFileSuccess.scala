@@ -11,19 +11,15 @@ trait DeleteFileSuccess extends StObject {
 }
 object DeleteFileSuccess {
   
-  @scala.inline
-  def apply(fileList: js.Array[Status]): DeleteFileSuccess = {
+  inline def apply(fileList: js.Array[Status]): DeleteFileSuccess = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileSuccess]
   }
   
-  @scala.inline
-  implicit class DeleteFileSuccessMutableBuilder[Self <: DeleteFileSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileSuccess](x: Self) {
     
-    @scala.inline
-    def setFileList(value: js.Array[Status]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[Status]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: Status*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: Status*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

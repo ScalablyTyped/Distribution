@@ -18,19 +18,15 @@ trait AbortVaultLockInput extends StObject {
 }
 object AbortVaultLockInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): AbortVaultLockInput = {
+  inline def apply(accountId: String, vaultName: String): AbortVaultLockInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortVaultLockInput]
   }
   
-  @scala.inline
-  implicit class AbortVaultLockInputMutableBuilder[Self <: AbortVaultLockInput] (val x: Self) extends AnyVal {
+  extension [Self <: AbortVaultLockInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

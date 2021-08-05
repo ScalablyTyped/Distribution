@@ -25,28 +25,22 @@ object multiSelectPropTypesMod {
   }
   object MultiSelectSortingProps {
     
-    @scala.inline
-    def apply[ItemType /* <: ListBoxBaseItemType */](): MultiSelectSortingProps[ItemType] = {
+    inline def apply[ItemType /* <: ListBoxBaseItemType */](): MultiSelectSortingProps[ItemType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultiSelectSortingProps[ItemType]]
     }
     
-    @scala.inline
-    implicit class MultiSelectSortingPropsMutableBuilder[Self <: MultiSelectSortingProps[?], ItemType /* <: ListBoxBaseItemType */] (val x: Self & MultiSelectSortingProps[ItemType]) extends AnyVal {
+    extension [Self <: MultiSelectSortingProps[?], ItemType /* <: ListBoxBaseItemType */](x: Self & MultiSelectSortingProps[ItemType]) {
       
-      @scala.inline
-      def setCompareItems(value: (/* item1 */ ItemType, /* item2 */ ItemType, /* options */ SharedOptions) => Double): Self = StObject.set(x, "compareItems", js.Any.fromFunction3(value))
+      inline def setCompareItems(value: (/* item1 */ ItemType, /* item2 */ ItemType, /* options */ SharedOptions) => Double): Self = StObject.set(x, "compareItems", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCompareItemsUndefined: Self = StObject.set(x, "compareItems", js.undefined)
+      inline def setCompareItemsUndefined: Self = StObject.set(x, "compareItems", js.undefined)
       
-      @scala.inline
-      def setSortItems(
+      inline def setSortItems(
         value: (/* items */ js.Array[ItemType], /* options */ SortItemsOptions[ItemType]) => js.Array[ItemType]
       ): Self = StObject.set(x, "sortItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortItemsUndefined: Self = StObject.set(x, "sortItems", js.undefined)
+      inline def setSortItemsUndefined: Self = StObject.set(x, "sortItems", js.undefined)
     }
   }
   
@@ -56,17 +50,14 @@ object multiSelectPropTypesMod {
   }
   object SharedOptions {
     
-    @scala.inline
-    def apply(locale: String): SharedOptions = {
+    inline def apply(locale: String): SharedOptions = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[SharedOptions]
     }
     
-    @scala.inline
-    implicit class SharedOptionsMutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SharedOptions](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +72,7 @@ object multiSelectPropTypesMod {
   }
   object SortItemsOptions {
     
-    @scala.inline
-    def apply[ItemType](
+    inline def apply[ItemType](
       compareItems: (ItemType, ItemType, SharedOptions) => Double,
       locale: String,
       selectedItems: js.Array[ItemType]
@@ -91,17 +81,13 @@ object multiSelectPropTypesMod {
       __obj.asInstanceOf[SortItemsOptions[ItemType]]
     }
     
-    @scala.inline
-    implicit class SortItemsOptionsMutableBuilder[Self <: SortItemsOptions[?], ItemType] (val x: Self & SortItemsOptions[ItemType]) extends AnyVal {
+    extension [Self <: SortItemsOptions[?], ItemType](x: Self & SortItemsOptions[ItemType]) {
       
-      @scala.inline
-      def setCompareItems(value: (ItemType, ItemType, SharedOptions) => Double): Self = StObject.set(x, "compareItems", js.Any.fromFunction3(value))
+      inline def setCompareItems(value: (ItemType, ItemType, SharedOptions) => Double): Self = StObject.set(x, "compareItems", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSelectedItems(value: js.Array[ItemType]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: js.Array[ItemType]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemsVarargs(value: ItemType*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: ItemType*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     }
   }
 }

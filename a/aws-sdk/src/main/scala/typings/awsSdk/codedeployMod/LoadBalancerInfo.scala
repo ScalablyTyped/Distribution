@@ -23,40 +23,29 @@ trait LoadBalancerInfo extends StObject {
 }
 object LoadBalancerInfo {
   
-  @scala.inline
-  def apply(): LoadBalancerInfo = {
+  inline def apply(): LoadBalancerInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerInfo]
   }
   
-  @scala.inline
-  implicit class LoadBalancerInfoMutableBuilder[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerInfo](x: Self) {
     
-    @scala.inline
-    def setElbInfoList(value: ELBInfoList): Self = StObject.set(x, "elbInfoList", value.asInstanceOf[js.Any])
+    inline def setElbInfoList(value: ELBInfoList): Self = StObject.set(x, "elbInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElbInfoListUndefined: Self = StObject.set(x, "elbInfoList", js.undefined)
+    inline def setElbInfoListUndefined: Self = StObject.set(x, "elbInfoList", js.undefined)
     
-    @scala.inline
-    def setElbInfoListVarargs(value: ELBInfo*): Self = StObject.set(x, "elbInfoList", js.Array(value :_*))
+    inline def setElbInfoListVarargs(value: ELBInfo*): Self = StObject.set(x, "elbInfoList", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetGroupInfoList(value: TargetGroupInfoList): Self = StObject.set(x, "targetGroupInfoList", value.asInstanceOf[js.Any])
+    inline def setTargetGroupInfoList(value: TargetGroupInfoList): Self = StObject.set(x, "targetGroupInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupInfoListUndefined: Self = StObject.set(x, "targetGroupInfoList", js.undefined)
+    inline def setTargetGroupInfoListUndefined: Self = StObject.set(x, "targetGroupInfoList", js.undefined)
     
-    @scala.inline
-    def setTargetGroupInfoListVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroupInfoList", js.Array(value :_*))
+    inline def setTargetGroupInfoListVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroupInfoList", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetGroupPairInfoList(value: TargetGroupPairInfoList): Self = StObject.set(x, "targetGroupPairInfoList", value.asInstanceOf[js.Any])
+    inline def setTargetGroupPairInfoList(value: TargetGroupPairInfoList): Self = StObject.set(x, "targetGroupPairInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupPairInfoListUndefined: Self = StObject.set(x, "targetGroupPairInfoList", js.undefined)
+    inline def setTargetGroupPairInfoListUndefined: Self = StObject.set(x, "targetGroupPairInfoList", js.undefined)
     
-    @scala.inline
-    def setTargetGroupPairInfoListVarargs(value: TargetGroupPairInfo*): Self = StObject.set(x, "targetGroupPairInfoList", js.Array(value :_*))
+    inline def setTargetGroupPairInfoListVarargs(value: TargetGroupPairInfo*): Self = StObject.set(x, "targetGroupPairInfoList", js.Array(value :_*))
   }
 }

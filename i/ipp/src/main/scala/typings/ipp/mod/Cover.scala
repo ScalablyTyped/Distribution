@@ -14,34 +14,25 @@ trait Cover extends StObject {
 }
 object Cover {
   
-  @scala.inline
-  def apply(): Cover = {
+  inline def apply(): Cover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cover]
   }
   
-  @scala.inline
-  implicit class CoverMutableBuilder[Self <: Cover] (val x: Self) extends AnyVal {
+  extension [Self <: Cover](x: Self) {
     
-    @scala.inline
-    def `setCover-type`(value: CoverType): Self = StObject.set(x, "cover-type", value.asInstanceOf[js.Any])
+    inline def `setCover-type`(value: CoverType): Self = StObject.set(x, "cover-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCover-typeUndefined`: Self = StObject.set(x, "cover-type", js.undefined)
+    inline def `setCover-typeUndefined`: Self = StObject.set(x, "cover-type", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-col`(value: js.Array[MediaInterface]): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
+    inline def `setMedia-col`(value: js.Array[MediaInterface]): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
+    inline def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
-    @scala.inline
-    def `setMedia-colVarargs`(value: MediaInterface*): Self = StObject.set(x, "media-col", js.Array(value :_*))
+    inline def `setMedia-colVarargs`(value: MediaInterface*): Self = StObject.set(x, "media-col", js.Array(value :_*))
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

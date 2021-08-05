@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommonType extends StObject
 object CommonType {
   
-  @scala.inline
-  def array: typings.iobroker.iobrokerStrings.array = "array".asInstanceOf[typings.iobroker.iobrokerStrings.array]
+  inline def array: typings.iobroker.iobrokerStrings.array = "array".asInstanceOf[typings.iobroker.iobrokerStrings.array]
   
-  @scala.inline
-  def boolean: typings.iobroker.iobrokerStrings.boolean = "boolean".asInstanceOf[typings.iobroker.iobrokerStrings.boolean]
+  inline def boolean: typings.iobroker.iobrokerStrings.boolean = "boolean".asInstanceOf[typings.iobroker.iobrokerStrings.boolean]
   
-  @scala.inline
-  def file: typings.iobroker.iobrokerStrings.file = "file".asInstanceOf[typings.iobroker.iobrokerStrings.file]
+  inline def file: typings.iobroker.iobrokerStrings.file = "file".asInstanceOf[typings.iobroker.iobrokerStrings.file]
   
-  @scala.inline
-  def mixed: typings.iobroker.iobrokerStrings.mixed = "mixed".asInstanceOf[typings.iobroker.iobrokerStrings.mixed]
+  inline def mixed: typings.iobroker.iobrokerStrings.mixed = "mixed".asInstanceOf[typings.iobroker.iobrokerStrings.mixed]
   
-  @scala.inline
-  def number: typings.iobroker.iobrokerStrings.number = "number".asInstanceOf[typings.iobroker.iobrokerStrings.number]
+  inline def number: typings.iobroker.iobrokerStrings.number = "number".asInstanceOf[typings.iobroker.iobrokerStrings.number]
   
-  @scala.inline
-  def `object`: typings.iobroker.iobrokerStrings.`object` = "object".asInstanceOf[typings.iobroker.iobrokerStrings.`object`]
+  inline def `object`: typings.iobroker.iobrokerStrings.`object` = "object".asInstanceOf[typings.iobroker.iobrokerStrings.`object`]
   
-  @scala.inline
-  def string: typings.iobroker.iobrokerStrings.string = "string".asInstanceOf[typings.iobroker.iobrokerStrings.string]
+  inline def string: typings.iobroker.iobrokerStrings.string = "string".asInstanceOf[typings.iobroker.iobrokerStrings.string]
 }

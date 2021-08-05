@@ -27,8 +27,7 @@ trait XSystemDependentMenuPeer
 }
 object XSystemDependentMenuPeer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getMenuHandle: (SeqEquiv[Double], Double) => js.Any,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XSystemDependentMenuPeer {
     __obj.asInstanceOf[XSystemDependentMenuPeer]
   }
   
-  @scala.inline
-  implicit class XSystemDependentMenuPeerMutableBuilder[Self <: XSystemDependentMenuPeer] (val x: Self) extends AnyVal {
+  extension [Self <: XSystemDependentMenuPeer](x: Self) {
     
-    @scala.inline
-    def setGetMenuHandle(value: (SeqEquiv[Double], Double) => js.Any): Self = StObject.set(x, "getMenuHandle", js.Any.fromFunction2(value))
+    inline def setGetMenuHandle(value: (SeqEquiv[Double], Double) => js.Any): Self = StObject.set(x, "getMenuHandle", js.Any.fromFunction2(value))
   }
 }

@@ -43,8 +43,7 @@ trait XSubmit
 }
 object XSubmit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSubmitListener: XSubmitListener => Unit,
     queryInterface: `type` => js.Any,
@@ -56,16 +55,12 @@ object XSubmit {
     __obj.asInstanceOf[XSubmit]
   }
   
-  @scala.inline
-  implicit class XSubmitMutableBuilder[Self <: XSubmit] (val x: Self) extends AnyVal {
+  extension [Self <: XSubmit](x: Self) {
     
-    @scala.inline
-    def setAddSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "addSubmitListener", js.Any.fromFunction1(value))
+    inline def setAddSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "addSubmitListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "removeSubmitListener", js.Any.fromFunction1(value))
+    inline def setRemoveSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "removeSubmitListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmit(value: (XControl, MouseEvent) => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
+    inline def setSubmit(value: (XControl, MouseEvent) => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
   }
 }

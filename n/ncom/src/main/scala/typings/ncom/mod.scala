@@ -154,20 +154,13 @@ object mod {
     def write(data: js.Any, writeOptions: WriteOptions): Unit = js.native
   }
   
-  @scala.inline
-  def createServer(): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ComServer]
-  @scala.inline
-  def createServer(listener: ConnectionListener): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(listener.asInstanceOf[js.Any]).asInstanceOf[ComServer]
-  @scala.inline
-  def createServer(options: Unit, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
-  @scala.inline
-  def createServer(options: ComServerOptions): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ComServer]
-  @scala.inline
-  def createServer(options: ComServerOptions, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
-  @scala.inline
-  def createServer(options: SecureComServerOptions): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ComServer]
-  @scala.inline
-  def createServer(options: SecureComServerOptions, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
+  inline def createServer(): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ComServer]
+  inline def createServer(listener: ConnectionListener): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(listener.asInstanceOf[js.Any]).asInstanceOf[ComServer]
+  inline def createServer(options: Unit, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
+  inline def createServer(options: ComServerOptions): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ComServer]
+  inline def createServer(options: ComServerOptions, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
+  inline def createServer(options: SecureComServerOptions): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ComServer]
+  inline def createServer(options: SecureComServerOptions, listener: ConnectionListener): ComServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ComServer]
   
   trait ComServerOptions extends StObject {
     
@@ -177,26 +170,20 @@ object mod {
   }
   object ComServerOptions {
     
-    @scala.inline
-    def apply(): ComServerOptions = {
+    inline def apply(): ComServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComServerOptions]
     }
     
-    @scala.inline
-    implicit class ComServerOptionsMutableBuilder[Self <: ComServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComServerOptions](x: Self) {
       
-      @scala.inline
-      def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+      inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+      inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
       
-      @scala.inline
-      def setPauseOnConnect(value: Boolean): Self = StObject.set(x, "pauseOnConnect", value.asInstanceOf[js.Any])
+      inline def setPauseOnConnect(value: Boolean): Self = StObject.set(x, "pauseOnConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseOnConnectUndefined: Self = StObject.set(x, "pauseOnConnect", js.undefined)
+      inline def setPauseOnConnectUndefined: Self = StObject.set(x, "pauseOnConnect", js.undefined)
     }
   }
   
@@ -212,17 +199,14 @@ object mod {
   }
   object SecureComServerOptions {
     
-    @scala.inline
-    def apply(): SecureComServerOptions = {
+    inline def apply(): SecureComServerOptions = {
       val __obj = js.Dynamic.literal(secure = true)
       __obj.asInstanceOf[SecureComServerOptions]
     }
     
-    @scala.inline
-    implicit class SecureComServerOptionsMutableBuilder[Self <: SecureComServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SecureComServerOptions](x: Self) {
       
-      @scala.inline
-      def setSecure(value: `true`): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: `true`): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,29 +218,22 @@ object mod {
   }
   object WriteOptions {
     
-    @scala.inline
-    def apply(): WriteOptions = {
+    inline def apply(): WriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteOptions]
     }
     
-    @scala.inline
-    implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriteOptions](x: Self) {
       
-      @scala.inline
-      def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+      inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+      inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[FilterFunction]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[FilterFunction]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: FilterFunction*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: FilterFunction*): Self = StObject.set(x, "filters", js.Array(value :_*))
     }
   }
 }

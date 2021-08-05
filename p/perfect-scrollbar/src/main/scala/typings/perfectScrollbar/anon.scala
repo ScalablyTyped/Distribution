@@ -16,26 +16,20 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(): X = {
+    inline def apply(): X = {
       val __obj = js.Dynamic.literal(x = null, y = null)
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: start | end): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: start | end): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXNull: Self = StObject.set(x, "x", null)
+      inline def setXNull: Self = StObject.set(x, "x", null)
       
-      @scala.inline
-      def setY(value: start | end): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: start | end): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYNull: Self = StObject.set(x, "y", null)
+      inline def setYNull: Self = StObject.set(x, "y", null)
     }
   }
 }

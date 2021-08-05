@@ -14,25 +14,19 @@ trait TeamDriveReference extends StObject {
 }
 object TeamDriveReference {
   
-  @scala.inline
-  def apply(): TeamDriveReference = {
+  inline def apply(): TeamDriveReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamDriveReference]
   }
   
-  @scala.inline
-  implicit class TeamDriveReferenceMutableBuilder[Self <: TeamDriveReference] (val x: Self) extends AnyVal {
+  extension [Self <: TeamDriveReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -26,25 +26,19 @@ trait AreaColorEmphasis extends StObject {
 }
 object AreaColorEmphasis {
   
-  @scala.inline
-  def apply(): AreaColorEmphasis = {
+  inline def apply(): AreaColorEmphasis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaColorEmphasis]
   }
   
-  @scala.inline
-  implicit class AreaColorEmphasisMutableBuilder[Self <: AreaColorEmphasis] (val x: Self) extends AnyVal {
+  extension [Self <: AreaColorEmphasis](x: Self) {
     
-    @scala.inline
-    def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
+    inline def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
+    inline def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
     
-    @scala.inline
-    def setEmphasis(value: AreaColor): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: AreaColor): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+    inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
   }
 }

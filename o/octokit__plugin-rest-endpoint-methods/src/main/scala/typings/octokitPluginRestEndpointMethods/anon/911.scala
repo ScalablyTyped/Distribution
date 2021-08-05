@@ -23,8 +23,7 @@ trait `911` extends StObject {
 }
 object `911` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ReposCreateOrUpdateFileContentsEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[
       ReposCreateOrUpdateFileContentsResponseData | ReposCreateOrUpdateFileContentsResponse201Data
@@ -34,16 +33,13 @@ object `911` {
     __obj.asInstanceOf[`911`]
   }
   
-  @scala.inline
-  implicit class `911MutableBuilder`[Self <: `911`] (val x: Self) extends AnyVal {
+  extension [Self <: `911`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[ReposCreateOrUpdateFileContentsEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ReposCreateOrUpdateFileContentsResponseData | ReposCreateOrUpdateFileContentsResponse201Data
         ]

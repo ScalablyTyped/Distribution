@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Floor")
 @js.native
-class Floor protected ()
+/* private */ class Floor ()
   extends StObject
      with typings.activexExcel.Excel.Floor {
   
@@ -24,7 +24,7 @@ class Floor protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Floor_typekey")
   var ExcelDotFloor_typekey: typings.activexExcel.Excel.Floor = js.native
   

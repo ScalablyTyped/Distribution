@@ -13,19 +13,15 @@ trait ClientApiVersions extends StObject {
 }
 object ClientApiVersions {
   
-  @scala.inline
-  def apply(): ClientApiVersions = {
+  inline def apply(): ClientApiVersions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientApiVersions]
   }
   
-  @scala.inline
-  implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientApiVersions](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
   }
 }

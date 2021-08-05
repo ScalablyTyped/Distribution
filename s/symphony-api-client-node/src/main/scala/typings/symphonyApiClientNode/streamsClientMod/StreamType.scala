@@ -14,17 +14,14 @@ trait StreamType extends StObject {
 }
 object StreamType {
   
-  @scala.inline
-  def apply(`type`: IM | MIM | ROOM | POST): StreamType = {
+  inline def apply(`type`: IM | MIM | ROOM | POST): StreamType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamType]
   }
   
-  @scala.inline
-  implicit class StreamTypeMutableBuilder[Self <: StreamType] (val x: Self) extends AnyVal {
+  extension [Self <: StreamType](x: Self) {
     
-    @scala.inline
-    def setType(value: IM | MIM | ROOM | POST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IM | MIM | ROOM | POST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

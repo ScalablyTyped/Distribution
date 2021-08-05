@@ -37,9 +37,7 @@ object colorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Color]
-    @scala.inline
-    def create(colorVal: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(colorVal.asInstanceOf[js.Any]).asInstanceOf[Color]
+    inline def create(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Color]
+    inline def create(colorVal: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(colorVal.asInstanceOf[js.Any]).asInstanceOf[Color]
   }
 }

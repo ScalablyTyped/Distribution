@@ -14,9 +14,9 @@ object membershipQueueMod {
   class MembershipQueue protected () extends StObject {
     def this(bridge: Bridge, opts: MembershipQueueOpts) = this()
     
-    var bridge: js.Any = js.native
+    /* private */ var bridge: js.Any = js.native
     
-    var hashRoomId: js.Any = js.native
+    /* private */ var hashRoomId: js.Any = js.native
     
     /**
       * Join a user to a room
@@ -48,15 +48,15 @@ object membershipQueueMod {
     def leave(roomId: String, userId: String, req: ThinRequest, retry: Unit, reason: String, kickUser: String): js.Promise[Unit] = js.native
     def leave(roomId: String, userId: String, req: ThinRequest, retry: Unit, reason: Unit, kickUser: String): js.Promise[Unit] = js.native
     
-    var opts: js.Any = js.native
+    /* private */ var opts: js.Any = js.native
     
     def queueMembership(item: QueueUserItem): js.Promise[Unit] = js.native
     
-    var queues: js.Any = js.native
+    /* private */ var queues: js.Any = js.native
     
-    var serviceQueue: js.Any = js.native
+    /* private */ var serviceQueue: js.Any = js.native
     
-    var shouldRetry: js.Any = js.native
+    /* private */ var shouldRetry: js.Any = js.native
   }
   
   trait MembershipQueueOpts extends StObject {
@@ -71,26 +71,20 @@ object membershipQueueMod {
   }
   object MembershipQueueOpts {
     
-    @scala.inline
-    def apply(concurrentRoomLimit: Double, joinDelayMs: Double, maxAttempts: Double, maxJoinDelayMs: Double): MembershipQueueOpts = {
+    inline def apply(concurrentRoomLimit: Double, joinDelayMs: Double, maxAttempts: Double, maxJoinDelayMs: Double): MembershipQueueOpts = {
       val __obj = js.Dynamic.literal(concurrentRoomLimit = concurrentRoomLimit.asInstanceOf[js.Any], joinDelayMs = joinDelayMs.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], maxJoinDelayMs = maxJoinDelayMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[MembershipQueueOpts]
     }
     
-    @scala.inline
-    implicit class MembershipQueueOptsMutableBuilder[Self <: MembershipQueueOpts] (val x: Self) extends AnyVal {
+    extension [Self <: MembershipQueueOpts](x: Self) {
       
-      @scala.inline
-      def setConcurrentRoomLimit(value: Double): Self = StObject.set(x, "concurrentRoomLimit", value.asInstanceOf[js.Any])
+      inline def setConcurrentRoomLimit(value: Double): Self = StObject.set(x, "concurrentRoomLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinDelayMs(value: Double): Self = StObject.set(x, "joinDelayMs", value.asInstanceOf[js.Any])
+      inline def setJoinDelayMs(value: Double): Self = StObject.set(x, "joinDelayMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxJoinDelayMs(value: Double): Self = StObject.set(x, "maxJoinDelayMs", value.asInstanceOf[js.Any])
+      inline def setMaxJoinDelayMs(value: Double): Self = StObject.set(x, "maxJoinDelayMs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,8 +108,7 @@ object membershipQueueMod {
   }
   object QueueUserItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attempts: Double,
       req: ThinRequest,
       retry: Boolean,
@@ -128,38 +121,27 @@ object membershipQueueMod {
       __obj.asInstanceOf[QueueUserItem]
     }
     
-    @scala.inline
-    implicit class QueueUserItemMutableBuilder[Self <: QueueUserItem] (val x: Self) extends AnyVal {
+    extension [Self <: QueueUserItem](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKickUser(value: String): Self = StObject.set(x, "kickUser", value.asInstanceOf[js.Any])
+      inline def setKickUser(value: String): Self = StObject.set(x, "kickUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKickUserUndefined: Self = StObject.set(x, "kickUser", js.undefined)
+      inline def setKickUserUndefined: Self = StObject.set(x, "kickUser", js.undefined)
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setReq(value: ThinRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: ThinRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
+      inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: join | leave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: join | leave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,17 +151,14 @@ object membershipQueueMod {
   }
   object ThinRequest {
     
-    @scala.inline
-    def apply(getId: () => String): ThinRequest = {
+    inline def apply(getId: () => String): ThinRequest = {
       val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId))
       __obj.asInstanceOf[ThinRequest]
     }
     
-    @scala.inline
-    implicit class ThinRequestMutableBuilder[Self <: ThinRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ThinRequest](x: Self) {
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     }
   }
 }

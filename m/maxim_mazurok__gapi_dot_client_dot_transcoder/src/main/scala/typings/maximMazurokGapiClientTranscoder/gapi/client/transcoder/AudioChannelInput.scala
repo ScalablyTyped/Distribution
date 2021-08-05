@@ -20,37 +20,27 @@ trait AudioChannelInput extends StObject {
 }
 object AudioChannelInput {
   
-  @scala.inline
-  def apply(): AudioChannelInput = {
+  inline def apply(): AudioChannelInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioChannelInput]
   }
   
-  @scala.inline
-  implicit class AudioChannelInputMutableBuilder[Self <: AudioChannelInput] (val x: Self) extends AnyVal {
+  extension [Self <: AudioChannelInput](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setGainDb(value: Double): Self = StObject.set(x, "gainDb", value.asInstanceOf[js.Any])
+    inline def setGainDb(value: Double): Self = StObject.set(x, "gainDb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGainDbUndefined: Self = StObject.set(x, "gainDb", js.undefined)
+    inline def setGainDbUndefined: Self = StObject.set(x, "gainDb", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTrack(value: Double): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: Double): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

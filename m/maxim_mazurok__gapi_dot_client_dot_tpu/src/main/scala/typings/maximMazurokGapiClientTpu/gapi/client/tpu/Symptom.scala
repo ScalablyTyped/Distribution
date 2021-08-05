@@ -20,37 +20,27 @@ trait Symptom extends StObject {
 }
 object Symptom {
   
-  @scala.inline
-  def apply(): Symptom = {
+  inline def apply(): Symptom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Symptom]
   }
   
-  @scala.inline
-  implicit class SymptomMutableBuilder[Self <: Symptom] (val x: Self) extends AnyVal {
+  extension [Self <: Symptom](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setSymptomType(value: String): Self = StObject.set(x, "symptomType", value.asInstanceOf[js.Any])
+    inline def setSymptomType(value: String): Self = StObject.set(x, "symptomType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymptomTypeUndefined: Self = StObject.set(x, "symptomType", js.undefined)
+    inline def setSymptomTypeUndefined: Self = StObject.set(x, "symptomType", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

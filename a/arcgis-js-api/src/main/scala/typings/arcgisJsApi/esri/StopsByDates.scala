@@ -20,8 +20,7 @@ trait StopsByDates
 }
 object StopsByDates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     dates: js.Array[Date],
     hasOwnProperty: PropertyKey => Boolean,
@@ -31,13 +30,10 @@ object StopsByDates {
     __obj.asInstanceOf[StopsByDates]
   }
   
-  @scala.inline
-  implicit class StopsByDatesMutableBuilder[Self <: StopsByDates] (val x: Self) extends AnyVal {
+  extension [Self <: StopsByDates](x: Self) {
     
-    @scala.inline
-    def setDates(value: js.Array[Date]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    inline def setDates(value: js.Array[Date]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatesVarargs(value: Date*): Self = StObject.set(x, "dates", js.Array(value :_*))
+    inline def setDatesVarargs(value: Date*): Self = StObject.set(x, "dates", js.Array(value :_*))
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaTranscodingState extends StObject
 object MediaTranscodingState {
   
-  @scala.inline
-  def NOT_TRANSCODING: typings.kurentoClient.kurentoClientStrings.NOT_TRANSCODING = "NOT_TRANSCODING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.NOT_TRANSCODING]
+  inline def NOT_TRANSCODING: typings.kurentoClient.kurentoClientStrings.NOT_TRANSCODING = "NOT_TRANSCODING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.NOT_TRANSCODING]
   
-  @scala.inline
-  def TRANSCODING: typings.kurentoClient.kurentoClientStrings.TRANSCODING = "TRANSCODING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.TRANSCODING]
+  inline def TRANSCODING: typings.kurentoClient.kurentoClientStrings.TRANSCODING = "TRANSCODING".asInstanceOf[typings.kurentoClient.kurentoClientStrings.TRANSCODING]
 }

@@ -18,25 +18,19 @@ trait RestartAppServerMessage extends StObject {
 }
 object RestartAppServerMessage {
   
-  @scala.inline
-  def apply(): RestartAppServerMessage = {
+  inline def apply(): RestartAppServerMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestartAppServerMessage]
   }
   
-  @scala.inline
-  implicit class RestartAppServerMessageMutableBuilder[Self <: RestartAppServerMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RestartAppServerMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
   }
 }

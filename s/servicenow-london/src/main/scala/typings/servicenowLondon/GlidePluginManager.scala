@@ -35,16 +35,13 @@ trait GlidePluginManager extends StObject {
 }
 object GlidePluginManager {
   
-  @scala.inline
-  def apply(isActive: String => Boolean): GlidePluginManager = {
+  inline def apply(isActive: String => Boolean): GlidePluginManager = {
     val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction1(isActive))
     __obj.asInstanceOf[GlidePluginManager]
   }
   
-  @scala.inline
-  implicit class GlidePluginManagerMutableBuilder[Self <: GlidePluginManager] (val x: Self) extends AnyVal {
+  extension [Self <: GlidePluginManager](x: Self) {
     
-    @scala.inline
-    def setIsActive(value: String => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
+    inline def setIsActive(value: String => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
   }
 }

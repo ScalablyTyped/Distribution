@@ -14,25 +14,19 @@ trait OptgroupHTMLAttributes[T]
 }
 object OptgroupHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): OptgroupHTMLAttributes[T] = {
+  inline def apply[T](): OptgroupHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptgroupHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class OptgroupHTMLAttributesMutableBuilder[Self <: OptgroupHTMLAttributes[?], T] (val x: Self & OptgroupHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: OptgroupHTMLAttributes[?], T](x: Self & OptgroupHTMLAttributes[T]) {
     
-    @scala.inline
-    def setDisabled(value: Boolean | String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean | String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

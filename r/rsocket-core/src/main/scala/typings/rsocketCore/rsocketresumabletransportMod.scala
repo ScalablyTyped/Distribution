@@ -85,23 +85,18 @@ object rsocketresumabletransportMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(bufferSize: Double, resumeToken: Encodable, sessionDurationSeconds: Double): Options = {
+    inline def apply(bufferSize: Double, resumeToken: Encodable, sessionDurationSeconds: Double): Options = {
       val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any], sessionDurationSeconds = sessionDurationSeconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResumeToken(value: Encodable): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+      inline def setResumeToken(value: Encodable): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDurationSeconds(value: Double): Self = StObject.set(x, "sessionDurationSeconds", value.asInstanceOf[js.Any])
+      inline def setSessionDurationSeconds(value: Double): Self = StObject.set(x, "sessionDurationSeconds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,8 +105,7 @@ object rsocketresumabletransportMod {
        with DuplexConnection
   object RSocketResumableTransport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       connect: () => Unit,
       connectionStatus: () => Flowable[ConnectionStatus],

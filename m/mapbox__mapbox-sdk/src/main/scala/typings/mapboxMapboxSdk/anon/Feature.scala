@@ -15,22 +15,17 @@ trait Feature extends StObject {
 }
 object Feature {
   
-  @scala.inline
-  def apply(datasetId: String, feature: DataSetsFeature, featureId: String): Feature = {
+  inline def apply(datasetId: String, feature: DataSetsFeature, featureId: String): Feature = {
     val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], featureId = featureId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature]
   }
   
-  @scala.inline
-  implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
+  extension [Self <: Feature](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeature(value: DataSetsFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: DataSetsFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
+    inline def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
   }
 }

@@ -29,43 +29,31 @@ trait SetNetworkPolicyRequest extends StObject {
 }
 object SetNetworkPolicyRequest {
   
-  @scala.inline
-  def apply(): SetNetworkPolicyRequest = {
+  inline def apply(): SetNetworkPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetNetworkPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SetNetworkPolicyRequestMutableBuilder[Self <: SetNetworkPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetNetworkPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetworkPolicy(value: NetworkPolicy): Self = StObject.set(x, "networkPolicy", value.asInstanceOf[js.Any])
+    inline def setNetworkPolicy(value: NetworkPolicy): Self = StObject.set(x, "networkPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPolicyUndefined: Self = StObject.set(x, "networkPolicy", js.undefined)
+    inline def setNetworkPolicyUndefined: Self = StObject.set(x, "networkPolicy", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

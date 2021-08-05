@@ -13,10 +13,8 @@ object dependencyConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dependencyConfigWindows(folder: String): WindowsDependencyConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfigWindows")(folder.asInstanceOf[js.Any]).asInstanceOf[WindowsDependencyConfig | Null]
-  @scala.inline
-  def dependencyConfigWindows(folder: String, userConfig: PartialWindowsDependencyC): WindowsDependencyConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfigWindows")(folder.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[WindowsDependencyConfig | Null]
+  inline def dependencyConfigWindows(folder: String): WindowsDependencyConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfigWindows")(folder.asInstanceOf[js.Any]).asInstanceOf[WindowsDependencyConfig | Null]
+  inline def dependencyConfigWindows(folder: String, userConfig: PartialWindowsDependencyC): WindowsDependencyConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfigWindows")(folder.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[WindowsDependencyConfig | Null]
   
   trait NuGetPackageDependency extends StObject {
     
@@ -34,8 +32,7 @@ object dependencyConfigMod {
   }
   object NuGetPackageDependency {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cppHeaders: js.Array[String],
       cppPackageProviders: js.Array[String],
       csNamespaces: js.Array[String],
@@ -47,38 +44,27 @@ object dependencyConfigMod {
       __obj.asInstanceOf[NuGetPackageDependency]
     }
     
-    @scala.inline
-    implicit class NuGetPackageDependencyMutableBuilder[Self <: NuGetPackageDependency] (val x: Self) extends AnyVal {
+    extension [Self <: NuGetPackageDependency](x: Self) {
       
-      @scala.inline
-      def setCppHeaders(value: js.Array[String]): Self = StObject.set(x, "cppHeaders", value.asInstanceOf[js.Any])
+      inline def setCppHeaders(value: js.Array[String]): Self = StObject.set(x, "cppHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCppHeadersVarargs(value: String*): Self = StObject.set(x, "cppHeaders", js.Array(value :_*))
+      inline def setCppHeadersVarargs(value: String*): Self = StObject.set(x, "cppHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setCppPackageProviders(value: js.Array[String]): Self = StObject.set(x, "cppPackageProviders", value.asInstanceOf[js.Any])
+      inline def setCppPackageProviders(value: js.Array[String]): Self = StObject.set(x, "cppPackageProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCppPackageProvidersVarargs(value: String*): Self = StObject.set(x, "cppPackageProviders", js.Array(value :_*))
+      inline def setCppPackageProvidersVarargs(value: String*): Self = StObject.set(x, "cppPackageProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setCsNamespaces(value: js.Array[String]): Self = StObject.set(x, "csNamespaces", value.asInstanceOf[js.Any])
+      inline def setCsNamespaces(value: js.Array[String]): Self = StObject.set(x, "csNamespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsNamespacesVarargs(value: String*): Self = StObject.set(x, "csNamespaces", js.Array(value :_*))
+      inline def setCsNamespacesVarargs(value: String*): Self = StObject.set(x, "csNamespaces", js.Array(value :_*))
       
-      @scala.inline
-      def setCsPackageProviders(value: js.Array[String]): Self = StObject.set(x, "csPackageProviders", value.asInstanceOf[js.Any])
+      inline def setCsPackageProviders(value: js.Array[String]): Self = StObject.set(x, "csPackageProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsPackageProvidersVarargs(value: String*): Self = StObject.set(x, "csPackageProviders", js.Array(value :_*))
+      inline def setCsPackageProvidersVarargs(value: String*): Self = StObject.set(x, "csPackageProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageVersion(value: String): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
+      inline def setPackageVersion(value: String): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +90,7 @@ object dependencyConfigMod {
   }
   object ProjectDependency {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cppHeaders: js.Array[String],
       cppPackageProviders: js.Array[String],
       csNamespaces: js.Array[String],
@@ -118,53 +103,37 @@ object dependencyConfigMod {
       __obj.asInstanceOf[ProjectDependency]
     }
     
-    @scala.inline
-    implicit class ProjectDependencyMutableBuilder[Self <: ProjectDependency] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectDependency](x: Self) {
       
-      @scala.inline
-      def setCppHeaders(value: js.Array[String]): Self = StObject.set(x, "cppHeaders", value.asInstanceOf[js.Any])
+      inline def setCppHeaders(value: js.Array[String]): Self = StObject.set(x, "cppHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCppHeadersVarargs(value: String*): Self = StObject.set(x, "cppHeaders", js.Array(value :_*))
+      inline def setCppHeadersVarargs(value: String*): Self = StObject.set(x, "cppHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setCppPackageProviders(value: js.Array[String]): Self = StObject.set(x, "cppPackageProviders", value.asInstanceOf[js.Any])
+      inline def setCppPackageProviders(value: js.Array[String]): Self = StObject.set(x, "cppPackageProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCppPackageProvidersVarargs(value: String*): Self = StObject.set(x, "cppPackageProviders", js.Array(value :_*))
+      inline def setCppPackageProvidersVarargs(value: String*): Self = StObject.set(x, "cppPackageProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setCsNamespaces(value: js.Array[String]): Self = StObject.set(x, "csNamespaces", value.asInstanceOf[js.Any])
+      inline def setCsNamespaces(value: js.Array[String]): Self = StObject.set(x, "csNamespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsNamespacesVarargs(value: String*): Self = StObject.set(x, "csNamespaces", js.Array(value :_*))
+      inline def setCsNamespacesVarargs(value: String*): Self = StObject.set(x, "csNamespaces", js.Array(value :_*))
       
-      @scala.inline
-      def setCsPackageProviders(value: js.Array[String]): Self = StObject.set(x, "csPackageProviders", value.asInstanceOf[js.Any])
+      inline def setCsPackageProviders(value: js.Array[String]): Self = StObject.set(x, "csPackageProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsPackageProvidersVarargs(value: String*): Self = StObject.set(x, "csPackageProviders", js.Array(value :_*))
+      inline def setCsPackageProvidersVarargs(value: String*): Self = StObject.set(x, "csPackageProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setDirectDependency(value: Boolean): Self = StObject.set(x, "directDependency", value.asInstanceOf[js.Any])
+      inline def setDirectDependency(value: Boolean): Self = StObject.set(x, "directDependency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectFile(value: String): Self = StObject.set(x, "projectFile", value.asInstanceOf[js.Any])
+      inline def setProjectFile(value: String): Self = StObject.set(x, "projectFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectGuid(value: String): Self = StObject.set(x, "projectGuid", value.asInstanceOf[js.Any])
+      inline def setProjectGuid(value: String): Self = StObject.set(x, "projectGuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectGuidNull: Self = StObject.set(x, "projectGuid", null)
+      inline def setProjectGuidNull: Self = StObject.set(x, "projectGuid", null)
       
-      @scala.inline
-      def setProjectLang(value: cpp | cs): Self = StObject.set(x, "projectLang", value.asInstanceOf[js.Any])
+      inline def setProjectLang(value: cpp | cs): Self = StObject.set(x, "projectLang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectLangNull: Self = StObject.set(x, "projectLang", null)
+      inline def setProjectLangNull: Self = StObject.set(x, "projectLang", null)
       
-      @scala.inline
-      def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,8 +151,7 @@ object dependencyConfigMod {
   }
   object WindowsDependencyConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       folder: String,
       nugetPackages: js.Array[NuGetPackageDependency],
       projects: js.Array[ProjectDependency]
@@ -192,38 +160,27 @@ object dependencyConfigMod {
       __obj.asInstanceOf[WindowsDependencyConfig]
     }
     
-    @scala.inline
-    implicit class WindowsDependencyConfigMutableBuilder[Self <: WindowsDependencyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsDependencyConfig](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNugetPackages(value: js.Array[NuGetPackageDependency]): Self = StObject.set(x, "nugetPackages", value.asInstanceOf[js.Any])
+      inline def setNugetPackages(value: js.Array[NuGetPackageDependency]): Self = StObject.set(x, "nugetPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNugetPackagesVarargs(value: NuGetPackageDependency*): Self = StObject.set(x, "nugetPackages", js.Array(value :_*))
+      inline def setNugetPackagesVarargs(value: NuGetPackageDependency*): Self = StObject.set(x, "nugetPackages", js.Array(value :_*))
       
-      @scala.inline
-      def setProjects(value: js.Array[ProjectDependency]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      inline def setProjects(value: js.Array[ProjectDependency]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectsVarargs(value: ProjectDependency*): Self = StObject.set(x, "projects", js.Array(value :_*))
+      inline def setProjectsVarargs(value: ProjectDependency*): Self = StObject.set(x, "projects", js.Array(value :_*))
       
-      @scala.inline
-      def setSolutionFile(value: String): Self = StObject.set(x, "solutionFile", value.asInstanceOf[js.Any])
+      inline def setSolutionFile(value: String): Self = StObject.set(x, "solutionFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionFileNull: Self = StObject.set(x, "solutionFile", null)
+      inline def setSolutionFileNull: Self = StObject.set(x, "solutionFile", null)
       
-      @scala.inline
-      def setSolutionFileUndefined: Self = StObject.set(x, "solutionFile", js.undefined)
+      inline def setSolutionFileUndefined: Self = StObject.set(x, "solutionFile", js.undefined)
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
     }
   }
 }

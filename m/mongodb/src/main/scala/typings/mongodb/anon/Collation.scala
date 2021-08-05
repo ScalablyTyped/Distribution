@@ -19,37 +19,27 @@ trait Collation[TSchema] extends StObject {
 }
 object Collation {
   
-  @scala.inline
-  def apply[TSchema](filter: FilterQuery[TSchema], replacement: TSchema): Collation[TSchema] = {
+  inline def apply[TSchema](filter: FilterQuery[TSchema], replacement: TSchema): Collation[TSchema] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collation[TSchema]]
   }
   
-  @scala.inline
-  implicit class CollationMutableBuilder[Self <: Collation[?], TSchema] (val x: Self & Collation[TSchema]) extends AnyVal {
+  extension [Self <: Collation[?], TSchema](x: Self & Collation[TSchema]) {
     
-    @scala.inline
-    def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    inline def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
-    @scala.inline
-    def setFilter(value: FilterQuery[TSchema]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterQuery[TSchema]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHint(value: String | js.Object): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String | js.Object): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    @scala.inline
-    def setReplacement(value: TSchema): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: TSchema): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait TypographyProps
      with TextTransformProps
 object TypographyProps {
   
-  @scala.inline
-  def apply(): TypographyProps = {
+  inline def apply(): TypographyProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypographyProps]
   }

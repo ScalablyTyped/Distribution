@@ -10,8 +10,7 @@ object parseDateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseDate(datestring: String): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(datestring.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
+  inline def parseDate(datestring: String): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(datestring.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
   
   trait MonthAndYear extends StObject {
     
@@ -21,20 +20,16 @@ object parseDateMod {
   }
   object MonthAndYear {
     
-    @scala.inline
-    def apply(month: String, year: String): MonthAndYear = {
+    inline def apply(month: String, year: String): MonthAndYear = {
       val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[MonthAndYear]
     }
     
-    @scala.inline
-    implicit class MonthAndYearMutableBuilder[Self <: MonthAndYear] (val x: Self) extends AnyVal {
+    extension [Self <: MonthAndYear](x: Self) {
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
 }

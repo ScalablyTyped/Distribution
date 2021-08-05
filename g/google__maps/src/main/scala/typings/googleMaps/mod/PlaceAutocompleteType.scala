@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlaceAutocompleteType extends StObject
 object PlaceAutocompleteType {
   
-  @scala.inline
-  def LeftparenthesiscitiesRightparenthesis: typings.googleMaps.googleMapsStrings.LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[typings.googleMaps.googleMapsStrings.LeftparenthesiscitiesRightparenthesis]
+  inline def LeftparenthesiscitiesRightparenthesis: typings.googleMaps.googleMapsStrings.LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[typings.googleMaps.googleMapsStrings.LeftparenthesiscitiesRightparenthesis]
   
-  @scala.inline
-  def LeftparenthesisregionsRightparenthesis: typings.googleMaps.googleMapsStrings.LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[typings.googleMaps.googleMapsStrings.LeftparenthesisregionsRightparenthesis]
+  inline def LeftparenthesisregionsRightparenthesis: typings.googleMaps.googleMapsStrings.LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[typings.googleMaps.googleMapsStrings.LeftparenthesisregionsRightparenthesis]
   
-  @scala.inline
-  def address: typings.googleMaps.googleMapsStrings.address = "address".asInstanceOf[typings.googleMaps.googleMapsStrings.address]
+  inline def address: typings.googleMaps.googleMapsStrings.address = "address".asInstanceOf[typings.googleMaps.googleMapsStrings.address]
   
-  @scala.inline
-  def establishment: typings.googleMaps.googleMapsStrings.establishment = "establishment".asInstanceOf[typings.googleMaps.googleMapsStrings.establishment]
+  inline def establishment: typings.googleMaps.googleMapsStrings.establishment = "establishment".asInstanceOf[typings.googleMaps.googleMapsStrings.establishment]
   
-  @scala.inline
-  def geocode: typings.googleMaps.googleMapsStrings.geocode = "geocode".asInstanceOf[typings.googleMaps.googleMapsStrings.geocode]
+  inline def geocode: typings.googleMaps.googleMapsStrings.geocode = "geocode".asInstanceOf[typings.googleMaps.googleMapsStrings.geocode]
 }

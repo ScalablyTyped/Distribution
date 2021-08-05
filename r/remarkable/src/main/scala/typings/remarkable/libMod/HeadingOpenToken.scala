@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object HeadingOpenToken {
   
-  @scala.inline
-  def apply(hLevel: HeadingValue, level: Double): HeadingOpenToken = {
+  inline def apply(hLevel: HeadingValue, level: Double): HeadingOpenToken = {
     val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("heading_open")
     __obj.asInstanceOf[HeadingOpenToken]
   }
   
-  @scala.inline
-  implicit class HeadingOpenTokenMutableBuilder[Self <: HeadingOpenToken] (val x: Self) extends AnyVal {
+  extension [Self <: HeadingOpenToken](x: Self) {
     
-    @scala.inline
-    def setType(value: heading_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: heading_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

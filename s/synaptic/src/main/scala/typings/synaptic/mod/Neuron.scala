@@ -122,8 +122,7 @@ object Neuron {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+    inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   /* was `typeof Connection` */
@@ -141,12 +140,10 @@ object Neuron {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+    inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
-  @scala.inline
-  def quantity(): Connections = ^.asInstanceOf[js.Dynamic].applyDynamic("quantity")().asInstanceOf[Connections]
+  inline def quantity(): Connections = ^.asInstanceOf[js.Dynamic].applyDynamic("quantity")().asInstanceOf[Connections]
   
   object squash {
     
@@ -171,8 +168,7 @@ object Neuron {
     val TANH: SquashingFunction = js.native
   }
   
-  @scala.inline
-  def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+  inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   
   type SquashingFunction = js.Function2[/* x */ Double, /* derivate */ Boolean, Double]
 }

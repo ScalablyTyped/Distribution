@@ -227,8 +227,7 @@ trait XBreakIterator
 }
 object XBreakIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     beginOfCharBlock: (String, Double, Locale, Double) => Double,
     beginOfScript: (String, Double, Double) => Double,
@@ -257,69 +256,48 @@ object XBreakIterator {
     __obj.asInstanceOf[XBreakIterator]
   }
   
-  @scala.inline
-  implicit class XBreakIteratorMutableBuilder[Self <: XBreakIterator] (val x: Self) extends AnyVal {
+  extension [Self <: XBreakIterator](x: Self) {
     
-    @scala.inline
-    def setBeginOfCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "beginOfCharBlock", js.Any.fromFunction4(value))
+    inline def setBeginOfCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "beginOfCharBlock", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBeginOfScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "beginOfScript", js.Any.fromFunction3(value))
+    inline def setBeginOfScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "beginOfScript", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeginOfSentence(value: (String, Double, Locale) => Double): Self = StObject.set(x, "beginOfSentence", js.Any.fromFunction3(value))
+    inline def setBeginOfSentence(value: (String, Double, Locale) => Double): Self = StObject.set(x, "beginOfSentence", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEndOfCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "endOfCharBlock", js.Any.fromFunction4(value))
+    inline def setEndOfCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "endOfCharBlock", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEndOfScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "endOfScript", js.Any.fromFunction3(value))
+    inline def setEndOfScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "endOfScript", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEndOfSentence(value: (String, Double, Locale) => Double): Self = StObject.set(x, "endOfSentence", js.Any.fromFunction3(value))
+    inline def setEndOfSentence(value: (String, Double, Locale) => Double): Self = StObject.set(x, "endOfSentence", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetLineBreak(
+    inline def setGetLineBreak(
       value: (String, Double, Locale, Double, LineBreakHyphenationOptions, LineBreakUserOptions) => LineBreakResults
     ): Self = StObject.set(x, "getLineBreak", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetScriptType(value: (String, Double) => Double): Self = StObject.set(x, "getScriptType", js.Any.fromFunction2(value))
+    inline def setGetScriptType(value: (String, Double) => Double): Self = StObject.set(x, "getScriptType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetWordBoundary(value: (String, Double, Locale, Double, Boolean) => Boundary): Self = StObject.set(x, "getWordBoundary", js.Any.fromFunction5(value))
+    inline def setGetWordBoundary(value: (String, Double, Locale, Double, Boolean) => Boundary): Self = StObject.set(x, "getWordBoundary", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetWordType(value: (String, Double, Locale) => Double): Self = StObject.set(x, "getWordType", js.Any.fromFunction3(value))
+    inline def setGetWordType(value: (String, Double, Locale) => Double): Self = StObject.set(x, "getWordType", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsBeginWord(value: (String, Double, Locale, Double) => Boolean): Self = StObject.set(x, "isBeginWord", js.Any.fromFunction4(value))
+    inline def setIsBeginWord(value: (String, Double, Locale, Double) => Boolean): Self = StObject.set(x, "isBeginWord", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setIsEndWord(value: (String, Double, Locale, Double) => Boolean): Self = StObject.set(x, "isEndWord", js.Any.fromFunction4(value))
+    inline def setIsEndWord(value: (String, Double, Locale, Double) => Boolean): Self = StObject.set(x, "isEndWord", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setNextCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "nextCharBlock", js.Any.fromFunction4(value))
+    inline def setNextCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "nextCharBlock", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setNextCharacters(value: (String, Double, Locale, Double, Double, js.Array[Double]) => Double): Self = StObject.set(x, "nextCharacters", js.Any.fromFunction6(value))
+    inline def setNextCharacters(value: (String, Double, Locale, Double, Double, js.Array[Double]) => Double): Self = StObject.set(x, "nextCharacters", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setNextScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "nextScript", js.Any.fromFunction3(value))
+    inline def setNextScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "nextScript", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNextWord(value: (String, Double, Locale, Double) => Boundary): Self = StObject.set(x, "nextWord", js.Any.fromFunction4(value))
+    inline def setNextWord(value: (String, Double, Locale, Double) => Boundary): Self = StObject.set(x, "nextWord", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setPreviousCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "previousCharBlock", js.Any.fromFunction4(value))
+    inline def setPreviousCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "previousCharBlock", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setPreviousCharacters(value: (String, Double, Locale, Double, Double, js.Array[Double]) => Double): Self = StObject.set(x, "previousCharacters", js.Any.fromFunction6(value))
+    inline def setPreviousCharacters(value: (String, Double, Locale, Double, Double, js.Array[Double]) => Double): Self = StObject.set(x, "previousCharacters", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setPreviousScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "previousScript", js.Any.fromFunction3(value))
+    inline def setPreviousScript(value: (String, Double, Double) => Double): Self = StObject.set(x, "previousScript", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPreviousWord(value: (String, Double, Locale, Double) => Boundary): Self = StObject.set(x, "previousWord", js.Any.fromFunction4(value))
+    inline def setPreviousWord(value: (String, Double, Locale, Double) => Boundary): Self = StObject.set(x, "previousWord", js.Any.fromFunction4(value))
   }
 }

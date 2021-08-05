@@ -16,32 +16,24 @@ trait NavigationEventPayload extends StObject {
 }
 object NavigationEventPayload {
   
-  @scala.inline
-  def apply(action: NavigationAction, state: NavigationState, `type`: EventType): NavigationEventPayload = {
+  inline def apply(action: NavigationAction, state: NavigationState, `type`: EventType): NavigationEventPayload = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationEventPayload]
   }
   
-  @scala.inline
-  implicit class NavigationEventPayloadMutableBuilder[Self <: NavigationEventPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationEventPayload](x: Self) {
     
-    @scala.inline
-    def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastState(value: NavigationState): Self = StObject.set(x, "lastState", value.asInstanceOf[js.Any])
+    inline def setLastState(value: NavigationState): Self = StObject.set(x, "lastState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStateNull: Self = StObject.set(x, "lastState", null)
+    inline def setLastStateNull: Self = StObject.set(x, "lastState", null)
     
-    @scala.inline
-    def setLastStateUndefined: Self = StObject.set(x, "lastState", js.undefined)
+    inline def setLastStateUndefined: Self = StObject.set(x, "lastState", js.undefined)
     
-    @scala.inline
-    def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

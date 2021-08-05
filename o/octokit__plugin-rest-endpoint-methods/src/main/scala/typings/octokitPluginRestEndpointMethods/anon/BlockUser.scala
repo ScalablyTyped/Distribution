@@ -696,8 +696,7 @@ trait BlockUser extends StObject {
 }
 object BlockUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockUser: `232`,
     checkBlockedUser: `233`,
     checkMembershipForUser: `234`,
@@ -738,112 +737,76 @@ object BlockUser {
     __obj.asInstanceOf[BlockUser]
   }
   
-  @scala.inline
-  implicit class BlockUserMutableBuilder[Self <: BlockUser] (val x: Self) extends AnyVal {
+  extension [Self <: BlockUser](x: Self) {
     
-    @scala.inline
-    def setBlockUser(value: `232`): Self = StObject.set(x, "blockUser", value.asInstanceOf[js.Any])
+    inline def setBlockUser(value: `232`): Self = StObject.set(x, "blockUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckBlockedUser(value: `233`): Self = StObject.set(x, "checkBlockedUser", value.asInstanceOf[js.Any])
+    inline def setCheckBlockedUser(value: `233`): Self = StObject.set(x, "checkBlockedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckMembershipForUser(value: `234`): Self = StObject.set(x, "checkMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setCheckMembershipForUser(value: `234`): Self = StObject.set(x, "checkMembershipForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckPublicMembershipForUser(value: `235`): Self = StObject.set(x, "checkPublicMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setCheckPublicMembershipForUser(value: `235`): Self = StObject.set(x, "checkPublicMembershipForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertMemberToOutsideCollaborator(value: `236`): Self = StObject.set(x, "convertMemberToOutsideCollaborator", value.asInstanceOf[js.Any])
+    inline def setConvertMemberToOutsideCollaborator(value: `236`): Self = StObject.set(x, "convertMemberToOutsideCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateInvitation(value: `237`): Self = StObject.set(x, "createInvitation", value.asInstanceOf[js.Any])
+    inline def setCreateInvitation(value: `237`): Self = StObject.set(x, "createInvitation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateWebhook(value: `238`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
+    inline def setCreateWebhook(value: `238`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteWebhook(value: `239`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
+    inline def setDeleteWebhook(value: `239`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: `240`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `240`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMembershipForAuthenticatedUser(value: `241`): Self = StObject.set(x, "getMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForAuthenticatedUser(value: `241`): Self = StObject.set(x, "getMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMembershipForUser(value: `242`): Self = StObject.set(x, "getMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForUser(value: `242`): Self = StObject.set(x, "getMembershipForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWebhook(value: `243`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
+    inline def setGetWebhook(value: `243`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: `244`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `244`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAppInstallations(value: `245`): Self = StObject.set(x, "listAppInstallations", value.asInstanceOf[js.Any])
+    inline def setListAppInstallations(value: `245`): Self = StObject.set(x, "listAppInstallations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListBlockedUsers(value: `246`): Self = StObject.set(x, "listBlockedUsers", value.asInstanceOf[js.Any])
+    inline def setListBlockedUsers(value: `246`): Self = StObject.set(x, "listBlockedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForAuthenticatedUser(value: `247`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `247`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForUser(value: `248`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `248`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInvitationTeams(value: `249`): Self = StObject.set(x, "listInvitationTeams", value.asInstanceOf[js.Any])
+    inline def setListInvitationTeams(value: `249`): Self = StObject.set(x, "listInvitationTeams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListMembers(value: `250`): Self = StObject.set(x, "listMembers", value.asInstanceOf[js.Any])
+    inline def setListMembers(value: `250`): Self = StObject.set(x, "listMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListMembershipsForAuthenticatedUser(value: `251`): Self = StObject.set(x, "listMembershipsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListMembershipsForAuthenticatedUser(value: `251`): Self = StObject.set(x, "listMembershipsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListOutsideCollaborators(value: `252`): Self = StObject.set(x, "listOutsideCollaborators", value.asInstanceOf[js.Any])
+    inline def setListOutsideCollaborators(value: `252`): Self = StObject.set(x, "listOutsideCollaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPendingInvitations(value: `253`): Self = StObject.set(x, "listPendingInvitations", value.asInstanceOf[js.Any])
+    inline def setListPendingInvitations(value: `253`): Self = StObject.set(x, "listPendingInvitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPublicMembers(value: `254`): Self = StObject.set(x, "listPublicMembers", value.asInstanceOf[js.Any])
+    inline def setListPublicMembers(value: `254`): Self = StObject.set(x, "listPublicMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListWebhooks(value: `255`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
+    inline def setListWebhooks(value: `255`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPingWebhook(value: `256`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
+    inline def setPingWebhook(value: `256`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMember(value: `257`): Self = StObject.set(x, "removeMember", value.asInstanceOf[js.Any])
+    inline def setRemoveMember(value: `257`): Self = StObject.set(x, "removeMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMembershipForUser(value: `258`): Self = StObject.set(x, "removeMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setRemoveMembershipForUser(value: `258`): Self = StObject.set(x, "removeMembershipForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveOutsideCollaborator(value: `259`): Self = StObject.set(x, "removeOutsideCollaborator", value.asInstanceOf[js.Any])
+    inline def setRemoveOutsideCollaborator(value: `259`): Self = StObject.set(x, "removeOutsideCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePublicMembershipForAuthenticatedUser(value: `260`): Self = StObject.set(x, "removePublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setRemovePublicMembershipForAuthenticatedUser(value: `260`): Self = StObject.set(x, "removePublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMembershipForUser(value: `261`): Self = StObject.set(x, "setMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setSetMembershipForUser(value: `261`): Self = StObject.set(x, "setMembershipForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPublicMembershipForAuthenticatedUser(value: `262`): Self = StObject.set(x, "setPublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setSetPublicMembershipForAuthenticatedUser(value: `262`): Self = StObject.set(x, "setPublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnblockUser(value: `263`): Self = StObject.set(x, "unblockUser", value.asInstanceOf[js.Any])
+    inline def setUnblockUser(value: `263`): Self = StObject.set(x, "unblockUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: `264`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `264`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMembershipForAuthenticatedUser(value: `265`): Self = StObject.set(x, "updateMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setUpdateMembershipForAuthenticatedUser(value: `265`): Self = StObject.set(x, "updateMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateWebhook(value: `266`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhook(value: `266`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
   }
 }

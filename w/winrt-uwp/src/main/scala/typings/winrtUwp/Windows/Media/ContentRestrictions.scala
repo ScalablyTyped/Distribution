@@ -103,23 +103,18 @@ object ContentRestrictions {
   }
   object ContentRestrictionsBrowsePolicy {
     
-    @scala.inline
-    def apply(geographicRegion: String, maxBrowsableAgeRating: Double, preferredAgeRating: Double): ContentRestrictionsBrowsePolicy = {
+    inline def apply(geographicRegion: String, maxBrowsableAgeRating: Double, preferredAgeRating: Double): ContentRestrictionsBrowsePolicy = {
       val __obj = js.Dynamic.literal(geographicRegion = geographicRegion.asInstanceOf[js.Any], maxBrowsableAgeRating = maxBrowsableAgeRating.asInstanceOf[js.Any], preferredAgeRating = preferredAgeRating.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentRestrictionsBrowsePolicy]
     }
     
-    @scala.inline
-    implicit class ContentRestrictionsBrowsePolicyMutableBuilder[Self <: ContentRestrictionsBrowsePolicy] (val x: Self) extends AnyVal {
+    extension [Self <: ContentRestrictionsBrowsePolicy](x: Self) {
       
-      @scala.inline
-      def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
+      inline def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBrowsableAgeRating(value: Double): Self = StObject.set(x, "maxBrowsableAgeRating", value.asInstanceOf[js.Any])
+      inline def setMaxBrowsableAgeRating(value: Double): Self = StObject.set(x, "maxBrowsableAgeRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredAgeRating(value: Double): Self = StObject.set(x, "preferredAgeRating", value.asInstanceOf[js.Any])
+      inline def setPreferredAgeRating(value: Double): Self = StObject.set(x, "preferredAgeRating", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +138,7 @@ object ContentRestrictions {
   }
   object RatedContentDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       category: RatedContentCategory,
       id: String,
       image: IRandomAccessStreamReference,
@@ -155,23 +149,17 @@ object ContentRestrictions {
       __obj.asInstanceOf[RatedContentDescription]
     }
     
-    @scala.inline
-    implicit class RatedContentDescriptionMutableBuilder[Self <: RatedContentDescription] (val x: Self) extends AnyVal {
+    extension [Self <: RatedContentDescription](x: Self) {
       
-      @scala.inline
-      def setCategory(value: RatedContentCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: RatedContentCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatings(value: IVector[String]): Self = StObject.set(x, "ratings", value.asInstanceOf[js.Any])
+      inline def setRatings(value: IVector[String]): Self = StObject.set(x, "ratings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

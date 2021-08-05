@@ -18,22 +18,17 @@ trait LabelingJobInputConfig extends StObject {
 }
 object LabelingJobInputConfig {
   
-  @scala.inline
-  def apply(DataSource: LabelingJobDataSource): LabelingJobInputConfig = {
+  inline def apply(DataSource: LabelingJobDataSource): LabelingJobInputConfig = {
     val __obj = js.Dynamic.literal(DataSource = DataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobInputConfig]
   }
   
-  @scala.inline
-  implicit class LabelingJobInputConfigMutableBuilder[Self <: LabelingJobInputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobInputConfig](x: Self) {
     
-    @scala.inline
-    def setDataAttributes(value: LabelingJobDataAttributes): Self = StObject.set(x, "DataAttributes", value.asInstanceOf[js.Any])
+    inline def setDataAttributes(value: LabelingJobDataAttributes): Self = StObject.set(x, "DataAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAttributesUndefined: Self = StObject.set(x, "DataAttributes", js.undefined)
+    inline def setDataAttributesUndefined: Self = StObject.set(x, "DataAttributes", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: LabelingJobDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: LabelingJobDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
   }
 }

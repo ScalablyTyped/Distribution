@@ -10,10 +10,8 @@ object useIntervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useInterval(callback: js.Function1[/* stop */ js.Function0[Unit], Unit], delay: Double): ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[ReturnValue]
-  @scala.inline
-  def useInterval(
+  inline def useInterval(callback: js.Function1[/* stop */ js.Function0[Unit], Unit], delay: Double): ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[ReturnValue]
+  inline def useInterval(
     callback: js.Function1[/* stop */ js.Function0[Unit], Unit],
     delay: Double,
     defaultRunning: Boolean

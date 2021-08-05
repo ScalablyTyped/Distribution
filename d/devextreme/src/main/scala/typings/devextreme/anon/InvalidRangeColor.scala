@@ -27,70 +27,49 @@ trait InvalidRangeColor extends StObject {
 }
 object InvalidRangeColor {
   
-  @scala.inline
-  def apply(): InvalidRangeColor = {
+  inline def apply(): InvalidRangeColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvalidRangeColor]
   }
   
-  @scala.inline
-  implicit class InvalidRangeColorMutableBuilder[Self <: InvalidRangeColor] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidRangeColor](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCustomizeText(value: /* scaleValue */ ValueValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    inline def setCustomizeText(value: /* scaleValue */ ValueValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
+    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
-    @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setInvalidRangeColor(value: String): Self = StObject.set(x, "invalidRangeColor", value.asInstanceOf[js.Any])
+    inline def setInvalidRangeColor(value: String): Self = StObject.set(x, "invalidRangeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidRangeColorUndefined: Self = StObject.set(x, "invalidRangeColor", js.undefined)
+    inline def setInvalidRangeColorUndefined: Self = StObject.set(x, "invalidRangeColor", js.undefined)
     
-    @scala.inline
-    def setPaddingLeftRight(value: Double): Self = StObject.set(x, "paddingLeftRight", value.asInstanceOf[js.Any])
+    inline def setPaddingLeftRight(value: Double): Self = StObject.set(x, "paddingLeftRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeftRightUndefined: Self = StObject.set(x, "paddingLeftRight", js.undefined)
+    inline def setPaddingLeftRightUndefined: Self = StObject.set(x, "paddingLeftRight", js.undefined)
     
-    @scala.inline
-    def setPaddingTopBottom(value: Double): Self = StObject.set(x, "paddingTopBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingTopBottom(value: Double): Self = StObject.set(x, "paddingTopBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingTopBottomUndefined: Self = StObject.set(x, "paddingTopBottom", js.undefined)
+    inline def setPaddingTopBottomUndefined: Self = StObject.set(x, "paddingTopBottom", js.undefined)
     
-    @scala.inline
-    def setPlaceholderHeight(value: Double): Self = StObject.set(x, "placeholderHeight", value.asInstanceOf[js.Any])
+    inline def setPlaceholderHeight(value: Double): Self = StObject.set(x, "placeholderHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderHeightUndefined: Self = StObject.set(x, "placeholderHeight", js.undefined)
+    inline def setPlaceholderHeightUndefined: Self = StObject.set(x, "placeholderHeight", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

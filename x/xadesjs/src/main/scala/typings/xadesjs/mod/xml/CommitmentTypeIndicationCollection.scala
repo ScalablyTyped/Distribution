@@ -13,6 +13,5 @@ class CommitmentTypeIndicationCollection ()
   extends typings.xadesjs.xmlMod.CommitmentTypeIndicationCollection
 object CommitmentTypeIndicationCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeIndicationCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommitmentTypeIndicationCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeIndicationCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeIndicationCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommitmentTypeIndicationCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeIndicationCollection]]
 }

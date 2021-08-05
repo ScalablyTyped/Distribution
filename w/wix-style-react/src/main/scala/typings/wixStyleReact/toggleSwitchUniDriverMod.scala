@@ -16,8 +16,7 @@ object toggleSwitchUniDriverMod {
   }
   object ToggleSwitchUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -38,14 +37,11 @@ object toggleSwitchUniDriverMod {
       __obj.asInstanceOf[ToggleSwitchUniDriver]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchUniDriverMutableBuilder[Self <: ToggleSwitchUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSize(value: () => js.Promise[String]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Promise[String]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => js.Promise[String]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => js.Promise[String]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
     }
   }
 }

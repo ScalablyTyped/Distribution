@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def remove(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def remove(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("diacritics", "replacementList")
   @js.native

@@ -29,10 +29,8 @@ object process {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")().asInstanceOf[AnonymousTraversalSource[S]]
-    @scala.inline
-    def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](traversalSourceClass: Newable[S]): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(traversalSourceClass.asInstanceOf[js.Any]).asInstanceOf[AnonymousTraversalSource[S]]
+    inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")().asInstanceOf[AnonymousTraversalSource[S]]
+    inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](traversalSourceClass: Newable[S]): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(traversalSourceClass.asInstanceOf[js.Any]).asInstanceOf[AnonymousTraversalSource[S]]
   }
   
   @JSImport("gremlin", "process.Bytecode")
@@ -357,56 +355,43 @@ object process {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def between(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def between(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def eq_(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("eq")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def eq_(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("eq")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def gt(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def gt(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def gte(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def gte(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def inside(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("inside")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def inside(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("inside")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def lt(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def lt(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def lte(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def lte(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def neq(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("neq")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def neq(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("neq")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def not(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def not(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def outside(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("outside")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def outside(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("outside")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def test(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def test(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def within(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def within(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(args.asInstanceOf[js.Any]).asInstanceOf[P]
     
     /* static member */
-    @scala.inline
-    def without(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("without")(args.asInstanceOf[js.Any]).asInstanceOf[P]
+    inline def without(args: js.Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("without")(args.asInstanceOf[js.Any]).asInstanceOf[P]
   }
   
   @JSImport("gremlin", "process.TextP")
@@ -428,28 +413,22 @@ object process {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def containing(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("containing")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
+    inline def containing(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("containing")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
     
     /* static member */
-    @scala.inline
-    def endingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("endingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
+    inline def endingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("endingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
     
     /* static member */
-    @scala.inline
-    def notContaining(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notContaining")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
+    inline def notContaining(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notContaining")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
     
     /* static member */
-    @scala.inline
-    def notEndingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notEndingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
+    inline def notEndingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notEndingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
     
     /* static member */
-    @scala.inline
-    def notStartingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notStartingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
+    inline def notStartingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notStartingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
     
     /* static member */
-    @scala.inline
-    def startingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("startingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
+    inline def startingWith(args: js.Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("startingWith")(args.asInstanceOf[js.Any]).asInstanceOf[TextP]
   }
   
   @JSImport("gremlin", "process.Translator")
@@ -523,8 +502,7 @@ object process {
     @JSImport("gremlin", "process.barrier.normsack")
     @js.native
     def normsack: EnumValue = js.native
-    @scala.inline
-    def normsack_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normsack")(x.asInstanceOf[js.Any])
+    inline def normsack_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normsack")(x.asInstanceOf[js.Any])
   }
   
   object cardinality {
@@ -536,20 +514,17 @@ object process {
     @JSImport("gremlin", "process.cardinality.list")
     @js.native
     def list: EnumValue = js.native
-    @scala.inline
-    def list_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("list")(x.asInstanceOf[js.Any])
+    inline def list_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("list")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.cardinality.set")
     @js.native
     def set: EnumValue = js.native
-    @scala.inline
-    def set_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
+    inline def set_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.cardinality.single")
     @js.native
     def single: EnumValue = js.native
-    @scala.inline
-    def single_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("single")(x.asInstanceOf[js.Any])
+    inline def single_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("single")(x.asInstanceOf[js.Any])
   }
   
   object column {
@@ -561,14 +536,12 @@ object process {
     @JSImport("gremlin", "process.column.keys")
     @js.native
     def keys: EnumValue = js.native
-    @scala.inline
-    def keys_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keys")(x.asInstanceOf[js.Any])
+    inline def keys_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keys")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.column.values")
     @js.native
     def values: EnumValue = js.native
-    @scala.inline
-    def values_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
+    inline def values_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
   }
   
   object direction {
@@ -580,20 +553,17 @@ object process {
     @JSImport("gremlin", "process.direction.both")
     @js.native
     def both: EnumValue = js.native
-    @scala.inline
-    def both_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("both")(x.asInstanceOf[js.Any])
+    inline def both_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("both")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.direction.in")
     @js.native
     def in: EnumValue = js.native
-    @scala.inline
-    def in_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("in")(x.asInstanceOf[js.Any])
+    inline def in_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("in")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.direction.out")
     @js.native
     def out: EnumValue = js.native
-    @scala.inline
-    def out_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("out")(x.asInstanceOf[js.Any])
+    inline def out_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("out")(x.asInstanceOf[js.Any])
   }
   
   object graphSONVersion {
@@ -606,22 +576,19 @@ object process {
     @js.native
     def v10: EnumValue = js.native
     
-    @scala.inline
-    def v10_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1_0")(x.asInstanceOf[js.Any])
+    inline def v10_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1_0")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.graphSONVersion.v2_0")
     @js.native
     def v20: EnumValue = js.native
     
-    @scala.inline
-    def v20_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2_0")(x.asInstanceOf[js.Any])
+    inline def v20_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2_0")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.graphSONVersion.v3_0")
     @js.native
     def v30: EnumValue = js.native
     
-    @scala.inline
-    def v30_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3_0")(x.asInstanceOf[js.Any])
+    inline def v30_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3_0")(x.asInstanceOf[js.Any])
   }
   
   object gryoVersion {
@@ -634,15 +601,13 @@ object process {
     @js.native
     def v10: EnumValue = js.native
     
-    @scala.inline
-    def v10_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1_0")(x.asInstanceOf[js.Any])
+    inline def v10_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1_0")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.gryoVersion.v3_0")
     @js.native
     def v30: EnumValue = js.native
     
-    @scala.inline
-    def v30_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3_0")(x.asInstanceOf[js.Any])
+    inline def v30_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3_0")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("gremlin", "process.operator")
@@ -658,32 +623,27 @@ object process {
     @JSImport("gremlin", "process.order.asc")
     @js.native
     def asc: EnumValue = js.native
-    @scala.inline
-    def asc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asc")(x.asInstanceOf[js.Any])
+    inline def asc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asc")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.order.decr")
     @js.native
     def decr: EnumValue = js.native
-    @scala.inline
-    def decr_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decr")(x.asInstanceOf[js.Any])
+    inline def decr_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decr")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.order.desc")
     @js.native
     def desc: EnumValue = js.native
-    @scala.inline
-    def desc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desc")(x.asInstanceOf[js.Any])
+    inline def desc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desc")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.order.incr")
     @js.native
     def incr: EnumValue = js.native
-    @scala.inline
-    def incr_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incr")(x.asInstanceOf[js.Any])
+    inline def incr_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incr")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.order.shuffle")
     @js.native
     def shuffle: EnumValue = js.native
-    @scala.inline
-    def shuffle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shuffle")(x.asInstanceOf[js.Any])
+    inline def shuffle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shuffle")(x.asInstanceOf[js.Any])
   }
   
   object pick {
@@ -695,14 +655,12 @@ object process {
     @JSImport("gremlin", "process.pick.any")
     @js.native
     def any: EnumValue = js.native
-    @scala.inline
-    def any_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
+    inline def any_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.pick.none")
     @js.native
     def none: EnumValue = js.native
-    @scala.inline
-    def none_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   }
   
   object pop {
@@ -714,26 +672,22 @@ object process {
     @JSImport("gremlin", "process.pop.all")
     @js.native
     def all: EnumValue = js.native
-    @scala.inline
-    def all_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
+    inline def all_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.pop.first")
     @js.native
     def first: EnumValue = js.native
-    @scala.inline
-    def first_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("first")(x.asInstanceOf[js.Any])
+    inline def first_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("first")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.pop.last")
     @js.native
     def last: EnumValue = js.native
-    @scala.inline
-    def last_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("last")(x.asInstanceOf[js.Any])
+    inline def last_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("last")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.pop.mixed")
     @js.native
     def mixed: EnumValue = js.native
-    @scala.inline
-    def mixed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
+    inline def mixed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
   }
   
   object scope {
@@ -745,14 +699,12 @@ object process {
     @JSImport("gremlin", "process.scope.global")
     @js.native
     def global: EnumValue = js.native
-    @scala.inline
-    def global_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
+    inline def global_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.scope.local")
     @js.native
     def local: EnumValue = js.native
-    @scala.inline
-    def local_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
+    inline def local_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("gremlin", "process.statics")
@@ -768,32 +720,26 @@ object process {
     @JSImport("gremlin", "process.t.id")
     @js.native
     def id: EnumValue = js.native
-    @scala.inline
-    def id_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.t.key")
     @js.native
     def key: EnumValue = js.native
-    @scala.inline
-    def key_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("key")(x.asInstanceOf[js.Any])
+    inline def key_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("key")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.t.label")
     @js.native
     def label: EnumValue = js.native
-    @scala.inline
-    def label_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("gremlin", "process.t.value")
     @js.native
     def value: EnumValue = js.native
-    @scala.inline
-    def value_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    inline def value_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")().asInstanceOf[AnonymousTraversalSource[S]]
-  @scala.inline
-  def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](traversalSourceClass: Newable[S]): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(traversalSourceClass.asInstanceOf[js.Any]).asInstanceOf[AnonymousTraversalSource[S]]
+  inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")().asInstanceOf[AnonymousTraversalSource[S]]
+  inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](traversalSourceClass: Newable[S]): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(traversalSourceClass.asInstanceOf[js.Any]).asInstanceOf[AnonymousTraversalSource[S]]
   
   @JSImport("gremlin", "process.withOptions")
   @js.native
@@ -825,8 +771,7 @@ object process {
   }
   object Operator_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addall: EnumValue,
       and: EnumValue,
       assign: EnumValue,
@@ -843,41 +788,29 @@ object process {
       __obj.asInstanceOf[Operator_]
     }
     
-    @scala.inline
-    implicit class Operator_MutableBuilder[Self <: Operator_] (val x: Self) extends AnyVal {
+    extension [Self <: Operator_](x: Self) {
       
-      @scala.inline
-      def setAddall(value: EnumValue): Self = StObject.set(x, "addall", value.asInstanceOf[js.Any])
+      inline def setAddall(value: EnumValue): Self = StObject.set(x, "addall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnd(value: EnumValue): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      inline def setAnd(value: EnumValue): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssign(value: EnumValue): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
+      inline def setAssign(value: EnumValue): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiv(value: EnumValue): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+      inline def setDiv(value: EnumValue): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: EnumValue): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: EnumValue): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: EnumValue): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: EnumValue): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinus(value: EnumValue): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
+      inline def setMinus(value: EnumValue): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMult(value: EnumValue): Self = StObject.set(x, "mult", value.asInstanceOf[js.Any])
+      inline def setMult(value: EnumValue): Self = StObject.set(x, "mult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOr(value: EnumValue): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+      inline def setOr(value: EnumValue): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSum(value: EnumValue): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+      inline def setSum(value: EnumValue): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSumlong(value: EnumValue): Self = StObject.set(x, "sumlong", value.asInstanceOf[js.Any])
+      inline def setSumlong(value: EnumValue): Self = StObject.set(x, "sumlong", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1065,8 +998,7 @@ object process {
   }
   object Statics_ {
     
-    @scala.inline
-    def apply[T /* <: GraphTraversal */](
+    inline def apply[T /* <: GraphTraversal */](
       V: /* repeated */ js.Any => T,
       addE: /* repeated */ js.Any => T,
       addV: /* repeated */ js.Any => T,
@@ -1163,278 +1095,187 @@ object process {
       __obj.asInstanceOf[Statics_[T]]
     }
     
-    @scala.inline
-    implicit class Statics_MutableBuilder[Self <: Statics_[?], T /* <: GraphTraversal */] (val x: Self & Statics_[T]) extends AnyVal {
+    extension [Self <: Statics_[?], T /* <: GraphTraversal */](x: Self & Statics_[T]) {
       
-      @scala.inline
-      def setAddE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "addE", js.Any.fromFunction1(value))
+      inline def setAddE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "addE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "addV", js.Any.fromFunction1(value))
+      inline def setAddV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "addV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAggregate(value: /* repeated */ js.Any => T): Self = StObject.set(x, "aggregate", js.Any.fromFunction1(value))
+      inline def setAggregate(value: /* repeated */ js.Any => T): Self = StObject.set(x, "aggregate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnd(value: /* repeated */ js.Any => T): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: /* repeated */ js.Any => T): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAs(value: /* repeated */ js.Any => T): Self = StObject.set(x, "as", js.Any.fromFunction1(value))
+      inline def setAs(value: /* repeated */ js.Any => T): Self = StObject.set(x, "as", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBarrier(value: /* repeated */ js.Any => T): Self = StObject.set(x, "barrier", js.Any.fromFunction1(value))
+      inline def setBarrier(value: /* repeated */ js.Any => T): Self = StObject.set(x, "barrier", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBoth(value: /* repeated */ js.Any => T): Self = StObject.set(x, "both", js.Any.fromFunction1(value))
+      inline def setBoth(value: /* repeated */ js.Any => T): Self = StObject.set(x, "both", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBothE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "bothE", js.Any.fromFunction1(value))
+      inline def setBothE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "bothE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBothV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "bothV", js.Any.fromFunction1(value))
+      inline def setBothV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "bothV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBranch(value: /* repeated */ js.Any => T): Self = StObject.set(x, "branch", js.Any.fromFunction1(value))
+      inline def setBranch(value: /* repeated */ js.Any => T): Self = StObject.set(x, "branch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "cap", js.Any.fromFunction1(value))
+      inline def setCap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "cap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChoose(value: /* repeated */ js.Any => T): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
+      inline def setChoose(value: /* repeated */ js.Any => T): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoalesce(value: /* repeated */ js.Any => T): Self = StObject.set(x, "coalesce", js.Any.fromFunction1(value))
+      inline def setCoalesce(value: /* repeated */ js.Any => T): Self = StObject.set(x, "coalesce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoin(value: /* repeated */ js.Any => T): Self = StObject.set(x, "coin", js.Any.fromFunction1(value))
+      inline def setCoin(value: /* repeated */ js.Any => T): Self = StObject.set(x, "coin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConstant(value: /* repeated */ js.Any => T): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
+      inline def setConstant(value: /* repeated */ js.Any => T): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCount(value: /* repeated */ js.Any => T): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
+      inline def setCount(value: /* repeated */ js.Any => T): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCyclicPath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "cyclicPath", js.Any.fromFunction1(value))
+      inline def setCyclicPath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "cyclicPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDedup(value: /* repeated */ js.Any => T): Self = StObject.set(x, "dedup", js.Any.fromFunction1(value))
+      inline def setDedup(value: /* repeated */ js.Any => T): Self = StObject.set(x, "dedup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDrop(value: /* repeated */ js.Any => T): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+      inline def setDrop(value: /* repeated */ js.Any => T): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "elementMap", js.Any.fromFunction1(value))
+      inline def setElementMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "elementMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmit(value: /* repeated */ js.Any => T): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: /* repeated */ js.Any => T): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(value: /* repeated */ js.Any => T): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* repeated */ js.Any => T): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFold(value: /* repeated */ js.Any => T): Self = StObject.set(x, "fold", js.Any.fromFunction1(value))
+      inline def setFold(value: /* repeated */ js.Any => T): Self = StObject.set(x, "fold", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroup(value: /* repeated */ js.Any => T): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
+      inline def setGroup(value: /* repeated */ js.Any => T): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroupCount(value: /* repeated */ js.Any => T): Self = StObject.set(x, "groupCount", js.Any.fromFunction1(value))
+      inline def setGroupCount(value: /* repeated */ js.Any => T): Self = StObject.set(x, "groupCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: /* repeated */ js.Any => T): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: /* repeated */ js.Any => T): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasId(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasId", js.Any.fromFunction1(value))
+      inline def setHasId(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasKey(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasLabel(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasLabel", js.Any.fromFunction1(value))
+      inline def setHasLabel(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasNot(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasNot", js.Any.fromFunction1(value))
+      inline def setHasNot(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasNot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasValue(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
+      inline def setHasValue(value: /* repeated */ js.Any => T): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setId(value: /* repeated */ js.Any => T): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
+      inline def setId(value: /* repeated */ js.Any => T): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdentity(value: /* repeated */ js.Any => T): Self = StObject.set(x, "identity", js.Any.fromFunction1(value))
+      inline def setIdentity(value: /* repeated */ js.Any => T): Self = StObject.set(x, "identity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "inE", js.Any.fromFunction1(value))
+      inline def setInE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "inE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "inV", js.Any.fromFunction1(value))
+      inline def setInV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "inV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIn_(value: /* repeated */ js.Any => T): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
+      inline def setIn_(value: /* repeated */ js.Any => T): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndex(value: /* repeated */ js.Any => T): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
+      inline def setIndex(value: /* repeated */ js.Any => T): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInject(value: /* repeated */ js.Any => T): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
+      inline def setInject(value: /* repeated */ js.Any => T): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIs(value: /* repeated */ js.Any => T): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+      inline def setIs(value: /* repeated */ js.Any => T): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKey(value: /* repeated */ js.Any => T): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKey(value: /* repeated */ js.Any => T): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabel(value: /* repeated */ js.Any => T): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+      inline def setLabel(value: /* repeated */ js.Any => T): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLimit(value: /* repeated */ js.Any => T): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+      inline def setLimit(value: /* repeated */ js.Any => T): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocal(value: /* repeated */ js.Any => T): Self = StObject.set(x, "local", js.Any.fromFunction1(value))
+      inline def setLocal(value: /* repeated */ js.Any => T): Self = StObject.set(x, "local", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoops(value: /* repeated */ js.Any => T): Self = StObject.set(x, "loops", js.Any.fromFunction1(value))
+      inline def setLoops(value: /* repeated */ js.Any => T): Self = StObject.set(x, "loops", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatch(value: /* repeated */ js.Any => T): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: /* repeated */ js.Any => T): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "math", js.Any.fromFunction1(value))
+      inline def setMath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "math", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMax(value: /* repeated */ js.Any => T): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+      inline def setMax(value: /* repeated */ js.Any => T): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMean(value: /* repeated */ js.Any => T): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
+      inline def setMean(value: /* repeated */ js.Any => T): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMin(value: /* repeated */ js.Any => T): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+      inline def setMin(value: /* repeated */ js.Any => T): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNot(value: /* repeated */ js.Any => T): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
+      inline def setNot(value: /* repeated */ js.Any => T): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptional(value: /* repeated */ js.Any => T): Self = StObject.set(x, "optional", js.Any.fromFunction1(value))
+      inline def setOptional(value: /* repeated */ js.Any => T): Self = StObject.set(x, "optional", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOr(value: /* repeated */ js.Any => T): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+      inline def setOr(value: /* repeated */ js.Any => T): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrder(value: /* repeated */ js.Any => T): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
+      inline def setOrder(value: /* repeated */ js.Any => T): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOtherV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "otherV", js.Any.fromFunction1(value))
+      inline def setOtherV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "otherV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOut(value: /* repeated */ js.Any => T): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
+      inline def setOut(value: /* repeated */ js.Any => T): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "outE", js.Any.fromFunction1(value))
+      inline def setOutE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "outE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "outV", js.Any.fromFunction1(value))
+      inline def setOutV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "outV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProject(value: /* repeated */ js.Any => T): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
+      inline def setProject(value: /* repeated */ js.Any => T): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProperties(value: /* repeated */ js.Any => T): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
+      inline def setProperties(value: /* repeated */ js.Any => T): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProperty(value: /* repeated */ js.Any => T): Self = StObject.set(x, "property", js.Any.fromFunction1(value))
+      inline def setProperty(value: /* repeated */ js.Any => T): Self = StObject.set(x, "property", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPropertyMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "propertyMap", js.Any.fromFunction1(value))
+      inline def setPropertyMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "propertyMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRange(value: /* repeated */ js.Any => T): Self = StObject.set(x, "range", js.Any.fromFunction1(value))
+      inline def setRange(value: /* repeated */ js.Any => T): Self = StObject.set(x, "range", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRepeat(value: /* repeated */ js.Any => T): Self = StObject.set(x, "repeat", js.Any.fromFunction1(value))
+      inline def setRepeat(value: /* repeated */ js.Any => T): Self = StObject.set(x, "repeat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSack(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sack", js.Any.fromFunction1(value))
+      inline def setSack(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSample(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
+      inline def setSample(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelect(value: /* repeated */ js.Any => T): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* repeated */ js.Any => T): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSideEffect(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sideEffect", js.Any.fromFunction1(value))
+      inline def setSideEffect(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sideEffect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSimplePath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "simplePath", js.Any.fromFunction1(value))
+      inline def setSimplePath(value: /* repeated */ js.Any => T): Self = StObject.set(x, "simplePath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkip(value: /* repeated */ js.Any => T): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: /* repeated */ js.Any => T): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStore(value: /* repeated */ js.Any => T): Self = StObject.set(x, "store", js.Any.fromFunction1(value))
+      inline def setStore(value: /* repeated */ js.Any => T): Self = StObject.set(x, "store", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubgraph(value: /* repeated */ js.Any => T): Self = StObject.set(x, "subgraph", js.Any.fromFunction1(value))
+      inline def setSubgraph(value: /* repeated */ js.Any => T): Self = StObject.set(x, "subgraph", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSum(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
+      inline def setSum(value: /* repeated */ js.Any => T): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTail(value: /* repeated */ js.Any => T): Self = StObject.set(x, "tail", js.Any.fromFunction1(value))
+      inline def setTail(value: /* repeated */ js.Any => T): Self = StObject.set(x, "tail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeLimit(value: /* repeated */ js.Any => T): Self = StObject.set(x, "timeLimit", js.Any.fromFunction1(value))
+      inline def setTimeLimit(value: /* repeated */ js.Any => T): Self = StObject.set(x, "timeLimit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimes(value: /* repeated */ js.Any => T): Self = StObject.set(x, "times", js.Any.fromFunction1(value))
+      inline def setTimes(value: /* repeated */ js.Any => T): Self = StObject.set(x, "times", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTo(value: /* repeated */ js.Any => T): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+      inline def setTo(value: /* repeated */ js.Any => T): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "toE", js.Any.fromFunction1(value))
+      inline def setToE(value: /* repeated */ js.Any => T): Self = StObject.set(x, "toE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "toV", js.Any.fromFunction1(value))
+      inline def setToV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "toV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTree(value: /* repeated */ js.Any => T): Self = StObject.set(x, "tree", js.Any.fromFunction1(value))
+      inline def setTree(value: /* repeated */ js.Any => T): Self = StObject.set(x, "tree", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnfold(value: /* repeated */ js.Any => T): Self = StObject.set(x, "unfold", js.Any.fromFunction1(value))
+      inline def setUnfold(value: /* repeated */ js.Any => T): Self = StObject.set(x, "unfold", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnion(value: /* repeated */ js.Any => T): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+      inline def setUnion(value: /* repeated */ js.Any => T): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUntil(value: /* repeated */ js.Any => T): Self = StObject.set(x, "until", js.Any.fromFunction1(value))
+      inline def setUntil(value: /* repeated */ js.Any => T): Self = StObject.set(x, "until", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "V", js.Any.fromFunction1(value))
+      inline def setV(value: /* repeated */ js.Any => T): Self = StObject.set(x, "V", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: /* repeated */ js.Any => T): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: /* repeated */ js.Any => T): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "valueMap", js.Any.fromFunction1(value))
+      inline def setValueMap(value: /* repeated */ js.Any => T): Self = StObject.set(x, "valueMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValues(value: /* repeated */ js.Any => T): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
+      inline def setValues(value: /* repeated */ js.Any => T): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhere(value: /* repeated */ js.Any => T): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
+      inline def setWhere(value: /* repeated */ js.Any => T): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
     }
   }
   
@@ -1462,8 +1303,7 @@ object process {
   }
   object WithOptions_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: Double,
       ids: Double,
       indexer: String,
@@ -1479,38 +1319,27 @@ object process {
       __obj.asInstanceOf[WithOptions_]
     }
     
-    @scala.inline
-    implicit class WithOptions_MutableBuilder[Self <: WithOptions_] (val x: Self) extends AnyVal {
+    extension [Self <: WithOptions_](x: Self) {
       
-      @scala.inline
-      def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: Double): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: Double): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexer(value: String): Self = StObject.set(x, "indexer", value.asInstanceOf[js.Any])
+      inline def setIndexer(value: String): Self = StObject.set(x, "indexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: Double): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Double): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: Double): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Double): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: Double): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: Double): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: Double): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Double): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+      inline def setNone(value: Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: String): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: String): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Double): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Double): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
 }

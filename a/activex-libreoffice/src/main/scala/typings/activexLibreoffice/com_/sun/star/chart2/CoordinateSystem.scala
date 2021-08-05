@@ -18,8 +18,7 @@ trait CoordinateSystem
 }
 object CoordinateSystem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChartTypes: SafeArray[XChartType],
     CoordinateSystemType: String,
     Dimension: Double,
@@ -44,10 +43,8 @@ object CoordinateSystem {
     __obj.asInstanceOf[CoordinateSystem]
   }
   
-  @scala.inline
-  implicit class CoordinateSystemMutableBuilder[Self <: CoordinateSystem] (val x: Self) extends AnyVal {
+  extension [Self <: CoordinateSystem](x: Self) {
     
-    @scala.inline
-    def setSwapXAndYAxis(value: Boolean): Self = StObject.set(x, "SwapXAndYAxis", value.asInstanceOf[js.Any])
+    inline def setSwapXAndYAxis(value: Boolean): Self = StObject.set(x, "SwapXAndYAxis", value.asInstanceOf[js.Any])
   }
 }

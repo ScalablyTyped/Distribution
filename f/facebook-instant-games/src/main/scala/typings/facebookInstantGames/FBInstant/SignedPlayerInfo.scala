@@ -43,19 +43,15 @@ trait SignedPlayerInfo extends StObject {
 }
 object SignedPlayerInfo {
   
-  @scala.inline
-  def apply(getPlayerID: () => String, getSignature: () => String): SignedPlayerInfo = {
+  inline def apply(getPlayerID: () => String, getSignature: () => String): SignedPlayerInfo = {
     val __obj = js.Dynamic.literal(getPlayerID = js.Any.fromFunction0(getPlayerID), getSignature = js.Any.fromFunction0(getSignature))
     __obj.asInstanceOf[SignedPlayerInfo]
   }
   
-  @scala.inline
-  implicit class SignedPlayerInfoMutableBuilder[Self <: SignedPlayerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SignedPlayerInfo](x: Self) {
     
-    @scala.inline
-    def setGetPlayerID(value: () => String): Self = StObject.set(x, "getPlayerID", js.Any.fromFunction0(value))
+    inline def setGetPlayerID(value: () => String): Self = StObject.set(x, "getPlayerID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSignature(value: () => String): Self = StObject.set(x, "getSignature", js.Any.fromFunction0(value))
+    inline def setGetSignature(value: () => String): Self = StObject.set(x, "getSignature", js.Any.fromFunction0(value))
   }
 }

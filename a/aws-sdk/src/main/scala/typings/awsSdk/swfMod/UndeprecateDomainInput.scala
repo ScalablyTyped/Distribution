@@ -13,16 +13,13 @@ trait UndeprecateDomainInput extends StObject {
 }
 object UndeprecateDomainInput {
   
-  @scala.inline
-  def apply(name: DomainName): UndeprecateDomainInput = {
+  inline def apply(name: DomainName): UndeprecateDomainInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndeprecateDomainInput]
   }
   
-  @scala.inline
-  implicit class UndeprecateDomainInputMutableBuilder[Self <: UndeprecateDomainInput] (val x: Self) extends AnyVal {
+  extension [Self <: UndeprecateDomainInput](x: Self) {
     
-    @scala.inline
-    def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

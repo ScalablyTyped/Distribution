@@ -41,7 +41,7 @@ class IonDatetime protected ()
   /* CompleteClass */
   var doneText: String = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionBlur: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -69,5 +69,5 @@ class IonDatetime protected ()
   /* CompleteClass */
   var readonly: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

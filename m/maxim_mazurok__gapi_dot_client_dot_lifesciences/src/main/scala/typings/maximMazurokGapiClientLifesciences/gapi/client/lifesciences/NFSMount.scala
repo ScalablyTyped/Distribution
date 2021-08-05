@@ -11,19 +11,15 @@ trait NFSMount extends StObject {
 }
 object NFSMount {
   
-  @scala.inline
-  def apply(): NFSMount = {
+  inline def apply(): NFSMount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NFSMount]
   }
   
-  @scala.inline
-  implicit class NFSMountMutableBuilder[Self <: NFSMount] (val x: Self) extends AnyVal {
+  extension [Self <: NFSMount](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

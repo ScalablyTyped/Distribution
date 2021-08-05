@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.RangeException")
 @js.native
-class RangeException protected ()
+/* private */ class RangeException ()
   extends StObject
      with typings.activexMshtml.MSHTML.RangeException {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.RangeException_typekey")
   var MSHTMLDotRangeException_typekey: typings.activexMshtml.MSHTML.RangeException = js.native
   

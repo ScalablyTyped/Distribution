@@ -40,112 +40,77 @@ trait GetStatusOutput extends StObject {
 }
 object GetStatusOutput {
   
-  @scala.inline
-  def apply(): GetStatusOutput = {
+  inline def apply(): GetStatusOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStatusOutput]
   }
   
-  @scala.inline
-  implicit class GetStatusOutputMutableBuilder[Self <: GetStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetStatusOutput](x: Self) {
     
-    @scala.inline
-    def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
+    inline def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
+    inline def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
     
-    @scala.inline
-    def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
+    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
     
-    @scala.inline
-    def setCarrier(value: Carrier): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: Carrier): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setCurrentManifest(value: CurrentManifest): Self = StObject.set(x, "CurrentManifest", value.asInstanceOf[js.Any])
+    inline def setCurrentManifest(value: CurrentManifest): Self = StObject.set(x, "CurrentManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentManifestUndefined: Self = StObject.set(x, "CurrentManifest", js.undefined)
+    inline def setCurrentManifestUndefined: Self = StObject.set(x, "CurrentManifest", js.undefined)
     
-    @scala.inline
-    def setErrorCount(value: ErrorCount): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: ErrorCount): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "ErrorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "ErrorCount", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
+    inline def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
+    inline def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
     
-    @scala.inline
-    def setLocationCode(value: LocationCode): Self = StObject.set(x, "LocationCode", value.asInstanceOf[js.Any])
+    inline def setLocationCode(value: LocationCode): Self = StObject.set(x, "LocationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationCodeUndefined: Self = StObject.set(x, "LocationCode", js.undefined)
+    inline def setLocationCodeUndefined: Self = StObject.set(x, "LocationCode", js.undefined)
     
-    @scala.inline
-    def setLocationMessage(value: LocationMessage): Self = StObject.set(x, "LocationMessage", value.asInstanceOf[js.Any])
+    inline def setLocationMessage(value: LocationMessage): Self = StObject.set(x, "LocationMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationMessageUndefined: Self = StObject.set(x, "LocationMessage", js.undefined)
+    inline def setLocationMessageUndefined: Self = StObject.set(x, "LocationMessage", js.undefined)
     
-    @scala.inline
-    def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
+    inline def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogBucketUndefined: Self = StObject.set(x, "LogBucket", js.undefined)
+    inline def setLogBucketUndefined: Self = StObject.set(x, "LogBucket", js.undefined)
     
-    @scala.inline
-    def setLogKey(value: LogKey): Self = StObject.set(x, "LogKey", value.asInstanceOf[js.Any])
+    inline def setLogKey(value: LogKey): Self = StObject.set(x, "LogKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogKeyUndefined: Self = StObject.set(x, "LogKey", js.undefined)
+    inline def setLogKeyUndefined: Self = StObject.set(x, "LogKey", js.undefined)
     
-    @scala.inline
-    def setProgressCode(value: ProgressCode): Self = StObject.set(x, "ProgressCode", value.asInstanceOf[js.Any])
+    inline def setProgressCode(value: ProgressCode): Self = StObject.set(x, "ProgressCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressCodeUndefined: Self = StObject.set(x, "ProgressCode", js.undefined)
+    inline def setProgressCodeUndefined: Self = StObject.set(x, "ProgressCode", js.undefined)
     
-    @scala.inline
-    def setProgressMessage(value: ProgressMessage): Self = StObject.set(x, "ProgressMessage", value.asInstanceOf[js.Any])
+    inline def setProgressMessage(value: ProgressMessage): Self = StObject.set(x, "ProgressMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressMessageUndefined: Self = StObject.set(x, "ProgressMessage", js.undefined)
+    inline def setProgressMessageUndefined: Self = StObject.set(x, "ProgressMessage", js.undefined)
     
-    @scala.inline
-    def setSignature(value: Signature): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Signature): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureFileContents(value: Signature): Self = StObject.set(x, "SignatureFileContents", value.asInstanceOf[js.Any])
+    inline def setSignatureFileContents(value: Signature): Self = StObject.set(x, "SignatureFileContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureFileContentsUndefined: Self = StObject.set(x, "SignatureFileContents", js.undefined)
+    inline def setSignatureFileContentsUndefined: Self = StObject.set(x, "SignatureFileContents", js.undefined)
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
     
-    @scala.inline
-    def setTrackingNumber(value: TrackingNumber): Self = StObject.set(x, "TrackingNumber", value.asInstanceOf[js.Any])
+    inline def setTrackingNumber(value: TrackingNumber): Self = StObject.set(x, "TrackingNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingNumberUndefined: Self = StObject.set(x, "TrackingNumber", js.undefined)
+    inline def setTrackingNumberUndefined: Self = StObject.set(x, "TrackingNumber", js.undefined)
   }
 }

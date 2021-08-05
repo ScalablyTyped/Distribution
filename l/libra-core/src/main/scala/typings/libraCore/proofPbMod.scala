@@ -52,11 +52,9 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): AccountStateProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateProof]
+    inline def deserializeBinary(bytes: Uint8Array): AccountStateProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateProof]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: AccountStateProof, reader: BinaryReader): AccountStateProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateProof]
+    inline def deserializeBinaryFromReader(message: AccountStateProof, reader: BinaryReader): AccountStateProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateProof]
     
     @JSImport("libra-core/lib/@/generated/proof_pb", "AccountStateProof.extensions")
     @js.native
@@ -65,17 +63,13 @@ object proofPbMod {
     @JSImport("libra-core/lib/@/generated/proof_pb", "AccountStateProof.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: AccountStateProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: AccountStateProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: AccountStateProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: AccountStateProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -87,32 +81,24 @@ object proofPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): AsObject = {
+      inline def apply(): AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
+        inline def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLedgerInfoToTransactionInfoProofUndefined: Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", js.undefined)
+        inline def setLedgerInfoToTransactionInfoProofUndefined: Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", js.undefined)
         
-        @scala.inline
-        def setTransactionInfo(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
+        inline def setTransactionInfo(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionInfoToAccountProof(value: typings.libraCore.proofPbMod.SparseMerkleProof.AsObject): Self = StObject.set(x, "transactionInfoToAccountProof", value.asInstanceOf[js.Any])
+        inline def setTransactionInfoToAccountProof(value: typings.libraCore.proofPbMod.SparseMerkleProof.AsObject): Self = StObject.set(x, "transactionInfoToAccountProof", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionInfoToAccountProofUndefined: Self = StObject.set(x, "transactionInfoToAccountProof", js.undefined)
+        inline def setTransactionInfoToAccountProofUndefined: Self = StObject.set(x, "transactionInfoToAccountProof", js.undefined)
         
-        @scala.inline
-        def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
+        inline def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
       }
     }
   }
@@ -147,11 +133,9 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): AccumulatorProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccumulatorProof]
+    inline def deserializeBinary(bytes: Uint8Array): AccumulatorProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccumulatorProof]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: AccumulatorProof, reader: BinaryReader): AccumulatorProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccumulatorProof]
+    inline def deserializeBinaryFromReader(message: AccumulatorProof, reader: BinaryReader): AccumulatorProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccumulatorProof]
     
     @JSImport("libra-core/lib/@/generated/proof_pb", "AccumulatorProof.extensions")
     @js.native
@@ -160,17 +144,13 @@ object proofPbMod {
     @JSImport("libra-core/lib/@/generated/proof_pb", "AccumulatorProof.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: AccumulatorProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: AccumulatorProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: AccumulatorProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: AccumulatorProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -180,23 +160,18 @@ object proofPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(bitmap: String, nonDefaultSiblingsList: js.Array[Uint8Array | String]): AsObject = {
+      inline def apply(bitmap: String, nonDefaultSiblingsList: js.Array[Uint8Array | String]): AsObject = {
         val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], nonDefaultSiblingsList = nonDefaultSiblingsList.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setBitmap(value: String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
+        inline def setBitmap(value: String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
+        inline def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonDefaultSiblingsListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value :_*))
+        inline def setNonDefaultSiblingsListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value :_*))
       }
     }
   }
@@ -239,11 +214,9 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): EventProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventProof]
+    inline def deserializeBinary(bytes: Uint8Array): EventProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventProof]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: EventProof, reader: BinaryReader): EventProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EventProof]
+    inline def deserializeBinaryFromReader(message: EventProof, reader: BinaryReader): EventProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EventProof]
     
     @JSImport("libra-core/lib/@/generated/proof_pb", "EventProof.extensions")
     @js.native
@@ -252,17 +225,13 @@ object proofPbMod {
     @JSImport("libra-core/lib/@/generated/proof_pb", "EventProof.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: EventProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: EventProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: EventProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: EventProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -274,32 +243,24 @@ object proofPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): AsObject = {
+      inline def apply(): AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
+        inline def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLedgerInfoToTransactionInfoProofUndefined: Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", js.undefined)
+        inline def setLedgerInfoToTransactionInfoProofUndefined: Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", js.undefined)
         
-        @scala.inline
-        def setTransactionInfo(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
+        inline def setTransactionInfo(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionInfoToEventProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "transactionInfoToEventProof", value.asInstanceOf[js.Any])
+        inline def setTransactionInfoToEventProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "transactionInfoToEventProof", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionInfoToEventProofUndefined: Self = StObject.set(x, "transactionInfoToEventProof", js.undefined)
+        inline def setTransactionInfoToEventProofUndefined: Self = StObject.set(x, "transactionInfoToEventProof", js.undefined)
         
-        @scala.inline
-        def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
+        inline def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
       }
     }
   }
@@ -333,11 +294,9 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): SignedTransactionProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionProof]
+    inline def deserializeBinary(bytes: Uint8Array): SignedTransactionProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionProof]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: SignedTransactionProof, reader: BinaryReader): SignedTransactionProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SignedTransactionProof]
+    inline def deserializeBinaryFromReader(message: SignedTransactionProof, reader: BinaryReader): SignedTransactionProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SignedTransactionProof]
     
     @JSImport("libra-core/lib/@/generated/proof_pb", "SignedTransactionProof.extensions")
     @js.native
@@ -346,17 +305,13 @@ object proofPbMod {
     @JSImport("libra-core/lib/@/generated/proof_pb", "SignedTransactionProof.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: SignedTransactionProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: SignedTransactionProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: SignedTransactionProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: SignedTransactionProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -366,26 +321,20 @@ object proofPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): AsObject = {
+      inline def apply(): AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
+        inline def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLedgerInfoToTransactionInfoProofUndefined: Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", js.undefined)
+        inline def setLedgerInfoToTransactionInfoProofUndefined: Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", js.undefined)
         
-        @scala.inline
-        def setTransactionInfo(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
+        inline def setTransactionInfo(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
+        inline def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
       }
     }
   }
@@ -434,11 +383,9 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): SparseMerkleProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SparseMerkleProof]
+    inline def deserializeBinary(bytes: Uint8Array): SparseMerkleProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SparseMerkleProof]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: SparseMerkleProof, reader: BinaryReader): SparseMerkleProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SparseMerkleProof]
+    inline def deserializeBinaryFromReader(message: SparseMerkleProof, reader: BinaryReader): SparseMerkleProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SparseMerkleProof]
     
     @JSImport("libra-core/lib/@/generated/proof_pb", "SparseMerkleProof.extensions")
     @js.native
@@ -447,17 +394,13 @@ object proofPbMod {
     @JSImport("libra-core/lib/@/generated/proof_pb", "SparseMerkleProof.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: SparseMerkleProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: SparseMerkleProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: SparseMerkleProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: SparseMerkleProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -469,8 +412,7 @@ object proofPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bitmap: Uint8Array | String,
         leaf: Uint8Array | String,
         nonDefaultSiblingsList: js.Array[Uint8Array | String]
@@ -479,20 +421,15 @@ object proofPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setBitmap(value: Uint8Array | String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
+        inline def setBitmap(value: Uint8Array | String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaf(value: Uint8Array | String): Self = StObject.set(x, "leaf", value.asInstanceOf[js.Any])
+        inline def setLeaf(value: Uint8Array | String): Self = StObject.set(x, "leaf", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
+        inline def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonDefaultSiblingsListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value :_*))
+        inline def setNonDefaultSiblingsListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value :_*))
       }
     }
   }

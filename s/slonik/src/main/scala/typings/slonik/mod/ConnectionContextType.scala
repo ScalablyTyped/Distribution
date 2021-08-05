@@ -30,25 +30,19 @@ trait ConnectionContextType extends StObject {
 }
 object ConnectionContextType {
   
-  @scala.inline
-  def apply(connectionId: String, connectionType: ConnectionTypeType, log: LoggerType, poolId: String): ConnectionContextType = {
+  inline def apply(connectionId: String, connectionType: ConnectionTypeType, log: LoggerType, poolId: String): ConnectionContextType = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionContextType]
   }
   
-  @scala.inline
-  implicit class ConnectionContextTypeMutableBuilder[Self <: ConnectionContextType] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionContextType](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionType(value: ConnectionTypeType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    inline def setConnectionType(value: ConnectionTypeType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
   }
 }

@@ -86,170 +86,116 @@ object visitorMod {
     }
     object Handlers {
       
-      @scala.inline
-      def apply(): Handlers = {
+      inline def apply(): Handlers = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Handlers]
       }
       
-      @scala.inline
-      implicit class HandlersMutableBuilder[Self <: Handlers] (val x: Self) extends AnyVal {
+      extension [Self <: Handlers](x: Self) {
         
-        @scala.inline
-        def setOnAlternativeEnter(value: /* node */ Alternative => Unit): Self = StObject.set(x, "onAlternativeEnter", js.Any.fromFunction1(value))
+        inline def setOnAlternativeEnter(value: /* node */ Alternative => Unit): Self = StObject.set(x, "onAlternativeEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnAlternativeEnterUndefined: Self = StObject.set(x, "onAlternativeEnter", js.undefined)
+        inline def setOnAlternativeEnterUndefined: Self = StObject.set(x, "onAlternativeEnter", js.undefined)
         
-        @scala.inline
-        def setOnAlternativeLeave(value: /* node */ Alternative => Unit): Self = StObject.set(x, "onAlternativeLeave", js.Any.fromFunction1(value))
+        inline def setOnAlternativeLeave(value: /* node */ Alternative => Unit): Self = StObject.set(x, "onAlternativeLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnAlternativeLeaveUndefined: Self = StObject.set(x, "onAlternativeLeave", js.undefined)
+        inline def setOnAlternativeLeaveUndefined: Self = StObject.set(x, "onAlternativeLeave", js.undefined)
         
-        @scala.inline
-        def setOnAssertionEnter(value: /* node */ Assertion => Unit): Self = StObject.set(x, "onAssertionEnter", js.Any.fromFunction1(value))
+        inline def setOnAssertionEnter(value: /* node */ Assertion => Unit): Self = StObject.set(x, "onAssertionEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnAssertionEnterUndefined: Self = StObject.set(x, "onAssertionEnter", js.undefined)
+        inline def setOnAssertionEnterUndefined: Self = StObject.set(x, "onAssertionEnter", js.undefined)
         
-        @scala.inline
-        def setOnAssertionLeave(value: /* node */ Assertion => Unit): Self = StObject.set(x, "onAssertionLeave", js.Any.fromFunction1(value))
+        inline def setOnAssertionLeave(value: /* node */ Assertion => Unit): Self = StObject.set(x, "onAssertionLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnAssertionLeaveUndefined: Self = StObject.set(x, "onAssertionLeave", js.undefined)
+        inline def setOnAssertionLeaveUndefined: Self = StObject.set(x, "onAssertionLeave", js.undefined)
         
-        @scala.inline
-        def setOnBackreferenceEnter(value: /* node */ Backreference => Unit): Self = StObject.set(x, "onBackreferenceEnter", js.Any.fromFunction1(value))
+        inline def setOnBackreferenceEnter(value: /* node */ Backreference => Unit): Self = StObject.set(x, "onBackreferenceEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnBackreferenceEnterUndefined: Self = StObject.set(x, "onBackreferenceEnter", js.undefined)
+        inline def setOnBackreferenceEnterUndefined: Self = StObject.set(x, "onBackreferenceEnter", js.undefined)
         
-        @scala.inline
-        def setOnBackreferenceLeave(value: /* node */ Backreference => Unit): Self = StObject.set(x, "onBackreferenceLeave", js.Any.fromFunction1(value))
+        inline def setOnBackreferenceLeave(value: /* node */ Backreference => Unit): Self = StObject.set(x, "onBackreferenceLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnBackreferenceLeaveUndefined: Self = StObject.set(x, "onBackreferenceLeave", js.undefined)
+        inline def setOnBackreferenceLeaveUndefined: Self = StObject.set(x, "onBackreferenceLeave", js.undefined)
         
-        @scala.inline
-        def setOnCapturingGroupEnter(value: /* node */ CapturingGroup => Unit): Self = StObject.set(x, "onCapturingGroupEnter", js.Any.fromFunction1(value))
+        inline def setOnCapturingGroupEnter(value: /* node */ CapturingGroup => Unit): Self = StObject.set(x, "onCapturingGroupEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCapturingGroupEnterUndefined: Self = StObject.set(x, "onCapturingGroupEnter", js.undefined)
+        inline def setOnCapturingGroupEnterUndefined: Self = StObject.set(x, "onCapturingGroupEnter", js.undefined)
         
-        @scala.inline
-        def setOnCapturingGroupLeave(value: /* node */ CapturingGroup => Unit): Self = StObject.set(x, "onCapturingGroupLeave", js.Any.fromFunction1(value))
+        inline def setOnCapturingGroupLeave(value: /* node */ CapturingGroup => Unit): Self = StObject.set(x, "onCapturingGroupLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCapturingGroupLeaveUndefined: Self = StObject.set(x, "onCapturingGroupLeave", js.undefined)
+        inline def setOnCapturingGroupLeaveUndefined: Self = StObject.set(x, "onCapturingGroupLeave", js.undefined)
         
-        @scala.inline
-        def setOnCharacterClassEnter(value: /* node */ CharacterClass => Unit): Self = StObject.set(x, "onCharacterClassEnter", js.Any.fromFunction1(value))
+        inline def setOnCharacterClassEnter(value: /* node */ CharacterClass => Unit): Self = StObject.set(x, "onCharacterClassEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterClassEnterUndefined: Self = StObject.set(x, "onCharacterClassEnter", js.undefined)
+        inline def setOnCharacterClassEnterUndefined: Self = StObject.set(x, "onCharacterClassEnter", js.undefined)
         
-        @scala.inline
-        def setOnCharacterClassLeave(value: /* node */ CharacterClass => Unit): Self = StObject.set(x, "onCharacterClassLeave", js.Any.fromFunction1(value))
+        inline def setOnCharacterClassLeave(value: /* node */ CharacterClass => Unit): Self = StObject.set(x, "onCharacterClassLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterClassLeaveUndefined: Self = StObject.set(x, "onCharacterClassLeave", js.undefined)
+        inline def setOnCharacterClassLeaveUndefined: Self = StObject.set(x, "onCharacterClassLeave", js.undefined)
         
-        @scala.inline
-        def setOnCharacterClassRangeEnter(value: /* node */ CharacterClassRange => Unit): Self = StObject.set(x, "onCharacterClassRangeEnter", js.Any.fromFunction1(value))
+        inline def setOnCharacterClassRangeEnter(value: /* node */ CharacterClassRange => Unit): Self = StObject.set(x, "onCharacterClassRangeEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterClassRangeEnterUndefined: Self = StObject.set(x, "onCharacterClassRangeEnter", js.undefined)
+        inline def setOnCharacterClassRangeEnterUndefined: Self = StObject.set(x, "onCharacterClassRangeEnter", js.undefined)
         
-        @scala.inline
-        def setOnCharacterClassRangeLeave(value: /* node */ CharacterClassRange => Unit): Self = StObject.set(x, "onCharacterClassRangeLeave", js.Any.fromFunction1(value))
+        inline def setOnCharacterClassRangeLeave(value: /* node */ CharacterClassRange => Unit): Self = StObject.set(x, "onCharacterClassRangeLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterClassRangeLeaveUndefined: Self = StObject.set(x, "onCharacterClassRangeLeave", js.undefined)
+        inline def setOnCharacterClassRangeLeaveUndefined: Self = StObject.set(x, "onCharacterClassRangeLeave", js.undefined)
         
-        @scala.inline
-        def setOnCharacterEnter(value: /* node */ Character => Unit): Self = StObject.set(x, "onCharacterEnter", js.Any.fromFunction1(value))
+        inline def setOnCharacterEnter(value: /* node */ Character => Unit): Self = StObject.set(x, "onCharacterEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterEnterUndefined: Self = StObject.set(x, "onCharacterEnter", js.undefined)
+        inline def setOnCharacterEnterUndefined: Self = StObject.set(x, "onCharacterEnter", js.undefined)
         
-        @scala.inline
-        def setOnCharacterLeave(value: /* node */ Character => Unit): Self = StObject.set(x, "onCharacterLeave", js.Any.fromFunction1(value))
+        inline def setOnCharacterLeave(value: /* node */ Character => Unit): Self = StObject.set(x, "onCharacterLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterLeaveUndefined: Self = StObject.set(x, "onCharacterLeave", js.undefined)
+        inline def setOnCharacterLeaveUndefined: Self = StObject.set(x, "onCharacterLeave", js.undefined)
         
-        @scala.inline
-        def setOnCharacterSetEnter(value: /* node */ CharacterSet => Unit): Self = StObject.set(x, "onCharacterSetEnter", js.Any.fromFunction1(value))
+        inline def setOnCharacterSetEnter(value: /* node */ CharacterSet => Unit): Self = StObject.set(x, "onCharacterSetEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterSetEnterUndefined: Self = StObject.set(x, "onCharacterSetEnter", js.undefined)
+        inline def setOnCharacterSetEnterUndefined: Self = StObject.set(x, "onCharacterSetEnter", js.undefined)
         
-        @scala.inline
-        def setOnCharacterSetLeave(value: /* node */ CharacterSet => Unit): Self = StObject.set(x, "onCharacterSetLeave", js.Any.fromFunction1(value))
+        inline def setOnCharacterSetLeave(value: /* node */ CharacterSet => Unit): Self = StObject.set(x, "onCharacterSetLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnCharacterSetLeaveUndefined: Self = StObject.set(x, "onCharacterSetLeave", js.undefined)
+        inline def setOnCharacterSetLeaveUndefined: Self = StObject.set(x, "onCharacterSetLeave", js.undefined)
         
-        @scala.inline
-        def setOnFlagsEnter(value: /* node */ Flags => Unit): Self = StObject.set(x, "onFlagsEnter", js.Any.fromFunction1(value))
+        inline def setOnFlagsEnter(value: /* node */ Flags => Unit): Self = StObject.set(x, "onFlagsEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFlagsEnterUndefined: Self = StObject.set(x, "onFlagsEnter", js.undefined)
+        inline def setOnFlagsEnterUndefined: Self = StObject.set(x, "onFlagsEnter", js.undefined)
         
-        @scala.inline
-        def setOnFlagsLeave(value: /* node */ Flags => Unit): Self = StObject.set(x, "onFlagsLeave", js.Any.fromFunction1(value))
+        inline def setOnFlagsLeave(value: /* node */ Flags => Unit): Self = StObject.set(x, "onFlagsLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFlagsLeaveUndefined: Self = StObject.set(x, "onFlagsLeave", js.undefined)
+        inline def setOnFlagsLeaveUndefined: Self = StObject.set(x, "onFlagsLeave", js.undefined)
         
-        @scala.inline
-        def setOnGroupEnter(value: /* node */ Group => Unit): Self = StObject.set(x, "onGroupEnter", js.Any.fromFunction1(value))
+        inline def setOnGroupEnter(value: /* node */ Group => Unit): Self = StObject.set(x, "onGroupEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnGroupEnterUndefined: Self = StObject.set(x, "onGroupEnter", js.undefined)
+        inline def setOnGroupEnterUndefined: Self = StObject.set(x, "onGroupEnter", js.undefined)
         
-        @scala.inline
-        def setOnGroupLeave(value: /* node */ Group => Unit): Self = StObject.set(x, "onGroupLeave", js.Any.fromFunction1(value))
+        inline def setOnGroupLeave(value: /* node */ Group => Unit): Self = StObject.set(x, "onGroupLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnGroupLeaveUndefined: Self = StObject.set(x, "onGroupLeave", js.undefined)
+        inline def setOnGroupLeaveUndefined: Self = StObject.set(x, "onGroupLeave", js.undefined)
         
-        @scala.inline
-        def setOnPatternEnter(value: /* node */ Pattern => Unit): Self = StObject.set(x, "onPatternEnter", js.Any.fromFunction1(value))
+        inline def setOnPatternEnter(value: /* node */ Pattern => Unit): Self = StObject.set(x, "onPatternEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnPatternEnterUndefined: Self = StObject.set(x, "onPatternEnter", js.undefined)
+        inline def setOnPatternEnterUndefined: Self = StObject.set(x, "onPatternEnter", js.undefined)
         
-        @scala.inline
-        def setOnPatternLeave(value: /* node */ Pattern => Unit): Self = StObject.set(x, "onPatternLeave", js.Any.fromFunction1(value))
+        inline def setOnPatternLeave(value: /* node */ Pattern => Unit): Self = StObject.set(x, "onPatternLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnPatternLeaveUndefined: Self = StObject.set(x, "onPatternLeave", js.undefined)
+        inline def setOnPatternLeaveUndefined: Self = StObject.set(x, "onPatternLeave", js.undefined)
         
-        @scala.inline
-        def setOnQuantifierEnter(value: /* node */ Quantifier => Unit): Self = StObject.set(x, "onQuantifierEnter", js.Any.fromFunction1(value))
+        inline def setOnQuantifierEnter(value: /* node */ Quantifier => Unit): Self = StObject.set(x, "onQuantifierEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnQuantifierEnterUndefined: Self = StObject.set(x, "onQuantifierEnter", js.undefined)
+        inline def setOnQuantifierEnterUndefined: Self = StObject.set(x, "onQuantifierEnter", js.undefined)
         
-        @scala.inline
-        def setOnQuantifierLeave(value: /* node */ Quantifier => Unit): Self = StObject.set(x, "onQuantifierLeave", js.Any.fromFunction1(value))
+        inline def setOnQuantifierLeave(value: /* node */ Quantifier => Unit): Self = StObject.set(x, "onQuantifierLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnQuantifierLeaveUndefined: Self = StObject.set(x, "onQuantifierLeave", js.undefined)
+        inline def setOnQuantifierLeaveUndefined: Self = StObject.set(x, "onQuantifierLeave", js.undefined)
         
-        @scala.inline
-        def setOnRegExpLiteralEnter(value: /* node */ RegExpLiteral => Unit): Self = StObject.set(x, "onRegExpLiteralEnter", js.Any.fromFunction1(value))
+        inline def setOnRegExpLiteralEnter(value: /* node */ RegExpLiteral => Unit): Self = StObject.set(x, "onRegExpLiteralEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnRegExpLiteralEnterUndefined: Self = StObject.set(x, "onRegExpLiteralEnter", js.undefined)
+        inline def setOnRegExpLiteralEnterUndefined: Self = StObject.set(x, "onRegExpLiteralEnter", js.undefined)
         
-        @scala.inline
-        def setOnRegExpLiteralLeave(value: /* node */ RegExpLiteral => Unit): Self = StObject.set(x, "onRegExpLiteralLeave", js.Any.fromFunction1(value))
+        inline def setOnRegExpLiteralLeave(value: /* node */ RegExpLiteral => Unit): Self = StObject.set(x, "onRegExpLiteralLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnRegExpLiteralLeaveUndefined: Self = StObject.set(x, "onRegExpLiteralLeave", js.undefined)
+        inline def setOnRegExpLiteralLeaveUndefined: Self = StObject.set(x, "onRegExpLiteralLeave", js.undefined)
       }
     }
   }

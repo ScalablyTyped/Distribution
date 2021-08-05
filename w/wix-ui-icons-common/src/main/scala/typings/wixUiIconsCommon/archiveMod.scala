@@ -22,20 +22,16 @@ object archiveMod extends Shortcut {
   }
   object ArchiveProps {
     
-    @scala.inline
-    def apply(): ArchiveProps = {
+    inline def apply(): ArchiveProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArchiveProps]
     }
     
-    @scala.inline
-    implicit class ArchivePropsMutableBuilder[Self <: ArchiveProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArchiveProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -10,9 +10,7 @@ object devMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deprecationWarning(key: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecationWarning")(key.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deprecationWarning(key: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecationWarning")(key.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isDevMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevMode")().asInstanceOf[Boolean]
+  inline def isDevMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevMode")().asInstanceOf[Boolean]
 }

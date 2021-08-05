@@ -30,8 +30,7 @@ trait TeamSettingsIteration
 }
 object TeamSettingsIteration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     attributes: TeamIterationAttributes,
     id: String,
@@ -43,19 +42,14 @@ object TeamSettingsIteration {
     __obj.asInstanceOf[TeamSettingsIteration]
   }
   
-  @scala.inline
-  implicit class TeamSettingsIterationMutableBuilder[Self <: TeamSettingsIteration] (val x: Self) extends AnyVal {
+  extension [Self <: TeamSettingsIteration](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: TeamIterationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: TeamIterationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

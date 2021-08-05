@@ -10,19 +10,15 @@ trait CreateClusterSubnetGroupResult extends StObject {
 }
 object CreateClusterSubnetGroupResult {
   
-  @scala.inline
-  def apply(): CreateClusterSubnetGroupResult = {
+  inline def apply(): CreateClusterSubnetGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClusterSubnetGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateClusterSubnetGroupResultMutableBuilder[Self <: CreateClusterSubnetGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterSubnetGroupResult](x: Self) {
     
-    @scala.inline
-    def setClusterSubnetGroup(value: ClusterSubnetGroup): Self = StObject.set(x, "ClusterSubnetGroup", value.asInstanceOf[js.Any])
+    inline def setClusterSubnetGroup(value: ClusterSubnetGroup): Self = StObject.set(x, "ClusterSubnetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterSubnetGroupUndefined: Self = StObject.set(x, "ClusterSubnetGroup", js.undefined)
+    inline def setClusterSubnetGroupUndefined: Self = StObject.set(x, "ClusterSubnetGroup", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait Section
 }
 object Section {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controls: ItemCollection[Control],
     getLabel: () => String,
     getName: () => String,
@@ -47,16 +46,12 @@ object Section {
     __obj.asInstanceOf[Section]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
+  extension [Self <: Section](x: Self) {
     
-    @scala.inline
-    def setControls(value: ItemCollection[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: ItemCollection[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParent(value: () => Tab): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => Tab): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
   }
 }

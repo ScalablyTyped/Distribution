@@ -22,20 +22,16 @@ object formFieldSpinnerUpMod extends Shortcut {
   }
   object FormFieldSpinnerUpProps {
     
-    @scala.inline
-    def apply(): FormFieldSpinnerUpProps = {
+    inline def apply(): FormFieldSpinnerUpProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormFieldSpinnerUpProps]
     }
     
-    @scala.inline
-    implicit class FormFieldSpinnerUpPropsMutableBuilder[Self <: FormFieldSpinnerUpProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormFieldSpinnerUpProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

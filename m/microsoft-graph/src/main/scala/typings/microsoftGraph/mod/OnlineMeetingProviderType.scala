@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnlineMeetingProviderType extends StObject
 object OnlineMeetingProviderType {
   
-  @scala.inline
-  def skypeForBusiness: typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness = "skypeForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness]
+  inline def skypeForBusiness: typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness = "skypeForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness]
   
-  @scala.inline
-  def skypeForConsumer: typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer = "skypeForConsumer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer]
+  inline def skypeForConsumer: typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer = "skypeForConsumer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer]
   
-  @scala.inline
-  def teamsForBusiness: typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness = "teamsForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness]
+  inline def teamsForBusiness: typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness = "teamsForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

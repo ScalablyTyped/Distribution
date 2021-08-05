@@ -16,25 +16,19 @@ trait TemplateForeachOptions[T]
 }
 object TemplateForeachOptions {
   
-  @scala.inline
-  def apply[T](): TemplateForeachOptions[T] = {
+  inline def apply[T](): TemplateForeachOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateForeachOptions[T]]
   }
   
-  @scala.inline
-  implicit class TemplateForeachOptionsMutableBuilder[Self <: TemplateForeachOptions[?], T] (val x: Self & TemplateForeachOptions[T]) extends AnyVal {
+  extension [Self <: TemplateForeachOptions[?], T](x: Self & TemplateForeachOptions[T]) {
     
-    @scala.inline
-    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setIncludeDestroyed(value: Boolean): Self = StObject.set(x, "includeDestroyed", value.asInstanceOf[js.Any])
+    inline def setIncludeDestroyed(value: Boolean): Self = StObject.set(x, "includeDestroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDestroyedUndefined: Self = StObject.set(x, "includeDestroyed", js.undefined)
+    inline def setIncludeDestroyedUndefined: Self = StObject.set(x, "includeDestroyed", js.undefined)
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientCustomizeParameterEditorsEventArgs
 }
 object ASPxClientCustomizeParameterEditorsEventArgs {
   
-  @scala.inline
-  def apply(info: ASPxDesignerElementSerializationInfo, parameter: ASPxDesignerElementParameterDescriptor): ASPxClientCustomizeParameterEditorsEventArgs = {
+  inline def apply(info: ASPxDesignerElementSerializationInfo, parameter: ASPxDesignerElementParameterDescriptor): ASPxClientCustomizeParameterEditorsEventArgs = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCustomizeParameterEditorsEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomizeParameterEditorsEventArgsMutableBuilder[Self <: ASPxClientCustomizeParameterEditorsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomizeParameterEditorsEventArgs](x: Self) {
     
-    @scala.inline
-    def setInfo(value: ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait SpatialLocation extends StObject {
 }
 object SpatialLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absoluteAngularAcceleration: js.Any,
     absoluteAngularVelocity: js.Any,
     absoluteLinearAcceleration: js.Any,
@@ -38,25 +37,18 @@ object SpatialLocation {
     __obj.asInstanceOf[SpatialLocation]
   }
   
-  @scala.inline
-  implicit class SpatialLocationMutableBuilder[Self <: SpatialLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialLocation](x: Self) {
     
-    @scala.inline
-    def setAbsoluteAngularAcceleration(value: js.Any): Self = StObject.set(x, "absoluteAngularAcceleration", value.asInstanceOf[js.Any])
+    inline def setAbsoluteAngularAcceleration(value: js.Any): Self = StObject.set(x, "absoluteAngularAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteAngularVelocity(value: js.Any): Self = StObject.set(x, "absoluteAngularVelocity", value.asInstanceOf[js.Any])
+    inline def setAbsoluteAngularVelocity(value: js.Any): Self = StObject.set(x, "absoluteAngularVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteLinearAcceleration(value: js.Any): Self = StObject.set(x, "absoluteLinearAcceleration", value.asInstanceOf[js.Any])
+    inline def setAbsoluteLinearAcceleration(value: js.Any): Self = StObject.set(x, "absoluteLinearAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteLinearVelocity(value: js.Any): Self = StObject.set(x, "absoluteLinearVelocity", value.asInstanceOf[js.Any])
+    inline def setAbsoluteLinearVelocity(value: js.Any): Self = StObject.set(x, "absoluteLinearVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

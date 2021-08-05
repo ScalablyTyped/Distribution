@@ -10,6 +10,5 @@ object omitUndefinedAndEmptyArrMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
 }

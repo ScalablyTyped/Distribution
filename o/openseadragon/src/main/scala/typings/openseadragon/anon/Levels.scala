@@ -12,23 +12,18 @@ trait Levels extends StObject {
 }
 object Levels {
   
-  @scala.inline
-  def apply(levels: js.Array[Height], `type`: String): Levels = {
+  inline def apply(levels: js.Array[Height], `type`: String): Levels = {
     val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Levels]
   }
   
-  @scala.inline
-  implicit class LevelsMutableBuilder[Self <: Levels] (val x: Self) extends AnyVal {
+  extension [Self <: Levels](x: Self) {
     
-    @scala.inline
-    def setLevels(value: js.Array[Height]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[Height]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsVarargs(value: Height*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: Height*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

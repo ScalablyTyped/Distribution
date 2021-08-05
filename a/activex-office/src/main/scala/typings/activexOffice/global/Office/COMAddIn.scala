@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.COMAddIn")
 @js.native
-class COMAddIn protected ()
+/* private */ class COMAddIn ()
   extends StObject
      with typings.activexOffice.Office.COMAddIn {
   
@@ -28,7 +28,7 @@ class COMAddIn protected ()
   /* CompleteClass */
   var Object: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.COMAddIn_typekey")
   var OfficeDotCOMAddIn_typekey: typings.activexOffice.Office.COMAddIn = js.native
   

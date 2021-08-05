@@ -37,8 +37,7 @@ object loggingMod {
     @JSImport("googleapis/build/src/apis/logging", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Logging] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Logging]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object loggingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging
       ] = js.native
-    @scala.inline
-    def v2beta1_=(
+    inline def v2beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object loggingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object loggingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def logging(options: Options): Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(options.asInstanceOf[js.Any]).asInstanceOf[Logging]
-  @scala.inline
-  def logging(options: typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Options): typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging]
+  inline def logging(options: Options): Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(options.asInstanceOf[js.Any]).asInstanceOf[Logging]
+  inline def logging(options: typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Options): typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging]
   
-  @scala.inline
-  def logging_v2(version: v2): Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(version.asInstanceOf[js.Any]).asInstanceOf[Logging]
+  inline def logging_v2(version: v2): Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(version.asInstanceOf[js.Any]).asInstanceOf[Logging]
   
-  @scala.inline
-  def logging_v2beta1(version: v2beta1): typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging]
+  inline def logging_v2beta1(version: v2beta1): typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging = ^.asInstanceOf[js.Dynamic].applyDynamic("logging")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging]
 }

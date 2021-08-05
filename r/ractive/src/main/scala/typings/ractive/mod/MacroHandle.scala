@@ -16,37 +16,27 @@ trait MacroHandle extends StObject {
 }
 object MacroHandle {
   
-  @scala.inline
-  def apply(): MacroHandle = {
+  inline def apply(): MacroHandle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MacroHandle]
   }
   
-  @scala.inline
-  implicit class MacroHandleMutableBuilder[Self <: MacroHandle] (val x: Self) extends AnyVal {
+  extension [Self <: MacroHandle](x: Self) {
     
-    @scala.inline
-    def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+    inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
-    @scala.inline
-    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+    inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+    inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: /* attributes */ ValueMap => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* attributes */ ValueMap => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

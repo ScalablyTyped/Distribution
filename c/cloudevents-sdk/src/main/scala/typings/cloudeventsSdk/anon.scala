@@ -21,20 +21,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(binary: js.Any, structured: js.Any): Dictkey = {
+    inline def apply(binary: js.Any, structured: js.Any): Dictkey = {
       val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], structured = structured.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setBinary(value: js.Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: js.Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStructured(value: js.Any): Self = StObject.set(x, "structured", value.asInstanceOf[js.Any])
+      inline def setStructured(value: js.Any): Self = StObject.set(x, "structured", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,21 +44,17 @@ object anon {
   }
   object Dictx {
     
-    @scala.inline
-    def apply(`null`: NumberDictionary[js.Any], undefined: NumberDictionary[js.Any]): Dictx = {
+    inline def apply(`null`: NumberDictionary[js.Any], undefined: NumberDictionary[js.Any]): Dictx = {
       val __obj = js.Dynamic.literal(undefined = undefined.asInstanceOf[js.Any])
       __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictx]
     }
     
-    @scala.inline
-    implicit class DictxMutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
+    extension [Self <: Dictx](x: Self) {
       
-      @scala.inline
-      def setNull(value: NumberDictionary[js.Any]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      inline def setNull(value: NumberDictionary[js.Any]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndefined(value: NumberDictionary[js.Any]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+      inline def setUndefined(value: NumberDictionary[js.Any]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,23 +68,18 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: js.Any, specversion: String, time: String): Id = {
+    inline def apply(id: js.Any, specversion: String, time: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], specversion = specversion.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecversion(value: String): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
+      inline def setSpecversion(value: String): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +91,20 @@ object anon {
   }
   object Mode {
     
-    @scala.inline
-    def apply(): Mode = {
+    inline def apply(): Mode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mode]
     }
     
-    @scala.inline
-    implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+    extension [Self <: Mode](x: Self) {
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -135,20 +116,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, parser: js.Any => js.Any): Name = {
+    inline def apply(name: String, parser: js.Any => js.Any): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parser = js.Any.fromFunction1(parser))
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParser(value: js.Any => js.Any): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+      inline def setParser(value: js.Any => js.Any): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     }
   }
   
@@ -168,26 +145,20 @@ object anon {
   }
   object Url {
     
-    @scala.inline
-    def apply(): Url = {
+    inline def apply(): Url = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Url]
     }
     
-    @scala.inline
-    implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+    extension [Self <: Url](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -197,17 +168,14 @@ object anon {
   }
   object UrlURL {
     
-    @scala.inline
-    def apply(url: URL): UrlURL = {
+    inline def apply(url: URL): UrlURL = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlURL]
     }
     
-    @scala.inline
-    implicit class UrlURLMutableBuilder[Self <: UrlURL] (val x: Self) extends AnyVal {
+    extension [Self <: UrlURL](x: Self) {
       
-      @scala.inline
-      def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,20 +187,16 @@ object anon {
   }
   object V03 {
     
-    @scala.inline
-    def apply(v03: Dictkey, v1: Dictkey): V03 = {
+    inline def apply(v03: Dictkey, v1: Dictkey): V03 = {
       val __obj = js.Dynamic.literal(v03 = v03.asInstanceOf[js.Any], v1 = v1.asInstanceOf[js.Any])
       __obj.asInstanceOf[V03]
     }
     
-    @scala.inline
-    implicit class V03MutableBuilder[Self <: V03] (val x: Self) extends AnyVal {
+    extension [Self <: V03](x: Self) {
       
-      @scala.inline
-      def setV03(value: Dictkey): Self = StObject.set(x, "v03", value.asInstanceOf[js.Any])
+      inline def setV03(value: Dictkey): Self = StObject.set(x, "v03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV1(value: Dictkey): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
+      inline def setV1(value: Dictkey): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
     }
   }
 }

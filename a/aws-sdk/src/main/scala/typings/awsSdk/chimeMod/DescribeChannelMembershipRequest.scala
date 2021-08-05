@@ -18,19 +18,15 @@ trait DescribeChannelMembershipRequest extends StObject {
 }
 object DescribeChannelMembershipRequest {
   
-  @scala.inline
-  def apply(ChannelArn: ChimeArn, MemberArn: ChimeArn): DescribeChannelMembershipRequest = {
+  inline def apply(ChannelArn: ChimeArn, MemberArn: ChimeArn): DescribeChannelMembershipRequest = {
     val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], MemberArn = MemberArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelMembershipRequest]
   }
   
-  @scala.inline
-  implicit class DescribeChannelMembershipRequestMutableBuilder[Self <: DescribeChannelMembershipRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelMembershipRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
+    inline def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
   }
 }

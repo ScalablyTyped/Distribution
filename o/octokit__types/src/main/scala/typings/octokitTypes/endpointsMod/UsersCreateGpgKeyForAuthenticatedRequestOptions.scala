@@ -20,25 +20,19 @@ trait UsersCreateGpgKeyForAuthenticatedRequestOptions extends StObject {
 }
 object UsersCreateGpgKeyForAuthenticatedRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersCreateGpgKeyForAuthenticatedRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersCreateGpgKeyForAuthenticatedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/user/gpg_keys")
     __obj.asInstanceOf[UsersCreateGpgKeyForAuthenticatedRequestOptions]
   }
   
-  @scala.inline
-  implicit class UsersCreateGpgKeyForAuthenticatedRequestOptionsMutableBuilder[Self <: UsersCreateGpgKeyForAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UsersCreateGpgKeyForAuthenticatedRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashgpg_keys): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashgpg_keys): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

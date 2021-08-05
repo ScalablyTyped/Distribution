@@ -127,21 +127,16 @@ object storagegatewayGatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Gateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayState): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID]): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID], state: GatewayState): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
     
     /**
       * Returns true if the given object is an instance of Gateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean]
   }
   
   trait GatewayArgs extends StObject {
@@ -225,98 +220,68 @@ object storagegatewayGatewayMod {
   }
   object GatewayArgs {
     
-    @scala.inline
-    def apply(gatewayName: Input[String], gatewayTimezone: Input[String]): GatewayArgs = {
+    inline def apply(gatewayName: Input[String], gatewayTimezone: Input[String]): GatewayArgs = {
       val __obj = js.Dynamic.literal(gatewayName = gatewayName.asInstanceOf[js.Any], gatewayTimezone = gatewayTimezone.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatewayArgs]
     }
     
-    @scala.inline
-    implicit class GatewayArgsMutableBuilder[Self <: GatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayArgs](x: Self) {
       
-      @scala.inline
-      def setActivationKey(value: Input[String]): Self = StObject.set(x, "activationKey", value.asInstanceOf[js.Any])
+      inline def setActivationKey(value: Input[String]): Self = StObject.set(x, "activationKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationKeyUndefined: Self = StObject.set(x, "activationKey", js.undefined)
+      inline def setActivationKeyUndefined: Self = StObject.set(x, "activationKey", js.undefined)
       
-      @scala.inline
-      def setAverageDownloadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+      inline def setAverageDownloadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", js.undefined)
+      inline def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", js.undefined)
       
-      @scala.inline
-      def setAverageUploadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+      inline def setAverageUploadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", js.undefined)
+      inline def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
+      inline def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
       
-      @scala.inline
-      def setGatewayIpAddress(value: Input[String]): Self = StObject.set(x, "gatewayIpAddress", value.asInstanceOf[js.Any])
+      inline def setGatewayIpAddress(value: Input[String]): Self = StObject.set(x, "gatewayIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayIpAddressUndefined: Self = StObject.set(x, "gatewayIpAddress", js.undefined)
+      inline def setGatewayIpAddressUndefined: Self = StObject.set(x, "gatewayIpAddress", js.undefined)
       
-      @scala.inline
-      def setGatewayName(value: Input[String]): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
+      inline def setGatewayName(value: Input[String]): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayTimezone(value: Input[String]): Self = StObject.set(x, "gatewayTimezone", value.asInstanceOf[js.Any])
+      inline def setGatewayTimezone(value: Input[String]): Self = StObject.set(x, "gatewayTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayType(value: Input[String]): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
+      inline def setGatewayType(value: Input[String]): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
+      inline def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
       
-      @scala.inline
-      def setGatewayVpcEndpoint(value: Input[String]): Self = StObject.set(x, "gatewayVpcEndpoint", value.asInstanceOf[js.Any])
+      inline def setGatewayVpcEndpoint(value: Input[String]): Self = StObject.set(x, "gatewayVpcEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayVpcEndpointUndefined: Self = StObject.set(x, "gatewayVpcEndpoint", js.undefined)
+      inline def setGatewayVpcEndpointUndefined: Self = StObject.set(x, "gatewayVpcEndpoint", js.undefined)
       
-      @scala.inline
-      def setMediumChangerType(value: Input[String]): Self = StObject.set(x, "mediumChangerType", value.asInstanceOf[js.Any])
+      inline def setMediumChangerType(value: Input[String]): Self = StObject.set(x, "mediumChangerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumChangerTypeUndefined: Self = StObject.set(x, "mediumChangerType", js.undefined)
+      inline def setMediumChangerTypeUndefined: Self = StObject.set(x, "mediumChangerType", js.undefined)
       
-      @scala.inline
-      def setSmbActiveDirectorySettings(value: Input[typings.pulumiAws.inputMod.storagegateway.GatewaySmbActiveDirectorySettings]): Self = StObject.set(x, "smbActiveDirectorySettings", value.asInstanceOf[js.Any])
+      inline def setSmbActiveDirectorySettings(value: Input[typings.pulumiAws.inputMod.storagegateway.GatewaySmbActiveDirectorySettings]): Self = StObject.set(x, "smbActiveDirectorySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbActiveDirectorySettingsUndefined: Self = StObject.set(x, "smbActiveDirectorySettings", js.undefined)
+      inline def setSmbActiveDirectorySettingsUndefined: Self = StObject.set(x, "smbActiveDirectorySettings", js.undefined)
       
-      @scala.inline
-      def setSmbGuestPassword(value: Input[String]): Self = StObject.set(x, "smbGuestPassword", value.asInstanceOf[js.Any])
+      inline def setSmbGuestPassword(value: Input[String]): Self = StObject.set(x, "smbGuestPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbGuestPasswordUndefined: Self = StObject.set(x, "smbGuestPassword", js.undefined)
+      inline def setSmbGuestPasswordUndefined: Self = StObject.set(x, "smbGuestPassword", js.undefined)
       
-      @scala.inline
-      def setSmbSecurityStrategy(value: Input[String]): Self = StObject.set(x, "smbSecurityStrategy", value.asInstanceOf[js.Any])
+      inline def setSmbSecurityStrategy(value: Input[String]): Self = StObject.set(x, "smbSecurityStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbSecurityStrategyUndefined: Self = StObject.set(x, "smbSecurityStrategy", js.undefined)
+      inline def setSmbSecurityStrategyUndefined: Self = StObject.set(x, "smbSecurityStrategy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTapeDriveType(value: Input[String]): Self = StObject.set(x, "tapeDriveType", value.asInstanceOf[js.Any])
+      inline def setTapeDriveType(value: Input[String]): Self = StObject.set(x, "tapeDriveType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapeDriveTypeUndefined: Self = StObject.set(x, "tapeDriveType", js.undefined)
+      inline def setTapeDriveTypeUndefined: Self = StObject.set(x, "tapeDriveType", js.undefined)
     }
   }
   
@@ -411,116 +376,80 @@ object storagegatewayGatewayMod {
   }
   object GatewayState {
     
-    @scala.inline
-    def apply(): GatewayState = {
+    inline def apply(): GatewayState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GatewayState]
     }
     
-    @scala.inline
-    implicit class GatewayStateMutableBuilder[Self <: GatewayState] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayState](x: Self) {
       
-      @scala.inline
-      def setActivationKey(value: Input[String]): Self = StObject.set(x, "activationKey", value.asInstanceOf[js.Any])
+      inline def setActivationKey(value: Input[String]): Self = StObject.set(x, "activationKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationKeyUndefined: Self = StObject.set(x, "activationKey", js.undefined)
+      inline def setActivationKeyUndefined: Self = StObject.set(x, "activationKey", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAverageDownloadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+      inline def setAverageDownloadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", js.undefined)
+      inline def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageDownloadRateLimitInBitsPerSec", js.undefined)
       
-      @scala.inline
-      def setAverageUploadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+      inline def setAverageUploadRateLimitInBitsPerSec(value: Input[Double]): Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", js.undefined)
+      inline def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "averageUploadRateLimitInBitsPerSec", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
+      inline def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
       
-      @scala.inline
-      def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+      inline def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
+      inline def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
       
-      @scala.inline
-      def setGatewayIpAddress(value: Input[String]): Self = StObject.set(x, "gatewayIpAddress", value.asInstanceOf[js.Any])
+      inline def setGatewayIpAddress(value: Input[String]): Self = StObject.set(x, "gatewayIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayIpAddressUndefined: Self = StObject.set(x, "gatewayIpAddress", js.undefined)
+      inline def setGatewayIpAddressUndefined: Self = StObject.set(x, "gatewayIpAddress", js.undefined)
       
-      @scala.inline
-      def setGatewayName(value: Input[String]): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
+      inline def setGatewayName(value: Input[String]): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayNameUndefined: Self = StObject.set(x, "gatewayName", js.undefined)
+      inline def setGatewayNameUndefined: Self = StObject.set(x, "gatewayName", js.undefined)
       
-      @scala.inline
-      def setGatewayTimezone(value: Input[String]): Self = StObject.set(x, "gatewayTimezone", value.asInstanceOf[js.Any])
+      inline def setGatewayTimezone(value: Input[String]): Self = StObject.set(x, "gatewayTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayTimezoneUndefined: Self = StObject.set(x, "gatewayTimezone", js.undefined)
+      inline def setGatewayTimezoneUndefined: Self = StObject.set(x, "gatewayTimezone", js.undefined)
       
-      @scala.inline
-      def setGatewayType(value: Input[String]): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
+      inline def setGatewayType(value: Input[String]): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
+      inline def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
       
-      @scala.inline
-      def setGatewayVpcEndpoint(value: Input[String]): Self = StObject.set(x, "gatewayVpcEndpoint", value.asInstanceOf[js.Any])
+      inline def setGatewayVpcEndpoint(value: Input[String]): Self = StObject.set(x, "gatewayVpcEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayVpcEndpointUndefined: Self = StObject.set(x, "gatewayVpcEndpoint", js.undefined)
+      inline def setGatewayVpcEndpointUndefined: Self = StObject.set(x, "gatewayVpcEndpoint", js.undefined)
       
-      @scala.inline
-      def setMediumChangerType(value: Input[String]): Self = StObject.set(x, "mediumChangerType", value.asInstanceOf[js.Any])
+      inline def setMediumChangerType(value: Input[String]): Self = StObject.set(x, "mediumChangerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumChangerTypeUndefined: Self = StObject.set(x, "mediumChangerType", js.undefined)
+      inline def setMediumChangerTypeUndefined: Self = StObject.set(x, "mediumChangerType", js.undefined)
       
-      @scala.inline
-      def setSmbActiveDirectorySettings(value: Input[typings.pulumiAws.inputMod.storagegateway.GatewaySmbActiveDirectorySettings]): Self = StObject.set(x, "smbActiveDirectorySettings", value.asInstanceOf[js.Any])
+      inline def setSmbActiveDirectorySettings(value: Input[typings.pulumiAws.inputMod.storagegateway.GatewaySmbActiveDirectorySettings]): Self = StObject.set(x, "smbActiveDirectorySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbActiveDirectorySettingsUndefined: Self = StObject.set(x, "smbActiveDirectorySettings", js.undefined)
+      inline def setSmbActiveDirectorySettingsUndefined: Self = StObject.set(x, "smbActiveDirectorySettings", js.undefined)
       
-      @scala.inline
-      def setSmbGuestPassword(value: Input[String]): Self = StObject.set(x, "smbGuestPassword", value.asInstanceOf[js.Any])
+      inline def setSmbGuestPassword(value: Input[String]): Self = StObject.set(x, "smbGuestPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbGuestPasswordUndefined: Self = StObject.set(x, "smbGuestPassword", js.undefined)
+      inline def setSmbGuestPasswordUndefined: Self = StObject.set(x, "smbGuestPassword", js.undefined)
       
-      @scala.inline
-      def setSmbSecurityStrategy(value: Input[String]): Self = StObject.set(x, "smbSecurityStrategy", value.asInstanceOf[js.Any])
+      inline def setSmbSecurityStrategy(value: Input[String]): Self = StObject.set(x, "smbSecurityStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbSecurityStrategyUndefined: Self = StObject.set(x, "smbSecurityStrategy", js.undefined)
+      inline def setSmbSecurityStrategyUndefined: Self = StObject.set(x, "smbSecurityStrategy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTapeDriveType(value: Input[String]): Self = StObject.set(x, "tapeDriveType", value.asInstanceOf[js.Any])
+      inline def setTapeDriveType(value: Input[String]): Self = StObject.set(x, "tapeDriveType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapeDriveTypeUndefined: Self = StObject.set(x, "tapeDriveType", js.undefined)
+      inline def setTapeDriveTypeUndefined: Self = StObject.set(x, "tapeDriveType", js.undefined)
     }
   }
 }

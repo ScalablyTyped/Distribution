@@ -34,23 +34,18 @@ object anon {
   }
   object LimitLinebreaksCount {
     
-    @scala.inline
-    def apply(limitLinebreaksCount: Double, limitToBeAddedWhitespace: Boolean, mergeType: Double): LimitLinebreaksCount = {
+    inline def apply(limitLinebreaksCount: Double, limitToBeAddedWhitespace: Boolean, mergeType: Double): LimitLinebreaksCount = {
       val __obj = js.Dynamic.literal(limitLinebreaksCount = limitLinebreaksCount.asInstanceOf[js.Any], limitToBeAddedWhitespace = limitToBeAddedWhitespace.asInstanceOf[js.Any], mergeType = mergeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[LimitLinebreaksCount]
     }
     
-    @scala.inline
-    implicit class LimitLinebreaksCountMutableBuilder[Self <: LimitLinebreaksCount] (val x: Self) extends AnyVal {
+    extension [Self <: LimitLinebreaksCount](x: Self) {
       
-      @scala.inline
-      def setLimitLinebreaksCount(value: Double): Self = StObject.set(x, "limitLinebreaksCount", value.asInstanceOf[js.Any])
+      inline def setLimitLinebreaksCount(value: Double): Self = StObject.set(x, "limitLinebreaksCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitToBeAddedWhitespace(value: Boolean): Self = StObject.set(x, "limitToBeAddedWhitespace", value.asInstanceOf[js.Any])
+      inline def setLimitToBeAddedWhitespace(value: Boolean): Self = StObject.set(x, "limitToBeAddedWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeType(value: Double): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
+      inline def setMergeType(value: Double): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,25 +17,19 @@ trait ReposGetReadmeEndpoint extends StObject {
 }
 object ReposGetReadmeEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposGetReadmeEndpoint = {
+  inline def apply(owner: String, repo: String): ReposGetReadmeEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetReadmeEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetReadmeEndpointMutableBuilder[Self <: ReposGetReadmeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetReadmeEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

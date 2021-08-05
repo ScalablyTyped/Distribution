@@ -17,20 +17,16 @@ object themesTypesMod {
   }
   object NotificationButtonState {
     
-    @scala.inline
-    def apply(isActive: Boolean, isHovered: Boolean): NotificationButtonState = {
+    inline def apply(isActive: Boolean, isHovered: Boolean): NotificationButtonState = {
       val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationButtonState]
     }
     
-    @scala.inline
-    implicit class NotificationButtonStateMutableBuilder[Self <: NotificationButtonState] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationButtonState](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
+      inline def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,8 +58,7 @@ object themesTypesMod {
   }
   object Theme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: (Position, Boolean) => CSSProperties,
       notification: Notification => CSSProperties,
       notificationButton: (Notification, Double, NotificationButtonState) => CSSProperties,
@@ -81,44 +76,31 @@ object themesTypesMod {
       __obj.asInstanceOf[Theme]
     }
     
-    @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Theme](x: Self) {
       
-      @scala.inline
-      def setContainer(value: (Position, Boolean) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
+      inline def setContainer(value: (Position, Boolean) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotification(value: Notification => CSSProperties): Self = StObject.set(x, "notification", js.Any.fromFunction1(value))
+      inline def setNotification(value: Notification => CSSProperties): Self = StObject.set(x, "notification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationButton(value: (Notification, Double, NotificationButtonState) => CSSProperties): Self = StObject.set(x, "notificationButton", js.Any.fromFunction3(value))
+      inline def setNotificationButton(value: (Notification, Double, NotificationButtonState) => CSSProperties): Self = StObject.set(x, "notificationButton", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNotificationButtonText(value: (Notification, Double, NotificationButtonState) => CSSProperties): Self = StObject.set(x, "notificationButtonText", js.Any.fromFunction3(value))
+      inline def setNotificationButtonText(value: (Notification, Double, NotificationButtonState) => CSSProperties): Self = StObject.set(x, "notificationButtonText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNotificationButtons(value: Notification => CSSProperties): Self = StObject.set(x, "notificationButtons", js.Any.fromFunction1(value))
+      inline def setNotificationButtons(value: Notification => CSSProperties): Self = StObject.set(x, "notificationButtons", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationDismissIcon(value: Notification => CSSProperties): Self = StObject.set(x, "notificationDismissIcon", js.Any.fromFunction1(value))
+      inline def setNotificationDismissIcon(value: Notification => CSSProperties): Self = StObject.set(x, "notificationDismissIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationIcon(value: Notification => CSSProperties): Self = StObject.set(x, "notificationIcon", js.Any.fromFunction1(value))
+      inline def setNotificationIcon(value: Notification => CSSProperties): Self = StObject.set(x, "notificationIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationImage(value: Notification => CSSProperties): Self = StObject.set(x, "notificationImage", js.Any.fromFunction1(value))
+      inline def setNotificationImage(value: Notification => CSSProperties): Self = StObject.set(x, "notificationImage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationImageContainer(value: Notification => CSSProperties): Self = StObject.set(x, "notificationImageContainer", js.Any.fromFunction1(value))
+      inline def setNotificationImageContainer(value: Notification => CSSProperties): Self = StObject.set(x, "notificationImageContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationMessage(value: Notification => CSSProperties): Self = StObject.set(x, "notificationMessage", js.Any.fromFunction1(value))
+      inline def setNotificationMessage(value: Notification => CSSProperties): Self = StObject.set(x, "notificationMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationMeta(value: Notification => CSSProperties): Self = StObject.set(x, "notificationMeta", js.Any.fromFunction1(value))
+      inline def setNotificationMeta(value: Notification => CSSProperties): Self = StObject.set(x, "notificationMeta", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationTitle(value: Notification => CSSProperties): Self = StObject.set(x, "notificationTitle", js.Any.fromFunction1(value))
+      inline def setNotificationTitle(value: Notification => CSSProperties): Self = StObject.set(x, "notificationTitle", js.Any.fromFunction1(value))
     }
   }
 }

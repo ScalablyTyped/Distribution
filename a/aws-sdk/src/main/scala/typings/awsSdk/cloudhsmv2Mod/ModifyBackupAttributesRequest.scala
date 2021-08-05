@@ -18,19 +18,15 @@ trait ModifyBackupAttributesRequest extends StObject {
 }
 object ModifyBackupAttributesRequest {
   
-  @scala.inline
-  def apply(BackupId: BackupId, NeverExpires: Boolean): ModifyBackupAttributesRequest = {
+  inline def apply(BackupId: BackupId, NeverExpires: Boolean): ModifyBackupAttributesRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any], NeverExpires = NeverExpires.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyBackupAttributesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyBackupAttributesRequestMutableBuilder[Self <: ModifyBackupAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyBackupAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeverExpires(value: Boolean): Self = StObject.set(x, "NeverExpires", value.asInstanceOf[js.Any])
+    inline def setNeverExpires(value: Boolean): Self = StObject.set(x, "NeverExpires", value.asInstanceOf[js.Any])
   }
 }

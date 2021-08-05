@@ -62,20 +62,16 @@ object panelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setLayout(value: PanelLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: PanelLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       }
     }
   }

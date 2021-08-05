@@ -13,16 +13,13 @@ trait IDataLayer
 }
 object IDataLayer {
   
-  @scala.inline
-  def apply(clear: () => Unit): IDataLayer = {
+  inline def apply(clear: () => Unit): IDataLayer = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
     __obj.asInstanceOf[IDataLayer]
   }
   
-  @scala.inline
-  implicit class IDataLayerMutableBuilder[Self <: IDataLayer] (val x: Self) extends AnyVal {
+  extension [Self <: IDataLayer](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }
 }

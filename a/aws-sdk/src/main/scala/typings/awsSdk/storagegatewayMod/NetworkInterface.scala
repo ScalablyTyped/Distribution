@@ -23,31 +23,23 @@ trait NetworkInterface extends StObject {
 }
 object NetworkInterface {
   
-  @scala.inline
-  def apply(): NetworkInterface = {
+  inline def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  @scala.inline
-  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterface](x: Self) {
     
-    @scala.inline
-    def setIpv4Address(value: String): Self = StObject.set(x, "Ipv4Address", value.asInstanceOf[js.Any])
+    inline def setIpv4Address(value: String): Self = StObject.set(x, "Ipv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4AddressUndefined: Self = StObject.set(x, "Ipv4Address", js.undefined)
+    inline def setIpv4AddressUndefined: Self = StObject.set(x, "Ipv4Address", js.undefined)
     
-    @scala.inline
-    def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
   }
 }

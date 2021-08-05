@@ -14,22 +14,17 @@ trait LeaveSpacesParameters
 }
 object LeaveSpacesParameters {
   
-  @scala.inline
-  def apply(spaces: js.Array[String], userId: String): LeaveSpacesParameters = {
+  inline def apply(spaces: js.Array[String], userId: String): LeaveSpacesParameters = {
     val __obj = js.Dynamic.literal(spaces = spaces.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaveSpacesParameters]
   }
   
-  @scala.inline
-  implicit class LeaveSpacesParametersMutableBuilder[Self <: LeaveSpacesParameters] (val x: Self) extends AnyVal {
+  extension [Self <: LeaveSpacesParameters](x: Self) {
     
-    @scala.inline
-    def setSpaces(value: js.Array[String]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: js.Array[String]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value :_*))
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

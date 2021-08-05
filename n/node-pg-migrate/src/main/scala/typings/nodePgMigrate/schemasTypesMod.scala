@@ -31,20 +31,16 @@ object schemasTypesMod {
   }
   object CreateSchemaOptions {
     
-    @scala.inline
-    def apply(): CreateSchemaOptions = {
+    inline def apply(): CreateSchemaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateSchemaOptions]
     }
     
-    @scala.inline
-    implicit class CreateSchemaOptionsMutableBuilder[Self <: CreateSchemaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSchemaOptions](x: Self) {
       
-      @scala.inline
-      def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
+      inline def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     }
   }
   

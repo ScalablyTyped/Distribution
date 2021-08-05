@@ -34,31 +34,23 @@ trait BreakpointsOwnerProperties extends StObject {
 }
 object BreakpointsOwnerProperties {
   
-  @scala.inline
-  def apply(): BreakpointsOwnerProperties = {
+  inline def apply(): BreakpointsOwnerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BreakpointsOwnerProperties]
   }
   
-  @scala.inline
-  implicit class BreakpointsOwnerPropertiesMutableBuilder[Self <: BreakpointsOwnerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BreakpointsOwnerProperties](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+    inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    @scala.inline
-    def setHeightBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "heightBreakpoint", value.asInstanceOf[js.Any])
+    inline def setHeightBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "heightBreakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightBreakpointUndefined: Self = StObject.set(x, "heightBreakpoint", js.undefined)
+    inline def setHeightBreakpointUndefined: Self = StObject.set(x, "heightBreakpoint", js.undefined)
     
-    @scala.inline
-    def setWidthBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "widthBreakpoint", value.asInstanceOf[js.Any])
+    inline def setWidthBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "widthBreakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthBreakpointUndefined: Self = StObject.set(x, "widthBreakpoint", js.undefined)
+    inline def setWidthBreakpointUndefined: Self = StObject.set(x, "widthBreakpoint", js.undefined)
   }
 }

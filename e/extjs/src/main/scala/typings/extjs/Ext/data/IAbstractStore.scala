@@ -164,247 +164,167 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IAbstractStore {
   
-  @scala.inline
-  def apply(): IAbstractStore = {
+  inline def apply(): IAbstractStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAbstractStore]
   }
   
-  @scala.inline
-  implicit class IAbstractStoreMutableBuilder[Self <: IAbstractStore] (val x: Self) extends AnyVal {
+  extension [Self <: IAbstractStore](x: Self) {
     
-    @scala.inline
-    def setAutoLoad(value: js.Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: js.Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
+    inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
-    @scala.inline
-    def setAutoSync(value: Boolean): Self = StObject.set(x, "autoSync", value.asInstanceOf[js.Any])
+    inline def setAutoSync(value: Boolean): Self = StObject.set(x, "autoSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSyncUndefined: Self = StObject.set(x, "autoSync", js.undefined)
+    inline def setAutoSyncUndefined: Self = StObject.set(x, "autoSync", js.undefined)
     
-    @scala.inline
-    def setBatchUpdateMode(value: String): Self = StObject.set(x, "batchUpdateMode", value.asInstanceOf[js.Any])
+    inline def setBatchUpdateMode(value: String): Self = StObject.set(x, "batchUpdateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUpdateModeUndefined: Self = StObject.set(x, "batchUpdateMode", js.undefined)
+    inline def setBatchUpdateModeUndefined: Self = StObject.set(x, "batchUpdateMode", js.undefined)
     
-    @scala.inline
-    def setDefaultProxyType(value: String): Self = StObject.set(x, "defaultProxyType", value.asInstanceOf[js.Any])
+    inline def setDefaultProxyType(value: String): Self = StObject.set(x, "defaultProxyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultProxyTypeUndefined: Self = StObject.set(x, "defaultProxyType", js.undefined)
+    inline def setDefaultProxyTypeUndefined: Self = StObject.set(x, "defaultProxyType", js.undefined)
     
-    @scala.inline
-    def setDefaultSortDirection(value: String): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
+    inline def setDefaultSortDirection(value: String): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
+    inline def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
     
-    @scala.inline
-    def setFields(value: Array): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Array): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFilterOnLoad(value: Boolean): Self = StObject.set(x, "filterOnLoad", value.asInstanceOf[js.Any])
+    inline def setFilterOnLoad(value: Boolean): Self = StObject.set(x, "filterOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOnLoadUndefined: Self = StObject.set(x, "filterOnLoad", js.undefined)
+    inline def setFilterOnLoadUndefined: Self = StObject.set(x, "filterOnLoad", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setGenerateComparator(value: () => Unit): Self = StObject.set(x, "generateComparator", js.Any.fromFunction0(value))
+    inline def setGenerateComparator(value: () => Unit): Self = StObject.set(x, "generateComparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGenerateComparatorUndefined: Self = StObject.set(x, "generateComparator", js.undefined)
+    inline def setGenerateComparatorUndefined: Self = StObject.set(x, "generateComparator", js.undefined)
     
-    @scala.inline
-    def setGetFirstSorter(value: () => ISorter): Self = StObject.set(x, "getFirstSorter", js.Any.fromFunction0(value))
+    inline def setGetFirstSorter(value: () => ISorter): Self = StObject.set(x, "getFirstSorter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstSorterUndefined: Self = StObject.set(x, "getFirstSorter", js.undefined)
+    inline def setGetFirstSorterUndefined: Self = StObject.set(x, "getFirstSorter", js.undefined)
     
-    @scala.inline
-    def setGetModifiedRecords(value: () => Array): Self = StObject.set(x, "getModifiedRecords", js.Any.fromFunction0(value))
+    inline def setGetModifiedRecords(value: () => Array): Self = StObject.set(x, "getModifiedRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModifiedRecordsUndefined: Self = StObject.set(x, "getModifiedRecords", js.undefined)
+    inline def setGetModifiedRecordsUndefined: Self = StObject.set(x, "getModifiedRecords", js.undefined)
     
-    @scala.inline
-    def setGetNewRecords(value: () => Array): Self = StObject.set(x, "getNewRecords", js.Any.fromFunction0(value))
+    inline def setGetNewRecords(value: () => Array): Self = StObject.set(x, "getNewRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNewRecordsUndefined: Self = StObject.set(x, "getNewRecords", js.undefined)
+    inline def setGetNewRecordsUndefined: Self = StObject.set(x, "getNewRecords", js.undefined)
     
-    @scala.inline
-    def setGetProxy(value: () => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
-    @scala.inline
-    def setGetRemovedRecords(value: () => Array): Self = StObject.set(x, "getRemovedRecords", js.Any.fromFunction0(value))
+    inline def setGetRemovedRecords(value: () => Array): Self = StObject.set(x, "getRemovedRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemovedRecordsUndefined: Self = StObject.set(x, "getRemovedRecords", js.undefined)
+    inline def setGetRemovedRecordsUndefined: Self = StObject.set(x, "getRemovedRecords", js.undefined)
     
-    @scala.inline
-    def setGetUpdatedRecords(value: () => Array): Self = StObject.set(x, "getUpdatedRecords", js.Any.fromFunction0(value))
+    inline def setGetUpdatedRecords(value: () => Array): Self = StObject.set(x, "getUpdatedRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdatedRecordsUndefined: Self = StObject.set(x, "getUpdatedRecords", js.undefined)
+    inline def setGetUpdatedRecordsUndefined: Self = StObject.set(x, "getUpdatedRecords", js.undefined)
     
-    @scala.inline
-    def setInitSortable(value: () => Unit): Self = StObject.set(x, "initSortable", js.Any.fromFunction0(value))
+    inline def setInitSortable(value: () => Unit): Self = StObject.set(x, "initSortable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitSortableUndefined: Self = StObject.set(x, "initSortable", js.undefined)
+    inline def setInitSortableUndefined: Self = StObject.set(x, "initSortable", js.undefined)
     
-    @scala.inline
-    def setIsDestroyed(value: Boolean): Self = StObject.set(x, "isDestroyed", value.asInstanceOf[js.Any])
+    inline def setIsDestroyed(value: Boolean): Self = StObject.set(x, "isDestroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDestroyedUndefined: Self = StObject.set(x, "isDestroyed", js.undefined)
+    inline def setIsDestroyedUndefined: Self = StObject.set(x, "isDestroyed", js.undefined)
     
-    @scala.inline
-    def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+    inline def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+    inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
-    @scala.inline
-    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+    inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+    inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
-    @scala.inline
-    def setIsStore(value: Boolean): Self = StObject.set(x, "isStore", value.asInstanceOf[js.Any])
+    inline def setIsStore(value: Boolean): Self = StObject.set(x, "isStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStoreUndefined: Self = StObject.set(x, "isStore", js.undefined)
+    inline def setIsStoreUndefined: Self = StObject.set(x, "isStore", js.undefined)
     
-    @scala.inline
-    def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setReload(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
+    inline def setReload(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+    inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
     
-    @scala.inline
-    def setRemoteFilter(value: Boolean): Self = StObject.set(x, "remoteFilter", value.asInstanceOf[js.Any])
+    inline def setRemoteFilter(value: Boolean): Self = StObject.set(x, "remoteFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteFilterUndefined: Self = StObject.set(x, "remoteFilter", js.undefined)
+    inline def setRemoteFilterUndefined: Self = StObject.set(x, "remoteFilter", js.undefined)
     
-    @scala.inline
-    def setRemoteSort(value: Boolean): Self = StObject.set(x, "remoteSort", value.asInstanceOf[js.Any])
+    inline def setRemoteSort(value: Boolean): Self = StObject.set(x, "remoteSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteSortUndefined: Self = StObject.set(x, "remoteSort", js.undefined)
+    inline def setRemoteSortUndefined: Self = StObject.set(x, "remoteSort", js.undefined)
     
-    @scala.inline
-    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+    inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+    inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
-    @scala.inline
-    def setRemoved(value: Array): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Array): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setResumeAutoSync(value: () => Unit): Self = StObject.set(x, "resumeAutoSync", js.Any.fromFunction0(value))
+    inline def setResumeAutoSync(value: () => Unit): Self = StObject.set(x, "resumeAutoSync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResumeAutoSyncUndefined: Self = StObject.set(x, "resumeAutoSync", js.undefined)
+    inline def setResumeAutoSyncUndefined: Self = StObject.set(x, "resumeAutoSync", js.undefined)
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
+    inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     
-    @scala.inline
-    def setSort(value: (js.UndefOr[js.Any], js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (js.UndefOr[js.Any], js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSortOnLoad(value: Boolean): Self = StObject.set(x, "sortOnLoad", value.asInstanceOf[js.Any])
+    inline def setSortOnLoad(value: Boolean): Self = StObject.set(x, "sortOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOnLoadUndefined: Self = StObject.set(x, "sortOnLoad", js.undefined)
+    inline def setSortOnLoadUndefined: Self = StObject.set(x, "sortOnLoad", js.undefined)
     
-    @scala.inline
-    def setSortRoot(value: String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])
+    inline def setSortRoot(value: String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRootUndefined: Self = StObject.set(x, "sortRoot", js.undefined)
+    inline def setSortRootUndefined: Self = StObject.set(x, "sortRoot", js.undefined)
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSorters(value: js.Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
+    inline def setSorters(value: js.Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
+    inline def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
     
-    @scala.inline
-    def setStatefulFilters(value: Boolean): Self = StObject.set(x, "statefulFilters", value.asInstanceOf[js.Any])
+    inline def setStatefulFilters(value: Boolean): Self = StObject.set(x, "statefulFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatefulFiltersUndefined: Self = StObject.set(x, "statefulFilters", js.undefined)
+    inline def setStatefulFiltersUndefined: Self = StObject.set(x, "statefulFilters", js.undefined)
     
-    @scala.inline
-    def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+    inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
+    inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
     
-    @scala.inline
-    def setSuspendAutoSync(value: () => Unit): Self = StObject.set(x, "suspendAutoSync", js.Any.fromFunction0(value))
+    inline def setSuspendAutoSync(value: () => Unit): Self = StObject.set(x, "suspendAutoSync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuspendAutoSyncUndefined: Self = StObject.set(x, "suspendAutoSync", js.undefined)
+    inline def setSuspendAutoSyncUndefined: Self = StObject.set(x, "suspendAutoSync", js.undefined)
     
-    @scala.inline
-    def setSync(value: /* options */ js.UndefOr[js.Any] => IStore): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
+    inline def setSync(value: /* options */ js.UndefOr[js.Any] => IStore): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

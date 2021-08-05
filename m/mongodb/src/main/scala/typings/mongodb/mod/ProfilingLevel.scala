@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProfilingLevel extends StObject
 object ProfilingLevel {
   
-  @scala.inline
-  def all: typings.mongodb.mongodbStrings.all = "all".asInstanceOf[typings.mongodb.mongodbStrings.all]
+  inline def all: typings.mongodb.mongodbStrings.all = "all".asInstanceOf[typings.mongodb.mongodbStrings.all]
   
-  @scala.inline
-  def off: typings.mongodb.mongodbStrings.off = "off".asInstanceOf[typings.mongodb.mongodbStrings.off]
+  inline def off: typings.mongodb.mongodbStrings.off = "off".asInstanceOf[typings.mongodb.mongodbStrings.off]
   
-  @scala.inline
-  def slow_only: typings.mongodb.mongodbStrings.slow_only = "slow_only".asInstanceOf[typings.mongodb.mongodbStrings.slow_only]
+  inline def slow_only: typings.mongodb.mongodbStrings.slow_only = "slow_only".asInstanceOf[typings.mongodb.mongodbStrings.slow_only]
 }

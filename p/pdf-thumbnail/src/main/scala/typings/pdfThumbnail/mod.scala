@@ -8,18 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(body: String): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
-  @scala.inline
-  def apply(body: String, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
-  @scala.inline
-  def apply(body: Buffer): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
-  @scala.inline
-  def apply(body: Buffer, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
-  @scala.inline
-  def apply(body: ReadableStream): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
-  @scala.inline
-  def apply(body: ReadableStream, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: String): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: String, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: Buffer): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: Buffer, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: ReadableStream): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: ReadableStream, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
   
   @JSImport("pdf-thumbnail", JSImport.Namespace)
   @js.native
@@ -33,26 +27,20 @@ object mod {
   }
   object CompressParams {
     
-    @scala.inline
-    def apply(): CompressParams = {
+    inline def apply(): CompressParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompressParams]
     }
     
-    @scala.inline
-    implicit class CompressParamsMutableBuilder[Self <: CompressParams] (val x: Self) extends AnyVal {
+    extension [Self <: CompressParams](x: Self) {
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -70,32 +58,24 @@ object mod {
   }
   object CropParams {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): CropParams = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): CropParams = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[CropParams]
     }
     
-    @scala.inline
-    implicit class CropParamsMutableBuilder[Self <: CropParams] (val x: Self) extends AnyVal {
+    extension [Self <: CropParams](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatio(value: Boolean): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Boolean): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+      inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,14 +87,11 @@ object mod {
   trait Operations extends StObject
   object Operations {
     
-    @scala.inline
-    def compress: typings.pdfThumbnail.pdfThumbnailStrings.compress = "compress".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.compress]
+    inline def compress: typings.pdfThumbnail.pdfThumbnailStrings.compress = "compress".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.compress]
     
-    @scala.inline
-    def crop: typings.pdfThumbnail.pdfThumbnailStrings.crop = "crop".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.crop]
+    inline def crop: typings.pdfThumbnail.pdfThumbnailStrings.crop = "crop".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.crop]
     
-    @scala.inline
-    def resize: typings.pdfThumbnail.pdfThumbnailStrings.resize = "resize".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.resize]
+    inline def resize: typings.pdfThumbnail.pdfThumbnailStrings.resize = "resize".asInstanceOf[typings.pdfThumbnail.pdfThumbnailStrings.resize]
   }
   
   trait OperationsParams extends StObject {
@@ -127,23 +104,18 @@ object mod {
   }
   object OperationsParams {
     
-    @scala.inline
-    def apply(compress: CompressParams, crop: CropParams, resize: ResizeParams): OperationsParams = {
+    inline def apply(compress: CompressParams, crop: CropParams, resize: ResizeParams): OperationsParams = {
       val __obj = js.Dynamic.literal(compress = compress.asInstanceOf[js.Any], crop = crop.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any])
       __obj.asInstanceOf[OperationsParams]
     }
     
-    @scala.inline
-    implicit class OperationsParamsMutableBuilder[Self <: OperationsParams] (val x: Self) extends AnyVal {
+    extension [Self <: OperationsParams](x: Self) {
       
-      @scala.inline
-      def setCompress(value: CompressParams): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: CompressParams): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrop(value: CropParams): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: CropParams): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResize(value: ResizeParams): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: ResizeParams): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,32 +130,24 @@ object mod {
   }
   object PDFThumbnailOptions {
     
-    @scala.inline
-    def apply(): PDFThumbnailOptions = {
+    inline def apply(): PDFThumbnailOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PDFThumbnailOptions]
     }
     
-    @scala.inline
-    implicit class PDFThumbnailOptionsMutableBuilder[Self <: PDFThumbnailOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PDFThumbnailOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: CompressParams): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: CompressParams): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setCrop(value: CropParams): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: CropParams): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setResize(value: ResizeParams): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: ResizeParams): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     }
   }
   
@@ -195,26 +159,20 @@ object mod {
   }
   object ResizeParams {
     
-    @scala.inline
-    def apply(): ResizeParams = {
+    inline def apply(): ResizeParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResizeParams]
     }
     
-    @scala.inline
-    implicit class ResizeParamsMutableBuilder[Self <: ResizeParams] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeParams](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

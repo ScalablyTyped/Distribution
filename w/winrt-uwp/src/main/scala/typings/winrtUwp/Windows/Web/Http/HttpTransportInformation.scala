@@ -25,8 +25,7 @@ trait HttpTransportInformation extends StObject {
 }
 object HttpTransportInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     serverCertificate: Certificate,
     serverCertificateErrorSeverity: SocketSslErrorSeverity,
     serverCertificateErrors: IVectorView[ChainValidationResult],
@@ -36,19 +35,14 @@ object HttpTransportInformation {
     __obj.asInstanceOf[HttpTransportInformation]
   }
   
-  @scala.inline
-  implicit class HttpTransportInformationMutableBuilder[Self <: HttpTransportInformation] (val x: Self) extends AnyVal {
+  extension [Self <: HttpTransportInformation](x: Self) {
     
-    @scala.inline
-    def setServerCertificate(value: Certificate): Self = StObject.set(x, "serverCertificate", value.asInstanceOf[js.Any])
+    inline def setServerCertificate(value: Certificate): Self = StObject.set(x, "serverCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = StObject.set(x, "serverCertificateErrorSeverity", value.asInstanceOf[js.Any])
+    inline def setServerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = StObject.set(x, "serverCertificateErrorSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = StObject.set(x, "serverCertificateErrors", value.asInstanceOf[js.Any])
+    inline def setServerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = StObject.set(x, "serverCertificateErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerIntermediateCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "serverIntermediateCertificates", value.asInstanceOf[js.Any])
+    inline def setServerIntermediateCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "serverIntermediateCertificates", value.asInstanceOf[js.Any])
   }
 }

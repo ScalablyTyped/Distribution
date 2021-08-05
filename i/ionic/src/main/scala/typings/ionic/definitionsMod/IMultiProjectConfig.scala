@@ -15,22 +15,17 @@ trait IMultiProjectConfig
 }
 object IMultiProjectConfig {
   
-  @scala.inline
-  def apply(projects: StringDictionary[js.UndefOr[IProjectConfig]]): IMultiProjectConfig = {
+  inline def apply(projects: StringDictionary[js.UndefOr[IProjectConfig]]): IMultiProjectConfig = {
     val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMultiProjectConfig]
   }
   
-  @scala.inline
-  implicit class IMultiProjectConfigMutableBuilder[Self <: IMultiProjectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IMultiProjectConfig](x: Self) {
     
-    @scala.inline
-    def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
+    inline def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultProjectUndefined: Self = StObject.set(x, "defaultProject", js.undefined)
+    inline def setDefaultProjectUndefined: Self = StObject.set(x, "defaultProject", js.undefined)
     
-    @scala.inline
-    def setProjects(value: StringDictionary[js.UndefOr[IProjectConfig]]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: StringDictionary[js.UndefOr[IProjectConfig]]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait SourceCrowdingConfig extends StObject {
 }
 object SourceCrowdingConfig {
   
-  @scala.inline
-  def apply(): SourceCrowdingConfig = {
+  inline def apply(): SourceCrowdingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceCrowdingConfig]
   }
   
-  @scala.inline
-  implicit class SourceCrowdingConfigMutableBuilder[Self <: SourceCrowdingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SourceCrowdingConfig](x: Self) {
     
-    @scala.inline
-    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
     
-    @scala.inline
-    def setNumSuggestions(value: Double): Self = StObject.set(x, "numSuggestions", value.asInstanceOf[js.Any])
+    inline def setNumSuggestions(value: Double): Self = StObject.set(x, "numSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumSuggestionsUndefined: Self = StObject.set(x, "numSuggestions", js.undefined)
+    inline def setNumSuggestionsUndefined: Self = StObject.set(x, "numSuggestions", js.undefined)
   }
 }

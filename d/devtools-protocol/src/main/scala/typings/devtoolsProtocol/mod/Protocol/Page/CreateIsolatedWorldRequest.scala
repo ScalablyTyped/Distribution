@@ -24,28 +24,21 @@ trait CreateIsolatedWorldRequest extends StObject {
 }
 object CreateIsolatedWorldRequest {
   
-  @scala.inline
-  def apply(frameId: FrameId): CreateIsolatedWorldRequest = {
+  inline def apply(frameId: FrameId): CreateIsolatedWorldRequest = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIsolatedWorldRequest]
   }
   
-  @scala.inline
-  implicit class CreateIsolatedWorldRequestMutableBuilder[Self <: CreateIsolatedWorldRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIsolatedWorldRequest](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantUniveralAccess(value: Boolean): Self = StObject.set(x, "grantUniveralAccess", value.asInstanceOf[js.Any])
+    inline def setGrantUniveralAccess(value: Boolean): Self = StObject.set(x, "grantUniveralAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantUniveralAccessUndefined: Self = StObject.set(x, "grantUniveralAccess", js.undefined)
+    inline def setGrantUniveralAccessUndefined: Self = StObject.set(x, "grantUniveralAccess", js.undefined)
     
-    @scala.inline
-    def setWorldName(value: String): Self = StObject.set(x, "worldName", value.asInstanceOf[js.Any])
+    inline def setWorldName(value: String): Self = StObject.set(x, "worldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldNameUndefined: Self = StObject.set(x, "worldName", js.undefined)
+    inline def setWorldNameUndefined: Self = StObject.set(x, "worldName", js.undefined)
   }
 }

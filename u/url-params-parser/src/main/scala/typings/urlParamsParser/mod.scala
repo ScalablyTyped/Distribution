@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def UrlParser(urlString: String): UrlParserResult = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any]).asInstanceOf[UrlParserResult]
-  @scala.inline
-  def UrlParser(urlString: String, namedUrl: String): UrlParserResult = (^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any], namedUrl.asInstanceOf[js.Any])).asInstanceOf[UrlParserResult]
+  inline def UrlParser(urlString: String): UrlParserResult = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any]).asInstanceOf[UrlParserResult]
+  inline def UrlParser(urlString: String, namedUrl: String): UrlParserResult = (^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any], namedUrl.asInstanceOf[js.Any])).asInstanceOf[UrlParserResult]
 }

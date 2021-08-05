@@ -12,19 +12,15 @@ trait hasFinalUrlBuilder[B] extends StObject {
 }
 object hasFinalUrlBuilder {
   
-  @scala.inline
-  def apply[B](withFinalUrl: String => B, withMobileFinalUrl: String => B): hasFinalUrlBuilder[B] = {
+  inline def apply[B](withFinalUrl: String => B, withMobileFinalUrl: String => B): hasFinalUrlBuilder[B] = {
     val __obj = js.Dynamic.literal(withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl))
     __obj.asInstanceOf[hasFinalUrlBuilder[B]]
   }
   
-  @scala.inline
-  implicit class hasFinalUrlBuilderMutableBuilder[Self <: hasFinalUrlBuilder[?], B] (val x: Self & hasFinalUrlBuilder[B]) extends AnyVal {
+  extension [Self <: hasFinalUrlBuilder[?], B](x: Self & hasFinalUrlBuilder[B]) {
     
-    @scala.inline
-    def setWithFinalUrl(value: String => B): Self = StObject.set(x, "withFinalUrl", js.Any.fromFunction1(value))
+    inline def setWithFinalUrl(value: String => B): Self = StObject.set(x, "withFinalUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithMobileFinalUrl(value: String => B): Self = StObject.set(x, "withMobileFinalUrl", js.Any.fromFunction1(value))
+    inline def setWithMobileFinalUrl(value: String => B): Self = StObject.set(x, "withMobileFinalUrl", js.Any.fromFunction1(value))
   }
 }

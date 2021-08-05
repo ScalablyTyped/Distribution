@@ -11,8 +11,6 @@ object getInitialPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInitialProps(): Delta = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialProps")().asInstanceOf[Delta]
-  @scala.inline
-  def getInitialProps(props: js.Object): Delta = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialProps")(props.asInstanceOf[js.Any]).asInstanceOf[Delta]
+  inline def getInitialProps(): Delta = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialProps")().asInstanceOf[Delta]
+  inline def getInitialProps(props: js.Object): Delta = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialProps")(props.asInstanceOf[js.Any]).asInstanceOf[Delta]
 }

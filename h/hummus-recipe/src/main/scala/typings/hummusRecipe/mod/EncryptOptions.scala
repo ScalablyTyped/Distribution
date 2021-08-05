@@ -14,31 +14,23 @@ trait EncryptOptions extends StObject {
 }
 object EncryptOptions {
   
-  @scala.inline
-  def apply(): EncryptOptions = {
+  inline def apply(): EncryptOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptOptions]
   }
   
-  @scala.inline
-  implicit class EncryptOptionsMutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptOptions](x: Self) {
     
-    @scala.inline
-    def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
+    inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
+    inline def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUserProtectionFlag(value: Double): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
+    inline def setUserProtectionFlag(value: Double): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
+    inline def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
   }
 }

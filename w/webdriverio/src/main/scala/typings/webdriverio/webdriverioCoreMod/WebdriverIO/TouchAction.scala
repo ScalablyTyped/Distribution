@@ -18,40 +18,29 @@ trait TouchAction extends StObject {
 }
 object TouchAction {
   
-  @scala.inline
-  def apply(action: ActionTypes): TouchAction = {
+  inline def apply(action: ActionTypes): TouchAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchAction]
   }
   
-  @scala.inline
-  implicit class TouchActionMutableBuilder[Self <: TouchAction] (val x: Self) extends AnyVal {
+  extension [Self <: TouchAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionTypes): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionTypes): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+    inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
+    inline def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

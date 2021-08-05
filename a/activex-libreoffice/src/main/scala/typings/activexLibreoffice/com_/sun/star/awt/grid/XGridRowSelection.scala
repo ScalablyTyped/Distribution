@@ -69,8 +69,7 @@ trait XGridRowSelection extends StObject {
 }
 object XGridRowSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SelectedRows: SafeArray[Double],
     addSelectionListener: XGridSelectionListener => Unit,
     deselectAllRows: () => Unit,
@@ -86,37 +85,26 @@ object XGridRowSelection {
     __obj.asInstanceOf[XGridRowSelection]
   }
   
-  @scala.inline
-  implicit class XGridRowSelectionMutableBuilder[Self <: XGridRowSelection] (val x: Self) extends AnyVal {
+  extension [Self <: XGridRowSelection](x: Self) {
     
-    @scala.inline
-    def setAddSelectionListener(value: XGridSelectionListener => Unit): Self = StObject.set(x, "addSelectionListener", js.Any.fromFunction1(value))
+    inline def setAddSelectionListener(value: XGridSelectionListener => Unit): Self = StObject.set(x, "addSelectionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeselectAllRows(value: () => Unit): Self = StObject.set(x, "deselectAllRows", js.Any.fromFunction0(value))
+    inline def setDeselectAllRows(value: () => Unit): Self = StObject.set(x, "deselectAllRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeselectRow(value: Double => Unit): Self = StObject.set(x, "deselectRow", js.Any.fromFunction1(value))
+    inline def setDeselectRow(value: Double => Unit): Self = StObject.set(x, "deselectRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectedRows(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
+    inline def setGetSelectedRows(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasSelectedRows(value: () => Boolean): Self = StObject.set(x, "hasSelectedRows", js.Any.fromFunction0(value))
+    inline def setHasSelectedRows(value: () => Boolean): Self = StObject.set(x, "hasSelectedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRowSelected(value: Double => Boolean): Self = StObject.set(x, "isRowSelected", js.Any.fromFunction1(value))
+    inline def setIsRowSelected(value: Double => Boolean): Self = StObject.set(x, "isRowSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSelectionListener(value: XGridSelectionListener => Unit): Self = StObject.set(x, "removeSelectionListener", js.Any.fromFunction1(value))
+    inline def setRemoveSelectionListener(value: XGridSelectionListener => Unit): Self = StObject.set(x, "removeSelectionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectAllRows(value: () => Unit): Self = StObject.set(x, "selectAllRows", js.Any.fromFunction0(value))
+    inline def setSelectAllRows(value: () => Unit): Self = StObject.set(x, "selectAllRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectRow(value: Double => Unit): Self = StObject.set(x, "selectRow", js.Any.fromFunction1(value))
+    inline def setSelectRow(value: Double => Unit): Self = StObject.set(x, "selectRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectedRows(value: SafeArray[Double]): Self = StObject.set(x, "SelectedRows", value.asInstanceOf[js.Any])
+    inline def setSelectedRows(value: SafeArray[Double]): Self = StObject.set(x, "SelectedRows", value.asInstanceOf[js.Any])
   }
 }

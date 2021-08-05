@@ -12,16 +12,13 @@ trait PluginRemoveDimensions
 }
 object PluginRemoveDimensions {
   
-  @scala.inline
-  def apply(removeDimensions: Boolean | js.Object): PluginRemoveDimensions = {
+  inline def apply(removeDimensions: Boolean | js.Object): PluginRemoveDimensions = {
     val __obj = js.Dynamic.literal(removeDimensions = removeDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveDimensions]
   }
   
-  @scala.inline
-  implicit class PluginRemoveDimensionsMutableBuilder[Self <: PluginRemoveDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveDimensions](x: Self) {
     
-    @scala.inline
-    def setRemoveDimensions(value: Boolean | js.Object): Self = StObject.set(x, "removeDimensions", value.asInstanceOf[js.Any])
+    inline def setRemoveDimensions(value: Boolean | js.Object): Self = StObject.set(x, "removeDimensions", value.asInstanceOf[js.Any])
   }
 }

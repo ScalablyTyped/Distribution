@@ -34,8 +34,7 @@ trait PipeableChain2C[F /* <: /* import warning: transforms.QualifyReferences#re
 }
 object PipeableChain2C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
     ap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ /* fab */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
@@ -72,11 +71,9 @@ object PipeableChain2C {
     __obj.asInstanceOf[PipeableChain2C[F, E]]
   }
   
-  @scala.inline
-  implicit class PipeableChain2CMutableBuilder[Self <: PipeableChain2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (PipeableChain2C[F, E])) extends AnyVal {
+  extension [Self <: PipeableChain2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (PipeableChain2C[F, E])) {
     
-    @scala.inline
-    def setChain(
+    inline def setChain(
       value: js.Function1[
           js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
@@ -86,8 +83,7 @@ object PipeableChain2C {
         ]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChainFirst(
+    inline def setChainFirst(
       value: js.Function1[
           js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
@@ -97,8 +93,7 @@ object PipeableChain2C {
         ]
     ): Self = StObject.set(x, "chainFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlatten(
+    inline def setFlatten(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind2<F, E, A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
   }

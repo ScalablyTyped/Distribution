@@ -19,26 +19,20 @@ object svgTypesMod {
   }
   object Dimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Dimensions = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Dimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dimensions]
     }
     
-    @scala.inline
-    implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+    extension [Self <: Dimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,29 +54,22 @@ object svgTypesMod {
   }
   object TransformState {
     
-    @scala.inline
-    def apply(rotate: String, scale: String, skewX: String, skewY: String, translate: String): TransformState = {
+    inline def apply(rotate: String, scale: String, skewX: String, skewY: String, translate: String): TransformState = {
       val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformState]
     }
     
-    @scala.inline
-    implicit class TransformStateMutableBuilder[Self <: TransformState] (val x: Self) extends AnyVal {
+    extension [Self <: TransformState](x: Self) {
       
-      @scala.inline
-      def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkewX(value: String): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+      inline def setSkewX(value: String): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkewY(value: String): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+      inline def setSkewY(value: String): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslate(value: String): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: String): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     }
   }
 }

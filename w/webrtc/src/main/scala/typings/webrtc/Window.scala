@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(RTCPeerConnection: RTCPeerConnectionStatic): Window = {
+  inline def apply(RTCPeerConnection: RTCPeerConnectionStatic): Window = {
     val __obj = js.Dynamic.literal(RTCPeerConnection = RTCPeerConnection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setRTCPeerConnection(value: RTCPeerConnectionStatic): Self = StObject.set(x, "RTCPeerConnection", value.asInstanceOf[js.Any])
+    inline def setRTCPeerConnection(value: RTCPeerConnectionStatic): Self = StObject.set(x, "RTCPeerConnection", value.asInstanceOf[js.Any])
   }
 }

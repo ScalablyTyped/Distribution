@@ -11,19 +11,15 @@ trait GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaDeleteUserLinkRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

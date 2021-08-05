@@ -14,26 +14,20 @@ object anon {
   }
   object Messages {
     
-    @scala.inline
-    def apply(messages: js.Array[String], notes: js.Array[String]): Messages = {
+    inline def apply(messages: js.Array[String], notes: js.Array[String]): Messages = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Messages]
     }
     
-    @scala.inline
-    implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+    extension [Self <: Messages](x: Self) {
       
-      @scala.inline
-      def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setNotes(value: js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
+      inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
     }
   }
 }

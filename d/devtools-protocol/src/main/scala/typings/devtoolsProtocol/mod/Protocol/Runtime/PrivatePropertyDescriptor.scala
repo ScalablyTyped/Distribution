@@ -30,34 +30,25 @@ trait PrivatePropertyDescriptor extends StObject {
 }
 object PrivatePropertyDescriptor {
   
-  @scala.inline
-  def apply(name: String): PrivatePropertyDescriptor = {
+  inline def apply(name: String): PrivatePropertyDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivatePropertyDescriptor]
   }
   
-  @scala.inline
-  implicit class PrivatePropertyDescriptorMutableBuilder[Self <: PrivatePropertyDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PrivatePropertyDescriptor](x: Self) {
     
-    @scala.inline
-    def setGet(value: RemoteObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: RemoteObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: RemoteObject): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: RemoteObject): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

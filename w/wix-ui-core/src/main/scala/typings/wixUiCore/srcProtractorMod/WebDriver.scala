@@ -87,6 +87,5 @@ object WebDriver {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  @scala.inline
-  def createSession(var_args: js.Any*): typings.seleniumWebdriver.mod.WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.mod.WebDriver]
+  inline def createSession(var_args: js.Any*): typings.seleniumWebdriver.mod.WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.mod.WebDriver]
 }

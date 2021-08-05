@@ -10,6 +10,5 @@ object pluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addMatchImageSnapshotPlugin(on: js.Function2[/* action */ String, /* fn */ js.Any, Unit], config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotPlugin")(on.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMatchImageSnapshotPlugin(on: js.Function2[/* action */ String, /* fn */ js.Any, Unit], config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotPlugin")(on.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

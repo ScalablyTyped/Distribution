@@ -33,49 +33,35 @@ trait DescribeTargetGroupsInput extends StObject {
 }
 object DescribeTargetGroupsInput {
   
-  @scala.inline
-  def apply(): DescribeTargetGroupsInput = {
+  inline def apply(): DescribeTargetGroupsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTargetGroupsInput]
   }
   
-  @scala.inline
-  implicit class DescribeTargetGroupsInputMutableBuilder[Self <: DescribeTargetGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTargetGroupsInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerArnUndefined: Self = StObject.set(x, "LoadBalancerArn", js.undefined)
+    inline def setLoadBalancerArnUndefined: Self = StObject.set(x, "LoadBalancerArn", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setNames(value: TargetGroupNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: TargetGroupNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: TargetGroupName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: TargetGroupName*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArns(value: TargetGroupArns): Self = StObject.set(x, "TargetGroupArns", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArns(value: TargetGroupArns): Self = StObject.set(x, "TargetGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnsUndefined: Self = StObject.set(x, "TargetGroupArns", js.undefined)
+    inline def setTargetGroupArnsUndefined: Self = StObject.set(x, "TargetGroupArns", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArnsVarargs(value: TargetGroupArn*): Self = StObject.set(x, "TargetGroupArns", js.Array(value :_*))
+    inline def setTargetGroupArnsVarargs(value: TargetGroupArn*): Self = StObject.set(x, "TargetGroupArns", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait Order extends StObject {
 }
 object Order {
   
-  @scala.inline
-  def apply(dataField: js.Any, order: SortOrder): Order = {
+  inline def apply(dataField: js.Any, order: SortOrder): Order = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

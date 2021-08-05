@@ -20,25 +20,19 @@ trait OrgsRemoveOutsideCollaboratorRequestOptions extends StObject {
 }
 object OrgsRemoveOutsideCollaboratorRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsRemoveOutsideCollaboratorRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsRemoveOutsideCollaboratorRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/orgs/:org/outside_collaborators/:username")
     __obj.asInstanceOf[OrgsRemoveOutsideCollaboratorRequestOptions]
   }
   
-  @scala.inline
-  implicit class OrgsRemoveOutsideCollaboratorRequestOptionsMutableBuilder[Self <: OrgsRemoveOutsideCollaboratorRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsRemoveOutsideCollaboratorRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashoutside_collaboratorsSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashoutside_collaboratorsSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

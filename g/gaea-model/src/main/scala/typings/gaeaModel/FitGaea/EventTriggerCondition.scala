@@ -16,26 +16,20 @@ trait EventTriggerCondition extends StObject {
 }
 object EventTriggerCondition {
   
-  @scala.inline
-  def apply(name: String, `type`: String): EventTriggerCondition = {
+  inline def apply(name: String, `type`: String): EventTriggerCondition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTriggerCondition]
   }
   
-  @scala.inline
-  implicit class EventTriggerConditionMutableBuilder[Self <: EventTriggerCondition] (val x: Self) extends AnyVal {
+  extension [Self <: EventTriggerCondition](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfCallback(value: Boolean): Self = StObject.set(x, "selfCallback", value.asInstanceOf[js.Any])
+    inline def setSelfCallback(value: Boolean): Self = StObject.set(x, "selfCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfCallbackUndefined: Self = StObject.set(x, "selfCallback", js.undefined)
+    inline def setSelfCallbackUndefined: Self = StObject.set(x, "selfCallback", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

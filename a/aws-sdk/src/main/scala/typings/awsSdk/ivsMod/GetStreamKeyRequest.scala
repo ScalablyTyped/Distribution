@@ -13,16 +13,13 @@ trait GetStreamKeyRequest extends StObject {
 }
 object GetStreamKeyRequest {
   
-  @scala.inline
-  def apply(arn: StreamKeyArn): GetStreamKeyRequest = {
+  inline def apply(arn: StreamKeyArn): GetStreamKeyRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamKeyRequest]
   }
   
-  @scala.inline
-  implicit class GetStreamKeyRequestMutableBuilder[Self <: GetStreamKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetStreamKeyRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: StreamKeyArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: StreamKeyArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

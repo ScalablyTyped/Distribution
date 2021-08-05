@@ -19,8 +19,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("path-exists", JSImport.Namespace)
   @js.native
@@ -30,6 +29,5 @@ object mod {
   	Synchronously check if a path exists.
   	@returns Whether the path exists.
   	*/
-  @scala.inline
-  def sync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def sync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

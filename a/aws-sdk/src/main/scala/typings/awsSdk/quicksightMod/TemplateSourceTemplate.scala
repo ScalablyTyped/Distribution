@@ -13,16 +13,13 @@ trait TemplateSourceTemplate extends StObject {
 }
 object TemplateSourceTemplate {
   
-  @scala.inline
-  def apply(Arn: Arn): TemplateSourceTemplate = {
+  inline def apply(Arn: Arn): TemplateSourceTemplate = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateSourceTemplate]
   }
   
-  @scala.inline
-  implicit class TemplateSourceTemplateMutableBuilder[Self <: TemplateSourceTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateSourceTemplate](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

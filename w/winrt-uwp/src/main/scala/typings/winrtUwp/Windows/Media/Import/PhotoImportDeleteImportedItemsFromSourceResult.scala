@@ -49,8 +49,7 @@ trait PhotoImportDeleteImportedItemsFromSourceResult extends StObject {
 }
 object PhotoImportDeleteImportedItemsFromSourceResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deletedItems: IVectorView[PhotoImportItem],
     hasSucceeded: Boolean,
     photosCount: Double,
@@ -69,46 +68,32 @@ object PhotoImportDeleteImportedItemsFromSourceResult {
     __obj.asInstanceOf[PhotoImportDeleteImportedItemsFromSourceResult]
   }
   
-  @scala.inline
-  implicit class PhotoImportDeleteImportedItemsFromSourceResultMutableBuilder[Self <: PhotoImportDeleteImportedItemsFromSourceResult] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportDeleteImportedItemsFromSourceResult](x: Self) {
     
-    @scala.inline
-    def setDeletedItems(value: IVectorView[PhotoImportItem]): Self = StObject.set(x, "deletedItems", value.asInstanceOf[js.Any])
+    inline def setDeletedItems(value: IVectorView[PhotoImportItem]): Self = StObject.set(x, "deletedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSucceeded(value: Boolean): Self = StObject.set(x, "hasSucceeded", value.asInstanceOf[js.Any])
+    inline def setHasSucceeded(value: Boolean): Self = StObject.set(x, "hasSucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosCount(value: Double): Self = StObject.set(x, "photosCount", value.asInstanceOf[js.Any])
+    inline def setPhotosCount(value: Double): Self = StObject.set(x, "photosCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosSizeInBytes(value: Double): Self = StObject.set(x, "photosSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setPhotosSizeInBytes(value: Double): Self = StObject.set(x, "photosSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingsCount(value: Double): Self = StObject.set(x, "siblingsCount", value.asInstanceOf[js.Any])
+    inline def setSiblingsCount(value: Double): Self = StObject.set(x, "siblingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingsSizeInBytes(value: Double): Self = StObject.set(x, "siblingsSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSiblingsSizeInBytes(value: Double): Self = StObject.set(x, "siblingsSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidecarsCount(value: Double): Self = StObject.set(x, "sidecarsCount", value.asInstanceOf[js.Any])
+    inline def setSidecarsCount(value: Double): Self = StObject.set(x, "sidecarsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidecarsSizeInBytes(value: Double): Self = StObject.set(x, "sidecarsSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSidecarsSizeInBytes(value: Double): Self = StObject.set(x, "sidecarsSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeInBytes(value: Double): Self = StObject.set(x, "totalSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setTotalSizeInBytes(value: Double): Self = StObject.set(x, "totalSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideosCount(value: Double): Self = StObject.set(x, "videosCount", value.asInstanceOf[js.Any])
+    inline def setVideosCount(value: Double): Self = StObject.set(x, "videosCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideosSizeInBytes(value: Double): Self = StObject.set(x, "videosSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setVideosSizeInBytes(value: Double): Self = StObject.set(x, "videosSizeInBytes", value.asInstanceOf[js.Any])
   }
 }

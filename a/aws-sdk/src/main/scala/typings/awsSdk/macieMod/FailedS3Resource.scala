@@ -23,31 +23,23 @@ trait FailedS3Resource extends StObject {
 }
 object FailedS3Resource {
   
-  @scala.inline
-  def apply(): FailedS3Resource = {
+  inline def apply(): FailedS3Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedS3Resource]
   }
   
-  @scala.inline
-  implicit class FailedS3ResourceMutableBuilder[Self <: FailedS3Resource] (val x: Self) extends AnyVal {
+  extension [Self <: FailedS3Resource](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ExceptionMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ExceptionMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setFailedItem(value: S3Resource): Self = StObject.set(x, "failedItem", value.asInstanceOf[js.Any])
+    inline def setFailedItem(value: S3Resource): Self = StObject.set(x, "failedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedItemUndefined: Self = StObject.set(x, "failedItem", js.undefined)
+    inline def setFailedItemUndefined: Self = StObject.set(x, "failedItem", js.undefined)
   }
 }

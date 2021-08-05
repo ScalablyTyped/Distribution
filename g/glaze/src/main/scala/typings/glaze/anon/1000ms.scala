@@ -32,8 +32,7 @@ trait `1000ms` extends StObject {
 }
 object `1000ms` {
   
-  @scala.inline
-  def apply(): `1000ms` = {
+  inline def apply(): `1000ms` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("1000ms")("1s")
     __obj.updateDynamic("100ms")(".1s")
@@ -46,31 +45,22 @@ object `1000ms` {
     __obj.asInstanceOf[`1000ms`]
   }
   
-  @scala.inline
-  implicit class `1000msMutableBuilder`[Self <: `1000ms`] (val x: Self) extends AnyVal {
+  extension [Self <: `1000ms`](x: Self) {
     
-    @scala.inline
-    def set1000ms(value: `1s`): Self = StObject.set(x, "1000ms", value.asInstanceOf[js.Any])
+    inline def set1000ms(value: `1s`): Self = StObject.set(x, "1000ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set100ms(value: Dot1s): Self = StObject.set(x, "100ms", value.asInstanceOf[js.Any])
+    inline def set100ms(value: Dot1s): Self = StObject.set(x, "100ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set150ms(value: Dot15s): Self = StObject.set(x, "150ms", value.asInstanceOf[js.Any])
+    inline def set150ms(value: Dot15s): Self = StObject.set(x, "150ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set200ms(value: Dot2s): Self = StObject.set(x, "200ms", value.asInstanceOf[js.Any])
+    inline def set200ms(value: Dot2s): Self = StObject.set(x, "200ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set300ms(value: Dot3s): Self = StObject.set(x, "300ms", value.asInstanceOf[js.Any])
+    inline def set300ms(value: Dot3s): Self = StObject.set(x, "300ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set500ms(value: Dot5s): Self = StObject.set(x, "500ms", value.asInstanceOf[js.Any])
+    inline def set500ms(value: Dot5s): Self = StObject.set(x, "500ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set700ms(value: Dot7s): Self = StObject.set(x, "700ms", value.asInstanceOf[js.Any])
+    inline def set700ms(value: Dot7s): Self = StObject.set(x, "700ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set75ms(value: `75ms`): Self = StObject.set(x, "75ms", value.asInstanceOf[js.Any])
+    inline def set75ms(value: `75ms`): Self = StObject.set(x, "75ms", value.asInstanceOf[js.Any])
   }
 }

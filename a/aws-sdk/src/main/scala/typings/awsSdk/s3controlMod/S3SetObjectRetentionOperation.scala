@@ -18,22 +18,17 @@ trait S3SetObjectRetentionOperation extends StObject {
 }
 object S3SetObjectRetentionOperation {
   
-  @scala.inline
-  def apply(Retention: S3Retention): S3SetObjectRetentionOperation = {
+  inline def apply(Retention: S3Retention): S3SetObjectRetentionOperation = {
     val __obj = js.Dynamic.literal(Retention = Retention.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3SetObjectRetentionOperation]
   }
   
-  @scala.inline
-  implicit class S3SetObjectRetentionOperationMutableBuilder[Self <: S3SetObjectRetentionOperation] (val x: Self) extends AnyVal {
+  extension [Self <: S3SetObjectRetentionOperation](x: Self) {
     
-    @scala.inline
-    def setBypassGovernanceRetention(value: Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
+    inline def setBypassGovernanceRetention(value: Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
+    inline def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
     
-    @scala.inline
-    def setRetention(value: S3Retention): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
+    inline def setRetention(value: S3Retention): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
   }
 }

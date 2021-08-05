@@ -14,25 +14,19 @@ trait Sourcetype extends StObject {
 }
 object Sourcetype {
   
-  @scala.inline
-  def apply(source_type: String, upload_id: String): Sourcetype = {
+  inline def apply(source_type: String, upload_id: String): Sourcetype = {
     val __obj = js.Dynamic.literal(source_type = source_type.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sourcetype]
   }
   
-  @scala.inline
-  implicit class SourcetypeMutableBuilder[Self <: Sourcetype] (val x: Self) extends AnyVal {
+  extension [Self <: Sourcetype](x: Self) {
     
-    @scala.inline
-    def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+    inline def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload_id(value: String): Self = StObject.set(x, "upload_id", value.asInstanceOf[js.Any])
+    inline def setUpload_id(value: String): Self = StObject.set(x, "upload_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: Audiomuted): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Audiomuted): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

@@ -26,23 +26,18 @@ object iosMod {
   }
   object IOSNativeModulesConfig {
     
-    @scala.inline
-    def apply(dependencies: StringDictionary[Platforms], project: Ios, reactNativePath: String): IOSNativeModulesConfig = {
+    inline def apply(dependencies: StringDictionary[Platforms], project: Ios, reactNativePath: String): IOSNativeModulesConfig = {
       val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOSNativeModulesConfig]
     }
     
-    @scala.inline
-    implicit class IOSNativeModulesConfigMutableBuilder[Self <: IOSNativeModulesConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IOSNativeModulesConfig](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[Platforms]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[Platforms]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: Ios): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Ios): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactNativePath(value: String): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      inline def setReactNativePath(value: String): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,8 +65,7 @@ object iosMod {
   }
   object IOSProjectConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       folder: String,
       libraryFolder: String,
       pbxprojPath: String,
@@ -87,44 +81,31 @@ object iosMod {
       __obj.asInstanceOf[IOSProjectConfig]
     }
     
-    @scala.inline
-    implicit class IOSProjectConfigMutableBuilder[Self <: IOSProjectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IOSProjectConfig](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibraryFolder(value: String): Self = StObject.set(x, "libraryFolder", value.asInstanceOf[js.Any])
+      inline def setLibraryFolder(value: String): Self = StObject.set(x, "libraryFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPbxprojPath(value: String): Self = StObject.set(x, "pbxprojPath", value.asInstanceOf[js.Any])
+      inline def setPbxprojPath(value: String): Self = StObject.set(x, "pbxprojPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlist(value: js.Array[js.Any]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
+      inline def setPlist(value: js.Array[js.Any]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlistVarargs(value: js.Any*): Self = StObject.set(x, "plist", js.Array(value :_*))
+      inline def setPlistVarargs(value: js.Any*): Self = StObject.set(x, "plist", js.Array(value :_*))
       
-      @scala.inline
-      def setPodfile(value: String): Self = StObject.set(x, "podfile", value.asInstanceOf[js.Any])
+      inline def setPodfile(value: String): Self = StObject.set(x, "podfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodspecPath(value: String): Self = StObject.set(x, "podspecPath", value.asInstanceOf[js.Any])
+      inline def setPodspecPath(value: String): Self = StObject.set(x, "podspecPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
+      inline def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedLibraries(value: js.Array[js.Any]): Self = StObject.set(x, "sharedLibraries", value.asInstanceOf[js.Any])
+      inline def setSharedLibraries(value: js.Array[js.Any]): Self = StObject.set(x, "sharedLibraries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedLibrariesVarargs(value: js.Any*): Self = StObject.set(x, "sharedLibraries", js.Array(value :_*))
+      inline def setSharedLibrariesVarargs(value: js.Any*): Self = StObject.set(x, "sharedLibraries", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,56 +132,40 @@ object iosMod {
   }
   object IOSProjectParams {
     
-    @scala.inline
-    def apply(plist: js.Array[js.Any]): IOSProjectParams = {
+    inline def apply(plist: js.Array[js.Any]): IOSProjectParams = {
       val __obj = js.Dynamic.literal(plist = plist.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOSProjectParams]
     }
     
-    @scala.inline
-    implicit class IOSProjectParamsMutableBuilder[Self <: IOSProjectParams] (val x: Self) extends AnyVal {
+    extension [Self <: IOSProjectParams](x: Self) {
       
-      @scala.inline
-      def setLibraryFolder(value: String): Self = StObject.set(x, "libraryFolder", value.asInstanceOf[js.Any])
+      inline def setLibraryFolder(value: String): Self = StObject.set(x, "libraryFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibraryFolderUndefined: Self = StObject.set(x, "libraryFolder", js.undefined)
+      inline def setLibraryFolderUndefined: Self = StObject.set(x, "libraryFolder", js.undefined)
       
-      @scala.inline
-      def setPlist(value: js.Array[js.Any]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
+      inline def setPlist(value: js.Array[js.Any]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlistVarargs(value: js.Any*): Self = StObject.set(x, "plist", js.Array(value :_*))
+      inline def setPlistVarargs(value: js.Any*): Self = StObject.set(x, "plist", js.Array(value :_*))
       
-      @scala.inline
-      def setPodspecPath(value: String): Self = StObject.set(x, "podspecPath", value.asInstanceOf[js.Any])
+      inline def setPodspecPath(value: String): Self = StObject.set(x, "podspecPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodspecPathUndefined: Self = StObject.set(x, "podspecPath", js.undefined)
+      inline def setPodspecPathUndefined: Self = StObject.set(x, "podspecPath", js.undefined)
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setScriptPhases(value: js.Array[js.Any]): Self = StObject.set(x, "scriptPhases", value.asInstanceOf[js.Any])
+      inline def setScriptPhases(value: js.Array[js.Any]): Self = StObject.set(x, "scriptPhases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptPhasesUndefined: Self = StObject.set(x, "scriptPhases", js.undefined)
+      inline def setScriptPhasesUndefined: Self = StObject.set(x, "scriptPhases", js.undefined)
       
-      @scala.inline
-      def setScriptPhasesVarargs(value: js.Any*): Self = StObject.set(x, "scriptPhases", js.Array(value :_*))
+      inline def setScriptPhasesVarargs(value: js.Any*): Self = StObject.set(x, "scriptPhases", js.Array(value :_*))
       
-      @scala.inline
-      def setSharedLibraries(value: js.Array[String]): Self = StObject.set(x, "sharedLibraries", value.asInstanceOf[js.Any])
+      inline def setSharedLibraries(value: js.Array[String]): Self = StObject.set(x, "sharedLibraries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedLibrariesUndefined: Self = StObject.set(x, "sharedLibraries", js.undefined)
+      inline def setSharedLibrariesUndefined: Self = StObject.set(x, "sharedLibraries", js.undefined)
       
-      @scala.inline
-      def setSharedLibrariesVarargs(value: String*): Self = StObject.set(x, "sharedLibraries", js.Array(value :_*))
+      inline def setSharedLibrariesVarargs(value: String*): Self = StObject.set(x, "sharedLibraries", js.Array(value :_*))
     }
   }
   

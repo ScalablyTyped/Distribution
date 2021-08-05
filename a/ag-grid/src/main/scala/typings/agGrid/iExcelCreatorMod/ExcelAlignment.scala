@@ -24,8 +24,7 @@ trait ExcelAlignment extends StObject {
 }
 object ExcelAlignment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontal: String,
     indent: Double,
     readingOrder: String,
@@ -39,31 +38,22 @@ object ExcelAlignment {
     __obj.asInstanceOf[ExcelAlignment]
   }
   
-  @scala.inline
-  implicit class ExcelAlignmentMutableBuilder[Self <: ExcelAlignment] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelAlignment](x: Self) {
     
-    @scala.inline
-    def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadingOrder(value: String): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
+    inline def setReadingOrder(value: String): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
+    inline def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalText(value: Boolean): Self = StObject.set(x, "verticalText", value.asInstanceOf[js.Any])
+    inline def setVerticalText(value: Boolean): Self = StObject.set(x, "verticalText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
+    inline def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
   }
 }

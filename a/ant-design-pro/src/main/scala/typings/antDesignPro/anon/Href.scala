@@ -19,34 +19,25 @@ trait Href extends StObject {
 }
 object Href {
   
-  @scala.inline
-  def apply(to: LocationDescriptor[LocationState]): Href = {
+  inline def apply(to: LocationDescriptor[LocationState]): Href = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Href]
   }
   
-  @scala.inline
-  implicit class HrefMutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
+  extension [Self <: Href](x: Self) {
     
-    @scala.inline
-    def setHref(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setInnerRef(value: /* node */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    inline def setInnerRef(value: /* node */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+    inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

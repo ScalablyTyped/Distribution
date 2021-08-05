@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], checksumFilename.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filesToCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], checksumFilename.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filesToCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], checksumFilename.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filesToCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], checksumFilename.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filesToCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("sumchecker", JSImport.Namespace)
   @js.native
@@ -82,20 +80,16 @@ object mod {
   }
   object ChecksumOptions {
     
-    @scala.inline
-    def apply(): ChecksumOptions = {
+    inline def apply(): ChecksumOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChecksumOptions]
     }
     
-    @scala.inline
-    implicit class ChecksumOptionsMutableBuilder[Self <: ChecksumOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChecksumOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultTextEncoding(value: String): Self = StObject.set(x, "defaultTextEncoding", value.asInstanceOf[js.Any])
+      inline def setDefaultTextEncoding(value: String): Self = StObject.set(x, "defaultTextEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTextEncodingUndefined: Self = StObject.set(x, "defaultTextEncoding", js.undefined)
+      inline def setDefaultTextEncodingUndefined: Self = StObject.set(x, "defaultTextEncoding", js.undefined)
     }
   }
 }

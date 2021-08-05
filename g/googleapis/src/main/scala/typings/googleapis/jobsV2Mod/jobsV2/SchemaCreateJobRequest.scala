@@ -28,31 +28,23 @@ trait SchemaCreateJobRequest extends StObject {
 }
 object SchemaCreateJobRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateJobRequest = {
+  inline def apply(): SchemaCreateJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateJobRequestMutableBuilder[Self <: SchemaCreateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateJobRequest](x: Self) {
     
-    @scala.inline
-    def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
+    inline def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
+    inline def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
     
-    @scala.inline
-    def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
-    @scala.inline
-    def setProcessingOptions(value: SchemaJobProcessingOptions): Self = StObject.set(x, "processingOptions", value.asInstanceOf[js.Any])
+    inline def setProcessingOptions(value: SchemaJobProcessingOptions): Self = StObject.set(x, "processingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingOptionsUndefined: Self = StObject.set(x, "processingOptions", js.undefined)
+    inline def setProcessingOptionsUndefined: Self = StObject.set(x, "processingOptions", js.undefined)
   }
 }

@@ -33,46 +33,33 @@ trait UpdateThemePermissionsResponse extends StObject {
 }
 object UpdateThemePermissionsResponse {
   
-  @scala.inline
-  def apply(): UpdateThemePermissionsResponse = {
+  inline def apply(): UpdateThemePermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateThemePermissionsResponse]
   }
   
-  @scala.inline
-  implicit class UpdateThemePermissionsResponseMutableBuilder[Self <: UpdateThemePermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThemePermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
+    inline def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
+    inline def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
     
-    @scala.inline
-    def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
+    inline def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
   }
 }

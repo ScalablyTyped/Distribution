@@ -15,19 +15,15 @@ trait ReturnUrlRequest extends StObject {
 }
 object ReturnUrlRequest {
   
-  @scala.inline
-  def apply(): ReturnUrlRequest = {
+  inline def apply(): ReturnUrlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnUrlRequest]
   }
   
-  @scala.inline
-  implicit class ReturnUrlRequestMutableBuilder[Self <: ReturnUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnUrlRequest](x: Self) {
     
-    @scala.inline
-    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
+    inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
+    inline def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
   }
 }

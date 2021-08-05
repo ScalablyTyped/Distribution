@@ -14,19 +14,15 @@ trait ReposDeleteFileResponseData extends StObject {
 }
 object ReposDeleteFileResponseData {
   
-  @scala.inline
-  def apply(commit: Committer, content: StringDictionary[js.Any]): ReposDeleteFileResponseData = {
+  inline def apply(commit: Committer, content: StringDictionary[js.Any]): ReposDeleteFileResponseData = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeleteFileResponseData]
   }
   
-  @scala.inline
-  implicit class ReposDeleteFileResponseDataMutableBuilder[Self <: ReposDeleteFileResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteFileResponseData](x: Self) {
     
-    @scala.inline
-    def setCommit(value: Committer): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Committer): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: StringDictionary[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: StringDictionary[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

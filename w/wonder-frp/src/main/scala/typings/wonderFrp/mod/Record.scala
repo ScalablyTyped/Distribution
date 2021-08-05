@@ -22,14 +22,10 @@ object Record {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(time: Double, value: js.Any): typings.wonderFrp.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.recordMod.Record]
-  @scala.inline
-  def create(time: Double, value: js.Any, actionType: Unit, comparer: js.Function): typings.wonderFrp.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.recordMod.Record]
-  @scala.inline
-  def create(time: Double, value: js.Any, actionType: typings.wonderFrp.actionTypeMod.ActionType): typings.wonderFrp.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.recordMod.Record]
-  @scala.inline
-  def create(
+  inline def create(time: Double, value: js.Any): typings.wonderFrp.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.recordMod.Record]
+  inline def create(time: Double, value: js.Any, actionType: Unit, comparer: js.Function): typings.wonderFrp.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.recordMod.Record]
+  inline def create(time: Double, value: js.Any, actionType: typings.wonderFrp.actionTypeMod.ActionType): typings.wonderFrp.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.recordMod.Record]
+  inline def create(
     time: Double,
     value: js.Any,
     actionType: typings.wonderFrp.actionTypeMod.ActionType,

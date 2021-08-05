@@ -79,65 +79,46 @@ object anon {
   }
   object ClearInvalid {
     
-    @scala.inline
-    def apply(password: String): ClearInvalid = {
+    inline def apply(password: String): ClearInvalid = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClearInvalid]
     }
     
-    @scala.inline
-    implicit class ClearInvalidMutableBuilder[Self <: ClearInvalid] (val x: Self) extends AnyVal {
+    extension [Self <: ClearInvalid](x: Self) {
       
-      @scala.inline
-      def setClearInvalid(value: Boolean): Self = StObject.set(x, "clearInvalid", value.asInstanceOf[js.Any])
+      inline def setClearInvalid(value: Boolean): Self = StObject.set(x, "clearInvalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
+      inline def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
       
-      @scala.inline
-      def setCustomSessionIDGenerator(value: /* req */ Request => String): Self = StObject.set(x, "customSessionIDGenerator", js.Any.fromFunction1(value))
+      inline def setCustomSessionIDGenerator(value: /* req */ Request => String): Self = StObject.set(x, "customSessionIDGenerator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomSessionIDGeneratorUndefined: Self = StObject.set(x, "customSessionIDGenerator", js.undefined)
+      inline def setCustomSessionIDGeneratorUndefined: Self = StObject.set(x, "customSessionIDGenerator", js.undefined)
       
-      @scala.inline
-      def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
-      @scala.inline
-      def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
+      inline def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
+      inline def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
       
-      @scala.inline
-      def setIsSameSite(value: Lax | Strict | `false`): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
+      inline def setIsSameSite(value: Lax | Strict | `false`): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
+      inline def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
       
-      @scala.inline
-      def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+      inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
+      inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocActionEventObject extends StObject {
   
-  @JSName("InfoPath.DocActionEventObject_typekey")
+  /* private */ @JSName("InfoPath.DocActionEventObject_typekey")
   var InfoPathDotDocActionEventObject_typekey: DocActionEventObject
   
   var ReturnStatus: Boolean
@@ -18,8 +18,7 @@ trait DocActionEventObject extends StObject {
 }
 object DocActionEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotDocActionEventObject_typekey: DocActionEventObject,
     ReturnStatus: Boolean,
     Source: IXMLDOMNode,
@@ -30,19 +29,14 @@ object DocActionEventObject {
     __obj.asInstanceOf[DocActionEventObject]
   }
   
-  @scala.inline
-  implicit class DocActionEventObjectMutableBuilder[Self <: DocActionEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: DocActionEventObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotDocActionEventObject_typekey(value: DocActionEventObject): Self = StObject.set(x, "InfoPath.DocActionEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotDocActionEventObject_typekey(value: DocActionEventObject): Self = StObject.set(x, "InfoPath.DocActionEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: IXMLDOMNode): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: IXMLDOMNode): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

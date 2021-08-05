@@ -10,16 +10,13 @@ trait ErrorNull extends StObject {
 }
 object ErrorNull {
   
-  @scala.inline
-  def apply(error: Null): ErrorNull = {
+  inline def apply(error: Null): ErrorNull = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorNull]
   }
   
-  @scala.inline
-  implicit class ErrorNullMutableBuilder[Self <: ErrorNull] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorNull](x: Self) {
     
-    @scala.inline
-    def setError(value: Null): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Null): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

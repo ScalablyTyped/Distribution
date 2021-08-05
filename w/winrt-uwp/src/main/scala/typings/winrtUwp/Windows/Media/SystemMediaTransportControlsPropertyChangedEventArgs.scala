@@ -12,16 +12,13 @@ trait SystemMediaTransportControlsPropertyChangedEventArgs extends StObject {
 }
 object SystemMediaTransportControlsPropertyChangedEventArgs {
   
-  @scala.inline
-  def apply(property: SystemMediaTransportControlsProperty): SystemMediaTransportControlsPropertyChangedEventArgs = {
+  inline def apply(property: SystemMediaTransportControlsProperty): SystemMediaTransportControlsPropertyChangedEventArgs = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemMediaTransportControlsPropertyChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SystemMediaTransportControlsPropertyChangedEventArgsMutableBuilder[Self <: SystemMediaTransportControlsPropertyChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMediaTransportControlsPropertyChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setProperty(value: SystemMediaTransportControlsProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SystemMediaTransportControlsProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

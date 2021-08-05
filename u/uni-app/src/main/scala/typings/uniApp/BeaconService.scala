@@ -18,25 +18,19 @@ trait BeaconService extends StObject {
 }
 object BeaconService {
   
-  @scala.inline
-  def apply(): BeaconService = {
+  inline def apply(): BeaconService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeaconService]
   }
   
-  @scala.inline
-  implicit class BeaconServiceMutableBuilder[Self <: BeaconService] (val x: Self) extends AnyVal {
+  extension [Self <: BeaconService](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
-    @scala.inline
-    def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+    inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoveringUndefined: Self = StObject.set(x, "discovering", js.undefined)
+    inline def setDiscoveringUndefined: Self = StObject.set(x, "discovering", js.undefined)
   }
 }

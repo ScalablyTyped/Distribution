@@ -27,6 +27,5 @@ object RadioButtons {
   @JSImport("proton-native", "RadioButtons.Item")
   @js.native
   def Item: Instantiable0[RadioButtonsItem] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[RadioButtonsItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[RadioButtonsItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

@@ -20,8 +20,7 @@ trait Config
 }
 object Config {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: Record[String, Double | String],
     enter: Record[String, Double | String],
     from: Record[String, Double | String],
@@ -31,19 +30,14 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setConfig(value: Record[String, Double | String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Record[String, Double | String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnter(value: Record[String, Double | String]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: Record[String, Double | String]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: Record[String, Double | String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Record[String, Double | String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeave(value: Record[String, Double | String]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+    inline def setLeave(value: Record[String, Double | String]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
   }
 }

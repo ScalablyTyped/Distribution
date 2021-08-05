@@ -8,6 +8,5 @@ object ottomatedPassportStreamlabsStrings {
   
   @js.native
   sealed trait streamlabs extends StObject
-  @scala.inline
-  def streamlabs: streamlabs = "streamlabs".asInstanceOf[streamlabs]
+  inline def streamlabs: streamlabs = "streamlabs".asInstanceOf[streamlabs]
 }

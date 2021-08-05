@@ -13,16 +13,13 @@ trait GetNamespaceRequest extends StObject {
 }
 object GetNamespaceRequest {
   
-  @scala.inline
-  def apply(Id: ResourceId): GetNamespaceRequest = {
+  inline def apply(Id: ResourceId): GetNamespaceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNamespaceRequest]
   }
   
-  @scala.inline
-  implicit class GetNamespaceRequestMutableBuilder[Self <: GetNamespaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetNamespaceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

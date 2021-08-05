@@ -17,34 +17,25 @@ trait ImageVersion extends StObject {
 }
 object ImageVersion {
   
-  @scala.inline
-  def apply(): ImageVersion = {
+  inline def apply(): ImageVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageVersion]
   }
   
-  @scala.inline
-  implicit class ImageVersionMutableBuilder[Self <: ImageVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ImageVersion](x: Self) {
     
-    @scala.inline
-    def setImageVersionId(value: String): Self = StObject.set(x, "imageVersionId", value.asInstanceOf[js.Any])
+    inline def setImageVersionId(value: String): Self = StObject.set(x, "imageVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVersionIdUndefined: Self = StObject.set(x, "imageVersionId", js.undefined)
+    inline def setImageVersionIdUndefined: Self = StObject.set(x, "imageVersionId", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setSupportedPythonVersions(value: js.Array[String]): Self = StObject.set(x, "supportedPythonVersions", value.asInstanceOf[js.Any])
+    inline def setSupportedPythonVersions(value: js.Array[String]): Self = StObject.set(x, "supportedPythonVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPythonVersionsUndefined: Self = StObject.set(x, "supportedPythonVersions", js.undefined)
+    inline def setSupportedPythonVersionsUndefined: Self = StObject.set(x, "supportedPythonVersions", js.undefined)
     
-    @scala.inline
-    def setSupportedPythonVersionsVarargs(value: String*): Self = StObject.set(x, "supportedPythonVersions", js.Array(value :_*))
+    inline def setSupportedPythonVersionsVarargs(value: String*): Self = StObject.set(x, "supportedPythonVersions", js.Array(value :_*))
   }
 }

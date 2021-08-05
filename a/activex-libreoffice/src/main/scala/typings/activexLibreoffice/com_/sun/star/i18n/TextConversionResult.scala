@@ -23,19 +23,15 @@ trait TextConversionResult extends StObject {
 }
 object TextConversionResult {
   
-  @scala.inline
-  def apply(Boundary: Boundary, Candidates: SafeArray[String]): TextConversionResult = {
+  inline def apply(Boundary: Boundary, Candidates: SafeArray[String]): TextConversionResult = {
     val __obj = js.Dynamic.literal(Boundary = Boundary.asInstanceOf[js.Any], Candidates = Candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextConversionResult]
   }
   
-  @scala.inline
-  implicit class TextConversionResultMutableBuilder[Self <: TextConversionResult] (val x: Self) extends AnyVal {
+  extension [Self <: TextConversionResult](x: Self) {
     
-    @scala.inline
-    def setBoundary(value: Boundary): Self = StObject.set(x, "Boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: Boundary): Self = StObject.set(x, "Boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidates(value: SafeArray[String]): Self = StObject.set(x, "Candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: SafeArray[String]): Self = StObject.set(x, "Candidates", value.asInstanceOf[js.Any])
   }
 }

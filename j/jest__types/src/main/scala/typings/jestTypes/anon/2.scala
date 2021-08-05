@@ -17,19 +17,15 @@ trait `2`
 }
 object `2` {
   
-  @scala.inline
-  def apply(test: TestEntry): `2` = {
+  inline def apply(test: TestEntry): `2` = {
     val __obj = js.Dynamic.literal(name = "test_skip", test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setName(value: test_skip): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: test_skip): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

@@ -28,46 +28,33 @@ trait SearchExpression extends StObject {
 }
 object SearchExpression {
   
-  @scala.inline
-  def apply(): SearchExpression = {
+  inline def apply(): SearchExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchExpression]
   }
   
-  @scala.inline
-  implicit class SearchExpressionMutableBuilder[Self <: SearchExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SearchExpression](x: Self) {
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setNestedFilters(value: NestedFiltersList): Self = StObject.set(x, "NestedFilters", value.asInstanceOf[js.Any])
+    inline def setNestedFilters(value: NestedFiltersList): Self = StObject.set(x, "NestedFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedFiltersUndefined: Self = StObject.set(x, "NestedFilters", js.undefined)
+    inline def setNestedFiltersUndefined: Self = StObject.set(x, "NestedFilters", js.undefined)
     
-    @scala.inline
-    def setNestedFiltersVarargs(value: NestedFilters*): Self = StObject.set(x, "NestedFilters", js.Array(value :_*))
+    inline def setNestedFiltersVarargs(value: NestedFilters*): Self = StObject.set(x, "NestedFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: BooleanOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: BooleanOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
-    @scala.inline
-    def setSubExpressions(value: SearchExpressionList): Self = StObject.set(x, "SubExpressions", value.asInstanceOf[js.Any])
+    inline def setSubExpressions(value: SearchExpressionList): Self = StObject.set(x, "SubExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubExpressionsUndefined: Self = StObject.set(x, "SubExpressions", js.undefined)
+    inline def setSubExpressionsUndefined: Self = StObject.set(x, "SubExpressions", js.undefined)
     
-    @scala.inline
-    def setSubExpressionsVarargs(value: SearchExpression*): Self = StObject.set(x, "SubExpressions", js.Array(value :_*))
+    inline def setSubExpressionsVarargs(value: SearchExpression*): Self = StObject.set(x, "SubExpressions", js.Array(value :_*))
   }
 }

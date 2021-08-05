@@ -20,8 +20,7 @@ trait ProcessesData extends StObject {
 }
 object ProcessesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: Double,
     blocked: Double,
     list: js.Array[ProcessesProcessData],
@@ -33,28 +32,20 @@ object ProcessesData {
     __obj.asInstanceOf[ProcessesData]
   }
   
-  @scala.inline
-  implicit class ProcessesDataMutableBuilder[Self <: ProcessesData] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessesData](x: Self) {
     
-    @scala.inline
-    def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: js.Array[ProcessesProcessData]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Array[ProcessesProcessData]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListVarargs(value: ProcessesProcessData*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: ProcessesProcessData*): Self = StObject.set(x, "list", js.Array(value :_*))
     
-    @scala.inline
-    def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSleeping(value: Double): Self = StObject.set(x, "sleeping", value.asInstanceOf[js.Any])
+    inline def setSleeping(value: Double): Self = StObject.set(x, "sleeping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

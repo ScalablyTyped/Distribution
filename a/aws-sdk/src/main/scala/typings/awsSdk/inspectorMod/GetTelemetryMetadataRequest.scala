@@ -13,16 +13,13 @@ trait GetTelemetryMetadataRequest extends StObject {
 }
 object GetTelemetryMetadataRequest {
   
-  @scala.inline
-  def apply(assessmentRunArn: Arn): GetTelemetryMetadataRequest = {
+  inline def apply(assessmentRunArn: Arn): GetTelemetryMetadataRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTelemetryMetadataRequest]
   }
   
-  @scala.inline
-  implicit class GetTelemetryMetadataRequestMutableBuilder[Self <: GetTelemetryMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTelemetryMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
   }
 }

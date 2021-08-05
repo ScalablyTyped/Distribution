@@ -38,37 +38,27 @@ trait SchemaIntegerPropertyOptions extends StObject {
 }
 object SchemaIntegerPropertyOptions {
   
-  @scala.inline
-  def apply(): SchemaIntegerPropertyOptions = {
+  inline def apply(): SchemaIntegerPropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntegerPropertyOptions]
   }
   
-  @scala.inline
-  implicit class SchemaIntegerPropertyOptionsMutableBuilder[Self <: SchemaIntegerPropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntegerPropertyOptions](x: Self) {
     
-    @scala.inline
-    def setMaximumValue(value: String): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: String): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
+    inline def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
-    @scala.inline
-    def setMinimumValue(value: String): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: String): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
+    inline def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
-    @scala.inline
-    def setOperatorOptions(value: SchemaIntegerOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
+    inline def setOperatorOptions(value: SchemaIntegerOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
+    inline def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
     
-    @scala.inline
-    def setOrderedRanking(value: String): Self = StObject.set(x, "orderedRanking", value.asInstanceOf[js.Any])
+    inline def setOrderedRanking(value: String): Self = StObject.set(x, "orderedRanking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderedRankingUndefined: Self = StObject.set(x, "orderedRanking", js.undefined)
+    inline def setOrderedRankingUndefined: Self = StObject.set(x, "orderedRanking", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait DisassociateConnectionFromLagRequest extends StObject {
 }
 object DisassociateConnectionFromLagRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId, lagId: LagId): DisassociateConnectionFromLagRequest = {
+  inline def apply(connectionId: ConnectionId, lagId: LagId): DisassociateConnectionFromLagRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], lagId = lagId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateConnectionFromLagRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateConnectionFromLagRequestMutableBuilder[Self <: DisassociateConnectionFromLagRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateConnectionFromLagRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+    inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
   }
 }

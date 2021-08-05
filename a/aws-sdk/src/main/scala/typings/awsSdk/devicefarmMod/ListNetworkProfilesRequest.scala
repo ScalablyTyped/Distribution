@@ -23,28 +23,21 @@ trait ListNetworkProfilesRequest extends StObject {
 }
 object ListNetworkProfilesRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): ListNetworkProfilesRequest = {
+  inline def apply(arn: AmazonResourceName): ListNetworkProfilesRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNetworkProfilesRequest]
   }
   
-  @scala.inline
-  implicit class ListNetworkProfilesRequestMutableBuilder[Self <: ListNetworkProfilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListNetworkProfilesRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setType(value: NetworkProfileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NetworkProfileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

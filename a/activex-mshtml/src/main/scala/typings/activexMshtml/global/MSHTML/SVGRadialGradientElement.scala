@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGRadialGradientElement")
 @js.native
-class SVGRadialGradientElement protected ()
+/* private */ class SVGRadialGradientElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGRadialGradientElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGRadialGradientElement_typekey")
   var MSHTMLDotSVGRadialGradientElement_typekey: typings.activexMshtml.MSHTML.SVGRadialGradientElement = js.native
   

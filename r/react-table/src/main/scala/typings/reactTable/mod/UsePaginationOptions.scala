@@ -17,37 +17,27 @@ trait UsePaginationOptions[D /* <: js.Object */] extends StObject {
 }
 object UsePaginationOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UsePaginationOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UsePaginationOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsePaginationOptions[D]]
   }
   
-  @scala.inline
-  implicit class UsePaginationOptionsMutableBuilder[Self <: UsePaginationOptions[?], D /* <: js.Object */] (val x: Self & UsePaginationOptions[D]) extends AnyVal {
+  extension [Self <: UsePaginationOptions[?], D /* <: js.Object */](x: Self & UsePaginationOptions[D]) {
     
-    @scala.inline
-    def setAutoResetPage(value: Boolean): Self = StObject.set(x, "autoResetPage", value.asInstanceOf[js.Any])
+    inline def setAutoResetPage(value: Boolean): Self = StObject.set(x, "autoResetPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetPageUndefined: Self = StObject.set(x, "autoResetPage", js.undefined)
+    inline def setAutoResetPageUndefined: Self = StObject.set(x, "autoResetPage", js.undefined)
     
-    @scala.inline
-    def setManualPagination(value: Boolean): Self = StObject.set(x, "manualPagination", value.asInstanceOf[js.Any])
+    inline def setManualPagination(value: Boolean): Self = StObject.set(x, "manualPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualPaginationUndefined: Self = StObject.set(x, "manualPagination", js.undefined)
+    inline def setManualPaginationUndefined: Self = StObject.set(x, "manualPagination", js.undefined)
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
+    inline def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
-    @scala.inline
-    def setPaginateExpandedRows(value: Boolean): Self = StObject.set(x, "paginateExpandedRows", value.asInstanceOf[js.Any])
+    inline def setPaginateExpandedRows(value: Boolean): Self = StObject.set(x, "paginateExpandedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginateExpandedRowsUndefined: Self = StObject.set(x, "paginateExpandedRows", js.undefined)
+    inline def setPaginateExpandedRowsUndefined: Self = StObject.set(x, "paginateExpandedRows", js.undefined)
   }
 }

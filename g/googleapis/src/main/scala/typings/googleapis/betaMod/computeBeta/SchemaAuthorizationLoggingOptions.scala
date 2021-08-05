@@ -16,19 +16,15 @@ trait SchemaAuthorizationLoggingOptions extends StObject {
 }
 object SchemaAuthorizationLoggingOptions {
   
-  @scala.inline
-  def apply(): SchemaAuthorizationLoggingOptions = {
+  inline def apply(): SchemaAuthorizationLoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthorizationLoggingOptions]
   }
   
-  @scala.inline
-  implicit class SchemaAuthorizationLoggingOptionsMutableBuilder[Self <: SchemaAuthorizationLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthorizationLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setPermissionType(value: String): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
+    inline def setPermissionType(value: String): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
+    inline def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
   }
 }

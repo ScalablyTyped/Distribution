@@ -17,25 +17,19 @@ trait IRegisterOptions extends StObject {
 }
 object IRegisterOptions {
   
-  @scala.inline
-  def apply(): IRegisterOptions = {
+  inline def apply(): IRegisterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRegisterOptions]
   }
   
-  @scala.inline
-  implicit class IRegisterOptionsMutableBuilder[Self <: IRegisterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRegisterOptions](x: Self) {
     
-    @scala.inline
-    def setDisclose_caller(value: Boolean): Self = StObject.set(x, "disclose_caller", value.asInstanceOf[js.Any])
+    inline def setDisclose_caller(value: Boolean): Self = StObject.set(x, "disclose_caller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisclose_callerUndefined: Self = StObject.set(x, "disclose_caller", js.undefined)
+    inline def setDisclose_callerUndefined: Self = StObject.set(x, "disclose_caller", js.undefined)
     
-    @scala.inline
-    def setInvoke(value: single | roundrobin | random | first | last): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    inline def setInvoke(value: single | roundrobin | random | first | last): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
+    inline def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
   }
 }

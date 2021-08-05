@@ -20,19 +20,15 @@ trait ScopeOptions extends StObject {
 }
 object ScopeOptions {
   
-  @scala.inline
-  def apply(method: String | js.Array[js.Any]): ScopeOptions = {
+  inline def apply(method: String | js.Array[js.Any]): ScopeOptions = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopeOptions]
   }
   
-  @scala.inline
-  implicit class ScopeOptionsMutableBuilder[Self <: ScopeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScopeOptions](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String | js.Array[js.Any]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String | js.Array[js.Any]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodVarargs(value: js.Any*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: js.Any*): Self = StObject.set(x, "method", js.Array(value :_*))
   }
 }

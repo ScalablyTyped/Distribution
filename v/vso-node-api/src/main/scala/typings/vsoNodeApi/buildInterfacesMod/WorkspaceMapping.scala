@@ -38,8 +38,7 @@ trait WorkspaceMapping extends StObject {
 }
 object WorkspaceMapping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionUri: String,
     depth: Double,
     localItem: String,
@@ -51,25 +50,18 @@ object WorkspaceMapping {
     __obj.asInstanceOf[WorkspaceMapping]
   }
   
-  @scala.inline
-  implicit class WorkspaceMappingMutableBuilder[Self <: WorkspaceMapping] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceMapping](x: Self) {
     
-    @scala.inline
-    def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
+    inline def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalItem(value: String): Self = StObject.set(x, "localItem", value.asInstanceOf[js.Any])
+    inline def setLocalItem(value: String): Self = StObject.set(x, "localItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingType(value: WorkspaceMappingType): Self = StObject.set(x, "mappingType", value.asInstanceOf[js.Any])
+    inline def setMappingType(value: WorkspaceMappingType): Self = StObject.set(x, "mappingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
+    inline def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceId(value: Double): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: Double): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }
 }

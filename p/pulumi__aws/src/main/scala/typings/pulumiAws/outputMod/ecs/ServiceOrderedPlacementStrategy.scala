@@ -21,23 +21,18 @@ trait ServiceOrderedPlacementStrategy extends StObject {
 }
 object ServiceOrderedPlacementStrategy {
   
-  @scala.inline
-  def apply(`type`: String): ServiceOrderedPlacementStrategy = {
+  inline def apply(`type`: String): ServiceOrderedPlacementStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOrderedPlacementStrategy]
   }
   
-  @scala.inline
-  implicit class ServiceOrderedPlacementStrategyMutableBuilder[Self <: ServiceOrderedPlacementStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceOrderedPlacementStrategy](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

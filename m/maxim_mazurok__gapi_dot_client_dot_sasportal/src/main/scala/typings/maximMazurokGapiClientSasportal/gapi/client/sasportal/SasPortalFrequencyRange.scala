@@ -14,25 +14,19 @@ trait SasPortalFrequencyRange extends StObject {
 }
 object SasPortalFrequencyRange {
   
-  @scala.inline
-  def apply(): SasPortalFrequencyRange = {
+  inline def apply(): SasPortalFrequencyRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalFrequencyRange]
   }
   
-  @scala.inline
-  implicit class SasPortalFrequencyRangeMutableBuilder[Self <: SasPortalFrequencyRange] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalFrequencyRange](x: Self) {
     
-    @scala.inline
-    def setHighFrequencyMhz(value: Double): Self = StObject.set(x, "highFrequencyMhz", value.asInstanceOf[js.Any])
+    inline def setHighFrequencyMhz(value: Double): Self = StObject.set(x, "highFrequencyMhz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighFrequencyMhzUndefined: Self = StObject.set(x, "highFrequencyMhz", js.undefined)
+    inline def setHighFrequencyMhzUndefined: Self = StObject.set(x, "highFrequencyMhz", js.undefined)
     
-    @scala.inline
-    def setLowFrequencyMhz(value: Double): Self = StObject.set(x, "lowFrequencyMhz", value.asInstanceOf[js.Any])
+    inline def setLowFrequencyMhz(value: Double): Self = StObject.set(x, "lowFrequencyMhz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowFrequencyMhzUndefined: Self = StObject.set(x, "lowFrequencyMhz", js.undefined)
+    inline def setLowFrequencyMhzUndefined: Self = StObject.set(x, "lowFrequencyMhz", js.undefined)
   }
 }

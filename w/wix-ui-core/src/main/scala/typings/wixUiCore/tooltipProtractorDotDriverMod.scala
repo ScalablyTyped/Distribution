@@ -22,8 +22,7 @@ object tooltipProtractorDotDriverMod {
   }
   object TooltipDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => ElementFinder,
       getContentElement: () => ElementFinder,
@@ -38,11 +37,9 @@ object tooltipProtractorDotDriverMod {
       __obj.asInstanceOf[TooltipDriver]
     }
     
-    @scala.inline
-    implicit class TooltipDriverMutableBuilder[Self <: TooltipDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipDriver](x: Self) {
       
-      @scala.inline
-      def setGetTooltipLocation(value: () => js.Promise[ILocation]): Self = StObject.set(x, "getTooltipLocation", js.Any.fromFunction0(value))
+      inline def setGetTooltipLocation(value: () => js.Promise[ILocation]): Self = StObject.set(x, "getTooltipLocation", js.Any.fromFunction0(value))
     }
   }
 }

@@ -16,25 +16,19 @@ trait PropertyEvent extends StObject {
 }
 object PropertyEvent {
   
-  @scala.inline
-  def apply(feature: Feature, name: String, newValue: js.Any, oldValue: js.Any): PropertyEvent = {
+  inline def apply(feature: Feature, name: String, newValue: js.Any, oldValue: js.Any): PropertyEvent = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyEvent]
   }
   
-  @scala.inline
-  implicit class PropertyEventMutableBuilder[Self <: PropertyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyEvent](x: Self) {
     
-    @scala.inline
-    def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

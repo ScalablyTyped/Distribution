@@ -38,49 +38,35 @@ trait IpRouteInfo extends StObject {
 }
 object IpRouteInfo {
   
-  @scala.inline
-  def apply(): IpRouteInfo = {
+  inline def apply(): IpRouteInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpRouteInfo]
   }
   
-  @scala.inline
-  implicit class IpRouteInfoMutableBuilder[Self <: IpRouteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IpRouteInfo](x: Self) {
     
-    @scala.inline
-    def setAddedDateTime(value: AddedDateTime): Self = StObject.set(x, "AddedDateTime", value.asInstanceOf[js.Any])
+    inline def setAddedDateTime(value: AddedDateTime): Self = StObject.set(x, "AddedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedDateTimeUndefined: Self = StObject.set(x, "AddedDateTime", js.undefined)
+    inline def setAddedDateTimeUndefined: Self = StObject.set(x, "AddedDateTime", js.undefined)
     
-    @scala.inline
-    def setCidrIp(value: CidrIp): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
+    inline def setCidrIp(value: CidrIp): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
+    inline def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setIpRouteStatusMsg(value: IpRouteStatusMsg): Self = StObject.set(x, "IpRouteStatusMsg", value.asInstanceOf[js.Any])
+    inline def setIpRouteStatusMsg(value: IpRouteStatusMsg): Self = StObject.set(x, "IpRouteStatusMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRouteStatusMsgUndefined: Self = StObject.set(x, "IpRouteStatusMsg", js.undefined)
+    inline def setIpRouteStatusMsgUndefined: Self = StObject.set(x, "IpRouteStatusMsg", js.undefined)
     
-    @scala.inline
-    def setIpRouteStatusReason(value: IpRouteStatusReason): Self = StObject.set(x, "IpRouteStatusReason", value.asInstanceOf[js.Any])
+    inline def setIpRouteStatusReason(value: IpRouteStatusReason): Self = StObject.set(x, "IpRouteStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRouteStatusReasonUndefined: Self = StObject.set(x, "IpRouteStatusReason", js.undefined)
+    inline def setIpRouteStatusReasonUndefined: Self = StObject.set(x, "IpRouteStatusReason", js.undefined)
   }
 }

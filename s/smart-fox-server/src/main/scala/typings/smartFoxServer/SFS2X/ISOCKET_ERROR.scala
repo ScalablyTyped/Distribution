@@ -10,16 +10,13 @@ trait ISOCKET_ERROR extends StObject {
 }
 object ISOCKET_ERROR {
   
-  @scala.inline
-  def apply(errorMessage: String): ISOCKET_ERROR = {
+  inline def apply(errorMessage: String): ISOCKET_ERROR = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISOCKET_ERROR]
   }
   
-  @scala.inline
-  implicit class ISOCKET_ERRORMutableBuilder[Self <: ISOCKET_ERROR] (val x: Self) extends AnyVal {
+  extension [Self <: ISOCKET_ERROR](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

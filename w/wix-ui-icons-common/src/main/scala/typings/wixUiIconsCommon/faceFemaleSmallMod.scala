@@ -22,20 +22,16 @@ object faceFemaleSmallMod extends Shortcut {
   }
   object FaceFemaleSmallProps {
     
-    @scala.inline
-    def apply(): FaceFemaleSmallProps = {
+    inline def apply(): FaceFemaleSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FaceFemaleSmallProps]
     }
     
-    @scala.inline
-    implicit class FaceFemaleSmallPropsMutableBuilder[Self <: FaceFemaleSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: FaceFemaleSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

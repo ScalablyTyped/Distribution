@@ -97,79 +97,55 @@ trait SectionLoadOptions extends StObject {
 }
 object SectionLoadOptions {
   
-  @scala.inline
-  def apply(): SectionLoadOptions = {
+  inline def apply(): SectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class SectionLoadOptionsMutableBuilder[Self <: SectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setClientUrl(value: Boolean): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
+    inline def setClientUrl(value: Boolean): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
+    inline def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
+    inline def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
+    inline def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
+    inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotebook(value: NotebookLoadOptions): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
+    inline def setNotebook(value: NotebookLoadOptions): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookUndefined: Self = StObject.set(x, "notebook", js.undefined)
+    inline def setNotebookUndefined: Self = StObject.set(x, "notebook", js.undefined)
     
-    @scala.inline
-    def setPages(value: PageCollectionLoadOptions): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: PageCollectionLoadOptions): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setParentSectionGroup(value: SectionGroupLoadOptions): Self = StObject.set(x, "parentSectionGroup", value.asInstanceOf[js.Any])
+    inline def setParentSectionGroup(value: SectionGroupLoadOptions): Self = StObject.set(x, "parentSectionGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSectionGroupOrNull(value: SectionGroupLoadOptions): Self = StObject.set(x, "parentSectionGroupOrNull", value.asInstanceOf[js.Any])
+    inline def setParentSectionGroupOrNull(value: SectionGroupLoadOptions): Self = StObject.set(x, "parentSectionGroupOrNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSectionGroupOrNullUndefined: Self = StObject.set(x, "parentSectionGroupOrNull", js.undefined)
+    inline def setParentSectionGroupOrNullUndefined: Self = StObject.set(x, "parentSectionGroupOrNull", js.undefined)
     
-    @scala.inline
-    def setParentSectionGroupUndefined: Self = StObject.set(x, "parentSectionGroup", js.undefined)
+    inline def setParentSectionGroupUndefined: Self = StObject.set(x, "parentSectionGroup", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: Boolean): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: Boolean): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

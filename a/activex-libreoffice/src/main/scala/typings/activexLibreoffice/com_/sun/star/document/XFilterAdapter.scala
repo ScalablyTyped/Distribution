@@ -27,8 +27,7 @@ trait XFilterAdapter
 }
 object XFilterAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convert: (XInputStream, XOutputStream, Boolean, String, String) => Unit,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XFilterAdapter {
     __obj.asInstanceOf[XFilterAdapter]
   }
   
-  @scala.inline
-  implicit class XFilterAdapterMutableBuilder[Self <: XFilterAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: XFilterAdapter](x: Self) {
     
-    @scala.inline
-    def setConvert(value: (XInputStream, XOutputStream, Boolean, String, String) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction5(value))
+    inline def setConvert(value: (XInputStream, XOutputStream, Boolean, String, String) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction5(value))
   }
 }

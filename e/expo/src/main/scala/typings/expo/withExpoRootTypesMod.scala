@@ -20,29 +20,22 @@ object withExpoRootTypesMod {
   }
   object InitialProps {
     
-    @scala.inline
-    def apply(exp: Dictkey): InitialProps = {
+    inline def apply(exp: Dictkey): InitialProps = {
       val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialProps]
     }
     
-    @scala.inline
-    implicit class InitialPropsMutableBuilder[Self <: InitialProps] (val x: Self) extends AnyVal {
+    extension [Self <: InitialProps](x: Self) {
       
-      @scala.inline
-      def setExp(value: Dictkey): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      inline def setExp(value: Dictkey): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: Boolean): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: Boolean): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShellManifestUrl(value: String): Self = StObject.set(x, "shellManifestUrl", value.asInstanceOf[js.Any])
+      inline def setShellManifestUrl(value: String): Self = StObject.set(x, "shellManifestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShellManifestUrlUndefined: Self = StObject.set(x, "shellManifestUrl", js.undefined)
+      inline def setShellManifestUrlUndefined: Self = StObject.set(x, "shellManifestUrl", js.undefined)
       
-      @scala.inline
-      def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+      inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     }
   }
 }

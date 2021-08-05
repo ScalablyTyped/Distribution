@@ -12,25 +12,19 @@ trait Descriptor extends StObject {
 }
 object Descriptor {
   
-  @scala.inline
-  def apply(): Descriptor = {
+  inline def apply(): Descriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Descriptor]
   }
   
-  @scala.inline
-  implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
+  extension [Self <: Descriptor](x: Self) {
     
-    @scala.inline
-    def setExtends(value: Module): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    inline def setExtends(value: Module): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+    inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     
-    @scala.inline
-    def setMixin(value: Module): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+    inline def setMixin(value: Module): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
+    inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
   }
 }

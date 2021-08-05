@@ -19,9 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EntitySaveMode extends StObject
 object EntitySaveMode {
   
-  @scala.inline
-  def SaveAndClose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
+  inline def SaveAndClose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
   
-  @scala.inline
-  def SaveAndNew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
+  inline def SaveAndNew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
 }

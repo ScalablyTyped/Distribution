@@ -12,19 +12,15 @@ trait IDefaultAudioDeviceChangedEventArgs extends StObject {
 }
 object IDefaultAudioDeviceChangedEventArgs {
   
-  @scala.inline
-  def apply(id: String, role: AudioDeviceRole): IDefaultAudioDeviceChangedEventArgs = {
+  inline def apply(id: String, role: AudioDeviceRole): IDefaultAudioDeviceChangedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDefaultAudioDeviceChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IDefaultAudioDeviceChangedEventArgsMutableBuilder[Self <: IDefaultAudioDeviceChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDefaultAudioDeviceChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: AudioDeviceRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AudioDeviceRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait Settings
      with ViewerState
 object Settings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ID: String,
     acceptHeader: String,
     activePageIndex: Double,

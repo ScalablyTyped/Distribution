@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaKeyMessageType extends StObject
 object MediaKeyMessageType {
   
-  @scala.inline
-  def `individualization-request`: typings.std.stdStrings.`individualization-request` = "individualization-request".asInstanceOf[typings.std.stdStrings.`individualization-request`]
+  inline def `individualization-request`: typings.std.stdStrings.`individualization-request` = "individualization-request".asInstanceOf[typings.std.stdStrings.`individualization-request`]
   
-  @scala.inline
-  def `license-release`: typings.std.stdStrings.`license-release` = "license-release".asInstanceOf[typings.std.stdStrings.`license-release`]
+  inline def `license-release`: typings.std.stdStrings.`license-release` = "license-release".asInstanceOf[typings.std.stdStrings.`license-release`]
   
-  @scala.inline
-  def `license-renewal`: typings.std.stdStrings.`license-renewal` = "license-renewal".asInstanceOf[typings.std.stdStrings.`license-renewal`]
+  inline def `license-renewal`: typings.std.stdStrings.`license-renewal` = "license-renewal".asInstanceOf[typings.std.stdStrings.`license-renewal`]
   
-  @scala.inline
-  def `license-request`: typings.std.stdStrings.`license-request` = "license-request".asInstanceOf[typings.std.stdStrings.`license-request`]
+  inline def `license-request`: typings.std.stdStrings.`license-request` = "license-request".asInstanceOf[typings.std.stdStrings.`license-request`]
 }

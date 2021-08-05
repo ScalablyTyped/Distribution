@@ -23,31 +23,23 @@ trait ModifyInstanceCreditSpecificationRequest extends StObject {
 }
 object ModifyInstanceCreditSpecificationRequest {
   
-  @scala.inline
-  def apply(InstanceCreditSpecifications: InstanceCreditSpecificationListRequest): ModifyInstanceCreditSpecificationRequest = {
+  inline def apply(InstanceCreditSpecifications: InstanceCreditSpecificationListRequest): ModifyInstanceCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(InstanceCreditSpecifications = InstanceCreditSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceCreditSpecificationRequest]
   }
   
-  @scala.inline
-  implicit class ModifyInstanceCreditSpecificationRequestMutableBuilder[Self <: ModifyInstanceCreditSpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstanceCreditSpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceCreditSpecifications(value: InstanceCreditSpecificationListRequest): Self = StObject.set(x, "InstanceCreditSpecifications", value.asInstanceOf[js.Any])
+    inline def setInstanceCreditSpecifications(value: InstanceCreditSpecificationListRequest): Self = StObject.set(x, "InstanceCreditSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecificationRequest*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value :_*))
+    inline def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecificationRequest*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value :_*))
   }
 }

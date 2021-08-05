@@ -18,19 +18,15 @@ trait WebACLUpdate extends StObject {
 }
 object WebACLUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, ActivatedRule: ActivatedRule): WebACLUpdate = {
+  inline def apply(Action: ChangeAction, ActivatedRule: ActivatedRule): WebACLUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ActivatedRule = ActivatedRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebACLUpdate]
   }
   
-  @scala.inline
-  implicit class WebACLUpdateMutableBuilder[Self <: WebACLUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: WebACLUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivatedRule(value: ActivatedRule): Self = StObject.set(x, "ActivatedRule", value.asInstanceOf[js.Any])
+    inline def setActivatedRule(value: ActivatedRule): Self = StObject.set(x, "ActivatedRule", value.asInstanceOf[js.Any])
   }
 }

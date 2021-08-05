@@ -11,19 +11,15 @@ trait GoogleCloudMlV1AddTrialMeasurementRequest extends StObject {
 }
 object GoogleCloudMlV1AddTrialMeasurementRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1AddTrialMeasurementRequest = {
+  inline def apply(): GoogleCloudMlV1AddTrialMeasurementRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1AddTrialMeasurementRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1AddTrialMeasurementRequestMutableBuilder[Self <: GoogleCloudMlV1AddTrialMeasurementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1AddTrialMeasurementRequest](x: Self) {
     
-    @scala.inline
-    def setMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "measurement", value.asInstanceOf[js.Any])
+    inline def setMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "measurement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementUndefined: Self = StObject.set(x, "measurement", js.undefined)
+    inline def setMeasurementUndefined: Self = StObject.set(x, "measurement", js.undefined)
   }
 }

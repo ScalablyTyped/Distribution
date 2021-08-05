@@ -12,19 +12,15 @@ trait ReposRequestPagesBuildEndpoint extends StObject {
 }
 object ReposRequestPagesBuildEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposRequestPagesBuildEndpoint = {
+  inline def apply(owner: String, repo: String): ReposRequestPagesBuildEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposRequestPagesBuildEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposRequestPagesBuildEndpointMutableBuilder[Self <: ReposRequestPagesBuildEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposRequestPagesBuildEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

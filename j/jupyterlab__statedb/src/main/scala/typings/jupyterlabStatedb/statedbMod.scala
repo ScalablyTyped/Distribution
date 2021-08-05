@@ -31,46 +31,46 @@ object statedbMod {
        with IStateDB[T] {
     def this(options: IOptions[T]) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
     /**
       * Clear the entire database.
       */
-    var _clear: js.Any = js.native
+    /* private */ var _clear: js.Any = js.native
     
-    var _connector: js.Any = js.native
+    /* private */ var _connector: js.Any = js.native
     
     /**
       * Fetch a value from the database.
       */
-    var _fetch: js.Any = js.native
+    /* private */ var _fetch: js.Any = js.native
     
     /**
       * Fetch a list from the database.
       */
-    var _list: js.Any = js.native
+    /* private */ var _list: js.Any = js.native
     
     /**
       * Merge data into the state database.
       */
-    var _merge: js.Any = js.native
+    /* private */ var _merge: js.Any = js.native
     
     /**
       * Overwrite the entire database with new contents.
       */
-    var _overwrite: js.Any = js.native
+    /* private */ var _overwrite: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Remove a key in the database.
       */
-    var _remove: js.Any = js.native
+    /* private */ var _remove: js.Any = js.native
     
     /**
       * Save a key and its value in the database.
       */
-    var _save: js.Any = js.native
+    /* private */ var _save: js.Any = js.native
     
     /**
       * A signal that emits the change type any time a value changes.
@@ -93,7 +93,7 @@ object statedbMod {
       extends StObject
          with IDataConnector[String, String, String, String] {
       
-      var _storage: js.Any = js.native
+      /* private */ var _storage: js.Any = js.native
     }
     
     /**
@@ -116,24 +116,19 @@ object statedbMod {
     }
     object Change {
       
-      @scala.inline
-      def apply(`type`: clear | remove | save): Change = {
+      inline def apply(`type`: clear | remove | save): Change = {
         val __obj = js.Dynamic.literal(id = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Change]
       }
       
-      @scala.inline
-      implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+      extension [Self <: Change](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdNull: Self = StObject.set(x, "id", null)
+        inline def setIdNull: Self = StObject.set(x, "id", null)
         
-        @scala.inline
-        def setType(value: clear | remove | save): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: clear | remove | save): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -156,24 +151,19 @@ object statedbMod {
     }
     object DataTransform {
       
-      @scala.inline
-      def apply[T /* <: ReadonlyPartialJSONValue */](`type`: cancel | clear | merge | overwrite): DataTransform[T] = {
+      inline def apply[T /* <: ReadonlyPartialJSONValue */](`type`: cancel | clear | merge | overwrite): DataTransform[T] = {
         val __obj = js.Dynamic.literal(contents = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[DataTransform[T]]
       }
       
-      @scala.inline
-      implicit class DataTransformMutableBuilder[Self <: DataTransform[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & DataTransform[T]) extends AnyVal {
+      extension [Self <: DataTransform[?], T /* <: ReadonlyPartialJSONValue */](x: Self & DataTransform[T]) {
         
-        @scala.inline
-        def setContents(value: Content[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+        inline def setContents(value: Content[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentsNull: Self = StObject.set(x, "contents", null)
+        inline def setContentsNull: Self = StObject.set(x, "contents", null)
         
-        @scala.inline
-        def setType(value: cancel | clear | merge | overwrite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: cancel | clear | merge | overwrite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -196,26 +186,20 @@ object statedbMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: ReadonlyPartialJSONValue */](): IOptions[T] = {
+      inline def apply[T /* <: ReadonlyPartialJSONValue */](): IOptions[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T /* <: ReadonlyPartialJSONValue */](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setConnector(value: IDataConnector[String, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+        inline def setConnector(value: IDataConnector[String, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+        inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
         
-        @scala.inline
-        def setTransform(value: js.Promise[DataTransform[T]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+        inline def setTransform(value: js.Promise[DataTransform[T]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       }
     }
   }

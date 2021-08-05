@@ -15,22 +15,17 @@ trait GetObjectViewItem extends StObject {
 }
 object GetObjectViewItem {
   
-  @scala.inline
-  def apply(id: String): GetObjectViewItem = {
+  inline def apply(id: String): GetObjectViewItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[GetObjectViewItem]
   }
   
-  @scala.inline
-  implicit class GetObjectViewItemMutableBuilder[Self <: GetObjectViewItem] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectViewItem](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

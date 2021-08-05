@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontStyle extends StObject
 object FontStyle {
   
-  @scala.inline
-  def italic: typings.cytoscape.cytoscapeStrings.italic = "italic".asInstanceOf[typings.cytoscape.cytoscapeStrings.italic]
+  inline def italic: typings.cytoscape.cytoscapeStrings.italic = "italic".asInstanceOf[typings.cytoscape.cytoscapeStrings.italic]
   
-  @scala.inline
-  def normal: typings.cytoscape.cytoscapeStrings.normal = "normal".asInstanceOf[typings.cytoscape.cytoscapeStrings.normal]
+  inline def normal: typings.cytoscape.cytoscapeStrings.normal = "normal".asInstanceOf[typings.cytoscape.cytoscapeStrings.normal]
   
-  @scala.inline
-  def oblique: typings.cytoscape.cytoscapeStrings.oblique = "oblique".asInstanceOf[typings.cytoscape.cytoscapeStrings.oblique]
+  inline def oblique: typings.cytoscape.cytoscapeStrings.oblique = "oblique".asInstanceOf[typings.cytoscape.cytoscapeStrings.oblique]
 }

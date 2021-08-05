@@ -20,37 +20,27 @@ trait GoogleCloudRecommendationengineV1beta1Catalog extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1Catalog {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1Catalog = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1Catalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1Catalog]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CatalogMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1Catalog] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1Catalog](x: Self) {
     
-    @scala.inline
-    def setCatalogItemLevelConfig(value: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig): Self = StObject.set(x, "catalogItemLevelConfig", value.asInstanceOf[js.Any])
+    inline def setCatalogItemLevelConfig(value: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig): Self = StObject.set(x, "catalogItemLevelConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogItemLevelConfigUndefined: Self = StObject.set(x, "catalogItemLevelConfig", js.undefined)
+    inline def setCatalogItemLevelConfigUndefined: Self = StObject.set(x, "catalogItemLevelConfig", js.undefined)
     
-    @scala.inline
-    def setDefaultEventStoreId(value: String): Self = StObject.set(x, "defaultEventStoreId", value.asInstanceOf[js.Any])
+    inline def setDefaultEventStoreId(value: String): Self = StObject.set(x, "defaultEventStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEventStoreIdUndefined: Self = StObject.set(x, "defaultEventStoreId", js.undefined)
+    inline def setDefaultEventStoreIdUndefined: Self = StObject.set(x, "defaultEventStoreId", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

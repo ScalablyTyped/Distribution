@@ -62,20 +62,16 @@ object interpreterMod {
   }
   object InterpreterOpts {
     
-    @scala.inline
-    def apply(): InterpreterOpts = {
+    inline def apply(): InterpreterOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InterpreterOpts]
     }
     
-    @scala.inline
-    implicit class InterpreterOptsMutableBuilder[Self <: InterpreterOpts] (val x: Self) extends AnyVal {
+    extension [Self <: InterpreterOpts](x: Self) {
       
-      @scala.inline
-      def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+      inline def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+      inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
     }
   }
   
@@ -87,26 +83,20 @@ object interpreterMod {
   }
   object InterpreterResult {
     
-    @scala.inline
-    def apply(): InterpreterResult = {
+    inline def apply(): InterpreterResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InterpreterResult]
     }
     
-    @scala.inline
-    implicit class InterpreterResultMutableBuilder[Self <: InterpreterResult] (val x: Self) extends AnyVal {
+    extension [Self <: InterpreterResult](x: Self) {
       
-      @scala.inline
-      def setExceptionError(value: VmError): Self = StObject.set(x, "exceptionError", value.asInstanceOf[js.Any])
+      inline def setExceptionError(value: VmError): Self = StObject.set(x, "exceptionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionErrorUndefined: Self = StObject.set(x, "exceptionError", js.undefined)
+      inline def setExceptionErrorUndefined: Self = StObject.set(x, "exceptionError", js.undefined)
       
-      @scala.inline
-      def setRunState(value: RunState): Self = StObject.set(x, "runState", value.asInstanceOf[js.Any])
+      inline def setRunState(value: RunState): Self = StObject.set(x, "runState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunStateUndefined: Self = StObject.set(x, "runState", js.undefined)
+      inline def setRunStateUndefined: Self = StObject.set(x, "runState", js.undefined)
     }
   }
   
@@ -136,8 +126,7 @@ object interpreterMod {
   }
   object InterpreterStep {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account: typings.ethereumjsAccount.mod.default,
       address: Buffer,
       codeAddress: Buffer,
@@ -154,47 +143,33 @@ object interpreterMod {
       __obj.asInstanceOf[InterpreterStep]
     }
     
-    @scala.inline
-    implicit class InterpreterStepMutableBuilder[Self <: InterpreterStep] (val x: Self) extends AnyVal {
+    extension [Self <: InterpreterStep](x: Self) {
       
-      @scala.inline
-      def setAccount(value: typings.ethereumjsAccount.mod.default): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: typings.ethereumjsAccount.mod.default): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeAddress(value: Buffer): Self = StObject.set(x, "codeAddress", value.asInstanceOf[js.Any])
+      inline def setCodeAddress(value: Buffer): Self = StObject.set(x, "codeAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLeft(value: ^): Self = StObject.set(x, "gasLeft", value.asInstanceOf[js.Any])
+      inline def setGasLeft(value: ^): Self = StObject.set(x, "gasLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: js.Array[Double]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: js.Array[Double]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryVarargs(value: Double*): Self = StObject.set(x, "memory", js.Array(value :_*))
+      inline def setMemoryVarargs(value: Double*): Self = StObject.set(x, "memory", js.Array(value :_*))
       
-      @scala.inline
-      def setMemoryWordCount(value: ^): Self = StObject.set(x, "memoryWordCount", value.asInstanceOf[js.Any])
+      inline def setMemoryWordCount(value: ^): Self = StObject.set(x, "memoryWordCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpcode(value: Opcode): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
+      inline def setOpcode(value: Opcode): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+      inline def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[^]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[^]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: ^ *): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: ^ *): Self = StObject.set(x, "stack", js.Array(value :_*))
       
-      @scala.inline
-      def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
+      inline def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,8 +199,7 @@ object interpreterMod {
   }
   object RunState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _common: typings.ethereumjsCommon.mod.default,
       code: Buffer,
       eei: typings.ethereumjsVm.eeiMod.default,
@@ -242,44 +216,31 @@ object interpreterMod {
       __obj.asInstanceOf[RunState]
     }
     
-    @scala.inline
-    implicit class RunStateMutableBuilder[Self <: RunState] (val x: Self) extends AnyVal {
+    extension [Self <: RunState](x: Self) {
       
-      @scala.inline
-      def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEei(value: typings.ethereumjsVm.eeiMod.default): Self = StObject.set(x, "eei", value.asInstanceOf[js.Any])
+      inline def setEei(value: typings.ethereumjsVm.eeiMod.default): Self = StObject.set(x, "eei", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighestMemCost(value: ^): Self = StObject.set(x, "highestMemCost", value.asInstanceOf[js.Any])
+      inline def setHighestMemCost(value: ^): Self = StObject.set(x, "highestMemCost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: typings.ethereumjsVm.memoryMod.default): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: typings.ethereumjsVm.memoryMod.default): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryWordCount(value: ^): Self = StObject.set(x, "memoryWordCount", value.asInstanceOf[js.Any])
+      inline def setMemoryWordCount(value: ^): Self = StObject.set(x, "memoryWordCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpCode(value: Double): Self = StObject.set(x, "opCode", value.asInstanceOf[js.Any])
+      inline def setOpCode(value: Double): Self = StObject.set(x, "opCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramCounter(value: Double): Self = StObject.set(x, "programCounter", value.asInstanceOf[js.Any])
+      inline def setProgramCounter(value: Double): Self = StObject.set(x, "programCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: typings.ethereumjsVm.stackMod.default): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: typings.ethereumjsVm.stackMod.default): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
+      inline def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidJumps(value: js.Array[Double]): Self = StObject.set(x, "validJumps", value.asInstanceOf[js.Any])
+      inline def setValidJumps(value: js.Array[Double]): Self = StObject.set(x, "validJumps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidJumpsVarargs(value: Double*): Self = StObject.set(x, "validJumps", js.Array(value :_*))
+      inline def setValidJumpsVarargs(value: Double*): Self = StObject.set(x, "validJumps", js.Array(value :_*))
       
-      @scala.inline
-      def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
+      inline def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
     }
   }
 }

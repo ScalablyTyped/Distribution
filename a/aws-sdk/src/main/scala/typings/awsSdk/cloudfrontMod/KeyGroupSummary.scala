@@ -13,16 +13,13 @@ trait KeyGroupSummary extends StObject {
 }
 object KeyGroupSummary {
   
-  @scala.inline
-  def apply(KeyGroup: KeyGroup): KeyGroupSummary = {
+  inline def apply(KeyGroup: KeyGroup): KeyGroupSummary = {
     val __obj = js.Dynamic.literal(KeyGroup = KeyGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyGroupSummary]
   }
   
-  @scala.inline
-  implicit class KeyGroupSummaryMutableBuilder[Self <: KeyGroupSummary] (val x: Self) extends AnyVal {
+  extension [Self <: KeyGroupSummary](x: Self) {
     
-    @scala.inline
-    def setKeyGroup(value: KeyGroup): Self = StObject.set(x, "KeyGroup", value.asInstanceOf[js.Any])
+    inline def setKeyGroup(value: KeyGroup): Self = StObject.set(x, "KeyGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait BatchSummary extends StObject {
 }
 object BatchSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     executionElapsed: String,
     executionEnd: String,
     executionStart: String,
@@ -36,31 +35,22 @@ object BatchSummary {
     __obj.asInstanceOf[BatchSummary]
   }
   
-  @scala.inline
-  implicit class BatchSummaryMutableBuilder[Self <: BatchSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BatchSummary](x: Self) {
     
-    @scala.inline
-    def setExecutionElapsed(value: String): Self = StObject.set(x, "executionElapsed", value.asInstanceOf[js.Any])
+    inline def setExecutionElapsed(value: String): Self = StObject.set(x, "executionElapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionEnd(value: String): Self = StObject.set(x, "executionEnd", value.asInstanceOf[js.Any])
+    inline def setExecutionEnd(value: String): Self = StObject.set(x, "executionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStart(value: String): Self = StObject.set(x, "executionStart", value.asInstanceOf[js.Any])
+    inline def setExecutionStart(value: String): Self = StObject.set(x, "executionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+    inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSummaries(value: js.Array[ResultSetSummary]): Self = StObject.set(x, "resultSetSummaries", value.asInstanceOf[js.Any])
+    inline def setResultSetSummaries(value: js.Array[ResultSetSummary]): Self = StObject.set(x, "resultSetSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSummariesVarargs(value: ResultSetSummary*): Self = StObject.set(x, "resultSetSummaries", js.Array(value :_*))
+    inline def setResultSetSummariesVarargs(value: ResultSetSummary*): Self = StObject.set(x, "resultSetSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setSelection(value: ISelectionData): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: ISelectionData): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

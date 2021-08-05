@@ -12,19 +12,15 @@ trait BackgroundColorStringBorderColorString extends StObject {
 }
 object BackgroundColorStringBorderColorString {
   
-  @scala.inline
-  def apply(backgroundColor: String, borderColor: String): BackgroundColorStringBorderColorString = {
+  inline def apply(backgroundColor: String, borderColor: String): BackgroundColorStringBorderColorString = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundColorStringBorderColorString]
   }
   
-  @scala.inline
-  implicit class BackgroundColorStringBorderColorStringMutableBuilder[Self <: BackgroundColorStringBorderColorString] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColorStringBorderColorString](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
   }
 }

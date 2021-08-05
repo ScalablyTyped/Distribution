@@ -14,31 +14,23 @@ trait BodyColor extends StObject {
 }
 object BodyColor {
   
-  @scala.inline
-  def apply(): BodyColor = {
+  inline def apply(): BodyColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BodyColor]
   }
   
-  @scala.inline
-  implicit class BodyColorMutableBuilder[Self <: BodyColor] (val x: Self) extends AnyVal {
+  extension [Self <: BodyColor](x: Self) {
     
-    @scala.inline
-    def setBodyColor(value: String): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
+    inline def setBodyColor(value: String): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyColorUndefined: Self = StObject.set(x, "bodyColor", js.undefined)
+    inline def setBodyColorUndefined: Self = StObject.set(x, "bodyColor", js.undefined)
     
-    @scala.inline
-    def setBodyFontSize(value: Double): Self = StObject.set(x, "bodyFontSize", value.asInstanceOf[js.Any])
+    inline def setBodyFontSize(value: Double): Self = StObject.set(x, "bodyFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyFontSizeUndefined: Self = StObject.set(x, "bodyFontSize", js.undefined)
+    inline def setBodyFontSizeUndefined: Self = StObject.set(x, "bodyFontSize", js.undefined)
     
-    @scala.inline
-    def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
+    inline def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
+    inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
   }
 }

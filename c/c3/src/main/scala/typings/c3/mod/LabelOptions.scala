@@ -20,25 +20,19 @@ trait LabelOptions extends StObject {
 }
 object LabelOptions {
   
-  @scala.inline
-  def apply(): LabelOptions = {
+  inline def apply(): LabelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelOptions]
   }
   
-  @scala.inline
-  implicit class LabelOptionsMutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LabelOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (/* value */ Double, /* ratio */ Double, /* id */ String) => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+    inline def setFormat(value: (/* value */ Double, /* ratio */ Double, /* id */ String) => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

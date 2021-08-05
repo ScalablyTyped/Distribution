@@ -10,8 +10,7 @@ trait UploadPartCopyOutput
      with typings.awsSdkClientS3Node.typesUploadPartCopyOutputMod.UploadPartCopyOutput
 object UploadPartCopyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UploadPartCopyOutput = {
+  inline def apply($metadata: ResponseMetadata): UploadPartCopyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartCopyOutput]
   }

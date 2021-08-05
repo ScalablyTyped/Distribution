@@ -18,25 +18,19 @@ trait GoogleActionsTransactionsV3PaymentParameters extends StObject {
 }
 object GoogleActionsTransactionsV3PaymentParameters {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3PaymentParameters = {
+  inline def apply(): GoogleActionsTransactionsV3PaymentParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3PaymentParameters]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3PaymentParametersMutableBuilder[Self <: GoogleActionsTransactionsV3PaymentParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3PaymentParameters](x: Self) {
     
-    @scala.inline
-    def setGooglePaymentOption(value: GoogleActionsTransactionsV3GooglePaymentOption): Self = StObject.set(x, "googlePaymentOption", value.asInstanceOf[js.Any])
+    inline def setGooglePaymentOption(value: GoogleActionsTransactionsV3GooglePaymentOption): Self = StObject.set(x, "googlePaymentOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGooglePaymentOptionUndefined: Self = StObject.set(x, "googlePaymentOption", js.undefined)
+    inline def setGooglePaymentOptionUndefined: Self = StObject.set(x, "googlePaymentOption", js.undefined)
     
-    @scala.inline
-    def setMerchantPaymentOption(value: GoogleActionsTransactionsV3MerchantPaymentOption): Self = StObject.set(x, "merchantPaymentOption", value.asInstanceOf[js.Any])
+    inline def setMerchantPaymentOption(value: GoogleActionsTransactionsV3MerchantPaymentOption): Self = StObject.set(x, "merchantPaymentOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantPaymentOptionUndefined: Self = StObject.set(x, "merchantPaymentOption", js.undefined)
+    inline def setMerchantPaymentOptionUndefined: Self = StObject.set(x, "merchantPaymentOption", js.undefined)
   }
 }

@@ -135,11 +135,9 @@ object FileDescriptorProto {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): FileDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorProto]
+  inline def deserializeBinary(bytes: Uint8Array): FileDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorProto]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: FileDescriptorProto, reader: BinaryReader): FileDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorProto]
+  inline def deserializeBinaryFromReader(message: FileDescriptorProto, reader: BinaryReader): FileDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.extensions")
   @js.native
@@ -148,17 +146,13 @@ object FileDescriptorProto {
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: FileDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: FileDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: FileDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: FileDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -188,8 +182,7 @@ object FileDescriptorProto {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dependencyList: js.Array[String],
       enumTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject],
       extensionList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject],
@@ -202,80 +195,55 @@ object FileDescriptorProto {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setDependencyList(value: js.Array[String]): Self = StObject.set(x, "dependencyList", value.asInstanceOf[js.Any])
+      inline def setDependencyList(value: js.Array[String]): Self = StObject.set(x, "dependencyList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependencyListVarargs(value: String*): Self = StObject.set(x, "dependencyList", js.Array(value :_*))
+      inline def setDependencyListVarargs(value: String*): Self = StObject.set(x, "dependencyList", js.Array(value :_*))
       
-      @scala.inline
-      def setEnumTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]): Self = StObject.set(x, "enumTypeList", value.asInstanceOf[js.Any])
+      inline def setEnumTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]): Self = StObject.set(x, "enumTypeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value :_*))
+      inline def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "extensionList", value.asInstanceOf[js.Any])
+      inline def setExtensionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "extensionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value :_*))
+      inline def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value :_*))
       
-      @scala.inline
-      def setMessageTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject]): Self = StObject.set(x, "messageTypeList", value.asInstanceOf[js.Any])
+      inline def setMessageTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject]): Self = StObject.set(x, "messageTypeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject*): Self = StObject.set(x, "messageTypeList", js.Array(value :_*))
+      inline def setMessageTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject*): Self = StObject.set(x, "messageTypeList", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptions(value: typings.googleProtobuf.descriptorPbMod.FileOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.googleProtobuf.descriptorPbMod.FileOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPb_package(value: String): Self = StObject.set(x, "pb_package", value.asInstanceOf[js.Any])
+      inline def setPb_package(value: String): Self = StObject.set(x, "pb_package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPb_packageUndefined: Self = StObject.set(x, "pb_package", js.undefined)
+      inline def setPb_packageUndefined: Self = StObject.set(x, "pb_package", js.undefined)
       
-      @scala.inline
-      def setPublicDependencyList(value: js.Array[Double]): Self = StObject.set(x, "publicDependencyList", value.asInstanceOf[js.Any])
+      inline def setPublicDependencyList(value: js.Array[Double]): Self = StObject.set(x, "publicDependencyList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicDependencyListVarargs(value: Double*): Self = StObject.set(x, "publicDependencyList", js.Array(value :_*))
+      inline def setPublicDependencyListVarargs(value: Double*): Self = StObject.set(x, "publicDependencyList", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceList(value: js.Array[typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject]): Self = StObject.set(x, "serviceList", value.asInstanceOf[js.Any])
+      inline def setServiceList(value: js.Array[typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject]): Self = StObject.set(x, "serviceList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceListVarargs(value: typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject*): Self = StObject.set(x, "serviceList", js.Array(value :_*))
+      inline def setServiceListVarargs(value: typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject*): Self = StObject.set(x, "serviceList", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceCodeInfo(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.AsObject): Self = StObject.set(x, "sourceCodeInfo", value.asInstanceOf[js.Any])
+      inline def setSourceCodeInfo(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.AsObject): Self = StObject.set(x, "sourceCodeInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeInfoUndefined: Self = StObject.set(x, "sourceCodeInfo", js.undefined)
+      inline def setSourceCodeInfoUndefined: Self = StObject.set(x, "sourceCodeInfo", js.undefined)
       
-      @scala.inline
-      def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
       
-      @scala.inline
-      def setWeakDependencyList(value: js.Array[Double]): Self = StObject.set(x, "weakDependencyList", value.asInstanceOf[js.Any])
+      inline def setWeakDependencyList(value: js.Array[Double]): Self = StObject.set(x, "weakDependencyList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakDependencyListVarargs(value: Double*): Self = StObject.set(x, "weakDependencyList", js.Array(value :_*))
+      inline def setWeakDependencyListVarargs(value: Double*): Self = StObject.set(x, "weakDependencyList", js.Array(value :_*))
     }
   }
 }

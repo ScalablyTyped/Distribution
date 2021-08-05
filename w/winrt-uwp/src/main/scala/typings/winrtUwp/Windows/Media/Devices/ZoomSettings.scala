@@ -15,19 +15,15 @@ trait ZoomSettings extends StObject {
 }
 object ZoomSettings {
   
-  @scala.inline
-  def apply(mode: ZoomTransitionMode, value: Double): ZoomSettings = {
+  inline def apply(mode: ZoomTransitionMode, value: Double): ZoomSettings = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomSettings]
   }
   
-  @scala.inline
-  implicit class ZoomSettingsMutableBuilder[Self <: ZoomSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomSettings](x: Self) {
     
-    @scala.inline
-    def setMode(value: ZoomTransitionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ZoomTransitionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

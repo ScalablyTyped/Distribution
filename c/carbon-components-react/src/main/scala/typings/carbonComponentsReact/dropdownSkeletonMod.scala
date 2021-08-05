@@ -28,26 +28,20 @@ object dropdownSkeletonMod extends Shortcut {
   }
   object DropdownSkeletonProps {
     
-    @scala.inline
-    def apply(): DropdownSkeletonProps = {
+    inline def apply(): DropdownSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownSkeletonProps]
     }
     
-    @scala.inline
-    implicit class DropdownSkeletonPropsMutableBuilder[Self <: DropdownSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setSize(value: ListBoxSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ListBoxSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

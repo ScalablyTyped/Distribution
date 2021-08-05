@@ -14,25 +14,19 @@ trait GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends StObject {
 }
 object GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata = {
+  inline def apply(): GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2DirectoryMetadataMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata](x: Self) {
     
-    @scala.inline
-    def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

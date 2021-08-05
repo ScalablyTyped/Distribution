@@ -21,25 +21,19 @@ trait RelativeDateFilterOptions extends StObject {
 }
 object RelativeDateFilterOptions {
   
-  @scala.inline
-  def apply(anchorDate: Date, periodType: PeriodType, rangeN: Double, rangeType: DateRangeType): RelativeDateFilterOptions = {
+  inline def apply(anchorDate: Date, periodType: PeriodType, rangeN: Double, rangeType: DateRangeType): RelativeDateFilterOptions = {
     val __obj = js.Dynamic.literal(anchorDate = anchorDate.asInstanceOf[js.Any], periodType = periodType.asInstanceOf[js.Any], rangeN = rangeN.asInstanceOf[js.Any], rangeType = rangeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeDateFilterOptions]
   }
   
-  @scala.inline
-  implicit class RelativeDateFilterOptionsMutableBuilder[Self <: RelativeDateFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeDateFilterOptions](x: Self) {
     
-    @scala.inline
-    def setAnchorDate(value: Date): Self = StObject.set(x, "anchorDate", value.asInstanceOf[js.Any])
+    inline def setAnchorDate(value: Date): Self = StObject.set(x, "anchorDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodType(value: PeriodType): Self = StObject.set(x, "periodType", value.asInstanceOf[js.Any])
+    inline def setPeriodType(value: PeriodType): Self = StObject.set(x, "periodType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeN(value: Double): Self = StObject.set(x, "rangeN", value.asInstanceOf[js.Any])
+    inline def setRangeN(value: Double): Self = StObject.set(x, "rangeN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeType(value: DateRangeType): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
+    inline def setRangeType(value: DateRangeType): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
   }
 }

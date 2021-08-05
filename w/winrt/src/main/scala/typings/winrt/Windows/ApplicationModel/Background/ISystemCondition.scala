@@ -12,16 +12,13 @@ trait ISystemCondition
 }
 object ISystemCondition {
   
-  @scala.inline
-  def apply(conditionType: SystemConditionType): ISystemCondition = {
+  inline def apply(conditionType: SystemConditionType): ISystemCondition = {
     val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISystemCondition]
   }
   
-  @scala.inline
-  implicit class ISystemConditionMutableBuilder[Self <: ISystemCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ISystemCondition](x: Self) {
     
-    @scala.inline
-    def setConditionType(value: SystemConditionType): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: SystemConditionType): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
   }
 }

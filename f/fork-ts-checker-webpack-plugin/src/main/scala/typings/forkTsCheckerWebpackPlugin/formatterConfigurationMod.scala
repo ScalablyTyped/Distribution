@@ -12,10 +12,8 @@ object formatterConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFormatterConfiguration(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatterConfiguration")().asInstanceOf[Formatter]
-  @scala.inline
-  def createFormatterConfiguration(options: FormatterOptions): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatterConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  inline def createFormatterConfiguration(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatterConfiguration")().asInstanceOf[Formatter]
+  inline def createFormatterConfiguration(options: FormatterOptions): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatterConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Formatter]
   
   type FormatterConfiguration = Formatter
 }

@@ -33,43 +33,31 @@ trait SchemaPostPerUserInfo extends StObject {
 }
 object SchemaPostPerUserInfo {
   
-  @scala.inline
-  def apply(): SchemaPostPerUserInfo = {
+  inline def apply(): SchemaPostPerUserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPostPerUserInfo]
   }
   
-  @scala.inline
-  implicit class SchemaPostPerUserInfoMutableBuilder[Self <: SchemaPostPerUserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPostPerUserInfo](x: Self) {
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setHasEditAccess(value: Boolean): Self = StObject.set(x, "hasEditAccess", value.asInstanceOf[js.Any])
+    inline def setHasEditAccess(value: Boolean): Self = StObject.set(x, "hasEditAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasEditAccessUndefined: Self = StObject.set(x, "hasEditAccess", js.undefined)
+    inline def setHasEditAccessUndefined: Self = StObject.set(x, "hasEditAccess", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
+    inline def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostIdUndefined: Self = StObject.set(x, "postId", js.undefined)
+    inline def setPostIdUndefined: Self = StObject.set(x, "postId", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

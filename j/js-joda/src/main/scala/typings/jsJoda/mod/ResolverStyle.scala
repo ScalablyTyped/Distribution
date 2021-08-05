@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ResolverStyle")
 @js.native
-class ResolverStyle protected () extends StObject
+/* private */ class ResolverStyle () extends StObject
 object ResolverStyle {
   
   @JSImport("js-joda", "ResolverStyle")
@@ -17,20 +17,17 @@ object ResolverStyle {
   @JSImport("js-joda", "ResolverStyle.LENIENT")
   @js.native
   def LENIENT: ResolverStyle = js.native
-  @scala.inline
-  def LENIENT_=(x: ResolverStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LENIENT")(x.asInstanceOf[js.Any])
+  inline def LENIENT_=(x: ResolverStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LENIENT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ResolverStyle.SMART")
   @js.native
   def SMART: ResolverStyle = js.native
-  @scala.inline
-  def SMART_=(x: ResolverStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMART")(x.asInstanceOf[js.Any])
+  inline def SMART_=(x: ResolverStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMART")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ResolverStyle.STRICT")
   @js.native
   def STRICT: ResolverStyle = js.native
-  @scala.inline
-  def STRICT_=(x: ResolverStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRICT")(x.asInstanceOf[js.Any])
+  inline def STRICT_=(x: ResolverStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRICT")(x.asInstanceOf[js.Any])
 }

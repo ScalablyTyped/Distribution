@@ -41,8 +41,7 @@ object credentialProviderChainMod {
     @JSImport("aws-sdk/lib/credentials/credential_provider_chain", "CredentialProviderChain.defaultProviders")
     @js.native
     def defaultProviders: js.Array[provider] = js.native
-    @scala.inline
-    def defaultProviders_=(x: js.Array[provider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProviders")(x.asInstanceOf[js.Any])
+    inline def defaultProviders_=(x: js.Array[provider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProviders")(x.asInstanceOf[js.Any])
   }
   
   type provider = js.Function0[Credentials]

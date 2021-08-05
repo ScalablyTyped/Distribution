@@ -14,6 +14,5 @@ object computeScoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeScore(peer: String, pstats: PeerStats, params: PeerScoreParams, peerIPs: Map[String, Set[String]]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeScore")(peer.asInstanceOf[js.Any], pstats.asInstanceOf[js.Any], params.asInstanceOf[js.Any], peerIPs.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def computeScore(peer: String, pstats: PeerStats, params: PeerScoreParams, peerIPs: Map[String, Set[String]]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeScore")(peer.asInstanceOf[js.Any], pstats.asInstanceOf[js.Any], params.asInstanceOf[js.Any], peerIPs.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

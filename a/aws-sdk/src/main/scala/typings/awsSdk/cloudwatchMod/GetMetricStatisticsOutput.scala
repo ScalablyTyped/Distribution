@@ -18,28 +18,21 @@ trait GetMetricStatisticsOutput extends StObject {
 }
 object GetMetricStatisticsOutput {
   
-  @scala.inline
-  def apply(): GetMetricStatisticsOutput = {
+  inline def apply(): GetMetricStatisticsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMetricStatisticsOutput]
   }
   
-  @scala.inline
-  implicit class GetMetricStatisticsOutputMutableBuilder[Self <: GetMetricStatisticsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricStatisticsOutput](x: Self) {
     
-    @scala.inline
-    def setDatapoints(value: Datapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
+    inline def setDatapoints(value: Datapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapointsUndefined: Self = StObject.set(x, "Datapoints", js.undefined)
+    inline def setDatapointsUndefined: Self = StObject.set(x, "Datapoints", js.undefined)
     
-    @scala.inline
-    def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
+    inline def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
   }
 }

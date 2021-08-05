@@ -79,8 +79,7 @@ trait PopmotionPoserFactoryConfig[P, TD] extends StObject {
 }
 object PopmotionPoserFactoryConfig {
   
-  @scala.inline
-  def apply[P, TD](
+  inline def apply[P, TD](
     addListenerToValue: (String, Styler) => js.Function1[/* v */ js.Any, Unit],
     extendAPI: (/* api */ Poser[
       Value, 
@@ -117,14 +116,11 @@ object PopmotionPoserFactoryConfig {
     __obj.asInstanceOf[PopmotionPoserFactoryConfig[P, TD]]
   }
   
-  @scala.inline
-  implicit class PopmotionPoserFactoryConfigMutableBuilder[Self <: PopmotionPoserFactoryConfig[?, ?], P, TD] (val x: Self & (PopmotionPoserFactoryConfig[P, TD])) extends AnyVal {
+  extension [Self <: PopmotionPoserFactoryConfig[?, ?], P, TD](x: Self & (PopmotionPoserFactoryConfig[P, TD])) {
     
-    @scala.inline
-    def setAddListenerToValue(value: (String, Styler) => js.Function1[/* v */ js.Any, Unit]): Self = StObject.set(x, "addListenerToValue", js.Any.fromFunction2(value))
+    inline def setAddListenerToValue(value: (String, Styler) => js.Function1[/* v */ js.Any, Unit]): Self = StObject.set(x, "addListenerToValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExtendAPI(
+    inline def setExtendAPI(
       value: (/* api */ Poser[
           Value, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
@@ -143,29 +139,21 @@ object PopmotionPoserFactoryConfig {
         ]
     ): Self = StObject.set(x, "extendAPI", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setForceRender(value: ElementStyler => Unit): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
+    inline def setForceRender(value: ElementStyler => Unit): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPosePriority(value: js.Array[String]): Self = StObject.set(x, "posePriority", value.asInstanceOf[js.Any])
+    inline def setPosePriority(value: js.Array[String]): Self = StObject.set(x, "posePriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
+    inline def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
     
-    @scala.inline
-    def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
+    inline def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
     
-    @scala.inline
-    def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
+    inline def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
+    inline def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
     
-    @scala.inline
-    def setSetValueNative(value: (String, js.Any, ElementStyler) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+    inline def setSetValueNative(value: (String, js.Any, ElementStyler) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTransformPose(
+    inline def setTransformPose(
       value: (/* pose */ typings.poseCore.typesMod.Pose[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
           TD

@@ -10,6 +10,5 @@ object removeUndefinedPropertiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def removeUndefinedProperties(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUndefinedProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def removeUndefinedProperties(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUndefinedProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

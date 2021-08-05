@@ -40,8 +40,7 @@ trait ASPxClientListEdit
 }
 object ASPxClientListEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Focus: () => Unit,
     GetCaption: () => String,
@@ -86,22 +85,16 @@ object ASPxClientListEdit {
     __obj.asInstanceOf[ASPxClientListEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientListEditMutableBuilder[Self <: ASPxClientListEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientListEdit](x: Self) {
     
-    @scala.inline
-    def setGetSelectedIndex(value: () => Double): Self = StObject.set(x, "GetSelectedIndex", js.Any.fromFunction0(value))
+    inline def setGetSelectedIndex(value: () => Double): Self = StObject.set(x, "GetSelectedIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedItem(value: () => ASPxClientListEditItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
+    inline def setGetSelectedItem(value: () => ASPxClientListEditItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientListEdit]]): Self = StObject.set(x, "SelectedIndexChanged", value.asInstanceOf[js.Any])
+    inline def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientListEdit]]): Self = StObject.set(x, "SelectedIndexChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSelectedIndex(value: Double => Unit): Self = StObject.set(x, "SetSelectedIndex", js.Any.fromFunction1(value))
+    inline def setSetSelectedIndex(value: Double => Unit): Self = StObject.set(x, "SetSelectedIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectedItem(value: ASPxClientListEditItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
+    inline def setSetSelectedItem(value: ASPxClientListEditItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

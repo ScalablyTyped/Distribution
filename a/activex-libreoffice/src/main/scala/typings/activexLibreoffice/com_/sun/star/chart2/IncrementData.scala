@@ -46,8 +46,7 @@ trait IncrementData extends StObject {
 }
 object IncrementData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseValue: js.Any,
     Distance: js.Any,
     PostEquidistant: js.Any,
@@ -57,19 +56,14 @@ object IncrementData {
     __obj.asInstanceOf[IncrementData]
   }
   
-  @scala.inline
-  implicit class IncrementDataMutableBuilder[Self <: IncrementData] (val x: Self) extends AnyVal {
+  extension [Self <: IncrementData](x: Self) {
     
-    @scala.inline
-    def setBaseValue(value: js.Any): Self = StObject.set(x, "BaseValue", value.asInstanceOf[js.Any])
+    inline def setBaseValue(value: js.Any): Self = StObject.set(x, "BaseValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: js.Any): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: js.Any): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostEquidistant(value: js.Any): Self = StObject.set(x, "PostEquidistant", value.asInstanceOf[js.Any])
+    inline def setPostEquidistant(value: js.Any): Self = StObject.set(x, "PostEquidistant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubIncrements(value: SafeArray[SubIncrement]): Self = StObject.set(x, "SubIncrements", value.asInstanceOf[js.Any])
+    inline def setSubIncrements(value: SafeArray[SubIncrement]): Self = StObject.set(x, "SubIncrements", value.asInstanceOf[js.Any])
   }
 }

@@ -20,40 +20,29 @@ trait GoogleCloudDatacatalogV1beta1SerializedPolicyTag extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1SerializedPolicyTag {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1SerializedPolicyTag = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1SerializedPolicyTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1SerializedPolicyTag]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1SerializedPolicyTagMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1SerializedPolicyTag] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1SerializedPolicyTag](x: Self) {
     
-    @scala.inline
-    def setChildPolicyTags(value: js.Array[GoogleCloudDatacatalogV1beta1SerializedPolicyTag]): Self = StObject.set(x, "childPolicyTags", value.asInstanceOf[js.Any])
+    inline def setChildPolicyTags(value: js.Array[GoogleCloudDatacatalogV1beta1SerializedPolicyTag]): Self = StObject.set(x, "childPolicyTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPolicyTagsUndefined: Self = StObject.set(x, "childPolicyTags", js.undefined)
+    inline def setChildPolicyTagsUndefined: Self = StObject.set(x, "childPolicyTags", js.undefined)
     
-    @scala.inline
-    def setChildPolicyTagsVarargs(value: GoogleCloudDatacatalogV1beta1SerializedPolicyTag*): Self = StObject.set(x, "childPolicyTags", js.Array(value :_*))
+    inline def setChildPolicyTagsVarargs(value: GoogleCloudDatacatalogV1beta1SerializedPolicyTag*): Self = StObject.set(x, "childPolicyTags", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setPolicyTag(value: String): Self = StObject.set(x, "policyTag", value.asInstanceOf[js.Any])
+    inline def setPolicyTag(value: String): Self = StObject.set(x, "policyTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTagUndefined: Self = StObject.set(x, "policyTag", js.undefined)
+    inline def setPolicyTagUndefined: Self = StObject.set(x, "policyTag", js.undefined)
   }
 }

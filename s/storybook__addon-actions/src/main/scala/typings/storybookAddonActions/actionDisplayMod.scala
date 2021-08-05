@@ -20,26 +20,20 @@ object actionDisplayMod {
   }
   object ActionDisplay {
     
-    @scala.inline
-    def apply(count: Double, data: Args, id: String, options: ActionOptions): ActionDisplay = {
+    inline def apply(count: Double, data: Args, id: String, options: ActionOptions): ActionDisplay = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionDisplay]
     }
     
-    @scala.inline
-    implicit class ActionDisplayMutableBuilder[Self <: ActionDisplay] (val x: Self) extends AnyVal {
+    extension [Self <: ActionDisplay](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: Args): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Args): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ActionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ActionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

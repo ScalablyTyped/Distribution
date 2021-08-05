@@ -12,19 +12,15 @@ trait RegularPool extends StObject {
 }
 object RegularPool {
   
-  @scala.inline
-  def apply(confirmPool: Autostart, regularPool: Autostart): RegularPool = {
+  inline def apply(confirmPool: Autostart, regularPool: Autostart): RegularPool = {
     val __obj = js.Dynamic.literal(confirmPool = confirmPool.asInstanceOf[js.Any], regularPool = regularPool.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegularPool]
   }
   
-  @scala.inline
-  implicit class RegularPoolMutableBuilder[Self <: RegularPool] (val x: Self) extends AnyVal {
+  extension [Self <: RegularPool](x: Self) {
     
-    @scala.inline
-    def setConfirmPool(value: Autostart): Self = StObject.set(x, "confirmPool", value.asInstanceOf[js.Any])
+    inline def setConfirmPool(value: Autostart): Self = StObject.set(x, "confirmPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularPool(value: Autostart): Self = StObject.set(x, "regularPool", value.asInstanceOf[js.Any])
+    inline def setRegularPool(value: Autostart): Self = StObject.set(x, "regularPool", value.asInstanceOf[js.Any])
   }
 }

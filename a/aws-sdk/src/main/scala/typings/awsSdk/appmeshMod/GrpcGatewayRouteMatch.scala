@@ -13,19 +13,15 @@ trait GrpcGatewayRouteMatch extends StObject {
 }
 object GrpcGatewayRouteMatch {
   
-  @scala.inline
-  def apply(): GrpcGatewayRouteMatch = {
+  inline def apply(): GrpcGatewayRouteMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrpcGatewayRouteMatch]
   }
   
-  @scala.inline
-  implicit class GrpcGatewayRouteMatchMutableBuilder[Self <: GrpcGatewayRouteMatch] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcGatewayRouteMatch](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

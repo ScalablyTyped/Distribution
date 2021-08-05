@@ -26,8 +26,7 @@ object listBodyMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps[T](hasFilteredRenderItemsPagination: TransferListBodyProps[T], hasCurrent: TransferListBodyState): Current | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasFilteredRenderItemsPagination.asInstanceOf[js.Any], hasCurrent.asInstanceOf[js.Any])).asInstanceOf[Current | Null]
+    inline def getDerivedStateFromProps[T](hasFilteredRenderItemsPagination: TransferListBodyProps[T], hasCurrent: TransferListBodyState): Current | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasFilteredRenderItemsPagination.asInstanceOf[js.Any], hasCurrent.asInstanceOf[js.Any])).asInstanceOf[Current | Null]
   }
   
   @JSImport("antd/lib/transfer/ListBody", "OmitProps")
@@ -65,8 +64,7 @@ object listBodyMod {
   }
   object TransferListBodyProps {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       filteredItems: js.Array[RecordType],
       filteredRenderItems: js.Array[RenderedItem[RecordType]],
       selectedKeys: js.Array[String]
@@ -75,26 +73,19 @@ object listBodyMod {
       __obj.asInstanceOf[TransferListBodyProps[RecordType]]
     }
     
-    @scala.inline
-    implicit class TransferListBodyPropsMutableBuilder[Self <: TransferListBodyProps[?], RecordType] (val x: Self & TransferListBodyProps[RecordType]) extends AnyVal {
+    extension [Self <: TransferListBodyProps[?], RecordType](x: Self & TransferListBodyProps[RecordType]) {
       
-      @scala.inline
-      def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
+      inline def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredItemsVarargs(value: RecordType*): Self = StObject.set(x, "filteredItems", js.Array(value :_*))
+      inline def setFilteredItemsVarargs(value: RecordType*): Self = StObject.set(x, "filteredItems", js.Array(value :_*))
       
-      @scala.inline
-      def setFilteredRenderItems(value: js.Array[RenderedItem[RecordType]]): Self = StObject.set(x, "filteredRenderItems", value.asInstanceOf[js.Any])
+      inline def setFilteredRenderItems(value: js.Array[RenderedItem[RecordType]]): Self = StObject.set(x, "filteredRenderItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredRenderItemsVarargs(value: RenderedItem[RecordType]*): Self = StObject.set(x, "filteredRenderItems", js.Array(value :_*))
+      inline def setFilteredRenderItemsVarargs(value: RenderedItem[RecordType]*): Self = StObject.set(x, "filteredRenderItems", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+      inline def setSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
     }
   }
   
@@ -104,17 +95,14 @@ object listBodyMod {
   }
   object TransferListBodyState {
     
-    @scala.inline
-    def apply(current: Double): TransferListBodyState = {
+    inline def apply(current: Double): TransferListBodyState = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferListBodyState]
     }
     
-    @scala.inline
-    implicit class TransferListBodyStateMutableBuilder[Self <: TransferListBodyState] (val x: Self) extends AnyVal {
+    extension [Self <: TransferListBodyState](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
 }

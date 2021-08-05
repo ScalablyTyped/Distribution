@@ -18,22 +18,17 @@ trait ListBucketIntelligentTieringConfigurationsRequest extends StObject {
 }
 object ListBucketIntelligentTieringConfigurationsRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): ListBucketIntelligentTieringConfigurationsRequest = {
+  inline def apply(Bucket: BucketName): ListBucketIntelligentTieringConfigurationsRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketIntelligentTieringConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class ListBucketIntelligentTieringConfigurationsRequestMutableBuilder[Self <: ListBucketIntelligentTieringConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListBucketIntelligentTieringConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+    inline def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+    inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
   }
 }

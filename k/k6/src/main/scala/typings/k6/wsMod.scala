@@ -35,10 +35,8 @@ object wsMod {
       *   });
       * });
       */
-    @scala.inline
-    def connect(url: String, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
-    @scala.inline
-    def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def connect(url: String, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
     /**
       * Open WebSocket connection.
       * https://k6.io/docs/javascript-api/k6-ws/connect-url-params-callback
@@ -54,8 +52,7 @@ object wsMod {
       *   });
       * });
       */
-    @scala.inline
-    def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
   @JSImport("k6/ws", "Socket")
@@ -139,12 +136,9 @@ object wsMod {
     def error(): String = js.native
   }
   
-  @scala.inline
-  def connect(url: String, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
-  @scala.inline
-  def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
-  @scala.inline
-  def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def connect(url: String, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def connect(url: String, params: Null, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   
   type CloseEventHandler = js.Function1[/* code */ Double, Unit]
   
@@ -163,23 +157,17 @@ object wsMod {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def close: typings.k6.k6Strings.close = "close".asInstanceOf[typings.k6.k6Strings.close]
+    inline def close: typings.k6.k6Strings.close = "close".asInstanceOf[typings.k6.k6Strings.close]
     
-    @scala.inline
-    def error: typings.k6.k6Strings.error = "error".asInstanceOf[typings.k6.k6Strings.error]
+    inline def error: typings.k6.k6Strings.error = "error".asInstanceOf[typings.k6.k6Strings.error]
     
-    @scala.inline
-    def message: typings.k6.k6Strings.message = "message".asInstanceOf[typings.k6.k6Strings.message]
+    inline def message: typings.k6.k6Strings.message = "message".asInstanceOf[typings.k6.k6Strings.message]
     
-    @scala.inline
-    def open: typings.k6.k6Strings.open = "open".asInstanceOf[typings.k6.k6Strings.open]
+    inline def open: typings.k6.k6Strings.open = "open".asInstanceOf[typings.k6.k6Strings.open]
     
-    @scala.inline
-    def ping: typings.k6.k6Strings.ping = "ping".asInstanceOf[typings.k6.k6Strings.ping]
+    inline def ping: typings.k6.k6Strings.ping = "ping".asInstanceOf[typings.k6.k6Strings.ping]
     
-    @scala.inline
-    def pong: typings.k6.k6Strings.pong = "pong".asInstanceOf[typings.k6.k6Strings.pong]
+    inline def pong: typings.k6.k6Strings.pong = "pong".asInstanceOf[typings.k6.k6Strings.pong]
   }
   
   type Executor = js.Function1[/* socket */ Socket, Unit]
@@ -198,26 +186,20 @@ object wsMod {
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -244,29 +226,22 @@ object wsMod {
   }
   object Response {
     
-    @scala.inline
-    def apply(body: String, error: String, headers: StringDictionary[String], status: Double, url: String): Response = {
+    inline def apply(body: String, error: String, headers: StringDictionary[String], status: Double, url: String): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

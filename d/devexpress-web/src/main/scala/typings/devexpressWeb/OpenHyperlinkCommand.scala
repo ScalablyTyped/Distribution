@@ -18,16 +18,13 @@ trait OpenHyperlinkCommand
 }
 object OpenHyperlinkCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenHyperlinkCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenHyperlinkCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[OpenHyperlinkCommand]
   }
   
-  @scala.inline
-  implicit class OpenHyperlinkCommandMutableBuilder[Self <: OpenHyperlinkCommand] (val x: Self) extends AnyVal {
+  extension [Self <: OpenHyperlinkCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -12,16 +12,13 @@ trait CardViewFocusEventArgs
 }
 object CardViewFocusEventArgs {
   
-  @scala.inline
-  def apply(isChangedOnServer: Boolean, processOnServer: Boolean, sender: Control): CardViewFocusEventArgs = {
+  inline def apply(isChangedOnServer: Boolean, processOnServer: Boolean, sender: Control): CardViewFocusEventArgs = {
     val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewFocusEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewFocusEventArgsMutableBuilder[Self <: CardViewFocusEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewFocusEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
+    inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
   }
 }

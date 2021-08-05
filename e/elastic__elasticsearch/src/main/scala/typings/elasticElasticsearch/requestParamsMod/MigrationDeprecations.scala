@@ -12,19 +12,15 @@ trait MigrationDeprecations
 }
 object MigrationDeprecations {
   
-  @scala.inline
-  def apply(): MigrationDeprecations = {
+  inline def apply(): MigrationDeprecations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MigrationDeprecations]
   }
   
-  @scala.inline
-  implicit class MigrationDeprecationsMutableBuilder[Self <: MigrationDeprecations] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationDeprecations](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

@@ -32,8 +32,7 @@ trait XCoordinateSystemContainer
 }
 object XCoordinateSystemContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CoordinateSystems: SafeArray[XCoordinateSystem],
     acquire: () => Unit,
     addCoordinateSystem: XCoordinateSystem => Unit,
@@ -47,22 +46,16 @@ object XCoordinateSystemContainer {
     __obj.asInstanceOf[XCoordinateSystemContainer]
   }
   
-  @scala.inline
-  implicit class XCoordinateSystemContainerMutableBuilder[Self <: XCoordinateSystemContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XCoordinateSystemContainer](x: Self) {
     
-    @scala.inline
-    def setAddCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "addCoordinateSystem", js.Any.fromFunction1(value))
+    inline def setAddCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "addCoordinateSystem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCoordinateSystems(value: SafeArray[XCoordinateSystem]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystems(value: SafeArray[XCoordinateSystem]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCoordinateSystems(value: () => SafeArray[XCoordinateSystem]): Self = StObject.set(x, "getCoordinateSystems", js.Any.fromFunction0(value))
+    inline def setGetCoordinateSystems(value: () => SafeArray[XCoordinateSystem]): Self = StObject.set(x, "getCoordinateSystems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "removeCoordinateSystem", js.Any.fromFunction1(value))
+    inline def setRemoveCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "removeCoordinateSystem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCoordinateSystems(value: SeqEquiv[XCoordinateSystem] => Unit): Self = StObject.set(x, "setCoordinateSystems", js.Any.fromFunction1(value))
+    inline def setSetCoordinateSystems(value: SeqEquiv[XCoordinateSystem] => Unit): Self = StObject.set(x, "setCoordinateSystems", js.Any.fromFunction1(value))
   }
 }

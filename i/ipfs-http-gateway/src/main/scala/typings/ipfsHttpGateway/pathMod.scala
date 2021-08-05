@@ -10,12 +10,9 @@ object pathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def joinURLParts(urls: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinURLParts")(urls.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def joinURLParts(urls: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinURLParts")(urls.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def removeTrailingSlash(url: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def removeTrailingSlash(url: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def splitPath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("splitPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def splitPath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("splitPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -10,16 +10,13 @@ trait SimpleDataTable extends StObject {
 }
 object SimpleDataTable {
   
-  @scala.inline
-  def apply(get_rows: () => js.Array[js.Any]): SimpleDataTable = {
+  inline def apply(get_rows: () => js.Array[js.Any]): SimpleDataTable = {
     val __obj = js.Dynamic.literal(get_rows = js.Any.fromFunction0(get_rows))
     __obj.asInstanceOf[SimpleDataTable]
   }
   
-  @scala.inline
-  implicit class SimpleDataTableMutableBuilder[Self <: SimpleDataTable] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleDataTable](x: Self) {
     
-    @scala.inline
-    def setGet_rows(value: () => js.Array[js.Any]): Self = StObject.set(x, "get_rows", js.Any.fromFunction0(value))
+    inline def setGet_rows(value: () => js.Array[js.Any]): Self = StObject.set(x, "get_rows", js.Any.fromFunction0(value))
   }
 }

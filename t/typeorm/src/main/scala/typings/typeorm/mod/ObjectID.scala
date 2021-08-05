@@ -21,18 +21,15 @@ object ObjectID {
   /**
     * Creates an ObjectID from a hex string representation of an ObjectID.
     */
-  @scala.inline
-  def createFromHexString(hexString: String): typings.typeorm.mongodbTypingsMod.ObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.mongodbTypingsMod.ObjectID]
+  inline def createFromHexString(hexString: String): typings.typeorm.mongodbTypingsMod.ObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.mongodbTypingsMod.ObjectID]
   
   /**
     * Creates an ObjectID from a second based number, with the rest of the ObjectID zeroed out. Used for comparisons or sorting the ObjectID.
     */
-  @scala.inline
-  def createFromTime(time: scala.Double): typings.typeorm.mongodbTypingsMod.ObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.mongodbTypingsMod.ObjectID]
+  inline def createFromTime(time: scala.Double): typings.typeorm.mongodbTypingsMod.ObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.mongodbTypingsMod.ObjectID]
   
   /**
     * Checks if a value is a valid bson ObjectId.
     */
-  @scala.inline
-  def isValid(id: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(id: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -53,7 +53,7 @@ object resourceNotesMod {
     def remove(resourceId: Double, resource2Id: Double, noteId: Double): js.Promise[js.Object] = js.native
     def remove(resourceId: Double, resource2Id: Double, noteId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    var resource2Type: String = js.native
+    /* protected */ var resource2Type: String = js.native
     
     def show(resourceId: String, resource2Id: String, noteId: Double): js.Promise[GetResponse] = js.native
     def show(resourceId: String, resource2Id: String, noteId: Double, options: Sudo): js.Promise[GetResponse] = js.native

@@ -82,14 +82,12 @@ object Browser {
   /**
     * @internal
     */
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,
@@ -97,16 +95,14 @@ object Browser {
     process: Unit,
     closeCallback: BrowserCloseCallback
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,
     defaultViewport: Unit,
     process: ChildProcess
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,
@@ -114,15 +110,13 @@ object Browser {
     process: ChildProcess,
     closeCallback: BrowserCloseCallback
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,
     defaultViewport: Viewport
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,
@@ -130,16 +124,14 @@ object Browser {
     process: Unit,
     closeCallback: BrowserCloseCallback
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,
     defaultViewport: Viewport,
     process: ChildProcess
   ): js.Promise[typings.puppeteerCore.commonBrowserMod.Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.commonBrowserMod.Browser]]
-  @scala.inline
-  def create(
+  inline def create(
     connection: typings.puppeteerCore.commonConnectionMod.Connection,
     contextIds: js.Array[String],
     ignoreHTTPSErrors: Boolean,

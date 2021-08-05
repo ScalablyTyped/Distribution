@@ -14,7 +14,7 @@ object overlayBaseMod {
     extends Component[IOverlayProps, js.Object, js.Any] {
     def this(props: IOverlayProps) = this()
     
-    var _allowTouchBodyScroll: js.Any = js.native
+    /* private */ var _allowTouchBodyScroll: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MOverlayBase(): Unit = js.native

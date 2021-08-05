@@ -35,6 +35,5 @@ object Constraint {
     * @return {constraint} constraint
     */
   /* static member */
-  @scala.inline
-  def create(options: IConstraintDefinition): ConstraintType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ConstraintType]
+  inline def create(options: IConstraintDefinition): ConstraintType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ConstraintType]
 }

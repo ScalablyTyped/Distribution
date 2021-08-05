@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: ReadableStream */](streams: (T | js.Array[T])*): MergedStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[MergedStream]
+  inline def apply[T /* <: ReadableStream */](streams: (T | js.Array[T])*): MergedStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[MergedStream]
   
   @JSImport("merge-stream", JSImport.Namespace)
   @js.native

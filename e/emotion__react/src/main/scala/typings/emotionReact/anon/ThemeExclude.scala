@@ -11,16 +11,13 @@ trait ThemeExclude extends StObject {
 }
 object ThemeExclude {
   
-  @scala.inline
-  def apply(theme: Exclude[js.Any, Unit]): ThemeExclude = {
+  inline def apply(theme: Exclude[js.Any, Unit]): ThemeExclude = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeExclude]
   }
   
-  @scala.inline
-  implicit class ThemeExcludeMutableBuilder[Self <: ThemeExclude] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeExclude](x: Self) {
     
-    @scala.inline
-    def setTheme(value: Exclude[js.Any, Unit]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Exclude[js.Any, Unit]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

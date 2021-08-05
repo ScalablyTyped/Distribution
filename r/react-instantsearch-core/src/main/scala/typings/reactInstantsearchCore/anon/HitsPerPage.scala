@@ -10,16 +10,13 @@ trait HitsPerPage extends StObject {
 }
 object HitsPerPage {
   
-  @scala.inline
-  def apply(hitsPerPage: Double): HitsPerPage = {
+  inline def apply(hitsPerPage: Double): HitsPerPage = {
     val __obj = js.Dynamic.literal(hitsPerPage = hitsPerPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitsPerPage]
   }
   
-  @scala.inline
-  implicit class HitsPerPageMutableBuilder[Self <: HitsPerPage] (val x: Self) extends AnyVal {
+  extension [Self <: HitsPerPage](x: Self) {
     
-    @scala.inline
-    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
+    inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
   }
 }

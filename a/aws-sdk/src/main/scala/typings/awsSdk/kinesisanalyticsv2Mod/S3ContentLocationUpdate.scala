@@ -23,31 +23,23 @@ trait S3ContentLocationUpdate extends StObject {
 }
 object S3ContentLocationUpdate {
   
-  @scala.inline
-  def apply(): S3ContentLocationUpdate = {
+  inline def apply(): S3ContentLocationUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3ContentLocationUpdate]
   }
   
-  @scala.inline
-  implicit class S3ContentLocationUpdateMutableBuilder[Self <: S3ContentLocationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: S3ContentLocationUpdate](x: Self) {
     
-    @scala.inline
-    def setBucketARNUpdate(value: BucketARN): Self = StObject.set(x, "BucketARNUpdate", value.asInstanceOf[js.Any])
+    inline def setBucketARNUpdate(value: BucketARN): Self = StObject.set(x, "BucketARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketARNUpdateUndefined: Self = StObject.set(x, "BucketARNUpdate", js.undefined)
+    inline def setBucketARNUpdateUndefined: Self = StObject.set(x, "BucketARNUpdate", js.undefined)
     
-    @scala.inline
-    def setFileKeyUpdate(value: FileKey): Self = StObject.set(x, "FileKeyUpdate", value.asInstanceOf[js.Any])
+    inline def setFileKeyUpdate(value: FileKey): Self = StObject.set(x, "FileKeyUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileKeyUpdateUndefined: Self = StObject.set(x, "FileKeyUpdate", js.undefined)
+    inline def setFileKeyUpdateUndefined: Self = StObject.set(x, "FileKeyUpdate", js.undefined)
     
-    @scala.inline
-    def setObjectVersionUpdate(value: ObjectVersion): Self = StObject.set(x, "ObjectVersionUpdate", value.asInstanceOf[js.Any])
+    inline def setObjectVersionUpdate(value: ObjectVersion): Self = StObject.set(x, "ObjectVersionUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUpdateUndefined: Self = StObject.set(x, "ObjectVersionUpdate", js.undefined)
+    inline def setObjectVersionUpdateUndefined: Self = StObject.set(x, "ObjectVersionUpdate", js.undefined)
   }
 }

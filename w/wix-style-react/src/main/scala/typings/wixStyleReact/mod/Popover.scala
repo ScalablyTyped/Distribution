@@ -20,12 +20,10 @@ object Popover {
   @JSImport("wix-style-react", "Popover.Content")
   @js.native
   def Content: SFC[Children] = js.native
-  @scala.inline
-  def Content_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Popover.Element")
   @js.native
   def Element: SFC[Children] = js.native
-  @scala.inline
-  def Element_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
+  inline def Element_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
 }

@@ -18,19 +18,15 @@ trait PutManagedScalingPolicyInput extends StObject {
 }
 object PutManagedScalingPolicyInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId, ManagedScalingPolicy: ManagedScalingPolicy): PutManagedScalingPolicyInput = {
+  inline def apply(ClusterId: ClusterId, ManagedScalingPolicy: ManagedScalingPolicy): PutManagedScalingPolicyInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], ManagedScalingPolicy = ManagedScalingPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutManagedScalingPolicyInput]
   }
   
-  @scala.inline
-  implicit class PutManagedScalingPolicyInputMutableBuilder[Self <: PutManagedScalingPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutManagedScalingPolicyInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = StObject.set(x, "ManagedScalingPolicy", value.asInstanceOf[js.Any])
+    inline def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = StObject.set(x, "ManagedScalingPolicy", value.asInstanceOf[js.Any])
   }
 }

@@ -27,16 +27,13 @@ trait XScriptInvocationContext extends StObject {
 }
 object XScriptInvocationContext {
   
-  @scala.inline
-  def apply(ScriptContainer: XEmbeddedScripts): XScriptInvocationContext = {
+  inline def apply(ScriptContainer: XEmbeddedScripts): XScriptInvocationContext = {
     val __obj = js.Dynamic.literal(ScriptContainer = ScriptContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[XScriptInvocationContext]
   }
   
-  @scala.inline
-  implicit class XScriptInvocationContextMutableBuilder[Self <: XScriptInvocationContext] (val x: Self) extends AnyVal {
+  extension [Self <: XScriptInvocationContext](x: Self) {
     
-    @scala.inline
-    def setScriptContainer(value: XEmbeddedScripts): Self = StObject.set(x, "ScriptContainer", value.asInstanceOf[js.Any])
+    inline def setScriptContainer(value: XEmbeddedScripts): Self = StObject.set(x, "ScriptContainer", value.asInstanceOf[js.Any])
   }
 }

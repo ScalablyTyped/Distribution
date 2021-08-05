@@ -17,22 +17,17 @@ trait AttrsMaxPoolBackpropAttrs extends StObject {
 }
 object AttrsMaxPoolBackpropAttrs {
   
-  @scala.inline
-  def apply(attrs: MaxPoolBackpropAttrs, backend: MathBackendWebGL, inputs: MaxPoolBackpropInputs): AttrsMaxPoolBackpropAttrs = {
+  inline def apply(attrs: MaxPoolBackpropAttrs, backend: MathBackendWebGL, inputs: MaxPoolBackpropInputs): AttrsMaxPoolBackpropAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsMaxPoolBackpropAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsMaxPoolBackpropAttrsMutableBuilder[Self <: AttrsMaxPoolBackpropAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsMaxPoolBackpropAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: MaxPoolBackpropAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: MaxPoolBackpropAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: MaxPoolBackpropInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: MaxPoolBackpropInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

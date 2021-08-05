@@ -67,8 +67,7 @@ trait NodeAPI[TSets /* <: NodeAPISettingsWithData */] extends StObject {
 }
 object NodeAPI {
   
-  @scala.inline
-  def apply[TSets /* <: NodeAPISettingsWithData */](
+  inline def apply[TSets /* <: NodeAPISettingsWithData */](
     _underscore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ js.Any,
     auth: NodeAPIAuth,
     comms: NodeAPIComms,
@@ -89,52 +88,37 @@ object NodeAPI {
     __obj.asInstanceOf[NodeAPI[TSets]]
   }
   
-  @scala.inline
-  implicit class NodeAPIMutableBuilder[Self <: NodeAPI[?], TSets /* <: NodeAPISettingsWithData */] (val x: Self & NodeAPI[TSets]) extends AnyVal {
+  extension [Self <: NodeAPI[?], TSets /* <: NodeAPISettingsWithData */](x: Self & NodeAPI[TSets]) {
     
-    @scala.inline
-    def setAuth(value: NodeAPIAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: NodeAPIAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComms(value: NodeAPIComms): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
+    inline def setComms(value: NodeAPIComms): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
+    inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
+    inline def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibrary(value: NodeAPILibrary): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+    inline def setLibrary(value: NodeAPILibrary): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: NodeApiLog): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: NodeApiLog): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: NodeAPINodes): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: NodeAPINodes): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+    inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: TSets): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: TSets): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtil(
+    inline def setUtil(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ js.Any
     ): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: () => js.Promise[String]): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
+    inline def setVersion(value: () => js.Promise[String]): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_underscore(
+    inline def set_underscore(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ js.Any
     ): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }

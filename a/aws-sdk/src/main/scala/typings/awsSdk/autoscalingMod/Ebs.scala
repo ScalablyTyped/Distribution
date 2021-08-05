@@ -38,49 +38,35 @@ trait Ebs extends StObject {
 }
 object Ebs {
   
-  @scala.inline
-  def apply(): Ebs = {
+  inline def apply(): Ebs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ebs]
   }
   
-  @scala.inline
-  implicit class EbsMutableBuilder[Self <: Ebs] (val x: Self) extends AnyVal {
+  extension [Self <: Ebs](x: Self) {
     
-    @scala.inline
-    def setDeleteOnTermination(value: BlockDeviceEbsDeleteOnTermination): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: BlockDeviceEbsDeleteOnTermination): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setEncrypted(value: BlockDeviceEbsEncrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: BlockDeviceEbsEncrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
-    @scala.inline
-    def setIops(value: BlockDeviceEbsIops): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: BlockDeviceEbsIops): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: XmlStringMaxLen255): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: XmlStringMaxLen255): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    @scala.inline
-    def setVolumeSize(value: BlockDeviceEbsVolumeSize): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: BlockDeviceEbsVolumeSize): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
+    inline def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
     
-    @scala.inline
-    def setVolumeType(value: BlockDeviceEbsVolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: BlockDeviceEbsVolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

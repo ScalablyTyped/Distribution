@@ -26,8 +26,7 @@ object anon {
   }
   object DEBUG {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEBUG: Double,
       ERROR: Double,
       FATAL: Double,
@@ -41,32 +40,23 @@ object anon {
       __obj.asInstanceOf[DEBUG]
     }
     
-    @scala.inline
-    implicit class DEBUGMutableBuilder[Self <: DEBUG] (val x: Self) extends AnyVal {
+    extension [Self <: DEBUG](x: Self) {
       
-      @scala.inline
-      def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFATAL(value: Double): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
+      inline def setFATAL(value: Double): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSILENT(value: Double): Self = StObject.set(x, "SILENT", value.asInstanceOf[js.Any])
+      inline def setSILENT(value: Double): Self = StObject.set(x, "SILENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN(value: Double): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN(value: Double): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERBOSE(value: Double): Self = StObject.set(x, "VERBOSE", value.asInstanceOf[js.Any])
+      inline def setVERBOSE(value: Double): Self = StObject.set(x, "VERBOSE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+      inline def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,26 +72,20 @@ object anon {
   }
   object DEFAULT {
     
-    @scala.inline
-    def apply(DEBUG: Double, DEFAULT: Double, ERROR: Double, INFO: Double): DEFAULT = {
+    inline def apply(DEBUG: Double, DEFAULT: Double, ERROR: Double, INFO: Double): DEFAULT = {
       val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any])
       __obj.asInstanceOf[DEFAULT]
     }
     
-    @scala.inline
-    implicit class DEFAULTMutableBuilder[Self <: DEFAULT] (val x: Self) extends AnyVal {
+    extension [Self <: DEFAULT](x: Self) {
       
-      @scala.inline
-      def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEFAULT(value: Double): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+      inline def setDEFAULT(value: Double): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +95,14 @@ object anon {
   }
   object FromName {
     
-    @scala.inline
-    def apply(fromName: js.Any => Double): FromName = {
+    inline def apply(fromName: js.Any => Double): FromName = {
       val __obj = js.Dynamic.literal(fromName = js.Any.fromFunction1(fromName))
       __obj.asInstanceOf[FromName]
     }
     
-    @scala.inline
-    implicit class FromNameMutableBuilder[Self <: FromName] (val x: Self) extends AnyVal {
+    extension [Self <: FromName](x: Self) {
       
-      @scala.inline
-      def setFromName(value: js.Any => Double): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
+      inline def setFromName(value: js.Any => Double): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
     }
   }
 }

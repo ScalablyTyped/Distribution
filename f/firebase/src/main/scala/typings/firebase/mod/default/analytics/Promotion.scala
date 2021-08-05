@@ -16,37 +16,27 @@ trait Promotion extends StObject {
 }
 object Promotion {
   
-  @scala.inline
-  def apply(): Promotion = {
+  inline def apply(): Promotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Promotion]
   }
   
-  @scala.inline
-  implicit class PromotionMutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
+  extension [Self <: Promotion](x: Self) {
     
-    @scala.inline
-    def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
+    inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
+    inline def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
     
-    @scala.inline
-    def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
+    inline def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
+    inline def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

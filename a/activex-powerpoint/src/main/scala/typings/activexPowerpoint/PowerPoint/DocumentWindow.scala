@@ -65,7 +65,7 @@ trait DocumentWindow extends StObject {
   
   def PointsToScreenPixelsY(Points: Double): Double = js.native
   
-  @JSName("PowerPoint.DocumentWindow_typekey")
+  /* private */ @JSName("PowerPoint.DocumentWindow_typekey")
   var PowerPointDotDocumentWindow_typekey: DocumentWindow = js.native
   
   val Presentation: typings.activexPowerpoint.PowerPoint.Presentation = js.native

@@ -10,20 +10,17 @@ object d3IndirectionsStrings {
   sealed trait Projection
     extends StObject
        with ResourceType
-  @scala.inline
-  def Projection: Projection = "Projection".asInstanceOf[Projection]
+  inline def Projection: Projection = "Projection".asInstanceOf[Projection]
   
   @js.native
   sealed trait VideoClip
     extends StObject
        with ResourceType
-  @scala.inline
-  def VideoClip: VideoClip = "VideoClip".asInstanceOf[VideoClip]
+  inline def VideoClip: VideoClip = "VideoClip".asInstanceOf[VideoClip]
   
   @js.native
   sealed trait unknown
     extends StObject
        with ResourceType
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }

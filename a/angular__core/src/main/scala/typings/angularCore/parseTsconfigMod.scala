@@ -11,6 +11,5 @@ object parseTsconfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseTsconfigFile(tsconfigPath: String, basePath: String): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTsconfigFile")(tsconfigPath.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
+  inline def parseTsconfigFile(tsconfigPath: String, basePath: String): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTsconfigFile")(tsconfigPath.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
 }

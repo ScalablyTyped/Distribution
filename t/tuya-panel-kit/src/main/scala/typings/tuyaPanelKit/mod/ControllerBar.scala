@@ -27,6 +27,5 @@ object ControllerBar {
   @JSImport("tuya-panel-kit", "ControllerBar.Group")
   @js.native
   def Group: ElementType[BarGroupProps] = js.native
-  @scala.inline
-  def Group_=(x: ElementType[BarGroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+  inline def Group_=(x: ElementType[BarGroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
 }

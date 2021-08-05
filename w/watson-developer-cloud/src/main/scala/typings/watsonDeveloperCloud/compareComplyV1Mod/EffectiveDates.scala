@@ -18,31 +18,23 @@ trait EffectiveDates extends StObject {
 }
 object EffectiveDates {
   
-  @scala.inline
-  def apply(): EffectiveDates = {
+  inline def apply(): EffectiveDates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EffectiveDates]
   }
   
-  @scala.inline
-  implicit class EffectiveDatesMutableBuilder[Self <: EffectiveDates] (val x: Self) extends AnyVal {
+  extension [Self <: EffectiveDates](x: Self) {
     
-    @scala.inline
-    def setConfidence_level(value: String): Self = StObject.set(x, "confidence_level", value.asInstanceOf[js.Any])
+    inline def setConfidence_level(value: String): Self = StObject.set(x, "confidence_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidence_levelUndefined: Self = StObject.set(x, "confidence_level", js.undefined)
+    inline def setConfidence_levelUndefined: Self = StObject.set(x, "confidence_level", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

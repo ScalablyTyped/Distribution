@@ -18,28 +18,21 @@ trait ListEntityRecognizersResponse extends StObject {
 }
 object ListEntityRecognizersResponse {
   
-  @scala.inline
-  def apply(): ListEntityRecognizersResponse = {
+  inline def apply(): ListEntityRecognizersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEntityRecognizersResponse]
   }
   
-  @scala.inline
-  implicit class ListEntityRecognizersResponseMutableBuilder[Self <: ListEntityRecognizersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEntityRecognizersResponse](x: Self) {
     
-    @scala.inline
-    def setEntityRecognizerPropertiesList(value: EntityRecognizerPropertiesList): Self = StObject.set(x, "EntityRecognizerPropertiesList", value.asInstanceOf[js.Any])
+    inline def setEntityRecognizerPropertiesList(value: EntityRecognizerPropertiesList): Self = StObject.set(x, "EntityRecognizerPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityRecognizerPropertiesListUndefined: Self = StObject.set(x, "EntityRecognizerPropertiesList", js.undefined)
+    inline def setEntityRecognizerPropertiesListUndefined: Self = StObject.set(x, "EntityRecognizerPropertiesList", js.undefined)
     
-    @scala.inline
-    def setEntityRecognizerPropertiesListVarargs(value: EntityRecognizerProperties*): Self = StObject.set(x, "EntityRecognizerPropertiesList", js.Array(value :_*))
+    inline def setEntityRecognizerPropertiesListVarargs(value: EntityRecognizerProperties*): Self = StObject.set(x, "EntityRecognizerPropertiesList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

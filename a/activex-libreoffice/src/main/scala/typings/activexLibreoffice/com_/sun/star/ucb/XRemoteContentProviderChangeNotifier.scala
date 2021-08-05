@@ -29,8 +29,7 @@ trait XRemoteContentProviderChangeNotifier
 }
 object XRemoteContentProviderChangeNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addRemoteContentProviderChangeListener: XRemoteContentProviderChangeListener => Unit,
     queryInterface: `type` => js.Any,
@@ -41,13 +40,10 @@ object XRemoteContentProviderChangeNotifier {
     __obj.asInstanceOf[XRemoteContentProviderChangeNotifier]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderChangeNotifierMutableBuilder[Self <: XRemoteContentProviderChangeNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderChangeNotifier](x: Self) {
     
-    @scala.inline
-    def setAddRemoteContentProviderChangeListener(value: XRemoteContentProviderChangeListener => Unit): Self = StObject.set(x, "addRemoteContentProviderChangeListener", js.Any.fromFunction1(value))
+    inline def setAddRemoteContentProviderChangeListener(value: XRemoteContentProviderChangeListener => Unit): Self = StObject.set(x, "addRemoteContentProviderChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveRemoteContentProviderChangeListener(value: XRemoteContentProviderChangeListener => Unit): Self = StObject.set(x, "removeRemoteContentProviderChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveRemoteContentProviderChangeListener(value: XRemoteContentProviderChangeListener => Unit): Self = StObject.set(x, "removeRemoteContentProviderChangeListener", js.Any.fromFunction1(value))
   }
 }

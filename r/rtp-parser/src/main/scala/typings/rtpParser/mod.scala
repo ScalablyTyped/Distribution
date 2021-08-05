@@ -129,231 +129,156 @@ object mod {
   @js.native
   val FIXED_HEADER_LENGTH: `12` = js.native
   
-  @scala.inline
-  def parseRtpPacket(buf: Buffer): ParsedRTPPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPacket")(buf.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPPacket]
+  inline def parseRtpPacket(buf: Buffer): ParsedRTPPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPacket")(buf.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPPacket]
   
-  @scala.inline
-  def parseRtpPayloadType(
+  inline def parseRtpPayloadType(
     payloadType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ js.Any
   ): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`1`]
-  @scala.inline
-  def parseRtpPayloadType(payloadType: Double): ParsedRTPType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPType]
+  inline def parseRtpPayloadType(payloadType: Double): ParsedRTPType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPType]
   
-  @scala.inline
-  def parseRtpPayloadType_0(payloadType: `0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
+  inline def parseRtpPayloadType_0(payloadType: `0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
   
-  @scala.inline
-  def parseRtpPayloadType_1(payloadType: typings.rtpParser.rtpParserNumbers.`1`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  inline def parseRtpPayloadType_1(payloadType: typings.rtpParser.rtpParserNumbers.`1`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
   
-  @scala.inline
-  def parseRtpPayloadType_10(payloadType: `10`): typings.rtpParser.anon.`10` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`10`]
+  inline def parseRtpPayloadType_10(payloadType: `10`): typings.rtpParser.anon.`10` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`10`]
   
-  @scala.inline
-  def parseRtpPayloadType_100(payloadType: `100`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_100(payloadType: `100`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_101(payloadType: `101`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_101(payloadType: `101`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_102(payloadType: `102`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_102(payloadType: `102`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_103(payloadType: `103`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_103(payloadType: `103`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_104(payloadType: `104`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_104(payloadType: `104`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_105(payloadType: `105`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_105(payloadType: `105`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_106(payloadType: `106`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_106(payloadType: `106`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_107(payloadType: `107`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_107(payloadType: `107`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_108(payloadType: `108`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_108(payloadType: `108`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_109(payloadType: `109`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_109(payloadType: `109`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_11(payloadType: `11`): `9` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`9`]
+  inline def parseRtpPayloadType_11(payloadType: `11`): `9` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`9`]
   
-  @scala.inline
-  def parseRtpPayloadType_110(payloadType: `110`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_110(payloadType: `110`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_111(payloadType: `111`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_111(payloadType: `111`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_112(payloadType: `112`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_112(payloadType: `112`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_113(payloadType: `113`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_113(payloadType: `113`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_114(payloadType: `114`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_114(payloadType: `114`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_115(payloadType: `115`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_115(payloadType: `115`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_116(payloadType: `116`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_116(payloadType: `116`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_117(payloadType: `117`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_117(payloadType: `117`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_118(payloadType: `118`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_118(payloadType: `118`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_119(payloadType: `119`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_119(payloadType: `119`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_12(payloadType: `12`): `8` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`8`]
+  inline def parseRtpPayloadType_12(payloadType: `12`): `8` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`8`]
   
-  @scala.inline
-  def parseRtpPayloadType_120(payloadType: `120`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_120(payloadType: `120`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_121(payloadType: `121`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_121(payloadType: `121`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_122(payloadType: `122`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_122(payloadType: `122`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_123(payloadType: `123`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_123(payloadType: `123`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_124(payloadType: `124`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_124(payloadType: `124`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_125(payloadType: `125`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_125(payloadType: `125`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_126(payloadType: `126`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_126(payloadType: `126`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_127(payloadType: `127`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_127(payloadType: `127`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_13(payloadType: `13`): `7` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`7`]
+  inline def parseRtpPayloadType_13(payloadType: `13`): `7` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`7`]
   
-  @scala.inline
-  def parseRtpPayloadType_14(payloadType: `14`): `6` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`6`]
+  inline def parseRtpPayloadType_14(payloadType: `14`): `6` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`6`]
   
-  @scala.inline
-  def parseRtpPayloadType_15(payloadType: `15`): ChannelsClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRateMediaTypeName]
+  inline def parseRtpPayloadType_15(payloadType: `15`): ChannelsClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRateMediaTypeName]
   
-  @scala.inline
-  def parseRtpPayloadType_16(payloadType: `16`): ChannelsClockRateMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRateMediaType]
+  inline def parseRtpPayloadType_16(payloadType: `16`): ChannelsClockRateMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRateMediaType]
   
-  @scala.inline
-  def parseRtpPayloadType_17(payloadType: `17`): ChannelsClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRate]
+  inline def parseRtpPayloadType_17(payloadType: `17`): ChannelsClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRate]
   
-  @scala.inline
-  def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserNumbers.`18`): Channels = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Channels]
+  inline def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserNumbers.`18`): Channels = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Channels]
   
-  @scala.inline
-  def parseRtpPayloadType_19(payloadType: typings.rtpParser.rtpParserNumbers.`19`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  inline def parseRtpPayloadType_19(payloadType: typings.rtpParser.rtpParserNumbers.`19`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
   
-  @scala.inline
-  def parseRtpPayloadType_2(payloadType: `2`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  inline def parseRtpPayloadType_2(payloadType: `2`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
   
-  @scala.inline
-  def parseRtpPayloadType_20(payloadType: `20`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  inline def parseRtpPayloadType_20(payloadType: `20`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
   
-  @scala.inline
-  def parseRtpPayloadType_21(payloadType: `21`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  inline def parseRtpPayloadType_21(payloadType: `21`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
   
-  @scala.inline
-  def parseRtpPayloadType_22(payloadType: `22`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  inline def parseRtpPayloadType_22(payloadType: `22`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
   
-  @scala.inline
-  def parseRtpPayloadType_23(payloadType: `23`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  inline def parseRtpPayloadType_23(payloadType: `23`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
   
-  @scala.inline
-  def parseRtpPayloadType_24(payloadType: `24`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  inline def parseRtpPayloadType_24(payloadType: `24`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   
-  @scala.inline
-  def parseRtpPayloadType_25(payloadType: `25`): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`3`]
+  inline def parseRtpPayloadType_25(payloadType: `25`): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`3`]
   
-  @scala.inline
-  def parseRtpPayloadType_26(payloadType: `26`): typings.rtpParser.anon.`2` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`2`]
+  inline def parseRtpPayloadType_26(payloadType: `26`): typings.rtpParser.anon.`2` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`2`]
   
-  @scala.inline
-  def parseRtpPayloadType_27(payloadType: `27`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  inline def parseRtpPayloadType_27(payloadType: `27`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   
-  @scala.inline
-  def parseRtpPayloadType_28(payloadType: `28`): ClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaTypeName]
+  inline def parseRtpPayloadType_28(payloadType: `28`): ClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaTypeName]
   
-  @scala.inline
-  def parseRtpPayloadType_29(payloadType: `29`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  inline def parseRtpPayloadType_29(payloadType: `29`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   
-  @scala.inline
-  def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserNumbers.`3`): typings.rtpParser.anon.`17` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`17`]
+  inline def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserNumbers.`3`): typings.rtpParser.anon.`17` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`17`]
   
-  @scala.inline
-  def parseRtpPayloadType_30(payloadType: `30`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  inline def parseRtpPayloadType_30(payloadType: `30`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   
-  @scala.inline
-  def parseRtpPayloadType_31(payloadType: `31`): MediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaTypeName]
+  inline def parseRtpPayloadType_31(payloadType: `31`): MediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaTypeName]
   
-  @scala.inline
-  def parseRtpPayloadType_32(payloadType: `32`): ClockRateMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaType]
+  inline def parseRtpPayloadType_32(payloadType: `32`): ClockRateMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaType]
   
-  @scala.inline
-  def parseRtpPayloadType_33(payloadType: `33`): MediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaType]
+  inline def parseRtpPayloadType_33(payloadType: `33`): MediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaType]
   
-  @scala.inline
-  def parseRtpPayloadType_34(payloadType: `34`): ClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRate]
+  inline def parseRtpPayloadType_34(payloadType: `34`): ClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRate]
   
-  @scala.inline
-  def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserNumbers.`4`): typings.rtpParser.anon.`16` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`16`]
+  inline def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserNumbers.`4`): typings.rtpParser.anon.`16` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`16`]
   
-  @scala.inline
-  def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserNumbers.`5`): typings.rtpParser.anon.`15` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`15`]
+  inline def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserNumbers.`5`): typings.rtpParser.anon.`15` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`15`]
   
-  @scala.inline
-  def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserNumbers.`6`): typings.rtpParser.anon.`14` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`14`]
+  inline def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserNumbers.`6`): typings.rtpParser.anon.`14` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`14`]
   
-  @scala.inline
-  def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserNumbers.`7`): typings.rtpParser.anon.`13` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`13`]
+  inline def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserNumbers.`7`): typings.rtpParser.anon.`13` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`13`]
   
-  @scala.inline
-  def parseRtpPayloadType_72(payloadType: `72`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  inline def parseRtpPayloadType_72(payloadType: `72`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
   
-  @scala.inline
-  def parseRtpPayloadType_73(payloadType: `73`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  inline def parseRtpPayloadType_73(payloadType: `73`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
   
-  @scala.inline
-  def parseRtpPayloadType_74(payloadType: `74`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  inline def parseRtpPayloadType_74(payloadType: `74`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
   
-  @scala.inline
-  def parseRtpPayloadType_75(payloadType: `75`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  inline def parseRtpPayloadType_75(payloadType: `75`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
   
-  @scala.inline
-  def parseRtpPayloadType_76(payloadType: `76`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  inline def parseRtpPayloadType_76(payloadType: `76`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
   
-  @scala.inline
-  def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserNumbers.`8`): typings.rtpParser.anon.`12` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`12`]
+  inline def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserNumbers.`8`): typings.rtpParser.anon.`12` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`12`]
   
-  @scala.inline
-  def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserNumbers.`9`): typings.rtpParser.anon.`11` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`11`]
+  inline def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserNumbers.`9`): typings.rtpParser.anon.`11` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`11`]
   
-  @scala.inline
-  def parseRtpPayloadType_96(payloadType: `96`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_96(payloadType: `96`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_97(payloadType: `97`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_97(payloadType: `97`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_98(payloadType: `98`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_98(payloadType: `98`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
-  @scala.inline
-  def parseRtpPayloadType_99(payloadType: `99`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_99(payloadType: `99`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   @JSImport("rtp-parser", "payloadTypesHash")
   @js.native
@@ -385,8 +310,7 @@ object mod {
   }
   object ParsedRTPPacket {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       csrc: js.Array[Double],
       csrcCount: Double,
       `extension`: Double,
@@ -404,44 +328,31 @@ object mod {
       __obj.asInstanceOf[ParsedRTPPacket]
     }
     
-    @scala.inline
-    implicit class ParsedRTPPacketMutableBuilder[Self <: ParsedRTPPacket] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedRTPPacket](x: Self) {
       
-      @scala.inline
-      def setCsrc(value: js.Array[Double]): Self = StObject.set(x, "csrc", value.asInstanceOf[js.Any])
+      inline def setCsrc(value: js.Array[Double]): Self = StObject.set(x, "csrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsrcCount(value: Double): Self = StObject.set(x, "csrcCount", value.asInstanceOf[js.Any])
+      inline def setCsrcCount(value: Double): Self = StObject.set(x, "csrcCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsrcVarargs(value: Double*): Self = StObject.set(x, "csrc", js.Array(value :_*))
+      inline def setCsrcVarargs(value: Double*): Self = StObject.set(x, "csrc", js.Array(value :_*))
       
-      @scala.inline
-      def setExtension(value: Double): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: Double): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker(value: Double): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Double): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadType(value: Double): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
+      inline def setPayloadType(value: Double): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+      inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -457,37 +368,28 @@ object mod {
   }
   object ParsedRTPType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: PCMU | GSM | G723 | DVI4 | LPC | PCMA | G722 | L16 | QCELP | CN | MPA | G728 | G729 | CelB | JPEG | nv | H261 | MPV | MP2T | H263 | reserved | unassigned | dynamic
     ): ParsedRTPType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedRTPType]
     }
     
-    @scala.inline
-    implicit class ParsedRTPTypeMutableBuilder[Self <: ParsedRTPType] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedRTPType](x: Self) {
       
-      @scala.inline
-      def setChannels(value: typings.rtpParser.rtpParserNumbers.`1` | `2`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: typings.rtpParser.rtpParserNumbers.`1` | `2`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setClockRate(value: `8000` | `16000` | `44100` | `90000` | `11025` | `22050`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
+      inline def setClockRate(value: `8000` | `16000` | `44100` | `90000` | `11025` | `22050`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockRateUndefined: Self = StObject.set(x, "clockRate", js.undefined)
+      inline def setClockRateUndefined: Self = StObject.set(x, "clockRate", js.undefined)
       
-      @scala.inline
-      def setMediaType(value: A | AV | V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: A | AV | V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: PCMU | GSM | G723 | DVI4 | LPC | PCMA | G722 | L16 | QCELP | CN | MPA | G728 | G729 | CelB | JPEG | nv | H261 | MPV | MP2T | H263 | reserved | unassigned | dynamic
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -885,8 +787,7 @@ object mod {
   }
   object PayloadTypesHash_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `0`: `19`,
       `1`: `18`,
       `10`: typings.rtpParser.anon.`10`,
@@ -1148,392 +1049,263 @@ object mod {
       __obj.asInstanceOf[PayloadTypesHash_]
     }
     
-    @scala.inline
-    implicit class PayloadTypesHash_MutableBuilder[Self <: PayloadTypesHash_] (val x: Self) extends AnyVal {
+    extension [Self <: PayloadTypesHash_](x: Self) {
       
-      @scala.inline
-      def set0(value: `19`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: `19`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1(value: `18`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: `18`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set10(value: typings.rtpParser.anon.`10`): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+      inline def set10(value: typings.rtpParser.anon.`10`): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set100(value: Name): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      inline def set100(value: Name): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set101(value: Name): Self = StObject.set(x, "101", value.asInstanceOf[js.Any])
+      inline def set101(value: Name): Self = StObject.set(x, "101", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set102(value: Name): Self = StObject.set(x, "102", value.asInstanceOf[js.Any])
+      inline def set102(value: Name): Self = StObject.set(x, "102", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set103(value: Name): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
+      inline def set103(value: Name): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set104(value: Name): Self = StObject.set(x, "104", value.asInstanceOf[js.Any])
+      inline def set104(value: Name): Self = StObject.set(x, "104", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set105(value: Name): Self = StObject.set(x, "105", value.asInstanceOf[js.Any])
+      inline def set105(value: Name): Self = StObject.set(x, "105", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set106(value: Name): Self = StObject.set(x, "106", value.asInstanceOf[js.Any])
+      inline def set106(value: Name): Self = StObject.set(x, "106", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set107(value: Name): Self = StObject.set(x, "107", value.asInstanceOf[js.Any])
+      inline def set107(value: Name): Self = StObject.set(x, "107", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set108(value: Name): Self = StObject.set(x, "108", value.asInstanceOf[js.Any])
+      inline def set108(value: Name): Self = StObject.set(x, "108", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set109(value: Name): Self = StObject.set(x, "109", value.asInstanceOf[js.Any])
+      inline def set109(value: Name): Self = StObject.set(x, "109", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set11(value: `9`): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
+      inline def set11(value: `9`): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set110(value: Name): Self = StObject.set(x, "110", value.asInstanceOf[js.Any])
+      inline def set110(value: Name): Self = StObject.set(x, "110", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set111(value: Name): Self = StObject.set(x, "111", value.asInstanceOf[js.Any])
+      inline def set111(value: Name): Self = StObject.set(x, "111", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set112(value: Name): Self = StObject.set(x, "112", value.asInstanceOf[js.Any])
+      inline def set112(value: Name): Self = StObject.set(x, "112", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set113(value: Name): Self = StObject.set(x, "113", value.asInstanceOf[js.Any])
+      inline def set113(value: Name): Self = StObject.set(x, "113", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set114(value: Name): Self = StObject.set(x, "114", value.asInstanceOf[js.Any])
+      inline def set114(value: Name): Self = StObject.set(x, "114", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set115(value: Name): Self = StObject.set(x, "115", value.asInstanceOf[js.Any])
+      inline def set115(value: Name): Self = StObject.set(x, "115", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set116(value: Name): Self = StObject.set(x, "116", value.asInstanceOf[js.Any])
+      inline def set116(value: Name): Self = StObject.set(x, "116", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set117(value: Name): Self = StObject.set(x, "117", value.asInstanceOf[js.Any])
+      inline def set117(value: Name): Self = StObject.set(x, "117", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set118(value: Name): Self = StObject.set(x, "118", value.asInstanceOf[js.Any])
+      inline def set118(value: Name): Self = StObject.set(x, "118", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set119(value: Name): Self = StObject.set(x, "119", value.asInstanceOf[js.Any])
+      inline def set119(value: Name): Self = StObject.set(x, "119", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set12(value: `8`): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
+      inline def set12(value: `8`): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set120(value: Name): Self = StObject.set(x, "120", value.asInstanceOf[js.Any])
+      inline def set120(value: Name): Self = StObject.set(x, "120", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set121(value: Name): Self = StObject.set(x, "121", value.asInstanceOf[js.Any])
+      inline def set121(value: Name): Self = StObject.set(x, "121", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set122(value: Name): Self = StObject.set(x, "122", value.asInstanceOf[js.Any])
+      inline def set122(value: Name): Self = StObject.set(x, "122", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set123(value: Name): Self = StObject.set(x, "123", value.asInstanceOf[js.Any])
+      inline def set123(value: Name): Self = StObject.set(x, "123", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set124(value: Name): Self = StObject.set(x, "124", value.asInstanceOf[js.Any])
+      inline def set124(value: Name): Self = StObject.set(x, "124", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set125(value: Name): Self = StObject.set(x, "125", value.asInstanceOf[js.Any])
+      inline def set125(value: Name): Self = StObject.set(x, "125", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set126(value: Name): Self = StObject.set(x, "126", value.asInstanceOf[js.Any])
+      inline def set126(value: Name): Self = StObject.set(x, "126", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set127(value: Name): Self = StObject.set(x, "127", value.asInstanceOf[js.Any])
+      inline def set127(value: Name): Self = StObject.set(x, "127", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set13(value: `7`): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
+      inline def set13(value: `7`): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set14(value: `6`): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
+      inline def set14(value: `6`): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set15(value: ChannelsClockRateMediaTypeName): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
+      inline def set15(value: ChannelsClockRateMediaTypeName): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set16(value: ChannelsClockRateMediaType): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
+      inline def set16(value: ChannelsClockRateMediaType): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set17(value: ChannelsClockRate): Self = StObject.set(x, "17", value.asInstanceOf[js.Any])
+      inline def set17(value: ChannelsClockRate): Self = StObject.set(x, "17", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set18(value: Channels): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
+      inline def set18(value: Channels): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set19(value: `18`): Self = StObject.set(x, "19", value.asInstanceOf[js.Any])
+      inline def set19(value: `18`): Self = StObject.set(x, "19", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: `18`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: `18`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set20(value: `5`): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
+      inline def set20(value: `5`): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set21(value: `5`): Self = StObject.set(x, "21", value.asInstanceOf[js.Any])
+      inline def set21(value: `5`): Self = StObject.set(x, "21", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set22(value: `5`): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
+      inline def set22(value: `5`): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set23(value: `5`): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
+      inline def set23(value: `5`): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set24(value: `4`): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
+      inline def set24(value: `4`): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set25(value: `3`): Self = StObject.set(x, "25", value.asInstanceOf[js.Any])
+      inline def set25(value: `3`): Self = StObject.set(x, "25", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set26(value: typings.rtpParser.anon.`2`): Self = StObject.set(x, "26", value.asInstanceOf[js.Any])
+      inline def set26(value: typings.rtpParser.anon.`2`): Self = StObject.set(x, "26", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set27(value: `4`): Self = StObject.set(x, "27", value.asInstanceOf[js.Any])
+      inline def set27(value: `4`): Self = StObject.set(x, "27", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set28(value: ClockRateMediaTypeName): Self = StObject.set(x, "28", value.asInstanceOf[js.Any])
+      inline def set28(value: ClockRateMediaTypeName): Self = StObject.set(x, "28", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set29(value: `4`): Self = StObject.set(x, "29", value.asInstanceOf[js.Any])
+      inline def set29(value: `4`): Self = StObject.set(x, "29", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3(value: typings.rtpParser.anon.`17`): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: typings.rtpParser.anon.`17`): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set30(value: `4`): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
+      inline def set30(value: `4`): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set31(value: MediaTypeName): Self = StObject.set(x, "31", value.asInstanceOf[js.Any])
+      inline def set31(value: MediaTypeName): Self = StObject.set(x, "31", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set32(value: ClockRateMediaType): Self = StObject.set(x, "32", value.asInstanceOf[js.Any])
+      inline def set32(value: ClockRateMediaType): Self = StObject.set(x, "32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set33(value: MediaType): Self = StObject.set(x, "33", value.asInstanceOf[js.Any])
+      inline def set33(value: MediaType): Self = StObject.set(x, "33", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set34(value: ClockRate): Self = StObject.set(x, "34", value.asInstanceOf[js.Any])
+      inline def set34(value: ClockRate): Self = StObject.set(x, "34", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set35(value: `1`): Self = StObject.set(x, "35", value.asInstanceOf[js.Any])
+      inline def set35(value: `1`): Self = StObject.set(x, "35", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set36(value: `1`): Self = StObject.set(x, "36", value.asInstanceOf[js.Any])
+      inline def set36(value: `1`): Self = StObject.set(x, "36", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set37(value: `1`): Self = StObject.set(x, "37", value.asInstanceOf[js.Any])
+      inline def set37(value: `1`): Self = StObject.set(x, "37", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set38(value: `1`): Self = StObject.set(x, "38", value.asInstanceOf[js.Any])
+      inline def set38(value: `1`): Self = StObject.set(x, "38", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set39(value: `1`): Self = StObject.set(x, "39", value.asInstanceOf[js.Any])
+      inline def set39(value: `1`): Self = StObject.set(x, "39", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: typings.rtpParser.anon.`16`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: typings.rtpParser.anon.`16`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set40(value: `1`): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
+      inline def set40(value: `1`): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set41(value: `1`): Self = StObject.set(x, "41", value.asInstanceOf[js.Any])
+      inline def set41(value: `1`): Self = StObject.set(x, "41", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set42(value: `1`): Self = StObject.set(x, "42", value.asInstanceOf[js.Any])
+      inline def set42(value: `1`): Self = StObject.set(x, "42", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set43(value: `1`): Self = StObject.set(x, "43", value.asInstanceOf[js.Any])
+      inline def set43(value: `1`): Self = StObject.set(x, "43", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set44(value: `1`): Self = StObject.set(x, "44", value.asInstanceOf[js.Any])
+      inline def set44(value: `1`): Self = StObject.set(x, "44", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set45(value: `1`): Self = StObject.set(x, "45", value.asInstanceOf[js.Any])
+      inline def set45(value: `1`): Self = StObject.set(x, "45", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set46(value: `1`): Self = StObject.set(x, "46", value.asInstanceOf[js.Any])
+      inline def set46(value: `1`): Self = StObject.set(x, "46", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set47(value: `1`): Self = StObject.set(x, "47", value.asInstanceOf[js.Any])
+      inline def set47(value: `1`): Self = StObject.set(x, "47", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set48(value: `1`): Self = StObject.set(x, "48", value.asInstanceOf[js.Any])
+      inline def set48(value: `1`): Self = StObject.set(x, "48", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set49(value: `1`): Self = StObject.set(x, "49", value.asInstanceOf[js.Any])
+      inline def set49(value: `1`): Self = StObject.set(x, "49", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5(value: typings.rtpParser.anon.`15`): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: typings.rtpParser.anon.`15`): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set50(value: `1`): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+      inline def set50(value: `1`): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set51(value: `1`): Self = StObject.set(x, "51", value.asInstanceOf[js.Any])
+      inline def set51(value: `1`): Self = StObject.set(x, "51", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set52(value: `1`): Self = StObject.set(x, "52", value.asInstanceOf[js.Any])
+      inline def set52(value: `1`): Self = StObject.set(x, "52", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set53(value: `1`): Self = StObject.set(x, "53", value.asInstanceOf[js.Any])
+      inline def set53(value: `1`): Self = StObject.set(x, "53", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set54(value: `1`): Self = StObject.set(x, "54", value.asInstanceOf[js.Any])
+      inline def set54(value: `1`): Self = StObject.set(x, "54", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set55(value: `1`): Self = StObject.set(x, "55", value.asInstanceOf[js.Any])
+      inline def set55(value: `1`): Self = StObject.set(x, "55", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set56(value: `1`): Self = StObject.set(x, "56", value.asInstanceOf[js.Any])
+      inline def set56(value: `1`): Self = StObject.set(x, "56", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set57(value: `1`): Self = StObject.set(x, "57", value.asInstanceOf[js.Any])
+      inline def set57(value: `1`): Self = StObject.set(x, "57", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set58(value: `1`): Self = StObject.set(x, "58", value.asInstanceOf[js.Any])
+      inline def set58(value: `1`): Self = StObject.set(x, "58", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set59(value: `1`): Self = StObject.set(x, "59", value.asInstanceOf[js.Any])
+      inline def set59(value: `1`): Self = StObject.set(x, "59", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6(value: typings.rtpParser.anon.`14`): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: typings.rtpParser.anon.`14`): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set60(value: `1`): Self = StObject.set(x, "60", value.asInstanceOf[js.Any])
+      inline def set60(value: `1`): Self = StObject.set(x, "60", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set61(value: `1`): Self = StObject.set(x, "61", value.asInstanceOf[js.Any])
+      inline def set61(value: `1`): Self = StObject.set(x, "61", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set62(value: `1`): Self = StObject.set(x, "62", value.asInstanceOf[js.Any])
+      inline def set62(value: `1`): Self = StObject.set(x, "62", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set63(value: `1`): Self = StObject.set(x, "63", value.asInstanceOf[js.Any])
+      inline def set63(value: `1`): Self = StObject.set(x, "63", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set64(value: `1`): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
+      inline def set64(value: `1`): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set65(value: `1`): Self = StObject.set(x, "65", value.asInstanceOf[js.Any])
+      inline def set65(value: `1`): Self = StObject.set(x, "65", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set66(value: `1`): Self = StObject.set(x, "66", value.asInstanceOf[js.Any])
+      inline def set66(value: `1`): Self = StObject.set(x, "66", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set67(value: `1`): Self = StObject.set(x, "67", value.asInstanceOf[js.Any])
+      inline def set67(value: `1`): Self = StObject.set(x, "67", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set68(value: `1`): Self = StObject.set(x, "68", value.asInstanceOf[js.Any])
+      inline def set68(value: `1`): Self = StObject.set(x, "68", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set69(value: `1`): Self = StObject.set(x, "69", value.asInstanceOf[js.Any])
+      inline def set69(value: `1`): Self = StObject.set(x, "69", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set7(value: typings.rtpParser.anon.`13`): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      inline def set7(value: typings.rtpParser.anon.`13`): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set70(value: `1`): Self = StObject.set(x, "70", value.asInstanceOf[js.Any])
+      inline def set70(value: `1`): Self = StObject.set(x, "70", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set71(value: `1`): Self = StObject.set(x, "71", value.asInstanceOf[js.Any])
+      inline def set71(value: `1`): Self = StObject.set(x, "71", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set72(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "72", value.asInstanceOf[js.Any])
+      inline def set72(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "72", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set73(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "73", value.asInstanceOf[js.Any])
+      inline def set73(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "73", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set74(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "74", value.asInstanceOf[js.Any])
+      inline def set74(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "74", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set75(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "75", value.asInstanceOf[js.Any])
+      inline def set75(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "75", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set76(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "76", value.asInstanceOf[js.Any])
+      inline def set76(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "76", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set77(value: `1`): Self = StObject.set(x, "77", value.asInstanceOf[js.Any])
+      inline def set77(value: `1`): Self = StObject.set(x, "77", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set78(value: `1`): Self = StObject.set(x, "78", value.asInstanceOf[js.Any])
+      inline def set78(value: `1`): Self = StObject.set(x, "78", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set79(value: `1`): Self = StObject.set(x, "79", value.asInstanceOf[js.Any])
+      inline def set79(value: `1`): Self = StObject.set(x, "79", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set8(value: typings.rtpParser.anon.`12`): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      inline def set8(value: typings.rtpParser.anon.`12`): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set80(value: `1`): Self = StObject.set(x, "80", value.asInstanceOf[js.Any])
+      inline def set80(value: `1`): Self = StObject.set(x, "80", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set81(value: `1`): Self = StObject.set(x, "81", value.asInstanceOf[js.Any])
+      inline def set81(value: `1`): Self = StObject.set(x, "81", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set82(value: `1`): Self = StObject.set(x, "82", value.asInstanceOf[js.Any])
+      inline def set82(value: `1`): Self = StObject.set(x, "82", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set83(value: `1`): Self = StObject.set(x, "83", value.asInstanceOf[js.Any])
+      inline def set83(value: `1`): Self = StObject.set(x, "83", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set84(value: `1`): Self = StObject.set(x, "84", value.asInstanceOf[js.Any])
+      inline def set84(value: `1`): Self = StObject.set(x, "84", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set85(value: `1`): Self = StObject.set(x, "85", value.asInstanceOf[js.Any])
+      inline def set85(value: `1`): Self = StObject.set(x, "85", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set86(value: `1`): Self = StObject.set(x, "86", value.asInstanceOf[js.Any])
+      inline def set86(value: `1`): Self = StObject.set(x, "86", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set87(value: `1`): Self = StObject.set(x, "87", value.asInstanceOf[js.Any])
+      inline def set87(value: `1`): Self = StObject.set(x, "87", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set88(value: `1`): Self = StObject.set(x, "88", value.asInstanceOf[js.Any])
+      inline def set88(value: `1`): Self = StObject.set(x, "88", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set89(value: `1`): Self = StObject.set(x, "89", value.asInstanceOf[js.Any])
+      inline def set89(value: `1`): Self = StObject.set(x, "89", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set9(value: typings.rtpParser.anon.`11`): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+      inline def set9(value: typings.rtpParser.anon.`11`): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set90(value: `1`): Self = StObject.set(x, "90", value.asInstanceOf[js.Any])
+      inline def set90(value: `1`): Self = StObject.set(x, "90", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set91(value: `1`): Self = StObject.set(x, "91", value.asInstanceOf[js.Any])
+      inline def set91(value: `1`): Self = StObject.set(x, "91", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set92(value: `1`): Self = StObject.set(x, "92", value.asInstanceOf[js.Any])
+      inline def set92(value: `1`): Self = StObject.set(x, "92", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set93(value: `1`): Self = StObject.set(x, "93", value.asInstanceOf[js.Any])
+      inline def set93(value: `1`): Self = StObject.set(x, "93", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set94(value: `1`): Self = StObject.set(x, "94", value.asInstanceOf[js.Any])
+      inline def set94(value: `1`): Self = StObject.set(x, "94", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set95(value: `1`): Self = StObject.set(x, "95", value.asInstanceOf[js.Any])
+      inline def set95(value: `1`): Self = StObject.set(x, "95", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set96(value: Name): Self = StObject.set(x, "96", value.asInstanceOf[js.Any])
+      inline def set96(value: Name): Self = StObject.set(x, "96", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set97(value: Name): Self = StObject.set(x, "97", value.asInstanceOf[js.Any])
+      inline def set97(value: Name): Self = StObject.set(x, "97", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set98(value: Name): Self = StObject.set(x, "98", value.asInstanceOf[js.Any])
+      inline def set98(value: Name): Self = StObject.set(x, "98", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set99(value: Name): Self = StObject.set(x, "99", value.asInstanceOf[js.Any])
+      inline def set99(value: Name): Self = StObject.set(x, "99", value.asInstanceOf[js.Any])
     }
   }
 }

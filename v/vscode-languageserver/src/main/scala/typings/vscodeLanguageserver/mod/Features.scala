@@ -26,58 +26,41 @@ trait Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLan
 }
 object Features {
   
-  @scala.inline
-  def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](): Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = {
+  inline def apply[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](): Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = {
     val __obj = js.Dynamic.literal(__brand = "features")
     __obj.asInstanceOf[Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
   }
   
-  @scala.inline
-  implicit class FeaturesMutableBuilder[Self <: Features[?, ?, ?, ?, ?, ?, ?], PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] (val x: Self & (Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages])) extends AnyVal {
+  extension [Self <: Features[?, ?, ?, ?, ?, ?, ?], PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](x: Self & (Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages])) {
     
-    @scala.inline
-    def setClient(value: /* Base */ Instantiable0[RemoteClient] => Instantiable0[RemoteClient & PClient]): Self = StObject.set(x, "client", js.Any.fromFunction1(value))
+    inline def setClient(value: /* Base */ Instantiable0[RemoteClient] => Instantiable0[RemoteClient & PClient]): Self = StObject.set(x, "client", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setConsole(value: /* Base */ Instantiable0[RemoteConsole] => Instantiable0[RemoteConsole & PConsole]): Self = StObject.set(x, "console", js.Any.fromFunction1(value))
+    inline def setConsole(value: /* Base */ Instantiable0[RemoteConsole] => Instantiable0[RemoteConsole & PConsole]): Self = StObject.set(x, "console", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+    inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     
-    @scala.inline
-    def setLanguages(value: /* Base */ Instantiable0[Languages] => Instantiable0[Languages & PLanguages]): Self = StObject.set(x, "languages", js.Any.fromFunction1(value))
+    inline def setLanguages(value: /* Base */ Instantiable0[Languages] => Instantiable0[Languages & PLanguages]): Self = StObject.set(x, "languages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setTelemetry(value: /* Base */ Instantiable0[Telemetry] => Instantiable0[Telemetry & PTelemetry]): Self = StObject.set(x, "telemetry", js.Any.fromFunction1(value))
+    inline def setTelemetry(value: /* Base */ Instantiable0[Telemetry] => Instantiable0[Telemetry & PTelemetry]): Self = StObject.set(x, "telemetry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
+    inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
-    @scala.inline
-    def setTracer(value: /* Base */ Instantiable0[Tracer] => Instantiable0[Tracer & PTracer]): Self = StObject.set(x, "tracer", js.Any.fromFunction1(value))
+    inline def setTracer(value: /* Base */ Instantiable0[Tracer] => Instantiable0[Tracer & PTracer]): Self = StObject.set(x, "tracer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
+    inline def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
     
-    @scala.inline
-    def setWindow(value: /* Base */ Instantiable0[RemoteWindow] => Instantiable0[RemoteWindow & PWindow]): Self = StObject.set(x, "window", js.Any.fromFunction1(value))
+    inline def setWindow(value: /* Base */ Instantiable0[RemoteWindow] => Instantiable0[RemoteWindow & PWindow]): Self = StObject.set(x, "window", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
-    @scala.inline
-    def setWorkspace(value: /* Base */ Instantiable0[RemoteWorkspace] => Instantiable0[RemoteWorkspace & PWorkspace]): Self = StObject.set(x, "workspace", js.Any.fromFunction1(value))
+    inline def setWorkspace(value: /* Base */ Instantiable0[RemoteWorkspace] => Instantiable0[RemoteWorkspace & PWorkspace]): Self = StObject.set(x, "workspace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+    inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     
-    @scala.inline
-    def set__brand(value: features): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
+    inline def set__brand(value: features): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }
 }

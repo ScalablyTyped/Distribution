@@ -63,25 +63,25 @@ object clientMod {
     def this(fpaToken: String) = this()
     def this(fpaToken: String, options: js.Any) = this()
     
-    var _createDocument: js.Any = js.native
+    /* private */ var _createDocument: js.Any = js.native
     
-    var _createList: js.Any = js.native
+    /* private */ var _createList: js.Any = js.native
     
-    var _createMap: js.Any = js.native
+    /* private */ var _createMap: js.Any = js.native
     
-    var _createStream: js.Any = js.native
+    /* private */ var _createStream: js.Any = js.native
     
-    var _get: js.Any = js.native
+    /* private */ var _get: js.Any = js.native
     
-    var _getDocument: js.Any = js.native
+    /* private */ var _getDocument: js.Any = js.native
     
-    var _getList: js.Any = js.native
+    /* private */ var _getList: js.Any = js.native
     
-    var _getLiveQuery: js.Any = js.native
+    /* private */ var _getLiveQuery: js.Any = js.native
     
-    var _getMap: js.Any = js.native
+    /* private */ var _getMap: js.Any = js.native
     
-    var _getStream: js.Any = js.native
+    /* private */ var _getStream: js.Any = js.native
     
     def connectionState: ConnectionState = js.native
     
@@ -115,11 +115,11 @@ object clientMod {
       * Or throws if initialization is impossible
       * @private
       */
-    var ensureReady: js.Any = js.native
+    /* private */ var ensureReady: js.Any = js.native
     
-    val entities: js.Any = js.native
+    /* private */ val entities: js.Any = js.native
     
-    var getCached: js.Any = js.native
+    /* private */ var getCached: js.Any = js.native
     
     /**
       * For Flex customers only. Creates a query object that can be used to issue one-time queries repeatedly
@@ -194,7 +194,7 @@ object clientMod {
       */
     def liveQuery(indexName: String, queryExpression: String): js.Promise[LiveQuery] = js.native
     
-    var localStorageId: js.Any = js.native
+    /* private */ var localStorageId: js.Any = js.native
     
     /**
       * Read or create a Sync Map.
@@ -221,11 +221,11 @@ object clientMod {
     def map(arg: String): js.Promise[SyncMap] = js.native
     def map(arg: OpenMapOptions): js.Promise[SyncMap] = js.native
     
-    var readRootFromSessionCache: js.Any = js.native
+    /* private */ var readRootFromSessionCache: js.Any = js.native
     
-    var removeFromCacheAndSession: js.Any = js.native
+    /* private */ var removeFromCacheAndSession: js.Any = js.native
     
-    val services: js.Any = js.native
+    /* private */ val services: js.Any = js.native
     
     /**
       * Gracefully shutdown the libray
@@ -235,7 +235,7 @@ object clientMod {
       */
     def shutdown(): js.Promise[Unit] = js.native
     
-    var storeRootInSessionCache: js.Any = js.native
+    /* private */ var storeRootInSessionCache: js.Any = js.native
     
     /**
       * Read or create a Sync Message Stream.
@@ -308,23 +308,17 @@ object clientMod {
   trait ConnectionState extends StObject
   object ConnectionState {
     
-    @scala.inline
-    def connected: typings.twilioSync.twilioSyncStrings.connected = "connected".asInstanceOf[typings.twilioSync.twilioSyncStrings.connected]
+    inline def connected: typings.twilioSync.twilioSyncStrings.connected = "connected".asInstanceOf[typings.twilioSync.twilioSyncStrings.connected]
     
-    @scala.inline
-    def connecting: typings.twilioSync.twilioSyncStrings.connecting = "connecting".asInstanceOf[typings.twilioSync.twilioSyncStrings.connecting]
+    inline def connecting: typings.twilioSync.twilioSyncStrings.connecting = "connecting".asInstanceOf[typings.twilioSync.twilioSyncStrings.connecting]
     
-    @scala.inline
-    def denied: typings.twilioSync.twilioSyncStrings.denied = "denied".asInstanceOf[typings.twilioSync.twilioSyncStrings.denied]
+    inline def denied: typings.twilioSync.twilioSyncStrings.denied = "denied".asInstanceOf[typings.twilioSync.twilioSyncStrings.denied]
     
-    @scala.inline
-    def disconnected: typings.twilioSync.twilioSyncStrings.disconnected = "disconnected".asInstanceOf[typings.twilioSync.twilioSyncStrings.disconnected]
+    inline def disconnected: typings.twilioSync.twilioSyncStrings.disconnected = "disconnected".asInstanceOf[typings.twilioSync.twilioSyncStrings.disconnected]
     
-    @scala.inline
-    def disconnecting: typings.twilioSync.twilioSyncStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilioSync.twilioSyncStrings.disconnecting]
+    inline def disconnecting: typings.twilioSync.twilioSyncStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilioSync.twilioSyncStrings.disconnecting]
     
-    @scala.inline
-    def error: typings.twilioSync.twilioSyncStrings.error = "error".asInstanceOf[typings.twilioSync.twilioSyncStrings.error]
+    inline def error: typings.twilioSync.twilioSyncStrings.error = "error".asInstanceOf[typings.twilioSync.twilioSyncStrings.error]
   }
   
   trait OpenDocumentOptions
@@ -335,20 +329,16 @@ object clientMod {
   }
   object OpenDocumentOptions {
     
-    @scala.inline
-    def apply(): OpenDocumentOptions = {
+    inline def apply(): OpenDocumentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenDocumentOptions]
     }
     
-    @scala.inline
-    implicit class OpenDocumentOptionsMutableBuilder[Self <: OpenDocumentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenDocumentOptions](x: Self) {
       
-      @scala.inline
-      def setValue(value: json): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: json): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -364,32 +354,24 @@ object clientMod {
   }
   object OpenListOptions {
     
-    @scala.inline
-    def apply(): OpenListOptions = {
+    inline def apply(): OpenListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenListOptions]
     }
     
-    @scala.inline
-    implicit class OpenListOptionsMutableBuilder[Self <: OpenListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenListOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: json): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: json): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setIncludeItems(value: Boolean): Self = StObject.set(x, "includeItems", value.asInstanceOf[js.Any])
+      inline def setIncludeItems(value: Boolean): Self = StObject.set(x, "includeItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeItemsUndefined: Self = StObject.set(x, "includeItems", js.undefined)
+      inline def setIncludeItemsUndefined: Self = StObject.set(x, "includeItems", js.undefined)
       
-      @scala.inline
-      def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
+      inline def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
+      inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     }
   }
   
@@ -401,20 +383,16 @@ object clientMod {
   }
   object OpenMapOptions {
     
-    @scala.inline
-    def apply(): OpenMapOptions = {
+    inline def apply(): OpenMapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenMapOptions]
     }
     
-    @scala.inline
-    implicit class OpenMapOptionsMutableBuilder[Self <: OpenMapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenMapOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeItems(value: Boolean): Self = StObject.set(x, "includeItems", value.asInstanceOf[js.Any])
+      inline def setIncludeItems(value: Boolean): Self = StObject.set(x, "includeItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeItemsUndefined: Self = StObject.set(x, "includeItems", js.undefined)
+      inline def setIncludeItemsUndefined: Self = StObject.set(x, "includeItems", js.undefined)
     }
   }
   
@@ -426,14 +404,11 @@ object clientMod {
   trait OpenMode extends StObject
   object OpenMode {
     
-    @scala.inline
-    def create_new: typings.twilioSync.twilioSyncStrings.create_new = "create_new".asInstanceOf[typings.twilioSync.twilioSyncStrings.create_new]
+    inline def create_new: typings.twilioSync.twilioSyncStrings.create_new = "create_new".asInstanceOf[typings.twilioSync.twilioSyncStrings.create_new]
     
-    @scala.inline
-    def open_existing: typings.twilioSync.twilioSyncStrings.open_existing = "open_existing".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_existing]
+    inline def open_existing: typings.twilioSync.twilioSyncStrings.open_existing = "open_existing".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_existing]
     
-    @scala.inline
-    def open_or_create: typings.twilioSync.twilioSyncStrings.open_or_create = "open_or_create".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_or_create]
+    inline def open_or_create: typings.twilioSync.twilioSyncStrings.open_or_create = "open_or_create".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_or_create]
   }
   
   trait OpenOptions extends StObject {
@@ -446,32 +421,24 @@ object clientMod {
   }
   object OpenOptions {
     
-    @scala.inline
-    def apply(): OpenOptions = {
+    inline def apply(): OpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenOptions]
     }
     
-    @scala.inline
-    implicit class OpenOptionsMutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMode(value: OpenMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: OpenMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   

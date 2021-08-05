@@ -13,19 +13,15 @@ trait SchemaUndeleteServiceAccountResponse extends StObject {
 }
 object SchemaUndeleteServiceAccountResponse {
   
-  @scala.inline
-  def apply(): SchemaUndeleteServiceAccountResponse = {
+  inline def apply(): SchemaUndeleteServiceAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUndeleteServiceAccountResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUndeleteServiceAccountResponseMutableBuilder[Self <: SchemaUndeleteServiceAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUndeleteServiceAccountResponse](x: Self) {
     
-    @scala.inline
-    def setRestoredAccount(value: SchemaServiceAccount): Self = StObject.set(x, "restoredAccount", value.asInstanceOf[js.Any])
+    inline def setRestoredAccount(value: SchemaServiceAccount): Self = StObject.set(x, "restoredAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoredAccountUndefined: Self = StObject.set(x, "restoredAccount", js.undefined)
+    inline def setRestoredAccountUndefined: Self = StObject.set(x, "restoredAccount", js.undefined)
   }
 }

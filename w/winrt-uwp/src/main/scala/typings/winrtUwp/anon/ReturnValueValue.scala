@@ -12,19 +12,15 @@ trait ReturnValueValue extends StObject {
 }
 object ReturnValueValue {
   
-  @scala.inline
-  def apply(returnValue: Boolean, value: Double): ReturnValueValue = {
+  inline def apply(returnValue: Boolean, value: Double): ReturnValueValue = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnValueValue]
   }
   
-  @scala.inline
-  implicit class ReturnValueValueMutableBuilder[Self <: ReturnValueValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnValueValue](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

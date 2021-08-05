@@ -21,17 +21,14 @@ object mod extends Shortcut {
   }
   object Object {
     
-    @scala.inline
-    def apply(should: Assertion): Object = {
+    inline def apply(should: Assertion): Object = {
       val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
       __obj.asInstanceOf[Object]
     }
     
-    @scala.inline
-    implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+    extension [Self <: Object](x: Self) {
       
-      @scala.inline
-      def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
+      inline def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,21 +453,17 @@ object mod extends Shortcut {
       }
       object LanguageChains {
         
-        @scala.inline
-        def apply(json: Assertion, `using`: Assertion): LanguageChains = {
+        inline def apply(json: Assertion, `using`: Assertion): LanguageChains = {
           val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
           __obj.updateDynamic("using")(`using`.asInstanceOf[js.Any])
           __obj.asInstanceOf[LanguageChains]
         }
         
-        @scala.inline
-        implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+        extension [Self <: LanguageChains](x: Self) {
           
-          @scala.inline
-          def setJson(value: Assertion): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+          inline def setJson(value: Assertion): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUsing(value: Assertion): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
+          inline def setUsing(value: Assertion): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
         }
       }
       

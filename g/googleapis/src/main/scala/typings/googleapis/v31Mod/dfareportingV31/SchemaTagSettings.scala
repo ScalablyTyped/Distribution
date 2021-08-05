@@ -21,25 +21,19 @@ trait SchemaTagSettings extends StObject {
 }
 object SchemaTagSettings {
   
-  @scala.inline
-  def apply(): SchemaTagSettings = {
+  inline def apply(): SchemaTagSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTagSettings]
   }
   
-  @scala.inline
-  implicit class SchemaTagSettingsMutableBuilder[Self <: SchemaTagSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTagSettings](x: Self) {
     
-    @scala.inline
-    def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
+    inline def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicTagEnabledUndefined: Self = StObject.set(x, "dynamicTagEnabled", js.undefined)
+    inline def setDynamicTagEnabledUndefined: Self = StObject.set(x, "dynamicTagEnabled", js.undefined)
     
-    @scala.inline
-    def setImageTagEnabled(value: Boolean): Self = StObject.set(x, "imageTagEnabled", value.asInstanceOf[js.Any])
+    inline def setImageTagEnabled(value: Boolean): Self = StObject.set(x, "imageTagEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTagEnabledUndefined: Self = StObject.set(x, "imageTagEnabled", js.undefined)
+    inline def setImageTagEnabledUndefined: Self = StObject.set(x, "imageTagEnabled", js.undefined)
   }
 }

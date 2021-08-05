@@ -10,19 +10,15 @@ trait TimelineFeedResponseUsertags extends StObject {
 }
 object TimelineFeedResponseUsertags {
   
-  @scala.inline
-  def apply(in: js.Array[TimelineFeedResponseInItem]): TimelineFeedResponseUsertags = {
+  inline def apply(in: js.Array[TimelineFeedResponseInItem]): TimelineFeedResponseUsertags = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseUsertags]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseUsertagsMutableBuilder[Self <: TimelineFeedResponseUsertags] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseUsertags](x: Self) {
     
-    @scala.inline
-    def setIn(value: js.Array[TimelineFeedResponseInItem]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: js.Array[TimelineFeedResponseInItem]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInVarargs(value: TimelineFeedResponseInItem*): Self = StObject.set(x, "in", js.Array(value :_*))
+    inline def setInVarargs(value: TimelineFeedResponseInItem*): Self = StObject.set(x, "in", js.Array(value :_*))
   }
 }

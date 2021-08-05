@@ -48,8 +48,7 @@ trait ɵViewDefinition
 }
 object ɵViewDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindingCount: Double,
     flags: ɵViewFlags,
     handleEvent: (/* view */ ViewData, /* nodeIndex */ Double, /* eventName */ String, /* event */ js.Any) => Boolean,
@@ -65,48 +64,34 @@ object ɵViewDefinition {
     __obj.asInstanceOf[ɵViewDefinition]
   }
   
-  @scala.inline
-  implicit class ɵViewDefinitionMutableBuilder[Self <: ɵViewDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ɵViewDefinition](x: Self) {
     
-    @scala.inline
-    def setBindingCount(value: Double): Self = StObject.set(x, "bindingCount", value.asInstanceOf[js.Any])
+    inline def setBindingCount(value: Double): Self = StObject.set(x, "bindingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: ɵViewFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ɵViewFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleEvent(
+    inline def setHandleEvent(
       value: (/* view */ ViewData, /* nodeIndex */ Double, /* eventName */ String, /* event */ js.Any) => Boolean
     ): Self = StObject.set(x, "handleEvent", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setLastRenderRootNode(value: NodeDef): Self = StObject.set(x, "lastRenderRootNode", value.asInstanceOf[js.Any])
+    inline def setLastRenderRootNode(value: NodeDef): Self = StObject.set(x, "lastRenderRootNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRenderRootNodeNull: Self = StObject.set(x, "lastRenderRootNode", null)
+    inline def setLastRenderRootNodeNull: Self = StObject.set(x, "lastRenderRootNode", null)
     
-    @scala.inline
-    def setNodeFlags(value: ɵNodeFlags): Self = StObject.set(x, "nodeFlags", value.asInstanceOf[js.Any])
+    inline def setNodeFlags(value: ɵNodeFlags): Self = StObject.set(x, "nodeFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeMatchedQueries(value: Double): Self = StObject.set(x, "nodeMatchedQueries", value.asInstanceOf[js.Any])
+    inline def setNodeMatchedQueries(value: Double): Self = StObject.set(x, "nodeMatchedQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[NodeDef]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[NodeDef]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: NodeDef*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeDef*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputCount(value: Double): Self = StObject.set(x, "outputCount", value.asInstanceOf[js.Any])
+    inline def setOutputCount(value: Double): Self = StObject.set(x, "outputCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNodeFlags(value: ɵNodeFlags): Self = StObject.set(x, "rootNodeFlags", value.asInstanceOf[js.Any])
+    inline def setRootNodeFlags(value: ɵNodeFlags): Self = StObject.set(x, "rootNodeFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDirectives(value: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit): Self = StObject.set(x, "updateDirectives", js.Any.fromFunction2(value))
+    inline def setUpdateDirectives(value: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit): Self = StObject.set(x, "updateDirectives", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateRenderer(value: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit): Self = StObject.set(x, "updateRenderer", js.Any.fromFunction2(value))
+    inline def setUpdateRenderer(value: (/* check */ NodeCheckFn, /* view */ ViewData) => Unit): Self = StObject.set(x, "updateRenderer", js.Any.fromFunction2(value))
   }
 }

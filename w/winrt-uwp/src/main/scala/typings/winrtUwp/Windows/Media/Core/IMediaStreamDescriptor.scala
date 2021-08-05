@@ -18,22 +18,17 @@ trait IMediaStreamDescriptor extends StObject {
 }
 object IMediaStreamDescriptor {
   
-  @scala.inline
-  def apply(isSelected: Boolean, language: String, name: String): IMediaStreamDescriptor = {
+  inline def apply(isSelected: Boolean, language: String, name: String): IMediaStreamDescriptor = {
     val __obj = js.Dynamic.literal(isSelected = isSelected.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaStreamDescriptor]
   }
   
-  @scala.inline
-  implicit class IMediaStreamDescriptorMutableBuilder[Self <: IMediaStreamDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaStreamDescriptor](x: Self) {
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

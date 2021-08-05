@@ -38,8 +38,7 @@ trait ASPxClientAppointmentResizeEventArgs
 }
 object ASPxClientAppointmentResizeEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appointmentId: String,
     handled: Boolean,
     newInterval: ASPxClientTimeInterval,
@@ -50,22 +49,16 @@ object ASPxClientAppointmentResizeEventArgs {
     __obj.asInstanceOf[ASPxClientAppointmentResizeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentResizeEventArgsMutableBuilder[Self <: ASPxClientAppointmentResizeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentResizeEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
+    inline def setNewInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
+    inline def setOldInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: ASPxClientAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: ASPxClientAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

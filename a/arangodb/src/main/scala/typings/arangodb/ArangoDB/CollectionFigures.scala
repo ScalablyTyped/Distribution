@@ -40,8 +40,7 @@ trait CollectionFigures extends StObject {
 }
 object CollectionFigures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alive: Count,
     attributes: Count,
     compactionStatus: BytesRead,
@@ -61,49 +60,34 @@ object CollectionFigures {
     __obj.asInstanceOf[CollectionFigures]
   }
   
-  @scala.inline
-  implicit class CollectionFiguresMutableBuilder[Self <: CollectionFigures] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionFigures](x: Self) {
     
-    @scala.inline
-    def setAlive(value: Count): Self = StObject.set(x, "alive", value.asInstanceOf[js.Any])
+    inline def setAlive(value: Count): Self = StObject.set(x, "alive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: Count): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Count): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactionStatus(value: BytesRead): Self = StObject.set(x, "compactionStatus", value.asInstanceOf[js.Any])
+    inline def setCompactionStatus(value: BytesRead): Self = StObject.set(x, "compactionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactors(value: FileSize): Self = StObject.set(x, "compactors", value.asInstanceOf[js.Any])
+    inline def setCompactors(value: FileSize): Self = StObject.set(x, "compactors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatafiles(value: FileSize): Self = StObject.set(x, "datafiles", value.asInstanceOf[js.Any])
+    inline def setDatafiles(value: FileSize): Self = StObject.set(x, "datafiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDead(value: Deletion): Self = StObject.set(x, "dead", value.asInstanceOf[js.Any])
+    inline def setDead(value: Deletion): Self = StObject.set(x, "dead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentReferences(value: Double): Self = StObject.set(x, "documentReferences", value.asInstanceOf[js.Any])
+    inline def setDocumentReferences(value: Double): Self = StObject.set(x, "documentReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexes(value: Count): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: Count): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJournals(value: FileSize): Self = StObject.set(x, "journals", value.asInstanceOf[js.Any])
+    inline def setJournals(value: FileSize): Self = StObject.set(x, "journals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTick(value: Double): Self = StObject.set(x, "lastTick", value.asInstanceOf[js.Any])
+    inline def setLastTick(value: Double): Self = StObject.set(x, "lastTick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapefiles(value: FileSize): Self = StObject.set(x, "shapefiles", value.asInstanceOf[js.Any])
+    inline def setShapefiles(value: FileSize): Self = StObject.set(x, "shapefiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapes(value: Count): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: Count): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncollectedLogfileEntries(value: Double): Self = StObject.set(x, "uncollectedLogfileEntries", value.asInstanceOf[js.Any])
+    inline def setUncollectedLogfileEntries(value: Double): Self = StObject.set(x, "uncollectedLogfileEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingFor(value: String): Self = StObject.set(x, "waitingFor", value.asInstanceOf[js.Any])
+    inline def setWaitingFor(value: String): Self = StObject.set(x, "waitingFor", value.asInstanceOf[js.Any])
   }
 }

@@ -22,31 +22,23 @@ trait SchemaDateRangeValues extends StObject {
 }
 object SchemaDateRangeValues {
   
-  @scala.inline
-  def apply(): SchemaDateRangeValues = {
+  inline def apply(): SchemaDateRangeValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDateRangeValues]
   }
   
-  @scala.inline
-  implicit class SchemaDateRangeValuesMutableBuilder[Self <: SchemaDateRangeValues] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDateRangeValues](x: Self) {
     
-    @scala.inline
-    def setPivotValueRegions(value: js.Array[SchemaPivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
+    inline def setPivotValueRegions(value: js.Array[SchemaPivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
+    inline def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
     
-    @scala.inline
-    def setPivotValueRegionsVarargs(value: SchemaPivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
+    inline def setPivotValueRegionsVarargs(value: SchemaPivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

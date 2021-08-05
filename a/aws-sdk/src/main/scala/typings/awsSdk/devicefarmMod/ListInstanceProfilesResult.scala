@@ -18,28 +18,21 @@ trait ListInstanceProfilesResult extends StObject {
 }
 object ListInstanceProfilesResult {
   
-  @scala.inline
-  def apply(): ListInstanceProfilesResult = {
+  inline def apply(): ListInstanceProfilesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInstanceProfilesResult]
   }
   
-  @scala.inline
-  implicit class ListInstanceProfilesResultMutableBuilder[Self <: ListInstanceProfilesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListInstanceProfilesResult](x: Self) {
     
-    @scala.inline
-    def setInstanceProfiles(value: InstanceProfiles): Self = StObject.set(x, "instanceProfiles", value.asInstanceOf[js.Any])
+    inline def setInstanceProfiles(value: InstanceProfiles): Self = StObject.set(x, "instanceProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProfilesUndefined: Self = StObject.set(x, "instanceProfiles", js.undefined)
+    inline def setInstanceProfilesUndefined: Self = StObject.set(x, "instanceProfiles", js.undefined)
     
-    @scala.inline
-    def setInstanceProfilesVarargs(value: InstanceProfile*): Self = StObject.set(x, "instanceProfiles", js.Array(value :_*))
+    inline def setInstanceProfilesVarargs(value: InstanceProfile*): Self = StObject.set(x, "instanceProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

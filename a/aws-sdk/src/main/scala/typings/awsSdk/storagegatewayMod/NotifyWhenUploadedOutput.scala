@@ -12,25 +12,19 @@ trait NotifyWhenUploadedOutput extends StObject {
 }
 object NotifyWhenUploadedOutput {
   
-  @scala.inline
-  def apply(): NotifyWhenUploadedOutput = {
+  inline def apply(): NotifyWhenUploadedOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifyWhenUploadedOutput]
   }
   
-  @scala.inline
-  implicit class NotifyWhenUploadedOutputMutableBuilder[Self <: NotifyWhenUploadedOutput] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyWhenUploadedOutput](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
+    inline def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
     
-    @scala.inline
-    def setNotificationId(value: NotificationId): Self = StObject.set(x, "NotificationId", value.asInstanceOf[js.Any])
+    inline def setNotificationId(value: NotificationId): Self = StObject.set(x, "NotificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationIdUndefined: Self = StObject.set(x, "NotificationId", js.undefined)
+    inline def setNotificationIdUndefined: Self = StObject.set(x, "NotificationId", js.undefined)
   }
 }

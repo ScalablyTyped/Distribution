@@ -13,16 +13,13 @@ trait StopBuildInput extends StObject {
 }
 object StopBuildInput {
   
-  @scala.inline
-  def apply(id: NonEmptyString): StopBuildInput = {
+  inline def apply(id: NonEmptyString): StopBuildInput = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopBuildInput]
   }
   
-  @scala.inline
-  implicit class StopBuildInputMutableBuilder[Self <: StopBuildInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopBuildInput](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

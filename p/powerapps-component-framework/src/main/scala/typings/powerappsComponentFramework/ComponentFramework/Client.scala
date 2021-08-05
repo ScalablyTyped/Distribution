@@ -38,8 +38,7 @@ trait Client extends StObject {
 }
 object Client {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disableScroll: Boolean,
     getClient: () => String,
     getFormFactor: () => Double,
@@ -49,19 +48,14 @@ object Client {
     __obj.asInstanceOf[Client]
   }
   
-  @scala.inline
-  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+  extension [Self <: Client](x: Self) {
     
-    @scala.inline
-    def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+    inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClient(value: () => String): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
+    inline def setGetClient(value: () => String): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormFactor(value: () => Double): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
+    inline def setGetFormFactor(value: () => Double): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
+    inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
   }
 }

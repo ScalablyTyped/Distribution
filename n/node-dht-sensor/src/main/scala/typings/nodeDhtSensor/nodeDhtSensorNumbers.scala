@@ -8,11 +8,9 @@ object nodeDhtSensorNumbers {
   
   @js.native
   sealed trait `11` extends StObject
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
   sealed trait `22` extends StObject
-  @scala.inline
-  def `22`: `22` = 22.asInstanceOf[`22`]
+  inline def `22`: `22` = 22.asInstanceOf[`22`]
 }

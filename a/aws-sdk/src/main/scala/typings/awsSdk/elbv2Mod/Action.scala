@@ -48,58 +48,41 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(Type: ActionTypeEnum): Action = {
+  inline def apply(Type: ActionTypeEnum): Action = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAuthenticateCognitoConfig(value: AuthenticateCognitoActionConfig): Self = StObject.set(x, "AuthenticateCognitoConfig", value.asInstanceOf[js.Any])
+    inline def setAuthenticateCognitoConfig(value: AuthenticateCognitoActionConfig): Self = StObject.set(x, "AuthenticateCognitoConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateCognitoConfigUndefined: Self = StObject.set(x, "AuthenticateCognitoConfig", js.undefined)
+    inline def setAuthenticateCognitoConfigUndefined: Self = StObject.set(x, "AuthenticateCognitoConfig", js.undefined)
     
-    @scala.inline
-    def setAuthenticateOidcConfig(value: AuthenticateOidcActionConfig): Self = StObject.set(x, "AuthenticateOidcConfig", value.asInstanceOf[js.Any])
+    inline def setAuthenticateOidcConfig(value: AuthenticateOidcActionConfig): Self = StObject.set(x, "AuthenticateOidcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateOidcConfigUndefined: Self = StObject.set(x, "AuthenticateOidcConfig", js.undefined)
+    inline def setAuthenticateOidcConfigUndefined: Self = StObject.set(x, "AuthenticateOidcConfig", js.undefined)
     
-    @scala.inline
-    def setFixedResponseConfig(value: FixedResponseActionConfig): Self = StObject.set(x, "FixedResponseConfig", value.asInstanceOf[js.Any])
+    inline def setFixedResponseConfig(value: FixedResponseActionConfig): Self = StObject.set(x, "FixedResponseConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedResponseConfigUndefined: Self = StObject.set(x, "FixedResponseConfig", js.undefined)
+    inline def setFixedResponseConfigUndefined: Self = StObject.set(x, "FixedResponseConfig", js.undefined)
     
-    @scala.inline
-    def setForwardConfig(value: ForwardActionConfig): Self = StObject.set(x, "ForwardConfig", value.asInstanceOf[js.Any])
+    inline def setForwardConfig(value: ForwardActionConfig): Self = StObject.set(x, "ForwardConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardConfigUndefined: Self = StObject.set(x, "ForwardConfig", js.undefined)
+    inline def setForwardConfigUndefined: Self = StObject.set(x, "ForwardConfig", js.undefined)
     
-    @scala.inline
-    def setOrder(value: ActionOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: ActionOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
     
-    @scala.inline
-    def setRedirectConfig(value: RedirectActionConfig): Self = StObject.set(x, "RedirectConfig", value.asInstanceOf[js.Any])
+    inline def setRedirectConfig(value: RedirectActionConfig): Self = StObject.set(x, "RedirectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectConfigUndefined: Self = StObject.set(x, "RedirectConfig", js.undefined)
+    inline def setRedirectConfigUndefined: Self = StObject.set(x, "RedirectConfig", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
     
-    @scala.inline
-    def setType(value: ActionTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ActionTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

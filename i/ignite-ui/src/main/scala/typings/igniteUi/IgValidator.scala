@@ -331,268 +331,181 @@ trait IgValidator
 }
 object IgValidator {
   
-  @scala.inline
-  def apply(): IgValidator = {
+  inline def apply(): IgValidator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgValidator]
   }
   
-  @scala.inline
-  implicit class IgValidatorMutableBuilder[Self <: IgValidator] (val x: Self) extends AnyVal {
+  extension [Self <: IgValidator](x: Self) {
     
-    @scala.inline
-    def setCreditCard(value: Boolean | js.Object): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+    inline def setCreditCard(value: Boolean | js.Object): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
+    inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
-    @scala.inline
-    def setCustom(value: js.Function | String | js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: js.Function | String | js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDate(value: Boolean | js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Boolean | js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setEmail(value: Boolean | js.Object): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Boolean | js.Object): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEqualTo(value: String | js.Object): Self = StObject.set(x, "equalTo", value.asInstanceOf[js.Any])
+    inline def setEqualTo(value: String | js.Object): Self = StObject.set(x, "equalTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualToUndefined: Self = StObject.set(x, "equalTo", js.undefined)
+    inline def setEqualToUndefined: Self = StObject.set(x, "equalTo", js.undefined)
     
-    @scala.inline
-    def setError(value: (/* event */ Event, /* ui */ ErrorEventUIParam) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (/* event */ Event, /* ui */ ErrorEventUIParam) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorHidden(value: (/* event */ Event, /* ui */ ErrorHiddenEventUIParam) => Unit): Self = StObject.set(x, "errorHidden", js.Any.fromFunction2(value))
+    inline def setErrorHidden(value: (/* event */ Event, /* ui */ ErrorHiddenEventUIParam) => Unit): Self = StObject.set(x, "errorHidden", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorHiddenUndefined: Self = StObject.set(x, "errorHidden", js.undefined)
+    inline def setErrorHiddenUndefined: Self = StObject.set(x, "errorHidden", js.undefined)
     
-    @scala.inline
-    def setErrorHiding(value: (/* event */ Event, /* ui */ ErrorHidingEventUIParam) => Unit): Self = StObject.set(x, "errorHiding", js.Any.fromFunction2(value))
+    inline def setErrorHiding(value: (/* event */ Event, /* ui */ ErrorHidingEventUIParam) => Unit): Self = StObject.set(x, "errorHiding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorHidingUndefined: Self = StObject.set(x, "errorHiding", js.undefined)
+    inline def setErrorHidingUndefined: Self = StObject.set(x, "errorHiding", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorShowing(value: (/* event */ Event, /* ui */ ErrorShowingEventUIParam) => Unit): Self = StObject.set(x, "errorShowing", js.Any.fromFunction2(value))
+    inline def setErrorShowing(value: (/* event */ Event, /* ui */ ErrorShowingEventUIParam) => Unit): Self = StObject.set(x, "errorShowing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorShowingUndefined: Self = StObject.set(x, "errorShowing", js.undefined)
+    inline def setErrorShowingUndefined: Self = StObject.set(x, "errorShowing", js.undefined)
     
-    @scala.inline
-    def setErrorShown(value: (/* event */ Event, /* ui */ ErrorShownEventUIParam) => Unit): Self = StObject.set(x, "errorShown", js.Any.fromFunction2(value))
+    inline def setErrorShown(value: (/* event */ Event, /* ui */ ErrorShownEventUIParam) => Unit): Self = StObject.set(x, "errorShown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorShownUndefined: Self = StObject.set(x, "errorShown", js.undefined)
+    inline def setErrorShownUndefined: Self = StObject.set(x, "errorShown", js.undefined)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExecuteAllRules(value: Boolean): Self = StObject.set(x, "executeAllRules", value.asInstanceOf[js.Any])
+    inline def setExecuteAllRules(value: Boolean): Self = StObject.set(x, "executeAllRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteAllRulesUndefined: Self = StObject.set(x, "executeAllRules", js.undefined)
+    inline def setExecuteAllRulesUndefined: Self = StObject.set(x, "executeAllRules", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[IgValidatorField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[IgValidatorField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: IgValidatorField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IgValidatorField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFormError(value: (/* event */ Event, /* ui */ FormErrorEventUIParam) => Unit): Self = StObject.set(x, "formError", js.Any.fromFunction2(value))
+    inline def setFormError(value: (/* event */ Event, /* ui */ FormErrorEventUIParam) => Unit): Self = StObject.set(x, "formError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormErrorUndefined: Self = StObject.set(x, "formError", js.undefined)
+    inline def setFormErrorUndefined: Self = StObject.set(x, "formError", js.undefined)
     
-    @scala.inline
-    def setFormSuccess(value: (/* event */ Event, /* ui */ FormSuccessEventUIParam) => Unit): Self = StObject.set(x, "formSuccess", js.Any.fromFunction2(value))
+    inline def setFormSuccess(value: (/* event */ Event, /* ui */ FormSuccessEventUIParam) => Unit): Self = StObject.set(x, "formSuccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormSuccessUndefined: Self = StObject.set(x, "formSuccess", js.undefined)
+    inline def setFormSuccessUndefined: Self = StObject.set(x, "formSuccess", js.undefined)
     
-    @scala.inline
-    def setFormValidated(value: (/* event */ Event, /* ui */ FormValidatedEventUIParam) => Unit): Self = StObject.set(x, "formValidated", js.Any.fromFunction2(value))
+    inline def setFormValidated(value: (/* event */ Event, /* ui */ FormValidatedEventUIParam) => Unit): Self = StObject.set(x, "formValidated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormValidatedUndefined: Self = StObject.set(x, "formValidated", js.undefined)
+    inline def setFormValidatedUndefined: Self = StObject.set(x, "formValidated", js.undefined)
     
-    @scala.inline
-    def setFormValidating(value: (/* event */ Event, /* ui */ FormValidatingEventUIParam) => Unit): Self = StObject.set(x, "formValidating", js.Any.fromFunction2(value))
+    inline def setFormValidating(value: (/* event */ Event, /* ui */ FormValidatingEventUIParam) => Unit): Self = StObject.set(x, "formValidating", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormValidatingUndefined: Self = StObject.set(x, "formValidating", js.undefined)
+    inline def setFormValidatingUndefined: Self = StObject.set(x, "formValidating", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLengthRange(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "lengthRange", value.asInstanceOf[js.Any])
+    inline def setLengthRange(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "lengthRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthRangeUndefined: Self = StObject.set(x, "lengthRange", js.undefined)
+    inline def setLengthRangeUndefined: Self = StObject.set(x, "lengthRange", js.undefined)
     
-    @scala.inline
-    def setLengthRangeVarargs(value: js.Any*): Self = StObject.set(x, "lengthRange", js.Array(value :_*))
+    inline def setLengthRangeVarargs(value: js.Any*): Self = StObject.set(x, "lengthRange", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMessageTarget(value: Element): Self = StObject.set(x, "messageTarget", value.asInstanceOf[js.Any])
+    inline def setMessageTarget(value: Element): Self = StObject.set(x, "messageTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTargetUndefined: Self = StObject.set(x, "messageTarget", js.undefined)
+    inline def setMessageTargetUndefined: Self = StObject.set(x, "messageTarget", js.undefined)
     
-    @scala.inline
-    def setNotificationOptions(value: js.Any): Self = StObject.set(x, "notificationOptions", value.asInstanceOf[js.Any])
+    inline def setNotificationOptions(value: js.Any): Self = StObject.set(x, "notificationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationOptionsUndefined: Self = StObject.set(x, "notificationOptions", js.undefined)
+    inline def setNotificationOptionsUndefined: Self = StObject.set(x, "notificationOptions", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Boolean | js.Object): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Boolean | js.Object): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setOnblur(value: Boolean): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    inline def setOnblur(value: Boolean): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
+    inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
     
-    @scala.inline
-    def setOnchange(value: Boolean): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+    inline def setOnchange(value: Boolean): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
+    inline def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
     
-    @scala.inline
-    def setOnsubmit(value: Boolean): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+    inline def setOnsubmit(value: Boolean): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
+    inline def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
     
-    @scala.inline
-    def setOptionalIndication(value: Boolean): Self = StObject.set(x, "optionalIndication", value.asInstanceOf[js.Any])
+    inline def setOptionalIndication(value: Boolean): Self = StObject.set(x, "optionalIndication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalIndicationUndefined: Self = StObject.set(x, "optionalIndication", js.undefined)
+    inline def setOptionalIndicationUndefined: Self = StObject.set(x, "optionalIndication", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String | js.Object): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String | js.Object): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean | js.Object): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean | js.Object): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredIndication(value: Boolean): Self = StObject.set(x, "requiredIndication", value.asInstanceOf[js.Any])
+    inline def setRequiredIndication(value: Boolean): Self = StObject.set(x, "requiredIndication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredIndicationUndefined: Self = StObject.set(x, "requiredIndication", js.undefined)
+    inline def setRequiredIndicationUndefined: Self = StObject.set(x, "requiredIndication", js.undefined)
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: (/* event */ Event, /* ui */ SuccessEventUIParam) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    inline def setSuccess(value: (/* event */ Event, /* ui */ SuccessEventUIParam) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccessHidden(value: (/* event */ Event, /* ui */ SuccessHiddenEventUIParam) => Unit): Self = StObject.set(x, "successHidden", js.Any.fromFunction2(value))
+    inline def setSuccessHidden(value: (/* event */ Event, /* ui */ SuccessHiddenEventUIParam) => Unit): Self = StObject.set(x, "successHidden", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccessHiddenUndefined: Self = StObject.set(x, "successHidden", js.undefined)
+    inline def setSuccessHiddenUndefined: Self = StObject.set(x, "successHidden", js.undefined)
     
-    @scala.inline
-    def setSuccessHiding(value: (/* event */ Event, /* ui */ SuccessHidingEventUIParam) => Unit): Self = StObject.set(x, "successHiding", js.Any.fromFunction2(value))
+    inline def setSuccessHiding(value: (/* event */ Event, /* ui */ SuccessHidingEventUIParam) => Unit): Self = StObject.set(x, "successHiding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccessHidingUndefined: Self = StObject.set(x, "successHiding", js.undefined)
+    inline def setSuccessHidingUndefined: Self = StObject.set(x, "successHiding", js.undefined)
     
-    @scala.inline
-    def setSuccessMessage(value: String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
+    inline def setSuccessMessage(value: String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessMessageUndefined: Self = StObject.set(x, "successMessage", js.undefined)
+    inline def setSuccessMessageUndefined: Self = StObject.set(x, "successMessage", js.undefined)
     
-    @scala.inline
-    def setSuccessShowing(value: (/* event */ Event, /* ui */ SuccessShowingEventUIParam) => Unit): Self = StObject.set(x, "successShowing", js.Any.fromFunction2(value))
+    inline def setSuccessShowing(value: (/* event */ Event, /* ui */ SuccessShowingEventUIParam) => Unit): Self = StObject.set(x, "successShowing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccessShowingUndefined: Self = StObject.set(x, "successShowing", js.undefined)
+    inline def setSuccessShowingUndefined: Self = StObject.set(x, "successShowing", js.undefined)
     
-    @scala.inline
-    def setSuccessShown(value: (/* event */ Event, /* ui */ SuccessShownEventUIParam) => Unit): Self = StObject.set(x, "successShown", js.Any.fromFunction2(value))
+    inline def setSuccessShown(value: (/* event */ Event, /* ui */ SuccessShownEventUIParam) => Unit): Self = StObject.set(x, "successShown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccessShownUndefined: Self = StObject.set(x, "successShown", js.undefined)
+    inline def setSuccessShownUndefined: Self = StObject.set(x, "successShown", js.undefined)
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
-    @scala.inline
-    def setValidated(value: (/* event */ Event, /* ui */ ValidatedEventUIParam) => Unit): Self = StObject.set(x, "validated", js.Any.fromFunction2(value))
+    inline def setValidated(value: (/* event */ Event, /* ui */ ValidatedEventUIParam) => Unit): Self = StObject.set(x, "validated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidatedUndefined: Self = StObject.set(x, "validated", js.undefined)
+    inline def setValidatedUndefined: Self = StObject.set(x, "validated", js.undefined)
     
-    @scala.inline
-    def setValidating(value: (/* event */ Event, /* ui */ ValidatingEventUIParam) => Unit): Self = StObject.set(x, "validating", js.Any.fromFunction2(value))
+    inline def setValidating(value: (/* event */ Event, /* ui */ ValidatingEventUIParam) => Unit): Self = StObject.set(x, "validating", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
+    inline def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
     
-    @scala.inline
-    def setValueRange(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+    inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
-    @scala.inline
-    def setValueRangeVarargs(value: js.Any*): Self = StObject.set(x, "valueRange", js.Array(value :_*))
+    inline def setValueRangeVarargs(value: js.Any*): Self = StObject.set(x, "valueRange", js.Array(value :_*))
   }
 }

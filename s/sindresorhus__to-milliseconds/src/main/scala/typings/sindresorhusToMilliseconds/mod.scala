@@ -24,8 +24,7 @@ object mod {
   	}, toMilliseconds({minutes: 2}));
   	```
   	*/
-  @scala.inline
-  def apply(timeDescriptor: TimeDescriptor): Double = ^.asInstanceOf[js.Dynamic].apply(timeDescriptor.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(timeDescriptor: TimeDescriptor): Double = ^.asInstanceOf[js.Dynamic].apply(timeDescriptor.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("@sindresorhus/to-milliseconds", JSImport.Namespace)
   @js.native
@@ -35,8 +34,7 @@ object mod {
   @JSImport("@sindresorhus/to-milliseconds", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toMilliseconds */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toMilliseconds */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toMilliseconds */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait TimeDescriptor extends StObject {
     
@@ -56,56 +54,40 @@ object mod {
   }
   object TimeDescriptor {
     
-    @scala.inline
-    def apply(): TimeDescriptor = {
+    inline def apply(): TimeDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeDescriptor]
     }
     
-    @scala.inline
-    implicit class TimeDescriptorMutableBuilder[Self <: TimeDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: TimeDescriptor](x: Self) {
       
-      @scala.inline
-      def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+      inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+      inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
       
-      @scala.inline
-      def setMicroseconds(value: Double): Self = StObject.set(x, "microseconds", value.asInstanceOf[js.Any])
+      inline def setMicroseconds(value: Double): Self = StObject.set(x, "microseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicrosecondsUndefined: Self = StObject.set(x, "microseconds", js.undefined)
+      inline def setMicrosecondsUndefined: Self = StObject.set(x, "microseconds", js.undefined)
       
-      @scala.inline
-      def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
+      inline def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+      inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
       
-      @scala.inline
-      def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
+      inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanosecondsUndefined: Self = StObject.set(x, "nanoseconds", js.undefined)
+      inline def setNanosecondsUndefined: Self = StObject.set(x, "nanoseconds", js.undefined)
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+      inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     }
   }
 }

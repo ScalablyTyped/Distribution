@@ -19,25 +19,19 @@ trait FontSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
 }
 object FontSizeProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): FontSizeProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): FontSizeProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontSizeProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class FontSizePropsMutableBuilder[Self <: FontSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FontSizeProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: FontSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (FontSizeProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setFontSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
+    inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+    inline def setFontSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
   }
 }

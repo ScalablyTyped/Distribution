@@ -16,20 +16,16 @@ trait ImportExpression
 }
 object ImportExpression {
   
-  @scala.inline
-  def apply(source: Expression): ImportExpression = {
+  inline def apply(source: Expression): ImportExpression = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportExpression")
     __obj.asInstanceOf[ImportExpression]
   }
   
-  @scala.inline
-  implicit class ImportExpressionMutableBuilder[Self <: ImportExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ImportExpression](x: Self) {
     
-    @scala.inline
-    def setSource(value: Expression): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Expression): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ImportExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ImportExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IndexDocumentsRequest extends StObject {
 }
 object IndexDocumentsRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): IndexDocumentsRequest = {
+  inline def apply(DomainName: DomainName): IndexDocumentsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDocumentsRequest]
   }
   
-  @scala.inline
-  implicit class IndexDocumentsRequestMutableBuilder[Self <: IndexDocumentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IndexDocumentsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

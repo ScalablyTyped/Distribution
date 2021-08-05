@@ -26,8 +26,7 @@ trait XIndexesSupplier
 }
 object XIndexesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Indexes: XNameAccess,
     acquire: () => Unit,
     getIndexes: () => XNameAccess,
@@ -38,13 +37,10 @@ object XIndexesSupplier {
     __obj.asInstanceOf[XIndexesSupplier]
   }
   
-  @scala.inline
-  implicit class XIndexesSupplierMutableBuilder[Self <: XIndexesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XIndexesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetIndexes(value: () => XNameAccess): Self = StObject.set(x, "getIndexes", js.Any.fromFunction0(value))
+    inline def setGetIndexes(value: () => XNameAccess): Self = StObject.set(x, "getIndexes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndexes(value: XNameAccess): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: XNameAccess): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait SingularConnectorProfileCredentials extends StObject {
 }
 object SingularConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(apiKey: ApiKey): SingularConnectorProfileCredentials = {
+  inline def apply(apiKey: ApiKey): SingularConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingularConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class SingularConnectorProfileCredentialsMutableBuilder[Self <: SingularConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: SingularConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
   }
 }

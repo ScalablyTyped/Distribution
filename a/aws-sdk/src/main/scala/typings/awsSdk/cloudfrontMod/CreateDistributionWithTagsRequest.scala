@@ -13,16 +13,13 @@ trait CreateDistributionWithTagsRequest extends StObject {
 }
 object CreateDistributionWithTagsRequest {
   
-  @scala.inline
-  def apply(DistributionConfigWithTags: DistributionConfigWithTags): CreateDistributionWithTagsRequest = {
+  inline def apply(DistributionConfigWithTags: DistributionConfigWithTags): CreateDistributionWithTagsRequest = {
     val __obj = js.Dynamic.literal(DistributionConfigWithTags = DistributionConfigWithTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDistributionWithTagsRequest]
   }
   
-  @scala.inline
-  implicit class CreateDistributionWithTagsRequestMutableBuilder[Self <: CreateDistributionWithTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDistributionWithTagsRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionConfigWithTags(value: DistributionConfigWithTags): Self = StObject.set(x, "DistributionConfigWithTags", value.asInstanceOf[js.Any])
+    inline def setDistributionConfigWithTags(value: DistributionConfigWithTags): Self = StObject.set(x, "DistributionConfigWithTags", value.asInstanceOf[js.Any])
   }
 }

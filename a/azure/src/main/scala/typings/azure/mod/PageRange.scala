@@ -12,19 +12,15 @@ trait PageRange extends StObject {
 }
 object PageRange {
   
-  @scala.inline
-  def apply(end: Double, start: Double): PageRange = {
+  inline def apply(end: Double, start: Double): PageRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageRange]
   }
   
-  @scala.inline
-  implicit class PageRangeMutableBuilder[Self <: PageRange] (val x: Self) extends AnyVal {
+  extension [Self <: PageRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object ottomatedPassportTwitchStrings {
   
   @js.native
   sealed trait twitch extends StObject
-  @scala.inline
-  def twitch: twitch = "twitch".asInstanceOf[twitch]
+  inline def twitch: twitch = "twitch".asInstanceOf[twitch]
 }

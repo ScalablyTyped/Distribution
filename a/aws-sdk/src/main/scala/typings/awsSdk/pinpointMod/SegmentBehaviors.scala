@@ -13,19 +13,15 @@ trait SegmentBehaviors extends StObject {
 }
 object SegmentBehaviors {
   
-  @scala.inline
-  def apply(): SegmentBehaviors = {
+  inline def apply(): SegmentBehaviors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentBehaviors]
   }
   
-  @scala.inline
-  implicit class SegmentBehaviorsMutableBuilder[Self <: SegmentBehaviors] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentBehaviors](x: Self) {
     
-    @scala.inline
-    def setRecency(value: RecencyDimension): Self = StObject.set(x, "Recency", value.asInstanceOf[js.Any])
+    inline def setRecency(value: RecencyDimension): Self = StObject.set(x, "Recency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecencyUndefined: Self = StObject.set(x, "Recency", js.undefined)
+    inline def setRecencyUndefined: Self = StObject.set(x, "Recency", js.undefined)
   }
 }

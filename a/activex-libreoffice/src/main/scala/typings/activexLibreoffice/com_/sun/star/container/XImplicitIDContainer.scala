@@ -21,8 +21,7 @@ trait XImplicitIDContainer
 }
 object XImplicitIDContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addWithImplicitID: js.Any => String,
     queryInterface: `type` => js.Any,
@@ -34,13 +33,10 @@ object XImplicitIDContainer {
     __obj.asInstanceOf[XImplicitIDContainer]
   }
   
-  @scala.inline
-  implicit class XImplicitIDContainerMutableBuilder[Self <: XImplicitIDContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XImplicitIDContainer](x: Self) {
     
-    @scala.inline
-    def setAddWithImplicitID(value: js.Any => String): Self = StObject.set(x, "addWithImplicitID", js.Any.fromFunction1(value))
+    inline def setAddWithImplicitID(value: js.Any => String): Self = StObject.set(x, "addWithImplicitID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveByImplicitID(value: String => Unit): Self = StObject.set(x, "removeByImplicitID", js.Any.fromFunction1(value))
+    inline def setRemoveByImplicitID(value: String => Unit): Self = StObject.set(x, "removeByImplicitID", js.Any.fromFunction1(value))
   }
 }

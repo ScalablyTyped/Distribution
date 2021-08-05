@@ -20,31 +20,23 @@ trait ReplaceNamedRangeContentRequest extends StObject {
 }
 object ReplaceNamedRangeContentRequest {
   
-  @scala.inline
-  def apply(): ReplaceNamedRangeContentRequest = {
+  inline def apply(): ReplaceNamedRangeContentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceNamedRangeContentRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceNamedRangeContentRequestMutableBuilder[Self <: ReplaceNamedRangeContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceNamedRangeContentRequest](x: Self) {
     
-    @scala.inline
-    def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+    inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+    inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
     
-    @scala.inline
-    def setNamedRangeName(value: String): Self = StObject.set(x, "namedRangeName", value.asInstanceOf[js.Any])
+    inline def setNamedRangeName(value: String): Self = StObject.set(x, "namedRangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeNameUndefined: Self = StObject.set(x, "namedRangeName", js.undefined)
+    inline def setNamedRangeNameUndefined: Self = StObject.set(x, "namedRangeName", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

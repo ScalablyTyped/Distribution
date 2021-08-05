@@ -32,9 +32,9 @@ object mod {
       */
     def this(name: String, codes: CodeMap) = this()
     
-    var _codes: js.Any = js.native
+    /* private */ var _codes: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
     /**
       * Test whether the given key is a valid value for the layout.
@@ -90,8 +90,7 @@ object mod {
       *
       * @returns A set of the keys in the code map.
       */
-    @scala.inline
-    def extractKeys(codes: CodeMap): KeySet = ^.asInstanceOf[js.Dynamic].applyDynamic("extractKeys")(codes.asInstanceOf[js.Any]).asInstanceOf[KeySet]
+    inline def extractKeys(codes: CodeMap): KeySet = ^.asInstanceOf[js.Dynamic].applyDynamic("extractKeys")(codes.asInstanceOf[js.Any]).asInstanceOf[KeySet]
     
     /**
       * A type alias for a keycode map.
@@ -104,11 +103,9 @@ object mod {
     type KeySet = StringDictionary[Boolean]
   }
   
-  @scala.inline
-  def getKeyboardLayout(): IKeyboardLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyboardLayout")().asInstanceOf[IKeyboardLayout]
+  inline def getKeyboardLayout(): IKeyboardLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyboardLayout")().asInstanceOf[IKeyboardLayout]
   
-  @scala.inline
-  def setKeyboardLayout(layout: IKeyboardLayout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setKeyboardLayout(layout: IKeyboardLayout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IKeyboardLayout extends StObject {
     
@@ -151,8 +148,7 @@ object mod {
   }
   object IKeyboardLayout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isValidKey: String => Boolean,
       keyForKeydownEvent: KeyboardEvent => String,
       keys: () => js.Array[String],
@@ -162,20 +158,15 @@ object mod {
       __obj.asInstanceOf[IKeyboardLayout]
     }
     
-    @scala.inline
-    implicit class IKeyboardLayoutMutableBuilder[Self <: IKeyboardLayout] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyboardLayout](x: Self) {
       
-      @scala.inline
-      def setIsValidKey(value: String => Boolean): Self = StObject.set(x, "isValidKey", js.Any.fromFunction1(value))
+      inline def setIsValidKey(value: String => Boolean): Self = StObject.set(x, "isValidKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyForKeydownEvent(value: KeyboardEvent => String): Self = StObject.set(x, "keyForKeydownEvent", js.Any.fromFunction1(value))
+      inline def setKeyForKeydownEvent(value: KeyboardEvent => String): Self = StObject.set(x, "keyForKeydownEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Cancelable {
     
-    @scala.inline
-    def apply(cancelable: Boolean): Cancelable = {
+    inline def apply(cancelable: Boolean): Cancelable = {
       val __obj = js.Dynamic.literal(cancelable = cancelable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cancelable]
     }
     
-    @scala.inline
-    implicit class CancelableMutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
+    extension [Self <: Cancelable](x: Self) {
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,23 +31,18 @@ object anon {
   }
   object Port {
     
-    @scala.inline
-    def apply(port: Double): Port = {
+    inline def apply(port: Double): Port = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTls(value: js.Object): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: js.Object): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     }
   }
   
@@ -62,20 +54,16 @@ object anon {
   }
   object ReceiverPath {
     
-    @scala.inline
-    def apply(receiverPath: String, scope: String): ReceiverPath = {
+    inline def apply(receiverPath: String, scope: String): ReceiverPath = {
       val __obj = js.Dynamic.literal(receiverPath = receiverPath.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiverPath]
     }
     
-    @scala.inline
-    implicit class ReceiverPathMutableBuilder[Self <: ReceiverPath] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiverPath](x: Self) {
       
-      @scala.inline
-      def setReceiverPath(value: String): Self = StObject.set(x, "receiverPath", value.asInstanceOf[js.Any])
+      inline def setReceiverPath(value: String): Self = StObject.set(x, "receiverPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,26 +79,20 @@ object anon {
   }
   object RedirectFile {
     
-    @scala.inline
-    def apply(redirectFile: String, redirectUrl: String, rememberUser: Boolean, scope: String): RedirectFile = {
+    inline def apply(redirectFile: String, redirectUrl: String, rememberUser: Boolean, scope: String): RedirectFile = {
       val __obj = js.Dynamic.literal(redirectFile = redirectFile.asInstanceOf[js.Any], redirectUrl = redirectUrl.asInstanceOf[js.Any], rememberUser = rememberUser.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedirectFile]
     }
     
-    @scala.inline
-    implicit class RedirectFileMutableBuilder[Self <: RedirectFile] (val x: Self) extends AnyVal {
+    extension [Self <: RedirectFile](x: Self) {
       
-      @scala.inline
-      def setRedirectFile(value: String): Self = StObject.set(x, "redirectFile", value.asInstanceOf[js.Any])
+      inline def setRedirectFile(value: String): Self = StObject.set(x, "redirectFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+      inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
+      inline def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,20 +104,16 @@ object anon {
   }
   object RememberUser {
     
-    @scala.inline
-    def apply(rememberUser: Boolean, scope: String): RememberUser = {
+    inline def apply(rememberUser: Boolean, scope: String): RememberUser = {
       val __obj = js.Dynamic.literal(rememberUser = rememberUser.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[RememberUser]
     }
     
-    @scala.inline
-    implicit class RememberUserMutableBuilder[Self <: RememberUser] (val x: Self) extends AnyVal {
+    extension [Self <: RememberUser](x: Self) {
       
-      @scala.inline
-      def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
+      inline def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,17 +123,14 @@ object anon {
   }
   object Scope {
     
-    @scala.inline
-    def apply(scope: String): Scope = {
+    inline def apply(scope: String): Scope = {
       val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scope]
     }
     
-    @scala.inline
-    implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+    extension [Self <: Scope](x: Self) {
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
 }

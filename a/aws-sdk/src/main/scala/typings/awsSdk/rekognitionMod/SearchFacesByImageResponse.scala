@@ -28,40 +28,29 @@ trait SearchFacesByImageResponse extends StObject {
 }
 object SearchFacesByImageResponse {
   
-  @scala.inline
-  def apply(): SearchFacesByImageResponse = {
+  inline def apply(): SearchFacesByImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchFacesByImageResponse]
   }
   
-  @scala.inline
-  implicit class SearchFacesByImageResponseMutableBuilder[Self <: SearchFacesByImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFacesByImageResponse](x: Self) {
     
-    @scala.inline
-    def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
+    inline def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
+    inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    @scala.inline
-    def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
+    inline def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
     
-    @scala.inline
-    def setSearchedFaceBoundingBox(value: BoundingBox): Self = StObject.set(x, "SearchedFaceBoundingBox", value.asInstanceOf[js.Any])
+    inline def setSearchedFaceBoundingBox(value: BoundingBox): Self = StObject.set(x, "SearchedFaceBoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchedFaceBoundingBoxUndefined: Self = StObject.set(x, "SearchedFaceBoundingBox", js.undefined)
+    inline def setSearchedFaceBoundingBoxUndefined: Self = StObject.set(x, "SearchedFaceBoundingBox", js.undefined)
     
-    @scala.inline
-    def setSearchedFaceConfidence(value: Percent): Self = StObject.set(x, "SearchedFaceConfidence", value.asInstanceOf[js.Any])
+    inline def setSearchedFaceConfidence(value: Percent): Self = StObject.set(x, "SearchedFaceConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchedFaceConfidenceUndefined: Self = StObject.set(x, "SearchedFaceConfidence", js.undefined)
+    inline def setSearchedFaceConfidenceUndefined: Self = StObject.set(x, "SearchedFaceConfidence", js.undefined)
   }
 }

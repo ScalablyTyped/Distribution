@@ -10,6 +10,5 @@ object extensionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concatArrays(originVal: js.Any, newVal: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("concatArrays")(originVal.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def concatArrays(originVal: js.Any, newVal: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("concatArrays")(originVal.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

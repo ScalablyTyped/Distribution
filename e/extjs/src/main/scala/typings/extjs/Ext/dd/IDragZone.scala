@@ -38,43 +38,31 @@ trait IDragZone
 }
 object IDragZone {
   
-  @scala.inline
-  def apply(): IDragZone = {
+  inline def apply(): IDragZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDragZone]
   }
   
-  @scala.inline
-  implicit class IDragZoneMutableBuilder[Self <: IDragZone] (val x: Self) extends AnyVal {
+  extension [Self <: IDragZone](x: Self) {
     
-    @scala.inline
-    def setContainerScroll(value: js.Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
+    inline def setContainerScroll(value: js.Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerScrollUndefined: Self = StObject.set(x, "containerScroll", js.undefined)
+    inline def setContainerScrollUndefined: Self = StObject.set(x, "containerScroll", js.undefined)
     
-    @scala.inline
-    def setGetDragData(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
+    inline def setGetDragData(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
+    inline def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
     
-    @scala.inline
-    def setGetRepairXY(value: /* e */ js.UndefOr[Event] => Array): Self = StObject.set(x, "getRepairXY", js.Any.fromFunction1(value))
+    inline def setGetRepairXY(value: /* e */ js.UndefOr[Event] => Array): Self = StObject.set(x, "getRepairXY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRepairXYUndefined: Self = StObject.set(x, "getRepairXY", js.undefined)
+    inline def setGetRepairXYUndefined: Self = StObject.set(x, "getRepairXY", js.undefined)
     
-    @scala.inline
-    def setOnInitDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "onInitDrag", js.Any.fromFunction2(value))
+    inline def setOnInitDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "onInitDrag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnInitDragUndefined: Self = StObject.set(x, "onInitDrag", js.undefined)
+    inline def setOnInitDragUndefined: Self = StObject.set(x, "onInitDrag", js.undefined)
     
-    @scala.inline
-    def setScrollEl(value: js.Any): Self = StObject.set(x, "scrollEl", value.asInstanceOf[js.Any])
+    inline def setScrollEl(value: js.Any): Self = StObject.set(x, "scrollEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollElUndefined: Self = StObject.set(x, "scrollEl", js.undefined)
+    inline def setScrollElUndefined: Self = StObject.set(x, "scrollEl", js.undefined)
   }
 }

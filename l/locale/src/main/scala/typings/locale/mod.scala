@@ -13,22 +13,14 @@ object mod {
     * `locale` property to incoming HTTP requests, reflecting the most appropriate
     * locale determined using the `best` method described below.
     */
-  @scala.inline
-  def apply(): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: String, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: js.Array[String | Locale]): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: js.Array[String | Locale], `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: Unit, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: Locales): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  @scala.inline
-  def apply(supported: Locales, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: String, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: js.Array[String | Locale]): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: js.Array[String | Locale], `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: Unit, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: Locales): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: Locales, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
   
   @JSImport("locale", JSImport.Namespace)
   @js.native
@@ -85,8 +77,7 @@ object mod {
     @JSImport("locale", "Locale.default")
     @js.native
     def default: Locale = js.native
-    @scala.inline
-    def default_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    inline def default_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("locale", "Locales")
@@ -150,20 +141,16 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(locale: String, rawLocale: Locale): Request = {
+        inline def apply(locale: String, rawLocale: Locale): Request = {
           val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], rawLocale = rawLocale.asInstanceOf[js.Any])
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+          inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRawLocale(value: Locale): Self = StObject.set(x, "rawLocale", value.asInstanceOf[js.Any])
+          inline def setRawLocale(value: Locale): Self = StObject.set(x, "rawLocale", value.asInstanceOf[js.Any])
         }
       }
     }

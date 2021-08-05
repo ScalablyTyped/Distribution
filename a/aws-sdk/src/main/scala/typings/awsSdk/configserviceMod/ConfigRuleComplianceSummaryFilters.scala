@@ -18,25 +18,19 @@ trait ConfigRuleComplianceSummaryFilters extends StObject {
 }
 object ConfigRuleComplianceSummaryFilters {
   
-  @scala.inline
-  def apply(): ConfigRuleComplianceSummaryFilters = {
+  inline def apply(): ConfigRuleComplianceSummaryFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigRuleComplianceSummaryFilters]
   }
   
-  @scala.inline
-  implicit class ConfigRuleComplianceSummaryFiltersMutableBuilder[Self <: ConfigRuleComplianceSummaryFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigRuleComplianceSummaryFilters](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ trait RectangleShape
 }
 object RectangleShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CornerRadius: Double,
     FillBackground: Boolean,
     FillBitmap: XBitmap,
@@ -137,10 +136,8 @@ object RectangleShape {
     __obj.asInstanceOf[RectangleShape]
   }
   
-  @scala.inline
-  implicit class RectangleShapeMutableBuilder[Self <: RectangleShape] (val x: Self) extends AnyVal {
+  extension [Self <: RectangleShape](x: Self) {
     
-    @scala.inline
-    def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
   }
 }

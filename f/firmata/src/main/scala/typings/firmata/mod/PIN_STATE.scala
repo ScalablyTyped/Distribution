@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PIN_STATE extends StObject
 object PIN_STATE {
   
-  @scala.inline
-  def HIGH: `1` = 1.asInstanceOf[`1`]
+  inline def HIGH: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def LOW: `0` = 0.asInstanceOf[`0`]
+  inline def LOW: `0` = 0.asInstanceOf[`0`]
 }

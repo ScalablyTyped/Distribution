@@ -38,49 +38,35 @@ trait MultipartUpload extends StObject {
 }
 object MultipartUpload {
   
-  @scala.inline
-  def apply(): MultipartUpload = {
+  inline def apply(): MultipartUpload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultipartUpload]
   }
   
-  @scala.inline
-  implicit class MultipartUploadMutableBuilder[Self <: MultipartUpload] (val x: Self) extends AnyVal {
+  extension [Self <: MultipartUpload](x: Self) {
     
-    @scala.inline
-    def setInitiated(value: Initiated): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
+    inline def setInitiated(value: Initiated): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatedUndefined: Self = StObject.set(x, "Initiated", js.undefined)
+    inline def setInitiatedUndefined: Self = StObject.set(x, "Initiated", js.undefined)
     
-    @scala.inline
-    def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
+    inline def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
     
-    @scala.inline
-    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
-    @scala.inline
-    def setUploadId(value: MultipartUploadId): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: MultipartUploadId): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
+    inline def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
   }
 }

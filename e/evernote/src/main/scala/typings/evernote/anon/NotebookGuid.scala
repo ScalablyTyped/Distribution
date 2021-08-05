@@ -19,40 +19,29 @@ trait NotebookGuid extends StObject {
 }
 object NotebookGuid {
   
-  @scala.inline
-  def apply(): NotebookGuid = {
+  inline def apply(): NotebookGuid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotebookGuid]
   }
   
-  @scala.inline
-  implicit class NotebookGuidMutableBuilder[Self <: NotebookGuid] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookGuid](x: Self) {
     
-    @scala.inline
-    def setNotebookGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "notebookGuid", value.asInstanceOf[js.Any])
+    inline def setNotebookGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "notebookGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookGuidUndefined: Self = StObject.set(x, "notebookGuid", js.undefined)
+    inline def setNotebookGuidUndefined: Self = StObject.set(x, "notebookGuid", js.undefined)
     
-    @scala.inline
-    def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
+    inline def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
+    inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
-    @scala.inline
-    def setRecipientContacts(value: js.Array[Contact]): Self = StObject.set(x, "recipientContacts", value.asInstanceOf[js.Any])
+    inline def setRecipientContacts(value: js.Array[Contact]): Self = StObject.set(x, "recipientContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientContactsUndefined: Self = StObject.set(x, "recipientContacts", js.undefined)
+    inline def setRecipientContactsUndefined: Self = StObject.set(x, "recipientContacts", js.undefined)
     
-    @scala.inline
-    def setRecipientContactsVarargs(value: Contact*): Self = StObject.set(x, "recipientContacts", js.Array(value :_*))
+    inline def setRecipientContactsVarargs(value: Contact*): Self = StObject.set(x, "recipientContacts", js.Array(value :_*))
     
-    @scala.inline
-    def setRecipientThreadId(value: MessageThreadID): Self = StObject.set(x, "recipientThreadId", value.asInstanceOf[js.Any])
+    inline def setRecipientThreadId(value: MessageThreadID): Self = StObject.set(x, "recipientThreadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientThreadIdUndefined: Self = StObject.set(x, "recipientThreadId", js.undefined)
+    inline def setRecipientThreadIdUndefined: Self = StObject.set(x, "recipientThreadId", js.undefined)
   }
 }

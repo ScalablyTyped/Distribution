@@ -55,29 +55,22 @@ trait WorksheetSingleClickedEventArgs extends StObject {
 }
 object WorksheetSingleClickedEventArgs {
   
-  @scala.inline
-  def apply(address: String, offsetX: Double, offsetY: Double, worksheetId: String): WorksheetSingleClickedEventArgs = {
+  inline def apply(address: String, offsetX: Double, offsetY: Double, worksheetId: String): WorksheetSingleClickedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WorksheetSingleClicked")
     __obj.asInstanceOf[WorksheetSingleClickedEventArgs]
   }
   
-  @scala.inline
-  implicit class WorksheetSingleClickedEventArgsMutableBuilder[Self <: WorksheetSingleClickedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetSingleClickedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WorksheetSingleClicked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WorksheetSingleClicked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

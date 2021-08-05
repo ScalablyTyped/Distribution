@@ -13,25 +13,19 @@ trait ReadOptions extends StObject {
 }
 object ReadOptions {
   
-  @scala.inline
-  def apply(): ReadOptions = {
+  inline def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadOptions]
   }
   
-  @scala.inline
-  implicit class ReadOptionsMutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOptions](x: Self) {
     
-    @scala.inline
-    def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+    inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+    inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
     
-    @scala.inline
-    def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+    inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+    inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
   }
 }

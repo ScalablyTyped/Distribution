@@ -63,8 +63,7 @@ object ieffectsMod {
   }
   object IEffects {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       elevation16: String,
       elevation4: String,
       elevation64: String,
@@ -77,29 +76,21 @@ object ieffectsMod {
       __obj.asInstanceOf[IEffects]
     }
     
-    @scala.inline
-    implicit class IEffectsMutableBuilder[Self <: IEffects] (val x: Self) extends AnyVal {
+    extension [Self <: IEffects](x: Self) {
       
-      @scala.inline
-      def setElevation16(value: String): Self = StObject.set(x, "elevation16", value.asInstanceOf[js.Any])
+      inline def setElevation16(value: String): Self = StObject.set(x, "elevation16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElevation4(value: String): Self = StObject.set(x, "elevation4", value.asInstanceOf[js.Any])
+      inline def setElevation4(value: String): Self = StObject.set(x, "elevation4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElevation64(value: String): Self = StObject.set(x, "elevation64", value.asInstanceOf[js.Any])
+      inline def setElevation64(value: String): Self = StObject.set(x, "elevation64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElevation8(value: String): Self = StObject.set(x, "elevation8", value.asInstanceOf[js.Any])
+      inline def setElevation8(value: String): Self = StObject.set(x, "elevation8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedCorner2(value: String): Self = StObject.set(x, "roundedCorner2", value.asInstanceOf[js.Any])
+      inline def setRoundedCorner2(value: String): Self = StObject.set(x, "roundedCorner2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedCorner4(value: String): Self = StObject.set(x, "roundedCorner4", value.asInstanceOf[js.Any])
+      inline def setRoundedCorner4(value: String): Self = StObject.set(x, "roundedCorner4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedCorner6(value: String): Self = StObject.set(x, "roundedCorner6", value.asInstanceOf[js.Any])
+      inline def setRoundedCorner6(value: String): Self = StObject.set(x, "roundedCorner6", value.asInstanceOf[js.Any])
     }
   }
 }

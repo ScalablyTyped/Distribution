@@ -20,25 +20,19 @@ trait AnalyticsConfigurationFilter extends StObject {
 }
 object AnalyticsConfigurationFilter {
   
-  @scala.inline
-  def apply(): AnalyticsConfigurationFilter = {
+  inline def apply(): AnalyticsConfigurationFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsConfigurationFilter]
   }
   
-  @scala.inline
-  implicit class AnalyticsConfigurationFilterMutableBuilder[Self <: AnalyticsConfigurationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsConfigurationFilter](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

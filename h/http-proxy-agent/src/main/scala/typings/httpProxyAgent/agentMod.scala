@@ -30,9 +30,9 @@ object agentMod {
       */
     def callback(req: HttpProxyAgentClientRequest, opts: RequestOptions): js.Promise[Socket] = js.native
     
-    var proxy: js.Any = js.native
+    /* private */ var proxy: js.Any = js.native
     
-    var secureProxy: js.Any = js.native
+    /* private */ var secureProxy: js.Any = js.native
   }
   
   @js.native

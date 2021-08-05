@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchObjectsGroupType extends StObject
 object SearchObjectsGroupType {
   
-  @scala.inline
-  def DatasetType: typings.qlikEngineapi.qlikEngineapiStrings.DatasetType = "DatasetType".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.DatasetType]
+  inline def DatasetType: typings.qlikEngineapi.qlikEngineapiStrings.DatasetType = "DatasetType".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.DatasetType]
   
-  @scala.inline
-  def GenericObjectsType: typings.qlikEngineapi.qlikEngineapiStrings.GenericObjectsType = "GenericObjectsType".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.GenericObjectsType]
+  inline def GenericObjectsType: typings.qlikEngineapi.qlikEngineapiStrings.GenericObjectsType = "GenericObjectsType".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.GenericObjectsType]
 }

@@ -20,37 +20,27 @@ trait GoogleCloudDatacatalogV1beta1SearchCatalogResponse extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1SearchCatalogResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1SearchCatalogResponse = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1SearchCatalogResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1SearchCatalogResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogResponseMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1SearchCatalogResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[GoogleCloudDatacatalogV1beta1SearchCatalogResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[GoogleCloudDatacatalogV1beta1SearchCatalogResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: GoogleCloudDatacatalogV1beta1SearchCatalogResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GoogleCloudDatacatalogV1beta1SearchCatalogResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+    inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+    inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

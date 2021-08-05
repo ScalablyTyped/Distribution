@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.AutoTextEntry")
 @js.native
-class AutoTextEntry protected ()
+/* private */ class AutoTextEntry ()
   extends StObject
      with typings.activexWord.Word.AutoTextEntry

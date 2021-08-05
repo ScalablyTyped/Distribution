@@ -19,27 +19,21 @@ trait RuleGroupRuleStatementSqliMatchStatement extends StObject {
 }
 object RuleGroupRuleStatementSqliMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: Input[js.Array[Input[RuleGroupRuleStatementSqliMatchStatementTextTransformation]]]
   ): RuleGroupRuleStatementSqliMatchStatement = {
     val __obj = js.Dynamic.literal(textTransformations = textTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementSqliMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementSqliMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementSqliMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementSqliMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: Input[RuleGroupRuleStatementSqliMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[RuleGroupRuleStatementSqliMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(value: Input[js.Array[Input[RuleGroupRuleStatementSqliMatchStatementTextTransformation]]]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
+    inline def setTextTransformations(value: Input[js.Array[Input[RuleGroupRuleStatementSqliMatchStatementTextTransformation]]]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementSqliMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementSqliMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

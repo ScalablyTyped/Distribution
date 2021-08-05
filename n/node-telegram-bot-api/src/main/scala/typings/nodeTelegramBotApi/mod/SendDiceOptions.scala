@@ -12,19 +12,15 @@ trait SendDiceOptions
 }
 object SendDiceOptions {
   
-  @scala.inline
-  def apply(): SendDiceOptions = {
+  inline def apply(): SendDiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendDiceOptions]
   }
   
-  @scala.inline
-  implicit class SendDiceOptionsMutableBuilder[Self <: SendDiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendDiceOptions](x: Self) {
     
-    @scala.inline
-    def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+    inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
+    inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
   }
 }

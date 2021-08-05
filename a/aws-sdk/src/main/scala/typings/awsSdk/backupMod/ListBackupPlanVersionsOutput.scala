@@ -18,28 +18,21 @@ trait ListBackupPlanVersionsOutput extends StObject {
 }
 object ListBackupPlanVersionsOutput {
   
-  @scala.inline
-  def apply(): ListBackupPlanVersionsOutput = {
+  inline def apply(): ListBackupPlanVersionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBackupPlanVersionsOutput]
   }
   
-  @scala.inline
-  implicit class ListBackupPlanVersionsOutputMutableBuilder[Self <: ListBackupPlanVersionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBackupPlanVersionsOutput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanVersionsList(value: BackupPlanVersionsList): Self = StObject.set(x, "BackupPlanVersionsList", value.asInstanceOf[js.Any])
+    inline def setBackupPlanVersionsList(value: BackupPlanVersionsList): Self = StObject.set(x, "BackupPlanVersionsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanVersionsListUndefined: Self = StObject.set(x, "BackupPlanVersionsList", js.undefined)
+    inline def setBackupPlanVersionsListUndefined: Self = StObject.set(x, "BackupPlanVersionsList", js.undefined)
     
-    @scala.inline
-    def setBackupPlanVersionsListVarargs(value: BackupPlansListMember*): Self = StObject.set(x, "BackupPlanVersionsList", js.Array(value :_*))
+    inline def setBackupPlanVersionsListVarargs(value: BackupPlansListMember*): Self = StObject.set(x, "BackupPlanVersionsList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

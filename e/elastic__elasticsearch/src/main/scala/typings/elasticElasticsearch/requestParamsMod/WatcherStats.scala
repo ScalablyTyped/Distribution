@@ -14,28 +14,21 @@ trait WatcherStats
 }
 object WatcherStats {
   
-  @scala.inline
-  def apply(): WatcherStats = {
+  inline def apply(): WatcherStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatcherStats]
   }
   
-  @scala.inline
-  implicit class WatcherStatsMutableBuilder[Self <: WatcherStats] (val x: Self) extends AnyVal {
+  extension [Self <: WatcherStats](x: Self) {
     
-    @scala.inline
-    def setEmit_stacktraces(value: Boolean): Self = StObject.set(x, "emit_stacktraces", value.asInstanceOf[js.Any])
+    inline def setEmit_stacktraces(value: Boolean): Self = StObject.set(x, "emit_stacktraces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmit_stacktracesUndefined: Self = StObject.set(x, "emit_stacktraces", js.undefined)
+    inline def setEmit_stacktracesUndefined: Self = StObject.set(x, "emit_stacktraces", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
   }
 }

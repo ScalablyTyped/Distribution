@@ -8,11 +8,9 @@ object axiosMockAdapterStrings {
   
   @js.native
   sealed trait passthrough extends StObject
-  @scala.inline
-  def passthrough: passthrough = "passthrough".asInstanceOf[passthrough]
+  inline def passthrough: passthrough = "passthrough".asInstanceOf[passthrough]
   
   @js.native
   sealed trait throwException extends StObject
-  @scala.inline
-  def throwException: throwException = "throwException".asInstanceOf[throwException]
+  inline def throwException: throwException = "throwException".asInstanceOf[throwException]
 }

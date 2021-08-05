@@ -17,37 +17,27 @@ trait PartialHeaders extends StObject {
 }
 object PartialHeaders {
   
-  @scala.inline
-  def apply(): PartialHeaders = {
+  inline def apply(): PartialHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialHeaders]
   }
   
-  @scala.inline
-  implicit class PartialHeadersMutableBuilder[Self <: PartialHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: PartialHeaders](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
     
-    @scala.inline
-    def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+    inline def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
+    inline def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
     
-    @scala.inline
-    def `setIdempotency-Key`(value: String): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
+    inline def `setIdempotency-Key`(value: String): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIdempotency-KeyUndefined`: Self = StObject.set(x, "Idempotency-Key", js.undefined)
+    inline def `setIdempotency-KeyUndefined`: Self = StObject.set(x, "Idempotency-Key", js.undefined)
     
-    @scala.inline
-    def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+    inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
+    inline def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
   }
 }

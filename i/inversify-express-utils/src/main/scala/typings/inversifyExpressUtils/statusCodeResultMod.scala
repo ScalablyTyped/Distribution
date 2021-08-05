@@ -16,13 +16,13 @@ object statusCodeResultMod {
        with StatusCodeResult {
     def this(statusCode: Double, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
     override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var statusCode: js.Any = js.native
   }
   
@@ -30,26 +30,22 @@ object statusCodeResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var statusCode: js.Any
+    /* private */ var statusCode: js.Any
   }
   object StatusCodeResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], statusCode: js.Any): StatusCodeResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], statusCode: js.Any): StatusCodeResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatusCodeResult]
     }
     
-    @scala.inline
-    implicit class StatusCodeResultMutableBuilder[Self <: StatusCodeResult] (val x: Self) extends AnyVal {
+    extension [Self <: StatusCodeResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: js.Any): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: js.Any): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

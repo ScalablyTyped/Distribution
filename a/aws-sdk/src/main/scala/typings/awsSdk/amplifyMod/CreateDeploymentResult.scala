@@ -23,25 +23,19 @@ trait CreateDeploymentResult extends StObject {
 }
 object CreateDeploymentResult {
   
-  @scala.inline
-  def apply(fileUploadUrls: FileUploadUrls, zipUploadUrl: UploadUrl): CreateDeploymentResult = {
+  inline def apply(fileUploadUrls: FileUploadUrls, zipUploadUrl: UploadUrl): CreateDeploymentResult = {
     val __obj = js.Dynamic.literal(fileUploadUrls = fileUploadUrls.asInstanceOf[js.Any], zipUploadUrl = zipUploadUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentResult]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentResultMutableBuilder[Self <: CreateDeploymentResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentResult](x: Self) {
     
-    @scala.inline
-    def setFileUploadUrls(value: FileUploadUrls): Self = StObject.set(x, "fileUploadUrls", value.asInstanceOf[js.Any])
+    inline def setFileUploadUrls(value: FileUploadUrls): Self = StObject.set(x, "fileUploadUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setZipUploadUrl(value: UploadUrl): Self = StObject.set(x, "zipUploadUrl", value.asInstanceOf[js.Any])
+    inline def setZipUploadUrl(value: UploadUrl): Self = StObject.set(x, "zipUploadUrl", value.asInstanceOf[js.Any])
   }
 }

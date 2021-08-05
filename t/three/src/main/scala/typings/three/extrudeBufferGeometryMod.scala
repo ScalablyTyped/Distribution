@@ -71,74 +71,52 @@ object extrudeBufferGeometryMod {
   }
   object ExtrudeGeometryOptions {
     
-    @scala.inline
-    def apply(): ExtrudeGeometryOptions = {
+    inline def apply(): ExtrudeGeometryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtrudeGeometryOptions]
     }
     
-    @scala.inline
-    implicit class ExtrudeGeometryOptionsMutableBuilder[Self <: ExtrudeGeometryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExtrudeGeometryOptions](x: Self) {
       
-      @scala.inline
-      def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
+      inline def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBevelEnabledUndefined: Self = StObject.set(x, "bevelEnabled", js.undefined)
+      inline def setBevelEnabledUndefined: Self = StObject.set(x, "bevelEnabled", js.undefined)
       
-      @scala.inline
-      def setBevelOffset(value: Double): Self = StObject.set(x, "bevelOffset", value.asInstanceOf[js.Any])
+      inline def setBevelOffset(value: Double): Self = StObject.set(x, "bevelOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBevelOffsetUndefined: Self = StObject.set(x, "bevelOffset", js.undefined)
+      inline def setBevelOffsetUndefined: Self = StObject.set(x, "bevelOffset", js.undefined)
       
-      @scala.inline
-      def setBevelSegments(value: Double): Self = StObject.set(x, "bevelSegments", value.asInstanceOf[js.Any])
+      inline def setBevelSegments(value: Double): Self = StObject.set(x, "bevelSegments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBevelSegmentsUndefined: Self = StObject.set(x, "bevelSegments", js.undefined)
+      inline def setBevelSegmentsUndefined: Self = StObject.set(x, "bevelSegments", js.undefined)
       
-      @scala.inline
-      def setBevelSize(value: Double): Self = StObject.set(x, "bevelSize", value.asInstanceOf[js.Any])
+      inline def setBevelSize(value: Double): Self = StObject.set(x, "bevelSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBevelSizeUndefined: Self = StObject.set(x, "bevelSize", js.undefined)
+      inline def setBevelSizeUndefined: Self = StObject.set(x, "bevelSize", js.undefined)
       
-      @scala.inline
-      def setBevelThickness(value: Double): Self = StObject.set(x, "bevelThickness", value.asInstanceOf[js.Any])
+      inline def setBevelThickness(value: Double): Self = StObject.set(x, "bevelThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBevelThicknessUndefined: Self = StObject.set(x, "bevelThickness", js.undefined)
+      inline def setBevelThicknessUndefined: Self = StObject.set(x, "bevelThickness", js.undefined)
       
-      @scala.inline
-      def setCurveSegments(value: Double): Self = StObject.set(x, "curveSegments", value.asInstanceOf[js.Any])
+      inline def setCurveSegments(value: Double): Self = StObject.set(x, "curveSegments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurveSegmentsUndefined: Self = StObject.set(x, "curveSegments", js.undefined)
+      inline def setCurveSegmentsUndefined: Self = StObject.set(x, "curveSegments", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setExtrudePath(value: Curve[Vector3]): Self = StObject.set(x, "extrudePath", value.asInstanceOf[js.Any])
+      inline def setExtrudePath(value: Curve[Vector3]): Self = StObject.set(x, "extrudePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrudePathUndefined: Self = StObject.set(x, "extrudePath", js.undefined)
+      inline def setExtrudePathUndefined: Self = StObject.set(x, "extrudePath", js.undefined)
       
-      @scala.inline
-      def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setUVGenerator(value: UVGenerator): Self = StObject.set(x, "UVGenerator", value.asInstanceOf[js.Any])
+      inline def setUVGenerator(value: UVGenerator): Self = StObject.set(x, "UVGenerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUVGeneratorUndefined: Self = StObject.set(x, "UVGenerator", js.undefined)
+      inline def setUVGeneratorUndefined: Self = StObject.set(x, "UVGenerator", js.undefined)
     }
   }
   
@@ -163,8 +141,7 @@ object extrudeBufferGeometryMod {
   }
   object UVGenerator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       generateSideWallUV: (ExtrudeBufferGeometry, js.Array[Double], Double, Double, Double, Double) => js.Array[Vector2],
       generateTopUV: (ExtrudeBufferGeometry, js.Array[Double], Double, Double, Double) => js.Array[Vector2]
     ): UVGenerator = {
@@ -172,16 +149,13 @@ object extrudeBufferGeometryMod {
       __obj.asInstanceOf[UVGenerator]
     }
     
-    @scala.inline
-    implicit class UVGeneratorMutableBuilder[Self <: UVGenerator] (val x: Self) extends AnyVal {
+    extension [Self <: UVGenerator](x: Self) {
       
-      @scala.inline
-      def setGenerateSideWallUV(
+      inline def setGenerateSideWallUV(
         value: (ExtrudeBufferGeometry, js.Array[Double], Double, Double, Double, Double) => js.Array[Vector2]
       ): Self = StObject.set(x, "generateSideWallUV", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setGenerateTopUV(value: (ExtrudeBufferGeometry, js.Array[Double], Double, Double, Double) => js.Array[Vector2]): Self = StObject.set(x, "generateTopUV", js.Any.fromFunction5(value))
+      inline def setGenerateTopUV(value: (ExtrudeBufferGeometry, js.Array[Double], Double, Double, Double) => js.Array[Vector2]): Self = StObject.set(x, "generateTopUV", js.Any.fromFunction5(value))
     }
   }
 }

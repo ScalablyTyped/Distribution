@@ -26,8 +26,7 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setFunctionName: String => Action,
     setLoadIndicator: LoadIndicator => Action,
     setMethodName: String => Action,
@@ -37,19 +36,14 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setSetFunctionName(value: String => Action): Self = StObject.set(x, "setFunctionName", js.Any.fromFunction1(value))
+    inline def setSetFunctionName(value: String => Action): Self = StObject.set(x, "setFunctionName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLoadIndicator(value: LoadIndicator => Action): Self = StObject.set(x, "setLoadIndicator", js.Any.fromFunction1(value))
+    inline def setSetLoadIndicator(value: LoadIndicator => Action): Self = StObject.set(x, "setLoadIndicator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMethodName(value: String => Action): Self = StObject.set(x, "setMethodName", js.Any.fromFunction1(value))
+    inline def setSetMethodName(value: String => Action): Self = StObject.set(x, "setMethodName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParameters(value: StringDictionary[String] => Action): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
+    inline def setSetParameters(value: StringDictionary[String] => Action): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
   }
 }

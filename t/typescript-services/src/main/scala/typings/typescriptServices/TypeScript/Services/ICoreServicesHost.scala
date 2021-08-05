@@ -11,16 +11,13 @@ trait ICoreServicesHost extends StObject {
 }
 object ICoreServicesHost {
   
-  @scala.inline
-  def apply(logger: ILogger): ICoreServicesHost = {
+  inline def apply(logger: ILogger): ICoreServicesHost = {
     val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoreServicesHost]
   }
   
-  @scala.inline
-  implicit class ICoreServicesHostMutableBuilder[Self <: ICoreServicesHost] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreServicesHost](x: Self) {
     
-    @scala.inline
-    def setLogger(value: ILogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: ILogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait XmlComment
      with IXmlComment
 object XmlComment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     appendData: String => Unit,
     attributes: XmlNamedNodeMap,

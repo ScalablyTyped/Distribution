@@ -20,8 +20,7 @@ trait OverscanIndicesGetterParams extends StObject {
 }
 object OverscanIndicesGetterParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellCount: Double,
     overscanCellsCount: Double,
     scrollDirection: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL,
@@ -32,28 +31,20 @@ object OverscanIndicesGetterParams {
     __obj.asInstanceOf[OverscanIndicesGetterParams]
   }
   
-  @scala.inline
-  implicit class OverscanIndicesGetterParamsMutableBuilder[Self <: OverscanIndicesGetterParams] (val x: Self) extends AnyVal {
+  extension [Self <: OverscanIndicesGetterParams](x: Self) {
     
-    @scala.inline
-    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    inline def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setOverscanCellsCount(value: Double): Self = StObject.set(x, "overscanCellsCount", value.asInstanceOf[js.Any])
+    inline def setOverscanCellsCount(value: Double): Self = StObject.set(x, "overscanCellsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
+    inline def setScrollDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopIndex(value: Double): Self = StObject.set(x, "stopIndex", value.asInstanceOf[js.Any])
+    inline def setStopIndex(value: Double): Self = StObject.set(x, "stopIndex", value.asInstanceOf[js.Any])
   }
 }

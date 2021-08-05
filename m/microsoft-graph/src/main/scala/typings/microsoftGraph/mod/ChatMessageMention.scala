@@ -24,40 +24,29 @@ trait ChatMessageMention extends StObject {
 }
 object ChatMessageMention {
   
-  @scala.inline
-  def apply(): ChatMessageMention = {
+  inline def apply(): ChatMessageMention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatMessageMention]
   }
   
-  @scala.inline
-  implicit class ChatMessageMentionMutableBuilder[Self <: ChatMessageMention] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageMention](x: Self) {
     
-    @scala.inline
-    def setId(value: NullableOption[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NullableOption[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMentionText(value: NullableOption[String]): Self = StObject.set(x, "mentionText", value.asInstanceOf[js.Any])
+    inline def setMentionText(value: NullableOption[String]): Self = StObject.set(x, "mentionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionTextNull: Self = StObject.set(x, "mentionText", null)
+    inline def setMentionTextNull: Self = StObject.set(x, "mentionText", null)
     
-    @scala.inline
-    def setMentionTextUndefined: Self = StObject.set(x, "mentionText", js.undefined)
+    inline def setMentionTextUndefined: Self = StObject.set(x, "mentionText", js.undefined)
     
-    @scala.inline
-    def setMentioned(value: NullableOption[IdentitySet]): Self = StObject.set(x, "mentioned", value.asInstanceOf[js.Any])
+    inline def setMentioned(value: NullableOption[IdentitySet]): Self = StObject.set(x, "mentioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionedNull: Self = StObject.set(x, "mentioned", null)
+    inline def setMentionedNull: Self = StObject.set(x, "mentioned", null)
     
-    @scala.inline
-    def setMentionedUndefined: Self = StObject.set(x, "mentioned", js.undefined)
+    inline def setMentionedUndefined: Self = StObject.set(x, "mentioned", js.undefined)
   }
 }

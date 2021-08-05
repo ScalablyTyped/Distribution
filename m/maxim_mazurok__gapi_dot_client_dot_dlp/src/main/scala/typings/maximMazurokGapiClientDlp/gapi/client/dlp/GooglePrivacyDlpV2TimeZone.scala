@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2TimeZone extends StObject {
 }
 object GooglePrivacyDlpV2TimeZone {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2TimeZone = {
+  inline def apply(): GooglePrivacyDlpV2TimeZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2TimeZone]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2TimeZoneMutableBuilder[Self <: GooglePrivacyDlpV2TimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2TimeZone](x: Self) {
     
-    @scala.inline
-    def setOffsetMinutes(value: Double): Self = StObject.set(x, "offsetMinutes", value.asInstanceOf[js.Any])
+    inline def setOffsetMinutes(value: Double): Self = StObject.set(x, "offsetMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetMinutesUndefined: Self = StObject.set(x, "offsetMinutes", js.undefined)
+    inline def setOffsetMinutesUndefined: Self = StObject.set(x, "offsetMinutes", js.undefined)
   }
 }

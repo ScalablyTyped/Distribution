@@ -23,25 +23,19 @@ trait RegisterUsageRequest extends StObject {
 }
 object RegisterUsageRequest {
   
-  @scala.inline
-  def apply(ProductCode: ProductCode, PublicKeyVersion: VersionInteger): RegisterUsageRequest = {
+  inline def apply(ProductCode: ProductCode, PublicKeyVersion: VersionInteger): RegisterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], PublicKeyVersion = PublicKeyVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterUsageRequest]
   }
   
-  @scala.inline
-  implicit class RegisterUsageRequestMutableBuilder[Self <: RegisterUsageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterUsageRequest](x: Self) {
     
-    @scala.inline
-    def setNonce(value: Nonce): Self = StObject.set(x, "Nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: Nonce): Self = StObject.set(x, "Nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "Nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "Nonce", js.undefined)
     
-    @scala.inline
-    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyVersion(value: VersionInteger): Self = StObject.set(x, "PublicKeyVersion", value.asInstanceOf[js.Any])
+    inline def setPublicKeyVersion(value: VersionInteger): Self = StObject.set(x, "PublicKeyVersion", value.asInstanceOf[js.Any])
   }
 }

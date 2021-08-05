@@ -39,8 +39,7 @@ trait RouteRecord extends StObject {
 }
 object RouteRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     components: Dictionary[Component],
     instances: Dictionary[Vue],
     meta: js.Any,
@@ -52,65 +51,46 @@ object RouteRecord {
     __obj.asInstanceOf[RouteRecord]
   }
   
-  @scala.inline
-  implicit class RouteRecordMutableBuilder[Self <: RouteRecord] (val x: Self) extends AnyVal {
+  extension [Self <: RouteRecord](x: Self) {
     
-    @scala.inline
-    def setBeforeEnter(
+    inline def setBeforeEnter(
       value: (/* route */ Route, /* redirect */ js.Function1[/* location */ RawLocation, Unit], /* next */ js.Function0[Unit]) => js.Any
     ): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
+    inline def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
     
-    @scala.inline
-    def setComponents(value: Dictionary[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Dictionary[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstances(value: Dictionary[Vue]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Dictionary[Vue]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchAs(value: String): Self = StObject.set(x, "matchAs", value.asInstanceOf[js.Any])
+    inline def setMatchAs(value: String): Self = StObject.set(x, "matchAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchAsUndefined: Self = StObject.set(x, "matchAs", js.undefined)
+    inline def setMatchAsUndefined: Self = StObject.set(x, "matchAs", js.undefined)
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParent(value: RouteRecord): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: RouteRecord): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(
+    inline def setProps(
       value: Boolean | js.Object | RoutePropsFunction | (Dictionary[Boolean | js.Object | RoutePropsFunction])
     ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsFunction1(value: /* route */ Route => js.Object): Self = StObject.set(x, "props", js.Any.fromFunction1(value))
+    inline def setPropsFunction1(value: /* route */ Route => js.Object): Self = StObject.set(x, "props", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRedirect(value: RedirectOption): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: RedirectOption): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectFunction1(value: /* to */ Route => RawLocation): Self = StObject.set(x, "redirect", js.Any.fromFunction1(value))
+    inline def setRedirectFunction1(value: /* to */ Route => RawLocation): Self = StObject.set(x, "redirect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
-    @scala.inline
-    def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
   }
 }

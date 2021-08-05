@@ -23,6 +23,5 @@ object BitmapText {
   @JSGlobal("createjs.BitmapText.maxPoolSize")
   @js.native
   def maxPoolSize: Double = js.native
-  @scala.inline
-  def maxPoolSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxPoolSize")(x.asInstanceOf[js.Any])
+  inline def maxPoolSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxPoolSize")(x.asInstanceOf[js.Any])
 }

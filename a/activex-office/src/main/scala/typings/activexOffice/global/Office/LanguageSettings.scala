@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.LanguageSettings")
 @js.native
-class LanguageSettings protected ()
+/* private */ class LanguageSettings ()
   extends StObject
      with typings.activexOffice.Office.LanguageSettings {
   
@@ -24,7 +24,7 @@ class LanguageSettings protected ()
   /* CompleteClass */
   override def LanguagePreferredForEditing(lid: MsoLanguageID): Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.LanguageSettings_typekey")
   var OfficeDotLanguageSettings_typekey: typings.activexOffice.Office.LanguageSettings = js.native
   

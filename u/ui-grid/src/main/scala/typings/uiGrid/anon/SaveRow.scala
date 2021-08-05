@@ -23,16 +23,13 @@ trait SaveRow[TEntity] extends StObject {
 }
 object SaveRow {
   
-  @scala.inline
-  def apply[TEntity](saveRow: (IScope, saveRowHandler[TEntity]) => Unit): SaveRow[TEntity] = {
+  inline def apply[TEntity](saveRow: (IScope, saveRowHandler[TEntity]) => Unit): SaveRow[TEntity] = {
     val __obj = js.Dynamic.literal(saveRow = js.Any.fromFunction2(saveRow))
     __obj.asInstanceOf[SaveRow[TEntity]]
   }
   
-  @scala.inline
-  implicit class SaveRowMutableBuilder[Self <: SaveRow[?], TEntity] (val x: Self & SaveRow[TEntity]) extends AnyVal {
+  extension [Self <: SaveRow[?], TEntity](x: Self & SaveRow[TEntity]) {
     
-    @scala.inline
-    def setSaveRow(value: (IScope, saveRowHandler[TEntity]) => Unit): Self = StObject.set(x, "saveRow", js.Any.fromFunction2(value))
+    inline def setSaveRow(value: (IScope, saveRowHandler[TEntity]) => Unit): Self = StObject.set(x, "saveRow", js.Any.fromFunction2(value))
   }
 }

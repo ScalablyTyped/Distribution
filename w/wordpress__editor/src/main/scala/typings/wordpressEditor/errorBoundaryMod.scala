@@ -32,23 +32,18 @@ object errorBoundaryMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onError: () => Unit): Props = {
+      inline def apply(onError: () => Unit): Props = {
         val __obj = js.Dynamic.literal(onError = js.Any.fromFunction0(onError))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+        inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       }
     }
   }

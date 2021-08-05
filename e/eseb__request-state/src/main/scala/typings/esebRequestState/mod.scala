@@ -92,8 +92,7 @@ object mod {
   }
   object RequestState {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       isFailed: () => Boolean,
       isInProgress: () => Boolean,
       isNotRequested: () => Boolean,
@@ -107,38 +106,27 @@ object mod {
       __obj.asInstanceOf[RequestState[T]]
     }
     
-    @scala.inline
-    implicit class RequestStateMutableBuilder[Self <: RequestState[?], T] (val x: Self & RequestState[T]) extends AnyVal {
+    extension [Self <: RequestState[?], T](x: Self & RequestState[T]) {
       
-      @scala.inline
-      def setAttachment(value: T): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+      inline def setAttachment(value: T): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+      inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
       
-      @scala.inline
-      def setIsFailed(value: () => Boolean): Self = StObject.set(x, "isFailed", js.Any.fromFunction0(value))
+      inline def setIsFailed(value: () => Boolean): Self = StObject.set(x, "isFailed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInProgress(value: () => Boolean): Self = StObject.set(x, "isInProgress", js.Any.fromFunction0(value))
+      inline def setIsInProgress(value: () => Boolean): Self = StObject.set(x, "isInProgress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsNotRequested(value: () => Boolean): Self = StObject.set(x, "isNotRequested", js.Any.fromFunction0(value))
+      inline def setIsNotRequested(value: () => Boolean): Self = StObject.set(x, "isNotRequested", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSucceeded(value: () => Boolean): Self = StObject.set(x, "isSucceeded", js.Any.fromFunction0(value))
+      inline def setIsSucceeded(value: () => Boolean): Self = StObject.set(x, "isSucceeded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldBeRequested(value: () => Boolean): Self = StObject.set(x, "shouldBeRequested", js.Any.fromFunction0(value))
+      inline def setShouldBeRequested(value: () => Boolean): Self = StObject.set(x, "shouldBeRequested", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldShowAsLoading(value: () => Boolean): Self = StObject.set(x, "shouldShowAsLoading", js.Any.fromFunction0(value))
+      inline def setShouldShowAsLoading(value: () => Boolean): Self = StObject.set(x, "shouldShowAsLoading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithAttachment(value: js.Any => RequestState[js.Any]): Self = StObject.set(x, "withAttachment", js.Any.fromFunction1(value))
+      inline def setWithAttachment(value: js.Any => RequestState[js.Any]): Self = StObject.set(x, "withAttachment", js.Any.fromFunction1(value))
     }
   }
   
@@ -151,16 +139,12 @@ object mod {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def FAILED: typings.esebRequestState.esebRequestStateStrings.FAILED = "FAILED".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.FAILED]
+    inline def FAILED: typings.esebRequestState.esebRequestStateStrings.FAILED = "FAILED".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.FAILED]
     
-    @scala.inline
-    def IN_PROGRESS: typings.esebRequestState.esebRequestStateStrings.IN_PROGRESS = "IN_PROGRESS".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.IN_PROGRESS]
+    inline def IN_PROGRESS: typings.esebRequestState.esebRequestStateStrings.IN_PROGRESS = "IN_PROGRESS".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.IN_PROGRESS]
     
-    @scala.inline
-    def NOT_REQUESTED: typings.esebRequestState.esebRequestStateStrings.NOT_REQUESTED = "NOT_REQUESTED".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.NOT_REQUESTED]
+    inline def NOT_REQUESTED: typings.esebRequestState.esebRequestStateStrings.NOT_REQUESTED = "NOT_REQUESTED".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.NOT_REQUESTED]
     
-    @scala.inline
-    def SUCCEEDED: typings.esebRequestState.esebRequestStateStrings.SUCCEEDED = "SUCCEEDED".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.SUCCEEDED]
+    inline def SUCCEEDED: typings.esebRequestState.esebRequestStateStrings.SUCCEEDED = "SUCCEEDED".asInstanceOf[typings.esebRequestState.esebRequestStateStrings.SUCCEEDED]
   }
 }

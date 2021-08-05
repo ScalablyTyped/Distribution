@@ -85,21 +85,16 @@ object zoneMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Zone]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Zone]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ZoneState): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Zone]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Zone]
+    inline def get(name: String, id: Input[ID]): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Zone]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Zone]
+    inline def get(name: String, id: Input[ID], state: ZoneState): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Zone]
+    inline def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Zone]
     
     /**
       * Returns true if the given object is an instance of Zone.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean]
   }
   
   trait ZoneArgs extends StObject {
@@ -136,53 +131,38 @@ object zoneMod {
   }
   object ZoneArgs {
     
-    @scala.inline
-    def apply(): ZoneArgs = {
+    inline def apply(): ZoneArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZoneArgs]
     }
     
-    @scala.inline
-    implicit class ZoneArgsMutableBuilder[Self <: ZoneArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ZoneArgs](x: Self) {
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDelegationSetId(value: Input[String]): Self = StObject.set(x, "delegationSetId", value.asInstanceOf[js.Any])
+      inline def setDelegationSetId(value: Input[String]): Self = StObject.set(x, "delegationSetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegationSetIdUndefined: Self = StObject.set(x, "delegationSetId", js.undefined)
+      inline def setDelegationSetIdUndefined: Self = StObject.set(x, "delegationSetId", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ZoneVpc]]]): Self = StObject.set(x, "vpcs", value.asInstanceOf[js.Any])
+      inline def setVpcs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ZoneVpc]]]): Self = StObject.set(x, "vpcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcsUndefined: Self = StObject.set(x, "vpcs", js.undefined)
+      inline def setVpcsUndefined: Self = StObject.set(x, "vpcs", js.undefined)
       
-      @scala.inline
-      def setVpcsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ZoneVpc]*): Self = StObject.set(x, "vpcs", js.Array(value :_*))
+      inline def setVpcsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ZoneVpc]*): Self = StObject.set(x, "vpcs", js.Array(value :_*))
     }
   }
   
@@ -231,68 +211,48 @@ object zoneMod {
   }
   object ZoneState {
     
-    @scala.inline
-    def apply(): ZoneState = {
+    inline def apply(): ZoneState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZoneState]
     }
     
-    @scala.inline
-    implicit class ZoneStateMutableBuilder[Self <: ZoneState] (val x: Self) extends AnyVal {
+    extension [Self <: ZoneState](x: Self) {
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDelegationSetId(value: Input[String]): Self = StObject.set(x, "delegationSetId", value.asInstanceOf[js.Any])
+      inline def setDelegationSetId(value: Input[String]): Self = StObject.set(x, "delegationSetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegationSetIdUndefined: Self = StObject.set(x, "delegationSetId", js.undefined)
+      inline def setDelegationSetIdUndefined: Self = StObject.set(x, "delegationSetId", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+      inline def setNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
+      inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
       
-      @scala.inline
-      def setNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+      inline def setNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ZoneVpc]]]): Self = StObject.set(x, "vpcs", value.asInstanceOf[js.Any])
+      inline def setVpcs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ZoneVpc]]]): Self = StObject.set(x, "vpcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcsUndefined: Self = StObject.set(x, "vpcs", js.undefined)
+      inline def setVpcsUndefined: Self = StObject.set(x, "vpcs", js.undefined)
       
-      @scala.inline
-      def setVpcsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ZoneVpc]*): Self = StObject.set(x, "vpcs", js.Array(value :_*))
+      inline def setVpcsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ZoneVpc]*): Self = StObject.set(x, "vpcs", js.Array(value :_*))
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
 }

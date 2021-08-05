@@ -18,20 +18,16 @@ trait EnvironmentFile extends StObject {
 }
 object EnvironmentFile {
   
-  @scala.inline
-  def apply(`type`: EnvironmentFileType, value: String): EnvironmentFile = {
+  inline def apply(`type`: EnvironmentFileType, value: String): EnvironmentFile = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentFile]
   }
   
-  @scala.inline
-  implicit class EnvironmentFileMutableBuilder[Self <: EnvironmentFile] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentFile](x: Self) {
     
-    @scala.inline
-    def setType(value: EnvironmentFileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EnvironmentFileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

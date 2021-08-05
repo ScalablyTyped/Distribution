@@ -10,16 +10,13 @@ trait Service extends StObject {
 }
 object Service {
   
-  @scala.inline
-  def apply(DEFAULT_DEPLOYMENT_ID: String): Service = {
+  inline def apply(DEFAULT_DEPLOYMENT_ID: String): Service = {
     val __obj = js.Dynamic.literal(DEFAULT_DEPLOYMENT_ID = DEFAULT_DEPLOYMENT_ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
   
-  @scala.inline
-  implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+  extension [Self <: Service](x: Self) {
     
-    @scala.inline
-    def setDEFAULT_DEPLOYMENT_ID(value: String): Self = StObject.set(x, "DEFAULT_DEPLOYMENT_ID", value.asInstanceOf[js.Any])
+    inline def setDEFAULT_DEPLOYMENT_ID(value: String): Self = StObject.set(x, "DEFAULT_DEPLOYMENT_ID", value.asInstanceOf[js.Any])
   }
 }

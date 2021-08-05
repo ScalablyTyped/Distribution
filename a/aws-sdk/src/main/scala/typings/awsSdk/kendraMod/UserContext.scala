@@ -13,19 +13,15 @@ trait UserContext extends StObject {
 }
 object UserContext {
   
-  @scala.inline
-  def apply(): UserContext = {
+  inline def apply(): UserContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserContext]
   }
   
-  @scala.inline
-  implicit class UserContextMutableBuilder[Self <: UserContext] (val x: Self) extends AnyVal {
+  extension [Self <: UserContext](x: Self) {
     
-    @scala.inline
-    def setToken(value: Token): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Token): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

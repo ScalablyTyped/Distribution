@@ -12,22 +12,17 @@ trait Prompt extends StObject {
 }
 object Prompt {
   
-  @scala.inline
-  def apply(prompt: String): Prompt = {
+  inline def apply(prompt: String): Prompt = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prompt]
   }
   
-  @scala.inline
-  implicit class PromptMutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
+  extension [Self <: Prompt](x: Self) {
     
-    @scala.inline
-    def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
+    inline def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
+    inline def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
   }
 }

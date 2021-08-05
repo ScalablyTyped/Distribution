@@ -10,19 +10,15 @@ trait RestoreFromClusterSnapshotResult extends StObject {
 }
 object RestoreFromClusterSnapshotResult {
   
-  @scala.inline
-  def apply(): RestoreFromClusterSnapshotResult = {
+  inline def apply(): RestoreFromClusterSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreFromClusterSnapshotResult]
   }
   
-  @scala.inline
-  implicit class RestoreFromClusterSnapshotResultMutableBuilder[Self <: RestoreFromClusterSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreFromClusterSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object operationMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isOperationMap(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.OperationMap */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOperationMap")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.OperationMap */ Boolean]
+  inline def isOperationMap(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.OperationMap */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOperationMap")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.OperationMap */ Boolean]
 }

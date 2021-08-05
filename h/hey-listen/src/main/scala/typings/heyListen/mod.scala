@@ -13,14 +13,12 @@ object mod {
   @JSImport("hey-listen", "invariant")
   @js.native
   def invariant: DevMessage = js.native
-  @scala.inline
-  def invariant_=(x: DevMessage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invariant")(x.asInstanceOf[js.Any])
+  inline def invariant_=(x: DevMessage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invariant")(x.asInstanceOf[js.Any])
   
   @JSImport("hey-listen", "warning")
   @js.native
   def warning: DevMessage = js.native
-  @scala.inline
-  def warning_=(x: DevMessage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
+  inline def warning_=(x: DevMessage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   
   type DevMessage = js.Function2[/* check */ Boolean, /* message */ String, Unit]
 }

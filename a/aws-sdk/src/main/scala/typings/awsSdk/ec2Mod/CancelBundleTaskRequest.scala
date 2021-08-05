@@ -18,22 +18,17 @@ trait CancelBundleTaskRequest extends StObject {
 }
 object CancelBundleTaskRequest {
   
-  @scala.inline
-  def apply(BundleId: BundleId): CancelBundleTaskRequest = {
+  inline def apply(BundleId: BundleId): CancelBundleTaskRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelBundleTaskRequest]
   }
   
-  @scala.inline
-  implicit class CancelBundleTaskRequestMutableBuilder[Self <: CancelBundleTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelBundleTaskRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

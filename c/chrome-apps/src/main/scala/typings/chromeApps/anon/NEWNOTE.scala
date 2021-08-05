@@ -11,16 +11,13 @@ trait NEWNOTE extends StObject {
 }
 object NEWNOTE {
   
-  @scala.inline
-  def apply(): NEWNOTE = {
+  inline def apply(): NEWNOTE = {
     val __obj = js.Dynamic.literal(NEW_NOTE = "new_note")
     __obj.asInstanceOf[NEWNOTE]
   }
   
-  @scala.inline
-  implicit class NEWNOTEMutableBuilder[Self <: NEWNOTE] (val x: Self) extends AnyVal {
+  extension [Self <: NEWNOTE](x: Self) {
     
-    @scala.inline
-    def setNEW_NOTE(value: new_note_): Self = StObject.set(x, "NEW_NOTE", value.asInstanceOf[js.Any])
+    inline def setNEW_NOTE(value: new_note_): Self = StObject.set(x, "NEW_NOTE", value.asInstanceOf[js.Any])
   }
 }

@@ -14,16 +14,13 @@ trait DataMixins extends StObject {
 }
 object DataMixins {
   
-  @scala.inline
-  def apply(data: Data): DataMixins = {
+  inline def apply(data: Data): DataMixins = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataMixins]
   }
   
-  @scala.inline
-  implicit class DataMixinsMutableBuilder[Self <: DataMixins] (val x: Self) extends AnyVal {
+  extension [Self <: DataMixins](x: Self) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -18,11 +18,9 @@ object history4RedirectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedReduxRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps]]
+  inline def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedReduxRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps]]
   
-  @scala.inline
-  def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): AuthWrapperDecorator[
+  inline def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): AuthWrapperDecorator[
     OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedRouterRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[
     OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
@@ -37,8 +35,7 @@ object history4RedirectMod {
   }
   object ConnectedReduxRedirectConfig {
     
-    @scala.inline
-    def apply[OwnProps, State](
+    inline def apply[OwnProps, State](
       authenticatedSelector: (State, OwnProps) => Boolean,
       redirectAction: Location[LocationState] => Action[js.Any],
       redirectPath: String | (StateSelector[State, OwnProps, String])
@@ -47,11 +44,9 @@ object history4RedirectMod {
       __obj.asInstanceOf[ConnectedReduxRedirectConfig[OwnProps, State]]
     }
     
-    @scala.inline
-    implicit class ConnectedReduxRedirectConfigMutableBuilder[Self <: ConnectedReduxRedirectConfig[?, ?], OwnProps, State] (val x: Self & (ConnectedReduxRedirectConfig[OwnProps, State])) extends AnyVal {
+    extension [Self <: ConnectedReduxRedirectConfig[?, ?], OwnProps, State](x: Self & (ConnectedReduxRedirectConfig[OwnProps, State])) {
       
-      @scala.inline
-      def setRedirectAction(value: Location[LocationState] => Action[js.Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
+      inline def setRedirectAction(value: Location[LocationState] => Action[js.Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
     }
   }
 }

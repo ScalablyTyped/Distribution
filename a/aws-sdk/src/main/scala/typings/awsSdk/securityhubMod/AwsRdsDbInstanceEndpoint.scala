@@ -23,31 +23,23 @@ trait AwsRdsDbInstanceEndpoint extends StObject {
 }
 object AwsRdsDbInstanceEndpoint {
   
-  @scala.inline
-  def apply(): AwsRdsDbInstanceEndpoint = {
+  inline def apply(): AwsRdsDbInstanceEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbInstanceEndpoint]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbInstanceEndpointMutableBuilder[Self <: AwsRdsDbInstanceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbInstanceEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NonEmptyString): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NonEmptyString): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setHostedZoneId(value: NonEmptyString): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: NonEmptyString): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
+    inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
     
-    @scala.inline
-    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

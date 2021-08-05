@@ -18,28 +18,21 @@ trait MultiColumnHidingEventUIParam extends StObject {
 }
 object MultiColumnHidingEventUIParam {
   
-  @scala.inline
-  def apply(): MultiColumnHidingEventUIParam = {
+  inline def apply(): MultiColumnHidingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiColumnHidingEventUIParam]
   }
   
-  @scala.inline
-  implicit class MultiColumnHidingEventUIParamMutableBuilder[Self <: MultiColumnHidingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MultiColumnHidingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnKeys(value: js.Array[js.Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
+    inline def setColumnKeys(value: js.Array[js.Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeysUndefined: Self = StObject.set(x, "columnKeys", js.undefined)
+    inline def setColumnKeysUndefined: Self = StObject.set(x, "columnKeys", js.undefined)
     
-    @scala.inline
-    def setColumnKeysVarargs(value: js.Any*): Self = StObject.set(x, "columnKeys", js.Array(value :_*))
+    inline def setColumnKeysVarargs(value: js.Any*): Self = StObject.set(x, "columnKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

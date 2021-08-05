@@ -33,8 +33,7 @@ trait EditorSuggestions extends StObject {
 }
 object EditorSuggestions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     editorSuggestions: js.Array[String],
     processingErrors: js.Array[String],
     processingHints: js.Array[String],
@@ -45,37 +44,26 @@ object EditorSuggestions {
     __obj.asInstanceOf[EditorSuggestions]
   }
   
-  @scala.inline
-  implicit class EditorSuggestionsMutableBuilder[Self <: EditorSuggestions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorSuggestions](x: Self) {
     
-    @scala.inline
-    def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
+    inline def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
+    inline def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
+    inline def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
+    inline def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
+    inline def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
+    inline def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
+    inline def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
+    inline def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
     
-    @scala.inline
-    def setTagSuggestions(value: js.Array[CategoryRestricts]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
+    inline def setTagSuggestions(value: js.Array[CategoryRestricts]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSuggestionsVarargs(value: CategoryRestricts*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
+    inline def setTagSuggestionsVarargs(value: CategoryRestricts*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
   }
 }

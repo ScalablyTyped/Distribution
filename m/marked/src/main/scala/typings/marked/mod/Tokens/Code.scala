@@ -23,35 +23,26 @@ trait Code
 }
 object Code {
   
-  @scala.inline
-  def apply(raw: String, text: String): Code = {
+  inline def apply(raw: String, text: String): Code = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCodeBlockStyle(value: indented): Self = StObject.set(x, "codeBlockStyle", value.asInstanceOf[js.Any])
+    inline def setCodeBlockStyle(value: indented): Self = StObject.set(x, "codeBlockStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeBlockStyleUndefined: Self = StObject.set(x, "codeBlockStyle", js.undefined)
+    inline def setCodeBlockStyleUndefined: Self = StObject.set(x, "codeBlockStyle", js.undefined)
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ trait AdaptiveMediaSourceDownloadResult extends StObject {
 }
 object AdaptiveMediaSourceDownloadResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buffer: IBuffer,
     contentType: String,
     extendedStatus: Double,
@@ -39,22 +38,16 @@ object AdaptiveMediaSourceDownloadResult {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadResult]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceDownloadResultMutableBuilder[Self <: AdaptiveMediaSourceDownloadResult] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceDownloadResult](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: IBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: IBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
+    inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+    inline def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait CreateRoleRequest extends StObject {
 }
 object CreateRoleRequest {
   
-  @scala.inline
-  def apply(): CreateRoleRequest = {
+  inline def apply(): CreateRoleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRoleRequest]
   }
   
-  @scala.inline
-  implicit class CreateRoleRequestMutableBuilder[Self <: CreateRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRoleRequest](x: Self) {
     
-    @scala.inline
-    def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+    inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
+    inline def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

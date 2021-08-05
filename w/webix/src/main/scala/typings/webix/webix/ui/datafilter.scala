@@ -42,8 +42,7 @@ object datafilter {
   }
   object textFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getInputNode: HTMLElement => HTMLElement,
       getValue: HTMLElement => js.Any,
       refresh: (baseview, HTMLElement, js.Any) => Unit,
@@ -54,11 +53,9 @@ object datafilter {
       __obj.asInstanceOf[textFilter]
     }
     
-    @scala.inline
-    implicit class textFilterMutableBuilder[Self <: textFilter] (val x: Self) extends AnyVal {
+    extension [Self <: textFilter](x: Self) {
       
-      @scala.inline
-      def setGetInputNode(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getInputNode", js.Any.fromFunction1(value))
+      inline def setGetInputNode(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getInputNode", js.Any.fromFunction1(value))
     }
   }
 }

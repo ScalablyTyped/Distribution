@@ -93,6 +93,5 @@ class StructureExtractor protected ()
 }
 object StructureExtractor {
   
-  @scala.inline
-  def apply: StructureExtractorConstructor = js.Dynamic.global.selectDynamic("StructureExtractor").asInstanceOf[StructureExtractorConstructor]
+  inline def apply: StructureExtractorConstructor = js.Dynamic.global.selectDynamic("StructureExtractor").asInstanceOf[StructureExtractorConstructor]
 }

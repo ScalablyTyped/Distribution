@@ -9,8 +9,7 @@ trait GenerateRandomInput
      with typings.awsSdkClientKmsNode.typesGenerateRandomInputMod.GenerateRandomInput
 object GenerateRandomInput {
   
-  @scala.inline
-  def apply(): GenerateRandomInput = {
+  inline def apply(): GenerateRandomInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateRandomInput]
   }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LegendPositionType extends StObject
 object LegendPositionType {
   
-  @scala.inline
-  def `bottom-left`: typings.vis.visStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.vis.visStrings.`bottom-left`]
+  inline def `bottom-left`: typings.vis.visStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.vis.visStrings.`bottom-left`]
   
-  @scala.inline
-  def `bottom-right`: typings.vis.visStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.vis.visStrings.`bottom-right`]
+  inline def `bottom-right`: typings.vis.visStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.vis.visStrings.`bottom-right`]
   
-  @scala.inline
-  def `top-left`: typings.vis.visStrings.`top-left` = "top-left".asInstanceOf[typings.vis.visStrings.`top-left`]
+  inline def `top-left`: typings.vis.visStrings.`top-left` = "top-left".asInstanceOf[typings.vis.visStrings.`top-left`]
   
-  @scala.inline
-  def `top-right`: typings.vis.visStrings.`top-right` = "top-right".asInstanceOf[typings.vis.visStrings.`top-right`]
+  inline def `top-right`: typings.vis.visStrings.`top-right` = "top-right".asInstanceOf[typings.vis.visStrings.`top-right`]
 }

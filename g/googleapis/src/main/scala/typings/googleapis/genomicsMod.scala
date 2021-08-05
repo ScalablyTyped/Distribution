@@ -38,8 +38,7 @@ object genomicsMod {
     @JSImport("googleapis/build/src/apis/genomics", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Genomics] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Genomics]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -58,8 +57,7 @@ object genomicsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics
       ] = js.native
-    @scala.inline
-    def v1alpha2_=(
+    inline def v1alpha2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -82,8 +80,7 @@ object genomicsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics
       ] = js.native
-    @scala.inline
-    def v2alpha1_=(
+    inline def v2alpha1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -125,8 +122,7 @@ object genomicsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -170,19 +166,13 @@ object genomicsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def genomics(options: Options): Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(options.asInstanceOf[js.Any]).asInstanceOf[Genomics]
-  @scala.inline
-  def genomics(options: typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Options): typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics]
-  @scala.inline
-  def genomics(options: typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Options): typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics]
+  inline def genomics(options: Options): Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(options.asInstanceOf[js.Any]).asInstanceOf[Genomics]
+  inline def genomics(options: typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Options): typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics]
+  inline def genomics(options: typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Options): typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics]
   
-  @scala.inline
-  def genomics_v1(version: v1): Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(version.asInstanceOf[js.Any]).asInstanceOf[Genomics]
+  inline def genomics_v1(version: v1): Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(version.asInstanceOf[js.Any]).asInstanceOf[Genomics]
   
-  @scala.inline
-  def genomics_v1alpha2(version: v1alpha2): typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics]
+  inline def genomics_v1alpha2(version: v1alpha2): typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics]
   
-  @scala.inline
-  def genomics_v2alpha1(version: v2alpha1): typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics]
+  inline def genomics_v2alpha1(version: v2alpha1): typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics = ^.asInstanceOf[js.Dynamic].applyDynamic("genomics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics]
 }

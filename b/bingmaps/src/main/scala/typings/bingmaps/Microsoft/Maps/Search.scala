@@ -97,26 +97,20 @@ object Search {
   }
   object IGeocodeLocation {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double, name: String, precision: String): IGeocodeLocation = {
+    inline def apply(latitude: Double, longitude: Double, name: String, precision: String): IGeocodeLocation = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGeocodeLocation]
     }
     
-    @scala.inline
-    implicit class IGeocodeLocationMutableBuilder[Self <: IGeocodeLocation] (val x: Self) extends AnyVal {
+    extension [Self <: IGeocodeLocation](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,62 +156,44 @@ object Search {
   }
   object IGeocodeRequestOptions {
     
-    @scala.inline
-    def apply(callback: (IGeocodeResult, js.Any) => Unit, where: String): IGeocodeRequestOptions = {
+    inline def apply(callback: (IGeocodeResult, js.Any) => Unit, where: String): IGeocodeRequestOptions = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), where = where.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGeocodeRequestOptions]
     }
     
-    @scala.inline
-    implicit class IGeocodeRequestOptionsMutableBuilder[Self <: IGeocodeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IGeocodeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (IGeocodeResult, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (IGeocodeResult, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setErrorCallback(value: IGeocodeRequestOptions => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
+      inline def setErrorCallback(value: IGeocodeRequestOptions => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+      inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
       
-      @scala.inline
-      def setIncludeCountryIso2(value: Boolean): Self = StObject.set(x, "includeCountryIso2", value.asInstanceOf[js.Any])
+      inline def setIncludeCountryIso2(value: Boolean): Self = StObject.set(x, "includeCountryIso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeCountryIso2Undefined: Self = StObject.set(x, "includeCountryIso2", js.undefined)
+      inline def setIncludeCountryIso2Undefined: Self = StObject.set(x, "includeCountryIso2", js.undefined)
       
-      @scala.inline
-      def setIncludeNeighborhood(value: Boolean): Self = StObject.set(x, "includeNeighborhood", value.asInstanceOf[js.Any])
+      inline def setIncludeNeighborhood(value: Boolean): Self = StObject.set(x, "includeNeighborhood", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeNeighborhoodUndefined: Self = StObject.set(x, "includeNeighborhood", js.undefined)
+      inline def setIncludeNeighborhoodUndefined: Self = StObject.set(x, "includeNeighborhood", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+      inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
       
-      @scala.inline
-      def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+      inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,20 +204,16 @@ object Search {
   }
   object IGeocodeResult {
     
-    @scala.inline
-    def apply(results: js.Array[IPlaceResult]): IGeocodeResult = {
+    inline def apply(results: js.Array[IPlaceResult]): IGeocodeResult = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGeocodeResult]
     }
     
-    @scala.inline
-    implicit class IGeocodeResultMutableBuilder[Self <: IGeocodeResult] (val x: Self) extends AnyVal {
+    extension [Self <: IGeocodeResult](x: Self) {
       
-      @scala.inline
-      def setResults(value: js.Array[IPlaceResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[IPlaceResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: IPlaceResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: IPlaceResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -273,8 +245,7 @@ object Search {
   }
   object IPlaceResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: IAddress,
       bestView: LocationRect,
       entityType: String,
@@ -288,35 +259,25 @@ object Search {
       __obj.asInstanceOf[IPlaceResult]
     }
     
-    @scala.inline
-    implicit class IPlaceResultMutableBuilder[Self <: IPlaceResult] (val x: Self) extends AnyVal {
+    extension [Self <: IPlaceResult](x: Self) {
       
-      @scala.inline
-      def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBestView(value: LocationRect): Self = StObject.set(x, "bestView", value.asInstanceOf[js.Any])
+      inline def setBestView(value: LocationRect): Self = StObject.set(x, "bestView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+      inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocations(value: js.Array[IGeocodeLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[IGeocodeLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: IGeocodeLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: IGeocodeLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setMatchCode(value: String | MatchCode): Self = StObject.set(x, "matchCode", value.asInstanceOf[js.Any])
+      inline def setMatchCode(value: String | MatchCode): Self = StObject.set(x, "matchCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchConfidence(value: String | MatchConfidence): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
+      inline def setMatchConfidence(value: String | MatchConfidence): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -370,59 +331,42 @@ object Search {
   }
   object ReverseGeocodeRequestOptions {
     
-    @scala.inline
-    def apply(callback: (IPlaceResult, js.Any) => Unit, location: Location): ReverseGeocodeRequestOptions = {
+    inline def apply(callback: (IPlaceResult, js.Any) => Unit, location: Location): ReverseGeocodeRequestOptions = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReverseGeocodeRequestOptions]
     }
     
-    @scala.inline
-    implicit class ReverseGeocodeRequestOptionsMutableBuilder[Self <: ReverseGeocodeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReverseGeocodeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (IPlaceResult, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (IPlaceResult, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorCallback(value: ReverseGeocodeRequestOptions => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
+      inline def setErrorCallback(value: ReverseGeocodeRequestOptions => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+      inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
       
-      @scala.inline
-      def setIncludeCountryIso2(value: Boolean): Self = StObject.set(x, "includeCountryIso2", value.asInstanceOf[js.Any])
+      inline def setIncludeCountryIso2(value: Boolean): Self = StObject.set(x, "includeCountryIso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeCountryIso2Undefined: Self = StObject.set(x, "includeCountryIso2", js.undefined)
+      inline def setIncludeCountryIso2Undefined: Self = StObject.set(x, "includeCountryIso2", js.undefined)
       
-      @scala.inline
-      def setIncludeEntityTypes(value: js.Array[String]): Self = StObject.set(x, "includeEntityTypes", value.asInstanceOf[js.Any])
+      inline def setIncludeEntityTypes(value: js.Array[String]): Self = StObject.set(x, "includeEntityTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeEntityTypesUndefined: Self = StObject.set(x, "includeEntityTypes", js.undefined)
+      inline def setIncludeEntityTypesUndefined: Self = StObject.set(x, "includeEntityTypes", js.undefined)
       
-      @scala.inline
-      def setIncludeEntityTypesVarargs(value: String*): Self = StObject.set(x, "includeEntityTypes", js.Array(value :_*))
+      inline def setIncludeEntityTypesVarargs(value: String*): Self = StObject.set(x, "includeEntityTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeNeighborhood(value: Boolean): Self = StObject.set(x, "includeNeighborhood", value.asInstanceOf[js.Any])
+      inline def setIncludeNeighborhood(value: Boolean): Self = StObject.set(x, "includeNeighborhood", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeNeighborhoodUndefined: Self = StObject.set(x, "includeNeighborhood", js.undefined)
+      inline def setIncludeNeighborhoodUndefined: Self = StObject.set(x, "includeNeighborhood", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+      inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     }
   }
   
@@ -445,20 +389,16 @@ object Search {
   }
   object SearchManager {
     
-    @scala.inline
-    def apply(geocode: IGeocodeRequestOptions => Unit, reverseGeocode: ReverseGeocodeRequestOptions => Unit): SearchManager = {
+    inline def apply(geocode: IGeocodeRequestOptions => Unit, reverseGeocode: ReverseGeocodeRequestOptions => Unit): SearchManager = {
       val __obj = js.Dynamic.literal(geocode = js.Any.fromFunction1(geocode), reverseGeocode = js.Any.fromFunction1(reverseGeocode))
       __obj.asInstanceOf[SearchManager]
     }
     
-    @scala.inline
-    implicit class SearchManagerMutableBuilder[Self <: SearchManager] (val x: Self) extends AnyVal {
+    extension [Self <: SearchManager](x: Self) {
       
-      @scala.inline
-      def setGeocode(value: IGeocodeRequestOptions => Unit): Self = StObject.set(x, "geocode", js.Any.fromFunction1(value))
+      inline def setGeocode(value: IGeocodeRequestOptions => Unit): Self = StObject.set(x, "geocode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReverseGeocode(value: ReverseGeocodeRequestOptions => Unit): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction1(value))
+      inline def setReverseGeocode(value: ReverseGeocodeRequestOptions => Unit): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction1(value))
     }
   }
 }

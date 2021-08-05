@@ -36,8 +36,7 @@ object walkerWalkerMod {
   }
   object IWalker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getFailures: () => js.Array[RuleFailure],
       getSourceFile: () => SourceFile,
       walk: SourceFile => Unit
@@ -46,17 +45,13 @@ object walkerWalkerMod {
       __obj.asInstanceOf[IWalker]
     }
     
-    @scala.inline
-    implicit class IWalkerMutableBuilder[Self <: IWalker] (val x: Self) extends AnyVal {
+    extension [Self <: IWalker](x: Self) {
       
-      @scala.inline
-      def setGetFailures(value: () => js.Array[RuleFailure]): Self = StObject.set(x, "getFailures", js.Any.fromFunction0(value))
+      inline def setGetFailures(value: () => js.Array[RuleFailure]): Self = StObject.set(x, "getFailures", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSourceFile(value: () => SourceFile): Self = StObject.set(x, "getSourceFile", js.Any.fromFunction0(value))
+      inline def setGetSourceFile(value: () => SourceFile): Self = StObject.set(x, "getSourceFile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWalk(value: SourceFile => Unit): Self = StObject.set(x, "walk", js.Any.fromFunction1(value))
+      inline def setWalk(value: SourceFile => Unit): Self = StObject.set(x, "walk", js.Any.fromFunction1(value))
     }
   }
 }

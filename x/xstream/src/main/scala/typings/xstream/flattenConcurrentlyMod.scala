@@ -14,8 +14,7 @@ object flattenConcurrentlyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](ins: Stream[Stream[T] | MemoryStream[T]]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+  inline def default[T](ins: Stream[Stream[T] | MemoryStream[T]]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
   
   @JSImport("xstream/extra/flattenConcurrently", "FlattenConcOperator")
   @js.native
@@ -41,7 +40,7 @@ object flattenConcurrentlyMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
     /* CompleteClass */
     var ins: Stream[Stream[T]] = js.native

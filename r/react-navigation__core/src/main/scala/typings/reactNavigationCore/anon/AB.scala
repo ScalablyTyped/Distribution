@@ -14,22 +14,17 @@ trait AB[A, B, C] extends StObject {
 }
 object AB {
   
-  @scala.inline
-  def apply[A, B, C](a: A, b: B, c: C): AB[A, B, C] = {
+  inline def apply[A, B, C](a: A, b: B, c: C): AB[A, B, C] = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any])
     __obj.asInstanceOf[AB[A, B, C]]
   }
   
-  @scala.inline
-  implicit class ABMutableBuilder[Self <: AB[?, ?, ?], A, B, C] (val x: Self & (AB[A, B, C])) extends AnyVal {
+  extension [Self <: AB[?, ?, ?], A, B, C](x: Self & (AB[A, B, C])) {
     
-    @scala.inline
-    def setA(value: A): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: A): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: B): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: B): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC(value: C): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: C): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
   }
 }

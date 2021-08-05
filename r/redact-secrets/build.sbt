@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redact-secrets"
-version := "1.0-dt-20200528Z-e72ed2"
+version := "1.0-dt-20200528Z-b77c3e"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

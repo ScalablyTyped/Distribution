@@ -12,19 +12,15 @@ trait FeatureSentimentResults extends StObject {
 }
 object FeatureSentimentResults {
   
-  @scala.inline
-  def apply(): FeatureSentimentResults = {
+  inline def apply(): FeatureSentimentResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureSentimentResults]
   }
   
-  @scala.inline
-  implicit class FeatureSentimentResultsMutableBuilder[Self <: FeatureSentimentResults] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureSentimentResults](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

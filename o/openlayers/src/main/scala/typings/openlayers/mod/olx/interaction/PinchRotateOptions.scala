@@ -12,25 +12,19 @@ trait PinchRotateOptions extends StObject {
 }
 object PinchRotateOptions {
   
-  @scala.inline
-  def apply(): PinchRotateOptions = {
+  inline def apply(): PinchRotateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PinchRotateOptions]
   }
   
-  @scala.inline
-  implicit class PinchRotateOptionsMutableBuilder[Self <: PinchRotateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PinchRotateOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

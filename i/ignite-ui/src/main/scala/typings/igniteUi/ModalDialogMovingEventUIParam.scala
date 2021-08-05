@@ -28,37 +28,27 @@ trait ModalDialogMovingEventUIParam extends StObject {
 }
 object ModalDialogMovingEventUIParam {
   
-  @scala.inline
-  def apply(): ModalDialogMovingEventUIParam = {
+  inline def apply(): ModalDialogMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalDialogMovingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ModalDialogMovingEventUIParamMutableBuilder[Self <: ModalDialogMovingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialogMovingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
+    inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
+    inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
-    @scala.inline
-    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
+    inline def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

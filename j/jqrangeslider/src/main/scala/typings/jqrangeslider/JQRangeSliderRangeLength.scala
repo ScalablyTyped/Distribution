@@ -12,25 +12,19 @@ trait JQRangeSliderRangeLength extends StObject {
 }
 object JQRangeSliderRangeLength {
   
-  @scala.inline
-  def apply(): JQRangeSliderRangeLength = {
+  inline def apply(): JQRangeSliderRangeLength = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQRangeSliderRangeLength]
   }
   
-  @scala.inline
-  implicit class JQRangeSliderRangeLengthMutableBuilder[Self <: JQRangeSliderRangeLength] (val x: Self) extends AnyVal {
+  extension [Self <: JQRangeSliderRangeLength](x: Self) {
     
-    @scala.inline
-    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

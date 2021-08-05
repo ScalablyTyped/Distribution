@@ -20,17 +20,14 @@ object typesCodeStorageExceededExceptionMod {
   }
   object CodeStorageExceededException {
     
-    @scala.inline
-    def apply(): CodeStorageExceededException = {
+    inline def apply(): CodeStorageExceededException = {
       val __obj = js.Dynamic.literal(name = "CodeStorageExceededException")
       __obj.asInstanceOf[CodeStorageExceededException]
     }
     
-    @scala.inline
-    implicit class CodeStorageExceededExceptionMutableBuilder[Self <: CodeStorageExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: CodeStorageExceededException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.CodeStorageExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.CodeStorageExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,26 +45,20 @@ object typesCodeStorageExceededExceptionMod {
   }
   object CodeStorageExceededExceptionDetails {
     
-    @scala.inline
-    def apply(): CodeStorageExceededExceptionDetails = {
+    inline def apply(): CodeStorageExceededExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CodeStorageExceededExceptionDetails]
     }
     
-    @scala.inline
-    implicit class CodeStorageExceededExceptionDetailsMutableBuilder[Self <: CodeStorageExceededExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: CodeStorageExceededExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

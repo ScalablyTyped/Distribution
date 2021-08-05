@@ -73,85 +73,59 @@ trait FlatListProps[ItemT]
 }
 object FlatListProps {
   
-  @scala.inline
-  def apply[ItemT](): FlatListProps[ItemT] = {
+  inline def apply[ItemT](): FlatListProps[ItemT] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlatListProps[ItemT]]
   }
   
-  @scala.inline
-  implicit class FlatListPropsMutableBuilder[Self <: FlatListProps[?], ItemT] (val x: Self & FlatListProps[ItemT]) extends AnyVal {
+  extension [Self <: FlatListProps[?], ItemT](x: Self & FlatListProps[ItemT]) {
     
-    @scala.inline
-    def setColumnWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "columnWrapperStyle", value.asInstanceOf[js.Any])
+    inline def setColumnWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "columnWrapperStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWrapperStyleNull: Self = StObject.set(x, "columnWrapperStyle", null)
+    inline def setColumnWrapperStyleNull: Self = StObject.set(x, "columnWrapperStyle", null)
     
-    @scala.inline
-    def setColumnWrapperStyleUndefined: Self = StObject.set(x, "columnWrapperStyle", js.undefined)
+    inline def setColumnWrapperStyleUndefined: Self = StObject.set(x, "columnWrapperStyle", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
+    inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
-    @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
+    inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
-    @scala.inline
-    def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
+    inline def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
     
-    @scala.inline
-    def setLegacyImplementation(value: Boolean): Self = StObject.set(x, "legacyImplementation", value.asInstanceOf[js.Any])
+    inline def setLegacyImplementation(value: Boolean): Self = StObject.set(x, "legacyImplementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
+    inline def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
-    @scala.inline
-    def setListFooterComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListFooterComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
+    inline def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
     
-    @scala.inline
-    def setListFooterComponentStyleUndefined: Self = StObject.set(x, "ListFooterComponentStyle", js.undefined)
+    inline def setListFooterComponentStyleUndefined: Self = StObject.set(x, "ListFooterComponentStyle", js.undefined)
     
-    @scala.inline
-    def setListHeaderComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
+    inline def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
     
-    @scala.inline
-    def setListHeaderComponentStyleUndefined: Self = StObject.set(x, "ListHeaderComponentStyle", js.undefined)
+    inline def setListHeaderComponentStyleUndefined: Self = StObject.set(x, "ListHeaderComponentStyle", js.undefined)
     
-    @scala.inline
-    def setNumColumns(value: Double): Self = StObject.set(x, "numColumns", value.asInstanceOf[js.Any])
+    inline def setNumColumns(value: Double): Self = StObject.set(x, "numColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumColumnsUndefined: Self = StObject.set(x, "numColumns", js.undefined)
+    inline def setNumColumnsUndefined: Self = StObject.set(x, "numColumns", js.undefined)
     
-    @scala.inline
-    def setViewabilityConfig(value: js.Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+    inline def setViewabilityConfig(value: js.Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
+    inline def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
   }
 }

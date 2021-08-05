@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFrenchSpeller extends StObject
 object WdFrenchSpeller {
   
-  @scala.inline
-  def wdFrenchBoth: `0` = 0.asInstanceOf[`0`]
+  inline def wdFrenchBoth: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFrenchPostReform: `2` = 2.asInstanceOf[`2`]
+  inline def wdFrenchPostReform: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdFrenchPreReform: `1` = 1.asInstanceOf[`1`]
+  inline def wdFrenchPreReform: `1` = 1.asInstanceOf[`1`]
 }

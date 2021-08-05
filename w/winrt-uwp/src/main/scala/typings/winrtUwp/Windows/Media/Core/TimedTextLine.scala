@@ -16,19 +16,15 @@ trait TimedTextLine extends StObject {
 }
 object TimedTextLine {
   
-  @scala.inline
-  def apply(subformats: IVector[TimedTextSubformat], text: String): TimedTextLine = {
+  inline def apply(subformats: IVector[TimedTextSubformat], text: String): TimedTextLine = {
     val __obj = js.Dynamic.literal(subformats = subformats.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedTextLine]
   }
   
-  @scala.inline
-  implicit class TimedTextLineMutableBuilder[Self <: TimedTextLine] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextLine](x: Self) {
     
-    @scala.inline
-    def setSubformats(value: IVector[TimedTextSubformat]): Self = StObject.set(x, "subformats", value.asInstanceOf[js.Any])
+    inline def setSubformats(value: IVector[TimedTextSubformat]): Self = StObject.set(x, "subformats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

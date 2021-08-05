@@ -29,55 +29,39 @@ trait ForwardingRuleInfo extends StObject {
 }
 object ForwardingRuleInfo {
   
-  @scala.inline
-  def apply(): ForwardingRuleInfo = {
+  inline def apply(): ForwardingRuleInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForwardingRuleInfo]
   }
   
-  @scala.inline
-  implicit class ForwardingRuleInfoMutableBuilder[Self <: ForwardingRuleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardingRuleInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMatchedPortRange(value: String): Self = StObject.set(x, "matchedPortRange", value.asInstanceOf[js.Any])
+    inline def setMatchedPortRange(value: String): Self = StObject.set(x, "matchedPortRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedPortRangeUndefined: Self = StObject.set(x, "matchedPortRange", js.undefined)
+    inline def setMatchedPortRangeUndefined: Self = StObject.set(x, "matchedPortRange", js.undefined)
     
-    @scala.inline
-    def setMatchedProtocol(value: String): Self = StObject.set(x, "matchedProtocol", value.asInstanceOf[js.Any])
+    inline def setMatchedProtocol(value: String): Self = StObject.set(x, "matchedProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedProtocolUndefined: Self = StObject.set(x, "matchedProtocol", js.undefined)
+    inline def setMatchedProtocolUndefined: Self = StObject.set(x, "matchedProtocol", js.undefined)
     
-    @scala.inline
-    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
+    inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
+    inline def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setVip(value: String): Self = StObject.set(x, "vip", value.asInstanceOf[js.Any])
+    inline def setVip(value: String): Self = StObject.set(x, "vip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVipUndefined: Self = StObject.set(x, "vip", js.undefined)
+    inline def setVipUndefined: Self = StObject.set(x, "vip", js.undefined)
   }
 }

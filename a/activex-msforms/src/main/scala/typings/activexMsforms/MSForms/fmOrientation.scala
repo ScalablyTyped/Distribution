@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmOrientation extends StObject
 object fmOrientation {
   
-  @scala.inline
-  def fmOrientationAuto: `-1` = -1.asInstanceOf[`-1`]
+  inline def fmOrientationAuto: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def fmOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
+  inline def fmOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmOrientationVertical: `0` = 0.asInstanceOf[`0`]
+  inline def fmOrientationVertical: `0` = 0.asInstanceOf[`0`]
 }

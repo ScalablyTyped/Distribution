@@ -54,8 +54,7 @@ trait XStorage2
 }
 object XStorage2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -90,13 +89,10 @@ object XStorage2 {
     __obj.asInstanceOf[XStorage2]
   }
   
-  @scala.inline
-  implicit class XStorage2MutableBuilder[Self <: XStorage2] (val x: Self) extends AnyVal {
+  extension [Self <: XStorage2](x: Self) {
     
-    @scala.inline
-    def setCloneEncryptedStream(value: (String, SeqEquiv[NamedValue]) => XStream): Self = StObject.set(x, "cloneEncryptedStream", js.Any.fromFunction2(value))
+    inline def setCloneEncryptedStream(value: (String, SeqEquiv[NamedValue]) => XStream): Self = StObject.set(x, "cloneEncryptedStream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOpenEncryptedStream(value: (String, Double, SeqEquiv[NamedValue]) => XStream): Self = StObject.set(x, "openEncryptedStream", js.Any.fromFunction3(value))
+    inline def setOpenEncryptedStream(value: (String, Double, SeqEquiv[NamedValue]) => XStream): Self = StObject.set(x, "openEncryptedStream", js.Any.fromFunction3(value))
   }
 }

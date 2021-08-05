@@ -17,25 +17,19 @@ trait Opacity extends StObject {
 }
 object Opacity {
   
-  @scala.inline
-  def apply(): Opacity = {
+  inline def apply(): Opacity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Opacity]
   }
   
-  @scala.inline
-  implicit class OpacityMutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
+  extension [Self <: Opacity](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

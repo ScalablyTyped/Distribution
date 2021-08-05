@@ -57,49 +57,35 @@ trait ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList
 }
 object ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList = {
+  inline def apply(): ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryListMutableBuilder[Self <: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList](x: Self) {
     
-    @scala.inline
-    def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

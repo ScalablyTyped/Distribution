@@ -34,25 +34,19 @@ trait DragHandleDoubleClickEvent[T] extends StObject {
 }
 object DragHandleDoubleClickEvent {
   
-  @scala.inline
-  def apply[T](e: SyntheticEvent[js.Any, Event], idx: Double, rowData: T, rowIdx: Double): DragHandleDoubleClickEvent[T] = {
+  inline def apply[T](e: SyntheticEvent[js.Any, Event], idx: Double, rowData: T, rowIdx: Double): DragHandleDoubleClickEvent[T] = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragHandleDoubleClickEvent[T]]
   }
   
-  @scala.inline
-  implicit class DragHandleDoubleClickEventMutableBuilder[Self <: DragHandleDoubleClickEvent[?], T] (val x: Self & DragHandleDoubleClickEvent[T]) extends AnyVal {
+  extension [Self <: DragHandleDoubleClickEvent[?], T](x: Self & DragHandleDoubleClickEvent[T]) {
     
-    @scala.inline
-    def setE(value: SyntheticEvent[js.Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: SyntheticEvent[js.Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+    inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+    inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
   }
 }

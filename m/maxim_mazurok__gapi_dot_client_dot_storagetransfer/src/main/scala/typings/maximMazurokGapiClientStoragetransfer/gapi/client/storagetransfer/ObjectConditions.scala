@@ -45,55 +45,39 @@ trait ObjectConditions extends StObject {
 }
 object ObjectConditions {
   
-  @scala.inline
-  def apply(): ObjectConditions = {
+  inline def apply(): ObjectConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectConditions]
   }
   
-  @scala.inline
-  implicit class ObjectConditionsMutableBuilder[Self <: ObjectConditions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectConditions](x: Self) {
     
-    @scala.inline
-    def setExcludePrefixes(value: js.Array[String]): Self = StObject.set(x, "excludePrefixes", value.asInstanceOf[js.Any])
+    inline def setExcludePrefixes(value: js.Array[String]): Self = StObject.set(x, "excludePrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludePrefixesUndefined: Self = StObject.set(x, "excludePrefixes", js.undefined)
+    inline def setExcludePrefixesUndefined: Self = StObject.set(x, "excludePrefixes", js.undefined)
     
-    @scala.inline
-    def setExcludePrefixesVarargs(value: String*): Self = StObject.set(x, "excludePrefixes", js.Array(value :_*))
+    inline def setExcludePrefixesVarargs(value: String*): Self = StObject.set(x, "excludePrefixes", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludePrefixes(value: js.Array[String]): Self = StObject.set(x, "includePrefixes", value.asInstanceOf[js.Any])
+    inline def setIncludePrefixes(value: js.Array[String]): Self = StObject.set(x, "includePrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePrefixesUndefined: Self = StObject.set(x, "includePrefixes", js.undefined)
+    inline def setIncludePrefixesUndefined: Self = StObject.set(x, "includePrefixes", js.undefined)
     
-    @scala.inline
-    def setIncludePrefixesVarargs(value: String*): Self = StObject.set(x, "includePrefixes", js.Array(value :_*))
+    inline def setIncludePrefixesVarargs(value: String*): Self = StObject.set(x, "includePrefixes", js.Array(value :_*))
     
-    @scala.inline
-    def setLastModifiedBefore(value: String): Self = StObject.set(x, "lastModifiedBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBefore(value: String): Self = StObject.set(x, "lastModifiedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedBeforeUndefined: Self = StObject.set(x, "lastModifiedBefore", js.undefined)
+    inline def setLastModifiedBeforeUndefined: Self = StObject.set(x, "lastModifiedBefore", js.undefined)
     
-    @scala.inline
-    def setLastModifiedSince(value: String): Self = StObject.set(x, "lastModifiedSince", value.asInstanceOf[js.Any])
+    inline def setLastModifiedSince(value: String): Self = StObject.set(x, "lastModifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedSinceUndefined: Self = StObject.set(x, "lastModifiedSince", js.undefined)
+    inline def setLastModifiedSinceUndefined: Self = StObject.set(x, "lastModifiedSince", js.undefined)
     
-    @scala.inline
-    def setMaxTimeElapsedSinceLastModification(value: String): Self = StObject.set(x, "maxTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
+    inline def setMaxTimeElapsedSinceLastModification(value: String): Self = StObject.set(x, "maxTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeElapsedSinceLastModificationUndefined: Self = StObject.set(x, "maxTimeElapsedSinceLastModification", js.undefined)
+    inline def setMaxTimeElapsedSinceLastModificationUndefined: Self = StObject.set(x, "maxTimeElapsedSinceLastModification", js.undefined)
     
-    @scala.inline
-    def setMinTimeElapsedSinceLastModification(value: String): Self = StObject.set(x, "minTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
+    inline def setMinTimeElapsedSinceLastModification(value: String): Self = StObject.set(x, "minTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTimeElapsedSinceLastModificationUndefined: Self = StObject.set(x, "minTimeElapsedSinceLastModification", js.undefined)
+    inline def setMinTimeElapsedSinceLastModificationUndefined: Self = StObject.set(x, "minTimeElapsedSinceLastModification", js.undefined)
   }
 }

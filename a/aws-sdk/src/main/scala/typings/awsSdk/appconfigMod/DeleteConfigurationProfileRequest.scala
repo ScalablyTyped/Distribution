@@ -18,19 +18,15 @@ trait DeleteConfigurationProfileRequest extends StObject {
 }
 object DeleteConfigurationProfileRequest {
   
-  @scala.inline
-  def apply(ApplicationId: Id, ConfigurationProfileId: Id): DeleteConfigurationProfileRequest = {
+  inline def apply(ApplicationId: Id, ConfigurationProfileId: Id): DeleteConfigurationProfileRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationProfileRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationProfileRequestMutableBuilder[Self <: DeleteConfigurationProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationProfileRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
+    inline def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
   }
 }

@@ -22,23 +22,18 @@ object groupFooterTypesMod {
   }
   object IGroupFooterProps {
     
-    @scala.inline
-    def apply(): IGroupFooterProps = {
+    inline def apply(): IGroupFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupFooterProps]
     }
     
-    @scala.inline
-    implicit class IGroupFooterPropsMutableBuilder[Self <: IGroupFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupFooterProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IGroupFooterStyleProps, IGroupFooterStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IGroupFooterStyleProps, IGroupFooterStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IGroupFooterStyleProps => DeepPartial[IGroupFooterStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IGroupFooterStyleProps => DeepPartial[IGroupFooterStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -56,35 +51,26 @@ object groupFooterTypesMod {
   }
   object IGroupFooterStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IGroupFooterStyleProps = {
+    inline def apply(theme: ITheme): IGroupFooterStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupFooterStyleProps]
     }
     
-    @scala.inline
-    implicit class IGroupFooterStylePropsMutableBuilder[Self <: IGroupFooterStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupFooterStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
+      inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,23 +80,18 @@ object groupFooterTypesMod {
   }
   object IGroupFooterStyles {
     
-    @scala.inline
-    def apply(): IGroupFooterStyles = {
+    inline def apply(): IGroupFooterStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupFooterStyles]
     }
     
-    @scala.inline
-    implicit class IGroupFooterStylesMutableBuilder[Self <: IGroupFooterStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupFooterStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

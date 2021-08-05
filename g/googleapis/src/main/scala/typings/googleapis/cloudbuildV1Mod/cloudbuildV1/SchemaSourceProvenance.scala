@@ -36,31 +36,23 @@ trait SchemaSourceProvenance extends StObject {
 }
 object SchemaSourceProvenance {
   
-  @scala.inline
-  def apply(): SchemaSourceProvenance = {
+  inline def apply(): SchemaSourceProvenance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceProvenance]
   }
   
-  @scala.inline
-  implicit class SchemaSourceProvenanceMutableBuilder[Self <: SchemaSourceProvenance] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceProvenance](x: Self) {
     
-    @scala.inline
-    def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
+    inline def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
+    inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
     
-    @scala.inline
-    def setResolvedRepoSource(value: SchemaRepoSource): Self = StObject.set(x, "resolvedRepoSource", value.asInstanceOf[js.Any])
+    inline def setResolvedRepoSource(value: SchemaRepoSource): Self = StObject.set(x, "resolvedRepoSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedRepoSourceUndefined: Self = StObject.set(x, "resolvedRepoSource", js.undefined)
+    inline def setResolvedRepoSourceUndefined: Self = StObject.set(x, "resolvedRepoSource", js.undefined)
     
-    @scala.inline
-    def setResolvedStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "resolvedStorageSource", value.asInstanceOf[js.Any])
+    inline def setResolvedStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "resolvedStorageSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedStorageSourceUndefined: Self = StObject.set(x, "resolvedStorageSource", js.undefined)
+    inline def setResolvedStorageSourceUndefined: Self = StObject.set(x, "resolvedStorageSource", js.undefined)
   }
 }

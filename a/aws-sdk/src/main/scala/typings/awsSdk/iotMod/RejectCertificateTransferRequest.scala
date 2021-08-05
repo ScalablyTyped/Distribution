@@ -18,22 +18,17 @@ trait RejectCertificateTransferRequest extends StObject {
 }
 object RejectCertificateTransferRequest {
   
-  @scala.inline
-  def apply(certificateId: CertificateId): RejectCertificateTransferRequest = {
+  inline def apply(certificateId: CertificateId): RejectCertificateTransferRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectCertificateTransferRequest]
   }
   
-  @scala.inline
-  implicit class RejectCertificateTransferRequestMutableBuilder[Self <: RejectCertificateTransferRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectCertificateTransferRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectReason(value: Message): Self = StObject.set(x, "rejectReason", value.asInstanceOf[js.Any])
+    inline def setRejectReason(value: Message): Self = StObject.set(x, "rejectReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
+    inline def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
   }
 }

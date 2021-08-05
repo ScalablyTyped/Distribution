@@ -13,19 +13,15 @@ trait TransferCodingHeaderValue extends StObject {
 }
 object TransferCodingHeaderValue {
   
-  @scala.inline
-  def apply(returnValue: Boolean, transferCodingHeaderValue: HttpTransferCodingHeaderValue): TransferCodingHeaderValue = {
+  inline def apply(returnValue: Boolean, transferCodingHeaderValue: HttpTransferCodingHeaderValue): TransferCodingHeaderValue = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], transferCodingHeaderValue = transferCodingHeaderValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferCodingHeaderValue]
   }
   
-  @scala.inline
-  implicit class TransferCodingHeaderValueMutableBuilder[Self <: TransferCodingHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: TransferCodingHeaderValue](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferCodingHeaderValue(value: HttpTransferCodingHeaderValue): Self = StObject.set(x, "transferCodingHeaderValue", value.asInstanceOf[js.Any])
+    inline def setTransferCodingHeaderValue(value: HttpTransferCodingHeaderValue): Self = StObject.set(x, "transferCodingHeaderValue", value.asInstanceOf[js.Any])
   }
 }

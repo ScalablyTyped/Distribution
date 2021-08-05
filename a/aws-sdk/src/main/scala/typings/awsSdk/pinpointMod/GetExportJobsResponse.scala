@@ -10,16 +10,13 @@ trait GetExportJobsResponse extends StObject {
 }
 object GetExportJobsResponse {
   
-  @scala.inline
-  def apply(ExportJobsResponse: ExportJobsResponse): GetExportJobsResponse = {
+  inline def apply(ExportJobsResponse: ExportJobsResponse): GetExportJobsResponse = {
     val __obj = js.Dynamic.literal(ExportJobsResponse = ExportJobsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExportJobsResponse]
   }
   
-  @scala.inline
-  implicit class GetExportJobsResponseMutableBuilder[Self <: GetExportJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetExportJobsResponse](x: Self) {
     
-    @scala.inline
-    def setExportJobsResponse(value: ExportJobsResponse): Self = StObject.set(x, "ExportJobsResponse", value.asInstanceOf[js.Any])
+    inline def setExportJobsResponse(value: ExportJobsResponse): Self = StObject.set(x, "ExportJobsResponse", value.asInstanceOf[js.Any])
   }
 }

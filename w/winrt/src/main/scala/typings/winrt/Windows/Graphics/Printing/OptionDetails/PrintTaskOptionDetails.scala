@@ -16,8 +16,7 @@ trait PrintTaskOptionDetails
      with IPrintTaskOptionsCoreUIConfiguration
 object PrintTaskOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createItemListOption: (String, String) => PrintCustomItemListOptionDetails,
     createTextOption: (String, String) => PrintCustomTextOptionDetails,
     displayedOptions: IVector[String],

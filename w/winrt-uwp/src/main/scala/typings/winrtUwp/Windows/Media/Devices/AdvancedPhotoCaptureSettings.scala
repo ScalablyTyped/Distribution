@@ -12,16 +12,13 @@ trait AdvancedPhotoCaptureSettings extends StObject {
 }
 object AdvancedPhotoCaptureSettings {
   
-  @scala.inline
-  def apply(mode: AdvancedPhotoMode): AdvancedPhotoCaptureSettings = {
+  inline def apply(mode: AdvancedPhotoMode): AdvancedPhotoCaptureSettings = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedPhotoCaptureSettings]
   }
   
-  @scala.inline
-  implicit class AdvancedPhotoCaptureSettingsMutableBuilder[Self <: AdvancedPhotoCaptureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedPhotoCaptureSettings](x: Self) {
     
-    @scala.inline
-    def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

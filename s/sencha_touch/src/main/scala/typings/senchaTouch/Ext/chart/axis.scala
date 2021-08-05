@@ -356,460 +356,310 @@ object axis {
   }
   object IAxis {
     
-    @scala.inline
-    def apply(): IAxis = {
+    inline def apply(): IAxis = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAxis]
     }
     
-    @scala.inline
-    implicit class IAxisMutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
+    extension [Self <: IAxis](x: Self) {
       
-      @scala.inline
-      def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setChart(value: IAbstractChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: IAbstractChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+      inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
       
-      @scala.inline
-      def setFields(value: Array): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Array): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+      inline def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
+      inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
       
-      @scala.inline
-      def setGetChart(value: () => IAbstractChart): Self = StObject.set(x, "getChart", js.Any.fromFunction0(value))
+      inline def setGetChart(value: () => IAbstractChart): Self = StObject.set(x, "getChart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChartUndefined: Self = StObject.set(x, "getChart", js.undefined)
+      inline def setGetChartUndefined: Self = StObject.set(x, "getChart", js.undefined)
       
-      @scala.inline
-      def setGetCoordFor(
+      inline def setGetCoordFor(
         value: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double
       ): Self = StObject.set(x, "getCoordFor", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetCoordForUndefined: Self = StObject.set(x, "getCoordFor", js.undefined)
+      inline def setGetCoordForUndefined: Self = StObject.set(x, "getCoordFor", js.undefined)
       
-      @scala.inline
-      def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+      inline def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
+      inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
       
-      @scala.inline
-      def setGetGrid(value: () => js.Any): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
+      inline def setGetGrid(value: () => js.Any): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGridUndefined: Self = StObject.set(x, "getGrid", js.undefined)
+      inline def setGetGridUndefined: Self = StObject.set(x, "getGrid", js.undefined)
       
-      @scala.inline
-      def setGetHidden(value: () => Boolean): Self = StObject.set(x, "getHidden", js.Any.fromFunction0(value))
+      inline def setGetHidden(value: () => Boolean): Self = StObject.set(x, "getHidden", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHiddenUndefined: Self = StObject.set(x, "getHidden", js.undefined)
+      inline def setGetHiddenUndefined: Self = StObject.set(x, "getHidden", js.undefined)
       
-      @scala.inline
-      def setGetIncrement(value: () => Double): Self = StObject.set(x, "getIncrement", js.Any.fromFunction0(value))
+      inline def setGetIncrement(value: () => Double): Self = StObject.set(x, "getIncrement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIncrementUndefined: Self = StObject.set(x, "getIncrement", js.undefined)
+      inline def setGetIncrementUndefined: Self = StObject.set(x, "getIncrement", js.undefined)
       
-      @scala.inline
-      def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelInSpan(value: () => Boolean): Self = StObject.set(x, "getLabelInSpan", js.Any.fromFunction0(value))
+      inline def setGetLabelInSpan(value: () => Boolean): Self = StObject.set(x, "getLabelInSpan", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelInSpanUndefined: Self = StObject.set(x, "getLabelInSpan", js.undefined)
+      inline def setGetLabelInSpanUndefined: Self = StObject.set(x, "getLabelInSpan", js.undefined)
       
-      @scala.inline
-      def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
+      inline def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
       
-      @scala.inline
-      def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+      inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
-      @scala.inline
-      def setGetMajorTickSteps(value: () => Double): Self = StObject.set(x, "getMajorTickSteps", js.Any.fromFunction0(value))
+      inline def setGetMajorTickSteps(value: () => Double): Self = StObject.set(x, "getMajorTickSteps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMajorTickStepsUndefined: Self = StObject.set(x, "getMajorTickSteps", js.undefined)
+      inline def setGetMajorTickStepsUndefined: Self = StObject.set(x, "getMajorTickSteps", js.undefined)
       
-      @scala.inline
-      def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+      inline def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxZoomUndefined: Self = StObject.set(x, "getMaxZoom", js.undefined)
+      inline def setGetMaxZoomUndefined: Self = StObject.set(x, "getMaxZoom", js.undefined)
       
-      @scala.inline
-      def setGetMaximum(value: () => Double): Self = StObject.set(x, "getMaximum", js.Any.fromFunction0(value))
+      inline def setGetMaximum(value: () => Double): Self = StObject.set(x, "getMaximum", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaximumUndefined: Self = StObject.set(x, "getMaximum", js.undefined)
+      inline def setGetMaximumUndefined: Self = StObject.set(x, "getMaximum", js.undefined)
       
-      @scala.inline
-      def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinZoomUndefined: Self = StObject.set(x, "getMinZoom", js.undefined)
+      inline def setGetMinZoomUndefined: Self = StObject.set(x, "getMinZoom", js.undefined)
       
-      @scala.inline
-      def setGetMinimum(value: () => Double): Self = StObject.set(x, "getMinimum", js.Any.fromFunction0(value))
+      inline def setGetMinimum(value: () => Double): Self = StObject.set(x, "getMinimum", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinimumUndefined: Self = StObject.set(x, "getMinimum", js.undefined)
+      inline def setGetMinimumUndefined: Self = StObject.set(x, "getMinimum", js.undefined)
       
-      @scala.inline
-      def setGetMinorTickSteps(value: () => Double): Self = StObject.set(x, "getMinorTickSteps", js.Any.fromFunction0(value))
+      inline def setGetMinorTickSteps(value: () => Double): Self = StObject.set(x, "getMinorTickSteps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinorTickStepsUndefined: Self = StObject.set(x, "getMinorTickSteps", js.undefined)
+      inline def setGetMinorTickStepsUndefined: Self = StObject.set(x, "getMinorTickSteps", js.undefined)
       
-      @scala.inline
-      def setGetNeedHighPrecision(value: () => Boolean): Self = StObject.set(x, "getNeedHighPrecision", js.Any.fromFunction0(value))
+      inline def setGetNeedHighPrecision(value: () => Boolean): Self = StObject.set(x, "getNeedHighPrecision", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNeedHighPrecisionUndefined: Self = StObject.set(x, "getNeedHighPrecision", js.undefined)
+      inline def setGetNeedHighPrecisionUndefined: Self = StObject.set(x, "getNeedHighPrecision", js.undefined)
       
-      @scala.inline
-      def setGetPosition(value: () => String): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+      inline def setGetPosition(value: () => String): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPositionUndefined: Self = StObject.set(x, "getPosition", js.undefined)
+      inline def setGetPositionUndefined: Self = StObject.set(x, "getPosition", js.undefined)
       
-      @scala.inline
-      def setGetRange(value: () => Array): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+      inline def setGetRange(value: () => Array): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRangeUndefined: Self = StObject.set(x, "getRange", js.undefined)
+      inline def setGetRangeUndefined: Self = StObject.set(x, "getRange", js.undefined)
       
-      @scala.inline
-      def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
+      inline def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
+      inline def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
       
-      @scala.inline
-      def setGetSegmenter(value: () => js.Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
+      inline def setGetSegmenter(value: () => js.Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
+      inline def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
       
-      @scala.inline
-      def setGetStyle(value: () => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+      inline def setGetStyle(value: () => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
+      inline def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
       
-      @scala.inline
-      def setGetTitle(value: () => js.Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleMargin(value: () => Double): Self = StObject.set(x, "getTitleMargin", js.Any.fromFunction0(value))
+      inline def setGetTitleMargin(value: () => Double): Self = StObject.set(x, "getTitleMargin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleMarginUndefined: Self = StObject.set(x, "getTitleMargin", js.undefined)
+      inline def setGetTitleMarginUndefined: Self = StObject.set(x, "getTitleMargin", js.undefined)
       
-      @scala.inline
-      def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
+      inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
       
-      @scala.inline
-      def setGetVisibleRange(value: () => Array): Self = StObject.set(x, "getVisibleRange", js.Any.fromFunction0(value))
+      inline def setGetVisibleRange(value: () => Array): Self = StObject.set(x, "getVisibleRange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVisibleRangeUndefined: Self = StObject.set(x, "getVisibleRange", js.undefined)
+      inline def setGetVisibleRangeUndefined: Self = StObject.set(x, "getVisibleRange", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+      inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+      inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
       
-      @scala.inline
-      def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelInSpan(value: Boolean): Self = StObject.set(x, "labelInSpan", value.asInstanceOf[js.Any])
+      inline def setLabelInSpan(value: Boolean): Self = StObject.set(x, "labelInSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelInSpanUndefined: Self = StObject.set(x, "labelInSpan", js.undefined)
+      inline def setLabelInSpanUndefined: Self = StObject.set(x, "labelInSpan", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMajorTickSteps(value: Double): Self = StObject.set(x, "majorTickSteps", value.asInstanceOf[js.Any])
+      inline def setMajorTickSteps(value: Double): Self = StObject.set(x, "majorTickSteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorTickStepsUndefined: Self = StObject.set(x, "majorTickSteps", js.undefined)
+      inline def setMajorTickStepsUndefined: Self = StObject.set(x, "majorTickSteps", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+      inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+      inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+      inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+      inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       
-      @scala.inline
-      def setMinorTickSteps(value: Double): Self = StObject.set(x, "minorTickSteps", value.asInstanceOf[js.Any])
+      inline def setMinorTickSteps(value: Double): Self = StObject.set(x, "minorTickSteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorTickStepsUndefined: Self = StObject.set(x, "minorTickSteps", js.undefined)
+      inline def setMinorTickStepsUndefined: Self = StObject.set(x, "minorTickSteps", js.undefined)
       
-      @scala.inline
-      def setNeedHighPrecision(value: Boolean): Self = StObject.set(x, "needHighPrecision", value.asInstanceOf[js.Any])
+      inline def setNeedHighPrecision(value: Boolean): Self = StObject.set(x, "needHighPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedHighPrecisionUndefined: Self = StObject.set(x, "needHighPrecision", js.undefined)
+      inline def setNeedHighPrecisionUndefined: Self = StObject.set(x, "needHighPrecision", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setProcessData(value: () => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction0(value))
+      inline def setProcessData(value: () => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
+      inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
       
-      @scala.inline
-      def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      @scala.inline
-      def setRenderFrame(value: () => Unit): Self = StObject.set(x, "renderFrame", js.Any.fromFunction0(value))
+      inline def setRenderFrame(value: () => Unit): Self = StObject.set(x, "renderFrame", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
+      inline def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setSegmenter(value: js.Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
+      inline def setSegmenter(value: js.Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmenterUndefined: Self = StObject.set(x, "segmenter", js.undefined)
+      inline def setSegmenterUndefined: Self = StObject.set(x, "segmenter", js.undefined)
       
-      @scala.inline
-      def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+      inline def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
+      inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
       
-      @scala.inline
-      def setSetChart(value: /* chart */ js.UndefOr[IAbstractChart] => Unit): Self = StObject.set(x, "setChart", js.Any.fromFunction1(value))
+      inline def setSetChart(value: /* chart */ js.UndefOr[IAbstractChart] => Unit): Self = StObject.set(x, "setChart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetChartUndefined: Self = StObject.set(x, "setChart", js.undefined)
+      inline def setSetChartUndefined: Self = StObject.set(x, "setChart", js.undefined)
       
-      @scala.inline
-      def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+      inline def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
+      inline def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
       
-      @scala.inline
-      def setSetGrid(value: /* grid */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGrid", js.Any.fromFunction1(value))
+      inline def setSetGrid(value: /* grid */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGrid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetGridUndefined: Self = StObject.set(x, "setGrid", js.undefined)
+      inline def setSetGridUndefined: Self = StObject.set(x, "setGrid", js.undefined)
       
-      @scala.inline
-      def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
+      inline def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
+      inline def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
       
-      @scala.inline
-      def setSetIncrement(value: /* increment */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setIncrement", js.Any.fromFunction1(value))
+      inline def setSetIncrement(value: /* increment */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setIncrement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIncrementUndefined: Self = StObject.set(x, "setIncrement", js.undefined)
+      inline def setSetIncrementUndefined: Self = StObject.set(x, "setIncrement", js.undefined)
       
-      @scala.inline
-      def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+      inline def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLabelInSpan(value: /* labelInSpan */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLabelInSpan", js.Any.fromFunction1(value))
+      inline def setSetLabelInSpan(value: /* labelInSpan */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLabelInSpan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLabelInSpanUndefined: Self = StObject.set(x, "setLabelInSpan", js.undefined)
+      inline def setSetLabelInSpanUndefined: Self = StObject.set(x, "setLabelInSpan", js.undefined)
       
-      @scala.inline
-      def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
+      inline def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
       
-      @scala.inline
-      def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+      inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
+      inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
       
-      @scala.inline
-      def setSetMajorTickSteps(value: /* majorTickSteps */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMajorTickSteps", js.Any.fromFunction1(value))
+      inline def setSetMajorTickSteps(value: /* majorTickSteps */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMajorTickSteps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMajorTickStepsUndefined: Self = StObject.set(x, "setMajorTickSteps", js.undefined)
+      inline def setSetMajorTickStepsUndefined: Self = StObject.set(x, "setMajorTickSteps", js.undefined)
       
-      @scala.inline
-      def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
+      inline def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMaxZoomUndefined: Self = StObject.set(x, "setMaxZoom", js.undefined)
+      inline def setSetMaxZoomUndefined: Self = StObject.set(x, "setMaxZoom", js.undefined)
       
-      @scala.inline
-      def setSetMaximum(value: /* maximum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximum", js.Any.fromFunction1(value))
+      inline def setSetMaximum(value: /* maximum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMaximumUndefined: Self = StObject.set(x, "setMaximum", js.undefined)
+      inline def setSetMaximumUndefined: Self = StObject.set(x, "setMaximum", js.undefined)
       
-      @scala.inline
-      def setSetMinZoom(value: /* minZoom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinZoom", js.Any.fromFunction1(value))
+      inline def setSetMinZoom(value: /* minZoom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinZoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinZoomUndefined: Self = StObject.set(x, "setMinZoom", js.undefined)
+      inline def setSetMinZoomUndefined: Self = StObject.set(x, "setMinZoom", js.undefined)
       
-      @scala.inline
-      def setSetMinimum(value: /* minimum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimum", js.Any.fromFunction1(value))
+      inline def setSetMinimum(value: /* minimum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinimumUndefined: Self = StObject.set(x, "setMinimum", js.undefined)
+      inline def setSetMinimumUndefined: Self = StObject.set(x, "setMinimum", js.undefined)
       
-      @scala.inline
-      def setSetMinorTickSteps(value: /* minorTickSteps */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinorTickSteps", js.Any.fromFunction1(value))
+      inline def setSetMinorTickSteps(value: /* minorTickSteps */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinorTickSteps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinorTickStepsUndefined: Self = StObject.set(x, "setMinorTickSteps", js.undefined)
+      inline def setSetMinorTickStepsUndefined: Self = StObject.set(x, "setMinorTickSteps", js.undefined)
       
-      @scala.inline
-      def setSetNeedHighPrecision(value: /* needHighPrecision */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setNeedHighPrecision", js.Any.fromFunction1(value))
+      inline def setSetNeedHighPrecision(value: /* needHighPrecision */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setNeedHighPrecision", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNeedHighPrecisionUndefined: Self = StObject.set(x, "setNeedHighPrecision", js.undefined)
+      inline def setSetNeedHighPrecisionUndefined: Self = StObject.set(x, "setNeedHighPrecision", js.undefined)
       
-      @scala.inline
-      def setSetPosition(value: /* position */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+      inline def setSetPosition(value: /* position */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
+      inline def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
       
-      @scala.inline
-      def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
+      inline def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)
+      inline def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)
       
-      @scala.inline
-      def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
+      inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
+      inline def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
       
-      @scala.inline
-      def setSetStyle(value: /* style */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+      inline def setSetStyle(value: /* style */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
+      inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
       
-      @scala.inline
-      def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitleMargin(value: /* titleMargin */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTitleMargin", js.Any.fromFunction1(value))
+      inline def setSetTitleMargin(value: /* titleMargin */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTitleMargin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitleMarginUndefined: Self = StObject.set(x, "setTitleMargin", js.undefined)
+      inline def setSetTitleMarginUndefined: Self = StObject.set(x, "setTitleMargin", js.undefined)
       
-      @scala.inline
-      def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+      inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
       
-      @scala.inline
-      def setSetVisibleRange(value: /* visibleRange */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setVisibleRange", js.Any.fromFunction1(value))
+      inline def setSetVisibleRange(value: /* visibleRange */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setVisibleRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetVisibleRangeUndefined: Self = StObject.set(x, "setVisibleRange", js.undefined)
+      inline def setSetVisibleRangeUndefined: Self = StObject.set(x, "setVisibleRange", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleMargin(value: Double): Self = StObject.set(x, "titleMargin", value.asInstanceOf[js.Any])
+      inline def setTitleMargin(value: Double): Self = StObject.set(x, "titleMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleMarginUndefined: Self = StObject.set(x, "titleMargin", js.undefined)
+      inline def setTitleMarginUndefined: Self = StObject.set(x, "titleMargin", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setVisibleRange(value: Array): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
+      inline def setVisibleRange(value: Array): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleRangeUndefined: Self = StObject.set(x, "visibleRange", js.undefined)
+      inline def setVisibleRangeUndefined: Self = StObject.set(x, "visibleRange", js.undefined)
     }
   }
   
@@ -843,38 +693,28 @@ object axis {
   }
   object ICategory {
     
-    @scala.inline
-    def apply(): ICategory = {
+    inline def apply(): ICategory = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICategory]
     }
     
-    @scala.inline
-    implicit class ICategoryMutableBuilder[Self <: ICategory] (val x: Self) extends AnyVal {
+    extension [Self <: ICategory](x: Self) {
       
-      @scala.inline
-      def setGetLayout(value: () => String): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => String): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+      inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
-      @scala.inline
-      def setGetSegmenter(value: () => String): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
+      inline def setGetSegmenter(value: () => String): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
+      inline def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
       
-      @scala.inline
-      def setSetLayout(value: /* layout */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+      inline def setSetLayout(value: /* layout */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
+      inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
       
-      @scala.inline
-      def setSetSegmenter(value: /* segmenter */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
+      inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
+      inline def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
     }
   }
   
@@ -918,50 +758,36 @@ object axis {
   }
   object INumeric {
     
-    @scala.inline
-    def apply(): INumeric = {
+    inline def apply(): INumeric = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[INumeric]
     }
     
-    @scala.inline
-    implicit class INumericMutableBuilder[Self <: INumeric] (val x: Self) extends AnyVal {
+    extension [Self <: INumeric](x: Self) {
       
-      @scala.inline
-      def setGetAggregator(value: () => String): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
+      inline def setGetAggregator(value: () => String): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAggregatorUndefined: Self = StObject.set(x, "getAggregator", js.undefined)
+      inline def setGetAggregatorUndefined: Self = StObject.set(x, "getAggregator", js.undefined)
       
-      @scala.inline
-      def setGetLayout(value: () => String): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => String): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+      inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
-      @scala.inline
-      def setGetSegmenter(value: () => String): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
+      inline def setGetSegmenter(value: () => String): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
+      inline def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
       
-      @scala.inline
-      def setSetAggregator(value: /* aggregator */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAggregator", js.Any.fromFunction1(value))
+      inline def setSetAggregator(value: /* aggregator */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAggregator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAggregatorUndefined: Self = StObject.set(x, "setAggregator", js.undefined)
+      inline def setSetAggregatorUndefined: Self = StObject.set(x, "setAggregator", js.undefined)
       
-      @scala.inline
-      def setSetLayout(value: /* layout */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+      inline def setSetLayout(value: /* layout */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
+      inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
       
-      @scala.inline
-      def setSetSegmenter(value: /* segmenter */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
+      inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
+      inline def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
     }
   }
   
@@ -1043,110 +869,76 @@ object axis {
   }
   object ITime {
     
-    @scala.inline
-    def apply(): ITime = {
+    inline def apply(): ITime = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITime]
     }
     
-    @scala.inline
-    implicit class ITimeMutableBuilder[Self <: ITime] (val x: Self) extends AnyVal {
+    extension [Self <: ITime](x: Self) {
       
-      @scala.inline
-      def setCalculateByLabelSize(value: Boolean): Self = StObject.set(x, "calculateByLabelSize", value.asInstanceOf[js.Any])
+      inline def setCalculateByLabelSize(value: Boolean): Self = StObject.set(x, "calculateByLabelSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalculateByLabelSizeUndefined: Self = StObject.set(x, "calculateByLabelSize", js.undefined)
+      inline def setCalculateByLabelSizeUndefined: Self = StObject.set(x, "calculateByLabelSize", js.undefined)
       
-      @scala.inline
-      def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+      inline def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
+      inline def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
       
-      @scala.inline
-      def setGetCalculateByLabelSize(value: () => Boolean): Self = StObject.set(x, "getCalculateByLabelSize", js.Any.fromFunction0(value))
+      inline def setGetCalculateByLabelSize(value: () => Boolean): Self = StObject.set(x, "getCalculateByLabelSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCalculateByLabelSizeUndefined: Self = StObject.set(x, "getCalculateByLabelSize", js.undefined)
+      inline def setGetCalculateByLabelSizeUndefined: Self = StObject.set(x, "getCalculateByLabelSize", js.undefined)
       
-      @scala.inline
-      def setGetCoordFor(value: /* value */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "getCoordFor", js.Any.fromFunction1(value))
+      inline def setGetCoordFor(value: /* value */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "getCoordFor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCoordForUndefined: Self = StObject.set(x, "getCoordFor", js.undefined)
+      inline def setGetCoordForUndefined: Self = StObject.set(x, "getCoordFor", js.undefined)
       
-      @scala.inline
-      def setGetDateFormat(value: () => js.Any): Self = StObject.set(x, "getDateFormat", js.Any.fromFunction0(value))
+      inline def setGetDateFormat(value: () => js.Any): Self = StObject.set(x, "getDateFormat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
+      inline def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
       
-      @scala.inline
-      def setGetFromDate(value: () => js.Any): Self = StObject.set(x, "getFromDate", js.Any.fromFunction0(value))
+      inline def setGetFromDate(value: () => js.Any): Self = StObject.set(x, "getFromDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFromDateUndefined: Self = StObject.set(x, "getFromDate", js.undefined)
+      inline def setGetFromDateUndefined: Self = StObject.set(x, "getFromDate", js.undefined)
       
-      @scala.inline
-      def setGetStep(value: () => Array): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
+      inline def setGetStep(value: () => Array): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
+      inline def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
       
-      @scala.inline
-      def setGetToDate(value: () => js.Any): Self = StObject.set(x, "getToDate", js.Any.fromFunction0(value))
+      inline def setGetToDate(value: () => js.Any): Self = StObject.set(x, "getToDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetToDateUndefined: Self = StObject.set(x, "getToDate", js.undefined)
+      inline def setGetToDateUndefined: Self = StObject.set(x, "getToDate", js.undefined)
       
-      @scala.inline
-      def setSetCalculateByLabelSize(value: /* calculateByLabelSize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setCalculateByLabelSize", js.Any.fromFunction1(value))
+      inline def setSetCalculateByLabelSize(value: /* calculateByLabelSize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setCalculateByLabelSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCalculateByLabelSizeUndefined: Self = StObject.set(x, "setCalculateByLabelSize", js.undefined)
+      inline def setSetCalculateByLabelSizeUndefined: Self = StObject.set(x, "setCalculateByLabelSize", js.undefined)
       
-      @scala.inline
-      def setSetDateFormat(value: /* dateFormat */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDateFormat", js.Any.fromFunction1(value))
+      inline def setSetDateFormat(value: /* dateFormat */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDateFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDateFormatUndefined: Self = StObject.set(x, "setDateFormat", js.undefined)
+      inline def setSetDateFormatUndefined: Self = StObject.set(x, "setDateFormat", js.undefined)
       
-      @scala.inline
-      def setSetFromDate(value: /* fromDate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFromDate", js.Any.fromFunction1(value))
+      inline def setSetFromDate(value: /* fromDate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFromDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFromDateUndefined: Self = StObject.set(x, "setFromDate", js.undefined)
+      inline def setSetFromDateUndefined: Self = StObject.set(x, "setFromDate", js.undefined)
       
-      @scala.inline
-      def setSetStep(value: /* step */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
+      inline def setSetStep(value: /* step */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
+      inline def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
       
-      @scala.inline
-      def setSetToDate(value: /* toDate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToDate", js.Any.fromFunction1(value))
+      inline def setSetToDate(value: /* toDate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetToDateUndefined: Self = StObject.set(x, "setToDate", js.undefined)
+      inline def setSetToDateUndefined: Self = StObject.set(x, "setToDate", js.undefined)
       
-      @scala.inline
-      def setStep(value: Array): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Array): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
+      inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
     }
   }
   
@@ -1197,46 +989,34 @@ object axis {
     }
     object IContinuous {
       
-      @scala.inline
-      def apply(): IContinuous = {
+      inline def apply(): IContinuous = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IContinuous]
       }
       
-      @scala.inline
-      implicit class IContinuousMutableBuilder[Self <: IContinuous] (val x: Self) extends AnyVal {
+      extension [Self <: IContinuous](x: Self) {
         
-        @scala.inline
-        def setGetAdjustMaximumByMajorUnit(value: () => Boolean): Self = StObject.set(x, "getAdjustMaximumByMajorUnit", js.Any.fromFunction0(value))
+        inline def setGetAdjustMaximumByMajorUnit(value: () => Boolean): Self = StObject.set(x, "getAdjustMaximumByMajorUnit", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetAdjustMaximumByMajorUnitUndefined: Self = StObject.set(x, "getAdjustMaximumByMajorUnit", js.undefined)
+        inline def setGetAdjustMaximumByMajorUnitUndefined: Self = StObject.set(x, "getAdjustMaximumByMajorUnit", js.undefined)
         
-        @scala.inline
-        def setGetAdjustMinimumByMajorUnit(value: () => Boolean): Self = StObject.set(x, "getAdjustMinimumByMajorUnit", js.Any.fromFunction0(value))
+        inline def setGetAdjustMinimumByMajorUnit(value: () => Boolean): Self = StObject.set(x, "getAdjustMinimumByMajorUnit", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetAdjustMinimumByMajorUnitUndefined: Self = StObject.set(x, "getAdjustMinimumByMajorUnit", js.undefined)
+        inline def setGetAdjustMinimumByMajorUnitUndefined: Self = StObject.set(x, "getAdjustMinimumByMajorUnit", js.undefined)
         
-        @scala.inline
-        def setSetAdjustMaximumByMajorUnit(value: /* adjustMaximumByMajorUnit */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAdjustMaximumByMajorUnit", js.Any.fromFunction1(value))
+        inline def setSetAdjustMaximumByMajorUnit(value: /* adjustMaximumByMajorUnit */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAdjustMaximumByMajorUnit", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAdjustMaximumByMajorUnitUndefined: Self = StObject.set(x, "setAdjustMaximumByMajorUnit", js.undefined)
+        inline def setSetAdjustMaximumByMajorUnitUndefined: Self = StObject.set(x, "setAdjustMaximumByMajorUnit", js.undefined)
         
-        @scala.inline
-        def setSetAdjustMinimumByMajorUnit(value: /* adjustMinimumByMajorUnit */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAdjustMinimumByMajorUnit", js.Any.fromFunction1(value))
+        inline def setSetAdjustMinimumByMajorUnit(value: /* adjustMinimumByMajorUnit */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAdjustMinimumByMajorUnit", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAdjustMinimumByMajorUnitUndefined: Self = StObject.set(x, "setAdjustMinimumByMajorUnit", js.undefined)
+        inline def setSetAdjustMinimumByMajorUnitUndefined: Self = StObject.set(x, "setAdjustMinimumByMajorUnit", js.undefined)
         
-        @scala.inline
-        def setSnapEnds(
+        inline def setSnapEnds(
           value: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "snapEnds", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
+        inline def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
       }
     }
     
@@ -1284,36 +1064,28 @@ object axis {
     }
     object IDiscrete {
       
-      @scala.inline
-      def apply(): IDiscrete = {
+      inline def apply(): IDiscrete = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDiscrete]
       }
       
-      @scala.inline
-      implicit class IDiscreteMutableBuilder[Self <: IDiscrete] (val x: Self) extends AnyVal {
+      extension [Self <: IDiscrete](x: Self) {
         
-        @scala.inline
-        def setProcessData(value: () => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction0(value))
+        inline def setProcessData(value: () => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
+        inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
         
-        @scala.inline
-        def setSnapEnds(
+        inline def setSnapEnds(
           value: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "snapEnds", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
+        inline def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
         
-        @scala.inline
-        def setTrimByRange(
+        inline def setTrimByRange(
           value: (/* context */ js.UndefOr[js.Any], /* out */ js.UndefOr[js.Any], /* trimMin */ js.UndefOr[js.Any], /* trimMax */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "trimByRange", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setTrimByRangeUndefined: Self = StObject.set(x, "trimByRange", js.undefined)
+        inline def setTrimByRangeUndefined: Self = StObject.set(x, "trimByRange", js.undefined)
       }
     }
     
@@ -1389,72 +1161,52 @@ object axis {
     }
     object ILayout {
       
-      @scala.inline
-      def apply(): ILayout = {
+      inline def apply(): ILayout = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ILayout]
       }
       
-      @scala.inline
-      implicit class ILayoutMutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
+      extension [Self <: ILayout](x: Self) {
         
-        @scala.inline
-        def setAxis(value: IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+        inline def setAxis(value: IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+        inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
-        @scala.inline
-        def setCalculateLayout(value: /* context */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "calculateLayout", js.Any.fromFunction1(value))
+        inline def setCalculateLayout(value: /* context */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "calculateLayout", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCalculateLayoutUndefined: Self = StObject.set(x, "calculateLayout", js.undefined)
+        inline def setCalculateLayoutUndefined: Self = StObject.set(x, "calculateLayout", js.undefined)
         
-        @scala.inline
-        def setCalculateMajorTicks(value: /* context */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculateMajorTicks", js.Any.fromFunction1(value))
+        inline def setCalculateMajorTicks(value: /* context */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculateMajorTicks", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCalculateMajorTicksUndefined: Self = StObject.set(x, "calculateMajorTicks", js.undefined)
+        inline def setCalculateMajorTicksUndefined: Self = StObject.set(x, "calculateMajorTicks", js.undefined)
         
-        @scala.inline
-        def setCalculateMinorTicks(value: /* context */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculateMinorTicks", js.Any.fromFunction1(value))
+        inline def setCalculateMinorTicks(value: /* context */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculateMinorTicks", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCalculateMinorTicksUndefined: Self = StObject.set(x, "calculateMinorTicks", js.undefined)
+        inline def setCalculateMinorTicksUndefined: Self = StObject.set(x, "calculateMinorTicks", js.undefined)
         
-        @scala.inline
-        def setGetAxis(value: () => IAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction0(value))
+        inline def setGetAxis(value: () => IAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
+        inline def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
         
-        @scala.inline
-        def setProcessData(value: /* series */ js.UndefOr[ISeries] => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction1(value))
+        inline def setProcessData(value: /* series */ js.UndefOr[ISeries] => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
+        inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
         
-        @scala.inline
-        def setSetAxis(value: /* axis */ js.UndefOr[IAxis] => Unit): Self = StObject.set(x, "setAxis", js.Any.fromFunction1(value))
+        inline def setSetAxis(value: /* axis */ js.UndefOr[IAxis] => Unit): Self = StObject.set(x, "setAxis", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
+        inline def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
         
-        @scala.inline
-        def setSnapEnds(
+        inline def setSnapEnds(
           value: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStepSize */ js.UndefOr[Double]) => Unit
         ): Self = StObject.set(x, "snapEnds", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
+        inline def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
         
-        @scala.inline
-        def setTrimByRange(
+        inline def setTrimByRange(
           value: (/* context */ js.UndefOr[js.Any], /* out */ js.UndefOr[js.Any], /* trimMin */ js.UndefOr[Double], /* trimMax */ js.UndefOr[Double]) => Unit
         ): Self = StObject.set(x, "trimByRange", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setTrimByRangeUndefined: Self = StObject.set(x, "trimByRange", js.undefined)
+        inline def setTrimByRangeUndefined: Self = StObject.set(x, "trimByRange", js.undefined)
       }
     }
   }
@@ -1516,38 +1268,30 @@ object axis {
     }
     object INames {
       
-      @scala.inline
-      def apply(): INames = {
+      inline def apply(): INames = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[INames]
       }
       
-      @scala.inline
-      implicit class INamesMutableBuilder[Self <: INames] (val x: Self) extends AnyVal {
+      extension [Self <: INames](x: Self) {
         
-        @scala.inline
-        def setAdd(
+        inline def setAdd(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+        inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
-        @scala.inline
-        def setAlign(
+        inline def setAlign(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => js.Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setPreferredStep(
+        inline def setPreferredStep(
           value: (/* min */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any], /* minIdx */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => js.Any
         ): Self = StObject.set(x, "preferredStep", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setPreferredStepUndefined: Self = StObject.set(x, "preferredStep", js.undefined)
+        inline def setPreferredStepUndefined: Self = StObject.set(x, "preferredStep", js.undefined)
       }
     }
     
@@ -1597,36 +1341,28 @@ object axis {
     }
     object INumeric {
       
-      @scala.inline
-      def apply(): typings.senchaTouch.Ext.chart.axis.segmenter.INumeric = {
+      inline def apply(): typings.senchaTouch.Ext.chart.axis.segmenter.INumeric = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.senchaTouch.Ext.chart.axis.segmenter.INumeric]
       }
       
-      @scala.inline
-      implicit class INumericMutableBuilder[Self <: typings.senchaTouch.Ext.chart.axis.segmenter.INumeric] (val x: Self) extends AnyVal {
+      extension [Self <: typings.senchaTouch.Ext.chart.axis.segmenter.INumeric](x: Self) {
         
-        @scala.inline
-        def setAdd(
+        inline def setAdd(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+        inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
-        @scala.inline
-        def setAlign(
+        inline def setAlign(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => js.Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setExactStep(value: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "exactStep", js.Any.fromFunction2(value))
+        inline def setExactStep(value: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "exactStep", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setExactStepUndefined: Self = StObject.set(x, "exactStep", js.undefined)
+        inline def setExactStepUndefined: Self = StObject.set(x, "exactStep", js.undefined)
       }
     }
     
@@ -1717,74 +1453,54 @@ object axis {
     }
     object ISegmenter {
       
-      @scala.inline
-      def apply(): ISegmenter = {
+      inline def apply(): ISegmenter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISegmenter]
       }
       
-      @scala.inline
-      implicit class ISegmenterMutableBuilder[Self <: ISegmenter] (val x: Self) extends AnyVal {
+      extension [Self <: ISegmenter](x: Self) {
         
-        @scala.inline
-        def setAdd(
+        inline def setAdd(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+        inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
-        @scala.inline
-        def setAlign(
+        inline def setAlign(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[js.Any]) => js.Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setAxis(value: IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+        inline def setAxis(value: IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+        inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
-        @scala.inline
-        def setDiff(
+        inline def setDiff(
           value: (/* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Double
         ): Self = StObject.set(x, "diff", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
+        inline def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
         
-        @scala.inline
-        def setFrom(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+        inline def setFrom(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+        inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
         
-        @scala.inline
-        def setGetAxis(value: () => IAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction0(value))
+        inline def setGetAxis(value: () => IAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
+        inline def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
         
-        @scala.inline
-        def setPreferredStep(value: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "preferredStep", js.Any.fromFunction2(value))
+        inline def setPreferredStep(value: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "preferredStep", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setPreferredStepUndefined: Self = StObject.set(x, "preferredStep", js.undefined)
+        inline def setPreferredStepUndefined: Self = StObject.set(x, "preferredStep", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => String): Self = StObject.set(x, "renderer", js.Any.fromFunction2(value))
+        inline def setRenderer(value: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => String): Self = StObject.set(x, "renderer", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setSetAxis(value: /* axis */ js.UndefOr[IAxis] => Unit): Self = StObject.set(x, "setAxis", js.Any.fromFunction1(value))
+        inline def setSetAxis(value: /* axis */ js.UndefOr[IAxis] => Unit): Self = StObject.set(x, "setAxis", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
+        inline def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
       }
     }
     
@@ -1838,48 +1554,36 @@ object axis {
     }
     object ITime {
       
-      @scala.inline
-      def apply(): typings.senchaTouch.Ext.chart.axis.segmenter.ITime = {
+      inline def apply(): typings.senchaTouch.Ext.chart.axis.segmenter.ITime = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.senchaTouch.Ext.chart.axis.segmenter.ITime]
       }
       
-      @scala.inline
-      implicit class ITimeMutableBuilder[Self <: typings.senchaTouch.Ext.chart.axis.segmenter.ITime] (val x: Self) extends AnyVal {
+      extension [Self <: typings.senchaTouch.Ext.chart.axis.segmenter.ITime](x: Self) {
         
-        @scala.inline
-        def setAdd(
+        inline def setAdd(
           value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+        inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
-        @scala.inline
-        def setAlign(
+        inline def setAlign(
           value: (/* date */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => js.Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setGetStep(value: () => js.Any): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
+        inline def setGetStep(value: () => js.Any): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
+        inline def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
         
-        @scala.inline
-        def setSetStep(value: /* step */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
+        inline def setSetStep(value: /* step */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
+        inline def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
         
-        @scala.inline
-        def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+        inline def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+        inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       }
     }
   }
@@ -2046,244 +1750,166 @@ object axis {
     }
     object IAxis {
       
-      @scala.inline
-      def apply(): typings.senchaTouch.Ext.chart.axis.sprite.IAxis = {
+      inline def apply(): typings.senchaTouch.Ext.chart.axis.sprite.IAxis = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.senchaTouch.Ext.chart.axis.sprite.IAxis]
       }
       
-      @scala.inline
-      implicit class IAxisMutableBuilder[Self <: typings.senchaTouch.Ext.chart.axis.sprite.IAxis] (val x: Self) extends AnyVal {
+      extension [Self <: typings.senchaTouch.Ext.chart.axis.sprite.IAxis](x: Self) {
         
-        @scala.inline
-        def setAxis(value: typings.senchaTouch.Ext.chart.axis.IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+        inline def setAxis(value: typings.senchaTouch.Ext.chart.axis.IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAxisLine(value: Boolean): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
+        inline def setAxisLine(value: Boolean): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAxisLineUndefined: Self = StObject.set(x, "axisLine", js.undefined)
+        inline def setAxisLineUndefined: Self = StObject.set(x, "axisLine", js.undefined)
         
-        @scala.inline
-        def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+        inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
-        @scala.inline
-        def setBindMarker(value: (js.UndefOr[String], js.UndefOr[IMarkers]) => Unit): Self = StObject.set(x, "bindMarker", js.Any.fromFunction2(value))
+        inline def setBindMarker(value: (js.UndefOr[String], js.UndefOr[IMarkers]) => Unit): Self = StObject.set(x, "bindMarker", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setBindMarkerUndefined: Self = StObject.set(x, "bindMarker", js.undefined)
+        inline def setBindMarkerUndefined: Self = StObject.set(x, "bindMarker", js.undefined)
         
-        @scala.inline
-        def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+        inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
+        inline def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
         
-        @scala.inline
-        def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+        inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
+        inline def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
         
-        @scala.inline
-        def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
+        inline def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataMaxUndefined: Self = StObject.set(x, "dataMax", js.undefined)
+        inline def setDataMaxUndefined: Self = StObject.set(x, "dataMax", js.undefined)
         
-        @scala.inline
-        def setDataMin(value: Double): Self = StObject.set(x, "dataMin", value.asInstanceOf[js.Any])
+        inline def setDataMin(value: Double): Self = StObject.set(x, "dataMin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataMinUndefined: Self = StObject.set(x, "dataMin", js.undefined)
+        inline def setDataMinUndefined: Self = StObject.set(x, "dataMin", js.undefined)
         
-        @scala.inline
-        def setEnlargeEstStepSizeByText(value: Boolean): Self = StObject.set(x, "enlargeEstStepSizeByText", value.asInstanceOf[js.Any])
+        inline def setEnlargeEstStepSizeByText(value: Boolean): Self = StObject.set(x, "enlargeEstStepSizeByText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnlargeEstStepSizeByTextUndefined: Self = StObject.set(x, "enlargeEstStepSizeByText", js.undefined)
+        inline def setEnlargeEstStepSizeByTextUndefined: Self = StObject.set(x, "enlargeEstStepSizeByText", js.undefined)
         
-        @scala.inline
-        def setGetAxis(value: () => typings.senchaTouch.Ext.chart.axis.sprite.IAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction0(value))
+        inline def setGetAxis(value: () => typings.senchaTouch.Ext.chart.axis.sprite.IAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
+        inline def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
         
-        @scala.inline
-        def setGetBBox(value: () => Unit): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
+        inline def setGetBBox(value: () => Unit): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
+        inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
         
-        @scala.inline
-        def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+        inline def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
+        inline def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
         
-        @scala.inline
-        def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+        inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+        inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
         
-        @scala.inline
-        def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
+        inline def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
+        inline def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
         
-        @scala.inline
-        def setGetSegmenter(value: () => js.Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
+        inline def setGetSegmenter(value: () => js.Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
+        inline def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
         
-        @scala.inline
-        def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+        inline def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+        inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
         
-        @scala.inline
-        def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
         
-        @scala.inline
-        def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+        inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
         
-        @scala.inline
-        def setMajorTickSize(value: Double): Self = StObject.set(x, "majorTickSize", value.asInstanceOf[js.Any])
+        inline def setMajorTickSize(value: Double): Self = StObject.set(x, "majorTickSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMajorTickSizeUndefined: Self = StObject.set(x, "majorTickSize", js.undefined)
+        inline def setMajorTickSizeUndefined: Self = StObject.set(x, "majorTickSize", js.undefined)
         
-        @scala.inline
-        def setMajorTicks(value: Boolean): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
+        inline def setMajorTicks(value: Boolean): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
+        inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinStepSize(value: Double): Self = StObject.set(x, "minStepSize", value.asInstanceOf[js.Any])
+        inline def setMinStepSize(value: Double): Self = StObject.set(x, "minStepSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinStepSizeUndefined: Self = StObject.set(x, "minStepSize", js.undefined)
+        inline def setMinStepSizeUndefined: Self = StObject.set(x, "minStepSize", js.undefined)
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setMinorTickSize(value: Double): Self = StObject.set(x, "minorTickSize", value.asInstanceOf[js.Any])
+        inline def setMinorTickSize(value: Double): Self = StObject.set(x, "minorTickSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinorTickSizeUndefined: Self = StObject.set(x, "minorTickSize", js.undefined)
+        inline def setMinorTickSizeUndefined: Self = StObject.set(x, "minorTickSize", js.undefined)
         
-        @scala.inline
-        def setMinorTricks(value: Boolean): Self = StObject.set(x, "minorTricks", value.asInstanceOf[js.Any])
+        inline def setMinorTricks(value: Boolean): Self = StObject.set(x, "minorTricks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinorTricksUndefined: Self = StObject.set(x, "minorTricks", js.undefined)
+        inline def setMinorTricksUndefined: Self = StObject.set(x, "minorTricks", js.undefined)
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setRender(
+        inline def setRender(
           value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
         ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+        inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setSegmenter(value: js.Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
+        inline def setSegmenter(value: js.Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmenterUndefined: Self = StObject.set(x, "segmenter", js.undefined)
+        inline def setSegmenterUndefined: Self = StObject.set(x, "segmenter", js.undefined)
         
-        @scala.inline
-        def setSetAxis(value: /* axis */ js.UndefOr[typings.senchaTouch.Ext.chart.axis.sprite.IAxis] => Unit): Self = StObject.set(x, "setAxis", js.Any.fromFunction1(value))
+        inline def setSetAxis(value: /* axis */ js.UndefOr[typings.senchaTouch.Ext.chart.axis.sprite.IAxis] => Unit): Self = StObject.set(x, "setAxis", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
+        inline def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
         
-        @scala.inline
-        def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+        inline def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
+        inline def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
         
-        @scala.inline
-        def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+        inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
+        inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
         
-        @scala.inline
-        def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
+        inline def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)
+        inline def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)
         
-        @scala.inline
-        def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
+        inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
+        inline def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
         
-        @scala.inline
-        def setTextPadding(value: Double): Self = StObject.set(x, "textPadding", value.asInstanceOf[js.Any])
+        inline def setTextPadding(value: Double): Self = StObject.set(x, "textPadding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextPaddingUndefined: Self = StObject.set(x, "textPadding", js.undefined)
+        inline def setTextPaddingUndefined: Self = StObject.set(x, "textPadding", js.undefined)
         
-        @scala.inline
-        def setThe(value: Double): Self = StObject.set(x, "The", value.asInstanceOf[js.Any])
+        inline def setThe(value: Double): Self = StObject.set(x, "The", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTheUndefined: Self = StObject.set(x, "The", js.undefined)
+        inline def setTheUndefined: Self = StObject.set(x, "The", js.undefined)
         
-        @scala.inline
-        def setVisibleMax(value: Double): Self = StObject.set(x, "visibleMax", value.asInstanceOf[js.Any])
+        inline def setVisibleMax(value: Double): Self = StObject.set(x, "visibleMax", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleMaxUndefined: Self = StObject.set(x, "visibleMax", js.undefined)
+        inline def setVisibleMaxUndefined: Self = StObject.set(x, "visibleMax", js.undefined)
         
-        @scala.inline
-        def setVisibleMin(value: Double): Self = StObject.set(x, "visibleMin", value.asInstanceOf[js.Any])
+        inline def setVisibleMin(value: Double): Self = StObject.set(x, "visibleMin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleMinUndefined: Self = StObject.set(x, "visibleMin", js.undefined)
+        inline def setVisibleMinUndefined: Self = StObject.set(x, "visibleMin", js.undefined)
       }
     }
   }

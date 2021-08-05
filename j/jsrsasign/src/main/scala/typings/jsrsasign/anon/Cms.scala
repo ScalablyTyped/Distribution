@@ -10,16 +10,13 @@ trait Cms extends StObject {
 }
 object Cms {
   
-  @scala.inline
-  def apply(cms: String): Cms = {
+  inline def apply(cms: String): Cms = {
     val __obj = js.Dynamic.literal(cms = cms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cms]
   }
   
-  @scala.inline
-  implicit class CmsMutableBuilder[Self <: Cms] (val x: Self) extends AnyVal {
+  extension [Self <: Cms](x: Self) {
     
-    @scala.inline
-    def setCms(value: String): Self = StObject.set(x, "cms", value.asInstanceOf[js.Any])
+    inline def setCms(value: String): Self = StObject.set(x, "cms", value.asInstanceOf[js.Any])
   }
 }

@@ -33,34 +33,25 @@ trait GetExportRequest extends StObject {
 }
 object GetExportRequest {
   
-  @scala.inline
-  def apply(exportType: String, restApiId: String, stageName: String): GetExportRequest = {
+  inline def apply(exportType: String, restApiId: String, stageName: String): GetExportRequest = {
     val __obj = js.Dynamic.literal(exportType = exportType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExportRequest]
   }
   
-  @scala.inline
-  implicit class GetExportRequestMutableBuilder[Self <: GetExportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetExportRequest](x: Self) {
     
-    @scala.inline
-    def setAccepts(value: String): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+    inline def setAccepts(value: String): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
+    inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
     
-    @scala.inline
-    def setExportType(value: String): Self = StObject.set(x, "exportType", value.asInstanceOf[js.Any])
+    inline def setExportType(value: String): Self = StObject.set(x, "exportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
   }
 }

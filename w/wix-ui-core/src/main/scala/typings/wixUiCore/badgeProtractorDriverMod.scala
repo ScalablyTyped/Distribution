@@ -21,17 +21,14 @@ object badgeProtractorDriverMod {
   }
   object BadgeDriver {
     
-    @scala.inline
-    def apply(element: () => ElementFinder, text: () => js.Promise[String]): BadgeDriver = {
+    inline def apply(element: () => ElementFinder, text: () => js.Promise[String]): BadgeDriver = {
       val __obj = js.Dynamic.literal(element = js.Any.fromFunction0(element), text = js.Any.fromFunction0(text))
       __obj.asInstanceOf[BadgeDriver]
     }
     
-    @scala.inline
-    implicit class BadgeDriverMutableBuilder[Self <: BadgeDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeDriver](x: Self) {
       
-      @scala.inline
-      def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
 }

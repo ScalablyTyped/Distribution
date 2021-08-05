@@ -51,35 +51,26 @@ object typesMod {
   }
   object DiffBlock {
     
-    @scala.inline
-    def apply(header: String, lines: js.Array[DiffLine], newStartLine: Double, oldStartLine: Double): DiffBlock = {
+    inline def apply(header: String, lines: js.Array[DiffLine], newStartLine: Double, oldStartLine: Double): DiffBlock = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], newStartLine = newStartLine.asInstanceOf[js.Any], oldStartLine = oldStartLine.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffBlock]
     }
     
-    @scala.inline
-    implicit class DiffBlockMutableBuilder[Self <: DiffBlock] (val x: Self) extends AnyVal {
+    extension [Self <: DiffBlock](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Array[DiffLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[DiffLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: DiffLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: DiffLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setNewStartLine(value: Double): Self = StObject.set(x, "newStartLine", value.asInstanceOf[js.Any])
+      inline def setNewStartLine(value: Double): Self = StObject.set(x, "newStartLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldStartLine(value: Double): Self = StObject.set(x, "oldStartLine", value.asInstanceOf[js.Any])
+      inline def setOldStartLine(value: Double): Self = StObject.set(x, "oldStartLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldStartLine2(value: Double): Self = StObject.set(x, "oldStartLine2", value.asInstanceOf[js.Any])
+      inline def setOldStartLine2(value: Double): Self = StObject.set(x, "oldStartLine2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldStartLine2Undefined: Self = StObject.set(x, "oldStartLine2", js.undefined)
+      inline def setOldStartLine2Undefined: Self = StObject.set(x, "oldStartLine2", js.undefined)
     }
   }
   
@@ -129,8 +120,7 @@ object typesMod {
   }
   object DiffFile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addedLines: Double,
       blocks: js.Array[DiffBlock],
       deletedLines: Double,
@@ -144,119 +134,81 @@ object typesMod {
       __obj.asInstanceOf[DiffFile]
     }
     
-    @scala.inline
-    implicit class DiffFileMutableBuilder[Self <: DiffFile] (val x: Self) extends AnyVal {
+    extension [Self <: DiffFile](x: Self) {
       
-      @scala.inline
-      def setAddedLines(value: Double): Self = StObject.set(x, "addedLines", value.asInstanceOf[js.Any])
+      inline def setAddedLines(value: Double): Self = StObject.set(x, "addedLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocks(value: js.Array[DiffBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[DiffBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksVarargs(value: DiffBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: DiffBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
       
-      @scala.inline
-      def setChangedPercentage(value: Double): Self = StObject.set(x, "changedPercentage", value.asInstanceOf[js.Any])
+      inline def setChangedPercentage(value: Double): Self = StObject.set(x, "changedPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedPercentageUndefined: Self = StObject.set(x, "changedPercentage", js.undefined)
+      inline def setChangedPercentageUndefined: Self = StObject.set(x, "changedPercentage", js.undefined)
       
-      @scala.inline
-      def setChecksumAfter(value: String): Self = StObject.set(x, "checksumAfter", value.asInstanceOf[js.Any])
+      inline def setChecksumAfter(value: String): Self = StObject.set(x, "checksumAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumAfterUndefined: Self = StObject.set(x, "checksumAfter", js.undefined)
+      inline def setChecksumAfterUndefined: Self = StObject.set(x, "checksumAfter", js.undefined)
       
-      @scala.inline
-      def setChecksumBefore(value: String | js.Array[String]): Self = StObject.set(x, "checksumBefore", value.asInstanceOf[js.Any])
+      inline def setChecksumBefore(value: String | js.Array[String]): Self = StObject.set(x, "checksumBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumBeforeUndefined: Self = StObject.set(x, "checksumBefore", js.undefined)
+      inline def setChecksumBeforeUndefined: Self = StObject.set(x, "checksumBefore", js.undefined)
       
-      @scala.inline
-      def setChecksumBeforeVarargs(value: String*): Self = StObject.set(x, "checksumBefore", js.Array(value :_*))
+      inline def setChecksumBeforeVarargs(value: String*): Self = StObject.set(x, "checksumBefore", js.Array(value :_*))
       
-      @scala.inline
-      def setDeletedFileMode(value: String): Self = StObject.set(x, "deletedFileMode", value.asInstanceOf[js.Any])
+      inline def setDeletedFileMode(value: String): Self = StObject.set(x, "deletedFileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedFileModeUndefined: Self = StObject.set(x, "deletedFileMode", js.undefined)
+      inline def setDeletedFileModeUndefined: Self = StObject.set(x, "deletedFileMode", js.undefined)
       
-      @scala.inline
-      def setDeletedLines(value: Double): Self = StObject.set(x, "deletedLines", value.asInstanceOf[js.Any])
+      inline def setDeletedLines(value: Double): Self = StObject.set(x, "deletedLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
+      inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBinaryUndefined: Self = StObject.set(x, "isBinary", js.undefined)
+      inline def setIsBinaryUndefined: Self = StObject.set(x, "isBinary", js.undefined)
       
-      @scala.inline
-      def setIsCombined(value: Boolean): Self = StObject.set(x, "isCombined", value.asInstanceOf[js.Any])
+      inline def setIsCombined(value: Boolean): Self = StObject.set(x, "isCombined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCopy(value: Boolean): Self = StObject.set(x, "isCopy", value.asInstanceOf[js.Any])
+      inline def setIsCopy(value: Boolean): Self = StObject.set(x, "isCopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCopyUndefined: Self = StObject.set(x, "isCopy", js.undefined)
+      inline def setIsCopyUndefined: Self = StObject.set(x, "isCopy", js.undefined)
       
-      @scala.inline
-      def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+      inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
+      inline def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
       
-      @scala.inline
-      def setIsGitDiff(value: Boolean): Self = StObject.set(x, "isGitDiff", value.asInstanceOf[js.Any])
+      inline def setIsGitDiff(value: Boolean): Self = StObject.set(x, "isGitDiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNew(value: Boolean): Self = StObject.set(x, "isNew", value.asInstanceOf[js.Any])
+      inline def setIsNew(value: Boolean): Self = StObject.set(x, "isNew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNewUndefined: Self = StObject.set(x, "isNew", js.undefined)
+      inline def setIsNewUndefined: Self = StObject.set(x, "isNew", js.undefined)
       
-      @scala.inline
-      def setIsRename(value: Boolean): Self = StObject.set(x, "isRename", value.asInstanceOf[js.Any])
+      inline def setIsRename(value: Boolean): Self = StObject.set(x, "isRename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRenameUndefined: Self = StObject.set(x, "isRename", js.undefined)
+      inline def setIsRenameUndefined: Self = StObject.set(x, "isRename", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setNewFileMode(value: String): Self = StObject.set(x, "newFileMode", value.asInstanceOf[js.Any])
+      inline def setNewFileMode(value: String): Self = StObject.set(x, "newFileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewFileModeUndefined: Self = StObject.set(x, "newFileMode", js.undefined)
+      inline def setNewFileModeUndefined: Self = StObject.set(x, "newFileMode", js.undefined)
       
-      @scala.inline
-      def setNewMode(value: String): Self = StObject.set(x, "newMode", value.asInstanceOf[js.Any])
+      inline def setNewMode(value: String): Self = StObject.set(x, "newMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewModeUndefined: Self = StObject.set(x, "newMode", js.undefined)
+      inline def setNewModeUndefined: Self = StObject.set(x, "newMode", js.undefined)
       
-      @scala.inline
-      def setOldMode(value: String | js.Array[String]): Self = StObject.set(x, "oldMode", value.asInstanceOf[js.Any])
+      inline def setOldMode(value: String | js.Array[String]): Self = StObject.set(x, "oldMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldModeUndefined: Self = StObject.set(x, "oldMode", js.undefined)
+      inline def setOldModeUndefined: Self = StObject.set(x, "oldMode", js.undefined)
       
-      @scala.inline
-      def setOldModeVarargs(value: String*): Self = StObject.set(x, "oldMode", js.Array(value :_*))
+      inline def setOldModeVarargs(value: String*): Self = StObject.set(x, "oldMode", js.Array(value :_*))
       
-      @scala.inline
-      def setUnchangedPercentage(value: Double): Self = StObject.set(x, "unchangedPercentage", value.asInstanceOf[js.Any])
+      inline def setUnchangedPercentage(value: Double): Self = StObject.set(x, "unchangedPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnchangedPercentageUndefined: Self = StObject.set(x, "unchangedPercentage", js.undefined)
+      inline def setUnchangedPercentageUndefined: Self = StObject.set(x, "unchangedPercentage", js.undefined)
     }
   }
   
@@ -268,20 +220,16 @@ object typesMod {
   }
   object DiffFileName {
     
-    @scala.inline
-    def apply(newName: String, oldName: String): DiffFileName = {
+    inline def apply(newName: String, oldName: String): DiffFileName = {
       val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffFileName]
     }
     
-    @scala.inline
-    implicit class DiffFileNameMutableBuilder[Self <: DiffFileName] (val x: Self) extends AnyVal {
+    extension [Self <: DiffFileName](x: Self) {
       
-      @scala.inline
-      def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
+      inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
+      inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,17 +241,14 @@ object typesMod {
   }
   object DiffLineContent {
     
-    @scala.inline
-    def apply(content: String): DiffLineContent = {
+    inline def apply(content: String): DiffLineContent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineContent]
     }
     
-    @scala.inline
-    implicit class DiffLineContentMutableBuilder[Self <: DiffLineContent] (val x: Self) extends AnyVal {
+    extension [Self <: DiffLineContent](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,24 +262,19 @@ object typesMod {
   }
   object DiffLineContext {
     
-    @scala.inline
-    def apply(newNumber: Double, oldNumber: Double, `type`: CONTEXT): DiffLineContext = {
+    inline def apply(newNumber: Double, oldNumber: Double, `type`: CONTEXT): DiffLineContext = {
       val __obj = js.Dynamic.literal(newNumber = newNumber.asInstanceOf[js.Any], oldNumber = oldNumber.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineContext]
     }
     
-    @scala.inline
-    implicit class DiffLineContextMutableBuilder[Self <: DiffLineContext] (val x: Self) extends AnyVal {
+    extension [Self <: DiffLineContext](x: Self) {
       
-      @scala.inline
-      def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
+      inline def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldNumber(value: Double): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
+      inline def setOldNumber(value: Double): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: CONTEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CONTEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,24 +288,19 @@ object typesMod {
   }
   object DiffLineDeleted {
     
-    @scala.inline
-    def apply(newNumber: Unit, oldNumber: Double, `type`: DELETE): DiffLineDeleted = {
+    inline def apply(newNumber: Unit, oldNumber: Double, `type`: DELETE): DiffLineDeleted = {
       val __obj = js.Dynamic.literal(newNumber = newNumber.asInstanceOf[js.Any], oldNumber = oldNumber.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineDeleted]
     }
     
-    @scala.inline
-    implicit class DiffLineDeletedMutableBuilder[Self <: DiffLineDeleted] (val x: Self) extends AnyVal {
+    extension [Self <: DiffLineDeleted](x: Self) {
       
-      @scala.inline
-      def setNewNumber(value: Unit): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
+      inline def setNewNumber(value: Unit): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldNumber(value: Double): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
+      inline def setOldNumber(value: Double): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: DELETE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DELETE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -379,24 +314,19 @@ object typesMod {
   }
   object DiffLineInserted {
     
-    @scala.inline
-    def apply(newNumber: Double, oldNumber: Unit, `type`: INSERT): DiffLineInserted = {
+    inline def apply(newNumber: Double, oldNumber: Unit, `type`: INSERT): DiffLineInserted = {
       val __obj = js.Dynamic.literal(newNumber = newNumber.asInstanceOf[js.Any], oldNumber = oldNumber.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineInserted]
     }
     
-    @scala.inline
-    implicit class DiffLineInsertedMutableBuilder[Self <: DiffLineInserted] (val x: Self) extends AnyVal {
+    extension [Self <: DiffLineInserted](x: Self) {
       
-      @scala.inline
-      def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
+      inline def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldNumber(value: Unit): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
+      inline def setOldNumber(value: Unit): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: INSERT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: INSERT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,20 +338,16 @@ object typesMod {
   }
   object DiffLineParts {
     
-    @scala.inline
-    def apply(content: String, prefix: String): DiffLineParts = {
+    inline def apply(content: String, prefix: String): DiffLineParts = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineParts]
     }
     
-    @scala.inline
-    implicit class DiffLinePartsMutableBuilder[Self <: DiffLineParts] (val x: Self) extends AnyVal {
+    extension [Self <: DiffLineParts](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   

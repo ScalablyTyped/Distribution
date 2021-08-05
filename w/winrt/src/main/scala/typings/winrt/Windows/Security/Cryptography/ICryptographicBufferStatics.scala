@@ -32,8 +32,7 @@ trait ICryptographicBufferStatics extends StObject {
 }
 object ICryptographicBufferStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compare: (IBuffer, IBuffer) => Boolean,
     convertBinaryToString: (BinaryStringEncoding, IBuffer) => String,
     convertStringToBinary: (String, BinaryStringEncoding) => IBuffer,
@@ -50,40 +49,28 @@ object ICryptographicBufferStatics {
     __obj.asInstanceOf[ICryptographicBufferStatics]
   }
   
-  @scala.inline
-  implicit class ICryptographicBufferStaticsMutableBuilder[Self <: ICryptographicBufferStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICryptographicBufferStatics](x: Self) {
     
-    @scala.inline
-    def setCompare(value: (IBuffer, IBuffer) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (IBuffer, IBuffer) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertBinaryToString(value: (BinaryStringEncoding, IBuffer) => String): Self = StObject.set(x, "convertBinaryToString", js.Any.fromFunction2(value))
+    inline def setConvertBinaryToString(value: (BinaryStringEncoding, IBuffer) => String): Self = StObject.set(x, "convertBinaryToString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertStringToBinary(value: (String, BinaryStringEncoding) => IBuffer): Self = StObject.set(x, "convertStringToBinary", js.Any.fromFunction2(value))
+    inline def setConvertStringToBinary(value: (String, BinaryStringEncoding) => IBuffer): Self = StObject.set(x, "convertStringToBinary", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCopyToByteArray(value: IBuffer => Uint8Array): Self = StObject.set(x, "copyToByteArray", js.Any.fromFunction1(value))
+    inline def setCopyToByteArray(value: IBuffer => Uint8Array): Self = StObject.set(x, "copyToByteArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFromByteArray(value: Uint8Array => IBuffer): Self = StObject.set(x, "createFromByteArray", js.Any.fromFunction1(value))
+    inline def setCreateFromByteArray(value: Uint8Array => IBuffer): Self = StObject.set(x, "createFromByteArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecodeFromBase64String(value: String => IBuffer): Self = StObject.set(x, "decodeFromBase64String", js.Any.fromFunction1(value))
+    inline def setDecodeFromBase64String(value: String => IBuffer): Self = StObject.set(x, "decodeFromBase64String", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecodeFromHexString(value: String => IBuffer): Self = StObject.set(x, "decodeFromHexString", js.Any.fromFunction1(value))
+    inline def setDecodeFromHexString(value: String => IBuffer): Self = StObject.set(x, "decodeFromHexString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeToBase64String(value: IBuffer => String): Self = StObject.set(x, "encodeToBase64String", js.Any.fromFunction1(value))
+    inline def setEncodeToBase64String(value: IBuffer => String): Self = StObject.set(x, "encodeToBase64String", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeToHexString(value: IBuffer => String): Self = StObject.set(x, "encodeToHexString", js.Any.fromFunction1(value))
+    inline def setEncodeToHexString(value: IBuffer => String): Self = StObject.set(x, "encodeToHexString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateRandom(value: Double => IBuffer): Self = StObject.set(x, "generateRandom", js.Any.fromFunction1(value))
+    inline def setGenerateRandom(value: Double => IBuffer): Self = StObject.set(x, "generateRandom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateRandomNumber(value: () => Double): Self = StObject.set(x, "generateRandomNumber", js.Any.fromFunction0(value))
+    inline def setGenerateRandomNumber(value: () => Double): Self = StObject.set(x, "generateRandomNumber", js.Any.fromFunction0(value))
   }
 }

@@ -23,25 +23,19 @@ trait SchemaSubmitConfigSourceRequest extends StObject {
 }
 object SchemaSubmitConfigSourceRequest {
   
-  @scala.inline
-  def apply(): SchemaSubmitConfigSourceRequest = {
+  inline def apply(): SchemaSubmitConfigSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubmitConfigSourceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSubmitConfigSourceRequestMutableBuilder[Self <: SchemaSubmitConfigSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubmitConfigSourceRequest](x: Self) {
     
-    @scala.inline
-    def setConfigSource(value: SchemaConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
+    inline def setConfigSource(value: SchemaConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
+    inline def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

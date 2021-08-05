@@ -90,6 +90,5 @@ object PropertyList {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPropertyList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPropertyList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

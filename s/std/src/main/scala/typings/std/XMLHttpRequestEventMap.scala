@@ -12,8 +12,7 @@ trait XMLHttpRequestEventMap
 }
 object XMLHttpRequestEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: ProgressEvent[XMLHttpRequestEventTarget],
     error: ProgressEvent[XMLHttpRequestEventTarget],
     load: ProgressEvent[XMLHttpRequestEventTarget],
@@ -27,10 +26,8 @@ object XMLHttpRequestEventMap {
     __obj.asInstanceOf[XMLHttpRequestEventMap]
   }
   
-  @scala.inline
-  implicit class XMLHttpRequestEventMapMutableBuilder[Self <: XMLHttpRequestEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: XMLHttpRequestEventMap](x: Self) {
     
-    @scala.inline
-    def setReadystatechange(value: Event): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
+    inline def setReadystatechange(value: Event): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
   }
 }

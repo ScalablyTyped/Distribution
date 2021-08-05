@@ -58,70 +58,49 @@ trait StaticImageActivateScheduleActionSettings extends StObject {
 }
 object StaticImageActivateScheduleActionSettings {
   
-  @scala.inline
-  def apply(Image: InputLocation): StaticImageActivateScheduleActionSettings = {
+  inline def apply(Image: InputLocation): StaticImageActivateScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticImageActivateScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class StaticImageActivateScheduleActionSettingsMutableBuilder[Self <: StaticImageActivateScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: StaticImageActivateScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setDuration(value: integerMin0): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: integerMin0): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setFadeIn(value: integerMin0): Self = StObject.set(x, "FadeIn", value.asInstanceOf[js.Any])
+    inline def setFadeIn(value: integerMin0): Self = StObject.set(x, "FadeIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeInUndefined: Self = StObject.set(x, "FadeIn", js.undefined)
+    inline def setFadeInUndefined: Self = StObject.set(x, "FadeIn", js.undefined)
     
-    @scala.inline
-    def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
+    inline def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeOutUndefined: Self = StObject.set(x, "FadeOut", js.undefined)
+    inline def setFadeOutUndefined: Self = StObject.set(x, "FadeOut", js.undefined)
     
-    @scala.inline
-    def setHeight(value: integerMin1): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integerMin1): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
-    @scala.inline
-    def setImage(value: InputLocation): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: InputLocation): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageX(value: integerMin0): Self = StObject.set(x, "ImageX", value.asInstanceOf[js.Any])
+    inline def setImageX(value: integerMin0): Self = StObject.set(x, "ImageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageXUndefined: Self = StObject.set(x, "ImageX", js.undefined)
+    inline def setImageXUndefined: Self = StObject.set(x, "ImageX", js.undefined)
     
-    @scala.inline
-    def setImageY(value: integerMin0): Self = StObject.set(x, "ImageY", value.asInstanceOf[js.Any])
+    inline def setImageY(value: integerMin0): Self = StObject.set(x, "ImageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageYUndefined: Self = StObject.set(x, "ImageY", js.undefined)
+    inline def setImageYUndefined: Self = StObject.set(x, "ImageY", js.undefined)
     
-    @scala.inline
-    def setLayer(value: integerMin0Max7): Self = StObject.set(x, "Layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: integerMin0Max7): Self = StObject.set(x, "Layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "Layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "Layer", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: integerMin0Max100): Self = StObject.set(x, "Opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: integerMin0Max100): Self = StObject.set(x, "Opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "Opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "Opacity", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integerMin1): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integerMin1): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

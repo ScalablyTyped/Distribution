@@ -23,25 +23,19 @@ trait SchemaSetDataValidationRequest extends StObject {
 }
 object SchemaSetDataValidationRequest {
   
-  @scala.inline
-  def apply(): SchemaSetDataValidationRequest = {
+  inline def apply(): SchemaSetDataValidationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSetDataValidationRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSetDataValidationRequestMutableBuilder[Self <: SchemaSetDataValidationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSetDataValidationRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRule(value: SchemaDataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: SchemaDataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

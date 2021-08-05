@@ -23,8 +23,7 @@ trait XPositioningListener
 }
 object XPositioningListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     positioned: EventObject => Unit,
@@ -35,10 +34,8 @@ object XPositioningListener {
     __obj.asInstanceOf[XPositioningListener]
   }
   
-  @scala.inline
-  implicit class XPositioningListenerMutableBuilder[Self <: XPositioningListener] (val x: Self) extends AnyVal {
+  extension [Self <: XPositioningListener](x: Self) {
     
-    @scala.inline
-    def setPositioned(value: EventObject => Unit): Self = StObject.set(x, "positioned", js.Any.fromFunction1(value))
+    inline def setPositioned(value: EventObject => Unit): Self = StObject.set(x, "positioned", js.Any.fromFunction1(value))
   }
 }

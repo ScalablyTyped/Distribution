@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "Signer")
 @js.native
-class Signer protected () extends Writable {
+/* private */ class Signer () extends Writable {
   
   def sign(private_key: KeyLike): Buffer = js.native
   def sign(private_key: KeyLike, output_format: HexBase64Latin1Encoding): String = js.native

@@ -12,8 +12,7 @@ object sparseToDenseUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateInput(
+  inline def validateInput(
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: js.Array[Double],

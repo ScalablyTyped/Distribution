@@ -28,8 +28,7 @@ object multiPickerNativeMod {
     @JSImport("rmc-picker/lib/MultiPicker.native", "default.defaultProps")
     @js.native
     def defaultProps: OnValueChange = js.native
-    @scala.inline
-    def defaultProps_=(x: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IMultiPickerProp extends StObject {
@@ -38,17 +37,14 @@ object multiPickerNativeMod {
   }
   object IMultiPickerProp {
     
-    @scala.inline
-    def apply(getValue: () => js.Any): IMultiPickerProp = {
+    inline def apply(getValue: () => js.Any): IMultiPickerProp = {
       val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
       __obj.asInstanceOf[IMultiPickerProp]
     }
     
-    @scala.inline
-    implicit class IMultiPickerPropMutableBuilder[Self <: IMultiPickerProp] (val x: Self) extends AnyVal {
+    extension [Self <: IMultiPickerProp](x: Self) {
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
 }

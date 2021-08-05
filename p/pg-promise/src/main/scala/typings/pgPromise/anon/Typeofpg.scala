@@ -19,8 +19,7 @@ trait Typeofpg extends StObject {
 }
 object Typeofpg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient],
     defaults: IDefaults,
     types: ITypes
@@ -29,16 +28,12 @@ object Typeofpg {
     __obj.asInstanceOf[Typeofpg]
   }
   
-  @scala.inline
-  implicit class TypeofpgMutableBuilder[Self <: Typeofpg] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofpg](x: Self) {
     
-    @scala.inline
-    def setClient(value: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaults(value: IDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: IDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: ITypes): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: ITypes): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
   }
 }

@@ -9,18 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pattern: String): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
-  @scala.inline
-  def apply(pattern: String, options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
-  @scala.inline
-  def apply(pattern: js.Array[String]): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
-  @scala.inline
-  def apply(pattern: js.Array[String], options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
-  @scala.inline
-  def apply(pattern: FileFunction): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
-  @scala.inline
-  def apply(pattern: FileFunction, options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def apply(pattern: String): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  inline def apply(pattern: String, options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def apply(pattern: js.Array[String]): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  inline def apply(pattern: js.Array[String], options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def apply(pattern: FileFunction): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  inline def apply(pattern: FileFunction, options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
   
   @JSImport("gulp-filter", JSImport.Namespace)
   @js.native
@@ -47,26 +41,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
+      inline def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
+      inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
       
-      @scala.inline
-      def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+      inline def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+      inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     }
   }
 }

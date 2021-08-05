@@ -23,28 +23,21 @@ trait ListFargateProfilesRequest extends StObject {
 }
 object ListFargateProfilesRequest {
   
-  @scala.inline
-  def apply(clusterName: String): ListFargateProfilesRequest = {
+  inline def apply(clusterName: String): ListFargateProfilesRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFargateProfilesRequest]
   }
   
-  @scala.inline
-  implicit class ListFargateProfilesRequestMutableBuilder[Self <: ListFargateProfilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFargateProfilesRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: FargateProfilesRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: FargateProfilesRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

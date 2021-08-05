@@ -28,29 +28,22 @@ trait CreateUploadRequest extends StObject {
 }
 object CreateUploadRequest {
   
-  @scala.inline
-  def apply(name: Name, projectArn: AmazonResourceName, `type`: UploadType): CreateUploadRequest = {
+  inline def apply(name: Name, projectArn: AmazonResourceName, `type`: UploadType): CreateUploadRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUploadRequest]
   }
   
-  @scala.inline
-  implicit class CreateUploadRequestMutableBuilder[Self <: CreateUploadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUploadRequest](x: Self) {
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UploadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UploadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

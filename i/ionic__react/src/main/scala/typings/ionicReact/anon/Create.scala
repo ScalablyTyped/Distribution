@@ -11,16 +11,13 @@ trait Create[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] e
 }
 object Create {
   
-  @scala.inline
-  def apply[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */](create: OptionsType => js.Promise[OverlayType]): Create[OptionsType, OverlayType] = {
+  inline def apply[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */](create: OptionsType => js.Promise[OverlayType]): Create[OptionsType, OverlayType] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[Create[OptionsType, OverlayType]]
   }
   
-  @scala.inline
-  implicit class CreateMutableBuilder[Self <: Create[?, ?], OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] (val x: Self & (Create[OptionsType, OverlayType])) extends AnyVal {
+  extension [Self <: Create[?, ?], OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */](x: Self & (Create[OptionsType, OverlayType])) {
     
-    @scala.inline
-    def setCreate(value: OptionsType => js.Promise[OverlayType]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: OptionsType => js.Promise[OverlayType]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

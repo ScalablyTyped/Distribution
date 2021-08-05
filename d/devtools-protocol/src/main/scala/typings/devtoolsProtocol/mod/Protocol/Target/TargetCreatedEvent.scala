@@ -10,16 +10,13 @@ trait TargetCreatedEvent extends StObject {
 }
 object TargetCreatedEvent {
   
-  @scala.inline
-  def apply(targetInfo: TargetInfo): TargetCreatedEvent = {
+  inline def apply(targetInfo: TargetInfo): TargetCreatedEvent = {
     val __obj = js.Dynamic.literal(targetInfo = targetInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetCreatedEvent]
   }
   
-  @scala.inline
-  implicit class TargetCreatedEventMutableBuilder[Self <: TargetCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TargetCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
+    inline def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
   }
 }

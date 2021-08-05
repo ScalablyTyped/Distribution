@@ -18,22 +18,17 @@ trait UpdateDomainRequest extends StObject {
 }
 object UpdateDomainRequest {
   
-  @scala.inline
-  def apply(DomainId: DomainId): UpdateDomainRequest = {
+  inline def apply(DomainId: DomainId): UpdateDomainRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDomainRequestMutableBuilder[Self <: UpdateDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultUserSettings(value: UserSettings): Self = StObject.set(x, "DefaultUserSettings", value.asInstanceOf[js.Any])
+    inline def setDefaultUserSettings(value: UserSettings): Self = StObject.set(x, "DefaultUserSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUserSettingsUndefined: Self = StObject.set(x, "DefaultUserSettings", js.undefined)
+    inline def setDefaultUserSettingsUndefined: Self = StObject.set(x, "DefaultUserSettings", js.undefined)
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
   }
 }

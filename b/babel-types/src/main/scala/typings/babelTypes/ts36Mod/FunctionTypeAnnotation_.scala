@@ -24,8 +24,7 @@ trait FunctionTypeAnnotation_
 }
 object FunctionTypeAnnotation_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     params: js.Array[FunctionTypeParam_],
@@ -39,25 +38,18 @@ object FunctionTypeAnnotation_ {
     __obj.asInstanceOf[FunctionTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class FunctionTypeAnnotation_MutableBuilder[Self <: FunctionTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Array[FunctionTypeParam_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[FunctionTypeParam_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: FunctionTypeParam_ *): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: FunctionTypeParam_ *): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setRest(value: FunctionTypeParam_): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+    inline def setRest(value: FunctionTypeParam_): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnType(value: FlowTypeAnnotation): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: FlowTypeAnnotation): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FunctionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FunctionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

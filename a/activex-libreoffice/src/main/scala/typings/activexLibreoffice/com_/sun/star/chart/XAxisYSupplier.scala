@@ -68,8 +68,7 @@ trait XAxisYSupplier
 }
 object XAxisYSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     YAxis: XPropertySet,
     YAxisTitle: XShape,
     YHelpGrid: XPropertySet,
@@ -86,31 +85,22 @@ object XAxisYSupplier {
     __obj.asInstanceOf[XAxisYSupplier]
   }
   
-  @scala.inline
-  implicit class XAxisYSupplierMutableBuilder[Self <: XAxisYSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XAxisYSupplier](x: Self) {
     
-    @scala.inline
-    def setGetYAxis(value: () => XPropertySet): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
+    inline def setGetYAxis(value: () => XPropertySet): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYAxisTitle(value: () => XShape): Self = StObject.set(x, "getYAxisTitle", js.Any.fromFunction0(value))
+    inline def setGetYAxisTitle(value: () => XShape): Self = StObject.set(x, "getYAxisTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYHelpGrid(value: () => XPropertySet): Self = StObject.set(x, "getYHelpGrid", js.Any.fromFunction0(value))
+    inline def setGetYHelpGrid(value: () => XPropertySet): Self = StObject.set(x, "getYHelpGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYMainGrid(value: () => XPropertySet): Self = StObject.set(x, "getYMainGrid", js.Any.fromFunction0(value))
+    inline def setGetYMainGrid(value: () => XPropertySet): Self = StObject.set(x, "getYMainGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setYAxis(value: XPropertySet): Self = StObject.set(x, "YAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: XPropertySet): Self = StObject.set(x, "YAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisTitle(value: XShape): Self = StObject.set(x, "YAxisTitle", value.asInstanceOf[js.Any])
+    inline def setYAxisTitle(value: XShape): Self = StObject.set(x, "YAxisTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYHelpGrid(value: XPropertySet): Self = StObject.set(x, "YHelpGrid", value.asInstanceOf[js.Any])
+    inline def setYHelpGrid(value: XPropertySet): Self = StObject.set(x, "YHelpGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYMainGrid(value: XPropertySet): Self = StObject.set(x, "YMainGrid", value.asInstanceOf[js.Any])
+    inline def setYMainGrid(value: XPropertySet): Self = StObject.set(x, "YMainGrid", value.asInstanceOf[js.Any])
   }
 }

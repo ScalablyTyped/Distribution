@@ -49,49 +49,35 @@ trait TabBarIOSProps
 }
 object TabBarIOSProps {
   
-  @scala.inline
-  def apply(): TabBarIOSProps = {
+  inline def apply(): TabBarIOSProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabBarIOSProps]
   }
   
-  @scala.inline
-  implicit class TabBarIOSPropsMutableBuilder[Self <: TabBarIOSProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarIOSProps](x: Self) {
     
-    @scala.inline
-    def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
+    inline def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarTintColorUndefined: Self = StObject.set(x, "barTintColor", js.undefined)
+    inline def setBarTintColorUndefined: Self = StObject.set(x, "barTintColor", js.undefined)
     
-    @scala.inline
-    def setItemPositioning(value: fill | center | auto): Self = StObject.set(x, "itemPositioning", value.asInstanceOf[js.Any])
+    inline def setItemPositioning(value: fill | center | auto): Self = StObject.set(x, "itemPositioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPositioningUndefined: Self = StObject.set(x, "itemPositioning", js.undefined)
+    inline def setItemPositioningUndefined: Self = StObject.set(x, "itemPositioning", js.undefined)
     
-    @scala.inline
-    def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
-    @scala.inline
-    def setUnselectedItemTintColor(value: ColorValue): Self = StObject.set(x, "unselectedItemTintColor", value.asInstanceOf[js.Any])
+    inline def setUnselectedItemTintColor(value: ColorValue): Self = StObject.set(x, "unselectedItemTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectedItemTintColorUndefined: Self = StObject.set(x, "unselectedItemTintColor", js.undefined)
+    inline def setUnselectedItemTintColorUndefined: Self = StObject.set(x, "unselectedItemTintColor", js.undefined)
     
-    @scala.inline
-    def setUnselectedTintColor(value: ColorValue): Self = StObject.set(x, "unselectedTintColor", value.asInstanceOf[js.Any])
+    inline def setUnselectedTintColor(value: ColorValue): Self = StObject.set(x, "unselectedTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectedTintColorUndefined: Self = StObject.set(x, "unselectedTintColor", js.undefined)
+    inline def setUnselectedTintColorUndefined: Self = StObject.set(x, "unselectedTintColor", js.undefined)
   }
 }

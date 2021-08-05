@@ -22,31 +22,23 @@ trait UsageDetails extends StObject {
 }
 object UsageDetails {
   
-  @scala.inline
-  def apply(): UsageDetails = {
+  inline def apply(): UsageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageDetails]
   }
   
-  @scala.inline
-  implicit class UsageDetailsMutableBuilder[Self <: UsageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: UsageDetails](x: Self) {
     
-    @scala.inline
-    def setLastAccessedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedDateTimeNull: Self = StObject.set(x, "lastAccessedDateTime", null)
+    inline def setLastAccessedDateTimeNull: Self = StObject.set(x, "lastAccessedDateTime", null)
     
-    @scala.inline
-    def setLastAccessedDateTimeUndefined: Self = StObject.set(x, "lastAccessedDateTime", js.undefined)
+    inline def setLastAccessedDateTimeUndefined: Self = StObject.set(x, "lastAccessedDateTime", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
   }
 }

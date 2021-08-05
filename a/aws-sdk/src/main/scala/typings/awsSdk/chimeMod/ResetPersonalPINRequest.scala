@@ -18,19 +18,15 @@ trait ResetPersonalPINRequest extends StObject {
 }
 object ResetPersonalPINRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, UserId: NonEmptyString): ResetPersonalPINRequest = {
+  inline def apply(AccountId: NonEmptyString, UserId: NonEmptyString): ResetPersonalPINRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetPersonalPINRequest]
   }
   
-  @scala.inline
-  implicit class ResetPersonalPINRequestMutableBuilder[Self <: ResetPersonalPINRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetPersonalPINRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

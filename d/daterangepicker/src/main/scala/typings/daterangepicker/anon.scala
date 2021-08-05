@@ -13,20 +13,16 @@ object anon {
   }
   object DefaultOptions {
     
-    @scala.inline
-    def apply(): DefaultOptions = {
+    inline def apply(): DefaultOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    @scala.inline
-    implicit class DefaultOptionsMutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultOptions(value: Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultOptions(value: Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+      inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
     }
   }
   
@@ -57,8 +53,7 @@ object anon {
   }
   object RequiredLocale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applyLabel: String,
       cancelLabel: String,
       customRangeLabel: String,
@@ -75,47 +70,33 @@ object anon {
       __obj.asInstanceOf[RequiredLocale]
     }
     
-    @scala.inline
-    implicit class RequiredLocaleMutableBuilder[Self <: RequiredLocale] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredLocale](x: Self) {
       
-      @scala.inline
-      def setApplyLabel(value: String): Self = StObject.set(x, "applyLabel", value.asInstanceOf[js.Any])
+      inline def setApplyLabel(value: String): Self = StObject.set(x, "applyLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
+      inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRangeLabel(value: String): Self = StObject.set(x, "customRangeLabel", value.asInstanceOf[js.Any])
+      inline def setCustomRangeLabel(value: String): Self = StObject.set(x, "customRangeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
+      inline def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+      inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
       
-      @scala.inline
-      def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
+      inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromLabel(value: String): Self = StObject.set(x, "fromLabel", value.asInstanceOf[js.Any])
+      inline def setFromLabel(value: String): Self = StObject.set(x, "fromLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+      inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToLabel(value: String): Self = StObject.set(x, "toLabel", value.asInstanceOf[js.Any])
+      inline def setToLabel(value: String): Self = StObject.set(x, "toLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekLabel(value: String): Self = StObject.set(x, "weekLabel", value.asInstanceOf[js.Any])
+      inline def setWeekLabel(value: String): Self = StObject.set(x, "weekLabel", value.asInstanceOf[js.Any])
     }
   }
 }

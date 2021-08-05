@@ -18,22 +18,17 @@ trait SourceFileSpecifier extends StObject {
 }
 object SourceFileSpecifier {
   
-  @scala.inline
-  def apply(filePath: Path): SourceFileSpecifier = {
+  inline def apply(filePath: Path): SourceFileSpecifier = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceFileSpecifier]
   }
   
-  @scala.inline
-  implicit class SourceFileSpecifierMutableBuilder[Self <: SourceFileSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: SourceFileSpecifier](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMove(value: IsMove): Self = StObject.set(x, "isMove", value.asInstanceOf[js.Any])
+    inline def setIsMove(value: IsMove): Self = StObject.set(x, "isMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMoveUndefined: Self = StObject.set(x, "isMove", js.undefined)
+    inline def setIsMoveUndefined: Self = StObject.set(x, "isMove", js.undefined)
   }
 }

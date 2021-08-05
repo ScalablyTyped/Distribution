@@ -23,34 +23,25 @@ trait ListFileSharesOutput extends StObject {
 }
 object ListFileSharesOutput {
   
-  @scala.inline
-  def apply(): ListFileSharesOutput = {
+  inline def apply(): ListFileSharesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFileSharesOutput]
   }
   
-  @scala.inline
-  implicit class ListFileSharesOutputMutableBuilder[Self <: ListFileSharesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListFileSharesOutput](x: Self) {
     
-    @scala.inline
-    def setFileShareInfoList(value: FileShareInfoList): Self = StObject.set(x, "FileShareInfoList", value.asInstanceOf[js.Any])
+    inline def setFileShareInfoList(value: FileShareInfoList): Self = StObject.set(x, "FileShareInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareInfoListUndefined: Self = StObject.set(x, "FileShareInfoList", js.undefined)
+    inline def setFileShareInfoListUndefined: Self = StObject.set(x, "FileShareInfoList", js.undefined)
     
-    @scala.inline
-    def setFileShareInfoListVarargs(value: FileShareInfo*): Self = StObject.set(x, "FileShareInfoList", js.Array(value :_*))
+    inline def setFileShareInfoListVarargs(value: FileShareInfo*): Self = StObject.set(x, "FileShareInfoList", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

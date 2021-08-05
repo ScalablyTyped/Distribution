@@ -27,8 +27,7 @@ trait PipeableFoldable2C[F /* <: /* import warning: transforms.QualifyReferences
 }
 object PipeableFoldable2C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
     foldMap: Monoid[js.Any] => js.Function1[
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Function1[
@@ -49,11 +48,9 @@ object PipeableFoldable2C {
     __obj.asInstanceOf[PipeableFoldable2C[F, E]]
   }
   
-  @scala.inline
-  implicit class PipeableFoldable2CMutableBuilder[Self <: PipeableFoldable2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (PipeableFoldable2C[F, E])) extends AnyVal {
+  extension [Self <: PipeableFoldable2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (PipeableFoldable2C[F, E])) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function1[
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
           js.Function1[
@@ -63,16 +60,14 @@ object PipeableFoldable2C {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
           js.Any
         ]
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
           js.Any

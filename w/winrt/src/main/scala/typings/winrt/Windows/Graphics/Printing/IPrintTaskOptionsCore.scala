@@ -10,16 +10,13 @@ trait IPrintTaskOptionsCore extends StObject {
 }
 object IPrintTaskOptionsCore {
   
-  @scala.inline
-  def apply(getPageDescription: Double => PrintPageDescription): IPrintTaskOptionsCore = {
+  inline def apply(getPageDescription: Double => PrintPageDescription): IPrintTaskOptionsCore = {
     val __obj = js.Dynamic.literal(getPageDescription = js.Any.fromFunction1(getPageDescription))
     __obj.asInstanceOf[IPrintTaskOptionsCore]
   }
   
-  @scala.inline
-  implicit class IPrintTaskOptionsCoreMutableBuilder[Self <: IPrintTaskOptionsCore] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskOptionsCore](x: Self) {
     
-    @scala.inline
-    def setGetPageDescription(value: Double => PrintPageDescription): Self = StObject.set(x, "getPageDescription", js.Any.fromFunction1(value))
+    inline def setGetPageDescription(value: Double => PrintPageDescription): Self = StObject.set(x, "getPageDescription", js.Any.fromFunction1(value))
   }
 }

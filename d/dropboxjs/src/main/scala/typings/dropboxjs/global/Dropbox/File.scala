@@ -29,11 +29,9 @@ object File {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(refData: String): typings.dropboxjs.Dropbox.File.CopyReference = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(refData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.File.CopyReference]
+    inline def parse(refData: String): typings.dropboxjs.Dropbox.File.CopyReference = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(refData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.File.CopyReference]
     /* static member */
-    @scala.inline
-    def parse(refData: js.Object): typings.dropboxjs.Dropbox.File.CopyReference = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(refData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.File.CopyReference]
+    inline def parse(refData: js.Object): typings.dropboxjs.Dropbox.File.CopyReference = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(refData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.File.CopyReference]
   }
   
   @JSGlobal("Dropbox.File.ShareUrl")
@@ -64,11 +62,9 @@ object File {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(urlData: String, isDirect: Boolean): typings.dropboxjs.Dropbox.File.ShareUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlData.asInstanceOf[js.Any], isDirect.asInstanceOf[js.Any])).asInstanceOf[typings.dropboxjs.Dropbox.File.ShareUrl]
+    inline def parse(urlData: String, isDirect: Boolean): typings.dropboxjs.Dropbox.File.ShareUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlData.asInstanceOf[js.Any], isDirect.asInstanceOf[js.Any])).asInstanceOf[typings.dropboxjs.Dropbox.File.ShareUrl]
     /* static member */
-    @scala.inline
-    def parse(urlData: js.Object, isDirect: Boolean): typings.dropboxjs.Dropbox.File.ShareUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlData.asInstanceOf[js.Any], isDirect.asInstanceOf[js.Any])).asInstanceOf[typings.dropboxjs.Dropbox.File.ShareUrl]
+    inline def parse(urlData: js.Object, isDirect: Boolean): typings.dropboxjs.Dropbox.File.ShareUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlData.asInstanceOf[js.Any], isDirect.asInstanceOf[js.Any])).asInstanceOf[typings.dropboxjs.Dropbox.File.ShareUrl]
   }
   
   @JSGlobal("Dropbox.File.Stat")
@@ -132,7 +128,6 @@ object File {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(metadata: js.Object): typings.dropboxjs.Dropbox.File.Stat = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(metadata.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.File.Stat]
+    inline def parse(metadata: js.Object): typings.dropboxjs.Dropbox.File.Stat = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(metadata.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.File.Stat]
   }
 }

@@ -176,17 +176,14 @@ object mod {
   }
   object LoaderPlugin {
     
-    @scala.inline
-    def apply(fetch: String => js.Promise[js.Any]): LoaderPlugin = {
+    inline def apply(fetch: String => js.Promise[js.Any]): LoaderPlugin = {
       val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
       __obj.asInstanceOf[LoaderPlugin]
     }
     
-    @scala.inline
-    implicit class LoaderPluginMutableBuilder[Self <: LoaderPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderPlugin](x: Self) {
       
-      @scala.inline
-      def setFetch(value: String => js.Promise[js.Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+      inline def setFetch(value: String => js.Promise[js.Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }
   }
 }

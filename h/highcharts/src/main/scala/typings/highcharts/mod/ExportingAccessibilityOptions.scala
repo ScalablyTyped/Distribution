@@ -14,19 +14,15 @@ trait ExportingAccessibilityOptions extends StObject {
 }
 object ExportingAccessibilityOptions {
   
-  @scala.inline
-  def apply(): ExportingAccessibilityOptions = {
+  inline def apply(): ExportingAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingAccessibilityOptions]
   }
   
-  @scala.inline
-  implicit class ExportingAccessibilityOptionsMutableBuilder[Self <: ExportingAccessibilityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingAccessibilityOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

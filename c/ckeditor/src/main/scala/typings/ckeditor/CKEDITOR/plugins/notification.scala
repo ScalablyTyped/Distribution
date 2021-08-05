@@ -35,8 +35,7 @@ trait notification extends StObject {
 }
 object notification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     area: area,
     duration: Double,
     editor: editor,
@@ -69,8 +68,7 @@ object notification {
   }
   object area {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: notification => Unit,
       editor: editor,
       element: element,
@@ -81,67 +79,47 @@ object notification {
       __obj.asInstanceOf[area]
     }
     
-    @scala.inline
-    implicit class areaMutableBuilder[Self <: area] (val x: Self) extends AnyVal {
+    extension [Self <: area](x: Self) {
       
-      @scala.inline
-      def setAdd(value: notification => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: notification => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifications(value: js.Array[notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setRemove(value: notification => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: notification => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   
-  @scala.inline
-  implicit class notificationMutableBuilder[Self <: notification] (val x: Self) extends AnyVal {
+  extension [Self <: notification](x: Self) {
     
-    @scala.inline
-    def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: updateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: updateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
   
   trait options
@@ -152,17 +130,14 @@ object notification {
   }
   object options {
     
-    @scala.inline
-    def apply(message: String): options = {
+    inline def apply(message: String): options = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[options]
     }
     
-    @scala.inline
-    implicit class optionsMutableBuilder[Self <: options] (val x: Self) extends AnyVal {
+    extension [Self <: options](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,32 +151,24 @@ object notification {
   }
   object optionsBase {
     
-    @scala.inline
-    def apply(): optionsBase = {
+    inline def apply(): optionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[optionsBase]
     }
     
-    @scala.inline
-    implicit class optionsBaseMutableBuilder[Self <: optionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: optionsBase](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -214,17 +181,13 @@ object notification {
   trait `type` extends StObject
   object `type` {
     
-    @scala.inline
-    def info: typings.ckeditor.ckeditorStrings.info = "info".asInstanceOf[typings.ckeditor.ckeditorStrings.info]
+    inline def info: typings.ckeditor.ckeditorStrings.info = "info".asInstanceOf[typings.ckeditor.ckeditorStrings.info]
     
-    @scala.inline
-    def progress: typings.ckeditor.ckeditorStrings.progress = "progress".asInstanceOf[typings.ckeditor.ckeditorStrings.progress]
+    inline def progress: typings.ckeditor.ckeditorStrings.progress = "progress".asInstanceOf[typings.ckeditor.ckeditorStrings.progress]
     
-    @scala.inline
-    def success: typings.ckeditor.ckeditorStrings.success = "success".asInstanceOf[typings.ckeditor.ckeditorStrings.success]
+    inline def success: typings.ckeditor.ckeditorStrings.success = "success".asInstanceOf[typings.ckeditor.ckeditorStrings.success]
     
-    @scala.inline
-    def warning: typings.ckeditor.ckeditorStrings.warning = "warning".asInstanceOf[typings.ckeditor.ckeditorStrings.warning]
+    inline def warning: typings.ckeditor.ckeditorStrings.warning = "warning".asInstanceOf[typings.ckeditor.ckeditorStrings.warning]
   }
   
   trait updateOptions
@@ -237,26 +200,20 @@ object notification {
   }
   object updateOptions {
     
-    @scala.inline
-    def apply(): updateOptions = {
+    inline def apply(): updateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[updateOptions]
     }
     
-    @scala.inline
-    implicit class updateOptionsMutableBuilder[Self <: updateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: updateOptions](x: Self) {
       
-      @scala.inline
-      def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+      inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+      inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

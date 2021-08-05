@@ -34,8 +34,7 @@ trait FunctionDescription extends StObject {
 }
 object FunctionDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arguments: SafeArray[FunctionArgument],
     Category: Double,
     Description: String,
@@ -46,22 +45,16 @@ object FunctionDescription {
     __obj.asInstanceOf[FunctionDescription]
   }
   
-  @scala.inline
-  implicit class FunctionDescriptionMutableBuilder[Self <: FunctionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionDescription](x: Self) {
     
-    @scala.inline
-    def setArguments(value: SafeArray[FunctionArgument]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: SafeArray[FunctionArgument]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: Double): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Double): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

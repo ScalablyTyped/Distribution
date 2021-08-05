@@ -14,22 +14,17 @@ trait GoogleIamV1TestIamPermissionsRequest extends StObject {
 }
 object GoogleIamV1TestIamPermissionsRequest {
   
-  @scala.inline
-  def apply(): GoogleIamV1TestIamPermissionsRequest = {
+  inline def apply(): GoogleIamV1TestIamPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIamV1TestIamPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleIamV1TestIamPermissionsRequestMutableBuilder[Self <: GoogleIamV1TestIamPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIamV1TestIamPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

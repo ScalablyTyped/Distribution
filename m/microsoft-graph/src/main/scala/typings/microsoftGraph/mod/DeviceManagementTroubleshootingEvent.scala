@@ -16,28 +16,21 @@ trait DeviceManagementTroubleshootingEvent
 }
 object DeviceManagementTroubleshootingEvent {
   
-  @scala.inline
-  def apply(): DeviceManagementTroubleshootingEvent = {
+  inline def apply(): DeviceManagementTroubleshootingEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceManagementTroubleshootingEvent]
   }
   
-  @scala.inline
-  implicit class DeviceManagementTroubleshootingEventMutableBuilder[Self <: DeviceManagementTroubleshootingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceManagementTroubleshootingEvent](x: Self) {
     
-    @scala.inline
-    def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
+    inline def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
     
-    @scala.inline
-    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
-    @scala.inline
-    def setEventDateTime(value: String): Self = StObject.set(x, "eventDateTime", value.asInstanceOf[js.Any])
+    inline def setEventDateTime(value: String): Self = StObject.set(x, "eventDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDateTimeUndefined: Self = StObject.set(x, "eventDateTime", js.undefined)
+    inline def setEventDateTimeUndefined: Self = StObject.set(x, "eventDateTime", js.undefined)
   }
 }

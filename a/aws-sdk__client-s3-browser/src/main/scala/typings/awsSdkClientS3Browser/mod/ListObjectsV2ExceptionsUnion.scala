@@ -10,8 +10,7 @@ trait ListObjectsV2ExceptionsUnion
      with NoSuchBucket
 object ListObjectsV2ExceptionsUnion {
   
-  @scala.inline
-  def apply(): ListObjectsV2ExceptionsUnion = {
+  inline def apply(): ListObjectsV2ExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "NoSuchBucket")
     __obj.asInstanceOf[ListObjectsV2ExceptionsUnion]
   }

@@ -12,19 +12,15 @@ trait Dirname extends StObject {
 }
 object Dirname {
   
-  @scala.inline
-  def apply(dirname: String => String, relative: (String, String) => String): Dirname = {
+  inline def apply(dirname: String => String, relative: (String, String) => String): Dirname = {
     val __obj = js.Dynamic.literal(dirname = js.Any.fromFunction1(dirname), relative = js.Any.fromFunction2(relative))
     __obj.asInstanceOf[Dirname]
   }
   
-  @scala.inline
-  implicit class DirnameMutableBuilder[Self <: Dirname] (val x: Self) extends AnyVal {
+  extension [Self <: Dirname](x: Self) {
     
-    @scala.inline
-    def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
+    inline def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRelative(value: (String, String) => String): Self = StObject.set(x, "relative", js.Any.fromFunction2(value))
+    inline def setRelative(value: (String, String) => String): Self = StObject.set(x, "relative", js.Any.fromFunction2(value))
   }
 }

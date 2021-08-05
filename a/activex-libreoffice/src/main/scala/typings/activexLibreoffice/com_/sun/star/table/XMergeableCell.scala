@@ -30,8 +30,7 @@ trait XMergeableCell
 }
 object XMergeableCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnSpan: Double,
     Error: Double,
     Formula: String,
@@ -55,22 +54,16 @@ object XMergeableCell {
     __obj.asInstanceOf[XMergeableCell]
   }
   
-  @scala.inline
-  implicit class XMergeableCellMutableBuilder[Self <: XMergeableCell] (val x: Self) extends AnyVal {
+  extension [Self <: XMergeableCell](x: Self) {
     
-    @scala.inline
-    def setColumnSpan(value: Double): Self = StObject.set(x, "ColumnSpan", value.asInstanceOf[js.Any])
+    inline def setColumnSpan(value: Double): Self = StObject.set(x, "ColumnSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumnSpan(value: () => Double): Self = StObject.set(x, "getColumnSpan", js.Any.fromFunction0(value))
+    inline def setGetColumnSpan(value: () => Double): Self = StObject.set(x, "getColumnSpan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowSpan(value: () => Double): Self = StObject.set(x, "getRowSpan", js.Any.fromFunction0(value))
+    inline def setGetRowSpan(value: () => Double): Self = StObject.set(x, "getRowSpan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMerged(value: () => Boolean): Self = StObject.set(x, "isMerged", js.Any.fromFunction0(value))
+    inline def setIsMerged(value: () => Boolean): Self = StObject.set(x, "isMerged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "RowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "RowSpan", value.asInstanceOf[js.Any])
   }
 }

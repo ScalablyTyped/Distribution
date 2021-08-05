@@ -25,16 +25,13 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(setText: String => Notification): Notification = {
+  inline def apply(setText: String => Notification): Notification = {
     val __obj = js.Dynamic.literal(setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setSetText(value: String => Notification): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Notification): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

@@ -15,19 +15,15 @@ trait CreateBLEPeripheralServerSuccessCallbackResult extends StObject {
 }
 object CreateBLEPeripheralServerSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, server: BLEPeripheralServer): CreateBLEPeripheralServerSuccessCallbackResult = {
+  inline def apply(errMsg: String, server: BLEPeripheralServer): CreateBLEPeripheralServerSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBLEPeripheralServerSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CreateBLEPeripheralServerSuccessCallbackResultMutableBuilder[Self <: CreateBLEPeripheralServerSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBLEPeripheralServerSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: BLEPeripheralServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: BLEPeripheralServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }
 }

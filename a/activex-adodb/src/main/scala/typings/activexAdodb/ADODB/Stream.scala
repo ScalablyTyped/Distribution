@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Stream extends StObject {
   
-  @JSName("ADODB.Stream_typekey")
+  /* private */ @JSName("ADODB.Stream_typekey")
   var ADODBDotStream_typekey: Stream = js.native
   
   def Cancel(): Unit = js.native

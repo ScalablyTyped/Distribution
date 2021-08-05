@@ -22,28 +22,21 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(error: /* msg */ String => Unit, info: /* msg */ String => Unit, warn: /* msg */ String => Unit): Logger = {
+  inline def apply(error: /* msg */ String => Unit, info: /* msg */ String => Unit, warn: /* msg */ String => Unit): Logger = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setDebug(value: /* msg */ String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* msg */ String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: /* msg */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* msg */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* msg */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* msg */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

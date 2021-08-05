@@ -16,8 +16,7 @@ trait SourceMapping extends StObject {
 }
 object SourceMapping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childMappings: js.Array[SourceMapping],
     end: SourceMapPosition,
     nameIndex: Double,
@@ -27,22 +26,16 @@ object SourceMapping {
     __obj.asInstanceOf[SourceMapping]
   }
   
-  @scala.inline
-  implicit class SourceMappingMutableBuilder[Self <: SourceMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMapping](x: Self) {
     
-    @scala.inline
-    def setChildMappings(value: js.Array[SourceMapping]): Self = StObject.set(x, "childMappings", value.asInstanceOf[js.Any])
+    inline def setChildMappings(value: js.Array[SourceMapping]): Self = StObject.set(x, "childMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildMappingsVarargs(value: SourceMapping*): Self = StObject.set(x, "childMappings", js.Array(value :_*))
+    inline def setChildMappingsVarargs(value: SourceMapping*): Self = StObject.set(x, "childMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: SourceMapPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: SourceMapPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameIndex(value: Double): Self = StObject.set(x, "nameIndex", value.asInstanceOf[js.Any])
+    inline def setNameIndex(value: Double): Self = StObject.set(x, "nameIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: SourceMapPosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: SourceMapPosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

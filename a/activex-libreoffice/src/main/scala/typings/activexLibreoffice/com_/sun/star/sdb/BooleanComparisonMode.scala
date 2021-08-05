@@ -19,16 +19,12 @@ object BooleanComparisonMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACCESS_COMPAT: `3` = 3.asInstanceOf[`3`]
+    inline def ACCESS_COMPAT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def EQUAL_INTEGER: `0` = 0.asInstanceOf[`0`]
+    inline def EQUAL_INTEGER: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def EQUAL_LITERAL: `2` = 2.asInstanceOf[`2`]
+    inline def EQUAL_LITERAL: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def IS_LITERAL: `1` = 1.asInstanceOf[`1`]
+    inline def IS_LITERAL: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -18,25 +18,19 @@ trait OauthAuthorizationsListGrantsEndpoint extends StObject {
 }
 object OauthAuthorizationsListGrantsEndpoint {
   
-  @scala.inline
-  def apply(): OauthAuthorizationsListGrantsEndpoint = {
+  inline def apply(): OauthAuthorizationsListGrantsEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OauthAuthorizationsListGrantsEndpoint]
   }
   
-  @scala.inline
-  implicit class OauthAuthorizationsListGrantsEndpointMutableBuilder[Self <: OauthAuthorizationsListGrantsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthorizationsListGrantsEndpoint](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
   }
 }

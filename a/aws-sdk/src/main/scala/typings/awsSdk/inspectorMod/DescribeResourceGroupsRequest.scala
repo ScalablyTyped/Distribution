@@ -13,19 +13,15 @@ trait DescribeResourceGroupsRequest extends StObject {
 }
 object DescribeResourceGroupsRequest {
   
-  @scala.inline
-  def apply(resourceGroupArns: BatchDescribeArnList): DescribeResourceGroupsRequest = {
+  inline def apply(resourceGroupArns: BatchDescribeArnList): DescribeResourceGroupsRequest = {
     val __obj = js.Dynamic.literal(resourceGroupArns = resourceGroupArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourceGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeResourceGroupsRequestMutableBuilder[Self <: DescribeResourceGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourceGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setResourceGroupArns(value: BatchDescribeArnList): Self = StObject.set(x, "resourceGroupArns", value.asInstanceOf[js.Any])
+    inline def setResourceGroupArns(value: BatchDescribeArnList): Self = StObject.set(x, "resourceGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupArnsVarargs(value: Arn*): Self = StObject.set(x, "resourceGroupArns", js.Array(value :_*))
+    inline def setResourceGroupArnsVarargs(value: Arn*): Self = StObject.set(x, "resourceGroupArns", js.Array(value :_*))
   }
 }

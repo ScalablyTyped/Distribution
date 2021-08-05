@@ -28,37 +28,27 @@ trait ListRulesRequest extends StObject {
 }
 object ListRulesRequest {
   
-  @scala.inline
-  def apply(): ListRulesRequest = {
+  inline def apply(): ListRulesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRulesRequest]
   }
   
-  @scala.inline
-  implicit class ListRulesRequestMutableBuilder[Self <: ListRulesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRulesRequest](x: Self) {
     
-    @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNamePrefix(value: RuleName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: RuleName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
+    inline def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

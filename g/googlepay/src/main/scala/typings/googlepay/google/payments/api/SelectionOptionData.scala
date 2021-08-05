@@ -18,16 +18,13 @@ trait SelectionOptionData extends StObject {
 }
 object SelectionOptionData {
   
-  @scala.inline
-  def apply(id: String): SelectionOptionData = {
+  inline def apply(id: String): SelectionOptionData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionOptionData]
   }
   
-  @scala.inline
-  implicit class SelectionOptionDataMutableBuilder[Self <: SelectionOptionData] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionOptionData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

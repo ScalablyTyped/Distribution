@@ -39,38 +39,28 @@ object typesInputSerializationMod {
   }
   object InputSerialization {
     
-    @scala.inline
-    def apply(): InputSerialization = {
+    inline def apply(): InputSerialization = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputSerialization]
     }
     
-    @scala.inline
-    implicit class InputSerializationMutableBuilder[Self <: InputSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: InputSerialization](x: Self) {
       
-      @scala.inline
-      def setCSV(value: CSVInput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
+      inline def setCSV(value: CSVInput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
+      inline def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
       
-      @scala.inline
-      def setCompressionType(value: NONE | GZIP | BZIP2 | String): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
+      inline def setCompressionType(value: NONE | GZIP | BZIP2 | String): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
+      inline def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
       
-      @scala.inline
-      def setJSON(value: JSONInput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: JSONInput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
+      inline def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
       
-      @scala.inline
-      def setParquet(value: ParquetInput): Self = StObject.set(x, "Parquet", value.asInstanceOf[js.Any])
+      inline def setParquet(value: ParquetInput): Self = StObject.set(x, "Parquet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParquetUndefined: Self = StObject.set(x, "Parquet", js.undefined)
+      inline def setParquetUndefined: Self = StObject.set(x, "Parquet", js.undefined)
     }
   }
   
@@ -98,32 +88,24 @@ object typesInputSerializationMod {
   }
   object UnmarshalledInputSerialization {
     
-    @scala.inline
-    def apply(): UnmarshalledInputSerialization = {
+    inline def apply(): UnmarshalledInputSerialization = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledInputSerialization]
     }
     
-    @scala.inline
-    implicit class UnmarshalledInputSerializationMutableBuilder[Self <: UnmarshalledInputSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledInputSerialization](x: Self) {
       
-      @scala.inline
-      def setCSV(value: UnmarshalledCSVInput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
+      inline def setCSV(value: UnmarshalledCSVInput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
+      inline def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
       
-      @scala.inline
-      def setJSON(value: UnmarshalledJSONInput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: UnmarshalledJSONInput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
+      inline def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
       
-      @scala.inline
-      def setParquet(value: UnmarshalledParquetInput): Self = StObject.set(x, "Parquet", value.asInstanceOf[js.Any])
+      inline def setParquet(value: UnmarshalledParquetInput): Self = StObject.set(x, "Parquet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParquetUndefined: Self = StObject.set(x, "Parquet", js.undefined)
+      inline def setParquetUndefined: Self = StObject.set(x, "Parquet", js.undefined)
     }
   }
 }

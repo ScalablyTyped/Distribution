@@ -17,22 +17,17 @@ trait FormTriggerBuilder extends StObject {
 }
 object FormTriggerBuilder {
   
-  @scala.inline
-  def apply(create: () => Trigger, onFormSubmit: () => FormTriggerBuilder, onOpen: () => FormTriggerBuilder): FormTriggerBuilder = {
+  inline def apply(create: () => Trigger, onFormSubmit: () => FormTriggerBuilder, onOpen: () => FormTriggerBuilder): FormTriggerBuilder = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onFormSubmit = js.Any.fromFunction0(onFormSubmit), onOpen = js.Any.fromFunction0(onOpen))
     __obj.asInstanceOf[FormTriggerBuilder]
   }
   
-  @scala.inline
-  implicit class FormTriggerBuilderMutableBuilder[Self <: FormTriggerBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: FormTriggerBuilder](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFormSubmit(value: () => FormTriggerBuilder): Self = StObject.set(x, "onFormSubmit", js.Any.fromFunction0(value))
+    inline def setOnFormSubmit(value: () => FormTriggerBuilder): Self = StObject.set(x, "onFormSubmit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnOpen(value: () => FormTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+    inline def setOnOpen(value: () => FormTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
   }
 }

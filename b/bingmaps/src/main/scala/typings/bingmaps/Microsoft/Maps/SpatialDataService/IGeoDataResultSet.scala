@@ -18,25 +18,19 @@ trait IGeoDataResultSet extends StObject {
 }
 object IGeoDataResultSet {
   
-  @scala.inline
-  def apply(Copyright: String, location: String | Location, results: js.Array[IGeoDataResult]): IGeoDataResultSet = {
+  inline def apply(Copyright: String, location: String | Location, results: js.Array[IGeoDataResult]): IGeoDataResultSet = {
     val __obj = js.Dynamic.literal(Copyright = Copyright.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoDataResultSet]
   }
   
-  @scala.inline
-  implicit class IGeoDataResultSetMutableBuilder[Self <: IGeoDataResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoDataResultSet](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[IGeoDataResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[IGeoDataResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: IGeoDataResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: IGeoDataResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

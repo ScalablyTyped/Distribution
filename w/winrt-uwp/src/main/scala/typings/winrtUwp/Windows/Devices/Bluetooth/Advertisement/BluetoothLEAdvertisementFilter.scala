@@ -16,8 +16,7 @@ trait BluetoothLEAdvertisementFilter extends StObject {
 }
 object BluetoothLEAdvertisementFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     advertisement: BluetoothLEAdvertisement,
     bytePatterns: IVector[BluetoothLEAdvertisementBytePattern]
   ): BluetoothLEAdvertisementFilter = {
@@ -25,13 +24,10 @@ object BluetoothLEAdvertisementFilter {
     __obj.asInstanceOf[BluetoothLEAdvertisementFilter]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementFilterMutableBuilder[Self <: BluetoothLEAdvertisementFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementFilter](x: Self) {
     
-    @scala.inline
-    def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
+    inline def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytePatterns(value: IVector[BluetoothLEAdvertisementBytePattern]): Self = StObject.set(x, "bytePatterns", value.asInstanceOf[js.Any])
+    inline def setBytePatterns(value: IVector[BluetoothLEAdvertisementBytePattern]): Self = StObject.set(x, "bytePatterns", value.asInstanceOf[js.Any])
   }
 }

@@ -30,65 +30,46 @@ object anon {
   }
   object AllowedInMetered {
     
-    @scala.inline
-    def apply(tempDownloadPath: String): AllowedInMetered = {
+    inline def apply(tempDownloadPath: String): AllowedInMetered = {
       val __obj = js.Dynamic.literal(tempDownloadPath = tempDownloadPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllowedInMetered]
     }
     
-    @scala.inline
-    implicit class AllowedInMeteredMutableBuilder[Self <: AllowedInMetered] (val x: Self) extends AnyVal {
+    extension [Self <: AllowedInMetered](x: Self) {
       
-      @scala.inline
-      def setAllowedInMetered(value: Boolean): Self = StObject.set(x, "allowedInMetered", value.asInstanceOf[js.Any])
+      inline def setAllowedInMetered(value: Boolean): Self = StObject.set(x, "allowedInMetered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedInMeteredUndefined: Self = StObject.set(x, "allowedInMetered", js.undefined)
+      inline def setAllowedInMeteredUndefined: Self = StObject.set(x, "allowedInMetered", js.undefined)
       
-      @scala.inline
-      def setAllowedInRoaming(value: Boolean): Self = StObject.set(x, "allowedInRoaming", value.asInstanceOf[js.Any])
+      inline def setAllowedInRoaming(value: Boolean): Self = StObject.set(x, "allowedInRoaming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedInRoamingUndefined: Self = StObject.set(x, "allowedInRoaming", js.undefined)
+      inline def setAllowedInRoamingUndefined: Self = StObject.set(x, "allowedInRoaming", js.undefined)
       
-      @scala.inline
-      def setDownloadDescription(value: String): Self = StObject.set(x, "downloadDescription", value.asInstanceOf[js.Any])
+      inline def setDownloadDescription(value: String): Self = StObject.set(x, "downloadDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadDescriptionUndefined: Self = StObject.set(x, "downloadDescription", js.undefined)
+      inline def setDownloadDescriptionUndefined: Self = StObject.set(x, "downloadDescription", js.undefined)
       
-      @scala.inline
-      def setDownloadTitle(value: String): Self = StObject.set(x, "downloadTitle", value.asInstanceOf[js.Any])
+      inline def setDownloadTitle(value: String): Self = StObject.set(x, "downloadTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadTitleUndefined: Self = StObject.set(x, "downloadTitle", js.undefined)
+      inline def setDownloadTitleUndefined: Self = StObject.set(x, "downloadTitle", js.undefined)
       
-      @scala.inline
-      def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSaveAsName(value: String): Self = StObject.set(x, "saveAsName", value.asInstanceOf[js.Any])
+      inline def setSaveAsName(value: String): Self = StObject.set(x, "saveAsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveAsNameUndefined: Self = StObject.set(x, "saveAsName", js.undefined)
+      inline def setSaveAsNameUndefined: Self = StObject.set(x, "saveAsName", js.undefined)
       
-      @scala.inline
-      def setShowInDownloads(value: Boolean): Self = StObject.set(x, "showInDownloads", value.asInstanceOf[js.Any])
+      inline def setShowInDownloads(value: Boolean): Self = StObject.set(x, "showInDownloads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowInDownloadsUndefined: Self = StObject.set(x, "showInDownloads", js.undefined)
+      inline def setShowInDownloadsUndefined: Self = StObject.set(x, "showInDownloads", js.undefined)
       
-      @scala.inline
-      def setTempDownloadPath(value: String): Self = StObject.set(x, "tempDownloadPath", value.asInstanceOf[js.Any])
+      inline def setTempDownloadPath(value: String): Self = StObject.set(x, "tempDownloadPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,20 +83,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(trackViewUrl: String, version: String): Dictkey = {
+    inline def apply(trackViewUrl: String, version: String): Dictkey = {
       val __obj = js.Dynamic.literal(trackViewUrl = trackViewUrl.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setTrackViewUrl(value: String): Self = StObject.set(x, "trackViewUrl", value.asInstanceOf[js.Any])
+      inline def setTrackViewUrl(value: String): Self = StObject.set(x, "trackViewUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,8 +110,7 @@ object anon {
   }
   object HasNewVersion {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasNewVersion: Boolean,
       latestVersion: String,
       localVersion: String,
@@ -145,23 +121,17 @@ object anon {
       __obj.asInstanceOf[HasNewVersion]
     }
     
-    @scala.inline
-    implicit class HasNewVersionMutableBuilder[Self <: HasNewVersion] (val x: Self) extends AnyVal {
+    extension [Self <: HasNewVersion](x: Self) {
       
-      @scala.inline
-      def setHasNewVersion(value: Boolean): Self = StObject.set(x, "hasNewVersion", value.asInstanceOf[js.Any])
+      inline def setHasNewVersion(value: Boolean): Self = StObject.set(x, "hasNewVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestVersion(value: String): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
+      inline def setLatestVersion(value: String): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalVersion(value: String): Self = StObject.set(x, "localVersion", value.asInstanceOf[js.Any])
+      inline def setLocalVersion(value: String): Self = StObject.set(x, "localVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupInfo(value: Dictkey): Self = StObject.set(x, "lookupInfo", value.asInstanceOf[js.Any])
+      inline def setLookupInfo(value: Dictkey): Self = StObject.set(x, "lookupInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackViewUrl(value: String): Self = StObject.set(x, "trackViewUrl", value.asInstanceOf[js.Any])
+      inline def setTrackViewUrl(value: String): Self = StObject.set(x, "trackViewUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,68 +158,48 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setDownloadApkEnd(value: /* path */ String => js.Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
+      inline def setDownloadApkEnd(value: /* path */ String => js.Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadApkEndUndefined: Self = StObject.set(x, "downloadApkEnd", js.undefined)
+      inline def setDownloadApkEndUndefined: Self = StObject.set(x, "downloadApkEnd", js.undefined)
       
-      @scala.inline
-      def setDownloadApkName(value: String): Self = StObject.set(x, "downloadApkName", value.asInstanceOf[js.Any])
+      inline def setDownloadApkName(value: String): Self = StObject.set(x, "downloadApkName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadApkNameUndefined: Self = StObject.set(x, "downloadApkName", js.undefined)
+      inline def setDownloadApkNameUndefined: Self = StObject.set(x, "downloadApkName", js.undefined)
       
-      @scala.inline
-      def setDownloadDescription(value: String): Self = StObject.set(x, "downloadDescription", value.asInstanceOf[js.Any])
+      inline def setDownloadDescription(value: String): Self = StObject.set(x, "downloadDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadDescriptionUndefined: Self = StObject.set(x, "downloadDescription", js.undefined)
+      inline def setDownloadDescriptionUndefined: Self = StObject.set(x, "downloadDescription", js.undefined)
       
-      @scala.inline
-      def setDownloadDestDirectory(value: String): Self = StObject.set(x, "downloadDestDirectory", value.asInstanceOf[js.Any])
+      inline def setDownloadDestDirectory(value: String): Self = StObject.set(x, "downloadDestDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadDestDirectoryUndefined: Self = StObject.set(x, "downloadDestDirectory", js.undefined)
+      inline def setDownloadDestDirectoryUndefined: Self = StObject.set(x, "downloadDestDirectory", js.undefined)
       
-      @scala.inline
-      def setDownloadTitle(value: String): Self = StObject.set(x, "downloadTitle", value.asInstanceOf[js.Any])
+      inline def setDownloadTitle(value: String): Self = StObject.set(x, "downloadTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadTitleUndefined: Self = StObject.set(x, "downloadTitle", js.undefined)
+      inline def setDownloadTitleUndefined: Self = StObject.set(x, "downloadTitle", js.undefined)
       
-      @scala.inline
-      def setIOSAppId(value: String): Self = StObject.set(x, "iOSAppId", value.asInstanceOf[js.Any])
+      inline def setIOSAppId(value: String): Self = StObject.set(x, "iOSAppId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOSAppIdUndefined: Self = StObject.set(x, "iOSAppId", js.undefined)
+      inline def setIOSAppIdUndefined: Self = StObject.set(x, "iOSAppId", js.undefined)
       
-      @scala.inline
-      def setIOSAppLookupUrl(value: String): Self = StObject.set(x, "iOSAppLookupUrl", value.asInstanceOf[js.Any])
+      inline def setIOSAppLookupUrl(value: String): Self = StObject.set(x, "iOSAppLookupUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOSAppLookupUrlUndefined: Self = StObject.set(x, "iOSAppLookupUrl", js.undefined)
+      inline def setIOSAppLookupUrlUndefined: Self = StObject.set(x, "iOSAppLookupUrl", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setShouldCheckApkHasDownloaded(value: Boolean): Self = StObject.set(x, "shouldCheckApkHasDownloaded", value.asInstanceOf[js.Any])
+      inline def setShouldCheckApkHasDownloaded(value: Boolean): Self = StObject.set(x, "shouldCheckApkHasDownloaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldCheckApkHasDownloadedUndefined: Self = StObject.set(x, "shouldCheckApkHasDownloaded", js.undefined)
+      inline def setShouldCheckApkHasDownloadedUndefined: Self = StObject.set(x, "shouldCheckApkHasDownloaded", js.undefined)
     }
   }
   
@@ -261,20 +211,16 @@ object anon {
   }
   object VERSIONCODE {
     
-    @scala.inline
-    def apply(VERSION_CODE: String, VERSION_NAME: String): VERSIONCODE = {
+    inline def apply(VERSION_CODE: String, VERSION_NAME: String): VERSIONCODE = {
       val __obj = js.Dynamic.literal(VERSION_CODE = VERSION_CODE.asInstanceOf[js.Any], VERSION_NAME = VERSION_NAME.asInstanceOf[js.Any])
       __obj.asInstanceOf[VERSIONCODE]
     }
     
-    @scala.inline
-    implicit class VERSIONCODEMutableBuilder[Self <: VERSIONCODE] (val x: Self) extends AnyVal {
+    extension [Self <: VERSIONCODE](x: Self) {
       
-      @scala.inline
-      def setVERSION_CODE(value: String): Self = StObject.set(x, "VERSION_CODE", value.asInstanceOf[js.Any])
+      inline def setVERSION_CODE(value: String): Self = StObject.set(x, "VERSION_CODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERSION_NAME(value: String): Self = StObject.set(x, "VERSION_NAME", value.asInstanceOf[js.Any])
+      inline def setVERSION_NAME(value: String): Self = StObject.set(x, "VERSION_NAME", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,22 +18,17 @@ trait Printing3DTexture2CoordMaterial extends StObject {
 }
 object Printing3DTexture2CoordMaterial {
   
-  @scala.inline
-  def apply(texture: Printing3DModelTexture, u: Double, v: Double): Printing3DTexture2CoordMaterial = {
+  inline def apply(texture: Printing3DModelTexture, u: Double, v: Double): Printing3DTexture2CoordMaterial = {
     val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DTexture2CoordMaterial]
   }
   
-  @scala.inline
-  implicit class Printing3DTexture2CoordMaterialMutableBuilder[Self <: Printing3DTexture2CoordMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DTexture2CoordMaterial](x: Self) {
     
-    @scala.inline
-    def setTexture(value: Printing3DModelTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: Printing3DModelTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU(value: Double): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: Double): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

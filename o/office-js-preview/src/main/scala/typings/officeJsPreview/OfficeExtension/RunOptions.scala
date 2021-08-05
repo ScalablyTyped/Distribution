@@ -20,28 +20,21 @@ trait RunOptions[T] extends StObject {
 }
 object RunOptions {
   
-  @scala.inline
-  def apply[T](): RunOptions[T] = {
+  inline def apply[T](): RunOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunOptions[T]]
   }
   
-  @scala.inline
-  implicit class RunOptionsMutableBuilder[Self <: RunOptions[?], T] (val x: Self & RunOptions[T]) extends AnyVal {
+  extension [Self <: RunOptions[?], T](x: Self & RunOptions[T]) {
     
-    @scala.inline
-    def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = StObject.set(x, "previousObjects", value.asInstanceOf[js.Any])
+    inline def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = StObject.set(x, "previousObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousObjectsUndefined: Self = StObject.set(x, "previousObjects", js.undefined)
+    inline def setPreviousObjectsUndefined: Self = StObject.set(x, "previousObjects", js.undefined)
     
-    @scala.inline
-    def setPreviousObjectsVarargs(value: ClientObject*): Self = StObject.set(x, "previousObjects", js.Array(value :_*))
+    inline def setPreviousObjectsVarargs(value: ClientObject*): Self = StObject.set(x, "previousObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setSession(value: RequestUrlAndHeaderInfo | T): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: RequestUrlAndHeaderInfo | T): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

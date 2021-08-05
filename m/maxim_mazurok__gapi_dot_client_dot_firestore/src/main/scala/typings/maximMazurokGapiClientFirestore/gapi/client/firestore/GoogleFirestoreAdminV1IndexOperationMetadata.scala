@@ -26,49 +26,35 @@ trait GoogleFirestoreAdminV1IndexOperationMetadata extends StObject {
 }
 object GoogleFirestoreAdminV1IndexOperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleFirestoreAdminV1IndexOperationMetadata = {
+  inline def apply(): GoogleFirestoreAdminV1IndexOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleFirestoreAdminV1IndexOperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleFirestoreAdminV1IndexOperationMetadataMutableBuilder[Self <: GoogleFirestoreAdminV1IndexOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleFirestoreAdminV1IndexOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setProgressBytes(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
+    inline def setProgressBytes(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressBytesUndefined: Self = StObject.set(x, "progressBytes", js.undefined)
+    inline def setProgressBytesUndefined: Self = StObject.set(x, "progressBytes", js.undefined)
     
-    @scala.inline
-    def setProgressDocuments(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressDocuments", value.asInstanceOf[js.Any])
+    inline def setProgressDocuments(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressDocumentsUndefined: Self = StObject.set(x, "progressDocuments", js.undefined)
+    inline def setProgressDocumentsUndefined: Self = StObject.set(x, "progressDocuments", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

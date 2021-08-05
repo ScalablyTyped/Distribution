@@ -12,19 +12,15 @@ trait LayerLayerviewCreateEvent extends StObject {
 }
 object LayerLayerviewCreateEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): LayerLayerviewCreateEvent = {
+  inline def apply(layerView: LayerView, view: View): LayerLayerviewCreateEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerLayerviewCreateEvent]
   }
   
-  @scala.inline
-  implicit class LayerLayerviewCreateEventMutableBuilder[Self <: LayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayerLayerviewCreateEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

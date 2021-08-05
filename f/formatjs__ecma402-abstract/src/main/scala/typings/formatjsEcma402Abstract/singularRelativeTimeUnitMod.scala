@@ -12,6 +12,5 @@ object singularRelativeTimeUnitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SingularRelativeTimeUnit(unit: RelativeTimeFormattableUnit): RelativeTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("SingularRelativeTimeUnit")(unit.asInstanceOf[js.Any]).asInstanceOf[RelativeTimeUnit]
+  inline def SingularRelativeTimeUnit(unit: RelativeTimeFormattableUnit): RelativeTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("SingularRelativeTimeUnit")(unit.asInstanceOf[js.Any]).asInstanceOf[RelativeTimeUnit]
 }

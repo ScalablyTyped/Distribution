@@ -51,38 +51,28 @@ object layoutNavToggleMod {
   }
   object LayoutNavToggleProps {
     
-    @scala.inline
-    def apply(): LayoutNavToggleProps = {
+    inline def apply(): LayoutNavToggleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutNavToggleProps]
     }
     
-    @scala.inline
-    implicit class LayoutNavTogglePropsMutableBuilder[Self <: LayoutNavToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutNavToggleProps](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+      inline def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+      inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -102,26 +92,20 @@ object layoutNavToggleMod {
   }
   object LayoutWithNavToggle {
     
-    @scala.inline
-    def apply(): LayoutWithNavToggle = {
+    inline def apply(): LayoutWithNavToggle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutWithNavToggle]
     }
     
-    @scala.inline
-    implicit class LayoutWithNavToggleMutableBuilder[Self <: LayoutWithNavToggle] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutWithNavToggle](x: Self) {
       
-      @scala.inline
-      def setNavToggle(value: ReactNode): Self = StObject.set(x, "navToggle", value.asInstanceOf[js.Any])
+      inline def setNavToggle(value: ReactNode): Self = StObject.set(x, "navToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavToggleProps(value: PropsWithRef[LayoutNavToggleProps, HTMLButtonElement]): Self = StObject.set(x, "navToggleProps", value.asInstanceOf[js.Any])
+      inline def setNavToggleProps(value: PropsWithRef[LayoutNavToggleProps, HTMLButtonElement]): Self = StObject.set(x, "navToggleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavTogglePropsUndefined: Self = StObject.set(x, "navToggleProps", js.undefined)
+      inline def setNavTogglePropsUndefined: Self = StObject.set(x, "navToggleProps", js.undefined)
       
-      @scala.inline
-      def setNavToggleUndefined: Self = StObject.set(x, "navToggle", js.undefined)
+      inline def setNavToggleUndefined: Self = StObject.set(x, "navToggle", js.undefined)
     }
   }
 }

@@ -36,8 +36,7 @@ trait XAccessControlContext
 }
 object XAccessControlContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     checkPermission: js.Any => Unit,
     queryInterface: `type` => js.Any,
@@ -47,10 +46,8 @@ object XAccessControlContext {
     __obj.asInstanceOf[XAccessControlContext]
   }
   
-  @scala.inline
-  implicit class XAccessControlContextMutableBuilder[Self <: XAccessControlContext] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessControlContext](x: Self) {
     
-    @scala.inline
-    def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
+    inline def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
   }
 }

@@ -10,19 +10,15 @@ trait SvgInfo extends StObject {
 }
 object SvgInfo {
   
-  @scala.inline
-  def apply(): SvgInfo = {
+  inline def apply(): SvgInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SvgInfo]
   }
   
-  @scala.inline
-  implicit class SvgInfoMutableBuilder[Self <: SvgInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SvgInfo](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

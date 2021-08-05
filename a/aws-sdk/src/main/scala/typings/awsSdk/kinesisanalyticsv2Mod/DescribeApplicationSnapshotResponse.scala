@@ -13,16 +13,13 @@ trait DescribeApplicationSnapshotResponse extends StObject {
 }
 object DescribeApplicationSnapshotResponse {
   
-  @scala.inline
-  def apply(SnapshotDetails: SnapshotDetails): DescribeApplicationSnapshotResponse = {
+  inline def apply(SnapshotDetails: SnapshotDetails): DescribeApplicationSnapshotResponse = {
     val __obj = js.Dynamic.literal(SnapshotDetails = SnapshotDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeApplicationSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class DescribeApplicationSnapshotResponseMutableBuilder[Self <: DescribeApplicationSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicationSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setSnapshotDetails(value: SnapshotDetails): Self = StObject.set(x, "SnapshotDetails", value.asInstanceOf[js.Any])
+    inline def setSnapshotDetails(value: SnapshotDetails): Self = StObject.set(x, "SnapshotDetails", value.asInstanceOf[js.Any])
   }
 }

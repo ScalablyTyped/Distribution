@@ -14,28 +14,21 @@ trait ListCssesResponse extends StObject {
 }
 object ListCssesResponse {
   
-  @scala.inline
-  def apply(): ListCssesResponse = {
+  inline def apply(): ListCssesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCssesResponse]
   }
   
-  @scala.inline
-  implicit class ListCssesResponseMutableBuilder[Self <: ListCssesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCssesResponse](x: Self) {
     
-    @scala.inline
-    def setCsses(value: js.Array[Css]): Self = StObject.set(x, "csses", value.asInstanceOf[js.Any])
+    inline def setCsses(value: js.Array[Css]): Self = StObject.set(x, "csses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssesUndefined: Self = StObject.set(x, "csses", js.undefined)
+    inline def setCssesUndefined: Self = StObject.set(x, "csses", js.undefined)
     
-    @scala.inline
-    def setCssesVarargs(value: Css*): Self = StObject.set(x, "csses", js.Array(value :_*))
+    inline def setCssesVarargs(value: Css*): Self = StObject.set(x, "csses", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

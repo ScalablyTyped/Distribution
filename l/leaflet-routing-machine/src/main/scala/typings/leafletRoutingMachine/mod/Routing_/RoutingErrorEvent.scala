@@ -10,16 +10,13 @@ trait RoutingErrorEvent extends StObject {
 }
 object RoutingErrorEvent {
   
-  @scala.inline
-  def apply(error: IError): RoutingErrorEvent = {
+  inline def apply(error: IError): RoutingErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutingErrorEvent]
   }
   
-  @scala.inline
-  implicit class RoutingErrorEventMutableBuilder[Self <: RoutingErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: IError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: IError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

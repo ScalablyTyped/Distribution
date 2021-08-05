@@ -14,25 +14,19 @@ trait InteractiveLayerOptions
 }
 object InteractiveLayerOptions {
   
-  @scala.inline
-  def apply(): InteractiveLayerOptions = {
+  inline def apply(): InteractiveLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InteractiveLayerOptions]
   }
   
-  @scala.inline
-  implicit class InteractiveLayerOptionsMutableBuilder[Self <: InteractiveLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveLayerOptions](x: Self) {
     
-    @scala.inline
-    def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
+    inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblingMouseEventsUndefined: Self = StObject.set(x, "bubblingMouseEvents", js.undefined)
+    inline def setBubblingMouseEventsUndefined: Self = StObject.set(x, "bubblingMouseEvents", js.undefined)
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
   }
 }

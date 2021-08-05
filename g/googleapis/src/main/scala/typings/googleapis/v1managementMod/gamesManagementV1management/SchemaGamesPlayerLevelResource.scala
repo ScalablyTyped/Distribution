@@ -26,31 +26,23 @@ trait SchemaGamesPlayerLevelResource extends StObject {
 }
 object SchemaGamesPlayerLevelResource {
   
-  @scala.inline
-  def apply(): SchemaGamesPlayerLevelResource = {
+  inline def apply(): SchemaGamesPlayerLevelResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGamesPlayerLevelResource]
   }
   
-  @scala.inline
-  implicit class SchemaGamesPlayerLevelResourceMutableBuilder[Self <: SchemaGamesPlayerLevelResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGamesPlayerLevelResource](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMaxExperiencePoints(value: String): Self = StObject.set(x, "maxExperiencePoints", value.asInstanceOf[js.Any])
+    inline def setMaxExperiencePoints(value: String): Self = StObject.set(x, "maxExperiencePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxExperiencePointsUndefined: Self = StObject.set(x, "maxExperiencePoints", js.undefined)
+    inline def setMaxExperiencePointsUndefined: Self = StObject.set(x, "maxExperiencePoints", js.undefined)
     
-    @scala.inline
-    def setMinExperiencePoints(value: String): Self = StObject.set(x, "minExperiencePoints", value.asInstanceOf[js.Any])
+    inline def setMinExperiencePoints(value: String): Self = StObject.set(x, "minExperiencePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinExperiencePointsUndefined: Self = StObject.set(x, "minExperiencePoints", js.undefined)
+    inline def setMinExperiencePointsUndefined: Self = StObject.set(x, "minExperiencePoints", js.undefined)
   }
 }

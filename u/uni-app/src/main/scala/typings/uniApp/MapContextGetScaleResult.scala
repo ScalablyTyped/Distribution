@@ -13,19 +13,15 @@ trait MapContextGetScaleResult extends StObject {
 }
 object MapContextGetScaleResult {
   
-  @scala.inline
-  def apply(): MapContextGetScaleResult = {
+  inline def apply(): MapContextGetScaleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapContextGetScaleResult]
   }
   
-  @scala.inline
-  implicit class MapContextGetScaleResultMutableBuilder[Self <: MapContextGetScaleResult] (val x: Self) extends AnyVal {
+  extension [Self <: MapContextGetScaleResult](x: Self) {
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

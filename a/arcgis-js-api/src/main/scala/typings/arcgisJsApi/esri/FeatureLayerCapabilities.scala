@@ -61,8 +61,7 @@ trait FeatureLayerCapabilities
 }
 object FeatureLayerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachment: FeatureLayerCapabilitiesAttachment,
     constructor: js.Function,
     data: FeatureLayerCapabilitiesData,
@@ -78,28 +77,20 @@ object FeatureLayerCapabilities {
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }
   
-  @scala.inline
-  implicit class FeatureLayerCapabilitiesMutableBuilder[Self <: FeatureLayerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerCapabilities](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: FeatureLayerCapabilitiesAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: FeatureLayerCapabilitiesAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: FeatureLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: FeatureLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditing(value: FeatureLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+    inline def setEditing(value: FeatureLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: FeatureLayerCapabilitiesMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FeatureLayerCapabilitiesMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: FeatureLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: FeatureLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: FeatureLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: FeatureLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryRelated(value: FeatureLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
+    inline def setQueryRelated(value: FeatureLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
   }
 }

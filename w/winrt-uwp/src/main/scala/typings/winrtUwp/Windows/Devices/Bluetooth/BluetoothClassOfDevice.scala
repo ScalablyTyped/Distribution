@@ -21,8 +21,7 @@ trait BluetoothClassOfDevice extends StObject {
 }
 object BluetoothClassOfDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     majorClass: BluetoothMajorClass,
     minorClass: BluetoothMinorClass,
     rawValue: Double,
@@ -32,19 +31,14 @@ object BluetoothClassOfDevice {
     __obj.asInstanceOf[BluetoothClassOfDevice]
   }
   
-  @scala.inline
-  implicit class BluetoothClassOfDeviceMutableBuilder[Self <: BluetoothClassOfDevice] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothClassOfDevice](x: Self) {
     
-    @scala.inline
-    def setMajorClass(value: BluetoothMajorClass): Self = StObject.set(x, "majorClass", value.asInstanceOf[js.Any])
+    inline def setMajorClass(value: BluetoothMajorClass): Self = StObject.set(x, "majorClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorClass(value: BluetoothMinorClass): Self = StObject.set(x, "minorClass", value.asInstanceOf[js.Any])
+    inline def setMinorClass(value: BluetoothMinorClass): Self = StObject.set(x, "minorClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValue(value: Double): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: Double): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCapabilities(value: BluetoothServiceCapabilities): Self = StObject.set(x, "serviceCapabilities", value.asInstanceOf[js.Any])
+    inline def setServiceCapabilities(value: BluetoothServiceCapabilities): Self = StObject.set(x, "serviceCapabilities", value.asInstanceOf[js.Any])
   }
 }

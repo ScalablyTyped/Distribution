@@ -14,16 +14,13 @@ trait PickImplonPlaceholderDisp extends StObject {
 }
 object PickImplonPlaceholderDisp {
   
-  @scala.inline
-  def apply(onPlaceholderDisplay: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonPlaceholderDisp = {
+  inline def apply(onPlaceholderDisplay: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonPlaceholderDisp = {
     val __obj = js.Dynamic.literal(onPlaceholderDisplay = onPlaceholderDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPlaceholderDisp]
   }
   
-  @scala.inline
-  implicit class PickImplonPlaceholderDispMutableBuilder[Self <: PickImplonPlaceholderDisp] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonPlaceholderDisp](x: Self) {
     
-    @scala.inline
-    def setOnPlaceholderDisplay(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPlaceholderDisplay", value.asInstanceOf[js.Any])
+    inline def setOnPlaceholderDisplay(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPlaceholderDisplay", value.asInstanceOf[js.Any])
   }
 }

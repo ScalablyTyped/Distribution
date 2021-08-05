@@ -12,25 +12,19 @@ trait DSWalkOptions extends StObject {
 }
 object DSWalkOptions {
   
-  @scala.inline
-  def apply(): DSWalkOptions = {
+  inline def apply(): DSWalkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DSWalkOptions]
   }
   
-  @scala.inline
-  implicit class DSWalkOptionsMutableBuilder[Self <: DSWalkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DSWalkOptions](x: Self) {
     
-    @scala.inline
-    def setEnter(value: /* node */ DSNode => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+    inline def setEnter(value: /* node */ DSNode => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setLeave(value: /* node */ DSNode => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
+    inline def setLeave(value: /* node */ DSNode => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+    inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFrameSizeRule extends StObject
 object WdFrameSizeRule {
   
-  @scala.inline
-  def wdFrameAtLeast: `1` = 1.asInstanceOf[`1`]
+  inline def wdFrameAtLeast: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdFrameAuto: `0` = 0.asInstanceOf[`0`]
+  inline def wdFrameAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFrameExact: `2` = 2.asInstanceOf[`2`]
+  inline def wdFrameExact: `2` = 2.asInstanceOf[`2`]
 }

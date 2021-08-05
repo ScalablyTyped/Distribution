@@ -32,8 +32,7 @@ trait ExternalMetricStatus extends StObject {
 }
 object ExternalMetricStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentAverageValue: String,
     currentValue: String,
     metricName: String,
@@ -43,19 +42,14 @@ object ExternalMetricStatus {
     __obj.asInstanceOf[ExternalMetricStatus]
   }
   
-  @scala.inline
-  implicit class ExternalMetricStatusMutableBuilder[Self <: ExternalMetricStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalMetricStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentAverageValue(value: String): Self = StObject.set(x, "currentAverageValue", value.asInstanceOf[js.Any])
+    inline def setCurrentAverageValue(value: String): Self = StObject.set(x, "currentAverageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentValue(value: String): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: String): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricSelector(value: LabelSelector): Self = StObject.set(x, "metricSelector", value.asInstanceOf[js.Any])
+    inline def setMetricSelector(value: LabelSelector): Self = StObject.set(x, "metricSelector", value.asInstanceOf[js.Any])
   }
 }

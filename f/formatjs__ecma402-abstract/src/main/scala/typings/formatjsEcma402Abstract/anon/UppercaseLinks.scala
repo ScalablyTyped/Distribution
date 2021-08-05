@@ -13,19 +13,15 @@ trait UppercaseLinks extends StObject {
 }
 object UppercaseLinks {
   
-  @scala.inline
-  def apply(tzData: Record[String, js.Any], uppercaseLinks: Record[String, js.Any]): UppercaseLinks = {
+  inline def apply(tzData: Record[String, js.Any], uppercaseLinks: Record[String, js.Any]): UppercaseLinks = {
     val __obj = js.Dynamic.literal(tzData = tzData.asInstanceOf[js.Any], uppercaseLinks = uppercaseLinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[UppercaseLinks]
   }
   
-  @scala.inline
-  implicit class UppercaseLinksMutableBuilder[Self <: UppercaseLinks] (val x: Self) extends AnyVal {
+  extension [Self <: UppercaseLinks](x: Self) {
     
-    @scala.inline
-    def setTzData(value: Record[String, js.Any]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
+    inline def setTzData(value: Record[String, js.Any]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUppercaseLinks(value: Record[String, js.Any]): Self = StObject.set(x, "uppercaseLinks", value.asInstanceOf[js.Any])
+    inline def setUppercaseLinks(value: Record[String, js.Any]): Self = StObject.set(x, "uppercaseLinks", value.asInstanceOf[js.Any])
   }
 }

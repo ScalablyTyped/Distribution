@@ -23,6 +23,5 @@ class Int32Array protected ()
 }
 object Int32Array {
   
-  @scala.inline
-  def apply: Int32ArrayConstructor = js.Dynamic.global.selectDynamic("Int32Array").asInstanceOf[Int32ArrayConstructor]
+  inline def apply: Int32ArrayConstructor = js.Dynamic.global.selectDynamic("Int32Array").asInstanceOf[Int32ArrayConstructor]
 }

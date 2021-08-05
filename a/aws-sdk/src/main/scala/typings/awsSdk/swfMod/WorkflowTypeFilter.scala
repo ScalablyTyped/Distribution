@@ -18,22 +18,17 @@ trait WorkflowTypeFilter extends StObject {
 }
 object WorkflowTypeFilter {
   
-  @scala.inline
-  def apply(name: Name): WorkflowTypeFilter = {
+  inline def apply(name: Name): WorkflowTypeFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowTypeFilter]
   }
   
-  @scala.inline
-  implicit class WorkflowTypeFilterMutableBuilder[Self <: WorkflowTypeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTypeFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: VersionOptional): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: VersionOptional): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

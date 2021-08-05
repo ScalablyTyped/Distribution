@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.ReturnVar")
 @js.native
-class ReturnVar protected ()
+/* private */ class ReturnVar ()
   extends StObject
      with typings.activexAccess.Access.ReturnVar {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.ReturnVar_typekey")
   var AccessDotReturnVar_typekey: typings.activexAccess.Access.ReturnVar = js.native
   

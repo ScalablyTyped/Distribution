@@ -36,31 +36,23 @@ trait ParamsResourceGroupsLookup
 }
 object ParamsResourceGroupsLookup {
   
-  @scala.inline
-  def apply(): ParamsResourceGroupsLookup = {
+  inline def apply(): ParamsResourceGroupsLookup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceGroupsLookup]
   }
   
-  @scala.inline
-  implicit class ParamsResourceGroupsLookupMutableBuilder[Self <: ParamsResourceGroupsLookup] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceGroupsLookup](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setGroupKeyDotid(value: String): Self = StObject.set(x, "groupKey.id", value.asInstanceOf[js.Any])
+    inline def setGroupKeyDotid(value: String): Self = StObject.set(x, "groupKey.id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyDotidUndefined: Self = StObject.set(x, "groupKey.id", js.undefined)
+    inline def setGroupKeyDotidUndefined: Self = StObject.set(x, "groupKey.id", js.undefined)
     
-    @scala.inline
-    def setGroupKeyDotnamespace(value: String): Self = StObject.set(x, "groupKey.namespace", value.asInstanceOf[js.Any])
+    inline def setGroupKeyDotnamespace(value: String): Self = StObject.set(x, "groupKey.namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyDotnamespaceUndefined: Self = StObject.set(x, "groupKey.namespace", js.undefined)
+    inline def setGroupKeyDotnamespaceUndefined: Self = StObject.set(x, "groupKey.namespace", js.undefined)
   }
 }

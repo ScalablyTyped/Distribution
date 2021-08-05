@@ -13,19 +13,15 @@ trait CreateNetworkInterfaceResult extends StObject {
 }
 object CreateNetworkInterfaceResult {
   
-  @scala.inline
-  def apply(): CreateNetworkInterfaceResult = {
+  inline def apply(): CreateNetworkInterfaceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNetworkInterfaceResult]
   }
   
-  @scala.inline
-  implicit class CreateNetworkInterfaceResultMutableBuilder[Self <: CreateNetworkInterfaceResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNetworkInterfaceResult](x: Self) {
     
-    @scala.inline
-    def setNetworkInterface(value: NetworkInterface): Self = StObject.set(x, "NetworkInterface", value.asInstanceOf[js.Any])
+    inline def setNetworkInterface(value: NetworkInterface): Self = StObject.set(x, "NetworkInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceUndefined: Self = StObject.set(x, "NetworkInterface", js.undefined)
+    inline def setNetworkInterfaceUndefined: Self = StObject.set(x, "NetworkInterface", js.undefined)
   }
 }

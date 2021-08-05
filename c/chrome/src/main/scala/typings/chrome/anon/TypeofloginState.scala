@@ -17,8 +17,7 @@ trait TypeofloginState extends StObject {
 }
 object TypeofloginState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getProfileType: js.Function1[/* profileType */ ProfileType, Unit] => Unit,
     getSessionState: js.Function1[/* sessionState */ SessionState, Unit] => Unit,
     onSessionStateChanged: SessionStateChangedEvent
@@ -27,16 +26,12 @@ object TypeofloginState {
     __obj.asInstanceOf[TypeofloginState]
   }
   
-  @scala.inline
-  implicit class TypeofloginStateMutableBuilder[Self <: TypeofloginState] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofloginState](x: Self) {
     
-    @scala.inline
-    def setGetProfileType(value: js.Function1[/* profileType */ ProfileType, Unit] => Unit): Self = StObject.set(x, "getProfileType", js.Any.fromFunction1(value))
+    inline def setGetProfileType(value: js.Function1[/* profileType */ ProfileType, Unit] => Unit): Self = StObject.set(x, "getProfileType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSessionState(value: js.Function1[/* sessionState */ SessionState, Unit] => Unit): Self = StObject.set(x, "getSessionState", js.Any.fromFunction1(value))
+    inline def setGetSessionState(value: js.Function1[/* sessionState */ SessionState, Unit] => Unit): Self = StObject.set(x, "getSessionState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSessionStateChanged(value: SessionStateChangedEvent): Self = StObject.set(x, "onSessionStateChanged", value.asInstanceOf[js.Any])
+    inline def setOnSessionStateChanged(value: SessionStateChangedEvent): Self = StObject.set(x, "onSessionStateChanged", value.asInstanceOf[js.Any])
   }
 }

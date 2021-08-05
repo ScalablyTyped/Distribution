@@ -23,8 +23,7 @@ trait XChartShapeContainer
 }
 object XChartShapeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Shape: XShape,
     acquire: () => Unit,
     addShape: XShape => Unit,
@@ -37,19 +36,14 @@ object XChartShapeContainer {
     __obj.asInstanceOf[XChartShapeContainer]
   }
   
-  @scala.inline
-  implicit class XChartShapeContainerMutableBuilder[Self <: XChartShapeContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XChartShapeContainer](x: Self) {
     
-    @scala.inline
-    def setAddShape(value: XShape => Unit): Self = StObject.set(x, "addShape", js.Any.fromFunction1(value))
+    inline def setAddShape(value: XShape => Unit): Self = StObject.set(x, "addShape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetShape(value: () => XShape): Self = StObject.set(x, "getShape", js.Any.fromFunction0(value))
+    inline def setGetShape(value: () => XShape): Self = StObject.set(x, "getShape", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveShape(value: XShape => Unit): Self = StObject.set(x, "removeShape", js.Any.fromFunction1(value))
+    inline def setRemoveShape(value: XShape => Unit): Self = StObject.set(x, "removeShape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
   }
 }

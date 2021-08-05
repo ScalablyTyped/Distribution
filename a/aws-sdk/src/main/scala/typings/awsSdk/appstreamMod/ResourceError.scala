@@ -23,31 +23,23 @@ trait ResourceError extends StObject {
 }
 object ResourceError {
   
-  @scala.inline
-  def apply(): ResourceError = {
+  inline def apply(): ResourceError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceError]
   }
   
-  @scala.inline
-  implicit class ResourceErrorMutableBuilder[Self <: ResourceError] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: FleetErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: FleetErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorTimestamp(value: Timestamp): Self = StObject.set(x, "ErrorTimestamp", value.asInstanceOf[js.Any])
+    inline def setErrorTimestamp(value: Timestamp): Self = StObject.set(x, "ErrorTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTimestampUndefined: Self = StObject.set(x, "ErrorTimestamp", js.undefined)
+    inline def setErrorTimestampUndefined: Self = StObject.set(x, "ErrorTimestamp", js.undefined)
   }
 }

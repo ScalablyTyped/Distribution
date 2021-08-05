@@ -8,21 +8,17 @@ object luminoCommandsStrings {
   
   @js.native
   sealed trait added extends StObject
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
   sealed trait changed extends StObject
-  @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
+  inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
   sealed trait `many-changed` extends StObject
-  @scala.inline
-  def `many-changed`: `many-changed` = "many-changed".asInstanceOf[`many-changed`]
+  inline def `many-changed`: `many-changed` = "many-changed".asInstanceOf[`many-changed`]
   
   @js.native
   sealed trait removed extends StObject
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
+  inline def removed: removed = "removed".asInstanceOf[removed]
 }

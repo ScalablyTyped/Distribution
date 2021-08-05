@@ -18,40 +18,29 @@ trait IListTopicSnapshotsRequest extends StObject {
 }
 object IListTopicSnapshotsRequest {
   
-  @scala.inline
-  def apply(): IListTopicSnapshotsRequest = {
+  inline def apply(): IListTopicSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListTopicSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class IListTopicSnapshotsRequestMutableBuilder[Self <: IListTopicSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IListTopicSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
+    inline def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
+    inline def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNull: Self = StObject.set(x, "topic", null)
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

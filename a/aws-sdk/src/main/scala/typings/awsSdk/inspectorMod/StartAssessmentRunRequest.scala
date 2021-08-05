@@ -18,22 +18,17 @@ trait StartAssessmentRunRequest extends StObject {
 }
 object StartAssessmentRunRequest {
   
-  @scala.inline
-  def apply(assessmentTemplateArn: Arn): StartAssessmentRunRequest = {
+  inline def apply(assessmentTemplateArn: Arn): StartAssessmentRunRequest = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAssessmentRunRequest]
   }
   
-  @scala.inline
-  implicit class StartAssessmentRunRequestMutableBuilder[Self <: StartAssessmentRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartAssessmentRunRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunName(value: AssessmentRunName): Self = StObject.set(x, "assessmentRunName", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunName(value: AssessmentRunName): Self = StObject.set(x, "assessmentRunName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunNameUndefined: Self = StObject.set(x, "assessmentRunName", js.undefined)
+    inline def setAssessmentRunNameUndefined: Self = StObject.set(x, "assessmentRunName", js.undefined)
     
-    @scala.inline
-    def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
   }
 }

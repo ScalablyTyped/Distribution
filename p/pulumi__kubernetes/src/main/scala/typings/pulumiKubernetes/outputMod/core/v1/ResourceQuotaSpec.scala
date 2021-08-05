@@ -27,25 +27,19 @@ trait ResourceQuotaSpec extends StObject {
 }
 object ResourceQuotaSpec {
   
-  @scala.inline
-  def apply(hard: StringDictionary[String], scopeSelector: ScopeSelector, scopes: js.Array[String]): ResourceQuotaSpec = {
+  inline def apply(hard: StringDictionary[String], scopeSelector: ScopeSelector, scopes: js.Array[String]): ResourceQuotaSpec = {
     val __obj = js.Dynamic.literal(hard = hard.asInstanceOf[js.Any], scopeSelector = scopeSelector.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceQuotaSpec]
   }
   
-  @scala.inline
-  implicit class ResourceQuotaSpecMutableBuilder[Self <: ResourceQuotaSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuotaSpec](x: Self) {
     
-    @scala.inline
-    def setHard(value: StringDictionary[String]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+    inline def setHard(value: StringDictionary[String]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeSelector(value: ScopeSelector): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
+    inline def setScopeSelector(value: ScopeSelector): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

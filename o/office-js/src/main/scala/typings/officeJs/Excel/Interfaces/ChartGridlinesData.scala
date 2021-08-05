@@ -25,25 +25,19 @@ trait ChartGridlinesData extends StObject {
 }
 object ChartGridlinesData {
   
-  @scala.inline
-  def apply(): ChartGridlinesData = {
+  inline def apply(): ChartGridlinesData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartGridlinesData]
   }
   
-  @scala.inline
-  implicit class ChartGridlinesDataMutableBuilder[Self <: ChartGridlinesData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartGridlinesData](x: Self) {
     
-    @scala.inline
-    def setFormat(value: ChartGridlinesFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartGridlinesFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

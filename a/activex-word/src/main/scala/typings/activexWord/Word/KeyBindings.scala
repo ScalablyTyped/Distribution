@@ -41,6 +41,6 @@ trait KeyBindings extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.KeyBindings_typekey")
+  /* private */ @JSName("Word.KeyBindings_typekey")
   var WordDotKeyBindings_typekey: KeyBindings = js.native
 }

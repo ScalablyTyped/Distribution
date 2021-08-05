@@ -22,49 +22,35 @@ trait Extensions extends StObject {
 }
 object Extensions {
   
-  @scala.inline
-  def apply(): Extensions = {
+  inline def apply(): Extensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Extensions]
   }
   
-  @scala.inline
-  implicit class ExtensionsMutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
+  extension [Self <: Extensions](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
+    inline def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
+    inline def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
     
-    @scala.inline
-    def setMap(value: typings.amapJsSdk.AMap.Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: typings.amapJsSdk.AMap.Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: DrivingPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: DrivingPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
+    inline def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
+    inline def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
   }
 }

@@ -30,73 +30,51 @@ trait PartialStyleRulesCircular extends StObject {
 }
 object PartialStyleRulesCircular {
   
-  @scala.inline
-  def apply(): PartialStyleRulesCircular = {
+  inline def apply(): PartialStyleRulesCircular = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesCircular]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesCircularMutableBuilder[Self <: PartialStyleRulesCircular] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesCircular](x: Self) {
     
-    @scala.inline
-    def setCircle(value: CSSProperties): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: CSSProperties): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleDisableShrink(value: CSSProperties): Self = StObject.set(x, "circleDisableShrink", value.asInstanceOf[js.Any])
+    inline def setCircleDisableShrink(value: CSSProperties): Self = StObject.set(x, "circleDisableShrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleDisableShrinkUndefined: Self = StObject.set(x, "circleDisableShrink", js.undefined)
+    inline def setCircleDisableShrinkUndefined: Self = StObject.set(x, "circleDisableShrink", js.undefined)
     
-    @scala.inline
-    def setCircleIndeterminate(value: CSSProperties): Self = StObject.set(x, "circleIndeterminate", value.asInstanceOf[js.Any])
+    inline def setCircleIndeterminate(value: CSSProperties): Self = StObject.set(x, "circleIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleIndeterminateUndefined: Self = StObject.set(x, "circleIndeterminate", js.undefined)
+    inline def setCircleIndeterminateUndefined: Self = StObject.set(x, "circleIndeterminate", js.undefined)
     
-    @scala.inline
-    def setCircleStatic(value: CSSProperties): Self = StObject.set(x, "circleStatic", value.asInstanceOf[js.Any])
+    inline def setCircleStatic(value: CSSProperties): Self = StObject.set(x, "circleStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleStaticUndefined: Self = StObject.set(x, "circleStatic", js.undefined)
+    inline def setCircleStaticUndefined: Self = StObject.set(x, "circleStatic", js.undefined)
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setColorSecondary(value: CSSProperties): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    inline def setColorSecondary(value: CSSProperties): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
-    @scala.inline
-    def setIndeterminate(value: CSSProperties): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    inline def setIndeterminate(value: CSSProperties): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+    inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setStatic(value: CSSProperties): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: CSSProperties): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    @scala.inline
-    def setSvg(value: CSSProperties): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: CSSProperties): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+    inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
   }
 }

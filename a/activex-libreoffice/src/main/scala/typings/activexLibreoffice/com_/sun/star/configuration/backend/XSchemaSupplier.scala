@@ -25,8 +25,7 @@ trait XSchemaSupplier
 }
 object XSchemaSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getComponentSchema: String => XSchema,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XSchemaSupplier {
     __obj.asInstanceOf[XSchemaSupplier]
   }
   
-  @scala.inline
-  implicit class XSchemaSupplierMutableBuilder[Self <: XSchemaSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XSchemaSupplier](x: Self) {
     
-    @scala.inline
-    def setGetComponentSchema(value: String => XSchema): Self = StObject.set(x, "getComponentSchema", js.Any.fromFunction1(value))
+    inline def setGetComponentSchema(value: String => XSchema): Self = StObject.set(x, "getComponentSchema", js.Any.fromFunction1(value))
   }
 }

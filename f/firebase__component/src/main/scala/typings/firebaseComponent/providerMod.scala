@@ -19,9 +19,9 @@ object providerMod {
     def clearInstance(): Unit = js.native
     def clearInstance(identifier: String): Unit = js.native
     
-    var component: js.Any = js.native
+    /* private */ var component: js.Any = js.native
     
-    val container: js.Any = js.native
+    /* private */ val container: js.Any = js.native
     
     def delete(): js.Promise[Unit] = js.native
     
@@ -50,17 +50,17 @@ object providerMod {
     def getImmediate(options: Identifier): (/* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any) | Null = js.native
     def getImmediate(options: Optional): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
     
-    var getOrInitializeService: js.Any = js.native
+    /* private */ var getOrInitializeService: js.Any = js.native
     
-    val instances: js.Any = js.native
+    /* private */ val instances: js.Any = js.native
     
-    val instancesDeferred: js.Any = js.native
+    /* private */ val instancesDeferred: js.Any = js.native
     
     def isComponentSet(): Boolean = js.native
     
-    val name: js.Any = js.native
+    /* private */ val name: js.Any = js.native
     
-    var normalizeInstanceIdentifier: js.Any = js.native
+    /* private */ var normalizeInstanceIdentifier: js.Any = js.native
     
     def setComponent(component: Component[T]): Unit = js.native
   }

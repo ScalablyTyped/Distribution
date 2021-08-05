@@ -14,31 +14,23 @@ trait TraceParams extends StObject {
 }
 object TraceParams {
   
-  @scala.inline
-  def apply(): TraceParams = {
+  inline def apply(): TraceParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TraceParams]
   }
   
-  @scala.inline
-  implicit class TraceParamsMutableBuilder[Self <: TraceParams] (val x: Self) extends AnyVal {
+  extension [Self <: TraceParams](x: Self) {
     
-    @scala.inline
-    def setDisableMemory(value: Boolean): Self = StObject.set(x, "disableMemory", value.asInstanceOf[js.Any])
+    inline def setDisableMemory(value: Boolean): Self = StObject.set(x, "disableMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMemoryUndefined: Self = StObject.set(x, "disableMemory", js.undefined)
+    inline def setDisableMemoryUndefined: Self = StObject.set(x, "disableMemory", js.undefined)
     
-    @scala.inline
-    def setDisableStack(value: Boolean): Self = StObject.set(x, "disableStack", value.asInstanceOf[js.Any])
+    inline def setDisableStack(value: Boolean): Self = StObject.set(x, "disableStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStackUndefined: Self = StObject.set(x, "disableStack", js.undefined)
+    inline def setDisableStackUndefined: Self = StObject.set(x, "disableStack", js.undefined)
     
-    @scala.inline
-    def setDisableStorage(value: Boolean): Self = StObject.set(x, "disableStorage", value.asInstanceOf[js.Any])
+    inline def setDisableStorage(value: Boolean): Self = StObject.set(x, "disableStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStorageUndefined: Self = StObject.set(x, "disableStorage", js.undefined)
+    inline def setDisableStorageUndefined: Self = StObject.set(x, "disableStorage", js.undefined)
   }
 }

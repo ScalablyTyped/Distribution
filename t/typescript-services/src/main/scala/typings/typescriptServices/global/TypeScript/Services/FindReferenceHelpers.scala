@@ -17,14 +17,11 @@ object FindReferenceHelpers {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def checkSymbolsForDeclarationEquality(firstSymbol: js.Any, secondSymbol: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSymbolsForDeclarationEquality")(firstSymbol.asInstanceOf[js.Any], secondSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def checkSymbolsForDeclarationEquality(firstSymbol: js.Any, secondSymbol: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSymbolsForDeclarationEquality")(firstSymbol.asInstanceOf[js.Any], secondSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def compareSymbolsForLexicalIdentity(firstSymbol: PullSymbol, secondSymbol: PullSymbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSymbolsForLexicalIdentity")(firstSymbol.asInstanceOf[js.Any], secondSymbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareSymbolsForLexicalIdentity(firstSymbol: PullSymbol, secondSymbol: PullSymbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSymbolsForLexicalIdentity")(firstSymbol.asInstanceOf[js.Any], secondSymbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def declarationsAreSameOrParents(firstDecl: js.Any, secondDecl: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationsAreSameOrParents")(firstDecl.asInstanceOf[js.Any], secondDecl.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def declarationsAreSameOrParents(firstDecl: js.Any, secondDecl: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationsAreSameOrParents")(firstDecl.asInstanceOf[js.Any], secondDecl.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

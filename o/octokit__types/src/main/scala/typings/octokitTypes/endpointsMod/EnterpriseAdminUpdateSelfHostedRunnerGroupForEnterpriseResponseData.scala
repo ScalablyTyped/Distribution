@@ -20,8 +20,7 @@ trait EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData extend
 }
 object EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     default: Boolean,
     id: Double,
     name: String,
@@ -33,25 +32,18 @@ object EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData {
     __obj.asInstanceOf[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseDataMutableBuilder[Self <: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunners_url(value: String): Self = StObject.set(x, "runners_url", value.asInstanceOf[js.Any])
+    inline def setRunners_url(value: String): Self = StObject.set(x, "runners_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_organizations_url(value: String): Self = StObject.set(x, "selected_organizations_url", value.asInstanceOf[js.Any])
+    inline def setSelected_organizations_url(value: String): Self = StObject.set(x, "selected_organizations_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

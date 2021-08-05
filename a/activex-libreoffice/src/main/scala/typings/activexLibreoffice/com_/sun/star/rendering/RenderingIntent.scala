@@ -19,16 +19,12 @@ object RenderingIntent {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ABSOLUTE_COLORIMETRIC: `3` = 3.asInstanceOf[`3`]
+    inline def ABSOLUTE_COLORIMETRIC: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def PERCEPTUAL: `0` = 0.asInstanceOf[`0`]
+    inline def PERCEPTUAL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def RELATIVE_COLORIMETRIC: `2` = 2.asInstanceOf[`2`]
+    inline def RELATIVE_COLORIMETRIC: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SATURATION: `1` = 1.asInstanceOf[`1`]
+    inline def SATURATION: `1` = 1.asInstanceOf[`1`]
   }
 }

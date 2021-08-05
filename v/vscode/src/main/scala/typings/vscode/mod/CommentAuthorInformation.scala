@@ -18,22 +18,17 @@ trait CommentAuthorInformation extends StObject {
 }
 object CommentAuthorInformation {
   
-  @scala.inline
-  def apply(name: String): CommentAuthorInformation = {
+  inline def apply(name: String): CommentAuthorInformation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentAuthorInformation]
   }
   
-  @scala.inline
-  implicit class CommentAuthorInformationMutableBuilder[Self <: CommentAuthorInformation] (val x: Self) extends AnyVal {
+  extension [Self <: CommentAuthorInformation](x: Self) {
     
-    @scala.inline
-    def setIconPath(value: Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

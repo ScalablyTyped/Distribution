@@ -18,25 +18,19 @@ trait SavingsPlansSavings extends StObject {
 }
 object SavingsPlansSavings {
   
-  @scala.inline
-  def apply(): SavingsPlansSavings = {
+  inline def apply(): SavingsPlansSavings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansSavings]
   }
   
-  @scala.inline
-  implicit class SavingsPlansSavingsMutableBuilder[Self <: SavingsPlansSavings] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansSavings](x: Self) {
     
-    @scala.inline
-    def setNetSavings(value: GenericString): Self = StObject.set(x, "NetSavings", value.asInstanceOf[js.Any])
+    inline def setNetSavings(value: GenericString): Self = StObject.set(x, "NetSavings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetSavingsUndefined: Self = StObject.set(x, "NetSavings", js.undefined)
+    inline def setNetSavingsUndefined: Self = StObject.set(x, "NetSavings", js.undefined)
     
-    @scala.inline
-    def setOnDemandCostEquivalent(value: GenericString): Self = StObject.set(x, "OnDemandCostEquivalent", value.asInstanceOf[js.Any])
+    inline def setOnDemandCostEquivalent(value: GenericString): Self = StObject.set(x, "OnDemandCostEquivalent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandCostEquivalentUndefined: Self = StObject.set(x, "OnDemandCostEquivalent", js.undefined)
+    inline def setOnDemandCostEquivalentUndefined: Self = StObject.set(x, "OnDemandCostEquivalent", js.undefined)
   }
 }

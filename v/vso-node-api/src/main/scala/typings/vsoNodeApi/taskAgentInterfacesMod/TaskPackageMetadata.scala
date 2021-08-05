@@ -23,23 +23,18 @@ trait TaskPackageMetadata extends StObject {
 }
 object TaskPackageMetadata {
   
-  @scala.inline
-  def apply(`type`: String, url: String, version: String): TaskPackageMetadata = {
+  inline def apply(`type`: String, url: String, version: String): TaskPackageMetadata = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskPackageMetadata]
   }
   
-  @scala.inline
-  implicit class TaskPackageMetadataMutableBuilder[Self <: TaskPackageMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TaskPackageMetadata](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

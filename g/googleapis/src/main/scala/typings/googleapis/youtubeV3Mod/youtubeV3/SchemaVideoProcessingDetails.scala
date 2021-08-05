@@ -69,61 +69,43 @@ trait SchemaVideoProcessingDetails extends StObject {
 }
 object SchemaVideoProcessingDetails {
   
-  @scala.inline
-  def apply(): SchemaVideoProcessingDetails = {
+  inline def apply(): SchemaVideoProcessingDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoProcessingDetails]
   }
   
-  @scala.inline
-  implicit class SchemaVideoProcessingDetailsMutableBuilder[Self <: SchemaVideoProcessingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoProcessingDetails](x: Self) {
     
-    @scala.inline
-    def setEditorSuggestionsAvailability(value: String): Self = StObject.set(x, "editorSuggestionsAvailability", value.asInstanceOf[js.Any])
+    inline def setEditorSuggestionsAvailability(value: String): Self = StObject.set(x, "editorSuggestionsAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorSuggestionsAvailabilityUndefined: Self = StObject.set(x, "editorSuggestionsAvailability", js.undefined)
+    inline def setEditorSuggestionsAvailabilityUndefined: Self = StObject.set(x, "editorSuggestionsAvailability", js.undefined)
     
-    @scala.inline
-    def setFileDetailsAvailability(value: String): Self = StObject.set(x, "fileDetailsAvailability", value.asInstanceOf[js.Any])
+    inline def setFileDetailsAvailability(value: String): Self = StObject.set(x, "fileDetailsAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDetailsAvailabilityUndefined: Self = StObject.set(x, "fileDetailsAvailability", js.undefined)
+    inline def setFileDetailsAvailabilityUndefined: Self = StObject.set(x, "fileDetailsAvailability", js.undefined)
     
-    @scala.inline
-    def setProcessingFailureReason(value: String): Self = StObject.set(x, "processingFailureReason", value.asInstanceOf[js.Any])
+    inline def setProcessingFailureReason(value: String): Self = StObject.set(x, "processingFailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingFailureReasonUndefined: Self = StObject.set(x, "processingFailureReason", js.undefined)
+    inline def setProcessingFailureReasonUndefined: Self = StObject.set(x, "processingFailureReason", js.undefined)
     
-    @scala.inline
-    def setProcessingIssuesAvailability(value: String): Self = StObject.set(x, "processingIssuesAvailability", value.asInstanceOf[js.Any])
+    inline def setProcessingIssuesAvailability(value: String): Self = StObject.set(x, "processingIssuesAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingIssuesAvailabilityUndefined: Self = StObject.set(x, "processingIssuesAvailability", js.undefined)
+    inline def setProcessingIssuesAvailabilityUndefined: Self = StObject.set(x, "processingIssuesAvailability", js.undefined)
     
-    @scala.inline
-    def setProcessingProgress(value: SchemaVideoProcessingDetailsProcessingProgress): Self = StObject.set(x, "processingProgress", value.asInstanceOf[js.Any])
+    inline def setProcessingProgress(value: SchemaVideoProcessingDetailsProcessingProgress): Self = StObject.set(x, "processingProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingProgressUndefined: Self = StObject.set(x, "processingProgress", js.undefined)
+    inline def setProcessingProgressUndefined: Self = StObject.set(x, "processingProgress", js.undefined)
     
-    @scala.inline
-    def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
+    inline def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
+    inline def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
     
-    @scala.inline
-    def setTagSuggestionsAvailability(value: String): Self = StObject.set(x, "tagSuggestionsAvailability", value.asInstanceOf[js.Any])
+    inline def setTagSuggestionsAvailability(value: String): Self = StObject.set(x, "tagSuggestionsAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSuggestionsAvailabilityUndefined: Self = StObject.set(x, "tagSuggestionsAvailability", js.undefined)
+    inline def setTagSuggestionsAvailabilityUndefined: Self = StObject.set(x, "tagSuggestionsAvailability", js.undefined)
     
-    @scala.inline
-    def setThumbnailsAvailability(value: String): Self = StObject.set(x, "thumbnailsAvailability", value.asInstanceOf[js.Any])
+    inline def setThumbnailsAvailability(value: String): Self = StObject.set(x, "thumbnailsAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsAvailabilityUndefined: Self = StObject.set(x, "thumbnailsAvailability", js.undefined)
+    inline def setThumbnailsAvailabilityUndefined: Self = StObject.set(x, "thumbnailsAvailability", js.undefined)
   }
 }

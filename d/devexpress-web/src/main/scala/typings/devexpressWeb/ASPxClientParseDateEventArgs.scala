@@ -29,22 +29,17 @@ trait ASPxClientParseDateEventArgs
 }
 object ASPxClientParseDateEventArgs {
   
-  @scala.inline
-  def apply(date: Date, handled: Boolean, value: String): ASPxClientParseDateEventArgs = {
+  inline def apply(date: Date, handled: Boolean, value: String): ASPxClientParseDateEventArgs = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientParseDateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientParseDateEventArgsMutableBuilder[Self <: ASPxClientParseDateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientParseDateEventArgs](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

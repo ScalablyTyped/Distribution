@@ -27,25 +27,19 @@ trait SchemaTextRotation extends StObject {
 }
 object SchemaTextRotation {
   
-  @scala.inline
-  def apply(): SchemaTextRotation = {
+  inline def apply(): SchemaTextRotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextRotation]
   }
   
-  @scala.inline
-  implicit class SchemaTextRotationMutableBuilder[Self <: SchemaTextRotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextRotation](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

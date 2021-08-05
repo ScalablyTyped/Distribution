@@ -22,28 +22,21 @@ trait SchemaQuestsResetMultipleForAllRequest extends StObject {
 }
 object SchemaQuestsResetMultipleForAllRequest {
   
-  @scala.inline
-  def apply(): SchemaQuestsResetMultipleForAllRequest = {
+  inline def apply(): SchemaQuestsResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuestsResetMultipleForAllRequest]
   }
   
-  @scala.inline
-  implicit class SchemaQuestsResetMultipleForAllRequestMutableBuilder[Self <: SchemaQuestsResetMultipleForAllRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuestsResetMultipleForAllRequest](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setQuest_ids(value: js.Array[String]): Self = StObject.set(x, "quest_ids", value.asInstanceOf[js.Any])
+    inline def setQuest_ids(value: js.Array[String]): Self = StObject.set(x, "quest_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuest_idsUndefined: Self = StObject.set(x, "quest_ids", js.undefined)
+    inline def setQuest_idsUndefined: Self = StObject.set(x, "quest_ids", js.undefined)
     
-    @scala.inline
-    def setQuest_idsVarargs(value: String*): Self = StObject.set(x, "quest_ids", js.Array(value :_*))
+    inline def setQuest_idsVarargs(value: String*): Self = StObject.set(x, "quest_ids", js.Array(value :_*))
   }
 }

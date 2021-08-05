@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMailMergeDefaultRecord extends StObject
 object WdMailMergeDefaultRecord {
   
-  @scala.inline
-  def wdDefaultFirstRecord: `1` = 1.asInstanceOf[`1`]
+  inline def wdDefaultFirstRecord: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdDefaultLastRecord: `-16` = -16.asInstanceOf[`-16`]
+  inline def wdDefaultLastRecord: `-16` = -16.asInstanceOf[`-16`]
 }

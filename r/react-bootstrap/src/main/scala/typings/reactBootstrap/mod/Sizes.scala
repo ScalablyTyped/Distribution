@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Sizes extends StObject
 object Sizes {
   
-  @scala.inline
-  def large: typings.reactBootstrap.reactBootstrapStrings.large = "large".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.large]
+  inline def large: typings.reactBootstrap.reactBootstrapStrings.large = "large".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.large]
   
-  @scala.inline
-  def lg: typings.reactBootstrap.reactBootstrapStrings.lg = "lg".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.lg]
+  inline def lg: typings.reactBootstrap.reactBootstrapStrings.lg = "lg".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.lg]
   
-  @scala.inline
-  def medium: typings.reactBootstrap.reactBootstrapStrings.medium = "medium".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.medium]
+  inline def medium: typings.reactBootstrap.reactBootstrapStrings.medium = "medium".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.medium]
   
-  @scala.inline
-  def sm: typings.reactBootstrap.reactBootstrapStrings.sm = "sm".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.sm]
+  inline def sm: typings.reactBootstrap.reactBootstrapStrings.sm = "sm".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.sm]
   
-  @scala.inline
-  def small: typings.reactBootstrap.reactBootstrapStrings.small = "small".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.small]
+  inline def small: typings.reactBootstrap.reactBootstrapStrings.small = "small".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.small]
   
-  @scala.inline
-  def xs: typings.reactBootstrap.reactBootstrapStrings.xs = "xs".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.xs]
+  inline def xs: typings.reactBootstrap.reactBootstrapStrings.xs = "xs".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.xs]
   
-  @scala.inline
-  def xsmall: typings.reactBootstrap.reactBootstrapStrings.xsmall = "xsmall".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.xsmall]
+  inline def xsmall: typings.reactBootstrap.reactBootstrapStrings.xsmall = "xsmall".asInstanceOf[typings.reactBootstrap.reactBootstrapStrings.xsmall]
 }

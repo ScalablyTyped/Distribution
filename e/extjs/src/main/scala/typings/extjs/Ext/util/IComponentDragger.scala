@@ -35,43 +35,31 @@ trait IComponentDragger
 }
 object IComponentDragger {
   
-  @scala.inline
-  def apply(): IComponentDragger = {
+  inline def apply(): IComponentDragger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComponentDragger]
   }
   
-  @scala.inline
-  implicit class IComponentDraggerMutableBuilder[Self <: IComponentDragger] (val x: Self) extends AnyVal {
+  extension [Self <: IComponentDragger](x: Self) {
     
-    @scala.inline
-    def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
+    inline def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainDelegate(value: Boolean): Self = StObject.set(x, "constrainDelegate", value.asInstanceOf[js.Any])
+    inline def setConstrainDelegate(value: Boolean): Self = StObject.set(x, "constrainDelegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainDelegateUndefined: Self = StObject.set(x, "constrainDelegate", js.undefined)
+    inline def setConstrainDelegateUndefined: Self = StObject.set(x, "constrainDelegate", js.undefined)
     
-    @scala.inline
-    def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
+    inline def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
-    @scala.inline
-    def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+    inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    @scala.inline
-    def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+    inline def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    @scala.inline
-    def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
   }
 }

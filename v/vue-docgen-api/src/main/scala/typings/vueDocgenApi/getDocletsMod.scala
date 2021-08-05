@@ -11,6 +11,5 @@ object getDocletsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: String): DocBlockTags = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[DocBlockTags]
+  inline def default(str: String): DocBlockTags = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[DocBlockTags]
 }

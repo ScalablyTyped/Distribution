@@ -25,37 +25,27 @@ trait Cache extends StObject {
 }
 object Cache {
   
-  @scala.inline
-  def apply(): Cache = {
+  inline def apply(): Cache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cache]
   }
   
-  @scala.inline
-  implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+  extension [Self <: Cache](x: Self) {
     
-    @scala.inline
-    def setAfterRequest(value: CacheDetails): Self = StObject.set(x, "afterRequest", value.asInstanceOf[js.Any])
+    inline def setAfterRequest(value: CacheDetails): Self = StObject.set(x, "afterRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterRequestNull: Self = StObject.set(x, "afterRequest", null)
+    inline def setAfterRequestNull: Self = StObject.set(x, "afterRequest", null)
     
-    @scala.inline
-    def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
+    inline def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
     
-    @scala.inline
-    def setBeforeRequest(value: CacheDetails): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
+    inline def setBeforeRequest(value: CacheDetails): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeRequestNull: Self = StObject.set(x, "beforeRequest", null)
+    inline def setBeforeRequestNull: Self = StObject.set(x, "beforeRequest", null)
     
-    @scala.inline
-    def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
+    inline def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
   }
 }

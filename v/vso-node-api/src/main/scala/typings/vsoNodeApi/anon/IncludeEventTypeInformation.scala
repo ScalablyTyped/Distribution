@@ -18,8 +18,7 @@ trait IncludeEventTypeInformation extends StObject {
 }
 object IncludeEventTypeInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeEventTypeInformation: scala.Double,
     includeGroup: scala.Double,
     includeUser: scala.Double,
@@ -30,22 +29,16 @@ object IncludeEventTypeInformation {
     __obj.asInstanceOf[IncludeEventTypeInformation]
   }
   
-  @scala.inline
-  implicit class IncludeEventTypeInformationMutableBuilder[Self <: IncludeEventTypeInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeEventTypeInformation](x: Self) {
     
-    @scala.inline
-    def setIncludeEventTypeInformation(value: scala.Double): Self = StObject.set(x, "includeEventTypeInformation", value.asInstanceOf[js.Any])
+    inline def setIncludeEventTypeInformation(value: scala.Double): Self = StObject.set(x, "includeEventTypeInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGroup(value: scala.Double): Self = StObject.set(x, "includeGroup", value.asInstanceOf[js.Any])
+    inline def setIncludeGroup(value: scala.Double): Self = StObject.set(x, "includeGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUser(value: scala.Double): Self = StObject.set(x, "includeUser", value.asInstanceOf[js.Any])
+    inline def setIncludeUser(value: scala.Double): Self = StObject.set(x, "includeUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUserAndGroup(value: scala.Double): Self = StObject.set(x, "includeUserAndGroup", value.asInstanceOf[js.Any])
+    inline def setIncludeUserAndGroup(value: scala.Double): Self = StObject.set(x, "includeUserAndGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

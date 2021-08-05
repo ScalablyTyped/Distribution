@@ -10,16 +10,13 @@ trait ArgMaxAttrs extends StObject {
 }
 object ArgMaxAttrs {
   
-  @scala.inline
-  def apply(axis: Double): ArgMaxAttrs = {
+  inline def apply(axis: Double): ArgMaxAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgMaxAttrs]
   }
   
-  @scala.inline
-  implicit class ArgMaxAttrsMutableBuilder[Self <: ArgMaxAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: ArgMaxAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }
 }

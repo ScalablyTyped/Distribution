@@ -16,18 +16,15 @@ trait MakeAuthenticatedRequestOptions extends StObject {
 }
 object MakeAuthenticatedRequestOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onAuthenticated: (/* err */ Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions]) => Unit
   ): MakeAuthenticatedRequestOptions = {
     val __obj = js.Dynamic.literal(onAuthenticated = js.Any.fromFunction2(onAuthenticated))
     __obj.asInstanceOf[MakeAuthenticatedRequestOptions]
   }
   
-  @scala.inline
-  implicit class MakeAuthenticatedRequestOptionsMutableBuilder[Self <: MakeAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MakeAuthenticatedRequestOptions](x: Self) {
     
-    @scala.inline
-    def setOnAuthenticated(value: (/* err */ Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions]) => Unit): Self = StObject.set(x, "onAuthenticated", js.Any.fromFunction2(value))
+    inline def setOnAuthenticated(value: (/* err */ Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions]) => Unit): Self = StObject.set(x, "onAuthenticated", js.Any.fromFunction2(value))
   }
 }

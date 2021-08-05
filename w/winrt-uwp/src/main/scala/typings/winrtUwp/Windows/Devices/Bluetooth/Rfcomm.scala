@@ -72,23 +72,18 @@ object Rfcomm {
   }
   object RfcommServiceId {
     
-    @scala.inline
-    def apply(asShortId: () => Double, asString: () => String, uuid: String): RfcommServiceId = {
+    inline def apply(asShortId: () => Double, asString: () => String, uuid: String): RfcommServiceId = {
       val __obj = js.Dynamic.literal(asShortId = js.Any.fromFunction0(asShortId), asString = js.Any.fromFunction0(asString), uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[RfcommServiceId]
     }
     
-    @scala.inline
-    implicit class RfcommServiceIdMutableBuilder[Self <: RfcommServiceId] (val x: Self) extends AnyVal {
+    extension [Self <: RfcommServiceId](x: Self) {
       
-      @scala.inline
-      def setAsShortId(value: () => Double): Self = StObject.set(x, "asShortId", js.Any.fromFunction0(value))
+      inline def setAsShortId(value: () => Double): Self = StObject.set(x, "asShortId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
+      inline def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   

@@ -33,8 +33,7 @@ trait IFileOpenPicker extends StObject {
 }
 object IFileOpenPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     continuationData: ValueSet,
     fileTypeFilter: IVector[String],
@@ -50,37 +49,26 @@ object IFileOpenPicker {
     __obj.asInstanceOf[IFileOpenPicker]
   }
   
-  @scala.inline
-  implicit class IFileOpenPickerMutableBuilder[Self <: IFileOpenPicker] (val x: Self) extends AnyVal {
+  extension [Self <: IFileOpenPicker](x: Self) {
     
-    @scala.inline
-    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
+    inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
+    inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
+    inline def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickMultipleFilesAndContinue(value: () => Unit): Self = StObject.set(x, "pickMultipleFilesAndContinue", js.Any.fromFunction0(value))
+    inline def setPickMultipleFilesAndContinue(value: () => Unit): Self = StObject.set(x, "pickMultipleFilesAndContinue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickMultipleFilesAsync(value: () => IAsyncOperation[IVectorView[StorageFile]]): Self = StObject.set(x, "pickMultipleFilesAsync", js.Any.fromFunction0(value))
+    inline def setPickMultipleFilesAsync(value: () => IAsyncOperation[IVectorView[StorageFile]]): Self = StObject.set(x, "pickMultipleFilesAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickSingleFileAndContinue(value: () => Unit): Self = StObject.set(x, "pickSingleFileAndContinue", js.Any.fromFunction0(value))
+    inline def setPickSingleFileAndContinue(value: () => Unit): Self = StObject.set(x, "pickSingleFileAndContinue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickSingleFileAsync(value: () => IAsyncOperation[StorageFile]): Self = StObject.set(x, "pickSingleFileAsync", js.Any.fromFunction0(value))
+    inline def setPickSingleFileAsync(value: () => IAsyncOperation[StorageFile]): Self = StObject.set(x, "pickSingleFileAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
+    inline def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
+    inline def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: PickerViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: PickerViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

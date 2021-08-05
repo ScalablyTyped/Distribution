@@ -16,31 +16,23 @@ trait WatermarkOptions extends StObject {
 }
 object WatermarkOptions {
   
-  @scala.inline
-  def apply(): WatermarkOptions = {
+  inline def apply(): WatermarkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatermarkOptions]
   }
   
-  @scala.inline
-  implicit class WatermarkOptionsMutableBuilder[Self <: WatermarkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WatermarkOptions](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setHideBeforeUnload(value: Boolean): Self = StObject.set(x, "hideBeforeUnload", value.asInstanceOf[js.Any])
+    inline def setHideBeforeUnload(value: Boolean): Self = StObject.set(x, "hideBeforeUnload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideBeforeUnloadUndefined: Self = StObject.set(x, "hideBeforeUnload", js.undefined)
+    inline def setHideBeforeUnloadUndefined: Self = StObject.set(x, "hideBeforeUnload", js.undefined)
     
-    @scala.inline
-    def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+    inline def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
+    inline def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
   }
 }

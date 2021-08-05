@@ -28,37 +28,27 @@ trait CreateDiskSnapshotRequest extends StObject {
 }
 object CreateDiskSnapshotRequest {
   
-  @scala.inline
-  def apply(diskSnapshotName: ResourceName): CreateDiskSnapshotRequest = {
+  inline def apply(diskSnapshotName: ResourceName): CreateDiskSnapshotRequest = {
     val __obj = js.Dynamic.literal(diskSnapshotName = diskSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDiskSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateDiskSnapshotRequestMutableBuilder[Self <: CreateDiskSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDiskSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskNameUndefined: Self = StObject.set(x, "diskName", js.undefined)
+    inline def setDiskNameUndefined: Self = StObject.set(x, "diskName", js.undefined)
     
-    @scala.inline
-    def setDiskSnapshotName(value: ResourceName): Self = StObject.set(x, "diskSnapshotName", value.asInstanceOf[js.Any])
+    inline def setDiskSnapshotName(value: ResourceName): Self = StObject.set(x, "diskSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

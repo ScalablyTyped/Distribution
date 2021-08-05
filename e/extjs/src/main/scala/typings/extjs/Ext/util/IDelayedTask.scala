@@ -31,33 +31,25 @@ trait IDelayedTask extends StObject {
 }
 object IDelayedTask {
   
-  @scala.inline
-  def apply(): IDelayedTask = {
+  inline def apply(): IDelayedTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDelayedTask]
   }
   
-  @scala.inline
-  implicit class IDelayedTaskMutableBuilder[Self <: IDelayedTask] (val x: Self) extends AnyVal {
+  extension [Self <: IDelayedTask](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setDelay(
+    inline def setDelay(
       value: (/* newDelay */ js.UndefOr[Double], /* newFn */ js.UndefOr[js.Any], /* newScope */ js.UndefOr[js.Any], /* newArgs */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "delay", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

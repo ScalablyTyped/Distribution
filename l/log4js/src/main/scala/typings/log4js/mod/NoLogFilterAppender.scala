@@ -21,26 +21,20 @@ trait NoLogFilterAppender
 }
 object NoLogFilterAppender {
   
-  @scala.inline
-  def apply(appender: String, exclude: String | js.Array[String]): NoLogFilterAppender = {
+  inline def apply(appender: String, exclude: String | js.Array[String]): NoLogFilterAppender = {
     val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("noLogFilter")
     __obj.asInstanceOf[NoLogFilterAppender]
   }
   
-  @scala.inline
-  implicit class NoLogFilterAppenderMutableBuilder[Self <: NoLogFilterAppender] (val x: Self) extends AnyVal {
+  extension [Self <: NoLogFilterAppender](x: Self) {
     
-    @scala.inline
-    def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
+    inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: noLogFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: noLogFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

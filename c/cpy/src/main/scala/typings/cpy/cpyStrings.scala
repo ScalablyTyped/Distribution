@@ -8,6 +8,5 @@ object cpyStrings {
   
   @js.native
   sealed trait progress extends StObject
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  inline def progress: progress = "progress".asInstanceOf[progress]
 }

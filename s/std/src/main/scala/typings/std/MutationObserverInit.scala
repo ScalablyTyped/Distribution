@@ -43,58 +43,41 @@ trait MutationObserverInit extends StObject {
 }
 object MutationObserverInit {
   
-  @scala.inline
-  def apply(): MutationObserverInit = {
+  inline def apply(): MutationObserverInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutationObserverInit]
   }
   
-  @scala.inline
-  implicit class MutationObserverInitMutableBuilder[Self <: MutationObserverInit] (val x: Self) extends AnyVal {
+  extension [Self <: MutationObserverInit](x: Self) {
     
-    @scala.inline
-    def setAttributeFilter(value: js.Array[java.lang.String]): Self = StObject.set(x, "attributeFilter", value.asInstanceOf[js.Any])
+    inline def setAttributeFilter(value: js.Array[java.lang.String]): Self = StObject.set(x, "attributeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeFilterUndefined: Self = StObject.set(x, "attributeFilter", js.undefined)
+    inline def setAttributeFilterUndefined: Self = StObject.set(x, "attributeFilter", js.undefined)
     
-    @scala.inline
-    def setAttributeFilterVarargs(value: java.lang.String*): Self = StObject.set(x, "attributeFilter", js.Array(value :_*))
+    inline def setAttributeFilterVarargs(value: java.lang.String*): Self = StObject.set(x, "attributeFilter", js.Array(value :_*))
     
-    @scala.inline
-    def setAttributeOldValue(value: scala.Boolean): Self = StObject.set(x, "attributeOldValue", value.asInstanceOf[js.Any])
+    inline def setAttributeOldValue(value: scala.Boolean): Self = StObject.set(x, "attributeOldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeOldValueUndefined: Self = StObject.set(x, "attributeOldValue", js.undefined)
+    inline def setAttributeOldValueUndefined: Self = StObject.set(x, "attributeOldValue", js.undefined)
     
-    @scala.inline
-    def setAttributes(value: scala.Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: scala.Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setCharacterData(value: scala.Boolean): Self = StObject.set(x, "characterData", value.asInstanceOf[js.Any])
+    inline def setCharacterData(value: scala.Boolean): Self = StObject.set(x, "characterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterDataOldValue(value: scala.Boolean): Self = StObject.set(x, "characterDataOldValue", value.asInstanceOf[js.Any])
+    inline def setCharacterDataOldValue(value: scala.Boolean): Self = StObject.set(x, "characterDataOldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterDataOldValueUndefined: Self = StObject.set(x, "characterDataOldValue", js.undefined)
+    inline def setCharacterDataOldValueUndefined: Self = StObject.set(x, "characterDataOldValue", js.undefined)
     
-    @scala.inline
-    def setCharacterDataUndefined: Self = StObject.set(x, "characterData", js.undefined)
+    inline def setCharacterDataUndefined: Self = StObject.set(x, "characterData", js.undefined)
     
-    @scala.inline
-    def setChildList(value: scala.Boolean): Self = StObject.set(x, "childList", value.asInstanceOf[js.Any])
+    inline def setChildList(value: scala.Boolean): Self = StObject.set(x, "childList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildListUndefined: Self = StObject.set(x, "childList", js.undefined)
+    inline def setChildListUndefined: Self = StObject.set(x, "childList", js.undefined)
     
-    @scala.inline
-    def setSubtree(value: scala.Boolean): Self = StObject.set(x, "subtree", value.asInstanceOf[js.Any])
+    inline def setSubtree(value: scala.Boolean): Self = StObject.set(x, "subtree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtreeUndefined: Self = StObject.set(x, "subtree", js.undefined)
+    inline def setSubtreeUndefined: Self = StObject.set(x, "subtree", js.undefined)
   }
 }

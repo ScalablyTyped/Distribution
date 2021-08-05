@@ -35,8 +35,7 @@ object providerMod {
       * Returns true if the given object is an instance of Provider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean]
   }
   
   trait ProviderArgs extends StObject {
@@ -99,56 +98,40 @@ object providerMod {
   }
   object ProviderArgs {
     
-    @scala.inline
-    def apply(): ProviderArgs = {
+    inline def apply(): ProviderArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderArgs]
     }
     
-    @scala.inline
-    implicit class ProviderArgsMutableBuilder[Self <: ProviderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderArgs](x: Self) {
       
-      @scala.inline
-      def setCluster(value: Input[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: Input[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+      inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
       
-      @scala.inline
-      def setContext(value: Input[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Input[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEnableDryRun(value: Input[Boolean]): Self = StObject.set(x, "enableDryRun", value.asInstanceOf[js.Any])
+      inline def setEnableDryRun(value: Input[Boolean]): Self = StObject.set(x, "enableDryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableDryRunUndefined: Self = StObject.set(x, "enableDryRun", js.undefined)
+      inline def setEnableDryRunUndefined: Self = StObject.set(x, "enableDryRun", js.undefined)
       
-      @scala.inline
-      def setKubeconfig(value: Input[String]): Self = StObject.set(x, "kubeconfig", value.asInstanceOf[js.Any])
+      inline def setKubeconfig(value: Input[String]): Self = StObject.set(x, "kubeconfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKubeconfigUndefined: Self = StObject.set(x, "kubeconfig", js.undefined)
+      inline def setKubeconfigUndefined: Self = StObject.set(x, "kubeconfig", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setRenderYamlToDirectory(value: Input[String]): Self = StObject.set(x, "renderYamlToDirectory", value.asInstanceOf[js.Any])
+      inline def setRenderYamlToDirectory(value: Input[String]): Self = StObject.set(x, "renderYamlToDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderYamlToDirectoryUndefined: Self = StObject.set(x, "renderYamlToDirectory", js.undefined)
+      inline def setRenderYamlToDirectoryUndefined: Self = StObject.set(x, "renderYamlToDirectory", js.undefined)
       
-      @scala.inline
-      def setSuppressDeprecationWarnings(value: Input[Boolean]): Self = StObject.set(x, "suppressDeprecationWarnings", value.asInstanceOf[js.Any])
+      inline def setSuppressDeprecationWarnings(value: Input[Boolean]): Self = StObject.set(x, "suppressDeprecationWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressDeprecationWarningsUndefined: Self = StObject.set(x, "suppressDeprecationWarnings", js.undefined)
+      inline def setSuppressDeprecationWarningsUndefined: Self = StObject.set(x, "suppressDeprecationWarnings", js.undefined)
     }
   }
 }

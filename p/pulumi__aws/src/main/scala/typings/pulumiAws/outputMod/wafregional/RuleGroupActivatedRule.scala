@@ -28,28 +28,21 @@ trait RuleGroupActivatedRule extends StObject {
 }
 object RuleGroupActivatedRule {
   
-  @scala.inline
-  def apply(action: RuleGroupActivatedRuleAction, priority: Double, ruleId: String): RuleGroupActivatedRule = {
+  inline def apply(action: RuleGroupActivatedRuleAction, priority: Double, ruleId: String): RuleGroupActivatedRule = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupActivatedRule]
   }
   
-  @scala.inline
-  implicit class RuleGroupActivatedRuleMutableBuilder[Self <: RuleGroupActivatedRule] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupActivatedRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: RuleGroupActivatedRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RuleGroupActivatedRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

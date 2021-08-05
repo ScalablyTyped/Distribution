@@ -11,6 +11,5 @@ object jsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def jsonObjectOrNull(s: String): StringDictionary[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonObjectOrNull")(s.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any] | Null]
+  inline def jsonObjectOrNull(s: String): StringDictionary[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonObjectOrNull")(s.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any] | Null]
 }

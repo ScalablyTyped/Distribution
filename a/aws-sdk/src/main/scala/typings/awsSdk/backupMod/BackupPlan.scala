@@ -23,31 +23,23 @@ trait BackupPlan extends StObject {
 }
 object BackupPlan {
   
-  @scala.inline
-  def apply(BackupPlanName: BackupPlanName, Rules: BackupRules): BackupPlan = {
+  inline def apply(BackupPlanName: BackupPlanName, Rules: BackupRules): BackupPlan = {
     val __obj = js.Dynamic.literal(BackupPlanName = BackupPlanName.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupPlan]
   }
   
-  @scala.inline
-  implicit class BackupPlanMutableBuilder[Self <: BackupPlan] (val x: Self) extends AnyVal {
+  extension [Self <: BackupPlan](x: Self) {
     
-    @scala.inline
-    def setAdvancedBackupSettings(value: AdvancedBackupSettings): Self = StObject.set(x, "AdvancedBackupSettings", value.asInstanceOf[js.Any])
+    inline def setAdvancedBackupSettings(value: AdvancedBackupSettings): Self = StObject.set(x, "AdvancedBackupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "AdvancedBackupSettings", js.undefined)
+    inline def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "AdvancedBackupSettings", js.undefined)
     
-    @scala.inline
-    def setAdvancedBackupSettingsVarargs(value: AdvancedBackupSetting*): Self = StObject.set(x, "AdvancedBackupSettings", js.Array(value :_*))
+    inline def setAdvancedBackupSettingsVarargs(value: AdvancedBackupSetting*): Self = StObject.set(x, "AdvancedBackupSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setBackupPlanName(value: BackupPlanName): Self = StObject.set(x, "BackupPlanName", value.asInstanceOf[js.Any])
+    inline def setBackupPlanName(value: BackupPlanName): Self = StObject.set(x, "BackupPlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: BackupRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: BackupRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: BackupRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: BackupRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

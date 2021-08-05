@@ -25,8 +25,7 @@ trait IOverlayWidget extends StObject {
 }
 object IOverlayWidget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDomNode: () => HTMLElement,
     getId: () => String,
     getPosition: () => IOverlayWidgetPosition | Null
@@ -35,16 +34,12 @@ object IOverlayWidget {
     __obj.asInstanceOf[IOverlayWidget]
   }
   
-  @scala.inline
-  implicit class IOverlayWidgetMutableBuilder[Self <: IOverlayWidget] (val x: Self) extends AnyVal {
+  extension [Self <: IOverlayWidget](x: Self) {
     
-    @scala.inline
-    def setGetDomNode(value: () => HTMLElement): Self = StObject.set(x, "getDomNode", js.Any.fromFunction0(value))
+    inline def setGetDomNode(value: () => HTMLElement): Self = StObject.set(x, "getDomNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => IOverlayWidgetPosition | Null): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => IOverlayWidgetPosition | Null): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
   }
 }

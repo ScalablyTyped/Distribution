@@ -25,7 +25,6 @@ object verticeCommonShaderLibMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): VerticeCommonShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[VerticeCommonShaderLib]
+    inline def create(): VerticeCommonShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[VerticeCommonShaderLib]
   }
 }

@@ -127,59 +127,42 @@ object projectionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(code: String): Options = {
+    inline def apply(code: String): Options = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAxisOrientation(value: String): Self = StObject.set(x, "axisOrientation", value.asInstanceOf[js.Any])
+      inline def setAxisOrientation(value: String): Self = StObject.set(x, "axisOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisOrientationUndefined: Self = StObject.set(x, "axisOrientation", js.undefined)
+      inline def setAxisOrientationUndefined: Self = StObject.set(x, "axisOrientation", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setGetPointResolution(value: (/* p0 */ Double, /* p1 */ Coordinate) => Double): Self = StObject.set(x, "getPointResolution", js.Any.fromFunction2(value))
+      inline def setGetPointResolution(value: (/* p0 */ Double, /* p1 */ Coordinate) => Double): Self = StObject.set(x, "getPointResolution", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPointResolutionUndefined: Self = StObject.set(x, "getPointResolution", js.undefined)
+      inline def setGetPointResolutionUndefined: Self = StObject.set(x, "getPointResolution", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setMetersPerUnit(value: Double): Self = StObject.set(x, "metersPerUnit", value.asInstanceOf[js.Any])
+      inline def setMetersPerUnit(value: Double): Self = StObject.set(x, "metersPerUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetersPerUnitUndefined: Self = StObject.set(x, "metersPerUnit", js.undefined)
+      inline def setMetersPerUnitUndefined: Self = StObject.set(x, "metersPerUnit", js.undefined)
       
-      @scala.inline
-      def setUnits(value: Units | String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: Units | String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
-      @scala.inline
-      def setWorldExtent(value: Extent): Self = StObject.set(x, "worldExtent", value.asInstanceOf[js.Any])
+      inline def setWorldExtent(value: Extent): Self = StObject.set(x, "worldExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorldExtentUndefined: Self = StObject.set(x, "worldExtent", js.undefined)
+      inline def setWorldExtentUndefined: Self = StObject.set(x, "worldExtent", js.undefined)
     }
   }
   
@@ -262,8 +245,7 @@ object projectionMod {
   }
   object Projection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canWrapX: () => Boolean,
       getAxisOrientation: () => String,
       getCode: () => String,
@@ -284,53 +266,37 @@ object projectionMod {
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setCanWrapX(value: () => Boolean): Self = StObject.set(x, "canWrapX", js.Any.fromFunction0(value))
+      inline def setCanWrapX(value: () => Boolean): Self = StObject.set(x, "canWrapX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAxisOrientation(value: () => String): Self = StObject.set(x, "getAxisOrientation", js.Any.fromFunction0(value))
+      inline def setGetAxisOrientation(value: () => String): Self = StObject.set(x, "getAxisOrientation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultTileGrid(value: () => typings.ol.tilegridTileGridMod.default): Self = StObject.set(x, "getDefaultTileGrid", js.Any.fromFunction0(value))
+      inline def setGetDefaultTileGrid(value: () => typings.ol.tilegridTileGridMod.default): Self = StObject.set(x, "getDefaultTileGrid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExtent(value: () => Extent): Self = StObject.set(x, "getExtent", js.Any.fromFunction0(value))
+      inline def setGetExtent(value: () => Extent): Self = StObject.set(x, "getExtent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMetersPerUnit(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getMetersPerUnit", js.Any.fromFunction0(value))
+      inline def setGetMetersPerUnit(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getMetersPerUnit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPointResolutionFunc(value: () => js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]]): Self = StObject.set(x, "getPointResolutionFunc", js.Any.fromFunction0(value))
+      inline def setGetPointResolutionFunc(value: () => js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]]): Self = StObject.set(x, "getPointResolutionFunc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUnits(value: () => Units): Self = StObject.set(x, "getUnits", js.Any.fromFunction0(value))
+      inline def setGetUnits(value: () => Units): Self = StObject.set(x, "getUnits", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWorldExtent(value: () => Extent): Self = StObject.set(x, "getWorldExtent", js.Any.fromFunction0(value))
+      inline def setGetWorldExtent(value: () => Extent): Self = StObject.set(x, "getWorldExtent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsGlobal(value: () => Boolean): Self = StObject.set(x, "isGlobal", js.Any.fromFunction0(value))
+      inline def setIsGlobal(value: () => Boolean): Self = StObject.set(x, "isGlobal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDefaultTileGrid(value: typings.ol.tilegridTileGridMod.default => Unit): Self = StObject.set(x, "setDefaultTileGrid", js.Any.fromFunction1(value))
+      inline def setSetDefaultTileGrid(value: typings.ol.tilegridTileGridMod.default => Unit): Self = StObject.set(x, "setDefaultTileGrid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetExtent(value: Extent => Unit): Self = StObject.set(x, "setExtent", js.Any.fromFunction1(value))
+      inline def setSetExtent(value: Extent => Unit): Self = StObject.set(x, "setExtent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetGetPointResolution(value: js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double] => Unit): Self = StObject.set(x, "setGetPointResolution", js.Any.fromFunction1(value))
+      inline def setSetGetPointResolution(value: js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double] => Unit): Self = StObject.set(x, "setGetPointResolution", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetGlobal(value: Boolean => Unit): Self = StObject.set(x, "setGlobal", js.Any.fromFunction1(value))
+      inline def setSetGlobal(value: Boolean => Unit): Self = StObject.set(x, "setGlobal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWorldExtent(value: Extent => Unit): Self = StObject.set(x, "setWorldExtent", js.Any.fromFunction1(value))
+      inline def setSetWorldExtent(value: Extent => Unit): Self = StObject.set(x, "setWorldExtent", js.Any.fromFunction1(value))
     }
   }
 }

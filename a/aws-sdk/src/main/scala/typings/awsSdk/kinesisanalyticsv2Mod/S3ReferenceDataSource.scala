@@ -18,25 +18,19 @@ trait S3ReferenceDataSource extends StObject {
 }
 object S3ReferenceDataSource {
   
-  @scala.inline
-  def apply(): S3ReferenceDataSource = {
+  inline def apply(): S3ReferenceDataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3ReferenceDataSource]
   }
   
-  @scala.inline
-  implicit class S3ReferenceDataSourceMutableBuilder[Self <: S3ReferenceDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: S3ReferenceDataSource](x: Self) {
     
-    @scala.inline
-    def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
+    inline def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketARNUndefined: Self = StObject.set(x, "BucketARN", js.undefined)
+    inline def setBucketARNUndefined: Self = StObject.set(x, "BucketARN", js.undefined)
     
-    @scala.inline
-    def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
+    inline def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileKeyUndefined: Self = StObject.set(x, "FileKey", js.undefined)
+    inline def setFileKeyUndefined: Self = StObject.set(x, "FileKey", js.undefined)
   }
 }

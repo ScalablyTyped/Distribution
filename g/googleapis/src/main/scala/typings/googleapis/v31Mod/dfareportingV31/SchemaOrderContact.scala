@@ -39,43 +39,31 @@ trait SchemaOrderContact extends StObject {
 }
 object SchemaOrderContact {
   
-  @scala.inline
-  def apply(): SchemaOrderContact = {
+  inline def apply(): SchemaOrderContact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderContact]
   }
   
-  @scala.inline
-  implicit class SchemaOrderContactMutableBuilder[Self <: SchemaOrderContact] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderContact](x: Self) {
     
-    @scala.inline
-    def setContactInfo(value: String): Self = StObject.set(x, "contactInfo", value.asInstanceOf[js.Any])
+    inline def setContactInfo(value: String): Self = StObject.set(x, "contactInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactInfoUndefined: Self = StObject.set(x, "contactInfo", js.undefined)
+    inline def setContactInfoUndefined: Self = StObject.set(x, "contactInfo", js.undefined)
     
-    @scala.inline
-    def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
+    inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
+    inline def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
     
-    @scala.inline
-    def setContactTitle(value: String): Self = StObject.set(x, "contactTitle", value.asInstanceOf[js.Any])
+    inline def setContactTitle(value: String): Self = StObject.set(x, "contactTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactTitleUndefined: Self = StObject.set(x, "contactTitle", js.undefined)
+    inline def setContactTitleUndefined: Self = StObject.set(x, "contactTitle", js.undefined)
     
-    @scala.inline
-    def setContactType(value: String): Self = StObject.set(x, "contactType", value.asInstanceOf[js.Any])
+    inline def setContactType(value: String): Self = StObject.set(x, "contactType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactTypeUndefined: Self = StObject.set(x, "contactType", js.undefined)
+    inline def setContactTypeUndefined: Self = StObject.set(x, "contactType", js.undefined)
     
-    @scala.inline
-    def setSignatureUserProfileId(value: String): Self = StObject.set(x, "signatureUserProfileId", value.asInstanceOf[js.Any])
+    inline def setSignatureUserProfileId(value: String): Self = StObject.set(x, "signatureUserProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUserProfileIdUndefined: Self = StObject.set(x, "signatureUserProfileId", js.undefined)
+    inline def setSignatureUserProfileIdUndefined: Self = StObject.set(x, "signatureUserProfileId", js.undefined)
   }
 }

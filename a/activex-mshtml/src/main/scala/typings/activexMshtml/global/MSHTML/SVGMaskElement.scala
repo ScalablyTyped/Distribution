@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGMaskElement")
 @js.native
-class SVGMaskElement protected ()
+/* private */ class SVGMaskElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGMaskElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGMaskElement_typekey")
   var MSHTMLDotSVGMaskElement_typekey: typings.activexMshtml.MSHTML.SVGMaskElement = js.native
   

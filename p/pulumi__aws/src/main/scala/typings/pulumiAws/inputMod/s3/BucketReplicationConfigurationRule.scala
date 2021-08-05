@@ -44,49 +44,35 @@ trait BucketReplicationConfigurationRule extends StObject {
 }
 object BucketReplicationConfigurationRule {
   
-  @scala.inline
-  def apply(destination: Input[BucketReplicationConfigurationRuleDestination], status: Input[String]): BucketReplicationConfigurationRule = {
+  inline def apply(destination: Input[BucketReplicationConfigurationRuleDestination], status: Input[String]): BucketReplicationConfigurationRule = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRule]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationRuleMutableBuilder[Self <: BucketReplicationConfigurationRule] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfigurationRule](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Input[BucketReplicationConfigurationRuleDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Input[BucketReplicationConfigurationRuleDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: Input[BucketReplicationConfigurationRuleFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Input[BucketReplicationConfigurationRuleFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setSourceSelectionCriteria(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteria]): Self = StObject.set(x, "sourceSelectionCriteria", value.asInstanceOf[js.Any])
+    inline def setSourceSelectionCriteria(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteria]): Self = StObject.set(x, "sourceSelectionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "sourceSelectionCriteria", js.undefined)
+    inline def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "sourceSelectionCriteria", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

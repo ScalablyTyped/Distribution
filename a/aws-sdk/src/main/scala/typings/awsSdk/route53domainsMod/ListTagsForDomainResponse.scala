@@ -13,19 +13,15 @@ trait ListTagsForDomainResponse extends StObject {
 }
 object ListTagsForDomainResponse {
   
-  @scala.inline
-  def apply(TagList: TagList): ListTagsForDomainResponse = {
+  inline def apply(TagList: TagList): ListTagsForDomainResponse = {
     val __obj = js.Dynamic.literal(TagList = TagList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForDomainResponse]
   }
   
-  @scala.inline
-  implicit class ListTagsForDomainResponseMutableBuilder[Self <: ListTagsForDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForDomainResponse](x: Self) {
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

@@ -19,7 +19,7 @@ object containerMod {
   abstract class Container[ChildType /* <: Node[NodeConfig] */] () extends Node[ContainerConfig] {
     def this(config: ContainerConfig) = this()
     
-    var _descendants: js.Any = js.native
+    /* private */ var _descendants: js.Any = js.native
     
     def _drawChildren(drawMethod: js.Any, canvas: js.Any, top: js.Any): Unit = js.native
     
@@ -111,50 +111,36 @@ object containerMod {
   }
   object ContainerConfig {
     
-    @scala.inline
-    def apply(): ContainerConfig = {
+    inline def apply(): ContainerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerConfig]
     }
     
-    @scala.inline
-    implicit class ContainerConfigMutableBuilder[Self <: ContainerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerConfig](x: Self) {
       
-      @scala.inline
-      def setClearBeforeDraw(value: Boolean): Self = StObject.set(x, "clearBeforeDraw", value.asInstanceOf[js.Any])
+      inline def setClearBeforeDraw(value: Boolean): Self = StObject.set(x, "clearBeforeDraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearBeforeDrawUndefined: Self = StObject.set(x, "clearBeforeDraw", js.undefined)
+      inline def setClearBeforeDrawUndefined: Self = StObject.set(x, "clearBeforeDraw", js.undefined)
       
-      @scala.inline
-      def setClipFunc(value: /* ctx */ CanvasRenderingContext2D => Unit): Self = StObject.set(x, "clipFunc", js.Any.fromFunction1(value))
+      inline def setClipFunc(value: /* ctx */ CanvasRenderingContext2D => Unit): Self = StObject.set(x, "clipFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClipFuncUndefined: Self = StObject.set(x, "clipFunc", js.undefined)
+      inline def setClipFuncUndefined: Self = StObject.set(x, "clipFunc", js.undefined)
       
-      @scala.inline
-      def setClipHeight(value: Double): Self = StObject.set(x, "clipHeight", value.asInstanceOf[js.Any])
+      inline def setClipHeight(value: Double): Self = StObject.set(x, "clipHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipHeightUndefined: Self = StObject.set(x, "clipHeight", js.undefined)
+      inline def setClipHeightUndefined: Self = StObject.set(x, "clipHeight", js.undefined)
       
-      @scala.inline
-      def setClipWidth(value: Double): Self = StObject.set(x, "clipWidth", value.asInstanceOf[js.Any])
+      inline def setClipWidth(value: Double): Self = StObject.set(x, "clipWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipWidthUndefined: Self = StObject.set(x, "clipWidth", js.undefined)
+      inline def setClipWidthUndefined: Self = StObject.set(x, "clipWidth", js.undefined)
       
-      @scala.inline
-      def setClipX(value: Double): Self = StObject.set(x, "clipX", value.asInstanceOf[js.Any])
+      inline def setClipX(value: Double): Self = StObject.set(x, "clipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipXUndefined: Self = StObject.set(x, "clipX", js.undefined)
+      inline def setClipXUndefined: Self = StObject.set(x, "clipX", js.undefined)
       
-      @scala.inline
-      def setClipY(value: Double): Self = StObject.set(x, "clipY", value.asInstanceOf[js.Any])
+      inline def setClipY(value: Double): Self = StObject.set(x, "clipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipYUndefined: Self = StObject.set(x, "clipY", js.undefined)
+      inline def setClipYUndefined: Self = StObject.set(x, "clipY", js.undefined)
     }
   }
 }

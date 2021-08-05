@@ -13,19 +13,15 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(id: String): Action = {
+  inline def apply(id: String): Action = {
     val __obj = js.Dynamic.literal(action = "marker-press", id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAction(value: `marker-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: `marker-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

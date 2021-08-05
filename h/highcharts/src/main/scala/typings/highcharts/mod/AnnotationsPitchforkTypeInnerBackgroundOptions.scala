@@ -40,49 +40,35 @@ trait AnnotationsPitchforkTypeInnerBackgroundOptions extends StObject {
 }
 object AnnotationsPitchforkTypeInnerBackgroundOptions {
   
-  @scala.inline
-  def apply(): AnnotationsPitchforkTypeInnerBackgroundOptions = {
+  inline def apply(): AnnotationsPitchforkTypeInnerBackgroundOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsPitchforkTypeInnerBackgroundOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsPitchforkTypeInnerBackgroundOptionsMutableBuilder[Self <: AnnotationsPitchforkTypeInnerBackgroundOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsPitchforkTypeInnerBackgroundOptions](x: Self) {
     
-    @scala.inline
-    def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setSnap(value: Double): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+    inline def setSnap(value: Double): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+    inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setStroke(value: ColorString): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: ColorString): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

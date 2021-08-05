@@ -10,16 +10,13 @@ trait ShapeLibrary extends StObject {
 }
 object ShapeLibrary {
   
-  @scala.inline
-  def apply(enumerate: () => js.Any): ShapeLibrary = {
+  inline def apply(enumerate: () => js.Any): ShapeLibrary = {
     val __obj = js.Dynamic.literal(enumerate = js.Any.fromFunction0(enumerate))
     __obj.asInstanceOf[ShapeLibrary]
   }
   
-  @scala.inline
-  implicit class ShapeLibraryMutableBuilder[Self <: ShapeLibrary] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeLibrary](x: Self) {
     
-    @scala.inline
-    def setEnumerate(value: () => js.Any): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
+    inline def setEnumerate(value: () => js.Any): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
   }
 }

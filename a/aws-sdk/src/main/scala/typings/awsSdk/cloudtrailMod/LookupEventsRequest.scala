@@ -38,52 +38,37 @@ trait LookupEventsRequest extends StObject {
 }
 object LookupEventsRequest {
   
-  @scala.inline
-  def apply(): LookupEventsRequest = {
+  inline def apply(): LookupEventsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupEventsRequest]
   }
   
-  @scala.inline
-  implicit class LookupEventsRequestMutableBuilder[Self <: LookupEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LookupEventsRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setEventCategory(value: EventCategory): Self = StObject.set(x, "EventCategory", value.asInstanceOf[js.Any])
+    inline def setEventCategory(value: EventCategory): Self = StObject.set(x, "EventCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCategoryUndefined: Self = StObject.set(x, "EventCategory", js.undefined)
+    inline def setEventCategoryUndefined: Self = StObject.set(x, "EventCategory", js.undefined)
     
-    @scala.inline
-    def setLookupAttributes(value: LookupAttributesList): Self = StObject.set(x, "LookupAttributes", value.asInstanceOf[js.Any])
+    inline def setLookupAttributes(value: LookupAttributesList): Self = StObject.set(x, "LookupAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupAttributesUndefined: Self = StObject.set(x, "LookupAttributes", js.undefined)
+    inline def setLookupAttributesUndefined: Self = StObject.set(x, "LookupAttributes", js.undefined)
     
-    @scala.inline
-    def setLookupAttributesVarargs(value: LookupAttribute*): Self = StObject.set(x, "LookupAttributes", js.Array(value :_*))
+    inline def setLookupAttributesVarargs(value: LookupAttribute*): Self = StObject.set(x, "LookupAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

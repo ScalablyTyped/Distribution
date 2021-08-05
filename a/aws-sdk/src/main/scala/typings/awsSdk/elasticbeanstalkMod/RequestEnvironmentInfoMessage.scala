@@ -23,28 +23,21 @@ trait RequestEnvironmentInfoMessage extends StObject {
 }
 object RequestEnvironmentInfoMessage {
   
-  @scala.inline
-  def apply(InfoType: EnvironmentInfoType): RequestEnvironmentInfoMessage = {
+  inline def apply(InfoType: EnvironmentInfoType): RequestEnvironmentInfoMessage = {
     val __obj = js.Dynamic.literal(InfoType = InfoType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEnvironmentInfoMessage]
   }
   
-  @scala.inline
-  implicit class RequestEnvironmentInfoMessageMutableBuilder[Self <: RequestEnvironmentInfoMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RequestEnvironmentInfoMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setInfoType(value: EnvironmentInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: EnvironmentInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
   }
 }

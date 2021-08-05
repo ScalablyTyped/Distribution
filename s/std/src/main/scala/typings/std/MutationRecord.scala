@@ -54,56 +54,40 @@ trait MutationRecord extends StObject {
 }
 object MutationRecord {
   
-  @scala.inline
-  def apply(addedNodes: NodeList, removedNodes: NodeList, target: Node, `type`: MutationRecordType): MutationRecord = {
+  inline def apply(addedNodes: NodeList, removedNodes: NodeList, target: Node, `type`: MutationRecordType): MutationRecord = {
     val __obj = js.Dynamic.literal(addedNodes = addedNodes.asInstanceOf[js.Any], removedNodes = removedNodes.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], attributeName = null, attributeNamespace = null, nextSibling = null, oldValue = null, previousSibling = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationRecord]
   }
   
-  @scala.inline
-  implicit class MutationRecordMutableBuilder[Self <: MutationRecord] (val x: Self) extends AnyVal {
+  extension [Self <: MutationRecord](x: Self) {
     
-    @scala.inline
-    def setAddedNodes(value: NodeList): Self = StObject.set(x, "addedNodes", value.asInstanceOf[js.Any])
+    inline def setAddedNodes(value: NodeList): Self = StObject.set(x, "addedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeName(value: java.lang.String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: java.lang.String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameNull: Self = StObject.set(x, "attributeName", null)
+    inline def setAttributeNameNull: Self = StObject.set(x, "attributeName", null)
     
-    @scala.inline
-    def setAttributeNamespace(value: java.lang.String): Self = StObject.set(x, "attributeNamespace", value.asInstanceOf[js.Any])
+    inline def setAttributeNamespace(value: java.lang.String): Self = StObject.set(x, "attributeNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamespaceNull: Self = StObject.set(x, "attributeNamespace", null)
+    inline def setAttributeNamespaceNull: Self = StObject.set(x, "attributeNamespace", null)
     
-    @scala.inline
-    def setNextSibling(value: Node): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
+    inline def setNextSibling(value: Node): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSiblingNull: Self = StObject.set(x, "nextSibling", null)
+    inline def setNextSiblingNull: Self = StObject.set(x, "nextSibling", null)
     
-    @scala.inline
-    def setOldValue(value: java.lang.String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: java.lang.String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+    inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
-    @scala.inline
-    def setPreviousSibling(value: Node): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
+    inline def setPreviousSibling(value: Node): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSiblingNull: Self = StObject.set(x, "previousSibling", null)
+    inline def setPreviousSiblingNull: Self = StObject.set(x, "previousSibling", null)
     
-    @scala.inline
-    def setRemovedNodes(value: NodeList): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
+    inline def setRemovedNodes(value: NodeList): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Node): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Node): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MutationRecordType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MutationRecordType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers](x: Self) {
     
-    @scala.inline
-    def setAnswers(value: js.Array[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
+    inline def setAnswers(value: js.Array[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
+    inline def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
     
-    @scala.inline
-    def setAnswersVarargs(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
+    inline def setAnswersVarargs(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
   }
 }

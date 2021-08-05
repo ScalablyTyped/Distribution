@@ -18,25 +18,19 @@ trait GetClipOutput extends StObject {
 }
 object GetClipOutput {
   
-  @scala.inline
-  def apply(): GetClipOutput = {
+  inline def apply(): GetClipOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetClipOutput]
   }
   
-  @scala.inline
-  implicit class GetClipOutputMutableBuilder[Self <: GetClipOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetClipOutput](x: Self) {
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
   }
 }

@@ -19,43 +19,31 @@ trait Bail extends StObject {
 }
 object Bail {
   
-  @scala.inline
-  def apply(): Bail = {
+  inline def apply(): Bail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bail]
   }
   
-  @scala.inline
-  implicit class BailMutableBuilder[Self <: Bail] (val x: Self) extends AnyVal {
+  extension [Self <: Bail](x: Self) {
     
-    @scala.inline
-    def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+    inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+    inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
     
-    @scala.inline
-    def setGrep(value: RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    inline def setGrep(value: RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
+    inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     
-    @scala.inline
-    def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

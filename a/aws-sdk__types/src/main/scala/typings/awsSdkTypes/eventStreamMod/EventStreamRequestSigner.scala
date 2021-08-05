@@ -11,16 +11,13 @@ trait EventStreamRequestSigner extends StObject {
 }
 object EventStreamRequestSigner {
   
-  @scala.inline
-  def apply(sign: HttpRequest => js.Promise[HttpRequest]): EventStreamRequestSigner = {
+  inline def apply(sign: HttpRequest => js.Promise[HttpRequest]): EventStreamRequestSigner = {
     val __obj = js.Dynamic.literal(sign = js.Any.fromFunction1(sign))
     __obj.asInstanceOf[EventStreamRequestSigner]
   }
   
-  @scala.inline
-  implicit class EventStreamRequestSignerMutableBuilder[Self <: EventStreamRequestSigner] (val x: Self) extends AnyVal {
+  extension [Self <: EventStreamRequestSigner](x: Self) {
     
-    @scala.inline
-    def setSign(value: HttpRequest => js.Promise[HttpRequest]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+    inline def setSign(value: HttpRequest => js.Promise[HttpRequest]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
   }
 }

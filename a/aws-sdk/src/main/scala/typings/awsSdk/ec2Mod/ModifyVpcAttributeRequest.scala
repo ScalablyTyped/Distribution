@@ -23,28 +23,21 @@ trait ModifyVpcAttributeRequest extends StObject {
 }
 object ModifyVpcAttributeRequest {
   
-  @scala.inline
-  def apply(VpcId: VpcId): ModifyVpcAttributeRequest = {
+  inline def apply(VpcId: VpcId): ModifyVpcAttributeRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ModifyVpcAttributeRequestMutableBuilder[Self <: ModifyVpcAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setEnableDnsHostnames(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsHostnames", value.asInstanceOf[js.Any])
+    inline def setEnableDnsHostnames(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsHostnames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDnsHostnamesUndefined: Self = StObject.set(x, "EnableDnsHostnames", js.undefined)
+    inline def setEnableDnsHostnamesUndefined: Self = StObject.set(x, "EnableDnsHostnames", js.undefined)
     
-    @scala.inline
-    def setEnableDnsSupport(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsSupport", value.asInstanceOf[js.Any])
+    inline def setEnableDnsSupport(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDnsSupportUndefined: Self = StObject.set(x, "EnableDnsSupport", js.undefined)
+    inline def setEnableDnsSupportUndefined: Self = StObject.set(x, "EnableDnsSupport", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

@@ -57,49 +57,35 @@ trait SchemaBigtableColumn extends StObject {
 }
 object SchemaBigtableColumn {
   
-  @scala.inline
-  def apply(): SchemaBigtableColumn = {
+  inline def apply(): SchemaBigtableColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigtableColumn]
   }
   
-  @scala.inline
-  implicit class SchemaBigtableColumnMutableBuilder[Self <: SchemaBigtableColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBigtableColumn](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setOnlyReadLatest(value: Boolean): Self = StObject.set(x, "onlyReadLatest", value.asInstanceOf[js.Any])
+    inline def setOnlyReadLatest(value: Boolean): Self = StObject.set(x, "onlyReadLatest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyReadLatestUndefined: Self = StObject.set(x, "onlyReadLatest", js.undefined)
+    inline def setOnlyReadLatestUndefined: Self = StObject.set(x, "onlyReadLatest", js.undefined)
     
-    @scala.inline
-    def setQualifierEncoded(value: String): Self = StObject.set(x, "qualifierEncoded", value.asInstanceOf[js.Any])
+    inline def setQualifierEncoded(value: String): Self = StObject.set(x, "qualifierEncoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierEncodedUndefined: Self = StObject.set(x, "qualifierEncoded", js.undefined)
+    inline def setQualifierEncodedUndefined: Self = StObject.set(x, "qualifierEncoded", js.undefined)
     
-    @scala.inline
-    def setQualifierString(value: String): Self = StObject.set(x, "qualifierString", value.asInstanceOf[js.Any])
+    inline def setQualifierString(value: String): Self = StObject.set(x, "qualifierString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierStringUndefined: Self = StObject.set(x, "qualifierString", js.undefined)
+    inline def setQualifierStringUndefined: Self = StObject.set(x, "qualifierString", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

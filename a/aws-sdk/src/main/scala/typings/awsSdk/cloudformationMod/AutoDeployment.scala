@@ -18,25 +18,19 @@ trait AutoDeployment extends StObject {
 }
 object AutoDeployment {
   
-  @scala.inline
-  def apply(): AutoDeployment = {
+  inline def apply(): AutoDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoDeployment]
   }
   
-  @scala.inline
-  implicit class AutoDeploymentMutableBuilder[Self <: AutoDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: AutoDeployment](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: AutoDeploymentNullable): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: AutoDeploymentNullable): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setRetainStacksOnAccountRemoval(value: RetainStacksOnAccountRemovalNullable): Self = StObject.set(x, "RetainStacksOnAccountRemoval", value.asInstanceOf[js.Any])
+    inline def setRetainStacksOnAccountRemoval(value: RetainStacksOnAccountRemovalNullable): Self = StObject.set(x, "RetainStacksOnAccountRemoval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainStacksOnAccountRemovalUndefined: Self = StObject.set(x, "RetainStacksOnAccountRemoval", js.undefined)
+    inline def setRetainStacksOnAccountRemovalUndefined: Self = StObject.set(x, "RetainStacksOnAccountRemoval", js.undefined)
   }
 }

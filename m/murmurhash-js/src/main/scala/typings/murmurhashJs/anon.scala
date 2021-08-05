@@ -20,8 +20,7 @@ object anon {
   }
   object Murmur2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       murmur2: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double,
       murmur3: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double
     ): Murmur2 = {
@@ -29,14 +28,11 @@ object anon {
       __obj.asInstanceOf[Murmur2]
     }
     
-    @scala.inline
-    implicit class Murmur2MutableBuilder[Self <: Murmur2] (val x: Self) extends AnyVal {
+    extension [Self <: Murmur2](x: Self) {
       
-      @scala.inline
-      def setMurmur2(value: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "murmur2", js.Any.fromFunction2(value))
+      inline def setMurmur2(value: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "murmur2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMurmur3(value: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "murmur3", js.Any.fromFunction2(value))
+      inline def setMurmur3(value: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "murmur3", js.Any.fromFunction2(value))
     }
   }
 }

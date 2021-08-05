@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _RouteOptionsAccessObject extends StObject
 object _RouteOptionsAccessObject {
   
-  @scala.inline
-  def RouteOptionsAccessEntityObject(entity: RouteOptionsAccessEntity): typings.hapi.mod.RouteOptionsAccessEntityObject = {
+  inline def RouteOptionsAccessEntityObject(entity: RouteOptionsAccessEntity): typings.hapi.mod.RouteOptionsAccessEntityObject = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hapi.mod.RouteOptionsAccessEntityObject]
   }
   
-  @scala.inline
-  def RouteOptionsAccessScopeObject(scope: RouteOptionsAccessScope): typings.hapi.mod.RouteOptionsAccessScopeObject = {
+  inline def RouteOptionsAccessScopeObject(scope: RouteOptionsAccessScope): typings.hapi.mod.RouteOptionsAccessScopeObject = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hapi.mod.RouteOptionsAccessScopeObject]
   }

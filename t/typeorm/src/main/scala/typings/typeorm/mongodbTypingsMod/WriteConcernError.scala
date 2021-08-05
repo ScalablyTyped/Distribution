@@ -18,19 +18,15 @@ trait WriteConcernError extends StObject {
 }
 object WriteConcernError {
   
-  @scala.inline
-  def apply(code: scala.Double, errmsg: String): WriteConcernError = {
+  inline def apply(code: scala.Double, errmsg: String): WriteConcernError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteConcernError]
   }
   
-  @scala.inline
-  implicit class WriteConcernErrorMutableBuilder[Self <: WriteConcernError] (val x: Self) extends AnyVal {
+  extension [Self <: WriteConcernError](x: Self) {
     
-    @scala.inline
-    def setCode(value: scala.Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: scala.Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrmsg(value: String): Self = StObject.set(x, "errmsg", value.asInstanceOf[js.Any])
+    inline def setErrmsg(value: String): Self = StObject.set(x, "errmsg", value.asInstanceOf[js.Any])
   }
 }

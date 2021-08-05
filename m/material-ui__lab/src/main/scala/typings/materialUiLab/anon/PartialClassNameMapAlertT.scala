@@ -11,19 +11,15 @@ trait PartialClassNameMapAlertT extends StObject {
 }
 object PartialClassNameMapAlertT {
   
-  @scala.inline
-  def apply(): PartialClassNameMapAlertT = {
+  inline def apply(): PartialClassNameMapAlertT = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapAlertT]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapAlertTMutableBuilder[Self <: PartialClassNameMapAlertT] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapAlertT](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

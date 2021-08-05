@@ -20,29 +20,22 @@ object ispacingMod {
   }
   object ISpacing {
     
-    @scala.inline
-    def apply(l1: String, l2: String, m: String, s1: String, s2: String): ISpacing = {
+    inline def apply(l1: String, l2: String, m: String, s1: String, s2: String): ISpacing = {
       val __obj = js.Dynamic.literal(l1 = l1.asInstanceOf[js.Any], l2 = l2.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], s1 = s1.asInstanceOf[js.Any], s2 = s2.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpacing]
     }
     
-    @scala.inline
-    implicit class ISpacingMutableBuilder[Self <: ISpacing] (val x: Self) extends AnyVal {
+    extension [Self <: ISpacing](x: Self) {
       
-      @scala.inline
-      def setL1(value: String): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
+      inline def setL1(value: String): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL2(value: String): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
+      inline def setL2(value: String): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: String): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: String): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS1(value: String): Self = StObject.set(x, "s1", value.asInstanceOf[js.Any])
+      inline def setS1(value: String): Self = StObject.set(x, "s1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS2(value: String): Self = StObject.set(x, "s2", value.asInstanceOf[js.Any])
+      inline def setS2(value: String): Self = StObject.set(x, "s2", value.asInstanceOf[js.Any])
     }
   }
 }

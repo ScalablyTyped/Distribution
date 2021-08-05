@@ -23,31 +23,23 @@ trait StartBackupJobOutput extends StObject {
 }
 object StartBackupJobOutput {
   
-  @scala.inline
-  def apply(): StartBackupJobOutput = {
+  inline def apply(): StartBackupJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartBackupJobOutput]
   }
   
-  @scala.inline
-  implicit class StartBackupJobOutputMutableBuilder[Self <: StartBackupJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartBackupJobOutput](x: Self) {
     
-    @scala.inline
-    def setBackupJobId(value: String): Self = StObject.set(x, "BackupJobId", value.asInstanceOf[js.Any])
+    inline def setBackupJobId(value: String): Self = StObject.set(x, "BackupJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupJobIdUndefined: Self = StObject.set(x, "BackupJobId", js.undefined)
+    inline def setBackupJobIdUndefined: Self = StObject.set(x, "BackupJobId", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
+    inline def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
   }
 }

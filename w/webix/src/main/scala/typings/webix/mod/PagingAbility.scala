@@ -18,16 +18,12 @@ object PagingAbility {
   @js.native
   val ^ : PagingAbility = js.native
   
-  @scala.inline
-  implicit class PagingAbilityMutableBuilder[Self <: PagingAbility] (val x: Self) extends AnyVal {
+  extension [Self <: PagingAbility](x: Self) {
     
-    @scala.inline
-    def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
+    inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPager(value: () => js.Any): Self = StObject.set(x, "getPager", js.Any.fromFunction0(value))
+    inline def setGetPager(value: () => js.Any): Self = StObject.set(x, "getPager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPage(value: Double => Unit): Self = StObject.set(x, "setPage", js.Any.fromFunction1(value))
+    inline def setSetPage(value: Double => Unit): Self = StObject.set(x, "setPage", js.Any.fromFunction1(value))
   }
 }

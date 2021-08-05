@@ -12,17 +12,14 @@ object ifragmentMod {
   }
   object IFragment {
     
-    @scala.inline
-    def apply(build: () => String): IFragment = {
+    inline def apply(build: () => String): IFragment = {
       val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build))
       __obj.asInstanceOf[IFragment]
     }
     
-    @scala.inline
-    implicit class IFragmentMutableBuilder[Self <: IFragment] (val x: Self) extends AnyVal {
+    extension [Self <: IFragment](x: Self) {
       
-      @scala.inline
-      def setBuild(value: () => String): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+      inline def setBuild(value: () => String): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
   }
 }

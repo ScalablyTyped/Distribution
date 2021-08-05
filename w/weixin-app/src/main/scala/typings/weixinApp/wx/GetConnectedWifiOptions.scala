@@ -13,16 +13,13 @@ trait GetConnectedWifiOptions
 }
 object GetConnectedWifiOptions {
   
-  @scala.inline
-  def apply(success: WiFi => Unit): GetConnectedWifiOptions = {
+  inline def apply(success: WiFi => Unit): GetConnectedWifiOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetConnectedWifiOptions]
   }
   
-  @scala.inline
-  implicit class GetConnectedWifiOptionsMutableBuilder[Self <: GetConnectedWifiOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectedWifiOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: WiFi => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: WiFi => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

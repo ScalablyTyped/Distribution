@@ -77,8 +77,7 @@ trait TaskAgentPoolMaintenanceJob extends StObject {
 }
 object TaskAgentPoolMaintenanceJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionId: Double,
     errorCount: Double,
     finishTime: Date,
@@ -98,52 +97,36 @@ object TaskAgentPoolMaintenanceJob {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceJob]
   }
   
-  @scala.inline
-  implicit class TaskAgentPoolMaintenanceJobMutableBuilder[Self <: TaskAgentPoolMaintenanceJob] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentPoolMaintenanceJob](x: Self) {
     
-    @scala.inline
-    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsDownloadUrl(value: String): Self = StObject.set(x, "logsDownloadUrl", value.asInstanceOf[js.Any])
+    inline def setLogsDownloadUrl(value: String): Self = StObject.set(x, "logsDownloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrchestrationId(value: String): Self = StObject.set(x, "orchestrationId", value.asInstanceOf[js.Any])
+    inline def setOrchestrationId(value: String): Self = StObject.set(x, "orchestrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
+    inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: TaskAgentPoolMaintenanceJobResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TaskAgentPoolMaintenanceJobResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TaskAgentPoolMaintenanceJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskAgentPoolMaintenanceJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "targetAgents", value.asInstanceOf[js.Any])
+    inline def setTargetAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "targetAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "targetAgents", js.Array(value :_*))
+    inline def setTargetAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "targetAgents", js.Array(value :_*))
     
-    @scala.inline
-    def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
+    inline def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
   }
 }

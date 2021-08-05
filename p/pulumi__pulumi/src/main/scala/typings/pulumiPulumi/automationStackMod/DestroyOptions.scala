@@ -18,46 +18,33 @@ trait DestroyOptions extends StObject {
 }
 object DestroyOptions {
   
-  @scala.inline
-  def apply(): DestroyOptions = {
+  inline def apply(): DestroyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestroyOptions]
   }
   
-  @scala.inline
-  implicit class DestroyOptionsMutableBuilder[Self <: DestroyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DestroyOptions](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOnOutput(value: /* out */ String => Unit): Self = StObject.set(x, "onOutput", js.Any.fromFunction1(value))
+    inline def setOnOutput(value: /* out */ String => Unit): Self = StObject.set(x, "onOutput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOutputUndefined: Self = StObject.set(x, "onOutput", js.undefined)
+    inline def setOnOutputUndefined: Self = StObject.set(x, "onOutput", js.undefined)
     
-    @scala.inline
-    def setParallel(value: Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+    inline def setParallel(value: Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+    inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDependents(value: Boolean): Self = StObject.set(x, "targetDependents", value.asInstanceOf[js.Any])
+    inline def setTargetDependents(value: Boolean): Self = StObject.set(x, "targetDependents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDependentsUndefined: Self = StObject.set(x, "targetDependents", js.undefined)
+    inline def setTargetDependentsUndefined: Self = StObject.set(x, "targetDependents", js.undefined)
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

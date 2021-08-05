@@ -11,14 +11,11 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isImportedByNonStylable(module: Reasons): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportedByNonStylable")(module.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImportedByNonStylable(module: Reasons): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportedByNonStylable")(module.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isStylableModule(
+  inline def isStylableModule(
     module: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Module */ js.Any
   ): /* is @stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.StylableModule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStylableModule")(module.asInstanceOf[js.Any]).asInstanceOf[/* is @stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.StylableModule */ Boolean]
   
-  @scala.inline
-  def rewriteUrl(node: js.Any, replacementIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteUrl")(node.asInstanceOf[js.Any], replacementIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rewriteUrl(node: js.Any, replacementIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteUrl")(node.asInstanceOf[js.Any], replacementIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

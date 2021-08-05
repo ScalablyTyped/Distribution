@@ -34,26 +34,20 @@ trait MapSize extends StObject {
 }
 object MapSize {
   
-  @scala.inline
-  def apply(copy: () => MapSize, equals_ : MapSize => Boolean, height: Double, width: Double): MapSize = {
+  inline def apply(copy: () => MapSize, equals_ : MapSize => Boolean, height: Double, width: Double): MapSize = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[MapSize]
   }
   
-  @scala.inline
-  implicit class MapSizeMutableBuilder[Self <: MapSize] (val x: Self) extends AnyVal {
+  extension [Self <: MapSize](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => MapSize): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => MapSize): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: MapSize => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: MapSize => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

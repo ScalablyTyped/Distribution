@@ -33,38 +33,28 @@ object hashedModuleIdsPluginMod {
   }
   object HashedModuleIdsPluginOptions {
     
-    @scala.inline
-    def apply(): HashedModuleIdsPluginOptions = {
+    inline def apply(): HashedModuleIdsPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HashedModuleIdsPluginOptions]
     }
     
-    @scala.inline
-    implicit class HashedModuleIdsPluginOptionsMutableBuilder[Self <: HashedModuleIdsPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HashedModuleIdsPluginOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setHashDigest(value: hex | latin1 | base64): Self = StObject.set(x, "hashDigest", value.asInstanceOf[js.Any])
+      inline def setHashDigest(value: hex | latin1 | base64): Self = StObject.set(x, "hashDigest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashDigestLength(value: Double): Self = StObject.set(x, "hashDigestLength", value.asInstanceOf[js.Any])
+      inline def setHashDigestLength(value: Double): Self = StObject.set(x, "hashDigestLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashDigestLengthUndefined: Self = StObject.set(x, "hashDigestLength", js.undefined)
+      inline def setHashDigestLengthUndefined: Self = StObject.set(x, "hashDigestLength", js.undefined)
       
-      @scala.inline
-      def setHashDigestUndefined: Self = StObject.set(x, "hashDigest", js.undefined)
+      inline def setHashDigestUndefined: Self = StObject.set(x, "hashDigest", js.undefined)
       
-      @scala.inline
-      def setHashFunction(value: String): Self = StObject.set(x, "hashFunction", value.asInstanceOf[js.Any])
+      inline def setHashFunction(value: String): Self = StObject.set(x, "hashFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashFunctionUndefined: Self = StObject.set(x, "hashFunction", js.undefined)
+      inline def setHashFunctionUndefined: Self = StObject.set(x, "hashFunction", js.undefined)
     }
   }
 }

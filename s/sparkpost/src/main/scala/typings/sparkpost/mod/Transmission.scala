@@ -51,8 +51,7 @@ trait Transmission extends StObject {
 }
 object Transmission {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     campaign_id: String,
     content: InlineContent | Templateid | Emailrfc822,
     description: String,
@@ -71,46 +70,32 @@ object Transmission {
     __obj.asInstanceOf[Transmission]
   }
   
-  @scala.inline
-  implicit class TransmissionMutableBuilder[Self <: Transmission] (val x: Self) extends AnyVal {
+  extension [Self <: Transmission](x: Self) {
     
-    @scala.inline
-    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
+    inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_failed_generation(value: Double): Self = StObject.set(x, "num_failed_generation", value.asInstanceOf[js.Any])
+    inline def setNum_failed_generation(value: Double): Self = StObject.set(x, "num_failed_generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_generated(value: Double): Self = StObject.set(x, "num_generated", value.asInstanceOf[js.Any])
+    inline def setNum_generated(value: Double): Self = StObject.set(x, "num_generated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_invalid_recipients(value: Double): Self = StObject.set(x, "num_invalid_recipients", value.asInstanceOf[js.Any])
+    inline def setNum_invalid_recipients(value: Double): Self = StObject.set(x, "num_invalid_recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRcpt_list_chunk_size(value: Double): Self = StObject.set(x, "rcpt_list_chunk_size", value.asInstanceOf[js.Any])
+    inline def setRcpt_list_chunk_size(value: Double): Self = StObject.set(x, "rcpt_list_chunk_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRcpt_list_total_chunks(value: Double): Self = StObject.set(x, "rcpt_list_total_chunks", value.asInstanceOf[js.Any])
+    inline def setRcpt_list_total_chunks(value: Double): Self = StObject.set(x, "rcpt_list_total_chunks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: submitted | Generating | Success | Canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: submitted | Generating | Success | Canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
   }
 }

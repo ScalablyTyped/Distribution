@@ -13,19 +13,15 @@ trait GetReplicaOptions extends StObject {
 }
 object GetReplicaOptions {
   
-  @scala.inline
-  def apply(): GetReplicaOptions = {
+  inline def apply(): GetReplicaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReplicaOptions]
   }
   
-  @scala.inline
-  implicit class GetReplicaOptionsMutableBuilder[Self <: GetReplicaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetReplicaOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

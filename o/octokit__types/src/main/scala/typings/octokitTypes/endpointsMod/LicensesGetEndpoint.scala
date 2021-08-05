@@ -10,16 +10,13 @@ trait LicensesGetEndpoint extends StObject {
 }
 object LicensesGetEndpoint {
   
-  @scala.inline
-  def apply(license: String): LicensesGetEndpoint = {
+  inline def apply(license: String): LicensesGetEndpoint = {
     val __obj = js.Dynamic.literal(license = license.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicensesGetEndpoint]
   }
   
-  @scala.inline
-  implicit class LicensesGetEndpointMutableBuilder[Self <: LicensesGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: LicensesGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
   }
 }

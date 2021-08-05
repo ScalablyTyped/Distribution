@@ -18,28 +18,21 @@ trait FaultRootCause extends StObject {
 }
 object FaultRootCause {
   
-  @scala.inline
-  def apply(): FaultRootCause = {
+  inline def apply(): FaultRootCause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaultRootCause]
   }
   
-  @scala.inline
-  implicit class FaultRootCauseMutableBuilder[Self <: FaultRootCause] (val x: Self) extends AnyVal {
+  extension [Self <: FaultRootCause](x: Self) {
     
-    @scala.inline
-    def setClientImpacting(value: NullableBoolean): Self = StObject.set(x, "ClientImpacting", value.asInstanceOf[js.Any])
+    inline def setClientImpacting(value: NullableBoolean): Self = StObject.set(x, "ClientImpacting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientImpactingUndefined: Self = StObject.set(x, "ClientImpacting", js.undefined)
+    inline def setClientImpactingUndefined: Self = StObject.set(x, "ClientImpacting", js.undefined)
     
-    @scala.inline
-    def setServices(value: FaultRootCauseServices): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+    inline def setServices(value: FaultRootCauseServices): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: FaultRootCauseService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: FaultRootCauseService*): Self = StObject.set(x, "Services", js.Array(value :_*))
   }
 }

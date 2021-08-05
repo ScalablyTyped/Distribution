@@ -63,79 +63,55 @@ trait DescribeInputDeviceResponse extends StObject {
 }
 object DescribeInputDeviceResponse {
   
-  @scala.inline
-  def apply(): DescribeInputDeviceResponse = {
+  inline def apply(): DescribeInputDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInputDeviceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeInputDeviceResponseMutableBuilder[Self <: DescribeInputDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInputDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setConnectionState(value: InputDeviceConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
+    inline def setConnectionState(value: InputDeviceConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
+    inline def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
-    @scala.inline
-    def setDeviceSettingsSyncState(value: DeviceSettingsSyncState): Self = StObject.set(x, "DeviceSettingsSyncState", value.asInstanceOf[js.Any])
+    inline def setDeviceSettingsSyncState(value: DeviceSettingsSyncState): Self = StObject.set(x, "DeviceSettingsSyncState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceSettingsSyncStateUndefined: Self = StObject.set(x, "DeviceSettingsSyncState", js.undefined)
+    inline def setDeviceSettingsSyncStateUndefined: Self = StObject.set(x, "DeviceSettingsSyncState", js.undefined)
     
-    @scala.inline
-    def setDeviceUpdateStatus(value: DeviceUpdateStatus): Self = StObject.set(x, "DeviceUpdateStatus", value.asInstanceOf[js.Any])
+    inline def setDeviceUpdateStatus(value: DeviceUpdateStatus): Self = StObject.set(x, "DeviceUpdateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUpdateStatusUndefined: Self = StObject.set(x, "DeviceUpdateStatus", js.undefined)
+    inline def setDeviceUpdateStatusUndefined: Self = StObject.set(x, "DeviceUpdateStatus", js.undefined)
     
-    @scala.inline
-    def setHdDeviceSettings(value: InputDeviceHdSettings): Self = StObject.set(x, "HdDeviceSettings", value.asInstanceOf[js.Any])
+    inline def setHdDeviceSettings(value: InputDeviceHdSettings): Self = StObject.set(x, "HdDeviceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHdDeviceSettingsUndefined: Self = StObject.set(x, "HdDeviceSettings", js.undefined)
+    inline def setHdDeviceSettingsUndefined: Self = StObject.set(x, "HdDeviceSettings", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMacAddress(value: string): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: string): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNetworkSettings(value: InputDeviceNetworkSettings): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
+    inline def setNetworkSettings(value: InputDeviceNetworkSettings): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSettingsUndefined: Self = StObject.set(x, "NetworkSettings", js.undefined)
+    inline def setNetworkSettingsUndefined: Self = StObject.set(x, "NetworkSettings", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: string): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: string): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
-    @scala.inline
-    def setType(value: InputDeviceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: InputDeviceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

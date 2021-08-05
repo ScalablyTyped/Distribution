@@ -33,37 +33,27 @@ trait Period
 }
 object Period {
   
-  @scala.inline
-  def apply(): Period = {
+  inline def apply(): Period = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Period]
   }
   
-  @scala.inline
-  implicit class PeriodMutableBuilder[Self <: Period] (val x: Self) extends AnyVal {
+  extension [Self <: Period](x: Self) {
     
-    @scala.inline
-    def setEnd(value: dateTime): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: dateTime): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: dateTime): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: dateTime): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+    inline def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
+    inline def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
-    @scala.inline
-    def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
+    inline def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
   }
 }

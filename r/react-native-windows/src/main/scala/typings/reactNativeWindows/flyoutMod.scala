@@ -22,8 +22,7 @@ object flyoutMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IFlyoutTargetState]
+    inline def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IFlyoutTargetState]
   }
   
   trait IFlyoutTargetState extends StObject {
@@ -34,29 +33,22 @@ object flyoutMod {
   }
   object IFlyoutTargetState {
     
-    @scala.inline
-    def apply(): IFlyoutTargetState = {
+    inline def apply(): IFlyoutTargetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFlyoutTargetState]
     }
     
-    @scala.inline
-    implicit class IFlyoutTargetStateMutableBuilder[Self <: IFlyoutTargetState] (val x: Self) extends AnyVal {
+    extension [Self <: IFlyoutTargetState](x: Self) {
       
-      @scala.inline
-      def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetRef(value: ReactNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      inline def setTargetRef(value: ReactNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

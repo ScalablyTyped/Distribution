@@ -44,9 +44,9 @@ object graphModelMod {
     def this(modelUrl: String, loadOptions: LoadOptions) = this()
     def this(modelUrl: IOHandler, loadOptions: LoadOptions) = this()
     
-    var artifacts: js.Any = js.native
+    /* private */ var artifacts: js.Any = js.native
     
-    var convertTensorMapToTensorsMap: js.Any = js.native
+    /* private */ var convertTensorMapToTensorsMap: js.Any = js.native
     
     /**
       * Releases the memory used by the weight tensors and resourceManager.
@@ -101,13 +101,13 @@ object graphModelMod {
     def executeAsync(inputs: NamedTensorMap, outputs: String): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
     def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
     
-    var executor: js.Any = js.native
+    /* private */ var executor: js.Any = js.native
     
-    var findIOHandler: js.Any = js.native
+    /* private */ var findIOHandler: js.Any = js.native
     
-    var handler: js.Any = js.native
+    /* private */ var handler: js.Any = js.native
     
-    var initializer: js.Any = js.native
+    /* private */ var initializer: js.Any = js.native
     
     val inputNodes: js.Array[String] = js.native
     
@@ -120,7 +120,7 @@ object graphModelMod {
       */
     def load(): js.Promise[Boolean] = js.native
     
-    var loadOptions: js.Any = js.native
+    /* private */ var loadOptions: js.Any = js.native
     
     /**
       * Synchronously construct the in memory weight map and
@@ -130,13 +130,13 @@ object graphModelMod {
       */
     def loadSync(artifacts: ModelArtifacts): Boolean = js.native
     
-    var modelUrl: js.Any = js.native
+    /* private */ var modelUrl: js.Any = js.native
     
     val modelVersion: String = js.native
     
-    var normalizeInputs: js.Any = js.native
+    /* private */ var normalizeInputs: js.Any = js.native
     
-    var normalizeOutputs: js.Any = js.native
+    /* private */ var normalizeOutputs: js.Any = js.native
     
     val outputNodes: js.Array[String] = js.native
     
@@ -185,7 +185,7 @@ object graphModelMod {
     def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     
-    var resourceManager: js.Any = js.native
+    /* private */ var resourceManager: js.Any = js.native
     
     def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
     def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
@@ -236,7 +236,7 @@ object graphModelMod {
     def save(handlerOrURL: IOHandler): js.Promise[SaveResult] = js.native
     def save(handlerOrURL: IOHandler, config: SaveConfig): js.Promise[SaveResult] = js.native
     
-    var version: js.Any = js.native
+    /* private */ var version: js.Any = js.native
     
     val weights: NamedTensorsMap = js.native
   }
@@ -245,12 +245,8 @@ object graphModelMod {
   @js.native
   val TFHUB_SEARCH_PARAM: /* "?tfjs-format=file" */ String = js.native
   
-  @scala.inline
-  def loadGraphModel(modelUrl: String): js.Promise[GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel]]
-  @scala.inline
-  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel]]
-  @scala.inline
-  def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel]]
-  @scala.inline
-  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel]]
+  inline def loadGraphModel(modelUrl: String): js.Promise[GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel]]
+  inline def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel]]
+  inline def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GraphModel]]
+  inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GraphModel]]
 }

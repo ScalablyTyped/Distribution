@@ -20,37 +20,27 @@ trait Registration extends StObject {
 }
 object Registration {
   
-  @scala.inline
-  def apply(): Registration = {
+  inline def apply(): Registration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Registration]
   }
   
-  @scala.inline
-  implicit class RegistrationMutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
+  extension [Self <: Registration](x: Self) {
     
-    @scala.inline
-    def setCloudPubsubTopic(value: CloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
+    inline def setCloudPubsubTopic(value: CloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudPubsubTopicUndefined: Self = StObject.set(x, "cloudPubsubTopic", js.undefined)
+    inline def setCloudPubsubTopicUndefined: Self = StObject.set(x, "cloudPubsubTopic", js.undefined)
     
-    @scala.inline
-    def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
+    inline def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
+    inline def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
     
-    @scala.inline
-    def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
+    inline def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
     
-    @scala.inline
-    def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationIdUndefined: Self = StObject.set(x, "registrationId", js.undefined)
+    inline def setRegistrationIdUndefined: Self = StObject.set(x, "registrationId", js.undefined)
   }
 }

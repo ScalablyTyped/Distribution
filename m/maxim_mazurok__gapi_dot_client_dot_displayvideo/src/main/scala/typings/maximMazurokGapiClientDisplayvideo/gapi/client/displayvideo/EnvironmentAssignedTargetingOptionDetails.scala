@@ -14,25 +14,19 @@ trait EnvironmentAssignedTargetingOptionDetails extends StObject {
 }
 object EnvironmentAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): EnvironmentAssignedTargetingOptionDetails = {
+  inline def apply(): EnvironmentAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class EnvironmentAssignedTargetingOptionDetailsMutableBuilder[Self <: EnvironmentAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

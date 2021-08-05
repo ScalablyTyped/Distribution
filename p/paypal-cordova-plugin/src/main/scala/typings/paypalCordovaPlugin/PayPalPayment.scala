@@ -71,8 +71,7 @@ trait PayPalPayment extends StObject {
 }
 object PayPalPayment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: String,
     bnCode: String,
     currency: String,
@@ -89,43 +88,30 @@ object PayPalPayment {
     __obj.asInstanceOf[PayPalPayment]
   }
   
-  @scala.inline
-  implicit class PayPalPaymentMutableBuilder[Self <: PayPalPayment] (val x: Self) extends AnyVal {
+  extension [Self <: PayPalPayment](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBnCode(value: String): Self = StObject.set(x, "bnCode", value.asInstanceOf[js.Any])
+    inline def setBnCode(value: String): Self = StObject.set(x, "bnCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: PayPalPaymentDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: PayPalPaymentDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceNumber(value: String): Self = StObject.set(x, "invoiceNumber", value.asInstanceOf[js.Any])
+    inline def setInvoiceNumber(value: String): Self = StObject.set(x, "invoiceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[PayPalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PayPalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: PayPalItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PayPalItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setShippingAddress(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+    inline def setShippingAddress(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftDescriptor(value: String): Self = StObject.set(x, "softDescriptor", value.asInstanceOf[js.Any])
+    inline def setSoftDescriptor(value: String): Self = StObject.set(x, "softDescriptor", value.asInstanceOf[js.Any])
   }
 }

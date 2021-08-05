@@ -8,16 +8,13 @@ object maximMazurokGapiClientChromeuxreportStrings {
   
   @js.native
   sealed trait Record extends StObject
-  @scala.inline
-  def Record: Record = "Record".asInstanceOf[Record]
+  inline def Record: Record = "Record".asInstanceOf[Record]
   
   @js.native
   sealed trait chromeuxreport extends StObject
-  @scala.inline
-  def chromeuxreport: chromeuxreport = "chromeuxreport".asInstanceOf[chromeuxreport]
+  inline def chromeuxreport: chromeuxreport = "chromeuxreport".asInstanceOf[chromeuxreport]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -31,67 +31,47 @@ trait PartialCarouselOptions extends StObject {
 }
 object PartialCarouselOptions {
   
-  @scala.inline
-  def apply(): PartialCarouselOptions = {
+  inline def apply(): PartialCarouselOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCarouselOptions]
   }
   
-  @scala.inline
-  implicit class PartialCarouselOptionsMutableBuilder[Self <: PartialCarouselOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCarouselOptions](x: Self) {
     
-    @scala.inline
-    def setDist(value: Double): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
+    inline def setDist(value: Double): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistUndefined: Self = StObject.set(x, "dist", js.undefined)
+    inline def setDistUndefined: Self = StObject.set(x, "dist", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
+    inline def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
+    inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
     
-    @scala.inline
-    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+    inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+    inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     
-    @scala.inline
-    def setNumVisible(value: Double): Self = StObject.set(x, "numVisible", value.asInstanceOf[js.Any])
+    inline def setNumVisible(value: Double): Self = StObject.set(x, "numVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumVisibleUndefined: Self = StObject.set(x, "numVisible", js.undefined)
+    inline def setNumVisibleUndefined: Self = StObject.set(x, "numVisible", js.undefined)
     
-    @scala.inline
-    def setOnCycleTo(value: js.ThisFunction2[/* this */ Carousel, /* current */ Element, /* dragged */ Boolean, Unit]): Self = StObject.set(x, "onCycleTo", value.asInstanceOf[js.Any])
+    inline def setOnCycleTo(value: js.ThisFunction2[/* this */ Carousel, /* current */ Element, /* dragged */ Boolean, Unit]): Self = StObject.set(x, "onCycleTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCycleToUndefined: Self = StObject.set(x, "onCycleTo", js.undefined)
+    inline def setOnCycleToUndefined: Self = StObject.set(x, "onCycleTo", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+    inline def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+    inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
   }
 }

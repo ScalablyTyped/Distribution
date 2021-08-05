@@ -11,6 +11,5 @@ object ngTableFilterRowDirectiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ngTableFilterRow(): Controller = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableFilterRow")().asInstanceOf[Controller]
+  inline def ngTableFilterRow(): Controller = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableFilterRow")().asInstanceOf[Controller]
 }

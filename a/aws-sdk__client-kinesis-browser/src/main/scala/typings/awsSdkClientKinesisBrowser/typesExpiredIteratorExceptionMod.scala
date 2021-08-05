@@ -16,17 +16,14 @@ object typesExpiredIteratorExceptionMod {
   }
   object ExpiredIteratorException {
     
-    @scala.inline
-    def apply(): ExpiredIteratorException = {
+    inline def apply(): ExpiredIteratorException = {
       val __obj = js.Dynamic.literal(name = "ExpiredIteratorException")
       __obj.asInstanceOf[ExpiredIteratorException]
     }
     
-    @scala.inline
-    implicit class ExpiredIteratorExceptionMutableBuilder[Self <: ExpiredIteratorException] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiredIteratorException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredIteratorException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesExpiredIteratorExceptionMod {
   }
   object ExpiredIteratorExceptionDetails {
     
-    @scala.inline
-    def apply(): ExpiredIteratorExceptionDetails = {
+    inline def apply(): ExpiredIteratorExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpiredIteratorExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ExpiredIteratorExceptionDetailsMutableBuilder[Self <: ExpiredIteratorExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiredIteratorExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

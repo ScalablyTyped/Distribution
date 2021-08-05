@@ -27,8 +27,7 @@ trait Matches
 }
 object Matches {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String | Buffer | JsonCompatible,
     headers: Record[String, String],
     initialPriority: ResourcePriority,
@@ -42,16 +41,12 @@ object Matches {
     __obj.asInstanceOf[Matches]
   }
   
-  @scala.inline
-  implicit class MatchesMutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
+  extension [Self <: Matches](x: Self) {
     
-    @scala.inline
-    def setBody(value: String | Buffer | JsonCompatible): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | Buffer | JsonCompatible): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: Record[String, String]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: Record[String, String]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

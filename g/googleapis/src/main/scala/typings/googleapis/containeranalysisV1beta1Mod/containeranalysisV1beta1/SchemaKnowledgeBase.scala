@@ -19,25 +19,19 @@ trait SchemaKnowledgeBase extends StObject {
 }
 object SchemaKnowledgeBase {
   
-  @scala.inline
-  def apply(): SchemaKnowledgeBase = {
+  inline def apply(): SchemaKnowledgeBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaKnowledgeBase]
   }
   
-  @scala.inline
-  implicit class SchemaKnowledgeBaseMutableBuilder[Self <: SchemaKnowledgeBase] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaKnowledgeBase](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

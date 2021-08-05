@@ -18,16 +18,13 @@ trait ASPxClientCardViewFocusEventArgs
 }
 object ASPxClientCardViewFocusEventArgs {
   
-  @scala.inline
-  def apply(isChangedOnServer: Boolean, processOnServer: Boolean): ASPxClientCardViewFocusEventArgs = {
+  inline def apply(isChangedOnServer: Boolean, processOnServer: Boolean): ASPxClientCardViewFocusEventArgs = {
     val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewFocusEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewFocusEventArgsMutableBuilder[Self <: ASPxClientCardViewFocusEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewFocusEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
+    inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
   }
 }

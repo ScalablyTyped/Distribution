@@ -20,20 +20,16 @@ trait FolderObject
 }
 object FolderObject {
   
-  @scala.inline
-  def apply(_id: String, common: OtherCommon, native: Record[String, js.Any]): FolderObject = {
+  inline def apply(_id: String, common: OtherCommon, native: Record[String, js.Any]): FolderObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("folder")
     __obj.asInstanceOf[FolderObject]
   }
   
-  @scala.inline
-  implicit class FolderObjectMutableBuilder[Self <: FolderObject] (val x: Self) extends AnyVal {
+  extension [Self <: FolderObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: OtherCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: OtherCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: folder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: folder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

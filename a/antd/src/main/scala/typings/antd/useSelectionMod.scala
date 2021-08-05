@@ -21,10 +21,8 @@ object useSelectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RecordType](rowSelection: Unit, config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rowSelection.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TransformColumns[RecordType], Set[Key]]]
-  @scala.inline
-  def default[RecordType](rowSelection: TableRowSelection[RecordType], config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rowSelection.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TransformColumns[RecordType], Set[Key]]]
+  inline def default[RecordType](rowSelection: Unit, config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rowSelection.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TransformColumns[RecordType], Set[Key]]]
+  inline def default[RecordType](rowSelection: TableRowSelection[RecordType], config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rowSelection.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TransformColumns[RecordType], Set[Key]]]
   
   @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_ALL")
   @js.native
@@ -65,8 +63,7 @@ object useSelectionMod {
   }
   object UseSelectionConfig {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       childrenColumnName: String,
       data: js.Array[RecordType],
       getRecordByKey: Key => RecordType,
@@ -79,53 +76,37 @@ object useSelectionMod {
       __obj.asInstanceOf[UseSelectionConfig[RecordType]]
     }
     
-    @scala.inline
-    implicit class UseSelectionConfigMutableBuilder[Self <: UseSelectionConfig[?], RecordType] (val x: Self & UseSelectionConfig[RecordType]) extends AnyVal {
+    extension [Self <: UseSelectionConfig[?], RecordType](x: Self & UseSelectionConfig[RecordType]) {
       
-      @scala.inline
-      def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
+      inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[RecordType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[RecordType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setExpandIconColumnIndex(value: Double): Self = StObject.set(x, "expandIconColumnIndex", value.asInstanceOf[js.Any])
+      inline def setExpandIconColumnIndex(value: Double): Self = StObject.set(x, "expandIconColumnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconColumnIndexUndefined: Self = StObject.set(x, "expandIconColumnIndex", js.undefined)
+      inline def setExpandIconColumnIndexUndefined: Self = StObject.set(x, "expandIconColumnIndex", js.undefined)
       
-      @scala.inline
-      def setExpandType(value: ExpandType): Self = StObject.set(x, "expandType", value.asInstanceOf[js.Any])
+      inline def setExpandType(value: ExpandType): Self = StObject.set(x, "expandType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandTypeNull: Self = StObject.set(x, "expandType", null)
+      inline def setExpandTypeNull: Self = StObject.set(x, "expandType", null)
       
-      @scala.inline
-      def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
-      @scala.inline
-      def setGetRecordByKey(value: Key => RecordType): Self = StObject.set(x, "getRecordByKey", js.Any.fromFunction1(value))
+      inline def setGetRecordByKey(value: Key => RecordType): Self = StObject.set(x, "getRecordByKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRowKey(value: (RecordType, /* index */ js.UndefOr[Double]) => typings.rcTable.interfaceMod.Key): Self = StObject.set(x, "getRowKey", js.Any.fromFunction2(value))
+      inline def setGetRowKey(value: (RecordType, /* index */ js.UndefOr[Double]) => typings.rcTable.interfaceMod.Key): Self = StObject.set(x, "getRowKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLocale(value: TableLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: TableLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageData(value: js.Array[RecordType]): Self = StObject.set(x, "pageData", value.asInstanceOf[js.Any])
+      inline def setPageData(value: js.Array[RecordType]): Self = StObject.set(x, "pageData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageDataVarargs(value: RecordType*): Self = StObject.set(x, "pageData", js.Array(value :_*))
+      inline def setPageDataVarargs(value: RecordType*): Self = StObject.set(x, "pageData", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
   }
 }

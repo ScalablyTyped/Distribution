@@ -23,7 +23,7 @@ object areaPlotMod {
     
     /* protected */ def _additionalPaint(): Unit = js.native
     
-    var _constantBaselineValueProvider: js.Any = js.native
+    /* private */ var _constantBaselineValueProvider: js.Any = js.native
     
     /* protected */ def _constructAreaProjector(xProjector: Projector, yProjector: Projector, y0Projector: Projector): js.Function3[/* datum */ js.Array[js.Any], /* index */ Double, /* dataset */ Dataset, String] = js.native
     
@@ -45,7 +45,7 @@ object areaPlotMod {
     
     /* private */ def _generateLineDrawSteps(): js.Any = js.native
     
-    var _lineDrawers: js.Any = js.native
+    /* private */ var _lineDrawers: js.Any = js.native
     
     /* protected */ def _updateYScale(): Unit = js.native
     
@@ -76,7 +76,6 @@ object areaPlotMod {
     @JSImport("plottable/build/src/plots/areaPlot", "Area._Y0_KEY")
     @js.native
     def _Y0_KEY: js.Any = js.native
-    @scala.inline
-    def _Y0_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
+    inline def _Y0_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
   }
 }

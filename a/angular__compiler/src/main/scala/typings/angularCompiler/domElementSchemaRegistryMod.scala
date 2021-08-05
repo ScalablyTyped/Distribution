@@ -11,6 +11,6 @@ object domElementSchemaRegistryMod {
   @js.native
   class DomElementSchemaRegistry () extends ElementSchemaRegistry {
     
-    var _schema: js.Any = js.native
+    /* private */ var _schema: js.Any = js.native
   }
 }

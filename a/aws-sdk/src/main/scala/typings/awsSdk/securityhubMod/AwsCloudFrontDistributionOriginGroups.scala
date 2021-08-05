@@ -13,22 +13,17 @@ trait AwsCloudFrontDistributionOriginGroups extends StObject {
 }
 object AwsCloudFrontDistributionOriginGroups {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionOriginGroups = {
+  inline def apply(): AwsCloudFrontDistributionOriginGroups = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginGroups]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionOriginGroupsMutableBuilder[Self <: AwsCloudFrontDistributionOriginGroups] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionOriginGroups](x: Self) {
     
-    @scala.inline
-    def setItems(value: AwsCloudFrontDistributionOriginGroupsItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: AwsCloudFrontDistributionOriginGroupsItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: AwsCloudFrontDistributionOriginGroup*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: AwsCloudFrontDistributionOriginGroup*): Self = StObject.set(x, "Items", js.Array(value :_*))
   }
 }

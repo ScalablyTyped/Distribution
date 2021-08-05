@@ -23,25 +23,19 @@ trait DebugSessionCustomEvent extends StObject {
 }
 object DebugSessionCustomEvent {
   
-  @scala.inline
-  def apply(event: String, session: DebugSession): DebugSessionCustomEvent = {
+  inline def apply(event: String, session: DebugSession): DebugSessionCustomEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSessionCustomEvent]
   }
   
-  @scala.inline
-  implicit class DebugSessionCustomEventMutableBuilder[Self <: DebugSessionCustomEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DebugSessionCustomEvent](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: DebugSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: DebugSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

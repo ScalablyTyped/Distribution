@@ -26,8 +26,7 @@ trait MeshCreatePlaneParamsSize
 }
 object MeshCreatePlaneParamsSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object MeshCreatePlaneParamsSize {
     __obj.asInstanceOf[MeshCreatePlaneParamsSize]
   }
   
-  @scala.inline
-  implicit class MeshCreatePlaneParamsSizeMutableBuilder[Self <: MeshCreatePlaneParamsSize] (val x: Self) extends AnyVal {
+  extension [Self <: MeshCreatePlaneParamsSize](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

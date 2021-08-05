@@ -13,19 +13,15 @@ trait CreateReportGroupOutput extends StObject {
 }
 object CreateReportGroupOutput {
   
-  @scala.inline
-  def apply(): CreateReportGroupOutput = {
+  inline def apply(): CreateReportGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateReportGroupOutput]
   }
   
-  @scala.inline
-  implicit class CreateReportGroupOutputMutableBuilder[Self <: CreateReportGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReportGroupOutput](x: Self) {
     
-    @scala.inline
-    def setReportGroup(value: ReportGroup): Self = StObject.set(x, "reportGroup", value.asInstanceOf[js.Any])
+    inline def setReportGroup(value: ReportGroup): Self = StObject.set(x, "reportGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportGroupUndefined: Self = StObject.set(x, "reportGroup", js.undefined)
+    inline def setReportGroupUndefined: Self = StObject.set(x, "reportGroup", js.undefined)
   }
 }

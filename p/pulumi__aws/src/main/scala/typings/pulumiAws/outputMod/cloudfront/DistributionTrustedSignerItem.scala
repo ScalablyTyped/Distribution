@@ -18,22 +18,17 @@ trait DistributionTrustedSignerItem extends StObject {
 }
 object DistributionTrustedSignerItem {
   
-  @scala.inline
-  def apply(awsAccountNumber: String, keyPairIds: js.Array[String]): DistributionTrustedSignerItem = {
+  inline def apply(awsAccountNumber: String, keyPairIds: js.Array[String]): DistributionTrustedSignerItem = {
     val __obj = js.Dynamic.literal(awsAccountNumber = awsAccountNumber.asInstanceOf[js.Any], keyPairIds = keyPairIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionTrustedSignerItem]
   }
   
-  @scala.inline
-  implicit class DistributionTrustedSignerItemMutableBuilder[Self <: DistributionTrustedSignerItem] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionTrustedSignerItem](x: Self) {
     
-    @scala.inline
-    def setAwsAccountNumber(value: String): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
+    inline def setAwsAccountNumber(value: String): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIds(value: js.Array[String]): Self = StObject.set(x, "keyPairIds", value.asInstanceOf[js.Any])
+    inline def setKeyPairIds(value: js.Array[String]): Self = StObject.set(x, "keyPairIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIdsVarargs(value: String*): Self = StObject.set(x, "keyPairIds", js.Array(value :_*))
+    inline def setKeyPairIdsVarargs(value: String*): Self = StObject.set(x, "keyPairIds", js.Array(value :_*))
   }
 }

@@ -12,13 +12,10 @@ object focusStyleManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def alwaysShowFocus(): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysShowFocus")().asInstanceOf[Boolean | Unit]
+    inline def alwaysShowFocus(): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysShowFocus")().asInstanceOf[Boolean | Unit]
     
-    @scala.inline
-    def isActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")().asInstanceOf[Boolean]
+    inline def isActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def onlyShowFocusOnTabs(): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyShowFocusOnTabs")().asInstanceOf[Boolean | Unit]
+    inline def onlyShowFocusOnTabs(): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyShowFocusOnTabs")().asInstanceOf[Boolean | Unit]
   }
 }

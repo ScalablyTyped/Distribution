@@ -23,28 +23,21 @@ trait AwaitPromiseParameterType extends StObject {
 }
 object AwaitPromiseParameterType {
   
-  @scala.inline
-  def apply(promiseObjectId: RemoteObjectId): AwaitPromiseParameterType = {
+  inline def apply(promiseObjectId: RemoteObjectId): AwaitPromiseParameterType = {
     val __obj = js.Dynamic.literal(promiseObjectId = promiseObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwaitPromiseParameterType]
   }
   
-  @scala.inline
-  implicit class AwaitPromiseParameterTypeMutableBuilder[Self <: AwaitPromiseParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: AwaitPromiseParameterType](x: Self) {
     
-    @scala.inline
-    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
+    inline def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
+    inline def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
-    @scala.inline
-    def setPromiseObjectId(value: RemoteObjectId): Self = StObject.set(x, "promiseObjectId", value.asInstanceOf[js.Any])
+    inline def setPromiseObjectId(value: RemoteObjectId): Self = StObject.set(x, "promiseObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
+    inline def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
+    inline def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
   }
 }

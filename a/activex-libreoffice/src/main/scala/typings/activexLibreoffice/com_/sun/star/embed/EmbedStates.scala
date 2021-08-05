@@ -21,19 +21,14 @@ object EmbedStates {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACTIVE: `2` = 2.asInstanceOf[`2`]
+    inline def ACTIVE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def INPLACE_ACTIVE: `3` = 3.asInstanceOf[`3`]
+    inline def INPLACE_ACTIVE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LOADED: `0` = 0.asInstanceOf[`0`]
+    inline def LOADED: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def RUNNING: `1` = 1.asInstanceOf[`1`]
+    inline def RUNNING: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UI_ACTIVE: `4` = 4.asInstanceOf[`4`]
+    inline def UI_ACTIVE: `4` = 4.asInstanceOf[`4`]
   }
 }

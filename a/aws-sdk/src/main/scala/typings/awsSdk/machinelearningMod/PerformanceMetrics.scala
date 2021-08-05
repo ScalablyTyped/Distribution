@@ -10,19 +10,15 @@ trait PerformanceMetrics extends StObject {
 }
 object PerformanceMetrics {
   
-  @scala.inline
-  def apply(): PerformanceMetrics = {
+  inline def apply(): PerformanceMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceMetrics]
   }
   
-  @scala.inline
-  implicit class PerformanceMetricsMutableBuilder[Self <: PerformanceMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceMetrics](x: Self) {
     
-    @scala.inline
-    def setProperties(value: PerformanceMetricsProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PerformanceMetricsProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
   }
 }

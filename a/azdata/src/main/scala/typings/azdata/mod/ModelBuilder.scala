@@ -67,8 +67,7 @@ trait ModelBuilder extends StObject {
 }
 object ModelBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     button: () => ComponentBuilder[ButtonComponent],
     card: () => ComponentBuilder[CardComponent],
     checkBox: () => ComponentBuilder[CheckBoxComponent],
@@ -102,91 +101,62 @@ object ModelBuilder {
     __obj.asInstanceOf[ModelBuilder]
   }
   
-  @scala.inline
-  implicit class ModelBuilderMutableBuilder[Self <: ModelBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ModelBuilder](x: Self) {
     
-    @scala.inline
-    def setButton(value: () => ComponentBuilder[ButtonComponent]): Self = StObject.set(x, "button", js.Any.fromFunction0(value))
+    inline def setButton(value: () => ComponentBuilder[ButtonComponent]): Self = StObject.set(x, "button", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCard(value: () => ComponentBuilder[CardComponent]): Self = StObject.set(x, "card", js.Any.fromFunction0(value))
+    inline def setCard(value: () => ComponentBuilder[CardComponent]): Self = StObject.set(x, "card", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckBox(value: () => ComponentBuilder[CheckBoxComponent]): Self = StObject.set(x, "checkBox", js.Any.fromFunction0(value))
+    inline def setCheckBox(value: () => ComponentBuilder[CheckBoxComponent]): Self = StObject.set(x, "checkBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDashboardWebview(value: String => ComponentBuilder[DashboardWebviewComponent]): Self = StObject.set(x, "dashboardWebview", js.Any.fromFunction1(value))
+    inline def setDashboardWebview(value: String => ComponentBuilder[DashboardWebviewComponent]): Self = StObject.set(x, "dashboardWebview", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDashboardWidget(value: String => ComponentBuilder[DashboardWidgetComponent]): Self = StObject.set(x, "dashboardWidget", js.Any.fromFunction1(value))
+    inline def setDashboardWidget(value: String => ComponentBuilder[DashboardWidgetComponent]): Self = StObject.set(x, "dashboardWidget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeclarativeTable(value: () => ComponentBuilder[DeclarativeTableComponent]): Self = StObject.set(x, "declarativeTable", js.Any.fromFunction0(value))
+    inline def setDeclarativeTable(value: () => ComponentBuilder[DeclarativeTableComponent]): Self = StObject.set(x, "declarativeTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDiffeditor(value: () => ComponentBuilder[DiffEditorComponent]): Self = StObject.set(x, "diffeditor", js.Any.fromFunction0(value))
+    inline def setDiffeditor(value: () => ComponentBuilder[DiffEditorComponent]): Self = StObject.set(x, "diffeditor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDivContainer(value: () => DivBuilder): Self = StObject.set(x, "divContainer", js.Any.fromFunction0(value))
+    inline def setDivContainer(value: () => DivBuilder): Self = StObject.set(x, "divContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDom(value: () => ComponentBuilder[DomComponent]): Self = StObject.set(x, "dom", js.Any.fromFunction0(value))
+    inline def setDom(value: () => ComponentBuilder[DomComponent]): Self = StObject.set(x, "dom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDropDown(value: () => ComponentBuilder[DropDownComponent]): Self = StObject.set(x, "dropDown", js.Any.fromFunction0(value))
+    inline def setDropDown(value: () => ComponentBuilder[DropDownComponent]): Self = StObject.set(x, "dropDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEditor(value: () => ComponentBuilder[EditorComponent]): Self = StObject.set(x, "editor", js.Any.fromFunction0(value))
+    inline def setEditor(value: () => ComponentBuilder[EditorComponent]): Self = StObject.set(x, "editor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFileBrowserTree(value: () => ComponentBuilder[FileBrowserTreeComponent]): Self = StObject.set(x, "fileBrowserTree", js.Any.fromFunction0(value))
+    inline def setFileBrowserTree(value: () => ComponentBuilder[FileBrowserTreeComponent]): Self = StObject.set(x, "fileBrowserTree", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlexContainer(value: () => FlexBuilder): Self = StObject.set(x, "flexContainer", js.Any.fromFunction0(value))
+    inline def setFlexContainer(value: () => FlexBuilder): Self = StObject.set(x, "flexContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormContainer(value: () => FormBuilder): Self = StObject.set(x, "formContainer", js.Any.fromFunction0(value))
+    inline def setFormContainer(value: () => FormBuilder): Self = StObject.set(x, "formContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroupContainer(value: () => GroupBuilder): Self = StObject.set(x, "groupContainer", js.Any.fromFunction0(value))
+    inline def setGroupContainer(value: () => GroupBuilder): Self = StObject.set(x, "groupContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHyperlink(value: () => ComponentBuilder[HyperlinkComponent]): Self = StObject.set(x, "hyperlink", js.Any.fromFunction0(value))
+    inline def setHyperlink(value: () => ComponentBuilder[HyperlinkComponent]): Self = StObject.set(x, "hyperlink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImage(value: () => ComponentBuilder[ImageComponent]): Self = StObject.set(x, "image", js.Any.fromFunction0(value))
+    inline def setImage(value: () => ComponentBuilder[ImageComponent]): Self = StObject.set(x, "image", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputBox(value: () => ComponentBuilder[InputBoxComponent]): Self = StObject.set(x, "inputBox", js.Any.fromFunction0(value))
+    inline def setInputBox(value: () => ComponentBuilder[InputBoxComponent]): Self = StObject.set(x, "inputBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setListBox(value: () => ComponentBuilder[ListBoxComponent]): Self = StObject.set(x, "listBox", js.Any.fromFunction0(value))
+    inline def setListBox(value: () => ComponentBuilder[ListBoxComponent]): Self = StObject.set(x, "listBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadingComponent(value: () => LoadingComponentBuilder): Self = StObject.set(x, "loadingComponent", js.Any.fromFunction0(value))
+    inline def setLoadingComponent(value: () => LoadingComponentBuilder): Self = StObject.set(x, "loadingComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNavContainer(value: () => ContainerBuilder[NavContainer, js.Any, js.Any]): Self = StObject.set(x, "navContainer", js.Any.fromFunction0(value))
+    inline def setNavContainer(value: () => ContainerBuilder[NavContainer, js.Any, js.Any]): Self = StObject.set(x, "navContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRadioButton(value: () => ComponentBuilder[RadioButtonComponent]): Self = StObject.set(x, "radioButton", js.Any.fromFunction0(value))
+    inline def setRadioButton(value: () => ComponentBuilder[RadioButtonComponent]): Self = StObject.set(x, "radioButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSplitViewContainer(value: () => SplitViewBuilder): Self = StObject.set(x, "splitViewContainer", js.Any.fromFunction0(value))
+    inline def setSplitViewContainer(value: () => SplitViewBuilder): Self = StObject.set(x, "splitViewContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTable(value: () => ComponentBuilder[TableComponent]): Self = StObject.set(x, "table", js.Any.fromFunction0(value))
+    inline def setTable(value: () => ComponentBuilder[TableComponent]): Self = StObject.set(x, "table", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: () => ComponentBuilder[TextComponent]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => ComponentBuilder[TextComponent]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToolbarContainer(value: () => ToolbarBuilder): Self = StObject.set(x, "toolbarContainer", js.Any.fromFunction0(value))
+    inline def setToolbarContainer(value: () => ToolbarBuilder): Self = StObject.set(x, "toolbarContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTree(value: () => ComponentBuilder[TreeComponent[js.Any]]): Self = StObject.set(x, "tree", js.Any.fromFunction0(value))
+    inline def setTree(value: () => ComponentBuilder[TreeComponent[js.Any]]): Self = StObject.set(x, "tree", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWebView(value: () => ComponentBuilder[WebViewComponent]): Self = StObject.set(x, "webView", js.Any.fromFunction0(value))
+    inline def setWebView(value: () => ComponentBuilder[WebViewComponent]): Self = StObject.set(x, "webView", js.Any.fromFunction0(value))
   }
 }

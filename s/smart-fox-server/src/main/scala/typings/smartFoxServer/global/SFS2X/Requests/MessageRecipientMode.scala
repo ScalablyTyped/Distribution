@@ -35,27 +35,23 @@ object MessageRecipientMode {
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_GROUP")
   @js.native
   def TO_GROUP: Double = js.native
-  @scala.inline
-  def TO_GROUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_GROUP")(x.asInstanceOf[js.Any])
+  inline def TO_GROUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_GROUP")(x.asInstanceOf[js.Any])
   
   /** @type {number} The moderator/administrator message will be sent to all the users in a specific Room. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_ROOM")
   @js.native
   def TO_ROOM: Double = js.native
-  @scala.inline
-  def TO_ROOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_ROOM")(x.asInstanceOf[js.Any])
+  inline def TO_ROOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_ROOM")(x.asInstanceOf[js.Any])
   
   /** @type {number} The moderator/administrator message will be sent to a specific user. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_USER")
   @js.native
   def TO_USER: Double = js.native
-  @scala.inline
-  def TO_USER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_USER")(x.asInstanceOf[js.Any])
+  inline def TO_USER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_USER")(x.asInstanceOf[js.Any])
   
   /** @type {number} The moderator/administrator message will be sent to all the users in the Zone. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_ZONE")
   @js.native
   def TO_ZONE: Double = js.native
-  @scala.inline
-  def TO_ZONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_ZONE")(x.asInstanceOf[js.Any])
+  inline def TO_ZONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_ZONE")(x.asInstanceOf[js.Any])
 }

@@ -92,20 +92,16 @@ object mod {
   }
   object KeyLabelObject {
     
-    @scala.inline
-    def apply(key: String, label: String): KeyLabelObject = {
+    inline def apply(key: String, label: String): KeyLabelObject = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyLabelObject]
     }
     
-    @scala.inline
-    implicit class KeyLabelObjectMutableBuilder[Self <: KeyLabelObject] (val x: Self) extends AnyVal {
+    extension [Self <: KeyLabelObject](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,11 +112,9 @@ object mod {
   trait SortDirection extends StObject
   object SortDirection {
     
-    @scala.inline
-    def asc: typings.reactable.reactableStrings.asc = "asc".asInstanceOf[typings.reactable.reactableStrings.asc]
+    inline def asc: typings.reactable.reactableStrings.asc = "asc".asInstanceOf[typings.reactable.reactableStrings.asc]
     
-    @scala.inline
-    def desc: typings.reactable.reactableStrings.desc = "desc".asInstanceOf[typings.reactable.reactableStrings.desc]
+    inline def desc: typings.reactable.reactableStrings.desc = "desc".asInstanceOf[typings.reactable.reactableStrings.desc]
   }
   
   trait TableComponentProperties[T] extends StObject {
@@ -157,116 +151,80 @@ object mod {
   }
   object TableComponentProperties {
     
-    @scala.inline
-    def apply[T](): TableComponentProperties[T] = {
+    inline def apply[T](): TableComponentProperties[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableComponentProperties[T]]
     }
     
-    @scala.inline
-    implicit class TableComponentPropertiesMutableBuilder[Self <: TableComponentProperties[?], T] (val x: Self & TableComponentProperties[T]) extends AnyVal {
+    extension [Self <: TableComponentProperties[?], T](x: Self & TableComponentProperties[T]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnsType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnsType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: ColumnsType*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnsType*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+      inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultSort(value: Column): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
+      inline def setDefaultSort(value: Column): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
+      inline def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
       
-      @scala.inline
-      def setFilterBy(value: String): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
+      inline def setFilterBy(value: String): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
+      inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
       
-      @scala.inline
-      def setFilterable(value: js.Array[String]): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+      inline def setFilterable(value: js.Array[String]): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+      inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
       
-      @scala.inline
-      def setFilterableVarargs(value: String*): Self = StObject.set(x, "filterable", js.Array(value :_*))
+      inline def setFilterableVarargs(value: String*): Self = StObject.set(x, "filterable", js.Array(value :_*))
       
-      @scala.inline
-      def setHideFilterInput(value: Boolean): Self = StObject.set(x, "hideFilterInput", value.asInstanceOf[js.Any])
+      inline def setHideFilterInput(value: Boolean): Self = StObject.set(x, "hideFilterInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideFilterInputUndefined: Self = StObject.set(x, "hideFilterInput", js.undefined)
+      inline def setHideFilterInputUndefined: Self = StObject.set(x, "hideFilterInput", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+      inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+      inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
       
-      @scala.inline
-      def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
+      inline def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+      inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
-      @scala.inline
-      def setOnFilter(value: /* text */ String => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* text */ String => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
+      inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
-      @scala.inline
-      def setPageButtonLimit(value: Double): Self = StObject.set(x, "pageButtonLimit", value.asInstanceOf[js.Any])
+      inline def setPageButtonLimit(value: Double): Self = StObject.set(x, "pageButtonLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageButtonLimitUndefined: Self = StObject.set(x, "pageButtonLimit", js.undefined)
+      inline def setPageButtonLimitUndefined: Self = StObject.set(x, "pageButtonLimit", js.undefined)
       
-      @scala.inline
-      def setSortBy(value: Boolean): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      inline def setSortBy(value: Boolean): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+      inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
       
-      @scala.inline
-      def setSortable(value: js.Array[String] | Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: js.Array[String] | Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+      inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
       
-      @scala.inline
-      def setSortableVarargs(value: String*): Self = StObject.set(x, "sortable", js.Array(value :_*))
+      inline def setSortableVarargs(value: String*): Self = StObject.set(x, "sortable", js.Array(value :_*))
     }
   }
   
@@ -280,29 +238,22 @@ object mod {
   }
   object TdProperties {
     
-    @scala.inline
-    def apply(column: String): TdProperties = {
+    inline def apply(column: String): TdProperties = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
       __obj.asInstanceOf[TdProperties]
     }
     
-    @scala.inline
-    implicit class TdPropertiesMutableBuilder[Self <: TdProperties] (val x: Self) extends AnyVal {
+    extension [Self <: TdProperties](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -314,23 +265,18 @@ object mod {
   }
   object ThProperties {
     
-    @scala.inline
-    def apply(column: String): ThProperties = {
+    inline def apply(column: String): ThProperties = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThProperties]
     }
     
-    @scala.inline
-    implicit class ThPropertiesMutableBuilder[Self <: ThProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ThProperties](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,26 +288,20 @@ object mod {
   }
   object TrProperties {
     
-    @scala.inline
-    def apply[T](): TrProperties[T] = {
+    inline def apply[T](): TrProperties[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrProperties[T]]
     }
     
-    @scala.inline
-    implicit class TrPropertiesMutableBuilder[Self <: TrProperties[?], T] (val x: Self & TrProperties[T]) extends AnyVal {
+    extension [Self <: TrProperties[?], T](x: Self & TrProperties[T]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
   }
 }

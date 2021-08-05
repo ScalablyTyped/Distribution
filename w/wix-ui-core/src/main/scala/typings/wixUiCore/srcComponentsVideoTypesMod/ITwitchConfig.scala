@@ -10,19 +10,15 @@ trait ITwitchConfig extends StObject {
 }
 object ITwitchConfig {
   
-  @scala.inline
-  def apply(): ITwitchConfig = {
+  inline def apply(): ITwitchConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITwitchConfig]
   }
   
-  @scala.inline
-  implicit class ITwitchConfigMutableBuilder[Self <: ITwitchConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ITwitchConfig](x: Self) {
     
-    @scala.inline
-    def setPlayerOptions(value: js.Object): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
+    inline def setPlayerOptions(value: js.Object): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerOptionsUndefined: Self = StObject.set(x, "playerOptions", js.undefined)
+    inline def setPlayerOptionsUndefined: Self = StObject.set(x, "playerOptions", js.undefined)
   }
 }

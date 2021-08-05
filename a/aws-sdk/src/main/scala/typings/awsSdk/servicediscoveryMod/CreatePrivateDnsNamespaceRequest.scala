@@ -33,40 +33,29 @@ trait CreatePrivateDnsNamespaceRequest extends StObject {
 }
 object CreatePrivateDnsNamespaceRequest {
   
-  @scala.inline
-  def apply(Name: NamespaceName, Vpc: ResourceId): CreatePrivateDnsNamespaceRequest = {
+  inline def apply(Name: NamespaceName, Vpc: ResourceId): CreatePrivateDnsNamespaceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Vpc = Vpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePrivateDnsNamespaceRequest]
   }
   
-  @scala.inline
-  implicit class CreatePrivateDnsNamespaceRequestMutableBuilder[Self <: CreatePrivateDnsNamespaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePrivateDnsNamespaceRequest](x: Self) {
     
-    @scala.inline
-    def setCreatorRequestId(value: ResourceId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: ResourceId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
+    inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: NamespaceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NamespaceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpc(value: ResourceId): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: ResourceId): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
   }
 }

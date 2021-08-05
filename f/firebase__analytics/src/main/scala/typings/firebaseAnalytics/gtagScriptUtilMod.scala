@@ -10,6 +10,5 @@ object gtagScriptUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def removeGtagScript(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeGtagScript")().asInstanceOf[Unit]
+  inline def removeGtagScript(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeGtagScript")().asInstanceOf[Unit]
 }

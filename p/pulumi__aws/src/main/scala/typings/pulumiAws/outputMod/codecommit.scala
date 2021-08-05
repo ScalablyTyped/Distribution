@@ -35,41 +35,30 @@ object codecommit {
   }
   object TriggerTrigger {
     
-    @scala.inline
-    def apply(destinationArn: String, events: js.Array[String], name: String): TriggerTrigger = {
+    inline def apply(destinationArn: String, events: js.Array[String], name: String): TriggerTrigger = {
       val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TriggerTrigger]
     }
     
-    @scala.inline
-    implicit class TriggerTriggerMutableBuilder[Self <: TriggerTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerTrigger](x: Self) {
       
-      @scala.inline
-      def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+      inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
-      @scala.inline
-      def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

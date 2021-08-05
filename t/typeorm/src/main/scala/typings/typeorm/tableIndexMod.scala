@@ -61,7 +61,6 @@ object tableIndexMod {
     /**
       * Creates index from the index metadata object.
       */
-    @scala.inline
-    def create(indexMetadata: IndexMetadata): TableIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(indexMetadata.asInstanceOf[js.Any]).asInstanceOf[TableIndex]
+    inline def create(indexMetadata: IndexMetadata): TableIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(indexMetadata.asInstanceOf[js.Any]).asInstanceOf[TableIndex]
   }
 }

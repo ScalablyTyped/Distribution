@@ -292,7 +292,7 @@ trait Chart
   
   def Evaluate(Name: String): js.Any = js.native
   
-  @JSName("Excel.Chart_typekey")
+  /* private */ @JSName("Excel.Chart_typekey")
   var ExcelDotChart_typekey: Chart = js.native
   
   def Export(Filename: String): Boolean = js.native

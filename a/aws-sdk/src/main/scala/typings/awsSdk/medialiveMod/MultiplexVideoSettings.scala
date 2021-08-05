@@ -20,25 +20,19 @@ trait MultiplexVideoSettings extends StObject {
 }
 object MultiplexVideoSettings {
   
-  @scala.inline
-  def apply(): MultiplexVideoSettings = {
+  inline def apply(): MultiplexVideoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexVideoSettings]
   }
   
-  @scala.inline
-  implicit class MultiplexVideoSettingsMutableBuilder[Self <: MultiplexVideoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexVideoSettings](x: Self) {
     
-    @scala.inline
-    def setConstantBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "ConstantBitrate", value.asInstanceOf[js.Any])
+    inline def setConstantBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "ConstantBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantBitrateUndefined: Self = StObject.set(x, "ConstantBitrate", js.undefined)
+    inline def setConstantBitrateUndefined: Self = StObject.set(x, "ConstantBitrate", js.undefined)
     
-    @scala.inline
-    def setStatmuxSettings(value: MultiplexStatmuxVideoSettings): Self = StObject.set(x, "StatmuxSettings", value.asInstanceOf[js.Any])
+    inline def setStatmuxSettings(value: MultiplexStatmuxVideoSettings): Self = StObject.set(x, "StatmuxSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatmuxSettingsUndefined: Self = StObject.set(x, "StatmuxSettings", js.undefined)
+    inline def setStatmuxSettingsUndefined: Self = StObject.set(x, "StatmuxSettings", js.undefined)
   }
 }

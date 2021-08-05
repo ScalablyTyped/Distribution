@@ -37,55 +37,39 @@ trait SubscriptionFilter extends StObject {
 }
 object SubscriptionFilter {
   
-  @scala.inline
-  def apply(): SubscriptionFilter = {
+  inline def apply(): SubscriptionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscriptionFilter]
   }
   
-  @scala.inline
-  implicit class SubscriptionFilterMutableBuilder[Self <: SubscriptionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionFilter](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+    inline def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
+    inline def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
     
-    @scala.inline
-    def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterNameUndefined: Self = StObject.set(x, "filterName", js.undefined)
+    inline def setFilterNameUndefined: Self = StObject.set(x, "filterName", js.undefined)
     
-    @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+    inline def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
+    inline def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

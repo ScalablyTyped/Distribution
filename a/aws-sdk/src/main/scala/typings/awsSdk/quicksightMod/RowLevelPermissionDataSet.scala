@@ -23,25 +23,19 @@ trait RowLevelPermissionDataSet extends StObject {
 }
 object RowLevelPermissionDataSet {
   
-  @scala.inline
-  def apply(Arn: Arn, PermissionPolicy: RowLevelPermissionPolicy): RowLevelPermissionDataSet = {
+  inline def apply(Arn: Arn, PermissionPolicy: RowLevelPermissionPolicy): RowLevelPermissionDataSet = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], PermissionPolicy = PermissionPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowLevelPermissionDataSet]
   }
   
-  @scala.inline
-  implicit class RowLevelPermissionDataSetMutableBuilder[Self <: RowLevelPermissionDataSet] (val x: Self) extends AnyVal {
+  extension [Self <: RowLevelPermissionDataSet](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setPermissionPolicy(value: RowLevelPermissionPolicy): Self = StObject.set(x, "PermissionPolicy", value.asInstanceOf[js.Any])
+    inline def setPermissionPolicy(value: RowLevelPermissionPolicy): Self = StObject.set(x, "PermissionPolicy", value.asInstanceOf[js.Any])
   }
 }

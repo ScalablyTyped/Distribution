@@ -41,22 +41,17 @@ trait TimePickerAndroidStatic extends StObject {
 }
 object TimePickerAndroidStatic {
   
-  @scala.inline
-  def apply(open: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): TimePickerAndroidStatic = {
+  inline def apply(open: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): TimePickerAndroidStatic = {
     val __obj = js.Dynamic.literal(dismissedAction = "dismissedAction", open = js.Any.fromFunction1(open), timeSetAction = "timeSetAction")
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }
   
-  @scala.inline
-  implicit class TimePickerAndroidStaticMutableBuilder[Self <: TimePickerAndroidStatic] (val x: Self) extends AnyVal {
+  extension [Self <: TimePickerAndroidStatic](x: Self) {
     
-    @scala.inline
-    def setDismissedAction(value: dismissedAction): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
+    inline def setDismissedAction(value: dismissedAction): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeSetAction(value: timeSetAction): Self = StObject.set(x, "timeSetAction", value.asInstanceOf[js.Any])
+    inline def setTimeSetAction(value: timeSetAction): Self = StObject.set(x, "timeSetAction", value.asInstanceOf[js.Any])
   }
 }

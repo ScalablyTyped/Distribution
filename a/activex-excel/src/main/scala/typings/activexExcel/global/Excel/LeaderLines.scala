@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.LeaderLines")
 @js.native
-class LeaderLines protected ()
+/* private */ class LeaderLines ()
   extends StObject
      with typings.activexExcel.Excel.LeaderLines {
   
@@ -23,7 +23,7 @@ class LeaderLines protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.LeaderLines_typekey")
   var ExcelDotLeaderLines_typekey: typings.activexExcel.Excel.LeaderLines = js.native
   

@@ -473,8 +473,7 @@ object anon {
   }
   object Bank {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bank: MinigameObject[StocksMinigame],
       Farm: MinigameObject[GardenMinigame],
       Temple: MinigameObject[PantheonMinigame],
@@ -485,20 +484,15 @@ object anon {
       __obj.asInstanceOf[Bank]
     }
     
-    @scala.inline
-    implicit class BankMutableBuilder[Self <: Bank] (val x: Self) extends AnyVal {
+    extension [Self <: Bank](x: Self) {
       
-      @scala.inline
-      def setBank(value: MinigameObject[StocksMinigame]): Self = StObject.set(x, "Bank", value.asInstanceOf[js.Any])
+      inline def setBank(value: MinigameObject[StocksMinigame]): Self = StObject.set(x, "Bank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFarm(value: MinigameObject[GardenMinigame]): Self = StObject.set(x, "Farm", value.asInstanceOf[js.Any])
+      inline def setFarm(value: MinigameObject[GardenMinigame]): Self = StObject.set(x, "Farm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemple(value: MinigameObject[PantheonMinigame]): Self = StObject.set(x, "Temple", value.asInstanceOf[js.Any])
+      inline def setTemple(value: MinigameObject[PantheonMinigame]): Self = StObject.set(x, "Temple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWizard tower`(value: MinigameObject[GrimoireMinigame]): Self = StObject.set(x, "Wizard tower", value.asInstanceOf[js.Any])
+      inline def `setWizard tower`(value: MinigameObject[GrimoireMinigame]): Self = StObject.set(x, "Wizard tower", value.asInstanceOf[js.Any])
     }
   }
   
@@ -536,50 +530,36 @@ object anon {
   }
   object Cost {
     
-    @scala.inline
-    def apply(): Cost = {
+    inline def apply(): Cost = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cost]
     }
     
-    @scala.inline
-    implicit class CostMutableBuilder[Self <: Cost] (val x: Self) extends AnyVal {
+    extension [Self <: Cost](x: Self) {
       
-      @scala.inline
-      def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+      inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
       
-      @scala.inline
-      def setFailChanceAdd(value: Double): Self = StObject.set(x, "failChanceAdd", value.asInstanceOf[js.Any])
+      inline def setFailChanceAdd(value: Double): Self = StObject.set(x, "failChanceAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailChanceAddUndefined: Self = StObject.set(x, "failChanceAdd", js.undefined)
+      inline def setFailChanceAddUndefined: Self = StObject.set(x, "failChanceAdd", js.undefined)
       
-      @scala.inline
-      def setFailChanceMax(value: Double): Self = StObject.set(x, "failChanceMax", value.asInstanceOf[js.Any])
+      inline def setFailChanceMax(value: Double): Self = StObject.set(x, "failChanceMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailChanceMaxUndefined: Self = StObject.set(x, "failChanceMax", js.undefined)
+      inline def setFailChanceMaxUndefined: Self = StObject.set(x, "failChanceMax", js.undefined)
       
-      @scala.inline
-      def setFailChanceMult(value: Double): Self = StObject.set(x, "failChanceMult", value.asInstanceOf[js.Any])
+      inline def setFailChanceMult(value: Double): Self = StObject.set(x, "failChanceMult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailChanceMultUndefined: Self = StObject.set(x, "failChanceMult", js.undefined)
+      inline def setFailChanceMultUndefined: Self = StObject.set(x, "failChanceMult", js.undefined)
       
-      @scala.inline
-      def setFailChanceSet(value: Double): Self = StObject.set(x, "failChanceSet", value.asInstanceOf[js.Any])
+      inline def setFailChanceSet(value: Double): Self = StObject.set(x, "failChanceSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailChanceSetUndefined: Self = StObject.set(x, "failChanceSet", js.undefined)
+      inline def setFailChanceSetUndefined: Self = StObject.set(x, "failChanceSet", js.undefined)
       
-      @scala.inline
-      def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
+      inline def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
+      inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
     }
   }
   
@@ -599,32 +579,24 @@ object anon {
   }
   object Frame {
     
-    @scala.inline
-    def apply(frame: Double, id: Double, pic: String, x: Double, y: Double, z: Double): Frame = {
+    inline def apply(frame: Double, id: Double, pic: String, x: Double, y: Double, z: Double): Frame = {
       val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pic = pic.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Frame]
     }
     
-    @scala.inline
-    implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
+    extension [Self <: Frame](x: Self) {
       
-      @scala.inline
-      def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+      inline def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   

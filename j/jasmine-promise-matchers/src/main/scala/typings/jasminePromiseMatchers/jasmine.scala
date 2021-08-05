@@ -35,8 +35,7 @@ object jasmine {
   }
   object Matchers {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       toBePromise: () => Boolean,
       toBeRejected: () => Boolean,
       toBeRejectedWith: js.Any => Boolean,
@@ -47,23 +46,17 @@ object jasmine {
       __obj.asInstanceOf[Matchers[T]]
     }
     
-    @scala.inline
-    implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+    extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
       
-      @scala.inline
-      def setToBePromise(value: () => Boolean): Self = StObject.set(x, "toBePromise", js.Any.fromFunction0(value))
+      inline def setToBePromise(value: () => Boolean): Self = StObject.set(x, "toBePromise", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeRejected(value: () => Boolean): Self = StObject.set(x, "toBeRejected", js.Any.fromFunction0(value))
+      inline def setToBeRejected(value: () => Boolean): Self = StObject.set(x, "toBeRejected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeRejectedWith(value: js.Any => Boolean): Self = StObject.set(x, "toBeRejectedWith", js.Any.fromFunction1(value))
+      inline def setToBeRejectedWith(value: js.Any => Boolean): Self = StObject.set(x, "toBeRejectedWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeResolved(value: () => Boolean): Self = StObject.set(x, "toBeResolved", js.Any.fromFunction0(value))
+      inline def setToBeResolved(value: () => Boolean): Self = StObject.set(x, "toBeResolved", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeResolvedWith(value: js.Any => Boolean): Self = StObject.set(x, "toBeResolvedWith", js.Any.fromFunction1(value))
+      inline def setToBeResolvedWith(value: js.Any => Boolean): Self = StObject.set(x, "toBeResolvedWith", js.Any.fromFunction1(value))
     }
   }
 }

@@ -11,6 +11,5 @@ object ofTypeDeepMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(`object`: js.Any, predicate: Predicate[js.Any]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
+  inline def default(`object`: js.Any, predicate: Predicate[js.Any]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
 }

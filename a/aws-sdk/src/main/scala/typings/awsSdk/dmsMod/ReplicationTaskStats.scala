@@ -63,79 +63,55 @@ trait ReplicationTaskStats extends StObject {
 }
 object ReplicationTaskStats {
   
-  @scala.inline
-  def apply(): ReplicationTaskStats = {
+  inline def apply(): ReplicationTaskStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationTaskStats]
   }
   
-  @scala.inline
-  implicit class ReplicationTaskStatsMutableBuilder[Self <: ReplicationTaskStats] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationTaskStats](x: Self) {
     
-    @scala.inline
-    def setElapsedTimeMillis(value: Long): Self = StObject.set(x, "ElapsedTimeMillis", value.asInstanceOf[js.Any])
+    inline def setElapsedTimeMillis(value: Long): Self = StObject.set(x, "ElapsedTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTimeMillisUndefined: Self = StObject.set(x, "ElapsedTimeMillis", js.undefined)
+    inline def setElapsedTimeMillisUndefined: Self = StObject.set(x, "ElapsedTimeMillis", js.undefined)
     
-    @scala.inline
-    def setFreshStartDate(value: TStamp): Self = StObject.set(x, "FreshStartDate", value.asInstanceOf[js.Any])
+    inline def setFreshStartDate(value: TStamp): Self = StObject.set(x, "FreshStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreshStartDateUndefined: Self = StObject.set(x, "FreshStartDate", js.undefined)
+    inline def setFreshStartDateUndefined: Self = StObject.set(x, "FreshStartDate", js.undefined)
     
-    @scala.inline
-    def setFullLoadFinishDate(value: TStamp): Self = StObject.set(x, "FullLoadFinishDate", value.asInstanceOf[js.Any])
+    inline def setFullLoadFinishDate(value: TStamp): Self = StObject.set(x, "FullLoadFinishDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadFinishDateUndefined: Self = StObject.set(x, "FullLoadFinishDate", js.undefined)
+    inline def setFullLoadFinishDateUndefined: Self = StObject.set(x, "FullLoadFinishDate", js.undefined)
     
-    @scala.inline
-    def setFullLoadProgressPercent(value: Integer): Self = StObject.set(x, "FullLoadProgressPercent", value.asInstanceOf[js.Any])
+    inline def setFullLoadProgressPercent(value: Integer): Self = StObject.set(x, "FullLoadProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadProgressPercentUndefined: Self = StObject.set(x, "FullLoadProgressPercent", js.undefined)
+    inline def setFullLoadProgressPercentUndefined: Self = StObject.set(x, "FullLoadProgressPercent", js.undefined)
     
-    @scala.inline
-    def setFullLoadStartDate(value: TStamp): Self = StObject.set(x, "FullLoadStartDate", value.asInstanceOf[js.Any])
+    inline def setFullLoadStartDate(value: TStamp): Self = StObject.set(x, "FullLoadStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadStartDateUndefined: Self = StObject.set(x, "FullLoadStartDate", js.undefined)
+    inline def setFullLoadStartDateUndefined: Self = StObject.set(x, "FullLoadStartDate", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: TStamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: TStamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     
-    @scala.inline
-    def setStopDate(value: TStamp): Self = StObject.set(x, "StopDate", value.asInstanceOf[js.Any])
+    inline def setStopDate(value: TStamp): Self = StObject.set(x, "StopDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopDateUndefined: Self = StObject.set(x, "StopDate", js.undefined)
+    inline def setStopDateUndefined: Self = StObject.set(x, "StopDate", js.undefined)
     
-    @scala.inline
-    def setTablesErrored(value: Integer): Self = StObject.set(x, "TablesErrored", value.asInstanceOf[js.Any])
+    inline def setTablesErrored(value: Integer): Self = StObject.set(x, "TablesErrored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesErroredUndefined: Self = StObject.set(x, "TablesErrored", js.undefined)
+    inline def setTablesErroredUndefined: Self = StObject.set(x, "TablesErrored", js.undefined)
     
-    @scala.inline
-    def setTablesLoaded(value: Integer): Self = StObject.set(x, "TablesLoaded", value.asInstanceOf[js.Any])
+    inline def setTablesLoaded(value: Integer): Self = StObject.set(x, "TablesLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesLoadedUndefined: Self = StObject.set(x, "TablesLoaded", js.undefined)
+    inline def setTablesLoadedUndefined: Self = StObject.set(x, "TablesLoaded", js.undefined)
     
-    @scala.inline
-    def setTablesLoading(value: Integer): Self = StObject.set(x, "TablesLoading", value.asInstanceOf[js.Any])
+    inline def setTablesLoading(value: Integer): Self = StObject.set(x, "TablesLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesLoadingUndefined: Self = StObject.set(x, "TablesLoading", js.undefined)
+    inline def setTablesLoadingUndefined: Self = StObject.set(x, "TablesLoading", js.undefined)
     
-    @scala.inline
-    def setTablesQueued(value: Integer): Self = StObject.set(x, "TablesQueued", value.asInstanceOf[js.Any])
+    inline def setTablesQueued(value: Integer): Self = StObject.set(x, "TablesQueued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesQueuedUndefined: Self = StObject.set(x, "TablesQueued", js.undefined)
+    inline def setTablesQueuedUndefined: Self = StObject.set(x, "TablesQueued", js.undefined)
   }
 }

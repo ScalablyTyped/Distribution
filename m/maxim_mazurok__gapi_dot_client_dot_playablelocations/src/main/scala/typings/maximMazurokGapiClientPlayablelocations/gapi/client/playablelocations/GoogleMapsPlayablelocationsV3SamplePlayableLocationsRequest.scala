@@ -14,28 +14,21 @@ trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest extends StObje
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequestMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest](x: Self) {
     
-    @scala.inline
-    def setAreaFilter(value: GoogleMapsPlayablelocationsV3SampleAreaFilter): Self = StObject.set(x, "areaFilter", value.asInstanceOf[js.Any])
+    inline def setAreaFilter(value: GoogleMapsPlayablelocationsV3SampleAreaFilter): Self = StObject.set(x, "areaFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaFilterUndefined: Self = StObject.set(x, "areaFilter", js.undefined)
+    inline def setAreaFilterUndefined: Self = StObject.set(x, "areaFilter", js.undefined)
     
-    @scala.inline
-    def setCriteria(value: js.Array[GoogleMapsPlayablelocationsV3SampleCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: js.Array[GoogleMapsPlayablelocationsV3SampleCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setCriteriaVarargs(value: GoogleMapsPlayablelocationsV3SampleCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: GoogleMapsPlayablelocationsV3SampleCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
   }
 }

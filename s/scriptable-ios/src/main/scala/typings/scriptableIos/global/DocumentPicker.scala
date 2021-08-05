@@ -21,8 +21,7 @@ object DocumentPicker {
     * @param path - Path of the file to export.
     * @see https://docs.scriptable.app/documentpicker/#export
     */
-  @scala.inline
-  def `export`(path: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("export")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def `export`(path: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("export")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
   /**
     * _Exports data._
@@ -32,10 +31,8 @@ object DocumentPicker {
     * @param name - Optional name of the image to export.
     * @see https://docs.scriptable.app/documentpicker/#exportdata
     */
-  @scala.inline
-  def exportData(data: typings.scriptableIos.Data): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def exportData(data: typings.scriptableIos.Data, name: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportData")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def exportData(data: typings.scriptableIos.Data): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def exportData(data: typings.scriptableIos.Data, name: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportData")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   /**
     * _Exports an image._
@@ -45,10 +42,8 @@ object DocumentPicker {
     * @param name - Optional name of the image to export.
     * @see https://docs.scriptable.app/documentpicker/#exportimage
     */
-  @scala.inline
-  def exportImage(image: typings.scriptableIos.Image): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportImage")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def exportImage(image: typings.scriptableIos.Image, name: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportImage")(image.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def exportImage(image: typings.scriptableIos.Image): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportImage")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def exportImage(image: typings.scriptableIos.Image, name: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportImage")(image.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   /**
     * _Exports a string to a document._
@@ -58,10 +53,8 @@ object DocumentPicker {
     * @param name - Optional name of the document to export.
     * @see https://docs.scriptable.app/documentpicker/#exportstring
     */
-  @scala.inline
-  def exportString(content: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportString")(content.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def exportString(content: String, name: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportString")(content.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def exportString(content: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportString")(content.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def exportString(content: String, name: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportString")(content.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   /**
     * _Opens a document._
@@ -73,10 +66,8 @@ object DocumentPicker {
     * @param types - Types of files to select. Specified using UTIs. Defaults to all files.
     * @see https://docs.scriptable.app/documentpicker/#open
     */
-  @scala.inline
-  def open(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def open(types: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def open(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Promise[js.Array[String]]]
+  inline def open(types: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
   /**
     * _Opens a file of any file type._
@@ -86,8 +77,7 @@ object DocumentPicker {
     * When fulfilled the returned promise will provide the paths for the selected files.
     * @see https://docs.scriptable.app/documentpicker/#openfile
     */
-  @scala.inline
-  def openFile(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")().asInstanceOf[js.Promise[String]]
+  inline def openFile(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")().asInstanceOf[js.Promise[String]]
   
   /**
     * _Opens a folder._
@@ -97,6 +87,5 @@ object DocumentPicker {
     * When fulfilled the returned promise will provide the paths for the selected files.
     * @see https://docs.scriptable.app/documentpicker/#openfolder
     */
-  @scala.inline
-  def openFolder(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFolder")().asInstanceOf[js.Promise[String]]
+  inline def openFolder(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFolder")().asInstanceOf[js.Promise[String]]
 }

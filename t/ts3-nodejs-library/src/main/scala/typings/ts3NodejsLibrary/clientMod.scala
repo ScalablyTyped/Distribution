@@ -238,34 +238,25 @@ object clientMod {
     val ^ : js.Any = js.native
     
     /** retrieves the client dbid from a string or teamspeak client */
-    @scala.inline
-    def getDbid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getDbid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getDbid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")().asInstanceOf[js.UndefOr[String]]
+    inline def getDbid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleDbids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleDbids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleDbids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleDbids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleUids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleUids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleUids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleUids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** retrieves the client dbid from a string or teamspeak client */
-    @scala.inline
-    def getUid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getUid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getUid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")().asInstanceOf[js.UndefOr[String]]
+    inline def getUid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     type ClientType = String | TeamSpeakClient
     

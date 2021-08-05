@@ -48,8 +48,7 @@ trait DistanceMatrixResponseElement extends StObject {
 }
 object DistanceMatrixResponseElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Distance,
     duration: Duration,
     duration_in_traffic: Duration,
@@ -60,22 +59,16 @@ object DistanceMatrixResponseElement {
     __obj.asInstanceOf[DistanceMatrixResponseElement]
   }
   
-  @scala.inline
-  implicit class DistanceMatrixResponseElementMutableBuilder[Self <: DistanceMatrixResponseElement] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceMatrixResponseElement](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration_in_traffic(value: Duration): Self = StObject.set(x, "duration_in_traffic", value.asInstanceOf[js.Any])
+    inline def setDuration_in_traffic(value: Duration): Self = StObject.set(x, "duration_in_traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFare(value: TransitFare): Self = StObject.set(x, "fare", value.asInstanceOf[js.Any])
+    inline def setFare(value: TransitFare): Self = StObject.set(x, "fare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DistanceMatrixElementStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DistanceMatrixElementStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

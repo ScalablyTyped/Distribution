@@ -18,19 +18,15 @@ trait ResourceKey extends StObject {
 }
 object ResourceKey {
   
-  @scala.inline
-  def apply(resourceId: ResourceId, resourceType: ResourceType): ResourceKey = {
+  inline def apply(resourceId: ResourceId, resourceType: ResourceType): ResourceKey = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceKey]
   }
   
-  @scala.inline
-  implicit class ResourceKeyMutableBuilder[Self <: ResourceKey] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceKey](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

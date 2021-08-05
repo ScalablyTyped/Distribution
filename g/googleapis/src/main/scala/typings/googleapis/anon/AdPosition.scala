@@ -16,37 +16,27 @@ trait AdPosition extends StObject {
 }
 object AdPosition {
   
-  @scala.inline
-  def apply(): AdPosition = {
+  inline def apply(): AdPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdPosition]
   }
   
-  @scala.inline
-  implicit class AdPositionMutableBuilder[Self <: AdPosition] (val x: Self) extends AnyVal {
+  extension [Self <: AdPosition](x: Self) {
     
-    @scala.inline
-    def setAdPosition(value: String): Self = StObject.set(x, "adPosition", value.asInstanceOf[js.Any])
+    inline def setAdPosition(value: String): Self = StObject.set(x, "adPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdPositionUndefined: Self = StObject.set(x, "adPosition", js.undefined)
+    inline def setAdPositionUndefined: Self = StObject.set(x, "adPosition", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setMinimumWordCount(value: Double): Self = StObject.set(x, "minimumWordCount", value.asInstanceOf[js.Any])
+    inline def setMinimumWordCount(value: Double): Self = StObject.set(x, "minimumWordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumWordCountUndefined: Self = StObject.set(x, "minimumWordCount", js.undefined)
+    inline def setMinimumWordCountUndefined: Self = StObject.set(x, "minimumWordCount", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

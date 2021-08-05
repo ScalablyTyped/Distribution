@@ -29,8 +29,7 @@ trait ReferencePageGet
 }
 object ReferencePageGet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -60,10 +59,8 @@ object ReferencePageGet {
     __obj.asInstanceOf[ReferencePageGet]
   }
   
-  @scala.inline
-  implicit class ReferencePageGetMutableBuilder[Self <: ReferencePageGet] (val x: Self) extends AnyVal {
+  extension [Self <: ReferencePageGet](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

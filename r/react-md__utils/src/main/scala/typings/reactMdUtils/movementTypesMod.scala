@@ -195,17 +195,13 @@ object movementTypesMod {
   trait FocusType extends StObject
   object FocusType {
     
-    @scala.inline
-    def decrement: typings.reactMdUtils.reactMdUtilsStrings.decrement = "decrement".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.decrement]
+    inline def decrement: typings.reactMdUtils.reactMdUtilsStrings.decrement = "decrement".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.decrement]
     
-    @scala.inline
-    def first: typings.reactMdUtils.reactMdUtilsStrings.first = "first".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.first]
+    inline def first: typings.reactMdUtils.reactMdUtilsStrings.first = "first".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.first]
     
-    @scala.inline
-    def increment: typings.reactMdUtils.reactMdUtilsStrings.increment = "increment".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.increment]
+    inline def increment: typings.reactMdUtils.reactMdUtilsStrings.increment = "increment".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.increment]
     
-    @scala.inline
-    def last: typings.reactMdUtils.reactMdUtilsStrings.last = "last".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.last]
+    inline def last: typings.reactMdUtils.reactMdUtilsStrings.last = "last".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.last]
   }
   
   trait KeyConfig extends StObject {
@@ -224,8 +220,7 @@ object movementTypesMod {
   }
   object KeyConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       ctrlKey: Boolean,
       key: String,
@@ -238,26 +233,19 @@ object movementTypesMod {
       __obj.asInstanceOf[KeyConfig]
     }
     
-    @scala.inline
-    implicit class KeyConfigMutableBuilder[Self <: KeyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: KeyConfig](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: FocusType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FocusType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,8 +289,7 @@ object movementTypesMod {
   }
   object MovementConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decrementKeys: js.Array[IncrementMovementKey],
       incrementKeys: js.Array[IncrementMovementKey],
       jumpToFirstKeys: js.Array[JumpMovementKey],
@@ -312,44 +299,31 @@ object movementTypesMod {
       __obj.asInstanceOf[MovementConfig]
     }
     
-    @scala.inline
-    implicit class MovementConfigMutableBuilder[Self <: MovementConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MovementConfig](x: Self) {
       
-      @scala.inline
-      def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
+      inline def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value :_*))
+      inline def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setIncrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
+      inline def setIncrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value :_*))
+      inline def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setJumpToFirstKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
+      inline def setJumpToFirstKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value :_*))
+      inline def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setJumpToLastKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
+      inline def setJumpToLastKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value :_*))
+      inline def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
+      inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopableUndefined: Self = StObject.set(x, "loopable", js.undefined)
+      inline def setLoopableUndefined: Self = StObject.set(x, "loopable", js.undefined)
       
-      @scala.inline
-      def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+      inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     }
   }
   

@@ -13,19 +13,15 @@ trait UpdateThingGroupResponse extends StObject {
 }
 object UpdateThingGroupResponse {
   
-  @scala.inline
-  def apply(): UpdateThingGroupResponse = {
+  inline def apply(): UpdateThingGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateThingGroupResponse]
   }
   
-  @scala.inline
-  implicit class UpdateThingGroupResponseMutableBuilder[Self <: UpdateThingGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThingGroupResponse](x: Self) {
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -34,44 +34,33 @@ trait GqlQuery extends StObject {
 }
 object GqlQuery {
   
-  @scala.inline
-  def apply(): GqlQuery = {
+  inline def apply(): GqlQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GqlQuery]
   }
   
-  @scala.inline
-  implicit class GqlQueryMutableBuilder[Self <: GqlQuery] (val x: Self) extends AnyVal {
+  extension [Self <: GqlQuery](x: Self) {
     
-    @scala.inline
-    def setAllowLiterals(value: Boolean): Self = StObject.set(x, "allowLiterals", value.asInstanceOf[js.Any])
+    inline def setAllowLiterals(value: Boolean): Self = StObject.set(x, "allowLiterals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowLiteralsUndefined: Self = StObject.set(x, "allowLiterals", js.undefined)
+    inline def setAllowLiteralsUndefined: Self = StObject.set(x, "allowLiterals", js.undefined)
     
-    @scala.inline
-    def setNamedBindings(
+    inline def setNamedBindings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
       */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[js.Any]
     ): Self = StObject.set(x, "namedBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedBindingsUndefined: Self = StObject.set(x, "namedBindings", js.undefined)
+    inline def setNamedBindingsUndefined: Self = StObject.set(x, "namedBindings", js.undefined)
     
-    @scala.inline
-    def setPositionalBindings(value: js.Array[GqlQueryParameter]): Self = StObject.set(x, "positionalBindings", value.asInstanceOf[js.Any])
+    inline def setPositionalBindings(value: js.Array[GqlQueryParameter]): Self = StObject.set(x, "positionalBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionalBindingsUndefined: Self = StObject.set(x, "positionalBindings", js.undefined)
+    inline def setPositionalBindingsUndefined: Self = StObject.set(x, "positionalBindings", js.undefined)
     
-    @scala.inline
-    def setPositionalBindingsVarargs(value: GqlQueryParameter*): Self = StObject.set(x, "positionalBindings", js.Array(value :_*))
+    inline def setPositionalBindingsVarargs(value: GqlQueryParameter*): Self = StObject.set(x, "positionalBindings", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
   }
 }

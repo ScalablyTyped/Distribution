@@ -11,13 +11,11 @@ object wordwrapStrings {
   sealed trait hard
     extends StObject
        with Mode
-  @scala.inline
-  def hard: hard = "hard".asInstanceOf[hard]
+  inline def hard: hard = "hard".asInstanceOf[hard]
   
   @js.native
   sealed trait soft
     extends StObject
        with Mode
-  @scala.inline
-  def soft: soft = "soft".asInstanceOf[soft]
+  inline def soft: soft = "soft".asInstanceOf[soft]
 }

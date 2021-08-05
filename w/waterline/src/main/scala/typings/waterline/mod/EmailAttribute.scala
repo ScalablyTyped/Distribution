@@ -15,17 +15,14 @@ trait EmailAttribute
 }
 object EmailAttribute {
   
-  @scala.inline
-  def apply(): EmailAttribute = {
+  inline def apply(): EmailAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("email")
     __obj.asInstanceOf[EmailAttribute]
   }
   
-  @scala.inline
-  implicit class EmailAttributeMutableBuilder[Self <: EmailAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: EmailAttribute](x: Self) {
     
-    @scala.inline
-    def setType(value: email): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: email): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

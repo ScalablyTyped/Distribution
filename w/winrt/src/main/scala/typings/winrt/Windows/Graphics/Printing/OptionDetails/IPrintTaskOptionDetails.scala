@@ -19,8 +19,7 @@ trait IPrintTaskOptionDetails extends StObject {
 }
 object IPrintTaskOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createItemListOption: (String, String) => PrintCustomItemListOptionDetails,
     createTextOption: (String, String) => PrintCustomTextOptionDetails,
     onbeginvalidation: js.Any,
@@ -31,22 +30,16 @@ object IPrintTaskOptionDetails {
     __obj.asInstanceOf[IPrintTaskOptionDetails]
   }
   
-  @scala.inline
-  implicit class IPrintTaskOptionDetailsMutableBuilder[Self <: IPrintTaskOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskOptionDetails](x: Self) {
     
-    @scala.inline
-    def setCreateItemListOption(value: (String, String) => PrintCustomItemListOptionDetails): Self = StObject.set(x, "createItemListOption", js.Any.fromFunction2(value))
+    inline def setCreateItemListOption(value: (String, String) => PrintCustomItemListOptionDetails): Self = StObject.set(x, "createItemListOption", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateTextOption(value: (String, String) => PrintCustomTextOptionDetails): Self = StObject.set(x, "createTextOption", js.Any.fromFunction2(value))
+    inline def setCreateTextOption(value: (String, String) => PrintCustomTextOptionDetails): Self = StObject.set(x, "createTextOption", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnbeginvalidation(value: js.Any): Self = StObject.set(x, "onbeginvalidation", value.asInstanceOf[js.Any])
+    inline def setOnbeginvalidation(value: js.Any): Self = StObject.set(x, "onbeginvalidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnoptionchanged(value: js.Any): Self = StObject.set(x, "onoptionchanged", value.asInstanceOf[js.Any])
+    inline def setOnoptionchanged(value: js.Any): Self = StObject.set(x, "onoptionchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: IMapView[String, IPrintOptionDetails]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IMapView[String, IPrintOptionDetails]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

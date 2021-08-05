@@ -46,15 +46,13 @@ object mod {
     	//=> '10.0.0.79'
     	```
     	*/
-    @scala.inline
-    def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+    inline def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   }
   @JSImport("internal-ip", "v4")
   @js.native
   def v4_Fmod: v4 = js.native
   
-  @scala.inline
-  def v4_Fmod_=(x: v4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
+  inline def v4_Fmod_=(x: v4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
   
   @js.native
   trait v6 extends StObject {
@@ -92,13 +90,11 @@ object mod {
     	//=> 'fe80::1'
     	```
     	*/
-    @scala.inline
-    def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+    inline def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   }
   @JSImport("internal-ip", "v6")
   @js.native
   def v6_Fmod: v6 = js.native
   
-  @scala.inline
-  def v6_Fmod_=(x: v6): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v6")(x.asInstanceOf[js.Any])
+  inline def v6_Fmod_=(x: v6): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v6")(x.asInstanceOf[js.Any])
 }

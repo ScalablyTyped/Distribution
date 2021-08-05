@@ -17,28 +17,21 @@ trait INotebookMetadata
 }
 object INotebookMetadata {
   
-  @scala.inline
-  def apply(orig_nbformat: Double): INotebookMetadata = {
+  inline def apply(orig_nbformat: Double): INotebookMetadata = {
     val __obj = js.Dynamic.literal(orig_nbformat = orig_nbformat.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotebookMetadata]
   }
   
-  @scala.inline
-  implicit class INotebookMetadataMutableBuilder[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: INotebookMetadata](x: Self) {
     
-    @scala.inline
-    def setKernelspec(value: IKernelspecMetadata): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
+    inline def setKernelspec(value: IKernelspecMetadata): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelspecUndefined: Self = StObject.set(x, "kernelspec", js.undefined)
+    inline def setKernelspecUndefined: Self = StObject.set(x, "kernelspec", js.undefined)
     
-    @scala.inline
-    def setLanguage_info(value: ILanguageInfoMetadata): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
+    inline def setLanguage_info(value: ILanguageInfoMetadata): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
+    inline def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
     
-    @scala.inline
-    def setOrig_nbformat(value: Double): Self = StObject.set(x, "orig_nbformat", value.asInstanceOf[js.Any])
+    inline def setOrig_nbformat(value: Double): Self = StObject.set(x, "orig_nbformat", value.asInstanceOf[js.Any])
   }
 }

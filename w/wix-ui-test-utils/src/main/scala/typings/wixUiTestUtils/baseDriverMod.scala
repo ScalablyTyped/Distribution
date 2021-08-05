@@ -11,8 +11,7 @@ object baseDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def baseUniDriverFactory(base: UniDriver[js.Any]): BaseUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseUniDriver]
+  inline def baseUniDriverFactory(base: UniDriver[js.Any]): BaseUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseUniDriver]
   
   trait BaseUniDriver extends StObject {
     
@@ -27,8 +26,7 @@ object baseDriverMod {
   }
   object BaseUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean]
@@ -37,17 +35,13 @@ object baseDriverMod {
       __obj.asInstanceOf[BaseUniDriver]
     }
     
-    @scala.inline
-    implicit class BaseUniDriverMutableBuilder[Self <: BaseUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BaseUniDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     }
   }
 }

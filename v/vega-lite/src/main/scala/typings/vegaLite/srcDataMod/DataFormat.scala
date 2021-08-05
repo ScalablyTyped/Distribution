@@ -13,26 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataFormat extends StObject
 object DataFormat {
   
-  @scala.inline
-  def CsvDataFormat(): typings.vegaLite.srcDataMod.CsvDataFormat = {
+  inline def CsvDataFormat(): typings.vegaLite.srcDataMod.CsvDataFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.CsvDataFormat]
   }
   
-  @scala.inline
-  def DsvDataFormat(delimiter: String): typings.vegaLite.srcDataMod.DsvDataFormat = {
+  inline def DsvDataFormat(delimiter: String): typings.vegaLite.srcDataMod.DsvDataFormat = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.DsvDataFormat]
   }
   
-  @scala.inline
-  def JsonDataFormat(): typings.vegaLite.srcDataMod.JsonDataFormat = {
+  inline def JsonDataFormat(): typings.vegaLite.srcDataMod.JsonDataFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.JsonDataFormat]
   }
   
-  @scala.inline
-  def TopoDataFormat(): typings.vegaLite.srcDataMod.TopoDataFormat = {
+  inline def TopoDataFormat(): typings.vegaLite.srcDataMod.TopoDataFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.TopoDataFormat]
   }

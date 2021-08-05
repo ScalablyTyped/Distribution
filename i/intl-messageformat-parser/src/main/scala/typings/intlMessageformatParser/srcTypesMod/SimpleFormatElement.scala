@@ -12,23 +12,18 @@ trait SimpleFormatElement[T /* <: TYPE */, S /* <: Skeleton */]
 }
 object SimpleFormatElement {
   
-  @scala.inline
-  def apply[T /* <: TYPE */, S /* <: Skeleton */](`type`: T, value: String): SimpleFormatElement[T, S] = {
+  inline def apply[T /* <: TYPE */, S /* <: Skeleton */](`type`: T, value: String): SimpleFormatElement[T, S] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleFormatElement[T, S]]
   }
   
-  @scala.inline
-  implicit class SimpleFormatElementMutableBuilder[Self <: SimpleFormatElement[?, ?], T /* <: TYPE */, S /* <: Skeleton */] (val x: Self & (SimpleFormatElement[T, S])) extends AnyVal {
+  extension [Self <: SimpleFormatElement[?, ?], T /* <: TYPE */, S /* <: Skeleton */](x: Self & (SimpleFormatElement[T, S])) {
     
-    @scala.inline
-    def setStyle(value: String | S): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String | S): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

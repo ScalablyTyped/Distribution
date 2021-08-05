@@ -13,19 +13,15 @@ trait PlotSlowstochasticSmoothedLineOptions extends StObject {
 }
 object PlotSlowstochasticSmoothedLineOptions {
   
-  @scala.inline
-  def apply(): PlotSlowstochasticSmoothedLineOptions = {
+  inline def apply(): PlotSlowstochasticSmoothedLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSlowstochasticSmoothedLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotSlowstochasticSmoothedLineOptionsMutableBuilder[Self <: PlotSlowstochasticSmoothedLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSlowstochasticSmoothedLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotSlowstochasticSmoothedLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotSlowstochasticSmoothedLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

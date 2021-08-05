@@ -22,25 +22,19 @@ trait ProcessExecutionOptions extends StObject {
 }
 object ProcessExecutionOptions {
   
-  @scala.inline
-  def apply(): ProcessExecutionOptions = {
+  inline def apply(): ProcessExecutionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessExecutionOptions]
   }
   
-  @scala.inline
-  implicit class ProcessExecutionOptionsMutableBuilder[Self <: ProcessExecutionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessExecutionOptions](x: Self) {
     
-    @scala.inline
-    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
   }
 }

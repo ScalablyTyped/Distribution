@@ -30,8 +30,7 @@ object Diagnostics {
       * @return The newly created HttpDiagnosticProvider .
       */
     /* static member */
-    @scala.inline
-    def createFromProcessDiagnosticInfo(processDiagnosticInfo: ProcessDiagnosticInfo): typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProcessDiagnosticInfo")(processDiagnosticInfo.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProvider]
+    inline def createFromProcessDiagnosticInfo(processDiagnosticInfo: ProcessDiagnosticInfo): typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProcessDiagnosticInfo")(processDiagnosticInfo.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProvider]
   }
   
   /** Provides data for the RequestResponseCompleted event. */

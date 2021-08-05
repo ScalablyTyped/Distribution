@@ -22,22 +22,17 @@ trait TypeProfileEntry extends StObject {
 }
 object TypeProfileEntry {
   
-  @scala.inline
-  def apply(offset: Double, types: js.Array[TypeObject]): TypeProfileEntry = {
+  inline def apply(offset: Double, types: js.Array[TypeObject]): TypeProfileEntry = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeProfileEntry]
   }
   
-  @scala.inline
-  implicit class TypeProfileEntryMutableBuilder[Self <: TypeProfileEntry] (val x: Self) extends AnyVal {
+  extension [Self <: TypeProfileEntry](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[TypeObject]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[TypeObject]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: TypeObject*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeObject*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

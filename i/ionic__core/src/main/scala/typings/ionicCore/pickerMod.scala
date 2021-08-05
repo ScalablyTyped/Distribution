@@ -25,14 +25,14 @@ object pickerMod {
       */
     var backdropDismiss: Boolean = js.native
     
-    var buttonClick: js.Any = js.native
+    /* private */ var buttonClick: js.Any = js.native
     
     /**
       * Array of buttons to be displayed at the top of the picker.
       */
     var buttons: js.Array[PickerButton] = js.native
     
-    var callButtonHandler: js.Any = js.native
+    /* private */ var callButtonHandler: js.Any = js.native
     
     /**
       * Array of columns to be displayed in the picker.
@@ -48,14 +48,14 @@ object pickerMod {
       */
     var cssClass: js.UndefOr[String | js.Array[String]] = js.native
     
-    var dispatchCancelHandler: js.Any = js.native
+    /* private */ var dispatchCancelHandler: js.Any = js.native
     
     /**
       * Number of milliseconds to wait before dismissing the picker.
       */
     var duration: Double = js.native
     
-    var durationTimeout: js.Any = js.native
+    /* private */ var durationTimeout: js.Any = js.native
     
     @JSName("el")
     var el_Picker: HTMLIonPickerElement = js.native
@@ -67,11 +67,11 @@ object pickerMod {
       */
     def getColumn(name: String): js.Promise[js.UndefOr[PickerColumn]] = js.native
     
-    var getSelected: js.Any = js.native
+    /* private */ var getSelected: js.Any = js.native
     
     var lastFocus: js.UndefOr[HTMLElement] = js.native
     
-    var onBackdropTap: js.Any = js.native
+    /* private */ var onBackdropTap: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the picker did dismiss.

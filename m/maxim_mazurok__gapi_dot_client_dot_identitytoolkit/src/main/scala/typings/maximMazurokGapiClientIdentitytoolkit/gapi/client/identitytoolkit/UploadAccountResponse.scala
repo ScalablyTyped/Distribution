@@ -15,28 +15,21 @@ trait UploadAccountResponse extends StObject {
 }
 object UploadAccountResponse {
   
-  @scala.inline
-  def apply(): UploadAccountResponse = {
+  inline def apply(): UploadAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadAccountResponse]
   }
   
-  @scala.inline
-  implicit class UploadAccountResponseMutableBuilder[Self <: UploadAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadAccountResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Array[Index]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Array[Index]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setErrorVarargs(value: Index*): Self = StObject.set(x, "error", js.Array(value :_*))
+    inline def setErrorVarargs(value: Index*): Self = StObject.set(x, "error", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

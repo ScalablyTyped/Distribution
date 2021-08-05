@@ -23,35 +23,26 @@ object httpMod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply(hostname: String, path: String, protocol: String): Endpoint = {
+    inline def apply(hostname: String, path: String, protocol: String): Endpoint = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endpoint]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Endpoint](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: QueryParameterBag): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: QueryParameterBag): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -86,20 +77,16 @@ object httpMod {
   }
   object HttpHandlerOptions {
     
-    @scala.inline
-    def apply(): HttpHandlerOptions = {
+    inline def apply(): HttpHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpHandlerOptions]
     }
     
-    @scala.inline
-    implicit class HttpHandlerOptionsMutableBuilder[Self <: HttpHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+      inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
+      inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     }
   }
   
@@ -111,23 +98,18 @@ object httpMod {
   }
   object HttpMessage {
     
-    @scala.inline
-    def apply(headers: HeaderBag): HttpMessage = {
+    inline def apply(headers: HeaderBag): HttpMessage = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpMessage]
     }
     
-    @scala.inline
-    implicit class HttpMessageMutableBuilder[Self <: HttpMessage] (val x: Self) extends AnyVal {
+    extension [Self <: HttpMessage](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HeaderBag): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeaderBag): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +122,14 @@ object httpMod {
   }
   object HttpRequest {
     
-    @scala.inline
-    def apply(headers: HeaderBag, hostname: String, method: String, path: String, protocol: String): HttpRequest = {
+    inline def apply(headers: HeaderBag, hostname: String, method: String, path: String, protocol: String): HttpRequest = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpRequest]
     }
     
-    @scala.inline
-    implicit class HttpRequestMutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
+    extension [Self <: HttpRequest](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,17 +141,14 @@ object httpMod {
   }
   object HttpResponse {
     
-    @scala.inline
-    def apply(headers: HeaderBag, statusCode: Double): HttpResponse = {
+    inline def apply(headers: HeaderBag, statusCode: Double): HttpResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpResponse]
     }
     
-    @scala.inline
-    implicit class HttpResponseMutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
+    extension [Self <: HttpResponse](x: Self) {
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,17 +163,14 @@ object httpMod {
   }
   object ResolvedHttpResponse {
     
-    @scala.inline
-    def apply(body: String, headers: HeaderBag, statusCode: Double): ResolvedHttpResponse = {
+    inline def apply(body: String, headers: HeaderBag, statusCode: Double): ResolvedHttpResponse = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedHttpResponse]
     }
     
-    @scala.inline
-    implicit class ResolvedHttpResponseMutableBuilder[Self <: ResolvedHttpResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedHttpResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
 }

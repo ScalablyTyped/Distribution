@@ -16,7 +16,7 @@ object glacierClientMod {
   class GlacierClient protected () extends StObject {
     def this(configuration: GlacierConfiguration) = this()
     
-    val config: GlacierResolvedConfiguration = js.native
+    /* protected */ val config: GlacierResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

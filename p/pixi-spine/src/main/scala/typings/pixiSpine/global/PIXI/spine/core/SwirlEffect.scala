@@ -37,10 +37,10 @@ class SwirlEffect protected ()
     dark: typings.pixiSpine.PIXI.spine.core.Color
   ): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var worldX: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var worldY: js.Any = js.native
 }
 object SwirlEffect {
@@ -53,6 +53,5 @@ object SwirlEffect {
   @JSGlobal("PIXI.spine.core.SwirlEffect.interpolation")
   @js.native
   def interpolation: typings.pixiSpine.PIXI.spine.core.PowOut = js.native
-  @scala.inline
-  def interpolation_=(x: typings.pixiSpine.PIXI.spine.core.PowOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpolation")(x.asInstanceOf[js.Any])
+  inline def interpolation_=(x: typings.pixiSpine.PIXI.spine.core.PowOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpolation")(x.asInstanceOf[js.Any])
 }

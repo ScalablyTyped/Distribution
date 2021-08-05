@@ -23,31 +23,23 @@ trait UpdateProvisioningArtifactOutput extends StObject {
 }
 object UpdateProvisioningArtifactOutput {
   
-  @scala.inline
-  def apply(): UpdateProvisioningArtifactOutput = {
+  inline def apply(): UpdateProvisioningArtifactOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateProvisioningArtifactOutput]
   }
   
-  @scala.inline
-  implicit class UpdateProvisioningArtifactOutputMutableBuilder[Self <: UpdateProvisioningArtifactOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProvisioningArtifactOutput](x: Self) {
     
-    @scala.inline
-    def setInfo(value: ProvisioningArtifactInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: ProvisioningArtifactInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactDetail(value: ProvisioningArtifactDetail): Self = StObject.set(x, "ProvisioningArtifactDetail", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactDetail(value: ProvisioningArtifactDetail): Self = StObject.set(x, "ProvisioningArtifactDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactDetailUndefined: Self = StObject.set(x, "ProvisioningArtifactDetail", js.undefined)
+    inline def setProvisioningArtifactDetailUndefined: Self = StObject.set(x, "ProvisioningArtifactDetail", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

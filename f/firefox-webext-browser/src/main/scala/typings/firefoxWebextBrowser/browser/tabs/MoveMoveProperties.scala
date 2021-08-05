@@ -14,22 +14,17 @@ trait MoveMoveProperties extends StObject {
 }
 object MoveMoveProperties {
   
-  @scala.inline
-  def apply(index: Double): MoveMoveProperties = {
+  inline def apply(index: Double): MoveMoveProperties = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveMoveProperties]
   }
   
-  @scala.inline
-  implicit class MoveMovePropertiesMutableBuilder[Self <: MoveMoveProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MoveMoveProperties](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+    inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
   }
 }

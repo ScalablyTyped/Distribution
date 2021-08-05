@@ -68,20 +68,16 @@ object mod {
   }
   object BaseLine {
     
-    @scala.inline
-    def apply(fontSize: String, lineHeight: String): BaseLine = {
+    inline def apply(fontSize: String, lineHeight: String): BaseLine = {
       val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseLine]
     }
     
-    @scala.inline
-    implicit class BaseLineMutableBuilder[Self <: BaseLine] (val x: Self) extends AnyVal {
+    extension [Self <: BaseLine](x: Self) {
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,23 +89,18 @@ object mod {
   }
   object GoogleFont {
     
-    @scala.inline
-    def apply(name: String, styles: js.Array[String]): GoogleFont = {
+    inline def apply(name: String, styles: js.Array[String]): GoogleFont = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoogleFont]
     }
     
-    @scala.inline
-    implicit class GoogleFontMutableBuilder[Self <: GoogleFont] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleFont](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     }
   }
   
@@ -147,8 +138,7 @@ object mod {
   }
   object Typography {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjustFontSizeTo: /* value */ js.UndefOr[Double | String] => js.Object,
       createStyles: () => String,
       establishBaseline: () => BaseLine,
@@ -163,35 +153,25 @@ object mod {
       __obj.asInstanceOf[Typography]
     }
     
-    @scala.inline
-    implicit class TypographyMutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
+    extension [Self <: Typography](x: Self) {
       
-      @scala.inline
-      def setAdjustFontSizeTo(value: /* value */ js.UndefOr[Double | String] => js.Object): Self = StObject.set(x, "adjustFontSizeTo", js.Any.fromFunction1(value))
+      inline def setAdjustFontSizeTo(value: /* value */ js.UndefOr[Double | String] => js.Object): Self = StObject.set(x, "adjustFontSizeTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateStyles(value: () => String): Self = StObject.set(x, "createStyles", js.Any.fromFunction0(value))
+      inline def setCreateStyles(value: () => String): Self = StObject.set(x, "createStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEstablishBaseline(value: () => BaseLine): Self = StObject.set(x, "establishBaseline", js.Any.fromFunction0(value))
+      inline def setEstablishBaseline(value: () => BaseLine): Self = StObject.set(x, "establishBaseline", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInjectStyles(value: () => Unit): Self = StObject.set(x, "injectStyles", js.Any.fromFunction0(value))
+      inline def setInjectStyles(value: () => Unit): Self = StObject.set(x, "injectStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLinesForFontSize(value: /* fontSize */ Double => Double): Self = StObject.set(x, "linesForFontSize", js.Any.fromFunction1(value))
+      inline def setLinesForFontSize(value: /* fontSize */ Double => Double): Self = StObject.set(x, "linesForFontSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: TypographyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TypographyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRhythm(value: /* value */ Double => String): Self = StObject.set(x, "rhythm", js.Any.fromFunction1(value))
+      inline def setRhythm(value: /* value */ Double => String): Self = StObject.set(x, "rhythm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScale(value: /* value */ Double => BaseLine): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+      inline def setScale(value: /* value */ Double => BaseLine): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -247,128 +227,88 @@ object mod {
   }
   object TypographyOptions {
     
-    @scala.inline
-    def apply(): TypographyOptions = {
+    inline def apply(): TypographyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypographyOptions]
     }
     
-    @scala.inline
-    implicit class TypographyOptionsMutableBuilder[Self <: TypographyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TypographyOptions](x: Self) {
       
-      @scala.inline
-      def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+      inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+      inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
       
-      @scala.inline
-      def setBaseLineHeight(value: Double): Self = StObject.set(x, "baseLineHeight", value.asInstanceOf[js.Any])
+      inline def setBaseLineHeight(value: Double): Self = StObject.set(x, "baseLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseLineHeightUndefined: Self = StObject.set(x, "baseLineHeight", js.undefined)
+      inline def setBaseLineHeightUndefined: Self = StObject.set(x, "baseLineHeight", js.undefined)
       
-      @scala.inline
-      def setBlockMarginBottom(value: Double): Self = StObject.set(x, "blockMarginBottom", value.asInstanceOf[js.Any])
+      inline def setBlockMarginBottom(value: Double): Self = StObject.set(x, "blockMarginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockMarginBottomUndefined: Self = StObject.set(x, "blockMarginBottom", js.undefined)
+      inline def setBlockMarginBottomUndefined: Self = StObject.set(x, "blockMarginBottom", js.undefined)
       
-      @scala.inline
-      def setBodyColor(value: String): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
+      inline def setBodyColor(value: String): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyColorUndefined: Self = StObject.set(x, "bodyColor", js.undefined)
+      inline def setBodyColorUndefined: Self = StObject.set(x, "bodyColor", js.undefined)
       
-      @scala.inline
-      def setBodyFontFamily(value: js.Array[String]): Self = StObject.set(x, "bodyFontFamily", value.asInstanceOf[js.Any])
+      inline def setBodyFontFamily(value: js.Array[String]): Self = StObject.set(x, "bodyFontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyFontFamilyUndefined: Self = StObject.set(x, "bodyFontFamily", js.undefined)
+      inline def setBodyFontFamilyUndefined: Self = StObject.set(x, "bodyFontFamily", js.undefined)
       
-      @scala.inline
-      def setBodyFontFamilyVarargs(value: String*): Self = StObject.set(x, "bodyFontFamily", js.Array(value :_*))
+      inline def setBodyFontFamilyVarargs(value: String*): Self = StObject.set(x, "bodyFontFamily", js.Array(value :_*))
       
-      @scala.inline
-      def setBodyWeight(value: Double | String): Self = StObject.set(x, "bodyWeight", value.asInstanceOf[js.Any])
+      inline def setBodyWeight(value: Double | String): Self = StObject.set(x, "bodyWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyWeightUndefined: Self = StObject.set(x, "bodyWeight", js.undefined)
+      inline def setBodyWeightUndefined: Self = StObject.set(x, "bodyWeight", js.undefined)
       
-      @scala.inline
-      def setBoldWeight(value: Double | String): Self = StObject.set(x, "boldWeight", value.asInstanceOf[js.Any])
+      inline def setBoldWeight(value: Double | String): Self = StObject.set(x, "boldWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldWeightUndefined: Self = StObject.set(x, "boldWeight", js.undefined)
+      inline def setBoldWeightUndefined: Self = StObject.set(x, "boldWeight", js.undefined)
       
-      @scala.inline
-      def setGoogleFonts(value: js.Array[GoogleFont]): Self = StObject.set(x, "googleFonts", value.asInstanceOf[js.Any])
+      inline def setGoogleFonts(value: js.Array[GoogleFont]): Self = StObject.set(x, "googleFonts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleFontsUndefined: Self = StObject.set(x, "googleFonts", js.undefined)
+      inline def setGoogleFontsUndefined: Self = StObject.set(x, "googleFonts", js.undefined)
       
-      @scala.inline
-      def setGoogleFontsVarargs(value: GoogleFont*): Self = StObject.set(x, "googleFonts", js.Array(value :_*))
+      inline def setGoogleFontsVarargs(value: GoogleFont*): Self = StObject.set(x, "googleFonts", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaderColor(value: String): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
+      inline def setHeaderColor(value: String): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
+      inline def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
       
-      @scala.inline
-      def setHeaderFontFamily(value: js.Array[String]): Self = StObject.set(x, "headerFontFamily", value.asInstanceOf[js.Any])
+      inline def setHeaderFontFamily(value: js.Array[String]): Self = StObject.set(x, "headerFontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFontFamilyUndefined: Self = StObject.set(x, "headerFontFamily", js.undefined)
+      inline def setHeaderFontFamilyUndefined: Self = StObject.set(x, "headerFontFamily", js.undefined)
       
-      @scala.inline
-      def setHeaderFontFamilyVarargs(value: String*): Self = StObject.set(x, "headerFontFamily", js.Array(value :_*))
+      inline def setHeaderFontFamilyVarargs(value: String*): Self = StObject.set(x, "headerFontFamily", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaderLineHeight(value: Double): Self = StObject.set(x, "headerLineHeight", value.asInstanceOf[js.Any])
+      inline def setHeaderLineHeight(value: Double): Self = StObject.set(x, "headerLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderLineHeightUndefined: Self = StObject.set(x, "headerLineHeight", js.undefined)
+      inline def setHeaderLineHeightUndefined: Self = StObject.set(x, "headerLineHeight", js.undefined)
       
-      @scala.inline
-      def setHeaderWeight(value: Double | String): Self = StObject.set(x, "headerWeight", value.asInstanceOf[js.Any])
+      inline def setHeaderWeight(value: Double | String): Self = StObject.set(x, "headerWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderWeightUndefined: Self = StObject.set(x, "headerWeight", js.undefined)
+      inline def setHeaderWeightUndefined: Self = StObject.set(x, "headerWeight", js.undefined)
       
-      @scala.inline
-      def setIncludeNormalize(value: Boolean): Self = StObject.set(x, "includeNormalize", value.asInstanceOf[js.Any])
+      inline def setIncludeNormalize(value: Boolean): Self = StObject.set(x, "includeNormalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeNormalizeUndefined: Self = StObject.set(x, "includeNormalize", js.undefined)
+      inline def setIncludeNormalizeUndefined: Self = StObject.set(x, "includeNormalize", js.undefined)
       
-      @scala.inline
-      def setOverrideStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ js.Any) => js.Object): Self = StObject.set(x, "overrideStyles", js.Any.fromFunction3(value))
+      inline def setOverrideStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ js.Any) => js.Object): Self = StObject.set(x, "overrideStyles", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOverrideStylesUndefined: Self = StObject.set(x, "overrideStyles", js.undefined)
+      inline def setOverrideStylesUndefined: Self = StObject.set(x, "overrideStyles", js.undefined)
       
-      @scala.inline
-      def setOverrideThemeStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ js.Any) => js.Object): Self = StObject.set(x, "overrideThemeStyles", js.Any.fromFunction3(value))
+      inline def setOverrideThemeStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ js.Any) => js.Object): Self = StObject.set(x, "overrideThemeStyles", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOverrideThemeStylesUndefined: Self = StObject.set(x, "overrideThemeStyles", js.undefined)
+      inline def setOverrideThemeStylesUndefined: Self = StObject.set(x, "overrideThemeStyles", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
+      inline def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
+      inline def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
     }
   }
   

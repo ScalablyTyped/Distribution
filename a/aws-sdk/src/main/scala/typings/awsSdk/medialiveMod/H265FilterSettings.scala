@@ -10,19 +10,15 @@ trait H265FilterSettings extends StObject {
 }
 object H265FilterSettings {
   
-  @scala.inline
-  def apply(): H265FilterSettings = {
+  inline def apply(): H265FilterSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[H265FilterSettings]
   }
   
-  @scala.inline
-  implicit class H265FilterSettingsMutableBuilder[Self <: H265FilterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: H265FilterSettings](x: Self) {
     
-    @scala.inline
-    def setTemporalFilterSettings(value: TemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
+    inline def setTemporalFilterSettings(value: TemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
+    inline def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
   }
 }

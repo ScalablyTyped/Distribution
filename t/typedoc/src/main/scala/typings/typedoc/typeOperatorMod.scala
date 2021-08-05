@@ -16,6 +16,6 @@ object typeOperatorMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    val supportedOperatorNames: js.Any = js.native
+    /* private */ val supportedOperatorNames: js.Any = js.native
   }
 }

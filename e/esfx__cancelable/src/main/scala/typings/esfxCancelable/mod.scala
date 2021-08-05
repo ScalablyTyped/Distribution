@@ -25,8 +25,7 @@ object mod {
       * Creates a `CancelSubscription` object for an `unsubscribe` callback.
       * @param unsubscribe The callback to execute when the `unsubscribe()` method is called.
       */
-    @scala.inline
-    def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[typings.esfxCancelable.distMod.CancelSubscription]
+    inline def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[typings.esfxCancelable.distMod.CancelSubscription]
   }
   
   object Cancelable {
@@ -52,23 +51,19 @@ object mod {
     /**
       * Determines whether a value is a `Cancelable` object.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
     
     /**
       * Determines whether a value is a `Cancelable` object.
       * @deprecated Use `Cancelable.hasInstance` instead.
       */
-    @scala.inline
-    def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
+    inline def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
     
     /**
       * Determines whether `cancelable` is in the signaled state.
       */
-    @scala.inline
-    def isSignaled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignaled")().asInstanceOf[Boolean]
-    @scala.inline
-    def isSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignaled")(cancelable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSignaled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignaled")().asInstanceOf[Boolean]
+    inline def isSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignaled")(cancelable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@esfx/cancelable", "Cancelable.name")
     @js.native
@@ -81,21 +76,17 @@ object mod {
     @js.native
     val none: CancelableCancelSignal = js.native
     
-    @scala.inline
-    def subscribe(cancelable: Unit, onSignaled: js.Function0[Unit]): CancelSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(cancelable.asInstanceOf[js.Any], onSignaled.asInstanceOf[js.Any])).asInstanceOf[CancelSubscription]
+    inline def subscribe(cancelable: Unit, onSignaled: js.Function0[Unit]): CancelSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(cancelable.asInstanceOf[js.Any], onSignaled.asInstanceOf[js.Any])).asInstanceOf[CancelSubscription]
     /**
       * Subscribes to be notified when a `cancelable` becomes signaled.
       */
-    @scala.inline
-    def subscribe(cancelable: typings.esfxCancelable.distMod.Cancelable, onSignaled: js.Function0[Unit]): CancelSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(cancelable.asInstanceOf[js.Any], onSignaled.asInstanceOf[js.Any])).asInstanceOf[CancelSubscription]
+    inline def subscribe(cancelable: typings.esfxCancelable.distMod.Cancelable, onSignaled: js.Function0[Unit]): CancelSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(cancelable.asInstanceOf[js.Any], onSignaled.asInstanceOf[js.Any])).asInstanceOf[CancelSubscription]
     
     /**
       * Throws a `CancelError` exception if the provided `cancelable` is in the signaled state.
       */
-    @scala.inline
-    def throwIfSignaled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwIfSignaled")().asInstanceOf[Unit]
-    @scala.inline
-    def throwIfSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwIfSignaled")(cancelable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def throwIfSignaled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwIfSignaled")().asInstanceOf[Unit]
+    inline def throwIfSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwIfSignaled")(cancelable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object CancelableSource {
@@ -118,22 +109,19 @@ object mod {
     /**
       * Determines whether a value is a `CancelableSource` object.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean]
     
     /**
       * Determines whether a value is a `Cancelable` object.
       * @deprecated Use `Cancelable.hasInstance` instead.
       */
-    @scala.inline
-    def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
+    inline def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ Boolean]
     
     /**
       * Determines whether a value is a `CancelableSource` object.
       * @deprecated Use `CancelableSource.hasInstance` instead.
       */
-    @scala.inline
-    def isCancelableSource(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelableSource")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean]
+    inline def isCancelableSource(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancelableSource")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/cancelable.@esfx/cancelable/dist.CancelableSource */ Boolean]
     
     @JSImport("@esfx/cancelable", "CancelableSource.name")
     @js.native

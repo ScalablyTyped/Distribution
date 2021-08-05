@@ -23,32 +23,24 @@ object anon {
   }
   object RequiredPickMediaSessionA {
     
-    @scala.inline
-    def apply(action: MediaSessionAction, seekTime: Double & js.UndefOr[Double]): RequiredPickMediaSessionA = {
+    inline def apply(action: MediaSessionAction, seekTime: Double & js.UndefOr[Double]): RequiredPickMediaSessionA = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], seekTime = seekTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredPickMediaSessionA]
     }
     
-    @scala.inline
-    implicit class RequiredPickMediaSessionAMutableBuilder[Self <: RequiredPickMediaSessionA] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredPickMediaSessionA](x: Self) {
       
-      @scala.inline
-      def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
+      inline def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
+      inline def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
       
-      @scala.inline
-      def setSeekOffset(value: Double): Self = StObject.set(x, "seekOffset", value.asInstanceOf[js.Any])
+      inline def setSeekOffset(value: Double): Self = StObject.set(x, "seekOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekOffsetUndefined: Self = StObject.set(x, "seekOffset", js.undefined)
+      inline def setSeekOffsetUndefined: Self = StObject.set(x, "seekOffset", js.undefined)
       
-      @scala.inline
-      def setSeekTime(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
+      inline def setSeekTime(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait WorkbookDirtiedEventUIParam extends StObject {
 }
 object WorkbookDirtiedEventUIParam {
   
-  @scala.inline
-  def apply(): WorkbookDirtiedEventUIParam = {
+  inline def apply(): WorkbookDirtiedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookDirtiedEventUIParam]
   }
   
-  @scala.inline
-  implicit class WorkbookDirtiedEventUIParamMutableBuilder[Self <: WorkbookDirtiedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookDirtiedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

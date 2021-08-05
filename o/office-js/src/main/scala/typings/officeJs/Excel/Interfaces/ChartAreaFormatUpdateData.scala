@@ -61,39 +61,29 @@ trait ChartAreaFormatUpdateData extends StObject {
 }
 object ChartAreaFormatUpdateData {
   
-  @scala.inline
-  def apply(): ChartAreaFormatUpdateData = {
+  inline def apply(): ChartAreaFormatUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAreaFormatUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartAreaFormatUpdateDataMutableBuilder[Self <: ChartAreaFormatUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAreaFormatUpdateData](x: Self) {
     
-    @scala.inline
-    def setBorder(value: ChartBorderUpdateData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ChartBorderUpdateData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setColorScheme(
+    inline def setColorScheme(
       value: ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13
     ): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
-    @scala.inline
-    def setFont(value: ChartFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ChartFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setRoundedCorners(value: Boolean): Self = StObject.set(x, "roundedCorners", value.asInstanceOf[js.Any])
+    inline def setRoundedCorners(value: Boolean): Self = StObject.set(x, "roundedCorners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundedCornersUndefined: Self = StObject.set(x, "roundedCorners", js.undefined)
+    inline def setRoundedCornersUndefined: Self = StObject.set(x, "roundedCorners", js.undefined)
   }
 }

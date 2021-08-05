@@ -20,7 +20,7 @@ trait NavigationGroups extends StObject {
   
   def Item(Index: js.Any): NavigationGroup
   
-  @JSName("Outlook.NavigationGroups_typekey")
+  /* private */ @JSName("Outlook.NavigationGroups_typekey")
   var OutlookDotNavigationGroups_typekey: NavigationGroups
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait NavigationGroups extends StObject {
 }
 object NavigationGroups {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
@@ -47,37 +46,26 @@ object NavigationGroups {
     __obj.asInstanceOf[NavigationGroups]
   }
   
-  @scala.inline
-  implicit class NavigationGroupsMutableBuilder[Self <: NavigationGroups] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationGroups](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: String => NavigationGroup): Self = StObject.set(x, "Create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => NavigationGroup): Self = StObject.set(x, "Create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: NavigationGroup => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: NavigationGroup => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultNavigationGroup(value: OlGroupType => NavigationGroup): Self = StObject.set(x, "GetDefaultNavigationGroup", js.Any.fromFunction1(value))
+    inline def setGetDefaultNavigationGroup(value: OlGroupType => NavigationGroup): Self = StObject.set(x, "GetDefaultNavigationGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: js.Any => NavigationGroup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => NavigationGroup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotNavigationGroups_typekey(value: NavigationGroups): Self = StObject.set(x, "Outlook.NavigationGroups_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotNavigationGroups_typekey(value: NavigationGroups): Self = StObject.set(x, "Outlook.NavigationGroups_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

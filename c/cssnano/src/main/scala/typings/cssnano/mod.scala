@@ -22,26 +22,20 @@ object mod extends Shortcut {
   }
   object CssNanoOptions {
     
-    @scala.inline
-    def apply(): CssNanoOptions = {
+    inline def apply(): CssNanoOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CssNanoOptions]
     }
     
-    @scala.inline
-    implicit class CssNanoOptionsMutableBuilder[Self <: CssNanoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CssNanoOptions](x: Self) {
       
-      @scala.inline
-      def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
+      inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
       
-      @scala.inline
-      def setPreset(value: (js.Tuple2[String, js.Object]) | String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: (js.Tuple2[String, js.Object]) | String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     }
   }
   

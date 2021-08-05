@@ -50,6 +50,5 @@ object pingMod {
   @js.native
   val description: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintCountPeerIdTimeout: Count): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintCountPeerIdTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintCountPeerIdTimeout: Count): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintCountPeerIdTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

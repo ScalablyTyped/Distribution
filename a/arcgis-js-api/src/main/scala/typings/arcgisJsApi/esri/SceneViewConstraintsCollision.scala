@@ -19,8 +19,7 @@ trait SceneViewConstraintsCollision
 }
 object SceneViewConstraintsCollision {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object SceneViewConstraintsCollision {
     __obj.asInstanceOf[SceneViewConstraintsCollision]
   }
   
-  @scala.inline
-  implicit class SceneViewConstraintsCollisionMutableBuilder[Self <: SceneViewConstraintsCollision] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewConstraintsCollision](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

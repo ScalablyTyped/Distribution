@@ -17,31 +17,23 @@ trait AppendValuesResponse extends StObject {
 }
 object AppendValuesResponse {
   
-  @scala.inline
-  def apply(): AppendValuesResponse = {
+  inline def apply(): AppendValuesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppendValuesResponse]
   }
   
-  @scala.inline
-  implicit class AppendValuesResponseMutableBuilder[Self <: AppendValuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AppendValuesResponse](x: Self) {
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
-    @scala.inline
-    def setTableRange(value: String): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+    inline def setTableRange(value: String): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+    inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: UpdateValuesResponse): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: UpdateValuesResponse): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait BundleId extends StObject {
 }
 object BundleId {
   
-  @scala.inline
-  def apply(bundleId: String): BundleId = {
+  inline def apply(bundleId: String): BundleId = {
     val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleId]
   }
   
-  @scala.inline
-  implicit class BundleIdMutableBuilder[Self <: BundleId] (val x: Self) extends AnyVal {
+  extension [Self <: BundleId](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
   }
 }

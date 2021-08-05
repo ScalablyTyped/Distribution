@@ -25,55 +25,39 @@ trait LocationTaskOptions
 }
 object LocationTaskOptions {
   
-  @scala.inline
-  def apply(): LocationTaskOptions = {
+  inline def apply(): LocationTaskOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationTaskOptions]
   }
   
-  @scala.inline
-  implicit class LocationTaskOptionsMutableBuilder[Self <: LocationTaskOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocationTaskOptions](x: Self) {
     
-    @scala.inline
-    def setActivityType(value: LocationActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: LocationActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+    inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
-    @scala.inline
-    def setDeferredUpdatesDistance(value: Double): Self = StObject.set(x, "deferredUpdatesDistance", value.asInstanceOf[js.Any])
+    inline def setDeferredUpdatesDistance(value: Double): Self = StObject.set(x, "deferredUpdatesDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUpdatesDistanceUndefined: Self = StObject.set(x, "deferredUpdatesDistance", js.undefined)
+    inline def setDeferredUpdatesDistanceUndefined: Self = StObject.set(x, "deferredUpdatesDistance", js.undefined)
     
-    @scala.inline
-    def setDeferredUpdatesInterval(value: Double): Self = StObject.set(x, "deferredUpdatesInterval", value.asInstanceOf[js.Any])
+    inline def setDeferredUpdatesInterval(value: Double): Self = StObject.set(x, "deferredUpdatesInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUpdatesIntervalUndefined: Self = StObject.set(x, "deferredUpdatesInterval", js.undefined)
+    inline def setDeferredUpdatesIntervalUndefined: Self = StObject.set(x, "deferredUpdatesInterval", js.undefined)
     
-    @scala.inline
-    def setDeferredUpdatesTimeout(value: Double): Self = StObject.set(x, "deferredUpdatesTimeout", value.asInstanceOf[js.Any])
+    inline def setDeferredUpdatesTimeout(value: Double): Self = StObject.set(x, "deferredUpdatesTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUpdatesTimeoutUndefined: Self = StObject.set(x, "deferredUpdatesTimeout", js.undefined)
+    inline def setDeferredUpdatesTimeoutUndefined: Self = StObject.set(x, "deferredUpdatesTimeout", js.undefined)
     
-    @scala.inline
-    def setForegroundService(value: NotificationBody): Self = StObject.set(x, "foregroundService", value.asInstanceOf[js.Any])
+    inline def setForegroundService(value: NotificationBody): Self = StObject.set(x, "foregroundService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundServiceUndefined: Self = StObject.set(x, "foregroundService", js.undefined)
+    inline def setForegroundServiceUndefined: Self = StObject.set(x, "foregroundService", js.undefined)
     
-    @scala.inline
-    def setPausesUpdatesAutomatically(value: Boolean): Self = StObject.set(x, "pausesUpdatesAutomatically", value.asInstanceOf[js.Any])
+    inline def setPausesUpdatesAutomatically(value: Boolean): Self = StObject.set(x, "pausesUpdatesAutomatically", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPausesUpdatesAutomaticallyUndefined: Self = StObject.set(x, "pausesUpdatesAutomatically", js.undefined)
+    inline def setPausesUpdatesAutomaticallyUndefined: Self = StObject.set(x, "pausesUpdatesAutomatically", js.undefined)
     
-    @scala.inline
-    def setShowsBackgroundLocationIndicator(value: Boolean): Self = StObject.set(x, "showsBackgroundLocationIndicator", value.asInstanceOf[js.Any])
+    inline def setShowsBackgroundLocationIndicator(value: Boolean): Self = StObject.set(x, "showsBackgroundLocationIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowsBackgroundLocationIndicatorUndefined: Self = StObject.set(x, "showsBackgroundLocationIndicator", js.undefined)
+    inline def setShowsBackgroundLocationIndicatorUndefined: Self = StObject.set(x, "showsBackgroundLocationIndicator", js.undefined)
   }
 }

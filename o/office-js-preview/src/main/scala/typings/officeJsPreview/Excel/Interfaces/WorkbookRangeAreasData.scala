@@ -33,40 +33,29 @@ trait WorkbookRangeAreasData extends StObject {
 }
 object WorkbookRangeAreasData {
   
-  @scala.inline
-  def apply(): WorkbookRangeAreasData = {
+  inline def apply(): WorkbookRangeAreasData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookRangeAreasData]
   }
   
-  @scala.inline
-  implicit class WorkbookRangeAreasDataMutableBuilder[Self <: WorkbookRangeAreasData] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookRangeAreasData](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setAreas(value: js.Array[RangeAreasData]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
+    inline def setAreas(value: js.Array[RangeAreasData]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
+    inline def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
     
-    @scala.inline
-    def setAreasVarargs(value: RangeAreasData*): Self = StObject.set(x, "areas", js.Array(value :_*))
+    inline def setAreasVarargs(value: RangeAreasData*): Self = StObject.set(x, "areas", js.Array(value :_*))
     
-    @scala.inline
-    def setRanges(value: js.Array[RangeData]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[RangeData]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: RangeData*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: RangeData*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

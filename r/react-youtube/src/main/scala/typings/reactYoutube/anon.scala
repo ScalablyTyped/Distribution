@@ -14,20 +14,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: Double, target: js.Any): Data = {
+    inline def apply(data: Double, target: js.Any): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object DataTarget {
     
-    @scala.inline
-    def apply(data: String, target: js.Any): DataTarget = {
+    inline def apply(data: String, target: js.Any): DataTarget = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataTarget]
     }
     
-    @scala.inline
-    implicit class DataTargetMutableBuilder[Self <: DataTarget] (val x: Self) extends AnyVal {
+    extension [Self <: DataTarget](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +54,14 @@ object anon {
   }
   object Target {
     
-    @scala.inline
-    def apply(target: js.Any): Target = {
+    inline def apply(target: js.Any): Target = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Target]
     }
     
-    @scala.inline
-    implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+    extension [Self <: Target](x: Self) {
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

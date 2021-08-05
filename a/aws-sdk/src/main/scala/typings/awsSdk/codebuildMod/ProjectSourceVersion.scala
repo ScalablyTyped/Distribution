@@ -18,19 +18,15 @@ trait ProjectSourceVersion extends StObject {
 }
 object ProjectSourceVersion {
   
-  @scala.inline
-  def apply(sourceIdentifier: String, sourceVersion: String): ProjectSourceVersion = {
+  inline def apply(sourceIdentifier: String, sourceVersion: String): ProjectSourceVersion = {
     val __obj = js.Dynamic.literal(sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any], sourceVersion = sourceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSourceVersion]
   }
   
-  @scala.inline
-  implicit class ProjectSourceVersionMutableBuilder[Self <: ProjectSourceVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectSourceVersion](x: Self) {
     
-    @scala.inline
-    def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+    inline def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
   }
 }

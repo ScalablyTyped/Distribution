@@ -13,8 +13,7 @@ trait OrderValueDef
      with _ChannelDef[js.Any]
 object OrderValueDef {
   
-  @scala.inline
-  def apply(value: Double | ExprRef | SignalRef): OrderValueDef = {
+  inline def apply(value: Double | ExprRef | SignalRef): OrderValueDef = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderValueDef]
   }

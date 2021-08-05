@@ -23,31 +23,23 @@ trait DeviceMinutes extends StObject {
 }
 object DeviceMinutes {
   
-  @scala.inline
-  def apply(): DeviceMinutes = {
+  inline def apply(): DeviceMinutes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceMinutes]
   }
   
-  @scala.inline
-  implicit class DeviceMinutesMutableBuilder[Self <: DeviceMinutes] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMinutes](x: Self) {
     
-    @scala.inline
-    def setMetered(value: Double): Self = StObject.set(x, "metered", value.asInstanceOf[js.Any])
+    inline def setMetered(value: Double): Self = StObject.set(x, "metered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeteredUndefined: Self = StObject.set(x, "metered", js.undefined)
+    inline def setMeteredUndefined: Self = StObject.set(x, "metered", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setUnmetered(value: Double): Self = StObject.set(x, "unmetered", value.asInstanceOf[js.Any])
+    inline def setUnmetered(value: Double): Self = StObject.set(x, "unmetered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmeteredUndefined: Self = StObject.set(x, "unmetered", js.undefined)
+    inline def setUnmeteredUndefined: Self = StObject.set(x, "unmetered", js.undefined)
   }
 }

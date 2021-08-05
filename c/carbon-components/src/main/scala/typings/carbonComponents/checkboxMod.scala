@@ -45,8 +45,7 @@ object checkboxMod {
     @JSImport("carbon-components/components/checkbox/checkbox", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object stateChangeTypes {
@@ -62,8 +61,7 @@ object checkboxMod {
       @JSImport("carbon-components/components/checkbox/checkbox", "default.stateChangeTypes.mixed")
       @js.native
       def mixed: String = js.native
-      @scala.inline
-      def mixed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
+      inline def mixed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/checkbox/checkbox", "default.stateChangeTypes.true")
       @js.native
@@ -90,8 +88,7 @@ object checkboxMod {
   }
   object Checkbox {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _handleBlur: () => Unit,
       _handleClick: () => Unit,
       _handleFocus: () => Unit,
@@ -104,29 +101,21 @@ object checkboxMod {
       __obj.asInstanceOf[Checkbox]
     }
     
-    @scala.inline
-    implicit class CheckboxMutableBuilder[Self <: Checkbox] (val x: Self) extends AnyVal {
+    extension [Self <: Checkbox](x: Self) {
       
-      @scala.inline
-      def setSetDisabled(value: js.Any => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+      inline def setSetDisabled(value: js.Any => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleBlur(value: () => Unit): Self = StObject.set(x, "_handleBlur", js.Any.fromFunction0(value))
+      inline def set_handleBlur(value: () => Unit): Self = StObject.set(x, "_handleBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_handleClick(value: () => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction0(value))
+      inline def set_handleClick(value: () => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_handleFocus(value: () => Unit): Self = StObject.set(x, "_handleFocus", js.Any.fromFunction0(value))
+      inline def set_handleFocus(value: () => Unit): Self = StObject.set(x, "_handleFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_indeterminateCheckbox(value: () => Unit): Self = StObject.set(x, "_indeterminateCheckbox", js.Any.fromFunction0(value))
+      inline def set_indeterminateCheckbox(value: () => Unit): Self = StObject.set(x, "_indeterminateCheckbox", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_initCheckbox(value: () => Unit): Self = StObject.set(x, "_initCheckbox", js.Any.fromFunction0(value))
+      inline def set_initCheckbox(value: () => Unit): Self = StObject.set(x, "_initCheckbox", js.Any.fromFunction0(value))
     }
   }
 }

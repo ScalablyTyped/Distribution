@@ -11,19 +11,15 @@ trait IdentitytoolkitRelyingpartySendVerificationCodeResponse extends StObject {
 }
 object IdentitytoolkitRelyingpartySendVerificationCodeResponse {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartySendVerificationCodeResponse = {
+  inline def apply(): IdentitytoolkitRelyingpartySendVerificationCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySendVerificationCodeResponse]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartySendVerificationCodeResponseMutableBuilder[Self <: IdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartySendVerificationCodeResponse](x: Self) {
     
-    @scala.inline
-    def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+    inline def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
+    inline def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
   }
 }

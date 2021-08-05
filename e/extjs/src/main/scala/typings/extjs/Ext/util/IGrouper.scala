@@ -17,19 +17,15 @@ trait IGrouper
 }
 object IGrouper {
   
-  @scala.inline
-  def apply(): IGrouper = {
+  inline def apply(): IGrouper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGrouper]
   }
   
-  @scala.inline
-  implicit class IGrouperMutableBuilder[Self <: IGrouper] (val x: Self) extends AnyVal {
+  extension [Self <: IGrouper](x: Self) {
     
-    @scala.inline
-    def setGetGroupString(value: /* instance */ js.UndefOr[IModel] => String): Self = StObject.set(x, "getGroupString", js.Any.fromFunction1(value))
+    inline def setGetGroupString(value: /* instance */ js.UndefOr[IModel] => String): Self = StObject.set(x, "getGroupString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetGroupStringUndefined: Self = StObject.set(x, "getGroupString", js.undefined)
+    inline def setGetGroupStringUndefined: Self = StObject.set(x, "getGroupString", js.undefined)
   }
 }

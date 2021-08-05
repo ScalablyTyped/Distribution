@@ -13,6 +13,5 @@ object autolinkerBooleans {
     extends StObject
        with HashtagConfig
        with MentionConfig
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

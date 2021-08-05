@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: js.Thenable[Unit] */](from: String, to: String): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: js.Thenable[Unit] */](from: String, to: String, opts: Options[T]): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: js.Thenable[Unit] */](from: String, to: String): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: js.Thenable[Unit] */](from: String, to: String, opts: Options[T]): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("move-concurrently", JSImport.Namespace)
   @js.native
@@ -52,50 +50,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T /* <: js.Thenable[Unit] */](): Options[T] = {
+    inline def apply[T /* <: js.Thenable[Unit] */](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T /* <: js.Thenable[Unit] */] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T /* <: js.Thenable[Unit] */](x: Self & Options[T]) {
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setGetuid(value: js.Any): Self = StObject.set(x, "getuid", value.asInstanceOf[js.Any])
+      inline def setGetuid(value: js.Any): Self = StObject.set(x, "getuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetuidUndefined: Self = StObject.set(x, "getuid", js.undefined)
+      inline def setGetuidUndefined: Self = StObject.set(x, "getuid", js.undefined)
       
-      @scala.inline
-      def setIsWindows(value: Boolean): Self = StObject.set(x, "isWindows", value.asInstanceOf[js.Any])
+      inline def setIsWindows(value: Boolean): Self = StObject.set(x, "isWindows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWindowsUndefined: Self = StObject.set(x, "isWindows", js.undefined)
+      inline def setIsWindowsUndefined: Self = StObject.set(x, "isWindows", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+      inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
       
-      @scala.inline
-      def setPromise(value: Instantiable1[/* args (repeated) */ js.Any, T]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Instantiable1[/* args (repeated) */ js.Any, T]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      @scala.inline
-      def setWriteStreamAtomic(value: js.Any): Self = StObject.set(x, "writeStreamAtomic", value.asInstanceOf[js.Any])
+      inline def setWriteStreamAtomic(value: js.Any): Self = StObject.set(x, "writeStreamAtomic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteStreamAtomicUndefined: Self = StObject.set(x, "writeStreamAtomic", js.undefined)
+      inline def setWriteStreamAtomicUndefined: Self = StObject.set(x, "writeStreamAtomic", js.undefined)
     }
   }
 }

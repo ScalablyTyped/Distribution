@@ -18,29 +18,22 @@ trait StateVariableDeclaration
 }
 object StateVariableDeclaration {
   
-  @scala.inline
-  def apply(variables: js.Array[VariableDeclaration]): StateVariableDeclaration = {
+  inline def apply(variables: js.Array[VariableDeclaration]): StateVariableDeclaration = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StateVariableDeclaration")
     __obj.asInstanceOf[StateVariableDeclaration]
   }
   
-  @scala.inline
-  implicit class StateVariableDeclarationMutableBuilder[Self <: StateVariableDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: StateVariableDeclaration](x: Self) {
     
-    @scala.inline
-    def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: VariableDeclaration*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: VariableDeclaration*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

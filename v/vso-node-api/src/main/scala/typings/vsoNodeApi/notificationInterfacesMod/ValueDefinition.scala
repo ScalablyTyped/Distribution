@@ -24,25 +24,19 @@ trait ValueDefinition extends StObject {
 }
 object ValueDefinition {
   
-  @scala.inline
-  def apply(dataSource: js.Array[InputValue], endPoint: String, resultTemplate: String): ValueDefinition = {
+  inline def apply(dataSource: js.Array[InputValue], endPoint: String, resultTemplate: String): ValueDefinition = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], endPoint = endPoint.asInstanceOf[js.Any], resultTemplate = resultTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueDefinition]
   }
   
-  @scala.inline
-  implicit class ValueDefinitionMutableBuilder[Self <: ValueDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDefinition](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Array[InputValue]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[InputValue]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceVarargs(value: InputValue*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: InputValue*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+    inline def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultTemplate(value: String): Self = StObject.set(x, "resultTemplate", value.asInstanceOf[js.Any])
+    inline def setResultTemplate(value: String): Self = StObject.set(x, "resultTemplate", value.asInstanceOf[js.Any])
   }
 }

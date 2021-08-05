@@ -15,20 +15,16 @@ trait SliderSetValueAction
 }
 object SliderSetValueAction {
   
-  @scala.inline
-  def apply(value: Double): SliderSetValueAction = {
+  inline def apply(value: Double): SliderSetValueAction = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("setValue")
     __obj.asInstanceOf[SliderSetValueAction]
   }
   
-  @scala.inline
-  implicit class SliderSetValueActionMutableBuilder[Self <: SliderSetValueAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderSetValueAction](x: Self) {
     
-    @scala.inline
-    def setType(value: setValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: setValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

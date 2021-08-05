@@ -23,31 +23,23 @@ trait ComplianceSummary extends StObject {
 }
 object ComplianceSummary {
   
-  @scala.inline
-  def apply(): ComplianceSummary = {
+  inline def apply(): ComplianceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceSummary]
   }
   
-  @scala.inline
-  implicit class ComplianceSummaryMutableBuilder[Self <: ComplianceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceSummary](x: Self) {
     
-    @scala.inline
-    def setComplianceSummaryTimestamp(value: Date): Self = StObject.set(x, "ComplianceSummaryTimestamp", value.asInstanceOf[js.Any])
+    inline def setComplianceSummaryTimestamp(value: Date): Self = StObject.set(x, "ComplianceSummaryTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceSummaryTimestampUndefined: Self = StObject.set(x, "ComplianceSummaryTimestamp", js.undefined)
+    inline def setComplianceSummaryTimestampUndefined: Self = StObject.set(x, "ComplianceSummaryTimestamp", js.undefined)
     
-    @scala.inline
-    def setCompliantResourceCount(value: ComplianceContributorCount): Self = StObject.set(x, "CompliantResourceCount", value.asInstanceOf[js.Any])
+    inline def setCompliantResourceCount(value: ComplianceContributorCount): Self = StObject.set(x, "CompliantResourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliantResourceCountUndefined: Self = StObject.set(x, "CompliantResourceCount", js.undefined)
+    inline def setCompliantResourceCountUndefined: Self = StObject.set(x, "CompliantResourceCount", js.undefined)
     
-    @scala.inline
-    def setNonCompliantResourceCount(value: ComplianceContributorCount): Self = StObject.set(x, "NonCompliantResourceCount", value.asInstanceOf[js.Any])
+    inline def setNonCompliantResourceCount(value: ComplianceContributorCount): Self = StObject.set(x, "NonCompliantResourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantResourceCountUndefined: Self = StObject.set(x, "NonCompliantResourceCount", js.undefined)
+    inline def setNonCompliantResourceCountUndefined: Self = StObject.set(x, "NonCompliantResourceCount", js.undefined)
   }
 }

@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoVerticalAnchor extends StObject
 object MsoVerticalAnchor {
   
-  @scala.inline
-  def msoAnchorBottom: `4` = 4.asInstanceOf[`4`]
+  inline def msoAnchorBottom: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoAnchorBottomBaseLine: `5` = 5.asInstanceOf[`5`]
+  inline def msoAnchorBottomBaseLine: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoAnchorMiddle: `3` = 3.asInstanceOf[`3`]
+  inline def msoAnchorMiddle: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoAnchorTop: `1` = 1.asInstanceOf[`1`]
+  inline def msoAnchorTop: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoAnchorTopBaseline: `2` = 2.asInstanceOf[`2`]
+  inline def msoAnchorTopBaseline: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoVerticalAnchorMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoVerticalAnchorMixed: `-2` = -2.asInstanceOf[`-2`]
 }

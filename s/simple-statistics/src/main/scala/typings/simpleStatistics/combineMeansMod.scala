@@ -10,6 +10,5 @@ object combineMeansMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(mean1: Double, n1: Double, mean2: Double, n2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean1.asInstanceOf[js.Any], n1.asInstanceOf[js.Any], mean2.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(mean1: Double, n1: Double, mean2: Double, n2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean1.asInstanceOf[js.Any], n1.asInstanceOf[js.Any], mean2.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

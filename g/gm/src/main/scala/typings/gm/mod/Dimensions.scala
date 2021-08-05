@@ -12,19 +12,15 @@ trait Dimensions extends StObject {
 }
 object Dimensions {
   
-  @scala.inline
-  def apply(height: Double, width: Double): Dimensions = {
+  inline def apply(height: Double, width: Double): Dimensions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimensions]
   }
   
-  @scala.inline
-  implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+  extension [Self <: Dimensions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

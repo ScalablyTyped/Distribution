@@ -23,34 +23,25 @@ trait StartSoterAuthenticationOptions
 }
 object StartSoterAuthenticationOptions {
   
-  @scala.inline
-  def apply(challenge: String, requestAuthModes: js.Array[AuthModes]): StartSoterAuthenticationOptions = {
+  inline def apply(challenge: String, requestAuthModes: js.Array[AuthModes]): StartSoterAuthenticationOptions = {
     val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], requestAuthModes = requestAuthModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSoterAuthenticationOptions]
   }
   
-  @scala.inline
-  implicit class StartSoterAuthenticationOptionsMutableBuilder[Self <: StartSoterAuthenticationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartSoterAuthenticationOptions](x: Self) {
     
-    @scala.inline
-    def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
+    inline def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthContentUndefined: Self = StObject.set(x, "authContent", js.undefined)
+    inline def setAuthContentUndefined: Self = StObject.set(x, "authContent", js.undefined)
     
-    @scala.inline
-    def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+    inline def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAuthModes(value: js.Array[AuthModes]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
+    inline def setRequestAuthModes(value: js.Array[AuthModes]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAuthModesVarargs(value: AuthModes*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
+    inline def setRequestAuthModesVarargs(value: AuthModes*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ AuthMode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ AuthMode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

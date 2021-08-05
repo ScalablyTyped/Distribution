@@ -23,25 +23,19 @@ trait SchemaLoginDetails extends StObject {
 }
 object SchemaLoginDetails {
   
-  @scala.inline
-  def apply(): SchemaLoginDetails = {
+  inline def apply(): SchemaLoginDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLoginDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLoginDetailsMutableBuilder[Self <: SchemaLoginDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLoginDetails](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setLoginTime(value: String): Self = StObject.set(x, "loginTime", value.asInstanceOf[js.Any])
+    inline def setLoginTime(value: String): Self = StObject.set(x, "loginTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginTimeUndefined: Self = StObject.set(x, "loginTime", js.undefined)
+    inline def setLoginTimeUndefined: Self = StObject.set(x, "loginTime", js.undefined)
   }
 }

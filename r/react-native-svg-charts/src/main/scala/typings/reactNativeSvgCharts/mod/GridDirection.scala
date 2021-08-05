@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GridDirection extends StObject
 object GridDirection {
   
-  @scala.inline
-  def BOTH: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH = "BOTH".asInstanceOf[typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH]
+  inline def BOTH: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH = "BOTH".asInstanceOf[typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH]
   
-  @scala.inline
-  def HORIZONTAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL = "HORIZONTAL".asInstanceOf[typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL]
+  inline def HORIZONTAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL = "HORIZONTAL".asInstanceOf[typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL]
   
-  @scala.inline
-  def VERTICAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL = "VERTICAL".asInstanceOf[typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL]
+  inline def VERTICAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL = "VERTICAL".asInstanceOf[typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL]
 }

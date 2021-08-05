@@ -21,17 +21,14 @@ object mod {
   @js.native
   val BATCH: BatchActionType = js.native
   
-  @scala.inline
-  def batchActions(actions: js.Array[AnyAction]): BatchAction = ^.asInstanceOf[js.Dynamic].applyDynamic("batchActions")(actions.asInstanceOf[js.Any]).asInstanceOf[BatchAction]
-  @scala.inline
-  def batchActions(actions: js.Array[AnyAction], `type`: String): BatchAction = (^.asInstanceOf[js.Dynamic].applyDynamic("batchActions")(actions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BatchAction]
+  inline def batchActions(actions: js.Array[AnyAction]): BatchAction = ^.asInstanceOf[js.Dynamic].applyDynamic("batchActions")(actions.asInstanceOf[js.Any]).asInstanceOf[BatchAction]
+  inline def batchActions(actions: js.Array[AnyAction], `type`: String): BatchAction = (^.asInstanceOf[js.Dynamic].applyDynamic("batchActions")(actions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BatchAction]
   
   @JSImport("redux-batched-actions", "batchDispatchMiddleware")
   @js.native
   val batchDispatchMiddleware: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = js.native
   
-  @scala.inline
-  def enableBatching[S](reduce: Reducer[S, AnyAction]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBatching")(reduce.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
+  inline def enableBatching[S](reduce: Reducer[S, AnyAction]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBatching")(reduce.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
   
   trait BatchAction extends StObject {
     
@@ -43,27 +40,21 @@ object mod {
   }
   object BatchAction {
     
-    @scala.inline
-    def apply(meta: Batch, payload: js.Array[Action[js.Any]], `type`: BatchActionType): BatchAction = {
+    inline def apply(meta: Batch, payload: js.Array[Action[js.Any]], `type`: BatchActionType): BatchAction = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchAction]
     }
     
-    @scala.inline
-    implicit class BatchActionMutableBuilder[Self <: BatchAction] (val x: Self) extends AnyVal {
+    extension [Self <: BatchAction](x: Self) {
       
-      @scala.inline
-      def setMeta(value: Batch): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Batch): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Array[Action[js.Any]]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Array[Action[js.Any]]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadVarargs(value: Action[js.Any]*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: Action[js.Any]*): Self = StObject.set(x, "payload", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: BatchActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BatchActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

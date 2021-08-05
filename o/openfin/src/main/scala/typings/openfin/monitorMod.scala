@@ -17,20 +17,16 @@ object monitorMod {
   }
   object DipRect {
     
-    @scala.inline
-    def apply(bottom: Double, dipRect: Rect, left: Double, right: Double, scaledRect: Rect, top: Double): DipRect = {
+    inline def apply(bottom: Double, dipRect: Rect, left: Double, right: Double, scaledRect: Rect, top: Double): DipRect = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], dipRect = dipRect.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], scaledRect = scaledRect.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[DipRect]
     }
     
-    @scala.inline
-    implicit class DipRectMutableBuilder[Self <: DipRect] (val x: Self) extends AnyVal {
+    extension [Self <: DipRect](x: Self) {
       
-      @scala.inline
-      def setDipRect(value: Rect): Self = StObject.set(x, "dipRect", value.asInstanceOf[js.Any])
+      inline def setDipRect(value: Rect): Self = StObject.set(x, "dipRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaledRect(value: Rect): Self = StObject.set(x, "scaledRect", value.asInstanceOf[js.Any])
+      inline def setScaledRect(value: Rect): Self = StObject.set(x, "scaledRect", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +38,16 @@ object monitorMod {
   }
   object DipScaleRects {
     
-    @scala.inline
-    def apply(dipRect: Rect, scaledRect: Rect): DipScaleRects = {
+    inline def apply(dipRect: Rect, scaledRect: Rect): DipScaleRects = {
       val __obj = js.Dynamic.literal(dipRect = dipRect.asInstanceOf[js.Any], scaledRect = scaledRect.asInstanceOf[js.Any])
       __obj.asInstanceOf[DipScaleRects]
     }
     
-    @scala.inline
-    implicit class DipScaleRectsMutableBuilder[Self <: DipScaleRects] (val x: Self) extends AnyVal {
+    extension [Self <: DipScaleRects](x: Self) {
       
-      @scala.inline
-      def setDipRect(value: Rect): Self = StObject.set(x, "dipRect", value.asInstanceOf[js.Any])
+      inline def setDipRect(value: Rect): Self = StObject.set(x, "dipRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaledRect(value: Rect): Self = StObject.set(x, "scaledRect", value.asInstanceOf[js.Any])
+      inline def setScaledRect(value: Rect): Self = StObject.set(x, "scaledRect", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +73,7 @@ object monitorMod {
   }
   object MonitorDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       available: DipScaleRects,
       availableRect: Rect,
       deviceId: String,
@@ -97,35 +88,25 @@ object monitorMod {
       __obj.asInstanceOf[MonitorDetails]
     }
     
-    @scala.inline
-    implicit class MonitorDetailsMutableBuilder[Self <: MonitorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: MonitorDetails](x: Self) {
       
-      @scala.inline
-      def setAvailable(value: DipScaleRects): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+      inline def setAvailable(value: DipScaleRects): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableRect(value: Rect): Self = StObject.set(x, "availableRect", value.asInstanceOf[js.Any])
+      inline def setAvailableRect(value: Rect): Self = StObject.set(x, "availableRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+      inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayDeviceActive(value: Boolean): Self = StObject.set(x, "displayDeviceActive", value.asInstanceOf[js.Any])
+      inline def setDisplayDeviceActive(value: Boolean): Self = StObject.set(x, "displayDeviceActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpi(value: Point): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+      inline def setDpi(value: Point): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitor(value: DipScaleRects): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+      inline def setMonitor(value: DipScaleRects): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitorRect(value: Rect): Self = StObject.set(x, "monitorRect", value.asInstanceOf[js.Any])
+      inline def setMonitorRect(value: Rect): Self = StObject.set(x, "monitorRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,8 +128,7 @@ object monitorMod {
   }
   object MonitorInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deviceScaleFactor: Double,
       dpi: Point,
       nonPrimaryMonitors: js.Array[MonitorDetails],
@@ -161,32 +141,23 @@ object monitorMod {
       __obj.asInstanceOf[MonitorInfo]
     }
     
-    @scala.inline
-    implicit class MonitorInfoMutableBuilder[Self <: MonitorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MonitorInfo](x: Self) {
       
-      @scala.inline
-      def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+      inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpi(value: Point): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+      inline def setDpi(value: Point): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonPrimaryMonitors(value: js.Array[MonitorDetails]): Self = StObject.set(x, "nonPrimaryMonitors", value.asInstanceOf[js.Any])
+      inline def setNonPrimaryMonitors(value: js.Array[MonitorDetails]): Self = StObject.set(x, "nonPrimaryMonitors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonPrimaryMonitorsVarargs(value: MonitorDetails*): Self = StObject.set(x, "nonPrimaryMonitors", js.Array(value :_*))
+      inline def setNonPrimaryMonitorsVarargs(value: MonitorDetails*): Self = StObject.set(x, "nonPrimaryMonitors", js.Array(value :_*))
       
-      @scala.inline
-      def setPrimaryMonitor(value: MonitorDetails): Self = StObject.set(x, "primaryMonitor", value.asInstanceOf[js.Any])
+      inline def setPrimaryMonitor(value: MonitorDetails): Self = StObject.set(x, "primaryMonitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskBar(value: TaskBar): Self = StObject.set(x, "taskBar", value.asInstanceOf[js.Any])
+      inline def setTaskBar(value: TaskBar): Self = StObject.set(x, "taskBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualScreen(value: DipRect): Self = StObject.set(x, "virtualScreen", value.asInstanceOf[js.Any])
+      inline def setVirtualScreen(value: DipRect): Self = StObject.set(x, "virtualScreen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,26 +173,20 @@ object monitorMod {
   }
   object Rect {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Rect = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Rect = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,20 +200,16 @@ object monitorMod {
   }
   object TaskBar {
     
-    @scala.inline
-    def apply(dipRect: Rect, edge: String, rect: Rect, scaledRect: Rect): TaskBar = {
+    inline def apply(dipRect: Rect, edge: String, rect: Rect, scaledRect: Rect): TaskBar = {
       val __obj = js.Dynamic.literal(dipRect = dipRect.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], scaledRect = scaledRect.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskBar]
     }
     
-    @scala.inline
-    implicit class TaskBarMutableBuilder[Self <: TaskBar] (val x: Self) extends AnyVal {
+    extension [Self <: TaskBar](x: Self) {
       
-      @scala.inline
-      def setEdge(value: String): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: String): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     }
   }
 }

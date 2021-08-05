@@ -43,49 +43,35 @@ trait GoogleActionsOrdersV3PriceAttribute extends StObject {
 }
 object GoogleActionsOrdersV3PriceAttribute {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3PriceAttribute = {
+  inline def apply(): GoogleActionsOrdersV3PriceAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3PriceAttribute]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3PriceAttributeMutableBuilder[Self <: GoogleActionsOrdersV3PriceAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3PriceAttribute](x: Self) {
     
-    @scala.inline
-    def setAmount(value: GoogleActionsOrdersV3Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: GoogleActionsOrdersV3Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountMillipercentage(value: Double): Self = StObject.set(x, "amountMillipercentage", value.asInstanceOf[js.Any])
+    inline def setAmountMillipercentage(value: Double): Self = StObject.set(x, "amountMillipercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountMillipercentageUndefined: Self = StObject.set(x, "amountMillipercentage", js.undefined)
+    inline def setAmountMillipercentageUndefined: Self = StObject.set(x, "amountMillipercentage", js.undefined)
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setState(value: GoogleActionsOrdersV3PriceAttributeState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: GoogleActionsOrdersV3PriceAttributeState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTaxIncluded(value: Boolean): Self = StObject.set(x, "taxIncluded", value.asInstanceOf[js.Any])
+    inline def setTaxIncluded(value: Boolean): Self = StObject.set(x, "taxIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxIncludedUndefined: Self = StObject.set(x, "taxIncluded", js.undefined)
+    inline def setTaxIncludedUndefined: Self = StObject.set(x, "taxIncluded", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3PriceAttributeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3PriceAttributeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

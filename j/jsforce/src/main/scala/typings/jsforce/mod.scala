@@ -349,22 +349,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @scala.inline
-    def toDateLiteral(date: String): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
-    @scala.inline
-    def toDateLiteral(date: Double): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
-    @scala.inline
-    def toDateLiteral(date: Date): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    inline def toDateLiteral(date: String): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    inline def toDateLiteral(date: Double): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    inline def toDateLiteral(date: Date): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
     
-    @scala.inline
-    def toDateTimeLiteral(date: String): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
-    @scala.inline
-    def toDateTimeLiteral(date: Double): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
-    @scala.inline
-    def toDateTimeLiteral(date: Date): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    inline def toDateTimeLiteral(date: String): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    inline def toDateTimeLiteral(date: Double): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    inline def toDateTimeLiteral(date: Date): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
   }
   
   @JSImport("jsforce", "Streaming")

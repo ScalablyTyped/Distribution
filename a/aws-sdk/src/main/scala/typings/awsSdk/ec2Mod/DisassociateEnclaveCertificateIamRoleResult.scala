@@ -13,19 +13,15 @@ trait DisassociateEnclaveCertificateIamRoleResult extends StObject {
 }
 object DisassociateEnclaveCertificateIamRoleResult {
   
-  @scala.inline
-  def apply(): DisassociateEnclaveCertificateIamRoleResult = {
+  inline def apply(): DisassociateEnclaveCertificateIamRoleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateEnclaveCertificateIamRoleResult]
   }
   
-  @scala.inline
-  implicit class DisassociateEnclaveCertificateIamRoleResultMutableBuilder[Self <: DisassociateEnclaveCertificateIamRoleResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateEnclaveCertificateIamRoleResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

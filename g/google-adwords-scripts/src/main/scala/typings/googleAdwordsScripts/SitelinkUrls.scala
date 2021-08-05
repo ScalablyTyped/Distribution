@@ -15,8 +15,7 @@ trait SitelinkUrls
 }
 object SitelinkUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearMobileFinalUrl: () => Unit,
     getCustomParameters: () => js.Object,
     getFinalUrl: () => String,
@@ -31,10 +30,8 @@ object SitelinkUrls {
     __obj.asInstanceOf[SitelinkUrls]
   }
   
-  @scala.inline
-  implicit class SitelinkUrlsMutableBuilder[Self <: SitelinkUrls] (val x: Self) extends AnyVal {
+  extension [Self <: SitelinkUrls](x: Self) {
     
-    @scala.inline
-    def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
+    inline def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
   }
 }

@@ -24,7 +24,7 @@ class IonItemOption protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If `true`, the option will expand to take up the available width and cover any other options.
@@ -38,5 +38,5 @@ class IonItemOption protected ()
   /* CompleteClass */
   var `type`: submit | reset | button = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

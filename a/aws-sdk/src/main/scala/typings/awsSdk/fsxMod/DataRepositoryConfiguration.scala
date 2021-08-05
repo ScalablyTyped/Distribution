@@ -35,49 +35,35 @@ trait DataRepositoryConfiguration extends StObject {
 }
 object DataRepositoryConfiguration {
   
-  @scala.inline
-  def apply(): DataRepositoryConfiguration = {
+  inline def apply(): DataRepositoryConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataRepositoryConfiguration]
   }
   
-  @scala.inline
-  implicit class DataRepositoryConfigurationMutableBuilder[Self <: DataRepositoryConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DataRepositoryConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoImportPolicy(value: AutoImportPolicyType): Self = StObject.set(x, "AutoImportPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoImportPolicy(value: AutoImportPolicyType): Self = StObject.set(x, "AutoImportPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoImportPolicyUndefined: Self = StObject.set(x, "AutoImportPolicy", js.undefined)
+    inline def setAutoImportPolicyUndefined: Self = StObject.set(x, "AutoImportPolicy", js.undefined)
     
-    @scala.inline
-    def setExportPath(value: ArchivePath): Self = StObject.set(x, "ExportPath", value.asInstanceOf[js.Any])
+    inline def setExportPath(value: ArchivePath): Self = StObject.set(x, "ExportPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportPathUndefined: Self = StObject.set(x, "ExportPath", js.undefined)
+    inline def setExportPathUndefined: Self = StObject.set(x, "ExportPath", js.undefined)
     
-    @scala.inline
-    def setFailureDetails(value: DataRepositoryFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
+    inline def setFailureDetails(value: DataRepositoryFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
+    inline def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
-    @scala.inline
-    def setImportPath(value: ArchivePath): Self = StObject.set(x, "ImportPath", value.asInstanceOf[js.Any])
+    inline def setImportPath(value: ArchivePath): Self = StObject.set(x, "ImportPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportPathUndefined: Self = StObject.set(x, "ImportPath", js.undefined)
+    inline def setImportPathUndefined: Self = StObject.set(x, "ImportPath", js.undefined)
     
-    @scala.inline
-    def setImportedFileChunkSize(value: Megabytes): Self = StObject.set(x, "ImportedFileChunkSize", value.asInstanceOf[js.Any])
+    inline def setImportedFileChunkSize(value: Megabytes): Self = StObject.set(x, "ImportedFileChunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "ImportedFileChunkSize", js.undefined)
+    inline def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "ImportedFileChunkSize", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: DataRepositoryLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: DataRepositoryLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
   }
 }

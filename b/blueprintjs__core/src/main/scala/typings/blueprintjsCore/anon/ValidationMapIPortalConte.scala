@@ -17,21 +17,17 @@ trait ValidationMapIPortalConte extends StObject {
 }
 object ValidationMapIPortalConte {
   
-  @scala.inline
-  def apply(): ValidationMapIPortalConte = {
+  inline def apply(): ValidationMapIPortalConte = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationMapIPortalConte]
   }
   
-  @scala.inline
-  implicit class ValidationMapIPortalConteMutableBuilder[Self <: ValidationMapIPortalConte] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMapIPortalConte](x: Self) {
     
-    @scala.inline
-    def setBlueprintPortalClassName(
+    inline def setBlueprintPortalClassName(
       value: (/* props */ StringDictionary[js.Any], blueprintPortalClassName, /* componentName */ String, /* location */ String, /* propFullName */ String) => js.UndefOr[Error]
     ): Self = StObject.set(x, "blueprintPortalClassName", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBlueprintPortalClassNameUndefined: Self = StObject.set(x, "blueprintPortalClassName", js.undefined)
+    inline def setBlueprintPortalClassNameUndefined: Self = StObject.set(x, "blueprintPortalClassName", js.undefined)
   }
 }

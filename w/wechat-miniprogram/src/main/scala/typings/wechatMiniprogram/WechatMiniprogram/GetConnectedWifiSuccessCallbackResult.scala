@@ -15,19 +15,15 @@ trait GetConnectedWifiSuccessCallbackResult extends StObject {
 }
 object GetConnectedWifiSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, wifi: WifiInfo): GetConnectedWifiSuccessCallbackResult = {
+  inline def apply(errMsg: String, wifi: WifiInfo): GetConnectedWifiSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], wifi = wifi.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedWifiSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetConnectedWifiSuccessCallbackResultMutableBuilder[Self <: GetConnectedWifiSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectedWifiSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifi(value: WifiInfo): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+    inline def setWifi(value: WifiInfo): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
   }
 }

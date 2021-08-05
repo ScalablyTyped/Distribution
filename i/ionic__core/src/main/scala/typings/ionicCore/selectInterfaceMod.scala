@@ -12,17 +12,14 @@ object selectInterfaceMod {
   }
   object SelectChangeEventDetail {
     
-    @scala.inline
-    def apply[T](value: T): SelectChangeEventDetail[T] = {
+    inline def apply[T](value: T): SelectChangeEventDetail[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectChangeEventDetail[T]]
     }
     
-    @scala.inline
-    implicit class SelectChangeEventDetailMutableBuilder[Self <: SelectChangeEventDetail[?], T] (val x: Self & SelectChangeEventDetail[T]) extends AnyVal {
+    extension [Self <: SelectChangeEventDetail[?], T](x: Self & SelectChangeEventDetail[T]) {
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,13 +33,10 @@ object selectInterfaceMod {
   trait SelectInterface extends StObject
   object SelectInterface {
     
-    @scala.inline
-    def `action-sheet`: typings.ionicCore.ionicCoreStrings.`action-sheet` = "action-sheet".asInstanceOf[typings.ionicCore.ionicCoreStrings.`action-sheet`]
+    inline def `action-sheet`: typings.ionicCore.ionicCoreStrings.`action-sheet` = "action-sheet".asInstanceOf[typings.ionicCore.ionicCoreStrings.`action-sheet`]
     
-    @scala.inline
-    def alert: typings.ionicCore.ionicCoreStrings.alert = "alert".asInstanceOf[typings.ionicCore.ionicCoreStrings.alert]
+    inline def alert: typings.ionicCore.ionicCoreStrings.alert = "alert".asInstanceOf[typings.ionicCore.ionicCoreStrings.alert]
     
-    @scala.inline
-    def popover: typings.ionicCore.ionicCoreStrings.popover = "popover".asInstanceOf[typings.ionicCore.ionicCoreStrings.popover]
+    inline def popover: typings.ionicCore.ionicCoreStrings.popover = "popover".asInstanceOf[typings.ionicCore.ionicCoreStrings.popover]
   }
 }

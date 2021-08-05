@@ -23,27 +23,21 @@ object channelMod {
   }
   object ChannelEvent {
     
-    @scala.inline
-    def apply[Type](channelId: String, channelName: String, `type`: Type, uuid: String): ChannelEvent[Type] = {
+    inline def apply[Type](channelId: String, channelName: String, `type`: Type, uuid: String): ChannelEvent[Type] = {
       val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelName = channelName.asInstanceOf[js.Any], topic = "channel", uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEvent[Type]]
     }
     
-    @scala.inline
-    implicit class ChannelEventMutableBuilder[Self <: ChannelEvent[?], Type] (val x: Self & ChannelEvent[Type]) extends AnyVal {
+    extension [Self <: ChannelEvent[?], Type](x: Self & ChannelEvent[Type]) {
       
-      @scala.inline
-      def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+      inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -57,8 +51,7 @@ object channelMod {
   }
   object ChannelEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connected: ChannelEvent[connected],
       disconnected: ChannelEvent[disconnected],
       listenerRemoved: String,
@@ -68,14 +61,11 @@ object channelMod {
       __obj.asInstanceOf[ChannelEvents]
     }
     
-    @scala.inline
-    implicit class ChannelEventsMutableBuilder[Self <: ChannelEvents] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelEvents](x: Self) {
       
-      @scala.inline
-      def setConnected(value: ChannelEvent[connected]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: ChannelEvent[connected]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnected(value: ChannelEvent[disconnected]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
+      inline def setDisconnected(value: ChannelEvent[disconnected]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     }
   }
 }

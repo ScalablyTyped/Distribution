@@ -13,17 +13,14 @@ object reporterMod {
   }
   object Reporter {
     
-    @scala.inline
-    def apply[A](report: Validation[js.Any] => A): Reporter[A] = {
+    inline def apply[A](report: Validation[js.Any] => A): Reporter[A] = {
       val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
       __obj.asInstanceOf[Reporter[A]]
     }
     
-    @scala.inline
-    implicit class ReporterMutableBuilder[Self <: Reporter[?], A] (val x: Self & Reporter[A]) extends AnyVal {
+    extension [Self <: Reporter[?], A](x: Self & Reporter[A]) {
       
-      @scala.inline
-      def setReport(value: Validation[js.Any] => A): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+      inline def setReport(value: Validation[js.Any] => A): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }
   }
 }

@@ -13,19 +13,15 @@ trait FromId extends StObject {
 }
 object FromId {
   
-  @scala.inline
-  def apply(fromId: IdType, toId: IdType): FromId = {
+  inline def apply(fromId: IdType, toId: IdType): FromId = {
     val __obj = js.Dynamic.literal(fromId = fromId.asInstanceOf[js.Any], toId = toId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromId]
   }
   
-  @scala.inline
-  implicit class FromIdMutableBuilder[Self <: FromId] (val x: Self) extends AnyVal {
+  extension [Self <: FromId](x: Self) {
     
-    @scala.inline
-    def setFromId(value: IdType): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+    inline def setFromId(value: IdType): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToId(value: IdType): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+    inline def setToId(value: IdType): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
   }
 }

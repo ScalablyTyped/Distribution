@@ -74,76 +74,53 @@ trait IInvoiceUpcomingOptions
 }
 object IInvoiceUpcomingOptions {
   
-  @scala.inline
-  def apply(): IInvoiceUpcomingOptions = {
+  inline def apply(): IInvoiceUpcomingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInvoiceUpcomingOptions]
   }
   
-  @scala.inline
-  implicit class IInvoiceUpcomingOptionsMutableBuilder[Self <: IInvoiceUpcomingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IInvoiceUpcomingOptions](x: Self) {
     
-    @scala.inline
-    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+    inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+    inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setSubscription_cancel_at_period_end(value: Boolean): Self = StObject.set(x, "subscription_cancel_at_period_end", value.asInstanceOf[js.Any])
+    inline def setSubscription_cancel_at_period_end(value: Boolean): Self = StObject.set(x, "subscription_cancel_at_period_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_cancel_at_period_endUndefined: Self = StObject.set(x, "subscription_cancel_at_period_end", js.undefined)
+    inline def setSubscription_cancel_at_period_endUndefined: Self = StObject.set(x, "subscription_cancel_at_period_end", js.undefined)
     
-    @scala.inline
-    def setSubscription_items(value: js.Array[ISubscriptionUpdateItem]): Self = StObject.set(x, "subscription_items", value.asInstanceOf[js.Any])
+    inline def setSubscription_items(value: js.Array[ISubscriptionUpdateItem]): Self = StObject.set(x, "subscription_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_itemsUndefined: Self = StObject.set(x, "subscription_items", js.undefined)
+    inline def setSubscription_itemsUndefined: Self = StObject.set(x, "subscription_items", js.undefined)
     
-    @scala.inline
-    def setSubscription_itemsVarargs(value: ISubscriptionUpdateItem*): Self = StObject.set(x, "subscription_items", js.Array(value :_*))
+    inline def setSubscription_itemsVarargs(value: ISubscriptionUpdateItem*): Self = StObject.set(x, "subscription_items", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscription_plan(value: String): Self = StObject.set(x, "subscription_plan", value.asInstanceOf[js.Any])
+    inline def setSubscription_plan(value: String): Self = StObject.set(x, "subscription_plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_planUndefined: Self = StObject.set(x, "subscription_plan", js.undefined)
+    inline def setSubscription_planUndefined: Self = StObject.set(x, "subscription_plan", js.undefined)
     
-    @scala.inline
-    def setSubscription_prorate(value: Boolean): Self = StObject.set(x, "subscription_prorate", value.asInstanceOf[js.Any])
+    inline def setSubscription_prorate(value: Boolean): Self = StObject.set(x, "subscription_prorate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_prorateUndefined: Self = StObject.set(x, "subscription_prorate", js.undefined)
+    inline def setSubscription_prorateUndefined: Self = StObject.set(x, "subscription_prorate", js.undefined)
     
-    @scala.inline
-    def setSubscription_proration_date(value: Double): Self = StObject.set(x, "subscription_proration_date", value.asInstanceOf[js.Any])
+    inline def setSubscription_proration_date(value: Double): Self = StObject.set(x, "subscription_proration_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_proration_dateUndefined: Self = StObject.set(x, "subscription_proration_date", js.undefined)
+    inline def setSubscription_proration_dateUndefined: Self = StObject.set(x, "subscription_proration_date", js.undefined)
     
-    @scala.inline
-    def setSubscription_quantity(value: Double): Self = StObject.set(x, "subscription_quantity", value.asInstanceOf[js.Any])
+    inline def setSubscription_quantity(value: Double): Self = StObject.set(x, "subscription_quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_quantityUndefined: Self = StObject.set(x, "subscription_quantity", js.undefined)
+    inline def setSubscription_quantityUndefined: Self = StObject.set(x, "subscription_quantity", js.undefined)
     
-    @scala.inline
-    def setSubscription_trial_end(value: Double): Self = StObject.set(x, "subscription_trial_end", value.asInstanceOf[js.Any])
+    inline def setSubscription_trial_end(value: Double): Self = StObject.set(x, "subscription_trial_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_trial_endUndefined: Self = StObject.set(x, "subscription_trial_end", js.undefined)
+    inline def setSubscription_trial_endUndefined: Self = StObject.set(x, "subscription_trial_end", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait CreateSolutionVersionRequest extends StObject {
 }
 object CreateSolutionVersionRequest {
   
-  @scala.inline
-  def apply(solutionArn: Arn): CreateSolutionVersionRequest = {
+  inline def apply(solutionArn: Arn): CreateSolutionVersionRequest = {
     val __obj = js.Dynamic.literal(solutionArn = solutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSolutionVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSolutionVersionRequestMutableBuilder[Self <: CreateSolutionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSolutionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingMode(value: TrainingMode): Self = StObject.set(x, "trainingMode", value.asInstanceOf[js.Any])
+    inline def setTrainingMode(value: TrainingMode): Self = StObject.set(x, "trainingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingModeUndefined: Self = StObject.set(x, "trainingMode", js.undefined)
+    inline def setTrainingModeUndefined: Self = StObject.set(x, "trainingMode", js.undefined)
   }
 }

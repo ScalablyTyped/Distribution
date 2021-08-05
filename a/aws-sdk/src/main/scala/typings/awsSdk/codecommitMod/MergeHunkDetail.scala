@@ -23,31 +23,23 @@ trait MergeHunkDetail extends StObject {
 }
 object MergeHunkDetail {
   
-  @scala.inline
-  def apply(): MergeHunkDetail = {
+  inline def apply(): MergeHunkDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeHunkDetail]
   }
   
-  @scala.inline
-  implicit class MergeHunkDetailMutableBuilder[Self <: MergeHunkDetail] (val x: Self) extends AnyVal {
+  extension [Self <: MergeHunkDetail](x: Self) {
     
-    @scala.inline
-    def setEndLine(value: LineNumber): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: LineNumber): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
+    inline def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
-    @scala.inline
-    def setHunkContent(value: HunkContent): Self = StObject.set(x, "hunkContent", value.asInstanceOf[js.Any])
+    inline def setHunkContent(value: HunkContent): Self = StObject.set(x, "hunkContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHunkContentUndefined: Self = StObject.set(x, "hunkContent", js.undefined)
+    inline def setHunkContentUndefined: Self = StObject.set(x, "hunkContent", js.undefined)
     
-    @scala.inline
-    def setStartLine(value: LineNumber): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: LineNumber): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
+    inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
   }
 }

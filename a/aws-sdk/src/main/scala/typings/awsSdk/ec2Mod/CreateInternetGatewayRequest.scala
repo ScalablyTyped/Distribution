@@ -18,28 +18,21 @@ trait CreateInternetGatewayRequest extends StObject {
 }
 object CreateInternetGatewayRequest {
   
-  @scala.inline
-  def apply(): CreateInternetGatewayRequest = {
+  inline def apply(): CreateInternetGatewayRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInternetGatewayRequest]
   }
   
-  @scala.inline
-  implicit class CreateInternetGatewayRequestMutableBuilder[Self <: CreateInternetGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInternetGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
   }
 }

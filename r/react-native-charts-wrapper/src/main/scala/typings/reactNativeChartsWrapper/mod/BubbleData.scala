@@ -10,22 +10,17 @@ trait BubbleData extends StObject {
 }
 object BubbleData {
   
-  @scala.inline
-  def apply(): BubbleData = {
+  inline def apply(): BubbleData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BubbleData]
   }
   
-  @scala.inline
-  implicit class BubbleDataMutableBuilder[Self <: BubbleData] (val x: Self) extends AnyVal {
+  extension [Self <: BubbleData](x: Self) {
     
-    @scala.inline
-    def setDataSets(value: js.Array[BubbleDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[BubbleDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+    inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    @scala.inline
-    def setDataSetsVarargs(value: BubbleDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: BubbleDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

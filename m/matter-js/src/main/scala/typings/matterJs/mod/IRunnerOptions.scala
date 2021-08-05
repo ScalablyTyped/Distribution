@@ -38,31 +38,23 @@ trait IRunnerOptions extends StObject {
 }
 object IRunnerOptions {
   
-  @scala.inline
-  def apply(): IRunnerOptions = {
+  inline def apply(): IRunnerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRunnerOptions]
   }
   
-  @scala.inline
-  implicit class IRunnerOptionsMutableBuilder[Self <: IRunnerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRunnerOptions](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
+    inline def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
   }
 }

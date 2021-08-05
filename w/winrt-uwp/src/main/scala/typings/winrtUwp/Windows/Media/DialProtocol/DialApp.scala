@@ -32,8 +32,7 @@ trait DialApp extends StObject {
 }
 object DialApp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appName: String,
     getAppStateAsync: () => IPromiseWithIAsyncOperation[DialAppStateDetails],
     requestLaunchAsync: String => IPromiseWithIAsyncOperation[DialAppLaunchResult],
@@ -43,19 +42,14 @@ object DialApp {
     __obj.asInstanceOf[DialApp]
   }
   
-  @scala.inline
-  implicit class DialAppMutableBuilder[Self <: DialApp] (val x: Self) extends AnyVal {
+  extension [Self <: DialApp](x: Self) {
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAppStateAsync(value: () => IPromiseWithIAsyncOperation[DialAppStateDetails]): Self = StObject.set(x, "getAppStateAsync", js.Any.fromFunction0(value))
+    inline def setGetAppStateAsync(value: () => IPromiseWithIAsyncOperation[DialAppStateDetails]): Self = StObject.set(x, "getAppStateAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestLaunchAsync(value: String => IPromiseWithIAsyncOperation[DialAppLaunchResult]): Self = StObject.set(x, "requestLaunchAsync", js.Any.fromFunction1(value))
+    inline def setRequestLaunchAsync(value: String => IPromiseWithIAsyncOperation[DialAppLaunchResult]): Self = StObject.set(x, "requestLaunchAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopAsync(value: () => IPromiseWithIAsyncOperation[DialAppStopResult]): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
+    inline def setStopAsync(value: () => IPromiseWithIAsyncOperation[DialAppStopResult]): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
   }
 }

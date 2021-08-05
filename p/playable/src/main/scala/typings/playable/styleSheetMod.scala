@@ -12,19 +12,19 @@ object styleSheetMod {
   @js.native
   class StyleSheet () extends StObject {
     
-    var _classNamesByModule: js.Any = js.native
+    /* private */ var _classNamesByModule: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _getModuleCSS: js.Any = js.native
+    /* private */ var _getModuleCSS: js.Any = js.native
     
-    var _getRuleCSS: js.Any = js.native
+    /* private */ var _getRuleCSS: js.Any = js.native
     
-    var _getRuleStyles: js.Any = js.native
+    /* private */ var _getRuleStyles: js.Any = js.native
     
-    var _rulesByModule: js.Any = js.native
+    /* private */ var _rulesByModule: js.Any = js.native
     
-    var _styleNode: js.Any = js.native
+    /* private */ var _styleNode: js.Any = js.native
     
     def attach(): Unit = js.native
     

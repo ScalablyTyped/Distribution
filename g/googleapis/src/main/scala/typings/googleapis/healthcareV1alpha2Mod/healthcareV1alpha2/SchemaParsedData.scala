@@ -13,22 +13,17 @@ trait SchemaParsedData extends StObject {
 }
 object SchemaParsedData {
   
-  @scala.inline
-  def apply(): SchemaParsedData = {
+  inline def apply(): SchemaParsedData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParsedData]
   }
   
-  @scala.inline
-  implicit class SchemaParsedDataMutableBuilder[Self <: SchemaParsedData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParsedData](x: Self) {
     
-    @scala.inline
-    def setSegments(value: js.Array[SchemaSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[SchemaSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: SchemaSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SchemaSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDispatcher(options: DispatcherOption): Dispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatcher")(options.asInstanceOf[js.Any]).asInstanceOf[Dispatcher]
+  inline def createDispatcher(options: DispatcherOption): Dispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatcher")(options.asInstanceOf[js.Any]).asInstanceOf[Dispatcher]
   
   @js.native
   trait Dispatcher extends StObject {
@@ -59,24 +58,19 @@ object mod {
   }
   object DispatcherError {
     
-    @scala.inline
-    def apply(message: String, meta: ActionName, `type`: String): DispatcherError = {
+    inline def apply(message: String, meta: ActionName, `type`: String): DispatcherError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DispatcherError]
     }
     
-    @scala.inline
-    implicit class DispatcherErrorMutableBuilder[Self <: DispatcherError] (val x: Self) extends AnyVal {
+    extension [Self <: DispatcherError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: ActionName): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: ActionName): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,8 +89,7 @@ object mod {
   }
   object DispatcherInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: () => DispatcherContext,
       getStore: FnCall,
       waitFor: (/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit]) => Unit
@@ -105,17 +98,13 @@ object mod {
       __obj.asInstanceOf[DispatcherInterface]
     }
     
-    @scala.inline
-    implicit class DispatcherInterfaceMutableBuilder[Self <: DispatcherInterface] (val x: Self) extends AnyVal {
+    extension [Self <: DispatcherInterface](x: Self) {
       
-      @scala.inline
-      def setGetContext(value: () => DispatcherContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+      inline def setGetContext(value: () => DispatcherContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStore(value: FnCall): Self = StObject.set(x, "getStore", value.asInstanceOf[js.Any])
+      inline def setGetStore(value: FnCall): Self = StObject.set(x, "getStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitFor(value: (/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction2(value))
+      inline def setWaitFor(value: (/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction2(value))
     }
   }
   
@@ -127,29 +116,22 @@ object mod {
   }
   object DispatcherOption {
     
-    @scala.inline
-    def apply(): DispatcherOption = {
+    inline def apply(): DispatcherOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DispatcherOption]
     }
     
-    @scala.inline
-    implicit class DispatcherOptionMutableBuilder[Self <: DispatcherOption] (val x: Self) extends AnyVal {
+    extension [Self <: DispatcherOption](x: Self) {
       
-      @scala.inline
-      def setErrorHandler(value: (/* e */ DispatcherError, /* context */ DispatcherContext) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+      inline def setErrorHandler(value: (/* e */ DispatcherError, /* context */ DispatcherContext) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setStores(value: js.Array[StoreClass]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: js.Array[StoreClass]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
+      inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
       
-      @scala.inline
-      def setStoresVarargs(value: StoreClass*): Self = StObject.set(x, "stores", js.Array(value :_*))
+      inline def setStoresVarargs(value: StoreClass*): Self = StObject.set(x, "stores", js.Array(value :_*))
     }
   }
   
@@ -159,17 +141,14 @@ object mod {
   }
   object DispatcherState {
     
-    @scala.inline
-    def apply(stores: StringDictionary[js.Any]): DispatcherState = {
+    inline def apply(stores: StringDictionary[js.Any]): DispatcherState = {
       val __obj = js.Dynamic.literal(stores = stores.asInstanceOf[js.Any])
       __obj.asInstanceOf[DispatcherState]
     }
     
-    @scala.inline
-    implicit class DispatcherStateMutableBuilder[Self <: DispatcherState] (val x: Self) extends AnyVal {
+    extension [Self <: DispatcherState](x: Self) {
       
-      @scala.inline
-      def setStores(value: StringDictionary[js.Any]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: StringDictionary[js.Any]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
     }
   }
   

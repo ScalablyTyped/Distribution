@@ -18,19 +18,15 @@ trait StopJobRunRequest extends StObject {
 }
 object StopJobRunRequest {
   
-  @scala.inline
-  def apply(Name: JobName, RunId: JobRunId): StopJobRunRequest = {
+  inline def apply(Name: JobName, RunId: JobRunId): StopJobRunRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopJobRunRequest]
   }
   
-  @scala.inline
-  implicit class StopJobRunRequestMutableBuilder[Self <: StopJobRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopJobRunRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

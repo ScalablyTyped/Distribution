@@ -48,55 +48,39 @@ trait ListTablesRequest extends StObject {
 }
 object ListTablesRequest {
   
-  @scala.inline
-  def apply(ClusterIdentifier: Location, Database: String): ListTablesRequest = {
+  inline def apply(ClusterIdentifier: Location, Database: String): ListTablesRequest = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], Database = Database.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTablesRequest]
   }
   
-  @scala.inline
-  implicit class ListTablesRequestMutableBuilder[Self <: ListTablesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTablesRequest](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaPattern(value: String): Self = StObject.set(x, "SchemaPattern", value.asInstanceOf[js.Any])
+    inline def setSchemaPattern(value: String): Self = StObject.set(x, "SchemaPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaPatternUndefined: Self = StObject.set(x, "SchemaPattern", js.undefined)
+    inline def setSchemaPatternUndefined: Self = StObject.set(x, "SchemaPattern", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
-    @scala.inline
-    def setTablePattern(value: String): Self = StObject.set(x, "TablePattern", value.asInstanceOf[js.Any])
+    inline def setTablePattern(value: String): Self = StObject.set(x, "TablePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablePatternUndefined: Self = StObject.set(x, "TablePattern", js.undefined)
+    inline def setTablePatternUndefined: Self = StObject.set(x, "TablePattern", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object editingItemStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(prop: IEditingSelectedPeopleItemStylesProps): IEditingSelectedPeopleItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(prop.asInstanceOf[js.Any]).asInstanceOf[IEditingSelectedPeopleItemStyles]
+  inline def getStyles(prop: IEditingSelectedPeopleItemStylesProps): IEditingSelectedPeopleItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(prop.asInstanceOf[js.Any]).asInstanceOf[IEditingSelectedPeopleItemStyles]
 }

@@ -17,19 +17,15 @@ trait SBObjectType
 }
 object SBObjectType {
   
-  @scala.inline
-  def apply(value: Record[String, SBType]): SBObjectType = {
+  inline def apply(value: Record[String, SBType]): SBObjectType = {
     val __obj = js.Dynamic.literal(name = "object", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SBObjectType]
   }
   
-  @scala.inline
-  implicit class SBObjectTypeMutableBuilder[Self <: SBObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: SBObjectType](x: Self) {
     
-    @scala.inline
-    def setName(value: `object`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `object`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Record[String, SBType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Record[String, SBType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

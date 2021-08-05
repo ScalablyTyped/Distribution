@@ -10,16 +10,13 @@ trait LoginInfo extends StObject {
 }
 object LoginInfo {
   
-  @scala.inline
-  def apply(name: String): LoginInfo = {
+  inline def apply(name: String): LoginInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginInfo]
   }
   
-  @scala.inline
-  implicit class LoginInfoMutableBuilder[Self <: LoginInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LoginInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

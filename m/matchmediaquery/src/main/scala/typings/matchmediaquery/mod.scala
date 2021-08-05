@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(query: String): Mql = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[Mql]
-  @scala.inline
-  def apply(query: String, values: Unit, forceStatic: Boolean): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], forceStatic.asInstanceOf[js.Any])).asInstanceOf[Mql]
-  @scala.inline
-  def apply(query: String, values: PartialMediaValues): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Mql]
-  @scala.inline
-  def apply(query: String, values: PartialMediaValues, forceStatic: Boolean): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], forceStatic.asInstanceOf[js.Any])).asInstanceOf[Mql]
+  inline def apply(query: String): Mql = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[Mql]
+  inline def apply(query: String, values: Unit, forceStatic: Boolean): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], forceStatic.asInstanceOf[js.Any])).asInstanceOf[Mql]
+  inline def apply(query: String, values: PartialMediaValues): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Mql]
+  inline def apply(query: String, values: PartialMediaValues, forceStatic: Boolean): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], forceStatic.asInstanceOf[js.Any])).asInstanceOf[Mql]
   
   @JSImport("matchmediaquery", JSImport.Namespace)
   @js.native
@@ -53,8 +49,7 @@ object mod {
   }
   object MediaValues {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `aspect-ratio`: js.Any,
       color: js.Any,
       `color-index`: js.Any,
@@ -80,50 +75,35 @@ object mod {
       __obj.asInstanceOf[MediaValues]
     }
     
-    @scala.inline
-    implicit class MediaValuesMutableBuilder[Self <: MediaValues] (val x: Self) extends AnyVal {
+    extension [Self <: MediaValues](x: Self) {
       
-      @scala.inline
-      def `setAspect-ratio`(value: js.Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
+      inline def `setAspect-ratio`(value: js.Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColor-index`(value: js.Any): Self = StObject.set(x, "color-index", value.asInstanceOf[js.Any])
+      inline def `setColor-index`(value: js.Any): Self = StObject.set(x, "color-index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDevice-aspect-ratio`(value: js.Any): Self = StObject.set(x, "device-aspect-ratio", value.asInstanceOf[js.Any])
+      inline def `setDevice-aspect-ratio`(value: js.Any): Self = StObject.set(x, "device-aspect-ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDevice-height`(value: js.Any): Self = StObject.set(x, "device-height", value.asInstanceOf[js.Any])
+      inline def `setDevice-height`(value: js.Any): Self = StObject.set(x, "device-height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDevice-width`(value: js.Any): Self = StObject.set(x, "device-width", value.asInstanceOf[js.Any])
+      inline def `setDevice-width`(value: js.Any): Self = StObject.set(x, "device-width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonochrome(value: js.Any): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+      inline def setMonochrome(value: js.Any): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolution(value: js.Any): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: js.Any): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScan(value: js.Any): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
+      inline def setScan(value: js.Any): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,26 +119,20 @@ object mod {
   }
   object Mql {
     
-    @scala.inline
-    def apply(dispose: () => Unit, matches: Boolean, media: String, update: Mql => Unit): Mql = {
+    inline def apply(dispose: () => Unit, matches: Boolean, media: String, update: Mql => Unit): Mql = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), matches = matches.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Mql]
     }
     
-    @scala.inline
-    implicit class MqlMutableBuilder[Self <: Mql] (val x: Self) extends AnyVal {
+    extension [Self <: Mql](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: Mql => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Mql => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

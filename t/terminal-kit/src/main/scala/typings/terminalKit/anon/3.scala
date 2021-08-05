@@ -11,16 +11,13 @@ trait `3` extends StObject {
 }
 object `3` {
   
-  @scala.inline
-  def apply(promise: js.Promise[GridMenuResponse]): `3` = {
+  inline def apply(promise: js.Promise[GridMenuResponse]): `3` = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
-  @scala.inline
-  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+  extension [Self <: `3`](x: Self) {
     
-    @scala.inline
-    def setPromise(value: js.Promise[GridMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[GridMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

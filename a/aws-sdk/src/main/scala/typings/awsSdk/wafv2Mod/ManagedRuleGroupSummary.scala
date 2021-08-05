@@ -23,31 +23,23 @@ trait ManagedRuleGroupSummary extends StObject {
 }
 object ManagedRuleGroupSummary {
   
-  @scala.inline
-  def apply(): ManagedRuleGroupSummary = {
+  inline def apply(): ManagedRuleGroupSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedRuleGroupSummary]
   }
   
-  @scala.inline
-  implicit class ManagedRuleGroupSummaryMutableBuilder[Self <: ManagedRuleGroupSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedRuleGroupSummary](x: Self) {
     
-    @scala.inline
-    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVendorName(value: VendorName): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
+    inline def setVendorName(value: VendorName): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorNameUndefined: Self = StObject.set(x, "VendorName", js.undefined)
+    inline def setVendorNameUndefined: Self = StObject.set(x, "VendorName", js.undefined)
   }
 }

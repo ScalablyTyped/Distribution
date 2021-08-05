@@ -15,25 +15,19 @@ trait DialogElse
 }
 object DialogElse {
   
-  @scala.inline
-  def apply(): DialogElse = {
+  inline def apply(): DialogElse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogElse]
   }
   
-  @scala.inline
-  implicit class DialogElseMutableBuilder[Self <: DialogElse] (val x: Self) extends AnyVal {
+  extension [Self <: DialogElse](x: Self) {
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
   }
 }

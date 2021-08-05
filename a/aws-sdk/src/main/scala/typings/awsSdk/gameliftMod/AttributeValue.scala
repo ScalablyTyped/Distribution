@@ -28,40 +28,29 @@ trait AttributeValue extends StObject {
 }
 object AttributeValue {
   
-  @scala.inline
-  def apply(): AttributeValue = {
+  inline def apply(): AttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeValue]
   }
   
-  @scala.inline
-  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeValue](x: Self) {
     
-    @scala.inline
-    def setN(value: DoubleObject): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: DoubleObject): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
-    @scala.inline
-    def setS(value: NonZeroAndMaxString): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+    inline def setS(value: NonZeroAndMaxString): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSDM(value: StringDoubleMap): Self = StObject.set(x, "SDM", value.asInstanceOf[js.Any])
+    inline def setSDM(value: StringDoubleMap): Self = StObject.set(x, "SDM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSDMUndefined: Self = StObject.set(x, "SDM", js.undefined)
+    inline def setSDMUndefined: Self = StObject.set(x, "SDM", js.undefined)
     
-    @scala.inline
-    def setSL(value: StringList): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
+    inline def setSL(value: StringList): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSLUndefined: Self = StObject.set(x, "SL", js.undefined)
+    inline def setSLUndefined: Self = StObject.set(x, "SL", js.undefined)
     
-    @scala.inline
-    def setSLVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "SL", js.Array(value :_*))
+    inline def setSLVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "SL", js.Array(value :_*))
     
-    @scala.inline
-    def setSUndefined: Self = StObject.set(x, "S", js.undefined)
+    inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }
 }

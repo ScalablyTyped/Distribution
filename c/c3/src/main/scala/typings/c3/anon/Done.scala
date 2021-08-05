@@ -14,28 +14,21 @@ trait Done extends StObject {
 }
 object Done {
   
-  @scala.inline
-  def apply(): Done = {
+  inline def apply(): Done = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Done]
   }
   
-  @scala.inline
-  implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
+  extension [Self <: Done](x: Self) {
     
-    @scala.inline
-    def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+    inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setIds(value: ArrayOrString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: ArrayOrString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

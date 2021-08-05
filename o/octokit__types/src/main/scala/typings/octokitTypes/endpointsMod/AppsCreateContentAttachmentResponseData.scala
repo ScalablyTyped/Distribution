@@ -14,22 +14,17 @@ trait AppsCreateContentAttachmentResponseData extends StObject {
 }
 object AppsCreateContentAttachmentResponseData {
   
-  @scala.inline
-  def apply(body: String, id: Double, title: String): AppsCreateContentAttachmentResponseData = {
+  inline def apply(body: String, id: Double, title: String): AppsCreateContentAttachmentResponseData = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsCreateContentAttachmentResponseData]
   }
   
-  @scala.inline
-  implicit class AppsCreateContentAttachmentResponseDataMutableBuilder[Self <: AppsCreateContentAttachmentResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: AppsCreateContentAttachmentResponseData](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

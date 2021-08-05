@@ -17,8 +17,7 @@ trait XAdjustmentListener
 }
 object XAdjustmentListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     adjustmentValueChanged: AdjustmentEvent => Unit,
     disposing: EventObject => Unit,
@@ -29,10 +28,8 @@ object XAdjustmentListener {
     __obj.asInstanceOf[XAdjustmentListener]
   }
   
-  @scala.inline
-  implicit class XAdjustmentListenerMutableBuilder[Self <: XAdjustmentListener] (val x: Self) extends AnyVal {
+  extension [Self <: XAdjustmentListener](x: Self) {
     
-    @scala.inline
-    def setAdjustmentValueChanged(value: AdjustmentEvent => Unit): Self = StObject.set(x, "adjustmentValueChanged", js.Any.fromFunction1(value))
+    inline def setAdjustmentValueChanged(value: AdjustmentEvent => Unit): Self = StObject.set(x, "adjustmentValueChanged", js.Any.fromFunction1(value))
   }
 }

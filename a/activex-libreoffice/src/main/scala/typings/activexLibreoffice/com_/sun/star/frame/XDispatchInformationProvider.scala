@@ -42,8 +42,7 @@ trait XDispatchInformationProvider
 }
 object XDispatchInformationProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedCommandGroups: SafeArray[Double],
     acquire: () => Unit,
     getConfigurableDispatchInformation: Double => SafeArray[DispatchInformation],
@@ -55,16 +54,12 @@ object XDispatchInformationProvider {
     __obj.asInstanceOf[XDispatchInformationProvider]
   }
   
-  @scala.inline
-  implicit class XDispatchInformationProviderMutableBuilder[Self <: XDispatchInformationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchInformationProvider](x: Self) {
     
-    @scala.inline
-    def setGetConfigurableDispatchInformation(value: Double => SafeArray[DispatchInformation]): Self = StObject.set(x, "getConfigurableDispatchInformation", js.Any.fromFunction1(value))
+    inline def setGetConfigurableDispatchInformation(value: Double => SafeArray[DispatchInformation]): Self = StObject.set(x, "getConfigurableDispatchInformation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSupportedCommandGroups(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedCommandGroups", js.Any.fromFunction0(value))
+    inline def setGetSupportedCommandGroups(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedCommandGroups", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSupportedCommandGroups(value: SafeArray[Double]): Self = StObject.set(x, "SupportedCommandGroups", value.asInstanceOf[js.Any])
+    inline def setSupportedCommandGroups(value: SafeArray[Double]): Self = StObject.set(x, "SupportedCommandGroups", value.asInstanceOf[js.Any])
   }
 }

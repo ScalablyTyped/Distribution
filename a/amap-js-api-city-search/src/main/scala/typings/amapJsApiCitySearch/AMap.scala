@@ -48,20 +48,16 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
+      inline def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
         val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
     
@@ -106,8 +102,7 @@ object AMap {
     }
     object SearchResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         adcode: String,
         bounds: Bounds,
         city: String,
@@ -121,32 +116,23 @@ object AMap {
         __obj.asInstanceOf[SearchResult]
       }
       
-      @scala.inline
-      implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResult](x: Self) {
         
-        @scala.inline
-        def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+        inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfocode(value: String): Self = StObject.set(x, "infocode", value.asInstanceOf[js.Any])
+        inline def setInfocode(value: String): Self = StObject.set(x, "infocode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+        inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRectangle(value: String): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+        inline def setRectangle(value: String): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -158,14 +144,11 @@ object AMap {
     trait SearchStatus extends StObject
     object SearchStatus {
       
-      @scala.inline
-      def complete: typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.complete]
+      inline def complete: typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.complete]
       
-      @scala.inline
-      def error: typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error = "error".asInstanceOf[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error]
+      inline def error: typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error = "error".asInstanceOf[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.error]
       
-      @scala.inline
-      def no_data: typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.no_data]
+      inline def no_data: typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiCitySearch.amapJsApiCitySearchStrings.no_data]
     }
   }
 }

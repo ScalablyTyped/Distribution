@@ -18,28 +18,21 @@ trait InstallationMediaMessage extends StObject {
 }
 object InstallationMediaMessage {
   
-  @scala.inline
-  def apply(): InstallationMediaMessage = {
+  inline def apply(): InstallationMediaMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstallationMediaMessage]
   }
   
-  @scala.inline
-  implicit class InstallationMediaMessageMutableBuilder[Self <: InstallationMediaMessage] (val x: Self) extends AnyVal {
+  extension [Self <: InstallationMediaMessage](x: Self) {
     
-    @scala.inline
-    def setInstallationMedia(value: InstallationMediaList): Self = StObject.set(x, "InstallationMedia", value.asInstanceOf[js.Any])
+    inline def setInstallationMedia(value: InstallationMediaList): Self = StObject.set(x, "InstallationMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationMediaUndefined: Self = StObject.set(x, "InstallationMedia", js.undefined)
+    inline def setInstallationMediaUndefined: Self = StObject.set(x, "InstallationMedia", js.undefined)
     
-    @scala.inline
-    def setInstallationMediaVarargs(value: InstallationMedia*): Self = StObject.set(x, "InstallationMedia", js.Array(value :_*))
+    inline def setInstallationMediaVarargs(value: InstallationMedia*): Self = StObject.set(x, "InstallationMedia", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

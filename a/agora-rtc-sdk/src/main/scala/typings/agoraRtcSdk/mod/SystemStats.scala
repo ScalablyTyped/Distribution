@@ -17,16 +17,13 @@ trait SystemStats extends StObject {
 }
 object SystemStats {
   
-  @scala.inline
-  def apply(): SystemStats = {
+  inline def apply(): SystemStats = {
     val __obj = js.Dynamic.literal(BatteryLevel = "string")
     __obj.asInstanceOf[SystemStats]
   }
   
-  @scala.inline
-  implicit class SystemStatsMutableBuilder[Self <: SystemStats] (val x: Self) extends AnyVal {
+  extension [Self <: SystemStats](x: Self) {
     
-    @scala.inline
-    def setBatteryLevel(value: string): Self = StObject.set(x, "BatteryLevel", value.asInstanceOf[js.Any])
+    inline def setBatteryLevel(value: string): Self = StObject.set(x, "BatteryLevel", value.asInstanceOf[js.Any])
   }
 }

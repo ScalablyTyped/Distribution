@@ -13,19 +13,15 @@ trait AcceptSharedDirectoryResult extends StObject {
 }
 object AcceptSharedDirectoryResult {
   
-  @scala.inline
-  def apply(): AcceptSharedDirectoryResult = {
+  inline def apply(): AcceptSharedDirectoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceptSharedDirectoryResult]
   }
   
-  @scala.inline
-  implicit class AcceptSharedDirectoryResultMutableBuilder[Self <: AcceptSharedDirectoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptSharedDirectoryResult](x: Self) {
     
-    @scala.inline
-    def setSharedDirectory(value: SharedDirectory): Self = StObject.set(x, "SharedDirectory", value.asInstanceOf[js.Any])
+    inline def setSharedDirectory(value: SharedDirectory): Self = StObject.set(x, "SharedDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDirectoryUndefined: Self = StObject.set(x, "SharedDirectory", js.undefined)
+    inline def setSharedDirectoryUndefined: Self = StObject.set(x, "SharedDirectory", js.undefined)
   }
 }

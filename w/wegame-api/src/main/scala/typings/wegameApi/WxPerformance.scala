@@ -13,16 +13,13 @@ trait WxPerformance extends StObject {
 }
 object WxPerformance {
   
-  @scala.inline
-  def apply(now: () => Double): WxPerformance = {
+  inline def apply(now: () => Double): WxPerformance = {
     val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
     __obj.asInstanceOf[WxPerformance]
   }
   
-  @scala.inline
-  implicit class WxPerformanceMutableBuilder[Self <: WxPerformance] (val x: Self) extends AnyVal {
+  extension [Self <: WxPerformance](x: Self) {
     
-    @scala.inline
-    def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+    inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
   }
 }

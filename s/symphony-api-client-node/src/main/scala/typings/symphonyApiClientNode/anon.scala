@@ -13,20 +13,16 @@ object anon {
   }
   object StreamTypes {
     
-    @scala.inline
-    def apply(streamTypes: js.Array[StreamType]): StreamTypes = {
+    inline def apply(streamTypes: js.Array[StreamType]): StreamTypes = {
       val __obj = js.Dynamic.literal(streamTypes = streamTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamTypes]
     }
     
-    @scala.inline
-    implicit class StreamTypesMutableBuilder[Self <: StreamTypes] (val x: Self) extends AnyVal {
+    extension [Self <: StreamTypes](x: Self) {
       
-      @scala.inline
-      def setStreamTypes(value: js.Array[StreamType]): Self = StObject.set(x, "streamTypes", value.asInstanceOf[js.Any])
+      inline def setStreamTypes(value: js.Array[StreamType]): Self = StObject.set(x, "streamTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamTypesVarargs(value: StreamType*): Self = StObject.set(x, "streamTypes", js.Array(value :_*))
+      inline def setStreamTypesVarargs(value: StreamType*): Self = StObject.set(x, "streamTypes", js.Array(value :_*))
     }
   }
 }

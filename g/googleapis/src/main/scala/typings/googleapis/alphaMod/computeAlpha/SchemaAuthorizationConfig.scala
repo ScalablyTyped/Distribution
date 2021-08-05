@@ -17,22 +17,17 @@ trait SchemaAuthorizationConfig extends StObject {
 }
 object SchemaAuthorizationConfig {
   
-  @scala.inline
-  def apply(): SchemaAuthorizationConfig = {
+  inline def apply(): SchemaAuthorizationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthorizationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAuthorizationConfigMutableBuilder[Self <: SchemaAuthorizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthorizationConfig](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: js.Array[SchemaRbacPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: js.Array[SchemaRbacPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: SchemaRbacPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: SchemaRbacPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

@@ -19,23 +19,18 @@ object storiesTypesMod {
   }
   object StoryServiceSeenInputItems {
     
-    @scala.inline
-    def apply(id: String, taken_at: Double, user: PkNumber): StoryServiceSeenInputItems = {
+    inline def apply(id: String, taken_at: Double, user: PkNumber): StoryServiceSeenInputItems = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoryServiceSeenInputItems]
     }
     
-    @scala.inline
-    implicit class StoryServiceSeenInputItemsMutableBuilder[Self <: StoryServiceSeenInputItems] (val x: Self) extends AnyVal {
+    extension [Self <: StoryServiceSeenInputItems](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
+      inline def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: PkNumber): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: PkNumber): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object storiesTypesMod {
   }
   object StoryServiceSeenInputReels {
     
-    @scala.inline
-    def apply(items: js.Array[StoryServiceSeenInputItems]): StoryServiceSeenInputReels = {
+    inline def apply(items: js.Array[StoryServiceSeenInputItems]): StoryServiceSeenInputReels = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoryServiceSeenInputReels]
     }
     
-    @scala.inline
-    implicit class StoryServiceSeenInputReelsMutableBuilder[Self <: StoryServiceSeenInputReels] (val x: Self) extends AnyVal {
+    extension [Self <: StoryServiceSeenInputReels](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[StoryServiceSeenInputItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[StoryServiceSeenInputItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: StoryServiceSeenInputItems*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: StoryServiceSeenInputItems*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
 }

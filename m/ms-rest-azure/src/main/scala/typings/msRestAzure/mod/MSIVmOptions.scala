@@ -15,19 +15,15 @@ trait MSIVmOptions
 }
 object MSIVmOptions {
   
-  @scala.inline
-  def apply(): MSIVmOptions = {
+  inline def apply(): MSIVmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MSIVmOptions]
   }
   
-  @scala.inline
-  implicit class MSIVmOptionsMutableBuilder[Self <: MSIVmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MSIVmOptions](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait ListBucketsInput
      with typings.awsSdkClientS3Node.typesListBucketsInputMod.ListBucketsInput
 object ListBucketsInput {
   
-  @scala.inline
-  def apply(): ListBucketsInput = {
+  inline def apply(): ListBucketsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBucketsInput]
   }

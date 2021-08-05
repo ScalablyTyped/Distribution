@@ -17,25 +17,19 @@ trait ImportResourcesRequest extends StObject {
 }
 object ImportResourcesRequest {
   
-  @scala.inline
-  def apply(): ImportResourcesRequest = {
+  inline def apply(): ImportResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportResourcesRequest]
   }
   
-  @scala.inline
-  implicit class ImportResourcesRequestMutableBuilder[Self <: ImportResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
+    inline def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
+    inline def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
     
-    @scala.inline
-    def setGcsSource(value: GoogleCloudHealthcareV1FhirGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GoogleCloudHealthcareV1FhirGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

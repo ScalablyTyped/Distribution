@@ -52,59 +52,43 @@ trait Allowed extends StObject {
 }
 object Allowed {
   
-  @scala.inline
-  def apply(): Allowed = {
+  inline def apply(): Allowed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Allowed]
   }
   
-  @scala.inline
-  implicit class AllowedMutableBuilder[Self <: Allowed] (val x: Self) extends AnyVal {
+  extension [Self <: Allowed](x: Self) {
     
-    @scala.inline
-    def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+    inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+    inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    @scala.inline
-    def setArgs(
+    inline def setArgs(
       value: dxDiagramAddShapeArgs | dxDiagramAddShapeFromToolboxArgs | dxDiagramDeleteShapeArgs | dxDiagramDeleteConnectorArgs | dxDiagramChangeConnectionArgs | dxDiagramChangeConnectorPointsArgs | dxDiagramBeforeChangeShapeTextArgs | dxDiagramChangeShapeTextArgs | dxDiagramBeforeChangeConnectorTextArgs | dxDiagramChangeConnectorTextArgs | dxDiagramResizeShapeArgs | dxDiagramMoveShapeArgs
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxDiagram): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDiagram): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setOperation(
+    inline def setOperation(
       value: addShape | addShapeFromToolbox | deleteShape | deleteConnector | changeConnection | changeConnectorPoints | beforeChangeShapeText | changeShapeText | beforeChangeConnectorText | changeConnectorText | resizeShape | moveShape
     ): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setUpdateUI(value: Boolean): Self = StObject.set(x, "updateUI", value.asInstanceOf[js.Any])
+    inline def setUpdateUI(value: Boolean): Self = StObject.set(x, "updateUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUIUndefined: Self = StObject.set(x, "updateUI", js.undefined)
+    inline def setUpdateUIUndefined: Self = StObject.set(x, "updateUI", js.undefined)
   }
 }

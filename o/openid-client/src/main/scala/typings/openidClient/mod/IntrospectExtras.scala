@@ -19,25 +19,19 @@ trait IntrospectExtras extends StObject {
 }
 object IntrospectExtras {
   
-  @scala.inline
-  def apply(): IntrospectExtras = {
+  inline def apply(): IntrospectExtras = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntrospectExtras]
   }
   
-  @scala.inline
-  implicit class IntrospectExtrasMutableBuilder[Self <: IntrospectExtras] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectExtras](x: Self) {
     
-    @scala.inline
-    def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
+    inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
+    inline def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
     
-    @scala.inline
-    def setIntrospectBody(value: js.Object): Self = StObject.set(x, "introspectBody", value.asInstanceOf[js.Any])
+    inline def setIntrospectBody(value: js.Object): Self = StObject.set(x, "introspectBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntrospectBodyUndefined: Self = StObject.set(x, "introspectBody", js.undefined)
+    inline def setIntrospectBodyUndefined: Self = StObject.set(x, "introspectBody", js.undefined)
   }
 }

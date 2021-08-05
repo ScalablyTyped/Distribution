@@ -16,8 +16,7 @@ trait EnrollmentId extends StObject {
 }
 object EnrollmentId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     card: js.Any,
     enrollmentId: String,
     hostedFields: typings.braintreeWeb.hostedFieldsMod.HostedFields,
@@ -27,19 +26,14 @@ object EnrollmentId {
     __obj.asInstanceOf[EnrollmentId]
   }
   
-  @scala.inline
-  implicit class EnrollmentIdMutableBuilder[Self <: EnrollmentId] (val x: Self) extends AnyVal {
+  extension [Self <: EnrollmentId](x: Self) {
     
-    @scala.inline
-    def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
+    inline def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedFields(value: typings.braintreeWeb.hostedFieldsMod.HostedFields): Self = StObject.set(x, "hostedFields", value.asInstanceOf[js.Any])
+    inline def setHostedFields(value: typings.braintreeWeb.hostedFieldsMod.HostedFields): Self = StObject.set(x, "hostedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsCode(value: String): Self = StObject.set(x, "smsCode", value.asInstanceOf[js.Any])
+    inline def setSmsCode(value: String): Self = StObject.set(x, "smsCode", value.asInstanceOf[js.Any])
   }
 }

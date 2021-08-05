@@ -51,88 +51,61 @@ trait ClusterHealth
 }
 object ClusterHealth {
   
-  @scala.inline
-  def apply(): ClusterHealth = {
+  inline def apply(): ClusterHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterHealth]
   }
   
-  @scala.inline
-  implicit class ClusterHealthMutableBuilder[Self <: ClusterHealth] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterHealth](x: Self) {
     
-    @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
+    inline def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
+    inline def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: cluster | indices | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: cluster | indices | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
+    inline def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
+    inline def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
     
-    @scala.inline
-    def setWait_for_events(value: immediate | urgent | high | normal | low | languid): Self = StObject.set(x, "wait_for_events", value.asInstanceOf[js.Any])
+    inline def setWait_for_events(value: immediate | urgent | high | normal | low | languid): Self = StObject.set(x, "wait_for_events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_eventsUndefined: Self = StObject.set(x, "wait_for_events", js.undefined)
+    inline def setWait_for_eventsUndefined: Self = StObject.set(x, "wait_for_events", js.undefined)
     
-    @scala.inline
-    def setWait_for_no_initializing_shards(value: Boolean): Self = StObject.set(x, "wait_for_no_initializing_shards", value.asInstanceOf[js.Any])
+    inline def setWait_for_no_initializing_shards(value: Boolean): Self = StObject.set(x, "wait_for_no_initializing_shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_no_initializing_shardsUndefined: Self = StObject.set(x, "wait_for_no_initializing_shards", js.undefined)
+    inline def setWait_for_no_initializing_shardsUndefined: Self = StObject.set(x, "wait_for_no_initializing_shards", js.undefined)
     
-    @scala.inline
-    def setWait_for_no_relocating_shards(value: Boolean): Self = StObject.set(x, "wait_for_no_relocating_shards", value.asInstanceOf[js.Any])
+    inline def setWait_for_no_relocating_shards(value: Boolean): Self = StObject.set(x, "wait_for_no_relocating_shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_no_relocating_shardsUndefined: Self = StObject.set(x, "wait_for_no_relocating_shards", js.undefined)
+    inline def setWait_for_no_relocating_shardsUndefined: Self = StObject.set(x, "wait_for_no_relocating_shards", js.undefined)
     
-    @scala.inline
-    def setWait_for_nodes(value: String): Self = StObject.set(x, "wait_for_nodes", value.asInstanceOf[js.Any])
+    inline def setWait_for_nodes(value: String): Self = StObject.set(x, "wait_for_nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_nodesUndefined: Self = StObject.set(x, "wait_for_nodes", js.undefined)
+    inline def setWait_for_nodesUndefined: Self = StObject.set(x, "wait_for_nodes", js.undefined)
     
-    @scala.inline
-    def setWait_for_status(value: green | yellow | red): Self = StObject.set(x, "wait_for_status", value.asInstanceOf[js.Any])
+    inline def setWait_for_status(value: green | yellow | red): Self = StObject.set(x, "wait_for_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_statusUndefined: Self = StObject.set(x, "wait_for_status", js.undefined)
+    inline def setWait_for_statusUndefined: Self = StObject.set(x, "wait_for_status", js.undefined)
   }
 }

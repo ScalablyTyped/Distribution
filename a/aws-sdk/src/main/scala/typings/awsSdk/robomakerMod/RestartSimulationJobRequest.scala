@@ -13,16 +13,13 @@ trait RestartSimulationJobRequest extends StObject {
 }
 object RestartSimulationJobRequest {
   
-  @scala.inline
-  def apply(job: Arn): RestartSimulationJobRequest = {
+  inline def apply(job: Arn): RestartSimulationJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartSimulationJobRequest]
   }
   
-  @scala.inline
-  implicit class RestartSimulationJobRequestMutableBuilder[Self <: RestartSimulationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestartSimulationJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

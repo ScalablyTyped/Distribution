@@ -26,20 +26,16 @@ object mod extends Shortcut {
   }
   object AppRootDir {
     
-    @scala.inline
-    def apply(get: () => String, set: String => Unit): AppRootDir = {
+    inline def apply(get: () => String, set: String => Unit): AppRootDir = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[AppRootDir]
     }
     
-    @scala.inline
-    implicit class AppRootDirMutableBuilder[Self <: AppRootDir] (val x: Self) extends AnyVal {
+    extension [Self <: AppRootDir](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
   

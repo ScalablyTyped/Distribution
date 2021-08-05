@@ -21,31 +21,23 @@ trait IntervalMs extends StObject {
 }
 object IntervalMs {
   
-  @scala.inline
-  def apply(): IntervalMs = {
+  inline def apply(): IntervalMs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntervalMs]
   }
   
-  @scala.inline
-  implicit class IntervalMsMutableBuilder[Self <: IntervalMs] (val x: Self) extends AnyVal {
+  extension [Self <: IntervalMs](x: Self) {
     
-    @scala.inline
-    def setIntervalMs(value: Double): Self = StObject.set(x, "intervalMs", value.asInstanceOf[js.Any])
+    inline def setIntervalMs(value: Double): Self = StObject.set(x, "intervalMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalMsUndefined: Self = StObject.set(x, "intervalMs", js.undefined)
+    inline def setIntervalMsUndefined: Self = StObject.set(x, "intervalMs", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: minute | hour | day | week | month | year): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: minute | hour | day | week | month | year): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def setTime(value: Date | Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Date | Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

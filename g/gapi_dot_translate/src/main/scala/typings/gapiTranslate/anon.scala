@@ -45,56 +45,40 @@ object anon {
   }
   object Cid {
     
-    @scala.inline
-    def apply(q: js.Array[String], target: String): Cid = {
+    inline def apply(q: js.Array[String], target: String): Cid = {
       val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cid]
     }
     
-    @scala.inline
-    implicit class CidMutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
+    extension [Self <: Cid](x: Self) {
       
-      @scala.inline
-      def setCid(value: js.Array[String]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: js.Array[String]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setCidVarargs(value: String*): Self = StObject.set(x, "cid", js.Array(value :_*))
+      inline def setCidVarargs(value: String*): Self = StObject.set(x, "cid", js.Array(value :_*))
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setPrettyprint(value: String): Self = StObject.set(x, "prettyprint", value.asInstanceOf[js.Any])
+      inline def setPrettyprint(value: String): Self = StObject.set(x, "prettyprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyprintUndefined: Self = StObject.set(x, "prettyprint", js.undefined)
+      inline def setPrettyprintUndefined: Self = StObject.set(x, "prettyprint", js.undefined)
       
-      @scala.inline
-      def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+      inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,20 +90,16 @@ object anon {
   }
   object Confidence {
     
-    @scala.inline
-    def apply(confidence: Double, language: String): Confidence = {
+    inline def apply(confidence: Double, language: String): Confidence = {
       val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
       __obj.asInstanceOf[Confidence]
     }
     
-    @scala.inline
-    implicit class ConfidenceMutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
+    extension [Self <: Confidence](x: Self) {
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,20 +111,16 @@ object anon {
   }
   object DetectedSourceLanguage {
     
-    @scala.inline
-    def apply(detectedSourceLanguage: String, translatedText: String): DetectedSourceLanguage = {
+    inline def apply(detectedSourceLanguage: String, translatedText: String): DetectedSourceLanguage = {
       val __obj = js.Dynamic.literal(detectedSourceLanguage = detectedSourceLanguage.asInstanceOf[js.Any], translatedText = translatedText.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectedSourceLanguage]
     }
     
-    @scala.inline
-    implicit class DetectedSourceLanguageMutableBuilder[Self <: DetectedSourceLanguage] (val x: Self) extends AnyVal {
+    extension [Self <: DetectedSourceLanguage](x: Self) {
       
-      @scala.inline
-      def setDetectedSourceLanguage(value: String): Self = StObject.set(x, "detectedSourceLanguage", value.asInstanceOf[js.Any])
+      inline def setDetectedSourceLanguage(value: String): Self = StObject.set(x, "detectedSourceLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
+      inline def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,20 +130,16 @@ object anon {
   }
   object Detections {
     
-    @scala.inline
-    def apply(detections: js.Array[js.Array[Confidence]]): Detections = {
+    inline def apply(detections: js.Array[js.Array[Confidence]]): Detections = {
       val __obj = js.Dynamic.literal(detections = detections.asInstanceOf[js.Any])
       __obj.asInstanceOf[Detections]
     }
     
-    @scala.inline
-    implicit class DetectionsMutableBuilder[Self <: Detections] (val x: Self) extends AnyVal {
+    extension [Self <: Detections](x: Self) {
       
-      @scala.inline
-      def setDetections(value: js.Array[js.Array[Confidence]]): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
+      inline def setDetections(value: js.Array[js.Array[Confidence]]): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectionsVarargs(value: js.Array[Confidence]*): Self = StObject.set(x, "detections", js.Array(value :_*))
+      inline def setDetectionsVarargs(value: js.Array[Confidence]*): Self = StObject.set(x, "detections", js.Array(value :_*))
     }
   }
   
@@ -185,26 +157,20 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(q: js.Array[String]): Fields = {
+    inline def apply(q: js.Array[String]): Fields = {
       val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+      inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
     }
   }
   
@@ -216,20 +182,16 @@ object anon {
   }
   object Language {
     
-    @scala.inline
-    def apply(language: String, name: String): Language = {
+    inline def apply(language: String, name: String): Language = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Language]
     }
     
-    @scala.inline
-    implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+    extension [Self <: Language](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,20 +201,16 @@ object anon {
   }
   object Languages {
     
-    @scala.inline
-    def apply(languages: js.Array[Language]): Languages = {
+    inline def apply(languages: js.Array[Language]): Languages = {
       val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Languages]
     }
     
-    @scala.inline
-    implicit class LanguagesMutableBuilder[Self <: Languages] (val x: Self) extends AnyVal {
+    extension [Self <: Languages](x: Self) {
       
-      @scala.inline
-      def setLanguages(value: js.Array[Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: js.Array[Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
     }
   }
   
@@ -270,26 +228,20 @@ object anon {
   }
   object Target {
     
-    @scala.inline
-    def apply(): Target = {
+    inline def apply(): Target = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Target]
     }
     
-    @scala.inline
-    implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+    extension [Self <: Target](x: Self) {
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -299,20 +251,16 @@ object anon {
   }
   object Translations {
     
-    @scala.inline
-    def apply(translations: js.Array[DetectedSourceLanguage]): Translations = {
+    inline def apply(translations: js.Array[DetectedSourceLanguage]): Translations = {
       val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
       __obj.asInstanceOf[Translations]
     }
     
-    @scala.inline
-    implicit class TranslationsMutableBuilder[Self <: Translations] (val x: Self) extends AnyVal {
+    extension [Self <: Translations](x: Self) {
       
-      @scala.inline
-      def setTranslations(value: js.Array[DetectedSourceLanguage]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Array[DetectedSourceLanguage]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsVarargs(value: DetectedSourceLanguage*): Self = StObject.set(x, "translations", js.Array(value :_*))
+      inline def setTranslationsVarargs(value: DetectedSourceLanguage*): Self = StObject.set(x, "translations", js.Array(value :_*))
     }
   }
 }

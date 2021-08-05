@@ -25,12 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContextType extends StObject
 object ContextType {
   
-  @scala.inline
-  def Cleared: typings.qlikEngineapi.qlikEngineapiStrings.Cleared = "Cleared".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Cleared]
+  inline def Cleared: typings.qlikEngineapi.qlikEngineapiStrings.Cleared = "Cleared".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Cleared]
   
-  @scala.inline
-  def CurrentSelections: typings.qlikEngineapi.qlikEngineapiStrings.CurrentSelections = "CurrentSelections".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CurrentSelections]
+  inline def CurrentSelections: typings.qlikEngineapi.qlikEngineapiStrings.CurrentSelections = "CurrentSelections".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CurrentSelections]
   
-  @scala.inline
-  def LockedFieldsOnly: typings.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly = "LockedFieldsOnly".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly]
+  inline def LockedFieldsOnly: typings.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly = "LockedFieldsOnly".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly]
 }

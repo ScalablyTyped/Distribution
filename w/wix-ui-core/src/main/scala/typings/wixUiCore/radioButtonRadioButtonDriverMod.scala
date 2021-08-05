@@ -12,6 +12,5 @@ object radioButtonRadioButtonDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def radioButtonDriverFactory(hasElementEventTrigger: Element): IconExists = ^.asInstanceOf[js.Dynamic].applyDynamic("radioButtonDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[IconExists]
+  inline def radioButtonDriverFactory(hasElementEventTrigger: Element): IconExists = ^.asInstanceOf[js.Dynamic].applyDynamic("radioButtonDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[IconExists]
 }

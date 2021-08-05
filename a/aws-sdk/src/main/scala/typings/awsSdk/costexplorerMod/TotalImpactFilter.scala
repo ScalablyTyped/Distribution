@@ -23,25 +23,19 @@ trait TotalImpactFilter extends StObject {
 }
 object TotalImpactFilter {
   
-  @scala.inline
-  def apply(NumericOperator: NumericOperator, StartValue: GenericDouble): TotalImpactFilter = {
+  inline def apply(NumericOperator: NumericOperator, StartValue: GenericDouble): TotalImpactFilter = {
     val __obj = js.Dynamic.literal(NumericOperator = NumericOperator.asInstanceOf[js.Any], StartValue = StartValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotalImpactFilter]
   }
   
-  @scala.inline
-  implicit class TotalImpactFilterMutableBuilder[Self <: TotalImpactFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TotalImpactFilter](x: Self) {
     
-    @scala.inline
-    def setEndValue(value: GenericDouble): Self = StObject.set(x, "EndValue", value.asInstanceOf[js.Any])
+    inline def setEndValue(value: GenericDouble): Self = StObject.set(x, "EndValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndValueUndefined: Self = StObject.set(x, "EndValue", js.undefined)
+    inline def setEndValueUndefined: Self = StObject.set(x, "EndValue", js.undefined)
     
-    @scala.inline
-    def setNumericOperator(value: NumericOperator): Self = StObject.set(x, "NumericOperator", value.asInstanceOf[js.Any])
+    inline def setNumericOperator(value: NumericOperator): Self = StObject.set(x, "NumericOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValue(value: GenericDouble): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: GenericDouble): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
   }
 }

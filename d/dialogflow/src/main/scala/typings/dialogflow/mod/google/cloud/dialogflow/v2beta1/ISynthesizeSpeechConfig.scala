@@ -24,61 +24,43 @@ trait ISynthesizeSpeechConfig extends StObject {
 }
 object ISynthesizeSpeechConfig {
   
-  @scala.inline
-  def apply(): ISynthesizeSpeechConfig = {
+  inline def apply(): ISynthesizeSpeechConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISynthesizeSpeechConfig]
   }
   
-  @scala.inline
-  implicit class ISynthesizeSpeechConfigMutableBuilder[Self <: ISynthesizeSpeechConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ISynthesizeSpeechConfig](x: Self) {
     
-    @scala.inline
-    def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
+    inline def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsProfileIdNull: Self = StObject.set(x, "effectsProfileId", null)
+    inline def setEffectsProfileIdNull: Self = StObject.set(x, "effectsProfileId", null)
     
-    @scala.inline
-    def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
+    inline def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
     
-    @scala.inline
-    def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
+    inline def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchNull: Self = StObject.set(x, "pitch", null)
+    inline def setPitchNull: Self = StObject.set(x, "pitch", null)
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
-    @scala.inline
-    def setSpeakingRate(value: Double): Self = StObject.set(x, "speakingRate", value.asInstanceOf[js.Any])
+    inline def setSpeakingRate(value: Double): Self = StObject.set(x, "speakingRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakingRateNull: Self = StObject.set(x, "speakingRate", null)
+    inline def setSpeakingRateNull: Self = StObject.set(x, "speakingRate", null)
     
-    @scala.inline
-    def setSpeakingRateUndefined: Self = StObject.set(x, "speakingRate", js.undefined)
+    inline def setSpeakingRateUndefined: Self = StObject.set(x, "speakingRate", js.undefined)
     
-    @scala.inline
-    def setVoice(value: IVoiceSelectionParams): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+    inline def setVoice(value: IVoiceSelectionParams): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceNull: Self = StObject.set(x, "voice", null)
+    inline def setVoiceNull: Self = StObject.set(x, "voice", null)
     
-    @scala.inline
-    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+    inline def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
     
-    @scala.inline
-    def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
+    inline def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeGainDbNull: Self = StObject.set(x, "volumeGainDb", null)
+    inline def setVolumeGainDbNull: Self = StObject.set(x, "volumeGainDb", null)
     
-    @scala.inline
-    def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
+    inline def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
   }
 }

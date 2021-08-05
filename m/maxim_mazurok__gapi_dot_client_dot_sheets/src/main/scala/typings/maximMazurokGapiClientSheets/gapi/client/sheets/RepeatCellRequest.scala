@@ -20,31 +20,23 @@ trait RepeatCellRequest extends StObject {
 }
 object RepeatCellRequest {
   
-  @scala.inline
-  def apply(): RepeatCellRequest = {
+  inline def apply(): RepeatCellRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepeatCellRequest]
   }
   
-  @scala.inline
-  implicit class RepeatCellRequestMutableBuilder[Self <: RepeatCellRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RepeatCellRequest](x: Self) {
     
-    @scala.inline
-    def setCell(value: CellData): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: CellData): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

@@ -6,12 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(startOrOptions: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(startOrOptions: ProcessCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(workers: WorkerCount, start: ProcessCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(workers.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(startOrOptions: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(startOrOptions: ProcessCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(workers: WorkerCount, start: ProcessCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(workers.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("throng", JSImport.Namespace)
   @js.native
@@ -33,41 +30,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(start: /* id */ Double => js.Any): Options = {
+    inline def apply(start: /* id */ Double => js.Any): Options = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGrace(value: Double): Self = StObject.set(x, "grace", value.asInstanceOf[js.Any])
+      inline def setGrace(value: Double): Self = StObject.set(x, "grace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraceUndefined: Self = StObject.set(x, "grace", js.undefined)
+      inline def setGraceUndefined: Self = StObject.set(x, "grace", js.undefined)
       
-      @scala.inline
-      def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+      inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+      inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
       
-      @scala.inline
-      def setMaster(value: /* id */ Double => js.Any): Self = StObject.set(x, "master", js.Any.fromFunction1(value))
+      inline def setMaster(value: /* id */ Double => js.Any): Self = StObject.set(x, "master", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
+      inline def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
       
-      @scala.inline
-      def setStart(value: /* id */ Double => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: /* id */ Double => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWorkers(value: WorkerCount): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: WorkerCount): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     }
   }
   

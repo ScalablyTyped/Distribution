@@ -20,31 +20,23 @@ trait ChooseImageSuccessCallbackResult extends StObject {
 }
 object ChooseImageSuccessCallbackResult {
   
-  @scala.inline
-  def apply(): ChooseImageSuccessCallbackResult = {
+  inline def apply(): ChooseImageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseImageSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ChooseImageSuccessCallbackResultMutableBuilder[Self <: ChooseImageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseImageSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTempFilePaths(value: String | js.Array[js.Any]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
+    inline def setTempFilePaths(value: String | js.Array[js.Any]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePathsUndefined: Self = StObject.set(x, "tempFilePaths", js.undefined)
+    inline def setTempFilePathsUndefined: Self = StObject.set(x, "tempFilePaths", js.undefined)
     
-    @scala.inline
-    def setTempFilePathsVarargs(value: js.Any*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
+    inline def setTempFilePathsVarargs(value: js.Any*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setTempFiles(value: ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
+    inline def setTempFiles(value: ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilesUndefined: Self = StObject.set(x, "tempFiles", js.undefined)
+    inline def setTempFilesUndefined: Self = StObject.set(x, "tempFiles", js.undefined)
     
-    @scala.inline
-    def setTempFilesVarargs(value: ChooseImageSuccessCallbackResultFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: ChooseImageSuccessCallbackResultFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
   }
 }

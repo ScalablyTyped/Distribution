@@ -29,58 +29,41 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDeployTime(value: String): Self = StObject.set(x, "deployTime", value.asInstanceOf[js.Any])
+    inline def setDeployTime(value: String): Self = StObject.set(x, "deployTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployTimeUndefined: Self = StObject.set(x, "deployTime", js.undefined)
+    inline def setDeployTimeUndefined: Self = StObject.set(x, "deployTime", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setResourceUri(value: js.Array[String]): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: js.Array[String]): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
     
-    @scala.inline
-    def setResourceUriVarargs(value: String*): Self = StObject.set(x, "resourceUri", js.Array(value :_*))
+    inline def setResourceUriVarargs(value: String*): Self = StObject.set(x, "resourceUri", js.Array(value :_*))
     
-    @scala.inline
-    def setUndeployTime(value: String): Self = StObject.set(x, "undeployTime", value.asInstanceOf[js.Any])
+    inline def setUndeployTime(value: String): Self = StObject.set(x, "undeployTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndeployTimeUndefined: Self = StObject.set(x, "undeployTime", js.undefined)
+    inline def setUndeployTimeUndefined: Self = StObject.set(x, "undeployTime", js.undefined)
     
-    @scala.inline
-    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
+    inline def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
+    inline def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
   }
 }

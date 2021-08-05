@@ -11,22 +11,17 @@ trait SystemApksListResponse extends StObject {
 }
 object SystemApksListResponse {
   
-  @scala.inline
-  def apply(): SystemApksListResponse = {
+  inline def apply(): SystemApksListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemApksListResponse]
   }
   
-  @scala.inline
-  implicit class SystemApksListResponseMutableBuilder[Self <: SystemApksListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SystemApksListResponse](x: Self) {
     
-    @scala.inline
-    def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    @scala.inline
-    def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+    inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
   }
 }

@@ -18,22 +18,17 @@ trait CreateVirtualMFADeviceRequest extends StObject {
 }
 object CreateVirtualMFADeviceRequest {
   
-  @scala.inline
-  def apply(VirtualMFADeviceName: virtualMFADeviceName): CreateVirtualMFADeviceRequest = {
+  inline def apply(VirtualMFADeviceName: virtualMFADeviceName): CreateVirtualMFADeviceRequest = {
     val __obj = js.Dynamic.literal(VirtualMFADeviceName = VirtualMFADeviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVirtualMFADeviceRequest]
   }
   
-  @scala.inline
-  implicit class CreateVirtualMFADeviceRequestMutableBuilder[Self <: CreateVirtualMFADeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVirtualMFADeviceRequest](x: Self) {
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setVirtualMFADeviceName(value: virtualMFADeviceName): Self = StObject.set(x, "VirtualMFADeviceName", value.asInstanceOf[js.Any])
+    inline def setVirtualMFADeviceName(value: virtualMFADeviceName): Self = StObject.set(x, "VirtualMFADeviceName", value.asInstanceOf[js.Any])
   }
 }

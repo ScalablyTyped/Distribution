@@ -28,23 +28,17 @@ object socialButtonMod extends Shortcut {
   trait SocialButtonIcons extends StObject
   object SocialButtonIcons {
     
-    @scala.inline
-    def facebook: typings.wixStyleReact.wixStyleReactStrings.facebook = "facebook".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.facebook]
+    inline def facebook: typings.wixStyleReact.wixStyleReactStrings.facebook = "facebook".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.facebook]
     
-    @scala.inline
-    def instagram: typings.wixStyleReact.wixStyleReactStrings.instagram = "instagram".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.instagram]
+    inline def instagram: typings.wixStyleReact.wixStyleReactStrings.instagram = "instagram".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.instagram]
     
-    @scala.inline
-    def linkedin: typings.wixStyleReact.wixStyleReactStrings.linkedin = "linkedin".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.linkedin]
+    inline def linkedin: typings.wixStyleReact.wixStyleReactStrings.linkedin = "linkedin".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.linkedin]
     
-    @scala.inline
-    def pinterest: typings.wixStyleReact.wixStyleReactStrings.pinterest = "pinterest".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.pinterest]
+    inline def pinterest: typings.wixStyleReact.wixStyleReactStrings.pinterest = "pinterest".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.pinterest]
     
-    @scala.inline
-    def twitter: typings.wixStyleReact.wixStyleReactStrings.twitter = "twitter".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.twitter]
+    inline def twitter: typings.wixStyleReact.wixStyleReactStrings.twitter = "twitter".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.twitter]
     
-    @scala.inline
-    def youtube: typings.wixStyleReact.wixStyleReactStrings.youtube = "youtube".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.youtube]
+    inline def youtube: typings.wixStyleReact.wixStyleReactStrings.youtube = "youtube".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.youtube]
   }
   
   trait SocialButtonProps extends StObject {
@@ -61,44 +55,32 @@ object socialButtonMod extends Shortcut {
   }
   object SocialButtonProps {
     
-    @scala.inline
-    def apply(): SocialButtonProps = {
+    inline def apply(): SocialButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocialButtonProps]
     }
     
-    @scala.inline
-    implicit class SocialButtonPropsMutableBuilder[Self <: SocialButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SocialButtonProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: SocialButtonIcons): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: SocialButtonIcons): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   

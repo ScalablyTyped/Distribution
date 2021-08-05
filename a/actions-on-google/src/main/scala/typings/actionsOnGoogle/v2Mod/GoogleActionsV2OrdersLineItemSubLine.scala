@@ -18,25 +18,19 @@ trait GoogleActionsV2OrdersLineItemSubLine extends StObject {
 }
 object GoogleActionsV2OrdersLineItemSubLine {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersLineItemSubLine = {
+  inline def apply(): GoogleActionsV2OrdersLineItemSubLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersLineItemSubLine]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersLineItemSubLineMutableBuilder[Self <: GoogleActionsV2OrdersLineItemSubLine] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersLineItemSubLine](x: Self) {
     
-    @scala.inline
-    def setLineItem(value: GoogleActionsV2OrdersLineItem): Self = StObject.set(x, "lineItem", value.asInstanceOf[js.Any])
+    inline def setLineItem(value: GoogleActionsV2OrdersLineItem): Self = StObject.set(x, "lineItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemUndefined: Self = StObject.set(x, "lineItem", js.undefined)
+    inline def setLineItemUndefined: Self = StObject.set(x, "lineItem", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

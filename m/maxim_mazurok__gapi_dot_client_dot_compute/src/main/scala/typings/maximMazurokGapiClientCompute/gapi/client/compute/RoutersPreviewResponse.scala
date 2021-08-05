@@ -11,19 +11,15 @@ trait RoutersPreviewResponse extends StObject {
 }
 object RoutersPreviewResponse {
   
-  @scala.inline
-  def apply(): RoutersPreviewResponse = {
+  inline def apply(): RoutersPreviewResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoutersPreviewResponse]
   }
   
-  @scala.inline
-  implicit class RoutersPreviewResponseMutableBuilder[Self <: RoutersPreviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RoutersPreviewResponse](x: Self) {
     
-    @scala.inline
-    def setResource(value: Router): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Router): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

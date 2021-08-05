@@ -20,25 +20,19 @@ trait Disconnected extends StObject {
 }
 object Disconnected {
   
-  @scala.inline
-  def apply(): Disconnected = {
+  inline def apply(): Disconnected = {
     val __obj = js.Dynamic.literal(Disconnected = "disconnected", TargetChanged = "targetchanged", TargetCreated = "targetcreated", TargetDestroyed = "targetdestroyed")
     __obj.asInstanceOf[Disconnected]
   }
   
-  @scala.inline
-  implicit class DisconnectedMutableBuilder[Self <: Disconnected] (val x: Self) extends AnyVal {
+  extension [Self <: Disconnected](x: Self) {
     
-    @scala.inline
-    def setDisconnected(value: disconnected): Self = StObject.set(x, "Disconnected", value.asInstanceOf[js.Any])
+    inline def setDisconnected(value: disconnected): Self = StObject.set(x, "Disconnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetChanged(value: targetchanged): Self = StObject.set(x, "TargetChanged", value.asInstanceOf[js.Any])
+    inline def setTargetChanged(value: targetchanged): Self = StObject.set(x, "TargetChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCreated(value: targetcreated): Self = StObject.set(x, "TargetCreated", value.asInstanceOf[js.Any])
+    inline def setTargetCreated(value: targetcreated): Self = StObject.set(x, "TargetCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDestroyed(value: targetdestroyed): Self = StObject.set(x, "TargetDestroyed", value.asInstanceOf[js.Any])
+    inline def setTargetDestroyed(value: targetdestroyed): Self = StObject.set(x, "TargetDestroyed", value.asInstanceOf[js.Any])
   }
 }

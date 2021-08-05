@@ -28,16 +28,14 @@ object LabelEnablement {
     * getLabelForRendering are added.
     * @param oControl the label control which should be enriched with further label functionality.
     */
-  @scala.inline
-  def enrich(oControl: typings.openui5.sap.ui.core.Control): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enrich")(oControl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enrich(oControl: typings.openui5.sap.ui.core.Control): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enrich")(oControl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns an array of ids of the labels referencing the given element
     * @param oElement The element whose referencing labels should be returned
     * @returns an array of ids of the labels referencing the given element
     */
-  @scala.inline
-  def getReferencingLabels(oElement: typings.openui5.sap.ui.core.Element): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferencingLabels")(oElement.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getReferencingLabels(oElement: typings.openui5.sap.ui.core.Element): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferencingLabels")(oElement.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * Returns <code>true</code> when the given control is required (property 'required') or one of its
@@ -47,8 +45,7 @@ object LabelEnablement {
     * @returns <code>true</code> when the given control is required (property 'required') or one of its
     * referencing labels, <code>false</code> otherwise
     */
-  @scala.inline
-  def isRequired(oElement: typings.openui5.sap.ui.core.Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(oElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRequired(oElement: typings.openui5.sap.ui.core.Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(oElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Helper function for the label control to render the html 'for' attribute. This function should be
@@ -57,6 +54,5 @@ object LabelEnablement {
     * @param oLabel The label for which the 'for' html attribute should be written to the
     * render-output-buffer.
     */
-  @scala.inline
-  def writeLabelForAttribute(oRenderManager: typings.openui5.sap.ui.core.RenderManager, oLabel: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLabelForAttribute")(oRenderManager.asInstanceOf[js.Any], oLabel.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeLabelForAttribute(oRenderManager: typings.openui5.sap.ui.core.RenderManager, oLabel: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLabelForAttribute")(oRenderManager.asInstanceOf[js.Any], oLabel.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

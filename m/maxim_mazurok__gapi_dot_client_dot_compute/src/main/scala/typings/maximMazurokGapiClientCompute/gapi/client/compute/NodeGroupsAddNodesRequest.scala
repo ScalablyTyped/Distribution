@@ -11,19 +11,15 @@ trait NodeGroupsAddNodesRequest extends StObject {
 }
 object NodeGroupsAddNodesRequest {
   
-  @scala.inline
-  def apply(): NodeGroupsAddNodesRequest = {
+  inline def apply(): NodeGroupsAddNodesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupsAddNodesRequest]
   }
   
-  @scala.inline
-  implicit class NodeGroupsAddNodesRequestMutableBuilder[Self <: NodeGroupsAddNodesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupsAddNodesRequest](x: Self) {
     
-    @scala.inline
-    def setAdditionalNodeCount(value: Double): Self = StObject.set(x, "additionalNodeCount", value.asInstanceOf[js.Any])
+    inline def setAdditionalNodeCount(value: Double): Self = StObject.set(x, "additionalNodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalNodeCountUndefined: Self = StObject.set(x, "additionalNodeCount", js.undefined)
+    inline def setAdditionalNodeCountUndefined: Self = StObject.set(x, "additionalNodeCount", js.undefined)
   }
 }

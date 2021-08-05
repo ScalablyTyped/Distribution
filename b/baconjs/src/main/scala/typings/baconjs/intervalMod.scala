@@ -11,6 +11,5 @@ object intervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](delay: Double, value: V): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delay.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](delay: Double, value: V): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delay.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
 }

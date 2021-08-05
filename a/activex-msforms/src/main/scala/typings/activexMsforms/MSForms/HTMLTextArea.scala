@@ -10,7 +10,7 @@ trait HTMLTextArea extends StObject {
   
   var HTMLName: String
   
-  @JSName("MSForms.HTMLTextArea_typekey")
+  /* private */ @JSName("MSForms.HTMLTextArea_typekey")
   var MSFormsDotHTMLTextArea_typekey: HTMLTextArea
   
   var Rows: Double
@@ -21,8 +21,7 @@ trait HTMLTextArea extends StObject {
 }
 object HTMLTextArea {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: Double,
     HTMLName: String,
     MSFormsDotHTMLTextArea_typekey: HTMLTextArea,
@@ -35,25 +34,18 @@ object HTMLTextArea {
     __obj.asInstanceOf[HTMLTextArea]
   }
   
-  @scala.inline
-  implicit class HTMLTextAreaMutableBuilder[Self <: HTMLTextArea] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLTextArea](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLTextArea_typekey(value: HTMLTextArea): Self = StObject.set(x, "MSForms.HTMLTextArea_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLTextArea_typekey(value: HTMLTextArea): Self = StObject.set(x, "MSForms.HTMLTextArea_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrap(value: String): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: String): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

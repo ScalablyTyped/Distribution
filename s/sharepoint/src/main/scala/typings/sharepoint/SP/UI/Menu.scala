@@ -45,8 +45,7 @@ trait Menu extends StObject {
 }
 object Menu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addMenuItem: (String, String, String, String, Double, String, String) => HTMLElement,
     addSeparator: () => Unit,
     addSubMenu: (String, String, String, Double, String, String) => Menu,
@@ -59,28 +58,20 @@ object Menu {
     __obj.asInstanceOf[Menu]
   }
   
-  @scala.inline
-  implicit class MenuMutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
+  extension [Self <: Menu](x: Self) {
     
-    @scala.inline
-    def setAddMenuItem(value: (String, String, String, String, Double, String, String) => HTMLElement): Self = StObject.set(x, "addMenuItem", js.Any.fromFunction7(value))
+    inline def setAddMenuItem(value: (String, String, String, String, Double, String, String) => HTMLElement): Self = StObject.set(x, "addMenuItem", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setAddSeparator(value: () => Unit): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
+    inline def setAddSeparator(value: () => Unit): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddSubMenu(value: (String, String, String, Double, String, String) => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction6(value))
+    inline def setAddSubMenu(value: (String, String, String, Double, String, String) => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setHideIcons(value: () => Unit): Self = StObject.set(x, "hideIcons", js.Any.fromFunction0(value))
+    inline def setHideIcons(value: () => Unit): Self = StObject.set(x, "hideIcons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: (HTMLElement, Boolean, Boolean, Double) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction4(value))
+    inline def setShow(value: (HTMLElement, Boolean, Boolean, Double) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setShowFilterMenu(value: (HTMLElement, Boolean, Boolean, Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "showFilterMenu", js.Any.fromFunction6(value))
+    inline def setShowFilterMenu(value: (HTMLElement, Boolean, Boolean, Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "showFilterMenu", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setShowIcons(value: () => Unit): Self = StObject.set(x, "showIcons", js.Any.fromFunction0(value))
+    inline def setShowIcons(value: () => Unit): Self = StObject.set(x, "showIcons", js.Any.fromFunction0(value))
   }
 }

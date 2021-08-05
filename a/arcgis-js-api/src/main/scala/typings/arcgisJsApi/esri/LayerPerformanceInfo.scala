@@ -48,8 +48,7 @@ trait LayerPerformanceInfo extends StObject {
 }
 object LayerPerformanceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayedNumberOfFeatures: Double,
     layer: Layer,
     maximumNumberOfFeatures: Double,
@@ -60,22 +59,16 @@ object LayerPerformanceInfo {
     __obj.asInstanceOf[LayerPerformanceInfo]
   }
   
-  @scala.inline
-  implicit class LayerPerformanceInfoMutableBuilder[Self <: LayerPerformanceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LayerPerformanceInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayedNumberOfFeatures(value: Double): Self = StObject.set(x, "displayedNumberOfFeatures", value.asInstanceOf[js.Any])
+    inline def setDisplayedNumberOfFeatures(value: Double): Self = StObject.set(x, "displayedNumberOfFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumNumberOfFeatures(value: Double): Self = StObject.set(x, "maximumNumberOfFeatures", value.asInstanceOf[js.Any])
+    inline def setMaximumNumberOfFeatures(value: Double): Self = StObject.set(x, "maximumNumberOfFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNumberOfFeatures(value: Double): Self = StObject.set(x, "totalNumberOfFeatures", value.asInstanceOf[js.Any])
+    inline def setTotalNumberOfFeatures(value: Double): Self = StObject.set(x, "totalNumberOfFeatures", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait ActivateTargetRequest extends StObject {
 }
 object ActivateTargetRequest {
   
-  @scala.inline
-  def apply(targetId: TargetID): ActivateTargetRequest = {
+  inline def apply(targetId: TargetID): ActivateTargetRequest = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivateTargetRequest]
   }
   
-  @scala.inline
-  implicit class ActivateTargetRequestMutableBuilder[Self <: ActivateTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateTargetRequest](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

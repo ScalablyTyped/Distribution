@@ -12,8 +12,7 @@ object cardCalloutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CardCallout(props: ICardCalloutProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardCallout")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CardCallout(props: ICardCalloutProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardCallout")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ICardCalloutProps
     extends StObject
@@ -25,26 +24,20 @@ object cardCalloutMod {
   }
   object ICardCalloutProps {
     
-    @scala.inline
-    def apply(): ICardCalloutProps = {
+    inline def apply(): ICardCalloutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICardCalloutProps]
     }
     
-    @scala.inline
-    implicit class ICardCalloutPropsMutableBuilder[Self <: ICardCalloutProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICardCalloutProps](x: Self) {
       
-      @scala.inline
-      def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setFinalHeight(value: Double): Self = StObject.set(x, "finalHeight", value.asInstanceOf[js.Any])
+      inline def setFinalHeight(value: Double): Self = StObject.set(x, "finalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalHeightUndefined: Self = StObject.set(x, "finalHeight", js.undefined)
+      inline def setFinalHeightUndefined: Self = StObject.set(x, "finalHeight", js.undefined)
     }
   }
 }

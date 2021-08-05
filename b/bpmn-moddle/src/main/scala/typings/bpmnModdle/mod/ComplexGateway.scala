@@ -14,8 +14,7 @@ trait ComplexGateway
 }
 object ComplexGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     activationCondition: Expression,
@@ -33,13 +32,10 @@ object ComplexGateway {
     __obj.asInstanceOf[ComplexGateway]
   }
   
-  @scala.inline
-  implicit class ComplexGatewayMutableBuilder[Self <: ComplexGateway] (val x: Self) extends AnyVal {
+  extension [Self <: ComplexGateway](x: Self) {
     
-    @scala.inline
-    def setActivationCondition(value: Expression): Self = StObject.set(x, "activationCondition", value.asInstanceOf[js.Any])
+    inline def setActivationCondition(value: Expression): Self = StObject.set(x, "activationCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

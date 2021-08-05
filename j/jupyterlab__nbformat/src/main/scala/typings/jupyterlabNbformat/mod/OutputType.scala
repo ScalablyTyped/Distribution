@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OutputType extends StObject
 object OutputType {
   
-  @scala.inline
-  def display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data = "display_data".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data]
+  inline def display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data = "display_data".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data]
   
-  @scala.inline
-  def error: typings.jupyterlabNbformat.jupyterlabNbformatStrings.error = "error".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.error]
+  inline def error: typings.jupyterlabNbformat.jupyterlabNbformatStrings.error = "error".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.error]
   
-  @scala.inline
-  def execute_result: typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result = "execute_result".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result]
+  inline def execute_result: typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result = "execute_result".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result]
   
-  @scala.inline
-  def stream: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream = "stream".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream]
+  inline def stream: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream = "stream".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream]
   
-  @scala.inline
-  def update_display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data = "update_display_data".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data]
+  inline def update_display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data = "update_display_data".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data]
 }

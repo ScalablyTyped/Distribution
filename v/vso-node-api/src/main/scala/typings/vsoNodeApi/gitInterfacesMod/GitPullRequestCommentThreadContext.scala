@@ -23,8 +23,7 @@ trait GitPullRequestCommentThreadContext extends StObject {
 }
 object GitPullRequestCommentThreadContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeTrackingId: Double,
     iterationContext: CommentIterationContext,
     trackingCriteria: CommentTrackingCriteria
@@ -33,16 +32,12 @@ object GitPullRequestCommentThreadContext {
     __obj.asInstanceOf[GitPullRequestCommentThreadContext]
   }
   
-  @scala.inline
-  implicit class GitPullRequestCommentThreadContextMutableBuilder[Self <: GitPullRequestCommentThreadContext] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestCommentThreadContext](x: Self) {
     
-    @scala.inline
-    def setChangeTrackingId(value: Double): Self = StObject.set(x, "changeTrackingId", value.asInstanceOf[js.Any])
+    inline def setChangeTrackingId(value: Double): Self = StObject.set(x, "changeTrackingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationContext(value: CommentIterationContext): Self = StObject.set(x, "iterationContext", value.asInstanceOf[js.Any])
+    inline def setIterationContext(value: CommentIterationContext): Self = StObject.set(x, "iterationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingCriteria(value: CommentTrackingCriteria): Self = StObject.set(x, "trackingCriteria", value.asInstanceOf[js.Any])
+    inline def setTrackingCriteria(value: CommentTrackingCriteria): Self = StObject.set(x, "trackingCriteria", value.asInstanceOf[js.Any])
   }
 }

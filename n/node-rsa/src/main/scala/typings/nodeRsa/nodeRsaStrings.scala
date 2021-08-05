@@ -20,144 +20,124 @@ object nodeRsaStrings {
   sealed trait ascii
     extends StObject
        with Encoding
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
   sealed trait base64
     extends StObject
        with Encoding
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait binary
     extends StObject
        with Encoding
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait browser extends StObject
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait buffer
     extends StObject
        with Encoding
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait components
     extends StObject
        with Format
        with FormatComponentsPrivate
-  @scala.inline
-  def components: components = "components".asInstanceOf[components]
+  inline def components: components = "components".asInstanceOf[components]
   
   @js.native
   sealed trait `components-der`
     extends StObject
        with Format
        with FormatComponentsPrivate
-  @scala.inline
-  def `components-der`: `components-der` = "components-der".asInstanceOf[`components-der`]
+  inline def `components-der`: `components-der` = "components-der".asInstanceOf[`components-der`]
   
   @js.native
   sealed trait `components-pem`
     extends StObject
        with Format
        with FormatComponentsPrivate
-  @scala.inline
-  def `components-pem`: `components-pem` = "components-pem".asInstanceOf[`components-pem`]
+  inline def `components-pem`: `components-pem` = "components-pem".asInstanceOf[`components-pem`]
   
   @js.native
   sealed trait `components-private`
     extends StObject
        with Format
        with FormatComponentsPrivate
-  @scala.inline
-  def `components-private`: `components-private` = "components-private".asInstanceOf[`components-private`]
+  inline def `components-private`: `components-private` = "components-private".asInstanceOf[`components-private`]
   
   @js.native
   sealed trait `components-private-der`
     extends StObject
        with Format
        with FormatComponentsPrivate
-  @scala.inline
-  def `components-private-der`: `components-private-der` = "components-private-der".asInstanceOf[`components-private-der`]
+  inline def `components-private-der`: `components-private-der` = "components-private-der".asInstanceOf[`components-private-der`]
   
   @js.native
   sealed trait `components-private-pem`
     extends StObject
        with Format
        with FormatComponentsPrivate
-  @scala.inline
-  def `components-private-pem`: `components-private-pem` = "components-private-pem".asInstanceOf[`components-private-pem`]
+  inline def `components-private-pem`: `components-private-pem` = "components-private-pem".asInstanceOf[`components-private-pem`]
   
   @js.native
   sealed trait `components-public`
     extends StObject
        with Format
        with FormatComponentsPublic
-  @scala.inline
-  def `components-public`: `components-public` = "components-public".asInstanceOf[`components-public`]
+  inline def `components-public`: `components-public` = "components-public".asInstanceOf[`components-public`]
   
   @js.native
   sealed trait `components-public-der`
     extends StObject
        with Format
        with FormatComponentsPublic
-  @scala.inline
-  def `components-public-der`: `components-public-der` = "components-public-der".asInstanceOf[`components-public-der`]
+  inline def `components-public-der`: `components-public-der` = "components-public-der".asInstanceOf[`components-public-der`]
   
   @js.native
   sealed trait `components-public-pem`
     extends StObject
        with Format
        with FormatComponentsPublic
-  @scala.inline
-  def `components-public-pem`: `components-public-pem` = "components-public-pem".asInstanceOf[`components-public-pem`]
+  inline def `components-public-pem`: `components-public-pem` = "components-public-pem".asInstanceOf[`components-public-pem`]
   
   @js.native
   sealed trait hex
     extends StObject
        with Encoding
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait latin1
     extends StObject
        with Encoding
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
   sealed trait md4
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def md4: md4 = "md4".asInstanceOf[md4]
+  inline def md4: md4 = "md4".asInstanceOf[md4]
   
   @js.native
   sealed trait md5
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def md5: md5 = "md5".asInstanceOf[md5]
+  inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
   sealed trait node extends StObject
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait pkcs1
@@ -166,361 +146,312 @@ object nodeRsaStrings {
        with Format
        with FormatPem
        with SigningScheme
-  @scala.inline
-  def pkcs1: pkcs1 = "pkcs1".asInstanceOf[pkcs1]
+  inline def pkcs1: pkcs1 = "pkcs1".asInstanceOf[pkcs1]
   
   @js.native
   sealed trait `pkcs1-der`
     extends StObject
        with Format
        with FormatDer
-  @scala.inline
-  def `pkcs1-der`: `pkcs1-der` = "pkcs1-der".asInstanceOf[`pkcs1-der`]
+  inline def `pkcs1-der`: `pkcs1-der` = "pkcs1-der".asInstanceOf[`pkcs1-der`]
   
   @js.native
   sealed trait `pkcs1-md4`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-md4`: `pkcs1-md4` = "pkcs1-md4".asInstanceOf[`pkcs1-md4`]
+  inline def `pkcs1-md4`: `pkcs1-md4` = "pkcs1-md4".asInstanceOf[`pkcs1-md4`]
   
   @js.native
   sealed trait `pkcs1-md5`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-md5`: `pkcs1-md5` = "pkcs1-md5".asInstanceOf[`pkcs1-md5`]
+  inline def `pkcs1-md5`: `pkcs1-md5` = "pkcs1-md5".asInstanceOf[`pkcs1-md5`]
   
   @js.native
   sealed trait `pkcs1-pem`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs1-pem`: `pkcs1-pem` = "pkcs1-pem".asInstanceOf[`pkcs1-pem`]
+  inline def `pkcs1-pem`: `pkcs1-pem` = "pkcs1-pem".asInstanceOf[`pkcs1-pem`]
   
   @js.native
   sealed trait `pkcs1-private`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs1-private`: `pkcs1-private` = "pkcs1-private".asInstanceOf[`pkcs1-private`]
+  inline def `pkcs1-private`: `pkcs1-private` = "pkcs1-private".asInstanceOf[`pkcs1-private`]
   
   @js.native
   sealed trait `pkcs1-private-der`
     extends StObject
        with Format
        with FormatDer
-  @scala.inline
-  def `pkcs1-private-der`: `pkcs1-private-der` = "pkcs1-private-der".asInstanceOf[`pkcs1-private-der`]
+  inline def `pkcs1-private-der`: `pkcs1-private-der` = "pkcs1-private-der".asInstanceOf[`pkcs1-private-der`]
   
   @js.native
   sealed trait `pkcs1-private-pem`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs1-private-pem`: `pkcs1-private-pem` = "pkcs1-private-pem".asInstanceOf[`pkcs1-private-pem`]
+  inline def `pkcs1-private-pem`: `pkcs1-private-pem` = "pkcs1-private-pem".asInstanceOf[`pkcs1-private-pem`]
   
   @js.native
   sealed trait `pkcs1-public`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs1-public`: `pkcs1-public` = "pkcs1-public".asInstanceOf[`pkcs1-public`]
+  inline def `pkcs1-public`: `pkcs1-public` = "pkcs1-public".asInstanceOf[`pkcs1-public`]
   
   @js.native
   sealed trait `pkcs1-public-der`
     extends StObject
        with Format
        with FormatDer
-  @scala.inline
-  def `pkcs1-public-der`: `pkcs1-public-der` = "pkcs1-public-der".asInstanceOf[`pkcs1-public-der`]
+  inline def `pkcs1-public-der`: `pkcs1-public-der` = "pkcs1-public-der".asInstanceOf[`pkcs1-public-der`]
   
   @js.native
   sealed trait `pkcs1-public-pem`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs1-public-pem`: `pkcs1-public-pem` = "pkcs1-public-pem".asInstanceOf[`pkcs1-public-pem`]
+  inline def `pkcs1-public-pem`: `pkcs1-public-pem` = "pkcs1-public-pem".asInstanceOf[`pkcs1-public-pem`]
   
   @js.native
   sealed trait `pkcs1-ripemd160`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-ripemd160`: `pkcs1-ripemd160` = "pkcs1-ripemd160".asInstanceOf[`pkcs1-ripemd160`]
+  inline def `pkcs1-ripemd160`: `pkcs1-ripemd160` = "pkcs1-ripemd160".asInstanceOf[`pkcs1-ripemd160`]
   
   @js.native
   sealed trait `pkcs1-sha`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-sha`: `pkcs1-sha` = "pkcs1-sha".asInstanceOf[`pkcs1-sha`]
+  inline def `pkcs1-sha`: `pkcs1-sha` = "pkcs1-sha".asInstanceOf[`pkcs1-sha`]
   
   @js.native
   sealed trait `pkcs1-sha1`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-sha1`: `pkcs1-sha1` = "pkcs1-sha1".asInstanceOf[`pkcs1-sha1`]
+  inline def `pkcs1-sha1`: `pkcs1-sha1` = "pkcs1-sha1".asInstanceOf[`pkcs1-sha1`]
   
   @js.native
   sealed trait `pkcs1-sha224`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-sha224`: `pkcs1-sha224` = "pkcs1-sha224".asInstanceOf[`pkcs1-sha224`]
+  inline def `pkcs1-sha224`: `pkcs1-sha224` = "pkcs1-sha224".asInstanceOf[`pkcs1-sha224`]
   
   @js.native
   sealed trait `pkcs1-sha256`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-sha256`: `pkcs1-sha256` = "pkcs1-sha256".asInstanceOf[`pkcs1-sha256`]
+  inline def `pkcs1-sha256`: `pkcs1-sha256` = "pkcs1-sha256".asInstanceOf[`pkcs1-sha256`]
   
   @js.native
   sealed trait `pkcs1-sha384`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-sha384`: `pkcs1-sha384` = "pkcs1-sha384".asInstanceOf[`pkcs1-sha384`]
+  inline def `pkcs1-sha384`: `pkcs1-sha384` = "pkcs1-sha384".asInstanceOf[`pkcs1-sha384`]
   
   @js.native
   sealed trait `pkcs1-sha512`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pkcs1-sha512`: `pkcs1-sha512` = "pkcs1-sha512".asInstanceOf[`pkcs1-sha512`]
+  inline def `pkcs1-sha512`: `pkcs1-sha512` = "pkcs1-sha512".asInstanceOf[`pkcs1-sha512`]
   
   @js.native
   sealed trait pkcs1_oaep
     extends StObject
        with EncryptionScheme
-  @scala.inline
-  def pkcs1_oaep: pkcs1_oaep = "pkcs1_oaep".asInstanceOf[pkcs1_oaep]
+  inline def pkcs1_oaep: pkcs1_oaep = "pkcs1_oaep".asInstanceOf[pkcs1_oaep]
   
   @js.native
   sealed trait pkcs8
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
+  inline def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   
   @js.native
   sealed trait `pkcs8-der`
     extends StObject
        with Format
        with FormatDer
-  @scala.inline
-  def `pkcs8-der`: `pkcs8-der` = "pkcs8-der".asInstanceOf[`pkcs8-der`]
+  inline def `pkcs8-der`: `pkcs8-der` = "pkcs8-der".asInstanceOf[`pkcs8-der`]
   
   @js.native
   sealed trait `pkcs8-pem`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs8-pem`: `pkcs8-pem` = "pkcs8-pem".asInstanceOf[`pkcs8-pem`]
+  inline def `pkcs8-pem`: `pkcs8-pem` = "pkcs8-pem".asInstanceOf[`pkcs8-pem`]
   
   @js.native
   sealed trait `pkcs8-private`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs8-private`: `pkcs8-private` = "pkcs8-private".asInstanceOf[`pkcs8-private`]
+  inline def `pkcs8-private`: `pkcs8-private` = "pkcs8-private".asInstanceOf[`pkcs8-private`]
   
   @js.native
   sealed trait `pkcs8-private-der`
     extends StObject
        with Format
        with FormatDer
-  @scala.inline
-  def `pkcs8-private-der`: `pkcs8-private-der` = "pkcs8-private-der".asInstanceOf[`pkcs8-private-der`]
+  inline def `pkcs8-private-der`: `pkcs8-private-der` = "pkcs8-private-der".asInstanceOf[`pkcs8-private-der`]
   
   @js.native
   sealed trait `pkcs8-private-pem`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs8-private-pem`: `pkcs8-private-pem` = "pkcs8-private-pem".asInstanceOf[`pkcs8-private-pem`]
+  inline def `pkcs8-private-pem`: `pkcs8-private-pem` = "pkcs8-private-pem".asInstanceOf[`pkcs8-private-pem`]
   
   @js.native
   sealed trait `pkcs8-public`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs8-public`: `pkcs8-public` = "pkcs8-public".asInstanceOf[`pkcs8-public`]
+  inline def `pkcs8-public`: `pkcs8-public` = "pkcs8-public".asInstanceOf[`pkcs8-public`]
   
   @js.native
   sealed trait `pkcs8-public-der`
     extends StObject
        with Format
        with FormatDer
-  @scala.inline
-  def `pkcs8-public-der`: `pkcs8-public-der` = "pkcs8-public-der".asInstanceOf[`pkcs8-public-der`]
+  inline def `pkcs8-public-der`: `pkcs8-public-der` = "pkcs8-public-der".asInstanceOf[`pkcs8-public-der`]
   
   @js.native
   sealed trait `pkcs8-public-pem`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `pkcs8-public-pem`: `pkcs8-public-pem` = "pkcs8-public-pem".asInstanceOf[`pkcs8-public-pem`]
+  inline def `pkcs8-public-pem`: `pkcs8-public-pem` = "pkcs8-public-pem".asInstanceOf[`pkcs8-public-pem`]
   
   @js.native
   sealed trait `private`
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait pss
     extends StObject
        with SigningScheme
-  @scala.inline
-  def pss: pss = "pss".asInstanceOf[pss]
+  inline def pss: pss = "pss".asInstanceOf[pss]
   
   @js.native
   sealed trait `pss-md4`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-md4`: `pss-md4` = "pss-md4".asInstanceOf[`pss-md4`]
+  inline def `pss-md4`: `pss-md4` = "pss-md4".asInstanceOf[`pss-md4`]
   
   @js.native
   sealed trait `pss-md5`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-md5`: `pss-md5` = "pss-md5".asInstanceOf[`pss-md5`]
+  inline def `pss-md5`: `pss-md5` = "pss-md5".asInstanceOf[`pss-md5`]
   
   @js.native
   sealed trait `pss-ripemd160`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-ripemd160`: `pss-ripemd160` = "pss-ripemd160".asInstanceOf[`pss-ripemd160`]
+  inline def `pss-ripemd160`: `pss-ripemd160` = "pss-ripemd160".asInstanceOf[`pss-ripemd160`]
   
   @js.native
   sealed trait `pss-sha`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-sha`: `pss-sha` = "pss-sha".asInstanceOf[`pss-sha`]
+  inline def `pss-sha`: `pss-sha` = "pss-sha".asInstanceOf[`pss-sha`]
   
   @js.native
   sealed trait `pss-sha1`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-sha1`: `pss-sha1` = "pss-sha1".asInstanceOf[`pss-sha1`]
+  inline def `pss-sha1`: `pss-sha1` = "pss-sha1".asInstanceOf[`pss-sha1`]
   
   @js.native
   sealed trait `pss-sha224`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-sha224`: `pss-sha224` = "pss-sha224".asInstanceOf[`pss-sha224`]
+  inline def `pss-sha224`: `pss-sha224` = "pss-sha224".asInstanceOf[`pss-sha224`]
   
   @js.native
   sealed trait `pss-sha256`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-sha256`: `pss-sha256` = "pss-sha256".asInstanceOf[`pss-sha256`]
+  inline def `pss-sha256`: `pss-sha256` = "pss-sha256".asInstanceOf[`pss-sha256`]
   
   @js.native
   sealed trait `pss-sha384`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-sha384`: `pss-sha384` = "pss-sha384".asInstanceOf[`pss-sha384`]
+  inline def `pss-sha384`: `pss-sha384` = "pss-sha384".asInstanceOf[`pss-sha384`]
   
   @js.native
   sealed trait `pss-sha512`
     extends StObject
        with SigningSchemeHash
-  @scala.inline
-  def `pss-sha512`: `pss-sha512` = "pss-sha512".asInstanceOf[`pss-sha512`]
+  inline def `pss-sha512`: `pss-sha512` = "pss-sha512".asInstanceOf[`pss-sha512`]
   
   @js.native
   sealed trait public
     extends StObject
        with Format
        with FormatPem
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait ripemd160
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
+  inline def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
   
   @js.native
   sealed trait sha1
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
   sealed trait sha224
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def sha224: sha224 = "sha224".asInstanceOf[sha224]
+  inline def sha224: sha224 = "sha224".asInstanceOf[sha224]
   
   @js.native
   sealed trait sha256
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
   @js.native
   sealed trait sha384
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def sha384: sha384 = "sha384".asInstanceOf[sha384]
+  inline def sha384: sha384 = "sha384".asInstanceOf[sha384]
   
   @js.native
   sealed trait sha512
     extends StObject
        with HashingAlgorithm
-  @scala.inline
-  def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  inline def sha512: sha512 = "sha512".asInstanceOf[sha512]
   
   @js.native
   sealed trait ucs2
     extends StObject
        with Encoding
-  @scala.inline
-  def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
+  inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
   sealed trait utf16le
     extends StObject
        with Encoding
-  @scala.inline
-  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
   sealed trait utf8
     extends StObject
        with Encoding
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object InputMb {
     
-    @scala.inline
-    def apply(inputMb: Double, outputMb: Double): InputMb = {
+    inline def apply(inputMb: Double, outputMb: Double): InputMb = {
       val __obj = js.Dynamic.literal(inputMb = inputMb.asInstanceOf[js.Any], outputMb = outputMb.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputMb]
     }
     
-    @scala.inline
-    implicit class InputMbMutableBuilder[Self <: InputMb] (val x: Self) extends AnyVal {
+    extension [Self <: InputMb](x: Self) {
       
-      @scala.inline
-      def setInputMb(value: Double): Self = StObject.set(x, "inputMb", value.asInstanceOf[js.Any])
+      inline def setInputMb(value: Double): Self = StObject.set(x, "inputMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputMb(value: Double): Self = StObject.set(x, "outputMb", value.asInstanceOf[js.Any])
+      inline def setOutputMb(value: Double): Self = StObject.set(x, "outputMb", value.asInstanceOf[js.Any])
     }
   }
 }

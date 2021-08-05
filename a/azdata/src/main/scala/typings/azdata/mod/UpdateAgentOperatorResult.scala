@@ -12,16 +12,13 @@ trait UpdateAgentOperatorResult
 }
 object UpdateAgentOperatorResult {
   
-  @scala.inline
-  def apply(errorMessage: String, operator: AgentOperatorInfo, success: Boolean): UpdateAgentOperatorResult = {
+  inline def apply(errorMessage: String, operator: AgentOperatorInfo, success: Boolean): UpdateAgentOperatorResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAgentOperatorResult]
   }
   
-  @scala.inline
-  implicit class UpdateAgentOperatorResultMutableBuilder[Self <: UpdateAgentOperatorResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAgentOperatorResult](x: Self) {
     
-    @scala.inline
-    def setOperator(value: AgentOperatorInfo): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: AgentOperatorInfo): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }
 }

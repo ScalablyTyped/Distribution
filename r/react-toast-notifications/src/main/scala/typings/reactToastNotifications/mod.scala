@@ -30,11 +30,9 @@ object mod {
   @js.native
   val ToastProvider: ComponentType[ToastProviderProps] = js.native
   
-  @scala.inline
-  def useToasts(): typings.reactToastNotifications.anon.AddToast = ^.asInstanceOf[js.Dynamic].applyDynamic("useToasts")().asInstanceOf[typings.reactToastNotifications.anon.AddToast]
+  inline def useToasts(): typings.reactToastNotifications.anon.AddToast = ^.asInstanceOf[js.Dynamic].applyDynamic("useToasts")().asInstanceOf[typings.reactToastNotifications.anon.AddToast]
   
-  @scala.inline
-  def withToastManager(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withToastManager")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def withToastManager(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withToastManager")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type AddToast = js.Function3[
     /* content */ ReactNode, 
@@ -52,17 +50,13 @@ object mod {
   trait AppearanceTypes extends StObject
   object AppearanceTypes {
     
-    @scala.inline
-    def error: typings.reactToastNotifications.reactToastNotificationsStrings.error = "error".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.error]
+    inline def error: typings.reactToastNotifications.reactToastNotificationsStrings.error = "error".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.error]
     
-    @scala.inline
-    def info: typings.reactToastNotifications.reactToastNotificationsStrings.info = "info".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.info]
+    inline def info: typings.reactToastNotifications.reactToastNotificationsStrings.info = "info".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.info]
     
-    @scala.inline
-    def success: typings.reactToastNotifications.reactToastNotificationsStrings.success = "success".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.success]
+    inline def success: typings.reactToastNotifications.reactToastNotificationsStrings.success = "success".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.success]
     
-    @scala.inline
-    def warning: typings.reactToastNotifications.reactToastNotificationsStrings.warning = "warning".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.warning]
+    inline def warning: typings.reactToastNotifications.reactToastNotificationsStrings.warning = "warning".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.warning]
   }
   
   trait Options extends StObject {
@@ -75,29 +69,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(appearance: AppearanceTypes): Options = {
+    inline def apply(appearance: AppearanceTypes): Options = {
       val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+      inline def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDismiss(value: Boolean): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
+      inline def setAutoDismiss(value: Boolean): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
+      inline def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* id */ String => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* id */ String => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     }
   }
   
@@ -112,23 +99,17 @@ object mod {
   trait Placement extends StObject
   object Placement {
     
-    @scala.inline
-    def `bottom-center`: typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-center`]
+    inline def `bottom-center`: typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-center`]
     
-    @scala.inline
-    def `bottom-left`: typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-left`]
+    inline def `bottom-left`: typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-left`]
     
-    @scala.inline
-    def `bottom-right`: typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-right`]
+    inline def `bottom-right`: typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`bottom-right`]
     
-    @scala.inline
-    def `top-center`: typings.reactToastNotifications.reactToastNotificationsStrings.`top-center` = "top-center".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`top-center`]
+    inline def `top-center`: typings.reactToastNotifications.reactToastNotificationsStrings.`top-center` = "top-center".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`top-center`]
     
-    @scala.inline
-    def `top-left`: typings.reactToastNotifications.reactToastNotificationsStrings.`top-left` = "top-left".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`top-left`]
+    inline def `top-left`: typings.reactToastNotifications.reactToastNotificationsStrings.`top-left` = "top-left".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`top-left`]
     
-    @scala.inline
-    def `top-right`: typings.reactToastNotifications.reactToastNotificationsStrings.`top-right` = "top-right".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`top-right`]
+    inline def `top-right`: typings.reactToastNotifications.reactToastNotificationsStrings.`top-right` = "top-right".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.`top-right`]
   }
   
   type RemoveAllToasts = js.Function0[Unit]
@@ -145,8 +126,7 @@ object mod {
   }
   object ToastConsumerContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit,
       remove: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit,
       toasts: js.Array[Appearance]
@@ -155,22 +135,17 @@ object mod {
       __obj.asInstanceOf[ToastConsumerContext]
     }
     
-    @scala.inline
-    implicit class ToastConsumerContextMutableBuilder[Self <: ToastConsumerContext] (val x: Self) extends AnyVal {
+    extension [Self <: ToastConsumerContext](x: Self) {
       
-      @scala.inline
-      def setAdd(
+      inline def setAdd(
         value: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
       ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemove(value: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToasts(value: js.Array[Appearance]): Self = StObject.set(x, "toasts", value.asInstanceOf[js.Any])
+      inline def setToasts(value: js.Array[Appearance]): Self = StObject.set(x, "toasts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastsVarargs(value: Appearance*): Self = StObject.set(x, "toasts", js.Array(value :_*))
+      inline def setToastsVarargs(value: Appearance*): Self = StObject.set(x, "toasts", js.Array(value :_*))
     }
   }
   
@@ -180,17 +155,14 @@ object mod {
   }
   object ToastConsumerProps {
     
-    @scala.inline
-    def apply(children: ToastConsumerContext => ReactNode): ToastConsumerProps = {
+    inline def apply(children: ToastConsumerContext => ReactNode): ToastConsumerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[ToastConsumerProps]
     }
     
-    @scala.inline
-    implicit class ToastConsumerPropsMutableBuilder[Self <: ToastConsumerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToastConsumerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ToastConsumerContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ToastConsumerContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -204,26 +176,20 @@ object mod {
   }
   object ToastContainerProps {
     
-    @scala.inline
-    def apply(hasToasts: Boolean, placement: Placement): ToastContainerProps = {
+    inline def apply(hasToasts: Boolean, placement: Placement): ToastContainerProps = {
       val __obj = js.Dynamic.literal(hasToasts = hasToasts.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToastContainerProps]
     }
     
-    @scala.inline
-    implicit class ToastContainerPropsMutableBuilder[Self <: ToastContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToastContainerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHasToasts(value: Boolean): Self = StObject.set(x, "hasToasts", value.asInstanceOf[js.Any])
+      inline def setHasToasts(value: Boolean): Self = StObject.set(x, "hasToasts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,50 +239,36 @@ object mod {
   }
   object ToastProviderProps {
     
-    @scala.inline
-    def apply(): ToastProviderProps = {
+    inline def apply(): ToastProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastProviderProps]
     }
     
-    @scala.inline
-    implicit class ToastProviderPropsMutableBuilder[Self <: ToastProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToastProviderProps](x: Self) {
       
-      @scala.inline
-      def setAutoDismiss(value: Boolean | Double): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
+      inline def setAutoDismiss(value: Boolean | Double): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDismissTimeout(value: Double): Self = StObject.set(x, "autoDismissTimeout", value.asInstanceOf[js.Any])
+      inline def setAutoDismissTimeout(value: Double): Self = StObject.set(x, "autoDismissTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDismissTimeoutUndefined: Self = StObject.set(x, "autoDismissTimeout", js.undefined)
+      inline def setAutoDismissTimeoutUndefined: Self = StObject.set(x, "autoDismissTimeout", js.undefined)
       
-      @scala.inline
-      def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
+      inline def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setComponents(value: Toast): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Toast): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
   
@@ -329,17 +281,13 @@ object mod {
   trait TransitionState extends StObject
   object TransitionState {
     
-    @scala.inline
-    def entered: typings.reactToastNotifications.reactToastNotificationsStrings.entered = "entered".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.entered]
+    inline def entered: typings.reactToastNotifications.reactToastNotificationsStrings.entered = "entered".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.entered]
     
-    @scala.inline
-    def entering: typings.reactToastNotifications.reactToastNotificationsStrings.entering = "entering".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.entering]
+    inline def entering: typings.reactToastNotifications.reactToastNotificationsStrings.entering = "entering".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.entering]
     
-    @scala.inline
-    def exited: typings.reactToastNotifications.reactToastNotificationsStrings.exited = "exited".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exited]
+    inline def exited: typings.reactToastNotifications.reactToastNotificationsStrings.exited = "exited".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exited]
     
-    @scala.inline
-    def exiting: typings.reactToastNotifications.reactToastNotificationsStrings.exiting = "exiting".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exiting]
+    inline def exiting: typings.reactToastNotifications.reactToastNotificationsStrings.exiting = "exiting".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exiting]
   }
   
   trait UpdateOptions
@@ -350,20 +298,16 @@ object mod {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(appearance: AppearanceTypes): UpdateOptions = {
+    inline def apply(appearance: AppearanceTypes): UpdateOptions = {
       val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     }
   }
   

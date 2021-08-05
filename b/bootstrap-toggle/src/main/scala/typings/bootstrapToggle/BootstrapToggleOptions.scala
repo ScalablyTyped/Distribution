@@ -24,67 +24,47 @@ trait BootstrapToggleOptions extends StObject {
 }
 object BootstrapToggleOptions {
   
-  @scala.inline
-  def apply(): BootstrapToggleOptions = {
+  inline def apply(): BootstrapToggleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BootstrapToggleOptions]
   }
   
-  @scala.inline
-  implicit class BootstrapToggleOptionsMutableBuilder[Self <: BootstrapToggleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapToggleOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setOff(value: String): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+    inline def setOff(value: String): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
+    inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
     
-    @scala.inline
-    def setOffstyle(value: String): Self = StObject.set(x, "offstyle", value.asInstanceOf[js.Any])
+    inline def setOffstyle(value: String): Self = StObject.set(x, "offstyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffstyleUndefined: Self = StObject.set(x, "offstyle", js.undefined)
+    inline def setOffstyleUndefined: Self = StObject.set(x, "offstyle", js.undefined)
     
-    @scala.inline
-    def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    @scala.inline
-    def setOnstyle(value: String): Self = StObject.set(x, "onstyle", value.asInstanceOf[js.Any])
+    inline def setOnstyle(value: String): Self = StObject.set(x, "onstyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnstyleUndefined: Self = StObject.set(x, "onstyle", js.undefined)
+    inline def setOnstyleUndefined: Self = StObject.set(x, "onstyle", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

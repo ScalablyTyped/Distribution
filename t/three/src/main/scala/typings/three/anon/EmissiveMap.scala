@@ -11,16 +11,13 @@ trait EmissiveMap extends StObject {
 }
 object EmissiveMap {
   
-  @scala.inline
-  def apply(emissiveMap: IUniform): EmissiveMap = {
+  inline def apply(emissiveMap: IUniform): EmissiveMap = {
     val __obj = js.Dynamic.literal(emissiveMap = emissiveMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmissiveMap]
   }
   
-  @scala.inline
-  implicit class EmissiveMapMutableBuilder[Self <: EmissiveMap] (val x: Self) extends AnyVal {
+  extension [Self <: EmissiveMap](x: Self) {
     
-    @scala.inline
-    def setEmissiveMap(value: IUniform): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
+    inline def setEmissiveMap(value: IUniform): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
   }
 }

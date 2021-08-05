@@ -20,26 +20,20 @@ object optionsTableExclusionOptionsMod {
   }
   object TableExclusionOptions {
     
-    @scala.inline
-    def apply(): TableExclusionOptions = {
+    inline def apply(): TableExclusionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableExclusionOptions]
     }
     
-    @scala.inline
-    implicit class TableExclusionOptionsMutableBuilder[Self <: TableExclusionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableExclusionOptions](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

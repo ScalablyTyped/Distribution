@@ -19,20 +19,16 @@ trait ISqlTypeWithScale
 }
 object ISqlTypeWithScale {
   
-  @scala.inline
-  def apply(scale: Double, `type`: ISqlTypeFactoryWithScale): ISqlTypeWithScale = {
+  inline def apply(scale: Double, `type`: ISqlTypeFactoryWithScale): ISqlTypeWithScale = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISqlTypeWithScale]
   }
   
-  @scala.inline
-  implicit class ISqlTypeWithScaleMutableBuilder[Self <: ISqlTypeWithScale] (val x: Self) extends AnyVal {
+  extension [Self <: ISqlTypeWithScale](x: Self) {
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ISqlTypeFactoryWithScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ISqlTypeFactoryWithScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

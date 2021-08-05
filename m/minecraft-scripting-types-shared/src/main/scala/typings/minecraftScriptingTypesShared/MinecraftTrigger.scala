@@ -14,22 +14,17 @@ trait MinecraftTrigger extends StObject {
 }
 object MinecraftTrigger {
   
-  @scala.inline
-  def apply(event: String, filters: MinecraftFilter, target: String): MinecraftTrigger = {
+  inline def apply(event: String, filters: MinecraftFilter, target: String): MinecraftTrigger = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinecraftTrigger]
   }
   
-  @scala.inline
-  implicit class MinecraftTriggerMutableBuilder[Self <: MinecraftTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: MinecraftTrigger](x: Self) {
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

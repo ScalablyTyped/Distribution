@@ -67,8 +67,7 @@ trait Diagram
 }
 object Diagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     DataCaption: Double,
@@ -118,22 +117,16 @@ object Diagram {
     __obj.asInstanceOf[Diagram]
   }
   
-  @scala.inline
-  implicit class DiagramMutableBuilder[Self <: Diagram] (val x: Self) extends AnyVal {
+  extension [Self <: Diagram](x: Self) {
     
-    @scala.inline
-    def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
+    inline def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticSize(value: Boolean): Self = StObject.set(x, "AutomaticSize", value.asInstanceOf[js.Any])
+    inline def setAutomaticSize(value: Boolean): Self = StObject.set(x, "AutomaticSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
+    inline def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRowSource(value: ChartDataRowSource): Self = StObject.set(x, "DataRowSource", value.asInstanceOf[js.Any])
+    inline def setDataRowSource(value: ChartDataRowSource): Self = StObject.set(x, "DataRowSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingValueTreatment(value: Double): Self = StObject.set(x, "MissingValueTreatment", value.asInstanceOf[js.Any])
+    inline def setMissingValueTreatment(value: Double): Self = StObject.set(x, "MissingValueTreatment", value.asInstanceOf[js.Any])
   }
 }

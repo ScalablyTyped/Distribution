@@ -18,28 +18,21 @@ trait GetPartitionsResponse extends StObject {
 }
 object GetPartitionsResponse {
   
-  @scala.inline
-  def apply(): GetPartitionsResponse = {
+  inline def apply(): GetPartitionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPartitionsResponse]
   }
   
-  @scala.inline
-  implicit class GetPartitionsResponseMutableBuilder[Self <: GetPartitionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPartitionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPartitions(value: PartitionList): Self = StObject.set(x, "Partitions", value.asInstanceOf[js.Any])
+    inline def setPartitions(value: PartitionList): Self = StObject.set(x, "Partitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
+    inline def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
-    @scala.inline
-    def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
   }
 }

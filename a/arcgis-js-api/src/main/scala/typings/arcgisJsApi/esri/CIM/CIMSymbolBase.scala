@@ -10,17 +10,14 @@ trait CIMSymbolBase extends StObject {
 }
 object CIMSymbolBase {
   
-  @scala.inline
-  def apply(`type`: String): CIMSymbolBase = {
+  inline def apply(`type`: String): CIMSymbolBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMSymbolBase]
   }
   
-  @scala.inline
-  implicit class CIMSymbolBaseMutableBuilder[Self <: CIMSymbolBase] (val x: Self) extends AnyVal {
+  extension [Self <: CIMSymbolBase](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,16 +14,13 @@ trait Base64ScreenShotOptions
 }
 object Base64ScreenShotOptions {
   
-  @scala.inline
-  def apply(): Base64ScreenShotOptions = {
+  inline def apply(): Base64ScreenShotOptions = {
     val __obj = js.Dynamic.literal(encoding = "base64")
     __obj.asInstanceOf[Base64ScreenShotOptions]
   }
   
-  @scala.inline
-  implicit class Base64ScreenShotOptionsMutableBuilder[Self <: Base64ScreenShotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Base64ScreenShotOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }
 }

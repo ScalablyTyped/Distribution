@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdBorderDistanceFrom extends StObject
 object WdBorderDistanceFrom {
   
-  @scala.inline
-  def wdBorderDistanceFromPageEdge: `1` = 1.asInstanceOf[`1`]
+  inline def wdBorderDistanceFromPageEdge: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdBorderDistanceFromText: `0` = 0.asInstanceOf[`0`]
+  inline def wdBorderDistanceFromText: `0` = 0.asInstanceOf[`0`]
 }

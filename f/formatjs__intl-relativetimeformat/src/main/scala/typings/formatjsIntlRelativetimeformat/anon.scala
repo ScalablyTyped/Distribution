@@ -15,20 +15,16 @@ object anon {
   }
   object PickIntlRelativeTimeForma {
     
-    @scala.inline
-    def apply(): PickIntlRelativeTimeForma = {
+    inline def apply(): PickIntlRelativeTimeForma = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickIntlRelativeTimeForma]
     }
     
-    @scala.inline
-    implicit class PickIntlRelativeTimeFormaMutableBuilder[Self <: PickIntlRelativeTimeForma] (val x: Self) extends AnyVal {
+    extension [Self <: PickIntlRelativeTimeForma](x: Self) {
       
-      @scala.inline
-      def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     }
   }
 }

@@ -10,12 +10,10 @@ object setCookiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     cookieObjs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
   ): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cookieObjs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit]]]
-  @scala.inline
-  def default(
+  inline def default(
     cookieObjs: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
     ]

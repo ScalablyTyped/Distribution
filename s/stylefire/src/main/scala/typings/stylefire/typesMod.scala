@@ -24,38 +24,28 @@ object typesMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(onRead: (String, Props) => js.Any, onRender: (State, Props, ChangedValues) => Unit): Config = {
+    inline def apply(onRead: (String, Props) => js.Any, onRender: (State, Props, ChangedValues) => Unit): Config = {
       val __obj = js.Dynamic.literal(onRead = js.Any.fromFunction2(onRead), onRender = js.Any.fromFunction3(onRender))
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAliasMap(value: StringDictionary[String]): Self = StObject.set(x, "aliasMap", value.asInstanceOf[js.Any])
+      inline def setAliasMap(value: StringDictionary[String]): Self = StObject.set(x, "aliasMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasMapUndefined: Self = StObject.set(x, "aliasMap", js.undefined)
+      inline def setAliasMapUndefined: Self = StObject.set(x, "aliasMap", js.undefined)
       
-      @scala.inline
-      def setOnRead(value: (String, Props) => js.Any): Self = StObject.set(x, "onRead", js.Any.fromFunction2(value))
+      inline def setOnRead(value: (String, Props) => js.Any): Self = StObject.set(x, "onRead", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRender(value: (State, Props, ChangedValues) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction3(value))
+      inline def setOnRender(value: (State, Props, ChangedValues) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUncachedValues(value: Set[String]): Self = StObject.set(x, "uncachedValues", value.asInstanceOf[js.Any])
+      inline def setUncachedValues(value: Set[String]): Self = StObject.set(x, "uncachedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncachedValuesUndefined: Self = StObject.set(x, "uncachedValues", js.undefined)
+      inline def setUncachedValuesUndefined: Self = StObject.set(x, "uncachedValues", js.undefined)
       
-      @scala.inline
-      def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
+      inline def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
+      inline def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
     }
   }
   

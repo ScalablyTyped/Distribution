@@ -14,28 +14,21 @@ trait LookupRequest extends StObject {
 }
 object LookupRequest {
   
-  @scala.inline
-  def apply(): LookupRequest = {
+  inline def apply(): LookupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupRequest]
   }
   
-  @scala.inline
-  implicit class LookupRequestMutableBuilder[Self <: LookupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LookupRequest](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setReadOptions(value: ReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
+    inline def setReadOptions(value: ReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
+    inline def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
   }
 }

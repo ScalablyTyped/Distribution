@@ -31,34 +31,24 @@ object CellFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ANNOTATION: `8` = 8.asInstanceOf[`8`]
+    inline def ANNOTATION: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DATETIME: `2` = 2.asInstanceOf[`2`]
+    inline def DATETIME: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def EDITATTR: `256` = 256.asInstanceOf[`256`]
+    inline def EDITATTR: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def FORMATTED: `512` = 512.asInstanceOf[`512`]
+    inline def FORMATTED: `512` = 512.asInstanceOf[`512`]
     
-    @scala.inline
-    def FORMULA: `16` = 16.asInstanceOf[`16`]
+    inline def FORMULA: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def HARDATTR: `32` = 32.asInstanceOf[`32`]
+    inline def HARDATTR: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def OBJECTS: `128` = 128.asInstanceOf[`128`]
+    inline def OBJECTS: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def STRING: `4` = 4.asInstanceOf[`4`]
+    inline def STRING: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def STYLES: `64` = 64.asInstanceOf[`64`]
+    inline def STYLES: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def VALUE: `1` = 1.asInstanceOf[`1`]
+    inline def VALUE: `1` = 1.asInstanceOf[`1`]
   }
 }

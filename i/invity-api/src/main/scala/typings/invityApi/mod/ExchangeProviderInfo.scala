@@ -42,8 +42,7 @@ trait ExchangeProviderInfo extends StObject {
 }
 object ExchangeProviderInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addressFormats: StringMap,
     buyTickers: js.Array[String],
     companyName: String,
@@ -60,58 +59,40 @@ object ExchangeProviderInfo {
     __obj.asInstanceOf[ExchangeProviderInfo]
   }
   
-  @scala.inline
-  implicit class ExchangeProviderInfoMutableBuilder[Self <: ExchangeProviderInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeProviderInfo](x: Self) {
     
-    @scala.inline
-    def setAddressFormats(value: StringMap): Self = StObject.set(x, "addressFormats", value.asInstanceOf[js.Any])
+    inline def setAddressFormats(value: StringMap): Self = StObject.set(x, "addressFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyTickers(value: js.Array[String]): Self = StObject.set(x, "buyTickers", value.asInstanceOf[js.Any])
+    inline def setBuyTickers(value: js.Array[String]): Self = StObject.set(x, "buyTickers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyTickersVarargs(value: String*): Self = StObject.set(x, "buyTickers", js.Array(value :_*))
+    inline def setBuyTickersVarargs(value: String*): Self = StObject.set(x, "buyTickers", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedRate(value: Boolean): Self = StObject.set(x, "isFixedRate", value.asInstanceOf[js.Any])
+    inline def setIsFixedRate(value: Boolean): Self = StObject.set(x, "isFixedRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRefundRequired(value: Boolean): Self = StObject.set(x, "isRefundRequired", value.asInstanceOf[js.Any])
+    inline def setIsRefundRequired(value: Boolean): Self = StObject.set(x, "isRefundRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRefundRequiredUndefined: Self = StObject.set(x, "isRefundRequired", js.undefined)
+    inline def setIsRefundRequiredUndefined: Self = StObject.set(x, "isRefundRequired", js.undefined)
     
-    @scala.inline
-    def setKycPolicy(value: String): Self = StObject.set(x, "kycPolicy", value.asInstanceOf[js.Any])
+    inline def setKycPolicy(value: String): Self = StObject.set(x, "kycPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKycPolicyUndefined: Self = StObject.set(x, "kycPolicy", js.undefined)
+    inline def setKycPolicyUndefined: Self = StObject.set(x, "kycPolicy", js.undefined)
     
-    @scala.inline
-    def setKycUrl(value: String): Self = StObject.set(x, "kycUrl", value.asInstanceOf[js.Any])
+    inline def setKycUrl(value: String): Self = StObject.set(x, "kycUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellTickers(value: js.Array[String]): Self = StObject.set(x, "sellTickers", value.asInstanceOf[js.Any])
+    inline def setSellTickers(value: js.Array[String]): Self = StObject.set(x, "sellTickers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellTickersVarargs(value: String*): Self = StObject.set(x, "sellTickers", js.Array(value :_*))
+    inline def setSellTickersVarargs(value: String*): Self = StObject.set(x, "sellTickers", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
+    inline def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
   }
 }

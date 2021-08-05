@@ -13,22 +13,17 @@ trait Logging extends StObject {
 }
 object Logging {
   
-  @scala.inline
-  def apply(): Logging = {
+  inline def apply(): Logging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Logging]
   }
   
-  @scala.inline
-  implicit class LoggingMutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
+  extension [Self <: Logging](x: Self) {
     
-    @scala.inline
-    def setClusterLogging(value: LogSetups): Self = StObject.set(x, "clusterLogging", value.asInstanceOf[js.Any])
+    inline def setClusterLogging(value: LogSetups): Self = StObject.set(x, "clusterLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterLoggingUndefined: Self = StObject.set(x, "clusterLogging", js.undefined)
+    inline def setClusterLoggingUndefined: Self = StObject.set(x, "clusterLogging", js.undefined)
     
-    @scala.inline
-    def setClusterLoggingVarargs(value: LogSetup*): Self = StObject.set(x, "clusterLogging", js.Array(value :_*))
+    inline def setClusterLoggingVarargs(value: LogSetup*): Self = StObject.set(x, "clusterLogging", js.Array(value :_*))
   }
 }

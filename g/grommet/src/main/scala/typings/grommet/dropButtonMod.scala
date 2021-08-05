@@ -70,53 +70,38 @@ object dropButtonMod {
   }
   object DropButtonProps {
     
-    @scala.inline
-    def apply(dropContent: Element): DropButtonProps = {
+    inline def apply(dropContent: Element): DropButtonProps = {
       val __obj = js.Dynamic.literal(dropContent = dropContent.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropButtonProps]
     }
     
-    @scala.inline
-    implicit class DropButtonPropsMutableBuilder[Self <: DropButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropButtonProps](x: Self) {
       
-      @scala.inline
-      def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
+      inline def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
+      inline def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
       
-      @scala.inline
-      def setDropContent(value: Element): Self = StObject.set(x, "dropContent", value.asInstanceOf[js.Any])
+      inline def setDropContent(value: Element): Self = StObject.set(x, "dropContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
+      inline def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
+      inline def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
       
-      @scala.inline
-      def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+      inline def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+      inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
 }

@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait Shading extends StObject
 object Shading {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[Shading & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Shading")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Shading & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[Shading & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Shading")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Shading & scala.Nothing]]
 }

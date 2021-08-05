@@ -12,19 +12,15 @@ trait ShaUrl extends StObject {
 }
 object ShaUrl {
   
-  @scala.inline
-  def apply(sha: String, url: String): ShaUrl = {
+  inline def apply(sha: String, url: String): ShaUrl = {
     val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaUrl]
   }
   
-  @scala.inline
-  implicit class ShaUrlMutableBuilder[Self <: ShaUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ShaUrl](x: Self) {
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

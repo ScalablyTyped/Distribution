@@ -23,19 +23,15 @@ trait SearchDijkstraResult extends StObject {
 }
 object SearchDijkstraResult {
   
-  @scala.inline
-  def apply(distanceTo: NodeSingular => Double, pathTo: NodeSingular => CollectionReturnValue): SearchDijkstraResult = {
+  inline def apply(distanceTo: NodeSingular => Double, pathTo: NodeSingular => CollectionReturnValue): SearchDijkstraResult = {
     val __obj = js.Dynamic.literal(distanceTo = js.Any.fromFunction1(distanceTo), pathTo = js.Any.fromFunction1(pathTo))
     __obj.asInstanceOf[SearchDijkstraResult]
   }
   
-  @scala.inline
-  implicit class SearchDijkstraResultMutableBuilder[Self <: SearchDijkstraResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDijkstraResult](x: Self) {
     
-    @scala.inline
-    def setDistanceTo(value: NodeSingular => Double): Self = StObject.set(x, "distanceTo", js.Any.fromFunction1(value))
+    inline def setDistanceTo(value: NodeSingular => Double): Self = StObject.set(x, "distanceTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPathTo(value: NodeSingular => CollectionReturnValue): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
+    inline def setPathTo(value: NodeSingular => CollectionReturnValue): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
   }
 }

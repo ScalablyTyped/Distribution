@@ -19,19 +19,15 @@ trait EntityPathHttp extends StObject {
 }
 object EntityPathHttp {
   
-  @scala.inline
-  def apply(entityPath: String, http: AxiosInstance): EntityPathHttp = {
+  inline def apply(entityPath: String, http: AxiosInstance): EntityPathHttp = {
     val __obj = js.Dynamic.literal(entityPath = entityPath.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityPathHttp]
   }
   
-  @scala.inline
-  implicit class EntityPathHttpMutableBuilder[Self <: EntityPathHttp] (val x: Self) extends AnyVal {
+  extension [Self <: EntityPathHttp](x: Self) {
     
-    @scala.inline
-    def setEntityPath(value: String): Self = StObject.set(x, "entityPath", value.asInstanceOf[js.Any])
+    inline def setEntityPath(value: String): Self = StObject.set(x, "entityPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

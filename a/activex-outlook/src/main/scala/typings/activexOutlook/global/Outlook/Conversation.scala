@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Conversation")
 @js.native
-class Conversation protected ()
+/* private */ class Conversation ()
   extends StObject
      with typings.activexOutlook.Outlook.Conversation {
   
@@ -51,7 +51,7 @@ class Conversation protected ()
   /* CompleteClass */
   override def MarkAsUnread(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Conversation_typekey")
   var OutlookDotConversation_typekey: typings.activexOutlook.Outlook.Conversation = js.native
   

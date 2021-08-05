@@ -13,19 +13,15 @@ trait CreateHITResponse extends StObject {
 }
 object CreateHITResponse {
   
-  @scala.inline
-  def apply(): CreateHITResponse = {
+  inline def apply(): CreateHITResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateHITResponse]
   }
   
-  @scala.inline
-  implicit class CreateHITResponseMutableBuilder[Self <: CreateHITResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHITResponse](x: Self) {
     
-    @scala.inline
-    def setHIT(value: HIT): Self = StObject.set(x, "HIT", value.asInstanceOf[js.Any])
+    inline def setHIT(value: HIT): Self = StObject.set(x, "HIT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITUndefined: Self = StObject.set(x, "HIT", js.undefined)
+    inline def setHITUndefined: Self = StObject.set(x, "HIT", js.undefined)
   }
 }

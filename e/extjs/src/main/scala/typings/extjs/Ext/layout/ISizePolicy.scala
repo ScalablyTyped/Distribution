@@ -20,37 +20,27 @@ trait ISizePolicy extends StObject {
 }
 object ISizePolicy {
   
-  @scala.inline
-  def apply(): ISizePolicy = {
+  inline def apply(): ISizePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISizePolicy]
   }
   
-  @scala.inline
-  implicit class ISizePolicyMutableBuilder[Self <: ISizePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ISizePolicy](x: Self) {
     
-    @scala.inline
-    def setReadsHeight(value: Boolean): Self = StObject.set(x, "readsHeight", value.asInstanceOf[js.Any])
+    inline def setReadsHeight(value: Boolean): Self = StObject.set(x, "readsHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadsHeightUndefined: Self = StObject.set(x, "readsHeight", js.undefined)
+    inline def setReadsHeightUndefined: Self = StObject.set(x, "readsHeight", js.undefined)
     
-    @scala.inline
-    def setReadsWidth(value: Boolean): Self = StObject.set(x, "readsWidth", value.asInstanceOf[js.Any])
+    inline def setReadsWidth(value: Boolean): Self = StObject.set(x, "readsWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadsWidthUndefined: Self = StObject.set(x, "readsWidth", js.undefined)
+    inline def setReadsWidthUndefined: Self = StObject.set(x, "readsWidth", js.undefined)
     
-    @scala.inline
-    def setSetsHeight(value: Boolean): Self = StObject.set(x, "setsHeight", value.asInstanceOf[js.Any])
+    inline def setSetsHeight(value: Boolean): Self = StObject.set(x, "setsHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetsHeightUndefined: Self = StObject.set(x, "setsHeight", js.undefined)
+    inline def setSetsHeightUndefined: Self = StObject.set(x, "setsHeight", js.undefined)
     
-    @scala.inline
-    def setSetsWidth(value: Boolean): Self = StObject.set(x, "setsWidth", value.asInstanceOf[js.Any])
+    inline def setSetsWidth(value: Boolean): Self = StObject.set(x, "setsWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetsWidthUndefined: Self = StObject.set(x, "setsWidth", js.undefined)
+    inline def setSetsWidthUndefined: Self = StObject.set(x, "setsWidth", js.undefined)
   }
 }

@@ -33,40 +33,29 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim extends StObject {
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim {
   
-  @scala.inline
-  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim = {
+  inline def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim](x: Self) {
     
-    @scala.inline
-    def setClaimDate(value: String): Self = StObject.set(x, "claimDate", value.asInstanceOf[js.Any])
+    inline def setClaimDate(value: String): Self = StObject.set(x, "claimDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimDateUndefined: Self = StObject.set(x, "claimDate", js.undefined)
+    inline def setClaimDateUndefined: Self = StObject.set(x, "claimDate", js.undefined)
     
-    @scala.inline
-    def setClaimReview(value: js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]): Self = StObject.set(x, "claimReview", value.asInstanceOf[js.Any])
+    inline def setClaimReview(value: js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]): Self = StObject.set(x, "claimReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimReviewUndefined: Self = StObject.set(x, "claimReview", js.undefined)
+    inline def setClaimReviewUndefined: Self = StObject.set(x, "claimReview", js.undefined)
     
-    @scala.inline
-    def setClaimReviewVarargs(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview*): Self = StObject.set(x, "claimReview", js.Array(value :_*))
+    inline def setClaimReviewVarargs(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview*): Self = StObject.set(x, "claimReview", js.Array(value :_*))
     
-    @scala.inline
-    def setClaimant(value: String): Self = StObject.set(x, "claimant", value.asInstanceOf[js.Any])
+    inline def setClaimant(value: String): Self = StObject.set(x, "claimant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimantUndefined: Self = StObject.set(x, "claimant", js.undefined)
+    inline def setClaimantUndefined: Self = StObject.set(x, "claimant", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

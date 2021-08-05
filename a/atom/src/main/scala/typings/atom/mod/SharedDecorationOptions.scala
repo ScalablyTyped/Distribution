@@ -77,73 +77,51 @@ trait SharedDecorationOptions extends StObject {
 }
 object SharedDecorationOptions {
   
-  @scala.inline
-  def apply(): SharedDecorationOptions = {
+  inline def apply(): SharedDecorationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedDecorationOptions]
   }
   
-  @scala.inline
-  implicit class SharedDecorationOptionsMutableBuilder[Self <: SharedDecorationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SharedDecorationOptions](x: Self) {
     
-    @scala.inline
-    def setAvoidOverflow(value: Boolean): Self = StObject.set(x, "avoidOverflow", value.asInstanceOf[js.Any])
+    inline def setAvoidOverflow(value: Boolean): Self = StObject.set(x, "avoidOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidOverflowUndefined: Self = StObject.set(x, "avoidOverflow", js.undefined)
+    inline def setAvoidOverflowUndefined: Self = StObject.set(x, "avoidOverflow", js.undefined)
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setOmitEmptyLastRow(value: Boolean): Self = StObject.set(x, "omitEmptyLastRow", value.asInstanceOf[js.Any])
+    inline def setOmitEmptyLastRow(value: Boolean): Self = StObject.set(x, "omitEmptyLastRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitEmptyLastRowUndefined: Self = StObject.set(x, "omitEmptyLastRow", js.undefined)
+    inline def setOmitEmptyLastRowUndefined: Self = StObject.set(x, "omitEmptyLastRow", js.undefined)
     
-    @scala.inline
-    def setOnlyEmpty(value: Boolean): Self = StObject.set(x, "onlyEmpty", value.asInstanceOf[js.Any])
+    inline def setOnlyEmpty(value: Boolean): Self = StObject.set(x, "onlyEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyEmptyUndefined: Self = StObject.set(x, "onlyEmpty", js.undefined)
+    inline def setOnlyEmptyUndefined: Self = StObject.set(x, "onlyEmpty", js.undefined)
     
-    @scala.inline
-    def setOnlyHead(value: Boolean): Self = StObject.set(x, "onlyHead", value.asInstanceOf[js.Any])
+    inline def setOnlyHead(value: Boolean): Self = StObject.set(x, "onlyHead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyHeadUndefined: Self = StObject.set(x, "onlyHead", js.undefined)
+    inline def setOnlyHeadUndefined: Self = StObject.set(x, "onlyHead", js.undefined)
     
-    @scala.inline
-    def setOnlyNonEmpty(value: Boolean): Self = StObject.set(x, "onlyNonEmpty", value.asInstanceOf[js.Any])
+    inline def setOnlyNonEmpty(value: Boolean): Self = StObject.set(x, "onlyNonEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyNonEmptyUndefined: Self = StObject.set(x, "onlyNonEmpty", js.undefined)
+    inline def setOnlyNonEmptyUndefined: Self = StObject.set(x, "onlyNonEmpty", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setPosition(value: head | tail | before | after): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: head | tail | before | after): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

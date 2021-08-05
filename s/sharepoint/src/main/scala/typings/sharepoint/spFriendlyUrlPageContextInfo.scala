@@ -16,25 +16,19 @@ trait spFriendlyUrlPageContextInfo extends StObject {
 }
 object spFriendlyUrlPageContextInfo {
   
-  @scala.inline
-  def apply(termId: String, termSetId: String, termStoreId: String, title: String): spFriendlyUrlPageContextInfo = {
+  inline def apply(termId: String, termSetId: String, termStoreId: String, title: String): spFriendlyUrlPageContextInfo = {
     val __obj = js.Dynamic.literal(termId = termId.asInstanceOf[js.Any], termSetId = termSetId.asInstanceOf[js.Any], termStoreId = termStoreId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[spFriendlyUrlPageContextInfo]
   }
   
-  @scala.inline
-  implicit class spFriendlyUrlPageContextInfoMutableBuilder[Self <: spFriendlyUrlPageContextInfo] (val x: Self) extends AnyVal {
+  extension [Self <: spFriendlyUrlPageContextInfo](x: Self) {
     
-    @scala.inline
-    def setTermId(value: String): Self = StObject.set(x, "termId", value.asInstanceOf[js.Any])
+    inline def setTermId(value: String): Self = StObject.set(x, "termId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermSetId(value: String): Self = StObject.set(x, "termSetId", value.asInstanceOf[js.Any])
+    inline def setTermSetId(value: String): Self = StObject.set(x, "termSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermStoreId(value: String): Self = StObject.set(x, "termStoreId", value.asInstanceOf[js.Any])
+    inline def setTermStoreId(value: String): Self = StObject.set(x, "termStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

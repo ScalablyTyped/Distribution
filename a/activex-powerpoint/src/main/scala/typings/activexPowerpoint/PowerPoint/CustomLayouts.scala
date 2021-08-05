@@ -21,6 +21,6 @@ trait CustomLayouts extends StObject {
   def Paste(): CustomLayout = js.native
   def Paste(Index: Double): CustomLayout = js.native
   
-  @JSName("PowerPoint.CustomLayouts_typekey")
+  /* private */ @JSName("PowerPoint.CustomLayouts_typekey")
   var PowerPointDotCustomLayouts_typekey: CustomLayouts = js.native
 }

@@ -24,19 +24,16 @@ object unnecessaryBindRuleMod {
     @JSImport("tslint/lib/rules/unnecessaryBindRule", "Rule.FAILURE_STRING_ARROW")
     @js.native
     def FAILURE_STRING_ARROW: String = js.native
-    @scala.inline
-    def FAILURE_STRING_ARROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_ARROW")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_ARROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_ARROW")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/unnecessaryBindRule", "Rule.FAILURE_STRING_FUNCTION")
     @js.native
     def FAILURE_STRING_FUNCTION: String = js.native
-    @scala.inline
-    def FAILURE_STRING_FUNCTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_FUNCTION")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_FUNCTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_FUNCTION")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/unnecessaryBindRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

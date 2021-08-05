@@ -24,8 +24,7 @@ trait SimpleLogRing
 }
 object SimpleLogRing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CollectedLog: SafeArray[String],
     create: () => Unit,
     createWithSize: Double => Unit,
@@ -36,13 +35,10 @@ object SimpleLogRing {
     __obj.asInstanceOf[SimpleLogRing]
   }
   
-  @scala.inline
-  implicit class SimpleLogRingMutableBuilder[Self <: SimpleLogRing] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleLogRing](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithSize(value: Double => Unit): Self = StObject.set(x, "createWithSize", js.Any.fromFunction1(value))
+    inline def setCreateWithSize(value: Double => Unit): Self = StObject.set(x, "createWithSize", js.Any.fromFunction1(value))
   }
 }

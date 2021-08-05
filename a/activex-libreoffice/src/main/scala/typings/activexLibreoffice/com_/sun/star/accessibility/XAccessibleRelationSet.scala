@@ -54,8 +54,7 @@ trait XAccessibleRelationSet
 }
 object XAccessibleRelationSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RelationCount: Double,
     acquire: () => Unit,
     containsRelation: Double => Boolean,
@@ -69,22 +68,16 @@ object XAccessibleRelationSet {
     __obj.asInstanceOf[XAccessibleRelationSet]
   }
   
-  @scala.inline
-  implicit class XAccessibleRelationSetMutableBuilder[Self <: XAccessibleRelationSet] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleRelationSet](x: Self) {
     
-    @scala.inline
-    def setContainsRelation(value: Double => Boolean): Self = StObject.set(x, "containsRelation", js.Any.fromFunction1(value))
+    inline def setContainsRelation(value: Double => Boolean): Self = StObject.set(x, "containsRelation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRelation(value: Double => AccessibleRelation): Self = StObject.set(x, "getRelation", js.Any.fromFunction1(value))
+    inline def setGetRelation(value: Double => AccessibleRelation): Self = StObject.set(x, "getRelation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRelationByType(value: Double => AccessibleRelation): Self = StObject.set(x, "getRelationByType", js.Any.fromFunction1(value))
+    inline def setGetRelationByType(value: Double => AccessibleRelation): Self = StObject.set(x, "getRelationByType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRelationCount(value: () => Double): Self = StObject.set(x, "getRelationCount", js.Any.fromFunction0(value))
+    inline def setGetRelationCount(value: () => Double): Self = StObject.set(x, "getRelationCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRelationCount(value: Double): Self = StObject.set(x, "RelationCount", value.asInstanceOf[js.Any])
+    inline def setRelationCount(value: Double): Self = StObject.set(x, "RelationCount", value.asInstanceOf[js.Any])
   }
 }

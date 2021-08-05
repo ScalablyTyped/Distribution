@@ -18,22 +18,17 @@ trait GetSystemTemplateRequest extends StObject {
 }
 object GetSystemTemplateRequest {
   
-  @scala.inline
-  def apply(id: Urn): GetSystemTemplateRequest = {
+  inline def apply(id: Urn): GetSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSystemTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetSystemTemplateRequestMutableBuilder[Self <: GetSystemTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSystemTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
+    inline def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
+    inline def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
   }
 }

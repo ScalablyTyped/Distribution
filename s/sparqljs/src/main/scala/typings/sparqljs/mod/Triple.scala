@@ -14,8 +14,7 @@ trait Triple extends StObject {
 }
 object Triple {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `object`: Term,
     predicate: IriTerm | VariableTerm | PropertyPath,
     subject: IriTerm | BlankTerm | VariableTerm | QuadTerm
@@ -25,16 +24,12 @@ object Triple {
     __obj.asInstanceOf[Triple]
   }
   
-  @scala.inline
-  implicit class TripleMutableBuilder[Self <: Triple] (val x: Self) extends AnyVal {
+  extension [Self <: Triple](x: Self) {
     
-    @scala.inline
-    def setObject(value: Term): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Term): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicate(value: IriTerm | VariableTerm | PropertyPath): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: IriTerm | VariableTerm | PropertyPath): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: IriTerm | BlankTerm | VariableTerm | QuadTerm): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: IriTerm | BlankTerm | VariableTerm | QuadTerm): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

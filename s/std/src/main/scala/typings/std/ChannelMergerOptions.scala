@@ -12,19 +12,15 @@ trait ChannelMergerOptions
 }
 object ChannelMergerOptions {
   
-  @scala.inline
-  def apply(): ChannelMergerOptions = {
+  inline def apply(): ChannelMergerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelMergerOptions]
   }
   
-  @scala.inline
-  implicit class ChannelMergerOptionsMutableBuilder[Self <: ChannelMergerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelMergerOptions](x: Self) {
     
-    @scala.inline
-    def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
+    inline def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
+    inline def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
   }
 }

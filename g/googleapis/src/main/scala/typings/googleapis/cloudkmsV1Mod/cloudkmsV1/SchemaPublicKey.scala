@@ -25,25 +25,19 @@ trait SchemaPublicKey extends StObject {
 }
 object SchemaPublicKey {
   
-  @scala.inline
-  def apply(): SchemaPublicKey = {
+  inline def apply(): SchemaPublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublicKey]
   }
   
-  @scala.inline
-  implicit class SchemaPublicKeyMutableBuilder[Self <: SchemaPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublicKey](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
+    inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
+    inline def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
   }
 }

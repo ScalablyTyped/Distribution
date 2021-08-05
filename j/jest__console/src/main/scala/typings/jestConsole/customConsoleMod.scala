@@ -25,21 +25,21 @@ object customConsoleMod {
     extends StObject
        with Console {
     
-    var _counters: js.Any = js.native
+    /* private */ var _counters: js.Any = js.native
     
-    var _formatBuffer: js.Any = js.native
+    /* private */ var _formatBuffer: js.Any = js.native
     
-    var _groupDepth: js.Any = js.native
+    /* private */ var _groupDepth: js.Any = js.native
     
-    var _log: js.Any = js.native
+    /* private */ var _log: js.Any = js.native
     
-    var _logError: js.Any = js.native
+    /* private */ var _logError: js.Any = js.native
     
-    var _stderr: js.Any = js.native
+    /* private */ var _stderr: js.Any = js.native
     
-    var _stdout: js.Any = js.native
+    /* private */ var _stdout: js.Any = js.native
     
-    var _timers: js.Any = js.native
+    /* private */ var _timers: js.Any = js.native
     
     def assert(value: js.Any): Unit = js.native
     def assert(value: js.Any, message: String): Unit = js.native

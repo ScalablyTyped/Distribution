@@ -11,41 +11,35 @@ object pluralsCldrStrings {
   sealed trait few
     extends StObject
        with Form
-  @scala.inline
-  def few: few = "few".asInstanceOf[few]
+  inline def few: few = "few".asInstanceOf[few]
   
   @js.native
   sealed trait many
     extends StObject
        with Form
-  @scala.inline
-  def many: many = "many".asInstanceOf[many]
+  inline def many: many = "many".asInstanceOf[many]
   
   @js.native
   sealed trait one
     extends StObject
        with Form
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait other
     extends StObject
        with Form
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait two
     extends StObject
        with Form
-  @scala.inline
-  def two: two = "two".asInstanceOf[two]
+  inline def two: two = "two".asInstanceOf[two]
   
   @js.native
   sealed trait zero
     extends StObject
        with Form
-  @scala.inline
-  def zero: zero = "zero".asInstanceOf[zero]
+  inline def zero: zero = "zero".asInstanceOf[zero]
 }

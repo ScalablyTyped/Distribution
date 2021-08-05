@@ -33,43 +33,31 @@ trait RefreshSchemasStatus extends StObject {
 }
 object RefreshSchemasStatus {
   
-  @scala.inline
-  def apply(): RefreshSchemasStatus = {
+  inline def apply(): RefreshSchemasStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshSchemasStatus]
   }
   
-  @scala.inline
-  implicit class RefreshSchemasStatusMutableBuilder[Self <: RefreshSchemasStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshSchemasStatus](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
+    inline def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
     
-    @scala.inline
-    def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
+    inline def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
+    inline def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
-    @scala.inline
-    def setLastRefreshDate(value: TStamp): Self = StObject.set(x, "LastRefreshDate", value.asInstanceOf[js.Any])
+    inline def setLastRefreshDate(value: TStamp): Self = StObject.set(x, "LastRefreshDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshDateUndefined: Self = StObject.set(x, "LastRefreshDate", js.undefined)
+    inline def setLastRefreshDateUndefined: Self = StObject.set(x, "LastRefreshDate", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
+    inline def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RefreshSchemasStatusTypeValue): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RefreshSchemasStatusTypeValue): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

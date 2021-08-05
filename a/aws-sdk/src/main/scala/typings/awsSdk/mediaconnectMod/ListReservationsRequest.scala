@@ -18,25 +18,19 @@ trait ListReservationsRequest extends StObject {
 }
 object ListReservationsRequest {
   
-  @scala.inline
-  def apply(): ListReservationsRequest = {
+  inline def apply(): ListReservationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReservationsRequest]
   }
   
-  @scala.inline
-  implicit class ListReservationsRequestMutableBuilder[Self <: ListReservationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListReservationsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

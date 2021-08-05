@@ -35,8 +35,7 @@ trait XHatchWindowController
 }
 object XHatchWindowController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     activated: () => Unit,
     calcAdjustedRectangle: Rectangle => Rectangle,
@@ -49,19 +48,14 @@ object XHatchWindowController {
     __obj.asInstanceOf[XHatchWindowController]
   }
   
-  @scala.inline
-  implicit class XHatchWindowControllerMutableBuilder[Self <: XHatchWindowController] (val x: Self) extends AnyVal {
+  extension [Self <: XHatchWindowController](x: Self) {
     
-    @scala.inline
-    def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
+    inline def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCalcAdjustedRectangle(value: Rectangle => Rectangle): Self = StObject.set(x, "calcAdjustedRectangle", js.Any.fromFunction1(value))
+    inline def setCalcAdjustedRectangle(value: Rectangle => Rectangle): Self = StObject.set(x, "calcAdjustedRectangle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeactivated(value: () => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction0(value))
+    inline def setDeactivated(value: () => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestPositioning(value: Rectangle => Unit): Self = StObject.set(x, "requestPositioning", js.Any.fromFunction1(value))
+    inline def setRequestPositioning(value: Rectangle => Unit): Self = StObject.set(x, "requestPositioning", js.Any.fromFunction1(value))
   }
 }

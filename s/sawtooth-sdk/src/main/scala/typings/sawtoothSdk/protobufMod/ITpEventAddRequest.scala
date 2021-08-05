@@ -14,31 +14,23 @@ trait ITpEventAddRequest extends StObject {
 }
 object ITpEventAddRequest {
   
-  @scala.inline
-  def apply(): ITpEventAddRequest = {
+  inline def apply(): ITpEventAddRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpEventAddRequest]
   }
   
-  @scala.inline
-  implicit class ITpEventAddRequestMutableBuilder[Self <: ITpEventAddRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITpEventAddRequest](x: Self) {
     
-    @scala.inline
-    def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextIdNull: Self = StObject.set(x, "contextId", null)
+    inline def setContextIdNull: Self = StObject.set(x, "contextId", null)
     
-    @scala.inline
-    def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
+    inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
     
-    @scala.inline
-    def setEvent(value: IEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: IEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNull: Self = StObject.set(x, "event", null)
+    inline def setEventNull: Self = StObject.set(x, "event", null)
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
   }
 }

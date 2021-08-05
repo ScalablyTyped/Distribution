@@ -42,49 +42,35 @@ trait CephFSVolumeSource extends StObject {
 }
 object CephFSVolumeSource {
   
-  @scala.inline
-  def apply(monitors: Input[js.Array[Input[String]]]): CephFSVolumeSource = {
+  inline def apply(monitors: Input[js.Array[Input[String]]]): CephFSVolumeSource = {
     val __obj = js.Dynamic.literal(monitors = monitors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CephFSVolumeSource]
   }
   
-  @scala.inline
-  implicit class CephFSVolumeSourceMutableBuilder[Self <: CephFSVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CephFSVolumeSource](x: Self) {
     
-    @scala.inline
-    def setMonitors(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
+    inline def setMonitors(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorsVarargs(value: Input[String]*): Self = StObject.set(x, "monitors", js.Array(value :_*))
+    inline def setMonitorsVarargs(value: Input[String]*): Self = StObject.set(x, "monitors", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSecretFile(value: Input[String]): Self = StObject.set(x, "secretFile", value.asInstanceOf[js.Any])
+    inline def setSecretFile(value: Input[String]): Self = StObject.set(x, "secretFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretFileUndefined: Self = StObject.set(x, "secretFile", js.undefined)
+    inline def setSecretFileUndefined: Self = StObject.set(x, "secretFile", js.undefined)
     
-    @scala.inline
-    def setSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
+    inline def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
-    @scala.inline
-    def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

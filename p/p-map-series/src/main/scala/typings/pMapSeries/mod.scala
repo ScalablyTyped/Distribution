@@ -46,8 +46,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType, MappedValueType](
+  inline def apply[ValueType, MappedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     mapper: js.Function2[
       /* element */ ValueType, 
@@ -119,8 +118,7 @@ object mod {
   // 	) => PromiseLike<MappedValueType> | MappedValueType
   // ): Promise<MappedValueType[]>;
   // export = pMapSeries;
-  @scala.inline
-  def default[ValueType, MappedValueType](
+  inline def default[ValueType, MappedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     mapper: js.Function2[
       /* element */ ValueType, 
@@ -128,6 +126,5 @@ object mod {
       js.Thenable[MappedValueType] | MappedValueType
     ]
   ): js.Promise[js.Array[MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MappedValueType]]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

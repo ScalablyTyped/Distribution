@@ -32,46 +32,33 @@ trait SchemaInitialStateConfig extends StObject {
 }
 object SchemaInitialStateConfig {
   
-  @scala.inline
-  def apply(): SchemaInitialStateConfig = {
+  inline def apply(): SchemaInitialStateConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInitialStateConfig]
   }
   
-  @scala.inline
-  implicit class SchemaInitialStateConfigMutableBuilder[Self <: SchemaInitialStateConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInitialStateConfig](x: Self) {
     
-    @scala.inline
-    def setDbs(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "dbs", value.asInstanceOf[js.Any])
+    inline def setDbs(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "dbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbsUndefined: Self = StObject.set(x, "dbs", js.undefined)
+    inline def setDbsUndefined: Self = StObject.set(x, "dbs", js.undefined)
     
-    @scala.inline
-    def setDbsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbs", js.Array(value :_*))
+    inline def setDbsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbs", js.Array(value :_*))
     
-    @scala.inline
-    def setDbxs(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "dbxs", value.asInstanceOf[js.Any])
+    inline def setDbxs(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "dbxs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbxsUndefined: Self = StObject.set(x, "dbxs", js.undefined)
+    inline def setDbxsUndefined: Self = StObject.set(x, "dbxs", js.undefined)
     
-    @scala.inline
-    def setDbxsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbxs", js.Array(value :_*))
+    inline def setDbxsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbxs", js.Array(value :_*))
     
-    @scala.inline
-    def setKeks(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "keks", value.asInstanceOf[js.Any])
+    inline def setKeks(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "keks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeksUndefined: Self = StObject.set(x, "keks", js.undefined)
+    inline def setKeksUndefined: Self = StObject.set(x, "keks", js.undefined)
     
-    @scala.inline
-    def setKeksVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "keks", js.Array(value :_*))
+    inline def setKeksVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "keks", js.Array(value :_*))
     
-    @scala.inline
-    def setPk(value: SchemaFileContentBuffer): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: SchemaFileContentBuffer): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
+    inline def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
   }
 }

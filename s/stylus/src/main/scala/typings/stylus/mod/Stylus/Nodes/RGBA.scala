@@ -43,8 +43,7 @@ trait RGBA
 }
 object RGBA {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Double,
     add: (Double, Double, Double, Double) => RGBA,
     b: Double,
@@ -73,37 +72,26 @@ object RGBA {
     __obj.asInstanceOf[RGBA]
   }
   
-  @scala.inline
-  implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
+  extension [Self <: RGBA](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd(value: (Double, Double, Double, Double) => RGBA): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
+    inline def setAdd(value: (Double, Double, Double, Double) => RGBA): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivide(value: Double => RGBA): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
+    inline def setDivide(value: Double => RGBA): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsla(value: HSLA): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
+    inline def setHsla(value: HSLA): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiply(value: Double => RGBA): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
+    inline def setMultiply(value: Double => RGBA): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgba(value: RGBA): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
+    inline def setRgba(value: RGBA): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstract(value: (Double, Double, Double, Double) => RGBA): Self = StObject.set(x, "substract", js.Any.fromFunction4(value))
+    inline def setSubstract(value: (Double, Double, Double, Double) => RGBA): Self = StObject.set(x, "substract", js.Any.fromFunction4(value))
   }
 }

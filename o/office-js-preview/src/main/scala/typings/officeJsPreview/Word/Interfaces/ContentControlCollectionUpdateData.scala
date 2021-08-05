@@ -11,22 +11,17 @@ trait ContentControlCollectionUpdateData extends StObject {
 }
 object ContentControlCollectionUpdateData {
   
-  @scala.inline
-  def apply(): ContentControlCollectionUpdateData = {
+  inline def apply(): ContentControlCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentControlCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class ContentControlCollectionUpdateDataMutableBuilder[Self <: ContentControlCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ContentControlCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ContentControlData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ContentControlData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ContentControlData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ContentControlData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

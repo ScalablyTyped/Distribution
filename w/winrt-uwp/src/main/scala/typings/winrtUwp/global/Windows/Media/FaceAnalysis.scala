@@ -42,16 +42,14 @@ object FaceAnalysis {
       * @return An asynchronous operation that returns a FaceDetector instance upon successful completion.
       */
     /* static member */
-    @scala.inline
-    def createAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceDetector] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceDetector]]
+    inline def createAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceDetector] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceDetector]]
     
     /**
       * Returns a list of the bitmap pixels formats supported by the FaceDetector on the current device.
       * @return A list of the bitmap pixels formats supported by the FaceDetector on the current device.
       */
     /* static member */
-    @scala.inline
-    def getSupportedBitmapPixelFormats(): IVectorView[BitmapPixelFormat] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedBitmapPixelFormats")().asInstanceOf[IVectorView[BitmapPixelFormat]]
+    inline def getSupportedBitmapPixelFormats(): IVectorView[BitmapPixelFormat] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedBitmapPixelFormats")().asInstanceOf[IVectorView[BitmapPixelFormat]]
     
     /**
       * Queries whether the specified bitmap pixel format is supported by the FaceDetector on the current device.
@@ -59,16 +57,14 @@ object FaceAnalysis {
       * @return True if the specified bitmap pixel format is supported; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def isBitmapPixelFormatSupported(bitmapPixelFormat: BitmapPixelFormat): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBitmapPixelFormatSupported")(bitmapPixelFormat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBitmapPixelFormatSupported(bitmapPixelFormat: BitmapPixelFormat): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBitmapPixelFormatSupported")(bitmapPixelFormat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Gets a value indicating whether the FaceDetector class is supported on the current device. */
     /* static member */
     @JSGlobal("Windows.Media.FaceAnalysis.FaceDetector.isSupported")
     @js.native
     def isSupported: Boolean = js.native
-    @scala.inline
-    def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
+    inline def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
   }
   
   /** Detects faces in VideoFrame objects and tracks faces across subsequent video frames. */
@@ -105,16 +101,14 @@ object FaceAnalysis {
       * @return An asynchronous operation that returns a FaceTracker instance upon successful completion.
       */
     /* static member */
-    @scala.inline
-    def createAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceTracker] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceTracker]]
+    inline def createAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceTracker] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.FaceAnalysis.FaceTracker]]
     
     /**
       * Returns a list of the bitmap pixels formats supported by the FaceTracker on the current device.
       * @return A list of the bitmap pixels formats supported by the FaceTracker on the current device.
       */
     /* static member */
-    @scala.inline
-    def getSupportedBitmapPixelFormats(): IVectorView[BitmapPixelFormat] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedBitmapPixelFormats")().asInstanceOf[IVectorView[BitmapPixelFormat]]
+    inline def getSupportedBitmapPixelFormats(): IVectorView[BitmapPixelFormat] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedBitmapPixelFormats")().asInstanceOf[IVectorView[BitmapPixelFormat]]
     
     /**
       * Queries whether the specified bitmap pixel format is supported by the FaceTracker on the current device.
@@ -122,15 +116,13 @@ object FaceAnalysis {
       * @return True if the specified bitmap pixel format is supported; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def isBitmapPixelFormatSupported(bitmapPixelFormat: BitmapPixelFormat): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBitmapPixelFormatSupported")(bitmapPixelFormat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBitmapPixelFormatSupported(bitmapPixelFormat: BitmapPixelFormat): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBitmapPixelFormatSupported")(bitmapPixelFormat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Gets a value indicating whether the FaceTracker class is supported on the current device. */
     /* static member */
     @JSGlobal("Windows.Media.FaceAnalysis.FaceTracker.isSupported")
     @js.native
     def isSupported: Boolean = js.native
-    @scala.inline
-    def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
+    inline def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
   }
 }

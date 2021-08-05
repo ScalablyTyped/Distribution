@@ -30,8 +30,7 @@ trait CONTAINS extends StObject {
 }
 object CONTAINS {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CONTAINS: Double,
     ENDS_WITH: Double,
     EXACT: Double,
@@ -48,40 +47,28 @@ object CONTAINS {
     __obj.asInstanceOf[CONTAINS]
   }
   
-  @scala.inline
-  implicit class CONTAINSMutableBuilder[Self <: CONTAINS] (val x: Self) extends AnyVal {
+  extension [Self <: CONTAINS](x: Self) {
     
-    @scala.inline
-    def setCONTAINS(value: Double): Self = StObject.set(x, "CONTAINS", value.asInstanceOf[js.Any])
+    inline def setCONTAINS(value: Double): Self = StObject.set(x, "CONTAINS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENDS_WITH(value: Double): Self = StObject.set(x, "ENDS_WITH", value.asInstanceOf[js.Any])
+    inline def setENDS_WITH(value: Double): Self = StObject.set(x, "ENDS_WITH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXACT(value: Double): Self = StObject.set(x, "EXACT", value.asInstanceOf[js.Any])
+    inline def setEXACT(value: Double): Self = StObject.set(x, "EXACT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGREATER_THAN(value: Double): Self = StObject.set(x, "GREATER_THAN", value.asInstanceOf[js.Any])
+    inline def setGREATER_THAN(value: Double): Self = StObject.set(x, "GREATER_THAN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGREATER_THAN_OR_EQUAL(value: Double): Self = StObject.set(x, "GREATER_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
+    inline def setGREATER_THAN_OR_EQUAL(value: Double): Self = StObject.set(x, "GREATER_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINPUT(value: String): Self = StObject.set(x, "INPUT", value.asInstanceOf[js.Any])
+    inline def setINPUT(value: String): Self = StObject.set(x, "INPUT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLESS_THAN(value: Double): Self = StObject.set(x, "LESS_THAN", value.asInstanceOf[js.Any])
+    inline def setLESS_THAN(value: Double): Self = StObject.set(x, "LESS_THAN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLESS_THAN_OR_EQUAL(value: Double): Self = StObject.set(x, "LESS_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
+    inline def setLESS_THAN_OR_EQUAL(value: Double): Self = StObject.set(x, "LESS_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOT_EQUAL(value: Double): Self = StObject.set(x, "NOT_EQUAL", value.asInstanceOf[js.Any])
+    inline def setNOT_EQUAL(value: Double): Self = StObject.set(x, "NOT_EQUAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSELECT(value: String): Self = StObject.set(x, "SELECT", value.asInstanceOf[js.Any])
+    inline def setSELECT(value: String): Self = StObject.set(x, "SELECT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTARTS_WITH(value: Double): Self = StObject.set(x, "STARTS_WITH", value.asInstanceOf[js.Any])
+    inline def setSTARTS_WITH(value: Double): Self = StObject.set(x, "STARTS_WITH", value.asInstanceOf[js.Any])
   }
 }

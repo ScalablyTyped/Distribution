@@ -12,19 +12,15 @@ trait DataCountWidgetHTML extends StObject {
 }
 object DataCountWidgetHTML {
   
-  @scala.inline
-  def apply(all: String, some: String): DataCountWidgetHTML = {
+  inline def apply(all: String, some: String): DataCountWidgetHTML = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], some = some.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCountWidgetHTML]
   }
   
-  @scala.inline
-  implicit class DataCountWidgetHTMLMutableBuilder[Self <: DataCountWidgetHTML] (val x: Self) extends AnyVal {
+  extension [Self <: DataCountWidgetHTML](x: Self) {
     
-    @scala.inline
-    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSome(value: String): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
+    inline def setSome(value: String): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
   }
 }

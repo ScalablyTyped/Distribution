@@ -23,17 +23,14 @@ object polylineMod {
   }
   object PolylineProps {
     
-    @scala.inline
-    def apply(points: String): PolylineProps = {
+    inline def apply(points: String): PolylineProps = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolylineProps]
     }
     
-    @scala.inline
-    implicit class PolylinePropsMutableBuilder[Self <: PolylineProps] (val x: Self) extends AnyVal {
+    extension [Self <: PolylineProps](x: Self) {
       
-      @scala.inline
-      def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     }
   }
 }

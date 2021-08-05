@@ -20,19 +20,15 @@ trait UDPMessage extends StObject {
 }
 object UDPMessage {
   
-  @scala.inline
-  def apply(message: ArrayBuffer, remoteInfo: Address): UDPMessage = {
+  inline def apply(message: ArrayBuffer, remoteInfo: Address): UDPMessage = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], remoteInfo = remoteInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPMessage]
   }
   
-  @scala.inline
-  implicit class UDPMessageMutableBuilder[Self <: UDPMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UDPMessage](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteInfo(value: Address): Self = StObject.set(x, "remoteInfo", value.asInstanceOf[js.Any])
+    inline def setRemoteInfo(value: Address): Self = StObject.set(x, "remoteInfo", value.asInstanceOf[js.Any])
   }
 }

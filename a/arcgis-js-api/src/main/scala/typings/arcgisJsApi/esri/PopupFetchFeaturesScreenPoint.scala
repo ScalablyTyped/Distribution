@@ -26,8 +26,7 @@ trait PopupFetchFeaturesScreenPoint
 }
 object PopupFetchFeaturesScreenPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object PopupFetchFeaturesScreenPoint {
     __obj.asInstanceOf[PopupFetchFeaturesScreenPoint]
   }
   
-  @scala.inline
-  implicit class PopupFetchFeaturesScreenPointMutableBuilder[Self <: PopupFetchFeaturesScreenPoint] (val x: Self) extends AnyVal {
+  extension [Self <: PopupFetchFeaturesScreenPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

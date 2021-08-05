@@ -24,25 +24,19 @@ trait PropertyInfo extends StObject {
 }
 object PropertyInfo {
   
-  @scala.inline
-  def apply(Name: String, Protected: Boolean, Type: String, Value: js.Any): PropertyInfo = {
+  inline def apply(Name: String, Protected: Boolean, Type: String, Value: js.Any): PropertyInfo = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Protected = Protected.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyInfo]
   }
   
-  @scala.inline
-  implicit class PropertyInfoMutableBuilder[Self <: PropertyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "Protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "Protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -38,49 +38,35 @@ trait RelationalDatabaseBlueprint extends StObject {
 }
 object RelationalDatabaseBlueprint {
   
-  @scala.inline
-  def apply(): RelationalDatabaseBlueprint = {
+  inline def apply(): RelationalDatabaseBlueprint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabaseBlueprint]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseBlueprintMutableBuilder[Self <: RelationalDatabaseBlueprint] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabaseBlueprint](x: Self) {
     
-    @scala.inline
-    def setBlueprintId(value: String): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
+    inline def setBlueprintId(value: String): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
+    inline def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
     
-    @scala.inline
-    def setEngine(value: RelationalDatabaseEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: RelationalDatabaseEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineDescription(value: String): Self = StObject.set(x, "engineDescription", value.asInstanceOf[js.Any])
+    inline def setEngineDescription(value: String): Self = StObject.set(x, "engineDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineDescriptionUndefined: Self = StObject.set(x, "engineDescription", js.undefined)
+    inline def setEngineDescriptionUndefined: Self = StObject.set(x, "engineDescription", js.undefined)
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionDescription(value: String): Self = StObject.set(x, "engineVersionDescription", value.asInstanceOf[js.Any])
+    inline def setEngineVersionDescription(value: String): Self = StObject.set(x, "engineVersionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionDescriptionUndefined: Self = StObject.set(x, "engineVersionDescription", js.undefined)
+    inline def setEngineVersionDescriptionUndefined: Self = StObject.set(x, "engineVersionDescription", js.undefined)
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
     
-    @scala.inline
-    def setIsEngineDefault(value: Boolean): Self = StObject.set(x, "isEngineDefault", value.asInstanceOf[js.Any])
+    inline def setIsEngineDefault(value: Boolean): Self = StObject.set(x, "isEngineDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEngineDefaultUndefined: Self = StObject.set(x, "isEngineDefault", js.undefined)
+    inline def setIsEngineDefaultUndefined: Self = StObject.set(x, "isEngineDefault", js.undefined)
   }
 }

@@ -56,38 +56,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConstants(value: Record[String, js.Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: Record[String, js.Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
+      inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
       
-      @scala.inline
-      def setFunctions(value: Record[String, js.Function]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Record[String, js.Function]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setReference(value: /* name */ String => js.Function1[/* context */ js.Any, js.Any]): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
+      inline def setReference(value: /* name */ String => js.Function1[/* context */ js.Any, js.Any]): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+      inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
       
-      @scala.inline
-      def setTokenRx(value: RegExp): Self = StObject.set(x, "tokenRx", value.asInstanceOf[js.Any])
+      inline def setTokenRx(value: RegExp): Self = StObject.set(x, "tokenRx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenRxUndefined: Self = StObject.set(x, "tokenRx", js.undefined)
+      inline def setTokenRxUndefined: Self = StObject.set(x, "tokenRx", js.undefined)
     }
     
     type Reference = js.Function1[/* name */ String, js.Function1[/* context */ js.Any, js.Any]]

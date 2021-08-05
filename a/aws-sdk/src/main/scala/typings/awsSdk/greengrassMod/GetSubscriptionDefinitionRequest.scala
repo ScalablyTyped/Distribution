@@ -13,16 +13,13 @@ trait GetSubscriptionDefinitionRequest extends StObject {
 }
 object GetSubscriptionDefinitionRequest {
   
-  @scala.inline
-  def apply(SubscriptionDefinitionId: string): GetSubscriptionDefinitionRequest = {
+  inline def apply(SubscriptionDefinitionId: string): GetSubscriptionDefinitionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionDefinitionId = SubscriptionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubscriptionDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class GetSubscriptionDefinitionRequestMutableBuilder[Self <: GetSubscriptionDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSubscriptionDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
   }
 }

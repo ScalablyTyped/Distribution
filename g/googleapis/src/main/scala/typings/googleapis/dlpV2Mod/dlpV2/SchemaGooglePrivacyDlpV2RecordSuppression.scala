@@ -18,19 +18,15 @@ trait SchemaGooglePrivacyDlpV2RecordSuppression extends StObject {
 }
 object SchemaGooglePrivacyDlpV2RecordSuppression {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2RecordSuppression = {
+  inline def apply(): SchemaGooglePrivacyDlpV2RecordSuppression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RecordSuppression]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RecordSuppressionMutableBuilder[Self <: SchemaGooglePrivacyDlpV2RecordSuppression] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2RecordSuppression](x: Self) {
     
-    @scala.inline
-    def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
   }
 }

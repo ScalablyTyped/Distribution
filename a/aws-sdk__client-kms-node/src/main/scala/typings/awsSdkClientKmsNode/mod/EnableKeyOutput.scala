@@ -10,8 +10,7 @@ trait EnableKeyOutput
      with typings.awsSdkClientKmsNode.typesEnableKeyOutputMod.EnableKeyOutput
 object EnableKeyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): EnableKeyOutput = {
+  inline def apply($metadata: ResponseMetadata): EnableKeyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableKeyOutput]
   }

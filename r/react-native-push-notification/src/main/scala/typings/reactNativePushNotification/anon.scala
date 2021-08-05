@@ -12,17 +12,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String): Id = {
+    inline def apply(id: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object anon {
   }
   object Os {
     
-    @scala.inline
-    def apply(os: String, token: String): Os = {
+    inline def apply(os: String, token: String): Os = {
       val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Os]
     }
     
-    @scala.inline
-    implicit class OsMutableBuilder[Self <: Os] (val x: Self) extends AnyVal {
+    extension [Self <: Os](x: Self) {
       
-      @scala.inline
-      def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

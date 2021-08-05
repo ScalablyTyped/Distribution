@@ -18,25 +18,19 @@ trait GoogleCloudVisionV1p3beta1OutputConfig extends StObject {
 }
 object GoogleCloudVisionV1p3beta1OutputConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p3beta1OutputConfig = {
+  inline def apply(): GoogleCloudVisionV1p3beta1OutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1OutputConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p3beta1OutputConfigMutableBuilder[Self <: GoogleCloudVisionV1p3beta1OutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p3beta1OutputConfig](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setGcsDestination(value: GoogleCloudVisionV1p3beta1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: GoogleCloudVisionV1p3beta1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

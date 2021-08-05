@@ -23,14 +23,14 @@ object componentEventsObserverMod {
   class ComponentEventsObserver protected () extends StObject {
     def this(nativeEventsReceiver: NativeEventsReceiver, store: Store) = this()
     
-    var alreadyRegistered: js.Any = js.native
+    /* private */ var alreadyRegistered: js.Any = js.native
     
     def bindComponent(component: Component[js.Any, js.Object, js.Any]): EventSubscription = js.native
     def bindComponent(component: Component[js.Any, js.Object, js.Any], componentId: String): EventSubscription = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
-    val nativeEventsReceiver: js.Any = js.native
+    /* private */ val nativeEventsReceiver: js.Any = js.native
     
     def notifyComponentDidAppear(event: ComponentDidAppearEvent): Unit = js.native
     
@@ -50,9 +50,9 @@ object componentEventsObserverMod {
     
     def registerOnceForAllComponentEvents(): Unit = js.native
     
-    val store: js.Any = js.native
+    /* private */ val store: js.Any = js.native
     
-    var triggerOnAllListenersByComponentId: js.Any = js.native
+    /* private */ var triggerOnAllListenersByComponentId: js.Any = js.native
     
     def unmounted(componentId: String): Unit = js.native
   }

@@ -26,31 +26,23 @@ trait SchemaFloodlightActivityDynamicTag extends StObject {
 }
 object SchemaFloodlightActivityDynamicTag {
   
-  @scala.inline
-  def apply(): SchemaFloodlightActivityDynamicTag = {
+  inline def apply(): SchemaFloodlightActivityDynamicTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFloodlightActivityDynamicTag]
   }
   
-  @scala.inline
-  implicit class SchemaFloodlightActivityDynamicTagMutableBuilder[Self <: SchemaFloodlightActivityDynamicTag] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFloodlightActivityDynamicTag](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait TreeTablePaste extends StObject {
 }
 object TreeTablePaste {
   
-  @scala.inline
-  def apply(insert: js.Array[js.Any] => Unit): TreeTablePaste = {
+  inline def apply(insert: js.Array[js.Any] => Unit): TreeTablePaste = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
     __obj.asInstanceOf[TreeTablePaste]
   }
   
-  @scala.inline
-  implicit class TreeTablePasteMutableBuilder[Self <: TreeTablePaste] (val x: Self) extends AnyVal {
+  extension [Self <: TreeTablePaste](x: Self) {
     
-    @scala.inline
-    def setInsert(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }
 }

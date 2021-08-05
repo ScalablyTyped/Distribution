@@ -22,20 +22,16 @@ object soundMod extends Shortcut {
   }
   object SoundProps {
     
-    @scala.inline
-    def apply(): SoundProps = {
+    inline def apply(): SoundProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SoundProps]
     }
     
-    @scala.inline
-    implicit class SoundPropsMutableBuilder[Self <: SoundProps] (val x: Self) extends AnyVal {
+    extension [Self <: SoundProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -10,6 +10,5 @@ object inputBlurringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enableInputBlurring(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableInputBlurring")().asInstanceOf[js.Function0[Unit]]
+  inline def enableInputBlurring(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableInputBlurring")().asInstanceOf[js.Function0[Unit]]
 }

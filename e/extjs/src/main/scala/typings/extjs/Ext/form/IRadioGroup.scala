@@ -21,25 +21,19 @@ trait IRadioGroup
 }
 object IRadioGroup {
   
-  @scala.inline
-  def apply(): IRadioGroup = {
+  inline def apply(): IRadioGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRadioGroup]
   }
   
-  @scala.inline
-  implicit class IRadioGroupMutableBuilder[Self <: IRadioGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IRadioGroup](x: Self) {
     
-    @scala.inline
-    def setCheckChange(value: () => Unit): Self = StObject.set(x, "checkChange", js.Any.fromFunction0(value))
+    inline def setCheckChange(value: () => Unit): Self = StObject.set(x, "checkChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
+    inline def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => ICheckboxGroup): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => ICheckboxGroup): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }
 }

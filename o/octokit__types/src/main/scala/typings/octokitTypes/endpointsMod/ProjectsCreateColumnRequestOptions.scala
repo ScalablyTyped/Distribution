@@ -20,25 +20,19 @@ trait ProjectsCreateColumnRequestOptions extends StObject {
 }
 object ProjectsCreateColumnRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsCreateColumnRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsCreateColumnRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/projects/:project_id/columns")
     __obj.asInstanceOf[ProjectsCreateColumnRequestOptions]
   }
   
-  @scala.inline
-  implicit class ProjectsCreateColumnRequestOptionsMutableBuilder[Self <: ProjectsCreateColumnRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsCreateColumnRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashprojectsSlashColonproject_idSlashcolumns): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashprojectsSlashColonproject_idSlashcolumns): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

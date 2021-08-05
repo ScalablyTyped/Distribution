@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CustomProperty")
 @js.native
-class CustomProperty protected ()
+/* private */ class CustomProperty ()
   extends StObject
      with typings.activexWord.Word.CustomProperty {
   
@@ -28,7 +28,7 @@ class CustomProperty protected ()
   /* CompleteClass */
   var Value: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CustomProperty_typekey")
   var WordDotCustomProperty_typekey: typings.activexWord.Word.CustomProperty = js.native
 }

@@ -13,8 +13,7 @@ object sha512AsmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sha512Asm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): sha512result = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_asm")(stdlib.asInstanceOf[js.Any], foreign.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[sha512result]
+  inline def sha512Asm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): sha512result = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_asm")(stdlib.asInstanceOf[js.Any], foreign.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[sha512result]
   
   trait sha512result extends StObject {
     
@@ -97,8 +96,7 @@ object sha512AsmMod {
   }
   object sha512result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       finish: (Double, Double, Double) => Double,
       hmac_finish: (Double, Double, Double) => Double,
       hmac_reset: () => Unit,
@@ -111,29 +109,21 @@ object sha512AsmMod {
       __obj.asInstanceOf[sha512result]
     }
     
-    @scala.inline
-    implicit class sha512resultMutableBuilder[Self <: sha512result] (val x: Self) extends AnyVal {
+    extension [Self <: sha512result](x: Self) {
       
-      @scala.inline
-      def setFinish(value: (Double, Double, Double) => Double): Self = StObject.set(x, "finish", js.Any.fromFunction3(value))
+      inline def setFinish(value: (Double, Double, Double) => Double): Self = StObject.set(x, "finish", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHmac_finish(value: (Double, Double, Double) => Double): Self = StObject.set(x, "hmac_finish", js.Any.fromFunction3(value))
+      inline def setHmac_finish(value: (Double, Double, Double) => Double): Self = StObject.set(x, "hmac_finish", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHmac_reset(value: () => Unit): Self = StObject.set(x, "hmac_reset", js.Any.fromFunction0(value))
+      inline def setHmac_reset(value: () => Unit): Self = StObject.set(x, "hmac_reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction7(value))
+      inline def setInit(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setPbkdf2_generate_block(value: (Double, Double, Double, Double, Double) => `0` | `-1`): Self = StObject.set(x, "pbkdf2_generate_block", js.Any.fromFunction5(value))
+      inline def setPbkdf2_generate_block(value: (Double, Double, Double, Double, Double) => `0` | `-1`): Self = StObject.set(x, "pbkdf2_generate_block", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setProcess(value: (Double, Double) => Double): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      inline def setProcess(value: (Double, Double) => Double): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
 }

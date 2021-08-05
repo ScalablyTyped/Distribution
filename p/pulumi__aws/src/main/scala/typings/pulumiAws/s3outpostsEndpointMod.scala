@@ -76,21 +76,16 @@ object s3outpostsEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean]
   }
   
   trait EndpointArgs extends StObject {
@@ -112,23 +107,18 @@ object s3outpostsEndpointMod {
   }
   object EndpointArgs {
     
-    @scala.inline
-    def apply(outpostId: Input[String], securityGroupId: Input[String], subnetId: Input[String]): EndpointArgs = {
+    inline def apply(outpostId: Input[String], securityGroupId: Input[String], subnetId: Input[String]): EndpointArgs = {
       val __obj = js.Dynamic.literal(outpostId = outpostId.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointArgs]
     }
     
-    @scala.inline
-    implicit class EndpointArgsMutableBuilder[Self <: EndpointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointArgs](x: Self) {
       
-      @scala.inline
-      def setOutpostId(value: Input[String]): Self = StObject.set(x, "outpostId", value.asInstanceOf[js.Any])
+      inline def setOutpostId(value: Input[String]): Self = StObject.set(x, "outpostId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,59 +163,42 @@ object s3outpostsEndpointMod {
   }
   object EndpointState {
     
-    @scala.inline
-    def apply(): EndpointState = {
+    inline def apply(): EndpointState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointState]
     }
     
-    @scala.inline
-    implicit class EndpointStateMutableBuilder[Self <: EndpointState] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
+      inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
       
-      @scala.inline
-      def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+      inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaces(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3outposts.EndpointNetworkInterface]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaces(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3outposts.EndpointNetworkInterface]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
+      inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfacesVarargs(value: Input[typings.pulumiAws.inputMod.s3outposts.EndpointNetworkInterface]*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+      inline def setNetworkInterfacesVarargs(value: Input[typings.pulumiAws.inputMod.s3outposts.EndpointNetworkInterface]*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setOutpostId(value: Input[String]): Self = StObject.set(x, "outpostId", value.asInstanceOf[js.Any])
+      inline def setOutpostId(value: Input[String]): Self = StObject.set(x, "outpostId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostIdUndefined: Self = StObject.set(x, "outpostId", js.undefined)
+      inline def setOutpostIdUndefined: Self = StObject.set(x, "outpostId", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
+      inline def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     }
   }
 }

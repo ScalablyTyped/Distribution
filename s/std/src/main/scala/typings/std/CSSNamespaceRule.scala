@@ -15,8 +15,7 @@ trait CSSNamespaceRule
 }
 object CSSNamespaceRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CHARSET_RULE: Double,
     FONT_FACE_RULE: Double,
     IMPORT_RULE: Double,
@@ -37,13 +36,10 @@ object CSSNamespaceRule {
     __obj.asInstanceOf[CSSNamespaceRule]
   }
   
-  @scala.inline
-  implicit class CSSNamespaceRuleMutableBuilder[Self <: CSSNamespaceRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSNamespaceRule](x: Self) {
     
-    @scala.inline
-    def setNamespaceURI(value: java.lang.String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+    inline def setNamespaceURI(value: java.lang.String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait DescribeMatchmakingRuleSetsOutput extends StObject {
 }
 object DescribeMatchmakingRuleSetsOutput {
   
-  @scala.inline
-  def apply(RuleSets: MatchmakingRuleSetList): DescribeMatchmakingRuleSetsOutput = {
+  inline def apply(RuleSets: MatchmakingRuleSetList): DescribeMatchmakingRuleSetsOutput = {
     val __obj = js.Dynamic.literal(RuleSets = RuleSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMatchmakingRuleSetsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeMatchmakingRuleSetsOutputMutableBuilder[Self <: DescribeMatchmakingRuleSetsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMatchmakingRuleSetsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRuleSets(value: MatchmakingRuleSetList): Self = StObject.set(x, "RuleSets", value.asInstanceOf[js.Any])
+    inline def setRuleSets(value: MatchmakingRuleSetList): Self = StObject.set(x, "RuleSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetsVarargs(value: MatchmakingRuleSet*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
+    inline def setRuleSetsVarargs(value: MatchmakingRuleSet*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
   }
 }

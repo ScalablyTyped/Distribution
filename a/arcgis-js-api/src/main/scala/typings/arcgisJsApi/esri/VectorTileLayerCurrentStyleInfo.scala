@@ -54,8 +54,7 @@ trait VectorTileLayerCurrentStyleInfo
 }
 object VectorTileLayerCurrentStyleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     glyphsUrl: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -70,25 +69,18 @@ object VectorTileLayerCurrentStyleInfo {
     __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
   }
   
-  @scala.inline
-  implicit class VectorTileLayerCurrentStyleInfoMutableBuilder[Self <: VectorTileLayerCurrentStyleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VectorTileLayerCurrentStyleInfo](x: Self) {
     
-    @scala.inline
-    def setGlyphsUrl(value: String): Self = StObject.set(x, "glyphsUrl", value.asInstanceOf[js.Any])
+    inline def setGlyphsUrl(value: String): Self = StObject.set(x, "glyphsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerDefinition(value: js.Any): Self = StObject.set(x, "layerDefinition", value.asInstanceOf[js.Any])
+    inline def setLayerDefinition(value: js.Any): Self = StObject.set(x, "layerDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
+    inline def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteUrl(value: String): Self = StObject.set(x, "spriteUrl", value.asInstanceOf[js.Any])
+    inline def setSpriteUrl(value: String): Self = StObject.set(x, "spriteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
+    inline def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
   }
 }

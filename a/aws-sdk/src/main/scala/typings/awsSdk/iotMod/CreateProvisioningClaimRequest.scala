@@ -13,16 +13,13 @@ trait CreateProvisioningClaimRequest extends StObject {
 }
 object CreateProvisioningClaimRequest {
   
-  @scala.inline
-  def apply(templateName: TemplateName): CreateProvisioningClaimRequest = {
+  inline def apply(templateName: TemplateName): CreateProvisioningClaimRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningClaimRequest]
   }
   
-  @scala.inline
-  implicit class CreateProvisioningClaimRequestMutableBuilder[Self <: CreateProvisioningClaimRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProvisioningClaimRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

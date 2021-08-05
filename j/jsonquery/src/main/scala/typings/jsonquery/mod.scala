@@ -10,15 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](query: Query[T]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply[T](query: Query[T]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("jsonquery", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def `match`[T](haystack: T, predicate: Query[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(haystack.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def `match`[T](haystack: T, predicate: Query[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(haystack.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait AndQueryCondition[T]
     extends StObject
@@ -29,20 +27,16 @@ object mod {
   }
   object AndQueryCondition {
     
-    @scala.inline
-    def apply[T]($and: js.Array[Query[T]]): AndQueryCondition[T] = {
+    inline def apply[T]($and: js.Array[Query[T]]): AndQueryCondition[T] = {
       val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any])
       __obj.asInstanceOf[AndQueryCondition[T]]
     }
     
-    @scala.inline
-    implicit class AndQueryConditionMutableBuilder[Self <: AndQueryCondition[?], T] (val x: Self & AndQueryCondition[T]) extends AnyVal {
+    extension [Self <: AndQueryCondition[?], T](x: Self & AndQueryCondition[T]) {
       
-      @scala.inline
-      def set$and(value: js.Array[Query[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
+      inline def set$and(value: js.Array[Query[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$andVarargs(value: Query[T]*): Self = StObject.set(x, "$and", js.Array(value :_*))
+      inline def set$andVarargs(value: Query[T]*): Self = StObject.set(x, "$and", js.Array(value :_*))
     }
   }
   
@@ -80,8 +74,7 @@ object mod {
   }
   object BaseCondition {
     
-    @scala.inline
-    def apply[P](
+    inline def apply[P](
       $all: js.Array[P],
       $elemMatch: Partial[P],
       $gt: P,
@@ -97,47 +90,33 @@ object mod {
       __obj.asInstanceOf[BaseCondition[P]]
     }
     
-    @scala.inline
-    implicit class BaseConditionMutableBuilder[Self <: BaseCondition[?], P] (val x: Self & BaseCondition[P]) extends AnyVal {
+    extension [Self <: BaseCondition[?], P](x: Self & BaseCondition[P]) {
       
-      @scala.inline
-      def set$all(value: js.Array[P]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+      inline def set$all(value: js.Array[P]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$allVarargs(value: P*): Self = StObject.set(x, "$all", js.Array(value :_*))
+      inline def set$allVarargs(value: P*): Self = StObject.set(x, "$all", js.Array(value :_*))
       
-      @scala.inline
-      def set$elemMatch(value: Partial[P]): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
+      inline def set$elemMatch(value: Partial[P]): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gt(value: P): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
+      inline def set$gt(value: P): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gte(value: P): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
+      inline def set$gte(value: P): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$in(value: js.Array[P]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
+      inline def set$in(value: js.Array[P]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$inVarargs(value: P*): Self = StObject.set(x, "$in", js.Array(value :_*))
+      inline def set$inVarargs(value: P*): Self = StObject.set(x, "$in", js.Array(value :_*))
       
-      @scala.inline
-      def set$lt(value: P): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
+      inline def set$lt(value: P): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$lte(value: P): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
+      inline def set$lte(value: P): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$mod(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
+      inline def set$mod(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ne(value: P): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
+      inline def set$ne(value: P): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$nin(value: js.Array[P]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
+      inline def set$nin(value: js.Array[P]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ninVarargs(value: P*): Self = StObject.set(x, "$nin", js.Array(value :_*))
+      inline def set$ninVarargs(value: P*): Self = StObject.set(x, "$nin", js.Array(value :_*))
     }
   }
   
@@ -148,14 +127,12 @@ object mod {
   trait BinaryQueryCondition[T] extends StObject
   object BinaryQueryCondition {
     
-    @scala.inline
-    def AndQueryCondition[T]($and: js.Array[Query[T]]): typings.jsonquery.mod.AndQueryCondition[T] = {
+    inline def AndQueryCondition[T]($and: js.Array[Query[T]]): typings.jsonquery.mod.AndQueryCondition[T] = {
       val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonquery.mod.AndQueryCondition[T]]
     }
     
-    @scala.inline
-    def OrQueryCondition[T]($or: js.Array[Query[T]]): typings.jsonquery.mod.OrQueryCondition[T] = {
+    inline def OrQueryCondition[T]($or: js.Array[Query[T]]): typings.jsonquery.mod.OrQueryCondition[T] = {
       val __obj = js.Dynamic.literal($or = $or.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonquery.mod.OrQueryCondition[T]]
     }
@@ -170,20 +147,16 @@ object mod {
   }
   object OrQueryCondition {
     
-    @scala.inline
-    def apply[T]($or: js.Array[Query[T]]): OrQueryCondition[T] = {
+    inline def apply[T]($or: js.Array[Query[T]]): OrQueryCondition[T] = {
       val __obj = js.Dynamic.literal($or = $or.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrQueryCondition[T]]
     }
     
-    @scala.inline
-    implicit class OrQueryConditionMutableBuilder[Self <: OrQueryCondition[?], T] (val x: Self & OrQueryCondition[T]) extends AnyVal {
+    extension [Self <: OrQueryCondition[?], T](x: Self & OrQueryCondition[T]) {
       
-      @scala.inline
-      def set$or(value: js.Array[Query[T]]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
+      inline def set$or(value: js.Array[Query[T]]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$orVarargs(value: Query[T]*): Self = StObject.set(x, "$or", js.Array(value :_*))
+      inline def set$orVarargs(value: Query[T]*): Self = StObject.set(x, "$or", js.Array(value :_*))
     }
   }
   

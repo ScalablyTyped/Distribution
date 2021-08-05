@@ -12,19 +12,15 @@ trait DataErr extends StObject {
 }
 object DataErr {
   
-  @scala.inline
-  def apply(DataErr: Double, Response: Double): DataErr = {
+  inline def apply(DataErr: Double, Response: Double): DataErr = {
     val __obj = js.Dynamic.literal(DataErr = DataErr.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataErr]
   }
   
-  @scala.inline
-  implicit class DataErrMutableBuilder[Self <: DataErr] (val x: Self) extends AnyVal {
+  extension [Self <: DataErr](x: Self) {
     
-    @scala.inline
-    def setDataErr(value: Double): Self = StObject.set(x, "DataErr", value.asInstanceOf[js.Any])
+    inline def setDataErr(value: Double): Self = StObject.set(x, "DataErr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Double): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Double): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
   }
 }

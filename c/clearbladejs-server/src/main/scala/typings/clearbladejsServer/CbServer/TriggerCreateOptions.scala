@@ -20,8 +20,7 @@ trait TriggerCreateOptions extends StObject {
 }
 object TriggerCreateOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     def_module: TriggerModule,
     def_name: String,
     key_value_pairs: js.Array[KeyValuePair],
@@ -33,28 +32,20 @@ object TriggerCreateOptions {
     __obj.asInstanceOf[TriggerCreateOptions]
   }
   
-  @scala.inline
-  implicit class TriggerCreateOptionsMutableBuilder[Self <: TriggerCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerCreateOptions](x: Self) {
     
-    @scala.inline
-    def setDef_module(value: TriggerModule): Self = StObject.set(x, "def_module", value.asInstanceOf[js.Any])
+    inline def setDef_module(value: TriggerModule): Self = StObject.set(x, "def_module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDef_name(value: String): Self = StObject.set(x, "def_name", value.asInstanceOf[js.Any])
+    inline def setDef_name(value: String): Self = StObject.set(x, "def_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
+    inline def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value :_*))
+    inline def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService_name(value: String): Self = StObject.set(x, "service_name", value.asInstanceOf[js.Any])
+    inline def setService_name(value: String): Self = StObject.set(x, "service_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem_key(value: String): Self = StObject.set(x, "system_key", value.asInstanceOf[js.Any])
+    inline def setSystem_key(value: String): Self = StObject.set(x, "system_key", value.asInstanceOf[js.Any])
   }
 }

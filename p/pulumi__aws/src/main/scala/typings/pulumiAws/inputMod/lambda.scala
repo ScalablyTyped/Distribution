@@ -17,20 +17,16 @@ object lambda {
   }
   object AliasRoutingConfig {
     
-    @scala.inline
-    def apply(): AliasRoutingConfig = {
+    inline def apply(): AliasRoutingConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AliasRoutingConfig]
     }
     
-    @scala.inline
-    implicit class AliasRoutingConfigMutableBuilder[Self <: AliasRoutingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AliasRoutingConfig](x: Self) {
       
-      @scala.inline
-      def setAdditionalVersionWeights(value: Input[StringDictionary[Input[Double]]]): Self = StObject.set(x, "additionalVersionWeights", value.asInstanceOf[js.Any])
+      inline def setAdditionalVersionWeights(value: Input[StringDictionary[Input[Double]]]): Self = StObject.set(x, "additionalVersionWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "additionalVersionWeights", js.undefined)
+      inline def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "additionalVersionWeights", js.undefined)
     }
   }
   
@@ -43,20 +39,16 @@ object lambda {
   }
   object EventSourceMappingDestinationConfig {
     
-    @scala.inline
-    def apply(): EventSourceMappingDestinationConfig = {
+    inline def apply(): EventSourceMappingDestinationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventSourceMappingDestinationConfig]
     }
     
-    @scala.inline
-    implicit class EventSourceMappingDestinationConfigMutableBuilder[Self <: EventSourceMappingDestinationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EventSourceMappingDestinationConfig](x: Self) {
       
-      @scala.inline
-      def setOnFailure(value: Input[EventSourceMappingDestinationConfigOnFailure]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+      inline def setOnFailure(value: Input[EventSourceMappingDestinationConfigOnFailure]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+      inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     }
   }
   
@@ -69,17 +61,14 @@ object lambda {
   }
   object EventSourceMappingDestinationConfigOnFailure {
     
-    @scala.inline
-    def apply(destinationArn: Input[String]): EventSourceMappingDestinationConfigOnFailure = {
+    inline def apply(destinationArn: Input[String]): EventSourceMappingDestinationConfigOnFailure = {
       val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventSourceMappingDestinationConfigOnFailure]
     }
     
-    @scala.inline
-    implicit class EventSourceMappingDestinationConfigOnFailureMutableBuilder[Self <: EventSourceMappingDestinationConfigOnFailure] (val x: Self) extends AnyVal {
+    extension [Self <: EventSourceMappingDestinationConfigOnFailure](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,17 +84,14 @@ object lambda {
   }
   object FunctionDeadLetterConfig {
     
-    @scala.inline
-    def apply(targetArn: Input[String]): FunctionDeadLetterConfig = {
+    inline def apply(targetArn: Input[String]): FunctionDeadLetterConfig = {
       val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionDeadLetterConfig]
     }
     
-    @scala.inline
-    implicit class FunctionDeadLetterConfigMutableBuilder[Self <: FunctionDeadLetterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionDeadLetterConfig](x: Self) {
       
-      @scala.inline
-      def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+      inline def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,20 +104,16 @@ object lambda {
   }
   object FunctionEnvironment {
     
-    @scala.inline
-    def apply(): FunctionEnvironment = {
+    inline def apply(): FunctionEnvironment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FunctionEnvironment]
     }
     
-    @scala.inline
-    implicit class FunctionEnvironmentMutableBuilder[Self <: FunctionEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionEnvironment](x: Self) {
       
-      @scala.inline
-      def setVariables(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -149,26 +131,20 @@ object lambda {
   }
   object FunctionEventInvokeConfigDestinationConfig {
     
-    @scala.inline
-    def apply(): FunctionEventInvokeConfigDestinationConfig = {
+    inline def apply(): FunctionEventInvokeConfigDestinationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FunctionEventInvokeConfigDestinationConfig]
     }
     
-    @scala.inline
-    implicit class FunctionEventInvokeConfigDestinationConfigMutableBuilder[Self <: FunctionEventInvokeConfigDestinationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionEventInvokeConfigDestinationConfig](x: Self) {
       
-      @scala.inline
-      def setOnFailure(value: Input[FunctionEventInvokeConfigDestinationConfigOnFailure]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+      inline def setOnFailure(value: Input[FunctionEventInvokeConfigDestinationConfigOnFailure]): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+      inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: Input[FunctionEventInvokeConfigDestinationConfigOnSuccess]): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
+      inline def setOnSuccess(value: Input[FunctionEventInvokeConfigDestinationConfigOnSuccess]): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     }
   }
   
@@ -181,17 +157,14 @@ object lambda {
   }
   object FunctionEventInvokeConfigDestinationConfigOnFailure {
     
-    @scala.inline
-    def apply(destination: Input[String]): FunctionEventInvokeConfigDestinationConfigOnFailure = {
+    inline def apply(destination: Input[String]): FunctionEventInvokeConfigDestinationConfigOnFailure = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionEventInvokeConfigDestinationConfigOnFailure]
     }
     
-    @scala.inline
-    implicit class FunctionEventInvokeConfigDestinationConfigOnFailureMutableBuilder[Self <: FunctionEventInvokeConfigDestinationConfigOnFailure] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionEventInvokeConfigDestinationConfigOnFailure](x: Self) {
       
-      @scala.inline
-      def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,17 +177,14 @@ object lambda {
   }
   object FunctionEventInvokeConfigDestinationConfigOnSuccess {
     
-    @scala.inline
-    def apply(destination: Input[String]): FunctionEventInvokeConfigDestinationConfigOnSuccess = {
+    inline def apply(destination: Input[String]): FunctionEventInvokeConfigDestinationConfigOnSuccess = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionEventInvokeConfigDestinationConfigOnSuccess]
     }
     
-    @scala.inline
-    implicit class FunctionEventInvokeConfigDestinationConfigOnSuccessMutableBuilder[Self <: FunctionEventInvokeConfigDestinationConfigOnSuccess] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionEventInvokeConfigDestinationConfigOnSuccess](x: Self) {
       
-      @scala.inline
-      def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,20 +202,16 @@ object lambda {
   }
   object FunctionFileSystemConfig {
     
-    @scala.inline
-    def apply(arn: Input[String], localMountPath: Input[String]): FunctionFileSystemConfig = {
+    inline def apply(arn: Input[String], localMountPath: Input[String]): FunctionFileSystemConfig = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], localMountPath = localMountPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionFileSystemConfig]
     }
     
-    @scala.inline
-    implicit class FunctionFileSystemConfigMutableBuilder[Self <: FunctionFileSystemConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionFileSystemConfig](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalMountPath(value: Input[String]): Self = StObject.set(x, "localMountPath", value.asInstanceOf[js.Any])
+      inline def setLocalMountPath(value: Input[String]): Self = StObject.set(x, "localMountPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,17 +228,14 @@ object lambda {
   }
   object FunctionTracingConfig {
     
-    @scala.inline
-    def apply(mode: Input[String]): FunctionTracingConfig = {
+    inline def apply(mode: Input[String]): FunctionTracingConfig = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionTracingConfig]
     }
     
-    @scala.inline
-    implicit class FunctionTracingConfigMutableBuilder[Self <: FunctionTracingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionTracingConfig](x: Self) {
       
-      @scala.inline
-      def setMode(value: Input[String]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Input[String]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,32 +255,24 @@ object lambda {
   }
   object FunctionVpcConfig {
     
-    @scala.inline
-    def apply(securityGroupIds: Input[js.Array[Input[String]]], subnetIds: Input[js.Array[Input[String]]]): FunctionVpcConfig = {
+    inline def apply(securityGroupIds: Input[js.Array[Input[String]]], subnetIds: Input[js.Array[Input[String]]]): FunctionVpcConfig = {
       val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionVpcConfig]
     }
     
-    @scala.inline
-    implicit class FunctionVpcConfigMutableBuilder[Self <: FunctionVpcConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionVpcConfig](x: Self) {
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

@@ -31,37 +31,27 @@ trait NoDataOptions extends StObject {
 }
 object NoDataOptions {
   
-  @scala.inline
-  def apply(): NoDataOptions = {
+  inline def apply(): NoDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoDataOptions]
   }
   
-  @scala.inline
-  implicit class NoDataOptionsMutableBuilder[Self <: NoDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NoDataOptions](x: Self) {
     
-    @scala.inline
-    def setAttr(value: SVGAttributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: SVGAttributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setPosition(value: AlignObject | NoDataPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: AlignObject | NoDataPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
   }
 }

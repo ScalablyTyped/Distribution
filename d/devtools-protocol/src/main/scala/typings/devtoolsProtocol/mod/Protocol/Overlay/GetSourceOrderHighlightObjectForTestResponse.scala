@@ -13,16 +13,13 @@ trait GetSourceOrderHighlightObjectForTestResponse extends StObject {
 }
 object GetSourceOrderHighlightObjectForTestResponse {
   
-  @scala.inline
-  def apply(highlight: js.Any): GetSourceOrderHighlightObjectForTestResponse = {
+  inline def apply(highlight: js.Any): GetSourceOrderHighlightObjectForTestResponse = {
     val __obj = js.Dynamic.literal(highlight = highlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSourceOrderHighlightObjectForTestResponse]
   }
   
-  @scala.inline
-  implicit class GetSourceOrderHighlightObjectForTestResponseMutableBuilder[Self <: GetSourceOrderHighlightObjectForTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSourceOrderHighlightObjectForTestResponse](x: Self) {
     
-    @scala.inline
-    def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
   }
 }

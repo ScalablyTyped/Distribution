@@ -10,8 +10,7 @@ object emptyMod {
   /**
     * Create a stream with no contents (it just ends immediately).
     */
-  @scala.inline
-  def apply(): Source[scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[scala.Nothing]]
+  inline def apply(): Source[scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[scala.Nothing]]
   
   @JSImport("pull-stream/sources/empty", JSImport.Namespace)
   @js.native

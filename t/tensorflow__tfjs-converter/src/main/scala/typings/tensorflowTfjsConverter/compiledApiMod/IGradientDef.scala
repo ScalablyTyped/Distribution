@@ -14,31 +14,23 @@ trait IGradientDef extends StObject {
 }
 object IGradientDef {
   
-  @scala.inline
-  def apply(): IGradientDef = {
+  inline def apply(): IGradientDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGradientDef]
   }
   
-  @scala.inline
-  implicit class IGradientDefMutableBuilder[Self <: IGradientDef] (val x: Self) extends AnyVal {
+  extension [Self <: IGradientDef](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameNull: Self = StObject.set(x, "functionName", null)
+    inline def setFunctionNameNull: Self = StObject.set(x, "functionName", null)
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setGradientFunc(value: String): Self = StObject.set(x, "gradientFunc", value.asInstanceOf[js.Any])
+    inline def setGradientFunc(value: String): Self = StObject.set(x, "gradientFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientFuncNull: Self = StObject.set(x, "gradientFunc", null)
+    inline def setGradientFuncNull: Self = StObject.set(x, "gradientFunc", null)
     
-    @scala.inline
-    def setGradientFuncUndefined: Self = StObject.set(x, "gradientFunc", js.undefined)
+    inline def setGradientFuncUndefined: Self = StObject.set(x, "gradientFunc", js.undefined)
   }
 }

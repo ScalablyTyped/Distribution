@@ -138,92 +138,64 @@ object shaderMaterialMod {
   }
   object ShaderMaterialParameters {
     
-    @scala.inline
-    def apply(): ShaderMaterialParameters = {
+    inline def apply(): ShaderMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShaderMaterialParameters]
     }
     
-    @scala.inline
-    implicit class ShaderMaterialParametersMutableBuilder[Self <: ShaderMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ShaderMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setClipping(value: Boolean): Self = StObject.set(x, "clipping", value.asInstanceOf[js.Any])
+      inline def setClipping(value: Boolean): Self = StObject.set(x, "clipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClippingUndefined: Self = StObject.set(x, "clipping", js.undefined)
+      inline def setClippingUndefined: Self = StObject.set(x, "clipping", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: Derivatives): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Derivatives): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
+      inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
+      inline def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
       
-      @scala.inline
-      def setGlslVersion(value: GLSLVersion): Self = StObject.set(x, "glslVersion", value.asInstanceOf[js.Any])
+      inline def setGlslVersion(value: GLSLVersion): Self = StObject.set(x, "glslVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlslVersionUndefined: Self = StObject.set(x, "glslVersion", js.undefined)
+      inline def setGlslVersionUndefined: Self = StObject.set(x, "glslVersion", js.undefined)
       
-      @scala.inline
-      def setLights(value: Boolean): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
+      inline def setLights(value: Boolean): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightsUndefined: Self = StObject.set(x, "lights", js.undefined)
+      inline def setLightsUndefined: Self = StObject.set(x, "lights", js.undefined)
       
-      @scala.inline
-      def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
+      inline def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinewidthUndefined: Self = StObject.set(x, "linewidth", js.undefined)
+      inline def setLinewidthUndefined: Self = StObject.set(x, "linewidth", js.undefined)
       
-      @scala.inline
-      def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
+      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
+      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
       
-      @scala.inline
-      def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
+      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
+      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
       
-      @scala.inline
-      def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
+      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
+      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[IUniform]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[IUniform]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      @scala.inline
-      def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
+      inline def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
+      inline def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
       
-      @scala.inline
-      def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
+      inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinewidth(value: Double): Self = StObject.set(x, "wireframeLinewidth", value.asInstanceOf[js.Any])
+      inline def setWireframeLinewidth(value: Double): Self = StObject.set(x, "wireframeLinewidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinewidthUndefined: Self = StObject.set(x, "wireframeLinewidth", js.undefined)
+      inline def setWireframeLinewidthUndefined: Self = StObject.set(x, "wireframeLinewidth", js.undefined)
       
-      @scala.inline
-      def setWireframeUndefined: Self = StObject.set(x, "wireframe", js.undefined)
+      inline def setWireframeUndefined: Self = StObject.set(x, "wireframe", js.undefined)
     }
   }
 }

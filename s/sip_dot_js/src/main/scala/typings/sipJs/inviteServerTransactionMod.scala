@@ -26,15 +26,15 @@ object inviteServerTransactionMod {
       */
     def this(request: IncomingRequestMessage, transport: Transport, user: ServerTransactionUser) = this()
     
-    var H: js.Any = js.native
+    /* private */ var H: js.Any = js.native
     
-    var I: js.Any = js.native
+    /* private */ var I: js.Any = js.native
     
-    var L: js.Any = js.native
+    /* private */ var L: js.Any = js.native
     
-    var lastFinalResponse: js.Any = js.native
+    /* private */ var lastFinalResponse: js.Any = js.native
     
-    var lastProvisionalResponse: js.Any = js.native
+    /* private */ var lastProvisionalResponse: js.Any = js.native
     
     /**
       * First, the procedures in [4] are followed, which attempt to deliver the response to a backup.
@@ -62,7 +62,7 @@ object inviteServerTransactionMod {
       *   systems.
       * https://tools.ietf.org/html/rfc3261#section-13.3.1.1
       */
-    var progressExtensionTimer: js.Any = js.native
+    /* private */ var progressExtensionTimer: js.Any = js.native
     
     /**
       * Retransmit the last 2xx response. This is a noop if not in the "accepted" state.
@@ -73,19 +73,19 @@ object inviteServerTransactionMod {
       * FIXME: UAS Provisional Retransmission Timer. See RFC 3261 Section 13.3.1.1
       * This is in the wrong place. This is not a transaction level thing. It's a UAS level thing.
       */
-    var startProgressExtensionTimer: js.Any = js.native
+    /* private */ var startProgressExtensionTimer: js.Any = js.native
     
     /**
       * Execute a state transition.
       * @param newState - New state.
       */
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
     /**
       * FIXME: UAS Provisional Retransmission Timer id. See RFC 3261 Section 13.3.1.1
       * This is in the wrong place. This is not a transaction level thing. It's a UAS level thing.
       */
-    var stopProgressExtensionTimer: js.Any = js.native
+    /* private */ var stopProgressExtensionTimer: js.Any = js.native
     
     /**
       * While in the "Proceeding" state, if the TU passes a response with status code
@@ -99,7 +99,7 @@ object inviteServerTransactionMod {
       * it is reset with the value of T2.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    var timerG: js.Any = js.native
+    /* private */ var timerG: js.Any = js.native
     
     /**
       * If timer H fires while in the "Completed" state, it implies that the ACK was never received.
@@ -107,13 +107,13 @@ object inviteServerTransactionMod {
       * indicate to the TU that a transaction failure has occurred.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    var timerH: js.Any = js.native
+    /* private */ var timerH: js.Any = js.native
     
     /**
       * Once timer I fires, the server MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    var timerI: js.Any = js.native
+    /* private */ var timerI: js.Any = js.native
     
     /**
       * When Timer L fires and the state machine is in the "Accepted" state, the machine MUST
@@ -124,6 +124,6 @@ object inviteServerTransactionMod {
       * https://tools.ietf.org/html/rfc6026#section-7.1
       * https://tools.ietf.org/html/rfc6026#section-8.7
       */
-    var timerL: js.Any = js.native
+    /* private */ var timerL: js.Any = js.native
   }
 }

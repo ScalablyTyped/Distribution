@@ -19,19 +19,15 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(log: js.Function, sammy: SammyFunc): JQueryStatic = {
+  inline def apply(log: js.Function, sammy: SammyFunc): JQueryStatic = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any], sammy = sammy.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setLog(value: js.Function): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Function): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSammy(value: SammyFunc): Self = StObject.set(x, "sammy", value.asInstanceOf[js.Any])
+    inline def setSammy(value: SammyFunc): Self = StObject.set(x, "sammy", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait ChatMessages extends StObject {
 }
 object ChatMessages {
   
-  @scala.inline
-  def apply(): ChatMessages = {
+  inline def apply(): ChatMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatMessages]
   }
   
-  @scala.inline
-  implicit class ChatMessagesMutableBuilder[Self <: ChatMessages] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessages](x: Self) {
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSendButton(value: String): Self = StObject.set(x, "sendButton", value.asInstanceOf[js.Any])
+    inline def setSendButton(value: String): Self = StObject.set(x, "sendButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendButtonUndefined: Self = StObject.set(x, "sendButton", js.undefined)
+    inline def setSendButtonUndefined: Self = StObject.set(x, "sendButton", js.undefined)
     
-    @scala.inline
-    def setToggleButton(value: String): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
+    inline def setToggleButton(value: String): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
+    inline def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
   }
 }

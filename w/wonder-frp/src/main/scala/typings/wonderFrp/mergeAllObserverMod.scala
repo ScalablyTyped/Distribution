@@ -14,7 +14,7 @@ object mergeAllObserverMod {
   class MergeAllObserver protected () extends Observer {
     def this(currentObserver: IObserver, groupDisposable: GroupDisposable) = this()
     
-    var _groupDisposable: js.Any = js.native
+    /* private */ var _groupDisposable: js.Any = js.native
     
     var currentObserver: IObserver = js.native
     
@@ -27,7 +27,6 @@ object mergeAllObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(currentObserver: IObserver, groupDisposable: GroupDisposable): MergeAllObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], groupDisposable.asInstanceOf[js.Any])).asInstanceOf[MergeAllObserver]
+    inline def create(currentObserver: IObserver, groupDisposable: GroupDisposable): MergeAllObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], groupDisposable.asInstanceOf[js.Any])).asInstanceOf[MergeAllObserver]
   }
 }

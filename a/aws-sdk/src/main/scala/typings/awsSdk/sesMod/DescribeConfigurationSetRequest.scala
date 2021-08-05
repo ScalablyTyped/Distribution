@@ -18,25 +18,19 @@ trait DescribeConfigurationSetRequest extends StObject {
 }
 object DescribeConfigurationSetRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): DescribeConfigurationSetRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): DescribeConfigurationSetRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationSetRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationSetRequestMutableBuilder[Self <: DescribeConfigurationSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationSetRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetAttributeNames(value: ConfigurationSetAttributeList): Self = StObject.set(x, "ConfigurationSetAttributeNames", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetAttributeNames(value: ConfigurationSetAttributeList): Self = StObject.set(x, "ConfigurationSetAttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSetAttributeNamesUndefined: Self = StObject.set(x, "ConfigurationSetAttributeNames", js.undefined)
+    inline def setConfigurationSetAttributeNamesUndefined: Self = StObject.set(x, "ConfigurationSetAttributeNames", js.undefined)
     
-    @scala.inline
-    def setConfigurationSetAttributeNamesVarargs(value: ConfigurationSetAttribute*): Self = StObject.set(x, "ConfigurationSetAttributeNames", js.Array(value :_*))
+    inline def setConfigurationSetAttributeNamesVarargs(value: ConfigurationSetAttribute*): Self = StObject.set(x, "ConfigurationSetAttributeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }
 }

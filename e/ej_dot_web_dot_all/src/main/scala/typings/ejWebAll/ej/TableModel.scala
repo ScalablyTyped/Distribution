@@ -38,8 +38,7 @@ trait TableModel extends StObject {
 }
 object TableModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindTo: js.Any => Unit,
     get: Double => Unit,
     getChanges: () => Changes,
@@ -60,52 +59,36 @@ object TableModel {
     __obj.asInstanceOf[TableModel]
   }
   
-  @scala.inline
-  implicit class TableModelMutableBuilder[Self <: TableModel] (val x: Self) extends AnyVal {
+  extension [Self <: TableModel](x: Self) {
     
-    @scala.inline
-    def setBindTo(value: js.Any => Unit): Self = StObject.set(x, "bindTo", js.Any.fromFunction1(value))
+    inline def setBindTo(value: js.Any => Unit): Self = StObject.set(x, "bindTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: Double => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChanges(value: () => Changes): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
+    inline def setGetChanges(value: () => Changes): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsert(value: js.Any => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Any => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
+    inline def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOff(value: (String, js.Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, js.Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Any) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Any) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRejectChanges(value: () => Unit): Self = StObject.set(x, "rejectChanges", js.Any.fromFunction0(value))
+    inline def setRejectChanges(value: () => Unit): Self = StObject.set(x, "rejectChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveChanges(value: () => Unit): Self = StObject.set(x, "saveChanges", js.Any.fromFunction0(value))
+    inline def setSaveChanges(value: () => Unit): Self = StObject.set(x, "saveChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataManager(value: DataManager => Unit): Self = StObject.set(x, "setDataManager", js.Any.fromFunction1(value))
+    inline def setSetDataManager(value: DataManager => Unit): Self = StObject.set(x, "setDataManager", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDirty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction2(value))
+    inline def setSetDirty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

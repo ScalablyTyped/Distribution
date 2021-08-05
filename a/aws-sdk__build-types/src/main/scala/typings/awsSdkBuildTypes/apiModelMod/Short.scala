@@ -19,29 +19,22 @@ trait Short
 }
 object Short {
   
-  @scala.inline
-  def apply(): Short = {
+  inline def apply(): Short = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("short")
     __obj.asInstanceOf[Short]
   }
   
-  @scala.inline
-  implicit class ShortMutableBuilder[Self <: Short] (val x: Self) extends AnyVal {
+  extension [Self <: Short](x: Self) {
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setType(value: short): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: short): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

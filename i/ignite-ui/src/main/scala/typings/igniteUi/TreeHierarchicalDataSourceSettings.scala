@@ -19,19 +19,15 @@ trait TreeHierarchicalDataSourceSettings
 }
 object TreeHierarchicalDataSourceSettings {
   
-  @scala.inline
-  def apply(): TreeHierarchicalDataSourceSettings = {
+  inline def apply(): TreeHierarchicalDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class TreeHierarchicalDataSourceSettingsMutableBuilder[Self <: TreeHierarchicalDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TreeHierarchicalDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setTreeDS(value: TreeHierarchicalDataSourceSettingsTreeDS): Self = StObject.set(x, "treeDS", value.asInstanceOf[js.Any])
+    inline def setTreeDS(value: TreeHierarchicalDataSourceSettingsTreeDS): Self = StObject.set(x, "treeDS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDSUndefined: Self = StObject.set(x, "treeDS", js.undefined)
+    inline def setTreeDSUndefined: Self = StObject.set(x, "treeDS", js.undefined)
   }
 }

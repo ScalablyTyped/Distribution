@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSeekView extends StObject
 object WdSeekView {
   
-  @scala.inline
-  def wdSeekCurrentPageFooter: `10` = 10.asInstanceOf[`10`]
+  inline def wdSeekCurrentPageFooter: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def wdSeekCurrentPageHeader: `9` = 9.asInstanceOf[`9`]
+  inline def wdSeekCurrentPageHeader: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdSeekEndnotes: `8` = 8.asInstanceOf[`8`]
+  inline def wdSeekEndnotes: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdSeekEvenPagesFooter: `6` = 6.asInstanceOf[`6`]
+  inline def wdSeekEvenPagesFooter: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdSeekEvenPagesHeader: `3` = 3.asInstanceOf[`3`]
+  inline def wdSeekEvenPagesHeader: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdSeekFirstPageFooter: `5` = 5.asInstanceOf[`5`]
+  inline def wdSeekFirstPageFooter: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdSeekFirstPageHeader: `2` = 2.asInstanceOf[`2`]
+  inline def wdSeekFirstPageHeader: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdSeekFootnotes: `7` = 7.asInstanceOf[`7`]
+  inline def wdSeekFootnotes: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdSeekMainDocument: `0` = 0.asInstanceOf[`0`]
+  inline def wdSeekMainDocument: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdSeekPrimaryFooter: `4` = 4.asInstanceOf[`4`]
+  inline def wdSeekPrimaryFooter: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdSeekPrimaryHeader: `1` = 1.asInstanceOf[`1`]
+  inline def wdSeekPrimaryHeader: `1` = 1.asInstanceOf[`1`]
 }

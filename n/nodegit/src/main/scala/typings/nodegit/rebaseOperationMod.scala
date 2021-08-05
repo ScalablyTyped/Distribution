@@ -36,23 +36,17 @@ object rebaseOperationMod {
     trait REBASE_OPERATION extends StObject
     object REBASE_OPERATION {
       
-      @scala.inline
-      def EDIT: `2` = 2.asInstanceOf[`2`]
+      inline def EDIT: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def EXEC: `5` = 5.asInstanceOf[`5`]
+      inline def EXEC: `5` = 5.asInstanceOf[`5`]
       
-      @scala.inline
-      def FIXUP: `4` = 4.asInstanceOf[`4`]
+      inline def FIXUP: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def PICK: `0` = 0.asInstanceOf[`0`]
+      inline def PICK: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def REWORD: `1` = 1.asInstanceOf[`1`]
+      inline def REWORD: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def SQUASH: `3` = 3.asInstanceOf[`3`]
+      inline def SQUASH: `3` = 3.asInstanceOf[`3`]
     }
   }
 }

@@ -10,16 +10,13 @@ trait ILanguageFactory extends StObject {
 }
 object ILanguageFactory {
   
-  @scala.inline
-  def apply(createLanguage: String => Language): ILanguageFactory = {
+  inline def apply(createLanguage: String => Language): ILanguageFactory = {
     val __obj = js.Dynamic.literal(createLanguage = js.Any.fromFunction1(createLanguage))
     __obj.asInstanceOf[ILanguageFactory]
   }
   
-  @scala.inline
-  implicit class ILanguageFactoryMutableBuilder[Self <: ILanguageFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageFactory](x: Self) {
     
-    @scala.inline
-    def setCreateLanguage(value: String => Language): Self = StObject.set(x, "createLanguage", js.Any.fromFunction1(value))
+    inline def setCreateLanguage(value: String => Language): Self = StObject.set(x, "createLanguage", js.Any.fromFunction1(value))
   }
 }

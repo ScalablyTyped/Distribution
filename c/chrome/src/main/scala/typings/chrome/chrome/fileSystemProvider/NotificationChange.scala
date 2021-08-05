@@ -14,19 +14,15 @@ trait NotificationChange extends StObject {
 }
 object NotificationChange {
   
-  @scala.inline
-  def apply(changeType: String, entryPath: String): NotificationChange = {
+  inline def apply(changeType: String, entryPath: String): NotificationChange = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], entryPath = entryPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationChange]
   }
   
-  @scala.inline
-  implicit class NotificationChangeMutableBuilder[Self <: NotificationChange] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationChange](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
   }
 }

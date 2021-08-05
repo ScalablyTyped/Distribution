@@ -40,8 +40,7 @@ trait StreamLayerPurgeOptions
 }
 object StreamLayerPurgeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,31 +49,22 @@ object StreamLayerPurgeOptions {
     __obj.asInstanceOf[StreamLayerPurgeOptions]
   }
   
-  @scala.inline
-  implicit class StreamLayerPurgeOptionsMutableBuilder[Self <: StreamLayerPurgeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerPurgeOptions](x: Self) {
     
-    @scala.inline
-    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeReceived(value: Double): Self = StObject.set(x, "ageReceived", value.asInstanceOf[js.Any])
+    inline def setAgeReceived(value: Double): Self = StObject.set(x, "ageReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeReceivedUndefined: Self = StObject.set(x, "ageReceived", js.undefined)
+    inline def setAgeReceivedUndefined: Self = StObject.set(x, "ageReceived", js.undefined)
     
-    @scala.inline
-    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
-    @scala.inline
-    def setDisplayCount(value: Double): Self = StObject.set(x, "displayCount", value.asInstanceOf[js.Any])
+    inline def setDisplayCount(value: Double): Self = StObject.set(x, "displayCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayCountUndefined: Self = StObject.set(x, "displayCount", js.undefined)
+    inline def setDisplayCountUndefined: Self = StObject.set(x, "displayCount", js.undefined)
     
-    @scala.inline
-    def setMaxObservations(value: Double): Self = StObject.set(x, "maxObservations", value.asInstanceOf[js.Any])
+    inline def setMaxObservations(value: Double): Self = StObject.set(x, "maxObservations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxObservationsUndefined: Self = StObject.set(x, "maxObservations", js.undefined)
+    inline def setMaxObservationsUndefined: Self = StObject.set(x, "maxObservations", js.undefined)
   }
 }

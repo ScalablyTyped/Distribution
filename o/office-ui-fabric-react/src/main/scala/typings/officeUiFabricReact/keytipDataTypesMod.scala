@@ -28,32 +28,24 @@ object keytipDataTypesMod {
   }
   object IKeytipDataProps {
     
-    @scala.inline
-    def apply(): IKeytipDataProps = {
+    inline def apply(): IKeytipDataProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IKeytipDataProps]
     }
     
-    @scala.inline
-    implicit class IKeytipDataPropsMutableBuilder[Self <: IKeytipDataProps] (val x: Self) extends AnyVal {
+    extension [Self <: IKeytipDataProps](x: Self) {
       
-      @scala.inline
-      def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
+      inline def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
+      inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
+      inline def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
     }
   }
   

@@ -33,49 +33,35 @@ trait StringMatcher extends StObject {
 }
 object StringMatcher {
   
-  @scala.inline
-  def apply(): StringMatcher = {
+  inline def apply(): StringMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringMatcher]
   }
   
-  @scala.inline
-  implicit class StringMatcherMutableBuilder[Self <: StringMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: StringMatcher](x: Self) {
     
-    @scala.inline
-    def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
-    @scala.inline
-    def setSafeRegex(value: RegexMatcher): Self = StObject.set(x, "safeRegex", value.asInstanceOf[js.Any])
+    inline def setSafeRegex(value: RegexMatcher): Self = StObject.set(x, "safeRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeRegexUndefined: Self = StObject.set(x, "safeRegex", js.undefined)
+    inline def setSafeRegexUndefined: Self = StObject.set(x, "safeRegex", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.MergeEventObject")
 @js.native
-class MergeEventObject protected ()
+/* private */ class MergeEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.MergeEventObject {
   
@@ -17,7 +17,7 @@ class MergeEventObject protected ()
   /* CompleteClass */
   override val DOM: IXMLDOMDocument = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.MergeEventObject_typekey")
   var InfoPathDotMergeEventObject_typekey: typings.activexInfopath.InfoPath.MergeEventObject = js.native
   

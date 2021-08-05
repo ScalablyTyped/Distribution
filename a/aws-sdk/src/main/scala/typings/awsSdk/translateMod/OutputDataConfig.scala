@@ -13,16 +13,13 @@ trait OutputDataConfig extends StObject {
 }
 object OutputDataConfig {
   
-  @scala.inline
-  def apply(S3Uri: S3Uri): OutputDataConfig = {
+  inline def apply(S3Uri: S3Uri): OutputDataConfig = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDataConfig]
   }
   
-  @scala.inline
-  implicit class OutputDataConfigMutableBuilder[Self <: OutputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OutputDataConfig](x: Self) {
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

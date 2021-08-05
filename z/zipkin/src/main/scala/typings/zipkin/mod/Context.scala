@@ -16,8 +16,7 @@ trait Context[T] extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     getContext: () => T,
     letContext: (T, js.Function0[js.Any]) => js.Any,
     scoped: js.Function0[js.Any] => js.Any,
@@ -27,19 +26,14 @@ object Context {
     __obj.asInstanceOf[Context[T]]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
+  extension [Self <: Context[?], T](x: Self & Context[T]) {
     
-    @scala.inline
-    def setGetContext(value: () => T): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => T): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLetContext(value: (T, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
+    inline def setLetContext(value: (T, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScoped(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "scoped", js.Any.fromFunction1(value))
+    inline def setScoped(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "scoped", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContext(value: T => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: T => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
   }
 }

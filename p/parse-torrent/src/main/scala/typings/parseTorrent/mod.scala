@@ -46,8 +46,7 @@ object mod extends Shortcut {
   }
   object Instance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constructor: js.Function,
       hasOwnProperty: PropertyKey => Boolean,
       propertyIsEnumerable: PropertyKey => Boolean
@@ -56,74 +55,51 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Instance]
     }
     
-    @scala.inline
-    implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+    extension [Self <: Instance](x: Self) {
       
-      @scala.inline
-      def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+      inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Array[ParsedFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[ParsedFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: ParsedFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: ParsedFile*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setInfo(value: TorrentInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: TorrentInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoBuffer(value: Buffer): Self = StObject.set(x, "infoBuffer", value.asInstanceOf[js.Any])
+      inline def setInfoBuffer(value: Buffer): Self = StObject.set(x, "infoBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoBufferUndefined: Self = StObject.set(x, "infoBuffer", js.undefined)
+      inline def setInfoBufferUndefined: Self = StObject.set(x, "infoBuffer", js.undefined)
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setLastPieceLength(value: Double): Self = StObject.set(x, "lastPieceLength", value.asInstanceOf[js.Any])
+      inline def setLastPieceLength(value: Double): Self = StObject.set(x, "lastPieceLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPieceLengthUndefined: Self = StObject.set(x, "lastPieceLength", js.undefined)
+      inline def setLastPieceLengthUndefined: Self = StObject.set(x, "lastPieceLength", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setPieceLength(value: Double): Self = StObject.set(x, "pieceLength", value.asInstanceOf[js.Any])
+      inline def setPieceLength(value: Double): Self = StObject.set(x, "pieceLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPieceLengthUndefined: Self = StObject.set(x, "pieceLength", js.undefined)
+      inline def setPieceLengthUndefined: Self = StObject.set(x, "pieceLength", js.undefined)
       
-      @scala.inline
-      def setPieces(value: js.Array[String]): Self = StObject.set(x, "pieces", value.asInstanceOf[js.Any])
+      inline def setPieces(value: js.Array[String]): Self = StObject.set(x, "pieces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
+      inline def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
       
-      @scala.inline
-      def setPiecesVarargs(value: String*): Self = StObject.set(x, "pieces", js.Array(value :_*))
+      inline def setPiecesVarargs(value: String*): Self = StObject.set(x, "pieces", js.Array(value :_*))
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     }
   }
   

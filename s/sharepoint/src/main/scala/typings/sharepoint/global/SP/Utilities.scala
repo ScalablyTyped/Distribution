@@ -51,20 +51,16 @@ object Utilities {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def dateToJulianDay(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dateToJulianDay")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def dateToJulianDay(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dateToJulianDay")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def daysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def daysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def julianDayToDate(julianDay: Double): SimpleDate = ^.asInstanceOf[js.Dynamic].applyDynamic("julianDayToDate")(julianDay.asInstanceOf[js.Any]).asInstanceOf[SimpleDate]
+    inline def julianDayToDate(julianDay: Double): SimpleDate = ^.asInstanceOf[js.Dynamic].applyDynamic("julianDayToDate")(julianDay.asInstanceOf[js.Any]).asInstanceOf[SimpleDate]
   }
   
   @JSGlobal("SP.Utilities.EmailProperties")
@@ -151,37 +147,29 @@ object Utilities {
     /** Appends correct "Source" parameter to the specified url, and then navigates to this url.
       "Source" parameter is recognized in many places in SharePoint, usually to determine "Cancel" behavior. */
     /* static member */
-    @scala.inline
-    def appendSourceAndNavigateTo(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendSourceAndNavigateTo")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def appendSourceAndNavigateTo(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendSourceAndNavigateTo")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def ecmaScriptStringLiteralEncode(scriptLiteralToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ecmaScriptStringLiteralEncode")(scriptLiteralToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ecmaScriptStringLiteralEncode(scriptLiteralToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ecmaScriptStringLiteralEncode")(scriptLiteralToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def escapeXmlText(stringToEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXmlText")(stringToEscape.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeXmlText(stringToEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXmlText")(stringToEscape.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Official version of STSHtmlEncode. Calls it internally. */
     /* static member */
-    @scala.inline
-    def htmlEncode(stringToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEncode")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def htmlEncode(stringToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEncode")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def navigateHttpFolder(urlSrc: String, frameTarget: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateHttpFolder")(urlSrc.asInstanceOf[js.Any], frameTarget.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def navigateHttpFolder(urlSrc: String, frameTarget: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateHttpFolder")(urlSrc.asInstanceOf[js.Any], frameTarget.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def navigateTo(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateTo(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def urlKeyValueEncode(keyOrValueToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlKeyValueEncode")(keyOrValueToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlKeyValueEncode(keyOrValueToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlKeyValueEncode")(keyOrValueToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def urlPathEncode(stringToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlPathEncode")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlPathEncode(stringToEncode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlPathEncode")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("SP.Utilities.IconSize")
@@ -210,8 +198,7 @@ object Utilities {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getLocalizedCountValue(locText: String, intervals: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizedCountValue")(locText.asInstanceOf[js.Any], intervals.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getLocalizedCountValue(locText: String, intervals: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizedCountValue")(locText.asInstanceOf[js.Any], intervals.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSGlobal("SP.Utilities.LogAppErrorResult")
@@ -434,16 +421,13 @@ object Utilities {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def removeQueryString(url: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryString")(url.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def removeQueryString(url: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryString")(url.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def replaceOrAddQueryString(url: String, key: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrAddQueryString")(url.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replaceOrAddQueryString(url: String, key: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrAddQueryString")(url.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def urlCombine(path1: String, path2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlCombine")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def urlCombine(path1: String, path2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlCombine")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSGlobal("SP.Utilities.Utility")
@@ -465,31 +449,26 @@ object Utilities {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def createEmailBodyForInvitation(context: typings.sharepoint.SP.ClientRuntimeContext, pageAddress: String): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("createEmailBodyForInvitation")(context.asInstanceOf[js.Any], pageAddress.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
+    inline def createEmailBodyForInvitation(context: typings.sharepoint.SP.ClientRuntimeContext, pageAddress: String): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("createEmailBodyForInvitation")(context.asInstanceOf[js.Any], pageAddress.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def createNewDiscussion[T](
+    inline def createNewDiscussion[T](
       context: typings.sharepoint.SP.ClientRuntimeContext,
       list: typings.sharepoint.SP.List[js.Any],
       title: String
     ): typings.sharepoint.SP.ListItem[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNewDiscussion")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ListItem[T]]
     
     /* static member */
-    @scala.inline
-    def createNewDiscussionReply[T](context: typings.sharepoint.SP.ClientRuntimeContext, parent: typings.sharepoint.SP.ListItem[T]): typings.sharepoint.SP.ListItem[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNewDiscussionReply")(context.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ListItem[T]]
+    inline def createNewDiscussionReply[T](context: typings.sharepoint.SP.ClientRuntimeContext, parent: typings.sharepoint.SP.ListItem[T]): typings.sharepoint.SP.ListItem[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNewDiscussionReply")(context.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ListItem[T]]
     
     /* static member */
-    @scala.inline
-    def createWikiPageInContextWeb(
+    inline def createWikiPageInContextWeb(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       parameters: typings.sharepoint.SP.Utilities.WikiPageCreationInformation
     ): typings.sharepoint.SP.File = (^.asInstanceOf[js.Dynamic].applyDynamic("createWikiPageInContextWeb")(context.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.File]
     
     /* static member */
-    @scala.inline
-    def formatDateTime(
+    inline def formatDateTime(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       web: typings.sharepoint.SP.Web,
       datetime: Date,
@@ -497,36 +476,28 @@ object Utilities {
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDateTime")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], datetime.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def getAppLicenseDeploymentId(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.GuidResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppLicenseDeploymentId")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.GuidResult]
+    inline def getAppLicenseDeploymentId(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.GuidResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppLicenseDeploymentId")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.GuidResult]
     
     /* static member */
-    @scala.inline
-    def getAppLicenseInformation(context: typings.sharepoint.SP.ClientRuntimeContext, productId: typings.sharepoint.SP.Guid): typings.sharepoint.SP.AppLicenseCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppLicenseInformation")(context.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.AppLicenseCollection]
+    inline def getAppLicenseInformation(context: typings.sharepoint.SP.ClientRuntimeContext, productId: typings.sharepoint.SP.Guid): typings.sharepoint.SP.AppLicenseCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppLicenseInformation")(context.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.AppLicenseCollection]
     
     /* static member */
-    @scala.inline
-    def getCurrentUserEmailAddresses(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.StringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUserEmailAddresses")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.StringResult]
+    inline def getCurrentUserEmailAddresses(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.StringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUserEmailAddresses")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def getImageUrl(imageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageUrl")(imageName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getImageUrl(imageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageUrl")(imageName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLayoutsLatestVersionRelativeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionRelativeUrl")().asInstanceOf[String]
+    inline def getLayoutsLatestVersionRelativeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionRelativeUrl")().asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLayoutsLatestVersionUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionUrl")().asInstanceOf[String]
+    inline def getLayoutsLatestVersionUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionUrl")().asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLayoutsPageUrl(pageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutsPageUrl")(pageName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getLayoutsPageUrl(pageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutsPageUrl")(pageName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLocalizedString(
+    inline def getLocalizedString(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       source: String,
       defaultResourceFile: String,
@@ -534,20 +505,17 @@ object Utilities {
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizedString")(context.asInstanceOf[js.Any], source.asInstanceOf[js.Any], defaultResourceFile.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def getLowerCaseString(context: typings.sharepoint.SP.ClientRuntimeContext, sourceValue: String, lcid: Double): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getLowerCaseString")(context.asInstanceOf[js.Any], sourceValue.asInstanceOf[js.Any], lcid.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
+    inline def getLowerCaseString(context: typings.sharepoint.SP.ClientRuntimeContext, sourceValue: String, lcid: Double): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getLowerCaseString")(context.asInstanceOf[js.Any], sourceValue.asInstanceOf[js.Any], lcid.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def getPeoplePickerURL(
+    inline def getPeoplePickerURL(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       web: typings.sharepoint.SP.Web,
       fieldUser: typings.sharepoint.SP.FieldUser
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeoplePickerURL")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], fieldUser.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def importAppLicense(
+    inline def importAppLicense(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       licenseTokenToImport: String,
       contentMarket: String,
@@ -559,32 +527,26 @@ object Utilities {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importAppLicense")(context.asInstanceOf[js.Any], licenseTokenToImport.asInstanceOf[js.Any], contentMarket.asInstanceOf[js.Any], billingMarket.asInstanceOf[js.Any], appName.asInstanceOf[js.Any], iconUrl.asInstanceOf[js.Any], providerName.asInstanceOf[js.Any], appSubtype.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def isUserLicensedForEntityInContext(context: typings.sharepoint.SP.ClientRuntimeContext, licensableEntity: String): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserLicensedForEntityInContext")(context.asInstanceOf[js.Any], licensableEntity.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
+    inline def isUserLicensedForEntityInContext(context: typings.sharepoint.SP.ClientRuntimeContext, licensableEntity: String): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserLicensedForEntityInContext")(context.asInstanceOf[js.Any], licensableEntity.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     
     /* static member */
-    @scala.inline
-    def localizeWebPartGallery(context: typings.sharepoint.SP.ClientRuntimeContext, items: ListItemCollection[js.Any]): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("localizeWebPartGallery")(context.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[js.Any]]]
+    inline def localizeWebPartGallery(context: typings.sharepoint.SP.ClientRuntimeContext, items: ListItemCollection[js.Any]): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("localizeWebPartGallery")(context.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[js.Any]]]
     
     /* static member */
-    @scala.inline
-    def logCustomAppError(context: typings.sharepoint.SP.ClientRuntimeContext, error: String): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("logCustomAppError")(context.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
+    inline def logCustomAppError(context: typings.sharepoint.SP.ClientRuntimeContext, error: String): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("logCustomAppError")(context.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
     
     /* static member */
-    @scala.inline
-    def logCustomRemoteAppError(
+    inline def logCustomRemoteAppError(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       productId: typings.sharepoint.SP.Guid,
       error: String
     ): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("logCustomRemoteAppError")(context.asInstanceOf[js.Any], productId.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
     
     /* static member */
-    @scala.inline
-    def markDiscussionAsFeatured(context: typings.sharepoint.SP.ClientRuntimeContext, listID: String, topicIDs: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markDiscussionAsFeatured")(context.asInstanceOf[js.Any], listID.asInstanceOf[js.Any], topicIDs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def markDiscussionAsFeatured(context: typings.sharepoint.SP.ClientRuntimeContext, listID: String, topicIDs: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markDiscussionAsFeatured")(context.asInstanceOf[js.Any], listID.asInstanceOf[js.Any], topicIDs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def resolvePrincipal(
+    inline def resolvePrincipal(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       web: typings.sharepoint.SP.Web,
       input: String,
@@ -595,8 +557,7 @@ object Utilities {
     ): typings.sharepoint.SP.Utilities.PrincipalInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePrincipal")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], input.asInstanceOf[js.Any], scopes.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], usersContainer.asInstanceOf[js.Any], inputIsEmailOnly.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Utilities.PrincipalInfo]
     
     /* static member */
-    @scala.inline
-    def searchPrincipals(
+    inline def searchPrincipals(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       web: typings.sharepoint.SP.Web,
       input: String,
@@ -607,8 +568,7 @@ object Utilities {
     ): js.Array[typings.sharepoint.SP.Utilities.PrincipalInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPrincipals")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], input.asInstanceOf[js.Any], scopes.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], usersContainer.asInstanceOf[js.Any], maxCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.sharepoint.SP.Utilities.PrincipalInfo]]
     
     /* static member */
-    @scala.inline
-    def unmarkDiscussionAsFeatured(context: typings.sharepoint.SP.ClientRuntimeContext, listID: String, topicIDs: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmarkDiscussionAsFeatured")(context.asInstanceOf[js.Any], listID.asInstanceOf[js.Any], topicIDs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def unmarkDiscussionAsFeatured(context: typings.sharepoint.SP.ClientRuntimeContext, listID: String, topicIDs: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmarkDiscussionAsFeatured")(context.asInstanceOf[js.Any], listID.asInstanceOf[js.Any], topicIDs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("SP.Utilities.VersionUtility")
@@ -623,20 +583,16 @@ object Utilities {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getImageUrl(imageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageUrl")(imageName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getImageUrl(imageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageUrl")(imageName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLayoutsLatestVersionRelativeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionRelativeUrl")().asInstanceOf[String]
+    inline def getLayoutsLatestVersionRelativeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionRelativeUrl")().asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLayoutsLatestVersionUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionUrl")().asInstanceOf[String]
+    inline def getLayoutsLatestVersionUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_layoutsLatestVersionUrl")().asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getLayoutsPageUrl(pageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutsPageUrl")(pageName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getLayoutsPageUrl(pageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutsPageUrl")(pageName.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("SP.Utilities.WikiPageCreationInformation")

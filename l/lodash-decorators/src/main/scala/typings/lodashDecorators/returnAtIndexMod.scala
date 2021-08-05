@@ -10,6 +10,5 @@ object returnAtIndexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def returnAtIndex(fn: js.Function, index: Double): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("returnAtIndex")(fn.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def returnAtIndex(fn: js.Function, index: Double): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("returnAtIndex")(fn.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

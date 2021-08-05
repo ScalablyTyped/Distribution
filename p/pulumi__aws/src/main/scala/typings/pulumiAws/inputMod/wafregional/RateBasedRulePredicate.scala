@@ -27,23 +27,18 @@ trait RateBasedRulePredicate extends StObject {
 }
 object RateBasedRulePredicate {
   
-  @scala.inline
-  def apply(dataId: Input[String], negated: Input[Boolean], `type`: Input[String]): RateBasedRulePredicate = {
+  inline def apply(dataId: Input[String], negated: Input[Boolean], `type`: Input[String]): RateBasedRulePredicate = {
     val __obj = js.Dynamic.literal(dataId = dataId.asInstanceOf[js.Any], negated = negated.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateBasedRulePredicate]
   }
   
-  @scala.inline
-  implicit class RateBasedRulePredicateMutableBuilder[Self <: RateBasedRulePredicate] (val x: Self) extends AnyVal {
+  extension [Self <: RateBasedRulePredicate](x: Self) {
     
-    @scala.inline
-    def setDataId(value: Input[String]): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
+    inline def setDataId(value: Input[String]): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegated(value: Input[Boolean]): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
+    inline def setNegated(value: Input[Boolean]): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

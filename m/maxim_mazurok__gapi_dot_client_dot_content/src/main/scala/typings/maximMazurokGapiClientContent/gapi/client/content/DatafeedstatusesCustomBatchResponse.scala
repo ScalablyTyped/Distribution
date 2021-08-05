@@ -14,28 +14,21 @@ trait DatafeedstatusesCustomBatchResponse extends StObject {
 }
 object DatafeedstatusesCustomBatchResponse {
   
-  @scala.inline
-  def apply(): DatafeedstatusesCustomBatchResponse = {
+  inline def apply(): DatafeedstatusesCustomBatchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatafeedstatusesCustomBatchResponse]
   }
   
-  @scala.inline
-  implicit class DatafeedstatusesCustomBatchResponseMutableBuilder[Self <: DatafeedstatusesCustomBatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatafeedstatusesCustomBatchResponse](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[DatafeedstatusesCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[DatafeedstatusesCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: DatafeedstatusesCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: DatafeedstatusesCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

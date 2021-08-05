@@ -10,8 +10,7 @@ trait ListObjectVersionsOutput
      with typings.awsSdkClientS3Node.typesListObjectVersionsOutputMod.ListObjectVersionsOutput
 object ListObjectVersionsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListObjectVersionsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListObjectVersionsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectVersionsOutput]
   }

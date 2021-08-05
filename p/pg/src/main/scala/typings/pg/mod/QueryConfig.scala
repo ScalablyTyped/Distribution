@@ -14,28 +14,21 @@ trait QueryConfig[I /* <: js.Array[js.Any] */] extends StObject {
 }
 object QueryConfig {
   
-  @scala.inline
-  def apply[I /* <: js.Array[js.Any] */](text: String): QueryConfig[I] = {
+  inline def apply[I /* <: js.Array[js.Any] */](text: String): QueryConfig[I] = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryConfig[I]]
   }
   
-  @scala.inline
-  implicit class QueryConfigMutableBuilder[Self <: QueryConfig[?], I /* <: js.Array[js.Any] */] (val x: Self & QueryConfig[I]) extends AnyVal {
+  extension [Self <: QueryConfig[?], I /* <: js.Array[js.Any] */](x: Self & QueryConfig[I]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: I): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: I): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

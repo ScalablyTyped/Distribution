@@ -16,12 +16,8 @@ object CompletionList {
     * @param items The completion items.
     * @param isIncomplete The list is not complete.
     */
-  @scala.inline
-  def create(): typings.vscodeLanguageserverTypes.mod.CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
-  @scala.inline
-  def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem]): typings.vscodeLanguageserverTypes.mod.CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
-  @scala.inline
-  def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
-  @scala.inline
-  def create(items: Unit, isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(): typings.vscodeLanguageserverTypes.mod.CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem]): typings.vscodeLanguageserverTypes.mod.CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(items: Unit, isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionList]
 }

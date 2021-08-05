@@ -27,6 +27,6 @@ object columnUtilsMod {
     
     def getOriginalPathForColumn(column: Column, originalBalancedTree: js.Array[OriginalColumnGroupChild]): js.Array[OriginalColumnGroup] = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
   }
 }

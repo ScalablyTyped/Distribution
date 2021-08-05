@@ -30,19 +30,15 @@ trait InvalidRemovedParameterException
 }
 object InvalidRemovedParameterException {
   
-  @scala.inline
-  def apply(Context: XInterface, Extension: XPackage, Message: String, PreviousValue: Boolean): InvalidRemovedParameterException = {
+  inline def apply(Context: XInterface, Extension: XPackage, Message: String, PreviousValue: Boolean): InvalidRemovedParameterException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Extension = Extension.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], PreviousValue = PreviousValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidRemovedParameterException]
   }
   
-  @scala.inline
-  implicit class InvalidRemovedParameterExceptionMutableBuilder[Self <: InvalidRemovedParameterException] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidRemovedParameterException](x: Self) {
     
-    @scala.inline
-    def setExtension(value: XPackage): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: XPackage): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousValue(value: Boolean): Self = StObject.set(x, "PreviousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: Boolean): Self = StObject.set(x, "PreviousValue", value.asInstanceOf[js.Any])
   }
 }

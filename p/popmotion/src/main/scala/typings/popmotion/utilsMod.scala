@@ -11,12 +11,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def animateSync(animation: Animation[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def animateSync(animation: Animation[Double], timeStep: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any], timeStep.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def animateSync(animation: Animation[Double], timeStep: Double, round: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any], timeStep.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def animateSync(animation: Animation[Double], timeStep: Unit, round: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any], timeStep.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def animateSync(animation: Animation[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def animateSync(animation: Animation[Double], timeStep: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any], timeStep.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def animateSync(animation: Animation[Double], timeStep: Double, round: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any], timeStep.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def animateSync(animation: Animation[Double], timeStep: Unit, round: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("animateSync")(animation.asInstanceOf[js.Any], timeStep.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

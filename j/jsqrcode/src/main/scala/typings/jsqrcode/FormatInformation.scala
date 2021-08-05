@@ -14,14 +14,13 @@ trait FormatInformation extends StObject {
   
   def GetHashCode(): Double
   
-  var dataMask: Double
+  /* private */ var dataMask: Double
   
-  var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel
+  /* private */ var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel
 }
 object FormatInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataMask: Double,
     Equals: FormatInformation => Boolean,
     ErrorCorrectionLevel: ErrorCorrectionLevel,
@@ -33,19 +32,14 @@ object FormatInformation {
     __obj.asInstanceOf[FormatInformation]
   }
   
-  @scala.inline
-  implicit class FormatInformationMutableBuilder[Self <: FormatInformation] (val x: Self) extends AnyVal {
+  extension [Self <: FormatInformation](x: Self) {
     
-    @scala.inline
-    def setDataMask(value: Double): Self = StObject.set(x, "DataMask", value.asInstanceOf[js.Any])
+    inline def setDataMask(value: Double): Self = StObject.set(x, "DataMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquals(value: FormatInformation => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction1(value))
+    inline def setEquals(value: FormatInformation => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorCorrectionLevel(value: ErrorCorrectionLevel): Self = StObject.set(x, "ErrorCorrectionLevel", value.asInstanceOf[js.Any])
+    inline def setErrorCorrectionLevel(value: ErrorCorrectionLevel): Self = StObject.set(x, "ErrorCorrectionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetHashCode(value: () => Double): Self = StObject.set(x, "GetHashCode", js.Any.fromFunction0(value))
+    inline def setGetHashCode(value: () => Double): Self = StObject.set(x, "GetHashCode", js.Any.fromFunction0(value))
   }
 }

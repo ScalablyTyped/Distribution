@@ -19,5 +19,5 @@ class JsonpInterceptor protected () extends StObject {
     */
   def intercept(req: HttpRequest[js.Any], next: HttpHandler): Observable_[HttpEvent[js.Any]] = js.native
   
-  var jsonp: js.Any = js.native
+  /* private */ var jsonp: js.Any = js.native
 }

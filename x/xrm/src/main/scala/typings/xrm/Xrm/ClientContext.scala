@@ -34,8 +34,7 @@ trait ClientContext extends StObject {
 }
 object ClientContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getClient: () => Client,
     getClientState: () => ClientState,
     getFormFactor: () => ClientFormFactor,
@@ -45,19 +44,14 @@ object ClientContext {
     __obj.asInstanceOf[ClientContext]
   }
   
-  @scala.inline
-  implicit class ClientContextMutableBuilder[Self <: ClientContext] (val x: Self) extends AnyVal {
+  extension [Self <: ClientContext](x: Self) {
     
-    @scala.inline
-    def setGetClient(value: () => Client): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
+    inline def setGetClient(value: () => Client): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClientState(value: () => ClientState): Self = StObject.set(x, "getClientState", js.Any.fromFunction0(value))
+    inline def setGetClientState(value: () => ClientState): Self = StObject.set(x, "getClientState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormFactor(value: () => ClientFormFactor): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
+    inline def setGetFormFactor(value: () => ClientFormFactor): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
+    inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
   }
 }

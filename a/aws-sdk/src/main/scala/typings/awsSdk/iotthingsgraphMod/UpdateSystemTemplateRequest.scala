@@ -23,25 +23,19 @@ trait UpdateSystemTemplateRequest extends StObject {
 }
 object UpdateSystemTemplateRequest {
   
-  @scala.inline
-  def apply(definition: DefinitionDocument, id: Urn): UpdateSystemTemplateRequest = {
+  inline def apply(definition: DefinitionDocument, id: Urn): UpdateSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSystemTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSystemTemplateRequestMutableBuilder[Self <: UpdateSystemTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSystemTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
+    inline def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

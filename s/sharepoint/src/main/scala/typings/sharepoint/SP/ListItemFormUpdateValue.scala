@@ -26,8 +26,7 @@ trait ListItemFormUpdateValue
 }
 object ListItemFormUpdateValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -46,31 +45,22 @@ object ListItemFormUpdateValue {
     __obj.asInstanceOf[ListItemFormUpdateValue]
   }
   
-  @scala.inline
-  implicit class ListItemFormUpdateValueMutableBuilder[Self <: ListItemFormUpdateValue] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemFormUpdateValue](x: Self) {
     
-    @scala.inline
-    def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
+    inline def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fieldName(value: () => String): Self = StObject.set(x, "get_fieldName", js.Any.fromFunction0(value))
+    inline def setGet_fieldName(value: () => String): Self = StObject.set(x, "get_fieldName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fieldValue(value: () => String): Self = StObject.set(x, "get_fieldValue", js.Any.fromFunction0(value))
+    inline def setGet_fieldValue(value: () => String): Self = StObject.set(x, "get_fieldValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hasException(value: () => Boolean): Self = StObject.set(x, "get_hasException", js.Any.fromFunction0(value))
+    inline def setGet_hasException(value: () => Boolean): Self = StObject.set(x, "get_hasException", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_errorMessage(value: String => Unit): Self = StObject.set(x, "set_errorMessage", js.Any.fromFunction1(value))
+    inline def setSet_errorMessage(value: String => Unit): Self = StObject.set(x, "set_errorMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fieldName(value: String => Unit): Self = StObject.set(x, "set_fieldName", js.Any.fromFunction1(value))
+    inline def setSet_fieldName(value: String => Unit): Self = StObject.set(x, "set_fieldName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fieldValue(value: String => Unit): Self = StObject.set(x, "set_fieldValue", js.Any.fromFunction1(value))
+    inline def setSet_fieldValue(value: String => Unit): Self = StObject.set(x, "set_fieldValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_hasException(value: Boolean => Unit): Self = StObject.set(x, "set_hasException", js.Any.fromFunction1(value))
+    inline def setSet_hasException(value: Boolean => Unit): Self = StObject.set(x, "set_hasException", js.Any.fromFunction1(value))
   }
 }

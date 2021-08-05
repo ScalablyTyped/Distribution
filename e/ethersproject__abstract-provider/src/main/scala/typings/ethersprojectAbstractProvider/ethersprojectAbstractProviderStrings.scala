@@ -8,6 +8,5 @@ object ethersprojectAbstractProviderStrings {
   
   @js.native
   sealed trait ForkEvent extends StObject
-  @scala.inline
-  def ForkEvent: ForkEvent = "ForkEvent".asInstanceOf[ForkEvent]
+  inline def ForkEvent: ForkEvent = "ForkEvent".asInstanceOf[ForkEvent]
 }

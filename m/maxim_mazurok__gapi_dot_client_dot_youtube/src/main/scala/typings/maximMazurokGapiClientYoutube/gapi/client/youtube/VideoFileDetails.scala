@@ -41,73 +41,51 @@ trait VideoFileDetails extends StObject {
 }
 object VideoFileDetails {
   
-  @scala.inline
-  def apply(): VideoFileDetails = {
+  inline def apply(): VideoFileDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoFileDetails]
   }
   
-  @scala.inline
-  implicit class VideoFileDetailsMutableBuilder[Self <: VideoFileDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VideoFileDetails](x: Self) {
     
-    @scala.inline
-    def setAudioStreams(value: js.Array[VideoFileDetailsAudioStream]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
+    inline def setAudioStreams(value: js.Array[VideoFileDetailsAudioStream]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioStreamsUndefined: Self = StObject.set(x, "audioStreams", js.undefined)
+    inline def setAudioStreamsUndefined: Self = StObject.set(x, "audioStreams", js.undefined)
     
-    @scala.inline
-    def setAudioStreamsVarargs(value: VideoFileDetailsAudioStream*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
+    inline def setAudioStreamsVarargs(value: VideoFileDetailsAudioStream*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
     
-    @scala.inline
-    def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
+    inline def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
+    inline def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setVideoStreams(value: js.Array[VideoFileDetailsVideoStream]): Self = StObject.set(x, "videoStreams", value.asInstanceOf[js.Any])
+    inline def setVideoStreams(value: js.Array[VideoFileDetailsVideoStream]): Self = StObject.set(x, "videoStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoStreamsUndefined: Self = StObject.set(x, "videoStreams", js.undefined)
+    inline def setVideoStreamsUndefined: Self = StObject.set(x, "videoStreams", js.undefined)
     
-    @scala.inline
-    def setVideoStreamsVarargs(value: VideoFileDetailsVideoStream*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
+    inline def setVideoStreamsVarargs(value: VideoFileDetailsVideoStream*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
   }
 }

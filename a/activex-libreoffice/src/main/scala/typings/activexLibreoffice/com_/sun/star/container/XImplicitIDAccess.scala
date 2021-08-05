@@ -22,8 +22,7 @@ trait XImplicitIDAccess
 }
 object XImplicitIDAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     ImplicitIDs: SafeArray[String],
     acquire: () => Unit,
@@ -38,16 +37,12 @@ object XImplicitIDAccess {
     __obj.asInstanceOf[XImplicitIDAccess]
   }
   
-  @scala.inline
-  implicit class XImplicitIDAccessMutableBuilder[Self <: XImplicitIDAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XImplicitIDAccess](x: Self) {
     
-    @scala.inline
-    def setGetByImplicitID(value: String => js.Any): Self = StObject.set(x, "getByImplicitID", js.Any.fromFunction1(value))
+    inline def setGetByImplicitID(value: String => js.Any): Self = StObject.set(x, "getByImplicitID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetImplicitIDs(value: () => SafeArray[String]): Self = StObject.set(x, "getImplicitIDs", js.Any.fromFunction0(value))
+    inline def setGetImplicitIDs(value: () => SafeArray[String]): Self = StObject.set(x, "getImplicitIDs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImplicitIDs(value: SafeArray[String]): Self = StObject.set(x, "ImplicitIDs", value.asInstanceOf[js.Any])
+    inline def setImplicitIDs(value: SafeArray[String]): Self = StObject.set(x, "ImplicitIDs", value.asInstanceOf[js.Any])
   }
 }

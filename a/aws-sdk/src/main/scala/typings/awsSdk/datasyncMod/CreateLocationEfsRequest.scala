@@ -28,34 +28,25 @@ trait CreateLocationEfsRequest extends StObject {
 }
 object CreateLocationEfsRequest {
   
-  @scala.inline
-  def apply(Ec2Config: Ec2Config, EfsFilesystemArn: EfsFilesystemArn): CreateLocationEfsRequest = {
+  inline def apply(Ec2Config: Ec2Config, EfsFilesystemArn: EfsFilesystemArn): CreateLocationEfsRequest = {
     val __obj = js.Dynamic.literal(Ec2Config = Ec2Config.asInstanceOf[js.Any], EfsFilesystemArn = EfsFilesystemArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLocationEfsRequest]
   }
   
-  @scala.inline
-  implicit class CreateLocationEfsRequestMutableBuilder[Self <: CreateLocationEfsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationEfsRequest](x: Self) {
     
-    @scala.inline
-    def setEc2Config(value: Ec2Config): Self = StObject.set(x, "Ec2Config", value.asInstanceOf[js.Any])
+    inline def setEc2Config(value: Ec2Config): Self = StObject.set(x, "Ec2Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEfsFilesystemArn(value: EfsFilesystemArn): Self = StObject.set(x, "EfsFilesystemArn", value.asInstanceOf[js.Any])
+    inline def setEfsFilesystemArn(value: EfsFilesystemArn): Self = StObject.set(x, "EfsFilesystemArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdirectory(value: EfsSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
+    inline def setSubdirectory(value: EfsSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
+    inline def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
     
-    @scala.inline
-    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

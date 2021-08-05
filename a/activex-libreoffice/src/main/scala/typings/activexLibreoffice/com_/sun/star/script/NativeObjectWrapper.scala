@@ -10,16 +10,13 @@ trait NativeObjectWrapper extends StObject {
 }
 object NativeObjectWrapper {
   
-  @scala.inline
-  def apply(ObjectId: js.Any): NativeObjectWrapper = {
+  inline def apply(ObjectId: js.Any): NativeObjectWrapper = {
     val __obj = js.Dynamic.literal(ObjectId = ObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeObjectWrapper]
   }
   
-  @scala.inline
-  implicit class NativeObjectWrapperMutableBuilder[Self <: NativeObjectWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: NativeObjectWrapper](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: js.Any): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: js.Any): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
   }
 }

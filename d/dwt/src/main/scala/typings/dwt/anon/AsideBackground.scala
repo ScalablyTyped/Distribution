@@ -19,37 +19,27 @@ trait AsideBackground extends StObject {
 }
 object AsideBackground {
   
-  @scala.inline
-  def apply(): AsideBackground = {
+  inline def apply(): AsideBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsideBackground]
   }
   
-  @scala.inline
-  implicit class AsideBackgroundMutableBuilder[Self <: AsideBackground] (val x: Self) extends AnyVal {
+  extension [Self <: AsideBackground](x: Self) {
     
-    @scala.inline
-    def setAsideBackground(value: String): Self = StObject.set(x, "asideBackground", value.asInstanceOf[js.Any])
+    inline def setAsideBackground(value: String): Self = StObject.set(x, "asideBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsideBackgroundUndefined: Self = StObject.set(x, "asideBackground", js.undefined)
+    inline def setAsideBackgroundUndefined: Self = StObject.set(x, "asideBackground", js.undefined)
     
-    @scala.inline
-    def setBottomMenuBackground(value: String): Self = StObject.set(x, "bottomMenuBackground", value.asInstanceOf[js.Any])
+    inline def setBottomMenuBackground(value: String): Self = StObject.set(x, "bottomMenuBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomMenuBackgroundUndefined: Self = StObject.set(x, "bottomMenuBackground", js.undefined)
+    inline def setBottomMenuBackgroundUndefined: Self = StObject.set(x, "bottomMenuBackground", js.undefined)
     
-    @scala.inline
-    def setCanvasBackground(value: String): Self = StObject.set(x, "canvasBackground", value.asInstanceOf[js.Any])
+    inline def setCanvasBackground(value: String): Self = StObject.set(x, "canvasBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasBackgroundUndefined: Self = StObject.set(x, "canvasBackground", js.undefined)
+    inline def setCanvasBackgroundUndefined: Self = StObject.set(x, "canvasBackground", js.undefined)
     
-    @scala.inline
-    def setTopMenuBackground(value: String): Self = StObject.set(x, "topMenuBackground", value.asInstanceOf[js.Any])
+    inline def setTopMenuBackground(value: String): Self = StObject.set(x, "topMenuBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMenuBackgroundUndefined: Self = StObject.set(x, "topMenuBackground", js.undefined)
+    inline def setTopMenuBackgroundUndefined: Self = StObject.set(x, "topMenuBackground", js.undefined)
   }
 }

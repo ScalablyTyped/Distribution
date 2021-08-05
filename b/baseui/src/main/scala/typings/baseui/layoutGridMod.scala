@@ -83,22 +83,18 @@ object layoutGridMod {
   }
   object CellOverrides {
     
-    @scala.inline
-    def apply(): CellOverrides = {
+    inline def apply(): CellOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellOverrides]
     }
     
-    @scala.inline
-    implicit class CellOverridesMutableBuilder[Self <: CellOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: CellOverrides](x: Self) {
       
-      @scala.inline
-      def setCell(
+      inline def setCell(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
+      inline def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
     }
   }
   
@@ -118,62 +114,44 @@ object layoutGridMod {
   }
   object CellProps {
     
-    @scala.inline
-    def apply(): CellProps = {
+    inline def apply(): CellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellProps]
     }
     
-    @scala.inline
-    implicit class CellPropsMutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
+    extension [Self <: CellProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAlignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "align", js.Array(value :_*))
+      inline def setAlignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "align", js.Array(value :_*))
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Responsive[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Responsive[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
       
-      @scala.inline
-      def setOverrides(value: CellOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: CellOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Responsive[Double]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Responsive[Double]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSkipVarargs(value: Double*): Self = StObject.set(x, "skip", js.Array(value :_*))
+      inline def setSkipVarargs(value: Double*): Self = StObject.set(x, "skip", js.Array(value :_*))
       
-      @scala.inline
-      def setSpan(value: Responsive[Double]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Responsive[Double]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
       
-      @scala.inline
-      def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
+      inline def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
     }
   }
   
@@ -185,22 +163,18 @@ object layoutGridMod {
   }
   object GridOverrides {
     
-    @scala.inline
-    def apply(): GridOverrides = {
+    inline def apply(): GridOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridOverrides]
     }
     
-    @scala.inline
-    implicit class GridOverridesMutableBuilder[Self <: GridOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: GridOverrides](x: Self) {
       
-      @scala.inline
-      def setGrid(
+      inline def setGrid(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "Grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "Grid", js.undefined)
     }
   }
   
@@ -230,91 +204,64 @@ object layoutGridMod {
   }
   object GridProps {
     
-    @scala.inline
-    def apply(): GridProps = {
+    inline def apply(): GridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridProps]
     }
     
-    @scala.inline
-    implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAlignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "align", js.Array(value :_*))
+      inline def setAlignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "align", js.Array(value :_*))
       
-      @scala.inline
-      def setBehavior(value: BEHAVIOR): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: BEHAVIOR): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setGridColumns(value: Responsive[Double]): Self = StObject.set(x, "gridColumns", value.asInstanceOf[js.Any])
+      inline def setGridColumns(value: Responsive[Double]): Self = StObject.set(x, "gridColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnsUndefined: Self = StObject.set(x, "gridColumns", js.undefined)
+      inline def setGridColumnsUndefined: Self = StObject.set(x, "gridColumns", js.undefined)
       
-      @scala.inline
-      def setGridColumnsVarargs(value: Double*): Self = StObject.set(x, "gridColumns", js.Array(value :_*))
+      inline def setGridColumnsVarargs(value: Double*): Self = StObject.set(x, "gridColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setGridGaps(value: Responsive[Double]): Self = StObject.set(x, "gridGaps", value.asInstanceOf[js.Any])
+      inline def setGridGaps(value: Responsive[Double]): Self = StObject.set(x, "gridGaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridGapsUndefined: Self = StObject.set(x, "gridGaps", js.undefined)
+      inline def setGridGapsUndefined: Self = StObject.set(x, "gridGaps", js.undefined)
       
-      @scala.inline
-      def setGridGapsVarargs(value: Double*): Self = StObject.set(x, "gridGaps", js.Array(value :_*))
+      inline def setGridGapsVarargs(value: Double*): Self = StObject.set(x, "gridGaps", js.Array(value :_*))
       
-      @scala.inline
-      def setGridGutters(value: Responsive[Double]): Self = StObject.set(x, "gridGutters", value.asInstanceOf[js.Any])
+      inline def setGridGutters(value: Responsive[Double]): Self = StObject.set(x, "gridGutters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridGuttersUndefined: Self = StObject.set(x, "gridGutters", js.undefined)
+      inline def setGridGuttersUndefined: Self = StObject.set(x, "gridGutters", js.undefined)
       
-      @scala.inline
-      def setGridGuttersVarargs(value: Double*): Self = StObject.set(x, "gridGutters", js.Array(value :_*))
+      inline def setGridGuttersVarargs(value: Double*): Self = StObject.set(x, "gridGutters", js.Array(value :_*))
       
-      @scala.inline
-      def setGridMargins(value: Responsive[Double]): Self = StObject.set(x, "gridMargins", value.asInstanceOf[js.Any])
+      inline def setGridMargins(value: Responsive[Double]): Self = StObject.set(x, "gridMargins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridMarginsUndefined: Self = StObject.set(x, "gridMargins", js.undefined)
+      inline def setGridMarginsUndefined: Self = StObject.set(x, "gridMargins", js.undefined)
       
-      @scala.inline
-      def setGridMarginsVarargs(value: Double*): Self = StObject.set(x, "gridMargins", js.Array(value :_*))
+      inline def setGridMarginsVarargs(value: Double*): Self = StObject.set(x, "gridMargins", js.Array(value :_*))
       
-      @scala.inline
-      def setGridMaxWidth(value: Double): Self = StObject.set(x, "gridMaxWidth", value.asInstanceOf[js.Any])
+      inline def setGridMaxWidth(value: Double): Self = StObject.set(x, "gridMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridMaxWidthUndefined: Self = StObject.set(x, "gridMaxWidth", js.undefined)
+      inline def setGridMaxWidthUndefined: Self = StObject.set(x, "gridMaxWidth", js.undefined)
       
-      @scala.inline
-      def setGridUnit(
+      inline def setGridUnit(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
       ): Self = StObject.set(x, "gridUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUnitUndefined: Self = StObject.set(x, "gridUnit", js.undefined)
+      inline def setGridUnitUndefined: Self = StObject.set(x, "gridUnit", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: GridOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: GridOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -350,85 +297,60 @@ object layoutGridMod {
   }
   object StyledCellProps {
     
-    @scala.inline
-    def apply(): StyledCellProps = {
+    inline def apply(): StyledCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyledCellProps]
     }
     
-    @scala.inline
-    implicit class StyledCellPropsMutableBuilder[Self <: StyledCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledCellProps](x: Self) {
       
-      @scala.inline
-      def set$align(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
+      inline def set$align(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$alignUndefined: Self = StObject.set(x, "$align", js.undefined)
+      inline def set$alignUndefined: Self = StObject.set(x, "$align", js.undefined)
       
-      @scala.inline
-      def set$alignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "$align", js.Array(value :_*))
+      inline def set$alignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "$align", js.Array(value :_*))
       
-      @scala.inline
-      def set$gridColumns(value: Responsive[Double]): Self = StObject.set(x, "$gridColumns", value.asInstanceOf[js.Any])
+      inline def set$gridColumns(value: Responsive[Double]): Self = StObject.set(x, "$gridColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridColumnsUndefined: Self = StObject.set(x, "$gridColumns", js.undefined)
+      inline def set$gridColumnsUndefined: Self = StObject.set(x, "$gridColumns", js.undefined)
       
-      @scala.inline
-      def set$gridColumnsVarargs(value: Double*): Self = StObject.set(x, "$gridColumns", js.Array(value :_*))
+      inline def set$gridColumnsVarargs(value: Double*): Self = StObject.set(x, "$gridColumns", js.Array(value :_*))
       
-      @scala.inline
-      def set$gridGaps(value: Responsive[Double]): Self = StObject.set(x, "$gridGaps", value.asInstanceOf[js.Any])
+      inline def set$gridGaps(value: Responsive[Double]): Self = StObject.set(x, "$gridGaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridGapsUndefined: Self = StObject.set(x, "$gridGaps", js.undefined)
+      inline def set$gridGapsUndefined: Self = StObject.set(x, "$gridGaps", js.undefined)
       
-      @scala.inline
-      def set$gridGapsVarargs(value: Double*): Self = StObject.set(x, "$gridGaps", js.Array(value :_*))
+      inline def set$gridGapsVarargs(value: Double*): Self = StObject.set(x, "$gridGaps", js.Array(value :_*))
       
-      @scala.inline
-      def set$gridGutters(value: Responsive[Double]): Self = StObject.set(x, "$gridGutters", value.asInstanceOf[js.Any])
+      inline def set$gridGutters(value: Responsive[Double]): Self = StObject.set(x, "$gridGutters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridGuttersUndefined: Self = StObject.set(x, "$gridGutters", js.undefined)
+      inline def set$gridGuttersUndefined: Self = StObject.set(x, "$gridGutters", js.undefined)
       
-      @scala.inline
-      def set$gridGuttersVarargs(value: Double*): Self = StObject.set(x, "$gridGutters", js.Array(value :_*))
+      inline def set$gridGuttersVarargs(value: Double*): Self = StObject.set(x, "$gridGutters", js.Array(value :_*))
       
-      @scala.inline
-      def set$gridUnit(
+      inline def set$gridUnit(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
       ): Self = StObject.set(x, "$gridUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridUnitUndefined: Self = StObject.set(x, "$gridUnit", js.undefined)
+      inline def set$gridUnitUndefined: Self = StObject.set(x, "$gridUnit", js.undefined)
       
-      @scala.inline
-      def set$order(value: Responsive[Double]): Self = StObject.set(x, "$order", value.asInstanceOf[js.Any])
+      inline def set$order(value: Responsive[Double]): Self = StObject.set(x, "$order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$orderUndefined: Self = StObject.set(x, "$order", js.undefined)
+      inline def set$orderUndefined: Self = StObject.set(x, "$order", js.undefined)
       
-      @scala.inline
-      def set$orderVarargs(value: Double*): Self = StObject.set(x, "$order", js.Array(value :_*))
+      inline def set$orderVarargs(value: Double*): Self = StObject.set(x, "$order", js.Array(value :_*))
       
-      @scala.inline
-      def set$skip(value: Responsive[Double]): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
+      inline def set$skip(value: Responsive[Double]): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
+      inline def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
       
-      @scala.inline
-      def set$skipVarargs(value: Double*): Self = StObject.set(x, "$skip", js.Array(value :_*))
+      inline def set$skipVarargs(value: Double*): Self = StObject.set(x, "$skip", js.Array(value :_*))
       
-      @scala.inline
-      def set$span(value: Responsive[Double]): Self = StObject.set(x, "$span", value.asInstanceOf[js.Any])
+      inline def set$span(value: Responsive[Double]): Self = StObject.set(x, "$span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$spanUndefined: Self = StObject.set(x, "$span", js.undefined)
+      inline def set$spanUndefined: Self = StObject.set(x, "$span", js.undefined)
       
-      @scala.inline
-      def set$spanVarargs(value: Double*): Self = StObject.set(x, "$span", js.Array(value :_*))
+      inline def set$spanVarargs(value: Double*): Self = StObject.set(x, "$span", js.Array(value :_*))
     }
   }
   
@@ -456,61 +378,44 @@ object layoutGridMod {
   }
   object StyledGridProps {
     
-    @scala.inline
-    def apply(): StyledGridProps = {
+    inline def apply(): StyledGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyledGridProps]
     }
     
-    @scala.inline
-    implicit class StyledGridPropsMutableBuilder[Self <: StyledGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledGridProps](x: Self) {
       
-      @scala.inline
-      def set$align(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
+      inline def set$align(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$alignUndefined: Self = StObject.set(x, "$align", js.undefined)
+      inline def set$alignUndefined: Self = StObject.set(x, "$align", js.undefined)
       
-      @scala.inline
-      def set$alignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "$align", js.Array(value :_*))
+      inline def set$alignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "$align", js.Array(value :_*))
       
-      @scala.inline
-      def set$behavior(value: BEHAVIOR): Self = StObject.set(x, "$behavior", value.asInstanceOf[js.Any])
+      inline def set$behavior(value: BEHAVIOR): Self = StObject.set(x, "$behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$behaviorUndefined: Self = StObject.set(x, "$behavior", js.undefined)
+      inline def set$behaviorUndefined: Self = StObject.set(x, "$behavior", js.undefined)
       
-      @scala.inline
-      def set$gridGutters(value: Responsive[Double]): Self = StObject.set(x, "$gridGutters", value.asInstanceOf[js.Any])
+      inline def set$gridGutters(value: Responsive[Double]): Self = StObject.set(x, "$gridGutters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridGuttersUndefined: Self = StObject.set(x, "$gridGutters", js.undefined)
+      inline def set$gridGuttersUndefined: Self = StObject.set(x, "$gridGutters", js.undefined)
       
-      @scala.inline
-      def set$gridGuttersVarargs(value: Double*): Self = StObject.set(x, "$gridGutters", js.Array(value :_*))
+      inline def set$gridGuttersVarargs(value: Double*): Self = StObject.set(x, "$gridGutters", js.Array(value :_*))
       
-      @scala.inline
-      def set$gridMargins(value: Responsive[Double]): Self = StObject.set(x, "$gridMargins", value.asInstanceOf[js.Any])
+      inline def set$gridMargins(value: Responsive[Double]): Self = StObject.set(x, "$gridMargins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridMarginsUndefined: Self = StObject.set(x, "$gridMargins", js.undefined)
+      inline def set$gridMarginsUndefined: Self = StObject.set(x, "$gridMargins", js.undefined)
       
-      @scala.inline
-      def set$gridMarginsVarargs(value: Double*): Self = StObject.set(x, "$gridMargins", js.Array(value :_*))
+      inline def set$gridMarginsVarargs(value: Double*): Self = StObject.set(x, "$gridMargins", js.Array(value :_*))
       
-      @scala.inline
-      def set$gridMaxWidth(value: Double): Self = StObject.set(x, "$gridMaxWidth", value.asInstanceOf[js.Any])
+      inline def set$gridMaxWidth(value: Double): Self = StObject.set(x, "$gridMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridMaxWidthUndefined: Self = StObject.set(x, "$gridMaxWidth", js.undefined)
+      inline def set$gridMaxWidthUndefined: Self = StObject.set(x, "$gridMaxWidth", js.undefined)
       
-      @scala.inline
-      def set$gridUnit(
+      inline def set$gridUnit(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
       ): Self = StObject.set(x, "$gridUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$gridUnitUndefined: Self = StObject.set(x, "$gridUnit", js.undefined)
+      inline def set$gridUnitUndefined: Self = StObject.set(x, "$gridUnit", js.undefined)
     }
   }
 }

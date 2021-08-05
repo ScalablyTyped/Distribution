@@ -58,79 +58,55 @@ trait EndpointGroup extends StObject {
 }
 object EndpointGroup {
   
-  @scala.inline
-  def apply(): EndpointGroup = {
+  inline def apply(): EndpointGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointGroup]
   }
   
-  @scala.inline
-  implicit class EndpointGroupMutableBuilder[Self <: EndpointGroup] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointGroup](x: Self) {
     
-    @scala.inline
-    def setEndpointDescriptions(value: EndpointDescriptions): Self = StObject.set(x, "EndpointDescriptions", value.asInstanceOf[js.Any])
+    inline def setEndpointDescriptions(value: EndpointDescriptions): Self = StObject.set(x, "EndpointDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointDescriptionsUndefined: Self = StObject.set(x, "EndpointDescriptions", js.undefined)
+    inline def setEndpointDescriptionsUndefined: Self = StObject.set(x, "EndpointDescriptions", js.undefined)
     
-    @scala.inline
-    def setEndpointDescriptionsVarargs(value: EndpointDescription*): Self = StObject.set(x, "EndpointDescriptions", js.Array(value :_*))
+    inline def setEndpointDescriptionsVarargs(value: EndpointDescription*): Self = StObject.set(x, "EndpointDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
+    inline def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointGroupArnUndefined: Self = StObject.set(x, "EndpointGroupArn", js.undefined)
+    inline def setEndpointGroupArnUndefined: Self = StObject.set(x, "EndpointGroupArn", js.undefined)
     
-    @scala.inline
-    def setEndpointGroupRegion(value: GenericString): Self = StObject.set(x, "EndpointGroupRegion", value.asInstanceOf[js.Any])
+    inline def setEndpointGroupRegion(value: GenericString): Self = StObject.set(x, "EndpointGroupRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointGroupRegionUndefined: Self = StObject.set(x, "EndpointGroupRegion", js.undefined)
+    inline def setEndpointGroupRegionUndefined: Self = StObject.set(x, "EndpointGroupRegion", js.undefined)
     
-    @scala.inline
-    def setHealthCheckIntervalSeconds(value: HealthCheckIntervalSeconds): Self = StObject.set(x, "HealthCheckIntervalSeconds", value.asInstanceOf[js.Any])
+    inline def setHealthCheckIntervalSeconds(value: HealthCheckIntervalSeconds): Self = StObject.set(x, "HealthCheckIntervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "HealthCheckIntervalSeconds", js.undefined)
+    inline def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "HealthCheckIntervalSeconds", js.undefined)
     
-    @scala.inline
-    def setHealthCheckPath(value: GenericString): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPath(value: GenericString): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckPathUndefined: Self = StObject.set(x, "HealthCheckPath", js.undefined)
+    inline def setHealthCheckPathUndefined: Self = StObject.set(x, "HealthCheckPath", js.undefined)
     
-    @scala.inline
-    def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
+    inline def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
     
-    @scala.inline
-    def setHealthCheckProtocol(value: HealthCheckProtocol): Self = StObject.set(x, "HealthCheckProtocol", value.asInstanceOf[js.Any])
+    inline def setHealthCheckProtocol(value: HealthCheckProtocol): Self = StObject.set(x, "HealthCheckProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckProtocolUndefined: Self = StObject.set(x, "HealthCheckProtocol", js.undefined)
+    inline def setHealthCheckProtocolUndefined: Self = StObject.set(x, "HealthCheckProtocol", js.undefined)
     
-    @scala.inline
-    def setPortOverrides(value: PortOverrides): Self = StObject.set(x, "PortOverrides", value.asInstanceOf[js.Any])
+    inline def setPortOverrides(value: PortOverrides): Self = StObject.set(x, "PortOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortOverridesUndefined: Self = StObject.set(x, "PortOverrides", js.undefined)
+    inline def setPortOverridesUndefined: Self = StObject.set(x, "PortOverrides", js.undefined)
     
-    @scala.inline
-    def setPortOverridesVarargs(value: PortOverride*): Self = StObject.set(x, "PortOverrides", js.Array(value :_*))
+    inline def setPortOverridesVarargs(value: PortOverride*): Self = StObject.set(x, "PortOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setThresholdCount(value: ThresholdCount): Self = StObject.set(x, "ThresholdCount", value.asInstanceOf[js.Any])
+    inline def setThresholdCount(value: ThresholdCount): Self = StObject.set(x, "ThresholdCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdCountUndefined: Self = StObject.set(x, "ThresholdCount", js.undefined)
+    inline def setThresholdCountUndefined: Self = StObject.set(x, "ThresholdCount", js.undefined)
     
-    @scala.inline
-    def setTrafficDialPercentage(value: TrafficDialPercentage): Self = StObject.set(x, "TrafficDialPercentage", value.asInstanceOf[js.Any])
+    inline def setTrafficDialPercentage(value: TrafficDialPercentage): Self = StObject.set(x, "TrafficDialPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficDialPercentageUndefined: Self = StObject.set(x, "TrafficDialPercentage", js.undefined)
+    inline def setTrafficDialPercentageUndefined: Self = StObject.set(x, "TrafficDialPercentage", js.undefined)
   }
 }

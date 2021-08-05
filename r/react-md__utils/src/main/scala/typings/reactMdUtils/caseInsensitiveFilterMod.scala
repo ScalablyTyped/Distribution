@@ -11,10 +11,8 @@ object caseInsensitiveFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def caseInsensitiveFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def caseInsensitiveFilter[T](query: String, searchable: js.Array[T], options: CaseInsensitiveOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def caseInsensitiveFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def caseInsensitiveFilter[T](query: String, searchable: js.Array[T], options: CaseInsensitiveOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   trait CaseInsensitiveOptions[T]
     extends StObject
@@ -29,20 +27,16 @@ object caseInsensitiveFilterMod {
   }
   object CaseInsensitiveOptions {
     
-    @scala.inline
-    def apply[T](): CaseInsensitiveOptions[T] = {
+    inline def apply[T](): CaseInsensitiveOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CaseInsensitiveOptions[T]]
     }
     
-    @scala.inline
-    implicit class CaseInsensitiveOptionsMutableBuilder[Self <: CaseInsensitiveOptions[?], T] (val x: Self & CaseInsensitiveOptions[T]) extends AnyVal {
+    extension [Self <: CaseInsensitiveOptions[?], T](x: Self & CaseInsensitiveOptions[T]) {
       
-      @scala.inline
-      def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+      inline def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
+      inline def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
     }
   }
 }

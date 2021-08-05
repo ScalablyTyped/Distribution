@@ -55,21 +55,20 @@ object cssParserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(file: ParseSourceFile, offset: Double, line: Double, col: Double, length: Double, errMsg: String): CssParseError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], line.asInstanceOf[js.Any], col.asInstanceOf[js.Any], length.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[CssParseError]
+    inline def create(file: ParseSourceFile, offset: Double, line: Double, col: Double, length: Double, errMsg: String): CssParseError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], line.asInstanceOf[js.Any], col.asInstanceOf[js.Any], length.asInstanceOf[js.Any], errMsg.asInstanceOf[js.Any])).asInstanceOf[CssParseError]
   }
   
   @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParser")
   @js.native
   class CssParser () extends StObject {
     
-    var _errors: js.Any = js.native
+    /* private */ var _errors: js.Any = js.native
     
-    var _file: js.Any = js.native
+    /* private */ var _file: js.Any = js.native
     
-    var _lastToken: js.Any = js.native
+    /* private */ var _lastToken: js.Any = js.native
     
-    var _scanner: js.Any = js.native
+    /* private */ var _scanner: js.Any = js.native
     
     /**
       * @param css the CSS code that will be parsed

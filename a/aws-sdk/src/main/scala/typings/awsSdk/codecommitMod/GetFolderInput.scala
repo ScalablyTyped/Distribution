@@ -23,25 +23,19 @@ trait GetFolderInput extends StObject {
 }
 object GetFolderInput {
   
-  @scala.inline
-  def apply(folderPath: Path, repositoryName: RepositoryName): GetFolderInput = {
+  inline def apply(folderPath: Path, repositoryName: RepositoryName): GetFolderInput = {
     val __obj = js.Dynamic.literal(folderPath = folderPath.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFolderInput]
   }
   
-  @scala.inline
-  implicit class GetFolderInputMutableBuilder[Self <: GetFolderInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetFolderInput](x: Self) {
     
-    @scala.inline
-    def setCommitSpecifier(value: CommitName): Self = StObject.set(x, "commitSpecifier", value.asInstanceOf[js.Any])
+    inline def setCommitSpecifier(value: CommitName): Self = StObject.set(x, "commitSpecifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitSpecifierUndefined: Self = StObject.set(x, "commitSpecifier", js.undefined)
+    inline def setCommitSpecifierUndefined: Self = StObject.set(x, "commitSpecifier", js.undefined)
     
-    @scala.inline
-    def setFolderPath(value: Path): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
+    inline def setFolderPath(value: Path): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

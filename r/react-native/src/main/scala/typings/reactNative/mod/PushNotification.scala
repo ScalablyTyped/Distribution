@@ -49,8 +49,7 @@ trait PushNotification extends StObject {
 }
 object PushNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     finish: String => Unit,
     getAlert: () => String | js.Object,
     getBadgeCount: () => Double,
@@ -64,31 +63,22 @@ object PushNotification {
     __obj.asInstanceOf[PushNotification]
   }
   
-  @scala.inline
-  implicit class PushNotificationMutableBuilder[Self <: PushNotification] (val x: Self) extends AnyVal {
+  extension [Self <: PushNotification](x: Self) {
     
-    @scala.inline
-    def setFinish(value: String => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+    inline def setFinish(value: String => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAlert(value: () => String | js.Object): Self = StObject.set(x, "getAlert", js.Any.fromFunction0(value))
+    inline def setGetAlert(value: () => String | js.Object): Self = StObject.set(x, "getAlert", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBadgeCount(value: () => Double): Self = StObject.set(x, "getBadgeCount", js.Any.fromFunction0(value))
+    inline def setGetBadgeCount(value: () => Double): Self = StObject.set(x, "getBadgeCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
+    inline def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentAvailable(value: () => Double): Self = StObject.set(x, "getContentAvailable", js.Any.fromFunction0(value))
+    inline def setGetContentAvailable(value: () => Double): Self = StObject.set(x, "getContentAvailable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: () => js.Object): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Object): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessage(value: () => String | js.Object): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+    inline def setGetMessage(value: () => String | js.Object): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSound(value: () => String): Self = StObject.set(x, "getSound", js.Any.fromFunction0(value))
+    inline def setGetSound(value: () => String): Self = StObject.set(x, "getSound", js.Any.fromFunction0(value))
   }
 }

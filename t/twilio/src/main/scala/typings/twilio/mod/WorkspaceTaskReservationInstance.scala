@@ -17,16 +17,13 @@ trait WorkspaceTaskReservationInstance
 }
 object WorkspaceTaskReservationInstance {
   
-  @scala.inline
-  def apply(get: RestMethod, post: RestMethod, update: RestMethod): WorkspaceTaskReservationInstance = {
+  inline def apply(get: RestMethod, post: RestMethod, update: RestMethod): WorkspaceTaskReservationInstance = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceTaskReservationInstance]
   }
   
-  @scala.inline
-  implicit class WorkspaceTaskReservationInstanceMutableBuilder[Self <: WorkspaceTaskReservationInstance] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceTaskReservationInstance](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

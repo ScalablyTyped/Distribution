@@ -12,22 +12,17 @@ trait FontSizeMargin extends StObject {
 }
 object FontSizeMargin {
   
-  @scala.inline
-  def apply(fontSize: String, margin: js.Array[js.Array[String]]): FontSizeMargin = {
+  inline def apply(fontSize: String, margin: js.Array[js.Array[String]]): FontSizeMargin = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeMargin]
   }
   
-  @scala.inline
-  implicit class FontSizeMarginMutableBuilder[Self <: FontSizeMargin] (val x: Self) extends AnyVal {
+  extension [Self <: FontSizeMargin](x: Self) {
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: js.Array[js.Array[String]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: js.Array[js.Array[String]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginVarargs(value: js.Array[String]*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: js.Array[String]*): Self = StObject.set(x, "margin", js.Array(value :_*))
   }
 }

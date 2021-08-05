@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LetterContent")
 @js.native
-class LetterContent protected ()
+/* private */ class LetterContent ()
   extends StObject
      with typings.activexWord.Word.LetterContent {
   
@@ -119,7 +119,7 @@ class LetterContent protected ()
   /* CompleteClass */
   var Subject: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.LetterContent_typekey")
   var WordDotLetterContent_typekey: typings.activexWord.Word.LetterContent = js.native
 }

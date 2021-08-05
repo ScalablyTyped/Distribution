@@ -23,31 +23,23 @@ trait SchemaAddHeldAccountsRequest extends StObject {
 }
 object SchemaAddHeldAccountsRequest {
   
-  @scala.inline
-  def apply(): SchemaAddHeldAccountsRequest = {
+  inline def apply(): SchemaAddHeldAccountsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddHeldAccountsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddHeldAccountsRequestMutableBuilder[Self <: SchemaAddHeldAccountsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddHeldAccountsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+    inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    @scala.inline
-    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
   }
 }

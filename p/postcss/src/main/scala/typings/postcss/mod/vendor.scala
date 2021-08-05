@@ -13,12 +13,10 @@ object vendor {
   /**
     * @returns The vendor prefix extracted from the input string.
     */
-  @scala.inline
-  def prefix(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prefix(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * @returns The input string stripped of its vendor prefix.
     */
-  @scala.inline
-  def unprefixed(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unprefixed")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unprefixed(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unprefixed")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
 }

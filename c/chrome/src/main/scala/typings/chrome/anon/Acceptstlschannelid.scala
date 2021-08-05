@@ -14,37 +14,27 @@ trait Acceptstlschannelid extends StObject {
 }
 object Acceptstlschannelid {
   
-  @scala.inline
-  def apply(): Acceptstlschannelid = {
+  inline def apply(): Acceptstlschannelid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Acceptstlschannelid]
   }
   
-  @scala.inline
-  implicit class AcceptstlschannelidMutableBuilder[Self <: Acceptstlschannelid] (val x: Self) extends AnyVal {
+  extension [Self <: Acceptstlschannelid](x: Self) {
     
-    @scala.inline
-    def setAccepts_tls_channel_id(value: Boolean): Self = StObject.set(x, "accepts_tls_channel_id", value.asInstanceOf[js.Any])
+    inline def setAccepts_tls_channel_id(value: Boolean): Self = StObject.set(x, "accepts_tls_channel_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccepts_tls_channel_idUndefined: Self = StObject.set(x, "accepts_tls_channel_id", js.undefined)
+    inline def setAccepts_tls_channel_idUndefined: Self = StObject.set(x, "accepts_tls_channel_id", js.undefined)
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

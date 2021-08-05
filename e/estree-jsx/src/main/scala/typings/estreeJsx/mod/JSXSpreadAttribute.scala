@@ -18,20 +18,16 @@ trait JSXSpreadAttribute
 }
 object JSXSpreadAttribute {
   
-  @scala.inline
-  def apply(argument: Expression): JSXSpreadAttribute = {
+  inline def apply(argument: Expression): JSXSpreadAttribute = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXSpreadAttribute")
     __obj.asInstanceOf[JSXSpreadAttribute]
   }
   
-  @scala.inline
-  implicit class JSXSpreadAttributeMutableBuilder[Self <: JSXSpreadAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: JSXSpreadAttribute](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXSpreadAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXSpreadAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

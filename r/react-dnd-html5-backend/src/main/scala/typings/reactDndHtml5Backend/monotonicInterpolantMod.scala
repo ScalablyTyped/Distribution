@@ -11,16 +11,16 @@ object monotonicInterpolantMod {
   class MonotonicInterpolant protected () extends StObject {
     def this(xs: js.Array[Double], ys: js.Array[Double]) = this()
     
-    var c1s: js.Any = js.native
+    /* private */ var c1s: js.Any = js.native
     
-    var c2s: js.Any = js.native
+    /* private */ var c2s: js.Any = js.native
     
-    var c3s: js.Any = js.native
+    /* private */ var c3s: js.Any = js.native
     
     def interpolate(x: Double): Double = js.native
     
-    var xs: js.Any = js.native
+    /* private */ var xs: js.Any = js.native
     
-    var ys: js.Any = js.native
+    /* private */ var ys: js.Any = js.native
   }
 }

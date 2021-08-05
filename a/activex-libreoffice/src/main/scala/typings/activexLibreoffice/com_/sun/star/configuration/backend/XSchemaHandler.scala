@@ -170,8 +170,7 @@ trait XSchemaHandler
 }
 object XSchemaHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addInstance: (String, TemplateIdentifier) => Unit,
     addItemType: TemplateIdentifier => Unit,
@@ -195,52 +194,36 @@ object XSchemaHandler {
     __obj.asInstanceOf[XSchemaHandler]
   }
   
-  @scala.inline
-  implicit class XSchemaHandlerMutableBuilder[Self <: XSchemaHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XSchemaHandler](x: Self) {
     
-    @scala.inline
-    def setAddInstance(value: (String, TemplateIdentifier) => Unit): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
+    inline def setAddInstance(value: (String, TemplateIdentifier) => Unit): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddItemType(value: TemplateIdentifier => Unit): Self = StObject.set(x, "addItemType", js.Any.fromFunction1(value))
+    inline def setAddItemType(value: TemplateIdentifier => Unit): Self = StObject.set(x, "addItemType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
+    inline def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddPropertyWithDefault(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithDefault", js.Any.fromFunction3(value))
+    inline def setAddPropertyWithDefault(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithDefault", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEndComponent(value: () => Unit): Self = StObject.set(x, "endComponent", js.Any.fromFunction0(value))
+    inline def setEndComponent(value: () => Unit): Self = StObject.set(x, "endComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
+    inline def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndSchema(value: () => Unit): Self = StObject.set(x, "endSchema", js.Any.fromFunction0(value))
+    inline def setEndSchema(value: () => Unit): Self = StObject.set(x, "endSchema", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndTemplate(value: () => Unit): Self = StObject.set(x, "endTemplate", js.Any.fromFunction0(value))
+    inline def setEndTemplate(value: () => Unit): Self = StObject.set(x, "endTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImportComponent(value: String => Unit): Self = StObject.set(x, "importComponent", js.Any.fromFunction1(value))
+    inline def setImportComponent(value: String => Unit): Self = StObject.set(x, "importComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartComponent(value: String => Unit): Self = StObject.set(x, "startComponent", js.Any.fromFunction1(value))
+    inline def setStartComponent(value: String => Unit): Self = StObject.set(x, "startComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartGroup(value: (String, Double) => Unit): Self = StObject.set(x, "startGroup", js.Any.fromFunction2(value))
+    inline def setStartGroup(value: (String, Double) => Unit): Self = StObject.set(x, "startGroup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartGroupTemplate(value: (TemplateIdentifier, Double) => Unit): Self = StObject.set(x, "startGroupTemplate", js.Any.fromFunction2(value))
+    inline def setStartGroupTemplate(value: (TemplateIdentifier, Double) => Unit): Self = StObject.set(x, "startGroupTemplate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartSchema(value: () => Unit): Self = StObject.set(x, "startSchema", js.Any.fromFunction0(value))
+    inline def setStartSchema(value: () => Unit): Self = StObject.set(x, "startSchema", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartSet(value: (String, Double, TemplateIdentifier) => Unit): Self = StObject.set(x, "startSet", js.Any.fromFunction3(value))
+    inline def setStartSet(value: (String, Double, TemplateIdentifier) => Unit): Self = StObject.set(x, "startSet", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStartSetTemplate(value: (TemplateIdentifier, Double, TemplateIdentifier) => Unit): Self = StObject.set(x, "startSetTemplate", js.Any.fromFunction3(value))
+    inline def setStartSetTemplate(value: (TemplateIdentifier, Double, TemplateIdentifier) => Unit): Self = StObject.set(x, "startSetTemplate", js.Any.fromFunction3(value))
   }
 }

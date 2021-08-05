@@ -13,16 +13,13 @@ trait ICustomErrorMessage extends StObject {
 }
 object ICustomErrorMessage {
   
-  @scala.inline
-  def apply(calcCond: String): ICustomErrorMessage = {
+  inline def apply(calcCond: String): ICustomErrorMessage = {
     val __obj = js.Dynamic.literal(calcCond = calcCond.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomErrorMessage]
   }
   
-  @scala.inline
-  implicit class ICustomErrorMessageMutableBuilder[Self <: ICustomErrorMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomErrorMessage](x: Self) {
     
-    @scala.inline
-    def setCalcCond(value: String): Self = StObject.set(x, "calcCond", value.asInstanceOf[js.Any])
+    inline def setCalcCond(value: String): Self = StObject.set(x, "calcCond", value.asInstanceOf[js.Any])
   }
 }

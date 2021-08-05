@@ -40,8 +40,7 @@ object SQIPApplePay {
     * Not all brands supported by Apple Pay are supported by Square.
     * @platform IOS
     */
-  @scala.inline
-  def canUseApplePay(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseApplePay")().asInstanceOf[js.Promise[Boolean]]
+  inline def canUseApplePay(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseApplePay")().asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Notifies the native layer to close the Apple Pay sheet with success or failure status.
@@ -50,10 +49,8 @@ object SQIPApplePay {
     * @param [errorMessage] - The error message that Apple Pay displays in the native layer card entry view controller.
     * @throws ex
     */
-  @scala.inline
-  def completeApplePayAuthorization(isSuccess: Boolean): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeApplePayAuthorization")(isSuccess.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def completeApplePayAuthorization(isSuccess: Boolean, errorMessage: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeApplePayAuthorization")(isSuccess.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def completeApplePayAuthorization(isSuccess: Boolean): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeApplePayAuthorization")(isSuccess.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def completeApplePayAuthorization(isSuccess: Boolean, errorMessage: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeApplePayAuthorization")(isSuccess.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   // Functions
   /**
@@ -63,8 +60,7 @@ object SQIPApplePay {
     * @platform IOS
     * @param applePayMerchantId - Registered Apple Pay merchant ID
     */
-  @scala.inline
-  def initializeApplePay(applePayMerchantId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApplePay")(applePayMerchantId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def initializeApplePay(applePayMerchantId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApplePay")(applePayMerchantId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Starts the Apple Pay payment authorization and returns a nonce based on the authorized Apple Pay payment token.
@@ -75,8 +71,7 @@ object SQIPApplePay {
     * @param onApplePayComplete - Invoked when Apple Pay sheet is closed after success, failure, or cancellation.
     * @throws ex
     */
-  @scala.inline
-  def requestApplePayNonce(
+  inline def requestApplePayNonce(
     applePayConfig: ApplePayConfig,
     onApplePayNonceRequestSuccess: ApplePayNonceRequestSuccessCallback,
     onApplePayNonceRequestFailure: ApplePayNonceRequestFailureCallback,
@@ -110,32 +105,24 @@ object SQIPApplePay {
   }
   object ApplePayConfig {
     
-    @scala.inline
-    def apply(countryCode: String, currencyCode: String, price: String, summaryLabel: String): ApplePayConfig = {
+    inline def apply(countryCode: String, currencyCode: String, price: String, summaryLabel: String): ApplePayConfig = {
       val __obj = js.Dynamic.literal(countryCode = countryCode.asInstanceOf[js.Any], currencyCode = currencyCode.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], summaryLabel = summaryLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplePayConfig]
     }
     
-    @scala.inline
-    implicit class ApplePayConfigMutableBuilder[Self <: ApplePayConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ApplePayConfig](x: Self) {
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+      inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaymentType(value: ApplePayPaymentType): Self = StObject.set(x, "paymentType", value.asInstanceOf[js.Any])
+      inline def setPaymentType(value: ApplePayPaymentType): Self = StObject.set(x, "paymentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaymentTypeUndefined: Self = StObject.set(x, "paymentType", js.undefined)
+      inline def setPaymentTypeUndefined: Self = StObject.set(x, "paymentType", js.undefined)
       
-      @scala.inline
-      def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryLabel(value: String): Self = StObject.set(x, "summaryLabel", value.asInstanceOf[js.Any])
+      inline def setSummaryLabel(value: String): Self = StObject.set(x, "summaryLabel", value.asInstanceOf[js.Any])
     }
   }
   

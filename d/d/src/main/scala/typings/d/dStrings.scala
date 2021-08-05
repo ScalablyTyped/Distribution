@@ -13,50 +13,43 @@ object dStrings {
     extends StObject
        with Flags
        with GetSetFlags
-  @scala.inline
-  def c: c = "c".asInstanceOf[c]
+  inline def c: c = "c".asInstanceOf[c]
   
   @js.native
   sealed trait ce
     extends StObject
        with Flags
        with GetSetFlags
-  @scala.inline
-  def ce: ce = "ce".asInstanceOf[ce]
+  inline def ce: ce = "ce".asInstanceOf[ce]
   
   @js.native
   sealed trait cew
     extends StObject
        with Flags
-  @scala.inline
-  def cew: cew = "cew".asInstanceOf[cew]
+  inline def cew: cew = "cew".asInstanceOf[cew]
   
   @js.native
   sealed trait cw
     extends StObject
        with Flags
-  @scala.inline
-  def cw: cw = "cw".asInstanceOf[cw]
+  inline def cw: cw = "cw".asInstanceOf[cw]
   
   @js.native
   sealed trait e
     extends StObject
        with Flags
        with GetSetFlags
-  @scala.inline
-  def e: e = "e".asInstanceOf[e]
+  inline def e: e = "e".asInstanceOf[e]
   
   @js.native
   sealed trait ew
     extends StObject
        with Flags
-  @scala.inline
-  def ew: ew = "ew".asInstanceOf[ew]
+  inline def ew: ew = "ew".asInstanceOf[ew]
   
   @js.native
   sealed trait w
     extends StObject
        with Flags
-  @scala.inline
-  def w: w = "w".asInstanceOf[w]
+  inline def w: w = "w".asInstanceOf[w]
 }

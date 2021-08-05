@@ -52,6 +52,5 @@ object SpriteSheet {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getSpriteSheet(name: String): typings.photonui.photonui.SpriteSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpriteSheet")(name.asInstanceOf[js.Any]).asInstanceOf[typings.photonui.photonui.SpriteSheet]
+  inline def getSpriteSheet(name: String): typings.photonui.photonui.SpriteSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpriteSheet")(name.asInstanceOf[js.Any]).asInstanceOf[typings.photonui.photonui.SpriteSheet]
 }

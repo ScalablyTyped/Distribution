@@ -28,28 +28,21 @@ trait ContactInfo extends StObject {
 }
 object ContactInfo {
   
-  @scala.inline
-  def apply(aor: String, contact_status: String, uri: String): ContactInfo = {
+  inline def apply(aor: String, contact_status: String, uri: String): ContactInfo = {
     val __obj = js.Dynamic.literal(aor = aor.asInstanceOf[js.Any], contact_status = contact_status.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactInfo]
   }
   
-  @scala.inline
-  implicit class ContactInfoMutableBuilder[Self <: ContactInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContactInfo](x: Self) {
     
-    @scala.inline
-    def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
+    inline def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContact_status(value: String): Self = StObject.set(x, "contact_status", value.asInstanceOf[js.Any])
+    inline def setContact_status(value: String): Self = StObject.set(x, "contact_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundtrip_usec(value: String): Self = StObject.set(x, "roundtrip_usec", value.asInstanceOf[js.Any])
+    inline def setRoundtrip_usec(value: String): Self = StObject.set(x, "roundtrip_usec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundtrip_usecUndefined: Self = StObject.set(x, "roundtrip_usec", js.undefined)
+    inline def setRoundtrip_usecUndefined: Self = StObject.set(x, "roundtrip_usec", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

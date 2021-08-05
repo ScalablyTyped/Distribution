@@ -30,7 +30,6 @@ object regionScoreboardMod {
       def shwoDialog(): Unit = js.native
     }
     
-    @scala.inline
-    def RegionScoreboard_=(x: RegionScoreboard_): Unit = js.Dynamic.global.updateDynamic("RegionScoreboard")(x.asInstanceOf[js.Any])
+    inline def RegionScoreboard_=(x: RegionScoreboard_): Unit = js.Dynamic.global.updateDynamic("RegionScoreboard")(x.asInstanceOf[js.Any])
   }
 }

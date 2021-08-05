@@ -28,8 +28,7 @@ trait TranslateTextResponse extends StObject {
 }
 object TranslateTextResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SourceLanguageCode: LanguageCodeString,
     TargetLanguageCode: LanguageCodeString,
     TranslatedText: String
@@ -38,25 +37,18 @@ object TranslateTextResponse {
     __obj.asInstanceOf[TranslateTextResponse]
   }
   
-  @scala.inline
-  implicit class TranslateTextResponseMutableBuilder[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateTextResponse](x: Self) {
     
-    @scala.inline
-    def setAppliedTerminologies(value: AppliedTerminologyList): Self = StObject.set(x, "AppliedTerminologies", value.asInstanceOf[js.Any])
+    inline def setAppliedTerminologies(value: AppliedTerminologyList): Self = StObject.set(x, "AppliedTerminologies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliedTerminologiesUndefined: Self = StObject.set(x, "AppliedTerminologies", js.undefined)
+    inline def setAppliedTerminologiesUndefined: Self = StObject.set(x, "AppliedTerminologies", js.undefined)
     
-    @scala.inline
-    def setAppliedTerminologiesVarargs(value: AppliedTerminology*): Self = StObject.set(x, "AppliedTerminologies", js.Array(value :_*))
+    inline def setAppliedTerminologiesVarargs(value: AppliedTerminology*): Self = StObject.set(x, "AppliedTerminologies", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
+    inline def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "TargetLanguageCode", value.asInstanceOf[js.Any])
+    inline def setTargetLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "TargetLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslatedText(value: String): Self = StObject.set(x, "TranslatedText", value.asInstanceOf[js.Any])
+    inline def setTranslatedText(value: String): Self = StObject.set(x, "TranslatedText", value.asInstanceOf[js.Any])
   }
 }

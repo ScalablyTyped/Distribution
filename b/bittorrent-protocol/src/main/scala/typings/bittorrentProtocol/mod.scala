@@ -70,37 +70,28 @@ object mod extends Shortcut {
   }
   object Extension {
     
-    @scala.inline
-    def apply(name: String): Extension = {
+    inline def apply(name: String): Extension = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Extension]
     }
     
-    @scala.inline
-    implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+    extension [Self <: Extension](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExtendedHandshake(value: /* handshake */ StringDictionary[js.Any] => Unit): Self = StObject.set(x, "onExtendedHandshake", js.Any.fromFunction1(value))
+      inline def setOnExtendedHandshake(value: /* handshake */ StringDictionary[js.Any] => Unit): Self = StObject.set(x, "onExtendedHandshake", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExtendedHandshakeUndefined: Self = StObject.set(x, "onExtendedHandshake", js.undefined)
+      inline def setOnExtendedHandshakeUndefined: Self = StObject.set(x, "onExtendedHandshake", js.undefined)
       
-      @scala.inline
-      def setOnHandshake(
+      inline def setOnHandshake(
         value: (/* infoHash */ String, /* peerId */ String, /* extensions */ StringDictionary[Boolean]) => Unit
       ): Self = StObject.set(x, "onHandshake", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnHandshakeUndefined: Self = StObject.set(x, "onHandshake", js.undefined)
+      inline def setOnHandshakeUndefined: Self = StObject.set(x, "onHandshake", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: /* buf */ Buffer => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* buf */ Buffer => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     }
   }
   
@@ -121,26 +112,20 @@ object mod extends Shortcut {
   }
   object Request {
     
-    @scala.inline
-    def apply(callback: () => Unit, length: Double, offset: Double, piece: Double): Request = {
+    inline def apply(callback: () => Unit, length: Double, offset: Double, piece: Double): Request = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], piece = piece.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPiece(value: Double): Self = StObject.set(x, "piece", value.asInstanceOf[js.Any])
+      inline def setPiece(value: Double): Self = StObject.set(x, "piece", value.asInstanceOf[js.Any])
     }
   }
   

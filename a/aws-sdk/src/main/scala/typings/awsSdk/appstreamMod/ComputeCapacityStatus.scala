@@ -28,34 +28,25 @@ trait ComputeCapacityStatus extends StObject {
 }
 object ComputeCapacityStatus {
   
-  @scala.inline
-  def apply(Desired: Integer): ComputeCapacityStatus = {
+  inline def apply(Desired: Integer): ComputeCapacityStatus = {
     val __obj = js.Dynamic.literal(Desired = Desired.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeCapacityStatus]
   }
   
-  @scala.inline
-  implicit class ComputeCapacityStatusMutableBuilder[Self <: ComputeCapacityStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeCapacityStatus](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Integer): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Integer): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "Available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "Available", js.undefined)
     
-    @scala.inline
-    def setDesired(value: Integer): Self = StObject.set(x, "Desired", value.asInstanceOf[js.Any])
+    inline def setDesired(value: Integer): Self = StObject.set(x, "Desired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUse(value: Integer): Self = StObject.set(x, "InUse", value.asInstanceOf[js.Any])
+    inline def setInUse(value: Integer): Self = StObject.set(x, "InUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUseUndefined: Self = StObject.set(x, "InUse", js.undefined)
+    inline def setInUseUndefined: Self = StObject.set(x, "InUse", js.undefined)
     
-    @scala.inline
-    def setRunning(value: Integer): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Integer): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningUndefined: Self = StObject.set(x, "Running", js.undefined)
+    inline def setRunningUndefined: Self = StObject.set(x, "Running", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait IContextKey[T] extends StObject {
 }
 object IContextKey {
   
-  @scala.inline
-  def apply[T](get: () => js.UndefOr[T], reset: () => Unit, set: T => Unit): IContextKey[T] = {
+  inline def apply[T](get: () => js.UndefOr[T], reset: () => Unit, set: T => Unit): IContextKey[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[IContextKey[T]]
   }
   
-  @scala.inline
-  implicit class IContextKeyMutableBuilder[Self <: IContextKey[?], T] (val x: Self & IContextKey[T]) extends AnyVal {
+  extension [Self <: IContextKey[?], T](x: Self & IContextKey[T]) {
     
-    @scala.inline
-    def setGet(value: () => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

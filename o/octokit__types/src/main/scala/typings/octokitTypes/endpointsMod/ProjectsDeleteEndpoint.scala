@@ -14,16 +14,13 @@ trait ProjectsDeleteEndpoint
 }
 object ProjectsDeleteEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], project_id: Double): ProjectsDeleteEndpoint = {
+  inline def apply(mediaType: `0`[inertia], project_id: Double): ProjectsDeleteEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsDeleteEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsDeleteEndpointMutableBuilder[Self <: ProjectsDeleteEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsDeleteEndpoint](x: Self) {
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
   }
 }

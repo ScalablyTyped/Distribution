@@ -93,13 +93,11 @@ object eulerMod {
     @JSImport("three/src/math/Euler", "Euler.DefaultOrder")
     @js.native
     def DefaultOrder: String = js.native
-    @scala.inline
-    def DefaultOrder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+    inline def DefaultOrder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
     
     @JSImport("three/src/math/Euler", "Euler.RotationOrders")
     @js.native
     def RotationOrders: js.Array[String] = js.native
-    @scala.inline
-    def RotationOrders_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
+    inline def RotationOrders_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,5 @@ object POWER_CLASS {
   @JSGlobal("POWER_CLASS.OPERATOR")
   @js.native
   def OPERATOR: operator = js.native
-  @scala.inline
-  def OPERATOR_=(x: operator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATOR")(x.asInstanceOf[js.Any])
+  inline def OPERATOR_=(x: operator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATOR")(x.asInstanceOf[js.Any])
 }

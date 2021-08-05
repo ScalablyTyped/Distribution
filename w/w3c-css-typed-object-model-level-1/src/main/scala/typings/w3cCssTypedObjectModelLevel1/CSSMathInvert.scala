@@ -12,8 +12,7 @@ trait CSSMathInvert
 }
 object CSSMathInvert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -33,10 +32,8 @@ object CSSMathInvert {
     __obj.asInstanceOf[CSSMathInvert]
   }
   
-  @scala.inline
-  implicit class CSSMathInvertMutableBuilder[Self <: CSSMathInvert] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMathInvert](x: Self) {
     
-    @scala.inline
-    def setValue(value: CSSNumericValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: CSSNumericValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

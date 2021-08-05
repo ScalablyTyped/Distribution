@@ -15,20 +15,16 @@ object virtualUtilsMod {
   }
   object VirtualContext {
     
-    @scala.inline
-    def apply($implicit: js.Any, index: Double): VirtualContext = {
+    inline def apply($implicit: js.Any, index: Double): VirtualContext = {
       val __obj = js.Dynamic.literal($implicit = $implicit.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[VirtualContext]
     }
     
-    @scala.inline
-    implicit class VirtualContextMutableBuilder[Self <: VirtualContext] (val x: Self) extends AnyVal {
+    extension [Self <: VirtualContext](x: Self) {
       
-      @scala.inline
-      def set$implicit(value: js.Any): Self = StObject.set(x, "$implicit", value.asInstanceOf[js.Any])
+      inline def set$implicit(value: js.Any): Self = StObject.set(x, "$implicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
 }

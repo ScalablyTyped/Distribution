@@ -34,8 +34,7 @@ trait DocumentScriptLibraryContainer
 }
 object DocumentScriptLibraryContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContainerLocationName: String,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -72,13 +71,10 @@ object DocumentScriptLibraryContainer {
     __obj.asInstanceOf[DocumentScriptLibraryContainer]
   }
   
-  @scala.inline
-  implicit class DocumentScriptLibraryContainerMutableBuilder[Self <: DocumentScriptLibraryContainer] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentScriptLibraryContainer](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XStorageBasedDocument => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XStorageBasedDocument => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
+    inline def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
   }
 }

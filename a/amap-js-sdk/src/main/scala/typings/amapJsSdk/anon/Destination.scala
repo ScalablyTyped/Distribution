@@ -17,37 +17,27 @@ trait Destination extends StObject {
 }
 object Destination {
   
-  @scala.inline
-  def apply(): Destination = {
+  inline def apply(): Destination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Destination]
   }
   
-  @scala.inline
-  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+  extension [Self <: Destination](x: Self) {
     
-    @scala.inline
-    def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+    inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginName(value: String): Self = StObject.set(x, "originName", value.asInstanceOf[js.Any])
+    inline def setOriginName(value: String): Self = StObject.set(x, "originName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginNameUndefined: Self = StObject.set(x, "originName", js.undefined)
+    inline def setOriginNameUndefined: Self = StObject.set(x, "originName", js.undefined)
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

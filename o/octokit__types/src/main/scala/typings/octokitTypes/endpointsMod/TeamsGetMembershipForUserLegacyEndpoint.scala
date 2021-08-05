@@ -12,19 +12,15 @@ trait TeamsGetMembershipForUserLegacyEndpoint extends StObject {
 }
 object TeamsGetMembershipForUserLegacyEndpoint {
   
-  @scala.inline
-  def apply(team_id: Double, username: String): TeamsGetMembershipForUserLegacyEndpoint = {
+  inline def apply(team_id: Double, username: String): TeamsGetMembershipForUserLegacyEndpoint = {
     val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsGetMembershipForUserLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsGetMembershipForUserLegacyEndpointMutableBuilder[Self <: TeamsGetMembershipForUserLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsGetMembershipForUserLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -23,43 +23,31 @@ trait IGherkinDocument extends StObject {
 }
 object IGherkinDocument {
   
-  @scala.inline
-  def apply(): IGherkinDocument = {
+  inline def apply(): IGherkinDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGherkinDocument]
   }
   
-  @scala.inline
-  implicit class IGherkinDocumentMutableBuilder[Self <: IGherkinDocument] (val x: Self) extends AnyVal {
+  extension [Self <: IGherkinDocument](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[IComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[IComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: IComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: IComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setFeature(value: IFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: IFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNull: Self = StObject.set(x, "feature", null)
+    inline def setFeatureNull: Self = StObject.set(x, "feature", null)
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriNull: Self = StObject.set(x, "uri", null)
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -141,8 +141,7 @@ object HumanInterfaceDevice {
       * @return A HidDevice object.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String, accessMode: FileAccessMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidDevice]]
+    inline def fromIdAsync(deviceId: String, accessMode: FileAccessMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidDevice]]
     
     /**
       * Retrieves an Advanced Query Syntax (AQS) string based on the given usagePage and usageId.
@@ -151,8 +150,7 @@ object HumanInterfaceDevice {
       * @return An Advanced Query Syntax (AQS) string that represents a device selector.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(usagePage: Double, usageId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(usagePage.asInstanceOf[js.Any], usageId.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDeviceSelector(usagePage: Double, usageId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(usagePage.asInstanceOf[js.Any], usageId.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Retrieves an Advanced Query Syntax (AQS) string based on the given usagePage, usageId, vendorId, and productId.
       * @param usagePage Specifies the usage page of the top-level collection for the given HID device.
@@ -162,8 +160,7 @@ object HumanInterfaceDevice {
       * @return An Advanced Query Syntax (AQS) string that represents a device selector.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(usagePage: Double, usageId: Double, vendorId: Double, productId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(usagePage.asInstanceOf[js.Any], usageId.asInstanceOf[js.Any], vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDeviceSelector(usagePage: Double, usageId: Double, vendorId: Double, productId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(usagePage.asInstanceOf[js.Any], usageId.asInstanceOf[js.Any], vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /** Represents a feature report. */

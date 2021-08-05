@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): Struct[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Struct[T]]
+  inline def default[T](): Struct[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Struct[T]]
   
   @JSImport("struct", "Struct")
   @js.native

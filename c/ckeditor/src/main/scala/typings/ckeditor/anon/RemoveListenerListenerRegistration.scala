@@ -11,16 +11,13 @@ trait RemoveListenerListenerRegistration extends StObject {
 }
 object RemoveListenerListenerRegistration {
   
-  @scala.inline
-  def apply(removeListener: listenerRegistration): RemoveListenerListenerRegistration = {
+  inline def apply(removeListener: listenerRegistration): RemoveListenerListenerRegistration = {
     val __obj = js.Dynamic.literal(removeListener = removeListener.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveListenerListenerRegistration]
   }
   
-  @scala.inline
-  implicit class RemoveListenerListenerRegistrationMutableBuilder[Self <: RemoveListenerListenerRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveListenerListenerRegistration](x: Self) {
     
-    @scala.inline
-    def setRemoveListener(value: listenerRegistration): Self = StObject.set(x, "removeListener", value.asInstanceOf[js.Any])
+    inline def setRemoveListener(value: listenerRegistration): Self = StObject.set(x, "removeListener", value.asInstanceOf[js.Any])
   }
 }

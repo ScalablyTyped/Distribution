@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _DISPLAY_BREAK extends StObject
 object _DISPLAY_BREAK {
   
-  @scala.inline
-  def DISPLAY_BREAK_Block: `1` = 1.asInstanceOf[`1`]
+  inline def DISPLAY_BREAK_Block: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def DISPLAY_BREAK_Break: `2` = 2.asInstanceOf[`2`]
+  inline def DISPLAY_BREAK_Break: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def DISPLAY_BREAK_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def DISPLAY_BREAK_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def DISPLAY_BREAK_None: `0` = 0.asInstanceOf[`0`]
+  inline def DISPLAY_BREAK_None: `0` = 0.asInstanceOf[`0`]
 }

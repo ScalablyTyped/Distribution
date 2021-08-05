@@ -23,8 +23,7 @@ trait TextReverseConversionGenerator extends StObject {
 }
 object TextReverseConversionGenerator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     convertBackAsync: String => IPromiseWithIAsyncOperation[String],
     languageAvailableButNotInstalled: Boolean,
     resolvedLanguage: String
@@ -33,16 +32,12 @@ object TextReverseConversionGenerator {
     __obj.asInstanceOf[TextReverseConversionGenerator]
   }
   
-  @scala.inline
-  implicit class TextReverseConversionGeneratorMutableBuilder[Self <: TextReverseConversionGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: TextReverseConversionGenerator](x: Self) {
     
-    @scala.inline
-    def setConvertBackAsync(value: String => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "convertBackAsync", js.Any.fromFunction1(value))
+    inline def setConvertBackAsync(value: String => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "convertBackAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguageAvailableButNotInstalled(value: Boolean): Self = StObject.set(x, "languageAvailableButNotInstalled", value.asInstanceOf[js.Any])
+    inline def setLanguageAvailableButNotInstalled(value: Boolean): Self = StObject.set(x, "languageAvailableButNotInstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
+    inline def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
   }
 }

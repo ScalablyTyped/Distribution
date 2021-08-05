@@ -39,8 +39,7 @@ trait CloneOptions extends StObject {
 }
 object CloneOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloneRequirements: Boolean,
     copyAllSuites: Boolean,
     copyAncestorHierarchy: Boolean,
@@ -52,25 +51,18 @@ object CloneOptions {
     __obj.asInstanceOf[CloneOptions]
   }
   
-  @scala.inline
-  implicit class CloneOptionsMutableBuilder[Self <: CloneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloneOptions](x: Self) {
     
-    @scala.inline
-    def setCloneRequirements(value: Boolean): Self = StObject.set(x, "cloneRequirements", value.asInstanceOf[js.Any])
+    inline def setCloneRequirements(value: Boolean): Self = StObject.set(x, "cloneRequirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyAllSuites(value: Boolean): Self = StObject.set(x, "copyAllSuites", value.asInstanceOf[js.Any])
+    inline def setCopyAllSuites(value: Boolean): Self = StObject.set(x, "copyAllSuites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyAncestorHierarchy(value: Boolean): Self = StObject.set(x, "copyAncestorHierarchy", value.asInstanceOf[js.Any])
+    inline def setCopyAncestorHierarchy(value: Boolean): Self = StObject.set(x, "copyAncestorHierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationWorkItemType(value: String): Self = StObject.set(x, "destinationWorkItemType", value.asInstanceOf[js.Any])
+    inline def setDestinationWorkItemType(value: String): Self = StObject.set(x, "destinationWorkItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideParameters(value: StringDictionary[String]): Self = StObject.set(x, "overrideParameters", value.asInstanceOf[js.Any])
+    inline def setOverrideParameters(value: StringDictionary[String]): Self = StObject.set(x, "overrideParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedLinkComment(value: String): Self = StObject.set(x, "relatedLinkComment", value.asInstanceOf[js.Any])
+    inline def setRelatedLinkComment(value: String): Self = StObject.set(x, "relatedLinkComment", value.asInstanceOf[js.Any])
   }
 }

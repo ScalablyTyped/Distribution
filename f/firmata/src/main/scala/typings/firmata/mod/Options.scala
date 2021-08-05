@@ -21,55 +21,39 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAnalogPins(value: js.Array[Double]): Self = StObject.set(x, "analogPins", value.asInstanceOf[js.Any])
+    inline def setAnalogPins(value: js.Array[Double]): Self = StObject.set(x, "analogPins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalogPinsUndefined: Self = StObject.set(x, "analogPins", js.undefined)
+    inline def setAnalogPinsUndefined: Self = StObject.set(x, "analogPins", js.undefined)
     
-    @scala.inline
-    def setAnalogPinsVarargs(value: Double*): Self = StObject.set(x, "analogPins", js.Array(value :_*))
+    inline def setAnalogPinsVarargs(value: Double*): Self = StObject.set(x, "analogPins", js.Array(value :_*))
     
-    @scala.inline
-    def setPins(value: js.Array[Pins]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    inline def setPins(value: js.Array[Pins]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinsUndefined: Self = StObject.set(x, "pins", js.undefined)
+    inline def setPinsUndefined: Self = StObject.set(x, "pins", js.undefined)
     
-    @scala.inline
-    def setPinsVarargs(value: Pins*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: Pins*): Self = StObject.set(x, "pins", js.Array(value :_*))
     
-    @scala.inline
-    def setReportVersionTimeout(value: Double): Self = StObject.set(x, "reportVersionTimeout", value.asInstanceOf[js.Any])
+    inline def setReportVersionTimeout(value: Double): Self = StObject.set(x, "reportVersionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportVersionTimeoutUndefined: Self = StObject.set(x, "reportVersionTimeout", js.undefined)
+    inline def setReportVersionTimeoutUndefined: Self = StObject.set(x, "reportVersionTimeout", js.undefined)
     
-    @scala.inline
-    def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+    inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
+    inline def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
     
-    @scala.inline
-    def setSerialport(value: Options): Self = StObject.set(x, "serialport", value.asInstanceOf[js.Any])
+    inline def setSerialport(value: Options): Self = StObject.set(x, "serialport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialportUndefined: Self = StObject.set(x, "serialport", js.undefined)
+    inline def setSerialportUndefined: Self = StObject.set(x, "serialport", js.undefined)
     
-    @scala.inline
-    def setSkipCapabilities(value: Boolean): Self = StObject.set(x, "skipCapabilities", value.asInstanceOf[js.Any])
+    inline def setSkipCapabilities(value: Boolean): Self = StObject.set(x, "skipCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipCapabilitiesUndefined: Self = StObject.set(x, "skipCapabilities", js.undefined)
+    inline def setSkipCapabilitiesUndefined: Self = StObject.set(x, "skipCapabilities", js.undefined)
   }
 }

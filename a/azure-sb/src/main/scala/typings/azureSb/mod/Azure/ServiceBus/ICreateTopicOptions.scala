@@ -16,8 +16,7 @@ trait ICreateTopicOptions
 }
 object ICreateTopicOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultMessageTimeToLive: String,
     DuplicateDetectionHistoryTimeWindow: String,
     EnableBatchedOperations: Boolean,
@@ -31,16 +30,12 @@ object ICreateTopicOptions {
     __obj.asInstanceOf[ICreateTopicOptions]
   }
   
-  @scala.inline
-  implicit class ICreateTopicOptionsMutableBuilder[Self <: ICreateTopicOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateTopicOptions](x: Self) {
     
-    @scala.inline
-    def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
+    inline def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytes(value: Boolean): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: Boolean): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
+    inline def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
   }
 }

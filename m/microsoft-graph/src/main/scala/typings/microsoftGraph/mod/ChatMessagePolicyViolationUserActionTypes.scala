@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatMessagePolicyViolationUserActionTypes extends StObject
 object ChatMessagePolicyViolationUserActionTypes {
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def `override`: typings.microsoftGraph.microsoftGraphStrings.`override` = "override".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`override`]
+  inline def `override`: typings.microsoftGraph.microsoftGraphStrings.`override` = "override".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`override`]
   
-  @scala.inline
-  def reportFalsePositive: typings.microsoftGraph.microsoftGraphStrings.reportFalsePositive = "reportFalsePositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reportFalsePositive]
+  inline def reportFalsePositive: typings.microsoftGraph.microsoftGraphStrings.reportFalsePositive = "reportFalsePositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reportFalsePositive]
 }

@@ -13,19 +13,15 @@ trait FrameBuffer extends StObject {
 }
 object FrameBuffer {
   
-  @scala.inline
-  def apply(frameBuffer: ArrayBuffer, isLastFrame: Boolean): FrameBuffer = {
+  inline def apply(frameBuffer: ArrayBuffer, isLastFrame: Boolean): FrameBuffer = {
     val __obj = js.Dynamic.literal(frameBuffer = frameBuffer.asInstanceOf[js.Any], isLastFrame = isLastFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameBuffer]
   }
   
-  @scala.inline
-  implicit class FrameBufferMutableBuilder[Self <: FrameBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: FrameBuffer](x: Self) {
     
-    @scala.inline
-    def setFrameBuffer(value: ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
+    inline def setFrameBuffer(value: ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLastFrame(value: Boolean): Self = StObject.set(x, "isLastFrame", value.asInstanceOf[js.Any])
+    inline def setIsLastFrame(value: Boolean): Self = StObject.set(x, "isLastFrame", value.asInstanceOf[js.Any])
   }
 }

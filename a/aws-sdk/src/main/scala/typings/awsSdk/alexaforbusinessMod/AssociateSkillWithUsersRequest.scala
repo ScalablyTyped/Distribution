@@ -13,16 +13,13 @@ trait AssociateSkillWithUsersRequest extends StObject {
 }
 object AssociateSkillWithUsersRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): AssociateSkillWithUsersRequest = {
+  inline def apply(SkillId: SkillId): AssociateSkillWithUsersRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateSkillWithUsersRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSkillWithUsersRequestMutableBuilder[Self <: AssociateSkillWithUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSkillWithUsersRequest](x: Self) {
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

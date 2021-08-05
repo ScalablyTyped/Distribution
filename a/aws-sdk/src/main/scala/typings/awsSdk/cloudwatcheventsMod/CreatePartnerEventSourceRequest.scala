@@ -18,19 +18,15 @@ trait CreatePartnerEventSourceRequest extends StObject {
 }
 object CreatePartnerEventSourceRequest {
   
-  @scala.inline
-  def apply(Account: AccountId, Name: EventSourceName): CreatePartnerEventSourceRequest = {
+  inline def apply(Account: AccountId, Name: EventSourceName): CreatePartnerEventSourceRequest = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePartnerEventSourceRequest]
   }
   
-  @scala.inline
-  implicit class CreatePartnerEventSourceRequestMutableBuilder[Self <: CreatePartnerEventSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePartnerEventSourceRequest](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

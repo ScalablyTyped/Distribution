@@ -12,6 +12,5 @@ object nonEmptyArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indexNonEmptyArray[A](): Index_[NonEmptyArray_[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmptyArray")().asInstanceOf[Index_[NonEmptyArray_[A], Double, A]]
+  inline def indexNonEmptyArray[A](): Index_[NonEmptyArray_[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmptyArray")().asInstanceOf[Index_[NonEmptyArray_[A], Double, A]]
 }

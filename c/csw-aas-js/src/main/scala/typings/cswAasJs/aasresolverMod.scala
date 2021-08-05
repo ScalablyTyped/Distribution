@@ -10,6 +10,5 @@ object aasresolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveAAS(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAAS")().asInstanceOf[js.Promise[String | Null]]
+  inline def resolveAAS(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAAS")().asInstanceOf[js.Promise[String | Null]]
 }

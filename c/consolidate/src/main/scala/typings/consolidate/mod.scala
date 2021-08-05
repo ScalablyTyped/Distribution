@@ -31,8 +31,7 @@ object mod extends Shortcut {
   }
   object Consolidate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `arc-templates`: RendererInterface,
       atpl: RendererInterface,
       bracket: RendererInterface,
@@ -85,14 +84,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Consolidate]
     }
     
-    @scala.inline
-    implicit class ConsolidateMutableBuilder[Self <: Consolidate] (val x: Self) extends AnyVal {
+    extension [Self <: Consolidate](x: Self) {
       
-      @scala.inline
-      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequires(value: RequiresType): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: RequiresType): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
     }
   }
   
@@ -575,8 +571,7 @@ object mod extends Shortcut {
   }
   object ConsolidateType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `arc-templates`: RendererInterface,
       atpl: RendererInterface,
       bracket: RendererInterface,
@@ -627,137 +622,93 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConsolidateType]
     }
     
-    @scala.inline
-    implicit class ConsolidateTypeMutableBuilder[Self <: ConsolidateType] (val x: Self) extends AnyVal {
+    extension [Self <: ConsolidateType](x: Self) {
       
-      @scala.inline
-      def `setArc-templates`(value: RendererInterface): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
+      inline def `setArc-templates`(value: RendererInterface): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtpl(value: RendererInterface): Self = StObject.set(x, "atpl", value.asInstanceOf[js.Any])
+      inline def setAtpl(value: RendererInterface): Self = StObject.set(x, "atpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBracket(value: RendererInterface): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
+      inline def setBracket(value: RendererInterface): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDot(value: RendererInterface): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: RendererInterface): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDust(value: RendererInterface): Self = StObject.set(x, "dust", value.asInstanceOf[js.Any])
+      inline def setDust(value: RendererInterface): Self = StObject.set(x, "dust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEco(value: RendererInterface): Self = StObject.set(x, "eco", value.asInstanceOf[js.Any])
+      inline def setEco(value: RendererInterface): Self = StObject.set(x, "eco", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEct(value: RendererInterface): Self = StObject.set(x, "ect", value.asInstanceOf[js.Any])
+      inline def setEct(value: RendererInterface): Self = StObject.set(x, "ect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEjs(value: RendererInterface): Self = StObject.set(x, "ejs", value.asInstanceOf[js.Any])
+      inline def setEjs(value: RendererInterface): Self = StObject.set(x, "ejs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHaml(value: RendererInterface): Self = StObject.set(x, "haml", value.asInstanceOf[js.Any])
+      inline def setHaml(value: RendererInterface): Self = StObject.set(x, "haml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHaml-coffee`(value: RendererInterface): Self = StObject.set(x, "haml-coffee", value.asInstanceOf[js.Any])
+      inline def `setHaml-coffee`(value: RendererInterface): Self = StObject.set(x, "haml-coffee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHamlet(value: RendererInterface): Self = StObject.set(x, "hamlet", value.asInstanceOf[js.Any])
+      inline def setHamlet(value: RendererInterface): Self = StObject.set(x, "hamlet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlebars(value: RendererInterface): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
+      inline def setHandlebars(value: RendererInterface): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHogan(value: RendererInterface): Self = StObject.set(x, "hogan", value.asInstanceOf[js.Any])
+      inline def setHogan(value: RendererInterface): Self = StObject.set(x, "hogan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmling(value: RendererInterface): Self = StObject.set(x, "htmling", value.asInstanceOf[js.Any])
+      inline def setHtmling(value: RendererInterface): Self = StObject.set(x, "htmling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJade(value: RendererInterface): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
+      inline def setJade(value: RendererInterface): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJazz(value: RendererInterface): Self = StObject.set(x, "jazz", value.asInstanceOf[js.Any])
+      inline def setJazz(value: RendererInterface): Self = StObject.set(x, "jazz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJqtpl(value: RendererInterface): Self = StObject.set(x, "jqtpl", value.asInstanceOf[js.Any])
+      inline def setJqtpl(value: RendererInterface): Self = StObject.set(x, "jqtpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJust(value: RendererInterface): Self = StObject.set(x, "just", value.asInstanceOf[js.Any])
+      inline def setJust(value: RendererInterface): Self = StObject.set(x, "just", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiquid(value: RendererInterface): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
+      inline def setLiquid(value: RendererInterface): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiquor(value: RendererInterface): Self = StObject.set(x, "liquor", value.asInstanceOf[js.Any])
+      inline def setLiquor(value: RendererInterface): Self = StObject.set(x, "liquor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLodash(value: RendererInterface): Self = StObject.set(x, "lodash", value.asInstanceOf[js.Any])
+      inline def setLodash(value: RendererInterface): Self = StObject.set(x, "lodash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarko(value: RendererInterface): Self = StObject.set(x, "marko", value.asInstanceOf[js.Any])
+      inline def setMarko(value: RendererInterface): Self = StObject.set(x, "marko", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMote(value: RendererInterface): Self = StObject.set(x, "mote", value.asInstanceOf[js.Any])
+      inline def setMote(value: RendererInterface): Self = StObject.set(x, "mote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMustache(value: RendererInterface): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
+      inline def setMustache(value: RendererInterface): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNunjucks(value: RendererInterface): Self = StObject.set(x, "nunjucks", value.asInstanceOf[js.Any])
+      inline def setNunjucks(value: RendererInterface): Self = StObject.set(x, "nunjucks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlates(value: RendererInterface): Self = StObject.set(x, "plates", value.asInstanceOf[js.Any])
+      inline def setPlates(value: RendererInterface): Self = StObject.set(x, "plates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPug(value: RendererInterface): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
+      inline def setPug(value: RendererInterface): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQejs(value: RendererInterface): Self = StObject.set(x, "qejs", value.asInstanceOf[js.Any])
+      inline def setQejs(value: RendererInterface): Self = StObject.set(x, "qejs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRactive(value: RendererInterface): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+      inline def setRactive(value: RendererInterface): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRazor(value: RendererInterface): Self = StObject.set(x, "razor", value.asInstanceOf[js.Any])
+      inline def setRazor(value: RendererInterface): Self = StObject.set(x, "razor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReact(value: RendererInterface): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
+      inline def setReact(value: RendererInterface): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlm(value: RendererInterface): Self = StObject.set(x, "slm", value.asInstanceOf[js.Any])
+      inline def setSlm(value: RendererInterface): Self = StObject.set(x, "slm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquirrelly(value: RendererInterface): Self = StObject.set(x, "squirrelly", value.asInstanceOf[js.Any])
+      inline def setSquirrelly(value: RendererInterface): Self = StObject.set(x, "squirrelly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwig(value: RendererInterface): Self = StObject.set(x, "swig", value.asInstanceOf[js.Any])
+      inline def setSwig(value: RendererInterface): Self = StObject.set(x, "swig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeacup(value: RendererInterface): Self = StObject.set(x, "teacup", value.asInstanceOf[js.Any])
+      inline def setTeacup(value: RendererInterface): Self = StObject.set(x, "teacup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplayed(value: RendererInterface): Self = StObject.set(x, "templayed", value.asInstanceOf[js.Any])
+      inline def setTemplayed(value: RendererInterface): Self = StObject.set(x, "templayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToffee(value: RendererInterface): Self = StObject.set(x, "toffee", value.asInstanceOf[js.Any])
+      inline def setToffee(value: RendererInterface): Self = StObject.set(x, "toffee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwig(value: RendererInterface): Self = StObject.set(x, "twig", value.asInstanceOf[js.Any])
+      inline def setTwig(value: RendererInterface): Self = StObject.set(x, "twig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderscore(value: RendererInterface): Self = StObject.set(x, "underscore", value.asInstanceOf[js.Any])
+      inline def setUnderscore(value: RendererInterface): Self = StObject.set(x, "underscore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVash(value: RendererInterface): Self = StObject.set(x, "vash", value.asInstanceOf[js.Any])
+      inline def setVash(value: RendererInterface): Self = StObject.set(x, "vash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityjs(value: RendererInterface): Self = StObject.set(x, "velocityjs", value.asInstanceOf[js.Any])
+      inline def setVelocityjs(value: RendererInterface): Self = StObject.set(x, "velocityjs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalrus(value: RendererInterface): Self = StObject.set(x, "walrus", value.asInstanceOf[js.Any])
+      inline def setWalrus(value: RendererInterface): Self = StObject.set(x, "walrus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiskers(value: RendererInterface): Self = StObject.set(x, "whiskers", value.asInstanceOf[js.Any])
+      inline def setWhiskers(value: RendererInterface): Self = StObject.set(x, "whiskers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -834,143 +785,97 @@ object mod extends Shortcut {
   trait Requires extends StObject
   object Requires {
     
-    @scala.inline
-    def ReactDOM: typings.consolidate.consolidateStrings.ReactDOM = "ReactDOM".asInstanceOf[typings.consolidate.consolidateStrings.ReactDOM]
+    inline def ReactDOM: typings.consolidate.consolidateStrings.ReactDOM = "ReactDOM".asInstanceOf[typings.consolidate.consolidateStrings.ReactDOM]
     
-    @scala.inline
-    def `arc-templates`: typings.consolidate.consolidateStrings.`arc-templates` = "arc-templates".asInstanceOf[typings.consolidate.consolidateStrings.`arc-templates`]
+    inline def `arc-templates`: typings.consolidate.consolidateStrings.`arc-templates` = "arc-templates".asInstanceOf[typings.consolidate.consolidateStrings.`arc-templates`]
     
-    @scala.inline
-    def atpl: typings.consolidate.consolidateStrings.atpl = "atpl".asInstanceOf[typings.consolidate.consolidateStrings.atpl]
+    inline def atpl: typings.consolidate.consolidateStrings.atpl = "atpl".asInstanceOf[typings.consolidate.consolidateStrings.atpl]
     
-    @scala.inline
-    def babel: typings.consolidate.consolidateStrings.babel = "babel".asInstanceOf[typings.consolidate.consolidateStrings.babel]
+    inline def babel: typings.consolidate.consolidateStrings.babel = "babel".asInstanceOf[typings.consolidate.consolidateStrings.babel]
     
-    @scala.inline
-    def bracket: typings.consolidate.consolidateStrings.bracket = "bracket".asInstanceOf[typings.consolidate.consolidateStrings.bracket]
+    inline def bracket: typings.consolidate.consolidateStrings.bracket = "bracket".asInstanceOf[typings.consolidate.consolidateStrings.bracket]
     
-    @scala.inline
-    def dot: typings.consolidate.consolidateStrings.dot = "dot".asInstanceOf[typings.consolidate.consolidateStrings.dot]
+    inline def dot: typings.consolidate.consolidateStrings.dot = "dot".asInstanceOf[typings.consolidate.consolidateStrings.dot]
     
-    @scala.inline
-    def dust: typings.consolidate.consolidateStrings.dust = "dust".asInstanceOf[typings.consolidate.consolidateStrings.dust]
+    inline def dust: typings.consolidate.consolidateStrings.dust = "dust".asInstanceOf[typings.consolidate.consolidateStrings.dust]
     
-    @scala.inline
-    def eco: typings.consolidate.consolidateStrings.eco = "eco".asInstanceOf[typings.consolidate.consolidateStrings.eco]
+    inline def eco: typings.consolidate.consolidateStrings.eco = "eco".asInstanceOf[typings.consolidate.consolidateStrings.eco]
     
-    @scala.inline
-    def ect: typings.consolidate.consolidateStrings.ect = "ect".asInstanceOf[typings.consolidate.consolidateStrings.ect]
+    inline def ect: typings.consolidate.consolidateStrings.ect = "ect".asInstanceOf[typings.consolidate.consolidateStrings.ect]
     
-    @scala.inline
-    def ejs: typings.consolidate.consolidateStrings.ejs = "ejs".asInstanceOf[typings.consolidate.consolidateStrings.ejs]
+    inline def ejs: typings.consolidate.consolidateStrings.ejs = "ejs".asInstanceOf[typings.consolidate.consolidateStrings.ejs]
     
-    @scala.inline
-    def extend: typings.consolidate.consolidateStrings.extend = "extend".asInstanceOf[typings.consolidate.consolidateStrings.extend]
+    inline def extend: typings.consolidate.consolidateStrings.extend = "extend".asInstanceOf[typings.consolidate.consolidateStrings.extend]
     
-    @scala.inline
-    def haml: typings.consolidate.consolidateStrings.haml = "haml".asInstanceOf[typings.consolidate.consolidateStrings.haml]
+    inline def haml: typings.consolidate.consolidateStrings.haml = "haml".asInstanceOf[typings.consolidate.consolidateStrings.haml]
     
-    @scala.inline
-    def `haml-coffee`: typings.consolidate.consolidateStrings.`haml-coffee` = "haml-coffee".asInstanceOf[typings.consolidate.consolidateStrings.`haml-coffee`]
+    inline def `haml-coffee`: typings.consolidate.consolidateStrings.`haml-coffee` = "haml-coffee".asInstanceOf[typings.consolidate.consolidateStrings.`haml-coffee`]
     
-    @scala.inline
-    def hamlet: typings.consolidate.consolidateStrings.hamlet = "hamlet".asInstanceOf[typings.consolidate.consolidateStrings.hamlet]
+    inline def hamlet: typings.consolidate.consolidateStrings.hamlet = "hamlet".asInstanceOf[typings.consolidate.consolidateStrings.hamlet]
     
-    @scala.inline
-    def handlebars: typings.consolidate.consolidateStrings.handlebars = "handlebars".asInstanceOf[typings.consolidate.consolidateStrings.handlebars]
+    inline def handlebars: typings.consolidate.consolidateStrings.handlebars = "handlebars".asInstanceOf[typings.consolidate.consolidateStrings.handlebars]
     
-    @scala.inline
-    def hogan: typings.consolidate.consolidateStrings.hogan = "hogan".asInstanceOf[typings.consolidate.consolidateStrings.hogan]
+    inline def hogan: typings.consolidate.consolidateStrings.hogan = "hogan".asInstanceOf[typings.consolidate.consolidateStrings.hogan]
     
-    @scala.inline
-    def htmling: typings.consolidate.consolidateStrings.htmling = "htmling".asInstanceOf[typings.consolidate.consolidateStrings.htmling]
+    inline def htmling: typings.consolidate.consolidateStrings.htmling = "htmling".asInstanceOf[typings.consolidate.consolidateStrings.htmling]
     
-    @scala.inline
-    def jade: typings.consolidate.consolidateStrings.jade = "jade".asInstanceOf[typings.consolidate.consolidateStrings.jade]
+    inline def jade: typings.consolidate.consolidateStrings.jade = "jade".asInstanceOf[typings.consolidate.consolidateStrings.jade]
     
-    @scala.inline
-    def jazz: typings.consolidate.consolidateStrings.jazz = "jazz".asInstanceOf[typings.consolidate.consolidateStrings.jazz]
+    inline def jazz: typings.consolidate.consolidateStrings.jazz = "jazz".asInstanceOf[typings.consolidate.consolidateStrings.jazz]
     
-    @scala.inline
-    def jqtpl: typings.consolidate.consolidateStrings.jqtpl = "jqtpl".asInstanceOf[typings.consolidate.consolidateStrings.jqtpl]
+    inline def jqtpl: typings.consolidate.consolidateStrings.jqtpl = "jqtpl".asInstanceOf[typings.consolidate.consolidateStrings.jqtpl]
     
-    @scala.inline
-    def just: typings.consolidate.consolidateStrings.just = "just".asInstanceOf[typings.consolidate.consolidateStrings.just]
+    inline def just: typings.consolidate.consolidateStrings.just = "just".asInstanceOf[typings.consolidate.consolidateStrings.just]
     
-    @scala.inline
-    def liquid: typings.consolidate.consolidateStrings.liquid = "liquid".asInstanceOf[typings.consolidate.consolidateStrings.liquid]
+    inline def liquid: typings.consolidate.consolidateStrings.liquid = "liquid".asInstanceOf[typings.consolidate.consolidateStrings.liquid]
     
-    @scala.inline
-    def liquor: typings.consolidate.consolidateStrings.liquor = "liquor".asInstanceOf[typings.consolidate.consolidateStrings.liquor]
+    inline def liquor: typings.consolidate.consolidateStrings.liquor = "liquor".asInstanceOf[typings.consolidate.consolidateStrings.liquor]
     
-    @scala.inline
-    def lodash: typings.consolidate.consolidateStrings.lodash = "lodash".asInstanceOf[typings.consolidate.consolidateStrings.lodash]
+    inline def lodash: typings.consolidate.consolidateStrings.lodash = "lodash".asInstanceOf[typings.consolidate.consolidateStrings.lodash]
     
-    @scala.inline
-    def marko: typings.consolidate.consolidateStrings.marko = "marko".asInstanceOf[typings.consolidate.consolidateStrings.marko]
+    inline def marko: typings.consolidate.consolidateStrings.marko = "marko".asInstanceOf[typings.consolidate.consolidateStrings.marko]
     
-    @scala.inline
-    def mote: typings.consolidate.consolidateStrings.mote = "mote".asInstanceOf[typings.consolidate.consolidateStrings.mote]
+    inline def mote: typings.consolidate.consolidateStrings.mote = "mote".asInstanceOf[typings.consolidate.consolidateStrings.mote]
     
-    @scala.inline
-    def mustache: typings.consolidate.consolidateStrings.mustache = "mustache".asInstanceOf[typings.consolidate.consolidateStrings.mustache]
+    inline def mustache: typings.consolidate.consolidateStrings.mustache = "mustache".asInstanceOf[typings.consolidate.consolidateStrings.mustache]
     
-    @scala.inline
-    def nunjucks: typings.consolidate.consolidateStrings.nunjucks = "nunjucks".asInstanceOf[typings.consolidate.consolidateStrings.nunjucks]
+    inline def nunjucks: typings.consolidate.consolidateStrings.nunjucks = "nunjucks".asInstanceOf[typings.consolidate.consolidateStrings.nunjucks]
     
-    @scala.inline
-    def plates: typings.consolidate.consolidateStrings.plates = "plates".asInstanceOf[typings.consolidate.consolidateStrings.plates]
+    inline def plates: typings.consolidate.consolidateStrings.plates = "plates".asInstanceOf[typings.consolidate.consolidateStrings.plates]
     
-    @scala.inline
-    def pug: typings.consolidate.consolidateStrings.pug = "pug".asInstanceOf[typings.consolidate.consolidateStrings.pug]
+    inline def pug: typings.consolidate.consolidateStrings.pug = "pug".asInstanceOf[typings.consolidate.consolidateStrings.pug]
     
-    @scala.inline
-    def qejs: typings.consolidate.consolidateStrings.qejs = "qejs".asInstanceOf[typings.consolidate.consolidateStrings.qejs]
+    inline def qejs: typings.consolidate.consolidateStrings.qejs = "qejs".asInstanceOf[typings.consolidate.consolidateStrings.qejs]
     
-    @scala.inline
-    def ractive: typings.consolidate.consolidateStrings.ractive = "ractive".asInstanceOf[typings.consolidate.consolidateStrings.ractive]
+    inline def ractive: typings.consolidate.consolidateStrings.ractive = "ractive".asInstanceOf[typings.consolidate.consolidateStrings.ractive]
     
-    @scala.inline
-    def razor: typings.consolidate.consolidateStrings.razor = "razor".asInstanceOf[typings.consolidate.consolidateStrings.razor]
+    inline def razor: typings.consolidate.consolidateStrings.razor = "razor".asInstanceOf[typings.consolidate.consolidateStrings.razor]
     
-    @scala.inline
-    def react: typings.consolidate.consolidateStrings.react = "react".asInstanceOf[typings.consolidate.consolidateStrings.react]
+    inline def react: typings.consolidate.consolidateStrings.react = "react".asInstanceOf[typings.consolidate.consolidateStrings.react]
     
-    @scala.inline
-    def slm: typings.consolidate.consolidateStrings.slm = "slm".asInstanceOf[typings.consolidate.consolidateStrings.slm]
+    inline def slm: typings.consolidate.consolidateStrings.slm = "slm".asInstanceOf[typings.consolidate.consolidateStrings.slm]
     
-    @scala.inline
-    def squirrelly: typings.consolidate.consolidateStrings.squirrelly = "squirrelly".asInstanceOf[typings.consolidate.consolidateStrings.squirrelly]
+    inline def squirrelly: typings.consolidate.consolidateStrings.squirrelly = "squirrelly".asInstanceOf[typings.consolidate.consolidateStrings.squirrelly]
     
-    @scala.inline
-    def swig: typings.consolidate.consolidateStrings.swig = "swig".asInstanceOf[typings.consolidate.consolidateStrings.swig]
+    inline def swig: typings.consolidate.consolidateStrings.swig = "swig".asInstanceOf[typings.consolidate.consolidateStrings.swig]
     
-    @scala.inline
-    def teacup: typings.consolidate.consolidateStrings.teacup = "teacup".asInstanceOf[typings.consolidate.consolidateStrings.teacup]
+    inline def teacup: typings.consolidate.consolidateStrings.teacup = "teacup".asInstanceOf[typings.consolidate.consolidateStrings.teacup]
     
-    @scala.inline
-    def templayed: typings.consolidate.consolidateStrings.templayed = "templayed".asInstanceOf[typings.consolidate.consolidateStrings.templayed]
+    inline def templayed: typings.consolidate.consolidateStrings.templayed = "templayed".asInstanceOf[typings.consolidate.consolidateStrings.templayed]
     
-    @scala.inline
-    def toffee: typings.consolidate.consolidateStrings.toffee = "toffee".asInstanceOf[typings.consolidate.consolidateStrings.toffee]
+    inline def toffee: typings.consolidate.consolidateStrings.toffee = "toffee".asInstanceOf[typings.consolidate.consolidateStrings.toffee]
     
-    @scala.inline
-    def twig: typings.consolidate.consolidateStrings.twig = "twig".asInstanceOf[typings.consolidate.consolidateStrings.twig]
+    inline def twig: typings.consolidate.consolidateStrings.twig = "twig".asInstanceOf[typings.consolidate.consolidateStrings.twig]
     
-    @scala.inline
-    def underscore: typings.consolidate.consolidateStrings.underscore = "underscore".asInstanceOf[typings.consolidate.consolidateStrings.underscore]
+    inline def underscore: typings.consolidate.consolidateStrings.underscore = "underscore".asInstanceOf[typings.consolidate.consolidateStrings.underscore]
     
-    @scala.inline
-    def vash: typings.consolidate.consolidateStrings.vash = "vash".asInstanceOf[typings.consolidate.consolidateStrings.vash]
+    inline def vash: typings.consolidate.consolidateStrings.vash = "vash".asInstanceOf[typings.consolidate.consolidateStrings.vash]
     
-    @scala.inline
-    def velocityjs: typings.consolidate.consolidateStrings.velocityjs = "velocityjs".asInstanceOf[typings.consolidate.consolidateStrings.velocityjs]
+    inline def velocityjs: typings.consolidate.consolidateStrings.velocityjs = "velocityjs".asInstanceOf[typings.consolidate.consolidateStrings.velocityjs]
     
-    @scala.inline
-    def walrus: typings.consolidate.consolidateStrings.walrus = "walrus".asInstanceOf[typings.consolidate.consolidateStrings.walrus]
+    inline def walrus: typings.consolidate.consolidateStrings.walrus = "walrus".asInstanceOf[typings.consolidate.consolidateStrings.walrus]
     
-    @scala.inline
-    def whiskers: typings.consolidate.consolidateStrings.whiskers = "whiskers".asInstanceOf[typings.consolidate.consolidateStrings.whiskers]
+    inline def whiskers: typings.consolidate.consolidateStrings.whiskers = "whiskers".asInstanceOf[typings.consolidate.consolidateStrings.whiskers]
   }
   
   /* Inlined {[ engine in consolidate.consolidate.Requires ]: any} */
@@ -1070,8 +975,7 @@ object mod extends Shortcut {
   }
   object RequiresType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ReactDOM: js.Any,
       `arc-templates`: js.Any,
       atpl: js.Any,
@@ -1125,146 +1029,99 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequiresType]
     }
     
-    @scala.inline
-    implicit class RequiresTypeMutableBuilder[Self <: RequiresType] (val x: Self) extends AnyVal {
+    extension [Self <: RequiresType](x: Self) {
       
-      @scala.inline
-      def `setArc-templates`(value: js.Any): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
+      inline def `setArc-templates`(value: js.Any): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtpl(value: js.Any): Self = StObject.set(x, "atpl", value.asInstanceOf[js.Any])
+      inline def setAtpl(value: js.Any): Self = StObject.set(x, "atpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBabel(value: js.Any): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
+      inline def setBabel(value: js.Any): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBracket(value: js.Any): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
+      inline def setBracket(value: js.Any): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDot(value: js.Any): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: js.Any): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDust(value: js.Any): Self = StObject.set(x, "dust", value.asInstanceOf[js.Any])
+      inline def setDust(value: js.Any): Self = StObject.set(x, "dust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEco(value: js.Any): Self = StObject.set(x, "eco", value.asInstanceOf[js.Any])
+      inline def setEco(value: js.Any): Self = StObject.set(x, "eco", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEct(value: js.Any): Self = StObject.set(x, "ect", value.asInstanceOf[js.Any])
+      inline def setEct(value: js.Any): Self = StObject.set(x, "ect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEjs(value: js.Any): Self = StObject.set(x, "ejs", value.asInstanceOf[js.Any])
+      inline def setEjs(value: js.Any): Self = StObject.set(x, "ejs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHaml(value: js.Any): Self = StObject.set(x, "haml", value.asInstanceOf[js.Any])
+      inline def setHaml(value: js.Any): Self = StObject.set(x, "haml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHaml-coffee`(value: js.Any): Self = StObject.set(x, "haml-coffee", value.asInstanceOf[js.Any])
+      inline def `setHaml-coffee`(value: js.Any): Self = StObject.set(x, "haml-coffee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHamlet(value: js.Any): Self = StObject.set(x, "hamlet", value.asInstanceOf[js.Any])
+      inline def setHamlet(value: js.Any): Self = StObject.set(x, "hamlet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlebars(value: js.Any): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
+      inline def setHandlebars(value: js.Any): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHogan(value: js.Any): Self = StObject.set(x, "hogan", value.asInstanceOf[js.Any])
+      inline def setHogan(value: js.Any): Self = StObject.set(x, "hogan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmling(value: js.Any): Self = StObject.set(x, "htmling", value.asInstanceOf[js.Any])
+      inline def setHtmling(value: js.Any): Self = StObject.set(x, "htmling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJade(value: js.Any): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
+      inline def setJade(value: js.Any): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJazz(value: js.Any): Self = StObject.set(x, "jazz", value.asInstanceOf[js.Any])
+      inline def setJazz(value: js.Any): Self = StObject.set(x, "jazz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJqtpl(value: js.Any): Self = StObject.set(x, "jqtpl", value.asInstanceOf[js.Any])
+      inline def setJqtpl(value: js.Any): Self = StObject.set(x, "jqtpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJust(value: js.Any): Self = StObject.set(x, "just", value.asInstanceOf[js.Any])
+      inline def setJust(value: js.Any): Self = StObject.set(x, "just", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiquid(value: js.Any): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
+      inline def setLiquid(value: js.Any): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiquor(value: js.Any): Self = StObject.set(x, "liquor", value.asInstanceOf[js.Any])
+      inline def setLiquor(value: js.Any): Self = StObject.set(x, "liquor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLodash(value: js.Any): Self = StObject.set(x, "lodash", value.asInstanceOf[js.Any])
+      inline def setLodash(value: js.Any): Self = StObject.set(x, "lodash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarko(value: js.Any): Self = StObject.set(x, "marko", value.asInstanceOf[js.Any])
+      inline def setMarko(value: js.Any): Self = StObject.set(x, "marko", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMote(value: js.Any): Self = StObject.set(x, "mote", value.asInstanceOf[js.Any])
+      inline def setMote(value: js.Any): Self = StObject.set(x, "mote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMustache(value: js.Any): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
+      inline def setMustache(value: js.Any): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNunjucks(value: js.Any): Self = StObject.set(x, "nunjucks", value.asInstanceOf[js.Any])
+      inline def setNunjucks(value: js.Any): Self = StObject.set(x, "nunjucks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlates(value: js.Any): Self = StObject.set(x, "plates", value.asInstanceOf[js.Any])
+      inline def setPlates(value: js.Any): Self = StObject.set(x, "plates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPug(value: js.Any): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
+      inline def setPug(value: js.Any): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQejs(value: js.Any): Self = StObject.set(x, "qejs", value.asInstanceOf[js.Any])
+      inline def setQejs(value: js.Any): Self = StObject.set(x, "qejs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRactive(value: js.Any): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+      inline def setRactive(value: js.Any): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRazor(value: js.Any): Self = StObject.set(x, "razor", value.asInstanceOf[js.Any])
+      inline def setRazor(value: js.Any): Self = StObject.set(x, "razor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReact(value: js.Any): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
+      inline def setReact(value: js.Any): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactDOM(value: js.Any): Self = StObject.set(x, "ReactDOM", value.asInstanceOf[js.Any])
+      inline def setReactDOM(value: js.Any): Self = StObject.set(x, "ReactDOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlm(value: js.Any): Self = StObject.set(x, "slm", value.asInstanceOf[js.Any])
+      inline def setSlm(value: js.Any): Self = StObject.set(x, "slm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquirrelly(value: js.Any): Self = StObject.set(x, "squirrelly", value.asInstanceOf[js.Any])
+      inline def setSquirrelly(value: js.Any): Self = StObject.set(x, "squirrelly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwig(value: js.Any): Self = StObject.set(x, "swig", value.asInstanceOf[js.Any])
+      inline def setSwig(value: js.Any): Self = StObject.set(x, "swig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeacup(value: js.Any): Self = StObject.set(x, "teacup", value.asInstanceOf[js.Any])
+      inline def setTeacup(value: js.Any): Self = StObject.set(x, "teacup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplayed(value: js.Any): Self = StObject.set(x, "templayed", value.asInstanceOf[js.Any])
+      inline def setTemplayed(value: js.Any): Self = StObject.set(x, "templayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToffee(value: js.Any): Self = StObject.set(x, "toffee", value.asInstanceOf[js.Any])
+      inline def setToffee(value: js.Any): Self = StObject.set(x, "toffee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwig(value: js.Any): Self = StObject.set(x, "twig", value.asInstanceOf[js.Any])
+      inline def setTwig(value: js.Any): Self = StObject.set(x, "twig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderscore(value: js.Any): Self = StObject.set(x, "underscore", value.asInstanceOf[js.Any])
+      inline def setUnderscore(value: js.Any): Self = StObject.set(x, "underscore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVash(value: js.Any): Self = StObject.set(x, "vash", value.asInstanceOf[js.Any])
+      inline def setVash(value: js.Any): Self = StObject.set(x, "vash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityjs(value: js.Any): Self = StObject.set(x, "velocityjs", value.asInstanceOf[js.Any])
+      inline def setVelocityjs(value: js.Any): Self = StObject.set(x, "velocityjs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalrus(value: js.Any): Self = StObject.set(x, "walrus", value.asInstanceOf[js.Any])
+      inline def setWalrus(value: js.Any): Self = StObject.set(x, "walrus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiskers(value: js.Any): Self = StObject.set(x, "whiskers", value.asInstanceOf[js.Any])
+      inline def setWhiskers(value: js.Any): Self = StObject.set(x, "whiskers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1316,134 +1173,91 @@ object mod extends Shortcut {
   trait SupportedTemplateEngines extends StObject
   object SupportedTemplateEngines {
     
-    @scala.inline
-    def `arc-templates`: typings.consolidate.consolidateStrings.`arc-templates` = "arc-templates".asInstanceOf[typings.consolidate.consolidateStrings.`arc-templates`]
+    inline def `arc-templates`: typings.consolidate.consolidateStrings.`arc-templates` = "arc-templates".asInstanceOf[typings.consolidate.consolidateStrings.`arc-templates`]
     
-    @scala.inline
-    def atpl: typings.consolidate.consolidateStrings.atpl = "atpl".asInstanceOf[typings.consolidate.consolidateStrings.atpl]
+    inline def atpl: typings.consolidate.consolidateStrings.atpl = "atpl".asInstanceOf[typings.consolidate.consolidateStrings.atpl]
     
-    @scala.inline
-    def bracket: typings.consolidate.consolidateStrings.bracket = "bracket".asInstanceOf[typings.consolidate.consolidateStrings.bracket]
+    inline def bracket: typings.consolidate.consolidateStrings.bracket = "bracket".asInstanceOf[typings.consolidate.consolidateStrings.bracket]
     
-    @scala.inline
-    def dot: typings.consolidate.consolidateStrings.dot = "dot".asInstanceOf[typings.consolidate.consolidateStrings.dot]
+    inline def dot: typings.consolidate.consolidateStrings.dot = "dot".asInstanceOf[typings.consolidate.consolidateStrings.dot]
     
-    @scala.inline
-    def dust: typings.consolidate.consolidateStrings.dust = "dust".asInstanceOf[typings.consolidate.consolidateStrings.dust]
+    inline def dust: typings.consolidate.consolidateStrings.dust = "dust".asInstanceOf[typings.consolidate.consolidateStrings.dust]
     
-    @scala.inline
-    def eco: typings.consolidate.consolidateStrings.eco = "eco".asInstanceOf[typings.consolidate.consolidateStrings.eco]
+    inline def eco: typings.consolidate.consolidateStrings.eco = "eco".asInstanceOf[typings.consolidate.consolidateStrings.eco]
     
-    @scala.inline
-    def ect: typings.consolidate.consolidateStrings.ect = "ect".asInstanceOf[typings.consolidate.consolidateStrings.ect]
+    inline def ect: typings.consolidate.consolidateStrings.ect = "ect".asInstanceOf[typings.consolidate.consolidateStrings.ect]
     
-    @scala.inline
-    def ejs: typings.consolidate.consolidateStrings.ejs = "ejs".asInstanceOf[typings.consolidate.consolidateStrings.ejs]
+    inline def ejs: typings.consolidate.consolidateStrings.ejs = "ejs".asInstanceOf[typings.consolidate.consolidateStrings.ejs]
     
-    @scala.inline
-    def haml: typings.consolidate.consolidateStrings.haml = "haml".asInstanceOf[typings.consolidate.consolidateStrings.haml]
+    inline def haml: typings.consolidate.consolidateStrings.haml = "haml".asInstanceOf[typings.consolidate.consolidateStrings.haml]
     
-    @scala.inline
-    def `haml-coffee`: typings.consolidate.consolidateStrings.`haml-coffee` = "haml-coffee".asInstanceOf[typings.consolidate.consolidateStrings.`haml-coffee`]
+    inline def `haml-coffee`: typings.consolidate.consolidateStrings.`haml-coffee` = "haml-coffee".asInstanceOf[typings.consolidate.consolidateStrings.`haml-coffee`]
     
-    @scala.inline
-    def hamlet: typings.consolidate.consolidateStrings.hamlet = "hamlet".asInstanceOf[typings.consolidate.consolidateStrings.hamlet]
+    inline def hamlet: typings.consolidate.consolidateStrings.hamlet = "hamlet".asInstanceOf[typings.consolidate.consolidateStrings.hamlet]
     
-    @scala.inline
-    def handlebars: typings.consolidate.consolidateStrings.handlebars = "handlebars".asInstanceOf[typings.consolidate.consolidateStrings.handlebars]
+    inline def handlebars: typings.consolidate.consolidateStrings.handlebars = "handlebars".asInstanceOf[typings.consolidate.consolidateStrings.handlebars]
     
-    @scala.inline
-    def hogan: typings.consolidate.consolidateStrings.hogan = "hogan".asInstanceOf[typings.consolidate.consolidateStrings.hogan]
+    inline def hogan: typings.consolidate.consolidateStrings.hogan = "hogan".asInstanceOf[typings.consolidate.consolidateStrings.hogan]
     
-    @scala.inline
-    def htmling: typings.consolidate.consolidateStrings.htmling = "htmling".asInstanceOf[typings.consolidate.consolidateStrings.htmling]
+    inline def htmling: typings.consolidate.consolidateStrings.htmling = "htmling".asInstanceOf[typings.consolidate.consolidateStrings.htmling]
     
-    @scala.inline
-    def jade: typings.consolidate.consolidateStrings.jade = "jade".asInstanceOf[typings.consolidate.consolidateStrings.jade]
+    inline def jade: typings.consolidate.consolidateStrings.jade = "jade".asInstanceOf[typings.consolidate.consolidateStrings.jade]
     
-    @scala.inline
-    def jazz: typings.consolidate.consolidateStrings.jazz = "jazz".asInstanceOf[typings.consolidate.consolidateStrings.jazz]
+    inline def jazz: typings.consolidate.consolidateStrings.jazz = "jazz".asInstanceOf[typings.consolidate.consolidateStrings.jazz]
     
-    @scala.inline
-    def jqtpl: typings.consolidate.consolidateStrings.jqtpl = "jqtpl".asInstanceOf[typings.consolidate.consolidateStrings.jqtpl]
+    inline def jqtpl: typings.consolidate.consolidateStrings.jqtpl = "jqtpl".asInstanceOf[typings.consolidate.consolidateStrings.jqtpl]
     
-    @scala.inline
-    def just: typings.consolidate.consolidateStrings.just = "just".asInstanceOf[typings.consolidate.consolidateStrings.just]
+    inline def just: typings.consolidate.consolidateStrings.just = "just".asInstanceOf[typings.consolidate.consolidateStrings.just]
     
-    @scala.inline
-    def liquid: typings.consolidate.consolidateStrings.liquid = "liquid".asInstanceOf[typings.consolidate.consolidateStrings.liquid]
+    inline def liquid: typings.consolidate.consolidateStrings.liquid = "liquid".asInstanceOf[typings.consolidate.consolidateStrings.liquid]
     
-    @scala.inline
-    def liquor: typings.consolidate.consolidateStrings.liquor = "liquor".asInstanceOf[typings.consolidate.consolidateStrings.liquor]
+    inline def liquor: typings.consolidate.consolidateStrings.liquor = "liquor".asInstanceOf[typings.consolidate.consolidateStrings.liquor]
     
-    @scala.inline
-    def lodash: typings.consolidate.consolidateStrings.lodash = "lodash".asInstanceOf[typings.consolidate.consolidateStrings.lodash]
+    inline def lodash: typings.consolidate.consolidateStrings.lodash = "lodash".asInstanceOf[typings.consolidate.consolidateStrings.lodash]
     
-    @scala.inline
-    def marko: typings.consolidate.consolidateStrings.marko = "marko".asInstanceOf[typings.consolidate.consolidateStrings.marko]
+    inline def marko: typings.consolidate.consolidateStrings.marko = "marko".asInstanceOf[typings.consolidate.consolidateStrings.marko]
     
-    @scala.inline
-    def mote: typings.consolidate.consolidateStrings.mote = "mote".asInstanceOf[typings.consolidate.consolidateStrings.mote]
+    inline def mote: typings.consolidate.consolidateStrings.mote = "mote".asInstanceOf[typings.consolidate.consolidateStrings.mote]
     
-    @scala.inline
-    def mustache: typings.consolidate.consolidateStrings.mustache = "mustache".asInstanceOf[typings.consolidate.consolidateStrings.mustache]
+    inline def mustache: typings.consolidate.consolidateStrings.mustache = "mustache".asInstanceOf[typings.consolidate.consolidateStrings.mustache]
     
-    @scala.inline
-    def nunjucks: typings.consolidate.consolidateStrings.nunjucks = "nunjucks".asInstanceOf[typings.consolidate.consolidateStrings.nunjucks]
+    inline def nunjucks: typings.consolidate.consolidateStrings.nunjucks = "nunjucks".asInstanceOf[typings.consolidate.consolidateStrings.nunjucks]
     
-    @scala.inline
-    def plates: typings.consolidate.consolidateStrings.plates = "plates".asInstanceOf[typings.consolidate.consolidateStrings.plates]
+    inline def plates: typings.consolidate.consolidateStrings.plates = "plates".asInstanceOf[typings.consolidate.consolidateStrings.plates]
     
-    @scala.inline
-    def pug: typings.consolidate.consolidateStrings.pug = "pug".asInstanceOf[typings.consolidate.consolidateStrings.pug]
+    inline def pug: typings.consolidate.consolidateStrings.pug = "pug".asInstanceOf[typings.consolidate.consolidateStrings.pug]
     
-    @scala.inline
-    def qejs: typings.consolidate.consolidateStrings.qejs = "qejs".asInstanceOf[typings.consolidate.consolidateStrings.qejs]
+    inline def qejs: typings.consolidate.consolidateStrings.qejs = "qejs".asInstanceOf[typings.consolidate.consolidateStrings.qejs]
     
-    @scala.inline
-    def ractive: typings.consolidate.consolidateStrings.ractive = "ractive".asInstanceOf[typings.consolidate.consolidateStrings.ractive]
+    inline def ractive: typings.consolidate.consolidateStrings.ractive = "ractive".asInstanceOf[typings.consolidate.consolidateStrings.ractive]
     
-    @scala.inline
-    def razor: typings.consolidate.consolidateStrings.razor = "razor".asInstanceOf[typings.consolidate.consolidateStrings.razor]
+    inline def razor: typings.consolidate.consolidateStrings.razor = "razor".asInstanceOf[typings.consolidate.consolidateStrings.razor]
     
-    @scala.inline
-    def react: typings.consolidate.consolidateStrings.react = "react".asInstanceOf[typings.consolidate.consolidateStrings.react]
+    inline def react: typings.consolidate.consolidateStrings.react = "react".asInstanceOf[typings.consolidate.consolidateStrings.react]
     
-    @scala.inline
-    def slm: typings.consolidate.consolidateStrings.slm = "slm".asInstanceOf[typings.consolidate.consolidateStrings.slm]
+    inline def slm: typings.consolidate.consolidateStrings.slm = "slm".asInstanceOf[typings.consolidate.consolidateStrings.slm]
     
-    @scala.inline
-    def squirrelly: typings.consolidate.consolidateStrings.squirrelly = "squirrelly".asInstanceOf[typings.consolidate.consolidateStrings.squirrelly]
+    inline def squirrelly: typings.consolidate.consolidateStrings.squirrelly = "squirrelly".asInstanceOf[typings.consolidate.consolidateStrings.squirrelly]
     
-    @scala.inline
-    def swig: typings.consolidate.consolidateStrings.swig = "swig".asInstanceOf[typings.consolidate.consolidateStrings.swig]
+    inline def swig: typings.consolidate.consolidateStrings.swig = "swig".asInstanceOf[typings.consolidate.consolidateStrings.swig]
     
-    @scala.inline
-    def teacup: typings.consolidate.consolidateStrings.teacup = "teacup".asInstanceOf[typings.consolidate.consolidateStrings.teacup]
+    inline def teacup: typings.consolidate.consolidateStrings.teacup = "teacup".asInstanceOf[typings.consolidate.consolidateStrings.teacup]
     
-    @scala.inline
-    def templayed: typings.consolidate.consolidateStrings.templayed = "templayed".asInstanceOf[typings.consolidate.consolidateStrings.templayed]
+    inline def templayed: typings.consolidate.consolidateStrings.templayed = "templayed".asInstanceOf[typings.consolidate.consolidateStrings.templayed]
     
-    @scala.inline
-    def toffee: typings.consolidate.consolidateStrings.toffee = "toffee".asInstanceOf[typings.consolidate.consolidateStrings.toffee]
+    inline def toffee: typings.consolidate.consolidateStrings.toffee = "toffee".asInstanceOf[typings.consolidate.consolidateStrings.toffee]
     
-    @scala.inline
-    def twig: typings.consolidate.consolidateStrings.twig = "twig".asInstanceOf[typings.consolidate.consolidateStrings.twig]
+    inline def twig: typings.consolidate.consolidateStrings.twig = "twig".asInstanceOf[typings.consolidate.consolidateStrings.twig]
     
-    @scala.inline
-    def underscore: typings.consolidate.consolidateStrings.underscore = "underscore".asInstanceOf[typings.consolidate.consolidateStrings.underscore]
+    inline def underscore: typings.consolidate.consolidateStrings.underscore = "underscore".asInstanceOf[typings.consolidate.consolidateStrings.underscore]
     
-    @scala.inline
-    def vash: typings.consolidate.consolidateStrings.vash = "vash".asInstanceOf[typings.consolidate.consolidateStrings.vash]
+    inline def vash: typings.consolidate.consolidateStrings.vash = "vash".asInstanceOf[typings.consolidate.consolidateStrings.vash]
     
-    @scala.inline
-    def velocityjs: typings.consolidate.consolidateStrings.velocityjs = "velocityjs".asInstanceOf[typings.consolidate.consolidateStrings.velocityjs]
+    inline def velocityjs: typings.consolidate.consolidateStrings.velocityjs = "velocityjs".asInstanceOf[typings.consolidate.consolidateStrings.velocityjs]
     
-    @scala.inline
-    def walrus: typings.consolidate.consolidateStrings.walrus = "walrus".asInstanceOf[typings.consolidate.consolidateStrings.walrus]
+    inline def walrus: typings.consolidate.consolidateStrings.walrus = "walrus".asInstanceOf[typings.consolidate.consolidateStrings.walrus]
     
-    @scala.inline
-    def whiskers: typings.consolidate.consolidateStrings.whiskers = "whiskers".asInstanceOf[typings.consolidate.consolidateStrings.whiskers]
+    inline def whiskers: typings.consolidate.consolidateStrings.whiskers = "whiskers".asInstanceOf[typings.consolidate.consolidateStrings.whiskers]
   }
   
   type _To = Consolidate

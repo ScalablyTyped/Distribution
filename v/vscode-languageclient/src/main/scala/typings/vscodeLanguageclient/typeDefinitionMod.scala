@@ -50,17 +50,14 @@ object typeDefinitionMod {
   }
   object TypeDefinitionMiddleware {
     
-    @scala.inline
-    def apply(): TypeDefinitionMiddleware = {
+    inline def apply(): TypeDefinitionMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeDefinitionMiddleware]
     }
     
-    @scala.inline
-    implicit class TypeDefinitionMiddlewareMutableBuilder[Self <: TypeDefinitionMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: TypeDefinitionMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideTypeDefinition(
+      inline def setProvideTypeDefinition(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -71,8 +68,7 @@ object typeDefinitionMod {
             ]
       ): Self = StObject.set(x, "provideTypeDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideTypeDefinitionUndefined: Self = StObject.set(x, "provideTypeDefinition", js.undefined)
+      inline def setProvideTypeDefinitionUndefined: Self = StObject.set(x, "provideTypeDefinition", js.undefined)
     }
   }
 }

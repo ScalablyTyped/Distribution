@@ -11,19 +11,15 @@ trait WebhookLinks extends StObject {
 }
 object WebhookLinks {
   
-  @scala.inline
-  def apply(links: js.Array[Href]): WebhookLinks = {
+  inline def apply(links: js.Array[Href]): WebhookLinks = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookLinks]
   }
   
-  @scala.inline
-  implicit class WebhookLinksMutableBuilder[Self <: WebhookLinks] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookLinks](x: Self) {
     
-    @scala.inline
-    def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
   }
 }

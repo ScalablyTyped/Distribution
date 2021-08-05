@@ -12,16 +12,13 @@ trait PluginRemoveXMLNS
 }
 object PluginRemoveXMLNS {
   
-  @scala.inline
-  def apply(removeXMLNS: Boolean | js.Object): PluginRemoveXMLNS = {
+  inline def apply(removeXMLNS: Boolean | js.Object): PluginRemoveXMLNS = {
     val __obj = js.Dynamic.literal(removeXMLNS = removeXMLNS.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveXMLNS]
   }
   
-  @scala.inline
-  implicit class PluginRemoveXMLNSMutableBuilder[Self <: PluginRemoveXMLNS] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveXMLNS](x: Self) {
     
-    @scala.inline
-    def setRemoveXMLNS(value: Boolean | js.Object): Self = StObject.set(x, "removeXMLNS", value.asInstanceOf[js.Any])
+    inline def setRemoveXMLNS(value: Boolean | js.Object): Self = StObject.set(x, "removeXMLNS", value.asInstanceOf[js.Any])
   }
 }

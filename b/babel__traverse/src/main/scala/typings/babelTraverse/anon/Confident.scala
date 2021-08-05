@@ -12,19 +12,15 @@ trait Confident extends StObject {
 }
 object Confident {
   
-  @scala.inline
-  def apply(confident: Boolean, value: js.Any): Confident = {
+  inline def apply(confident: Boolean, value: js.Any): Confident = {
     val __obj = js.Dynamic.literal(confident = confident.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Confident]
   }
   
-  @scala.inline
-  implicit class ConfidentMutableBuilder[Self <: Confident] (val x: Self) extends AnyVal {
+  extension [Self <: Confident](x: Self) {
     
-    @scala.inline
-    def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
+    inline def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

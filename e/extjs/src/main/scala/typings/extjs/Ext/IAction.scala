@@ -92,145 +92,99 @@ trait IAction
 }
 object IAction {
   
-  @scala.inline
-  def apply(): IAction = {
+  inline def apply(): IAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAction]
   }
   
-  @scala.inline
-  implicit class IActionMutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
+  extension [Self <: IAction](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setExecute(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+    inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     
-    @scala.inline
-    def setGetIconCls(value: () => Unit): Self = StObject.set(x, "getIconCls", js.Any.fromFunction0(value))
+    inline def setGetIconCls(value: () => Unit): Self = StObject.set(x, "getIconCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIconClsUndefined: Self = StObject.set(x, "getIconCls", js.undefined)
+    inline def setGetIconClsUndefined: Self = StObject.set(x, "getIconCls", js.undefined)
     
-    @scala.inline
-    def setGetText(value: () => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
+    inline def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
     
-    @scala.inline
-    def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setIconCls(value: java.lang.String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
+    inline def setIconCls(value: java.lang.String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
+    inline def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
     
-    @scala.inline
-    def setIsDisabled(value: () => Unit): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => Unit): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+    inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
-    @scala.inline
-    def setIsHidden(value: () => Unit): Self = StObject.set(x, "isHidden", js.Any.fromFunction0(value))
+    inline def setIsHidden(value: () => Unit): Self = StObject.set(x, "isHidden", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+    inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
     
-    @scala.inline
-    def setItemId(value: java.lang.String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: java.lang.String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+    inline def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
+    inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
-    @scala.inline
-    def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
+    inline def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
+    inline def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
     
-    @scala.inline
-    def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
+    inline def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
+    inline def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
     
-    @scala.inline
-    def setSetIconCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setIconCls", js.Any.fromFunction1(value))
+    inline def setSetIconCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setIconCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIconClsUndefined: Self = StObject.set(x, "setIconCls", js.undefined)
+    inline def setSetIconClsUndefined: Self = StObject.set(x, "setIconCls", js.undefined)
     
-    @scala.inline
-    def setSetText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
+    inline def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

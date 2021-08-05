@@ -16,16 +16,13 @@ trait CompassError extends StObject {
 }
 object CompassError {
   
-  @scala.inline
-  def apply(code: Double): CompassError = {
+  inline def apply(code: Double): CompassError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassError]
   }
   
-  @scala.inline
-  implicit class CompassErrorMutableBuilder[Self <: CompassError] (val x: Self) extends AnyVal {
+  extension [Self <: CompassError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

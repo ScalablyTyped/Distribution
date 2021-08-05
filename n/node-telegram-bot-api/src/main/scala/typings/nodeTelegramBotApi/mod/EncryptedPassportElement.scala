@@ -28,74 +28,52 @@ trait EncryptedPassportElement extends StObject {
 }
 object EncryptedPassportElement {
   
-  @scala.inline
-  def apply(hash: String, `type`: String): EncryptedPassportElement = {
+  inline def apply(hash: String, `type`: String): EncryptedPassportElement = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedPassportElement]
   }
   
-  @scala.inline
-  implicit class EncryptedPassportElementMutableBuilder[Self <: EncryptedPassportElement] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptedPassportElement](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[PassportFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[PassportFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: PassportFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: PassportFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setFront_side(value: PassportFile): Self = StObject.set(x, "front_side", value.asInstanceOf[js.Any])
+    inline def setFront_side(value: PassportFile): Self = StObject.set(x, "front_side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFront_sideUndefined: Self = StObject.set(x, "front_side", js.undefined)
+    inline def setFront_sideUndefined: Self = StObject.set(x, "front_side", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
+    inline def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
     
-    @scala.inline
-    def setReverse_side(value: PassportFile): Self = StObject.set(x, "reverse_side", value.asInstanceOf[js.Any])
+    inline def setReverse_side(value: PassportFile): Self = StObject.set(x, "reverse_side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse_sideUndefined: Self = StObject.set(x, "reverse_side", js.undefined)
+    inline def setReverse_sideUndefined: Self = StObject.set(x, "reverse_side", js.undefined)
     
-    @scala.inline
-    def setSelfie(value: PassportFile): Self = StObject.set(x, "selfie", value.asInstanceOf[js.Any])
+    inline def setSelfie(value: PassportFile): Self = StObject.set(x, "selfie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfieUndefined: Self = StObject.set(x, "selfie", js.undefined)
+    inline def setSelfieUndefined: Self = StObject.set(x, "selfie", js.undefined)
     
-    @scala.inline
-    def setTranslation(value: js.Array[PassportFile]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    inline def setTranslation(value: js.Array[PassportFile]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationUndefined: Self = StObject.set(x, "translation", js.undefined)
+    inline def setTranslationUndefined: Self = StObject.set(x, "translation", js.undefined)
     
-    @scala.inline
-    def setTranslationVarargs(value: PassportFile*): Self = StObject.set(x, "translation", js.Array(value :_*))
+    inline def setTranslationVarargs(value: PassportFile*): Self = StObject.set(x, "translation", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

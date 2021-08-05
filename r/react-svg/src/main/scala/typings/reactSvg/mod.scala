@@ -30,13 +30,11 @@ object mod {
     @JSImport("react-svg", "ReactSVG.defaultProps")
     @js.native
     def defaultProps: AfterInjection = js.native
-    @scala.inline
-    def defaultProps_=(x: AfterInjection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AfterInjection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-svg", "ReactSVG.propTypes")
     @js.native
     def propTypes: BeforeInjection = js.native
-    @scala.inline
-    def propTypes_=(x: BeforeInjection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: BeforeInjection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DescribeDeploymentJobRequest extends StObject {
 }
 object DescribeDeploymentJobRequest {
   
-  @scala.inline
-  def apply(job: Arn): DescribeDeploymentJobRequest = {
+  inline def apply(job: Arn): DescribeDeploymentJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeploymentJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDeploymentJobRequestMutableBuilder[Self <: DescribeDeploymentJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeploymentJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

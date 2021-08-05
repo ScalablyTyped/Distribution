@@ -11,16 +11,13 @@ trait PickImplempty extends StObject {
 }
 object PickImplempty {
   
-  @scala.inline
-  def apply(empty: String): PickImplempty = {
+  inline def apply(empty: String): PickImplempty = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplempty]
   }
   
-  @scala.inline
-  implicit class PickImplemptyMutableBuilder[Self <: PickImplempty] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplempty](x: Self) {
     
-    @scala.inline
-    def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
   }
 }

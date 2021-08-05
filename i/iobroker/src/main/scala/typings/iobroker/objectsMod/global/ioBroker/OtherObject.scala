@@ -22,8 +22,7 @@ trait OtherObject
 }
 object OtherObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _id: String,
     common: OtherCommon,
     native: Record[String, js.Any],
@@ -34,13 +33,10 @@ object OtherObject {
     __obj.asInstanceOf[OtherObject]
   }
   
-  @scala.inline
-  implicit class OtherObjectMutableBuilder[Self <: OtherObject] (val x: Self) extends AnyVal {
+  extension [Self <: OtherObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: OtherCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: OtherCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: adapter | config | info | chart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: adapter | config | info | chart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

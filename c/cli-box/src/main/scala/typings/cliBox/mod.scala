@@ -58,23 +58,18 @@ object mod extends Shortcut {
   }
   object Box {
     
-    @scala.inline
-    def apply(options: Fullscreen, settings: Height, stringify: () => String): Box = {
+    inline def apply(options: Fullscreen, settings: Height, stringify: () => String): Box = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stringify = js.Any.fromFunction0(stringify))
       __obj.asInstanceOf[Box]
     }
     
-    @scala.inline
-    implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+    extension [Self <: Box](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Fullscreen): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Fullscreen): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: Height): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Height): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringify(value: () => String): Self = StObject.set(x, "stringify", js.Any.fromFunction0(value))
+      inline def setStringify(value: () => String): Self = StObject.set(x, "stringify", js.Any.fromFunction0(value))
     }
   }
   
@@ -125,8 +120,7 @@ object mod extends Shortcut {
   }
   object Marks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       b: String,
       e: String,
       n: String,
@@ -142,35 +136,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Marks]
     }
     
-    @scala.inline
-    implicit class MarksMutableBuilder[Self <: Marks] (val x: Self) extends AnyVal {
+    extension [Self <: Marks](x: Self) {
       
-      @scala.inline
-      def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNe_(value: String): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
+      inline def setNe_(value: String): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNw(value: String): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
+      inline def setNw(value: String): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
+      inline def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSw(value: String): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
+      inline def setSw(value: String): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,32 +172,23 @@ object mod extends Shortcut {
   trait MarksKeys extends StObject
   object MarksKeys {
     
-    @scala.inline
-    def b: typings.cliBox.cliBoxStrings.b = "b".asInstanceOf[typings.cliBox.cliBoxStrings.b]
+    inline def b: typings.cliBox.cliBoxStrings.b = "b".asInstanceOf[typings.cliBox.cliBoxStrings.b]
     
-    @scala.inline
-    def e: typings.cliBox.cliBoxStrings.e = "e".asInstanceOf[typings.cliBox.cliBoxStrings.e]
+    inline def e: typings.cliBox.cliBoxStrings.e = "e".asInstanceOf[typings.cliBox.cliBoxStrings.e]
     
-    @scala.inline
-    def n: typings.cliBox.cliBoxStrings.n = "n".asInstanceOf[typings.cliBox.cliBoxStrings.n]
+    inline def n: typings.cliBox.cliBoxStrings.n = "n".asInstanceOf[typings.cliBox.cliBoxStrings.n]
     
-    @scala.inline
-    def ne: typings.cliBox.cliBoxStrings.ne = "ne".asInstanceOf[typings.cliBox.cliBoxStrings.ne]
+    inline def ne: typings.cliBox.cliBoxStrings.ne = "ne".asInstanceOf[typings.cliBox.cliBoxStrings.ne]
     
-    @scala.inline
-    def nw: typings.cliBox.cliBoxStrings.nw = "nw".asInstanceOf[typings.cliBox.cliBoxStrings.nw]
+    inline def nw: typings.cliBox.cliBoxStrings.nw = "nw".asInstanceOf[typings.cliBox.cliBoxStrings.nw]
     
-    @scala.inline
-    def s: typings.cliBox.cliBoxStrings.s = "s".asInstanceOf[typings.cliBox.cliBoxStrings.s]
+    inline def s: typings.cliBox.cliBoxStrings.s = "s".asInstanceOf[typings.cliBox.cliBoxStrings.s]
     
-    @scala.inline
-    def se: typings.cliBox.cliBoxStrings.se = "se".asInstanceOf[typings.cliBox.cliBoxStrings.se]
+    inline def se: typings.cliBox.cliBoxStrings.se = "se".asInstanceOf[typings.cliBox.cliBoxStrings.se]
     
-    @scala.inline
-    def sw: typings.cliBox.cliBoxStrings.sw = "sw".asInstanceOf[typings.cliBox.cliBoxStrings.sw]
+    inline def sw: typings.cliBox.cliBoxStrings.sw = "sw".asInstanceOf[typings.cliBox.cliBoxStrings.sw]
     
-    @scala.inline
-    def w: typings.cliBox.cliBoxStrings.w = "w".asInstanceOf[typings.cliBox.cliBoxStrings.w]
+    inline def w: typings.cliBox.cliBoxStrings.w = "w".asInstanceOf[typings.cliBox.cliBoxStrings.w]
   }
   
   trait Options extends StObject {
@@ -234,56 +209,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+      inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMarks(value: PartialMarks): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      inline def setMarks(value: PartialMarks): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+      inline def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+      inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+      inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -301,44 +260,32 @@ object mod extends Shortcut {
   }
   object Text {
     
-    @scala.inline
-    def apply(): Text = {
+    inline def apply(): Text = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setAutoEOL(value: Boolean): Self = StObject.set(x, "autoEOL", value.asInstanceOf[js.Any])
+      inline def setAutoEOL(value: Boolean): Self = StObject.set(x, "autoEOL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoEOLUndefined: Self = StObject.set(x, "autoEOL", js.undefined)
+      inline def setAutoEOLUndefined: Self = StObject.set(x, "autoEOL", js.undefined)
       
-      @scala.inline
-      def setHAlign(value: left | middle | right): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: left | middle | right): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
-      @scala.inline
-      def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVAlign(value: top | center | bottom): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: top | center | bottom): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
+      inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
     }
   }
   

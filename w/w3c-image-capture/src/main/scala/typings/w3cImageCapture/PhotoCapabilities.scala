@@ -16,8 +16,7 @@ trait PhotoCapabilities extends StObject {
 }
 object PhotoCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fillLightMode: js.Array[FillLightMode],
     imageHeight: MediaSettingsRange,
     imageWidth: MediaSettingsRange,
@@ -27,22 +26,16 @@ object PhotoCapabilities {
     __obj.asInstanceOf[PhotoCapabilities]
   }
   
-  @scala.inline
-  implicit class PhotoCapabilitiesMutableBuilder[Self <: PhotoCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoCapabilities](x: Self) {
     
-    @scala.inline
-    def setFillLightMode(value: js.Array[FillLightMode]): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
+    inline def setFillLightMode(value: js.Array[FillLightMode]): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillLightModeVarargs(value: FillLightMode*): Self = StObject.set(x, "fillLightMode", js.Array(value :_*))
+    inline def setFillLightModeVarargs(value: FillLightMode*): Self = StObject.set(x, "fillLightMode", js.Array(value :_*))
     
-    @scala.inline
-    def setImageHeight(value: MediaSettingsRange): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+    inline def setImageHeight(value: MediaSettingsRange): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageWidth(value: MediaSettingsRange): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+    inline def setImageWidth(value: MediaSettingsRange): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedEyeReduction(value: RedEyeReduction): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
+    inline def setRedEyeReduction(value: RedEyeReduction): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
   }
 }

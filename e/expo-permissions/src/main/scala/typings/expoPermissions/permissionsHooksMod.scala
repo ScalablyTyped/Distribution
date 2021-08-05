@@ -12,8 +12,7 @@ object permissionsHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def usePermissions(`type`: js.Array[PermissionType]): js.Tuple3[
+  inline def usePermissions(`type`: js.Array[PermissionType]): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -22,8 +21,7 @@ object permissionsHooksMod {
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
   ]]
-  @scala.inline
-  def usePermissions(`type`: js.Array[PermissionType], options: PermissionsOptions): js.Tuple3[
+  inline def usePermissions(`type`: js.Array[PermissionType], options: PermissionsOptions): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -32,8 +30,7 @@ object permissionsHooksMod {
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
   ]]
-  @scala.inline
-  def usePermissions(`type`: PermissionType): js.Tuple3[
+  inline def usePermissions(`type`: PermissionType): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -42,8 +39,7 @@ object permissionsHooksMod {
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
   ]]
-  @scala.inline
-  def usePermissions(`type`: PermissionType, options: PermissionsOptions): js.Tuple3[
+  inline def usePermissions(`type`: PermissionType, options: PermissionsOptions): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -63,26 +59,20 @@ object permissionsHooksMod {
   }
   object PermissionsOptions {
     
-    @scala.inline
-    def apply(): PermissionsOptions = {
+    inline def apply(): PermissionsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PermissionsOptions]
     }
     
-    @scala.inline
-    implicit class PermissionsOptionsMutableBuilder[Self <: PermissionsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionsOptions](x: Self) {
       
-      @scala.inline
-      def setAsk(value: Boolean): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
+      inline def setAsk(value: Boolean): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAskUndefined: Self = StObject.set(x, "ask", js.undefined)
+      inline def setAskUndefined: Self = StObject.set(x, "ask", js.undefined)
       
-      @scala.inline
-      def setGet(value: Boolean): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: Boolean): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     }
   }
 }

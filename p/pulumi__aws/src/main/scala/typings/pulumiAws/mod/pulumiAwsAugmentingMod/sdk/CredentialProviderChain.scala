@@ -24,6 +24,5 @@ object CredentialProviderChain {
   @JSImport("@pulumi/aws", "@pulumi/aws.sdk.CredentialProviderChain.defaultProviders")
   @js.native
   def defaultProviders: js.Array[provider] = js.native
-  @scala.inline
-  def defaultProviders_=(x: js.Array[provider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProviders")(x.asInstanceOf[js.Any])
+  inline def defaultProviders_=(x: js.Array[provider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProviders")(x.asInstanceOf[js.Any])
 }

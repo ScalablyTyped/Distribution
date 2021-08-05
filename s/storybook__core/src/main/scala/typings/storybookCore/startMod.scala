@@ -13,8 +13,6 @@ object startMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(render: RenderStoryFunction): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(render.asInstanceOf[js.Any]).asInstanceOf[Channel]
-  @scala.inline
-  def default(render: RenderStoryFunction, hasDecorateStory: DecorateStory): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(render.asInstanceOf[js.Any], hasDecorateStory.asInstanceOf[js.Any])).asInstanceOf[Channel]
+  inline def default(render: RenderStoryFunction): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(render.asInstanceOf[js.Any]).asInstanceOf[Channel]
+  inline def default(render: RenderStoryFunction, hasDecorateStory: DecorateStory): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(render.asInstanceOf[js.Any], hasDecorateStory.asInstanceOf[js.Any])).asInstanceOf[Channel]
 }

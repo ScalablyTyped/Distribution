@@ -19,23 +19,18 @@ object typesVaultNotificationConfigMod {
   }
   object UnmarshalledVaultNotificationConfig {
     
-    @scala.inline
-    def apply(): UnmarshalledVaultNotificationConfig = {
+    inline def apply(): UnmarshalledVaultNotificationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledVaultNotificationConfig]
     }
     
-    @scala.inline
-    implicit class UnmarshalledVaultNotificationConfigMutableBuilder[Self <: UnmarshalledVaultNotificationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledVaultNotificationConfig](x: Self) {
       
-      @scala.inline
-      def setEvents(value: js.Array[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
     }
   }
   
@@ -53,29 +48,22 @@ object typesVaultNotificationConfigMod {
   }
   object VaultNotificationConfig {
     
-    @scala.inline
-    def apply(): VaultNotificationConfig = {
+    inline def apply(): VaultNotificationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultNotificationConfig]
     }
     
-    @scala.inline
-    implicit class VaultNotificationConfigMutableBuilder[Self <: VaultNotificationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: VaultNotificationConfig](x: Self) {
       
-      @scala.inline
-      def setEvents(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
       
-      @scala.inline
-      def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
+      inline def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSNSTopicUndefined: Self = StObject.set(x, "SNSTopic", js.undefined)
+      inline def setSNSTopicUndefined: Self = StObject.set(x, "SNSTopic", js.undefined)
     }
   }
 }

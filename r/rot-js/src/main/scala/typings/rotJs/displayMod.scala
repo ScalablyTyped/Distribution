@@ -33,20 +33,17 @@ object displayMod {
     @JSImport("rot-js/lib/display/display", "default.Hex")
     @js.native
     def Hex: Instantiable0[typings.rotJs.hexMod.default] = js.native
-    @scala.inline
-    def Hex_=(x: Instantiable0[typings.rotJs.hexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hex")(x.asInstanceOf[js.Any])
+    inline def Hex_=(x: Instantiable0[typings.rotJs.hexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hex")(x.asInstanceOf[js.Any])
     
     @JSImport("rot-js/lib/display/display", "default.Rect")
     @js.native
     def Rect: TypeofRect = js.native
-    @scala.inline
-    def Rect_=(x: TypeofRect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rect")(x.asInstanceOf[js.Any])
+    inline def Rect_=(x: TypeofRect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rect")(x.asInstanceOf[js.Any])
     
     @JSImport("rot-js/lib/display/display", "default.Term")
     @js.native
     def Term: Instantiable0[typings.rotJs.termMod.default] = js.native
-    @scala.inline
-    def Term_=(x: Instantiable0[typings.rotJs.termMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Term")(x.asInstanceOf[js.Any])
+    inline def Term_=(x: Instantiable0[typings.rotJs.termMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Term")(x.asInstanceOf[js.Any])
     
     @JSImport("rot-js/lib/display/display", "default.Tile")
     @js.native
@@ -55,11 +52,9 @@ object displayMod {
     @JSImport("rot-js/lib/display/display", "default.TileGL")
     @js.native
     def TileGL: TypeofTileGL = js.native
-    @scala.inline
-    def TileGL_=(x: TypeofTileGL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TileGL")(x.asInstanceOf[js.Any])
+    inline def TileGL_=(x: TypeofTileGL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TileGL")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Tile_=(x: Instantiable0[typings.rotJs.tileMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tile")(x.asInstanceOf[js.Any])
+    inline def Tile_=(x: Instantiable0[typings.rotJs.tileMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tile")(x.asInstanceOf[js.Any])
   }
   
   @js.native

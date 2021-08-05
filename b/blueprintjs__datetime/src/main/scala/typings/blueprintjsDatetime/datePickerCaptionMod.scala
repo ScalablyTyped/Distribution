@@ -24,17 +24,17 @@ object datePickerCaptionMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDatePickerCaption(): Unit = js.native
     
-    var containerElement: js.Any = js.native
+    /* private */ var containerElement: js.Any = js.native
     
-    var dateChangeHandler: js.Any = js.native
+    /* private */ var dateChangeHandler: js.Any = js.native
     
-    var displayedMonthText: js.Any = js.native
+    /* private */ var displayedMonthText: js.Any = js.native
     
-    var handleMonthSelectChange: js.Any = js.native
+    /* private */ var handleMonthSelectChange: js.Any = js.native
     
-    var handleYearSelectChange: js.Any = js.native
+    /* private */ var handleYearSelectChange: js.Any = js.native
     
-    var positionArrows: js.Any = js.native
+    /* private */ var positionArrows: js.Any = js.native
   }
   
   trait IDatePickerCaptionProps
@@ -56,8 +56,7 @@ object datePickerCaptionMod {
   }
   object IDatePickerCaptionProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       classNames: ClassNames,
       date: Date,
       locale: String,
@@ -69,38 +68,27 @@ object datePickerCaptionMod {
       __obj.asInstanceOf[IDatePickerCaptionProps]
     }
     
-    @scala.inline
-    implicit class IDatePickerCaptionPropsMutableBuilder[Self <: IDatePickerCaptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerCaptionProps](x: Self) {
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDateChange(value: /* date */ Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+      inline def setOnDateChange(value: /* date */ Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDateChangeUndefined: Self = StObject.set(x, "onDateChange", js.undefined)
+      inline def setOnDateChangeUndefined: Self = StObject.set(x, "onDateChange", js.undefined)
       
-      @scala.inline
-      def setOnMonthChange(value: /* month */ Double => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
+      inline def setOnMonthChange(value: /* month */ Double => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
+      inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
       
-      @scala.inline
-      def setOnYearChange(value: /* year */ Double => Unit): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
+      inline def setOnYearChange(value: /* year */ Double => Unit): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
+      inline def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
       
-      @scala.inline
-      def setReverseMonthAndYearMenus(value: Boolean): Self = StObject.set(x, "reverseMonthAndYearMenus", value.asInstanceOf[js.Any])
+      inline def setReverseMonthAndYearMenus(value: Boolean): Self = StObject.set(x, "reverseMonthAndYearMenus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseMonthAndYearMenusUndefined: Self = StObject.set(x, "reverseMonthAndYearMenus", js.undefined)
+      inline def setReverseMonthAndYearMenusUndefined: Self = StObject.set(x, "reverseMonthAndYearMenus", js.undefined)
     }
   }
   
@@ -110,17 +98,14 @@ object datePickerCaptionMod {
   }
   object IDatePickerCaptionState {
     
-    @scala.inline
-    def apply(monthRightOffset: Double): IDatePickerCaptionState = {
+    inline def apply(monthRightOffset: Double): IDatePickerCaptionState = {
       val __obj = js.Dynamic.literal(monthRightOffset = monthRightOffset.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDatePickerCaptionState]
     }
     
-    @scala.inline
-    implicit class IDatePickerCaptionStateMutableBuilder[Self <: IDatePickerCaptionState] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerCaptionState](x: Self) {
       
-      @scala.inline
-      def setMonthRightOffset(value: Double): Self = StObject.set(x, "monthRightOffset", value.asInstanceOf[js.Any])
+      inline def setMonthRightOffset(value: Double): Self = StObject.set(x, "monthRightOffset", value.asInstanceOf[js.Any])
     }
   }
 }

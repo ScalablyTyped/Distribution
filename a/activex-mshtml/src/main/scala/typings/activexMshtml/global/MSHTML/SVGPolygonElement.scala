@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGPolygonElement")
 @js.native
-class SVGPolygonElement protected ()
+/* private */ class SVGPolygonElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGPolygonElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGPolygonElement_typekey")
   var MSHTMLDotSVGPolygonElement_typekey: typings.activexMshtml.MSHTML.SVGPolygonElement = js.native
   

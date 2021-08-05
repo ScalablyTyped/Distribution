@@ -19,20 +19,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String): Id = {
+    inline def apply(id: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "list")
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceType(value: list): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: list): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,23 +44,18 @@ object anon {
   }
   object OwnerScreenName {
     
-    @scala.inline
-    def apply(ownerScreenName: String, slug: String): OwnerScreenName = {
+    inline def apply(ownerScreenName: String, slug: String): OwnerScreenName = {
       val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = "list")
       __obj.asInstanceOf[OwnerScreenName]
     }
     
-    @scala.inline
-    implicit class OwnerScreenNameMutableBuilder[Self <: OwnerScreenName] (val x: Self) extends AnyVal {
+    extension [Self <: OwnerScreenName](x: Self) {
       
-      @scala.inline
-      def setOwnerScreenName(value: String): Self = StObject.set(x, "ownerScreenName", value.asInstanceOf[js.Any])
+      inline def setOwnerScreenName(value: String): Self = StObject.set(x, "ownerScreenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceType(value: list): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: list): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +69,16 @@ object anon {
   }
   object ScreenName {
     
-    @scala.inline
-    def apply(screenName: String): ScreenName = {
+    inline def apply(screenName: String): ScreenName = {
       val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "profile")
       __obj.asInstanceOf[ScreenName]
     }
     
-    @scala.inline
-    implicit class ScreenNameMutableBuilder[Self <: ScreenName] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenName](x: Self) {
       
-      @scala.inline
-      def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+      inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceType(value: profile): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: profile): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,20 +92,16 @@ object anon {
   }
   object ScreenNameSourceType {
     
-    @scala.inline
-    def apply(screenName: String): ScreenNameSourceType = {
+    inline def apply(screenName: String): ScreenNameSourceType = {
       val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "likes")
       __obj.asInstanceOf[ScreenNameSourceType]
     }
     
-    @scala.inline
-    implicit class ScreenNameSourceTypeMutableBuilder[Self <: ScreenNameSourceType] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenNameSourceType](x: Self) {
       
-      @scala.inline
-      def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+      inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceType(value: likes): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: likes): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,20 +115,16 @@ object anon {
   }
   object SourceType {
     
-    @scala.inline
-    def apply(userId: String): SourceType = {
+    inline def apply(userId: String): SourceType = {
       val __obj = js.Dynamic.literal(sourceType = "profile", userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceType]
     }
     
-    @scala.inline
-    implicit class SourceTypeMutableBuilder[Self <: SourceType] (val x: Self) extends AnyVal {
+    extension [Self <: SourceType](x: Self) {
       
-      @scala.inline
-      def setSourceType(value: profile): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: profile): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,20 +138,16 @@ object anon {
   }
   object UserId {
     
-    @scala.inline
-    def apply(userId: String): UserId = {
+    inline def apply(userId: String): UserId = {
       val __obj = js.Dynamic.literal(sourceType = "likes", userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserId]
     }
     
-    @scala.inline
-    implicit class UserIdMutableBuilder[Self <: UserId] (val x: Self) extends AnyVal {
+    extension [Self <: UserId](x: Self) {
       
-      @scala.inline
-      def setSourceType(value: likes): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: likes): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait UpgradeAppliedSchemaResponse extends StObject {
 }
 object UpgradeAppliedSchemaResponse {
   
-  @scala.inline
-  def apply(): UpgradeAppliedSchemaResponse = {
+  inline def apply(): UpgradeAppliedSchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeAppliedSchemaResponse]
   }
   
-  @scala.inline
-  implicit class UpgradeAppliedSchemaResponseMutableBuilder[Self <: UpgradeAppliedSchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeAppliedSchemaResponse](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
+    inline def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
     
-    @scala.inline
-    def setUpgradedSchemaArn(value: Arn): Self = StObject.set(x, "UpgradedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setUpgradedSchemaArn(value: Arn): Self = StObject.set(x, "UpgradedSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradedSchemaArnUndefined: Self = StObject.set(x, "UpgradedSchemaArn", js.undefined)
+    inline def setUpgradedSchemaArnUndefined: Self = StObject.set(x, "UpgradedSchemaArn", js.undefined)
   }
 }

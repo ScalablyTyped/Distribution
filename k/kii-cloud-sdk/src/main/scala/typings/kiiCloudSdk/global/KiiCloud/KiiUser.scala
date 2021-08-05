@@ -69,10 +69,8 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def authenticate(userIdentifier: String, password: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(userIdentifier.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def authenticate(userIdentifier: String, password: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(userIdentifier.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticate(userIdentifier: String, password: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(userIdentifier.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticate(userIdentifier: String, password: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(userIdentifier.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Asynchronously authenticates a user with the server using specified access token.
@@ -139,14 +137,10 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def authenticateWithToken(accessToken: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def authenticateWithToken(accessToken: String, callbacks: Unit, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def authenticateWithToken(accessToken: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def authenticateWithToken(accessToken: String, callbacks: `32`, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticateWithToken(accessToken: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticateWithToken(accessToken: String, callbacks: Unit, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticateWithToken(accessToken: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def authenticateWithToken(accessToken: String, callbacks: `32`, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateWithToken")(accessToken.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], expiresAt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Reset password with the PIN code in receipt SMS
@@ -196,14 +190,10 @@ object KiiUser {
     *         });
     */
   /* static member */
-  @scala.inline
-  def completeResetPassword(userIdentifier: String, pinCode: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: Unit, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def completeResetPassword(userIdentifier: String, pinCode: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: Unit, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("completeResetPassword")(userIdentifier.asInstanceOf[js.Any], pinCode.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Find registered KiiUser with the email.<br>
@@ -253,10 +243,8 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def findUserByEmail(email: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def findUserByEmail(email: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def findUserByEmail(email: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def findUserByEmail(email: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Find registered KiiUser with the phone.<br>
@@ -306,10 +294,8 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def findUserByPhone(phone: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByPhone")(phone.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def findUserByPhone(phone: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByPhone")(phone.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def findUserByPhone(phone: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByPhone")(phone.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def findUserByPhone(phone: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByPhone")(phone.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Find registered KiiUser with the user name.<br>
@@ -358,10 +344,8 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def findUserByUsername(username: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def findUserByUsername(username: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def findUserByUsername(username: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def findUserByUsername(username: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * The currently authenticated user
@@ -370,8 +354,7 @@ object KiiUser {
     *         var user = KiiUser.getCurrentUser();
     */
   /* static member */
-  @scala.inline
-  def getCurrentUser(): typings.kiiCloudSdk.KiiCloud.KiiUser = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUser")().asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def getCurrentUser(): typings.kiiCloudSdk.KiiCloud.KiiUser = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUser")().asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Logs the currently logged-in user out of the KiiSDK
@@ -380,8 +363,7 @@ object KiiUser {
     *         KiiUser.logOut();
     */
   /* static member */
-  @scala.inline
-  def logOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logOut")().asInstanceOf[Unit]
+  inline def logOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logOut")().asInstanceOf[Unit]
   
   /**
     * Checks to see if there is a user authenticated with the SDK
@@ -392,8 +374,7 @@ object KiiUser {
     *         }
     */
   /* static member */
-  @scala.inline
-  def loggedIn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loggedIn")().asInstanceOf[Boolean]
+  inline def loggedIn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loggedIn")().asInstanceOf[Boolean]
   
   /**
     * Registers a user as pseudo user with the server
@@ -437,14 +418,10 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def registerAsPseudoUser(): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")().asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def registerAsPseudoUser(callbacks: Unit, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def registerAsPseudoUser(callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
-  @scala.inline
-  def registerAsPseudoUser(callbacks: `32`, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def registerAsPseudoUser(): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")().asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def registerAsPseudoUser(callbacks: Unit, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def registerAsPseudoUser(callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  inline def registerAsPseudoUser(callbacks: `32`, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAsPseudoUser")(callbacks.asInstanceOf[js.Any], userFields.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
   /**
     * Reset a user's password on the server
@@ -489,10 +466,8 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def resetPassword(userIdentifier: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(userIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def resetPassword(userIdentifier: String, callbacks: `37`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(userIdentifier.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def resetPassword(userIdentifier: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(userIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def resetPassword(userIdentifier: String, callbacks: `37`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(userIdentifier.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Reset the password of user <br>
@@ -546,10 +521,8 @@ object KiiUser {
     *     );
     */
   /* static member */
-  @scala.inline
-  def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPasswordWithNotificationMethod")(userIdentifier.asInstanceOf[js.Any], notificationMethod.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String, callbacks: `37`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPasswordWithNotificationMethod")(userIdentifier.asInstanceOf[js.Any], notificationMethod.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPasswordWithNotificationMethod")(userIdentifier.asInstanceOf[js.Any], notificationMethod.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String, callbacks: `37`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPasswordWithNotificationMethod")(userIdentifier.asInstanceOf[js.Any], notificationMethod.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -573,8 +546,7 @@ object KiiUser {
     *     var user = KiiUser.userWithCredentials("johndoe@example.com", "+874012345678", "johndoe", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithCredentials(emailAddress: String, phoneNumber: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithCredentials")(emailAddress.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithCredentials(emailAddress: String, phoneNumber: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithCredentials")(emailAddress.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -594,8 +566,7 @@ object KiiUser {
     *     var user = KiiUser.userWithEmailAddress("johndoe@example.com", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithEmailAddress")(emailAddress.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithEmailAddress")(emailAddress.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -617,8 +588,7 @@ object KiiUser {
     *     var user = KiiUser.userWithEmailAddressAndPhoneNumber("johndoe@example.com", "+874012345678", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithEmailAddressAndPhoneNumber(emailAddress: String, phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithEmailAddressAndPhoneNumber")(emailAddress.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithEmailAddressAndPhoneNumber(emailAddress: String, phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithEmailAddressAndPhoneNumber")(emailAddress.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -640,8 +610,7 @@ object KiiUser {
     *     var user = KiiUser.userWithEmailAddressAndUsername("johndoe@example.com", "johndoe", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithEmailAddressAndUsername(emailAddress: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithEmailAddressAndUsername")(emailAddress.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithEmailAddressAndUsername(emailAddress: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithEmailAddressAndUsername")(emailAddress.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Instantiate KiiUser that refers to existing user which has specified ID.
@@ -660,8 +629,7 @@ object KiiUser {
     *     var user = new KiiUser.userWithID("__USER_ID__");
     */
   /* static member */
-  @scala.inline
-  def userWithID(userID: String): typings.kiiCloudSdk.KiiCloud.KiiUser = ^.asInstanceOf[js.Dynamic].applyDynamic("userWithID")(userID.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithID(userID: String): typings.kiiCloudSdk.KiiCloud.KiiUser = ^.asInstanceOf[js.Dynamic].applyDynamic("userWithID")(userID.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -681,8 +649,7 @@ object KiiUser {
     *     var user = KiiUser.userWithPhoneNumber("+874012345678", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithPhoneNumber")(phoneNumber.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithPhoneNumber")(phoneNumber.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -704,8 +671,7 @@ object KiiUser {
     *     var user = KiiUser.userWithPhoneNumberAndUsername("+874012345678", "johndoe", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithPhoneNumberAndUsername(phoneNumber: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithPhoneNumberAndUsername")(phoneNumber.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithPhoneNumberAndUsername(phoneNumber: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithPhoneNumberAndUsername")(phoneNumber.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Generate a new KiiUser based on a given URI
@@ -720,8 +686,7 @@ object KiiUser {
     *     var user = new KiiUser.userWithURI("kiicloud://myuri");
     */
   /* static member */
-  @scala.inline
-  def userWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiUser = ^.asInstanceOf[js.Dynamic].applyDynamic("userWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiUser = ^.asInstanceOf[js.Dynamic].applyDynamic("userWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
   
   /**
     * Create a user object to prepare for registration with credentials pre-filled
@@ -741,6 +706,5 @@ object KiiUser {
     *     var user = KiiUser.userWithUsername("myusername", "mypassword");
     */
   /* static member */
-  @scala.inline
-  def userWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithUsername")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
+  inline def userWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = (^.asInstanceOf[js.Dynamic].applyDynamic("userWithUsername")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUser]
 }

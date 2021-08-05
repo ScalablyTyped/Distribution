@@ -24,10 +24,8 @@ object TestDataGenerator {
     * @param withAlpha A boolean indicating if the color should have an alpha value or not. if set to true, a rgba value will be returned with an alpha value of 0.5.
     * @returns A css color string, hex or rgba.
     */
-  @scala.inline
-  def getColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")().asInstanceOf[String]
-  @scala.inline
-  def getColor(withAlpha: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(withAlpha.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")().asInstanceOf[String]
+  inline def getColor(withAlpha: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(withAlpha.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Generates random Location objects.
@@ -35,14 +33,10 @@ object TestDataGenerator {
     * @param bounds The bounding box in which all the locations should fall within.
     * @returns One or more random Locations.
     */
-  @scala.inline
-  def getLocations(): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")().asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getLocations(num: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getLocations(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getLocations(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getLocations(): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")().asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getLocations(num: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getLocations(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getLocations(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocations")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
   
   /**
     * Generates random polygons.
@@ -54,8 +48,7 @@ object TestDataGenerator {
     * @param addHole A boolean indicating if the generated polygon should have a hole or not. Note that this will double the number of Location objects that are in the Polygon. Default: false
     * @returns One or more random polygons.
     */
-  @scala.inline
-  def getPolygons(
+  inline def getPolygons(
     num: js.UndefOr[Double],
     bounds: js.UndefOr[typings.bingmaps.Microsoft.Maps.LocationRect],
     size: js.UndefOr[Double],
@@ -73,117 +66,85 @@ object TestDataGenerator {
     * @param options The options to use for rendering the polylines. Default is random.
     * @returns One or more random Polylines.
     */
-  @scala.inline
-  def getPolylines(): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")().asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Double, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Double, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Unit, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: Unit, size: Unit, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")().asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Double, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Double, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Unit, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: Unit, size: Unit, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Unit,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Unit,
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Unit,
     scaleFactor: Unit,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Double, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Double, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Unit, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: Unit, size: Unit, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(num: Unit, bounds: Unit, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: Unit, size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: Unit, size: Double, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: Unit, size: Double, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: Unit, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: Unit, size: Unit, scaleFactor: Double, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: Unit, size: Unit, scaleFactor: Unit, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(
     num: Unit,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(
     num: Unit,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Unit,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Unit, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
+  inline def getPolylines(
     num: Unit,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Unit,
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolylines")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline]]
-  @scala.inline
-  def getPolylines(
+  inline def getPolylines(
     num: Unit,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Unit,
@@ -198,20 +159,12 @@ object TestDataGenerator {
     * @param options The options to use for rendering the pushpins. Default is random.
     * @returns One or more random Pushpins.
     */
-  @scala.inline
-  def getPushpins(): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")().asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Double): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Double, bounds: Unit, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Unit, bounds: Unit, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
-  @scala.inline
-  def getPushpins(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")().asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Double): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Double, bounds: Unit, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Unit, bounds: Unit, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
+  inline def getPushpins(num: Unit, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPushpins")(num.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]]
 }

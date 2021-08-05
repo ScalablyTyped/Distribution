@@ -38,52 +38,37 @@ trait CustomMessageActivity extends StObject {
 }
 object CustomMessageActivity {
   
-  @scala.inline
-  def apply(): CustomMessageActivity = {
+  inline def apply(): CustomMessageActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomMessageActivity]
   }
   
-  @scala.inline
-  implicit class CustomMessageActivityMutableBuilder[Self <: CustomMessageActivity] (val x: Self) extends AnyVal {
+  extension [Self <: CustomMessageActivity](x: Self) {
     
-    @scala.inline
-    def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
+    inline def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryUriUndefined: Self = StObject.set(x, "DeliveryUri", js.undefined)
+    inline def setDeliveryUriUndefined: Self = StObject.set(x, "DeliveryUri", js.undefined)
     
-    @scala.inline
-    def setEndpointTypes(value: ListOfEndpointTypesElement): Self = StObject.set(x, "EndpointTypes", value.asInstanceOf[js.Any])
+    inline def setEndpointTypes(value: ListOfEndpointTypesElement): Self = StObject.set(x, "EndpointTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
+    inline def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
     
-    @scala.inline
-    def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
+    inline def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageConfig(value: JourneyCustomMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
+    inline def setMessageConfig(value: JourneyCustomMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageConfigUndefined: Self = StObject.set(x, "MessageConfig", js.undefined)
+    inline def setMessageConfigUndefined: Self = StObject.set(x, "MessageConfig", js.undefined)
     
-    @scala.inline
-    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
+    inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
+    inline def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
-    @scala.inline
-    def setTemplateVersion(value: string): Self = StObject.set(x, "TemplateVersion", value.asInstanceOf[js.Any])
+    inline def setTemplateVersion(value: string): Self = StObject.set(x, "TemplateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionUndefined: Self = StObject.set(x, "TemplateVersion", js.undefined)
+    inline def setTemplateVersionUndefined: Self = StObject.set(x, "TemplateVersion", js.undefined)
   }
 }

@@ -28,34 +28,25 @@ trait SchemaListVendorsResponse extends StObject {
 }
 object SchemaListVendorsResponse {
   
-  @scala.inline
-  def apply(): SchemaListVendorsResponse = {
+  inline def apply(): SchemaListVendorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListVendorsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListVendorsResponseMutableBuilder[Self <: SchemaListVendorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListVendorsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
-    @scala.inline
-    def setVendors(value: js.Array[SchemaCompany]): Self = StObject.set(x, "vendors", value.asInstanceOf[js.Any])
+    inline def setVendors(value: js.Array[SchemaCompany]): Self = StObject.set(x, "vendors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorsUndefined: Self = StObject.set(x, "vendors", js.undefined)
+    inline def setVendorsUndefined: Self = StObject.set(x, "vendors", js.undefined)
     
-    @scala.inline
-    def setVendorsVarargs(value: SchemaCompany*): Self = StObject.set(x, "vendors", js.Array(value :_*))
+    inline def setVendorsVarargs(value: SchemaCompany*): Self = StObject.set(x, "vendors", js.Array(value :_*))
   }
 }

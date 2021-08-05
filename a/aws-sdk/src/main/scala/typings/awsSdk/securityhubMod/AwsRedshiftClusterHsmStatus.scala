@@ -23,31 +23,23 @@ trait AwsRedshiftClusterHsmStatus extends StObject {
 }
 object AwsRedshiftClusterHsmStatus {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterHsmStatus = {
+  inline def apply(): AwsRedshiftClusterHsmStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterHsmStatus]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterHsmStatusMutableBuilder[Self <: AwsRedshiftClusterHsmStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterHsmStatus](x: Self) {
     
-    @scala.inline
-    def setHsmClientCertificateIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setHsmClientCertificateIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmClientCertificateIdentifierUndefined: Self = StObject.set(x, "HsmClientCertificateIdentifier", js.undefined)
+    inline def setHsmClientCertificateIdentifierUndefined: Self = StObject.set(x, "HsmClientCertificateIdentifier", js.undefined)
     
-    @scala.inline
-    def setHsmConfigurationIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
+    inline def setHsmConfigurationIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmConfigurationIdentifierUndefined: Self = StObject.set(x, "HsmConfigurationIdentifier", js.undefined)
+    inline def setHsmConfigurationIdentifierUndefined: Self = StObject.set(x, "HsmConfigurationIdentifier", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

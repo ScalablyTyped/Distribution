@@ -18,31 +18,23 @@ trait DisableFastSnapshotRestoresResult extends StObject {
 }
 object DisableFastSnapshotRestoresResult {
   
-  @scala.inline
-  def apply(): DisableFastSnapshotRestoresResult = {
+  inline def apply(): DisableFastSnapshotRestoresResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableFastSnapshotRestoresResult]
   }
   
-  @scala.inline
-  implicit class DisableFastSnapshotRestoresResultMutableBuilder[Self <: DisableFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisableFastSnapshotRestoresResult](x: Self) {
     
-    @scala.inline
-    def setSuccessful(value: DisableFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
+    inline def setSuccessful(value: DisableFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
+    inline def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
-    @scala.inline
-    def setSuccessfulVarargs(value: DisableFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: DisableFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "Successful", js.Array(value :_*))
     
-    @scala.inline
-    def setUnsuccessful(value: DisableFastSnapshotRestoreErrorSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
+    inline def setUnsuccessful(value: DisableFastSnapshotRestoreErrorSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
+    inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulVarargs(value: DisableFastSnapshotRestoreErrorItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: DisableFastSnapshotRestoreErrorItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

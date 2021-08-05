@@ -13,19 +13,15 @@ trait IPolygonOptions
 }
 object IPolygonOptions {
   
-  @scala.inline
-  def apply(): IPolygonOptions = {
+  inline def apply(): IPolygonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPolygonOptions]
   }
   
-  @scala.inline
-  implicit class IPolygonOptionsMutableBuilder[Self <: IPolygonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPolygonOptions](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
   }
 }

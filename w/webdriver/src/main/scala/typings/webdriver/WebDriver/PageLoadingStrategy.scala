@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageLoadingStrategy extends StObject
 object PageLoadingStrategy {
   
-  @scala.inline
-  def eager: typings.webdriver.webdriverStrings.eager = "eager".asInstanceOf[typings.webdriver.webdriverStrings.eager]
+  inline def eager: typings.webdriver.webdriverStrings.eager = "eager".asInstanceOf[typings.webdriver.webdriverStrings.eager]
   
-  @scala.inline
-  def none: typings.webdriver.webdriverStrings.none = "none".asInstanceOf[typings.webdriver.webdriverStrings.none]
+  inline def none: typings.webdriver.webdriverStrings.none = "none".asInstanceOf[typings.webdriver.webdriverStrings.none]
   
-  @scala.inline
-  def normal: typings.webdriver.webdriverStrings.normal = "normal".asInstanceOf[typings.webdriver.webdriverStrings.normal]
+  inline def normal: typings.webdriver.webdriverStrings.normal = "normal".asInstanceOf[typings.webdriver.webdriverStrings.normal]
 }

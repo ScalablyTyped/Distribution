@@ -23,31 +23,23 @@ trait ApiStage extends StObject {
 }
 object ApiStage {
   
-  @scala.inline
-  def apply(): ApiStage = {
+  inline def apply(): ApiStage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiStage]
   }
   
-  @scala.inline
-  implicit class ApiStageMutableBuilder[Self <: ApiStage] (val x: Self) extends AnyVal {
+  extension [Self <: ApiStage](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+    inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
-    @scala.inline
-    def setThrottle(value: MapOfApiStageThrottleSettings): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: MapOfApiStageThrottleSettings): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+    inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
   }
 }

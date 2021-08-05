@@ -15,19 +15,15 @@ trait PlotLinearregressioninterceptDataLabelsAnimationOptions extends StObject {
 }
 object PlotLinearregressioninterceptDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotLinearregressioninterceptDataLabelsAnimationOptions = {
+  inline def apply(): PlotLinearregressioninterceptDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotLinearregressioninterceptDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotLinearregressioninterceptDataLabelsAnimationOptionsMutableBuilder[Self <: PlotLinearregressioninterceptDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotLinearregressioninterceptDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

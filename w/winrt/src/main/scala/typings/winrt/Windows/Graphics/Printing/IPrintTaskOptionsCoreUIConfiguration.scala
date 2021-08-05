@@ -11,16 +11,13 @@ trait IPrintTaskOptionsCoreUIConfiguration extends StObject {
 }
 object IPrintTaskOptionsCoreUIConfiguration {
   
-  @scala.inline
-  def apply(displayedOptions: IVector[String]): IPrintTaskOptionsCoreUIConfiguration = {
+  inline def apply(displayedOptions: IVector[String]): IPrintTaskOptionsCoreUIConfiguration = {
     val __obj = js.Dynamic.literal(displayedOptions = displayedOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintTaskOptionsCoreUIConfiguration]
   }
   
-  @scala.inline
-  implicit class IPrintTaskOptionsCoreUIConfigurationMutableBuilder[Self <: IPrintTaskOptionsCoreUIConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskOptionsCoreUIConfiguration](x: Self) {
     
-    @scala.inline
-    def setDisplayedOptions(value: IVector[String]): Self = StObject.set(x, "displayedOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayedOptions(value: IVector[String]): Self = StObject.set(x, "displayedOptions", value.asInstanceOf[js.Any])
   }
 }

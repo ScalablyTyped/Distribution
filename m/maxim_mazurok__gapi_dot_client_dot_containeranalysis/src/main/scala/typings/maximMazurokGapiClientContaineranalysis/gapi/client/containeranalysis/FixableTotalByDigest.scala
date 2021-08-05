@@ -20,37 +20,27 @@ trait FixableTotalByDigest extends StObject {
 }
 object FixableTotalByDigest {
   
-  @scala.inline
-  def apply(): FixableTotalByDigest = {
+  inline def apply(): FixableTotalByDigest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FixableTotalByDigest]
   }
   
-  @scala.inline
-  implicit class FixableTotalByDigestMutableBuilder[Self <: FixableTotalByDigest] (val x: Self) extends AnyVal {
+  extension [Self <: FixableTotalByDigest](x: Self) {
     
-    @scala.inline
-    def setFixableCount(value: String): Self = StObject.set(x, "fixableCount", value.asInstanceOf[js.Any])
+    inline def setFixableCount(value: String): Self = StObject.set(x, "fixableCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixableCountUndefined: Self = StObject.set(x, "fixableCount", js.undefined)
+    inline def setFixableCountUndefined: Self = StObject.set(x, "fixableCount", js.undefined)
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object vueCompilerDomStrings {
   
   @js.native
   sealed trait component extends StObject
-  @scala.inline
-  def component: component = "component".asInstanceOf[component]
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
   sealed trait directive extends StObject
-  @scala.inline
-  def directive: directive = "directive".asInstanceOf[directive]
+  inline def directive: directive = "directive".asInstanceOf[directive]
 }

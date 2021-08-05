@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ParseOptions extends StObject {
   
-  var _allowAutomaticSemicolonInsertion: js.Any
+  /* private */ var _allowAutomaticSemicolonInsertion: js.Any
   
-  var _languageVersion: js.Any
+  /* private */ var _languageVersion: js.Any
   
   def allowAutomaticSemicolonInsertion(): Boolean
   
@@ -19,8 +19,7 @@ trait ParseOptions extends StObject {
 }
 object ParseOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _allowAutomaticSemicolonInsertion: js.Any,
     _languageVersion: js.Any,
     allowAutomaticSemicolonInsertion: () => Boolean,
@@ -31,22 +30,16 @@ object ParseOptions {
     __obj.asInstanceOf[ParseOptions]
   }
   
-  @scala.inline
-  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParseOptions](x: Self) {
     
-    @scala.inline
-    def setAllowAutomaticSemicolonInsertion(value: () => Boolean): Self = StObject.set(x, "allowAutomaticSemicolonInsertion", js.Any.fromFunction0(value))
+    inline def setAllowAutomaticSemicolonInsertion(value: () => Boolean): Self = StObject.set(x, "allowAutomaticSemicolonInsertion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLanguageVersion(value: () => LanguageVersion): Self = StObject.set(x, "languageVersion", js.Any.fromFunction0(value))
+    inline def setLanguageVersion(value: () => LanguageVersion): Self = StObject.set(x, "languageVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSON(value: js.Any => AllowAutomaticSemicolonInsertion): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+    inline def setToJSON(value: js.Any => AllowAutomaticSemicolonInsertion): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_allowAutomaticSemicolonInsertion(value: js.Any): Self = StObject.set(x, "_allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
+    inline def set_allowAutomaticSemicolonInsertion(value: js.Any): Self = StObject.set(x, "_allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_languageVersion(value: js.Any): Self = StObject.set(x, "_languageVersion", value.asInstanceOf[js.Any])
+    inline def set_languageVersion(value: js.Any): Self = StObject.set(x, "_languageVersion", value.asInstanceOf[js.Any])
   }
 }

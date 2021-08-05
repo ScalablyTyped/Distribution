@@ -10,19 +10,15 @@ trait UseSortByState[D /* <: js.Object */] extends StObject {
 }
 object UseSortByState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](sortBy: js.Array[SortingRule[D]]): UseSortByState[D] = {
+  inline def apply[D /* <: js.Object */](sortBy: js.Array[SortingRule[D]]): UseSortByState[D] = {
     val __obj = js.Dynamic.literal(sortBy = sortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSortByState[D]]
   }
   
-  @scala.inline
-  implicit class UseSortByStateMutableBuilder[Self <: UseSortByState[?], D /* <: js.Object */] (val x: Self & UseSortByState[D]) extends AnyVal {
+  extension [Self <: UseSortByState[?], D /* <: js.Object */](x: Self & UseSortByState[D]) {
     
-    @scala.inline
-    def setSortBy(value: js.Array[SortingRule[D]]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: js.Array[SortingRule[D]]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByVarargs(value: SortingRule[D]*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
+    inline def setSortByVarargs(value: SortingRule[D]*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
   }
 }

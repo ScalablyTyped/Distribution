@@ -53,8 +53,7 @@ trait TreeRendererProps extends StObject {
 }
 object TreeRendererProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[Element],
     connectDropTarget: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[js.Any]) => ReactElement | Null,
     getPrevRow: () => FlatDataItem | Null,
@@ -71,93 +70,64 @@ object TreeRendererProps {
     __obj.asInstanceOf[TreeRendererProps]
   }
   
-  @scala.inline
-  implicit class TreeRendererPropsMutableBuilder[Self <: TreeRendererProps] (val x: Self) extends AnyVal {
+  extension [Self <: TreeRendererProps](x: Self) {
     
-    @scala.inline
-    def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
+    inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
+    inline def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectDropTarget(
+    inline def setConnectDropTarget(
       value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[js.Any]) => ReactElement | Null
     ): Self = StObject.set(x, "connectDropTarget", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
+    inline def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggedNodeUndefined: Self = StObject.set(x, "draggedNode", js.undefined)
+    inline def setDraggedNodeUndefined: Self = StObject.set(x, "draggedNode", js.undefined)
     
-    @scala.inline
-    def setGetPrevRow(value: () => FlatDataItem | Null): Self = StObject.set(x, "getPrevRow", js.Any.fromFunction0(value))
+    inline def setGetPrevRow(value: () => FlatDataItem | Null): Self = StObject.set(x, "getPrevRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
+    inline def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIndex(value: Double): Self = StObject.set(x, "listIndex", value.asInstanceOf[js.Any])
+    inline def setListIndex(value: Double): Self = StObject.set(x, "listIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
+    inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setRowDirection(value: ltr | rtl): Self = StObject.set(x, "rowDirection", value.asInstanceOf[js.Any])
+    inline def setRowDirection(value: ltr | rtl): Self = StObject.set(x, "rowDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDirectionUndefined: Self = StObject.set(x, "rowDirection", js.undefined)
+    inline def setRowDirectionUndefined: Self = StObject.set(x, "rowDirection", js.undefined)
     
-    @scala.inline
-    def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
+    inline def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSwapDepth(value: Double): Self = StObject.set(x, "swapDepth", value.asInstanceOf[js.Any])
+    inline def setSwapDepth(value: Double): Self = StObject.set(x, "swapDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapDepthUndefined: Self = StObject.set(x, "swapDepth", js.undefined)
+    inline def setSwapDepthUndefined: Self = StObject.set(x, "swapDepth", js.undefined)
     
-    @scala.inline
-    def setSwapFrom(value: Double): Self = StObject.set(x, "swapFrom", value.asInstanceOf[js.Any])
+    inline def setSwapFrom(value: Double): Self = StObject.set(x, "swapFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapFromUndefined: Self = StObject.set(x, "swapFrom", js.undefined)
+    inline def setSwapFromUndefined: Self = StObject.set(x, "swapFrom", js.undefined)
     
-    @scala.inline
-    def setSwapLength(value: Double): Self = StObject.set(x, "swapLength", value.asInstanceOf[js.Any])
+    inline def setSwapLength(value: Double): Self = StObject.set(x, "swapLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapLengthUndefined: Self = StObject.set(x, "swapLength", js.undefined)
+    inline def setSwapLengthUndefined: Self = StObject.set(x, "swapLength", js.undefined)
     
-    @scala.inline
-    def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
+    inline def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait ApprovalOptions extends StObject {
 }
 object ApprovalOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped: Boolean,
     enforceIdentityRevalidation: Boolean,
     executionOrder: ApprovalExecutionOrder,
@@ -33,25 +32,18 @@ object ApprovalOptions {
     __obj.asInstanceOf[ApprovalOptions]
   }
   
-  @scala.inline
-  implicit class ApprovalOptionsMutableBuilder[Self <: ApprovalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalOptions](x: Self) {
     
-    @scala.inline
-    def setAutoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped(value: Boolean): Self = StObject.set(x, "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped", value.asInstanceOf[js.Any])
+    inline def setAutoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped(value: Boolean): Self = StObject.set(x, "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceIdentityRevalidation(value: Boolean): Self = StObject.set(x, "enforceIdentityRevalidation", value.asInstanceOf[js.Any])
+    inline def setEnforceIdentityRevalidation(value: Boolean): Self = StObject.set(x, "enforceIdentityRevalidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionOrder(value: ApprovalExecutionOrder): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
+    inline def setExecutionOrder(value: ApprovalExecutionOrder): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseCreatorCanBeApprover(value: Boolean): Self = StObject.set(x, "releaseCreatorCanBeApprover", value.asInstanceOf[js.Any])
+    inline def setReleaseCreatorCanBeApprover(value: Boolean): Self = StObject.set(x, "releaseCreatorCanBeApprover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredApproverCount(value: Double): Self = StObject.set(x, "requiredApproverCount", value.asInstanceOf[js.Any])
+    inline def setRequiredApproverCount(value: Double): Self = StObject.set(x, "requiredApproverCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

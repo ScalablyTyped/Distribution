@@ -10,10 +10,7 @@ object getCookiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Array[js.Object]]]
-  @scala.inline
-  def default(names: String): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
-  @scala.inline
-  def default(names: js.Array[String]): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def default(): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def default(names: String): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def default(names: js.Array[String]): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
 }

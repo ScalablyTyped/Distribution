@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackHeaderMode extends StObject
 object StackHeaderMode {
   
-  @scala.inline
-  def float: typings.reactNavigationStack.reactNavigationStackStrings.float = "float".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.float]
+  inline def float: typings.reactNavigationStack.reactNavigationStackStrings.float = "float".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.float]
   
-  @scala.inline
-  def none: typings.reactNavigationStack.reactNavigationStackStrings.none = "none".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.none]
+  inline def none: typings.reactNavigationStack.reactNavigationStackStrings.none = "none".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.none]
   
-  @scala.inline
-  def screen: typings.reactNavigationStack.reactNavigationStackStrings.screen = "screen".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.screen]
+  inline def screen: typings.reactNavigationStack.reactNavigationStackStrings.screen = "screen".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.screen]
 }

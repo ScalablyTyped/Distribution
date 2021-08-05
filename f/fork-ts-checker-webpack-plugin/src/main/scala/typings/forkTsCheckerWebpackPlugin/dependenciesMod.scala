@@ -16,32 +16,24 @@ object dependenciesMod {
   }
   object Dependencies {
     
-    @scala.inline
-    def apply(dirs: js.Array[String], extensions: js.Array[String], files: js.Array[String]): Dependencies = {
+    inline def apply(dirs: js.Array[String], extensions: js.Array[String], files: js.Array[String]): Dependencies = {
       val __obj = js.Dynamic.literal(dirs = dirs.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dependencies]
     }
     
-    @scala.inline
-    implicit class DependenciesMutableBuilder[Self <: Dependencies] (val x: Self) extends AnyVal {
+    extension [Self <: Dependencies](x: Self) {
       
-      @scala.inline
-      def setDirs(value: js.Array[String]): Self = StObject.set(x, "dirs", value.asInstanceOf[js.Any])
+      inline def setDirs(value: js.Array[String]): Self = StObject.set(x, "dirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirsVarargs(value: String*): Self = StObject.set(x, "dirs", js.Array(value :_*))
+      inline def setDirsVarargs(value: String*): Self = StObject.set(x, "dirs", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
     }
   }
 }

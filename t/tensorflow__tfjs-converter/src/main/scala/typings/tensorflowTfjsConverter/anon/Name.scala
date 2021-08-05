@@ -20,8 +20,7 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: AnyOf,
     name: Type,
     notSupported: Type,
@@ -34,25 +33,18 @@ object Name {
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: AnyOf): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: AnyOf): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Type): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Type): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSupported(value: Type): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
+    inline def setNotSupported(value: Type): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfDeprecatedName(value: Type): Self = StObject.set(x, "tfDeprecatedName", value.asInstanceOf[js.Any])
+    inline def setTfDeprecatedName(value: Type): Self = StObject.set(x, "tfDeprecatedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfName(value: Type): Self = StObject.set(x, "tfName", value.asInstanceOf[js.Any])
+    inline def setTfName(value: Type): Self = StObject.set(x, "tfName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

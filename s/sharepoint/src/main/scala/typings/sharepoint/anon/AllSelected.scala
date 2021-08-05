@@ -21,8 +21,7 @@ trait AllSelected extends StObject {
 }
 object AllSelected {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allSelected: Header,
     allSelectedHover: Header,
     normal: Header,
@@ -34,25 +33,18 @@ object AllSelected {
     __obj.asInstanceOf[AllSelected]
   }
   
-  @scala.inline
-  implicit class AllSelectedMutableBuilder[Self <: AllSelected] (val x: Self) extends AnyVal {
+  extension [Self <: AllSelected](x: Self) {
     
-    @scala.inline
-    def setAllSelected(value: Header): Self = StObject.set(x, "allSelected", value.asInstanceOf[js.Any])
+    inline def setAllSelected(value: Header): Self = StObject.set(x, "allSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllSelectedHover(value: Header): Self = StObject.set(x, "allSelectedHover", value.asInstanceOf[js.Any])
+    inline def setAllSelectedHover(value: Header): Self = StObject.set(x, "allSelectedHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Header): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Header): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalHover(value: Header): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
+    inline def setNormalHover(value: Header): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartSelected(value: Header): Self = StObject.set(x, "partSelected", value.asInstanceOf[js.Any])
+    inline def setPartSelected(value: Header): Self = StObject.set(x, "partSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartSelectedHover(value: Header): Self = StObject.set(x, "partSelectedHover", value.asInstanceOf[js.Any])
+    inline def setPartSelectedHover(value: Header): Self = StObject.set(x, "partSelectedHover", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait CreateVPCEConfigurationResult extends StObject {
 }
 object CreateVPCEConfigurationResult {
   
-  @scala.inline
-  def apply(): CreateVPCEConfigurationResult = {
+  inline def apply(): CreateVPCEConfigurationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVPCEConfigurationResult]
   }
   
-  @scala.inline
-  implicit class CreateVPCEConfigurationResultMutableBuilder[Self <: CreateVPCEConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVPCEConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setVpceConfiguration(value: VPCEConfiguration): Self = StObject.set(x, "vpceConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpceConfiguration(value: VPCEConfiguration): Self = StObject.set(x, "vpceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationUndefined: Self = StObject.set(x, "vpceConfiguration", js.undefined)
+    inline def setVpceConfigurationUndefined: Self = StObject.set(x, "vpceConfiguration", js.undefined)
   }
 }

@@ -16,18 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uReactivePower extends StObject
 object uReactivePower {
   
-  @scala.inline
-  def GVAR: typings.convertUnits.convertUnitsStrings.GVAR = "GVAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.GVAR]
+  inline def GVAR: typings.convertUnits.convertUnitsStrings.GVAR = "GVAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.GVAR]
   
-  @scala.inline
-  def MVAR: typings.convertUnits.convertUnitsStrings.MVAR = "MVAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.MVAR]
+  inline def MVAR: typings.convertUnits.convertUnitsStrings.MVAR = "MVAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.MVAR]
   
-  @scala.inline
-  def VAR: typings.convertUnits.convertUnitsStrings.VAR = "VAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.VAR]
+  inline def VAR: typings.convertUnits.convertUnitsStrings.VAR = "VAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.VAR]
   
-  @scala.inline
-  def kVAR: typings.convertUnits.convertUnitsStrings.kVAR = "kVAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.kVAR]
+  inline def kVAR: typings.convertUnits.convertUnitsStrings.kVAR = "kVAR".asInstanceOf[typings.convertUnits.convertUnitsStrings.kVAR]
   
-  @scala.inline
-  def mVAR: mVAR_ = "mVAR".asInstanceOf[mVAR_]
+  inline def mVAR: mVAR_ = "mVAR".asInstanceOf[mVAR_]
 }

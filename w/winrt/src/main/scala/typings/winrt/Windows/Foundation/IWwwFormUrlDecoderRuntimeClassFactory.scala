@@ -10,16 +10,13 @@ trait IWwwFormUrlDecoderRuntimeClassFactory extends StObject {
 }
 object IWwwFormUrlDecoderRuntimeClassFactory {
   
-  @scala.inline
-  def apply(createWwwFormUrlDecoder: String => WwwFormUrlDecoder): IWwwFormUrlDecoderRuntimeClassFactory = {
+  inline def apply(createWwwFormUrlDecoder: String => WwwFormUrlDecoder): IWwwFormUrlDecoderRuntimeClassFactory = {
     val __obj = js.Dynamic.literal(createWwwFormUrlDecoder = js.Any.fromFunction1(createWwwFormUrlDecoder))
     __obj.asInstanceOf[IWwwFormUrlDecoderRuntimeClassFactory]
   }
   
-  @scala.inline
-  implicit class IWwwFormUrlDecoderRuntimeClassFactoryMutableBuilder[Self <: IWwwFormUrlDecoderRuntimeClassFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IWwwFormUrlDecoderRuntimeClassFactory](x: Self) {
     
-    @scala.inline
-    def setCreateWwwFormUrlDecoder(value: String => WwwFormUrlDecoder): Self = StObject.set(x, "createWwwFormUrlDecoder", js.Any.fromFunction1(value))
+    inline def setCreateWwwFormUrlDecoder(value: String => WwwFormUrlDecoder): Self = StObject.set(x, "createWwwFormUrlDecoder", js.Any.fromFunction1(value))
   }
 }

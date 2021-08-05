@@ -34,19 +34,15 @@ trait RelativeSize extends StObject {
 }
 object RelativeSize {
   
-  @scala.inline
-  def apply(Primary: Double, Secondary: Double): RelativeSize = {
+  inline def apply(Primary: Double, Secondary: Double): RelativeSize = {
     val __obj = js.Dynamic.literal(Primary = Primary.asInstanceOf[js.Any], Secondary = Secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeSize]
   }
   
-  @scala.inline
-  implicit class RelativeSizeMutableBuilder[Self <: RelativeSize] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeSize](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary(value: Double): Self = StObject.set(x, "Secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Double): Self = StObject.set(x, "Secondary", value.asInstanceOf[js.Any])
   }
 }

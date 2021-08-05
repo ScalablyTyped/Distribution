@@ -11,13 +11,10 @@ object tabOrderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean): js.Array[NodeIndex] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByTabIndex")(nodes.asInstanceOf[js.Any], filterNegative.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodeIndex]]
-  @scala.inline
-  def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean, keepGuards: Boolean): js.Array[NodeIndex] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByTabIndex")(nodes.asInstanceOf[js.Any], filterNegative.asInstanceOf[js.Any], keepGuards.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodeIndex]]
+  inline def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean): js.Array[NodeIndex] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByTabIndex")(nodes.asInstanceOf[js.Any], filterNegative.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodeIndex]]
+  inline def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean, keepGuards: Boolean): js.Array[NodeIndex] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByTabIndex")(nodes.asInstanceOf[js.Any], filterNegative.asInstanceOf[js.Any], keepGuards.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodeIndex]]
   
-  @scala.inline
-  def tabSort(a: NodeIndex, b: NodeIndex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tabSort")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def tabSort(a: NodeIndex, b: NodeIndex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tabSort")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait NodeIndex extends StObject {
     
@@ -29,23 +26,18 @@ object tabOrderMod {
   }
   object NodeIndex {
     
-    @scala.inline
-    def apply(index: Double, node: HTMLInputElement, tabIndex: Double): NodeIndex = {
+    inline def apply(index: Double, node: HTMLInputElement, tabIndex: Double): NodeIndex = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeIndex]
     }
     
-    @scala.inline
-    implicit class NodeIndexMutableBuilder[Self <: NodeIndex] (val x: Self) extends AnyVal {
+    extension [Self <: NodeIndex](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -24,8 +24,7 @@ trait ProjectVpcConfig extends StObject {
 }
 object ProjectVpcConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     securityGroupIds: Input[js.Array[Input[String]]],
     subnets: Input[js.Array[Input[String]]],
     vpcId: Input[String]
@@ -34,22 +33,16 @@ object ProjectVpcConfig {
     __obj.asInstanceOf[ProjectVpcConfig]
   }
   
-  @scala.inline
-  implicit class ProjectVpcConfigMutableBuilder[Self <: ProjectVpcConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectVpcConfig](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
   }
 }

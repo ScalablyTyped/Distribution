@@ -25,20 +25,16 @@ object i18n {
   }
   object DetectedLanguage {
     
-    @scala.inline
-    def apply(language: String, percentage: Double): DetectedLanguage = {
+    inline def apply(language: String, percentage: Double): DetectedLanguage = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectedLanguage]
     }
     
-    @scala.inline
-    implicit class DetectedLanguageMutableBuilder[Self <: DetectedLanguage] (val x: Self) extends AnyVal {
+    extension [Self <: DetectedLanguage](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,23 +48,18 @@ object i18n {
   }
   object LanguageDetectionResult {
     
-    @scala.inline
-    def apply(isReliable: Boolean, languages: js.Array[DetectedLanguage]): LanguageDetectionResult = {
+    inline def apply(isReliable: Boolean, languages: js.Array[DetectedLanguage]): LanguageDetectionResult = {
       val __obj = js.Dynamic.literal(isReliable = isReliable.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any])
       __obj.asInstanceOf[LanguageDetectionResult]
     }
     
-    @scala.inline
-    implicit class LanguageDetectionResultMutableBuilder[Self <: LanguageDetectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageDetectionResult](x: Self) {
       
-      @scala.inline
-      def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
+      inline def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
     }
   }
 }

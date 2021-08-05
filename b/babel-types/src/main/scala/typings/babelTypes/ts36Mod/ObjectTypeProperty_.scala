@@ -20,23 +20,18 @@ trait ObjectTypeProperty_
 }
 object ObjectTypeProperty_ {
   
-  @scala.inline
-  def apply(end: Double, key: Expression, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): ObjectTypeProperty_ = {
+  inline def apply(end: Double, key: Expression, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): ObjectTypeProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[ObjectTypeProperty_]
   }
   
-  @scala.inline
-  implicit class ObjectTypeProperty_MutableBuilder[Self <: ObjectTypeProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectTypeProperty_](x: Self) {
     
-    @scala.inline
-    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ObjectTypeProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectTypeProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FlowTypeAnnotation): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FlowTypeAnnotation): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

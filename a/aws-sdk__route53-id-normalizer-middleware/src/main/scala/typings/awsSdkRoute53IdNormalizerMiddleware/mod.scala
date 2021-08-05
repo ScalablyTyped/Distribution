@@ -13,11 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def changeBatchAliasTargetIdNormalizerMiddleware[Input /* <: ChangeBatchBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeBatchAliasTargetIdNormalizerMiddleware")(next.asInstanceOf[js.Any]).asInstanceOf[Handler[Input, Output]]
+  inline def changeBatchAliasTargetIdNormalizerMiddleware[Input /* <: ChangeBatchBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeBatchAliasTargetIdNormalizerMiddleware")(next.asInstanceOf[js.Any]).asInstanceOf[Handler[Input, Output]]
   
-  @scala.inline
-  def idNormalizerMiddleware[Input /* <: IdentifierBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("idNormalizerMiddleware")(next.asInstanceOf[js.Any]).asInstanceOf[Handler[Input, Output]]
+  inline def idNormalizerMiddleware[Input /* <: IdentifierBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("idNormalizerMiddleware")(next.asInstanceOf[js.Any]).asInstanceOf[Handler[Input, Output]]
   
   trait Change extends StObject {
     
@@ -25,17 +23,14 @@ object mod {
   }
   object Change {
     
-    @scala.inline
-    def apply(ResourceRecordSet: AliasTarget): Change = {
+    inline def apply(ResourceRecordSet: AliasTarget): Change = {
       val __obj = js.Dynamic.literal(ResourceRecordSet = ResourceRecordSet.asInstanceOf[js.Any])
       __obj.asInstanceOf[Change]
     }
     
-    @scala.inline
-    implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+    extension [Self <: Change](x: Self) {
       
-      @scala.inline
-      def setResourceRecordSet(value: AliasTarget): Self = StObject.set(x, "ResourceRecordSet", value.asInstanceOf[js.Any])
+      inline def setResourceRecordSet(value: AliasTarget): Self = StObject.set(x, "ResourceRecordSet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,17 +40,14 @@ object mod {
   }
   object ChangeBatchBearer {
     
-    @scala.inline
-    def apply(ChangeBatch: Changes): ChangeBatchBearer = {
+    inline def apply(ChangeBatch: Changes): ChangeBatchBearer = {
       val __obj = js.Dynamic.literal(ChangeBatch = ChangeBatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeBatchBearer]
     }
     
-    @scala.inline
-    implicit class ChangeBatchBearerMutableBuilder[Self <: ChangeBatchBearer] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeBatchBearer](x: Self) {
       
-      @scala.inline
-      def setChangeBatch(value: Changes): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
+      inline def setChangeBatch(value: Changes): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,32 +61,24 @@ object mod {
   }
   object IdentifierBearer {
     
-    @scala.inline
-    def apply(): IdentifierBearer = {
+    inline def apply(): IdentifierBearer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentifierBearer]
     }
     
-    @scala.inline
-    implicit class IdentifierBearerMutableBuilder[Self <: IdentifierBearer] (val x: Self) extends AnyVal {
+    extension [Self <: IdentifierBearer](x: Self) {
       
-      @scala.inline
-      def setDelegationSetId(value: String): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
+      inline def setDelegationSetId(value: String): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegationSetIdUndefined: Self = StObject.set(x, "DelegationSetId", js.undefined)
+      inline def setDelegationSetIdUndefined: Self = StObject.set(x, "DelegationSetId", js.undefined)
       
-      @scala.inline
-      def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
+      inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     }
   }
 }

@@ -14,25 +14,19 @@ trait SharedDriveFile extends StObject {
 }
 object SharedDriveFile {
   
-  @scala.inline
-  def apply(): SharedDriveFile = {
+  inline def apply(): SharedDriveFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedDriveFile]
   }
   
-  @scala.inline
-  implicit class SharedDriveFileMutableBuilder[Self <: SharedDriveFile] (val x: Self) extends AnyVal {
+  extension [Self <: SharedDriveFile](x: Self) {
     
-    @scala.inline
-    def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
+    inline def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
+    inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
-    @scala.inline
-    def setShareMode(value: String): Self = StObject.set(x, "shareMode", value.asInstanceOf[js.Any])
+    inline def setShareMode(value: String): Self = StObject.set(x, "shareMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareModeUndefined: Self = StObject.set(x, "shareMode", js.undefined)
+    inline def setShareModeUndefined: Self = StObject.set(x, "shareMode", js.undefined)
   }
 }

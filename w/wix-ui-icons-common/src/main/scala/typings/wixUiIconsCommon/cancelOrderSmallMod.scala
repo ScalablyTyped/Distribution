@@ -22,20 +22,16 @@ object cancelOrderSmallMod extends Shortcut {
   }
   object CancelOrderSmallProps {
     
-    @scala.inline
-    def apply(): CancelOrderSmallProps = {
+    inline def apply(): CancelOrderSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CancelOrderSmallProps]
     }
     
-    @scala.inline
-    implicit class CancelOrderSmallPropsMutableBuilder[Self <: CancelOrderSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: CancelOrderSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

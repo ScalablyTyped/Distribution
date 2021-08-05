@@ -54,9 +54,7 @@ object Entry {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(meta: Meta, parentGroup: Group): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(meta.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Entry]
+  inline def create(meta: Meta, parentGroup: Group): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(meta.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Entry]
   
-  @scala.inline
-  def read(xmlNode: Node, ctx: Context, parentGroup: Group): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Entry]
+  inline def read(xmlNode: Node, ctx: Context, parentGroup: Group): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Entry]
 }

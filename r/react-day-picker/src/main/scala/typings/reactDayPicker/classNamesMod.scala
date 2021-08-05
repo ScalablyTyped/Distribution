@@ -56,8 +56,7 @@ object classNamesMod {
   }
   object ClassNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String,
       caption: String,
       container: String,
@@ -86,77 +85,53 @@ object classNamesMod {
       __obj.asInstanceOf[ClassNames]
     }
     
-    @scala.inline
-    implicit class ClassNamesMutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: ClassNames](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionDisabled(value: String): Self = StObject.set(x, "interactionDisabled", value.asInstanceOf[js.Any])
+      inline def setInteractionDisabled(value: String): Self = StObject.set(x, "interactionDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavBar(value: String): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
+      inline def setNavBar(value: String): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavButtonInteractionDisabled(value: String): Self = StObject.set(x, "navButtonInteractionDisabled", value.asInstanceOf[js.Any])
+      inline def setNavButtonInteractionDisabled(value: String): Self = StObject.set(x, "navButtonInteractionDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavButtonNext(value: String): Self = StObject.set(x, "navButtonNext", value.asInstanceOf[js.Any])
+      inline def setNavButtonNext(value: String): Self = StObject.set(x, "navButtonNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavButtonPrev(value: String): Self = StObject.set(x, "navButtonPrev", value.asInstanceOf[js.Any])
+      inline def setNavButtonPrev(value: String): Self = StObject.set(x, "navButtonPrev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutside(value: String): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
+      inline def setOutside(value: String): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayButton(value: String): Self = StObject.set(x, "todayButton", value.asInstanceOf[js.Any])
+      inline def setTodayButton(value: String): Self = StObject.set(x, "todayButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+      inline def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekNumber(value: String): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
+      inline def setWeekNumber(value: String): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdays(value: String): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: String): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdaysRow(value: String): Self = StObject.set(x, "weekdaysRow", value.asInstanceOf[js.Any])
+      inline def setWeekdaysRow(value: String): Self = StObject.set(x, "weekdaysRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,23 +145,18 @@ object classNamesMod {
   }
   object InputClassNames {
     
-    @scala.inline
-    def apply(container: String, overlay: String, overlayWrapper: String): InputClassNames = {
+    inline def apply(container: String, overlay: String, overlayWrapper: String): InputClassNames = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], overlayWrapper = overlayWrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputClassNames]
     }
     
-    @scala.inline
-    implicit class InputClassNamesMutableBuilder[Self <: InputClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: InputClassNames](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayWrapper(value: String): Self = StObject.set(x, "overlayWrapper", value.asInstanceOf[js.Any])
+      inline def setOverlayWrapper(value: String): Self = StObject.set(x, "overlayWrapper", value.asInstanceOf[js.Any])
     }
   }
 }

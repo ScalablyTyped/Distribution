@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(mochaPhantomJS: () => MochaPhantomJsWindowOptions): Window = {
+  inline def apply(mochaPhantomJS: () => MochaPhantomJsWindowOptions): Window = {
     val __obj = js.Dynamic.literal(mochaPhantomJS = js.Any.fromFunction0(mochaPhantomJS))
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setMochaPhantomJS(value: () => MochaPhantomJsWindowOptions): Self = StObject.set(x, "mochaPhantomJS", js.Any.fromFunction0(value))
+    inline def setMochaPhantomJS(value: () => MochaPhantomJsWindowOptions): Self = StObject.set(x, "mochaPhantomJS", js.Any.fromFunction0(value))
   }
 }

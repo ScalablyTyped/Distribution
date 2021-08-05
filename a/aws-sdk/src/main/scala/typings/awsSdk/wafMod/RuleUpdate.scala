@@ -18,19 +18,15 @@ trait RuleUpdate extends StObject {
 }
 object RuleUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, Predicate: Predicate): RuleUpdate = {
+  inline def apply(Action: ChangeAction, Predicate: Predicate): RuleUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Predicate = Predicate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleUpdate]
   }
   
-  @scala.inline
-  implicit class RuleUpdateMutableBuilder[Self <: RuleUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: RuleUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
   }
 }

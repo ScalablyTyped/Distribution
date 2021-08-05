@@ -17,19 +17,15 @@ trait AuthenticationTypeOAuth2
 }
 object AuthenticationTypeOAuth2 {
   
-  @scala.inline
-  def apply(): AuthenticationTypeOAuth2 = {
+  inline def apply(): AuthenticationTypeOAuth2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationTypeOAuth2]
   }
   
-  @scala.inline
-  implicit class AuthenticationTypeOAuth2MutableBuilder[Self <: AuthenticationTypeOAuth2] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationTypeOAuth2](x: Self) {
     
-    @scala.inline
-    def setType(value: oauth2__ | OAuth2_ | OAUTH2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: oauth2__ | OAuth2_ | OAUTH2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

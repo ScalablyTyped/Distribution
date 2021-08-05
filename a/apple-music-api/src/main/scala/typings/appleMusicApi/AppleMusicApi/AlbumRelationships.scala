@@ -15,25 +15,19 @@ trait AlbumRelationships extends StObject {
 }
 object AlbumRelationships {
   
-  @scala.inline
-  def apply(artists: Relationship[Artist], tracks: Relationship[Song]): AlbumRelationships = {
+  inline def apply(artists: Relationship[Artist], tracks: Relationship[Song]): AlbumRelationships = {
     val __obj = js.Dynamic.literal(artists = artists.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumRelationships]
   }
   
-  @scala.inline
-  implicit class AlbumRelationshipsMutableBuilder[Self <: AlbumRelationships] (val x: Self) extends AnyVal {
+  extension [Self <: AlbumRelationships](x: Self) {
     
-    @scala.inline
-    def setArtists(value: Relationship[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    inline def setArtists(value: Relationship[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
+    inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    @scala.inline
-    def setTracks(value: Relationship[Song]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: Relationship[Song]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

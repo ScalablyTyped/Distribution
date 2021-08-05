@@ -20,52 +20,37 @@ trait VirtualOptions extends StObject {
 }
 object VirtualOptions {
   
-  @scala.inline
-  def apply(): VirtualOptions = {
+  inline def apply(): VirtualOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualOptions]
   }
   
-  @scala.inline
-  implicit class VirtualOptionsMutableBuilder[Self <: VirtualOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualOptions](x: Self) {
     
-    @scala.inline
-    def setAddSlidesAfter(value: Double): Self = StObject.set(x, "addSlidesAfter", value.asInstanceOf[js.Any])
+    inline def setAddSlidesAfter(value: Double): Self = StObject.set(x, "addSlidesAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSlidesAfterUndefined: Self = StObject.set(x, "addSlidesAfter", js.undefined)
+    inline def setAddSlidesAfterUndefined: Self = StObject.set(x, "addSlidesAfter", js.undefined)
     
-    @scala.inline
-    def setAddSlidesBefore(value: Double): Self = StObject.set(x, "addSlidesBefore", value.asInstanceOf[js.Any])
+    inline def setAddSlidesBefore(value: Double): Self = StObject.set(x, "addSlidesBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSlidesBeforeUndefined: Self = StObject.set(x, "addSlidesBefore", js.undefined)
+    inline def setAddSlidesBeforeUndefined: Self = StObject.set(x, "addSlidesBefore", js.undefined)
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setRenderExternal(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "renderExternal", js.Any.fromFunction1(value))
+    inline def setRenderExternal(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "renderExternal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderExternalUndefined: Self = StObject.set(x, "renderExternal", js.undefined)
+    inline def setRenderExternalUndefined: Self = StObject.set(x, "renderExternal", js.undefined)
     
-    @scala.inline
-    def setRenderSlide(value: (/* slide */ js.Any, /* index */ js.Any) => js.Any): Self = StObject.set(x, "renderSlide", js.Any.fromFunction2(value))
+    inline def setRenderSlide(value: (/* slide */ js.Any, /* index */ js.Any) => js.Any): Self = StObject.set(x, "renderSlide", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderSlideUndefined: Self = StObject.set(x, "renderSlide", js.undefined)
+    inline def setRenderSlideUndefined: Self = StObject.set(x, "renderSlide", js.undefined)
     
-    @scala.inline
-    def setSlides(value: js.Array[js.Any]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+    inline def setSlides(value: js.Array[js.Any]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+    inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
     
-    @scala.inline
-    def setSlidesVarargs(value: js.Any*): Self = StObject.set(x, "slides", js.Array(value :_*))
+    inline def setSlidesVarargs(value: js.Any*): Self = StObject.set(x, "slides", js.Array(value :_*))
   }
 }

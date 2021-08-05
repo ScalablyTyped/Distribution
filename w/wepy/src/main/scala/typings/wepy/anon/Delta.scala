@@ -10,16 +10,13 @@ trait Delta extends StObject {
 }
 object Delta {
   
-  @scala.inline
-  def apply(delta: Double): Delta = {
+  inline def apply(delta: Double): Delta = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delta]
   }
   
-  @scala.inline
-  implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
+  extension [Self <: Delta](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
   }
 }

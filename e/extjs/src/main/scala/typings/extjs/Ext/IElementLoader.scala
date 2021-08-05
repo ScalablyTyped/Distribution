@@ -90,145 +90,99 @@ trait IElementLoader
 }
 object IElementLoader {
   
-  @scala.inline
-  def apply(): IElementLoader = {
+  inline def apply(): IElementLoader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IElementLoader]
   }
   
-  @scala.inline
-  implicit class IElementLoaderMutableBuilder[Self <: IElementLoader] (val x: Self) extends AnyVal {
+  extension [Self <: IElementLoader](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+    inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    @scala.inline
-    def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
+    inline def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
+    inline def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
-    @scala.inline
-    def setAutoLoad(value: js.Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: js.Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
+    inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
-    @scala.inline
-    def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+    inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
+    inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
     
-    @scala.inline
-    def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setFailure(value: js.Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFailure(value: js.Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
-    @scala.inline
-    def setGetTarget(value: () => IComponent): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => IComponent): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
+    inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
     
-    @scala.inline
-    def setIsAutoRefreshing(value: () => Boolean): Self = StObject.set(x, "isAutoRefreshing", js.Any.fromFunction0(value))
+    inline def setIsAutoRefreshing(value: () => Boolean): Self = StObject.set(x, "isAutoRefreshing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAutoRefreshingUndefined: Self = StObject.set(x, "isAutoRefreshing", js.undefined)
+    inline def setIsAutoRefreshingUndefined: Self = StObject.set(x, "isAutoRefreshing", js.undefined)
     
-    @scala.inline
-    def setIsLoader(value: Boolean): Self = StObject.set(x, "isLoader", value.asInstanceOf[js.Any])
+    inline def setIsLoader(value: Boolean): Self = StObject.set(x, "isLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLoaderUndefined: Self = StObject.set(x, "isLoader", js.undefined)
+    inline def setIsLoaderUndefined: Self = StObject.set(x, "isLoader", js.undefined)
     
-    @scala.inline
-    def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadMask(value: js.Any): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
+    inline def setLoadMask(value: js.Any): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadMaskUndefined: Self = StObject.set(x, "loadMask", js.undefined)
+    inline def setLoadMaskUndefined: Self = StObject.set(x, "loadMask", js.undefined)
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    inline def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+    inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
-    @scala.inline
-    def setSetTarget(value: /* target */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
+    inline def setSetTarget(value: /* target */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTargetUndefined: Self = StObject.set(x, "setTarget", js.undefined)
+    inline def setSetTargetUndefined: Self = StObject.set(x, "setTarget", js.undefined)
     
-    @scala.inline
-    def setStartAutoRefresh(value: (/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "startAutoRefresh", js.Any.fromFunction2(value))
+    inline def setStartAutoRefresh(value: (/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "startAutoRefresh", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartAutoRefreshUndefined: Self = StObject.set(x, "startAutoRefresh", js.undefined)
+    inline def setStartAutoRefreshUndefined: Self = StObject.set(x, "startAutoRefresh", js.undefined)
     
-    @scala.inline
-    def setStopAutoRefresh(value: () => Unit): Self = StObject.set(x, "stopAutoRefresh", js.Any.fromFunction0(value))
+    inline def setStopAutoRefresh(value: () => Unit): Self = StObject.set(x, "stopAutoRefresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopAutoRefreshUndefined: Self = StObject.set(x, "stopAutoRefresh", js.undefined)
+    inline def setStopAutoRefreshUndefined: Self = StObject.set(x, "stopAutoRefresh", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -199,62 +199,44 @@ object mod extends Shortcut {
   }
   object PicomatchOptions {
     
-    @scala.inline
-    def apply(): PicomatchOptions = {
+    inline def apply(): PicomatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PicomatchOptions]
     }
     
-    @scala.inline
-    implicit class PicomatchOptionsMutableBuilder[Self <: PicomatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PicomatchOptions](x: Self) {
       
-      @scala.inline
-      def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setFormat(value: /* input */ String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: /* input */ String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setOnIgnore(value: /* result */ Result => Unit): Self = StObject.set(x, "onIgnore", js.Any.fromFunction1(value))
+      inline def setOnIgnore(value: /* result */ Result => Unit): Self = StObject.set(x, "onIgnore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIgnoreUndefined: Self = StObject.set(x, "onIgnore", js.undefined)
+      inline def setOnIgnoreUndefined: Self = StObject.set(x, "onIgnore", js.undefined)
       
-      @scala.inline
-      def setOnMatch(value: /* result */ Result => Unit): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
+      inline def setOnMatch(value: /* result */ Result => Unit): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMatchUndefined: Self = StObject.set(x, "onMatch", js.undefined)
+      inline def setOnMatchUndefined: Self = StObject.set(x, "onMatch", js.undefined)
       
-      @scala.inline
-      def setOnResult(value: /* result */ Result => Unit): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
+      inline def setOnResult(value: /* result */ Result => Unit): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
+      inline def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
       
-      @scala.inline
-      def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
+      inline def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
     }
   }
   
@@ -278,8 +260,7 @@ object mod extends Shortcut {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       glob: String,
       input: String,
       isMatch: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['isMatch'] */ js.Any,
@@ -294,36 +275,27 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatch(
+      inline def setIsMatch(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['isMatch'] */ js.Any
       ): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(
+      inline def setMatch(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['match'] */ js.Any
       ): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosix(value: Boolean): Self = StObject.set(x, "posix", value.asInstanceOf[js.Any])
+      inline def setPosix(value: Boolean): Self = StObject.set(x, "posix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   

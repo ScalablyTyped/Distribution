@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](promise: js.Promise[T]): TrashablePromise[T] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[TrashablePromise[T]]
+  inline def apply[T](promise: js.Promise[T]): TrashablePromise[T] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[TrashablePromise[T]]
   
   @JSImport("trashable", JSImport.Namespace)
   @js.native

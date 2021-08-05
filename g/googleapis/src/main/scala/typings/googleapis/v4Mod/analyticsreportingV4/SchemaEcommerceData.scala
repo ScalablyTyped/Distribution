@@ -31,40 +31,29 @@ trait SchemaEcommerceData extends StObject {
 }
 object SchemaEcommerceData {
   
-  @scala.inline
-  def apply(): SchemaEcommerceData = {
+  inline def apply(): SchemaEcommerceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEcommerceData]
   }
   
-  @scala.inline
-  implicit class SchemaEcommerceDataMutableBuilder[Self <: SchemaEcommerceData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEcommerceData](x: Self) {
     
-    @scala.inline
-    def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    @scala.inline
-    def setEcommerceType(value: String): Self = StObject.set(x, "ecommerceType", value.asInstanceOf[js.Any])
+    inline def setEcommerceType(value: String): Self = StObject.set(x, "ecommerceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcommerceTypeUndefined: Self = StObject.set(x, "ecommerceType", js.undefined)
+    inline def setEcommerceTypeUndefined: Self = StObject.set(x, "ecommerceType", js.undefined)
     
-    @scala.inline
-    def setProducts(value: js.Array[SchemaProductData]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: js.Array[SchemaProductData]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setProductsVarargs(value: SchemaProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: SchemaProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
     
-    @scala.inline
-    def setTransaction(value: SchemaTransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: SchemaTransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

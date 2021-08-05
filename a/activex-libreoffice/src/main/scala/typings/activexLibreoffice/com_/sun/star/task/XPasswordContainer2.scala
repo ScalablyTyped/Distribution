@@ -18,8 +18,7 @@ trait XPasswordContainer2
      with XUrlContainer
 object XPasswordContainer2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     add: (String, String, SeqEquiv[String], XInteractionHandler) => Unit,
     addPersistent: (String, String, SeqEquiv[String], XInteractionHandler) => Unit,

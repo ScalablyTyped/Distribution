@@ -23,8 +23,7 @@ trait BatchAddFacetToObject extends StObject {
 }
 object BatchAddFacetToObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ObjectAttributeList: AttributeKeyAndValueList,
     ObjectReference: ObjectReference,
     SchemaFacet: SchemaFacet
@@ -33,19 +32,14 @@ object BatchAddFacetToObject {
     __obj.asInstanceOf[BatchAddFacetToObject]
   }
   
-  @scala.inline
-  implicit class BatchAddFacetToObjectMutableBuilder[Self <: BatchAddFacetToObject] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAddFacetToObject](x: Self) {
     
-    @scala.inline
-    def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
+    inline def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
+    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaFacet(value: SchemaFacet): Self = StObject.set(x, "SchemaFacet", value.asInstanceOf[js.Any])
+    inline def setSchemaFacet(value: SchemaFacet): Self = StObject.set(x, "SchemaFacet", value.asInstanceOf[js.Any])
   }
 }

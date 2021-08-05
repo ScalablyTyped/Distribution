@@ -13,19 +13,15 @@ trait BuildBatchFilter extends StObject {
 }
 object BuildBatchFilter {
   
-  @scala.inline
-  def apply(): BuildBatchFilter = {
+  inline def apply(): BuildBatchFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBatchFilter]
   }
   
-  @scala.inline
-  implicit class BuildBatchFilterMutableBuilder[Self <: BuildBatchFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBatchFilter](x: Self) {
     
-    @scala.inline
-    def setStatus(value: StatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

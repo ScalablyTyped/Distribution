@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object insideWorkerMod {
   
-  @scala.inline
-  def apply(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): WorkerInterface = ^.asInstanceOf[js.Dynamic].apply(listener.asInstanceOf[js.Any]).asInstanceOf[WorkerInterface]
+  inline def apply(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): WorkerInterface = ^.asInstanceOf[js.Dynamic].apply(listener.asInstanceOf[js.Any]).asInstanceOf[WorkerInterface]
   
   @JSImport("offscreen-canvas/inside-worker", JSImport.Namespace)
   @js.native

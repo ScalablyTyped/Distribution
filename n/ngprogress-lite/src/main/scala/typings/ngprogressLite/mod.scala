@@ -25,8 +25,7 @@ object mod {
     }
     object IConfigurationOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         ease: String,
         minimum: Double,
         speed: Double,
@@ -38,26 +37,19 @@ object mod {
         __obj.asInstanceOf[IConfigurationOptions]
       }
       
-      @scala.inline
-      implicit class IConfigurationOptionsMutableBuilder[Self <: IConfigurationOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IConfigurationOptions](x: Self) {
         
-        @scala.inline
-        def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+        inline def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+        inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+        inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrickleRate(value: Double): Self = StObject.set(x, "trickleRate", value.asInstanceOf[js.Any])
+        inline def setTrickleRate(value: Double): Self = StObject.set(x, "trickleRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrickleSpeed(value: Double): Self = StObject.set(x, "trickleSpeed", value.asInstanceOf[js.Any])
+        inline def setTrickleSpeed(value: Double): Self = StObject.set(x, "trickleSpeed", value.asInstanceOf[js.Any])
       }
     }
     
@@ -82,17 +74,14 @@ object mod {
     }
     object INgProgressLiteProvider {
       
-      @scala.inline
-      def apply(settings: IConfigurationOptions): INgProgressLiteProvider = {
+      inline def apply(settings: IConfigurationOptions): INgProgressLiteProvider = {
         val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
         __obj.asInstanceOf[INgProgressLiteProvider]
       }
       
-      @scala.inline
-      implicit class INgProgressLiteProviderMutableBuilder[Self <: INgProgressLiteProvider] (val x: Self) extends AnyVal {
+      extension [Self <: INgProgressLiteProvider](x: Self) {
         
-        @scala.inline
-        def setSettings(value: IConfigurationOptions): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+        inline def setSettings(value: IConfigurationOptions): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       }
     }
   }

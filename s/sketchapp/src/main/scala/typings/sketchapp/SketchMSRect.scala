@@ -21,31 +21,23 @@ trait SketchMSRect extends StObject {
 }
 object SketchMSRect {
   
-  @scala.inline
-  def apply(constrainProportions: Boolean, height: Double, width: Double, x: Double, y: Double): SketchMSRect = {
+  inline def apply(constrainProportions: Boolean, height: Double, width: Double, x: Double, y: Double): SketchMSRect = {
     val __obj = js.Dynamic.literal(_class = "rect", constrainProportions = constrainProportions.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSRect]
   }
   
-  @scala.inline
-  implicit class SketchMSRectMutableBuilder[Self <: SketchMSRect] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSRect](x: Self) {
     
-    @scala.inline
-    def setConstrainProportions(value: Boolean): Self = StObject.set(x, "constrainProportions", value.asInstanceOf[js.Any])
+    inline def setConstrainProportions(value: Boolean): Self = StObject.set(x, "constrainProportions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: rect): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: rect): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

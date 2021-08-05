@@ -37,8 +37,7 @@ trait AttributeMemberType
 }
 object AttributeMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     inherit: Boolean,
@@ -51,31 +50,22 @@ object AttributeMemberType {
     __obj.asInstanceOf[AttributeMemberType]
   }
   
-  @scala.inline
-  implicit class AttributeMemberTypeMutableBuilder[Self <: AttributeMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeMemberType](x: Self) {
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: InterfaceMixinType | InterfaceType | NamespaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: InterfaceMixinType | InterfaceType | NamespaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecial(value: static | stringifier): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+    inline def setSpecial(value: static | stringifier): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialNull: Self = StObject.set(x, "special", null)
+    inline def setSpecialNull: Self = StObject.set(x, "special", null)
     
-    @scala.inline
-    def setType(value: attribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: attribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

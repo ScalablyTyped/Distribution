@@ -17,19 +17,15 @@ trait SchemaThirdPartyPrincipal extends StObject {
 }
 object SchemaThirdPartyPrincipal {
   
-  @scala.inline
-  def apply(): SchemaThirdPartyPrincipal = {
+  inline def apply(): SchemaThirdPartyPrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaThirdPartyPrincipal]
   }
   
-  @scala.inline
-  implicit class SchemaThirdPartyPrincipalMutableBuilder[Self <: SchemaThirdPartyPrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaThirdPartyPrincipal](x: Self) {
     
-    @scala.inline
-    def setThirdPartyClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
+    inline def setThirdPartyClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyClaimsUndefined: Self = StObject.set(x, "thirdPartyClaims", js.undefined)
+    inline def setThirdPartyClaimsUndefined: Self = StObject.set(x, "thirdPartyClaims", js.undefined)
   }
 }

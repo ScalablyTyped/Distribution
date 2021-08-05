@@ -10,19 +10,15 @@ trait WebExtensionDictionaryManifestApplications extends StObject {
 }
 object WebExtensionDictionaryManifestApplications {
   
-  @scala.inline
-  def apply(): WebExtensionDictionaryManifestApplications = {
+  inline def apply(): WebExtensionDictionaryManifestApplications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionDictionaryManifestApplications]
   }
   
-  @scala.inline
-  implicit class WebExtensionDictionaryManifestApplicationsMutableBuilder[Self <: WebExtensionDictionaryManifestApplications] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionDictionaryManifestApplications](x: Self) {
     
-    @scala.inline
-    def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
+    inline def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
+    inline def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
   }
 }

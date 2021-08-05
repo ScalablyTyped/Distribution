@@ -19,8 +19,7 @@ trait SlideTitleProperties
 }
 object SlideTitleProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object SlideTitleProperties {
     __obj.asInstanceOf[SlideTitleProperties]
   }
   
-  @scala.inline
-  implicit class SlideTitlePropertiesMutableBuilder[Self <: SlideTitleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SlideTitleProperties](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object inlineCriticalStrings {
   
   @js.native
   sealed trait body extends StObject
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
   sealed trait head extends StObject
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  inline def head: head = "head".asInstanceOf[head]
 }

@@ -32,8 +32,7 @@ trait Activity
 }
 object Activity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -59,52 +58,36 @@ object Activity {
     __obj.asInstanceOf[Activity]
   }
   
-  @scala.inline
-  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+  extension [Self <: Activity](x: Self) {
     
-    @scala.inline
-    def setBoundaryEventRefs(value: js.Array[BoundaryEvent]): Self = StObject.set(x, "boundaryEventRefs", value.asInstanceOf[js.Any])
+    inline def setBoundaryEventRefs(value: js.Array[BoundaryEvent]): Self = StObject.set(x, "boundaryEventRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryEventRefsVarargs(value: BoundaryEvent*): Self = StObject.set(x, "boundaryEventRefs", js.Array(value :_*))
+    inline def setBoundaryEventRefsVarargs(value: BoundaryEvent*): Self = StObject.set(x, "boundaryEventRefs", js.Array(value :_*))
     
-    @scala.inline
-    def setCompletionQuantity(value: Double): Self = StObject.set(x, "completionQuantity", value.asInstanceOf[js.Any])
+    inline def setCompletionQuantity(value: Double): Self = StObject.set(x, "completionQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = StObject.set(x, "dataInputAssociations", value.asInstanceOf[js.Any])
+    inline def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = StObject.set(x, "dataInputAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value :_*))
+    inline def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
+    inline def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value :_*))
+    inline def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIoSpecification(value: InputOutputSpecification): Self = StObject.set(x, "ioSpecification", value.asInstanceOf[js.Any])
+    inline def setIoSpecification(value: InputOutputSpecification): Self = StObject.set(x, "ioSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsForCompensation(value: Boolean): Self = StObject.set(x, "isForCompensation", value.asInstanceOf[js.Any])
+    inline def setIsForCompensation(value: Boolean): Self = StObject.set(x, "isForCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopCharacteristics(value: LoopCharacteristics): Self = StObject.set(x, "loopCharacteristics", value.asInstanceOf[js.Any])
+    inline def setLoopCharacteristics(value: LoopCharacteristics): Self = StObject.set(x, "loopCharacteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: ResourceRole): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceRole): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartQuantity(value: Double): Self = StObject.set(x, "startQuantity", value.asInstanceOf[js.Any])
+    inline def setStartQuantity(value: Double): Self = StObject.set(x, "startQuantity", value.asInstanceOf[js.Any])
   }
 }

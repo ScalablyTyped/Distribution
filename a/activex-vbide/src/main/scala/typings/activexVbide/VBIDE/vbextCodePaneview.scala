@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait vbextCodePaneview extends StObject
 object vbextCodePaneview {
   
-  @scala.inline
-  def vbext_cv_FullModuleView: `1` = 1.asInstanceOf[`1`]
+  inline def vbext_cv_FullModuleView: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def vbext_cv_ProcedureView: `0` = 0.asInstanceOf[`0`]
+  inline def vbext_cv_ProcedureView: `0` = 0.asInstanceOf[`0`]
 }

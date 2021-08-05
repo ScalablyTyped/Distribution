@@ -31,8 +31,7 @@ object mod {
   @JSImport("express-brute-redis", "Redis")
   @js.native
   def Redis: js.Any = js.native
-  @scala.inline
-  def Redis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Redis")(x.asInstanceOf[js.Any])
+  inline def Redis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Redis")(x.asInstanceOf[js.Any])
   
   /* static member */
   object defaults {
@@ -44,20 +43,17 @@ object mod {
     @JSImport("express-brute-redis", "defaults.host")
     @js.native
     def host: String = js.native
-    @scala.inline
-    def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
+    inline def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
     
     @JSImport("express-brute-redis", "defaults.port")
     @js.native
     def port: String = js.native
-    @scala.inline
-    def port_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("port")(x.asInstanceOf[js.Any])
+    inline def port_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("port")(x.asInstanceOf[js.Any])
     
     @JSImport("express-brute-redis", "defaults.prefix")
     @js.native
     def prefix: String = js.native
-    @scala.inline
-    def prefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
+    inline def prefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
   }
   
   /**

@@ -15,19 +15,15 @@ trait VenueData extends StObject {
 }
 object VenueData {
   
-  @scala.inline
-  def apply(id: String, level: String): VenueData = {
+  inline def apply(id: String, level: String): VenueData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[VenueData]
   }
   
-  @scala.inline
-  implicit class VenueDataMutableBuilder[Self <: VenueData] (val x: Self) extends AnyVal {
+  extension [Self <: VenueData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

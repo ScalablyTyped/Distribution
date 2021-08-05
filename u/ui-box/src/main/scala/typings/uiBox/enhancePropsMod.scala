@@ -14,8 +14,7 @@ object enhancePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(rawProps: EnhancerProps & ComponentPropsWithoutRef[js.Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawProps.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
+  inline def default(rawProps: EnhancerProps & ComponentPropsWithoutRef[js.Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawProps.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
   
   trait EnhancedPropsResult extends StObject {
     
@@ -25,20 +24,16 @@ object enhancePropsMod {
   }
   object EnhancedPropsResult {
     
-    @scala.inline
-    def apply(className: String, enhancedProps: PreservedProps): EnhancedPropsResult = {
+    inline def apply(className: String, enhancedProps: PreservedProps): EnhancedPropsResult = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], enhancedProps = enhancedProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnhancedPropsResult]
     }
     
-    @scala.inline
-    implicit class EnhancedPropsResultMutableBuilder[Self <: EnhancedPropsResult] (val x: Self) extends AnyVal {
+    extension [Self <: EnhancedPropsResult](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedProps(value: PreservedProps): Self = StObject.set(x, "enhancedProps", value.asInstanceOf[js.Any])
+      inline def setEnhancedProps(value: PreservedProps): Self = StObject.set(x, "enhancedProps", value.asInstanceOf[js.Any])
     }
   }
   

@@ -22,20 +22,16 @@ object cutlerySmallMod extends Shortcut {
   }
   object CutlerySmallProps {
     
-    @scala.inline
-    def apply(): CutlerySmallProps = {
+    inline def apply(): CutlerySmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CutlerySmallProps]
     }
     
-    @scala.inline
-    implicit class CutlerySmallPropsMutableBuilder[Self <: CutlerySmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: CutlerySmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

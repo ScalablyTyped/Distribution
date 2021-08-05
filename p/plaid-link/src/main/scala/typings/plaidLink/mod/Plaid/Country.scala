@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Country extends StObject
 object Country {
   
-  @scala.inline
-  def CA: typings.plaidLink.plaidLinkStrings.CA = "CA".asInstanceOf[typings.plaidLink.plaidLinkStrings.CA]
+  inline def CA: typings.plaidLink.plaidLinkStrings.CA = "CA".asInstanceOf[typings.plaidLink.plaidLinkStrings.CA]
   
-  @scala.inline
-  def GB: typings.plaidLink.plaidLinkStrings.GB = "GB".asInstanceOf[typings.plaidLink.plaidLinkStrings.GB]
+  inline def GB: typings.plaidLink.plaidLinkStrings.GB = "GB".asInstanceOf[typings.plaidLink.plaidLinkStrings.GB]
   
-  @scala.inline
-  def US: typings.plaidLink.plaidLinkStrings.US = "US".asInstanceOf[typings.plaidLink.plaidLinkStrings.US]
+  inline def US: typings.plaidLink.plaidLinkStrings.US = "US".asInstanceOf[typings.plaidLink.plaidLinkStrings.US]
 }

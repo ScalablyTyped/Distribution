@@ -8,11 +8,9 @@ object readmoreJsStrings {
   
   @js.native
   sealed trait after extends StObject
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait before extends StObject
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
+  inline def before: before = "before".asInstanceOf[before]
 }

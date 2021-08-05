@@ -44,8 +44,7 @@ trait SystemMediaTransportControlsDisplayUpdater extends StObject {
 }
 object SystemMediaTransportControlsDisplayUpdater {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appMediaId: String,
     clearAll: () => Unit,
     copyFromFileAsync: (MediaPlaybackType, StorageFile) => IPromiseWithIAsyncOperation[Boolean],
@@ -61,34 +60,24 @@ object SystemMediaTransportControlsDisplayUpdater {
     __obj.asInstanceOf[SystemMediaTransportControlsDisplayUpdater]
   }
   
-  @scala.inline
-  implicit class SystemMediaTransportControlsDisplayUpdaterMutableBuilder[Self <: SystemMediaTransportControlsDisplayUpdater] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMediaTransportControlsDisplayUpdater](x: Self) {
     
-    @scala.inline
-    def setAppMediaId(value: String): Self = StObject.set(x, "appMediaId", value.asInstanceOf[js.Any])
+    inline def setAppMediaId(value: String): Self = StObject.set(x, "appMediaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
+    inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopyFromFileAsync(value: (MediaPlaybackType, StorageFile) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "copyFromFileAsync", js.Any.fromFunction2(value))
+    inline def setCopyFromFileAsync(value: (MediaPlaybackType, StorageFile) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "copyFromFileAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setImageProperties(value: ImageDisplayProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+    inline def setImageProperties(value: ImageDisplayProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMusicProperties(value: MusicDisplayProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
+    inline def setMusicProperties(value: MusicDisplayProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MediaPlaybackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MediaPlaybackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVideoProperties(value: VideoDisplayProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+    inline def setVideoProperties(value: VideoDisplayProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
   }
 }

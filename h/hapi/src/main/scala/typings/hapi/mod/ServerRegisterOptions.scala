@@ -20,25 +20,19 @@ trait ServerRegisterOptions extends StObject {
 }
 object ServerRegisterOptions {
   
-  @scala.inline
-  def apply(): ServerRegisterOptions = {
+  inline def apply(): ServerRegisterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerRegisterOptions]
   }
   
-  @scala.inline
-  implicit class ServerRegisterOptionsMutableBuilder[Self <: ServerRegisterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerRegisterOptions](x: Self) {
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: Vhost): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: Vhost): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
   }
 }

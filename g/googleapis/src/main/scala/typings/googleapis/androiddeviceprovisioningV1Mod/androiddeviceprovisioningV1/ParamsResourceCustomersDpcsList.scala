@@ -25,25 +25,19 @@ trait ParamsResourceCustomersDpcsList
 }
 object ParamsResourceCustomersDpcsList {
   
-  @scala.inline
-  def apply(): ParamsResourceCustomersDpcsList = {
+  inline def apply(): ParamsResourceCustomersDpcsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCustomersDpcsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCustomersDpcsListMutableBuilder[Self <: ParamsResourceCustomersDpcsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCustomersDpcsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
-  @scala.inline
-  def default(options: RollupCommonJSOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  inline def default(options: RollupCommonJSOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   trait RollupCommonJSOptions extends StObject {
     
@@ -70,68 +68,48 @@ object mod {
   }
   object RollupCommonJSOptions {
     
-    @scala.inline
-    def apply(): RollupCommonJSOptions = {
+    inline def apply(): RollupCommonJSOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RollupCommonJSOptions]
     }
     
-    @scala.inline
-    implicit class RollupCommonJSOptionsMutableBuilder[Self <: RollupCommonJSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RollupCommonJSOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: js.Array[String | RegExp]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String | RegExp]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnore(value: js.Array[String | (js.Function1[/* id */ String, Boolean])]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String | (js.Function1[/* id */ String, Boolean])]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreGlobal(value: Boolean): Self = StObject.set(x, "ignoreGlobal", value.asInstanceOf[js.Any])
+      inline def setIgnoreGlobal(value: Boolean): Self = StObject.set(x, "ignoreGlobal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreGlobalUndefined: Self = StObject.set(x, "ignoreGlobal", js.undefined)
+      inline def setIgnoreGlobalUndefined: Self = StObject.set(x, "ignoreGlobal", js.undefined)
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: (String | (js.Function1[/* id */ String, Boolean]))*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | (js.Function1[/* id */ String, Boolean]))*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setNamedExports(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
+      inline def setNamedExports(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedExportsUndefined: Self = StObject.set(x, "namedExports", js.undefined)
+      inline def setNamedExportsUndefined: Self = StObject.set(x, "namedExports", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
   }
 }

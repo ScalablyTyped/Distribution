@@ -24,14 +24,12 @@ object flexFlexMod {
     @JSImport("@ant-design/react-native/lib/flex/Flex", "default.Item")
     @js.native
     def Item: js.Any = js.native
-    @scala.inline
-    def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/flex/Flex", "default.defaultProps")
     @js.native
     def defaultProps: Align = js.native
-    @scala.inline
-    def defaultProps_=(x: Align): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Align): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -54,47 +52,34 @@ object flexFlexMod {
   }
   object FlexProps {
     
-    @scala.inline
-    def apply(): FlexProps = {
+    inline def apply(): FlexProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexProps]
     }
     
-    @scala.inline
-    implicit class FlexPropsMutableBuilder[Self <: FlexProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlexProps](x: Self) {
       
-      @scala.inline
-      def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
+      inline def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+      inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressIn(value: () => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction0(value))
+      inline def setOnPressIn(value: () => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
       
-      @scala.inline
-      def setOnPressOut(value: () => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction0(value))
+      inline def setOnPressOut(value: () => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

@@ -33,43 +33,31 @@ trait FontcolorHoverstate extends StObject {
 }
 object FontcolorHoverstate {
   
-  @scala.inline
-  def apply(): FontcolorHoverstate = {
+  inline def apply(): FontcolorHoverstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontcolorHoverstate]
   }
   
-  @scala.inline
-  implicit class FontcolorHoverstateMutableBuilder[Self <: FontcolorHoverstate] (val x: Self) extends AnyVal {
+  extension [Self <: FontcolorHoverstate](x: Self) {
     
-    @scala.inline
-    def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+    inline def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
-    @scala.inline
-    def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
+    inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
+    inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
-    @scala.inline
-    def `setBorder-width`(value: js.Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    inline def `setBorder-width`(value: js.Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
+    inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
-    @scala.inline
-    def `setFont-color`(value: String): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
+    inline def `setFont-color`(value: String): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
+    inline def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
     
-    @scala.inline
-    def `setHover-state`(value: js.Any): Self = StObject.set(x, "hover-state", value.asInstanceOf[js.Any])
+    inline def `setHover-state`(value: js.Any): Self = StObject.set(x, "hover-state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHover-stateUndefined`: Self = StObject.set(x, "hover-state", js.undefined)
+    inline def `setHover-stateUndefined`: Self = StObject.set(x, "hover-state", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait HeapStatsUpdateEventDataType extends StObject {
 }
 object HeapStatsUpdateEventDataType {
   
-  @scala.inline
-  def apply(statsUpdate: js.Array[Double]): HeapStatsUpdateEventDataType = {
+  inline def apply(statsUpdate: js.Array[Double]): HeapStatsUpdateEventDataType = {
     val __obj = js.Dynamic.literal(statsUpdate = statsUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeapStatsUpdateEventDataType]
   }
   
-  @scala.inline
-  implicit class HeapStatsUpdateEventDataTypeMutableBuilder[Self <: HeapStatsUpdateEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: HeapStatsUpdateEventDataType](x: Self) {
     
-    @scala.inline
-    def setStatsUpdate(value: js.Array[Double]): Self = StObject.set(x, "statsUpdate", value.asInstanceOf[js.Any])
+    inline def setStatsUpdate(value: js.Array[Double]): Self = StObject.set(x, "statsUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUpdateVarargs(value: Double*): Self = StObject.set(x, "statsUpdate", js.Array(value :_*))
+    inline def setStatsUpdateVarargs(value: Double*): Self = StObject.set(x, "statsUpdate", js.Array(value :_*))
   }
 }

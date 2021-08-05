@@ -15,19 +15,15 @@ trait IPInformation extends StObject {
 }
 object IPInformation {
   
-  @scala.inline
-  def apply(networkAdapter: NetworkAdapter, prefixLength: Double): IPInformation = {
+  inline def apply(networkAdapter: NetworkAdapter, prefixLength: Double): IPInformation = {
     val __obj = js.Dynamic.literal(networkAdapter = networkAdapter.asInstanceOf[js.Any], prefixLength = prefixLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPInformation]
   }
   
-  @scala.inline
-  implicit class IPInformationMutableBuilder[Self <: IPInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IPInformation](x: Self) {
     
-    @scala.inline
-    def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
+    inline def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
+    inline def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
   }
 }

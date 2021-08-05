@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPresetLightingDirection extends StObject
 object MsoPresetLightingDirection {
   
-  @scala.inline
-  def msoLightingBottom: `8` = 8.asInstanceOf[`8`]
+  inline def msoLightingBottom: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoLightingBottomLeft: `7` = 7.asInstanceOf[`7`]
+  inline def msoLightingBottomLeft: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoLightingBottomRight: `9` = 9.asInstanceOf[`9`]
+  inline def msoLightingBottomRight: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoLightingLeft: `4` = 4.asInstanceOf[`4`]
+  inline def msoLightingLeft: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoLightingNone: `5` = 5.asInstanceOf[`5`]
+  inline def msoLightingNone: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoLightingRight: `6` = 6.asInstanceOf[`6`]
+  inline def msoLightingRight: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoLightingTop: `2` = 2.asInstanceOf[`2`]
+  inline def msoLightingTop: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoLightingTopLeft: `1` = 1.asInstanceOf[`1`]
+  inline def msoLightingTopLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoLightingTopRight: `3` = 3.asInstanceOf[`3`]
+  inline def msoLightingTopRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoPresetLightingDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoPresetLightingDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
 }

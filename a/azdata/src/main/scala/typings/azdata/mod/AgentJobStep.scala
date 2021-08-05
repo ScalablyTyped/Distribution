@@ -22,8 +22,7 @@ trait AgentJobStep extends StObject {
 }
 object AgentJobStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     jobId: String,
     message: String,
     runDate: String,
@@ -36,28 +35,20 @@ object AgentJobStep {
     __obj.asInstanceOf[AgentJobStep]
   }
   
-  @scala.inline
-  implicit class AgentJobStepMutableBuilder[Self <: AgentJobStep] (val x: Self) extends AnyVal {
+  extension [Self <: AgentJobStep](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunDate(value: String): Self = StObject.set(x, "runDate", value.asInstanceOf[js.Any])
+    inline def setRunDate(value: String): Self = StObject.set(x, "runDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunStatus(value: Double): Self = StObject.set(x, "runStatus", value.asInstanceOf[js.Any])
+    inline def setRunStatus(value: Double): Self = StObject.set(x, "runStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepDetails(value: AgentJobStepInfo): Self = StObject.set(x, "stepDetails", value.asInstanceOf[js.Any])
+    inline def setStepDetails(value: AgentJobStepInfo): Self = StObject.set(x, "stepDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
+    inline def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
   }
 }

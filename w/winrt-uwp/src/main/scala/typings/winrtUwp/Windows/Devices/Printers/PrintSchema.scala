@@ -31,8 +31,7 @@ trait PrintSchema extends StObject {
 }
 object PrintSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCapabilitiesAsync: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType],
     getDefaultPrintTicketAsync: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType],
     mergeAndValidateWithDefaultPrintTicketAsync: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
@@ -41,19 +40,15 @@ object PrintSchema {
     __obj.asInstanceOf[PrintSchema]
   }
   
-  @scala.inline
-  implicit class PrintSchemaMutableBuilder[Self <: PrintSchema] (val x: Self) extends AnyVal {
+  extension [Self <: PrintSchema](x: Self) {
     
-    @scala.inline
-    def setGetCapabilitiesAsync(
+    inline def setGetCapabilitiesAsync(
       value: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
     ): Self = StObject.set(x, "getCapabilitiesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultPrintTicketAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "getDefaultPrintTicketAsync", js.Any.fromFunction0(value))
+    inline def setGetDefaultPrintTicketAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "getDefaultPrintTicketAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMergeAndValidateWithDefaultPrintTicketAsync(
+    inline def setMergeAndValidateWithDefaultPrintTicketAsync(
       value: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
     ): Self = StObject.set(x, "mergeAndValidateWithDefaultPrintTicketAsync", js.Any.fromFunction1(value))
   }

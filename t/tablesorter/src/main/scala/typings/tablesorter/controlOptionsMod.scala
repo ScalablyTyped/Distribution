@@ -15,20 +15,16 @@ object controlOptionsMod {
   }
   object ControlOptions {
     
-    @scala.inline
-    def apply(): ControlOptions = {
+    inline def apply(): ControlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ControlOptions]
     }
     
-    @scala.inline
-    implicit class ControlOptionsMutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ControlOptions](x: Self) {
       
-      @scala.inline
-      def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
+      inline def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellTextUndefined: Self = StObject.set(x, "cellText", js.undefined)
+      inline def setCellTextUndefined: Self = StObject.set(x, "cellText", js.undefined)
     }
   }
 }

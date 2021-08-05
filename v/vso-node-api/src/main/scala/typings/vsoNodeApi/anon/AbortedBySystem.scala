@@ -26,8 +26,7 @@ trait AbortedBySystem extends StObject {
 }
 object AbortedBySystem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abortedBySystem: scala.Double,
     analyzed: scala.Double,
     canceledByUser: scala.Double,
@@ -42,34 +41,24 @@ object AbortedBySystem {
     __obj.asInstanceOf[AbortedBySystem]
   }
   
-  @scala.inline
-  implicit class AbortedBySystemMutableBuilder[Self <: AbortedBySystem] (val x: Self) extends AnyVal {
+  extension [Self <: AbortedBySystem](x: Self) {
     
-    @scala.inline
-    def setAbortedBySystem(value: scala.Double): Self = StObject.set(x, "abortedBySystem", value.asInstanceOf[js.Any])
+    inline def setAbortedBySystem(value: scala.Double): Self = StObject.set(x, "abortedBySystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyzed(value: scala.Double): Self = StObject.set(x, "analyzed", value.asInstanceOf[js.Any])
+    inline def setAnalyzed(value: scala.Double): Self = StObject.set(x, "analyzed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceledByUser(value: scala.Double): Self = StObject.set(x, "canceledByUser", value.asInstanceOf[js.Any])
+    inline def setCanceledByUser(value: scala.Double): Self = StObject.set(x, "canceledByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancellationInProgress(value: scala.Double): Self = StObject.set(x, "cancellationInProgress", value.asInstanceOf[js.Any])
+    inline def setCancellationInProgress(value: scala.Double): Self = StObject.set(x, "cancellationInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatingEnvironment(value: scala.Double): Self = StObject.set(x, "creatingEnvironment", value.asInstanceOf[js.Any])
+    inline def setCreatingEnvironment(value: scala.Double): Self = StObject.set(x, "creatingEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingAnalysis(value: scala.Double): Self = StObject.set(x, "pendingAnalysis", value.asInstanceOf[js.Any])
+    inline def setPendingAnalysis(value: scala.Double): Self = StObject.set(x, "pendingAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningTests(value: scala.Double): Self = StObject.set(x, "runningTests", value.asInstanceOf[js.Any])
+    inline def setRunningTests(value: scala.Double): Self = StObject.set(x, "runningTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedOut(value: scala.Double): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+    inline def setTimedOut(value: scala.Double): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
   }
 }

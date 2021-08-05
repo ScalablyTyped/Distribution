@@ -55,8 +55,7 @@ trait Tickable extends StObject {
 }
 object Tickable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addModifier: Modifier => Tickable,
     addToModifierContext: ModifierContext => Unit,
     applyTickMultiplier: (Double, Double) => Unit,
@@ -85,76 +84,52 @@ object Tickable {
     __obj.asInstanceOf[Tickable]
   }
   
-  @scala.inline
-  implicit class TickableMutableBuilder[Self <: Tickable] (val x: Self) extends AnyVal {
+  extension [Self <: Tickable](x: Self) {
     
-    @scala.inline
-    def setAddModifier(value: Modifier => Tickable): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
+    inline def setAddModifier(value: Modifier => Tickable): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddToModifierContext(value: ModifierContext => Unit): Self = StObject.set(x, "addToModifierContext", js.Any.fromFunction1(value))
+    inline def setAddToModifierContext(value: ModifierContext => Unit): Self = StObject.set(x, "addToModifierContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyTickMultiplier(value: (Double, Double) => Unit): Self = StObject.set(x, "applyTickMultiplier", js.Any.fromFunction2(value))
+    inline def setApplyTickMultiplier(value: (Double, Double) => Unit): Self = StObject.set(x, "applyTickMultiplier", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBoundingBox(value: () => BoundingBox): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
+    inline def setGetBoundingBox(value: () => BoundingBox): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCenterXShift(value: () => Double): Self = StObject.set(x, "getCenterXShift", js.Any.fromFunction0(value))
+    inline def setGetCenterXShift(value: () => Double): Self = StObject.set(x, "getCenterXShift", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIntrinsicTicks(value: () => Fraction): Self = StObject.set(x, "getIntrinsicTicks", js.Any.fromFunction0(value))
+    inline def setGetIntrinsicTicks(value: () => Fraction): Self = StObject.set(x, "getIntrinsicTicks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTickMultiplier(value: () => Fraction): Self = StObject.set(x, "getTickMultiplier", js.Any.fromFunction0(value))
+    inline def setGetTickMultiplier(value: () => Fraction): Self = StObject.set(x, "getTickMultiplier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTicks(value: () => Fraction): Self = StObject.set(x, "getTicks", js.Any.fromFunction0(value))
+    inline def setGetTicks(value: () => Fraction): Self = StObject.set(x, "getTicks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTuplet(value: () => Tuplet): Self = StObject.set(x, "getTuplet", js.Any.fromFunction0(value))
+    inline def setGetTuplet(value: () => Tuplet): Self = StObject.set(x, "getTuplet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVoice(value: () => Voice): Self = StObject.set(x, "getVoice", js.Any.fromFunction0(value))
+    inline def setGetVoice(value: () => Voice): Self = StObject.set(x, "getVoice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCenterAligned(value: () => Boolean): Self = StObject.set(x, "isCenterAligned", js.Any.fromFunction0(value))
+    inline def setIsCenterAligned(value: () => Boolean): Self = StObject.set(x, "isCenterAligned", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostFormat(value: () => Tickable): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
+    inline def setPostFormat(value: () => Tickable): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
+    inline def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCenterAlignment(value: Boolean => Tickable): Self = StObject.set(x, "setCenterAlignment", js.Any.fromFunction1(value))
+    inline def setSetCenterAlignment(value: Boolean => Tickable): Self = StObject.set(x, "setCenterAlignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDuration(value: Fraction => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+    inline def setSetDuration(value: Fraction => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIntrinsicTicks(value: Fraction => Unit): Self = StObject.set(x, "setIntrinsicTicks", js.Any.fromFunction1(value))
+    inline def setSetIntrinsicTicks(value: Fraction => Unit): Self = StObject.set(x, "setIntrinsicTicks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTickContext(value: TickContext => Unit): Self = StObject.set(x, "setTickContext", js.Any.fromFunction1(value))
+    inline def setSetTickContext(value: TickContext => Unit): Self = StObject.set(x, "setTickContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTuplet(value: Tuplet => Tickable): Self = StObject.set(x, "setTuplet", js.Any.fromFunction1(value))
+    inline def setSetTuplet(value: Tuplet => Tickable): Self = StObject.set(x, "setTuplet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVoice(value: Voice => Unit): Self = StObject.set(x, "setVoice", js.Any.fromFunction1(value))
+    inline def setSetVoice(value: Voice => Unit): Self = StObject.set(x, "setVoice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXShift(value: Double => Tickable): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
+    inline def setSetXShift(value: Double => Tickable): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldIgnoreTicks(value: () => Boolean): Self = StObject.set(x, "shouldIgnoreTicks", js.Any.fromFunction0(value))
+    inline def setShouldIgnoreTicks(value: () => Boolean): Self = StObject.set(x, "shouldIgnoreTicks", js.Any.fromFunction0(value))
   }
 }

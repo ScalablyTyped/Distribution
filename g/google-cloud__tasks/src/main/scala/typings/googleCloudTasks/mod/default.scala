@@ -61,8 +61,7 @@ object default {
   @JSImport("@google-cloud/tasks", "default.readonlyscopes")
   @js.native
   def readonlyscopes: String = js.native
-  @scala.inline
-  def readonlyscopes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readonlyscopes")(x.asInstanceOf[js.Any])
+  inline def readonlyscopes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readonlyscopes")(x.asInstanceOf[js.Any])
   
   /**
     * The DNS address for this API service.

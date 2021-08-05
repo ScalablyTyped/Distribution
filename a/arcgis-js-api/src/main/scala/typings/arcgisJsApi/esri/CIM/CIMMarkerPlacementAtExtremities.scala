@@ -26,31 +26,24 @@ trait CIMMarkerPlacementAtExtremities
 }
 object CIMMarkerPlacementAtExtremities {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementAtExtremities = {
+  inline def apply(): CIMMarkerPlacementAtExtremities = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementAtExtremities")
     __obj.asInstanceOf[CIMMarkerPlacementAtExtremities]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementAtExtremitiesMutableBuilder[Self <: CIMMarkerPlacementAtExtremities] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementAtExtremities](x: Self) {
     
-    @scala.inline
-    def setExtremityPlacement(
+    inline def setExtremityPlacement(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtremityPlacement * / any */ String
     ): Self = StObject.set(x, "extremityPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtremityPlacementUndefined: Self = StObject.set(x, "extremityPlacement", js.undefined)
+    inline def setExtremityPlacementUndefined: Self = StObject.set(x, "extremityPlacement", js.undefined)
     
-    @scala.inline
-    def setOffsetAlongLine(value: Double): Self = StObject.set(x, "offsetAlongLine", value.asInstanceOf[js.Any])
+    inline def setOffsetAlongLine(value: Double): Self = StObject.set(x, "offsetAlongLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetAlongLineUndefined: Self = StObject.set(x, "offsetAlongLine", js.undefined)
+    inline def setOffsetAlongLineUndefined: Self = StObject.set(x, "offsetAlongLine", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtExtremities): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtExtremities): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait UpdateSmsChannelRequest extends StObject {
 }
 object UpdateSmsChannelRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, SMSChannelRequest: SMSChannelRequest): UpdateSmsChannelRequest = {
+  inline def apply(ApplicationId: string, SMSChannelRequest: SMSChannelRequest): UpdateSmsChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SMSChannelRequest = SMSChannelRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSmsChannelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSmsChannelRequestMutableBuilder[Self <: UpdateSmsChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSmsChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMSChannelRequest(value: SMSChannelRequest): Self = StObject.set(x, "SMSChannelRequest", value.asInstanceOf[js.Any])
+    inline def setSMSChannelRequest(value: SMSChannelRequest): Self = StObject.set(x, "SMSChannelRequest", value.asInstanceOf[js.Any])
   }
 }

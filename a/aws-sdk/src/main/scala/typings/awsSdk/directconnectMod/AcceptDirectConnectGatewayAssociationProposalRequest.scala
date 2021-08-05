@@ -28,8 +28,7 @@ trait AcceptDirectConnectGatewayAssociationProposalRequest extends StObject {
 }
 object AcceptDirectConnectGatewayAssociationProposalRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     associatedGatewayOwnerAccount: OwnerAccount,
     directConnectGatewayId: DirectConnectGatewayId,
     proposalId: DirectConnectGatewayAssociationProposalId
@@ -38,25 +37,18 @@ object AcceptDirectConnectGatewayAssociationProposalRequest {
     __obj.asInstanceOf[AcceptDirectConnectGatewayAssociationProposalRequest]
   }
   
-  @scala.inline
-  implicit class AcceptDirectConnectGatewayAssociationProposalRequestMutableBuilder[Self <: AcceptDirectConnectGatewayAssociationProposalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptDirectConnectGatewayAssociationProposalRequest](x: Self) {
     
-    @scala.inline
-    def setAssociatedGatewayOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "associatedGatewayOwnerAccount", value.asInstanceOf[js.Any])
+    inline def setAssociatedGatewayOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "associatedGatewayOwnerAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
+    inline def setOverrideAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.undefined)
+    inline def setOverrideAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.undefined)
     
-    @scala.inline
-    def setOverrideAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    inline def setOverrideAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "overrideAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
     
-    @scala.inline
-    def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
   }
 }

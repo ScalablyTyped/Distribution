@@ -17,31 +17,23 @@ trait HistogramSeries extends StObject {
 }
 object HistogramSeries {
   
-  @scala.inline
-  def apply(): HistogramSeries = {
+  inline def apply(): HistogramSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramSeries]
   }
   
-  @scala.inline
-  implicit class HistogramSeriesMutableBuilder[Self <: HistogramSeries] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramSeries](x: Self) {
     
-    @scala.inline
-    def setBarColor(value: Color): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
+    inline def setBarColor(value: Color): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarColorStyle(value: ColorStyle): Self = StObject.set(x, "barColorStyle", value.asInstanceOf[js.Any])
+    inline def setBarColorStyle(value: ColorStyle): Self = StObject.set(x, "barColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarColorStyleUndefined: Self = StObject.set(x, "barColorStyle", js.undefined)
+    inline def setBarColorStyleUndefined: Self = StObject.set(x, "barColorStyle", js.undefined)
     
-    @scala.inline
-    def setBarColorUndefined: Self = StObject.set(x, "barColor", js.undefined)
+    inline def setBarColorUndefined: Self = StObject.set(x, "barColor", js.undefined)
     
-    @scala.inline
-    def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

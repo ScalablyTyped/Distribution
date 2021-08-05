@@ -19,37 +19,27 @@ trait ClientSideLoggingClientInfoObject extends StObject {
 }
 object ClientSideLoggingClientInfoObject {
   
-  @scala.inline
-  def apply(): ClientSideLoggingClientInfoObject = {
+  inline def apply(): ClientSideLoggingClientInfoObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientSideLoggingClientInfoObject]
   }
   
-  @scala.inline
-  implicit class ClientSideLoggingClientInfoObjectMutableBuilder[Self <: ClientSideLoggingClientInfoObject] (val x: Self) extends AnyVal {
+  extension [Self <: ClientSideLoggingClientInfoObject](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setScreen_size(value: Boolean): Self = StObject.set(x, "screen_size", value.asInstanceOf[js.Any])
+    inline def setScreen_size(value: Boolean): Self = StObject.set(x, "screen_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen_sizeUndefined: Self = StObject.set(x, "screen_size", js.undefined)
+    inline def setScreen_sizeUndefined: Self = StObject.set(x, "screen_size", js.undefined)
     
-    @scala.inline
-    def setUser_agent(value: Boolean): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
+    inline def setUser_agent(value: Boolean): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
+    inline def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
     
-    @scala.inline
-    def setWindow_size(value: Boolean): Self = StObject.set(x, "window_size", value.asInstanceOf[js.Any])
+    inline def setWindow_size(value: Boolean): Self = StObject.set(x, "window_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow_sizeUndefined: Self = StObject.set(x, "window_size", js.undefined)
+    inline def setWindow_sizeUndefined: Self = StObject.set(x, "window_size", js.undefined)
   }
 }

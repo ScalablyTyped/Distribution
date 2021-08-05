@@ -41,40 +41,29 @@ trait SchemaFormat extends StObject {
 }
 object SchemaFormat {
   
-  @scala.inline
-  def apply(): SchemaFormat = {
+  inline def apply(): SchemaFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFormat]
   }
   
-  @scala.inline
-  implicit class SchemaFormatMutableBuilder[Self <: SchemaFormat] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFormat](x: Self) {
     
-    @scala.inline
-    def setFormatComplexity(value: SchemaFormatComplexity): Self = StObject.set(x, "formatComplexity", value.asInstanceOf[js.Any])
+    inline def setFormatComplexity(value: SchemaFormatComplexity): Self = StObject.set(x, "formatComplexity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatComplexityUndefined: Self = StObject.set(x, "formatComplexity", js.undefined)
+    inline def setFormatComplexityUndefined: Self = StObject.set(x, "formatComplexity", js.undefined)
     
-    @scala.inline
-    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
+    inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[SchemaFile]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[SchemaFile]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: SchemaFile*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: SchemaFile*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setRoot(value: SchemaFile): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SchemaFile): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

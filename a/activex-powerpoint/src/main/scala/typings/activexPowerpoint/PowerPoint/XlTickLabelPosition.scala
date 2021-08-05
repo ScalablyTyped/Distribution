@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlTickLabelPosition extends StObject
 object XlTickLabelPosition {
   
-  @scala.inline
-  def xlTickLabelPositionHigh: `-4127` = -4127.asInstanceOf[`-4127`]
+  inline def xlTickLabelPositionHigh: `-4127` = -4127.asInstanceOf[`-4127`]
   
-  @scala.inline
-  def xlTickLabelPositionLow: `-4134` = -4134.asInstanceOf[`-4134`]
+  inline def xlTickLabelPositionLow: `-4134` = -4134.asInstanceOf[`-4134`]
   
-  @scala.inline
-  def xlTickLabelPositionNextToAxis: `4` = 4.asInstanceOf[`4`]
+  inline def xlTickLabelPositionNextToAxis: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlTickLabelPositionNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlTickLabelPositionNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }

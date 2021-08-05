@@ -43,8 +43,7 @@ trait CreateLocationFsxWindowsRequest extends StObject {
 }
 object CreateLocationFsxWindowsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FsxFilesystemArn: FsxFilesystemArn,
     Password: SmbPassword,
     SecurityGroupArns: Ec2SecurityGroupArnList,
@@ -54,43 +53,30 @@ object CreateLocationFsxWindowsRequest {
     __obj.asInstanceOf[CreateLocationFsxWindowsRequest]
   }
   
-  @scala.inline
-  implicit class CreateLocationFsxWindowsRequestMutableBuilder[Self <: CreateLocationFsxWindowsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationFsxWindowsRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setFsxFilesystemArn(value: FsxFilesystemArn): Self = StObject.set(x, "FsxFilesystemArn", value.asInstanceOf[js.Any])
+    inline def setFsxFilesystemArn(value: FsxFilesystemArn): Self = StObject.set(x, "FsxFilesystemArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: SmbPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SmbPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
+    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
     
-    @scala.inline
-    def setSubdirectory(value: FsxWindowsSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
+    inline def setSubdirectory(value: FsxWindowsSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
+    inline def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
     
-    @scala.inline
-    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait XSheetConditionalEntry
 }
 object XSheetConditionalEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StyleName: String,
     acquire: () => Unit,
     getStyleName: () => String,
@@ -38,16 +37,12 @@ object XSheetConditionalEntry {
     __obj.asInstanceOf[XSheetConditionalEntry]
   }
   
-  @scala.inline
-  implicit class XSheetConditionalEntryMutableBuilder[Self <: XSheetConditionalEntry] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetConditionalEntry](x: Self) {
     
-    @scala.inline
-    def setGetStyleName(value: () => String): Self = StObject.set(x, "getStyleName", js.Any.fromFunction0(value))
+    inline def setGetStyleName(value: () => String): Self = StObject.set(x, "getStyleName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetStyleName(value: String => Unit): Self = StObject.set(x, "setStyleName", js.Any.fromFunction1(value))
+    inline def setSetStyleName(value: String => Unit): Self = StObject.set(x, "setStyleName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
   }
 }

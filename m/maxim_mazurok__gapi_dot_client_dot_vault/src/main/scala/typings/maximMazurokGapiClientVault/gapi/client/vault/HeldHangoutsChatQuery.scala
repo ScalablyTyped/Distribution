@@ -11,19 +11,15 @@ trait HeldHangoutsChatQuery extends StObject {
 }
 object HeldHangoutsChatQuery {
   
-  @scala.inline
-  def apply(): HeldHangoutsChatQuery = {
+  inline def apply(): HeldHangoutsChatQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeldHangoutsChatQuery]
   }
   
-  @scala.inline
-  implicit class HeldHangoutsChatQueryMutableBuilder[Self <: HeldHangoutsChatQuery] (val x: Self) extends AnyVal {
+  extension [Self <: HeldHangoutsChatQuery](x: Self) {
     
-    @scala.inline
-    def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
+    inline def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
+    inline def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait TypeofGantt extends StObject {
 }
 object TypeofGantt {
   
-  @scala.inline
-  def apply(extend: js.Object => Gantt, fn: Gantt): TypeofGantt = {
+  inline def apply(extend: js.Object => Gantt, fn: Gantt): TypeofGantt = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofGantt]
   }
   
-  @scala.inline
-  implicit class TypeofGanttMutableBuilder[Self <: TypeofGantt] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofGantt](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Gantt): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Gantt): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Gantt): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Gantt): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

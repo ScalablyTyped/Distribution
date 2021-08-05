@@ -28,37 +28,27 @@ trait TaskRunFilterCriteria extends StObject {
 }
 object TaskRunFilterCriteria {
   
-  @scala.inline
-  def apply(): TaskRunFilterCriteria = {
+  inline def apply(): TaskRunFilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskRunFilterCriteria]
   }
   
-  @scala.inline
-  implicit class TaskRunFilterCriteriaMutableBuilder[Self <: TaskRunFilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRunFilterCriteria](x: Self) {
     
-    @scala.inline
-    def setStartedAfter(value: Timestamp): Self = StObject.set(x, "StartedAfter", value.asInstanceOf[js.Any])
+    inline def setStartedAfter(value: Timestamp): Self = StObject.set(x, "StartedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAfterUndefined: Self = StObject.set(x, "StartedAfter", js.undefined)
+    inline def setStartedAfterUndefined: Self = StObject.set(x, "StartedAfter", js.undefined)
     
-    @scala.inline
-    def setStartedBefore(value: Timestamp): Self = StObject.set(x, "StartedBefore", value.asInstanceOf[js.Any])
+    inline def setStartedBefore(value: Timestamp): Self = StObject.set(x, "StartedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedBeforeUndefined: Self = StObject.set(x, "StartedBefore", js.undefined)
+    inline def setStartedBeforeUndefined: Self = StObject.set(x, "StartedBefore", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskRunType(value: TaskType): Self = StObject.set(x, "TaskRunType", value.asInstanceOf[js.Any])
+    inline def setTaskRunType(value: TaskType): Self = StObject.set(x, "TaskRunType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRunTypeUndefined: Self = StObject.set(x, "TaskRunType", js.undefined)
+    inline def setTaskRunTypeUndefined: Self = StObject.set(x, "TaskRunType", js.undefined)
   }
 }

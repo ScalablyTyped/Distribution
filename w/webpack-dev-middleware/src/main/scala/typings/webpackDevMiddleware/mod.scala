@@ -15,12 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any
   ): WebpackDevMiddleware & NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[WebpackDevMiddleware & NextHandleFunction]
-  @scala.inline
-  def apply(
+  inline def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any,
     options: Options
   ): WebpackDevMiddleware & NextHandleFunction = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebpackDevMiddleware & NextHandleFunction]
@@ -111,126 +109,88 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFs(value: typings.memoryFs.mod.^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: typings.memoryFs.mod.^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String | Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String | Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: info | warn | error | trace | debug | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: info | warn | error | trace | debug | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setLogTime(value: Boolean): Self = StObject.set(x, "logTime", value.asInstanceOf[js.Any])
+      inline def setLogTime(value: Boolean): Self = StObject.set(x, "logTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogTimeUndefined: Self = StObject.set(x, "logTime", js.undefined)
+      inline def setLogTimeUndefined: Self = StObject.set(x, "logTime", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setMimeTypes(value: MimeTypeMap | OverrideMimeTypeMap): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+      inline def setMimeTypes(value: MimeTypeMap | OverrideMimeTypeMap): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypesNull: Self = StObject.set(x, "mimeTypes", null)
+      inline def setMimeTypesNull: Self = StObject.set(x, "mimeTypes", null)
       
-      @scala.inline
-      def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
+      inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setReporter(value: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction2(value))
+      inline def setReporter(value: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReporterNull: Self = StObject.set(x, "reporter", null)
+      inline def setReporterNull: Self = StObject.set(x, "reporter", null)
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setServerSideRender(value: Boolean): Self = StObject.set(x, "serverSideRender", value.asInstanceOf[js.Any])
+      inline def setServerSideRender(value: Boolean): Self = StObject.set(x, "serverSideRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideRenderUndefined: Self = StObject.set(x, "serverSideRender", js.undefined)
+      inline def setServerSideRenderUndefined: Self = StObject.set(x, "serverSideRender", js.undefined)
       
-      @scala.inline
-      def setStats(
+      inline def setStats(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
       ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setWatchOptions(
+      inline def setWatchOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.WatchOptions */ js.Any
       ): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
+      inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
       
-      @scala.inline
-      def setWriteToDisk(value: Boolean | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
+      inline def setWriteToDisk(value: Boolean | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteToDiskFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "writeToDisk", js.Any.fromFunction1(value))
+      inline def setWriteToDiskFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "writeToDisk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
+      inline def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
     }
   }
   
@@ -242,20 +202,16 @@ object mod {
   }
   object OverrideMimeTypeMap {
     
-    @scala.inline
-    def apply(force: Boolean, typeMap: MimeTypeMap): OverrideMimeTypeMap = {
+    inline def apply(force: Boolean, typeMap: MimeTypeMap): OverrideMimeTypeMap = {
       val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], typeMap = typeMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverrideMimeTypeMap]
     }
     
-    @scala.inline
-    implicit class OverrideMimeTypeMapMutableBuilder[Self <: OverrideMimeTypeMap] (val x: Self) extends AnyVal {
+    extension [Self <: OverrideMimeTypeMap](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeMap(value: MimeTypeMap): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
+      inline def setTypeMap(value: MimeTypeMap): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,28 +229,22 @@ object mod {
   }
   object ReporterOptions {
     
-    @scala.inline
-    def apply(log: Logger, state: Boolean): ReporterOptions = {
+    inline def apply(log: Logger, state: Boolean): ReporterOptions = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReporterOptions]
     }
     
-    @scala.inline
-    implicit class ReporterOptionsMutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReporterOptions](x: Self) {
       
-      @scala.inline
-      def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(
+      inline def setStats(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
       ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     }
   }
   

@@ -12,19 +12,15 @@ trait UsersResource extends StObject {
 }
 object UsersResource {
   
-  @scala.inline
-  def apply(assets: AssetsResource, likedassets: LikedassetsResource): UsersResource = {
+  inline def apply(assets: AssetsResource, likedassets: LikedassetsResource): UsersResource = {
     val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], likedassets = likedassets.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersResource]
   }
   
-  @scala.inline
-  implicit class UsersResourceMutableBuilder[Self <: UsersResource] (val x: Self) extends AnyVal {
+  extension [Self <: UsersResource](x: Self) {
     
-    @scala.inline
-    def setAssets(value: AssetsResource): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: AssetsResource): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikedassets(value: LikedassetsResource): Self = StObject.set(x, "likedassets", value.asInstanceOf[js.Any])
+    inline def setLikedassets(value: LikedassetsResource): Self = StObject.set(x, "likedassets", value.asInstanceOf[js.Any])
   }
 }

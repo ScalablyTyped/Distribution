@@ -20,25 +20,19 @@ trait LookbackConfiguration extends StObject {
 }
 object LookbackConfiguration {
   
-  @scala.inline
-  def apply(): LookbackConfiguration = {
+  inline def apply(): LookbackConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookbackConfiguration]
   }
   
-  @scala.inline
-  implicit class LookbackConfigurationMutableBuilder[Self <: LookbackConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LookbackConfiguration](x: Self) {
     
-    @scala.inline
-    def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
+    inline def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickDurationUndefined: Self = StObject.set(x, "clickDuration", js.undefined)
+    inline def setClickDurationUndefined: Self = StObject.set(x, "clickDuration", js.undefined)
     
-    @scala.inline
-    def setPostImpressionActivitiesDuration(value: Double): Self = StObject.set(x, "postImpressionActivitiesDuration", value.asInstanceOf[js.Any])
+    inline def setPostImpressionActivitiesDuration(value: Double): Self = StObject.set(x, "postImpressionActivitiesDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostImpressionActivitiesDurationUndefined: Self = StObject.set(x, "postImpressionActivitiesDuration", js.undefined)
+    inline def setPostImpressionActivitiesDurationUndefined: Self = StObject.set(x, "postImpressionActivitiesDuration", js.undefined)
   }
 }

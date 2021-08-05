@@ -18,31 +18,23 @@ trait GetPendingJobExecutionsResponse extends StObject {
 }
 object GetPendingJobExecutionsResponse {
   
-  @scala.inline
-  def apply(): GetPendingJobExecutionsResponse = {
+  inline def apply(): GetPendingJobExecutionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPendingJobExecutionsResponse]
   }
   
-  @scala.inline
-  implicit class GetPendingJobExecutionsResponseMutableBuilder[Self <: GetPendingJobExecutionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPendingJobExecutionsResponse](x: Self) {
     
-    @scala.inline
-    def setInProgressJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "inProgressJobs", value.asInstanceOf[js.Any])
+    inline def setInProgressJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "inProgressJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressJobsUndefined: Self = StObject.set(x, "inProgressJobs", js.undefined)
+    inline def setInProgressJobsUndefined: Self = StObject.set(x, "inProgressJobs", js.undefined)
     
-    @scala.inline
-    def setInProgressJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "inProgressJobs", js.Array(value :_*))
+    inline def setInProgressJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "inProgressJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setQueuedJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "queuedJobs", value.asInstanceOf[js.Any])
+    inline def setQueuedJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "queuedJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedJobsUndefined: Self = StObject.set(x, "queuedJobs", js.undefined)
+    inline def setQueuedJobsUndefined: Self = StObject.set(x, "queuedJobs", js.undefined)
     
-    @scala.inline
-    def setQueuedJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "queuedJobs", js.Array(value :_*))
+    inline def setQueuedJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "queuedJobs", js.Array(value :_*))
   }
 }

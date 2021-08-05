@@ -14,31 +14,23 @@ trait Previous extends StObject {
 }
 object Previous {
   
-  @scala.inline
-  def apply(): Previous = {
+  inline def apply(): Previous = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Previous]
   }
   
-  @scala.inline
-  implicit class PreviousMutableBuilder[Self <: Previous] (val x: Self) extends AnyVal {
+  extension [Self <: Previous](x: Self) {
     
-    @scala.inline
-    def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPrevious(value: js.Any): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: js.Any): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
-    @scala.inline
-    def setSmall(value: Next): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: Next): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
   }
 }

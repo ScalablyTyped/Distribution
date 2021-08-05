@@ -17,25 +17,19 @@ trait UrlAssignedTargetingOptionDetails extends StObject {
 }
 object UrlAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): UrlAssignedTargetingOptionDetails = {
+  inline def apply(): UrlAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class UrlAssignedTargetingOptionDetailsMutableBuilder[Self <: UrlAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: UrlAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait ApplicationCodeConfiguration extends StObject {
 }
 object ApplicationCodeConfiguration {
   
-  @scala.inline
-  def apply(CodeContentType: CodeContentType): ApplicationCodeConfiguration = {
+  inline def apply(CodeContentType: CodeContentType): ApplicationCodeConfiguration = {
     val __obj = js.Dynamic.literal(CodeContentType = CodeContentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationCodeConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationCodeConfigurationMutableBuilder[Self <: ApplicationCodeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationCodeConfiguration](x: Self) {
     
-    @scala.inline
-    def setCodeContent(value: CodeContent): Self = StObject.set(x, "CodeContent", value.asInstanceOf[js.Any])
+    inline def setCodeContent(value: CodeContent): Self = StObject.set(x, "CodeContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeContentType(value: CodeContentType): Self = StObject.set(x, "CodeContentType", value.asInstanceOf[js.Any])
+    inline def setCodeContentType(value: CodeContentType): Self = StObject.set(x, "CodeContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeContentUndefined: Self = StObject.set(x, "CodeContent", js.undefined)
+    inline def setCodeContentUndefined: Self = StObject.set(x, "CodeContent", js.undefined)
   }
 }

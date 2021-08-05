@@ -18,25 +18,19 @@ trait KeyGatewayConfig
 }
 object KeyGatewayConfig {
   
-  @scala.inline
-  def apply(environment: Environment, merchantId: String, privateKey: String, publicKey: String): KeyGatewayConfig = {
+  inline def apply(environment: Environment, merchantId: String, privateKey: String, publicKey: String): KeyGatewayConfig = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], merchantId = merchantId.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyGatewayConfig]
   }
   
-  @scala.inline
-  implicit class KeyGatewayConfigMutableBuilder[Self <: KeyGatewayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KeyGatewayConfig](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

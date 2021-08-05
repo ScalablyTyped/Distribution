@@ -12,19 +12,15 @@ trait Vote extends StObject {
 }
 object Vote {
   
-  @scala.inline
-  def apply(downs: Double, ups: Double): Vote = {
+  inline def apply(downs: Double, ups: Double): Vote = {
     val __obj = js.Dynamic.literal(downs = downs.asInstanceOf[js.Any], ups = ups.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vote]
   }
   
-  @scala.inline
-  implicit class VoteMutableBuilder[Self <: Vote] (val x: Self) extends AnyVal {
+  extension [Self <: Vote](x: Self) {
     
-    @scala.inline
-    def setDowns(value: Double): Self = StObject.set(x, "downs", value.asInstanceOf[js.Any])
+    inline def setDowns(value: Double): Self = StObject.set(x, "downs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUps(value: Double): Self = StObject.set(x, "ups", value.asInstanceOf[js.Any])
+    inline def setUps(value: Double): Self = StObject.set(x, "ups", value.asInstanceOf[js.Any])
   }
 }

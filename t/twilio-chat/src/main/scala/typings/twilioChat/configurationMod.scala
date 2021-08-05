@@ -15,7 +15,7 @@ object configurationMod {
     
     val backoffConfigOverride: js.UndefOr[js.Any] = js.native
     
-    var baseUrl: js.Any = js.native
+    /* private */ var baseUrl: js.Any = js.native
     
     def consumptionReportIntervalDefault: String = js.native
     
@@ -25,7 +25,7 @@ object configurationMod {
     
     val httpCacheIntervalOverride: js.UndefOr[String] = js.native
     
-    var region: js.Any = js.native
+    /* private */ var region: js.Any = js.native
     
     def retryWhenThrottledDefault: Boolean = js.native
     

@@ -14,19 +14,15 @@ trait Blocksize extends StObject {
 }
 object Blocksize {
   
-  @scala.inline
-  def apply(): Blocksize = {
+  inline def apply(): Blocksize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Blocksize]
   }
   
-  @scala.inline
-  implicit class BlocksizeMutableBuilder[Self <: Blocksize] (val x: Self) extends AnyVal {
+  extension [Self <: Blocksize](x: Self) {
     
-    @scala.inline
-    def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
+    inline def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksizeUndefined: Self = StObject.set(x, "blocksize", js.undefined)
+    inline def setBlocksizeUndefined: Self = StObject.set(x, "blocksize", js.undefined)
   }
 }

@@ -38,52 +38,37 @@ trait Record extends StObject {
 }
 object Record {
   
-  @scala.inline
-  def apply(): Record = {
+  inline def apply(): Record = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Record]
   }
   
-  @scala.inline
-  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+  extension [Self <: Record](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMeasureName(value: StringValue256): Self = StObject.set(x, "MeasureName", value.asInstanceOf[js.Any])
+    inline def setMeasureName(value: StringValue256): Self = StObject.set(x, "MeasureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureNameUndefined: Self = StObject.set(x, "MeasureName", js.undefined)
+    inline def setMeasureNameUndefined: Self = StObject.set(x, "MeasureName", js.undefined)
     
-    @scala.inline
-    def setMeasureValue(value: StringValue2048): Self = StObject.set(x, "MeasureValue", value.asInstanceOf[js.Any])
+    inline def setMeasureValue(value: StringValue2048): Self = StObject.set(x, "MeasureValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureValueType(value: MeasureValueType): Self = StObject.set(x, "MeasureValueType", value.asInstanceOf[js.Any])
+    inline def setMeasureValueType(value: MeasureValueType): Self = StObject.set(x, "MeasureValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureValueTypeUndefined: Self = StObject.set(x, "MeasureValueType", js.undefined)
+    inline def setMeasureValueTypeUndefined: Self = StObject.set(x, "MeasureValueType", js.undefined)
     
-    @scala.inline
-    def setMeasureValueUndefined: Self = StObject.set(x, "MeasureValue", js.undefined)
+    inline def setMeasureValueUndefined: Self = StObject.set(x, "MeasureValue", js.undefined)
     
-    @scala.inline
-    def setTime(value: StringValue256): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: StringValue256): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
     
-    @scala.inline
-    def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitUndefined: Self = StObject.set(x, "TimeUnit", js.undefined)
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "TimeUnit", js.undefined)
   }
 }

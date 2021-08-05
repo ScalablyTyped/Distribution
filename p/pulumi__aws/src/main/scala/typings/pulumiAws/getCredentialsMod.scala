@@ -11,10 +11,8 @@ object getCredentialsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCredentialsResult]]
-  @scala.inline
-  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCredentialsResult]]
+  inline def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCredentialsResult]]
+  inline def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCredentialsResult]]
   
   trait GetCredentialsArgs extends StObject {
     
@@ -22,17 +20,14 @@ object getCredentialsMod {
   }
   object GetCredentialsArgs {
     
-    @scala.inline
-    def apply(registryId: String): GetCredentialsArgs = {
+    inline def apply(registryId: String): GetCredentialsArgs = {
       val __obj = js.Dynamic.literal(registryId = registryId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCredentialsArgs]
     }
     
-    @scala.inline
-    implicit class GetCredentialsArgsMutableBuilder[Self <: GetCredentialsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCredentialsArgs](x: Self) {
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,8 +48,7 @@ object getCredentialsMod {
   }
   object GetCredentialsResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorizationToken: String,
       expiresAt: String,
       id: String,
@@ -65,23 +59,17 @@ object getCredentialsMod {
       __obj.asInstanceOf[GetCredentialsResult]
     }
     
-    @scala.inline
-    implicit class GetCredentialsResultMutableBuilder[Self <: GetCredentialsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCredentialsResult](x: Self) {
       
-      @scala.inline
-      def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
+      inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresAt(value: String): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: String): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyEndpoint(value: String): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
+      inline def setProxyEndpoint(value: String): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     }
   }
 }

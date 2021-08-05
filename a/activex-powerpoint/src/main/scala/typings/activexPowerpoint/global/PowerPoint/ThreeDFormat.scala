@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ThreeDFormat")
 @js.native
-class ThreeDFormat protected ()
+/* private */ class ThreeDFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ThreeDFormat {
   
@@ -86,7 +86,7 @@ class ThreeDFormat protected ()
   /* CompleteClass */
   var Perspective: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ThreeDFormat_typekey")
   var PowerPointDotThreeDFormat_typekey: typings.activexPowerpoint.PowerPoint.ThreeDFormat = js.native
   

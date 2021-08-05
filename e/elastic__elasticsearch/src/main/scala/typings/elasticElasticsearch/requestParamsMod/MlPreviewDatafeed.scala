@@ -12,16 +12,13 @@ trait MlPreviewDatafeed
 }
 object MlPreviewDatafeed {
   
-  @scala.inline
-  def apply(datafeed_id: String): MlPreviewDatafeed = {
+  inline def apply(datafeed_id: String): MlPreviewDatafeed = {
     val __obj = js.Dynamic.literal(datafeed_id = datafeed_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlPreviewDatafeed]
   }
   
-  @scala.inline
-  implicit class MlPreviewDatafeedMutableBuilder[Self <: MlPreviewDatafeed] (val x: Self) extends AnyVal {
+  extension [Self <: MlPreviewDatafeed](x: Self) {
     
-    @scala.inline
-    def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
+    inline def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
   }
 }

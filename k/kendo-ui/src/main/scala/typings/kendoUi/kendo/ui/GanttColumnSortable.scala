@@ -10,19 +10,15 @@ trait GanttColumnSortable extends StObject {
 }
 object GanttColumnSortable {
   
-  @scala.inline
-  def apply(): GanttColumnSortable = {
+  inline def apply(): GanttColumnSortable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttColumnSortable]
   }
   
-  @scala.inline
-  implicit class GanttColumnSortableMutableBuilder[Self <: GanttColumnSortable] (val x: Self) extends AnyVal {
+  extension [Self <: GanttColumnSortable](x: Self) {
     
-    @scala.inline
-    def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait JsonpRequestHandle extends StObject {
 }
 object JsonpRequestHandle {
   
-  @scala.inline
-  def apply(cancel: () => Unit, id: Double): JsonpRequestHandle = {
+  inline def apply(cancel: () => Unit, id: Double): JsonpRequestHandle = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonpRequestHandle]
   }
   
-  @scala.inline
-  implicit class JsonpRequestHandleMutableBuilder[Self <: JsonpRequestHandle] (val x: Self) extends AnyVal {
+  extension [Self <: JsonpRequestHandle](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

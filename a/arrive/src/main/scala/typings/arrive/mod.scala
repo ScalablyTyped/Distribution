@@ -23,15 +23,13 @@ object mod {
       @JSGlobal("Arrive.unbindAllArrive")
       @js.native
       def unbindAllArrive: js.Function0[Unit] = js.native
-      @scala.inline
-      def unbindAllArrive_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbindAllArrive")(x.asInstanceOf[js.Any])
+      inline def unbindAllArrive_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbindAllArrive")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("Arrive.unbindAllLeave")
       @js.native
       def unbindAllLeave: js.Function0[Unit] = js.native
-      @scala.inline
-      def unbindAllLeave_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbindAllLeave")(x.asInstanceOf[js.Any])
+      inline def unbindAllLeave_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbindAllLeave")(x.asInstanceOf[js.Any])
     }
     
     trait Document extends StObject {
@@ -100,8 +98,7 @@ object mod {
     }
     object Document {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
         leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
         unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
@@ -111,26 +108,21 @@ object mod {
         __obj.asInstanceOf[Document]
       }
       
-      @scala.inline
-      implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+      extension [Self <: Document](x: Self) {
         
-        @scala.inline
-        def setArrive(
+        inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setLeave(
+        inline def setLeave(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setUnbindArrive(
+        inline def setUnbindArrive(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnbindLeave(
+        inline def setUnbindLeave(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
       }
@@ -202,8 +194,7 @@ object mod {
     }
     object Element {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
         leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
         unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
@@ -213,26 +204,21 @@ object mod {
         __obj.asInstanceOf[Element]
       }
       
-      @scala.inline
-      implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+      extension [Self <: Element](x: Self) {
         
-        @scala.inline
-        def setArrive(
+        inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setLeave(
+        inline def setLeave(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setUnbindArrive(
+        inline def setUnbindArrive(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnbindLeave(
+        inline def setUnbindLeave(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
       }
@@ -304,8 +290,7 @@ object mod {
     }
     object HTMLCollectionBase {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
         leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
         unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
@@ -315,26 +300,21 @@ object mod {
         __obj.asInstanceOf[HTMLCollectionBase]
       }
       
-      @scala.inline
-      implicit class HTMLCollectionBaseMutableBuilder[Self <: HTMLCollectionBase] (val x: Self) extends AnyVal {
+      extension [Self <: HTMLCollectionBase](x: Self) {
         
-        @scala.inline
-        def setArrive(
+        inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setLeave(
+        inline def setLeave(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setUnbindArrive(
+        inline def setUnbindArrive(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnbindLeave(
+        inline def setUnbindLeave(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
       }
@@ -406,8 +386,7 @@ object mod {
     }
     object JQuery {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
         leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
         unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
@@ -417,26 +396,21 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      @scala.inline
-      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+      extension [Self <: JQuery](x: Self) {
         
-        @scala.inline
-        def setArrive(
+        inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setLeave(
+        inline def setLeave(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setUnbindArrive(
+        inline def setUnbindArrive(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnbindLeave(
+        inline def setUnbindLeave(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
       }
@@ -508,8 +482,7 @@ object mod {
     }
     object NodeList {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
         leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
         unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
@@ -519,26 +492,21 @@ object mod {
         __obj.asInstanceOf[NodeList]
       }
       
-      @scala.inline
-      implicit class NodeListMutableBuilder[Self <: NodeList] (val x: Self) extends AnyVal {
+      extension [Self <: NodeList](x: Self) {
         
-        @scala.inline
-        def setArrive(
+        inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setLeave(
+        inline def setLeave(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setUnbindArrive(
+        inline def setUnbindArrive(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnbindLeave(
+        inline def setUnbindLeave(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
       }
@@ -610,8 +578,7 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
         leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
         unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
@@ -621,26 +588,21 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setArrive(
+        inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setLeave(
+        inline def setLeave(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setUnbindArrive(
+        inline def setUnbindArrive(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnbindLeave(
+        inline def setUnbindLeave(
           value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
         ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
       }
@@ -671,32 +633,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
+      inline def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistingUndefined: Self = StObject.set(x, "existing", js.undefined)
+      inline def setExistingUndefined: Self = StObject.set(x, "existing", js.undefined)
       
-      @scala.inline
-      def setFireOnAttributesModification(value: Boolean): Self = StObject.set(x, "fireOnAttributesModification", value.asInstanceOf[js.Any])
+      inline def setFireOnAttributesModification(value: Boolean): Self = StObject.set(x, "fireOnAttributesModification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireOnAttributesModificationUndefined: Self = StObject.set(x, "fireOnAttributesModification", js.undefined)
+      inline def setFireOnAttributesModificationUndefined: Self = StObject.set(x, "fireOnAttributesModification", js.undefined)
       
-      @scala.inline
-      def setOnceOnly(value: Boolean): Self = StObject.set(x, "onceOnly", value.asInstanceOf[js.Any])
+      inline def setOnceOnly(value: Boolean): Self = StObject.set(x, "onceOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceOnlyUndefined: Self = StObject.set(x, "onceOnly", js.undefined)
+      inline def setOnceOnlyUndefined: Self = StObject.set(x, "onceOnly", js.undefined)
     }
   }
   

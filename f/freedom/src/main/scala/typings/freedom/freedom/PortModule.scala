@@ -12,8 +12,7 @@ trait PortModule[T, T2]
 }
 object PortModule {
   
-  @scala.inline
-  def apply[T, T2](
+  inline def apply[T, T2](
     controlChannel: String,
     emit: (/* eventType */ String, /* value */ js.UndefOr[T2]) => Unit,
     on: (/* eventType */ String, /* handler */ js.Function1[T, Unit]) => Unit
@@ -22,10 +21,8 @@ object PortModule {
     __obj.asInstanceOf[PortModule[T, T2]]
   }
   
-  @scala.inline
-  implicit class PortModuleMutableBuilder[Self <: PortModule[?, ?], T, T2] (val x: Self & (PortModule[T, T2])) extends AnyVal {
+  extension [Self <: PortModule[?, ?], T, T2](x: Self & (PortModule[T, T2])) {
     
-    @scala.inline
-    def setControlChannel(value: String): Self = StObject.set(x, "controlChannel", value.asInstanceOf[js.Any])
+    inline def setControlChannel(value: String): Self = StObject.set(x, "controlChannel", value.asInstanceOf[js.Any])
   }
 }

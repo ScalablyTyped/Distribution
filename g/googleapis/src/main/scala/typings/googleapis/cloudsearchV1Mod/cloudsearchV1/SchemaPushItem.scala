@@ -61,55 +61,39 @@ trait SchemaPushItem extends StObject {
 }
 object SchemaPushItem {
   
-  @scala.inline
-  def apply(): SchemaPushItem = {
+  inline def apply(): SchemaPushItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushItem]
   }
   
-  @scala.inline
-  implicit class SchemaPushItemMutableBuilder[Self <: SchemaPushItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPushItem](x: Self) {
     
-    @scala.inline
-    def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
+    inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
+    inline def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
     
-    @scala.inline
-    def setMetadataHash(value: String): Self = StObject.set(x, "metadataHash", value.asInstanceOf[js.Any])
+    inline def setMetadataHash(value: String): Self = StObject.set(x, "metadataHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataHashUndefined: Self = StObject.set(x, "metadataHash", js.undefined)
+    inline def setMetadataHashUndefined: Self = StObject.set(x, "metadataHash", js.undefined)
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setRepositoryError(value: SchemaRepositoryError): Self = StObject.set(x, "repositoryError", value.asInstanceOf[js.Any])
+    inline def setRepositoryError(value: SchemaRepositoryError): Self = StObject.set(x, "repositoryError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryErrorUndefined: Self = StObject.set(x, "repositoryError", js.undefined)
+    inline def setRepositoryErrorUndefined: Self = StObject.set(x, "repositoryError", js.undefined)
     
-    @scala.inline
-    def setStructuredDataHash(value: String): Self = StObject.set(x, "structuredDataHash", value.asInstanceOf[js.Any])
+    inline def setStructuredDataHash(value: String): Self = StObject.set(x, "structuredDataHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredDataHashUndefined: Self = StObject.set(x, "structuredDataHash", js.undefined)
+    inline def setStructuredDataHashUndefined: Self = StObject.set(x, "structuredDataHash", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

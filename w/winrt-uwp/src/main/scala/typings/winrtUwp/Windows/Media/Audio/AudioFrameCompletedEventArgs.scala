@@ -13,16 +13,13 @@ trait AudioFrameCompletedEventArgs extends StObject {
 }
 object AudioFrameCompletedEventArgs {
   
-  @scala.inline
-  def apply(frame: AudioFrame): AudioFrameCompletedEventArgs = {
+  inline def apply(frame: AudioFrame): AudioFrameCompletedEventArgs = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioFrameCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class AudioFrameCompletedEventArgsMutableBuilder[Self <: AudioFrameCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AudioFrameCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFrame(value: AudioFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: AudioFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }
 }

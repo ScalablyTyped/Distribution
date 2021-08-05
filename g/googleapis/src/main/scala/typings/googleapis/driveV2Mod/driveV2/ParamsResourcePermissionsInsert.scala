@@ -52,55 +52,39 @@ trait ParamsResourcePermissionsInsert
 }
 object ParamsResourcePermissionsInsert {
   
-  @scala.inline
-  def apply(): ParamsResourcePermissionsInsert = {
+  inline def apply(): ParamsResourcePermissionsInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePermissionsInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePermissionsInsertMutableBuilder[Self <: ParamsResourcePermissionsInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePermissionsInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
+    inline def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
+    inline def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSendNotificationEmails(value: Boolean): Self = StObject.set(x, "sendNotificationEmails", value.asInstanceOf[js.Any])
+    inline def setSendNotificationEmails(value: Boolean): Self = StObject.set(x, "sendNotificationEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationEmailsUndefined: Self = StObject.set(x, "sendNotificationEmails", js.undefined)
+    inline def setSendNotificationEmailsUndefined: Self = StObject.set(x, "sendNotificationEmails", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
-    @scala.inline
-    def setUseDomainAdminAccess(value: Boolean): Self = StObject.set(x, "useDomainAdminAccess", value.asInstanceOf[js.Any])
+    inline def setUseDomainAdminAccess(value: Boolean): Self = StObject.set(x, "useDomainAdminAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDomainAdminAccessUndefined: Self = StObject.set(x, "useDomainAdminAccess", js.undefined)
+    inline def setUseDomainAdminAccessUndefined: Self = StObject.set(x, "useDomainAdminAccess", js.undefined)
   }
 }

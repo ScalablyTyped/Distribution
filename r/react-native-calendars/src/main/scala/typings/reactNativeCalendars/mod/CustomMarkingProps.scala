@@ -16,19 +16,15 @@ trait CustomMarkingProps
 }
 object CustomMarkingProps {
   
-  @scala.inline
-  def apply(markedDates: StringDictionary[CustomMarking]): CustomMarkingProps = {
+  inline def apply(markedDates: StringDictionary[CustomMarking]): CustomMarkingProps = {
     val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = "custom")
     __obj.asInstanceOf[CustomMarkingProps]
   }
   
-  @scala.inline
-  implicit class CustomMarkingPropsMutableBuilder[Self <: CustomMarkingProps] (val x: Self) extends AnyVal {
+  extension [Self <: CustomMarkingProps](x: Self) {
     
-    @scala.inline
-    def setMarkedDates(value: StringDictionary[CustomMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
+    inline def setMarkedDates(value: StringDictionary[CustomMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkingType(value: custom): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
+    inline def setMarkingType(value: custom): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
   }
 }

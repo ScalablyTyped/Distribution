@@ -28,25 +28,19 @@ trait LimitedPriorityLevelConfiguration extends StObject {
 }
 object LimitedPriorityLevelConfiguration {
   
-  @scala.inline
-  def apply(): LimitedPriorityLevelConfiguration = {
+  inline def apply(): LimitedPriorityLevelConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LimitedPriorityLevelConfiguration]
   }
   
-  @scala.inline
-  implicit class LimitedPriorityLevelConfigurationMutableBuilder[Self <: LimitedPriorityLevelConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LimitedPriorityLevelConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssuredConcurrencyShares(value: Input[Double]): Self = StObject.set(x, "assuredConcurrencyShares", value.asInstanceOf[js.Any])
+    inline def setAssuredConcurrencyShares(value: Input[Double]): Self = StObject.set(x, "assuredConcurrencyShares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssuredConcurrencySharesUndefined: Self = StObject.set(x, "assuredConcurrencyShares", js.undefined)
+    inline def setAssuredConcurrencySharesUndefined: Self = StObject.set(x, "assuredConcurrencyShares", js.undefined)
     
-    @scala.inline
-    def setLimitResponse(value: Input[LimitResponse]): Self = StObject.set(x, "limitResponse", value.asInstanceOf[js.Any])
+    inline def setLimitResponse(value: Input[LimitResponse]): Self = StObject.set(x, "limitResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitResponseUndefined: Self = StObject.set(x, "limitResponse", js.undefined)
+    inline def setLimitResponseUndefined: Self = StObject.set(x, "limitResponse", js.undefined)
   }
 }

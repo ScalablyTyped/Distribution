@@ -23,37 +23,27 @@ trait GoogleCloudDatalabelingV1beta1ExportDataRequest extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ExportDataRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ExportDataRequest = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ExportDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ExportDataRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ExportDataRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ExportDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ExportDataRequest](x: Self) {
     
-    @scala.inline
-    def setAnnotatedDataset(value: String): Self = StObject.set(x, "annotatedDataset", value.asInstanceOf[js.Any])
+    inline def setAnnotatedDataset(value: String): Self = StObject.set(x, "annotatedDataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotatedDatasetUndefined: Self = StObject.set(x, "annotatedDataset", js.undefined)
+    inline def setAnnotatedDatasetUndefined: Self = StObject.set(x, "annotatedDataset", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setOutputConfig(value: GoogleCloudDatalabelingV1beta1OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: GoogleCloudDatalabelingV1beta1OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
     
-    @scala.inline
-    def setUserEmailAddress(value: String): Self = StObject.set(x, "userEmailAddress", value.asInstanceOf[js.Any])
+    inline def setUserEmailAddress(value: String): Self = StObject.set(x, "userEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmailAddressUndefined: Self = StObject.set(x, "userEmailAddress", js.undefined)
+    inline def setUserEmailAddressUndefined: Self = StObject.set(x, "userEmailAddress", js.undefined)
   }
 }

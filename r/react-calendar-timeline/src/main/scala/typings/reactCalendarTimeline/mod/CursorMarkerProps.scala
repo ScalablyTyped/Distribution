@@ -12,19 +12,15 @@ trait CursorMarkerProps extends StObject {
 }
 object CursorMarkerProps {
   
-  @scala.inline
-  def apply(): CursorMarkerProps = {
+  inline def apply(): CursorMarkerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CursorMarkerProps]
   }
   
-  @scala.inline
-  implicit class CursorMarkerPropsMutableBuilder[Self <: CursorMarkerProps] (val x: Self) extends AnyVal {
+  extension [Self <: CursorMarkerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* props */ CustomMarkerChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* props */ CustomMarkerChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.OfficeTheme")
 @js.native
-class OfficeTheme protected ()
+/* private */ class OfficeTheme ()
   extends StObject
      with typings.activexOffice.Office.OfficeTheme {
   
@@ -18,7 +18,7 @@ class OfficeTheme protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.OfficeTheme_typekey")
   var OfficeDotOfficeTheme_typekey: typings.activexOffice.Office.OfficeTheme = js.native
   

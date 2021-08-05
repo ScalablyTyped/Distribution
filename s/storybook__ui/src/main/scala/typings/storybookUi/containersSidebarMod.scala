@@ -30,41 +30,29 @@ object containersSidebarMod extends Shortcut {
   trait Item extends StObject
   object Item {
     
-    @scala.inline
-    def args: typings.storybookUi.storybookUiStrings.args = "args".asInstanceOf[typings.storybookUi.storybookUiStrings.args]
+    inline def args: typings.storybookUi.storybookUiStrings.args = "args".asInstanceOf[typings.storybookUi.storybookUiStrings.args]
     
-    @scala.inline
-    def children: typings.storybookUi.storybookUiStrings.children = "children".asInstanceOf[typings.storybookUi.storybookUiStrings.children]
+    inline def children: typings.storybookUi.storybookUiStrings.children = "children".asInstanceOf[typings.storybookUi.storybookUiStrings.children]
     
-    @scala.inline
-    def depth: typings.storybookUi.storybookUiStrings.depth = "depth".asInstanceOf[typings.storybookUi.storybookUiStrings.depth]
+    inline def depth: typings.storybookUi.storybookUiStrings.depth = "depth".asInstanceOf[typings.storybookUi.storybookUiStrings.depth]
     
-    @scala.inline
-    def id: typings.storybookUi.storybookUiStrings.id = "id".asInstanceOf[typings.storybookUi.storybookUiStrings.id]
+    inline def id: typings.storybookUi.storybookUiStrings.id = "id".asInstanceOf[typings.storybookUi.storybookUiStrings.id]
     
-    @scala.inline
-    def isComponent: typings.storybookUi.storybookUiStrings.isComponent = "isComponent".asInstanceOf[typings.storybookUi.storybookUiStrings.isComponent]
+    inline def isComponent: typings.storybookUi.storybookUiStrings.isComponent = "isComponent".asInstanceOf[typings.storybookUi.storybookUiStrings.isComponent]
     
-    @scala.inline
-    def isLeaf: typings.storybookUi.storybookUiStrings.isLeaf = "isLeaf".asInstanceOf[typings.storybookUi.storybookUiStrings.isLeaf]
+    inline def isLeaf: typings.storybookUi.storybookUiStrings.isLeaf = "isLeaf".asInstanceOf[typings.storybookUi.storybookUiStrings.isLeaf]
     
-    @scala.inline
-    def isRoot: typings.storybookUi.storybookUiStrings.isRoot = "isRoot".asInstanceOf[typings.storybookUi.storybookUiStrings.isRoot]
+    inline def isRoot: typings.storybookUi.storybookUiStrings.isRoot = "isRoot".asInstanceOf[typings.storybookUi.storybookUiStrings.isRoot]
     
-    @scala.inline
-    def kind: typings.storybookUi.storybookUiStrings.kind = "kind".asInstanceOf[typings.storybookUi.storybookUiStrings.kind]
+    inline def kind: typings.storybookUi.storybookUiStrings.kind = "kind".asInstanceOf[typings.storybookUi.storybookUiStrings.kind]
     
-    @scala.inline
-    def name: typings.storybookUi.storybookUiStrings.name = "name".asInstanceOf[typings.storybookUi.storybookUiStrings.name]
+    inline def name: typings.storybookUi.storybookUiStrings.name = "name".asInstanceOf[typings.storybookUi.storybookUiStrings.name]
     
-    @scala.inline
-    def parameters: typings.storybookUi.storybookUiStrings.parameters = "parameters".asInstanceOf[typings.storybookUi.storybookUiStrings.parameters]
+    inline def parameters: typings.storybookUi.storybookUiStrings.parameters = "parameters".asInstanceOf[typings.storybookUi.storybookUiStrings.parameters]
     
-    @scala.inline
-    def parent: typings.storybookUi.storybookUiStrings.parent = "parent".asInstanceOf[typings.storybookUi.storybookUiStrings.parent]
+    inline def parent: typings.storybookUi.storybookUiStrings.parent = "parent".asInstanceOf[typings.storybookUi.storybookUiStrings.parent]
     
-    @scala.inline
-    def refId: typings.storybookUi.storybookUiStrings.refId = "refId".asInstanceOf[typings.storybookUi.storybookUiStrings.refId]
+    inline def refId: typings.storybookUi.storybookUiStrings.refId = "refId".asInstanceOf[typings.storybookUi.storybookUiStrings.refId]
   }
   
   type _To = FunctionComponent[js.Object]

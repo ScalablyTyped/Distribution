@@ -12,19 +12,15 @@ trait DisplayHeight extends StObject {
 }
 object DisplayHeight {
   
-  @scala.inline
-  def apply(display: String, height: Double): DisplayHeight = {
+  inline def apply(display: String, height: Double): DisplayHeight = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayHeight]
   }
   
-  @scala.inline
-  implicit class DisplayHeightMutableBuilder[Self <: DisplayHeight] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayHeight](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

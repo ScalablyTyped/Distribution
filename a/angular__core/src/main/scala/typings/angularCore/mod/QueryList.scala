@@ -12,7 +12,7 @@ class QueryList[T] ()
   extends StObject
      with Iterable[T] {
   
-  var _results: js.Any = js.native
+  /* private */ var _results: js.Any = js.native
   
   val changes: Observable_[js.Any] = js.native
   

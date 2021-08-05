@@ -48,64 +48,45 @@ trait DescribeEnvironmentHealthResult extends StObject {
 }
 object DescribeEnvironmentHealthResult {
   
-  @scala.inline
-  def apply(): DescribeEnvironmentHealthResult = {
+  inline def apply(): DescribeEnvironmentHealthResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEnvironmentHealthResult]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentHealthResultMutableBuilder[Self <: DescribeEnvironmentHealthResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentHealthResult](x: Self) {
     
-    @scala.inline
-    def setApplicationMetrics(value: ApplicationMetrics): Self = StObject.set(x, "ApplicationMetrics", value.asInstanceOf[js.Any])
+    inline def setApplicationMetrics(value: ApplicationMetrics): Self = StObject.set(x, "ApplicationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationMetricsUndefined: Self = StObject.set(x, "ApplicationMetrics", js.undefined)
+    inline def setApplicationMetricsUndefined: Self = StObject.set(x, "ApplicationMetrics", js.undefined)
     
-    @scala.inline
-    def setCauses(value: Causes): Self = StObject.set(x, "Causes", value.asInstanceOf[js.Any])
+    inline def setCauses(value: Causes): Self = StObject.set(x, "Causes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCausesUndefined: Self = StObject.set(x, "Causes", js.undefined)
+    inline def setCausesUndefined: Self = StObject.set(x, "Causes", js.undefined)
     
-    @scala.inline
-    def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value :_*))
+    inline def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value :_*))
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "Color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "Color", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setHealthStatus(value: String): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: String): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
     
-    @scala.inline
-    def setInstancesHealth(value: InstanceHealthSummary): Self = StObject.set(x, "InstancesHealth", value.asInstanceOf[js.Any])
+    inline def setInstancesHealth(value: InstanceHealthSummary): Self = StObject.set(x, "InstancesHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesHealthUndefined: Self = StObject.set(x, "InstancesHealth", js.undefined)
+    inline def setInstancesHealthUndefined: Self = StObject.set(x, "InstancesHealth", js.undefined)
     
-    @scala.inline
-    def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
+    inline def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
+    inline def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
     
-    @scala.inline
-    def setStatus(value: EnvironmentHealth): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EnvironmentHealth): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

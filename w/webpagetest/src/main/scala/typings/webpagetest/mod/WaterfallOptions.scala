@@ -35,67 +35,47 @@ trait WaterfallOptions extends StObject {
 }
 object WaterfallOptions {
   
-  @scala.inline
-  def apply(): WaterfallOptions = {
+  inline def apply(): WaterfallOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaterfallOptions]
   }
   
-  @scala.inline
-  implicit class WaterfallOptionsMutableBuilder[Self <: WaterfallOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WaterfallOptions](x: Self) {
     
-    @scala.inline
-    def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
+    inline def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
+    inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
-    @scala.inline
-    def setChartWidth(value: Double): Self = StObject.set(x, "chartWidth", value.asInstanceOf[js.Any])
+    inline def setChartWidth(value: Double): Self = StObject.set(x, "chartWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartWidthUndefined: Self = StObject.set(x, "chartWidth", js.undefined)
+    inline def setChartWidthUndefined: Self = StObject.set(x, "chartWidth", js.undefined)
     
-    @scala.inline
-    def setColorByMime(value: Boolean): Self = StObject.set(x, "colorByMime", value.asInstanceOf[js.Any])
+    inline def setColorByMime(value: Boolean): Self = StObject.set(x, "colorByMime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorByMimeUndefined: Self = StObject.set(x, "colorByMime", js.undefined)
+    inline def setColorByMimeUndefined: Self = StObject.set(x, "colorByMime", js.undefined)
     
-    @scala.inline
-    def setMaxTime(value: Double): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+    inline def setMaxTime(value: Double): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
+    inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
     
-    @scala.inline
-    def setNoBandwidth(value: Boolean): Self = StObject.set(x, "noBandwidth", value.asInstanceOf[js.Any])
+    inline def setNoBandwidth(value: Boolean): Self = StObject.set(x, "noBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoBandwidthUndefined: Self = StObject.set(x, "noBandwidth", js.undefined)
+    inline def setNoBandwidthUndefined: Self = StObject.set(x, "noBandwidth", js.undefined)
     
-    @scala.inline
-    def setNoCPU(value: Boolean): Self = StObject.set(x, "noCPU", value.asInstanceOf[js.Any])
+    inline def setNoCPU(value: Boolean): Self = StObject.set(x, "noCPU", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCPUUndefined: Self = StObject.set(x, "noCPU", js.undefined)
+    inline def setNoCPUUndefined: Self = StObject.set(x, "noCPU", js.undefined)
     
-    @scala.inline
-    def setNoEllipsis(value: Boolean): Self = StObject.set(x, "noEllipsis", value.asInstanceOf[js.Any])
+    inline def setNoEllipsis(value: Boolean): Self = StObject.set(x, "noEllipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoEllipsisUndefined: Self = StObject.set(x, "noEllipsis", js.undefined)
+    inline def setNoEllipsisUndefined: Self = StObject.set(x, "noEllipsis", js.undefined)
     
-    @scala.inline
-    def setNoLabels(value: Boolean): Self = StObject.set(x, "noLabels", value.asInstanceOf[js.Any])
+    inline def setNoLabels(value: Boolean): Self = StObject.set(x, "noLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoLabelsUndefined: Self = StObject.set(x, "noLabels", js.undefined)
+    inline def setNoLabelsUndefined: Self = StObject.set(x, "noLabels", js.undefined)
     
-    @scala.inline
-    def setRequests(value: String): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: String): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
   }
 }

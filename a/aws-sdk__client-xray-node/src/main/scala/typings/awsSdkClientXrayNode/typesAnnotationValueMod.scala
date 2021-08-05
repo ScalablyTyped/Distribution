@@ -25,32 +25,24 @@ object typesAnnotationValueMod {
   }
   object AnnotationValue {
     
-    @scala.inline
-    def apply(): AnnotationValue = {
+    inline def apply(): AnnotationValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnnotationValue]
     }
     
-    @scala.inline
-    implicit class AnnotationValueMutableBuilder[Self <: AnnotationValue] (val x: Self) extends AnyVal {
+    extension [Self <: AnnotationValue](x: Self) {
       
-      @scala.inline
-      def setBooleanValue(value: Boolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
+      inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanValueUndefined: Self = StObject.set(x, "BooleanValue", js.undefined)
+      inline def setBooleanValueUndefined: Self = StObject.set(x, "BooleanValue", js.undefined)
       
-      @scala.inline
-      def setNumberValue(value: Double): Self = StObject.set(x, "NumberValue", value.asInstanceOf[js.Any])
+      inline def setNumberValue(value: Double): Self = StObject.set(x, "NumberValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberValueUndefined: Self = StObject.set(x, "NumberValue", js.undefined)
+      inline def setNumberValueUndefined: Self = StObject.set(x, "NumberValue", js.undefined)
       
-      @scala.inline
-      def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+      inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
+      inline def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
     }
   }
   

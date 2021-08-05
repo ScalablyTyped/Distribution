@@ -10,7 +10,7 @@ trait HTMLText extends StObject {
   
   var HTMLType: String
   
-  @JSName("MSForms.HTMLText_typekey")
+  /* private */ @JSName("MSForms.HTMLText_typekey")
   var MSFormsDotHTMLText_typekey: HTMLText
   
   var MaxLength: Double
@@ -21,8 +21,7 @@ trait HTMLText extends StObject {
 }
 object HTMLText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HTMLName: String,
     HTMLType: String,
     MSFormsDotHTMLText_typekey: HTMLText,
@@ -35,25 +34,18 @@ object HTMLText {
     __obj.asInstanceOf[HTMLText]
   }
   
-  @scala.inline
-  implicit class HTMLTextMutableBuilder[Self <: HTMLText] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLText](x: Self) {
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
+    inline def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLText_typekey(value: HTMLText): Self = StObject.set(x, "MSForms.HTMLText_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLText_typekey(value: HTMLText): Self = StObject.set(x, "MSForms.HTMLText_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

@@ -13,25 +13,19 @@ trait EluGradInputs extends StObject {
 }
 object EluGradInputs {
   
-  @scala.inline
-  def apply(): EluGradInputs = {
+  inline def apply(): EluGradInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EluGradInputs]
   }
   
-  @scala.inline
-  implicit class EluGradInputsMutableBuilder[Self <: EluGradInputs] (val x: Self) extends AnyVal {
+  extension [Self <: EluGradInputs](x: Self) {
     
-    @scala.inline
-    def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

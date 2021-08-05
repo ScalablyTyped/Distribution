@@ -12,19 +12,15 @@ trait Hover extends StObject {
 }
 object Hover {
   
-  @scala.inline
-  def apply(hover: Boolean, key: typings.react.mod.Key): Hover = {
+  inline def apply(hover: Boolean, key: typings.react.mod.Key): Hover = {
     val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hover]
   }
   
-  @scala.inline
-  implicit class HoverMutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
+  extension [Self <: Hover](x: Self) {
     
-    @scala.inline
-    def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

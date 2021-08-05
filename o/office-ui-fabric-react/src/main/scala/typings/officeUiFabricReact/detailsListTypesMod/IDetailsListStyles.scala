@@ -17,49 +17,35 @@ trait IDetailsListStyles extends StObject {
 }
 object IDetailsListStyles {
   
-  @scala.inline
-  def apply(): IDetailsListStyles = {
+  inline def apply(): IDetailsListStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDetailsListStyles]
   }
   
-  @scala.inline
-  implicit class IDetailsListStylesMutableBuilder[Self <: IDetailsListStyles] (val x: Self) extends AnyVal {
+  extension [Self <: IDetailsListStyles](x: Self) {
     
-    @scala.inline
-    def setContentWrapper(value: IStyle): Self = StObject.set(x, "contentWrapper", value.asInstanceOf[js.Any])
+    inline def setContentWrapper(value: IStyle): Self = StObject.set(x, "contentWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWrapperNull: Self = StObject.set(x, "contentWrapper", null)
+    inline def setContentWrapperNull: Self = StObject.set(x, "contentWrapper", null)
     
-    @scala.inline
-    def setContentWrapperUndefined: Self = StObject.set(x, "contentWrapper", js.undefined)
+    inline def setContentWrapperUndefined: Self = StObject.set(x, "contentWrapper", js.undefined)
     
-    @scala.inline
-    def setFocusZone(value: IStyle): Self = StObject.set(x, "focusZone", value.asInstanceOf[js.Any])
+    inline def setFocusZone(value: IStyle): Self = StObject.set(x, "focusZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusZoneNull: Self = StObject.set(x, "focusZone", null)
+    inline def setFocusZoneNull: Self = StObject.set(x, "focusZone", null)
     
-    @scala.inline
-    def setFocusZoneUndefined: Self = StObject.set(x, "focusZone", js.undefined)
+    inline def setFocusZoneUndefined: Self = StObject.set(x, "focusZone", js.undefined)
     
-    @scala.inline
-    def setHeaderWrapper(value: IStyle): Self = StObject.set(x, "headerWrapper", value.asInstanceOf[js.Any])
+    inline def setHeaderWrapper(value: IStyle): Self = StObject.set(x, "headerWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderWrapperNull: Self = StObject.set(x, "headerWrapper", null)
+    inline def setHeaderWrapperNull: Self = StObject.set(x, "headerWrapper", null)
     
-    @scala.inline
-    def setHeaderWrapperUndefined: Self = StObject.set(x, "headerWrapper", js.undefined)
+    inline def setHeaderWrapperUndefined: Self = StObject.set(x, "headerWrapper", js.undefined)
     
-    @scala.inline
-    def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNull: Self = StObject.set(x, "root", null)
+    inline def setRootNull: Self = StObject.set(x, "root", null)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

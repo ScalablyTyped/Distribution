@@ -29,8 +29,7 @@ trait GenericCollection[T] extends StObject {
 }
 object GenericCollection {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     each: js.Function3[
       /* element */ T, 
       /* index */ js.UndefOr[Double], 
@@ -48,11 +47,9 @@ object GenericCollection {
     __obj.asInstanceOf[GenericCollection[T]]
   }
   
-  @scala.inline
-  implicit class GenericCollectionMutableBuilder[Self <: GenericCollection[?], T] (val x: Self & GenericCollection[T]) extends AnyVal {
+  extension [Self <: GenericCollection[?], T](x: Self & GenericCollection[T]) {
     
-    @scala.inline
-    def setEach(
+    inline def setEach(
       value: js.Function3[
           /* element */ T, 
           /* index */ js.UndefOr[Double], 
@@ -61,25 +58,18 @@ object GenericCollection {
         ] => js.Any
     ): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElements(value: js.Array[T]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[T]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: T*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: T*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setRandomize(value: js.Any => GenericCollection[T]): Self = StObject.set(x, "randomize", js.Any.fromFunction1(value))
+    inline def setRandomize(value: js.Any => GenericCollection[T]): Self = StObject.set(x, "randomize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRename(value: String => GenericCollection[T]): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+    inline def setRename(value: String => GenericCollection[T]): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelect(value: () => GenericCollection[T]): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => GenericCollection[T]): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToGrid(value: (Double, Double) => GenericCollection[T]): Self = StObject.set(x, "toGrid", js.Any.fromFunction2(value))
+    inline def setToGrid(value: (Double, Double) => GenericCollection[T]): Self = StObject.set(x, "toGrid", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: () => GenericCollection[T]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => GenericCollection[T]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

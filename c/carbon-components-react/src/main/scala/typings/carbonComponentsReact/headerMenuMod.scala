@@ -15,8 +15,7 @@ object headerMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RP](props: HeaderMenuProps[RP]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[RP](props: HeaderMenuProps[RP]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   type HeaderMenu = Component[HeaderMenuProps[js.Object], js.Object, js.Any]
   
@@ -40,59 +39,42 @@ object headerMenuMod {
   }
   object HeaderMenuProps {
     
-    @scala.inline
-    def apply[RP](menuLinkName: String): HeaderMenuProps[RP] = {
+    inline def apply[RP](menuLinkName: String): HeaderMenuProps[RP] = {
       val __obj = js.Dynamic.literal(menuLinkName = menuLinkName.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeaderMenuProps[RP]]
     }
     
-    @scala.inline
-    implicit class HeaderMenuPropsMutableBuilder[Self <: HeaderMenuProps[?], RP] (val x: Self & HeaderMenuProps[RP]) extends AnyVal {
+    extension [Self <: HeaderMenuProps[?], RP](x: Self & HeaderMenuProps[RP]) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMenuLinkName(value: String): Self = StObject.set(x, "menuLinkName", value.asInstanceOf[js.Any])
+      inline def setMenuLinkName(value: String): Self = StObject.set(x, "menuLinkName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setRenderMenuContent(value: ComponentType[RP]): Self = StObject.set(x, "renderMenuContent", value.asInstanceOf[js.Any])
+      inline def setRenderMenuContent(value: ComponentType[RP]): Self = StObject.set(x, "renderMenuContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderMenuContentUndefined: Self = StObject.set(x, "renderMenuContent", js.undefined)
+      inline def setRenderMenuContentUndefined: Self = StObject.set(x, "renderMenuContent", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
 }

@@ -10,19 +10,15 @@ trait Dir extends StObject {
 }
 object Dir {
   
-  @scala.inline
-  def apply(): Dir = {
+  inline def apply(): Dir = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dir]
   }
   
-  @scala.inline
-  implicit class DirMutableBuilder[Self <: Dir] (val x: Self) extends AnyVal {
+  extension [Self <: Dir](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
   }
 }

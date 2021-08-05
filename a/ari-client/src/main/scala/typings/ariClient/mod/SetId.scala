@@ -18,19 +18,15 @@ trait SetId extends StObject {
 }
 object SetId {
   
-  @scala.inline
-  def apply(group: String, user: String): SetId = {
+  inline def apply(group: String, user: String): SetId = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetId]
   }
   
-  @scala.inline
-  implicit class SetIdMutableBuilder[Self <: SetId] (val x: Self) extends AnyVal {
+  extension [Self <: SetId](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

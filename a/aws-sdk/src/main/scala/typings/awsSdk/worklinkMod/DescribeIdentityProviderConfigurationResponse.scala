@@ -23,31 +23,23 @@ trait DescribeIdentityProviderConfigurationResponse extends StObject {
 }
 object DescribeIdentityProviderConfigurationResponse {
   
-  @scala.inline
-  def apply(): DescribeIdentityProviderConfigurationResponse = {
+  inline def apply(): DescribeIdentityProviderConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIdentityProviderConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityProviderConfigurationResponseMutableBuilder[Self <: DescribeIdentityProviderConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityProviderConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "IdentityProviderSamlMetadata", value.asInstanceOf[js.Any])
+    inline def setIdentityProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "IdentityProviderSamlMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityProviderSamlMetadataUndefined: Self = StObject.set(x, "IdentityProviderSamlMetadata", js.undefined)
+    inline def setIdentityProviderSamlMetadataUndefined: Self = StObject.set(x, "IdentityProviderSamlMetadata", js.undefined)
     
-    @scala.inline
-    def setIdentityProviderType(value: IdentityProviderType): Self = StObject.set(x, "IdentityProviderType", value.asInstanceOf[js.Any])
+    inline def setIdentityProviderType(value: IdentityProviderType): Self = StObject.set(x, "IdentityProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityProviderTypeUndefined: Self = StObject.set(x, "IdentityProviderType", js.undefined)
+    inline def setIdentityProviderTypeUndefined: Self = StObject.set(x, "IdentityProviderType", js.undefined)
     
-    @scala.inline
-    def setServiceProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "ServiceProviderSamlMetadata", value.asInstanceOf[js.Any])
+    inline def setServiceProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "ServiceProviderSamlMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderSamlMetadataUndefined: Self = StObject.set(x, "ServiceProviderSamlMetadata", js.undefined)
+    inline def setServiceProviderSamlMetadataUndefined: Self = StObject.set(x, "ServiceProviderSamlMetadata", js.undefined)
   }
 }

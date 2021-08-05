@@ -23,31 +23,23 @@ trait DeploymentGroupEc2TagSetEc2TagFilter extends StObject {
 }
 object DeploymentGroupEc2TagSetEc2TagFilter {
   
-  @scala.inline
-  def apply(): DeploymentGroupEc2TagSetEc2TagFilter = {
+  inline def apply(): DeploymentGroupEc2TagSetEc2TagFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupEc2TagSetEc2TagFilter]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupEc2TagSetEc2TagFilterMutableBuilder[Self <: DeploymentGroupEc2TagSetEc2TagFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupEc2TagSetEc2TagFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

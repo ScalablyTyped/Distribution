@@ -44,31 +44,23 @@ trait SchemaPushConfig extends StObject {
 }
 object SchemaPushConfig {
   
-  @scala.inline
-  def apply(): SchemaPushConfig = {
+  inline def apply(): SchemaPushConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushConfig]
   }
   
-  @scala.inline
-  implicit class SchemaPushConfigMutableBuilder[Self <: SchemaPushConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPushConfig](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setOidcToken(value: SchemaOidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
+    inline def setOidcToken(value: SchemaOidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
+    inline def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
     
-    @scala.inline
-    def setPushEndpoint(value: String): Self = StObject.set(x, "pushEndpoint", value.asInstanceOf[js.Any])
+    inline def setPushEndpoint(value: String): Self = StObject.set(x, "pushEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushEndpointUndefined: Self = StObject.set(x, "pushEndpoint", js.undefined)
+    inline def setPushEndpointUndefined: Self = StObject.set(x, "pushEndpoint", js.undefined)
   }
 }

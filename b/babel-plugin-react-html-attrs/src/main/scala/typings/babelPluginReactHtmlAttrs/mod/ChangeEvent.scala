@@ -15,8 +15,7 @@ trait ChangeEvent[T]
 }
 object ChangeEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget & T,
@@ -38,10 +37,8 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent[T]]
   }
   
-  @scala.inline
-  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent[?], T] (val x: Self & ChangeEvent[T]) extends AnyVal {
+  extension [Self <: ChangeEvent[?], T](x: Self & ChangeEvent[T]) {
     
-    @scala.inline
-    def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -52,8 +52,7 @@ object removeEventMod {
   }
   object RemoveEvent {
     
-    @scala.inline
-    def apply[Entity](
+    inline def apply[Entity](
       connection: Connection,
       databaseEntity: Entity,
       manager: EntityManager,
@@ -64,35 +63,25 @@ object removeEventMod {
       __obj.asInstanceOf[RemoveEvent[Entity]]
     }
     
-    @scala.inline
-    implicit class RemoveEventMutableBuilder[Self <: RemoveEvent[?], Entity] (val x: Self & RemoveEvent[Entity]) extends AnyVal {
+    extension [Self <: RemoveEvent[?], Entity](x: Self & RemoveEvent[Entity]) {
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseEntity(value: Entity): Self = StObject.set(x, "databaseEntity", value.asInstanceOf[js.Any])
+      inline def setDatabaseEntity(value: Entity): Self = StObject.set(x, "databaseEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityId(value: js.Any): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+      inline def setEntityId(value: js.Any): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+      inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
       
-      @scala.inline
-      def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+      inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
       
-      @scala.inline
-      def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
+      inline def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
     }
   }
 }

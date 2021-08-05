@@ -14,19 +14,15 @@ trait Indices[T /* <: Tensor[Rank] */] extends StObject {
 }
 object Indices {
   
-  @scala.inline
-  def apply[T /* <: Tensor[Rank] */](indices: T, values: T): Indices[T] = {
+  inline def apply[T /* <: Tensor[Rank] */](indices: T, values: T): Indices[T] = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Indices[T]]
   }
   
-  @scala.inline
-  implicit class IndicesMutableBuilder[Self <: Indices[?], T /* <: Tensor[Rank] */] (val x: Self & Indices[T]) extends AnyVal {
+  extension [Self <: Indices[?], T /* <: Tensor[Rank] */](x: Self & Indices[T]) {
     
-    @scala.inline
-    def setIndices(value: T): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: T): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: T): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: T): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

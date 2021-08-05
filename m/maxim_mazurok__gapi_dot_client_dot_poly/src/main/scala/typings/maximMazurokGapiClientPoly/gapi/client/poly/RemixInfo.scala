@@ -11,22 +11,17 @@ trait RemixInfo extends StObject {
 }
 object RemixInfo {
   
-  @scala.inline
-  def apply(): RemixInfo = {
+  inline def apply(): RemixInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemixInfo]
   }
   
-  @scala.inline
-  implicit class RemixInfoMutableBuilder[Self <: RemixInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RemixInfo](x: Self) {
     
-    @scala.inline
-    def setSourceAsset(value: js.Array[String]): Self = StObject.set(x, "sourceAsset", value.asInstanceOf[js.Any])
+    inline def setSourceAsset(value: js.Array[String]): Self = StObject.set(x, "sourceAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAssetUndefined: Self = StObject.set(x, "sourceAsset", js.undefined)
+    inline def setSourceAssetUndefined: Self = StObject.set(x, "sourceAsset", js.undefined)
     
-    @scala.inline
-    def setSourceAssetVarargs(value: String*): Self = StObject.set(x, "sourceAsset", js.Array(value :_*))
+    inline def setSourceAssetVarargs(value: String*): Self = StObject.set(x, "sourceAsset", js.Array(value :_*))
   }
 }

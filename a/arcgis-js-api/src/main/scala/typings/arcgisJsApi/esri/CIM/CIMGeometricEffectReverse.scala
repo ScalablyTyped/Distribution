@@ -19,23 +19,18 @@ trait CIMGeometricEffectReverse
 }
 object CIMGeometricEffectReverse {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectReverse = {
+  inline def apply(): CIMGeometricEffectReverse = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectReverse")
     __obj.asInstanceOf[CIMGeometricEffectReverse]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectReverseMutableBuilder[Self <: CIMGeometricEffectReverse] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectReverse](x: Self) {
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

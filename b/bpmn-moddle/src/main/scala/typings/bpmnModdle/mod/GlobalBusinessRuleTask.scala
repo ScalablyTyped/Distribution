@@ -12,8 +12,7 @@ trait GlobalBusinessRuleTask
 }
 object GlobalBusinessRuleTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -28,10 +27,8 @@ object GlobalBusinessRuleTask {
     __obj.asInstanceOf[GlobalBusinessRuleTask]
   }
   
-  @scala.inline
-  implicit class GlobalBusinessRuleTaskMutableBuilder[Self <: GlobalBusinessRuleTask] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalBusinessRuleTask](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
   }
 }

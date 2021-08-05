@@ -15,10 +15,8 @@ trait TableOrientation extends StObject
 object TableOrientation {
   
   /** operations are carried out on columns. */
-  @scala.inline
-  def COLUMNS: `0` = 0.asInstanceOf[`0`]
+  inline def COLUMNS: `0` = 0.asInstanceOf[`0`]
   
   /** operations are carried out on rows. */
-  @scala.inline
-  def ROWS: `1` = 1.asInstanceOf[`1`]
+  inline def ROWS: `1` = 1.asInstanceOf[`1`]
 }

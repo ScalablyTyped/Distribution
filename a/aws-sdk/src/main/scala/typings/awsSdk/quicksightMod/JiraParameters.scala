@@ -13,16 +13,13 @@ trait JiraParameters extends StObject {
 }
 object JiraParameters {
   
-  @scala.inline
-  def apply(SiteBaseUrl: SiteBaseUrl): JiraParameters = {
+  inline def apply(SiteBaseUrl: SiteBaseUrl): JiraParameters = {
     val __obj = js.Dynamic.literal(SiteBaseUrl = SiteBaseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[JiraParameters]
   }
   
-  @scala.inline
-  implicit class JiraParametersMutableBuilder[Self <: JiraParameters] (val x: Self) extends AnyVal {
+  extension [Self <: JiraParameters](x: Self) {
     
-    @scala.inline
-    def setSiteBaseUrl(value: SiteBaseUrl): Self = StObject.set(x, "SiteBaseUrl", value.asInstanceOf[js.Any])
+    inline def setSiteBaseUrl(value: SiteBaseUrl): Self = StObject.set(x, "SiteBaseUrl", value.asInstanceOf[js.Any])
   }
 }

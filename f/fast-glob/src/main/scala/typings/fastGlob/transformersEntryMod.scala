@@ -14,10 +14,10 @@ object transformersEntryMod {
        with EntryTransformer {
     def this(_settings: typings.fastGlob.settingsMod.default) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _transform: js.Any = js.native
     
     /* CompleteClass */
@@ -26,31 +26,26 @@ object transformersEntryMod {
   
   trait EntryTransformer extends StObject {
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
-    var _transform: js.Any
+    /* private */ var _transform: js.Any
     
     def getTransformer(): EntryTransformerFunction
   }
   object EntryTransformer {
     
-    @scala.inline
-    def apply(_settings: js.Any, _transform: js.Any, getTransformer: () => EntryTransformerFunction): EntryTransformer = {
+    inline def apply(_settings: js.Any, _transform: js.Any, getTransformer: () => EntryTransformerFunction): EntryTransformer = {
       val __obj = js.Dynamic.literal(_settings = _settings.asInstanceOf[js.Any], _transform = _transform.asInstanceOf[js.Any], getTransformer = js.Any.fromFunction0(getTransformer))
       __obj.asInstanceOf[EntryTransformer]
     }
     
-    @scala.inline
-    implicit class EntryTransformerMutableBuilder[Self <: EntryTransformer] (val x: Self) extends AnyVal {
+    extension [Self <: EntryTransformer](x: Self) {
       
-      @scala.inline
-      def setGetTransformer(value: () => EntryTransformerFunction): Self = StObject.set(x, "getTransformer", js.Any.fromFunction0(value))
+      inline def setGetTransformer(value: () => EntryTransformerFunction): Self = StObject.set(x, "getTransformer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_transform(value: js.Any): Self = StObject.set(x, "_transform", value.asInstanceOf[js.Any])
+      inline def set_transform(value: js.Any): Self = StObject.set(x, "_transform", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,28 +20,21 @@ trait PlotChaikinParamsOptions extends StObject {
 }
 object PlotChaikinParamsOptions {
   
-  @scala.inline
-  def apply(): PlotChaikinParamsOptions = {
+  inline def apply(): PlotChaikinParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotChaikinParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotChaikinParamsOptionsMutableBuilder[Self <: PlotChaikinParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotChaikinParamsOptions](x: Self) {
     
-    @scala.inline
-    def setPeriods(value: js.Array[Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+    inline def setPeriods(value: js.Array[Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
+    inline def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
     
-    @scala.inline
-    def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value :_*))
     
-    @scala.inline
-    def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
+    inline def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
+    inline def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait OmitBezierCurveanykeyofPo extends StObject {
 }
 object OmitBezierCurveanykeyofPo {
   
-  @scala.inline
-  def apply(getInterpolateLngLats: () => js.Array[LngLat], getSerializedPath: () => js.Array[js.Array[Double]]): OmitBezierCurveanykeyofPo = {
+  inline def apply(getInterpolateLngLats: () => js.Array[LngLat], getSerializedPath: () => js.Array[js.Array[Double]]): OmitBezierCurveanykeyofPo = {
     val __obj = js.Dynamic.literal(getInterpolateLngLats = js.Any.fromFunction0(getInterpolateLngLats), getSerializedPath = js.Any.fromFunction0(getSerializedPath))
     __obj.asInstanceOf[OmitBezierCurveanykeyofPo]
   }
   
-  @scala.inline
-  implicit class OmitBezierCurveanykeyofPoMutableBuilder[Self <: OmitBezierCurveanykeyofPo] (val x: Self) extends AnyVal {
+  extension [Self <: OmitBezierCurveanykeyofPo](x: Self) {
     
-    @scala.inline
-    def setGetInterpolateLngLats(value: () => js.Array[LngLat]): Self = StObject.set(x, "getInterpolateLngLats", js.Any.fromFunction0(value))
+    inline def setGetInterpolateLngLats(value: () => js.Array[LngLat]): Self = StObject.set(x, "getInterpolateLngLats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSerializedPath(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getSerializedPath", js.Any.fromFunction0(value))
+    inline def setGetSerializedPath(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getSerializedPath", js.Any.fromFunction0(value))
   }
 }

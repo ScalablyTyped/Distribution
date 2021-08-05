@@ -13,16 +13,13 @@ trait CheckDomainTransferabilityResponse extends StObject {
 }
 object CheckDomainTransferabilityResponse {
   
-  @scala.inline
-  def apply(Transferability: DomainTransferability): CheckDomainTransferabilityResponse = {
+  inline def apply(Transferability: DomainTransferability): CheckDomainTransferabilityResponse = {
     val __obj = js.Dynamic.literal(Transferability = Transferability.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDomainTransferabilityResponse]
   }
   
-  @scala.inline
-  implicit class CheckDomainTransferabilityResponseMutableBuilder[Self <: CheckDomainTransferabilityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CheckDomainTransferabilityResponse](x: Self) {
     
-    @scala.inline
-    def setTransferability(value: DomainTransferability): Self = StObject.set(x, "Transferability", value.asInstanceOf[js.Any])
+    inline def setTransferability(value: DomainTransferability): Self = StObject.set(x, "Transferability", value.asInstanceOf[js.Any])
   }
 }

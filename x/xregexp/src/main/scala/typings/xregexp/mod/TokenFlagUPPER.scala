@@ -38,81 +38,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TokenFlagUPPER extends StObject
 object TokenFlagUPPER {
   
-  @scala.inline
-  def A: typings.xregexp.xregexpStrings.A = "A".asInstanceOf[typings.xregexp.xregexpStrings.A]
+  inline def A: typings.xregexp.xregexpStrings.A = "A".asInstanceOf[typings.xregexp.xregexpStrings.A]
   
-  @scala.inline
-  def B: typings.xregexp.xregexpStrings.B = "B".asInstanceOf[typings.xregexp.xregexpStrings.B]
+  inline def B: typings.xregexp.xregexpStrings.B = "B".asInstanceOf[typings.xregexp.xregexpStrings.B]
   
-  @scala.inline
-  def C: typings.xregexp.xregexpStrings.C = "C".asInstanceOf[typings.xregexp.xregexpStrings.C]
+  inline def C: typings.xregexp.xregexpStrings.C = "C".asInstanceOf[typings.xregexp.xregexpStrings.C]
   
-  @scala.inline
-  def D: typings.xregexp.xregexpStrings.D = "D".asInstanceOf[typings.xregexp.xregexpStrings.D]
+  inline def D: typings.xregexp.xregexpStrings.D = "D".asInstanceOf[typings.xregexp.xregexpStrings.D]
   
-  @scala.inline
-  def E: typings.xregexp.xregexpStrings.E = "E".asInstanceOf[typings.xregexp.xregexpStrings.E]
+  inline def E: typings.xregexp.xregexpStrings.E = "E".asInstanceOf[typings.xregexp.xregexpStrings.E]
   
-  @scala.inline
-  def F: typings.xregexp.xregexpStrings.F = "F".asInstanceOf[typings.xregexp.xregexpStrings.F]
+  inline def F: typings.xregexp.xregexpStrings.F = "F".asInstanceOf[typings.xregexp.xregexpStrings.F]
   
-  @scala.inline
-  def G: typings.xregexp.xregexpStrings.G = "G".asInstanceOf[typings.xregexp.xregexpStrings.G]
+  inline def G: typings.xregexp.xregexpStrings.G = "G".asInstanceOf[typings.xregexp.xregexpStrings.G]
   
-  @scala.inline
-  def H: typings.xregexp.xregexpStrings.H = "H".asInstanceOf[typings.xregexp.xregexpStrings.H]
+  inline def H: typings.xregexp.xregexpStrings.H = "H".asInstanceOf[typings.xregexp.xregexpStrings.H]
   
-  @scala.inline
-  def I: typings.xregexp.xregexpStrings.I = "I".asInstanceOf[typings.xregexp.xregexpStrings.I]
+  inline def I: typings.xregexp.xregexpStrings.I = "I".asInstanceOf[typings.xregexp.xregexpStrings.I]
   
-  @scala.inline
-  def J: typings.xregexp.xregexpStrings.J = "J".asInstanceOf[typings.xregexp.xregexpStrings.J]
+  inline def J: typings.xregexp.xregexpStrings.J = "J".asInstanceOf[typings.xregexp.xregexpStrings.J]
   
-  @scala.inline
-  def K: typings.xregexp.xregexpStrings.K = "K".asInstanceOf[typings.xregexp.xregexpStrings.K]
+  inline def K: typings.xregexp.xregexpStrings.K = "K".asInstanceOf[typings.xregexp.xregexpStrings.K]
   
-  @scala.inline
-  def L: typings.xregexp.xregexpStrings.L = "L".asInstanceOf[typings.xregexp.xregexpStrings.L]
+  inline def L: typings.xregexp.xregexpStrings.L = "L".asInstanceOf[typings.xregexp.xregexpStrings.L]
   
-  @scala.inline
-  def M: typings.xregexp.xregexpStrings.M = "M".asInstanceOf[typings.xregexp.xregexpStrings.M]
+  inline def M: typings.xregexp.xregexpStrings.M = "M".asInstanceOf[typings.xregexp.xregexpStrings.M]
   
-  @scala.inline
-  def N: typings.xregexp.xregexpStrings.N = "N".asInstanceOf[typings.xregexp.xregexpStrings.N]
+  inline def N: typings.xregexp.xregexpStrings.N = "N".asInstanceOf[typings.xregexp.xregexpStrings.N]
   
-  @scala.inline
-  def O: typings.xregexp.xregexpStrings.O = "O".asInstanceOf[typings.xregexp.xregexpStrings.O]
+  inline def O: typings.xregexp.xregexpStrings.O = "O".asInstanceOf[typings.xregexp.xregexpStrings.O]
   
-  @scala.inline
-  def P: typings.xregexp.xregexpStrings.P = "P".asInstanceOf[typings.xregexp.xregexpStrings.P]
+  inline def P: typings.xregexp.xregexpStrings.P = "P".asInstanceOf[typings.xregexp.xregexpStrings.P]
   
-  @scala.inline
-  def Q: typings.xregexp.xregexpStrings.Q = "Q".asInstanceOf[typings.xregexp.xregexpStrings.Q]
+  inline def Q: typings.xregexp.xregexpStrings.Q = "Q".asInstanceOf[typings.xregexp.xregexpStrings.Q]
   
-  @scala.inline
-  def R: typings.xregexp.xregexpStrings.R = "R".asInstanceOf[typings.xregexp.xregexpStrings.R]
+  inline def R: typings.xregexp.xregexpStrings.R = "R".asInstanceOf[typings.xregexp.xregexpStrings.R]
   
-  @scala.inline
-  def S: typings.xregexp.xregexpStrings.S = "S".asInstanceOf[typings.xregexp.xregexpStrings.S]
+  inline def S: typings.xregexp.xregexpStrings.S = "S".asInstanceOf[typings.xregexp.xregexpStrings.S]
   
-  @scala.inline
-  def T: typings.xregexp.xregexpStrings.T = "T".asInstanceOf[typings.xregexp.xregexpStrings.T]
+  inline def T: typings.xregexp.xregexpStrings.T = "T".asInstanceOf[typings.xregexp.xregexpStrings.T]
   
-  @scala.inline
-  def U: typings.xregexp.xregexpStrings.U = "U".asInstanceOf[typings.xregexp.xregexpStrings.U]
+  inline def U: typings.xregexp.xregexpStrings.U = "U".asInstanceOf[typings.xregexp.xregexpStrings.U]
   
-  @scala.inline
-  def V: typings.xregexp.xregexpStrings.V = "V".asInstanceOf[typings.xregexp.xregexpStrings.V]
+  inline def V: typings.xregexp.xregexpStrings.V = "V".asInstanceOf[typings.xregexp.xregexpStrings.V]
   
-  @scala.inline
-  def W: typings.xregexp.xregexpStrings.W = "W".asInstanceOf[typings.xregexp.xregexpStrings.W]
+  inline def W: typings.xregexp.xregexpStrings.W = "W".asInstanceOf[typings.xregexp.xregexpStrings.W]
   
-  @scala.inline
-  def X: typings.xregexp.xregexpStrings.X = "X".asInstanceOf[typings.xregexp.xregexpStrings.X]
+  inline def X: typings.xregexp.xregexpStrings.X = "X".asInstanceOf[typings.xregexp.xregexpStrings.X]
   
-  @scala.inline
-  def Y: typings.xregexp.xregexpStrings.Y = "Y".asInstanceOf[typings.xregexp.xregexpStrings.Y]
+  inline def Y: typings.xregexp.xregexpStrings.Y = "Y".asInstanceOf[typings.xregexp.xregexpStrings.Y]
   
-  @scala.inline
-  def Z: typings.xregexp.xregexpStrings.Z = "Z".asInstanceOf[typings.xregexp.xregexpStrings.Z]
+  inline def Z: typings.xregexp.xregexpStrings.Z = "Z".asInstanceOf[typings.xregexp.xregexpStrings.Z]
 }

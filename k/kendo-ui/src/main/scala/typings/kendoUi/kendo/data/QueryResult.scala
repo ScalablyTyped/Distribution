@@ -12,28 +12,21 @@ trait QueryResult extends StObject {
 }
 object QueryResult {
   
-  @scala.inline
-  def apply(): QueryResult = {
+  inline def apply(): QueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryResult]
   }
   
-  @scala.inline
-  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResult](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

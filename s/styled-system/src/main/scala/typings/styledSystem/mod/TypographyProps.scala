@@ -19,8 +19,7 @@ trait TypographyProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with TextAlignProps[ThemeType]
 object TypographyProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): TypographyProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): TypographyProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypographyProps[ThemeType]]
   }

@@ -237,38 +237,28 @@ object mod extends Shortcut {
     }
     object EventObject {
       
-      @scala.inline
-      def apply(name: String, start: Double): EventObject = {
+      inline def apply(name: String, start: Double): EventObject = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventObject]
       }
       
-      @scala.inline
-      implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+      extension [Self <: EventObject](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+        inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+        inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
   }

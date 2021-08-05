@@ -11,16 +11,13 @@ trait PickImplprogress extends StObject {
 }
 object PickImplprogress {
   
-  @scala.inline
-  def apply(progress: String): PickImplprogress = {
+  inline def apply(progress: String): PickImplprogress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplprogress]
   }
   
-  @scala.inline
-  implicit class PickImplprogressMutableBuilder[Self <: PickImplprogress] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplprogress](x: Self) {
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

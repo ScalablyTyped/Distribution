@@ -16,12 +16,10 @@ object JsApi {
   /**
     * JavaScript API will be disabled.
     */
-  @scala.inline
-  def Disable: `0` = 0.asInstanceOf[`0`]
+  inline def Disable: `0` = 0.asInstanceOf[`0`]
   
   /**
     * JavaScript API will be enabled.
     */
-  @scala.inline
-  def Enable: `1` = 1.asInstanceOf[`1`]
+  inline def Enable: `1` = 1.asInstanceOf[`1`]
 }

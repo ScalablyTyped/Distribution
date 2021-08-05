@@ -32,32 +32,24 @@ object tagMod {
   }
   object TagProps {
     
-    @scala.inline
-    def apply(): TagProps = {
+    inline def apply(): TagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagProps]
     }
     
-    @scala.inline
-    implicit class TagPropsMutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setPill(value: Boolean): Self = StObject.set(x, "pill", value.asInstanceOf[js.Any])
+      inline def setPill(value: Boolean): Self = StObject.set(x, "pill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPillUndefined: Self = StObject.set(x, "pill", js.undefined)
+      inline def setPillUndefined: Self = StObject.set(x, "pill", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

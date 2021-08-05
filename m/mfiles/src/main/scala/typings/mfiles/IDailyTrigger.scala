@@ -10,16 +10,13 @@ trait IDailyTrigger extends StObject {
 }
 object IDailyTrigger {
   
-  @scala.inline
-  def apply(DaysInterval: Double): IDailyTrigger = {
+  inline def apply(DaysInterval: Double): IDailyTrigger = {
     val __obj = js.Dynamic.literal(DaysInterval = DaysInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDailyTrigger]
   }
   
-  @scala.inline
-  implicit class IDailyTriggerMutableBuilder[Self <: IDailyTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: IDailyTrigger](x: Self) {
     
-    @scala.inline
-    def setDaysInterval(value: Double): Self = StObject.set(x, "DaysInterval", value.asInstanceOf[js.Any])
+    inline def setDaysInterval(value: Double): Self = StObject.set(x, "DaysInterval", value.asInstanceOf[js.Any])
   }
 }

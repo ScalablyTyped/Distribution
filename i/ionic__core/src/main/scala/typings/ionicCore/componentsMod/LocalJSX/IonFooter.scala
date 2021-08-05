@@ -20,25 +20,19 @@ trait IonFooter extends StObject {
 }
 object IonFooter {
   
-  @scala.inline
-  def apply(): IonFooter = {
+  inline def apply(): IonFooter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonFooter]
   }
   
-  @scala.inline
-  implicit class IonFooterMutableBuilder[Self <: IonFooter] (val x: Self) extends AnyVal {
+  extension [Self <: IonFooter](x: Self) {
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

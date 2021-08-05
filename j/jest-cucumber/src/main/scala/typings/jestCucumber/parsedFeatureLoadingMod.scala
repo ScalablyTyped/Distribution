@@ -12,18 +12,12 @@ object parsedFeatureLoadingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadFeature(featureFilePath: String): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFeature")(featureFilePath.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
-  @scala.inline
-  def loadFeature(featureFilePath: String, options: Options): ParsedFeature = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeature")(featureFilePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedFeature]
+  inline def loadFeature(featureFilePath: String): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFeature")(featureFilePath.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
+  inline def loadFeature(featureFilePath: String, options: Options): ParsedFeature = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeature")(featureFilePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedFeature]
   
-  @scala.inline
-  def loadFeatures(globPattern: String): js.Array[ParsedFeature] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFeatures")(globPattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[ParsedFeature]]
-  @scala.inline
-  def loadFeatures(globPattern: String, options: Options): js.Array[ParsedFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeatures")(globPattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedFeature]]
+  inline def loadFeatures(globPattern: String): js.Array[ParsedFeature] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFeatures")(globPattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[ParsedFeature]]
+  inline def loadFeatures(globPattern: String, options: Options): js.Array[ParsedFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeatures")(globPattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedFeature]]
   
-  @scala.inline
-  def parseFeature(featureText: String): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFeature")(featureText.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
-  @scala.inline
-  def parseFeature(featureText: String, options: Options): ParsedFeature = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFeature")(featureText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedFeature]
+  inline def parseFeature(featureText: String): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFeature")(featureText.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
+  inline def parseFeature(featureText: String, options: Options): ParsedFeature = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFeature")(featureText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedFeature]
 }

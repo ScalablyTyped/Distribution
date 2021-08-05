@@ -12,19 +12,15 @@ trait SignedPostPolicyV4Output extends StObject {
 }
 object SignedPostPolicyV4Output {
   
-  @scala.inline
-  def apply(fields: PolicyFields, url: String): SignedPostPolicyV4Output = {
+  inline def apply(fields: PolicyFields, url: String): SignedPostPolicyV4Output = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedPostPolicyV4Output]
   }
   
-  @scala.inline
-  implicit class SignedPostPolicyV4OutputMutableBuilder[Self <: SignedPostPolicyV4Output] (val x: Self) extends AnyVal {
+  extension [Self <: SignedPostPolicyV4Output](x: Self) {
     
-    @scala.inline
-    def setFields(value: PolicyFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: PolicyFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

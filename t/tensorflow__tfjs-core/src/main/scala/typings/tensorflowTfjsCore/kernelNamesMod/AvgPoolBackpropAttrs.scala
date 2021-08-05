@@ -16,8 +16,7 @@ trait AvgPoolBackpropAttrs extends StObject {
 }
 object AvgPoolBackpropAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterSize: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     strides: (js.Tuple2[Double, Double]) | Double
@@ -26,16 +25,12 @@ object AvgPoolBackpropAttrs {
     __obj.asInstanceOf[AvgPoolBackpropAttrs]
   }
   
-  @scala.inline
-  implicit class AvgPoolBackpropAttrsMutableBuilder[Self <: AvgPoolBackpropAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AvgPoolBackpropAttrs](x: Self) {
     
-    @scala.inline
-    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
+    inline def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

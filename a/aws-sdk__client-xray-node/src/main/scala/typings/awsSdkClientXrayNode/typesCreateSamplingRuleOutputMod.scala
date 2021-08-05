@@ -26,23 +26,18 @@ object typesCreateSamplingRuleOutputMod {
   }
   object CreateSamplingRuleOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateSamplingRuleOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateSamplingRuleOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateSamplingRuleOutput]
     }
     
-    @scala.inline
-    implicit class CreateSamplingRuleOutputMutableBuilder[Self <: CreateSamplingRuleOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSamplingRuleOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingRuleRecord(value: UnmarshalledSamplingRuleRecord): Self = StObject.set(x, "SamplingRuleRecord", value.asInstanceOf[js.Any])
+      inline def setSamplingRuleRecord(value: UnmarshalledSamplingRuleRecord): Self = StObject.set(x, "SamplingRuleRecord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingRuleRecordUndefined: Self = StObject.set(x, "SamplingRuleRecord", js.undefined)
+      inline def setSamplingRuleRecordUndefined: Self = StObject.set(x, "SamplingRuleRecord", js.undefined)
     }
   }
 }

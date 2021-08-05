@@ -18,8 +18,7 @@ trait SubwebQuery
 }
 object SubwebQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -34,19 +33,14 @@ object SubwebQuery {
     __obj.asInstanceOf[SubwebQuery]
   }
   
-  @scala.inline
-  implicit class SubwebQueryMutableBuilder[Self <: SubwebQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SubwebQuery](x: Self) {
     
-    @scala.inline
-    def setGet_configurationFilter(value: () => Double): Self = StObject.set(x, "get_configurationFilter", js.Any.fromFunction0(value))
+    inline def setGet_configurationFilter(value: () => Double): Self = StObject.set(x, "get_configurationFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_webTemplateFilter(value: () => Double): Self = StObject.set(x, "get_webTemplateFilter", js.Any.fromFunction0(value))
+    inline def setGet_webTemplateFilter(value: () => Double): Self = StObject.set(x, "get_webTemplateFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_configurationFilter(value: Double => Unit): Self = StObject.set(x, "set_configurationFilter", js.Any.fromFunction1(value))
+    inline def setSet_configurationFilter(value: Double => Unit): Self = StObject.set(x, "set_configurationFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_webTemplateFilter(value: Double => Unit): Self = StObject.set(x, "set_webTemplateFilter", js.Any.fromFunction1(value))
+    inline def setSet_webTemplateFilter(value: Double => Unit): Self = StObject.set(x, "set_webTemplateFilter", js.Any.fromFunction1(value))
   }
 }

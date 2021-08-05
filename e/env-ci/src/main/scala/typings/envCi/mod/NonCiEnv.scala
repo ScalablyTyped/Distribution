@@ -17,28 +17,21 @@ trait NonCiEnv
 }
 object NonCiEnv {
   
-  @scala.inline
-  def apply(): NonCiEnv = {
+  inline def apply(): NonCiEnv = {
     val __obj = js.Dynamic.literal(isCi = false)
     __obj.asInstanceOf[NonCiEnv]
   }
   
-  @scala.inline
-  implicit class NonCiEnvMutableBuilder[Self <: NonCiEnv] (val x: Self) extends AnyVal {
+  extension [Self <: NonCiEnv](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+    inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
-    @scala.inline
-    def setIsCi(value: `false`): Self = StObject.set(x, "isCi", value.asInstanceOf[js.Any])
+    inline def setIsCi(value: `false`): Self = StObject.set(x, "isCi", value.asInstanceOf[js.Any])
   }
 }

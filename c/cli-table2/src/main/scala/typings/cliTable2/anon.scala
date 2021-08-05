@@ -20,8 +20,7 @@ object anon {
   }
   object Border {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       border: js.Array[String],
       compact: Boolean,
       head: js.Array[String],
@@ -34,29 +33,21 @@ object anon {
       __obj.asInstanceOf[Border]
     }
     
-    @scala.inline
-    implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+    extension [Self <: Border](x: Self) {
       
-      @scala.inline
-      def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
       
-      @scala.inline
-      def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
+      inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
+      inline def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,44 +63,32 @@ object anon {
   }
   object Head {
     
-    @scala.inline
-    def apply(): Head = {
+    inline def apply(): Head = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Head]
     }
     
-    @scala.inline
-    implicit class HeadMutableBuilder[Self <: Head] (val x: Self) extends AnyVal {
+    extension [Self <: Head](x: Self) {
       
-      @scala.inline
-      def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
       
-      @scala.inline
-      def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
       
-      @scala.inline
-      def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
+      inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
+      inline def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
       
-      @scala.inline
-      def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
+      inline def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
+      inline def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
     }
   }
   
@@ -148,104 +127,72 @@ object anon {
   }
   object PartialRecordCharNamestri {
     
-    @scala.inline
-    def apply(): PartialRecordCharNamestri = {
+    inline def apply(): PartialRecordCharNamestri = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecordCharNamestri]
     }
     
-    @scala.inline
-    implicit class PartialRecordCharNamestriMutableBuilder[Self <: PartialRecordCharNamestri] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecordCharNamestri](x: Self) {
       
-      @scala.inline
-      def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-left`(value: String): Self = StObject.set(x, "bottom-left", value.asInstanceOf[js.Any])
+      inline def `setBottom-left`(value: String): Self = StObject.set(x, "bottom-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-leftUndefined`: Self = StObject.set(x, "bottom-left", js.undefined)
+      inline def `setBottom-leftUndefined`: Self = StObject.set(x, "bottom-left", js.undefined)
       
-      @scala.inline
-      def `setBottom-mid`(value: String): Self = StObject.set(x, "bottom-mid", value.asInstanceOf[js.Any])
+      inline def `setBottom-mid`(value: String): Self = StObject.set(x, "bottom-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-midUndefined`: Self = StObject.set(x, "bottom-mid", js.undefined)
+      inline def `setBottom-midUndefined`: Self = StObject.set(x, "bottom-mid", js.undefined)
       
-      @scala.inline
-      def `setBottom-right`(value: String): Self = StObject.set(x, "bottom-right", value.asInstanceOf[js.Any])
+      inline def `setBottom-right`(value: String): Self = StObject.set(x, "bottom-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-rightUndefined`: Self = StObject.set(x, "bottom-right", js.undefined)
+      inline def `setBottom-rightUndefined`: Self = StObject.set(x, "bottom-right", js.undefined)
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-mid`(value: String): Self = StObject.set(x, "left-mid", value.asInstanceOf[js.Any])
+      inline def `setLeft-mid`(value: String): Self = StObject.set(x, "left-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-midUndefined`: Self = StObject.set(x, "left-mid", js.undefined)
+      inline def `setLeft-midUndefined`: Self = StObject.set(x, "left-mid", js.undefined)
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+      inline def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMid-mid`(value: String): Self = StObject.set(x, "mid-mid", value.asInstanceOf[js.Any])
+      inline def `setMid-mid`(value: String): Self = StObject.set(x, "mid-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMid-midUndefined`: Self = StObject.set(x, "mid-mid", js.undefined)
+      inline def `setMid-midUndefined`: Self = StObject.set(x, "mid-mid", js.undefined)
       
-      @scala.inline
-      def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
+      inline def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
       
-      @scala.inline
-      def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+      inline def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
+      inline def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
       
-      @scala.inline
-      def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-mid`(value: String): Self = StObject.set(x, "right-mid", value.asInstanceOf[js.Any])
+      inline def `setRight-mid`(value: String): Self = StObject.set(x, "right-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-midUndefined`: Self = StObject.set(x, "right-mid", js.undefined)
+      inline def `setRight-midUndefined`: Self = StObject.set(x, "right-mid", js.undefined)
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-left`(value: String): Self = StObject.set(x, "top-left", value.asInstanceOf[js.Any])
+      inline def `setTop-left`(value: String): Self = StObject.set(x, "top-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-leftUndefined`: Self = StObject.set(x, "top-left", js.undefined)
+      inline def `setTop-leftUndefined`: Self = StObject.set(x, "top-left", js.undefined)
       
-      @scala.inline
-      def `setTop-mid`(value: String): Self = StObject.set(x, "top-mid", value.asInstanceOf[js.Any])
+      inline def `setTop-mid`(value: String): Self = StObject.set(x, "top-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-midUndefined`: Self = StObject.set(x, "top-mid", js.undefined)
+      inline def `setTop-midUndefined`: Self = StObject.set(x, "top-mid", js.undefined)
       
-      @scala.inline
-      def `setTop-right`(value: String): Self = StObject.set(x, "top-right", value.asInstanceOf[js.Any])
+      inline def `setTop-right`(value: String): Self = StObject.set(x, "top-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-rightUndefined`: Self = StObject.set(x, "top-right", js.undefined)
+      inline def `setTop-rightUndefined`: Self = StObject.set(x, "top-right", js.undefined)
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -284,8 +231,7 @@ object anon {
   }
   object RecordCharNamestring {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: String,
       `bottom-left`: String,
       `bottom-mid`: String,
@@ -315,53 +261,37 @@ object anon {
       __obj.asInstanceOf[RecordCharNamestring]
     }
     
-    @scala.inline
-    implicit class RecordCharNamestringMutableBuilder[Self <: RecordCharNamestring] (val x: Self) extends AnyVal {
+    extension [Self <: RecordCharNamestring](x: Self) {
       
-      @scala.inline
-      def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-left`(value: String): Self = StObject.set(x, "bottom-left", value.asInstanceOf[js.Any])
+      inline def `setBottom-left`(value: String): Self = StObject.set(x, "bottom-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-mid`(value: String): Self = StObject.set(x, "bottom-mid", value.asInstanceOf[js.Any])
+      inline def `setBottom-mid`(value: String): Self = StObject.set(x, "bottom-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-right`(value: String): Self = StObject.set(x, "bottom-right", value.asInstanceOf[js.Any])
+      inline def `setBottom-right`(value: String): Self = StObject.set(x, "bottom-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-mid`(value: String): Self = StObject.set(x, "left-mid", value.asInstanceOf[js.Any])
+      inline def `setLeft-mid`(value: String): Self = StObject.set(x, "left-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+      inline def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMid-mid`(value: String): Self = StObject.set(x, "mid-mid", value.asInstanceOf[js.Any])
+      inline def `setMid-mid`(value: String): Self = StObject.set(x, "mid-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+      inline def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-mid`(value: String): Self = StObject.set(x, "right-mid", value.asInstanceOf[js.Any])
+      inline def `setRight-mid`(value: String): Self = StObject.set(x, "right-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-left`(value: String): Self = StObject.set(x, "top-left", value.asInstanceOf[js.Any])
+      inline def `setTop-left`(value: String): Self = StObject.set(x, "top-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-mid`(value: String): Self = StObject.set(x, "top-mid", value.asInstanceOf[js.Any])
+      inline def `setTop-mid`(value: String): Self = StObject.set(x, "top-mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-right`(value: String): Self = StObject.set(x, "top-right", value.asInstanceOf[js.Any])
+      inline def `setTop-right`(value: String): Self = StObject.set(x, "top-right", value.asInstanceOf[js.Any])
     }
   }
 }

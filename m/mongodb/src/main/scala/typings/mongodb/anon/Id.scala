@@ -10,16 +10,13 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(_id: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Id = {
+  inline def apply(_id: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Id = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def set_id(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

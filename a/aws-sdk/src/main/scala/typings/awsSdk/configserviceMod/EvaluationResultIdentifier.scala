@@ -18,25 +18,19 @@ trait EvaluationResultIdentifier extends StObject {
 }
 object EvaluationResultIdentifier {
   
-  @scala.inline
-  def apply(): EvaluationResultIdentifier = {
+  inline def apply(): EvaluationResultIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvaluationResultIdentifier]
   }
   
-  @scala.inline
-  implicit class EvaluationResultIdentifierMutableBuilder[Self <: EvaluationResultIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationResultIdentifier](x: Self) {
     
-    @scala.inline
-    def setEvaluationResultQualifier(value: EvaluationResultQualifier): Self = StObject.set(x, "EvaluationResultQualifier", value.asInstanceOf[js.Any])
+    inline def setEvaluationResultQualifier(value: EvaluationResultQualifier): Self = StObject.set(x, "EvaluationResultQualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationResultQualifierUndefined: Self = StObject.set(x, "EvaluationResultQualifier", js.undefined)
+    inline def setEvaluationResultQualifierUndefined: Self = StObject.set(x, "EvaluationResultQualifier", js.undefined)
     
-    @scala.inline
-    def setOrderingTimestamp(value: Date): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
+    inline def setOrderingTimestamp(value: Date): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingTimestampUndefined: Self = StObject.set(x, "OrderingTimestamp", js.undefined)
+    inline def setOrderingTimestampUndefined: Self = StObject.set(x, "OrderingTimestamp", js.undefined)
   }
 }

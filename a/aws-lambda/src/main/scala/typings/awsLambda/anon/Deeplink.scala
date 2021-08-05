@@ -14,8 +14,7 @@ trait Deeplink extends StObject {
 }
 object Deeplink {
   
-  @scala.inline
-  def apply(`deep-link`: String, `group-name`: String, `stream-name`: String): Deeplink = {
+  inline def apply(`deep-link`: String, `group-name`: String, `stream-name`: String): Deeplink = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("deep-link")(`deep-link`.asInstanceOf[js.Any])
     __obj.updateDynamic("group-name")(`group-name`.asInstanceOf[js.Any])
@@ -23,16 +22,12 @@ object Deeplink {
     __obj.asInstanceOf[Deeplink]
   }
   
-  @scala.inline
-  implicit class DeeplinkMutableBuilder[Self <: Deeplink] (val x: Self) extends AnyVal {
+  extension [Self <: Deeplink](x: Self) {
     
-    @scala.inline
-    def `setDeep-link`(value: String): Self = StObject.set(x, "deep-link", value.asInstanceOf[js.Any])
+    inline def `setDeep-link`(value: String): Self = StObject.set(x, "deep-link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGroup-name`(value: String): Self = StObject.set(x, "group-name", value.asInstanceOf[js.Any])
+    inline def `setGroup-name`(value: String): Self = StObject.set(x, "group-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStream-name`(value: String): Self = StObject.set(x, "stream-name", value.asInstanceOf[js.Any])
+    inline def `setStream-name`(value: String): Self = StObject.set(x, "stream-name", value.asInstanceOf[js.Any])
   }
 }

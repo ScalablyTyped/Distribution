@@ -22,19 +22,15 @@ trait FixedPrice extends StObject {
 }
 object FixedPrice {
   
-  @scala.inline
-  def apply(local_price: Price[FiatCurrency]): FixedPrice = {
+  inline def apply(local_price: Price[FiatCurrency]): FixedPrice = {
     val __obj = js.Dynamic.literal(local_price = local_price.asInstanceOf[js.Any], pricing_type = "fixed_price")
     __obj.asInstanceOf[FixedPrice]
   }
   
-  @scala.inline
-  implicit class FixedPriceMutableBuilder[Self <: FixedPrice] (val x: Self) extends AnyVal {
+  extension [Self <: FixedPrice](x: Self) {
     
-    @scala.inline
-    def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
+    inline def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricing_type(value: fixed_price): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
+    inline def setPricing_type(value: fixed_price): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
   }
 }

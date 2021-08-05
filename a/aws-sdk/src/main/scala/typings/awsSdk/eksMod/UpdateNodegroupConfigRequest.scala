@@ -33,37 +33,27 @@ trait UpdateNodegroupConfigRequest extends StObject {
 }
 object UpdateNodegroupConfigRequest {
   
-  @scala.inline
-  def apply(clusterName: String, nodegroupName: String): UpdateNodegroupConfigRequest = {
+  inline def apply(clusterName: String, nodegroupName: String): UpdateNodegroupConfigRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodegroupConfigRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNodegroupConfigRequestMutableBuilder[Self <: UpdateNodegroupConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNodegroupConfigRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: UpdateLabelsPayload): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: UpdateLabelsPayload): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingConfig(value: NodegroupScalingConfig): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
+    inline def setScalingConfig(value: NodegroupScalingConfig): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingConfigUndefined: Self = StObject.set(x, "scalingConfig", js.undefined)
+    inline def setScalingConfigUndefined: Self = StObject.set(x, "scalingConfig", js.undefined)
   }
 }

@@ -42,29 +42,22 @@ object anon {
   }
   object Account {
     
-    @scala.inline
-    def apply(account: String, business: String, other: String, personal: String, preferred: String): Account = {
+    inline def apply(account: String, business: String, other: String, personal: String, preferred: String): Account = {
       val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], business = business.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any], preferred = preferred.asInstanceOf[js.Any])
       __obj.asInstanceOf[Account]
     }
     
-    @scala.inline
-    implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+    extension [Self <: Account](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+      inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonal(value: String): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
+      inline def setPersonal(value: String): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferred(value: String): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+      inline def setPreferred(value: String): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,38 +85,28 @@ object anon {
   }
   object Business {
     
-    @scala.inline
-    def apply(): Business = {
+    inline def apply(): Business = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Business]
     }
     
-    @scala.inline
-    implicit class BusinessMutableBuilder[Self <: Business] (val x: Self) extends AnyVal {
+    extension [Self <: Business](x: Self) {
       
-      @scala.inline
-      def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+      inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusinessUndefined: Self = StObject.set(x, "business", js.undefined)
+      inline def setBusinessUndefined: Self = StObject.set(x, "business", js.undefined)
       
-      @scala.inline
-      def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setPersonal(value: String): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
+      inline def setPersonal(value: String): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonalUndefined: Self = StObject.set(x, "personal", js.undefined)
+      inline def setPersonalUndefined: Self = StObject.set(x, "personal", js.undefined)
       
-      @scala.inline
-      def setPreferred(value: String): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+      inline def setPreferred(value: String): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
+      inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
     }
   }
   
@@ -141,20 +124,16 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: String, message: String): Code = {
+    inline def apply(code: String, message: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,17 +143,14 @@ object anon {
   }
   object Employer {
     
-    @scala.inline
-    def apply(employer: Name): Employer = {
+    inline def apply(employer: Name): Employer = {
       val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Employer]
     }
     
-    @scala.inline
-    implicit class EmployerMutableBuilder[Self <: Employer] (val x: Self) extends AnyVal {
+    extension [Self <: Employer](x: Self) {
       
-      @scala.inline
-      def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
+      inline def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,32 +168,24 @@ object anon {
   }
   object Files {
     
-    @scala.inline
-    def apply(): Files = {
+    inline def apply(): Files = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Files]
     }
     
-    @scala.inline
-    implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
+    extension [Self <: Files](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[IFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[IFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: IFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: IFile*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setFolders(value: js.Array[IFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+      inline def setFolders(value: js.Array[IFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+      inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
       
-      @scala.inline
-      def setFoldersVarargs(value: IFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+      inline def setFoldersVarargs(value: IFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
     }
   }
   
@@ -242,23 +210,18 @@ object anon {
   }
   object Mobile {
     
-    @scala.inline
-    def apply(business: String, mobile: String, personal: String): Mobile = {
+    inline def apply(business: String, mobile: String, personal: String): Mobile = {
       val __obj = js.Dynamic.literal(business = business.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mobile]
     }
     
-    @scala.inline
-    implicit class MobileMutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
+    extension [Self <: Mobile](x: Self) {
       
-      @scala.inline
-      def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+      inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonal(value: String): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
+      inline def setPersonal(value: String): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,17 +235,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String): Name = {
+    inline def apply(name: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,26 +260,20 @@ object anon {
   }
   object Next {
     
-    @scala.inline
-    def apply(): Next = {
+    inline def apply(): Next = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Next]
     }
     
-    @scala.inline
-    implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+    extension [Self <: Next](x: Self) {
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -337,20 +291,16 @@ object anon {
   }
   object Personal {
     
-    @scala.inline
-    def apply(business: IPostalAddress, personal: IPostalAddress): Personal = {
+    inline def apply(business: IPostalAddress, personal: IPostalAddress): Personal = {
       val __obj = js.Dynamic.literal(business = business.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any])
       __obj.asInstanceOf[Personal]
     }
     
-    @scala.inline
-    implicit class PersonalMutableBuilder[Self <: Personal] (val x: Self) extends AnyVal {
+    extension [Self <: Personal](x: Self) {
       
-      @scala.inline
-      def setBusiness(value: IPostalAddress): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+      inline def setBusiness(value: IPostalAddress): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonal(value: IPostalAddress): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
+      inline def setPersonal(value: IPostalAddress): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
     }
   }
 }

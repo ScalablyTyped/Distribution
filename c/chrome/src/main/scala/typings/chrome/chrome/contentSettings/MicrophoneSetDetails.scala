@@ -16,16 +16,13 @@ trait MicrophoneSetDetails
 }
 object MicrophoneSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | ask): MicrophoneSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | ask): MicrophoneSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[MicrophoneSetDetails]
   }
   
-  @scala.inline
-  implicit class MicrophoneSetDetailsMutableBuilder[Self <: MicrophoneSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MicrophoneSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

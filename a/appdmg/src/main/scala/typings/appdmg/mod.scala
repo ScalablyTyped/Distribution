@@ -25,10 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): EventEmitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[EventEmitter]
-  @scala.inline
-  def apply(options: Options): EventEmitter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  inline def apply(): EventEmitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[EventEmitter]
+  inline def apply(options: Options): EventEmitter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   
   @JSImport("appdmg", JSImport.Namespace)
   @js.native
@@ -57,23 +55,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(basepath: String, specification: Specification, target: String): Options = {
+    inline def apply(basepath: String, specification: Specification, target: String): Options = {
       val __obj = js.Dynamic.literal(basepath = basepath.asInstanceOf[js.Any], specification = specification.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
+      inline def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecification(value: Specification): Self = StObject.set(x, "specification", value.asInstanceOf[js.Any])
+      inline def setSpecification(value: Specification): Self = StObject.set(x, "specification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,8 +84,7 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: Double,
       status: ok | skip | fail,
       title: String,
@@ -104,23 +96,17 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ok | skip | fail): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ok | skip | fail): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `step-begin` | `step-end`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `step-begin` | `step-end`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,8 +132,7 @@ object mod {
   }
   object Specification {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contents: js.Array[SpecificationContents],
       format: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO,
       title: String
@@ -156,56 +141,39 @@ object mod {
       __obj.asInstanceOf[Specification]
     }
     
-    @scala.inline
-    implicit class SpecificationMutableBuilder[Self <: Specification] (val x: Self) extends AnyVal {
+    extension [Self <: Specification](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+      inline def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+      inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def `setCode-sign`(value: SpecificationCodeSign): Self = StObject.set(x, "code-sign", value.asInstanceOf[js.Any])
+      inline def `setCode-sign`(value: SpecificationCodeSign): Self = StObject.set(x, "code-sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCode-signUndefined`: Self = StObject.set(x, "code-sign", js.undefined)
+      inline def `setCode-signUndefined`: Self = StObject.set(x, "code-sign", js.undefined)
       
-      @scala.inline
-      def setContents(value: js.Array[SpecificationContents]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: js.Array[SpecificationContents]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsVarargs(value: SpecificationContents*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: SpecificationContents*): Self = StObject.set(x, "contents", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIcon-size`(value: Double): Self = StObject.set(x, "icon-size", value.asInstanceOf[js.Any])
+      inline def `setIcon-size`(value: Double): Self = StObject.set(x, "icon-size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIcon-sizeUndefined`: Self = StObject.set(x, "icon-size", js.undefined)
+      inline def `setIcon-sizeUndefined`: Self = StObject.set(x, "icon-size", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindow(value: SpecificationWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: SpecificationWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -217,24 +185,19 @@ object mod {
   }
   object SpecificationCodeSign {
     
-    @scala.inline
-    def apply(`signing-identity`: String): SpecificationCodeSign = {
+    inline def apply(`signing-identity`: String): SpecificationCodeSign = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("signing-identity")(`signing-identity`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpecificationCodeSign]
     }
     
-    @scala.inline
-    implicit class SpecificationCodeSignMutableBuilder[Self <: SpecificationCodeSign] (val x: Self) extends AnyVal {
+    extension [Self <: SpecificationCodeSign](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
       
-      @scala.inline
-      def `setSigning-identity`(value: String): Self = StObject.set(x, "signing-identity", value.asInstanceOf[js.Any])
+      inline def `setSigning-identity`(value: String): Self = StObject.set(x, "signing-identity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,33 +215,25 @@ object mod {
   }
   object SpecificationContents {
     
-    @scala.inline
-    def apply(path: String, `type`: link | file | position, x: Double, y: Double): SpecificationContents = {
+    inline def apply(path: String, `type`: link | file | position, x: Double, y: Double): SpecificationContents = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpecificationContents]
     }
     
-    @scala.inline
-    implicit class SpecificationContentsMutableBuilder[Self <: SpecificationContents] (val x: Self) extends AnyVal {
+    extension [Self <: SpecificationContents](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: link | file | position): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: link | file | position): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,29 +251,22 @@ object mod {
   }
   object SpecificationOptions {
     
-    @scala.inline
-    def apply(app: String, background: String, icon: String, iconSize: Double, title: String): SpecificationOptions = {
+    inline def apply(app: String, background: String, icon: String, iconSize: Double, title: String): SpecificationOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpecificationOptions]
     }
     
-    @scala.inline
-    implicit class SpecificationOptionsMutableBuilder[Self <: SpecificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpecificationOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+      inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -330,26 +278,20 @@ object mod {
   }
   object SpecificationWindow {
     
-    @scala.inline
-    def apply(): SpecificationWindow = {
+    inline def apply(): SpecificationWindow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpecificationWindow]
     }
     
-    @scala.inline
-    implicit class SpecificationWindowMutableBuilder[Self <: SpecificationWindow] (val x: Self) extends AnyVal {
+    extension [Self <: SpecificationWindow](x: Self) {
       
-      @scala.inline
-      def setPosition(value: X): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: X): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

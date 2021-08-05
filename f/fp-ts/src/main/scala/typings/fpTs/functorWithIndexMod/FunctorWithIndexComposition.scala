@@ -16,8 +16,7 @@ trait FunctorWithIndexComposition[F, FI, G, GI]
 }
 object FunctorWithIndexComposition {
   
-  @scala.inline
-  def apply[F, FI, G, GI](
+  inline def apply[F, FI, G, GI](
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     mapWithIndex: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any]) => js.Any
   ): FunctorWithIndexComposition[F, FI, G, GI] = {
@@ -25,11 +24,9 @@ object FunctorWithIndexComposition {
     __obj.asInstanceOf[FunctorWithIndexComposition[F, FI, G, GI]]
   }
   
-  @scala.inline
-  implicit class FunctorWithIndexCompositionMutableBuilder[Self <: FunctorWithIndexComposition[?, ?, ?, ?], F, FI, G, GI] (val x: Self & (FunctorWithIndexComposition[F, FI, G, GI])) extends AnyVal {
+  extension [Self <: FunctorWithIndexComposition[?, ?, ?, ?], F, FI, G, GI](x: Self & (FunctorWithIndexComposition[F, FI, G, GI])) {
     
-    @scala.inline
-    def setMapWithIndex(
+    inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "mapWithIndex", js.Any.fromFunction2(value))
   }

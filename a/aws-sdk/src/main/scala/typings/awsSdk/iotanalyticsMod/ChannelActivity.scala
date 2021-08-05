@@ -23,25 +23,19 @@ trait ChannelActivity extends StObject {
 }
 object ChannelActivity {
   
-  @scala.inline
-  def apply(channelName: ChannelName, name: ActivityName): ChannelActivity = {
+  inline def apply(channelName: ChannelName, name: ActivityName): ChannelActivity = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelActivity]
   }
   
-  @scala.inline
-  implicit class ChannelActivityMutableBuilder[Self <: ChannelActivity] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelActivity](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

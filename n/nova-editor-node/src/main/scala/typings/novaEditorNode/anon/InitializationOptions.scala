@@ -12,25 +12,19 @@ trait InitializationOptions extends StObject {
 }
 object InitializationOptions {
   
-  @scala.inline
-  def apply(syntaxes: js.Array[String]): InitializationOptions = {
+  inline def apply(syntaxes: js.Array[String]): InitializationOptions = {
     val __obj = js.Dynamic.literal(syntaxes = syntaxes.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializationOptions]
   }
   
-  @scala.inline
-  implicit class InitializationOptionsMutableBuilder[Self <: InitializationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitializationOptions](x: Self) {
     
-    @scala.inline
-    def setInitializationOptions(value: js.Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
+    inline def setInitializationOptions(value: js.Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
+    inline def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
     
-    @scala.inline
-    def setSyntaxes(value: js.Array[String]): Self = StObject.set(x, "syntaxes", value.asInstanceOf[js.Any])
+    inline def setSyntaxes(value: js.Array[String]): Self = StObject.set(x, "syntaxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxesVarargs(value: String*): Self = StObject.set(x, "syntaxes", js.Array(value :_*))
+    inline def setSyntaxesVarargs(value: String*): Self = StObject.set(x, "syntaxes", js.Array(value :_*))
   }
 }

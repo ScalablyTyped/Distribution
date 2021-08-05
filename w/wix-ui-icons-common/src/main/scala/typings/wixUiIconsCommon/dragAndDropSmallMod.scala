@@ -22,20 +22,16 @@ object dragAndDropSmallMod extends Shortcut {
   }
   object DragAndDropSmallProps {
     
-    @scala.inline
-    def apply(): DragAndDropSmallProps = {
+    inline def apply(): DragAndDropSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragAndDropSmallProps]
     }
     
-    @scala.inline
-    implicit class DragAndDropSmallPropsMutableBuilder[Self <: DragAndDropSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: DragAndDropSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

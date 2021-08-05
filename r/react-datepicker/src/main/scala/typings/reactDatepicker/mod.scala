@@ -33,17 +33,13 @@ object mod {
   @js.native
   class default () extends ReactDatePicker
   
-  @scala.inline
-  def CalendarContainer(className: String, children: js.Array[ReactNode], showPopperArrow: Boolean, arrowProps: js.Object): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("CalendarContainer")(className.asInstanceOf[js.Any], children.asInstanceOf[js.Any], showPopperArrow.asInstanceOf[js.Any], arrowProps.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def CalendarContainer(className: String, children: js.Array[ReactNode], showPopperArrow: Boolean, arrowProps: js.Object): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("CalendarContainer")(className.asInstanceOf[js.Any], children.asInstanceOf[js.Any], showPopperArrow.asInstanceOf[js.Any], arrowProps.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def getDefaultLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLocale")().asInstanceOf[String]
+  inline def getDefaultLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLocale")().asInstanceOf[String]
   
-  @scala.inline
-  def registerLocale(localeName: String, localeData: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocale")(localeName.asInstanceOf[js.Any], localeData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerLocale(localeName: String, localeData: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocale")(localeName.asInstanceOf[js.Any], localeData.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDefaultLocale(localeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultLocale")(localeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultLocale(localeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultLocale")(localeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type HighlightDates = StringDictionary[js.Array[Date]]
   

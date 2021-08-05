@@ -12,19 +12,15 @@ trait PlaybackRateChangedParam extends StObject {
 }
 object PlaybackRateChangedParam {
   
-  @scala.inline
-  def apply(playbackRate: Double, position: Double): PlaybackRateChangedParam = {
+  inline def apply(playbackRate: Double, position: Double): PlaybackRateChangedParam = {
     val __obj = js.Dynamic.literal(playbackRate = playbackRate.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackRateChangedParam]
   }
   
-  @scala.inline
-  implicit class PlaybackRateChangedParamMutableBuilder[Self <: PlaybackRateChangedParam] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackRateChangedParam](x: Self) {
     
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

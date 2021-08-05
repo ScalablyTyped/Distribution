@@ -30,13 +30,13 @@ object helpMod {
   abstract class CommandHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends HelpFormatter {
     def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
     
-    var _fullName: js.UndefOr[String] = js.native
+    /* protected */ var _fullName: js.UndefOr[String] = js.native
     
-    var _metadata: js.UndefOr[M] = js.native
+    /* protected */ var _metadata: js.UndefOr[M] = js.native
     
-    val command: C = js.native
+    /* protected */ val command: C = js.native
     
-    val dotswidth: Double = js.native
+    /* protected */ val dotswidth: Double = js.native
     
     /**
       * Given an option definition from command metadata, decide whether to keep
@@ -50,7 +50,7 @@ object helpMod {
     
     def getCommandMetadata(): js.Promise[M | (HydratedCommandMetadata[C, N, M, I, O])] = js.native
     
-    val location: NamespaceLocateResult[C, N, M, I, O] = js.native
+    /* protected */ val location: NamespaceLocateResult[C, N, M, I, O] = js.native
     
     /* protected */ def normalizeMetadata(metadata: (HydratedCommandMetadata[C, N, M, I, O]) | M): M = js.native
   }
@@ -131,7 +131,7 @@ object helpMod {
   abstract class HelpFormatter protected () extends StObject {
     def this(hasColors: Colors) = this()
     
-    val colors: typings.ionicCliFramework.colorsMod.Colors = js.native
+    /* protected */ val colors: typings.ionicCliFramework.colorsMod.Colors = js.native
     
     def format(): js.Promise[String] = js.native
   }
@@ -141,11 +141,11 @@ object helpMod {
   abstract class NamespaceHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends HelpFormatter {
     def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
     
-    var _fullName: js.UndefOr[String] = js.native
+    /* protected */ var _fullName: js.UndefOr[String] = js.native
     
-    var _metadata: js.UndefOr[NamespaceMetadata] = js.native
+    /* protected */ var _metadata: js.UndefOr[NamespaceMetadata] = js.native
     
-    val dotswidth: Double = js.native
+    /* protected */ val dotswidth: Double = js.native
     
     /**
       * Given command metadata, decide whether to keep or discard the command that
@@ -162,9 +162,9 @@ object helpMod {
     
     def getNamespaceMetadata(): js.Promise[NamespaceMetadata] = js.native
     
-    val location: NamespaceLocateResult[C, N, M, I, O] = js.native
+    /* protected */ val location: NamespaceLocateResult[C, N, M, I, O] = js.native
     
-    val namespace: N = js.native
+    /* protected */ val namespace: N = js.native
     
     /* protected */ def normalizeCommandMetadata(metadata: HydratedCommandMetadata[C, N, M, I, O]): HydratedCommandMetadata[C, N, M, I, O] = js.native
     
@@ -257,14 +257,11 @@ object helpMod {
     def getListOfNamespaceDetails(commands: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): js.Promise[js.Array[String]] = js.native
   }
   
-  @scala.inline
-  def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommandMetadataFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[RequiredCommandMetadataCo]
+  inline def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommandMetadataFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[RequiredCommandMetadataCo]
   
-  @scala.inline
-  def isCommandVisible[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandVisible")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def isCommandVisible[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandVisible")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def isOptionVisible[O /* <: CommandMetadataOption */](opt: O): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionVisible")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def isOptionVisible[O /* <: CommandMetadataOption */](opt: O): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionVisible")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   trait CommandHelpFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
@@ -282,32 +279,24 @@ object helpMod {
   }
   object CommandHelpFormatterDeps {
     
-    @scala.inline
-    def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](command: C, location: NamespaceLocateResult[C, N, M, I, O]): CommandHelpFormatterDeps[C, N, M, I, O] = {
+    inline def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](command: C, location: NamespaceLocateResult[C, N, M, I, O]): CommandHelpFormatterDeps[C, N, M, I, O] = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandHelpFormatterDeps[C, N, M, I, O]]
     }
     
-    @scala.inline
-    implicit class CommandHelpFormatterDepsMutableBuilder[Self <: CommandHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CommandHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
+    extension [Self <: CommandHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (CommandHelpFormatterDeps[C, N, M, I, O])) {
       
-      @scala.inline
-      def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setCommand(value: C): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: C): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: HydratedCommandMetadata[C, N, M, I, O]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: HydratedCommandMetadata[C, N, M, I, O]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -335,8 +324,7 @@ object helpMod {
   }
   object CommandHelpSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: js.Array[String],
       description: String,
       exampleCommands: js.Array[String],
@@ -352,59 +340,41 @@ object helpMod {
       __obj.asInstanceOf[CommandHelpSchema]
     }
     
-    @scala.inline
-    implicit class CommandHelpSchemaMutableBuilder[Self <: CommandHelpSchema] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHelpSchema](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
+      inline def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
+      inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
       
-      @scala.inline
-      def setFootnotes(value: js.Array[CommandHelpSchemaFootnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
+      inline def setFootnotes(value: js.Array[CommandHelpSchemaFootnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFootnotesVarargs(value: CommandHelpSchemaFootnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+      inline def setFootnotesVarargs(value: CommandHelpSchemaFootnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setInputs(value: js.Array[CommandHelpSchemaInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[CommandHelpSchemaInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsVarargs(value: CommandHelpSchemaInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: CommandHelpSchemaInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: js.Array[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: js.Array[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceVarargs(value: String*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: String*): Self = StObject.set(x, "namespace", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Array[CommandHelpSchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CommandHelpSchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: CommandHelpSchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CommandHelpSchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
   }
   
@@ -415,15 +385,13 @@ object helpMod {
   trait CommandHelpSchemaFootnote extends StObject
   object CommandHelpSchemaFootnote {
     
-    @scala.inline
-    def CommandHelpSchemaFootnoteLink(id: String | Double, url: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteLink = {
+    inline def CommandHelpSchemaFootnoteLink(id: String | Double, url: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteLink = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("link")
       __obj.asInstanceOf[typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteLink]
     }
     
-    @scala.inline
-    def CommandHelpSchemaFootnoteText(id: String | Double, text: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteText = {
+    inline def CommandHelpSchemaFootnoteText(id: String | Double, text: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteText = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteText]
@@ -444,30 +412,23 @@ object helpMod {
   }
   object CommandHelpSchemaFootnoteLink {
     
-    @scala.inline
-    def apply(id: String | Double, url: String): CommandHelpSchemaFootnoteLink = {
+    inline def apply(id: String | Double, url: String): CommandHelpSchemaFootnoteLink = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("link")
       __obj.asInstanceOf[CommandHelpSchemaFootnoteLink]
     }
     
-    @scala.inline
-    implicit class CommandHelpSchemaFootnoteLinkMutableBuilder[Self <: CommandHelpSchemaFootnoteLink] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHelpSchemaFootnoteLink](x: Self) {
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
+      inline def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortUrlUndefined: Self = StObject.set(x, "shortUrl", js.undefined)
+      inline def setShortUrlUndefined: Self = StObject.set(x, "shortUrl", js.undefined)
       
-      @scala.inline
-      def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -483,24 +444,19 @@ object helpMod {
   }
   object CommandHelpSchemaFootnoteText {
     
-    @scala.inline
-    def apply(id: String | Double, text: String): CommandHelpSchemaFootnoteText = {
+    inline def apply(id: String | Double, text: String): CommandHelpSchemaFootnoteText = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[CommandHelpSchemaFootnoteText]
     }
     
-    @scala.inline
-    implicit class CommandHelpSchemaFootnoteTextMutableBuilder[Self <: CommandHelpSchemaFootnoteText] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHelpSchemaFootnoteText](x: Self) {
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -514,23 +470,18 @@ object helpMod {
   }
   object CommandHelpSchemaInput {
     
-    @scala.inline
-    def apply(name: String, required: Boolean, summary: String): CommandHelpSchemaInput = {
+    inline def apply(name: String, required: Boolean, summary: String): CommandHelpSchemaInput = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandHelpSchemaInput]
     }
     
-    @scala.inline
-    implicit class CommandHelpSchemaInputMutableBuilder[Self <: CommandHelpSchemaInput] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHelpSchemaInput](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
   }
   
@@ -552,8 +503,7 @@ object helpMod {
   }
   object CommandHelpSchemaOption {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: js.Array[String],
       groups: js.Array[String],
       name: String,
@@ -566,38 +516,27 @@ object helpMod {
       __obj.asInstanceOf[CommandHelpSchemaOption]
     }
     
-    @scala.inline
-    implicit class CommandHelpSchemaOptionMutableBuilder[Self <: CommandHelpSchemaOption] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHelpSchemaOption](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: String | Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String | Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: ValueString): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: ValueString): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -611,26 +550,20 @@ object helpMod {
   }
   object NamespaceHelpFormatterDeps {
     
-    @scala.inline
-    def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](location: NamespaceLocateResult[C, N, M, I, O], namespace: N): NamespaceHelpFormatterDeps[C, N, M, I, O] = {
+    inline def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](location: NamespaceLocateResult[C, N, M, I, O], namespace: N): NamespaceHelpFormatterDeps[C, N, M, I, O] = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamespaceHelpFormatterDeps[C, N, M, I, O]]
     }
     
-    @scala.inline
-    implicit class NamespaceHelpFormatterDepsMutableBuilder[Self <: NamespaceHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (NamespaceHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
+    extension [Self <: NamespaceHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (NamespaceHelpFormatterDeps[C, N, M, I, O])) {
       
-      @scala.inline
-      def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: N): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: N): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -650,8 +583,7 @@ object helpMod {
   }
   object NamespaceHelpSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: js.Array[String],
       commands: js.Array[CommandHelpSchema],
       description: String,
@@ -663,35 +595,25 @@ object helpMod {
       __obj.asInstanceOf[NamespaceHelpSchema]
     }
     
-    @scala.inline
-    implicit class NamespaceHelpSchemaMutableBuilder[Self <: NamespaceHelpSchema] (val x: Self) extends AnyVal {
+    extension [Self <: NamespaceHelpSchema](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setCommands(value: js.Array[CommandHelpSchema]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[CommandHelpSchema]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsVarargs(value: CommandHelpSchema*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: CommandHelpSchema*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
   }
 }

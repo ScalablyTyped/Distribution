@@ -27,31 +27,23 @@ trait MapShowItemsOptions extends StObject {
 }
 object MapShowItemsOptions {
   
-  @scala.inline
-  def apply(): MapShowItemsOptions = {
+  inline def apply(): MapShowItemsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapShowItemsOptions]
   }
   
-  @scala.inline
-  implicit class MapShowItemsOptionsMutableBuilder[Self <: MapShowItemsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapShowItemsOptions](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setMinimumSpan(value: CoordinateSpan): Self = StObject.set(x, "minimumSpan", value.asInstanceOf[js.Any])
+    inline def setMinimumSpan(value: CoordinateSpan): Self = StObject.set(x, "minimumSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSpanUndefined: Self = StObject.set(x, "minimumSpan", js.undefined)
+    inline def setMinimumSpanUndefined: Self = StObject.set(x, "minimumSpan", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

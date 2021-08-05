@@ -17,7 +17,6 @@ object global {
     @JSGlobal("braintree.dropin")
     @js.native
     def dropin: Create = js.native
-    @scala.inline
-    def dropin_=(x: Create): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropin")(x.asInstanceOf[js.Any])
+    inline def dropin_=(x: Create): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropin")(x.asInstanceOf[js.Any])
   }
 }

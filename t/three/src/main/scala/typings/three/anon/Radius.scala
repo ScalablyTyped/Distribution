@@ -16,25 +16,19 @@ trait Radius extends StObject {
 }
 object Radius {
   
-  @scala.inline
-  def apply(radius: Double, segments: Double, thetaLength: Double, thetaStart: Double): Radius = {
+  inline def apply(radius: Double, segments: Double, thetaLength: Double, thetaStart: Double): Radius = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Radius]
   }
   
-  @scala.inline
-  implicit class RadiusMutableBuilder[Self <: Radius] (val x: Self) extends AnyVal {
+  extension [Self <: Radius](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
+    inline def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
+    inline def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
   }
 }

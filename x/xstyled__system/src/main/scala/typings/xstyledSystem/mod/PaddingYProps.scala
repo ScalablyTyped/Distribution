@@ -14,27 +14,22 @@ trait PaddingYProps[TLength] extends StObject {
 }
 object PaddingYProps {
   
-  @scala.inline
-  def apply[TLength](): PaddingYProps[TLength] = {
+  inline def apply[TLength](): PaddingYProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingYProps[TLength]]
   }
   
-  @scala.inline
-  implicit class PaddingYPropsMutableBuilder[Self <: PaddingYProps[?], TLength] (val x: Self & PaddingYProps[TLength]) extends AnyVal {
+  extension [Self <: PaddingYProps[?], TLength](x: Self & PaddingYProps[TLength]) {
     
-    @scala.inline
-    def setPy(
+    inline def setPy(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
+    inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
     
-    @scala.inline
-    def setPyVarargs(
+    inline def setPyVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any)*
     ): Self = StObject.set(x, "py", js.Array(value :_*))
   }

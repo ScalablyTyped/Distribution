@@ -77,121 +77,83 @@ trait CreativeServingDecision extends StObject {
 }
 object CreativeServingDecision {
   
-  @scala.inline
-  def apply(): CreativeServingDecision = {
+  inline def apply(): CreativeServingDecision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeServingDecision]
   }
   
-  @scala.inline
-  implicit class CreativeServingDecisionMutableBuilder[Self <: CreativeServingDecision] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeServingDecision](x: Self) {
     
-    @scala.inline
-    def setChinaPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "chinaPolicyCompliance", value.asInstanceOf[js.Any])
+    inline def setChinaPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "chinaPolicyCompliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChinaPolicyComplianceUndefined: Self = StObject.set(x, "chinaPolicyCompliance", js.undefined)
+    inline def setChinaPolicyComplianceUndefined: Self = StObject.set(x, "chinaPolicyCompliance", js.undefined)
     
-    @scala.inline
-    def setDealsPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "dealsPolicyCompliance", value.asInstanceOf[js.Any])
+    inline def setDealsPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "dealsPolicyCompliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealsPolicyComplianceUndefined: Self = StObject.set(x, "dealsPolicyCompliance", js.undefined)
+    inline def setDealsPolicyComplianceUndefined: Self = StObject.set(x, "dealsPolicyCompliance", js.undefined)
     
-    @scala.inline
-    def setDetectedAdvertisers(value: js.Array[AdvertiserAndBrand]): Self = StObject.set(x, "detectedAdvertisers", value.asInstanceOf[js.Any])
+    inline def setDetectedAdvertisers(value: js.Array[AdvertiserAndBrand]): Self = StObject.set(x, "detectedAdvertisers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedAdvertisersUndefined: Self = StObject.set(x, "detectedAdvertisers", js.undefined)
+    inline def setDetectedAdvertisersUndefined: Self = StObject.set(x, "detectedAdvertisers", js.undefined)
     
-    @scala.inline
-    def setDetectedAdvertisersVarargs(value: AdvertiserAndBrand*): Self = StObject.set(x, "detectedAdvertisers", js.Array(value :_*))
+    inline def setDetectedAdvertisersVarargs(value: AdvertiserAndBrand*): Self = StObject.set(x, "detectedAdvertisers", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedAttributes(value: js.Array[String]): Self = StObject.set(x, "detectedAttributes", value.asInstanceOf[js.Any])
+    inline def setDetectedAttributes(value: js.Array[String]): Self = StObject.set(x, "detectedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedAttributesUndefined: Self = StObject.set(x, "detectedAttributes", js.undefined)
+    inline def setDetectedAttributesUndefined: Self = StObject.set(x, "detectedAttributes", js.undefined)
     
-    @scala.inline
-    def setDetectedAttributesVarargs(value: String*): Self = StObject.set(x, "detectedAttributes", js.Array(value :_*))
+    inline def setDetectedAttributesVarargs(value: String*): Self = StObject.set(x, "detectedAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedClickThroughUrls(value: js.Array[String]): Self = StObject.set(x, "detectedClickThroughUrls", value.asInstanceOf[js.Any])
+    inline def setDetectedClickThroughUrls(value: js.Array[String]): Self = StObject.set(x, "detectedClickThroughUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedClickThroughUrlsUndefined: Self = StObject.set(x, "detectedClickThroughUrls", js.undefined)
+    inline def setDetectedClickThroughUrlsUndefined: Self = StObject.set(x, "detectedClickThroughUrls", js.undefined)
     
-    @scala.inline
-    def setDetectedClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "detectedClickThroughUrls", js.Array(value :_*))
+    inline def setDetectedClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "detectedClickThroughUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedDomains(value: js.Array[String]): Self = StObject.set(x, "detectedDomains", value.asInstanceOf[js.Any])
+    inline def setDetectedDomains(value: js.Array[String]): Self = StObject.set(x, "detectedDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedDomainsUndefined: Self = StObject.set(x, "detectedDomains", js.undefined)
+    inline def setDetectedDomainsUndefined: Self = StObject.set(x, "detectedDomains", js.undefined)
     
-    @scala.inline
-    def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value :_*))
+    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedLanguages(value: js.Array[String]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
+    inline def setDetectedLanguages(value: js.Array[String]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
+    inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguagesVarargs(value: String*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: String*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedProductCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedProductCategories", value.asInstanceOf[js.Any])
+    inline def setDetectedProductCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedProductCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedProductCategoriesUndefined: Self = StObject.set(x, "detectedProductCategories", js.undefined)
+    inline def setDetectedProductCategoriesUndefined: Self = StObject.set(x, "detectedProductCategories", js.undefined)
     
-    @scala.inline
-    def setDetectedProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedProductCategories", js.Array(value :_*))
+    inline def setDetectedProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedProductCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedSensitiveCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedSensitiveCategories", value.asInstanceOf[js.Any])
+    inline def setDetectedSensitiveCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedSensitiveCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedSensitiveCategoriesUndefined: Self = StObject.set(x, "detectedSensitiveCategories", js.undefined)
+    inline def setDetectedSensitiveCategoriesUndefined: Self = StObject.set(x, "detectedSensitiveCategories", js.undefined)
     
-    @scala.inline
-    def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedSensitiveCategories", js.Array(value :_*))
+    inline def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedSensitiveCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedVendorIds(value: js.Array[Double]): Self = StObject.set(x, "detectedVendorIds", value.asInstanceOf[js.Any])
+    inline def setDetectedVendorIds(value: js.Array[Double]): Self = StObject.set(x, "detectedVendorIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedVendorIdsUndefined: Self = StObject.set(x, "detectedVendorIds", js.undefined)
+    inline def setDetectedVendorIdsUndefined: Self = StObject.set(x, "detectedVendorIds", js.undefined)
     
-    @scala.inline
-    def setDetectedVendorIdsVarargs(value: Double*): Self = StObject.set(x, "detectedVendorIds", js.Array(value :_*))
+    inline def setDetectedVendorIdsVarargs(value: Double*): Self = StObject.set(x, "detectedVendorIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLastStatusUpdate(value: String): Self = StObject.set(x, "lastStatusUpdate", value.asInstanceOf[js.Any])
+    inline def setLastStatusUpdate(value: String): Self = StObject.set(x, "lastStatusUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusUpdateUndefined: Self = StObject.set(x, "lastStatusUpdate", js.undefined)
+    inline def setLastStatusUpdateUndefined: Self = StObject.set(x, "lastStatusUpdate", js.undefined)
     
-    @scala.inline
-    def setNetworkPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "networkPolicyCompliance", value.asInstanceOf[js.Any])
+    inline def setNetworkPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "networkPolicyCompliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPolicyComplianceUndefined: Self = StObject.set(x, "networkPolicyCompliance", js.undefined)
+    inline def setNetworkPolicyComplianceUndefined: Self = StObject.set(x, "networkPolicyCompliance", js.undefined)
     
-    @scala.inline
-    def setPlatformPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "platformPolicyCompliance", value.asInstanceOf[js.Any])
+    inline def setPlatformPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "platformPolicyCompliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformPolicyComplianceUndefined: Self = StObject.set(x, "platformPolicyCompliance", js.undefined)
+    inline def setPlatformPolicyComplianceUndefined: Self = StObject.set(x, "platformPolicyCompliance", js.undefined)
     
-    @scala.inline
-    def setRussiaPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "russiaPolicyCompliance", value.asInstanceOf[js.Any])
+    inline def setRussiaPolicyCompliance(value: PolicyCompliance): Self = StObject.set(x, "russiaPolicyCompliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRussiaPolicyComplianceUndefined: Self = StObject.set(x, "russiaPolicyCompliance", js.undefined)
+    inline def setRussiaPolicyComplianceUndefined: Self = StObject.set(x, "russiaPolicyCompliance", js.undefined)
   }
 }

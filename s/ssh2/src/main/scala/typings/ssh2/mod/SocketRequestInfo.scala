@@ -11,16 +11,13 @@ trait SocketRequestInfo extends StObject {
 }
 object SocketRequestInfo {
   
-  @scala.inline
-  def apply(socketPath: String): SocketRequestInfo = {
+  inline def apply(socketPath: String): SocketRequestInfo = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketRequestInfo]
   }
   
-  @scala.inline
-  implicit class SocketRequestInfoMutableBuilder[Self <: SocketRequestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SocketRequestInfo](x: Self) {
     
-    @scala.inline
-    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }
 }

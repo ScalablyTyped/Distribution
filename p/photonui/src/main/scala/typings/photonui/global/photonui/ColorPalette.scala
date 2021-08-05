@@ -96,6 +96,5 @@ object ColorPalette {
   @JSGlobal("photonui.ColorPalette.palette")
   @js.native
   def palette: js.Array[js.Array[String]] = js.native
-  @scala.inline
-  def palette_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("palette")(x.asInstanceOf[js.Any])
+  inline def palette_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("palette")(x.asInstanceOf[js.Any])
 }

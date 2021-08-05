@@ -38,49 +38,35 @@ trait AudioParameters extends StObject {
 }
 object AudioParameters {
   
-  @scala.inline
-  def apply(): AudioParameters = {
+  inline def apply(): AudioParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioParameters]
   }
   
-  @scala.inline
-  implicit class AudioParametersMutableBuilder[Self <: AudioParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AudioParameters](x: Self) {
     
-    @scala.inline
-    def setAudioPackingMode(value: AudioPackingMode): Self = StObject.set(x, "AudioPackingMode", value.asInstanceOf[js.Any])
+    inline def setAudioPackingMode(value: AudioPackingMode): Self = StObject.set(x, "AudioPackingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioPackingModeUndefined: Self = StObject.set(x, "AudioPackingMode", js.undefined)
+    inline def setAudioPackingModeUndefined: Self = StObject.set(x, "AudioPackingMode", js.undefined)
     
-    @scala.inline
-    def setBitRate(value: AudioBitRate): Self = StObject.set(x, "BitRate", value.asInstanceOf[js.Any])
+    inline def setBitRate(value: AudioBitRate): Self = StObject.set(x, "BitRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitRateUndefined: Self = StObject.set(x, "BitRate", js.undefined)
+    inline def setBitRateUndefined: Self = StObject.set(x, "BitRate", js.undefined)
     
-    @scala.inline
-    def setChannels(value: AudioChannels): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: AudioChannels): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setCodec(value: AudioCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: AudioCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecOptions(value: AudioCodecOptions): Self = StObject.set(x, "CodecOptions", value.asInstanceOf[js.Any])
+    inline def setCodecOptions(value: AudioCodecOptions): Self = StObject.set(x, "CodecOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecOptionsUndefined: Self = StObject.set(x, "CodecOptions", js.undefined)
+    inline def setCodecOptionsUndefined: Self = StObject.set(x, "CodecOptions", js.undefined)
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: AudioSampleRate): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: AudioSampleRate): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

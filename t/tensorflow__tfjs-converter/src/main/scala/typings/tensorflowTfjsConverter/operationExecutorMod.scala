@@ -16,10 +16,8 @@ object operationExecutorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def executeOp(node: Node, tensorMap: NamedTensorsMap, context: ExecutionContext): js.Array[Tensor[Rank]] | js.Promise[js.Array[Tensor[Rank]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeOp")(node.asInstanceOf[js.Any], tensorMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]] | js.Promise[js.Array[Tensor[Rank]]]]
-  @scala.inline
-  def executeOp(
+  inline def executeOp(node: Node, tensorMap: NamedTensorsMap, context: ExecutionContext): js.Array[Tensor[Rank]] | js.Promise[js.Array[Tensor[Rank]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeOp")(node.asInstanceOf[js.Any], tensorMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]] | js.Promise[js.Array[Tensor[Rank]]]]
+  inline def executeOp(
     node: Node,
     tensorMap: NamedTensorsMap,
     context: ExecutionContext,

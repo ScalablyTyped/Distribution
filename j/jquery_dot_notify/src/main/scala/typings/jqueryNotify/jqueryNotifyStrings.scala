@@ -8,11 +8,9 @@ object jqueryNotifyStrings {
   
   @js.native
   sealed trait above extends StObject
-  @scala.inline
-  def above: above = "above".asInstanceOf[above]
+  inline def above: above = "above".asInstanceOf[above]
   
   @js.native
   sealed trait below extends StObject
-  @scala.inline
-  def below: below = "below".asInstanceOf[below]
+  inline def below: below = "below".asInstanceOf[below]
 }

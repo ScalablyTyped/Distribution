@@ -23,31 +23,23 @@ trait GetQueryResultsOutput extends StObject {
 }
 object GetQueryResultsOutput {
   
-  @scala.inline
-  def apply(): GetQueryResultsOutput = {
+  inline def apply(): GetQueryResultsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetQueryResultsOutput]
   }
   
-  @scala.inline
-  implicit class GetQueryResultsOutputMutableBuilder[Self <: GetQueryResultsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueryResultsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResultSet(value: ResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
+    inline def setResultSet(value: ResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetUndefined: Self = StObject.set(x, "ResultSet", js.undefined)
+    inline def setResultSetUndefined: Self = StObject.set(x, "ResultSet", js.undefined)
     
-    @scala.inline
-    def setUpdateCount(value: Long): Self = StObject.set(x, "UpdateCount", value.asInstanceOf[js.Any])
+    inline def setUpdateCount(value: Long): Self = StObject.set(x, "UpdateCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCountUndefined: Self = StObject.set(x, "UpdateCount", js.undefined)
+    inline def setUpdateCountUndefined: Self = StObject.set(x, "UpdateCount", js.undefined)
   }
 }

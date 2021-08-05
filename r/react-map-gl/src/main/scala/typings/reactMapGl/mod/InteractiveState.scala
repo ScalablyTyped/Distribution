@@ -18,43 +18,31 @@ trait InteractiveState extends StObject {
 }
 object InteractiveState {
   
-  @scala.inline
-  def apply(): InteractiveState = {
+  inline def apply(): InteractiveState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InteractiveState]
   }
   
-  @scala.inline
-  implicit class InteractiveStateMutableBuilder[Self <: InteractiveState] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveState](x: Self) {
     
-    @scala.inline
-    def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
+    inline def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartBearingUndefined: Self = StObject.set(x, "startBearing", js.undefined)
+    inline def setStartBearingUndefined: Self = StObject.set(x, "startBearing", js.undefined)
     
-    @scala.inline
-    def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startPanLngLat", value.asInstanceOf[js.Any])
+    inline def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startPanLngLat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPanLngLatUndefined: Self = StObject.set(x, "startPanLngLat", js.undefined)
+    inline def setStartPanLngLatUndefined: Self = StObject.set(x, "startPanLngLat", js.undefined)
     
-    @scala.inline
-    def setStartPitch(value: Double): Self = StObject.set(x, "startPitch", value.asInstanceOf[js.Any])
+    inline def setStartPitch(value: Double): Self = StObject.set(x, "startPitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPitchUndefined: Self = StObject.set(x, "startPitch", js.undefined)
+    inline def setStartPitchUndefined: Self = StObject.set(x, "startPitch", js.undefined)
     
-    @scala.inline
-    def setStartZoom(value: Double): Self = StObject.set(x, "startZoom", value.asInstanceOf[js.Any])
+    inline def setStartZoom(value: Double): Self = StObject.set(x, "startZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startZoomLngLat", value.asInstanceOf[js.Any])
+    inline def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startZoomLngLat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartZoomLngLatUndefined: Self = StObject.set(x, "startZoomLngLat", js.undefined)
+    inline def setStartZoomLngLatUndefined: Self = StObject.set(x, "startZoomLngLat", js.undefined)
     
-    @scala.inline
-    def setStartZoomUndefined: Self = StObject.set(x, "startZoom", js.undefined)
+    inline def setStartZoomUndefined: Self = StObject.set(x, "startZoom", js.undefined)
   }
 }

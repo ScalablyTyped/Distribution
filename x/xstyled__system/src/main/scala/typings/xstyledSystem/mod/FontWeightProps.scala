@@ -14,27 +14,22 @@ trait FontWeightProps extends StObject {
 }
 object FontWeightProps {
   
-  @scala.inline
-  def apply(): FontWeightProps = {
+  inline def apply(): FontWeightProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontWeightProps]
   }
   
-  @scala.inline
-  implicit class FontWeightPropsMutableBuilder[Self <: FontWeightProps] (val x: Self) extends AnyVal {
+  extension [Self <: FontWeightProps](x: Self) {
     
-    @scala.inline
-    def setFontWeight(
+    inline def setFontWeight(
       value: ResponsiveValue[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
         ]
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setFontWeightVarargs(
+    inline def setFontWeightVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey)*
     ): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
   }

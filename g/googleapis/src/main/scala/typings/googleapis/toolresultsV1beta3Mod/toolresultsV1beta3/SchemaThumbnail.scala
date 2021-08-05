@@ -34,37 +34,27 @@ trait SchemaThumbnail extends StObject {
 }
 object SchemaThumbnail {
   
-  @scala.inline
-  def apply(): SchemaThumbnail = {
+  inline def apply(): SchemaThumbnail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaThumbnail]
   }
   
-  @scala.inline
-  implicit class SchemaThumbnailMutableBuilder[Self <: SchemaThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaThumbnail](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
+    inline def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightPxUndefined: Self = StObject.set(x, "heightPx", js.undefined)
+    inline def setHeightPxUndefined: Self = StObject.set(x, "heightPx", js.undefined)
     
-    @scala.inline
-    def setWidthPx(value: Double): Self = StObject.set(x, "widthPx", value.asInstanceOf[js.Any])
+    inline def setWidthPx(value: Double): Self = StObject.set(x, "widthPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthPxUndefined: Self = StObject.set(x, "widthPx", js.undefined)
+    inline def setWidthPxUndefined: Self = StObject.set(x, "widthPx", js.undefined)
   }
 }

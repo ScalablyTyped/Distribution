@@ -10,19 +10,15 @@ trait CopyClusterSnapshotResult extends StObject {
 }
 object CopyClusterSnapshotResult {
   
-  @scala.inline
-  def apply(): CopyClusterSnapshotResult = {
+  inline def apply(): CopyClusterSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyClusterSnapshotResult]
   }
   
-  @scala.inline
-  implicit class CopyClusterSnapshotResultMutableBuilder[Self <: CopyClusterSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyClusterSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "Snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "Snapshot", js.undefined)
   }
 }

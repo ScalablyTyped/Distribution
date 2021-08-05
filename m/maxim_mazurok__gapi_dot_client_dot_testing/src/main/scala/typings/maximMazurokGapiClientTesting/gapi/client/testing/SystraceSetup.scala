@@ -11,19 +11,15 @@ trait SystraceSetup extends StObject {
 }
 object SystraceSetup {
   
-  @scala.inline
-  def apply(): SystraceSetup = {
+  inline def apply(): SystraceSetup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystraceSetup]
   }
   
-  @scala.inline
-  implicit class SystraceSetupMutableBuilder[Self <: SystraceSetup] (val x: Self) extends AnyVal {
+  extension [Self <: SystraceSetup](x: Self) {
     
-    @scala.inline
-    def setDurationSeconds(value: Double): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: Double): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
   }
 }

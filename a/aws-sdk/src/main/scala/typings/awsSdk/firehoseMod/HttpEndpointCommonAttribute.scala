@@ -18,19 +18,15 @@ trait HttpEndpointCommonAttribute extends StObject {
 }
 object HttpEndpointCommonAttribute {
   
-  @scala.inline
-  def apply(AttributeName: HttpEndpointAttributeName, AttributeValue: HttpEndpointAttributeValue): HttpEndpointCommonAttribute = {
+  inline def apply(AttributeName: HttpEndpointAttributeName, AttributeValue: HttpEndpointAttributeValue): HttpEndpointCommonAttribute = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], AttributeValue = AttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpEndpointCommonAttribute]
   }
   
-  @scala.inline
-  implicit class HttpEndpointCommonAttributeMutableBuilder[Self <: HttpEndpointCommonAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: HttpEndpointCommonAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: HttpEndpointAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: HttpEndpointAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValue(value: HttpEndpointAttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: HttpEndpointAttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
   }
 }

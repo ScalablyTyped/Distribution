@@ -10,16 +10,13 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(adapter: String): Connection = {
+  inline def apply(adapter: String): Connection = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+    inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
   }
 }

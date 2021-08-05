@@ -57,75 +57,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCountry extends StObject
 object WdCountry {
   
-  @scala.inline
-  def wdArgentina: `54` = 54.asInstanceOf[`54`]
+  inline def wdArgentina: `54` = 54.asInstanceOf[`54`]
   
-  @scala.inline
-  def wdBrazil: `55` = 55.asInstanceOf[`55`]
+  inline def wdBrazil: `55` = 55.asInstanceOf[`55`]
   
-  @scala.inline
-  def wdCanada: `2` = 2.asInstanceOf[`2`]
+  inline def wdCanada: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdChile: `56` = 56.asInstanceOf[`56`]
+  inline def wdChile: `56` = 56.asInstanceOf[`56`]
   
-  @scala.inline
-  def wdChina: `86` = 86.asInstanceOf[`86`]
+  inline def wdChina: `86` = 86.asInstanceOf[`86`]
   
-  @scala.inline
-  def wdDenmark: `45` = 45.asInstanceOf[`45`]
+  inline def wdDenmark: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def wdFinland: `358` = 358.asInstanceOf[`358`]
+  inline def wdFinland: `358` = 358.asInstanceOf[`358`]
   
-  @scala.inline
-  def wdFrance: `33` = 33.asInstanceOf[`33`]
+  inline def wdFrance: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def wdGermany: `49` = 49.asInstanceOf[`49`]
+  inline def wdGermany: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def wdIceland: `354` = 354.asInstanceOf[`354`]
+  inline def wdIceland: `354` = 354.asInstanceOf[`354`]
   
-  @scala.inline
-  def wdItaly: `39` = 39.asInstanceOf[`39`]
+  inline def wdItaly: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def wdJapan: `81` = 81.asInstanceOf[`81`]
+  inline def wdJapan: `81` = 81.asInstanceOf[`81`]
   
-  @scala.inline
-  def wdKorea: `82` = 82.asInstanceOf[`82`]
+  inline def wdKorea: `82` = 82.asInstanceOf[`82`]
   
-  @scala.inline
-  def wdLatinAmerica: `3` = 3.asInstanceOf[`3`]
+  inline def wdLatinAmerica: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdMexico: `52` = 52.asInstanceOf[`52`]
+  inline def wdMexico: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def wdNetherlands: `31` = 31.asInstanceOf[`31`]
+  inline def wdNetherlands: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def wdNorway: `47` = 47.asInstanceOf[`47`]
+  inline def wdNorway: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def wdPeru: `51` = 51.asInstanceOf[`51`]
+  inline def wdPeru: `51` = 51.asInstanceOf[`51`]
   
-  @scala.inline
-  def wdSpain: `34` = 34.asInstanceOf[`34`]
+  inline def wdSpain: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def wdSweden: `46` = 46.asInstanceOf[`46`]
+  inline def wdSweden: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def wdTaiwan: `886` = 886.asInstanceOf[`886`]
+  inline def wdTaiwan: `886` = 886.asInstanceOf[`886`]
   
-  @scala.inline
-  def wdUK: `44` = 44.asInstanceOf[`44`]
+  inline def wdUK: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def wdUS: `1` = 1.asInstanceOf[`1`]
+  inline def wdUS: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdVenezuela: `58` = 58.asInstanceOf[`58`]
+  inline def wdVenezuela: `58` = 58.asInstanceOf[`58`]
 }

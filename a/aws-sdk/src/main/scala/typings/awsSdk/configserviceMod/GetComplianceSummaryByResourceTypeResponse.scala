@@ -13,22 +13,17 @@ trait GetComplianceSummaryByResourceTypeResponse extends StObject {
 }
 object GetComplianceSummaryByResourceTypeResponse {
   
-  @scala.inline
-  def apply(): GetComplianceSummaryByResourceTypeResponse = {
+  inline def apply(): GetComplianceSummaryByResourceTypeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceSummaryByResourceTypeResponse]
   }
   
-  @scala.inline
-  implicit class GetComplianceSummaryByResourceTypeResponseMutableBuilder[Self <: GetComplianceSummaryByResourceTypeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceSummaryByResourceTypeResponse](x: Self) {
     
-    @scala.inline
-    def setComplianceSummariesByResourceType(value: ComplianceSummariesByResourceType): Self = StObject.set(x, "ComplianceSummariesByResourceType", value.asInstanceOf[js.Any])
+    inline def setComplianceSummariesByResourceType(value: ComplianceSummariesByResourceType): Self = StObject.set(x, "ComplianceSummariesByResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceSummariesByResourceTypeUndefined: Self = StObject.set(x, "ComplianceSummariesByResourceType", js.undefined)
+    inline def setComplianceSummariesByResourceTypeUndefined: Self = StObject.set(x, "ComplianceSummariesByResourceType", js.undefined)
     
-    @scala.inline
-    def setComplianceSummariesByResourceTypeVarargs(value: ComplianceSummaryByResourceType*): Self = StObject.set(x, "ComplianceSummariesByResourceType", js.Array(value :_*))
+    inline def setComplianceSummariesByResourceTypeVarargs(value: ComplianceSummaryByResourceType*): Self = StObject.set(x, "ComplianceSummariesByResourceType", js.Array(value :_*))
   }
 }

@@ -21,6 +21,6 @@ object entityNotFoundErrorMod {
     /* CompleteClass */
     var name: String = js.native
     
-    var stringifyCriteria: js.Any = js.native
+    /* private */ var stringifyCriteria: js.Any = js.native
   }
 }

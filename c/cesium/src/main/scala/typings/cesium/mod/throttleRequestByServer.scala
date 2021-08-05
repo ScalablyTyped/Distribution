@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object throttleRequestByServer {
   
-  @scala.inline
-  def apply(url: String, requestFunction: RequestFunction): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], requestFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def apply(url: String, requestFunction: RequestFunction): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], requestFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("cesium", "throttleRequestByServer")
   @js.native

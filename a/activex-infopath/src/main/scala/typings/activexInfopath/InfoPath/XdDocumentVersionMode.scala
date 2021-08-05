@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdDocumentVersionMode extends StObject
 object XdDocumentVersionMode {
   
-  @scala.inline
-  def xdCanOpenInReadOnlyMode: `8` = 8.asInstanceOf[`8`]
+  inline def xdCanOpenInReadOnlyMode: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xdCanTransformSigned: `16` = 16.asInstanceOf[`16`]
+  inline def xdCanTransformSigned: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def xdDoNotInstallActiveXCabs: `128` = 128.asInstanceOf[`128`]
+  inline def xdDoNotInstallActiveXCabs: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def xdFailOnVersionMismatch: `0` = 0.asInstanceOf[`0`]
+  inline def xdFailOnVersionMismatch: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xdFailOnVersionOlder: `1` = 1.asInstanceOf[`1`]
+  inline def xdFailOnVersionOlder: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xdIgnoreDataAdaptersQueryFailure: `64` = 64.asInstanceOf[`64`]
+  inline def xdIgnoreDataAdaptersQueryFailure: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def xdPromptTransformSigned: `32` = 32.asInstanceOf[`32`]
+  inline def xdPromptTransformSigned: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def xdUseExistingVersion: `2` = 2.asInstanceOf[`2`]
+  inline def xdUseExistingVersion: `2` = 2.asInstanceOf[`2`]
 }

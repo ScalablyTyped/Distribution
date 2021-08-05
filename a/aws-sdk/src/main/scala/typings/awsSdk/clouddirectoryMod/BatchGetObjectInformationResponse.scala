@@ -18,28 +18,21 @@ trait BatchGetObjectInformationResponse extends StObject {
 }
 object BatchGetObjectInformationResponse {
   
-  @scala.inline
-  def apply(): BatchGetObjectInformationResponse = {
+  inline def apply(): BatchGetObjectInformationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetObjectInformationResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetObjectInformationResponseMutableBuilder[Self <: BatchGetObjectInformationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetObjectInformationResponse](x: Self) {
     
-    @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
+    inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
+    inline def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
     
-    @scala.inline
-    def setSchemaFacets(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacets", value.asInstanceOf[js.Any])
+    inline def setSchemaFacets(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaFacetsUndefined: Self = StObject.set(x, "SchemaFacets", js.undefined)
+    inline def setSchemaFacetsUndefined: Self = StObject.set(x, "SchemaFacets", js.undefined)
     
-    @scala.inline
-    def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value :_*))
+    inline def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value :_*))
   }
 }

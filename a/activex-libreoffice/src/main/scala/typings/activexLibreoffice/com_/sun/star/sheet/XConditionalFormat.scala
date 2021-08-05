@@ -21,8 +21,7 @@ trait XConditionalFormat
 }
 object XConditionalFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -39,13 +38,10 @@ object XConditionalFormat {
     __obj.asInstanceOf[XConditionalFormat]
   }
   
-  @scala.inline
-  implicit class XConditionalFormatMutableBuilder[Self <: XConditionalFormat] (val x: Self) extends AnyVal {
+  extension [Self <: XConditionalFormat](x: Self) {
     
-    @scala.inline
-    def setCreateEntry(value: (Double, Double) => Unit): Self = StObject.set(x, "createEntry", js.Any.fromFunction2(value))
+    inline def setCreateEntry(value: (Double, Double) => Unit): Self = StObject.set(x, "createEntry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+    inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
   }
 }

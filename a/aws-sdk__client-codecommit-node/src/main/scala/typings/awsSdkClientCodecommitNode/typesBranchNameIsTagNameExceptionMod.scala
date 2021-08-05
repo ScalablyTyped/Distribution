@@ -18,17 +18,14 @@ object typesBranchNameIsTagNameExceptionMod {
   }
   object BranchNameIsTagNameException {
     
-    @scala.inline
-    def apply(): BranchNameIsTagNameException = {
+    inline def apply(): BranchNameIsTagNameException = {
       val __obj = js.Dynamic.literal(name = "BranchNameIsTagNameException")
       __obj.asInstanceOf[BranchNameIsTagNameException]
     }
     
-    @scala.inline
-    implicit class BranchNameIsTagNameExceptionMutableBuilder[Self <: BranchNameIsTagNameException] (val x: Self) extends AnyVal {
+    extension [Self <: BranchNameIsTagNameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameIsTagNameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

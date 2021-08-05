@@ -17,25 +17,19 @@ trait CompletionContext extends StObject {
 }
 object CompletionContext {
   
-  @scala.inline
-  def apply(line: String, position: Double, reason: CompletionReason, text: String): CompletionContext = {
+  inline def apply(line: String, position: Double, reason: CompletionReason, text: String): CompletionContext = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionContext]
   }
   
-  @scala.inline
-  implicit class CompletionContextMutableBuilder[Self <: CompletionContext] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionContext](x: Self) {
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: CompletionReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: CompletionReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

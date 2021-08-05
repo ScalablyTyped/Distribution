@@ -13,6 +13,5 @@ class IntegerList ()
   extends typings.xadesjs.xmlMod.IntegerList
 object IntegerList {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.IntegerList] = ^.asInstanceOf[js.Dynamic].selectDynamic("IntegerList").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.IntegerList]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.IntegerList] = ^.asInstanceOf[js.Dynamic].selectDynamic("IntegerList").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.IntegerList]]
 }

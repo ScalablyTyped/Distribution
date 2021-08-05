@@ -18,19 +18,15 @@ trait ProgressParams[T] extends StObject {
 }
 object ProgressParams {
   
-  @scala.inline
-  def apply[T](token: ProgressToken, value: T): ProgressParams[T] = {
+  inline def apply[T](token: ProgressToken, value: T): ProgressParams[T] = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressParams[T]]
   }
   
-  @scala.inline
-  implicit class ProgressParamsMutableBuilder[Self <: ProgressParams[?], T] (val x: Self & ProgressParams[T]) extends AnyVal {
+  extension [Self <: ProgressParams[?], T](x: Self & ProgressParams[T]) {
     
-    @scala.inline
-    def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

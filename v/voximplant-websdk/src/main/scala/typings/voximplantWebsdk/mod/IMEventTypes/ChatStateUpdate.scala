@@ -30,25 +30,19 @@ trait ChatStateUpdate
 }
 object ChatStateUpdate {
   
-  @scala.inline
-  def apply(id: String, state: ChatStateType): ChatStateUpdate = {
+  inline def apply(id: String, state: ChatStateType): ChatStateUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatStateUpdate]
   }
   
-  @scala.inline
-  implicit class ChatStateUpdateMutableBuilder[Self <: ChatStateUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ChatStateUpdate](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setState(value: ChatStateType): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ChatStateType): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

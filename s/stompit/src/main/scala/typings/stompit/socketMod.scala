@@ -73,8 +73,7 @@ object socketMod {
   }
   object SocketError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isApplicationError: () => Boolean,
       isProtocolError: () => Boolean,
       isTransportError: () => Boolean,
@@ -85,17 +84,13 @@ object socketMod {
       __obj.asInstanceOf[SocketError]
     }
     
-    @scala.inline
-    implicit class SocketErrorMutableBuilder[Self <: SocketError] (val x: Self) extends AnyVal {
+    extension [Self <: SocketError](x: Self) {
       
-      @scala.inline
-      def setIsApplicationError(value: () => Boolean): Self = StObject.set(x, "isApplicationError", js.Any.fromFunction0(value))
+      inline def setIsApplicationError(value: () => Boolean): Self = StObject.set(x, "isApplicationError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsProtocolError(value: () => Boolean): Self = StObject.set(x, "isProtocolError", js.Any.fromFunction0(value))
+      inline def setIsProtocolError(value: () => Boolean): Self = StObject.set(x, "isProtocolError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTransportError(value: () => Boolean): Self = StObject.set(x, "isTransportError", js.Any.fromFunction0(value))
+      inline def setIsTransportError(value: () => Boolean): Self = StObject.set(x, "isTransportError", js.Any.fromFunction0(value))
     }
   }
   
@@ -117,59 +112,42 @@ object socketMod {
   }
   object SocketOptions {
     
-    @scala.inline
-    def apply(): SocketOptions = {
+    inline def apply(): SocketOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketOptions]
     }
     
-    @scala.inline
-    implicit class SocketOptionsMutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketOptions](x: Self) {
       
-      @scala.inline
-      def setCommandHandlers(value: CommandHandlers): Self = StObject.set(x, "commandHandlers", value.asInstanceOf[js.Any])
+      inline def setCommandHandlers(value: CommandHandlers): Self = StObject.set(x, "commandHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandHandlersUndefined: Self = StObject.set(x, "commandHandlers", js.undefined)
+      inline def setCommandHandlersUndefined: Self = StObject.set(x, "commandHandlers", js.undefined)
       
-      @scala.inline
-      def setHeartbeat(value: Heartbeat): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
+      inline def setHeartbeat(value: Heartbeat): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatDelayMargin(value: Double): Self = StObject.set(x, "heartbeatDelayMargin", value.asInstanceOf[js.Any])
+      inline def setHeartbeatDelayMargin(value: Double): Self = StObject.set(x, "heartbeatDelayMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatDelayMarginUndefined: Self = StObject.set(x, "heartbeatDelayMargin", js.undefined)
+      inline def setHeartbeatDelayMarginUndefined: Self = StObject.set(x, "heartbeatDelayMargin", js.undefined)
       
-      @scala.inline
-      def setHeartbeatOutputMargin(value: Double): Self = StObject.set(x, "heartbeatOutputMargin", value.asInstanceOf[js.Any])
+      inline def setHeartbeatOutputMargin(value: Double): Self = StObject.set(x, "heartbeatOutputMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatOutputMarginUndefined: Self = StObject.set(x, "heartbeatOutputMargin", js.undefined)
+      inline def setHeartbeatOutputMarginUndefined: Self = StObject.set(x, "heartbeatOutputMargin", js.undefined)
       
-      @scala.inline
-      def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
+      inline def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
       
-      @scala.inline
-      def setHeartbeatVarargs(value: Double*): Self = StObject.set(x, "heartbeat", js.Array(value :_*))
+      inline def setHeartbeatVarargs(value: Double*): Self = StObject.set(x, "heartbeat", js.Array(value :_*))
       
-      @scala.inline
-      def setOutgoingFrameStream(value: typings.stompit.outgoingFrameStreamMod.^): Self = StObject.set(x, "outgoingFrameStream", value.asInstanceOf[js.Any])
+      inline def setOutgoingFrameStream(value: typings.stompit.outgoingFrameStreamMod.^): Self = StObject.set(x, "outgoingFrameStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoingFrameStreamUndefined: Self = StObject.set(x, "outgoingFrameStream", js.undefined)
+      inline def setOutgoingFrameStreamUndefined: Self = StObject.set(x, "outgoingFrameStream", js.undefined)
       
-      @scala.inline
-      def setResetDisconnect(value: Boolean): Self = StObject.set(x, "resetDisconnect", value.asInstanceOf[js.Any])
+      inline def setResetDisconnect(value: Boolean): Self = StObject.set(x, "resetDisconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetDisconnectUndefined: Self = StObject.set(x, "resetDisconnect", js.undefined)
+      inline def setResetDisconnectUndefined: Self = StObject.set(x, "resetDisconnect", js.undefined)
       
-      @scala.inline
-      def setUnknownCommand(value: () => Unit): Self = StObject.set(x, "unknownCommand", js.Any.fromFunction0(value))
+      inline def setUnknownCommand(value: () => Unit): Self = StObject.set(x, "unknownCommand", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnknownCommandUndefined: Self = StObject.set(x, "unknownCommand", js.undefined)
+      inline def setUnknownCommandUndefined: Self = StObject.set(x, "unknownCommand", js.undefined)
     }
   }
   

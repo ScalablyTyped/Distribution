@@ -14,25 +14,19 @@ trait Effect extends StObject {
 }
 object Effect {
   
-  @scala.inline
-  def apply(): Effect = {
+  inline def apply(): Effect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Effect]
   }
   
-  @scala.inline
-  implicit class EffectMutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
+  extension [Self <: Effect](x: Self) {
     
-    @scala.inline
-    def setEffect(value: none | default): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: none | default): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

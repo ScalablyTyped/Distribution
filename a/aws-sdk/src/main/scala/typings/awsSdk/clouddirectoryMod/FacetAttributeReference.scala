@@ -18,19 +18,15 @@ trait FacetAttributeReference extends StObject {
 }
 object FacetAttributeReference {
   
-  @scala.inline
-  def apply(TargetAttributeName: AttributeName, TargetFacetName: FacetName): FacetAttributeReference = {
+  inline def apply(TargetAttributeName: AttributeName, TargetFacetName: FacetName): FacetAttributeReference = {
     val __obj = js.Dynamic.literal(TargetAttributeName = TargetAttributeName.asInstanceOf[js.Any], TargetFacetName = TargetFacetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetAttributeReference]
   }
   
-  @scala.inline
-  implicit class FacetAttributeReferenceMutableBuilder[Self <: FacetAttributeReference] (val x: Self) extends AnyVal {
+  extension [Self <: FacetAttributeReference](x: Self) {
     
-    @scala.inline
-    def setTargetAttributeName(value: AttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
+    inline def setTargetAttributeName(value: AttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFacetName(value: FacetName): Self = StObject.set(x, "TargetFacetName", value.asInstanceOf[js.Any])
+    inline def setTargetFacetName(value: FacetName): Self = StObject.set(x, "TargetFacetName", value.asInstanceOf[js.Any])
   }
 }

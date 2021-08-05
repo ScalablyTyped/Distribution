@@ -15,22 +15,17 @@ trait IdToken extends StObject {
 }
 object IdToken {
   
-  @scala.inline
-  def apply(location: LocationRange, value: String): IdToken = {
+  inline def apply(location: LocationRange, value: String): IdToken = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = "id", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdToken]
   }
   
-  @scala.inline
-  implicit class IdTokenMutableBuilder[Self <: IdToken] (val x: Self) extends AnyVal {
+  extension [Self <: IdToken](x: Self) {
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

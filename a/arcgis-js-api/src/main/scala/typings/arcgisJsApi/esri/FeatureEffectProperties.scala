@@ -36,37 +36,27 @@ trait FeatureEffectProperties extends StObject {
 }
 object FeatureEffectProperties {
   
-  @scala.inline
-  def apply(): FeatureEffectProperties = {
+  inline def apply(): FeatureEffectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureEffectProperties]
   }
   
-  @scala.inline
-  implicit class FeatureEffectPropertiesMutableBuilder[Self <: FeatureEffectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureEffectProperties](x: Self) {
     
-    @scala.inline
-    def setExcludedEffect(value: String): Self = StObject.set(x, "excludedEffect", value.asInstanceOf[js.Any])
+    inline def setExcludedEffect(value: String): Self = StObject.set(x, "excludedEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedEffectUndefined: Self = StObject.set(x, "excludedEffect", js.undefined)
+    inline def setExcludedEffectUndefined: Self = StObject.set(x, "excludedEffect", js.undefined)
     
-    @scala.inline
-    def setExcludedLabelsVisible(value: Boolean): Self = StObject.set(x, "excludedLabelsVisible", value.asInstanceOf[js.Any])
+    inline def setExcludedLabelsVisible(value: Boolean): Self = StObject.set(x, "excludedLabelsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedLabelsVisibleUndefined: Self = StObject.set(x, "excludedLabelsVisible", js.undefined)
+    inline def setExcludedLabelsVisibleUndefined: Self = StObject.set(x, "excludedLabelsVisible", js.undefined)
     
-    @scala.inline
-    def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setIncludedEffect(value: String): Self = StObject.set(x, "includedEffect", value.asInstanceOf[js.Any])
+    inline def setIncludedEffect(value: String): Self = StObject.set(x, "includedEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedEffectUndefined: Self = StObject.set(x, "includedEffect", js.undefined)
+    inline def setIncludedEffectUndefined: Self = StObject.set(x, "includedEffect", js.undefined)
   }
 }

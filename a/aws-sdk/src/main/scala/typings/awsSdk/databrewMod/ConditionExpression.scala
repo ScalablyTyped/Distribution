@@ -23,25 +23,19 @@ trait ConditionExpression extends StObject {
 }
 object ConditionExpression {
   
-  @scala.inline
-  def apply(Condition: Condition, TargetColumn: TargetColumn): ConditionExpression = {
+  inline def apply(Condition: Condition, TargetColumn: TargetColumn): ConditionExpression = {
     val __obj = js.Dynamic.literal(Condition = Condition.asInstanceOf[js.Any], TargetColumn = TargetColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionExpression]
   }
   
-  @scala.inline
-  implicit class ConditionExpressionMutableBuilder[Self <: ConditionExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionExpression](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetColumn(value: TargetColumn): Self = StObject.set(x, "TargetColumn", value.asInstanceOf[js.Any])
+    inline def setTargetColumn(value: TargetColumn): Self = StObject.set(x, "TargetColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ConditionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ConditionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

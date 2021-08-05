@@ -22,26 +22,20 @@ object sidebarDividerMod {
   }
   object SidebarDividerProps {
     
-    @scala.inline
-    def apply(): SidebarDividerProps = {
+    inline def apply(): SidebarDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarDividerProps]
     }
     
-    @scala.inline
-    implicit class SidebarDividerPropsMutableBuilder[Self <: SidebarDividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarDividerProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     }
   }
 }

@@ -19,22 +19,17 @@ object SkeletonJson {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def blendModeFromString(str: String): typings.phaser.spine.BlendMode = ^.asInstanceOf[js.Dynamic].applyDynamic("blendModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.BlendMode]
+  inline def blendModeFromString(str: String): typings.phaser.spine.BlendMode = ^.asInstanceOf[js.Dynamic].applyDynamic("blendModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.BlendMode]
   
   /* static member */
-  @scala.inline
-  def positionModeFromString(str: String): typings.phaser.spine.PositionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("positionModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.PositionMode]
+  inline def positionModeFromString(str: String): typings.phaser.spine.PositionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("positionModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.PositionMode]
   
   /* static member */
-  @scala.inline
-  def rotateModeFromString(str: String): typings.phaser.spine.RotateMode = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.RotateMode]
+  inline def rotateModeFromString(str: String): typings.phaser.spine.RotateMode = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.RotateMode]
   
   /* static member */
-  @scala.inline
-  def spacingModeFromString(str: String): typings.phaser.spine.SpacingMode = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.SpacingMode]
+  inline def spacingModeFromString(str: String): typings.phaser.spine.SpacingMode = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.SpacingMode]
   
   /* static member */
-  @scala.inline
-  def transformModeFromString(str: String): typings.phaser.spine.TransformMode = ^.asInstanceOf[js.Dynamic].applyDynamic("transformModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TransformMode]
+  inline def transformModeFromString(str: String): typings.phaser.spine.TransformMode = ^.asInstanceOf[js.Dynamic].applyDynamic("transformModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TransformMode]
 }

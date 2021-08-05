@@ -12,8 +12,7 @@ trait ImageMogr2FopOptions
 }
 object ImageMogr2FopOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `auto-orient`: Boolean,
     blur: String,
     crop: String,
@@ -29,10 +28,8 @@ object ImageMogr2FopOptions {
     __obj.asInstanceOf[ImageMogr2FopOptions]
   }
   
-  @scala.inline
-  implicit class ImageMogr2FopOptionsMutableBuilder[Self <: ImageMogr2FopOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageMogr2FopOptions](x: Self) {
     
-    @scala.inline
-    def setFop(value: typings.qiniuJs.qiniuJsStrings.imageMogr2): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
+    inline def setFop(value: typings.qiniuJs.qiniuJsStrings.imageMogr2): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
   }
 }

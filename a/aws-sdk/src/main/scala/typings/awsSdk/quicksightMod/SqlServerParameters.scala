@@ -23,22 +23,17 @@ trait SqlServerParameters extends StObject {
 }
 object SqlServerParameters {
   
-  @scala.inline
-  def apply(Database: Database, Host: Host, Port: Port): SqlServerParameters = {
+  inline def apply(Database: Database, Host: Host, Port: Port): SqlServerParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlServerParameters]
   }
   
-  @scala.inline
-  implicit class SqlServerParametersMutableBuilder[Self <: SqlServerParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SqlServerParameters](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
   }
 }

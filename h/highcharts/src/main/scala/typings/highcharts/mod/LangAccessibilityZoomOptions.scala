@@ -14,31 +14,23 @@ trait LangAccessibilityZoomOptions extends StObject {
 }
 object LangAccessibilityZoomOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityZoomOptions = {
+  inline def apply(): LangAccessibilityZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityZoomOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityZoomOptionsMutableBuilder[Self <: LangAccessibilityZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityZoomOptions](x: Self) {
     
-    @scala.inline
-    def setMapZoomIn(value: String): Self = StObject.set(x, "mapZoomIn", value.asInstanceOf[js.Any])
+    inline def setMapZoomIn(value: String): Self = StObject.set(x, "mapZoomIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapZoomInUndefined: Self = StObject.set(x, "mapZoomIn", js.undefined)
+    inline def setMapZoomInUndefined: Self = StObject.set(x, "mapZoomIn", js.undefined)
     
-    @scala.inline
-    def setMapZoomOut(value: String): Self = StObject.set(x, "mapZoomOut", value.asInstanceOf[js.Any])
+    inline def setMapZoomOut(value: String): Self = StObject.set(x, "mapZoomOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapZoomOutUndefined: Self = StObject.set(x, "mapZoomOut", js.undefined)
+    inline def setMapZoomOutUndefined: Self = StObject.set(x, "mapZoomOut", js.undefined)
     
-    @scala.inline
-    def setResetZoomButton(value: String): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
+    inline def setResetZoomButton(value: String): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetZoomButtonUndefined: Self = StObject.set(x, "resetZoomButton", js.undefined)
+    inline def setResetZoomButtonUndefined: Self = StObject.set(x, "resetZoomButton", js.undefined)
   }
 }

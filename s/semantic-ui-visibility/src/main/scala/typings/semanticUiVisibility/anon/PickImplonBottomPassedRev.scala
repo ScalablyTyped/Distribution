@@ -14,16 +14,13 @@ trait PickImplonBottomPassedRev extends StObject {
 }
 object PickImplonBottomPassedRev {
   
-  @scala.inline
-  def apply(onBottomPassedReverse: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonBottomPassedRev = {
+  inline def apply(onBottomPassedReverse: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonBottomPassedRev = {
     val __obj = js.Dynamic.literal(onBottomPassedReverse = onBottomPassedReverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonBottomPassedRev]
   }
   
-  @scala.inline
-  implicit class PickImplonBottomPassedRevMutableBuilder[Self <: PickImplonBottomPassedRev] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonBottomPassedRev](x: Self) {
     
-    @scala.inline
-    def setOnBottomPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomPassedReverse", value.asInstanceOf[js.Any])
+    inline def setOnBottomPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomPassedReverse", value.asInstanceOf[js.Any])
   }
 }

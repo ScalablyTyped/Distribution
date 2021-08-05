@@ -13,19 +13,15 @@ trait InsightSelector extends StObject {
 }
 object InsightSelector {
   
-  @scala.inline
-  def apply(): InsightSelector = {
+  inline def apply(): InsightSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightSelector]
   }
   
-  @scala.inline
-  implicit class InsightSelectorMutableBuilder[Self <: InsightSelector] (val x: Self) extends AnyVal {
+  extension [Self <: InsightSelector](x: Self) {
     
-    @scala.inline
-    def setInsightType(value: InsightType): Self = StObject.set(x, "InsightType", value.asInstanceOf[js.Any])
+    inline def setInsightType(value: InsightType): Self = StObject.set(x, "InsightType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightTypeUndefined: Self = StObject.set(x, "InsightType", js.undefined)
+    inline def setInsightTypeUndefined: Self = StObject.set(x, "InsightType", js.undefined)
   }
 }

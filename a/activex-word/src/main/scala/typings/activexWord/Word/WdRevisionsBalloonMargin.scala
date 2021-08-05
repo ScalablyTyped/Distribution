@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRevisionsBalloonMargin extends StObject
 object WdRevisionsBalloonMargin {
   
-  @scala.inline
-  def wdLeftMargin: `0` = 0.asInstanceOf[`0`]
+  inline def wdLeftMargin: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRightMargin: `1` = 1.asInstanceOf[`1`]
+  inline def wdRightMargin: `1` = 1.asInstanceOf[`1`]
 }

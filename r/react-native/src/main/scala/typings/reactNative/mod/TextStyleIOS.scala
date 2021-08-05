@@ -27,46 +27,33 @@ trait TextStyleIOS
 }
 object TextStyleIOS {
   
-  @scala.inline
-  def apply(): TextStyleIOS = {
+  inline def apply(): TextStyleIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextStyleIOS]
   }
   
-  @scala.inline
-  implicit class TextStyleIOSMutableBuilder[Self <: TextStyleIOS] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyleIOS](x: Self) {
     
-    @scala.inline
-    def setFontVariant(value: js.Array[FontVariant]): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+    inline def setFontVariant(value: js.Array[FontVariant]): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+    inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
-    @scala.inline
-    def setFontVariantVarargs(value: FontVariant*): Self = StObject.set(x, "fontVariant", js.Array(value :_*))
+    inline def setFontVariantVarargs(value: FontVariant*): Self = StObject.set(x, "fontVariant", js.Array(value :_*))
     
-    @scala.inline
-    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    @scala.inline
-    def setTextDecorationColor(value: ColorValue): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
+    inline def setTextDecorationColor(value: ColorValue): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
+    inline def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
     
-    @scala.inline
-    def setTextDecorationStyle(value: solid | double | dotted | dashed): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
+    inline def setTextDecorationStyle(value: solid | double | dotted | dashed): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
+    inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
     
-    @scala.inline
-    def setWritingDirection(value: auto | ltr | rtl): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
+    inline def setWritingDirection(value: auto | ltr | rtl): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingDirectionUndefined: Self = StObject.set(x, "writingDirection", js.undefined)
+    inline def setWritingDirectionUndefined: Self = StObject.set(x, "writingDirection", js.undefined)
   }
 }

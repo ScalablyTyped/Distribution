@@ -33,43 +33,31 @@ trait HlsMediaStoreSettings extends StObject {
 }
 object HlsMediaStoreSettings {
   
-  @scala.inline
-  def apply(): HlsMediaStoreSettings = {
+  inline def apply(): HlsMediaStoreSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsMediaStoreSettings]
   }
   
-  @scala.inline
-  implicit class HlsMediaStoreSettingsMutableBuilder[Self <: HlsMediaStoreSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsMediaStoreSettings](x: Self) {
     
-    @scala.inline
-    def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
+    inline def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
-    @scala.inline
-    def setFilecacheDuration(value: integerMin0Max600): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
+    inline def setFilecacheDuration(value: integerMin0Max600): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
+    inline def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
     
-    @scala.inline
-    def setMediaStoreStorageClass(value: HlsMediaStoreStorageClass): Self = StObject.set(x, "MediaStoreStorageClass", value.asInstanceOf[js.Any])
+    inline def setMediaStoreStorageClass(value: HlsMediaStoreStorageClass): Self = StObject.set(x, "MediaStoreStorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaStoreStorageClassUndefined: Self = StObject.set(x, "MediaStoreStorageClass", js.undefined)
+    inline def setMediaStoreStorageClassUndefined: Self = StObject.set(x, "MediaStoreStorageClass", js.undefined)
     
-    @scala.inline
-    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
+    inline def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
+    inline def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
     
-    @scala.inline
-    def setRestartDelay(value: integerMin0Max15): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
+    inline def setRestartDelay(value: integerMin0Max15): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
+    inline def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
   }
 }

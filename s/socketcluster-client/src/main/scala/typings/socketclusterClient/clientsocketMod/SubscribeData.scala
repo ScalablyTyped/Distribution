@@ -12,19 +12,15 @@ trait SubscribeData extends StObject {
 }
 object SubscribeData {
   
-  @scala.inline
-  def apply(channel: String, subscriptionOptions: SubscribeOptions): SubscribeData = {
+  inline def apply(channel: String, subscriptionOptions: SubscribeOptions): SubscribeData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], subscriptionOptions = subscriptionOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeData]
   }
   
-  @scala.inline
-  implicit class SubscribeDataMutableBuilder[Self <: SubscribeData] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeData](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionOptions(value: SubscribeOptions): Self = StObject.set(x, "subscriptionOptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptionOptions(value: SubscribeOptions): Self = StObject.set(x, "subscriptionOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ object cloudresourcemanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Cloudresourcemanager
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -67,8 +66,7 @@ object cloudresourcemanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -91,8 +89,7 @@ object cloudresourcemanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -115,8 +112,7 @@ object cloudresourcemanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager
       ] = js.native
-    @scala.inline
-    def v2beta1_=(
+    inline def v2beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -158,8 +154,7 @@ object cloudresourcemanagerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -203,24 +198,16 @@ object cloudresourcemanagerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudresourcemanager(options: Options): Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudresourcemanager]
-  @scala.inline
-  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Options): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager]
-  @scala.inline
-  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Options): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager]
-  @scala.inline
-  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Options): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager]
+  inline def cloudresourcemanager(options: Options): Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudresourcemanager]
+  inline def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Options): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager]
+  inline def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Options): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager]
+  inline def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Options): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager]
   
-  @scala.inline
-  def cloudresourcemanager_v1(version: v1): Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudresourcemanager]
+  inline def cloudresourcemanager_v1(version: v1): Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudresourcemanager]
   
-  @scala.inline
-  def cloudresourcemanager_v1beta1(version: v1beta1): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager]
+  inline def cloudresourcemanager_v1beta1(version: v1beta1): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager]
   
-  @scala.inline
-  def cloudresourcemanager_v2(version: v2): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager]
+  inline def cloudresourcemanager_v2(version: v2): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager]
   
-  @scala.inline
-  def cloudresourcemanager_v2beta1(version: v2beta1): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager]
+  inline def cloudresourcemanager_v2beta1(version: v2beta1): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager]
 }

@@ -13,22 +13,17 @@ trait WebhookLinksidstring extends StObject {
 }
 object WebhookLinksidstring {
   
-  @scala.inline
-  def apply(id: String, links: js.Array[Href]): WebhookLinksidstring = {
+  inline def apply(id: String, links: js.Array[Href]): WebhookLinksidstring = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookLinksidstring]
   }
   
-  @scala.inline
-  implicit class WebhookLinksidstringMutableBuilder[Self <: WebhookLinksidstring] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookLinksidstring](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
   }
 }

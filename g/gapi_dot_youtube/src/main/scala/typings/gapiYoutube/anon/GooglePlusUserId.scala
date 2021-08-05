@@ -18,19 +18,15 @@ trait GooglePlusUserId extends StObject {
 }
 object GooglePlusUserId {
   
-  @scala.inline
-  def apply(googlePlusUserId: String, relatedPlaylists: Favorites): GooglePlusUserId = {
+  inline def apply(googlePlusUserId: String, relatedPlaylists: Favorites): GooglePlusUserId = {
     val __obj = js.Dynamic.literal(googlePlusUserId = googlePlusUserId.asInstanceOf[js.Any], relatedPlaylists = relatedPlaylists.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePlusUserId]
   }
   
-  @scala.inline
-  implicit class GooglePlusUserIdMutableBuilder[Self <: GooglePlusUserId] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePlusUserId](x: Self) {
     
-    @scala.inline
-    def setGooglePlusUserId(value: String): Self = StObject.set(x, "googlePlusUserId", value.asInstanceOf[js.Any])
+    inline def setGooglePlusUserId(value: String): Self = StObject.set(x, "googlePlusUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedPlaylists(value: Favorites): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
+    inline def setRelatedPlaylists(value: Favorites): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
   }
 }

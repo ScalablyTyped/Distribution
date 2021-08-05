@@ -23,8 +23,7 @@ trait ZuiStatic extends StObject {
 }
 object ZuiStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Color: ColorStatic,
     Messager: MessagerStatic,
     ModalTrigger: ModalTriggerStatic,
@@ -37,22 +36,16 @@ object ZuiStatic {
     __obj.asInstanceOf[ZuiStatic]
   }
   
-  @scala.inline
-  implicit class ZuiStaticMutableBuilder[Self <: ZuiStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ZuiStatic](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorStatic): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorStatic): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorset(value: ColorSet): Self = StObject.set(x, "colorset", value.asInstanceOf[js.Any])
+    inline def setColorset(value: ColorSet): Self = StObject.set(x, "colorset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessager(value: MessagerStatic): Self = StObject.set(x, "Messager", value.asInstanceOf[js.Any])
+    inline def setMessager(value: MessagerStatic): Self = StObject.set(x, "Messager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalTrigger(value: ModalTriggerStatic): Self = StObject.set(x, "ModalTrigger", value.asInstanceOf[js.Any])
+    inline def setModalTrigger(value: ModalTriggerStatic): Self = StObject.set(x, "ModalTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: StoreStatic): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreStatic): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

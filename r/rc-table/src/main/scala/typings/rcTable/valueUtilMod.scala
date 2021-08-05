@@ -13,17 +13,13 @@ object valueUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getColumnsKey(columns: js.Array[GetColumnKeyColumn]): js.Array[String | Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnsKey")(columns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | Double]]
+  inline def getColumnsKey(columns: js.Array[GetColumnKeyColumn]): js.Array[String | Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnsKey")(columns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | Double]]
   
-  @scala.inline
-  def getPathValue[ValueType, ObjectType /* <: js.Object */](record: ObjectType, path: DataIndex): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathValue")(record.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[ValueType]
+  inline def getPathValue[ValueType, ObjectType /* <: js.Object */](record: ObjectType, path: DataIndex): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathValue")(record.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[ValueType]
   
-  @scala.inline
-  def mergeObject[ReturnObject /* <: js.Object */](objects: Partial[ReturnObject]*): ReturnObject = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeObject")(objects.asInstanceOf[js.Any]).asInstanceOf[ReturnObject]
+  inline def mergeObject[ReturnObject /* <: js.Object */](objects: Partial[ReturnObject]*): ReturnObject = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeObject")(objects.asInstanceOf[js.Any]).asInstanceOf[ReturnObject]
   
-  @scala.inline
-  def validateValue[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateValue[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait GetColumnKeyColumn extends StObject {
     
@@ -33,29 +29,22 @@ object valueUtilMod {
   }
   object GetColumnKeyColumn {
     
-    @scala.inline
-    def apply(): GetColumnKeyColumn = {
+    inline def apply(): GetColumnKeyColumn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetColumnKeyColumn]
     }
     
-    @scala.inline
-    implicit class GetColumnKeyColumnMutableBuilder[Self <: GetColumnKeyColumn] (val x: Self) extends AnyVal {
+    extension [Self <: GetColumnKeyColumn](x: Self) {
       
-      @scala.inline
-      def setDataIndex(value: DataIndex): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
+      inline def setDataIndex(value: DataIndex): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
+      inline def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
       
-      @scala.inline
-      def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value :_*))
+      inline def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
 }

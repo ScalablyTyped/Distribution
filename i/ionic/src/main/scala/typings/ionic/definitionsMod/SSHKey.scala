@@ -22,8 +22,7 @@ trait SSHKey extends StObject {
 }
 object SSHKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotation: String,
     created: String,
     fingerprint: String,
@@ -36,28 +35,20 @@ object SSHKey {
     __obj.asInstanceOf[SSHKey]
   }
   
-  @scala.inline
-  implicit class SSHKeyMutableBuilder[Self <: SSHKey] (val x: Self) extends AnyVal {
+  extension [Self <: SSHKey](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubkey(value: String): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
+    inline def setPubkey(value: String): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ object mod {
   /*
     * Load the previous state with fallback to defaults
     */
-  @scala.inline
-  def apply(opts: WindowStateKeeperOptions): WindowState = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[WindowState]
+  inline def apply(opts: WindowStateKeeperOptions): WindowState = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[WindowState]
   
   @JSImport("electron-window-state", JSImport.Namespace)
   @js.native
@@ -75,8 +74,7 @@ object mod {
     }
     object WindowState {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         height: Double,
         isFullScreen: Boolean,
         isMaximized: Boolean,
@@ -90,32 +88,23 @@ object mod {
         __obj.asInstanceOf[WindowState]
       }
       
-      @scala.inline
-      implicit class WindowStateMutableBuilder[Self <: WindowState] (val x: Self) extends AnyVal {
+      extension [Self <: WindowState](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
+        inline def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsMaximized(value: Boolean): Self = StObject.set(x, "isMaximized", value.asInstanceOf[js.Any])
+        inline def setIsMaximized(value: Boolean): Self = StObject.set(x, "isMaximized", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManage(value: BrowserWindow => Unit): Self = StObject.set(x, "manage", js.Any.fromFunction1(value))
+        inline def setManage(value: BrowserWindow => Unit): Self = StObject.set(x, "manage", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSaveState(value: BrowserWindow => Unit): Self = StObject.set(x, "saveState", js.Any.fromFunction1(value))
+        inline def setSaveState(value: BrowserWindow => Unit): Self = StObject.set(x, "saveState", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     
@@ -156,50 +145,36 @@ object mod {
     }
     object WindowStateKeeperOptions {
       
-      @scala.inline
-      def apply(): WindowStateKeeperOptions = {
+      inline def apply(): WindowStateKeeperOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WindowStateKeeperOptions]
       }
       
-      @scala.inline
-      implicit class WindowStateKeeperOptionsMutableBuilder[Self <: WindowStateKeeperOptions] (val x: Self) extends AnyVal {
+      extension [Self <: WindowStateKeeperOptions](x: Self) {
         
-        @scala.inline
-        def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
+        inline def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
+        inline def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
         
-        @scala.inline
-        def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
+        inline def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
+        inline def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
         
-        @scala.inline
-        def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+        inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
-        @scala.inline
-        def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+        inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+        inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
         
-        @scala.inline
-        def setMaximize(value: Boolean): Self = StObject.set(x, "maximize", value.asInstanceOf[js.Any])
+        inline def setMaximize(value: Boolean): Self = StObject.set(x, "maximize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaximizeUndefined: Self = StObject.set(x, "maximize", js.undefined)
+        inline def setMaximizeUndefined: Self = StObject.set(x, "maximize", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       }
     }
   }

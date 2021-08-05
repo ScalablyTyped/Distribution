@@ -20,8 +20,7 @@ trait FollowResult
 }
 object FollowResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -34,13 +33,10 @@ object FollowResult {
     __obj.asInstanceOf[FollowResult]
   }
   
-  @scala.inline
-  implicit class FollowResultMutableBuilder[Self <: FollowResult] (val x: Self) extends AnyVal {
+  extension [Self <: FollowResult](x: Self) {
     
-    @scala.inline
-    def setGet_item(value: () => FollowedItem): Self = StObject.set(x, "get_item", js.Any.fromFunction0(value))
+    inline def setGet_item(value: () => FollowedItem): Self = StObject.set(x, "get_item", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultType(value: () => FollowResultType): Self = StObject.set(x, "get_resultType", js.Any.fromFunction0(value))
+    inline def setGet_resultType(value: () => FollowResultType): Self = StObject.set(x, "get_resultType", js.Any.fromFunction0(value))
   }
 }

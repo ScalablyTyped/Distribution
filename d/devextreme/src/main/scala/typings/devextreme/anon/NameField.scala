@@ -13,25 +13,19 @@ trait NameField extends StObject {
 }
 object NameField {
   
-  @scala.inline
-  def apply(): NameField = {
+  inline def apply(): NameField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NameField]
   }
   
-  @scala.inline
-  implicit class NameFieldMutableBuilder[Self <: NameField] (val x: Self) extends AnyVal {
+  extension [Self <: NameField](x: Self) {
     
-    @scala.inline
-    def setCustomizeSeries(value: /* seriesName */ js.Any => PieChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
+    inline def setCustomizeSeries(value: /* seriesName */ js.Any => PieChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
+    inline def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
     
-    @scala.inline
-    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
+    inline def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
+    inline def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
   }
 }

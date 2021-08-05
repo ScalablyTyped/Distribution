@@ -27,20 +27,16 @@ object vueMod {
   }
   object Vue {
     
-    @scala.inline
-    def apply($v: ValidationPropertiesVueVa, delayTouch: Validation => Unit): Vue = {
+    inline def apply($v: ValidationPropertiesVueVa, delayTouch: Validation => Unit): Vue = {
       val __obj = js.Dynamic.literal($v = $v.asInstanceOf[js.Any], delayTouch = js.Any.fromFunction1(delayTouch))
       __obj.asInstanceOf[Vue]
     }
     
-    @scala.inline
-    implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+    extension [Self <: Vue](x: Self) {
       
-      @scala.inline
-      def set$v(value: ValidationPropertiesVueVa): Self = StObject.set(x, "$v", value.asInstanceOf[js.Any])
+      inline def set$v(value: ValidationPropertiesVueVa): Self = StObject.set(x, "$v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayTouch(value: Validation => Unit): Self = StObject.set(x, "delayTouch", js.Any.fromFunction1(value))
+      inline def setDelayTouch(value: Validation => Unit): Self = StObject.set(x, "delayTouch", js.Any.fromFunction1(value))
     }
   }
 }

@@ -13,19 +13,15 @@ trait DescribeHealthServiceStatusForOrganizationResponse extends StObject {
 }
 object DescribeHealthServiceStatusForOrganizationResponse {
   
-  @scala.inline
-  def apply(): DescribeHealthServiceStatusForOrganizationResponse = {
+  inline def apply(): DescribeHealthServiceStatusForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHealthServiceStatusForOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeHealthServiceStatusForOrganizationResponseMutableBuilder[Self <: DescribeHealthServiceStatusForOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHealthServiceStatusForOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setHealthServiceAccessStatusForOrganization(value: healthServiceAccessStatusForOrganization): Self = StObject.set(x, "healthServiceAccessStatusForOrganization", value.asInstanceOf[js.Any])
+    inline def setHealthServiceAccessStatusForOrganization(value: healthServiceAccessStatusForOrganization): Self = StObject.set(x, "healthServiceAccessStatusForOrganization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthServiceAccessStatusForOrganizationUndefined: Self = StObject.set(x, "healthServiceAccessStatusForOrganization", js.undefined)
+    inline def setHealthServiceAccessStatusForOrganizationUndefined: Self = StObject.set(x, "healthServiceAccessStatusForOrganization", js.undefined)
   }
 }

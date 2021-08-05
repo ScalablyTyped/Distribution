@@ -40,25 +40,19 @@ trait LayoutSizeMixins extends StObject {
 }
 object LayoutSizeMixins {
   
-  @scala.inline
-  def apply(): LayoutSizeMixins = {
+  inline def apply(): LayoutSizeMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutSizeMixins]
   }
   
-  @scala.inline
-  implicit class LayoutSizeMixinsMutableBuilder[Self <: LayoutSizeMixins] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutSizeMixins](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | container | Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | container | Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | container | Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | container | Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

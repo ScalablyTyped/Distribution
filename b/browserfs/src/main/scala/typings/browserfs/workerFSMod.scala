@@ -36,8 +36,7 @@ object workerFSMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Create(opts: WorkerFSOptions, cb: BFSCallback[WorkerFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: WorkerFSOptions, cb: BFSCallback[WorkerFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/WorkerFS", "default.Name")
     @js.native
@@ -50,11 +49,9 @@ object workerFSMod {
     /**
       * Attaches a listener to the remote worker for file system requests.
       */
-    @scala.inline
-    def attachRemoteListener(worker: Worker): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachRemoteListener")(worker.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def attachRemoteListener(worker: Worker): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachRemoteListener")(worker.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -69,19 +66,19 @@ object workerFSMod {
     
     /* private */ def _argRemote2Local(arg: js.Any): js.Any = js.native
     
-    var _callbackConverter: js.Any = js.native
+    /* private */ var _callbackConverter: js.Any = js.native
     
-    var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: js.Any = js.native
     
-    var _isReadOnly: js.Any = js.native
+    /* private */ var _isReadOnly: js.Any = js.native
     
     /* private */ def _rpc(methodName: js.Any, args: js.Any): js.Any = js.native
     
-    var _supportLinks: js.Any = js.native
+    /* private */ var _supportLinks: js.Any = js.native
     
-    var _supportProps: js.Any = js.native
+    /* private */ var _supportProps: js.Any = js.native
     
-    var _worker: js.Any = js.native
+    /* private */ var _worker: js.Any = js.native
     
     def chmod(p: String, isLchmod: Boolean, mode: Double, cb: js.Function): Unit = js.native
     /* InferMemberOverrides */
@@ -228,17 +225,14 @@ object workerFSMod {
   }
   object WorkerFSOptions {
     
-    @scala.inline
-    def apply(worker: Worker): WorkerFSOptions = {
+    inline def apply(worker: Worker): WorkerFSOptions = {
       val __obj = js.Dynamic.literal(worker = worker.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerFSOptions]
     }
     
-    @scala.inline
-    implicit class WorkerFSOptionsMutableBuilder[Self <: WorkerFSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerFSOptions](x: Self) {
       
-      @scala.inline
-      def setWorker(value: Worker): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: Worker): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     }
   }
 }

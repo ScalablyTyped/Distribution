@@ -24,8 +24,7 @@ trait InterfaceType
 }
 object InterfaceType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[IDLInterfaceMemberType],
     name: String,
@@ -37,25 +36,18 @@ object InterfaceType {
     __obj.asInstanceOf[InterfaceType]
   }
   
-  @scala.inline
-  implicit class InterfaceTypeMutableBuilder[Self <: InterfaceType] (val x: Self) extends AnyVal {
+  extension [Self <: InterfaceType](x: Self) {
     
-    @scala.inline
-    def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
+    inline def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritanceNull: Self = StObject.set(x, "inheritance", null)
+    inline def setInheritanceNull: Self = StObject.set(x, "inheritance", null)
     
-    @scala.inline
-    def setMembers(value: js.Array[IDLInterfaceMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[IDLInterfaceMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: IDLInterfaceMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: IDLInterfaceMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: interface): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: interface): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

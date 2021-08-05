@@ -25,43 +25,31 @@ trait Characteristic extends StObject {
 }
 object Characteristic {
   
-  @scala.inline
-  def apply(uuid: String): Characteristic = {
+  inline def apply(uuid: String): Characteristic = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Characteristic]
   }
   
-  @scala.inline
-  implicit class CharacteristicMutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
+  extension [Self <: Characteristic](x: Self) {
     
-    @scala.inline
-    def setDescriptors(value: js.Array[CharacteristicDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: js.Array[CharacteristicDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
+    inline def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
     
-    @scala.inline
-    def setDescriptorsVarargs(value: CharacteristicDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+    inline def setDescriptorsVarargs(value: CharacteristicDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setPermission(value: CharacteristicPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: CharacteristicPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setProperties(value: CharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: CharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

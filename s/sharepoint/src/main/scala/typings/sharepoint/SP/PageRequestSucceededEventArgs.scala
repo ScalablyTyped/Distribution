@@ -14,16 +14,13 @@ trait PageRequestSucceededEventArgs
 }
 object PageRequestSucceededEventArgs {
   
-  @scala.inline
-  def apply(Empty: EventArgs, get_executor: () => WebRequestExecutor): PageRequestSucceededEventArgs = {
+  inline def apply(Empty: EventArgs, get_executor: () => WebRequestExecutor): PageRequestSucceededEventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_executor = js.Any.fromFunction0(get_executor))
     __obj.asInstanceOf[PageRequestSucceededEventArgs]
   }
   
-  @scala.inline
-  implicit class PageRequestSucceededEventArgsMutableBuilder[Self <: PageRequestSucceededEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PageRequestSucceededEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
+    inline def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
   }
 }

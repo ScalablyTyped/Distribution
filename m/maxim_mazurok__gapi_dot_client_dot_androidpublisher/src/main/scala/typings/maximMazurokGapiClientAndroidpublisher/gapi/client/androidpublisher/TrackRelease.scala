@@ -35,61 +35,43 @@ trait TrackRelease extends StObject {
 }
 object TrackRelease {
   
-  @scala.inline
-  def apply(): TrackRelease = {
+  inline def apply(): TrackRelease = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackRelease]
   }
   
-  @scala.inline
-  implicit class TrackReleaseMutableBuilder[Self <: TrackRelease] (val x: Self) extends AnyVal {
+  extension [Self <: TrackRelease](x: Self) {
     
-    @scala.inline
-    def setCountryTargeting(value: CountryTargeting): Self = StObject.set(x, "countryTargeting", value.asInstanceOf[js.Any])
+    inline def setCountryTargeting(value: CountryTargeting): Self = StObject.set(x, "countryTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryTargetingUndefined: Self = StObject.set(x, "countryTargeting", js.undefined)
+    inline def setCountryTargetingUndefined: Self = StObject.set(x, "countryTargeting", js.undefined)
     
-    @scala.inline
-    def setInAppUpdatePriority(value: Double): Self = StObject.set(x, "inAppUpdatePriority", value.asInstanceOf[js.Any])
+    inline def setInAppUpdatePriority(value: Double): Self = StObject.set(x, "inAppUpdatePriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAppUpdatePriorityUndefined: Self = StObject.set(x, "inAppUpdatePriority", js.undefined)
+    inline def setInAppUpdatePriorityUndefined: Self = StObject.set(x, "inAppUpdatePriority", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReleaseNotes(value: js.Array[LocalizedText]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
+    inline def setReleaseNotes(value: js.Array[LocalizedText]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
+    inline def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
     
-    @scala.inline
-    def setReleaseNotesVarargs(value: LocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
+    inline def setReleaseNotesVarargs(value: LocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
+    inline def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
+    inline def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
     
-    @scala.inline
-    def setVersionCodes(value: js.Array[String]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
+    inline def setVersionCodes(value: js.Array[String]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
+    inline def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
     
-    @scala.inline
-    def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
+    inline def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
   }
 }

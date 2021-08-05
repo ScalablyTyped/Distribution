@@ -52,7 +52,7 @@ object computedvalueMod {
     /* CompleteClass */
     var diffValue: Double = js.native
     
-    @JSName("equals")
+    /* private */ @JSName("equals")
     var equals_FComputedValue: js.Any = js.native
     
     /* CompleteClass */
@@ -67,7 +67,7 @@ object computedvalueMod {
     
     var isTracing: TraceMode = js.native
     
-    var keepAlive: js.Any = js.native
+    /* private */ var keepAlive: js.Any = js.native
     
     /**
       * Id of the derivation *run* that last accessed this observable.
@@ -106,7 +106,7 @@ object computedvalueMod {
       */
     var requiresObservable: js.UndefOr[Boolean] = js.native
     
-    var requiresReaction: js.Any = js.native
+    /* private */ var requiresReaction: js.Any = js.native
     
     var runId: Double = js.native
     
@@ -121,19 +121,18 @@ object computedvalueMod {
     @JSName(js.Symbol.toPrimitive)
     var toPrimitive: js.Function0[T] = js.native
     
-    var trackAndCompute: js.Any = js.native
+    /* private */ var trackAndCompute: js.Any = js.native
     
     var triggeredBy: js.UndefOr[String] = js.native
     
     var unboundDepsCount: Double = js.native
     
-    var value: js.UndefOr[T | CaughtException] = js.native
+    /* protected */ var value: js.UndefOr[T | CaughtException] = js.native
     
     def warnAboutUntrackedRead(): Unit = js.native
   }
   
-  @scala.inline
-  def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputedValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean]
+  inline def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputedValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean]
   
   @js.native
   trait IComputedValue[T] extends StObject {
@@ -165,56 +164,40 @@ object computedvalueMod {
   }
   object IComputedValueOptions {
     
-    @scala.inline
-    def apply[T](): IComputedValueOptions[T] = {
+    inline def apply[T](): IComputedValueOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IComputedValueOptions[T]]
     }
     
-    @scala.inline
-    implicit class IComputedValueOptionsMutableBuilder[Self <: IComputedValueOptions[?], T] (val x: Self & IComputedValueOptions[T]) extends AnyVal {
+    extension [Self <: IComputedValueOptions[?], T](x: Self & IComputedValueOptions[T]) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: (T, T) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (T, T) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequiresReaction(value: Boolean): Self = StObject.set(x, "requiresReaction", value.asInstanceOf[js.Any])
+      inline def setRequiresReaction(value: Boolean): Self = StObject.set(x, "requiresReaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresReactionUndefined: Self = StObject.set(x, "requiresReaction", js.undefined)
+      inline def setRequiresReactionUndefined: Self = StObject.set(x, "requiresReaction", js.undefined)
       
-      @scala.inline
-      def setSet(value: /* value */ T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: /* value */ T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     }
   }
 }

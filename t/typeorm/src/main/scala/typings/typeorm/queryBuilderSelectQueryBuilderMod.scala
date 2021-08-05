@@ -129,7 +129,7 @@ object queryBuilderSelectQueryBuilderMod {
       */
     def cache(milliseconds: Double): this.type = js.native
     
-    var computeCountExpression: js.Any = js.native
+    /* private */ var computeCountExpression: js.Any = js.native
     
     /**
       * Creates "GROUP BY" part of SQL query.

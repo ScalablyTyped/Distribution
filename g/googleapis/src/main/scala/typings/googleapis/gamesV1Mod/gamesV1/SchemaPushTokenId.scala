@@ -23,25 +23,19 @@ trait SchemaPushTokenId extends StObject {
 }
 object SchemaPushTokenId {
   
-  @scala.inline
-  def apply(): SchemaPushTokenId = {
+  inline def apply(): SchemaPushTokenId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushTokenId]
   }
   
-  @scala.inline
-  implicit class SchemaPushTokenIdMutableBuilder[Self <: SchemaPushTokenId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPushTokenId](x: Self) {
     
-    @scala.inline
-    def setIos(value: Apnsdevicetoken): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: Apnsdevicetoken): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

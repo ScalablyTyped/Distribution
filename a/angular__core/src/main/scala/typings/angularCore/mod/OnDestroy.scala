@@ -14,16 +14,13 @@ trait OnDestroy extends StObject {
 }
 object OnDestroy {
   
-  @scala.inline
-  def apply(ngOnDestroy: () => Unit): OnDestroy = {
+  inline def apply(ngOnDestroy: () => Unit): OnDestroy = {
     val __obj = js.Dynamic.literal(ngOnDestroy = js.Any.fromFunction0(ngOnDestroy))
     __obj.asInstanceOf[OnDestroy]
   }
   
-  @scala.inline
-  implicit class OnDestroyMutableBuilder[Self <: OnDestroy] (val x: Self) extends AnyVal {
+  extension [Self <: OnDestroy](x: Self) {
     
-    @scala.inline
-    def setNgOnDestroy(value: () => Unit): Self = StObject.set(x, "ngOnDestroy", js.Any.fromFunction0(value))
+    inline def setNgOnDestroy(value: () => Unit): Self = StObject.set(x, "ngOnDestroy", js.Any.fromFunction0(value))
   }
 }

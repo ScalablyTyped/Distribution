@@ -24,25 +24,19 @@ trait CopyToRequest extends StObject {
 }
 object CopyToRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId, targetNodeId: NodeId): CopyToRequest = {
+  inline def apply(nodeId: NodeId, targetNodeId: NodeId): CopyToRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], targetNodeId = targetNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyToRequest]
   }
   
-  @scala.inline
-  implicit class CopyToRequestMutableBuilder[Self <: CopyToRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyToRequest](x: Self) {
     
-    @scala.inline
-    def setInsertBeforeNodeId(value: NodeId): Self = StObject.set(x, "insertBeforeNodeId", value.asInstanceOf[js.Any])
+    inline def setInsertBeforeNodeId(value: NodeId): Self = StObject.set(x, "insertBeforeNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBeforeNodeIdUndefined: Self = StObject.set(x, "insertBeforeNodeId", js.undefined)
+    inline def setInsertBeforeNodeIdUndefined: Self = StObject.set(x, "insertBeforeNodeId", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNodeId(value: NodeId): Self = StObject.set(x, "targetNodeId", value.asInstanceOf[js.Any])
+    inline def setTargetNodeId(value: NodeId): Self = StObject.set(x, "targetNodeId", value.asInstanceOf[js.Any])
   }
 }

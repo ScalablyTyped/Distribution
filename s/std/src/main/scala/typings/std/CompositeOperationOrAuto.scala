@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompositeOperationOrAuto extends StObject
 object CompositeOperationOrAuto {
   
-  @scala.inline
-  def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
+  inline def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
   
-  @scala.inline
-  def add: typings.std.stdStrings.add = "add".asInstanceOf[typings.std.stdStrings.add]
+  inline def add: typings.std.stdStrings.add = "add".asInstanceOf[typings.std.stdStrings.add]
   
-  @scala.inline
-  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
+  inline def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
   
-  @scala.inline
-  def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
+  inline def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
 }

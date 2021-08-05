@@ -14,25 +14,19 @@ trait StaticLifecycle[P, S] extends StObject {
 }
 object StaticLifecycle {
   
-  @scala.inline
-  def apply[P, S](): StaticLifecycle[P, S] = {
+  inline def apply[P, S](): StaticLifecycle[P, S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticLifecycle[P, S]]
   }
   
-  @scala.inline
-  implicit class StaticLifecycleMutableBuilder[Self <: StaticLifecycle[?, ?], P, S] (val x: Self & (StaticLifecycle[P, S])) extends AnyVal {
+  extension [Self <: StaticLifecycle[?, ?], P, S](x: Self & (StaticLifecycle[P, S])) {
     
-    @scala.inline
-    def setGetDerivedStateFromError(value: /* error */ js.Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
+    inline def setGetDerivedStateFromError(value: /* error */ js.Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDerivedStateFromErrorUndefined: Self = StObject.set(x, "getDerivedStateFromError", js.undefined)
+    inline def setGetDerivedStateFromErrorUndefined: Self = StObject.set(x, "getDerivedStateFromError", js.undefined)
     
-    @scala.inline
-    def setGetDerivedStateFromProps(value: (P, S) => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
+    inline def setGetDerivedStateFromProps(value: (P, S) => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDerivedStateFromPropsUndefined: Self = StObject.set(x, "getDerivedStateFromProps", js.undefined)
+    inline def setGetDerivedStateFromPropsUndefined: Self = StObject.set(x, "getDerivedStateFromProps", js.undefined)
   }
 }

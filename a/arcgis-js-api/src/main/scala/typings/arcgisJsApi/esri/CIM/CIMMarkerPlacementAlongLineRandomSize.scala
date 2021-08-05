@@ -26,31 +26,24 @@ trait CIMMarkerPlacementAlongLineRandomSize
 }
 object CIMMarkerPlacementAlongLineRandomSize {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementAlongLineRandomSize = {
+  inline def apply(): CIMMarkerPlacementAlongLineRandomSize = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineRandomSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineRandomSize]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementAlongLineRandomSizeMutableBuilder[Self <: CIMMarkerPlacementAlongLineRandomSize] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementAlongLineRandomSize](x: Self) {
     
-    @scala.inline
-    def setRandomization(
+    inline def setRandomization(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementRandomlyAlongLineRandomization * / any */ String
     ): Self = StObject.set(x, "randomization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomizationUndefined: Self = StObject.set(x, "randomization", js.undefined)
+    inline def setRandomizationUndefined: Self = StObject.set(x, "randomization", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

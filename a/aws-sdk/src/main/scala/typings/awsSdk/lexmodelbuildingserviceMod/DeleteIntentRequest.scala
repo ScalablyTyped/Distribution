@@ -13,16 +13,13 @@ trait DeleteIntentRequest extends StObject {
 }
 object DeleteIntentRequest {
   
-  @scala.inline
-  def apply(name: IntentName): DeleteIntentRequest = {
+  inline def apply(name: IntentName): DeleteIntentRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIntentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteIntentRequestMutableBuilder[Self <: DeleteIntentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIntentRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -40,8 +40,7 @@ trait XDataInterpreter
 }
 object XDataInterpreter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     interpretDataSource: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData,
     isDataCompatible: InterpretedData => Boolean,
@@ -54,19 +53,14 @@ object XDataInterpreter {
     __obj.asInstanceOf[XDataInterpreter]
   }
   
-  @scala.inline
-  implicit class XDataInterpreterMutableBuilder[Self <: XDataInterpreter] (val x: Self) extends AnyVal {
+  extension [Self <: XDataInterpreter](x: Self) {
     
-    @scala.inline
-    def setInterpretDataSource(value: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData): Self = StObject.set(x, "interpretDataSource", js.Any.fromFunction3(value))
+    inline def setInterpretDataSource(value: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData): Self = StObject.set(x, "interpretDataSource", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsDataCompatible(value: InterpretedData => Boolean): Self = StObject.set(x, "isDataCompatible", js.Any.fromFunction1(value))
+    inline def setIsDataCompatible(value: InterpretedData => Boolean): Self = StObject.set(x, "isDataCompatible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMergeInterpretedData(value: InterpretedData => XDataSource): Self = StObject.set(x, "mergeInterpretedData", js.Any.fromFunction1(value))
+    inline def setMergeInterpretedData(value: InterpretedData => XDataSource): Self = StObject.set(x, "mergeInterpretedData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReinterpretDataSeries(value: InterpretedData => InterpretedData): Self = StObject.set(x, "reinterpretDataSeries", js.Any.fromFunction1(value))
+    inline def setReinterpretDataSeries(value: InterpretedData => InterpretedData): Self = StObject.set(x, "reinterpretDataSeries", js.Any.fromFunction1(value))
   }
 }

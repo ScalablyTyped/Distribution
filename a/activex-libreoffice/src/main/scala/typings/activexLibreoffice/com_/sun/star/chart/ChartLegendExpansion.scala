@@ -19,12 +19,10 @@ trait ChartLegendExpansion extends StObject
 object ChartLegendExpansion {
   
   /** The legend entries are arranged in a way that the aspect ratio of the resulting legend is as near to 1 as possible. */
-  @scala.inline
-  def BALANCED: `2` = 2.asInstanceOf[`2`]
+  inline def BALANCED: `2` = 2.asInstanceOf[`2`]
   
   /** The size of the legend is given explicitly */
-  @scala.inline
-  def CUSTOM: `3` = 3.asInstanceOf[`3`]
+  inline def CUSTOM: `3` = 3.asInstanceOf[`3`]
   
   /**
     * The legend entries are stacked in a single column if possible. If not enough space is available further columns are added. <p>This is usually used for
@@ -32,8 +30,7 @@ object ChartLegendExpansion {
     *
     * left or right hand side of the page.</p>
     */
-  @scala.inline
-  def HIGH: `1` = 1.asInstanceOf[`1`]
+  inline def HIGH: `1` = 1.asInstanceOf[`1`]
   
   /**
     * The legend entries are arranged in a single row if possible. If not enough space is available further rows are added. <p>This is usually used for
@@ -41,6 +38,5 @@ object ChartLegendExpansion {
     *
     * top or bottom of the page.</p>
     */
-  @scala.inline
-  def WIDE: `0` = 0.asInstanceOf[`0`]
+  inline def WIDE: `0` = 0.asInstanceOf[`0`]
 }

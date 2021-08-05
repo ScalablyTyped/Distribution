@@ -13,19 +13,15 @@ trait RegisterVolumeResult extends StObject {
 }
 object RegisterVolumeResult {
   
-  @scala.inline
-  def apply(): RegisterVolumeResult = {
+  inline def apply(): RegisterVolumeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterVolumeResult]
   }
   
-  @scala.inline
-  implicit class RegisterVolumeResultMutableBuilder[Self <: RegisterVolumeResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterVolumeResult](x: Self) {
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
   }
 }

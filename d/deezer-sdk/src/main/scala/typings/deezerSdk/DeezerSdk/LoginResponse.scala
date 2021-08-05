@@ -20,22 +20,17 @@ trait LoginResponse extends StObject {
 }
 object LoginResponse {
   
-  @scala.inline
-  def apply(authResponse: AccessToken_, status: connected | not_authorized, userID: String): LoginResponse = {
+  inline def apply(authResponse: AccessToken_, status: connected | not_authorized, userID: String): LoginResponse = {
     val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginResponse]
   }
   
-  @scala.inline
-  implicit class LoginResponseMutableBuilder[Self <: LoginResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LoginResponse](x: Self) {
     
-    @scala.inline
-    def setAuthResponse(value: AccessToken_): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
+    inline def setAuthResponse(value: AccessToken_): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: connected | not_authorized): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: connected | not_authorized): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

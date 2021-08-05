@@ -20,52 +20,37 @@ trait IOption extends StObject {
 }
 object IOption {
   
-  @scala.inline
-  def apply(): IOption = {
+  inline def apply(): IOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOption]
   }
   
-  @scala.inline
-  implicit class IOptionMutableBuilder[Self <: IOption] (val x: Self) extends AnyVal {
+  extension [Self <: IOption](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDesiredResponseDataType(value: DataType): Self = StObject.set(x, "desiredResponseDataType", value.asInstanceOf[js.Any])
+    inline def setDesiredResponseDataType(value: DataType): Self = StObject.set(x, "desiredResponseDataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredResponseDataTypeUndefined: Self = StObject.set(x, "desiredResponseDataType", js.undefined)
+    inline def setDesiredResponseDataTypeUndefined: Self = StObject.set(x, "desiredResponseDataType", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[IFileData]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[IFileData]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setTimeoutInSeconds(value: Double): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: Double): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

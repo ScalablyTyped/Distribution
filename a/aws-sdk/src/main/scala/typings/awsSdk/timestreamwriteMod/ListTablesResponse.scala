@@ -18,28 +18,21 @@ trait ListTablesResponse extends StObject {
 }
 object ListTablesResponse {
   
-  @scala.inline
-  def apply(): ListTablesResponse = {
+  inline def apply(): ListTablesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTablesResponse]
   }
   
-  @scala.inline
-  implicit class ListTablesResponseMutableBuilder[Self <: ListTablesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTablesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTables(value: TableList): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: TableList): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "Tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "Tables", js.undefined)
     
-    @scala.inline
-    def setTablesVarargs(value: Table*): Self = StObject.set(x, "Tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: Table*): Self = StObject.set(x, "Tables", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait AttachToTargetResponse extends StObject {
 }
 object AttachToTargetResponse {
   
-  @scala.inline
-  def apply(sessionId: SessionID): AttachToTargetResponse = {
+  inline def apply(sessionId: SessionID): AttachToTargetResponse = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachToTargetResponse]
   }
   
-  @scala.inline
-  implicit class AttachToTargetResponseMutableBuilder[Self <: AttachToTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AttachToTargetResponse](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

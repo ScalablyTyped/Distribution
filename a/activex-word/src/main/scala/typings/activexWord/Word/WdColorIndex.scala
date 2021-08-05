@@ -45,60 +45,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdColorIndex extends StObject
 object WdColorIndex {
   
-  @scala.inline
-  def wdAuto: `0` = 0.asInstanceOf[`0`]
+  inline def wdAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdBlack: `1` = 1.asInstanceOf[`1`]
+  inline def wdBlack: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdBlue: `2` = 2.asInstanceOf[`2`]
+  inline def wdBlue: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdBrightGreen: `4` = 4.asInstanceOf[`4`]
+  inline def wdBrightGreen: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdByAuthor: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdByAuthor: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def wdDarkBlue: `9` = 9.asInstanceOf[`9`]
+  inline def wdDarkBlue: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdDarkRed: `13` = 13.asInstanceOf[`13`]
+  inline def wdDarkRed: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def wdDarkYellow: `14` = 14.asInstanceOf[`14`]
+  inline def wdDarkYellow: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def wdGray25: `16` = 16.asInstanceOf[`16`]
+  inline def wdGray25: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdGray50: `15` = 15.asInstanceOf[`15`]
+  inline def wdGray50: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def wdGreen: `11` = 11.asInstanceOf[`11`]
+  inline def wdGreen: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def wdNoHighlight: `0` = 0.asInstanceOf[`0`]
+  inline def wdNoHighlight: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdPink: `5` = 5.asInstanceOf[`5`]
+  inline def wdPink: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdRed: `6` = 6.asInstanceOf[`6`]
+  inline def wdRed: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdTeal: `10` = 10.asInstanceOf[`10`]
+  inline def wdTeal: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def wdTurquoise: `3` = 3.asInstanceOf[`3`]
+  inline def wdTurquoise: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdViolet: `12` = 12.asInstanceOf[`12`]
+  inline def wdViolet: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def wdWhite: `8` = 8.asInstanceOf[`8`]
+  inline def wdWhite: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdYellow: `7` = 7.asInstanceOf[`7`]
+  inline def wdYellow: `7` = 7.asInstanceOf[`7`]
 }

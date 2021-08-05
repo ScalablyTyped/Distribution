@@ -10,17 +10,14 @@ trait RegisterData extends StObject {
 }
 object RegisterData {
   
-  @scala.inline
-  def apply(`type`: String): RegisterData = {
+  inline def apply(`type`: String): RegisterData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterData]
   }
   
-  @scala.inline
-  implicit class RegisterDataMutableBuilder[Self <: RegisterData] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterData](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

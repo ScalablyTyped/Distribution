@@ -21,17 +21,14 @@ object tablelvl2ContextMod extends Shortcut {
   }
   object Tablelvl2ContextProps {
     
-    @scala.inline
-    def apply(variant: head | body | footer): Tablelvl2ContextProps = {
+    inline def apply(variant: head | body | footer): Tablelvl2ContextProps = {
       val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tablelvl2ContextProps]
     }
     
-    @scala.inline
-    implicit class Tablelvl2ContextPropsMutableBuilder[Self <: Tablelvl2ContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: Tablelvl2ContextProps](x: Self) {
       
-      @scala.inline
-      def setVariant(value: head | body | footer): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: head | body | footer): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }
   }
   

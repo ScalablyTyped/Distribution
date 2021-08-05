@@ -19,23 +19,18 @@ trait SFCTemplateBlock
 }
 object SFCTemplateBlock {
   
-  @scala.inline
-  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCTemplateBlock = {
+  inline def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCTemplateBlock = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("template")
     __obj.asInstanceOf[SFCTemplateBlock]
   }
   
-  @scala.inline
-  implicit class SFCTemplateBlockMutableBuilder[Self <: SFCTemplateBlock] (val x: Self) extends AnyVal {
+  extension [Self <: SFCTemplateBlock](x: Self) {
     
-    @scala.inline
-    def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
+    inline def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
+    inline def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
     
-    @scala.inline
-    def setType(value: template): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: template): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

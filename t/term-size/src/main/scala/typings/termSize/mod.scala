@@ -15,8 +15,7 @@ object mod {
   //=> {columns: 143, rows: 24}
   ```
   */
-  @scala.inline
-  def apply(): Size = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Size]
+  inline def apply(): Size = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Size]
   
   @JSImport("term-size", JSImport.Namespace)
   @js.native
@@ -30,20 +29,16 @@ object mod {
   }
   object Size {
     
-    @scala.inline
-    def apply(columns: Double, rows: Double): Size = {
+    inline def apply(columns: Double, rows: Double): Size = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
   }
 }

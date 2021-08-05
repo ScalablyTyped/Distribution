@@ -17,22 +17,17 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(progress: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): Progress = {
+  inline def apply(progress: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): Progress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToSend = totalBytesExpectedToSend.asInstanceOf[js.Any], totalBytesSent = totalBytesSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
+    inline def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
+    inline def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
   }
 }

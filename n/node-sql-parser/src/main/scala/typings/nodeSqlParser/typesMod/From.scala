@@ -14,28 +14,21 @@ trait From extends StObject {
 }
 object From {
   
-  @scala.inline
-  def apply(table: String): From = {
+  inline def apply(table: String): From = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], as = null, db = null)
     __obj.asInstanceOf[From]
   }
   
-  @scala.inline
-  implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+  extension [Self <: From](x: Self) {
     
-    @scala.inline
-    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsNull: Self = StObject.set(x, "as", null)
+    inline def setAsNull: Self = StObject.set(x, "as", null)
     
-    @scala.inline
-    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbNull: Self = StObject.set(x, "db", null)
+    inline def setDbNull: Self = StObject.set(x, "db", null)
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

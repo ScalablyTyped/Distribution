@@ -11,16 +11,13 @@ trait EngineIPlaybackEngine extends StObject {
 }
 object EngineIPlaybackEngine {
   
-  @scala.inline
-  def apply(engine: IPlaybackEngine): EngineIPlaybackEngine = {
+  inline def apply(engine: IPlaybackEngine): EngineIPlaybackEngine = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.asInstanceOf[EngineIPlaybackEngine]
   }
   
-  @scala.inline
-  implicit class EngineIPlaybackEngineMutableBuilder[Self <: EngineIPlaybackEngine] (val x: Self) extends AnyVal {
+  extension [Self <: EngineIPlaybackEngine](x: Self) {
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
   }
 }

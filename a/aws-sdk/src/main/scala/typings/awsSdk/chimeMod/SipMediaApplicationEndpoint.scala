@@ -13,19 +13,15 @@ trait SipMediaApplicationEndpoint extends StObject {
 }
 object SipMediaApplicationEndpoint {
   
-  @scala.inline
-  def apply(): SipMediaApplicationEndpoint = {
+  inline def apply(): SipMediaApplicationEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SipMediaApplicationEndpoint]
   }
   
-  @scala.inline
-  implicit class SipMediaApplicationEndpointMutableBuilder[Self <: SipMediaApplicationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: SipMediaApplicationEndpoint](x: Self) {
     
-    @scala.inline
-    def setLambdaArn(value: FunctionArn): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
+    inline def setLambdaArn(value: FunctionArn): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaArnUndefined: Self = StObject.set(x, "LambdaArn", js.undefined)
+    inline def setLambdaArnUndefined: Self = StObject.set(x, "LambdaArn", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait UploadRef extends StObject {
 }
 object UploadRef {
   
-  @scala.inline
-  def apply(): UploadRef = {
+  inline def apply(): UploadRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadRef]
   }
   
-  @scala.inline
-  implicit class UploadRefMutableBuilder[Self <: UploadRef] (val x: Self) extends AnyVal {
+  extension [Self <: UploadRef](x: Self) {
     
-    @scala.inline
-    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+    inline def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
+    inline def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

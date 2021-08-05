@@ -14,20 +14,16 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(delay: Double, initialDelay: Double): Delay = {
+    inline def apply(delay: Double, initialDelay: Double): Delay = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], initialDelay = initialDelay.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+      inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
     }
   }
 }

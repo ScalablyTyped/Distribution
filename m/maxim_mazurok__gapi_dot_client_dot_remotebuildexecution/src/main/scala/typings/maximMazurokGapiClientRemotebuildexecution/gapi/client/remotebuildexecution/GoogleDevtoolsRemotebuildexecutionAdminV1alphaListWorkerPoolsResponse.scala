@@ -11,22 +11,17 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse exte
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponseMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse](x: Self) {
     
-    @scala.inline
-    def setWorkerPools(value: js.Array[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
+    inline def setWorkerPools(value: js.Array[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
+    inline def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
     
-    @scala.inline
-    def setWorkerPoolsVarargs(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
+    inline def setWorkerPoolsVarargs(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
   }
 }

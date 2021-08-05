@@ -289,7 +289,7 @@ trait ContactItem extends StObject {
   
   var OtherTelephoneNumber: String = js.native
   
-  @JSName("Outlook.ContactItem_typekey")
+  /* private */ @JSName("Outlook.ContactItem_typekey")
   var OutlookDotContactItem_typekey: ContactItem = js.native
   
   val OutlookInternalVersion: Double = js.native

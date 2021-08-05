@@ -17,34 +17,25 @@ trait CastOptions extends StObject {
 }
 object CastOptions {
   
-  @scala.inline
-  def apply(autoJoinPolicy: AutoJoinPolicy): CastOptions = {
+  inline def apply(autoJoinPolicy: AutoJoinPolicy): CastOptions = {
     val __obj = js.Dynamic.literal(autoJoinPolicy = autoJoinPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastOptions]
   }
   
-  @scala.inline
-  implicit class CastOptionsMutableBuilder[Self <: CastOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CastOptions](x: Self) {
     
-    @scala.inline
-    def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setReceiverApplicationId(value: String): Self = StObject.set(x, "receiverApplicationId", value.asInstanceOf[js.Any])
+    inline def setReceiverApplicationId(value: String): Self = StObject.set(x, "receiverApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiverApplicationIdUndefined: Self = StObject.set(x, "receiverApplicationId", js.undefined)
+    inline def setReceiverApplicationIdUndefined: Self = StObject.set(x, "receiverApplicationId", js.undefined)
     
-    @scala.inline
-    def setResumeSavedSession(value: Boolean): Self = StObject.set(x, "resumeSavedSession", value.asInstanceOf[js.Any])
+    inline def setResumeSavedSession(value: Boolean): Self = StObject.set(x, "resumeSavedSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeSavedSessionUndefined: Self = StObject.set(x, "resumeSavedSession", js.undefined)
+    inline def setResumeSavedSessionUndefined: Self = StObject.set(x, "resumeSavedSession", js.undefined)
   }
 }

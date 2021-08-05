@@ -13,19 +13,15 @@ trait DatabaseAccountRequestOptions
 }
 object DatabaseAccountRequestOptions {
   
-  @scala.inline
-  def apply(): DatabaseAccountRequestOptions = {
+  inline def apply(): DatabaseAccountRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatabaseAccountRequestOptions]
   }
   
-  @scala.inline
-  implicit class DatabaseAccountRequestOptionsMutableBuilder[Self <: DatabaseAccountRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseAccountRequestOptions](x: Self) {
     
-    @scala.inline
-    def setUrlConnection(value: String): Self = StObject.set(x, "urlConnection", value.asInstanceOf[js.Any])
+    inline def setUrlConnection(value: String): Self = StObject.set(x, "urlConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlConnectionUndefined: Self = StObject.set(x, "urlConnection", js.undefined)
+    inline def setUrlConnectionUndefined: Self = StObject.set(x, "urlConnection", js.undefined)
   }
 }

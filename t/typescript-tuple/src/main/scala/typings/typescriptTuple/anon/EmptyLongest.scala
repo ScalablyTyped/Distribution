@@ -12,8 +12,7 @@ trait EmptyLongest[Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */] extend
 }
 object EmptyLongest {
   
-  @scala.inline
-  def apply[Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */](
+  inline def apply[Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */](
     empty: Longest,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, any, [Longest, any]>[1] */ js.Any
   ): EmptyLongest[Longest, TupleSet] = {
@@ -21,14 +20,11 @@ object EmptyLongest {
     __obj.asInstanceOf[EmptyLongest[Longest, TupleSet]]
   }
   
-  @scala.inline
-  implicit class EmptyLongestMutableBuilder[Self <: EmptyLongest[?, ?], Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */] (val x: Self & (EmptyLongest[Longest, TupleSet])) extends AnyVal {
+  extension [Self <: EmptyLongest[?, ?], Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */](x: Self & (EmptyLongest[Longest, TupleSet])) {
     
-    @scala.inline
-    def setEmpty(value: Longest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Longest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmpty(
+    inline def setNonEmpty(
       value: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, any, [Longest, any]>[1] */ js.Any
     ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }

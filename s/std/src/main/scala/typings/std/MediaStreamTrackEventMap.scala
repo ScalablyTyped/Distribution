@@ -16,25 +16,19 @@ trait MediaStreamTrackEventMap extends StObject {
 }
 object MediaStreamTrackEventMap {
   
-  @scala.inline
-  def apply(ended: Event, isolationchange: Event, mute: Event, unmute: Event): MediaStreamTrackEventMap = {
+  inline def apply(ended: Event, isolationchange: Event, mute: Event, unmute: Event): MediaStreamTrackEventMap = {
     val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any], isolationchange = isolationchange.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], unmute = unmute.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackEventMap]
   }
   
-  @scala.inline
-  implicit class MediaStreamTrackEventMapMutableBuilder[Self <: MediaStreamTrackEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamTrackEventMap](x: Self) {
     
-    @scala.inline
-    def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolationchange(value: Event): Self = StObject.set(x, "isolationchange", value.asInstanceOf[js.Any])
+    inline def setIsolationchange(value: Event): Self = StObject.set(x, "isolationchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMute(value: Event): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+    inline def setMute(value: Event): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmute(value: Event): Self = StObject.set(x, "unmute", value.asInstanceOf[js.Any])
+    inline def setUnmute(value: Event): Self = StObject.set(x, "unmute", value.asInstanceOf[js.Any])
   }
 }

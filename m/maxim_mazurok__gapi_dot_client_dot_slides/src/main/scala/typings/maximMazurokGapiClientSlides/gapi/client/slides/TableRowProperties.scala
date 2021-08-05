@@ -11,19 +11,15 @@ trait TableRowProperties extends StObject {
 }
 object TableRowProperties {
   
-  @scala.inline
-  def apply(): TableRowProperties = {
+  inline def apply(): TableRowProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRowProperties]
   }
   
-  @scala.inline
-  implicit class TableRowPropertiesMutableBuilder[Self <: TableRowProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TableRowProperties](x: Self) {
     
-    @scala.inline
-    def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+    inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
+    inline def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
   }
 }

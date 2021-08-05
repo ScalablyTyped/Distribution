@@ -10,19 +10,15 @@ trait IsMobilePhoneOptions extends StObject {
 }
 object IsMobilePhoneOptions {
   
-  @scala.inline
-  def apply(): IsMobilePhoneOptions = {
+  inline def apply(): IsMobilePhoneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsMobilePhoneOptions]
   }
   
-  @scala.inline
-  implicit class IsMobilePhoneOptionsMutableBuilder[Self <: IsMobilePhoneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsMobilePhoneOptions](x: Self) {
     
-    @scala.inline
-    def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+    inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+    inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
   }
 }

@@ -17,13 +17,10 @@ object SizeType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FIX: `1` = 1.asInstanceOf[`1`]
+    inline def FIX: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def MIN: `2` = 2.asInstanceOf[`2`]
+    inline def MIN: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def VARIABLE: `0` = 0.asInstanceOf[`0`]
+    inline def VARIABLE: `0` = 0.asInstanceOf[`0`]
   }
 }

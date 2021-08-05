@@ -35,22 +35,17 @@ trait PaymentDataError extends StObject {
 }
 object PaymentDataError {
   
-  @scala.inline
-  def apply(intent: CallbackIntent, message: String, reason: ErrorReason): PaymentDataError = {
+  inline def apply(intent: CallbackIntent, message: String, reason: ErrorReason): PaymentDataError = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDataError]
   }
   
-  @scala.inline
-  implicit class PaymentDataErrorMutableBuilder[Self <: PaymentDataError] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentDataError](x: Self) {
     
-    @scala.inline
-    def setIntent(value: CallbackIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: CallbackIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: ErrorReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: ErrorReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

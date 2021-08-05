@@ -11,16 +11,13 @@ trait FieldStatsResponseIndex extends StObject {
 }
 object FieldStatsResponseIndex {
   
-  @scala.inline
-  def apply(fields: StringDictionary[FieldStatsResponseField]): FieldStatsResponseIndex = {
+  inline def apply(fields: StringDictionary[FieldStatsResponseField]): FieldStatsResponseIndex = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldStatsResponseIndex]
   }
   
-  @scala.inline
-  implicit class FieldStatsResponseIndexMutableBuilder[Self <: FieldStatsResponseIndex] (val x: Self) extends AnyVal {
+  extension [Self <: FieldStatsResponseIndex](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[FieldStatsResponseField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[FieldStatsResponseField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

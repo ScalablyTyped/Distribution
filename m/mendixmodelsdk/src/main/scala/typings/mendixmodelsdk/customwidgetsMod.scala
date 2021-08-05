@@ -128,8 +128,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def create(model: IModel): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -140,8 +139,7 @@ object customwidgetsMod {
         *  7.7.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInBuildingBlockUnderWidget(container: BuildingBlock): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInBuildingBlockUnderWidget(container: BuildingBlock): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -152,8 +150,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInBuildingBlockUnderWidgets(container: BuildingBlock): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -164,8 +161,7 @@ object customwidgetsMod {
         *  6.7.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderFooterWidget(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInDataViewUnderFooterWidget(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -176,8 +172,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderFooterWidgets(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInDataViewUnderFooterWidgets(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -188,8 +183,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderWidget(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInDataViewUnderWidget(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -200,8 +194,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderWidgets(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInDataViewUnderWidgets(container: DataView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -212,8 +205,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInDivContainerUnderWidget(container: DivContainer): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInDivContainerUnderWidget(container: DivContainer): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -224,8 +216,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInDivContainerUnderWidgets(container: DivContainer): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInDivContainerUnderWidgets(container: DivContainer): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -236,8 +227,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInGroupBoxUnderWidget(container: GroupBox): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInGroupBoxUnderWidget(container: GroupBox): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -248,8 +238,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInGroupBoxUnderWidgets(container: GroupBox): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInGroupBoxUnderWidgets(container: GroupBox): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -260,8 +249,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInHeaderUnderLeftWidget(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInHeaderUnderLeftWidget(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -272,8 +260,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInHeaderUnderLeftWidgets(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInHeaderUnderLeftWidgets(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -284,8 +271,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInHeaderUnderRightWidget(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInHeaderUnderRightWidget(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -296,8 +282,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInHeaderUnderRightWidgets(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInHeaderUnderRightWidgets(container: Header): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -308,8 +293,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -320,8 +304,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -332,8 +315,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -344,8 +326,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -356,8 +337,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutUnderWidget(container: Layout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInLayoutUnderWidget(container: Layout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -368,8 +348,7 @@ object customwidgetsMod {
         *  7.15.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutUnderWidgets(container: Layout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInLayoutUnderWidgets(container: Layout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -380,8 +359,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInListViewTemplateUnderWidget(container: ListViewTemplate): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -392,8 +370,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInListViewTemplateUnderWidgets(container: ListViewTemplate): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -404,8 +381,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInListViewUnderWidget(container: ListView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInListViewUnderWidget(container: ListView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -416,8 +392,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInListViewUnderWidgets(container: ListView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInListViewUnderWidgets(container: ListView): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -428,8 +403,7 @@ object customwidgetsMod {
         *  7.1.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -440,8 +414,7 @@ object customwidgetsMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -452,8 +425,7 @@ object customwidgetsMod {
         *  8.5.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -464,8 +436,7 @@ object customwidgetsMod {
         *  8.0.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -476,8 +447,7 @@ object customwidgetsMod {
         *  7.22.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -488,8 +458,7 @@ object customwidgetsMod {
         *  7.21.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutUnderWidgets(container: NativeLayout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNativeLayoutUnderWidgets(container: NativeLayout): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -500,8 +469,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInNavigationListItemUnderWidget(container: NavigationListItem): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNavigationListItemUnderWidget(container: NavigationListItem): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -512,8 +480,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInNavigationListItemUnderWidgets(container: NavigationListItem): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -524,8 +491,7 @@ object customwidgetsMod {
         *  6.0.0 to 6.9.0
         */
       /* static member */
-      @scala.inline
-      def createInReportPaneUnderParameterWidget(container: ReportPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInReportPaneUnderParameterWidget(container: ReportPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -536,8 +502,7 @@ object customwidgetsMod {
         *  6.0.0 to 6.9.0
         */
       /* static member */
-      @scala.inline
-      def createInReportPaneUnderReportWidget(container: ReportPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInReportPaneUnderReportWidget(container: ReportPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -548,8 +513,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -560,8 +524,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -572,8 +535,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInSnippetUnderWidget(container: Snippet): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInSnippetUnderWidget(container: Snippet): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -584,8 +546,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInSnippetUnderWidgets(container: Snippet): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInSnippetUnderWidgets(container: Snippet): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -596,8 +557,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInSplitPaneUnderFirstWidget(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInSplitPaneUnderFirstWidget(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -608,8 +568,7 @@ object customwidgetsMod {
         *  7.15.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInSplitPaneUnderFirstWidgets(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -620,8 +579,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInSplitPaneUnderSecondWidget(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInSplitPaneUnderSecondWidget(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -632,8 +590,7 @@ object customwidgetsMod {
         *  7.15.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInSplitPaneUnderSecondWidgets(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -644,8 +601,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInTabPageUnderWidget(container: TabPage): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInTabPageUnderWidget(container: TabPage): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -656,8 +612,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInTabPageUnderWidgets(container: TabPage): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInTabPageUnderWidgets(container: TabPage): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -668,8 +623,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInTableCellUnderWidget(container: TableCell): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInTableCellUnderWidget(container: TableCell): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -680,8 +634,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInTableCellUnderWidgets(container: TableCell): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInTableCellUnderWidgets(container: TableCell): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -692,8 +645,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -704,8 +656,7 @@ object customwidgetsMod {
         *  7.15.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -716,8 +667,7 @@ object customwidgetsMod {
         *  6.0.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInVerticalFlowUnderWidgets(container: VerticalFlow): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -728,8 +678,7 @@ object customwidgetsMod {
         *  8.0.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /**
         * Creates and returns a new CustomWidget instance in the SDK and on the server.
@@ -740,22 +689,19 @@ object customwidgetsMod {
         *  8.2.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueUnderWidgets(container: WidgetValue): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
+      inline def createInWidgetValueUnderWidgets(container: WidgetValue): CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidget]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidget.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidget.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType")
@@ -773,85 +719,73 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.AutoNumber")
       @js.native
       def AutoNumber: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def AutoNumber_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoNumber")(x.asInstanceOf[js.Any])
+      inline def AutoNumber_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoNumber")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Binary")
       @js.native
       def Binary: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Binary_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
+      inline def Binary_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Boolean")
       @js.native
       def Boolean: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Boolean_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+      inline def Boolean_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Currency")
       @js.native
       def Currency: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Currency_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Currency")(x.asInstanceOf[js.Any])
+      inline def Currency_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Currency")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.DateTime")
       @js.native
       def DateTime: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def DateTime_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+      inline def DateTime_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Decimal")
       @js.native
       def Decimal: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Decimal_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+      inline def Decimal_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Enum")
       @js.native
       def Enum: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Enum_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enum")(x.asInstanceOf[js.Any])
+      inline def Enum_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enum")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Float")
       @js.native
       def Float: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Float_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+      inline def Float_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.HashString")
       @js.native
       def HashString: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def HashString_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HashString")(x.asInstanceOf[js.Any])
+      inline def HashString_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HashString")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Integer")
       @js.native
       def Integer: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Integer_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+      inline def Integer_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.Long")
       @js.native
       def Long: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def Long_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
+      inline def Long_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetAttributeType.String")
       @js.native
       def String: CustomWidgetAttributeType = js.native
-      @scala.inline
-      def String_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+      inline def String_=(x: CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -881,8 +815,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetDatabaseSource]
+      inline def create(model: IModel): CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetDatabaseSource]
       
       /**
         * Creates and returns a new CustomWidgetDatabaseSource instance in the SDK and on the server.
@@ -893,8 +826,7 @@ object customwidgetsMod {
         *  8.5.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInEntityWidgetUnderDataSource(container: EntityWidget): CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetDatabaseSource]
+      inline def createInEntityWidgetUnderDataSource(container: EntityWidget): CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetDatabaseSource]
       
       /**
         * Creates and returns a new CustomWidgetDatabaseSource instance in the SDK and on the server.
@@ -905,22 +837,19 @@ object customwidgetsMod {
         *  8.5.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueUnderDataSource(container: WidgetValue): CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetDatabaseSource]
+      inline def createInWidgetValueUnderDataSource(container: WidgetValue): CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetDatabaseSource]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetDatabaseSource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetDatabaseSource.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetType")
@@ -1002,8 +931,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): CustomWidgetType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetType]
+      inline def create(model: IModel): CustomWidgetType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetType]
       
       /**
         * Creates and returns a new CustomWidgetType instance in the SDK and on the server.
@@ -1011,22 +939,19 @@ object customwidgetsMod {
         * of the parent CustomWidget element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: CustomWidget): CustomWidgetType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetType]
+      inline def createIn(container: CustomWidget): CustomWidgetType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetType]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetType.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetType.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -1056,8 +981,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetXPathSource]
+      inline def create(model: IModel): CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetXPathSource]
       
       /**
         * Creates and returns a new CustomWidgetXPathSource instance in the SDK and on the server.
@@ -1068,8 +992,7 @@ object customwidgetsMod {
         *  8.5.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInEntityWidgetUnderDataSource(container: EntityWidget): CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetXPathSource]
+      inline def createInEntityWidgetUnderDataSource(container: EntityWidget): CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetXPathSource]
       
       /**
         * Creates and returns a new CustomWidgetXPathSource instance in the SDK and on the server.
@@ -1080,22 +1003,19 @@ object customwidgetsMod {
         *  8.5.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueUnderDataSource(container: WidgetValue): CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetXPathSource]
+      inline def createInWidgetValueUnderDataSource(container: WidgetValue): CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[CustomWidgetXPathSource]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetXPathSource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.CustomWidgetXPathSource.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.IsPath")
@@ -1113,22 +1033,19 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.IsPath.No")
       @js.native
       def No: IsPath = js.native
-      @scala.inline
-      def No_=(x: IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
+      inline def No_=(x: IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.IsPath.Optional")
       @js.native
       def Optional: IsPath = js.native
-      @scala.inline
-      def Optional_=(x: IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Optional")(x.asInstanceOf[js.Any])
+      inline def Optional_=(x: IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Optional")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.IsPath.Yes")
       @js.native
       def Yes: IsPath = js.native
-      @scala.inline
-      def Yes_=(x: IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Yes")(x.asInstanceOf[js.Any])
+      inline def Yes_=(x: IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Yes")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.PathType")
@@ -1146,8 +1063,7 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.PathType.None")
       @js.native
       def None: PathType = js.native
-      @scala.inline
-      def None_=(x: PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+      inline def None_=(x: PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.PathType.Reference")
@@ -1158,11 +1074,9 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.PathType.ReferenceSet")
       @js.native
       def ReferenceSet: PathType = js.native
-      @scala.inline
-      def ReferenceSet_=(x: PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
+      inline def ReferenceSet_=(x: PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Reference_=(x: PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
+      inline def Reference_=(x: PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.SystemPropertyEnum")
@@ -1180,36 +1094,31 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.SystemPropertyEnum.Editability")
       @js.native
       def Editability: SystemPropertyEnum = js.native
-      @scala.inline
-      def Editability_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Editability")(x.asInstanceOf[js.Any])
+      inline def Editability_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Editability")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.SystemPropertyEnum.Label")
       @js.native
       def Label: SystemPropertyEnum = js.native
-      @scala.inline
-      def Label_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+      inline def Label_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.SystemPropertyEnum.Name")
       @js.native
       def Name: SystemPropertyEnum = js.native
-      @scala.inline
-      def Name_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Name")(x.asInstanceOf[js.Any])
+      inline def Name_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Name")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.SystemPropertyEnum.TabIndex")
       @js.native
       def TabIndex: SystemPropertyEnum = js.native
-      @scala.inline
-      def TabIndex_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabIndex")(x.asInstanceOf[js.Any])
+      inline def TabIndex_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabIndex")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.SystemPropertyEnum.Visibility")
       @js.native
       def Visibility: SystemPropertyEnum = js.native
-      @scala.inline
-      def Visibility_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Visibility")(x.asInstanceOf[js.Any])
+      inline def Visibility_=(x: SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Visibility")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetEnumerationValue")
@@ -1244,8 +1153,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetEnumerationValue]
+      inline def create(model: IModel): WidgetEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetEnumerationValue]
       
       /**
         * Creates and returns a new WidgetEnumerationValue instance in the SDK and on the server.
@@ -1253,22 +1161,19 @@ object customwidgetsMod {
         * of the parent WidgetValueType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetValueType): WidgetEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetEnumerationValue]
+      inline def createIn(container: WidgetValueType): WidgetEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetEnumerationValue]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetEnumerationValue.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetEnumerationValue.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetObject")
@@ -1314,8 +1219,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetObject]
+      inline def create(model: IModel): WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetObject]
       
       /**
         * Creates and returns a new WidgetObject instance in the SDK and on the server.
@@ -1323,8 +1227,7 @@ object customwidgetsMod {
         * of the parent CustomWidget element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInCustomWidgetUnderObject(container: CustomWidget): WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderObject")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObject]
+      inline def createInCustomWidgetUnderObject(container: CustomWidget): WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderObject")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObject]
       
       /**
         * Creates and returns a new WidgetObject instance in the SDK and on the server.
@@ -1332,22 +1235,19 @@ object customwidgetsMod {
         * of the parent WidgetValue element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueUnderObjects(container: WidgetValue): WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderObjects")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObject]
+      inline def createInWidgetValueUnderObjects(container: WidgetValue): WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderObjects")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObject]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetObject.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetObject.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetObjectType")
@@ -1380,8 +1280,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetObjectType]
+      inline def create(model: IModel): WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetObjectType]
       
       /**
         * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
@@ -1389,8 +1288,7 @@ object customwidgetsMod {
         * of the parent CustomWidgetType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInCustomWidgetTypeUnderObjectType(container: CustomWidgetType): WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetTypeUnderObjectType")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObjectType]
+      inline def createInCustomWidgetTypeUnderObjectType(container: CustomWidgetType): WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetTypeUnderObjectType")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObjectType]
       
       /**
         * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
@@ -1398,22 +1296,19 @@ object customwidgetsMod {
         * of the parent WidgetValueType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueTypeUnderObjectType(container: WidgetValueType): WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueTypeUnderObjectType")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObjectType]
+      inline def createInWidgetValueTypeUnderObjectType(container: WidgetValueType): WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueTypeUnderObjectType")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetObjectType]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetObjectType.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetObjectType.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetProperty")
@@ -1454,8 +1349,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetProperty]
+      inline def create(model: IModel): WidgetProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetProperty]
       
       /**
         * Creates and returns a new WidgetProperty instance in the SDK and on the server.
@@ -1463,22 +1357,19 @@ object customwidgetsMod {
         * of the parent WidgetObject element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetObject): WidgetProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetProperty]
+      inline def createIn(container: WidgetObject): WidgetProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetProperty]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetProperty.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetProperty.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetPropertyType")
@@ -1528,8 +1419,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetPropertyType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetPropertyType]
+      inline def create(model: IModel): WidgetPropertyType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetPropertyType]
       
       /**
         * Creates and returns a new WidgetPropertyType instance in the SDK and on the server.
@@ -1537,22 +1427,19 @@ object customwidgetsMod {
         * of the parent WidgetObjectType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetObjectType): WidgetPropertyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetPropertyType]
+      inline def createIn(container: WidgetObjectType): WidgetPropertyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetPropertyType]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetPropertyType.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetPropertyType.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnType")
@@ -1590,8 +1477,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetReturnType]
+      inline def create(model: IModel): WidgetReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetReturnType]
       
       /**
         * Creates and returns a new WidgetReturnType instance in the SDK and on the server.
@@ -1599,22 +1485,19 @@ object customwidgetsMod {
         * of the parent WidgetValueType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetValueType): WidgetReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetReturnType]
+      inline def createIn(container: WidgetValueType): WidgetReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetReturnType]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnType.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnType.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum")
@@ -1632,57 +1515,49 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.Boolean")
       @js.native
       def Boolean: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def Boolean_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+      inline def Boolean_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.DateTime")
       @js.native
       def DateTime: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def DateTime_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+      inline def DateTime_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.Decimal")
       @js.native
       def Decimal: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def Decimal_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+      inline def Decimal_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.Float")
       @js.native
       def Float: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def Float_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+      inline def Float_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.Integer")
       @js.native
       def Integer: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def Integer_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+      inline def Integer_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.Object")
       @js.native
       def Object: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def Object_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+      inline def Object_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.String")
       @js.native
       def String: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def String_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+      inline def String_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetReturnTypeEnum.Void")
       @js.native
       def Void: WidgetReturnTypeEnum = js.native
-      @scala.inline
-      def Void_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Void")(x.asInstanceOf[js.Any])
+      inline def Void_=(x: WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Void")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetTranslation")
@@ -1717,8 +1592,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetTranslation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetTranslation]
+      inline def create(model: IModel): WidgetTranslation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetTranslation]
       
       /**
         * Creates and returns a new WidgetTranslation instance in the SDK and on the server.
@@ -1726,22 +1600,19 @@ object customwidgetsMod {
         * of the parent WidgetValueType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetValueType): WidgetTranslation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetTranslation]
+      inline def createIn(container: WidgetValueType): WidgetTranslation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetTranslation]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetTranslation.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetTranslation.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValue")
@@ -1885,8 +1756,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValue]
+      inline def create(model: IModel): WidgetValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValue]
       
       /**
         * Creates and returns a new WidgetValue instance in the SDK and on the server.
@@ -1894,22 +1764,19 @@ object customwidgetsMod {
         * of the parent WidgetProperty element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetProperty): WidgetValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValue]
+      inline def createIn(container: WidgetProperty): WidgetValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValue]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValue.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValue.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueType")
@@ -1992,8 +1859,7 @@ object customwidgetsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): WidgetValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValueType]
+      inline def create(model: IModel): WidgetValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValueType]
       
       /**
         * Creates and returns a new WidgetValueType instance in the SDK and on the server.
@@ -2001,22 +1867,19 @@ object customwidgetsMod {
         * of the parent WidgetPropertyType element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: WidgetPropertyType): WidgetValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValueType]
+      inline def createIn(container: WidgetPropertyType): WidgetValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValueType]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueType.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueType.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum")
@@ -2034,36 +1897,31 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Action")
       @js.native
       def Action: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Action_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
+      inline def Action_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Attribute")
       @js.native
       def Attribute: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Attribute_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attribute")(x.asInstanceOf[js.Any])
+      inline def Attribute_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attribute")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Boolean")
       @js.native
       def Boolean: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Boolean_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+      inline def Boolean_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.DataSource")
       @js.native
       def DataSource: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def DataSource_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
+      inline def DataSource_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Decimal")
       @js.native
       def Decimal: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Decimal_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+      inline def Decimal_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Entity")
@@ -2074,116 +1932,99 @@ object customwidgetsMod {
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.EntityConstraint")
       @js.native
       def EntityConstraint: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def EntityConstraint_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EntityConstraint")(x.asInstanceOf[js.Any])
+      inline def EntityConstraint_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EntityConstraint")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Entity_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Entity")(x.asInstanceOf[js.Any])
+      inline def Entity_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Entity")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Enumeration")
       @js.native
       def Enumeration: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Enumeration_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumeration")(x.asInstanceOf[js.Any])
+      inline def Enumeration_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumeration")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Expression")
       @js.native
       def Expression: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Expression_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expression")(x.asInstanceOf[js.Any])
+      inline def Expression_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expression")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.File")
       @js.native
       def File: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def File_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
+      inline def File_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Form")
       @js.native
       def Form: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Form_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
+      inline def Form_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Icon")
       @js.native
       def Icon: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Icon_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Icon")(x.asInstanceOf[js.Any])
+      inline def Icon_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Icon")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Image")
       @js.native
       def Image: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Image_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
+      inline def Image_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Integer")
       @js.native
       def Integer: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Integer_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+      inline def Integer_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Microflow")
       @js.native
       def Microflow: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Microflow_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Microflow")(x.asInstanceOf[js.Any])
+      inline def Microflow_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Microflow")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Nanoflow")
       @js.native
       def Nanoflow: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Nanoflow_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Nanoflow")(x.asInstanceOf[js.Any])
+      inline def Nanoflow_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Nanoflow")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Object")
       @js.native
       def Object: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Object_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+      inline def Object_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.String")
       @js.native
       def String: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def String_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+      inline def String_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.System")
       @js.native
       def System: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def System_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("System")(x.asInstanceOf[js.Any])
+      inline def System_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("System")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.TextTemplate")
       @js.native
       def TextTemplate: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def TextTemplate_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextTemplate")(x.asInstanceOf[js.Any])
+      inline def TextTemplate_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextTemplate")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.TranslatableString")
       @js.native
       def TranslatableString: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def TranslatableString_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TranslatableString")(x.asInstanceOf[js.Any])
+      inline def TranslatableString_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TranslatableString")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/customwidgets", "customwidgets.WidgetValueTypeEnum.Widgets")
       @js.native
       def Widgets: WidgetValueTypeEnum = js.native
-      @scala.inline
-      def Widgets_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Widgets")(x.asInstanceOf[js.Any])
+      inline def Widgets_=(x: WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Widgets")(x.asInstanceOf[js.Any])
     }
   }
 }

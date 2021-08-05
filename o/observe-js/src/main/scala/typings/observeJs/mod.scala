@@ -46,8 +46,7 @@ object mod {
   @JSImport("observe-js", "ArrayObserver")
   @js.native
   def ArrayObserver: ArrayObserverStatic = js.native
-  @scala.inline
-  def ArrayObserver_=(x: ArrayObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrayObserver")(x.asInstanceOf[js.Any])
+  inline def ArrayObserver_=(x: ArrayObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrayObserver")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "CompoundObserver")
@@ -65,8 +64,7 @@ object mod {
   @JSImport("observe-js", "CompoundObserver")
   @js.native
   def CompoundObserver: CompoundObserverStatic = js.native
-  @scala.inline
-  def CompoundObserver_=(x: CompoundObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompoundObserver")(x.asInstanceOf[js.Any])
+  inline def CompoundObserver_=(x: CompoundObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompoundObserver")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ObjectObserver")
@@ -87,8 +85,7 @@ object mod {
   @JSImport("observe-js", "ObjectObserver")
   @js.native
   def ObjectObserver: ObjectObserverStatic = js.native
-  @scala.inline
-  def ObjectObserver_=(x: ObjectObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectObserver")(x.asInstanceOf[js.Any])
+  inline def ObjectObserver_=(x: ObjectObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectObserver")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ObserverTransform")
@@ -121,8 +118,7 @@ object mod {
   @JSImport("observe-js", "ObserverTransform")
   @js.native
   def ObserverTransform: ObserverTransformStatic = js.native
-  @scala.inline
-  def ObserverTransform_=(x: ObserverTransformStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObserverTransform")(x.asInstanceOf[js.Any])
+  inline def ObserverTransform_=(x: ObserverTransformStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObserverTransform")(x.asInstanceOf[js.Any])
   
   @JSImport("observe-js", "Path")
   @js.native
@@ -150,11 +146,9 @@ object mod {
   @JSImport("observe-js", "PathObserver")
   @js.native
   def PathObserver: PathObserverStatic = js.native
-  @scala.inline
-  def PathObserver_=(x: PathObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathObserver")(x.asInstanceOf[js.Any])
+  inline def PathObserver_=(x: PathObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathObserver")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Path_=(x: Path): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
+  inline def Path_=(x: Path): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
   
   object observejs {
     
@@ -320,17 +314,14 @@ object mod {
     }
     object Path {
       
-      @scala.inline
-      def apply(getValueFrom: (js.Any, js.Any) => js.Any): Path = {
+      inline def apply(getValueFrom: (js.Any, js.Any) => js.Any): Path = {
         val __obj = js.Dynamic.literal(getValueFrom = js.Any.fromFunction2(getValueFrom))
         __obj.asInstanceOf[Path]
       }
       
-      @scala.inline
-      implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+      extension [Self <: Path](x: Self) {
         
-        @scala.inline
-        def setGetValueFrom(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getValueFrom", js.Any.fromFunction2(value))
+        inline def setGetValueFrom(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getValueFrom", js.Any.fromFunction2(value))
       }
     }
     
@@ -393,26 +384,20 @@ object mod {
     }
     object splice {
       
-      @scala.inline
-      def apply(addedCount: Double, index: Double, removed: js.Array[js.Any]): splice = {
+      inline def apply(addedCount: Double, index: Double, removed: js.Array[js.Any]): splice = {
         val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
         __obj.asInstanceOf[splice]
       }
       
-      @scala.inline
-      implicit class spliceMutableBuilder[Self <: splice] (val x: Self) extends AnyVal {
+      extension [Self <: splice](x: Self) {
         
-        @scala.inline
-        def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
+        inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+        inline def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))
+        inline def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))
       }
     }
   }

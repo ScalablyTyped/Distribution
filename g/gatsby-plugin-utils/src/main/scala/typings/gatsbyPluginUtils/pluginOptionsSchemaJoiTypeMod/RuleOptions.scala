@@ -30,31 +30,23 @@ trait RuleOptions extends StObject {
 }
 object RuleOptions {
   
-  @scala.inline
-  def apply(): RuleOptions = {
+  inline def apply(): RuleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleOptions]
   }
   
-  @scala.inline
-  implicit class RuleOptionsMutableBuilder[Self <: RuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RuleOptions](x: Self) {
     
-    @scala.inline
-    def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
+    inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
+    inline def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String | LanguageMessages): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | LanguageMessages): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+    inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait DocumentAttribute extends StObject {
 }
 object DocumentAttribute {
   
-  @scala.inline
-  def apply(Key: DocumentAttributeKey, Value: DocumentAttributeValue): DocumentAttribute = {
+  inline def apply(Key: DocumentAttributeKey, Value: DocumentAttributeValue): DocumentAttribute = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAttribute]
   }
   
-  @scala.inline
-  implicit class DocumentAttributeMutableBuilder[Self <: DocumentAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAttribute](x: Self) {
     
-    @scala.inline
-    def setKey(value: DocumentAttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: DocumentAttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DocumentAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DocumentAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

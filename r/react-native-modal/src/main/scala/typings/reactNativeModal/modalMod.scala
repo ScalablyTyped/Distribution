@@ -45,17 +45,14 @@ object modalMod {
     @JSImport("react-native-modal/dist/modal", "default.defaultProps")
     @js.native
     def defaultProps: AnimationInTiming = js.native
-    @scala.inline
-    def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
+    inline def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal/dist/modal", "default.propTypes")
     @js.native
     def propTypes: AnimationIn = js.native
-    @scala.inline
-    def propTypes_=(x: AnimationIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: AnimationIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-modal/dist/modal", "ReactNativeModal")
@@ -119,17 +116,14 @@ object modalMod {
     @JSImport("react-native-modal/dist/modal", "ReactNativeModal.defaultProps")
     @js.native
     def defaultProps: AnimationInTiming = js.native
-    @scala.inline
-    def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
+    inline def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal/dist/modal", "ReactNativeModal.propTypes")
     @js.native
     def propTypes: AnimationIn = js.native
-    @scala.inline
-    def propTypes_=(x: AnimationIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: AnimationIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait ModalProps
@@ -220,8 +214,7 @@ object modalMod {
   }
   object ModalProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animationIn: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle]),
       animationInTiming: Double,
       animationOut: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle]),
@@ -254,179 +247,121 @@ object modalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    @scala.inline
-    implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProps](x: Self) {
       
-      @scala.inline
-      def setAnimationIn(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      inline def setAnimationIn(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationInTiming(value: Double): Self = StObject.set(x, "animationInTiming", value.asInstanceOf[js.Any])
+      inline def setAnimationInTiming(value: Double): Self = StObject.set(x, "animationInTiming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationOut(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      inline def setAnimationOut(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationOutTiming(value: Double): Self = StObject.set(x, "animationOutTiming", value.asInstanceOf[js.Any])
+      inline def setAnimationOutTiming(value: Double): Self = StObject.set(x, "animationOutTiming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvoidKeyboard(value: Boolean): Self = StObject.set(x, "avoidKeyboard", value.asInstanceOf[js.Any])
+      inline def setAvoidKeyboard(value: Boolean): Self = StObject.set(x, "avoidKeyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
+      inline def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropOpacity(value: Double): Self = StObject.set(x, "backdropOpacity", value.asInstanceOf[js.Any])
+      inline def setBackdropOpacity(value: Double): Self = StObject.set(x, "backdropOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropTransitionInTiming(value: Double): Self = StObject.set(x, "backdropTransitionInTiming", value.asInstanceOf[js.Any])
+      inline def setBackdropTransitionInTiming(value: Double): Self = StObject.set(x, "backdropTransitionInTiming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropTransitionOutTiming(value: Double): Self = StObject.set(x, "backdropTransitionOutTiming", value.asInstanceOf[js.Any])
+      inline def setBackdropTransitionOutTiming(value: Double): Self = StObject.set(x, "backdropTransitionOutTiming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCoverScreen(value: Boolean): Self = StObject.set(x, "coverScreen", value.asInstanceOf[js.Any])
+      inline def setCoverScreen(value: Boolean): Self = StObject.set(x, "coverScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomBackdrop(value: ReactNode): Self = StObject.set(x, "customBackdrop", value.asInstanceOf[js.Any])
+      inline def setCustomBackdrop(value: ReactNode): Self = StObject.set(x, "customBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomBackdropUndefined: Self = StObject.set(x, "customBackdrop", js.undefined)
+      inline def setCustomBackdropUndefined: Self = StObject.set(x, "customBackdrop", js.undefined)
       
-      @scala.inline
-      def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
+      inline def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceWidth(value: Double): Self = StObject.set(x, "deviceWidth", value.asInstanceOf[js.Any])
+      inline def setDeviceWidth(value: Double): Self = StObject.set(x, "deviceWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardwareAccelerated(value: Boolean): Self = StObject.set(x, "hardwareAccelerated", value.asInstanceOf[js.Any])
+      inline def setHardwareAccelerated(value: Boolean): Self = StObject.set(x, "hardwareAccelerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardwareAcceleratedUndefined: Self = StObject.set(x, "hardwareAccelerated", js.undefined)
+      inline def setHardwareAcceleratedUndefined: Self = StObject.set(x, "hardwareAccelerated", js.undefined)
       
-      @scala.inline
-      def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
+      inline def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideModalContentWhileAnimating(value: Boolean): Self = StObject.set(x, "hideModalContentWhileAnimating", value.asInstanceOf[js.Any])
+      inline def setHideModalContentWhileAnimating(value: Boolean): Self = StObject.set(x, "hideModalContentWhileAnimating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBackButtonPress(value: () => Unit): Self = StObject.set(x, "onBackButtonPress", js.Any.fromFunction0(value))
+      inline def setOnBackButtonPress(value: () => Unit): Self = StObject.set(x, "onBackButtonPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBackdropPress(value: () => Unit): Self = StObject.set(x, "onBackdropPress", js.Any.fromFunction0(value))
+      inline def setOnBackdropPress(value: () => Unit): Self = StObject.set(x, "onBackdropPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+      inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnModalHide(value: () => Unit): Self = StObject.set(x, "onModalHide", js.Any.fromFunction0(value))
+      inline def setOnModalHide(value: () => Unit): Self = StObject.set(x, "onModalHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnModalShow(value: () => Unit): Self = StObject.set(x, "onModalShow", js.Any.fromFunction0(value))
+      inline def setOnModalShow(value: () => Unit): Self = StObject.set(x, "onModalShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnModalWillHide(value: () => Unit): Self = StObject.set(x, "onModalWillHide", js.Any.fromFunction0(value))
+      inline def setOnModalWillHide(value: () => Unit): Self = StObject.set(x, "onModalWillHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnModalWillShow(value: () => Unit): Self = StObject.set(x, "onModalWillShow", js.Any.fromFunction0(value))
+      inline def setOnModalWillShow(value: () => Unit): Self = StObject.set(x, "onModalWillShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOrientationChange(value: /* orientation */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
+      inline def setOnOrientationChange(value: /* orientation */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
+      inline def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOnSwipeCancel(value: () => Unit): Self = StObject.set(x, "onSwipeCancel", js.Any.fromFunction0(value))
+      inline def setOnSwipeCancel(value: () => Unit): Self = StObject.set(x, "onSwipeCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSwipeCancelUndefined: Self = StObject.set(x, "onSwipeCancel", js.undefined)
+      inline def setOnSwipeCancelUndefined: Self = StObject.set(x, "onSwipeCancel", js.undefined)
       
-      @scala.inline
-      def setOnSwipeComplete(value: /* params */ OnSwipeCompleteParams => Unit): Self = StObject.set(x, "onSwipeComplete", js.Any.fromFunction1(value))
+      inline def setOnSwipeComplete(value: /* params */ OnSwipeCompleteParams => Unit): Self = StObject.set(x, "onSwipeComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeCompleteUndefined: Self = StObject.set(x, "onSwipeComplete", js.undefined)
+      inline def setOnSwipeCompleteUndefined: Self = StObject.set(x, "onSwipeComplete", js.undefined)
       
-      @scala.inline
-      def setOnSwipeMove(value: /* percentageShown */ Double => Unit): Self = StObject.set(x, "onSwipeMove", js.Any.fromFunction1(value))
+      inline def setOnSwipeMove(value: /* percentageShown */ Double => Unit): Self = StObject.set(x, "onSwipeMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeMoveUndefined: Self = StObject.set(x, "onSwipeMove", js.undefined)
+      inline def setOnSwipeMoveUndefined: Self = StObject.set(x, "onSwipeMove", js.undefined)
       
-      @scala.inline
-      def setOnSwipeStart(value: () => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction0(value))
+      inline def setOnSwipeStart(value: () => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSwipeStartUndefined: Self = StObject.set(x, "onSwipeStart", js.undefined)
+      inline def setOnSwipeStartUndefined: Self = StObject.set(x, "onSwipeStart", js.undefined)
       
-      @scala.inline
-      def setPresentationStyle(value: PresentationStyle): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
+      inline def setPresentationStyle(value: PresentationStyle): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
+      inline def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
       
-      @scala.inline
-      def setPropagateSwipe(value: Boolean): Self = StObject.set(x, "propagateSwipe", value.asInstanceOf[js.Any])
+      inline def setPropagateSwipe(value: Boolean): Self = StObject.set(x, "propagateSwipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHorizontal(value: Boolean): Self = StObject.set(x, "scrollHorizontal", value.asInstanceOf[js.Any])
+      inline def setScrollHorizontal(value: Boolean): Self = StObject.set(x, "scrollHorizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+      inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollOffsetMax(value: Double): Self = StObject.set(x, "scrollOffsetMax", value.asInstanceOf[js.Any])
+      inline def setScrollOffsetMax(value: Double): Self = StObject.set(x, "scrollOffsetMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTo(value: /* e */ js.Any => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setScrollTo(value: /* e */ js.Any => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollToNull: Self = StObject.set(x, "scrollTo", null)
+      inline def setScrollToNull: Self = StObject.set(x, "scrollTo", null)
       
-      @scala.inline
-      def setSupportedOrientations(value: js.Array[Orientation]): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
+      inline def setSupportedOrientations(value: js.Array[Orientation]): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
+      inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      @scala.inline
-      def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
       
-      @scala.inline
-      def setSwipeDirection(value: Direction | js.Array[Direction]): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
+      inline def setSwipeDirection(value: Direction | js.Array[Direction]): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
+      inline def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
       
-      @scala.inline
-      def setSwipeDirectionVarargs(value: Direction*): Self = StObject.set(x, "swipeDirection", js.Array(value :_*))
+      inline def setSwipeDirectionVarargs(value: Direction*): Self = StObject.set(x, "swipeDirection", js.Array(value :_*))
       
-      @scala.inline
-      def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
     }
   }
   
@@ -436,17 +371,14 @@ object modalMod {
   }
   object OnSwipeCompleteParams {
     
-    @scala.inline
-    def apply(swipingDirection: Direction): OnSwipeCompleteParams = {
+    inline def apply(swipingDirection: Direction): OnSwipeCompleteParams = {
       val __obj = js.Dynamic.literal(swipingDirection = swipingDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnSwipeCompleteParams]
     }
     
-    @scala.inline
-    implicit class OnSwipeCompleteParamsMutableBuilder[Self <: OnSwipeCompleteParams] (val x: Self) extends AnyVal {
+    extension [Self <: OnSwipeCompleteParams](x: Self) {
       
-      @scala.inline
-      def setSwipingDirection(value: Direction): Self = StObject.set(x, "swipingDirection", value.asInstanceOf[js.Any])
+      inline def setSwipingDirection(value: Direction): Self = StObject.set(x, "swipingDirection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -466,8 +398,7 @@ object modalMod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deviceHeight: Double,
       deviceWidth: Double,
       isSwipeable: Boolean,
@@ -478,29 +409,21 @@ object modalMod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
+      inline def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceWidth(value: Double): Self = StObject.set(x, "deviceWidth", value.asInstanceOf[js.Any])
+      inline def setDeviceWidth(value: Double): Self = StObject.set(x, "deviceWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSwipeable(value: Boolean): Self = StObject.set(x, "isSwipeable", value.asInstanceOf[js.Any])
+      inline def setIsSwipeable(value: Boolean): Self = StObject.set(x, "isSwipeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPan(value: OrNull[ValueXY]): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+      inline def setPan(value: OrNull[ValueXY]): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanNull: Self = StObject.set(x, "pan", null)
+      inline def setPanNull: Self = StObject.set(x, "pan", null)
       
-      @scala.inline
-      def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
+      inline def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
     }
   }
 }

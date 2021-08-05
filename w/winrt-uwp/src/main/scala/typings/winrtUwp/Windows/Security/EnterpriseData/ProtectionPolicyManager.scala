@@ -12,16 +12,13 @@ trait ProtectionPolicyManager extends StObject {
 }
 object ProtectionPolicyManager {
   
-  @scala.inline
-  def apply(identity: String): ProtectionPolicyManager = {
+  inline def apply(identity: String): ProtectionPolicyManager = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectionPolicyManager]
   }
   
-  @scala.inline
-  implicit class ProtectionPolicyManagerMutableBuilder[Self <: ProtectionPolicyManager] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionPolicyManager](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
   }
 }

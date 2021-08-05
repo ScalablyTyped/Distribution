@@ -18,19 +18,15 @@ trait AssociateLambdaFunctionRequest extends StObject {
 }
 object AssociateLambdaFunctionRequest {
   
-  @scala.inline
-  def apply(FunctionArn: FunctionArn, InstanceId: InstanceId): AssociateLambdaFunctionRequest = {
+  inline def apply(FunctionArn: FunctionArn, InstanceId: InstanceId): AssociateLambdaFunctionRequest = {
     val __obj = js.Dynamic.literal(FunctionArn = FunctionArn.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateLambdaFunctionRequest]
   }
   
-  @scala.inline
-  implicit class AssociateLambdaFunctionRequestMutableBuilder[Self <: AssociateLambdaFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateLambdaFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

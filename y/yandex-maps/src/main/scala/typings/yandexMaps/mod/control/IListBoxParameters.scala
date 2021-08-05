@@ -14,19 +14,15 @@ trait IListBoxParameters
 }
 object IListBoxParameters {
   
-  @scala.inline
-  def apply(): IListBoxParameters = {
+  inline def apply(): IListBoxParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListBoxParameters]
   }
   
-  @scala.inline
-  implicit class IListBoxParametersMutableBuilder[Self <: IListBoxParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IListBoxParameters](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IBaseButtonParametersOptiFloat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IBaseButtonParametersOptiFloat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

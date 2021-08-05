@@ -19,13 +19,10 @@ object List {
   @js.native
   val ^ : ListConstructor = js.native
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+  extension [Self <: List](x: Self) {
     
-    @scala.inline
-    def setGetSeparator(value: () => scala.Boolean): Self = StObject.set(x, "getSeparator", js.Any.fromFunction0(value))
+    inline def setGetSeparator(value: () => scala.Boolean): Self = StObject.set(x, "getSeparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSeparator(value: scala.Boolean => Unit): Self = StObject.set(x, "setSeparator", js.Any.fromFunction1(value))
+    inline def setSetSeparator(value: scala.Boolean => Unit): Self = StObject.set(x, "setSeparator", js.Any.fromFunction1(value))
   }
 }

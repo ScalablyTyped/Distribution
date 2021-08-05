@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PermissionSetting extends StObject
 object PermissionSetting {
   
-  @scala.inline
-  def denied: typings.devtoolsProtocol.devtoolsProtocolStrings.denied = "denied".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.denied]
+  inline def denied: typings.devtoolsProtocol.devtoolsProtocolStrings.denied = "denied".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.denied]
   
-  @scala.inline
-  def granted: typings.devtoolsProtocol.devtoolsProtocolStrings.granted = "granted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.granted]
+  inline def granted: typings.devtoolsProtocol.devtoolsProtocolStrings.granted = "granted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.granted]
   
-  @scala.inline
-  def prompt: typings.devtoolsProtocol.devtoolsProtocolStrings.prompt = "prompt".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.prompt]
+  inline def prompt: typings.devtoolsProtocol.devtoolsProtocolStrings.prompt = "prompt".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.prompt]
 }

@@ -13,16 +13,13 @@ trait GetAppValidationOutputRequest extends StObject {
 }
 object GetAppValidationOutputRequest {
   
-  @scala.inline
-  def apply(appId: AppIdWithValidation): GetAppValidationOutputRequest = {
+  inline def apply(appId: AppIdWithValidation): GetAppValidationOutputRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppValidationOutputRequest]
   }
   
-  @scala.inline
-  implicit class GetAppValidationOutputRequestMutableBuilder[Self <: GetAppValidationOutputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppValidationOutputRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }
 }

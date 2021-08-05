@@ -64,61 +64,43 @@ trait ISignInProperties
 }
 object ISignInProperties {
   
-  @scala.inline
-  def apply(element: String, name: String): ISignInProperties = {
+  inline def apply(element: String, name: String): ISignInProperties = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISignInProperties]
   }
   
-  @scala.inline
-  implicit class ISignInPropertiesMutableBuilder[Self <: ISignInProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ISignInProperties](x: Self) {
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+    inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    @scala.inline
-    def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    @scala.inline
-    def setOnloggedin(value: js.Function): Self = StObject.set(x, "onloggedin", value.asInstanceOf[js.Any])
+    inline def setOnloggedin(value: js.Function): Self = StObject.set(x, "onloggedin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnloggedinUndefined: Self = StObject.set(x, "onloggedin", js.undefined)
+    inline def setOnloggedinUndefined: Self = StObject.set(x, "onloggedin", js.undefined)
     
-    @scala.inline
-    def setOnloggedout(value: js.Function): Self = StObject.set(x, "onloggedout", value.asInstanceOf[js.Any])
+    inline def setOnloggedout(value: js.Function): Self = StObject.set(x, "onloggedout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnloggedoutUndefined: Self = StObject.set(x, "onloggedout", js.undefined)
+    inline def setOnloggedoutUndefined: Self = StObject.set(x, "onloggedout", js.undefined)
     
-    @scala.inline
-    def setSign_in_text(value: String): Self = StObject.set(x, "sign_in_text", value.asInstanceOf[js.Any])
+    inline def setSign_in_text(value: String): Self = StObject.set(x, "sign_in_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSign_in_textUndefined: Self = StObject.set(x, "sign_in_text", js.undefined)
+    inline def setSign_in_textUndefined: Self = StObject.set(x, "sign_in_text", js.undefined)
     
-    @scala.inline
-    def setSign_out_text(value: String): Self = StObject.set(x, "sign_out_text", value.asInstanceOf[js.Any])
+    inline def setSign_out_text(value: String): Self = StObject.set(x, "sign_out_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSign_out_textUndefined: Self = StObject.set(x, "sign_out_text", js.undefined)
+    inline def setSign_out_textUndefined: Self = StObject.set(x, "sign_out_text", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

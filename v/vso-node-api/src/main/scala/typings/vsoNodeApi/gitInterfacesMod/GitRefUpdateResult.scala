@@ -53,8 +53,7 @@ trait GitRefUpdateResult extends StObject {
 }
 object GitRefUpdateResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customMessage: String,
     isLocked: Boolean,
     name: String,
@@ -69,34 +68,24 @@ object GitRefUpdateResult {
     __obj.asInstanceOf[GitRefUpdateResult]
   }
   
-  @scala.inline
-  implicit class GitRefUpdateResultMutableBuilder[Self <: GitRefUpdateResult] (val x: Self) extends AnyVal {
+  extension [Self <: GitRefUpdateResult](x: Self) {
     
-    @scala.inline
-    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
+    inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewObjectId(value: String): Self = StObject.set(x, "newObjectId", value.asInstanceOf[js.Any])
+    inline def setNewObjectId(value: String): Self = StObject.set(x, "newObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldObjectId(value: String): Self = StObject.set(x, "oldObjectId", value.asInstanceOf[js.Any])
+    inline def setOldObjectId(value: String): Self = StObject.set(x, "oldObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectedBy(value: String): Self = StObject.set(x, "rejectedBy", value.asInstanceOf[js.Any])
+    inline def setRejectedBy(value: String): Self = StObject.set(x, "rejectedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatus(value: GitRefUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
+    inline def setUpdateStatus(value: GitRefUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
   }
 }

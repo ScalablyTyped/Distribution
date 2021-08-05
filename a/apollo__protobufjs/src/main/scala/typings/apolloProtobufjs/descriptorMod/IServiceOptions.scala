@@ -10,19 +10,15 @@ trait IServiceOptions extends StObject {
 }
 object IServiceOptions {
   
-  @scala.inline
-  def apply(): IServiceOptions = {
+  inline def apply(): IServiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IServiceOptions]
   }
   
-  @scala.inline
-  implicit class IServiceOptionsMutableBuilder[Self <: IServiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IServiceOptions](x: Self) {
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
   }
 }

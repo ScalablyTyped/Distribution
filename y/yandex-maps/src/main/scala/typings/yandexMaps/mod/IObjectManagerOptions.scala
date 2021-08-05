@@ -18,46 +18,33 @@ trait IObjectManagerOptions extends StObject {
 }
 object IObjectManagerOptions {
   
-  @scala.inline
-  def apply(): IObjectManagerOptions = {
+  inline def apply(): IObjectManagerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IObjectManagerOptions]
   }
   
-  @scala.inline
-  implicit class IObjectManagerOptionsMutableBuilder[Self <: IObjectManagerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectManagerOptions](x: Self) {
     
-    @scala.inline
-    def setClusterHasBalloon(value: Boolean): Self = StObject.set(x, "clusterHasBalloon", value.asInstanceOf[js.Any])
+    inline def setClusterHasBalloon(value: Boolean): Self = StObject.set(x, "clusterHasBalloon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterHasBalloonUndefined: Self = StObject.set(x, "clusterHasBalloon", js.undefined)
+    inline def setClusterHasBalloonUndefined: Self = StObject.set(x, "clusterHasBalloon", js.undefined)
     
-    @scala.inline
-    def setClusterize(value: Boolean): Self = StObject.set(x, "clusterize", value.asInstanceOf[js.Any])
+    inline def setClusterize(value: Boolean): Self = StObject.set(x, "clusterize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterizeUndefined: Self = StObject.set(x, "clusterize", js.undefined)
+    inline def setClusterizeUndefined: Self = StObject.set(x, "clusterize", js.undefined)
     
-    @scala.inline
-    def setGeoObjectOpenBalloonOnClick(value: Boolean): Self = StObject.set(x, "geoObjectOpenBalloonOnClick", value.asInstanceOf[js.Any])
+    inline def setGeoObjectOpenBalloonOnClick(value: Boolean): Self = StObject.set(x, "geoObjectOpenBalloonOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoObjectOpenBalloonOnClickUndefined: Self = StObject.set(x, "geoObjectOpenBalloonOnClick", js.undefined)
+    inline def setGeoObjectOpenBalloonOnClickUndefined: Self = StObject.set(x, "geoObjectOpenBalloonOnClick", js.undefined)
     
-    @scala.inline
-    def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
+    inline def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncOverlayInitUndefined: Self = StObject.set(x, "syncOverlayInit", js.undefined)
+    inline def setSyncOverlayInitUndefined: Self = StObject.set(x, "syncOverlayInit", js.undefined)
     
-    @scala.inline
-    def setViewportMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "viewportMargin", value.asInstanceOf[js.Any])
+    inline def setViewportMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "viewportMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportMarginUndefined: Self = StObject.set(x, "viewportMargin", js.undefined)
+    inline def setViewportMarginUndefined: Self = StObject.set(x, "viewportMargin", js.undefined)
     
-    @scala.inline
-    def setViewportMarginVarargs(value: Double*): Self = StObject.set(x, "viewportMargin", js.Array(value :_*))
+    inline def setViewportMarginVarargs(value: Double*): Self = StObject.set(x, "viewportMargin", js.Array(value :_*))
   }
 }

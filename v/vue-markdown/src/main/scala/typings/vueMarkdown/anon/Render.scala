@@ -20,8 +20,7 @@ trait Render extends StObject {
 }
 object Render {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     render: js.Any,
     renderAttrs: js.Any,
     renderInline: js.Any,
@@ -33,25 +32,18 @@ object Render {
     __obj.asInstanceOf[Render]
   }
   
-  @scala.inline
-  implicit class RenderMutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
+  extension [Self <: Render](x: Self) {
     
-    @scala.inline
-    def setRender(value: js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderAttrs(value: js.Any): Self = StObject.set(x, "renderAttrs", value.asInstanceOf[js.Any])
+    inline def setRenderAttrs(value: js.Any): Self = StObject.set(x, "renderAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderInline(value: js.Any): Self = StObject.set(x, "renderInline", value.asInstanceOf[js.Any])
+    inline def setRenderInline(value: js.Any): Self = StObject.set(x, "renderInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderInlineAsText(value: js.Any): Self = StObject.set(x, "renderInlineAsText", value.asInstanceOf[js.Any])
+    inline def setRenderInlineAsText(value: js.Any): Self = StObject.set(x, "renderInlineAsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderToken(value: js.Any): Self = StObject.set(x, "renderToken", value.asInstanceOf[js.Any])
+    inline def setRenderToken(value: js.Any): Self = StObject.set(x, "renderToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: Codeblock): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Codeblock): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
   }
 }

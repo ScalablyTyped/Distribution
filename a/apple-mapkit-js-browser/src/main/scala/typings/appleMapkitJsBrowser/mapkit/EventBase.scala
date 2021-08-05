@@ -12,20 +12,16 @@ trait EventBase[T] extends StObject {
 }
 object EventBase {
   
-  @scala.inline
-  def apply[T](target: T, `type`: String): EventBase[T] = {
+  inline def apply[T](target: T, `type`: String): EventBase[T] = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventBase[T]]
   }
   
-  @scala.inline
-  implicit class EventBaseMutableBuilder[Self <: EventBase[?], T] (val x: Self & EventBase[T]) extends AnyVal {
+  extension [Self <: EventBase[?], T](x: Self & EventBase[T]) {
     
-    @scala.inline
-    def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

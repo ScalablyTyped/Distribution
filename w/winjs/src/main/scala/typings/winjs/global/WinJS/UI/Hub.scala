@@ -46,8 +46,7 @@ object Hub {
     @JSGlobal("WinJS.UI.Hub.AnimationType.contentTransition")
     @js.native
     def contentTransition: String = js.native
-    @scala.inline
-    def contentTransition_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentTransition")(x.asInstanceOf[js.Any])
+    inline def contentTransition_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentTransition")(x.asInstanceOf[js.Any])
     
     /**
       * The animation plays when the Hub is first displayed.
@@ -55,8 +54,7 @@ object Hub {
     @JSGlobal("WinJS.UI.Hub.AnimationType.entrance")
     @js.native
     def entrance: String = js.native
-    @scala.inline
-    def entrance_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entrance")(x.asInstanceOf[js.Any])
+    inline def entrance_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entrance")(x.asInstanceOf[js.Any])
     
     /**
       * The animation plays when a section is inserted into the Hub.
@@ -64,8 +62,7 @@ object Hub {
     @JSGlobal("WinJS.UI.Hub.AnimationType.insert")
     @js.native
     def insert: String = js.native
-    @scala.inline
-    def insert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insert")(x.asInstanceOf[js.Any])
+    inline def insert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insert")(x.asInstanceOf[js.Any])
     
     /**
       * The animation plays when a section is removed into the Hub.
@@ -73,8 +70,7 @@ object Hub {
     @JSGlobal("WinJS.UI.Hub.AnimationType.remove")
     @js.native
     def remove: String = js.native
-    @scala.inline
-    def remove_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+    inline def remove_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -93,8 +89,7 @@ object Hub {
     @JSGlobal("WinJS.UI.Hub.LoadingState.complete")
     @js.native
     def complete: String = js.native
-    @scala.inline
-    def complete_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("complete")(x.asInstanceOf[js.Any])
+    inline def complete_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("complete")(x.asInstanceOf[js.Any])
     
     /**
       * The Hub is loading sections.
@@ -102,8 +97,7 @@ object Hub {
     @JSGlobal("WinJS.UI.Hub.LoadingState.loading")
     @js.native
     def loading: String = js.native
-    @scala.inline
-    def loading_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
+    inline def loading_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -113,6 +107,5 @@ object Hub {
   @JSGlobal("WinJS.UI.Hub.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

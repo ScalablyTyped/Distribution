@@ -10,19 +10,15 @@ trait RouteResponse extends StObject {
 }
 object RouteResponse {
   
-  @scala.inline
-  def apply(agents: js.Array[AgentResponse]): RouteResponse = {
+  inline def apply(agents: js.Array[AgentResponse]): RouteResponse = {
     val __obj = js.Dynamic.literal(agents = agents.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteResponse]
   }
   
-  @scala.inline
-  implicit class RouteResponseMutableBuilder[Self <: RouteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RouteResponse](x: Self) {
     
-    @scala.inline
-    def setAgents(value: js.Array[AgentResponse]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
+    inline def setAgents(value: js.Array[AgentResponse]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentsVarargs(value: AgentResponse*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: AgentResponse*): Self = StObject.set(x, "agents", js.Array(value :_*))
   }
 }

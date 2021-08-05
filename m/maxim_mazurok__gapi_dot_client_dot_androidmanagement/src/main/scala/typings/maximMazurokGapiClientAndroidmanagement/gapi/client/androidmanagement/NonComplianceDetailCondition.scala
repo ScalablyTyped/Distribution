@@ -17,31 +17,23 @@ trait NonComplianceDetailCondition extends StObject {
 }
 object NonComplianceDetailCondition {
   
-  @scala.inline
-  def apply(): NonComplianceDetailCondition = {
+  inline def apply(): NonComplianceDetailCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonComplianceDetailCondition]
   }
   
-  @scala.inline
-  implicit class NonComplianceDetailConditionMutableBuilder[Self <: NonComplianceDetailCondition] (val x: Self) extends AnyVal {
+  extension [Self <: NonComplianceDetailCondition](x: Self) {
     
-    @scala.inline
-    def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
+    inline def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonComplianceReasonUndefined: Self = StObject.set(x, "nonComplianceReason", js.undefined)
+    inline def setNonComplianceReasonUndefined: Self = StObject.set(x, "nonComplianceReason", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
+    inline def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
+    inline def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
   }
 }

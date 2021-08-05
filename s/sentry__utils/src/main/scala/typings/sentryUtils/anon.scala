@@ -17,23 +17,18 @@ object anon {
   }
   object GlobalEventProcessors {
     
-    @scala.inline
-    def apply(globalEventProcessors: js.Any, hub: js.Any, logger: js.Any): GlobalEventProcessors = {
+    inline def apply(globalEventProcessors: js.Any, hub: js.Any, logger: js.Any): GlobalEventProcessors = {
       val __obj = js.Dynamic.literal(globalEventProcessors = globalEventProcessors.asInstanceOf[js.Any], hub = hub.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalEventProcessors]
     }
     
-    @scala.inline
-    implicit class GlobalEventProcessorsMutableBuilder[Self <: GlobalEventProcessors] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalEventProcessors](x: Self) {
       
-      @scala.inline
-      def setGlobalEventProcessors(value: js.Any): Self = StObject.set(x, "globalEventProcessors", value.asInstanceOf[js.Any])
+      inline def setGlobalEventProcessors(value: js.Any): Self = StObject.set(x, "globalEventProcessors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHub(value: js.Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+      inline def setHub(value: js.Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,38 +44,28 @@ object anon {
   }
   object Host {
     
-    @scala.inline
-    def apply(): Host = {
+    inline def apply(): Host = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     }
   }
   
@@ -90,20 +75,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(): Id = {
+    inline def apply(): Id = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -113,23 +94,18 @@ object anon {
   }
   object Integrations {
     
-    @scala.inline
-    def apply(): Integrations = {
+    inline def apply(): Integrations = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Integrations]
     }
     
-    @scala.inline
-    implicit class IntegrationsMutableBuilder[Self <: Integrations] (val x: Self) extends AnyVal {
+    extension [Self <: Integrations](x: Self) {
       
-      @scala.inline
-      def setIntegrations(value: js.Array[Integration]): Self = StObject.set(x, "Integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: js.Array[Integration]): Self = StObject.set(x, "Integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "Integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "Integrations", js.undefined)
       
-      @scala.inline
-      def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "Integrations", js.Array(value :_*))
+      inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "Integrations", js.Array(value :_*))
     }
   }
 }

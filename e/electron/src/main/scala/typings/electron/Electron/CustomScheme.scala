@@ -16,22 +16,17 @@ trait CustomScheme extends StObject {
 }
 object CustomScheme {
   
-  @scala.inline
-  def apply(scheme: String): CustomScheme = {
+  inline def apply(scheme: String): CustomScheme = {
     val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomScheme]
   }
   
-  @scala.inline
-  implicit class CustomSchemeMutableBuilder[Self <: CustomScheme] (val x: Self) extends AnyVal {
+  extension [Self <: CustomScheme](x: Self) {
     
-    @scala.inline
-    def setPrivileges(value: Privileges): Self = StObject.set(x, "privileges", value.asInstanceOf[js.Any])
+    inline def setPrivileges(value: Privileges): Self = StObject.set(x, "privileges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegesUndefined: Self = StObject.set(x, "privileges", js.undefined)
+    inline def setPrivilegesUndefined: Self = StObject.set(x, "privileges", js.undefined)
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

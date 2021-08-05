@@ -16,7 +16,7 @@ trait FormNameRuleCondition extends StObject {
   
   var FormName: js.Any
   
-  @JSName("Outlook.FormNameRuleCondition_typekey")
+  /* private */ @JSName("Outlook.FormNameRuleCondition_typekey")
   var OutlookDotFormNameRuleCondition_typekey: FormNameRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait FormNameRuleCondition extends StObject {
 }
 object FormNameRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
@@ -41,31 +40,22 @@ object FormNameRuleCondition {
     __obj.asInstanceOf[FormNameRuleCondition]
   }
   
-  @scala.inline
-  implicit class FormNameRuleConditionMutableBuilder[Self <: FormNameRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: FormNameRuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormName(value: js.Any): Self = StObject.set(x, "FormName", value.asInstanceOf[js.Any])
+    inline def setFormName(value: js.Any): Self = StObject.set(x, "FormName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotFormNameRuleCondition_typekey(value: FormNameRuleCondition): Self = StObject.set(x, "Outlook.FormNameRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotFormNameRuleCondition_typekey(value: FormNameRuleCondition): Self = StObject.set(x, "Outlook.FormNameRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

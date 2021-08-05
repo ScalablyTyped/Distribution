@@ -13,25 +13,19 @@ trait Basepath extends StObject {
 }
 object Basepath {
   
-  @scala.inline
-  def apply(base_path: ExtensionURL): Basepath = {
+  inline def apply(base_path: ExtensionURL): Basepath = {
     val __obj = js.Dynamic.literal(base_path = base_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Basepath]
   }
   
-  @scala.inline
-  implicit class BasepathMutableBuilder[Self <: Basepath] (val x: Self) extends AnyVal {
+  extension [Self <: Basepath](x: Self) {
     
-    @scala.inline
-    def setBase_path(value: ExtensionURL): Self = StObject.set(x, "base_path", value.asInstanceOf[js.Any])
+    inline def setBase_path(value: ExtensionURL): Self = StObject.set(x, "base_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

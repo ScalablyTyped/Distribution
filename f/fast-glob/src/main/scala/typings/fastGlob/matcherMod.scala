@@ -22,25 +22,25 @@ object matcherMod {
       _micromatchOptions: MicromatchOptions
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fillStorage: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getPatternSegments: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _micromatchOptions: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _patterns: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _splitSegmentsIntoSections: js.Any = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _storage: js.Array[PatternInfo] = js.native
   }
   
@@ -56,46 +56,40 @@ object matcherMod {
   }
   object DynamicPatternSegment {
     
-    @scala.inline
-    def apply(pattern: Pattern, patternRe: PatternRe): DynamicPatternSegment = {
+    inline def apply(pattern: Pattern, patternRe: PatternRe): DynamicPatternSegment = {
       val __obj = js.Dynamic.literal(dynamic = true, pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
       __obj.asInstanceOf[DynamicPatternSegment]
     }
     
-    @scala.inline
-    implicit class DynamicPatternSegmentMutableBuilder[Self <: DynamicPatternSegment] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicPatternSegment](x: Self) {
       
-      @scala.inline
-      def setDynamic(value: `true`): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: `true`): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternRe(value: PatternRe): Self = StObject.set(x, "patternRe", value.asInstanceOf[js.Any])
+      inline def setPatternRe(value: PatternRe): Self = StObject.set(x, "patternRe", value.asInstanceOf[js.Any])
     }
   }
   
   trait Matcher extends StObject {
     
-    var _fillStorage: js.Any
+    /* private */ var _fillStorage: js.Any
     
-    var _getPatternSegments: js.Any
+    /* private */ var _getPatternSegments: js.Any
     
-    val _micromatchOptions: js.Any
+    /* private */ val _micromatchOptions: js.Any
     
-    val _patterns: js.Any
+    /* private */ val _patterns: js.Any
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
-    var _splitSegmentsIntoSections: js.Any
+    /* private */ var _splitSegmentsIntoSections: js.Any
     
-    val _storage: js.Array[PatternInfo]
+    /* protected */ val _storage: js.Array[PatternInfo]
   }
   object Matcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fillStorage: js.Any,
       _getPatternSegments: js.Any,
       _micromatchOptions: js.Any,
@@ -108,32 +102,23 @@ object matcherMod {
       __obj.asInstanceOf[Matcher]
     }
     
-    @scala.inline
-    implicit class MatcherMutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
+    extension [Self <: Matcher](x: Self) {
       
-      @scala.inline
-      def set_fillStorage(value: js.Any): Self = StObject.set(x, "_fillStorage", value.asInstanceOf[js.Any])
+      inline def set_fillStorage(value: js.Any): Self = StObject.set(x, "_fillStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getPatternSegments(value: js.Any): Self = StObject.set(x, "_getPatternSegments", value.asInstanceOf[js.Any])
+      inline def set_getPatternSegments(value: js.Any): Self = StObject.set(x, "_getPatternSegments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_micromatchOptions(value: js.Any): Self = StObject.set(x, "_micromatchOptions", value.asInstanceOf[js.Any])
+      inline def set_micromatchOptions(value: js.Any): Self = StObject.set(x, "_micromatchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_patterns(value: js.Any): Self = StObject.set(x, "_patterns", value.asInstanceOf[js.Any])
+      inline def set_patterns(value: js.Any): Self = StObject.set(x, "_patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_splitSegmentsIntoSections(value: js.Any): Self = StObject.set(x, "_splitSegmentsIntoSections", value.asInstanceOf[js.Any])
+      inline def set_splitSegmentsIntoSections(value: js.Any): Self = StObject.set(x, "_splitSegmentsIntoSections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_storage(value: js.Array[PatternInfo]): Self = StObject.set(x, "_storage", value.asInstanceOf[js.Any])
+      inline def set_storage(value: js.Array[PatternInfo]): Self = StObject.set(x, "_storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_storageVarargs(value: PatternInfo*): Self = StObject.set(x, "_storage", js.Array(value :_*))
+      inline def set_storageVarargs(value: PatternInfo*): Self = StObject.set(x, "_storage", js.Array(value :_*))
     }
   }
   
@@ -152,8 +137,7 @@ object matcherMod {
   }
   object PatternInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: Boolean,
       pattern: Pattern,
       sections: js.Array[PatternSection],
@@ -163,26 +147,19 @@ object matcherMod {
       __obj.asInstanceOf[PatternInfo]
     }
     
-    @scala.inline
-    implicit class PatternInfoMutableBuilder[Self <: PatternInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PatternInfo](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSections(value: js.Array[PatternSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+      inline def setSections(value: js.Array[PatternSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionsVarargs(value: PatternSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+      inline def setSectionsVarargs(value: PatternSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
       
-      @scala.inline
-      def setSegments(value: js.Array[PatternSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[PatternSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsVarargs(value: PatternSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: PatternSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     }
   }
   
@@ -195,14 +172,12 @@ object matcherMod {
   trait PatternSegment extends StObject
   object PatternSegment {
     
-    @scala.inline
-    def DynamicPatternSegment(pattern: Pattern, patternRe: PatternRe): typings.fastGlob.matcherMod.DynamicPatternSegment = {
+    inline def DynamicPatternSegment(pattern: Pattern, patternRe: PatternRe): typings.fastGlob.matcherMod.DynamicPatternSegment = {
       val __obj = js.Dynamic.literal(dynamic = true, pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fastGlob.matcherMod.DynamicPatternSegment]
     }
     
-    @scala.inline
-    def StaticPatternSegment(pattern: Pattern): typings.fastGlob.matcherMod.StaticPatternSegment = {
+    inline def StaticPatternSegment(pattern: Pattern): typings.fastGlob.matcherMod.StaticPatternSegment = {
       val __obj = js.Dynamic.literal(dynamic = false, pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fastGlob.matcherMod.StaticPatternSegment]
     }
@@ -218,20 +193,16 @@ object matcherMod {
   }
   object StaticPatternSegment {
     
-    @scala.inline
-    def apply(pattern: Pattern): StaticPatternSegment = {
+    inline def apply(pattern: Pattern): StaticPatternSegment = {
       val __obj = js.Dynamic.literal(dynamic = false, pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticPatternSegment]
     }
     
-    @scala.inline
-    implicit class StaticPatternSegmentMutableBuilder[Self <: StaticPatternSegment] (val x: Self) extends AnyVal {
+    extension [Self <: StaticPatternSegment](x: Self) {
       
-      @scala.inline
-      def setDynamic(value: `false`): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: `false`): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,25 +14,19 @@ trait Quantity extends StObject {
 }
 object Quantity {
   
-  @scala.inline
-  def apply(): Quantity = {
+  inline def apply(): Quantity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Quantity]
   }
   
-  @scala.inline
-  implicit class QuantityMutableBuilder[Self <: Quantity] (val x: Self) extends AnyVal {
+  extension [Self <: Quantity](x: Self) {
     
-    @scala.inline
-    def setQuantity(value: single | multiple): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: single | multiple): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

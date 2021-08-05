@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class NgPlural protected () extends StObject {
   def this(_localization: NgLocalization) = this()
   
-  var _activateView: js.Any = js.native
+  /* private */ var _activateView: js.Any = js.native
   
-  var _activeView: js.Any = js.native
+  /* private */ var _activeView: js.Any = js.native
   
-  var _caseViews: js.Any = js.native
+  /* private */ var _caseViews: js.Any = js.native
   
-  var _clearViews: js.Any = js.native
+  /* private */ var _clearViews: js.Any = js.native
   
-  var _localization: js.Any = js.native
+  /* private */ var _localization: js.Any = js.native
   
-  var _switchValue: js.Any = js.native
+  /* private */ var _switchValue: js.Any = js.native
   
-  var _updateView: js.Any = js.native
+  /* private */ var _updateView: js.Any = js.native
   
   def addCase(value: String, switchView: SwitchView): Unit = js.native
   

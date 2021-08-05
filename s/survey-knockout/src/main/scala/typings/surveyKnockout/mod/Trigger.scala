@@ -41,6 +41,5 @@ object Trigger {
   @JSImport("survey-knockout", "Trigger.operatorsValue")
   @js.native
   def operatorsValue: HashTable[js.Function] = js.native
-  @scala.inline
-  def operatorsValue_=(x: HashTable[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operatorsValue")(x.asInstanceOf[js.Any])
+  inline def operatorsValue_=(x: HashTable[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operatorsValue")(x.asInstanceOf[js.Any])
 }

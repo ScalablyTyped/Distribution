@@ -66,56 +66,40 @@ object visualization {
   }
   object HeatmapLayerOptions {
     
-    @scala.inline
-    def apply(data: js.Any): HeatmapLayerOptions = {
+    inline def apply(data: js.Any): HeatmapLayerOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeatmapLayerOptions]
     }
     
-    @scala.inline
-    implicit class HeatmapLayerOptionsMutableBuilder[Self <: HeatmapLayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeatmapLayerOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDissipating(value: Boolean): Self = StObject.set(x, "dissipating", value.asInstanceOf[js.Any])
+      inline def setDissipating(value: Boolean): Self = StObject.set(x, "dissipating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDissipatingUndefined: Self = StObject.set(x, "dissipating", js.undefined)
+      inline def setDissipatingUndefined: Self = StObject.set(x, "dissipating", js.undefined)
       
-      @scala.inline
-      def setGradient(value: js.Array[String]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: js.Array[String]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+      inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
-      @scala.inline
-      def setGradientVarargs(value: String*): Self = StObject.set(x, "gradient", js.Array(value :_*))
+      inline def setGradientVarargs(value: String*): Self = StObject.set(x, "gradient", js.Array(value :_*))
       
-      @scala.inline
-      def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMaxIntensity(value: Double): Self = StObject.set(x, "maxIntensity", value.asInstanceOf[js.Any])
+      inline def setMaxIntensity(value: Double): Self = StObject.set(x, "maxIntensity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIntensityUndefined: Self = StObject.set(x, "maxIntensity", js.undefined)
+      inline def setMaxIntensityUndefined: Self = StObject.set(x, "maxIntensity", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -182,74 +166,52 @@ object visualization {
   }
   object MapsEngineLayerOptions {
     
-    @scala.inline
-    def apply(): MapsEngineLayerOptions = {
+    inline def apply(): MapsEngineLayerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapsEngineLayerOptions]
     }
     
-    @scala.inline
-    implicit class MapsEngineLayerOptionsMutableBuilder[Self <: MapsEngineLayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapsEngineLayerOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      @scala.inline
-      def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
       
-      @scala.inline
-      def setFitBounds(value: Boolean): Self = StObject.set(x, "fitBounds", value.asInstanceOf[js.Any])
+      inline def setFitBounds(value: Boolean): Self = StObject.set(x, "fitBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitBoundsUndefined: Self = StObject.set(x, "fitBounds", js.undefined)
+      inline def setFitBoundsUndefined: Self = StObject.set(x, "fitBounds", js.undefined)
       
-      @scala.inline
-      def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+      inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+      inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
       
-      @scala.inline
-      def setLayerKey(value: String): Self = StObject.set(x, "layerKey", value.asInstanceOf[js.Any])
+      inline def setLayerKey(value: String): Self = StObject.set(x, "layerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerKeyUndefined: Self = StObject.set(x, "layerKey", js.undefined)
+      inline def setLayerKeyUndefined: Self = StObject.set(x, "layerKey", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+      inline def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapIdUndefined: Self = StObject.set(x, "mapId", js.undefined)
+      inline def setMapIdUndefined: Self = StObject.set(x, "mapId", js.undefined)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
+      inline def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
+      inline def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -260,17 +222,14 @@ object visualization {
   }
   object MapsEngineLayerProperties {
     
-    @scala.inline
-    def apply(name: String): MapsEngineLayerProperties = {
+    inline def apply(name: String): MapsEngineLayerProperties = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapsEngineLayerProperties]
     }
     
-    @scala.inline
-    implicit class MapsEngineLayerPropertiesMutableBuilder[Self <: MapsEngineLayerProperties] (val x: Self) extends AnyVal {
+    extension [Self <: MapsEngineLayerProperties](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,38 +246,28 @@ object visualization {
   }
   object MapsEngineMouseEvent {
     
-    @scala.inline
-    def apply(): MapsEngineMouseEvent = {
+    inline def apply(): MapsEngineMouseEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapsEngineMouseEvent]
     }
     
-    @scala.inline
-    implicit class MapsEngineMouseEventMutableBuilder[Self <: MapsEngineMouseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MapsEngineMouseEvent](x: Self) {
       
-      @scala.inline
-      def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
+      inline def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureIdUndefined: Self = StObject.set(x, "featureId", js.undefined)
+      inline def setFeatureIdUndefined: Self = StObject.set(x, "featureId", js.undefined)
       
-      @scala.inline
-      def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
+      inline def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoWindowHtmlUndefined: Self = StObject.set(x, "infoWindowHtml", js.undefined)
+      inline def setInfoWindowHtmlUndefined: Self = StObject.set(x, "infoWindowHtml", js.undefined)
       
-      @scala.inline
-      def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+      inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+      inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
       
-      @scala.inline
-      def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
+      inline def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
+      inline def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
     }
   }
   
@@ -332,17 +281,14 @@ object visualization {
   }
   object MouseEvent {
     
-    @scala.inline
-    def apply(stop: () => Unit): typings.googlemaps.google.maps.visualization.MouseEvent = {
+    inline def apply(stop: () => Unit): typings.googlemaps.google.maps.visualization.MouseEvent = {
       val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[typings.googlemaps.google.maps.visualization.MouseEvent]
     }
     
-    @scala.inline
-    implicit class MouseEventMutableBuilder[Self <: typings.googlemaps.google.maps.visualization.MouseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googlemaps.google.maps.visualization.MouseEvent](x: Self) {
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -354,20 +300,16 @@ object visualization {
   }
   object WeightedLocation {
     
-    @scala.inline
-    def apply(location: LatLng, weight: Double): WeightedLocation = {
+    inline def apply(location: LatLng, weight: Double): WeightedLocation = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.asInstanceOf[WeightedLocation]
     }
     
-    @scala.inline
-    implicit class WeightedLocationMutableBuilder[Self <: WeightedLocation] (val x: Self) extends AnyVal {
+    extension [Self <: WeightedLocation](x: Self) {
       
-      @scala.inline
-      def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
 }

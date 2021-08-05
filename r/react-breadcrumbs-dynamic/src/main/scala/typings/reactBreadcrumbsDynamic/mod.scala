@@ -50,17 +50,14 @@ object mod {
   }
   object BreadcrumbsItemProps {
     
-    @scala.inline
-    def apply(to: String): BreadcrumbsItemProps = {
+    inline def apply(to: String): BreadcrumbsItemProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbsItemProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsItemPropsMutableBuilder[Self <: BreadcrumbsItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsItemProps](x: Self) {
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,62 +81,44 @@ object mod {
   }
   object BreadcrumbsProps {
     
-    @scala.inline
-    def apply(): BreadcrumbsProps = {
+    inline def apply(): BreadcrumbsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbsProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsPropsMutableBuilder[Self <: BreadcrumbsProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsProps](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String | Element | js.Object): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String | Element | js.Object): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerProps(value: js.Object): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
+      inline def setContainerProps(value: js.Object): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
+      inline def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDuplicateProps(value: js.Object): Self = StObject.set(x, "duplicateProps", value.asInstanceOf[js.Any])
+      inline def setDuplicateProps(value: js.Object): Self = StObject.set(x, "duplicateProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicatePropsUndefined: Self = StObject.set(x, "duplicateProps", js.undefined)
+      inline def setDuplicatePropsUndefined: Self = StObject.set(x, "duplicateProps", js.undefined)
       
-      @scala.inline
-      def setFinalItem(value: String | Element | js.Object): Self = StObject.set(x, "finalItem", value.asInstanceOf[js.Any])
+      inline def setFinalItem(value: String | Element | js.Object): Self = StObject.set(x, "finalItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalItemUndefined: Self = StObject.set(x, "finalItem", js.undefined)
+      inline def setFinalItemUndefined: Self = StObject.set(x, "finalItem", js.undefined)
       
-      @scala.inline
-      def setFinalProps(value: js.Object): Self = StObject.set(x, "finalProps", value.asInstanceOf[js.Any])
+      inline def setFinalProps(value: js.Object): Self = StObject.set(x, "finalProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalPropsUndefined: Self = StObject.set(x, "finalProps", js.undefined)
+      inline def setFinalPropsUndefined: Self = StObject.set(x, "finalProps", js.undefined)
       
-      @scala.inline
-      def setItem(value: String | Element | js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String | Element | js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setRenameProps(value: js.Object): Self = StObject.set(x, "renameProps", value.asInstanceOf[js.Any])
+      inline def setRenameProps(value: js.Object): Self = StObject.set(x, "renameProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenamePropsUndefined: Self = StObject.set(x, "renameProps", js.undefined)
+      inline def setRenamePropsUndefined: Self = StObject.set(x, "renameProps", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String | Element | js.Object): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String | Element | js.Object): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   
@@ -149,20 +128,16 @@ object mod {
   }
   object BreadcrumbsProviderProps {
     
-    @scala.inline
-    def apply(): BreadcrumbsProviderProps = {
+    inline def apply(): BreadcrumbsProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbsProviderProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsProviderPropsMutableBuilder[Self <: BreadcrumbsProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsProviderProps](x: Self) {
       
-      @scala.inline
-      def setShouldBreadcrumbsUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.Any.fromFunction1(value))
+      inline def setShouldBreadcrumbsUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldBreadcrumbsUpdateUndefined: Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.undefined)
+      inline def setShouldBreadcrumbsUpdateUndefined: Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.undefined)
     }
   }
 }

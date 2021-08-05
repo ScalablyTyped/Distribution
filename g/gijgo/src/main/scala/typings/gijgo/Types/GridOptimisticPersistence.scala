@@ -12,25 +12,19 @@ trait GridOptimisticPersistence extends StObject {
 }
 object GridOptimisticPersistence {
   
-  @scala.inline
-  def apply(localStorage: js.Array[String], sessionStorage: js.Array[String]): GridOptimisticPersistence = {
+  inline def apply(localStorage: js.Array[String], sessionStorage: js.Array[String]): GridOptimisticPersistence = {
     val __obj = js.Dynamic.literal(localStorage = localStorage.asInstanceOf[js.Any], sessionStorage = sessionStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptimisticPersistence]
   }
   
-  @scala.inline
-  implicit class GridOptimisticPersistenceMutableBuilder[Self <: GridOptimisticPersistence] (val x: Self) extends AnyVal {
+  extension [Self <: GridOptimisticPersistence](x: Self) {
     
-    @scala.inline
-    def setLocalStorage(value: js.Array[String]): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+    inline def setLocalStorage(value: js.Array[String]): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalStorageVarargs(value: String*): Self = StObject.set(x, "localStorage", js.Array(value :_*))
+    inline def setLocalStorageVarargs(value: String*): Self = StObject.set(x, "localStorage", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionStorage(value: js.Array[String]): Self = StObject.set(x, "sessionStorage", value.asInstanceOf[js.Any])
+    inline def setSessionStorage(value: js.Array[String]): Self = StObject.set(x, "sessionStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionStorageVarargs(value: String*): Self = StObject.set(x, "sessionStorage", js.Array(value :_*))
+    inline def setSessionStorageVarargs(value: String*): Self = StObject.set(x, "sessionStorage", js.Array(value :_*))
   }
 }

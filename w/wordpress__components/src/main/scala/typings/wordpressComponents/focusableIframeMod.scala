@@ -34,20 +34,16 @@ object focusableIframeMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setIframeRef(value: RefObject[HTMLIFrameElement]): Self = StObject.set(x, "iframeRef", value.asInstanceOf[js.Any])
+        inline def setIframeRef(value: RefObject[HTMLIFrameElement]): Self = StObject.set(x, "iframeRef", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIframeRefUndefined: Self = StObject.set(x, "iframeRef", js.undefined)
+        inline def setIframeRefUndefined: Self = StObject.set(x, "iframeRef", js.undefined)
       }
     }
   }

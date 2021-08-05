@@ -306,71 +306,47 @@ object testUtilsMod {
     val wheel: EventSimulator = js.native
   }
   
-  @scala.inline
-  def act(callback: js.Function0[js.UndefOr[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def act(callback: js.Function0[js.UndefOr[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
+  inline def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
   
-  @scala.inline
-  def findAllInRenderedTree(root: Component[js.Any, js.Object, js.Any], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllInRenderedTree")(root.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactInstance]]
+  inline def findAllInRenderedTree(root: Component[js.Any, js.Object, js.Any], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllInRenderedTree")(root.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactInstance]]
   
-  @scala.inline
-  def findRenderedComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedComponentWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def findRenderedComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedComponentWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def findRenderedDOMComponentWithClass(root: Component[js.Any, js.Object, js.Any], className: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def findRenderedDOMComponentWithClass(root: Component[js.Any, js.Object, js.Any], className: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @scala.inline
-  def findRenderedDOMComponentWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def findRenderedDOMComponentWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @scala.inline
-  def isCompositeComponent(instance: ReactInstance): /* is react.react.Component<any, {}, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.Component<any, {}, any> */ Boolean]
+  inline def isCompositeComponent(instance: ReactInstance): /* is react.react.Component<any, {}, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.Component<any, {}, any> */ Boolean]
   
-  @scala.inline
-  def isCompositeComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](instance: ReactInstance, `type`: ClassType[js.Any, T, C]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponentWithType")(instance.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isCompositeComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](instance: ReactInstance, `type`: ClassType[js.Any, T, C]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponentWithType")(instance.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
+  inline def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
   
-  @scala.inline
-  def isElement(element: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isElement(element: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactHTMLElement<T> */ Boolean]
-  @scala.inline
-  def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.SFCElement<P> */ Boolean]
-  @scala.inline
-  def isElementOfType[P, T /* <: Component[P, js.Object, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.CElement<P, T> */ Boolean]
+  inline def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactHTMLElement<T> */ Boolean]
+  inline def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.SFCElement<P> */ Boolean]
+  inline def isElementOfType[P, T /* <: Component[P, js.Object, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.CElement<P, T> */ Boolean]
   
-  @scala.inline
-  def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.DOMElement<P, T> */ Boolean]
+  inline def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.DOMElement<P, T> */ Boolean]
   
-  @scala.inline
-  def mockComponent(mocked: MockedComponentClass): TypeofReactTestUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any]).asInstanceOf[TypeofReactTestUtils]
-  @scala.inline
-  def mockComponent(mocked: MockedComponentClass, mockTagName: String): TypeofReactTestUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any], mockTagName.asInstanceOf[js.Any])).asInstanceOf[TypeofReactTestUtils]
+  inline def mockComponent(mocked: MockedComponentClass): TypeofReactTestUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any]).asInstanceOf[TypeofReactTestUtils]
+  inline def mockComponent(mocked: MockedComponentClass, mockTagName: String): TypeofReactTestUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any], mockTagName.asInstanceOf[js.Any])).asInstanceOf[TypeofReactTestUtils]
   
-  @scala.inline
-  def renderIntoDocument(element: SFCElement[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def renderIntoDocument[T /* <: Element */](element: DOMElement[js.Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, js.Any]) | Element | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[(Component[P, js.Object, js.Any]) | Element | Unit]
-  @scala.inline
-  def renderIntoDocument[P, T /* <: Component[P, js.Object, js.Any] */](element: CElement[P, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def renderIntoDocument(element: SFCElement[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def renderIntoDocument[T /* <: Element */](element: DOMElement[js.Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, js.Any]) | Element | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[(Component[P, js.Object, js.Any]) | Element | Unit]
+  inline def renderIntoDocument[P, T /* <: Component[P, js.Object, js.Any] */](element: CElement[P, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def scryRenderedComponentsWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedComponentsWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def scryRenderedComponentsWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedComponentsWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def scryRenderedDOMComponentsWithClass(root: Component[js.Any, js.Object, js.Any], className: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  inline def scryRenderedDOMComponentsWithClass(root: Component[js.Any, js.Object, js.Any], className: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
   
-  @scala.inline
-  def scryRenderedDOMComponentsWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  inline def scryRenderedDOMComponentsWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
   
   trait DebugPromiseLike extends StObject {
     
@@ -382,8 +358,7 @@ object testUtilsMod {
   }
   object DebugPromiseLike {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `then`: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
     ): DebugPromiseLike = {
       val __obj = js.Dynamic.literal()
@@ -391,11 +366,9 @@ object testUtilsMod {
       __obj.asInstanceOf[DebugPromiseLike]
     }
     
-    @scala.inline
-    implicit class DebugPromiseLikeMutableBuilder[Self <: DebugPromiseLike] (val x: Self) extends AnyVal {
+    extension [Self <: DebugPromiseLike](x: Self) {
       
-      @scala.inline
-      def setThen(
+      inline def setThen(
         value: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
       ): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
     }
@@ -440,86 +413,60 @@ object testUtilsMod {
   }
   object OptionalEventProperties {
     
-    @scala.inline
-    def apply(): OptionalEventProperties = {
+    inline def apply(): OptionalEventProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalEventProperties]
     }
     
-    @scala.inline
-    implicit class OptionalEventPropertiesMutableBuilder[Self <: OptionalEventProperties] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalEventProperties](x: Self) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+      inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+      inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
       
-      @scala.inline
-      def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
+      inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPreventedUndefined: Self = StObject.set(x, "defaultPrevented", js.undefined)
+      inline def setDefaultPreventedUndefined: Self = StObject.set(x, "defaultPrevented", js.undefined)
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhaseUndefined: Self = StObject.set(x, "eventPhase", js.undefined)
+      inline def setEventPhaseUndefined: Self = StObject.set(x, "eventPhase", js.undefined)
       
-      @scala.inline
-      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+      inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
+      inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
       
-      @scala.inline
-      def setNativeEvent(value: Event): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: Event): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeEventUndefined: Self = StObject.set(x, "nativeEvent", js.undefined)
+      inline def setNativeEventUndefined: Self = StObject.set(x, "nativeEvent", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
       
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+      inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -608,200 +555,136 @@ object testUtilsMod {
   }
   object SyntheticEventData {
     
-    @scala.inline
-    def apply(): SyntheticEventData = {
+    inline def apply(): SyntheticEventData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyntheticEventData]
     }
     
-    @scala.inline
-    implicit class SyntheticEventDataMutableBuilder[Self <: SyntheticEventData] (val x: Self) extends AnyVal {
+    extension [Self <: SyntheticEventData](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
+      inline def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
       
-      @scala.inline
-      def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCodeUndefined: Self = StObject.set(x, "charCode", js.undefined)
+      inline def setCharCodeUndefined: Self = StObject.set(x, "charCode", js.undefined)
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientXUndefined: Self = StObject.set(x, "clientX", js.undefined)
+      inline def setClientXUndefined: Self = StObject.set(x, "clientX", js.undefined)
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
+      inline def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
       
-      @scala.inline
-      def setClipboardData(value: DataTransfer): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
+      inline def setClipboardData(value: DataTransfer): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardDataUndefined: Self = StObject.set(x, "clipboardData", js.undefined)
+      inline def setClipboardDataUndefined: Self = StObject.set(x, "clipboardData", js.undefined)
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
       
-      @scala.inline
-      def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
+      inline def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaModeUndefined: Self = StObject.set(x, "deltaMode", js.undefined)
+      inline def setDeltaModeUndefined: Self = StObject.set(x, "deltaMode", js.undefined)
       
-      @scala.inline
-      def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+      inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
+      inline def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
       
-      @scala.inline
-      def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+      inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
+      inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
       
-      @scala.inline
-      def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
+      inline def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaZUndefined: Self = StObject.set(x, "deltaZ", js.undefined)
+      inline def setDeltaZUndefined: Self = StObject.set(x, "deltaZ", js.undefined)
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setGetModifierState(value: /* key */ String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+      inline def setGetModifierState(value: /* key */ String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetModifierStateUndefined: Self = StObject.set(x, "getModifierState", js.undefined)
+      inline def setGetModifierStateUndefined: Self = StObject.set(x, "getModifierState", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
+      inline def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
+      inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
+      inline def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
       
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+      inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
+      inline def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
+      inline def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
       
-      @scala.inline
-      def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouchesUndefined: Self = StObject.set(x, "targetTouches", js.undefined)
+      inline def setTargetTouchesUndefined: Self = StObject.set(x, "targetTouches", js.undefined)
       
-      @scala.inline
-      def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
+      inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
       
-      @scala.inline
-      def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
+      inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
     }
   }
 }

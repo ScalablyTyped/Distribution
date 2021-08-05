@@ -13,16 +13,13 @@ trait PropsP[P]
 }
 object PropsP {
   
-  @scala.inline
-  def apply[P](props: P): PropsP[P] = {
+  inline def apply[P](props: P): PropsP[P] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsP[P]]
   }
   
-  @scala.inline
-  implicit class PropsPMutableBuilder[Self <: PropsP[?], P] (val x: Self & PropsP[P]) extends AnyVal {
+  extension [Self <: PropsP[?], P](x: Self & PropsP[P]) {
     
-    @scala.inline
-    def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

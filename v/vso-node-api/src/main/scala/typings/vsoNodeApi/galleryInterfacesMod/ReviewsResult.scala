@@ -23,25 +23,19 @@ trait ReviewsResult extends StObject {
 }
 object ReviewsResult {
   
-  @scala.inline
-  def apply(hasMoreReviews: Boolean, reviews: js.Array[Review], totalReviewCount: Double): ReviewsResult = {
+  inline def apply(hasMoreReviews: Boolean, reviews: js.Array[Review], totalReviewCount: Double): ReviewsResult = {
     val __obj = js.Dynamic.literal(hasMoreReviews = hasMoreReviews.asInstanceOf[js.Any], reviews = reviews.asInstanceOf[js.Any], totalReviewCount = totalReviewCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewsResult]
   }
   
-  @scala.inline
-  implicit class ReviewsResultMutableBuilder[Self <: ReviewsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewsResult](x: Self) {
     
-    @scala.inline
-    def setHasMoreReviews(value: Boolean): Self = StObject.set(x, "hasMoreReviews", value.asInstanceOf[js.Any])
+    inline def setHasMoreReviews(value: Boolean): Self = StObject.set(x, "hasMoreReviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviews(value: js.Array[Review]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
+    inline def setReviews(value: js.Array[Review]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalReviewCount(value: Double): Self = StObject.set(x, "totalReviewCount", value.asInstanceOf[js.Any])
+    inline def setTotalReviewCount(value: Double): Self = StObject.set(x, "totalReviewCount", value.asInstanceOf[js.Any])
   }
 }

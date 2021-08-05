@@ -21,8 +21,7 @@ trait Button extends StObject {
 }
 object Button {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAuthorizationAction: AuthorizationAction => Button,
     setComposeAction: (Action, ComposedEmailType) => Button,
     setOnClickAction: Action => Button,
@@ -33,22 +32,16 @@ object Button {
     __obj.asInstanceOf[Button]
   }
   
-  @scala.inline
-  implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+  extension [Self <: Button](x: Self) {
     
-    @scala.inline
-    def setSetAuthorizationAction(value: AuthorizationAction => Button): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    inline def setSetAuthorizationAction(value: AuthorizationAction => Button): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComposeAction(value: (Action, ComposedEmailType) => Button): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => Button): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetOnClickAction(value: Action => Button): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickAction(value: Action => Button): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnClickOpenLinkAction(value: Action => Button): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickOpenLinkAction(value: Action => Button): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => Button): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    inline def setSetOpenLink(value: OpenLink => Button): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
   }
 }

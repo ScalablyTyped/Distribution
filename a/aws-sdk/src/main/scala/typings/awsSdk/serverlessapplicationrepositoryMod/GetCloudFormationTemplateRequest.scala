@@ -18,19 +18,15 @@ trait GetCloudFormationTemplateRequest extends StObject {
 }
 object GetCloudFormationTemplateRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, TemplateId: string): GetCloudFormationTemplateRequest = {
+  inline def apply(ApplicationId: string, TemplateId: string): GetCloudFormationTemplateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCloudFormationTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetCloudFormationTemplateRequestMutableBuilder[Self <: GetCloudFormationTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCloudFormationTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateId(value: string): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: string): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }
 }

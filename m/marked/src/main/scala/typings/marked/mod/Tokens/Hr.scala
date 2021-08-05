@@ -16,20 +16,16 @@ trait Hr
 }
 object Hr {
   
-  @scala.inline
-  def apply(raw: String): Hr = {
+  inline def apply(raw: String): Hr = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("hr")
     __obj.asInstanceOf[Hr]
   }
   
-  @scala.inline
-  implicit class HrMutableBuilder[Self <: Hr] (val x: Self) extends AnyVal {
+  extension [Self <: Hr](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: hr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: hr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

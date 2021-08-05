@@ -10,8 +10,7 @@ object bisectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](getter: GetterFunc[T]): js.Function4[
+  inline def default[T](getter: GetterFunc[T]): js.Function4[
     /* a */ js.Array[T], 
     /* x */ Double, 
     /* _lo */ js.UndefOr[Double], 

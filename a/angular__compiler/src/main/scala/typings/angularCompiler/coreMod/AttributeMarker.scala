@@ -38,8 +38,7 @@ object AttributeMarker {
     * var _c1 = ['moo', 'car', AttributeMarker.Bindings, 'foo', 'bar'];
     * ```
     */
-  @scala.inline
-  def Bindings: `3` = 3.asInstanceOf[`3`]
+  inline def Bindings: `3` = 3.asInstanceOf[`3`]
   
   /**
     * Signals class declaration.
@@ -57,8 +56,7 @@ object AttributeMarker {
     * var _c1 = [AttributeMarker.Classes, 'foo', 'bar', 'baz'];
     * ```
     */
-  @scala.inline
-  def Classes: `1` = 1.asInstanceOf[`1`]
+  inline def Classes: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Signals that the following attribute will be translated by runtime i18n
@@ -74,16 +72,14 @@ object AttributeMarker {
     * ```
     * var _c1 = ['moo', 'car', AttributeMarker.I18n, 'foo', 'bar'];
     */
-  @scala.inline
-  def I18n: `6` = 6.asInstanceOf[`6`]
+  inline def I18n: `6` = 6.asInstanceOf[`6`]
   
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue
     * in that order.
     */
-  @scala.inline
-  def NamespaceURI: `0` = 0.asInstanceOf[`0`]
+  inline def NamespaceURI: `0` = 0.asInstanceOf[`0`]
   
   /**
     * Signals that the following attribute is `ngProjectAs` and its value is a parsed `CssSelector`.
@@ -100,8 +96,7 @@ object AttributeMarker {
     * ['attr', 'value', AttributeMarker.ProjectAs, ['', 'title', '']]
     * ```
     */
-  @scala.inline
-  def ProjectAs: `5` = 5.asInstanceOf[`5`]
+  inline def ProjectAs: `5` = 5.asInstanceOf[`5`]
   
   /**
     * Signals style declaration.
@@ -120,8 +115,7 @@ object AttributeMarker {
     * var _c1 = [AttributeMarker.Styles, 'width', '100px', 'height'. '200px', 'color', 'red'];
     * ```
     */
-  @scala.inline
-  def Styles: `2` = 2.asInstanceOf[`2`]
+  inline def Styles: `2` = 2.asInstanceOf[`2`]
   
   /**
     * Signals that the following attribute names were hoisted from an inline-template declaration.
@@ -146,6 +140,5 @@ object AttributeMarker {
     * ['dirA', '', AttributeMarker.Bindings, 'dirB']
     * ```
     */
-  @scala.inline
-  def Template: `4` = 4.asInstanceOf[`4`]
+  inline def Template: `4` = 4.asInstanceOf[`4`]
 }

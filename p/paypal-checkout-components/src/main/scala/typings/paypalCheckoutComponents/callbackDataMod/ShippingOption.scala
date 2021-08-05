@@ -40,29 +40,22 @@ trait ShippingOption extends StObject {
 }
 object ShippingOption {
   
-  @scala.inline
-  def apply(amount: CurrencyAmount, id: String, label: String, selected: Boolean, `type`: ShippingOptionType): ShippingOption = {
+  inline def apply(amount: CurrencyAmount, id: String, label: String, selected: Boolean, `type`: ShippingOptionType): ShippingOption = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingOption]
   }
   
-  @scala.inline
-  implicit class ShippingOptionMutableBuilder[Self <: ShippingOption] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingOption](x: Self) {
     
-    @scala.inline
-    def setAmount(value: CurrencyAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: CurrencyAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ShippingOptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ShippingOptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

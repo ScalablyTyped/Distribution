@@ -20,12 +20,8 @@ object PointBounds {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def bounds(point: Coord, pointN: Coord): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
-  @scala.inline
-  def bounds(point: Coord, pointN: PointLiteral): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
-  @scala.inline
-  def bounds(point: PointLiteral, pointN: Coord): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
-  @scala.inline
-  def bounds(point: PointLiteral, pointN: PointLiteral): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
+  inline def bounds(point: Coord, pointN: Coord): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
+  inline def bounds(point: Coord, pointN: PointLiteral): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
+  inline def bounds(point: PointLiteral, pointN: Coord): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
+  inline def bounds(point: PointLiteral, pointN: PointLiteral): typings.navermaps.naver.maps.PointBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(point.asInstanceOf[js.Any], pointN.asInstanceOf[js.Any])).asInstanceOf[typings.navermaps.naver.maps.PointBounds]
 }

@@ -11,19 +11,15 @@ trait DeleteContactPhotoResponse extends StObject {
 }
 object DeleteContactPhotoResponse {
   
-  @scala.inline
-  def apply(): DeleteContactPhotoResponse = {
+  inline def apply(): DeleteContactPhotoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteContactPhotoResponse]
   }
   
-  @scala.inline
-  implicit class DeleteContactPhotoResponseMutableBuilder[Self <: DeleteContactPhotoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContactPhotoResponse](x: Self) {
     
-    @scala.inline
-    def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
   }
 }

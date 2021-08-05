@@ -13,16 +13,13 @@ trait VerifyDomainIdentityResponse extends StObject {
 }
 object VerifyDomainIdentityResponse {
   
-  @scala.inline
-  def apply(VerificationToken: VerificationToken): VerifyDomainIdentityResponse = {
+  inline def apply(VerificationToken: VerificationToken): VerifyDomainIdentityResponse = {
     val __obj = js.Dynamic.literal(VerificationToken = VerificationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyDomainIdentityResponse]
   }
   
-  @scala.inline
-  implicit class VerifyDomainIdentityResponseMutableBuilder[Self <: VerifyDomainIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyDomainIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setVerificationToken(value: VerificationToken): Self = StObject.set(x, "VerificationToken", value.asInstanceOf[js.Any])
+    inline def setVerificationToken(value: VerificationToken): Self = StObject.set(x, "VerificationToken", value.asInstanceOf[js.Any])
   }
 }

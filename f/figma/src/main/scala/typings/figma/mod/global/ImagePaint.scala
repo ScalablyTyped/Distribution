@@ -35,62 +35,44 @@ trait ImagePaint
 }
 object ImagePaint {
   
-  @scala.inline
-  def apply(scaleMode: FILL | FIT | CROP | TILE): ImagePaint = {
+  inline def apply(scaleMode: FILL | FIT | CROP | TILE): ImagePaint = {
     val __obj = js.Dynamic.literal(scaleMode = scaleMode.asInstanceOf[js.Any], imageHash = null)
     __obj.updateDynamic("type")("IMAGE")
     __obj.asInstanceOf[ImagePaint]
   }
   
-  @scala.inline
-  implicit class ImagePaintMutableBuilder[Self <: ImagePaint] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePaint](x: Self) {
     
-    @scala.inline
-    def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    inline def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
+    inline def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
     
-    @scala.inline
-    def setFilters(value: ImageFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ImageFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setImageHash(value: String): Self = StObject.set(x, "imageHash", value.asInstanceOf[js.Any])
+    inline def setImageHash(value: String): Self = StObject.set(x, "imageHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageHashNull: Self = StObject.set(x, "imageHash", null)
+    inline def setImageHashNull: Self = StObject.set(x, "imageHash", null)
     
-    @scala.inline
-    def setImageTransform(value: Transform): Self = StObject.set(x, "imageTransform", value.asInstanceOf[js.Any])
+    inline def setImageTransform(value: Transform): Self = StObject.set(x, "imageTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTransformUndefined: Self = StObject.set(x, "imageTransform", js.undefined)
+    inline def setImageTransformUndefined: Self = StObject.set(x, "imageTransform", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setScaleMode(value: FILL | FIT | CROP | TILE): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: FILL | FIT | CROP | TILE): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingFactor(value: Double): Self = StObject.set(x, "scalingFactor", value.asInstanceOf[js.Any])
+    inline def setScalingFactor(value: Double): Self = StObject.set(x, "scalingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingFactorUndefined: Self = StObject.set(x, "scalingFactor", js.undefined)
+    inline def setScalingFactorUndefined: Self = StObject.set(x, "scalingFactor", js.undefined)
     
-    @scala.inline
-    def setType(value: IMAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IMAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

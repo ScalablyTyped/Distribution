@@ -15,19 +15,15 @@ trait MenuItemsConfig
 }
 object MenuItemsConfig {
   
-  @scala.inline
-  def apply(menuList: js.Array[String]): MenuItemsConfig = {
+  inline def apply(menuList: js.Array[String]): MenuItemsConfig = {
     val __obj = js.Dynamic.literal(menuList = menuList.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemsConfig]
   }
   
-  @scala.inline
-  implicit class MenuItemsConfigMutableBuilder[Self <: MenuItemsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MenuItemsConfig](x: Self) {
     
-    @scala.inline
-    def setMenuList(value: js.Array[String]): Self = StObject.set(x, "menuList", value.asInstanceOf[js.Any])
+    inline def setMenuList(value: js.Array[String]): Self = StObject.set(x, "menuList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuListVarargs(value: String*): Self = StObject.set(x, "menuList", js.Array(value :_*))
+    inline def setMenuListVarargs(value: String*): Self = StObject.set(x, "menuList", js.Array(value :_*))
   }
 }

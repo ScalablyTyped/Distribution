@@ -14,22 +14,17 @@ trait CasperSelector extends StObject {
 }
 object CasperSelector {
   
-  @scala.inline
-  def apply(path: String): CasperSelector = {
+  inline def apply(path: String): CasperSelector = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CasperSelector]
   }
   
-  @scala.inline
-  implicit class CasperSelectorMutableBuilder[Self <: CasperSelector] (val x: Self) extends AnyVal {
+  extension [Self <: CasperSelector](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: xpath | css): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: xpath | css): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

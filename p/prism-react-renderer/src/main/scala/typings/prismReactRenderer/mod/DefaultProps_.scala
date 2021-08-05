@@ -12,19 +12,15 @@ trait DefaultProps_ extends StObject {
 }
 object DefaultProps_ {
   
-  @scala.inline
-  def apply(Prism: PrismLib, theme: PrismTheme): DefaultProps_ = {
+  inline def apply(Prism: PrismLib, theme: PrismTheme): DefaultProps_ = {
     val __obj = js.Dynamic.literal(Prism = Prism.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultProps_]
   }
   
-  @scala.inline
-  implicit class DefaultProps_MutableBuilder[Self <: DefaultProps_] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultProps_](x: Self) {
     
-    @scala.inline
-    def setPrism(value: PrismLib): Self = StObject.set(x, "Prism", value.asInstanceOf[js.Any])
+    inline def setPrism(value: PrismLib): Self = StObject.set(x, "Prism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: PrismTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: PrismTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

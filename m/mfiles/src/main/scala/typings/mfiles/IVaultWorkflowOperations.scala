@@ -50,8 +50,7 @@ trait IVaultWorkflowOperations extends StObject {
 }
 object IVaultWorkflowOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddWorkflowAdmin: IWorkflowAdmin => IWorkflowAdmin,
     GetStateTransitionSignatureSettings: (Double, Double) => ISignatureSettings,
     GetStateTransitionSignatureSettingsByID: Double => ISignatureSettings,
@@ -78,70 +77,48 @@ object IVaultWorkflowOperations {
     __obj.asInstanceOf[IVaultWorkflowOperations]
   }
   
-  @scala.inline
-  implicit class IVaultWorkflowOperationsMutableBuilder[Self <: IVaultWorkflowOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultWorkflowOperations](x: Self) {
     
-    @scala.inline
-    def setAddWorkflowAdmin(value: IWorkflowAdmin => IWorkflowAdmin): Self = StObject.set(x, "AddWorkflowAdmin", js.Any.fromFunction1(value))
+    inline def setAddWorkflowAdmin(value: IWorkflowAdmin => IWorkflowAdmin): Self = StObject.set(x, "AddWorkflowAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStateTransitionSignatureSettings(value: (Double, Double) => ISignatureSettings): Self = StObject.set(x, "GetStateTransitionSignatureSettings", js.Any.fromFunction2(value))
+    inline def setGetStateTransitionSignatureSettings(value: (Double, Double) => ISignatureSettings): Self = StObject.set(x, "GetStateTransitionSignatureSettings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetStateTransitionSignatureSettingsByID(value: Double => ISignatureSettings): Self = StObject.set(x, "GetStateTransitionSignatureSettingsByID", js.Any.fromFunction1(value))
+    inline def setGetStateTransitionSignatureSettingsByID(value: Double => ISignatureSettings): Self = StObject.set(x, "GetStateTransitionSignatureSettingsByID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowAdmin(value: Double => IWorkflowAdmin): Self = StObject.set(x, "GetWorkflowAdmin", js.Any.fromFunction1(value))
+    inline def setGetWorkflowAdmin(value: Double => IWorkflowAdmin): Self = StObject.set(x, "GetWorkflowAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowForClient(value: (Double, Boolean) => IWorkflow): Self = StObject.set(x, "GetWorkflowForClient", js.Any.fromFunction2(value))
+    inline def setGetWorkflowForClient(value: (Double, Boolean) => IWorkflow): Self = StObject.set(x, "GetWorkflowForClient", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetWorkflowIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowIDByAlias", js.Any.fromFunction1(value))
+    inline def setGetWorkflowIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowIDByAlias", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowIDByGUID", js.Any.fromFunction1(value))
+    inline def setGetWorkflowIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowIDByGUID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowStateIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowStateIDByAlias", js.Any.fromFunction1(value))
+    inline def setGetWorkflowStateIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowStateIDByAlias", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowStateIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowStateIDByGUID", js.Any.fromFunction1(value))
+    inline def setGetWorkflowStateIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowStateIDByGUID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowStateTransitionIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowStateTransitionIDByAlias", js.Any.fromFunction1(value))
+    inline def setGetWorkflowStateTransitionIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowStateTransitionIDByAlias", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowStateTransitionIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowStateTransitionIDByGUID", js.Any.fromFunction1(value))
+    inline def setGetWorkflowStateTransitionIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowStateTransitionIDByGUID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowStateTransitions(value: (Double, ITypedValue) => IStateTransitionsForClient): Self = StObject.set(x, "GetWorkflowStateTransitions", js.Any.fromFunction2(value))
+    inline def setGetWorkflowStateTransitions(value: (Double, ITypedValue) => IStateTransitionsForClient): Self = StObject.set(x, "GetWorkflowStateTransitions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetWorkflowStateTransitionsAsJSON(value: (Double, ITypedValue, IObjVer) => String): Self = StObject.set(x, "GetWorkflowStateTransitionsAsJSON", js.Any.fromFunction3(value))
+    inline def setGetWorkflowStateTransitionsAsJSON(value: (Double, ITypedValue, IObjVer) => String): Self = StObject.set(x, "GetWorkflowStateTransitionsAsJSON", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetWorkflowStateTransitionsEx(value: (Double, ITypedValue, IObjVer) => IStateTransitionsForClient): Self = StObject.set(x, "GetWorkflowStateTransitionsEx", js.Any.fromFunction3(value))
+    inline def setGetWorkflowStateTransitionsEx(value: (Double, ITypedValue, IObjVer) => IStateTransitionsForClient): Self = StObject.set(x, "GetWorkflowStateTransitionsEx", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetWorkflowStates(value: (Double, ITypedValue) => IStates): Self = StObject.set(x, "GetWorkflowStates", js.Any.fromFunction2(value))
+    inline def setGetWorkflowStates(value: (Double, ITypedValue) => IStates): Self = StObject.set(x, "GetWorkflowStates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetWorkflowStatesEx(value: (Double, ITypedValue, IObjVer) => IStates): Self = StObject.set(x, "GetWorkflowStatesEx", js.Any.fromFunction3(value))
+    inline def setGetWorkflowStatesEx(value: (Double, ITypedValue, IObjVer) => IStates): Self = StObject.set(x, "GetWorkflowStatesEx", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetWorkflowsAdmin(value: () => IWorkflowsAdmin): Self = StObject.set(x, "GetWorkflowsAdmin", js.Any.fromFunction0(value))
+    inline def setGetWorkflowsAdmin(value: () => IWorkflowsAdmin): Self = StObject.set(x, "GetWorkflowsAdmin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorkflowsAsValueListItems(value: Boolean => IValueListItems): Self = StObject.set(x, "GetWorkflowsAsValueListItems", js.Any.fromFunction1(value))
+    inline def setGetWorkflowsAsValueListItems(value: Boolean => IValueListItems): Self = StObject.set(x, "GetWorkflowsAsValueListItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorkflowsForClient(value: Boolean => IWorkflows): Self = StObject.set(x, "GetWorkflowsForClient", js.Any.fromFunction1(value))
+    inline def setGetWorkflowsForClient(value: Boolean => IWorkflows): Self = StObject.set(x, "GetWorkflowsForClient", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveWorkflowAdmin(value: Double => Unit): Self = StObject.set(x, "RemoveWorkflowAdmin", js.Any.fromFunction1(value))
+    inline def setRemoveWorkflowAdmin(value: Double => Unit): Self = StObject.set(x, "RemoveWorkflowAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateWorkflowAdmin(value: IWorkflowAdmin => IWorkflowAdmin): Self = StObject.set(x, "UpdateWorkflowAdmin", js.Any.fromFunction1(value))
+    inline def setUpdateWorkflowAdmin(value: IWorkflowAdmin => IWorkflowAdmin): Self = StObject.set(x, "UpdateWorkflowAdmin", js.Any.fromFunction1(value))
   }
 }

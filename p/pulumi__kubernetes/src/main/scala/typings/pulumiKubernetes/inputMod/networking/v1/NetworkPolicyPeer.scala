@@ -32,31 +32,23 @@ trait NetworkPolicyPeer extends StObject {
 }
 object NetworkPolicyPeer {
   
-  @scala.inline
-  def apply(): NetworkPolicyPeer = {
+  inline def apply(): NetworkPolicyPeer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkPolicyPeer]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyPeerMutableBuilder[Self <: NetworkPolicyPeer] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicyPeer](x: Self) {
     
-    @scala.inline
-    def setIpBlock(value: Input[IPBlock]): Self = StObject.set(x, "ipBlock", value.asInstanceOf[js.Any])
+    inline def setIpBlock(value: Input[IPBlock]): Self = StObject.set(x, "ipBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpBlockUndefined: Self = StObject.set(x, "ipBlock", js.undefined)
+    inline def setIpBlockUndefined: Self = StObject.set(x, "ipBlock", js.undefined)
     
-    @scala.inline
-    def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
+    inline def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
+    inline def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
     
-    @scala.inline
-    def setPodSelector(value: Input[LabelSelector]): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
+    inline def setPodSelector(value: Input[LabelSelector]): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodSelectorUndefined: Self = StObject.set(x, "podSelector", js.undefined)
+    inline def setPodSelectorUndefined: Self = StObject.set(x, "podSelector", js.undefined)
   }
 }

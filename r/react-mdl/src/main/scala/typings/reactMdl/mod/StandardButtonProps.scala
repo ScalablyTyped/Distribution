@@ -12,19 +12,15 @@ trait StandardButtonProps
 }
 object StandardButtonProps {
   
-  @scala.inline
-  def apply(): StandardButtonProps = {
+  inline def apply(): StandardButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardButtonProps]
   }
   
-  @scala.inline
-  implicit class StandardButtonPropsMutableBuilder[Self <: StandardButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: StandardButtonProps](x: Self) {
     
-    @scala.inline
-    def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+    inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
   }
 }

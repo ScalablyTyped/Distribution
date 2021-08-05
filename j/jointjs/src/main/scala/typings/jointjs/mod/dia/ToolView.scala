@@ -44,20 +44,16 @@ object ToolView {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFocusOpacity(value: Double): Self = StObject.set(x, "focusOpacity", value.asInstanceOf[js.Any])
+      inline def setFocusOpacity(value: Double): Self = StObject.set(x, "focusOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusOpacityUndefined: Self = StObject.set(x, "focusOpacity", js.undefined)
+      inline def setFocusOpacityUndefined: Self = StObject.set(x, "focusOpacity", js.undefined)
     }
   }
 }

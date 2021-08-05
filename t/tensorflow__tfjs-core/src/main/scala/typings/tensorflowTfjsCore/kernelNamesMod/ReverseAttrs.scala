@@ -10,19 +10,15 @@ trait ReverseAttrs extends StObject {
 }
 object ReverseAttrs {
   
-  @scala.inline
-  def apply(dims: Double | js.Array[Double]): ReverseAttrs = {
+  inline def apply(dims: Double | js.Array[Double]): ReverseAttrs = {
     val __obj = js.Dynamic.literal(dims = dims.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReverseAttrs]
   }
   
-  @scala.inline
-  implicit class ReverseAttrsMutableBuilder[Self <: ReverseAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: ReverseAttrs](x: Self) {
     
-    @scala.inline
-    def setDims(value: Double | js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
+    inline def setDims(value: Double | js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
+    inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
   }
 }

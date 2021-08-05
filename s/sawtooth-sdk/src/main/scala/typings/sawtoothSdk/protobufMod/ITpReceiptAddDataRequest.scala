@@ -15,31 +15,23 @@ trait ITpReceiptAddDataRequest extends StObject {
 }
 object ITpReceiptAddDataRequest {
   
-  @scala.inline
-  def apply(): ITpReceiptAddDataRequest = {
+  inline def apply(): ITpReceiptAddDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpReceiptAddDataRequest]
   }
   
-  @scala.inline
-  implicit class ITpReceiptAddDataRequestMutableBuilder[Self <: ITpReceiptAddDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITpReceiptAddDataRequest](x: Self) {
     
-    @scala.inline
-    def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextIdNull: Self = StObject.set(x, "contextId", null)
+    inline def setContextIdNull: Self = StObject.set(x, "contextId", null)
     
-    @scala.inline
-    def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
+    inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
     
-    @scala.inline
-    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait StartEnvironmentMetadata extends StObject {
 }
 object StartEnvironmentMetadata {
   
-  @scala.inline
-  def apply(): StartEnvironmentMetadata = {
+  inline def apply(): StartEnvironmentMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartEnvironmentMetadata]
   }
   
-  @scala.inline
-  implicit class StartEnvironmentMetadataMutableBuilder[Self <: StartEnvironmentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: StartEnvironmentMetadata](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

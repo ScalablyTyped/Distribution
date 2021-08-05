@@ -66,8 +66,7 @@ object adapterMod {
   }
   object MDCChipSetAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       announceMessage: String => Unit,
       focusChipPrimaryActionAtIndex: Double => Unit,
       focusChipTrailingActionAtIndex: Double => Unit,
@@ -83,38 +82,27 @@ object adapterMod {
       __obj.asInstanceOf[MDCChipSetAdapter]
     }
     
-    @scala.inline
-    implicit class MDCChipSetAdapterMutableBuilder[Self <: MDCChipSetAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCChipSetAdapter](x: Self) {
       
-      @scala.inline
-      def setAnnounceMessage(value: String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
+      inline def setAnnounceMessage(value: String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusChipPrimaryActionAtIndex(value: Double => Unit): Self = StObject.set(x, "focusChipPrimaryActionAtIndex", js.Any.fromFunction1(value))
+      inline def setFocusChipPrimaryActionAtIndex(value: Double => Unit): Self = StObject.set(x, "focusChipPrimaryActionAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusChipTrailingActionAtIndex(value: Double => Unit): Self = StObject.set(x, "focusChipTrailingActionAtIndex", js.Any.fromFunction1(value))
+      inline def setFocusChipTrailingActionAtIndex(value: Double => Unit): Self = StObject.set(x, "focusChipTrailingActionAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChipListCount(value: () => Double): Self = StObject.set(x, "getChipListCount", js.Any.fromFunction0(value))
+      inline def setGetChipListCount(value: () => Double): Self = StObject.set(x, "getChipListCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndexOfChipById(value: String => Double): Self = StObject.set(x, "getIndexOfChipById", js.Any.fromFunction1(value))
+      inline def setGetIndexOfChipById(value: String => Double): Self = StObject.set(x, "getIndexOfChipById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveChipAtIndex(value: Double => Unit): Self = StObject.set(x, "removeChipAtIndex", js.Any.fromFunction1(value))
+      inline def setRemoveChipAtIndex(value: Double => Unit): Self = StObject.set(x, "removeChipAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveFocusFromChipAtIndex(value: Double => Unit): Self = StObject.set(x, "removeFocusFromChipAtIndex", js.Any.fromFunction1(value))
+      inline def setRemoveFocusFromChipAtIndex(value: Double => Unit): Self = StObject.set(x, "removeFocusFromChipAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectChipAtIndex(value: (Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "selectChipAtIndex", js.Any.fromFunction3(value))
+      inline def setSelectChipAtIndex(value: (Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "selectChipAtIndex", js.Any.fromFunction3(value))
     }
   }
 }

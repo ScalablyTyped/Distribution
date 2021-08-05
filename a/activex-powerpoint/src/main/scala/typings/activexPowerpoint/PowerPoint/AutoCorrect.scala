@@ -10,13 +10,12 @@ trait AutoCorrect extends StObject {
   
   var DisplayAutoLayoutOptions: Boolean
   
-  @JSName("PowerPoint.AutoCorrect_typekey")
+  /* private */ @JSName("PowerPoint.AutoCorrect_typekey")
   var PowerPointDotAutoCorrect_typekey: AutoCorrect
 }
 object AutoCorrect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayAutoCorrectOptions: Boolean,
     DisplayAutoLayoutOptions: Boolean,
     PowerPointDotAutoCorrect_typekey: AutoCorrect
@@ -26,16 +25,12 @@ object AutoCorrect {
     __obj.asInstanceOf[AutoCorrect]
   }
   
-  @scala.inline
-  implicit class AutoCorrectMutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCorrect](x: Self) {
     
-    @scala.inline
-    def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAutoLayoutOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoLayoutOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayAutoLayoutOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoLayoutOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "PowerPoint.AutoCorrect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "PowerPoint.AutoCorrect_typekey", value.asInstanceOf[js.Any])
   }
 }

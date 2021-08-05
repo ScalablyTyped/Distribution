@@ -19,28 +19,21 @@ trait WorkbookTableRow
 }
 object WorkbookTableRow {
   
-  @scala.inline
-  def apply(): WorkbookTableRow = {
+  inline def apply(): WorkbookTableRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookTableRow]
   }
   
-  @scala.inline
-  implicit class WorkbookTableRowMutableBuilder[Self <: WorkbookTableRow] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookTableRow](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesNull: Self = StObject.set(x, "values", null)
+    inline def setValuesNull: Self = StObject.set(x, "values", null)
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

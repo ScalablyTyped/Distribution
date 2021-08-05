@@ -28,8 +28,7 @@ trait CreateVPCEConfigurationRequest extends StObject {
 }
 object CreateVPCEConfigurationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     serviceDnsName: ServiceDnsName,
     vpceConfigurationName: VPCEConfigurationName,
     vpceServiceName: VPCEServiceName
@@ -38,22 +37,16 @@ object CreateVPCEConfigurationRequest {
     __obj.asInstanceOf[CreateVPCEConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CreateVPCEConfigurationRequestMutableBuilder[Self <: CreateVPCEConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVPCEConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setServiceDnsName(value: ServiceDnsName): Self = StObject.set(x, "serviceDnsName", value.asInstanceOf[js.Any])
+    inline def setServiceDnsName(value: ServiceDnsName): Self = StObject.set(x, "serviceDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = StObject.set(x, "vpceConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = StObject.set(x, "vpceConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationDescriptionUndefined: Self = StObject.set(x, "vpceConfigurationDescription", js.undefined)
+    inline def setVpceConfigurationDescriptionUndefined: Self = StObject.set(x, "vpceConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurationName(value: VPCEConfigurationName): Self = StObject.set(x, "vpceConfigurationName", value.asInstanceOf[js.Any])
+    inline def setVpceConfigurationName(value: VPCEConfigurationName): Self = StObject.set(x, "vpceConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceServiceName(value: VPCEServiceName): Self = StObject.set(x, "vpceServiceName", value.asInstanceOf[js.Any])
+    inline def setVpceServiceName(value: VPCEServiceName): Self = StObject.set(x, "vpceServiceName", value.asInstanceOf[js.Any])
   }
 }

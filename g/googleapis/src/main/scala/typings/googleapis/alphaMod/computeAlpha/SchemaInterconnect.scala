@@ -176,172 +176,117 @@ trait SchemaInterconnect extends StObject {
 }
 object SchemaInterconnect {
   
-  @scala.inline
-  def apply(): SchemaInterconnect = {
+  inline def apply(): SchemaInterconnect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnect]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectMutableBuilder[Self <: SchemaInterconnect] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnect](x: Self) {
     
-    @scala.inline
-    def setAdminEnabled(value: Boolean): Self = StObject.set(x, "adminEnabled", value.asInstanceOf[js.Any])
+    inline def setAdminEnabled(value: Boolean): Self = StObject.set(x, "adminEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminEnabledUndefined: Self = StObject.set(x, "adminEnabled", js.undefined)
+    inline def setAdminEnabledUndefined: Self = StObject.set(x, "adminEnabled", js.undefined)
     
-    @scala.inline
-    def setCircuitInfos(value: js.Array[SchemaInterconnectCircuitInfo]): Self = StObject.set(x, "circuitInfos", value.asInstanceOf[js.Any])
+    inline def setCircuitInfos(value: js.Array[SchemaInterconnectCircuitInfo]): Self = StObject.set(x, "circuitInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuitInfosUndefined: Self = StObject.set(x, "circuitInfos", js.undefined)
+    inline def setCircuitInfosUndefined: Self = StObject.set(x, "circuitInfos", js.undefined)
     
-    @scala.inline
-    def setCircuitInfosVarargs(value: SchemaInterconnectCircuitInfo*): Self = StObject.set(x, "circuitInfos", js.Array(value :_*))
+    inline def setCircuitInfosVarargs(value: SchemaInterconnectCircuitInfo*): Self = StObject.set(x, "circuitInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
+    inline def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerNameUndefined: Self = StObject.set(x, "customerName", js.undefined)
+    inline def setCustomerNameUndefined: Self = StObject.set(x, "customerName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpectedOutages(value: js.Array[SchemaInterconnectOutageNotification]): Self = StObject.set(x, "expectedOutages", value.asInstanceOf[js.Any])
+    inline def setExpectedOutages(value: js.Array[SchemaInterconnectOutageNotification]): Self = StObject.set(x, "expectedOutages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedOutagesUndefined: Self = StObject.set(x, "expectedOutages", js.undefined)
+    inline def setExpectedOutagesUndefined: Self = StObject.set(x, "expectedOutages", js.undefined)
     
-    @scala.inline
-    def setExpectedOutagesVarargs(value: SchemaInterconnectOutageNotification*): Self = StObject.set(x, "expectedOutages", js.Array(value :_*))
+    inline def setExpectedOutagesVarargs(value: SchemaInterconnectOutageNotification*): Self = StObject.set(x, "expectedOutages", js.Array(value :_*))
     
-    @scala.inline
-    def setGoogleIpAddress(value: String): Self = StObject.set(x, "googleIpAddress", value.asInstanceOf[js.Any])
+    inline def setGoogleIpAddress(value: String): Self = StObject.set(x, "googleIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleIpAddressUndefined: Self = StObject.set(x, "googleIpAddress", js.undefined)
+    inline def setGoogleIpAddressUndefined: Self = StObject.set(x, "googleIpAddress", js.undefined)
     
-    @scala.inline
-    def setGoogleReferenceId(value: String): Self = StObject.set(x, "googleReferenceId", value.asInstanceOf[js.Any])
+    inline def setGoogleReferenceId(value: String): Self = StObject.set(x, "googleReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleReferenceIdUndefined: Self = StObject.set(x, "googleReferenceId", js.undefined)
+    inline def setGoogleReferenceIdUndefined: Self = StObject.set(x, "googleReferenceId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInterconnectAttachments(value: js.Array[String]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
+    inline def setInterconnectAttachments(value: js.Array[String]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
+    inline def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
     
-    @scala.inline
-    def setInterconnectAttachmentsVarargs(value: String*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
+    inline def setInterconnectAttachmentsVarargs(value: String*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setInterconnectType(value: String): Self = StObject.set(x, "interconnectType", value.asInstanceOf[js.Any])
+    inline def setInterconnectType(value: String): Self = StObject.set(x, "interconnectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectTypeUndefined: Self = StObject.set(x, "interconnectType", js.undefined)
+    inline def setInterconnectTypeUndefined: Self = StObject.set(x, "interconnectType", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
+    inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
+    inline def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNocContactEmail(value: String): Self = StObject.set(x, "nocContactEmail", value.asInstanceOf[js.Any])
+    inline def setNocContactEmail(value: String): Self = StObject.set(x, "nocContactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNocContactEmailUndefined: Self = StObject.set(x, "nocContactEmail", js.undefined)
+    inline def setNocContactEmailUndefined: Self = StObject.set(x, "nocContactEmail", js.undefined)
     
-    @scala.inline
-    def setOperationalStatus(value: String): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
+    inline def setOperationalStatus(value: String): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
+    inline def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
-    @scala.inline
-    def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
+    inline def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
+    inline def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
     
-    @scala.inline
-    def setProvisionedLinkCount(value: Double): Self = StObject.set(x, "provisionedLinkCount", value.asInstanceOf[js.Any])
+    inline def setProvisionedLinkCount(value: Double): Self = StObject.set(x, "provisionedLinkCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedLinkCountUndefined: Self = StObject.set(x, "provisionedLinkCount", js.undefined)
+    inline def setProvisionedLinkCountUndefined: Self = StObject.set(x, "provisionedLinkCount", js.undefined)
     
-    @scala.inline
-    def setRequestedLinkCount(value: Double): Self = StObject.set(x, "requestedLinkCount", value.asInstanceOf[js.Any])
+    inline def setRequestedLinkCount(value: Double): Self = StObject.set(x, "requestedLinkCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedLinkCountUndefined: Self = StObject.set(x, "requestedLinkCount", js.undefined)
+    inline def setRequestedLinkCountUndefined: Self = StObject.set(x, "requestedLinkCount", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
+    inline def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
+    inline def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

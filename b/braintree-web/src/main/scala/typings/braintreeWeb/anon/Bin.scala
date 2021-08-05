@@ -18,28 +18,21 @@ trait Bin extends StObject {
 }
 object Bin {
   
-  @scala.inline
-  def apply(bin: String, cardType: String, isNetworkTokenized: Boolean, lastFour: String, lastTow: String): Bin = {
+  inline def apply(bin: String, cardType: String, isNetworkTokenized: Boolean, lastFour: String, lastTow: String): Bin = {
     val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], isNetworkTokenized = isNetworkTokenized.asInstanceOf[js.Any], lastFour = lastFour.asInstanceOf[js.Any], lastTow = lastTow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bin]
   }
   
-  @scala.inline
-  implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+  extension [Self <: Bin](x: Self) {
     
-    @scala.inline
-    def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+    inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNetworkTokenized(value: Boolean): Self = StObject.set(x, "isNetworkTokenized", value.asInstanceOf[js.Any])
+    inline def setIsNetworkTokenized(value: Boolean): Self = StObject.set(x, "isNetworkTokenized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
+    inline def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTow(value: String): Self = StObject.set(x, "lastTow", value.asInstanceOf[js.Any])
+    inline def setLastTow(value: String): Self = StObject.set(x, "lastTow", value.asInstanceOf[js.Any])
   }
 }

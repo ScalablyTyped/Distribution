@@ -26,8 +26,7 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     onerror: /* repeated */ js.Any => js.Any,
     onload: /* repeated */ js.Any => js.Any,
@@ -38,22 +37,16 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    inline def setOnerror(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnload(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+    inline def setOnload(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

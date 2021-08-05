@@ -13,16 +13,13 @@ trait DeleteAccessPointRequest extends StObject {
 }
 object DeleteAccessPointRequest {
   
-  @scala.inline
-  def apply(AccessPointId: AccessPointId): DeleteAccessPointRequest = {
+  inline def apply(AccessPointId: AccessPointId): DeleteAccessPointRequest = {
     val __obj = js.Dynamic.literal(AccessPointId = AccessPointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessPointRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccessPointRequestMutableBuilder[Self <: DeleteAccessPointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessPointRequest](x: Self) {
     
-    @scala.inline
-    def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
+    inline def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
   }
 }

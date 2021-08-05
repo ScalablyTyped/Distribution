@@ -19,19 +19,15 @@ trait ProjectsMoveColumnEndpoint
 }
 object ProjectsMoveColumnEndpoint {
   
-  @scala.inline
-  def apply(column_id: Double, mediaType: `0`[inertia], position: String): ProjectsMoveColumnEndpoint = {
+  inline def apply(column_id: Double, mediaType: `0`[inertia], position: String): ProjectsMoveColumnEndpoint = {
     val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsMoveColumnEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsMoveColumnEndpointMutableBuilder[Self <: ProjectsMoveColumnEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsMoveColumnEndpoint](x: Self) {
     
-    @scala.inline
-    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
+    inline def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

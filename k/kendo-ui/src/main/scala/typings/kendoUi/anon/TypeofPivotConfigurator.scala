@@ -15,19 +15,15 @@ trait TypeofPivotConfigurator extends StObject {
 }
 object TypeofPivotConfigurator {
   
-  @scala.inline
-  def apply(extend: js.Object => PivotConfigurator, fn: PivotConfigurator): TypeofPivotConfigurator = {
+  inline def apply(extend: js.Object => PivotConfigurator, fn: PivotConfigurator): TypeofPivotConfigurator = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotConfigurator]
   }
   
-  @scala.inline
-  implicit class TypeofPivotConfiguratorMutableBuilder[Self <: TypeofPivotConfigurator] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotConfigurator](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => PivotConfigurator): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => PivotConfigurator): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: PivotConfigurator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotConfigurator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

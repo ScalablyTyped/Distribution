@@ -20,22 +20,17 @@ trait SetBreakpointOnFunctionCallRequest extends StObject {
 }
 object SetBreakpointOnFunctionCallRequest {
   
-  @scala.inline
-  def apply(objectId: RemoteObjectId): SetBreakpointOnFunctionCallRequest = {
+  inline def apply(objectId: RemoteObjectId): SetBreakpointOnFunctionCallRequest = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointOnFunctionCallRequest]
   }
   
-  @scala.inline
-  implicit class SetBreakpointOnFunctionCallRequestMutableBuilder[Self <: SetBreakpointOnFunctionCallRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointOnFunctionCallRequest](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

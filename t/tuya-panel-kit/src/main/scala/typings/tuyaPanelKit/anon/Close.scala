@@ -19,19 +19,15 @@ trait Close extends StObject {
 }
 object Close {
   
-  @scala.inline
-  def apply(close: TransitionSpec, open: TransitionSpec): Close = {
+  inline def apply(close: TransitionSpec, open: TransitionSpec): Close = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[Close]
   }
   
-  @scala.inline
-  implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+  extension [Self <: Close](x: Self) {
     
-    @scala.inline
-    def setClose(value: TransitionSpec): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: TransitionSpec): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: TransitionSpec): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: TransitionSpec): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

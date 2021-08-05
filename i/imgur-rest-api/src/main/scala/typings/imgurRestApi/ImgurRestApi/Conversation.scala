@@ -26,8 +26,7 @@ trait Conversation extends StObject {
 }
 object Conversation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     datetime: Double,
     id: Double,
     last_message_preview: String,
@@ -39,46 +38,32 @@ object Conversation {
     __obj.asInstanceOf[Conversation]
   }
   
-  @scala.inline
-  implicit class ConversationMutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
+  extension [Self <: Conversation](x: Self) {
     
-    @scala.inline
-    def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_message_preview(value: String): Self = StObject.set(x, "last_message_preview", value.asInstanceOf[js.Any])
+    inline def setLast_message_preview(value: String): Self = StObject.set(x, "last_message_preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage_count(value: Double): Self = StObject.set(x, "message_count", value.asInstanceOf[js.Any])
+    inline def setMessage_count(value: Double): Self = StObject.set(x, "message_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setWith_account(value: String): Self = StObject.set(x, "with_account", value.asInstanceOf[js.Any])
+    inline def setWith_account(value: String): Self = StObject.set(x, "with_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWith_account_id(value: Double): Self = StObject.set(x, "with_account_id", value.asInstanceOf[js.Any])
+    inline def setWith_account_id(value: Double): Self = StObject.set(x, "with_account_id", value.asInstanceOf[js.Any])
   }
 }

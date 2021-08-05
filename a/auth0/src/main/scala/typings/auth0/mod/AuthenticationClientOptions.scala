@@ -14,28 +14,21 @@ trait AuthenticationClientOptions extends StObject {
 }
 object AuthenticationClientOptions {
   
-  @scala.inline
-  def apply(domain: String): AuthenticationClientOptions = {
+  inline def apply(domain: String): AuthenticationClientOptions = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationClientOptions]
   }
   
-  @scala.inline
-  implicit class AuthenticationClientOptionsMutableBuilder[Self <: AuthenticationClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationClientOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

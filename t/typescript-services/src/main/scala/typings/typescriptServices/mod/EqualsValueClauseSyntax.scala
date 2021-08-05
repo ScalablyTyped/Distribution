@@ -90,6 +90,5 @@ object EqualsValueClauseSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(value: IExpressionSyntax): typings.typescriptServices.TypeScript.EqualsValueClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(value.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.EqualsValueClauseSyntax]
+  inline def create1(value: IExpressionSyntax): typings.typescriptServices.TypeScript.EqualsValueClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(value.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.EqualsValueClauseSyntax]
 }

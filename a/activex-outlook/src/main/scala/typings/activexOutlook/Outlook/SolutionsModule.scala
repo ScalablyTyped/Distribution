@@ -16,7 +16,7 @@ trait SolutionsModule extends StObject {
   
   val NavigationModuleType: OlNavigationModuleType
   
-  @JSName("Outlook.SolutionsModule_typekey")
+  /* private */ @JSName("Outlook.SolutionsModule_typekey")
   var OutlookDotSolutionsModule_typekey: SolutionsModule
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait SolutionsModule extends StObject {
 }
 object SolutionsModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddSolution: (Folder, OlSolutionScope) => Unit,
     Application: Application,
     Class: OlObjectClass,
@@ -47,37 +46,26 @@ object SolutionsModule {
     __obj.asInstanceOf[SolutionsModule]
   }
   
-  @scala.inline
-  implicit class SolutionsModuleMutableBuilder[Self <: SolutionsModule] (val x: Self) extends AnyVal {
+  extension [Self <: SolutionsModule](x: Self) {
     
-    @scala.inline
-    def setAddSolution(value: (Folder, OlSolutionScope) => Unit): Self = StObject.set(x, "AddSolution", js.Any.fromFunction2(value))
+    inline def setAddSolution(value: (Folder, OlSolutionScope) => Unit): Self = StObject.set(x, "AddSolution", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationModuleType(value: OlNavigationModuleType): Self = StObject.set(x, "NavigationModuleType", value.asInstanceOf[js.Any])
+    inline def setNavigationModuleType(value: OlNavigationModuleType): Self = StObject.set(x, "NavigationModuleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotSolutionsModule_typekey(value: SolutionsModule): Self = StObject.set(x, "Outlook.SolutionsModule_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotSolutionsModule_typekey(value: SolutionsModule): Self = StObject.set(x, "Outlook.SolutionsModule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

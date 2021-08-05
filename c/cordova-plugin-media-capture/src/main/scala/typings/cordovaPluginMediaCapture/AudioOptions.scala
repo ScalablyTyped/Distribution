@@ -18,25 +18,19 @@ trait AudioOptions extends StObject {
 }
 object AudioOptions {
   
-  @scala.inline
-  def apply(): AudioOptions = {
+  inline def apply(): AudioOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioOptions]
   }
   
-  @scala.inline
-  implicit class AudioOptionsMutableBuilder[Self <: AudioOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AudioOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

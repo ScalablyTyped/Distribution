@@ -20,8 +20,7 @@ trait XSheetFilterableEx
 }
 object XSheetFilterableEx {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createFilterDescriptor: Boolean => XSheetFilterDescriptor,
     createFilterDescriptorByObject: XSheetFilterable => XSheetFilterDescriptor,
@@ -33,10 +32,8 @@ object XSheetFilterableEx {
     __obj.asInstanceOf[XSheetFilterableEx]
   }
   
-  @scala.inline
-  implicit class XSheetFilterableExMutableBuilder[Self <: XSheetFilterableEx] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetFilterableEx](x: Self) {
     
-    @scala.inline
-    def setCreateFilterDescriptorByObject(value: XSheetFilterable => XSheetFilterDescriptor): Self = StObject.set(x, "createFilterDescriptorByObject", js.Any.fromFunction1(value))
+    inline def setCreateFilterDescriptorByObject(value: XSheetFilterable => XSheetFilterDescriptor): Self = StObject.set(x, "createFilterDescriptorByObject", js.Any.fromFunction1(value))
   }
 }

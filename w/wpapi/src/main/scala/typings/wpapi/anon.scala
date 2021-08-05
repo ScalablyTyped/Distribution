@@ -13,17 +13,14 @@ object anon {
   }
   object Self {
     
-    @scala.inline
-    def apply(self: String): Self = {
+    inline def apply(self: String): Self = {
       val __obj = js.Dynamic.literal(self = self.asInstanceOf[js.Any])
       __obj.asInstanceOf[Self]
     }
     
-    @scala.inline
-    implicit class SelfMutableBuilder[Self_ <: Self] (val x: Self_) extends AnyVal {
+    extension [Self_ <: Self](x: Self_) {
       
-      @scala.inline
-      def setSelf(value: String): Self_ = StObject.set(x, "self", value.asInstanceOf[js.Any])
+      inline def setSelf(value: String): Self_ = StObject.set(x, "self", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,18 +30,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: HTTPArgumentType): Type = {
+    inline def apply(`type`: HTTPArgumentType): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: HTTPArgumentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTTPArgumentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

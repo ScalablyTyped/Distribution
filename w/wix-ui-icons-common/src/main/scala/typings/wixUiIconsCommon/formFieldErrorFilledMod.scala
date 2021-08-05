@@ -22,20 +22,16 @@ object formFieldErrorFilledMod extends Shortcut {
   }
   object FormFieldErrorFilledProps {
     
-    @scala.inline
-    def apply(): FormFieldErrorFilledProps = {
+    inline def apply(): FormFieldErrorFilledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormFieldErrorFilledProps]
     }
     
-    @scala.inline
-    implicit class FormFieldErrorFilledPropsMutableBuilder[Self <: FormFieldErrorFilledProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormFieldErrorFilledProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -96,8 +96,7 @@ object channelsMod {
     @JSImport("twilio-chat/lib/data/channels", "Channel.preprocessUpdate")
     @js.native
     def preprocessUpdate: js.Any = js.native
-    @scala.inline
-    def preprocessUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessUpdate")(x.asInstanceOf[js.Any])
+    inline def preprocessUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessUpdate")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -109,7 +108,7 @@ object channelsMod {
   class Channels protected () extends EventEmitter {
     def this(services: ChannelsServices) = this()
     
-    var _wrapPaginator: js.Any = js.native
+    /* private */ var _wrapPaginator: js.Any = js.native
     
     /**
       * Add channel to server
@@ -129,23 +128,23 @@ object channelsMod {
     
     def getChannels(args: js.Any): js.Promise[js.Any] = js.native
     
-    var getMap: js.Any = js.native
+    /* private */ var getMap: js.Any = js.native
     
-    var onChannelRemoved: js.Any = js.native
+    /* private */ var onChannelRemoved: js.Any = js.native
     
     def pushChannel(descriptor: typings.twilioChat.channeldescriptorMod.ChannelDescriptor): js.Promise[typings.twilioChat.channelMod.Channel] = js.native
     
-    var registerForEvents: js.Any = js.native
+    /* private */ var registerForEvents: js.Any = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
-    var syncListFetched: js.Any = js.native
+    /* private */ var syncListFetched: js.Any = js.native
     
     val syncListRead: Deferred[Boolean] = js.native
     
-    val thumbstones: js.Any = js.native
+    /* private */ val thumbstones: js.Any = js.native
     
-    var upsertChannel: js.Any = js.native
+    /* private */ var upsertChannel: js.Any = js.native
   }
   object Channels {
     
@@ -157,14 +156,11 @@ object channelsMod {
     trait DataSource extends StObject
     object DataSource {
       
-      @scala.inline
-      def chat: typings.twilioChat.twilioChatStrings.chat = "chat".asInstanceOf[typings.twilioChat.twilioChatStrings.chat]
+      inline def chat: typings.twilioChat.twilioChatStrings.chat = "chat".asInstanceOf[typings.twilioChat.twilioChatStrings.chat]
       
-      @scala.inline
-      def sync: typings.twilioChat.twilioChatStrings.sync = "sync".asInstanceOf[typings.twilioChat.twilioChatStrings.sync]
+      inline def sync: typings.twilioChat.twilioChatStrings.sync = "sync".asInstanceOf[typings.twilioChat.twilioChatStrings.sync]
       
-      @scala.inline
-      def synclist: typings.twilioChat.twilioChatStrings.synclist = "synclist".asInstanceOf[typings.twilioChat.twilioChatStrings.synclist]
+      inline def synclist: typings.twilioChat.twilioChatStrings.synclist = "synclist".asInstanceOf[typings.twilioChat.twilioChatStrings.synclist]
     }
   }
   
@@ -188,8 +184,7 @@ object channelsMod {
   }
   object ChannelsServices {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       consumptionHorizon: ConsumptionHorizon,
       mcsClient: McsClient,
       network: Network,
@@ -203,32 +198,23 @@ object channelsMod {
       __obj.asInstanceOf[ChannelsServices]
     }
     
-    @scala.inline
-    implicit class ChannelsServicesMutableBuilder[Self <: ChannelsServices] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelsServices](x: Self) {
       
-      @scala.inline
-      def setConsumptionHorizon(value: ConsumptionHorizon): Self = StObject.set(x, "consumptionHorizon", value.asInstanceOf[js.Any])
+      inline def setConsumptionHorizon(value: ConsumptionHorizon): Self = StObject.set(x, "consumptionHorizon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
+      inline def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncList(value: SyncList): Self = StObject.set(x, "syncList", value.asInstanceOf[js.Any])
+      inline def setSyncList(value: SyncList): Self = StObject.set(x, "syncList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypingIndicator(value: TypingIndicator): Self = StObject.set(x, "typingIndicator", value.asInstanceOf[js.Any])
+      inline def setTypingIndicator(value: TypingIndicator): Self = StObject.set(x, "typingIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

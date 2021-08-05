@@ -45,20 +45,16 @@ object mod {
   }
   object AnswerOption {
     
-    @scala.inline
-    def apply(): AnswerOption = {
+    inline def apply(): AnswerOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnswerOption]
     }
     
-    @scala.inline
-    implicit class AnswerOptionMutableBuilder[Self <: AnswerOption] (val x: Self) extends AnyVal {
+    extension [Self <: AnswerOption](x: Self) {
       
-      @scala.inline
-      def setSdpTransform(value: js.Function): Self = StObject.set(x, "sdpTransform", value.asInstanceOf[js.Any])
+      inline def setSdpTransform(value: js.Function): Self = StObject.set(x, "sdpTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
+      inline def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
     }
   }
   
@@ -70,26 +66,20 @@ object mod {
   }
   object CallOption {
     
-    @scala.inline
-    def apply(): CallOption = {
+    inline def apply(): CallOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallOption]
     }
     
-    @scala.inline
-    implicit class CallOptionMutableBuilder[Self <: CallOption] (val x: Self) extends AnyVal {
+    extension [Self <: CallOption](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSdpTransform(value: js.Function): Self = StObject.set(x, "sdpTransform", value.asInstanceOf[js.Any])
+      inline def setSdpTransform(value: js.Function): Self = StObject.set(x, "sdpTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
+      inline def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
     }
   }
   
@@ -309,38 +299,28 @@ object mod {
   }
   object PeerConnectOption {
     
-    @scala.inline
-    def apply(): PeerConnectOption = {
+    inline def apply(): PeerConnectOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PeerConnectOption]
     }
     
-    @scala.inline
-    implicit class PeerConnectOptionMutableBuilder[Self <: PeerConnectOption] (val x: Self) extends AnyVal {
+    extension [Self <: PeerConnectOption](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setReliable(value: Boolean): Self = StObject.set(x, "reliable", value.asInstanceOf[js.Any])
+      inline def setReliable(value: Boolean): Self = StObject.set(x, "reliable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReliableUndefined: Self = StObject.set(x, "reliable", js.undefined)
+      inline def setReliableUndefined: Self = StObject.set(x, "reliable", js.undefined)
       
-      @scala.inline
-      def setSerialization(value: String): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+      inline def setSerialization(value: String): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+      inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
     }
   }
   
@@ -362,56 +342,40 @@ object mod {
   }
   object PeerJSOption {
     
-    @scala.inline
-    def apply(): PeerJSOption = {
+    inline def apply(): PeerJSOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PeerJSOption]
     }
     
-    @scala.inline
-    implicit class PeerJSOptionMutableBuilder[Self <: PeerJSOption] (val x: Self) extends AnyVal {
+    extension [Self <: PeerJSOption](x: Self) {
       
-      @scala.inline
-      def setConfig(value: RTCConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: RTCConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   
@@ -431,8 +395,7 @@ object mod {
   }
   object UtilSupportsObj {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audioVideo: Boolean,
       binaryBlob: Boolean,
       browser: Boolean,
@@ -444,26 +407,19 @@ object mod {
       __obj.asInstanceOf[UtilSupportsObj]
     }
     
-    @scala.inline
-    implicit class UtilSupportsObjMutableBuilder[Self <: UtilSupportsObj] (val x: Self) extends AnyVal {
+    extension [Self <: UtilSupportsObj](x: Self) {
       
-      @scala.inline
-      def setAudioVideo(value: Boolean): Self = StObject.set(x, "audioVideo", value.asInstanceOf[js.Any])
+      inline def setAudioVideo(value: Boolean): Self = StObject.set(x, "audioVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryBlob(value: Boolean): Self = StObject.set(x, "binaryBlob", value.asInstanceOf[js.Any])
+      inline def setBinaryBlob(value: Boolean): Self = StObject.set(x, "binaryBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReliable(value: Boolean): Self = StObject.set(x, "reliable", value.asInstanceOf[js.Any])
+      inline def setReliable(value: Boolean): Self = StObject.set(x, "reliable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRTC(value: Boolean): Self = StObject.set(x, "webRTC", value.asInstanceOf[js.Any])
+      inline def setWebRTC(value: Boolean): Self = StObject.set(x, "webRTC", value.asInstanceOf[js.Any])
     }
   }
   
@@ -475,20 +431,16 @@ object mod {
   }
   object util {
     
-    @scala.inline
-    def apply(browser: String, supports: UtilSupportsObj): util = {
+    inline def apply(browser: String, supports: UtilSupportsObj): util = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], supports = supports.asInstanceOf[js.Any])
       __obj.asInstanceOf[util]
     }
     
-    @scala.inline
-    implicit class utilMutableBuilder[Self <: util] (val x: Self) extends AnyVal {
+    extension [Self <: util](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupports(value: UtilSupportsObj): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+      inline def setSupports(value: UtilSupportsObj): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     }
   }
 }

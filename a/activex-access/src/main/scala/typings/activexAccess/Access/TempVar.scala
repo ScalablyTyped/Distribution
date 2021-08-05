@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TempVar extends StObject {
   
-  @JSName("Access.TempVar_typekey")
+  /* private */ @JSName("Access.TempVar_typekey")
   var AccessDotTempVar_typekey: TempVar
   
   def IsMemberSafe(dispid: Double): Boolean
@@ -19,8 +19,7 @@ trait TempVar extends StObject {
 }
 object TempVar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotTempVar_typekey: TempVar,
     IsMemberSafe: Double => Boolean,
     Name: String,
@@ -32,22 +31,16 @@ object TempVar {
     __obj.asInstanceOf[TempVar]
   }
   
-  @scala.inline
-  implicit class TempVarMutableBuilder[Self <: TempVar] (val x: Self) extends AnyVal {
+  extension [Self <: TempVar](x: Self) {
     
-    @scala.inline
-    def setAccessDotTempVar_typekey(value: TempVar): Self = StObject.set(x, "Access.TempVar_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotTempVar_typekey(value: TempVar): Self = StObject.set(x, "Access.TempVar_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double | String | Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String | Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Value(value: Double | String | Boolean): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
+    inline def set_Value(value: Double | String | Boolean): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
   }
 }

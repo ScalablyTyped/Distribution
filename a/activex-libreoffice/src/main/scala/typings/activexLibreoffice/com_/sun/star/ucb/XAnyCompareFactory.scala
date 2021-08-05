@@ -20,8 +20,7 @@ trait XAnyCompareFactory
 }
 object XAnyCompareFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createAnyCompareByName: String => XAnyCompare,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XAnyCompareFactory {
     __obj.asInstanceOf[XAnyCompareFactory]
   }
   
-  @scala.inline
-  implicit class XAnyCompareFactoryMutableBuilder[Self <: XAnyCompareFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XAnyCompareFactory](x: Self) {
     
-    @scala.inline
-    def setCreateAnyCompareByName(value: String => XAnyCompare): Self = StObject.set(x, "createAnyCompareByName", js.Any.fromFunction1(value))
+    inline def setCreateAnyCompareByName(value: String => XAnyCompare): Self = StObject.set(x, "createAnyCompareByName", js.Any.fromFunction1(value))
   }
 }

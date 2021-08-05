@@ -14,25 +14,19 @@ trait ScriptStackTraceElement extends StObject {
 }
 object ScriptStackTraceElement {
   
-  @scala.inline
-  def apply(): ScriptStackTraceElement = {
+  inline def apply(): ScriptStackTraceElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptStackTraceElement]
   }
   
-  @scala.inline
-  implicit class ScriptStackTraceElementMutableBuilder[Self <: ScriptStackTraceElement] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptStackTraceElement](x: Self) {
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
   }
 }

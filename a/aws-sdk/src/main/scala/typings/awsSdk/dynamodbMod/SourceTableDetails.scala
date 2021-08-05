@@ -53,8 +53,7 @@ trait SourceTableDetails extends StObject {
 }
 object SourceTableDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     KeySchema: KeySchema,
     ProvisionedThroughput: ProvisionedThroughput,
     TableCreationDateTime: TableCreationDateTime,
@@ -65,49 +64,34 @@ object SourceTableDetails {
     __obj.asInstanceOf[SourceTableDetails]
   }
   
-  @scala.inline
-  implicit class SourceTableDetailsMutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SourceTableDetails](x: Self) {
     
-    @scala.inline
-    def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+    inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+    inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
     
-    @scala.inline
-    def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
-    @scala.inline
-    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+    inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
-    @scala.inline
-    def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+    inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+    inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
     
-    @scala.inline
-    def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+    inline def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+    inline def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
+    inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
   }
 }

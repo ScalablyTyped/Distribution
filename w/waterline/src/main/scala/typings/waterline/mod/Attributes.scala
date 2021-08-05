@@ -15,25 +15,19 @@ trait Attributes
 }
 object Attributes {
   
-  @scala.inline
-  def apply(): Attributes = {
+  inline def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attributes]
   }
   
-  @scala.inline
-  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+  extension [Self <: Attributes](x: Self) {
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+    inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     
-    @scala.inline
-    def setToObject(value: () => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+    inline def setToObject(value: () => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToObjectUndefined: Self = StObject.set(x, "toObject", js.undefined)
+    inline def setToObjectUndefined: Self = StObject.set(x, "toObject", js.undefined)
   }
 }

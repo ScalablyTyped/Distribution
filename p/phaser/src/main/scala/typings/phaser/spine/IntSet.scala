@@ -18,8 +18,7 @@ trait IntSet extends StObject {
 }
 object IntSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: Double => Boolean,
     array: js.Array[Double],
     clear: () => Unit,
@@ -30,25 +29,18 @@ object IntSet {
     __obj.asInstanceOf[IntSet]
   }
   
-  @scala.inline
-  implicit class IntSetMutableBuilder[Self <: IntSet] (val x: Self) extends AnyVal {
+  extension [Self <: IntSet](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Double => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Double => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

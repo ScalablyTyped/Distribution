@@ -20,25 +20,19 @@ trait UserInfoResponse extends StObject {
 }
 object UserInfoResponse {
   
-  @scala.inline
-  def apply(encryptData: String, rawData: String, signature: String, userInfo: UserInfo): UserInfoResponse = {
+  inline def apply(encryptData: String, rawData: String, signature: String, userInfo: UserInfo): UserInfoResponse = {
     val __obj = js.Dynamic.literal(encryptData = encryptData.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInfoResponse]
   }
   
-  @scala.inline
-  implicit class UserInfoResponseMutableBuilder[Self <: UserInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfoResponse](x: Self) {
     
-    @scala.inline
-    def setEncryptData(value: String): Self = StObject.set(x, "encryptData", value.asInstanceOf[js.Any])
+    inline def setEncryptData(value: String): Self = StObject.set(x, "encryptData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -51,67 +51,47 @@ trait Client extends StObject {
 }
 object Client {
   
-  @scala.inline
-  def apply(): Client = {
+  inline def apply(): Client = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Client]
   }
   
-  @scala.inline
-  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+  extension [Self <: Client](x: Self) {
     
-    @scala.inline
-    def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
+    inline def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
+    inline def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
     
-    @scala.inline
-    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
+    inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
+    inline def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+    inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
+    inline def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setPartnerClientId(value: String): Self = StObject.set(x, "partnerClientId", value.asInstanceOf[js.Any])
+    inline def setPartnerClientId(value: String): Self = StObject.set(x, "partnerClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerClientIdUndefined: Self = StObject.set(x, "partnerClientId", js.undefined)
+    inline def setPartnerClientIdUndefined: Self = StObject.set(x, "partnerClientId", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setVisibleToSeller(value: Boolean): Self = StObject.set(x, "visibleToSeller", value.asInstanceOf[js.Any])
+    inline def setVisibleToSeller(value: Boolean): Self = StObject.set(x, "visibleToSeller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleToSellerUndefined: Self = StObject.set(x, "visibleToSeller", js.undefined)
+    inline def setVisibleToSellerUndefined: Self = StObject.set(x, "visibleToSeller", js.undefined)
   }
 }

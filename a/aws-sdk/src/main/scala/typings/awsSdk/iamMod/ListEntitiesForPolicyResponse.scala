@@ -33,52 +33,37 @@ trait ListEntitiesForPolicyResponse extends StObject {
 }
 object ListEntitiesForPolicyResponse {
   
-  @scala.inline
-  def apply(): ListEntitiesForPolicyResponse = {
+  inline def apply(): ListEntitiesForPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEntitiesForPolicyResponse]
   }
   
-  @scala.inline
-  implicit class ListEntitiesForPolicyResponseMutableBuilder[Self <: ListEntitiesForPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEntitiesForPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPolicyGroups(value: PolicyGroupListType): Self = StObject.set(x, "PolicyGroups", value.asInstanceOf[js.Any])
+    inline def setPolicyGroups(value: PolicyGroupListType): Self = StObject.set(x, "PolicyGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyGroupsUndefined: Self = StObject.set(x, "PolicyGroups", js.undefined)
+    inline def setPolicyGroupsUndefined: Self = StObject.set(x, "PolicyGroups", js.undefined)
     
-    @scala.inline
-    def setPolicyGroupsVarargs(value: PolicyGroup*): Self = StObject.set(x, "PolicyGroups", js.Array(value :_*))
+    inline def setPolicyGroupsVarargs(value: PolicyGroup*): Self = StObject.set(x, "PolicyGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyRoles(value: PolicyRoleListType): Self = StObject.set(x, "PolicyRoles", value.asInstanceOf[js.Any])
+    inline def setPolicyRoles(value: PolicyRoleListType): Self = StObject.set(x, "PolicyRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyRolesUndefined: Self = StObject.set(x, "PolicyRoles", js.undefined)
+    inline def setPolicyRolesUndefined: Self = StObject.set(x, "PolicyRoles", js.undefined)
     
-    @scala.inline
-    def setPolicyRolesVarargs(value: PolicyRole*): Self = StObject.set(x, "PolicyRoles", js.Array(value :_*))
+    inline def setPolicyRolesVarargs(value: PolicyRole*): Self = StObject.set(x, "PolicyRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyUsers(value: PolicyUserListType): Self = StObject.set(x, "PolicyUsers", value.asInstanceOf[js.Any])
+    inline def setPolicyUsers(value: PolicyUserListType): Self = StObject.set(x, "PolicyUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUsersUndefined: Self = StObject.set(x, "PolicyUsers", js.undefined)
+    inline def setPolicyUsersUndefined: Self = StObject.set(x, "PolicyUsers", js.undefined)
     
-    @scala.inline
-    def setPolicyUsersVarargs(value: PolicyUser*): Self = StObject.set(x, "PolicyUsers", js.Array(value :_*))
+    inline def setPolicyUsersVarargs(value: PolicyUser*): Self = StObject.set(x, "PolicyUsers", js.Array(value :_*))
   }
 }

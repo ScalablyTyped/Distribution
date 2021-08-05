@@ -12,16 +12,13 @@ trait ActionTriggerSeparator extends StObject {
 }
 object ActionTriggerSeparator {
   
-  @scala.inline
-  def apply(SeparatorType: Double): ActionTriggerSeparator = {
+  inline def apply(SeparatorType: Double): ActionTriggerSeparator = {
     val __obj = js.Dynamic.literal(SeparatorType = SeparatorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionTriggerSeparator]
   }
   
-  @scala.inline
-  implicit class ActionTriggerSeparatorMutableBuilder[Self <: ActionTriggerSeparator] (val x: Self) extends AnyVal {
+  extension [Self <: ActionTriggerSeparator](x: Self) {
     
-    @scala.inline
-    def setSeparatorType(value: Double): Self = StObject.set(x, "SeparatorType", value.asInstanceOf[js.Any])
+    inline def setSeparatorType(value: Double): Self = StObject.set(x, "SeparatorType", value.asInstanceOf[js.Any])
   }
 }

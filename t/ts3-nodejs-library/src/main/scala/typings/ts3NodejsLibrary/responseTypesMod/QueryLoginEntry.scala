@@ -17,22 +17,17 @@ trait QueryLoginEntry
 }
 object QueryLoginEntry {
   
-  @scala.inline
-  def apply(cldbid: String, clientLoginName: String, sid: String): QueryLoginEntry = {
+  inline def apply(cldbid: String, clientLoginName: String, sid: String): QueryLoginEntry = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], clientLoginName = clientLoginName.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryLoginEntry]
   }
   
-  @scala.inline
-  implicit class QueryLoginEntryMutableBuilder[Self <: QueryLoginEntry] (val x: Self) extends AnyVal {
+  extension [Self <: QueryLoginEntry](x: Self) {
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientLoginName(value: String): Self = StObject.set(x, "clientLoginName", value.asInstanceOf[js.Any])
+    inline def setClientLoginName(value: String): Self = StObject.set(x, "clientLoginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
   }
 }

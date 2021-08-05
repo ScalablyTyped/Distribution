@@ -33,43 +33,31 @@ trait DescribeObjectResponse extends StObject {
 }
 object DescribeObjectResponse {
   
-  @scala.inline
-  def apply(): DescribeObjectResponse = {
+  inline def apply(): DescribeObjectResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeObjectResponse]
   }
   
-  @scala.inline
-  implicit class DescribeObjectResponseMutableBuilder[Self <: DescribeObjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeObjectResponse](x: Self) {
     
-    @scala.inline
-    def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
+    inline def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
+    inline def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
     
-    @scala.inline
-    def setContentLength(value: NonNegativeLong): Self = StObject.set(x, "ContentLength", value.asInstanceOf[js.Any])
+    inline def setContentLength(value: NonNegativeLong): Self = StObject.set(x, "ContentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLengthUndefined: Self = StObject.set(x, "ContentLength", js.undefined)
+    inline def setContentLengthUndefined: Self = StObject.set(x, "ContentLength", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: TimeStamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: TimeStamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
   }
 }

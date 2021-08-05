@@ -39,46 +39,33 @@ trait SpriteSheetFileConfig extends StObject {
 }
 object SpriteSheetFileConfig {
   
-  @scala.inline
-  def apply(key: String): SpriteSheetFileConfig = {
+  inline def apply(key: String): SpriteSheetFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteSheetFileConfig]
   }
   
-  @scala.inline
-  implicit class SpriteSheetFileConfigMutableBuilder[Self <: SpriteSheetFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteSheetFileConfig](x: Self) {
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setFrameConfig(value: ImageFrameConfig): Self = StObject.set(x, "frameConfig", value.asInstanceOf[js.Any])
+    inline def setFrameConfig(value: ImageFrameConfig): Self = StObject.set(x, "frameConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameConfigUndefined: Self = StObject.set(x, "frameConfig", js.undefined)
+    inline def setFrameConfigUndefined: Self = StObject.set(x, "frameConfig", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalMap(value: String): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
+    inline def setNormalMap(value: String): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalMapUndefined: Self = StObject.set(x, "normalMap", js.undefined)
+    inline def setNormalMapUndefined: Self = StObject.set(x, "normalMap", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

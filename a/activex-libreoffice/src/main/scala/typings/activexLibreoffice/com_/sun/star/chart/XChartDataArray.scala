@@ -74,8 +74,7 @@ trait XChartDataArray
 }
 object XChartDataArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnDescriptions: SafeArray[String],
     Data: SafeArray[SafeArray[Double]],
     NotANumber: Double,
@@ -98,34 +97,24 @@ object XChartDataArray {
     __obj.asInstanceOf[XChartDataArray]
   }
   
-  @scala.inline
-  implicit class XChartDataArrayMutableBuilder[Self <: XChartDataArray] (val x: Self) extends AnyVal {
+  extension [Self <: XChartDataArray](x: Self) {
     
-    @scala.inline
-    def setColumnDescriptions(value: SafeArray[String]): Self = StObject.set(x, "ColumnDescriptions", value.asInstanceOf[js.Any])
+    inline def setColumnDescriptions(value: SafeArray[String]): Self = StObject.set(x, "ColumnDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: SafeArray[SafeArray[Double]]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: SafeArray[SafeArray[Double]]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumnDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getColumnDescriptions", js.Any.fromFunction0(value))
+    inline def setGetColumnDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getColumnDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: () => SafeArray[SafeArray[Double]]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => SafeArray[SafeArray[Double]]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getRowDescriptions", js.Any.fromFunction0(value))
+    inline def setGetRowDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getRowDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowDescriptions(value: SafeArray[String]): Self = StObject.set(x, "RowDescriptions", value.asInstanceOf[js.Any])
+    inline def setRowDescriptions(value: SafeArray[String]): Self = StObject.set(x, "RowDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetColumnDescriptions(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setColumnDescriptions", js.Any.fromFunction1(value))
+    inline def setSetColumnDescriptions(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setColumnDescriptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetData(value: SeqEquiv[SeqEquiv[Double]] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: SeqEquiv[SeqEquiv[Double]] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRowDescriptions(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setRowDescriptions", js.Any.fromFunction1(value))
+    inline def setSetRowDescriptions(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setRowDescriptions", js.Any.fromFunction1(value))
   }
 }

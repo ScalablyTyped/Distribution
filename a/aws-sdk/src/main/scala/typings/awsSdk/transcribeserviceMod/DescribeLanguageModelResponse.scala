@@ -13,19 +13,15 @@ trait DescribeLanguageModelResponse extends StObject {
 }
 object DescribeLanguageModelResponse {
   
-  @scala.inline
-  def apply(): DescribeLanguageModelResponse = {
+  inline def apply(): DescribeLanguageModelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLanguageModelResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLanguageModelResponseMutableBuilder[Self <: DescribeLanguageModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLanguageModelResponse](x: Self) {
     
-    @scala.inline
-    def setLanguageModel(value: LanguageModel): Self = StObject.set(x, "LanguageModel", value.asInstanceOf[js.Any])
+    inline def setLanguageModel(value: LanguageModel): Self = StObject.set(x, "LanguageModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageModelUndefined: Self = StObject.set(x, "LanguageModel", js.undefined)
+    inline def setLanguageModelUndefined: Self = StObject.set(x, "LanguageModel", js.undefined)
   }
 }

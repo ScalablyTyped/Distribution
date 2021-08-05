@@ -12,16 +12,13 @@ object sharedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def codeCommon(hasTheme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("codeCommon")(hasTheme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  inline def codeCommon(hasTheme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("codeCommon")(hasTheme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
   
-  @scala.inline
-  def headerCommon(hasTheme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("headerCommon")(hasTheme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  inline def headerCommon(hasTheme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("headerCommon")(hasTheme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
   
   @JSImport("@storybook/components/dist/typography/shared", "withMargin")
   @js.native
   val withMargin: CSSObject = js.native
   
-  @scala.inline
-  def withReset(hasTheme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("withReset")(hasTheme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  inline def withReset(hasTheme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("withReset")(hasTheme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
 }

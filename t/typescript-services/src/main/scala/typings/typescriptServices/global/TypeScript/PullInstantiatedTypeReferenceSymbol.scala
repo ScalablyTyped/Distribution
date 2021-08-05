@@ -32,8 +32,7 @@ object PullInstantiatedTypeReferenceSymbol {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     resolver: typings.typescriptServices.TypeScript.PullTypeResolver,
     `type`: typings.typescriptServices.TypeScript.PullTypeSymbol,
     typeParameterArgumentMap: TypeArgumentMap

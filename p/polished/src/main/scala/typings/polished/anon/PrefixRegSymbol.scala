@@ -16,22 +16,17 @@ trait PrefixRegSymbol extends StObject {
 }
 object PrefixRegSymbol {
   
-  @scala.inline
-  def apply(prefix: RightToLeftSymbol): PrefixRegSymbol = {
+  inline def apply(prefix: RightToLeftSymbol): PrefixRegSymbol = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], regSymbol = "\\(", symbol = "(")
     __obj.asInstanceOf[PrefixRegSymbol]
   }
   
-  @scala.inline
-  implicit class PrefixRegSymbolMutableBuilder[Self <: PrefixRegSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixRegSymbol](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: RightToLeftSymbol): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: RightToLeftSymbol): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: BackslashLeftparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: BackslashLeftparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Leftparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Leftparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

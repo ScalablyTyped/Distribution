@@ -48,8 +48,7 @@ object mozilla {
   }
   object MenuMultipleChange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GroupID: Double,
       ID: Double,
       Image: SafeArray[Double],
@@ -64,35 +63,25 @@ object mozilla {
       __obj.asInstanceOf[MenuMultipleChange]
     }
     
-    @scala.inline
-    implicit class MenuMultipleChangeMutableBuilder[Self <: MenuMultipleChange] (val x: Self) extends AnyVal {
+    extension [Self <: MenuMultipleChange](x: Self) {
       
-      @scala.inline
-      def setGroupID(value: Double): Self = StObject.set(x, "GroupID", value.asInstanceOf[js.Any])
+      inline def setGroupID(value: Double): Self = StObject.set(x, "GroupID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: SafeArray[Double]): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+      inline def setImage(value: SafeArray[Double]): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCheckable(value: Boolean): Self = StObject.set(x, "IsCheckable", value.asInstanceOf[js.Any])
+      inline def setIsCheckable(value: Boolean): Self = StObject.set(x, "IsCheckable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChecked(value: Boolean): Self = StObject.set(x, "IsChecked", value.asInstanceOf[js.Any])
+      inline def setIsChecked(value: Boolean): Self = StObject.set(x, "IsChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemText(value: String): Self = StObject.set(x, "ItemText", value.asInstanceOf[js.Any])
+      inline def setItemText(value: String): Self = StObject.set(x, "ItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreItemID(value: Double): Self = StObject.set(x, "PreItemID", value.asInstanceOf[js.Any])
+      inline def setPreItemID(value: Double): Self = StObject.set(x, "PreItemID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,23 +105,18 @@ object mozilla {
   }
   object MenuSingleChange {
     
-    @scala.inline
-    def apply(Change: js.Any, ChangeID: Double, ID: Double): MenuSingleChange = {
+    inline def apply(Change: js.Any, ChangeID: Double, ID: Double): MenuSingleChange = {
       val __obj = js.Dynamic.literal(Change = Change.asInstanceOf[js.Any], ChangeID = ChangeID.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuSingleChange]
     }
     
-    @scala.inline
-    implicit class MenuSingleChangeMutableBuilder[Self <: MenuSingleChange] (val x: Self) extends AnyVal {
+    extension [Self <: MenuSingleChange](x: Self) {
       
-      @scala.inline
-      def setChange(value: js.Any): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
+      inline def setChange(value: js.Any): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeID(value: Double): Self = StObject.set(x, "ChangeID", value.asInstanceOf[js.Any])
+      inline def setChangeID(value: Double): Self = StObject.set(x, "ChangeID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,20 +137,16 @@ object mozilla {
   object MozillaProductType {
     
     /** Any product */
-    @scala.inline
-    def Default: `0` = 0.asInstanceOf[`0`]
+    inline def Default: `0` = 0.asInstanceOf[`0`]
     
     /** Mozilla's next generation web browser. */
-    @scala.inline
-    def Firefox: `2` = 2.asInstanceOf[`2`]
+    inline def Firefox: `2` = 2.asInstanceOf[`2`]
     
     /** Mozilla browse and mail suite */
-    @scala.inline
-    def Mozilla: `1` = 1.asInstanceOf[`1`]
+    inline def Mozilla: `1` = 1.asInstanceOf[`1`]
     
     /** Mozilla's next generation e-mail client. */
-    @scala.inline
-    def Thunderbird: `3` = 3.asInstanceOf[`3`]
+    inline def Thunderbird: `3` = 3.asInstanceOf[`3`]
   }
   
   /** Listener for closing of the corresponding session. */
@@ -182,8 +162,7 @@ object mozilla {
   }
   object XCloseSessionListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
@@ -193,11 +172,9 @@ object mozilla {
       __obj.asInstanceOf[XCloseSessionListener]
     }
     
-    @scala.inline
-    implicit class XCloseSessionListenerMutableBuilder[Self <: XCloseSessionListener] (val x: Self) extends AnyVal {
+    extension [Self <: XCloseSessionListener](x: Self) {
       
-      @scala.inline
-      def setSessionClosed(value: js.Any => Unit): Self = StObject.set(x, "sessionClosed", js.Any.fromFunction1(value))
+      inline def setSessionClosed(value: js.Any => Unit): Self = StObject.set(x, "sessionClosed", js.Any.fromFunction1(value))
     }
   }
   
@@ -228,8 +205,7 @@ object mozilla {
   }
   object XCodeProxy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ProductType: MozillaProductType,
       ProfileName: String,
       acquire: () => Unit,
@@ -243,23 +219,17 @@ object mozilla {
       __obj.asInstanceOf[XCodeProxy]
     }
     
-    @scala.inline
-    implicit class XCodeProxyMutableBuilder[Self <: XCodeProxy] (val x: Self) extends AnyVal {
+    extension [Self <: XCodeProxy](x: Self) {
       
-      @scala.inline
-      def setGetProductType(value: () => MozillaProductType): Self = StObject.set(x, "getProductType", js.Any.fromFunction0(value))
+      inline def setGetProductType(value: () => MozillaProductType): Self = StObject.set(x, "getProductType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetProfileName(value: () => String): Self = StObject.set(x, "getProfileName", js.Any.fromFunction0(value))
+      inline def setGetProfileName(value: () => String): Self = StObject.set(x, "getProfileName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProductType(value: MozillaProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
+      inline def setProductType(value: MozillaProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileName(value: String): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
+      inline def setProfileName(value: String): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: () => Double): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Double): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     }
   }
   
@@ -288,8 +258,7 @@ object mozilla {
   }
   object XMenuProxy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addEventListener: XEventListener => Unit,
       addMenuProxyListener: XMenuProxyListener => Unit,
@@ -304,17 +273,13 @@ object mozilla {
       __obj.asInstanceOf[XMenuProxy]
     }
     
-    @scala.inline
-    implicit class XMenuProxyMutableBuilder[Self <: XMenuProxy] (val x: Self) extends AnyVal {
+    extension [Self <: XMenuProxy](x: Self) {
       
-      @scala.inline
-      def setAddMenuProxyListener(value: XMenuProxyListener => Unit): Self = StObject.set(x, "addMenuProxyListener", js.Any.fromFunction1(value))
+      inline def setAddMenuProxyListener(value: XMenuProxyListener => Unit): Self = StObject.set(x, "addMenuProxyListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecuteMenuItem(value: Double => Unit): Self = StObject.set(x, "executeMenuItem", js.Any.fromFunction1(value))
+      inline def setExecuteMenuItem(value: Double => Unit): Self = StObject.set(x, "executeMenuItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveMenuProxyListener(value: XMenuProxyListener => Unit): Self = StObject.set(x, "removeMenuProxyListener", js.Any.fromFunction1(value))
+      inline def setRemoveMenuProxyListener(value: XMenuProxyListener => Unit): Self = StObject.set(x, "removeMenuProxyListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -337,8 +302,7 @@ object mozilla {
   }
   object XMenuProxyListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       menuChangedMultiple: SeqEquiv[MenuMultipleChange] => Unit,
       menuChangedSingle: SeqEquiv[MenuSingleChange] => Unit,
@@ -350,17 +314,13 @@ object mozilla {
       __obj.asInstanceOf[XMenuProxyListener]
     }
     
-    @scala.inline
-    implicit class XMenuProxyListenerMutableBuilder[Self <: XMenuProxyListener] (val x: Self) extends AnyVal {
+    extension [Self <: XMenuProxyListener](x: Self) {
       
-      @scala.inline
-      def setMenuChangedMultiple(value: SeqEquiv[MenuMultipleChange] => Unit): Self = StObject.set(x, "menuChangedMultiple", js.Any.fromFunction1(value))
+      inline def setMenuChangedMultiple(value: SeqEquiv[MenuMultipleChange] => Unit): Self = StObject.set(x, "menuChangedMultiple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuChangedSingle(value: SeqEquiv[MenuSingleChange] => Unit): Self = StObject.set(x, "menuChangedSingle", js.Any.fromFunction1(value))
+      inline def setMenuChangedSingle(value: SeqEquiv[MenuSingleChange] => Unit): Self = StObject.set(x, "menuChangedSingle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuItemDeleted(value: Double => Unit): Self = StObject.set(x, "menuItemDeleted", js.Any.fromFunction1(value))
+      inline def setMenuItemDeleted(value: Double => Unit): Self = StObject.set(x, "menuItemDeleted", js.Any.fromFunction1(value))
     }
   }
   
@@ -377,8 +337,7 @@ object mozilla {
        with XProxyRunner
   object XMozillaBootstrap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentProduct: MozillaProductType,
       CurrentProfile: String,
       Run: XCodeProxy => Double,
@@ -460,8 +419,7 @@ object mozilla {
   }
   object XProfileDiscover {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getDefaultProfile: MozillaProductType => String,
       getProfileCount: MozillaProductType => Double,
@@ -476,26 +434,19 @@ object mozilla {
       __obj.asInstanceOf[XProfileDiscover]
     }
     
-    @scala.inline
-    implicit class XProfileDiscoverMutableBuilder[Self <: XProfileDiscover] (val x: Self) extends AnyVal {
+    extension [Self <: XProfileDiscover](x: Self) {
       
-      @scala.inline
-      def setGetDefaultProfile(value: MozillaProductType => String): Self = StObject.set(x, "getDefaultProfile", js.Any.fromFunction1(value))
+      inline def setGetDefaultProfile(value: MozillaProductType => String): Self = StObject.set(x, "getDefaultProfile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProfileCount(value: MozillaProductType => Double): Self = StObject.set(x, "getProfileCount", js.Any.fromFunction1(value))
+      inline def setGetProfileCount(value: MozillaProductType => Double): Self = StObject.set(x, "getProfileCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProfileExists(value: (MozillaProductType, String) => Boolean): Self = StObject.set(x, "getProfileExists", js.Any.fromFunction2(value))
+      inline def setGetProfileExists(value: (MozillaProductType, String) => Boolean): Self = StObject.set(x, "getProfileExists", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetProfileList(value: (MozillaProductType, js.Array[SeqEquiv[String]]) => Double): Self = StObject.set(x, "getProfileList", js.Any.fromFunction2(value))
+      inline def setGetProfileList(value: (MozillaProductType, js.Array[SeqEquiv[String]]) => Double): Self = StObject.set(x, "getProfileList", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetProfilePath(value: (MozillaProductType, String) => String): Self = StObject.set(x, "getProfilePath", js.Any.fromFunction2(value))
+      inline def setGetProfilePath(value: (MozillaProductType, String) => String): Self = StObject.set(x, "getProfilePath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsProfileLocked(value: (MozillaProductType, String) => Boolean): Self = StObject.set(x, "isProfileLocked", js.Any.fromFunction2(value))
+      inline def setIsProfileLocked(value: (MozillaProductType, String) => Boolean): Self = StObject.set(x, "isProfileLocked", js.Any.fromFunction2(value))
     }
   }
   
@@ -563,8 +514,7 @@ object mozilla {
   }
   object XProfileManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentProduct: MozillaProductType,
       CurrentProfile: String,
       acquire: () => Unit,
@@ -581,32 +531,23 @@ object mozilla {
       __obj.asInstanceOf[XProfileManager]
     }
     
-    @scala.inline
-    implicit class XProfileManagerMutableBuilder[Self <: XProfileManager] (val x: Self) extends AnyVal {
+    extension [Self <: XProfileManager](x: Self) {
       
-      @scala.inline
-      def setBootupProfile(value: (MozillaProductType, String) => Double): Self = StObject.set(x, "bootupProfile", js.Any.fromFunction2(value))
+      inline def setBootupProfile(value: (MozillaProductType, String) => Double): Self = StObject.set(x, "bootupProfile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCurrentProduct(value: MozillaProductType): Self = StObject.set(x, "CurrentProduct", value.asInstanceOf[js.Any])
+      inline def setCurrentProduct(value: MozillaProductType): Self = StObject.set(x, "CurrentProduct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentProfile(value: String): Self = StObject.set(x, "CurrentProfile", value.asInstanceOf[js.Any])
+      inline def setCurrentProfile(value: String): Self = StObject.set(x, "CurrentProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCurrentProduct(value: () => MozillaProductType): Self = StObject.set(x, "getCurrentProduct", js.Any.fromFunction0(value))
+      inline def setGetCurrentProduct(value: () => MozillaProductType): Self = StObject.set(x, "getCurrentProduct", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentProfile(value: () => String): Self = StObject.set(x, "getCurrentProfile", js.Any.fromFunction0(value))
+      inline def setGetCurrentProfile(value: () => String): Self = StObject.set(x, "getCurrentProfile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCurrentProfileLocked(value: () => Boolean): Self = StObject.set(x, "isCurrentProfileLocked", js.Any.fromFunction0(value))
+      inline def setIsCurrentProfileLocked(value: () => Boolean): Self = StObject.set(x, "isCurrentProfileLocked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCurrentProfile(value: (MozillaProductType, String) => String): Self = StObject.set(x, "setCurrentProfile", js.Any.fromFunction2(value))
+      inline def setSetCurrentProfile(value: (MozillaProductType, String) => String): Self = StObject.set(x, "setCurrentProfile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShutdownProfile(value: () => Double): Self = StObject.set(x, "shutdownProfile", js.Any.fromFunction0(value))
+      inline def setShutdownProfile(value: () => Double): Self = StObject.set(x, "shutdownProfile", js.Any.fromFunction0(value))
     }
   }
   
@@ -628,8 +569,7 @@ object mozilla {
   }
   object XProxyRunner {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Run: XCodeProxy => Double,
       acquire: () => Unit,
       queryInterface: `type` => js.Any,
@@ -639,11 +579,9 @@ object mozilla {
       __obj.asInstanceOf[XProxyRunner]
     }
     
-    @scala.inline
-    implicit class XProxyRunnerMutableBuilder[Self <: XProxyRunner] (val x: Self) extends AnyVal {
+    extension [Self <: XProxyRunner](x: Self) {
       
-      @scala.inline
-      def setRun(value: XCodeProxy => Double): Self = StObject.set(x, "Run", js.Any.fromFunction1(value))
+      inline def setRun(value: XCodeProxy => Double): Self = StObject.set(x, "Run", js.Any.fromFunction1(value))
     }
   }
 }

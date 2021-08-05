@@ -20,7 +20,7 @@ object loggerMod {
     
     def info(args: js.Any*): Unit = js.native
     
-    var prefix: js.Any = js.native
+    /* private */ var prefix: js.Any = js.native
     
     def setLevel(level: js.Any): Unit = js.native
     
@@ -35,15 +35,12 @@ object loggerMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def scope(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")().asInstanceOf[Logger]
-    @scala.inline
-    def scope(prefix: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(prefix.asInstanceOf[js.Any]).asInstanceOf[Logger]
+    inline def scope(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")().asInstanceOf[Logger]
+    inline def scope(prefix: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(prefix.asInstanceOf[js.Any]).asInstanceOf[Logger]
   }
   
   @JSImport("twilio-notifications/lib/logger", "log")
   @js.native
   def log: Logger = js.native
-  @scala.inline
-  def log_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+  inline def log_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
 }

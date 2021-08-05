@@ -29,28 +29,21 @@ trait SearchDegreeCentralityNormalizedOptions extends StObject {
 }
 object SearchDegreeCentralityNormalizedOptions {
   
-  @scala.inline
-  def apply(weight: EdgeSingular => Double): SearchDegreeCentralityNormalizedOptions = {
+  inline def apply(weight: EdgeSingular => Double): SearchDegreeCentralityNormalizedOptions = {
     val __obj = js.Dynamic.literal(weight = js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedOptions]
   }
   
-  @scala.inline
-  implicit class SearchDegreeCentralityNormalizedOptionsMutableBuilder[Self <: SearchDegreeCentralityNormalizedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDegreeCentralityNormalizedOptions](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setWeight(value: EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
   }
 }

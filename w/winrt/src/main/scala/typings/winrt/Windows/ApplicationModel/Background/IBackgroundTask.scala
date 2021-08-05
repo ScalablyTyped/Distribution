@@ -10,16 +10,13 @@ trait IBackgroundTask extends StObject {
 }
 object IBackgroundTask {
   
-  @scala.inline
-  def apply(run: IBackgroundTaskInstance => Unit): IBackgroundTask = {
+  inline def apply(run: IBackgroundTaskInstance => Unit): IBackgroundTask = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[IBackgroundTask]
   }
   
-  @scala.inline
-  implicit class IBackgroundTaskMutableBuilder[Self <: IBackgroundTask] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTask](x: Self) {
     
-    @scala.inline
-    def setRun(value: IBackgroundTaskInstance => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: IBackgroundTaskInstance => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

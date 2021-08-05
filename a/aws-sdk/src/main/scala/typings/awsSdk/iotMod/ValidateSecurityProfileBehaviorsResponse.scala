@@ -18,28 +18,21 @@ trait ValidateSecurityProfileBehaviorsResponse extends StObject {
 }
 object ValidateSecurityProfileBehaviorsResponse {
   
-  @scala.inline
-  def apply(): ValidateSecurityProfileBehaviorsResponse = {
+  inline def apply(): ValidateSecurityProfileBehaviorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateSecurityProfileBehaviorsResponse]
   }
   
-  @scala.inline
-  implicit class ValidateSecurityProfileBehaviorsResponseMutableBuilder[Self <: ValidateSecurityProfileBehaviorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateSecurityProfileBehaviorsResponse](x: Self) {
     
-    @scala.inline
-    def setValid(value: Valid): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Valid): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
-    @scala.inline
-    def setValidationErrors(value: ValidationErrors): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+    inline def setValidationErrors(value: ValidationErrors): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+    inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    @scala.inline
-    def setValidationErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
   }
 }

@@ -17,31 +17,23 @@ trait Shard extends StObject {
 }
 object Shard {
   
-  @scala.inline
-  def apply(): Shard = {
+  inline def apply(): Shard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Shard]
   }
   
-  @scala.inline
-  implicit class ShardMutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
+  extension [Self <: Shard](x: Self) {
     
-    @scala.inline
-    def setNumShards(value: Double): Self = StObject.set(x, "numShards", value.asInstanceOf[js.Any])
+    inline def setNumShards(value: Double): Self = StObject.set(x, "numShards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumShardsUndefined: Self = StObject.set(x, "numShards", js.undefined)
+    inline def setNumShardsUndefined: Self = StObject.set(x, "numShards", js.undefined)
     
-    @scala.inline
-    def setShardIndex(value: Double): Self = StObject.set(x, "shardIndex", value.asInstanceOf[js.Any])
+    inline def setShardIndex(value: Double): Self = StObject.set(x, "shardIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardIndexUndefined: Self = StObject.set(x, "shardIndex", js.undefined)
+    inline def setShardIndexUndefined: Self = StObject.set(x, "shardIndex", js.undefined)
     
-    @scala.inline
-    def setTestTargetsForShard(value: TestTargetsForShard): Self = StObject.set(x, "testTargetsForShard", value.asInstanceOf[js.Any])
+    inline def setTestTargetsForShard(value: TestTargetsForShard): Self = StObject.set(x, "testTargetsForShard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTargetsForShardUndefined: Self = StObject.set(x, "testTargetsForShard", js.undefined)
+    inline def setTestTargetsForShardUndefined: Self = StObject.set(x, "testTargetsForShard", js.undefined)
   }
 }

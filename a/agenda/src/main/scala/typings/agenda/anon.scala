@@ -28,32 +28,24 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(): Address = {
+    inline def apply(): Address = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -63,20 +55,16 @@ object anon {
   }
   object InsertOnly {
     
-    @scala.inline
-    def apply(): InsertOnly = {
+    inline def apply(): InsertOnly = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InsertOnly]
     }
     
-    @scala.inline
-    implicit class InsertOnlyMutableBuilder[Self <: InsertOnly] (val x: Self) extends AnyVal {
+    extension [Self <: InsertOnly](x: Self) {
       
-      @scala.inline
-      def setInsertOnly(value: Boolean): Self = StObject.set(x, "insertOnly", value.asInstanceOf[js.Any])
+      inline def setInsertOnly(value: Boolean): Self = StObject.set(x, "insertOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertOnlyUndefined: Self = StObject.set(x, "insertOnly", js.undefined)
+      inline def setInsertOnlyUndefined: Self = StObject.set(x, "insertOnly", js.undefined)
     }
   }
   
@@ -88,26 +76,20 @@ object anon {
   }
   object SkipImmediate {
     
-    @scala.inline
-    def apply(): SkipImmediate = {
+    inline def apply(): SkipImmediate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkipImmediate]
     }
     
-    @scala.inline
-    implicit class SkipImmediateMutableBuilder[Self <: SkipImmediate] (val x: Self) extends AnyVal {
+    extension [Self <: SkipImmediate](x: Self) {
       
-      @scala.inline
-      def setSkipImmediate(value: Boolean): Self = StObject.set(x, "skipImmediate", value.asInstanceOf[js.Any])
+      inline def setSkipImmediate(value: Boolean): Self = StObject.set(x, "skipImmediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipImmediateUndefined: Self = StObject.set(x, "skipImmediate", js.undefined)
+      inline def setSkipImmediateUndefined: Self = StObject.set(x, "skipImmediate", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     }
   }
 }

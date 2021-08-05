@@ -14,31 +14,23 @@ trait ObjectType extends StObject {
 }
 object ObjectType {
   
-  @scala.inline
-  def apply(): ObjectType = {
+  inline def apply(): ObjectType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectType]
   }
   
-  @scala.inline
-  implicit class ObjectTypeMutableBuilder[Self <: ObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectType](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
-    @scala.inline
-    def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
+    inline def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
+    inline def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCommandUnderlines extends StObject
 object XlCommandUnderlines {
   
-  @scala.inline
-  def xlCommandUnderlinesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlCommandUnderlinesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlCommandUnderlinesOff: `-4146` = -4146.asInstanceOf[`-4146`]
+  inline def xlCommandUnderlinesOff: `-4146` = -4146.asInstanceOf[`-4146`]
   
-  @scala.inline
-  def xlCommandUnderlinesOn: `1` = 1.asInstanceOf[`1`]
+  inline def xlCommandUnderlinesOn: `1` = 1.asInstanceOf[`1`]
 }

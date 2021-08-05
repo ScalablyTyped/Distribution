@@ -20,31 +20,23 @@ trait MetricDescriptorMetadata extends StObject {
 }
 object MetricDescriptorMetadata {
   
-  @scala.inline
-  def apply(): MetricDescriptorMetadata = {
+  inline def apply(): MetricDescriptorMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricDescriptorMetadata]
   }
   
-  @scala.inline
-  implicit class MetricDescriptorMetadataMutableBuilder[Self <: MetricDescriptorMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDescriptorMetadata](x: Self) {
     
-    @scala.inline
-    def setIngestDelay(value: String): Self = StObject.set(x, "ingestDelay", value.asInstanceOf[js.Any])
+    inline def setIngestDelay(value: String): Self = StObject.set(x, "ingestDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestDelayUndefined: Self = StObject.set(x, "ingestDelay", js.undefined)
+    inline def setIngestDelayUndefined: Self = StObject.set(x, "ingestDelay", js.undefined)
     
-    @scala.inline
-    def setLaunchStage(value: String): Self = StObject.set(x, "launchStage", value.asInstanceOf[js.Any])
+    inline def setLaunchStage(value: String): Self = StObject.set(x, "launchStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchStageUndefined: Self = StObject.set(x, "launchStage", js.undefined)
+    inline def setLaunchStageUndefined: Self = StObject.set(x, "launchStage", js.undefined)
     
-    @scala.inline
-    def setSamplePeriod(value: String): Self = StObject.set(x, "samplePeriod", value.asInstanceOf[js.Any])
+    inline def setSamplePeriod(value: String): Self = StObject.set(x, "samplePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplePeriodUndefined: Self = StObject.set(x, "samplePeriod", js.undefined)
+    inline def setSamplePeriodUndefined: Self = StObject.set(x, "samplePeriod", js.undefined)
   }
 }

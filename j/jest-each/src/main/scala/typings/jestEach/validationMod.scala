@@ -11,9 +11,7 @@ object validationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateArrayTable(table: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateArrayTable")(table.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateArrayTable(table: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateArrayTable")(table.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateTemplateTableHeadings(headings: js.Array[String], data: TemplateData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateTemplateTableHeadings")(headings.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateTemplateTableHeadings(headings: js.Array[String], data: TemplateData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateTemplateTableHeadings")(headings.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

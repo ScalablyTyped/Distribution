@@ -41,8 +41,7 @@ trait TypeofdesktopCapture extends StObject {
 }
 object TypeofdesktopCapture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DesktopCaptureSourceType: AUDIO,
     cancelChooseDesktopMedia: integer => Unit,
     chooseDesktopMedia: (js.Array[
@@ -60,14 +59,11 @@ object TypeofdesktopCapture {
     __obj.asInstanceOf[TypeofdesktopCapture]
   }
   
-  @scala.inline
-  implicit class TypeofdesktopCaptureMutableBuilder[Self <: TypeofdesktopCapture] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdesktopCapture](x: Self) {
     
-    @scala.inline
-    def setCancelChooseDesktopMedia(value: integer => Unit): Self = StObject.set(x, "cancelChooseDesktopMedia", js.Any.fromFunction1(value))
+    inline def setCancelChooseDesktopMedia(value: integer => Unit): Self = StObject.set(x, "cancelChooseDesktopMedia", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChooseDesktopMedia(
+    inline def setChooseDesktopMedia(
       value: (js.Array[
           ToStringLiteral[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
@@ -80,7 +76,6 @@ object TypeofdesktopCapture {
         ], js.Function1[/* streamId */ String, Unit]) => integer
     ): Self = StObject.set(x, "chooseDesktopMedia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDesktopCaptureSourceType(value: AUDIO): Self = StObject.set(x, "DesktopCaptureSourceType", value.asInstanceOf[js.Any])
+    inline def setDesktopCaptureSourceType(value: AUDIO): Self = StObject.set(x, "DesktopCaptureSourceType", value.asInstanceOf[js.Any])
   }
 }

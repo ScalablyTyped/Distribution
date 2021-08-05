@@ -14,19 +14,15 @@ trait Api extends StObject {
 }
 object Api {
   
-  @scala.inline
-  def apply(api: API, state: State): Api = {
+  inline def apply(api: API, state: State): Api = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Api]
   }
   
-  @scala.inline
-  implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+  extension [Self <: Api](x: Self) {
     
-    @scala.inline
-    def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

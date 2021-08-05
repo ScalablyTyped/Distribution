@@ -24,8 +24,7 @@ trait InputValidation extends StObject {
 }
 object InputValidation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataType: InputDataType,
     isRequired: Boolean,
     maxLength: Double,
@@ -39,31 +38,22 @@ object InputValidation {
     __obj.asInstanceOf[InputValidation]
   }
   
-  @scala.inline
-  implicit class InputValidationMutableBuilder[Self <: InputValidation] (val x: Self) extends AnyVal {
+  extension [Self <: InputValidation](x: Self) {
     
-    @scala.inline
-    def setDataType(value: InputDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: InputDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternMismatchErrorMessage(value: String): Self = StObject.set(x, "patternMismatchErrorMessage", value.asInstanceOf[js.Any])
+    inline def setPatternMismatchErrorMessage(value: String): Self = StObject.set(x, "patternMismatchErrorMessage", value.asInstanceOf[js.Any])
   }
 }

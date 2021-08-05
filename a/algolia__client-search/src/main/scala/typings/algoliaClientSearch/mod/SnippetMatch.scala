@@ -15,19 +15,15 @@ trait SnippetMatch extends StObject {
 }
 object SnippetMatch {
   
-  @scala.inline
-  def apply(matchLevel: none | partial | full, value: String): SnippetMatch = {
+  inline def apply(matchLevel: none | partial | full, value: String): SnippetMatch = {
     val __obj = js.Dynamic.literal(matchLevel = matchLevel.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnippetMatch]
   }
   
-  @scala.inline
-  implicit class SnippetMatchMutableBuilder[Self <: SnippetMatch] (val x: Self) extends AnyVal {
+  extension [Self <: SnippetMatch](x: Self) {
     
-    @scala.inline
-    def setMatchLevel(value: none | partial | full): Self = StObject.set(x, "matchLevel", value.asInstanceOf[js.Any])
+    inline def setMatchLevel(value: none | partial | full): Self = StObject.set(x, "matchLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

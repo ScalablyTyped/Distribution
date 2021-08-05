@@ -27,8 +27,7 @@ object typesMod {
   }
   object FontScalePresets {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       augmentedFourth: Scale,
       majorSecond: Scale,
       majorThird: Scale,
@@ -39,38 +38,27 @@ object typesMod {
       __obj.asInstanceOf[FontScalePresets]
     }
     
-    @scala.inline
-    implicit class FontScalePresetsMutableBuilder[Self <: FontScalePresets] (val x: Self) extends AnyVal {
+    extension [Self <: FontScalePresets](x: Self) {
       
-      @scala.inline
-      def setAugmentedFourth(value: Scale): Self = StObject.set(x, "augmentedFourth", value.asInstanceOf[js.Any])
+      inline def setAugmentedFourth(value: Scale): Self = StObject.set(x, "augmentedFourth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAugmentedFourthVarargs(value: Factor*): Self = StObject.set(x, "augmentedFourth", js.Array(value :_*))
+      inline def setAugmentedFourthVarargs(value: Factor*): Self = StObject.set(x, "augmentedFourth", js.Array(value :_*))
       
-      @scala.inline
-      def setMajorSecond(value: Scale): Self = StObject.set(x, "majorSecond", value.asInstanceOf[js.Any])
+      inline def setMajorSecond(value: Scale): Self = StObject.set(x, "majorSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorSecondVarargs(value: Factor*): Self = StObject.set(x, "majorSecond", js.Array(value :_*))
+      inline def setMajorSecondVarargs(value: Factor*): Self = StObject.set(x, "majorSecond", js.Array(value :_*))
       
-      @scala.inline
-      def setMajorThird(value: Scale): Self = StObject.set(x, "majorThird", value.asInstanceOf[js.Any])
+      inline def setMajorThird(value: Scale): Self = StObject.set(x, "majorThird", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorThirdVarargs(value: Factor*): Self = StObject.set(x, "majorThird", js.Array(value :_*))
+      inline def setMajorThirdVarargs(value: Factor*): Self = StObject.set(x, "majorThird", js.Array(value :_*))
       
-      @scala.inline
-      def setMinorThird(value: Scale): Self = StObject.set(x, "minorThird", value.asInstanceOf[js.Any])
+      inline def setMinorThird(value: Scale): Self = StObject.set(x, "minorThird", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorThirdVarargs(value: Factor*): Self = StObject.set(x, "minorThird", js.Array(value :_*))
+      inline def setMinorThirdVarargs(value: Factor*): Self = StObject.set(x, "minorThird", js.Array(value :_*))
       
-      @scala.inline
-      def setPerfectFourth(value: Scale): Self = StObject.set(x, "perfectFourth", value.asInstanceOf[js.Any])
+      inline def setPerfectFourth(value: Scale): Self = StObject.set(x, "perfectFourth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerfectFourthVarargs(value: Factor*): Self = StObject.set(x, "perfectFourth", js.Array(value :_*))
+      inline def setPerfectFourthVarargs(value: Factor*): Self = StObject.set(x, "perfectFourth", js.Array(value :_*))
     }
   }
   
@@ -85,23 +73,17 @@ object typesMod {
   trait Heading extends StObject
   object Heading {
     
-    @scala.inline
-    def h1: typings.shevyjs.shevyjsStrings.h1 = "h1".asInstanceOf[typings.shevyjs.shevyjsStrings.h1]
+    inline def h1: typings.shevyjs.shevyjsStrings.h1 = "h1".asInstanceOf[typings.shevyjs.shevyjsStrings.h1]
     
-    @scala.inline
-    def h2: typings.shevyjs.shevyjsStrings.h2 = "h2".asInstanceOf[typings.shevyjs.shevyjsStrings.h2]
+    inline def h2: typings.shevyjs.shevyjsStrings.h2 = "h2".asInstanceOf[typings.shevyjs.shevyjsStrings.h2]
     
-    @scala.inline
-    def h3: typings.shevyjs.shevyjsStrings.h3 = "h3".asInstanceOf[typings.shevyjs.shevyjsStrings.h3]
+    inline def h3: typings.shevyjs.shevyjsStrings.h3 = "h3".asInstanceOf[typings.shevyjs.shevyjsStrings.h3]
     
-    @scala.inline
-    def h4: typings.shevyjs.shevyjsStrings.h4 = "h4".asInstanceOf[typings.shevyjs.shevyjsStrings.h4]
+    inline def h4: typings.shevyjs.shevyjsStrings.h4 = "h4".asInstanceOf[typings.shevyjs.shevyjsStrings.h4]
     
-    @scala.inline
-    def h5: typings.shevyjs.shevyjsStrings.h5 = "h5".asInstanceOf[typings.shevyjs.shevyjsStrings.h5]
+    inline def h5: typings.shevyjs.shevyjsStrings.h5 = "h5".asInstanceOf[typings.shevyjs.shevyjsStrings.h5]
     
-    @scala.inline
-    def h6: typings.shevyjs.shevyjsStrings.h6 = "h6".asInstanceOf[typings.shevyjs.shevyjsStrings.h6]
+    inline def h6: typings.shevyjs.shevyjsStrings.h6 = "h6".asInstanceOf[typings.shevyjs.shevyjsStrings.h6]
   }
   
   trait Options extends StObject {
@@ -120,8 +102,7 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addMarginBottom: Boolean,
       baseFontScale: Scale | majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth,
       baseFontSize: String,
@@ -133,29 +114,21 @@ object typesMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAddMarginBottom(value: Boolean): Self = StObject.set(x, "addMarginBottom", value.asInstanceOf[js.Any])
+      inline def setAddMarginBottom(value: Boolean): Self = StObject.set(x, "addMarginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseFontScale(value: Scale | majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): Self = StObject.set(x, "baseFontScale", value.asInstanceOf[js.Any])
+      inline def setBaseFontScale(value: Scale | majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): Self = StObject.set(x, "baseFontScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseFontScaleVarargs(value: Factor*): Self = StObject.set(x, "baseFontScale", js.Array(value :_*))
+      inline def setBaseFontScaleVarargs(value: Factor*): Self = StObject.set(x, "baseFontScale", js.Array(value :_*))
       
-      @scala.inline
-      def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+      inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseLineHeight(value: Double): Self = StObject.set(x, "baseLineHeight", value.asInstanceOf[js.Any])
+      inline def setBaseLineHeight(value: Double): Self = StObject.set(x, "baseLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProximity(value: Boolean): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+      inline def setProximity(value: Boolean): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProximityFactor(value: Factor): Self = StObject.set(x, "proximityFactor", value.asInstanceOf[js.Any])
+      inline def setProximityFactor(value: Factor): Self = StObject.set(x, "proximityFactor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,23 +142,18 @@ object typesMod {
   }
   object RhythmProperties {
     
-    @scala.inline
-    def apply(fontSize: String, lineHeight: Double, marginBottom: String): RhythmProperties = {
+    inline def apply(fontSize: String, lineHeight: Double, marginBottom: String): RhythmProperties = {
       val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], marginBottom = marginBottom.asInstanceOf[js.Any])
       __obj.asInstanceOf[RhythmProperties]
     }
     
-    @scala.inline
-    implicit class RhythmPropertiesMutableBuilder[Self <: RhythmProperties] (val x: Self) extends AnyVal {
+    extension [Self <: RhythmProperties](x: Self) {
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: String): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: String): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     }
   }
   

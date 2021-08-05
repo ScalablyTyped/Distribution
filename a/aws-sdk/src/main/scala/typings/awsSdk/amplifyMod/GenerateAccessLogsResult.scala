@@ -13,19 +13,15 @@ trait GenerateAccessLogsResult extends StObject {
 }
 object GenerateAccessLogsResult {
   
-  @scala.inline
-  def apply(): GenerateAccessLogsResult = {
+  inline def apply(): GenerateAccessLogsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateAccessLogsResult]
   }
   
-  @scala.inline
-  implicit class GenerateAccessLogsResultMutableBuilder[Self <: GenerateAccessLogsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateAccessLogsResult](x: Self) {
     
-    @scala.inline
-    def setLogUrl(value: LogUrl): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
+    inline def setLogUrl(value: LogUrl): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
+    inline def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
   }
 }

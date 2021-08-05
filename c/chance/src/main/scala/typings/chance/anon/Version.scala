@@ -12,16 +12,13 @@ trait Version extends StObject {
 }
 object Version {
   
-  @scala.inline
-  def apply(version: `4` | `5`): Version = {
+  inline def apply(version: `4` | `5`): Version = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Version]
   }
   
-  @scala.inline
-  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+  extension [Self <: Version](x: Self) {
     
-    @scala.inline
-    def setVersion(value: `4` | `5`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: `4` | `5`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

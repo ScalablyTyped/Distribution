@@ -26,26 +26,20 @@ object colorPaletteMod {
   }
   object ColorProps {
     
-    @scala.inline
-    def apply(colors: Colors, subtitle: String, title: String): ColorProps = {
+    inline def apply(colors: Colors, subtitle: String, title: String): ColorProps = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorProps]
     }
     
-    @scala.inline
-    implicit class ColorPropsMutableBuilder[Self <: ColorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColorProps](x: Self) {
       
-      @scala.inline
-      def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

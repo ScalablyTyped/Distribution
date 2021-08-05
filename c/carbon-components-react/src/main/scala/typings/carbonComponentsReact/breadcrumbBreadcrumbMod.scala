@@ -22,20 +22,16 @@ object breadcrumbBreadcrumbMod extends Shortcut {
   }
   object BreadcrumbProps {
     
-    @scala.inline
-    def apply(): BreadcrumbProps = {
+    inline def apply(): BreadcrumbProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbPropsMutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setNoTrailingSlash(value: Boolean): Self = StObject.set(x, "noTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setNoTrailingSlash(value: Boolean): Self = StObject.set(x, "noTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTrailingSlashUndefined: Self = StObject.set(x, "noTrailingSlash", js.undefined)
+      inline def setNoTrailingSlashUndefined: Self = StObject.set(x, "noTrailingSlash", js.undefined)
     }
   }
   

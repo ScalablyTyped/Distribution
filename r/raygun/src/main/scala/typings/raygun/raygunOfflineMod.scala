@@ -15,7 +15,7 @@ object raygunOfflineMod {
        with IOfflineStorage {
     def this(transport: Transport) = this()
     
-    var _sendAndDelete: js.Any = js.native
+    /* private */ var _sendAndDelete: js.Any = js.native
     
     var cacheLimit: Double = js.native
     

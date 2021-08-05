@@ -8,21 +8,17 @@ object otplibStrings {
   
   @js.native
   sealed trait createRandomBytes extends StObject
-  @scala.inline
-  def createRandomBytes: createRandomBytes = "createRandomBytes".asInstanceOf[createRandomBytes]
+  inline def createRandomBytes: createRandomBytes = "createRandomBytes".asInstanceOf[createRandomBytes]
   
   @js.native
   sealed trait encoding extends StObject
-  @scala.inline
-  def encoding: encoding = "encoding".asInstanceOf[encoding]
+  inline def encoding: encoding = "encoding".asInstanceOf[encoding]
   
   @js.native
   sealed trait keyDecoder extends StObject
-  @scala.inline
-  def keyDecoder: keyDecoder = "keyDecoder".asInstanceOf[keyDecoder]
+  inline def keyDecoder: keyDecoder = "keyDecoder".asInstanceOf[keyDecoder]
   
   @js.native
   sealed trait keyEncoder extends StObject
-  @scala.inline
-  def keyEncoder: keyEncoder = "keyEncoder".asInstanceOf[keyEncoder]
+  inline def keyEncoder: keyEncoder = "keyEncoder".asInstanceOf[keyEncoder]
 }

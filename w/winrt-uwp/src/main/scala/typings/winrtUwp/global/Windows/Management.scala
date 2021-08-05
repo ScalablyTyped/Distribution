@@ -29,8 +29,7 @@ object Management {
         * @return The app data store.
         */
       /* static member */
-      @scala.inline
-      def createForPackageFamily(packageFamilyName: String): ApplicationData = ^.asInstanceOf[js.Dynamic].applyDynamic("createForPackageFamily")(packageFamilyName.asInstanceOf[js.Any]).asInstanceOf[ApplicationData]
+      inline def createForPackageFamily(packageFamilyName: String): ApplicationData = ^.asInstanceOf[js.Dynamic].applyDynamic("createForPackageFamily")(packageFamilyName.asInstanceOf[js.Any]).asInstanceOf[ApplicationData]
     }
   }
   
@@ -204,8 +203,7 @@ object Management {
         @JSGlobal("Windows.Management.Deployment.Preview.ClassicAppManager.findInstalledApp")
         @js.native
         def findInstalledApp: js.Any = js.native
-        @scala.inline
-        def findInstalledApp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findInstalledApp")(x.asInstanceOf[js.Any])
+        inline def findInstalledApp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findInstalledApp")(x.asInstanceOf[js.Any])
       }
       
       @JSGlobal("Windows.Management.Deployment.Preview.InstalledClassicAppInfo")
@@ -259,8 +257,7 @@ object Management {
       @JSGlobal("Windows.Management.Orchestration.CurrentAppOrchestration.getForCurrentView")
       @js.native
       def getForCurrentView: js.Any = js.native
-      @scala.inline
-      def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
+      inline def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Windows.Management.Orchestration.SingleAppModeContext")
@@ -294,32 +291,28 @@ object Management {
         * @return true if a browser is allowed.
         */
       /* static member */
-      @scala.inline
-      def isBrowserAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserAllowed")().asInstanceOf[Boolean]
+      inline def isBrowserAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserAllowed")().asInstanceOf[Boolean]
       
       /**
         * Returns true if a camera is allowed.
         * @return true if a camera is allowed.
         */
       /* static member */
-      @scala.inline
-      def isCameraAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCameraAllowed")().asInstanceOf[Boolean]
+      inline def isCameraAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCameraAllowed")().asInstanceOf[Boolean]
       
       /**
         * Returns true if a Microsoft Account is allowed.
         * @return true if a Microsoft Account is allowed.
         */
       /* static member */
-      @scala.inline
-      def isMicrosoftAccountAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMicrosoftAccountAllowed")().asInstanceOf[Boolean]
+      inline def isMicrosoftAccountAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMicrosoftAccountAllowed")().asInstanceOf[Boolean]
       
       /**
         * Returns true if a Store is allowed.
         * @return true if a Store is allowed.
         */
       /* static member */
-      @scala.inline
-      def isStoreAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStoreAllowed")().asInstanceOf[Boolean]
+      inline def isStoreAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStoreAllowed")().asInstanceOf[Boolean]
     }
     
     /** Enables Windows Store apps to access select enterprise settings that are managed through group policy or other management services. */
@@ -339,8 +332,7 @@ object Management {
       @JSGlobal("Windows.Management.Workplace.WorkplaceSettings.isMicrosoftAccountOptional")
       @js.native
       def isMicrosoftAccountOptional: Boolean = js.native
-      @scala.inline
-      def isMicrosoftAccountOptional_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isMicrosoftAccountOptional")(x.asInstanceOf[js.Any])
+      inline def isMicrosoftAccountOptional_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isMicrosoftAccountOptional")(x.asInstanceOf[js.Any])
     }
   }
 }

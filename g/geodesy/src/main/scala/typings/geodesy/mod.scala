@@ -15,20 +15,16 @@ object mod {
   }
   object Datum {
     
-    @scala.inline
-    def apply(ellipsoid: Ellipsoid, transform: Transform): Datum = {
+    inline def apply(ellipsoid: Ellipsoid, transform: Transform): Datum = {
       val __obj = js.Dynamic.literal(ellipsoid = ellipsoid.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[Datum]
     }
     
-    @scala.inline
-    implicit class DatumMutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
+    extension [Self <: Datum](x: Self) {
       
-      @scala.inline
-      def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+      inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,23 +42,18 @@ object mod {
   }
   object Ellipsoid {
     
-    @scala.inline
-    def apply(a: Double, b: Double, f: Double): Ellipsoid = {
+    inline def apply(a: Double, b: Double, f: Double): Ellipsoid = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ellipsoid]
     }
     
-    @scala.inline
-    implicit class EllipsoidMutableBuilder[Self <: Ellipsoid] (val x: Self) extends AnyVal {
+    extension [Self <: Ellipsoid](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,14 +67,11 @@ object mod {
   trait Format extends StObject
   object Format {
     
-    @scala.inline
-    def d: typings.geodesy.geodesyStrings.d = "d".asInstanceOf[typings.geodesy.geodesyStrings.d]
+    inline def d: typings.geodesy.geodesyStrings.d = "d".asInstanceOf[typings.geodesy.geodesyStrings.d]
     
-    @scala.inline
-    def dm: typings.geodesy.geodesyStrings.dm = "dm".asInstanceOf[typings.geodesy.geodesyStrings.dm]
+    inline def dm: typings.geodesy.geodesyStrings.dm = "dm".asInstanceOf[typings.geodesy.geodesyStrings.dm]
     
-    @scala.inline
-    def dms: typings.geodesy.geodesyStrings.dms = "dms".asInstanceOf[typings.geodesy.geodesyStrings.dms]
+    inline def dms: typings.geodesy.geodesyStrings.dms = "dms".asInstanceOf[typings.geodesy.geodesyStrings.dms]
   }
   
   trait GeoJSON extends StObject {
@@ -94,21 +82,17 @@ object mod {
   }
   object GeoJSON {
     
-    @scala.inline
-    def apply(coordinates: js.Tuple2[Double, Double], `type`: String): GeoJSON = {
+    inline def apply(coordinates: js.Tuple2[Double, Double], `type`: String): GeoJSON = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoJSON]
     }
     
-    @scala.inline
-    implicit class GeoJSONMutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJSON](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

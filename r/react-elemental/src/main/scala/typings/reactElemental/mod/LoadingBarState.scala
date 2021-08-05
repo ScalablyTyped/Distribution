@@ -10,16 +10,13 @@ trait LoadingBarState extends StObject {
 }
 object LoadingBarState {
   
-  @scala.inline
-  def apply(position: Double): LoadingBarState = {
+  inline def apply(position: Double): LoadingBarState = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingBarState]
   }
   
-  @scala.inline
-  implicit class LoadingBarStateMutableBuilder[Self <: LoadingBarState] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingBarState](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

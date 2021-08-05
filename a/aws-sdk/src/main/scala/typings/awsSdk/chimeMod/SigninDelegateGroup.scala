@@ -13,19 +13,15 @@ trait SigninDelegateGroup extends StObject {
 }
 object SigninDelegateGroup {
   
-  @scala.inline
-  def apply(): SigninDelegateGroup = {
+  inline def apply(): SigninDelegateGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigninDelegateGroup]
   }
   
-  @scala.inline
-  implicit class SigninDelegateGroupMutableBuilder[Self <: SigninDelegateGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SigninDelegateGroup](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

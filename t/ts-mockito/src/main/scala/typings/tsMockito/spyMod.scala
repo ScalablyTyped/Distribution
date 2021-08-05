@@ -12,6 +12,6 @@ object spyMod {
   class Spy protected () extends Mocker {
     def this(instance: js.Any) = this()
     
-    var realMethods: js.Any = js.native
+    /* private */ var realMethods: js.Any = js.native
   }
 }

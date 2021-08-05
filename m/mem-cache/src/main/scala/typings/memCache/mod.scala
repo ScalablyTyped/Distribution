@@ -41,32 +41,24 @@ object mod {
   }
   object CacheOptions {
     
-    @scala.inline
-    def apply(): CacheOptions = {
+    inline def apply(): CacheOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheOptions]
     }
     
-    @scala.inline
-    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CacheOptions](x: Self) {
       
-      @scala.inline
-      def setDoesNotRenewTimeout(value: Boolean): Self = StObject.set(x, "doesNotRenewTimeout", value.asInstanceOf[js.Any])
+      inline def setDoesNotRenewTimeout(value: Boolean): Self = StObject.set(x, "doesNotRenewTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoesNotRenewTimeoutUndefined: Self = StObject.set(x, "doesNotRenewTimeout", js.undefined)
+      inline def setDoesNotRenewTimeoutUndefined: Self = StObject.set(x, "doesNotRenewTimeout", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutDisabled(value: Boolean): Self = StObject.set(x, "timeoutDisabled", value.asInstanceOf[js.Any])
+      inline def setTimeoutDisabled(value: Boolean): Self = StObject.set(x, "timeoutDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutDisabledUndefined: Self = StObject.set(x, "timeoutDisabled", js.undefined)
+      inline def setTimeoutDisabledUndefined: Self = StObject.set(x, "timeoutDisabled", js.undefined)
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait GetEmailIdentityRequest extends StObject {
 }
 object GetEmailIdentityRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity): GetEmailIdentityRequest = {
+  inline def apply(EmailIdentity: Identity): GetEmailIdentityRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEmailIdentityRequest]
   }
   
-  @scala.inline
-  implicit class GetEmailIdentityRequestMutableBuilder[Self <: GetEmailIdentityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEmailIdentityRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
   }
 }

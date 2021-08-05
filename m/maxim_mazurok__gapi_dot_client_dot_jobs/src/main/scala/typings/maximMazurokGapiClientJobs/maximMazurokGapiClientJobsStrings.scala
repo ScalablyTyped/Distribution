@@ -8,51 +8,41 @@ object maximMazurokGapiClientJobsStrings {
   
   @js.native
   sealed trait ClientEvent extends StObject
-  @scala.inline
-  def ClientEvent: ClientEvent = "ClientEvent".asInstanceOf[ClientEvent]
+  inline def ClientEvent: ClientEvent = "ClientEvent".asInstanceOf[ClientEvent]
   
   @js.native
   sealed trait CustomAttributeHistogramResult extends StObject
-  @scala.inline
-  def CustomAttributeHistogramResult: CustomAttributeHistogramResult = "CustomAttributeHistogramResult".asInstanceOf[CustomAttributeHistogramResult]
+  inline def CustomAttributeHistogramResult: CustomAttributeHistogramResult = "CustomAttributeHistogramResult".asInstanceOf[CustomAttributeHistogramResult]
   
   @js.native
   sealed trait GoogleCloudTalentV4Job extends StObject
-  @scala.inline
-  def GoogleCloudTalentV4Job: GoogleCloudTalentV4Job = "GoogleCloudTalentV4Job".asInstanceOf[GoogleCloudTalentV4Job]
+  inline def GoogleCloudTalentV4Job: GoogleCloudTalentV4Job = "GoogleCloudTalentV4Job".asInstanceOf[GoogleCloudTalentV4Job]
   
   @js.native
   sealed trait HistogramResult extends StObject
-  @scala.inline
-  def HistogramResult: HistogramResult = "HistogramResult".asInstanceOf[HistogramResult]
+  inline def HistogramResult: HistogramResult = "HistogramResult".asInstanceOf[HistogramResult]
   
   @js.native
   sealed trait Job extends StObject
-  @scala.inline
-  def Job: Job = "Job".asInstanceOf[Job]
+  inline def Job: Job = "Job".asInstanceOf[Job]
   
   @js.native
   sealed trait MendelDebugInput extends StObject
-  @scala.inline
-  def MendelDebugInput: MendelDebugInput = "MendelDebugInput".asInstanceOf[MendelDebugInput]
+  inline def MendelDebugInput: MendelDebugInput = "MendelDebugInput".asInstanceOf[MendelDebugInput]
   
   @js.native
   sealed trait NamespacedDebugInput extends StObject
-  @scala.inline
-  def NamespacedDebugInput: NamespacedDebugInput = "NamespacedDebugInput".asInstanceOf[NamespacedDebugInput]
+  inline def NamespacedDebugInput: NamespacedDebugInput = "NamespacedDebugInput".asInstanceOf[NamespacedDebugInput]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait jobs extends StObject
-  @scala.inline
-  def jobs: jobs = "jobs".asInstanceOf[jobs]
+  inline def jobs: jobs = "jobs".asInstanceOf[jobs]
   
   @js.native
   sealed trait v3 extends StObject
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
+  inline def v3: v3 = "v3".asInstanceOf[v3]
 }

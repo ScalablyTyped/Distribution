@@ -23,31 +23,23 @@ trait CodeDeliveryDetailsType extends StObject {
 }
 object CodeDeliveryDetailsType {
   
-  @scala.inline
-  def apply(): CodeDeliveryDetailsType = {
+  inline def apply(): CodeDeliveryDetailsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeDeliveryDetailsType]
   }
   
-  @scala.inline
-  implicit class CodeDeliveryDetailsTypeMutableBuilder[Self <: CodeDeliveryDetailsType] (val x: Self) extends AnyVal {
+  extension [Self <: CodeDeliveryDetailsType](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setDeliveryMedium(value: DeliveryMediumType): Self = StObject.set(x, "DeliveryMedium", value.asInstanceOf[js.Any])
+    inline def setDeliveryMedium(value: DeliveryMediumType): Self = StObject.set(x, "DeliveryMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryMediumUndefined: Self = StObject.set(x, "DeliveryMedium", js.undefined)
+    inline def setDeliveryMediumUndefined: Self = StObject.set(x, "DeliveryMedium", js.undefined)
     
-    @scala.inline
-    def setDestination(value: StringType): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: StringType): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
   }
 }

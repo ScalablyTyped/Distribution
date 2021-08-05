@@ -21,37 +21,28 @@ object anon {
   }
   object AddedCount {
     
-    @scala.inline
-    def apply(addedCount: Double, index: Double, `object`: js.Array[js.Any], removed: js.Array[js.Any]): AddedCount = {
+    inline def apply(addedCount: Double, index: Double, `object`: js.Array[js.Any], removed: js.Array[js.Any]): AddedCount = {
       val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("splice")
       __obj.asInstanceOf[AddedCount]
     }
     
-    @scala.inline
-    implicit class AddedCountMutableBuilder[Self <: AddedCount] (val x: Self) extends AnyVal {
+    extension [Self <: AddedCount](x: Self) {
       
-      @scala.inline
-      def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
+      inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
+      inline def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))
+      inline def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: splice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: splice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

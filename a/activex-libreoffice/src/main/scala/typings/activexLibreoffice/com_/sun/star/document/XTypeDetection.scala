@@ -48,8 +48,7 @@ trait XTypeDetection
 }
 object XTypeDetection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     queryTypeByDescriptor: (js.Array[SeqEquiv[PropertyValue]], Boolean) => String,
@@ -60,13 +59,10 @@ object XTypeDetection {
     __obj.asInstanceOf[XTypeDetection]
   }
   
-  @scala.inline
-  implicit class XTypeDetectionMutableBuilder[Self <: XTypeDetection] (val x: Self) extends AnyVal {
+  extension [Self <: XTypeDetection](x: Self) {
     
-    @scala.inline
-    def setQueryTypeByDescriptor(value: (js.Array[SeqEquiv[PropertyValue]], Boolean) => String): Self = StObject.set(x, "queryTypeByDescriptor", js.Any.fromFunction2(value))
+    inline def setQueryTypeByDescriptor(value: (js.Array[SeqEquiv[PropertyValue]], Boolean) => String): Self = StObject.set(x, "queryTypeByDescriptor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryTypeByURL(value: String => String): Self = StObject.set(x, "queryTypeByURL", js.Any.fromFunction1(value))
+    inline def setQueryTypeByURL(value: String => String): Self = StObject.set(x, "queryTypeByURL", js.Any.fromFunction1(value))
   }
 }

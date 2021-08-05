@@ -16,31 +16,23 @@ trait IConsensusSummarizeBlockResponse extends StObject {
 }
 object IConsensusSummarizeBlockResponse {
   
-  @scala.inline
-  def apply(): IConsensusSummarizeBlockResponse = {
+  inline def apply(): IConsensusSummarizeBlockResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusSummarizeBlockResponse]
   }
   
-  @scala.inline
-  implicit class IConsensusSummarizeBlockResponseMutableBuilder[Self <: IConsensusSummarizeBlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusSummarizeBlockResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSummary(value: Uint8Array): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: Uint8Array): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryNull: Self = StObject.set(x, "summary", null)
+    inline def setSummaryNull: Self = StObject.set(x, "summary", null)
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

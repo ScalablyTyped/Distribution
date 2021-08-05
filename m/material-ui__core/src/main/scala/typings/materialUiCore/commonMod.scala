@@ -19,20 +19,16 @@ object commonMod extends Shortcut {
   }
   object CommonColors {
     
-    @scala.inline
-    def apply(black: String, white: String): CommonColors = {
+    inline def apply(black: String, white: String): CommonColors = {
       val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonColors]
     }
     
-    @scala.inline
-    implicit class CommonColorsMutableBuilder[Self <: CommonColors] (val x: Self) extends AnyVal {
+    extension [Self <: CommonColors](x: Self) {
       
-      @scala.inline
-      def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     }
   }
   

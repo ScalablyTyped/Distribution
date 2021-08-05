@@ -28,8 +28,7 @@ trait XAxisSupplier
 }
 object XAxisSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getAxis: Double => XAxis,
     getSecondaryAxis: Double => XAxis,
@@ -40,13 +39,10 @@ object XAxisSupplier {
     __obj.asInstanceOf[XAxisSupplier]
   }
   
-  @scala.inline
-  implicit class XAxisSupplierMutableBuilder[Self <: XAxisSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XAxisSupplier](x: Self) {
     
-    @scala.inline
-    def setGetAxis(value: Double => XAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction1(value))
+    inline def setGetAxis(value: Double => XAxis): Self = StObject.set(x, "getAxis", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSecondaryAxis(value: Double => XAxis): Self = StObject.set(x, "getSecondaryAxis", js.Any.fromFunction1(value))
+    inline def setGetSecondaryAxis(value: Double => XAxis): Self = StObject.set(x, "getSecondaryAxis", js.Any.fromFunction1(value))
   }
 }

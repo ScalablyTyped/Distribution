@@ -13,17 +13,14 @@ trait Header
 }
 object Header {
   
-  @scala.inline
-  def apply(`type`: ParameterType): Header = {
+  inline def apply(`type`: ParameterType): Header = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setType(value: ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

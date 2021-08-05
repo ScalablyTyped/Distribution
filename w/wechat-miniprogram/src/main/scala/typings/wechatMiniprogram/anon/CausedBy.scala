@@ -26,20 +26,16 @@ trait CausedBy extends StObject {
 }
 object CausedBy {
   
-  @scala.inline
-  def apply(causedBy: gesture | update): CausedBy = {
+  inline def apply(causedBy: gesture | update): CausedBy = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("begin")
     __obj.asInstanceOf[CausedBy]
   }
   
-  @scala.inline
-  implicit class CausedByMutableBuilder[Self <: CausedBy] (val x: Self) extends AnyVal {
+  extension [Self <: CausedBy](x: Self) {
     
-    @scala.inline
-    def setCausedBy(value: gesture | update): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
+    inline def setCausedBy(value: gesture | update): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: begin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: begin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

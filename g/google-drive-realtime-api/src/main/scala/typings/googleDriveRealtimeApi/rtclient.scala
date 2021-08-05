@@ -29,8 +29,7 @@ object rtclient {
   }
   object ClientUtils {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RealtimeLoader: RealtimeLoaderFactory,
       createRealtimeFile: (String, String, js.Function1[/* file */ DriveAPIFileResource, Unit]) => Unit,
       params: FileIds
@@ -39,17 +38,13 @@ object rtclient {
       __obj.asInstanceOf[ClientUtils]
     }
     
-    @scala.inline
-    implicit class ClientUtilsMutableBuilder[Self <: ClientUtils] (val x: Self) extends AnyVal {
+    extension [Self <: ClientUtils](x: Self) {
       
-      @scala.inline
-      def setCreateRealtimeFile(value: (String, String, js.Function1[/* file */ DriveAPIFileResource, Unit]) => Unit): Self = StObject.set(x, "createRealtimeFile", js.Any.fromFunction3(value))
+      inline def setCreateRealtimeFile(value: (String, String, js.Function1[/* file */ DriveAPIFileResource, Unit]) => Unit): Self = StObject.set(x, "createRealtimeFile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setParams(value: FileIds): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: FileIds): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealtimeLoader(value: RealtimeLoaderFactory): Self = StObject.set(x, "RealtimeLoader", value.asInstanceOf[js.Any])
+      inline def setRealtimeLoader(value: RealtimeLoaderFactory): Self = StObject.set(x, "RealtimeLoader", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +54,14 @@ object rtclient {
   }
   object DriveAPIFileResource {
     
-    @scala.inline
-    def apply(id: String): DriveAPIFileResource = {
+    inline def apply(id: String): DriveAPIFileResource = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DriveAPIFileResource]
     }
     
-    @scala.inline
-    implicit class DriveAPIFileResourceMutableBuilder[Self <: DriveAPIFileResource] (val x: Self) extends AnyVal {
+    extension [Self <: DriveAPIFileResource](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,8 +102,7 @@ object rtclient {
   }
   object LoaderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterAuth: () => Unit,
       appId: String,
       authButtonElementId: String,
@@ -127,38 +118,27 @@ object rtclient {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    @scala.inline
-    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptions](x: Self) {
       
-      @scala.inline
-      def setAfterAuth(value: () => Unit): Self = StObject.set(x, "afterAuth", js.Any.fromFunction0(value))
+      inline def setAfterAuth(value: () => Unit): Self = StObject.set(x, "afterAuth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthButtonElementId(value: String): Self = StObject.set(x, "authButtonElementId", value.asInstanceOf[js.Any])
+      inline def setAuthButtonElementId(value: String): Self = StObject.set(x, "authButtonElementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
+      inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTitle(value: String): Self = StObject.set(x, "defaultTitle", value.asInstanceOf[js.Any])
+      inline def setDefaultTitle(value: String): Self = StObject.set(x, "defaultTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitializeModel(value: Model => Unit): Self = StObject.set(x, "initializeModel", js.Any.fromFunction1(value))
+      inline def setInitializeModel(value: Model => Unit): Self = StObject.set(x, "initializeModel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNewFileMimeType(value: String): Self = StObject.set(x, "newFileMimeType", value.asInstanceOf[js.Any])
+      inline def setNewFileMimeType(value: String): Self = StObject.set(x, "newFileMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFileLoaded(value: Document => Unit): Self = StObject.set(x, "onFileLoaded", js.Any.fromFunction1(value))
+      inline def setOnFileLoaded(value: Document => Unit): Self = StObject.set(x, "onFileLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterTypes(value: () => Unit): Self = StObject.set(x, "registerTypes", js.Any.fromFunction0(value))
+      inline def setRegisterTypes(value: () => Unit): Self = StObject.set(x, "registerTypes", js.Any.fromFunction0(value))
     }
   }
   
@@ -172,23 +152,18 @@ object rtclient {
   }
   object RealtimeLoader {
     
-    @scala.inline
-    def apply(handleErrors: Error => Unit, load: () => Unit, start: () => Unit): RealtimeLoader = {
+    inline def apply(handleErrors: Error => Unit, load: () => Unit, start: () => Unit): RealtimeLoader = {
       val __obj = js.Dynamic.literal(handleErrors = js.Any.fromFunction1(handleErrors), load = js.Any.fromFunction0(load), start = js.Any.fromFunction0(start))
       __obj.asInstanceOf[RealtimeLoader]
     }
     
-    @scala.inline
-    implicit class RealtimeLoaderMutableBuilder[Self <: RealtimeLoader] (val x: Self) extends AnyVal {
+    extension [Self <: RealtimeLoader](x: Self) {
       
-      @scala.inline
-      def setHandleErrors(value: Error => Unit): Self = StObject.set(x, "handleErrors", js.Any.fromFunction1(value))
+      inline def setHandleErrors(value: Error => Unit): Self = StObject.set(x, "handleErrors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   

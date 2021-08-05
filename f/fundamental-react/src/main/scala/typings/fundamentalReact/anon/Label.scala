@@ -23,40 +23,29 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(notificationCount: Double): Label = {
+  inline def apply(notificationCount: Double): Label = {
     val __obj = js.Dynamic.literal(notificationCount = notificationCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setCallback(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setNoNotificationsBody(value: ReactNode): Self = StObject.set(x, "noNotificationsBody", value.asInstanceOf[js.Any])
+    inline def setNoNotificationsBody(value: ReactNode): Self = StObject.set(x, "noNotificationsBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoNotificationsBodyUndefined: Self = StObject.set(x, "noNotificationsBody", js.undefined)
+    inline def setNoNotificationsBodyUndefined: Self = StObject.set(x, "noNotificationsBody", js.undefined)
     
-    @scala.inline
-    def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
+    inline def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsBody(value: ReactNode): Self = StObject.set(x, "notificationsBody", value.asInstanceOf[js.Any])
+    inline def setNotificationsBody(value: ReactNode): Self = StObject.set(x, "notificationsBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsBodyUndefined: Self = StObject.set(x, "notificationsBody", js.undefined)
+    inline def setNotificationsBodyUndefined: Self = StObject.set(x, "notificationsBody", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object isPromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(candidate: js.Any): /* is std.Promise<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<unknown> */ Boolean]
+  inline def default(candidate: js.Any): /* is std.Promise<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<unknown> */ Boolean]
 }

@@ -11,8 +11,7 @@ trait GetGcmChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesGetGcmChannelOutputMod.GetGcmChannelOutput
 object GetGcmChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, GCMChannelResponse: UnmarshalledGCMChannelResponse): GetGcmChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, GCMChannelResponse: UnmarshalledGCMChannelResponse): GetGcmChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], GCMChannelResponse = GCMChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGcmChannelOutput]
   }

@@ -13,19 +13,15 @@ trait OpenInstancePublicPortsResult extends StObject {
 }
 object OpenInstancePublicPortsResult {
   
-  @scala.inline
-  def apply(): OpenInstancePublicPortsResult = {
+  inline def apply(): OpenInstancePublicPortsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenInstancePublicPortsResult]
   }
   
-  @scala.inline
-  implicit class OpenInstancePublicPortsResultMutableBuilder[Self <: OpenInstancePublicPortsResult] (val x: Self) extends AnyVal {
+  extension [Self <: OpenInstancePublicPortsResult](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

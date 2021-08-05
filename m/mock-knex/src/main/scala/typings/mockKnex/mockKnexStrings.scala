@@ -8,6 +8,5 @@ object mockKnexStrings {
   
   @js.native
   sealed trait query extends StObject
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  inline def query: query = "query".asInstanceOf[query]
 }

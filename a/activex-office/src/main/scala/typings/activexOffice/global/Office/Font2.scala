@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Font2")
 @js.native
-class Font2 protected ()
+/* private */ class Font2 ()
   extends StObject
      with typings.activexOffice.Office.Font2 {
   
@@ -82,7 +82,7 @@ class Font2 protected ()
   /* CompleteClass */
   var NameOther: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.Font2_typekey")
   var OfficeDotFont2_typekey: typings.activexOffice.Office.Font2 = js.native
   

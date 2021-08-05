@@ -23,25 +23,19 @@ trait AnalyticsApplicationInputsSchemaRecordColumn extends StObject {
 }
 object AnalyticsApplicationInputsSchemaRecordColumn {
   
-  @scala.inline
-  def apply(name: String, sqlType: String): AnalyticsApplicationInputsSchemaRecordColumn = {
+  inline def apply(name: String, sqlType: String): AnalyticsApplicationInputsSchemaRecordColumn = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sqlType = sqlType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputsSchemaRecordColumn]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationInputsSchemaRecordColumnMutableBuilder[Self <: AnalyticsApplicationInputsSchemaRecordColumn] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationInputsSchemaRecordColumn](x: Self) {
     
-    @scala.inline
-    def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlType(value: String): Self = StObject.set(x, "sqlType", value.asInstanceOf[js.Any])
+    inline def setSqlType(value: String): Self = StObject.set(x, "sqlType", value.asInstanceOf[js.Any])
   }
 }

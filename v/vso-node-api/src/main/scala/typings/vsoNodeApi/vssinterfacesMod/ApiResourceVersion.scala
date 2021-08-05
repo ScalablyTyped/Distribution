@@ -23,22 +23,17 @@ trait ApiResourceVersion extends StObject {
 }
 object ApiResourceVersion {
   
-  @scala.inline
-  def apply(apiVersion: String, isPreview: Boolean, resourceVersion: Double): ApiResourceVersion = {
+  inline def apply(apiVersion: String, isPreview: Boolean, resourceVersion: Double): ApiResourceVersion = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], isPreview = isPreview.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiResourceVersion]
   }
   
-  @scala.inline
-  implicit class ApiResourceVersionMutableBuilder[Self <: ApiResourceVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ApiResourceVersion](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
+    inline def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
   }
 }

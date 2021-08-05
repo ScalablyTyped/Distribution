@@ -14,16 +14,13 @@ trait SensorErrorEventInit
 }
 object SensorErrorEventInit {
   
-  @scala.inline
-  def apply(error: Error): SensorErrorEventInit = {
+  inline def apply(error: Error): SensorErrorEventInit = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensorErrorEventInit]
   }
   
-  @scala.inline
-  implicit class SensorErrorEventInitMutableBuilder[Self <: SensorErrorEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: SensorErrorEventInit](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

@@ -25,31 +25,23 @@ trait UpdateVoiceTemplateRequest extends StObject {
 }
 object UpdateVoiceTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateName: string, VoiceTemplateRequest: VoiceTemplateRequest): UpdateVoiceTemplateRequest = {
+  inline def apply(TemplateName: string, VoiceTemplateRequest: VoiceTemplateRequest): UpdateVoiceTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any], VoiceTemplateRequest = VoiceTemplateRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVoiceTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateVoiceTemplateRequestMutableBuilder[Self <: UpdateVoiceTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVoiceTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
+    inline def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateNewVersionUndefined: Self = StObject.set(x, "CreateNewVersion", js.undefined)
+    inline def setCreateNewVersionUndefined: Self = StObject.set(x, "CreateNewVersion", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     
-    @scala.inline
-    def setVoiceTemplateRequest(value: VoiceTemplateRequest): Self = StObject.set(x, "VoiceTemplateRequest", value.asInstanceOf[js.Any])
+    inline def setVoiceTemplateRequest(value: VoiceTemplateRequest): Self = StObject.set(x, "VoiceTemplateRequest", value.asInstanceOf[js.Any])
   }
 }

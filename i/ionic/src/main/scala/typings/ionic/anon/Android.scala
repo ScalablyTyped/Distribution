@@ -12,25 +12,19 @@ trait Android extends StObject {
 }
 object Android {
   
-  @scala.inline
-  def apply(): Android = {
+  inline def apply(): Android = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Android]
   }
   
-  @scala.inline
-  implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
+  extension [Self <: Android](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: js.Object): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: js.Object): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
-    @scala.inline
-    def setIos(value: js.Object): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: js.Object): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

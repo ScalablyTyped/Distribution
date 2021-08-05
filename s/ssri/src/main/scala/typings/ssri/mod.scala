@@ -99,172 +99,96 @@ object mod {
     def toString(opts: Sep): String = js.native
   }
   
-  @scala.inline
-  def checkData(data: String, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: String, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: String, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: String, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: String, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: String, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: Buffer, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: Buffer, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: Buffer, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: Buffer, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: Buffer, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: Buffer, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: TypedArray, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: TypedArray, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: TypedArray, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: TypedArray, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: TypedArray, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  @scala.inline
-  def checkData(data: TypedArray, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: String, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: String, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: String, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: String, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: String, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: String, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: Buffer, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: Buffer, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: Buffer, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: Buffer, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: Buffer, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: Buffer, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   
-  @scala.inline
-  def checkStream(stream: Readable, sri: String): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: String, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: String, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: HashLike): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: HashLike, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: HashLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: IntegrityLike): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: IntegrityLike, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  @scala.inline
-  def checkStream(stream: Readable, sri: IntegrityLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: String): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: String, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: String, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
   
-  @scala.inline
-  def checkStream_Promise(stream: Readable, sri: String): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  @scala.inline
-  def checkStream_Promise(stream: Readable, sri: HashLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  @scala.inline
-  def checkStream_Promise(stream: Readable, sri: IntegrityLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream_Promise(stream: Readable, sri: String): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream_Promise(stream: Readable, sri: HashLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream_Promise(stream: Readable, sri: IntegrityLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
   
-  @scala.inline
-  def create(): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.node.cryptoMod.Hash]
-  @scala.inline
-  def create(opts: Algorithms): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.Hash]
+  inline def create(): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.node.cryptoMod.Hash]
+  inline def create(opts: Algorithms): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.Hash]
   
-  @scala.inline
-  def fromData(data: String): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: String, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: Buffer): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: Buffer, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: TypedArray): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: TypedArray, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: DataView): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromData(data: DataView, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(data: String): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(data: String, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(data: Buffer): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(data: Buffer, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(data: TypedArray): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(data: TypedArray, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(data: DataView): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(data: DataView, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   
-  @scala.inline
-  def fromHex(hexDigest: String, algorithm: String): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromHex(hexDigest: String, algorithm: String, opts: Options): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingle): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
-  @scala.inline
-  def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingleStrict): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
+  inline def fromHex(hexDigest: String, algorithm: String): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromHex(hexDigest: String, algorithm: String, opts: Options): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingle): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingleStrict): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
   
-  @scala.inline
-  def fromHex_Hash(hexDigest: String, algorithm: String): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def fromHex_Hash(hexDigest: String, algorithm: String): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
-  @scala.inline
-  def fromHex_Union(hexDigest: String, algorithm: String): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
+  inline def fromHex_Union(hexDigest: String, algorithm: String): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
   
-  @scala.inline
-  def fromStream(stream: Readable): js.Thenable[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[IntegrityMap]]
-  @scala.inline
-  def fromStream(stream: Readable, opts: Algorithms): js.Promise[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntegrityMap]]
-  @scala.inline
-  def fromStream(stream: Readable, opts: Promise): js.Thenable[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[IntegrityMap]]
+  inline def fromStream(stream: Readable): js.Thenable[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[IntegrityMap]]
+  inline def fromStream(stream: Readable, opts: Algorithms): js.Promise[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntegrityMap]]
+  inline def fromStream(stream: Readable, opts: Promise): js.Thenable[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[IntegrityMap]]
   
-  @scala.inline
-  def fromStream_Promise(stream: Readable): js.Promise[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IntegrityMap]]
+  inline def fromStream_Promise(stream: Readable): js.Promise[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IntegrityMap]]
   
-  @scala.inline
-  def integrityStream(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("integrityStream")().asInstanceOf[Transform]
-  @scala.inline
-  def integrityStream(opts: typings.ssri.anon.Integrity): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("integrityStream")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def integrityStream(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("integrityStream")().asInstanceOf[Transform]
+  inline def integrityStream(opts: typings.ssri.anon.Integrity): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("integrityStream")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
-  @scala.inline
-  def parse(sri: String): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def parse(sri: String, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
-  @scala.inline
-  def parse(sri: String, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def parse(sri: String, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
-  @scala.inline
-  def parse(sri: HashLike): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def parse(sri: HashLike, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
-  @scala.inline
-  def parse(sri: HashLike, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def parse(sri: HashLike, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
-  @scala.inline
-  def parse(sri: IntegrityLike): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def parse(sri: IntegrityLike, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
-  @scala.inline
-  def parse(sri: IntegrityLike, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  @scala.inline
-  def parse(sri: IntegrityLike, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def parse(sri: String): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def parse(sri: String, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
+  inline def parse(sri: String, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def parse(sri: String, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def parse(sri: HashLike): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def parse(sri: HashLike, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
+  inline def parse(sri: HashLike, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def parse(sri: HashLike, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def parse(sri: IntegrityLike): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def parse(sri: IntegrityLike, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
+  inline def parse(sri: IntegrityLike, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def parse(sri: IntegrityLike, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
-  @scala.inline
-  def parse_Hash(sri: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
-  @scala.inline
-  def parse_Hash(sri: HashLike): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
-  @scala.inline
-  def parse_Hash(sri: IntegrityLike): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def parse_Hash(sri: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def parse_Hash(sri: HashLike): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def parse_Hash(sri: IntegrityLike): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
-  @scala.inline
-  def parse_Union(sri: String): IntegrityMap | Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap | Hash]
-  @scala.inline
-  def parse_Union(sri: HashLike): IntegrityMap | Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap | Hash]
-  @scala.inline
-  def parse_Union(sri: IntegrityLike): IntegrityMap | Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap | Hash]
+  inline def parse_Union(sri: String): IntegrityMap | Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap | Hash]
+  inline def parse_Union(sri: HashLike): IntegrityMap | Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap | Hash]
+  inline def parse_Union(sri: IntegrityLike): IntegrityMap | Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap | Hash]
   
-  @scala.inline
-  def stringify(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(obj: String, opts: Sep): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(obj: HashLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(obj: HashLike, opts: Sep): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(obj: IntegrityLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(obj: IntegrityLike, opts: Sep): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: String, opts: Sep): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: HashLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: HashLike, opts: Sep): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: IntegrityLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: IntegrityLike, opts: Sep): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait HashLike extends StObject {
     
@@ -276,29 +200,22 @@ object mod {
   }
   object HashLike {
     
-    @scala.inline
-    def apply(algorithm: String, digest: String): HashLike = {
+    inline def apply(algorithm: String, digest: String): HashLike = {
       val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any])
       __obj.asInstanceOf[HashLike]
     }
     
-    @scala.inline
-    implicit class HashLikeMutableBuilder[Self <: HashLike] (val x: Self) extends AnyVal {
+    extension [Self <: HashLike](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
   

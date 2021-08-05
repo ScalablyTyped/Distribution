@@ -28,25 +28,19 @@ trait CameraOptions extends StObject {
 }
 object CameraOptions {
   
-  @scala.inline
-  def apply(): CameraOptions = {
+  inline def apply(): CameraOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraOptions]
   }
   
-  @scala.inline
-  implicit class CameraOptionsMutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CameraOptions](x: Self) {
     
-    @scala.inline
-    def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

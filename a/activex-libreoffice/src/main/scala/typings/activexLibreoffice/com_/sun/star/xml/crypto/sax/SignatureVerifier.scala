@@ -21,8 +21,7 @@ trait SignatureVerifier
      with XInitialization
 object SignatureVerifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSignatureVerifyResultListener: XSignatureVerifyResultListener => Unit,
     endMission: () => Boolean,

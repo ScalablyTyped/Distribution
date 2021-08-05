@@ -14,19 +14,15 @@ trait IdIdentifierKind extends StObject {
 }
 object IdIdentifierKind {
   
-  @scala.inline
-  def apply(id: IdentifierKind, init: LiteralKind): IdIdentifierKind = {
+  inline def apply(id: IdentifierKind, init: LiteralKind): IdIdentifierKind = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdIdentifierKind]
   }
   
-  @scala.inline
-  implicit class IdIdentifierKindMutableBuilder[Self <: IdIdentifierKind] (val x: Self) extends AnyVal {
+  extension [Self <: IdIdentifierKind](x: Self) {
     
-    @scala.inline
-    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: LiteralKind): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: LiteralKind): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
   }
 }

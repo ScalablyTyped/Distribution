@@ -11,22 +11,17 @@ trait DominantColorsAnnotation extends StObject {
 }
 object DominantColorsAnnotation {
   
-  @scala.inline
-  def apply(): DominantColorsAnnotation = {
+  inline def apply(): DominantColorsAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DominantColorsAnnotation]
   }
   
-  @scala.inline
-  implicit class DominantColorsAnnotationMutableBuilder[Self <: DominantColorsAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: DominantColorsAnnotation](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: ColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: ColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
   }
 }

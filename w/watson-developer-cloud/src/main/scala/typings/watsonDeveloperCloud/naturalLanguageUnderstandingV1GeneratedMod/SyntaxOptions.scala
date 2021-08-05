@@ -15,25 +15,19 @@ trait SyntaxOptions extends StObject {
 }
 object SyntaxOptions {
   
-  @scala.inline
-  def apply(): SyntaxOptions = {
+  inline def apply(): SyntaxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyntaxOptions]
   }
   
-  @scala.inline
-  implicit class SyntaxOptionsMutableBuilder[Self <: SyntaxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxOptions](x: Self) {
     
-    @scala.inline
-    def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
+    inline def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
+    inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    @scala.inline
-    def setTokens(value: SyntaxOptionsTokens): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: SyntaxOptionsTokens): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+    inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
   }
 }

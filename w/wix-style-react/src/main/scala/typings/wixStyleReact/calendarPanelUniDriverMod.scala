@@ -23,8 +23,7 @@ object calendarPanelUniDriverMod {
   }
   object CalendarPanelUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calendarDriver: () => js.Promise[CalendarUniDriver],
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -37,20 +36,15 @@ object calendarPanelUniDriverMod {
       __obj.asInstanceOf[CalendarPanelUniDriver]
     }
     
-    @scala.inline
-    implicit class CalendarPanelUniDriverMutableBuilder[Self <: CalendarPanelUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarPanelUniDriver](x: Self) {
       
-      @scala.inline
-      def setCalendarDriver(value: () => js.Promise[CalendarUniDriver]): Self = StObject.set(x, "calendarDriver", js.Any.fromFunction0(value))
+      inline def setCalendarDriver(value: () => js.Promise[CalendarUniDriver]): Self = StObject.set(x, "calendarDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindByDataHook(value: String => js.Promise[Boolean]): Self = StObject.set(x, "findByDataHook", js.Any.fromFunction1(value))
+      inline def setFindByDataHook(value: String => js.Promise[Boolean]): Self = StObject.set(x, "findByDataHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDropdownExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDropdownExists", js.Any.fromFunction0(value))
+      inline def setIsDropdownExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDropdownExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPresetsDropdownLayoutDriver(value: () => DropdownLayoutUniDriver): Self = StObject.set(x, "presetsDropdownLayoutDriver", js.Any.fromFunction0(value))
+      inline def setPresetsDropdownLayoutDriver(value: () => DropdownLayoutUniDriver): Self = StObject.set(x, "presetsDropdownLayoutDriver", js.Any.fromFunction0(value))
     }
   }
 }

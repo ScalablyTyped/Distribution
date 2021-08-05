@@ -14,27 +14,22 @@ trait GridRowGapProps[TLength] extends StObject {
 }
 object GridRowGapProps {
   
-  @scala.inline
-  def apply[TLength](): GridRowGapProps[TLength] = {
+  inline def apply[TLength](): GridRowGapProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridRowGapProps[TLength]]
   }
   
-  @scala.inline
-  implicit class GridRowGapPropsMutableBuilder[Self <: GridRowGapProps[?], TLength] (val x: Self & GridRowGapProps[TLength]) extends AnyVal {
+  extension [Self <: GridRowGapProps[?], TLength](x: Self & GridRowGapProps[TLength]) {
     
-    @scala.inline
-    def setGridRowGap(
+    inline def setGridRowGap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
+    inline def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
     
-    @scala.inline
-    def setGridRowGapVarargs(
+    inline def setGridRowGapVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any)*
     ): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
   }

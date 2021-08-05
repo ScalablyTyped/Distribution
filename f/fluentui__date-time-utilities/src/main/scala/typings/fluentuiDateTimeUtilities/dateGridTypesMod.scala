@@ -25,23 +25,18 @@ object dateGridTypesMod {
   }
   object IAvailableDateOptions {
     
-    @scala.inline
-    def apply(direction: Double, initialDate: Date, targetDate: Date): IAvailableDateOptions = {
+    inline def apply(direction: Double, initialDate: Date, targetDate: Date): IAvailableDateOptions = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], initialDate = initialDate.asInstanceOf[js.Any], targetDate = targetDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAvailableDateOptions]
     }
     
-    @scala.inline
-    implicit class IAvailableDateOptionsMutableBuilder[Self <: IAvailableDateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAvailableDateOptions](x: Self) {
       
-      @scala.inline
-      def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+      inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetDate(value: Date): Self = StObject.set(x, "targetDate", value.asInstanceOf[js.Any])
+      inline def setTargetDate(value: Date): Self = StObject.set(x, "targetDate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,59 +90,42 @@ object dateGridTypesMod {
   }
   object IDatepickerOptions {
     
-    @scala.inline
-    def apply(dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear): IDatepickerOptions = {
+    inline def apply(dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear): IDatepickerOptions = {
       val __obj = js.Dynamic.literal(dateRangeType = dateRangeType.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear = firstWeekOfYear.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDatepickerOptions]
     }
     
-    @scala.inline
-    implicit class IDatepickerOptionsMutableBuilder[Self <: IDatepickerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDatepickerOptions](x: Self) {
       
-      @scala.inline
-      def setDateRangeType(value: DateRangeType): Self = StObject.set(x, "dateRangeType", value.asInstanceOf[js.Any])
+      inline def setDateRangeType(value: DateRangeType): Self = StObject.set(x, "dateRangeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysToSelectInDayView(value: Double): Self = StObject.set(x, "daysToSelectInDayView", value.asInstanceOf[js.Any])
+      inline def setDaysToSelectInDayView(value: Double): Self = StObject.set(x, "daysToSelectInDayView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysToSelectInDayViewUndefined: Self = StObject.set(x, "daysToSelectInDayView", js.undefined)
+      inline def setDaysToSelectInDayViewUndefined: Self = StObject.set(x, "daysToSelectInDayView", js.undefined)
       
-      @scala.inline
-      def setFirstDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstWeekOfYear(value: FirstWeekOfYear): Self = StObject.set(x, "firstWeekOfYear", value.asInstanceOf[js.Any])
+      inline def setFirstWeekOfYear(value: FirstWeekOfYear): Self = StObject.set(x, "firstWeekOfYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkedDays(value: js.Array[Date]): Self = StObject.set(x, "markedDays", value.asInstanceOf[js.Any])
+      inline def setMarkedDays(value: js.Array[Date]): Self = StObject.set(x, "markedDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkedDaysUndefined: Self = StObject.set(x, "markedDays", js.undefined)
+      inline def setMarkedDaysUndefined: Self = StObject.set(x, "markedDays", js.undefined)
       
-      @scala.inline
-      def setMarkedDaysVarargs(value: Date*): Self = StObject.set(x, "markedDays", js.Array(value :_*))
+      inline def setMarkedDaysVarargs(value: Date*): Self = StObject.set(x, "markedDays", js.Array(value :_*))
       
-      @scala.inline
-      def setShowWeekNumbers(value: Boolean): Self = StObject.set(x, "showWeekNumbers", value.asInstanceOf[js.Any])
+      inline def setShowWeekNumbers(value: Boolean): Self = StObject.set(x, "showWeekNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowWeekNumbersUndefined: Self = StObject.set(x, "showWeekNumbers", js.undefined)
+      inline def setShowWeekNumbersUndefined: Self = StObject.set(x, "showWeekNumbers", js.undefined)
       
-      @scala.inline
-      def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+      inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       
-      @scala.inline
-      def setWorkWeekDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "workWeekDays", value.asInstanceOf[js.Any])
+      inline def setWorkWeekDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "workWeekDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkWeekDaysUndefined: Self = StObject.set(x, "workWeekDays", js.undefined)
+      inline def setWorkWeekDaysUndefined: Self = StObject.set(x, "workWeekDays", js.undefined)
       
-      @scala.inline
-      def setWorkWeekDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workWeekDays", js.Array(value :_*))
+      inline def setWorkWeekDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workWeekDays", js.Array(value :_*))
     }
   }
   
@@ -179,8 +157,7 @@ object dateGridTypesMod {
   }
   object IDay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: String,
       isInBounds: Boolean,
       isInMonth: Boolean,
@@ -194,32 +171,23 @@ object dateGridTypesMod {
       __obj.asInstanceOf[IDay]
     }
     
-    @scala.inline
-    implicit class IDayMutableBuilder[Self <: IDay] (val x: Self) extends AnyVal {
+    extension [Self <: IDay](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInBounds(value: Boolean): Self = StObject.set(x, "isInBounds", value.asInstanceOf[js.Any])
+      inline def setIsInBounds(value: Boolean): Self = StObject.set(x, "isInBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInMonth(value: Boolean): Self = StObject.set(x, "isInMonth", value.asInstanceOf[js.Any])
+      inline def setIsInMonth(value: Boolean): Self = StObject.set(x, "isInMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMarked(value: Boolean): Self = StObject.set(x, "isMarked", value.asInstanceOf[js.Any])
+      inline def setIsMarked(value: Boolean): Self = StObject.set(x, "isMarked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsToday(value: Boolean): Self = StObject.set(x, "isToday", value.asInstanceOf[js.Any])
+      inline def setIsToday(value: Boolean): Self = StObject.set(x, "isToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalDate(value: Date): Self = StObject.set(x, "originalDate", value.asInstanceOf[js.Any])
+      inline def setOriginalDate(value: Date): Self = StObject.set(x, "originalDate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +213,7 @@ object dateGridTypesMod {
   }
   object IDayGridOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateRangeType: DateRangeType,
       firstDayOfWeek: DayOfWeek,
       firstWeekOfYear: FirstWeekOfYear,
@@ -257,20 +224,15 @@ object dateGridTypesMod {
       __obj.asInstanceOf[IDayGridOptions]
     }
     
-    @scala.inline
-    implicit class IDayGridOptionsMutableBuilder[Self <: IDayGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDayGridOptions](x: Self) {
       
-      @scala.inline
-      def setNavigatedDate(value: Date): Self = StObject.set(x, "navigatedDate", value.asInstanceOf[js.Any])
+      inline def setNavigatedDate(value: Date): Self = StObject.set(x, "navigatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeksToShow(value: Double): Self = StObject.set(x, "weeksToShow", value.asInstanceOf[js.Any])
+      inline def setWeeksToShow(value: Double): Self = StObject.set(x, "weeksToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeksToShowUndefined: Self = StObject.set(x, "weeksToShow", js.undefined)
+      inline def setWeeksToShowUndefined: Self = StObject.set(x, "weeksToShow", js.undefined)
     }
   }
   
@@ -293,35 +255,26 @@ object dateGridTypesMod {
   }
   object IRestrictedDatesOptions {
     
-    @scala.inline
-    def apply(): IRestrictedDatesOptions = {
+    inline def apply(): IRestrictedDatesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRestrictedDatesOptions]
     }
     
-    @scala.inline
-    implicit class IRestrictedDatesOptionsMutableBuilder[Self <: IRestrictedDatesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRestrictedDatesOptions](x: Self) {
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setRestrictedDates(value: js.Array[Date]): Self = StObject.set(x, "restrictedDates", value.asInstanceOf[js.Any])
+      inline def setRestrictedDates(value: js.Array[Date]): Self = StObject.set(x, "restrictedDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictedDatesUndefined: Self = StObject.set(x, "restrictedDates", js.undefined)
+      inline def setRestrictedDatesUndefined: Self = StObject.set(x, "restrictedDates", js.undefined)
       
-      @scala.inline
-      def setRestrictedDatesVarargs(value: Date*): Self = StObject.set(x, "restrictedDates", js.Array(value :_*))
+      inline def setRestrictedDatesVarargs(value: Date*): Self = StObject.set(x, "restrictedDates", js.Array(value :_*))
     }
   }
 }

@@ -14,21 +14,16 @@ object requestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: ResponseObject */](endpoint: js.Any, params: js.Any): js.Promise[APIResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[T]]]
+  inline def default[T /* <: ResponseObject */](endpoint: js.Any, params: js.Any): js.Promise[APIResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[T]]]
   
   @JSImport("vexdb/out/methods/request", "queue")
   @js.native
   val queue: typings.pQueue.mod.default[default, DefaultAddOptions] = js.native
   
-  @scala.inline
-  def request[T /* <: ResponseObject */](endpoint: js.Any): js.Promise[APIResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(endpoint.asInstanceOf[js.Any]).asInstanceOf[js.Promise[APIResponse[T]]]
-  @scala.inline
-  def request[T /* <: ResponseObject */](endpoint: js.Any, params: js.Object): js.Promise[APIResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[T]]]
+  inline def request[T /* <: ResponseObject */](endpoint: js.Any): js.Promise[APIResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(endpoint.asInstanceOf[js.Any]).asInstanceOf[js.Promise[APIResponse[T]]]
+  inline def request[T /* <: ResponseObject */](endpoint: js.Any, params: js.Object): js.Promise[APIResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[T]]]
   
-  @scala.inline
-  def requestSize[T /* <: ResponseObject */](endpoint: js.Any, params: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSize")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def requestSize[T /* <: ResponseObject */](endpoint: js.Any, params: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSize")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @scala.inline
-  def serialize(params: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(params: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(params.asInstanceOf[js.Any]).asInstanceOf[String]
 }

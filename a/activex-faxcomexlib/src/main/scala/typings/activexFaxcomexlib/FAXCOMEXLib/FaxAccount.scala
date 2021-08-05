@@ -10,7 +10,7 @@ trait FaxAccount extends StObject {
   /** Name of the fax account */
   val AccountName: String
   
-  @JSName("FAXCOMEXLib.FaxAccount_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxAccount_typekey")
   var FAXCOMEXLibDotFaxAccount_typekey: FaxAccount
   
   /** Folders belonging to the account */
@@ -24,8 +24,7 @@ trait FaxAccount extends StObject {
 }
 object FaxAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountName: String,
     FAXCOMEXLibDotFaxAccount_typekey: FaxAccount,
     Folders: FaxAccountFolders,
@@ -37,22 +36,16 @@ object FaxAccount {
     __obj.asInstanceOf[FaxAccount]
   }
   
-  @scala.inline
-  implicit class FaxAccountMutableBuilder[Self <: FaxAccount] (val x: Self) extends AnyVal {
+  extension [Self <: FaxAccount](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxAccount_typekey(value: FaxAccount): Self = StObject.set(x, "FAXCOMEXLib.FaxAccount_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxAccount_typekey(value: FaxAccount): Self = StObject.set(x, "FAXCOMEXLib.FaxAccount_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolders(value: FaxAccountFolders): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: FaxAccountFolders): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenToAccountEvents(value: FAX_ACCOUNT_EVENTS_TYPE_ENUM => Unit): Self = StObject.set(x, "ListenToAccountEvents", js.Any.fromFunction1(value))
+    inline def setListenToAccountEvents(value: FAX_ACCOUNT_EVENTS_TYPE_ENUM => Unit): Self = StObject.set(x, "ListenToAccountEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisteredEvents(value: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Self = StObject.set(x, "RegisteredEvents", value.asInstanceOf[js.Any])
+    inline def setRegisteredEvents(value: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Self = StObject.set(x, "RegisteredEvents", value.asInstanceOf[js.Any])
   }
 }

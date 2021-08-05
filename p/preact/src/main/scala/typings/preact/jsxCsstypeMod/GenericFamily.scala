@@ -16,18 +16,13 @@ trait GenericFamily
      with _FontFamilyProperty
 object GenericFamily {
   
-  @scala.inline
-  def cursive: typings.preact.preactStrings.cursive = "cursive".asInstanceOf[typings.preact.preactStrings.cursive]
+  inline def cursive: typings.preact.preactStrings.cursive = "cursive".asInstanceOf[typings.preact.preactStrings.cursive]
   
-  @scala.inline
-  def fantasy: typings.preact.preactStrings.fantasy = "fantasy".asInstanceOf[typings.preact.preactStrings.fantasy]
+  inline def fantasy: typings.preact.preactStrings.fantasy = "fantasy".asInstanceOf[typings.preact.preactStrings.fantasy]
   
-  @scala.inline
-  def monospace: typings.preact.preactStrings.monospace = "monospace".asInstanceOf[typings.preact.preactStrings.monospace]
+  inline def monospace: typings.preact.preactStrings.monospace = "monospace".asInstanceOf[typings.preact.preactStrings.monospace]
   
-  @scala.inline
-  def `sans-serif`: typings.preact.preactStrings.`sans-serif` = "sans-serif".asInstanceOf[typings.preact.preactStrings.`sans-serif`]
+  inline def `sans-serif`: typings.preact.preactStrings.`sans-serif` = "sans-serif".asInstanceOf[typings.preact.preactStrings.`sans-serif`]
   
-  @scala.inline
-  def serif: typings.preact.preactStrings.serif = "serif".asInstanceOf[typings.preact.preactStrings.serif]
+  inline def serif: typings.preact.preactStrings.serif = "serif".asInstanceOf[typings.preact.preactStrings.serif]
 }

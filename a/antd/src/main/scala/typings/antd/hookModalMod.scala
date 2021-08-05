@@ -22,20 +22,16 @@ object hookModalMod extends Shortcut {
   }
   object HookModalProps {
     
-    @scala.inline
-    def apply(afterClose: () => Unit, config: ModalFuncProps): HookModalProps = {
+    inline def apply(afterClose: () => Unit, config: ModalFuncProps): HookModalProps = {
       val __obj = js.Dynamic.literal(afterClose = js.Any.fromFunction0(afterClose), config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[HookModalProps]
     }
     
-    @scala.inline
-    implicit class HookModalPropsMutableBuilder[Self <: HookModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: HookModalProps](x: Self) {
       
-      @scala.inline
-      def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConfig(value: ModalFuncProps): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ModalFuncProps): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +43,16 @@ object hookModalMod extends Shortcut {
   }
   object HookModalRef {
     
-    @scala.inline
-    def apply(destroy: () => Unit, update: ModalFuncProps => Unit): HookModalRef = {
+    inline def apply(destroy: () => Unit, update: ModalFuncProps => Unit): HookModalRef = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[HookModalRef]
     }
     
-    @scala.inline
-    implicit class HookModalRefMutableBuilder[Self <: HookModalRef] (val x: Self) extends AnyVal {
+    extension [Self <: HookModalRef](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: ModalFuncProps => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: ModalFuncProps => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   

@@ -16,7 +16,7 @@ class ParallelPortPrinter protected ()
   @JSName("Id")
   var Id_ParallelPortPrinter: String = js.native
   
-  var _parallelPortName: js.Any = js.native
+  /* private */ var _parallelPortName: js.Any = js.native
   
   var portName: String = js.native
   

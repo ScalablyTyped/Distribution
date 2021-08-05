@@ -23,22 +23,17 @@ trait SemanticVersion extends StObject {
 }
 object SemanticVersion {
   
-  @scala.inline
-  def apply(major: Double, minor: Double, patch: Double): SemanticVersion = {
+  inline def apply(major: Double, minor: Double, patch: Double): SemanticVersion = {
     val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticVersion]
   }
   
-  @scala.inline
-  implicit class SemanticVersionMutableBuilder[Self <: SemanticVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticVersion](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

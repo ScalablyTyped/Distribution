@@ -41,8 +41,7 @@ object util {
   }
   object Request {
     
-    @scala.inline
-    def apply(getFailed: () => Double, getProcessed: () => Double, getState: () => State, getTotal: () => Double): Request = {
+    inline def apply(getFailed: () => Double, getProcessed: () => Double, getState: () => State, getTotal: () => Double): Request = {
       val __obj = js.Dynamic.literal(getFailed = js.Any.fromFunction0(getFailed), getProcessed = js.Any.fromFunction0(getProcessed), getState = js.Any.fromFunction0(getState), getTotal = js.Any.fromFunction0(getTotal))
       __obj.asInstanceOf[Request]
     }
@@ -82,20 +81,15 @@ object util {
            with State
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setGetFailed(value: () => Double): Self = StObject.set(x, "getFailed", js.Any.fromFunction0(value))
+      inline def setGetFailed(value: () => Double): Self = StObject.set(x, "getFailed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetProcessed(value: () => Double): Self = StObject.set(x, "getProcessed", js.Any.fromFunction0(value))
+      inline def setGetProcessed(value: () => Double): Self = StObject.set(x, "getProcessed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTotal(value: () => Double): Self = StObject.set(x, "getTotal", js.Any.fromFunction0(value))
+      inline def setGetTotal(value: () => Double): Self = StObject.set(x, "getTotal", js.Any.fromFunction0(value))
     }
   }
   
@@ -148,8 +142,7 @@ object util {
        with Event
   object ChangeEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: js.Any,
       defaultPrevented: Boolean,
       preventDefault: () => Unit,
@@ -218,32 +211,24 @@ object util {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCallback(value: /* event */ Event => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+        inline def setCallback(value: /* event */ Event => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       }
     }
   }
@@ -292,8 +277,7 @@ object util {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: js.Any,
       defaultPrevented: Boolean,
       preventDefault: () => Unit,
@@ -306,26 +290,19 @@ object util {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -470,17 +447,14 @@ object util {
   }
   object ICancelable {
     
-    @scala.inline
-    def apply(cancel: () => Unit): ICancelable = {
+    inline def apply(cancel: () => Unit): ICancelable = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
       __obj.asInstanceOf[ICancelable]
     }
     
-    @scala.inline
-    implicit class ICancelableMutableBuilder[Self <: ICancelable] (val x: Self) extends AnyVal {
+    extension [Self <: ICancelable](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
   }
   
@@ -605,8 +579,7 @@ object util {
          with typings.heremaps.H.util.Event
     object Event {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         currentTarget: js.Any,
         defaultPrevented: Boolean,
         preventDefault: () => Unit,
@@ -651,23 +624,18 @@ object util {
     }
     object IKinetics {
       
-      @scala.inline
-      def apply(duration: Double, ease: Double => Double, power: Double): IKinetics = {
+      inline def apply(duration: Double, ease: Double => Double, power: Double): IKinetics = {
         val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], ease = js.Any.fromFunction1(ease), power = power.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKinetics]
       }
       
-      @scala.inline
-      implicit class IKineticsMutableBuilder[Self <: IKinetics] (val x: Self) extends AnyVal {
+      extension [Self <: IKinetics](x: Self) {
         
-        @scala.inline
-        def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEase(value: Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
+        inline def setEase(value: Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+        inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       }
     }
   }

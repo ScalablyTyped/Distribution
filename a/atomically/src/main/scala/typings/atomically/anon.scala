@@ -97,20 +97,16 @@ object anon {
   }
   object Gid {
     
-    @scala.inline
-    def apply(gid: Double, uid: Double): Gid = {
+    inline def apply(gid: Double, uid: Double): Gid = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Gid]
     }
     
-    @scala.inline
-    implicit class GidMutableBuilder[Self <: Gid] (val x: Self) extends AnyVal {
+    extension [Self <: Gid](x: Self) {
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,29 +121,22 @@ object anon {
   }
   object ReadOptionsencodingstring {
     
-    @scala.inline
-    def apply(encoding: (js.UndefOr[String | Null]) & String): ReadOptionsencodingstring = {
+    inline def apply(encoding: (js.UndefOr[String | Null]) & String): ReadOptionsencodingstring = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadOptionsencodingstring]
     }
     
-    @scala.inline
-    implicit class ReadOptionsencodingstringMutableBuilder[Self <: ReadOptionsencodingstring] (val x: Self) extends AnyVal {
+    extension [Self <: ReadOptionsencodingstring](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: (js.UndefOr[String | Null]) & String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: (js.UndefOr[String | Null]) & String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

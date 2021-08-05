@@ -8,6 +8,5 @@ object hapiAuthJwt2Strings {
   
   @js.native
   sealed trait jwt extends StObject
-  @scala.inline
-  def jwt: jwt = "jwt".asInstanceOf[jwt]
+  inline def jwt: jwt = "jwt".asInstanceOf[jwt]
 }

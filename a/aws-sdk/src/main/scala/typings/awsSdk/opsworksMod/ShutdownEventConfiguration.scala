@@ -18,25 +18,19 @@ trait ShutdownEventConfiguration extends StObject {
 }
 object ShutdownEventConfiguration {
   
-  @scala.inline
-  def apply(): ShutdownEventConfiguration = {
+  inline def apply(): ShutdownEventConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShutdownEventConfiguration]
   }
   
-  @scala.inline
-  implicit class ShutdownEventConfigurationMutableBuilder[Self <: ShutdownEventConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ShutdownEventConfiguration](x: Self) {
     
-    @scala.inline
-    def setDelayUntilElbConnectionsDrained(value: Boolean): Self = StObject.set(x, "DelayUntilElbConnectionsDrained", value.asInstanceOf[js.Any])
+    inline def setDelayUntilElbConnectionsDrained(value: Boolean): Self = StObject.set(x, "DelayUntilElbConnectionsDrained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUntilElbConnectionsDrainedUndefined: Self = StObject.set(x, "DelayUntilElbConnectionsDrained", js.undefined)
+    inline def setDelayUntilElbConnectionsDrainedUndefined: Self = StObject.set(x, "DelayUntilElbConnectionsDrained", js.undefined)
     
-    @scala.inline
-    def setExecutionTimeout(value: Integer): Self = StObject.set(x, "ExecutionTimeout", value.asInstanceOf[js.Any])
+    inline def setExecutionTimeout(value: Integer): Self = StObject.set(x, "ExecutionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTimeoutUndefined: Self = StObject.set(x, "ExecutionTimeout", js.undefined)
+    inline def setExecutionTimeoutUndefined: Self = StObject.set(x, "ExecutionTimeout", js.undefined)
   }
 }

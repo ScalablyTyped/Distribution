@@ -18,8 +18,7 @@ trait Printing3DModelTexture extends StObject {
 }
 object Printing3DModelTexture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textureResource: Printing3DTextureResource,
     tileStyleU: Printing3DTextureEdgeBehavior,
     tileStyleV: Printing3DTextureEdgeBehavior
@@ -28,16 +27,12 @@ object Printing3DModelTexture {
     __obj.asInstanceOf[Printing3DModelTexture]
   }
   
-  @scala.inline
-  implicit class Printing3DModelTextureMutableBuilder[Self <: Printing3DModelTexture] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DModelTexture](x: Self) {
     
-    @scala.inline
-    def setTextureResource(value: Printing3DTextureResource): Self = StObject.set(x, "textureResource", value.asInstanceOf[js.Any])
+    inline def setTextureResource(value: Printing3DTextureResource): Self = StObject.set(x, "textureResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileStyleU(value: Printing3DTextureEdgeBehavior): Self = StObject.set(x, "tileStyleU", value.asInstanceOf[js.Any])
+    inline def setTileStyleU(value: Printing3DTextureEdgeBehavior): Self = StObject.set(x, "tileStyleU", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileStyleV(value: Printing3DTextureEdgeBehavior): Self = StObject.set(x, "tileStyleV", value.asInstanceOf[js.Any])
+    inline def setTileStyleV(value: Printing3DTextureEdgeBehavior): Self = StObject.set(x, "tileStyleV", value.asInstanceOf[js.Any])
   }
 }

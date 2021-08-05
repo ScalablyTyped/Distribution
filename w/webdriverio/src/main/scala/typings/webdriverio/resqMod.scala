@@ -10,12 +10,9 @@ object resqMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def react(selector: js.Any, props: js.Any, state: js.Any, reactElement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any], props.asInstanceOf[js.Any], state.asInstanceOf[js.Any], reactElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def react(selector: js.Any, props: js.Any, state: js.Any, reactElement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any], props.asInstanceOf[js.Any], state.asInstanceOf[js.Any], reactElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def react$(selector: js.Any, props: js.Any, state: js.Any, reactElement: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any], props.asInstanceOf[js.Any], state.asInstanceOf[js.Any], reactElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def react$(selector: js.Any, props: js.Any, state: js.Any, reactElement: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any], props.asInstanceOf[js.Any], state.asInstanceOf[js.Any], reactElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def waitToLoadReact(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitToLoadReact")().asInstanceOf[Unit]
+  inline def waitToLoadReact(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitToLoadReact")().asInstanceOf[Unit]
 }

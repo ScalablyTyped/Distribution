@@ -19,9 +19,9 @@ object expressionServiceMod {
     
     /* private */ def evaluateExpression(expression: js.Any, params: js.Any): js.Any = js.native
     
-    var expressionToFunctionCache: js.Any = js.native
+    /* private */ var expressionToFunctionCache: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /* private */ def setBeans(loggerFactory: js.Any): js.Any = js.native
   }

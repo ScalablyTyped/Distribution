@@ -18,19 +18,15 @@ trait ListTargetsFilter extends StObject {
 }
 object ListTargetsFilter {
   
-  @scala.inline
-  def apply(Name: ListTargetsFilterName, Value: ListTargetsFilterValue): ListTargetsFilter = {
+  inline def apply(Name: ListTargetsFilterName, Value: ListTargetsFilterValue): ListTargetsFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTargetsFilter]
   }
   
-  @scala.inline
-  implicit class ListTargetsFilterMutableBuilder[Self <: ListTargetsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ListTargetsFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: ListTargetsFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ListTargetsFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ListTargetsFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ListTargetsFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

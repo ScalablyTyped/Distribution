@@ -12,25 +12,19 @@ trait JobLimit extends StObject {
 }
 object JobLimit {
   
-  @scala.inline
-  def apply(): JobLimit = {
+  inline def apply(): JobLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobLimit]
   }
   
-  @scala.inline
-  implicit class JobLimitMutableBuilder[Self <: JobLimit] (val x: Self) extends AnyVal {
+  extension [Self <: JobLimit](x: Self) {
     
-    @scala.inline
-    def setJobLimit(value: Double): Self = StObject.set(x, "jobLimit", value.asInstanceOf[js.Any])
+    inline def setJobLimit(value: Double): Self = StObject.set(x, "jobLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobLimitUndefined: Self = StObject.set(x, "jobLimit", js.undefined)
+    inline def setJobLimitUndefined: Self = StObject.set(x, "jobLimit", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

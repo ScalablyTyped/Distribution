@@ -15,8 +15,7 @@ object pgPubMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", "postgres6")
   @js.native
@@ -42,38 +41,28 @@ object pgPubMod {
   }
   object IPostgresData {
     
-    @scala.inline
-    def apply(database: Port, duration: Double, query: Plan, time: Date): IPostgresData = {
+    inline def apply(database: Port, duration: Double, query: Plan, time: Date): IPostgresData = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPostgresData]
     }
     
-    @scala.inline
-    implicit class IPostgresDataMutableBuilder[Self <: IPostgresData] (val x: Self) extends AnyVal {
+    extension [Self <: IPostgresData](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: Port): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Port): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Plan): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Plan): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: IPostgresResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: IPostgresResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,20 +74,16 @@ object pgPubMod {
   }
   object IPostgresResult {
     
-    @scala.inline
-    def apply(command: String, rowCount: Double): IPostgresResult = {
+    inline def apply(command: String, rowCount: Double): IPostgresResult = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPostgresResult]
     }
     
-    @scala.inline
-    implicit class IPostgresResultMutableBuilder[Self <: IPostgresResult] (val x: Self) extends AnyVal {
+    extension [Self <: IPostgresResult](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     }
   }
 }

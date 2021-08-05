@@ -27,8 +27,7 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: StoriesHash,
     highlightedRef: MutableRefObject[Highlight],
     isBrowsing: Boolean,
@@ -41,34 +40,24 @@ object Data {
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setData(value: StoriesHash): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StoriesHash): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
+    inline def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
+    inline def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
+    inline def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSelectStoryId(value: String => Unit): Self = StObject.set(x, "onSelectStoryId", js.Any.fromFunction1(value))
+    inline def setOnSelectStoryId(value: String => Unit): Self = StObject.set(x, "onSelectStoryId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+    inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
+    inline def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
+    inline def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
     
-    @scala.inline
-    def setSetHighlightedItemId(value: String => Unit): Self = StObject.set(x, "setHighlightedItemId", js.Any.fromFunction1(value))
+    inline def setSetHighlightedItemId(value: String => Unit): Self = StObject.set(x, "setHighlightedItemId", js.Any.fromFunction1(value))
   }
 }

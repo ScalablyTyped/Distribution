@@ -27,7 +27,7 @@ object shellMod {
     def createSubprocess(command: String): js.Promise[Subprocess] = js.native
     def createSubprocess(command: String, args: Unit, options: SubprocessOptions): js.Promise[Subprocess] = js.native
     
-    val e: ShellDeps = js.native
+    /* protected */ val e: ShellDeps = js.native
     
     /* protected */ def prepareSpawnOptions(options: IShellSpawnOptions): Unit = js.native
     
@@ -42,8 +42,7 @@ object shellMod {
     def resolveCommandPath(command: String, options: SpawnOptions): js.Promise[String] = js.native
   }
   
-  @scala.inline
-  def prependNodeModulesBinToPath(projectDir: String, p: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prependNodeModulesBinToPath")(projectDir.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def prependNodeModulesBinToPath(projectDir: String, p: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prependNodeModulesBinToPath")(projectDir.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ShellDeps extends StObject {
     
@@ -51,17 +50,14 @@ object shellMod {
   }
   object ShellDeps {
     
-    @scala.inline
-    def apply(log: ILogger): ShellDeps = {
+    inline def apply(log: ILogger): ShellDeps = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShellDeps]
     }
     
-    @scala.inline
-    implicit class ShellDepsMutableBuilder[Self <: ShellDeps] (val x: Self) extends AnyVal {
+    extension [Self <: ShellDeps](x: Self) {
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,20 +67,16 @@ object shellMod {
   }
   object ShellOptions {
     
-    @scala.inline
-    def apply(): ShellOptions = {
+    inline def apply(): ShellOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShellOptions]
     }
     
-    @scala.inline
-    implicit class ShellOptionsMutableBuilder[Self <: ShellOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShellOptions](x: Self) {
       
-      @scala.inline
-      def setAlterPath(value: /* p */ String => String): Self = StObject.set(x, "alterPath", js.Any.fromFunction1(value))
+      inline def setAlterPath(value: /* p */ String => String): Self = StObject.set(x, "alterPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAlterPathUndefined: Self = StObject.set(x, "alterPath", js.undefined)
+      inline def setAlterPathUndefined: Self = StObject.set(x, "alterPath", js.undefined)
     }
   }
 }

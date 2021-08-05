@@ -31,35 +31,26 @@ object updateInfoMod {
   }
   object BlockMapDataHolder {
     
-    @scala.inline
-    def apply(sha512: String): BlockMapDataHolder = {
+    inline def apply(sha512: String): BlockMapDataHolder = {
       val __obj = js.Dynamic.literal(sha512 = sha512.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockMapDataHolder]
     }
     
-    @scala.inline
-    implicit class BlockMapDataHolderMutableBuilder[Self <: BlockMapDataHolder] (val x: Self) extends AnyVal {
+    extension [Self <: BlockMapDataHolder](x: Self) {
       
-      @scala.inline
-      def setBlockMapSize(value: Double): Self = StObject.set(x, "blockMapSize", value.asInstanceOf[js.Any])
+      inline def setBlockMapSize(value: Double): Self = StObject.set(x, "blockMapSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockMapSizeUndefined: Self = StObject.set(x, "blockMapSize", js.undefined)
+      inline def setBlockMapSizeUndefined: Self = StObject.set(x, "blockMapSize", js.undefined)
       
-      @scala.inline
-      def setIsAdminRightsRequired(value: Boolean): Self = StObject.set(x, "isAdminRightsRequired", value.asInstanceOf[js.Any])
+      inline def setIsAdminRightsRequired(value: Boolean): Self = StObject.set(x, "isAdminRightsRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAdminRightsRequiredUndefined: Self = StObject.set(x, "isAdminRightsRequired", js.undefined)
+      inline def setIsAdminRightsRequiredUndefined: Self = StObject.set(x, "isAdminRightsRequired", js.undefined)
       
-      @scala.inline
-      def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
+      inline def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -71,17 +62,14 @@ object updateInfoMod {
   }
   object PackageFileInfo {
     
-    @scala.inline
-    def apply(path: String, sha512: String): PackageFileInfo = {
+    inline def apply(path: String, sha512: String): PackageFileInfo = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackageFileInfo]
     }
     
-    @scala.inline
-    implicit class PackageFileInfoMutableBuilder[Self <: PackageFileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PackageFileInfo](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,23 +87,18 @@ object updateInfoMod {
   }
   object ReleaseNoteInfo {
     
-    @scala.inline
-    def apply(version: String): ReleaseNoteInfo = {
+    inline def apply(version: String): ReleaseNoteInfo = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any], note = null)
       __obj.asInstanceOf[ReleaseNoteInfo]
     }
     
-    @scala.inline
-    implicit class ReleaseNoteInfoMutableBuilder[Self <: ReleaseNoteInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ReleaseNoteInfo](x: Self) {
       
-      @scala.inline
-      def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoteNull: Self = StObject.set(x, "note", null)
+      inline def setNoteNull: Self = StObject.set(x, "note", null)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,17 +110,14 @@ object updateInfoMod {
   }
   object UpdateFileInfo {
     
-    @scala.inline
-    def apply(sha512: String, url: String): UpdateFileInfo = {
+    inline def apply(sha512: String, url: String): UpdateFileInfo = {
       val __obj = js.Dynamic.literal(sha512 = sha512.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateFileInfo]
     }
     
-    @scala.inline
-    implicit class UpdateFileInfoMutableBuilder[Self <: UpdateFileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateFileInfo](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,8 +158,7 @@ object updateInfoMod {
   }
   object UpdateInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       files: js.Array[UpdateFileInfo],
       path: String,
       releaseDate: String,
@@ -190,53 +169,37 @@ object updateInfoMod {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    @scala.inline
-    implicit class UpdateInfoMutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateInfo](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[UpdateFileInfo]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[UpdateFileInfo]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: UpdateFileInfo*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: UpdateFileInfo*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+      inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseName(value: String): Self = StObject.set(x, "releaseName", value.asInstanceOf[js.Any])
+      inline def setReleaseName(value: String): Self = StObject.set(x, "releaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseNameNull: Self = StObject.set(x, "releaseName", null)
+      inline def setReleaseNameNull: Self = StObject.set(x, "releaseName", null)
       
-      @scala.inline
-      def setReleaseNameUndefined: Self = StObject.set(x, "releaseName", js.undefined)
+      inline def setReleaseNameUndefined: Self = StObject.set(x, "releaseName", js.undefined)
       
-      @scala.inline
-      def setReleaseNotes(value: String | js.Array[ReleaseNoteInfo]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
+      inline def setReleaseNotes(value: String | js.Array[ReleaseNoteInfo]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseNotesNull: Self = StObject.set(x, "releaseNotes", null)
+      inline def setReleaseNotesNull: Self = StObject.set(x, "releaseNotes", null)
       
-      @scala.inline
-      def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
+      inline def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
       
-      @scala.inline
-      def setReleaseNotesVarargs(value: ReleaseNoteInfo*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
+      inline def setReleaseNotesVarargs(value: ReleaseNoteInfo*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
       
-      @scala.inline
-      def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
+      inline def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStagingPercentage(value: Double): Self = StObject.set(x, "stagingPercentage", value.asInstanceOf[js.Any])
+      inline def setStagingPercentage(value: Double): Self = StObject.set(x, "stagingPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStagingPercentageUndefined: Self = StObject.set(x, "stagingPercentage", js.undefined)
+      inline def setStagingPercentageUndefined: Self = StObject.set(x, "stagingPercentage", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,8 +217,7 @@ object updateInfoMod {
   }
   object WindowsUpdateInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       files: js.Array[UpdateFileInfo],
       path: String,
       releaseDate: String,
@@ -266,23 +228,17 @@ object updateInfoMod {
       __obj.asInstanceOf[WindowsUpdateInfo]
     }
     
-    @scala.inline
-    implicit class WindowsUpdateInfoMutableBuilder[Self <: WindowsUpdateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsUpdateInfo](x: Self) {
       
-      @scala.inline
-      def setPackages(value: StringDictionary[PackageFileInfo]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+      inline def setPackages(value: StringDictionary[PackageFileInfo]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagesNull: Self = StObject.set(x, "packages", null)
+      inline def setPackagesNull: Self = StObject.set(x, "packages", null)
       
-      @scala.inline
-      def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+      inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
       
-      @scala.inline
-      def setSha2(value: String): Self = StObject.set(x, "sha2", value.asInstanceOf[js.Any])
+      inline def setSha2(value: String): Self = StObject.set(x, "sha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha2Undefined: Self = StObject.set(x, "sha2", js.undefined)
+      inline def setSha2Undefined: Self = StObject.set(x, "sha2", js.undefined)
     }
   }
 }

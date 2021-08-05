@@ -20,19 +20,15 @@ trait CssLess extends StObject {
 }
 object CssLess {
   
-  @scala.inline
-  def apply(css: String, less: String): CssLess = {
+  inline def apply(css: String, less: String): CssLess = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], less = less.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssLess]
   }
   
-  @scala.inline
-  implicit class CssLessMutableBuilder[Self <: CssLess] (val x: Self) extends AnyVal {
+  extension [Self <: CssLess](x: Self) {
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLess(value: String): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
+    inline def setLess(value: String): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
   }
 }

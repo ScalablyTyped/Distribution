@@ -212,20 +212,16 @@ object mod {
   }
   object ConsoleTransportOptions {
     
-    @scala.inline
-    def apply(): ConsoleTransportOptions = {
+    inline def apply(): ConsoleTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsoleTransportOptions]
     }
     
-    @scala.inline
-    implicit class ConsoleTransportOptionsMutableBuilder[Self <: ConsoleTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConsoleTransportOptions](x: Self) {
       
-      @scala.inline
-      def setStderrLevel(value: String): Self = StObject.set(x, "stderrLevel", value.asInstanceOf[js.Any])
+      inline def setStderrLevel(value: String): Self = StObject.set(x, "stderrLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrLevelUndefined: Self = StObject.set(x, "stderrLevel", js.undefined)
+      inline def setStderrLevelUndefined: Self = StObject.set(x, "stderrLevel", js.undefined)
     }
   }
   
@@ -251,59 +247,42 @@ object mod {
   }
   object EggLoggerOptions {
     
-    @scala.inline
-    def apply(file: String): EggLoggerOptions = {
+    inline def apply(file: String): EggLoggerOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggLoggerOptions]
     }
     
-    @scala.inline
-    implicit class EggLoggerOptionsMutableBuilder[Self <: EggLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EggLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
+      inline def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
+      inline def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
       
-      @scala.inline
-      def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
+      inline def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextFormatterUndefined: Self = StObject.set(x, "contextFormatter", js.undefined)
+      inline def setContextFormatterUndefined: Self = StObject.set(x, "contextFormatter", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setJsonFile(value: String): Self = StObject.set(x, "jsonFile", value.asInstanceOf[js.Any])
+      inline def setJsonFile(value: String): Self = StObject.set(x, "jsonFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonFileUndefined: Self = StObject.set(x, "jsonFile", js.undefined)
+      inline def setJsonFileUndefined: Self = StObject.set(x, "jsonFile", js.undefined)
       
-      @scala.inline
-      def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
+      inline def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
+      inline def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
     }
   }
   
@@ -340,8 +319,7 @@ object mod {
   }
   object EggLoggersOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agentLogName: String,
       appLogName: String,
       coreLogName: String,
@@ -354,74 +332,51 @@ object mod {
       __obj.asInstanceOf[EggLoggersOptions]
     }
     
-    @scala.inline
-    implicit class EggLoggersOptionsMutableBuilder[Self <: EggLoggersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EggLoggersOptions](x: Self) {
       
-      @scala.inline
-      def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
+      inline def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppLogName(value: String): Self = StObject.set(x, "appLogName", value.asInstanceOf[js.Any])
+      inline def setAppLogName(value: String): Self = StObject.set(x, "appLogName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
+      inline def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
+      inline def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
       
-      @scala.inline
-      def setConsoleLevel(value: LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
+      inline def setConsoleLevel(value: LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
+      inline def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
       
-      @scala.inline
-      def setCoreLogName(value: String): Self = StObject.set(x, "coreLogName", value.asInstanceOf[js.Any])
+      inline def setCoreLogName(value: String): Self = StObject.set(x, "coreLogName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setErrorLogName(value: String): Self = StObject.set(x, "errorLogName", value.asInstanceOf[js.Any])
+      inline def setErrorLogName(value: String): Self = StObject.set(x, "errorLogName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
+      inline def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
+      inline def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -435,26 +390,20 @@ object mod {
   }
   object FileBufferTransportOptions {
     
-    @scala.inline
-    def apply(file: String): FileBufferTransportOptions = {
+    inline def apply(file: String): FileBufferTransportOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileBufferTransportOptions]
     }
     
-    @scala.inline
-    implicit class FileBufferTransportOptionsMutableBuilder[Self <: FileBufferTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileBufferTransportOptions](x: Self) {
       
-      @scala.inline
-      def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
+      inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
+      inline def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
       
-      @scala.inline
-      def setMaxBufferLength(value: Double): Self = StObject.set(x, "maxBufferLength", value.asInstanceOf[js.Any])
+      inline def setMaxBufferLength(value: Double): Self = StObject.set(x, "maxBufferLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBufferLengthUndefined: Self = StObject.set(x, "maxBufferLength", js.undefined)
+      inline def setMaxBufferLengthUndefined: Self = StObject.set(x, "maxBufferLength", js.undefined)
     }
   }
   
@@ -466,17 +415,14 @@ object mod {
   }
   object FileTransportOptions {
     
-    @scala.inline
-    def apply(file: String): FileTransportOptions = {
+    inline def apply(file: String): FileTransportOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileTransportOptions]
     }
     
-    @scala.inline
-    implicit class FileTransportOptionsMutableBuilder[Self <: FileTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileTransportOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -496,32 +442,24 @@ object mod {
   }
   object ILoggerLevel {
     
-    @scala.inline
-    def apply(ALL: Double, DEBUG: Double, ERROR: Double, INFO: Double, NONE: Double, WARN: Double): ILoggerLevel = {
+    inline def apply(ALL: Double, DEBUG: Double, ERROR: Double, INFO: Double, NONE: Double, WARN: Double): ILoggerLevel = {
       val __obj = js.Dynamic.literal(ALL = ALL.asInstanceOf[js.Any], DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILoggerLevel]
     }
     
-    @scala.inline
-    implicit class ILoggerLevelMutableBuilder[Self <: ILoggerLevel] (val x: Self) extends AnyVal {
+    extension [Self <: ILoggerLevel](x: Self) {
       
-      @scala.inline
-      def setALL(value: Double): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
+      inline def setALL(value: Double): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+      inline def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -547,38 +485,28 @@ object mod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
+      inline def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDebugAtProdUndefined: Self = StObject.set(x, "allowDebugAtProd", js.undefined)
+      inline def setAllowDebugAtProdUndefined: Self = StObject.set(x, "allowDebugAtProd", js.undefined)
       
-      @scala.inline
-      def setConsoleLevel(value: LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
+      inline def setConsoleLevel(value: LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
+      inline def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     }
   }
   
@@ -598,50 +526,36 @@ object mod {
   }
   object TransportOptions {
     
-    @scala.inline
-    def apply(): TransportOptions = {
+    inline def apply(): TransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransportOptions]
     }
     
-    @scala.inline
-    implicit class TransportOptionsMutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportOptions](x: Self) {
       
-      @scala.inline
-      def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
+      inline def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextFormatterUndefined: Self = StObject.set(x, "contextFormatter", js.undefined)
+      inline def setContextFormatterUndefined: Self = StObject.set(x, "contextFormatter", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     }
   }
 }

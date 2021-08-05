@@ -61,10 +61,8 @@ object sceneMod {
     var y2: Double = js.native
   }
   
-  @scala.inline
-  def sceneVisit(scene: SceneGroup, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sceneVisit(scene: SceneGroup, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Scene extends StObject {
     
@@ -84,8 +82,7 @@ object sceneMod {
   }
   object Scene {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: Bounds,
       clip: Boolean,
       interactive: Boolean,
@@ -98,32 +95,23 @@ object sceneMod {
       __obj.asInstanceOf[Scene]
     }
     
-    @scala.inline
-    implicit class SceneMutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
+    extension [Self <: Scene](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[SceneGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[SceneGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: SceneGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SceneGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMarktype(value: String): Self = StObject.set(x, "marktype", value.asInstanceOf[js.Any])
+      inline def setMarktype(value: String): Self = StObject.set(x, "marktype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,20 +121,16 @@ object sceneMod {
   }
   object SceneContext {
     
-    @scala.inline
-    def apply(): SceneContext = {
+    inline def apply(): SceneContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SceneContext]
     }
     
-    @scala.inline
-    implicit class SceneContextMutableBuilder[Self <: SceneContext] (val x: Self) extends AnyVal {
+    extension [Self <: SceneContext](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     }
   }
   
@@ -166,8 +150,7 @@ object sceneMod {
   }
   object SceneGroup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: Bounds,
       context: SceneContext,
       height: Double,
@@ -181,29 +164,21 @@ object sceneMod {
       __obj.asInstanceOf[SceneGroup]
     }
     
-    @scala.inline
-    implicit class SceneGroupMutableBuilder[Self <: SceneGroup] (val x: Self) extends AnyVal {
+    extension [Self <: SceneGroup](x: Self) {
       
-      @scala.inline
-      def setContext(value: SceneContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: SceneContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[SceneItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[SceneItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: SceneItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SceneItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,32 +196,24 @@ object sceneMod {
   }
   object SceneItem {
     
-    @scala.inline
-    def apply(bounds: Bounds, mark: Role, x: Double, y: Double): SceneItem = {
+    inline def apply(bounds: Bounds, mark: Role, x: Double, y: Double): SceneItem = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneItem]
     }
     
-    @scala.inline
-    implicit class SceneItemMutableBuilder[Self <: SceneItem] (val x: Self) extends AnyVal {
+    extension [Self <: SceneItem](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+      inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
       
-      @scala.inline
-      def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,17 +223,14 @@ object sceneMod {
   }
   object SceneLegendItem {
     
-    @scala.inline
-    def apply(datum: Index): SceneLegendItem = {
+    inline def apply(datum: Index): SceneLegendItem = {
       val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneLegendItem]
     }
     
-    @scala.inline
-    implicit class SceneLegendItemMutableBuilder[Self <: SceneLegendItem] (val x: Self) extends AnyVal {
+    extension [Self <: SceneLegendItem](x: Self) {
       
-      @scala.inline
-      def setDatum(value: Index): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: Index): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,8 +250,7 @@ object sceneMod {
   }
   object SceneLine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: Bounds,
       mark: Role,
       opacity: Double,
@@ -302,23 +265,17 @@ object sceneMod {
       __obj.asInstanceOf[SceneLine]
     }
     
-    @scala.inline
-    implicit class SceneLineMutableBuilder[Self <: SceneLine] (val x: Self) extends AnyVal {
+    extension [Self <: SceneLine](x: Self) {
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,23 +291,18 @@ object sceneMod {
   }
   object SceneRect {
     
-    @scala.inline
-    def apply(bounds: Bounds, fill: String, height: Double, mark: Role, width: Double, x: Double, y: Double): SceneRect = {
+    inline def apply(bounds: Bounds, fill: String, height: Double, mark: Role, width: Double, x: Double, y: Double): SceneRect = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneRect]
     }
     
-    @scala.inline
-    implicit class SceneRectMutableBuilder[Self <: SceneRect] (val x: Self) extends AnyVal {
+    extension [Self <: SceneRect](x: Self) {
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,8 +320,7 @@ object sceneMod {
   }
   object SceneSymbol {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: Bounds,
       fill: String,
       mark: Role,
@@ -383,20 +334,15 @@ object sceneMod {
       __obj.asInstanceOf[SceneSymbol]
     }
     
-    @scala.inline
-    implicit class SceneSymbolMutableBuilder[Self <: SceneSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: SceneSymbol](x: Self) {
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -442,8 +388,7 @@ object sceneMod {
   }
   object SceneText {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseline: SceneTextBaseline,
       bounds: Bounds,
       dy: Double,
@@ -459,98 +404,67 @@ object sceneMod {
       __obj.asInstanceOf[SceneText]
     }
     
-    @scala.inline
-    implicit class SceneTextMutableBuilder[Self <: SceneText] (val x: Self) extends AnyVal {
+    extension [Self <: SceneText](x: Self) {
       
-      @scala.inline
-      def setAlign(value: SceneTextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: SceneTextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setBaseline(value: SceneTextBaseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: SceneTextBaseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: rtl | ltr): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: rtl | ltr): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+      inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: Double | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: Double | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLineBreak(value: String): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+      inline def setLineBreak(value: String): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+      inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+      inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     }
   }
   
@@ -562,14 +476,11 @@ object sceneMod {
   trait SceneTextAlign extends StObject
   object SceneTextAlign {
     
-    @scala.inline
-    def center: typings.vegaTypings.vegaTypingsStrings.center = "center".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.center]
+    inline def center: typings.vegaTypings.vegaTypingsStrings.center = "center".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.center]
     
-    @scala.inline
-    def left: typings.vegaTypings.vegaTypingsStrings.left = "left".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.left]
+    inline def left: typings.vegaTypings.vegaTypingsStrings.left = "left".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.left]
     
-    @scala.inline
-    def right: typings.vegaTypings.vegaTypingsStrings.right = "right".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.right]
+    inline def right: typings.vegaTypings.vegaTypingsStrings.right = "right".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -580,13 +491,10 @@ object sceneMod {
   trait SceneTextBaseline extends StObject
   object SceneTextBaseline {
     
-    @scala.inline
-    def bottom: typings.vegaTypings.vegaTypingsStrings.bottom = "bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bottom]
+    inline def bottom: typings.vegaTypings.vegaTypingsStrings.bottom = "bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bottom]
     
-    @scala.inline
-    def middle: typings.vegaTypings.vegaTypingsStrings.middle = "middle".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.middle]
+    inline def middle: typings.vegaTypings.vegaTypingsStrings.middle = "middle".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.middle]
     
-    @scala.inline
-    def top: typings.vegaTypings.vegaTypingsStrings.top = "top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.top]
+    inline def top: typings.vegaTypings.vegaTypingsStrings.top = "top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.top]
   }
 }

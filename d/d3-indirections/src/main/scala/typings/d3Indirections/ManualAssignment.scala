@@ -17,16 +17,13 @@ trait ManualAssignment
 }
 object ManualAssignment {
   
-  @scala.inline
-  def apply(resourceUid: String, uid: String): ManualAssignment = {
+  inline def apply(resourceUid: String, uid: String): ManualAssignment = {
     val __obj = js.Dynamic.literal(resourceUid = resourceUid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManualAssignment]
   }
   
-  @scala.inline
-  implicit class ManualAssignmentMutableBuilder[Self <: ManualAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: ManualAssignment](x: Self) {
     
-    @scala.inline
-    def setResourceUid(value: String): Self = StObject.set(x, "resourceUid", value.asInstanceOf[js.Any])
+    inline def setResourceUid(value: String): Self = StObject.set(x, "resourceUid", value.asInstanceOf[js.Any])
   }
 }

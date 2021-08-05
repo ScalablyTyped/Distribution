@@ -13,16 +13,13 @@ trait RegisterDomainResponse extends StObject {
 }
 object RegisterDomainResponse {
   
-  @scala.inline
-  def apply(OperationId: OperationId): RegisterDomainResponse = {
+  inline def apply(OperationId: OperationId): RegisterDomainResponse = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDomainResponse]
   }
   
-  @scala.inline
-  implicit class RegisterDomainResponseMutableBuilder[Self <: RegisterDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDomainResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }
 }

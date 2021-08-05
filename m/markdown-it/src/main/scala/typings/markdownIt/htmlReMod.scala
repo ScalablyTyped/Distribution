@@ -20,20 +20,16 @@ object htmlReMod extends Shortcut {
   }
   object HtmlRE {
     
-    @scala.inline
-    def apply(HTML_OPEN_CLOSE_TAG_RE: RegExp, HTML_TAG_RE: RegExp): HtmlRE = {
+    inline def apply(HTML_OPEN_CLOSE_TAG_RE: RegExp, HTML_TAG_RE: RegExp): HtmlRE = {
       val __obj = js.Dynamic.literal(HTML_OPEN_CLOSE_TAG_RE = HTML_OPEN_CLOSE_TAG_RE.asInstanceOf[js.Any], HTML_TAG_RE = HTML_TAG_RE.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlRE]
     }
     
-    @scala.inline
-    implicit class HtmlREMutableBuilder[Self <: HtmlRE] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlRE](x: Self) {
       
-      @scala.inline
-      def setHTML_OPEN_CLOSE_TAG_RE(value: RegExp): Self = StObject.set(x, "HTML_OPEN_CLOSE_TAG_RE", value.asInstanceOf[js.Any])
+      inline def setHTML_OPEN_CLOSE_TAG_RE(value: RegExp): Self = StObject.set(x, "HTML_OPEN_CLOSE_TAG_RE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTML_TAG_RE(value: RegExp): Self = StObject.set(x, "HTML_TAG_RE", value.asInstanceOf[js.Any])
+      inline def setHTML_TAG_RE(value: RegExp): Self = StObject.set(x, "HTML_TAG_RE", value.asInstanceOf[js.Any])
     }
   }
   

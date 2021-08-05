@@ -23,52 +23,37 @@ trait ReusableConfigValues extends StObject {
 }
 object ReusableConfigValues {
   
-  @scala.inline
-  def apply(): ReusableConfigValues = {
+  inline def apply(): ReusableConfigValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReusableConfigValues]
   }
   
-  @scala.inline
-  implicit class ReusableConfigValuesMutableBuilder[Self <: ReusableConfigValues] (val x: Self) extends AnyVal {
+  extension [Self <: ReusableConfigValues](x: Self) {
     
-    @scala.inline
-    def setAdditionalExtensions(value: js.Array[X509Extension]): Self = StObject.set(x, "additionalExtensions", value.asInstanceOf[js.Any])
+    inline def setAdditionalExtensions(value: js.Array[X509Extension]): Self = StObject.set(x, "additionalExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalExtensionsUndefined: Self = StObject.set(x, "additionalExtensions", js.undefined)
+    inline def setAdditionalExtensionsUndefined: Self = StObject.set(x, "additionalExtensions", js.undefined)
     
-    @scala.inline
-    def setAdditionalExtensionsVarargs(value: X509Extension*): Self = StObject.set(x, "additionalExtensions", js.Array(value :_*))
+    inline def setAdditionalExtensionsVarargs(value: X509Extension*): Self = StObject.set(x, "additionalExtensions", js.Array(value :_*))
     
-    @scala.inline
-    def setAiaOcspServers(value: js.Array[String]): Self = StObject.set(x, "aiaOcspServers", value.asInstanceOf[js.Any])
+    inline def setAiaOcspServers(value: js.Array[String]): Self = StObject.set(x, "aiaOcspServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAiaOcspServersUndefined: Self = StObject.set(x, "aiaOcspServers", js.undefined)
+    inline def setAiaOcspServersUndefined: Self = StObject.set(x, "aiaOcspServers", js.undefined)
     
-    @scala.inline
-    def setAiaOcspServersVarargs(value: String*): Self = StObject.set(x, "aiaOcspServers", js.Array(value :_*))
+    inline def setAiaOcspServersVarargs(value: String*): Self = StObject.set(x, "aiaOcspServers", js.Array(value :_*))
     
-    @scala.inline
-    def setCaOptions(value: CaOptions): Self = StObject.set(x, "caOptions", value.asInstanceOf[js.Any])
+    inline def setCaOptions(value: CaOptions): Self = StObject.set(x, "caOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaOptionsUndefined: Self = StObject.set(x, "caOptions", js.undefined)
+    inline def setCaOptionsUndefined: Self = StObject.set(x, "caOptions", js.undefined)
     
-    @scala.inline
-    def setKeyUsage(value: KeyUsage): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
+    inline def setKeyUsage(value: KeyUsage): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
+    inline def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
     
-    @scala.inline
-    def setPolicyIds(value: js.Array[ObjectId]): Self = StObject.set(x, "policyIds", value.asInstanceOf[js.Any])
+    inline def setPolicyIds(value: js.Array[ObjectId]): Self = StObject.set(x, "policyIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdsUndefined: Self = StObject.set(x, "policyIds", js.undefined)
+    inline def setPolicyIdsUndefined: Self = StObject.set(x, "policyIds", js.undefined)
     
-    @scala.inline
-    def setPolicyIdsVarargs(value: ObjectId*): Self = StObject.set(x, "policyIds", js.Array(value :_*))
+    inline def setPolicyIdsVarargs(value: ObjectId*): Self = StObject.set(x, "policyIds", js.Array(value :_*))
   }
 }

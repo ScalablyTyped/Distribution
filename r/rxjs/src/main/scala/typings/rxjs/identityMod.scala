@@ -10,6 +10,5 @@ object identityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def identity[T](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def identity[T](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

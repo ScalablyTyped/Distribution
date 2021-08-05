@@ -14,8 +14,7 @@ trait PartnerEntity
 }
 object PartnerEntity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -26,16 +25,12 @@ object PartnerEntity {
     __obj.asInstanceOf[PartnerEntity]
   }
   
-  @scala.inline
-  implicit class PartnerEntityMutableBuilder[Self <: PartnerEntity] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerEntity](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRef(value: js.Array[Participant]): Self = StObject.set(x, "participantRef", value.asInstanceOf[js.Any])
+    inline def setParticipantRef(value: js.Array[Participant]): Self = StObject.set(x, "participantRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value :_*))
+    inline def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value :_*))
   }
 }

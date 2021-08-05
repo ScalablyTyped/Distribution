@@ -26,14 +26,14 @@ object actionSheetMod {
       */
     var backdropDismiss: Boolean = js.native
     
-    var buttonClick: js.Any = js.native
+    /* private */ var buttonClick: js.Any = js.native
     
     /**
       * An array of buttons for the action sheet.
       */
     var buttons: js.Array[ActionSheetButton | String] = js.native
     
-    var callButtonHandler: js.Any = js.native
+    /* private */ var callButtonHandler: js.Any = js.native
     
     @JSName("componentDidLoad")
     def componentDidLoad_MActionSheet(): Unit = js.native
@@ -50,16 +50,16 @@ object actionSheetMod {
     @JSName("disconnectedCallback")
     def disconnectedCallback_MActionSheet(): Unit = js.native
     
-    var dispatchCancelHandler: js.Any = js.native
+    /* private */ var dispatchCancelHandler: js.Any = js.native
     
     @JSName("el")
     var el_ActionSheet: HTMLIonActionSheetElement = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
-    var getButtons: js.Any = js.native
+    /* private */ var getButtons: js.Any = js.native
     
-    var groupEl: js.Any = js.native
+    /* private */ var groupEl: js.Any = js.native
     
     /**
       * Title for the action sheet.
@@ -68,7 +68,7 @@ object actionSheetMod {
     
     var lastFocus: js.UndefOr[HTMLElement] = js.native
     
-    var onBackdropTap: js.Any = js.native
+    /* private */ var onBackdropTap: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the action sheet did dismiss.
@@ -96,6 +96,6 @@ object actionSheetMod {
       */
     var translucent: Boolean = js.native
     
-    var wrapperEl: js.Any = js.native
+    /* private */ var wrapperEl: js.Any = js.native
   }
 }

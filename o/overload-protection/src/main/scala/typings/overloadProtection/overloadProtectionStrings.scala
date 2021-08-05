@@ -11,25 +11,21 @@ object overloadProtectionStrings {
   sealed trait express
     extends StObject
        with HttpFrameworkSelection
-  @scala.inline
-  def express: express = "express".asInstanceOf[express]
+  inline def express: express = "express".asInstanceOf[express]
   
   @js.native
   sealed trait http
     extends StObject
        with HttpFrameworkSelection
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait koa extends StObject
-  @scala.inline
-  def koa: koa = "koa".asInstanceOf[koa]
+  inline def koa: koa = "koa".asInstanceOf[koa]
   
   @js.native
   sealed trait restify
     extends StObject
        with HttpFrameworkSelection
-  @scala.inline
-  def restify: restify = "restify".asInstanceOf[restify]
+  inline def restify: restify = "restify".asInstanceOf[restify]
 }

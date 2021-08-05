@@ -10,19 +10,15 @@ trait GetManifestIconsResponse extends StObject {
 }
 object GetManifestIconsResponse {
   
-  @scala.inline
-  def apply(): GetManifestIconsResponse = {
+  inline def apply(): GetManifestIconsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetManifestIconsResponse]
   }
   
-  @scala.inline
-  implicit class GetManifestIconsResponseMutableBuilder[Self <: GetManifestIconsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetManifestIconsResponse](x: Self) {
     
-    @scala.inline
-    def setPrimaryIcon(value: String): Self = StObject.set(x, "primaryIcon", value.asInstanceOf[js.Any])
+    inline def setPrimaryIcon(value: String): Self = StObject.set(x, "primaryIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryIconUndefined: Self = StObject.set(x, "primaryIcon", js.undefined)
+    inline def setPrimaryIconUndefined: Self = StObject.set(x, "primaryIcon", js.undefined)
   }
 }

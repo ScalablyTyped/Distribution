@@ -25,28 +25,21 @@ trait SchemaTestDetails extends StObject {
 }
 object SchemaTestDetails {
   
-  @scala.inline
-  def apply(): SchemaTestDetails = {
+  inline def apply(): SchemaTestDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestDetails]
   }
   
-  @scala.inline
-  implicit class SchemaTestDetailsMutableBuilder[Self <: SchemaTestDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestDetails](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setProgressMessages(value: js.Array[String]): Self = StObject.set(x, "progressMessages", value.asInstanceOf[js.Any])
+    inline def setProgressMessages(value: js.Array[String]): Self = StObject.set(x, "progressMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressMessagesUndefined: Self = StObject.set(x, "progressMessages", js.undefined)
+    inline def setProgressMessagesUndefined: Self = StObject.set(x, "progressMessages", js.undefined)
     
-    @scala.inline
-    def setProgressMessagesVarargs(value: String*): Self = StObject.set(x, "progressMessages", js.Array(value :_*))
+    inline def setProgressMessagesVarargs(value: String*): Self = StObject.set(x, "progressMessages", js.Array(value :_*))
   }
 }

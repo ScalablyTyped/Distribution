@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Revisions")
 @js.native
-class Revisions protected ()
+/* private */ class Revisions ()
   extends StObject
      with typings.activexWord.Word.Revisions {
   
@@ -31,7 +31,7 @@ class Revisions protected ()
   /* CompleteClass */
   override def RejectAll(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Revisions_typekey")
   var WordDotRevisions_typekey: typings.activexWord.Word.Revisions = js.native
 }

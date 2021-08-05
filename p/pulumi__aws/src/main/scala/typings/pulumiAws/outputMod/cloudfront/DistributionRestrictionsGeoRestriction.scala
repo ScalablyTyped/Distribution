@@ -22,25 +22,19 @@ trait DistributionRestrictionsGeoRestriction extends StObject {
 }
 object DistributionRestrictionsGeoRestriction {
   
-  @scala.inline
-  def apply(restrictionType: String): DistributionRestrictionsGeoRestriction = {
+  inline def apply(restrictionType: String): DistributionRestrictionsGeoRestriction = {
     val __obj = js.Dynamic.literal(restrictionType = restrictionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionRestrictionsGeoRestriction]
   }
   
-  @scala.inline
-  implicit class DistributionRestrictionsGeoRestrictionMutableBuilder[Self <: DistributionRestrictionsGeoRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionRestrictionsGeoRestriction](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
+    inline def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
   }
 }

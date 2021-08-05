@@ -18,19 +18,15 @@ trait StructureDefinitionSnapshot
 }
 object StructureDefinitionSnapshot {
   
-  @scala.inline
-  def apply(element: js.Array[ElementDefinition]): StructureDefinitionSnapshot = {
+  inline def apply(element: js.Array[ElementDefinition]): StructureDefinitionSnapshot = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureDefinitionSnapshot]
   }
   
-  @scala.inline
-  implicit class StructureDefinitionSnapshotMutableBuilder[Self <: StructureDefinitionSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: StructureDefinitionSnapshot](x: Self) {
     
-    @scala.inline
-    def setElement(value: js.Array[ElementDefinition]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Array[ElementDefinition]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementVarargs(value: ElementDefinition*): Self = StObject.set(x, "element", js.Array(value :_*))
+    inline def setElementVarargs(value: ElementDefinition*): Self = StObject.set(x, "element", js.Array(value :_*))
   }
 }

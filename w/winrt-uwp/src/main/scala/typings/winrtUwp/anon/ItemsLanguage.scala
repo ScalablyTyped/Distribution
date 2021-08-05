@@ -13,19 +13,15 @@ trait ItemsLanguage extends StObject {
 }
 object ItemsLanguage {
   
-  @scala.inline
-  def apply(items: Language, returnValue: Double): ItemsLanguage = {
+  inline def apply(items: Language, returnValue: Double): ItemsLanguage = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsLanguage]
   }
   
-  @scala.inline
-  implicit class ItemsLanguageMutableBuilder[Self <: ItemsLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsLanguage](x: Self) {
     
-    @scala.inline
-    def setItems(value: Language): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Language): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

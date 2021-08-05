@@ -18,22 +18,17 @@ trait DescribeRecipeRequest extends StObject {
 }
 object DescribeRecipeRequest {
   
-  @scala.inline
-  def apply(Name: RecipeName): DescribeRecipeRequest = {
+  inline def apply(Name: RecipeName): DescribeRecipeRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRecipeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRecipeRequestMutableBuilder[Self <: DescribeRecipeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRecipeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
+    inline def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
+    inline def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait ActionHistoryDetails extends StObject {
 }
 object ActionHistoryDetails {
   
-  @scala.inline
-  def apply(Action: Action, Message: GenericString): ActionHistoryDetails = {
+  inline def apply(Action: Action, Message: GenericString): ActionHistoryDetails = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionHistoryDetails]
   }
   
-  @scala.inline
-  implicit class ActionHistoryDetailsMutableBuilder[Self <: ActionHistoryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ActionHistoryDetails](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
   }
 }

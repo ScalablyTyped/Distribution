@@ -35,61 +35,43 @@ trait GoogleCloudMlV1ParameterSpec extends StObject {
 }
 object GoogleCloudMlV1ParameterSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ParameterSpec = {
+  inline def apply(): GoogleCloudMlV1ParameterSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ParameterSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ParameterSpecMutableBuilder[Self <: GoogleCloudMlV1ParameterSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ParameterSpec](x: Self) {
     
-    @scala.inline
-    def setCategoricalValues(value: js.Array[String]): Self = StObject.set(x, "categoricalValues", value.asInstanceOf[js.Any])
+    inline def setCategoricalValues(value: js.Array[String]): Self = StObject.set(x, "categoricalValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoricalValuesUndefined: Self = StObject.set(x, "categoricalValues", js.undefined)
+    inline def setCategoricalValuesUndefined: Self = StObject.set(x, "categoricalValues", js.undefined)
     
-    @scala.inline
-    def setCategoricalValuesVarargs(value: String*): Self = StObject.set(x, "categoricalValues", js.Array(value :_*))
+    inline def setCategoricalValuesVarargs(value: String*): Self = StObject.set(x, "categoricalValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDiscreteValues(value: js.Array[Double]): Self = StObject.set(x, "discreteValues", value.asInstanceOf[js.Any])
+    inline def setDiscreteValues(value: js.Array[Double]): Self = StObject.set(x, "discreteValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscreteValuesUndefined: Self = StObject.set(x, "discreteValues", js.undefined)
+    inline def setDiscreteValuesUndefined: Self = StObject.set(x, "discreteValues", js.undefined)
     
-    @scala.inline
-    def setDiscreteValuesVarargs(value: Double*): Self = StObject.set(x, "discreteValues", js.Array(value :_*))
+    inline def setDiscreteValuesVarargs(value: Double*): Self = StObject.set(x, "discreteValues", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
+    inline def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
     
-    @scala.inline
-    def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
+    inline def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

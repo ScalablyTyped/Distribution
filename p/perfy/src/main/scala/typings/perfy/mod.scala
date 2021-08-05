@@ -121,8 +121,7 @@ object mod extends Shortcut {
   }
   object PerfyResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endTime: Double,
       fullMilliseconds: Double,
       fullNanoseconds: Double,
@@ -139,41 +138,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PerfyResult]
     }
     
-    @scala.inline
-    implicit class PerfyResultMutableBuilder[Self <: PerfyResult] (val x: Self) extends AnyVal {
+    extension [Self <: PerfyResult](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullMilliseconds(value: Double): Self = StObject.set(x, "fullMilliseconds", value.asInstanceOf[js.Any])
+      inline def setFullMilliseconds(value: Double): Self = StObject.set(x, "fullMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullNanoseconds(value: Double): Self = StObject.set(x, "fullNanoseconds", value.asInstanceOf[js.Any])
+      inline def setFullNanoseconds(value: Double): Self = StObject.set(x, "fullNanoseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullSeconds(value: Double): Self = StObject.set(x, "fullSeconds", value.asInstanceOf[js.Any])
+      inline def setFullSeconds(value: Double): Self = StObject.set(x, "fullSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
+      inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   

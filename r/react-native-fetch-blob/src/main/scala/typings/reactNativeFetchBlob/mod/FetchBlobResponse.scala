@@ -69,8 +69,7 @@ trait FetchBlobResponse extends StObject {
 }
 object FetchBlobResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     base64: () => js.Any,
     blob: (String, Double) => js.Promise[PolyfillBlob],
     data: js.Any,
@@ -90,46 +89,32 @@ object FetchBlobResponse {
     __obj.asInstanceOf[FetchBlobResponse]
   }
   
-  @scala.inline
-  implicit class FetchBlobResponseMutableBuilder[Self <: FetchBlobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FetchBlobResponse](x: Self) {
     
-    @scala.inline
-    def setBase64(value: () => js.Any): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
+    inline def setBase64(value: () => js.Any): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBlob(value: (String, Double) => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction2(value))
+    inline def setBlob(value: (String, Double) => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPath(value: () => String): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
+    inline def setPath(value: () => String): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadFile(value: Encoding => js.Promise[js.Any] | Null): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+    inline def setReadFile(value: Encoding => js.Promise[js.Any] | Null): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadStream(value: Encoding => RNFetchBlobStream | Null): Self = StObject.set(x, "readStream", js.Any.fromFunction1(value))
+    inline def setReadStream(value: Encoding => RNFetchBlobStream | Null): Self = StObject.set(x, "readStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRespInfo(value: RNFetchBlobResponseInfo): Self = StObject.set(x, "respInfo", value.asInstanceOf[js.Any])
+    inline def setRespInfo(value: RNFetchBlobResponseInfo): Self = StObject.set(x, "respInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: String => RNFetchBlobSession | Null): Self = StObject.set(x, "session", js.Any.fromFunction1(value))
+    inline def setSession(value: String => RNFetchBlobSession | Null): Self = StObject.set(x, "session", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: () => String | js.Promise[js.Any]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String | js.Promise[js.Any]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: base64 | path | utf8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: base64 | path | utf8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

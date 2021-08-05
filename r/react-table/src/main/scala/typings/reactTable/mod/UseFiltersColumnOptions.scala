@@ -17,31 +17,23 @@ trait UseFiltersColumnOptions[D /* <: js.Object */] extends StObject {
 }
 object UseFiltersColumnOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseFiltersColumnOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseFiltersColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseFiltersColumnOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseFiltersColumnOptionsMutableBuilder[Self <: UseFiltersColumnOptions[?], D /* <: js.Object */] (val x: Self & UseFiltersColumnOptions[D]) extends AnyVal {
+  extension [Self <: UseFiltersColumnOptions[?], D /* <: js.Object */](x: Self & UseFiltersColumnOptions[D]) {
     
-    @scala.inline
-    def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
+    inline def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCanFilterUndefined: Self = StObject.set(x, "defaultCanFilter", js.undefined)
+    inline def setDefaultCanFilterUndefined: Self = StObject.set(x, "defaultCanFilter", js.undefined)
     
-    @scala.inline
-    def setDisableFilters(value: Boolean): Self = StObject.set(x, "disableFilters", value.asInstanceOf[js.Any])
+    inline def setDisableFilters(value: Boolean): Self = StObject.set(x, "disableFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFiltersUndefined: Self = StObject.set(x, "disableFilters", js.undefined)
+    inline def setDisableFiltersUndefined: Self = StObject.set(x, "disableFilters", js.undefined)
     
-    @scala.inline
-    def setFilter(value: Renderer[FilterProps[D]]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Renderer[FilterProps[D]]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
   }
 }

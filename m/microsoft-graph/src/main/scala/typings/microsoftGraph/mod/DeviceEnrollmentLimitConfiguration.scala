@@ -13,19 +13,15 @@ trait DeviceEnrollmentLimitConfiguration
 }
 object DeviceEnrollmentLimitConfiguration {
   
-  @scala.inline
-  def apply(): DeviceEnrollmentLimitConfiguration = {
+  inline def apply(): DeviceEnrollmentLimitConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceEnrollmentLimitConfiguration]
   }
   
-  @scala.inline
-  implicit class DeviceEnrollmentLimitConfigurationMutableBuilder[Self <: DeviceEnrollmentLimitConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceEnrollmentLimitConfiguration](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

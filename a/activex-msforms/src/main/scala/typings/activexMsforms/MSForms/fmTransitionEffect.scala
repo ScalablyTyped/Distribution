@@ -35,42 +35,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmTransitionEffect extends StObject
 object fmTransitionEffect {
   
-  @scala.inline
-  def fmTransitionEffectCoverDown: `5` = 5.asInstanceOf[`5`]
+  inline def fmTransitionEffectCoverDown: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def fmTransitionEffectCoverLeft: `7` = 7.asInstanceOf[`7`]
+  inline def fmTransitionEffectCoverLeft: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def fmTransitionEffectCoverLeftDown: `6` = 6.asInstanceOf[`6`]
+  inline def fmTransitionEffectCoverLeftDown: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def fmTransitionEffectCoverLeftUp: `8` = 8.asInstanceOf[`8`]
+  inline def fmTransitionEffectCoverLeftUp: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def fmTransitionEffectCoverRight: `3` = 3.asInstanceOf[`3`]
+  inline def fmTransitionEffectCoverRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmTransitionEffectCoverRightDown: `4` = 4.asInstanceOf[`4`]
+  inline def fmTransitionEffectCoverRightDown: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def fmTransitionEffectCoverRightUp: `2` = 2.asInstanceOf[`2`]
+  inline def fmTransitionEffectCoverRightUp: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmTransitionEffectCoverUp: `1` = 1.asInstanceOf[`1`]
+  inline def fmTransitionEffectCoverUp: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmTransitionEffectNone: `0` = 0.asInstanceOf[`0`]
+  inline def fmTransitionEffectNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmTransitionEffectPushDown: `11` = 11.asInstanceOf[`11`]
+  inline def fmTransitionEffectPushDown: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def fmTransitionEffectPushLeft: `12` = 12.asInstanceOf[`12`]
+  inline def fmTransitionEffectPushLeft: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def fmTransitionEffectPushRight: `10` = 10.asInstanceOf[`10`]
+  inline def fmTransitionEffectPushRight: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def fmTransitionEffectPushUp: `9` = 9.asInstanceOf[`9`]
+  inline def fmTransitionEffectPushUp: `9` = 9.asInstanceOf[`9`]
 }

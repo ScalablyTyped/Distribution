@@ -10,19 +10,15 @@ trait DisallowNonLinearStack extends StObject {
 }
 object DisallowNonLinearStack {
   
-  @scala.inline
-  def apply(): DisallowNonLinearStack = {
+  inline def apply(): DisallowNonLinearStack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisallowNonLinearStack]
   }
   
-  @scala.inline
-  implicit class DisallowNonLinearStackMutableBuilder[Self <: DisallowNonLinearStack] (val x: Self) extends AnyVal {
+  extension [Self <: DisallowNonLinearStack](x: Self) {
     
-    @scala.inline
-    def setDisallowNonLinearStack(value: Boolean): Self = StObject.set(x, "disallowNonLinearStack", value.asInstanceOf[js.Any])
+    inline def setDisallowNonLinearStack(value: Boolean): Self = StObject.set(x, "disallowNonLinearStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisallowNonLinearStackUndefined: Self = StObject.set(x, "disallowNonLinearStack", js.undefined)
+    inline def setDisallowNonLinearStackUndefined: Self = StObject.set(x, "disallowNonLinearStack", js.undefined)
   }
 }

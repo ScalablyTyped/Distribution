@@ -16,19 +16,19 @@ object outputJitMod {
   class JitEmitterVisitor protected () extends AbstractJsEmitterVisitor {
     def this(reflector: CompileReflector) = this()
     
-    var _emitReferenceToExternal: js.Any = js.native
+    /* private */ var _emitReferenceToExternal: js.Any = js.native
     
-    var _evalArgNames: js.Any = js.native
+    /* private */ var _evalArgNames: js.Any = js.native
     
-    var _evalArgValues: js.Any = js.native
+    /* private */ var _evalArgValues: js.Any = js.native
     
-    var _evalExportedVars: js.Any = js.native
+    /* private */ var _evalExportedVars: js.Any = js.native
     
     def createReturnStmt(ctx: EmitterVisitorContext): Unit = js.native
     
     def getArgs(): StringDictionary[js.Any] = js.native
     
-    var reflector: js.Any = js.native
+    /* private */ var reflector: js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/output/output_jit", "JitEvaluator")

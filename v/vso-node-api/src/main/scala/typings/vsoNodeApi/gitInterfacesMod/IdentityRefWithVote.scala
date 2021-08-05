@@ -31,8 +31,7 @@ trait IdentityRefWithVote
 }
 object IdentityRefWithVote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directoryAlias: String,
     displayName: String,
     id: String,
@@ -52,22 +51,16 @@ object IdentityRefWithVote {
     __obj.asInstanceOf[IdentityRefWithVote]
   }
   
-  @scala.inline
-  implicit class IdentityRefWithVoteMutableBuilder[Self <: IdentityRefWithVote] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityRefWithVote](x: Self) {
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewerUrl(value: String): Self = StObject.set(x, "reviewerUrl", value.asInstanceOf[js.Any])
+    inline def setReviewerUrl(value: String): Self = StObject.set(x, "reviewerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
+    inline def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVotedFor(value: js.Array[IdentityRefWithVote]): Self = StObject.set(x, "votedFor", value.asInstanceOf[js.Any])
+    inline def setVotedFor(value: js.Array[IdentityRefWithVote]): Self = StObject.set(x, "votedFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVotedForVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "votedFor", js.Array(value :_*))
+    inline def setVotedForVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "votedFor", js.Array(value :_*))
   }
 }

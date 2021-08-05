@@ -13,8 +13,7 @@ object concatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concat(args: AttrsConcatAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def concat(args: AttrsConcatAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Concat", "concatConfig")
   @js.native

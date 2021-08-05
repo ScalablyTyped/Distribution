@@ -11,14 +11,10 @@ object getServerCertificateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getServerCertificate(): js.Promise[GetServerCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")().asInstanceOf[js.Promise[GetServerCertificateResult]]
-  @scala.inline
-  def getServerCertificate(args: Unit, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerCertificateResult]]
-  @scala.inline
-  def getServerCertificate(args: GetServerCertificateArgs): js.Promise[GetServerCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServerCertificateResult]]
-  @scala.inline
-  def getServerCertificate(args: GetServerCertificateArgs, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerCertificateResult]]
+  inline def getServerCertificate(): js.Promise[GetServerCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")().asInstanceOf[js.Promise[GetServerCertificateResult]]
+  inline def getServerCertificate(args: Unit, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerCertificateResult]]
+  inline def getServerCertificate(args: GetServerCertificateArgs): js.Promise[GetServerCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServerCertificateResult]]
+  inline def getServerCertificate(args: GetServerCertificateArgs, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerCertificateResult]]
   
   trait GetServerCertificateArgs extends StObject {
     
@@ -44,38 +40,28 @@ object getServerCertificateMod {
   }
   object GetServerCertificateArgs {
     
-    @scala.inline
-    def apply(): GetServerCertificateArgs = {
+    inline def apply(): GetServerCertificateArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetServerCertificateArgs]
     }
     
-    @scala.inline
-    implicit class GetServerCertificateArgsMutableBuilder[Self <: GetServerCertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetServerCertificateArgs](x: Self) {
       
-      @scala.inline
-      def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
+      inline def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
     }
   }
   
@@ -108,8 +94,7 @@ object getServerCertificateMod {
   }
   object GetServerCertificateResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       certificateBody: String,
       certificateChain: String,
@@ -123,50 +108,35 @@ object getServerCertificateMod {
       __obj.asInstanceOf[GetServerCertificateResult]
     }
     
-    @scala.inline
-    implicit class GetServerCertificateResultMutableBuilder[Self <: GetServerCertificateResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetServerCertificateResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateBody(value: String): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
+      inline def setCertificateBody(value: String): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+      inline def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
+      inline def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      @scala.inline
-      def setUploadDate(value: String): Self = StObject.set(x, "uploadDate", value.asInstanceOf[js.Any])
+      inline def setUploadDate(value: String): Self = StObject.set(x, "uploadDate", value.asInstanceOf[js.Any])
     }
   }
 }

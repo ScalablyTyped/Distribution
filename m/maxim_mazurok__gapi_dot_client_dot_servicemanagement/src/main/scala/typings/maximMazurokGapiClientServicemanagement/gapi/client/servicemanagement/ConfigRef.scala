@@ -11,19 +11,15 @@ trait ConfigRef extends StObject {
 }
 object ConfigRef {
   
-  @scala.inline
-  def apply(): ConfigRef = {
+  inline def apply(): ConfigRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigRef]
   }
   
-  @scala.inline
-  implicit class ConfigRefMutableBuilder[Self <: ConfigRef] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigRef](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

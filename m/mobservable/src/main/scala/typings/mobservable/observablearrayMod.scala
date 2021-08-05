@@ -126,8 +126,7 @@ object observablearrayMod {
   @js.native
   class StubArray () extends StObject
   
-  @scala.inline
-  def createObservableArray[T](
+  inline def createObservableArray[T](
     initialValues: js.Array[T],
     mode: ValueMode,
     supportEnumerable: Boolean,

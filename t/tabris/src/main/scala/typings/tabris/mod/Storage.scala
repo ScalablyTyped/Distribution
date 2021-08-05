@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof Storage` */
 @JSImport("tabris", "Storage")
 @js.native
-class Storage protected ()
+/* private */ class Storage ()
   extends StObject
      with typings.tabris.Storage {
   

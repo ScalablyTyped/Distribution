@@ -18,28 +18,21 @@ trait ListResourcesForTagOptionOutput extends StObject {
 }
 object ListResourcesForTagOptionOutput {
   
-  @scala.inline
-  def apply(): ListResourcesForTagOptionOutput = {
+  inline def apply(): ListResourcesForTagOptionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourcesForTagOptionOutput]
   }
   
-  @scala.inline
-  implicit class ListResourcesForTagOptionOutputMutableBuilder[Self <: ListResourcesForTagOptionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourcesForTagOptionOutput](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
+    inline def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
+    inline def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
     
-    @scala.inline
-    def setResourceDetailsVarargs(value: ResourceDetail*): Self = StObject.set(x, "ResourceDetails", js.Array(value :_*))
+    inline def setResourceDetailsVarargs(value: ResourceDetail*): Self = StObject.set(x, "ResourceDetails", js.Array(value :_*))
   }
 }

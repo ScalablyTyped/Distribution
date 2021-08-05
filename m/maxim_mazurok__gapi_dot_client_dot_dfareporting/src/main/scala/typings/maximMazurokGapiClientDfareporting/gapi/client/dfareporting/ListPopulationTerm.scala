@@ -39,61 +39,43 @@ trait ListPopulationTerm extends StObject {
 }
 object ListPopulationTerm {
   
-  @scala.inline
-  def apply(): ListPopulationTerm = {
+  inline def apply(): ListPopulationTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPopulationTerm]
   }
   
-  @scala.inline
-  implicit class ListPopulationTermMutableBuilder[Self <: ListPopulationTerm] (val x: Self) extends AnyVal {
+  extension [Self <: ListPopulationTerm](x: Self) {
     
-    @scala.inline
-    def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setNegation(value: Boolean): Self = StObject.set(x, "negation", value.asInstanceOf[js.Any])
+    inline def setNegation(value: Boolean): Self = StObject.set(x, "negation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegationUndefined: Self = StObject.set(x, "negation", js.undefined)
+    inline def setNegationUndefined: Self = StObject.set(x, "negation", js.undefined)
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setRemarketingListId(value: String): Self = StObject.set(x, "remarketingListId", value.asInstanceOf[js.Any])
+    inline def setRemarketingListId(value: String): Self = StObject.set(x, "remarketingListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarketingListIdUndefined: Self = StObject.set(x, "remarketingListId", js.undefined)
+    inline def setRemarketingListIdUndefined: Self = StObject.set(x, "remarketingListId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setVariableFriendlyName(value: String): Self = StObject.set(x, "variableFriendlyName", value.asInstanceOf[js.Any])
+    inline def setVariableFriendlyName(value: String): Self = StObject.set(x, "variableFriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableFriendlyNameUndefined: Self = StObject.set(x, "variableFriendlyName", js.undefined)
+    inline def setVariableFriendlyNameUndefined: Self = StObject.set(x, "variableFriendlyName", js.undefined)
     
-    @scala.inline
-    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
+    inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
+    inline def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
   }
 }

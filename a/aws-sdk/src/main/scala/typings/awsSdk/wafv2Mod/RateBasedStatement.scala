@@ -28,31 +28,23 @@ trait RateBasedStatement extends StObject {
 }
 object RateBasedStatement {
   
-  @scala.inline
-  def apply(AggregateKeyType: RateBasedStatementAggregateKeyType, Limit: RateLimit): RateBasedStatement = {
+  inline def apply(AggregateKeyType: RateBasedStatementAggregateKeyType, Limit: RateLimit): RateBasedStatement = {
     val __obj = js.Dynamic.literal(AggregateKeyType = AggregateKeyType.asInstanceOf[js.Any], Limit = Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateBasedStatement]
   }
   
-  @scala.inline
-  implicit class RateBasedStatementMutableBuilder[Self <: RateBasedStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RateBasedStatement](x: Self) {
     
-    @scala.inline
-    def setAggregateKeyType(value: RateBasedStatementAggregateKeyType): Self = StObject.set(x, "AggregateKeyType", value.asInstanceOf[js.Any])
+    inline def setAggregateKeyType(value: RateBasedStatementAggregateKeyType): Self = StObject.set(x, "AggregateKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIPConfig(value: ForwardedIPConfig): Self = StObject.set(x, "ForwardedIPConfig", value.asInstanceOf[js.Any])
+    inline def setForwardedIPConfig(value: ForwardedIPConfig): Self = StObject.set(x, "ForwardedIPConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIPConfigUndefined: Self = StObject.set(x, "ForwardedIPConfig", js.undefined)
+    inline def setForwardedIPConfigUndefined: Self = StObject.set(x, "ForwardedIPConfig", js.undefined)
     
-    @scala.inline
-    def setLimit(value: RateLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: RateLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDownStatement(value: Statement): Self = StObject.set(x, "ScopeDownStatement", value.asInstanceOf[js.Any])
+    inline def setScopeDownStatement(value: Statement): Self = StObject.set(x, "ScopeDownStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDownStatementUndefined: Self = StObject.set(x, "ScopeDownStatement", js.undefined)
+    inline def setScopeDownStatementUndefined: Self = StObject.set(x, "ScopeDownStatement", js.undefined)
   }
 }

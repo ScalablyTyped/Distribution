@@ -19,43 +19,31 @@ trait Partialpaginationbooleanf extends StObject {
 }
 object Partialpaginationbooleanf {
   
-  @scala.inline
-  def apply(): Partialpaginationbooleanf = {
+  inline def apply(): Partialpaginationbooleanf = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialpaginationbooleanf]
   }
   
-  @scala.inline
-  implicit class PartialpaginationbooleanfMutableBuilder[Self <: Partialpaginationbooleanf] (val x: Self) extends AnyVal {
+  extension [Self <: Partialpaginationbooleanf](x: Self) {
     
-    @scala.inline
-    def setCellEdit(value: Boolean): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
+    inline def setCellEdit(value: Boolean): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellEditUndefined: Self = StObject.set(x, "cellEdit", js.undefined)
+    inline def setCellEditUndefined: Self = StObject.set(x, "cellEdit", js.undefined)
     
-    @scala.inline
-    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
-    @scala.inline
-    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

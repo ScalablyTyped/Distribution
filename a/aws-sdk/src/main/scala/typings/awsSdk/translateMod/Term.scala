@@ -18,25 +18,19 @@ trait Term extends StObject {
 }
 object Term {
   
-  @scala.inline
-  def apply(): Term = {
+  inline def apply(): Term = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Term]
   }
   
-  @scala.inline
-  implicit class TermMutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
+  extension [Self <: Term](x: Self) {
     
-    @scala.inline
-    def setSourceText(value: String): Self = StObject.set(x, "SourceText", value.asInstanceOf[js.Any])
+    inline def setSourceText(value: String): Self = StObject.set(x, "SourceText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTextUndefined: Self = StObject.set(x, "SourceText", js.undefined)
+    inline def setSourceTextUndefined: Self = StObject.set(x, "SourceText", js.undefined)
     
-    @scala.inline
-    def setTargetText(value: String): Self = StObject.set(x, "TargetText", value.asInstanceOf[js.Any])
+    inline def setTargetText(value: String): Self = StObject.set(x, "TargetText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTextUndefined: Self = StObject.set(x, "TargetText", js.undefined)
+    inline def setTargetTextUndefined: Self = StObject.set(x, "TargetText", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     change: scala.Double,
     changeset: scala.Double,
     date: scala.Double,
@@ -39,31 +38,22 @@ object Change {
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setChange(value: scala.Double): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: scala.Double): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeset(value: scala.Double): Self = StObject.set(x, "changeset", value.asInstanceOf[js.Any])
+    inline def setChangeset(value: scala.Double): Self = StObject.set(x, "changeset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: scala.Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: scala.Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatest(value: scala.Double): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+    inline def setLatest(value: scala.Double): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeSource(value: scala.Double): Self = StObject.set(x, "mergeSource", value.asInstanceOf[js.Any])
+    inline def setMergeSource(value: scala.Double): Self = StObject.set(x, "mergeSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShelveset(value: scala.Double): Self = StObject.set(x, "shelveset", value.asInstanceOf[js.Any])
+    inline def setShelveset(value: scala.Double): Self = StObject.set(x, "shelveset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTip(value: scala.Double): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+    inline def setTip(value: scala.Double): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
   }
 }

@@ -24,28 +24,21 @@ trait NavigateResponse extends StObject {
 }
 object NavigateResponse {
   
-  @scala.inline
-  def apply(frameId: FrameId): NavigateResponse = {
+  inline def apply(frameId: FrameId): NavigateResponse = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateResponse]
   }
   
-  @scala.inline
-  implicit class NavigateResponseMutableBuilder[Self <: NavigateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateResponse](x: Self) {
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
+    inline def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
+    inline def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderIdUndefined: Self = StObject.set(x, "loaderId", js.undefined)
+    inline def setLoaderIdUndefined: Self = StObject.set(x, "loaderId", js.undefined)
   }
 }

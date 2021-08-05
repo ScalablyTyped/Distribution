@@ -38,7 +38,6 @@ object keyboardEventMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(event: js.Any, eventName: EEventName): KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[KeyboardEvent]
+    inline def create(event: js.Any, eventName: EEventName): KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[KeyboardEvent]
   }
 }

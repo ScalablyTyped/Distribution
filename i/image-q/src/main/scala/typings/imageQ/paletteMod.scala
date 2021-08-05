@@ -23,20 +23,17 @@ object paletteMod {
     @JSImport("image-q/dist/palette", "ColorHistogram._boxPixels")
     @js.native
     def _boxPixels: js.Any = js.native
-    @scala.inline
-    def _boxPixels_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_boxPixels")(x.asInstanceOf[js.Any])
+    inline def _boxPixels_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_boxPixels")(x.asInstanceOf[js.Any])
     
     @JSImport("image-q/dist/palette", "ColorHistogram._boxSize")
     @js.native
     def _boxSize: js.Any = js.native
-    @scala.inline
-    def _boxSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_boxSize")(x.asInstanceOf[js.Any])
+    inline def _boxSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_boxSize")(x.asInstanceOf[js.Any])
     
     @JSImport("image-q/dist/palette", "ColorHistogram._hueGroups")
     @js.native
     def _hueGroups: js.Any = js.native
-    @scala.inline
-    def _hueGroups_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_hueGroups")(x.asInstanceOf[js.Any])
+    inline def _hueGroups_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_hueGroups")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("image-q/dist/palette", "NeuQuant")
@@ -271,26 +268,22 @@ object paletteMod {
     /**
       * Splits the cube in a given color direction at its minimum.
       */
-    @scala.inline
-    def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_bottom")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_bottom")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Splits the cube in given position][and color direction.
       */
-    @scala.inline
-    def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_top")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], position.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_top")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], position.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    @scala.inline
-    def _volume(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volume")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _volume(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volume")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    @scala.inline
-    def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volumeFloat")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volumeFloat")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("image-q/dist/palette", "WuQuant.alpha")
     @js.native

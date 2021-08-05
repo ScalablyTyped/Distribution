@@ -35,26 +35,19 @@ object datePickerPropsMod {
   trait DayOfWeek extends StObject
   object DayOfWeek {
     
-    @scala.inline
-    def Friday: `5` = 5.asInstanceOf[`5`]
+    inline def Friday: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def Monday: `1` = 1.asInstanceOf[`1`]
+    inline def Monday: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Saturday: `6` = 6.asInstanceOf[`6`]
+    inline def Saturday: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def Sunday: `0` = 0.asInstanceOf[`0`]
+    inline def Sunday: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Thursday: `4` = 4.asInstanceOf[`4`]
+    inline def Thursday: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Tuesday: `2` = 2.asInstanceOf[`2`]
+    inline def Tuesday: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Wednesday: `3` = 3.asInstanceOf[`3`]
+    inline def Wednesday: `3` = 3.asInstanceOf[`3`]
   }
   
   trait IDatePickerChangeEvent extends StObject {
@@ -63,17 +56,14 @@ object datePickerPropsMod {
   }
   object IDatePickerChangeEvent {
     
-    @scala.inline
-    def apply(nativeEvent: NewDate): IDatePickerChangeEvent = {
+    inline def apply(nativeEvent: NewDate): IDatePickerChangeEvent = {
       val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDatePickerChangeEvent]
     }
     
-    @scala.inline
-    implicit class IDatePickerChangeEventMutableBuilder[Self <: IDatePickerChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerChangeEvent](x: Self) {
       
-      @scala.inline
-      def setNativeEvent(value: NewDate): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: NewDate): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,76 +95,54 @@ object datePickerPropsMod {
   }
   object IDatePickerProps {
     
-    @scala.inline
-    def apply(): IDatePickerProps = {
+    inline def apply(): IDatePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDatePickerProps]
     }
     
-    @scala.inline
-    implicit class IDatePickerPropsMutableBuilder[Self <: IDatePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerProps](x: Self) {
       
-      @scala.inline
-      def setDateFormat(value: (`day month year`) | (`dayofweek day month`) | longdate | shortdate): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: (`day month year`) | (`dayofweek day month`) | longdate | shortdate): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setDayOfWeekFormat(
+      inline def setDayOfWeekFormat(
         value: LeftcurlybracketdayofweekDotabbreviatedLeftparenthesis2RightparenthesisRightcurlybracket | LeftcurlybracketdayofweekDotabbreviatedLeftparenthesis3RightparenthesisRightcurlybracket | LeftcurlybracketdayofweekDotfullRightcurlybracket
       ): Self = StObject.set(x, "dayOfWeekFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayOfWeekFormatUndefined: Self = StObject.set(x, "dayOfWeekFormat", js.undefined)
+      inline def setDayOfWeekFormatUndefined: Self = StObject.set(x, "dayOfWeekFormat", js.undefined)
       
-      @scala.inline
-      def setFirstDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+      inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* event */ IDatePickerChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ IDatePickerChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnDateChange(value: /* newDate */ Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+      inline def setOnDateChange(value: /* newDate */ Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDateChangeUndefined: Self = StObject.set(x, "onDateChange", js.undefined)
+      inline def setOnDateChangeUndefined: Self = StObject.set(x, "onDateChange", js.undefined)
       
-      @scala.inline
-      def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+      inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
+      inline def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
       
-      @scala.inline
-      def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
+      inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
       
-      @scala.inline
-      def setTimeZoneOffsetInSeconds(value: Double): Self = StObject.set(x, "timeZoneOffsetInSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeZoneOffsetInSeconds(value: Double): Self = StObject.set(x, "timeZoneOffsetInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneOffsetInSecondsUndefined: Self = StObject.set(x, "timeZoneOffsetInSeconds", js.undefined)
+      inline def setTimeZoneOffsetInSecondsUndefined: Self = StObject.set(x, "timeZoneOffsetInSeconds", js.undefined)
     }
   }
 }

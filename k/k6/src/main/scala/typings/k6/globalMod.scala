@@ -35,8 +35,7 @@ object globalMod {
     @JSGlobal("console")
     @js.native
     def console: Console = js.native
-    @scala.inline
-    def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
+    inline def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
     
     // === Init context only ===
     // -------------------------
@@ -56,8 +55,7 @@ object globalMod {
       *  sleep(3);
       * }
       */
-    @scala.inline
-    def open(filePath: String): String = js.Dynamic.global.applyDynamic("open")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def open(filePath: String): String = js.Dynamic.global.applyDynamic("open")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Opens a file, reading all its contents into memory.
@@ -75,8 +73,7 @@ object globalMod {
       *  sleep(3);
       * }
       */
-    @scala.inline
-    def open_b(filePath: String, mode: b): bytes = (js.Dynamic.global.applyDynamic("open")(filePath.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[bytes]
+    inline def open_b(filePath: String, mode: b): bytes = (js.Dynamic.global.applyDynamic("open")(filePath.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[bytes]
     
     // === Init context and VU logic ===
     // ---------------------------------
@@ -121,8 +118,7 @@ object globalMod {
   }
   object Console {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: (/* msg */ js.Any, /* repeated */ js.Any) => Unit,
       error: (/* msg */ js.Any, /* repeated */ js.Any) => Unit,
       info: (/* msg */ js.Any, /* repeated */ js.Any) => Unit,
@@ -133,23 +129,17 @@ object globalMod {
       __obj.asInstanceOf[Console]
     }
     
-    @scala.inline
-    implicit class ConsoleMutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
+    extension [Self <: Console](x: Self) {
       
-      @scala.inline
-      def setDebug(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInfo(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarn(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: (/* msg */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
     }
   }
   

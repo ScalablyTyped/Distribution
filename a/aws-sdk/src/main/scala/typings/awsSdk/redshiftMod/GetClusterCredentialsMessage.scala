@@ -38,46 +38,33 @@ trait GetClusterCredentialsMessage extends StObject {
 }
 object GetClusterCredentialsMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String, DbUser: String): GetClusterCredentialsMessage = {
+  inline def apply(ClusterIdentifier: String, DbUser: String): GetClusterCredentialsMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], DbUser = DbUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterCredentialsMessage]
   }
   
-  @scala.inline
-  implicit class GetClusterCredentialsMessageMutableBuilder[Self <: GetClusterCredentialsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GetClusterCredentialsMessage](x: Self) {
     
-    @scala.inline
-    def setAutoCreate(value: BooleanOptional): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
+    inline def setAutoCreate(value: BooleanOptional): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCreateUndefined: Self = StObject.set(x, "AutoCreate", js.undefined)
+    inline def setAutoCreateUndefined: Self = StObject.set(x, "AutoCreate", js.undefined)
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbGroups(value: DbGroupList): Self = StObject.set(x, "DbGroups", value.asInstanceOf[js.Any])
+    inline def setDbGroups(value: DbGroupList): Self = StObject.set(x, "DbGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbGroupsUndefined: Self = StObject.set(x, "DbGroups", js.undefined)
+    inline def setDbGroupsUndefined: Self = StObject.set(x, "DbGroups", js.undefined)
     
-    @scala.inline
-    def setDbGroupsVarargs(value: String*): Self = StObject.set(x, "DbGroups", js.Array(value :_*))
+    inline def setDbGroupsVarargs(value: String*): Self = StObject.set(x, "DbGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setDbName(value: String): Self = StObject.set(x, "DbName", value.asInstanceOf[js.Any])
+    inline def setDbName(value: String): Self = StObject.set(x, "DbName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbNameUndefined: Self = StObject.set(x, "DbName", js.undefined)
+    inline def setDbNameUndefined: Self = StObject.set(x, "DbName", js.undefined)
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSeconds(value: IntegerOptional): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: IntegerOptional): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
   }
 }

@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlBlockAlign extends StObject
 object htmlBlockAlign {
   
-  @scala.inline
-  def htmlBlockAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def htmlBlockAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlBlockAlignJustify: `4` = 4.asInstanceOf[`4`]
+  inline def htmlBlockAlignJustify: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def htmlBlockAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def htmlBlockAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlBlockAlignNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def htmlBlockAlignNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlBlockAlignRight: `3` = 3.asInstanceOf[`3`]
+  inline def htmlBlockAlignRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlBlockAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlBlockAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

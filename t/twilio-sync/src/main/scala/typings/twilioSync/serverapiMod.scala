@@ -12,17 +12,14 @@ object serverapiMod {
   }
   object PublishMessageRequest {
     
-    @scala.inline
-    def apply(data: js.Object): PublishMessageRequest = {
+    inline def apply(data: js.Object): PublishMessageRequest = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishMessageRequest]
     }
     
-    @scala.inline
-    implicit class PublishMessageRequestMutableBuilder[Self <: PublishMessageRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PublishMessageRequest](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object serverapiMod {
   }
   object PublishMessageResponse {
     
-    @scala.inline
-    def apply(sid: String): PublishMessageResponse = {
+    inline def apply(sid: String): PublishMessageResponse = {
       val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishMessageResponse]
     }
     
-    @scala.inline
-    implicit class PublishMessageResponseMutableBuilder[Self <: PublishMessageResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PublishMessageResponse](x: Self) {
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,29 +54,22 @@ object serverapiMod {
   }
   object StreamDescriptor {
     
-    @scala.inline
-    def apply(date_expires: String, links: StreamLinks, sid: String, unique_name: String, url: String): StreamDescriptor = {
+    inline def apply(date_expires: String, links: StreamLinks, sid: String, unique_name: String, url: String): StreamDescriptor = {
       val __obj = js.Dynamic.literal(date_expires = date_expires.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamDescriptor]
     }
     
-    @scala.inline
-    implicit class StreamDescriptorMutableBuilder[Self <: StreamDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: StreamDescriptor](x: Self) {
       
-      @scala.inline
-      def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
+      inline def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinks(value: StreamLinks): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: StreamLinks): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
+      inline def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +79,14 @@ object serverapiMod {
   }
   object StreamLinks {
     
-    @scala.inline
-    def apply(messages: String): StreamLinks = {
+    inline def apply(messages: String): StreamLinks = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamLinks]
     }
     
-    @scala.inline
-    implicit class StreamLinksMutableBuilder[Self <: StreamLinks] (val x: Self) extends AnyVal {
+    extension [Self <: StreamLinks](x: Self) {
       
-      @scala.inline
-      def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     }
   }
 }

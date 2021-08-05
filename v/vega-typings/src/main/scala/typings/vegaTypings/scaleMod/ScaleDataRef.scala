@@ -12,19 +12,15 @@ trait ScaleDataRef extends StObject {
 }
 object ScaleDataRef {
   
-  @scala.inline
-  def apply(data: String, field: ScaleField): ScaleDataRef = {
+  inline def apply(data: String, field: ScaleField): ScaleDataRef = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleDataRef]
   }
   
-  @scala.inline
-  implicit class ScaleDataRefMutableBuilder[Self <: ScaleDataRef] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleDataRef](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

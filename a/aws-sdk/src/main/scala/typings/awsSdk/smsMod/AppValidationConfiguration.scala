@@ -28,37 +28,27 @@ trait AppValidationConfiguration extends StObject {
 }
 object AppValidationConfiguration {
   
-  @scala.inline
-  def apply(): AppValidationConfiguration = {
+  inline def apply(): AppValidationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppValidationConfiguration]
   }
   
-  @scala.inline
-  implicit class AppValidationConfigurationMutableBuilder[Self <: AppValidationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AppValidationConfiguration](x: Self) {
     
-    @scala.inline
-    def setAppValidationStrategy(value: AppValidationStrategy): Self = StObject.set(x, "appValidationStrategy", value.asInstanceOf[js.Any])
+    inline def setAppValidationStrategy(value: AppValidationStrategy): Self = StObject.set(x, "appValidationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppValidationStrategyUndefined: Self = StObject.set(x, "appValidationStrategy", js.undefined)
+    inline def setAppValidationStrategyUndefined: Self = StObject.set(x, "appValidationStrategy", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyStringWithMaxLen255): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyStringWithMaxLen255): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSsmValidationParameters(value: SSMValidationParameters): Self = StObject.set(x, "ssmValidationParameters", value.asInstanceOf[js.Any])
+    inline def setSsmValidationParameters(value: SSMValidationParameters): Self = StObject.set(x, "ssmValidationParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmValidationParametersUndefined: Self = StObject.set(x, "ssmValidationParameters", js.undefined)
+    inline def setSsmValidationParametersUndefined: Self = StObject.set(x, "ssmValidationParameters", js.undefined)
     
-    @scala.inline
-    def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
+    inline def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
+    inline def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
   }
 }

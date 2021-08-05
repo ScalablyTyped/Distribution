@@ -18,10 +18,8 @@ object autoRenderMod {
     * @param elem HTML element to auto-render
     * @param options Render options
     */
-  @scala.inline
-  def default(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(elem: HTMLElement, options: RenderMathInElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(elem: HTMLElement, options: RenderMathInElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait RenderMathInElementOptions
     extends StObject
@@ -29,8 +27,7 @@ object autoRenderMod {
        with RenderMathInElementSpecificOptions
   object RenderMathInElementOptions {
     
-    @scala.inline
-    def apply(): RenderMathInElementOptions = {
+    inline def apply(): RenderMathInElementOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderMathInElementOptions]
     }
@@ -78,51 +75,38 @@ object autoRenderMod {
   }
   object RenderMathInElementSpecificOptions {
     
-    @scala.inline
-    def apply(): RenderMathInElementSpecificOptions = {
+    inline def apply(): RenderMathInElementSpecificOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderMathInElementSpecificOptions]
     }
     
-    @scala.inline
-    implicit class RenderMathInElementSpecificOptionsMutableBuilder[Self <: RenderMathInElementSpecificOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderMathInElementSpecificOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiters(value: js.Array[RenderMathInElementSpecificOptionsDelimiters]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: js.Array[RenderMathInElementSpecificOptionsDelimiters]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
+      inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      @scala.inline
-      def setDelimitersVarargs(value: RenderMathInElementSpecificOptionsDelimiters*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: RenderMathInElementSpecificOptionsDelimiters*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
       
-      @scala.inline
-      def setErrorCallback(value: (/* msg */ String, /* err */ Error) => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction2(value))
+      inline def setErrorCallback(value: (/* msg */ String, /* err */ Error) => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+      inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
       
-      @scala.inline
-      def setIgnoredClasses(value: js.Array[String]): Self = StObject.set(x, "ignoredClasses", value.asInstanceOf[js.Any])
+      inline def setIgnoredClasses(value: js.Array[String]): Self = StObject.set(x, "ignoredClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredClassesUndefined: Self = StObject.set(x, "ignoredClasses", js.undefined)
+      inline def setIgnoredClassesUndefined: Self = StObject.set(x, "ignoredClasses", js.undefined)
       
-      @scala.inline
-      def setIgnoredClassesVarargs(value: String*): Self = StObject.set(x, "ignoredClasses", js.Array(value :_*))
+      inline def setIgnoredClassesVarargs(value: String*): Self = StObject.set(x, "ignoredClasses", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoredTags(
+      inline def setIgnoredTags(
         value: js.Array[
               /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
             ]
       ): Self = StObject.set(x, "ignoredTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredTagsUndefined: Self = StObject.set(x, "ignoredTags", js.undefined)
+      inline def setIgnoredTagsUndefined: Self = StObject.set(x, "ignoredTags", js.undefined)
       
-      @scala.inline
-      def setIgnoredTagsVarargs(
+      inline def setIgnoredTagsVarargs(
         value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any)*
       ): Self = StObject.set(x, "ignoredTags", js.Array(value :_*))
     }
@@ -147,23 +131,18 @@ object autoRenderMod {
   }
   object RenderMathInElementSpecificOptionsDelimiters {
     
-    @scala.inline
-    def apply(display: Boolean, left: String, right: String): RenderMathInElementSpecificOptionsDelimiters = {
+    inline def apply(display: Boolean, left: String, right: String): RenderMathInElementSpecificOptionsDelimiters = {
       val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderMathInElementSpecificOptionsDelimiters]
     }
     
-    @scala.inline
-    implicit class RenderMathInElementSpecificOptionsDelimitersMutableBuilder[Self <: RenderMathInElementSpecificOptionsDelimiters] (val x: Self) extends AnyVal {
+    extension [Self <: RenderMathInElementSpecificOptionsDelimiters](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
 }

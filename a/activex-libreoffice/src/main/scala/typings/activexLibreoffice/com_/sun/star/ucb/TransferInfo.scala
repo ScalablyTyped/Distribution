@@ -39,25 +39,19 @@ trait TransferInfo extends StObject {
 }
 object TransferInfo {
   
-  @scala.inline
-  def apply(MoveData: Boolean, NameClash: Double, NewTitle: String, SourceURL: String): TransferInfo = {
+  inline def apply(MoveData: Boolean, NameClash: Double, NewTitle: String, SourceURL: String): TransferInfo = {
     val __obj = js.Dynamic.literal(MoveData = MoveData.asInstanceOf[js.Any], NameClash = NameClash.asInstanceOf[js.Any], NewTitle = NewTitle.asInstanceOf[js.Any], SourceURL = SourceURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferInfo]
   }
   
-  @scala.inline
-  implicit class TransferInfoMutableBuilder[Self <: TransferInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TransferInfo](x: Self) {
     
-    @scala.inline
-    def setMoveData(value: Boolean): Self = StObject.set(x, "MoveData", value.asInstanceOf[js.Any])
+    inline def setMoveData(value: Boolean): Self = StObject.set(x, "MoveData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
+    inline def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
+    inline def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
   }
 }

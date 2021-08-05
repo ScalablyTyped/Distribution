@@ -18,28 +18,21 @@ trait DescribeSavingsPlansOfferingRatesResponse extends StObject {
 }
 object DescribeSavingsPlansOfferingRatesResponse {
   
-  @scala.inline
-  def apply(): DescribeSavingsPlansOfferingRatesResponse = {
+  inline def apply(): DescribeSavingsPlansOfferingRatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSavingsPlansOfferingRatesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSavingsPlansOfferingRatesResponseMutableBuilder[Self <: DescribeSavingsPlansOfferingRatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSavingsPlansOfferingRatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSearchResults(value: SavingsPlanOfferingRatesList): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+    inline def setSearchResults(value: SavingsPlanOfferingRatesList): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)
+    inline def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)
     
-    @scala.inline
-    def setSearchResultsVarargs(value: SavingsPlanOfferingRate*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
+    inline def setSearchResultsVarargs(value: SavingsPlanOfferingRate*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
   }
 }

@@ -17,25 +17,19 @@ trait RemoveDnsZoneRequest extends StObject {
 }
 object RemoveDnsZoneRequest {
   
-  @scala.inline
-  def apply(): RemoveDnsZoneRequest = {
+  inline def apply(): RemoveDnsZoneRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveDnsZoneRequest]
   }
   
-  @scala.inline
-  implicit class RemoveDnsZoneRequestMutableBuilder[Self <: RemoveDnsZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveDnsZoneRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
+    inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

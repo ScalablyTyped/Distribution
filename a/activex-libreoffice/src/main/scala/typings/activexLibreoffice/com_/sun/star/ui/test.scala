@@ -31,8 +31,7 @@ object test {
   }
   object XUIObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Children: SafeArray[String],
       State: PropertyValues,
       Type: String,
@@ -46,35 +45,25 @@ object test {
       __obj.asInstanceOf[XUIObject]
     }
     
-    @scala.inline
-    implicit class XUIObjectMutableBuilder[Self <: XUIObject] (val x: Self) extends AnyVal {
+    extension [Self <: XUIObject](x: Self) {
       
-      @scala.inline
-      def setChildren(value: SafeArray[String]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: SafeArray[String]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecuteAction(value: (String, PropertyValues) => Unit): Self = StObject.set(x, "executeAction", js.Any.fromFunction2(value))
+      inline def setExecuteAction(value: (String, PropertyValues) => Unit): Self = StObject.set(x, "executeAction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetChild(value: String => XUIObject): Self = StObject.set(x, "getChild", js.Any.fromFunction1(value))
+      inline def setGetChild(value: String => XUIObject): Self = StObject.set(x, "getChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChildren(value: () => SafeArray[String]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => SafeArray[String]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetState(value: () => PropertyValues): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => PropertyValues): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setState(value: PropertyValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: PropertyValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateVarargs(value: PropertyValue*): Self = StObject.set(x, "State", js.Array(value :_*))
+      inline def setStateVarargs(value: PropertyValue*): Self = StObject.set(x, "State", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,23 +77,18 @@ object test {
   }
   object XUITest {
     
-    @scala.inline
-    def apply(TopFocusWindow: XUIObject, executeCommand: String => Unit, getTopFocusWindow: () => XUIObject): XUITest = {
+    inline def apply(TopFocusWindow: XUIObject, executeCommand: String => Unit, getTopFocusWindow: () => XUIObject): XUITest = {
       val __obj = js.Dynamic.literal(TopFocusWindow = TopFocusWindow.asInstanceOf[js.Any], executeCommand = js.Any.fromFunction1(executeCommand), getTopFocusWindow = js.Any.fromFunction0(getTopFocusWindow))
       __obj.asInstanceOf[XUITest]
     }
     
-    @scala.inline
-    implicit class XUITestMutableBuilder[Self <: XUITest] (val x: Self) extends AnyVal {
+    extension [Self <: XUITest](x: Self) {
       
-      @scala.inline
-      def setExecuteCommand(value: String => Unit): Self = StObject.set(x, "executeCommand", js.Any.fromFunction1(value))
+      inline def setExecuteCommand(value: String => Unit): Self = StObject.set(x, "executeCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTopFocusWindow(value: () => XUIObject): Self = StObject.set(x, "getTopFocusWindow", js.Any.fromFunction0(value))
+      inline def setGetTopFocusWindow(value: () => XUIObject): Self = StObject.set(x, "getTopFocusWindow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTopFocusWindow(value: XUIObject): Self = StObject.set(x, "TopFocusWindow", value.asInstanceOf[js.Any])
+      inline def setTopFocusWindow(value: XUIObject): Self = StObject.set(x, "TopFocusWindow", value.asInstanceOf[js.Any])
     }
   }
 }

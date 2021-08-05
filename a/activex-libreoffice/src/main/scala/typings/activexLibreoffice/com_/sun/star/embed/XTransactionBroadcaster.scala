@@ -19,8 +19,7 @@ trait XTransactionBroadcaster
 }
 object XTransactionBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addTransactionListener: XTransactionListener => Unit,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XTransactionBroadcaster {
     __obj.asInstanceOf[XTransactionBroadcaster]
   }
   
-  @scala.inline
-  implicit class XTransactionBroadcasterMutableBuilder[Self <: XTransactionBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XTransactionBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddTransactionListener(value: XTransactionListener => Unit): Self = StObject.set(x, "addTransactionListener", js.Any.fromFunction1(value))
+    inline def setAddTransactionListener(value: XTransactionListener => Unit): Self = StObject.set(x, "addTransactionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTransactionListener(value: XTransactionListener => Unit): Self = StObject.set(x, "removeTransactionListener", js.Any.fromFunction1(value))
+    inline def setRemoveTransactionListener(value: XTransactionListener => Unit): Self = StObject.set(x, "removeTransactionListener", js.Any.fromFunction1(value))
   }
 }

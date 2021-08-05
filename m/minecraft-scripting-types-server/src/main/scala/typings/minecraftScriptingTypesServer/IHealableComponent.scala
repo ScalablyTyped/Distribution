@@ -29,28 +29,21 @@ trait IHealableComponent extends StObject {
 }
 object IHealableComponent {
   
-  @scala.inline
-  def apply(force_use: Boolean, items: js.Array[Effects]): IHealableComponent = {
+  inline def apply(force_use: Boolean, items: js.Array[Effects]): IHealableComponent = {
     val __obj = js.Dynamic.literal(force_use = force_use.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHealableComponent]
   }
   
-  @scala.inline
-  implicit class IHealableComponentMutableBuilder[Self <: IHealableComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IHealableComponent](x: Self) {
     
-    @scala.inline
-    def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setForce_use(value: Boolean): Self = StObject.set(x, "force_use", value.asInstanceOf[js.Any])
+    inline def setForce_use(value: Boolean): Self = StObject.set(x, "force_use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Effects]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Effects]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Effects*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Effects*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

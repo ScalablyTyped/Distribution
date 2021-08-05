@@ -18,23 +18,18 @@ trait DatabaseUpdatesResultItem extends StObject {
 }
 object DatabaseUpdatesResultItem {
   
-  @scala.inline
-  def apply(db_name: String, seq: js.Any, `type`: String): DatabaseUpdatesResultItem = {
+  inline def apply(db_name: String, seq: js.Any, `type`: String): DatabaseUpdatesResultItem = {
     val __obj = js.Dynamic.literal(db_name = db_name.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUpdatesResultItem]
   }
   
-  @scala.inline
-  implicit class DatabaseUpdatesResultItemMutableBuilder[Self <: DatabaseUpdatesResultItem] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseUpdatesResultItem](x: Self) {
     
-    @scala.inline
-    def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
+    inline def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeq(value: js.Any): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
+    inline def setSeq(value: js.Any): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

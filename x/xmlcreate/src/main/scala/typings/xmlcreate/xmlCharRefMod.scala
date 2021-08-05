@@ -29,36 +29,31 @@ object xmlCharRefMod {
   }
   object IXmlCharRefOptions {
     
-    @scala.inline
-    def apply(char: String): IXmlCharRefOptions = {
+    inline def apply(char: String): IXmlCharRefOptions = {
       val __obj = js.Dynamic.literal(char = char.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlCharRefOptions]
     }
     
-    @scala.inline
-    implicit class IXmlCharRefOptionsMutableBuilder[Self <: IXmlCharRefOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlCharRefOptions](x: Self) {
       
-      @scala.inline
-      def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: Boolean): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: Boolean): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
+      inline def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
     }
   }
   
   @js.native
   trait XmlCharRef[Parent] extends StObject {
     
-    var _char: js.Any = js.native
+    /* private */ var _char: js.Any = js.native
     
-    var _hex: js.Any = js.native
+    /* private */ var _hex: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the character of this character reference.

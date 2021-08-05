@@ -26,34 +26,25 @@ trait SchemaSiteVerificationWebResourceResource extends StObject {
 }
 object SchemaSiteVerificationWebResourceResource {
   
-  @scala.inline
-  def apply(): SchemaSiteVerificationWebResourceResource = {
+  inline def apply(): SchemaSiteVerificationWebResourceResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSiteVerificationWebResourceResource]
   }
   
-  @scala.inline
-  implicit class SchemaSiteVerificationWebResourceResourceMutableBuilder[Self <: SchemaSiteVerificationWebResourceResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSiteVerificationWebResourceResource](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
-    @scala.inline
-    def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+    inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
   }
 }

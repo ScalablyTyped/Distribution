@@ -18,26 +18,22 @@ object configMod {
     @JSImport("@opentelemetry/tracing/build/src/config", "DEFAULT_CONFIG.gracefulShutdown")
     @js.native
     def gracefulShutdown: Boolean = js.native
-    @scala.inline
-    def gracefulShutdown_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gracefulShutdown")(x.asInstanceOf[js.Any])
+    inline def gracefulShutdown_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gracefulShutdown")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/tracing/build/src/config", "DEFAULT_CONFIG.logLevel")
     @js.native
     def logLevel: LogLevel = js.native
-    @scala.inline
-    def logLevel_=(x: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logLevel")(x.asInstanceOf[js.Any])
+    inline def logLevel_=(x: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logLevel")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/tracing/build/src/config", "DEFAULT_CONFIG.sampler")
     @js.native
     def sampler: AlwaysOnSampler = js.native
-    @scala.inline
-    def sampler_=(x: AlwaysOnSampler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sampler")(x.asInstanceOf[js.Any])
+    inline def sampler_=(x: AlwaysOnSampler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sampler")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/tracing/build/src/config", "DEFAULT_CONFIG.traceParams")
     @js.native
     def traceParams: NumberOfAttributesPerSpan = js.native
-    @scala.inline
-    def traceParams_=(x: NumberOfAttributesPerSpan): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("traceParams")(x.asInstanceOf[js.Any])
+    inline def traceParams_=(x: NumberOfAttributesPerSpan): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("traceParams")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@opentelemetry/tracing/build/src/config", "DEFAULT_MAX_ATTRIBUTES_PER_SPAN")

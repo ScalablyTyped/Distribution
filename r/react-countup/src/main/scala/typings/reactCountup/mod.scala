@@ -147,152 +147,104 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* data */ RenderProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* data */ RenderProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+      inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+      inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasingFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Unit): Self = StObject.set(x, "easingFn", js.Any.fromFunction4(value))
+      inline def setEasingFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Unit): Self = StObject.set(x, "easingFn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setEasingFnUndefined: Self = StObject.set(x, "easingFn", js.undefined)
+      inline def setEasingFnUndefined: Self = StObject.set(x, "easingFn", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFormattingFn(value: /* value */ Double => String): Self = StObject.set(x, "formattingFn", js.Any.fromFunction1(value))
+      inline def setFormattingFn(value: /* value */ Double => String): Self = StObject.set(x, "formattingFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormattingFnUndefined: Self = StObject.set(x, "formattingFn", js.undefined)
+      inline def setFormattingFnUndefined: Self = StObject.set(x, "formattingFn", js.undefined)
       
-      @scala.inline
-      def setOnEnd(value: /* providedFn */ PauseResume => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* providedFn */ PauseResume => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setOnPauseResume(value: () => js.Function1[/* providedFn */ Start, Unit]): Self = StObject.set(x, "onPauseResume", js.Any.fromFunction0(value))
+      inline def setOnPauseResume(value: () => js.Function1[/* providedFn */ Start, Unit]): Self = StObject.set(x, "onPauseResume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPauseResumeUndefined: Self = StObject.set(x, "onPauseResume", js.undefined)
+      inline def setOnPauseResumeUndefined: Self = StObject.set(x, "onPauseResume", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: () => js.Function1[/* providedFn */ Update, Unit]): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
+      inline def setOnReset(value: () => js.Function1[/* providedFn */ Update, Unit]): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* providedFn */ Reset => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* providedFn */ Reset => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* providedFn */ PauseResumeReset => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* providedFn */ PauseResumeReset => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPreserveValue(value: Boolean): Self = StObject.set(x, "preserveValue", value.asInstanceOf[js.Any])
+      inline def setPreserveValue(value: Boolean): Self = StObject.set(x, "preserveValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveValueUndefined: Self = StObject.set(x, "preserveValue", js.undefined)
+      inline def setPreserveValueUndefined: Self = StObject.set(x, "preserveValue", js.undefined)
       
-      @scala.inline
-      def setRedraw(value: Boolean): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
+      inline def setRedraw(value: Boolean): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
+      inline def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOnMount(value: Boolean): Self = StObject.set(x, "startOnMount", value.asInstanceOf[js.Any])
+      inline def setStartOnMount(value: Boolean): Self = StObject.set(x, "startOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOnMountUndefined: Self = StObject.set(x, "startOnMount", js.undefined)
+      inline def setStartOnMountUndefined: Self = StObject.set(x, "startOnMount", js.undefined)
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setUseEasing(value: Boolean): Self = StObject.set(x, "useEasing", value.asInstanceOf[js.Any])
+      inline def setUseEasing(value: Boolean): Self = StObject.set(x, "useEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseEasingUndefined: Self = StObject.set(x, "useEasing", js.undefined)
+      inline def setUseEasingUndefined: Self = StObject.set(x, "useEasing", js.undefined)
     }
   }
   

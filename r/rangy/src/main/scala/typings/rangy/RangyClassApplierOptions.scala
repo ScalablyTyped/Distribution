@@ -28,70 +28,49 @@ trait RangyClassApplierOptions extends StObject {
 }
 object RangyClassApplierOptions {
   
-  @scala.inline
-  def apply(): RangyClassApplierOptions = {
+  inline def apply(): RangyClassApplierOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangyClassApplierOptions]
   }
   
-  @scala.inline
-  implicit class RangyClassApplierOptionsMutableBuilder[Self <: RangyClassApplierOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangyClassApplierOptions](x: Self) {
     
-    @scala.inline
-    def setApplyToEditableOnly(value: Boolean): Self = StObject.set(x, "applyToEditableOnly", value.asInstanceOf[js.Any])
+    inline def setApplyToEditableOnly(value: Boolean): Self = StObject.set(x, "applyToEditableOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyToEditableOnlyUndefined: Self = StObject.set(x, "applyToEditableOnly", js.undefined)
+    inline def setApplyToEditableOnlyUndefined: Self = StObject.set(x, "applyToEditableOnly", js.undefined)
     
-    @scala.inline
-    def setElementAttributes(value: StringDictionary[String]): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
+    inline def setElementAttributes(value: StringDictionary[String]): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
+    inline def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
     
-    @scala.inline
-    def setElementProperties(value: StringDictionary[String]): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+    inline def setElementProperties(value: StringDictionary[String]): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+    inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
     
-    @scala.inline
-    def setElementTagName(value: String): Self = StObject.set(x, "elementTagName", value.asInstanceOf[js.Any])
+    inline def setElementTagName(value: String): Self = StObject.set(x, "elementTagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTagNameUndefined: Self = StObject.set(x, "elementTagName", js.undefined)
+    inline def setElementTagNameUndefined: Self = StObject.set(x, "elementTagName", js.undefined)
     
-    @scala.inline
-    def setIgnoreWhiteSpace(value: Boolean): Self = StObject.set(x, "ignoreWhiteSpace", value.asInstanceOf[js.Any])
+    inline def setIgnoreWhiteSpace(value: Boolean): Self = StObject.set(x, "ignoreWhiteSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWhiteSpaceUndefined: Self = StObject.set(x, "ignoreWhiteSpace", js.undefined)
+    inline def setIgnoreWhiteSpaceUndefined: Self = StObject.set(x, "ignoreWhiteSpace", js.undefined)
     
-    @scala.inline
-    def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setOnElementCreate(value: (/* element */ Element, /* classApplier */ RangyClassApplier) => Unit): Self = StObject.set(x, "onElementCreate", js.Any.fromFunction2(value))
+    inline def setOnElementCreate(value: (/* element */ Element, /* classApplier */ RangyClassApplier) => Unit): Self = StObject.set(x, "onElementCreate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnElementCreateUndefined: Self = StObject.set(x, "onElementCreate", js.undefined)
+    inline def setOnElementCreateUndefined: Self = StObject.set(x, "onElementCreate", js.undefined)
     
-    @scala.inline
-    def setTagNames(value: String | js.Array[String]): Self = StObject.set(x, "tagNames", value.asInstanceOf[js.Any])
+    inline def setTagNames(value: String | js.Array[String]): Self = StObject.set(x, "tagNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNamesUndefined: Self = StObject.set(x, "tagNames", js.undefined)
+    inline def setTagNamesUndefined: Self = StObject.set(x, "tagNames", js.undefined)
     
-    @scala.inline
-    def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value :_*))
+    inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value :_*))
     
-    @scala.inline
-    def setUseExistingElements(value: Boolean): Self = StObject.set(x, "useExistingElements", value.asInstanceOf[js.Any])
+    inline def setUseExistingElements(value: Boolean): Self = StObject.set(x, "useExistingElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExistingElementsUndefined: Self = StObject.set(x, "useExistingElements", js.undefined)
+    inline def setUseExistingElementsUndefined: Self = StObject.set(x, "useExistingElements", js.undefined)
   }
 }

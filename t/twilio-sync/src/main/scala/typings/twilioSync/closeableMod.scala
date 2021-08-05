@@ -17,12 +17,12 @@ object closeableMod {
     
     /* protected */ def close(): Unit = js.native
     
-    var closed: js.Any = js.native
+    /* private */ var closed: js.Any = js.native
     
     /* protected */ def ensureNotClosed(): Unit = js.native
     
     def listenerUuid: String = js.native
     
-    val uuid: js.Any = js.native
+    /* private */ val uuid: js.Any = js.native
   }
 }

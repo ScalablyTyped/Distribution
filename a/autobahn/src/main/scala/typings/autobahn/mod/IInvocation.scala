@@ -14,28 +14,21 @@ trait IInvocation extends StObject {
 }
 object IInvocation {
   
-  @scala.inline
-  def apply(procedure: String): IInvocation = {
+  inline def apply(procedure: String): IInvocation = {
     val __obj = js.Dynamic.literal(procedure = procedure.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvocation]
   }
   
-  @scala.inline
-  implicit class IInvocationMutableBuilder[Self <: IInvocation] (val x: Self) extends AnyVal {
+  extension [Self <: IInvocation](x: Self) {
     
-    @scala.inline
-    def setCaller(value: Double): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+    inline def setCaller(value: Double): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+    inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
-    @scala.inline
-    def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+    inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: (/* args */ js.Array[js.Any], /* kwargs */ js.Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* args */ js.Array[js.Any], /* kwargs */ js.Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

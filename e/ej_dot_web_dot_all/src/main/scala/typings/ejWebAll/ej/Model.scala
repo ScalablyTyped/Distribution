@@ -36,8 +36,7 @@ trait Model extends StObject {
 }
 object Model {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindTo: js.Any => Unit,
     changeState: (Boolean, js.Any) => Unit,
     computes: js.Any => Unit,
@@ -57,52 +56,36 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+  extension [Self <: Model](x: Self) {
     
-    @scala.inline
-    def setBindTo(value: js.Any => Unit): Self = StObject.set(x, "bindTo", js.Any.fromFunction1(value))
+    inline def setBindTo(value: js.Any => Unit): Self = StObject.set(x, "bindTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeState(value: (Boolean, js.Any) => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction2(value))
+    inline def setChangeState(value: (Boolean, js.Any) => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComputes(value: js.Any => Unit): Self = StObject.set(x, "computes", js.Any.fromFunction1(value))
+    inline def setComputes(value: js.Any => Unit): Self = StObject.set(x, "computes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormElements(value: js.Array[String]): Self = StObject.set(x, "formElements", value.asInstanceOf[js.Any])
+    inline def setFormElements(value: js.Array[String]): Self = StObject.set(x, "formElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormElementsVarargs(value: String*): Self = StObject.set(x, "formElements", js.Array(value :_*))
+    inline def setFormElementsVarargs(value: String*): Self = StObject.set(x, "formElements", js.Array(value :_*))
     
-    @scala.inline
-    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMarkCommit(value: () => Unit): Self = StObject.set(x, "markCommit", js.Any.fromFunction0(value))
+    inline def setMarkCommit(value: () => Unit): Self = StObject.set(x, "markCommit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkDelete(value: () => Unit): Self = StObject.set(x, "markDelete", js.Any.fromFunction0(value))
+    inline def setMarkDelete(value: () => Unit): Self = StObject.set(x, "markDelete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOff(value: (String, js.Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, js.Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Any) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Any) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProperties(value: () => js.Any): Self = StObject.set(x, "properties", js.Any.fromFunction0(value))
+    inline def setProperties(value: () => js.Any): Self = StObject.set(x, "properties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRevert(value: js.Any => Unit): Self = StObject.set(x, "revert", js.Any.fromFunction1(value))
+    inline def setRevert(value: js.Any => Unit): Self = StObject.set(x, "revert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSave(value: (DataManager, String) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+    inline def setSave(value: (DataManager, String) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnbind(value: js.Any => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
+    inline def setUnbind(value: js.Any => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
   }
 }

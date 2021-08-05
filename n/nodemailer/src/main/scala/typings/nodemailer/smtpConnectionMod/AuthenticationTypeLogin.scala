@@ -17,19 +17,15 @@ trait AuthenticationTypeLogin
 }
 object AuthenticationTypeLogin {
   
-  @scala.inline
-  def apply(pass: String, user: String): AuthenticationTypeLogin = {
+  inline def apply(pass: String, user: String): AuthenticationTypeLogin = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationTypeLogin]
   }
   
-  @scala.inline
-  implicit class AuthenticationTypeLoginMutableBuilder[Self <: AuthenticationTypeLogin] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationTypeLogin](x: Self) {
     
-    @scala.inline
-    def setType(value: login__ | Login_ | LOGIN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: login__ | Login_ | LOGIN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

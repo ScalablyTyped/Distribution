@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Sequences")
 @js.native
-class Sequences protected ()
+/* private */ class Sequences ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Sequences

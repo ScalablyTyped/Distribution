@@ -23,55 +23,39 @@ trait CommentsOptions extends StObject {
 }
 object CommentsOptions {
   
-  @scala.inline
-  def apply(): CommentsOptions = {
+  inline def apply(): CommentsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentsOptions]
   }
   
-  @scala.inline
-  implicit class CommentsOptionsMutableBuilder[Self <: CommentsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommentsOptions](x: Self) {
     
-    @scala.inline
-    def setAttach(value: String): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
+    inline def setAttach(value: String): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachUndefined: Self = StObject.set(x, "attach", js.undefined)
+    inline def setAttachUndefined: Self = StObject.set(x, "attach", js.undefined)
     
-    @scala.inline
-    def setAutoPublish(value: NumericBoolean): Self = StObject.set(x, "autoPublish", value.asInstanceOf[js.Any])
+    inline def setAutoPublish(value: NumericBoolean): Self = StObject.set(x, "autoPublish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPublishUndefined: Self = StObject.set(x, "autoPublish", js.undefined)
+    inline def setAutoPublishUndefined: Self = StObject.set(x, "autoPublish", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNorealtime(value: NumericBoolean): Self = StObject.set(x, "norealtime", value.asInstanceOf[js.Any])
+    inline def setNorealtime(value: NumericBoolean): Self = StObject.set(x, "norealtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNorealtimeUndefined: Self = StObject.set(x, "norealtime", js.undefined)
+    inline def setNorealtimeUndefined: Self = StObject.set(x, "norealtime", js.undefined)
     
-    @scala.inline
-    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
+    inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
+    inline def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

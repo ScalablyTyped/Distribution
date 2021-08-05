@@ -53,76 +53,53 @@ trait GoogleCloudDatalabelingV1beta1EvaluationJob extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1EvaluationJob {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1EvaluationJob = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1EvaluationJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EvaluationJob]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EvaluationJobMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationJob] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationJob](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
-    @scala.inline
-    def setAttempts(value: js.Array[GoogleCloudDatalabelingV1beta1Attempt]): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: js.Array[GoogleCloudDatalabelingV1beta1Attempt]): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+    inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
-    @scala.inline
-    def setAttemptsVarargs(value: GoogleCloudDatalabelingV1beta1Attempt*): Self = StObject.set(x, "attempts", js.Array(value :_*))
+    inline def setAttemptsVarargs(value: GoogleCloudDatalabelingV1beta1Attempt*): Self = StObject.set(x, "attempts", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEvaluationJobConfig(value: GoogleCloudDatalabelingV1beta1EvaluationJobConfig): Self = StObject.set(x, "evaluationJobConfig", value.asInstanceOf[js.Any])
+    inline def setEvaluationJobConfig(value: GoogleCloudDatalabelingV1beta1EvaluationJobConfig): Self = StObject.set(x, "evaluationJobConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationJobConfigUndefined: Self = StObject.set(x, "evaluationJobConfig", js.undefined)
+    inline def setEvaluationJobConfigUndefined: Self = StObject.set(x, "evaluationJobConfig", js.undefined)
     
-    @scala.inline
-    def setLabelMissingGroundTruth(value: Boolean): Self = StObject.set(x, "labelMissingGroundTruth", value.asInstanceOf[js.Any])
+    inline def setLabelMissingGroundTruth(value: Boolean): Self = StObject.set(x, "labelMissingGroundTruth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMissingGroundTruthUndefined: Self = StObject.set(x, "labelMissingGroundTruth", js.undefined)
+    inline def setLabelMissingGroundTruthUndefined: Self = StObject.set(x, "labelMissingGroundTruth", js.undefined)
     
-    @scala.inline
-    def setModelVersion(value: String): Self = StObject.set(x, "modelVersion", value.asInstanceOf[js.Any])
+    inline def setModelVersion(value: String): Self = StObject.set(x, "modelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionUndefined: Self = StObject.set(x, "modelVersion", js.undefined)
+    inline def setModelVersionUndefined: Self = StObject.set(x, "modelVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -18,33 +18,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server]
-  @scala.inline
-  def createServer(
+  inline def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createServer(
     requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
     serverListenCallback: js.Function0[js.Any]
   ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any])).asInstanceOf[Server]
-  @scala.inline
-  def createServer(
+  inline def createServer(
     requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
     serverListenCallback: js.Function0[js.Any],
     binaryMimeTypes: js.Array[String]
   ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any], binaryMimeTypes.asInstanceOf[js.Any])).asInstanceOf[Server]
-  @scala.inline
-  def createServer(
+  inline def createServer(
     requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
     serverListenCallback: Unit,
     binaryMimeTypes: js.Array[String]
   ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any], binaryMimeTypes.asInstanceOf[js.Any])).asInstanceOf[Server]
   
-  @scala.inline
-  def proxy(server: Server, event: APIGatewayProxyEvent, context: Context): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Server]
+  inline def proxy(server: Server, event: APIGatewayProxyEvent, context: Context): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Server]
   
-  @scala.inline
-  def proxy_CALLBACK(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: CALLBACK): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
-  @scala.inline
-  def proxy_CALLBACK(
+  inline def proxy_CALLBACK(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: CALLBACK): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
+  inline def proxy_CALLBACK(
     server: Server,
     event: APIGatewayProxyEvent,
     context: Context,
@@ -52,11 +45,9 @@ object mod {
     callback: js.Function2[/* error */ js.Any, /* response */ Response, Unit]
   ): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
   
-  @scala.inline
-  def proxy_CONTEXTSUCCEED(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: CONTEXT_SUCCEED): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
+  inline def proxy_CONTEXTSUCCEED(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: CONTEXT_SUCCEED): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
   
-  @scala.inline
-  def proxy_PROMISE(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: PROMISE): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
+  inline def proxy_PROMISE(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: PROMISE): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
   
   trait ProxyResult extends StObject {
     
@@ -64,17 +55,14 @@ object mod {
   }
   object ProxyResult {
     
-    @scala.inline
-    def apply(promise: js.Promise[Response]): ProxyResult = {
+    inline def apply(promise: js.Promise[Response]): ProxyResult = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyResult]
     }
     
-    @scala.inline
-    implicit class ProxyResultMutableBuilder[Self <: ProxyResult] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyResult](x: Self) {
       
-      @scala.inline
-      def setPromise(value: js.Promise[Response]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[Response]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,20 +74,16 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(body: String, statusCode: Double): Response = {
+    inline def apply(body: String, statusCode: Double): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

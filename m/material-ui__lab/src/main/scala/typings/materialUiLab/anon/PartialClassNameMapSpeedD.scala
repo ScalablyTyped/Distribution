@@ -21,49 +21,35 @@ trait PartialClassNameMapSpeedD extends StObject {
 }
 object PartialClassNameMapSpeedD {
   
-  @scala.inline
-  def apply(): PartialClassNameMapSpeedD = {
+  inline def apply(): PartialClassNameMapSpeedD = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapSpeedD]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapSpeedDMutableBuilder[Self <: PartialClassNameMapSpeedD] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapSpeedD](x: Self) {
     
-    @scala.inline
-    def setFab(value: String): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
+    inline def setFab(value: String): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabClosed(value: String): Self = StObject.set(x, "fabClosed", value.asInstanceOf[js.Any])
+    inline def setFabClosed(value: String): Self = StObject.set(x, "fabClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabClosedUndefined: Self = StObject.set(x, "fabClosed", js.undefined)
+    inline def setFabClosedUndefined: Self = StObject.set(x, "fabClosed", js.undefined)
     
-    @scala.inline
-    def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
+    inline def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
     
-    @scala.inline
-    def setStaticTooltip(value: String): Self = StObject.set(x, "staticTooltip", value.asInstanceOf[js.Any])
+    inline def setStaticTooltip(value: String): Self = StObject.set(x, "staticTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticTooltipClosed(value: String): Self = StObject.set(x, "staticTooltipClosed", value.asInstanceOf[js.Any])
+    inline def setStaticTooltipClosed(value: String): Self = StObject.set(x, "staticTooltipClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticTooltipClosedUndefined: Self = StObject.set(x, "staticTooltipClosed", js.undefined)
+    inline def setStaticTooltipClosedUndefined: Self = StObject.set(x, "staticTooltipClosed", js.undefined)
     
-    @scala.inline
-    def setStaticTooltipLabel(value: String): Self = StObject.set(x, "staticTooltipLabel", value.asInstanceOf[js.Any])
+    inline def setStaticTooltipLabel(value: String): Self = StObject.set(x, "staticTooltipLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticTooltipLabelUndefined: Self = StObject.set(x, "staticTooltipLabel", js.undefined)
+    inline def setStaticTooltipLabelUndefined: Self = StObject.set(x, "staticTooltipLabel", js.undefined)
     
-    @scala.inline
-    def setStaticTooltipUndefined: Self = StObject.set(x, "staticTooltip", js.undefined)
+    inline def setStaticTooltipUndefined: Self = StObject.set(x, "staticTooltip", js.undefined)
     
-    @scala.inline
-    def setTooltipPlacementLeft(value: String): Self = StObject.set(x, "tooltipPlacementLeft", value.asInstanceOf[js.Any])
+    inline def setTooltipPlacementLeft(value: String): Self = StObject.set(x, "tooltipPlacementLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPlacementLeftUndefined: Self = StObject.set(x, "tooltipPlacementLeft", js.undefined)
+    inline def setTooltipPlacementLeftUndefined: Self = StObject.set(x, "tooltipPlacementLeft", js.undefined)
   }
 }

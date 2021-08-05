@@ -12,11 +12,11 @@ object requestFactoryMod {
   @js.native
   class RequestFactory () extends StObject {
     
-    var _rejects: js.Any = js.native
+    /* private */ var _rejects: js.Any = js.native
     
-    var _resolves: js.Any = js.native
+    /* private */ var _resolves: js.Any = js.native
     
-    var _timeouts: js.Any = js.native
+    /* private */ var _timeouts: js.Any = js.native
     
     /**
       * Add a function which will be invoked for every request that is rejected.

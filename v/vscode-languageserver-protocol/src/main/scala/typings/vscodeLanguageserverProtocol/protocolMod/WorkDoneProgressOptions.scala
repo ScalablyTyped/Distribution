@@ -10,8 +10,7 @@ trait WorkDoneProgressOptions extends StObject {
 }
 object WorkDoneProgressOptions {
   
-  @scala.inline
-  def apply(): WorkDoneProgressOptions = {
+  inline def apply(): WorkDoneProgressOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkDoneProgressOptions]
   }
@@ -20,19 +19,14 @@ object WorkDoneProgressOptions {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasWorkDoneProgress(value: js.Any): /* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWorkDoneProgress")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean]
+  inline def hasWorkDoneProgress(value: js.Any): /* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWorkDoneProgress")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean]
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean]
   
-  @scala.inline
-  implicit class WorkDoneProgressOptionsMutableBuilder[Self <: WorkDoneProgressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkDoneProgressOptions](x: Self) {
     
-    @scala.inline
-    def setWorkDoneProgress(value: Boolean): Self = StObject.set(x, "workDoneProgress", value.asInstanceOf[js.Any])
+    inline def setWorkDoneProgress(value: Boolean): Self = StObject.set(x, "workDoneProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkDoneProgressUndefined: Self = StObject.set(x, "workDoneProgress", js.undefined)
+    inline def setWorkDoneProgressUndefined: Self = StObject.set(x, "workDoneProgress", js.undefined)
   }
 }

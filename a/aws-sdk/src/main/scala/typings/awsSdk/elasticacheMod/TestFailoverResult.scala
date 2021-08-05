@@ -10,19 +10,15 @@ trait TestFailoverResult extends StObject {
 }
 object TestFailoverResult {
   
-  @scala.inline
-  def apply(): TestFailoverResult = {
+  inline def apply(): TestFailoverResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestFailoverResult]
   }
   
-  @scala.inline
-  implicit class TestFailoverResultMutableBuilder[Self <: TestFailoverResult] (val x: Self) extends AnyVal {
+  extension [Self <: TestFailoverResult](x: Self) {
     
-    @scala.inline
-    def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+    inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
   }
 }

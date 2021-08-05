@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpSlideShowType extends StObject
 object PpSlideShowType {
   
-  @scala.inline
-  def ppShowTypeKiosk: `3` = 3.asInstanceOf[`3`]
+  inline def ppShowTypeKiosk: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppShowTypeSpeaker: `1` = 1.asInstanceOf[`1`]
+  inline def ppShowTypeSpeaker: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppShowTypeWindow: `2` = 2.asInstanceOf[`2`]
+  inline def ppShowTypeWindow: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppShowTypeWindow2: `4` = 4.asInstanceOf[`4`]
+  inline def ppShowTypeWindow2: `4` = 4.asInstanceOf[`4`]
 }

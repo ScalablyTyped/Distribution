@@ -361,558 +361,373 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuiltinCommand extends StObject
 object BuiltinCommand {
   
-  @scala.inline
-  def ALL: `268435455` = 268435455.asInstanceOf[`268435455`]
+  inline def ALL: `268435455` = 268435455.asInstanceOf[`268435455`]
   
-  @scala.inline
-  def AboutMFiles: `162` = 162.asInstanceOf[`162`]
+  inline def AboutMFiles: `162` = 162.asInstanceOf[`162`]
   
-  @scala.inline
-  def AddCollectionMember: `95` = 95.asInstanceOf[`95`]
+  inline def AddCollectionMember: `95` = 95.asInstanceOf[`95`]
   
-  @scala.inline
-  def AddDashboardToViewLocBottom: `69` = 69.asInstanceOf[`69`]
+  inline def AddDashboardToViewLocBottom: `69` = 69.asInstanceOf[`69`]
   
-  @scala.inline
-  def AddDashboardToViewLocMain: `67` = 67.asInstanceOf[`67`]
+  inline def AddDashboardToViewLocMain: `67` = 67.asInstanceOf[`67`]
   
-  @scala.inline
-  def AddDashboardToViewLocRight: `68` = 68.asInstanceOf[`68`]
+  inline def AddDashboardToViewLocRight: `68` = 68.asInstanceOf[`68`]
   
-  @scala.inline
-  def AddDocumentFromScanner: `43` = 43.asInstanceOf[`43`]
+  inline def AddDocumentFromScanner: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def AddFileFromScanner: `44` = 44.asInstanceOf[`44`]
+  inline def AddFileFromScanner: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def AddGroupingLevel: `116` = 116.asInstanceOf[`116`]
+  inline def AddGroupingLevel: `116` = 116.asInstanceOf[`116`]
   
-  @scala.inline
-  def AddRelationship: `98` = 98.asInstanceOf[`98`]
+  inline def AddRelationship: `98` = 98.asInstanceOf[`98`]
   
-  @scala.inline
-  def AddReportToViewLocBottom: `69` = 69.asInstanceOf[`69`]
+  inline def AddReportToViewLocBottom: `69` = 69.asInstanceOf[`69`]
   
-  @scala.inline
-  def AddReportToViewLocMain: `67` = 67.asInstanceOf[`67`]
+  inline def AddReportToViewLocMain: `67` = 67.asInstanceOf[`67`]
   
-  @scala.inline
-  def AddReportToViewLocRight: `68` = 68.asInstanceOf[`68`]
+  inline def AddReportToViewLocRight: `68` = 68.asInstanceOf[`68`]
   
-  @scala.inline
-  def AddShortcutToTaskPane: `66` = 66.asInstanceOf[`66`]
+  inline def AddShortcutToTaskPane: `66` = 66.asInstanceOf[`66`]
   
-  @scala.inline
-  def AddToFavorites: `62` = 62.asInstanceOf[`62`]
+  inline def AddToFavorites: `62` = 62.asInstanceOf[`62`]
   
-  @scala.inline
-  def Applications: `136` = 136.asInstanceOf[`136`]
+  inline def Applications: `136` = 136.asInstanceOf[`136`]
   
-  @scala.inline
-  def ApproveAssignment: `165` = 165.asInstanceOf[`165`]
+  inline def ApproveAssignment: `165` = 165.asInstanceOf[`165`]
   
-  @scala.inline
-  def BeginCoauthoring: `130` = 130.asInstanceOf[`130`]
+  inline def BeginCoauthoring: `130` = 130.asInstanceOf[`130`]
   
-  @scala.inline
-  def BottomPane_Minimized: `152` = 152.asInstanceOf[`152`]
+  inline def BottomPane_Minimized: `152` = 152.asInstanceOf[`152`]
   
-  @scala.inline
-  def BottomPane_Normal: `151` = 151.asInstanceOf[`151`]
+  inline def BottomPane_Normal: `151` = 151.asInstanceOf[`151`]
   
-  @scala.inline
-  def BottomPane_Off: `153` = 153.asInstanceOf[`153`]
+  inline def BottomPane_Off: `153` = 153.asInstanceOf[`153`]
   
-  @scala.inline
-  def BrowseInThisWindow: `120` = 120.asInstanceOf[`120`]
+  inline def BrowseInThisWindow: `120` = 120.asInstanceOf[`120`]
   
-  @scala.inline
-  def ChangeLanguage: `42` = 42.asInstanceOf[`42`]
+  inline def ChangeLanguage: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def ChangePassword: `41` = 41.asInstanceOf[`41`]
+  inline def ChangePassword: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def ChangeState: `26` = 26.asInstanceOf[`26`]
+  inline def ChangeState: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def ChangeStateAdmin: `167` = 167.asInstanceOf[`167`]
+  inline def ChangeStateAdmin: `167` = 167.asInstanceOf[`167`]
   
-  @scala.inline
-  def ChangeViewMode: `106` = 106.asInstanceOf[`106`]
+  inline def ChangeViewMode: `106` = 106.asInstanceOf[`106`]
   
-  @scala.inline
-  def CheckIn: `11` = 11.asInstanceOf[`11`]
+  inline def CheckIn: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def CheckInWithComments: `12` = 12.asInstanceOf[`12`]
+  inline def CheckInWithComments: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def CheckOut: `10` = 10.asInstanceOf[`10`]
+  inline def CheckOut: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def CheckOutForCoauthoring: `129` = 129.asInstanceOf[`129`]
+  inline def CheckOutForCoauthoring: `129` = 129.asInstanceOf[`129`]
   
-  @scala.inline
-  def ChooseColumns: `83` = 83.asInstanceOf[`83`]
+  inline def ChooseColumns: `83` = 83.asInstanceOf[`83`]
   
-  @scala.inline
-  def CleanView: `58` = 58.asInstanceOf[`58`]
+  inline def CleanView: `58` = 58.asInstanceOf[`58`]
   
-  @scala.inline
-  def ClearArchiveMarker: `29` = 29.asInstanceOf[`29`]
+  inline def ClearArchiveMarker: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def ClearLocalCache: `40` = 40.asInstanceOf[`40`]
+  inline def ClearLocalCache: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def ClientSettings: `37` = 37.asInstanceOf[`37`]
+  inline def ClientSettings: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def CompleteAssignment: `25` = 25.asInstanceOf[`25`]
+  inline def CompleteAssignment: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def ConvertToDocument: `6` = 6.asInstanceOf[`6`]
+  inline def ConvertToDocument: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ConvertToDocumentFiles: `7` = 7.asInstanceOf[`7`]
+  inline def ConvertToDocumentFiles: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ConvertToMultiFilePDF: `82` = 82.asInstanceOf[`82`]
+  inline def ConvertToMultiFilePDF: `82` = 82.asInstanceOf[`82`]
   
-  @scala.inline
-  def ConvertToOneMultiFileDocument: `32` = 32.asInstanceOf[`32`]
+  inline def ConvertToOneMultiFileDocument: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def ConvertToSearchablePDF: `46` = 46.asInstanceOf[`46`]
+  inline def ConvertToSearchablePDF: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def ConvertToSingleFileDocument: `31` = 31.asInstanceOf[`31`]
+  inline def ConvertToSingleFileDocument: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def ConvertToSingleFilePDF: `81` = 81.asInstanceOf[`81`]
+  inline def ConvertToSingleFilePDF: `81` = 81.asInstanceOf[`81`]
   
-  @scala.inline
-  def Copy: `73` = 73.asInstanceOf[`73`]
+  inline def Copy: `73` = 73.asInstanceOf[`73`]
   
-  @scala.inline
-  def CreateOrGetShortcut: `64` = 64.asInstanceOf[`64`]
+  inline def CreateOrGetShortcut: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def CreateShortcut: `65` = 65.asInstanceOf[`65`]
+  inline def CreateShortcut: `65` = 65.asInstanceOf[`65`]
   
-  @scala.inline
-  def CurrentGroupingLevel: `117` = 117.asInstanceOf[`117`]
+  inline def CurrentGroupingLevel: `117` = 117.asInstanceOf[`117`]
   
-  @scala.inline
-  def CustomizePropertyFolder: `144` = 144.asInstanceOf[`144`]
+  inline def CustomizePropertyFolder: `144` = 144.asInstanceOf[`144`]
   
-  @scala.inline
-  def Cut: `74` = 74.asInstanceOf[`74`]
+  inline def Cut: `74` = 74.asInstanceOf[`74`]
   
-  @scala.inline
-  def Delete: `76` = 76.asInstanceOf[`76`]
+  inline def Delete: `76` = 76.asInstanceOf[`76`]
   
-  @scala.inline
-  def DeleteAll: `90` = 90.asInstanceOf[`90`]
+  inline def DeleteAll: `90` = 90.asInstanceOf[`90`]
   
-  @scala.inline
-  def Destroy: `91` = 91.asInstanceOf[`91`]
+  inline def Destroy: `91` = 91.asInstanceOf[`91`]
   
-  @scala.inline
-  def DiscardFileModifications: `171` = 171.asInstanceOf[`171`]
+  inline def DiscardFileModifications: `171` = 171.asInstanceOf[`171`]
   
-  @scala.inline
-  def EditCollectionMembership: `96` = 96.asInstanceOf[`96`]
+  inline def EditCollectionMembership: `96` = 96.asInstanceOf[`96`]
   
-  @scala.inline
-  def EditOneAnnotation: `159` = 159.asInstanceOf[`159`]
+  inline def EditOneAnnotation: `159` = 159.asInstanceOf[`159`]
   
-  @scala.inline
-  def EditRelationship: `99` = 99.asInstanceOf[`99`]
+  inline def EditRelationship: `99` = 99.asInstanceOf[`99`]
   
-  @scala.inline
-  def EndCoauthoring: `131` = 131.asInstanceOf[`131`]
+  inline def EndCoauthoring: `131` = 131.asInstanceOf[`131`]
   
-  @scala.inline
-  def ExportObjects: `79` = 79.asInstanceOf[`79`]
+  inline def ExportObjects: `79` = 79.asInstanceOf[`79`]
   
-  @scala.inline
-  def ExportSearchBarConditions: `80` = 80.asInstanceOf[`80`]
+  inline def ExportSearchBarConditions: `80` = 80.asInstanceOf[`80`]
   
-  @scala.inline
-  def FIRST: `1` = 1.asInstanceOf[`1`]
+  inline def FIRST: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def GoOffline: `35` = 35.asInstanceOf[`35`]
+  inline def GoOffline: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def GoOnline: `34` = 34.asInstanceOf[`34`]
+  inline def GoOnline: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def GoToCustomView: `124` = 124.asInstanceOf[`124`]
+  inline def GoToCustomView: `124` = 124.asInstanceOf[`124`]
   
-  @scala.inline
-  def GroupBy: `121` = 121.asInstanceOf[`121`]
+  inline def GroupBy: `121` = 121.asInstanceOf[`121`]
   
-  @scala.inline
-  def GroupFoldersBy: `122` = 122.asInstanceOf[`122`]
+  inline def GroupFoldersBy: `122` = 122.asInstanceOf[`122`]
   
-  @scala.inline
-  def GroupFoldersByFirstLetters: `115` = 115.asInstanceOf[`115`]
+  inline def GroupFoldersByFirstLetters: `115` = 115.asInstanceOf[`115`]
   
-  @scala.inline
-  def GroupObjectsByFirstLetters: `114` = 114.asInstanceOf[`114`]
+  inline def GroupObjectsByFirstLetters: `114` = 114.asInstanceOf[`114`]
   
-  @scala.inline
-  def GroupObjectsByObjectType: `54` = 54.asInstanceOf[`54`]
+  inline def GroupObjectsByObjectType: `54` = 54.asInstanceOf[`54`]
   
-  @scala.inline
-  def GroupViewsAndFolders: `55` = 55.asInstanceOf[`55`]
+  inline def GroupViewsAndFolders: `55` = 55.asInstanceOf[`55`]
   
-  @scala.inline
-  def HideAllVisualAnnotations: `158` = 158.asInstanceOf[`158`]
+  inline def HideAllVisualAnnotations: `158` = 158.asInstanceOf[`158`]
   
-  @scala.inline
-  def HideOrShowEmptyFolders: `119` = 119.asInstanceOf[`119`]
+  inline def HideOrShowEmptyFolders: `119` = 119.asInstanceOf[`119`]
   
-  @scala.inline
-  def HideView: `56` = 56.asInstanceOf[`56`]
+  inline def HideView: `56` = 56.asInstanceOf[`56`]
   
-  @scala.inline
-  def HitHighlighting: `128` = 128.asInstanceOf[`128`]
+  inline def HitHighlighting: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def ImportFilesAndFolders: `8` = 8.asInstanceOf[`8`]
+  inline def ImportFilesAndFolders: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def InvertSelection: `86` = 86.asInstanceOf[`86`]
+  inline def InvertSelection: `86` = 86.asInstanceOf[`86`]
   
-  @scala.inline
-  def LAST: `174` = 174.asInstanceOf[`174`]
+  inline def LAST: `174` = 174.asInstanceOf[`174`]
   
-  @scala.inline
-  def LabelThisVersion: `93` = 93.asInstanceOf[`93`]
+  inline def LabelThisVersion: `93` = 93.asInstanceOf[`93`]
   
-  @scala.inline
-  def LogOut: `36` = 36.asInstanceOf[`36`]
+  inline def LogOut: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def MFilesGuidedTour: `142` = 142.asInstanceOf[`142`]
+  inline def MFilesGuidedTour: `142` = 142.asInstanceOf[`142`]
   
-  @scala.inline
-  def MFilesHelp: `141` = 141.asInstanceOf[`141`]
+  inline def MFilesHelp: `141` = 141.asInstanceOf[`141`]
   
-  @scala.inline
-  def MakeCopy: `9` = 9.asInstanceOf[`9`]
+  inline def MakeCopy: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def MarkApproved: `163` = 163.asInstanceOf[`163`]
+  inline def MarkApproved: `163` = 163.asInstanceOf[`163`]
   
-  @scala.inline
-  def MarkComplete: `123` = 123.asInstanceOf[`123`]
+  inline def MarkComplete: `123` = 123.asInstanceOf[`123`]
   
-  @scala.inline
-  def MarkFolderForOfflineAvailability: `15` = 15.asInstanceOf[`15`]
+  inline def MarkFolderForOfflineAvailability: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def MarkForArchiving: `28` = 28.asInstanceOf[`28`]
+  inline def MarkForArchiving: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def MarkForOfflineAvailability: `16` = 16.asInstanceOf[`16`]
+  inline def MarkForOfflineAvailability: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def MarkRejected: `164` = 164.asInstanceOf[`164`]
+  inline def MarkRejected: `164` = 164.asInstanceOf[`164`]
   
-  @scala.inline
-  def ModifyVersionDetails: `92` = 92.asInstanceOf[`92`]
+  inline def ModifyVersionDetails: `92` = 92.asInstanceOf[`92`]
   
-  @scala.inline
-  def NavigationPane_Off: `155` = 155.asInstanceOf[`155`]
+  inline def NavigationPane_Off: `155` = 155.asInstanceOf[`155`]
   
-  @scala.inline
-  def NavigationPane_On: `154` = 154.asInstanceOf[`154`]
+  inline def NavigationPane_On: `154` = 154.asInstanceOf[`154`]
   
-  @scala.inline
-  def NewAnnotation: `161` = 161.asInstanceOf[`161`]
+  inline def NewAnnotation: `161` = 161.asInstanceOf[`161`]
   
-  @scala.inline
-  def NewAssignment: `23` = 23.asInstanceOf[`23`]
+  inline def NewAssignment: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def NewObject: `87` = 87.asInstanceOf[`87`]
+  inline def NewObject: `87` = 87.asInstanceOf[`87`]
   
-  @scala.inline
-  def NewOfflineFilter: `3` = 3.asInstanceOf[`3`]
+  inline def NewOfflineFilter: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def NewPropertyFolder: `5` = 5.asInstanceOf[`5`]
+  inline def NewPropertyFolder: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def NewSubobject: `94` = 94.asInstanceOf[`94`]
+  inline def NewSubobject: `94` = 94.asInstanceOf[`94`]
   
-  @scala.inline
-  def NewTraditionalFolder: `4` = 4.asInstanceOf[`4`]
+  inline def NewTraditionalFolder: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def NewView: `2` = 2.asInstanceOf[`2`]
+  inline def NewView: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def NewWindow: `78` = 78.asInstanceOf[`78`]
+  inline def NewWindow: `78` = 78.asInstanceOf[`78`]
   
-  @scala.inline
-  def NotificationSettings: `39` = 39.asInstanceOf[`39`]
+  inline def NotificationSettings: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def Paste: `75` = 75.asInstanceOf[`75`]
+  inline def Paste: `75` = 75.asInstanceOf[`75`]
   
-  @scala.inline
-  def PasteAsMultiFileDocument: `84` = 84.asInstanceOf[`84`]
+  inline def PasteAsMultiFileDocument: `84` = 84.asInstanceOf[`84`]
   
-  @scala.inline
-  def Properties: `14` = 14.asInstanceOf[`14`]
+  inline def Properties: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def Refresh: `88` = 88.asInstanceOf[`88`]
+  inline def Refresh: `88` = 88.asInstanceOf[`88`]
   
-  @scala.inline
-  def RejectAssignment: `166` = 166.asInstanceOf[`166`]
+  inline def RejectAssignment: `166` = 166.asInstanceOf[`166`]
   
-  @scala.inline
-  def RemoveCollectionMembership: `97` = 97.asInstanceOf[`97`]
+  inline def RemoveCollectionMembership: `97` = 97.asInstanceOf[`97`]
   
-  @scala.inline
-  def RemoveCurrentGroupingLevel: `118` = 118.asInstanceOf[`118`]
+  inline def RemoveCurrentGroupingLevel: `118` = 118.asInstanceOf[`118`]
   
-  @scala.inline
-  def RemoveDashboardFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
+  inline def RemoveDashboardFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
   
-  @scala.inline
-  def RemoveDashboardFromViewLocMain: `70` = 70.asInstanceOf[`70`]
+  inline def RemoveDashboardFromViewLocMain: `70` = 70.asInstanceOf[`70`]
   
-  @scala.inline
-  def RemoveDashboardFromViewLocRight: `71` = 71.asInstanceOf[`71`]
+  inline def RemoveDashboardFromViewLocRight: `71` = 71.asInstanceOf[`71`]
   
-  @scala.inline
-  def RemoveFromFavorites: `63` = 63.asInstanceOf[`63`]
+  inline def RemoveFromFavorites: `63` = 63.asInstanceOf[`63`]
   
-  @scala.inline
-  def RemoveOfflineAvailability: `17` = 17.asInstanceOf[`17`]
+  inline def RemoveOfflineAvailability: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def RemoveRelationship: `100` = 100.asInstanceOf[`100`]
+  inline def RemoveRelationship: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def RemoveReportFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
+  inline def RemoveReportFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
   
-  @scala.inline
-  def RemoveReportFromViewLocMain: `70` = 70.asInstanceOf[`70`]
+  inline def RemoveReportFromViewLocMain: `70` = 70.asInstanceOf[`70`]
   
-  @scala.inline
-  def RemoveReportFromViewLocRight: `71` = 71.asInstanceOf[`71`]
+  inline def RemoveReportFromViewLocRight: `71` = 71.asInstanceOf[`71`]
   
-  @scala.inline
-  def Rename: `77` = 77.asInstanceOf[`77`]
+  inline def Rename: `77` = 77.asInstanceOf[`77`]
   
-  @scala.inline
-  def ReplaceWithFile: `33` = 33.asInstanceOf[`33`]
+  inline def ReplaceWithFile: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def ReplaceWithFileFromScanner: `45` = 45.asInstanceOf[`45`]
+  inline def ReplaceWithFileFromScanner: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def ResetUISettingsToDefaults: `60` = 60.asInstanceOf[`60`]
+  inline def ResetUISettingsToDefaults: `60` = 60.asInstanceOf[`60`]
   
-  @scala.inline
-  def ResolveConflictDiscardThis: `135` = 135.asInstanceOf[`135`]
+  inline def ResolveConflictDiscardThis: `135` = 135.asInstanceOf[`135`]
   
-  @scala.inline
-  def ResolveConflictKeepThis: `134` = 134.asInstanceOf[`134`]
+  inline def ResolveConflictKeepThis: `134` = 134.asInstanceOf[`134`]
   
-  @scala.inline
-  def RightPane_Minimized: `149` = 149.asInstanceOf[`149`]
+  inline def RightPane_Minimized: `149` = 149.asInstanceOf[`149`]
   
-  @scala.inline
-  def RightPane_Normal: `148` = 148.asInstanceOf[`148`]
+  inline def RightPane_Normal: `148` = 148.asInstanceOf[`148`]
   
-  @scala.inline
-  def RightPane_Off: `150` = 150.asInstanceOf[`150`]
+  inline def RightPane_Off: `150` = 150.asInstanceOf[`150`]
   
-  @scala.inline
-  def RollBack: `89` = 89.asInstanceOf[`89`]
+  inline def RollBack: `89` = 89.asInstanceOf[`89`]
   
-  @scala.inline
-  def SaveAnnotation: `160` = 160.asInstanceOf[`160`]
+  inline def SaveAnnotation: `160` = 160.asInstanceOf[`160`]
   
-  @scala.inline
-  def SaveAsCommonUISettings: `61` = 61.asInstanceOf[`61`]
+  inline def SaveAsCommonUISettings: `61` = 61.asInstanceOf[`61`]
   
-  @scala.inline
-  def SaveAsPDF: `50` = 50.asInstanceOf[`50`]
+  inline def SaveAsPDF: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def SelectAll: `85` = 85.asInstanceOf[`85`]
+  inline def SelectAll: `85` = 85.asInstanceOf[`85`]
   
-  @scala.inline
-  def SendCoauthoringLink: `133` = 133.asInstanceOf[`133`]
+  inline def SendCoauthoringLink: `133` = 133.asInstanceOf[`133`]
   
-  @scala.inline
-  def SendCopyByEmail: `48` = 48.asInstanceOf[`48`]
+  inline def SendCopyByEmail: `48` = 48.asInstanceOf[`48`]
   
-  @scala.inline
-  def SendLinkByEmail: `47` = 47.asInstanceOf[`47`]
+  inline def SendLinkByEmail: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def SendPDFByEmail: `49` = 49.asInstanceOf[`49`]
+  inline def SendPDFByEmail: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def ServerAdmin: `38` = 38.asInstanceOf[`38`]
+  inline def ServerAdmin: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def SharePublicLink: `168` = 168.asInstanceOf[`168`]
+  inline def SharePublicLink: `168` = 168.asInstanceOf[`168`]
   
-  @scala.inline
-  def ShareViaSkyDrive: `137` = 137.asInstanceOf[`137`]
+  inline def ShareViaSkyDrive: `137` = 137.asInstanceOf[`137`]
   
-  @scala.inline
-  def ShareViaSkyDriveAsPDF: `138` = 138.asInstanceOf[`138`]
+  inline def ShareViaSkyDriveAsPDF: `138` = 138.asInstanceOf[`138`]
   
-  @scala.inline
-  def SharedByMe: `169` = 169.asInstanceOf[`169`]
+  inline def SharedByMe: `169` = 169.asInstanceOf[`169`]
   
-  @scala.inline
-  def ShowAllVisualAnnotations: `157` = 157.asInstanceOf[`157`]
+  inline def ShowAllVisualAnnotations: `157` = 157.asInstanceOf[`157`]
   
-  @scala.inline
-  def ShowAssignments: `24` = 24.asInstanceOf[`24`]
+  inline def ShowAssignments: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def ShowBottomPane: `52` = 52.asInstanceOf[`52`]
+  inline def ShowBottomPane: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def ShowCollectionMembers: `20` = 20.asInstanceOf[`20`]
+  inline def ShowCollectionMembers: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def ShowComments: `22` = 22.asInstanceOf[`22`]
+  inline def ShowComments: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def ShowHistory: `18` = 18.asInstanceOf[`18`]
+  inline def ShowHistory: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def ShowMetadataInBottomPane: `140` = 140.asInstanceOf[`140`]
+  inline def ShowMetadataInBottomPane: `140` = 140.asInstanceOf[`140`]
   
-  @scala.inline
-  def ShowMetadataInRightPane: `139` = 139.asInstanceOf[`139`]
+  inline def ShowMetadataInRightPane: `139` = 139.asInstanceOf[`139`]
   
-  @scala.inline
-  def ShowNavigationPane: `143` = 143.asInstanceOf[`143`]
+  inline def ShowNavigationPane: `143` = 143.asInstanceOf[`143`]
   
-  @scala.inline
-  def ShowOriginalObject: `132` = 132.asInstanceOf[`132`]
+  inline def ShowOriginalObject: `132` = 132.asInstanceOf[`132`]
   
-  @scala.inline
-  def ShowPreviewPane: `53` = 53.asInstanceOf[`53`]
+  inline def ShowPreviewPane: `53` = 53.asInstanceOf[`53`]
   
-  @scala.inline
-  def ShowPropertiesPane: `52` = 52.asInstanceOf[`52`]
+  inline def ShowPropertiesPane: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def ShowRelationships: `19` = 19.asInstanceOf[`19`]
+  inline def ShowRelationships: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def ShowRightPane: `53` = 53.asInstanceOf[`53`]
+  inline def ShowRightPane: `53` = 53.asInstanceOf[`53`]
   
-  @scala.inline
-  def ShowSearchRefinementOptions: `173` = 173.asInstanceOf[`173`]
+  inline def ShowSearchRefinementOptions: `173` = 173.asInstanceOf[`173`]
   
-  @scala.inline
-  def ShowSearchResultsFromMultipleVaults: `172` = 172.asInstanceOf[`172`]
+  inline def ShowSearchResultsFromMultipleVaults: `172` = 172.asInstanceOf[`172`]
   
-  @scala.inline
-  def ShowVisualAnnotations: `156` = 156.asInstanceOf[`156`]
+  inline def ShowVisualAnnotations: `156` = 156.asInstanceOf[`156`]
   
-  @scala.inline
-  def SubMenu_Archiving: `109` = 109.asInstanceOf[`109`]
+  inline def SubMenu_Archiving: `109` = 109.asInstanceOf[`109`]
   
-  @scala.inline
-  def SubMenu_BrowseRelatedObjects: `108` = 108.asInstanceOf[`108`]
+  inline def SubMenu_BrowseRelatedObjects: `108` = 108.asInstanceOf[`108`]
   
-  @scala.inline
-  def SubMenu_Dashboards: `113` = 113.asInstanceOf[`113`]
+  inline def SubMenu_Dashboards: `113` = 113.asInstanceOf[`113`]
   
-  @scala.inline
-  def SubMenu_DisplayMode: `105` = 105.asInstanceOf[`105`]
+  inline def SubMenu_DisplayMode: `105` = 105.asInstanceOf[`105`]
   
-  @scala.inline
-  def SubMenu_NewFile: `102` = 102.asInstanceOf[`102`]
+  inline def SubMenu_NewFile: `102` = 102.asInstanceOf[`102`]
   
-  @scala.inline
-  def SubMenu_NewObject: `101` = 101.asInstanceOf[`101`]
+  inline def SubMenu_NewObject: `101` = 101.asInstanceOf[`101`]
   
-  @scala.inline
-  def SubMenu_OfflineAvailability: `107` = 107.asInstanceOf[`107`]
+  inline def SubMenu_OfflineAvailability: `107` = 107.asInstanceOf[`107`]
   
-  @scala.inline
-  def SubMenu_RefreshExtObjects: `112` = 112.asInstanceOf[`112`]
+  inline def SubMenu_RefreshExtObjects: `112` = 112.asInstanceOf[`112`]
   
-  @scala.inline
-  def SubMenu_Reports: `113` = 113.asInstanceOf[`113`]
+  inline def SubMenu_Reports: `113` = 113.asInstanceOf[`113`]
   
-  @scala.inline
-  def SubMenu_ScanningAndOCR: `111` = 111.asInstanceOf[`111`]
+  inline def SubMenu_ScanningAndOCR: `111` = 111.asInstanceOf[`111`]
   
-  @scala.inline
-  def SubMenu_Send: `104` = 104.asInstanceOf[`104`]
+  inline def SubMenu_Send: `104` = 104.asInstanceOf[`104`]
   
-  @scala.inline
-  def SubMenu_WindowsCommands: `103` = 103.asInstanceOf[`103`]
+  inline def SubMenu_WindowsCommands: `103` = 103.asInstanceOf[`103`]
   
-  @scala.inline
-  def SubMenu_Workflow: `110` = 110.asInstanceOf[`110`]
+  inline def SubMenu_Workflow: `110` = 110.asInstanceOf[`110`]
   
-  @scala.inline
-  def Submenu_DocumentX: `127` = 127.asInstanceOf[`127`]
+  inline def Submenu_DocumentX: `127` = 127.asInstanceOf[`127`]
   
-  @scala.inline
-  def Submenu_VaultX: `125` = 125.asInstanceOf[`125`]
+  inline def Submenu_VaultX: `125` = 125.asInstanceOf[`125`]
   
-  @scala.inline
-  def Submenu_ViewX: `126` = 126.asInstanceOf[`126`]
+  inline def Submenu_ViewX: `126` = 126.asInstanceOf[`126`]
   
-  @scala.inline
-  def SubstituteUsers: `51` = 51.asInstanceOf[`51`]
+  inline def SubstituteUsers: `51` = 51.asInstanceOf[`51`]
   
-  @scala.inline
-  def UncustomizePropertyFolder: `145` = 145.asInstanceOf[`145`]
+  inline def UncustomizePropertyFolder: `145` = 145.asInstanceOf[`145`]
   
-  @scala.inline
-  def Undefined: `0` = 0.asInstanceOf[`0`]
+  inline def Undefined: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Undelete: `30` = 30.asInstanceOf[`30`]
+  inline def Undelete: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def UndoCheckOut: `13` = 13.asInstanceOf[`13`]
+  inline def UndoCheckOut: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def UnhideView: `57` = 57.asInstanceOf[`57`]
+  inline def UnhideView: `57` = 57.asInstanceOf[`57`]
   
-  @scala.inline
-  def UnhideViews: `59` = 59.asInstanceOf[`59`]
+  inline def UnhideViews: `59` = 59.asInstanceOf[`59`]
   
-  @scala.inline
-  def UploadFiles: `170` = 170.asInstanceOf[`170`]
+  inline def UploadFiles: `170` = 170.asInstanceOf[`170`]
   
-  @scala.inline
-  def UseCompactLayout: `147` = 147.asInstanceOf[`147`]
+  inline def UseCompactLayout: `147` = 147.asInstanceOf[`147`]
   
-  @scala.inline
-  def UseNormalLayout: `146` = 146.asInstanceOf[`146`]
+  inline def UseNormalLayout: `146` = 146.asInstanceOf[`146`]
   
-  @scala.inline
-  def ViewEditSubobjects: `21` = 21.asInstanceOf[`21`]
+  inline def ViewEditSubobjects: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def Workflow: `27` = 27.asInstanceOf[`27`]
+  inline def Workflow: `27` = 27.asInstanceOf[`27`]
 }

@@ -11,22 +11,17 @@ trait GetOffersResponse extends StObject {
 }
 object GetOffersResponse {
   
-  @scala.inline
-  def apply(): GetOffersResponse = {
+  inline def apply(): GetOffersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOffersResponse]
   }
   
-  @scala.inline
-  implicit class GetOffersResponseMutableBuilder[Self <: GetOffersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOffersResponse](x: Self) {
     
-    @scala.inline
-    def setProducts(value: js.Array[Product]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: js.Array[Product]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
   }
 }

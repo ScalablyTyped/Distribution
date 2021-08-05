@@ -14,22 +14,17 @@ trait GooglePrivacyDlpV2TableOptions extends StObject {
 }
 object GooglePrivacyDlpV2TableOptions {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2TableOptions = {
+  inline def apply(): GooglePrivacyDlpV2TableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2TableOptions]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2TableOptionsMutableBuilder[Self <: GooglePrivacyDlpV2TableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2TableOptions](x: Self) {
     
-    @scala.inline
-    def setIdentifyingFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
+    inline def setIdentifyingFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
+    inline def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
     
-    @scala.inline
-    def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
+    inline def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
   }
 }

@@ -13,20 +13,15 @@ object responsiveObserveMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dispatch(pointMap: ScreenMap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(pointMap.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def dispatch(pointMap: ScreenMap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(pointMap.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+    inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
     
-    @scala.inline
-    def subscribe(func: SubscribeFunc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def subscribe(func: SubscribeFunc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
+    inline def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
     
-    @scala.inline
-    def unsubscribe(token: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unsubscribe(token: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("antd/lib/_util/responsiveObserve", "responsiveArray")
@@ -48,23 +43,17 @@ object responsiveObserveMod {
   trait Breakpoint extends StObject
   object Breakpoint {
     
-    @scala.inline
-    def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
+    inline def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
     
-    @scala.inline
-    def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
+    inline def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
     
-    @scala.inline
-    def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
+    inline def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
     
-    @scala.inline
-    def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
+    inline def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
     
-    @scala.inline
-    def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
+    inline def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
     
-    @scala.inline
-    def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
+    inline def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
   }
   
   /* Inlined std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, string> */
@@ -84,32 +73,24 @@ object responsiveObserveMod {
   }
   object BreakpointMap {
     
-    @scala.inline
-    def apply(lg: String, md: String, sm: String, xl: String, xs: String, xxl: String): BreakpointMap = {
+    inline def apply(lg: String, md: String, sm: String, xl: String, xs: String, xxl: String): BreakpointMap = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any], xxl = xxl.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreakpointMap]
     }
     
-    @scala.inline
-    implicit class BreakpointMapMutableBuilder[Self <: BreakpointMap] (val x: Self) extends AnyVal {
+    extension [Self <: BreakpointMap](x: Self) {
       
-      @scala.inline
-      def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd(value: String): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: String): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSm(value: String): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: String): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXl(value: String): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: String): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXs(value: String): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: String): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxl(value: String): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      inline def setXxl(value: String): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,50 +111,36 @@ object responsiveObserveMod {
   }
   object ScreenMap {
     
-    @scala.inline
-    def apply(): ScreenMap = {
+    inline def apply(): ScreenMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenMap]
     }
     
-    @scala.inline
-    implicit class ScreenMapMutableBuilder[Self <: ScreenMap] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenMap](x: Self) {
       
-      @scala.inline
-      def setLg(value: Boolean): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: Boolean): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setMd(value: Boolean): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: Boolean): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
       
-      @scala.inline
-      def setSm(value: Boolean): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: Boolean): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      @scala.inline
-      def setXl(value: Boolean): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: Boolean): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
       
-      @scala.inline
-      def setXs(value: Boolean): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: Boolean): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
       
-      @scala.inline
-      def setXxl(value: Boolean): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      inline def setXxl(value: Boolean): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
   
@@ -196,50 +163,36 @@ object responsiveObserveMod {
   }
   object ScreenSizeMap {
     
-    @scala.inline
-    def apply(): ScreenSizeMap = {
+    inline def apply(): ScreenSizeMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenSizeMap]
     }
     
-    @scala.inline
-    implicit class ScreenSizeMapMutableBuilder[Self <: ScreenSizeMap] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenSizeMap](x: Self) {
       
-      @scala.inline
-      def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
       
-      @scala.inline
-      def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      @scala.inline
-      def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
       
-      @scala.inline
-      def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
       
-      @scala.inline
-      def setXxl(value: Double): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      inline def setXxl(value: Double): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
   

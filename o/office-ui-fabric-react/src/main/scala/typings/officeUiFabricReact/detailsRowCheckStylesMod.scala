@@ -16,6 +16,5 @@ object detailsRowCheckStylesMod {
   @js.native
   val CHECK_CELL_WIDTH: /* 48 */ Double = js.native
   
-  @scala.inline
-  def getStyles(props: IDetailsRowCheckStyleProps): IDetailsRowCheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowCheckStyles]
+  inline def getStyles(props: IDetailsRowCheckStyleProps): IDetailsRowCheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowCheckStyles]
 }

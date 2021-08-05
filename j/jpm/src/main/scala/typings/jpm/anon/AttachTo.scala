@@ -37,97 +37,67 @@ trait AttachTo extends StObject {
 }
 object AttachTo {
   
-  @scala.inline
-  def apply(include: String | (js.Array[RegExp | String]) | RegExp): AttachTo = {
+  inline def apply(include: String | (js.Array[RegExp | String]) | RegExp): AttachTo = {
     val __obj = js.Dynamic.literal(include = include.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachTo]
   }
   
-  @scala.inline
-  implicit class AttachToMutableBuilder[Self <: AttachTo] (val x: Self) extends AnyVal {
+  extension [Self <: AttachTo](x: Self) {
     
-    @scala.inline
-    def setAttachTo(value: attachmentMode | js.Array[attachmentMode]): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+    inline def setAttachTo(value: attachmentMode | js.Array[attachmentMode]): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
+    inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
     
-    @scala.inline
-    def setAttachToVarargs(value: attachmentMode*): Self = StObject.set(x, "attachTo", js.Array(value :_*))
+    inline def setAttachToVarargs(value: attachmentMode*): Self = StObject.set(x, "attachTo", js.Array(value :_*))
     
-    @scala.inline
-    def setContentScript(value: String | js.Array[String]): Self = StObject.set(x, "contentScript", value.asInstanceOf[js.Any])
+    inline def setContentScript(value: String | js.Array[String]): Self = StObject.set(x, "contentScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentScriptFile(value: String | js.Array[String]): Self = StObject.set(x, "contentScriptFile", value.asInstanceOf[js.Any])
+    inline def setContentScriptFile(value: String | js.Array[String]): Self = StObject.set(x, "contentScriptFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentScriptFileUndefined: Self = StObject.set(x, "contentScriptFile", js.undefined)
+    inline def setContentScriptFileUndefined: Self = StObject.set(x, "contentScriptFile", js.undefined)
     
-    @scala.inline
-    def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
+    inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
     
-    @scala.inline
-    def setContentScriptOptions(value: js.Any): Self = StObject.set(x, "contentScriptOptions", value.asInstanceOf[js.Any])
+    inline def setContentScriptOptions(value: js.Any): Self = StObject.set(x, "contentScriptOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentScriptOptionsUndefined: Self = StObject.set(x, "contentScriptOptions", js.undefined)
+    inline def setContentScriptOptionsUndefined: Self = StObject.set(x, "contentScriptOptions", js.undefined)
     
-    @scala.inline
-    def setContentScriptUndefined: Self = StObject.set(x, "contentScript", js.undefined)
+    inline def setContentScriptUndefined: Self = StObject.set(x, "contentScript", js.undefined)
     
-    @scala.inline
-    def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
+    inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
     
-    @scala.inline
-    def setContentScriptWhen(value: start | ready | end): Self = StObject.set(x, "contentScriptWhen", value.asInstanceOf[js.Any])
+    inline def setContentScriptWhen(value: start | ready | end): Self = StObject.set(x, "contentScriptWhen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentScriptWhenUndefined: Self = StObject.set(x, "contentScriptWhen", js.undefined)
+    inline def setContentScriptWhenUndefined: Self = StObject.set(x, "contentScriptWhen", js.undefined)
     
-    @scala.inline
-    def setContentStyle(value: String | js.Array[String]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setContentStyle(value: String | js.Array[String]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStyleFile(value: String | js.Array[String]): Self = StObject.set(x, "contentStyleFile", value.asInstanceOf[js.Any])
+    inline def setContentStyleFile(value: String | js.Array[String]): Self = StObject.set(x, "contentStyleFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStyleFileUndefined: Self = StObject.set(x, "contentStyleFile", js.undefined)
+    inline def setContentStyleFileUndefined: Self = StObject.set(x, "contentStyleFile", js.undefined)
     
-    @scala.inline
-    def setContentStyleFileVarargs(value: String*): Self = StObject.set(x, "contentStyleFile", js.Array(value :_*))
+    inline def setContentStyleFileVarargs(value: String*): Self = StObject.set(x, "contentStyleFile", js.Array(value :_*))
     
-    @scala.inline
-    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    @scala.inline
-    def setContentStyleVarargs(value: String*): Self = StObject.set(x, "contentStyle", js.Array(value :_*))
+    inline def setContentStyleVarargs(value: String*): Self = StObject.set(x, "contentStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: String | (js.Array[RegExp | String]) | RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: String | (js.Array[RegExp | String]) | RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setOnAttach(value: /* worker */ ContentWorker => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
+    inline def setOnAttach(value: /* worker */ ContentWorker => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
+    inline def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
-    @scala.inline
-    def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
   }
 }

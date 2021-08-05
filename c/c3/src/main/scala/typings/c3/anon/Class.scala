@@ -19,43 +19,31 @@ trait Class extends StObject {
 }
 object Class {
   
-  @scala.inline
-  def apply(): Class = {
+  inline def apply(): Class = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Class]
   }
   
-  @scala.inline
-  implicit class ClassMutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
+  extension [Self <: Class](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setValue_x1(value: Double): Self = StObject.set(x, "value_x1", value.asInstanceOf[js.Any])
+    inline def setValue_x1(value: Double): Self = StObject.set(x, "value_x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue_x1Undefined: Self = StObject.set(x, "value_x1", js.undefined)
+    inline def setValue_x1Undefined: Self = StObject.set(x, "value_x1", js.undefined)
     
-    @scala.inline
-    def setValue_x2(value: Double): Self = StObject.set(x, "value_x2", value.asInstanceOf[js.Any])
+    inline def setValue_x2(value: Double): Self = StObject.set(x, "value_x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue_x2Undefined: Self = StObject.set(x, "value_x2", js.undefined)
+    inline def setValue_x2Undefined: Self = StObject.set(x, "value_x2", js.undefined)
     
-    @scala.inline
-    def setValue_y1(value: Double): Self = StObject.set(x, "value_y1", value.asInstanceOf[js.Any])
+    inline def setValue_y1(value: Double): Self = StObject.set(x, "value_y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue_y1Undefined: Self = StObject.set(x, "value_y1", js.undefined)
+    inline def setValue_y1Undefined: Self = StObject.set(x, "value_y1", js.undefined)
     
-    @scala.inline
-    def setValue_y2(value: Double): Self = StObject.set(x, "value_y2", value.asInstanceOf[js.Any])
+    inline def setValue_y2(value: Double): Self = StObject.set(x, "value_y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue_y2Undefined: Self = StObject.set(x, "value_y2", js.undefined)
+    inline def setValue_y2Undefined: Self = StObject.set(x, "value_y2", js.undefined)
   }
 }

@@ -17,10 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(algorithm: algorithm): HashAlgorithm = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[HashAlgorithm]
-  @scala.inline
-  def apply(algorithm: algorithm, options: js.Any): HashAlgorithm = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashAlgorithm]
+  inline def apply(algorithm: algorithm): HashAlgorithm = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[HashAlgorithm]
+  inline def apply(algorithm: algorithm, options: js.Any): HashAlgorithm = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashAlgorithm]
   
   @JSImport("create-hash", JSImport.Namespace)
   @js.native
@@ -71,32 +69,23 @@ object mod {
   trait algorithm extends StObject
   object algorithm {
     
-    @scala.inline
-    def md5: typings.createHash.createHashStrings.md5 = "md5".asInstanceOf[typings.createHash.createHashStrings.md5]
+    inline def md5: typings.createHash.createHashStrings.md5 = "md5".asInstanceOf[typings.createHash.createHashStrings.md5]
     
-    @scala.inline
-    def ripemd160: typings.createHash.createHashStrings.ripemd160 = "ripemd160".asInstanceOf[typings.createHash.createHashStrings.ripemd160]
+    inline def ripemd160: typings.createHash.createHashStrings.ripemd160 = "ripemd160".asInstanceOf[typings.createHash.createHashStrings.ripemd160]
     
-    @scala.inline
-    def rmd160: typings.createHash.createHashStrings.rmd160 = "rmd160".asInstanceOf[typings.createHash.createHashStrings.rmd160]
+    inline def rmd160: typings.createHash.createHashStrings.rmd160 = "rmd160".asInstanceOf[typings.createHash.createHashStrings.rmd160]
     
-    @scala.inline
-    def sha: typings.createHash.createHashStrings.sha = "sha".asInstanceOf[typings.createHash.createHashStrings.sha]
+    inline def sha: typings.createHash.createHashStrings.sha = "sha".asInstanceOf[typings.createHash.createHashStrings.sha]
     
-    @scala.inline
-    def sha1: typings.createHash.createHashStrings.sha1 = "sha1".asInstanceOf[typings.createHash.createHashStrings.sha1]
+    inline def sha1: typings.createHash.createHashStrings.sha1 = "sha1".asInstanceOf[typings.createHash.createHashStrings.sha1]
     
-    @scala.inline
-    def sha224: typings.createHash.createHashStrings.sha224 = "sha224".asInstanceOf[typings.createHash.createHashStrings.sha224]
+    inline def sha224: typings.createHash.createHashStrings.sha224 = "sha224".asInstanceOf[typings.createHash.createHashStrings.sha224]
     
-    @scala.inline
-    def sha256: typings.createHash.createHashStrings.sha256 = "sha256".asInstanceOf[typings.createHash.createHashStrings.sha256]
+    inline def sha256: typings.createHash.createHashStrings.sha256 = "sha256".asInstanceOf[typings.createHash.createHashStrings.sha256]
     
-    @scala.inline
-    def sha384: typings.createHash.createHashStrings.sha384 = "sha384".asInstanceOf[typings.createHash.createHashStrings.sha384]
+    inline def sha384: typings.createHash.createHashStrings.sha384 = "sha384".asInstanceOf[typings.createHash.createHashStrings.sha384]
     
-    @scala.inline
-    def sha512: typings.createHash.createHashStrings.sha512 = "sha512".asInstanceOf[typings.createHash.createHashStrings.sha512]
+    inline def sha512: typings.createHash.createHashStrings.sha512 = "sha512".asInstanceOf[typings.createHash.createHashStrings.sha512]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -107,13 +96,10 @@ object mod {
   trait encoding extends StObject
   object encoding {
     
-    @scala.inline
-    def base64: typings.createHash.createHashStrings.base64 = "base64".asInstanceOf[typings.createHash.createHashStrings.base64]
+    inline def base64: typings.createHash.createHashStrings.base64 = "base64".asInstanceOf[typings.createHash.createHashStrings.base64]
     
-    @scala.inline
-    def hex: typings.createHash.createHashStrings.hex = "hex".asInstanceOf[typings.createHash.createHashStrings.hex]
+    inline def hex: typings.createHash.createHashStrings.hex = "hex".asInstanceOf[typings.createHash.createHashStrings.hex]
     
-    @scala.inline
-    def utf8: typings.createHash.createHashStrings.utf8 = "utf8".asInstanceOf[typings.createHash.createHashStrings.utf8]
+    inline def utf8: typings.createHash.createHashStrings.utf8 = "utf8".asInstanceOf[typings.createHash.createHashStrings.utf8]
   }
 }

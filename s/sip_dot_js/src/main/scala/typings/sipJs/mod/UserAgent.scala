@@ -26,8 +26,7 @@ object UserAgent {
   @JSImport("sip.js", "UserAgent.defaultOptions")
   @js.native
   def defaultOptions: js.Any = js.native
-  @scala.inline
-  def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   /**
     * Create a URI instance from a string.
@@ -38,8 +37,7 @@ object UserAgent {
     * const uri = UserAgent.makeURI("sip:edgar@example.com");
     * ```
     */
-  @scala.inline
-  def makeURI(uri: String): js.UndefOr[typings.sipJs.coreMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.coreMod.URI]]
+  inline def makeURI(uri: String): js.UndefOr[typings.sipJs.coreMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.coreMod.URI]]
   
   /**
     * Strip properties with undefined values from options.
@@ -50,6 +48,5 @@ object UserAgent {
   @JSImport("sip.js", "UserAgent.stripUndefinedProperties")
   @js.native
   def stripUndefinedProperties: js.Any = js.native
-  @scala.inline
-  def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+  inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
 }

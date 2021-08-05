@@ -17,31 +17,23 @@ trait TextToColumnsRequest extends StObject {
 }
 object TextToColumnsRequest {
   
-  @scala.inline
-  def apply(): TextToColumnsRequest = {
+  inline def apply(): TextToColumnsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextToColumnsRequest]
   }
   
-  @scala.inline
-  implicit class TextToColumnsRequestMutableBuilder[Self <: TextToColumnsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TextToColumnsRequest](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterType(value: String): Self = StObject.set(x, "delimiterType", value.asInstanceOf[js.Any])
+    inline def setDelimiterType(value: String): Self = StObject.set(x, "delimiterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterTypeUndefined: Self = StObject.set(x, "delimiterType", js.undefined)
+    inline def setDelimiterTypeUndefined: Self = StObject.set(x, "delimiterType", js.undefined)
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

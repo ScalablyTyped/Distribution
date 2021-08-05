@@ -30,37 +30,27 @@ trait CreateWorldExportJobRequest extends StObject {
 }
 object CreateWorldExportJobRequest {
   
-  @scala.inline
-  def apply(iamRole: IamRole, outputLocation: OutputLocation, worlds: Arns): CreateWorldExportJobRequest = {
+  inline def apply(iamRole: IamRole, outputLocation: OutputLocation, worlds: Arns): CreateWorldExportJobRequest = {
     val __obj = js.Dynamic.literal(iamRole = iamRole.asInstanceOf[js.Any], outputLocation = outputLocation.asInstanceOf[js.Any], worlds = worlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorldExportJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateWorldExportJobRequestMutableBuilder[Self <: CreateWorldExportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorldExportJobRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setIamRole(value: IamRole): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
+    inline def setIamRole(value: IamRole): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
+    inline def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setWorlds(value: Arns): Self = StObject.set(x, "worlds", value.asInstanceOf[js.Any])
+    inline def setWorlds(value: Arns): Self = StObject.set(x, "worlds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldsVarargs(value: Arn*): Self = StObject.set(x, "worlds", js.Array(value :_*))
+    inline def setWorldsVarargs(value: Arn*): Self = StObject.set(x, "worlds", js.Array(value :_*))
   }
 }

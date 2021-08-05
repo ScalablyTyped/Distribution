@@ -17,23 +17,18 @@ object promiseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def any(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def any(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def some(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
-    @scala.inline
-    def some(promises: js.Array[js.Promise[js.Any]], expected: Double): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(promises.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    inline def some(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    inline def some(promises: js.Array[js.Promise[js.Any]], expected: Double): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(promises.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   }
   
   @JSImport("@ionic/cli-framework/utils/promise", "promisify")
   @js.native
   val promisify: Promisify_ = js.native
   
-  @scala.inline
-  def promisifyEvent(emitter: EventEmitter, event: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyEvent")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def promisifyEvent(emitter: EventEmitter, event: js.Symbol): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyEvent")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def promisifyEvent(emitter: EventEmitter, event: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyEvent")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def promisifyEvent(emitter: EventEmitter, event: js.Symbol): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyEvent")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @js.native
   trait Promisify_ extends StObject {

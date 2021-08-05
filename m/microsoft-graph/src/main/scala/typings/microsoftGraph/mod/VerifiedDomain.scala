@@ -23,58 +23,41 @@ trait VerifiedDomain extends StObject {
 }
 object VerifiedDomain {
   
-  @scala.inline
-  def apply(): VerifiedDomain = {
+  inline def apply(): VerifiedDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerifiedDomain]
   }
   
-  @scala.inline
-  implicit class VerifiedDomainMutableBuilder[Self <: VerifiedDomain] (val x: Self) extends AnyVal {
+  extension [Self <: VerifiedDomain](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: NullableOption[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: NullableOption[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesNull: Self = StObject.set(x, "capabilities", null)
+    inline def setCapabilitiesNull: Self = StObject.set(x, "capabilities", null)
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
+    inline def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setIsInitial(value: NullableOption[Boolean]): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
+    inline def setIsInitial(value: NullableOption[Boolean]): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInitialNull: Self = StObject.set(x, "isInitial", null)
+    inline def setIsInitialNull: Self = StObject.set(x, "isInitial", null)
     
-    @scala.inline
-    def setIsInitialUndefined: Self = StObject.set(x, "isInitial", js.undefined)
+    inline def setIsInitialUndefined: Self = StObject.set(x, "isInitial", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

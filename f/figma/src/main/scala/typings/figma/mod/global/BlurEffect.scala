@@ -18,23 +18,18 @@ trait BlurEffect
 }
 object BlurEffect {
   
-  @scala.inline
-  def apply(radius: Double, `type`: LAYER_BLUR | BACKGROUND_BLUR, visible: Boolean): BlurEffect = {
+  inline def apply(radius: Double, `type`: LAYER_BLUR | BACKGROUND_BLUR, visible: Boolean): BlurEffect = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlurEffect]
   }
   
-  @scala.inline
-  implicit class BlurEffectMutableBuilder[Self <: BlurEffect] (val x: Self) extends AnyVal {
+  extension [Self <: BlurEffect](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LAYER_BLUR | BACKGROUND_BLUR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LAYER_BLUR | BACKGROUND_BLUR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

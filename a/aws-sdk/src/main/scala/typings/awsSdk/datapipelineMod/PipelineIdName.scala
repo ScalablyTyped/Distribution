@@ -18,25 +18,19 @@ trait PipelineIdName extends StObject {
 }
 object PipelineIdName {
   
-  @scala.inline
-  def apply(): PipelineIdName = {
+  inline def apply(): PipelineIdName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineIdName]
   }
   
-  @scala.inline
-  implicit class PipelineIdNameMutableBuilder[Self <: PipelineIdName] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineIdName](x: Self) {
     
-    @scala.inline
-    def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

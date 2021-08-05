@@ -37,37 +37,27 @@ trait IPath
 }
 object IPath {
   
-  @scala.inline
-  def apply(): IPath = {
+  inline def apply(): IPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPath]
   }
   
-  @scala.inline
-  implicit class IPathMutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
+  extension [Self <: IPath](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setUpdatePath(value: (/* path */ js.UndefOr[IPath], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[IPath], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
+    inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
     
-    @scala.inline
-    def setUpdateTransformedBBox(value: /* transform */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateTransformedBBox", js.Any.fromFunction1(value))
+    inline def setUpdateTransformedBBox(value: /* transform */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateTransformedBBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateTransformedBBoxUndefined: Self = StObject.set(x, "updateTransformedBBox", js.undefined)
+    inline def setUpdateTransformedBBoxUndefined: Self = StObject.set(x, "updateTransformedBBox", js.undefined)
   }
 }

@@ -46,8 +46,7 @@ trait b2DistanceJointDef
 }
 object b2DistanceJointDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Initialize: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit,
     bodyA: b2Body,
     bodyB: b2Body,
@@ -65,25 +64,18 @@ object b2DistanceJointDef {
     __obj.asInstanceOf[b2DistanceJointDef]
   }
   
-  @scala.inline
-  implicit class b2DistanceJointDefMutableBuilder[Self <: b2DistanceJointDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2DistanceJointDef](x: Self) {
     
-    @scala.inline
-    def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
+    inline def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyHz(value: Double): Self = StObject.set(x, "frequencyHz", value.asInstanceOf[js.Any])
+    inline def setFrequencyHz(value: Double): Self = StObject.set(x, "frequencyHz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction4(value))
+    inline def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
   }
 }

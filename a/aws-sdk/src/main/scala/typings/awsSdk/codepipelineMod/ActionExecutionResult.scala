@@ -23,31 +23,23 @@ trait ActionExecutionResult extends StObject {
 }
 object ActionExecutionResult {
   
-  @scala.inline
-  def apply(): ActionExecutionResult = {
+  inline def apply(): ActionExecutionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionExecutionResult]
   }
   
-  @scala.inline
-  implicit class ActionExecutionResultMutableBuilder[Self <: ActionExecutionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ActionExecutionResult](x: Self) {
     
-    @scala.inline
-    def setExternalExecutionId(value: ExternalExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
+    inline def setExternalExecutionId(value: ExternalExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalExecutionIdUndefined: Self = StObject.set(x, "externalExecutionId", js.undefined)
+    inline def setExternalExecutionIdUndefined: Self = StObject.set(x, "externalExecutionId", js.undefined)
     
-    @scala.inline
-    def setExternalExecutionSummary(value: ExternalExecutionSummary): Self = StObject.set(x, "externalExecutionSummary", value.asInstanceOf[js.Any])
+    inline def setExternalExecutionSummary(value: ExternalExecutionSummary): Self = StObject.set(x, "externalExecutionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalExecutionSummaryUndefined: Self = StObject.set(x, "externalExecutionSummary", js.undefined)
+    inline def setExternalExecutionSummaryUndefined: Self = StObject.set(x, "externalExecutionSummary", js.undefined)
     
-    @scala.inline
-    def setExternalExecutionUrl(value: Url): Self = StObject.set(x, "externalExecutionUrl", value.asInstanceOf[js.Any])
+    inline def setExternalExecutionUrl(value: Url): Self = StObject.set(x, "externalExecutionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalExecutionUrlUndefined: Self = StObject.set(x, "externalExecutionUrl", js.undefined)
+    inline def setExternalExecutionUrlUndefined: Self = StObject.set(x, "externalExecutionUrl", js.undefined)
   }
 }

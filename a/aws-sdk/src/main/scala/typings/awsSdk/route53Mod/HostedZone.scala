@@ -38,40 +38,29 @@ trait HostedZone extends StObject {
 }
 object HostedZone {
   
-  @scala.inline
-  def apply(CallerReference: Nonce, Id: ResourceId, Name: DNSName): HostedZone = {
+  inline def apply(CallerReference: Nonce, Id: ResourceId, Name: DNSName): HostedZone = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZone]
   }
   
-  @scala.inline
-  implicit class HostedZoneMutableBuilder[Self <: HostedZone] (val x: Self) extends AnyVal {
+  extension [Self <: HostedZone](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: HostedZoneConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: HostedZoneConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedService(value: LinkedService): Self = StObject.set(x, "LinkedService", value.asInstanceOf[js.Any])
+    inline def setLinkedService(value: LinkedService): Self = StObject.set(x, "LinkedService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedServiceUndefined: Self = StObject.set(x, "LinkedService", js.undefined)
+    inline def setLinkedServiceUndefined: Self = StObject.set(x, "LinkedService", js.undefined)
     
-    @scala.inline
-    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordSetCount(value: HostedZoneRRSetCount): Self = StObject.set(x, "ResourceRecordSetCount", value.asInstanceOf[js.Any])
+    inline def setResourceRecordSetCount(value: HostedZoneRRSetCount): Self = StObject.set(x, "ResourceRecordSetCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordSetCountUndefined: Self = StObject.set(x, "ResourceRecordSetCount", js.undefined)
+    inline def setResourceRecordSetCountUndefined: Self = StObject.set(x, "ResourceRecordSetCount", js.undefined)
   }
 }

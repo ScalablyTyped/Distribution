@@ -17,8 +17,7 @@ trait IOwnerPropertyDef extends StObject {
 }
 object IOwnerPropertyDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DependencyRelation: MFDependencyRelation,
     ID: Double,
     IndexForAutomaticFilling: Double,
@@ -28,19 +27,14 @@ object IOwnerPropertyDef {
     __obj.asInstanceOf[IOwnerPropertyDef]
   }
   
-  @scala.inline
-  implicit class IOwnerPropertyDefMutableBuilder[Self <: IOwnerPropertyDef] (val x: Self) extends AnyVal {
+  extension [Self <: IOwnerPropertyDef](x: Self) {
     
-    @scala.inline
-    def setDependencyRelation(value: MFDependencyRelation): Self = StObject.set(x, "DependencyRelation", value.asInstanceOf[js.Any])
+    inline def setDependencyRelation(value: MFDependencyRelation): Self = StObject.set(x, "DependencyRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexForAutomaticFilling(value: Double): Self = StObject.set(x, "IndexForAutomaticFilling", value.asInstanceOf[js.Any])
+    inline def setIndexForAutomaticFilling(value: Double): Self = StObject.set(x, "IndexForAutomaticFilling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRelationFiltering(value: Boolean): Self = StObject.set(x, "IsRelationFiltering", value.asInstanceOf[js.Any])
+    inline def setIsRelationFiltering(value: Boolean): Self = StObject.set(x, "IsRelationFiltering", value.asInstanceOf[js.Any])
   }
 }

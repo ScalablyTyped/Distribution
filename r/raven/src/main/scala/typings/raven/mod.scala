@@ -99,57 +99,35 @@ object mod {
     def wrap[T](options: js.Any, func: js.Function0[T]): js.Function0[T] = js.native
   }
   
-  @scala.inline
-  def captureBreadcrumb(breadcrumb: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def captureBreadcrumb(breadcrumb: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def captureException(e: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def captureException(e: Error, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def captureException(e: Error, options: Unit, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def captureException(e: Error, options: CaptureOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def captureException(e: Error, options: CaptureOptions, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureException(e: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureException(e: Error, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureException(e: Error, options: Unit, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureException(e: Error, options: CaptureOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureException(e: Error, options: CaptureOptions, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def captureMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def captureMessage(message: String, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def captureMessage(message: String, options: Unit, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def captureMessage(message: String, options: CaptureOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def captureMessage(message: String, options: CaptureOptions, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureMessage(message: String, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureMessage(message: String, options: Unit, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureMessage(message: String, options: CaptureOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureMessage(message: String, options: CaptureOptions, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def config(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Client]
-  @scala.inline
-  def config(dsn: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def config(dsn: String, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
-  @scala.inline
-  def config(dsn: Unit, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
-  @scala.inline
-  def config(options: ConstructorOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def config(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Client]
+  inline def config(dsn: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def config(dsn: String, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def config(dsn: Unit, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def config(options: ConstructorOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @scala.inline
-  def config_false(dsn: `false`): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def config_false(dsn: `false`, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def config_false(dsn: `false`): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def config_false(dsn: `false`, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
-  @scala.inline
-  def context[T](ctx: js.Any, func: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("context")(ctx.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def context[T](func: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(func.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def context[T](ctx: js.Any, func: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("context")(ctx.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def context[T](func: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(func.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def disableConsoleAlerts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableConsoleAlerts")().asInstanceOf[Unit]
+  inline def disableConsoleAlerts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableConsoleAlerts")().asInstanceOf[Unit]
   
-  @scala.inline
-  def errorHandler(): js.Function4[
+  inline def errorHandler(): js.Function4[
     /* e */ Error, 
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
@@ -163,22 +141,16 @@ object mod {
     Unit
   ]]
   
-  @scala.inline
-  def getContext(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[js.Any]
+  inline def getContext(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def install(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Client]
-  @scala.inline
-  def install(cb: FatalErrorCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def install(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Client]
+  inline def install(cb: FatalErrorCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @scala.inline
-  def interceptErr(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptErr")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def interceptErr(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptErr")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @scala.inline
-  def mergeContext(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def mergeContext(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @scala.inline
-  def requestHandler(): js.Function3[
+  inline def requestHandler(): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -190,14 +162,11 @@ object mod {
     Unit
   ]]
   
-  @scala.inline
-  def setContext(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def setContext(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @scala.inline
-  def setDataCallback(fn: DataCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def setDataCallback(fn: DataCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @scala.inline
-  def setShouldSendCallback(fn: ShouldSendCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setShouldSendCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def setShouldSendCallback(fn: ShouldSendCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setShouldSendCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   object transports {
     
@@ -261,68 +230,49 @@ object mod {
     }
     object HTTPTransportOptions {
       
-      @scala.inline
-      def apply(): HTTPTransportOptions = {
+      inline def apply(): HTTPTransportOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HTTPTransportOptions]
       }
       
-      @scala.inline
-      implicit class HTTPTransportOptionsMutableBuilder[Self <: HTTPTransportOptions] (val x: Self) extends AnyVal {
+      extension [Self <: HTTPTransportOptions](x: Self) {
         
-        @scala.inline
-        def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+        inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+        inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
         
-        @scala.inline
-        def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+        inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+        inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
         
-        @scala.inline
-        def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+        inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        @scala.inline
-        def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+        inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
         
-        @scala.inline
-        def setMethod(value: POST | GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: POST | GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+        inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        @scala.inline
-        def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+        inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+        inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def uninstall(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Client]
+  inline def uninstall(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Client]
   
   object utils {
     
@@ -330,24 +280,19 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def consoleAlert(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("consoleAlert")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def consoleAlert(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("consoleAlert")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def parseDSN(dsn: String): parsedDSN | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSN")(dsn.asInstanceOf[js.Any]).asInstanceOf[parsedDSN | `false`]
+    inline def parseDSN(dsn: String): parsedDSN | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSN")(dsn.asInstanceOf[js.Any]).asInstanceOf[parsedDSN | `false`]
     
-    @scala.inline
-    def parseDSN_false(dsn: `false`): parsedDSN | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSN")(dsn.asInstanceOf[js.Any]).asInstanceOf[parsedDSN | `false`]
+    inline def parseDSN_false(dsn: `false`): parsedDSN | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSN")(dsn.asInstanceOf[js.Any]).asInstanceOf[parsedDSN | `false`]
   }
   
   @JSImport("raven", "version")
   @js.native
   val version: String = js.native
   
-  @scala.inline
-  def wrap[T](func: js.Function0[T]): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
-  @scala.inline
-  def wrap[T](options: js.Any, func: js.Function0[T]): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(options.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
+  inline def wrap[T](func: js.Function0[T]): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
+  inline def wrap[T](options: js.Any, func: js.Function0[T]): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(options.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
   
   type CaptureCallback = js.Function2[/* sendErr */ js.UndefOr[Error | Null], /* eventId */ js.Any, Unit]
   
@@ -367,53 +312,38 @@ object mod {
   }
   object CaptureOptions {
     
-    @scala.inline
-    def apply(): CaptureOptions = {
+    inline def apply(): CaptureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CaptureOptions]
     }
     
-    @scala.inline
-    implicit class CaptureOptionsMutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureOptions](x: Self) {
       
-      @scala.inline
-      def setExtra(value: StringDictionary[js.Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: StringDictionary[js.Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+      inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
       
-      @scala.inline
-      def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
+      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+      inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -453,116 +383,80 @@ object mod {
   }
   object ConstructorOptions {
     
-    @scala.inline
-    def apply(): ConstructorOptions = {
+    inline def apply(): ConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setAutoBreadcrumbs(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "autoBreadcrumbs", value.asInstanceOf[js.Any])
+      inline def setAutoBreadcrumbs(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "autoBreadcrumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoBreadcrumbsUndefined: Self = StObject.set(x, "autoBreadcrumbs", js.undefined)
+      inline def setAutoBreadcrumbsUndefined: Self = StObject.set(x, "autoBreadcrumbs", js.undefined)
       
-      @scala.inline
-      def setCaptureUnhandledRejections(value: Boolean): Self = StObject.set(x, "captureUnhandledRejections", value.asInstanceOf[js.Any])
+      inline def setCaptureUnhandledRejections(value: Boolean): Self = StObject.set(x, "captureUnhandledRejections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
+      inline def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
       
-      @scala.inline
-      def setDataCallback(value: /* data */ StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
+      inline def setDataCallback(value: /* data */ StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataCallbackUndefined: Self = StObject.set(x, "dataCallback", js.undefined)
+      inline def setDataCallbackUndefined: Self = StObject.set(x, "dataCallback", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setExtra(value: StringDictionary[js.Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: StringDictionary[js.Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMaxBreadcrumbs(value: Double): Self = StObject.set(x, "maxBreadcrumbs", value.asInstanceOf[js.Any])
+      inline def setMaxBreadcrumbs(value: Double): Self = StObject.set(x, "maxBreadcrumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBreadcrumbsUndefined: Self = StObject.set(x, "maxBreadcrumbs", js.undefined)
+      inline def setMaxBreadcrumbsUndefined: Self = StObject.set(x, "maxBreadcrumbs", js.undefined)
       
-      @scala.inline
-      def setMaxReqQueueCount(value: Double): Self = StObject.set(x, "maxReqQueueCount", value.asInstanceOf[js.Any])
+      inline def setMaxReqQueueCount(value: Double): Self = StObject.set(x, "maxReqQueueCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReqQueueCountUndefined: Self = StObject.set(x, "maxReqQueueCount", js.undefined)
+      inline def setMaxReqQueueCountUndefined: Self = StObject.set(x, "maxReqQueueCount", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParseUser(value: Boolean | js.Array[String] | parseUserCallback): Self = StObject.set(x, "parseUser", value.asInstanceOf[js.Any])
+      inline def setParseUser(value: Boolean | js.Array[String] | parseUserCallback): Self = StObject.set(x, "parseUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUserFunction1(value: /* req */ js.Any => js.Any): Self = StObject.set(x, "parseUser", js.Any.fromFunction1(value))
+      inline def setParseUserFunction1(value: /* req */ js.Any => js.Any): Self = StObject.set(x, "parseUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseUserUndefined: Self = StObject.set(x, "parseUser", js.undefined)
+      inline def setParseUserUndefined: Self = StObject.set(x, "parseUser", js.undefined)
       
-      @scala.inline
-      def setParseUserVarargs(value: String*): Self = StObject.set(x, "parseUser", js.Array(value :_*))
+      inline def setParseUserVarargs(value: String*): Self = StObject.set(x, "parseUser", js.Array(value :_*))
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
       
-      @scala.inline
-      def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
+      inline def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
+      inline def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
       
-      @scala.inline
-      def setShouldSendCallback(value: /* data */ StringDictionary[js.Any] => Boolean): Self = StObject.set(x, "shouldSendCallback", js.Any.fromFunction1(value))
+      inline def setShouldSendCallback(value: /* data */ StringDictionary[js.Any] => Boolean): Self = StObject.set(x, "shouldSendCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldSendCallbackUndefined: Self = StObject.set(x, "shouldSendCallback", js.undefined)
+      inline def setShouldSendCallbackUndefined: Self = StObject.set(x, "shouldSendCallback", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -592,8 +486,7 @@ object mod {
   }
   object parsedDSN {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       host: String,
       path: String,
       port: Double,
@@ -606,29 +499,21 @@ object mod {
       __obj.asInstanceOf[parsedDSN]
     }
     
-    @scala.inline
-    implicit class parsedDSNMutableBuilder[Self <: parsedDSN] (val x: Self) extends AnyVal {
+    extension [Self <: parsedDSN](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
+      inline def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject_id(value: String): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+      inline def setProject_id(value: String): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
+      inline def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,25 +16,19 @@ trait Acl[T] extends StObject {
 }
 object Acl {
   
-  @scala.inline
-  def apply[T](): Acl[T] = {
+  inline def apply[T](): Acl[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Acl[T]]
   }
   
-  @scala.inline
-  implicit class AclMutableBuilder[Self <: Acl[?], T] (val x: Self & Acl[T]) extends AnyVal {
+  extension [Self <: Acl[?], T](x: Self & Acl[T]) {
     
-    @scala.inline
-    def setAcl(value: /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+    inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
-    @scala.inline
-    def set_id(value: /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait ApproveAssignmentRequest extends StObject {
 }
 object ApproveAssignmentRequest {
   
-  @scala.inline
-  def apply(AssignmentId: EntityId): ApproveAssignmentRequest = {
+  inline def apply(AssignmentId: EntityId): ApproveAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproveAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class ApproveAssignmentRequestMutableBuilder[Self <: ApproveAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApproveAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideRejection(value: Boolean): Self = StObject.set(x, "OverrideRejection", value.asInstanceOf[js.Any])
+    inline def setOverrideRejection(value: Boolean): Self = StObject.set(x, "OverrideRejection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideRejectionUndefined: Self = StObject.set(x, "OverrideRejection", js.undefined)
+    inline def setOverrideRejectionUndefined: Self = StObject.set(x, "OverrideRejection", js.undefined)
     
-    @scala.inline
-    def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
+    inline def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterFeedbackUndefined: Self = StObject.set(x, "RequesterFeedback", js.undefined)
+    inline def setRequesterFeedbackUndefined: Self = StObject.set(x, "RequesterFeedback", js.undefined)
   }
 }

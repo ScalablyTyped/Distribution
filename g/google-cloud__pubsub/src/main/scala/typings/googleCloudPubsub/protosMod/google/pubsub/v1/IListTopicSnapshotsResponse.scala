@@ -15,34 +15,25 @@ trait IListTopicSnapshotsResponse extends StObject {
 }
 object IListTopicSnapshotsResponse {
   
-  @scala.inline
-  def apply(): IListTopicSnapshotsResponse = {
+  inline def apply(): IListTopicSnapshotsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListTopicSnapshotsResponse]
   }
   
-  @scala.inline
-  implicit class IListTopicSnapshotsResponseMutableBuilder[Self <: IListTopicSnapshotsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListTopicSnapshotsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSnapshots(value: js.Array[String]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
+    inline def setSnapshots(value: js.Array[String]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotsNull: Self = StObject.set(x, "snapshots", null)
+    inline def setSnapshotsNull: Self = StObject.set(x, "snapshots", null)
     
-    @scala.inline
-    def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
+    inline def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
-    @scala.inline
-    def setSnapshotsVarargs(value: String*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
+    inline def setSnapshotsVarargs(value: String*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
   }
 }

@@ -19,25 +19,19 @@ trait WebCLKernelArgInfo extends StObject {
 }
 object WebCLKernelArgInfo {
   
-  @scala.inline
-  def apply(accessQualifier: String, addressQualifier: String, name: String, typeName: String): WebCLKernelArgInfo = {
+  inline def apply(accessQualifier: String, addressQualifier: String, name: String, typeName: String): WebCLKernelArgInfo = {
     val __obj = js.Dynamic.literal(accessQualifier = accessQualifier.asInstanceOf[js.Any], addressQualifier = addressQualifier.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebCLKernelArgInfo]
   }
   
-  @scala.inline
-  implicit class WebCLKernelArgInfoMutableBuilder[Self <: WebCLKernelArgInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLKernelArgInfo](x: Self) {
     
-    @scala.inline
-    def setAccessQualifier(value: String): Self = StObject.set(x, "accessQualifier", value.asInstanceOf[js.Any])
+    inline def setAccessQualifier(value: String): Self = StObject.set(x, "accessQualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressQualifier(value: String): Self = StObject.set(x, "addressQualifier", value.asInstanceOf[js.Any])
+    inline def setAddressQualifier(value: String): Self = StObject.set(x, "addressQualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

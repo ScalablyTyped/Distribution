@@ -16,8 +16,7 @@ trait IPropertyValidationRule[T] extends StObject {
 }
 object IPropertyValidationRule {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     Validate: IValidationContext[T] => js.Array[IValidationFailure],
     ValidateAsync: IValidationContext[T] => Promise[js.Array[IValidationFailure]],
     Validators: StringDictionary[js.Any]
@@ -26,16 +25,12 @@ object IPropertyValidationRule {
     __obj.asInstanceOf[IPropertyValidationRule[T]]
   }
   
-  @scala.inline
-  implicit class IPropertyValidationRuleMutableBuilder[Self <: IPropertyValidationRule[?], T] (val x: Self & IPropertyValidationRule[T]) extends AnyVal {
+  extension [Self <: IPropertyValidationRule[?], T](x: Self & IPropertyValidationRule[T]) {
     
-    @scala.inline
-    def setValidate(value: IValidationContext[T] => js.Array[IValidationFailure]): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: IValidationContext[T] => js.Array[IValidationFailure]): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateAsync(value: IValidationContext[T] => Promise[js.Array[IValidationFailure]]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
+    inline def setValidateAsync(value: IValidationContext[T] => Promise[js.Array[IValidationFailure]]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidators(value: StringDictionary[js.Any]): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: StringDictionary[js.Any]): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
   }
 }

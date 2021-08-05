@@ -26,25 +26,19 @@ trait NavigationBarAnimation extends StObject {
 }
 object NavigationBarAnimation {
   
-  @scala.inline
-  def apply(): NavigationBarAnimation = {
+  inline def apply(): NavigationBarAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationBarAnimation]
   }
   
-  @scala.inline
-  implicit class NavigationBarAnimationMutableBuilder[Self <: NavigationBarAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBarAnimation](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "timingFunc", value.asInstanceOf[js.Any])
+    inline def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "timingFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingFuncUndefined: Self = StObject.set(x, "timingFunc", js.undefined)
+    inline def setTimingFuncUndefined: Self = StObject.set(x, "timingFunc", js.undefined)
   }
 }

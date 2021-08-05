@@ -20,19 +20,15 @@ trait elasticsearch
 }
 object elasticsearch {
   
-  @scala.inline
-  def apply(): elasticsearch = {
+  inline def apply(): elasticsearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[elasticsearch]
   }
   
-  @scala.inline
-  implicit class elasticsearchMutableBuilder[Self <: elasticsearch] (val x: Self) extends AnyVal {
+  extension [Self <: elasticsearch](x: Self) {
     
-    @scala.inline
-    def setHooks(value: Query): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Query): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
   }
 }

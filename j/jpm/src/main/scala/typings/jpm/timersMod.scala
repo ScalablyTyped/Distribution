@@ -13,17 +13,13 @@ object timersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearInterval(intervalID: INTERVAL_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(intervalID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(intervalID: INTERVAL_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(intervalID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearTimeout(timerID: TIMEOUT_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timerID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(timerID: TIMEOUT_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timerID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setInterval(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): INTERVAL_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[INTERVAL_ID]
+  inline def setInterval(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): INTERVAL_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[INTERVAL_ID]
   
-  @scala.inline
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): TIMEOUT_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[TIMEOUT_ID]
+  inline def setTimeout(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): TIMEOUT_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[TIMEOUT_ID]
   
   type INTERVAL_ID = Double
   

@@ -51,8 +51,7 @@ trait b2Manifold extends StObject {
 }
 object b2Manifold {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Copy: () => b2Manifold,
     Reset: () => Unit,
     Set: b2Manifold => Unit,
@@ -66,34 +65,24 @@ object b2Manifold {
     __obj.asInstanceOf[b2Manifold]
   }
   
-  @scala.inline
-  implicit class b2ManifoldMutableBuilder[Self <: b2Manifold] (val x: Self) extends AnyVal {
+  extension [Self <: b2Manifold](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => b2Manifold): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => b2Manifold): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setM_localPlaneNormal(value: b2Vec2): Self = StObject.set(x, "m_localPlaneNormal", value.asInstanceOf[js.Any])
+    inline def setM_localPlaneNormal(value: b2Vec2): Self = StObject.set(x, "m_localPlaneNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_localPoint(value: b2Vec2): Self = StObject.set(x, "m_localPoint", value.asInstanceOf[js.Any])
+    inline def setM_localPoint(value: b2Vec2): Self = StObject.set(x, "m_localPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_pointCount(value: Double): Self = StObject.set(x, "m_pointCount", value.asInstanceOf[js.Any])
+    inline def setM_pointCount(value: Double): Self = StObject.set(x, "m_pointCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_points(value: js.Array[b2ManifoldPoint]): Self = StObject.set(x, "m_points", value.asInstanceOf[js.Any])
+    inline def setM_points(value: js.Array[b2ManifoldPoint]): Self = StObject.set(x, "m_points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_pointsVarargs(value: b2ManifoldPoint*): Self = StObject.set(x, "m_points", js.Array(value :_*))
+    inline def setM_pointsVarargs(value: b2ManifoldPoint*): Self = StObject.set(x, "m_points", js.Array(value :_*))
     
-    @scala.inline
-    def setM_type(value: Double): Self = StObject.set(x, "m_type", value.asInstanceOf[js.Any])
+    inline def setM_type(value: Double): Self = StObject.set(x, "m_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: b2Manifold => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+    inline def setSet(value: b2Manifold => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }
 }

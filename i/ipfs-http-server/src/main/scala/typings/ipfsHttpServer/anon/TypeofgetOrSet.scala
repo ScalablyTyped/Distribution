@@ -12,19 +12,15 @@ trait TypeofgetOrSet extends StObject {
 }
 object TypeofgetOrSet {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: TypeofoptionsPayload): TypeofgetOrSet = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: TypeofoptionsPayload): TypeofgetOrSet = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofgetOrSet]
   }
   
-  @scala.inline
-  implicit class TypeofgetOrSetMutableBuilder[Self <: TypeofgetOrSet] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofgetOrSet](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: TypeofoptionsPayload): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TypeofoptionsPayload): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

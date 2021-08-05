@@ -20,52 +20,37 @@ trait ComputedEffectTiming
 }
 object ComputedEffectTiming {
   
-  @scala.inline
-  def apply(): ComputedEffectTiming = {
+  inline def apply(): ComputedEffectTiming = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputedEffectTiming]
   }
   
-  @scala.inline
-  implicit class ComputedEffectTimingMutableBuilder[Self <: ComputedEffectTiming] (val x: Self) extends AnyVal {
+  extension [Self <: ComputedEffectTiming](x: Self) {
     
-    @scala.inline
-    def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
+    inline def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDurationUndefined: Self = StObject.set(x, "activeDuration", js.undefined)
+    inline def setActiveDurationUndefined: Self = StObject.set(x, "activeDuration", js.undefined)
     
-    @scala.inline
-    def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
+    inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentIterationNull: Self = StObject.set(x, "currentIteration", null)
+    inline def setCurrentIterationNull: Self = StObject.set(x, "currentIteration", null)
     
-    @scala.inline
-    def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
+    inline def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setLocalTime(value: Double): Self = StObject.set(x, "localTime", value.asInstanceOf[js.Any])
+    inline def setLocalTime(value: Double): Self = StObject.set(x, "localTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalTimeNull: Self = StObject.set(x, "localTime", null)
+    inline def setLocalTimeNull: Self = StObject.set(x, "localTime", null)
     
-    @scala.inline
-    def setLocalTimeUndefined: Self = StObject.set(x, "localTime", js.undefined)
+    inline def setLocalTimeUndefined: Self = StObject.set(x, "localTime", js.undefined)
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressNull: Self = StObject.set(x, "progress", null)
+    inline def setProgressNull: Self = StObject.set(x, "progress", null)
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

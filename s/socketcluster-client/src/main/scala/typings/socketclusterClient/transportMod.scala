@@ -134,38 +134,28 @@ object transportMod {
   }
   object EventObject {
     
-    @scala.inline
-    def apply(data: js.Any, event: String): EventObject = {
+    inline def apply(data: js.Any, event: String): EventObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventObject]
     }
     
-    @scala.inline
-    implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+    extension [Self <: EventObject](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (/* error */ Error, /* eventObject */ EventObject) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ Error, /* eventObject */ EventObject) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCid(value: Double): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: Double): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Timer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Timer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -181,32 +171,24 @@ object transportMod {
   }
   object InvokeOptions {
     
-    @scala.inline
-    def apply(): InvokeOptions = {
+    inline def apply(): InvokeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvokeOptions]
     }
     
-    @scala.inline
-    implicit class InvokeOptionsMutableBuilder[Self <: InvokeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeOptions](x: Self) {
       
-      @scala.inline
-      def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
+      inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
+      inline def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setNoTimeout(value: Boolean): Self = StObject.set(x, "noTimeout", value.asInstanceOf[js.Any])
+      inline def setNoTimeout(value: Boolean): Self = StObject.set(x, "noTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTimeoutUndefined: Self = StObject.set(x, "noTimeout", js.undefined)
+      inline def setNoTimeoutUndefined: Self = StObject.set(x, "noTimeout", js.undefined)
     }
   }
   
@@ -218,20 +200,16 @@ object transportMod {
   }
   object OnCloseValue {
     
-    @scala.inline
-    def apply(code: Double, reason: String): OnCloseValue = {
+    inline def apply(code: Double, reason: String): OnCloseValue = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnCloseValue]
     }
     
-    @scala.inline
-    implicit class OnCloseValueMutableBuilder[Self <: OnCloseValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnCloseValue](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,17 +219,14 @@ object transportMod {
   }
   object OnErrorValue {
     
-    @scala.inline
-    def apply(error: Error): OnErrorValue = {
+    inline def apply(error: Error): OnErrorValue = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnErrorValue]
     }
     
-    @scala.inline
-    implicit class OnErrorValueMutableBuilder[Self <: OnErrorValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnErrorValue](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,20 +238,16 @@ object transportMod {
   }
   object OnEventValue {
     
-    @scala.inline
-    def apply(data: js.Any, event: String): OnEventValue = {
+    inline def apply(data: js.Any, event: String): OnEventValue = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnEventValue]
     }
     
-    @scala.inline
-    implicit class OnEventValueMutableBuilder[Self <: OnEventValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnEventValue](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,20 +259,16 @@ object transportMod {
   }
   object OnInboundInvokeValue {
     
-    @scala.inline
-    def apply(data: js.Any, procedure: String): OnInboundInvokeValue = {
+    inline def apply(data: js.Any, procedure: String): OnInboundInvokeValue = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnInboundInvokeValue]
     }
     
-    @scala.inline
-    implicit class OnInboundInvokeValueMutableBuilder[Self <: OnInboundInvokeValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnInboundInvokeValue](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+      inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,20 +280,16 @@ object transportMod {
   }
   object OnInboundTransmitValue {
     
-    @scala.inline
-    def apply(data: js.Any, event: String): OnInboundTransmitValue = {
+    inline def apply(data: js.Any, event: String): OnInboundTransmitValue = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnInboundTransmitValue]
     }
     
-    @scala.inline
-    implicit class OnInboundTransmitValueMutableBuilder[Self <: OnInboundTransmitValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnInboundTransmitValue](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,20 +301,16 @@ object transportMod {
   }
   object OnOpenAbortValue {
     
-    @scala.inline
-    def apply(code: Double, reason: String): OnOpenAbortValue = {
+    inline def apply(code: Double, reason: String): OnOpenAbortValue = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnOpenAbortValue]
     }
     
-    @scala.inline
-    implicit class OnOpenAbortValueMutableBuilder[Self <: OnOpenAbortValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnOpenAbortValue](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -367,29 +326,22 @@ object transportMod {
   }
   object OnOpenValue {
     
-    @scala.inline
-    def apply(id: String, isAuthenticated: Boolean, pingTimeout: Double): OnOpenValue = {
+    inline def apply(id: String, isAuthenticated: Boolean, pingTimeout: Double): OnOpenValue = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any], authToken = null)
       __obj.asInstanceOf[OnOpenValue]
     }
     
-    @scala.inline
-    implicit class OnOpenValueMutableBuilder[Self <: OnOpenValue] (val x: Self) extends AnyVal {
+    extension [Self <: OnOpenValue](x: Self) {
       
-      @scala.inline
-      def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTokenNull: Self = StObject.set(x, "authToken", null)
+      inline def setAuthTokenNull: Self = StObject.set(x, "authToken", null)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
+      inline def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
+      inline def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -399,20 +351,16 @@ object transportMod {
   }
   object TransmitOptions {
     
-    @scala.inline
-    def apply(): TransmitOptions = {
+    inline def apply(): TransmitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransmitOptions]
     }
     
-    @scala.inline
-    implicit class TransmitOptionsMutableBuilder[Self <: TransmitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransmitOptions](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     }
   }
   

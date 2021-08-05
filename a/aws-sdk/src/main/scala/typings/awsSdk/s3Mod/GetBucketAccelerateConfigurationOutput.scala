@@ -13,19 +13,15 @@ trait GetBucketAccelerateConfigurationOutput extends StObject {
 }
 object GetBucketAccelerateConfigurationOutput {
   
-  @scala.inline
-  def apply(): GetBucketAccelerateConfigurationOutput = {
+  inline def apply(): GetBucketAccelerateConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketAccelerateConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketAccelerateConfigurationOutputMutableBuilder[Self <: GetBucketAccelerateConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketAccelerateConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setStatus(value: BucketAccelerateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BucketAccelerateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

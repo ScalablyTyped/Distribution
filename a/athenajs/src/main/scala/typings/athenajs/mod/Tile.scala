@@ -34,6 +34,5 @@ object Tile {
   @JSImport("athenajs", "Tile.TYPE")
   @js.native
   def TYPE: AIR = js.native
-  @scala.inline
-  def TYPE_=(x: AIR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
+  inline def TYPE_=(x: AIR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
 }

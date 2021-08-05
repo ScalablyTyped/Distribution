@@ -13,22 +13,17 @@ trait AllocateStaticIpResult extends StObject {
 }
 object AllocateStaticIpResult {
   
-  @scala.inline
-  def apply(): AllocateStaticIpResult = {
+  inline def apply(): AllocateStaticIpResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocateStaticIpResult]
   }
   
-  @scala.inline
-  implicit class AllocateStaticIpResultMutableBuilder[Self <: AllocateStaticIpResult] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateStaticIpResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

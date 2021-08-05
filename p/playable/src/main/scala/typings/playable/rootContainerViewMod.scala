@@ -19,14 +19,14 @@ object rootContainerViewMod {
   trait RootContainerView
     extends typings.playable.viewMod.default[IRootContainerViewStyles] {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     def appendComponentElement(element: HTMLElement): Unit = js.native
     

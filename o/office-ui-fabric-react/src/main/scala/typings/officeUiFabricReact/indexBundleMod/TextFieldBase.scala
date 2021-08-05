@@ -21,6 +21,5 @@ object TextFieldBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "TextFieldBase.defaultProps")
   @js.native
   def defaultProps: ITextFieldProps = js.native
-  @scala.inline
-  def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

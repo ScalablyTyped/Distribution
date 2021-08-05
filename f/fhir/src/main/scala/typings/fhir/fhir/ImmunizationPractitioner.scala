@@ -23,22 +23,17 @@ trait ImmunizationPractitioner
 }
 object ImmunizationPractitioner {
   
-  @scala.inline
-  def apply(actor: Reference): ImmunizationPractitioner = {
+  inline def apply(actor: Reference): ImmunizationPractitioner = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmunizationPractitioner]
   }
   
-  @scala.inline
-  implicit class ImmunizationPractitionerMutableBuilder[Self <: ImmunizationPractitioner] (val x: Self) extends AnyVal {
+  extension [Self <: ImmunizationPractitioner](x: Self) {
     
-    @scala.inline
-    def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

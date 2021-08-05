@@ -23,31 +23,23 @@ trait IdFormat extends StObject {
 }
 object IdFormat {
   
-  @scala.inline
-  def apply(): IdFormat = {
+  inline def apply(): IdFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdFormat]
   }
   
-  @scala.inline
-  implicit class IdFormatMutableBuilder[Self <: IdFormat] (val x: Self) extends AnyVal {
+  extension [Self <: IdFormat](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: DateTime): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: DateTime): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
+    inline def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
     
-    @scala.inline
-    def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
+    inline def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLongIdsUndefined: Self = StObject.set(x, "UseLongIds", js.undefined)
+    inline def setUseLongIdsUndefined: Self = StObject.set(x, "UseLongIds", js.undefined)
   }
 }

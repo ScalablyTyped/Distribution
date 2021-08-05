@@ -44,8 +44,7 @@ trait VirtualNodeSpecListenerHealthCheck extends StObject {
 }
 object VirtualNodeSpecListenerHealthCheck {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     healthyThreshold: Input[Double],
     intervalMillis: Input[Double],
     protocol: Input[String],
@@ -56,34 +55,24 @@ object VirtualNodeSpecListenerHealthCheck {
     __obj.asInstanceOf[VirtualNodeSpecListenerHealthCheck]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerHealthCheckMutableBuilder[Self <: VirtualNodeSpecListenerHealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerHealthCheck](x: Self) {
     
-    @scala.inline
-    def setHealthyThreshold(value: Input[Double]): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
+    inline def setHealthyThreshold(value: Input[Double]): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalMillis(value: Input[Double]): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
+    inline def setIntervalMillis(value: Input[Double]): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMillis(value: Input[Double]): Self = StObject.set(x, "timeoutMillis", value.asInstanceOf[js.Any])
+    inline def setTimeoutMillis(value: Input[Double]): Self = StObject.set(x, "timeoutMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyThreshold(value: Input[Double]): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
+    inline def setUnhealthyThreshold(value: Input[Double]): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
   }
 }

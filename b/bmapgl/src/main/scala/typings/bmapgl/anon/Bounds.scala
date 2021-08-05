@@ -14,26 +14,20 @@ trait Bounds extends StObject {
 }
 object Bounds {
   
-  @scala.inline
-  def apply(bounds: js.Array[typings.bmapgl.BMapGL.Bounds], target: js.Any, `type`: String): Bounds = {
+  inline def apply(bounds: js.Array[typings.bmapgl.BMapGL.Bounds], target: js.Any, `type`: String): Bounds = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bounds]
   }
   
-  @scala.inline
-  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+  extension [Self <: Bounds](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Array[typings.bmapgl.BMapGL.Bounds]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[typings.bmapgl.BMapGL.Bounds]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsVarargs(value: typings.bmapgl.BMapGL.Bounds*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: typings.bmapgl.BMapGL.Bounds*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

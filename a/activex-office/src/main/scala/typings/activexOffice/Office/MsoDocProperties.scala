@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoDocProperties extends StObject
 object MsoDocProperties {
   
-  @scala.inline
-  def msoPropertyTypeBoolean: `2` = 2.asInstanceOf[`2`]
+  inline def msoPropertyTypeBoolean: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoPropertyTypeDate: `3` = 3.asInstanceOf[`3`]
+  inline def msoPropertyTypeDate: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoPropertyTypeFloat: `5` = 5.asInstanceOf[`5`]
+  inline def msoPropertyTypeFloat: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoPropertyTypeNumber: `1` = 1.asInstanceOf[`1`]
+  inline def msoPropertyTypeNumber: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoPropertyTypeString: `4` = 4.asInstanceOf[`4`]
+  inline def msoPropertyTypeString: `4` = 4.asInstanceOf[`4`]
 }

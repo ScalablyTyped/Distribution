@@ -13,16 +13,13 @@ trait DisableKeyRotationRequest extends StObject {
 }
 object DisableKeyRotationRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): DisableKeyRotationRequest = {
+  inline def apply(KeyId: KeyIdType): DisableKeyRotationRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableKeyRotationRequest]
   }
   
-  @scala.inline
-  implicit class DisableKeyRotationRequestMutableBuilder[Self <: DisableKeyRotationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableKeyRotationRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

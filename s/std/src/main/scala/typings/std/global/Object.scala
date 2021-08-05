@@ -37,6 +37,5 @@ object Object {
   /**
     * Provides functionality common to all JavaScript objects.
     */
-  @scala.inline
-  def apply: ObjectConstructor = js.Dynamic.global.selectDynamic("Object").asInstanceOf[ObjectConstructor]
+  inline def apply: ObjectConstructor = js.Dynamic.global.selectDynamic("Object").asInstanceOf[ObjectConstructor]
 }

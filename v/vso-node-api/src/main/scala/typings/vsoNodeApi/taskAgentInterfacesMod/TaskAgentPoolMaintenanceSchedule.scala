@@ -33,8 +33,7 @@ trait TaskAgentPoolMaintenanceSchedule extends StObject {
 }
 object TaskAgentPoolMaintenanceSchedule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     daysToBuild: TaskAgentPoolMaintenanceScheduleDays,
     scheduleJobId: String,
     startHours: Double,
@@ -45,22 +44,16 @@ object TaskAgentPoolMaintenanceSchedule {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceSchedule]
   }
   
-  @scala.inline
-  implicit class TaskAgentPoolMaintenanceScheduleMutableBuilder[Self <: TaskAgentPoolMaintenanceSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentPoolMaintenanceSchedule](x: Self) {
     
-    @scala.inline
-    def setDaysToBuild(value: TaskAgentPoolMaintenanceScheduleDays): Self = StObject.set(x, "daysToBuild", value.asInstanceOf[js.Any])
+    inline def setDaysToBuild(value: TaskAgentPoolMaintenanceScheduleDays): Self = StObject.set(x, "daysToBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleJobId(value: String): Self = StObject.set(x, "scheduleJobId", value.asInstanceOf[js.Any])
+    inline def setScheduleJobId(value: String): Self = StObject.set(x, "scheduleJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartHours(value: Double): Self = StObject.set(x, "startHours", value.asInstanceOf[js.Any])
+    inline def setStartHours(value: Double): Self = StObject.set(x, "startHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
+    inline def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
+    inline def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
   }
 }

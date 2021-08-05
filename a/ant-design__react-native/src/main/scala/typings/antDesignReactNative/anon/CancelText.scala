@@ -11,16 +11,13 @@ trait CancelText extends StObject {
 }
 object CancelText {
   
-  @scala.inline
-  def apply(cancelText: String): CancelText = {
+  inline def apply(cancelText: String): CancelText = {
     val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelText]
   }
   
-  @scala.inline
-  implicit class CancelTextMutableBuilder[Self <: CancelText] (val x: Self) extends AnyVal {
+  extension [Self <: CancelText](x: Self) {
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
   }
 }

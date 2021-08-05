@@ -27,8 +27,7 @@ trait XUnoTunnel
 }
 object XUnoTunnel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getSomething: SeqEquiv[Double] => Double,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XUnoTunnel {
     __obj.asInstanceOf[XUnoTunnel]
   }
   
-  @scala.inline
-  implicit class XUnoTunnelMutableBuilder[Self <: XUnoTunnel] (val x: Self) extends AnyVal {
+  extension [Self <: XUnoTunnel](x: Self) {
     
-    @scala.inline
-    def setGetSomething(value: SeqEquiv[Double] => Double): Self = StObject.set(x, "getSomething", js.Any.fromFunction1(value))
+    inline def setGetSomething(value: SeqEquiv[Double] => Double): Self = StObject.set(x, "getSomething", js.Any.fromFunction1(value))
   }
 }

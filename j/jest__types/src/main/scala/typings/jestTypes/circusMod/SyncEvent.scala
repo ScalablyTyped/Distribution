@@ -17,26 +17,22 @@ trait SyncEvent
      with Event
 object SyncEvent {
   
-  @scala.inline
-  def AsyncError(asyncError: Error, blockName: BlockName, mode: BlockMode): typings.jestTypes.anon.AsyncError = {
+  inline def AsyncError(asyncError: Error, blockName: BlockName, mode: BlockMode): typings.jestTypes.anon.AsyncError = {
     val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "start_describe_definition")
     __obj.asInstanceOf[typings.jestTypes.anon.AsyncError]
   }
   
-  @scala.inline
-  def BlockName(blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): typings.jestTypes.anon.BlockName = {
+  inline def BlockName(blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): typings.jestTypes.anon.BlockName = {
     val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "finish_describe_definition")
     __obj.asInstanceOf[typings.jestTypes.anon.BlockName]
   }
   
-  @scala.inline
-  def Error(error: Exception): typings.jestTypes.anon.Error = {
+  inline def Error(error: Exception): typings.jestTypes.anon.Error = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "error")
     __obj.asInstanceOf[typings.jestTypes.anon.Error]
   }
   
-  @scala.inline
-  def Fn(
+  inline def Fn(
     asyncError: Error,
     fn: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
     hookType: HookType
@@ -45,8 +41,7 @@ object SyncEvent {
     __obj.asInstanceOf[typings.jestTypes.anon.Fn]
   }
   
-  @scala.inline
-  def Mode(
+  inline def Mode(
     asyncError: Error,
     fn: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
     testName: TestName

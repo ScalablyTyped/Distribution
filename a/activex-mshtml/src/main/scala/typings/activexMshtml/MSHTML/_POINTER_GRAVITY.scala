@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _POINTER_GRAVITY extends StObject
 object _POINTER_GRAVITY {
   
-  @scala.inline
-  def POINTER_GRAVITY_Left: `0` = 0.asInstanceOf[`0`]
+  inline def POINTER_GRAVITY_Left: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def POINTER_GRAVITY_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def POINTER_GRAVITY_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def POINTER_GRAVITY_Right: `1` = 1.asInstanceOf[`1`]
+  inline def POINTER_GRAVITY_Right: `1` = 1.asInstanceOf[`1`]
 }

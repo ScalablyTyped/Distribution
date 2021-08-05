@@ -10,19 +10,15 @@ trait EditorExecParams extends StObject {
 }
 object EditorExecParams {
   
-  @scala.inline
-  def apply(): EditorExecParams = {
+  inline def apply(): EditorExecParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorExecParams]
   }
   
-  @scala.inline
-  implicit class EditorExecParamsMutableBuilder[Self <: EditorExecParams] (val x: Self) extends AnyVal {
+  extension [Self <: EditorExecParams](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

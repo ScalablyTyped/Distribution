@@ -21,8 +21,7 @@ trait TestAttachment extends StObject {
 }
 object TestAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachmentType: AttachmentType,
     comment: String,
     createdDate: Date,
@@ -34,25 +33,18 @@ object TestAttachment {
     __obj.asInstanceOf[TestAttachment]
   }
   
-  @scala.inline
-  implicit class TestAttachmentMutableBuilder[Self <: TestAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: TestAttachment](x: Self) {
     
-    @scala.inline
-    def setAttachmentType(value: AttachmentType): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
+    inline def setAttachmentType(value: AttachmentType): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

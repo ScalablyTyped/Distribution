@@ -18,25 +18,19 @@ trait Authentication extends StObject {
 }
 object Authentication {
   
-  @scala.inline
-  def apply(): Authentication = {
+  inline def apply(): Authentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Authentication]
   }
   
-  @scala.inline
-  implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
+  extension [Self <: Authentication](x: Self) {
     
-    @scala.inline
-    def setPasswordCount(value: IntegerOptional): Self = StObject.set(x, "PasswordCount", value.asInstanceOf[js.Any])
+    inline def setPasswordCount(value: IntegerOptional): Self = StObject.set(x, "PasswordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordCountUndefined: Self = StObject.set(x, "PasswordCount", js.undefined)
+    inline def setPasswordCountUndefined: Self = StObject.set(x, "PasswordCount", js.undefined)
     
-    @scala.inline
-    def setType(value: AuthenticationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AuthenticationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

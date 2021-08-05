@@ -15,10 +15,8 @@ object mod {
     * @param image2 The second image
     * @param callback Call when finish compare
     */
-  @scala.inline
-  def apply(image1: String, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Compare two images with options
     * @param image1 The first image
@@ -26,71 +24,43 @@ object mod {
     * @param options The options passed to looksSame function
     * @param callback Call when finish compare
     */
-  @scala.inline
-  def apply(image1: String, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: String, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: BoundedImage, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(image1: Buffer, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: String, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: BoundedImage, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(image1: Buffer, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("looks-same", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def colors(color1: Color, color2: Color, options: Tolerance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("colors")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def colors(color1: Color, color2: Color, options: Tolerance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("colors")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createDiff(
+  inline def createDiff(
     options: CreateDiffAsBufferOptions,
     callback: js.Function2[/* error */ Error | Null, /* buffer */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ Error | Null, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ Error | Null, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * bounded image
@@ -109,20 +79,16 @@ object mod {
   }
   object BoundedImage {
     
-    @scala.inline
-    def apply(boundingBox: CoordBounds, source: String | Buffer): BoundedImage = {
+    inline def apply(boundingBox: CoordBounds, source: String | Buffer): BoundedImage = {
       val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundedImage]
     }
     
-    @scala.inline
-    implicit class BoundedImageMutableBuilder[Self <: BoundedImage] (val x: Self) extends AnyVal {
+    extension [Self <: BoundedImage](x: Self) {
       
-      @scala.inline
-      def setBoundingBox(value: CoordBounds): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+      inline def setBoundingBox(value: CoordBounds): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String | Buffer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | Buffer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,23 +114,18 @@ object mod {
   }
   object Color {
     
-    @scala.inline
-    def apply(B: Double, G: Double, R: Double): Color = {
+    inline def apply(B: Double, G: Double, R: Double): Color = {
       val __obj = js.Dynamic.literal(B = B.asInstanceOf[js.Any], G = G.asInstanceOf[js.Any], R = R.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,26 +156,20 @@ object mod {
   }
   object CoordBounds {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): CoordBounds = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): CoordBounds = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoordBounds]
     }
     
-    @scala.inline
-    implicit class CoordBoundsMutableBuilder[Self <: CoordBounds] (val x: Self) extends AnyVal {
+    extension [Self <: CoordBounds](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,8 +221,7 @@ object mod {
   }
   object CreateDiffAsBufferOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: String | Buffer | BoundedImage,
       highlightColor: String,
       reference: String | Buffer | BoundedImage
@@ -276,47 +230,33 @@ object mod {
       __obj.asInstanceOf[CreateDiffAsBufferOptions]
     }
     
-    @scala.inline
-    implicit class CreateDiffAsBufferOptionsMutableBuilder[Self <: CreateDiffAsBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateDiffAsBufferOptions](x: Self) {
       
-      @scala.inline
-      def setAntialiasingTolerance(value: Double): Self = StObject.set(x, "antialiasingTolerance", value.asInstanceOf[js.Any])
+      inline def setAntialiasingTolerance(value: Double): Self = StObject.set(x, "antialiasingTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAntialiasingToleranceUndefined: Self = StObject.set(x, "antialiasingTolerance", js.undefined)
+      inline def setAntialiasingToleranceUndefined: Self = StObject.set(x, "antialiasingTolerance", js.undefined)
       
-      @scala.inline
-      def setCurrent(value: String | Buffer | BoundedImage): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: String | Buffer | BoundedImage): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+      inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreAntialiasing(value: Boolean): Self = StObject.set(x, "ignoreAntialiasing", value.asInstanceOf[js.Any])
+      inline def setIgnoreAntialiasing(value: Boolean): Self = StObject.set(x, "ignoreAntialiasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreAntialiasingUndefined: Self = StObject.set(x, "ignoreAntialiasing", js.undefined)
+      inline def setIgnoreAntialiasingUndefined: Self = StObject.set(x, "ignoreAntialiasing", js.undefined)
       
-      @scala.inline
-      def setIgnoreCaret(value: Boolean): Self = StObject.set(x, "ignoreCaret", value.asInstanceOf[js.Any])
+      inline def setIgnoreCaret(value: Boolean): Self = StObject.set(x, "ignoreCaret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCaretUndefined: Self = StObject.set(x, "ignoreCaret", js.undefined)
+      inline def setIgnoreCaretUndefined: Self = StObject.set(x, "ignoreCaret", js.undefined)
       
-      @scala.inline
-      def setReference(value: String | Buffer | BoundedImage): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: String | Buffer | BoundedImage): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+      inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     }
   }
   
@@ -334,8 +274,7 @@ object mod {
   }
   object CreateDiffOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: String | Buffer | BoundedImage,
       diff: String,
       highlightColor: String,
@@ -345,11 +284,9 @@ object mod {
       __obj.asInstanceOf[CreateDiffOptions]
     }
     
-    @scala.inline
-    implicit class CreateDiffOptionsMutableBuilder[Self <: CreateDiffOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateDiffOptions](x: Self) {
       
-      @scala.inline
-      def setDiff(value: String): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      inline def setDiff(value: String): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
     }
   }
   
@@ -419,68 +356,48 @@ object mod {
   }
   object LooksSameOptions {
     
-    @scala.inline
-    def apply(): LooksSameOptions = {
+    inline def apply(): LooksSameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LooksSameOptions]
     }
     
-    @scala.inline
-    implicit class LooksSameOptionsMutableBuilder[Self <: LooksSameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LooksSameOptions](x: Self) {
       
-      @scala.inline
-      def setAntialiasingTolerance(value: Double): Self = StObject.set(x, "antialiasingTolerance", value.asInstanceOf[js.Any])
+      inline def setAntialiasingTolerance(value: Double): Self = StObject.set(x, "antialiasingTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAntialiasingToleranceUndefined: Self = StObject.set(x, "antialiasingTolerance", js.undefined)
+      inline def setAntialiasingToleranceUndefined: Self = StObject.set(x, "antialiasingTolerance", js.undefined)
       
-      @scala.inline
-      def setClustersSize(value: Double): Self = StObject.set(x, "clustersSize", value.asInstanceOf[js.Any])
+      inline def setClustersSize(value: Double): Self = StObject.set(x, "clustersSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClustersSizeUndefined: Self = StObject.set(x, "clustersSize", js.undefined)
+      inline def setClustersSizeUndefined: Self = StObject.set(x, "clustersSize", js.undefined)
       
-      @scala.inline
-      def setIgnoreAntialiasing(value: Boolean): Self = StObject.set(x, "ignoreAntialiasing", value.asInstanceOf[js.Any])
+      inline def setIgnoreAntialiasing(value: Boolean): Self = StObject.set(x, "ignoreAntialiasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreAntialiasingUndefined: Self = StObject.set(x, "ignoreAntialiasing", js.undefined)
+      inline def setIgnoreAntialiasingUndefined: Self = StObject.set(x, "ignoreAntialiasing", js.undefined)
       
-      @scala.inline
-      def setIgnoreCaret(value: Boolean): Self = StObject.set(x, "ignoreCaret", value.asInstanceOf[js.Any])
+      inline def setIgnoreCaret(value: Boolean): Self = StObject.set(x, "ignoreCaret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCaretUndefined: Self = StObject.set(x, "ignoreCaret", js.undefined)
+      inline def setIgnoreCaretUndefined: Self = StObject.set(x, "ignoreCaret", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setShouldCluster(value: Boolean): Self = StObject.set(x, "shouldCluster", value.asInstanceOf[js.Any])
+      inline def setShouldCluster(value: Boolean): Self = StObject.set(x, "shouldCluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldClusterUndefined: Self = StObject.set(x, "shouldCluster", js.undefined)
+      inline def setShouldClusterUndefined: Self = StObject.set(x, "shouldCluster", js.undefined)
       
-      @scala.inline
-      def setStopOnFirstFail(value: Boolean): Self = StObject.set(x, "stopOnFirstFail", value.asInstanceOf[js.Any])
+      inline def setStopOnFirstFail(value: Boolean): Self = StObject.set(x, "stopOnFirstFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnFirstFailUndefined: Self = StObject.set(x, "stopOnFirstFail", js.undefined)
+      inline def setStopOnFirstFailUndefined: Self = StObject.set(x, "stopOnFirstFail", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+      inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     }
   }
   
@@ -506,35 +423,26 @@ object mod {
   }
   object LooksSameResult {
     
-    @scala.inline
-    def apply(): LooksSameResult = {
+    inline def apply(): LooksSameResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LooksSameResult]
     }
     
-    @scala.inline
-    implicit class LooksSameResultMutableBuilder[Self <: LooksSameResult] (val x: Self) extends AnyVal {
+    extension [Self <: LooksSameResult](x: Self) {
       
-      @scala.inline
-      def setDiffBounds(value: CoordBounds): Self = StObject.set(x, "diffBounds", value.asInstanceOf[js.Any])
+      inline def setDiffBounds(value: CoordBounds): Self = StObject.set(x, "diffBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffBoundsUndefined: Self = StObject.set(x, "diffBounds", js.undefined)
+      inline def setDiffBoundsUndefined: Self = StObject.set(x, "diffBounds", js.undefined)
       
-      @scala.inline
-      def setDiffClusters(value: js.Array[CoordBounds]): Self = StObject.set(x, "diffClusters", value.asInstanceOf[js.Any])
+      inline def setDiffClusters(value: js.Array[CoordBounds]): Self = StObject.set(x, "diffClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffClustersUndefined: Self = StObject.set(x, "diffClusters", js.undefined)
+      inline def setDiffClustersUndefined: Self = StObject.set(x, "diffClusters", js.undefined)
       
-      @scala.inline
-      def setDiffClustersVarargs(value: CoordBounds*): Self = StObject.set(x, "diffClusters", js.Array(value :_*))
+      inline def setDiffClustersVarargs(value: CoordBounds*): Self = StObject.set(x, "diffClusters", js.Array(value :_*))
       
-      @scala.inline
-      def setEqual(value: Boolean): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+      inline def setEqual(value: Boolean): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEqualUndefined: Self = StObject.set(x, "equal", js.undefined)
+      inline def setEqualUndefined: Self = StObject.set(x, "equal", js.undefined)
     }
   }
 }

@@ -39,46 +39,33 @@ trait RuleGroupRuleGroupRulesSourceStatefulRuleHeader extends StObject {
 }
 object RuleGroupRuleGroupRulesSourceStatefulRuleHeader {
   
-  @scala.inline
-  def apply(direction: String): RuleGroupRuleGroupRulesSourceStatefulRuleHeader = {
+  inline def apply(direction: String): RuleGroupRuleGroupRulesSourceStatefulRuleHeader = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatefulRuleHeader]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleHeaderMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatefulRuleHeader] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatefulRuleHeader](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPort(value: String): Self = StObject.set(x, "destinationPort", value.asInstanceOf[js.Any])
+    inline def setDestinationPort(value: String): Self = StObject.set(x, "destinationPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPortUndefined: Self = StObject.set(x, "destinationPort", js.undefined)
+    inline def setDestinationPortUndefined: Self = StObject.set(x, "destinationPort", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePort(value: String): Self = StObject.set(x, "sourcePort", value.asInstanceOf[js.Any])
+    inline def setSourcePort(value: String): Self = StObject.set(x, "sourcePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePortUndefined: Self = StObject.set(x, "sourcePort", js.undefined)
+    inline def setSourcePortUndefined: Self = StObject.set(x, "sourcePort", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

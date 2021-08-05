@@ -23,31 +23,23 @@ trait Timing extends StObject {
 }
 object Timing {
   
-  @scala.inline
-  def apply(): Timing = {
+  inline def apply(): Timing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timing]
   }
   
-  @scala.inline
-  implicit class TimingMutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
+  extension [Self <: Timing](x: Self) {
     
-    @scala.inline
-    def setFinishTime(value: timestampUnix): Self = StObject.set(x, "FinishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: timestampUnix): Self = StObject.set(x, "FinishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeUndefined: Self = StObject.set(x, "FinishTime", js.undefined)
+    inline def setFinishTimeUndefined: Self = StObject.set(x, "FinishTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: timestampUnix): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: timestampUnix): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setSubmitTime(value: timestampUnix): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: timestampUnix): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
+    inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
   }
 }

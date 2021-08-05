@@ -107,19 +107,16 @@ object mod {
     /**
       * Create a WebRtcPeer as receive only.
       */
-    @scala.inline
-    def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerRecvonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
+    inline def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerRecvonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
     
     /**
       * Create a WebRtcPeer as send only.
       */
-    @scala.inline
-    def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
+    inline def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
     
     /**
       * Create a WebRtcPeer as send and receive.
       */
-    @scala.inline
-    def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendrecv")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
+    inline def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendrecv")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
   }
 }

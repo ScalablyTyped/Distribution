@@ -29,46 +29,33 @@ trait HighAvailabilityOptions extends StObject {
 }
 object HighAvailabilityOptions {
   
-  @scala.inline
-  def apply(): HighAvailabilityOptions = {
+  inline def apply(): HighAvailabilityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HighAvailabilityOptions]
   }
   
-  @scala.inline
-  implicit class HighAvailabilityOptionsMutableBuilder[Self <: HighAvailabilityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HighAvailabilityOptions](x: Self) {
     
-    @scala.inline
-    def setDomainsEnabled(value: Boolean): Self = StObject.set(x, "domainsEnabled", value.asInstanceOf[js.Any])
+    inline def setDomainsEnabled(value: Boolean): Self = StObject.set(x, "domainsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsEnabledUndefined: Self = StObject.set(x, "domainsEnabled", js.undefined)
+    inline def setDomainsEnabledUndefined: Self = StObject.set(x, "domainsEnabled", js.undefined)
     
-    @scala.inline
-    def setHa(value: Boolean): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
+    inline def setHa(value: Boolean): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaInterval(value: scala.Double): Self = StObject.set(x, "haInterval", value.asInstanceOf[js.Any])
+    inline def setHaInterval(value: scala.Double): Self = StObject.set(x, "haInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaIntervalUndefined: Self = StObject.set(x, "haInterval", js.undefined)
+    inline def setHaIntervalUndefined: Self = StObject.set(x, "haInterval", js.undefined)
     
-    @scala.inline
-    def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
+    inline def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceTags(value: js.Array[String]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
+    inline def setReadPreferenceTags(value: js.Array[String]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceTagsUndefined: Self = StObject.set(x, "readPreferenceTags", js.undefined)
+    inline def setReadPreferenceTagsUndefined: Self = StObject.set(x, "readPreferenceTags", js.undefined)
     
-    @scala.inline
-    def setReadPreferenceTagsVarargs(value: String*): Self = StObject.set(x, "readPreferenceTags", js.Array(value :_*))
+    inline def setReadPreferenceTagsVarargs(value: String*): Self = StObject.set(x, "readPreferenceTags", js.Array(value :_*))
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

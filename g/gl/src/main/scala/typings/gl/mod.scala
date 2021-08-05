@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(width: Double, height: Double): WebGLRenderingContext & StackGLExtension = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext & StackGLExtension]
-  @scala.inline
-  def apply(width: Double, height: Double, options: WebGLContextAttributes): WebGLRenderingContext & StackGLExtension = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext & StackGLExtension]
+  inline def apply(width: Double, height: Double): WebGLRenderingContext & StackGLExtension = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext & StackGLExtension]
+  inline def apply(width: Double, height: Double, options: WebGLContextAttributes): WebGLRenderingContext & StackGLExtension = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext & StackGLExtension]
   
   @JSImport("gl", JSImport.Namespace)
   @js.native
@@ -26,17 +24,14 @@ object mod {
   }
   object STACKGLDestroyContext {
     
-    @scala.inline
-    def apply(destroy: () => Unit): STACKGLDestroyContext = {
+    inline def apply(destroy: () => Unit): STACKGLDestroyContext = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[STACKGLDestroyContext]
     }
     
-    @scala.inline
-    implicit class STACKGLDestroyContextMutableBuilder[Self <: STACKGLDestroyContext] (val x: Self) extends AnyVal {
+    extension [Self <: STACKGLDestroyContext](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
   
@@ -46,17 +41,14 @@ object mod {
   }
   object STACKGLResizeDrawingbuffer {
     
-    @scala.inline
-    def apply(resize: (GLint, GLint) => Unit): STACKGLResizeDrawingbuffer = {
+    inline def apply(resize: (GLint, GLint) => Unit): STACKGLResizeDrawingbuffer = {
       val __obj = js.Dynamic.literal(resize = js.Any.fromFunction2(resize))
       __obj.asInstanceOf[STACKGLResizeDrawingbuffer]
     }
     
-    @scala.inline
-    implicit class STACKGLResizeDrawingbufferMutableBuilder[Self <: STACKGLResizeDrawingbuffer] (val x: Self) extends AnyVal {
+    extension [Self <: STACKGLResizeDrawingbuffer](x: Self) {
       
-      @scala.inline
-      def setResize(value: (GLint, GLint) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+      inline def setResize(value: (GLint, GLint) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
     }
   }
   

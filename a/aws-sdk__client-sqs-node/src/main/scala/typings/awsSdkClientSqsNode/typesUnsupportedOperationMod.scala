@@ -18,17 +18,14 @@ object typesUnsupportedOperationMod {
   }
   object UnsupportedOperation {
     
-    @scala.inline
-    def apply(): UnsupportedOperation = {
+    inline def apply(): UnsupportedOperation = {
       val __obj = js.Dynamic.literal(name = "UnsupportedOperation")
       __obj.asInstanceOf[UnsupportedOperation]
     }
     
-    @scala.inline
-    implicit class UnsupportedOperationMutableBuilder[Self <: UnsupportedOperation] (val x: Self) extends AnyVal {
+    extension [Self <: UnsupportedOperation](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,25 +14,19 @@ trait LicensePost[T]
 }
 object LicensePost {
   
-  @scala.inline
-  def apply[T](): LicensePost[T] = {
+  inline def apply[T](): LicensePost[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicensePost[T]]
   }
   
-  @scala.inline
-  implicit class LicensePostMutableBuilder[Self <: LicensePost[?], T] (val x: Self & LicensePost[T]) extends AnyVal {
+  extension [Self <: LicensePost[?], T](x: Self & LicensePost[T]) {
     
-    @scala.inline
-    def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
+    inline def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
+    inline def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

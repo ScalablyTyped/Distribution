@@ -53,8 +53,7 @@ trait MonitoringJobDefinition extends StObject {
 }
 object MonitoringJobDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MonitoringAppSpecification: MonitoringAppSpecification,
     MonitoringInputs: MonitoringInputs,
     MonitoringOutputConfig: MonitoringOutputConfig,
@@ -65,49 +64,34 @@ object MonitoringJobDefinition {
     __obj.asInstanceOf[MonitoringJobDefinition]
   }
   
-  @scala.inline
-  implicit class MonitoringJobDefinitionMutableBuilder[Self <: MonitoringJobDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringJobDefinition](x: Self) {
     
-    @scala.inline
-    def setBaselineConfig(value: MonitoringBaselineConfig): Self = StObject.set(x, "BaselineConfig", value.asInstanceOf[js.Any])
+    inline def setBaselineConfig(value: MonitoringBaselineConfig): Self = StObject.set(x, "BaselineConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineConfigUndefined: Self = StObject.set(x, "BaselineConfig", js.undefined)
+    inline def setBaselineConfigUndefined: Self = StObject.set(x, "BaselineConfig", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: MonitoringEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: MonitoringEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    @scala.inline
-    def setMonitoringAppSpecification(value: MonitoringAppSpecification): Self = StObject.set(x, "MonitoringAppSpecification", value.asInstanceOf[js.Any])
+    inline def setMonitoringAppSpecification(value: MonitoringAppSpecification): Self = StObject.set(x, "MonitoringAppSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringInputs(value: MonitoringInputs): Self = StObject.set(x, "MonitoringInputs", value.asInstanceOf[js.Any])
+    inline def setMonitoringInputs(value: MonitoringInputs): Self = StObject.set(x, "MonitoringInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringInputsVarargs(value: MonitoringInput*): Self = StObject.set(x, "MonitoringInputs", js.Array(value :_*))
+    inline def setMonitoringInputsVarargs(value: MonitoringInput*): Self = StObject.set(x, "MonitoringInputs", js.Array(value :_*))
     
-    @scala.inline
-    def setMonitoringOutputConfig(value: MonitoringOutputConfig): Self = StObject.set(x, "MonitoringOutputConfig", value.asInstanceOf[js.Any])
+    inline def setMonitoringOutputConfig(value: MonitoringOutputConfig): Self = StObject.set(x, "MonitoringOutputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringResources(value: MonitoringResources): Self = StObject.set(x, "MonitoringResources", value.asInstanceOf[js.Any])
+    inline def setMonitoringResources(value: MonitoringResources): Self = StObject.set(x, "MonitoringResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkConfig(value: NetworkConfig): Self = StObject.set(x, "NetworkConfig", value.asInstanceOf[js.Any])
+    inline def setNetworkConfig(value: NetworkConfig): Self = StObject.set(x, "NetworkConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkConfigUndefined: Self = StObject.set(x, "NetworkConfig", js.undefined)
+    inline def setNetworkConfigUndefined: Self = StObject.set(x, "NetworkConfig", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppingCondition(value: MonitoringStoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
+    inline def setStoppingCondition(value: MonitoringStoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppingConditionUndefined: Self = StObject.set(x, "StoppingCondition", js.undefined)
+    inline def setStoppingConditionUndefined: Self = StObject.set(x, "StoppingCondition", js.undefined)
   }
 }

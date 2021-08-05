@@ -17,8 +17,7 @@ trait IELangDBEvents extends StObject {
 }
 object IELangDBEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     insert: JQueryDeferred[js.Any],
     modify: JQueryDeferred[js.Any],
     remove: JQueryDeferred[js.Any],
@@ -28,19 +27,14 @@ object IELangDBEvents {
     __obj.asInstanceOf[IELangDBEvents]
   }
   
-  @scala.inline
-  implicit class IELangDBEventsMutableBuilder[Self <: IELangDBEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IELangDBEvents](x: Self) {
     
-    @scala.inline
-    def setInsert(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModify(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+    inline def setModify(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

@@ -27,38 +27,32 @@ object imagePickerStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.closeText")
     @js.native
     def closeText: FontWeight = js.native
-    @scala.inline
-    def closeText_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeText")(x.asInstanceOf[js.Any])
+    inline def closeText_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.closeWrap")
     @js.native
     def closeWrap: JustifyContent = js.native
-    @scala.inline
-    def closeWrap_=(x: JustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeWrap")(x.asInstanceOf[js.Any])
+    inline def closeWrap_=(x: JustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.container")
     @js.native
     def container: FlexWrap = js.native
-    @scala.inline
-    def container_=(x: FlexWrap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
+    inline def container_=(x: FlexWrap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.image")
     @js.native
     def image: BorderRadiusOverflow = js.native
-    @scala.inline
-    def image_=(x: BorderRadiusOverflow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
+    inline def image_=(x: BorderRadiusOverflow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.item")
     @js.native
     def item: MarginBottom = js.native
-    @scala.inline
-    def item_=(x: MarginBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("item")(x.asInstanceOf[js.Any])
+    inline def item_=(x: MarginBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.plusText")
     @js.native
     def plusText: BackgroundColorColor = js.native
-    @scala.inline
-    def plusText_=(x: BackgroundColorColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusText")(x.asInstanceOf[js.Any])
+    inline def plusText_=(x: BackgroundColorColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.plusWrap")
     @js.native
@@ -67,23 +61,19 @@ object imagePickerStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.plusWrapHighlight")
     @js.native
     def plusWrapHighlight: BorderColor = js.native
-    @scala.inline
-    def plusWrapHighlight_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusWrapHighlight")(x.asInstanceOf[js.Any])
+    inline def plusWrapHighlight_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusWrapHighlight")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.plusWrapNormal")
     @js.native
     def plusWrapNormal: BorderColor = js.native
-    @scala.inline
-    def plusWrapNormal_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusWrapNormal")(x.asInstanceOf[js.Any])
+    inline def plusWrapNormal_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusWrapNormal")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def plusWrap_=(x: AlignItemsBorderRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusWrap")(x.asInstanceOf[js.Any])
+    inline def plusWrap_=(x: AlignItemsBorderRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/image-picker/style/index.native", "default.size")
     @js.native
     def size: HeightWidth = js.native
-    @scala.inline
-    def size_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+    inline def size_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
   }
   
   trait IImagePickerStyle extends StObject {
@@ -110,8 +100,7 @@ object imagePickerStyleIndexNativeMod {
   }
   object IImagePickerStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeText: TextStyle,
       closeWrap: ViewStyle,
       container: ViewStyle,
@@ -127,38 +116,27 @@ object imagePickerStyleIndexNativeMod {
       __obj.asInstanceOf[IImagePickerStyle]
     }
     
-    @scala.inline
-    implicit class IImagePickerStyleMutableBuilder[Self <: IImagePickerStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IImagePickerStyle](x: Self) {
       
-      @scala.inline
-      def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+      inline def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
+      inline def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: ImageStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ImageStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusText(value: TextStyle): Self = StObject.set(x, "plusText", value.asInstanceOf[js.Any])
+      inline def setPlusText(value: TextStyle): Self = StObject.set(x, "plusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusWrap(value: ViewStyle): Self = StObject.set(x, "plusWrap", value.asInstanceOf[js.Any])
+      inline def setPlusWrap(value: ViewStyle): Self = StObject.set(x, "plusWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusWrapHighlight(value: ViewStyle): Self = StObject.set(x, "plusWrapHighlight", value.asInstanceOf[js.Any])
+      inline def setPlusWrapHighlight(value: ViewStyle): Self = StObject.set(x, "plusWrapHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusWrapNormal(value: ViewStyle): Self = StObject.set(x, "plusWrapNormal", value.asInstanceOf[js.Any])
+      inline def setPlusWrapNormal(value: ViewStyle): Self = StObject.set(x, "plusWrapNormal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: ViewStyle): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ViewStyle): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

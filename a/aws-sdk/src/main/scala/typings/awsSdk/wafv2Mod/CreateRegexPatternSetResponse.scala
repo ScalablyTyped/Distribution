@@ -13,19 +13,15 @@ trait CreateRegexPatternSetResponse extends StObject {
 }
 object CreateRegexPatternSetResponse {
   
-  @scala.inline
-  def apply(): CreateRegexPatternSetResponse = {
+  inline def apply(): CreateRegexPatternSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRegexPatternSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateRegexPatternSetResponseMutableBuilder[Self <: CreateRegexPatternSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRegexPatternSetResponse](x: Self) {
     
-    @scala.inline
-    def setSummary(value: RegexPatternSetSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: RegexPatternSetSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
   }
 }

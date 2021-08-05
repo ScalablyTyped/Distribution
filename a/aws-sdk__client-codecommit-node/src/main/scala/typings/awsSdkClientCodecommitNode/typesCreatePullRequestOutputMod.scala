@@ -26,20 +26,16 @@ object typesCreatePullRequestOutputMod {
   }
   object CreatePullRequestOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, pullRequest: UnmarshalledPullRequest): CreatePullRequestOutput = {
+    inline def apply($metadata: ResponseMetadata, pullRequest: UnmarshalledPullRequest): CreatePullRequestOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequest = pullRequest.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreatePullRequestOutput]
     }
     
-    @scala.inline
-    implicit class CreatePullRequestOutputMutableBuilder[Self <: CreatePullRequestOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreatePullRequestOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequest(value: UnmarshalledPullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+      inline def setPullRequest(value: UnmarshalledPullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     }
   }
 }

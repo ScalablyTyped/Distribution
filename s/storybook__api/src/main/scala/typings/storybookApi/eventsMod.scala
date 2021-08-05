@@ -15,8 +15,7 @@ object eventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEventMetadata(context: Meta, fullAPI: API): Ref = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventMetadata")(context.asInstanceOf[js.Any], fullAPI.asInstanceOf[js.Any])).asInstanceOf[Ref]
+  inline def getEventMetadata(context: Meta, fullAPI: API): Ref = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventMetadata")(context.asInstanceOf[js.Any], fullAPI.asInstanceOf[js.Any])).asInstanceOf[Ref]
   
   trait Meta extends StObject {
     
@@ -36,54 +35,39 @@ object eventsMod {
   }
   object Meta {
     
-    @scala.inline
-    def apply(`type`: String): Meta = {
+    inline def apply(`type`: String): Meta = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Meta]
     }
     
-    @scala.inline
-    implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+    extension [Self <: Meta](x: Self) {
       
-      @scala.inline
-      def setRef(value: ComposedRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: ComposedRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLocation(value: String): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
+      inline def setSourceLocation(value: String): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
+      inline def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
       
-      @scala.inline
-      def setSourceType(value: local | external): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: local | external): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     }
   }
 }

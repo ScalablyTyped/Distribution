@@ -22,31 +22,23 @@ trait GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1GcsFilesetSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1GcsFilesetSpec = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1GcsFilesetSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1GcsFilesetSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1GcsFilesetSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1GcsFilesetSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1GcsFilesetSpec](x: Self) {
     
-    @scala.inline
-    def setFilePatterns(value: js.Array[String]): Self = StObject.set(x, "filePatterns", value.asInstanceOf[js.Any])
+    inline def setFilePatterns(value: js.Array[String]): Self = StObject.set(x, "filePatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePatternsUndefined: Self = StObject.set(x, "filePatterns", js.undefined)
+    inline def setFilePatternsUndefined: Self = StObject.set(x, "filePatterns", js.undefined)
     
-    @scala.inline
-    def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value :_*))
+    inline def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setSampleGcsFileSpecs(value: js.Array[GoogleCloudDatacatalogV1beta1GcsFileSpec]): Self = StObject.set(x, "sampleGcsFileSpecs", value.asInstanceOf[js.Any])
+    inline def setSampleGcsFileSpecs(value: js.Array[GoogleCloudDatacatalogV1beta1GcsFileSpec]): Self = StObject.set(x, "sampleGcsFileSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleGcsFileSpecsUndefined: Self = StObject.set(x, "sampleGcsFileSpecs", js.undefined)
+    inline def setSampleGcsFileSpecsUndefined: Self = StObject.set(x, "sampleGcsFileSpecs", js.undefined)
     
-    @scala.inline
-    def setSampleGcsFileSpecsVarargs(value: GoogleCloudDatacatalogV1beta1GcsFileSpec*): Self = StObject.set(x, "sampleGcsFileSpecs", js.Array(value :_*))
+    inline def setSampleGcsFileSpecsVarargs(value: GoogleCloudDatacatalogV1beta1GcsFileSpec*): Self = StObject.set(x, "sampleGcsFileSpecs", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait Cvss extends StObject {
 }
 object Cvss {
   
-  @scala.inline
-  def apply(): Cvss = {
+  inline def apply(): Cvss = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cvss]
   }
   
-  @scala.inline
-  implicit class CvssMutableBuilder[Self <: Cvss] (val x: Self) extends AnyVal {
+  extension [Self <: Cvss](x: Self) {
     
-    @scala.inline
-    def setBaseScore(value: Double): Self = StObject.set(x, "BaseScore", value.asInstanceOf[js.Any])
+    inline def setBaseScore(value: Double): Self = StObject.set(x, "BaseScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseScoreUndefined: Self = StObject.set(x, "BaseScore", js.undefined)
+    inline def setBaseScoreUndefined: Self = StObject.set(x, "BaseScore", js.undefined)
     
-    @scala.inline
-    def setBaseVector(value: NonEmptyString): Self = StObject.set(x, "BaseVector", value.asInstanceOf[js.Any])
+    inline def setBaseVector(value: NonEmptyString): Self = StObject.set(x, "BaseVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVectorUndefined: Self = StObject.set(x, "BaseVector", js.undefined)
+    inline def setBaseVectorUndefined: Self = StObject.set(x, "BaseVector", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

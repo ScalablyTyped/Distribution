@@ -22,8 +22,7 @@ object utilObjectUtilsMod {
       * @param target The target object to copy to.
       * @param source The source object from which to copy properties.
       */
-    @scala.inline
-    def assign[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
+    inline def assign[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
     /**
       * Copy the values of all of the enumerable own properties from one or more source objects to a
       * target object. Returns the target object.
@@ -31,8 +30,7 @@ object utilObjectUtilsMod {
       * @param source1 The first source object from which to copy properties.
       * @param source2 The second source object from which to copy properties.
       */
-    @scala.inline
-    def assign[T, U, V](target: T, source1: U, source2: V): T & U & V = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T & U & V]
+    inline def assign[T, U, V](target: T, source1: U, source2: V): T & U & V = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T & U & V]
     /**
       * Copy the values of all of the enumerable own properties from one or more source objects to a
       * target object. Returns the target object.
@@ -41,7 +39,6 @@ object utilObjectUtilsMod {
       * @param source2 The second source object from which to copy properties.
       * @param source3 The third source object from which to copy properties.
       */
-    @scala.inline
-    def assign[T, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T & U & V & W]
+    inline def assign[T, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T & U & V & W]
   }
 }

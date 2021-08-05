@@ -11,8 +11,7 @@ trait SecondaryFieldDef[F /* <: Field */]
      with TitleMixins
 object SecondaryFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): SecondaryFieldDef[F] = {
+  inline def apply[F /* <: Field */](): SecondaryFieldDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecondaryFieldDef[F]]
   }

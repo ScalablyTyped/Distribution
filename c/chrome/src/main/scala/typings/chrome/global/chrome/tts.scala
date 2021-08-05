@@ -20,31 +20,20 @@ object tts {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVoices(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")().asInstanceOf[Unit]
-  @scala.inline
-  def getVoices(callback: js.Function1[/* voices */ js.Array[TtsVoice], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getVoices(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")().asInstanceOf[Unit]
+  inline def getVoices(callback: js.Function1[/* voices */ js.Array[TtsVoice], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isSpeaking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpeaking")().asInstanceOf[Unit]
-  @scala.inline
-  def isSpeaking(callback: js.Function1[/* speaking */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpeaking")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def isSpeaking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpeaking")().asInstanceOf[Unit]
+  inline def isSpeaking(callback: js.Function1[/* speaking */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpeaking")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def pause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[Unit]
+  inline def pause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[Unit]
   
-  @scala.inline
-  def resume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")().asInstanceOf[Unit]
+  inline def resume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")().asInstanceOf[Unit]
   
-  @scala.inline
-  def speak(utterance: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def speak(utterance: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def speak(utterance: String, options: SpeakOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def speak(utterance: String, options: SpeakOptions, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def speak(utterance: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def speak(utterance: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def speak(utterance: String, options: SpeakOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def speak(utterance: String, options: SpeakOptions, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(utterance.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
 }

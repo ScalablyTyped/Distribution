@@ -13,19 +13,15 @@ trait PlotTreemapTraverseUpButtonOptions extends StObject {
 }
 object PlotTreemapTraverseUpButtonOptions {
   
-  @scala.inline
-  def apply(): PlotTreemapTraverseUpButtonOptions = {
+  inline def apply(): PlotTreemapTraverseUpButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTreemapTraverseUpButtonOptions]
   }
   
-  @scala.inline
-  implicit class PlotTreemapTraverseUpButtonOptionsMutableBuilder[Self <: PlotTreemapTraverseUpButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTreemapTraverseUpButtonOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: PlotTreemapTraverseUpButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PlotTreemapTraverseUpButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

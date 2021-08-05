@@ -44,31 +44,23 @@ trait AUTO extends StObject {
 }
 object AUTO {
   
-  @scala.inline
-  def apply(): AUTO = {
+  inline def apply(): AUTO = {
     val __obj = js.Dynamic.literal(AUTO = 3, DYNAMIC = 2, FIXED = 4, NONE = 0, STATIC = 1, UNKNOWN = 5)
     __obj.asInstanceOf[AUTO]
   }
   
-  @scala.inline
-  implicit class AUTOMutableBuilder[Self <: AUTO] (val x: Self) extends AnyVal {
+  extension [Self <: AUTO](x: Self) {
     
-    @scala.inline
-    def setAUTO(value: `3`): Self = StObject.set(x, "AUTO", value.asInstanceOf[js.Any])
+    inline def setAUTO(value: `3`): Self = StObject.set(x, "AUTO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDYNAMIC(value: `2`): Self = StObject.set(x, "DYNAMIC", value.asInstanceOf[js.Any])
+    inline def setDYNAMIC(value: `2`): Self = StObject.set(x, "DYNAMIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFIXED(value: `4`): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
+    inline def setFIXED(value: `4`): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTATIC(value: `1`): Self = StObject.set(x, "STATIC", value.asInstanceOf[js.Any])
+    inline def setSTATIC(value: `1`): Self = StObject.set(x, "STATIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNKNOWN(value: `5`): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setUNKNOWN(value: `5`): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

@@ -88,109 +88,75 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(): Image = {
+  inline def apply(): Image = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
+    inline def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
     
-    @scala.inline
-    def setDistributionConfiguration(value: DistributionConfiguration): Self = StObject.set(x, "distributionConfiguration", value.asInstanceOf[js.Any])
+    inline def setDistributionConfiguration(value: DistributionConfiguration): Self = StObject.set(x, "distributionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionConfigurationUndefined: Self = StObject.set(x, "distributionConfiguration", js.undefined)
+    inline def setDistributionConfigurationUndefined: Self = StObject.set(x, "distributionConfiguration", js.undefined)
     
-    @scala.inline
-    def setEnhancedImageMetadataEnabled(value: NullableBoolean): Self = StObject.set(x, "enhancedImageMetadataEnabled", value.asInstanceOf[js.Any])
+    inline def setEnhancedImageMetadataEnabled(value: NullableBoolean): Self = StObject.set(x, "enhancedImageMetadataEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedImageMetadataEnabledUndefined: Self = StObject.set(x, "enhancedImageMetadataEnabled", js.undefined)
+    inline def setEnhancedImageMetadataEnabledUndefined: Self = StObject.set(x, "enhancedImageMetadataEnabled", js.undefined)
     
-    @scala.inline
-    def setImageRecipe(value: ImageRecipe): Self = StObject.set(x, "imageRecipe", value.asInstanceOf[js.Any])
+    inline def setImageRecipe(value: ImageRecipe): Self = StObject.set(x, "imageRecipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageRecipeUndefined: Self = StObject.set(x, "imageRecipe", js.undefined)
+    inline def setImageRecipeUndefined: Self = StObject.set(x, "imageRecipe", js.undefined)
     
-    @scala.inline
-    def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
+    inline def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTestsConfigurationUndefined: Self = StObject.set(x, "imageTestsConfiguration", js.undefined)
+    inline def setImageTestsConfigurationUndefined: Self = StObject.set(x, "imageTestsConfiguration", js.undefined)
     
-    @scala.inline
-    def setInfrastructureConfiguration(value: InfrastructureConfiguration): Self = StObject.set(x, "infrastructureConfiguration", value.asInstanceOf[js.Any])
+    inline def setInfrastructureConfiguration(value: InfrastructureConfiguration): Self = StObject.set(x, "infrastructureConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfrastructureConfigurationUndefined: Self = StObject.set(x, "infrastructureConfiguration", js.undefined)
+    inline def setInfrastructureConfigurationUndefined: Self = StObject.set(x, "infrastructureConfiguration", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOsVersion(value: OsVersion): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: OsVersion): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
+    inline def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
-    @scala.inline
-    def setOutputResources(value: OutputResources): Self = StObject.set(x, "outputResources", value.asInstanceOf[js.Any])
+    inline def setOutputResources(value: OutputResources): Self = StObject.set(x, "outputResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputResourcesUndefined: Self = StObject.set(x, "outputResources", js.undefined)
+    inline def setOutputResourcesUndefined: Self = StObject.set(x, "outputResources", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setSourcePipelineArn(value: Arn): Self = StObject.set(x, "sourcePipelineArn", value.asInstanceOf[js.Any])
+    inline def setSourcePipelineArn(value: Arn): Self = StObject.set(x, "sourcePipelineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePipelineArnUndefined: Self = StObject.set(x, "sourcePipelineArn", js.undefined)
+    inline def setSourcePipelineArnUndefined: Self = StObject.set(x, "sourcePipelineArn", js.undefined)
     
-    @scala.inline
-    def setSourcePipelineName(value: ResourceName): Self = StObject.set(x, "sourcePipelineName", value.asInstanceOf[js.Any])
+    inline def setSourcePipelineName(value: ResourceName): Self = StObject.set(x, "sourcePipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePipelineNameUndefined: Self = StObject.set(x, "sourcePipelineName", js.undefined)
+    inline def setSourcePipelineNameUndefined: Self = StObject.set(x, "sourcePipelineName", js.undefined)
     
-    @scala.inline
-    def setState(value: ImageState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ImageState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setVersion(value: VersionNumber): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: VersionNumber): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

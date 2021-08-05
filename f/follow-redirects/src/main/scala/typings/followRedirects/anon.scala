@@ -15,26 +15,20 @@ object anon {
   }
   object Http {
     
-    @scala.inline
-    def apply(): Http = {
+    inline def apply(): Http = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Http]
     }
     
-    @scala.inline
-    implicit class HttpMutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
+    extension [Self <: Http](x: Self) {
       
-      @scala.inline
-      def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
-      @scala.inline
-      def setHttps(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     }
   }
   
@@ -44,20 +38,16 @@ object anon {
   }
   object Location {
     
-    @scala.inline
-    def apply(): Location = {
+    inline def apply(): Location = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
 }

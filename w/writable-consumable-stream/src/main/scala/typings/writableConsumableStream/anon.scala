@@ -14,20 +14,16 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply[T](done: Boolean, value: T): Done[T] = {
+    inline def apply[T](done: Boolean, value: T): Done[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done[T]]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
+    extension [Self <: Done[?], T](x: Self & Done[T]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

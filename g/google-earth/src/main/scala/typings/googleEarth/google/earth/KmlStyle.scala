@@ -42,8 +42,7 @@ trait KmlStyle
 }
 object KmlStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -70,25 +69,18 @@ object KmlStyle {
     __obj.asInstanceOf[KmlStyle]
   }
   
-  @scala.inline
-  implicit class KmlStyleMutableBuilder[Self <: KmlStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlStyle](x: Self) {
     
-    @scala.inline
-    def setGetBalloonStyle(value: () => KmlBalloonStyle): Self = StObject.set(x, "getBalloonStyle", js.Any.fromFunction0(value))
+    inline def setGetBalloonStyle(value: () => KmlBalloonStyle): Self = StObject.set(x, "getBalloonStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIconStyle(value: () => KmlIconStyle): Self = StObject.set(x, "getIconStyle", js.Any.fromFunction0(value))
+    inline def setGetIconStyle(value: () => KmlIconStyle): Self = StObject.set(x, "getIconStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelStyle(value: () => KmlLabelStyle): Self = StObject.set(x, "getLabelStyle", js.Any.fromFunction0(value))
+    inline def setGetLabelStyle(value: () => KmlLabelStyle): Self = StObject.set(x, "getLabelStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLineStyle(value: () => KmlLineStyle): Self = StObject.set(x, "getLineStyle", js.Any.fromFunction0(value))
+    inline def setGetLineStyle(value: () => KmlLineStyle): Self = StObject.set(x, "getLineStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetListStyle(value: () => KmlListStyle): Self = StObject.set(x, "getListStyle", js.Any.fromFunction0(value))
+    inline def setGetListStyle(value: () => KmlListStyle): Self = StObject.set(x, "getListStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPolyStyle(value: () => KmlPolyStyle): Self = StObject.set(x, "getPolyStyle", js.Any.fromFunction0(value))
+    inline def setGetPolyStyle(value: () => KmlPolyStyle): Self = StObject.set(x, "getPolyStyle", js.Any.fromFunction0(value))
   }
 }

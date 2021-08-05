@@ -12,19 +12,15 @@ trait BuyTradeRequest extends StObject {
 }
 object BuyTradeRequest {
   
-  @scala.inline
-  def apply(returnUrl: String, trade: BuyTrade): BuyTradeRequest = {
+  inline def apply(returnUrl: String, trade: BuyTrade): BuyTradeRequest = {
     val __obj = js.Dynamic.literal(returnUrl = returnUrl.asInstanceOf[js.Any], trade = trade.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuyTradeRequest]
   }
   
-  @scala.inline
-  implicit class BuyTradeRequestMutableBuilder[Self <: BuyTradeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BuyTradeRequest](x: Self) {
     
-    @scala.inline
-    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
+    inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrade(value: BuyTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
+    inline def setTrade(value: BuyTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
   }
 }

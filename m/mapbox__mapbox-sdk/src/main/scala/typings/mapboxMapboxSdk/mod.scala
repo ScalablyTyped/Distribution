@@ -31,26 +31,20 @@ object mod {
   }
   object MapiClient {
     
-    @scala.inline
-    def apply(accessToken: String, createRequest: js.Any => MapiRequest): MapiClient = {
+    inline def apply(accessToken: String, createRequest: js.Any => MapiRequest): MapiClient = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], createRequest = js.Any.fromFunction1(createRequest))
       __obj.asInstanceOf[MapiClient]
     }
     
-    @scala.inline
-    implicit class MapiClientMutableBuilder[Self <: MapiClient] (val x: Self) extends AnyVal {
+    extension [Self <: MapiClient](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateRequest(value: js.Any => MapiRequest): Self = StObject.set(x, "createRequest", js.Any.fromFunction1(value))
+      inline def setCreateRequest(value: js.Any => MapiRequest): Self = StObject.set(x, "createRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     }
   }
   
@@ -62,23 +56,18 @@ object mod {
   }
   object SdkConfig {
     
-    @scala.inline
-    def apply(accessToken: String): SdkConfig = {
+    inline def apply(accessToken: String): SdkConfig = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[SdkConfig]
     }
     
-    @scala.inline
-    implicit class SdkConfigMutableBuilder[Self <: SdkConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SdkConfig](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     }
   }
 }

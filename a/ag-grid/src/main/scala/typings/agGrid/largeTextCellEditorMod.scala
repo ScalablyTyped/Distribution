@@ -20,7 +20,7 @@ object largeTextCellEditorMod {
     @JSName("afterGuiAttached")
     def afterGuiAttached_MLargeTextCellEditor(): Unit = js.native
     
-    var focusAfterAttached: js.Any = js.native
+    /* private */ var focusAfterAttached: js.Any = js.native
     
     /** Return the final value - called by the grid once after editing is complete */
     /* CompleteClass */
@@ -34,9 +34,9 @@ object largeTextCellEditorMod {
     
     /* private */ def onKeyDown(event: js.Any): js.Any = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
     
-    var textarea: js.Any = js.native
+    /* private */ var textarea: js.Any = js.native
   }
   /* static members */
   object LargeTextCellEditor {
@@ -48,8 +48,7 @@ object largeTextCellEditorMod {
     @JSImport("ag-grid/dist/lib/rendering/cellEditors/largeTextCellEditor", "LargeTextCellEditor.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   @js.native

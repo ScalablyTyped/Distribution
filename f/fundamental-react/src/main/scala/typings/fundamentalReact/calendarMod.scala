@@ -41,83 +41,58 @@ object calendarMod {
   }
   object CalendarBaseProps {
     
-    @scala.inline
-    def apply(): CalendarBaseProps = {
+    inline def apply(): CalendarBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CalendarBaseProps]
     }
     
-    @scala.inline
-    implicit class CalendarBasePropsMutableBuilder[Self <: CalendarBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarBaseProps](x: Self) {
       
-      @scala.inline
-      def setBlockedDates(value: js.Array[Date]): Self = StObject.set(x, "blockedDates", value.asInstanceOf[js.Any])
+      inline def setBlockedDates(value: js.Array[Date]): Self = StObject.set(x, "blockedDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockedDatesUndefined: Self = StObject.set(x, "blockedDates", js.undefined)
+      inline def setBlockedDatesUndefined: Self = StObject.set(x, "blockedDates", js.undefined)
       
-      @scala.inline
-      def setBlockedDatesVarargs(value: Date*): Self = StObject.set(x, "blockedDates", js.Array(value :_*))
+      inline def setBlockedDatesVarargs(value: Date*): Self = StObject.set(x, "blockedDates", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableAfterDate(value: Date): Self = StObject.set(x, "disableAfterDate", value.asInstanceOf[js.Any])
+      inline def setDisableAfterDate(value: Date): Self = StObject.set(x, "disableAfterDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAfterDateUndefined: Self = StObject.set(x, "disableAfterDate", js.undefined)
+      inline def setDisableAfterDateUndefined: Self = StObject.set(x, "disableAfterDate", js.undefined)
       
-      @scala.inline
-      def setDisableBeforeDate(value: Date): Self = StObject.set(x, "disableBeforeDate", value.asInstanceOf[js.Any])
+      inline def setDisableBeforeDate(value: Date): Self = StObject.set(x, "disableBeforeDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableBeforeDateUndefined: Self = StObject.set(x, "disableBeforeDate", js.undefined)
+      inline def setDisableBeforeDateUndefined: Self = StObject.set(x, "disableBeforeDate", js.undefined)
       
-      @scala.inline
-      def setDisableFutureDates(value: Boolean): Self = StObject.set(x, "disableFutureDates", value.asInstanceOf[js.Any])
+      inline def setDisableFutureDates(value: Boolean): Self = StObject.set(x, "disableFutureDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFutureDatesUndefined: Self = StObject.set(x, "disableFutureDates", js.undefined)
+      inline def setDisableFutureDatesUndefined: Self = StObject.set(x, "disableFutureDates", js.undefined)
       
-      @scala.inline
-      def setDisablePastDates(value: Boolean): Self = StObject.set(x, "disablePastDates", value.asInstanceOf[js.Any])
+      inline def setDisablePastDates(value: Boolean): Self = StObject.set(x, "disablePastDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePastDatesUndefined: Self = StObject.set(x, "disablePastDates", js.undefined)
+      inline def setDisablePastDatesUndefined: Self = StObject.set(x, "disablePastDates", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setDisableWeekday(value: js.Array[String]): Self = StObject.set(x, "disableWeekday", value.asInstanceOf[js.Any])
+      inline def setDisableWeekday(value: js.Array[String]): Self = StObject.set(x, "disableWeekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWeekdayUndefined: Self = StObject.set(x, "disableWeekday", js.undefined)
+      inline def setDisableWeekdayUndefined: Self = StObject.set(x, "disableWeekday", js.undefined)
       
-      @scala.inline
-      def setDisableWeekdayVarargs(value: String*): Self = StObject.set(x, "disableWeekday", js.Array(value :_*))
+      inline def setDisableWeekdayVarargs(value: String*): Self = StObject.set(x, "disableWeekday", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableWeekends(value: Boolean): Self = StObject.set(x, "disableWeekends", value.asInstanceOf[js.Any])
+      inline def setDisableWeekends(value: Boolean): Self = StObject.set(x, "disableWeekends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWeekendsUndefined: Self = StObject.set(x, "disableWeekends", js.undefined)
+      inline def setDisableWeekendsUndefined: Self = StObject.set(x, "disableWeekends", js.undefined)
       
-      @scala.inline
-      def setDisabledDates(value: js.Array[Date]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+      inline def setDisabledDates(value: js.Array[Date]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
+      inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      @scala.inline
-      def setDisabledDatesVarargs(value: Date*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: Date*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalizedText(value: NextMonth): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: NextMonth): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
     }
   }
   
@@ -140,50 +115,36 @@ object calendarMod {
   }
   object CalendarProps {
     
-    @scala.inline
-    def apply(): CalendarProps = {
+    inline def apply(): CalendarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CalendarProps]
     }
     
-    @scala.inline
-    implicit class CalendarPropsMutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarProps](x: Self) {
       
-      @scala.inline
-      def setMonthListProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "monthListProps", value.asInstanceOf[js.Any])
+      inline def setMonthListProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "monthListProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthListPropsUndefined: Self = StObject.set(x, "monthListProps", js.undefined)
+      inline def setMonthListPropsUndefined: Self = StObject.set(x, "monthListProps", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* date */ Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* date */ Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setTableBodyProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
+      inline def setTableBodyProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBodyPropsUndefined: Self = StObject.set(x, "tableBodyProps", js.undefined)
+      inline def setTableBodyPropsUndefined: Self = StObject.set(x, "tableBodyProps", js.undefined)
       
-      @scala.inline
-      def setTableHeaderProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
+      inline def setTableHeaderProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeaderPropsUndefined: Self = StObject.set(x, "tableHeaderProps", js.undefined)
+      inline def setTableHeaderPropsUndefined: Self = StObject.set(x, "tableHeaderProps", js.undefined)
       
-      @scala.inline
-      def setTableProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "tableProps", value.asInstanceOf[js.Any])
+      inline def setTableProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "tableProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablePropsUndefined: Self = StObject.set(x, "tableProps", js.undefined)
+      inline def setTablePropsUndefined: Self = StObject.set(x, "tableProps", js.undefined)
       
-      @scala.inline
-      def setYearListProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "yearListProps", value.asInstanceOf[js.Any])
+      inline def setYearListProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "yearListProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearListPropsUndefined: Self = StObject.set(x, "yearListProps", js.undefined)
+      inline def setYearListPropsUndefined: Self = StObject.set(x, "yearListProps", js.undefined)
     }
   }
 }

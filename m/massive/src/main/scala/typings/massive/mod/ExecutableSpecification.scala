@@ -35,8 +35,7 @@ trait ExecutableSpecification extends StObject {
 }
 object ExecutableSpecification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     db: Database,
     enhancedFunctions: Boolean,
     isVariadic: Boolean,
@@ -51,34 +50,24 @@ object ExecutableSpecification {
     __obj.asInstanceOf[ExecutableSpecification]
   }
   
-  @scala.inline
-  implicit class ExecutableSpecificationMutableBuilder[Self <: ExecutableSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutableSpecification](x: Self) {
     
-    @scala.inline
-    def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedFunctions(value: Boolean): Self = StObject.set(x, "enhancedFunctions", value.asInstanceOf[js.Any])
+    inline def setEnhancedFunctions(value: Boolean): Self = StObject.set(x, "enhancedFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVariadic(value: Boolean): Self = StObject.set(x, "isVariadic", value.asInstanceOf[js.Any])
+    inline def setIsVariadic(value: Boolean): Self = StObject.set(x, "isVariadic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamCount(value: Double): Self = StObject.set(x, "paramCount", value.asInstanceOf[js.Any])
+    inline def setParamCount(value: Double): Self = StObject.set(x, "paramCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleRow(value: Boolean): Self = StObject.set(x, "singleRow", value.asInstanceOf[js.Any])
+    inline def setSingleRow(value: Boolean): Self = StObject.set(x, "singleRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleValue(value: Boolean): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
+    inline def setSingleValue(value: Boolean): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }
 }

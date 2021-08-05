@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def selector(selectorName: String, source: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selectorName.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def selector(selectorName: String, source: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selectorName.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

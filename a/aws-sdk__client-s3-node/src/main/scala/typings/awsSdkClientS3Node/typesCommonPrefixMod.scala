@@ -15,20 +15,16 @@ object typesCommonPrefixMod {
   }
   object CommonPrefix {
     
-    @scala.inline
-    def apply(): CommonPrefix = {
+    inline def apply(): CommonPrefix = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonPrefix]
     }
     
-    @scala.inline
-    implicit class CommonPrefixMutableBuilder[Self <: CommonPrefix] (val x: Self) extends AnyVal {
+    extension [Self <: CommonPrefix](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     }
   }
   

@@ -18,25 +18,19 @@ trait ListCustomDataIdentifiersRequest extends StObject {
 }
 object ListCustomDataIdentifiersRequest {
   
-  @scala.inline
-  def apply(): ListCustomDataIdentifiersRequest = {
+  inline def apply(): ListCustomDataIdentifiersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCustomDataIdentifiersRequest]
   }
   
-  @scala.inline
-  implicit class ListCustomDataIdentifiersRequestMutableBuilder[Self <: ListCustomDataIdentifiersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListCustomDataIdentifiersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

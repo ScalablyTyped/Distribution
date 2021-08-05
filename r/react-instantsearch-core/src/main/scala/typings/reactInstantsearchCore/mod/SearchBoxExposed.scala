@@ -11,19 +11,15 @@ trait SearchBoxExposed extends StObject {
 }
 object SearchBoxExposed {
   
-  @scala.inline
-  def apply(): SearchBoxExposed = {
+  inline def apply(): SearchBoxExposed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBoxExposed]
   }
   
-  @scala.inline
-  implicit class SearchBoxExposedMutableBuilder[Self <: SearchBoxExposed] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBoxExposed](x: Self) {
     
-    @scala.inline
-    def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
+    inline def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
+    inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
   }
 }

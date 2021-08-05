@@ -24,19 +24,15 @@ trait ForceSyncWithServerCommand
 }
 object ForceSyncWithServerCommand {
   
-  @scala.inline
-  def apply(execute: js.Function0[Unit] => Boolean, getState: () => SimpleCommandState): ForceSyncWithServerCommand = {
+  inline def apply(execute: js.Function0[Unit] => Boolean, getState: () => SimpleCommandState): ForceSyncWithServerCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ForceSyncWithServerCommand]
   }
   
-  @scala.inline
-  implicit class ForceSyncWithServerCommandMutableBuilder[Self <: ForceSyncWithServerCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ForceSyncWithServerCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: js.Function0[Unit] => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: js.Function0[Unit] => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

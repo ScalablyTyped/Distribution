@@ -16,17 +16,14 @@ object irendercomponentMod {
   }
   object IRenderComponent {
     
-    @scala.inline
-    def apply[TProps](children: TProps => Element): IRenderComponent[TProps] = {
+    inline def apply[TProps](children: TProps => Element): IRenderComponent[TProps] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[IRenderComponent[TProps]]
     }
     
-    @scala.inline
-    implicit class IRenderComponentMutableBuilder[Self <: IRenderComponent[?], TProps] (val x: Self & IRenderComponent[TProps]) extends AnyVal {
+    extension [Self <: IRenderComponent[?], TProps](x: Self & IRenderComponent[TProps]) {
       
-      @scala.inline
-      def setChildren(value: TProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: TProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
 }

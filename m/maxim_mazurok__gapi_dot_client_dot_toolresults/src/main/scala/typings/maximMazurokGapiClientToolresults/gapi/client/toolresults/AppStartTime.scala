@@ -17,25 +17,19 @@ trait AppStartTime extends StObject {
 }
 object AppStartTime {
   
-  @scala.inline
-  def apply(): AppStartTime = {
+  inline def apply(): AppStartTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppStartTime]
   }
   
-  @scala.inline
-  implicit class AppStartTimeMutableBuilder[Self <: AppStartTime] (val x: Self) extends AnyVal {
+  extension [Self <: AppStartTime](x: Self) {
     
-    @scala.inline
-    def setFullyDrawnTime(value: Duration): Self = StObject.set(x, "fullyDrawnTime", value.asInstanceOf[js.Any])
+    inline def setFullyDrawnTime(value: Duration): Self = StObject.set(x, "fullyDrawnTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyDrawnTimeUndefined: Self = StObject.set(x, "fullyDrawnTime", js.undefined)
+    inline def setFullyDrawnTimeUndefined: Self = StObject.set(x, "fullyDrawnTime", js.undefined)
     
-    @scala.inline
-    def setInitialDisplayTime(value: Duration): Self = StObject.set(x, "initialDisplayTime", value.asInstanceOf[js.Any])
+    inline def setInitialDisplayTime(value: Duration): Self = StObject.set(x, "initialDisplayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDisplayTimeUndefined: Self = StObject.set(x, "initialDisplayTime", js.undefined)
+    inline def setInitialDisplayTimeUndefined: Self = StObject.set(x, "initialDisplayTime", js.undefined)
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(baseUrl: String): Client = ^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def apply(baseUrl: String, options: js.Object): Client = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def apply(baseUrl: String): Client = ^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def apply(baseUrl: String, options: js.Object): Client = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   @JSImport("crpc", JSImport.Namespace)
   @js.native

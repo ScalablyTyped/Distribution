@@ -18,19 +18,15 @@ trait ReusableDelegationSetLimit extends StObject {
 }
 object ReusableDelegationSetLimit {
   
-  @scala.inline
-  def apply(Type: ReusableDelegationSetLimitType, Value: LimitValue): ReusableDelegationSetLimit = {
+  inline def apply(Type: ReusableDelegationSetLimitType, Value: LimitValue): ReusableDelegationSetLimit = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReusableDelegationSetLimit]
   }
   
-  @scala.inline
-  implicit class ReusableDelegationSetLimitMutableBuilder[Self <: ReusableDelegationSetLimit] (val x: Self) extends AnyVal {
+  extension [Self <: ReusableDelegationSetLimit](x: Self) {
     
-    @scala.inline
-    def setType(value: ReusableDelegationSetLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReusableDelegationSetLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: LimitValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: LimitValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

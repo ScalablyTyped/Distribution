@@ -55,8 +55,7 @@ object xforms {
   }
   object Binding {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AllListEntries: SafeArray[String],
       BindingNamespaces: XNameContainer,
       ListEntryCount: Double,
@@ -97,11 +96,9 @@ object xforms {
       __obj.asInstanceOf[Binding]
     }
     
-    @scala.inline
-    implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
+    extension [Self <: Binding](x: Self) {
       
-      @scala.inline
-      def setBindingNamespaces(value: XNameContainer): Self = StObject.set(x, "BindingNamespaces", value.asInstanceOf[js.Any])
+      inline def setBindingNamespaces(value: XNameContainer): Self = StObject.set(x, "BindingNamespaces", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,8 +148,7 @@ object xforms {
   }
   object XDataTypeRepository {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ElementNames: SafeArray[String],
       ElementType: `type`,
       acquire: () => Unit,
@@ -173,20 +169,15 @@ object xforms {
       __obj.asInstanceOf[XDataTypeRepository]
     }
     
-    @scala.inline
-    implicit class XDataTypeRepositoryMutableBuilder[Self <: XDataTypeRepository] (val x: Self) extends AnyVal {
+    extension [Self <: XDataTypeRepository](x: Self) {
       
-      @scala.inline
-      def setCloneDataType(value: (String, String) => XDataType): Self = StObject.set(x, "cloneDataType", js.Any.fromFunction2(value))
+      inline def setCloneDataType(value: (String, String) => XDataType): Self = StObject.set(x, "cloneDataType", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBasicDataType(value: Double => XDataType): Self = StObject.set(x, "getBasicDataType", js.Any.fromFunction1(value))
+      inline def setGetBasicDataType(value: Double => XDataType): Self = StObject.set(x, "getBasicDataType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDataType(value: String => XDataType): Self = StObject.set(x, "getDataType", js.Any.fromFunction1(value))
+      inline def setGetDataType(value: String => XDataType): Self = StObject.set(x, "getDataType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevokeDataType(value: String => Unit): Self = StObject.set(x, "revokeDataType", js.Any.fromFunction1(value))
+      inline def setRevokeDataType(value: String => Unit): Self = StObject.set(x, "revokeDataType", js.Any.fromFunction1(value))
     }
   }
   
@@ -201,8 +192,7 @@ object xforms {
   }
   object XFormsEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bubbles: Boolean,
       Cancelable: Boolean,
       CurrentTarget: XEventTarget,
@@ -229,11 +219,9 @@ object xforms {
       __obj.asInstanceOf[XFormsEvent]
     }
     
-    @scala.inline
-    implicit class XFormsEventMutableBuilder[Self <: XFormsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: XFormsEvent](x: Self) {
       
-      @scala.inline
-      def setInitXFormsEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initXFormsEvent", js.Any.fromFunction3(value))
+      inline def setInitXFormsEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initXFormsEvent", js.Any.fromFunction3(value))
     }
   }
   
@@ -256,8 +244,7 @@ object xforms {
   }
   object XFormsSupplier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       XForms: XNameContainer,
       acquire: () => Unit,
       getXForms: () => XNameContainer,
@@ -268,14 +255,11 @@ object xforms {
       __obj.asInstanceOf[XFormsSupplier]
     }
     
-    @scala.inline
-    implicit class XFormsSupplierMutableBuilder[Self <: XFormsSupplier] (val x: Self) extends AnyVal {
+    extension [Self <: XFormsSupplier](x: Self) {
       
-      @scala.inline
-      def setGetXForms(value: () => XNameContainer): Self = StObject.set(x, "getXForms", js.Any.fromFunction0(value))
+      inline def setGetXForms(value: () => XNameContainer): Self = StObject.set(x, "getXForms", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setXForms(value: XNameContainer): Self = StObject.set(x, "XForms", value.asInstanceOf[js.Any])
+      inline def setXForms(value: XNameContainer): Self = StObject.set(x, "XForms", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,8 +318,7 @@ object xforms {
   }
   object XFormsUIHelper1 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cloneBindingAsGhost: XPropertySet => XPropertySet,
       createAttribute: (XNode, String) => XNode,
       createElement: (XNode, String) => XNode,
@@ -364,77 +347,53 @@ object xforms {
       __obj.asInstanceOf[XFormsUIHelper1]
     }
     
-    @scala.inline
-    implicit class XFormsUIHelper1MutableBuilder[Self <: XFormsUIHelper1] (val x: Self) extends AnyVal {
+    extension [Self <: XFormsUIHelper1](x: Self) {
       
-      @scala.inline
-      def setCloneBindingAsGhost(value: XPropertySet => XPropertySet): Self = StObject.set(x, "cloneBindingAsGhost", js.Any.fromFunction1(value))
+      inline def setCloneBindingAsGhost(value: XPropertySet => XPropertySet): Self = StObject.set(x, "cloneBindingAsGhost", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateAttribute(value: (XNode, String) => XNode): Self = StObject.set(x, "createAttribute", js.Any.fromFunction2(value))
+      inline def setCreateAttribute(value: (XNode, String) => XNode): Self = StObject.set(x, "createAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateElement(value: (XNode, String) => XNode): Self = StObject.set(x, "createElement", js.Any.fromFunction2(value))
+      inline def setCreateElement(value: (XNode, String) => XNode): Self = StObject.set(x, "createElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBindingForNode(value: (XNode, Boolean) => XPropertySet): Self = StObject.set(x, "getBindingForNode", js.Any.fromFunction2(value))
+      inline def setGetBindingForNode(value: (XNode, Boolean) => XPropertySet): Self = StObject.set(x, "getBindingForNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBindingName(value: (XPropertySet, Boolean) => String): Self = StObject.set(x, "getBindingName", js.Any.fromFunction2(value))
+      inline def setGetBindingName(value: (XPropertySet, Boolean) => String): Self = StObject.set(x, "getBindingName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDefaultBindingExpressionForNode(value: XNode => String): Self = StObject.set(x, "getDefaultBindingExpressionForNode", js.Any.fromFunction1(value))
+      inline def setGetDefaultBindingExpressionForNode(value: XNode => String): Self = StObject.set(x, "getDefaultBindingExpressionForNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDefaultServiceNameForNode(value: XNode => String): Self = StObject.set(x, "getDefaultServiceNameForNode", js.Any.fromFunction1(value))
+      inline def setGetDefaultServiceNameForNode(value: XNode => String): Self = StObject.set(x, "getDefaultServiceNameForNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNodeDisplayName(value: (XNode, Boolean) => String): Self = StObject.set(x, "getNodeDisplayName", js.Any.fromFunction2(value))
+      inline def setGetNodeDisplayName(value: (XNode, Boolean) => String): Self = StObject.set(x, "getNodeDisplayName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNodeName(value: XNode => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction1(value))
+      inline def setGetNodeName(value: XNode => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetResultForExpression(value: (XPropertySet, Boolean, String) => String): Self = StObject.set(x, "getResultForExpression", js.Any.fromFunction3(value))
+      inline def setGetResultForExpression(value: (XPropertySet, Boolean, String) => String): Self = StObject.set(x, "getResultForExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetSubmissionName(value: (XPropertySet, Boolean) => String): Self = StObject.set(x, "getSubmissionName", js.Any.fromFunction2(value))
+      inline def setGetSubmissionName(value: (XPropertySet, Boolean) => String): Self = StObject.set(x, "getSubmissionName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsValidPrefixName(value: String => Boolean): Self = StObject.set(x, "isValidPrefixName", js.Any.fromFunction1(value))
+      inline def setIsValidPrefixName(value: String => Boolean): Self = StObject.set(x, "isValidPrefixName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidXMLName(value: String => Boolean): Self = StObject.set(x, "isValidXMLName", js.Any.fromFunction1(value))
+      inline def setIsValidXMLName(value: String => Boolean): Self = StObject.set(x, "isValidXMLName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNewInstance(value: (String, String, Boolean) => XDocument): Self = StObject.set(x, "newInstance", js.Any.fromFunction3(value))
+      inline def setNewInstance(value: (String, String, Boolean) => XDocument): Self = StObject.set(x, "newInstance", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNewModel(value: (typings.activexLibreoffice.com_.sun.star.frame.XModel, String) => XModel): Self = StObject.set(x, "newModel", js.Any.fromFunction2(value))
+      inline def setNewModel(value: (typings.activexLibreoffice.com_.sun.star.frame.XModel, String) => XModel): Self = StObject.set(x, "newModel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveBindingForNode(value: XNode => Unit): Self = StObject.set(x, "removeBindingForNode", js.Any.fromFunction1(value))
+      inline def setRemoveBindingForNode(value: XNode => Unit): Self = StObject.set(x, "removeBindingForNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveBindingIfUseless(value: XPropertySet => Unit): Self = StObject.set(x, "removeBindingIfUseless", js.Any.fromFunction1(value))
+      inline def setRemoveBindingIfUseless(value: XPropertySet => Unit): Self = StObject.set(x, "removeBindingIfUseless", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveInstance(value: String => Unit): Self = StObject.set(x, "removeInstance", js.Any.fromFunction1(value))
+      inline def setRemoveInstance(value: String => Unit): Self = StObject.set(x, "removeInstance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveModel(value: (typings.activexLibreoffice.com_.sun.star.frame.XModel, String) => Unit): Self = StObject.set(x, "removeModel", js.Any.fromFunction2(value))
+      inline def setRemoveModel(value: (typings.activexLibreoffice.com_.sun.star.frame.XModel, String) => Unit): Self = StObject.set(x, "removeModel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenameInstance(value: (String, String, String, Boolean) => Unit): Self = StObject.set(x, "renameInstance", js.Any.fromFunction4(value))
+      inline def setRenameInstance(value: (String, String, String, Boolean) => Unit): Self = StObject.set(x, "renameInstance", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRenameModel(value: (typings.activexLibreoffice.com_.sun.star.frame.XModel, String, String) => Unit): Self = StObject.set(x, "renameModel", js.Any.fromFunction3(value))
+      inline def setRenameModel(value: (typings.activexLibreoffice.com_.sun.star.frame.XModel, String, String) => Unit): Self = StObject.set(x, "renameModel", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenameNode(value: (XNode, String) => XNode): Self = StObject.set(x, "renameNode", js.Any.fromFunction2(value))
+      inline def setRenameNode(value: (XNode, String) => XNode): Self = StObject.set(x, "renameNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetNodeValue(value: (XNode, String) => Unit): Self = StObject.set(x, "setNodeValue", js.Any.fromFunction2(value))
+      inline def setSetNodeValue(value: (XNode, String) => Unit): Self = StObject.set(x, "setNodeValue", js.Any.fromFunction2(value))
     }
   }
   
@@ -575,8 +534,7 @@ object xforms {
   }
   object XModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bindings: XSet,
       DataTypeRepository: XDataTypeRepository,
       DefaultInstance: XDocument,
@@ -609,89 +567,61 @@ object xforms {
       __obj.asInstanceOf[XModel]
     }
     
-    @scala.inline
-    implicit class XModelMutableBuilder[Self <: XModel] (val x: Self) extends AnyVal {
+    extension [Self <: XModel](x: Self) {
       
-      @scala.inline
-      def setBindings(value: XSet): Self = StObject.set(x, "Bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: XSet): Self = StObject.set(x, "Bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneBinding(value: XPropertySet => XPropertySet): Self = StObject.set(x, "cloneBinding", js.Any.fromFunction1(value))
+      inline def setCloneBinding(value: XPropertySet => XPropertySet): Self = StObject.set(x, "cloneBinding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloneSubmission(value: XPropertySet => XSubmission): Self = StObject.set(x, "cloneSubmission", js.Any.fromFunction1(value))
+      inline def setCloneSubmission(value: XPropertySet => XSubmission): Self = StObject.set(x, "cloneSubmission", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateBinding(value: () => XPropertySet): Self = StObject.set(x, "createBinding", js.Any.fromFunction0(value))
+      inline def setCreateBinding(value: () => XPropertySet): Self = StObject.set(x, "createBinding", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateSubmission(value: () => XSubmission): Self = StObject.set(x, "createSubmission", js.Any.fromFunction0(value))
+      inline def setCreateSubmission(value: () => XSubmission): Self = StObject.set(x, "createSubmission", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataTypeRepository(value: XDataTypeRepository): Self = StObject.set(x, "DataTypeRepository", value.asInstanceOf[js.Any])
+      inline def setDataTypeRepository(value: XDataTypeRepository): Self = StObject.set(x, "DataTypeRepository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultInstance(value: XDocument): Self = StObject.set(x, "DefaultInstance", value.asInstanceOf[js.Any])
+      inline def setDefaultInstance(value: XDocument): Self = StObject.set(x, "DefaultInstance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBinding(value: String => XPropertySet): Self = StObject.set(x, "getBinding", js.Any.fromFunction1(value))
+      inline def setGetBinding(value: String => XPropertySet): Self = StObject.set(x, "getBinding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBindings(value: () => XSet): Self = StObject.set(x, "getBindings", js.Any.fromFunction0(value))
+      inline def setGetBindings(value: () => XSet): Self = StObject.set(x, "getBindings", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDataTypeRepository(value: () => XDataTypeRepository): Self = StObject.set(x, "getDataTypeRepository", js.Any.fromFunction0(value))
+      inline def setGetDataTypeRepository(value: () => XDataTypeRepository): Self = StObject.set(x, "getDataTypeRepository", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultInstance(value: () => XDocument): Self = StObject.set(x, "getDefaultInstance", js.Any.fromFunction0(value))
+      inline def setGetDefaultInstance(value: () => XDocument): Self = StObject.set(x, "getDefaultInstance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
+      inline def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInstanceDocument(value: String => XDocument): Self = StObject.set(x, "getInstanceDocument", js.Any.fromFunction1(value))
+      inline def setGetInstanceDocument(value: String => XDocument): Self = StObject.set(x, "getInstanceDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetInstances(value: () => XSet): Self = StObject.set(x, "getInstances", js.Any.fromFunction0(value))
+      inline def setGetInstances(value: () => XSet): Self = StObject.set(x, "getInstances", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubmission(value: String => XSubmission): Self = StObject.set(x, "getSubmission", js.Any.fromFunction1(value))
+      inline def setGetSubmission(value: String => XSubmission): Self = StObject.set(x, "getSubmission", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSubmissions(value: () => XSet): Self = StObject.set(x, "getSubmissions", js.Any.fromFunction0(value))
+      inline def setGetSubmissions(value: () => XSet): Self = StObject.set(x, "getSubmissions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInstances(value: XSet): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: XSet): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
+      inline def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRecalculate(value: () => Unit): Self = StObject.set(x, "recalculate", js.Any.fromFunction0(value))
+      inline def setRecalculate(value: () => Unit): Self = StObject.set(x, "recalculate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRevalidate(value: () => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction0(value))
+      inline def setRevalidate(value: () => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetID(value: String => Unit): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
+      inline def setSetID(value: String => Unit): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmissions(value: XSet): Self = StObject.set(x, "Submissions", value.asInstanceOf[js.Any])
+      inline def setSubmissions(value: XSet): Self = StObject.set(x, "Submissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmit(value: String => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+      inline def setSubmit(value: String => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmitWithInteraction(value: (String, XInteractionHandler) => Unit): Self = StObject.set(x, "submitWithInteraction", js.Any.fromFunction2(value))
+      inline def setSubmitWithInteraction(value: (String, XInteractionHandler) => Unit): Self = StObject.set(x, "submitWithInteraction", js.Any.fromFunction2(value))
     }
   }
   
@@ -702,8 +632,7 @@ object xforms {
        with XPropertySet
   object XModel2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bindings: XSet,
       DataTypeRepository: XDataTypeRepository,
       DefaultInstance: XDocument,
@@ -756,8 +685,7 @@ object xforms {
        with typings.activexLibreoffice.com_.sun.star.form.submission.XSubmission
   object XSubmission {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Name: String,
       PropertySetInfo: XPropertySetInfo,
       acquire: () => Unit,

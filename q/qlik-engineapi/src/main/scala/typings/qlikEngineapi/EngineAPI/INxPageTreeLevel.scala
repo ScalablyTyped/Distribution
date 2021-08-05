@@ -19,19 +19,15 @@ trait INxPageTreeLevel extends StObject {
 }
 object INxPageTreeLevel {
   
-  @scala.inline
-  def apply(qDepth: Double, qLeft: Double): INxPageTreeLevel = {
+  inline def apply(qDepth: Double, qLeft: Double): INxPageTreeLevel = {
     val __obj = js.Dynamic.literal(qDepth = qDepth.asInstanceOf[js.Any], qLeft = qLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxPageTreeLevel]
   }
   
-  @scala.inline
-  implicit class INxPageTreeLevelMutableBuilder[Self <: INxPageTreeLevel] (val x: Self) extends AnyVal {
+  extension [Self <: INxPageTreeLevel](x: Self) {
     
-    @scala.inline
-    def setQDepth(value: Double): Self = StObject.set(x, "qDepth", value.asInstanceOf[js.Any])
+    inline def setQDepth(value: Double): Self = StObject.set(x, "qDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLeft(value: Double): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
+    inline def setQLeft(value: Double): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
   }
 }

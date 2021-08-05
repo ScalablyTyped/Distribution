@@ -12,8 +12,7 @@ object captchaUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def captchaDriverFactory(base: UniDriver[js.Any]): CaptchaDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("captchaDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CaptchaDriver]
+  inline def captchaDriverFactory(base: UniDriver[js.Any]): CaptchaDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("captchaDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CaptchaDriver]
   
   trait CaptchaDriver
     extends StObject
@@ -31,8 +30,7 @@ object captchaUniDotDriverMod {
   }
   object CaptchaDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -46,23 +44,17 @@ object captchaUniDotDriverMod {
       __obj.asInstanceOf[CaptchaDriver]
     }
     
-    @scala.inline
-    implicit class CaptchaDriverMutableBuilder[Self <: CaptchaDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CaptchaDriver](x: Self) {
       
-      @scala.inline
-      def setGetCaptchaType(value: () => js.Promise[String]): Self = StObject.set(x, "getCaptchaType", js.Any.fromFunction0(value))
+      inline def setGetCaptchaType(value: () => js.Promise[String]): Self = StObject.set(x, "getCaptchaType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLang(value: () => js.Promise[String]): Self = StObject.set(x, "getLang", js.Any.fromFunction0(value))
+      inline def setGetLang(value: () => js.Promise[String]): Self = StObject.set(x, "getLang", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => js.Promise[String]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Promise[String]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTheme(value: () => js.Promise[String]): Self = StObject.set(x, "getTheme", js.Any.fromFunction0(value))
+      inline def setGetTheme(value: () => js.Promise[String]): Self = StObject.set(x, "getTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+      inline def setIsRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     }
   }
 }

@@ -29,20 +29,16 @@ object anon {
   }
   object Contents {
     
-    @scala.inline
-    def apply[T](contents: T): Contents[T] = {
+    inline def apply[T](contents: T): Contents[T] = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "hasValue")
       __obj.asInstanceOf[Contents[T]]
     }
     
-    @scala.inline
-    implicit class ContentsMutableBuilder[Self <: Contents[?], T] (val x: Self & Contents[T]) extends AnyVal {
+    extension [Self <: Contents[?], T](x: Self & Contents[T]) {
       
-      @scala.inline
-      def setContents(value: T): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: T): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: hasValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: hasValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +48,14 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply(get: /* recoilVal */ RecoilValue[js.Any] => js.Any): Get = {
+    inline def apply(get: /* recoilVal */ RecoilValue[js.Any] => js.Any): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[Get]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    extension [Self <: Get](x: Self) {
       
-      @scala.inline
-      def setGet(value: /* recoilVal */ RecoilValue[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: /* recoilVal */ RecoilValue[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -77,20 +70,16 @@ object anon {
   }
   object ReadonlystatehasErrorcont {
     
-    @scala.inline
-    def apply(contents: Error): ReadonlystatehasErrorcont = {
+    inline def apply(contents: Error): ReadonlystatehasErrorcont = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "hasError")
       __obj.asInstanceOf[ReadonlystatehasErrorcont]
     }
     
-    @scala.inline
-    implicit class ReadonlystatehasErrorcontMutableBuilder[Self <: ReadonlystatehasErrorcont] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlystatehasErrorcont](x: Self) {
       
-      @scala.inline
-      def setContents(value: Error): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Error): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: hasError): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: hasError): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +93,7 @@ object anon {
   }
   object Reset {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: /* recoilVal */ RecoilValue[js.Any] => js.Any,
       reset: /* recoilVal */ RecoilState[js.Any] => Unit,
       set: (/* recoilVal */ RecoilState[js.Any], /* newVal */ js.Any | DefaultValue | (js.Function1[/* prevValue */ js.Any, js.Any | DefaultValue])) => Unit
@@ -114,17 +102,13 @@ object anon {
       __obj.asInstanceOf[Reset]
     }
     
-    @scala.inline
-    implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+    extension [Self <: Reset](x: Self) {
       
-      @scala.inline
-      def setGet(value: /* recoilVal */ RecoilValue[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: /* recoilVal */ RecoilValue[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: /* recoilVal */ RecoilState[js.Any] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* recoilVal */ RecoilState[js.Any] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(
+      inline def setSet(
         value: (/* recoilVal */ RecoilState[js.Any], /* newVal */ js.Any | DefaultValue | (js.Function1[/* prevValue */ js.Any, js.Any | DefaultValue])) => Unit
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
@@ -138,20 +122,16 @@ object anon {
   }
   object Set {
     
-    @scala.inline
-    def apply(set: (RecoilState[js.Any], js.Any) => Unit, setUnvalidatedAtomValues: Map[String, js.Any] => Unit): Set = {
+    inline def apply(set: (RecoilState[js.Any], js.Any) => Unit, setUnvalidatedAtomValues: Map[String, js.Any] => Unit): Set = {
       val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set), setUnvalidatedAtomValues = js.Any.fromFunction1(setUnvalidatedAtomValues))
       __obj.asInstanceOf[Set]
     }
     
-    @scala.inline
-    implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
+    extension [Self <: Set](x: Self) {
       
-      @scala.inline
-      def setSet(value: (RecoilState[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (RecoilState[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetUnvalidatedAtomValues(value: Map[String, js.Any] => Unit): Self = StObject.set(x, "setUnvalidatedAtomValues", js.Any.fromFunction1(value))
+      inline def setSetUnvalidatedAtomValues(value: Map[String, js.Any] => Unit): Self = StObject.set(x, "setUnvalidatedAtomValues", js.Any.fromFunction1(value))
     }
   }
   
@@ -165,20 +145,16 @@ object anon {
   }
   object State {
     
-    @scala.inline
-    def apply[T](contents: LoadablePromise[T]): State[T] = {
+    inline def apply[T](contents: LoadablePromise[T]): State[T] = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "loading")
       __obj.asInstanceOf[State[T]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], T] (val x: Self & State[T]) extends AnyVal {
+    extension [Self <: State[?], T](x: Self & State[T]) {
       
-      @scala.inline
-      def setContents(value: LoadablePromise[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: LoadablePromise[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: loading): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: loading): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

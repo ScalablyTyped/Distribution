@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BindingFlags extends StObject
 object BindingFlags {
   
-  @scala.inline
-  def CatSyntheticProperty: `48` = 48.asInstanceOf[`48`]
+  inline def CatSyntheticProperty: `48` = 48.asInstanceOf[`48`]
   
-  @scala.inline
-  def SyntheticHostProperty: `32` = 32.asInstanceOf[`32`]
+  inline def SyntheticHostProperty: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def SyntheticProperty: `16` = 16.asInstanceOf[`16`]
+  inline def SyntheticProperty: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def TypeElementAttribute: `1` = 1.asInstanceOf[`1`]
+  inline def TypeElementAttribute: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TypeElementClass: `2` = 2.asInstanceOf[`2`]
+  inline def TypeElementClass: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def TypeElementStyle: `4` = 4.asInstanceOf[`4`]
+  inline def TypeElementStyle: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def TypeProperty: `8` = 8.asInstanceOf[`8`]
+  inline def TypeProperty: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Types: `15` = 15.asInstanceOf[`15`]
+  inline def Types: `15` = 15.asInstanceOf[`15`]
 }

@@ -13,16 +13,13 @@ trait VirtualGatewayStatus extends StObject {
 }
 object VirtualGatewayStatus {
   
-  @scala.inline
-  def apply(status: VirtualGatewayStatusCode): VirtualGatewayStatus = {
+  inline def apply(status: VirtualGatewayStatusCode): VirtualGatewayStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayStatus]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayStatusMutableBuilder[Self <: VirtualGatewayStatus] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: VirtualGatewayStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualGatewayStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

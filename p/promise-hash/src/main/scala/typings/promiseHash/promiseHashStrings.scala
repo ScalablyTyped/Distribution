@@ -8,11 +8,9 @@ object promiseHashStrings {
   
   @js.native
   sealed trait PromiseConstructor extends StObject
-  @scala.inline
-  def PromiseConstructor: PromiseConstructor = "PromiseConstructor".asInstanceOf[PromiseConstructor]
+  inline def PromiseConstructor: PromiseConstructor = "PromiseConstructor".asInstanceOf[PromiseConstructor]
   
   @js.native
   sealed trait PromiseHash extends StObject
-  @scala.inline
-  def PromiseHash: PromiseHash = "PromiseHash".asInstanceOf[PromiseHash]
+  inline def PromiseHash: PromiseHash = "PromiseHash".asInstanceOf[PromiseHash]
 }

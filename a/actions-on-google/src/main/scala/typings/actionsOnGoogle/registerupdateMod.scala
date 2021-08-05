@@ -47,8 +47,7 @@ object registerupdateMod {
   }
   object RegisterUpdateOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arguments: js.Array[GoogleActionsV2Argument],
       frequency: GoogleActionsV2TriggerContextTimeContextFrequency,
       intent: String
@@ -57,20 +56,15 @@ object registerupdateMod {
       __obj.asInstanceOf[RegisterUpdateOptions]
     }
     
-    @scala.inline
-    implicit class RegisterUpdateOptionsMutableBuilder[Self <: RegisterUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setFrequency(value: GoogleActionsV2TriggerContextTimeContextFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: GoogleActionsV2TriggerContextTimeContextFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecommendedSort extends StObject
 object RecommendedSort {
   
-  @scala.inline
-  def friend_likes: typings.vkOpenapi.vkOpenapiStrings.friend_likes = "friend_likes".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.friend_likes]
+  inline def friend_likes: typings.vkOpenapi.vkOpenapiStrings.friend_likes = "friend_likes".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.friend_likes]
   
-  @scala.inline
-  def likes: typings.vkOpenapi.vkOpenapiStrings.likes = "likes".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.likes]
+  inline def likes: typings.vkOpenapi.vkOpenapiStrings.likes = "likes".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.likes]
 }

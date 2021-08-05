@@ -21,8 +21,7 @@ object convUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeConv2DInfo(
+  inline def computeConv2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double | (js.Tuple2[Double, Double]),
@@ -33,8 +32,7 @@ object convUtilMod {
     dataFormat: js.UndefOr[channelsFirst | channelsLast]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeConv2DInfo")(inShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], depthwise.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @scala.inline
-  def computeConv3DInfo(
+  inline def computeConv3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double | (js.Tuple3[Double, Double, Double]),
@@ -45,22 +43,17 @@ object convUtilMod {
     roundingMode: js.UndefOr[floor | round | ceil]
   ): Conv3DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeConv3DInfo")(inShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], depthwise.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any])).asInstanceOf[Conv3DInfo]
   
-  @scala.inline
-  def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double, dilation: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def computeDefaultPad(inputShape: js.Tuple4[Double, Double, Double, Double], fieldSize: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def computeDefaultPad(
+  inline def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double, dilation: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def computeDefaultPad(inputShape: js.Tuple4[Double, Double, Double, Double], fieldSize: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def computeDefaultPad(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     fieldSize: Double,
     stride: Double,
     dilation: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
@@ -68,8 +61,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
@@ -77,8 +69,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
@@ -86,8 +77,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
@@ -95,8 +85,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
@@ -104,8 +93,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
@@ -113,8 +101,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
@@ -122,8 +109,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo(
+  inline def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
@@ -132,8 +118,7 @@ object convUtilMod {
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @scala.inline
-  def computeDilation2DInfo_NHWC(
+  inline def computeDilation2DInfo_NHWC(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
@@ -141,8 +126,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo_NHWC(
+  inline def computeDilation2DInfo_NHWC(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
@@ -150,8 +134,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo_NHWC(
+  inline def computeDilation2DInfo_NHWC(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
@@ -159,8 +142,7 @@ object convUtilMod {
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  @scala.inline
-  def computeDilation2DInfo_NHWC(
+  inline def computeDilation2DInfo_NHWC(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
@@ -169,8 +151,7 @@ object convUtilMod {
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @scala.inline
-  def computePool2DInfo(
+  inline def computePool2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: Double | (js.Tuple2[Double, Double]),
@@ -180,8 +161,7 @@ object convUtilMod {
     dataFormat: js.UndefOr[channelsFirst | channelsLast]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computePool2DInfo")(inShape.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @scala.inline
-  def computePool3DInfo(
+  inline def computePool3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
     strides: Double | (js.Tuple3[Double, Double, Double]),
@@ -191,25 +171,17 @@ object convUtilMod {
     dataFormat: js.UndefOr[NDHWC | NCDHW]
   ): Conv3DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computePool3DInfo")(inShape.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv3DInfo]
   
-  @scala.inline
-  def convertConv2DDataFormat_NCHW(dataFormat: NCHW): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
+  inline def convertConv2DDataFormat_NCHW(dataFormat: NCHW): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
   
-  @scala.inline
-  def convertConv2DDataFormat_NHWC(dataFormat: NHWC): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
+  inline def convertConv2DDataFormat_NHWC(dataFormat: NHWC): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
   
-  @scala.inline
-  def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def eitherStridesOrDilationsAreOne(strides: Double, dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def eitherStridesOrDilationsAreOne(strides: Double, dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eitherStridesOrDilationsAreOne(strides: Double, dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eitherStridesOrDilationsAreOne(strides: Double, dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def tupleValuesAreOne(param: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def tupleValuesAreOne(param: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def tupleValuesAreOne(param: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def tupleValuesAreOne(param: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Conv2DInfo extends StObject {
     
@@ -255,8 +227,7 @@ object convUtilMod {
   }
   object Conv2DInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       batchSize: Double,
       dataFormat: channelsFirst | channelsLast,
       dilationHeight: Double,
@@ -282,68 +253,47 @@ object convUtilMod {
       __obj.asInstanceOf[Conv2DInfo]
     }
     
-    @scala.inline
-    implicit class Conv2DInfoMutableBuilder[Self <: Conv2DInfo] (val x: Self) extends AnyVal {
+    extension [Self <: Conv2DInfo](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormat(value: channelsFirst | channelsLast): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: channelsFirst | channelsLast): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationHeight(value: Double): Self = StObject.set(x, "dilationHeight", value.asInstanceOf[js.Any])
+      inline def setDilationHeight(value: Double): Self = StObject.set(x, "dilationHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationWidth(value: Double): Self = StObject.set(x, "dilationWidth", value.asInstanceOf[js.Any])
+      inline def setDilationWidth(value: Double): Self = StObject.set(x, "dilationWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveFilterHeight(value: Double): Self = StObject.set(x, "effectiveFilterHeight", value.asInstanceOf[js.Any])
+      inline def setEffectiveFilterHeight(value: Double): Self = StObject.set(x, "effectiveFilterHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveFilterWidth(value: Double): Self = StObject.set(x, "effectiveFilterWidth", value.asInstanceOf[js.Any])
+      inline def setEffectiveFilterWidth(value: Double): Self = StObject.set(x, "effectiveFilterWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterHeight(value: Double): Self = StObject.set(x, "filterHeight", value.asInstanceOf[js.Any])
+      inline def setFilterHeight(value: Double): Self = StObject.set(x, "filterHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterShape(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "filterShape", value.asInstanceOf[js.Any])
+      inline def setFilterShape(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "filterShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterWidth(value: Double): Self = StObject.set(x, "filterWidth", value.asInstanceOf[js.Any])
+      inline def setFilterWidth(value: Double): Self = StObject.set(x, "filterWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInChannels(value: Double): Self = StObject.set(x, "inChannels", value.asInstanceOf[js.Any])
+      inline def setInChannels(value: Double): Self = StObject.set(x, "inChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInHeight(value: Double): Self = StObject.set(x, "inHeight", value.asInstanceOf[js.Any])
+      inline def setInHeight(value: Double): Self = StObject.set(x, "inHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInShape(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "inShape", value.asInstanceOf[js.Any])
+      inline def setInShape(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "inShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInWidth(value: Double): Self = StObject.set(x, "inWidth", value.asInstanceOf[js.Any])
+      inline def setInWidth(value: Double): Self = StObject.set(x, "inWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutChannels(value: Double): Self = StObject.set(x, "outChannels", value.asInstanceOf[js.Any])
+      inline def setOutChannels(value: Double): Self = StObject.set(x, "outChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutHeight(value: Double): Self = StObject.set(x, "outHeight", value.asInstanceOf[js.Any])
+      inline def setOutHeight(value: Double): Self = StObject.set(x, "outHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutShape(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "outShape", value.asInstanceOf[js.Any])
+      inline def setOutShape(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "outShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutWidth(value: Double): Self = StObject.set(x, "outWidth", value.asInstanceOf[js.Any])
+      inline def setOutWidth(value: Double): Self = StObject.set(x, "outWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadInfo(value: PadInfo): Self = StObject.set(x, "padInfo", value.asInstanceOf[js.Any])
+      inline def setPadInfo(value: PadInfo): Self = StObject.set(x, "padInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrideHeight(value: Double): Self = StObject.set(x, "strideHeight", value.asInstanceOf[js.Any])
+      inline def setStrideHeight(value: Double): Self = StObject.set(x, "strideHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrideWidth(value: Double): Self = StObject.set(x, "strideWidth", value.asInstanceOf[js.Any])
+      inline def setStrideWidth(value: Double): Self = StObject.set(x, "strideWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -403,8 +353,7 @@ object convUtilMod {
   }
   object Conv3DInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       batchSize: Double,
       dataFormat: channelsFirst | channelsLast,
       dilationDepth: Double,
@@ -436,86 +385,59 @@ object convUtilMod {
       __obj.asInstanceOf[Conv3DInfo]
     }
     
-    @scala.inline
-    implicit class Conv3DInfoMutableBuilder[Self <: Conv3DInfo] (val x: Self) extends AnyVal {
+    extension [Self <: Conv3DInfo](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormat(value: channelsFirst | channelsLast): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: channelsFirst | channelsLast): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationDepth(value: Double): Self = StObject.set(x, "dilationDepth", value.asInstanceOf[js.Any])
+      inline def setDilationDepth(value: Double): Self = StObject.set(x, "dilationDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationHeight(value: Double): Self = StObject.set(x, "dilationHeight", value.asInstanceOf[js.Any])
+      inline def setDilationHeight(value: Double): Self = StObject.set(x, "dilationHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationWidth(value: Double): Self = StObject.set(x, "dilationWidth", value.asInstanceOf[js.Any])
+      inline def setDilationWidth(value: Double): Self = StObject.set(x, "dilationWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveFilterDepth(value: Double): Self = StObject.set(x, "effectiveFilterDepth", value.asInstanceOf[js.Any])
+      inline def setEffectiveFilterDepth(value: Double): Self = StObject.set(x, "effectiveFilterDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveFilterHeight(value: Double): Self = StObject.set(x, "effectiveFilterHeight", value.asInstanceOf[js.Any])
+      inline def setEffectiveFilterHeight(value: Double): Self = StObject.set(x, "effectiveFilterHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveFilterWidth(value: Double): Self = StObject.set(x, "effectiveFilterWidth", value.asInstanceOf[js.Any])
+      inline def setEffectiveFilterWidth(value: Double): Self = StObject.set(x, "effectiveFilterWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterDepth(value: Double): Self = StObject.set(x, "filterDepth", value.asInstanceOf[js.Any])
+      inline def setFilterDepth(value: Double): Self = StObject.set(x, "filterDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterHeight(value: Double): Self = StObject.set(x, "filterHeight", value.asInstanceOf[js.Any])
+      inline def setFilterHeight(value: Double): Self = StObject.set(x, "filterHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "filterShape", value.asInstanceOf[js.Any])
+      inline def setFilterShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "filterShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterWidth(value: Double): Self = StObject.set(x, "filterWidth", value.asInstanceOf[js.Any])
+      inline def setFilterWidth(value: Double): Self = StObject.set(x, "filterWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInChannels(value: Double): Self = StObject.set(x, "inChannels", value.asInstanceOf[js.Any])
+      inline def setInChannels(value: Double): Self = StObject.set(x, "inChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInDepth(value: Double): Self = StObject.set(x, "inDepth", value.asInstanceOf[js.Any])
+      inline def setInDepth(value: Double): Self = StObject.set(x, "inDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInHeight(value: Double): Self = StObject.set(x, "inHeight", value.asInstanceOf[js.Any])
+      inline def setInHeight(value: Double): Self = StObject.set(x, "inHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "inShape", value.asInstanceOf[js.Any])
+      inline def setInShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "inShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInWidth(value: Double): Self = StObject.set(x, "inWidth", value.asInstanceOf[js.Any])
+      inline def setInWidth(value: Double): Self = StObject.set(x, "inWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutChannels(value: Double): Self = StObject.set(x, "outChannels", value.asInstanceOf[js.Any])
+      inline def setOutChannels(value: Double): Self = StObject.set(x, "outChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutDepth(value: Double): Self = StObject.set(x, "outDepth", value.asInstanceOf[js.Any])
+      inline def setOutDepth(value: Double): Self = StObject.set(x, "outDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutHeight(value: Double): Self = StObject.set(x, "outHeight", value.asInstanceOf[js.Any])
+      inline def setOutHeight(value: Double): Self = StObject.set(x, "outHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "outShape", value.asInstanceOf[js.Any])
+      inline def setOutShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "outShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutWidth(value: Double): Self = StObject.set(x, "outWidth", value.asInstanceOf[js.Any])
+      inline def setOutWidth(value: Double): Self = StObject.set(x, "outWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadInfo(value: PadInfo3D): Self = StObject.set(x, "padInfo", value.asInstanceOf[js.Any])
+      inline def setPadInfo(value: PadInfo3D): Self = StObject.set(x, "padInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrideDepth(value: Double): Self = StObject.set(x, "strideDepth", value.asInstanceOf[js.Any])
+      inline def setStrideDepth(value: Double): Self = StObject.set(x, "strideDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrideHeight(value: Double): Self = StObject.set(x, "strideHeight", value.asInstanceOf[js.Any])
+      inline def setStrideHeight(value: Double): Self = StObject.set(x, "strideHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrideWidth(value: Double): Self = StObject.set(x, "strideWidth", value.asInstanceOf[js.Any])
+      inline def setStrideWidth(value: Double): Self = StObject.set(x, "strideWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -540,30 +462,23 @@ object convUtilMod {
   }
   object PadInfo {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double, `type`: PadType): PadInfo = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double, `type`: PadType): PadInfo = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PadInfo]
     }
     
-    @scala.inline
-    implicit class PadInfoMutableBuilder[Self <: PadInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PadInfo](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,8 +500,7 @@ object convUtilMod {
   }
   object PadInfo3D {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       back: Double,
       bottom: Double,
       front: Double,
@@ -600,29 +514,21 @@ object convUtilMod {
       __obj.asInstanceOf[PadInfo3D]
     }
     
-    @scala.inline
-    implicit class PadInfo3DMutableBuilder[Self <: PadInfo3D] (val x: Self) extends AnyVal {
+    extension [Self <: PadInfo3D](x: Self) {
       
-      @scala.inline
-      def setBack(value: Double): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+      inline def setBack(value: Double): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFront(value: Double): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+      inline def setFront(value: Double): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -635,16 +541,12 @@ object convUtilMod {
   trait PadType extends StObject
   object PadType {
     
-    @scala.inline
-    def EXPLICIT: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.EXPLICIT = "EXPLICIT".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.EXPLICIT]
+    inline def EXPLICIT: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.EXPLICIT = "EXPLICIT".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.EXPLICIT]
     
-    @scala.inline
-    def NUMBER: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NUMBER = "NUMBER".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NUMBER]
+    inline def NUMBER: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NUMBER = "NUMBER".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NUMBER]
     
-    @scala.inline
-    def SAME: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.SAME = "SAME".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.SAME]
+    inline def SAME: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.SAME = "SAME".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.SAME]
     
-    @scala.inline
-    def VALID: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.VALID = "VALID".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.VALID]
+    inline def VALID: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.VALID = "VALID".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.VALID]
   }
 }

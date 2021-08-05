@@ -17,26 +17,20 @@ object anon {
   }
   object Compiler {
     
-    @scala.inline
-    def apply(compiler: Options, components: js.Any, transform: js.Array[js.Any]): Compiler = {
+    inline def apply(compiler: Options, components: js.Any, transform: js.Array[js.Any]): Compiler = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[Compiler]
     }
     
-    @scala.inline
-    implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+    extension [Self <: Compiler](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: js.Array[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformVarargs(value: js.Any*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: js.Any*): Self = StObject.set(x, "transform", js.Array(value :_*))
     }
   }
 }

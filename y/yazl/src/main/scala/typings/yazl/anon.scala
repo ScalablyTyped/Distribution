@@ -16,26 +16,20 @@ object anon {
   }
   object PartialDirectoryOptions {
     
-    @scala.inline
-    def apply(): PartialDirectoryOptions = {
+    inline def apply(): PartialDirectoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialDirectoryOptions]
     }
     
-    @scala.inline
-    implicit class PartialDirectoryOptionsMutableBuilder[Self <: PartialDirectoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialDirectoryOptions](x: Self) {
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }
   }
   
@@ -52,38 +46,28 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
+      inline def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
+      inline def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }
   }
   
@@ -102,44 +86,32 @@ object anon {
   }
   object PartialReadStreamOptions {
     
-    @scala.inline
-    def apply(): PartialReadStreamOptions = {
+    inline def apply(): PartialReadStreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialReadStreamOptions]
     }
     
-    @scala.inline
-    implicit class PartialReadStreamOptionsMutableBuilder[Self <: PartialReadStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialReadStreamOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
+      inline def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
+      inline def setForceZip64FormatUndefined: Self = StObject.set(x, "forceZip64Format", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

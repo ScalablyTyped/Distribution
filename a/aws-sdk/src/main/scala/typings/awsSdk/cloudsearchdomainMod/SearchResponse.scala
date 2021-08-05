@@ -28,37 +28,27 @@ trait SearchResponse extends StObject {
 }
 object SearchResponse {
   
-  @scala.inline
-  def apply(): SearchResponse = {
+  inline def apply(): SearchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchResponse]
   }
   
-  @scala.inline
-  implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResponse](x: Self) {
     
-    @scala.inline
-    def setFacets(value: Facets): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
+    inline def setFacets(value: Facets): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetsUndefined: Self = StObject.set(x, "facets", js.undefined)
+    inline def setFacetsUndefined: Self = StObject.set(x, "facets", js.undefined)
     
-    @scala.inline
-    def setHits(value: Hits): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: Hits): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
+    inline def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
     
-    @scala.inline
-    def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SearchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SearchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

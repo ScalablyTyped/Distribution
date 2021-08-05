@@ -14,32 +14,32 @@ object headerContainerMod {
   class HeaderContainer protected () extends StObject {
     def this(eContainer: HTMLElement, eViewport: HTMLElement, pinned: String) = this()
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createHeaderRowComps(): js.Any = js.native
     
     def destroy(): Unit = js.native
     
-    var dragAndDropService: js.Any = js.native
+    /* private */ var dragAndDropService: js.Any = js.native
     
-    var dropTarget: js.Any = js.native
+    /* private */ var dropTarget: js.Any = js.native
     
-    var eContainer: js.Any = js.native
+    /* private */ var eContainer: js.Any = js.native
     
-    var eViewport: js.Any = js.native
+    /* private */ var eViewport: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def forEachHeaderElement(callback: js.Function1[/* renderedHeaderElement */ Component, Unit]): Unit = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var headerRowComps: js.Any = js.native
+    /* private */ var headerRowComps: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
     
@@ -55,7 +55,7 @@ object headerContainerMod {
     
     /* private */ def onScrollVisibilityChanged(): js.Any = js.native
     
-    var pinned: js.Any = js.native
+    /* private */ var pinned: js.Any = js.native
     
     def refresh(): Unit = js.native
     
@@ -63,9 +63,9 @@ object headerContainerMod {
     
     /* private */ def removeHeaderRowComps(): js.Any = js.native
     
-    var scrollVisibleService: js.Any = js.native
+    /* private */ var scrollVisibleService: js.Any = js.native
     
-    var scrollWidth: js.Any = js.native
+    /* private */ var scrollWidth: js.Any = js.native
     
     /* private */ def setWidthOfPinnedContainer(): js.Any = js.native
     

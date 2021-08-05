@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Table extends StObject {
   
-  @JSName("ADOX.Table_typekey")
+  /* private */ @JSName("ADOX.Table_typekey")
   var ADOXDotTable_typekey: Table
   
   def Columns(Item: String): Column
@@ -44,8 +44,7 @@ trait Table extends StObject {
 }
 object Table {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADOXDotTable_typekey: Table,
     Columns: Columns,
     DateCreated: VarDate,
@@ -62,37 +61,26 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  @scala.inline
-  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+  extension [Self <: Table](x: Self) {
     
-    @scala.inline
-    def setADOXDotTable_typekey(value: Table): Self = StObject.set(x, "ADOX.Table_typekey", value.asInstanceOf[js.Any])
+    inline def setADOXDotTable_typekey(value: Table): Self = StObject.set(x, "ADOX.Table_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    inline def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexes(value: Indexes): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: Indexes): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: Keys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Keys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCatalog(value: Catalog): Self = StObject.set(x, "ParentCatalog", value.asInstanceOf[js.Any])
+    inline def setParentCatalog(value: Catalog): Self = StObject.set(x, "ParentCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

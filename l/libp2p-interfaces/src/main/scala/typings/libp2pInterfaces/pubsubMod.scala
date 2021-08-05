@@ -378,14 +378,12 @@ object pubsubMod {
     @JSImport("libp2p-interfaces/src/pubsub", "SignaturePolicy.StrictNoSign")
     @js.native
     def StrictNoSign: String = js.native
-    @scala.inline
-    def StrictNoSign_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StrictNoSign")(x.asInstanceOf[js.Any])
+    inline def StrictNoSign_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StrictNoSign")(x.asInstanceOf[js.Any])
     
     @JSImport("libp2p-interfaces/src/pubsub", "SignaturePolicy.StrictSign")
     @js.native
     def StrictSign: String = js.native
-    @scala.inline
-    def StrictSign_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StrictSign")(x.asInstanceOf[js.Any])
+    inline def StrictSign_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StrictSign")(x.asInstanceOf[js.Any])
   }
   
   /* was `typeof imported_message` */
@@ -398,33 +396,28 @@ object pubsubMod {
     @JSImport("libp2p-interfaces/src/pubsub", "message.Message")
     @js.native
     def Message: js.Any = js.native
-    @scala.inline
-    def Message_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Message")(x.asInstanceOf[js.Any])
+    inline def Message_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Message")(x.asInstanceOf[js.Any])
     
     @JSImport("libp2p-interfaces/src/pubsub", "message.RPC")
     @js.native
     def RPC_ : js.Any = js.native
     
-    @scala.inline
-    def RPC__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RPC")(x.asInstanceOf[js.Any])
+    inline def RPC__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RPC")(x.asInstanceOf[js.Any])
     
     @JSImport("libp2p-interfaces/src/pubsub", "message.SubOpts")
     @js.native
     def SubOpts: js.Any = js.native
-    @scala.inline
-    def SubOpts_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubOpts")(x.asInstanceOf[js.Any])
+    inline def SubOpts_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubOpts")(x.asInstanceOf[js.Any])
     
     @JSImport("libp2p-interfaces/src/pubsub", "message.rpc")
     @js.native
     def rpc: js.Any = js.native
-    @scala.inline
-    def rpc_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rpc")(x.asInstanceOf[js.Any])
+    inline def rpc_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rpc")(x.asInstanceOf[js.Any])
     
     @JSImport("libp2p-interfaces/src/pubsub", "message.td")
     @js.native
     def td: js.Any = js.native
-    @scala.inline
-    def td_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("td")(x.asInstanceOf[js.Any])
+    inline def td_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("td")(x.asInstanceOf[js.Any])
   }
   
   /* was `typeof imported_utils` */
@@ -434,32 +427,22 @@ object pubsubMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def anyMatch(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def anyMatch(a: js.Array[js.Any], b: Set[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def anyMatch(a: Set[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def anyMatch(a: Set[js.Any], b: Set[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def anyMatch(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def anyMatch(a: js.Array[js.Any], b: Set[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def anyMatch(a: Set[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def anyMatch(a: Set[js.Any], b: Set[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("anyMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ensureArray(maybeArray: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureArray")(maybeArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def ensureArray(maybeArray: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureArray")(maybeArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def msgId(from: String, seqno: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("msgId")(from.asInstanceOf[js.Any], seqno.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def msgId(from: String, seqno: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("msgId")(from.asInstanceOf[js.Any], seqno.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def noSignMsgId(data: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("noSignMsgId")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def noSignMsgId(data: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("noSignMsgId")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def normalizeInRpcMessage(message: js.Any, peerId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeInRpcMessage")(message.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def normalizeInRpcMessage(message: js.Any, peerId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeInRpcMessage")(message.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def normalizeOutRpcMessage(message: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOutRpcMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def normalizeOutRpcMessage(message: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOutRpcMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def randomSeqno(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSeqno")().asInstanceOf[Uint8Array]
+    inline def randomSeqno(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSeqno")().asInstanceOf[Uint8Array]
   }
   
   trait InMessage extends StObject {
@@ -480,50 +463,36 @@ object pubsubMod {
   }
   object InMessage {
     
-    @scala.inline
-    def apply(data: Uint8Array, receivedFrom: String, topicIDs: js.Array[String]): InMessage = {
+    inline def apply(data: Uint8Array, receivedFrom: String, topicIDs: js.Array[String]): InMessage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], receivedFrom = receivedFrom.asInstanceOf[js.Any], topicIDs = topicIDs.asInstanceOf[js.Any])
       __obj.asInstanceOf[InMessage]
     }
     
-    @scala.inline
-    implicit class InMessageMutableBuilder[Self <: InMessage] (val x: Self) extends AnyVal {
+    extension [Self <: InMessage](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setKey(value: Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setReceivedFrom(value: String): Self = StObject.set(x, "receivedFrom", value.asInstanceOf[js.Any])
+      inline def setReceivedFrom(value: String): Self = StObject.set(x, "receivedFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeqno(value: Uint8Array): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
+      inline def setSeqno(value: Uint8Array): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
+      inline def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
       
-      @scala.inline
-      def setSignature(value: Uint8Array): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Uint8Array): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+      inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
       
-      @scala.inline
-      def setTopicIDs(value: js.Array[String]): Self = StObject.set(x, "topicIDs", value.asInstanceOf[js.Any])
+      inline def setTopicIDs(value: js.Array[String]): Self = StObject.set(x, "topicIDs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicIDsVarargs(value: String*): Self = StObject.set(x, "topicIDs", js.Array(value :_*))
+      inline def setTopicIDsVarargs(value: String*): Self = StObject.set(x, "topicIDs", js.Array(value :_*))
     }
   }
   
@@ -831,8 +800,7 @@ object pubsubMod {
   }
   object PubsubBaseProtocol {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _acceptFrom: String => Boolean,
       _addPeer: (typings.peerId.mod.^, String) => typings.libp2pInterfaces.peerStreamsMod.^,
       _buildMessage: js.Any => js.Promise[js.Any],
@@ -878,131 +846,89 @@ object pubsubMod {
       __obj.asInstanceOf[PubsubBaseProtocol]
     }
     
-    @scala.inline
-    implicit class PubsubBaseProtocolMutableBuilder[Self <: PubsubBaseProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: PubsubBaseProtocol](x: Self) {
       
-      @scala.inline
-      def setCanRelayMessage(value: Boolean): Self = StObject.set(x, "canRelayMessage", value.asInstanceOf[js.Any])
+      inline def setCanRelayMessage(value: Boolean): Self = StObject.set(x, "canRelayMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
+      inline def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMsgId(value: js.Any => Uint8Array): Self = StObject.set(x, "getMsgId", js.Any.fromFunction1(value))
+      inline def setGetMsgId(value: js.Any => Uint8Array): Self = StObject.set(x, "getMsgId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSubscribers(value: String => js.Array[String]): Self = StObject.set(x, "getSubscribers", js.Any.fromFunction1(value))
+      inline def setGetSubscribers(value: String => js.Array[String]): Self = StObject.set(x, "getSubscribers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTopics(value: () => js.Array[String]): Self = StObject.set(x, "getTopics", js.Any.fromFunction0(value))
+      inline def setGetTopics(value: () => js.Array[String]): Self = StObject.set(x, "getTopics", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGlobalSignaturePolicy(value: String): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
+      inline def setGlobalSignaturePolicy(value: String): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulticodecs(value: js.Array[String]): Self = StObject.set(x, "multicodecs", value.asInstanceOf[js.Any])
+      inline def setMulticodecs(value: js.Array[String]): Self = StObject.set(x, "multicodecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulticodecsVarargs(value: String*): Self = StObject.set(x, "multicodecs", js.Array(value :_*))
+      inline def setMulticodecsVarargs(value: String*): Self = StObject.set(x, "multicodecs", js.Array(value :_*))
       
-      @scala.inline
-      def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeers(value: Map[String, typings.libp2pInterfaces.peerStreamsMod.^]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
+      inline def setPeers(value: Map[String, typings.libp2pInterfaces.peerStreamsMod.^]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublish(value: (String, Buffer) => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      inline def setPublish(value: (String, Buffer) => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegistrar(value: js.Any): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+      inline def setRegistrar(value: js.Any): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+      inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubscribe(value: String => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: String => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscriptions(value: Set[String]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: Set[String]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicValidators(value: Map[String, validator]): Self = StObject.set(x, "topicValidators", value.asInstanceOf[js.Any])
+      inline def setTopicValidators(value: Map[String, validator]): Self = StObject.set(x, "topicValidators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: Map[String, Set[String]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: Map[String, Set[String]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: String => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+      inline def setUnsubscribe(value: String => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidate(value: InMessage => js.Promise[Unit]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: InMessage => js.Promise[Unit]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_acceptFrom(value: String => Boolean): Self = StObject.set(x, "_acceptFrom", js.Any.fromFunction1(value))
+      inline def set_acceptFrom(value: String => Boolean): Self = StObject.set(x, "_acceptFrom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_addPeer(value: (typings.peerId.mod.^, String) => typings.libp2pInterfaces.peerStreamsMod.^): Self = StObject.set(x, "_addPeer", js.Any.fromFunction2(value))
+      inline def set_addPeer(value: (typings.peerId.mod.^, String) => typings.libp2pInterfaces.peerStreamsMod.^): Self = StObject.set(x, "_addPeer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_buildMessage(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "_buildMessage", js.Any.fromFunction1(value))
+      inline def set_buildMessage(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "_buildMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_decodeRpc(value: Uint8Array => js.Any): Self = StObject.set(x, "_decodeRpc", js.Any.fromFunction1(value))
+      inline def set_decodeRpc(value: Uint8Array => js.Any): Self = StObject.set(x, "_decodeRpc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_emitMessage(value: InMessage => Unit): Self = StObject.set(x, "_emitMessage", js.Any.fromFunction1(value))
+      inline def set_emitMessage(value: InMessage => Unit): Self = StObject.set(x, "_emitMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_encodeRpc(value: js.Any => Uint8Array): Self = StObject.set(x, "_encodeRpc", js.Any.fromFunction1(value))
+      inline def set_encodeRpc(value: js.Any => Uint8Array): Self = StObject.set(x, "_encodeRpc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_libp2p(value: js.Any): Self = StObject.set(x, "_libp2p", value.asInstanceOf[js.Any])
+      inline def set_libp2p(value: js.Any): Self = StObject.set(x, "_libp2p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onIncomingStream(value: Connection => Unit): Self = StObject.set(x, "_onIncomingStream", js.Any.fromFunction1(value))
+      inline def set_onIncomingStream(value: Connection => Unit): Self = StObject.set(x, "_onIncomingStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_onPeerConnected(value: (typings.peerId.mod.^, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "_onPeerConnected", js.Any.fromFunction2(value))
+      inline def set_onPeerConnected(value: (typings.peerId.mod.^, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "_onPeerConnected", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_onPeerDisconnected(value: (typings.peerId.mod.^, Error) => Unit): Self = StObject.set(x, "_onPeerDisconnected", js.Any.fromFunction2(value))
+      inline def set_onPeerDisconnected(value: (typings.peerId.mod.^, Error) => Unit): Self = StObject.set(x, "_onPeerDisconnected", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_processMessages(value: (String, js.Any, typings.libp2pInterfaces.peerStreamsMod.^) => js.Promise[Unit]): Self = StObject.set(x, "_processMessages", js.Any.fromFunction3(value))
+      inline def set_processMessages(value: (String, js.Any, typings.libp2pInterfaces.peerStreamsMod.^) => js.Promise[Unit]): Self = StObject.set(x, "_processMessages", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_processRpc(value: (String, typings.libp2pInterfaces.peerStreamsMod.^, js.Any) => Boolean): Self = StObject.set(x, "_processRpc", js.Any.fromFunction3(value))
+      inline def set_processRpc(value: (String, typings.libp2pInterfaces.peerStreamsMod.^, js.Any) => Boolean): Self = StObject.set(x, "_processRpc", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_processRpcMessage(value: InMessage => js.Promise[Unit]): Self = StObject.set(x, "_processRpcMessage", js.Any.fromFunction1(value))
+      inline def set_processRpcMessage(value: InMessage => js.Promise[Unit]): Self = StObject.set(x, "_processRpcMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_processRpcSubOpt(value: (String, js.Any) => Unit): Self = StObject.set(x, "_processRpcSubOpt", js.Any.fromFunction2(value))
+      inline def set_processRpcSubOpt(value: (String, js.Any) => Unit): Self = StObject.set(x, "_processRpcSubOpt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_publish(value: InMessage => js.Promise[Unit]): Self = StObject.set(x, "_publish", js.Any.fromFunction1(value))
+      inline def set_publish(value: InMessage => js.Promise[Unit]): Self = StObject.set(x, "_publish", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_registrarId(value: js.Any): Self = StObject.set(x, "_registrarId", value.asInstanceOf[js.Any])
+      inline def set_registrarId(value: js.Any): Self = StObject.set(x, "_registrarId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_removePeer(value: typings.peerId.mod.^ => typings.libp2pInterfaces.peerStreamsMod.^): Self = StObject.set(x, "_removePeer", js.Any.fromFunction1(value))
+      inline def set_removePeer(value: typings.peerId.mod.^ => typings.libp2pInterfaces.peerStreamsMod.^): Self = StObject.set(x, "_removePeer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_sendRpc(value: (String, js.Any) => Unit): Self = StObject.set(x, "_sendRpc", js.Any.fromFunction2(value))
+      inline def set_sendRpc(value: (String, js.Any) => Unit): Self = StObject.set(x, "_sendRpc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_sendSubscriptions(value: (String, js.Array[String], Boolean) => Unit): Self = StObject.set(x, "_sendSubscriptions", js.Any.fromFunction3(value))
+      inline def set_sendSubscriptions(value: (String, js.Array[String], Boolean) => Unit): Self = StObject.set(x, "_sendSubscriptions", js.Any.fromFunction3(value))
     }
   }
   

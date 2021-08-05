@@ -17,25 +17,19 @@ trait IntrospectionScalarType
 }
 object IntrospectionScalarType {
   
-  @scala.inline
-  def apply(name: String): IntrospectionScalarType = {
+  inline def apply(name: String): IntrospectionScalarType = {
     val __obj = js.Dynamic.literal(kind = "SCALAR", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionScalarType]
   }
   
-  @scala.inline
-  implicit class IntrospectionScalarTypeMutableBuilder[Self <: IntrospectionScalarType] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionScalarType](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setKind(value: SCALAR): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: SCALAR): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

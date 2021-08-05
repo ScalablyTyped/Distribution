@@ -24,31 +24,23 @@ trait CodeFlow extends StObject {
 }
 object CodeFlow {
   
-  @scala.inline
-  def apply(threadFlows: js.Array[ThreadFlow]): CodeFlow = {
+  inline def apply(threadFlows: js.Array[ThreadFlow]): CodeFlow = {
     val __obj = js.Dynamic.literal(threadFlows = threadFlows.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeFlow]
   }
   
-  @scala.inline
-  implicit class CodeFlowMutableBuilder[Self <: CodeFlow] (val x: Self) extends AnyVal {
+  extension [Self <: CodeFlow](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setThreadFlows(value: js.Array[ThreadFlow]): Self = StObject.set(x, "threadFlows", value.asInstanceOf[js.Any])
+    inline def setThreadFlows(value: js.Array[ThreadFlow]): Self = StObject.set(x, "threadFlows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadFlowsVarargs(value: ThreadFlow*): Self = StObject.set(x, "threadFlows", js.Array(value :_*))
+    inline def setThreadFlowsVarargs(value: ThreadFlow*): Self = StObject.set(x, "threadFlows", js.Array(value :_*))
   }
 }

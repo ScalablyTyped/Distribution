@@ -28,55 +28,39 @@ trait ContinuousSizeLegendProps extends StObject {
 }
 object ContinuousSizeLegendProps {
   
-  @scala.inline
-  def apply(endTitle: Double | String, startTitle: Double | String): ContinuousSizeLegendProps = {
+  inline def apply(endTitle: Double | String, startTitle: Double | String): ContinuousSizeLegendProps = {
     val __obj = js.Dynamic.literal(endTitle = endTitle.asInstanceOf[js.Any], startTitle = startTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousSizeLegendProps]
   }
   
-  @scala.inline
-  implicit class ContinuousSizeLegendPropsMutableBuilder[Self <: ContinuousSizeLegendProps] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousSizeLegendProps](x: Self) {
     
-    @scala.inline
-    def setCirclesTotal(value: Double): Self = StObject.set(x, "circlesTotal", value.asInstanceOf[js.Any])
+    inline def setCirclesTotal(value: Double): Self = StObject.set(x, "circlesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCirclesTotalUndefined: Self = StObject.set(x, "circlesTotal", js.undefined)
+    inline def setCirclesTotalUndefined: Self = StObject.set(x, "circlesTotal", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setEndSize(value: Double): Self = StObject.set(x, "endSize", value.asInstanceOf[js.Any])
+    inline def setEndSize(value: Double): Self = StObject.set(x, "endSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSizeUndefined: Self = StObject.set(x, "endSize", js.undefined)
+    inline def setEndSizeUndefined: Self = StObject.set(x, "endSize", js.undefined)
     
-    @scala.inline
-    def setEndTitle(value: Double | String): Self = StObject.set(x, "endTitle", value.asInstanceOf[js.Any])
+    inline def setEndTitle(value: Double | String): Self = StObject.set(x, "endTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setStartSize(value: Double): Self = StObject.set(x, "startSize", value.asInstanceOf[js.Any])
+    inline def setStartSize(value: Double): Self = StObject.set(x, "startSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSizeUndefined: Self = StObject.set(x, "startSize", js.undefined)
+    inline def setStartSizeUndefined: Self = StObject.set(x, "startSize", js.undefined)
     
-    @scala.inline
-    def setStartTitle(value: Double | String): Self = StObject.set(x, "startTitle", value.asInstanceOf[js.Any])
+    inline def setStartTitle(value: Double | String): Self = StObject.set(x, "startTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

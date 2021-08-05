@@ -11,12 +11,9 @@ object debounceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](src: typings.baconjs.observableMod.default[V], delay: Double): typings.baconjs.observableMod.default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V]]
+  inline def default[V](src: typings.baconjs.observableMod.default[V], delay: Double): typings.baconjs.observableMod.default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V]]
   
-  @scala.inline
-  def debounce[V](src: default[V], delay: Double): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  inline def debounce[V](src: default[V], delay: Double): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[default[V]]
   
-  @scala.inline
-  def debounceImmediate[V](src: default[V], delay: Double): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceImmediate")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  inline def debounceImmediate[V](src: default[V], delay: Double): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceImmediate")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[default[V]]
 }

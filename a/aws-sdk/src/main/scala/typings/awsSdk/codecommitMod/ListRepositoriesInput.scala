@@ -23,31 +23,23 @@ trait ListRepositoriesInput extends StObject {
 }
 object ListRepositoriesInput {
   
-  @scala.inline
-  def apply(): ListRepositoriesInput = {
+  inline def apply(): ListRepositoriesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRepositoriesInput]
   }
   
-  @scala.inline
-  implicit class ListRepositoriesInputMutableBuilder[Self <: ListRepositoriesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRepositoriesInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOrder(value: OrderEnum): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: OrderEnum): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: SortByEnum): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: SortByEnum): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
   }
 }

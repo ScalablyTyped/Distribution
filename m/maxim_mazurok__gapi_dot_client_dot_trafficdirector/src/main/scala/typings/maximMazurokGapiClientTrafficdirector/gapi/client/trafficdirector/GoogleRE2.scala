@@ -15,19 +15,15 @@ trait GoogleRE2 extends StObject {
 }
 object GoogleRE2 {
   
-  @scala.inline
-  def apply(): GoogleRE2 = {
+  inline def apply(): GoogleRE2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleRE2]
   }
   
-  @scala.inline
-  implicit class GoogleRE2MutableBuilder[Self <: GoogleRE2] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleRE2](x: Self) {
     
-    @scala.inline
-    def setMaxProgramSize(value: Double): Self = StObject.set(x, "maxProgramSize", value.asInstanceOf[js.Any])
+    inline def setMaxProgramSize(value: Double): Self = StObject.set(x, "maxProgramSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxProgramSizeUndefined: Self = StObject.set(x, "maxProgramSize", js.undefined)
+    inline def setMaxProgramSizeUndefined: Self = StObject.set(x, "maxProgramSize", js.undefined)
   }
 }

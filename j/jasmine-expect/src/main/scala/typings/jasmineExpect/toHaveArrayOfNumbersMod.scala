@@ -22,19 +22,16 @@ object toHaveArrayOfNumbersMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](
+        inline def apply[T](
           toHaveArrayOfNumbers: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
         ): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveArrayOfNumbers = js.Any.fromFunction2(toHaveArrayOfNumbers))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveArrayOfNumbers(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveArrayOfNumbers", js.Any.fromFunction2(value))
+          inline def setToHaveArrayOfNumbers(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveArrayOfNumbers", js.Any.fromFunction2(value))
         }
       }
     }

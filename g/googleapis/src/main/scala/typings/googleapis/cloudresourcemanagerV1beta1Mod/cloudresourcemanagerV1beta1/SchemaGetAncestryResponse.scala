@@ -18,22 +18,17 @@ trait SchemaGetAncestryResponse extends StObject {
 }
 object SchemaGetAncestryResponse {
   
-  @scala.inline
-  def apply(): SchemaGetAncestryResponse = {
+  inline def apply(): SchemaGetAncestryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetAncestryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetAncestryResponseMutableBuilder[Self <: SchemaGetAncestryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetAncestryResponse](x: Self) {
     
-    @scala.inline
-    def setAncestor(value: js.Array[SchemaAncestor]): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
+    inline def setAncestor(value: js.Array[SchemaAncestor]): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
+    inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
     
-    @scala.inline
-    def setAncestorVarargs(value: SchemaAncestor*): Self = StObject.set(x, "ancestor", js.Array(value :_*))
+    inline def setAncestorVarargs(value: SchemaAncestor*): Self = StObject.set(x, "ancestor", js.Array(value :_*))
   }
 }

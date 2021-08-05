@@ -34,26 +34,20 @@ object mod {
   }
   object Capabilities {
     
-    @scala.inline
-    def apply(optional: js.Array[js.Any], required: js.Array[js.Any]): Capabilities = {
+    inline def apply(optional: js.Array[js.Any], required: js.Array[js.Any]): Capabilities = {
       val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
       __obj.asInstanceOf[Capabilities]
     }
     
-    @scala.inline
-    implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
+    extension [Self <: Capabilities](x: Self) {
       
-      @scala.inline
-      def setOptional(value: js.Array[js.Any]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[js.Any]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalVarargs(value: js.Any*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: js.Any*): Self = StObject.set(x, "optional", js.Array(value :_*))
       
-      @scala.inline
-      def setRequired(value: js.Array[js.Any]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: js.Array[js.Any]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredVarargs(value: js.Any*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: js.Any*): Self = StObject.set(x, "required", js.Array(value :_*))
     }
   }
   
@@ -68,20 +62,16 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setWatchmanBinaryPath(value: String): Self = StObject.set(x, "watchmanBinaryPath", value.asInstanceOf[js.Any])
+      inline def setWatchmanBinaryPath(value: String): Self = StObject.set(x, "watchmanBinaryPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchmanBinaryPathUndefined: Self = StObject.set(x, "watchmanBinaryPath", js.undefined)
+      inline def setWatchmanBinaryPathUndefined: Self = StObject.set(x, "watchmanBinaryPath", js.undefined)
     }
   }
   
@@ -92,11 +82,9 @@ object mod {
   trait UnilateralTags extends StObject
   object UnilateralTags {
     
-    @scala.inline
-    def log: typings.fbWatchman.fbWatchmanStrings.log = "log".asInstanceOf[typings.fbWatchman.fbWatchmanStrings.log]
+    inline def log: typings.fbWatchman.fbWatchmanStrings.log = "log".asInstanceOf[typings.fbWatchman.fbWatchmanStrings.log]
     
-    @scala.inline
-    def unilateralTags: typings.fbWatchman.fbWatchmanStrings.unilateralTags = "unilateralTags".asInstanceOf[typings.fbWatchman.fbWatchmanStrings.unilateralTags]
+    inline def unilateralTags: typings.fbWatchman.fbWatchmanStrings.unilateralTags = "unilateralTags".asInstanceOf[typings.fbWatchman.fbWatchmanStrings.unilateralTags]
   }
   
   type doneCallback = js.Function2[/* error */ js.UndefOr[Error | Null], /* resp */ js.UndefOr[js.Any], js.Any]

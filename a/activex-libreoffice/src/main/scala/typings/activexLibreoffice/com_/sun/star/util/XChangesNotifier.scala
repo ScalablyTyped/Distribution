@@ -24,8 +24,7 @@ trait XChangesNotifier
 }
 object XChangesNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addChangesListener: XChangesListener => Unit,
     queryInterface: `type` => js.Any,
@@ -36,13 +35,10 @@ object XChangesNotifier {
     __obj.asInstanceOf[XChangesNotifier]
   }
   
-  @scala.inline
-  implicit class XChangesNotifierMutableBuilder[Self <: XChangesNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: XChangesNotifier](x: Self) {
     
-    @scala.inline
-    def setAddChangesListener(value: XChangesListener => Unit): Self = StObject.set(x, "addChangesListener", js.Any.fromFunction1(value))
+    inline def setAddChangesListener(value: XChangesListener => Unit): Self = StObject.set(x, "addChangesListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveChangesListener(value: XChangesListener => Unit): Self = StObject.set(x, "removeChangesListener", js.Any.fromFunction1(value))
+    inline def setRemoveChangesListener(value: XChangesListener => Unit): Self = StObject.set(x, "removeChangesListener", js.Any.fromFunction1(value))
   }
 }

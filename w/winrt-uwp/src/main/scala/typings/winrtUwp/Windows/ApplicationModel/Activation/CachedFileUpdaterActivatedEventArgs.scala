@@ -22,8 +22,7 @@ trait CachedFileUpdaterActivatedEventArgs extends StObject {
 }
 object CachedFileUpdaterActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cachedFileUpdaterUI: CachedFileUpdaterUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -33,19 +32,14 @@ object CachedFileUpdaterActivatedEventArgs {
     __obj.asInstanceOf[CachedFileUpdaterActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class CachedFileUpdaterActivatedEventArgsMutableBuilder[Self <: CachedFileUpdaterActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CachedFileUpdaterActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCachedFileUpdaterUI(value: CachedFileUpdaterUI): Self = StObject.set(x, "cachedFileUpdaterUI", value.asInstanceOf[js.Any])
+    inline def setCachedFileUpdaterUI(value: CachedFileUpdaterUI): Self = StObject.set(x, "cachedFileUpdaterUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

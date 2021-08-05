@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Deta(projectKey: String): DetaInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any]).asInstanceOf[DetaInstance]
-  @scala.inline
-  def Deta(projectKey: String, host: String): DetaInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[DetaInstance]
+  inline def Deta(projectKey: String): DetaInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any]).asInstanceOf[DetaInstance]
+  inline def Deta(projectKey: String, host: String): DetaInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[DetaInstance]
   
   @js.native
   trait DetaBase extends StObject {
@@ -50,8 +48,7 @@ object mod {
        with /* key */ StringDictionary[String | Double | Boolean | DetaBaseQuery]
   object DetaBaseQuery {
     
-    @scala.inline
-    def apply(): DetaBaseQuery = {
+    inline def apply(): DetaBaseQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DetaBaseQuery]
     }
@@ -78,17 +75,14 @@ object mod {
   }
   object DetaInstance {
     
-    @scala.inline
-    def apply(Base: String => DetaBase): DetaInstance = {
+    inline def apply(Base: String => DetaBase): DetaInstance = {
       val __obj = js.Dynamic.literal(Base = js.Any.fromFunction1(Base))
       __obj.asInstanceOf[DetaInstance]
     }
     
-    @scala.inline
-    implicit class DetaInstanceMutableBuilder[Self <: DetaInstance] (val x: Self) extends AnyVal {
+    extension [Self <: DetaInstance](x: Self) {
       
-      @scala.inline
-      def setBase(value: String => DetaBase): Self = StObject.set(x, "Base", js.Any.fromFunction1(value))
+      inline def setBase(value: String => DetaBase): Self = StObject.set(x, "Base", js.Any.fromFunction1(value))
     }
   }
   

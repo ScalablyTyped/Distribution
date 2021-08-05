@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RateItMode extends StObject
 object RateItMode {
   
-  @scala.inline
-  def bg: typings.jqueryRateit.jqueryRateitStrings.bg = "bg".asInstanceOf[typings.jqueryRateit.jqueryRateitStrings.bg]
+  inline def bg: typings.jqueryRateit.jqueryRateitStrings.bg = "bg".asInstanceOf[typings.jqueryRateit.jqueryRateitStrings.bg]
   
-  @scala.inline
-  def font: typings.jqueryRateit.jqueryRateitStrings.font = "font".asInstanceOf[typings.jqueryRateit.jqueryRateitStrings.font]
+  inline def font: typings.jqueryRateit.jqueryRateitStrings.font = "font".asInstanceOf[typings.jqueryRateit.jqueryRateitStrings.font]
 }

@@ -30,55 +30,39 @@ trait NluEnrichmentEntities extends StObject {
 }
 object NluEnrichmentEntities {
   
-  @scala.inline
-  def apply(): NluEnrichmentEntities = {
+  inline def apply(): NluEnrichmentEntities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NluEnrichmentEntities]
   }
   
-  @scala.inline
-  implicit class NluEnrichmentEntitiesMutableBuilder[Self <: NluEnrichmentEntities] (val x: Self) extends AnyVal {
+  extension [Self <: NluEnrichmentEntities](x: Self) {
     
-    @scala.inline
-    def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    inline def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMention_types(value: Boolean): Self = StObject.set(x, "mention_types", value.asInstanceOf[js.Any])
+    inline def setMention_types(value: Boolean): Self = StObject.set(x, "mention_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMention_typesUndefined: Self = StObject.set(x, "mention_types", js.undefined)
+    inline def setMention_typesUndefined: Self = StObject.set(x, "mention_types", js.undefined)
     
-    @scala.inline
-    def setMentions(value: Boolean): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    inline def setMentions(value: Boolean): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
+    inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSentence_locations(value: Boolean): Self = StObject.set(x, "sentence_locations", value.asInstanceOf[js.Any])
+    inline def setSentence_locations(value: Boolean): Self = StObject.set(x, "sentence_locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentence_locationsUndefined: Self = StObject.set(x, "sentence_locations", js.undefined)
+    inline def setSentence_locationsUndefined: Self = StObject.set(x, "sentence_locations", js.undefined)
     
-    @scala.inline
-    def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
   }
 }

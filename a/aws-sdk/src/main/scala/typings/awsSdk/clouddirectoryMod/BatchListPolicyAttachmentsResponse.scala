@@ -18,28 +18,21 @@ trait BatchListPolicyAttachmentsResponse extends StObject {
 }
 object BatchListPolicyAttachmentsResponse {
   
-  @scala.inline
-  def apply(): BatchListPolicyAttachmentsResponse = {
+  inline def apply(): BatchListPolicyAttachmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchListPolicyAttachmentsResponse]
   }
   
-  @scala.inline
-  implicit class BatchListPolicyAttachmentsResponseMutableBuilder[Self <: BatchListPolicyAttachmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListPolicyAttachmentsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setObjectIdentifiers(value: ObjectIdentifierList): Self = StObject.set(x, "ObjectIdentifiers", value.asInstanceOf[js.Any])
+    inline def setObjectIdentifiers(value: ObjectIdentifierList): Self = StObject.set(x, "ObjectIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdentifiersUndefined: Self = StObject.set(x, "ObjectIdentifiers", js.undefined)
+    inline def setObjectIdentifiersUndefined: Self = StObject.set(x, "ObjectIdentifiers", js.undefined)
     
-    @scala.inline
-    def setObjectIdentifiersVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "ObjectIdentifiers", js.Array(value :_*))
+    inline def setObjectIdentifiersVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "ObjectIdentifiers", js.Array(value :_*))
   }
 }

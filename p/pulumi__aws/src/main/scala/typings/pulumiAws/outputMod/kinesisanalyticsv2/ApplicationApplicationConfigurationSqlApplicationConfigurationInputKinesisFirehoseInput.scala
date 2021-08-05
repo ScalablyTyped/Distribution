@@ -13,16 +13,13 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesis
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput {
   
-  @scala.inline
-  def apply(resourceArn: String): ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput = {
+  inline def apply(resourceArn: String): ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -19,37 +19,27 @@ trait GroupName extends StObject {
 }
 object GroupName {
   
-  @scala.inline
-  def apply(): GroupName = {
+  inline def apply(): GroupName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupName]
   }
   
-  @scala.inline
-  implicit class GroupNameMutableBuilder[Self <: GroupName] (val x: Self) extends AnyVal {
+  extension [Self <: GroupName](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setMode(value: none | smallValueThreshold | topN): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: none | smallValueThreshold | topN): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
-    @scala.inline
-    def setTopCount(value: Double): Self = StObject.set(x, "topCount", value.asInstanceOf[js.Any])
+    inline def setTopCount(value: Double): Self = StObject.set(x, "topCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopCountUndefined: Self = StObject.set(x, "topCount", js.undefined)
+    inline def setTopCountUndefined: Self = StObject.set(x, "topCount", js.undefined)
   }
 }

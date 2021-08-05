@@ -67,21 +67,16 @@ object domainNameMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainName]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainNameState): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainName]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    inline def get(name: String, id: Input[ID]): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    inline def get(name: String, id: Input[ID], state: DomainNameState): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    inline def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
     
     /**
       * Returns true if the given object is an instance of DomainName.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean]
   }
   
   trait DomainNameArgs extends StObject {
@@ -103,8 +98,7 @@ object domainNameMod {
   }
   object DomainNameArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domainName: Input[String],
       domainNameConfiguration: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]
     ): DomainNameArgs = {
@@ -112,20 +106,15 @@ object domainNameMod {
       __obj.asInstanceOf[DomainNameArgs]
     }
     
-    @scala.inline
-    implicit class DomainNameArgsMutableBuilder[Self <: DomainNameArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DomainNameArgs](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]): Self = StObject.set(x, "domainNameConfiguration", value.asInstanceOf[js.Any])
+      inline def setDomainNameConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]): Self = StObject.set(x, "domainNameConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -158,44 +147,32 @@ object domainNameMod {
   }
   object DomainNameState {
     
-    @scala.inline
-    def apply(): DomainNameState = {
+    inline def apply(): DomainNameState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainNameState]
     }
     
-    @scala.inline
-    implicit class DomainNameStateMutableBuilder[Self <: DomainNameState] (val x: Self) extends AnyVal {
+    extension [Self <: DomainNameState](x: Self) {
       
-      @scala.inline
-      def setApiMappingSelectionExpression(value: Input[String]): Self = StObject.set(x, "apiMappingSelectionExpression", value.asInstanceOf[js.Any])
+      inline def setApiMappingSelectionExpression(value: Input[String]): Self = StObject.set(x, "apiMappingSelectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiMappingSelectionExpressionUndefined: Self = StObject.set(x, "apiMappingSelectionExpression", js.undefined)
+      inline def setApiMappingSelectionExpressionUndefined: Self = StObject.set(x, "apiMappingSelectionExpression", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]): Self = StObject.set(x, "domainNameConfiguration", value.asInstanceOf[js.Any])
+      inline def setDomainNameConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]): Self = StObject.set(x, "domainNameConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameConfigurationUndefined: Self = StObject.set(x, "domainNameConfiguration", js.undefined)
+      inline def setDomainNameConfigurationUndefined: Self = StObject.set(x, "domainNameConfiguration", js.undefined)
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

@@ -12,16 +12,13 @@ trait GetRolesDataPaged
 }
 object GetRolesDataPaged {
   
-  @scala.inline
-  def apply(include_totals: Boolean): GetRolesDataPaged = {
+  inline def apply(include_totals: Boolean): GetRolesDataPaged = {
     val __obj = js.Dynamic.literal(include_totals = include_totals.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRolesDataPaged]
   }
   
-  @scala.inline
-  implicit class GetRolesDataPagedMutableBuilder[Self <: GetRolesDataPaged] (val x: Self) extends AnyVal {
+  extension [Self <: GetRolesDataPaged](x: Self) {
     
-    @scala.inline
-    def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
+    inline def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
   }
 }

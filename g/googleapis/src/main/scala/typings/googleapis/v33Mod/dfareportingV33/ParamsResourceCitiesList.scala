@@ -44,58 +44,41 @@ trait ParamsResourceCitiesList
 }
 object ParamsResourceCitiesList {
   
-  @scala.inline
-  def apply(): ParamsResourceCitiesList = {
+  inline def apply(): ParamsResourceCitiesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCitiesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCitiesListMutableBuilder[Self <: ParamsResourceCitiesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCitiesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCountryDartIds(value: js.Array[String]): Self = StObject.set(x, "countryDartIds", value.asInstanceOf[js.Any])
+    inline def setCountryDartIds(value: js.Array[String]): Self = StObject.set(x, "countryDartIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryDartIdsUndefined: Self = StObject.set(x, "countryDartIds", js.undefined)
+    inline def setCountryDartIdsUndefined: Self = StObject.set(x, "countryDartIds", js.undefined)
     
-    @scala.inline
-    def setCountryDartIdsVarargs(value: String*): Self = StObject.set(x, "countryDartIds", js.Array(value :_*))
+    inline def setCountryDartIdsVarargs(value: String*): Self = StObject.set(x, "countryDartIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDartIds(value: js.Array[String]): Self = StObject.set(x, "dartIds", value.asInstanceOf[js.Any])
+    inline def setDartIds(value: js.Array[String]): Self = StObject.set(x, "dartIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDartIdsUndefined: Self = StObject.set(x, "dartIds", js.undefined)
+    inline def setDartIdsUndefined: Self = StObject.set(x, "dartIds", js.undefined)
     
-    @scala.inline
-    def setDartIdsVarargs(value: String*): Self = StObject.set(x, "dartIds", js.Array(value :_*))
+    inline def setDartIdsVarargs(value: String*): Self = StObject.set(x, "dartIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+    inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setRegionDartIds(value: js.Array[String]): Self = StObject.set(x, "regionDartIds", value.asInstanceOf[js.Any])
+    inline def setRegionDartIds(value: js.Array[String]): Self = StObject.set(x, "regionDartIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionDartIdsUndefined: Self = StObject.set(x, "regionDartIds", js.undefined)
+    inline def setRegionDartIdsUndefined: Self = StObject.set(x, "regionDartIds", js.undefined)
     
-    @scala.inline
-    def setRegionDartIdsVarargs(value: String*): Self = StObject.set(x, "regionDartIds", js.Array(value :_*))
+    inline def setRegionDartIdsVarargs(value: String*): Self = StObject.set(x, "regionDartIds", js.Array(value :_*))
   }
 }

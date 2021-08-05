@@ -17,19 +17,15 @@ trait SchemaDebugOptions extends StObject {
 }
 object SchemaDebugOptions {
   
-  @scala.inline
-  def apply(): SchemaDebugOptions = {
+  inline def apply(): SchemaDebugOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDebugOptions]
   }
   
-  @scala.inline
-  implicit class SchemaDebugOptionsMutableBuilder[Self <: SchemaDebugOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDebugOptions](x: Self) {
     
-    @scala.inline
-    def setEnableDebugging(value: Boolean): Self = StObject.set(x, "enableDebugging", value.asInstanceOf[js.Any])
+    inline def setEnableDebugging(value: Boolean): Self = StObject.set(x, "enableDebugging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDebuggingUndefined: Self = StObject.set(x, "enableDebugging", js.undefined)
+    inline def setEnableDebuggingUndefined: Self = StObject.set(x, "enableDebugging", js.undefined)
   }
 }

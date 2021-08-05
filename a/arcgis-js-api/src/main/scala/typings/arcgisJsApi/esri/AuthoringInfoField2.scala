@@ -40,8 +40,7 @@ trait AuthoringInfoField2
 }
 object AuthoringInfoField2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -51,31 +50,22 @@ object AuthoringInfoField2 {
     __obj.asInstanceOf[AuthoringInfoField2]
   }
   
-  @scala.inline
-  implicit class AuthoringInfoField2MutableBuilder[Self <: AuthoringInfoField2] (val x: Self) extends AnyVal {
+  extension [Self <: AuthoringInfoField2](x: Self) {
     
-    @scala.inline
-    def setClassBreakInfos(value: js.Array[AuthoringInfoField2ClassBreakInfos]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
+    inline def setClassBreakInfos(value: js.Array[AuthoringInfoField2ClassBreakInfos]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
+    inline def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
     
-    @scala.inline
-    def setClassBreakInfosVarargs(value: AuthoringInfoField2ClassBreakInfos*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
+    inline def setClassBreakInfosVarargs(value: AuthoringInfoField2ClassBreakInfos*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait Cancelable extends StObject {
 }
 object Cancelable {
   
-  @scala.inline
-  def apply(): Cancelable = {
+  inline def apply(): Cancelable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cancelable]
   }
   
-  @scala.inline
-  implicit class CancelableMutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
+  extension [Self <: Cancelable](x: Self) {
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
-    @scala.inline
-    def setUpdateMenu(value: Boolean): Self = StObject.set(x, "updateMenu", value.asInstanceOf[js.Any])
+    inline def setUpdateMenu(value: Boolean): Self = StObject.set(x, "updateMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMenuUndefined: Self = StObject.set(x, "updateMenu", js.undefined)
+    inline def setUpdateMenuUndefined: Self = StObject.set(x, "updateMenu", js.undefined)
   }
 }

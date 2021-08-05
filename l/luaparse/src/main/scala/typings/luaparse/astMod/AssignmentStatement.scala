@@ -15,26 +15,20 @@ trait AssignmentStatement
 }
 object AssignmentStatement {
   
-  @scala.inline
-  def apply(init: js.Array[Expression], variables: js.Array[IndexExpression | MemberExpression | Identifier]): AssignmentStatement = {
+  inline def apply(init: js.Array[Expression], variables: js.Array[IndexExpression | MemberExpression | Identifier]): AssignmentStatement = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AssignmentStatement")
     __obj.asInstanceOf[AssignmentStatement]
   }
   
-  @scala.inline
-  implicit class AssignmentStatementMutableBuilder[Self <: AssignmentStatement] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentStatement](x: Self) {
     
-    @scala.inline
-    def setInit(value: js.Array[Expression]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Array[Expression]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitVarargs(value: Expression*): Self = StObject.set(x, "init", js.Array(value :_*))
+    inline def setInitVarargs(value: Expression*): Self = StObject.set(x, "init", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: js.Array[IndexExpression | MemberExpression | Identifier]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: js.Array[IndexExpression | MemberExpression | Identifier]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: (IndexExpression | MemberExpression | Identifier)*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: (IndexExpression | MemberExpression | Identifier)*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

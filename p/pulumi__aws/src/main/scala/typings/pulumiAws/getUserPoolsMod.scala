@@ -11,10 +11,8 @@ object getUserPoolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUserPoolsResult]]
-  @scala.inline
-  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUserPoolsResult]]
+  inline def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUserPoolsResult]]
+  inline def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUserPoolsResult]]
   
   trait GetUserPoolsArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getUserPoolsMod {
   }
   object GetUserPoolsArgs {
     
-    @scala.inline
-    def apply(name: String): GetUserPoolsArgs = {
+    inline def apply(name: String): GetUserPoolsArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetUserPoolsArgs]
     }
     
-    @scala.inline
-    implicit class GetUserPoolsArgsMutableBuilder[Self <: GetUserPoolsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserPoolsArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,32 +52,24 @@ object getUserPoolsMod {
   }
   object GetUserPoolsResult {
     
-    @scala.inline
-    def apply(arns: js.Array[String], id: String, ids: js.Array[String], name: String): GetUserPoolsResult = {
+    inline def apply(arns: js.Array[String], id: String, ids: js.Array[String], name: String): GetUserPoolsResult = {
       val __obj = js.Dynamic.literal(arns = arns.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetUserPoolsResult]
     }
     
-    @scala.inline
-    implicit class GetUserPoolsResultMutableBuilder[Self <: GetUserPoolsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserPoolsResult](x: Self) {
       
-      @scala.inline
-      def setArns(value: js.Array[String]): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
+      inline def setArns(value: js.Array[String]): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnsVarargs(value: String*): Self = StObject.set(x, "arns", js.Array(value :_*))
+      inline def setArnsVarargs(value: String*): Self = StObject.set(x, "arns", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

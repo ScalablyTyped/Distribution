@@ -25,25 +25,19 @@ trait SchemaPushFilter extends StObject {
 }
 object SchemaPushFilter {
   
-  @scala.inline
-  def apply(): SchemaPushFilter = {
+  inline def apply(): SchemaPushFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushFilter]
   }
   
-  @scala.inline
-  implicit class SchemaPushFilterMutableBuilder[Self <: SchemaPushFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPushFilter](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

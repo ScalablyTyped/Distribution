@@ -17,40 +17,29 @@ trait LicenseUnitsDetail extends StObject {
 }
 object LicenseUnitsDetail {
   
-  @scala.inline
-  def apply(): LicenseUnitsDetail = {
+  inline def apply(): LicenseUnitsDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseUnitsDetail]
   }
   
-  @scala.inline
-  implicit class LicenseUnitsDetailMutableBuilder[Self <: LicenseUnitsDetail] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseUnitsDetail](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: NullableOption[Double]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: NullableOption[Double]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledNull: Self = StObject.set(x, "enabled", null)
+    inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSuspended(value: NullableOption[Double]): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
+    inline def setSuspended(value: NullableOption[Double]): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedNull: Self = StObject.set(x, "suspended", null)
+    inline def setSuspendedNull: Self = StObject.set(x, "suspended", null)
     
-    @scala.inline
-    def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
+    inline def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
     
-    @scala.inline
-    def setWarning(value: NullableOption[Double]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: NullableOption[Double]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningNull: Self = StObject.set(x, "warning", null)
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

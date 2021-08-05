@@ -12,19 +12,15 @@ trait CaptionText extends StObject {
 }
 object CaptionText {
   
-  @scala.inline
-  def apply(captionText: String, mediaId: String): CaptionText = {
+  inline def apply(captionText: String, mediaId: String): CaptionText = {
     val __obj = js.Dynamic.literal(captionText = captionText.asInstanceOf[js.Any], mediaId = mediaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionText]
   }
   
-  @scala.inline
-  implicit class CaptionTextMutableBuilder[Self <: CaptionText] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionText](x: Self) {
     
-    @scala.inline
-    def setCaptionText(value: String): Self = StObject.set(x, "captionText", value.asInstanceOf[js.Any])
+    inline def setCaptionText(value: String): Self = StObject.set(x, "captionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+    inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
   }
 }

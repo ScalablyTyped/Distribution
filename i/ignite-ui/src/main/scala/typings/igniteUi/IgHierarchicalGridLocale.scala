@@ -26,25 +26,19 @@ trait IgHierarchicalGridLocale
 }
 object IgHierarchicalGridLocale {
   
-  @scala.inline
-  def apply(): IgHierarchicalGridLocale = {
+  inline def apply(): IgHierarchicalGridLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgHierarchicalGridLocale]
   }
   
-  @scala.inline
-  implicit class IgHierarchicalGridLocaleMutableBuilder[Self <: IgHierarchicalGridLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgHierarchicalGridLocale](x: Self) {
     
-    @scala.inline
-    def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
+    inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
+    inline def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
     
-    @scala.inline
-    def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
+    inline def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
+    inline def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
   }
 }

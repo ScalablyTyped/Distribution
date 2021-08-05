@@ -52,8 +52,7 @@ object mod extends Shortcut {
   }
   object Header {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asm_group_id: Double,
       category: js.Array[String],
       filters: js.Object,
@@ -69,47 +68,33 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setAsm_group_id(value: Double): Self = StObject.set(x, "asm_group_id", value.asInstanceOf[js.Any])
+      inline def setAsm_group_id(value: Double): Self = StObject.set(x, "asm_group_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategory(value: js.Array[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: js.Array[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value :_*))
+      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Object): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Object): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
+      inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSection(value: js.Object): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: js.Object): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend_at(value: _empty | Double): Self = StObject.set(x, "send_at", value.asInstanceOf[js.Any])
+      inline def setSend_at(value: _empty | Double): Self = StObject.set(x, "send_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend_each_at(value: js.Array[Double]): Self = StObject.set(x, "send_each_at", value.asInstanceOf[js.Any])
+      inline def setSend_each_at(value: js.Array[Double]): Self = StObject.set(x, "send_each_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend_each_atVarargs(value: Double*): Self = StObject.set(x, "send_each_at", js.Array(value :_*))
+      inline def setSend_each_atVarargs(value: Double*): Self = StObject.set(x, "send_each_at", js.Array(value :_*))
       
-      @scala.inline
-      def setSub(value: js.Object): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: js.Object): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
       
-      @scala.inline
-      def setUnique_args(value: js.Object): Self = StObject.set(x, "unique_args", value.asInstanceOf[js.Any])
+      inline def setUnique_args(value: js.Object): Self = StObject.set(x, "unique_args", value.asInstanceOf[js.Any])
     }
   }
   

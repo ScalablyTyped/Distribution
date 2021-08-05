@@ -10,8 +10,7 @@ object centerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def linearRingss(
+  inline def linearRingss(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],

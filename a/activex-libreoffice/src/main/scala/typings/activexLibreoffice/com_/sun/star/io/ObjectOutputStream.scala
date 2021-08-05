@@ -25,8 +25,7 @@ trait ObjectOutputStream
      with XConnectable
 object ObjectOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputStream: XOutputStream,
     Predecessor: XConnectable,
     Successor: XConnectable,

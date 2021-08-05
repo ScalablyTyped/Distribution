@@ -10,6 +10,5 @@ object jsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeJSONLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeJSONLogger")().asInstanceOf[Unit]
+  inline def initializeJSONLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeJSONLogger")().asInstanceOf[Unit]
 }

@@ -20,44 +20,32 @@ object Persona {
   }
   object GetOptions {
     
-    @scala.inline
-    def apply(): GetOptions = {
+    inline def apply(): GetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOptions]
     }
     
-    @scala.inline
-    implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setPrivacyPolicy(value: String): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
+      inline def setPrivacyPolicy(value: String): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivacyPolicyUndefined: Self = StObject.set(x, "privacyPolicy", js.undefined)
+      inline def setPrivacyPolicyUndefined: Self = StObject.set(x, "privacyPolicy", js.undefined)
       
-      @scala.inline
-      def setSiteLogo(value: String): Self = StObject.set(x, "siteLogo", value.asInstanceOf[js.Any])
+      inline def setSiteLogo(value: String): Self = StObject.set(x, "siteLogo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteLogoUndefined: Self = StObject.set(x, "siteLogo", js.undefined)
+      inline def setSiteLogoUndefined: Self = StObject.set(x, "siteLogo", js.undefined)
       
-      @scala.inline
-      def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+      inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
+      inline def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
       
-      @scala.inline
-      def setTermsOfService(value: String): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
+      inline def setTermsOfService(value: String): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermsOfServiceUndefined: Self = StObject.set(x, "termsOfService", js.undefined)
+      inline def setTermsOfServiceUndefined: Self = StObject.set(x, "termsOfService", js.undefined)
     }
   }
   
@@ -93,56 +81,40 @@ object Persona {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(): RequestOptions = {
+    inline def apply(): RequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setOncancel(value: () => Unit): Self = StObject.set(x, "oncancel", js.Any.fromFunction0(value))
+      inline def setOncancel(value: () => Unit): Self = StObject.set(x, "oncancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
+      inline def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
       
-      @scala.inline
-      def setPrivacyPolicy(value: String): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
+      inline def setPrivacyPolicy(value: String): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivacyPolicyUndefined: Self = StObject.set(x, "privacyPolicy", js.undefined)
+      inline def setPrivacyPolicyUndefined: Self = StObject.set(x, "privacyPolicy", js.undefined)
       
-      @scala.inline
-      def setReturnTo(value: String): Self = StObject.set(x, "returnTo", value.asInstanceOf[js.Any])
+      inline def setReturnTo(value: String): Self = StObject.set(x, "returnTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnToUndefined: Self = StObject.set(x, "returnTo", js.undefined)
+      inline def setReturnToUndefined: Self = StObject.set(x, "returnTo", js.undefined)
       
-      @scala.inline
-      def setSiteLogo(value: String): Self = StObject.set(x, "siteLogo", value.asInstanceOf[js.Any])
+      inline def setSiteLogo(value: String): Self = StObject.set(x, "siteLogo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteLogoUndefined: Self = StObject.set(x, "siteLogo", js.undefined)
+      inline def setSiteLogoUndefined: Self = StObject.set(x, "siteLogo", js.undefined)
       
-      @scala.inline
-      def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+      inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
+      inline def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
       
-      @scala.inline
-      def setTermsOfService(value: String): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
+      inline def setTermsOfService(value: String): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermsOfServiceUndefined: Self = StObject.set(x, "termsOfService", js.undefined)
+      inline def setTermsOfServiceUndefined: Self = StObject.set(x, "termsOfService", js.undefined)
     }
   }
   
@@ -158,29 +130,22 @@ object Persona {
   }
   object WatchOptions {
     
-    @scala.inline
-    def apply(loggedInUser: String, onlogin: String => Unit, onlogout: () => Unit): WatchOptions = {
+    inline def apply(loggedInUser: String, onlogin: String => Unit, onlogout: () => Unit): WatchOptions = {
       val __obj = js.Dynamic.literal(loggedInUser = loggedInUser.asInstanceOf[js.Any], onlogin = js.Any.fromFunction1(onlogin), onlogout = js.Any.fromFunction0(onlogout))
       __obj.asInstanceOf[WatchOptions]
     }
     
-    @scala.inline
-    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchOptions](x: Self) {
       
-      @scala.inline
-      def setLoggedInUser(value: String): Self = StObject.set(x, "loggedInUser", value.asInstanceOf[js.Any])
+      inline def setLoggedInUser(value: String): Self = StObject.set(x, "loggedInUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlogin(value: String => Unit): Self = StObject.set(x, "onlogin", js.Any.fromFunction1(value))
+      inline def setOnlogin(value: String => Unit): Self = StObject.set(x, "onlogin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnlogout(value: () => Unit): Self = StObject.set(x, "onlogout", js.Any.fromFunction0(value))
+      inline def setOnlogout(value: () => Unit): Self = StObject.set(x, "onlogout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnready(value: () => Unit): Self = StObject.set(x, "onready", js.Any.fromFunction0(value))
+      inline def setOnready(value: () => Unit): Self = StObject.set(x, "onready", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnreadyUndefined: Self = StObject.set(x, "onready", js.undefined)
+      inline def setOnreadyUndefined: Self = StObject.set(x, "onready", js.undefined)
     }
   }
 }

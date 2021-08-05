@@ -14,19 +14,15 @@ trait ReposCreateOrUpdateFileContentsResponse201Data extends StObject {
 }
 object ReposCreateOrUpdateFileContentsResponse201Data {
   
-  @scala.inline
-  def apply(commit: Committer, content: Downloadurl): ReposCreateOrUpdateFileContentsResponse201Data = {
+  inline def apply(commit: Committer, content: Downloadurl): ReposCreateOrUpdateFileContentsResponse201Data = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateOrUpdateFileContentsResponse201Data]
   }
   
-  @scala.inline
-  implicit class ReposCreateOrUpdateFileContentsResponse201DataMutableBuilder[Self <: ReposCreateOrUpdateFileContentsResponse201Data] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateOrUpdateFileContentsResponse201Data](x: Self) {
     
-    @scala.inline
-    def setCommit(value: Committer): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Committer): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Downloadurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Downloadurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

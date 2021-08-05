@@ -11,12 +11,9 @@ object googleMapsGoogle2addressGoogle2addressMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertToFullAddress(googleResponse: js.Any): Formatted = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToFullAddress")(googleResponse.asInstanceOf[js.Any]).asInstanceOf[Formatted]
+  inline def convertToFullAddress(googleResponse: js.Any): Formatted = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToFullAddress")(googleResponse.asInstanceOf[js.Any]).asInstanceOf[Formatted]
   
-  @scala.inline
-  def convertToPartialAddress(googleResponse: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPartialAddress")(googleResponse.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def convertToPartialAddress(googleResponse: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPartialAddress")(googleResponse.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def trySetStreetNumberIfNotReceived(google: js.Any, inputValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trySetStreetNumberIfNotReceived")(google.asInstanceOf[js.Any], inputValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def trySetStreetNumberIfNotReceived(google: js.Any, inputValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trySetStreetNumberIfNotReceived")(google.asInstanceOf[js.Any], inputValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

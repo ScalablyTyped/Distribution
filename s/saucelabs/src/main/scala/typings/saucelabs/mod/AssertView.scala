@@ -13,19 +13,15 @@ trait AssertView
 }
 object AssertView {
   
-  @scala.inline
-  def apply(): AssertView = {
+  inline def apply(): AssertView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssertView]
   }
   
-  @scala.inline
-  implicit class AssertViewMutableBuilder[Self <: AssertView] (val x: Self) extends AnyVal {
+  extension [Self <: AssertView](x: Self) {
     
-    @scala.inline
-    def setMetric_name(value: AssertDetails): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
+    inline def setMetric_name(value: AssertDetails): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
+    inline def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
   }
 }

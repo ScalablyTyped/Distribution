@@ -28,37 +28,27 @@ trait RequestValidator extends StObject {
 }
 object RequestValidator {
   
-  @scala.inline
-  def apply(): RequestValidator = {
+  inline def apply(): RequestValidator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestValidator]
   }
   
-  @scala.inline
-  implicit class RequestValidatorMutableBuilder[Self <: RequestValidator] (val x: Self) extends AnyVal {
+  extension [Self <: RequestValidator](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValidateRequestBody(value: Boolean): Self = StObject.set(x, "validateRequestBody", value.asInstanceOf[js.Any])
+    inline def setValidateRequestBody(value: Boolean): Self = StObject.set(x, "validateRequestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateRequestBodyUndefined: Self = StObject.set(x, "validateRequestBody", js.undefined)
+    inline def setValidateRequestBodyUndefined: Self = StObject.set(x, "validateRequestBody", js.undefined)
     
-    @scala.inline
-    def setValidateRequestParameters(value: Boolean): Self = StObject.set(x, "validateRequestParameters", value.asInstanceOf[js.Any])
+    inline def setValidateRequestParameters(value: Boolean): Self = StObject.set(x, "validateRequestParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateRequestParametersUndefined: Self = StObject.set(x, "validateRequestParameters", js.undefined)
+    inline def setValidateRequestParametersUndefined: Self = StObject.set(x, "validateRequestParameters", js.undefined)
   }
 }

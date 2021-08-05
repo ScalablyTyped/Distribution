@@ -13,16 +13,11 @@ object predicatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def eventShouldEndDrag(e: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("eventShouldEndDrag")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def eventShouldEndDrag(e: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("eventShouldEndDrag")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def eventShouldStartDrag(e: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("eventShouldStartDrag")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def eventShouldStartDrag(e: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("eventShouldStartDrag")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTouchEvent(e: MouseEvent): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
-  @scala.inline
-  def isTouchEvent(e: Touch): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
-  @scala.inline
-  def isTouchEvent(e: TouchEvent): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
+  inline def isTouchEvent(e: MouseEvent): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
+  inline def isTouchEvent(e: Touch): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
+  inline def isTouchEvent(e: TouchEvent): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(e.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
 }

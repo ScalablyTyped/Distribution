@@ -35,8 +35,7 @@ object validationArgumentsMod {
   }
   object ValidationArguments {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constraints: js.Array[js.Any],
       `object`: js.Object,
       property: String,
@@ -48,26 +47,19 @@ object validationArgumentsMod {
       __obj.asInstanceOf[ValidationArguments]
     }
     
-    @scala.inline
-    implicit class ValidationArgumentsMutableBuilder[Self <: ValidationArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationArguments](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsVarargs(value: js.Any*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: js.Any*): Self = StObject.set(x, "constraints", js.Array(value :_*))
       
-      @scala.inline
-      def setObject(value: js.Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+      inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

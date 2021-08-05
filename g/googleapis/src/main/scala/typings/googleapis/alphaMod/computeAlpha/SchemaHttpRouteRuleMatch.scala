@@ -75,64 +75,45 @@ trait SchemaHttpRouteRuleMatch extends StObject {
 }
 object SchemaHttpRouteRuleMatch {
   
-  @scala.inline
-  def apply(): SchemaHttpRouteRuleMatch = {
+  inline def apply(): SchemaHttpRouteRuleMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpRouteRuleMatch]
   }
   
-  @scala.inline
-  implicit class SchemaHttpRouteRuleMatchMutableBuilder[Self <: SchemaHttpRouteRuleMatch] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpRouteRuleMatch](x: Self) {
     
-    @scala.inline
-    def setFullPathMatch(value: String): Self = StObject.set(x, "fullPathMatch", value.asInstanceOf[js.Any])
+    inline def setFullPathMatch(value: String): Self = StObject.set(x, "fullPathMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullPathMatchUndefined: Self = StObject.set(x, "fullPathMatch", js.undefined)
+    inline def setFullPathMatchUndefined: Self = StObject.set(x, "fullPathMatch", js.undefined)
     
-    @scala.inline
-    def setHeaderMatches(value: js.Array[SchemaHttpHeaderMatch]): Self = StObject.set(x, "headerMatches", value.asInstanceOf[js.Any])
+    inline def setHeaderMatches(value: js.Array[SchemaHttpHeaderMatch]): Self = StObject.set(x, "headerMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderMatchesUndefined: Self = StObject.set(x, "headerMatches", js.undefined)
+    inline def setHeaderMatchesUndefined: Self = StObject.set(x, "headerMatches", js.undefined)
     
-    @scala.inline
-    def setHeaderMatchesVarargs(value: SchemaHttpHeaderMatch*): Self = StObject.set(x, "headerMatches", js.Array(value :_*))
+    inline def setHeaderMatchesVarargs(value: SchemaHttpHeaderMatch*): Self = StObject.set(x, "headerMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setMetadataFilters(value: js.Array[SchemaMetadataFilter]): Self = StObject.set(x, "metadataFilters", value.asInstanceOf[js.Any])
+    inline def setMetadataFilters(value: js.Array[SchemaMetadataFilter]): Self = StObject.set(x, "metadataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataFiltersUndefined: Self = StObject.set(x, "metadataFilters", js.undefined)
+    inline def setMetadataFiltersUndefined: Self = StObject.set(x, "metadataFilters", js.undefined)
     
-    @scala.inline
-    def setMetadataFiltersVarargs(value: SchemaMetadataFilter*): Self = StObject.set(x, "metadataFilters", js.Array(value :_*))
+    inline def setMetadataFiltersVarargs(value: SchemaMetadataFilter*): Self = StObject.set(x, "metadataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefixMatch(value: String): Self = StObject.set(x, "prefixMatch", value.asInstanceOf[js.Any])
+    inline def setPrefixMatch(value: String): Self = StObject.set(x, "prefixMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixMatchUndefined: Self = StObject.set(x, "prefixMatch", js.undefined)
+    inline def setPrefixMatchUndefined: Self = StObject.set(x, "prefixMatch", js.undefined)
     
-    @scala.inline
-    def setQueryParameterMatches(value: js.Array[SchemaHttpQueryParameterMatch]): Self = StObject.set(x, "queryParameterMatches", value.asInstanceOf[js.Any])
+    inline def setQueryParameterMatches(value: js.Array[SchemaHttpQueryParameterMatch]): Self = StObject.set(x, "queryParameterMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParameterMatchesUndefined: Self = StObject.set(x, "queryParameterMatches", js.undefined)
+    inline def setQueryParameterMatchesUndefined: Self = StObject.set(x, "queryParameterMatches", js.undefined)
     
-    @scala.inline
-    def setQueryParameterMatchesVarargs(value: SchemaHttpQueryParameterMatch*): Self = StObject.set(x, "queryParameterMatches", js.Array(value :_*))
+    inline def setQueryParameterMatchesVarargs(value: SchemaHttpQueryParameterMatch*): Self = StObject.set(x, "queryParameterMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
+    inline def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
+    inline def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
   }
 }

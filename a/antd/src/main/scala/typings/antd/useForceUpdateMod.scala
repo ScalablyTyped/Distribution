@@ -11,6 +11,5 @@ object useForceUpdateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): DispatchWithoutAction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[DispatchWithoutAction]
+  inline def default(): DispatchWithoutAction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[DispatchWithoutAction]
 }

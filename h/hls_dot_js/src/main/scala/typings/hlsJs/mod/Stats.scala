@@ -29,37 +29,27 @@ trait Stats extends StObject {
 }
 object Stats {
   
-  @scala.inline
-  def apply(mtime: Double, tfirst: Double, tload: Double, trequest: Double): Stats = {
+  inline def apply(mtime: Double, tfirst: Double, tload: Double, trequest: Double): Stats = {
     val __obj = js.Dynamic.literal(mtime = mtime.asInstanceOf[js.Any], tfirst = tfirst.asInstanceOf[js.Any], tload = tload.asInstanceOf[js.Any], trequest = trequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
   
-  @scala.inline
-  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+  extension [Self <: Stats](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbuffered(value: Double): Self = StObject.set(x, "tbuffered", value.asInstanceOf[js.Any])
+    inline def setTbuffered(value: Double): Self = StObject.set(x, "tbuffered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbufferedUndefined: Self = StObject.set(x, "tbuffered", js.undefined)
+    inline def setTbufferedUndefined: Self = StObject.set(x, "tbuffered", js.undefined)
     
-    @scala.inline
-    def setTfirst(value: Double): Self = StObject.set(x, "tfirst", value.asInstanceOf[js.Any])
+    inline def setTfirst(value: Double): Self = StObject.set(x, "tfirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTload(value: Double): Self = StObject.set(x, "tload", value.asInstanceOf[js.Any])
+    inline def setTload(value: Double): Self = StObject.set(x, "tload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrequest(value: Double): Self = StObject.set(x, "trequest", value.asInstanceOf[js.Any])
+    inline def setTrequest(value: Double): Self = StObject.set(x, "trequest", value.asInstanceOf[js.Any])
   }
 }

@@ -21,28 +21,21 @@ trait CrosshairTextBackgroundCfg extends StObject {
 }
 object CrosshairTextBackgroundCfg {
   
-  @scala.inline
-  def apply(): CrosshairTextBackgroundCfg = {
+  inline def apply(): CrosshairTextBackgroundCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrosshairTextBackgroundCfg]
   }
   
-  @scala.inline
-  implicit class CrosshairTextBackgroundCfgMutableBuilder[Self <: CrosshairTextBackgroundCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CrosshairTextBackgroundCfg](x: Self) {
     
-    @scala.inline
-    def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

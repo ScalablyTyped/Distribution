@@ -20,31 +20,23 @@ trait ModalAnimationOptions
 }
 object ModalAnimationOptions {
   
-  @scala.inline
-  def apply(): ModalAnimationOptions = {
+  inline def apply(): ModalAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalAnimationOptions]
   }
   
-  @scala.inline
-  implicit class ModalAnimationOptionsMutableBuilder[Self <: ModalAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModalAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setElementTransitions(value: js.Array[ElementTransition]): Self = StObject.set(x, "elementTransitions", value.asInstanceOf[js.Any])
+    inline def setElementTransitions(value: js.Array[ElementTransition]): Self = StObject.set(x, "elementTransitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTransitionsUndefined: Self = StObject.set(x, "elementTransitions", js.undefined)
+    inline def setElementTransitionsUndefined: Self = StObject.set(x, "elementTransitions", js.undefined)
     
-    @scala.inline
-    def setElementTransitionsVarargs(value: ElementTransition*): Self = StObject.set(x, "elementTransitions", js.Array(value :_*))
+    inline def setElementTransitionsVarargs(value: ElementTransition*): Self = StObject.set(x, "elementTransitions", js.Array(value :_*))
     
-    @scala.inline
-    def setSharedElementTransitions(value: js.Array[SharedElementTransition]): Self = StObject.set(x, "sharedElementTransitions", value.asInstanceOf[js.Any])
+    inline def setSharedElementTransitions(value: js.Array[SharedElementTransition]): Self = StObject.set(x, "sharedElementTransitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedElementTransitionsUndefined: Self = StObject.set(x, "sharedElementTransitions", js.undefined)
+    inline def setSharedElementTransitionsUndefined: Self = StObject.set(x, "sharedElementTransitions", js.undefined)
     
-    @scala.inline
-    def setSharedElementTransitionsVarargs(value: SharedElementTransition*): Self = StObject.set(x, "sharedElementTransitions", js.Array(value :_*))
+    inline def setSharedElementTransitionsVarargs(value: SharedElementTransition*): Self = StObject.set(x, "sharedElementTransitions", js.Array(value :_*))
   }
 }

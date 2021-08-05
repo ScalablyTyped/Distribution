@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with ISencha
 object IContacts {
   
-  @scala.inline
-  def apply(): IContacts = {
+  inline def apply(): IContacts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IContacts]
   }

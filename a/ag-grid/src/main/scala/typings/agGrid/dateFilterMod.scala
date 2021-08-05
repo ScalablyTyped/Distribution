@@ -23,35 +23,35 @@ object dateFilterMod {
   class DateFilter () extends ScalarBaseFilter[Date, IDateFilterParams, SerializedDateFilter] {
     def this(template: String) = this()
     
-    var componentRecipes: js.Any = js.native
+    /* private */ var componentRecipes: js.Any = js.native
     
     /* private */ def createComponents(`type`: js.Any): js.Any = js.native
     
-    var dateFrom: js.Any = js.native
+    /* private */ var dateFrom: js.Any = js.native
     
-    var dateFromComponent: js.Any = js.native
+    /* private */ var dateFromComponent: js.Any = js.native
     
-    var dateFromCondition: js.Any = js.native
+    /* private */ var dateFromCondition: js.Any = js.native
     
-    var dateFromConditionComponent: js.Any = js.native
+    /* private */ var dateFromConditionComponent: js.Any = js.native
     
-    var dateTo: js.Any = js.native
+    /* private */ var dateTo: js.Any = js.native
     
-    var dateToComponent: js.Any = js.native
+    /* private */ var dateToComponent: js.Any = js.native
     
-    var dateToCondition: js.Any = js.native
+    /* private */ var dateToCondition: js.Any = js.native
     
-    var dateToConditionComponent: js.Any = js.native
+    /* private */ var dateToConditionComponent: js.Any = js.native
     
     /* private */ def defaultComparator(filterDate: js.Any, cellValue: js.Any): js.Any = js.native
     
-    var eDateFromConditionPanel: js.Any = js.native
+    /* private */ var eDateFromConditionPanel: js.Any = js.native
     
-    var eDateFromPanel: js.Any = js.native
+    /* private */ var eDateFromPanel: js.Any = js.native
     
-    var eDateToConditionPanel: js.Any = js.native
+    /* private */ var eDateToConditionPanel: js.Any = js.native
     
-    var eDateToPanel: js.Any = js.native
+    /* private */ var eDateToPanel: js.Any = js.native
     
     def getDateFrom(): String = js.native
     
@@ -78,8 +78,7 @@ object dateFilterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def removeTimezone(from: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTimezone")(from.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def removeTimezone(from: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTimezone")(from.asInstanceOf[js.Any]).asInstanceOf[Date]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -90,7 +89,7 @@ object dateFilterMod {
     extends Component
        with IDate {
     
-    var eDateInput: js.Any = js.native
+    /* private */ var eDateInput: js.Any = js.native
     
     /** Returns the current date represented by this editor */
     /* CompleteClass */
@@ -99,7 +98,7 @@ object dateFilterMod {
     @JSName("init")
     def init_MDefaultDateComponent(params: IDateParams): Unit = js.native
     
-    var listener: js.Any = js.native
+    /* private */ var listener: js.Any = js.native
     
     /** Sets the date represented by this component */
     /* CompleteClass */
@@ -118,8 +117,7 @@ object dateFilterMod {
   }
   object IDateFilterParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       colDef: ColDef,
       column: Column,
@@ -135,20 +133,15 @@ object dateFilterMod {
       __obj.asInstanceOf[IDateFilterParams]
     }
     
-    @scala.inline
-    implicit class IDateFilterParamsMutableBuilder[Self <: IDateFilterParams] (val x: Self) extends AnyVal {
+    extension [Self <: IDateFilterParams](x: Self) {
       
-      @scala.inline
-      def setBrowserDatePicker(value: Boolean): Self = StObject.set(x, "browserDatePicker", value.asInstanceOf[js.Any])
+      inline def setBrowserDatePicker(value: Boolean): Self = StObject.set(x, "browserDatePicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserDatePickerUndefined: Self = StObject.set(x, "browserDatePicker", js.undefined)
+      inline def setBrowserDatePickerUndefined: Self = StObject.set(x, "browserDatePicker", js.undefined)
       
-      @scala.inline
-      def setComparator(value: (/* filterLocalDateAtMidnight */ Date, /* cellValue */ js.Any) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+      inline def setComparator(value: (/* filterLocalDateAtMidnight */ Date, /* cellValue */ js.Any) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     }
   }
   
@@ -164,24 +157,19 @@ object dateFilterMod {
   }
   object SerializedDateFilter {
     
-    @scala.inline
-    def apply(dateFrom: String, dateTo: String, filterType: String, `type`: String): SerializedDateFilter = {
+    inline def apply(dateFrom: String, dateTo: String, filterType: String, `type`: String): SerializedDateFilter = {
       val __obj = js.Dynamic.literal(dateFrom = dateFrom.asInstanceOf[js.Any], dateTo = dateTo.asInstanceOf[js.Any], filterType = filterType.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedDateFilter]
     }
     
-    @scala.inline
-    implicit class SerializedDateFilterMutableBuilder[Self <: SerializedDateFilter] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedDateFilter](x: Self) {
       
-      @scala.inline
-      def setDateFrom(value: String): Self = StObject.set(x, "dateFrom", value.asInstanceOf[js.Any])
+      inline def setDateFrom(value: String): Self = StObject.set(x, "dateFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTo(value: String): Self = StObject.set(x, "dateTo", value.asInstanceOf[js.Any])
+      inline def setDateTo(value: String): Self = StObject.set(x, "dateTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

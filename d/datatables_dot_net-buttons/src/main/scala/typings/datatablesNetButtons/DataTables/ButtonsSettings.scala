@@ -17,37 +17,27 @@ trait ButtonsSettings extends StObject {
 }
 object ButtonsSettings {
   
-  @scala.inline
-  def apply(buttons: js.Array[String | FunctionButtom | ButtonSettings]): ButtonsSettings = {
+  inline def apply(buttons: js.Array[String | FunctionButtom | ButtonSettings]): ButtonsSettings = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonsSettings]
   }
   
-  @scala.inline
-  implicit class ButtonsSettingsMutableBuilder[Self <: ButtonsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonsSettings](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setDom(value: ButtonDomSettings): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+    inline def setDom(value: ButtonDomSettings): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+    inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

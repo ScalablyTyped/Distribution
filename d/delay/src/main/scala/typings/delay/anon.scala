@@ -22,20 +22,16 @@ object anon {
   }
   object ClearTimeout {
     
-    @scala.inline
-    def apply(clearTimeout: FnCall, setTimeout: FnCallHandlerTimeoutArguments): ClearTimeout = {
+    inline def apply(clearTimeout: FnCall, setTimeout: FnCallHandlerTimeoutArguments): ClearTimeout = {
       val __obj = js.Dynamic.literal(clearTimeout = clearTimeout.asInstanceOf[js.Any], setTimeout = setTimeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClearTimeout]
     }
     
-    @scala.inline
-    implicit class ClearTimeoutMutableBuilder[Self <: ClearTimeout] (val x: Self) extends AnyVal {
+    extension [Self <: ClearTimeout](x: Self) {
       
-      @scala.inline
-      def setClearTimeout(value: FnCall): Self = StObject.set(x, "clearTimeout", value.asInstanceOf[js.Any])
+      inline def setClearTimeout(value: FnCall): Self = StObject.set(x, "clearTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetTimeout(value: FnCallHandlerTimeoutArguments): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+      inline def setSetTimeout(value: FnCallHandlerTimeoutArguments): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,20 +55,16 @@ object anon {
   }
   object Once {
     
-    @scala.inline
-    def apply(): Once = {
+    inline def apply(): Once = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Once]
     }
     
-    @scala.inline
-    implicit class OnceMutableBuilder[Self <: Once] (val x: Self) extends AnyVal {
+    extension [Self <: Once](x: Self) {
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     }
   }
   
@@ -92,26 +84,20 @@ object anon {
   }
   object Optionsvalueunknownundefi {
     
-    @scala.inline
-    def apply(): Optionsvalueunknownundefi = {
+    inline def apply(): Optionsvalueunknownundefi = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsvalueunknownundefi]
     }
     
-    @scala.inline
-    implicit class OptionsvalueunknownundefiMutableBuilder[Self <: Optionsvalueunknownundefi] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsvalueunknownundefi](x: Self) {
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -124,17 +110,14 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply[T](value: T): Value[T] = {
+    inline def apply[T](value: T): Value[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value[T]]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
+    extension [Self <: Value[?], T](x: Self & Value[T]) {
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

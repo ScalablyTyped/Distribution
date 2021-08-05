@@ -29,8 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object OtherData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountNumber: String,
     Active: Boolean,
     BIC: String,
@@ -47,16 +46,12 @@ object OtherData {
     __obj.asInstanceOf[OtherData]
   }
   
-  @scala.inline
-  implicit class OtherDataMutableBuilder[Self <: OtherData] (val x: Self) extends AnyVal {
+  extension [Self <: OtherData](x: Self) {
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
+    inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
   }
 }

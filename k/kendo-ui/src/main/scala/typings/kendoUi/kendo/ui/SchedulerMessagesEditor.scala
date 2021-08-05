@@ -34,91 +34,63 @@ trait SchedulerMessagesEditor extends StObject {
 }
 object SchedulerMessagesEditor {
   
-  @scala.inline
-  def apply(): SchedulerMessagesEditor = {
+  inline def apply(): SchedulerMessagesEditor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesEditor]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesEditorMutableBuilder[Self <: SchedulerMessagesEditor] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesEditor](x: Self) {
     
-    @scala.inline
-    def setAllDayEvent(value: String): Self = StObject.set(x, "allDayEvent", value.asInstanceOf[js.Any])
+    inline def setAllDayEvent(value: String): Self = StObject.set(x, "allDayEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllDayEventUndefined: Self = StObject.set(x, "allDayEvent", js.undefined)
+    inline def setAllDayEventUndefined: Self = StObject.set(x, "allDayEvent", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEditorTitle(value: String): Self = StObject.set(x, "editorTitle", value.asInstanceOf[js.Any])
+    inline def setEditorTitle(value: String): Self = StObject.set(x, "editorTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorTitleUndefined: Self = StObject.set(x, "editorTitle", js.undefined)
+    inline def setEditorTitleUndefined: Self = StObject.set(x, "editorTitle", js.undefined)
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimezone(value: String): Self = StObject.set(x, "endTimezone", value.asInstanceOf[js.Any])
+    inline def setEndTimezone(value: String): Self = StObject.set(x, "endTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimezoneUndefined: Self = StObject.set(x, "endTimezone", js.undefined)
+    inline def setEndTimezoneUndefined: Self = StObject.set(x, "endTimezone", js.undefined)
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def setSeparateTimezones(value: String): Self = StObject.set(x, "separateTimezones", value.asInstanceOf[js.Any])
+    inline def setSeparateTimezones(value: String): Self = StObject.set(x, "separateTimezones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparateTimezonesUndefined: Self = StObject.set(x, "separateTimezones", js.undefined)
+    inline def setSeparateTimezonesUndefined: Self = StObject.set(x, "separateTimezones", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimezone(value: String): Self = StObject.set(x, "startTimezone", value.asInstanceOf[js.Any])
+    inline def setStartTimezone(value: String): Self = StObject.set(x, "startTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimezoneUndefined: Self = StObject.set(x, "startTimezone", js.undefined)
+    inline def setStartTimezoneUndefined: Self = StObject.set(x, "startTimezone", js.undefined)
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneEditorButton(value: String): Self = StObject.set(x, "timezoneEditorButton", value.asInstanceOf[js.Any])
+    inline def setTimezoneEditorButton(value: String): Self = StObject.set(x, "timezoneEditorButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneEditorButtonUndefined: Self = StObject.set(x, "timezoneEditorButton", js.undefined)
+    inline def setTimezoneEditorButtonUndefined: Self = StObject.set(x, "timezoneEditorButton", js.undefined)
     
-    @scala.inline
-    def setTimezoneEditorTitle(value: String): Self = StObject.set(x, "timezoneEditorTitle", value.asInstanceOf[js.Any])
+    inline def setTimezoneEditorTitle(value: String): Self = StObject.set(x, "timezoneEditorTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneEditorTitleUndefined: Self = StObject.set(x, "timezoneEditorTitle", js.undefined)
+    inline def setTimezoneEditorTitleUndefined: Self = StObject.set(x, "timezoneEditorTitle", js.undefined)
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

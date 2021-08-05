@@ -8,6 +8,5 @@ object reselectStrings {
   
   @js.native
   sealed trait createStructuredSelector extends StObject
-  @scala.inline
-  def createStructuredSelector: createStructuredSelector = "createStructuredSelector".asInstanceOf[createStructuredSelector]
+  inline def createStructuredSelector: createStructuredSelector = "createStructuredSelector".asInstanceOf[createStructuredSelector]
 }

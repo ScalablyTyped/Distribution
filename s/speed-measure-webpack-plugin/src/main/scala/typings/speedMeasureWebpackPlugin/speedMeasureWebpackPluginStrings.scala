@@ -11,20 +11,17 @@ object speedMeasureWebpackPluginStrings {
   sealed trait human
     extends StObject
        with _OutputFormat
-  @scala.inline
-  def human: human = "human".asInstanceOf[human]
+  inline def human: human = "human".asInstanceOf[human]
   
   @js.native
   sealed trait humanVerbose
     extends StObject
        with _OutputFormat
-  @scala.inline
-  def humanVerbose: humanVerbose = "humanVerbose".asInstanceOf[humanVerbose]
+  inline def humanVerbose: humanVerbose = "humanVerbose".asInstanceOf[humanVerbose]
   
   @js.native
   sealed trait json
     extends StObject
        with _OutputFormat
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
 }

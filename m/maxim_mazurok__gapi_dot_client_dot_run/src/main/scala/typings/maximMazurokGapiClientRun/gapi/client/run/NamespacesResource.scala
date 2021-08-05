@@ -20,8 +20,7 @@ trait NamespacesResource extends StObject {
 }
 object NamespacesResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizeddomains: AuthorizeddomainsResource,
     configurations: ConfigurationsResource,
     domainmappings: DomainmappingsResource,
@@ -33,25 +32,18 @@ object NamespacesResource {
     __obj.asInstanceOf[NamespacesResource]
   }
   
-  @scala.inline
-  implicit class NamespacesResourceMutableBuilder[Self <: NamespacesResource] (val x: Self) extends AnyVal {
+  extension [Self <: NamespacesResource](x: Self) {
     
-    @scala.inline
-    def setAuthorizeddomains(value: AuthorizeddomainsResource): Self = StObject.set(x, "authorizeddomains", value.asInstanceOf[js.Any])
+    inline def setAuthorizeddomains(value: AuthorizeddomainsResource): Self = StObject.set(x, "authorizeddomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurations(value: ConfigurationsResource): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: ConfigurationsResource): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainmappings(value: DomainmappingsResource): Self = StObject.set(x, "domainmappings", value.asInstanceOf[js.Any])
+    inline def setDomainmappings(value: DomainmappingsResource): Self = StObject.set(x, "domainmappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisions(value: RevisionsResource): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
+    inline def setRevisions(value: RevisionsResource): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutes(value: RoutesResource): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: RoutesResource): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServices(value: ServicesResource): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: ServicesResource): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }
 }

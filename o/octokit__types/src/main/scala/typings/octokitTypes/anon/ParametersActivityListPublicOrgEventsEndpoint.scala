@@ -17,8 +17,7 @@ trait ParametersActivityListPublicOrgEventsEndpoint extends StObject {
 }
 object ParametersActivityListPublicOrgEventsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListPublicOrgEventsEndpoint,
     request: ActivityListPublicOrgEventsRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityListPublicOrgEventsEndpoint {
     __obj.asInstanceOf[ParametersActivityListPublicOrgEventsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListPublicOrgEventsEndpointMutableBuilder[Self <: ParametersActivityListPublicOrgEventsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListPublicOrgEventsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListPublicOrgEventsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListPublicOrgEventsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListPublicOrgEventsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListPublicOrgEventsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

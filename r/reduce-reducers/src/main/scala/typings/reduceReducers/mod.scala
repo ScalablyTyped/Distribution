@@ -10,12 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](initialState: S, reducers: Reducer[S]*): Reducer[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any])).asInstanceOf[Reducer[S]]
-  @scala.inline
-  def default[S](initialState: Null, reducers: Reducer[S]*): Reducer[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any])).asInstanceOf[Reducer[S]]
-  @scala.inline
-  def default[S](reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S]]
+  inline def default[S](initialState: S, reducers: Reducer[S]*): Reducer[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any])).asInstanceOf[Reducer[S]]
+  inline def default[S](initialState: Null, reducers: Reducer[S]*): Reducer[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any])).asInstanceOf[Reducer[S]]
+  inline def default[S](reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S]]
   
   trait Action extends StObject {
     
@@ -23,18 +20,15 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply(`type`: String): Action = {
+    inline def apply(`type`: String): Action = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

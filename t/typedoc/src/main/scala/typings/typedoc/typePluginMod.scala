@@ -15,11 +15,11 @@ object typePluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var onResolve: js.Any = js.native
+    /* private */ var onResolve: js.Any = js.native
     
-    var onResolveEnd: js.Any = js.native
+    /* private */ var onResolveEnd: js.Any = js.native
     
-    var postpone: js.Any = js.native
+    /* private */ var postpone: js.Any = js.native
     
     var reflections: js.Array[DeclarationReflection] = js.native
   }

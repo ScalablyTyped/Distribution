@@ -15,8 +15,7 @@ trait Atrule
 }
 object Atrule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -38,13 +37,10 @@ object Atrule {
     __obj.asInstanceOf[Atrule]
   }
   
-  @scala.inline
-  implicit class AtruleMutableBuilder[Self <: Atrule] (val x: Self) extends AnyVal {
+  extension [Self <: Atrule](x: Self) {
     
-    @scala.inline
-    def setHasOnlyProperties(value: scala.Boolean): Self = StObject.set(x, "hasOnlyProperties", value.asInstanceOf[js.Any])
+    inline def setHasOnlyProperties(value: scala.Boolean): Self = StObject.set(x, "hasOnlyProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

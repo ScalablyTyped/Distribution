@@ -18,28 +18,21 @@ trait ListOrganizationsResponse extends StObject {
 }
 object ListOrganizationsResponse {
   
-  @scala.inline
-  def apply(): ListOrganizationsResponse = {
+  inline def apply(): ListOrganizationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOrganizationsResponse]
   }
   
-  @scala.inline
-  implicit class ListOrganizationsResponseMutableBuilder[Self <: ListOrganizationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOrganizationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationSummaries(value: OrganizationSummaries): Self = StObject.set(x, "OrganizationSummaries", value.asInstanceOf[js.Any])
+    inline def setOrganizationSummaries(value: OrganizationSummaries): Self = StObject.set(x, "OrganizationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationSummariesUndefined: Self = StObject.set(x, "OrganizationSummaries", js.undefined)
+    inline def setOrganizationSummariesUndefined: Self = StObject.set(x, "OrganizationSummaries", js.undefined)
     
-    @scala.inline
-    def setOrganizationSummariesVarargs(value: OrganizationSummary*): Self = StObject.set(x, "OrganizationSummaries", js.Array(value :_*))
+    inline def setOrganizationSummariesVarargs(value: OrganizationSummary*): Self = StObject.set(x, "OrganizationSummaries", js.Array(value :_*))
   }
 }

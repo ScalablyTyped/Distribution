@@ -18,22 +18,17 @@ trait ListBranchesInput extends StObject {
 }
 object ListBranchesInput {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): ListBranchesInput = {
+  inline def apply(repositoryName: RepositoryName): ListBranchesInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBranchesInput]
   }
   
-  @scala.inline
-  implicit class ListBranchesInputMutableBuilder[Self <: ListBranchesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBranchesInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

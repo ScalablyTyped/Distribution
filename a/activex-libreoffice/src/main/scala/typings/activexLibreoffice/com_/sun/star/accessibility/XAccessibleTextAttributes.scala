@@ -37,8 +37,7 @@ trait XAccessibleTextAttributes extends StObject {
 }
 object XAccessibleTextAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDefaultAttributes: SeqEquiv[String] => SafeArray[PropertyValue],
     getRunAttributes: (Double, SeqEquiv[String]) => SafeArray[PropertyValue]
   ): XAccessibleTextAttributes = {
@@ -46,13 +45,10 @@ object XAccessibleTextAttributes {
     __obj.asInstanceOf[XAccessibleTextAttributes]
   }
   
-  @scala.inline
-  implicit class XAccessibleTextAttributesMutableBuilder[Self <: XAccessibleTextAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleTextAttributes](x: Self) {
     
-    @scala.inline
-    def setGetDefaultAttributes(value: SeqEquiv[String] => SafeArray[PropertyValue]): Self = StObject.set(x, "getDefaultAttributes", js.Any.fromFunction1(value))
+    inline def setGetDefaultAttributes(value: SeqEquiv[String] => SafeArray[PropertyValue]): Self = StObject.set(x, "getDefaultAttributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRunAttributes(value: (Double, SeqEquiv[String]) => SafeArray[PropertyValue]): Self = StObject.set(x, "getRunAttributes", js.Any.fromFunction2(value))
+    inline def setGetRunAttributes(value: (Double, SeqEquiv[String]) => SafeArray[PropertyValue]): Self = StObject.set(x, "getRunAttributes", js.Any.fromFunction2(value))
   }
 }

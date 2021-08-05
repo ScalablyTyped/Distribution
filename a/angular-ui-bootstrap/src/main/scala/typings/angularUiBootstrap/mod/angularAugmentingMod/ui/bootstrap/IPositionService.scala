@@ -19,19 +19,15 @@ trait IPositionService extends StObject {
 }
 object IPositionService {
   
-  @scala.inline
-  def apply(offset: JQuery => IPositionCoordinates, position: JQuery => IPositionCoordinates): IPositionService = {
+  inline def apply(offset: JQuery => IPositionCoordinates, position: JQuery => IPositionCoordinates): IPositionService = {
     val __obj = js.Dynamic.literal(offset = js.Any.fromFunction1(offset), position = js.Any.fromFunction1(position))
     __obj.asInstanceOf[IPositionService]
   }
   
-  @scala.inline
-  implicit class IPositionServiceMutableBuilder[Self <: IPositionService] (val x: Self) extends AnyVal {
+  extension [Self <: IPositionService](x: Self) {
     
-    @scala.inline
-    def setOffset(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+    inline def setOffset(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPosition(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+    inline def setPosition(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
   }
 }

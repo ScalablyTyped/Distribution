@@ -17,17 +17,14 @@ trait RectMark
 }
 object RectMark {
   
-  @scala.inline
-  def apply(): RectMark = {
+  inline def apply(): RectMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("rect")
     __obj.asInstanceOf[RectMark]
   }
   
-  @scala.inline
-  implicit class RectMarkMutableBuilder[Self <: RectMark] (val x: Self) extends AnyVal {
+  extension [Self <: RectMark](x: Self) {
     
-    @scala.inline
-    def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

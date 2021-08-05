@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnKeyTypeOptions extends StObject
 object ReturnKeyTypeOptions {
   
-  @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
+  inline def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   
-  @scala.inline
-  def done: typings.reactNative.reactNativeStrings.done = "done".asInstanceOf[typings.reactNative.reactNativeStrings.done]
+  inline def done: typings.reactNative.reactNativeStrings.done = "done".asInstanceOf[typings.reactNative.reactNativeStrings.done]
   
-  @scala.inline
-  def `emergency-call`: typings.reactNative.reactNativeStrings.`emergency-call` = "emergency-call".asInstanceOf[typings.reactNative.reactNativeStrings.`emergency-call`]
+  inline def `emergency-call`: typings.reactNative.reactNativeStrings.`emergency-call` = "emergency-call".asInstanceOf[typings.reactNative.reactNativeStrings.`emergency-call`]
   
-  @scala.inline
-  def go: typings.reactNative.reactNativeStrings.go = "go".asInstanceOf[typings.reactNative.reactNativeStrings.go]
+  inline def go: typings.reactNative.reactNativeStrings.go = "go".asInstanceOf[typings.reactNative.reactNativeStrings.go]
   
-  @scala.inline
-  def google: typings.reactNative.reactNativeStrings.google = "google".asInstanceOf[typings.reactNative.reactNativeStrings.google]
+  inline def google: typings.reactNative.reactNativeStrings.google = "google".asInstanceOf[typings.reactNative.reactNativeStrings.google]
   
-  @scala.inline
-  def join: typings.reactNative.reactNativeStrings.join = "join".asInstanceOf[typings.reactNative.reactNativeStrings.join]
+  inline def join: typings.reactNative.reactNativeStrings.join = "join".asInstanceOf[typings.reactNative.reactNativeStrings.join]
   
-  @scala.inline
-  def next: typings.reactNative.reactNativeStrings.next = "next".asInstanceOf[typings.reactNative.reactNativeStrings.next]
+  inline def next: typings.reactNative.reactNativeStrings.next = "next".asInstanceOf[typings.reactNative.reactNativeStrings.next]
   
-  @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  inline def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   
-  @scala.inline
-  def previous: typings.reactNative.reactNativeStrings.previous = "previous".asInstanceOf[typings.reactNative.reactNativeStrings.previous]
+  inline def previous: typings.reactNative.reactNativeStrings.previous = "previous".asInstanceOf[typings.reactNative.reactNativeStrings.previous]
   
-  @scala.inline
-  def route: typings.reactNative.reactNativeStrings.route = "route".asInstanceOf[typings.reactNative.reactNativeStrings.route]
+  inline def route: typings.reactNative.reactNativeStrings.route = "route".asInstanceOf[typings.reactNative.reactNativeStrings.route]
   
-  @scala.inline
-  def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
+  inline def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
   
-  @scala.inline
-  def send: typings.reactNative.reactNativeStrings.send = "send".asInstanceOf[typings.reactNative.reactNativeStrings.send]
+  inline def send: typings.reactNative.reactNativeStrings.send = "send".asInstanceOf[typings.reactNative.reactNativeStrings.send]
   
-  @scala.inline
-  def yahoo: typings.reactNative.reactNativeStrings.yahoo = "yahoo".asInstanceOf[typings.reactNative.reactNativeStrings.yahoo]
+  inline def yahoo: typings.reactNative.reactNativeStrings.yahoo = "yahoo".asInstanceOf[typings.reactNative.reactNativeStrings.yahoo]
 }

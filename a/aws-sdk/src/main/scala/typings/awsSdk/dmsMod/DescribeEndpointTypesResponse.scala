@@ -18,28 +18,21 @@ trait DescribeEndpointTypesResponse extends StObject {
 }
 object DescribeEndpointTypesResponse {
   
-  @scala.inline
-  def apply(): DescribeEndpointTypesResponse = {
+  inline def apply(): DescribeEndpointTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEndpointTypesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEndpointTypesResponseMutableBuilder[Self <: DescribeEndpointTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEndpointTypesResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSupportedEndpointTypes(value: SupportedEndpointTypeList): Self = StObject.set(x, "SupportedEndpointTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedEndpointTypes(value: SupportedEndpointTypeList): Self = StObject.set(x, "SupportedEndpointTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedEndpointTypesUndefined: Self = StObject.set(x, "SupportedEndpointTypes", js.undefined)
+    inline def setSupportedEndpointTypesUndefined: Self = StObject.set(x, "SupportedEndpointTypes", js.undefined)
     
-    @scala.inline
-    def setSupportedEndpointTypesVarargs(value: SupportedEndpointType*): Self = StObject.set(x, "SupportedEndpointTypes", js.Array(value :_*))
+    inline def setSupportedEndpointTypesVarargs(value: SupportedEndpointType*): Self = StObject.set(x, "SupportedEndpointTypes", js.Array(value :_*))
   }
 }

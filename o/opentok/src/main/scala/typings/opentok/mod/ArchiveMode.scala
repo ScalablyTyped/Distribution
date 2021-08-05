@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArchiveMode extends StObject
 object ArchiveMode {
   
-  @scala.inline
-  def always: typings.opentok.opentokStrings.always = "always".asInstanceOf[typings.opentok.opentokStrings.always]
+  inline def always: typings.opentok.opentokStrings.always = "always".asInstanceOf[typings.opentok.opentokStrings.always]
   
-  @scala.inline
-  def manual: typings.opentok.opentokStrings.manual = "manual".asInstanceOf[typings.opentok.opentokStrings.manual]
+  inline def manual: typings.opentok.opentokStrings.manual = "manual".asInstanceOf[typings.opentok.opentokStrings.manual]
 }

@@ -13,19 +13,15 @@ trait PerObjectStatus extends StObject {
 }
 object PerObjectStatus {
   
-  @scala.inline
-  def apply(): PerObjectStatus = {
+  inline def apply(): PerObjectStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerObjectStatus]
   }
   
-  @scala.inline
-  implicit class PerObjectStatusMutableBuilder[Self <: PerObjectStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PerObjectStatus](x: Self) {
     
-    @scala.inline
-    def setSyncStatus(value: PerObjectSyncStatus): Self = StObject.set(x, "SyncStatus", value.asInstanceOf[js.Any])
+    inline def setSyncStatus(value: PerObjectSyncStatus): Self = StObject.set(x, "SyncStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncStatusUndefined: Self = StObject.set(x, "SyncStatus", js.undefined)
+    inline def setSyncStatusUndefined: Self = StObject.set(x, "SyncStatus", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ object esColumnSizerMod {
     @JSImport("react-virtualized/dist/es/ColumnSizer", "ColumnSizer.propTypes")
     @js.native
     def propTypes: Children = js.native
-    @scala.inline
-    def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait ColumnSizerProps
@@ -71,38 +70,28 @@ object esColumnSizerMod {
   }
   object ColumnSizerProps {
     
-    @scala.inline
-    def apply(children: SizedColumnProps => ReactNode, width: Double): ColumnSizerProps = {
+    inline def apply(children: SizedColumnProps => ReactNode, width: Double): ColumnSizerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnSizerProps]
     }
     
-    @scala.inline
-    implicit class ColumnSizerPropsMutableBuilder[Self <: ColumnSizerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnSizerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: SizedColumnProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: SizedColumnProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+      inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
       
-      @scala.inline
-      def setColumnMaxWidth(value: Double): Self = StObject.set(x, "columnMaxWidth", value.asInstanceOf[js.Any])
+      inline def setColumnMaxWidth(value: Double): Self = StObject.set(x, "columnMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnMaxWidthUndefined: Self = StObject.set(x, "columnMaxWidth", js.undefined)
+      inline def setColumnMaxWidthUndefined: Self = StObject.set(x, "columnMaxWidth", js.undefined)
       
-      @scala.inline
-      def setColumnMinWidth(value: Double): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
+      inline def setColumnMinWidth(value: Double): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnMinWidthUndefined: Self = StObject.set(x, "columnMinWidth", js.undefined)
+      inline def setColumnMinWidthUndefined: Self = StObject.set(x, "columnMinWidth", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,26 +107,20 @@ object esColumnSizerMod {
   }
   object SizedColumnProps {
     
-    @scala.inline
-    def apply(adjustedWidth: Double, columnWidth: Double, getColumnWidth: () => Double, registerChild: js.Any): SizedColumnProps = {
+    inline def apply(adjustedWidth: Double, columnWidth: Double, getColumnWidth: () => Double, registerChild: js.Any): SizedColumnProps = {
       val __obj = js.Dynamic.literal(adjustedWidth = adjustedWidth.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], getColumnWidth = js.Any.fromFunction0(getColumnWidth), registerChild = registerChild.asInstanceOf[js.Any])
       __obj.asInstanceOf[SizedColumnProps]
     }
     
-    @scala.inline
-    implicit class SizedColumnPropsMutableBuilder[Self <: SizedColumnProps] (val x: Self) extends AnyVal {
+    extension [Self <: SizedColumnProps](x: Self) {
       
-      @scala.inline
-      def setAdjustedWidth(value: Double): Self = StObject.set(x, "adjustedWidth", value.asInstanceOf[js.Any])
+      inline def setAdjustedWidth(value: Double): Self = StObject.set(x, "adjustedWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetColumnWidth(value: () => Double): Self = StObject.set(x, "getColumnWidth", js.Any.fromFunction0(value))
+      inline def setGetColumnWidth(value: () => Double): Self = StObject.set(x, "getColumnWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterChild(value: js.Any): Self = StObject.set(x, "registerChild", value.asInstanceOf[js.Any])
+      inline def setRegisterChild(value: js.Any): Self = StObject.set(x, "registerChild", value.asInstanceOf[js.Any])
     }
   }
 }

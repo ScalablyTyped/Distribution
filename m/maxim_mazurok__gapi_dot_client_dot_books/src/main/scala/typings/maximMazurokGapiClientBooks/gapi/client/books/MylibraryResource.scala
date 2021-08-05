@@ -14,8 +14,7 @@ trait MylibraryResource extends StObject {
 }
 object MylibraryResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotations: AnnotationsResource,
     bookshelves: BookshelvesResource,
     readingpositions: ReadingpositionsResource
@@ -24,16 +23,12 @@ object MylibraryResource {
     __obj.asInstanceOf[MylibraryResource]
   }
   
-  @scala.inline
-  implicit class MylibraryResourceMutableBuilder[Self <: MylibraryResource] (val x: Self) extends AnyVal {
+  extension [Self <: MylibraryResource](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: AnnotationsResource): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: AnnotationsResource): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookshelves(value: BookshelvesResource): Self = StObject.set(x, "bookshelves", value.asInstanceOf[js.Any])
+    inline def setBookshelves(value: BookshelvesResource): Self = StObject.set(x, "bookshelves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadingpositions(value: ReadingpositionsResource): Self = StObject.set(x, "readingpositions", value.asInstanceOf[js.Any])
+    inline def setReadingpositions(value: ReadingpositionsResource): Self = StObject.set(x, "readingpositions", value.asInstanceOf[js.Any])
   }
 }

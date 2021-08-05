@@ -13,19 +13,15 @@ trait FpgaDeviceMemoryInfo extends StObject {
 }
 object FpgaDeviceMemoryInfo {
   
-  @scala.inline
-  def apply(): FpgaDeviceMemoryInfo = {
+  inline def apply(): FpgaDeviceMemoryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FpgaDeviceMemoryInfo]
   }
   
-  @scala.inline
-  implicit class FpgaDeviceMemoryInfoMutableBuilder[Self <: FpgaDeviceMemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FpgaDeviceMemoryInfo](x: Self) {
     
-    @scala.inline
-    def setSizeInMiB(value: FpgaDeviceMemorySize): Self = StObject.set(x, "SizeInMiB", value.asInstanceOf[js.Any])
+    inline def setSizeInMiB(value: FpgaDeviceMemorySize): Self = StObject.set(x, "SizeInMiB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInMiBUndefined: Self = StObject.set(x, "SizeInMiB", js.undefined)
+    inline def setSizeInMiBUndefined: Self = StObject.set(x, "SizeInMiB", js.undefined)
   }
 }

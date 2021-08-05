@@ -48,55 +48,39 @@ trait TLSOptions extends StObject {
 }
 object TLSOptions {
   
-  @scala.inline
-  def apply(): TLSOptions = {
+  inline def apply(): TLSOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TLSOptions]
   }
   
-  @scala.inline
-  implicit class TLSOptionsMutableBuilder[Self <: TLSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TLSOptions](x: Self) {
     
-    @scala.inline
-    def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsAllowInvalidCertificates(value: Boolean): Self = StObject.set(x, "tlsAllowInvalidCertificates", value.asInstanceOf[js.Any])
+    inline def setTlsAllowInvalidCertificates(value: Boolean): Self = StObject.set(x, "tlsAllowInvalidCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsAllowInvalidCertificatesUndefined: Self = StObject.set(x, "tlsAllowInvalidCertificates", js.undefined)
+    inline def setTlsAllowInvalidCertificatesUndefined: Self = StObject.set(x, "tlsAllowInvalidCertificates", js.undefined)
     
-    @scala.inline
-    def setTlsAllowInvalidHostnames(value: Boolean): Self = StObject.set(x, "tlsAllowInvalidHostnames", value.asInstanceOf[js.Any])
+    inline def setTlsAllowInvalidHostnames(value: Boolean): Self = StObject.set(x, "tlsAllowInvalidHostnames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsAllowInvalidHostnamesUndefined: Self = StObject.set(x, "tlsAllowInvalidHostnames", js.undefined)
+    inline def setTlsAllowInvalidHostnamesUndefined: Self = StObject.set(x, "tlsAllowInvalidHostnames", js.undefined)
     
-    @scala.inline
-    def setTlsCAFile(value: String): Self = StObject.set(x, "tlsCAFile", value.asInstanceOf[js.Any])
+    inline def setTlsCAFile(value: String): Self = StObject.set(x, "tlsCAFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsCAFileUndefined: Self = StObject.set(x, "tlsCAFile", js.undefined)
+    inline def setTlsCAFileUndefined: Self = StObject.set(x, "tlsCAFile", js.undefined)
     
-    @scala.inline
-    def setTlsCertificateKeyFile(value: String): Self = StObject.set(x, "tlsCertificateKeyFile", value.asInstanceOf[js.Any])
+    inline def setTlsCertificateKeyFile(value: String): Self = StObject.set(x, "tlsCertificateKeyFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsCertificateKeyFilePassword(value: String): Self = StObject.set(x, "tlsCertificateKeyFilePassword", value.asInstanceOf[js.Any])
+    inline def setTlsCertificateKeyFilePassword(value: String): Self = StObject.set(x, "tlsCertificateKeyFilePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsCertificateKeyFilePasswordUndefined: Self = StObject.set(x, "tlsCertificateKeyFilePassword", js.undefined)
+    inline def setTlsCertificateKeyFilePasswordUndefined: Self = StObject.set(x, "tlsCertificateKeyFilePassword", js.undefined)
     
-    @scala.inline
-    def setTlsCertificateKeyFileUndefined: Self = StObject.set(x, "tlsCertificateKeyFile", js.undefined)
+    inline def setTlsCertificateKeyFileUndefined: Self = StObject.set(x, "tlsCertificateKeyFile", js.undefined)
     
-    @scala.inline
-    def setTlsInsecure(value: Boolean): Self = StObject.set(x, "tlsInsecure", value.asInstanceOf[js.Any])
+    inline def setTlsInsecure(value: Boolean): Self = StObject.set(x, "tlsInsecure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsInsecureUndefined: Self = StObject.set(x, "tlsInsecure", js.undefined)
+    inline def setTlsInsecureUndefined: Self = StObject.set(x, "tlsInsecure", js.undefined)
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

@@ -20,17 +20,14 @@ object typesDeleteFunctionConcurrencyOutputMod {
   }
   object DeleteFunctionConcurrencyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteFunctionConcurrencyOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteFunctionConcurrencyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteFunctionConcurrencyOutput]
     }
     
-    @scala.inline
-    implicit class DeleteFunctionConcurrencyOutputMutableBuilder[Self <: DeleteFunctionConcurrencyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteFunctionConcurrencyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

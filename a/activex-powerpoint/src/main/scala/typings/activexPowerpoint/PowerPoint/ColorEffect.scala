@@ -14,15 +14,14 @@ trait ColorEffect extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ColorEffect_typekey")
+  /* private */ @JSName("PowerPoint.ColorEffect_typekey")
   var PowerPointDotColorEffect_typekey: ColorEffect
   
   val To: ColorFormat
 }
 object ColorEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     By: ColorFormat,
     From: ColorFormat,
@@ -35,25 +34,18 @@ object ColorEffect {
     __obj.asInstanceOf[ColorEffect]
   }
   
-  @scala.inline
-  implicit class ColorEffectMutableBuilder[Self <: ColorEffect] (val x: Self) extends AnyVal {
+  extension [Self <: ColorEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBy(value: ColorFormat): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
+    inline def setBy(value: ColorFormat): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: ColorFormat): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: ColorFormat): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotColorEffect_typekey(value: ColorEffect): Self = StObject.set(x, "PowerPoint.ColorEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotColorEffect_typekey(value: ColorEffect): Self = StObject.set(x, "PowerPoint.ColorEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: ColorFormat): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: ColorFormat): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

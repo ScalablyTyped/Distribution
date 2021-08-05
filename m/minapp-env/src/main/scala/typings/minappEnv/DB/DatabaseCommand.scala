@@ -45,8 +45,7 @@ trait DatabaseCommand extends StObject {
 }
 object DatabaseCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
     eq_ : js.Any => DatabaseQueryCommand,
     gt: js.Any => DatabaseQueryCommand,
@@ -71,61 +70,42 @@ object DatabaseCommand {
     __obj.asInstanceOf[DatabaseCommand]
   }
   
-  @scala.inline
-  implicit class DatabaseCommandMutableBuilder[Self <: DatabaseCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseCommand](x: Self) {
     
-    @scala.inline
-    def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    inline def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEq_(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
+    inline def setEq_(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGt(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
+    inline def setGt(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGte(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
+    inline def setGte(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn(value: Array[js.Any] => DatabaseQueryCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: Array[js.Any] => DatabaseQueryCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInc(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "inc", js.Any.fromFunction1(value))
+    inline def setInc(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "inc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLt(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
+    inline def setLt(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLte(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
+    inline def setLte(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMul(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
+    inline def setMul(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNeq(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
+    inline def setNeq(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNin(value: Array[js.Any] => DatabaseQueryCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
+    inline def setNin(value: Array[js.Any] => DatabaseQueryCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    inline def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPop(value: () => DatabaseUpdateCommand): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => DatabaseUpdateCommand): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: /* repeated */ js.Any => DatabaseUpdateCommand): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: /* repeated */ js.Any => DatabaseUpdateCommand): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: () => DatabaseUpdateCommand): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => DatabaseUpdateCommand): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: js.Any => DatabaseUpdateCommand): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Any => DatabaseUpdateCommand): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShift(value: () => DatabaseUpdateCommand): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+    inline def setShift(value: () => DatabaseUpdateCommand): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnshift(value: /* repeated */ js.Any => DatabaseUpdateCommand): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+    inline def setUnshift(value: /* repeated */ js.Any => DatabaseUpdateCommand): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
   }
 }

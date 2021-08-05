@@ -18,16 +18,13 @@ trait InsertSectionBreakNextPageCommand
 }
 object InsertSectionBreakNextPageCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertSectionBreakNextPageCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertSectionBreakNextPageCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertSectionBreakNextPageCommand]
   }
   
-  @scala.inline
-  implicit class InsertSectionBreakNextPageCommandMutableBuilder[Self <: InsertSectionBreakNextPageCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertSectionBreakNextPageCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

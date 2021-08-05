@@ -21,25 +21,19 @@ trait PlotTreemapLevelsColorVariationOptions extends StObject {
 }
 object PlotTreemapLevelsColorVariationOptions {
   
-  @scala.inline
-  def apply(): PlotTreemapLevelsColorVariationOptions = {
+  inline def apply(): PlotTreemapLevelsColorVariationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTreemapLevelsColorVariationOptions]
   }
   
-  @scala.inline
-  implicit class PlotTreemapLevelsColorVariationOptionsMutableBuilder[Self <: PlotTreemapLevelsColorVariationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTreemapLevelsColorVariationOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: brightness): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: brightness): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

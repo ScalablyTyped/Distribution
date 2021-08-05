@@ -39,8 +39,7 @@ trait TopicRuleErrorActionCloudwatchMetric extends StObject {
 }
 object TopicRuleErrorActionCloudwatchMetric {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metricName: Input[String],
     metricNamespace: Input[String],
     metricUnit: Input[String],
@@ -51,28 +50,20 @@ object TopicRuleErrorActionCloudwatchMetric {
     __obj.asInstanceOf[TopicRuleErrorActionCloudwatchMetric]
   }
   
-  @scala.inline
-  implicit class TopicRuleErrorActionCloudwatchMetricMutableBuilder[Self <: TopicRuleErrorActionCloudwatchMetric] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleErrorActionCloudwatchMetric](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamespace(value: Input[String]): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
+    inline def setMetricNamespace(value: Input[String]): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTimestamp(value: Input[String]): Self = StObject.set(x, "metricTimestamp", value.asInstanceOf[js.Any])
+    inline def setMetricTimestamp(value: Input[String]): Self = StObject.set(x, "metricTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTimestampUndefined: Self = StObject.set(x, "metricTimestamp", js.undefined)
+    inline def setMetricTimestampUndefined: Self = StObject.set(x, "metricTimestamp", js.undefined)
     
-    @scala.inline
-    def setMetricUnit(value: Input[String]): Self = StObject.set(x, "metricUnit", value.asInstanceOf[js.Any])
+    inline def setMetricUnit(value: Input[String]): Self = StObject.set(x, "metricUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValue(value: Input[String]): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
+    inline def setMetricValue(value: Input[String]): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

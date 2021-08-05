@@ -84,17 +84,14 @@ object typesKmsinternalexceptionMod {
   }
   object KMSInternalException {
     
-    @scala.inline
-    def apply(): KMSInternalException = {
+    inline def apply(): KMSInternalException = {
       val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[KMSInternalException]
     }
     
-    @scala.inline
-    implicit class KMSInternalExceptionMutableBuilder[Self <: KMSInternalException] (val x: Self) extends AnyVal {
+    extension [Self <: KMSInternalException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +104,16 @@ object typesKmsinternalexceptionMod {
   }
   object KMSInternalExceptionDetails {
     
-    @scala.inline
-    def apply(): KMSInternalExceptionDetails = {
+    inline def apply(): KMSInternalExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KMSInternalExceptionDetails]
     }
     
-    @scala.inline
-    implicit class KMSInternalExceptionDetailsMutableBuilder[Self <: KMSInternalExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KMSInternalExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

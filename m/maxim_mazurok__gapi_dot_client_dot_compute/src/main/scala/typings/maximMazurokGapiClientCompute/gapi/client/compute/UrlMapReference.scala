@@ -10,19 +10,15 @@ trait UrlMapReference extends StObject {
 }
 object UrlMapReference {
   
-  @scala.inline
-  def apply(): UrlMapReference = {
+  inline def apply(): UrlMapReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlMapReference]
   }
   
-  @scala.inline
-  implicit class UrlMapReferenceMutableBuilder[Self <: UrlMapReference] (val x: Self) extends AnyVal {
+  extension [Self <: UrlMapReference](x: Self) {
     
-    @scala.inline
-    def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
+    inline def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlMapUndefined: Self = StObject.set(x, "urlMap", js.undefined)
+    inline def setUrlMapUndefined: Self = StObject.set(x, "urlMap", js.undefined)
   }
 }

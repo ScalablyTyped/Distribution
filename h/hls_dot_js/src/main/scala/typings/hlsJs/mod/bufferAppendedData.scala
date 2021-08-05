@@ -13,19 +13,15 @@ trait bufferAppendedData extends StObject {
 }
 object bufferAppendedData {
   
-  @scala.inline
-  def apply(pending: Double, timeRanges: Audio): bufferAppendedData = {
+  inline def apply(pending: Double, timeRanges: Audio): bufferAppendedData = {
     val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any], timeRanges = timeRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[bufferAppendedData]
   }
   
-  @scala.inline
-  implicit class bufferAppendedDataMutableBuilder[Self <: bufferAppendedData] (val x: Self) extends AnyVal {
+  extension [Self <: bufferAppendedData](x: Self) {
     
-    @scala.inline
-    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRanges(value: Audio): Self = StObject.set(x, "timeRanges", value.asInstanceOf[js.Any])
+    inline def setTimeRanges(value: Audio): Self = StObject.set(x, "timeRanges", value.asInstanceOf[js.Any])
   }
 }

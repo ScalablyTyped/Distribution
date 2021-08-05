@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Lock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Lock]
+  inline def apply(): Lock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Lock]
   
   @JSImport("mutexify", JSImport.Namespace)
   @js.native

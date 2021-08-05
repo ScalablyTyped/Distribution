@@ -13,25 +13,19 @@ trait IConnectionOptions[C /* <: IClient */] extends StObject {
 }
 object IConnectionOptions {
   
-  @scala.inline
-  def apply[C /* <: IClient */](): IConnectionOptions[C] = {
+  inline def apply[C /* <: IClient */](): IConnectionOptions[C] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConnectionOptions[C]]
   }
   
-  @scala.inline
-  implicit class IConnectionOptionsMutableBuilder[Self <: IConnectionOptions[?], C /* <: IClient */] (val x: Self & IConnectionOptions[C]) extends AnyVal {
+  extension [Self <: IConnectionOptions[?], C /* <: IClient */](x: Self & IConnectionOptions[C]) {
     
-    @scala.inline
-    def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
+    inline def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
+    inline def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
     
-    @scala.inline
-    def setOnLost(value: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit): Self = StObject.set(x, "onLost", js.Any.fromFunction2(value))
+    inline def setOnLost(value: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit): Self = StObject.set(x, "onLost", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnLostUndefined: Self = StObject.set(x, "onLost", js.undefined)
+    inline def setOnLostUndefined: Self = StObject.set(x, "onLost", js.undefined)
   }
 }

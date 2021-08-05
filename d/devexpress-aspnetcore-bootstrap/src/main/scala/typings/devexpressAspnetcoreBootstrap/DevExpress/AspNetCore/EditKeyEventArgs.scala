@@ -12,16 +12,13 @@ trait EditKeyEventArgs
 }
 object EditKeyEventArgs {
   
-  @scala.inline
-  def apply(htmlEvent: js.Any, sender: Control): EditKeyEventArgs = {
+  inline def apply(htmlEvent: js.Any, sender: Control): EditKeyEventArgs = {
     val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditKeyEventArgs]
   }
   
-  @scala.inline
-  implicit class EditKeyEventArgsMutableBuilder[Self <: EditKeyEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: EditKeyEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

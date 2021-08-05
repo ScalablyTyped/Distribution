@@ -42,58 +42,41 @@ trait ServerUrl extends StObject {
 }
 object ServerUrl {
   
-  @scala.inline
-  def apply(url: String): ServerUrl = {
+  inline def apply(url: String): ServerUrl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerUrl]
   }
   
-  @scala.inline
-  implicit class ServerUrlMutableBuilder[Self <: ServerUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ServerUrl](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMethod(value: GET | POST | PUT | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET | POST | PUT | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOndata(value: /* data */ FormData => FormData): Self = StObject.set(x, "ondata", js.Any.fromFunction1(value))
+    inline def setOndata(value: /* data */ FormData => FormData): Self = StObject.set(x, "ondata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOndataUndefined: Self = StObject.set(x, "ondata", js.undefined)
+    inline def setOndataUndefined: Self = StObject.set(x, "ondata", js.undefined)
     
-    @scala.inline
-    def setOnerror(value: /* responseBody */ js.Any => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    inline def setOnerror(value: /* responseBody */ js.Any => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    @scala.inline
-    def setOnload(value: /* response */ js.Any => Double | String): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+    inline def setOnload(value: /* response */ js.Any => Double | String): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+    inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

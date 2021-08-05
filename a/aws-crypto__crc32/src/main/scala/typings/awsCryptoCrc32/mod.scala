@@ -15,13 +15,12 @@ object mod {
   @js.native
   class Crc32_ () extends StObject {
     
-    var checksum: js.Any = js.native
+    /* private */ var checksum: js.Any = js.native
     
     def digest(): Double = js.native
     
     def update(data: Uint8Array): this.type = js.native
   }
   
-  @scala.inline
-  def crc32(data: Uint8Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def crc32(data: Uint8Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

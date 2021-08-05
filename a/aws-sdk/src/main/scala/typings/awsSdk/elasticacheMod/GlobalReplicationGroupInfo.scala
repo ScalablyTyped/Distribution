@@ -18,25 +18,19 @@ trait GlobalReplicationGroupInfo extends StObject {
 }
 object GlobalReplicationGroupInfo {
   
-  @scala.inline
-  def apply(): GlobalReplicationGroupInfo = {
+  inline def apply(): GlobalReplicationGroupInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalReplicationGroupInfo]
   }
   
-  @scala.inline
-  implicit class GlobalReplicationGroupInfoMutableBuilder[Self <: GlobalReplicationGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalReplicationGroupInfo](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupIdUndefined: Self = StObject.set(x, "GlobalReplicationGroupId", js.undefined)
+    inline def setGlobalReplicationGroupIdUndefined: Self = StObject.set(x, "GlobalReplicationGroupId", js.undefined)
     
-    @scala.inline
-    def setGlobalReplicationGroupMemberRole(value: String): Self = StObject.set(x, "GlobalReplicationGroupMemberRole", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupMemberRole(value: String): Self = StObject.set(x, "GlobalReplicationGroupMemberRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupMemberRoleUndefined: Self = StObject.set(x, "GlobalReplicationGroupMemberRole", js.undefined)
+    inline def setGlobalReplicationGroupMemberRoleUndefined: Self = StObject.set(x, "GlobalReplicationGroupMemberRole", js.undefined)
   }
 }

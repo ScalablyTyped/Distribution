@@ -18,25 +18,19 @@ trait ClusterAssociatedToSchedule extends StObject {
 }
 object ClusterAssociatedToSchedule {
   
-  @scala.inline
-  def apply(): ClusterAssociatedToSchedule = {
+  inline def apply(): ClusterAssociatedToSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterAssociatedToSchedule]
   }
   
-  @scala.inline
-  implicit class ClusterAssociatedToScheduleMutableBuilder[Self <: ClusterAssociatedToSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterAssociatedToSchedule](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setScheduleAssociationState(value: ScheduleState): Self = StObject.set(x, "ScheduleAssociationState", value.asInstanceOf[js.Any])
+    inline def setScheduleAssociationState(value: ScheduleState): Self = StObject.set(x, "ScheduleAssociationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleAssociationStateUndefined: Self = StObject.set(x, "ScheduleAssociationState", js.undefined)
+    inline def setScheduleAssociationStateUndefined: Self = StObject.set(x, "ScheduleAssociationState", js.undefined)
   }
 }

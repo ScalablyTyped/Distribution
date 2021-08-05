@@ -10,16 +10,13 @@ trait NotificationMaxNumber extends StObject {
 }
 object NotificationMaxNumber {
   
-  @scala.inline
-  def apply(notificationMaxNumber: Double): NotificationMaxNumber = {
+  inline def apply(notificationMaxNumber: Double): NotificationMaxNumber = {
     val __obj = js.Dynamic.literal(notificationMaxNumber = notificationMaxNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMaxNumber]
   }
   
-  @scala.inline
-  implicit class NotificationMaxNumberMutableBuilder[Self <: NotificationMaxNumber] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationMaxNumber](x: Self) {
     
-    @scala.inline
-    def setNotificationMaxNumber(value: Double): Self = StObject.set(x, "notificationMaxNumber", value.asInstanceOf[js.Any])
+    inline def setNotificationMaxNumber(value: Double): Self = StObject.set(x, "notificationMaxNumber", value.asInstanceOf[js.Any])
   }
 }

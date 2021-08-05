@@ -21,41 +21,35 @@ object KeyboardType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.KeyboardType.DecimalPad")
   @js.native
   def DecimalPad: KeyboardType = js.native
-  @scala.inline
-  def DecimalPad_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DecimalPad")(x.asInstanceOf[js.Any])
+  inline def DecimalPad_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DecimalPad")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.KeyboardType.Default")
   @js.native
   def Default: KeyboardType = js.native
-  @scala.inline
-  def Default_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.KeyboardType.EmailAddress")
   @js.native
   def EmailAddress: KeyboardType = js.native
-  @scala.inline
-  def EmailAddress_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmailAddress")(x.asInstanceOf[js.Any])
+  inline def EmailAddress_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmailAddress")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.KeyboardType.NumberPad")
   @js.native
   def NumberPad: KeyboardType = js.native
-  @scala.inline
-  def NumberPad_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NumberPad")(x.asInstanceOf[js.Any])
+  inline def NumberPad_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NumberPad")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.KeyboardType.PhonePad")
   @js.native
   def PhonePad: KeyboardType = js.native
-  @scala.inline
-  def PhonePad_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PhonePad")(x.asInstanceOf[js.Any])
+  inline def PhonePad_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PhonePad")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.KeyboardType.URL")
   @js.native
   def URL: KeyboardType = js.native
-  @scala.inline
-  def URL_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
+  inline def URL_=(x: KeyboardType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }

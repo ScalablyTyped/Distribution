@@ -44,8 +44,7 @@ trait FrameControl
 }
 object FrameControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     ComponentUrl: String,
     Context: XInterface,
@@ -100,13 +99,10 @@ object FrameControl {
     __obj.asInstanceOf[FrameControl]
   }
   
-  @scala.inline
-  implicit class FrameControlMutableBuilder[Self <: FrameControl] (val x: Self) extends AnyVal {
+  extension [Self <: FrameControl](x: Self) {
     
-    @scala.inline
-    def setComponentUrl(value: String): Self = StObject.set(x, "ComponentUrl", value.asInstanceOf[js.Any])
+    inline def setComponentUrl(value: String): Self = StObject.set(x, "ComponentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: String): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: String): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
   }
 }

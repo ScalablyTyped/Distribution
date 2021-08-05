@@ -10,16 +10,13 @@ trait IPlayToSourceDeferral extends StObject {
 }
 object IPlayToSourceDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): IPlayToSourceDeferral = {
+  inline def apply(complete: () => Unit): IPlayToSourceDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[IPlayToSourceDeferral]
   }
   
-  @scala.inline
-  implicit class IPlayToSourceDeferralMutableBuilder[Self <: IPlayToSourceDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayToSourceDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

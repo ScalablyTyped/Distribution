@@ -25,25 +25,19 @@ trait PageViewLoadOptions extends StObject {
 }
 object PageViewLoadOptions {
   
-  @scala.inline
-  def apply(): PageViewLoadOptions = {
+  inline def apply(): PageViewLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageViewLoadOptions]
   }
   
-  @scala.inline
-  implicit class PageViewLoadOptionsMutableBuilder[Self <: PageViewLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageViewLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait UpdateSamplingRuleResult extends StObject {
 }
 object UpdateSamplingRuleResult {
   
-  @scala.inline
-  def apply(): UpdateSamplingRuleResult = {
+  inline def apply(): UpdateSamplingRuleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSamplingRuleResult]
   }
   
-  @scala.inline
-  implicit class UpdateSamplingRuleResultMutableBuilder[Self <: UpdateSamplingRuleResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSamplingRuleResult](x: Self) {
     
-    @scala.inline
-    def setSamplingRuleRecord(value: SamplingRuleRecord): Self = StObject.set(x, "SamplingRuleRecord", value.asInstanceOf[js.Any])
+    inline def setSamplingRuleRecord(value: SamplingRuleRecord): Self = StObject.set(x, "SamplingRuleRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingRuleRecordUndefined: Self = StObject.set(x, "SamplingRuleRecord", js.undefined)
+    inline def setSamplingRuleRecordUndefined: Self = StObject.set(x, "SamplingRuleRecord", js.undefined)
   }
 }

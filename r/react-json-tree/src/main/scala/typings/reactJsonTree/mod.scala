@@ -80,103 +80,74 @@ object mod {
   }
   object JSONTreeProps {
     
-    @scala.inline
-    def apply(data: js.Array[js.Any] | js.Object): JSONTreeProps = {
+    inline def apply(data: js.Array[js.Any] | js.Object): JSONTreeProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONTreeProps]
     }
     
-    @scala.inline
-    implicit class JSONTreePropsMutableBuilder[Self <: JSONTreeProps] (val x: Self) extends AnyVal {
+    extension [Self <: JSONTreeProps](x: Self) {
       
-      @scala.inline
-      def setCollectionLimit(value: Double): Self = StObject.set(x, "collectionLimit", value.asInstanceOf[js.Any])
+      inline def setCollectionLimit(value: Double): Self = StObject.set(x, "collectionLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionLimitUndefined: Self = StObject.set(x, "collectionLimit", js.undefined)
+      inline def setCollectionLimitUndefined: Self = StObject.set(x, "collectionLimit", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setGetItemString(
+      inline def setGetItemString(
         value: (/* type */ String, /* data */ js.Array[js.Any] | js.Object, /* itemType */ String, /* itemString */ String) => Element
       ): Self = StObject.set(x, "getItemString", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetItemStringUndefined: Self = StObject.set(x, "getItemString", js.undefined)
+      inline def setGetItemStringUndefined: Self = StObject.set(x, "getItemString", js.undefined)
       
-      @scala.inline
-      def setHideRoot(value: Boolean): Self = StObject.set(x, "hideRoot", value.asInstanceOf[js.Any])
+      inline def setHideRoot(value: Boolean): Self = StObject.set(x, "hideRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideRootUndefined: Self = StObject.set(x, "hideRoot", js.undefined)
+      inline def setHideRootUndefined: Self = StObject.set(x, "hideRoot", js.undefined)
       
-      @scala.inline
-      def setInvertTheme(value: Boolean): Self = StObject.set(x, "invertTheme", value.asInstanceOf[js.Any])
+      inline def setInvertTheme(value: Boolean): Self = StObject.set(x, "invertTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertThemeUndefined: Self = StObject.set(x, "invertTheme", js.undefined)
+      inline def setInvertThemeUndefined: Self = StObject.set(x, "invertTheme", js.undefined)
       
-      @scala.inline
-      def setIsCustomNode(value: () => Boolean): Self = StObject.set(x, "isCustomNode", js.Any.fromFunction0(value))
+      inline def setIsCustomNode(value: () => Boolean): Self = StObject.set(x, "isCustomNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCustomNodeUndefined: Self = StObject.set(x, "isCustomNode", js.undefined)
+      inline def setIsCustomNodeUndefined: Self = StObject.set(x, "isCustomNode", js.undefined)
       
-      @scala.inline
-      def setKeyPath(value: js.Array[String | Double]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+      inline def setKeyPath(value: js.Array[String | Double]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPathUndefined: Self = StObject.set(x, "keyPath", js.undefined)
+      inline def setKeyPathUndefined: Self = StObject.set(x, "keyPath", js.undefined)
       
-      @scala.inline
-      def setKeyPathVarargs(value: (String | Double)*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
+      inline def setKeyPathVarargs(value: (String | Double)*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
       
-      @scala.inline
-      def setLabelRenderer(
+      inline def setLabelRenderer(
         value: (/* keyPath */ js.Array[String], /* nodeType */ js.UndefOr[String], /* expanded */ js.UndefOr[Boolean], /* expandable */ js.UndefOr[Boolean]) => Element
       ): Self = StObject.set(x, "labelRenderer", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setLabelRendererUndefined: Self = StObject.set(x, "labelRenderer", js.undefined)
+      inline def setLabelRendererUndefined: Self = StObject.set(x, "labelRenderer", js.undefined)
       
-      @scala.inline
-      def setPostprocessValue(value: /* raw */ String => Element): Self = StObject.set(x, "postprocessValue", js.Any.fromFunction1(value))
+      inline def setPostprocessValue(value: /* raw */ String => Element): Self = StObject.set(x, "postprocessValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostprocessValueUndefined: Self = StObject.set(x, "postprocessValue", js.undefined)
+      inline def setPostprocessValueUndefined: Self = StObject.set(x, "postprocessValue", js.undefined)
       
-      @scala.inline
-      def setShouldExpandNode(
+      inline def setShouldExpandNode(
         value: (/* keyPath */ js.Array[String | Double], /* data */ js.Array[js.Any] | js.Object, /* level */ Double) => Boolean
       ): Self = StObject.set(x, "shouldExpandNode", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setShouldExpandNodeUndefined: Self = StObject.set(x, "shouldExpandNode", js.undefined)
+      inline def setShouldExpandNodeUndefined: Self = StObject.set(x, "shouldExpandNode", js.undefined)
       
-      @scala.inline
-      def setSortObjectKeys(value: js.Function | Boolean): Self = StObject.set(x, "sortObjectKeys", value.asInstanceOf[js.Any])
+      inline def setSortObjectKeys(value: js.Function | Boolean): Self = StObject.set(x, "sortObjectKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortObjectKeysUndefined: Self = StObject.set(x, "sortObjectKeys", js.undefined)
+      inline def setSortObjectKeysUndefined: Self = StObject.set(x, "sortObjectKeys", js.undefined)
       
-      @scala.inline
-      def setTheme(value: js.Object | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: js.Object | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setValueRenderer(
+      inline def setValueRenderer(
         value: (/* displayValue */ String | Double, /* rawValue */ js.UndefOr[String | Double | Boolean | Null], /* repeated */ String | Double) => Element
       ): Self = StObject.set(x, "valueRenderer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setValueRendererUndefined: Self = StObject.set(x, "valueRenderer", js.undefined)
+      inline def setValueRendererUndefined: Self = StObject.set(x, "valueRenderer", js.undefined)
     }
   }
 }

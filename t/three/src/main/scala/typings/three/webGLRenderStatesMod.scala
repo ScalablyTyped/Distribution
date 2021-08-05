@@ -36,8 +36,7 @@ object webGLRenderStatesMod {
   }
   object WebGLRenderState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       init: () => Unit,
       pushLight: Light => Unit,
       pushShadow: Light => Unit,
@@ -48,23 +47,17 @@ object webGLRenderStatesMod {
       __obj.asInstanceOf[WebGLRenderState]
     }
     
-    @scala.inline
-    implicit class WebGLRenderStateMutableBuilder[Self <: WebGLRenderState] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLRenderState](x: Self) {
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPushLight(value: Light => Unit): Self = StObject.set(x, "pushLight", js.Any.fromFunction1(value))
+      inline def setPushLight(value: Light => Unit): Self = StObject.set(x, "pushLight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPushShadow(value: Light => Unit): Self = StObject.set(x, "pushShadow", js.Any.fromFunction1(value))
+      inline def setPushShadow(value: Light => Unit): Self = StObject.set(x, "pushShadow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetupLights(value: Camera => Unit): Self = StObject.set(x, "setupLights", js.Any.fromFunction1(value))
+      inline def setSetupLights(value: Camera => Unit): Self = StObject.set(x, "setupLights", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setState(value: Lights): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Lights): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

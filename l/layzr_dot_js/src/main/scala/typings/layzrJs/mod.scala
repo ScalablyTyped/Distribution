@@ -10,10 +10,8 @@ object mod {
   /**
     * @param options Options
     */
-  @scala.inline
-  def apply(): LayzrInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LayzrInstance]
-  @scala.inline
-  def apply(options: LayzrOptions): LayzrInstance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[LayzrInstance]
+  inline def apply(): LayzrInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LayzrInstance]
+  inline def apply(options: LayzrOptions): LayzrInstance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[LayzrInstance]
   
   @JSImport("layzr.js", JSImport.Namespace)
   @js.native
@@ -26,11 +24,9 @@ object mod {
   trait LayzrEvents extends StObject
   object LayzrEvents {
     
-    @scala.inline
-    def srcColonafter: typings.layzrJs.layzrJsStrings.srcColonafter = "src:after".asInstanceOf[typings.layzrJs.layzrJsStrings.srcColonafter]
+    inline def srcColonafter: typings.layzrJs.layzrJsStrings.srcColonafter = "src:after".asInstanceOf[typings.layzrJs.layzrJsStrings.srcColonafter]
     
-    @scala.inline
-    def srcColonbefore: typings.layzrJs.layzrJsStrings.srcColonbefore = "src:before".asInstanceOf[typings.layzrJs.layzrJsStrings.srcColonbefore]
+    inline def srcColonbefore: typings.layzrJs.layzrJsStrings.srcColonbefore = "src:before".asInstanceOf[typings.layzrJs.layzrJsStrings.srcColonbefore]
   }
   
   @js.native
@@ -108,38 +104,28 @@ object mod {
   }
   object LayzrOptions {
     
-    @scala.inline
-    def apply(): LayzrOptions = {
+    inline def apply(): LayzrOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayzrOptions]
     }
     
-    @scala.inline
-    implicit class LayzrOptionsMutableBuilder[Self <: LayzrOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LayzrOptions](x: Self) {
       
-      @scala.inline
-      def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+      inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
       
-      @scala.inline
-      def setRetina(value: String): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
+      inline def setRetina(value: String): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
+      inline def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
       
-      @scala.inline
-      def setSrcset(value: String): Self = StObject.set(x, "srcset", value.asInstanceOf[js.Any])
+      inline def setSrcset(value: String): Self = StObject.set(x, "srcset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcsetUndefined: Self = StObject.set(x, "srcset", js.undefined)
+      inline def setSrcsetUndefined: Self = StObject.set(x, "srcset", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

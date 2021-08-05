@@ -17,8 +17,7 @@ trait BackClicked extends StObject {
 }
 object BackClicked {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backClicked: () => Unit,
     getSelectedKey: () => String,
     getSkin: () => SidebarSkin,
@@ -28,19 +27,14 @@ object BackClicked {
     __obj.asInstanceOf[BackClicked]
   }
   
-  @scala.inline
-  implicit class BackClickedMutableBuilder[Self <: BackClicked] (val x: Self) extends AnyVal {
+  extension [Self <: BackClicked](x: Self) {
     
-    @scala.inline
-    def setBackClicked(value: () => Unit): Self = StObject.set(x, "backClicked", js.Any.fromFunction0(value))
+    inline def setBackClicked(value: () => Unit): Self = StObject.set(x, "backClicked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedKey(value: () => String): Self = StObject.set(x, "getSelectedKey", js.Any.fromFunction0(value))
+    inline def setGetSelectedKey(value: () => String): Self = StObject.set(x, "getSelectedKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSkin(value: () => SidebarSkin): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+    inline def setGetSkin(value: () => SidebarSkin): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemClicked(value: String => Unit): Self = StObject.set(x, "itemClicked", js.Any.fromFunction1(value))
+    inline def setItemClicked(value: String => Unit): Self = StObject.set(x, "itemClicked", js.Any.fromFunction1(value))
   }
 }

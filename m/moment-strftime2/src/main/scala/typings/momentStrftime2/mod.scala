@@ -10,20 +10,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def installTo(moment: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installTo")(moment.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def installTo(moment: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installTo")(moment.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("moment-strftime2", "modifiers")
   @js.native
   def modifiers: Modifiers_ = js.native
-  @scala.inline
-  def modifiers_=(x: Modifiers_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
+  inline def modifiers_=(x: Modifiers_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
   
   @JSImport("moment-strftime2", "separator")
   @js.native
   def separator: String = js.native
-  @scala.inline
-  def separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
+  inline def separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
   
   trait Modifiers_ extends StObject {
     
@@ -136,8 +133,7 @@ object mod {
   }
   object Modifiers_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       A: String,
       B: String,
       D: String,
@@ -178,131 +174,89 @@ object mod {
       __obj.asInstanceOf[Modifiers_]
     }
     
-    @scala.inline
-    implicit class Modifiers_MutableBuilder[Self <: Modifiers_] (val x: Self) extends AnyVal {
+    extension [Self <: Modifiers_](x: Self) {
       
-      @scala.inline
-      def setA(value: String): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+      inline def setA(value: String): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+      inline def setB(value: String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+      inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUndefined: Self = StObject.set(x, "C", js.undefined)
+      inline def setCUndefined: Self = StObject.set(x, "C", js.undefined)
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "E", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "E", js.undefined)
       
-      @scala.inline
-      def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
+      inline def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+      inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
       
-      @scala.inline
-      def setG(value: String): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: String): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGUndefined: Self = StObject.set(x, "G", js.undefined)
+      inline def setGUndefined: Self = StObject.set(x, "G", js.undefined)
       
-      @scala.inline
-      def setH(value: String): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+      inline def setH(value: String): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI(value: String): Self = StObject.set(x, "I", value.asInstanceOf[js.Any])
+      inline def setI(value: String): Self = StObject.set(x, "I", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIUndefined: Self = StObject.set(x, "i", js.undefined)
+      inline def setIUndefined: Self = StObject.set(x, "i", js.undefined)
       
-      @scala.inline
-      def setJ(value: String): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+      inline def setJ(value: String): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJUndefined: Self = StObject.set(x, "J", js.undefined)
+      inline def setJUndefined: Self = StObject.set(x, "J", js.undefined)
       
-      @scala.inline
-      def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKUndefined: Self = StObject.set(x, "K", js.undefined)
+      inline def setKUndefined: Self = StObject.set(x, "K", js.undefined)
       
-      @scala.inline
-      def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+      inline def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+      inline def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+      inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
       
-      @scala.inline
-      def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+      inline def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOUndefined: Self = StObject.set(x, "O", js.undefined)
+      inline def setOUndefined: Self = StObject.set(x, "O", js.undefined)
       
-      @scala.inline
-      def setP(value: String): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
+      inline def setP(value: String): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentsign(value: String): Self = StObject.set(x, "%", value.asInstanceOf[js.Any])
+      inline def setPercentsign(value: String): Self = StObject.set(x, "%", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQ(value: String): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
+      inline def setQ(value: String): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUndefined: Self = StObject.set(x, "Q", js.undefined)
+      inline def setQUndefined: Self = StObject.set(x, "Q", js.undefined)
       
-      @scala.inline
-      def setR(value: String): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+      inline def setR(value: String): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
+      inline def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+      inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUUndefined: Self = StObject.set(x, "U", js.undefined)
+      inline def setUUndefined: Self = StObject.set(x, "U", js.undefined)
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "X", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "X", js.undefined)
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: String): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+      inline def setZ(value: String): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,17 +269,14 @@ object mod {
     }
     object Moment {
       
-      @scala.inline
-      def apply(strftime: String => String): Moment = {
+      inline def apply(strftime: String => String): Moment = {
         val __obj = js.Dynamic.literal(strftime = js.Any.fromFunction1(strftime))
         __obj.asInstanceOf[Moment]
       }
       
-      @scala.inline
-      implicit class MomentMutableBuilder[Self <: Moment] (val x: Self) extends AnyVal {
+      extension [Self <: Moment](x: Self) {
         
-        @scala.inline
-        def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
+        inline def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
       }
     }
   }
@@ -338,17 +289,14 @@ object mod {
     }
     object Moment {
       
-      @scala.inline
-      def apply(strftime: String => String): Moment = {
+      inline def apply(strftime: String => String): Moment = {
         val __obj = js.Dynamic.literal(strftime = js.Any.fromFunction1(strftime))
         __obj.asInstanceOf[Moment]
       }
       
-      @scala.inline
-      implicit class MomentMutableBuilder[Self <: Moment] (val x: Self) extends AnyVal {
+      extension [Self <: Moment](x: Self) {
         
-        @scala.inline
-        def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
+        inline def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
       }
     }
   }

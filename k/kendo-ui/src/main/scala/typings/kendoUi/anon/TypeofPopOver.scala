@@ -15,19 +15,15 @@ trait TypeofPopOver extends StObject {
 }
 object TypeofPopOver {
   
-  @scala.inline
-  def apply(extend: js.Object => PopOver, fn: PopOver): TypeofPopOver = {
+  inline def apply(extend: js.Object => PopOver, fn: PopOver): TypeofPopOver = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPopOver]
   }
   
-  @scala.inline
-  implicit class TypeofPopOverMutableBuilder[Self <: TypeofPopOver] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPopOver](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => PopOver): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => PopOver): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: PopOver): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PopOver): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

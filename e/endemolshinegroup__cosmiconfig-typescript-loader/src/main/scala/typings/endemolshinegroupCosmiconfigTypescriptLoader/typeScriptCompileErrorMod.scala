@@ -20,8 +20,7 @@ object typeScriptCompileErrorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromError(error: TypeScriptCompileErrorProps): TypeScriptCompileError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromError")(error.asInstanceOf[js.Any]).asInstanceOf[TypeScriptCompileError]
+    inline def fromError(error: TypeScriptCompileErrorProps): TypeScriptCompileError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromError")(error.asInstanceOf[js.Any]).asInstanceOf[TypeScriptCompileError]
   }
   
   @js.native
@@ -36,17 +35,14 @@ object typeScriptCompileErrorMod {
   }
   object TypeScriptCompileErrorProps {
     
-    @scala.inline
-    def apply(message: String): TypeScriptCompileErrorProps = {
+    inline def apply(message: String): TypeScriptCompileErrorProps = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeScriptCompileErrorProps]
     }
     
-    @scala.inline
-    implicit class TypeScriptCompileErrorPropsMutableBuilder[Self <: TypeScriptCompileErrorProps] (val x: Self) extends AnyVal {
+    extension [Self <: TypeScriptCompileErrorProps](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

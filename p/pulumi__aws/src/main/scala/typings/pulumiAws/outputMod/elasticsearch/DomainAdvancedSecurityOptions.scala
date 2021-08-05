@@ -23,28 +23,21 @@ trait DomainAdvancedSecurityOptions extends StObject {
 }
 object DomainAdvancedSecurityOptions {
   
-  @scala.inline
-  def apply(enabled: Boolean): DomainAdvancedSecurityOptions = {
+  inline def apply(enabled: Boolean): DomainAdvancedSecurityOptions = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainAdvancedSecurityOptions]
   }
   
-  @scala.inline
-  implicit class DomainAdvancedSecurityOptionsMutableBuilder[Self <: DomainAdvancedSecurityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainAdvancedSecurityOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "internalUserDatabaseEnabled", value.asInstanceOf[js.Any])
+    inline def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "internalUserDatabaseEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "internalUserDatabaseEnabled", js.undefined)
+    inline def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "internalUserDatabaseEnabled", js.undefined)
     
-    @scala.inline
-    def setMasterUserOptions(value: DomainAdvancedSecurityOptionsMasterUserOptions): Self = StObject.set(x, "masterUserOptions", value.asInstanceOf[js.Any])
+    inline def setMasterUserOptions(value: DomainAdvancedSecurityOptionsMasterUserOptions): Self = StObject.set(x, "masterUserOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserOptionsUndefined: Self = StObject.set(x, "masterUserOptions", js.undefined)
+    inline def setMasterUserOptionsUndefined: Self = StObject.set(x, "masterUserOptions", js.undefined)
   }
 }

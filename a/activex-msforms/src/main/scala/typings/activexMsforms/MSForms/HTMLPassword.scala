@@ -10,7 +10,7 @@ trait HTMLPassword extends StObject {
   
   var HTMLType: String
   
-  @JSName("MSForms.HTMLPassword_typekey")
+  /* private */ @JSName("MSForms.HTMLPassword_typekey")
   var MSFormsDotHTMLPassword_typekey: HTMLPassword
   
   var MaxLength: Double
@@ -21,8 +21,7 @@ trait HTMLPassword extends StObject {
 }
 object HTMLPassword {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HTMLName: String,
     HTMLType: String,
     MSFormsDotHTMLPassword_typekey: HTMLPassword,
@@ -35,25 +34,18 @@ object HTMLPassword {
     __obj.asInstanceOf[HTMLPassword]
   }
   
-  @scala.inline
-  implicit class HTMLPasswordMutableBuilder[Self <: HTMLPassword] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLPassword](x: Self) {
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
+    inline def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLPassword_typekey(value: HTMLPassword): Self = StObject.set(x, "MSForms.HTMLPassword_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLPassword_typekey(value: HTMLPassword): Self = StObject.set(x, "MSForms.HTMLPassword_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

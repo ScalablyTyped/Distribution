@@ -13,25 +13,19 @@ trait GatherNdInputs extends StObject {
 }
 object GatherNdInputs {
   
-  @scala.inline
-  def apply(): GatherNdInputs = {
+  inline def apply(): GatherNdInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatherNdInputs]
   }
   
-  @scala.inline
-  implicit class GatherNdInputsMutableBuilder[Self <: GatherNdInputs] (val x: Self) extends AnyVal {
+  extension [Self <: GatherNdInputs](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

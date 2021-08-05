@@ -10,16 +10,13 @@ trait EnumValuesInvalidFilterClause extends StObject {
 }
 object EnumValuesInvalidFilterClause {
   
-  @scala.inline
-  def apply(enumValues: InvalidFilterClause): EnumValuesInvalidFilterClause = {
+  inline def apply(enumValues: InvalidFilterClause): EnumValuesInvalidFilterClause = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesInvalidFilterClause]
   }
   
-  @scala.inline
-  implicit class EnumValuesInvalidFilterClauseMutableBuilder[Self <: EnumValuesInvalidFilterClause] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesInvalidFilterClause](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: InvalidFilterClause): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: InvalidFilterClause): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

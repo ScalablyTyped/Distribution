@@ -10,18 +10,18 @@ object environmentMod {
   @js.native
   class Environment () extends StObject {
     
-    var eGridDiv: js.Any = js.native
+    /* private */ var eGridDiv: js.Any = js.native
     
     def getSassVariable(theme: String, key: String): Double = js.native
     
     def getTheme(): String = js.native
     
-    var gridSize: js.Any = js.native
+    /* private */ var gridSize: js.Any = js.native
     
-    var iconSize: js.Any = js.native
+    /* private */ var iconSize: js.Any = js.native
     
     def loadSassVariables(): Unit = js.native
     
-    var sassVariables: js.Any = js.native
+    /* private */ var sassVariables: js.Any = js.native
   }
 }

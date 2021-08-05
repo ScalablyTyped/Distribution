@@ -55,43 +55,31 @@ trait SchemaBeaconAttachment extends StObject {
 }
 object SchemaBeaconAttachment {
   
-  @scala.inline
-  def apply(): SchemaBeaconAttachment = {
+  inline def apply(): SchemaBeaconAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBeaconAttachment]
   }
   
-  @scala.inline
-  implicit class SchemaBeaconAttachmentMutableBuilder[Self <: SchemaBeaconAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBeaconAttachment](x: Self) {
     
-    @scala.inline
-    def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
+    inline def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
+    inline def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
     
-    @scala.inline
-    def setCreationTimeMs(value: String): Self = StObject.set(x, "creationTimeMs", value.asInstanceOf[js.Any])
+    inline def setCreationTimeMs(value: String): Self = StObject.set(x, "creationTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeMsUndefined: Self = StObject.set(x, "creationTimeMs", js.undefined)
+    inline def setCreationTimeMsUndefined: Self = StObject.set(x, "creationTimeMs", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMaxDistanceMeters(value: Double): Self = StObject.set(x, "maxDistanceMeters", value.asInstanceOf[js.Any])
+    inline def setMaxDistanceMeters(value: Double): Self = StObject.set(x, "maxDistanceMeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDistanceMetersUndefined: Self = StObject.set(x, "maxDistanceMeters", js.undefined)
+    inline def setMaxDistanceMetersUndefined: Self = StObject.set(x, "maxDistanceMeters", js.undefined)
     
-    @scala.inline
-    def setNamespacedType(value: String): Self = StObject.set(x, "namespacedType", value.asInstanceOf[js.Any])
+    inline def setNamespacedType(value: String): Self = StObject.set(x, "namespacedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacedTypeUndefined: Self = StObject.set(x, "namespacedType", js.undefined)
+    inline def setNamespacedTypeUndefined: Self = StObject.set(x, "namespacedType", js.undefined)
   }
 }

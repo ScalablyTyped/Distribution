@@ -10,16 +10,13 @@ trait Destroyable extends StObject {
 }
 object Destroyable {
   
-  @scala.inline
-  def apply(destroy: () => js.Any): Destroyable = {
+  inline def apply(destroy: () => js.Any): Destroyable = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[Destroyable]
   }
   
-  @scala.inline
-  implicit class DestroyableMutableBuilder[Self <: Destroyable] (val x: Self) extends AnyVal {
+  extension [Self <: Destroyable](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

@@ -8,11 +8,9 @@ object onfidoSdkUiStrings {
   
   @js.native
   sealed trait standard extends StObject
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait video extends StObject
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  inline def video: video = "video".asInstanceOf[video]
 }

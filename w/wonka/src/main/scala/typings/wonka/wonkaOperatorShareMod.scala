@@ -11,6 +11,5 @@ object wonkaOperatorShareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def share[A](source: Source[A]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("share")(source.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
+  inline def share[A](source: Source[A]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("share")(source.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
 }

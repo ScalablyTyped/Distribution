@@ -15,23 +15,18 @@ trait Dir extends StObject {
 }
 object Dir {
   
-  @scala.inline
-  def apply(dir: String, srcDir: String, `type`: ProjectType): Dir = {
+  inline def apply(dir: String, srcDir: String, `type`: ProjectType): Dir = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], srcDir = srcDir.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dir]
   }
   
-  @scala.inline
-  implicit class DirMutableBuilder[Self <: Dir] (val x: Self) extends AnyVal {
+  extension [Self <: Dir](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcDir(value: String): Self = StObject.set(x, "srcDir", value.asInstanceOf[js.Any])
+    inline def setSrcDir(value: String): Self = StObject.set(x, "srcDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

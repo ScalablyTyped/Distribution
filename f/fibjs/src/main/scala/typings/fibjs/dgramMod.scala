@@ -21,12 +21,8 @@ object dgramMod {
     extends StObject
        with ClassDgramSocket
   
-  @scala.inline
-  def createSocket(opts: js.Object): ClassDgramSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(opts.asInstanceOf[js.Any]).asInstanceOf[ClassDgramSocket]
-  @scala.inline
-  def createSocket(opts: js.Object, callback: js.Function): ClassDgramSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClassDgramSocket]
-  @scala.inline
-  def createSocket(`type`: String): ClassDgramSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any]).asInstanceOf[ClassDgramSocket]
-  @scala.inline
-  def createSocket(`type`: String, callback: js.Function): ClassDgramSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClassDgramSocket]
+  inline def createSocket(opts: js.Object): ClassDgramSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(opts.asInstanceOf[js.Any]).asInstanceOf[ClassDgramSocket]
+  inline def createSocket(opts: js.Object, callback: js.Function): ClassDgramSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClassDgramSocket]
+  inline def createSocket(`type`: String): ClassDgramSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any]).asInstanceOf[ClassDgramSocket]
+  inline def createSocket(`type`: String, callback: js.Function): ClassDgramSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClassDgramSocket]
 }

@@ -14,8 +14,7 @@ trait TypeQuery
 }
 object TypeQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object TypeQuery {
     __obj.asInstanceOf[TypeQuery]
   }
   
-  @scala.inline
-  implicit class TypeQueryMutableBuilder[Self <: TypeQuery] (val x: Self) extends AnyVal {
+  extension [Self <: TypeQuery](x: Self) {
     
-    @scala.inline
-    def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (TypeQuery, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (TypeQuery, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

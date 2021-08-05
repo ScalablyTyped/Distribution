@@ -60,8 +60,7 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clipRows: (Double, Double) => Range,
     collapseRows: () => Range,
     compare: (Double, Double) => Double,
@@ -93,85 +92,58 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setClipRows(value: (Double, Double) => Range): Self = StObject.set(x, "clipRows", js.Any.fromFunction2(value))
+    inline def setClipRows(value: (Double, Double) => Range): Self = StObject.set(x, "clipRows", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollapseRows(value: () => Range): Self = StObject.set(x, "collapseRows", js.Any.fromFunction0(value))
+    inline def setCollapseRows(value: () => Range): Self = StObject.set(x, "collapseRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompare(value: (Double, Double) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (Double, Double) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareEnd(value: (Double, Double) => Double): Self = StObject.set(x, "compareEnd", js.Any.fromFunction2(value))
+    inline def setCompareEnd(value: (Double, Double) => Double): Self = StObject.set(x, "compareEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareInside(value: (Double, Double) => Double): Self = StObject.set(x, "compareInside", js.Any.fromFunction2(value))
+    inline def setCompareInside(value: (Double, Double) => Double): Self = StObject.set(x, "compareInside", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComparePoint(value: Point => Double): Self = StObject.set(x, "comparePoint", js.Any.fromFunction1(value))
+    inline def setComparePoint(value: Point => Double): Self = StObject.set(x, "comparePoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompareRange(value: Range => Double): Self = StObject.set(x, "compareRange", js.Any.fromFunction1(value))
+    inline def setCompareRange(value: Range => Double): Self = StObject.set(x, "compareRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompareStart(value: (Double, Double) => Double): Self = StObject.set(x, "compareStart", js.Any.fromFunction2(value))
+    inline def setCompareStart(value: (Double, Double) => Double): Self = StObject.set(x, "compareStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContainsRange(value: Range => Boolean): Self = StObject.set(x, "containsRange", js.Any.fromFunction1(value))
+    inline def setContainsRange(value: Range => Boolean): Self = StObject.set(x, "containsRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtend(value: (Double, Double) => Range): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    inline def setExtend(value: (Double, Double) => Range): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInside(value: (Double, Double) => Boolean): Self = StObject.set(x, "inside", js.Any.fromFunction2(value))
+    inline def setInside(value: (Double, Double) => Boolean): Self = StObject.set(x, "inside", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsideEnd(value: (Double, Double) => Boolean): Self = StObject.set(x, "insideEnd", js.Any.fromFunction2(value))
+    inline def setInsideEnd(value: (Double, Double) => Boolean): Self = StObject.set(x, "insideEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsideStart(value: (Double, Double) => Boolean): Self = StObject.set(x, "insideStart", js.Any.fromFunction2(value))
+    inline def setInsideStart(value: (Double, Double) => Boolean): Self = StObject.set(x, "insideStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIntersects(value: Range => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+    inline def setIntersects(value: Range => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEnd(value: (Double, Double) => Boolean): Self = StObject.set(x, "isEnd", js.Any.fromFunction2(value))
+    inline def setIsEnd(value: (Double, Double) => Boolean): Self = StObject.set(x, "isEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsEqual(value: Range => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: Range => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMultiLine(value: () => Boolean): Self = StObject.set(x, "isMultiLine", js.Any.fromFunction0(value))
+    inline def setIsMultiLine(value: () => Boolean): Self = StObject.set(x, "isMultiLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStart(value: (Double, Double) => Boolean): Self = StObject.set(x, "isStart", js.Any.fromFunction2(value))
+    inline def setIsStart(value: (Double, Double) => Boolean): Self = StObject.set(x, "isStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveBy(value: (Double, Double) => Unit): Self = StObject.set(x, "moveBy", js.Any.fromFunction2(value))
+    inline def setMoveBy(value: (Double, Double) => Unit): Self = StObject.set(x, "moveBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetEnd(value: (Double, Double) => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction2(value))
+    inline def setSetEnd(value: (Double, Double) => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetStart(value: (Double, Double) => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction2(value))
+    inline def setSetStart(value: (Double, Double) => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToScreenRange(value: EditSession => Range): Self = StObject.set(x, "toScreenRange", js.Any.fromFunction1(value))
+    inline def setToScreenRange(value: EditSession => Range): Self = StObject.set(x, "toScreenRange", js.Any.fromFunction1(value))
   }
 }

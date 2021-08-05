@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WordcloudSpiral extends StObject
 object WordcloudSpiral {
   
-  @scala.inline
-  def archimedian: typings.vegaTypings.vegaTypingsStrings.archimedian = "archimedian".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.archimedian]
+  inline def archimedian: typings.vegaTypings.vegaTypingsStrings.archimedian = "archimedian".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.archimedian]
   
-  @scala.inline
-  def rectangular: typings.vegaTypings.vegaTypingsStrings.rectangular = "rectangular".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rectangular]
+  inline def rectangular: typings.vegaTypings.vegaTypingsStrings.rectangular = "rectangular".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rectangular]
 }

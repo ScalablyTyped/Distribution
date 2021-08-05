@@ -10,9 +10,7 @@ object kex {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resetdebug(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resetdebug")().asInstanceOf[Double]
+  inline def resetdebug(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resetdebug")().asInstanceOf[Double]
   
-  @scala.inline
-  def setdebug(lval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setdebug")(lval.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def setdebug(lval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setdebug")(lval.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -21,8 +21,7 @@ object stringMod {
       *
       * @returns `-1` if `a < b`, else `1` if `a > b`, else `0`.
       */
-    @scala.inline
-    def cmp(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def cmp(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the indices of characters in a source text.
@@ -44,10 +43,8 @@ object stringMod {
       *
       * Characters are matched using strict `===` equality.
       */
-    @scala.inline
-    def findIndices(source: String, query: String): js.Array[Double] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndices")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | Null]
-    @scala.inline
-    def findIndices(source: String, query: String, start: Double): js.Array[Double] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndices")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | Null]
+    inline def findIndices(source: String, query: String): js.Array[Double] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndices")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | Null]
+    inline def findIndices(source: String, query: String, start: Double): js.Array[Double] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndices")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | Null]
     
     /**
       * Highlight the matched characters of a source text.
@@ -61,8 +58,7 @@ object stringMod {
       *
       * @returns An array of unmatched and highlighted chunks.
       */
-    @scala.inline
-    def highlight[T](source: String, indices: js.Array[Double], fn: js.Function1[/* chunk */ String, T]): js.Array[String | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(source.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | T]]
+    inline def highlight[T](source: String, indices: js.Array[Double], fn: js.Function1[/* chunk */ String, T]): js.Array[String | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(source.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | T]]
     
     /**
       * A string matcher which uses a sum-of-deltas algorithm.
@@ -87,10 +83,8 @@ object stringMod {
       * of matched characters are preferred, while fragmented matches are
       * penalized.
       */
-    @scala.inline
-    def matchSumOfDeltas(source: String, query: String): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfDeltas")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
-    @scala.inline
-    def matchSumOfDeltas(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfDeltas")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
+    inline def matchSumOfDeltas(source: String, query: String): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfDeltas")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
+    inline def matchSumOfDeltas(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfDeltas")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
     
     /**
       * A string matcher which uses a sum-of-squares algorithm.
@@ -115,10 +109,8 @@ object stringMod {
       * that early and consecutive character matches are preferred, while
       * late matches are heavily penalized.
       */
-    @scala.inline
-    def matchSumOfSquares(source: String, query: String): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
-    @scala.inline
-    def matchSumOfSquares(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
+    inline def matchSumOfSquares(source: String, query: String): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
+    inline def matchSumOfSquares(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
     
     /**
       * The result of a string match function.
@@ -142,23 +134,18 @@ object stringMod {
     }
     object IMatchResult {
       
-      @scala.inline
-      def apply(indices: js.Array[Double], score: Double): IMatchResult = {
+      inline def apply(indices: js.Array[Double], score: Double): IMatchResult = {
         val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
         __obj.asInstanceOf[IMatchResult]
       }
       
-      @scala.inline
-      implicit class IMatchResultMutableBuilder[Self <: IMatchResult] (val x: Self) extends AnyVal {
+      extension [Self <: IMatchResult](x: Self) {
         
-        @scala.inline
-        def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+        inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
         
-        @scala.inline
-        def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+        inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       }
     }
   }

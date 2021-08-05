@@ -14,22 +14,17 @@ trait OID extends StObject {
 }
 object OID {
   
-  @scala.inline
-  def apply(FriendlyName: String, Name: CAPICOM_OID, Value: String): OID = {
+  inline def apply(FriendlyName: String, Name: CAPICOM_OID, Value: String): OID = {
     val __obj = js.Dynamic.literal(FriendlyName = FriendlyName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OID]
   }
   
-  @scala.inline
-  implicit class OIDMutableBuilder[Self <: OID] (val x: Self) extends AnyVal {
+  extension [Self <: OID](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: CAPICOM_OID): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CAPICOM_OID): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

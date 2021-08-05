@@ -258,23 +258,17 @@ object Connectivity {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getConnectionProfiles(): IVectorView[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionProfiles")().asInstanceOf[IVectorView[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile]]
+    inline def getConnectionProfiles(): IVectorView[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionProfiles")().asInstanceOf[IVectorView[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile]]
     
-    @scala.inline
-    def getHostNames(): IVectorView[typings.winrt.Windows.Networking.HostName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostNames")().asInstanceOf[IVectorView[typings.winrt.Windows.Networking.HostName]]
+    inline def getHostNames(): IVectorView[typings.winrt.Windows.Networking.HostName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostNames")().asInstanceOf[IVectorView[typings.winrt.Windows.Networking.HostName]]
     
-    @scala.inline
-    def getInternetConnectionProfile(): typings.winrt.Windows.Networking.Connectivity.ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetConnectionProfile")().asInstanceOf[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile]
+    inline def getInternetConnectionProfile(): typings.winrt.Windows.Networking.Connectivity.ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetConnectionProfile")().asInstanceOf[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile]
     
-    @scala.inline
-    def getLanIdentifiers(): IVectorView[typings.winrt.Windows.Networking.Connectivity.LanIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanIdentifiers")().asInstanceOf[IVectorView[typings.winrt.Windows.Networking.Connectivity.LanIdentifier]]
+    inline def getLanIdentifiers(): IVectorView[typings.winrt.Windows.Networking.Connectivity.LanIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanIdentifiers")().asInstanceOf[IVectorView[typings.winrt.Windows.Networking.Connectivity.LanIdentifier]]
     
-    @scala.inline
-    def getProxyConfigurationAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyConfigurationAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration]]
+    inline def getProxyConfigurationAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyConfigurationAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration]]
     
-    @scala.inline
-    def getSortedEndpointPairs(
+    inline def getSortedEndpointPairs(
       destinationList: IIterable[typings.winrt.Windows.Networking.EndpointPair],
       sortOptions: typings.winrt.Windows.Networking.HostNameSortOptions
     ): IVectorView[typings.winrt.Windows.Networking.EndpointPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEndpointPairs")(destinationList.asInstanceOf[js.Any], sortOptions.asInstanceOf[js.Any])).asInstanceOf[IVectorView[typings.winrt.Windows.Networking.EndpointPair]]
@@ -282,8 +276,7 @@ object Connectivity {
     @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.onnetworkstatuschanged")
     @js.native
     def onnetworkstatuschanged: js.Any = js.native
-    @scala.inline
-    def onnetworkstatuschanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
+    inline def onnetworkstatuschanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Networking.Connectivity.NetworkItem")

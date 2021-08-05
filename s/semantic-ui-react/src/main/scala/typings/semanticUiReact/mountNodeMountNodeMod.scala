@@ -23,8 +23,7 @@ object mountNodeMountNodeMod {
        with /* key */ StringDictionary[js.Any]
   object MountNodeProps {
     
-    @scala.inline
-    def apply(): MountNodeProps = {
+    inline def apply(): MountNodeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MountNodeProps]
     }
@@ -40,32 +39,24 @@ object mountNodeMountNodeMod {
   }
   object StrictMountNodeProps {
     
-    @scala.inline
-    def apply(): StrictMountNodeProps = {
+    inline def apply(): StrictMountNodeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictMountNodeProps]
     }
     
-    @scala.inline
-    implicit class StrictMountNodePropsMutableBuilder[Self <: StrictMountNodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictMountNodeProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setNode(value: HTMLElement | Ref[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLElement | Ref[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
+      inline def setNodeFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNodeNull: Self = StObject.set(x, "node", null)
+      inline def setNodeNull: Self = StObject.set(x, "node", null)
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
   }
 }

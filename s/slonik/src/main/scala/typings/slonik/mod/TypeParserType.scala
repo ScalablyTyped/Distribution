@@ -15,19 +15,15 @@ trait TypeParserType[T] extends StObject {
 }
 object TypeParserType {
   
-  @scala.inline
-  def apply[T](name: String, parse: String => T): TypeParserType[T] = {
+  inline def apply[T](name: String, parse: String => T): TypeParserType[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[TypeParserType[T]]
   }
   
-  @scala.inline
-  implicit class TypeParserTypeMutableBuilder[Self <: TypeParserType[?], T] (val x: Self & TypeParserType[T]) extends AnyVal {
+  extension [Self <: TypeParserType[?], T](x: Self & TypeParserType[T]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse(value: String => T): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => T): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

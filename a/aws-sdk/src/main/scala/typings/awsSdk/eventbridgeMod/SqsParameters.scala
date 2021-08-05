@@ -13,19 +13,15 @@ trait SqsParameters extends StObject {
 }
 object SqsParameters {
   
-  @scala.inline
-  def apply(): SqsParameters = {
+  inline def apply(): SqsParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqsParameters]
   }
   
-  @scala.inline
-  implicit class SqsParametersMutableBuilder[Self <: SqsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SqsParameters](x: Self) {
     
-    @scala.inline
-    def setMessageGroupId(value: MessageGroupId): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
+    inline def setMessageGroupId(value: MessageGroupId): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
+    inline def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
   }
 }

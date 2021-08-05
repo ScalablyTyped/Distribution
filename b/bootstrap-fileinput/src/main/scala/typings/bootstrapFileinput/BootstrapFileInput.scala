@@ -191,221 +191,150 @@ object BootstrapFileInput {
   }
   object FileActionSettings {
     
-    @scala.inline
-    def apply(): FileActionSettings = {
+    inline def apply(): FileActionSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileActionSettings]
     }
     
-    @scala.inline
-    implicit class FileActionSettingsMutableBuilder[Self <: FileActionSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FileActionSettings](x: Self) {
       
-      @scala.inline
-      def setDownloadClass(value: String): Self = StObject.set(x, "downloadClass", value.asInstanceOf[js.Any])
+      inline def setDownloadClass(value: String): Self = StObject.set(x, "downloadClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadClassUndefined: Self = StObject.set(x, "downloadClass", js.undefined)
+      inline def setDownloadClassUndefined: Self = StObject.set(x, "downloadClass", js.undefined)
       
-      @scala.inline
-      def setDownloadIcon(value: String): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
+      inline def setDownloadIcon(value: String): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadIconUndefined: Self = StObject.set(x, "downloadIcon", js.undefined)
+      inline def setDownloadIconUndefined: Self = StObject.set(x, "downloadIcon", js.undefined)
       
-      @scala.inline
-      def setDownloadTitle(value: String): Self = StObject.set(x, "downloadTitle", value.asInstanceOf[js.Any])
+      inline def setDownloadTitle(value: String): Self = StObject.set(x, "downloadTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadTitleUndefined: Self = StObject.set(x, "downloadTitle", js.undefined)
+      inline def setDownloadTitleUndefined: Self = StObject.set(x, "downloadTitle", js.undefined)
       
-      @scala.inline
-      def setDragClass(value: String): Self = StObject.set(x, "dragClass", value.asInstanceOf[js.Any])
+      inline def setDragClass(value: String): Self = StObject.set(x, "dragClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragClassUndefined: Self = StObject.set(x, "dragClass", js.undefined)
+      inline def setDragClassUndefined: Self = StObject.set(x, "dragClass", js.undefined)
       
-      @scala.inline
-      def setDragIcon(value: String): Self = StObject.set(x, "dragIcon", value.asInstanceOf[js.Any])
+      inline def setDragIcon(value: String): Self = StObject.set(x, "dragIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragIconUndefined: Self = StObject.set(x, "dragIcon", js.undefined)
+      inline def setDragIconUndefined: Self = StObject.set(x, "dragIcon", js.undefined)
       
-      @scala.inline
-      def setDragSettings(value: js.Object): Self = StObject.set(x, "dragSettings", value.asInstanceOf[js.Any])
+      inline def setDragSettings(value: js.Object): Self = StObject.set(x, "dragSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragSettingsUndefined: Self = StObject.set(x, "dragSettings", js.undefined)
+      inline def setDragSettingsUndefined: Self = StObject.set(x, "dragSettings", js.undefined)
       
-      @scala.inline
-      def setDragTitle(value: String): Self = StObject.set(x, "dragTitle", value.asInstanceOf[js.Any])
+      inline def setDragTitle(value: String): Self = StObject.set(x, "dragTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragTitleUndefined: Self = StObject.set(x, "dragTitle", js.undefined)
+      inline def setDragTitleUndefined: Self = StObject.set(x, "dragTitle", js.undefined)
       
-      @scala.inline
-      def setIndicatorError(value: String): Self = StObject.set(x, "indicatorError", value.asInstanceOf[js.Any])
+      inline def setIndicatorError(value: String): Self = StObject.set(x, "indicatorError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorErrorTitle(value: String): Self = StObject.set(x, "indicatorErrorTitle", value.asInstanceOf[js.Any])
+      inline def setIndicatorErrorTitle(value: String): Self = StObject.set(x, "indicatorErrorTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorErrorTitleUndefined: Self = StObject.set(x, "indicatorErrorTitle", js.undefined)
+      inline def setIndicatorErrorTitleUndefined: Self = StObject.set(x, "indicatorErrorTitle", js.undefined)
       
-      @scala.inline
-      def setIndicatorErrorUndefined: Self = StObject.set(x, "indicatorError", js.undefined)
+      inline def setIndicatorErrorUndefined: Self = StObject.set(x, "indicatorError", js.undefined)
       
-      @scala.inline
-      def setIndicatorLoading(value: String): Self = StObject.set(x, "indicatorLoading", value.asInstanceOf[js.Any])
+      inline def setIndicatorLoading(value: String): Self = StObject.set(x, "indicatorLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorLoadingTitle(value: String): Self = StObject.set(x, "indicatorLoadingTitle", value.asInstanceOf[js.Any])
+      inline def setIndicatorLoadingTitle(value: String): Self = StObject.set(x, "indicatorLoadingTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorLoadingTitleUndefined: Self = StObject.set(x, "indicatorLoadingTitle", js.undefined)
+      inline def setIndicatorLoadingTitleUndefined: Self = StObject.set(x, "indicatorLoadingTitle", js.undefined)
       
-      @scala.inline
-      def setIndicatorLoadingUndefined: Self = StObject.set(x, "indicatorLoading", js.undefined)
+      inline def setIndicatorLoadingUndefined: Self = StObject.set(x, "indicatorLoading", js.undefined)
       
-      @scala.inline
-      def setIndicatorNew(value: String): Self = StObject.set(x, "indicatorNew", value.asInstanceOf[js.Any])
+      inline def setIndicatorNew(value: String): Self = StObject.set(x, "indicatorNew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorNewTitle(value: String): Self = StObject.set(x, "indicatorNewTitle", value.asInstanceOf[js.Any])
+      inline def setIndicatorNewTitle(value: String): Self = StObject.set(x, "indicatorNewTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorNewTitleUndefined: Self = StObject.set(x, "indicatorNewTitle", js.undefined)
+      inline def setIndicatorNewTitleUndefined: Self = StObject.set(x, "indicatorNewTitle", js.undefined)
       
-      @scala.inline
-      def setIndicatorNewUndefined: Self = StObject.set(x, "indicatorNew", js.undefined)
+      inline def setIndicatorNewUndefined: Self = StObject.set(x, "indicatorNew", js.undefined)
       
-      @scala.inline
-      def setIndicatorPaused(value: String): Self = StObject.set(x, "indicatorPaused", value.asInstanceOf[js.Any])
+      inline def setIndicatorPaused(value: String): Self = StObject.set(x, "indicatorPaused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorPausedTitle(value: String): Self = StObject.set(x, "indicatorPausedTitle", value.asInstanceOf[js.Any])
+      inline def setIndicatorPausedTitle(value: String): Self = StObject.set(x, "indicatorPausedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorPausedTitleUndefined: Self = StObject.set(x, "indicatorPausedTitle", js.undefined)
+      inline def setIndicatorPausedTitleUndefined: Self = StObject.set(x, "indicatorPausedTitle", js.undefined)
       
-      @scala.inline
-      def setIndicatorPausedUndefined: Self = StObject.set(x, "indicatorPaused", js.undefined)
+      inline def setIndicatorPausedUndefined: Self = StObject.set(x, "indicatorPaused", js.undefined)
       
-      @scala.inline
-      def setIndicatorSuccess(value: String): Self = StObject.set(x, "indicatorSuccess", value.asInstanceOf[js.Any])
+      inline def setIndicatorSuccess(value: String): Self = StObject.set(x, "indicatorSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorSuccessTitle(value: String): Self = StObject.set(x, "indicatorSuccessTitle", value.asInstanceOf[js.Any])
+      inline def setIndicatorSuccessTitle(value: String): Self = StObject.set(x, "indicatorSuccessTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorSuccessTitleUndefined: Self = StObject.set(x, "indicatorSuccessTitle", js.undefined)
+      inline def setIndicatorSuccessTitleUndefined: Self = StObject.set(x, "indicatorSuccessTitle", js.undefined)
       
-      @scala.inline
-      def setIndicatorSuccessUndefined: Self = StObject.set(x, "indicatorSuccess", js.undefined)
+      inline def setIndicatorSuccessUndefined: Self = StObject.set(x, "indicatorSuccess", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: String): Self = StObject.set(x, "removeClass", value.asInstanceOf[js.Any])
+      inline def setRemoveClass(value: String): Self = StObject.set(x, "removeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setRemoveIcon(value: String): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(value: String): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      @scala.inline
-      def setRemoveTitle(value: String): Self = StObject.set(x, "removeTitle", value.asInstanceOf[js.Any])
+      inline def setRemoveTitle(value: String): Self = StObject.set(x, "removeTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveTitleUndefined: Self = StObject.set(x, "removeTitle", js.undefined)
+      inline def setRemoveTitleUndefined: Self = StObject.set(x, "removeTitle", js.undefined)
       
-      @scala.inline
-      def setShowDownload(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showDownload", value.asInstanceOf[js.Any])
+      inline def setShowDownload(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showDownload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDownloadFunction0(value: () => Boolean): Self = StObject.set(x, "showDownload", js.Any.fromFunction0(value))
+      inline def setShowDownloadFunction0(value: () => Boolean): Self = StObject.set(x, "showDownload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowDownloadUndefined: Self = StObject.set(x, "showDownload", js.undefined)
+      inline def setShowDownloadUndefined: Self = StObject.set(x, "showDownload", js.undefined)
       
-      @scala.inline
-      def setShowDrag(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showDrag", value.asInstanceOf[js.Any])
+      inline def setShowDrag(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDragFunction0(value: () => Boolean): Self = StObject.set(x, "showDrag", js.Any.fromFunction0(value))
+      inline def setShowDragFunction0(value: () => Boolean): Self = StObject.set(x, "showDrag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowDragUndefined: Self = StObject.set(x, "showDrag", js.undefined)
+      inline def setShowDragUndefined: Self = StObject.set(x, "showDrag", js.undefined)
       
-      @scala.inline
-      def setShowRemove(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showRemove", value.asInstanceOf[js.Any])
+      inline def setShowRemove(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRemoveFunction0(value: () => Boolean): Self = StObject.set(x, "showRemove", js.Any.fromFunction0(value))
+      inline def setShowRemoveFunction0(value: () => Boolean): Self = StObject.set(x, "showRemove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowRemoveUndefined: Self = StObject.set(x, "showRemove", js.undefined)
+      inline def setShowRemoveUndefined: Self = StObject.set(x, "showRemove", js.undefined)
       
-      @scala.inline
-      def setShowUpload(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showUpload", value.asInstanceOf[js.Any])
+      inline def setShowUpload(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUploadFunction0(value: () => Boolean): Self = StObject.set(x, "showUpload", js.Any.fromFunction0(value))
+      inline def setShowUploadFunction0(value: () => Boolean): Self = StObject.set(x, "showUpload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowUploadUndefined: Self = StObject.set(x, "showUpload", js.undefined)
+      inline def setShowUploadUndefined: Self = StObject.set(x, "showUpload", js.undefined)
       
-      @scala.inline
-      def setShowZoom(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
+      inline def setShowZoom(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowZoomFunction0(value: () => Boolean): Self = StObject.set(x, "showZoom", js.Any.fromFunction0(value))
+      inline def setShowZoomFunction0(value: () => Boolean): Self = StObject.set(x, "showZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
+      inline def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
       
-      @scala.inline
-      def setUploadClass(value: String): Self = StObject.set(x, "uploadClass", value.asInstanceOf[js.Any])
+      inline def setUploadClass(value: String): Self = StObject.set(x, "uploadClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadClassUndefined: Self = StObject.set(x, "uploadClass", js.undefined)
+      inline def setUploadClassUndefined: Self = StObject.set(x, "uploadClass", js.undefined)
       
-      @scala.inline
-      def setUploadIcon(value: String): Self = StObject.set(x, "uploadIcon", value.asInstanceOf[js.Any])
+      inline def setUploadIcon(value: String): Self = StObject.set(x, "uploadIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIconUndefined: Self = StObject.set(x, "uploadIcon", js.undefined)
+      inline def setUploadIconUndefined: Self = StObject.set(x, "uploadIcon", js.undefined)
       
-      @scala.inline
-      def setUploadRetryIcon(value: String): Self = StObject.set(x, "uploadRetryIcon", value.asInstanceOf[js.Any])
+      inline def setUploadRetryIcon(value: String): Self = StObject.set(x, "uploadRetryIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadRetryIconUndefined: Self = StObject.set(x, "uploadRetryIcon", js.undefined)
+      inline def setUploadRetryIconUndefined: Self = StObject.set(x, "uploadRetryIcon", js.undefined)
       
-      @scala.inline
-      def setUploadTitle(value: String): Self = StObject.set(x, "uploadTitle", value.asInstanceOf[js.Any])
+      inline def setUploadTitle(value: String): Self = StObject.set(x, "uploadTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadTitleUndefined: Self = StObject.set(x, "uploadTitle", js.undefined)
+      inline def setUploadTitleUndefined: Self = StObject.set(x, "uploadTitle", js.undefined)
       
-      @scala.inline
-      def setZoomClass(value: String): Self = StObject.set(x, "zoomClass", value.asInstanceOf[js.Any])
+      inline def setZoomClass(value: String): Self = StObject.set(x, "zoomClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomClassUndefined: Self = StObject.set(x, "zoomClass", js.undefined)
+      inline def setZoomClassUndefined: Self = StObject.set(x, "zoomClass", js.undefined)
       
-      @scala.inline
-      def setZoomIcon(value: String): Self = StObject.set(x, "zoomIcon", value.asInstanceOf[js.Any])
+      inline def setZoomIcon(value: String): Self = StObject.set(x, "zoomIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomIconUndefined: Self = StObject.set(x, "zoomIcon", js.undefined)
+      inline def setZoomIconUndefined: Self = StObject.set(x, "zoomIcon", js.undefined)
       
-      @scala.inline
-      def setZoomTitle(value: String): Self = StObject.set(x, "zoomTitle", value.asInstanceOf[js.Any])
+      inline def setZoomTitle(value: String): Self = StObject.set(x, "zoomTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomTitleUndefined: Self = StObject.set(x, "zoomTitle", js.undefined)
+      inline def setZoomTitleUndefined: Self = StObject.set(x, "zoomTitle", js.undefined)
     }
   }
   
@@ -1293,775 +1222,520 @@ object BootstrapFileInput {
   }
   object FileInputOptions {
     
-    @scala.inline
-    def apply(): FileInputOptions = {
+    inline def apply(): FileInputOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileInputOptions]
     }
     
-    @scala.inline
-    implicit class FileInputOptionsMutableBuilder[Self <: FileInputOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileInputOptions](x: Self) {
       
-      @scala.inline
-      def setAjaxDeleteSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxDeleteSettings", value.asInstanceOf[js.Any])
+      inline def setAjaxDeleteSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxDeleteSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxDeleteSettingsUndefined: Self = StObject.set(x, "ajaxDeleteSettings", js.undefined)
+      inline def setAjaxDeleteSettingsUndefined: Self = StObject.set(x, "ajaxDeleteSettings", js.undefined)
       
-      @scala.inline
-      def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
+      inline def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxSettingsUndefined: Self = StObject.set(x, "ajaxSettings", js.undefined)
+      inline def setAjaxSettingsUndefined: Self = StObject.set(x, "ajaxSettings", js.undefined)
       
-      @scala.inline
-      def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
+      inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
+      inline def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
       
-      @scala.inline
-      def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedFileTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedFileTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedFileTypesUndefined: Self = StObject.set(x, "allowedFileTypes", js.undefined)
+      inline def setAllowedFileTypesUndefined: Self = StObject.set(x, "allowedFileTypes", js.undefined)
       
-      @scala.inline
-      def setAllowedFileTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedFileTypes", js.Array(value :_*))
+      inline def setAllowedFileTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedFileTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedPreviewMimeTypes(value: js.Array[String]): Self = StObject.set(x, "allowedPreviewMimeTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedPreviewMimeTypes(value: js.Array[String]): Self = StObject.set(x, "allowedPreviewMimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedPreviewMimeTypesUndefined: Self = StObject.set(x, "allowedPreviewMimeTypes", js.undefined)
+      inline def setAllowedPreviewMimeTypesUndefined: Self = StObject.set(x, "allowedPreviewMimeTypes", js.undefined)
       
-      @scala.inline
-      def setAllowedPreviewMimeTypesVarargs(value: String*): Self = StObject.set(x, "allowedPreviewMimeTypes", js.Array(value :_*))
+      inline def setAllowedPreviewMimeTypesVarargs(value: String*): Self = StObject.set(x, "allowedPreviewMimeTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedPreviewTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = StObject.set(x, "allowedPreviewTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedPreviewTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = StObject.set(x, "allowedPreviewTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedPreviewTypesUndefined: Self = StObject.set(x, "allowedPreviewTypes", js.undefined)
+      inline def setAllowedPreviewTypesUndefined: Self = StObject.set(x, "allowedPreviewTypes", js.undefined)
       
-      @scala.inline
-      def setAllowedPreviewTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedPreviewTypes", js.Array(value :_*))
+      inline def setAllowedPreviewTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedPreviewTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setAutoReplace(value: Boolean): Self = StObject.set(x, "autoReplace", value.asInstanceOf[js.Any])
+      inline def setAutoReplace(value: Boolean): Self = StObject.set(x, "autoReplace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoReplaceUndefined: Self = StObject.set(x, "autoReplace", js.undefined)
+      inline def setAutoReplaceUndefined: Self = StObject.set(x, "autoReplace", js.undefined)
       
-      @scala.inline
-      def setBrowseClass(value: String): Self = StObject.set(x, "browseClass", value.asInstanceOf[js.Any])
+      inline def setBrowseClass(value: String): Self = StObject.set(x, "browseClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowseClassUndefined: Self = StObject.set(x, "browseClass", js.undefined)
+      inline def setBrowseClassUndefined: Self = StObject.set(x, "browseClass", js.undefined)
       
-      @scala.inline
-      def setBrowseIcon(value: String): Self = StObject.set(x, "browseIcon", value.asInstanceOf[js.Any])
+      inline def setBrowseIcon(value: String): Self = StObject.set(x, "browseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowseIconUndefined: Self = StObject.set(x, "browseIcon", js.undefined)
+      inline def setBrowseIconUndefined: Self = StObject.set(x, "browseIcon", js.undefined)
       
-      @scala.inline
-      def setBrowseLabel(value: String): Self = StObject.set(x, "browseLabel", value.asInstanceOf[js.Any])
+      inline def setBrowseLabel(value: String): Self = StObject.set(x, "browseLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowseLabelUndefined: Self = StObject.set(x, "browseLabel", js.undefined)
+      inline def setBrowseLabelUndefined: Self = StObject.set(x, "browseLabel", js.undefined)
       
-      @scala.inline
-      def setButtonLabelClass(value: String): Self = StObject.set(x, "buttonLabelClass", value.asInstanceOf[js.Any])
+      inline def setButtonLabelClass(value: String): Self = StObject.set(x, "buttonLabelClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonLabelClassUndefined: Self = StObject.set(x, "buttonLabelClass", js.undefined)
+      inline def setButtonLabelClassUndefined: Self = StObject.set(x, "buttonLabelClass", js.undefined)
       
-      @scala.inline
-      def setCaptionClass(value: String): Self = StObject.set(x, "captionClass", value.asInstanceOf[js.Any])
+      inline def setCaptionClass(value: String): Self = StObject.set(x, "captionClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionClassUndefined: Self = StObject.set(x, "captionClass", js.undefined)
+      inline def setCaptionClassUndefined: Self = StObject.set(x, "captionClass", js.undefined)
       
-      @scala.inline
-      def setCustomLayoutTags(value: js.Object): Self = StObject.set(x, "customLayoutTags", value.asInstanceOf[js.Any])
+      inline def setCustomLayoutTags(value: js.Object): Self = StObject.set(x, "customLayoutTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomLayoutTagsUndefined: Self = StObject.set(x, "customLayoutTags", js.undefined)
+      inline def setCustomLayoutTagsUndefined: Self = StObject.set(x, "customLayoutTags", js.undefined)
       
-      @scala.inline
-      def setCustomPreviewTags(value: js.Object): Self = StObject.set(x, "customPreviewTags", value.asInstanceOf[js.Any])
+      inline def setCustomPreviewTags(value: js.Object): Self = StObject.set(x, "customPreviewTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomPreviewTagsUndefined: Self = StObject.set(x, "customPreviewTags", js.undefined)
+      inline def setCustomPreviewTagsUndefined: Self = StObject.set(x, "customPreviewTags", js.undefined)
       
-      @scala.inline
-      def setDefaultPreviewContent(value: String): Self = StObject.set(x, "defaultPreviewContent", value.asInstanceOf[js.Any])
+      inline def setDefaultPreviewContent(value: String): Self = StObject.set(x, "defaultPreviewContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPreviewContentUndefined: Self = StObject.set(x, "defaultPreviewContent", js.undefined)
+      inline def setDefaultPreviewContentUndefined: Self = StObject.set(x, "defaultPreviewContent", js.undefined)
       
-      @scala.inline
-      def setDeleteExtraData(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "deleteExtraData", value.asInstanceOf[js.Any])
+      inline def setDeleteExtraData(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "deleteExtraData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteExtraDataFunction0(value: () => js.Object): Self = StObject.set(x, "deleteExtraData", js.Any.fromFunction0(value))
+      inline def setDeleteExtraDataFunction0(value: () => js.Object): Self = StObject.set(x, "deleteExtraData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeleteExtraDataUndefined: Self = StObject.set(x, "deleteExtraData", js.undefined)
+      inline def setDeleteExtraDataUndefined: Self = StObject.set(x, "deleteExtraData", js.undefined)
       
-      @scala.inline
-      def setDeleteUrl(value: String | js.Function0[String]): Self = StObject.set(x, "deleteUrl", value.asInstanceOf[js.Any])
+      inline def setDeleteUrl(value: String | js.Function0[String]): Self = StObject.set(x, "deleteUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUrlFunction0(value: () => String): Self = StObject.set(x, "deleteUrl", js.Any.fromFunction0(value))
+      inline def setDeleteUrlFunction0(value: () => String): Self = StObject.set(x, "deleteUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeleteUrlUndefined: Self = StObject.set(x, "deleteUrl", js.undefined)
+      inline def setDeleteUrlUndefined: Self = StObject.set(x, "deleteUrl", js.undefined)
       
-      @scala.inline
-      def setDropZoneEnabled(value: Boolean): Self = StObject.set(x, "dropZoneEnabled", value.asInstanceOf[js.Any])
+      inline def setDropZoneEnabled(value: Boolean): Self = StObject.set(x, "dropZoneEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropZoneEnabledUndefined: Self = StObject.set(x, "dropZoneEnabled", js.undefined)
+      inline def setDropZoneEnabledUndefined: Self = StObject.set(x, "dropZoneEnabled", js.undefined)
       
-      @scala.inline
-      def setDropZoneTitle(value: String): Self = StObject.set(x, "dropZoneTitle", value.asInstanceOf[js.Any])
+      inline def setDropZoneTitle(value: String): Self = StObject.set(x, "dropZoneTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropZoneTitleClass(value: String): Self = StObject.set(x, "dropZoneTitleClass", value.asInstanceOf[js.Any])
+      inline def setDropZoneTitleClass(value: String): Self = StObject.set(x, "dropZoneTitleClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropZoneTitleClassUndefined: Self = StObject.set(x, "dropZoneTitleClass", js.undefined)
+      inline def setDropZoneTitleClassUndefined: Self = StObject.set(x, "dropZoneTitleClass", js.undefined)
       
-      @scala.inline
-      def setDropZoneTitleUndefined: Self = StObject.set(x, "dropZoneTitle", js.undefined)
+      inline def setDropZoneTitleUndefined: Self = StObject.set(x, "dropZoneTitle", js.undefined)
       
-      @scala.inline
-      def setElCaptionContainer(value: String): Self = StObject.set(x, "elCaptionContainer", value.asInstanceOf[js.Any])
+      inline def setElCaptionContainer(value: String): Self = StObject.set(x, "elCaptionContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElCaptionContainerUndefined: Self = StObject.set(x, "elCaptionContainer", js.undefined)
+      inline def setElCaptionContainerUndefined: Self = StObject.set(x, "elCaptionContainer", js.undefined)
       
-      @scala.inline
-      def setElCaptionText(value: String): Self = StObject.set(x, "elCaptionText", value.asInstanceOf[js.Any])
+      inline def setElCaptionText(value: String): Self = StObject.set(x, "elCaptionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElCaptionTextUndefined: Self = StObject.set(x, "elCaptionText", js.undefined)
+      inline def setElCaptionTextUndefined: Self = StObject.set(x, "elCaptionText", js.undefined)
       
-      @scala.inline
-      def setElErrorContainer(value: String): Self = StObject.set(x, "elErrorContainer", value.asInstanceOf[js.Any])
+      inline def setElErrorContainer(value: String): Self = StObject.set(x, "elErrorContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElErrorContainerUndefined: Self = StObject.set(x, "elErrorContainer", js.undefined)
+      inline def setElErrorContainerUndefined: Self = StObject.set(x, "elErrorContainer", js.undefined)
       
-      @scala.inline
-      def setElPreviewContainer(value: String): Self = StObject.set(x, "elPreviewContainer", value.asInstanceOf[js.Any])
+      inline def setElPreviewContainer(value: String): Self = StObject.set(x, "elPreviewContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElPreviewContainerUndefined: Self = StObject.set(x, "elPreviewContainer", js.undefined)
+      inline def setElPreviewContainerUndefined: Self = StObject.set(x, "elPreviewContainer", js.undefined)
       
-      @scala.inline
-      def setElPreviewImage(value: String): Self = StObject.set(x, "elPreviewImage", value.asInstanceOf[js.Any])
+      inline def setElPreviewImage(value: String): Self = StObject.set(x, "elPreviewImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElPreviewImageUndefined: Self = StObject.set(x, "elPreviewImage", js.undefined)
+      inline def setElPreviewImageUndefined: Self = StObject.set(x, "elPreviewImage", js.undefined)
       
-      @scala.inline
-      def setElPreviewStatus(value: String): Self = StObject.set(x, "elPreviewStatus", value.asInstanceOf[js.Any])
+      inline def setElPreviewStatus(value: String): Self = StObject.set(x, "elPreviewStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElPreviewStatusUndefined: Self = StObject.set(x, "elPreviewStatus", js.undefined)
+      inline def setElPreviewStatusUndefined: Self = StObject.set(x, "elPreviewStatus", js.undefined)
       
-      @scala.inline
-      def setEncodeUrl(value: Boolean): Self = StObject.set(x, "encodeUrl", value.asInstanceOf[js.Any])
+      inline def setEncodeUrl(value: Boolean): Self = StObject.set(x, "encodeUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeUrlUndefined: Self = StObject.set(x, "encodeUrl", js.undefined)
+      inline def setEncodeUrlUndefined: Self = StObject.set(x, "encodeUrl", js.undefined)
       
-      @scala.inline
-      def setFileActionSettings(value: FileActionSettings): Self = StObject.set(x, "fileActionSettings", value.asInstanceOf[js.Any])
+      inline def setFileActionSettings(value: FileActionSettings): Self = StObject.set(x, "fileActionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileActionSettingsUndefined: Self = StObject.set(x, "fileActionSettings", js.undefined)
+      inline def setFileActionSettingsUndefined: Self = StObject.set(x, "fileActionSettings", js.undefined)
       
-      @scala.inline
-      def setFileTypeSettings(value: FileTypeSettings): Self = StObject.set(x, "fileTypeSettings", value.asInstanceOf[js.Any])
+      inline def setFileTypeSettings(value: FileTypeSettings): Self = StObject.set(x, "fileTypeSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeSettingsUndefined: Self = StObject.set(x, "fileTypeSettings", js.undefined)
+      inline def setFileTypeSettingsUndefined: Self = StObject.set(x, "fileTypeSettings", js.undefined)
       
-      @scala.inline
-      def setFocusCaptionOnBrowse(value: Boolean): Self = StObject.set(x, "focusCaptionOnBrowse", value.asInstanceOf[js.Any])
+      inline def setFocusCaptionOnBrowse(value: Boolean): Self = StObject.set(x, "focusCaptionOnBrowse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusCaptionOnBrowseUndefined: Self = StObject.set(x, "focusCaptionOnBrowse", js.undefined)
+      inline def setFocusCaptionOnBrowseUndefined: Self = StObject.set(x, "focusCaptionOnBrowse", js.undefined)
       
-      @scala.inline
-      def setFocusCaptionOnClear(value: Boolean): Self = StObject.set(x, "focusCaptionOnClear", value.asInstanceOf[js.Any])
+      inline def setFocusCaptionOnClear(value: Boolean): Self = StObject.set(x, "focusCaptionOnClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusCaptionOnClearUndefined: Self = StObject.set(x, "focusCaptionOnClear", js.undefined)
+      inline def setFocusCaptionOnClearUndefined: Self = StObject.set(x, "focusCaptionOnClear", js.undefined)
       
-      @scala.inline
-      def setHideThumbnailContent(value: Boolean): Self = StObject.set(x, "hideThumbnailContent", value.asInstanceOf[js.Any])
+      inline def setHideThumbnailContent(value: Boolean): Self = StObject.set(x, "hideThumbnailContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideThumbnailContentUndefined: Self = StObject.set(x, "hideThumbnailContent", js.undefined)
+      inline def setHideThumbnailContentUndefined: Self = StObject.set(x, "hideThumbnailContent", js.undefined)
       
-      @scala.inline
-      def setInitialCaption(value: String): Self = StObject.set(x, "initialCaption", value.asInstanceOf[js.Any])
+      inline def setInitialCaption(value: String): Self = StObject.set(x, "initialCaption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialCaptionUndefined: Self = StObject.set(x, "initialCaption", js.undefined)
+      inline def setInitialCaptionUndefined: Self = StObject.set(x, "initialCaption", js.undefined)
       
-      @scala.inline
-      def setInitialPreview(value: String | js.Array[js.Any]): Self = StObject.set(x, "initialPreview", value.asInstanceOf[js.Any])
+      inline def setInitialPreview(value: String | js.Array[js.Any]): Self = StObject.set(x, "initialPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPreviewConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "initialPreviewConfig", value.asInstanceOf[js.Any])
+      inline def setInitialPreviewConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "initialPreviewConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPreviewConfigUndefined: Self = StObject.set(x, "initialPreviewConfig", js.undefined)
+      inline def setInitialPreviewConfigUndefined: Self = StObject.set(x, "initialPreviewConfig", js.undefined)
       
-      @scala.inline
-      def setInitialPreviewConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "initialPreviewConfig", js.Array(value :_*))
+      inline def setInitialPreviewConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "initialPreviewConfig", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialPreviewCount(value: Double): Self = StObject.set(x, "initialPreviewCount", value.asInstanceOf[js.Any])
+      inline def setInitialPreviewCount(value: Double): Self = StObject.set(x, "initialPreviewCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPreviewCountUndefined: Self = StObject.set(x, "initialPreviewCount", js.undefined)
+      inline def setInitialPreviewCountUndefined: Self = StObject.set(x, "initialPreviewCount", js.undefined)
       
-      @scala.inline
-      def setInitialPreviewDelimiter(value: String): Self = StObject.set(x, "initialPreviewDelimiter", value.asInstanceOf[js.Any])
+      inline def setInitialPreviewDelimiter(value: String): Self = StObject.set(x, "initialPreviewDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPreviewDelimiterUndefined: Self = StObject.set(x, "initialPreviewDelimiter", js.undefined)
+      inline def setInitialPreviewDelimiterUndefined: Self = StObject.set(x, "initialPreviewDelimiter", js.undefined)
       
-      @scala.inline
-      def setInitialPreviewShowDelete(value: Boolean): Self = StObject.set(x, "initialPreviewShowDelete", value.asInstanceOf[js.Any])
+      inline def setInitialPreviewShowDelete(value: Boolean): Self = StObject.set(x, "initialPreviewShowDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPreviewShowDeleteUndefined: Self = StObject.set(x, "initialPreviewShowDelete", js.undefined)
+      inline def setInitialPreviewShowDeleteUndefined: Self = StObject.set(x, "initialPreviewShowDelete", js.undefined)
       
-      @scala.inline
-      def setInitialPreviewThumbTags(value: StringDictionary[String]): Self = StObject.set(x, "initialPreviewThumbTags", value.asInstanceOf[js.Any])
+      inline def setInitialPreviewThumbTags(value: StringDictionary[String]): Self = StObject.set(x, "initialPreviewThumbTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPreviewThumbTagsUndefined: Self = StObject.set(x, "initialPreviewThumbTags", js.undefined)
+      inline def setInitialPreviewThumbTagsUndefined: Self = StObject.set(x, "initialPreviewThumbTags", js.undefined)
       
-      @scala.inline
-      def setInitialPreviewUndefined: Self = StObject.set(x, "initialPreview", js.undefined)
+      inline def setInitialPreviewUndefined: Self = StObject.set(x, "initialPreview", js.undefined)
       
-      @scala.inline
-      def setInitialPreviewVarargs(value: js.Any*): Self = StObject.set(x, "initialPreview", js.Array(value :_*))
+      inline def setInitialPreviewVarargs(value: js.Any*): Self = StObject.set(x, "initialPreview", js.Array(value :_*))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLayoutTemplates(value: LayoutTemplates): Self = StObject.set(x, "layoutTemplates", value.asInstanceOf[js.Any])
+      inline def setLayoutTemplates(value: LayoutTemplates): Self = StObject.set(x, "layoutTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutTemplatesUndefined: Self = StObject.set(x, "layoutTemplates", js.undefined)
+      inline def setLayoutTemplatesUndefined: Self = StObject.set(x, "layoutTemplates", js.undefined)
       
-      @scala.inline
-      def setMainClass(value: String): Self = StObject.set(x, "mainClass", value.asInstanceOf[js.Any])
+      inline def setMainClass(value: String): Self = StObject.set(x, "mainClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainClassUndefined: Self = StObject.set(x, "mainClass", js.undefined)
+      inline def setMainClassUndefined: Self = StObject.set(x, "mainClass", js.undefined)
       
-      @scala.inline
-      def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
+      inline def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileCountUndefined: Self = StObject.set(x, "maxFileCount", js.undefined)
+      inline def setMaxFileCountUndefined: Self = StObject.set(x, "maxFileCount", js.undefined)
       
-      @scala.inline
-      def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+      inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
       
-      @scala.inline
-      def setMaxImageHeight(value: Double): Self = StObject.set(x, "maxImageHeight", value.asInstanceOf[js.Any])
+      inline def setMaxImageHeight(value: Double): Self = StObject.set(x, "maxImageHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxImageHeightUndefined: Self = StObject.set(x, "maxImageHeight", js.undefined)
+      inline def setMaxImageHeightUndefined: Self = StObject.set(x, "maxImageHeight", js.undefined)
       
-      @scala.inline
-      def setMaxImageWidth(value: Double): Self = StObject.set(x, "maxImageWidth", value.asInstanceOf[js.Any])
+      inline def setMaxImageWidth(value: Double): Self = StObject.set(x, "maxImageWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxImageWidthUndefined: Self = StObject.set(x, "maxImageWidth", js.undefined)
+      inline def setMaxImageWidthUndefined: Self = StObject.set(x, "maxImageWidth", js.undefined)
       
-      @scala.inline
-      def setMinFileCount(value: Double): Self = StObject.set(x, "minFileCount", value.asInstanceOf[js.Any])
+      inline def setMinFileCount(value: Double): Self = StObject.set(x, "minFileCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinFileCountUndefined: Self = StObject.set(x, "minFileCount", js.undefined)
+      inline def setMinFileCountUndefined: Self = StObject.set(x, "minFileCount", js.undefined)
       
-      @scala.inline
-      def setMinImageHeight(value: Double): Self = StObject.set(x, "minImageHeight", value.asInstanceOf[js.Any])
+      inline def setMinImageHeight(value: Double): Self = StObject.set(x, "minImageHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinImageHeightUndefined: Self = StObject.set(x, "minImageHeight", js.undefined)
+      inline def setMinImageHeightUndefined: Self = StObject.set(x, "minImageHeight", js.undefined)
       
-      @scala.inline
-      def setMsgCancelled(value: String): Self = StObject.set(x, "msgCancelled", value.asInstanceOf[js.Any])
+      inline def setMsgCancelled(value: String): Self = StObject.set(x, "msgCancelled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgCancelledUndefined: Self = StObject.set(x, "msgCancelled", js.undefined)
+      inline def setMsgCancelledUndefined: Self = StObject.set(x, "msgCancelled", js.undefined)
       
-      @scala.inline
-      def setMsgErrorClass(value: String): Self = StObject.set(x, "msgErrorClass", value.asInstanceOf[js.Any])
+      inline def setMsgErrorClass(value: String): Self = StObject.set(x, "msgErrorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgErrorClassUndefined: Self = StObject.set(x, "msgErrorClass", js.undefined)
+      inline def setMsgErrorClassUndefined: Self = StObject.set(x, "msgErrorClass", js.undefined)
       
-      @scala.inline
-      def setMsgFileNotFound(value: String): Self = StObject.set(x, "msgFileNotFound", value.asInstanceOf[js.Any])
+      inline def setMsgFileNotFound(value: String): Self = StObject.set(x, "msgFileNotFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFileNotFoundUndefined: Self = StObject.set(x, "msgFileNotFound", js.undefined)
+      inline def setMsgFileNotFoundUndefined: Self = StObject.set(x, "msgFileNotFound", js.undefined)
       
-      @scala.inline
-      def setMsgFileNotReadable(value: String): Self = StObject.set(x, "msgFileNotReadable", value.asInstanceOf[js.Any])
+      inline def setMsgFileNotReadable(value: String): Self = StObject.set(x, "msgFileNotReadable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFileNotReadableUndefined: Self = StObject.set(x, "msgFileNotReadable", js.undefined)
+      inline def setMsgFileNotReadableUndefined: Self = StObject.set(x, "msgFileNotReadable", js.undefined)
       
-      @scala.inline
-      def setMsgFilePreviewAborted(value: String): Self = StObject.set(x, "msgFilePreviewAborted", value.asInstanceOf[js.Any])
+      inline def setMsgFilePreviewAborted(value: String): Self = StObject.set(x, "msgFilePreviewAborted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFilePreviewAbortedUndefined: Self = StObject.set(x, "msgFilePreviewAborted", js.undefined)
+      inline def setMsgFilePreviewAbortedUndefined: Self = StObject.set(x, "msgFilePreviewAborted", js.undefined)
       
-      @scala.inline
-      def setMsgFilePreviewError(value: String): Self = StObject.set(x, "msgFilePreviewError", value.asInstanceOf[js.Any])
+      inline def setMsgFilePreviewError(value: String): Self = StObject.set(x, "msgFilePreviewError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFilePreviewErrorUndefined: Self = StObject.set(x, "msgFilePreviewError", js.undefined)
+      inline def setMsgFilePreviewErrorUndefined: Self = StObject.set(x, "msgFilePreviewError", js.undefined)
       
-      @scala.inline
-      def setMsgFileSecured(value: String): Self = StObject.set(x, "msgFileSecured", value.asInstanceOf[js.Any])
+      inline def setMsgFileSecured(value: String): Self = StObject.set(x, "msgFileSecured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFileSecuredUndefined: Self = StObject.set(x, "msgFileSecured", js.undefined)
+      inline def setMsgFileSecuredUndefined: Self = StObject.set(x, "msgFileSecured", js.undefined)
       
-      @scala.inline
-      def setMsgFilesTooLess(value: String): Self = StObject.set(x, "msgFilesTooLess", value.asInstanceOf[js.Any])
+      inline def setMsgFilesTooLess(value: String): Self = StObject.set(x, "msgFilesTooLess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFilesTooLessUndefined: Self = StObject.set(x, "msgFilesTooLess", js.undefined)
+      inline def setMsgFilesTooLessUndefined: Self = StObject.set(x, "msgFilesTooLess", js.undefined)
       
-      @scala.inline
-      def setMsgFilesTooMany(value: String): Self = StObject.set(x, "msgFilesTooMany", value.asInstanceOf[js.Any])
+      inline def setMsgFilesTooMany(value: String): Self = StObject.set(x, "msgFilesTooMany", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFilesTooManyUndefined: Self = StObject.set(x, "msgFilesTooMany", js.undefined)
+      inline def setMsgFilesTooManyUndefined: Self = StObject.set(x, "msgFilesTooMany", js.undefined)
       
-      @scala.inline
-      def setMsgFoldersNotAllowed(value: String): Self = StObject.set(x, "msgFoldersNotAllowed", value.asInstanceOf[js.Any])
+      inline def setMsgFoldersNotAllowed(value: String): Self = StObject.set(x, "msgFoldersNotAllowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFoldersNotAllowedUndefined: Self = StObject.set(x, "msgFoldersNotAllowed", js.undefined)
+      inline def setMsgFoldersNotAllowedUndefined: Self = StObject.set(x, "msgFoldersNotAllowed", js.undefined)
       
-      @scala.inline
-      def setMsgImageHeightLarge(value: String): Self = StObject.set(x, "msgImageHeightLarge", value.asInstanceOf[js.Any])
+      inline def setMsgImageHeightLarge(value: String): Self = StObject.set(x, "msgImageHeightLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgImageHeightLargeUndefined: Self = StObject.set(x, "msgImageHeightLarge", js.undefined)
+      inline def setMsgImageHeightLargeUndefined: Self = StObject.set(x, "msgImageHeightLarge", js.undefined)
       
-      @scala.inline
-      def setMsgImageHeightSmall(value: String): Self = StObject.set(x, "msgImageHeightSmall", value.asInstanceOf[js.Any])
+      inline def setMsgImageHeightSmall(value: String): Self = StObject.set(x, "msgImageHeightSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgImageHeightSmallUndefined: Self = StObject.set(x, "msgImageHeightSmall", js.undefined)
+      inline def setMsgImageHeightSmallUndefined: Self = StObject.set(x, "msgImageHeightSmall", js.undefined)
       
-      @scala.inline
-      def setMsgImageWidthLarge(value: String): Self = StObject.set(x, "msgImageWidthLarge", value.asInstanceOf[js.Any])
+      inline def setMsgImageWidthLarge(value: String): Self = StObject.set(x, "msgImageWidthLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgImageWidthLargeUndefined: Self = StObject.set(x, "msgImageWidthLarge", js.undefined)
+      inline def setMsgImageWidthLargeUndefined: Self = StObject.set(x, "msgImageWidthLarge", js.undefined)
       
-      @scala.inline
-      def setMsgImageWidthSmall(value: String): Self = StObject.set(x, "msgImageWidthSmall", value.asInstanceOf[js.Any])
+      inline def setMsgImageWidthSmall(value: String): Self = StObject.set(x, "msgImageWidthSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgImageWidthSmallUndefined: Self = StObject.set(x, "msgImageWidthSmall", js.undefined)
+      inline def setMsgImageWidthSmallUndefined: Self = StObject.set(x, "msgImageWidthSmall", js.undefined)
       
-      @scala.inline
-      def setMsgInvalidFileExtension(value: String): Self = StObject.set(x, "msgInvalidFileExtension", value.asInstanceOf[js.Any])
+      inline def setMsgInvalidFileExtension(value: String): Self = StObject.set(x, "msgInvalidFileExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgInvalidFileExtensionUndefined: Self = StObject.set(x, "msgInvalidFileExtension", js.undefined)
+      inline def setMsgInvalidFileExtensionUndefined: Self = StObject.set(x, "msgInvalidFileExtension", js.undefined)
       
-      @scala.inline
-      def setMsgInvalidFileType(value: String): Self = StObject.set(x, "msgInvalidFileType", value.asInstanceOf[js.Any])
+      inline def setMsgInvalidFileType(value: String): Self = StObject.set(x, "msgInvalidFileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgInvalidFileTypeUndefined: Self = StObject.set(x, "msgInvalidFileType", js.undefined)
+      inline def setMsgInvalidFileTypeUndefined: Self = StObject.set(x, "msgInvalidFileType", js.undefined)
       
-      @scala.inline
-      def setMsgLoading(value: String): Self = StObject.set(x, "msgLoading", value.asInstanceOf[js.Any])
+      inline def setMsgLoading(value: String): Self = StObject.set(x, "msgLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgLoadingUndefined: Self = StObject.set(x, "msgLoading", js.undefined)
+      inline def setMsgLoadingUndefined: Self = StObject.set(x, "msgLoading", js.undefined)
       
-      @scala.inline
-      def setMsgNo(value: String): Self = StObject.set(x, "msgNo", value.asInstanceOf[js.Any])
+      inline def setMsgNo(value: String): Self = StObject.set(x, "msgNo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgNoUndefined: Self = StObject.set(x, "msgNo", js.undefined)
+      inline def setMsgNoUndefined: Self = StObject.set(x, "msgNo", js.undefined)
       
-      @scala.inline
-      def setMsgProgress(value: String): Self = StObject.set(x, "msgProgress", value.asInstanceOf[js.Any])
+      inline def setMsgProgress(value: String): Self = StObject.set(x, "msgProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgProgressUndefined: Self = StObject.set(x, "msgProgress", js.undefined)
+      inline def setMsgProgressUndefined: Self = StObject.set(x, "msgProgress", js.undefined)
       
-      @scala.inline
-      def setMsgSelected(value: String): Self = StObject.set(x, "msgSelected", value.asInstanceOf[js.Any])
+      inline def setMsgSelected(value: String): Self = StObject.set(x, "msgSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgSelectedUndefined: Self = StObject.set(x, "msgSelected", js.undefined)
+      inline def setMsgSelectedUndefined: Self = StObject.set(x, "msgSelected", js.undefined)
       
-      @scala.inline
-      def setMsgSizeTooLarge(value: String): Self = StObject.set(x, "msgSizeTooLarge", value.asInstanceOf[js.Any])
+      inline def setMsgSizeTooLarge(value: String): Self = StObject.set(x, "msgSizeTooLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgSizeTooLargeUndefined: Self = StObject.set(x, "msgSizeTooLarge", js.undefined)
+      inline def setMsgSizeTooLargeUndefined: Self = StObject.set(x, "msgSizeTooLarge", js.undefined)
       
-      @scala.inline
-      def setMsgUploadAborted(value: String): Self = StObject.set(x, "msgUploadAborted", value.asInstanceOf[js.Any])
+      inline def setMsgUploadAborted(value: String): Self = StObject.set(x, "msgUploadAborted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUploadAbortedUndefined: Self = StObject.set(x, "msgUploadAborted", js.undefined)
+      inline def setMsgUploadAbortedUndefined: Self = StObject.set(x, "msgUploadAborted", js.undefined)
       
-      @scala.inline
-      def setMsgValidationError(value: String): Self = StObject.set(x, "msgValidationError", value.asInstanceOf[js.Any])
+      inline def setMsgValidationError(value: String): Self = StObject.set(x, "msgValidationError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgValidationErrorClass(value: String): Self = StObject.set(x, "msgValidationErrorClass", value.asInstanceOf[js.Any])
+      inline def setMsgValidationErrorClass(value: String): Self = StObject.set(x, "msgValidationErrorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgValidationErrorClassUndefined: Self = StObject.set(x, "msgValidationErrorClass", js.undefined)
+      inline def setMsgValidationErrorClassUndefined: Self = StObject.set(x, "msgValidationErrorClass", js.undefined)
       
-      @scala.inline
-      def setMsgValidationErrorIcon(value: String): Self = StObject.set(x, "msgValidationErrorIcon", value.asInstanceOf[js.Any])
+      inline def setMsgValidationErrorIcon(value: String): Self = StObject.set(x, "msgValidationErrorIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgValidationErrorIconUndefined: Self = StObject.set(x, "msgValidationErrorIcon", js.undefined)
+      inline def setMsgValidationErrorIconUndefined: Self = StObject.set(x, "msgValidationErrorIcon", js.undefined)
       
-      @scala.inline
-      def setMsgValidationErrorUndefined: Self = StObject.set(x, "msgValidationError", js.undefined)
+      inline def setMsgValidationErrorUndefined: Self = StObject.set(x, "msgValidationError", js.undefined)
       
-      @scala.inline
-      def setMsgZoomModalHeading(value: String): Self = StObject.set(x, "msgZoomModalHeading", value.asInstanceOf[js.Any])
+      inline def setMsgZoomModalHeading(value: String): Self = StObject.set(x, "msgZoomModalHeading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgZoomModalHeadingUndefined: Self = StObject.set(x, "msgZoomModalHeading", js.undefined)
+      inline def setMsgZoomModalHeadingUndefined: Self = StObject.set(x, "msgZoomModalHeading", js.undefined)
       
-      @scala.inline
-      def setMsgZoomTitle(value: String): Self = StObject.set(x, "msgZoomTitle", value.asInstanceOf[js.Any])
+      inline def setMsgZoomTitle(value: String): Self = StObject.set(x, "msgZoomTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgZoomTitleUndefined: Self = StObject.set(x, "msgZoomTitle", js.undefined)
+      inline def setMsgZoomTitleUndefined: Self = StObject.set(x, "msgZoomTitle", js.undefined)
       
-      @scala.inline
-      def setOtherActionButtons(value: String): Self = StObject.set(x, "otherActionButtons", value.asInstanceOf[js.Any])
+      inline def setOtherActionButtons(value: String): Self = StObject.set(x, "otherActionButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherActionButtonsUndefined: Self = StObject.set(x, "otherActionButtons", js.undefined)
+      inline def setOtherActionButtonsUndefined: Self = StObject.set(x, "otherActionButtons", js.undefined)
       
-      @scala.inline
-      def setOverwriteInitial(value: Boolean): Self = StObject.set(x, "overwriteInitial", value.asInstanceOf[js.Any])
+      inline def setOverwriteInitial(value: Boolean): Self = StObject.set(x, "overwriteInitial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteInitialUndefined: Self = StObject.set(x, "overwriteInitial", js.undefined)
+      inline def setOverwriteInitialUndefined: Self = StObject.set(x, "overwriteInitial", js.undefined)
       
-      @scala.inline
-      def setPreviewClass(value: String): Self = StObject.set(x, "previewClass", value.asInstanceOf[js.Any])
+      inline def setPreviewClass(value: String): Self = StObject.set(x, "previewClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewClassUndefined: Self = StObject.set(x, "previewClass", js.undefined)
+      inline def setPreviewClassUndefined: Self = StObject.set(x, "previewClass", js.undefined)
       
-      @scala.inline
-      def setPreviewFileExtSettings(value: PreviewFileExtSettings): Self = StObject.set(x, "previewFileExtSettings", value.asInstanceOf[js.Any])
+      inline def setPreviewFileExtSettings(value: PreviewFileExtSettings): Self = StObject.set(x, "previewFileExtSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewFileExtSettingsUndefined: Self = StObject.set(x, "previewFileExtSettings", js.undefined)
+      inline def setPreviewFileExtSettingsUndefined: Self = StObject.set(x, "previewFileExtSettings", js.undefined)
       
-      @scala.inline
-      def setPreviewFileIcon(value: String): Self = StObject.set(x, "previewFileIcon", value.asInstanceOf[js.Any])
+      inline def setPreviewFileIcon(value: String): Self = StObject.set(x, "previewFileIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewFileIconClass(value: String): Self = StObject.set(x, "previewFileIconClass", value.asInstanceOf[js.Any])
+      inline def setPreviewFileIconClass(value: String): Self = StObject.set(x, "previewFileIconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewFileIconClassUndefined: Self = StObject.set(x, "previewFileIconClass", js.undefined)
+      inline def setPreviewFileIconClassUndefined: Self = StObject.set(x, "previewFileIconClass", js.undefined)
       
-      @scala.inline
-      def setPreviewFileIconSettings(value: PreviewFileIconSettings): Self = StObject.set(x, "previewFileIconSettings", value.asInstanceOf[js.Any])
+      inline def setPreviewFileIconSettings(value: PreviewFileIconSettings): Self = StObject.set(x, "previewFileIconSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewFileIconSettingsUndefined: Self = StObject.set(x, "previewFileIconSettings", js.undefined)
+      inline def setPreviewFileIconSettingsUndefined: Self = StObject.set(x, "previewFileIconSettings", js.undefined)
       
-      @scala.inline
-      def setPreviewFileIconUndefined: Self = StObject.set(x, "previewFileIcon", js.undefined)
+      inline def setPreviewFileIconUndefined: Self = StObject.set(x, "previewFileIcon", js.undefined)
       
-      @scala.inline
-      def setPreviewFileType(value: image | text | any): Self = StObject.set(x, "previewFileType", value.asInstanceOf[js.Any])
+      inline def setPreviewFileType(value: image | text | any): Self = StObject.set(x, "previewFileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewFileTypeUndefined: Self = StObject.set(x, "previewFileType", js.undefined)
+      inline def setPreviewFileTypeUndefined: Self = StObject.set(x, "previewFileType", js.undefined)
       
-      @scala.inline
-      def setPreviewSettings(value: PreviewSettings): Self = StObject.set(x, "previewSettings", value.asInstanceOf[js.Any])
+      inline def setPreviewSettings(value: PreviewSettings): Self = StObject.set(x, "previewSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewSettingsUndefined: Self = StObject.set(x, "previewSettings", js.undefined)
+      inline def setPreviewSettingsUndefined: Self = StObject.set(x, "previewSettings", js.undefined)
       
-      @scala.inline
-      def setPreviewTemplates(value: PreviewTemplates): Self = StObject.set(x, "previewTemplates", value.asInstanceOf[js.Any])
+      inline def setPreviewTemplates(value: PreviewTemplates): Self = StObject.set(x, "previewTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewTemplatesUndefined: Self = StObject.set(x, "previewTemplates", js.undefined)
+      inline def setPreviewTemplatesUndefined: Self = StObject.set(x, "previewTemplates", js.undefined)
       
-      @scala.inline
-      def setPreviewThumbTags(value: StringDictionary[String]): Self = StObject.set(x, "previewThumbTags", value.asInstanceOf[js.Any])
+      inline def setPreviewThumbTags(value: StringDictionary[String]): Self = StObject.set(x, "previewThumbTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewThumbTagsUndefined: Self = StObject.set(x, "previewThumbTags", js.undefined)
+      inline def setPreviewThumbTagsUndefined: Self = StObject.set(x, "previewThumbTags", js.undefined)
       
-      @scala.inline
-      def setProgressClass(value: String): Self = StObject.set(x, "progressClass", value.asInstanceOf[js.Any])
+      inline def setProgressClass(value: String): Self = StObject.set(x, "progressClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressClassUndefined: Self = StObject.set(x, "progressClass", js.undefined)
+      inline def setProgressClassUndefined: Self = StObject.set(x, "progressClass", js.undefined)
       
-      @scala.inline
-      def setProgressCompleteClass(value: String): Self = StObject.set(x, "progressCompleteClass", value.asInstanceOf[js.Any])
+      inline def setProgressCompleteClass(value: String): Self = StObject.set(x, "progressCompleteClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressCompleteClassUndefined: Self = StObject.set(x, "progressCompleteClass", js.undefined)
+      inline def setProgressCompleteClassUndefined: Self = StObject.set(x, "progressCompleteClass", js.undefined)
       
-      @scala.inline
-      def setProgressErrorClass(value: String): Self = StObject.set(x, "progressErrorClass", value.asInstanceOf[js.Any])
+      inline def setProgressErrorClass(value: String): Self = StObject.set(x, "progressErrorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressErrorClassUndefined: Self = StObject.set(x, "progressErrorClass", js.undefined)
+      inline def setProgressErrorClassUndefined: Self = StObject.set(x, "progressErrorClass", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: String): Self = StObject.set(x, "removeClass", value.asInstanceOf[js.Any])
+      inline def setRemoveClass(value: String): Self = StObject.set(x, "removeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setRemoveFromPreviewOnError(value: Boolean): Self = StObject.set(x, "removeFromPreviewOnError", value.asInstanceOf[js.Any])
+      inline def setRemoveFromPreviewOnError(value: Boolean): Self = StObject.set(x, "removeFromPreviewOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveFromPreviewOnErrorUndefined: Self = StObject.set(x, "removeFromPreviewOnError", js.undefined)
+      inline def setRemoveFromPreviewOnErrorUndefined: Self = StObject.set(x, "removeFromPreviewOnError", js.undefined)
       
-      @scala.inline
-      def setRemoveIcon(value: String): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(value: String): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      @scala.inline
-      def setRemoveLabel(value: String): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
+      inline def setRemoveLabel(value: String): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveLabelUndefined: Self = StObject.set(x, "removeLabel", js.undefined)
+      inline def setRemoveLabelUndefined: Self = StObject.set(x, "removeLabel", js.undefined)
       
-      @scala.inline
-      def setRemoveTitle(value: String): Self = StObject.set(x, "removeTitle", value.asInstanceOf[js.Any])
+      inline def setRemoveTitle(value: String): Self = StObject.set(x, "removeTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveTitleUndefined: Self = StObject.set(x, "removeTitle", js.undefined)
+      inline def setRemoveTitleUndefined: Self = StObject.set(x, "removeTitle", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setResizeDefaultImageType(value: String): Self = StObject.set(x, "resizeDefaultImageType", value.asInstanceOf[js.Any])
+      inline def setResizeDefaultImageType(value: String): Self = StObject.set(x, "resizeDefaultImageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeDefaultImageTypeUndefined: Self = StObject.set(x, "resizeDefaultImageType", js.undefined)
+      inline def setResizeDefaultImageTypeUndefined: Self = StObject.set(x, "resizeDefaultImageType", js.undefined)
       
-      @scala.inline
-      def setResizeImage(value: Boolean): Self = StObject.set(x, "resizeImage", value.asInstanceOf[js.Any])
+      inline def setResizeImage(value: Boolean): Self = StObject.set(x, "resizeImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeImageQuality(value: Double): Self = StObject.set(x, "resizeImageQuality", value.asInstanceOf[js.Any])
+      inline def setResizeImageQuality(value: Double): Self = StObject.set(x, "resizeImageQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeImageQualityUndefined: Self = StObject.set(x, "resizeImageQuality", js.undefined)
+      inline def setResizeImageQualityUndefined: Self = StObject.set(x, "resizeImageQuality", js.undefined)
       
-      @scala.inline
-      def setResizeImageUndefined: Self = StObject.set(x, "resizeImage", js.undefined)
+      inline def setResizeImageUndefined: Self = StObject.set(x, "resizeImage", js.undefined)
       
-      @scala.inline
-      def setResizePreference(value: width | height): Self = StObject.set(x, "resizePreference", value.asInstanceOf[js.Any])
+      inline def setResizePreference(value: width | height): Self = StObject.set(x, "resizePreference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizePreferenceUndefined: Self = StObject.set(x, "resizePreference", js.undefined)
+      inline def setResizePreferenceUndefined: Self = StObject.set(x, "resizePreference", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setShowAjaxErrorDetails(value: Boolean): Self = StObject.set(x, "showAjaxErrorDetails", value.asInstanceOf[js.Any])
+      inline def setShowAjaxErrorDetails(value: Boolean): Self = StObject.set(x, "showAjaxErrorDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAjaxErrorDetailsUndefined: Self = StObject.set(x, "showAjaxErrorDetails", js.undefined)
+      inline def setShowAjaxErrorDetailsUndefined: Self = StObject.set(x, "showAjaxErrorDetails", js.undefined)
       
-      @scala.inline
-      def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
+      inline def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
+      inline def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
       
-      @scala.inline
-      def setShowCaption(value: Boolean): Self = StObject.set(x, "showCaption", value.asInstanceOf[js.Any])
+      inline def setShowCaption(value: Boolean): Self = StObject.set(x, "showCaption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCaptionUndefined: Self = StObject.set(x, "showCaption", js.undefined)
+      inline def setShowCaptionUndefined: Self = StObject.set(x, "showCaption", js.undefined)
       
-      @scala.inline
-      def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
+      inline def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
+      inline def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
       
-      @scala.inline
-      def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
+      inline def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
+      inline def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
       
-      @scala.inline
-      def setShowRemove(value: Boolean): Self = StObject.set(x, "showRemove", value.asInstanceOf[js.Any])
+      inline def setShowRemove(value: Boolean): Self = StObject.set(x, "showRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRemoveUndefined: Self = StObject.set(x, "showRemove", js.undefined)
+      inline def setShowRemoveUndefined: Self = StObject.set(x, "showRemove", js.undefined)
       
-      @scala.inline
-      def setShowUpload(value: Boolean): Self = StObject.set(x, "showUpload", value.asInstanceOf[js.Any])
+      inline def setShowUpload(value: Boolean): Self = StObject.set(x, "showUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUploadUndefined: Self = StObject.set(x, "showUpload", js.undefined)
+      inline def setShowUploadUndefined: Self = StObject.set(x, "showUpload", js.undefined)
       
-      @scala.inline
-      def setShowUploadedThumbs(value: Boolean): Self = StObject.set(x, "showUploadedThumbs", value.asInstanceOf[js.Any])
+      inline def setShowUploadedThumbs(value: Boolean): Self = StObject.set(x, "showUploadedThumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUploadedThumbsUndefined: Self = StObject.set(x, "showUploadedThumbs", js.undefined)
+      inline def setShowUploadedThumbsUndefined: Self = StObject.set(x, "showUploadedThumbs", js.undefined)
       
-      @scala.inline
-      def setSlugCallback(value: /* filename */ String => String): Self = StObject.set(x, "slugCallback", js.Any.fromFunction1(value))
+      inline def setSlugCallback(value: /* filename */ String => String): Self = StObject.set(x, "slugCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlugCallbackUndefined: Self = StObject.set(x, "slugCallback", js.undefined)
+      inline def setSlugCallbackUndefined: Self = StObject.set(x, "slugCallback", js.undefined)
       
-      @scala.inline
-      def setTextEncoding(value: String): Self = StObject.set(x, "textEncoding", value.asInstanceOf[js.Any])
+      inline def setTextEncoding(value: String): Self = StObject.set(x, "textEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEncodingUndefined: Self = StObject.set(x, "textEncoding", js.undefined)
+      inline def setTextEncodingUndefined: Self = StObject.set(x, "textEncoding", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUploadAsync(value: Boolean): Self = StObject.set(x, "uploadAsync", value.asInstanceOf[js.Any])
+      inline def setUploadAsync(value: Boolean): Self = StObject.set(x, "uploadAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadAsyncUndefined: Self = StObject.set(x, "uploadAsync", js.undefined)
+      inline def setUploadAsyncUndefined: Self = StObject.set(x, "uploadAsync", js.undefined)
       
-      @scala.inline
-      def setUploadClass(value: String): Self = StObject.set(x, "uploadClass", value.asInstanceOf[js.Any])
+      inline def setUploadClass(value: String): Self = StObject.set(x, "uploadClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadClassUndefined: Self = StObject.set(x, "uploadClass", js.undefined)
+      inline def setUploadClassUndefined: Self = StObject.set(x, "uploadClass", js.undefined)
       
-      @scala.inline
-      def setUploadExtraData(
+      inline def setUploadExtraData(
         value: js.Object | (js.Function2[/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double], js.Object])
       ): Self = StObject.set(x, "uploadExtraData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadExtraDataFunction2(value: (/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => js.Object): Self = StObject.set(x, "uploadExtraData", js.Any.fromFunction2(value))
+      inline def setUploadExtraDataFunction2(value: (/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => js.Object): Self = StObject.set(x, "uploadExtraData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUploadExtraDataUndefined: Self = StObject.set(x, "uploadExtraData", js.undefined)
+      inline def setUploadExtraDataUndefined: Self = StObject.set(x, "uploadExtraData", js.undefined)
       
-      @scala.inline
-      def setUploadIcon(value: String): Self = StObject.set(x, "uploadIcon", value.asInstanceOf[js.Any])
+      inline def setUploadIcon(value: String): Self = StObject.set(x, "uploadIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIconUndefined: Self = StObject.set(x, "uploadIcon", js.undefined)
+      inline def setUploadIconUndefined: Self = StObject.set(x, "uploadIcon", js.undefined)
       
-      @scala.inline
-      def setUploadLabel(value: String): Self = StObject.set(x, "uploadLabel", value.asInstanceOf[js.Any])
+      inline def setUploadLabel(value: String): Self = StObject.set(x, "uploadLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadLabelUndefined: Self = StObject.set(x, "uploadLabel", js.undefined)
+      inline def setUploadLabelUndefined: Self = StObject.set(x, "uploadLabel", js.undefined)
       
-      @scala.inline
-      def setUploadTitle(value: String): Self = StObject.set(x, "uploadTitle", value.asInstanceOf[js.Any])
+      inline def setUploadTitle(value: String): Self = StObject.set(x, "uploadTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadTitleUndefined: Self = StObject.set(x, "uploadTitle", js.undefined)
+      inline def setUploadTitleUndefined: Self = StObject.set(x, "uploadTitle", js.undefined)
       
-      @scala.inline
-      def setUploadUrl(value: String | js.Function0[String]): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+      inline def setUploadUrl(value: String | js.Function0[String]): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadUrlFunction0(value: () => String): Self = StObject.set(x, "uploadUrl", js.Any.fromFunction0(value))
+      inline def setUploadUrlFunction0(value: () => String): Self = StObject.set(x, "uploadUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUploadUrlThumb(value: String | js.Function0[String]): Self = StObject.set(x, "uploadUrlThumb", value.asInstanceOf[js.Any])
+      inline def setUploadUrlThumb(value: String | js.Function0[String]): Self = StObject.set(x, "uploadUrlThumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadUrlThumbFunction0(value: () => String): Self = StObject.set(x, "uploadUrlThumb", js.Any.fromFunction0(value))
+      inline def setUploadUrlThumbFunction0(value: () => String): Self = StObject.set(x, "uploadUrlThumb", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUploadUrlThumbUndefined: Self = StObject.set(x, "uploadUrlThumb", js.undefined)
+      inline def setUploadUrlThumbUndefined: Self = StObject.set(x, "uploadUrlThumb", js.undefined)
       
-      @scala.inline
-      def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
+      inline def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
       
-      @scala.inline
-      def setValidateInitialCount(value: Boolean): Self = StObject.set(x, "validateInitialCount", value.asInstanceOf[js.Any])
+      inline def setValidateInitialCount(value: Boolean): Self = StObject.set(x, "validateInitialCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateInitialCountUndefined: Self = StObject.set(x, "validateInitialCount", js.undefined)
+      inline def setValidateInitialCountUndefined: Self = StObject.set(x, "validateInitialCount", js.undefined)
       
-      @scala.inline
-      def setZoomIndicator(value: String): Self = StObject.set(x, "zoomIndicator", value.asInstanceOf[js.Any])
+      inline def setZoomIndicator(value: String): Self = StObject.set(x, "zoomIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomIndicatorUndefined: Self = StObject.set(x, "zoomIndicator", js.undefined)
+      inline def setZoomIndicatorUndefined: Self = StObject.set(x, "zoomIndicator", js.undefined)
     }
   }
   
@@ -2087,8 +1761,7 @@ object BootstrapFileInput {
   }
   object FileTypeSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audio: (String, String) => Boolean,
       flash: (String, String) => Boolean,
       html: (String, String) => Boolean,
@@ -2103,32 +1776,23 @@ object BootstrapFileInput {
       __obj.asInstanceOf[FileTypeSettings]
     }
     
-    @scala.inline
-    implicit class FileTypeSettingsMutableBuilder[Self <: FileTypeSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FileTypeSettings](x: Self) {
       
-      @scala.inline
-      def setAudio(value: (String, String) => Boolean): Self = StObject.set(x, "audio", js.Any.fromFunction2(value))
+      inline def setAudio(value: (String, String) => Boolean): Self = StObject.set(x, "audio", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFlash(value: (String, String) => Boolean): Self = StObject.set(x, "flash", js.Any.fromFunction2(value))
+      inline def setFlash(value: (String, String) => Boolean): Self = StObject.set(x, "flash", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHtml(value: (String, String) => Boolean): Self = StObject.set(x, "html", js.Any.fromFunction2(value))
+      inline def setHtml(value: (String, String) => Boolean): Self = StObject.set(x, "html", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImage(value: (String, String) => Boolean): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
+      inline def setImage(value: (String, String) => Boolean): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setObject(value: (String, String) => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
+      inline def setObject(value: (String, String) => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOther(value: (String, String) => Boolean): Self = StObject.set(x, "other", js.Any.fromFunction2(value))
+      inline def setOther(value: (String, String) => Boolean): Self = StObject.set(x, "other", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setText(value: (String, String) => Boolean): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
+      inline def setText(value: (String, String) => Boolean): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVideo(value: (String, String) => Boolean): Self = StObject.set(x, "video", js.Any.fromFunction2(value))
+      inline def setVideo(value: (String, String) => Boolean): Self = StObject.set(x, "video", js.Any.fromFunction2(value))
     }
   }
   
@@ -2268,98 +1932,68 @@ object BootstrapFileInput {
   }
   object LayoutTemplates {
     
-    @scala.inline
-    def apply(): LayoutTemplates = {
+    inline def apply(): LayoutTemplates = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutTemplates]
     }
     
-    @scala.inline
-    implicit class LayoutTemplatesMutableBuilder[Self <: LayoutTemplates] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutTemplates](x: Self) {
       
-      @scala.inline
-      def setActionDelete(value: String): Self = StObject.set(x, "actionDelete", value.asInstanceOf[js.Any])
+      inline def setActionDelete(value: String): Self = StObject.set(x, "actionDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionDeleteUndefined: Self = StObject.set(x, "actionDelete", js.undefined)
+      inline def setActionDeleteUndefined: Self = StObject.set(x, "actionDelete", js.undefined)
       
-      @scala.inline
-      def setActionUpload(value: String): Self = StObject.set(x, "actionUpload", value.asInstanceOf[js.Any])
+      inline def setActionUpload(value: String): Self = StObject.set(x, "actionUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUploadUndefined: Self = StObject.set(x, "actionUpload", js.undefined)
+      inline def setActionUploadUndefined: Self = StObject.set(x, "actionUpload", js.undefined)
       
-      @scala.inline
-      def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setBtnBrowse(value: String): Self = StObject.set(x, "btnBrowse", value.asInstanceOf[js.Any])
+      inline def setBtnBrowse(value: String): Self = StObject.set(x, "btnBrowse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBtnBrowseUndefined: Self = StObject.set(x, "btnBrowse", js.undefined)
+      inline def setBtnBrowseUndefined: Self = StObject.set(x, "btnBrowse", js.undefined)
       
-      @scala.inline
-      def setBtnDefault(value: String): Self = StObject.set(x, "btnDefault", value.asInstanceOf[js.Any])
+      inline def setBtnDefault(value: String): Self = StObject.set(x, "btnDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBtnDefaultUndefined: Self = StObject.set(x, "btnDefault", js.undefined)
+      inline def setBtnDefaultUndefined: Self = StObject.set(x, "btnDefault", js.undefined)
       
-      @scala.inline
-      def setBtnLink(value: String): Self = StObject.set(x, "btnLink", value.asInstanceOf[js.Any])
+      inline def setBtnLink(value: String): Self = StObject.set(x, "btnLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBtnLinkUndefined: Self = StObject.set(x, "btnLink", js.undefined)
+      inline def setBtnLinkUndefined: Self = StObject.set(x, "btnLink", js.undefined)
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMain1(value: String): Self = StObject.set(x, "main1", value.asInstanceOf[js.Any])
+      inline def setMain1(value: String): Self = StObject.set(x, "main1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain1Undefined: Self = StObject.set(x, "main1", js.undefined)
+      inline def setMain1Undefined: Self = StObject.set(x, "main1", js.undefined)
       
-      @scala.inline
-      def setMain2(value: String): Self = StObject.set(x, "main2", value.asInstanceOf[js.Any])
+      inline def setMain2(value: String): Self = StObject.set(x, "main2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain2Undefined: Self = StObject.set(x, "main2", js.undefined)
+      inline def setMain2Undefined: Self = StObject.set(x, "main2", js.undefined)
       
-      @scala.inline
-      def setModal(value: String): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: String): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      @scala.inline
-      def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      @scala.inline
-      def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     }
   }
   
@@ -2398,8 +2032,7 @@ object BootstrapFileInput {
   }
   object PreviewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       caption: String,
       extra: js.Object | js.Function0[js.Object],
       frameClass: String,
@@ -2411,29 +2044,21 @@ object BootstrapFileInput {
       __obj.asInstanceOf[PreviewConfig]
     }
     
-    @scala.inline
-    implicit class PreviewConfigMutableBuilder[Self <: PreviewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewConfig](x: Self) {
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraFunction0(value: () => js.Object): Self = StObject.set(x, "extra", js.Any.fromFunction0(value))
+      inline def setExtraFunction0(value: () => js.Object): Self = StObject.set(x, "extra", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFrameClass(value: String): Self = StObject.set(x, "frameClass", value.asInstanceOf[js.Any])
+      inline def setFrameClass(value: String): Self = StObject.set(x, "frameClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String | js.Object): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | js.Object): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2451,32 +2076,24 @@ object BootstrapFileInput {
   }
   object PreviewInfo {
     
-    @scala.inline
-    def apply(config: js.Array[PreviewConfig], content: js.Array[String], tags: js.Array[String]): PreviewInfo = {
+    inline def apply(config: js.Array[PreviewConfig], content: js.Array[String], tags: js.Array[String]): PreviewInfo = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewInfo]
     }
     
-    @scala.inline
-    implicit class PreviewInfoMutableBuilder[Self <: PreviewInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewInfo](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -2500,62 +2117,44 @@ object BootstrapFileInput {
   }
   object PreviewSettings {
     
-    @scala.inline
-    def apply(): PreviewSettings = {
+    inline def apply(): PreviewSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewSettings]
     }
     
-    @scala.inline
-    implicit class PreviewSettingsMutableBuilder[Self <: PreviewSettings] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewSettings](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Height): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Height): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setFlash(value: Height): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+      inline def setFlash(value: Height): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
+      inline def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Height): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Height): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setImage(value: Height): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Height): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setObject(value: Height): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Height): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setOther(value: Height): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: Height): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setText(value: Height): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Height): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Height): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Height): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -2658,62 +2257,44 @@ object BootstrapFileInput {
   }
   object PreviewTemplates {
     
-    @scala.inline
-    def apply(): PreviewTemplates = {
+    inline def apply(): PreviewTemplates = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewTemplates]
     }
     
-    @scala.inline
-    implicit class PreviewTemplatesMutableBuilder[Self <: PreviewTemplates] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewTemplates](x: Self) {
       
-      @scala.inline
-      def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setFlash(value: String): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+      inline def setFlash(value: String): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
+      inline def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
       
-      @scala.inline
-      def setGeneric(value: String): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+      inline def setGeneric(value: String): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
+      inline def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
 }

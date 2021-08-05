@@ -25,31 +25,23 @@ trait OnInstalledDetails extends StObject {
 }
 object OnInstalledDetails {
   
-  @scala.inline
-  def apply(reason: OnInstalledReason, temporary: Boolean): OnInstalledDetails = {
+  inline def apply(reason: OnInstalledReason, temporary: Boolean): OnInstalledDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], temporary = temporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnInstalledDetails]
   }
   
-  @scala.inline
-  implicit class OnInstalledDetailsMutableBuilder[Self <: OnInstalledDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnInstalledDetails](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
+    inline def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousVersionUndefined: Self = StObject.set(x, "previousVersion", js.undefined)
+    inline def setPreviousVersionUndefined: Self = StObject.set(x, "previousVersion", js.undefined)
     
-    @scala.inline
-    def setReason(value: OnInstalledReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: OnInstalledReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+    inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
   }
 }

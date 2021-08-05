@@ -23,28 +23,21 @@ trait ConsoleProfileFinishedEvent extends StObject {
 }
 object ConsoleProfileFinishedEvent {
   
-  @scala.inline
-  def apply(id: String, location: Location, profile: Profile): ConsoleProfileFinishedEvent = {
+  inline def apply(id: String, location: Location, profile: Profile): ConsoleProfileFinishedEvent = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleProfileFinishedEvent]
   }
   
-  @scala.inline
-  implicit class ConsoleProfileFinishedEventMutableBuilder[Self <: ConsoleProfileFinishedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleProfileFinishedEvent](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -11,20 +11,17 @@ object emberTestingHelpersStrings {
   sealed trait keydown
     extends StObject
        with KeyEventType
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
   sealed trait keypress
     extends StObject
        with KeyEventType
-  @scala.inline
-  def keypress: keypress = "keypress".asInstanceOf[keypress]
+  inline def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
   sealed trait keyup
     extends StObject
        with KeyEventType
-  @scala.inline
-  def keyup: keyup = "keyup".asInstanceOf[keyup]
+  inline def keyup: keyup = "keyup".asInstanceOf[keyup]
 }

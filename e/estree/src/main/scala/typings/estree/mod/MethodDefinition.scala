@@ -28,8 +28,7 @@ trait MethodDefinition
 }
 object MethodDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computed: Boolean,
     key: Expression,
     kind: constructor | method | get | set,
@@ -41,25 +40,18 @@ object MethodDefinition {
     __obj.asInstanceOf[MethodDefinition]
   }
   
-  @scala.inline
-  implicit class MethodDefinitionMutableBuilder[Self <: MethodDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: MethodDefinition](x: Self) {
     
-    @scala.inline
-    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: constructor | method | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: constructor | method | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.MethodDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.MethodDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FunctionExpression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FunctionExpression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

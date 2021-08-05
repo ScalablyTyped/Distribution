@@ -33,40 +33,29 @@ trait ScheduledTriggerProperties extends StObject {
 }
 object ScheduledTriggerProperties {
   
-  @scala.inline
-  def apply(scheduleExpression: ScheduleExpression): ScheduledTriggerProperties = {
+  inline def apply(scheduleExpression: ScheduleExpression): ScheduledTriggerProperties = {
     val __obj = js.Dynamic.literal(scheduleExpression = scheduleExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledTriggerProperties]
   }
   
-  @scala.inline
-  implicit class ScheduledTriggerPropertiesMutableBuilder[Self <: ScheduledTriggerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledTriggerProperties](x: Self) {
     
-    @scala.inline
-    def setDataPullMode(value: DataPullMode): Self = StObject.set(x, "dataPullMode", value.asInstanceOf[js.Any])
+    inline def setDataPullMode(value: DataPullMode): Self = StObject.set(x, "dataPullMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPullModeUndefined: Self = StObject.set(x, "dataPullMode", js.undefined)
+    inline def setDataPullModeUndefined: Self = StObject.set(x, "dataPullMode", js.undefined)
     
-    @scala.inline
-    def setScheduleEndTime(value: Date): Self = StObject.set(x, "scheduleEndTime", value.asInstanceOf[js.Any])
+    inline def setScheduleEndTime(value: Date): Self = StObject.set(x, "scheduleEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleEndTimeUndefined: Self = StObject.set(x, "scheduleEndTime", js.undefined)
+    inline def setScheduleEndTimeUndefined: Self = StObject.set(x, "scheduleEndTime", js.undefined)
     
-    @scala.inline
-    def setScheduleExpression(value: ScheduleExpression): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
+    inline def setScheduleExpression(value: ScheduleExpression): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleStartTime(value: Date): Self = StObject.set(x, "scheduleStartTime", value.asInstanceOf[js.Any])
+    inline def setScheduleStartTime(value: Date): Self = StObject.set(x, "scheduleStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleStartTimeUndefined: Self = StObject.set(x, "scheduleStartTime", js.undefined)
+    inline def setScheduleStartTimeUndefined: Self = StObject.set(x, "scheduleStartTime", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: Timezone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: Timezone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

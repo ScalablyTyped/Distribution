@@ -31,34 +31,25 @@ trait PolygonProperties
 }
 object PolygonProperties {
   
-  @scala.inline
-  def apply(): PolygonProperties = {
+  inline def apply(): PolygonProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolygonProperties]
   }
   
-  @scala.inline
-  implicit class PolygonPropertiesMutableBuilder[Self <: PolygonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonProperties](x: Self) {
     
-    @scala.inline
-    def setCentroid(value: PointProperties): Self = StObject.set(x, "centroid", value.asInstanceOf[js.Any])
+    inline def setCentroid(value: PointProperties): Self = StObject.set(x, "centroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCentroidUndefined: Self = StObject.set(x, "centroid", js.undefined)
+    inline def setCentroidUndefined: Self = StObject.set(x, "centroid", js.undefined)
     
-    @scala.inline
-    def setIsSelfIntersecting(value: Boolean): Self = StObject.set(x, "isSelfIntersecting", value.asInstanceOf[js.Any])
+    inline def setIsSelfIntersecting(value: Boolean): Self = StObject.set(x, "isSelfIntersecting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelfIntersectingUndefined: Self = StObject.set(x, "isSelfIntersecting", js.undefined)
+    inline def setIsSelfIntersectingUndefined: Self = StObject.set(x, "isSelfIntersecting", js.undefined)
     
-    @scala.inline
-    def setRings(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
+    inline def setRings(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRingsUndefined: Self = StObject.set(x, "rings", js.undefined)
+    inline def setRingsUndefined: Self = StObject.set(x, "rings", js.undefined)
     
-    @scala.inline
-    def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value :_*))
+    inline def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value :_*))
   }
 }

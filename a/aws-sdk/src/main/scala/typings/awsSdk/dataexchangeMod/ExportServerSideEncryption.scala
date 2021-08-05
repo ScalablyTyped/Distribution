@@ -18,22 +18,17 @@ trait ExportServerSideEncryption extends StObject {
 }
 object ExportServerSideEncryption {
   
-  @scala.inline
-  def apply(Type: ServerSideEncryptionTypes): ExportServerSideEncryption = {
+  inline def apply(Type: ServerSideEncryptionTypes): ExportServerSideEncryption = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportServerSideEncryption]
   }
   
-  @scala.inline
-  implicit class ExportServerSideEncryptionMutableBuilder[Self <: ExportServerSideEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: ExportServerSideEncryption](x: Self) {
     
-    @scala.inline
-    def setKmsKeyArn(value: string): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: string): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setType(value: ServerSideEncryptionTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ServerSideEncryptionTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

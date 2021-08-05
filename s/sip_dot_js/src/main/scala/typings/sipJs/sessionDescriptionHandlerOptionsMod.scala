@@ -52,56 +52,40 @@ object sessionDescriptionHandlerOptionsMod {
   }
   object SessionDescriptionHandlerOptions {
     
-    @scala.inline
-    def apply(): SessionDescriptionHandlerOptions = {
+    inline def apply(): SessionDescriptionHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionDescriptionHandlerOptions]
     }
     
-    @scala.inline
-    implicit class SessionDescriptionHandlerOptionsMutableBuilder[Self <: SessionDescriptionHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionDescriptionHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setAnswerOptions(value: RTCAnswerOptions): Self = StObject.set(x, "answerOptions", value.asInstanceOf[js.Any])
+      inline def setAnswerOptions(value: RTCAnswerOptions): Self = StObject.set(x, "answerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnswerOptionsUndefined: Self = StObject.set(x, "answerOptions", js.undefined)
+      inline def setAnswerOptionsUndefined: Self = StObject.set(x, "answerOptions", js.undefined)
       
-      @scala.inline
-      def setDataChannel(value: Boolean): Self = StObject.set(x, "dataChannel", value.asInstanceOf[js.Any])
+      inline def setDataChannel(value: Boolean): Self = StObject.set(x, "dataChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataChannelLabel(value: String): Self = StObject.set(x, "dataChannelLabel", value.asInstanceOf[js.Any])
+      inline def setDataChannelLabel(value: String): Self = StObject.set(x, "dataChannelLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataChannelLabelUndefined: Self = StObject.set(x, "dataChannelLabel", js.undefined)
+      inline def setDataChannelLabelUndefined: Self = StObject.set(x, "dataChannelLabel", js.undefined)
       
-      @scala.inline
-      def setDataChannelOptions(value: RTCDataChannelInit): Self = StObject.set(x, "dataChannelOptions", value.asInstanceOf[js.Any])
+      inline def setDataChannelOptions(value: RTCDataChannelInit): Self = StObject.set(x, "dataChannelOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataChannelOptionsUndefined: Self = StObject.set(x, "dataChannelOptions", js.undefined)
+      inline def setDataChannelOptionsUndefined: Self = StObject.set(x, "dataChannelOptions", js.undefined)
       
-      @scala.inline
-      def setDataChannelUndefined: Self = StObject.set(x, "dataChannel", js.undefined)
+      inline def setDataChannelUndefined: Self = StObject.set(x, "dataChannel", js.undefined)
       
-      @scala.inline
-      def setIceGatheringTimeout(value: Double): Self = StObject.set(x, "iceGatheringTimeout", value.asInstanceOf[js.Any])
+      inline def setIceGatheringTimeout(value: Double): Self = StObject.set(x, "iceGatheringTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIceGatheringTimeoutUndefined: Self = StObject.set(x, "iceGatheringTimeout", js.undefined)
+      inline def setIceGatheringTimeoutUndefined: Self = StObject.set(x, "iceGatheringTimeout", js.undefined)
       
-      @scala.inline
-      def setOfferOptions(value: RTCOfferOptions): Self = StObject.set(x, "offerOptions", value.asInstanceOf[js.Any])
+      inline def setOfferOptions(value: RTCOfferOptions): Self = StObject.set(x, "offerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfferOptionsUndefined: Self = StObject.set(x, "offerOptions", js.undefined)
+      inline def setOfferOptionsUndefined: Self = StObject.set(x, "offerOptions", js.undefined)
       
-      @scala.inline
-      def setOnDataChannel(value: /* dataChannel */ RTCDataChannel => Unit): Self = StObject.set(x, "onDataChannel", js.Any.fromFunction1(value))
+      inline def setOnDataChannel(value: /* dataChannel */ RTCDataChannel => Unit): Self = StObject.set(x, "onDataChannel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDataChannelUndefined: Self = StObject.set(x, "onDataChannel", js.undefined)
+      inline def setOnDataChannelUndefined: Self = StObject.set(x, "onDataChannel", js.undefined)
     }
   }
 }

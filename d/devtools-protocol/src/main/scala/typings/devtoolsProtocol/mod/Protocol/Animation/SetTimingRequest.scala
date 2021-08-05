@@ -23,22 +23,17 @@ trait SetTimingRequest extends StObject {
 }
 object SetTimingRequest {
   
-  @scala.inline
-  def apply(animationId: String, delay: Double, duration: Double): SetTimingRequest = {
+  inline def apply(animationId: String, delay: Double, duration: Double): SetTimingRequest = {
     val __obj = js.Dynamic.literal(animationId = animationId.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTimingRequest]
   }
   
-  @scala.inline
-  implicit class SetTimingRequestMutableBuilder[Self <: SetTimingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetTimingRequest](x: Self) {
     
-    @scala.inline
-    def setAnimationId(value: String): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
+    inline def setAnimationId(value: String): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
   }
 }

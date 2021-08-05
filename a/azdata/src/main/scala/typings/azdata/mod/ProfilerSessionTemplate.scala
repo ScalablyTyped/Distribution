@@ -23,22 +23,17 @@ trait ProfilerSessionTemplate extends StObject {
 }
 object ProfilerSessionTemplate {
   
-  @scala.inline
-  def apply(createStatement: String, defaultView: String, name: String): ProfilerSessionTemplate = {
+  inline def apply(createStatement: String, defaultView: String, name: String): ProfilerSessionTemplate = {
     val __obj = js.Dynamic.literal(createStatement = createStatement.asInstanceOf[js.Any], defaultView = defaultView.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilerSessionTemplate]
   }
   
-  @scala.inline
-  implicit class ProfilerSessionTemplateMutableBuilder[Self <: ProfilerSessionTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilerSessionTemplate](x: Self) {
     
-    @scala.inline
-    def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
+    inline def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultView(value: String): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
+    inline def setDefaultView(value: String): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

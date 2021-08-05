@@ -16,12 +16,8 @@ object ParameterInformation {
     * @param label A label string.
     * @param documentation A doc string.
     */
-  @scala.inline
-  def create(label: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
-  @scala.inline
-  def create(label: String, documentation: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
-  @scala.inline
-  def create(label: js.Tuple2[Double, Double]): typings.vscodeLanguageserverTypes.mod.ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
-  @scala.inline
-  def create(label: js.Tuple2[Double, Double], documentation: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(label: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(label: String, documentation: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(label: js.Tuple2[Double, Double]): typings.vscodeLanguageserverTypes.mod.ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(label: js.Tuple2[Double, Double], documentation: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ParameterInformation]
 }

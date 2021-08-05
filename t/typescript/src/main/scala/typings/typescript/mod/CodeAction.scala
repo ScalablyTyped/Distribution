@@ -20,31 +20,23 @@ trait CodeAction extends StObject {
 }
 object CodeAction {
   
-  @scala.inline
-  def apply(changes: js.Array[FileTextChanges], description: java.lang.String): CodeAction = {
+  inline def apply(changes: js.Array[FileTextChanges], description: java.lang.String): CodeAction = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAction]
   }
   
-  @scala.inline
-  implicit class CodeActionMutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
+  extension [Self <: CodeAction](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[FileTextChanges]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[FileTextChanges]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: FileTextChanges*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: FileTextChanges*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    @scala.inline
-    def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }
 }

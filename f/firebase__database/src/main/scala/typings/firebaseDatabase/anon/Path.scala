@@ -12,19 +12,15 @@ trait Path[T] extends StObject {
 }
 object Path {
   
-  @scala.inline
-  def apply[T](path: typings.firebaseDatabase.pathMod.Path, value: T): Path[T] = {
+  inline def apply[T](path: typings.firebaseDatabase.pathMod.Path, value: T): Path[T] = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Path[T]]
   }
   
-  @scala.inline
-  implicit class PathMutableBuilder[Self <: Path[?], T] (val x: Self & Path[T]) extends AnyVal {
+  extension [Self <: Path[?], T](x: Self & Path[T]) {
     
-    @scala.inline
-    def setPath(value: typings.firebaseDatabase.pathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: typings.firebaseDatabase.pathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

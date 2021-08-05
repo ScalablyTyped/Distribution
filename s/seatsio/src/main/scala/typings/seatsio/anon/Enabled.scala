@@ -14,22 +14,17 @@ trait Enabled extends StObject {
 }
 object Enabled {
   
-  @scala.inline
-  def apply(enabled: Boolean, multiSelect: Boolean, zoomOnSelect: Boolean): Enabled = {
+  inline def apply(enabled: Boolean, multiSelect: Boolean, zoomOnSelect: Boolean): Enabled = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], multiSelect = multiSelect.asInstanceOf[js.Any], zoomOnSelect = zoomOnSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
   
-  @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+  extension [Self <: Enabled](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+    inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOnSelect(value: Boolean): Self = StObject.set(x, "zoomOnSelect", value.asInstanceOf[js.Any])
+    inline def setZoomOnSelect(value: Boolean): Self = StObject.set(x, "zoomOnSelect", value.asInstanceOf[js.Any])
   }
 }

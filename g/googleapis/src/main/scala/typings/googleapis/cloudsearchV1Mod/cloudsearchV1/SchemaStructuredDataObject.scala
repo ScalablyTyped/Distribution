@@ -16,22 +16,17 @@ trait SchemaStructuredDataObject extends StObject {
 }
 object SchemaStructuredDataObject {
   
-  @scala.inline
-  def apply(): SchemaStructuredDataObject = {
+  inline def apply(): SchemaStructuredDataObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStructuredDataObject]
   }
   
-  @scala.inline
-  implicit class SchemaStructuredDataObjectMutableBuilder[Self <: SchemaStructuredDataObject] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStructuredDataObject](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[SchemaNamedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[SchemaNamedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: SchemaNamedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SchemaNamedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

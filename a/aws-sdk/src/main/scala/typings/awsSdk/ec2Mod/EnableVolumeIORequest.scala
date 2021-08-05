@@ -18,22 +18,17 @@ trait EnableVolumeIORequest extends StObject {
 }
 object EnableVolumeIORequest {
   
-  @scala.inline
-  def apply(VolumeId: VolumeId): EnableVolumeIORequest = {
+  inline def apply(VolumeId: VolumeId): EnableVolumeIORequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableVolumeIORequest]
   }
   
-  @scala.inline
-  implicit class EnableVolumeIORequestMutableBuilder[Self <: EnableVolumeIORequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableVolumeIORequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

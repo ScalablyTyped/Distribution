@@ -23,22 +23,17 @@ trait MedicationAdministrationPerformer
 }
 object MedicationAdministrationPerformer {
   
-  @scala.inline
-  def apply(actor: Reference): MedicationAdministrationPerformer = {
+  inline def apply(actor: Reference): MedicationAdministrationPerformer = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationAdministrationPerformer]
   }
   
-  @scala.inline
-  implicit class MedicationAdministrationPerformerMutableBuilder[Self <: MedicationAdministrationPerformer] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationAdministrationPerformer](x: Self) {
     
-    @scala.inline
-    def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
   }
 }

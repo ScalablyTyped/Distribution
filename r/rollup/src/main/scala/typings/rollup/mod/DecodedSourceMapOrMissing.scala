@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DecodedSourceMapOrMissing extends StObject
 object DecodedSourceMapOrMissing {
   
-  @scala.inline
-  def ExistingDecodedSourceMap(
+  inline def ExistingDecodedSourceMap(
     mappings: js.Array[js.Array[SourceMapSegment]],
     names: js.Array[String],
     sources: js.Array[String],
@@ -22,8 +21,7 @@ object DecodedSourceMapOrMissing {
     __obj.asInstanceOf[typings.rollup.mod.ExistingDecodedSourceMap]
   }
   
-  @scala.inline
-  def Mappings(plugin: String): typings.rollup.anon.Mappings = {
+  inline def Mappings(plugin: String): typings.rollup.anon.Mappings = {
     val __obj = js.Dynamic.literal(missing = true, plugin = plugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.rollup.anon.Mappings]
   }

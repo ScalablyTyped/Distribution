@@ -58,61 +58,43 @@ trait IActionSheet
 }
 object IActionSheet {
   
-  @scala.inline
-  def apply(): IActionSheet = {
+  inline def apply(): IActionSheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IActionSheet]
   }
   
-  @scala.inline
-  implicit class IActionSheetMutableBuilder[Self <: IActionSheet] (val x: Self) extends AnyVal {
+  extension [Self <: IActionSheet](x: Self) {
     
-    @scala.inline
-    def setGetBottom(value: () => Double): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
+    inline def setGetBottom(value: () => Double): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
+    inline def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
     
-    @scala.inline
-    def setGetHeight(value: () => java.lang.String): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => java.lang.String): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
+    inline def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
     
-    @scala.inline
-    def setGetLeft(value: () => Double): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
+    inline def setGetLeft(value: () => Double): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
+    inline def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
     
-    @scala.inline
-    def setGetRight(value: () => Double): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
+    inline def setGetRight(value: () => Double): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
+    inline def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
     
-    @scala.inline
-    def setSetBottom(value: /* bottom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
+    inline def setSetBottom(value: /* bottom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
+    inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
-    @scala.inline
-    def setSetHeight(value: /* height */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: /* height */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
+    inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
-    @scala.inline
-    def setSetLeft(value: /* left */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
+    inline def setSetLeft(value: /* left */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
+    inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
-    @scala.inline
-    def setSetRight(value: /* right */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
+    inline def setSetRight(value: /* right */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
+    inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
   }
 }

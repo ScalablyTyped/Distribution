@@ -29,41 +29,30 @@ object mod {
   }
   object DatadogTransportOptions {
     
-    @scala.inline
-    def apply(apiKey: String): DatadogTransportOptions = {
+    inline def apply(apiKey: String): DatadogTransportOptions = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatadogTransportOptions]
     }
     
-    @scala.inline
-    implicit class DatadogTransportOptionsMutableBuilder[Self <: DatadogTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DatadogTransportOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDdsource(value: String): Self = StObject.set(x, "ddsource", value.asInstanceOf[js.Any])
+      inline def setDdsource(value: String): Self = StObject.set(x, "ddsource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDdsourceUndefined: Self = StObject.set(x, "ddsource", js.undefined)
+      inline def setDdsourceUndefined: Self = StObject.set(x, "ddsource", js.undefined)
       
-      @scala.inline
-      def setDdtags(value: String): Self = StObject.set(x, "ddtags", value.asInstanceOf[js.Any])
+      inline def setDdtags(value: String): Self = StObject.set(x, "ddtags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDdtagsUndefined: Self = StObject.set(x, "ddtags", js.undefined)
+      inline def setDdtagsUndefined: Self = StObject.set(x, "ddtags", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     }
   }
   

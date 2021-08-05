@@ -16,7 +16,7 @@ object entityManagerSqljsEntityManagerMod {
     def this(connection: Connection) = this()
     def this(connection: Connection, queryRunner: QueryRunner) = this()
     
-    var driver: js.Any = js.native
+    /* private */ var driver: js.Any = js.native
     
     /**
       * Returns the current database definition.

@@ -23,28 +23,21 @@ trait GetAuthorizationTokenRequest extends StObject {
 }
 object GetAuthorizationTokenRequest {
   
-  @scala.inline
-  def apply(domain: DomainName): GetAuthorizationTokenRequest = {
+  inline def apply(domain: DomainName): GetAuthorizationTokenRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAuthorizationTokenRequest]
   }
   
-  @scala.inline
-  implicit class GetAuthorizationTokenRequestMutableBuilder[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthorizationTokenRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
-    @scala.inline
-    def setDurationSeconds(value: AuthorizationTokenDurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: AuthorizationTokenDurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
   }
 }

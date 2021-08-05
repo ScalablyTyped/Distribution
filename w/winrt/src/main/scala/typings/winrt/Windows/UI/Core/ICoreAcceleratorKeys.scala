@@ -10,16 +10,13 @@ trait ICoreAcceleratorKeys extends StObject {
 }
 object ICoreAcceleratorKeys {
   
-  @scala.inline
-  def apply(onacceleratorkeyactivated: js.Any): ICoreAcceleratorKeys = {
+  inline def apply(onacceleratorkeyactivated: js.Any): ICoreAcceleratorKeys = {
     val __obj = js.Dynamic.literal(onacceleratorkeyactivated = onacceleratorkeyactivated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoreAcceleratorKeys]
   }
   
-  @scala.inline
-  implicit class ICoreAcceleratorKeysMutableBuilder[Self <: ICoreAcceleratorKeys] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreAcceleratorKeys](x: Self) {
     
-    @scala.inline
-    def setOnacceleratorkeyactivated(value: js.Any): Self = StObject.set(x, "onacceleratorkeyactivated", value.asInstanceOf[js.Any])
+    inline def setOnacceleratorkeyactivated(value: js.Any): Self = StObject.set(x, "onacceleratorkeyactivated", value.asInstanceOf[js.Any])
   }
 }

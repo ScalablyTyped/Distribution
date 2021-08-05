@@ -24,8 +24,7 @@ object Pagination {
   @JSImport("react-bootstrap", "Pagination.Ellipsis")
   @js.native
   def Ellipsis: Instantiable0[typings.reactBootstrap.paginationEllipsisMod.^] = js.native
-  @scala.inline
-  def Ellipsis_=(x: Instantiable0[typings.reactBootstrap.paginationEllipsisMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipsis")(x.asInstanceOf[js.Any])
+  inline def Ellipsis_=(x: Instantiable0[typings.reactBootstrap.paginationEllipsisMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipsis")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.First")
@@ -36,8 +35,7 @@ object Pagination {
   @JSImport("react-bootstrap", "Pagination.First")
   @js.native
   def First: Instantiable0[typings.reactBootstrap.paginationFirstMod.^] = js.native
-  @scala.inline
-  def First_=(x: Instantiable0[typings.reactBootstrap.paginationFirstMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("First")(x.asInstanceOf[js.Any])
+  inline def First_=(x: Instantiable0[typings.reactBootstrap.paginationFirstMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("First")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Item")
@@ -48,8 +46,7 @@ object Pagination {
   @JSImport("react-bootstrap", "Pagination.Item")
   @js.native
   def Item: Instantiable0[typings.reactBootstrap.paginationItemMod.^] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.reactBootstrap.paginationItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.paginationItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Last")
@@ -60,8 +57,7 @@ object Pagination {
   @JSImport("react-bootstrap", "Pagination.Last")
   @js.native
   def Last: Instantiable0[typings.reactBootstrap.paginationLastMod.^] = js.native
-  @scala.inline
-  def Last_=(x: Instantiable0[typings.reactBootstrap.paginationLastMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
+  inline def Last_=(x: Instantiable0[typings.reactBootstrap.paginationLastMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Next")
@@ -72,8 +68,7 @@ object Pagination {
   @JSImport("react-bootstrap", "Pagination.Next")
   @js.native
   def Next: Instantiable0[typings.reactBootstrap.paginationNextMod.^] = js.native
-  @scala.inline
-  def Next_=(x: Instantiable0[typings.reactBootstrap.paginationNextMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Next")(x.asInstanceOf[js.Any])
+  inline def Next_=(x: Instantiable0[typings.reactBootstrap.paginationNextMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Next")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Prev")
@@ -84,6 +79,5 @@ object Pagination {
   @JSImport("react-bootstrap", "Pagination.Prev")
   @js.native
   def Prev: Instantiable0[typings.reactBootstrap.paginationPrevMod.^] = js.native
-  @scala.inline
-  def Prev_=(x: Instantiable0[typings.reactBootstrap.paginationPrevMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Prev")(x.asInstanceOf[js.Any])
+  inline def Prev_=(x: Instantiable0[typings.reactBootstrap.paginationPrevMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Prev")(x.asInstanceOf[js.Any])
 }

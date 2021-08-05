@@ -33,43 +33,31 @@ trait HumanLoopSummary extends StObject {
 }
 object HumanLoopSummary {
   
-  @scala.inline
-  def apply(): HumanLoopSummary = {
+  inline def apply(): HumanLoopSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HumanLoopSummary]
   }
   
-  @scala.inline
-  implicit class HumanLoopSummaryMutableBuilder[Self <: HumanLoopSummary] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
+    inline def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowDefinitionArnUndefined: Self = StObject.set(x, "FlowDefinitionArn", js.undefined)
+    inline def setFlowDefinitionArnUndefined: Self = StObject.set(x, "FlowDefinitionArn", js.undefined)
     
-    @scala.inline
-    def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
+    inline def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopNameUndefined: Self = StObject.set(x, "HumanLoopName", js.undefined)
+    inline def setHumanLoopNameUndefined: Self = StObject.set(x, "HumanLoopName", js.undefined)
     
-    @scala.inline
-    def setHumanLoopStatus(value: HumanLoopStatus): Self = StObject.set(x, "HumanLoopStatus", value.asInstanceOf[js.Any])
+    inline def setHumanLoopStatus(value: HumanLoopStatus): Self = StObject.set(x, "HumanLoopStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopStatusUndefined: Self = StObject.set(x, "HumanLoopStatus", js.undefined)
+    inline def setHumanLoopStatusUndefined: Self = StObject.set(x, "HumanLoopStatus", js.undefined)
   }
 }

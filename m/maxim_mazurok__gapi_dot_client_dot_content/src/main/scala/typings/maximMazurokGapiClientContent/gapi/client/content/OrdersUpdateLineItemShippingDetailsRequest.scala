@@ -23,43 +23,31 @@ trait OrdersUpdateLineItemShippingDetailsRequest extends StObject {
 }
 object OrdersUpdateLineItemShippingDetailsRequest {
   
-  @scala.inline
-  def apply(): OrdersUpdateLineItemShippingDetailsRequest = {
+  inline def apply(): OrdersUpdateLineItemShippingDetailsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersUpdateLineItemShippingDetailsRequest]
   }
   
-  @scala.inline
-  implicit class OrdersUpdateLineItemShippingDetailsRequestMutableBuilder[Self <: OrdersUpdateLineItemShippingDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersUpdateLineItemShippingDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setDeliverByDate(value: String): Self = StObject.set(x, "deliverByDate", value.asInstanceOf[js.Any])
+    inline def setDeliverByDate(value: String): Self = StObject.set(x, "deliverByDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliverByDateUndefined: Self = StObject.set(x, "deliverByDate", js.undefined)
+    inline def setDeliverByDateUndefined: Self = StObject.set(x, "deliverByDate", js.undefined)
     
-    @scala.inline
-    def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+    inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setShipByDate(value: String): Self = StObject.set(x, "shipByDate", value.asInstanceOf[js.Any])
+    inline def setShipByDate(value: String): Self = StObject.set(x, "shipByDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipByDateUndefined: Self = StObject.set(x, "shipByDate", js.undefined)
+    inline def setShipByDateUndefined: Self = StObject.set(x, "shipByDate", js.undefined)
   }
 }

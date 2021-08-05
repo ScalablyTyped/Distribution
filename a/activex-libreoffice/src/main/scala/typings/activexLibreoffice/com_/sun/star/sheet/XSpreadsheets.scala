@@ -39,8 +39,7 @@ trait XSpreadsheets
 }
 object XSpreadsheets {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -62,16 +61,12 @@ object XSpreadsheets {
     __obj.asInstanceOf[XSpreadsheets]
   }
   
-  @scala.inline
-  implicit class XSpreadsheetsMutableBuilder[Self <: XSpreadsheets] (val x: Self) extends AnyVal {
+  extension [Self <: XSpreadsheets](x: Self) {
     
-    @scala.inline
-    def setCopyByName(value: (String, String, Double) => Unit): Self = StObject.set(x, "copyByName", js.Any.fromFunction3(value))
+    inline def setCopyByName(value: (String, String, Double) => Unit): Self = StObject.set(x, "copyByName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInsertNewByName(value: (String, Double) => Unit): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction2(value))
+    inline def setInsertNewByName(value: (String, Double) => Unit): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveByName(value: (String, Double) => Unit): Self = StObject.set(x, "moveByName", js.Any.fromFunction2(value))
+    inline def setMoveByName(value: (String, Double) => Unit): Self = StObject.set(x, "moveByName", js.Any.fromFunction2(value))
   }
 }

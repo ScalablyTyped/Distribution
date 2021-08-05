@@ -33,54 +33,54 @@ object mod {
     /**
       * Clear the internal pending state.
       */
-    var _clearPendingState: js.Any = js.native
+    /* private */ var _clearPendingState: js.Any = js.native
     
     /**
       * Clear the pending timeout.
       */
-    var _clearTimer: js.Any = js.native
+    /* private */ var _clearTimer: js.Any = js.native
     
-    var _commandChanged: js.Any = js.native
+    /* private */ var _commandChanged: js.Any = js.native
     
-    var _commandExecuted: js.Any = js.native
+    /* private */ var _commandExecuted: js.Any = js.native
     
-    var _commands: js.Any = js.native
+    /* private */ var _commands: js.Any = js.native
     
-    var _exactKeyMatch: js.Any = js.native
+    /* private */ var _exactKeyMatch: js.Any = js.native
     
     /**
       * Execute the command for the given key binding.
       *
       * If the command is missing or disabled, a warning will be logged.
       */
-    var _executeKeyBinding: js.Any = js.native
+    /* private */ var _executeKeyBinding: js.Any = js.native
     
-    var _keyBindingChanged: js.Any = js.native
+    /* private */ var _keyBindingChanged: js.Any = js.native
     
-    var _keyBindings: js.Any = js.native
+    /* private */ var _keyBindings: js.Any = js.native
     
-    var _keydownEvents: js.Any = js.native
+    /* private */ var _keydownEvents: js.Any = js.native
     
-    var _keystrokes: js.Any = js.native
+    /* private */ var _keystrokes: js.Any = js.native
     
     /**
       * Handle the partial match timeout.
       */
-    var _onPendingTimeout: js.Any = js.native
+    /* private */ var _onPendingTimeout: js.Any = js.native
     
     /**
       * Replay the keydown events which were suppressed.
       */
-    var _replayKeydownEvents: js.Any = js.native
+    /* private */ var _replayKeydownEvents: js.Any = js.native
     
-    var _replaying: js.Any = js.native
+    /* private */ var _replaying: js.Any = js.native
     
     /**
       * Start or restart the pending timeout.
       */
-    var _startTimer: js.Any = js.native
+    /* private */ var _startTimer: js.Any = js.native
     
-    var _timerID: js.Any = js.native
+    /* private */ var _timerID: js.Any = js.native
     
     /**
       * Add a command to the registry.
@@ -386,8 +386,7 @@ object mod {
     /**
       * Format a keystroke for display on the local system.
       */
-    @scala.inline
-    def formatKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def formatKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Create a normalized keystroke for a `'keydown'` event.
@@ -397,8 +396,7 @@ object mod {
       * @returns A normalized keystroke, or an empty string if the event
       *   does not represent a valid keystroke for the given layout.
       */
-    @scala.inline
-    def keystrokeForKeydownEvent(event: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keystrokeForKeydownEvent")(event.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def keystrokeForKeydownEvent(event: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keystrokeForKeydownEvent")(event.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the platform-specific normalized keys for an options object.
@@ -407,8 +405,7 @@ object mod {
       *
       * @returns Array of combined, normalized keys.
       */
-    @scala.inline
-    def normalizeKeys(options: IKeyBindingOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeys")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def normalizeKeys(options: IKeyBindingOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeys")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Normalize a keystroke into a canonical representation.
@@ -423,8 +420,7 @@ object mod {
       *
       * The `Cmd` modifier is ignored on non-Mac platforms.
       */
-    @scala.inline
-    def normalizeKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalizeKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parse a keystroke into its constituent components.
@@ -448,8 +444,7 @@ object mod {
       *   - The keystroke parts should be separated by whitespace.
       *   - The keystroke is case sensitive.
       */
-    @scala.inline
-    def parseKeystroke(keystroke: String): IKeystrokeParts = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[IKeystrokeParts]
+    inline def parseKeystroke(keystroke: String): IKeystrokeParts = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[IKeystrokeParts]
     
     /**
       * A type alias for a user-defined command function.
@@ -480,24 +475,19 @@ object mod {
     }
     object ICommandChangedArgs {
       
-      @scala.inline
-      def apply(`type`: added | removed | changed | `many-changed`): ICommandChangedArgs = {
+      inline def apply(`type`: added | removed | changed | `many-changed`): ICommandChangedArgs = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICommandChangedArgs]
       }
       
-      @scala.inline
-      implicit class ICommandChangedArgsMutableBuilder[Self <: ICommandChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ICommandChangedArgs](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setType(value: added | removed | changed | `many-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: added | removed | changed | `many-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -523,23 +513,18 @@ object mod {
     }
     object ICommandExecutedArgs {
       
-      @scala.inline
-      def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[js.Any]): ICommandExecutedArgs = {
+      inline def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[js.Any]): ICommandExecutedArgs = {
         val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICommandExecutedArgs]
       }
       
-      @scala.inline
-      implicit class ICommandExecutedArgsMutableBuilder[Self <: ICommandExecutedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ICommandExecutedArgs](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResult(value: js.Promise[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: js.Promise[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
     }
     
@@ -752,116 +737,80 @@ object mod {
     }
     object ICommandOptions {
       
-      @scala.inline
-      def apply(execute: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): ICommandOptions = {
+      inline def apply(execute: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): ICommandOptions = {
         val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
         __obj.asInstanceOf[ICommandOptions]
       }
       
-      @scala.inline
-      implicit class ICommandOptionsMutableBuilder[Self <: ICommandOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ICommandOptions](x: Self) {
         
-        @scala.inline
-        def setCaption(value: String | CommandFunc[String]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        inline def setCaption(value: String | CommandFunc[String]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaptionFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+        inline def setCaptionFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+        inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String | CommandFunc[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String | CommandFunc[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
+        inline def setClassNameFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setDataset(value: Dataset | CommandFunc[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+        inline def setDataset(value: Dataset | CommandFunc[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasetFunction1(value: /* args */ ReadonlyPartialJSONObject => Dataset): Self = StObject.set(x, "dataset", js.Any.fromFunction1(value))
+        inline def setDatasetFunction1(value: /* args */ ReadonlyPartialJSONObject => Dataset): Self = StObject.set(x, "dataset", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+        inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
         
-        @scala.inline
-        def setExecute(value: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+        inline def setExecute(value: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIcon(value: IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String | CommandFunc[String]): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String | CommandFunc[String]): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClassFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "iconClass", js.Any.fromFunction1(value))
+        inline def setIconClassFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "iconClass", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+        inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
         
-        @scala.inline
-        def setIconFunction1(value: /* args */ ReadonlyPartialJSONObject => js.UndefOr[IRenderer | String]): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+        inline def setIconFunction1(value: /* args */ ReadonlyPartialJSONObject => js.UndefOr[IRenderer | String]): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIconLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabelFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "iconLabel", js.Any.fromFunction1(value))
+        inline def setIconLabelFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "iconLabel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
+        inline def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIsEnabled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
+        inline def setIsEnabled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+        inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
         
-        @scala.inline
-        def setIsToggled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isToggled", js.Any.fromFunction1(value))
+        inline def setIsToggled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isToggled", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsToggledUndefined: Self = StObject.set(x, "isToggled", js.undefined)
+        inline def setIsToggledUndefined: Self = StObject.set(x, "isToggled", js.undefined)
         
-        @scala.inline
-        def setIsVisible(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
+        inline def setIsVisible(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+        inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+        inline def setLabelFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setMnemonic(value: Double | CommandFunc[Double]): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+        inline def setMnemonic(value: Double | CommandFunc[Double]): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMnemonicFunction1(value: /* args */ ReadonlyPartialJSONObject => Double): Self = StObject.set(x, "mnemonic", js.Any.fromFunction1(value))
+        inline def setMnemonicFunction1(value: /* args */ ReadonlyPartialJSONObject => Double): Self = StObject.set(x, "mnemonic", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
+        inline def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
         
-        @scala.inline
-        def setUsage(value: String | CommandFunc[String]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+        inline def setUsage(value: String | CommandFunc[String]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsageFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "usage", js.Any.fromFunction1(value))
+        inline def setUsageFunction1(value: /* args */ ReadonlyPartialJSONObject => String): Self = StObject.set(x, "usage", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+        inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
       }
     }
     
@@ -895,29 +844,22 @@ object mod {
     }
     object IKeyBinding {
       
-      @scala.inline
-      def apply(args: ReadonlyPartialJSONObject, command: String, keys: js.Array[String], selector: String): IKeyBinding = {
+      inline def apply(args: ReadonlyPartialJSONObject, command: String, keys: js.Array[String], selector: String): IKeyBinding = {
         val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKeyBinding]
       }
       
-      @scala.inline
-      implicit class IKeyBindingMutableBuilder[Self <: IKeyBinding] (val x: Self) extends AnyVal {
+      extension [Self <: IKeyBinding](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+        inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       }
     }
     
@@ -938,21 +880,17 @@ object mod {
     }
     object IKeyBindingChangedArgs {
       
-      @scala.inline
-      def apply(binding: IKeyBinding, `type`: added | removed): IKeyBindingChangedArgs = {
+      inline def apply(binding: IKeyBinding, `type`: added | removed): IKeyBindingChangedArgs = {
         val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKeyBindingChangedArgs]
       }
       
-      @scala.inline
-      implicit class IKeyBindingChangedArgsMutableBuilder[Self <: IKeyBindingChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: IKeyBindingChangedArgs](x: Self) {
         
-        @scala.inline
-        def setBinding(value: IKeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+        inline def setBinding(value: IKeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: added | removed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: added | removed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1031,59 +969,42 @@ object mod {
     }
     object IKeyBindingOptions {
       
-      @scala.inline
-      def apply(command: String, keys: js.Array[String], selector: String): IKeyBindingOptions = {
+      inline def apply(command: String, keys: js.Array[String], selector: String): IKeyBindingOptions = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKeyBindingOptions]
       }
       
-      @scala.inline
-      implicit class IKeyBindingOptionsMutableBuilder[Self <: IKeyBindingOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IKeyBindingOptions](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+        inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
         
-        @scala.inline
-        def setLinuxKeys(value: js.Array[String]): Self = StObject.set(x, "linuxKeys", value.asInstanceOf[js.Any])
+        inline def setLinuxKeys(value: js.Array[String]): Self = StObject.set(x, "linuxKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinuxKeysUndefined: Self = StObject.set(x, "linuxKeys", js.undefined)
+        inline def setLinuxKeysUndefined: Self = StObject.set(x, "linuxKeys", js.undefined)
         
-        @scala.inline
-        def setLinuxKeysVarargs(value: String*): Self = StObject.set(x, "linuxKeys", js.Array(value :_*))
+        inline def setLinuxKeysVarargs(value: String*): Self = StObject.set(x, "linuxKeys", js.Array(value :_*))
         
-        @scala.inline
-        def setMacKeys(value: js.Array[String]): Self = StObject.set(x, "macKeys", value.asInstanceOf[js.Any])
+        inline def setMacKeys(value: js.Array[String]): Self = StObject.set(x, "macKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMacKeysUndefined: Self = StObject.set(x, "macKeys", js.undefined)
+        inline def setMacKeysUndefined: Self = StObject.set(x, "macKeys", js.undefined)
         
-        @scala.inline
-        def setMacKeysVarargs(value: String*): Self = StObject.set(x, "macKeys", js.Array(value :_*))
+        inline def setMacKeysVarargs(value: String*): Self = StObject.set(x, "macKeys", js.Array(value :_*))
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWinKeys(value: js.Array[String]): Self = StObject.set(x, "winKeys", value.asInstanceOf[js.Any])
+        inline def setWinKeys(value: js.Array[String]): Self = StObject.set(x, "winKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWinKeysUndefined: Self = StObject.set(x, "winKeys", js.undefined)
+        inline def setWinKeysUndefined: Self = StObject.set(x, "winKeys", js.undefined)
         
-        @scala.inline
-        def setWinKeysVarargs(value: String*): Self = StObject.set(x, "winKeys", js.Array(value :_*))
+        inline def setWinKeysVarargs(value: String*): Self = StObject.set(x, "winKeys", js.Array(value :_*))
       }
     }
     
@@ -1119,29 +1040,22 @@ object mod {
     }
     object IKeystrokeParts {
       
-      @scala.inline
-      def apply(alt: Boolean, cmd: Boolean, ctrl: Boolean, key: String, shift: Boolean): IKeystrokeParts = {
+      inline def apply(alt: Boolean, cmd: Boolean, ctrl: Boolean, key: String, shift: Boolean): IKeystrokeParts = {
         val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], ctrl = ctrl.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKeystrokeParts]
       }
       
-      @scala.inline
-      implicit class IKeystrokePartsMutableBuilder[Self <: IKeystrokeParts] (val x: Self) extends AnyVal {
+      extension [Self <: IKeystrokeParts](x: Self) {
         
-        @scala.inline
-        def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCmd(value: Boolean): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+        inline def setCmd(value: Boolean): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+        inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+        inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
       }
     }
   }

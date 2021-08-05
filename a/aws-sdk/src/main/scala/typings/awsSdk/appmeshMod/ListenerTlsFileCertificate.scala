@@ -18,19 +18,15 @@ trait ListenerTlsFileCertificate extends StObject {
 }
 object ListenerTlsFileCertificate {
   
-  @scala.inline
-  def apply(certificateChain: FilePath, privateKey: FilePath): ListenerTlsFileCertificate = {
+  inline def apply(certificateChain: FilePath, privateKey: FilePath): ListenerTlsFileCertificate = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerTlsFileCertificate]
   }
   
-  @scala.inline
-  implicit class ListenerTlsFileCertificateMutableBuilder[Self <: ListenerTlsFileCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerTlsFileCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: FilePath): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: FilePath): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: FilePath): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: FilePath): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait WorkItemTrackingResourceReference extends StObject {
 }
 object WorkItemTrackingResourceReference {
   
-  @scala.inline
-  def apply(url: String): WorkItemTrackingResourceReference = {
+  inline def apply(url: String): WorkItemTrackingResourceReference = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemTrackingResourceReference]
   }
   
-  @scala.inline
-  implicit class WorkItemTrackingResourceReferenceMutableBuilder[Self <: WorkItemTrackingResourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTrackingResourceReference](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

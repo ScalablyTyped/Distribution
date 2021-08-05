@@ -76,81 +76,57 @@ trait JQueryAnimationOptions extends StObject {
 }
 object JQueryAnimationOptions {
   
-  @scala.inline
-  def apply(): JQueryAnimationOptions = {
+  inline def apply(): JQueryAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryAnimationOptions]
   }
   
-  @scala.inline
-  implicit class JQueryAnimationOptionsMutableBuilder[Self <: JQueryAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setAlways(value: (/* animation */ JQueryPromise[js.Any], /* jumpedToEnd */ Boolean) => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
+    inline def setAlways(value: (/* animation */ JQueryPromise[js.Any], /* jumpedToEnd */ Boolean) => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+    inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
     
-    @scala.inline
-    def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDone(value: (/* animation */ JQueryPromise[js.Any], /* jumpedToEnd */ Boolean) => js.Any): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+    inline def setDone(value: (/* animation */ JQueryPromise[js.Any], /* jumpedToEnd */ Boolean) => js.Any): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setFail(value: (/* animation */ JQueryPromise[js.Any], /* jumpedToEnd */ Boolean) => js.Any): Self = StObject.set(x, "fail", js.Any.fromFunction2(value))
+    inline def setFail(value: (/* animation */ JQueryPromise[js.Any], /* jumpedToEnd */ Boolean) => js.Any): Self = StObject.set(x, "fail", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setProgress(
+    inline def setProgress(
       value: (/* animation */ JQueryPromise[js.Any], /* progress */ Double, /* remainingMs */ Double) => js.Any
     ): Self = StObject.set(x, "progress", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setQueue(value: js.Any): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: js.Any): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setSpecialEasing(value: Object): Self = StObject.set(x, "specialEasing", value.asInstanceOf[js.Any])
+    inline def setSpecialEasing(value: Object): Self = StObject.set(x, "specialEasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialEasingUndefined: Self = StObject.set(x, "specialEasing", js.undefined)
+    inline def setSpecialEasingUndefined: Self = StObject.set(x, "specialEasing", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* animation */ JQueryPromise[js.Any] => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* animation */ JQueryPromise[js.Any] => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStep(value: (/* now */ Double, /* tween */ js.Any) => js.Any): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
+    inline def setStep(value: (/* now */ Double, /* tween */ js.Any) => js.Any): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

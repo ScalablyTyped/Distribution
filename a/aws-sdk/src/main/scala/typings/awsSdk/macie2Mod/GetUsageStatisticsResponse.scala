@@ -18,28 +18,21 @@ trait GetUsageStatisticsResponse extends StObject {
 }
 object GetUsageStatisticsResponse {
   
-  @scala.inline
-  def apply(): GetUsageStatisticsResponse = {
+  inline def apply(): GetUsageStatisticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUsageStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class GetUsageStatisticsResponseMutableBuilder[Self <: GetUsageStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRecords(value: listOfUsageRecord): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: listOfUsageRecord): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    @scala.inline
-    def setRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
   }
 }

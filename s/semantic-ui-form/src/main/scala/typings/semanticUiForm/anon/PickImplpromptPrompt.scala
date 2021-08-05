@@ -14,16 +14,13 @@ trait PickImplpromptPrompt extends StObject {
 }
 object PickImplpromptPrompt {
   
-  @scala.inline
-  def apply(prompt: /* errors */ js.Array[String] => JQuery): PickImplpromptPrompt = {
+  inline def apply(prompt: /* errors */ js.Array[String] => JQuery): PickImplpromptPrompt = {
     val __obj = js.Dynamic.literal(prompt = js.Any.fromFunction1(prompt))
     __obj.asInstanceOf[PickImplpromptPrompt]
   }
   
-  @scala.inline
-  implicit class PickImplpromptPromptMutableBuilder[Self <: PickImplpromptPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpromptPrompt](x: Self) {
     
-    @scala.inline
-    def setPrompt(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
+    inline def setPrompt(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
   }
 }

@@ -15,25 +15,19 @@ trait SchemaUpdateDataSourceRequest extends StObject {
 }
 object SchemaUpdateDataSourceRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateDataSourceRequest = {
+  inline def apply(): SchemaUpdateDataSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateDataSourceRequestMutableBuilder[Self <: SchemaUpdateDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaDataSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaDataSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

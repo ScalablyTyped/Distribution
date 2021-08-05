@@ -12,8 +12,7 @@ trait IMemberExpressionSyntax
 }
 object IMemberExpressionSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -45,10 +44,8 @@ object IMemberExpressionSyntax {
     __obj.asInstanceOf[IMemberExpressionSyntax]
   }
   
-  @scala.inline
-  implicit class IMemberExpressionSyntaxMutableBuilder[Self <: IMemberExpressionSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IMemberExpressionSyntax](x: Self) {
     
-    @scala.inline
-    def setIsMemberExpression(value: () => Boolean): Self = StObject.set(x, "isMemberExpression", js.Any.fromFunction0(value))
+    inline def setIsMemberExpression(value: () => Boolean): Self = StObject.set(x, "isMemberExpression", js.Any.fromFunction0(value))
   }
 }

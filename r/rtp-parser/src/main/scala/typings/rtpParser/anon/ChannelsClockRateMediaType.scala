@@ -19,25 +19,19 @@ trait ChannelsClockRateMediaType extends StObject {
 }
 object ChannelsClockRateMediaType {
   
-  @scala.inline
-  def apply(): ChannelsClockRateMediaType = {
+  inline def apply(): ChannelsClockRateMediaType = {
     val __obj = js.Dynamic.literal(channels = 1, clockRate = 11025, mediaType = "A", name = "DVI4")
     __obj.asInstanceOf[ChannelsClockRateMediaType]
   }
   
-  @scala.inline
-  implicit class ChannelsClockRateMediaTypeMutableBuilder[Self <: ChannelsClockRateMediaType] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelsClockRateMediaType](x: Self) {
     
-    @scala.inline
-    def setChannels(value: typings.rtpParser.rtpParserNumbers.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: typings.rtpParser.rtpParserNumbers.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockRate(value: `11025`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
+    inline def setClockRate(value: `11025`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: A): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: A): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DVI4): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DVI4): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait AnnotationsInfinityLineTypeLineOptions extends StObject {
 }
 object AnnotationsInfinityLineTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsInfinityLineTypeLineOptions = {
+  inline def apply(): AnnotationsInfinityLineTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsInfinityLineTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsInfinityLineTypeLineOptionsMutableBuilder[Self <: AnnotationsInfinityLineTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsInfinityLineTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait EndPoint extends StObject {
 }
 object EndPoint {
   
-  @scala.inline
-  def apply(StreamType: String): EndPoint = {
+  inline def apply(StreamType: String): EndPoint = {
     val __obj = js.Dynamic.literal(StreamType = StreamType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndPoint]
   }
   
-  @scala.inline
-  implicit class EndPointMutableBuilder[Self <: EndPoint] (val x: Self) extends AnyVal {
+  extension [Self <: EndPoint](x: Self) {
     
-    @scala.inline
-    def setKinesisStreamConfig(value: KinesisStreamConfig): Self = StObject.set(x, "KinesisStreamConfig", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamConfig(value: KinesisStreamConfig): Self = StObject.set(x, "KinesisStreamConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamConfigUndefined: Self = StObject.set(x, "KinesisStreamConfig", js.undefined)
+    inline def setKinesisStreamConfigUndefined: Self = StObject.set(x, "KinesisStreamConfig", js.undefined)
     
-    @scala.inline
-    def setStreamType(value: String): Self = StObject.set(x, "StreamType", value.asInstanceOf[js.Any])
+    inline def setStreamType(value: String): Self = StObject.set(x, "StreamType", value.asInstanceOf[js.Any])
   }
 }

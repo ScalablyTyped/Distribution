@@ -13,19 +13,15 @@ trait Messages extends StObject {
 }
 object Messages {
   
-  @scala.inline
-  def apply(Errors: listOfString): Messages = {
+  inline def apply(Errors: listOfString): Messages = {
     val __obj = js.Dynamic.literal(Errors = Errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Messages]
   }
   
-  @scala.inline
-  implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+  extension [Self <: Messages](x: Self) {
     
-    @scala.inline
-    def setErrors(value: listOfString): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: listOfString): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: string*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: string*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

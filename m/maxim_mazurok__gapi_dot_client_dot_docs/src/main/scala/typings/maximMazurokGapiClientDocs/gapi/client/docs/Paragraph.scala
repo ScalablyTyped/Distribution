@@ -42,73 +42,55 @@ trait Paragraph extends StObject {
 }
 object Paragraph {
   
-  @scala.inline
-  def apply(): Paragraph = {
+  inline def apply(): Paragraph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Paragraph]
   }
   
-  @scala.inline
-  implicit class ParagraphMutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
+  extension [Self <: Paragraph](x: Self) {
     
-    @scala.inline
-    def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+    inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
     
-    @scala.inline
-    def setElements(value: js.Array[ParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[ParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+    inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+    inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
     
-    @scala.inline
-    def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
+    inline def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
+    inline def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
     
-    @scala.inline
-    def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
+    inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestedBulletChanges(
+    inline def setSuggestedBulletChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedBullet}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
+    inline def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
     
-    @scala.inline
-    def setSuggestedParagraphStyleChanges(
+    inline def setSuggestedParagraphStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedParagraphStyle}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
+    inline def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
     
-    @scala.inline
-    def setSuggestedPositionedObjectIds(
+    inline def setSuggestedPositionedObjectIds(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.ObjectReferences}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
+    inline def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
   }
 }

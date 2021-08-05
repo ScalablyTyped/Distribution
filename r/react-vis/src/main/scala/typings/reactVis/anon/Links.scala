@@ -15,31 +15,23 @@ trait Links extends StObject {
 }
 object Links {
   
-  @scala.inline
-  def apply(): Links = {
+  inline def apply(): Links = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Links]
   }
   
-  @scala.inline
-  implicit class LinksMutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
+  extension [Self <: Links](x: Self) {
     
-    @scala.inline
-    def setLabels(value: CSSProperties): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: CSSProperties): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLinks(value: CSSProperties): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: CSSProperties): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setRects(value: CSSProperties): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
+    inline def setRects(value: CSSProperties): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectsUndefined: Self = StObject.set(x, "rects", js.undefined)
+    inline def setRectsUndefined: Self = StObject.set(x, "rects", js.undefined)
   }
 }

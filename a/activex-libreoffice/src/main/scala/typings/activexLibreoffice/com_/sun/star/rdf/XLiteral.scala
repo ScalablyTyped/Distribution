@@ -24,22 +24,17 @@ trait XLiteral
 }
 object XLiteral {
   
-  @scala.inline
-  def apply(Datatype: XURI, Language: String, StringValue: String, Value: String): XLiteral = {
+  inline def apply(Datatype: XURI, Language: String, StringValue: String, Value: String): XLiteral = {
     val __obj = js.Dynamic.literal(Datatype = Datatype.asInstanceOf[js.Any], Language = Language.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[XLiteral]
   }
   
-  @scala.inline
-  implicit class XLiteralMutableBuilder[Self <: XLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: XLiteral](x: Self) {
     
-    @scala.inline
-    def setDatatype(value: XURI): Self = StObject.set(x, "Datatype", value.asInstanceOf[js.Any])
+    inline def setDatatype(value: XURI): Self = StObject.set(x, "Datatype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

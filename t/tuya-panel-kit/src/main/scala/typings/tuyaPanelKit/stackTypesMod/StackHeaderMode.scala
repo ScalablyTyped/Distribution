@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackHeaderMode extends StObject
 object StackHeaderMode {
   
-  @scala.inline
-  def float: typings.tuyaPanelKit.tuyaPanelKitStrings.float = "float".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.float]
+  inline def float: typings.tuyaPanelKit.tuyaPanelKitStrings.float = "float".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.float]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def screen: typings.tuyaPanelKit.tuyaPanelKitStrings.screen = "screen".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.screen]
+  inline def screen: typings.tuyaPanelKit.tuyaPanelKitStrings.screen = "screen".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.screen]
 }

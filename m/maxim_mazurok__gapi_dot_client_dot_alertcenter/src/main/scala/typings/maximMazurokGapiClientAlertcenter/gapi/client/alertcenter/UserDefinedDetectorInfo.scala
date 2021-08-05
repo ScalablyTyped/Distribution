@@ -14,25 +14,19 @@ trait UserDefinedDetectorInfo extends StObject {
 }
 object UserDefinedDetectorInfo {
   
-  @scala.inline
-  def apply(): UserDefinedDetectorInfo = {
+  inline def apply(): UserDefinedDetectorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserDefinedDetectorInfo]
   }
   
-  @scala.inline
-  implicit class UserDefinedDetectorInfoMutableBuilder[Self <: UserDefinedDetectorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedDetectorInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

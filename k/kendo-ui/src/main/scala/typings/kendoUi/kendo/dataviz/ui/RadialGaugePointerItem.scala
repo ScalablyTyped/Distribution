@@ -16,37 +16,27 @@ trait RadialGaugePointerItem extends StObject {
 }
 object RadialGaugePointerItem {
   
-  @scala.inline
-  def apply(): RadialGaugePointerItem = {
+  inline def apply(): RadialGaugePointerItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadialGaugePointerItem]
   }
   
-  @scala.inline
-  implicit class RadialGaugePointerItemMutableBuilder[Self <: RadialGaugePointerItem] (val x: Self) extends AnyVal {
+  extension [Self <: RadialGaugePointerItem](x: Self) {
     
-    @scala.inline
-    def setCap(value: RadialGaugePointerItemCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: RadialGaugePointerItemCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
+    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

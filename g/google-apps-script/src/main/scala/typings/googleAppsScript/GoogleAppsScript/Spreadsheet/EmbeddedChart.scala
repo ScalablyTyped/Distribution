@@ -62,8 +62,7 @@ trait EmbeddedChart extends StObject {
 }
 object EmbeddedChart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAs: String => Blob,
     getBlob: () => Blob,
     getChartId: () => Integer | Null,
@@ -80,40 +79,28 @@ object EmbeddedChart {
     __obj.asInstanceOf[EmbeddedChart]
   }
   
-  @scala.inline
-  implicit class EmbeddedChartMutableBuilder[Self <: EmbeddedChart] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedChart](x: Self) {
     
-    @scala.inline
-    def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+    inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+    inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChartId(value: () => Integer | Null): Self = StObject.set(x, "getChartId", js.Any.fromFunction0(value))
+    inline def setGetChartId(value: () => Integer | Null): Self = StObject.set(x, "getChartId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainerInfo(value: () => ContainerInfo): Self = StObject.set(x, "getContainerInfo", js.Any.fromFunction0(value))
+    inline def setGetContainerInfo(value: () => ContainerInfo): Self = StObject.set(x, "getContainerInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHiddenDimensionStrategy(value: () => ChartHiddenDimensionStrategy): Self = StObject.set(x, "getHiddenDimensionStrategy", js.Any.fromFunction0(value))
+    inline def setGetHiddenDimensionStrategy(value: () => ChartHiddenDimensionStrategy): Self = StObject.set(x, "getHiddenDimensionStrategy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMergeStrategy(value: () => ChartMergeStrategy): Self = StObject.set(x, "getMergeStrategy", js.Any.fromFunction0(value))
+    inline def setGetMergeStrategy(value: () => ChartMergeStrategy): Self = StObject.set(x, "getMergeStrategy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumHeaders(value: () => Integer): Self = StObject.set(x, "getNumHeaders", js.Any.fromFunction0(value))
+    inline def setGetNumHeaders(value: () => Integer): Self = StObject.set(x, "getNumHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptions(value: () => ChartOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+    inline def setGetOptions(value: () => ChartOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRanges(value: () => js.Array[Range]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
+    inline def setGetRanges(value: () => js.Array[Range]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTransposeRowsAndColumns(value: () => Boolean): Self = StObject.set(x, "getTransposeRowsAndColumns", js.Any.fromFunction0(value))
+    inline def setGetTransposeRowsAndColumns(value: () => Boolean): Self = StObject.set(x, "getTransposeRowsAndColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModify(value: () => EmbeddedChartBuilder): Self = StObject.set(x, "modify", js.Any.fromFunction0(value))
+    inline def setModify(value: () => EmbeddedChartBuilder): Self = StObject.set(x, "modify", js.Any.fromFunction0(value))
   }
 }

@@ -40,8 +40,7 @@ trait BuildDefinitionSourceProvider extends StObject {
 }
 object BuildDefinitionSourceProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionUri: String,
     fields: StringDictionary[String],
     id: Double,
@@ -53,25 +52,18 @@ object BuildDefinitionSourceProvider {
     __obj.asInstanceOf[BuildDefinitionSourceProvider]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionSourceProviderMutableBuilder[Self <: BuildDefinitionSourceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionSourceProvider](x: Self) {
     
-    @scala.inline
-    def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
+    inline def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTriggerTypes(value: DefinitionTriggerType): Self = StObject.set(x, "supportedTriggerTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedTriggerTypes(value: DefinitionTriggerType): Self = StObject.set(x, "supportedTriggerTypes", value.asInstanceOf[js.Any])
   }
 }

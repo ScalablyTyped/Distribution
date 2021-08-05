@@ -17,8 +17,7 @@ trait SubMerchantAccountApprovedNotification
 }
 object SubMerchantAccountApprovedNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: SubMerchantAccountApprovedNotificationKind,
     merchantAccount: MerchantAccount,
     timestamp: Date
@@ -27,13 +26,10 @@ object SubMerchantAccountApprovedNotification {
     __obj.asInstanceOf[SubMerchantAccountApprovedNotification]
   }
   
-  @scala.inline
-  implicit class SubMerchantAccountApprovedNotificationMutableBuilder[Self <: SubMerchantAccountApprovedNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SubMerchantAccountApprovedNotification](x: Self) {
     
-    @scala.inline
-    def setKind(value: SubMerchantAccountApprovedNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: SubMerchantAccountApprovedNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantAccount(value: MerchantAccount): Self = StObject.set(x, "merchantAccount", value.asInstanceOf[js.Any])
+    inline def setMerchantAccount(value: MerchantAccount): Self = StObject.set(x, "merchantAccount", value.asInstanceOf[js.Any])
   }
 }

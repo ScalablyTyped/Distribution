@@ -80,8 +80,7 @@ trait Operations extends StObject {
 }
 object Operations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PNAccessManagerAudit: String,
     PNAccessManagerGrant: String,
     PNAddChannelsToGroupOperation: String,
@@ -123,115 +122,78 @@ object Operations {
     __obj.asInstanceOf[Operations]
   }
   
-  @scala.inline
-  implicit class OperationsMutableBuilder[Self <: Operations] (val x: Self) extends AnyVal {
+  extension [Self <: Operations](x: Self) {
     
-    @scala.inline
-    def setPNAccessManagerAudit(value: String): Self = StObject.set(x, "PNAccessManagerAudit", value.asInstanceOf[js.Any])
+    inline def setPNAccessManagerAudit(value: String): Self = StObject.set(x, "PNAccessManagerAudit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNAccessManagerGrant(value: String): Self = StObject.set(x, "PNAccessManagerGrant", value.asInstanceOf[js.Any])
+    inline def setPNAccessManagerGrant(value: String): Self = StObject.set(x, "PNAccessManagerGrant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNAddChannelsToGroupOperation(value: String): Self = StObject.set(x, "PNAddChannelsToGroupOperation", value.asInstanceOf[js.Any])
+    inline def setPNAddChannelsToGroupOperation(value: String): Self = StObject.set(x, "PNAddChannelsToGroupOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNAddMessageActionOperation(value: String): Self = StObject.set(x, "PNAddMessageActionOperation", value.asInstanceOf[js.Any])
+    inline def setPNAddMessageActionOperation(value: String): Self = StObject.set(x, "PNAddMessageActionOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNChannelGroupsOperation(value: String): Self = StObject.set(x, "PNChannelGroupsOperation", value.asInstanceOf[js.Any])
+    inline def setPNChannelGroupsOperation(value: String): Self = StObject.set(x, "PNChannelGroupsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNChannelsForGroupOperation(value: String): Self = StObject.set(x, "PNChannelsForGroupOperation", value.asInstanceOf[js.Any])
+    inline def setPNChannelsForGroupOperation(value: String): Self = StObject.set(x, "PNChannelsForGroupOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNCreateSpaceOperation(value: String): Self = StObject.set(x, "PNCreateSpaceOperation", value.asInstanceOf[js.Any])
+    inline def setPNCreateSpaceOperation(value: String): Self = StObject.set(x, "PNCreateSpaceOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNCreateUserOperation(value: String): Self = StObject.set(x, "PNCreateUserOperation", value.asInstanceOf[js.Any])
+    inline def setPNCreateUserOperation(value: String): Self = StObject.set(x, "PNCreateUserOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNDeleteMessagesOperation(value: String): Self = StObject.set(x, "PNDeleteMessagesOperation", value.asInstanceOf[js.Any])
+    inline def setPNDeleteMessagesOperation(value: String): Self = StObject.set(x, "PNDeleteMessagesOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNDeleteSpaceOperation(value: String): Self = StObject.set(x, "PNDeleteSpaceOperation", value.asInstanceOf[js.Any])
+    inline def setPNDeleteSpaceOperation(value: String): Self = StObject.set(x, "PNDeleteSpaceOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNDeleteUserOperation(value: String): Self = StObject.set(x, "PNDeleteUserOperation", value.asInstanceOf[js.Any])
+    inline def setPNDeleteUserOperation(value: String): Self = StObject.set(x, "PNDeleteUserOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNFetchMessagesOperation(value: String): Self = StObject.set(x, "PNFetchMessagesOperation", value.asInstanceOf[js.Any])
+    inline def setPNFetchMessagesOperation(value: String): Self = StObject.set(x, "PNFetchMessagesOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNGetMembersOperation(value: String): Self = StObject.set(x, "PNGetMembersOperation", value.asInstanceOf[js.Any])
+    inline def setPNGetMembersOperation(value: String): Self = StObject.set(x, "PNGetMembersOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNGetMembershipsOperation(value: String): Self = StObject.set(x, "PNGetMembershipsOperation", value.asInstanceOf[js.Any])
+    inline def setPNGetMembershipsOperation(value: String): Self = StObject.set(x, "PNGetMembershipsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNGetMessageActionsOperation(value: String): Self = StObject.set(x, "PNGetMessageActionsOperation", value.asInstanceOf[js.Any])
+    inline def setPNGetMessageActionsOperation(value: String): Self = StObject.set(x, "PNGetMessageActionsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNGetSpacesOperation(value: String): Self = StObject.set(x, "PNGetSpacesOperation", value.asInstanceOf[js.Any])
+    inline def setPNGetSpacesOperation(value: String): Self = StObject.set(x, "PNGetSpacesOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNGetStateOperation(value: String): Self = StObject.set(x, "PNGetStateOperation", value.asInstanceOf[js.Any])
+    inline def setPNGetStateOperation(value: String): Self = StObject.set(x, "PNGetStateOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNGetUsersOperation(value: String): Self = StObject.set(x, "PNGetUsersOperation", value.asInstanceOf[js.Any])
+    inline def setPNGetUsersOperation(value: String): Self = StObject.set(x, "PNGetUsersOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNHeartbeatOperation(value: String): Self = StObject.set(x, "PNHeartbeatOperation", value.asInstanceOf[js.Any])
+    inline def setPNHeartbeatOperation(value: String): Self = StObject.set(x, "PNHeartbeatOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNHereNowOperation(value: String): Self = StObject.set(x, "PNHereNowOperation", value.asInstanceOf[js.Any])
+    inline def setPNHereNowOperation(value: String): Self = StObject.set(x, "PNHereNowOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNHistoryOperation(value: String): Self = StObject.set(x, "PNHistoryOperation", value.asInstanceOf[js.Any])
+    inline def setPNHistoryOperation(value: String): Self = StObject.set(x, "PNHistoryOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNMessageCountsOperation(value: String): Self = StObject.set(x, "PNMessageCountsOperation", value.asInstanceOf[js.Any])
+    inline def setPNMessageCountsOperation(value: String): Self = StObject.set(x, "PNMessageCountsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNPublishOperation(value: String): Self = StObject.set(x, "PNPublishOperation", value.asInstanceOf[js.Any])
+    inline def setPNPublishOperation(value: String): Self = StObject.set(x, "PNPublishOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNPushNotificationEnabledChannelsOperation(value: String): Self = StObject.set(x, "PNPushNotificationEnabledChannelsOperation", value.asInstanceOf[js.Any])
+    inline def setPNPushNotificationEnabledChannelsOperation(value: String): Self = StObject.set(x, "PNPushNotificationEnabledChannelsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNRemoveAllPushNotificationsOperation(value: String): Self = StObject.set(x, "PNRemoveAllPushNotificationsOperation", value.asInstanceOf[js.Any])
+    inline def setPNRemoveAllPushNotificationsOperation(value: String): Self = StObject.set(x, "PNRemoveAllPushNotificationsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNRemoveChannelsFromGroupOperation(value: String): Self = StObject.set(x, "PNRemoveChannelsFromGroupOperation", value.asInstanceOf[js.Any])
+    inline def setPNRemoveChannelsFromGroupOperation(value: String): Self = StObject.set(x, "PNRemoveChannelsFromGroupOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNRemoveGroupOperation(value: String): Self = StObject.set(x, "PNRemoveGroupOperation", value.asInstanceOf[js.Any])
+    inline def setPNRemoveGroupOperation(value: String): Self = StObject.set(x, "PNRemoveGroupOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNRemoveMessageActionOperation(value: String): Self = StObject.set(x, "PNRemoveMessageActionOperation", value.asInstanceOf[js.Any])
+    inline def setPNRemoveMessageActionOperation(value: String): Self = StObject.set(x, "PNRemoveMessageActionOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNSetStateOperation(value: String): Self = StObject.set(x, "PNSetStateOperation", value.asInstanceOf[js.Any])
+    inline def setPNSetStateOperation(value: String): Self = StObject.set(x, "PNSetStateOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNSubscribeOperation(value: String): Self = StObject.set(x, "PNSubscribeOperation", value.asInstanceOf[js.Any])
+    inline def setPNSubscribeOperation(value: String): Self = StObject.set(x, "PNSubscribeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNTimeOperation(value: String): Self = StObject.set(x, "PNTimeOperation", value.asInstanceOf[js.Any])
+    inline def setPNTimeOperation(value: String): Self = StObject.set(x, "PNTimeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNUnsubscribeOperation(value: String): Self = StObject.set(x, "PNUnsubscribeOperation", value.asInstanceOf[js.Any])
+    inline def setPNUnsubscribeOperation(value: String): Self = StObject.set(x, "PNUnsubscribeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNUpdateMembershipsOperation(value: String): Self = StObject.set(x, "PNUpdateMembershipsOperation", value.asInstanceOf[js.Any])
+    inline def setPNUpdateMembershipsOperation(value: String): Self = StObject.set(x, "PNUpdateMembershipsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNUpdateSpaceOperation(value: String): Self = StObject.set(x, "PNUpdateSpaceOperation", value.asInstanceOf[js.Any])
+    inline def setPNUpdateSpaceOperation(value: String): Self = StObject.set(x, "PNUpdateSpaceOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNUpdateUserOperation(value: String): Self = StObject.set(x, "PNUpdateUserOperation", value.asInstanceOf[js.Any])
+    inline def setPNUpdateUserOperation(value: String): Self = StObject.set(x, "PNUpdateUserOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNWhereNowOperation(value: String): Self = StObject.set(x, "PNWhereNowOperation", value.asInstanceOf[js.Any])
+    inline def setPNWhereNowOperation(value: String): Self = StObject.set(x, "PNWhereNowOperation", value.asInstanceOf[js.Any])
   }
 }

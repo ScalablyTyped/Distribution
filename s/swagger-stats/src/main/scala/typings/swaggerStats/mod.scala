@@ -32,11 +32,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCoreStats(): CoreStats = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoreStats")().asInstanceOf[CoreStats]
+  inline def getCoreStats(): CoreStats = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoreStats")().asInstanceOf[CoreStats]
   
-  @scala.inline
-  def getFastifyPlugin(
+  inline def getFastifyPlugin(
     fastify: FastifyInstance[
       RawServerDefault, 
       RawRequestDefaultExpression[RawServerDefault], 
@@ -57,29 +55,22 @@ object mod {
     @js.native
     val name: String = js.native
     
-    @scala.inline
-    def register(server: Server_): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def register(server: Server_, opts: SWStats): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def register(server: Server_): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def register(server: Server_, opts: SWStats): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     @JSImport("swagger-stats", "getHapiPlugin.version")
     @js.native
     val version: String = js.native
   }
   
-  @scala.inline
-  def getMiddleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def getMiddleware(opts: SWStats): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def getMiddleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def getMiddleware(opts: SWStats): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def getPromClient(): TypeofPromClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromClient")().asInstanceOf[TypeofPromClient]
+  inline def getPromClient(): TypeofPromClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromClient")().asInstanceOf[TypeofPromClient]
   
-  @scala.inline
-  def getPromStats(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromStats")().asInstanceOf[String]
+  inline def getPromStats(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromStats")().asInstanceOf[String]
   
-  @scala.inline
-  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
   trait APIOperationDefinition extends StObject {
     
@@ -97,44 +88,32 @@ object mod {
   }
   object APIOperationDefinition {
     
-    @scala.inline
-    def apply(deprecated: Boolean, swagger: Boolean): APIOperationDefinition = {
+    inline def apply(deprecated: Boolean, swagger: Boolean): APIOperationDefinition = {
       val __obj = js.Dynamic.literal(deprecated = deprecated.asInstanceOf[js.Any], swagger = swagger.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIOperationDefinition]
     }
     
-    @scala.inline
-    implicit class APIOperationDefinitionMutableBuilder[Self <: APIOperationDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: APIOperationDefinition](x: Self) {
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+      inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+      inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
       
-      @scala.inline
-      def setSwagger(value: Boolean): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
+      inline def setSwagger(value: Boolean): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -148,32 +127,24 @@ object mod {
   }
   object APIOperationStats {
     
-    @scala.inline
-    def apply(): APIOperationStats = {
+    inline def apply(): APIOperationStats = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[APIOperationStats]
     }
     
-    @scala.inline
-    implicit class APIOperationStatsMutableBuilder[Self <: APIOperationStats] (val x: Self) extends AnyVal {
+    extension [Self <: APIOperationStats](x: Self) {
       
-      @scala.inline
-      def setDefs(value: APIOperationDefinition): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+      inline def setDefs(value: APIOperationDefinition): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
+      inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
       
-      @scala.inline
-      def setDetails(value: APIOperationDefinition): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: APIOperationDefinition): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setStats(value: APIOperationDefinition): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: APIOperationDefinition): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     }
   }
   
@@ -215,8 +186,7 @@ object mod {
   }
   object CoreStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: ReqResStats,
       apdexThreshold: Double,
       egress: ReqResStats,
@@ -231,89 +201,61 @@ object mod {
       __obj.asInstanceOf[CoreStats]
     }
     
-    @scala.inline
-    implicit class CoreStatsMutableBuilder[Self <: CoreStats] (val x: Self) extends AnyVal {
+    extension [Self <: CoreStats](x: Self) {
       
-      @scala.inline
-      def setAll(value: ReqResStats): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: ReqResStats): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApdexThreshold(value: Double): Self = StObject.set(x, "apdexThreshold", value.asInstanceOf[js.Any])
+      inline def setApdexThreshold(value: Double): Self = StObject.set(x, "apdexThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApidefs(value: Record[String, RecordHTTPMethodAPIOperat]): Self = StObject.set(x, "apidefs", value.asInstanceOf[js.Any])
+      inline def setApidefs(value: Record[String, RecordHTTPMethodAPIOperat]): Self = StObject.set(x, "apidefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApidefsUndefined: Self = StObject.set(x, "apidefs", js.undefined)
+      inline def setApidefsUndefined: Self = StObject.set(x, "apidefs", js.undefined)
       
-      @scala.inline
-      def setApiop(value: Record[String, RecordHTTPMethodAPIOperatDELETE]): Self = StObject.set(x, "apiop", value.asInstanceOf[js.Any])
+      inline def setApiop(value: Record[String, RecordHTTPMethodAPIOperatDELETE]): Self = StObject.set(x, "apiop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiopUndefined: Self = StObject.set(x, "apiop", js.undefined)
+      inline def setApiopUndefined: Self = StObject.set(x, "apiop", js.undefined)
       
-      @scala.inline
-      def setApistats(value: Record[String, RecordHTTPMethodReqResSta]): Self = StObject.set(x, "apistats", value.asInstanceOf[js.Any])
+      inline def setApistats(value: Record[String, RecordHTTPMethodReqResSta]): Self = StObject.set(x, "apistats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApistatsUndefined: Self = StObject.set(x, "apistats", js.undefined)
+      inline def setApistatsUndefined: Self = StObject.set(x, "apistats", js.undefined)
       
-      @scala.inline
-      def setEgress(value: ReqResStats): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
+      inline def setEgress(value: ReqResStats): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: ErrorsStats): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: ErrorsStats): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLasterrors(value: js.Array[RequestResponseRecord]): Self = StObject.set(x, "lasterrors", value.asInstanceOf[js.Any])
+      inline def setLasterrors(value: js.Array[RequestResponseRecord]): Self = StObject.set(x, "lasterrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLasterrorsUndefined: Self = StObject.set(x, "lasterrors", js.undefined)
+      inline def setLasterrorsUndefined: Self = StObject.set(x, "lasterrors", js.undefined)
       
-      @scala.inline
-      def setLasterrorsVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "lasterrors", js.Array(value :_*))
+      inline def setLasterrorsVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "lasterrors", js.Array(value :_*))
       
-      @scala.inline
-      def setLongestreq(value: js.Array[RequestResponseRecord]): Self = StObject.set(x, "longestreq", value.asInstanceOf[js.Any])
+      inline def setLongestreq(value: js.Array[RequestResponseRecord]): Self = StObject.set(x, "longestreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongestreqUndefined: Self = StObject.set(x, "longestreq", js.undefined)
+      inline def setLongestreqUndefined: Self = StObject.set(x, "longestreq", js.undefined)
       
-      @scala.inline
-      def setLongestreqVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "longestreq", js.Array(value :_*))
+      inline def setLongestreqVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "longestreq", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: RecordHTTPMethodSubsetReq): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RecordHTTPMethodSubsetReq): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartts(value: Double): Self = StObject.set(x, "startts", value.asInstanceOf[js.Any])
+      inline def setStartts(value: Double): Self = StObject.set(x, "startts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: SysStats): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: SysStats): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeline(value: TimelineStats): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+      inline def setTimeline(value: TimelineStats): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+      inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,8 +269,7 @@ object mod {
   }
   object ErrorsStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       statuscode: Record[Double, Double],
       topnotfound: Record[String, Double],
       topservererror: Record[String, Double]
@@ -337,17 +278,13 @@ object mod {
       __obj.asInstanceOf[ErrorsStats]
     }
     
-    @scala.inline
-    implicit class ErrorsStatsMutableBuilder[Self <: ErrorsStats] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorsStats](x: Self) {
       
-      @scala.inline
-      def setStatuscode(value: Record[Double, Double]): Self = StObject.set(x, "statuscode", value.asInstanceOf[js.Any])
+      inline def setStatuscode(value: Record[Double, Double]): Self = StObject.set(x, "statuscode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopnotfound(value: Record[String, Double]): Self = StObject.set(x, "topnotfound", value.asInstanceOf[js.Any])
+      inline def setTopnotfound(value: Record[String, Double]): Self = StObject.set(x, "topnotfound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopservererror(value: Record[String, Double]): Self = StObject.set(x, "topservererror", value.asInstanceOf[js.Any])
+      inline def setTopservererror(value: Record[String, Double]): Self = StObject.set(x, "topservererror", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,29 +301,21 @@ object mod {
   trait HTTPMethod extends StObject
   object HTTPMethod {
     
-    @scala.inline
-    def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = "DELETE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.DELETE]
+    inline def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = "DELETE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.swaggerStats.swaggerStatsStrings.GET = "GET".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.GET]
+    inline def GET: typings.swaggerStats.swaggerStatsStrings.GET = "GET".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.swaggerStats.swaggerStatsStrings.HEAD = "HEAD".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.HEAD]
+    inline def HEAD: typings.swaggerStats.swaggerStatsStrings.HEAD = "HEAD".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.swaggerStats.swaggerStatsStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.OPTIONS]
+    inline def OPTIONS: typings.swaggerStats.swaggerStatsStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.swaggerStats.swaggerStatsStrings.PATCH = "PATCH".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PATCH]
+    inline def PATCH: typings.swaggerStats.swaggerStatsStrings.PATCH = "PATCH".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.swaggerStats.swaggerStatsStrings.POST = "POST".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.POST]
+    inline def POST: typings.swaggerStats.swaggerStatsStrings.POST = "POST".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.POST]
     
-    @scala.inline
-    def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
+    inline def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
     
-    @scala.inline
-    def TRACE: typings.swaggerStats.swaggerStatsStrings.TRACE = "TRACE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.TRACE]
+    inline def TRACE: typings.swaggerStats.swaggerStatsStrings.TRACE = "TRACE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.TRACE]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -398,17 +327,13 @@ object mod {
   trait HTTPMethodSubset extends StObject
   object HTTPMethodSubset {
     
-    @scala.inline
-    def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = "DELETE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.DELETE]
+    inline def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = "DELETE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.swaggerStats.swaggerStatsStrings.GET = "GET".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.GET]
+    inline def GET: typings.swaggerStats.swaggerStatsStrings.GET = "GET".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.GET]
     
-    @scala.inline
-    def POST: typings.swaggerStats.swaggerStatsStrings.POST = "POST".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.POST]
+    inline def POST: typings.swaggerStats.swaggerStatsStrings.POST = "POST".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.POST]
     
-    @scala.inline
-    def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
+    inline def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
   }
   
   trait ReqResStats extends StObject {
@@ -461,8 +386,7 @@ object mod {
   }
   object ReqResStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apdex_satisfied: Double,
       apdex_score: Double,
       apdex_threshold: Double,
@@ -491,77 +415,53 @@ object mod {
       __obj.asInstanceOf[ReqResStats]
     }
     
-    @scala.inline
-    implicit class ReqResStatsMutableBuilder[Self <: ReqResStats] (val x: Self) extends AnyVal {
+    extension [Self <: ReqResStats](x: Self) {
       
-      @scala.inline
-      def setApdex_satisfied(value: Double): Self = StObject.set(x, "apdex_satisfied", value.asInstanceOf[js.Any])
+      inline def setApdex_satisfied(value: Double): Self = StObject.set(x, "apdex_satisfied", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApdex_score(value: Double): Self = StObject.set(x, "apdex_score", value.asInstanceOf[js.Any])
+      inline def setApdex_score(value: Double): Self = StObject.set(x, "apdex_score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApdex_threshold(value: Double): Self = StObject.set(x, "apdex_threshold", value.asInstanceOf[js.Any])
+      inline def setApdex_threshold(value: Double): Self = StObject.set(x, "apdex_threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApdex_tolerated(value: Double): Self = StObject.set(x, "apdex_tolerated", value.asInstanceOf[js.Any])
+      inline def setApdex_tolerated(value: Double): Self = StObject.set(x, "apdex_tolerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvg_req_clength(value: Double): Self = StObject.set(x, "avg_req_clength", value.asInstanceOf[js.Any])
+      inline def setAvg_req_clength(value: Double): Self = StObject.set(x, "avg_req_clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvg_res_clength(value: Double): Self = StObject.set(x, "avg_res_clength", value.asInstanceOf[js.Any])
+      inline def setAvg_res_clength(value: Double): Self = StObject.set(x, "avg_res_clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvg_time(value: Double): Self = StObject.set(x, "avg_time", value.asInstanceOf[js.Any])
+      inline def setAvg_time(value: Double): Self = StObject.set(x, "avg_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_error(value: Double): Self = StObject.set(x, "client_error", value.asInstanceOf[js.Any])
+      inline def setClient_error(value: Double): Self = StObject.set(x, "client_error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr_rate(value: Double): Self = StObject.set(x, "err_rate", value.asInstanceOf[js.Any])
+      inline def setErr_rate(value: Double): Self = StObject.set(x, "err_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_req_clength(value: Double): Self = StObject.set(x, "max_req_clength", value.asInstanceOf[js.Any])
+      inline def setMax_req_clength(value: Double): Self = StObject.set(x, "max_req_clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_res_clength(value: Double): Self = StObject.set(x, "max_res_clength", value.asInstanceOf[js.Any])
+      inline def setMax_res_clength(value: Double): Self = StObject.set(x, "max_res_clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_time(value: Double): Self = StObject.set(x, "max_time", value.asInstanceOf[js.Any])
+      inline def setMax_time(value: Double): Self = StObject.set(x, "max_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirect(value: Double): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Double): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq_rate(value: Double): Self = StObject.set(x, "req_rate", value.asInstanceOf[js.Any])
+      inline def setReq_rate(value: Double): Self = StObject.set(x, "req_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequests(value: Double): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      inline def setRequests(value: Double): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponses(value: Double): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: Double): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer_error(value: Double): Self = StObject.set(x, "server_error", value.asInstanceOf[js.Any])
+      inline def setServer_error(value: Double): Self = StObject.set(x, "server_error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_req_clength(value: Double): Self = StObject.set(x, "total_req_clength", value.asInstanceOf[js.Any])
+      inline def setTotal_req_clength(value: Double): Self = StObject.set(x, "total_req_clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_res_clength(value: Double): Self = StObject.set(x, "total_res_clength", value.asInstanceOf[js.Any])
+      inline def setTotal_res_clength(value: Double): Self = StObject.set(x, "total_res_clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_time(value: Double): Self = StObject.set(x, "total_time", value.asInstanceOf[js.Any])
+      inline def setTotal_time(value: Double): Self = StObject.set(x, "total_time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -601,8 +501,7 @@ object mod {
   }
   object RequestResponseRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `@timestamp`: String,
       api: Deprecated,
       endts: Double,
@@ -622,59 +521,41 @@ object mod {
       __obj.asInstanceOf[RequestResponseRecord]
     }
     
-    @scala.inline
-    implicit class RequestResponseRecordMutableBuilder[Self <: RequestResponseRecord] (val x: Self) extends AnyVal {
+    extension [Self <: RequestResponseRecord](x: Self) {
       
-      @scala.inline
-      def `set@timestamp`(value: String): Self = StObject.set(x, "@timestamp", value.asInstanceOf[js.Any])
+      inline def `set@timestamp`(value: String): Self = StObject.set(x, "@timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi(value: Deprecated): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: Deprecated): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setAttrsint(value: Record[String, Double]): Self = StObject.set(x, "attrsint", value.asInstanceOf[js.Any])
+      inline def setAttrsint(value: Record[String, Double]): Self = StObject.set(x, "attrsint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsintUndefined: Self = StObject.set(x, "attrsint", js.undefined)
+      inline def setAttrsintUndefined: Self = StObject.set(x, "attrsint", js.undefined)
       
-      @scala.inline
-      def setEndts(value: Double): Self = StObject.set(x, "endts", value.asInstanceOf[js.Any])
+      inline def setEndts(value: Double): Self = StObject.set(x, "endts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttp(value: Request): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Request): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Hostname): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Hostname): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReal_ip(value: String): Self = StObject.set(x, "real_ip", value.asInstanceOf[js.Any])
+      inline def setReal_ip(value: String): Self = StObject.set(x, "real_ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsetime(value: Double): Self = StObject.set(x, "responsetime", value.asInstanceOf[js.Any])
+      inline def setResponsetime(value: Double): Self = StObject.set(x, "responsetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartts(value: Double): Self = StObject.set(x, "startts", value.asInstanceOf[js.Any])
+      inline def setStartts(value: Double): Self = StObject.set(x, "startts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -736,157 +617,108 @@ object mod {
   }
   object SWStats {
     
-    @scala.inline
-    def apply(): SWStats = {
+    inline def apply(): SWStats = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SWStats]
     }
     
-    @scala.inline
-    implicit class SWStatsMutableBuilder[Self <: SWStats] (val x: Self) extends AnyVal {
+    extension [Self <: SWStats](x: Self) {
       
-      @scala.inline
-      def setApdexThreshold(value: Double): Self = StObject.set(x, "apdexThreshold", value.asInstanceOf[js.Any])
+      inline def setApdexThreshold(value: Double): Self = StObject.set(x, "apdexThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApdexThresholdUndefined: Self = StObject.set(x, "apdexThreshold", js.undefined)
+      inline def setApdexThresholdUndefined: Self = StObject.set(x, "apdexThreshold", js.undefined)
       
-      @scala.inline
-      def setAuthentication(value: Boolean): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: Boolean): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+      inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
       
-      @scala.inline
-      def setDurationBuckets(value: js.Array[Double]): Self = StObject.set(x, "durationBuckets", value.asInstanceOf[js.Any])
+      inline def setDurationBuckets(value: js.Array[Double]): Self = StObject.set(x, "durationBuckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationBucketsUndefined: Self = StObject.set(x, "durationBuckets", js.undefined)
+      inline def setDurationBucketsUndefined: Self = StObject.set(x, "durationBuckets", js.undefined)
       
-      @scala.inline
-      def setDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "durationBuckets", js.Array(value :_*))
+      inline def setDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "durationBuckets", js.Array(value :_*))
       
-      @scala.inline
-      def setElasticsearch(value: String): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
+      inline def setElasticsearch(value: String): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchIndexPrefix(value: String): Self = StObject.set(x, "elasticsearchIndexPrefix", value.asInstanceOf[js.Any])
+      inline def setElasticsearchIndexPrefix(value: String): Self = StObject.set(x, "elasticsearchIndexPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchIndexPrefixUndefined: Self = StObject.set(x, "elasticsearchIndexPrefix", js.undefined)
+      inline def setElasticsearchIndexPrefixUndefined: Self = StObject.set(x, "elasticsearchIndexPrefix", js.undefined)
       
-      @scala.inline
-      def setElasticsearchPassword(value: String): Self = StObject.set(x, "elasticsearchPassword", value.asInstanceOf[js.Any])
+      inline def setElasticsearchPassword(value: String): Self = StObject.set(x, "elasticsearchPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchPasswordUndefined: Self = StObject.set(x, "elasticsearchPassword", js.undefined)
+      inline def setElasticsearchPasswordUndefined: Self = StObject.set(x, "elasticsearchPassword", js.undefined)
       
-      @scala.inline
-      def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
+      inline def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
       
-      @scala.inline
-      def setElasticsearchUsername(value: String): Self = StObject.set(x, "elasticsearchUsername", value.asInstanceOf[js.Any])
+      inline def setElasticsearchUsername(value: String): Self = StObject.set(x, "elasticsearchUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchUsernameUndefined: Self = StObject.set(x, "elasticsearchUsername", js.undefined)
+      inline def setElasticsearchUsernameUndefined: Self = StObject.set(x, "elasticsearchUsername", js.undefined)
       
-      @scala.inline
-      def setEnableEgress(value: Boolean): Self = StObject.set(x, "enableEgress", value.asInstanceOf[js.Any])
+      inline def setEnableEgress(value: Boolean): Self = StObject.set(x, "enableEgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableEgressUndefined: Self = StObject.set(x, "enableEgress", js.undefined)
+      inline def setEnableEgressUndefined: Self = StObject.set(x, "enableEgress", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setMetricsPrefix(value: String): Self = StObject.set(x, "metricsPrefix", value.asInstanceOf[js.Any])
+      inline def setMetricsPrefix(value: String): Self = StObject.set(x, "metricsPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsPrefixUndefined: Self = StObject.set(x, "metricsPrefix", js.undefined)
+      inline def setMetricsPrefixUndefined: Self = StObject.set(x, "metricsPrefix", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnAuthenticate(value: (/* req */ IncomingMessage, /* username */ String, /* password */ String) => Boolean): Self = StObject.set(x, "onAuthenticate", js.Any.fromFunction3(value))
+      inline def setOnAuthenticate(value: (/* req */ IncomingMessage, /* username */ String, /* password */ String) => Boolean): Self = StObject.set(x, "onAuthenticate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnAuthenticateUndefined: Self = StObject.set(x, "onAuthenticate", js.undefined)
+      inline def setOnAuthenticateUndefined: Self = StObject.set(x, "onAuthenticate", js.undefined)
       
-      @scala.inline
-      def setOnResponseFinish(
+      inline def setOnResponseFinish(
         value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* rrr */ RequestResponseRecord) => Unit
       ): Self = StObject.set(x, "onResponseFinish", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnResponseFinishUndefined: Self = StObject.set(x, "onResponseFinish", js.undefined)
+      inline def setOnResponseFinishUndefined: Self = StObject.set(x, "onResponseFinish", js.undefined)
       
-      @scala.inline
-      def setRequestSizeBuckets(value: js.Array[Double]): Self = StObject.set(x, "requestSizeBuckets", value.asInstanceOf[js.Any])
+      inline def setRequestSizeBuckets(value: js.Array[Double]): Self = StObject.set(x, "requestSizeBuckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestSizeBucketsUndefined: Self = StObject.set(x, "requestSizeBuckets", js.undefined)
+      inline def setRequestSizeBucketsUndefined: Self = StObject.set(x, "requestSizeBuckets", js.undefined)
       
-      @scala.inline
-      def setRequestSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "requestSizeBuckets", js.Array(value :_*))
+      inline def setRequestSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "requestSizeBuckets", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseSizeBuckets(value: js.Array[Double]): Self = StObject.set(x, "responseSizeBuckets", value.asInstanceOf[js.Any])
+      inline def setResponseSizeBuckets(value: js.Array[Double]): Self = StObject.set(x, "responseSizeBuckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseSizeBucketsUndefined: Self = StObject.set(x, "responseSizeBuckets", js.undefined)
+      inline def setResponseSizeBucketsUndefined: Self = StObject.set(x, "responseSizeBuckets", js.undefined)
       
-      @scala.inline
-      def setResponseSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "responseSizeBuckets", js.Array(value :_*))
+      inline def setResponseSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "responseSizeBuckets", js.Array(value :_*))
       
-      @scala.inline
-      def setSessionMaxAge(value: Double): Self = StObject.set(x, "sessionMaxAge", value.asInstanceOf[js.Any])
+      inline def setSessionMaxAge(value: Double): Self = StObject.set(x, "sessionMaxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionMaxAgeUndefined: Self = StObject.set(x, "sessionMaxAge", js.undefined)
+      inline def setSessionMaxAgeUndefined: Self = StObject.set(x, "sessionMaxAge", js.undefined)
       
-      @scala.inline
-      def setSwaggerOnly(value: Boolean): Self = StObject.set(x, "swaggerOnly", value.asInstanceOf[js.Any])
+      inline def setSwaggerOnly(value: Boolean): Self = StObject.set(x, "swaggerOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwaggerOnlyUndefined: Self = StObject.set(x, "swaggerOnly", js.undefined)
+      inline def setSwaggerOnlyUndefined: Self = StObject.set(x, "swaggerOnly", js.undefined)
       
-      @scala.inline
-      def setSwaggerSpec(value: Record[js.Any, js.Any]): Self = StObject.set(x, "swaggerSpec", value.asInstanceOf[js.Any])
+      inline def setSwaggerSpec(value: Record[js.Any, js.Any]): Self = StObject.set(x, "swaggerSpec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwaggerSpecUndefined: Self = StObject.set(x, "swaggerSpec", js.undefined)
+      inline def setSwaggerSpecUndefined: Self = StObject.set(x, "swaggerSpec", js.undefined)
       
-      @scala.inline
-      def setTimelineBucketDuration(value: Double): Self = StObject.set(x, "timelineBucketDuration", value.asInstanceOf[js.Any])
+      inline def setTimelineBucketDuration(value: Double): Self = StObject.set(x, "timelineBucketDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimelineBucketDurationUndefined: Self = StObject.set(x, "timelineBucketDuration", js.undefined)
+      inline def setTimelineBucketDurationUndefined: Self = StObject.set(x, "timelineBucketDuration", js.undefined)
       
-      @scala.inline
-      def setUriPath(value: String): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
+      inline def setUriPath(value: String): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
+      inline def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -904,29 +736,22 @@ object mod {
   }
   object SysStats {
     
-    @scala.inline
-    def apply(cpu: Double, external: Double, heapTotal: Double, heapUsed: Double, rss: Double): SysStats = {
+    inline def apply(cpu: Double, external: Double, heapTotal: Double, heapUsed: Double, rss: Double): SysStats = {
       val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], heapTotal = heapTotal.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
       __obj.asInstanceOf[SysStats]
     }
     
-    @scala.inline
-    implicit class SysStatsMutableBuilder[Self <: SysStats] (val x: Self) extends AnyVal {
+    extension [Self <: SysStats](x: Self) {
       
-      @scala.inline
-      def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
+      inline def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
+      inline def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+      inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
     }
   }
   
@@ -938,20 +763,16 @@ object mod {
   }
   object TimelineStats {
     
-    @scala.inline
-    def apply(data: Record[String, TimelineStatsData], settings: Bucketcurrent): TimelineStats = {
+    inline def apply(data: Record[String, TimelineStatsData], settings: Bucketcurrent): TimelineStats = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimelineStats]
     }
     
-    @scala.inline
-    implicit class TimelineStatsMutableBuilder[Self <: TimelineStats] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineStats](x: Self) {
       
-      @scala.inline
-      def setData(value: Record[String, TimelineStatsData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, TimelineStatsData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: Bucketcurrent): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Bucketcurrent): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -963,20 +784,16 @@ object mod {
   }
   object TimelineStatsData {
     
-    @scala.inline
-    def apply(stats: ReqResStats, sys: SysStats): TimelineStatsData = {
+    inline def apply(stats: ReqResStats, sys: SysStats): TimelineStatsData = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimelineStatsData]
     }
     
-    @scala.inline
-    implicit class TimelineStatsDataMutableBuilder[Self <: TimelineStatsData] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineStatsData](x: Self) {
       
-      @scala.inline
-      def setStats(value: ReqResStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: ReqResStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: SysStats): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: SysStats): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

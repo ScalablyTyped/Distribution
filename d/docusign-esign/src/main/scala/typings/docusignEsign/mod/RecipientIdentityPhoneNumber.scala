@@ -17,31 +17,23 @@ trait RecipientIdentityPhoneNumber extends StObject {
 }
 object RecipientIdentityPhoneNumber {
   
-  @scala.inline
-  def apply(): RecipientIdentityPhoneNumber = {
+  inline def apply(): RecipientIdentityPhoneNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientIdentityPhoneNumber]
   }
   
-  @scala.inline
-  implicit class RecipientIdentityPhoneNumberMutableBuilder[Self <: RecipientIdentityPhoneNumber] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientIdentityPhoneNumber](x: Self) {
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

@@ -184,44 +184,32 @@ object baseFloatingPickerTypesMod {
   }
   object IBaseFloatingPickerSuggestionProps {
     
-    @scala.inline
-    def apply(): IBaseFloatingPickerSuggestionProps = {
+    inline def apply(): IBaseFloatingPickerSuggestionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseFloatingPickerSuggestionProps]
     }
     
-    @scala.inline
-    implicit class IBaseFloatingPickerSuggestionPropsMutableBuilder[Self <: IBaseFloatingPickerSuggestionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBaseFloatingPickerSuggestionProps](x: Self) {
       
-      @scala.inline
-      def setFooterItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = StObject.set(x, "footerItemsProps", value.asInstanceOf[js.Any])
+      inline def setFooterItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = StObject.set(x, "footerItemsProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterItemsPropsUndefined: Self = StObject.set(x, "footerItemsProps", js.undefined)
+      inline def setFooterItemsPropsUndefined: Self = StObject.set(x, "footerItemsProps", js.undefined)
       
-      @scala.inline
-      def setFooterItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "footerItemsProps", js.Array(value :_*))
+      inline def setFooterItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "footerItemsProps", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaderItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = StObject.set(x, "headerItemsProps", value.asInstanceOf[js.Any])
+      inline def setHeaderItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = StObject.set(x, "headerItemsProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderItemsPropsUndefined: Self = StObject.set(x, "headerItemsProps", js.undefined)
+      inline def setHeaderItemsPropsUndefined: Self = StObject.set(x, "headerItemsProps", js.undefined)
       
-      @scala.inline
-      def setHeaderItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "headerItemsProps", js.Array(value :_*))
+      inline def setHeaderItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "headerItemsProps", js.Array(value :_*))
       
-      @scala.inline
-      def setShouldSelectFirstItem(value: () => Boolean): Self = StObject.set(x, "shouldSelectFirstItem", js.Any.fromFunction0(value))
+      inline def setShouldSelectFirstItem(value: () => Boolean): Self = StObject.set(x, "shouldSelectFirstItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldSelectFirstItemUndefined: Self = StObject.set(x, "shouldSelectFirstItem", js.undefined)
+      inline def setShouldSelectFirstItemUndefined: Self = StObject.set(x, "shouldSelectFirstItem", js.undefined)
       
-      @scala.inline
-      def setShowRemoveButtons(value: Boolean): Self = StObject.set(x, "showRemoveButtons", value.asInstanceOf[js.Any])
+      inline def setShowRemoveButtons(value: Boolean): Self = StObject.set(x, "showRemoveButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRemoveButtonsUndefined: Self = StObject.set(x, "showRemoveButtons", js.undefined)
+      inline def setShowRemoveButtonsUndefined: Self = StObject.set(x, "showRemoveButtons", js.undefined)
     }
   }
 }

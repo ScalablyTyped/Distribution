@@ -19,6 +19,5 @@ class DropdownSearchInput protected ()
 }
 object DropdownSearchInput {
   
-  @scala.inline
-  def apply: ComponentClass[DropdownSearchInputProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownSearchInput").asInstanceOf[ComponentClass[DropdownSearchInputProps, ComponentState]]
+  inline def apply: ComponentClass[DropdownSearchInputProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownSearchInput").asInstanceOf[ComponentClass[DropdownSearchInputProps, ComponentState]]
 }

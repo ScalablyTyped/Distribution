@@ -38,46 +38,33 @@ trait StockToolsGuiOptions extends StObject {
 }
 object StockToolsGuiOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiOptions = {
+  inline def apply(): StockToolsGuiOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiOptionsMutableBuilder[Self <: StockToolsGuiOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiOptions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDefinitions(value: StockToolsGuiDefinitionsOptions): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: StockToolsGuiDefinitionsOptions): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
+    inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setToolbarClassName(value: String): Self = StObject.set(x, "toolbarClassName", value.asInstanceOf[js.Any])
+    inline def setToolbarClassName(value: String): Self = StObject.set(x, "toolbarClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarClassNameUndefined: Self = StObject.set(x, "toolbarClassName", js.undefined)
+    inline def setToolbarClassNameUndefined: Self = StObject.set(x, "toolbarClassName", js.undefined)
   }
 }

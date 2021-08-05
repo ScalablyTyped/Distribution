@@ -13,19 +13,15 @@ trait ResourceDataSyncOrganizationalUnit extends StObject {
 }
 object ResourceDataSyncOrganizationalUnit {
   
-  @scala.inline
-  def apply(): ResourceDataSyncOrganizationalUnit = {
+  inline def apply(): ResourceDataSyncOrganizationalUnit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceDataSyncOrganizationalUnit]
   }
   
-  @scala.inline
-  implicit class ResourceDataSyncOrganizationalUnitMutableBuilder[Self <: ResourceDataSyncOrganizationalUnit] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataSyncOrganizationalUnit](x: Self) {
     
-    @scala.inline
-    def setOrganizationalUnitId(value: ResourceDataSyncOrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitId(value: ResourceDataSyncOrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitIdUndefined: Self = StObject.set(x, "OrganizationalUnitId", js.undefined)
+    inline def setOrganizationalUnitIdUndefined: Self = StObject.set(x, "OrganizationalUnitId", js.undefined)
   }
 }

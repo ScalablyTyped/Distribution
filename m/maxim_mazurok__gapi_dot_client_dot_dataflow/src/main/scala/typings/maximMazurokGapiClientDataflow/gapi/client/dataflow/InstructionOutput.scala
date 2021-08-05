@@ -31,53 +31,39 @@ trait InstructionOutput extends StObject {
 }
 object InstructionOutput {
   
-  @scala.inline
-  def apply(): InstructionOutput = {
+  inline def apply(): InstructionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstructionOutput]
   }
   
-  @scala.inline
-  implicit class InstructionOutputMutableBuilder[Self <: InstructionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: InstructionOutput](x: Self) {
     
-    @scala.inline
-    def setCodec(
+    inline def setCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.InstructionOutput & TopLevel[js.Any]
     ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnlyCountKeyBytes(value: Boolean): Self = StObject.set(x, "onlyCountKeyBytes", value.asInstanceOf[js.Any])
+    inline def setOnlyCountKeyBytes(value: Boolean): Self = StObject.set(x, "onlyCountKeyBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyCountKeyBytesUndefined: Self = StObject.set(x, "onlyCountKeyBytes", js.undefined)
+    inline def setOnlyCountKeyBytesUndefined: Self = StObject.set(x, "onlyCountKeyBytes", js.undefined)
     
-    @scala.inline
-    def setOnlyCountValueBytes(value: Boolean): Self = StObject.set(x, "onlyCountValueBytes", value.asInstanceOf[js.Any])
+    inline def setOnlyCountValueBytes(value: Boolean): Self = StObject.set(x, "onlyCountValueBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyCountValueBytesUndefined: Self = StObject.set(x, "onlyCountValueBytes", js.undefined)
+    inline def setOnlyCountValueBytesUndefined: Self = StObject.set(x, "onlyCountValueBytes", js.undefined)
     
-    @scala.inline
-    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
+    inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
-    @scala.inline
-    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+    inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
   }
 }

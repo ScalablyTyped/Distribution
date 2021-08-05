@@ -16,13 +16,11 @@ object regexMod {
     @JSImport("lorem-ipsum/types/src/constants/regex", "REGEX.FORMATS")
     @js.native
     def FORMATS: RegExp = js.native
-    @scala.inline
-    def FORMATS_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMATS")(x.asInstanceOf[js.Any])
+    inline def FORMATS_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMATS")(x.asInstanceOf[js.Any])
     
     @JSImport("lorem-ipsum/types/src/constants/regex", "REGEX.UNITS")
     @js.native
     def UNITS: RegExp = js.native
-    @scala.inline
-    def UNITS_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNITS")(x.asInstanceOf[js.Any])
+    inline def UNITS_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNITS")(x.asInstanceOf[js.Any])
   }
 }

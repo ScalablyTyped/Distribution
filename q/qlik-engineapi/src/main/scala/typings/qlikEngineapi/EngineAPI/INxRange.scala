@@ -21,19 +21,15 @@ trait INxRange extends StObject {
 }
 object INxRange {
   
-  @scala.inline
-  def apply(qCount: Double, qFrom: Double): INxRange = {
+  inline def apply(qCount: Double, qFrom: Double): INxRange = {
     val __obj = js.Dynamic.literal(qCount = qCount.asInstanceOf[js.Any], qFrom = qFrom.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxRange]
   }
   
-  @scala.inline
-  implicit class INxRangeMutableBuilder[Self <: INxRange] (val x: Self) extends AnyVal {
+  extension [Self <: INxRange](x: Self) {
     
-    @scala.inline
-    def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
+    inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFrom(value: Double): Self = StObject.set(x, "qFrom", value.asInstanceOf[js.Any])
+    inline def setQFrom(value: Double): Self = StObject.set(x, "qFrom", value.asInstanceOf[js.Any])
   }
 }

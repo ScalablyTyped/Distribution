@@ -23,31 +23,23 @@ trait ReplicationRuleFilter extends StObject {
 }
 object ReplicationRuleFilter {
   
-  @scala.inline
-  def apply(): ReplicationRuleFilter = {
+  inline def apply(): ReplicationRuleFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationRuleFilter]
   }
   
-  @scala.inline
-  implicit class ReplicationRuleFilterMutableBuilder[Self <: ReplicationRuleFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationRuleFilter](x: Self) {
     
-    @scala.inline
-    def setAnd(value: ReplicationRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
+    inline def setAnd(value: ReplicationRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
+    inline def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setTag(value: Tag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Tag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

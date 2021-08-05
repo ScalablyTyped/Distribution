@@ -33,8 +33,7 @@ trait UpdateAccessPolicyRequest extends StObject {
 }
 object UpdateAccessPolicyRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessPolicyId: ID,
     accessPolicyIdentity: Identity,
     accessPolicyPermission: Permission,
@@ -44,25 +43,18 @@ object UpdateAccessPolicyRequest {
     __obj.asInstanceOf[UpdateAccessPolicyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAccessPolicyRequestMutableBuilder[Self <: UpdateAccessPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAccessPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

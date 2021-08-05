@@ -16,28 +16,21 @@ trait RTCRtpContributingSource extends StObject {
 }
 object RTCRtpContributingSource {
   
-  @scala.inline
-  def apply(rtpTimestamp: Double, source: Double, timestamp: Double): RTCRtpContributingSource = {
+  inline def apply(rtpTimestamp: Double, source: Double, timestamp: Double): RTCRtpContributingSource = {
     val __obj = js.Dynamic.literal(rtpTimestamp = rtpTimestamp.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
   
-  @scala.inline
-  implicit class RTCRtpContributingSourceMutableBuilder[Self <: RTCRtpContributingSource] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpContributingSource](x: Self) {
     
-    @scala.inline
-    def setAudioLevel(value: Double): Self = StObject.set(x, "audioLevel", value.asInstanceOf[js.Any])
+    inline def setAudioLevel(value: Double): Self = StObject.set(x, "audioLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioLevelUndefined: Self = StObject.set(x, "audioLevel", js.undefined)
+    inline def setAudioLevelUndefined: Self = StObject.set(x, "audioLevel", js.undefined)
     
-    @scala.inline
-    def setRtpTimestamp(value: Double): Self = StObject.set(x, "rtpTimestamp", value.asInstanceOf[js.Any])
+    inline def setRtpTimestamp(value: Double): Self = StObject.set(x, "rtpTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

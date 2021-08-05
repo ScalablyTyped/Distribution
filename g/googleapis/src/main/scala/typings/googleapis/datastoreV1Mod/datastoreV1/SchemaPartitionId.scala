@@ -30,25 +30,19 @@ trait SchemaPartitionId extends StObject {
 }
 object SchemaPartitionId {
   
-  @scala.inline
-  def apply(): SchemaPartitionId = {
+  inline def apply(): SchemaPartitionId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartitionId]
   }
   
-  @scala.inline
-  implicit class SchemaPartitionIdMutableBuilder[Self <: SchemaPartitionId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPartitionId](x: Self) {
     
-    @scala.inline
-    def setNamespaceId(value: String): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+    inline def setNamespaceId(value: String): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
+    inline def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

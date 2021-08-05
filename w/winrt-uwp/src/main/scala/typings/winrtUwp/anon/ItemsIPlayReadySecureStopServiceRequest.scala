@@ -13,19 +13,15 @@ trait ItemsIPlayReadySecureStopServiceRequest extends StObject {
 }
 object ItemsIPlayReadySecureStopServiceRequest {
   
-  @scala.inline
-  def apply(items: IPlayReadySecureStopServiceRequest, returnValue: Double): ItemsIPlayReadySecureStopServiceRequest = {
+  inline def apply(items: IPlayReadySecureStopServiceRequest, returnValue: Double): ItemsIPlayReadySecureStopServiceRequest = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsIPlayReadySecureStopServiceRequest]
   }
   
-  @scala.inline
-  implicit class ItemsIPlayReadySecureStopServiceRequestMutableBuilder[Self <: ItemsIPlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsIPlayReadySecureStopServiceRequest](x: Self) {
     
-    @scala.inline
-    def setItems(value: IPlayReadySecureStopServiceRequest): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IPlayReadySecureStopServiceRequest): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

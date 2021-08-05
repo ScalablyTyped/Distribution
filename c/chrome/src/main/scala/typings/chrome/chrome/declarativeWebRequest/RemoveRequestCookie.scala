@@ -10,16 +10,13 @@ trait RemoveRequestCookie extends StObject {
 }
 object RemoveRequestCookie {
   
-  @scala.inline
-  def apply(filter: RequestCookie): RemoveRequestCookie = {
+  inline def apply(filter: RequestCookie): RemoveRequestCookie = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveRequestCookie]
   }
   
-  @scala.inline
-  implicit class RemoveRequestCookieMutableBuilder[Self <: RemoveRequestCookie] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveRequestCookie](x: Self) {
     
-    @scala.inline
-    def setFilter(value: RequestCookie): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: RequestCookie): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }
 }

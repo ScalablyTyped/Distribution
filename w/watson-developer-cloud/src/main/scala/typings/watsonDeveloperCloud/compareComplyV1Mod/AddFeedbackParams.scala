@@ -22,40 +22,29 @@ trait AddFeedbackParams extends StObject {
 }
 object AddFeedbackParams {
   
-  @scala.inline
-  def apply(feedback_data: FeedbackDataInput): AddFeedbackParams = {
+  inline def apply(feedback_data: FeedbackDataInput): AddFeedbackParams = {
     val __obj = js.Dynamic.literal(feedback_data = feedback_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddFeedbackParams]
   }
   
-  @scala.inline
-  implicit class AddFeedbackParamsMutableBuilder[Self <: AddFeedbackParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddFeedbackParams](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setFeedback_data(value: FeedbackDataInput): Self = StObject.set(x, "feedback_data", value.asInstanceOf[js.Any])
+    inline def setFeedback_data(value: FeedbackDataInput): Self = StObject.set(x, "feedback_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

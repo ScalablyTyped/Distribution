@@ -11,19 +11,15 @@ trait NavigationInfo extends StObject {
 }
 object NavigationInfo {
   
-  @scala.inline
-  def apply(): NavigationInfo = {
+  inline def apply(): NavigationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationInfo]
   }
   
-  @scala.inline
-  implicit class NavigationInfoMutableBuilder[Self <: NavigationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationInfo](x: Self) {
     
-    @scala.inline
-    def setEnableForcedRedirect(value: Boolean): Self = StObject.set(x, "enableForcedRedirect", value.asInstanceOf[js.Any])
+    inline def setEnableForcedRedirect(value: Boolean): Self = StObject.set(x, "enableForcedRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableForcedRedirectUndefined: Self = StObject.set(x, "enableForcedRedirect", js.undefined)
+    inline def setEnableForcedRedirectUndefined: Self = StObject.set(x, "enableForcedRedirect", js.undefined)
   }
 }

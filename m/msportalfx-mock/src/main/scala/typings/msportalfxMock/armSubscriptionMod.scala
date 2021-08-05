@@ -35,32 +35,24 @@ object armSubscriptionMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(displayName: String, id: String, state: String, subscriptionId: String): Subscription = {
+    inline def apply(displayName: String, id: String, state: String, subscriptionId: String): Subscription = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+      inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionPolicies(value: SubscriptionPolicies): Self = StObject.set(x, "subscriptionPolicies", value.asInstanceOf[js.Any])
+      inline def setSubscriptionPolicies(value: SubscriptionPolicies): Self = StObject.set(x, "subscriptionPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionPoliciesUndefined: Self = StObject.set(x, "subscriptionPolicies", js.undefined)
+      inline def setSubscriptionPoliciesUndefined: Self = StObject.set(x, "subscriptionPolicies", js.undefined)
     }
   }
   
@@ -78,20 +70,16 @@ object armSubscriptionMod {
   }
   object SubscriptionPolicies {
     
-    @scala.inline
-    def apply(locationPlacementId: String, quotaId: String): SubscriptionPolicies = {
+    inline def apply(locationPlacementId: String, quotaId: String): SubscriptionPolicies = {
       val __obj = js.Dynamic.literal(locationPlacementId = locationPlacementId.asInstanceOf[js.Any], quotaId = quotaId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionPolicies]
     }
     
-    @scala.inline
-    implicit class SubscriptionPoliciesMutableBuilder[Self <: SubscriptionPolicies] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionPolicies](x: Self) {
       
-      @scala.inline
-      def setLocationPlacementId(value: String): Self = StObject.set(x, "locationPlacementId", value.asInstanceOf[js.Any])
+      inline def setLocationPlacementId(value: String): Self = StObject.set(x, "locationPlacementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaId(value: String): Self = StObject.set(x, "quotaId", value.asInstanceOf[js.Any])
+      inline def setQuotaId(value: String): Self = StObject.set(x, "quotaId", value.asInstanceOf[js.Any])
     }
   }
 }

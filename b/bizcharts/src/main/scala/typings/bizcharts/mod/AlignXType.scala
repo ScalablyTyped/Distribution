@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlignXType extends StObject
 object AlignXType {
   
-  @scala.inline
-  def left: typings.bizcharts.bizchartsStrings.left = "left".asInstanceOf[typings.bizcharts.bizchartsStrings.left]
+  inline def left: typings.bizcharts.bizchartsStrings.left = "left".asInstanceOf[typings.bizcharts.bizchartsStrings.left]
   
-  @scala.inline
-  def middle: typings.bizcharts.bizchartsStrings.middle = "middle".asInstanceOf[typings.bizcharts.bizchartsStrings.middle]
+  inline def middle: typings.bizcharts.bizchartsStrings.middle = "middle".asInstanceOf[typings.bizcharts.bizchartsStrings.middle]
   
-  @scala.inline
-  def right: typings.bizcharts.bizchartsStrings.right = "right".asInstanceOf[typings.bizcharts.bizchartsStrings.right]
+  inline def right: typings.bizcharts.bizchartsStrings.right = "right".asInstanceOf[typings.bizcharts.bizchartsStrings.right]
 }

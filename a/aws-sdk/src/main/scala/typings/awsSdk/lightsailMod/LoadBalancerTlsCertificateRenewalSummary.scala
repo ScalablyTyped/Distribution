@@ -18,28 +18,21 @@ trait LoadBalancerTlsCertificateRenewalSummary extends StObject {
 }
 object LoadBalancerTlsCertificateRenewalSummary {
   
-  @scala.inline
-  def apply(): LoadBalancerTlsCertificateRenewalSummary = {
+  inline def apply(): LoadBalancerTlsCertificateRenewalSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerTlsCertificateRenewalSummary]
   }
   
-  @scala.inline
-  implicit class LoadBalancerTlsCertificateRenewalSummaryMutableBuilder[Self <: LoadBalancerTlsCertificateRenewalSummary] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerTlsCertificateRenewalSummary](x: Self) {
     
-    @scala.inline
-    def setDomainValidationOptions(value: LoadBalancerTlsCertificateDomainValidationOptionList): Self = StObject.set(x, "domainValidationOptions", value.asInstanceOf[js.Any])
+    inline def setDomainValidationOptions(value: LoadBalancerTlsCertificateDomainValidationOptionList): Self = StObject.set(x, "domainValidationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainValidationOptionsUndefined: Self = StObject.set(x, "domainValidationOptions", js.undefined)
+    inline def setDomainValidationOptionsUndefined: Self = StObject.set(x, "domainValidationOptions", js.undefined)
     
-    @scala.inline
-    def setDomainValidationOptionsVarargs(value: LoadBalancerTlsCertificateDomainValidationOption*): Self = StObject.set(x, "domainValidationOptions", js.Array(value :_*))
+    inline def setDomainValidationOptionsVarargs(value: LoadBalancerTlsCertificateDomainValidationOption*): Self = StObject.set(x, "domainValidationOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setRenewalStatus(value: LoadBalancerTlsCertificateRenewalStatus): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
+    inline def setRenewalStatus(value: LoadBalancerTlsCertificateRenewalStatus): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
+    inline def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
   }
 }

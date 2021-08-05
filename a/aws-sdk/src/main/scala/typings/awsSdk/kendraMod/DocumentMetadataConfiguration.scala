@@ -28,31 +28,23 @@ trait DocumentMetadataConfiguration extends StObject {
 }
 object DocumentMetadataConfiguration {
   
-  @scala.inline
-  def apply(Name: DocumentMetadataConfigurationName, Type: DocumentAttributeValueType): DocumentMetadataConfiguration = {
+  inline def apply(Name: DocumentMetadataConfigurationName, Type: DocumentAttributeValueType): DocumentMetadataConfiguration = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentMetadataConfiguration]
   }
   
-  @scala.inline
-  implicit class DocumentMetadataConfigurationMutableBuilder[Self <: DocumentMetadataConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMetadataConfiguration](x: Self) {
     
-    @scala.inline
-    def setName(value: DocumentMetadataConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentMetadataConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevance(value: Relevance): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: Relevance): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceUndefined: Self = StObject.set(x, "Relevance", js.undefined)
+    inline def setRelevanceUndefined: Self = StObject.set(x, "Relevance", js.undefined)
     
-    @scala.inline
-    def setSearch(value: Search): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Search): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
     
-    @scala.inline
-    def setType(value: DocumentAttributeValueType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DocumentAttributeValueType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

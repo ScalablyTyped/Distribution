@@ -25,43 +25,31 @@ trait ToastProps extends StObject {
 }
 object ToastProps {
   
-  @scala.inline
-  def apply(): ToastProps = {
+  inline def apply(): ToastProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToastProps]
   }
   
-  @scala.inline
-  implicit class ToastPropsMutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
+  extension [Self <: ToastProps](x: Self) {
     
-    @scala.inline
-    def setButton(value: ReactNode): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: ReactNode): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setColor(value: darkGray | red): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: darkGray | red): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setText(value: String | ReactElement): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | ReactElement): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: ReactNode): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: ReactNode): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailShape(value: circle | rectangle | square): Self = StObject.set(x, "thumbnailShape", value.asInstanceOf[js.Any])
+    inline def setThumbnailShape(value: circle | rectangle | square): Self = StObject.set(x, "thumbnailShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailShapeUndefined: Self = StObject.set(x, "thumbnailShape", js.undefined)
+    inline def setThumbnailShapeUndefined: Self = StObject.set(x, "thumbnailShape", js.undefined)
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

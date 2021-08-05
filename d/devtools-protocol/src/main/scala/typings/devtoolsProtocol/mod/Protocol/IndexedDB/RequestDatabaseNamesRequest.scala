@@ -13,16 +13,13 @@ trait RequestDatabaseNamesRequest extends StObject {
 }
 object RequestDatabaseNamesRequest {
   
-  @scala.inline
-  def apply(securityOrigin: String): RequestDatabaseNamesRequest = {
+  inline def apply(securityOrigin: String): RequestDatabaseNamesRequest = {
     val __obj = js.Dynamic.literal(securityOrigin = securityOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDatabaseNamesRequest]
   }
   
-  @scala.inline
-  implicit class RequestDatabaseNamesRequestMutableBuilder[Self <: RequestDatabaseNamesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RequestDatabaseNamesRequest](x: Self) {
     
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
   }
 }

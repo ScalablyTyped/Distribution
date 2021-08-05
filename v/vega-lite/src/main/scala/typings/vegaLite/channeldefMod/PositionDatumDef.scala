@@ -84,70 +84,49 @@ trait PositionDatumDef[F /* <: Field */] extends StObject {
 }
 object PositionDatumDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): PositionDatumDef[F] = {
+  inline def apply[F /* <: Field */](): PositionDatumDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionDatumDef[F]]
   }
   
-  @scala.inline
-  implicit class PositionDatumDefMutableBuilder[Self <: PositionDatumDef[?], F /* <: Field */] (val x: Self & PositionDatumDef[F]) extends AnyVal {
+  extension [Self <: PositionDatumDef[?], F /* <: Field */](x: Self & PositionDatumDef[F]) {
     
-    @scala.inline
-    def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisNull: Self = StObject.set(x, "axis", null)
+    inline def setAxisNull: Self = StObject.set(x, "axis", null)
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setDatum(value: PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumNull: Self = StObject.set(x, "datum", null)
+    inline def setDatumNull: Self = StObject.set(x, "datum", null)
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setImpute(value: ImputeParams): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
+    inline def setImpute(value: ImputeParams): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImputeNull: Self = StObject.set(x, "impute", null)
+    inline def setImputeNull: Self = StObject.set(x, "impute", null)
     
-    @scala.inline
-    def setImputeUndefined: Self = StObject.set(x, "impute", js.undefined)
+    inline def setImputeUndefined: Self = StObject.set(x, "impute", js.undefined)
     
-    @scala.inline
-    def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleNull: Self = StObject.set(x, "scale", null)
+    inline def setScaleNull: Self = StObject.set(x, "scale", null)
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setStack(value: StackOffset | Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: StackOffset | Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNull: Self = StObject.set(x, "stack", null)
+    inline def setStackNull: Self = StObject.set(x, "stack", null)
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

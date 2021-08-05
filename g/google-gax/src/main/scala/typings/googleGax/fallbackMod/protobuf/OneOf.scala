@@ -48,8 +48,7 @@ object OneOf {
     * @param fieldNames Field names
     * @returns Decorator function
     */
-  @scala.inline
-  def d[T /* <: String */](fieldNames: String*): OneOfDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldNames.asInstanceOf[js.Any]).asInstanceOf[OneOfDecorator]
+  inline def d[T /* <: String */](fieldNames: String*): OneOfDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldNames.asInstanceOf[js.Any]).asInstanceOf[OneOfDecorator]
   
   /**
     * Constructs a oneof from a oneof descriptor.
@@ -58,6 +57,5 @@ object OneOf {
     * @returns Created oneof
     * @throws {TypeError} If arguments are invalid
     */
-  @scala.inline
-  def fromJSON(name: String, json: IOneOf): typings.protobufjs.mod.OneOf = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.OneOf]
+  inline def fromJSON(name: String, json: IOneOf): typings.protobufjs.mod.OneOf = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.OneOf]
 }

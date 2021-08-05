@@ -55,88 +55,61 @@ trait InstanceGroupConfig extends StObject {
 }
 object InstanceGroupConfig {
   
-  @scala.inline
-  def apply(): InstanceGroupConfig = {
+  inline def apply(): InstanceGroupConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupConfig]
   }
   
-  @scala.inline
-  implicit class InstanceGroupConfigMutableBuilder[Self <: InstanceGroupConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupConfig](x: Self) {
     
-    @scala.inline
-    def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
+    inline def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    @scala.inline
-    def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setDiskConfig(value: DiskConfig): Self = StObject.set(x, "diskConfig", value.asInstanceOf[js.Any])
+    inline def setDiskConfig(value: DiskConfig): Self = StObject.set(x, "diskConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskConfigUndefined: Self = StObject.set(x, "diskConfig", js.undefined)
+    inline def setDiskConfigUndefined: Self = StObject.set(x, "diskConfig", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setInstanceNames(value: js.Array[String]): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
+    inline def setInstanceNames(value: js.Array[String]): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNamesUndefined: Self = StObject.set(x, "instanceNames", js.undefined)
+    inline def setInstanceNamesUndefined: Self = StObject.set(x, "instanceNames", js.undefined)
     
-    @scala.inline
-    def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
+    inline def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceReferences(value: js.Array[InstanceReference]): Self = StObject.set(x, "instanceReferences", value.asInstanceOf[js.Any])
+    inline def setInstanceReferences(value: js.Array[InstanceReference]): Self = StObject.set(x, "instanceReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceReferencesUndefined: Self = StObject.set(x, "instanceReferences", js.undefined)
+    inline def setInstanceReferencesUndefined: Self = StObject.set(x, "instanceReferences", js.undefined)
     
-    @scala.inline
-    def setInstanceReferencesVarargs(value: InstanceReference*): Self = StObject.set(x, "instanceReferences", js.Array(value :_*))
+    inline def setInstanceReferencesVarargs(value: InstanceReference*): Self = StObject.set(x, "instanceReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setIsPreemptible(value: Boolean): Self = StObject.set(x, "isPreemptible", value.asInstanceOf[js.Any])
+    inline def setIsPreemptible(value: Boolean): Self = StObject.set(x, "isPreemptible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreemptibleUndefined: Self = StObject.set(x, "isPreemptible", js.undefined)
+    inline def setIsPreemptibleUndefined: Self = StObject.set(x, "isPreemptible", js.undefined)
     
-    @scala.inline
-    def setMachineTypeUri(value: String): Self = StObject.set(x, "machineTypeUri", value.asInstanceOf[js.Any])
+    inline def setMachineTypeUri(value: String): Self = StObject.set(x, "machineTypeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUriUndefined: Self = StObject.set(x, "machineTypeUri", js.undefined)
+    inline def setMachineTypeUriUndefined: Self = StObject.set(x, "machineTypeUri", js.undefined)
     
-    @scala.inline
-    def setManagedGroupConfig(value: ManagedGroupConfig): Self = StObject.set(x, "managedGroupConfig", value.asInstanceOf[js.Any])
+    inline def setManagedGroupConfig(value: ManagedGroupConfig): Self = StObject.set(x, "managedGroupConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedGroupConfigUndefined: Self = StObject.set(x, "managedGroupConfig", js.undefined)
+    inline def setManagedGroupConfigUndefined: Self = StObject.set(x, "managedGroupConfig", js.undefined)
     
-    @scala.inline
-    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
+    inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
-    @scala.inline
-    def setNumInstances(value: Double): Self = StObject.set(x, "numInstances", value.asInstanceOf[js.Any])
+    inline def setNumInstances(value: Double): Self = StObject.set(x, "numInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumInstancesUndefined: Self = StObject.set(x, "numInstances", js.undefined)
+    inline def setNumInstancesUndefined: Self = StObject.set(x, "numInstances", js.undefined)
     
-    @scala.inline
-    def setPreemptibility(value: String): Self = StObject.set(x, "preemptibility", value.asInstanceOf[js.Any])
+    inline def setPreemptibility(value: String): Self = StObject.set(x, "preemptibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreemptibilityUndefined: Self = StObject.set(x, "preemptibility", js.undefined)
+    inline def setPreemptibilityUndefined: Self = StObject.set(x, "preemptibility", js.undefined)
   }
 }

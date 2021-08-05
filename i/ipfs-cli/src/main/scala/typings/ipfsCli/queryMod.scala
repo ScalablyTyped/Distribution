@@ -29,6 +29,5 @@ object queryMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintPeerIdTimeout: PeerId): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPeerIdTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintPeerIdTimeout: PeerId): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPeerIdTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

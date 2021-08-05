@@ -15,17 +15,14 @@ object entitySubscriberMetadataArgsMod {
   }
   object EntitySubscriberMetadataArgs {
     
-    @scala.inline
-    def apply(target: js.Function): EntitySubscriberMetadataArgs = {
+    inline def apply(target: js.Function): EntitySubscriberMetadataArgs = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntitySubscriberMetadataArgs]
     }
     
-    @scala.inline
-    implicit class EntitySubscriberMetadataArgsMutableBuilder[Self <: EntitySubscriberMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EntitySubscriberMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

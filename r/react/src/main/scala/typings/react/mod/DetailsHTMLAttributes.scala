@@ -15,25 +15,19 @@ trait DetailsHTMLAttributes[T]
 }
 object DetailsHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): DetailsHTMLAttributes[T] = {
+  inline def apply[T](): DetailsHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetailsHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class DetailsHTMLAttributesMutableBuilder[Self <: DetailsHTMLAttributes[?], T] (val x: Self & DetailsHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: DetailsHTMLAttributes[?], T](x: Self & DetailsHTMLAttributes[T]) {
     
-    @scala.inline
-    def setOnToggle(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+    inline def setOnToggle(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+    inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

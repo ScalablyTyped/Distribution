@@ -20,25 +20,19 @@ trait End extends StObject {
 }
 object End {
   
-  @scala.inline
-  def apply(): End = {
+  inline def apply(): End = {
     val __obj = js.Dynamic.literal(end = "end", middle = "middle", outside = "outside", start = "start")
     __obj.asInstanceOf[End]
   }
   
-  @scala.inline
-  implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+  extension [Self <: End](x: Self) {
     
-    @scala.inline
-    def setEnd(value: end): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: end): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddle(value: middle): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+    inline def setMiddle(value: middle): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutside(value: outside): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
+    inline def setOutside(value: outside): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

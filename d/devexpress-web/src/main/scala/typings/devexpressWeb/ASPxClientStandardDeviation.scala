@@ -23,8 +23,7 @@ trait ASPxClientStandardDeviation
 }
 object ASPxClientStandardDeviation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -37,13 +36,10 @@ object ASPxClientStandardDeviation {
     __obj.asInstanceOf[ASPxClientStandardDeviation]
   }
   
-  @scala.inline
-  implicit class ASPxClientStandardDeviationMutableBuilder[Self <: ASPxClientStandardDeviation] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientStandardDeviation](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

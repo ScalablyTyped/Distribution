@@ -19,8 +19,7 @@ trait E[W, M] extends StObject {
 }
 object E {
   
-  @scala.inline
-  def apply[W, M](
+  inline def apply[W, M](
     _E: W,
     ap: (WriterT[M, W, js.Function1[js.Any, js.Any]], WriterT[M, W, js.Any]) => WriterT[M, W, js.Any],
     chain: (WriterT[M, W, js.Any], js.Function1[js.Any, WriterT[M, W, js.Any]]) => WriterT[M, W, js.Any],
@@ -31,26 +30,20 @@ object E {
     __obj.asInstanceOf[E[W, M]]
   }
   
-  @scala.inline
-  implicit class EMutableBuilder[Self <: E[?, ?], W, M] (val x: Self & (E[W, M])) extends AnyVal {
+  extension [Self <: E[?, ?], W, M](x: Self & (E[W, M])) {
     
-    @scala.inline
-    def setAp(
+    inline def setAp(
       value: (WriterT[M, W, js.Function1[js.Any, js.Any]], WriterT[M, W, js.Any]) => WriterT[M, W, js.Any]
     ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChain(
+    inline def setChain(
       value: (WriterT[M, W, js.Any], js.Function1[js.Any, WriterT[M, W, js.Any]]) => WriterT[M, W, js.Any]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMap(value: (WriterT[M, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, W, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (WriterT[M, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, W, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOf(value: js.Any => WriterT[M, W, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: js.Any => WriterT[M, W, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_E(value: W): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+    inline def set_E(value: W): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }
 }

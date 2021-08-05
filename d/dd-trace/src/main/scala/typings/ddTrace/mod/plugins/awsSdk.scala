@@ -26,25 +26,19 @@ trait awsSdk
 }
 object awsSdk {
   
-  @scala.inline
-  def apply(): awsSdk = {
+  inline def apply(): awsSdk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[awsSdk]
   }
   
-  @scala.inline
-  implicit class awsSdkMutableBuilder[Self <: awsSdk] (val x: Self) extends AnyVal {
+  extension [Self <: awsSdk](x: Self) {
     
-    @scala.inline
-    def setHooks(value: `1`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: `1`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setSplitByAwsService(value: Boolean): Self = StObject.set(x, "splitByAwsService", value.asInstanceOf[js.Any])
+    inline def setSplitByAwsService(value: Boolean): Self = StObject.set(x, "splitByAwsService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitByAwsServiceUndefined: Self = StObject.set(x, "splitByAwsService", js.undefined)
+    inline def setSplitByAwsServiceUndefined: Self = StObject.set(x, "splitByAwsService", js.undefined)
   }
 }

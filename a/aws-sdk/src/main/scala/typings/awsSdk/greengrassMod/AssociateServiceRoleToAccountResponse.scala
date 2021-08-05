@@ -13,19 +13,15 @@ trait AssociateServiceRoleToAccountResponse extends StObject {
 }
 object AssociateServiceRoleToAccountResponse {
   
-  @scala.inline
-  def apply(): AssociateServiceRoleToAccountResponse = {
+  inline def apply(): AssociateServiceRoleToAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateServiceRoleToAccountResponse]
   }
   
-  @scala.inline
-  implicit class AssociateServiceRoleToAccountResponseMutableBuilder[Self <: AssociateServiceRoleToAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateServiceRoleToAccountResponse](x: Self) {
     
-    @scala.inline
-    def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
+    inline def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
+    inline def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
   }
 }

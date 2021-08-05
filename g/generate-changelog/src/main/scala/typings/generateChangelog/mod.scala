@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generate(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def generate(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   trait Options extends StObject {
     
@@ -38,59 +37,42 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
+      inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
+      inline def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setMajor(value: Boolean): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Boolean): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+      inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
       
-      @scala.inline
-      def setMinor(value: Boolean): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Boolean): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+      inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
       
-      @scala.inline
-      def setPatch(value: Boolean): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: Boolean): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+      inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
       
-      @scala.inline
-      def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
+      inline def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoUrlUndefined: Self = StObject.set(x, "repoUrl", js.undefined)
+      inline def setRepoUrlUndefined: Self = StObject.set(x, "repoUrl", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

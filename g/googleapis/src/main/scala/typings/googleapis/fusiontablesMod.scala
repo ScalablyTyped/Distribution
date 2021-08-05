@@ -41,8 +41,7 @@ object fusiontablesMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Fusiontables
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -65,8 +64,7 @@ object fusiontablesMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -108,8 +106,7 @@ object fusiontablesMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -153,14 +150,10 @@ object fusiontablesMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def fusiontables(options: Options): Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(options.asInstanceOf[js.Any]).asInstanceOf[Fusiontables]
-  @scala.inline
-  def fusiontables(options: typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Options): typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables]
+  inline def fusiontables(options: Options): Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(options.asInstanceOf[js.Any]).asInstanceOf[Fusiontables]
+  inline def fusiontables(options: typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Options): typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables]
   
-  @scala.inline
-  def fusiontables_v1(version: v1): Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(version.asInstanceOf[js.Any]).asInstanceOf[Fusiontables]
+  inline def fusiontables_v1(version: v1): Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(version.asInstanceOf[js.Any]).asInstanceOf[Fusiontables]
   
-  @scala.inline
-  def fusiontables_v2(version: v2): typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables]
+  inline def fusiontables_v2(version: v2): typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables = ^.asInstanceOf[js.Dynamic].applyDynamic("fusiontables")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables]
 }

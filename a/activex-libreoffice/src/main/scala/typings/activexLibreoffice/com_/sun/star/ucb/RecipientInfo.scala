@@ -69,8 +69,7 @@ trait RecipientInfo extends StObject {
 }
 object RecipientInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BCC: String,
     CC: String,
     Newsgroups: String,
@@ -89,46 +88,32 @@ object RecipientInfo {
     __obj.asInstanceOf[RecipientInfo]
   }
   
-  @scala.inline
-  implicit class RecipientInfoMutableBuilder[Self <: RecipientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientInfo](x: Self) {
     
-    @scala.inline
-    def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
+    inline def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+    inline def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewsgroups(value: String): Self = StObject.set(x, "Newsgroups", value.asInstanceOf[js.Any])
+    inline def setNewsgroups(value: String): Self = StObject.set(x, "Newsgroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolErrorNumber(value: Double): Self = StObject.set(x, "ProtocolErrorNumber", value.asInstanceOf[js.Any])
+    inline def setProtocolErrorNumber(value: Double): Self = StObject.set(x, "ProtocolErrorNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolErrorString(value: String): Self = StObject.set(x, "ProtocolErrorString", value.asInstanceOf[js.Any])
+    inline def setProtocolErrorString(value: String): Self = StObject.set(x, "ProtocolErrorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
+    inline def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendTries(value: Double): Self = StObject.set(x, "SendTries", value.asInstanceOf[js.Any])
+    inline def setSendTries(value: Double): Self = StObject.set(x, "SendTries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: OutgoingMessageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: OutgoingMessageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVIMPostOfficePath(value: String): Self = StObject.set(x, "VIMPostOfficePath", value.asInstanceOf[js.Any])
+    inline def setVIMPostOfficePath(value: String): Self = StObject.set(x, "VIMPostOfficePath", value.asInstanceOf[js.Any])
   }
 }

@@ -223,8 +223,7 @@ object RegExp {
   }
   object ChainableBase {
     
-    @scala.inline
-    def apply[RawValue](
+    inline def apply[RawValue](
       addFlags: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp],
       exec: java.lang.String => SugarDefaultChainable[RegExpExecArray | Null],
       getFlags: () => SugarDefaultChainable[java.lang.String],
@@ -237,29 +236,21 @@ object RegExp {
       __obj.asInstanceOf[ChainableBase[RawValue]]
     }
     
-    @scala.inline
-    implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
+    extension [Self <: ChainableBase[?], RawValue](x: Self & ChainableBase[RawValue]) {
       
-      @scala.inline
-      def setAddFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "addFlags", js.Any.fromFunction1(value))
+      inline def setAddFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "addFlags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExec(value: java.lang.String => SugarDefaultChainable[RegExpExecArray | Null]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+      inline def setExec(value: java.lang.String => SugarDefaultChainable[RegExpExecArray | Null]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFlags(value: () => SugarDefaultChainable[java.lang.String]): Self = StObject.set(x, "getFlags", js.Any.fromFunction0(value))
+      inline def setGetFlags(value: () => SugarDefaultChainable[java.lang.String]): Self = StObject.set(x, "getFlags", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "removeFlags", js.Any.fromFunction1(value))
+      inline def setRemoveFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "removeFlags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "setFlags", js.Any.fromFunction1(value))
+      inline def setSetFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "setFlags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTest(value: java.lang.String => SugarDefaultChainable[Boolean]): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: java.lang.String => SugarDefaultChainable[Boolean]): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
   }
   

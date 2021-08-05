@@ -24,25 +24,19 @@ trait SetScriptSourceParameterType extends StObject {
 }
 object SetScriptSourceParameterType {
   
-  @scala.inline
-  def apply(scriptId: ScriptId, scriptSource: String): SetScriptSourceParameterType = {
+  inline def apply(scriptId: ScriptId, scriptSource: String): SetScriptSourceParameterType = {
     val __obj = js.Dynamic.literal(scriptId = scriptId.asInstanceOf[js.Any], scriptSource = scriptSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceParameterType]
   }
   
-  @scala.inline
-  implicit class SetScriptSourceParameterTypeMutableBuilder[Self <: SetScriptSourceParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SetScriptSourceParameterType](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
+    inline def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }
 }

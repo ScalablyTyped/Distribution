@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Captcha = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Captcha]
-  @scala.inline
-  def apply(options: Options): Captcha = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Captcha]
-  @scala.inline
-  def apply(width: Double, height: Double, offset: Double): Captcha = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Captcha]
+  inline def apply(): Captcha = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Captcha]
+  inline def apply(options: Options): Captcha = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Captcha]
+  inline def apply(width: Double, height: Double, offset: Double): Captcha = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Captcha]
   
   @JSImport("ccap", JSImport.Namespace)
   @js.native
@@ -24,17 +21,14 @@ object mod {
   }
   object Captcha {
     
-    @scala.inline
-    def apply(get: () => js.Tuple2[String, Buffer]): Captcha = {
+    inline def apply(get: () => js.Tuple2[String, Buffer]): Captcha = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
       __obj.asInstanceOf[Captcha]
     }
     
-    @scala.inline
-    implicit class CaptchaMutableBuilder[Self <: Captcha] (val x: Self) extends AnyVal {
+    extension [Self <: Captcha](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => js.Tuple2[String, Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Tuple2[String, Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,50 +54,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFontsize(value: Double): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
+      inline def setFontsize(value: Double): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
+      inline def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
       
-      @scala.inline
-      def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
+      inline def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
+      inline def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

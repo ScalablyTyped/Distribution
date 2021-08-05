@@ -12,17 +12,14 @@ object anon {
   }
   object VerifyChecksum {
     
-    @scala.inline
-    def apply(verifyChecksum: Boolean): VerifyChecksum = {
+    inline def apply(verifyChecksum: Boolean): VerifyChecksum = {
       val __obj = js.Dynamic.literal(verifyChecksum = verifyChecksum.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyChecksum]
     }
     
-    @scala.inline
-    implicit class VerifyChecksumMutableBuilder[Self <: VerifyChecksum] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyChecksum](x: Self) {
       
-      @scala.inline
-      def setVerifyChecksum(value: Boolean): Self = StObject.set(x, "verifyChecksum", value.asInstanceOf[js.Any])
+      inline def setVerifyChecksum(value: Boolean): Self = StObject.set(x, "verifyChecksum", value.asInstanceOf[js.Any])
     }
   }
 }

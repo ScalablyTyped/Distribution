@@ -18,8 +18,7 @@ trait ParametersGistsForkEndpoint extends StObject {
 }
 object ParametersGistsForkEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GistsForkEndpoint,
     request: GistsForkRequestOptions,
     response: OctokitResponse[GistsForkResponseData]
@@ -28,16 +27,12 @@ object ParametersGistsForkEndpoint {
     __obj.asInstanceOf[ParametersGistsForkEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGistsForkEndpointMutableBuilder[Self <: ParametersGistsForkEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGistsForkEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GistsForkEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GistsForkEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GistsForkRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GistsForkRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GistsForkResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GistsForkResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

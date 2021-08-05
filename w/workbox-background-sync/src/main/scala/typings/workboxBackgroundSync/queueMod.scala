@@ -38,29 +38,22 @@ object queueMod {
   }
   object QueueEntry {
     
-    @scala.inline
-    def apply[Metadata](request: Request): QueueEntry[Metadata] = {
+    inline def apply[Metadata](request: Request): QueueEntry[Metadata] = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueEntry[Metadata]]
     }
     
-    @scala.inline
-    implicit class QueueEntryMutableBuilder[Self <: QueueEntry[?], Metadata] (val x: Self & QueueEntry[Metadata]) extends AnyVal {
+    extension [Self <: QueueEntry[?], Metadata](x: Self & QueueEntry[Metadata]) {
       
-      @scala.inline
-      def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
   
@@ -70,17 +63,14 @@ object queueMod {
   }
   object QueueOnSyncEvent {
     
-    @scala.inline
-    def apply(queue: Queue): QueueOnSyncEvent = {
+    inline def apply(queue: Queue): QueueOnSyncEvent = {
       val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueOnSyncEvent]
     }
     
-    @scala.inline
-    implicit class QueueOnSyncEventMutableBuilder[Self <: QueueOnSyncEvent] (val x: Self) extends AnyVal {
+    extension [Self <: QueueOnSyncEvent](x: Self) {
       
-      @scala.inline
-      def setQueue(value: Queue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: Queue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,26 +84,20 @@ object queueMod {
   }
   object QueueOptions {
     
-    @scala.inline
-    def apply(): QueueOptions = {
+    inline def apply(): QueueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueOptions]
     }
     
-    @scala.inline
-    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueueOptions](x: Self) {
       
-      @scala.inline
-      def setMaxRetentionTime(value: Double): Self = StObject.set(x, "maxRetentionTime", value.asInstanceOf[js.Any])
+      inline def setMaxRetentionTime(value: Double): Self = StObject.set(x, "maxRetentionTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetentionTimeUndefined: Self = StObject.set(x, "maxRetentionTime", js.undefined)
+      inline def setMaxRetentionTimeUndefined: Self = StObject.set(x, "maxRetentionTime", js.undefined)
       
-      @scala.inline
-      def setOnSync(value: /* options */ QueueOnSyncEvent => Unit | js.Promise[Unit]): Self = StObject.set(x, "onSync", js.Any.fromFunction1(value))
+      inline def setOnSync(value: /* options */ QueueOnSyncEvent => Unit | js.Promise[Unit]): Self = StObject.set(x, "onSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSyncUndefined: Self = StObject.set(x, "onSync", js.undefined)
+      inline def setOnSyncUndefined: Self = StObject.set(x, "onSync", js.undefined)
     }
   }
 }

@@ -22,8 +22,7 @@ trait StoryPoll
 }
 object StoryPoll {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     question: String,
     rotation: Double,
@@ -36,22 +35,16 @@ object StoryPoll {
     __obj.asInstanceOf[StoryPoll]
   }
   
-  @scala.inline
-  implicit class StoryPollMutableBuilder[Self <: StoryPoll] (val x: Self) extends AnyVal {
+  extension [Self <: StoryPoll](x: Self) {
     
-    @scala.inline
-    def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTallies(value: js.Tuple2[StoryPollTallie, StoryPollTallie]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
+    inline def setTallies(value: js.Tuple2[StoryPollTallie, StoryPollTallie]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_can_vote(value: `true`): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
+    inline def setViewer_can_vote(value: `true`): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_vote(value: `0`): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
+    inline def setViewer_vote(value: `0`): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
   }
 }

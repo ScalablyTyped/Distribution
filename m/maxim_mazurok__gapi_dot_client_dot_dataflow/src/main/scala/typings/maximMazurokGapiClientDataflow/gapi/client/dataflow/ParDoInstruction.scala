@@ -28,53 +28,39 @@ trait ParDoInstruction extends StObject {
 }
 object ParDoInstruction {
   
-  @scala.inline
-  def apply(): ParDoInstruction = {
+  inline def apply(): ParDoInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParDoInstruction]
   }
   
-  @scala.inline
-  implicit class ParDoInstructionMutableBuilder[Self <: ParDoInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: ParDoInstruction](x: Self) {
     
-    @scala.inline
-    def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setMultiOutputInfos(value: js.Array[MultiOutputInfo]): Self = StObject.set(x, "multiOutputInfos", value.asInstanceOf[js.Any])
+    inline def setMultiOutputInfos(value: js.Array[MultiOutputInfo]): Self = StObject.set(x, "multiOutputInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiOutputInfosUndefined: Self = StObject.set(x, "multiOutputInfos", js.undefined)
+    inline def setMultiOutputInfosUndefined: Self = StObject.set(x, "multiOutputInfos", js.undefined)
     
-    @scala.inline
-    def setMultiOutputInfosVarargs(value: MultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value :_*))
+    inline def setMultiOutputInfosVarargs(value: MultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setNumOutputs(value: Double): Self = StObject.set(x, "numOutputs", value.asInstanceOf[js.Any])
+    inline def setNumOutputs(value: Double): Self = StObject.set(x, "numOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumOutputsUndefined: Self = StObject.set(x, "numOutputs", js.undefined)
+    inline def setNumOutputsUndefined: Self = StObject.set(x, "numOutputs", js.undefined)
     
-    @scala.inline
-    def setSideInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
+    inline def setSideInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
+    inline def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
-    @scala.inline
-    def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
+    inline def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
     
-    @scala.inline
-    def setUserFn(
+    inline def setUserFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParDoInstruction & TopLevel[js.Any]
     ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
+    inline def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
   }
 }

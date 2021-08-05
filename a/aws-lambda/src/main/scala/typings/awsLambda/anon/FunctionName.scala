@@ -12,19 +12,15 @@ trait FunctionName extends StObject {
 }
 object FunctionName {
   
-  @scala.inline
-  def apply(FunctionName: String, UserParameters: String): FunctionName = {
+  inline def apply(FunctionName: String, UserParameters: String): FunctionName = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], UserParameters = UserParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionName]
   }
   
-  @scala.inline
-  implicit class FunctionNameMutableBuilder[Self <: FunctionName] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionName](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserParameters(value: String): Self = StObject.set(x, "UserParameters", value.asInstanceOf[js.Any])
+    inline def setUserParameters(value: String): Self = StObject.set(x, "UserParameters", value.asInstanceOf[js.Any])
   }
 }

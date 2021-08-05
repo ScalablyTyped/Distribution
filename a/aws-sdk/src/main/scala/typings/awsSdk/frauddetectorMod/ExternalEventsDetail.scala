@@ -18,19 +18,15 @@ trait ExternalEventsDetail extends StObject {
 }
 object ExternalEventsDetail {
   
-  @scala.inline
-  def apply(dataAccessRoleArn: iamRoleArn, dataLocation: s3BucketLocation): ExternalEventsDetail = {
+  inline def apply(dataAccessRoleArn: iamRoleArn, dataLocation: s3BucketLocation): ExternalEventsDetail = {
     val __obj = js.Dynamic.literal(dataAccessRoleArn = dataAccessRoleArn.asInstanceOf[js.Any], dataLocation = dataLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalEventsDetail]
   }
   
-  @scala.inline
-  implicit class ExternalEventsDetailMutableBuilder[Self <: ExternalEventsDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalEventsDetail](x: Self) {
     
-    @scala.inline
-    def setDataAccessRoleArn(value: iamRoleArn): Self = StObject.set(x, "dataAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setDataAccessRoleArn(value: iamRoleArn): Self = StObject.set(x, "dataAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLocation(value: s3BucketLocation): Self = StObject.set(x, "dataLocation", value.asInstanceOf[js.Any])
+    inline def setDataLocation(value: s3BucketLocation): Self = StObject.set(x, "dataLocation", value.asInstanceOf[js.Any])
   }
 }

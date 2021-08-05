@@ -29,8 +29,7 @@ trait SomeType
      with __ModelToObject[js.Any]
 object SomeType {
   
-  @scala.inline
-  def ArrayType(
+  inline def ArrayType(
     elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
     `type`: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)
   ): typings.typedoc.schemaMod.ArrayType = {
@@ -39,8 +38,7 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.ArrayType]
   }
   
-  @scala.inline
-  def ConditionalType(
+  inline def ConditionalType(
     checkType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     extendsType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     falseType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
@@ -52,8 +50,7 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.ConditionalType]
   }
   
-  @scala.inline
-  def IndexedAccessType(
+  inline def IndexedAccessType(
     indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
     objectType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
     `type`: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)
@@ -63,15 +60,13 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.IndexedAccessType]
   }
   
-  @scala.inline
-  def InferredType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): typings.typedoc.schemaMod.InferredType = {
+  inline def InferredType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): typings.typedoc.schemaMod.InferredType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.schemaMod.InferredType]
   }
   
-  @scala.inline
-  def IntersectionType(
+  inline def IntersectionType(
     `type`: ModelToObject[String] | String,
     types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
   ): typings.typedoc.schemaMod.IntersectionType = {
@@ -80,8 +75,7 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.IntersectionType]
   }
   
-  @scala.inline
-  def IntrinsicType(
+  inline def IntrinsicType(
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)
   ): typings.typedoc.schemaMod.IntrinsicType = {
@@ -90,8 +84,7 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.IntrinsicType]
   }
   
-  @scala.inline
-  def PredicateType(
+  inline def PredicateType(
     asserts: ModelToObject[Boolean] | Boolean,
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)
@@ -101,8 +94,7 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.PredicateType]
   }
   
-  @scala.inline
-  def ReferenceType(
+  inline def ReferenceType(
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)
   ): typings.typedoc.schemaMod.ReferenceType = {
@@ -111,15 +103,13 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.ReferenceType]
   }
   
-  @scala.inline
-  def ReflectionType(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): typings.typedoc.schemaMod.ReflectionType = {
+  inline def ReflectionType(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): typings.typedoc.schemaMod.ReflectionType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.schemaMod.ReflectionType]
   }
   
-  @scala.inline
-  def StringLiteralType(
+  inline def StringLiteralType(
     `type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String),
     value: ModelToObject[String] | String
   ): typings.typedoc.schemaMod.StringLiteralType = {
@@ -128,15 +118,13 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.StringLiteralType]
   }
   
-  @scala.inline
-  def TupleType(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): typings.typedoc.schemaMod.TupleType = {
+  inline def TupleType(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): typings.typedoc.schemaMod.TupleType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.schemaMod.TupleType]
   }
   
-  @scala.inline
-  def TypeOperatorType(
+  inline def TypeOperatorType(
     operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly,
     target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)
@@ -146,15 +134,13 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.TypeOperatorType]
   }
   
-  @scala.inline
-  def TypeParameterType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): typings.typedoc.schemaMod.TypeParameterType = {
+  inline def TypeParameterType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): typings.typedoc.schemaMod.TypeParameterType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.schemaMod.TypeParameterType]
   }
   
-  @scala.inline
-  def UnionType(
+  inline def UnionType(
     `type`: ModelToObject[String] | String,
     types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
   ): typings.typedoc.schemaMod.UnionType = {
@@ -163,8 +149,7 @@ object SomeType {
     __obj.asInstanceOf[typings.typedoc.schemaMod.UnionType]
   }
   
-  @scala.inline
-  def UnknownType(
+  inline def UnknownType(
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "unknown" */ String]) | (/* "unknown" */ String)
   ): typings.typedoc.schemaMod.UnknownType = {

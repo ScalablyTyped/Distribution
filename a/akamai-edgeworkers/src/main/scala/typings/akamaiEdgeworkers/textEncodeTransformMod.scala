@@ -139,20 +139,16 @@ object textEncodeTransformMod {
   }
   object GenericTransformStream {
     
-    @scala.inline
-    def apply(readable: ReadableStream[js.Any], writable: WritableStream[js.Any]): GenericTransformStream = {
+    inline def apply(readable: ReadableStream[js.Any], writable: WritableStream[js.Any]): GenericTransformStream = {
       val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericTransformStream]
     }
     
-    @scala.inline
-    implicit class GenericTransformStreamMutableBuilder[Self <: GenericTransformStream] (val x: Self) extends AnyVal {
+    extension [Self <: GenericTransformStream](x: Self) {
       
-      @scala.inline
-      def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,23 +171,18 @@ object textEncodeTransformMod {
   }
   object TextDecoderCommon {
     
-    @scala.inline
-    def apply(encoding: String, fatal: Boolean, ignoreBOM: Boolean): TextDecoderCommon = {
+    inline def apply(encoding: String, fatal: Boolean, ignoreBOM: Boolean): TextDecoderCommon = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], ignoreBOM = ignoreBOM.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextDecoderCommon]
     }
     
-    @scala.inline
-    implicit class TextDecoderCommonMutableBuilder[Self <: TextDecoderCommon] (val x: Self) extends AnyVal {
+    extension [Self <: TextDecoderCommon](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
+      inline def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,26 +194,20 @@ object textEncodeTransformMod {
   }
   object TextDecoderOptions {
     
-    @scala.inline
-    def apply(): TextDecoderOptions = {
+    inline def apply(): TextDecoderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextDecoderOptions]
     }
     
-    @scala.inline
-    implicit class TextDecoderOptionsMutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextDecoderOptions](x: Self) {
       
-      @scala.inline
-      def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+      inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
       
-      @scala.inline
-      def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
+      inline def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
+      inline def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
     }
   }
   
@@ -239,8 +224,7 @@ object textEncodeTransformMod {
   }
   object TextDecoderStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       encoding: String,
       fatal: Boolean,
       ignoreBOM: Boolean,
@@ -251,14 +235,11 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[TextDecoderStream]
     }
     
-    @scala.inline
-    implicit class TextDecoderStreamMutableBuilder[Self <: TextDecoderStream] (val x: Self) extends AnyVal {
+    extension [Self <: TextDecoderStream](x: Self) {
       
-      @scala.inline
-      def setReadable(value: ReadableStream[String]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStream[String]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: WritableStream[BufferSource]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: WritableStream[BufferSource]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,17 +252,14 @@ object textEncodeTransformMod {
   }
   object TextEncoderCommon {
     
-    @scala.inline
-    def apply(encoding: String): TextEncoderCommon = {
+    inline def apply(encoding: String): TextEncoderCommon = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextEncoderCommon]
     }
     
-    @scala.inline
-    implicit class TextEncoderCommonMutableBuilder[Self <: TextEncoderCommon] (val x: Self) extends AnyVal {
+    extension [Self <: TextEncoderCommon](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,20 +276,16 @@ object textEncodeTransformMod {
   }
   object TextEncoderStream {
     
-    @scala.inline
-    def apply(encoding: String, readable: ReadableStream[Uint8Array], writable: WritableStream[String]): TextEncoderStream = {
+    inline def apply(encoding: String, readable: ReadableStream[Uint8Array], writable: WritableStream[String]): TextEncoderStream = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextEncoderStream]
     }
     
-    @scala.inline
-    implicit class TextEncoderStreamMutableBuilder[Self <: TextEncoderStream] (val x: Self) extends AnyVal {
+    extension [Self <: TextEncoderStream](x: Self) {
       
-      @scala.inline
-      def setReadable(value: ReadableStream[Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStream[Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: WritableStream[String]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: WritableStream[String]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
 }

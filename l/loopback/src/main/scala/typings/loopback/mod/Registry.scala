@@ -132,6 +132,5 @@ object Registry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def addACL(acls: js.Array[js.Any], acl: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addACL")(acls.asInstanceOf[js.Any], acl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addACL(acls: js.Array[js.Any], acl: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addACL")(acls.asInstanceOf[js.Any], acl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

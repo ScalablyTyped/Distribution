@@ -15,26 +15,20 @@ object anon {
   }
   object PartialPluralizeFnLocale {
     
-    @scala.inline
-    def apply(): PartialPluralizeFnLocale = {
+    inline def apply(): PartialPluralizeFnLocale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialPluralizeFnLocale]
     }
     
-    @scala.inline
-    implicit class PartialPluralizeFnLocaleMutableBuilder[Self <: PartialPluralizeFnLocale] (val x: Self) extends AnyVal {
+    extension [Self <: PartialPluralizeFnLocale](x: Self) {
       
-      @scala.inline
-      def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+      inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
       
-      @scala.inline
-      def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     }
   }
 }

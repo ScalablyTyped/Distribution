@@ -16,16 +16,13 @@ trait NoMasterException
 }
 object NoMasterException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Mode: PasswordRequestMode): NoMasterException = {
+  inline def apply(Context: XInterface, Message: String, Mode: PasswordRequestMode): NoMasterException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoMasterException]
   }
   
-  @scala.inline
-  implicit class NoMasterExceptionMutableBuilder[Self <: NoMasterException] (val x: Self) extends AnyVal {
+  extension [Self <: NoMasterException](x: Self) {
     
-    @scala.inline
-    def setMode(value: PasswordRequestMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: PasswordRequestMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

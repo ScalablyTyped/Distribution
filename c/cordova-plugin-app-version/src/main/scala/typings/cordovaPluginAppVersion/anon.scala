@@ -18,8 +18,7 @@ object anon {
   }
   object GetAppName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAppName: () => js.Promise[String],
       getPackageName: () => js.Promise[String],
       getVersionCode: () => js.Promise[String],
@@ -29,20 +28,15 @@ object anon {
       __obj.asInstanceOf[GetAppName]
     }
     
-    @scala.inline
-    implicit class GetAppNameMutableBuilder[Self <: GetAppName] (val x: Self) extends AnyVal {
+    extension [Self <: GetAppName](x: Self) {
       
-      @scala.inline
-      def setGetAppName(value: () => js.Promise[String]): Self = StObject.set(x, "getAppName", js.Any.fromFunction0(value))
+      inline def setGetAppName(value: () => js.Promise[String]): Self = StObject.set(x, "getAppName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPackageName(value: () => js.Promise[String]): Self = StObject.set(x, "getPackageName", js.Any.fromFunction0(value))
+      inline def setGetPackageName(value: () => js.Promise[String]): Self = StObject.set(x, "getPackageName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVersionCode(value: () => js.Promise[String]): Self = StObject.set(x, "getVersionCode", js.Any.fromFunction0(value))
+      inline def setGetVersionCode(value: () => js.Promise[String]): Self = StObject.set(x, "getVersionCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVersionNumber(value: () => js.Promise[String]): Self = StObject.set(x, "getVersionNumber", js.Any.fromFunction0(value))
+      inline def setGetVersionNumber(value: () => js.Promise[String]): Self = StObject.set(x, "getVersionNumber", js.Any.fromFunction0(value))
     }
   }
 }

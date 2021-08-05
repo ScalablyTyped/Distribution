@@ -13,17 +13,14 @@ trait IP24PaymentMethodDetails
 }
 object IP24PaymentMethodDetails {
   
-  @scala.inline
-  def apply(): IP24PaymentMethodDetails = {
+  inline def apply(): IP24PaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("p24")
     __obj.asInstanceOf[IP24PaymentMethodDetails]
   }
   
-  @scala.inline
-  implicit class IP24PaymentMethodDetailsMutableBuilder[Self <: IP24PaymentMethodDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IP24PaymentMethodDetails](x: Self) {
     
-    @scala.inline
-    def setType(value: p24): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: p24): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

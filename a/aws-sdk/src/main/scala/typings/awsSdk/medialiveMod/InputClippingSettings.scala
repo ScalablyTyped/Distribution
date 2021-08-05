@@ -23,28 +23,21 @@ trait InputClippingSettings extends StObject {
 }
 object InputClippingSettings {
   
-  @scala.inline
-  def apply(InputTimecodeSource: InputTimecodeSource): InputClippingSettings = {
+  inline def apply(InputTimecodeSource: InputTimecodeSource): InputClippingSettings = {
     val __obj = js.Dynamic.literal(InputTimecodeSource = InputTimecodeSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputClippingSettings]
   }
   
-  @scala.inline
-  implicit class InputClippingSettingsMutableBuilder[Self <: InputClippingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputClippingSettings](x: Self) {
     
-    @scala.inline
-    def setInputTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "InputTimecodeSource", value.asInstanceOf[js.Any])
+    inline def setInputTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "InputTimecodeSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimecode(value: StartTimecode): Self = StObject.set(x, "StartTimecode", value.asInstanceOf[js.Any])
+    inline def setStartTimecode(value: StartTimecode): Self = StObject.set(x, "StartTimecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimecodeUndefined: Self = StObject.set(x, "StartTimecode", js.undefined)
+    inline def setStartTimecodeUndefined: Self = StObject.set(x, "StartTimecode", js.undefined)
     
-    @scala.inline
-    def setStopTimecode(value: StopTimecode): Self = StObject.set(x, "StopTimecode", value.asInstanceOf[js.Any])
+    inline def setStopTimecode(value: StopTimecode): Self = StObject.set(x, "StopTimecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopTimecodeUndefined: Self = StObject.set(x, "StopTimecode", js.undefined)
+    inline def setStopTimecodeUndefined: Self = StObject.set(x, "StopTimecode", js.undefined)
   }
 }

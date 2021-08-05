@@ -8,6 +8,5 @@ object firebaseInstallationsTypesStrings {
   
   @js.native
   sealed trait installations extends StObject
-  @scala.inline
-  def installations: installations = "installations".asInstanceOf[installations]
+  inline def installations: installations = "installations".asInstanceOf[installations]
 }

@@ -19,18 +19,18 @@ object coreMod {
   class CoreNormalizer ()
     extends SpecMapper[NormalizerParams, FacetedUnitSpec, LayerSpec, NormalizedUnitSpec, scala.Nothing, FieldName] {
     
-    var getFacetMappingAndLayout: js.Any = js.native
+    /* private */ var getFacetMappingAndLayout: js.Any = js.native
     
-    var mapFacetedUnit: js.Any = js.native
+    /* private */ var mapFacetedUnit: js.Any = js.native
     
-    var mapLayerRepeat: js.Any = js.native
+    /* private */ var mapLayerRepeat: js.Any = js.native
     
-    var mapNonLayerRepeat: js.Any = js.native
+    /* private */ var mapNonLayerRepeat: js.Any = js.native
     
     def mapUnit(spec: UnitSpec, params: NormalizerParams): NormalizedUnitSpec | NormalizedLayerSpec = js.native
     
-    var mapUnitWithParentEncodingOrProjection: js.Any = js.native
+    /* private */ var mapUnitWithParentEncodingOrProjection: js.Any = js.native
     
-    var nonFacetUnitNormalizers: js.Any = js.native
+    /* private */ var nonFacetUnitNormalizers: js.Any = js.native
   }
 }

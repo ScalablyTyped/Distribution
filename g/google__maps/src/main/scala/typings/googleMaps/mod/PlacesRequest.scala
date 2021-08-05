@@ -81,70 +81,49 @@ trait PlacesRequest extends StObject {
 }
 object PlacesRequest {
   
-  @scala.inline
-  def apply(query: String): PlacesRequest = {
+  inline def apply(query: String): PlacesRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacesRequest]
   }
   
-  @scala.inline
-  implicit class PlacesRequestMutableBuilder[Self <: PlacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlacesRequest](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMaxprice(value: Double): Self = StObject.set(x, "maxprice", value.asInstanceOf[js.Any])
+    inline def setMaxprice(value: Double): Self = StObject.set(x, "maxprice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxpriceUndefined: Self = StObject.set(x, "maxprice", js.undefined)
+    inline def setMaxpriceUndefined: Self = StObject.set(x, "maxprice", js.undefined)
     
-    @scala.inline
-    def setMinprice(value: Double): Self = StObject.set(x, "minprice", value.asInstanceOf[js.Any])
+    inline def setMinprice(value: Double): Self = StObject.set(x, "minprice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinpriceUndefined: Self = StObject.set(x, "minprice", js.undefined)
+    inline def setMinpriceUndefined: Self = StObject.set(x, "minprice", js.undefined)
     
-    @scala.inline
-    def setOpennow(value: Boolean): Self = StObject.set(x, "opennow", value.asInstanceOf[js.Any])
+    inline def setOpennow(value: Boolean): Self = StObject.set(x, "opennow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpennowUndefined: Self = StObject.set(x, "opennow", js.undefined)
+    inline def setOpennowUndefined: Self = StObject.set(x, "opennow", js.undefined)
     
-    @scala.inline
-    def setPagetoken(value: String): Self = StObject.set(x, "pagetoken", value.asInstanceOf[js.Any])
+    inline def setPagetoken(value: String): Self = StObject.set(x, "pagetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagetokenUndefined: Self = StObject.set(x, "pagetoken", js.undefined)
+    inline def setPagetokenUndefined: Self = StObject.set(x, "pagetoken", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setType(value: PlaceType1): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PlaceType1): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

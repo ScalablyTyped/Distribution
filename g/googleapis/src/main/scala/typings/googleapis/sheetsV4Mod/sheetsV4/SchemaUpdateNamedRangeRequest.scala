@@ -23,25 +23,19 @@ trait SchemaUpdateNamedRangeRequest extends StObject {
 }
 object SchemaUpdateNamedRangeRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateNamedRangeRequest = {
+  inline def apply(): SchemaUpdateNamedRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateNamedRangeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateNamedRangeRequestMutableBuilder[Self <: SchemaUpdateNamedRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateNamedRangeRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setNamedRange(value: SchemaNamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
+    inline def setNamedRange(value: SchemaNamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeUndefined: Self = StObject.set(x, "namedRange", js.undefined)
+    inline def setNamedRangeUndefined: Self = StObject.set(x, "namedRange", js.undefined)
   }
 }

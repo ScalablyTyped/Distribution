@@ -10,6 +10,5 @@ object isTtyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isTTY(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTTY")().asInstanceOf[Boolean]
+  inline def isTTY(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTTY")().asInstanceOf[Boolean]
 }

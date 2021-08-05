@@ -18,25 +18,19 @@ trait QueryStringNames extends StObject {
 }
 object QueryStringNames {
   
-  @scala.inline
-  def apply(Quantity: integer): QueryStringNames = {
+  inline def apply(Quantity: integer): QueryStringNames = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryStringNames]
   }
   
-  @scala.inline
-  implicit class QueryStringNamesMutableBuilder[Self <: QueryStringNames] (val x: Self) extends AnyVal {
+  extension [Self <: QueryStringNames](x: Self) {
     
-    @scala.inline
-    def setItems(value: QueryStringNamesList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: QueryStringNamesList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

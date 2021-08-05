@@ -28,61 +28,43 @@ trait IProgressCircularConfig extends StObject {
 }
 object IProgressCircularConfig {
   
-  @scala.inline
-  def apply(): IProgressCircularConfig = {
+  inline def apply(): IProgressCircularConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IProgressCircularConfig]
   }
   
-  @scala.inline
-  implicit class IProgressCircularConfigMutableBuilder[Self <: IProgressCircularConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IProgressCircularConfig](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationIndeterminate(value: Double): Self = StObject.set(x, "durationIndeterminate", value.asInstanceOf[js.Any])
+    inline def setDurationIndeterminate(value: Double): Self = StObject.set(x, "durationIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationIndeterminateUndefined: Self = StObject.set(x, "durationIndeterminate", js.undefined)
+    inline def setDurationIndeterminateUndefined: Self = StObject.set(x, "durationIndeterminate", js.undefined)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEaseFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeFn", js.Any.fromFunction4(value))
+    inline def setEaseFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeFn", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseFnIndeterminate(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeFnIndeterminate", js.Any.fromFunction4(value))
+    inline def setEaseFnIndeterminate(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeFnIndeterminate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseFnIndeterminateUndefined: Self = StObject.set(x, "easeFnIndeterminate", js.undefined)
+    inline def setEaseFnIndeterminateUndefined: Self = StObject.set(x, "easeFnIndeterminate", js.undefined)
     
-    @scala.inline
-    def setEaseFnUndefined: Self = StObject.set(x, "easeFn", js.undefined)
+    inline def setEaseFnUndefined: Self = StObject.set(x, "easeFn", js.undefined)
     
-    @scala.inline
-    def setEndIndeterminate(value: Double): Self = StObject.set(x, "endIndeterminate", value.asInstanceOf[js.Any])
+    inline def setEndIndeterminate(value: Double): Self = StObject.set(x, "endIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndeterminateUndefined: Self = StObject.set(x, "endIndeterminate", js.undefined)
+    inline def setEndIndeterminateUndefined: Self = StObject.set(x, "endIndeterminate", js.undefined)
     
-    @scala.inline
-    def setProgressSize(value: Double): Self = StObject.set(x, "progressSize", value.asInstanceOf[js.Any])
+    inline def setProgressSize(value: Double): Self = StObject.set(x, "progressSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressSizeUndefined: Self = StObject.set(x, "progressSize", js.undefined)
+    inline def setProgressSizeUndefined: Self = StObject.set(x, "progressSize", js.undefined)
     
-    @scala.inline
-    def setStartIndeterminate(value: Double): Self = StObject.set(x, "startIndeterminate", value.asInstanceOf[js.Any])
+    inline def setStartIndeterminate(value: Double): Self = StObject.set(x, "startIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndeterminateUndefined: Self = StObject.set(x, "startIndeterminate", js.undefined)
+    inline def setStartIndeterminateUndefined: Self = StObject.set(x, "startIndeterminate", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

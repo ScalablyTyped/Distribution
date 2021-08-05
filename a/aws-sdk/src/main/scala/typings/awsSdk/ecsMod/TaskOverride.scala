@@ -38,55 +38,39 @@ trait TaskOverride extends StObject {
 }
 object TaskOverride {
   
-  @scala.inline
-  def apply(): TaskOverride = {
+  inline def apply(): TaskOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskOverride]
   }
   
-  @scala.inline
-  implicit class TaskOverrideMutableBuilder[Self <: TaskOverride] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOverride](x: Self) {
     
-    @scala.inline
-    def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
+    inline def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
+    inline def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
     
-    @scala.inline
-    def setContainerOverridesVarargs(value: ContainerOverride*): Self = StObject.set(x, "containerOverrides", js.Array(value :_*))
+    inline def setContainerOverridesVarargs(value: ContainerOverride*): Self = StObject.set(x, "containerOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+    inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: String): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: String): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
     
-    @scala.inline
-    def setInferenceAcceleratorOverrides(value: InferenceAcceleratorOverrides): Self = StObject.set(x, "inferenceAcceleratorOverrides", value.asInstanceOf[js.Any])
+    inline def setInferenceAcceleratorOverrides(value: InferenceAcceleratorOverrides): Self = StObject.set(x, "inferenceAcceleratorOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferenceAcceleratorOverridesUndefined: Self = StObject.set(x, "inferenceAcceleratorOverrides", js.undefined)
+    inline def setInferenceAcceleratorOverridesUndefined: Self = StObject.set(x, "inferenceAcceleratorOverrides", js.undefined)
     
-    @scala.inline
-    def setInferenceAcceleratorOverridesVarargs(value: InferenceAcceleratorOverride*): Self = StObject.set(x, "inferenceAcceleratorOverrides", js.Array(value :_*))
+    inline def setInferenceAcceleratorOverridesVarargs(value: InferenceAcceleratorOverride*): Self = StObject.set(x, "inferenceAcceleratorOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
-    @scala.inline
-    def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
+    inline def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
+    inline def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
   }
 }

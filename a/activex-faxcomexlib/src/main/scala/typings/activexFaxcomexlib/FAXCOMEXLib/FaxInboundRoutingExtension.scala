@@ -11,7 +11,7 @@ trait FaxInboundRoutingExtension extends StObject {
   /** Is extension built in debug environment */
   val Debug: Boolean
   
-  @JSName("FAXCOMEXLib.FaxInboundRoutingExtension_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxInboundRoutingExtension_typekey")
   var FAXCOMEXLibDotFaxInboundRoutingExtension_typekey: FaxInboundRoutingExtension
   
   /** Extension's friendly name */
@@ -46,8 +46,7 @@ trait FaxInboundRoutingExtension extends StObject {
 }
 object FaxInboundRoutingExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Debug: Boolean,
     FAXCOMEXLibDotFaxInboundRoutingExtension_typekey: FaxInboundRoutingExtension,
     FriendlyName: String,
@@ -66,43 +65,30 @@ object FaxInboundRoutingExtension {
     __obj.asInstanceOf[FaxInboundRoutingExtension]
   }
   
-  @scala.inline
-  implicit class FaxInboundRoutingExtensionMutableBuilder[Self <: FaxInboundRoutingExtension] (val x: Self) extends AnyVal {
+  extension [Self <: FaxInboundRoutingExtension](x: Self) {
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "Debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "Debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxInboundRoutingExtension_typekey(value: FaxInboundRoutingExtension): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRoutingExtension_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxInboundRoutingExtension_typekey(value: FaxInboundRoutingExtension): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRoutingExtension_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageName(value: String): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: String): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitErrorCode(value: Double): Self = StObject.set(x, "InitErrorCode", value.asInstanceOf[js.Any])
+    inline def setInitErrorCode(value: Double): Self = StObject.set(x, "InitErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorBuild(value: Double): Self = StObject.set(x, "MajorBuild", value.asInstanceOf[js.Any])
+    inline def setMajorBuild(value: Double): Self = StObject.set(x, "MajorBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethods(value: SafeArray[String]): Self = StObject.set(x, "Methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: SafeArray[String]): Self = StObject.set(x, "Methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorBuild(value: Double): Self = StObject.set(x, "MinorBuild", value.asInstanceOf[js.Any])
+    inline def setMinorBuild(value: Double): Self = StObject.set(x, "MinorBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: FAX_PROVIDER_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FAX_PROVIDER_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "UniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "UniqueName", value.asInstanceOf[js.Any])
   }
 }

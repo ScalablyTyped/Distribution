@@ -11,8 +11,7 @@ trait ScheduledTileNotification
      with IScheduledTileNotification
 object ScheduledTileNotification {
   
-  @scala.inline
-  def apply(content: XmlDocument, deliveryTime: Date, expirationTime: Date, id: String, tag: String): ScheduledTileNotification = {
+  inline def apply(content: XmlDocument, deliveryTime: Date, expirationTime: Date, id: String, tag: String): ScheduledTileNotification = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], deliveryTime = deliveryTime.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledTileNotification]
   }

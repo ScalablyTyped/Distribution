@@ -19,8 +19,7 @@ trait FeatureTemplatesVisibleElements
 }
 object FeatureTemplatesVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object FeatureTemplatesVisibleElements {
     __obj.asInstanceOf[FeatureTemplatesVisibleElements]
   }
   
-  @scala.inline
-  implicit class FeatureTemplatesVisibleElementsMutableBuilder[Self <: FeatureTemplatesVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTemplatesVisibleElements](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

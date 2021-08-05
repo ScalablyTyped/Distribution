@@ -25,29 +25,22 @@ object portalMod extends Shortcut {
   }
   object PortalProps {
     
-    @scala.inline
-    def apply(getContainer: () => HTMLElement): PortalProps = {
+    inline def apply(getContainer: () => HTMLElement): PortalProps = {
       val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction0(getContainer))
       __obj.asInstanceOf[PortalProps]
     }
     
-    @scala.inline
-    implicit class PortalPropsMutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDidUpdate(value: PortalProps => Unit): Self = StObject.set(x, "didUpdate", js.Any.fromFunction1(value))
+      inline def setDidUpdate(value: PortalProps => Unit): Self = StObject.set(x, "didUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDidUpdateUndefined: Self = StObject.set(x, "didUpdate", js.undefined)
+      inline def setDidUpdateUndefined: Self = StObject.set(x, "didUpdate", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     }
   }
   

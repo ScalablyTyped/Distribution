@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGPathSeg extends StObject {
   
-  @JSName("MSHTML.SVGPathSeg_typekey")
+  /* private */ @JSName("MSHTML.SVGPathSeg_typekey")
   var MSHTMLDotSVGPathSeg_typekey: SVGPathSeg
   
   var pathSegType: Double
@@ -15,23 +15,18 @@ trait SVGPathSeg extends StObject {
 }
 object SVGPathSeg {
   
-  @scala.inline
-  def apply(MSHTMLDotSVGPathSeg_typekey: SVGPathSeg, pathSegType: Double, pathSegTypeAsLetter: String): SVGPathSeg = {
+  inline def apply(MSHTMLDotSVGPathSeg_typekey: SVGPathSeg, pathSegType: Double, pathSegTypeAsLetter: String): SVGPathSeg = {
     val __obj = js.Dynamic.literal(pathSegType = pathSegType.asInstanceOf[js.Any], pathSegTypeAsLetter = pathSegTypeAsLetter.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.SVGPathSeg_typekey")(MSHTMLDotSVGPathSeg_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGPathSeg]
   }
   
-  @scala.inline
-  implicit class SVGPathSegMutableBuilder[Self <: SVGPathSeg] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSeg](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotSVGPathSeg_typekey(value: SVGPathSeg): Self = StObject.set(x, "MSHTML.SVGPathSeg_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGPathSeg_typekey(value: SVGPathSeg): Self = StObject.set(x, "MSHTML.SVGPathSeg_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
+    inline def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    inline def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
   }
 }

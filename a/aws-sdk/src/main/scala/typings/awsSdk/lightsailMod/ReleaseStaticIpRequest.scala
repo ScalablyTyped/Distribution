@@ -13,16 +13,13 @@ trait ReleaseStaticIpRequest extends StObject {
 }
 object ReleaseStaticIpRequest {
   
-  @scala.inline
-  def apply(staticIpName: ResourceName): ReleaseStaticIpRequest = {
+  inline def apply(staticIpName: ResourceName): ReleaseStaticIpRequest = {
     val __obj = js.Dynamic.literal(staticIpName = staticIpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseStaticIpRequest]
   }
   
-  @scala.inline
-  implicit class ReleaseStaticIpRequestMutableBuilder[Self <: ReleaseStaticIpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseStaticIpRequest](x: Self) {
     
-    @scala.inline
-    def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
+    inline def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
   }
 }

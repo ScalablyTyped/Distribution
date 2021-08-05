@@ -10,19 +10,15 @@ trait UdpContainerSettings extends StObject {
 }
 object UdpContainerSettings {
   
-  @scala.inline
-  def apply(): UdpContainerSettings = {
+  inline def apply(): UdpContainerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UdpContainerSettings]
   }
   
-  @scala.inline
-  implicit class UdpContainerSettingsMutableBuilder[Self <: UdpContainerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UdpContainerSettings](x: Self) {
     
-    @scala.inline
-    def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
+    inline def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM2tsSettingsUndefined: Self = StObject.set(x, "M2tsSettings", js.undefined)
+    inline def setM2tsSettingsUndefined: Self = StObject.set(x, "M2tsSettings", js.undefined)
   }
 }

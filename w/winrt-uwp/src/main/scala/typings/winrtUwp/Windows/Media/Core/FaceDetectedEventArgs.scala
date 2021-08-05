@@ -12,16 +12,13 @@ trait FaceDetectedEventArgs extends StObject {
 }
 object FaceDetectedEventArgs {
   
-  @scala.inline
-  def apply(resultFrame: FaceDetectionEffectFrame): FaceDetectedEventArgs = {
+  inline def apply(resultFrame: FaceDetectionEffectFrame): FaceDetectedEventArgs = {
     val __obj = js.Dynamic.literal(resultFrame = resultFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceDetectedEventArgs]
   }
   
-  @scala.inline
-  implicit class FaceDetectedEventArgsMutableBuilder[Self <: FaceDetectedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FaceDetectedEventArgs](x: Self) {
     
-    @scala.inline
-    def setResultFrame(value: FaceDetectionEffectFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
+    inline def setResultFrame(value: FaceDetectionEffectFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
   }
 }

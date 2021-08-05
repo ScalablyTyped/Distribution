@@ -25,31 +25,23 @@ trait ComponentWithIcon extends StObject {
 }
 object ComponentWithIcon {
   
-  @scala.inline
-  def apply(): ComponentWithIcon = {
+  inline def apply(): ComponentWithIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentWithIcon]
   }
   
-  @scala.inline
-  implicit class ComponentWithIconMutableBuilder[Self <: ComponentWithIcon] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentWithIcon](x: Self) {
     
-    @scala.inline
-    def setIconHeight(value: Double | String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
+    inline def setIconHeight(value: Double | String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
+    inline def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
     
-    @scala.inline
-    def setIconPath(value: String | Uri | Dark): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: String | Uri | Dark): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
     
-    @scala.inline
-    def setIconWidth(value: Double | String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
+    inline def setIconWidth(value: Double | String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
+    inline def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
   }
 }

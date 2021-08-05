@@ -39,62 +39,44 @@ object tabsMod {
   }
   object TabsProps {
     
-    @scala.inline
-    def apply(): TabsProps = {
+    inline def apply(): TabsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsProps]
     }
     
-    @scala.inline
-    implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsProps](x: Self) {
       
-      @scala.inline
-      def setActiveLinkStyle(value: js.Object): Self = StObject.set(x, "activeLinkStyle", value.asInstanceOf[js.Any])
+      inline def setActiveLinkStyle(value: js.Object): Self = StObject.set(x, "activeLinkStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLinkStyleUndefined: Self = StObject.set(x, "activeLinkStyle", js.undefined)
+      inline def setActiveLinkStyleUndefined: Self = StObject.set(x, "activeLinkStyle", js.undefined)
       
-      @scala.inline
-      def setDisableInlineStyles(value: Boolean): Self = StObject.set(x, "disableInlineStyles", value.asInstanceOf[js.Any])
+      inline def setDisableInlineStyles(value: Boolean): Self = StObject.set(x, "disableInlineStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableInlineStylesUndefined: Self = StObject.set(x, "disableInlineStyles", js.undefined)
+      inline def setDisableInlineStylesUndefined: Self = StObject.set(x, "disableInlineStyles", js.undefined)
       
-      @scala.inline
-      def setHandleSelect(value: (/* tab */ String, /* name */ String) => Unit): Self = StObject.set(x, "handleSelect", js.Any.fromFunction2(value))
+      inline def setHandleSelect(value: (/* tab */ String, /* name */ String) => Unit): Self = StObject.set(x, "handleSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleSelectUndefined: Self = StObject.set(x, "handleSelect", js.undefined)
+      inline def setHandleSelectUndefined: Self = StObject.set(x, "handleSelect", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* selectedTab */ String, /* name */ String) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* selectedTab */ String, /* name */ String) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setRenderActiveTabContentOnly(value: Boolean): Self = StObject.set(x, "renderActiveTabContentOnly", value.asInstanceOf[js.Any])
+      inline def setRenderActiveTabContentOnly(value: Boolean): Self = StObject.set(x, "renderActiveTabContentOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderActiveTabContentOnlyUndefined: Self = StObject.set(x, "renderActiveTabContentOnly", js.undefined)
+      inline def setRenderActiveTabContentOnlyUndefined: Self = StObject.set(x, "renderActiveTabContentOnly", js.undefined)
       
-      @scala.inline
-      def setSelectedTab(value: String): Self = StObject.set(x, "selectedTab", value.asInstanceOf[js.Any])
+      inline def setSelectedTab(value: String): Self = StObject.set(x, "selectedTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedTabUndefined: Self = StObject.set(x, "selectedTab", js.undefined)
+      inline def setSelectedTabUndefined: Self = StObject.set(x, "selectedTab", js.undefined)
       
-      @scala.inline
-      def setVisibleTabStyle(value: js.Object): Self = StObject.set(x, "visibleTabStyle", value.asInstanceOf[js.Any])
+      inline def setVisibleTabStyle(value: js.Object): Self = StObject.set(x, "visibleTabStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleTabStyleUndefined: Self = StObject.set(x, "visibleTabStyle", js.undefined)
+      inline def setVisibleTabStyleUndefined: Self = StObject.set(x, "visibleTabStyle", js.undefined)
     }
   }
 }

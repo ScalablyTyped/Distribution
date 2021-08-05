@@ -44,37 +44,31 @@ object cascaderMod {
       @JSImport("antd/lib/cascader", "default.defaultProps.allowClear")
       @js.native
       def allowClear: Boolean = js.native
-      @scala.inline
-      def allowClear_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowClear")(x.asInstanceOf[js.Any])
+      inline def allowClear_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowClear")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/cascader", "default.defaultProps.bordered")
       @js.native
       def bordered: Boolean = js.native
-      @scala.inline
-      def bordered_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bordered")(x.asInstanceOf[js.Any])
+      inline def bordered_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bordered")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/cascader", "default.defaultProps.disabled")
       @js.native
       def disabled: Boolean = js.native
-      @scala.inline
-      def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/cascader", "default.defaultProps.options")
       @js.native
       def options: js.Array[scala.Nothing] = js.native
-      @scala.inline
-      def options_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+      inline def options_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/cascader", "default.defaultProps.transitionName")
       @js.native
       def transitionName: String = js.native
-      @scala.inline
-      def transitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionName")(x.asInstanceOf[js.Any])
+      inline def transitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionName")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[PartialCascaderState]
+    inline def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[PartialCascaderState]
   }
   
   @js.native
@@ -114,7 +108,7 @@ object cascaderMod {
     
     def handlePopupVisibleChange(popupVisible: Boolean): Unit = js.native
     
-    var input: js.Any = js.native
+    /* private */ var input: js.Any = js.native
     
     def renderCascader(
       hasGetContextPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps,
@@ -134,11 +128,9 @@ object cascaderMod {
   trait CascaderExpandTrigger extends StObject
   object CascaderExpandTrigger {
     
-    @scala.inline
-    def click: typings.antd.antdStrings.click = "click".asInstanceOf[typings.antd.antdStrings.click]
+    inline def click: typings.antd.antdStrings.click = "click".asInstanceOf[typings.antd.antdStrings.click]
     
-    @scala.inline
-    def hover: typings.antd.antdStrings.hover = "hover".asInstanceOf[typings.antd.antdStrings.hover]
+    inline def hover: typings.antd.antdStrings.hover = "hover".asInstanceOf[typings.antd.antdStrings.hover]
   }
   
   trait CascaderLocale extends StObject {
@@ -147,20 +139,16 @@ object cascaderMod {
   }
   object CascaderLocale {
     
-    @scala.inline
-    def apply(): CascaderLocale = {
+    inline def apply(): CascaderLocale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascaderLocale]
     }
     
-    @scala.inline
-    implicit class CascaderLocaleMutableBuilder[Self <: CascaderLocale] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderLocale](x: Self) {
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     }
   }
   
@@ -182,53 +170,38 @@ object cascaderMod {
   }
   object CascaderOptionType {
     
-    @scala.inline
-    def apply(): CascaderOptionType = {
+    inline def apply(): CascaderOptionType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascaderOptionType]
     }
     
-    @scala.inline
-    implicit class CascaderOptionTypeMutableBuilder[Self <: CascaderOptionType] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderOptionType](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[CascaderOptionType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[CascaderOptionType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: CascaderOptionType*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: CascaderOptionType*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
+      inline def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -333,210 +306,144 @@ object cascaderMod {
   }
   object CascaderProps {
     
-    @scala.inline
-    def apply(options: js.Array[CascaderOptionType]): CascaderProps = {
+    inline def apply(options: js.Array[CascaderOptionType]): CascaderProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[CascaderProps]
     }
     
-    @scala.inline
-    implicit class CascaderPropsMutableBuilder[Self <: CascaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderProps](x: Self) {
       
-      @scala.inline
-      def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
+      inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
+      inline def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setChangeOnSelect(value: Boolean): Self = StObject.set(x, "changeOnSelect", value.asInstanceOf[js.Any])
+      inline def setChangeOnSelect(value: Boolean): Self = StObject.set(x, "changeOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeOnSelectUndefined: Self = StObject.set(x, "changeOnSelect", js.undefined)
+      inline def setChangeOnSelectUndefined: Self = StObject.set(x, "changeOnSelect", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: CascaderValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: CascaderValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisplayRender(
+      inline def setDisplayRender(
         value: (/* label */ js.Array[String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => ReactNode
       ): Self = StObject.set(x, "displayRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDisplayRenderUndefined: Self = StObject.set(x, "displayRender", js.undefined)
+      inline def setDisplayRenderUndefined: Self = StObject.set(x, "displayRender", js.undefined)
       
-      @scala.inline
-      def setDropdownRender(value: /* menus */ ReactNode => ReactNode): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
+      inline def setDropdownRender(value: /* menus */ ReactNode => ReactNode): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
+      inline def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+      inline def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      @scala.inline
-      def setExpandTrigger(value: CascaderExpandTrigger): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
+      inline def setExpandTrigger(value: CascaderExpandTrigger): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
+      inline def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
       
-      @scala.inline
-      def setFieldNames(value: FieldNamesType): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: FieldNamesType): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
       
-      @scala.inline
-      def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInputPrefixCls(value: String): Self = StObject.set(x, "inputPrefixCls", value.asInstanceOf[js.Any])
+      inline def setInputPrefixCls(value: String): Self = StObject.set(x, "inputPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPrefixClsUndefined: Self = StObject.set(x, "inputPrefixCls", js.undefined)
+      inline def setInputPrefixClsUndefined: Self = StObject.set(x, "inputPrefixCls", js.undefined)
       
-      @scala.inline
-      def setLoadData(value: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
+      inline def setLoadData(value: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
+      inline def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
+      inline def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
+      inline def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* value */ CascaderValueType, /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnPopupVisibleChange(value: /* popupVisible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnPopupVisibleChange(value: /* popupVisible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
+      inline def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[CascaderOptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CascaderOptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: CascaderOptionType*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CascaderOptionType*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
       
-      @scala.inline
-      def setPopupPlacement(value: String): Self = StObject.set(x, "popupPlacement", value.asInstanceOf[js.Any])
+      inline def setPopupPlacement(value: String): Self = StObject.set(x, "popupPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupPlacementUndefined: Self = StObject.set(x, "popupPlacement", js.undefined)
+      inline def setPopupPlacementUndefined: Self = StObject.set(x, "popupPlacement", js.undefined)
       
-      @scala.inline
-      def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+      inline def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
+      inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setShowSearch(value: Boolean | ShowSearchType): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
+      inline def setShowSearch(value: Boolean | ShowSearchType): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
+      inline def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
       
-      @scala.inline
-      def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSuffixIcon(value: ReactNode): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
+      inline def setSuffixIcon(value: ReactNode): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
+      inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
       
-      @scala.inline
-      def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -556,44 +463,32 @@ object cascaderMod {
   }
   object CascaderState {
     
-    @scala.inline
-    def apply(inputFocused: Boolean, inputValue: String, prevProps: CascaderProps, value: CascaderValueType): CascaderState = {
+    inline def apply(inputFocused: Boolean, inputValue: String, prevProps: CascaderProps, value: CascaderValueType): CascaderState = {
       val __obj = js.Dynamic.literal(inputFocused = inputFocused.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CascaderState]
     }
     
-    @scala.inline
-    implicit class CascaderStateMutableBuilder[Self <: CascaderState] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderState](x: Self) {
       
-      @scala.inline
-      def setFlattenOptions(value: js.Array[js.Array[CascaderOptionType]]): Self = StObject.set(x, "flattenOptions", value.asInstanceOf[js.Any])
+      inline def setFlattenOptions(value: js.Array[js.Array[CascaderOptionType]]): Self = StObject.set(x, "flattenOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenOptionsUndefined: Self = StObject.set(x, "flattenOptions", js.undefined)
+      inline def setFlattenOptionsUndefined: Self = StObject.set(x, "flattenOptions", js.undefined)
       
-      @scala.inline
-      def setFlattenOptionsVarargs(value: js.Array[CascaderOptionType]*): Self = StObject.set(x, "flattenOptions", js.Array(value :_*))
+      inline def setFlattenOptionsVarargs(value: js.Array[CascaderOptionType]*): Self = StObject.set(x, "flattenOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setInputFocused(value: Boolean): Self = StObject.set(x, "inputFocused", value.asInstanceOf[js.Any])
+      inline def setInputFocused(value: Boolean): Self = StObject.set(x, "inputFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+      inline def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
+      inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
       
-      @scala.inline
-      def setPrevProps(value: CascaderProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: CascaderProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -609,32 +504,24 @@ object cascaderMod {
   }
   object FieldNamesType {
     
-    @scala.inline
-    def apply(): FieldNamesType = {
+    inline def apply(): FieldNamesType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldNamesType]
     }
     
-    @scala.inline
-    implicit class FieldNamesTypeMutableBuilder[Self <: FieldNamesType] (val x: Self) extends AnyVal {
+    extension [Self <: FieldNamesType](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -648,23 +535,18 @@ object cascaderMod {
   }
   object FilledFieldNamesType {
     
-    @scala.inline
-    def apply(children: String, label: String, value: String | Double): FilledFieldNamesType = {
+    inline def apply(children: String, label: String, value: String | Double): FilledFieldNamesType = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilledFieldNamesType]
     }
     
-    @scala.inline
-    implicit class FilledFieldNamesTypeMutableBuilder[Self <: FilledFieldNamesType] (val x: Self) extends AnyVal {
+    extension [Self <: FilledFieldNamesType](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -705,50 +587,38 @@ object cascaderMod {
   }
   object ShowSearchType {
     
-    @scala.inline
-    def apply(): ShowSearchType = {
+    inline def apply(): ShowSearchType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShowSearchType]
     }
     
-    @scala.inline
-    implicit class ShowSearchTypeMutableBuilder[Self <: ShowSearchType] (val x: Self) extends AnyVal {
+    extension [Self <: ShowSearchType](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* inputValue */ String, /* path */ js.Array[CascaderOptionType], /* names */ FilledFieldNamesType) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | `false`): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | `false`): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMatchInputWidth(value: Boolean): Self = StObject.set(x, "matchInputWidth", value.asInstanceOf[js.Any])
+      inline def setMatchInputWidth(value: Boolean): Self = StObject.set(x, "matchInputWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchInputWidthUndefined: Self = StObject.set(x, "matchInputWidth", js.undefined)
+      inline def setMatchInputWidthUndefined: Self = StObject.set(x, "matchInputWidth", js.undefined)
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* inputValue */ String, /* path */ js.Array[CascaderOptionType], /* prefixCls */ js.UndefOr[String], /* names */ FilledFieldNamesType) => ReactNode
       ): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSort(
+      inline def setSort(
         value: (/* a */ js.Array[CascaderOptionType], /* b */ js.Array[CascaderOptionType], /* inputValue */ String, /* names */ FilledFieldNamesType) => Double
       ): Self = StObject.set(x, "sort", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
 }

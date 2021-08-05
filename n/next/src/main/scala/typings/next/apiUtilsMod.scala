@@ -39,8 +39,7 @@ object apiUtilsMod {
   @js.native
   val SYMBOL_PREVIEW_DATA: js.Symbol = js.native
   
-  @scala.inline
-  def apiResolver(
+  inline def apiResolver(
     req: IncomingMessage,
     res: ServerResponse,
     query: js.Any,
@@ -48,8 +47,7 @@ object apiUtilsMod {
     apiContext: ApiPreviewProps,
     propagateError: Boolean
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], query.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any], apiContext.asInstanceOf[js.Any], propagateError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apiResolver(
+  inline def apiResolver(
     req: IncomingMessage,
     res: ServerResponse,
     query: js.Any,
@@ -59,40 +57,27 @@ object apiUtilsMod {
     onError: js.Function1[/* hasErr */ Err, js.Promise[Unit]]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], query.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any], apiContext.asInstanceOf[js.Any], propagateError.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getCookieParser(req: IncomingMessage): js.Function0[NextApiRequestCookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookieParser")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestCookies]]
+  inline def getCookieParser(req: IncomingMessage): js.Function0[NextApiRequestCookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookieParser")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestCookies]]
   
-  @scala.inline
-  def parseBody(req: NextApiRequest, limit: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def parseBody(req: NextApiRequest, limit: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def parseBody(req: NextApiRequest, limit: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def parseBody(req: NextApiRequest, limit: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def redirect(res: NextApiResponse[js.Any], statusOrUrl: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
-  @scala.inline
-  def redirect(res: NextApiResponse[js.Any], statusOrUrl: String, url: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
-  @scala.inline
-  def redirect(res: NextApiResponse[js.Any], statusOrUrl: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
-  @scala.inline
-  def redirect(res: NextApiResponse[js.Any], statusOrUrl: Double, url: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  inline def redirect(res: NextApiResponse[js.Any], statusOrUrl: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  inline def redirect(res: NextApiResponse[js.Any], statusOrUrl: String, url: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  inline def redirect(res: NextApiResponse[js.Any], statusOrUrl: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  inline def redirect(res: NextApiResponse[js.Any], statusOrUrl: Double, url: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
   
-  @scala.inline
-  def sendData(req: NextApiRequest, res: NextApiResponse[js.Any], body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendData(req: NextApiRequest, res: NextApiResponse[js.Any], body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sendError(res: NextApiResponse[js.Any], statusCode: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendError(res: NextApiResponse[js.Any], statusCode: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sendJson(res: NextApiResponse[js.Any], jsonBody: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendJson")(res.asInstanceOf[js.Any], jsonBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendJson(res: NextApiResponse[js.Any], jsonBody: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendJson")(res.asInstanceOf[js.Any], jsonBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sendStatusCode(res: NextApiResponse[js.Any], statusCode: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  inline def sendStatusCode(res: NextApiResponse[js.Any], statusCode: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
   
-  @scala.inline
-  def setLazyProp[T](hasReqParams: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(hasReqParams.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLazyProp[T](hasReqParams: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(hasReqParams.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def tryGetPreviewData(req: IncomingMessage, res: ServerResponse, options: ApiPreviewProps): js.Object | String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGetPreviewData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String | `false`]
+  inline def tryGetPreviewData(req: IncomingMessage, res: ServerResponse, options: ApiPreviewProps): js.Object | String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGetPreviewData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String | `false`]
   
   trait ApiPreviewProps extends StObject {
     
@@ -104,23 +89,18 @@ object apiUtilsMod {
   }
   object ApiPreviewProps {
     
-    @scala.inline
-    def apply(previewModeEncryptionKey: String, previewModeId: String, previewModeSigningKey: String): ApiPreviewProps = {
+    inline def apply(previewModeEncryptionKey: String, previewModeId: String, previewModeSigningKey: String): ApiPreviewProps = {
       val __obj = js.Dynamic.literal(previewModeEncryptionKey = previewModeEncryptionKey.asInstanceOf[js.Any], previewModeId = previewModeId.asInstanceOf[js.Any], previewModeSigningKey = previewModeSigningKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiPreviewProps]
     }
     
-    @scala.inline
-    implicit class ApiPreviewPropsMutableBuilder[Self <: ApiPreviewProps] (val x: Self) extends AnyVal {
+    extension [Self <: ApiPreviewProps](x: Self) {
       
-      @scala.inline
-      def setPreviewModeEncryptionKey(value: String): Self = StObject.set(x, "previewModeEncryptionKey", value.asInstanceOf[js.Any])
+      inline def setPreviewModeEncryptionKey(value: String): Self = StObject.set(x, "previewModeEncryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewModeId(value: String): Self = StObject.set(x, "previewModeId", value.asInstanceOf[js.Any])
+      inline def setPreviewModeId(value: String): Self = StObject.set(x, "previewModeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewModeSigningKey(value: String): Self = StObject.set(x, "previewModeSigningKey", value.asInstanceOf[js.Any])
+      inline def setPreviewModeSigningKey(value: String): Self = StObject.set(x, "previewModeSigningKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,23 +112,18 @@ object apiUtilsMod {
   }
   object LazyProps {
     
-    @scala.inline
-    def apply(req: NextApiRequest): LazyProps = {
+    inline def apply(req: NextApiRequest): LazyProps = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
       __obj.asInstanceOf[LazyProps]
     }
     
-    @scala.inline
-    implicit class LazyPropsMutableBuilder[Self <: LazyProps] (val x: Self) extends AnyVal {
+    extension [Self <: LazyProps](x: Self) {
       
-      @scala.inline
-      def setParams(value: Params | Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Params | Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setReq(value: NextApiRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: NextApiRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
   }
   

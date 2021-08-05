@@ -11,6 +11,5 @@ object buttonsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(buttons: ButtonList, dangerMode: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(buttons.asInstanceOf[js.Any], dangerMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(buttons: ButtonList, dangerMode: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(buttons.asInstanceOf[js.Any], dangerMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

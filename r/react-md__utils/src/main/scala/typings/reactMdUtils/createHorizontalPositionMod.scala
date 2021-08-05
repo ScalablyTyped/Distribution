@@ -15,26 +15,19 @@ object createHorizontalPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAnchoredCenter(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredCenter")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createAnchoredCenter(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredCenter")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @scala.inline
-  def createAnchoredInnerLeft(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredInnerLeft")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createAnchoredInnerLeft(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredInnerLeft")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @scala.inline
-  def createAnchoredInnerRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredInnerRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createAnchoredInnerRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredInnerRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @scala.inline
-  def createAnchoredLeft(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredLeft")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createAnchoredLeft(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredLeft")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @scala.inline
-  def createAnchoredRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createAnchoredRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @scala.inline
-  def createEqualWidth(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth: EqualWidthOptions): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createEqualWidth")(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createEqualWidth(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth: EqualWidthOptions): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createEqualWidth")(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @scala.inline
-  def createHorizontalPosition(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping: Options): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createHorizontalPosition")(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createHorizontalPosition(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping: Options): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createHorizontalPosition")(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
   /* Inlined parent std.Pick<@react-md/utils.@react-md/utils/types/positioning/createHorizontalPosition.Options, 'x' | 'vw' | 'elWidth' | 'xMargin' | 'vwMargin' | 'containerRect' | 'initialX'> */
   trait EqualWidthOptions extends StObject {
@@ -57,8 +50,7 @@ object createHorizontalPositionMod {
   }
   object EqualWidthOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRect: DOMRect | ClientRect,
       elWidth: Double,
       isMinWidth: Boolean,
@@ -71,35 +63,25 @@ object createHorizontalPositionMod {
       __obj.asInstanceOf[EqualWidthOptions]
     }
     
-    @scala.inline
-    implicit class EqualWidthOptionsMutableBuilder[Self <: EqualWidthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EqualWidthOptions](x: Self) {
       
-      @scala.inline
-      def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElWidth(value: Double): Self = StObject.set(x, "elWidth", value.asInstanceOf[js.Any])
+      inline def setElWidth(value: Double): Self = StObject.set(x, "elWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
+      inline def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
       
-      @scala.inline
-      def setIsMinWidth(value: Boolean): Self = StObject.set(x, "isMinWidth", value.asInstanceOf[js.Any])
+      inline def setIsMinWidth(value: Boolean): Self = StObject.set(x, "isMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVw(value: Double): Self = StObject.set(x, "vw", value.asInstanceOf[js.Any])
+      inline def setVw(value: Double): Self = StObject.set(x, "vw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
+      inline def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
+      inline def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,8 +97,7 @@ object createHorizontalPositionMod {
   }
   object FixConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRect: DOMRect | ClientRect,
       disableSwapping: Boolean,
       elWidth: Double,
@@ -128,17 +109,13 @@ object createHorizontalPositionMod {
       __obj.asInstanceOf[FixConfig]
     }
     
-    @scala.inline
-    implicit class FixConfigMutableBuilder[Self <: FixConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FixConfig](x: Self) {
       
-      @scala.inline
-      def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
+      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenRight(value: Double): Self = StObject.set(x, "screenRight", value.asInstanceOf[js.Any])
+      inline def setScreenRight(value: Double): Self = StObject.set(x, "screenRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
+      inline def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,8 +145,7 @@ object createHorizontalPositionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRect: DOMRect | ClientRect,
       disableSwapping: Boolean,
       elWidth: Double,
@@ -183,38 +159,27 @@ object createHorizontalPositionMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
+      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElWidth(value: Double): Self = StObject.set(x, "elWidth", value.asInstanceOf[js.Any])
+      inline def setElWidth(value: Double): Self = StObject.set(x, "elWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
+      inline def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
       
-      @scala.inline
-      def setVw(value: Double): Self = StObject.set(x, "vw", value.asInstanceOf[js.Any])
+      inline def setVw(value: Double): Self = StObject.set(x, "vw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
+      inline def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
+      inline def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,38 +200,28 @@ object createHorizontalPositionMod {
   }
   object XPosition {
     
-    @scala.inline
-    def apply(actualX: HorizontalPosition, left: Double): XPosition = {
+    inline def apply(actualX: HorizontalPosition, left: Double): XPosition = {
       val __obj = js.Dynamic.literal(actualX = actualX.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any])
       __obj.asInstanceOf[XPosition]
     }
     
-    @scala.inline
-    implicit class XPositionMutableBuilder[Self <: XPosition] (val x: Self) extends AnyVal {
+    extension [Self <: XPosition](x: Self) {
       
-      @scala.inline
-      def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
+      inline def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

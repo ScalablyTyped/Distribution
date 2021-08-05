@@ -13,19 +13,15 @@ trait GetQueueResponse extends StObject {
 }
 object GetQueueResponse {
   
-  @scala.inline
-  def apply(): GetQueueResponse = {
+  inline def apply(): GetQueueResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetQueueResponse]
   }
   
-  @scala.inline
-  implicit class GetQueueResponseMutableBuilder[Self <: GetQueueResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueueResponse](x: Self) {
     
-    @scala.inline
-    def setQueue(value: Queue): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Queue): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
   }
 }

@@ -85,115 +85,79 @@ trait ISpinner
 }
 object ISpinner {
   
-  @scala.inline
-  def apply(): ISpinner = {
+  inline def apply(): ISpinner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISpinner]
   }
   
-  @scala.inline
-  implicit class ISpinnerMutableBuilder[Self <: ISpinner] (val x: Self) extends AnyVal {
+  extension [Self <: ISpinner](x: Self) {
     
-    @scala.inline
-    def setAccelerateOnTapHold(value: Boolean): Self = StObject.set(x, "accelerateOnTapHold", value.asInstanceOf[js.Any])
+    inline def setAccelerateOnTapHold(value: Boolean): Self = StObject.set(x, "accelerateOnTapHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccelerateOnTapHoldUndefined: Self = StObject.set(x, "accelerateOnTapHold", js.undefined)
+    inline def setAccelerateOnTapHoldUndefined: Self = StObject.set(x, "accelerateOnTapHold", js.undefined)
     
-    @scala.inline
-    def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setGetAccelerateOnTapHold(value: () => Boolean): Self = StObject.set(x, "getAccelerateOnTapHold", js.Any.fromFunction0(value))
+    inline def setGetAccelerateOnTapHold(value: () => Boolean): Self = StObject.set(x, "getAccelerateOnTapHold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAccelerateOnTapHoldUndefined: Self = StObject.set(x, "getAccelerateOnTapHold", js.undefined)
+    inline def setGetAccelerateOnTapHoldUndefined: Self = StObject.set(x, "getAccelerateOnTapHold", js.undefined)
     
-    @scala.inline
-    def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+    inline def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
+    inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    @scala.inline
-    def setGetCycle(value: () => Boolean): Self = StObject.set(x, "getCycle", js.Any.fromFunction0(value))
+    inline def setGetCycle(value: () => Boolean): Self = StObject.set(x, "getCycle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCycleUndefined: Self = StObject.set(x, "getCycle", js.undefined)
+    inline def setGetCycleUndefined: Self = StObject.set(x, "getCycle", js.undefined)
     
-    @scala.inline
-    def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
+    inline def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultValueUndefined: Self = StObject.set(x, "getDefaultValue", js.undefined)
+    inline def setGetDefaultValueUndefined: Self = StObject.set(x, "getDefaultValue", js.undefined)
     
-    @scala.inline
-    def setGetGroupButtons(value: () => Boolean): Self = StObject.set(x, "getGroupButtons", js.Any.fromFunction0(value))
+    inline def setGetGroupButtons(value: () => Boolean): Self = StObject.set(x, "getGroupButtons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupButtonsUndefined: Self = StObject.set(x, "getGroupButtons", js.undefined)
+    inline def setGetGroupButtonsUndefined: Self = StObject.set(x, "getGroupButtons", js.undefined)
     
-    @scala.inline
-    def setGroupButtons(value: Boolean): Self = StObject.set(x, "groupButtons", value.asInstanceOf[js.Any])
+    inline def setGroupButtons(value: Boolean): Self = StObject.set(x, "groupButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupButtonsUndefined: Self = StObject.set(x, "groupButtons", js.undefined)
+    inline def setGroupButtonsUndefined: Self = StObject.set(x, "groupButtons", js.undefined)
     
-    @scala.inline
-    def setIncrement(value: String): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: String): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+    inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
-    @scala.inline
-    def setIncrementValue(value: String): Self = StObject.set(x, "incrementValue", value.asInstanceOf[js.Any])
+    inline def setIncrementValue(value: String): Self = StObject.set(x, "incrementValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementValueUndefined: Self = StObject.set(x, "incrementValue", js.undefined)
+    inline def setIncrementValueUndefined: Self = StObject.set(x, "incrementValue", js.undefined)
     
-    @scala.inline
-    def setSetAccelerateOnTapHold(value: /* accelerateOnTapHold */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAccelerateOnTapHold", js.Any.fromFunction1(value))
+    inline def setSetAccelerateOnTapHold(value: /* accelerateOnTapHold */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAccelerateOnTapHold", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAccelerateOnTapHoldUndefined: Self = StObject.set(x, "setAccelerateOnTapHold", js.undefined)
+    inline def setSetAccelerateOnTapHoldUndefined: Self = StObject.set(x, "setAccelerateOnTapHold", js.undefined)
     
-    @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+    inline def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
+    inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
-    @scala.inline
-    def setSetCycle(value: /* cycle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setCycle", js.Any.fromFunction1(value))
+    inline def setSetCycle(value: /* cycle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setCycle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCycleUndefined: Self = StObject.set(x, "setCycle", js.undefined)
+    inline def setSetCycleUndefined: Self = StObject.set(x, "setCycle", js.undefined)
     
-    @scala.inline
-    def setSetDefaultValue(value: /* defaultValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDefaultValue", js.Any.fromFunction1(value))
+    inline def setSetDefaultValue(value: /* defaultValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDefaultValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultValueUndefined: Self = StObject.set(x, "setDefaultValue", js.undefined)
+    inline def setSetDefaultValueUndefined: Self = StObject.set(x, "setDefaultValue", js.undefined)
     
-    @scala.inline
-    def setSetGroupButtons(value: /* groupButtons */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setGroupButtons", js.Any.fromFunction1(value))
+    inline def setSetGroupButtons(value: /* groupButtons */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setGroupButtons", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupButtonsUndefined: Self = StObject.set(x, "setGroupButtons", js.undefined)
+    inline def setSetGroupButtonsUndefined: Self = StObject.set(x, "setGroupButtons", js.undefined)
     
-    @scala.inline
-    def setUpdateComponent(value: /* newComponent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateComponent", js.Any.fromFunction1(value))
+    inline def setUpdateComponent(value: /* newComponent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateComponentUndefined: Self = StObject.set(x, "updateComponent", js.undefined)
+    inline def setUpdateComponentUndefined: Self = StObject.set(x, "updateComponent", js.undefined)
   }
 }

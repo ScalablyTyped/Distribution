@@ -11,16 +11,13 @@ trait GetExtConfigSuccessCallbackResult extends StObject {
 }
 object GetExtConfigSuccessCallbackResult {
   
-  @scala.inline
-  def apply(extConfig: js.Object): GetExtConfigSuccessCallbackResult = {
+  inline def apply(extConfig: js.Object): GetExtConfigSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(extConfig = extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExtConfigSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetExtConfigSuccessCallbackResultMutableBuilder[Self <: GetExtConfigSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetExtConfigSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setExtConfig(value: js.Object): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: js.Object): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
   }
 }

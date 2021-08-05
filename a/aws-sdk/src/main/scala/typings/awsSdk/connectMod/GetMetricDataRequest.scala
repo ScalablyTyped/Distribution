@@ -48,8 +48,7 @@ trait GetMetricDataRequest extends StObject {
 }
 object GetMetricDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTime: timestamp,
     Filters: Filters,
     HistoricalMetrics: HistoricalMetrics,
@@ -60,46 +59,32 @@ object GetMetricDataRequest {
     __obj.asInstanceOf[GetMetricDataRequest]
   }
   
-  @scala.inline
-  implicit class GetMetricDataRequestMutableBuilder[Self <: GetMetricDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricDataRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupings(value: Groupings): Self = StObject.set(x, "Groupings", value.asInstanceOf[js.Any])
+    inline def setGroupings(value: Groupings): Self = StObject.set(x, "Groupings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingsUndefined: Self = StObject.set(x, "Groupings", js.undefined)
+    inline def setGroupingsUndefined: Self = StObject.set(x, "Groupings", js.undefined)
     
-    @scala.inline
-    def setGroupingsVarargs(value: Grouping*): Self = StObject.set(x, "Groupings", js.Array(value :_*))
+    inline def setGroupingsVarargs(value: Grouping*): Self = StObject.set(x, "Groupings", js.Array(value :_*))
     
-    @scala.inline
-    def setHistoricalMetrics(value: HistoricalMetrics): Self = StObject.set(x, "HistoricalMetrics", value.asInstanceOf[js.Any])
+    inline def setHistoricalMetrics(value: HistoricalMetrics): Self = StObject.set(x, "HistoricalMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoricalMetricsVarargs(value: HistoricalMetric*): Self = StObject.set(x, "HistoricalMetrics", js.Array(value :_*))
+    inline def setHistoricalMetricsVarargs(value: HistoricalMetric*): Self = StObject.set(x, "HistoricalMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResult100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResult100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

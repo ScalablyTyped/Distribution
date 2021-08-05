@@ -73,21 +73,16 @@ object catalogDatabaseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CatalogDatabaseState): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CatalogDatabaseState, opts: CustomResourceOptions): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    inline def get(name: String, id: Input[ID]): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    inline def get(name: String, id: Input[ID], state: CatalogDatabaseState): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
+    inline def get(name: String, id: Input[ID], state: CatalogDatabaseState, opts: CustomResourceOptions): CatalogDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogDatabase]
     
     /**
       * Returns true if the given object is an instance of CatalogDatabase.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ Boolean]
   }
   
   trait CatalogDatabaseArgs extends StObject {
@@ -119,44 +114,32 @@ object catalogDatabaseMod {
   }
   object CatalogDatabaseArgs {
     
-    @scala.inline
-    def apply(): CatalogDatabaseArgs = {
+    inline def apply(): CatalogDatabaseArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CatalogDatabaseArgs]
     }
     
-    @scala.inline
-    implicit class CatalogDatabaseArgsMutableBuilder[Self <: CatalogDatabaseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CatalogDatabaseArgs](x: Self) {
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLocationUri(value: Input[String]): Self = StObject.set(x, "locationUri", value.asInstanceOf[js.Any])
+      inline def setLocationUri(value: Input[String]): Self = StObject.set(x, "locationUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUriUndefined: Self = StObject.set(x, "locationUri", js.undefined)
+      inline def setLocationUriUndefined: Self = StObject.set(x, "locationUri", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     }
   }
   
@@ -194,50 +177,36 @@ object catalogDatabaseMod {
   }
   object CatalogDatabaseState {
     
-    @scala.inline
-    def apply(): CatalogDatabaseState = {
+    inline def apply(): CatalogDatabaseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CatalogDatabaseState]
     }
     
-    @scala.inline
-    implicit class CatalogDatabaseStateMutableBuilder[Self <: CatalogDatabaseState] (val x: Self) extends AnyVal {
+    extension [Self <: CatalogDatabaseState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLocationUri(value: Input[String]): Self = StObject.set(x, "locationUri", value.asInstanceOf[js.Any])
+      inline def setLocationUri(value: Input[String]): Self = StObject.set(x, "locationUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUriUndefined: Self = StObject.set(x, "locationUri", js.undefined)
+      inline def setLocationUriUndefined: Self = StObject.set(x, "locationUri", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     }
   }
 }

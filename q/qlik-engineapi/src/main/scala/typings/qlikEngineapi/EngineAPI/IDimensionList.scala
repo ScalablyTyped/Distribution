@@ -16,19 +16,15 @@ trait IDimensionList extends StObject {
 }
 object IDimensionList {
   
-  @scala.inline
-  def apply(qItems: js.Array[IDimensionItemLayout]): IDimensionList = {
+  inline def apply(qItems: js.Array[IDimensionItemLayout]): IDimensionList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDimensionList]
   }
   
-  @scala.inline
-  implicit class IDimensionListMutableBuilder[Self <: IDimensionList] (val x: Self) extends AnyVal {
+  extension [Self <: IDimensionList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: js.Array[IDimensionItemLayout]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: js.Array[IDimensionItemLayout]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItemsVarargs(value: IDimensionItemLayout*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: IDimensionItemLayout*): Self = StObject.set(x, "qItems", js.Array(value :_*))
   }
 }

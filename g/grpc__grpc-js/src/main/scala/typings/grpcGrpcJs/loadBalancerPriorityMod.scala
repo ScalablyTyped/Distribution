@@ -26,11 +26,11 @@ object loadBalancerPriorityMod {
     /**
       * Inner class for holding a child priority and managing associated timers.
       */
-    var PriorityChildImpl: js.Any = js.native
+    /* private */ var PriorityChildImpl: js.Any = js.native
     
-    var channelControlHelper: js.Any = js.native
+    /* private */ var channelControlHelper: js.Any = js.native
     
-    var children: js.Any = js.native
+    /* private */ var children: js.Any = js.native
     
     /**
       * After an update, this preserves the currently selected child from before
@@ -39,14 +39,14 @@ object loadBalancerPriorityMod {
       * in the new priority list at all and its retention interval has expired, or
       * we try and fail to connect to every child in the new priority list.
       */
-    var currentChildFromBeforeUpdate: js.Any = js.native
+    /* private */ var currentChildFromBeforeUpdate: js.Any = js.native
     
     /**
       * Current chosen priority that requests are sent to
       */
-    var currentPriority: js.Any = js.native
+    /* private */ var currentPriority: js.Any = js.native
     
-    var deleteChild: js.Any = js.native
+    /* private */ var deleteChild: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -73,20 +73,20 @@ object loadBalancerPriorityMod {
       * The attributes object from the latest update, saved to be passed along to
       * each new child as they are created
       */
-    var latestAttributes: js.Any = js.native
+    /* private */ var latestAttributes: js.Any = js.native
     
     /**
       * The latest load balancing policies and address lists for each child from
       * the latest update
       */
-    var latestUpdates: js.Any = js.native
+    /* private */ var latestUpdates: js.Any = js.native
     
-    var onChildStateChange: js.Any = js.native
+    /* private */ var onChildStateChange: js.Any = js.native
     
     /**
       * The priority order of child names from the latest config update.
       */
-    var priorities: js.Any = js.native
+    /* private */ var priorities: js.Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -102,7 +102,7 @@ object loadBalancerPriorityMod {
       * child connects.
       * @param priority
       */
-    var selectPriority: js.Any = js.native
+    /* private */ var selectPriority: js.Any = js.native
     
     /**
       * Check each child in priority order until we find one to use
@@ -110,7 +110,7 @@ object loadBalancerPriorityMod {
       *     stop before picking a specific child. This should be true when we have
       *     not already selected a child.
       */
-    var tryNextPriority: js.Any = js.native
+    /* private */ var tryNextPriority: js.Any = js.native
     
     /**
       * Gives the load balancer a new list of addresses to start connecting to.
@@ -128,14 +128,12 @@ object loadBalancerPriorityMod {
       attributes: StringDictionary[js.Any]
     ): Unit = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
   
-  @scala.inline
-  def isLocalitySubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/load-balancer-priority.LocalitySubchannelAddress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalitySubchannelAddress")(address.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/load-balancer-priority.LocalitySubchannelAddress */ Boolean]
+  inline def isLocalitySubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/load-balancer-priority.LocalitySubchannelAddress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalitySubchannelAddress")(address.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/load-balancer-priority.LocalitySubchannelAddress */ Boolean]
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
   
   type LocalitySubchannelAddress = SubchannelAddress & LocalityPath
 }

@@ -18,28 +18,21 @@ trait ExceptContentTypePropssys extends StObject {
 }
 object ExceptContentTypePropssys {
   
-  @scala.inline
-  def apply(description: String, displayField: String, fields: js.Array[ContentFields], name: String): ExceptContentTypePropssys = {
+  inline def apply(description: String, displayField: String, fields: js.Array[ContentFields], name: String): ExceptContentTypePropssys = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayField = displayField.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptContentTypePropssys]
   }
   
-  @scala.inline
-  implicit class ExceptContentTypePropssysMutableBuilder[Self <: ExceptContentTypePropssys] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptContentTypePropssys](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[ContentFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[ContentFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: ContentFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ContentFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

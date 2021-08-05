@@ -18,25 +18,19 @@ trait ReceiptRuleSetMetadata extends StObject {
 }
 object ReceiptRuleSetMetadata {
   
-  @scala.inline
-  def apply(): ReceiptRuleSetMetadata = {
+  inline def apply(): ReceiptRuleSetMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReceiptRuleSetMetadata]
   }
   
-  @scala.inline
-  implicit class ReceiptRuleSetMetadataMutableBuilder[Self <: ReceiptRuleSetMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiptRuleSetMetadata](x: Self) {
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setName(value: ReceiptRuleSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ReceiptRuleSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -12,20 +12,16 @@ trait CreateVersionDataRelationshipsItemData extends StObject {
 }
 object CreateVersionDataRelationshipsItemData {
   
-  @scala.inline
-  def apply(id: String, `type`: String): CreateVersionDataRelationshipsItemData = {
+  inline def apply(id: String, `type`: String): CreateVersionDataRelationshipsItemData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVersionDataRelationshipsItemData]
   }
   
-  @scala.inline
-  implicit class CreateVersionDataRelationshipsItemDataMutableBuilder[Self <: CreateVersionDataRelationshipsItemData] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVersionDataRelationshipsItemData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

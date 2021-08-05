@@ -18,9 +18,7 @@ object eventsMod {
   @JSImport("material-ui/utils/events", "Events")
   @js.native
   def Events: typings.materialUi.MaterialUI.Utils.Events = js.native
-  @scala.inline
-  def Events_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Events")(x.asInstanceOf[js.Any])
+  inline def Events_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Events")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

@@ -18,28 +18,21 @@ trait DescribeConformancePackStatusResponse extends StObject {
 }
 object DescribeConformancePackStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeConformancePackStatusResponse = {
+  inline def apply(): DescribeConformancePackStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConformancePackStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConformancePackStatusResponseMutableBuilder[Self <: DescribeConformancePackStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConformancePackStatusResponse](x: Self) {
     
-    @scala.inline
-    def setConformancePackStatusDetails(value: ConformancePackStatusDetailsList): Self = StObject.set(x, "ConformancePackStatusDetails", value.asInstanceOf[js.Any])
+    inline def setConformancePackStatusDetails(value: ConformancePackStatusDetailsList): Self = StObject.set(x, "ConformancePackStatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackStatusDetailsUndefined: Self = StObject.set(x, "ConformancePackStatusDetails", js.undefined)
+    inline def setConformancePackStatusDetailsUndefined: Self = StObject.set(x, "ConformancePackStatusDetails", js.undefined)
     
-    @scala.inline
-    def setConformancePackStatusDetailsVarargs(value: ConformancePackStatusDetail*): Self = StObject.set(x, "ConformancePackStatusDetails", js.Array(value :_*))
+    inline def setConformancePackStatusDetailsVarargs(value: ConformancePackStatusDetail*): Self = StObject.set(x, "ConformancePackStatusDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

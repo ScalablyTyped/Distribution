@@ -11,13 +11,11 @@ object popmotionPopcornStrings {
   sealed trait end
     extends StObject
        with Direction
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait start
     extends StObject
        with Direction
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

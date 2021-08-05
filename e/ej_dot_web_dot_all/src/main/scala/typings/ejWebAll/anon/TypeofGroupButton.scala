@@ -15,19 +15,15 @@ trait TypeofGroupButton extends StObject {
 }
 object TypeofGroupButton {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: GroupButton): TypeofGroupButton = {
+  inline def apply(Locale: js.Any, fn: GroupButton): TypeofGroupButton = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofGroupButton]
   }
   
-  @scala.inline
-  implicit class TypeofGroupButtonMutableBuilder[Self <: TypeofGroupButton] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofGroupButton](x: Self) {
     
-    @scala.inline
-    def setFn(value: GroupButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: GroupButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

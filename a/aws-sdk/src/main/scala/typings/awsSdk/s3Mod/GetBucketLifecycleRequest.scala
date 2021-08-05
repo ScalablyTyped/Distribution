@@ -18,22 +18,17 @@ trait GetBucketLifecycleRequest extends StObject {
 }
 object GetBucketLifecycleRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): GetBucketLifecycleRequest = {
+  inline def apply(Bucket: BucketName): GetBucketLifecycleRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLifecycleRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketLifecycleRequestMutableBuilder[Self <: GetBucketLifecycleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketLifecycleRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

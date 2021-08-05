@@ -21,8 +21,7 @@ trait AlphaMap extends StObject {
 }
 object AlphaMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alphaMap: IUniform,
     diffuse: IUniform,
     map: IUniform,
@@ -34,25 +33,18 @@ object AlphaMap {
     __obj.asInstanceOf[AlphaMap]
   }
   
-  @scala.inline
-  implicit class AlphaMapMutableBuilder[Self <: AlphaMap] (val x: Self) extends AnyVal {
+  extension [Self <: AlphaMap](x: Self) {
     
-    @scala.inline
-    def setAlphaMap(value: IUniform): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
+    inline def setAlphaMap(value: IUniform): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiffuse(value: IUniform): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
+    inline def setDiffuse(value: IUniform): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: IUniform): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: IUniform): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: IUniform): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: IUniform): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv2Transform(value: IUniform): Self = StObject.set(x, "uv2Transform", value.asInstanceOf[js.Any])
+    inline def setUv2Transform(value: IUniform): Self = StObject.set(x, "uv2Transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUvTransform(value: IUniform): Self = StObject.set(x, "uvTransform", value.asInstanceOf[js.Any])
+    inline def setUvTransform(value: IUniform): Self = StObject.set(x, "uvTransform", value.asInstanceOf[js.Any])
   }
 }

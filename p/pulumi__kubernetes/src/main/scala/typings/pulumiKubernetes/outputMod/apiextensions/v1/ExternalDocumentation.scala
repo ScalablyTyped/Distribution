@@ -15,19 +15,15 @@ trait ExternalDocumentation extends StObject {
 }
 object ExternalDocumentation {
   
-  @scala.inline
-  def apply(description: String, url: String): ExternalDocumentation = {
+  inline def apply(description: String, url: String): ExternalDocumentation = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalDocumentation]
   }
   
-  @scala.inline
-  implicit class ExternalDocumentationMutableBuilder[Self <: ExternalDocumentation] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalDocumentation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

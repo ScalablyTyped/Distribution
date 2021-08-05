@@ -254,14 +254,12 @@ object mod {
     @JSImport("jsbn", "BigInteger.ONE")
     @js.native
     def ONE: BigInteger = js.native
-    @scala.inline
-    def ONE_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     @JSImport("jsbn", "BigInteger.ZERO")
     @js.native
     def ZERO: BigInteger = js.native
-    @scala.inline
-    def ZERO_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
   
   trait RandomGenerator extends StObject {
@@ -270,17 +268,14 @@ object mod {
   }
   object RandomGenerator {
     
-    @scala.inline
-    def apply(nextBytes: js.Array[Double] => Unit): RandomGenerator = {
+    inline def apply(nextBytes: js.Array[Double] => Unit): RandomGenerator = {
       val __obj = js.Dynamic.literal(nextBytes = js.Any.fromFunction1(nextBytes))
       __obj.asInstanceOf[RandomGenerator]
     }
     
-    @scala.inline
-    implicit class RandomGeneratorMutableBuilder[Self <: RandomGenerator] (val x: Self) extends AnyVal {
+    extension [Self <: RandomGenerator](x: Self) {
       
-      @scala.inline
-      def setNextBytes(value: js.Array[Double] => Unit): Self = StObject.set(x, "nextBytes", js.Any.fromFunction1(value))
+      inline def setNextBytes(value: js.Array[Double] => Unit): Self = StObject.set(x, "nextBytes", js.Any.fromFunction1(value))
     }
   }
   
@@ -298,8 +293,7 @@ object mod {
   }
   object Reduction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       convert: BigInteger => BigInteger,
       mulTo: (BigInteger, BigInteger, BigInteger) => Unit,
       reduce: BigInteger => Unit,
@@ -310,23 +304,17 @@ object mod {
       __obj.asInstanceOf[Reduction]
     }
     
-    @scala.inline
-    implicit class ReductionMutableBuilder[Self <: Reduction] (val x: Self) extends AnyVal {
+    extension [Self <: Reduction](x: Self) {
       
-      @scala.inline
-      def setConvert(value: BigInteger => BigInteger): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+      inline def setConvert(value: BigInteger => BigInteger): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMulTo(value: (BigInteger, BigInteger, BigInteger) => Unit): Self = StObject.set(x, "mulTo", js.Any.fromFunction3(value))
+      inline def setMulTo(value: (BigInteger, BigInteger, BigInteger) => Unit): Self = StObject.set(x, "mulTo", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReduce(value: BigInteger => Unit): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
+      inline def setReduce(value: BigInteger => Unit): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevert(value: BigInteger => BigInteger): Self = StObject.set(x, "revert", js.Any.fromFunction1(value))
+      inline def setRevert(value: BigInteger => BigInteger): Self = StObject.set(x, "revert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSqrTo(value: (BigInteger, BigInteger) => Unit): Self = StObject.set(x, "sqrTo", js.Any.fromFunction2(value))
+      inline def setSqrTo(value: (BigInteger, BigInteger) => Unit): Self = StObject.set(x, "sqrTo", js.Any.fromFunction2(value))
     }
   }
 }

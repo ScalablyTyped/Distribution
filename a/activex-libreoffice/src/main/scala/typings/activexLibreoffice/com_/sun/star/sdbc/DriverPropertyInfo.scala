@@ -33,28 +33,21 @@ trait DriverPropertyInfo extends StObject {
 }
 object DriverPropertyInfo {
   
-  @scala.inline
-  def apply(Choices: SafeArray[String], Description: String, IsRequired: Boolean, Name: String, Value: String): DriverPropertyInfo = {
+  inline def apply(Choices: SafeArray[String], Description: String, IsRequired: Boolean, Name: String, Value: String): DriverPropertyInfo = {
     val __obj = js.Dynamic.literal(Choices = Choices.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], IsRequired = IsRequired.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriverPropertyInfo]
   }
   
-  @scala.inline
-  implicit class DriverPropertyInfoMutableBuilder[Self <: DriverPropertyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DriverPropertyInfo](x: Self) {
     
-    @scala.inline
-    def setChoices(value: SafeArray[String]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: SafeArray[String]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

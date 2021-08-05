@@ -10,16 +10,13 @@ trait ClientToken extends StObject {
 }
 object ClientToken {
   
-  @scala.inline
-  def apply(clientToken: String): ClientToken = {
+  inline def apply(clientToken: String): ClientToken = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientToken]
   }
   
-  @scala.inline
-  implicit class ClientTokenMutableBuilder[Self <: ClientToken] (val x: Self) extends AnyVal {
+  extension [Self <: ClientToken](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
   }
 }

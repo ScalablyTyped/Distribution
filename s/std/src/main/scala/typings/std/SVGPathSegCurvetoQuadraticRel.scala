@@ -18,8 +18,7 @@ trait SVGPathSegCurvetoQuadraticRel
 }
 object SVGPathSegCurvetoQuadraticRel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PATHSEG_ARC_ABS: Double,
     PATHSEG_ARC_REL: Double,
     PATHSEG_CLOSEPATH: Double,
@@ -51,19 +50,14 @@ object SVGPathSegCurvetoQuadraticRel {
     __obj.asInstanceOf[SVGPathSegCurvetoQuadraticRel]
   }
   
-  @scala.inline
-  implicit class SVGPathSegCurvetoQuadraticRelMutableBuilder[Self <: SVGPathSegCurvetoQuadraticRel] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegCurvetoQuadraticRel](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
   }
 }

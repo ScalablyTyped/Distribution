@@ -56,8 +56,7 @@ trait LevelDetails extends StObject {
 }
 object LevelDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     averagetargetduration: Double,
     endSN: Double,
     fragments: js.Array[Fragment],
@@ -73,37 +72,26 @@ object LevelDetails {
     __obj.asInstanceOf[LevelDetails]
   }
   
-  @scala.inline
-  implicit class LevelDetailsMutableBuilder[Self <: LevelDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LevelDetails](x: Self) {
     
-    @scala.inline
-    def setAveragetargetduration(value: Double): Self = StObject.set(x, "averagetargetduration", value.asInstanceOf[js.Any])
+    inline def setAveragetargetduration(value: Double): Self = StObject.set(x, "averagetargetduration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSN(value: Double): Self = StObject.set(x, "endSN", value.asInstanceOf[js.Any])
+    inline def setEndSN(value: Double): Self = StObject.set(x, "endSN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragments(value: js.Array[Fragment]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: js.Array[Fragment]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentsVarargs(value: Fragment*): Self = StObject.set(x, "fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: Fragment*): Self = StObject.set(x, "fragments", js.Array(value :_*))
     
-    @scala.inline
-    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
+    inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSN(value: Double): Self = StObject.set(x, "startSN", value.asInstanceOf[js.Any])
+    inline def setStartSN(value: Double): Self = StObject.set(x, "startSN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetduration(value: Double): Self = StObject.set(x, "targetduration", value.asInstanceOf[js.Any])
+    inline def setTargetduration(value: Double): Self = StObject.set(x, "targetduration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalduration(value: Double): Self = StObject.set(x, "totalduration", value.asInstanceOf[js.Any])
+    inline def setTotalduration(value: Double): Self = StObject.set(x, "totalduration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

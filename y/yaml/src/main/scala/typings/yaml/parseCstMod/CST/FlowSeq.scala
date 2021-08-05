@@ -14,8 +14,7 @@ trait FlowSeq
 }
 object FlowSeq {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection],
@@ -29,10 +28,8 @@ object FlowSeq {
     __obj.asInstanceOf[FlowSeq]
   }
   
-  @scala.inline
-  implicit class FlowSeqMutableBuilder[Self <: FlowSeq] (val x: Self) extends AnyVal {
+  extension [Self <: FlowSeq](x: Self) {
     
-    @scala.inline
-    def setType(value: FLOW_SEQ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FLOW_SEQ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

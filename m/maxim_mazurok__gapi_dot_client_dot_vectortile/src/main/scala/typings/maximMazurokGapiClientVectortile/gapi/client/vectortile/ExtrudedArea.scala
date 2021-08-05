@@ -20,31 +20,23 @@ trait ExtrudedArea extends StObject {
 }
 object ExtrudedArea {
   
-  @scala.inline
-  def apply(): ExtrudedArea = {
+  inline def apply(): ExtrudedArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtrudedArea]
   }
   
-  @scala.inline
-  implicit class ExtrudedAreaMutableBuilder[Self <: ExtrudedArea] (val x: Self) extends AnyVal {
+  extension [Self <: ExtrudedArea](x: Self) {
     
-    @scala.inline
-    def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setMaxZ(value: Double): Self = StObject.set(x, "maxZ", value.asInstanceOf[js.Any])
+    inline def setMaxZ(value: Double): Self = StObject.set(x, "maxZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZUndefined: Self = StObject.set(x, "maxZ", js.undefined)
+    inline def setMaxZUndefined: Self = StObject.set(x, "maxZ", js.undefined)
     
-    @scala.inline
-    def setMinZ(value: Double): Self = StObject.set(x, "minZ", value.asInstanceOf[js.Any])
+    inline def setMinZ(value: Double): Self = StObject.set(x, "minZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZUndefined: Self = StObject.set(x, "minZ", js.undefined)
+    inline def setMinZUndefined: Self = StObject.set(x, "minZ", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait Scene extends StObject {
 }
 object Scene {
   
-  @scala.inline
-  def apply(scene: typings.cesium.mod.Scene): Scene = {
+  inline def apply(scene: typings.cesium.mod.Scene): Scene = {
     val __obj = js.Dynamic.literal(scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scene]
   }
   
-  @scala.inline
-  implicit class SceneMutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
+  extension [Self <: Scene](x: Self) {
     
-    @scala.inline
-    def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
+    inline def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowFrameRateMessageUndefined: Self = StObject.set(x, "lowFrameRateMessage", js.undefined)
+    inline def setLowFrameRateMessageUndefined: Self = StObject.set(x, "lowFrameRateMessage", js.undefined)
     
-    @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
   }
 }

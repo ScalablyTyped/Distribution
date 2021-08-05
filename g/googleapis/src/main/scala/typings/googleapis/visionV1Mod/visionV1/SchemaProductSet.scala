@@ -41,37 +41,27 @@ trait SchemaProductSet extends StObject {
 }
 object SchemaProductSet {
   
-  @scala.inline
-  def apply(): SchemaProductSet = {
+  inline def apply(): SchemaProductSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductSet]
   }
   
-  @scala.inline
-  implicit class SchemaProductSetMutableBuilder[Self <: SchemaProductSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductSet](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIndexError(value: SchemaStatus): Self = StObject.set(x, "indexError", value.asInstanceOf[js.Any])
+    inline def setIndexError(value: SchemaStatus): Self = StObject.set(x, "indexError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexErrorUndefined: Self = StObject.set(x, "indexError", js.undefined)
+    inline def setIndexErrorUndefined: Self = StObject.set(x, "indexError", js.undefined)
     
-    @scala.inline
-    def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
+    inline def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
+    inline def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def AlertIfHuaweiDevice(config: HuaweiProtectedAppsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AlertIfHuaweiDevice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def AlertIfHuaweiDevice(config: HuaweiProtectedAppsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AlertIfHuaweiDevice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait HuaweiProtectedAppsConfig extends StObject {
@@ -30,8 +29,7 @@ object mod {
   }
   object HuaweiProtectedAppsConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       doNotShowAgainText: String,
       negativeText: String,
       positiveText: String,
@@ -42,23 +40,17 @@ object mod {
       __obj.asInstanceOf[HuaweiProtectedAppsConfig]
     }
     
-    @scala.inline
-    implicit class HuaweiProtectedAppsConfigMutableBuilder[Self <: HuaweiProtectedAppsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HuaweiProtectedAppsConfig](x: Self) {
       
-      @scala.inline
-      def setDoNotShowAgainText(value: String): Self = StObject.set(x, "doNotShowAgainText", value.asInstanceOf[js.Any])
+      inline def setDoNotShowAgainText(value: String): Self = StObject.set(x, "doNotShowAgainText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegativeText(value: String): Self = StObject.set(x, "negativeText", value.asInstanceOf[js.Any])
+      inline def setNegativeText(value: String): Self = StObject.set(x, "negativeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiveText(value: String): Self = StObject.set(x, "positiveText", value.asInstanceOf[js.Any])
+      inline def setPositiveText(value: String): Self = StObject.set(x, "positiveText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -50,43 +50,31 @@ trait ParamsResourceSuperchateventsList
 }
 object ParamsResourceSuperchateventsList {
   
-  @scala.inline
-  def apply(): ParamsResourceSuperchateventsList = {
+  inline def apply(): ParamsResourceSuperchateventsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSuperchateventsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSuperchateventsListMutableBuilder[Self <: ParamsResourceSuperchateventsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSuperchateventsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
   }
 }

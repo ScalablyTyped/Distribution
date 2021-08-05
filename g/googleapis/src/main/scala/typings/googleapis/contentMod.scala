@@ -55,8 +55,7 @@ object contentMod {
         typings.googleapis.v21Mod.contentV21.Content
       ] = js.native
     
-    @scala.inline
-    def v21_=(
+    inline def v21_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -64,8 +63,7 @@ object contentMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2.1")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Content]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
   }
@@ -103,8 +101,7 @@ object contentMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -148,14 +145,10 @@ object contentMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def content(options: Options): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(options.asInstanceOf[js.Any]).asInstanceOf[Content]
-  @scala.inline
-  def content(options: typings.googleapis.v21Mod.contentV21.Options): typings.googleapis.v21Mod.contentV21.Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v21Mod.contentV21.Content]
+  inline def content(options: Options): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(options.asInstanceOf[js.Any]).asInstanceOf[Content]
+  inline def content(options: typings.googleapis.v21Mod.contentV21.Options): typings.googleapis.v21Mod.contentV21.Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v21Mod.contentV21.Content]
   
-  @scala.inline
-  def content_v2(version: v2): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(version.asInstanceOf[js.Any]).asInstanceOf[Content]
+  inline def content_v2(version: v2): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(version.asInstanceOf[js.Any]).asInstanceOf[Content]
   
-  @scala.inline
-  def content_v21(version: v2Dot1): typings.googleapis.v21Mod.contentV21.Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v21Mod.contentV21.Content]
+  inline def content_v21(version: v2Dot1): typings.googleapis.v21Mod.contentV21.Content = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v21Mod.contentV21.Content]
 }

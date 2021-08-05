@@ -11,8 +11,6 @@ object operatorInMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def In[T](value: js.Array[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def In[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def In[T](value: js.Array[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def In[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

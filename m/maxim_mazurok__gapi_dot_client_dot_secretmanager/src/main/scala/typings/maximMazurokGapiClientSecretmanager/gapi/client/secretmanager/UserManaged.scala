@@ -11,22 +11,17 @@ trait UserManaged extends StObject {
 }
 object UserManaged {
   
-  @scala.inline
-  def apply(): UserManaged = {
+  inline def apply(): UserManaged = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserManaged]
   }
   
-  @scala.inline
-  implicit class UserManagedMutableBuilder[Self <: UserManaged] (val x: Self) extends AnyVal {
+  extension [Self <: UserManaged](x: Self) {
     
-    @scala.inline
-    def setReplicas(value: js.Array[Replica]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: js.Array[Replica]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    @scala.inline
-    def setReplicasVarargs(value: Replica*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: Replica*): Self = StObject.set(x, "replicas", js.Array(value :_*))
   }
 }

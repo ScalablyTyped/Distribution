@@ -13,16 +13,13 @@ trait DescribeDocumentClassifierRequest extends StObject {
 }
 object DescribeDocumentClassifierRequest {
   
-  @scala.inline
-  def apply(DocumentClassifierArn: DocumentClassifierArn): DescribeDocumentClassifierRequest = {
+  inline def apply(DocumentClassifierArn: DocumentClassifierArn): DescribeDocumentClassifierRequest = {
     val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentClassifierRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDocumentClassifierRequestMutableBuilder[Self <: DescribeDocumentClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDocumentClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
+    inline def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
   }
 }

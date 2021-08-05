@@ -17,37 +17,27 @@ trait GetResizeProps extends StObject {
 }
 object GetResizeProps {
   
-  @scala.inline
-  def apply(): GetResizeProps = {
+  inline def apply(): GetResizeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResizeProps]
   }
   
-  @scala.inline
-  implicit class GetResizePropsMutableBuilder[Self <: GetResizeProps] (val x: Self) extends AnyVal {
+  extension [Self <: GetResizeProps](x: Self) {
     
-    @scala.inline
-    def setLeftClassName(value: String): Self = StObject.set(x, "leftClassName", value.asInstanceOf[js.Any])
+    inline def setLeftClassName(value: String): Self = StObject.set(x, "leftClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftClassNameUndefined: Self = StObject.set(x, "leftClassName", js.undefined)
+    inline def setLeftClassNameUndefined: Self = StObject.set(x, "leftClassName", js.undefined)
     
-    @scala.inline
-    def setLeftStyle(value: CSSProperties): Self = StObject.set(x, "leftStyle", value.asInstanceOf[js.Any])
+    inline def setLeftStyle(value: CSSProperties): Self = StObject.set(x, "leftStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftStyleUndefined: Self = StObject.set(x, "leftStyle", js.undefined)
+    inline def setLeftStyleUndefined: Self = StObject.set(x, "leftStyle", js.undefined)
     
-    @scala.inline
-    def setRightClassName(value: String): Self = StObject.set(x, "rightClassName", value.asInstanceOf[js.Any])
+    inline def setRightClassName(value: String): Self = StObject.set(x, "rightClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightClassNameUndefined: Self = StObject.set(x, "rightClassName", js.undefined)
+    inline def setRightClassNameUndefined: Self = StObject.set(x, "rightClassName", js.undefined)
     
-    @scala.inline
-    def setRightStyle(value: CSSProperties): Self = StObject.set(x, "rightStyle", value.asInstanceOf[js.Any])
+    inline def setRightStyle(value: CSSProperties): Self = StObject.set(x, "rightStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightStyleUndefined: Self = StObject.set(x, "rightStyle", js.undefined)
+    inline def setRightStyleUndefined: Self = StObject.set(x, "rightStyle", js.undefined)
   }
 }

@@ -20,57 +20,44 @@ object mod {
     * Create a new morgan logger middleware function using the given format and options. The format argument may be a
     * custom format function which adheres to the signature.
     */
-  @scala.inline
-  def apply(custom: js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, String]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(custom.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(custom: js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, String]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(custom.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   /**
     * Create a new morgan logger middleware function using the given format and options. The format argument may be a string
     * of a predefined name (see below for the names), or a string of a format string containing defined tokens.
     */
-  @scala.inline
-  def apply(format: String): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(format: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: String): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   /**
     * Standard Apache combined log output.
     * :remote-addr - :remote-user [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"
     */
-  @scala.inline
-  def apply(format: combined): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(format: combined, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: combined): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: combined, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   /**
     * Standard Apache common log output.
     * :remote-addr - :remote-user [:date] ":method :url HTTP/:http-version" :status :res[content-length]
     */
-  @scala.inline
-  def apply(format: common): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(format: common, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: common): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: common, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   /**
     * Concise output colored by response status for development use. The :status token will be colored red for server error codes,
     * yellow for client error codes, cyan for redirection codes, and uncolored for all other codes.
     * :method :url :status :response-time ms - :res[content-length]
     */
-  @scala.inline
-  def apply(format: dev): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(format: dev, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: dev): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: dev, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   /**
     * Shorter than default, also including response time.
     * :remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms
     */
-  @scala.inline
-  def apply(format: short): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(format: short, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: short): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: short, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   /**
     * The minimal output.
     * :method :url :status :res[content-length] - :response-time ms
     */
-  @scala.inline
-  def apply(format: tiny): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(format: tiny, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: tiny): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(format: tiny, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-morgan", JSImport.Namespace)
   @js.native
@@ -79,25 +66,21 @@ object mod {
   /**
     * Compile a format string in token notation into a format function
     */
-  @scala.inline
-  def compile(format: String): FormatFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFn]
+  inline def compile(format: String): FormatFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFn]
   
   /**
     * Define a named custom format by specifying a format string in token notation
     */
-  @scala.inline
-  def format(name: String, fmt: String): KoaMorgan = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(name.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[KoaMorgan]
+  inline def format(name: String, fmt: String): KoaMorgan = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(name.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[KoaMorgan]
   /**
     * Define a named custom format by specifying a format function
     */
-  @scala.inline
-  def format(name: String, fmt: FormatFn): KoaMorgan = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(name.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[KoaMorgan]
+  inline def format(name: String, fmt: FormatFn): KoaMorgan = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(name.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[KoaMorgan]
   
   /**
     * Define a custom token which can be used in custom morgan logging formats.
     */
-  @scala.inline
-  def token(name: String, callback: TokenCallbackFn): KoaMorgan = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[KoaMorgan]
+  inline def token(name: String, callback: TokenCallbackFn): KoaMorgan = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[KoaMorgan]
   
   type FormatFn = js.Function3[/* tokens */ TokenIndexer, /* req */ IncomingMessage, /* res */ ServerResponse, String]
   
@@ -200,38 +183,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       
-      @scala.inline
-      def setSkip(value: (/* req */ IncomingMessage, /* res */ ServerResponse) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+      inline def setSkip(value: (/* req */ IncomingMessage, /* res */ ServerResponse) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setStream(value: StreamOptions): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: StreamOptions): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }
   }
   

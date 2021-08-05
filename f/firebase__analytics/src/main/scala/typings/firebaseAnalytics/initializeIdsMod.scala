@@ -16,8 +16,7 @@ object initializeIdsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeIds(
+  inline def initializeIds(
     app: FirebaseApp,
     dynamicConfigPromisesList: js.Array[js.Promise[DynamicConfig | MinimalDynamicConfig]],
     measurementIdToAppId: StringDictionary[String],

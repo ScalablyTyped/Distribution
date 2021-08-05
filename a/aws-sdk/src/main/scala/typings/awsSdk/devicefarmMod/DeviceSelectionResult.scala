@@ -23,34 +23,25 @@ trait DeviceSelectionResult extends StObject {
 }
 object DeviceSelectionResult {
   
-  @scala.inline
-  def apply(): DeviceSelectionResult = {
+  inline def apply(): DeviceSelectionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceSelectionResult]
   }
   
-  @scala.inline
-  implicit class DeviceSelectionResultMutableBuilder[Self <: DeviceSelectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSelectionResult](x: Self) {
     
-    @scala.inline
-    def setFilters(value: DeviceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: DeviceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchedDevicesCount(value: Integer): Self = StObject.set(x, "matchedDevicesCount", value.asInstanceOf[js.Any])
+    inline def setMatchedDevicesCount(value: Integer): Self = StObject.set(x, "matchedDevicesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedDevicesCountUndefined: Self = StObject.set(x, "matchedDevicesCount", js.undefined)
+    inline def setMatchedDevicesCountUndefined: Self = StObject.set(x, "matchedDevicesCount", js.undefined)
     
-    @scala.inline
-    def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
+    inline def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDevicesUndefined: Self = StObject.set(x, "maxDevices", js.undefined)
+    inline def setMaxDevicesUndefined: Self = StObject.set(x, "maxDevices", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait DeleteTemplateParams
 }
 object DeleteTemplateParams {
   
-  @scala.inline
-  def apply(id: String): DeleteTemplateParams = {
+  inline def apply(id: String): DeleteTemplateParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTemplateParams]
   }
   
-  @scala.inline
-  implicit class DeleteTemplateParamsMutableBuilder[Self <: DeleteTemplateParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTemplateParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

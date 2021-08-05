@@ -23,31 +23,23 @@ trait MetricFilterMatchRecord extends StObject {
 }
 object MetricFilterMatchRecord {
   
-  @scala.inline
-  def apply(): MetricFilterMatchRecord = {
+  inline def apply(): MetricFilterMatchRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricFilterMatchRecord]
   }
   
-  @scala.inline
-  implicit class MetricFilterMatchRecordMutableBuilder[Self <: MetricFilterMatchRecord] (val x: Self) extends AnyVal {
+  extension [Self <: MetricFilterMatchRecord](x: Self) {
     
-    @scala.inline
-    def setEventMessage(value: EventMessage): Self = StObject.set(x, "eventMessage", value.asInstanceOf[js.Any])
+    inline def setEventMessage(value: EventMessage): Self = StObject.set(x, "eventMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventMessageUndefined: Self = StObject.set(x, "eventMessage", js.undefined)
+    inline def setEventMessageUndefined: Self = StObject.set(x, "eventMessage", js.undefined)
     
-    @scala.inline
-    def setEventNumber(value: EventNumber): Self = StObject.set(x, "eventNumber", value.asInstanceOf[js.Any])
+    inline def setEventNumber(value: EventNumber): Self = StObject.set(x, "eventNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNumberUndefined: Self = StObject.set(x, "eventNumber", js.undefined)
+    inline def setEventNumberUndefined: Self = StObject.set(x, "eventNumber", js.undefined)
     
-    @scala.inline
-    def setExtractedValues(value: ExtractedValues): Self = StObject.set(x, "extractedValues", value.asInstanceOf[js.Any])
+    inline def setExtractedValues(value: ExtractedValues): Self = StObject.set(x, "extractedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractedValuesUndefined: Self = StObject.set(x, "extractedValues", js.undefined)
+    inline def setExtractedValuesUndefined: Self = StObject.set(x, "extractedValues", js.undefined)
   }
 }

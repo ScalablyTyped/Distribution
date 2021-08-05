@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeclareModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ js.Any,
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Literal */ js.Any
   ): DeclareModule = {
@@ -22,16 +21,13 @@ object DeclareModule {
     __obj.asInstanceOf[DeclareModule]
   }
   
-  @scala.inline
-  implicit class DeclareModuleMutableBuilder[Self <: DeclareModule] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareModule](x: Self) {
     
-    @scala.inline
-    def setBody(
+    inline def setBody(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ js.Any
     ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(
+    inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Literal */ js.Any
     ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

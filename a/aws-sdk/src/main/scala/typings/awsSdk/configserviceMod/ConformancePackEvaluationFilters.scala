@@ -28,43 +28,31 @@ trait ConformancePackEvaluationFilters extends StObject {
 }
 object ConformancePackEvaluationFilters {
   
-  @scala.inline
-  def apply(): ConformancePackEvaluationFilters = {
+  inline def apply(): ConformancePackEvaluationFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConformancePackEvaluationFilters]
   }
   
-  @scala.inline
-  implicit class ConformancePackEvaluationFiltersMutableBuilder[Self <: ConformancePackEvaluationFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ConformancePackEvaluationFilters](x: Self) {
     
-    @scala.inline
-    def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
+    inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    @scala.inline
-    def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
+    inline def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
+    inline def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceIds(value: ConformancePackComplianceResourceIds): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: ConformancePackComplianceResourceIds): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
+    inline def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
     
-    @scala.inline
-    def setResourceIdsVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

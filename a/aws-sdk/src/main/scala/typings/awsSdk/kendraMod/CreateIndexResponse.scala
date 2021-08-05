@@ -13,19 +13,15 @@ trait CreateIndexResponse extends StObject {
 }
 object CreateIndexResponse {
   
-  @scala.inline
-  def apply(): CreateIndexResponse = {
+  inline def apply(): CreateIndexResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIndexResponse]
   }
   
-  @scala.inline
-  implicit class CreateIndexResponseMutableBuilder[Self <: CreateIndexResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIndexResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

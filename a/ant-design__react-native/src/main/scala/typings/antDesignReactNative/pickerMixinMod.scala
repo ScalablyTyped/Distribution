@@ -11,8 +11,7 @@ object pickerMixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ComposedComponent: js.Any): ContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ContextType]
+  inline def default(ComposedComponent: js.Any): ContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ContextType]
   
   trait ItemProps extends StObject {
     
@@ -20,17 +19,14 @@ object pickerMixinMod {
   }
   object ItemProps {
     
-    @scala.inline
-    def apply(value: js.Any): ItemProps = {
+    inline def apply(value: js.Any): ItemProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemProps]
     }
     
-    @scala.inline
-    implicit class ItemPropsMutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ItemProps](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

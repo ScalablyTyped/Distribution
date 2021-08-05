@@ -15,20 +15,16 @@ object anon {
   }
   object Dictx {
     
-    @scala.inline
-    def apply(): Dictx = {
+    inline def apply(): Dictx = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictx]
     }
     
-    @scala.inline
-    implicit class DictxMutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
+    extension [Self <: Dictx](x: Self) {
       
-      @scala.inline
-      def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+      inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     }
   }
   
@@ -38,17 +34,14 @@ object anon {
   }
   object Expand {
     
-    @scala.inline
-    def apply(expand: js.Object => String): Expand = {
+    inline def apply(expand: js.Object => String): Expand = {
       val __obj = js.Dynamic.literal(expand = js.Any.fromFunction1(expand))
       __obj.asInstanceOf[Expand]
     }
     
-    @scala.inline
-    implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+    extension [Self <: Expand](x: Self) {
       
-      @scala.inline
-      def setExpand(value: js.Object => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+      inline def setExpand(value: js.Object => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     }
   }
 }

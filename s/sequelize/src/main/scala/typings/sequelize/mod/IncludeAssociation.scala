@@ -17,22 +17,17 @@ trait IncludeAssociation extends StObject {
 }
 object IncludeAssociation {
   
-  @scala.inline
-  def apply(identifier: String, source: Model[js.Any, js.Any, js.Any], target: Model[js.Any, js.Any, js.Any]): IncludeAssociation = {
+  inline def apply(identifier: String, source: Model[js.Any, js.Any, js.Any], target: Model[js.Any, js.Any, js.Any]): IncludeAssociation = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeAssociation]
   }
   
-  @scala.inline
-  implicit class IncludeAssociationMutableBuilder[Self <: IncludeAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeAssociation](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -32,8 +32,7 @@ trait Day extends StObject {
 }
 object Day {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     day: Double,
     era: String,
     hour: Double,
@@ -51,43 +50,30 @@ object Day {
     __obj.asInstanceOf[Day]
   }
   
-  @scala.inline
-  implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
+  extension [Self <: Day](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+    inline def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInDST(value: Boolean): Self = StObject.set(x, "inDST", value.asInstanceOf[js.Any])
+    inline def setInDST(value: Boolean): Self = StObject.set(x, "inDST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedYear(value: Unit): Self = StObject.set(x, "relatedYear", value.asInstanceOf[js.Any])
+    inline def setRelatedYear(value: Unit): Self = StObject.set(x, "relatedYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneOffset(value: Double): Self = StObject.set(x, "timeZoneOffset", value.asInstanceOf[js.Any])
+    inline def setTimeZoneOffset(value: Double): Self = StObject.set(x, "timeZoneOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+    inline def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearName(value: Unit): Self = StObject.set(x, "yearName", value.asInstanceOf[js.Any])
+    inline def setYearName(value: Unit): Self = StObject.set(x, "yearName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait RandomSplitEntry extends StObject {
 }
 object RandomSplitEntry {
   
-  @scala.inline
-  def apply(): RandomSplitEntry = {
+  inline def apply(): RandomSplitEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RandomSplitEntry]
   }
   
-  @scala.inline
-  implicit class RandomSplitEntryMutableBuilder[Self <: RandomSplitEntry] (val x: Self) extends AnyVal {
+  extension [Self <: RandomSplitEntry](x: Self) {
     
-    @scala.inline
-    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
+    inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
+    inline def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: integer): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: integer): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "Percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "Percentage", js.undefined)
   }
 }

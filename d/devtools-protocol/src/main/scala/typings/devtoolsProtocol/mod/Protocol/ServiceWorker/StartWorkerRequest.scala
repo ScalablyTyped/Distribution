@@ -10,16 +10,13 @@ trait StartWorkerRequest extends StObject {
 }
 object StartWorkerRequest {
   
-  @scala.inline
-  def apply(scopeURL: String): StartWorkerRequest = {
+  inline def apply(scopeURL: String): StartWorkerRequest = {
     val __obj = js.Dynamic.literal(scopeURL = scopeURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartWorkerRequest]
   }
   
-  @scala.inline
-  implicit class StartWorkerRequestMutableBuilder[Self <: StartWorkerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartWorkerRequest](x: Self) {
     
-    @scala.inline
-    def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
+    inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }
 }

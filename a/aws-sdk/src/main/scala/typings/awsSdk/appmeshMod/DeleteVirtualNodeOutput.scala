@@ -13,16 +13,13 @@ trait DeleteVirtualNodeOutput extends StObject {
 }
 object DeleteVirtualNodeOutput {
   
-  @scala.inline
-  def apply(virtualNode: VirtualNodeData): DeleteVirtualNodeOutput = {
+  inline def apply(virtualNode: VirtualNodeData): DeleteVirtualNodeOutput = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualNodeOutput]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualNodeOutputMutableBuilder[Self <: DeleteVirtualNodeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualNodeOutput](x: Self) {
     
-    @scala.inline
-    def setVirtualNode(value: VirtualNodeData): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
+    inline def setVirtualNode(value: VirtualNodeData): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
   }
 }

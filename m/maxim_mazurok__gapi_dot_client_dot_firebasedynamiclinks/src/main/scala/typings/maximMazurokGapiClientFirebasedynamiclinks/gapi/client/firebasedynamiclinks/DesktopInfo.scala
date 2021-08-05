@@ -11,19 +11,15 @@ trait DesktopInfo extends StObject {
 }
 object DesktopInfo {
   
-  @scala.inline
-  def apply(): DesktopInfo = {
+  inline def apply(): DesktopInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DesktopInfo]
   }
   
-  @scala.inline
-  implicit class DesktopInfoMutableBuilder[Self <: DesktopInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DesktopInfo](x: Self) {
     
-    @scala.inline
-    def setDesktopFallbackLink(value: String): Self = StObject.set(x, "desktopFallbackLink", value.asInstanceOf[js.Any])
+    inline def setDesktopFallbackLink(value: String): Self = StObject.set(x, "desktopFallbackLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopFallbackLinkUndefined: Self = StObject.set(x, "desktopFallbackLink", js.undefined)
+    inline def setDesktopFallbackLinkUndefined: Self = StObject.set(x, "desktopFallbackLink", js.undefined)
   }
 }

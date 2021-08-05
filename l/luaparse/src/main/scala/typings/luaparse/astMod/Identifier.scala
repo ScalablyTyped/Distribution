@@ -13,17 +13,14 @@ trait Identifier
 }
 object Identifier {
   
-  @scala.inline
-  def apply(name: String): Identifier = {
+  inline def apply(name: String): Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[Identifier]
   }
   
-  @scala.inline
-  implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
+  extension [Self <: Identifier](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

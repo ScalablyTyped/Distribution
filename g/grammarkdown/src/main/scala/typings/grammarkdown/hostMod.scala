@@ -23,37 +23,37 @@ object hostMod {
     def this(options: CoreAsyncHostOptions, hostFallback: CoreAsyncHost) = this()
     def this(options: CoreAsyncHostOptions, hostFallback: CoreSyncHost) = this()
     
-    var _hostFallback: js.Any = js.native
+    /* private */ var _hostFallback: js.Any = js.native
     
-    var _normalizeFile: js.Any = js.native
+    /* private */ var _normalizeFile: js.Any = js.native
     
-    var _normalizeFileCallback: js.Any = js.native
+    /* private */ var _normalizeFileCallback: js.Any = js.native
     
-    var _normalizeFileFallback: js.Any = js.native
+    /* private */ var _normalizeFileFallback: js.Any = js.native
     
-    var _readFile: js.Any = js.native
+    /* private */ var _readFile: js.Any = js.native
     
-    var _readFileCallback: js.Any = js.native
+    /* private */ var _readFileCallback: js.Any = js.native
     
-    var _readFileFallback: js.Any = js.native
+    /* private */ var _readFileFallback: js.Any = js.native
     
-    var _resolveFile: js.Any = js.native
+    /* private */ var _resolveFile: js.Any = js.native
     
-    var _resolveFileCallback: js.Any = js.native
+    /* private */ var _resolveFileCallback: js.Any = js.native
     
-    var _resolveFileFallback: js.Any = js.native
+    /* private */ var _resolveFileFallback: js.Any = js.native
     
-    var _resolveKnownGrammar: js.Any = js.native
+    /* private */ var _resolveKnownGrammar: js.Any = js.native
     
-    var _resolveKnownGrammarCallback: js.Any = js.native
+    /* private */ var _resolveKnownGrammarCallback: js.Any = js.native
     
-    var _resolveKnownGrammarFallback: js.Any = js.native
+    /* private */ var _resolveKnownGrammarFallback: js.Any = js.native
     
-    var _writeFile: js.Any = js.native
+    /* private */ var _writeFile: js.Any = js.native
     
-    var _writeFileCallback: js.Any = js.native
+    /* private */ var _writeFileCallback: js.Any = js.native
     
-    var _writeFileFallback: js.Any = js.native
+    /* private */ var _writeFileFallback: js.Any = js.native
     
     /**
       * Reads and parses a source file from the host.
@@ -114,48 +114,33 @@ object hostMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def forFile(content: String): StringAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: String, file: String): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: String, file: String, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: String, file: Unit, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: String, file: Unit, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: String): StringAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: String, file: String): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: String, file: String, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: String, file: Unit, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: String, file: Unit, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
     /**
       * Creates a {@link StringAsyncHost} for the provided content.
       * @param content The content of the file.
       * @param file The file name for the content.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @scala.inline
-    def forFile(content: js.Thenable[String]): StringAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: js.Thenable[String], file: String): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: js.Thenable[String], file: String, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: js.Thenable[String], file: String, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: js.Thenable[String], file: Unit, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
-    @scala.inline
-    def forFile(content: js.Thenable[String], file: Unit, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: js.Thenable[String]): StringAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: js.Thenable[String], file: String): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: js.Thenable[String], file: String, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: js.Thenable[String], file: String, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: js.Thenable[String], file: Unit, hostFallback: CoreAsyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
+    inline def forFile(content: js.Thenable[String], file: Unit, hostFallback: CoreSyncHost): StringAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringAsyncHost]
     
     /**
       * Creates a `CoreAsyncHost`.
       * @param options The options used to configure the host.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @scala.inline
-    def from(custom: CoreAsyncHostOptions): CoreAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any]).asInstanceOf[CoreAsyncHost]
-    @scala.inline
-    def from(custom: CoreAsyncHostOptions, hostFallback: CoreAsyncHost): CoreAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreAsyncHost]
-    @scala.inline
-    def from(custom: CoreAsyncHostOptions, hostFallback: CoreSyncHost): CoreAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreAsyncHost]
+    inline def from(custom: CoreAsyncHostOptions): CoreAsyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any]).asInstanceOf[CoreAsyncHost]
+    inline def from(custom: CoreAsyncHostOptions, hostFallback: CoreAsyncHost): CoreAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreAsyncHost]
+    inline def from(custom: CoreAsyncHostOptions, hostFallback: CoreSyncHost): CoreAsyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(custom.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreAsyncHost]
   }
   
   @JSImport("grammarkdown/dist/host", "CoreSyncHost")
@@ -168,37 +153,37 @@ object hostMod {
     def this(options: CoreSyncHostOptions) = this()
     def this(options: CoreSyncHostOptions, hostFallback: CoreSyncHost) = this()
     
-    var _hostFallback: js.Any = js.native
+    /* private */ var _hostFallback: js.Any = js.native
     
-    var _normalizeFile: js.Any = js.native
+    /* private */ var _normalizeFile: js.Any = js.native
     
-    var _normalizeFileCallback: js.Any = js.native
+    /* private */ var _normalizeFileCallback: js.Any = js.native
     
-    var _normalizeFileFallback: js.Any = js.native
+    /* private */ var _normalizeFileFallback: js.Any = js.native
     
-    var _readFileSync: js.Any = js.native
+    /* private */ var _readFileSync: js.Any = js.native
     
-    var _readFileSyncCallback: js.Any = js.native
+    /* private */ var _readFileSyncCallback: js.Any = js.native
     
-    var _readFileSyncFallback: js.Any = js.native
+    /* private */ var _readFileSyncFallback: js.Any = js.native
     
-    var _resolveFile: js.Any = js.native
+    /* private */ var _resolveFile: js.Any = js.native
     
-    var _resolveFileCallback: js.Any = js.native
+    /* private */ var _resolveFileCallback: js.Any = js.native
     
-    var _resolveFileFallback: js.Any = js.native
+    /* private */ var _resolveFileFallback: js.Any = js.native
     
-    var _resolveKnownGrammar: js.Any = js.native
+    /* private */ var _resolveKnownGrammar: js.Any = js.native
     
-    var _resolveKnownGrammarCallback: js.Any = js.native
+    /* private */ var _resolveKnownGrammarCallback: js.Any = js.native
     
-    var _resolveKnownGrammarFallback: js.Any = js.native
+    /* private */ var _resolveKnownGrammarFallback: js.Any = js.native
     
-    var _writeFileSync: js.Any = js.native
+    /* private */ var _writeFileSync: js.Any = js.native
     
-    var _writeFileSyncCallback: js.Any = js.native
+    /* private */ var _writeFileSyncCallback: js.Any = js.native
     
-    var _writeFileSyncFallback: js.Any = js.native
+    /* private */ var _writeFileSyncFallback: js.Any = js.native
     
     /**
       * Reads and parses a source file from the host.
@@ -263,24 +248,18 @@ object hostMod {
       * @param file The file name for the content.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @scala.inline
-    def forFile(content: String): StringSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringSyncHost]
-    @scala.inline
-    def forFile(content: String, file: String): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
-    @scala.inline
-    def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
-    @scala.inline
-    def forFile(content: String, file: Unit, hostFallback: CoreSyncHost): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
+    inline def forFile(content: String): StringSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[StringSyncHost]
+    inline def forFile(content: String, file: String): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
+    inline def forFile(content: String, file: String, hostFallback: CoreSyncHost): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
+    inline def forFile(content: String, file: Unit, hostFallback: CoreSyncHost): StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[StringSyncHost]
     
     /**
       * Creates a `CoreSyncHost`.
       * @param options The options used to configure the host.
       * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
       */
-    @scala.inline
-    def from(options: CoreSyncHostOptions): CoreSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any]).asInstanceOf[CoreSyncHost]
-    @scala.inline
-    def from(options: CoreSyncHostOptions, hostFallback: CoreSyncHost): CoreSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreSyncHost]
+    inline def from(options: CoreSyncHostOptions): CoreSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any]).asInstanceOf[CoreSyncHost]
+    inline def from(options: CoreSyncHostOptions, hostFallback: CoreSyncHost): CoreSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[CoreSyncHost]
   }
   
   @JSImport("grammarkdown/dist/host", "HostBase")
@@ -291,11 +270,11 @@ object hostMod {
   abstract class HostBase () extends StObject {
     def this(options: HostBaseOptions) = this()
     
-    var _innerParser: js.Any = js.native
+    /* private */ var _innerParser: js.Any = js.native
     
-    var _knownGrammars: js.Any = js.native
+    /* private */ var _knownGrammars: js.Any = js.native
     
-    var _useBuiltinGrammars: js.Any = js.native
+    /* private */ var _useBuiltinGrammars: js.Any = js.native
     
     /**
       * Creates a {@link Parser} for this host.
@@ -509,17 +488,14 @@ object hostMod {
   }
   object CoreAsyncHostOptions {
     
-    @scala.inline
-    def apply(): CoreAsyncHostOptions = {
+    inline def apply(): CoreAsyncHostOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoreAsyncHostOptions]
     }
     
-    @scala.inline
-    implicit class CoreAsyncHostOptionsMutableBuilder[Self <: CoreAsyncHostOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CoreAsyncHostOptions](x: Self) {
       
-      @scala.inline
-      def setNormalizeFile(
+      inline def setNormalizeFile(
         value: js.ThisFunction2[
               /* this */ Unit, 
               /* file */ String, 
@@ -528,11 +504,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "normalizeFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeFileUndefined: Self = StObject.set(x, "normalizeFile", js.undefined)
+      inline def setNormalizeFileUndefined: Self = StObject.set(x, "normalizeFile", js.undefined)
       
-      @scala.inline
-      def setReadFile(
+      inline def setReadFile(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* file */ String, 
@@ -546,11 +520,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+      inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
       
-      @scala.inline
-      def setResolveFile(
+      inline def setResolveFile(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* file */ String, 
@@ -560,11 +532,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "resolveFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveFileUndefined: Self = StObject.set(x, "resolveFile", js.undefined)
+      inline def setResolveFileUndefined: Self = StObject.set(x, "resolveFile", js.undefined)
       
-      @scala.inline
-      def setResolveKnownGrammar(
+      inline def setResolveKnownGrammar(
         value: js.ThisFunction2[
               /* this */ Unit, 
               /* name */ String, 
@@ -573,11 +543,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "resolveKnownGrammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveKnownGrammarUndefined: Self = StObject.set(x, "resolveKnownGrammar", js.undefined)
+      inline def setResolveKnownGrammarUndefined: Self = StObject.set(x, "resolveKnownGrammar", js.undefined)
       
-      @scala.inline
-      def setWriteFile(
+      inline def setWriteFile(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* file */ String, 
@@ -593,8 +561,7 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
+      inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
     }
   }
   
@@ -673,17 +640,14 @@ object hostMod {
   }
   object CoreSyncHostOptions {
     
-    @scala.inline
-    def apply(): CoreSyncHostOptions = {
+    inline def apply(): CoreSyncHostOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoreSyncHostOptions]
     }
     
-    @scala.inline
-    implicit class CoreSyncHostOptionsMutableBuilder[Self <: CoreSyncHostOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CoreSyncHostOptions](x: Self) {
       
-      @scala.inline
-      def setNormalizeFile(
+      inline def setNormalizeFile(
         value: js.ThisFunction2[
               /* this */ Unit, 
               /* file */ String, 
@@ -692,11 +656,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "normalizeFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeFileUndefined: Self = StObject.set(x, "normalizeFile", js.undefined)
+      inline def setNormalizeFileUndefined: Self = StObject.set(x, "normalizeFile", js.undefined)
       
-      @scala.inline
-      def setReadFileSync(
+      inline def setReadFileSync(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* file */ String, 
@@ -706,11 +668,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
+      inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
       
-      @scala.inline
-      def setResolveFile(
+      inline def setResolveFile(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* file */ String, 
@@ -720,11 +680,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "resolveFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveFileUndefined: Self = StObject.set(x, "resolveFile", js.undefined)
+      inline def setResolveFileUndefined: Self = StObject.set(x, "resolveFile", js.undefined)
       
-      @scala.inline
-      def setResolveKnownGrammar(
+      inline def setResolveKnownGrammar(
         value: js.ThisFunction2[
               /* this */ Unit, 
               /* name */ String, 
@@ -733,11 +691,9 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "resolveKnownGrammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveKnownGrammarUndefined: Self = StObject.set(x, "resolveKnownGrammar", js.undefined)
+      inline def setResolveKnownGrammarUndefined: Self = StObject.set(x, "resolveKnownGrammar", js.undefined)
       
-      @scala.inline
-      def setWriteFileSync(
+      inline def setWriteFileSync(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* file */ String, 
@@ -753,8 +709,7 @@ object hostMod {
             ]
       ): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
+      inline def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
     }
   }
   
@@ -777,32 +732,24 @@ object hostMod {
   }
   object HostBaseOptions {
     
-    @scala.inline
-    def apply(): HostBaseOptions = {
+    inline def apply(): HostBaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HostBaseOptions]
     }
     
-    @scala.inline
-    implicit class HostBaseOptionsMutableBuilder[Self <: HostBaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HostBaseOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+      inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
       
-      @scala.inline
-      def setKnownGrammars(value: Record[String, String]): Self = StObject.set(x, "knownGrammars", value.asInstanceOf[js.Any])
+      inline def setKnownGrammars(value: Record[String, String]): Self = StObject.set(x, "knownGrammars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKnownGrammarsUndefined: Self = StObject.set(x, "knownGrammars", js.undefined)
+      inline def setKnownGrammarsUndefined: Self = StObject.set(x, "knownGrammars", js.undefined)
       
-      @scala.inline
-      def setUseBuiltinGrammars(value: Boolean): Self = StObject.set(x, "useBuiltinGrammars", value.asInstanceOf[js.Any])
+      inline def setUseBuiltinGrammars(value: Boolean): Self = StObject.set(x, "useBuiltinGrammars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBuiltinGrammarsUndefined: Self = StObject.set(x, "useBuiltinGrammars", js.undefined)
+      inline def setUseBuiltinGrammarsUndefined: Self = StObject.set(x, "useBuiltinGrammars", js.undefined)
     }
   }
   

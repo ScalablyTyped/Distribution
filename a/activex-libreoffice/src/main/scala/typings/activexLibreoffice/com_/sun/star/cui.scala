@@ -18,8 +18,7 @@ object cui {
   }
   object ColorPicker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createWithParent: XWindow => Unit,
       execute: () => Double,
@@ -31,11 +30,9 @@ object cui {
       __obj.asInstanceOf[ColorPicker]
     }
     
-    @scala.inline
-    implicit class ColorPickerMutableBuilder[Self <: ColorPicker] (val x: Self) extends AnyVal {
+    extension [Self <: ColorPicker](x: Self) {
       
-      @scala.inline
-      def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
+      inline def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
     }
   }
 }

@@ -12,19 +12,15 @@ trait TextRange extends StObject {
 }
 object TextRange {
   
-  @scala.inline
-  def apply(end: Double, pos: Double): TextRange = {
+  inline def apply(end: Double, pos: Double): TextRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRange]
   }
   
-  @scala.inline
-  implicit class TextRangeMutableBuilder[Self <: TextRange] (val x: Self) extends AnyVal {
+  extension [Self <: TextRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }
 }

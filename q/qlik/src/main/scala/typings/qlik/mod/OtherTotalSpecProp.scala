@@ -47,8 +47,7 @@ trait OtherTotalSpecProp extends StObject {
 }
 object OtherTotalSpecProp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qApplyEvenWhenPossiblyWrongResult: Boolean,
     qForceBadValueKeeping: Boolean,
     qGlobalOtherGrouping: Boolean,
@@ -66,45 +65,32 @@ object OtherTotalSpecProp {
     __obj.asInstanceOf[OtherTotalSpecProp]
   }
   
-  @scala.inline
-  implicit class OtherTotalSpecPropMutableBuilder[Self <: OtherTotalSpecProp] (val x: Self) extends AnyVal {
+  extension [Self <: OtherTotalSpecProp](x: Self) {
     
-    @scala.inline
-    def setQApplyEvenWhenPossiblyWrongResult(value: Boolean): Self = StObject.set(x, "qApplyEvenWhenPossiblyWrongResult", value.asInstanceOf[js.Any])
+    inline def setQApplyEvenWhenPossiblyWrongResult(value: Boolean): Self = StObject.set(x, "qApplyEvenWhenPossiblyWrongResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQForceBadValueKeeping(value: Boolean): Self = StObject.set(x, "qForceBadValueKeeping", value.asInstanceOf[js.Any])
+    inline def setQForceBadValueKeeping(value: Boolean): Self = StObject.set(x, "qForceBadValueKeeping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGlobalOtherGrouping(value: Boolean): Self = StObject.set(x, "qGlobalOtherGrouping", value.asInstanceOf[js.Any])
+    inline def setQGlobalOtherGrouping(value: Boolean): Self = StObject.set(x, "qGlobalOtherGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherCollapseInnerDimensions(value: Boolean): Self = StObject.set(x, "qOtherCollapseInnerDimensions", value.asInstanceOf[js.Any])
+    inline def setQOtherCollapseInnerDimensions(value: Boolean): Self = StObject.set(x, "qOtherCollapseInnerDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherCounted(value: ValueExpr): Self = StObject.set(x, "qOtherCounted", value.asInstanceOf[js.Any])
+    inline def setQOtherCounted(value: ValueExpr): Self = StObject.set(x, "qOtherCounted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherLimit(value: ValueExpr): Self = StObject.set(x, "qOtherLimit", value.asInstanceOf[js.Any])
+    inline def setQOtherLimit(value: ValueExpr): Self = StObject.set(x, "qOtherLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherLimitMode(value: OTHER_GE_LIMIT | OTHER_LE_LIMIT | OTHER_GT_LIMIT | OTHER_LT_LIMIT): Self = StObject.set(x, "qOtherLimitMode", value.asInstanceOf[js.Any])
+    inline def setQOtherLimitMode(value: OTHER_GE_LIMIT | OTHER_LE_LIMIT | OTHER_GT_LIMIT | OTHER_LT_LIMIT): Self = StObject.set(x, "qOtherLimitMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherMode(
+    inline def setQOtherMode(
       value: OTHER_OFF | OTHER_COUNTED | OTHER_ABS_LIMITED | OTHER_ABS_ACC_TARGET | OTHER_REL_LIMITED | OTHER_REL_ACC_TARGET
     ): Self = StObject.set(x, "qOtherMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherSortMode(value: OTHER_SORT_DEFAULT | OTHER_SORT_DESCENDING | OTHER_SORT_ASCENDING): Self = StObject.set(x, "qOtherSortMode", value.asInstanceOf[js.Any])
+    inline def setQOtherSortMode(value: OTHER_SORT_DEFAULT | OTHER_SORT_DESCENDING | OTHER_SORT_ASCENDING): Self = StObject.set(x, "qOtherSortMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQReferencedExpression(value: String): Self = StObject.set(x, "qReferencedExpression", value.asInstanceOf[js.Any])
+    inline def setQReferencedExpression(value: String): Self = StObject.set(x, "qReferencedExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSupressOther(value: Boolean): Self = StObject.set(x, "qSupressOther", value.asInstanceOf[js.Any])
+    inline def setQSupressOther(value: Boolean): Self = StObject.set(x, "qSupressOther", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTotalMode(value: TOTAL_OFF | TOTAL_EXPR): Self = StObject.set(x, "qTotalMode", value.asInstanceOf[js.Any])
+    inline def setQTotalMode(value: TOTAL_OFF | TOTAL_EXPR): Self = StObject.set(x, "qTotalMode", value.asInstanceOf[js.Any])
   }
 }

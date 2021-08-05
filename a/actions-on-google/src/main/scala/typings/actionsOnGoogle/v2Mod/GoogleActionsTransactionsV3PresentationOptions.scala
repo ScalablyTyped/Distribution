@@ -26,19 +26,15 @@ trait GoogleActionsTransactionsV3PresentationOptions extends StObject {
 }
 object GoogleActionsTransactionsV3PresentationOptions {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3PresentationOptions = {
+  inline def apply(): GoogleActionsTransactionsV3PresentationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3PresentationOptions]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3PresentationOptionsMutableBuilder[Self <: GoogleActionsTransactionsV3PresentationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3PresentationOptions](x: Self) {
     
-    @scala.inline
-    def setActionDisplayName(value: String): Self = StObject.set(x, "actionDisplayName", value.asInstanceOf[js.Any])
+    inline def setActionDisplayName(value: String): Self = StObject.set(x, "actionDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDisplayNameUndefined: Self = StObject.set(x, "actionDisplayName", js.undefined)
+    inline def setActionDisplayNameUndefined: Self = StObject.set(x, "actionDisplayName", js.undefined)
   }
 }

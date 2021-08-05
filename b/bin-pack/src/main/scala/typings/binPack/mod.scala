@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: Bin */](bins: js.Array[T]): PackResult[T] = ^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any]).asInstanceOf[PackResult[T]]
-  @scala.inline
-  def apply[T /* <: Bin */](bins: js.Array[T], options: Options): PackResult[T] = (^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackResult[T]]
+  inline def apply[T /* <: Bin */](bins: js.Array[T]): PackResult[T] = ^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any]).asInstanceOf[PackResult[T]]
+  inline def apply[T /* <: Bin */](bins: js.Array[T], options: Options): PackResult[T] = (^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackResult[T]]
   
   @JSImport("bin-pack", JSImport.Namespace)
   @js.native
@@ -24,20 +22,16 @@ object mod {
   }
   object Bin {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Bin = {
+    inline def apply(height: Double, width: Double): Bin = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bin]
     }
     
-    @scala.inline
-    implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+    extension [Self <: Bin](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +43,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInPlace(value: Boolean): Self = StObject.set(x, "inPlace", value.asInstanceOf[js.Any])
+      inline def setInPlace(value: Boolean): Self = StObject.set(x, "inPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInPlaceUndefined: Self = StObject.set(x, "inPlace", js.undefined)
+      inline def setInPlaceUndefined: Self = StObject.set(x, "inPlace", js.undefined)
     }
   }
   
@@ -80,26 +70,20 @@ object mod {
   }
   object PackResult {
     
-    @scala.inline
-    def apply[T](height: Double, items: js.Array[PackedItem[T]], width: Double): PackResult[T] = {
+    inline def apply[T](height: Double, items: js.Array[PackedItem[T]], width: Double): PackResult[T] = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackResult[T]]
     }
     
-    @scala.inline
-    implicit class PackResultMutableBuilder[Self <: PackResult[?], T] (val x: Self & PackResult[T]) extends AnyVal {
+    extension [Self <: PackResult[?], T](x: Self & PackResult[T]) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[PackedItem[T]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[PackedItem[T]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: PackedItem[T]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: PackedItem[T]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,29 +107,22 @@ object mod {
   }
   object PackedItem {
     
-    @scala.inline
-    def apply[T](height: Double, item: T, width: Double, x: Double, y: Double): PackedItem[T] = {
+    inline def apply[T](height: Double, item: T, width: Double, x: Double, y: Double): PackedItem[T] = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackedItem[T]]
     }
     
-    @scala.inline
-    implicit class PackedItemMutableBuilder[Self <: PackedItem[?], T] (val x: Self & PackedItem[T]) extends AnyVal {
+    extension [Self <: PackedItem[?], T](x: Self & PackedItem[T]) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

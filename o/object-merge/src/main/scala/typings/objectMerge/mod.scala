@@ -171,20 +171,16 @@ object mod extends Shortcut {
   }
   object ObjectMergeOptions {
     
-    @scala.inline
-    def apply(depth: Double | Boolean, throwOnCircularRef: Boolean): ObjectMergeOptions = {
+    inline def apply(depth: Double | Boolean, throwOnCircularRef: Boolean): ObjectMergeOptions = {
       val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], throwOnCircularRef = throwOnCircularRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectMergeOptions]
     }
     
-    @scala.inline
-    implicit class ObjectMergeOptionsMutableBuilder[Self <: ObjectMergeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectMergeOptions](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double | Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double | Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowOnCircularRef(value: Boolean): Self = StObject.set(x, "throwOnCircularRef", value.asInstanceOf[js.Any])
+      inline def setThrowOnCircularRef(value: Boolean): Self = StObject.set(x, "throwOnCircularRef", value.asInstanceOf[js.Any])
     }
   }
   

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontWeight extends StObject
 object FontWeight {
   
-  @scala.inline
-  def bold: typings.googleAppsScript.googleAppsScriptStrings.bold = "bold".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.bold]
+  inline def bold: typings.googleAppsScript.googleAppsScriptStrings.bold = "bold".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.bold]
   
-  @scala.inline
-  def normal: typings.googleAppsScript.googleAppsScriptStrings.normal = "normal".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.normal]
+  inline def normal: typings.googleAppsScript.googleAppsScriptStrings.normal = "normal".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.normal]
 }

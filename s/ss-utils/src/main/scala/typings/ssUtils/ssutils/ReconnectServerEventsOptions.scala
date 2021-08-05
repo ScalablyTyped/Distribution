@@ -16,40 +16,29 @@ trait ReconnectServerEventsOptions extends StObject {
 }
 object ReconnectServerEventsOptions {
   
-  @scala.inline
-  def apply(): ReconnectServerEventsOptions = {
+  inline def apply(): ReconnectServerEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReconnectServerEventsOptions]
   }
   
-  @scala.inline
-  implicit class ReconnectServerEventsOptionsMutableBuilder[Self <: ReconnectServerEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReconnectServerEventsOptions](x: Self) {
     
-    @scala.inline
-    def setErrorArgs(value: js.Array[js.Any]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
+    inline def setErrorArgs(value: js.Array[js.Any]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorArgsUndefined: Self = StObject.set(x, "errorArgs", js.undefined)
+    inline def setErrorArgsUndefined: Self = StObject.set(x, "errorArgs", js.undefined)
     
-    @scala.inline
-    def setErrorArgsVarargs(value: js.Any*): Self = StObject.set(x, "errorArgs", js.Array(value :_*))
+    inline def setErrorArgsVarargs(value: js.Any*): Self = StObject.set(x, "errorArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setOnerror(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    inline def setOnerror(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    @scala.inline
-    def setOnmessage(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+    inline def setOnmessage(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
+    inline def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

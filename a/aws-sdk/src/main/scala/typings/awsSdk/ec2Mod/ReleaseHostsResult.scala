@@ -18,31 +18,23 @@ trait ReleaseHostsResult extends StObject {
 }
 object ReleaseHostsResult {
   
-  @scala.inline
-  def apply(): ReleaseHostsResult = {
+  inline def apply(): ReleaseHostsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReleaseHostsResult]
   }
   
-  @scala.inline
-  implicit class ReleaseHostsResultMutableBuilder[Self <: ReleaseHostsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseHostsResult](x: Self) {
     
-    @scala.inline
-    def setSuccessful(value: ResponseHostIdList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
+    inline def setSuccessful(value: ResponseHostIdList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
+    inline def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
-    @scala.inline
-    def setSuccessfulVarargs(value: String*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: String*): Self = StObject.set(x, "Successful", js.Array(value :_*))
     
-    @scala.inline
-    def setUnsuccessful(value: UnsuccessfulItemList): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
+    inline def setUnsuccessful(value: UnsuccessfulItemList): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
+    inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

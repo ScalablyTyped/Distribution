@@ -17,8 +17,7 @@ object createInfraStructureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createInfrastructure(
+  inline def createInfrastructure(
     projectRoot: String,
     fileSystem: MinimalFS,
     onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]],

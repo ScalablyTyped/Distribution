@@ -39,20 +39,16 @@ object face3Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(aIndex: Double, bIndex: Double, cIndex: Double): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any])).asInstanceOf[Face3]
-    @scala.inline
-    def create(
+    inline def create(aIndex: Double, bIndex: Double, cIndex: Double): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any])).asInstanceOf[Face3]
+    inline def create(
       aIndex: Double,
       bIndex: Double,
       cIndex: Double,
       faceNormal: Unit,
       vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
     ): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any], vertexNormals.asInstanceOf[js.Any])).asInstanceOf[Face3]
-    @scala.inline
-    def create(aIndex: Double, bIndex: Double, cIndex: Double, faceNormal: Vector3): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any])).asInstanceOf[Face3]
-    @scala.inline
-    def create(
+    inline def create(aIndex: Double, bIndex: Double, cIndex: Double, faceNormal: Vector3): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any])).asInstanceOf[Face3]
+    inline def create(
       aIndex: Double,
       bIndex: Double,
       cIndex: Double,

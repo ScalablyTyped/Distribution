@@ -24,27 +24,21 @@ trait LocationUrl extends StObject {
 }
 object LocationUrl {
   
-  @scala.inline
-  def apply(): LocationUrl = {
+  inline def apply(): LocationUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationUrl]
   }
   
-  @scala.inline
-  implicit class LocationUrlMutableBuilder[Self <: LocationUrl] (val x: Self) extends AnyVal {
+  extension [Self <: LocationUrl](x: Self) {
     
-    @scala.inline
-    def setLocation(
+    inline def setLocation(
       value: center | centerBottom | centerTop | full | leftBottom | leftCenter | leftTop | rightBottom | rightCenter | rightTop
     ): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

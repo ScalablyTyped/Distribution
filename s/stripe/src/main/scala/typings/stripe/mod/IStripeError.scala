@@ -70,35 +70,26 @@ trait IStripeError extends StObject {
 }
 object IStripeError {
   
-  @scala.inline
-  def apply(`type`: String): IStripeError = {
+  inline def apply(`type`: String): IStripeError = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeError]
   }
   
-  @scala.inline
-  implicit class IStripeErrorMutableBuilder[Self <: IStripeError] (val x: Self) extends AnyVal {
+  extension [Self <: IStripeError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

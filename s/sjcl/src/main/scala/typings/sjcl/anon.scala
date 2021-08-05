@@ -29,8 +29,7 @@ object anon {
   }
   object C192 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       c192: SjclEllipticalCurve,
       c224: SjclEllipticalCurve,
       c256: SjclEllipticalCurve,
@@ -44,32 +43,23 @@ object anon {
       __obj.asInstanceOf[C192]
     }
     
-    @scala.inline
-    implicit class C192MutableBuilder[Self <: C192] (val x: Self) extends AnyVal {
+    extension [Self <: C192](x: Self) {
       
-      @scala.inline
-      def setC192(value: SjclEllipticalCurve): Self = StObject.set(x, "c192", value.asInstanceOf[js.Any])
+      inline def setC192(value: SjclEllipticalCurve): Self = StObject.set(x, "c192", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC224(value: SjclEllipticalCurve): Self = StObject.set(x, "c224", value.asInstanceOf[js.Any])
+      inline def setC224(value: SjclEllipticalCurve): Self = StObject.set(x, "c224", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC256(value: SjclEllipticalCurve): Self = StObject.set(x, "c256", value.asInstanceOf[js.Any])
+      inline def setC256(value: SjclEllipticalCurve): Self = StObject.set(x, "c256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC384(value: SjclEllipticalCurve): Self = StObject.set(x, "c384", value.asInstanceOf[js.Any])
+      inline def setC384(value: SjclEllipticalCurve): Self = StObject.set(x, "c384", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC521(value: SjclEllipticalCurve): Self = StObject.set(x, "c521", value.asInstanceOf[js.Any])
+      inline def setC521(value: SjclEllipticalCurve): Self = StObject.set(x, "c521", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK192(value: SjclEllipticalCurve): Self = StObject.set(x, "k192", value.asInstanceOf[js.Any])
+      inline def setK192(value: SjclEllipticalCurve): Self = StObject.set(x, "k192", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK224(value: SjclEllipticalCurve): Self = StObject.set(x, "k224", value.asInstanceOf[js.Any])
+      inline def setK224(value: SjclEllipticalCurve): Self = StObject.set(x, "k224", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK256(value: SjclEllipticalCurve): Self = StObject.set(x, "k256", value.asInstanceOf[js.Any])
+      inline def setK256(value: SjclEllipticalCurve): Self = StObject.set(x, "k256", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,26 +71,20 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: BitArray_, salt: BitArray_): Key = {
+    inline def apply(key: BitArray_, salt: BitArray_): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
       
-      @scala.inline
-      def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
     }
   }
   
@@ -131,8 +115,7 @@ object anon {
   }
   object P127 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       p127: PseudoMersennePrimeStatic,
       p192: PseudoMersennePrimeStatic,
       p192k: PseudoMersennePrimeStatic,
@@ -148,38 +131,27 @@ object anon {
       __obj.asInstanceOf[P127]
     }
     
-    @scala.inline
-    implicit class P127MutableBuilder[Self <: P127] (val x: Self) extends AnyVal {
+    extension [Self <: P127](x: Self) {
       
-      @scala.inline
-      def setP127(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p127", value.asInstanceOf[js.Any])
+      inline def setP127(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p127", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP192(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p192", value.asInstanceOf[js.Any])
+      inline def setP192(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p192", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP192k(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p192k", value.asInstanceOf[js.Any])
+      inline def setP192k(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p192k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP224(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p224", value.asInstanceOf[js.Any])
+      inline def setP224(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p224", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP224k(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p224k", value.asInstanceOf[js.Any])
+      inline def setP224k(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p224k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP25519(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p25519", value.asInstanceOf[js.Any])
+      inline def setP25519(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p25519", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p256", value.asInstanceOf[js.Any])
+      inline def setP256(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256k(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p256k", value.asInstanceOf[js.Any])
+      inline def setP256k(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p256k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP384(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p384", value.asInstanceOf[js.Any])
+      inline def setP384(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p384", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP521(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p521", value.asInstanceOf[js.Any])
+      inline def setP521(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p521", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,26 +163,20 @@ object anon {
   }
   object Tag {
     
-    @scala.inline
-    def apply(key: BitArray_, tag: BitArray_): Tag = {
+    inline def apply(key: BitArray_, tag: BitArray_): Tag = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
       
-      @scala.inline
-      def setTag(value: BitArray_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: BitArray_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagVarargs(value: Double*): Self = StObject.set(x, "tag", js.Array(value :_*))
+      inline def setTagVarargs(value: Double*): Self = StObject.set(x, "tag", js.Array(value :_*))
     }
   }
 }

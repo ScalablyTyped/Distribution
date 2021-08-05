@@ -12,11 +12,8 @@ object arrayBase64TranslatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def arrayToBase64(array: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBase64")(array.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def arrayToBase64(array: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBase64")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arrayToBase64(array: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBase64")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arrayToBase64(array: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBase64")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def base64ToArray(base64String: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArray")(base64String.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def base64ToArray(base64String: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArray")(base64String.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

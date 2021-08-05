@@ -12,7 +12,7 @@ trait CommandEffect extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.CommandEffect_typekey")
+  /* private */ @JSName("PowerPoint.CommandEffect_typekey")
   var PowerPointDotCommandEffect_typekey: CommandEffect
   
   var Type: MsoAnimCommandType
@@ -21,8 +21,7 @@ trait CommandEffect extends StObject {
 }
 object CommandEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Command: String,
     Parent: js.Any,
@@ -35,25 +34,18 @@ object CommandEffect {
     __obj.asInstanceOf[CommandEffect]
   }
   
-  @scala.inline
-  implicit class CommandEffectMutableBuilder[Self <: CommandEffect] (val x: Self) extends AnyVal {
+  extension [Self <: CommandEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotCommandEffect_typekey(value: CommandEffect): Self = StObject.set(x, "PowerPoint.CommandEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotCommandEffect_typekey(value: CommandEffect): Self = StObject.set(x, "PowerPoint.CommandEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoAnimCommandType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoAnimCommandType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,16 +18,13 @@ trait ToggleTableCellBottomBorderCommand
 }
 object ToggleTableCellBottomBorderCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellBottomBorderCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellBottomBorderCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleTableCellBottomBorderCommand]
   }
   
-  @scala.inline
-  implicit class ToggleTableCellBottomBorderCommandMutableBuilder[Self <: ToggleTableCellBottomBorderCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleTableCellBottomBorderCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

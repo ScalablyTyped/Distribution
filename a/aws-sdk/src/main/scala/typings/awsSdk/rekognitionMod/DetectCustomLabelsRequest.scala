@@ -25,31 +25,23 @@ trait DetectCustomLabelsRequest extends StObject {
 }
 object DetectCustomLabelsRequest {
   
-  @scala.inline
-  def apply(Image: Image, ProjectVersionArn: ProjectVersionArn): DetectCustomLabelsRequest = {
+  inline def apply(Image: Image, ProjectVersionArn: ProjectVersionArn): DetectCustomLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any], ProjectVersionArn = ProjectVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectCustomLabelsRequest]
   }
   
-  @scala.inline
-  implicit class DetectCustomLabelsRequestMutableBuilder[Self <: DetectCustomLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectCustomLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: UInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: UInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
+    inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
+    inline def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
     
-    @scala.inline
-    def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
+    inline def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
   }
 }

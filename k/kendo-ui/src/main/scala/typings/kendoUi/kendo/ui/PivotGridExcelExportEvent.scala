@@ -14,25 +14,19 @@ trait PivotGridExcelExportEvent
 }
 object PivotGridExcelExportEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PivotGrid): PivotGridExcelExportEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PivotGrid): PivotGridExcelExportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridExcelExportEvent]
   }
   
-  @scala.inline
-  implicit class PivotGridExcelExportEventMutableBuilder[Self <: PivotGridExcelExportEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGridExcelExportEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setWorkbook(value: js.Any): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
+    inline def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
   }
 }

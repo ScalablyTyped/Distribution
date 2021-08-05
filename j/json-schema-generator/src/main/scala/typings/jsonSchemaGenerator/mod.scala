@@ -10,8 +10,7 @@ object mod {
   /**
     * JSON schema generated based on draft-v4 of the specification.
     */
-  @scala.inline
-  def apply(schema: js.Object): JSONSchema4 = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema4]
+  inline def apply(schema: js.Object): JSONSchema4 = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema4]
   
   @JSImport("json-schema-generator", JSImport.Namespace)
   @js.native

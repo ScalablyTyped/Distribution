@@ -17,19 +17,15 @@ trait SessionAffinityConfig extends StObject {
 }
 object SessionAffinityConfig {
   
-  @scala.inline
-  def apply(): SessionAffinityConfig = {
+  inline def apply(): SessionAffinityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionAffinityConfig]
   }
   
-  @scala.inline
-  implicit class SessionAffinityConfigMutableBuilder[Self <: SessionAffinityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SessionAffinityConfig](x: Self) {
     
-    @scala.inline
-    def setClientIP(value: Input[ClientIPConfig]): Self = StObject.set(x, "clientIP", value.asInstanceOf[js.Any])
+    inline def setClientIP(value: Input[ClientIPConfig]): Self = StObject.set(x, "clientIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIPUndefined: Self = StObject.set(x, "clientIP", js.undefined)
+    inline def setClientIPUndefined: Self = StObject.set(x, "clientIP", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait JobEvent extends StObject {
 }
 object JobEvent {
   
-  @scala.inline
-  def apply(jobId: String, name: String): JobEvent = {
+  inline def apply(jobId: String, name: String): JobEvent = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobEvent]
   }
   
-  @scala.inline
-  implicit class JobEventMutableBuilder[Self <: JobEvent] (val x: Self) extends AnyVal {
+  extension [Self <: JobEvent](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

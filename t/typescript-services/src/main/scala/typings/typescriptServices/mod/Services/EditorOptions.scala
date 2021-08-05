@@ -29,6 +29,5 @@ object EditorOptions {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(objectToClone: typings.typescriptServices.TypeScript.Services.EditorOptions): typings.typescriptServices.TypeScript.Services.EditorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(objectToClone.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.EditorOptions]
+  inline def clone_(objectToClone: typings.typescriptServices.TypeScript.Services.EditorOptions): typings.typescriptServices.TypeScript.Services.EditorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(objectToClone.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.EditorOptions]
 }

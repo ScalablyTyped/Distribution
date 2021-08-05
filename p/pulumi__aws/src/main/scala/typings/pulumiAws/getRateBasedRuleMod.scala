@@ -11,10 +11,8 @@ object getRateBasedRuleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRateBasedRule(args: GetRateBasedRuleArgs): js.Promise[GetRateBasedRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRateBasedRuleResult]]
-  @scala.inline
-  def getRateBasedRule(args: GetRateBasedRuleArgs, opts: InvokeOptions): js.Promise[GetRateBasedRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRateBasedRuleResult]]
+  inline def getRateBasedRule(args: GetRateBasedRuleArgs): js.Promise[GetRateBasedRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRateBasedRuleResult]]
+  inline def getRateBasedRule(args: GetRateBasedRuleArgs, opts: InvokeOptions): js.Promise[GetRateBasedRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRateBasedRuleResult]]
   
   trait GetRateBasedRuleArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getRateBasedRuleMod {
   }
   object GetRateBasedRuleArgs {
     
-    @scala.inline
-    def apply(name: String): GetRateBasedRuleArgs = {
+    inline def apply(name: String): GetRateBasedRuleArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRateBasedRuleArgs]
     }
     
-    @scala.inline
-    implicit class GetRateBasedRuleArgsMutableBuilder[Self <: GetRateBasedRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRateBasedRuleArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +45,16 @@ object getRateBasedRuleMod {
   }
   object GetRateBasedRuleResult {
     
-    @scala.inline
-    def apply(id: String, name: String): GetRateBasedRuleResult = {
+    inline def apply(id: String, name: String): GetRateBasedRuleResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRateBasedRuleResult]
     }
     
-    @scala.inline
-    implicit class GetRateBasedRuleResultMutableBuilder[Self <: GetRateBasedRuleResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRateBasedRuleResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

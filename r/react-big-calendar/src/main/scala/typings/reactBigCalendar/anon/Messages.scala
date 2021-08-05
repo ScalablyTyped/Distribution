@@ -10,16 +10,13 @@ trait Messages extends StObject {
 }
 object Messages {
   
-  @scala.inline
-  def apply(messages: typings.reactBigCalendar.mod.Messages): Messages = {
+  inline def apply(messages: typings.reactBigCalendar.mod.Messages): Messages = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Messages]
   }
   
-  @scala.inline
-  implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+  extension [Self <: Messages](x: Self) {
     
-    @scala.inline
-    def setMessages(value: typings.reactBigCalendar.mod.Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: typings.reactBigCalendar.mod.Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }
 }

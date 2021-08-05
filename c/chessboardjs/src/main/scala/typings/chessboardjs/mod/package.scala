@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def ChessBoard: typings.chessboardjs.mod.ChessBoardFactory = typings.chessboardjs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ChessBoard").asInstanceOf[typings.chessboardjs.mod.ChessBoardFactory]
+inline def ChessBoard: typings.chessboardjs.mod.ChessBoardFactory = typings.chessboardjs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ChessBoard").asInstanceOf[typings.chessboardjs.mod.ChessBoardFactory]
 
 type BoardPositionType = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in chessboardjs.chessboardjs.Square ]:? chessboardjs.chessboardjs.Piece}

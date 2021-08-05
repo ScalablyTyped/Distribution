@@ -10,19 +10,15 @@ trait ScrollToFirstRowOnChange extends StObject {
 }
 object ScrollToFirstRowOnChange {
   
-  @scala.inline
-  def apply(): ScrollToFirstRowOnChange = {
+  inline def apply(): ScrollToFirstRowOnChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollToFirstRowOnChange]
   }
   
-  @scala.inline
-  implicit class ScrollToFirstRowOnChangeMutableBuilder[Self <: ScrollToFirstRowOnChange] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollToFirstRowOnChange](x: Self) {
     
-    @scala.inline
-    def setScrollToFirstRowOnChange(value: Boolean): Self = StObject.set(x, "scrollToFirstRowOnChange", value.asInstanceOf[js.Any])
+    inline def setScrollToFirstRowOnChange(value: Boolean): Self = StObject.set(x, "scrollToFirstRowOnChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToFirstRowOnChangeUndefined: Self = StObject.set(x, "scrollToFirstRowOnChange", js.undefined)
+    inline def setScrollToFirstRowOnChangeUndefined: Self = StObject.set(x, "scrollToFirstRowOnChange", js.undefined)
   }
 }

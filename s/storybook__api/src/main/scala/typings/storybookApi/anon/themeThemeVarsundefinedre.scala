@@ -36,73 +36,51 @@ trait themeThemeVarsundefinedre
 }
 object themeThemeVarsundefinedre {
   
-  @scala.inline
-  def apply(): themeThemeVarsundefinedre = {
+  inline def apply(): themeThemeVarsundefinedre = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[themeThemeVarsundefinedre]
   }
   
-  @scala.inline
-  implicit class themeThemeVarsundefinedreMutableBuilder[Self <: themeThemeVarsundefinedre] (val x: Self) extends AnyVal {
+  extension [Self <: themeThemeVarsundefinedre](x: Self) {
     
-    @scala.inline
-    def setAddonPanelInRight(value: Boolean): Self = StObject.set(x, "addonPanelInRight", value.asInstanceOf[js.Any])
+    inline def setAddonPanelInRight(value: Boolean): Self = StObject.set(x, "addonPanelInRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddonPanelInRightUndefined: Self = StObject.set(x, "addonPanelInRight", js.undefined)
+    inline def setAddonPanelInRightUndefined: Self = StObject.set(x, "addonPanelInRight", js.undefined)
     
-    @scala.inline
-    def setGoFullScreen(value: Boolean): Self = StObject.set(x, "goFullScreen", value.asInstanceOf[js.Any])
+    inline def setGoFullScreen(value: Boolean): Self = StObject.set(x, "goFullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoFullScreenUndefined: Self = StObject.set(x, "goFullScreen", js.undefined)
+    inline def setGoFullScreenUndefined: Self = StObject.set(x, "goFullScreen", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
+    inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
     
-    @scala.inline
-    def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
+    inline def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
+    inline def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
     
-    @scala.inline
-    def setShowAddonPanel(value: Boolean): Self = StObject.set(x, "showAddonPanel", value.asInstanceOf[js.Any])
+    inline def setShowAddonPanel(value: Boolean): Self = StObject.set(x, "showAddonPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAddonPanelUndefined: Self = StObject.set(x, "showAddonPanel", js.undefined)
+    inline def setShowAddonPanelUndefined: Self = StObject.set(x, "showAddonPanel", js.undefined)
     
-    @scala.inline
-    def setShowStoriesPanel(value: Boolean): Self = StObject.set(x, "showStoriesPanel", value.asInstanceOf[js.Any])
+    inline def setShowStoriesPanel(value: Boolean): Self = StObject.set(x, "showStoriesPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowStoriesPanelUndefined: Self = StObject.set(x, "showStoriesPanel", js.undefined)
+    inline def setShowStoriesPanelUndefined: Self = StObject.set(x, "showStoriesPanel", js.undefined)
     
-    @scala.inline
-    def setStoryMapper(value: (/* ref */ ComposedRef, /* story */ StoryInput) => StoryInput): Self = StObject.set(x, "StoryMapper", js.Any.fromFunction2(value))
+    inline def setStoryMapper(value: (/* ref */ ComposedRef, /* story */ StoryInput) => StoryInput): Self = StObject.set(x, "StoryMapper", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStoryMapperUndefined: Self = StObject.set(x, "StoryMapper", js.undefined)
+    inline def setStoryMapperUndefined: Self = StObject.set(x, "StoryMapper", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

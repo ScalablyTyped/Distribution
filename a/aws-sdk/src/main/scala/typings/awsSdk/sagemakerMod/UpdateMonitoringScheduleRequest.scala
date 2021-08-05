@@ -18,19 +18,15 @@ trait UpdateMonitoringScheduleRequest extends StObject {
 }
 object UpdateMonitoringScheduleRequest {
   
-  @scala.inline
-  def apply(MonitoringScheduleConfig: MonitoringScheduleConfig, MonitoringScheduleName: MonitoringScheduleName): UpdateMonitoringScheduleRequest = {
+  inline def apply(MonitoringScheduleConfig: MonitoringScheduleConfig, MonitoringScheduleName: MonitoringScheduleName): UpdateMonitoringScheduleRequest = {
     val __obj = js.Dynamic.literal(MonitoringScheduleConfig = MonitoringScheduleConfig.asInstanceOf[js.Any], MonitoringScheduleName = MonitoringScheduleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMonitoringScheduleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMonitoringScheduleRequestMutableBuilder[Self <: UpdateMonitoringScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMonitoringScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setMonitoringScheduleConfig(value: MonitoringScheduleConfig): Self = StObject.set(x, "MonitoringScheduleConfig", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleConfig(value: MonitoringScheduleConfig): Self = StObject.set(x, "MonitoringScheduleConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
   }
 }

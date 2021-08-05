@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PayloadOutput extends StObject
 object PayloadOutput {
   
-  @scala.inline
-  def data: typings.hapiHapi.hapiHapiStrings.data = "data".asInstanceOf[typings.hapiHapi.hapiHapiStrings.data]
+  inline def data: typings.hapiHapi.hapiHapiStrings.data = "data".asInstanceOf[typings.hapiHapi.hapiHapiStrings.data]
   
-  @scala.inline
-  def file: typings.hapiHapi.hapiHapiStrings.file = "file".asInstanceOf[typings.hapiHapi.hapiHapiStrings.file]
+  inline def file: typings.hapiHapi.hapiHapiStrings.file = "file".asInstanceOf[typings.hapiHapi.hapiHapiStrings.file]
   
-  @scala.inline
-  def stream: typings.hapiHapi.hapiHapiStrings.stream = "stream".asInstanceOf[typings.hapiHapi.hapiHapiStrings.stream]
+  inline def stream: typings.hapiHapi.hapiHapiStrings.stream = "stream".asInstanceOf[typings.hapiHapi.hapiHapiStrings.stream]
 }

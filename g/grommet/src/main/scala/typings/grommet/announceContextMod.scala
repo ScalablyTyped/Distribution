@@ -21,14 +21,11 @@ object announceContextMod {
   trait AnnounceMode extends StObject
   object AnnounceMode {
     
-    @scala.inline
-    def assertive: typings.grommet.grommetStrings.assertive = "assertive".asInstanceOf[typings.grommet.grommetStrings.assertive]
+    inline def assertive: typings.grommet.grommetStrings.assertive = "assertive".asInstanceOf[typings.grommet.grommetStrings.assertive]
     
-    @scala.inline
-    def off: typings.grommet.grommetStrings.off = "off".asInstanceOf[typings.grommet.grommetStrings.off]
+    inline def off: typings.grommet.grommetStrings.off = "off".asInstanceOf[typings.grommet.grommetStrings.off]
     
-    @scala.inline
-    def polite: typings.grommet.grommetStrings.polite = "polite".asInstanceOf[typings.grommet.grommetStrings.polite]
+    inline def polite: typings.grommet.grommetStrings.polite = "polite".asInstanceOf[typings.grommet.grommetStrings.polite]
   }
   
   type AnnounceValue = js.Function3[/* message */ AnnounceMessage, /* mode */ AnnounceMode, /* timeout */ Timeout, Unit]

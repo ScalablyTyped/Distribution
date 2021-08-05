@@ -12,20 +12,16 @@ trait IMediaProtectionServiceRequest extends StObject {
 }
 object IMediaProtectionServiceRequest {
   
-  @scala.inline
-  def apply(protectionSystem: String, `type`: String): IMediaProtectionServiceRequest = {
+  inline def apply(protectionSystem: String, `type`: String): IMediaProtectionServiceRequest = {
     val __obj = js.Dynamic.literal(protectionSystem = protectionSystem.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaProtectionServiceRequest]
   }
   
-  @scala.inline
-  implicit class IMediaProtectionServiceRequestMutableBuilder[Self <: IMediaProtectionServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaProtectionServiceRequest](x: Self) {
     
-    @scala.inline
-    def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
+    inline def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

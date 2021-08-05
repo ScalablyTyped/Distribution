@@ -20,17 +20,14 @@ object typesStartStreamEncryptionOutputMod {
   }
   object StartStreamEncryptionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): StartStreamEncryptionOutput = {
+    inline def apply($metadata: ResponseMetadata): StartStreamEncryptionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartStreamEncryptionOutput]
     }
     
-    @scala.inline
-    implicit class StartStreamEncryptionOutputMutableBuilder[Self <: StartStreamEncryptionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: StartStreamEncryptionOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

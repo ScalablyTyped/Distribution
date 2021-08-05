@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sign(value: String, secret: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(value.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(value: String, secret: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(value.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def unsign(value: String, secret: String): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("unsign")(value.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def unsign(value: String, secret: String): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("unsign")(value.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
 }

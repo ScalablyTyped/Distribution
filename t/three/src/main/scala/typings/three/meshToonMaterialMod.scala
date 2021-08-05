@@ -216,197 +216,134 @@ object meshToonMaterialMod {
   }
   object MeshToonMaterialParameters {
     
-    @scala.inline
-    def apply(): MeshToonMaterialParameters = {
+    inline def apply(): MeshToonMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MeshToonMaterialParameters]
     }
     
-    @scala.inline
-    implicit class MeshToonMaterialParametersMutableBuilder[Self <: MeshToonMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MeshToonMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
+      inline def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
+      inline def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
       
-      @scala.inline
-      def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
+      inline def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
       
-      @scala.inline
-      def setAoMap(value: Texture): Self = StObject.set(x, "aoMap", value.asInstanceOf[js.Any])
+      inline def setAoMap(value: Texture): Self = StObject.set(x, "aoMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAoMapIntensity(value: Double): Self = StObject.set(x, "aoMapIntensity", value.asInstanceOf[js.Any])
+      inline def setAoMapIntensity(value: Double): Self = StObject.set(x, "aoMapIntensity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAoMapIntensityUndefined: Self = StObject.set(x, "aoMapIntensity", js.undefined)
+      inline def setAoMapIntensityUndefined: Self = StObject.set(x, "aoMapIntensity", js.undefined)
       
-      @scala.inline
-      def setAoMapNull: Self = StObject.set(x, "aoMap", null)
+      inline def setAoMapNull: Self = StObject.set(x, "aoMap", null)
       
-      @scala.inline
-      def setAoMapUndefined: Self = StObject.set(x, "aoMap", js.undefined)
+      inline def setAoMapUndefined: Self = StObject.set(x, "aoMap", js.undefined)
       
-      @scala.inline
-      def setBumpMap(value: Texture): Self = StObject.set(x, "bumpMap", value.asInstanceOf[js.Any])
+      inline def setBumpMap(value: Texture): Self = StObject.set(x, "bumpMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBumpMapNull: Self = StObject.set(x, "bumpMap", null)
+      inline def setBumpMapNull: Self = StObject.set(x, "bumpMap", null)
       
-      @scala.inline
-      def setBumpMapUndefined: Self = StObject.set(x, "bumpMap", js.undefined)
+      inline def setBumpMapUndefined: Self = StObject.set(x, "bumpMap", js.undefined)
       
-      @scala.inline
-      def setBumpScale(value: Double): Self = StObject.set(x, "bumpScale", value.asInstanceOf[js.Any])
+      inline def setBumpScale(value: Double): Self = StObject.set(x, "bumpScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBumpScaleUndefined: Self = StObject.set(x, "bumpScale", js.undefined)
+      inline def setBumpScaleUndefined: Self = StObject.set(x, "bumpScale", js.undefined)
       
-      @scala.inline
-      def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDisplacementBias(value: Double): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
+      inline def setDisplacementBias(value: Double): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementBiasUndefined: Self = StObject.set(x, "displacementBias", js.undefined)
+      inline def setDisplacementBiasUndefined: Self = StObject.set(x, "displacementBias", js.undefined)
       
-      @scala.inline
-      def setDisplacementMap(value: Texture): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
+      inline def setDisplacementMap(value: Texture): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementMapNull: Self = StObject.set(x, "displacementMap", null)
+      inline def setDisplacementMapNull: Self = StObject.set(x, "displacementMap", null)
       
-      @scala.inline
-      def setDisplacementMapUndefined: Self = StObject.set(x, "displacementMap", js.undefined)
+      inline def setDisplacementMapUndefined: Self = StObject.set(x, "displacementMap", js.undefined)
       
-      @scala.inline
-      def setDisplacementScale(value: Double): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
+      inline def setDisplacementScale(value: Double): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
+      inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
-      @scala.inline
-      def setEmissive(value: Color | String | Double): Self = StObject.set(x, "emissive", value.asInstanceOf[js.Any])
+      inline def setEmissive(value: Color | String | Double): Self = StObject.set(x, "emissive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmissiveIntensity(value: Double): Self = StObject.set(x, "emissiveIntensity", value.asInstanceOf[js.Any])
+      inline def setEmissiveIntensity(value: Double): Self = StObject.set(x, "emissiveIntensity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmissiveIntensityUndefined: Self = StObject.set(x, "emissiveIntensity", js.undefined)
+      inline def setEmissiveIntensityUndefined: Self = StObject.set(x, "emissiveIntensity", js.undefined)
       
-      @scala.inline
-      def setEmissiveMap(value: Texture): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
+      inline def setEmissiveMap(value: Texture): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmissiveMapNull: Self = StObject.set(x, "emissiveMap", null)
+      inline def setEmissiveMapNull: Self = StObject.set(x, "emissiveMap", null)
       
-      @scala.inline
-      def setEmissiveMapUndefined: Self = StObject.set(x, "emissiveMap", js.undefined)
+      inline def setEmissiveMapUndefined: Self = StObject.set(x, "emissiveMap", js.undefined)
       
-      @scala.inline
-      def setEmissiveUndefined: Self = StObject.set(x, "emissive", js.undefined)
+      inline def setEmissiveUndefined: Self = StObject.set(x, "emissive", js.undefined)
       
-      @scala.inline
-      def setGradientMap(value: Texture): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
+      inline def setGradientMap(value: Texture): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientMapNull: Self = StObject.set(x, "gradientMap", null)
+      inline def setGradientMapNull: Self = StObject.set(x, "gradientMap", null)
       
-      @scala.inline
-      def setGradientMapUndefined: Self = StObject.set(x, "gradientMap", js.undefined)
+      inline def setGradientMapUndefined: Self = StObject.set(x, "gradientMap", js.undefined)
       
-      @scala.inline
-      def setLightMap(value: Texture): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
+      inline def setLightMap(value: Texture): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightMapIntensity(value: Double): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
+      inline def setLightMapIntensity(value: Double): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightMapIntensityUndefined: Self = StObject.set(x, "lightMapIntensity", js.undefined)
+      inline def setLightMapIntensityUndefined: Self = StObject.set(x, "lightMapIntensity", js.undefined)
       
-      @scala.inline
-      def setLightMapNull: Self = StObject.set(x, "lightMap", null)
+      inline def setLightMapNull: Self = StObject.set(x, "lightMap", null)
       
-      @scala.inline
-      def setLightMapUndefined: Self = StObject.set(x, "lightMap", js.undefined)
+      inline def setLightMapUndefined: Self = StObject.set(x, "lightMap", js.undefined)
       
-      @scala.inline
-      def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
+      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
+      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
       
-      @scala.inline
-      def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
+      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
+      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
       
-      @scala.inline
-      def setNormalMap(value: Texture): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
+      inline def setNormalMap(value: Texture): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalMapNull: Self = StObject.set(x, "normalMap", null)
+      inline def setNormalMapNull: Self = StObject.set(x, "normalMap", null)
       
-      @scala.inline
-      def setNormalMapType(value: NormalMapTypes): Self = StObject.set(x, "normalMapType", value.asInstanceOf[js.Any])
+      inline def setNormalMapType(value: NormalMapTypes): Self = StObject.set(x, "normalMapType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalMapTypeUndefined: Self = StObject.set(x, "normalMapType", js.undefined)
+      inline def setNormalMapTypeUndefined: Self = StObject.set(x, "normalMapType", js.undefined)
       
-      @scala.inline
-      def setNormalMapUndefined: Self = StObject.set(x, "normalMap", js.undefined)
+      inline def setNormalMapUndefined: Self = StObject.set(x, "normalMap", js.undefined)
       
-      @scala.inline
-      def setNormalScale(value: Vector2): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
+      inline def setNormalScale(value: Vector2): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalScaleUndefined: Self = StObject.set(x, "normalScale", js.undefined)
+      inline def setNormalScaleUndefined: Self = StObject.set(x, "normalScale", js.undefined)
       
-      @scala.inline
-      def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
+      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
+      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
       
-      @scala.inline
-      def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
+      inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinecap(value: String): Self = StObject.set(x, "wireframeLinecap", value.asInstanceOf[js.Any])
+      inline def setWireframeLinecap(value: String): Self = StObject.set(x, "wireframeLinecap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinecapUndefined: Self = StObject.set(x, "wireframeLinecap", js.undefined)
+      inline def setWireframeLinecapUndefined: Self = StObject.set(x, "wireframeLinecap", js.undefined)
       
-      @scala.inline
-      def setWireframeLinejoin(value: String): Self = StObject.set(x, "wireframeLinejoin", value.asInstanceOf[js.Any])
+      inline def setWireframeLinejoin(value: String): Self = StObject.set(x, "wireframeLinejoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinejoinUndefined: Self = StObject.set(x, "wireframeLinejoin", js.undefined)
+      inline def setWireframeLinejoinUndefined: Self = StObject.set(x, "wireframeLinejoin", js.undefined)
       
-      @scala.inline
-      def setWireframeLinewidth(value: Double): Self = StObject.set(x, "wireframeLinewidth", value.asInstanceOf[js.Any])
+      inline def setWireframeLinewidth(value: Double): Self = StObject.set(x, "wireframeLinewidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinewidthUndefined: Self = StObject.set(x, "wireframeLinewidth", js.undefined)
+      inline def setWireframeLinewidthUndefined: Self = StObject.set(x, "wireframeLinewidth", js.undefined)
       
-      @scala.inline
-      def setWireframeUndefined: Self = StObject.set(x, "wireframe", js.undefined)
+      inline def setWireframeUndefined: Self = StObject.set(x, "wireframe", js.undefined)
     }
   }
 }

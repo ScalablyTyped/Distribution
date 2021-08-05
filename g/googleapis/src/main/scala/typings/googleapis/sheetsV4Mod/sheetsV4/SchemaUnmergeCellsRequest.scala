@@ -18,19 +18,15 @@ trait SchemaUnmergeCellsRequest extends StObject {
 }
 object SchemaUnmergeCellsRequest {
   
-  @scala.inline
-  def apply(): SchemaUnmergeCellsRequest = {
+  inline def apply(): SchemaUnmergeCellsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUnmergeCellsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUnmergeCellsRequestMutableBuilder[Self <: SchemaUnmergeCellsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUnmergeCellsRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

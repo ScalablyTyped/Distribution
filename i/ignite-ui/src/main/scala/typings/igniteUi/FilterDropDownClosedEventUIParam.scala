@@ -13,19 +13,15 @@ trait FilterDropDownClosedEventUIParam extends StObject {
 }
 object FilterDropDownClosedEventUIParam {
   
-  @scala.inline
-  def apply(): FilterDropDownClosedEventUIParam = {
+  inline def apply(): FilterDropDownClosedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterDropDownClosedEventUIParam]
   }
   
-  @scala.inline
-  implicit class FilterDropDownClosedEventUIParamMutableBuilder[Self <: FilterDropDownClosedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FilterDropDownClosedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+    inline def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
+    inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
   }
 }

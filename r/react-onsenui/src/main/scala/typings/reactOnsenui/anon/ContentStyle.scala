@@ -28,73 +28,51 @@ trait ContentStyle extends StObject {
 }
 object ContentStyle {
   
-  @scala.inline
-  def apply(): ContentStyle = {
+  inline def apply(): ContentStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentStyle]
   }
   
-  @scala.inline
-  implicit class ContentStyleMutableBuilder[Self <: ContentStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ContentStyle](x: Self) {
     
-    @scala.inline
-    def setContentStyle(value: js.Any): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setContentStyle(value: js.Any): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnInfiniteScroll(value: /* doneCallback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onInfiniteScroll", js.Any.fromFunction1(value))
+    inline def setOnInfiniteScroll(value: /* doneCallback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onInfiniteScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnInfiniteScrollUndefined: Self = StObject.set(x, "onInfiniteScroll", js.undefined)
+    inline def setOnInfiniteScrollUndefined: Self = StObject.set(x, "onInfiniteScroll", js.undefined)
     
-    @scala.inline
-    def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+    inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+    inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setRenderBottomToolbar(value: () => Unit): Self = StObject.set(x, "renderBottomToolbar", js.Any.fromFunction0(value))
+    inline def setRenderBottomToolbar(value: () => Unit): Self = StObject.set(x, "renderBottomToolbar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderBottomToolbarUndefined: Self = StObject.set(x, "renderBottomToolbar", js.undefined)
+    inline def setRenderBottomToolbarUndefined: Self = StObject.set(x, "renderBottomToolbar", js.undefined)
     
-    @scala.inline
-    def setRenderFixed(value: () => Unit): Self = StObject.set(x, "renderFixed", js.Any.fromFunction0(value))
+    inline def setRenderFixed(value: () => Unit): Self = StObject.set(x, "renderFixed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderFixedUndefined: Self = StObject.set(x, "renderFixed", js.undefined)
+    inline def setRenderFixedUndefined: Self = StObject.set(x, "renderFixed", js.undefined)
     
-    @scala.inline
-    def setRenderModal(value: () => Unit): Self = StObject.set(x, "renderModal", js.Any.fromFunction0(value))
+    inline def setRenderModal(value: () => Unit): Self = StObject.set(x, "renderModal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderModalUndefined: Self = StObject.set(x, "renderModal", js.undefined)
+    inline def setRenderModalUndefined: Self = StObject.set(x, "renderModal", js.undefined)
     
-    @scala.inline
-    def setRenderToolbar(value: () => Unit): Self = StObject.set(x, "renderToolbar", js.Any.fromFunction0(value))
+    inline def setRenderToolbar(value: () => Unit): Self = StObject.set(x, "renderToolbar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderToolbarUndefined: Self = StObject.set(x, "renderToolbar", js.undefined)
+    inline def setRenderToolbarUndefined: Self = StObject.set(x, "renderToolbar", js.undefined)
   }
 }

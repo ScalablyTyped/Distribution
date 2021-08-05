@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFViewFlag extends StObject
 object MFViewFlag {
   
-  @scala.inline
-  def Materialized: `1` = 1.asInstanceOf[`1`]
+  inline def Materialized: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def sNone: `0` = 0.asInstanceOf[`0`]
+  inline def sNone: `0` = 0.asInstanceOf[`0`]
 }

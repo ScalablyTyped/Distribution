@@ -20,19 +20,15 @@ trait GetMetadataResponse extends StObject {
 }
 object GetMetadataResponse {
   
-  @scala.inline
-  def apply(entriesCount: Double, keyGeneratorValue: Double): GetMetadataResponse = {
+  inline def apply(entriesCount: Double, keyGeneratorValue: Double): GetMetadataResponse = {
     val __obj = js.Dynamic.literal(entriesCount = entriesCount.asInstanceOf[js.Any], keyGeneratorValue = keyGeneratorValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetadataResponse]
   }
   
-  @scala.inline
-  implicit class GetMetadataResponseMutableBuilder[Self <: GetMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setEntriesCount(value: Double): Self = StObject.set(x, "entriesCount", value.asInstanceOf[js.Any])
+    inline def setEntriesCount(value: Double): Self = StObject.set(x, "entriesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyGeneratorValue(value: Double): Self = StObject.set(x, "keyGeneratorValue", value.asInstanceOf[js.Any])
+    inline def setKeyGeneratorValue(value: Double): Self = StObject.set(x, "keyGeneratorValue", value.asInstanceOf[js.Any])
   }
 }

@@ -11,18 +11,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def matchArray(ary: js.Array[js.Any], search: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchArray")(ary.asInstanceOf[js.Any], search.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def matchArray(ary: js.Array[js.Any], search: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchArray")(ary.asInstanceOf[js.Any], search.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def matchObject(obj: js.Any, search: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchObject")(obj.asInstanceOf[js.Any], search.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def matchObject(obj: js.Any, search: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchObject")(obj.asInstanceOf[js.Any], search.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def resetDefaults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDefaults")().asInstanceOf[Unit]
+  inline def resetDefaults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDefaults")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setDefaults(options: End): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaults(options: End): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def singleMatch(field: js.Any, s: js.Any, text: Boolean, word: Boolean, start: Boolean, end: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("singleMatch")(field.asInstanceOf[js.Any], s.asInstanceOf[js.Any], text.asInstanceOf[js.Any], word.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def singleMatch(field: js.Any, s: js.Any, text: Boolean, word: Boolean, start: Boolean, end: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("singleMatch")(field.asInstanceOf[js.Any], s.asInstanceOf[js.Any], text.asInstanceOf[js.Any], word.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

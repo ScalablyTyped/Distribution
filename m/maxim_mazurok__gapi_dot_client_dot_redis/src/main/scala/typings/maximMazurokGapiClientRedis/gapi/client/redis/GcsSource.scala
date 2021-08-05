@@ -11,19 +11,15 @@ trait GcsSource extends StObject {
 }
 object GcsSource {
   
-  @scala.inline
-  def apply(): GcsSource = {
+  inline def apply(): GcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcsSource]
   }
   
-  @scala.inline
-  implicit class GcsSourceMutableBuilder[Self <: GcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: GcsSource](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListRepositoryAssociationsResponse extends StObject {
 }
 object ListRepositoryAssociationsResponse {
   
-  @scala.inline
-  def apply(): ListRepositoryAssociationsResponse = {
+  inline def apply(): ListRepositoryAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRepositoryAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class ListRepositoryAssociationsResponseMutableBuilder[Self <: ListRepositoryAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRepositoryAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRepositoryAssociationSummaries(value: RepositoryAssociationSummaries): Self = StObject.set(x, "RepositoryAssociationSummaries", value.asInstanceOf[js.Any])
+    inline def setRepositoryAssociationSummaries(value: RepositoryAssociationSummaries): Self = StObject.set(x, "RepositoryAssociationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryAssociationSummariesUndefined: Self = StObject.set(x, "RepositoryAssociationSummaries", js.undefined)
+    inline def setRepositoryAssociationSummariesUndefined: Self = StObject.set(x, "RepositoryAssociationSummaries", js.undefined)
     
-    @scala.inline
-    def setRepositoryAssociationSummariesVarargs(value: RepositoryAssociationSummary*): Self = StObject.set(x, "RepositoryAssociationSummaries", js.Array(value :_*))
+    inline def setRepositoryAssociationSummariesVarargs(value: RepositoryAssociationSummary*): Self = StObject.set(x, "RepositoryAssociationSummaries", js.Array(value :_*))
   }
 }

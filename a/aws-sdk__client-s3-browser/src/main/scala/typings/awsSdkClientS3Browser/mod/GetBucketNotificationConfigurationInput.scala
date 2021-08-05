@@ -9,8 +9,7 @@ trait GetBucketNotificationConfigurationInput
      with typings.awsSdkClientS3Browser.typesGetBucketNotificationConfigurationInputMod.GetBucketNotificationConfigurationInput
 object GetBucketNotificationConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketNotificationConfigurationInput = {
+  inline def apply(Bucket: String): GetBucketNotificationConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketNotificationConfigurationInput]
   }

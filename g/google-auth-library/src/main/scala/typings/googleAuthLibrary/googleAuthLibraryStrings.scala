@@ -8,6 +8,5 @@ object googleAuthLibraryStrings {
   
   @js.native
   sealed trait tokens extends StObject
-  @scala.inline
-  def tokens: tokens = "tokens".asInstanceOf[tokens]
+  inline def tokens: tokens = "tokens".asInstanceOf[tokens]
 }

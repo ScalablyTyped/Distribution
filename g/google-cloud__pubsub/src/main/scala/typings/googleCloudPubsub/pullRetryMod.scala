@@ -22,7 +22,7 @@ object pullRetryMod {
       */
     def createTimeout(): Double = js.native
     
-    var failures: js.Any = js.native
+    /* private */ var failures: js.Any = js.native
     
     /**
       * Determines if a request grpc.status should be retried.

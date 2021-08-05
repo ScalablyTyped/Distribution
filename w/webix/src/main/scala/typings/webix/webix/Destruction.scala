@@ -10,16 +10,13 @@ trait Destruction extends StObject {
 }
 object Destruction {
   
-  @scala.inline
-  def apply(destructor: () => Unit): Destruction = {
+  inline def apply(destructor: () => Unit): Destruction = {
     val __obj = js.Dynamic.literal(destructor = js.Any.fromFunction0(destructor))
     __obj.asInstanceOf[Destruction]
   }
   
-  @scala.inline
-  implicit class DestructionMutableBuilder[Self <: Destruction] (val x: Self) extends AnyVal {
+  extension [Self <: Destruction](x: Self) {
     
-    @scala.inline
-    def setDestructor(value: () => Unit): Self = StObject.set(x, "destructor", js.Any.fromFunction0(value))
+    inline def setDestructor(value: () => Unit): Self = StObject.set(x, "destructor", js.Any.fromFunction0(value))
   }
 }

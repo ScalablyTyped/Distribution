@@ -18,22 +18,17 @@ trait PredefinedLoadMetricSpecification extends StObject {
 }
 object PredefinedLoadMetricSpecification {
   
-  @scala.inline
-  def apply(PredefinedLoadMetricType: LoadMetricType): PredefinedLoadMetricSpecification = {
+  inline def apply(PredefinedLoadMetricType: LoadMetricType): PredefinedLoadMetricSpecification = {
     val __obj = js.Dynamic.literal(PredefinedLoadMetricType = PredefinedLoadMetricType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredefinedLoadMetricSpecification]
   }
   
-  @scala.inline
-  implicit class PredefinedLoadMetricSpecificationMutableBuilder[Self <: PredefinedLoadMetricSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: PredefinedLoadMetricSpecification](x: Self) {
     
-    @scala.inline
-    def setPredefinedLoadMetricType(value: LoadMetricType): Self = StObject.set(x, "PredefinedLoadMetricType", value.asInstanceOf[js.Any])
+    inline def setPredefinedLoadMetricType(value: LoadMetricType): Self = StObject.set(x, "PredefinedLoadMetricType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLabel(value: ResourceLabel): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
+    inline def setResourceLabel(value: ResourceLabel): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
+    inline def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
   }
 }

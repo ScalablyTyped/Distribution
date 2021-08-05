@@ -13,19 +13,15 @@ trait DescribeChannelMembershipForAppInstanceUserResponse extends StObject {
 }
 object DescribeChannelMembershipForAppInstanceUserResponse {
   
-  @scala.inline
-  def apply(): DescribeChannelMembershipForAppInstanceUserResponse = {
+  inline def apply(): DescribeChannelMembershipForAppInstanceUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeChannelMembershipForAppInstanceUserResponse]
   }
   
-  @scala.inline
-  implicit class DescribeChannelMembershipForAppInstanceUserResponseMutableBuilder[Self <: DescribeChannelMembershipForAppInstanceUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelMembershipForAppInstanceUserResponse](x: Self) {
     
-    @scala.inline
-    def setChannelMembership(value: ChannelMembershipForAppInstanceUserSummary): Self = StObject.set(x, "ChannelMembership", value.asInstanceOf[js.Any])
+    inline def setChannelMembership(value: ChannelMembershipForAppInstanceUserSummary): Self = StObject.set(x, "ChannelMembership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelMembershipUndefined: Self = StObject.set(x, "ChannelMembership", js.undefined)
+    inline def setChannelMembershipUndefined: Self = StObject.set(x, "ChannelMembership", js.undefined)
   }
 }

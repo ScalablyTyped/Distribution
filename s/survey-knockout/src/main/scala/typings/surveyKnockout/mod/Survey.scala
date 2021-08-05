@@ -68,6 +68,5 @@ object Survey {
   @JSImport("survey-knockout", "Survey.cssType")
   @js.native
   def cssType: String = js.native
-  @scala.inline
-  def cssType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cssType")(x.asInstanceOf[js.Any])
+  inline def cssType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cssType")(x.asInstanceOf[js.Any])
 }

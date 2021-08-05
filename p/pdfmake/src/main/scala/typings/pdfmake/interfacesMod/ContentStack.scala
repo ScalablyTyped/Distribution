@@ -16,25 +16,19 @@ trait ContentStack
 }
 object ContentStack {
   
-  @scala.inline
-  def apply(stack: js.Array[Content]): ContentStack = {
+  inline def apply(stack: js.Array[Content]): ContentStack = {
     val __obj = js.Dynamic.literal(stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentStack]
   }
   
-  @scala.inline
-  implicit class ContentStackMutableBuilder[Self <: ContentStack] (val x: Self) extends AnyVal {
+  extension [Self <: ContentStack](x: Self) {
     
-    @scala.inline
-    def setStack(value: js.Array[Content]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: js.Array[Content]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackVarargs(value: Content*): Self = StObject.set(x, "stack", js.Array(value :_*))
+    inline def setStackVarargs(value: Content*): Self = StObject.set(x, "stack", js.Array(value :_*))
     
-    @scala.inline
-    def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+    inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
+    inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
   }
 }

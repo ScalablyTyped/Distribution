@@ -16,19 +16,15 @@ trait SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata extends StObj
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadataMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

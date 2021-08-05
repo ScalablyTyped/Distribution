@@ -23,8 +23,7 @@ trait GetBorderRadius extends StObject {
 }
 object GetBorderRadius {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBorderRadius: () => String,
     getHeight: () => String,
     getMinWidth: () => String,
@@ -35,22 +34,16 @@ object GetBorderRadius {
     __obj.asInstanceOf[GetBorderRadius]
   }
   
-  @scala.inline
-  implicit class GetBorderRadiusMutableBuilder[Self <: GetBorderRadius] (val x: Self) extends AnyVal {
+  extension [Self <: GetBorderRadius](x: Self) {
     
-    @scala.inline
-    def setGetBorderRadius(value: () => String): Self = StObject.set(x, "getBorderRadius", js.Any.fromFunction0(value))
+    inline def setGetBorderRadius(value: () => String): Self = StObject.set(x, "getBorderRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeight(value: () => String): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => String): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinWidth(value: () => String): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
+    inline def setGetMinWidth(value: () => String): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPadding(value: () => String): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
+    inline def setGetPadding(value: () => String): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => String): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => String): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
   }
 }

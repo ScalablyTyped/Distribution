@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpSlideShowRangeType extends StObject
 object PpSlideShowRangeType {
   
-  @scala.inline
-  def ppShowAll: `1` = 1.asInstanceOf[`1`]
+  inline def ppShowAll: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppShowNamedSlideShow: `3` = 3.asInstanceOf[`3`]
+  inline def ppShowNamedSlideShow: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppShowSlideRange: `2` = 2.asInstanceOf[`2`]
+  inline def ppShowSlideRange: `2` = 2.asInstanceOf[`2`]
 }

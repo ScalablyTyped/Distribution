@@ -25,8 +25,7 @@ trait WebApiConnectedServiceDetails
 }
 object WebApiConnectedServiceDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectedServiceMetaData: WebApiConnectedService,
     credentialsXml: String,
     endPoint: String,
@@ -37,16 +36,12 @@ object WebApiConnectedServiceDetails {
     __obj.asInstanceOf[WebApiConnectedServiceDetails]
   }
   
-  @scala.inline
-  implicit class WebApiConnectedServiceDetailsMutableBuilder[Self <: WebApiConnectedServiceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiConnectedServiceDetails](x: Self) {
     
-    @scala.inline
-    def setConnectedServiceMetaData(value: WebApiConnectedService): Self = StObject.set(x, "connectedServiceMetaData", value.asInstanceOf[js.Any])
+    inline def setConnectedServiceMetaData(value: WebApiConnectedService): Self = StObject.set(x, "connectedServiceMetaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsXml(value: String): Self = StObject.set(x, "credentialsXml", value.asInstanceOf[js.Any])
+    inline def setCredentialsXml(value: String): Self = StObject.set(x, "credentialsXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+    inline def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
   }
 }

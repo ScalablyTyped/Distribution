@@ -16,31 +16,23 @@ trait LinkSelectors extends StObject {
 }
 object LinkSelectors {
   
-  @scala.inline
-  def apply(): LinkSelectors = {
+  inline def apply(): LinkSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkSelectors]
   }
   
-  @scala.inline
-  implicit class LinkSelectorsMutableBuilder[Self <: LinkSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: LinkSelectors](x: Self) {
     
-    @scala.inline
-    def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setWrapper(value: SVGPathAttributes): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: SVGPathAttributes): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

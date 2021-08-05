@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFBuiltInUserGroup extends StObject
 object MFBuiltInUserGroup {
   
-  @scala.inline
-  def AndExternalUsers: `2` = 2.asInstanceOf[`2`]
+  inline def AndExternalUsers: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Users: `1` = 1.asInstanceOf[`1`]
+  inline def Users: `1` = 1.asInstanceOf[`1`]
 }

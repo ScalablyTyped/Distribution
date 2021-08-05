@@ -13,16 +13,13 @@ trait GridErrorStateChanged
 }
 object GridErrorStateChanged {
   
-  @scala.inline
-  def apply(bAnyErrors: Boolean): GridErrorStateChanged = {
+  inline def apply(bAnyErrors: Boolean): GridErrorStateChanged = {
     val __obj = js.Dynamic.literal(bAnyErrors = bAnyErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridErrorStateChanged]
   }
   
-  @scala.inline
-  implicit class GridErrorStateChangedMutableBuilder[Self <: GridErrorStateChanged] (val x: Self) extends AnyVal {
+  extension [Self <: GridErrorStateChanged](x: Self) {
     
-    @scala.inline
-    def setBAnyErrors(value: Boolean): Self = StObject.set(x, "bAnyErrors", value.asInstanceOf[js.Any])
+    inline def setBAnyErrors(value: Boolean): Self = StObject.set(x, "bAnyErrors", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait MaxAge extends StObject {
 }
 object MaxAge {
   
-  @scala.inline
-  def apply(): MaxAge = {
+  inline def apply(): MaxAge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxAge]
   }
   
-  @scala.inline
-  implicit class MaxAgeMutableBuilder[Self <: MaxAge] (val x: Self) extends AnyVal {
+  extension [Self <: MaxAge](x: Self) {
     
-    @scala.inline
-    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditionUpgradeLicenseType extends StObject
 object EditionUpgradeLicenseType {
   
-  @scala.inline
-  def licenseFile: typings.microsoftGraph.microsoftGraphStrings.licenseFile = "licenseFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.licenseFile]
+  inline def licenseFile: typings.microsoftGraph.microsoftGraphStrings.licenseFile = "licenseFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.licenseFile]
   
-  @scala.inline
-  def productKey: typings.microsoftGraph.microsoftGraphStrings.productKey = "productKey".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.productKey]
+  inline def productKey: typings.microsoftGraph.microsoftGraphStrings.productKey = "productKey".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.productKey]
 }

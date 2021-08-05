@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleDefaultTextSelection extends StObject
 object styleDefaultTextSelection {
   
-  @scala.inline
-  def styleDefaultTextSelectionFalse: `0` = 0.asInstanceOf[`0`]
+  inline def styleDefaultTextSelectionFalse: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleDefaultTextSelectionTrue: `1` = 1.asInstanceOf[`1`]
+  inline def styleDefaultTextSelectionTrue: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleDefaultTextSelection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleDefaultTextSelection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

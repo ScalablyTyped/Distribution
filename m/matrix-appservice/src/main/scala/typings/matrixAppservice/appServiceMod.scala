@@ -67,7 +67,7 @@ object appServiceMod {
       */
     def close(): js.Promise[Unit] = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     /**
       * The Express App instance for the appservice, which
@@ -75,9 +75,9 @@ object appServiceMod {
       */
     def expressApp: Application_ = js.native
     
-    var isInvalidToken: js.Any = js.native
+    /* private */ var isInvalidToken: js.Any = js.native
     
-    var lastProcessedTxnId: js.Any = js.native
+    /* private */ var lastProcessedTxnId: js.Any = js.native
     
     /***
       * Begin listening on the specified port.
@@ -98,13 +98,13 @@ object appServiceMod {
       */
     def onAliasQuery(alias: String, callback: js.Function0[Unit]): js.Thenable[Unit] | Null = js.native
     
-    var onGetRoomAlias: js.Any = js.native
+    /* private */ var onGetRoomAlias: js.Any = js.native
     
-    var onGetUsers: js.Any = js.native
+    /* private */ var onGetUsers: js.Any = js.native
     
-    var onMorganLog: js.Any = js.native
+    /* private */ var onMorganLog: js.Any = js.native
     
-    var onTransaction: js.Any = js.native
+    /* private */ var onTransaction: js.Any = js.native
     
     /**
       * Override this method to handle user queries.
@@ -150,7 +150,7 @@ object appServiceMod {
     @JSName("on")
     def on_httplog(event: `http-log`, cb: js.Function1[/* line */ String, Unit]): this.type = js.native
     
-    var server: js.Any = js.native
+    /* private */ var server: js.Any = js.native
     
     /**
       * Set the token that should be used to verify incoming events.

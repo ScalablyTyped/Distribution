@@ -10,16 +10,13 @@ trait StateBoolean extends StObject {
 }
 object StateBoolean {
   
-  @scala.inline
-  def apply(state: Boolean): StateBoolean = {
+  inline def apply(state: Boolean): StateBoolean = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateBoolean]
   }
   
-  @scala.inline
-  implicit class StateBooleanMutableBuilder[Self <: StateBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: StateBoolean](x: Self) {
     
-    @scala.inline
-    def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

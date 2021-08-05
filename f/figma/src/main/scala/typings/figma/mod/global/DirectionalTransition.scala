@@ -29,8 +29,7 @@ trait DirectionalTransition
 }
 object DirectionalTransition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: LEFT | RIGHT | TOP | BOTTOM,
     duration: Double,
     easing: Easing,
@@ -42,22 +41,16 @@ object DirectionalTransition {
     __obj.asInstanceOf[DirectionalTransition]
   }
   
-  @scala.inline
-  implicit class DirectionalTransitionMutableBuilder[Self <: DirectionalTransition] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionalTransition](x: Self) {
     
-    @scala.inline
-    def setDirection(value: LEFT | RIGHT | TOP | BOTTOM): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: LEFT | RIGHT | TOP | BOTTOM): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchLayers(value: Boolean): Self = StObject.set(x, "matchLayers", value.asInstanceOf[js.Any])
+    inline def setMatchLayers(value: Boolean): Self = StObject.set(x, "matchLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MOVE_IN | MOVE_OUT | PUSH | SLIDE_IN | SLIDE_OUT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MOVE_IN | MOVE_OUT | PUSH | SLIDE_IN | SLIDE_OUT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

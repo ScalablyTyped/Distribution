@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MenuItemNodeType extends StObject
 object MenuItemNodeType {
   
-  @scala.inline
-  def append: typings.jsoneditor.jsoneditorStrings.append = "append".asInstanceOf[typings.jsoneditor.jsoneditorStrings.append]
+  inline def append: typings.jsoneditor.jsoneditorStrings.append = "append".asInstanceOf[typings.jsoneditor.jsoneditorStrings.append]
   
-  @scala.inline
-  def single: typings.jsoneditor.jsoneditorStrings.single = "single".asInstanceOf[typings.jsoneditor.jsoneditorStrings.single]
+  inline def single: typings.jsoneditor.jsoneditorStrings.single = "single".asInstanceOf[typings.jsoneditor.jsoneditorStrings.single]
 }

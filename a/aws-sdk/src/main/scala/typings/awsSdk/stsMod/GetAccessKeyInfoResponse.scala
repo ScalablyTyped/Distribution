@@ -13,19 +13,15 @@ trait GetAccessKeyInfoResponse extends StObject {
 }
 object GetAccessKeyInfoResponse {
   
-  @scala.inline
-  def apply(): GetAccessKeyInfoResponse = {
+  inline def apply(): GetAccessKeyInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccessKeyInfoResponse]
   }
   
-  @scala.inline
-  implicit class GetAccessKeyInfoResponseMutableBuilder[Self <: GetAccessKeyInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessKeyInfoResponse](x: Self) {
     
-    @scala.inline
-    def setAccount(value: accountType): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: accountType): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
   }
 }

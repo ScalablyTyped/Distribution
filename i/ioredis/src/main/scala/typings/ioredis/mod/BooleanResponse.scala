@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BooleanResponse extends StObject
 object BooleanResponse {
   
-  @scala.inline
-  def `0`: typings.ioredis.ioredisNumbers.`0` = 0.asInstanceOf[typings.ioredis.ioredisNumbers.`0`]
+  inline def `0`: typings.ioredis.ioredisNumbers.`0` = 0.asInstanceOf[typings.ioredis.ioredisNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.ioredis.ioredisNumbers.`1` = 1.asInstanceOf[typings.ioredis.ioredisNumbers.`1`]
+  inline def `1`: typings.ioredis.ioredisNumbers.`1` = 1.asInstanceOf[typings.ioredis.ioredisNumbers.`1`]
 }

@@ -37,20 +37,16 @@ object mod {
   }
   object SourceLocation {
     
-    @scala.inline
-    def apply(end: SourcePosition, start: SourcePosition): SourceLocation = {
+    inline def apply(end: SourcePosition, start: SourcePosition): SourceLocation = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceLocation]
     }
     
-    @scala.inline
-    implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SourceLocation](x: Self) {
       
-      @scala.inline
-      def setEnd(value: SourcePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: SourcePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: SourcePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: SourcePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,20 +60,16 @@ object mod {
   }
   object SourcePosition {
     
-    @scala.inline
-    def apply(column: Double, line: Double): SourcePosition = {
+    inline def apply(column: Double, line: Double): SourcePosition = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourcePosition]
     }
     
-    @scala.inline
-    implicit class SourcePositionMutableBuilder[Self <: SourcePosition] (val x: Self) extends AnyVal {
+    extension [Self <: SourcePosition](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,8 +85,7 @@ object mod {
   }
   object StructuredSource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       indexToPosition: Double => SourcePosition,
       locationToRange: SourceLocation => js.Tuple2[Double, Double],
       positionToIndex: SourcePosition => Double,
@@ -104,20 +95,15 @@ object mod {
       __obj.asInstanceOf[StructuredSource]
     }
     
-    @scala.inline
-    implicit class StructuredSourceMutableBuilder[Self <: StructuredSource] (val x: Self) extends AnyVal {
+    extension [Self <: StructuredSource](x: Self) {
       
-      @scala.inline
-      def setIndexToPosition(value: Double => SourcePosition): Self = StObject.set(x, "indexToPosition", js.Any.fromFunction1(value))
+      inline def setIndexToPosition(value: Double => SourcePosition): Self = StObject.set(x, "indexToPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocationToRange(value: SourceLocation => js.Tuple2[Double, Double]): Self = StObject.set(x, "locationToRange", js.Any.fromFunction1(value))
+      inline def setLocationToRange(value: SourceLocation => js.Tuple2[Double, Double]): Self = StObject.set(x, "locationToRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPositionToIndex(value: SourcePosition => Double): Self = StObject.set(x, "positionToIndex", js.Any.fromFunction1(value))
+      inline def setPositionToIndex(value: SourcePosition => Double): Self = StObject.set(x, "positionToIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRangeToLocation(value: js.Tuple2[Double, Double] => SourceLocation): Self = StObject.set(x, "rangeToLocation", js.Any.fromFunction1(value))
+      inline def setRangeToLocation(value: js.Tuple2[Double, Double] => SourceLocation): Self = StObject.set(x, "rangeToLocation", js.Any.fromFunction1(value))
     }
   }
 }

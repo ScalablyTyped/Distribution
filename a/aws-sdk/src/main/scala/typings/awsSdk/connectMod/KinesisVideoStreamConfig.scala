@@ -23,22 +23,17 @@ trait KinesisVideoStreamConfig extends StObject {
 }
 object KinesisVideoStreamConfig {
   
-  @scala.inline
-  def apply(EncryptionConfig: EncryptionConfig, Prefix: Prefix, RetentionPeriodHours: Hours): KinesisVideoStreamConfig = {
+  inline def apply(EncryptionConfig: EncryptionConfig, Prefix: Prefix, RetentionPeriodHours: Hours): KinesisVideoStreamConfig = {
     val __obj = js.Dynamic.literal(EncryptionConfig = EncryptionConfig.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any], RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisVideoStreamConfig]
   }
   
-  @scala.inline
-  implicit class KinesisVideoStreamConfigMutableBuilder[Self <: KinesisVideoStreamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisVideoStreamConfig](x: Self) {
     
-    @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodHours(value: Hours): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriodHours(value: Hours): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
   }
 }

@@ -120,8 +120,7 @@ trait PaymentsClient extends StObject {
 }
 object PaymentsClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createButton: ButtonOptions => HTMLElement,
     isReadyToPay: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse],
     loadPaymentData: PaymentDataRequest => js.Promise[PaymentData],
@@ -131,19 +130,14 @@ object PaymentsClient {
     __obj.asInstanceOf[PaymentsClient]
   }
   
-  @scala.inline
-  implicit class PaymentsClientMutableBuilder[Self <: PaymentsClient] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentsClient](x: Self) {
     
-    @scala.inline
-    def setCreateButton(value: ButtonOptions => HTMLElement): Self = StObject.set(x, "createButton", js.Any.fromFunction1(value))
+    inline def setCreateButton(value: ButtonOptions => HTMLElement): Self = StObject.set(x, "createButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsReadyToPay(value: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse]): Self = StObject.set(x, "isReadyToPay", js.Any.fromFunction1(value))
+    inline def setIsReadyToPay(value: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse]): Self = StObject.set(x, "isReadyToPay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadPaymentData(value: PaymentDataRequest => js.Promise[PaymentData]): Self = StObject.set(x, "loadPaymentData", js.Any.fromFunction1(value))
+    inline def setLoadPaymentData(value: PaymentDataRequest => js.Promise[PaymentData]): Self = StObject.set(x, "loadPaymentData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrefetchPaymentData(value: PaymentDataRequest => Unit): Self = StObject.set(x, "prefetchPaymentData", js.Any.fromFunction1(value))
+    inline def setPrefetchPaymentData(value: PaymentDataRequest => Unit): Self = StObject.set(x, "prefetchPaymentData", js.Any.fromFunction1(value))
   }
 }

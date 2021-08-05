@@ -35,8 +35,7 @@ trait ASPxClientFABAction
 }
 object ASPxClientFABAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetActionItem: Double => ASPxClientFABActionItem,
     GetActionItemByName: String => ASPxClientFABActionItem,
     GetActionItemCount: () => Double,
@@ -51,19 +50,14 @@ object ASPxClientFABAction {
     __obj.asInstanceOf[ASPxClientFABAction]
   }
   
-  @scala.inline
-  implicit class ASPxClientFABActionMutableBuilder[Self <: ASPxClientFABAction] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFABAction](x: Self) {
     
-    @scala.inline
-    def setGetActionItem(value: Double => ASPxClientFABActionItem): Self = StObject.set(x, "GetActionItem", js.Any.fromFunction1(value))
+    inline def setGetActionItem(value: Double => ASPxClientFABActionItem): Self = StObject.set(x, "GetActionItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActionItemByName(value: String => ASPxClientFABActionItem): Self = StObject.set(x, "GetActionItemByName", js.Any.fromFunction1(value))
+    inline def setGetActionItemByName(value: String => ASPxClientFABActionItem): Self = StObject.set(x, "GetActionItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActionItemCount(value: () => Double): Self = StObject.set(x, "GetActionItemCount", js.Any.fromFunction0(value))
+    inline def setGetActionItemCount(value: () => Double): Self = StObject.set(x, "GetActionItemCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContextName(value: () => String): Self = StObject.set(x, "GetContextName", js.Any.fromFunction0(value))
+    inline def setGetContextName(value: () => String): Self = StObject.set(x, "GetContextName", js.Any.fromFunction0(value))
   }
 }

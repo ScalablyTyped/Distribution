@@ -10,8 +10,7 @@ trait ShadowsProps
      with TextShadowProps
 object ShadowsProps {
   
-  @scala.inline
-  def apply(): ShadowsProps = {
+  inline def apply(): ShadowsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowsProps]
   }

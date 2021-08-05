@@ -29,11 +29,9 @@ object mod {
   @js.native
   val plugin: Plugin[BellOptions] = js.native
   
-  @scala.inline
-  def simulate(credentialsFunc: RequestPassThrough): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("simulate")(credentialsFunc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def simulate(credentialsFunc: RequestPassThrough): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("simulate")(credentialsFunc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def simulate_false(state: `false`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("simulate")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def simulate_false(state: `false`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("simulate")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AuthedRequest = js.Function2[
     /* uri */ String, 
@@ -48,8 +46,7 @@ object mod {
   trait BellOptions extends StObject
   object BellOptions {
     
-    @scala.inline
-    def CustomProviderOptions(
+    inline def CustomProviderOptions(
       clientId: String,
       clientSecret: String,
       password: String,
@@ -59,8 +56,7 @@ object mod {
       __obj.asInstanceOf[typings.bell.mod.CustomProviderOptions]
     }
     
-    @scala.inline
-    def KnownProviderOptions(clientId: String, clientSecret: String, password: String, provider: Provider): typings.bell.mod.KnownProviderOptions = {
+    inline def KnownProviderOptions(clientId: String, clientSecret: String, password: String, provider: Provider): typings.bell.mod.KnownProviderOptions = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.bell.mod.KnownProviderOptions]
     }
@@ -81,29 +77,22 @@ object mod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(provider: Provider | custom, query: StringLikeMap, token: String): Credentials = {
+    inline def apply(provider: Provider | custom, query: StringLikeMap, token: String): Credentials = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setProvider(value: Provider | custom): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: Provider | custom): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: StringLikeMap): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringLikeMap): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,17 +104,14 @@ object mod {
   }
   object Credentials1 {
     
-    @scala.inline
-    def apply(provider: Provider | custom, query: StringLikeMap, secret: String, token: String): Credentials1 = {
+    inline def apply(provider: Provider | custom, query: StringLikeMap, secret: String, token: String): Credentials1 = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials1]
     }
     
-    @scala.inline
-    implicit class Credentials1MutableBuilder[Self <: Credentials1] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials1](x: Self) {
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,26 +125,20 @@ object mod {
   }
   object Credentials2 {
     
-    @scala.inline
-    def apply(provider: Provider | custom, query: StringLikeMap, token: String): Credentials2 = {
+    inline def apply(provider: Provider | custom, query: StringLikeMap, token: String): Credentials2 = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials2]
     }
     
-    @scala.inline
-    implicit class Credentials2MutableBuilder[Self <: Credentials2] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials2](x: Self) {
       
-      @scala.inline
-      def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     }
   }
   
@@ -188,32 +168,24 @@ object mod {
   }
   object CustomProtocol {
     
-    @scala.inline
-    def apply(auth: String, token: String): CustomProtocol = {
+    inline def apply(auth: String, token: String): CustomProtocol = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomProtocol]
     }
     
-    @scala.inline
-    implicit class CustomProtocolMutableBuilder[Self <: CustomProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: CustomProtocol](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,32 +216,24 @@ object mod {
   }
   object CustomProtocol1 {
     
-    @scala.inline
-    def apply(auth: String, profile: ProfileGetter[Credentials1], token: String): CustomProtocol1 = {
+    inline def apply(auth: String, profile: ProfileGetter[Credentials1], token: String): CustomProtocol1 = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], protocol = "oauth", token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomProtocol1]
     }
     
-    @scala.inline
-    implicit class CustomProtocol1MutableBuilder[Self <: CustomProtocol1] (val x: Self) extends AnyVal {
+    extension [Self <: CustomProtocol1](x: Self) {
       
-      @scala.inline
-      def setProfile(value: ProfileGetter[Credentials1]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: ProfileGetter[Credentials1]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: oauth): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: oauth): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureMethod(value: `HMAC-SHA1` | `RSA-SHA1`): Self = StObject.set(x, "signatureMethod", value.asInstanceOf[js.Any])
+      inline def setSignatureMethod(value: `HMAC-SHA1` | `RSA-SHA1`): Self = StObject.set(x, "signatureMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureMethodUndefined: Self = StObject.set(x, "signatureMethod", js.undefined)
+      inline def setSignatureMethodUndefined: Self = StObject.set(x, "signatureMethod", js.undefined)
       
-      @scala.inline
-      def setTemporary(value: String): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      inline def setTemporary(value: String): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
     }
   }
   
@@ -305,44 +269,32 @@ object mod {
   }
   object CustomProtocol2 {
     
-    @scala.inline
-    def apply(auth: String, profile: ProfileGetter[Credentials2], token: String): CustomProtocol2 = {
+    inline def apply(auth: String, profile: ProfileGetter[Credentials2], token: String): CustomProtocol2 = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], protocol = "oauth2", token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomProtocol2]
     }
     
-    @scala.inline
-    implicit class CustomProtocol2MutableBuilder[Self <: CustomProtocol2] (val x: Self) extends AnyVal {
+    extension [Self <: CustomProtocol2](x: Self) {
       
-      @scala.inline
-      def setProfile(value: ProfileGetter[Credentials2]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: ProfileGetter[Credentials2]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: oauth2): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: oauth2): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: js.Array[String] | (js.Function1[/* query */ StringLikeMap, js.Array[String]])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Array[String] | (js.Function1[/* query */ StringLikeMap, js.Array[String]])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeFunction1(value: /* query */ StringLikeMap => js.Array[String]): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
+      inline def setScopeFunction1(value: /* query */ StringLikeMap => js.Array[String]): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScopeSeparator(value: String): Self = StObject.set(x, "scopeSeparator", value.asInstanceOf[js.Any])
+      inline def setScopeSeparator(value: String): Self = StObject.set(x, "scopeSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeSeparatorUndefined: Self = StObject.set(x, "scopeSeparator", js.undefined)
+      inline def setScopeSeparatorUndefined: Self = StObject.set(x, "scopeSeparator", js.undefined)
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
       
-      @scala.inline
-      def setUseParamsAuth(value: Boolean): Self = StObject.set(x, "useParamsAuth", value.asInstanceOf[js.Any])
+      inline def setUseParamsAuth(value: Boolean): Self = StObject.set(x, "useParamsAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseParamsAuthUndefined: Self = StObject.set(x, "useParamsAuth", js.undefined)
+      inline def setUseParamsAuthUndefined: Self = StObject.set(x, "useParamsAuth", js.undefined)
     }
   }
   
@@ -356,8 +308,7 @@ object mod {
   }
   object CustomProviderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientId: String,
       clientSecret: String,
       password: String,
@@ -367,11 +318,9 @@ object mod {
       __obj.asInstanceOf[CustomProviderOptions]
     }
     
-    @scala.inline
-    implicit class CustomProviderOptionsMutableBuilder[Self <: CustomProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomProviderOptions](x: Self) {
       
-      @scala.inline
-      def setProvider(value: CustomProtocol1 | CustomProtocol2): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: CustomProtocol1 | CustomProtocol2): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -385,17 +334,14 @@ object mod {
   }
   object KnownProviderOptions {
     
-    @scala.inline
-    def apply(clientId: String, clientSecret: String, password: String, provider: Provider): KnownProviderOptions = {
+    inline def apply(clientId: String, clientSecret: String, password: String, provider: Provider): KnownProviderOptions = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[KnownProviderOptions]
     }
     
-    @scala.inline
-    implicit class KnownProviderOptionsMutableBuilder[Self <: KnownProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KnownProviderOptions](x: Self) {
       
-      @scala.inline
-      def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -512,110 +458,76 @@ object mod {
   }
   object OptionalOptions {
     
-    @scala.inline
-    def apply(): OptionalOptions = {
+    inline def apply(): OptionalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalOptions]
     }
     
-    @scala.inline
-    implicit class OptionalOptionsMutableBuilder[Self <: OptionalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalOptions](x: Self) {
       
-      @scala.inline
-      def setAllowRuntimeProviderParams(value: StringLikeMap | Boolean): Self = StObject.set(x, "allowRuntimeProviderParams", value.asInstanceOf[js.Any])
+      inline def setAllowRuntimeProviderParams(value: StringLikeMap | Boolean): Self = StObject.set(x, "allowRuntimeProviderParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRuntimeProviderParamsUndefined: Self = StObject.set(x, "allowRuntimeProviderParams", js.undefined)
+      inline def setAllowRuntimeProviderParamsUndefined: Self = StObject.set(x, "allowRuntimeProviderParams", js.undefined)
       
-      @scala.inline
-      def setConfig(value: ExtendedProfile | Uri): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ExtendedProfile | Uri): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
+      inline def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
+      inline def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
       
-      @scala.inline
-      def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
+      inline def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
+      inline def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
       
-      @scala.inline
-      def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+      inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
+      inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String | (js.Function1[/* req */ Request, String])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String | (js.Function1[/* req */ Request, String])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationFunction1(value: /* req */ Request => String): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
+      inline def setLocationFunction1(value: /* req */ Request => String): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setProfileParams(value: StringLikeMap): Self = StObject.set(x, "profileParams", value.asInstanceOf[js.Any])
+      inline def setProfileParams(value: StringLikeMap): Self = StObject.set(x, "profileParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileParamsUndefined: Self = StObject.set(x, "profileParams", js.undefined)
+      inline def setProfileParamsUndefined: Self = StObject.set(x, "profileParams", js.undefined)
       
-      @scala.inline
-      def setProviderParams(value: StringLikeMap | (js.Function1[/* request */ Request, StringLikeMap])): Self = StObject.set(x, "providerParams", value.asInstanceOf[js.Any])
+      inline def setProviderParams(value: StringLikeMap | (js.Function1[/* request */ Request, StringLikeMap])): Self = StObject.set(x, "providerParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderParamsFunction1(value: /* request */ Request => StringLikeMap): Self = StObject.set(x, "providerParams", js.Any.fromFunction1(value))
+      inline def setProviderParamsFunction1(value: /* request */ Request => StringLikeMap): Self = StObject.set(x, "providerParams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProviderParamsUndefined: Self = StObject.set(x, "providerParams", js.undefined)
+      inline def setProviderParamsUndefined: Self = StObject.set(x, "providerParams", js.undefined)
       
-      @scala.inline
-      def setRuntimeStateCallback(value: /* req */ Request => String): Self = StObject.set(x, "runtimeStateCallback", js.Any.fromFunction1(value))
+      inline def setRuntimeStateCallback(value: /* req */ Request => String): Self = StObject.set(x, "runtimeStateCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRuntimeStateCallbackUndefined: Self = StObject.set(x, "runtimeStateCallback", js.undefined)
+      inline def setRuntimeStateCallbackUndefined: Self = StObject.set(x, "runtimeStateCallback", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Array[String] | (js.Function1[/* request */ Request, js.Array[String]])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Array[String] | (js.Function1[/* request */ Request, js.Array[String]])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeFunction1(value: /* request */ Request => js.Array[String]): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
+      inline def setScopeFunction1(value: /* request */ Request => js.Array[String]): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipProfile(value: Boolean): Self = StObject.set(x, "skipProfile", value.asInstanceOf[js.Any])
+      inline def setSkipProfile(value: Boolean): Self = StObject.set(x, "skipProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipProfileUndefined: Self = StObject.set(x, "skipProfile", js.undefined)
+      inline def setSkipProfileUndefined: Self = StObject.set(x, "skipProfile", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -671,122 +583,83 @@ object mod {
   trait Provider extends StObject
   object Provider {
     
-    @scala.inline
-    def arcgisonline: typings.bell.bellStrings.arcgisonline = "arcgisonline".asInstanceOf[typings.bell.bellStrings.arcgisonline]
+    inline def arcgisonline: typings.bell.bellStrings.arcgisonline = "arcgisonline".asInstanceOf[typings.bell.bellStrings.arcgisonline]
     
-    @scala.inline
-    def auth0: typings.bell.bellStrings.auth0 = "auth0".asInstanceOf[typings.bell.bellStrings.auth0]
+    inline def auth0: typings.bell.bellStrings.auth0 = "auth0".asInstanceOf[typings.bell.bellStrings.auth0]
     
-    @scala.inline
-    def azuread: typings.bell.bellStrings.azuread = "azuread".asInstanceOf[typings.bell.bellStrings.azuread]
+    inline def azuread: typings.bell.bellStrings.azuread = "azuread".asInstanceOf[typings.bell.bellStrings.azuread]
     
-    @scala.inline
-    def bitbucket: typings.bell.bellStrings.bitbucket = "bitbucket".asInstanceOf[typings.bell.bellStrings.bitbucket]
+    inline def bitbucket: typings.bell.bellStrings.bitbucket = "bitbucket".asInstanceOf[typings.bell.bellStrings.bitbucket]
     
-    @scala.inline
-    def digitalocean: typings.bell.bellStrings.digitalocean = "digitalocean".asInstanceOf[typings.bell.bellStrings.digitalocean]
+    inline def digitalocean: typings.bell.bellStrings.digitalocean = "digitalocean".asInstanceOf[typings.bell.bellStrings.digitalocean]
     
-    @scala.inline
-    def discord: typings.bell.bellStrings.discord = "discord".asInstanceOf[typings.bell.bellStrings.discord]
+    inline def discord: typings.bell.bellStrings.discord = "discord".asInstanceOf[typings.bell.bellStrings.discord]
     
-    @scala.inline
-    def dropbox: typings.bell.bellStrings.dropbox = "dropbox".asInstanceOf[typings.bell.bellStrings.dropbox]
+    inline def dropbox: typings.bell.bellStrings.dropbox = "dropbox".asInstanceOf[typings.bell.bellStrings.dropbox]
     
-    @scala.inline
-    def dropboxV2: typings.bell.bellStrings.dropboxV2 = "dropboxV2".asInstanceOf[typings.bell.bellStrings.dropboxV2]
+    inline def dropboxV2: typings.bell.bellStrings.dropboxV2 = "dropboxV2".asInstanceOf[typings.bell.bellStrings.dropboxV2]
     
-    @scala.inline
-    def facebook: typings.bell.bellStrings.facebook = "facebook".asInstanceOf[typings.bell.bellStrings.facebook]
+    inline def facebook: typings.bell.bellStrings.facebook = "facebook".asInstanceOf[typings.bell.bellStrings.facebook]
     
-    @scala.inline
-    def fitbit: typings.bell.bellStrings.fitbit = "fitbit".asInstanceOf[typings.bell.bellStrings.fitbit]
+    inline def fitbit: typings.bell.bellStrings.fitbit = "fitbit".asInstanceOf[typings.bell.bellStrings.fitbit]
     
-    @scala.inline
-    def foursquare: typings.bell.bellStrings.foursquare = "foursquare".asInstanceOf[typings.bell.bellStrings.foursquare]
+    inline def foursquare: typings.bell.bellStrings.foursquare = "foursquare".asInstanceOf[typings.bell.bellStrings.foursquare]
     
-    @scala.inline
-    def github: typings.bell.bellStrings.github = "github".asInstanceOf[typings.bell.bellStrings.github]
+    inline def github: typings.bell.bellStrings.github = "github".asInstanceOf[typings.bell.bellStrings.github]
     
-    @scala.inline
-    def gitlab: typings.bell.bellStrings.gitlab = "gitlab".asInstanceOf[typings.bell.bellStrings.gitlab]
+    inline def gitlab: typings.bell.bellStrings.gitlab = "gitlab".asInstanceOf[typings.bell.bellStrings.gitlab]
     
-    @scala.inline
-    def google: typings.bell.bellStrings.google = "google".asInstanceOf[typings.bell.bellStrings.google]
+    inline def google: typings.bell.bellStrings.google = "google".asInstanceOf[typings.bell.bellStrings.google]
     
-    @scala.inline
-    def googleplus: typings.bell.bellStrings.googleplus = "googleplus".asInstanceOf[typings.bell.bellStrings.googleplus]
+    inline def googleplus: typings.bell.bellStrings.googleplus = "googleplus".asInstanceOf[typings.bell.bellStrings.googleplus]
     
-    @scala.inline
-    def instagram: typings.bell.bellStrings.instagram = "instagram".asInstanceOf[typings.bell.bellStrings.instagram]
+    inline def instagram: typings.bell.bellStrings.instagram = "instagram".asInstanceOf[typings.bell.bellStrings.instagram]
     
-    @scala.inline
-    def linkedin: typings.bell.bellStrings.linkedin = "linkedin".asInstanceOf[typings.bell.bellStrings.linkedin]
+    inline def linkedin: typings.bell.bellStrings.linkedin = "linkedin".asInstanceOf[typings.bell.bellStrings.linkedin]
     
-    @scala.inline
-    def live: typings.bell.bellStrings.live = "live".asInstanceOf[typings.bell.bellStrings.live]
+    inline def live: typings.bell.bellStrings.live = "live".asInstanceOf[typings.bell.bellStrings.live]
     
-    @scala.inline
-    def medium: typings.bell.bellStrings.medium = "medium".asInstanceOf[typings.bell.bellStrings.medium]
+    inline def medium: typings.bell.bellStrings.medium = "medium".asInstanceOf[typings.bell.bellStrings.medium]
     
-    @scala.inline
-    def meetup: typings.bell.bellStrings.meetup = "meetup".asInstanceOf[typings.bell.bellStrings.meetup]
+    inline def meetup: typings.bell.bellStrings.meetup = "meetup".asInstanceOf[typings.bell.bellStrings.meetup]
     
-    @scala.inline
-    def mixer: typings.bell.bellStrings.mixer = "mixer".asInstanceOf[typings.bell.bellStrings.mixer]
+    inline def mixer: typings.bell.bellStrings.mixer = "mixer".asInstanceOf[typings.bell.bellStrings.mixer]
     
-    @scala.inline
-    def nest: typings.bell.bellStrings.nest = "nest".asInstanceOf[typings.bell.bellStrings.nest]
+    inline def nest: typings.bell.bellStrings.nest = "nest".asInstanceOf[typings.bell.bellStrings.nest]
     
-    @scala.inline
-    def office365: typings.bell.bellStrings.office365 = "office365".asInstanceOf[typings.bell.bellStrings.office365]
+    inline def office365: typings.bell.bellStrings.office365 = "office365".asInstanceOf[typings.bell.bellStrings.office365]
     
-    @scala.inline
-    def okta: typings.bell.bellStrings.okta = "okta".asInstanceOf[typings.bell.bellStrings.okta]
+    inline def okta: typings.bell.bellStrings.okta = "okta".asInstanceOf[typings.bell.bellStrings.okta]
     
-    @scala.inline
-    def phabricator: typings.bell.bellStrings.phabricator = "phabricator".asInstanceOf[typings.bell.bellStrings.phabricator]
+    inline def phabricator: typings.bell.bellStrings.phabricator = "phabricator".asInstanceOf[typings.bell.bellStrings.phabricator]
     
-    @scala.inline
-    def pingfed: typings.bell.bellStrings.pingfed = "pingfed".asInstanceOf[typings.bell.bellStrings.pingfed]
+    inline def pingfed: typings.bell.bellStrings.pingfed = "pingfed".asInstanceOf[typings.bell.bellStrings.pingfed]
     
-    @scala.inline
-    def pinterest: typings.bell.bellStrings.pinterest = "pinterest".asInstanceOf[typings.bell.bellStrings.pinterest]
+    inline def pinterest: typings.bell.bellStrings.pinterest = "pinterest".asInstanceOf[typings.bell.bellStrings.pinterest]
     
-    @scala.inline
-    def reddit: typings.bell.bellStrings.reddit = "reddit".asInstanceOf[typings.bell.bellStrings.reddit]
+    inline def reddit: typings.bell.bellStrings.reddit = "reddit".asInstanceOf[typings.bell.bellStrings.reddit]
     
-    @scala.inline
-    def salesforce: typings.bell.bellStrings.salesforce = "salesforce".asInstanceOf[typings.bell.bellStrings.salesforce]
+    inline def salesforce: typings.bell.bellStrings.salesforce = "salesforce".asInstanceOf[typings.bell.bellStrings.salesforce]
     
-    @scala.inline
-    def slack: typings.bell.bellStrings.slack = "slack".asInstanceOf[typings.bell.bellStrings.slack]
+    inline def slack: typings.bell.bellStrings.slack = "slack".asInstanceOf[typings.bell.bellStrings.slack]
     
-    @scala.inline
-    def spotify: typings.bell.bellStrings.spotify = "spotify".asInstanceOf[typings.bell.bellStrings.spotify]
+    inline def spotify: typings.bell.bellStrings.spotify = "spotify".asInstanceOf[typings.bell.bellStrings.spotify]
     
-    @scala.inline
-    def stripe: typings.bell.bellStrings.stripe = "stripe".asInstanceOf[typings.bell.bellStrings.stripe]
+    inline def stripe: typings.bell.bellStrings.stripe = "stripe".asInstanceOf[typings.bell.bellStrings.stripe]
     
-    @scala.inline
-    def trakt: typings.bell.bellStrings.trakt = "trakt".asInstanceOf[typings.bell.bellStrings.trakt]
+    inline def trakt: typings.bell.bellStrings.trakt = "trakt".asInstanceOf[typings.bell.bellStrings.trakt]
     
-    @scala.inline
-    def tumblr: typings.bell.bellStrings.tumblr = "tumblr".asInstanceOf[typings.bell.bellStrings.tumblr]
+    inline def tumblr: typings.bell.bellStrings.tumblr = "tumblr".asInstanceOf[typings.bell.bellStrings.tumblr]
     
-    @scala.inline
-    def twitch: typings.bell.bellStrings.twitch = "twitch".asInstanceOf[typings.bell.bellStrings.twitch]
+    inline def twitch: typings.bell.bellStrings.twitch = "twitch".asInstanceOf[typings.bell.bellStrings.twitch]
     
-    @scala.inline
-    def twitter: typings.bell.bellStrings.twitter = "twitter".asInstanceOf[typings.bell.bellStrings.twitter]
+    inline def twitter: typings.bell.bellStrings.twitter = "twitter".asInstanceOf[typings.bell.bellStrings.twitter]
     
-    @scala.inline
-    def vk: typings.bell.bellStrings.vk = "vk".asInstanceOf[typings.bell.bellStrings.vk]
+    inline def vk: typings.bell.bellStrings.vk = "vk".asInstanceOf[typings.bell.bellStrings.vk]
     
-    @scala.inline
-    def wordpress: typings.bell.bellStrings.wordpress = "wordpress".asInstanceOf[typings.bell.bellStrings.wordpress]
+    inline def wordpress: typings.bell.bellStrings.wordpress = "wordpress".asInstanceOf[typings.bell.bellStrings.wordpress]
     
-    @scala.inline
-    def yahoo: typings.bell.bellStrings.yahoo = "yahoo".asInstanceOf[typings.bell.bellStrings.yahoo]
+    inline def yahoo: typings.bell.bellStrings.yahoo = "yahoo".asInstanceOf[typings.bell.bellStrings.yahoo]
   }
   
   type RequestPassThrough = js.Function1[/* request */ Request, js.Thenable[AuthCredentials] | AuthCredentials]
@@ -812,23 +685,18 @@ object mod {
   }
   object RequiredProviderOptions {
     
-    @scala.inline
-    def apply(clientId: String, clientSecret: String, password: String): RequiredProviderOptions = {
+    inline def apply(clientId: String, clientSecret: String, password: String): RequiredProviderOptions = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredProviderOptions]
     }
     
-    @scala.inline
-    implicit class RequiredProviderOptionsMutableBuilder[Self <: RequiredProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredProviderOptions](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   

@@ -20,8 +20,7 @@ trait BootstrapMemoEventMap
 }
 object BootstrapMemoEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gotFocus: EventArgs,
     init: EventArgs,
     keyDown: EditKeyEventArgs,
@@ -37,22 +36,16 @@ object BootstrapMemoEventMap {
     __obj.asInstanceOf[BootstrapMemoEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapMemoEventMapMutableBuilder[Self <: BootstrapMemoEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapMemoEventMap](x: Self) {
     
-    @scala.inline
-    def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
+    inline def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
+    inline def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
+    inline def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

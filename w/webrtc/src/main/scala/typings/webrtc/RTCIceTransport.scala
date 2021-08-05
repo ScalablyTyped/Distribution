@@ -33,8 +33,7 @@ trait RTCIceTransport extends StObject {
 }
 object RTCIceTransport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gatheringState: RTCIceGatheringState,
     getLocalCandidates: () => js.Array[RTCIceCandidate],
     getLocalParameters: () => RTCIceParameters | Null,
@@ -46,43 +45,30 @@ object RTCIceTransport {
     __obj.asInstanceOf[RTCIceTransport]
   }
   
-  @scala.inline
-  implicit class RTCIceTransportMutableBuilder[Self <: RTCIceTransport] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIceTransport](x: Self) {
     
-    @scala.inline
-    def setGatheringState(value: RTCIceGatheringState): Self = StObject.set(x, "gatheringState", value.asInstanceOf[js.Any])
+    inline def setGatheringState(value: RTCIceGatheringState): Self = StObject.set(x, "gatheringState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLocalCandidates(value: () => js.Array[RTCIceCandidate]): Self = StObject.set(x, "getLocalCandidates", js.Any.fromFunction0(value))
+    inline def setGetLocalCandidates(value: () => js.Array[RTCIceCandidate]): Self = StObject.set(x, "getLocalCandidates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalParameters(value: () => RTCIceParameters | Null): Self = StObject.set(x, "getLocalParameters", js.Any.fromFunction0(value))
+    inline def setGetLocalParameters(value: () => RTCIceParameters | Null): Self = StObject.set(x, "getLocalParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemoteCandidates(value: () => js.Array[RTCIceCandidate]): Self = StObject.set(x, "getRemoteCandidates", js.Any.fromFunction0(value))
+    inline def setGetRemoteCandidates(value: () => js.Array[RTCIceCandidate]): Self = StObject.set(x, "getRemoteCandidates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemoteParameters(value: () => RTCIceParameters | Null): Self = StObject.set(x, "getRemoteParameters", js.Any.fromFunction0(value))
+    inline def setGetRemoteParameters(value: () => RTCIceParameters | Null): Self = StObject.set(x, "getRemoteParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedCandidatePair(value: () => RTCIceCandidatePair | Null): Self = StObject.set(x, "getSelectedCandidatePair", js.Any.fromFunction0(value))
+    inline def setGetSelectedCandidatePair(value: () => RTCIceCandidatePair | Null): Self = StObject.set(x, "getSelectedCandidatePair", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOngatheringstatechange(value: IceTransportEventHandler): Self = StObject.set(x, "ongatheringstatechange", value.asInstanceOf[js.Any])
+    inline def setOngatheringstatechange(value: IceTransportEventHandler): Self = StObject.set(x, "ongatheringstatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOngatheringstatechangeNull: Self = StObject.set(x, "ongatheringstatechange", null)
+    inline def setOngatheringstatechangeNull: Self = StObject.set(x, "ongatheringstatechange", null)
     
-    @scala.inline
-    def setOnselectedcandidatepairchange(value: IceTransportEventHandler): Self = StObject.set(x, "onselectedcandidatepairchange", value.asInstanceOf[js.Any])
+    inline def setOnselectedcandidatepairchange(value: IceTransportEventHandler): Self = StObject.set(x, "onselectedcandidatepairchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnselectedcandidatepairchangeNull: Self = StObject.set(x, "onselectedcandidatepairchange", null)
+    inline def setOnselectedcandidatepairchangeNull: Self = StObject.set(x, "onselectedcandidatepairchange", null)
     
-    @scala.inline
-    def setOnstatechange(value: IceTransportEventHandler): Self = StObject.set(x, "onstatechange", value.asInstanceOf[js.Any])
+    inline def setOnstatechange(value: IceTransportEventHandler): Self = StObject.set(x, "onstatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnstatechangeNull: Self = StObject.set(x, "onstatechange", null)
+    inline def setOnstatechangeNull: Self = StObject.set(x, "onstatechange", null)
   }
 }

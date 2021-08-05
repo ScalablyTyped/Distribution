@@ -13,16 +13,13 @@ trait DeleteMetricPolicyInput extends StObject {
 }
 object DeleteMetricPolicyInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName): DeleteMetricPolicyInput = {
+  inline def apply(ContainerName: ContainerName): DeleteMetricPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMetricPolicyInput]
   }
   
-  @scala.inline
-  implicit class DeleteMetricPolicyInputMutableBuilder[Self <: DeleteMetricPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMetricPolicyInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }
 }

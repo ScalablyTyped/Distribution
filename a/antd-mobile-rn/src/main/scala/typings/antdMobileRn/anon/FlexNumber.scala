@@ -10,16 +10,13 @@ trait FlexNumber extends StObject {
 }
 object FlexNumber {
   
-  @scala.inline
-  def apply(flex: Double): FlexNumber = {
+  inline def apply(flex: Double): FlexNumber = {
     val __obj = js.Dynamic.literal(flex = flex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexNumber]
   }
   
-  @scala.inline
-  implicit class FlexNumberMutableBuilder[Self <: FlexNumber] (val x: Self) extends AnyVal {
+  extension [Self <: FlexNumber](x: Self) {
     
-    @scala.inline
-    def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
   }
 }

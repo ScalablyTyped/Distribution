@@ -108,6 +108,5 @@ object Stroke {
   }
   
   /* static member */
-  @scala.inline
-  def format(strokes: js.Array[typings.vexflow.Vex.Flow.Stroke], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(strokes.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(strokes: js.Array[typings.vexflow.Vex.Flow.Stroke], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(strokes.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

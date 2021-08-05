@@ -10,8 +10,7 @@ trait EasClientSecurityPolicy
      with IEasClientSecurityPolicy
 object EasClientSecurityPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyAsync: () => IAsyncOperation[EasComplianceResults],
     checkCompliance: () => EasComplianceResults,
     disallowConvenienceLogon: Boolean,

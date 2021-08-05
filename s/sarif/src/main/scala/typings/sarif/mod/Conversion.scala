@@ -28,37 +28,27 @@ trait Conversion extends StObject {
 }
 object Conversion {
   
-  @scala.inline
-  def apply(tool: Tool): Conversion = {
+  inline def apply(tool: Tool): Conversion = {
     val __obj = js.Dynamic.literal(tool = tool.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conversion]
   }
   
-  @scala.inline
-  implicit class ConversionMutableBuilder[Self <: Conversion] (val x: Self) extends AnyVal {
+  extension [Self <: Conversion](x: Self) {
     
-    @scala.inline
-    def setAnalysisToolLogFiles(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "analysisToolLogFiles", value.asInstanceOf[js.Any])
+    inline def setAnalysisToolLogFiles(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "analysisToolLogFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisToolLogFilesUndefined: Self = StObject.set(x, "analysisToolLogFiles", js.undefined)
+    inline def setAnalysisToolLogFilesUndefined: Self = StObject.set(x, "analysisToolLogFiles", js.undefined)
     
-    @scala.inline
-    def setAnalysisToolLogFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "analysisToolLogFiles", js.Array(value :_*))
+    inline def setAnalysisToolLogFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "analysisToolLogFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setInvocation(value: Invocation): Self = StObject.set(x, "invocation", value.asInstanceOf[js.Any])
+    inline def setInvocation(value: Invocation): Self = StObject.set(x, "invocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationUndefined: Self = StObject.set(x, "invocation", js.undefined)
+    inline def setInvocationUndefined: Self = StObject.set(x, "invocation", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
   }
 }

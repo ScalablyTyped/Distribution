@@ -30,8 +30,7 @@ trait KmlExtrudableGeometry
 }
 object KmlExtrudableGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -58,19 +57,14 @@ object KmlExtrudableGeometry {
     __obj.asInstanceOf[KmlExtrudableGeometry]
   }
   
-  @scala.inline
-  implicit class KmlExtrudableGeometryMutableBuilder[Self <: KmlExtrudableGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: KmlExtrudableGeometry](x: Self) {
     
-    @scala.inline
-    def setGetExtrude(value: () => Boolean): Self = StObject.set(x, "getExtrude", js.Any.fromFunction0(value))
+    inline def setGetExtrude(value: () => Boolean): Self = StObject.set(x, "getExtrude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTessellate(value: () => Boolean): Self = StObject.set(x, "getTessellate", js.Any.fromFunction0(value))
+    inline def setGetTessellate(value: () => Boolean): Self = StObject.set(x, "getTessellate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetExtrude(value: Boolean => Unit): Self = StObject.set(x, "setExtrude", js.Any.fromFunction1(value))
+    inline def setSetExtrude(value: Boolean => Unit): Self = StObject.set(x, "setExtrude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTessellate(value: Boolean => Unit): Self = StObject.set(x, "setTessellate", js.Any.fromFunction1(value))
+    inline def setSetTessellate(value: Boolean => Unit): Self = StObject.set(x, "setTessellate", js.Any.fromFunction1(value))
   }
 }

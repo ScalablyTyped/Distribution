@@ -13,8 +13,7 @@ object createMixinsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(breakpoints: Breakpoints, spacing: Spacing, mixins: MixinsOptions): Mixins = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoints.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], mixins.asInstanceOf[js.Any])).asInstanceOf[Mixins]
+  inline def default(breakpoints: Breakpoints, spacing: Spacing, mixins: MixinsOptions): Mixins = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoints.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], mixins.asInstanceOf[js.Any])).asInstanceOf[Mixins]
   
   @js.native
   trait Mixins extends StObject {
@@ -34,26 +33,20 @@ object createMixinsMod {
   }
   object MixinsOptions {
     
-    @scala.inline
-    def apply(): MixinsOptions = {
+    inline def apply(): MixinsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MixinsOptions]
     }
     
-    @scala.inline
-    implicit class MixinsOptionsMutableBuilder[Self <: MixinsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MixinsOptions](x: Self) {
       
-      @scala.inline
-      def setGutters(value: /* styles */ js.UndefOr[CSSProperties] => CSSProperties): Self = StObject.set(x, "gutters", js.Any.fromFunction1(value))
+      inline def setGutters(value: /* styles */ js.UndefOr[CSSProperties] => CSSProperties): Self = StObject.set(x, "gutters", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+      inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
       
-      @scala.inline
-      def setToolbar(value: CSSProperties): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: CSSProperties): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+      inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     }
   }
 }

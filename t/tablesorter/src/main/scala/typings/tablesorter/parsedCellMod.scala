@@ -37,8 +37,7 @@ object parsedCellMod {
   }
   object ParsedCell {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $cell: JQuery[HTMLElement],
       $row: JQuery[HTMLElement],
       parsed: js.Any,
@@ -50,20 +49,15 @@ object parsedCellMod {
       __obj.asInstanceOf[ParsedCell]
     }
     
-    @scala.inline
-    implicit class ParsedCellMutableBuilder[Self <: ParsedCell] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedCell](x: Self) {
       
-      @scala.inline
-      def set$cell(value: JQuery[HTMLElement]): Self = StObject.set(x, "$cell", value.asInstanceOf[js.Any])
+      inline def set$cell(value: JQuery[HTMLElement]): Self = StObject.set(x, "$cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$row(value: JQuery[HTMLElement]): Self = StObject.set(x, "$row", value.asInstanceOf[js.Any])
+      inline def set$row(value: JQuery[HTMLElement]): Self = StObject.set(x, "$row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTbodyIndex(value: Double): Self = StObject.set(x, "tbodyIndex", value.asInstanceOf[js.Any])
+      inline def setTbodyIndex(value: Double): Self = StObject.set(x, "tbodyIndex", value.asInstanceOf[js.Any])
     }
   }
 }

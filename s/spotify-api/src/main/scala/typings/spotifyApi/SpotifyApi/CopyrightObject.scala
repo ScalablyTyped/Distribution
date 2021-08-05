@@ -18,20 +18,16 @@ trait CopyrightObject extends StObject {
 }
 object CopyrightObject {
   
-  @scala.inline
-  def apply(text: String, `type`: C | P): CopyrightObject = {
+  inline def apply(text: String, `type`: C | P): CopyrightObject = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyrightObject]
   }
   
-  @scala.inline
-  implicit class CopyrightObjectMutableBuilder[Self <: CopyrightObject] (val x: Self) extends AnyVal {
+  extension [Self <: CopyrightObject](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: C | P): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: C | P): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -33,34 +33,25 @@ trait GroupMember
 }
 object GroupMember {
   
-  @scala.inline
-  def apply(entity: Reference): GroupMember = {
+  inline def apply(entity: Reference): GroupMember = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMember]
   }
   
-  @scala.inline
-  implicit class GroupMemberMutableBuilder[Self <: GroupMember] (val x: Self) extends AnyVal {
+  extension [Self <: GroupMember](x: Self) {
     
-    @scala.inline
-    def setEntity(value: Reference): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Reference): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    inline def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+    inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def set_inactive(value: Element): Self = StObject.set(x, "_inactive", value.asInstanceOf[js.Any])
+    inline def set_inactive(value: Element): Self = StObject.set(x, "_inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_inactiveUndefined: Self = StObject.set(x, "_inactive", js.undefined)
+    inline def set_inactiveUndefined: Self = StObject.set(x, "_inactive", js.undefined)
   }
 }

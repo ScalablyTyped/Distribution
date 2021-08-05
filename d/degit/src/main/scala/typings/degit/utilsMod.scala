@@ -43,23 +43,16 @@ object utilsMod {
   @js.native
   val degitConfigName: String = js.native
   
-  @scala.inline
-  def exec(command: String): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
+  inline def exec(command: String): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
   
-  @scala.inline
-  def fetch(url: String, dest: String, proxy: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], proxy.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def fetch(url: String, dest: String, proxy: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], proxy.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def mkdirp(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mkdirp(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def stashFiles(dir: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stashFiles")(dir.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stashFiles(dir: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stashFiles")(dir.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def tryRequire(file: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def tryRequire(file: String, opts: ClearCache): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def tryRequire(file: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def tryRequire(file: String, opts: ClearCache): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def unstashFiles(dir: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstashFiles")(dir.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unstashFiles(dir: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstashFiles")(dir.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

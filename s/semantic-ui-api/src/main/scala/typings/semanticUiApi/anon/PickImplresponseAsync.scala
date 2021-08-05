@@ -17,8 +17,7 @@ trait PickImplresponseAsync extends StObject {
 }
 object PickImplresponseAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     responseAsync: (js.Function2[
       /* settings */ ApiSettings, 
       /* callback */ js.Function1[/* response */ js.Any, Unit], 
@@ -29,11 +28,9 @@ object PickImplresponseAsync {
     __obj.asInstanceOf[PickImplresponseAsync]
   }
   
-  @scala.inline
-  implicit class PickImplresponseAsyncMutableBuilder[Self <: PickImplresponseAsync] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplresponseAsync](x: Self) {
     
-    @scala.inline
-    def setResponseAsync(
+    inline def setResponseAsync(
       value: (js.Function2[
           /* settings */ ApiSettings, 
           /* callback */ js.Function1[/* response */ js.Any, Unit], 
@@ -41,8 +38,7 @@ object PickImplresponseAsync {
         ]) | `false`
     ): Self = StObject.set(x, "responseAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseAsyncFunction2(
+    inline def setResponseAsyncFunction2(
       value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
     ): Self = StObject.set(x, "responseAsync", js.Any.fromFunction2(value))
   }

@@ -40,8 +40,7 @@ trait FileInput extends StObject {
 }
 object FileInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chooseFile: String,
     disabled: String,
     fileDecorator: String,
@@ -63,55 +62,38 @@ object FileInput {
     __obj.asInstanceOf[FileInput]
   }
   
-  @scala.inline
-  implicit class FileInputMutableBuilder[Self <: FileInput] (val x: Self) extends AnyVal {
+  extension [Self <: FileInput](x: Self) {
     
-    @scala.inline
-    def setChooseFile(value: String): Self = StObject.set(x, "chooseFile", value.asInstanceOf[js.Any])
+    inline def setChooseFile(value: String): Self = StObject.set(x, "chooseFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDecorator(value: String): Self = StObject.set(x, "fileDecorator", value.asInstanceOf[js.Any])
+    inline def setFileDecorator(value: String): Self = StObject.set(x, "fileDecorator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInput(value: String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
+    inline def setFileInput(value: String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSign(value: String): Self = StObject.set(x, "fileSign", value.asInstanceOf[js.Any])
+    inline def setFileSign(value: String): Self = StObject.set(x, "fileSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSignBottom(value: String): Self = StObject.set(x, "fileSignBottom", value.asInstanceOf[js.Any])
+    inline def setFileSignBottom(value: String): Self = StObject.set(x, "fileSignBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoFileChosen(value: String): Self = StObject.set(x, "noFileChosen", value.asInstanceOf[js.Any])
+    inline def setNoFileChosen(value: String): Self = StObject.set(x, "noFileChosen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderInput(value: String): Self = StObject.set(x, "placeholderInput", value.asInstanceOf[js.Any])
+    inline def setPlaceholderInput(value: String): Self = StObject.set(x, "placeholderInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveButton(value: String): Self = StObject.set(x, "removeButton", value.asInstanceOf[js.Any])
+    inline def setRemoveButton(value: String): Self = StObject.set(x, "removeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveButtonBottom(value: String): Self = StObject.set(x, "removeButtonBottom", value.asInstanceOf[js.Any])
+    inline def setRemoveButtonBottom(value: String): Self = StObject.set(x, "removeButtonBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFile(value: String): Self = StObject.set(x, "removeFile", value.asInstanceOf[js.Any])
+    inline def setRemoveFile(value: String): Self = StObject.set(x, "removeFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFileSvg(value: String): Self = StObject.set(x, "removeFileSvg", value.asInstanceOf[js.Any])
+    inline def setRemoveFileSvg(value: String): Self = StObject.set(x, "removeFileSvg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
   }
 }

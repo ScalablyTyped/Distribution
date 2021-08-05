@@ -18,8 +18,7 @@ trait IGenericItemkeyKey extends StObject {
 }
 object IGenericItemkeyKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ValidationState: ValidationState,
     imageInitials: String,
     key: typings.react.mod.Key,
@@ -29,19 +28,14 @@ object IGenericItemkeyKey {
     __obj.asInstanceOf[IGenericItemkeyKey]
   }
   
-  @scala.inline
-  implicit class IGenericItemkeyKeyMutableBuilder[Self <: IGenericItemkeyKey] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericItemkeyKey](x: Self) {
     
-    @scala.inline
-    def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
+    inline def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+    inline def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationState(value: ValidationState): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
+    inline def setValidationState(value: ValidationState): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
   }
 }

@@ -15,17 +15,14 @@ trait ISqlTypeWithNoParams
 }
 object ISqlTypeWithNoParams {
   
-  @scala.inline
-  def apply(`type`: ISqlTypeFactoryWithNoParams): ISqlTypeWithNoParams = {
+  inline def apply(`type`: ISqlTypeFactoryWithNoParams): ISqlTypeWithNoParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISqlTypeWithNoParams]
   }
   
-  @scala.inline
-  implicit class ISqlTypeWithNoParamsMutableBuilder[Self <: ISqlTypeWithNoParams] (val x: Self) extends AnyVal {
+  extension [Self <: ISqlTypeWithNoParams](x: Self) {
     
-    @scala.inline
-    def setType(value: ISqlTypeFactoryWithNoParams): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ISqlTypeFactoryWithNoParams): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

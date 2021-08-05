@@ -24,8 +24,7 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: (String, String, DeploymentOptions, CbCallback) => Unit,
     delete: (String, CbCallback) => Unit,
     read: (String, CbCallback) => Unit,
@@ -39,31 +38,22 @@ object Deployment {
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (String, String, DeploymentOptions, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+    inline def setCreate(value: (String, String, DeploymentOptions, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    inline def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRead(value: (String, CbCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+    inline def setRead(value: (String, CbCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReadAll(value: (QueryObj, CbCallback) => Unit): Self = StObject.set(x, "readAll", js.Any.fromFunction2(value))
+    inline def setReadAll(value: (QueryObj, CbCallback) => Unit): Self = StObject.set(x, "readAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (String, DeploymentOptions, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (String, DeploymentOptions, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

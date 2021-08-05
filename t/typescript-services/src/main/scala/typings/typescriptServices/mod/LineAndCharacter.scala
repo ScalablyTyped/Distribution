@@ -11,10 +11,10 @@ class LineAndCharacter protected ()
      with typings.typescriptServices.TypeScript.LineAndCharacter {
   def this(line: Double, character: Double) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _character: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _line: js.Any = js.native
   
   /* CompleteClass */

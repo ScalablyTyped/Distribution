@@ -446,8 +446,7 @@ object anon {
   }
   object Accountbook {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `account-book`: Double,
       alert: Double,
       `alipay-circle`: Double,
@@ -779,662 +778,443 @@ object anon {
       __obj.asInstanceOf[Accountbook]
     }
     
-    @scala.inline
-    implicit class AccountbookMutableBuilder[Self <: Accountbook] (val x: Self) extends AnyVal {
+    extension [Self <: Accountbook](x: Self) {
       
-      @scala.inline
-      def `setAccount-book`(value: Double): Self = StObject.set(x, "account-book", value.asInstanceOf[js.Any])
+      inline def `setAccount-book`(value: Double): Self = StObject.set(x, "account-book", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlipay-circle`(value: Double): Self = StObject.set(x, "alipay-circle", value.asInstanceOf[js.Any])
+      inline def `setAlipay-circle`(value: Double): Self = StObject.set(x, "alipay-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlipay-square`(value: Double): Self = StObject.set(x, "alipay-square", value.asInstanceOf[js.Any])
+      inline def `setAlipay-square`(value: Double): Self = StObject.set(x, "alipay-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliwangwang(value: Double): Self = StObject.set(x, "aliwangwang", value.asInstanceOf[js.Any])
+      inline def setAliwangwang(value: Double): Self = StObject.set(x, "aliwangwang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAmazon-circle`(value: Double): Self = StObject.set(x, "amazon-circle", value.asInstanceOf[js.Any])
+      inline def `setAmazon-circle`(value: Double): Self = StObject.set(x, "amazon-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAmazon-square`(value: Double): Self = StObject.set(x, "amazon-square", value.asInstanceOf[js.Any])
+      inline def `setAmazon-square`(value: Double): Self = StObject.set(x, "amazon-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroid(value: Double): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: Double): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApple(value: Double): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
+      inline def setApple(value: Double): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppstore(value: Double): Self = StObject.set(x, "appstore", value.asInstanceOf[js.Any])
+      inline def setAppstore(value: Double): Self = StObject.set(x, "appstore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackward(value: Double): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
+      inline def setBackward(value: Double): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBank(value: Double): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
+      inline def setBank(value: Double): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBehance-circle`(value: Double): Self = StObject.set(x, "behance-circle", value.asInstanceOf[js.Any])
+      inline def `setBehance-circle`(value: Double): Self = StObject.set(x, "behance-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBehance-square`(value: Double): Self = StObject.set(x, "behance-square", value.asInstanceOf[js.Any])
+      inline def `setBehance-square`(value: Double): Self = StObject.set(x, "behance-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBell(value: Double): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
+      inline def setBell(value: Double): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBook(value: Double): Self = StObject.set(x, "book", value.asInstanceOf[js.Any])
+      inline def setBook(value: Double): Self = StObject.set(x, "book", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBox-plot`(value: Double): Self = StObject.set(x, "box-plot", value.asInstanceOf[js.Any])
+      inline def `setBox-plot`(value: Double): Self = StObject.set(x, "box-plot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBug(value: Double): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
+      inline def setBug(value: Double): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+      inline def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulb(value: Double): Self = StObject.set(x, "bulb", value.asInstanceOf[js.Any])
+      inline def setBulb(value: Double): Self = StObject.set(x, "bulb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalculator(value: Double): Self = StObject.set(x, "calculator", value.asInstanceOf[js.Any])
+      inline def setCalculator(value: Double): Self = StObject.set(x, "calculator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendar(value: Double): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+      inline def setCalendar(value: Double): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Double): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Double): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCar(value: Double): Self = StObject.set(x, "car", value.asInstanceOf[js.Any])
+      inline def setCar(value: Double): Self = StObject.set(x, "car", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-down`(value: Double): Self = StObject.set(x, "caret-down", value.asInstanceOf[js.Any])
+      inline def `setCaret-down`(value: Double): Self = StObject.set(x, "caret-down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-left`(value: Double): Self = StObject.set(x, "caret-left", value.asInstanceOf[js.Any])
+      inline def `setCaret-left`(value: Double): Self = StObject.set(x, "caret-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-right`(value: Double): Self = StObject.set(x, "caret-right", value.asInstanceOf[js.Any])
+      inline def `setCaret-right`(value: Double): Self = StObject.set(x, "caret-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-up`(value: Double): Self = StObject.set(x, "caret-up", value.asInstanceOf[js.Any])
+      inline def `setCaret-up`(value: Double): Self = StObject.set(x, "caret-up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCarry-out`(value: Double): Self = StObject.set(x, "carry-out", value.asInstanceOf[js.Any])
+      inline def `setCarry-out`(value: Double): Self = StObject.set(x, "carry-out", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCheck-circle`(value: Double): Self = StObject.set(x, "check-circle", value.asInstanceOf[js.Any])
+      inline def `setCheck-circle`(value: Double): Self = StObject.set(x, "check-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCheck-square`(value: Double): Self = StObject.set(x, "check-square", value.asInstanceOf[js.Any])
+      inline def `setCheck-square`(value: Double): Self = StObject.set(x, "check-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChrome(value: Double): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: Double): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCi-circle`(value: Double): Self = StObject.set(x, "ci-circle", value.asInstanceOf[js.Any])
+      inline def `setCi-circle`(value: Double): Self = StObject.set(x, "ci-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClock-circle`(value: Double): Self = StObject.set(x, "clock-circle", value.asInstanceOf[js.Any])
+      inline def `setClock-circle`(value: Double): Self = StObject.set(x, "clock-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClose-circle`(value: Double): Self = StObject.set(x, "close-circle", value.asInstanceOf[js.Any])
+      inline def `setClose-circle`(value: Double): Self = StObject.set(x, "close-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClose-square`(value: Double): Self = StObject.set(x, "close-square", value.asInstanceOf[js.Any])
+      inline def `setClose-square`(value: Double): Self = StObject.set(x, "close-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloud(value: Double): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
+      inline def setCloud(value: Double): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCode-sandbox-circle`(value: Double): Self = StObject.set(x, "code-sandbox-circle", value.asInstanceOf[js.Any])
+      inline def `setCode-sandbox-circle`(value: Double): Self = StObject.set(x, "code-sandbox-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCode-sandbox-square`(value: Double): Self = StObject.set(x, "code-sandbox-square", value.asInstanceOf[js.Any])
+      inline def `setCode-sandbox-square`(value: Double): Self = StObject.set(x, "code-sandbox-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCodepen-circle`(value: Double): Self = StObject.set(x, "codepen-circle", value.asInstanceOf[js.Any])
+      inline def `setCodepen-circle`(value: Double): Self = StObject.set(x, "codepen-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCodepen-square`(value: Double): Self = StObject.set(x, "codepen-square", value.asInstanceOf[js.Any])
+      inline def `setCodepen-square`(value: Double): Self = StObject.set(x, "codepen-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompass(value: Double): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
+      inline def setCompass(value: Double): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+      inline def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: Double): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Double): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopy(value: Double): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Double): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCopyright-circle`(value: Double): Self = StObject.set(x, "copyright-circle", value.asInstanceOf[js.Any])
+      inline def `setCopyright-circle`(value: Double): Self = StObject.set(x, "copyright-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCredit-card`(value: Double): Self = StObject.set(x, "credit-card", value.asInstanceOf[js.Any])
+      inline def `setCredit-card`(value: Double): Self = StObject.set(x, "credit-card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrown(value: Double): Self = StObject.set(x, "crown", value.asInstanceOf[js.Any])
+      inline def setCrown(value: Double): Self = StObject.set(x, "crown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCustomer-service`(value: Double): Self = StObject.set(x, "customer-service", value.asInstanceOf[js.Any])
+      inline def `setCustomer-service`(value: Double): Self = StObject.set(x, "customer-service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashboard(value: Double): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
+      inline def setDashboard(value: Double): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiff(value: Double): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      inline def setDiff(value: Double): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDingtalk-circle`(value: Double): Self = StObject.set(x, "dingtalk-circle", value.asInstanceOf[js.Any])
+      inline def `setDingtalk-circle`(value: Double): Self = StObject.set(x, "dingtalk-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDingtalk-square`(value: Double): Self = StObject.set(x, "dingtalk-square", value.asInstanceOf[js.Any])
+      inline def `setDingtalk-square`(value: Double): Self = StObject.set(x, "dingtalk-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDislike(value: Double): Self = StObject.set(x, "dislike", value.asInstanceOf[js.Any])
+      inline def setDislike(value: Double): Self = StObject.set(x, "dislike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDollar-circle`(value: Double): Self = StObject.set(x, "dollar-circle", value.asInstanceOf[js.Any])
+      inline def `setDollar-circle`(value: Double): Self = StObject.set(x, "dollar-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDown-circle`(value: Double): Self = StObject.set(x, "down-circle", value.asInstanceOf[js.Any])
+      inline def `setDown-circle`(value: Double): Self = StObject.set(x, "down-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDown-square`(value: Double): Self = StObject.set(x, "down-square", value.asInstanceOf[js.Any])
+      inline def `setDown-square`(value: Double): Self = StObject.set(x, "down-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDribbble-circle`(value: Double): Self = StObject.set(x, "dribbble-circle", value.asInstanceOf[js.Any])
+      inline def `setDribbble-circle`(value: Double): Self = StObject.set(x, "dribbble-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDribbble-square`(value: Double): Self = StObject.set(x, "dribbble-square", value.asInstanceOf[js.Any])
+      inline def `setDribbble-square`(value: Double): Self = StObject.set(x, "dribbble-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDropbox-circle`(value: Double): Self = StObject.set(x, "dropbox-circle", value.asInstanceOf[js.Any])
+      inline def `setDropbox-circle`(value: Double): Self = StObject.set(x, "dropbox-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDropbox-square`(value: Double): Self = StObject.set(x, "dropbox-square", value.asInstanceOf[js.Any])
+      inline def `setDropbox-square`(value: Double): Self = StObject.set(x, "dropbox-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdit(value: Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: Double): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Double): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEuro-circle`(value: Double): Self = StObject.set(x, "euro-circle", value.asInstanceOf[js.Any])
+      inline def `setEuro-circle`(value: Double): Self = StObject.set(x, "euro-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setExclamation-circle`(value: Double): Self = StObject.set(x, "exclamation-circle", value.asInstanceOf[js.Any])
+      inline def `setExclamation-circle`(value: Double): Self = StObject.set(x, "exclamation-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperiment(value: Double): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
+      inline def setExperiment(value: Double): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEye(value: Double): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+      inline def setEye(value: Double): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEye-invisible`(value: Double): Self = StObject.set(x, "eye-invisible", value.asInstanceOf[js.Any])
+      inline def `setEye-invisible`(value: Double): Self = StObject.set(x, "eye-invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebook(value: Double): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+      inline def setFacebook(value: Double): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFast-backward`(value: Double): Self = StObject.set(x, "fast-backward", value.asInstanceOf[js.Any])
+      inline def `setFast-backward`(value: Double): Self = StObject.set(x, "fast-backward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFast-forward`(value: Double): Self = StObject.set(x, "fast-forward", value.asInstanceOf[js.Any])
+      inline def `setFast-forward`(value: Double): Self = StObject.set(x, "fast-forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-add`(value: Double): Self = StObject.set(x, "file-add", value.asInstanceOf[js.Any])
+      inline def `setFile-add`(value: Double): Self = StObject.set(x, "file-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-excel`(value: Double): Self = StObject.set(x, "file-excel", value.asInstanceOf[js.Any])
+      inline def `setFile-excel`(value: Double): Self = StObject.set(x, "file-excel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-exclamation`(value: Double): Self = StObject.set(x, "file-exclamation", value.asInstanceOf[js.Any])
+      inline def `setFile-exclamation`(value: Double): Self = StObject.set(x, "file-exclamation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-image`(value: Double): Self = StObject.set(x, "file-image", value.asInstanceOf[js.Any])
+      inline def `setFile-image`(value: Double): Self = StObject.set(x, "file-image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-markdown`(value: Double): Self = StObject.set(x, "file-markdown", value.asInstanceOf[js.Any])
+      inline def `setFile-markdown`(value: Double): Self = StObject.set(x, "file-markdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-pdf`(value: Double): Self = StObject.set(x, "file-pdf", value.asInstanceOf[js.Any])
+      inline def `setFile-pdf`(value: Double): Self = StObject.set(x, "file-pdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-ppt`(value: Double): Self = StObject.set(x, "file-ppt", value.asInstanceOf[js.Any])
+      inline def `setFile-ppt`(value: Double): Self = StObject.set(x, "file-ppt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-text`(value: Double): Self = StObject.set(x, "file-text", value.asInstanceOf[js.Any])
+      inline def `setFile-text`(value: Double): Self = StObject.set(x, "file-text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-unknown`(value: Double): Self = StObject.set(x, "file-unknown", value.asInstanceOf[js.Any])
+      inline def `setFile-unknown`(value: Double): Self = StObject.set(x, "file-unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-word`(value: Double): Self = StObject.set(x, "file-word", value.asInstanceOf[js.Any])
+      inline def `setFile-word`(value: Double): Self = StObject.set(x, "file-word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-zip`(value: Double): Self = StObject.set(x, "file-zip", value.asInstanceOf[js.Any])
+      inline def `setFile-zip`(value: Double): Self = StObject.set(x, "file-zip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFire(value: Double): Self = StObject.set(x, "fire", value.asInstanceOf[js.Any])
+      inline def setFire(value: Double): Self = StObject.set(x, "fire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlag(value: Double): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: Double): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFolder-add`(value: Double): Self = StObject.set(x, "folder-add", value.asInstanceOf[js.Any])
+      inline def `setFolder-add`(value: Double): Self = StObject.set(x, "folder-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFolder-open`(value: Double): Self = StObject.set(x, "folder-open", value.asInstanceOf[js.Any])
+      inline def `setFolder-open`(value: Double): Self = StObject.set(x, "folder-open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFormat-painter`(value: Double): Self = StObject.set(x, "format-painter", value.asInstanceOf[js.Any])
+      inline def `setFormat-painter`(value: Double): Self = StObject.set(x, "format-painter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForward(value: Double): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+      inline def setForward(value: Double): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrown(value: Double): Self = StObject.set(x, "frown", value.asInstanceOf[js.Any])
+      inline def setFrown(value: Double): Self = StObject.set(x, "frown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFund(value: Double): Self = StObject.set(x, "fund", value.asInstanceOf[js.Any])
+      inline def setFund(value: Double): Self = StObject.set(x, "fund", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFunnel-plot`(value: Double): Self = StObject.set(x, "funnel-plot", value.asInstanceOf[js.Any])
+      inline def `setFunnel-plot`(value: Double): Self = StObject.set(x, "funnel-plot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGift(value: Double): Self = StObject.set(x, "gift", value.asInstanceOf[js.Any])
+      inline def setGift(value: Double): Self = StObject.set(x, "gift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGithub(value: Double): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+      inline def setGithub(value: Double): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitlab(value: Double): Self = StObject.set(x, "gitlab", value.asInstanceOf[js.Any])
+      inline def setGitlab(value: Double): Self = StObject.set(x, "gitlab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGold(value: Double): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
+      inline def setGold(value: Double): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGolden(value: Double): Self = StObject.set(x, "golden", value.asInstanceOf[js.Any])
+      inline def setGolden(value: Double): Self = StObject.set(x, "golden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGoogle-circle`(value: Double): Self = StObject.set(x, "google-circle", value.asInstanceOf[js.Any])
+      inline def `setGoogle-circle`(value: Double): Self = StObject.set(x, "google-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGoogle-plus-circle`(value: Double): Self = StObject.set(x, "google-plus-circle", value.asInstanceOf[js.Any])
+      inline def `setGoogle-plus-circle`(value: Double): Self = StObject.set(x, "google-plus-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGoogle-plus-square`(value: Double): Self = StObject.set(x, "google-plus-square", value.asInstanceOf[js.Any])
+      inline def `setGoogle-plus-square`(value: Double): Self = StObject.set(x, "google-plus-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGoogle-square`(value: Double): Self = StObject.set(x, "google-square", value.asInstanceOf[js.Any])
+      inline def `setGoogle-square`(value: Double): Self = StObject.set(x, "google-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHdd(value: Double): Self = StObject.set(x, "hdd", value.asInstanceOf[js.Any])
+      inline def setHdd(value: Double): Self = StObject.set(x, "hdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
+      inline def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlight(value: Double): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Double): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHome(value: Double): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+      inline def setHome(value: Double): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourglass(value: Double): Self = StObject.set(x, "hourglass", value.asInstanceOf[js.Any])
+      inline def setHourglass(value: Double): Self = StObject.set(x, "hourglass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml5(value: Double): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+      inline def setHtml5(value: Double): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdcard(value: Double): Self = StObject.set(x, "idcard", value.asInstanceOf[js.Any])
+      inline def setIdcard(value: Double): Self = StObject.set(x, "idcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIe-circle`(value: Double): Self = StObject.set(x, "ie-circle", value.asInstanceOf[js.Any])
+      inline def `setIe-circle`(value: Double): Self = StObject.set(x, "ie-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIe-square`(value: Double): Self = StObject.set(x, "ie-square", value.asInstanceOf[js.Any])
+      inline def `setIe-square`(value: Double): Self = StObject.set(x, "ie-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInfo-circle`(value: Double): Self = StObject.set(x, "info-circle", value.asInstanceOf[js.Any])
+      inline def `setInfo-circle`(value: Double): Self = StObject.set(x, "info-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram(value: Double): Self = StObject.set(x, "instagram", value.asInstanceOf[js.Any])
+      inline def setInstagram(value: Double): Self = StObject.set(x, "instagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsurance(value: Double): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
+      inline def setInsurance(value: Double): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteraction(value: Double): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+      inline def setInteraction(value: Double): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-circle`(value: Double): Self = StObject.set(x, "left-circle", value.asInstanceOf[js.Any])
+      inline def `setLeft-circle`(value: Double): Self = StObject.set(x, "left-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-square`(value: Double): Self = StObject.set(x, "left-square", value.asInstanceOf[js.Any])
+      inline def `setLeft-square`(value: Double): Self = StObject.set(x, "left-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLike(value: Double): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
+      inline def setLike(value: Double): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedin(value: Double): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
+      inline def setLinkedin(value: Double): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLock(value: Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMac-command`(value: Double): Self = StObject.set(x, "mac-command", value.asInstanceOf[js.Any])
+      inline def `setMac-command`(value: Double): Self = StObject.set(x, "mac-command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMail(value: Double): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
+      inline def setMail(value: Double): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedicine-box`(value: Double): Self = StObject.set(x, "medicine-box", value.asInstanceOf[js.Any])
+      inline def `setMedicine-box`(value: Double): Self = StObject.set(x, "medicine-box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedium-circle`(value: Double): Self = StObject.set(x, "medium-circle", value.asInstanceOf[js.Any])
+      inline def `setMedium-circle`(value: Double): Self = StObject.set(x, "medium-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedium-square`(value: Double): Self = StObject.set(x, "medium-square", value.asInstanceOf[js.Any])
+      inline def `setMedium-square`(value: Double): Self = StObject.set(x, "medium-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeh(value: Double): Self = StObject.set(x, "meh", value.asInstanceOf[js.Any])
+      inline def setMeh(value: Double): Self = StObject.set(x, "meh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: Double): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Double): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinus-circle`(value: Double): Self = StObject.set(x, "minus-circle", value.asInstanceOf[js.Any])
+      inline def `setMinus-circle`(value: Double): Self = StObject.set(x, "minus-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinus-square`(value: Double): Self = StObject.set(x, "minus-square", value.asInstanceOf[js.Any])
+      inline def `setMinus-square`(value: Double): Self = StObject.set(x, "minus-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMoney-collect`(value: Double): Self = StObject.set(x, "money-collect", value.asInstanceOf[js.Any])
+      inline def `setMoney-collect`(value: Double): Self = StObject.set(x, "money-collect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: Double): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Double): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPause-circle`(value: Double): Self = StObject.set(x, "pause-circle", value.asInstanceOf[js.Any])
+      inline def `setPause-circle`(value: Double): Self = StObject.set(x, "pause-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPay-circle`(value: Double): Self = StObject.set(x, "pay-circle", value.asInstanceOf[js.Any])
+      inline def `setPay-circle`(value: Double): Self = StObject.set(x, "pay-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: Double): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: Double): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicture(value: Double): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: Double): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPie-chart`(value: Double): Self = StObject.set(x, "pie-chart", value.asInstanceOf[js.Any])
+      inline def `setPie-chart`(value: Double): Self = StObject.set(x, "pie-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlay-circle`(value: Double): Self = StObject.set(x, "play-circle", value.asInstanceOf[js.Any])
+      inline def `setPlay-circle`(value: Double): Self = StObject.set(x, "play-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlay-square`(value: Double): Self = StObject.set(x, "play-square", value.asInstanceOf[js.Any])
+      inline def `setPlay-square`(value: Double): Self = StObject.set(x, "play-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlus-circle`(value: Double): Self = StObject.set(x, "plus-circle", value.asInstanceOf[js.Any])
+      inline def `setPlus-circle`(value: Double): Self = StObject.set(x, "plus-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlus-square`(value: Double): Self = StObject.set(x, "plus-square", value.asInstanceOf[js.Any])
+      inline def `setPlus-square`(value: Double): Self = StObject.set(x, "plus-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPound-circle`(value: Double): Self = StObject.set(x, "pound-circle", value.asInstanceOf[js.Any])
+      inline def `setPound-circle`(value: Double): Self = StObject.set(x, "pound-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinter(value: Double): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
+      inline def setPrinter(value: Double): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: Double): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Double): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setProperty-safety`(value: Double): Self = StObject.set(x, "property-safety", value.asInstanceOf[js.Any])
+      inline def `setProperty-safety`(value: Double): Self = StObject.set(x, "property-safety", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushpin(value: Double): Self = StObject.set(x, "pushpin", value.asInstanceOf[js.Any])
+      inline def setPushpin(value: Double): Self = StObject.set(x, "pushpin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setQq-circle`(value: Double): Self = StObject.set(x, "qq-circle", value.asInstanceOf[js.Any])
+      inline def `setQq-circle`(value: Double): Self = StObject.set(x, "qq-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setQq-square`(value: Double): Self = StObject.set(x, "qq-square", value.asInstanceOf[js.Any])
+      inline def `setQq-square`(value: Double): Self = StObject.set(x, "qq-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setQuestion-circle`(value: Double): Self = StObject.set(x, "question-circle", value.asInstanceOf[js.Any])
+      inline def `setQuestion-circle`(value: Double): Self = StObject.set(x, "question-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconciliation(value: Double): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
+      inline def setReconciliation(value: Double): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRed-envelope`(value: Double): Self = StObject.set(x, "red-envelope", value.asInstanceOf[js.Any])
+      inline def `setRed-envelope`(value: Double): Self = StObject.set(x, "red-envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setReddit-circle`(value: Double): Self = StObject.set(x, "reddit-circle", value.asInstanceOf[js.Any])
+      inline def `setReddit-circle`(value: Double): Self = StObject.set(x, "reddit-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setReddit-square`(value: Double): Self = StObject.set(x, "reddit-square", value.asInstanceOf[js.Any])
+      inline def `setReddit-square`(value: Double): Self = StObject.set(x, "reddit-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest(value: Double): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+      inline def setRest(value: Double): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-circle`(value: Double): Self = StObject.set(x, "right-circle", value.asInstanceOf[js.Any])
+      inline def `setRight-circle`(value: Double): Self = StObject.set(x, "right-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-square`(value: Double): Self = StObject.set(x, "right-square", value.asInstanceOf[js.Any])
+      inline def `setRight-square`(value: Double): Self = StObject.set(x, "right-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobot(value: Double): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
+      inline def setRobot(value: Double): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRocket(value: Double): Self = StObject.set(x, "rocket", value.asInstanceOf[js.Any])
+      inline def setRocket(value: Double): Self = StObject.set(x, "rocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSafety-certificate`(value: Double): Self = StObject.set(x, "safety-certificate", value.asInstanceOf[js.Any])
+      inline def `setSafety-certificate`(value: Double): Self = StObject.set(x, "safety-certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSave(value: Double): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+      inline def setSave(value: Double): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedule(value: Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSecurity-scan`(value: Double): Self = StObject.set(x, "security-scan", value.asInstanceOf[js.Any])
+      inline def `setSecurity-scan`(value: Double): Self = StObject.set(x, "security-scan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetting(value: Double): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+      inline def setSetting(value: Double): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShop(value: Double): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
+      inline def setShop(value: Double): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShopping(value: Double): Self = StObject.set(x, "shopping", value.asInstanceOf[js.Any])
+      inline def setShopping(value: Double): Self = StObject.set(x, "shopping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: Double): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: Double): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSketch-circle`(value: Double): Self = StObject.set(x, "sketch-circle", value.asInstanceOf[js.Any])
+      inline def `setSketch-circle`(value: Double): Self = StObject.set(x, "sketch-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSketch-square`(value: Double): Self = StObject.set(x, "sketch-square", value.asInstanceOf[js.Any])
+      inline def `setSketch-square`(value: Double): Self = StObject.set(x, "sketch-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkin(value: Double): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: Double): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkype(value: Double): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
+      inline def setSkype(value: Double): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSlack-circle`(value: Double): Self = StObject.set(x, "slack-circle", value.asInstanceOf[js.Any])
+      inline def `setSlack-circle`(value: Double): Self = StObject.set(x, "slack-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSlack-square`(value: Double): Self = StObject.set(x, "slack-square", value.asInstanceOf[js.Any])
+      inline def `setSlack-square`(value: Double): Self = StObject.set(x, "slack-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliders(value: Double): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+      inline def setSliders(value: Double): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmile(value: Double): Self = StObject.set(x, "smile", value.asInstanceOf[js.Any])
+      inline def setSmile(value: Double): Self = StObject.set(x, "smile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnippets(value: Double): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
+      inline def setSnippets(value: Double): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSound(value: Double): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: Double): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar(value: Double): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+      inline def setStar(value: Double): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStep-backward`(value: Double): Self = StObject.set(x, "step-backward", value.asInstanceOf[js.Any])
+      inline def `setStep-backward`(value: Double): Self = StObject.set(x, "step-backward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStep-forward`(value: Double): Self = StObject.set(x, "step-forward", value.asInstanceOf[js.Any])
+      inline def `setStep-forward`(value: Double): Self = StObject.set(x, "step-forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitcher(value: Double): Self = StObject.set(x, "switcher", value.asInstanceOf[js.Any])
+      inline def setSwitcher(value: Double): Self = StObject.set(x, "switcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablet(value: Double): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: Double): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTaobao-circle`(value: Double): Self = StObject.set(x, "taobao-circle", value.asInstanceOf[js.Any])
+      inline def `setTaobao-circle`(value: Double): Self = StObject.set(x, "taobao-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTaobao-square`(value: Double): Self = StObject.set(x, "taobao-square", value.asInstanceOf[js.Any])
+      inline def `setTaobao-square`(value: Double): Self = StObject.set(x, "taobao-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThunderbolt(value: Double): Self = StObject.set(x, "thunderbolt", value.asInstanceOf[js.Any])
+      inline def setThunderbolt(value: Double): Self = StObject.set(x, "thunderbolt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTool(value: Double): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+      inline def setTool(value: Double): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTrademark-circle`(value: Double): Self = StObject.set(x, "trademark-circle", value.asInstanceOf[js.Any])
+      inline def `setTrademark-circle`(value: Double): Self = StObject.set(x, "trademark-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrophy(value: Double): Self = StObject.set(x, "trophy", value.asInstanceOf[js.Any])
+      inline def setTrophy(value: Double): Self = StObject.set(x, "trophy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTwitter-circle`(value: Double): Self = StObject.set(x, "twitter-circle", value.asInstanceOf[js.Any])
+      inline def `setTwitter-circle`(value: Double): Self = StObject.set(x, "twitter-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTwitter-square`(value: Double): Self = StObject.set(x, "twitter-square", value.asInstanceOf[js.Any])
+      inline def `setTwitter-square`(value: Double): Self = StObject.set(x, "twitter-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+      inline def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUp-circle`(value: Double): Self = StObject.set(x, "up-circle", value.asInstanceOf[js.Any])
+      inline def `setUp-circle`(value: Double): Self = StObject.set(x, "up-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUp-square`(value: Double): Self = StObject.set(x, "up-square", value.asInstanceOf[js.Any])
+      inline def `setUp-square`(value: Double): Self = StObject.set(x, "up-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsb(value: Double): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
+      inline def setUsb(value: Double): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVideo-camera`(value: Double): Self = StObject.set(x, "video-camera", value.asInstanceOf[js.Any])
+      inline def `setVideo-camera`(value: Double): Self = StObject.set(x, "video-camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWallet(value: Double): Self = StObject.set(x, "wallet", value.asInstanceOf[js.Any])
+      inline def setWallet(value: Double): Self = StObject.set(x, "wallet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWechat(value: Double): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
+      inline def setWechat(value: Double): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeibo-circle`(value: Double): Self = StObject.set(x, "weibo-circle", value.asInstanceOf[js.Any])
+      inline def `setWeibo-circle`(value: Double): Self = StObject.set(x, "weibo-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeibo-square`(value: Double): Self = StObject.set(x, "weibo-square", value.asInstanceOf[js.Any])
+      inline def `setWeibo-square`(value: Double): Self = StObject.set(x, "weibo-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindows(value: Double): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Double): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYahoo(value: Double): Self = StObject.set(x, "yahoo", value.asInstanceOf[js.Any])
+      inline def setYahoo(value: Double): Self = StObject.set(x, "yahoo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoutube(value: Double): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
+      inline def setYoutube(value: Double): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYuque(value: Double): Self = StObject.set(x, "yuque", value.asInstanceOf[js.Any])
+      inline def setYuque(value: Double): Self = StObject.set(x, "yuque", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setZhihu-circle`(value: Double): Self = StObject.set(x, "zhihu-circle", value.asInstanceOf[js.Any])
+      inline def `setZhihu-circle`(value: Double): Self = StObject.set(x, "zhihu-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setZhihu-square`(value: Double): Self = StObject.set(x, "zhihu-square", value.asInstanceOf[js.Any])
+      inline def `setZhihu-square`(value: Double): Self = StObject.set(x, "zhihu-square", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2282,8 +2062,7 @@ object anon {
   }
   object Aim {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `account-book`: Double,
       aim: Double,
       alert: Double,
@@ -2663,1268 +2442,847 @@ object anon {
       __obj.asInstanceOf[Aim]
     }
     
-    @scala.inline
-    implicit class AimMutableBuilder[Self <: Aim] (val x: Self) extends AnyVal {
+    extension [Self <: Aim](x: Self) {
       
-      @scala.inline
-      def `setAccount-book`(value: Double): Self = StObject.set(x, "account-book", value.asInstanceOf[js.Any])
+      inline def `setAccount-book`(value: Double): Self = StObject.set(x, "account-book", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAim(value: Double): Self = StObject.set(x, "aim", value.asInstanceOf[js.Any])
+      inline def setAim(value: Double): Self = StObject.set(x, "aim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlibaba(value: Double): Self = StObject.set(x, "alibaba", value.asInstanceOf[js.Any])
+      inline def setAlibaba(value: Double): Self = StObject.set(x, "alibaba", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlign-center`(value: Double): Self = StObject.set(x, "align-center", value.asInstanceOf[js.Any])
+      inline def `setAlign-center`(value: Double): Self = StObject.set(x, "align-center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlign-left`(value: Double): Self = StObject.set(x, "align-left", value.asInstanceOf[js.Any])
+      inline def `setAlign-left`(value: Double): Self = StObject.set(x, "align-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlign-right`(value: Double): Self = StObject.set(x, "align-right", value.asInstanceOf[js.Any])
+      inline def `setAlign-right`(value: Double): Self = StObject.set(x, "align-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlipay(value: Double): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
+      inline def setAlipay(value: Double): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlipay-circle`(value: Double): Self = StObject.set(x, "alipay-circle", value.asInstanceOf[js.Any])
+      inline def `setAlipay-circle`(value: Double): Self = StObject.set(x, "alipay-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliwangwang(value: Double): Self = StObject.set(x, "aliwangwang", value.asInstanceOf[js.Any])
+      inline def setAliwangwang(value: Double): Self = StObject.set(x, "aliwangwang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliyun(value: Double): Self = StObject.set(x, "aliyun", value.asInstanceOf[js.Any])
+      inline def setAliyun(value: Double): Self = StObject.set(x, "aliyun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmazon(value: Double): Self = StObject.set(x, "amazon", value.asInstanceOf[js.Any])
+      inline def setAmazon(value: Double): Self = StObject.set(x, "amazon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroid(value: Double): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: Double): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAnt-cloud`(value: Double): Self = StObject.set(x, "ant-cloud", value.asInstanceOf[js.Any])
+      inline def `setAnt-cloud`(value: Double): Self = StObject.set(x, "ant-cloud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAnt-design`(value: Double): Self = StObject.set(x, "ant-design", value.asInstanceOf[js.Any])
+      inline def `setAnt-design`(value: Double): Self = StObject.set(x, "ant-design", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApartment(value: Double): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
+      inline def setApartment(value: Double): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApple(value: Double): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
+      inline def setApple(value: Double): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppstore(value: Double): Self = StObject.set(x, "appstore", value.asInstanceOf[js.Any])
+      inline def setAppstore(value: Double): Self = StObject.set(x, "appstore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAppstore-add`(value: Double): Self = StObject.set(x, "appstore-add", value.asInstanceOf[js.Any])
+      inline def `setAppstore-add`(value: Double): Self = StObject.set(x, "appstore-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArea-chart`(value: Double): Self = StObject.set(x, "area-chart", value.asInstanceOf[js.Any])
+      inline def `setArea-chart`(value: Double): Self = StObject.set(x, "area-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArrow-down`(value: Double): Self = StObject.set(x, "arrow-down", value.asInstanceOf[js.Any])
+      inline def `setArrow-down`(value: Double): Self = StObject.set(x, "arrow-down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArrow-left`(value: Double): Self = StObject.set(x, "arrow-left", value.asInstanceOf[js.Any])
+      inline def `setArrow-left`(value: Double): Self = StObject.set(x, "arrow-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArrow-right`(value: Double): Self = StObject.set(x, "arrow-right", value.asInstanceOf[js.Any])
+      inline def `setArrow-right`(value: Double): Self = StObject.set(x, "arrow-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArrow-up`(value: Double): Self = StObject.set(x, "arrow-up", value.asInstanceOf[js.Any])
+      inline def `setArrow-up`(value: Double): Self = StObject.set(x, "arrow-up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArrows-alt`(value: Double): Self = StObject.set(x, "arrows-alt", value.asInstanceOf[js.Any])
+      inline def `setArrows-alt`(value: Double): Self = StObject.set(x, "arrows-alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAudio-muted`(value: Double): Self = StObject.set(x, "audio-muted", value.asInstanceOf[js.Any])
+      inline def `setAudio-muted`(value: Double): Self = StObject.set(x, "audio-muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudit(value: Double): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+      inline def setAudit(value: Double): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackward(value: Double): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
+      inline def setBackward(value: Double): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBank(value: Double): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
+      inline def setBank(value: Double): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBar-chart`(value: Double): Self = StObject.set(x, "bar-chart", value.asInstanceOf[js.Any])
+      inline def `setBar-chart`(value: Double): Self = StObject.set(x, "bar-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcode(value: Double): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
+      inline def setBarcode(value: Double): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBars(value: Double): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
+      inline def setBars(value: Double): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehance(value: Double): Self = StObject.set(x, "behance", value.asInstanceOf[js.Any])
+      inline def setBehance(value: Double): Self = StObject.set(x, "behance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBehance-square`(value: Double): Self = StObject.set(x, "behance-square", value.asInstanceOf[js.Any])
+      inline def `setBehance-square`(value: Double): Self = StObject.set(x, "behance-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBell(value: Double): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
+      inline def setBell(value: Double): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBg-colors`(value: Double): Self = StObject.set(x, "bg-colors", value.asInstanceOf[js.Any])
+      inline def `setBg-colors`(value: Double): Self = StObject.set(x, "bg-colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBold(value: Double): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Double): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBook(value: Double): Self = StObject.set(x, "book", value.asInstanceOf[js.Any])
+      inline def setBook(value: Double): Self = StObject.set(x, "book", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-bottom`(value: Double): Self = StObject.set(x, "border-bottom", value.asInstanceOf[js.Any])
+      inline def `setBorder-bottom`(value: Double): Self = StObject.set(x, "border-bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-horizontal`(value: Double): Self = StObject.set(x, "border-horizontal", value.asInstanceOf[js.Any])
+      inline def `setBorder-horizontal`(value: Double): Self = StObject.set(x, "border-horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-inner`(value: Double): Self = StObject.set(x, "border-inner", value.asInstanceOf[js.Any])
+      inline def `setBorder-inner`(value: Double): Self = StObject.set(x, "border-inner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-left`(value: Double): Self = StObject.set(x, "border-left", value.asInstanceOf[js.Any])
+      inline def `setBorder-left`(value: Double): Self = StObject.set(x, "border-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-outer`(value: Double): Self = StObject.set(x, "border-outer", value.asInstanceOf[js.Any])
+      inline def `setBorder-outer`(value: Double): Self = StObject.set(x, "border-outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-right`(value: Double): Self = StObject.set(x, "border-right", value.asInstanceOf[js.Any])
+      inline def `setBorder-right`(value: Double): Self = StObject.set(x, "border-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-top`(value: Double): Self = StObject.set(x, "border-top", value.asInstanceOf[js.Any])
+      inline def `setBorder-top`(value: Double): Self = StObject.set(x, "border-top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorder-verticle`(value: Double): Self = StObject.set(x, "border-verticle", value.asInstanceOf[js.Any])
+      inline def `setBorder-verticle`(value: Double): Self = StObject.set(x, "border-verticle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBorderless-table`(value: Double): Self = StObject.set(x, "borderless-table", value.asInstanceOf[js.Any])
+      inline def `setBorderless-table`(value: Double): Self = StObject.set(x, "borderless-table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBox-plot`(value: Double): Self = StObject.set(x, "box-plot", value.asInstanceOf[js.Any])
+      inline def `setBox-plot`(value: Double): Self = StObject.set(x, "box-plot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBug(value: Double): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
+      inline def setBug(value: Double): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+      inline def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulb(value: Double): Self = StObject.set(x, "bulb", value.asInstanceOf[js.Any])
+      inline def setBulb(value: Double): Self = StObject.set(x, "bulb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalculator(value: Double): Self = StObject.set(x, "calculator", value.asInstanceOf[js.Any])
+      inline def setCalculator(value: Double): Self = StObject.set(x, "calculator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendar(value: Double): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+      inline def setCalendar(value: Double): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Double): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Double): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCar(value: Double): Self = StObject.set(x, "car", value.asInstanceOf[js.Any])
+      inline def setCar(value: Double): Self = StObject.set(x, "car", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-down`(value: Double): Self = StObject.set(x, "caret-down", value.asInstanceOf[js.Any])
+      inline def `setCaret-down`(value: Double): Self = StObject.set(x, "caret-down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-left`(value: Double): Self = StObject.set(x, "caret-left", value.asInstanceOf[js.Any])
+      inline def `setCaret-left`(value: Double): Self = StObject.set(x, "caret-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-right`(value: Double): Self = StObject.set(x, "caret-right", value.asInstanceOf[js.Any])
+      inline def `setCaret-right`(value: Double): Self = StObject.set(x, "caret-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCaret-up`(value: Double): Self = StObject.set(x, "caret-up", value.asInstanceOf[js.Any])
+      inline def `setCaret-up`(value: Double): Self = StObject.set(x, "caret-up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCarry-out`(value: Double): Self = StObject.set(x, "carry-out", value.asInstanceOf[js.Any])
+      inline def `setCarry-out`(value: Double): Self = StObject.set(x, "carry-out", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheck(value: Double): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: Double): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCheck-circle`(value: Double): Self = StObject.set(x, "check-circle", value.asInstanceOf[js.Any])
+      inline def `setCheck-circle`(value: Double): Self = StObject.set(x, "check-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCheck-square`(value: Double): Self = StObject.set(x, "check-square", value.asInstanceOf[js.Any])
+      inline def `setCheck-square`(value: Double): Self = StObject.set(x, "check-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChrome(value: Double): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: Double): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCi(value: Double): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
+      inline def setCi(value: Double): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCi-circle`(value: Double): Self = StObject.set(x, "ci-circle", value.asInstanceOf[js.Any])
+      inline def `setCi-circle`(value: Double): Self = StObject.set(x, "ci-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: Double): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: Double): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClock-circle`(value: Double): Self = StObject.set(x, "clock-circle", value.asInstanceOf[js.Any])
+      inline def `setClock-circle`(value: Double): Self = StObject.set(x, "clock-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClose-circle`(value: Double): Self = StObject.set(x, "close-circle", value.asInstanceOf[js.Any])
+      inline def `setClose-circle`(value: Double): Self = StObject.set(x, "close-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClose-square`(value: Double): Self = StObject.set(x, "close-square", value.asInstanceOf[js.Any])
+      inline def `setClose-square`(value: Double): Self = StObject.set(x, "close-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloud(value: Double): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
+      inline def setCloud(value: Double): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCloud-download`(value: Double): Self = StObject.set(x, "cloud-download", value.asInstanceOf[js.Any])
+      inline def `setCloud-download`(value: Double): Self = StObject.set(x, "cloud-download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCloud-server`(value: Double): Self = StObject.set(x, "cloud-server", value.asInstanceOf[js.Any])
+      inline def `setCloud-server`(value: Double): Self = StObject.set(x, "cloud-server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCloud-sync`(value: Double): Self = StObject.set(x, "cloud-sync", value.asInstanceOf[js.Any])
+      inline def `setCloud-sync`(value: Double): Self = StObject.set(x, "cloud-sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCloud-upload`(value: Double): Self = StObject.set(x, "cloud-upload", value.asInstanceOf[js.Any])
+      inline def `setCloud-upload`(value: Double): Self = StObject.set(x, "cloud-upload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCluster(value: Double): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: Double): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCode-sandbox`(value: Double): Self = StObject.set(x, "code-sandbox", value.asInstanceOf[js.Any])
+      inline def `setCode-sandbox`(value: Double): Self = StObject.set(x, "code-sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodepen(value: Double): Self = StObject.set(x, "codepen", value.asInstanceOf[js.Any])
+      inline def setCodepen(value: Double): Self = StObject.set(x, "codepen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCodepen-circle`(value: Double): Self = StObject.set(x, "codepen-circle", value.asInstanceOf[js.Any])
+      inline def `setCodepen-circle`(value: Double): Self = StObject.set(x, "codepen-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoffee(value: Double): Self = StObject.set(x, "coffee", value.asInstanceOf[js.Any])
+      inline def setCoffee(value: Double): Self = StObject.set(x, "coffee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColumn-height`(value: Double): Self = StObject.set(x, "column-height", value.asInstanceOf[js.Any])
+      inline def `setColumn-height`(value: Double): Self = StObject.set(x, "column-height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColumn-width`(value: Double): Self = StObject.set(x, "column-width", value.asInstanceOf[js.Any])
+      inline def `setColumn-width`(value: Double): Self = StObject.set(x, "column-width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompass(value: Double): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
+      inline def setCompass(value: Double): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompress(value: Double): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Double): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setConsole-sql`(value: Double): Self = StObject.set(x, "console-sql", value.asInstanceOf[js.Any])
+      inline def `setConsole-sql`(value: Double): Self = StObject.set(x, "console-sql", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+      inline def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: Double): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Double): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopy(value: Double): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Double): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyright(value: Double): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: Double): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCopyright-circle`(value: Double): Self = StObject.set(x, "copyright-circle", value.asInstanceOf[js.Any])
+      inline def `setCopyright-circle`(value: Double): Self = StObject.set(x, "copyright-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCredit-card`(value: Double): Self = StObject.set(x, "credit-card", value.asInstanceOf[js.Any])
+      inline def `setCredit-card`(value: Double): Self = StObject.set(x, "credit-card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrown(value: Double): Self = StObject.set(x, "crown", value.asInstanceOf[js.Any])
+      inline def setCrown(value: Double): Self = StObject.set(x, "crown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCustomer-service`(value: Double): Self = StObject.set(x, "customer-service", value.asInstanceOf[js.Any])
+      inline def `setCustomer-service`(value: Double): Self = StObject.set(x, "customer-service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDash(value: Double): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+      inline def setDash(value: Double): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashboard(value: Double): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
+      inline def setDashboard(value: Double): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDelete-column`(value: Double): Self = StObject.set(x, "delete-column", value.asInstanceOf[js.Any])
+      inline def `setDelete-column`(value: Double): Self = StObject.set(x, "delete-column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDelete-row`(value: Double): Self = StObject.set(x, "delete-row", value.asInstanceOf[js.Any])
+      inline def `setDelete-row`(value: Double): Self = StObject.set(x, "delete-row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDelivered-procedure`(value: Double): Self = StObject.set(x, "delivered-procedure", value.asInstanceOf[js.Any])
+      inline def `setDelivered-procedure`(value: Double): Self = StObject.set(x, "delivered-procedure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDeployment-unit`(value: Double): Self = StObject.set(x, "deployment-unit", value.asInstanceOf[js.Any])
+      inline def `setDeployment-unit`(value: Double): Self = StObject.set(x, "deployment-unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktop(value: Double): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: Double): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiff(value: Double): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      inline def setDiff(value: Double): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDingding(value: Double): Self = StObject.set(x, "dingding", value.asInstanceOf[js.Any])
+      inline def setDingding(value: Double): Self = StObject.set(x, "dingding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDingtalk(value: Double): Self = StObject.set(x, "dingtalk", value.asInstanceOf[js.Any])
+      inline def setDingtalk(value: Double): Self = StObject.set(x, "dingtalk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnect(value: Double): Self = StObject.set(x, "disconnect", value.asInstanceOf[js.Any])
+      inline def setDisconnect(value: Double): Self = StObject.set(x, "disconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDislike(value: Double): Self = StObject.set(x, "dislike", value.asInstanceOf[js.Any])
+      inline def setDislike(value: Double): Self = StObject.set(x, "dislike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDollar(value: Double): Self = StObject.set(x, "dollar", value.asInstanceOf[js.Any])
+      inline def setDollar(value: Double): Self = StObject.set(x, "dollar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDollar-circle`(value: Double): Self = StObject.set(x, "dollar-circle", value.asInstanceOf[js.Any])
+      inline def `setDollar-circle`(value: Double): Self = StObject.set(x, "dollar-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDot-chart`(value: Double): Self = StObject.set(x, "dot-chart", value.asInstanceOf[js.Any])
+      inline def `setDot-chart`(value: Double): Self = StObject.set(x, "dot-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDouble-left`(value: Double): Self = StObject.set(x, "double-left", value.asInstanceOf[js.Any])
+      inline def `setDouble-left`(value: Double): Self = StObject.set(x, "double-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDouble-right`(value: Double): Self = StObject.set(x, "double-right", value.asInstanceOf[js.Any])
+      inline def `setDouble-right`(value: Double): Self = StObject.set(x, "double-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+      inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDown-circle`(value: Double): Self = StObject.set(x, "down-circle", value.asInstanceOf[js.Any])
+      inline def `setDown-circle`(value: Double): Self = StObject.set(x, "down-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDown-square`(value: Double): Self = StObject.set(x, "down-square", value.asInstanceOf[js.Any])
+      inline def `setDown-square`(value: Double): Self = StObject.set(x, "down-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrag(value: Double): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+      inline def setDrag(value: Double): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDribbble(value: Double): Self = StObject.set(x, "dribbble", value.asInstanceOf[js.Any])
+      inline def setDribbble(value: Double): Self = StObject.set(x, "dribbble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDribbble-square`(value: Double): Self = StObject.set(x, "dribbble-square", value.asInstanceOf[js.Any])
+      inline def `setDribbble-square`(value: Double): Self = StObject.set(x, "dribbble-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropbox(value: Double): Self = StObject.set(x, "dropbox", value.asInstanceOf[js.Any])
+      inline def setDropbox(value: Double): Self = StObject.set(x, "dropbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdit(value: Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsis(value: Double): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Double): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: Double): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Double): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEuro(value: Double): Self = StObject.set(x, "euro", value.asInstanceOf[js.Any])
+      inline def setEuro(value: Double): Self = StObject.set(x, "euro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEuro-circle`(value: Double): Self = StObject.set(x, "euro-circle", value.asInstanceOf[js.Any])
+      inline def `setEuro-circle`(value: Double): Self = StObject.set(x, "euro-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setException(value: Double): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+      inline def setException(value: Double): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclamation(value: Double): Self = StObject.set(x, "exclamation", value.asInstanceOf[js.Any])
+      inline def setExclamation(value: Double): Self = StObject.set(x, "exclamation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setExclamation-circle`(value: Double): Self = StObject.set(x, "exclamation-circle", value.asInstanceOf[js.Any])
+      inline def `setExclamation-circle`(value: Double): Self = StObject.set(x, "exclamation-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpand(value: Double): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Double): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setExpand-alt`(value: Double): Self = StObject.set(x, "expand-alt", value.asInstanceOf[js.Any])
+      inline def `setExpand-alt`(value: Double): Self = StObject.set(x, "expand-alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperiment(value: Double): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
+      inline def setExperiment(value: Double): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExport(value: Double): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+      inline def setExport(value: Double): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEye(value: Double): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+      inline def setEye(value: Double): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEye-invisible`(value: Double): Self = StObject.set(x, "eye-invisible", value.asInstanceOf[js.Any])
+      inline def `setEye-invisible`(value: Double): Self = StObject.set(x, "eye-invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebook(value: Double): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+      inline def setFacebook(value: Double): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFall(value: Double): Self = StObject.set(x, "fall", value.asInstanceOf[js.Any])
+      inline def setFall(value: Double): Self = StObject.set(x, "fall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFast-backward`(value: Double): Self = StObject.set(x, "fast-backward", value.asInstanceOf[js.Any])
+      inline def `setFast-backward`(value: Double): Self = StObject.set(x, "fast-backward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFast-forward`(value: Double): Self = StObject.set(x, "fast-forward", value.asInstanceOf[js.Any])
+      inline def `setFast-forward`(value: Double): Self = StObject.set(x, "fast-forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setField-binary`(value: Double): Self = StObject.set(x, "field-binary", value.asInstanceOf[js.Any])
+      inline def `setField-binary`(value: Double): Self = StObject.set(x, "field-binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setField-number`(value: Double): Self = StObject.set(x, "field-number", value.asInstanceOf[js.Any])
+      inline def `setField-number`(value: Double): Self = StObject.set(x, "field-number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setField-string`(value: Double): Self = StObject.set(x, "field-string", value.asInstanceOf[js.Any])
+      inline def `setField-string`(value: Double): Self = StObject.set(x, "field-string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setField-time`(value: Double): Self = StObject.set(x, "field-time", value.asInstanceOf[js.Any])
+      inline def `setField-time`(value: Double): Self = StObject.set(x, "field-time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-add`(value: Double): Self = StObject.set(x, "file-add", value.asInstanceOf[js.Any])
+      inline def `setFile-add`(value: Double): Self = StObject.set(x, "file-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-done`(value: Double): Self = StObject.set(x, "file-done", value.asInstanceOf[js.Any])
+      inline def `setFile-done`(value: Double): Self = StObject.set(x, "file-done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-excel`(value: Double): Self = StObject.set(x, "file-excel", value.asInstanceOf[js.Any])
+      inline def `setFile-excel`(value: Double): Self = StObject.set(x, "file-excel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-exclamation`(value: Double): Self = StObject.set(x, "file-exclamation", value.asInstanceOf[js.Any])
+      inline def `setFile-exclamation`(value: Double): Self = StObject.set(x, "file-exclamation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-gif`(value: Double): Self = StObject.set(x, "file-gif", value.asInstanceOf[js.Any])
+      inline def `setFile-gif`(value: Double): Self = StObject.set(x, "file-gif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-image`(value: Double): Self = StObject.set(x, "file-image", value.asInstanceOf[js.Any])
+      inline def `setFile-image`(value: Double): Self = StObject.set(x, "file-image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-jpg`(value: Double): Self = StObject.set(x, "file-jpg", value.asInstanceOf[js.Any])
+      inline def `setFile-jpg`(value: Double): Self = StObject.set(x, "file-jpg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-markdown`(value: Double): Self = StObject.set(x, "file-markdown", value.asInstanceOf[js.Any])
+      inline def `setFile-markdown`(value: Double): Self = StObject.set(x, "file-markdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-pdf`(value: Double): Self = StObject.set(x, "file-pdf", value.asInstanceOf[js.Any])
+      inline def `setFile-pdf`(value: Double): Self = StObject.set(x, "file-pdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-ppt`(value: Double): Self = StObject.set(x, "file-ppt", value.asInstanceOf[js.Any])
+      inline def `setFile-ppt`(value: Double): Self = StObject.set(x, "file-ppt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-protect`(value: Double): Self = StObject.set(x, "file-protect", value.asInstanceOf[js.Any])
+      inline def `setFile-protect`(value: Double): Self = StObject.set(x, "file-protect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-search`(value: Double): Self = StObject.set(x, "file-search", value.asInstanceOf[js.Any])
+      inline def `setFile-search`(value: Double): Self = StObject.set(x, "file-search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-sync`(value: Double): Self = StObject.set(x, "file-sync", value.asInstanceOf[js.Any])
+      inline def `setFile-sync`(value: Double): Self = StObject.set(x, "file-sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-text`(value: Double): Self = StObject.set(x, "file-text", value.asInstanceOf[js.Any])
+      inline def `setFile-text`(value: Double): Self = StObject.set(x, "file-text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-unknown`(value: Double): Self = StObject.set(x, "file-unknown", value.asInstanceOf[js.Any])
+      inline def `setFile-unknown`(value: Double): Self = StObject.set(x, "file-unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-word`(value: Double): Self = StObject.set(x, "file-word", value.asInstanceOf[js.Any])
+      inline def `setFile-word`(value: Double): Self = StObject.set(x, "file-word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFile-zip`(value: Double): Self = StObject.set(x, "file-zip", value.asInstanceOf[js.Any])
+      inline def `setFile-zip`(value: Double): Self = StObject.set(x, "file-zip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFire(value: Double): Self = StObject.set(x, "fire", value.asInstanceOf[js.Any])
+      inline def setFire(value: Double): Self = StObject.set(x, "fire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlag(value: Double): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: Double): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFolder-add`(value: Double): Self = StObject.set(x, "folder-add", value.asInstanceOf[js.Any])
+      inline def `setFolder-add`(value: Double): Self = StObject.set(x, "folder-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFolder-open`(value: Double): Self = StObject.set(x, "folder-open", value.asInstanceOf[js.Any])
+      inline def `setFolder-open`(value: Double): Self = StObject.set(x, "folder-open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFolder-view`(value: Double): Self = StObject.set(x, "folder-view", value.asInstanceOf[js.Any])
+      inline def `setFolder-view`(value: Double): Self = StObject.set(x, "folder-view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-colors`(value: Double): Self = StObject.set(x, "font-colors", value.asInstanceOf[js.Any])
+      inline def `setFont-colors`(value: Double): Self = StObject.set(x, "font-colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-size`(value: Double): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
+      inline def `setFont-size`(value: Double): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFork(value: Double): Self = StObject.set(x, "fork", value.asInstanceOf[js.Any])
+      inline def setFork(value: Double): Self = StObject.set(x, "fork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForm(value: Double): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: Double): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFormat-painter`(value: Double): Self = StObject.set(x, "format-painter", value.asInstanceOf[js.Any])
+      inline def `setFormat-painter`(value: Double): Self = StObject.set(x, "format-painter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForward(value: Double): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+      inline def setForward(value: Double): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrown(value: Double): Self = StObject.set(x, "frown", value.asInstanceOf[js.Any])
+      inline def setFrown(value: Double): Self = StObject.set(x, "frown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreen(value: Double): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      inline def setFullscreen(value: Double): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFullscreen-exit`(value: Double): Self = StObject.set(x, "fullscreen-exit", value.asInstanceOf[js.Any])
+      inline def `setFullscreen-exit`(value: Double): Self = StObject.set(x, "fullscreen-exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: Double): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Double): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFund(value: Double): Self = StObject.set(x, "fund", value.asInstanceOf[js.Any])
+      inline def setFund(value: Double): Self = StObject.set(x, "fund", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFund-projection-screen`(value: Double): Self = StObject.set(x, "fund-projection-screen", value.asInstanceOf[js.Any])
+      inline def `setFund-projection-screen`(value: Double): Self = StObject.set(x, "fund-projection-screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFund-view`(value: Double): Self = StObject.set(x, "fund-view", value.asInstanceOf[js.Any])
+      inline def `setFund-view`(value: Double): Self = StObject.set(x, "fund-view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFunnel-plot`(value: Double): Self = StObject.set(x, "funnel-plot", value.asInstanceOf[js.Any])
+      inline def `setFunnel-plot`(value: Double): Self = StObject.set(x, "funnel-plot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGateway(value: Double): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+      inline def setGateway(value: Double): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGif(value: Double): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
+      inline def setGif(value: Double): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGift(value: Double): Self = StObject.set(x, "gift", value.asInstanceOf[js.Any])
+      inline def setGift(value: Double): Self = StObject.set(x, "gift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGithub(value: Double): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+      inline def setGithub(value: Double): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitlab(value: Double): Self = StObject.set(x, "gitlab", value.asInstanceOf[js.Any])
+      inline def setGitlab(value: Double): Self = StObject.set(x, "gitlab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal(value: Double): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Double): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGold(value: Double): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
+      inline def setGold(value: Double): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogle(value: Double): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
+      inline def setGoogle(value: Double): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGoogle-plus`(value: Double): Self = StObject.set(x, "google-plus", value.asInstanceOf[js.Any])
+      inline def `setGoogle-plus`(value: Double): Self = StObject.set(x, "google-plus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHdd(value: Double): Self = StObject.set(x, "hdd", value.asInstanceOf[js.Any])
+      inline def setHdd(value: Double): Self = StObject.set(x, "hdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
+      inline def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHeat-map`(value: Double): Self = StObject.set(x, "heat-map", value.asInstanceOf[js.Any])
+      inline def `setHeat-map`(value: Double): Self = StObject.set(x, "heat-map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlight(value: Double): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Double): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHome(value: Double): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+      inline def setHome(value: Double): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourglass(value: Double): Self = StObject.set(x, "hourglass", value.asInstanceOf[js.Any])
+      inline def setHourglass(value: Double): Self = StObject.set(x, "hourglass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml5(value: Double): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+      inline def setHtml5(value: Double): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdcard(value: Double): Self = StObject.set(x, "idcard", value.asInstanceOf[js.Any])
+      inline def setIdcard(value: Double): Self = StObject.set(x, "idcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIe(value: Double): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+      inline def setIe(value: Double): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImport(value: Double): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+      inline def setImport(value: Double): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInbox(value: Double): Self = StObject.set(x, "inbox", value.asInstanceOf[js.Any])
+      inline def setInbox(value: Double): Self = StObject.set(x, "inbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInfo-circle`(value: Double): Self = StObject.set(x, "info-circle", value.asInstanceOf[js.Any])
+      inline def `setInfo-circle`(value: Double): Self = StObject.set(x, "info-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInsert-row-above`(value: Double): Self = StObject.set(x, "insert-row-above", value.asInstanceOf[js.Any])
+      inline def `setInsert-row-above`(value: Double): Self = StObject.set(x, "insert-row-above", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInsert-row-below`(value: Double): Self = StObject.set(x, "insert-row-below", value.asInstanceOf[js.Any])
+      inline def `setInsert-row-below`(value: Double): Self = StObject.set(x, "insert-row-below", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInsert-row-left`(value: Double): Self = StObject.set(x, "insert-row-left", value.asInstanceOf[js.Any])
+      inline def `setInsert-row-left`(value: Double): Self = StObject.set(x, "insert-row-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInsert-row-right`(value: Double): Self = StObject.set(x, "insert-row-right", value.asInstanceOf[js.Any])
+      inline def `setInsert-row-right`(value: Double): Self = StObject.set(x, "insert-row-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram(value: Double): Self = StObject.set(x, "instagram", value.asInstanceOf[js.Any])
+      inline def setInstagram(value: Double): Self = StObject.set(x, "instagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsurance(value: Double): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
+      inline def setInsurance(value: Double): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteraction(value: Double): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+      inline def setInteraction(value: Double): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIssues-close`(value: Double): Self = StObject.set(x, "issues-close", value.asInstanceOf[js.Any])
+      inline def `setIssues-close`(value: Double): Self = StObject.set(x, "issues-close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalic(value: Double): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Double): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaptop(value: Double): Self = StObject.set(x, "laptop", value.asInstanceOf[js.Any])
+      inline def setLaptop(value: Double): Self = StObject.set(x, "laptop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-circle`(value: Double): Self = StObject.set(x, "left-circle", value.asInstanceOf[js.Any])
+      inline def `setLeft-circle`(value: Double): Self = StObject.set(x, "left-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLeft-square`(value: Double): Self = StObject.set(x, "left-square", value.asInstanceOf[js.Any])
+      inline def `setLeft-square`(value: Double): Self = StObject.set(x, "left-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLike(value: Double): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
+      inline def setLike(value: Double): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLine-chart`(value: Double): Self = StObject.set(x, "line-chart", value.asInstanceOf[js.Any])
+      inline def `setLine-chart`(value: Double): Self = StObject.set(x, "line-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLine-height`(value: Double): Self = StObject.set(x, "line-height", value.asInstanceOf[js.Any])
+      inline def `setLine-height`(value: Double): Self = StObject.set(x, "line-height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: Double): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: Double): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedin(value: Double): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
+      inline def setLinkedin(value: Double): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Double): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Double): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoading-3-quarters`(value: Double): Self = StObject.set(x, "loading-3-quarters", value.asInstanceOf[js.Any])
+      inline def `setLoading-3-quarters`(value: Double): Self = StObject.set(x, "loading-3-quarters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLock(value: Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogin(value: Double): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+      inline def setLogin(value: Double): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogout(value: Double): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+      inline def setLogout(value: Double): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMac-command`(value: Double): Self = StObject.set(x, "mac-command", value.asInstanceOf[js.Any])
+      inline def `setMac-command`(value: Double): Self = StObject.set(x, "mac-command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMail(value: Double): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
+      inline def setMail(value: Double): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMan(value: Double): Self = StObject.set(x, "man", value.asInstanceOf[js.Any])
+      inline def setMan(value: Double): Self = StObject.set(x, "man", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedicine-box`(value: Double): Self = StObject.set(x, "medicine-box", value.asInstanceOf[js.Any])
+      inline def `setMedicine-box`(value: Double): Self = StObject.set(x, "medicine-box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedium-workmark`(value: Double): Self = StObject.set(x, "medium-workmark", value.asInstanceOf[js.Any])
+      inline def `setMedium-workmark`(value: Double): Self = StObject.set(x, "medium-workmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeh(value: Double): Self = StObject.set(x, "meh", value.asInstanceOf[js.Any])
+      inline def setMeh(value: Double): Self = StObject.set(x, "meh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenu(value: Double): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Double): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMenu-fold`(value: Double): Self = StObject.set(x, "menu-fold", value.asInstanceOf[js.Any])
+      inline def `setMenu-fold`(value: Double): Self = StObject.set(x, "menu-fold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMenu-unfold`(value: Double): Self = StObject.set(x, "menu-unfold", value.asInstanceOf[js.Any])
+      inline def `setMenu-unfold`(value: Double): Self = StObject.set(x, "menu-unfold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMerge-cells`(value: Double): Self = StObject.set(x, "merge-cells", value.asInstanceOf[js.Any])
+      inline def `setMerge-cells`(value: Double): Self = StObject.set(x, "merge-cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: Double): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Double): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinus(value: Double): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
+      inline def setMinus(value: Double): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinus-circle`(value: Double): Self = StObject.set(x, "minus-circle", value.asInstanceOf[js.Any])
+      inline def `setMinus-circle`(value: Double): Self = StObject.set(x, "minus-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinus-square`(value: Double): Self = StObject.set(x, "minus-square", value.asInstanceOf[js.Any])
+      inline def `setMinus-square`(value: Double): Self = StObject.set(x, "minus-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMoney-collect`(value: Double): Self = StObject.set(x, "money-collect", value.asInstanceOf[js.Any])
+      inline def `setMoney-collect`(value: Double): Self = StObject.set(x, "money-collect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitor(value: Double): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+      inline def setMonitor(value: Double): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMore(value: Double): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
+      inline def setMore(value: Double): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNode-collapse`(value: Double): Self = StObject.set(x, "node-collapse", value.asInstanceOf[js.Any])
+      inline def `setNode-collapse`(value: Double): Self = StObject.set(x, "node-collapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNode-expand`(value: Double): Self = StObject.set(x, "node-expand", value.asInstanceOf[js.Any])
+      inline def `setNode-expand`(value: Double): Self = StObject.set(x, "node-expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNode-index`(value: Double): Self = StObject.set(x, "node-index", value.asInstanceOf[js.Any])
+      inline def `setNode-index`(value: Double): Self = StObject.set(x, "node-index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: Double): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Double): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOne-to-one`(value: Double): Self = StObject.set(x, "one-to-one", value.asInstanceOf[js.Any])
+      inline def `setOne-to-one`(value: Double): Self = StObject.set(x, "one-to-one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOrdered-list`(value: Double): Self = StObject.set(x, "ordered-list", value.asInstanceOf[js.Any])
+      inline def `setOrdered-list`(value: Double): Self = StObject.set(x, "ordered-list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPaper-clip`(value: Double): Self = StObject.set(x, "paper-clip", value.asInstanceOf[js.Any])
+      inline def `setPaper-clip`(value: Double): Self = StObject.set(x, "paper-clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPause-circle`(value: Double): Self = StObject.set(x, "pause-circle", value.asInstanceOf[js.Any])
+      inline def `setPause-circle`(value: Double): Self = StObject.set(x, "pause-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPay-circle`(value: Double): Self = StObject.set(x, "pay-circle", value.asInstanceOf[js.Any])
+      inline def `setPay-circle`(value: Double): Self = StObject.set(x, "pay-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: Double): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: Double): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPic-center`(value: Double): Self = StObject.set(x, "pic-center", value.asInstanceOf[js.Any])
+      inline def `setPic-center`(value: Double): Self = StObject.set(x, "pic-center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPic-left`(value: Double): Self = StObject.set(x, "pic-left", value.asInstanceOf[js.Any])
+      inline def `setPic-left`(value: Double): Self = StObject.set(x, "pic-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPic-right`(value: Double): Self = StObject.set(x, "pic-right", value.asInstanceOf[js.Any])
+      inline def `setPic-right`(value: Double): Self = StObject.set(x, "pic-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicture(value: Double): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: Double): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPie-chart`(value: Double): Self = StObject.set(x, "pie-chart", value.asInstanceOf[js.Any])
+      inline def `setPie-chart`(value: Double): Self = StObject.set(x, "pie-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlay-circle`(value: Double): Self = StObject.set(x, "play-circle", value.asInstanceOf[js.Any])
+      inline def `setPlay-circle`(value: Double): Self = StObject.set(x, "play-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlay-square`(value: Double): Self = StObject.set(x, "play-square", value.asInstanceOf[js.Any])
+      inline def `setPlay-square`(value: Double): Self = StObject.set(x, "play-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlus(value: Double): Self = StObject.set(x, "plus", value.asInstanceOf[js.Any])
+      inline def setPlus(value: Double): Self = StObject.set(x, "plus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlus-circle`(value: Double): Self = StObject.set(x, "plus-circle", value.asInstanceOf[js.Any])
+      inline def `setPlus-circle`(value: Double): Self = StObject.set(x, "plus-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlus-square`(value: Double): Self = StObject.set(x, "plus-square", value.asInstanceOf[js.Any])
+      inline def `setPlus-square`(value: Double): Self = StObject.set(x, "plus-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPound(value: Double): Self = StObject.set(x, "pound", value.asInstanceOf[js.Any])
+      inline def setPound(value: Double): Self = StObject.set(x, "pound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPound-circle`(value: Double): Self = StObject.set(x, "pound-circle", value.asInstanceOf[js.Any])
+      inline def `setPound-circle`(value: Double): Self = StObject.set(x, "pound-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoweroff(value: Double): Self = StObject.set(x, "poweroff", value.asInstanceOf[js.Any])
+      inline def setPoweroff(value: Double): Self = StObject.set(x, "poweroff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinter(value: Double): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
+      inline def setPrinter(value: Double): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: Double): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Double): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setProperty-safety`(value: Double): Self = StObject.set(x, "property-safety", value.asInstanceOf[js.Any])
+      inline def `setProperty-safety`(value: Double): Self = StObject.set(x, "property-safety", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPull-request`(value: Double): Self = StObject.set(x, "pull-request", value.asInstanceOf[js.Any])
+      inline def `setPull-request`(value: Double): Self = StObject.set(x, "pull-request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushpin(value: Double): Self = StObject.set(x, "pushpin", value.asInstanceOf[js.Any])
+      inline def setPushpin(value: Double): Self = StObject.set(x, "pushpin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQq(value: Double): Self = StObject.set(x, "qq", value.asInstanceOf[js.Any])
+      inline def setQq(value: Double): Self = StObject.set(x, "qq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQrcode(value: Double): Self = StObject.set(x, "qrcode", value.asInstanceOf[js.Any])
+      inline def setQrcode(value: Double): Self = StObject.set(x, "qrcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuestion(value: Double): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+      inline def setQuestion(value: Double): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setQuestion-circle`(value: Double): Self = StObject.set(x, "question-circle", value.asInstanceOf[js.Any])
+      inline def `setQuestion-circle`(value: Double): Self = StObject.set(x, "question-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRadar-chart`(value: Double): Self = StObject.set(x, "radar-chart", value.asInstanceOf[js.Any])
+      inline def `setRadar-chart`(value: Double): Self = StObject.set(x, "radar-chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRadius-bottomleft`(value: Double): Self = StObject.set(x, "radius-bottomleft", value.asInstanceOf[js.Any])
+      inline def `setRadius-bottomleft`(value: Double): Self = StObject.set(x, "radius-bottomleft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRadius-bottomright`(value: Double): Self = StObject.set(x, "radius-bottomright", value.asInstanceOf[js.Any])
+      inline def `setRadius-bottomright`(value: Double): Self = StObject.set(x, "radius-bottomright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRadius-setting`(value: Double): Self = StObject.set(x, "radius-setting", value.asInstanceOf[js.Any])
+      inline def `setRadius-setting`(value: Double): Self = StObject.set(x, "radius-setting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRadius-upleft`(value: Double): Self = StObject.set(x, "radius-upleft", value.asInstanceOf[js.Any])
+      inline def `setRadius-upleft`(value: Double): Self = StObject.set(x, "radius-upleft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRadius-upright`(value: Double): Self = StObject.set(x, "radius-upright", value.asInstanceOf[js.Any])
+      inline def `setRadius-upright`(value: Double): Self = StObject.set(x, "radius-upright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconciliation(value: Double): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
+      inline def setReconciliation(value: Double): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRed-envelope`(value: Double): Self = StObject.set(x, "red-envelope", value.asInstanceOf[js.Any])
+      inline def `setRed-envelope`(value: Double): Self = StObject.set(x, "red-envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReddit(value: Double): Self = StObject.set(x, "reddit", value.asInstanceOf[js.Any])
+      inline def setReddit(value: Double): Self = StObject.set(x, "reddit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedo(value: Double): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+      inline def setRedo(value: Double): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReload(value: Double): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: Double): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest(value: Double): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+      inline def setRest(value: Double): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetweet(value: Double): Self = StObject.set(x, "retweet", value.asInstanceOf[js.Any])
+      inline def setRetweet(value: Double): Self = StObject.set(x, "retweet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-circle`(value: Double): Self = StObject.set(x, "right-circle", value.asInstanceOf[js.Any])
+      inline def `setRight-circle`(value: Double): Self = StObject.set(x, "right-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRight-square`(value: Double): Self = StObject.set(x, "right-square", value.asInstanceOf[js.Any])
+      inline def `setRight-square`(value: Double): Self = StObject.set(x, "right-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRise(value: Double): Self = StObject.set(x, "rise", value.asInstanceOf[js.Any])
+      inline def setRise(value: Double): Self = StObject.set(x, "rise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobot(value: Double): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
+      inline def setRobot(value: Double): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRocket(value: Double): Self = StObject.set(x, "rocket", value.asInstanceOf[js.Any])
+      inline def setRocket(value: Double): Self = StObject.set(x, "rocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollback(value: Double): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
+      inline def setRollback(value: Double): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRotate-left`(value: Double): Self = StObject.set(x, "rotate-left", value.asInstanceOf[js.Any])
+      inline def `setRotate-left`(value: Double): Self = StObject.set(x, "rotate-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRotate-right`(value: Double): Self = StObject.set(x, "rotate-right", value.asInstanceOf[js.Any])
+      inline def `setRotate-right`(value: Double): Self = StObject.set(x, "rotate-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafety(value: Double): Self = StObject.set(x, "safety", value.asInstanceOf[js.Any])
+      inline def setSafety(value: Double): Self = StObject.set(x, "safety", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSafety-certificate`(value: Double): Self = StObject.set(x, "safety-certificate", value.asInstanceOf[js.Any])
+      inline def `setSafety-certificate`(value: Double): Self = StObject.set(x, "safety-certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSave(value: Double): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+      inline def setSave(value: Double): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScan(value: Double): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
+      inline def setScan(value: Double): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedule(value: Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScissor(value: Double): Self = StObject.set(x, "scissor", value.asInstanceOf[js.Any])
+      inline def setScissor(value: Double): Self = StObject.set(x, "scissor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSecurity-scan`(value: Double): Self = StObject.set(x, "security-scan", value.asInstanceOf[js.Any])
+      inline def `setSecurity-scan`(value: Double): Self = StObject.set(x, "security-scan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect(value: Double): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Double): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: Double): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+      inline def setSend(value: Double): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetting(value: Double): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+      inline def setSetting(value: Double): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShake(value: Double): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
+      inline def setShake(value: Double): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShare-alt`(value: Double): Self = StObject.set(x, "share-alt", value.asInstanceOf[js.Any])
+      inline def `setShare-alt`(value: Double): Self = StObject.set(x, "share-alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShop(value: Double): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
+      inline def setShop(value: Double): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShopping(value: Double): Self = StObject.set(x, "shopping", value.asInstanceOf[js.Any])
+      inline def setShopping(value: Double): Self = StObject.set(x, "shopping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShopping-cart`(value: Double): Self = StObject.set(x, "shopping-cart", value.asInstanceOf[js.Any])
+      inline def `setShopping-cart`(value: Double): Self = StObject.set(x, "shopping-cart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
+      inline def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSisternode(value: Double): Self = StObject.set(x, "sisternode", value.asInstanceOf[js.Any])
+      inline def setSisternode(value: Double): Self = StObject.set(x, "sisternode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSketch(value: Double): Self = StObject.set(x, "sketch", value.asInstanceOf[js.Any])
+      inline def setSketch(value: Double): Self = StObject.set(x, "sketch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkin(value: Double): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: Double): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkype(value: Double): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
+      inline def setSkype(value: Double): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlack(value: Double): Self = StObject.set(x, "slack", value.asInstanceOf[js.Any])
+      inline def setSlack(value: Double): Self = StObject.set(x, "slack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSlack-square`(value: Double): Self = StObject.set(x, "slack-square", value.asInstanceOf[js.Any])
+      inline def `setSlack-square`(value: Double): Self = StObject.set(x, "slack-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliders(value: Double): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+      inline def setSliders(value: Double): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSmall-dash`(value: Double): Self = StObject.set(x, "small-dash", value.asInstanceOf[js.Any])
+      inline def `setSmall-dash`(value: Double): Self = StObject.set(x, "small-dash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmile(value: Double): Self = StObject.set(x, "smile", value.asInstanceOf[js.Any])
+      inline def setSmile(value: Double): Self = StObject.set(x, "smile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnippets(value: Double): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
+      inline def setSnippets(value: Double): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolution(value: Double): Self = StObject.set(x, "solution", value.asInstanceOf[js.Any])
+      inline def setSolution(value: Double): Self = StObject.set(x, "solution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSort-ascending`(value: Double): Self = StObject.set(x, "sort-ascending", value.asInstanceOf[js.Any])
+      inline def `setSort-ascending`(value: Double): Self = StObject.set(x, "sort-ascending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSort-descending`(value: Double): Self = StObject.set(x, "sort-descending", value.asInstanceOf[js.Any])
+      inline def `setSort-descending`(value: Double): Self = StObject.set(x, "sort-descending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSound(value: Double): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: Double): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSplit-cells`(value: Double): Self = StObject.set(x, "split-cells", value.asInstanceOf[js.Any])
+      inline def `setSplit-cells`(value: Double): Self = StObject.set(x, "split-cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar(value: Double): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+      inline def setStar(value: Double): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStep-backward`(value: Double): Self = StObject.set(x, "step-backward", value.asInstanceOf[js.Any])
+      inline def `setStep-backward`(value: Double): Self = StObject.set(x, "step-backward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStep-forward`(value: Double): Self = StObject.set(x, "step-forward", value.asInstanceOf[js.Any])
+      inline def `setStep-forward`(value: Double): Self = StObject.set(x, "step-forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStock(value: Double): Self = StObject.set(x, "stock", value.asInstanceOf[js.Any])
+      inline def setStock(value: Double): Self = StObject.set(x, "stock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethrough(value: Double): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: Double): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnode(value: Double): Self = StObject.set(x, "subnode", value.asInstanceOf[js.Any])
+      inline def setSubnode(value: Double): Self = StObject.set(x, "subnode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwap(value: Double): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
+      inline def setSwap(value: Double): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSwap-left`(value: Double): Self = StObject.set(x, "swap-left", value.asInstanceOf[js.Any])
+      inline def `setSwap-left`(value: Double): Self = StObject.set(x, "swap-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSwap-right`(value: Double): Self = StObject.set(x, "swap-right", value.asInstanceOf[js.Any])
+      inline def `setSwap-right`(value: Double): Self = StObject.set(x, "swap-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitcher(value: Double): Self = StObject.set(x, "switcher", value.asInstanceOf[js.Any])
+      inline def setSwitcher(value: Double): Self = StObject.set(x, "switcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: Double): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Double): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTable(value: Double): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Double): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablet(value: Double): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: Double): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaobao(value: Double): Self = StObject.set(x, "taobao", value.asInstanceOf[js.Any])
+      inline def setTaobao(value: Double): Self = StObject.set(x, "taobao", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTaobao-circle`(value: Double): Self = StObject.set(x, "taobao-circle", value.asInstanceOf[js.Any])
+      inline def `setTaobao-circle`(value: Double): Self = StObject.set(x, "taobao-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam(value: Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThunderbolt(value: Double): Self = StObject.set(x, "thunderbolt", value.asInstanceOf[js.Any])
+      inline def setThunderbolt(value: Double): Self = StObject.set(x, "thunderbolt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTo-top`(value: Double): Self = StObject.set(x, "to-top", value.asInstanceOf[js.Any])
+      inline def `setTo-top`(value: Double): Self = StObject.set(x, "to-top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTool(value: Double): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+      inline def setTool(value: Double): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrademark(value: Double): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
+      inline def setTrademark(value: Double): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTrademark-circle`(value: Double): Self = StObject.set(x, "trademark-circle", value.asInstanceOf[js.Any])
+      inline def `setTrademark-circle`(value: Double): Self = StObject.set(x, "trademark-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction(value: Double): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: Double): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslation(value: Double): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+      inline def setTranslation(value: Double): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrophy(value: Double): Self = StObject.set(x, "trophy", value.asInstanceOf[js.Any])
+      inline def setTrophy(value: Double): Self = StObject.set(x, "trophy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitter(value: Double): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+      inline def setTwitter(value: Double): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderline(value: Double): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Double): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndo(value: Double): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+      inline def setUndo(value: Double): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUngroup(value: Double): Self = StObject.set(x, "ungroup", value.asInstanceOf[js.Any])
+      inline def setUngroup(value: Double): Self = StObject.set(x, "ungroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+      inline def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnordered-list`(value: Double): Self = StObject.set(x, "unordered-list", value.asInstanceOf[js.Any])
+      inline def `setUnordered-list`(value: Double): Self = StObject.set(x, "unordered-list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUp-circle`(value: Double): Self = StObject.set(x, "up-circle", value.asInstanceOf[js.Any])
+      inline def `setUp-circle`(value: Double): Self = StObject.set(x, "up-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUp-square`(value: Double): Self = StObject.set(x, "up-square", value.asInstanceOf[js.Any])
+      inline def `setUp-square`(value: Double): Self = StObject.set(x, "up-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload(value: Double): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+      inline def setUpload(value: Double): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsb(value: Double): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
+      inline def setUsb(value: Double): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-add`(value: Double): Self = StObject.set(x, "user-add", value.asInstanceOf[js.Any])
+      inline def `setUser-add`(value: Double): Self = StObject.set(x, "user-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-delete`(value: Double): Self = StObject.set(x, "user-delete", value.asInstanceOf[js.Any])
+      inline def `setUser-delete`(value: Double): Self = StObject.set(x, "user-delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-switch`(value: Double): Self = StObject.set(x, "user-switch", value.asInstanceOf[js.Any])
+      inline def `setUser-switch`(value: Double): Self = StObject.set(x, "user-switch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUsergroup-add`(value: Double): Self = StObject.set(x, "usergroup-add", value.asInstanceOf[js.Any])
+      inline def `setUsergroup-add`(value: Double): Self = StObject.set(x, "usergroup-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUsergroup-delete`(value: Double): Self = StObject.set(x, "usergroup-delete", value.asInstanceOf[js.Any])
+      inline def `setUsergroup-delete`(value: Double): Self = StObject.set(x, "usergroup-delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified(value: Double): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Double): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVertical-align-bottom`(value: Double): Self = StObject.set(x, "vertical-align-bottom", value.asInstanceOf[js.Any])
+      inline def `setVertical-align-bottom`(value: Double): Self = StObject.set(x, "vertical-align-bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVertical-align-middle`(value: Double): Self = StObject.set(x, "vertical-align-middle", value.asInstanceOf[js.Any])
+      inline def `setVertical-align-middle`(value: Double): Self = StObject.set(x, "vertical-align-middle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVertical-align-top`(value: Double): Self = StObject.set(x, "vertical-align-top", value.asInstanceOf[js.Any])
+      inline def `setVertical-align-top`(value: Double): Self = StObject.set(x, "vertical-align-top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVertical-left`(value: Double): Self = StObject.set(x, "vertical-left", value.asInstanceOf[js.Any])
+      inline def `setVertical-left`(value: Double): Self = StObject.set(x, "vertical-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVertical-right`(value: Double): Self = StObject.set(x, "vertical-right", value.asInstanceOf[js.Any])
+      inline def `setVertical-right`(value: Double): Self = StObject.set(x, "vertical-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVideo-camera`(value: Double): Self = StObject.set(x, "video-camera", value.asInstanceOf[js.Any])
+      inline def `setVideo-camera`(value: Double): Self = StObject.set(x, "video-camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVideo-camera-add`(value: Double): Self = StObject.set(x, "video-camera-add", value.asInstanceOf[js.Any])
+      inline def `setVideo-camera-add`(value: Double): Self = StObject.set(x, "video-camera-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWallet(value: Double): Self = StObject.set(x, "wallet", value.asInstanceOf[js.Any])
+      inline def setWallet(value: Double): Self = StObject.set(x, "wallet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWechat(value: Double): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
+      inline def setWechat(value: Double): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeibo(value: Double): Self = StObject.set(x, "weibo", value.asInstanceOf[js.Any])
+      inline def setWeibo(value: Double): Self = StObject.set(x, "weibo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeibo-circle`(value: Double): Self = StObject.set(x, "weibo-circle", value.asInstanceOf[js.Any])
+      inline def `setWeibo-circle`(value: Double): Self = StObject.set(x, "weibo-circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeibo-square`(value: Double): Self = StObject.set(x, "weibo-square", value.asInstanceOf[js.Any])
+      inline def `setWeibo-square`(value: Double): Self = StObject.set(x, "weibo-square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWhats-app`(value: Double): Self = StObject.set(x, "whats-app", value.asInstanceOf[js.Any])
+      inline def `setWhats-app`(value: Double): Self = StObject.set(x, "whats-app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWifi(value: Double): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+      inline def setWifi(value: Double): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindows(value: Double): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Double): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWoman(value: Double): Self = StObject.set(x, "woman", value.asInstanceOf[js.Any])
+      inline def setWoman(value: Double): Self = StObject.set(x, "woman", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYahoo(value: Double): Self = StObject.set(x, "yahoo", value.asInstanceOf[js.Any])
+      inline def setYahoo(value: Double): Self = StObject.set(x, "yahoo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoutube(value: Double): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
+      inline def setYoutube(value: Double): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYuque(value: Double): Self = StObject.set(x, "yuque", value.asInstanceOf[js.Any])
+      inline def setYuque(value: Double): Self = StObject.set(x, "yuque", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZhihu(value: Double): Self = StObject.set(x, "zhihu", value.asInstanceOf[js.Any])
+      inline def setZhihu(value: Double): Self = StObject.set(x, "zhihu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setZoom-in`(value: Double): Self = StObject.set(x, "zoom-in", value.asInstanceOf[js.Any])
+      inline def `setZoom-in`(value: Double): Self = StObject.set(x, "zoom-in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setZoom-out`(value: Double): Self = StObject.set(x, "zoom-out", value.asInstanceOf[js.Any])
+      inline def `setZoom-out`(value: Double): Self = StObject.set(x, "zoom-out", value.asInstanceOf[js.Any])
     }
   }
 }

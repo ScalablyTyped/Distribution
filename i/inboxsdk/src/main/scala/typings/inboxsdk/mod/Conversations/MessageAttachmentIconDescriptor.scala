@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageAttachmentIconDescriptor extends StObject
 object MessageAttachmentIconDescriptor {
   
-  @scala.inline
-  def MessageAttachmentIconHtmlDescriptor(iconHtml: String, tooltip: String | HTMLElement): typings.inboxsdk.mod.Conversations.MessageAttachmentIconHtmlDescriptor = {
+  inline def MessageAttachmentIconHtmlDescriptor(iconHtml: String, tooltip: String | HTMLElement): typings.inboxsdk.mod.Conversations.MessageAttachmentIconHtmlDescriptor = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.Conversations.MessageAttachmentIconHtmlDescriptor]
   }
   
-  @scala.inline
-  def MessageAttachmentIconUrlDescriptor(iconUrl: String, tooltip: String | HTMLElement): typings.inboxsdk.mod.Conversations.MessageAttachmentIconUrlDescriptor = {
+  inline def MessageAttachmentIconUrlDescriptor(iconUrl: String, tooltip: String | HTMLElement): typings.inboxsdk.mod.Conversations.MessageAttachmentIconUrlDescriptor = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.Conversations.MessageAttachmentIconUrlDescriptor]
   }

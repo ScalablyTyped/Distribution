@@ -12,25 +12,19 @@ trait TimelineOrientationOption extends StObject {
 }
 object TimelineOrientationOption {
   
-  @scala.inline
-  def apply(): TimelineOrientationOption = {
+  inline def apply(): TimelineOrientationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineOrientationOption]
   }
   
-  @scala.inline
-  implicit class TimelineOrientationOptionMutableBuilder[Self <: TimelineOrientationOption] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineOrientationOption](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

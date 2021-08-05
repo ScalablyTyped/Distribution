@@ -33,43 +33,31 @@ trait GetAccountResponse extends StObject {
 }
 object GetAccountResponse {
   
-  @scala.inline
-  def apply(): GetAccountResponse = {
+  inline def apply(): GetAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountResponseMutableBuilder[Self <: GetAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountResponse](x: Self) {
     
-    @scala.inline
-    def setDedicatedIpAutoWarmupEnabled(value: Enabled): Self = StObject.set(x, "DedicatedIpAutoWarmupEnabled", value.asInstanceOf[js.Any])
+    inline def setDedicatedIpAutoWarmupEnabled(value: Enabled): Self = StObject.set(x, "DedicatedIpAutoWarmupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedIpAutoWarmupEnabledUndefined: Self = StObject.set(x, "DedicatedIpAutoWarmupEnabled", js.undefined)
+    inline def setDedicatedIpAutoWarmupEnabledUndefined: Self = StObject.set(x, "DedicatedIpAutoWarmupEnabled", js.undefined)
     
-    @scala.inline
-    def setEnforcementStatus(value: GeneralEnforcementStatus): Self = StObject.set(x, "EnforcementStatus", value.asInstanceOf[js.Any])
+    inline def setEnforcementStatus(value: GeneralEnforcementStatus): Self = StObject.set(x, "EnforcementStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcementStatusUndefined: Self = StObject.set(x, "EnforcementStatus", js.undefined)
+    inline def setEnforcementStatusUndefined: Self = StObject.set(x, "EnforcementStatus", js.undefined)
     
-    @scala.inline
-    def setProductionAccessEnabled(value: Enabled): Self = StObject.set(x, "ProductionAccessEnabled", value.asInstanceOf[js.Any])
+    inline def setProductionAccessEnabled(value: Enabled): Self = StObject.set(x, "ProductionAccessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductionAccessEnabledUndefined: Self = StObject.set(x, "ProductionAccessEnabled", js.undefined)
+    inline def setProductionAccessEnabledUndefined: Self = StObject.set(x, "ProductionAccessEnabled", js.undefined)
     
-    @scala.inline
-    def setSendQuota(value: SendQuota): Self = StObject.set(x, "SendQuota", value.asInstanceOf[js.Any])
+    inline def setSendQuota(value: SendQuota): Self = StObject.set(x, "SendQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendQuotaUndefined: Self = StObject.set(x, "SendQuota", js.undefined)
+    inline def setSendQuotaUndefined: Self = StObject.set(x, "SendQuota", js.undefined)
     
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
+    inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
+    inline def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

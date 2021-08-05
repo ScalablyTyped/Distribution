@@ -14,19 +14,15 @@ trait AfterTransform extends StObject {
 }
 object AfterTransform {
   
-  @scala.inline
-  def apply(afterTransform: js.Any, runtimeStylesheetId: module | namespace): AfterTransform = {
+  inline def apply(afterTransform: js.Any, runtimeStylesheetId: module | namespace): AfterTransform = {
     val __obj = js.Dynamic.literal(afterTransform = afterTransform.asInstanceOf[js.Any], runtimeStylesheetId = runtimeStylesheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AfterTransform]
   }
   
-  @scala.inline
-  implicit class AfterTransformMutableBuilder[Self <: AfterTransform] (val x: Self) extends AnyVal {
+  extension [Self <: AfterTransform](x: Self) {
     
-    @scala.inline
-    def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
+    inline def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
+    inline def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
   }
 }

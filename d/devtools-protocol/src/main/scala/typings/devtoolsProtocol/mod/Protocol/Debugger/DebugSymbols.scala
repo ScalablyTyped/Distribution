@@ -22,23 +22,18 @@ trait DebugSymbols extends StObject {
 }
 object DebugSymbols {
   
-  @scala.inline
-  def apply(`type`: None | SourceMap | EmbeddedDWARF | ExternalDWARF): DebugSymbols = {
+  inline def apply(`type`: None | SourceMap | EmbeddedDWARF | ExternalDWARF): DebugSymbols = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSymbols]
   }
   
-  @scala.inline
-  implicit class DebugSymbolsMutableBuilder[Self <: DebugSymbols] (val x: Self) extends AnyVal {
+  extension [Self <: DebugSymbols](x: Self) {
     
-    @scala.inline
-    def setExternalURL(value: String): Self = StObject.set(x, "externalURL", value.asInstanceOf[js.Any])
+    inline def setExternalURL(value: String): Self = StObject.set(x, "externalURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalURLUndefined: Self = StObject.set(x, "externalURL", js.undefined)
+    inline def setExternalURLUndefined: Self = StObject.set(x, "externalURL", js.undefined)
     
-    @scala.inline
-    def setType(value: None | SourceMap | EmbeddedDWARF | ExternalDWARF): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: None | SourceMap | EmbeddedDWARF | ExternalDWARF): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

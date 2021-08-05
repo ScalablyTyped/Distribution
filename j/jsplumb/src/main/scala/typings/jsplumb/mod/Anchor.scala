@@ -26,8 +26,7 @@ trait Anchor extends StObject {
 }
 object Anchor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cssClass: String,
     elementId: String,
     id: String,
@@ -43,34 +42,24 @@ object Anchor {
     __obj.asInstanceOf[Anchor]
   }
   
-  @scala.inline
-  implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+  extension [Self <: Anchor](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+    inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsets(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+    inline def setOffsets(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: js.Tuple2[AnchorOrientationHint, AnchorOrientationHint]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: js.Tuple2[AnchorOrientationHint, AnchorOrientationHint]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AnchorId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AnchorId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

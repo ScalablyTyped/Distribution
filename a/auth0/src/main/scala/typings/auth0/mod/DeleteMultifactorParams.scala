@@ -12,19 +12,15 @@ trait DeleteMultifactorParams extends StObject {
 }
 object DeleteMultifactorParams {
   
-  @scala.inline
-  def apply(id: String, provider: DeleteDeleteMultifactorParamsProvider): DeleteMultifactorParams = {
+  inline def apply(id: String, provider: DeleteDeleteMultifactorParamsProvider): DeleteMultifactorParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMultifactorParams]
   }
   
-  @scala.inline
-  implicit class DeleteMultifactorParamsMutableBuilder[Self <: DeleteMultifactorParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMultifactorParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: DeleteDeleteMultifactorParamsProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: DeleteDeleteMultifactorParamsProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
   }
 }

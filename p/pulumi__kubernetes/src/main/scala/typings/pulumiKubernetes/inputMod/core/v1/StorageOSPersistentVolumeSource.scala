@@ -37,43 +37,31 @@ trait StorageOSPersistentVolumeSource extends StObject {
 }
 object StorageOSPersistentVolumeSource {
   
-  @scala.inline
-  def apply(): StorageOSPersistentVolumeSource = {
+  inline def apply(): StorageOSPersistentVolumeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageOSPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class StorageOSPersistentVolumeSourceMutableBuilder[Self <: StorageOSPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: StorageOSPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSecretRef(value: Input[ObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: Input[ObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
+    inline def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
-    @scala.inline
-    def setVolumeName(value: Input[String]): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
+    inline def setVolumeName(value: Input[String]): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeNameUndefined: Self = StObject.set(x, "volumeName", js.undefined)
+    inline def setVolumeNameUndefined: Self = StObject.set(x, "volumeName", js.undefined)
     
-    @scala.inline
-    def setVolumeNamespace(value: Input[String]): Self = StObject.set(x, "volumeNamespace", value.asInstanceOf[js.Any])
+    inline def setVolumeNamespace(value: Input[String]): Self = StObject.set(x, "volumeNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeNamespaceUndefined: Self = StObject.set(x, "volumeNamespace", js.undefined)
+    inline def setVolumeNamespaceUndefined: Self = StObject.set(x, "volumeNamespace", js.undefined)
   }
 }

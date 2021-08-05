@@ -17,18 +17,15 @@ trait BitmapMode extends StObject
 object BitmapMode {
   
   /** the bitmap is painted in its original or selected size. */
-  @scala.inline
-  def NO_REPEAT: `2` = 2.asInstanceOf[`2`]
+  inline def NO_REPEAT: `2` = 2.asInstanceOf[`2`]
   
   /** the bitmap is repeated over the fill area. */
-  @scala.inline
-  def REPEAT: `0` = 0.asInstanceOf[`0`]
+  inline def REPEAT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the bitmap is stretched to fill the area.
     *
     * The text is stretched so that the longest line goes from the left to the right edge of the shape.
     */
-  @scala.inline
-  def STRETCH: `1` = 1.asInstanceOf[`1`]
+  inline def STRETCH: `1` = 1.asInstanceOf[`1`]
 }

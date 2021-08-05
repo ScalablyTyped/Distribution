@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSortBy extends StObject
 object MsoSortBy {
   
-  @scala.inline
-  def msoSortByFileName: `1` = 1.asInstanceOf[`1`]
+  inline def msoSortByFileName: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoSortByFileType: `3` = 3.asInstanceOf[`3`]
+  inline def msoSortByFileType: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSortByLastModified: `4` = 4.asInstanceOf[`4`]
+  inline def msoSortByLastModified: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoSortByNone: `5` = 5.asInstanceOf[`5`]
+  inline def msoSortByNone: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoSortBySize: `2` = 2.asInstanceOf[`2`]
+  inline def msoSortBySize: `2` = 2.asInstanceOf[`2`]
 }

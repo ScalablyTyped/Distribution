@@ -51,8 +51,7 @@ object Encoder {
     * @param tagName tag name to be looked up
     * @return tag ID
     */
-  @scala.inline
-  def getSchemaInfo(tagName: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaInfo")(tagName.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def getSchemaInfo(tagName: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaInfo")(tagName.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
   trait TagStackItem extends StObject {
     
@@ -68,8 +67,7 @@ object Encoder {
   }
   object TagStackItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: js.Array[TagStackItem],
       end: Double,
       id: ReturnType[js.Function1[/* tagName */ String, Double | Null]],
@@ -79,29 +77,21 @@ object Encoder {
       __obj.asInstanceOf[TagStackItem]
     }
     
-    @scala.inline
-    implicit class TagStackItemMutableBuilder[Self <: TagStackItem] (val x: Self) extends AnyVal {
+    extension [Self <: TagStackItem](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[TagStackItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[TagStackItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: TagStackItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: TagStackItem*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: ReturnType[js.Function1[/* tagName */ String, Double | Null]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ReturnType[js.Function1[/* tagName */ String, Double | Null]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asBlob(
+  inline def asBlob(
     /**
     * An HTML formatted string. It should be a complete, valid HTML
     * (including DOCTYPE, `html` and `body` tags).
@@ -23,8 +22,7 @@ object mod {
     */
   html: String
   ): Blob | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("asBlob")(html.asInstanceOf[js.Any]).asInstanceOf[Blob | Buffer]
-  @scala.inline
-  def asBlob(
+  inline def asBlob(
     /**
     * An HTML formatted string. It should be a complete, valid HTML
     * (including DOCTYPE, `html` and `body` tags).

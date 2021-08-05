@@ -17,26 +17,20 @@ trait Image
 }
 object Image {
   
-  @scala.inline
-  def apply(id: String, name: String, position: Point, size: Size, source: FileAsset | URLAsset): Image = {
+  inline def apply(id: String, name: String, position: Point, size: Size, source: FileAsset | URLAsset): Image = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("IMAGE")
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: IMAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IMAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

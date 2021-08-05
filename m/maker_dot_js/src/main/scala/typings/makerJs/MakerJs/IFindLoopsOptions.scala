@@ -18,19 +18,15 @@ trait IFindLoopsOptions
 }
 object IFindLoopsOptions {
   
-  @scala.inline
-  def apply(): IFindLoopsOptions = {
+  inline def apply(): IFindLoopsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFindLoopsOptions]
   }
   
-  @scala.inline
-  implicit class IFindLoopsOptionsMutableBuilder[Self <: IFindLoopsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFindLoopsOptions](x: Self) {
     
-    @scala.inline
-    def setRemoveFromOriginal(value: Boolean): Self = StObject.set(x, "removeFromOriginal", value.asInstanceOf[js.Any])
+    inline def setRemoveFromOriginal(value: Boolean): Self = StObject.set(x, "removeFromOriginal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFromOriginalUndefined: Self = StObject.set(x, "removeFromOriginal", js.undefined)
+    inline def setRemoveFromOriginalUndefined: Self = StObject.set(x, "removeFromOriginal", js.undefined)
   }
 }

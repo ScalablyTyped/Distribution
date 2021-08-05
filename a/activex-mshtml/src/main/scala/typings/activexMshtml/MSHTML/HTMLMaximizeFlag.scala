@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLMaximizeFlag extends StObject
 object HTMLMaximizeFlag {
   
-  @scala.inline
-  def HTMLMaximizeFlagNo: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLMaximizeFlagNo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLMaximizeFlagYes: `65536` = 65536.asInstanceOf[`65536`]
+  inline def HTMLMaximizeFlagYes: `65536` = 65536.asInstanceOf[`65536`]
   
-  @scala.inline
-  def HTMLMaximizeFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLMaximizeFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

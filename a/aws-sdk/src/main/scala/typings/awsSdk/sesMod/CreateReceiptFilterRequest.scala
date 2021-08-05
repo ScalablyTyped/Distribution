@@ -13,16 +13,13 @@ trait CreateReceiptFilterRequest extends StObject {
 }
 object CreateReceiptFilterRequest {
   
-  @scala.inline
-  def apply(Filter: ReceiptFilter): CreateReceiptFilterRequest = {
+  inline def apply(Filter: ReceiptFilter): CreateReceiptFilterRequest = {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReceiptFilterRequest]
   }
   
-  @scala.inline
-  implicit class CreateReceiptFilterRequestMutableBuilder[Self <: CreateReceiptFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReceiptFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: ReceiptFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ReceiptFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
   }
 }

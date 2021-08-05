@@ -20,37 +20,27 @@ trait GetTemplateResponse extends StObject {
 }
 object GetTemplateResponse {
   
-  @scala.inline
-  def apply(): GetTemplateResponse = {
+  inline def apply(): GetTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GetTemplateResponseMutableBuilder[Self <: GetTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setRuntimeMetadata(value: RuntimeMetadata): Self = StObject.set(x, "runtimeMetadata", value.asInstanceOf[js.Any])
+    inline def setRuntimeMetadata(value: RuntimeMetadata): Self = StObject.set(x, "runtimeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeMetadataUndefined: Self = StObject.set(x, "runtimeMetadata", js.undefined)
+    inline def setRuntimeMetadataUndefined: Self = StObject.set(x, "runtimeMetadata", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTemplateType(value: String): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
+    inline def setTemplateType(value: String): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateTypeUndefined: Self = StObject.set(x, "templateType", js.undefined)
+    inline def setTemplateTypeUndefined: Self = StObject.set(x, "templateType", js.undefined)
   }
 }

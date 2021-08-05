@@ -16,23 +16,19 @@ trait SetRequestHeader
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.SetRequestHeader
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.SetRequestHeader
 }
 object SetRequestHeader {
   
-  @scala.inline
-  def apply(instanceType: String): SetRequestHeader = {
+  inline def apply(instanceType: String): SetRequestHeader = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "SetRequestHeader")
     __obj.asInstanceOf[SetRequestHeader]
   }
   
-  @scala.inline
-  implicit class SetRequestHeaderMutableBuilder[Self <: SetRequestHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SetRequestHeader](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.SetRequestHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.SetRequestHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

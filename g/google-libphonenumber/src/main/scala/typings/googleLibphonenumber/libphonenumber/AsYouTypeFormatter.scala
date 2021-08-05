@@ -12,19 +12,15 @@ trait AsYouTypeFormatter extends StObject {
 }
 object AsYouTypeFormatter {
   
-  @scala.inline
-  def apply(clear: () => Unit, inputDigit: String => String): AsYouTypeFormatter = {
+  inline def apply(clear: () => Unit, inputDigit: String => String): AsYouTypeFormatter = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), inputDigit = js.Any.fromFunction1(inputDigit))
     __obj.asInstanceOf[AsYouTypeFormatter]
   }
   
-  @scala.inline
-  implicit class AsYouTypeFormatterMutableBuilder[Self <: AsYouTypeFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: AsYouTypeFormatter](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputDigit(value: String => String): Self = StObject.set(x, "inputDigit", js.Any.fromFunction1(value))
+    inline def setInputDigit(value: String => String): Self = StObject.set(x, "inputDigit", js.Any.fromFunction1(value))
   }
 }

@@ -14,28 +14,21 @@ trait TiersListResponse extends StObject {
 }
 object TiersListResponse {
   
-  @scala.inline
-  def apply(): TiersListResponse = {
+  inline def apply(): TiersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TiersListResponse]
   }
   
-  @scala.inline
-  implicit class TiersListResponseMutableBuilder[Self <: TiersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TiersListResponse](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[Tier]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Tier]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Tier*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Tier*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

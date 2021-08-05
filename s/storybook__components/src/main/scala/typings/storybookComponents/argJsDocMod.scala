@@ -32,17 +32,14 @@ object argJsDocMod {
   }
   object ArgJsDocArgs {
     
-    @scala.inline
-    def apply(tags: JsDocTags): ArgJsDocArgs = {
+    inline def apply(tags: JsDocTags): ArgJsDocArgs = {
       val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgJsDocArgs]
     }
     
-    @scala.inline
-    implicit class ArgJsDocArgsMutableBuilder[Self <: ArgJsDocArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ArgJsDocArgs](x: Self) {
       
-      @scala.inline
-      def setTags(value: JsDocTags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: JsDocTags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object XlDataLabelSeparator {
   
-  @scala.inline
-  def xlDataLabelSeparatorDefault: `1` = 1.asInstanceOf[`1`]
+  inline def xlDataLabelSeparatorDefault: `1` = 1.asInstanceOf[`1`]
 }

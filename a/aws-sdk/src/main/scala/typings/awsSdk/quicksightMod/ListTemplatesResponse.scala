@@ -28,40 +28,29 @@ trait ListTemplatesResponse extends StObject {
 }
 object ListTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListTemplatesResponse = {
+  inline def apply(): ListTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListTemplatesResponseMutableBuilder[Self <: ListTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTemplateSummaryList(value: TemplateSummaryList): Self = StObject.set(x, "TemplateSummaryList", value.asInstanceOf[js.Any])
+    inline def setTemplateSummaryList(value: TemplateSummaryList): Self = StObject.set(x, "TemplateSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateSummaryListUndefined: Self = StObject.set(x, "TemplateSummaryList", js.undefined)
+    inline def setTemplateSummaryListUndefined: Self = StObject.set(x, "TemplateSummaryList", js.undefined)
     
-    @scala.inline
-    def setTemplateSummaryListVarargs(value: TemplateSummary*): Self = StObject.set(x, "TemplateSummaryList", js.Array(value :_*))
+    inline def setTemplateSummaryListVarargs(value: TemplateSummary*): Self = StObject.set(x, "TemplateSummaryList", js.Array(value :_*))
   }
 }

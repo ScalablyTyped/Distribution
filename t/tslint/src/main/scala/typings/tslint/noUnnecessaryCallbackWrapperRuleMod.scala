@@ -21,13 +21,11 @@ object noUnnecessaryCallbackWrapperRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FAILURE_STRING(cbText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(cbText.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING(cbText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(cbText.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noUnnecessaryCallbackWrapperRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

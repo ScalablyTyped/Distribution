@@ -13,19 +13,15 @@ trait FindOpts extends StObject {
 }
 object FindOpts {
   
-  @scala.inline
-  def apply(): FindOpts = {
+  inline def apply(): FindOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOpts]
   }
   
-  @scala.inline
-  implicit class FindOptsMutableBuilder[Self <: FindOpts] (val x: Self) extends AnyVal {
+  extension [Self <: FindOpts](x: Self) {
     
-    @scala.inline
-    def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
   }
 }

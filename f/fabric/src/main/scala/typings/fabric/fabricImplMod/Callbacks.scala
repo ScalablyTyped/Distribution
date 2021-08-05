@@ -14,25 +14,19 @@ trait Callbacks extends StObject {
 }
 object Callbacks {
   
-  @scala.inline
-  def apply(): Callbacks = {
+  inline def apply(): Callbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Callbacks]
   }
   
-  @scala.inline
-  implicit class CallbacksMutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
+  extension [Self <: Callbacks](x: Self) {
     
-    @scala.inline
-    def setOnChange(value: js.Function): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: js.Function): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnComplete(value: js.Function): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+    inline def setOnComplete(value: js.Function): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
   }
 }

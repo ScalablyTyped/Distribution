@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.RuleCondition")
 @js.native
-class RuleCondition protected ()
+/* private */ class RuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.RuleCondition {
   
@@ -24,7 +24,7 @@ class RuleCondition protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.RuleCondition_typekey")
   var OutlookDotRuleCondition_typekey: typings.activexOutlook.Outlook.RuleCondition = js.native
   

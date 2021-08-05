@@ -18,19 +18,15 @@ trait GetConfigurationProfileRequest extends StObject {
 }
 object GetConfigurationProfileRequest {
   
-  @scala.inline
-  def apply(ApplicationId: Id, ConfigurationProfileId: Id): GetConfigurationProfileRequest = {
+  inline def apply(ApplicationId: Id, ConfigurationProfileId: Id): GetConfigurationProfileRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConfigurationProfileRequest]
   }
   
-  @scala.inline
-  implicit class GetConfigurationProfileRequestMutableBuilder[Self <: GetConfigurationProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigurationProfileRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
+    inline def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
   }
 }

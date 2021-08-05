@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createContainer[Value, State](useHook: js.Function1[/* initialState */ js.UndefOr[State], Value]): Container[Value, State] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(useHook.asInstanceOf[js.Any]).asInstanceOf[Container[Value, State]]
+  inline def createContainer[Value, State](useHook: js.Function1[/* initialState */ js.UndefOr[State], Value]): Container[Value, State] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(useHook.asInstanceOf[js.Any]).asInstanceOf[Container[Value, State]]
   
-  @scala.inline
-  def useContainer[Value, State](container: Container[Value, State]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def useContainer[Value, State](container: Container[Value, State]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Value]
   
   trait Container[Value, State] extends StObject {
     
@@ -26,20 +24,16 @@ object mod {
   }
   object Container {
     
-    @scala.inline
-    def apply[Value, State](Provider: ComponentType[ContainerProviderProps[State]], useContainer: () => Value): Container[Value, State] = {
+    inline def apply[Value, State](Provider: ComponentType[ContainerProviderProps[State]], useContainer: () => Value): Container[Value, State] = {
       val __obj = js.Dynamic.literal(Provider = Provider.asInstanceOf[js.Any], useContainer = js.Any.fromFunction0(useContainer))
       __obj.asInstanceOf[Container[Value, State]]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container[?, ?], Value, State] (val x: Self & (Container[Value, State])) extends AnyVal {
+    extension [Self <: Container[?, ?], Value, State](x: Self & (Container[Value, State])) {
       
-      @scala.inline
-      def setProvider(value: ComponentType[ContainerProviderProps[State]]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: ComponentType[ContainerProviderProps[State]]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseContainer(value: () => Value): Self = StObject.set(x, "useContainer", js.Any.fromFunction0(value))
+      inline def setUseContainer(value: () => Value): Self = StObject.set(x, "useContainer", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,26 +45,20 @@ object mod {
   }
   object ContainerProviderProps {
     
-    @scala.inline
-    def apply[State](): ContainerProviderProps[State] = {
+    inline def apply[State](): ContainerProviderProps[State] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerProviderProps[State]]
     }
     
-    @scala.inline
-    implicit class ContainerProviderPropsMutableBuilder[Self <: ContainerProviderProps[?], State] (val x: Self & ContainerProviderProps[State]) extends AnyVal {
+    extension [Self <: ContainerProviderProps[?], State](x: Self & ContainerProviderProps[State]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     }
   }
 }

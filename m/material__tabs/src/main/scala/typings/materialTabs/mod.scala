@@ -33,8 +33,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialTabs.tabComponentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabComponentMod.MDCTab]
+    inline def attachTo(root: Element): typings.materialTabs.tabComponentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabComponentMod.MDCTab]
   }
   
   @JSImport("@material/tabs", "MDCTabBar")
@@ -55,8 +54,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabBarComponentMod.MDCTabBar]
+    inline def attachTo(root: Element): typings.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabBarComponentMod.MDCTabBar]
   }
   
   @JSImport("@material/tabs", "MDCTabBarFoundation")
@@ -99,8 +97,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialTabs.componentMod.MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.componentMod.MDCTabBarScroller]
+    inline def attachTo(root: Element): typings.materialTabs.componentMod.MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.componentMod.MDCTabBarScroller]
   }
   
   @JSImport("@material/tabs", "MDCTabBarScrollerFoundation")
@@ -156,8 +153,7 @@ object mod {
     @JSImport("@material/tabs", "tabBarCssClasses.UPGRADED")
     @js.native
     def UPGRADED: String = js.native
-    @scala.inline
-    def UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPGRADED")(x.asInstanceOf[js.Any])
+    inline def UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPGRADED")(x.asInstanceOf[js.Any])
   }
   
   object tabBarScrollerCssClasses {
@@ -169,26 +165,22 @@ object mod {
     @JSImport("@material/tabs", "tabBarScrollerCssClasses.INDICATOR_BACK")
     @js.native
     def INDICATOR_BACK: String = js.native
-    @scala.inline
-    def INDICATOR_BACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_BACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerCssClasses.INDICATOR_ENABLED")
     @js.native
     def INDICATOR_ENABLED: String = js.native
-    @scala.inline
-    def INDICATOR_ENABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_ENABLED")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_ENABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_ENABLED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerCssClasses.INDICATOR_FORWARD")
     @js.native
     def INDICATOR_FORWARD: String = js.native
-    @scala.inline
-    def INDICATOR_FORWARD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_FORWARD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerCssClasses.TAB")
     @js.native
     def TAB: String = js.native
-    @scala.inline
-    def TAB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
+    inline def TAB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
   }
   
   object tabBarScrollerStrings {
@@ -200,32 +192,27 @@ object mod {
     @JSImport("@material/tabs", "tabBarScrollerStrings.FRAME_SELECTOR")
     @js.native
     def FRAME_SELECTOR: String = js.native
-    @scala.inline
-    def FRAME_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def FRAME_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerStrings.INDICATOR_BACK_SELECTOR")
     @js.native
     def INDICATOR_BACK_SELECTOR: String = js.native
-    @scala.inline
-    def INDICATOR_BACK_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_BACK_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerStrings.INDICATOR_FORWARD_SELECTOR")
     @js.native
     def INDICATOR_FORWARD_SELECTOR: String = js.native
-    @scala.inline
-    def INDICATOR_FORWARD_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_FORWARD_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerStrings.TABS_SELECTOR")
     @js.native
     def TABS_SELECTOR: String = js.native
-    @scala.inline
-    def TABS_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABS_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TABS_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABS_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarScrollerStrings.TAB_SELECTOR")
     @js.native
     def TAB_SELECTOR: String = js.native
-    @scala.inline
-    def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
   }
   
   object tabBarStrings {
@@ -237,20 +224,17 @@ object mod {
     @JSImport("@material/tabs", "tabBarStrings.CHANGE_EVENT")
     @js.native
     def CHANGE_EVENT: String = js.native
-    @scala.inline
-    def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
+    inline def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarStrings.INDICATOR_SELECTOR")
     @js.native
     def INDICATOR_SELECTOR: String = js.native
-    @scala.inline
-    def INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs", "tabBarStrings.TAB_SELECTOR")
     @js.native
     def TAB_SELECTOR: String = js.native
-    @scala.inline
-    def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
   }
   
   object tabCssClasses {
@@ -262,8 +246,7 @@ object mod {
     @JSImport("@material/tabs", "tabCssClasses.ACTIVE")
     @js.native
     def ACTIVE: String = js.native
-    @scala.inline
-    def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+    inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
   }
   
   object tabStrings {
@@ -275,7 +258,6 @@ object mod {
     @JSImport("@material/tabs", "tabStrings.SELECTED_EVENT")
     @js.native
     def SELECTED_EVENT: String = js.native
-    @scala.inline
-    def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
+    inline def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
   }
 }

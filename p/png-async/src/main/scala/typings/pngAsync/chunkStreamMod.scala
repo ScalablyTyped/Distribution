@@ -14,21 +14,21 @@ object chunkStreamMod {
   @js.native
   trait ChunkStream extends Duplex {
     
-    var _buffered: js.Any = js.native
+    /* private */ var _buffered: js.Any = js.native
     
-    var _buffers: js.Any = js.native
+    /* private */ var _buffers: js.Any = js.native
     
-    var _encoding: js.Any = js.native
+    /* private */ var _encoding: js.Any = js.native
     
-    var _end: js.Any = js.native
+    /* private */ var _end: js.Any = js.native
     
-    var _paused: js.Any = js.native
+    /* private */ var _paused: js.Any = js.native
     
-    var _process: js.Any = js.native
+    /* private */ var _process: js.Any = js.native
     
     def _read(size: js.Any): Unit = js.native
     
-    var _reads: js.Any = js.native
+    /* private */ var _reads: js.Any = js.native
     
     def _write(data: js.Any, encoding: js.Any, cb: js.Any): Boolean = js.native
     

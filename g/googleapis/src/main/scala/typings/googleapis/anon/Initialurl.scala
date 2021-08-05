@@ -17,37 +17,27 @@ trait Initialurl extends StObject {
 }
 object Initialurl {
   
-  @scala.inline
-  def apply(): Initialurl = {
+  inline def apply(): Initialurl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Initialurl]
   }
   
-  @scala.inline
-  implicit class InitialurlMutableBuilder[Self <: Initialurl] (val x: Self) extends AnyVal {
+  extension [Self <: Initialurl](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInitial_url(value: String): Self = StObject.set(x, "initial_url", value.asInstanceOf[js.Any])
+    inline def setInitial_url(value: String): Self = StObject.set(x, "initial_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitial_urlUndefined: Self = StObject.set(x, "initial_url", js.undefined)
+    inline def setInitial_urlUndefined: Self = StObject.set(x, "initial_url", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: StringDictionary[Distributions]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: StringDictionary[Distributions]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setOverall_category(value: String): Self = StObject.set(x, "overall_category", value.asInstanceOf[js.Any])
+    inline def setOverall_category(value: String): Self = StObject.set(x, "overall_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverall_categoryUndefined: Self = StObject.set(x, "overall_category", js.undefined)
+    inline def setOverall_categoryUndefined: Self = StObject.set(x, "overall_category", js.undefined)
   }
 }

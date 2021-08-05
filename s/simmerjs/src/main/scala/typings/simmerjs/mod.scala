@@ -97,41 +97,30 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setErrorHandling(value: Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])): Self = StObject.set(x, "errorHandling", value.asInstanceOf[js.Any])
+      inline def setErrorHandling(value: Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])): Self = StObject.set(x, "errorHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorHandlingFunction2(value: (/* error */ js.Any, /* element */ Element) => Unit): Self = StObject.set(x, "errorHandling", js.Any.fromFunction2(value))
+      inline def setErrorHandlingFunction2(value: (/* error */ js.Any, /* element */ Element) => Unit): Self = StObject.set(x, "errorHandling", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorHandlingUndefined: Self = StObject.set(x, "errorHandling", js.undefined)
+      inline def setErrorHandlingUndefined: Self = StObject.set(x, "errorHandling", js.undefined)
       
-      @scala.inline
-      def setSelectorMaxLength(value: Double): Self = StObject.set(x, "selectorMaxLength", value.asInstanceOf[js.Any])
+      inline def setSelectorMaxLength(value: Double): Self = StObject.set(x, "selectorMaxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorMaxLengthUndefined: Self = StObject.set(x, "selectorMaxLength", js.undefined)
+      inline def setSelectorMaxLengthUndefined: Self = StObject.set(x, "selectorMaxLength", js.undefined)
       
-      @scala.inline
-      def setSpecificityThreshold(value: Double): Self = StObject.set(x, "specificityThreshold", value.asInstanceOf[js.Any])
+      inline def setSpecificityThreshold(value: Double): Self = StObject.set(x, "specificityThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecificityThresholdUndefined: Self = StObject.set(x, "specificityThreshold", js.undefined)
+      inline def setSpecificityThresholdUndefined: Self = StObject.set(x, "specificityThreshold", js.undefined)
     }
   }
   
@@ -151,19 +140,16 @@ object mod extends Shortcut {
   }
   object Queryable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
     ): Queryable = {
       val __obj = js.Dynamic.literal(querySelectorAll = js.Any.fromFunction2(querySelectorAll))
       __obj.asInstanceOf[Queryable]
     }
     
-    @scala.inline
-    implicit class QueryableMutableBuilder[Self <: Queryable] (val x: Self) extends AnyVal {
+    extension [Self <: Queryable](x: Self) {
       
-      @scala.inline
-      def setQuerySelectorAll(
+      inline def setQuerySelectorAll(
         value: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
       ): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction2(value))
     }
@@ -176,16 +162,14 @@ object mod extends Shortcut {
   trait Scope extends StObject
   object Scope {
     
-    @scala.inline
-    def Queryable(
+    inline def Queryable(
       querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
     ): typings.simmerjs.mod.Queryable = {
       val __obj = js.Dynamic.literal(querySelectorAll = js.Any.fromFunction2(querySelectorAll))
       __obj.asInstanceOf[typings.simmerjs.mod.Queryable]
     }
     
-    @scala.inline
-    def WindowLike(document: Queryable): typings.simmerjs.mod.WindowLike = {
+    inline def WindowLike(document: Queryable): typings.simmerjs.mod.WindowLike = {
       val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.simmerjs.mod.WindowLike]
     }
@@ -271,17 +255,14 @@ object mod extends Shortcut {
   }
   object WindowLike {
     
-    @scala.inline
-    def apply(document: Queryable): WindowLike = {
+    inline def apply(document: Queryable): WindowLike = {
       val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowLike]
     }
     
-    @scala.inline
-    implicit class WindowLikeMutableBuilder[Self <: WindowLike] (val x: Self) extends AnyVal {
+    extension [Self <: WindowLike](x: Self) {
       
-      @scala.inline
-      def setDocument(value: Queryable): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: Queryable): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,17 +298,14 @@ object mod extends Shortcut {
     }
     object Window {
       
-      @scala.inline
-      def apply(Simmer: SimmernoConflictany): Window = {
+      inline def apply(Simmer: SimmernoConflictany): Window = {
         val __obj = js.Dynamic.literal(Simmer = Simmer.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setSimmer(value: SimmernoConflictany): Self = StObject.set(x, "Simmer", value.asInstanceOf[js.Any])
+        inline def setSimmer(value: SimmernoConflictany): Self = StObject.set(x, "Simmer", value.asInstanceOf[js.Any])
       }
     }
   }

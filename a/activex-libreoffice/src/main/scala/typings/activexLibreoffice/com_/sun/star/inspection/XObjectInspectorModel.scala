@@ -104,8 +104,7 @@ trait XObjectInspectorModel extends StObject {
 }
 object XObjectInspectorModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HandlerFactories: SafeArray[js.Any],
     HasHelpSection: Boolean,
     IsReadOnly: Boolean,
@@ -118,28 +117,20 @@ object XObjectInspectorModel {
     __obj.asInstanceOf[XObjectInspectorModel]
   }
   
-  @scala.inline
-  implicit class XObjectInspectorModelMutableBuilder[Self <: XObjectInspectorModel] (val x: Self) extends AnyVal {
+  extension [Self <: XObjectInspectorModel](x: Self) {
     
-    @scala.inline
-    def setDescribeCategories(value: () => SafeArray[PropertyCategoryDescriptor]): Self = StObject.set(x, "describeCategories", js.Any.fromFunction0(value))
+    inline def setDescribeCategories(value: () => SafeArray[PropertyCategoryDescriptor]): Self = StObject.set(x, "describeCategories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyOrderIndex(value: String => Double): Self = StObject.set(x, "getPropertyOrderIndex", js.Any.fromFunction1(value))
+    inline def setGetPropertyOrderIndex(value: String => Double): Self = StObject.set(x, "getPropertyOrderIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandlerFactories(value: SafeArray[js.Any]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
+    inline def setHandlerFactories(value: SafeArray[js.Any]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasHelpSection(value: Boolean): Self = StObject.set(x, "HasHelpSection", value.asInstanceOf[js.Any])
+    inline def setHasHelpSection(value: Boolean): Self = StObject.set(x, "HasHelpSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHelpTextLines(value: Double): Self = StObject.set(x, "MaxHelpTextLines", value.asInstanceOf[js.Any])
+    inline def setMaxHelpTextLines(value: Double): Self = StObject.set(x, "MaxHelpTextLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHelpTextLines(value: Double): Self = StObject.set(x, "MinHelpTextLines", value.asInstanceOf[js.Any])
+    inline def setMinHelpTextLines(value: Double): Self = StObject.set(x, "MinHelpTextLines", value.asInstanceOf[js.Any])
   }
 }

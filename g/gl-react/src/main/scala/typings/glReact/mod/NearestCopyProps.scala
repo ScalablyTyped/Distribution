@@ -10,19 +10,15 @@ trait NearestCopyProps extends StObject {
 }
 object NearestCopyProps {
   
-  @scala.inline
-  def apply(): NearestCopyProps = {
+  inline def apply(): NearestCopyProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NearestCopyProps]
   }
   
-  @scala.inline
-  implicit class NearestCopyPropsMutableBuilder[Self <: NearestCopyProps] (val x: Self) extends AnyVal {
+  extension [Self <: NearestCopyProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

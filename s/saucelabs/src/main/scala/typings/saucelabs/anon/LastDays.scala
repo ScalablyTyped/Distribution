@@ -16,37 +16,27 @@ trait LastDays extends StObject {
 }
 object LastDays {
   
-  @scala.inline
-  def apply(): LastDays = {
+  inline def apply(): LastDays = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LastDays]
   }
   
-  @scala.inline
-  implicit class LastDaysMutableBuilder[Self <: LastDays] (val x: Self) extends AnyVal {
+  extension [Self <: LastDays](x: Self) {
     
-    @scala.inline
-    def setLastDays(value: Double): Self = StObject.set(x, "lastDays", value.asInstanceOf[js.Any])
+    inline def setLastDays(value: Double): Self = StObject.set(x, "lastDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDaysUndefined: Self = StObject.set(x, "lastDays", js.undefined)
+    inline def setLastDaysUndefined: Self = StObject.set(x, "lastDays", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

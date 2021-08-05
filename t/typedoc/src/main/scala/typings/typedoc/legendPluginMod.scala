@@ -12,11 +12,11 @@ object legendPluginMod {
   @js.native
   class LegendBuilder () extends StObject {
     
-    var _classesList: js.Any = js.native
+    /* private */ var _classesList: js.Any = js.native
     
     def build(): js.Array[js.Array[LegendItem]] = js.native
     
-    var isArrayEqualToSet: js.Any = js.native
+    /* private */ var isArrayEqualToSet: js.Any = js.native
     
     def registerCssClasses(classArray: js.Array[String]): Unit = js.native
   }
@@ -27,13 +27,13 @@ object legendPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Renderer) = this()
     
-    var _project: js.Any = js.native
+    /* private */ var _project: js.Any = js.native
     
-    var buildLegend: js.Any = js.native
+    /* private */ var buildLegend: js.Any = js.native
     
-    var onRenderBegin: js.Any = js.native
+    /* private */ var onRenderBegin: js.Any = js.native
     
-    var onRendererBeginPage: js.Any = js.native
+    /* private */ var onRendererBeginPage: js.Any = js.native
   }
   
   trait LegendItem extends StObject {
@@ -44,23 +44,18 @@ object legendPluginMod {
   }
   object LegendItem {
     
-    @scala.inline
-    def apply(classes: js.Array[String], name: String): LegendItem = {
+    inline def apply(classes: js.Array[String], name: String): LegendItem = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegendItem]
     }
     
-    @scala.inline
-    implicit class LegendItemMutableBuilder[Self <: LegendItem] (val x: Self) extends AnyVal {
+    extension [Self <: LegendItem](x: Self) {
       
-      @scala.inline
-      def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

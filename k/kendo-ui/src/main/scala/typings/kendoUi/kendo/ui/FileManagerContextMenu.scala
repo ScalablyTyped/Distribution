@@ -10,22 +10,17 @@ trait FileManagerContextMenu extends StObject {
 }
 object FileManagerContextMenu {
   
-  @scala.inline
-  def apply(): FileManagerContextMenu = {
+  inline def apply(): FileManagerContextMenu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerContextMenu]
   }
   
-  @scala.inline
-  implicit class FileManagerContextMenuMutableBuilder[Self <: FileManagerContextMenu] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerContextMenu](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[FileManagerContextMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[FileManagerContextMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: FileManagerContextMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FileManagerContextMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

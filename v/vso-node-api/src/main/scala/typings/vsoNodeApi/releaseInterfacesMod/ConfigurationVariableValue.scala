@@ -18,19 +18,15 @@ trait ConfigurationVariableValue extends StObject {
 }
 object ConfigurationVariableValue {
   
-  @scala.inline
-  def apply(isSecret: Boolean, value: String): ConfigurationVariableValue = {
+  inline def apply(isSecret: Boolean, value: String): ConfigurationVariableValue = {
     val __obj = js.Dynamic.literal(isSecret = isSecret.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationVariableValue]
   }
   
-  @scala.inline
-  implicit class ConfigurationVariableValueMutableBuilder[Self <: ConfigurationVariableValue] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationVariableValue](x: Self) {
     
-    @scala.inline
-    def setIsSecret(value: Boolean): Self = StObject.set(x, "isSecret", value.asInstanceOf[js.Any])
+    inline def setIsSecret(value: Boolean): Self = StObject.set(x, "isSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

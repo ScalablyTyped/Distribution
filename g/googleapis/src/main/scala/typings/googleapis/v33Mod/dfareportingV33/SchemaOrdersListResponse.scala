@@ -27,34 +27,25 @@ trait SchemaOrdersListResponse extends StObject {
 }
 object SchemaOrdersListResponse {
   
-  @scala.inline
-  def apply(): SchemaOrdersListResponse = {
+  inline def apply(): SchemaOrdersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersListResponseMutableBuilder[Self <: SchemaOrdersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setOrders(value: js.Array[SchemaOrder]): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
+    inline def setOrders(value: js.Array[SchemaOrder]): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
+    inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
     
-    @scala.inline
-    def setOrdersVarargs(value: SchemaOrder*): Self = StObject.set(x, "orders", js.Array(value :_*))
+    inline def setOrdersVarargs(value: SchemaOrder*): Self = StObject.set(x, "orders", js.Array(value :_*))
   }
 }

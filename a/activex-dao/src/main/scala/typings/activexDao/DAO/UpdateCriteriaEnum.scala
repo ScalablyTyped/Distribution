@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateCriteriaEnum extends StObject
 object UpdateCriteriaEnum {
   
-  @scala.inline
-  def dbCriteriaAllCols: `4` = 4.asInstanceOf[`4`]
+  inline def dbCriteriaAllCols: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def dbCriteriaDeleteInsert: `16` = 16.asInstanceOf[`16`]
+  inline def dbCriteriaDeleteInsert: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def dbCriteriaKey: `1` = 1.asInstanceOf[`1`]
+  inline def dbCriteriaKey: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbCriteriaModValues: `2` = 2.asInstanceOf[`2`]
+  inline def dbCriteriaModValues: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbCriteriaTimestamp: `8` = 8.asInstanceOf[`8`]
+  inline def dbCriteriaTimestamp: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def dbCriteriaUpdate: `32` = 32.asInstanceOf[`32`]
+  inline def dbCriteriaUpdate: `32` = 32.asInstanceOf[`32`]
 }

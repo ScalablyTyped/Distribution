@@ -21,34 +21,25 @@ trait AggregationResult extends StObject {
 }
 object AggregationResult {
   
-  @scala.inline
-  def apply(): AggregationResult = {
+  inline def apply(): AggregationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregationResult]
   }
   
-  @scala.inline
-  implicit class AggregationResultMutableBuilder[Self <: AggregationResult] (val x: Self) extends AnyVal {
+  extension [Self <: AggregationResult](x: Self) {
     
-    @scala.inline
-    def setAggregations(value: js.Array[QueryAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+    inline def setAggregations(value: js.Array[QueryAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
+    inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
-    @scala.inline
-    def setAggregationsVarargs(value: QueryAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
+    inline def setAggregationsVarargs(value: QueryAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
+    inline def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
+    inline def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
   }
 }

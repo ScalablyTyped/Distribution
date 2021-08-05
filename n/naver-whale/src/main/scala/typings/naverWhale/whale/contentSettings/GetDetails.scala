@@ -20,34 +20,25 @@ trait GetDetails extends StObject {
 }
 object GetDetails {
   
-  @scala.inline
-  def apply(primaryUrl: String): GetDetails = {
+  inline def apply(primaryUrl: String): GetDetails = {
     val __obj = js.Dynamic.literal(primaryUrl = primaryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDetails]
   }
   
-  @scala.inline
-  implicit class GetDetailsMutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GetDetails](x: Self) {
     
-    @scala.inline
-    def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+    inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+    inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     
-    @scala.inline
-    def setPrimaryUrl(value: String): Self = StObject.set(x, "primaryUrl", value.asInstanceOf[js.Any])
+    inline def setPrimaryUrl(value: String): Self = StObject.set(x, "primaryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifier(value: typings.chrome.chrome.contentSettings.ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: typings.chrome.chrome.contentSettings.ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
+    inline def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setSecondaryUrl(value: String): Self = StObject.set(x, "secondaryUrl", value.asInstanceOf[js.Any])
+    inline def setSecondaryUrl(value: String): Self = StObject.set(x, "secondaryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUrlUndefined: Self = StObject.set(x, "secondaryUrl", js.undefined)
+    inline def setSecondaryUrlUndefined: Self = StObject.set(x, "secondaryUrl", js.undefined)
   }
 }

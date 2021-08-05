@@ -59,61 +59,43 @@ trait BasemapProperties
 }
 object BasemapProperties {
   
-  @scala.inline
-  def apply(): BasemapProperties = {
+  inline def apply(): BasemapProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasemapProperties]
   }
   
-  @scala.inline
-  implicit class BasemapPropertiesMutableBuilder[Self <: BasemapProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapProperties](x: Self) {
     
-    @scala.inline
-    def setBaseLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
+    inline def setBaseLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
+    inline def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
     
-    @scala.inline
-    def setBaseLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
+    inline def setBaseLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
-    @scala.inline
-    def setReferenceLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
+    inline def setReferenceLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
+    inline def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
     
-    @scala.inline
-    def setReferenceLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "referenceLayers", js.Array(value :_*))
+    inline def setReferenceLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "referenceLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

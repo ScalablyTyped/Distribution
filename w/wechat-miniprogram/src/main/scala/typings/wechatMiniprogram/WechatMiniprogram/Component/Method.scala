@@ -12,16 +12,13 @@ trait Method[M /* <: MethodOption */, TIsPage /* <: Boolean */] extends StObject
 }
 object Method {
   
-  @scala.inline
-  def apply[M /* <: MethodOption */, TIsPage /* <: Boolean */](methods: M & (js.Object | PartialILifetime)): Method[M, TIsPage] = {
+  inline def apply[M /* <: MethodOption */, TIsPage /* <: Boolean */](methods: M & (js.Object | PartialILifetime)): Method[M, TIsPage] = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Method[M, TIsPage]]
   }
   
-  @scala.inline
-  implicit class MethodMutableBuilder[Self <: Method[?, ?], M /* <: MethodOption */, TIsPage /* <: Boolean */] (val x: Self & (Method[M, TIsPage])) extends AnyVal {
+  extension [Self <: Method[?, ?], M /* <: MethodOption */, TIsPage /* <: Boolean */](x: Self & (Method[M, TIsPage])) {
     
-    @scala.inline
-    def setMethods(value: M & (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: M & (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
   }
 }

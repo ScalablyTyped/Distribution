@@ -69,8 +69,7 @@ object indent {
   }
   object specificDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       database: StringDictionary[js.Any],
       enterBr: Boolean,
       execJob: (editor, Double) => Boolean,
@@ -85,35 +84,25 @@ object indent {
       __obj.asInstanceOf[specificDefinition]
     }
     
-    @scala.inline
-    implicit class specificDefinitionMutableBuilder[Self <: specificDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: specificDefinition](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: StringDictionary[js.Any]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: StringDictionary[js.Any]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterBr(value: Boolean): Self = StObject.set(x, "enterBr", value.asInstanceOf[js.Any])
+      inline def setEnterBr(value: Boolean): Self = StObject.set(x, "enterBr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecJob(value: (editor, Double) => Boolean): Self = StObject.set(x, "execJob", js.Any.fromFunction2(value))
+      inline def setExecJob(value: (editor, Double) => Boolean): Self = StObject.set(x, "execJob", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetContext(value: elementPath => element): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+      inline def setGetContext(value: elementPath => element): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndentKey(value: StringDictionary[js.Any]): Self = StObject.set(x, "indentKey", value.asInstanceOf[js.Any])
+      inline def setIndentKey(value: StringDictionary[js.Any]): Self = StObject.set(x, "indentKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIndent(value: Boolean): Self = StObject.set(x, "isIndent", value.asInstanceOf[js.Any])
+      inline def setIsIndent(value: Boolean): Self = StObject.set(x, "isIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobs(value: StringDictionary[Exec]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+      inline def setJobs(value: StringDictionary[Exec]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshJob(value: (editor, Double) => Double): Self = StObject.set(x, "refreshJob", js.Any.fromFunction2(value))
+      inline def setRefreshJob(value: (editor, Double) => Double): Self = StObject.set(x, "refreshJob", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelatedGlobal(value: StringDictionary[js.Any]): Self = StObject.set(x, "relatedGlobal", value.asInstanceOf[js.Any])
+      inline def setRelatedGlobal(value: StringDictionary[js.Any]): Self = StObject.set(x, "relatedGlobal", value.asInstanceOf[js.Any])
     }
   }
 }

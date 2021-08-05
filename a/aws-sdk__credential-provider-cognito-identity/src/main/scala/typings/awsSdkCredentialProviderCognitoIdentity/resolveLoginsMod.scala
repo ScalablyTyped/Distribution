@@ -12,6 +12,5 @@ object resolveLoginsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveLogins(logins: Logins): js.Promise[ResolvedLogins] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLogins")(logins.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResolvedLogins]]
+  inline def resolveLogins(logins: Logins): js.Promise[ResolvedLogins] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLogins")(logins.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResolvedLogins]]
 }

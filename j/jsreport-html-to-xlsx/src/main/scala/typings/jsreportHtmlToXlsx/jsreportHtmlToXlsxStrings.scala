@@ -11,18 +11,15 @@ object jsreportHtmlToXlsxStrings {
   sealed trait chrome
     extends StObject
        with htmlEngine
-  @scala.inline
-  def chrome: chrome = "chrome".asInstanceOf[chrome]
+  inline def chrome: chrome = "chrome".asInstanceOf[chrome]
   
   @js.native
   sealed trait `html-to-xlsx` extends StObject
-  @scala.inline
-  def `html-to-xlsx`: `html-to-xlsx` = "html-to-xlsx".asInstanceOf[`html-to-xlsx`]
+  inline def `html-to-xlsx`: `html-to-xlsx` = "html-to-xlsx".asInstanceOf[`html-to-xlsx`]
   
   @js.native
   sealed trait phantom
     extends StObject
        with htmlEngine
-  @scala.inline
-  def phantom: phantom = "phantom".asInstanceOf[phantom]
+  inline def phantom: phantom = "phantom".asInstanceOf[phantom]
 }

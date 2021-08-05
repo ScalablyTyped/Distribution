@@ -10,19 +10,15 @@ trait ThirdPartyLinkStatus extends StObject {
 }
 object ThirdPartyLinkStatus {
   
-  @scala.inline
-  def apply(): ThirdPartyLinkStatus = {
+  inline def apply(): ThirdPartyLinkStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyLinkStatus]
   }
   
-  @scala.inline
-  implicit class ThirdPartyLinkStatusMutableBuilder[Self <: ThirdPartyLinkStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyLinkStatus](x: Self) {
     
-    @scala.inline
-    def setLinkStatus(value: String): Self = StObject.set(x, "linkStatus", value.asInstanceOf[js.Any])
+    inline def setLinkStatus(value: String): Self = StObject.set(x, "linkStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkStatusUndefined: Self = StObject.set(x, "linkStatus", js.undefined)
+    inline def setLinkStatusUndefined: Self = StObject.set(x, "linkStatus", js.undefined)
   }
 }

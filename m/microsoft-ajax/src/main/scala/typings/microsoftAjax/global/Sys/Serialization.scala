@@ -39,8 +39,7 @@ object Serialization {
       *           The JSON string to deserialize.
       */
     /* static member */
-    @scala.inline
-    def deserialize(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def deserialize(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     //#endregion
     //#region Methods
@@ -53,7 +52,6 @@ object Serialization {
       *           value contains a value that cannot be serialized.
       */
     /* static member */
-    @scala.inline
-    def serialize(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def serialize(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

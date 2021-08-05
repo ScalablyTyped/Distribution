@@ -13,16 +13,13 @@ trait SetIgnoreCertificateErrorsRequest extends StObject {
 }
 object SetIgnoreCertificateErrorsRequest {
   
-  @scala.inline
-  def apply(ignore: Boolean): SetIgnoreCertificateErrorsRequest = {
+  inline def apply(ignore: Boolean): SetIgnoreCertificateErrorsRequest = {
     val __obj = js.Dynamic.literal(ignore = ignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIgnoreCertificateErrorsRequest]
   }
   
-  @scala.inline
-  implicit class SetIgnoreCertificateErrorsRequestMutableBuilder[Self <: SetIgnoreCertificateErrorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIgnoreCertificateErrorsRequest](x: Self) {
     
-    @scala.inline
-    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
   }
 }

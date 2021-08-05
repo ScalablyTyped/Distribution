@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(audioContext: AudioContext, stream: MediaStream): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(audioContext: AudioContext, stream: MediaStream, options: VoiceActivityDetectionOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(audioContext: AudioContext, stream: MediaStream): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(audioContext: AudioContext, stream: MediaStream, options: VoiceActivityDetectionOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("voice-activity-detection", JSImport.Namespace)
   @js.native
@@ -45,86 +43,60 @@ object mod {
   }
   object VoiceActivityDetectionOptions {
     
-    @scala.inline
-    def apply(): VoiceActivityDetectionOptions = {
+    inline def apply(): VoiceActivityDetectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VoiceActivityDetectionOptions]
     }
     
-    @scala.inline
-    implicit class VoiceActivityDetectionOptionsMutableBuilder[Self <: VoiceActivityDetectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VoiceActivityDetectionOptions](x: Self) {
       
-      @scala.inline
-      def setAvgNoiseMultiplier(value: Double): Self = StObject.set(x, "avgNoiseMultiplier", value.asInstanceOf[js.Any])
+      inline def setAvgNoiseMultiplier(value: Double): Self = StObject.set(x, "avgNoiseMultiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvgNoiseMultiplierUndefined: Self = StObject.set(x, "avgNoiseMultiplier", js.undefined)
+      inline def setAvgNoiseMultiplierUndefined: Self = StObject.set(x, "avgNoiseMultiplier", js.undefined)
       
-      @scala.inline
-      def setBufferLen(value: Double): Self = StObject.set(x, "bufferLen", value.asInstanceOf[js.Any])
+      inline def setBufferLen(value: Double): Self = StObject.set(x, "bufferLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferLenUndefined: Self = StObject.set(x, "bufferLen", js.undefined)
+      inline def setBufferLenUndefined: Self = StObject.set(x, "bufferLen", js.undefined)
       
-      @scala.inline
-      def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
+      inline def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
+      inline def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
       
-      @scala.inline
-      def setMaxCaptureFreq(value: Double): Self = StObject.set(x, "maxCaptureFreq", value.asInstanceOf[js.Any])
+      inline def setMaxCaptureFreq(value: Double): Self = StObject.set(x, "maxCaptureFreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCaptureFreqUndefined: Self = StObject.set(x, "maxCaptureFreq", js.undefined)
+      inline def setMaxCaptureFreqUndefined: Self = StObject.set(x, "maxCaptureFreq", js.undefined)
       
-      @scala.inline
-      def setMaxNoiseLevel(value: Double): Self = StObject.set(x, "maxNoiseLevel", value.asInstanceOf[js.Any])
+      inline def setMaxNoiseLevel(value: Double): Self = StObject.set(x, "maxNoiseLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNoiseLevelUndefined: Self = StObject.set(x, "maxNoiseLevel", js.undefined)
+      inline def setMaxNoiseLevelUndefined: Self = StObject.set(x, "maxNoiseLevel", js.undefined)
       
-      @scala.inline
-      def setMinCaptureFreq(value: Double): Self = StObject.set(x, "minCaptureFreq", value.asInstanceOf[js.Any])
+      inline def setMinCaptureFreq(value: Double): Self = StObject.set(x, "minCaptureFreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCaptureFreqUndefined: Self = StObject.set(x, "minCaptureFreq", js.undefined)
+      inline def setMinCaptureFreqUndefined: Self = StObject.set(x, "minCaptureFreq", js.undefined)
       
-      @scala.inline
-      def setMinNoiseLevel(value: Double): Self = StObject.set(x, "minNoiseLevel", value.asInstanceOf[js.Any])
+      inline def setMinNoiseLevel(value: Double): Self = StObject.set(x, "minNoiseLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinNoiseLevelUndefined: Self = StObject.set(x, "minNoiseLevel", js.undefined)
+      inline def setMinNoiseLevelUndefined: Self = StObject.set(x, "minNoiseLevel", js.undefined)
       
-      @scala.inline
-      def setNoiseCaptureDuration(value: Double): Self = StObject.set(x, "noiseCaptureDuration", value.asInstanceOf[js.Any])
+      inline def setNoiseCaptureDuration(value: Double): Self = StObject.set(x, "noiseCaptureDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoiseCaptureDurationUndefined: Self = StObject.set(x, "noiseCaptureDuration", js.undefined)
+      inline def setNoiseCaptureDurationUndefined: Self = StObject.set(x, "noiseCaptureDuration", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* val */ Double => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* val */ Double => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setOnVoiceStart(value: () => Unit): Self = StObject.set(x, "onVoiceStart", js.Any.fromFunction0(value))
+      inline def setOnVoiceStart(value: () => Unit): Self = StObject.set(x, "onVoiceStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnVoiceStartUndefined: Self = StObject.set(x, "onVoiceStart", js.undefined)
+      inline def setOnVoiceStartUndefined: Self = StObject.set(x, "onVoiceStart", js.undefined)
       
-      @scala.inline
-      def setOnVoiceStop(value: () => Unit): Self = StObject.set(x, "onVoiceStop", js.Any.fromFunction0(value))
+      inline def setOnVoiceStop(value: () => Unit): Self = StObject.set(x, "onVoiceStop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnVoiceStopUndefined: Self = StObject.set(x, "onVoiceStop", js.undefined)
+      inline def setOnVoiceStopUndefined: Self = StObject.set(x, "onVoiceStop", js.undefined)
       
-      @scala.inline
-      def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
+      inline def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
+      inline def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
     }
   }
 }

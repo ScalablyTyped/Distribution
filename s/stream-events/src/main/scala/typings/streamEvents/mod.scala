@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[StreamType /* <: Stream */](stream: StreamType): StreamType = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[StreamType]
+  inline def apply[StreamType /* <: Stream */](stream: StreamType): StreamType = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[StreamType]
   
   @JSImport("stream-events", JSImport.Namespace)
   @js.native

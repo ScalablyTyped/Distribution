@@ -11,19 +11,15 @@ trait DisplayName extends StObject {
 }
 object DisplayName {
   
-  @scala.inline
-  def apply(): DisplayName = {
+  inline def apply(): DisplayName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayName]
   }
   
-  @scala.inline
-  implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayName](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

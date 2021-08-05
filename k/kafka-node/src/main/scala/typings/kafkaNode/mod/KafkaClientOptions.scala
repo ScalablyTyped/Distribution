@@ -30,79 +30,55 @@ trait KafkaClientOptions extends StObject {
 }
 object KafkaClientOptions {
   
-  @scala.inline
-  def apply(): KafkaClientOptions = {
+  inline def apply(): KafkaClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KafkaClientOptions]
   }
   
-  @scala.inline
-  implicit class KafkaClientOptionsMutableBuilder[Self <: KafkaClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KafkaClientOptions](x: Self) {
     
-    @scala.inline
-    def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
+    inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
+    inline def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setConnectRetryOptions(value: RetryOptions): Self = StObject.set(x, "connectRetryOptions", value.asInstanceOf[js.Any])
+    inline def setConnectRetryOptions(value: RetryOptions): Self = StObject.set(x, "connectRetryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectRetryOptionsUndefined: Self = StObject.set(x, "connectRetryOptions", js.undefined)
+    inline def setConnectRetryOptionsUndefined: Self = StObject.set(x, "connectRetryOptions", js.undefined)
     
-    @scala.inline
-    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+    inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
-    @scala.inline
-    def setIdleConnection(value: Double): Self = StObject.set(x, "idleConnection", value.asInstanceOf[js.Any])
+    inline def setIdleConnection(value: Double): Self = StObject.set(x, "idleConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleConnectionUndefined: Self = StObject.set(x, "idleConnection", js.undefined)
+    inline def setIdleConnectionUndefined: Self = StObject.set(x, "idleConnection", js.undefined)
     
-    @scala.inline
-    def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
+    inline def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaHostUndefined: Self = StObject.set(x, "kafkaHost", js.undefined)
+    inline def setKafkaHostUndefined: Self = StObject.set(x, "kafkaHost", js.undefined)
     
-    @scala.inline
-    def setMaxAsyncRequests(value: Double): Self = StObject.set(x, "maxAsyncRequests", value.asInstanceOf[js.Any])
+    inline def setMaxAsyncRequests(value: Double): Self = StObject.set(x, "maxAsyncRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAsyncRequestsUndefined: Self = StObject.set(x, "maxAsyncRequests", js.undefined)
+    inline def setMaxAsyncRequestsUndefined: Self = StObject.set(x, "maxAsyncRequests", js.undefined)
     
-    @scala.inline
-    def setReconnectOnIdle(value: Boolean): Self = StObject.set(x, "reconnectOnIdle", value.asInstanceOf[js.Any])
+    inline def setReconnectOnIdle(value: Boolean): Self = StObject.set(x, "reconnectOnIdle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReconnectOnIdleUndefined: Self = StObject.set(x, "reconnectOnIdle", js.undefined)
+    inline def setReconnectOnIdleUndefined: Self = StObject.set(x, "reconnectOnIdle", js.undefined)
     
-    @scala.inline
-    def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+    inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+    inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     
-    @scala.inline
-    def setSasl(value: js.Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
+    inline def setSasl(value: js.Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
+    inline def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
     
-    @scala.inline
-    def setSslOptions(value: js.Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
+    inline def setSslOptions(value: js.Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
+    inline def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
   }
 }

@@ -33,37 +33,27 @@ trait SetTaskStatusInput extends StObject {
 }
 object SetTaskStatusInput {
   
-  @scala.inline
-  def apply(taskId: taskId, taskStatus: TaskStatus): SetTaskStatusInput = {
+  inline def apply(taskId: taskId, taskStatus: TaskStatus): SetTaskStatusInput = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any], taskStatus = taskStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTaskStatusInput]
   }
   
-  @scala.inline
-  implicit class SetTaskStatusInputMutableBuilder[Self <: SetTaskStatusInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetTaskStatusInput](x: Self) {
     
-    @scala.inline
-    def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
+    inline def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorIdUndefined: Self = StObject.set(x, "errorId", js.undefined)
+    inline def setErrorIdUndefined: Self = StObject.set(x, "errorId", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: errorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: errorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorStackTrace(value: String): Self = StObject.set(x, "errorStackTrace", value.asInstanceOf[js.Any])
+    inline def setErrorStackTrace(value: String): Self = StObject.set(x, "errorStackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStackTraceUndefined: Self = StObject.set(x, "errorStackTrace", js.undefined)
+    inline def setErrorStackTraceUndefined: Self = StObject.set(x, "errorStackTrace", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: taskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: taskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatus(value: TaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
+    inline def setTaskStatus(value: TaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
   }
 }

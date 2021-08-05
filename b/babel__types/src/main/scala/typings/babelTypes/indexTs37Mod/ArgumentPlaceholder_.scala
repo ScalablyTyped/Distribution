@@ -15,17 +15,14 @@ trait ArgumentPlaceholder_
 }
 object ArgumentPlaceholder_ {
   
-  @scala.inline
-  def apply(): ArgumentPlaceholder_ = {
+  inline def apply(): ArgumentPlaceholder_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ArgumentPlaceholder")
     __obj.asInstanceOf[ArgumentPlaceholder_]
   }
   
-  @scala.inline
-  implicit class ArgumentPlaceholder_MutableBuilder[Self <: ArgumentPlaceholder_] (val x: Self) extends AnyVal {
+  extension [Self <: ArgumentPlaceholder_](x: Self) {
     
-    @scala.inline
-    def setType(value: ArgumentPlaceholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArgumentPlaceholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

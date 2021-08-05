@@ -17,27 +17,27 @@ object commandBarBaseMod {
        with ICommandBar {
     def this(props: ICommandBarProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _commandButton: js.Any = js.native
+    /* private */ var _commandButton: js.Any = js.native
     
-    var _computeCacheKey: js.Any = js.native
+    /* private */ var _computeCacheKey: js.Any = js.native
     
-    var _onButtonClick: js.Any = js.native
+    /* private */ var _onButtonClick: js.Any = js.native
     
-    var _onGrowData: js.Any = js.native
+    /* private */ var _onGrowData: js.Any = js.native
     
-    var _onReduceData: js.Any = js.native
+    /* private */ var _onReduceData: js.Any = js.native
     
-    var _onRenderData: js.Any = js.native
+    /* private */ var _onRenderData: js.Any = js.native
     
-    var _onRenderItem: js.Any = js.native
+    /* private */ var _onRenderItem: js.Any = js.native
     
-    var _onRenderOverflowButton: js.Any = js.native
+    /* private */ var _onRenderOverflowButton: js.Any = js.native
     
-    var _overflowSet: js.Any = js.native
+    /* private */ var _overflowSet: js.Any = js.native
     
-    var _resizeGroup: js.Any = js.native
+    /* private */ var _resizeGroup: js.Any = js.native
     
     /**
       * Sets focus to the active command in the list.
@@ -61,8 +61,7 @@ object commandBarBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/CommandBar/CommandBar.base", "CommandBarBase.defaultProps")
     @js.native
     def defaultProps: ICommandBarProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ICommandBarData extends StObject {
@@ -94,8 +93,7 @@ object commandBarBaseMod {
   }
   object ICommandBarData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheKey: String,
       minimumOverflowItems: Double,
       overflowItems: js.Array[ICommandBarItemProps],
@@ -105,35 +103,25 @@ object commandBarBaseMod {
       __obj.asInstanceOf[ICommandBarData]
     }
     
-    @scala.inline
-    implicit class ICommandBarDataMutableBuilder[Self <: ICommandBarData] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandBarData](x: Self) {
       
-      @scala.inline
-      def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFarItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "farItems", value.asInstanceOf[js.Any])
+      inline def setFarItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "farItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFarItemsUndefined: Self = StObject.set(x, "farItems", js.undefined)
+      inline def setFarItemsUndefined: Self = StObject.set(x, "farItems", js.undefined)
       
-      @scala.inline
-      def setFarItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "farItems", js.Array(value :_*))
+      inline def setFarItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "farItems", js.Array(value :_*))
       
-      @scala.inline
-      def setMinimumOverflowItems(value: Double): Self = StObject.set(x, "minimumOverflowItems", value.asInstanceOf[js.Any])
+      inline def setMinimumOverflowItems(value: Double): Self = StObject.set(x, "minimumOverflowItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "overflowItems", value.asInstanceOf[js.Any])
+      inline def setOverflowItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "overflowItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
+      inline def setOverflowItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
       
-      @scala.inline
-      def setPrimaryItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "primaryItems", value.asInstanceOf[js.Any])
+      inline def setPrimaryItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "primaryItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "primaryItems", js.Array(value :_*))
+      inline def setPrimaryItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "primaryItems", js.Array(value :_*))
     }
   }
 }

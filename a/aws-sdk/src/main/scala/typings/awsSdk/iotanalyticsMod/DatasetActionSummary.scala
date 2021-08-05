@@ -18,25 +18,19 @@ trait DatasetActionSummary extends StObject {
 }
 object DatasetActionSummary {
   
-  @scala.inline
-  def apply(): DatasetActionSummary = {
+  inline def apply(): DatasetActionSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatasetActionSummary]
   }
   
-  @scala.inline
-  implicit class DatasetActionSummaryMutableBuilder[Self <: DatasetActionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetActionSummary](x: Self) {
     
-    @scala.inline
-    def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    @scala.inline
-    def setActionType(value: DatasetActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: DatasetActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
   }
 }

@@ -33,10 +33,8 @@ object mod {
     def this(options: IGeneratorOptions, format: Unit, suffix: String) = this()
   }
   
-  @scala.inline
-  def loremIpsum(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")().asInstanceOf[String]
-  @scala.inline
-  def loremIpsum(
+  inline def loremIpsum(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")().asInstanceOf[String]
+  inline def loremIpsum(
     hasCountFormatParagraphLowerBoundParagraphUpperBoundRandomSentenceLowerBoundSentenceUpperBoundUnitsWordsSuffix: ILoremIpsumParams
   ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")(hasCountFormatParagraphLowerBoundParagraphUpperBoundRandomSentenceLowerBoundSentenceUpperBoundUnitsWordsSuffix.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -64,77 +62,54 @@ object mod {
   }
   object ILoremIpsumParams {
     
-    @scala.inline
-    def apply(): ILoremIpsumParams = {
+    inline def apply(): ILoremIpsumParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILoremIpsumParams]
     }
     
-    @scala.inline
-    implicit class ILoremIpsumParamsMutableBuilder[Self <: ILoremIpsumParams] (val x: Self) extends AnyVal {
+    extension [Self <: ILoremIpsumParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setFormat(value: plain | html): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: plain | html): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setParagraphLowerBound(value: Double): Self = StObject.set(x, "paragraphLowerBound", value.asInstanceOf[js.Any])
+      inline def setParagraphLowerBound(value: Double): Self = StObject.set(x, "paragraphLowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphLowerBoundUndefined: Self = StObject.set(x, "paragraphLowerBound", js.undefined)
+      inline def setParagraphLowerBoundUndefined: Self = StObject.set(x, "paragraphLowerBound", js.undefined)
       
-      @scala.inline
-      def setParagraphUpperBound(value: Double): Self = StObject.set(x, "paragraphUpperBound", value.asInstanceOf[js.Any])
+      inline def setParagraphUpperBound(value: Double): Self = StObject.set(x, "paragraphUpperBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphUpperBoundUndefined: Self = StObject.set(x, "paragraphUpperBound", js.undefined)
+      inline def setParagraphUpperBoundUndefined: Self = StObject.set(x, "paragraphUpperBound", js.undefined)
       
-      @scala.inline
-      def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      @scala.inline
-      def setSentenceLowerBound(value: Double): Self = StObject.set(x, "sentenceLowerBound", value.asInstanceOf[js.Any])
+      inline def setSentenceLowerBound(value: Double): Self = StObject.set(x, "sentenceLowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentenceLowerBoundUndefined: Self = StObject.set(x, "sentenceLowerBound", js.undefined)
+      inline def setSentenceLowerBoundUndefined: Self = StObject.set(x, "sentenceLowerBound", js.undefined)
       
-      @scala.inline
-      def setSentenceUpperBound(value: Double): Self = StObject.set(x, "sentenceUpperBound", value.asInstanceOf[js.Any])
+      inline def setSentenceUpperBound(value: Double): Self = StObject.set(x, "sentenceUpperBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentenceUpperBoundUndefined: Self = StObject.set(x, "sentenceUpperBound", js.undefined)
+      inline def setSentenceUpperBoundUndefined: Self = StObject.set(x, "sentenceUpperBound", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setUnits(value: words | word | sentences | sentence | paragraphs | paragraph): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: words | word | sentences | sentence | paragraphs | paragraph): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
-      @scala.inline
-      def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+      inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
       
-      @scala.inline
-      def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
 }

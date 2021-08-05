@@ -23,25 +23,19 @@ trait UpdateBotRequest extends StObject {
 }
 object UpdateBotRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, BotId: NonEmptyString): UpdateBotRequest = {
+  inline def apply(AccountId: NonEmptyString, BotId: NonEmptyString): UpdateBotRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BotId = BotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBotRequest]
   }
   
-  @scala.inline
-  implicit class UpdateBotRequestMutableBuilder[Self <: UpdateBotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBotRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
+    inline def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
   }
 }

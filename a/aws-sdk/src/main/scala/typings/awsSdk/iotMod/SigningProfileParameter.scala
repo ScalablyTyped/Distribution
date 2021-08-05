@@ -23,31 +23,23 @@ trait SigningProfileParameter extends StObject {
 }
 object SigningProfileParameter {
   
-  @scala.inline
-  def apply(): SigningProfileParameter = {
+  inline def apply(): SigningProfileParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigningProfileParameter]
   }
   
-  @scala.inline
-  implicit class SigningProfileParameterMutableBuilder[Self <: SigningProfileParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SigningProfileParameter](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificatePathOnDevice(value: CertificatePathOnDevice): Self = StObject.set(x, "certificatePathOnDevice", value.asInstanceOf[js.Any])
+    inline def setCertificatePathOnDevice(value: CertificatePathOnDevice): Self = StObject.set(x, "certificatePathOnDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePathOnDeviceUndefined: Self = StObject.set(x, "certificatePathOnDevice", js.undefined)
+    inline def setCertificatePathOnDeviceUndefined: Self = StObject.set(x, "certificatePathOnDevice", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

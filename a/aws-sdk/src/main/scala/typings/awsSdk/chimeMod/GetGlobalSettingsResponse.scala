@@ -18,25 +18,19 @@ trait GetGlobalSettingsResponse extends StObject {
 }
 object GetGlobalSettingsResponse {
   
-  @scala.inline
-  def apply(): GetGlobalSettingsResponse = {
+  inline def apply(): GetGlobalSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGlobalSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetGlobalSettingsResponseMutableBuilder[Self <: GetGlobalSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGlobalSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
+    inline def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessCallingUndefined: Self = StObject.set(x, "BusinessCalling", js.undefined)
+    inline def setBusinessCallingUndefined: Self = StObject.set(x, "BusinessCalling", js.undefined)
     
-    @scala.inline
-    def setVoiceConnector(value: VoiceConnectorSettings): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
+    inline def setVoiceConnector(value: VoiceConnectorSettings): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorUndefined: Self = StObject.set(x, "VoiceConnector", js.undefined)
+    inline def setVoiceConnectorUndefined: Self = StObject.set(x, "VoiceConnector", js.undefined)
   }
 }

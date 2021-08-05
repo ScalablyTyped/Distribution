@@ -83,115 +83,79 @@ trait LicenseConfiguration extends StObject {
 }
 object LicenseConfiguration {
   
-  @scala.inline
-  def apply(): LicenseConfiguration = {
+  inline def apply(): LicenseConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseConfiguration]
   }
   
-  @scala.inline
-  implicit class LicenseConfigurationMutableBuilder[Self <: LicenseConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutomatedDiscoveryInformation(value: AutomatedDiscoveryInformation): Self = StObject.set(x, "AutomatedDiscoveryInformation", value.asInstanceOf[js.Any])
+    inline def setAutomatedDiscoveryInformation(value: AutomatedDiscoveryInformation): Self = StObject.set(x, "AutomatedDiscoveryInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedDiscoveryInformationUndefined: Self = StObject.set(x, "AutomatedDiscoveryInformation", js.undefined)
+    inline def setAutomatedDiscoveryInformationUndefined: Self = StObject.set(x, "AutomatedDiscoveryInformation", js.undefined)
     
-    @scala.inline
-    def setConsumedLicenseSummaryList(value: ConsumedLicenseSummaryList): Self = StObject.set(x, "ConsumedLicenseSummaryList", value.asInstanceOf[js.Any])
+    inline def setConsumedLicenseSummaryList(value: ConsumedLicenseSummaryList): Self = StObject.set(x, "ConsumedLicenseSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedLicenseSummaryListUndefined: Self = StObject.set(x, "ConsumedLicenseSummaryList", js.undefined)
+    inline def setConsumedLicenseSummaryListUndefined: Self = StObject.set(x, "ConsumedLicenseSummaryList", js.undefined)
     
-    @scala.inline
-    def setConsumedLicenseSummaryListVarargs(value: ConsumedLicenseSummary*): Self = StObject.set(x, "ConsumedLicenseSummaryList", js.Array(value :_*))
+    inline def setConsumedLicenseSummaryListVarargs(value: ConsumedLicenseSummary*): Self = StObject.set(x, "ConsumedLicenseSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
+    inline def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
+    inline def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "LicenseConfigurationArn", js.undefined)
+    inline def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "LicenseConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setLicenseConfigurationId(value: String): Self = StObject.set(x, "LicenseConfigurationId", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationId(value: String): Self = StObject.set(x, "LicenseConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationIdUndefined: Self = StObject.set(x, "LicenseConfigurationId", js.undefined)
+    inline def setLicenseConfigurationIdUndefined: Self = StObject.set(x, "LicenseConfigurationId", js.undefined)
     
-    @scala.inline
-    def setLicenseCount(value: BoxLong): Self = StObject.set(x, "LicenseCount", value.asInstanceOf[js.Any])
+    inline def setLicenseCount(value: BoxLong): Self = StObject.set(x, "LicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseCountHardLimit(value: BoxBoolean): Self = StObject.set(x, "LicenseCountHardLimit", value.asInstanceOf[js.Any])
+    inline def setLicenseCountHardLimit(value: BoxBoolean): Self = StObject.set(x, "LicenseCountHardLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseCountHardLimitUndefined: Self = StObject.set(x, "LicenseCountHardLimit", js.undefined)
+    inline def setLicenseCountHardLimitUndefined: Self = StObject.set(x, "LicenseCountHardLimit", js.undefined)
     
-    @scala.inline
-    def setLicenseCountUndefined: Self = StObject.set(x, "LicenseCount", js.undefined)
+    inline def setLicenseCountUndefined: Self = StObject.set(x, "LicenseCount", js.undefined)
     
-    @scala.inline
-    def setLicenseCountingType(value: LicenseCountingType): Self = StObject.set(x, "LicenseCountingType", value.asInstanceOf[js.Any])
+    inline def setLicenseCountingType(value: LicenseCountingType): Self = StObject.set(x, "LicenseCountingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseCountingTypeUndefined: Self = StObject.set(x, "LicenseCountingType", js.undefined)
+    inline def setLicenseCountingTypeUndefined: Self = StObject.set(x, "LicenseCountingType", js.undefined)
     
-    @scala.inline
-    def setLicenseRules(value: StringList): Self = StObject.set(x, "LicenseRules", value.asInstanceOf[js.Any])
+    inline def setLicenseRules(value: StringList): Self = StObject.set(x, "LicenseRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseRulesUndefined: Self = StObject.set(x, "LicenseRules", js.undefined)
+    inline def setLicenseRulesUndefined: Self = StObject.set(x, "LicenseRules", js.undefined)
     
-    @scala.inline
-    def setLicenseRulesVarargs(value: String*): Self = StObject.set(x, "LicenseRules", js.Array(value :_*))
+    inline def setLicenseRulesVarargs(value: String*): Self = StObject.set(x, "LicenseRules", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedResourceSummaryList(value: ManagedResourceSummaryList): Self = StObject.set(x, "ManagedResourceSummaryList", value.asInstanceOf[js.Any])
+    inline def setManagedResourceSummaryList(value: ManagedResourceSummaryList): Self = StObject.set(x, "ManagedResourceSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedResourceSummaryListUndefined: Self = StObject.set(x, "ManagedResourceSummaryList", js.undefined)
+    inline def setManagedResourceSummaryListUndefined: Self = StObject.set(x, "ManagedResourceSummaryList", js.undefined)
     
-    @scala.inline
-    def setManagedResourceSummaryListVarargs(value: ManagedResourceSummary*): Self = StObject.set(x, "ManagedResourceSummaryList", js.Array(value :_*))
+    inline def setManagedResourceSummaryListVarargs(value: ManagedResourceSummary*): Self = StObject.set(x, "ManagedResourceSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOwnerAccountId(value: String): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
+    inline def setOwnerAccountId(value: String): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
+    inline def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
     
-    @scala.inline
-    def setProductInformationList(value: ProductInformationList): Self = StObject.set(x, "ProductInformationList", value.asInstanceOf[js.Any])
+    inline def setProductInformationList(value: ProductInformationList): Self = StObject.set(x, "ProductInformationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductInformationListUndefined: Self = StObject.set(x, "ProductInformationList", js.undefined)
+    inline def setProductInformationListUndefined: Self = StObject.set(x, "ProductInformationList", js.undefined)
     
-    @scala.inline
-    def setProductInformationListVarargs(value: ProductInformation*): Self = StObject.set(x, "ProductInformationList", js.Array(value :_*))
+    inline def setProductInformationListVarargs(value: ProductInformation*): Self = StObject.set(x, "ProductInformationList", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

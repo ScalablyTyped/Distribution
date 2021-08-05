@@ -31,8 +31,7 @@ trait ApplePayPaymentMethod extends StObject {
 }
 object ApplePayPaymentMethod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     network: String,
     paymentPass: ApplePayPaymentPass,
@@ -43,19 +42,14 @@ object ApplePayPaymentMethod {
     __obj.asInstanceOf[ApplePayPaymentMethod]
   }
   
-  @scala.inline
-  implicit class ApplePayPaymentMethodMutableBuilder[Self <: ApplePayPaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayPaymentMethod](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentPass(value: ApplePayPaymentPass): Self = StObject.set(x, "paymentPass", value.asInstanceOf[js.Any])
+    inline def setPaymentPass(value: ApplePayPaymentPass): Self = StObject.set(x, "paymentPass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ApplePayPaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ApplePayPaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,21 +11,15 @@ object parseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMarkupFromErrors(fileName: String, code: String, lintErrors: js.Array[LintError]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMarkupFromErrors")(fileName.asInstanceOf[js.Any], code.asInstanceOf[js.Any], lintErrors.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMarkupFromErrors(fileName: String, code: String, lintErrors: js.Array[LintError]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMarkupFromErrors")(fileName.asInstanceOf[js.Any], code.asInstanceOf[js.Any], lintErrors.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getNormalizedTypescriptVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedTypescriptVersion")().asInstanceOf[String]
+  inline def getNormalizedTypescriptVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedTypescriptVersion")().asInstanceOf[String]
   
-  @scala.inline
-  def getTypescriptVersionRequirement(text: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypescriptVersionRequirement")(text.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getTypescriptVersionRequirement(text: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypescriptVersionRequirement")(text.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def parseErrorsFromMarkup(text: String): js.Array[LintError] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseErrorsFromMarkup")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[LintError]]
+  inline def parseErrorsFromMarkup(text: String): js.Array[LintError] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseErrorsFromMarkup")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[LintError]]
   
-  @scala.inline
-  def preprocessDirectives(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("preprocessDirectives")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def preprocessDirectives(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("preprocessDirectives")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def removeErrorMarkup(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeErrorMarkup")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def removeErrorMarkup(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeErrorMarkup")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

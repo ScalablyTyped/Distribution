@@ -13,20 +13,16 @@ object routie {
   }
   object RouteOptions {
     
-    @scala.inline
-    def apply(): RouteOptions = {
+    inline def apply(): RouteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteOptions]
     }
     
-    @scala.inline
-    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouteOptions](x: Self) {
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   

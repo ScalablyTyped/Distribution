@@ -30,8 +30,7 @@ trait Mediaminwidth82rem extends StObject {
 }
 object Mediaminwidth82rem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `@media Leftparenthesismin-widthColon 42remRightparenthesis`: LineHeight,
     `@media Leftparenthesismin-widthColon 66remRightparenthesis`: LetterSpacing,
     `@media Leftparenthesismin-widthColon 82remRightparenthesis`: LetterSpacing,
@@ -50,34 +49,24 @@ object Mediaminwidth82rem {
     __obj.asInstanceOf[Mediaminwidth82rem]
   }
   
-  @scala.inline
-  implicit class Mediaminwidth82remMutableBuilder[Self <: Mediaminwidth82rem] (val x: Self) extends AnyVal {
+  extension [Self <: Mediaminwidth82rem](x: Self) {
     
-    @scala.inline
-    def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set@media Leftparenthesismin-widthColon 66remRightparenthesis`(value: LetterSpacing): Self = StObject.set(x, "@media (min-width: 66rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 66remRightparenthesis`(value: LetterSpacing): Self = StObject.set(x, "@media (min-width: 66rem)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set@media Leftparenthesismin-widthColon 82remRightparenthesis`(value: LetterSpacing): Self = StObject.set(x, "@media (min-width: 82rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 82remRightparenthesis`(value: LetterSpacing): Self = StObject.set(x, "@media (min-width: 82rem)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set@media Leftparenthesismin-widthColon 99remRightparenthesis`(value: LetterSpacing): Self = StObject.set(x, "@media (min-width: 99rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 99remRightparenthesis`(value: LetterSpacing): Self = StObject.set(x, "@media (min-width: 99rem)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

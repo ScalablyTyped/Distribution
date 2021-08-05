@@ -18,25 +18,19 @@ trait KeyRange extends StObject {
 }
 object KeyRange {
   
-  @scala.inline
-  def apply(): KeyRange = {
+  inline def apply(): KeyRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyRange]
   }
   
-  @scala.inline
-  implicit class KeyRangeMutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
+  extension [Self <: KeyRange](x: Self) {
     
-    @scala.inline
-    def setBeginMarker(value: String): Self = StObject.set(x, "BeginMarker", value.asInstanceOf[js.Any])
+    inline def setBeginMarker(value: String): Self = StObject.set(x, "BeginMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginMarkerUndefined: Self = StObject.set(x, "BeginMarker", js.undefined)
+    inline def setBeginMarkerUndefined: Self = StObject.set(x, "BeginMarker", js.undefined)
     
-    @scala.inline
-    def setEndMarker(value: String): Self = StObject.set(x, "EndMarker", value.asInstanceOf[js.Any])
+    inline def setEndMarker(value: String): Self = StObject.set(x, "EndMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMarkerUndefined: Self = StObject.set(x, "EndMarker", js.undefined)
+    inline def setEndMarkerUndefined: Self = StObject.set(x, "EndMarker", js.undefined)
   }
 }

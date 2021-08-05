@@ -8,21 +8,17 @@ object xmlCryptoStrings {
   
   @js.native
   sealed trait after extends StObject
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait append extends StObject
-  @scala.inline
-  def append: append = "append".asInstanceOf[append]
+  inline def append: append = "append".asInstanceOf[append]
   
   @js.native
   sealed trait before extends StObject
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait prepend extends StObject
-  @scala.inline
-  def prepend: prepend = "prepend".asInstanceOf[prepend]
+  inline def prepend: prepend = "prepend".asInstanceOf[prepend]
 }

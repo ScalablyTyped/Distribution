@@ -38,65 +38,46 @@ object patternMod {
   }
   object PatternProps {
     
-    @scala.inline
-    def apply(): PatternProps = {
+    inline def apply(): PatternProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatternProps]
     }
     
-    @scala.inline
-    implicit class PatternPropsMutableBuilder[Self <: PatternProps] (val x: Self) extends AnyVal {
+    extension [Self <: PatternProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setPatternContentUnits(value: userSpaceOnUse | objectBoundingBox): Self = StObject.set(x, "patternContentUnits", value.asInstanceOf[js.Any])
+      inline def setPatternContentUnits(value: userSpaceOnUse | objectBoundingBox): Self = StObject.set(x, "patternContentUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternContentUnitsUndefined: Self = StObject.set(x, "patternContentUnits", js.undefined)
+      inline def setPatternContentUnitsUndefined: Self = StObject.set(x, "patternContentUnits", js.undefined)
       
-      @scala.inline
-      def setPatternTransform(value: String): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+      inline def setPatternTransform(value: String): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
+      inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
       
-      @scala.inline
-      def setPatternUnits(value: userSpaceOnUse | objectBoundingBox): Self = StObject.set(x, "patternUnits", value.asInstanceOf[js.Any])
+      inline def setPatternUnits(value: userSpaceOnUse | objectBoundingBox): Self = StObject.set(x, "patternUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUnitsUndefined: Self = StObject.set(x, "patternUnits", js.undefined)
+      inline def setPatternUnitsUndefined: Self = StObject.set(x, "patternUnits", js.undefined)
       
-      @scala.inline
-      def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+      inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
       
-      @scala.inline
-      def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+      inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
       
-      @scala.inline
-      def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
       
-      @scala.inline
-      def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+      inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     }
   }
 }

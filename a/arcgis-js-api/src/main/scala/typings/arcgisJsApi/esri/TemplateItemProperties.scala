@@ -36,37 +36,27 @@ trait TemplateItemProperties extends StObject {
 }
 object TemplateItemProperties {
   
-  @scala.inline
-  def apply(): TemplateItemProperties = {
+  inline def apply(): TemplateItemProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateItemProperties]
   }
   
-  @scala.inline
-  implicit class TemplateItemPropertiesMutableBuilder[Self <: TemplateItemProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateItemProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: FeatureTemplateProperties): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: FeatureTemplateProperties): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

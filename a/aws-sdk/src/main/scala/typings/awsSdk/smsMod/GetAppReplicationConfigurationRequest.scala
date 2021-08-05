@@ -13,19 +13,15 @@ trait GetAppReplicationConfigurationRequest extends StObject {
 }
 object GetAppReplicationConfigurationRequest {
   
-  @scala.inline
-  def apply(): GetAppReplicationConfigurationRequest = {
+  inline def apply(): GetAppReplicationConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAppReplicationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetAppReplicationConfigurationRequestMutableBuilder[Self <: GetAppReplicationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppReplicationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait CharResult extends StObject {
 }
 object CharResult {
   
-  @scala.inline
-  def apply(get_value: () => js.Any): CharResult = {
+  inline def apply(get_value: () => js.Any): CharResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[CharResult]
   }
   
-  @scala.inline
-  implicit class CharResultMutableBuilder[Self <: CharResult] (val x: Self) extends AnyVal {
+  extension [Self <: CharResult](x: Self) {
     
-    @scala.inline
-    def setGet_value(value: () => js.Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => js.Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

@@ -16,16 +16,13 @@ trait IModalProvider
 }
 object IModalProvider {
   
-  @scala.inline
-  def apply($get: js.Any, options: IModalSettings): IModalProvider = {
+  inline def apply($get: js.Any, options: IModalSettings): IModalProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalProvider]
   }
   
-  @scala.inline
-  implicit class IModalProviderMutableBuilder[Self <: IModalProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IModalProvider](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IModalSettings): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IModalSettings): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

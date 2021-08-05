@@ -21,29 +21,22 @@ trait Song
 }
 object Song {
   
-  @scala.inline
-  def apply(id: String): Song = {
+  inline def apply(id: String): Song = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("songs")
     __obj.asInstanceOf[Song]
   }
   
-  @scala.inline
-  implicit class SongMutableBuilder[Self <: Song] (val x: Self) extends AnyVal {
+  extension [Self <: Song](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AlbumName): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AlbumName): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setRelationships(value: SongRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: SongRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    @scala.inline
-    def setType(value: songs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: songs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

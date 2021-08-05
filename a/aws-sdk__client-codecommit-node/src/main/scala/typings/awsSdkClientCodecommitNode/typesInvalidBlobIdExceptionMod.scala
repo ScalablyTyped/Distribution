@@ -16,17 +16,14 @@ object typesInvalidBlobIdExceptionMod {
   }
   object InvalidBlobIdException {
     
-    @scala.inline
-    def apply(): InvalidBlobIdException = {
+    inline def apply(): InvalidBlobIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidBlobIdException")
       __obj.asInstanceOf[InvalidBlobIdException]
     }
     
-    @scala.inline
-    implicit class InvalidBlobIdExceptionMutableBuilder[Self <: InvalidBlobIdException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidBlobIdException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBlobIdException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBlobIdException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -30,25 +30,19 @@ trait PlusRuntimeOpenFileOptions extends StObject {
 }
 object PlusRuntimeOpenFileOptions {
   
-  @scala.inline
-  def apply(): PlusRuntimeOpenFileOptions = {
+  inline def apply(): PlusRuntimeOpenFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusRuntimeOpenFileOptions]
   }
   
-  @scala.inline
-  implicit class PlusRuntimeOpenFileOptionsMutableBuilder[Self <: PlusRuntimeOpenFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusRuntimeOpenFileOptions](x: Self) {
     
-    @scala.inline
-    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
+    inline def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
+    inline def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
     
-    @scala.inline
-    def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
+    inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
   }
 }

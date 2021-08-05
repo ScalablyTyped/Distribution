@@ -48,8 +48,7 @@ trait PublisherLinks extends StObject {
 }
 object PublisherLinks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     company: Link,
     fallbackLogo: Link,
     linkedIn: Link,
@@ -63,31 +62,22 @@ object PublisherLinks {
     __obj.asInstanceOf[PublisherLinks]
   }
   
-  @scala.inline
-  implicit class PublisherLinksMutableBuilder[Self <: PublisherLinks] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherLinks](x: Self) {
     
-    @scala.inline
-    def setCompany(value: Link): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: Link): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackLogo(value: Link): Self = StObject.set(x, "fallbackLogo", value.asInstanceOf[js.Any])
+    inline def setFallbackLogo(value: Link): Self = StObject.set(x, "fallbackLogo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedIn(value: Link): Self = StObject.set(x, "linkedIn", value.asInstanceOf[js.Any])
+    inline def setLinkedIn(value: Link): Self = StObject.set(x, "linkedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo(value: Link): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: Link): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: Link): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Link): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCode(value: Link): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
+    inline def setSourceCode(value: Link): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport(value: Link): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+    inline def setSupport(value: Link): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter(value: Link): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+    inline def setTwitter(value: Link): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
   }
 }

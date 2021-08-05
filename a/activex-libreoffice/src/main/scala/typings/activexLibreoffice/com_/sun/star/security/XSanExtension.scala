@@ -20,8 +20,7 @@ trait XSanExtension
 }
 object XSanExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlternativeNames: SafeArray[CertAltNameEntry],
     ExtensionId: SafeArray[Double],
     ExtensionValue: SafeArray[Double],
@@ -34,10 +33,8 @@ object XSanExtension {
     __obj.asInstanceOf[XSanExtension]
   }
   
-  @scala.inline
-  implicit class XSanExtensionMutableBuilder[Self <: XSanExtension] (val x: Self) extends AnyVal {
+  extension [Self <: XSanExtension](x: Self) {
     
-    @scala.inline
-    def setAlternativeNames(value: SafeArray[CertAltNameEntry]): Self = StObject.set(x, "AlternativeNames", value.asInstanceOf[js.Any])
+    inline def setAlternativeNames(value: SafeArray[CertAltNameEntry]): Self = StObject.set(x, "AlternativeNames", value.asInstanceOf[js.Any])
   }
 }

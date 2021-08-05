@@ -10,8 +10,7 @@ trait PaginationLocaleOptions
      with LocaleOptions
 object PaginationLocaleOptions {
   
-  @scala.inline
-  def apply(): PaginationLocaleOptions = {
+  inline def apply(): PaginationLocaleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationLocaleOptions]
   }

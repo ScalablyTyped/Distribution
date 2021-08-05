@@ -14,132 +14,75 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(error: ErrorLike): Error = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def apply(error: ErrorLike, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def apply(error: ErrorLike, props: js.Object): Error = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def apply(error: ErrorLike, props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def apply(message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def apply(props: js.Object): Error = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def apply(props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def apply(error: ErrorLike): Error = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def apply(error: ErrorLike, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def apply(error: ErrorLike, props: js.Object): Error = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def apply(error: ErrorLike, props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def apply(message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def apply(props: js.Object): Error = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def apply(props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   @JSImport("ono", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def error(error: ErrorLike): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def error(error: ErrorLike, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def error(error: ErrorLike, props: js.Object): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def error(error: ErrorLike, props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def error(message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def error(props: js.Object): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(props.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def error(props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def error(error: ErrorLike): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def error(error: ErrorLike, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def error(error: ErrorLike, props: js.Object): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def error(error: ErrorLike, props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def error(message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def error(props: js.Object): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(props.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def error(props: js.Object, message: String, params: js.Any*): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @scala.inline
-  def eval(error: ErrorLike): EvalError = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any]).asInstanceOf[EvalError]
-  @scala.inline
-  def eval(error: ErrorLike, message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
-  @scala.inline
-  def eval(error: ErrorLike, props: js.Object): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[EvalError]
-  @scala.inline
-  def eval(error: ErrorLike, props: js.Object, message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
-  @scala.inline
-  def eval(message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
-  @scala.inline
-  def eval(props: js.Object): EvalError = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(props.asInstanceOf[js.Any]).asInstanceOf[EvalError]
-  @scala.inline
-  def eval(props: js.Object, message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
+  inline def eval(error: ErrorLike): EvalError = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any]).asInstanceOf[EvalError]
+  inline def eval(error: ErrorLike, message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
+  inline def eval(error: ErrorLike, props: js.Object): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[EvalError]
+  inline def eval(error: ErrorLike, props: js.Object, message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
+  inline def eval(message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
+  inline def eval(props: js.Object): EvalError = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(props.asInstanceOf[js.Any]).asInstanceOf[EvalError]
+  inline def eval(props: js.Object, message: String, params: js.Any*): EvalError = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[EvalError]
   
-  @scala.inline
-  def formatter(message: String, params: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatter(message: String, params: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def range(error: ErrorLike): RangeError = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any]).asInstanceOf[RangeError]
-  @scala.inline
-  def range(error: ErrorLike, message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
-  @scala.inline
-  def range(error: ErrorLike, props: js.Object): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[RangeError]
-  @scala.inline
-  def range(error: ErrorLike, props: js.Object, message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
-  @scala.inline
-  def range(message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
-  @scala.inline
-  def range(props: js.Object): RangeError = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(props.asInstanceOf[js.Any]).asInstanceOf[RangeError]
-  @scala.inline
-  def range(props: js.Object, message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
+  inline def range(error: ErrorLike): RangeError = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any]).asInstanceOf[RangeError]
+  inline def range(error: ErrorLike, message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
+  inline def range(error: ErrorLike, props: js.Object): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[RangeError]
+  inline def range(error: ErrorLike, props: js.Object, message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
+  inline def range(message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
+  inline def range(props: js.Object): RangeError = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(props.asInstanceOf[js.Any]).asInstanceOf[RangeError]
+  inline def range(props: js.Object, message: String, params: js.Any*): RangeError = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RangeError]
   
-  @scala.inline
-  def reference(error: ErrorLike): ReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any]).asInstanceOf[ReferenceError]
-  @scala.inline
-  def reference(error: ErrorLike, message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
-  @scala.inline
-  def reference(error: ErrorLike, props: js.Object): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
-  @scala.inline
-  def reference(error: ErrorLike, props: js.Object, message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
-  @scala.inline
-  def reference(message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
-  @scala.inline
-  def reference(props: js.Object): ReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("reference")(props.asInstanceOf[js.Any]).asInstanceOf[ReferenceError]
-  @scala.inline
-  def reference(props: js.Object, message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
+  inline def reference(error: ErrorLike): ReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any]).asInstanceOf[ReferenceError]
+  inline def reference(error: ErrorLike, message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
+  inline def reference(error: ErrorLike, props: js.Object): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
+  inline def reference(error: ErrorLike, props: js.Object, message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
+  inline def reference(message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
+  inline def reference(props: js.Object): ReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("reference")(props.asInstanceOf[js.Any]).asInstanceOf[ReferenceError]
+  inline def reference(props: js.Object, message: String, params: js.Any*): ReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ReferenceError]
   
-  @scala.inline
-  def syntax(error: ErrorLike): SyntaxError = ^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any]).asInstanceOf[SyntaxError]
-  @scala.inline
-  def syntax(error: ErrorLike, message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
-  @scala.inline
-  def syntax(error: ErrorLike, props: js.Object): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
-  @scala.inline
-  def syntax(error: ErrorLike, props: js.Object, message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
-  @scala.inline
-  def syntax(message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
-  @scala.inline
-  def syntax(props: js.Object): SyntaxError = ^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(props.asInstanceOf[js.Any]).asInstanceOf[SyntaxError]
-  @scala.inline
-  def syntax(props: js.Object, message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
+  inline def syntax(error: ErrorLike): SyntaxError = ^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any]).asInstanceOf[SyntaxError]
+  inline def syntax(error: ErrorLike, message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
+  inline def syntax(error: ErrorLike, props: js.Object): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
+  inline def syntax(error: ErrorLike, props: js.Object, message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
+  inline def syntax(message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
+  inline def syntax(props: js.Object): SyntaxError = ^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(props.asInstanceOf[js.Any]).asInstanceOf[SyntaxError]
+  inline def syntax(props: js.Object, message: String, params: js.Any*): SyntaxError = (^.asInstanceOf[js.Dynamic].applyDynamic("syntax")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SyntaxError]
   
-  @scala.inline
-  def `type`(error: ErrorLike): TypeError = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any]).asInstanceOf[TypeError]
-  @scala.inline
-  def `type`(error: ErrorLike, message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
-  @scala.inline
-  def `type`(error: ErrorLike, props: js.Object): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TypeError]
-  @scala.inline
-  def `type`(error: ErrorLike, props: js.Object, message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
-  @scala.inline
-  def `type`(message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
-  @scala.inline
-  def `type`(props: js.Object): TypeError = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any]).asInstanceOf[TypeError]
-  @scala.inline
-  def `type`(props: js.Object, message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
+  inline def `type`(error: ErrorLike): TypeError = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any]).asInstanceOf[TypeError]
+  inline def `type`(error: ErrorLike, message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
+  inline def `type`(error: ErrorLike, props: js.Object): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TypeError]
+  inline def `type`(error: ErrorLike, props: js.Object, message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
+  inline def `type`(message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
+  inline def `type`(props: js.Object): TypeError = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any]).asInstanceOf[TypeError]
+  inline def `type`(props: js.Object, message: String, params: js.Any*): TypeError = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TypeError]
   
-  @scala.inline
-  def uri(error: ErrorLike): URIError = ^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any]).asInstanceOf[URIError]
-  @scala.inline
-  def uri(error: ErrorLike, message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
-  @scala.inline
-  def uri(error: ErrorLike, props: js.Object): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[URIError]
-  @scala.inline
-  def uri(error: ErrorLike, props: js.Object, message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
-  @scala.inline
-  def uri(message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
-  @scala.inline
-  def uri(props: js.Object): URIError = ^.asInstanceOf[js.Dynamic].applyDynamic("uri")(props.asInstanceOf[js.Any]).asInstanceOf[URIError]
-  @scala.inline
-  def uri(props: js.Object, message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
+  inline def uri(error: ErrorLike): URIError = ^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any]).asInstanceOf[URIError]
+  inline def uri(error: ErrorLike, message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
+  inline def uri(error: ErrorLike, props: js.Object): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[URIError]
+  inline def uri(error: ErrorLike, props: js.Object, message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
+  inline def uri(message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
+  inline def uri(props: js.Object): URIError = ^.asInstanceOf[js.Dynamic].applyDynamic("uri")(props.asInstanceOf[js.Any]).asInstanceOf[URIError]
+  inline def uri(props: js.Object, message: String, params: js.Any*): URIError = (^.asInstanceOf[js.Dynamic].applyDynamic("uri")(props.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[URIError]
   
   type ErrorLike = Error | ErrorPOJO
   
@@ -155,32 +98,24 @@ object mod {
   }
   object ErrorPOJO {
     
-    @scala.inline
-    def apply(): ErrorPOJO = {
+    inline def apply(): ErrorPOJO = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorPOJO]
     }
     
-    @scala.inline
-    implicit class ErrorPOJOMutableBuilder[Self <: ErrorPOJO] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorPOJO](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

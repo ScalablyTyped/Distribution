@@ -23,31 +23,23 @@ trait AwsIamPolicyVersion extends StObject {
 }
 object AwsIamPolicyVersion {
   
-  @scala.inline
-  def apply(): AwsIamPolicyVersion = {
+  inline def apply(): AwsIamPolicyVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamPolicyVersion]
   }
   
-  @scala.inline
-  implicit class AwsIamPolicyVersionMutableBuilder[Self <: AwsIamPolicyVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamPolicyVersion](x: Self) {
     
-    @scala.inline
-    def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setIsDefaultVersion(value: Boolean): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
+    inline def setIsDefaultVersion(value: Boolean): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
+    inline def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: NonEmptyString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: NonEmptyString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

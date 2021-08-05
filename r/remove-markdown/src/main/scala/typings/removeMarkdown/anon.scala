@@ -14,26 +14,20 @@ object anon {
   }
   object Gfm {
     
-    @scala.inline
-    def apply(): Gfm = {
+    inline def apply(): Gfm = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Gfm]
     }
     
-    @scala.inline
-    implicit class GfmMutableBuilder[Self <: Gfm] (val x: Self) extends AnyVal {
+    extension [Self <: Gfm](x: Self) {
       
-      @scala.inline
-      def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+      inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
       
-      @scala.inline
-      def setStripListLeaders(value: Boolean): Self = StObject.set(x, "stripListLeaders", value.asInstanceOf[js.Any])
+      inline def setStripListLeaders(value: Boolean): Self = StObject.set(x, "stripListLeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripListLeadersUndefined: Self = StObject.set(x, "stripListLeaders", js.undefined)
+      inline def setStripListLeadersUndefined: Self = StObject.set(x, "stripListLeaders", js.undefined)
     }
   }
 }

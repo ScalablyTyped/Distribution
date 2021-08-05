@@ -51,38 +51,28 @@ object applePayMod {
   }
   object ApplePayConfig {
     
-    @scala.inline
-    def apply(country: String, currency: String, label: String, total: String): ApplePayConfig = {
+    inline def apply(country: String, currency: String, label: String, total: String): ApplePayConfig = {
       val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplePayConfig]
     }
     
-    @scala.inline
-    implicit class ApplePayConfigMutableBuilder[Self <: ApplePayConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ApplePayConfig](x: Self) {
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPricing(value: CheckoutPricingInstance): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
+      inline def setPricing(value: CheckoutPricingInstance): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
+      inline def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
       
-      @scala.inline
-      def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,26 +88,19 @@ object applePayMod {
   trait ApplePayEvent extends StObject
   object ApplePayEvent {
     
-    @scala.inline
-    def cancel: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.cancel = "cancel".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.cancel]
+    inline def cancel: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.cancel = "cancel".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.cancel]
     
-    @scala.inline
-    def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
+    inline def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
     
-    @scala.inline
-    def paymentAuthorized: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.paymentAuthorized = "paymentAuthorized".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.paymentAuthorized]
+    inline def paymentAuthorized: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.paymentAuthorized = "paymentAuthorized".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.paymentAuthorized]
     
-    @scala.inline
-    def ready: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.ready = "ready".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.ready]
+    inline def ready: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.ready = "ready".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.ready]
     
-    @scala.inline
-    def shippingContactSelected: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingContactSelected = "shippingContactSelected".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingContactSelected]
+    inline def shippingContactSelected: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingContactSelected = "shippingContactSelected".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingContactSelected]
     
-    @scala.inline
-    def shippingMethodSelected: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingMethodSelected = "shippingMethodSelected".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingMethodSelected]
+    inline def shippingMethodSelected: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingMethodSelected = "shippingMethodSelected".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.shippingMethodSelected]
     
-    @scala.inline
-    def token: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token = "token".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token]
+    inline def token: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token = "token".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token]
   }
   
   @js.native

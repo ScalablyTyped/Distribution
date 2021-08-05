@@ -13,16 +13,13 @@ trait LabelDescriptorHtml
 }
 object LabelDescriptorHtml {
   
-  @scala.inline
-  def apply(iconHtml: String, title: String): LabelDescriptorHtml = {
+  inline def apply(iconHtml: String, title: String): LabelDescriptorHtml = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDescriptorHtml]
   }
   
-  @scala.inline
-  implicit class LabelDescriptorHtmlMutableBuilder[Self <: LabelDescriptorHtml] (val x: Self) extends AnyVal {
+  extension [Self <: LabelDescriptorHtml](x: Self) {
     
-    @scala.inline
-    def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
+    inline def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
   }
 }

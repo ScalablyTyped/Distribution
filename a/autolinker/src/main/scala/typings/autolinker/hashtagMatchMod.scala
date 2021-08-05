@@ -39,7 +39,7 @@ object hashtagMatchMod {
       *
       * The HashtagMatch that was matched, without the '#'.
       */
-    val hashtag: js.Any = js.native
+    /* private */ val hashtag: js.Any = js.native
     
     /**
       * @cfg {String} serviceName
@@ -47,7 +47,7 @@ object hashtagMatchMod {
       * The service to point hashtag matches to. See {@link Autolinker#hashtag}
       * for available values.
       */
-    val serviceName: js.Any = js.native
+    /* private */ val serviceName: js.Any = js.native
   }
   
   trait HashtagMatchConfig
@@ -60,8 +60,7 @@ object hashtagMatchMod {
   }
   object HashtagMatchConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hashtag: String,
       matchedText: String,
       offset: Double,
@@ -72,14 +71,11 @@ object hashtagMatchMod {
       __obj.asInstanceOf[HashtagMatchConfig]
     }
     
-    @scala.inline
-    implicit class HashtagMatchConfigMutableBuilder[Self <: HashtagMatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HashtagMatchConfig](x: Self) {
       
-      @scala.inline
-      def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

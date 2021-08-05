@@ -12,20 +12,16 @@ trait GameEvent extends StObject {
 }
 object GameEvent {
   
-  @scala.inline
-  def apply(data: JSObject, `type`: String): GameEvent = {
+  inline def apply(data: JSObject, `type`: String): GameEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameEvent]
   }
   
-  @scala.inline
-  implicit class GameEventMutableBuilder[Self <: GameEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GameEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: JSObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: JSObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

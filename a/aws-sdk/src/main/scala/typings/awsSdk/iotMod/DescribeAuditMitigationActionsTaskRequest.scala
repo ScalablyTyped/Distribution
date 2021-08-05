@@ -13,16 +13,13 @@ trait DescribeAuditMitigationActionsTaskRequest extends StObject {
 }
 object DescribeAuditMitigationActionsTaskRequest {
   
-  @scala.inline
-  def apply(taskId: AuditMitigationActionsTaskId): DescribeAuditMitigationActionsTaskRequest = {
+  inline def apply(taskId: AuditMitigationActionsTaskId): DescribeAuditMitigationActionsTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAuditMitigationActionsTaskRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAuditMitigationActionsTaskRequestMutableBuilder[Self <: DescribeAuditMitigationActionsTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditMitigationActionsTaskRequest](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

@@ -48,61 +48,43 @@ trait BrokerSummary extends StObject {
 }
 object BrokerSummary {
   
-  @scala.inline
-  def apply(): BrokerSummary = {
+  inline def apply(): BrokerSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokerSummary]
   }
   
-  @scala.inline
-  implicit class BrokerSummaryMutableBuilder[Self <: BrokerSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerSummary](x: Self) {
     
-    @scala.inline
-    def setBrokerArn(value: string): Self = StObject.set(x, "BrokerArn", value.asInstanceOf[js.Any])
+    inline def setBrokerArn(value: string): Self = StObject.set(x, "BrokerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerArnUndefined: Self = StObject.set(x, "BrokerArn", js.undefined)
+    inline def setBrokerArnUndefined: Self = StObject.set(x, "BrokerArn", js.undefined)
     
-    @scala.inline
-    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
+    inline def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
+    inline def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
     
-    @scala.inline
-    def setBrokerName(value: string): Self = StObject.set(x, "BrokerName", value.asInstanceOf[js.Any])
+    inline def setBrokerName(value: string): Self = StObject.set(x, "BrokerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerNameUndefined: Self = StObject.set(x, "BrokerName", js.undefined)
+    inline def setBrokerNameUndefined: Self = StObject.set(x, "BrokerName", js.undefined)
     
-    @scala.inline
-    def setBrokerState(value: BrokerState): Self = StObject.set(x, "BrokerState", value.asInstanceOf[js.Any])
+    inline def setBrokerState(value: BrokerState): Self = StObject.set(x, "BrokerState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerStateUndefined: Self = StObject.set(x, "BrokerState", js.undefined)
+    inline def setBrokerStateUndefined: Self = StObject.set(x, "BrokerState", js.undefined)
     
-    @scala.inline
-    def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
-    @scala.inline
-    def setDeploymentMode(value: DeploymentMode): Self = StObject.set(x, "DeploymentMode", value.asInstanceOf[js.Any])
+    inline def setDeploymentMode(value: DeploymentMode): Self = StObject.set(x, "DeploymentMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentModeUndefined: Self = StObject.set(x, "DeploymentMode", js.undefined)
+    inline def setDeploymentModeUndefined: Self = StObject.set(x, "DeploymentMode", js.undefined)
     
-    @scala.inline
-    def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
+    inline def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
+    inline def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
-    @scala.inline
-    def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
+    inline def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
+    inline def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
   }
 }

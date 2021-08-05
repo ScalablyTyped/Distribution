@@ -18,16 +18,13 @@ trait ASPxClientAppointmentToolTipShowingEventArgs
 }
 object ASPxClientAppointmentToolTipShowingEventArgs {
   
-  @scala.inline
-  def apply(appointment: ASPxClientAppointment, cancel: Boolean): ASPxClientAppointmentToolTipShowingEventArgs = {
+  inline def apply(appointment: ASPxClientAppointment, cancel: Boolean): ASPxClientAppointmentToolTipShowingEventArgs = {
     val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientAppointmentToolTipShowingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentToolTipShowingEventArgsMutableBuilder[Self <: ASPxClientAppointmentToolTipShowingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentToolTipShowingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppointment(value: ASPxClientAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    inline def setAppointment(value: ASPxClientAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
   }
 }

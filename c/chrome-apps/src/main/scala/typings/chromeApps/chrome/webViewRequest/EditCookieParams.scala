@@ -25,19 +25,15 @@ trait EditCookieParams[T, K] extends StObject {
 }
 object EditCookieParams {
   
-  @scala.inline
-  def apply[T, K](filter: T, modification: K): EditCookieParams[T, K] = {
+  inline def apply[T, K](filter: T, modification: K): EditCookieParams[T, K] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], modification = modification.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditCookieParams[T, K]]
   }
   
-  @scala.inline
-  implicit class EditCookieParamsMutableBuilder[Self <: EditCookieParams[?, ?], T, K] (val x: Self & (EditCookieParams[T, K])) extends AnyVal {
+  extension [Self <: EditCookieParams[?, ?], T, K](x: Self & (EditCookieParams[T, K])) {
     
-    @scala.inline
-    def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModification(value: K): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
+    inline def setModification(value: K): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
   }
 }

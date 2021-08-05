@@ -34,10 +34,8 @@ object mod {
     /* 3 */ val TEXT_NODE: typings.fastHtmlParser.mod.NodeType.TEXT_NODE & Double = js.native
   }
   
-  @scala.inline
-  def parse(data: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  @scala.inline
-  def parse(data: String, options: ParseOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def parse(data: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def parse(data: String, options: ParseOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   type Attributes = StringDictionary[String]
   
@@ -98,38 +96,28 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
+      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
       
-      @scala.inline
-      def setPre(value: Boolean): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: Boolean): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      @scala.inline
-      def setScript(value: Boolean): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Boolean): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

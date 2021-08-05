@@ -15,25 +15,19 @@ trait SourceCodeType extends StObject {
 }
 object SourceCodeType {
   
-  @scala.inline
-  def apply(): SourceCodeType = {
+  inline def apply(): SourceCodeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceCodeType]
   }
   
-  @scala.inline
-  implicit class SourceCodeTypeMutableBuilder[Self <: SourceCodeType] (val x: Self) extends AnyVal {
+  extension [Self <: SourceCodeType](x: Self) {
     
-    @scala.inline
-    def setCommitDiff(value: CommitDiffSourceCodeType): Self = StObject.set(x, "CommitDiff", value.asInstanceOf[js.Any])
+    inline def setCommitDiff(value: CommitDiffSourceCodeType): Self = StObject.set(x, "CommitDiff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitDiffUndefined: Self = StObject.set(x, "CommitDiff", js.undefined)
+    inline def setCommitDiffUndefined: Self = StObject.set(x, "CommitDiff", js.undefined)
     
-    @scala.inline
-    def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
+    inline def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryHeadUndefined: Self = StObject.set(x, "RepositoryHead", js.undefined)
+    inline def setRepositoryHeadUndefined: Self = StObject.set(x, "RepositoryHead", js.undefined)
   }
 }

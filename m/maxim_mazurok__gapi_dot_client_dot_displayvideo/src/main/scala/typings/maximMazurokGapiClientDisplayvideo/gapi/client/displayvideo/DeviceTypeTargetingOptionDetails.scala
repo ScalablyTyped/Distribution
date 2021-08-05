@@ -11,19 +11,15 @@ trait DeviceTypeTargetingOptionDetails extends StObject {
 }
 object DeviceTypeTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): DeviceTypeTargetingOptionDetails = {
+  inline def apply(): DeviceTypeTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceTypeTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class DeviceTypeTargetingOptionDetailsMutableBuilder[Self <: DeviceTypeTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceTypeTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
   }
 }

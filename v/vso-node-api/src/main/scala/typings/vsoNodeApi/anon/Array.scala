@@ -30,8 +30,7 @@ trait Array extends StObject {
 }
 object Array {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     array: scala.Double,
     boolean: scala.Double,
     dateTime: scala.Double,
@@ -49,40 +48,28 @@ object Array {
     __obj.asInstanceOf[Array]
   }
   
-  @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+  extension [Self <: Array](x: Self) {
     
-    @scala.inline
-    def setArray(value: scala.Double): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: scala.Double): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionary(value: scala.Double): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: scala.Double): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
+    inline def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: scala.Double): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: scala.Double): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+    inline def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: scala.Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: scala.Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: scala.Double): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: scala.Double): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

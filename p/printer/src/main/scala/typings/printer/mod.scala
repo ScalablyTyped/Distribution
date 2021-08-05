@@ -22,41 +22,29 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultPrinterName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultPrinterName")().asInstanceOf[js.UndefOr[String]]
+  inline def getDefaultPrinterName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultPrinterName")().asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def getJob(printerName: String, jobId: Double): JobDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("getJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any])).asInstanceOf[JobDetails]
+  inline def getJob(printerName: String, jobId: Double): JobDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("getJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any])).asInstanceOf[JobDetails]
   
-  @scala.inline
-  def getPrinter(printerName: String): PrinterDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinter")(printerName.asInstanceOf[js.Any]).asInstanceOf[PrinterDetails]
+  inline def getPrinter(printerName: String): PrinterDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinter")(printerName.asInstanceOf[js.Any]).asInstanceOf[PrinterDetails]
   
-  @scala.inline
-  def getPrinterDriverOptions(printerName: String): PrinterDriverOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinterDriverOptions")(printerName.asInstanceOf[js.Any]).asInstanceOf[PrinterDriverOptions]
+  inline def getPrinterDriverOptions(printerName: String): PrinterDriverOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinterDriverOptions")(printerName.asInstanceOf[js.Any]).asInstanceOf[PrinterDriverOptions]
   
-  @scala.inline
-  def getPrinters(): js.Array[PrinterDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinters")().asInstanceOf[js.Array[PrinterDetails]]
+  inline def getPrinters(): js.Array[PrinterDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinters")().asInstanceOf[js.Array[PrinterDetails]]
   
-  @scala.inline
-  def getSelectedPaperSize(printerName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedPaperSize")(printerName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getSelectedPaperSize(printerName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedPaperSize")(printerName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getSupportedJobCommands(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedJobCommands")().asInstanceOf[js.Array[String]]
+  inline def getSupportedJobCommands(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedJobCommands")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getSupportedPrintFormats(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedPrintFormats")().asInstanceOf[js.Array[String]]
+  inline def getSupportedPrintFormats(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedPrintFormats")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def printDirect(options: PrintDirectOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDirect")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printDirect(options: PrintDirectOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDirect")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def printFile(options: PrintFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printFile(options: PrintFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setJob(printerName: String, jobId: Double, command: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setJob(printerName: String, jobId: Double, command: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setJob_CANCEL(printerName: String, jobId: Double, command: CANCEL): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setJob_CANCEL(printerName: String, jobId: Double, command: CANCEL): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait JobDetails extends StObject {
     
@@ -84,8 +72,7 @@ object mod {
   }
   object JobDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       completedTime: Date,
       creationTime: Date,
       format: String,
@@ -102,44 +89,31 @@ object mod {
       __obj.asInstanceOf[JobDetails]
     }
     
-    @scala.inline
-    implicit class JobDetailsMutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
+    extension [Self <: JobDetails](x: Self) {
       
-      @scala.inline
-      def setCompletedTime(value: Date): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
+      inline def setCompletedTime(value: Date): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTime(value: Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinterName(value: String): Self = StObject.set(x, "printerName", value.asInstanceOf[js.Any])
+      inline def setPrinterName(value: String): Self = StObject.set(x, "printerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessingTime(value: Date): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
+      inline def setProcessingTime(value: Date): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: js.Array[JobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: js.Array[JobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusVarargs(value: JobStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
+      inline def setStatusVarargs(value: JobStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,23 +128,17 @@ object mod {
   trait JobStatus extends StObject
   object JobStatus {
     
-    @scala.inline
-    def ABORTED: typings.printer.printerStrings.ABORTED = "ABORTED".asInstanceOf[typings.printer.printerStrings.ABORTED]
+    inline def ABORTED: typings.printer.printerStrings.ABORTED = "ABORTED".asInstanceOf[typings.printer.printerStrings.ABORTED]
     
-    @scala.inline
-    def CANCELLED: typings.printer.printerStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.printer.printerStrings.CANCELLED]
+    inline def CANCELLED: typings.printer.printerStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.printer.printerStrings.CANCELLED]
     
-    @scala.inline
-    def PAUSED: typings.printer.printerStrings.PAUSED = "PAUSED".asInstanceOf[typings.printer.printerStrings.PAUSED]
+    inline def PAUSED: typings.printer.printerStrings.PAUSED = "PAUSED".asInstanceOf[typings.printer.printerStrings.PAUSED]
     
-    @scala.inline
-    def PENDING: typings.printer.printerStrings.PENDING = "PENDING".asInstanceOf[typings.printer.printerStrings.PENDING]
+    inline def PENDING: typings.printer.printerStrings.PENDING = "PENDING".asInstanceOf[typings.printer.printerStrings.PENDING]
     
-    @scala.inline
-    def PRINTED: typings.printer.printerStrings.PRINTED = "PRINTED".asInstanceOf[typings.printer.printerStrings.PRINTED]
+    inline def PRINTED: typings.printer.printerStrings.PRINTED = "PRINTED".asInstanceOf[typings.printer.printerStrings.PRINTED]
     
-    @scala.inline
-    def PRINTING: typings.printer.printerStrings.PRINTING = "PRINTING".asInstanceOf[typings.printer.printerStrings.PRINTING]
+    inline def PRINTING: typings.printer.printerStrings.PRINTING = "PRINTING".asInstanceOf[typings.printer.printerStrings.PRINTING]
   }
   
   trait PrintDirectOptions extends StObject {
@@ -189,47 +157,34 @@ object mod {
   }
   object PrintDirectOptions {
     
-    @scala.inline
-    def apply(data: String | Buffer): PrintDirectOptions = {
+    inline def apply(data: String | Buffer): PrintDirectOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrintDirectOptions]
     }
     
-    @scala.inline
-    implicit class PrintDirectOptionsMutableBuilder[Self <: PrintDirectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrintDirectOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPrinter(value: String): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
+      inline def setPrinter(value: String): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
+      inline def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* jobId */ String => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* jobId */ String => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setType(value: RAW | TEXT | PDF | JPEG | POSTSCRIPT | COMMAND | AUTO): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RAW | TEXT | PDF | JPEG | POSTSCRIPT | COMMAND | AUTO): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -245,35 +200,26 @@ object mod {
   }
   object PrintFileOptions {
     
-    @scala.inline
-    def apply(filename: String): PrintFileOptions = {
+    inline def apply(filename: String): PrintFileOptions = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrintFileOptions]
     }
     
-    @scala.inline
-    implicit class PrintFileOptionsMutableBuilder[Self <: PrintFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrintFileOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinter(value: String): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
+      inline def setPrinter(value: String): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
+      inline def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* jobId */ String => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* jobId */ String => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -291,23 +237,18 @@ object mod {
   }
   object PrinterDetails {
     
-    @scala.inline
-    def apply(isDefault: Boolean, name: String, options: StringDictionary[String]): PrinterDetails = {
+    inline def apply(isDefault: Boolean, name: String, options: StringDictionary[String]): PrinterDetails = {
       val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrinterDetails]
     }
     
-    @scala.inline
-    implicit class PrinterDetailsMutableBuilder[Self <: PrinterDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PrinterDetails](x: Self) {
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   

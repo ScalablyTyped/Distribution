@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("webpack-node-externals", JSImport.Namespace)
   @js.native
@@ -36,32 +34,24 @@ object mod {
   }
   object ModulesFromFileType {
     
-    @scala.inline
-    def apply(): ModulesFromFileType = {
+    inline def apply(): ModulesFromFileType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModulesFromFileType]
     }
     
-    @scala.inline
-    implicit class ModulesFromFileTypeMutableBuilder[Self <: ModulesFromFileType] (val x: Self) extends AnyVal {
+    extension [Self <: ModulesFromFileType](x: Self) {
       
-      @scala.inline
-      def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
   
@@ -114,71 +104,50 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdditionalModuleDirs(value: js.Array[String]): Self = StObject.set(x, "additionalModuleDirs", value.asInstanceOf[js.Any])
+      inline def setAdditionalModuleDirs(value: js.Array[String]): Self = StObject.set(x, "additionalModuleDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalModuleDirsUndefined: Self = StObject.set(x, "additionalModuleDirs", js.undefined)
+      inline def setAdditionalModuleDirsUndefined: Self = StObject.set(x, "additionalModuleDirs", js.undefined)
       
-      @scala.inline
-      def setAdditionalModuleDirsVarargs(value: String*): Self = StObject.set(x, "additionalModuleDirs", js.Array(value :_*))
+      inline def setAdditionalModuleDirsVarargs(value: String*): Self = StObject.set(x, "additionalModuleDirs", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowlist(value: js.Array[AllowlistOption] | AllowlistOption): Self = StObject.set(x, "allowlist", value.asInstanceOf[js.Any])
+      inline def setAllowlist(value: js.Array[AllowlistOption] | AllowlistOption): Self = StObject.set(x, "allowlist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowlistFunction1(value: /* moduleName */ String => Boolean): Self = StObject.set(x, "allowlist", js.Any.fromFunction1(value))
+      inline def setAllowlistFunction1(value: /* moduleName */ String => Boolean): Self = StObject.set(x, "allowlist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAllowlistUndefined: Self = StObject.set(x, "allowlist", js.undefined)
+      inline def setAllowlistUndefined: Self = StObject.set(x, "allowlist", js.undefined)
       
-      @scala.inline
-      def setAllowlistVarargs(value: AllowlistOption*): Self = StObject.set(x, "allowlist", js.Array(value :_*))
+      inline def setAllowlistVarargs(value: AllowlistOption*): Self = StObject.set(x, "allowlist", js.Array(value :_*))
       
-      @scala.inline
-      def setBinaryDirs(value: js.Array[String]): Self = StObject.set(x, "binaryDirs", value.asInstanceOf[js.Any])
+      inline def setBinaryDirs(value: js.Array[String]): Self = StObject.set(x, "binaryDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryDirsUndefined: Self = StObject.set(x, "binaryDirs", js.undefined)
+      inline def setBinaryDirsUndefined: Self = StObject.set(x, "binaryDirs", js.undefined)
       
-      @scala.inline
-      def setBinaryDirsVarargs(value: String*): Self = StObject.set(x, "binaryDirs", js.Array(value :_*))
+      inline def setBinaryDirsVarargs(value: String*): Self = StObject.set(x, "binaryDirs", js.Array(value :_*))
       
-      @scala.inline
-      def setImportType(value: `var` | `this` | commonjs | amd | umd | ImportTypeCallback): Self = StObject.set(x, "importType", value.asInstanceOf[js.Any])
+      inline def setImportType(value: `var` | `this` | commonjs | amd | umd | ImportTypeCallback): Self = StObject.set(x, "importType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportTypeFunction1(value: /* moduleName */ String => String): Self = StObject.set(x, "importType", js.Any.fromFunction1(value))
+      inline def setImportTypeFunction1(value: /* moduleName */ String => String): Self = StObject.set(x, "importType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImportTypeUndefined: Self = StObject.set(x, "importType", js.undefined)
+      inline def setImportTypeUndefined: Self = StObject.set(x, "importType", js.undefined)
       
-      @scala.inline
-      def setIncludeAbsolutePaths(value: Boolean): Self = StObject.set(x, "includeAbsolutePaths", value.asInstanceOf[js.Any])
+      inline def setIncludeAbsolutePaths(value: Boolean): Self = StObject.set(x, "includeAbsolutePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAbsolutePathsUndefined: Self = StObject.set(x, "includeAbsolutePaths", js.undefined)
+      inline def setIncludeAbsolutePathsUndefined: Self = StObject.set(x, "includeAbsolutePaths", js.undefined)
       
-      @scala.inline
-      def setModulesDir(value: String): Self = StObject.set(x, "modulesDir", value.asInstanceOf[js.Any])
+      inline def setModulesDir(value: String): Self = StObject.set(x, "modulesDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesDirUndefined: Self = StObject.set(x, "modulesDir", js.undefined)
+      inline def setModulesDirUndefined: Self = StObject.set(x, "modulesDir", js.undefined)
       
-      @scala.inline
-      def setModulesFromFile(value: Boolean | ModulesFromFileType): Self = StObject.set(x, "modulesFromFile", value.asInstanceOf[js.Any])
+      inline def setModulesFromFile(value: Boolean | ModulesFromFileType): Self = StObject.set(x, "modulesFromFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesFromFileUndefined: Self = StObject.set(x, "modulesFromFile", js.undefined)
+      inline def setModulesFromFileUndefined: Self = StObject.set(x, "modulesFromFile", js.undefined)
     }
   }
 }

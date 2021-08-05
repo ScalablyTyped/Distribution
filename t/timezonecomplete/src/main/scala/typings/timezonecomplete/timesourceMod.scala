@@ -31,17 +31,14 @@ object timesourceMod {
   }
   object TimeSource {
     
-    @scala.inline
-    def apply(now: () => Date): TimeSource = {
+    inline def apply(now: () => Date): TimeSource = {
       val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
       __obj.asInstanceOf[TimeSource]
     }
     
-    @scala.inline
-    implicit class TimeSourceMutableBuilder[Self <: TimeSource] (val x: Self) extends AnyVal {
+    extension [Self <: TimeSource](x: Self) {
       
-      @scala.inline
-      def setNow(value: () => Date): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+      inline def setNow(value: () => Date): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     }
   }
 }

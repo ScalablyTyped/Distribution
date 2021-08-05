@@ -11,17 +11,14 @@ trait OmitUIExtensionPropssys extends StObject {
 }
 object OmitUIExtensionPropssys {
   
-  @scala.inline
-  def apply(`extension`: FieldTypes): OmitUIExtensionPropssys = {
+  inline def apply(`extension`: FieldTypes): OmitUIExtensionPropssys = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitUIExtensionPropssys]
   }
   
-  @scala.inline
-  implicit class OmitUIExtensionPropssysMutableBuilder[Self <: OmitUIExtensionPropssys] (val x: Self) extends AnyVal {
+  extension [Self <: OmitUIExtensionPropssys](x: Self) {
     
-    @scala.inline
-    def setExtension(value: FieldTypes): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: FieldTypes): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
   }
 }

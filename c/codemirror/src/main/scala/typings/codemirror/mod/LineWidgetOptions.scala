@@ -32,55 +32,39 @@ trait LineWidgetOptions extends StObject {
 }
 object LineWidgetOptions {
   
-  @scala.inline
-  def apply(): LineWidgetOptions = {
+  inline def apply(): LineWidgetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineWidgetOptions]
   }
   
-  @scala.inline
-  implicit class LineWidgetOptionsMutableBuilder[Self <: LineWidgetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LineWidgetOptions](x: Self) {
     
-    @scala.inline
-    def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
+    inline def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAboveUndefined: Self = StObject.set(x, "above", js.undefined)
+    inline def setAboveUndefined: Self = StObject.set(x, "above", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCoverGutter(value: Boolean): Self = StObject.set(x, "coverGutter", value.asInstanceOf[js.Any])
+    inline def setCoverGutter(value: Boolean): Self = StObject.set(x, "coverGutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverGutterUndefined: Self = StObject.set(x, "coverGutter", js.undefined)
+    inline def setCoverGutterUndefined: Self = StObject.set(x, "coverGutter", js.undefined)
     
-    @scala.inline
-    def setHandleMouseEvents(value: Boolean): Self = StObject.set(x, "handleMouseEvents", value.asInstanceOf[js.Any])
+    inline def setHandleMouseEvents(value: Boolean): Self = StObject.set(x, "handleMouseEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleMouseEventsUndefined: Self = StObject.set(x, "handleMouseEvents", js.undefined)
+    inline def setHandleMouseEventsUndefined: Self = StObject.set(x, "handleMouseEvents", js.undefined)
     
-    @scala.inline
-    def setInsertAt(value: Double): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
+    inline def setInsertAt(value: Double): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
+    inline def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
     
-    @scala.inline
-    def setNoHScroll(value: Boolean): Self = StObject.set(x, "noHScroll", value.asInstanceOf[js.Any])
+    inline def setNoHScroll(value: Boolean): Self = StObject.set(x, "noHScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoHScrollUndefined: Self = StObject.set(x, "noHScroll", js.undefined)
+    inline def setNoHScrollUndefined: Self = StObject.set(x, "noHScroll", js.undefined)
     
-    @scala.inline
-    def setShowIfHidden(value: Boolean): Self = StObject.set(x, "showIfHidden", value.asInstanceOf[js.Any])
+    inline def setShowIfHidden(value: Boolean): Self = StObject.set(x, "showIfHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowIfHiddenUndefined: Self = StObject.set(x, "showIfHidden", js.undefined)
+    inline def setShowIfHiddenUndefined: Self = StObject.set(x, "showIfHidden", js.undefined)
   }
 }

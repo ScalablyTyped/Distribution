@@ -18,15 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionKind extends StObject
 object FunctionKind {
   
-  @scala.inline
-  def ArrowFunctionExpression(body: BlockStatementKind | ExpressionKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression = {
+  inline def ArrowFunctionExpression(body: BlockStatementKind | ExpressionKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression]
   }
   
-  @scala.inline
-  def ClassMethod(
+  inline def ClassMethod(
     body: BlockStatementKind,
     key: LiteralKind | IdentifierKind | ExpressionKind,
     params: js.Array[PatternKind]
@@ -36,29 +34,25 @@ object FunctionKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ClassMethod]
   }
   
-  @scala.inline
-  def ClassPrivateMethod(body: BlockStatementKind, key: PrivateNameKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod = {
+  inline def ClassPrivateMethod(body: BlockStatementKind, key: PrivateNameKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassPrivateMethod")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod]
   }
   
-  @scala.inline
-  def FunctionDeclaration(body: BlockStatementKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.FunctionDeclaration = {
+  inline def FunctionDeclaration(body: BlockStatementKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.FunctionDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], id = null)
     __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.FunctionDeclaration]
   }
   
-  @scala.inline
-  def FunctionExpression(body: BlockStatementKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.FunctionExpression = {
+  inline def FunctionExpression(body: BlockStatementKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.FunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.FunctionExpression]
   }
   
-  @scala.inline
-  def ObjectMethod(
+  inline def ObjectMethod(
     body: BlockStatementKind,
     key: LiteralKind | IdentifierKind | ExpressionKind,
     kind: method | get | set,

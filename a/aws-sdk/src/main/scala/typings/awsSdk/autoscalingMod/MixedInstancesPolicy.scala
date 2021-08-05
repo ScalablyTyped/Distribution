@@ -18,25 +18,19 @@ trait MixedInstancesPolicy extends StObject {
 }
 object MixedInstancesPolicy {
   
-  @scala.inline
-  def apply(): MixedInstancesPolicy = {
+  inline def apply(): MixedInstancesPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MixedInstancesPolicy]
   }
   
-  @scala.inline
-  implicit class MixedInstancesPolicyMutableBuilder[Self <: MixedInstancesPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: MixedInstancesPolicy](x: Self) {
     
-    @scala.inline
-    def setInstancesDistribution(value: InstancesDistribution): Self = StObject.set(x, "InstancesDistribution", value.asInstanceOf[js.Any])
+    inline def setInstancesDistribution(value: InstancesDistribution): Self = StObject.set(x, "InstancesDistribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesDistributionUndefined: Self = StObject.set(x, "InstancesDistribution", js.undefined)
+    inline def setInstancesDistributionUndefined: Self = StObject.set(x, "InstancesDistribution", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
   }
 }

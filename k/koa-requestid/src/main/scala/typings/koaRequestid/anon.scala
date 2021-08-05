@@ -17,32 +17,24 @@ object anon {
   }
   object Expose {
     
-    @scala.inline
-    def apply(): Expose = {
+    inline def apply(): Expose = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Expose]
     }
     
-    @scala.inline
-    implicit class ExposeMutableBuilder[Self <: Expose] (val x: Self) extends AnyVal {
+    extension [Self <: Expose](x: Self) {
       
-      @scala.inline
-      def setExpose(value: String | `false`): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: String | `false`): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
+      inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String | `false`): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String | `false`): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String | `false`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String | `false`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
 }

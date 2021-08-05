@@ -33,8 +33,7 @@ trait UpdateConferenceProviderRequest extends StObject {
 }
 object UpdateConferenceProviderRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConferenceProviderArn: Arn,
     ConferenceProviderType: ConferenceProviderType,
     MeetingSetting: MeetingSetting
@@ -43,28 +42,20 @@ object UpdateConferenceProviderRequest {
     __obj.asInstanceOf[UpdateConferenceProviderRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConferenceProviderRequestMutableBuilder[Self <: UpdateConferenceProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConferenceProviderRequest](x: Self) {
     
-    @scala.inline
-    def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
+    inline def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceProviderType(value: ConferenceProviderType): Self = StObject.set(x, "ConferenceProviderType", value.asInstanceOf[js.Any])
+    inline def setConferenceProviderType(value: ConferenceProviderType): Self = StObject.set(x, "ConferenceProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPDialIn(value: IPDialIn): Self = StObject.set(x, "IPDialIn", value.asInstanceOf[js.Any])
+    inline def setIPDialIn(value: IPDialIn): Self = StObject.set(x, "IPDialIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPDialInUndefined: Self = StObject.set(x, "IPDialIn", js.undefined)
+    inline def setIPDialInUndefined: Self = StObject.set(x, "IPDialIn", js.undefined)
     
-    @scala.inline
-    def setMeetingSetting(value: MeetingSetting): Self = StObject.set(x, "MeetingSetting", value.asInstanceOf[js.Any])
+    inline def setMeetingSetting(value: MeetingSetting): Self = StObject.set(x, "MeetingSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPSTNDialIn(value: PSTNDialIn): Self = StObject.set(x, "PSTNDialIn", value.asInstanceOf[js.Any])
+    inline def setPSTNDialIn(value: PSTNDialIn): Self = StObject.set(x, "PSTNDialIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPSTNDialInUndefined: Self = StObject.set(x, "PSTNDialIn", js.undefined)
+    inline def setPSTNDialInUndefined: Self = StObject.set(x, "PSTNDialIn", js.undefined)
   }
 }

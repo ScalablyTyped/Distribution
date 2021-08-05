@@ -12,16 +12,13 @@ trait SetVersionDeferral extends StObject {
 }
 object SetVersionDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): SetVersionDeferral = {
+  inline def apply(complete: () => Unit): SetVersionDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[SetVersionDeferral]
   }
   
-  @scala.inline
-  implicit class SetVersionDeferralMutableBuilder[Self <: SetVersionDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: SetVersionDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

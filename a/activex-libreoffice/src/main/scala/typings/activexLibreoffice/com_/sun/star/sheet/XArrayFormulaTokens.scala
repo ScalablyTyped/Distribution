@@ -20,8 +20,7 @@ trait XArrayFormulaTokens extends StObject {
 }
 object XArrayFormulaTokens {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ArrayTokens: SafeArray[FormulaToken],
     getArrayTokens: () => SafeArray[FormulaToken],
     setArrayTokens: SeqEquiv[FormulaToken] => Unit
@@ -30,16 +29,12 @@ object XArrayFormulaTokens {
     __obj.asInstanceOf[XArrayFormulaTokens]
   }
   
-  @scala.inline
-  implicit class XArrayFormulaTokensMutableBuilder[Self <: XArrayFormulaTokens] (val x: Self) extends AnyVal {
+  extension [Self <: XArrayFormulaTokens](x: Self) {
     
-    @scala.inline
-    def setArrayTokens(value: SafeArray[FormulaToken]): Self = StObject.set(x, "ArrayTokens", value.asInstanceOf[js.Any])
+    inline def setArrayTokens(value: SafeArray[FormulaToken]): Self = StObject.set(x, "ArrayTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetArrayTokens(value: () => SafeArray[FormulaToken]): Self = StObject.set(x, "getArrayTokens", js.Any.fromFunction0(value))
+    inline def setGetArrayTokens(value: () => SafeArray[FormulaToken]): Self = StObject.set(x, "getArrayTokens", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetArrayTokens(value: SeqEquiv[FormulaToken] => Unit): Self = StObject.set(x, "setArrayTokens", js.Any.fromFunction1(value))
+    inline def setSetArrayTokens(value: SeqEquiv[FormulaToken] => Unit): Self = StObject.set(x, "setArrayTokens", js.Any.fromFunction1(value))
   }
 }

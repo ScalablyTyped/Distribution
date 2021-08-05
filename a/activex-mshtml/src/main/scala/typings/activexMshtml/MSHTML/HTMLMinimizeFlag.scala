@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLMinimizeFlag extends StObject
 object HTMLMinimizeFlag {
   
-  @scala.inline
-  def HTMLMinimizeFlagNo: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLMinimizeFlagNo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLMinimizeFlagYes: `131072` = 131072.asInstanceOf[`131072`]
+  inline def HTMLMinimizeFlagYes: `131072` = 131072.asInstanceOf[`131072`]
   
-  @scala.inline
-  def HTMLMinimizeFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLMinimizeFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -13,19 +13,15 @@ trait StartAssociationsOnceRequest extends StObject {
 }
 object StartAssociationsOnceRequest {
   
-  @scala.inline
-  def apply(AssociationIds: AssociationIdList): StartAssociationsOnceRequest = {
+  inline def apply(AssociationIds: AssociationIdList): StartAssociationsOnceRequest = {
     val __obj = js.Dynamic.literal(AssociationIds = AssociationIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAssociationsOnceRequest]
   }
   
-  @scala.inline
-  implicit class StartAssociationsOnceRequestMutableBuilder[Self <: StartAssociationsOnceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartAssociationsOnceRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationIds(value: AssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
+    inline def setAssociationIds(value: AssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdsVarargs(value: AssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
+    inline def setAssociationIdsVarargs(value: AssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
   }
 }

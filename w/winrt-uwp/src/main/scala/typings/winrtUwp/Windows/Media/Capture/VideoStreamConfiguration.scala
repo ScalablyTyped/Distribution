@@ -16,19 +16,15 @@ trait VideoStreamConfiguration extends StObject {
 }
 object VideoStreamConfiguration {
   
-  @scala.inline
-  def apply(inputProperties: VideoEncodingProperties, outputProperties: VideoEncodingProperties): VideoStreamConfiguration = {
+  inline def apply(inputProperties: VideoEncodingProperties, outputProperties: VideoEncodingProperties): VideoStreamConfiguration = {
     val __obj = js.Dynamic.literal(inputProperties = inputProperties.asInstanceOf[js.Any], outputProperties = outputProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoStreamConfiguration]
   }
   
-  @scala.inline
-  implicit class VideoStreamConfigurationMutableBuilder[Self <: VideoStreamConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VideoStreamConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputProperties(value: VideoEncodingProperties): Self = StObject.set(x, "inputProperties", value.asInstanceOf[js.Any])
+    inline def setInputProperties(value: VideoEncodingProperties): Self = StObject.set(x, "inputProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputProperties(value: VideoEncodingProperties): Self = StObject.set(x, "outputProperties", value.asInstanceOf[js.Any])
+    inline def setOutputProperties(value: VideoEncodingProperties): Self = StObject.set(x, "outputProperties", value.asInstanceOf[js.Any])
   }
 }

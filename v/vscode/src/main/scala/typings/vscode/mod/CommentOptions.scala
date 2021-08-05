@@ -18,25 +18,19 @@ trait CommentOptions extends StObject {
 }
 object CommentOptions {
   
-  @scala.inline
-  def apply(): CommentOptions = {
+  inline def apply(): CommentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentOptions]
   }
   
-  @scala.inline
-  implicit class CommentOptionsMutableBuilder[Self <: CommentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommentOptions](x: Self) {
     
-    @scala.inline
-    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
   }
 }

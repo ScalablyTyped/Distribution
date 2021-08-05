@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
+  inline def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
   
   @JSImport("metascraper-spotify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidUrl(config: Url): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUrl")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidUrl(config: Url): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUrl")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -26,27 +26,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _SCHEMADERIVATIONMETHOD extends StObject
 object _SCHEMADERIVATIONMETHOD {
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_ALL: `255` = 255.asInstanceOf[`255`]
+  inline def SCHEMADERIVATIONMETHOD_ALL: `255` = 255.asInstanceOf[`255`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_EMPTY: `0` = 0.asInstanceOf[`0`]
+  inline def SCHEMADERIVATIONMETHOD_EMPTY: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_EXTENSION: `2` = 2.asInstanceOf[`2`]
+  inline def SCHEMADERIVATIONMETHOD_EXTENSION: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_LIST: `8` = 8.asInstanceOf[`8`]
+  inline def SCHEMADERIVATIONMETHOD_LIST: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_NONE: `256` = 256.asInstanceOf[`256`]
+  inline def SCHEMADERIVATIONMETHOD_NONE: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_RESTRICTION: `4` = 4.asInstanceOf[`4`]
+  inline def SCHEMADERIVATIONMETHOD_RESTRICTION: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_SUBSTITUTION: `1` = 1.asInstanceOf[`1`]
+  inline def SCHEMADERIVATIONMETHOD_SUBSTITUTION: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SCHEMADERIVATIONMETHOD_UNION: `16` = 16.asInstanceOf[`16`]
+  inline def SCHEMADERIVATIONMETHOD_UNION: `16` = 16.asInstanceOf[`16`]
 }

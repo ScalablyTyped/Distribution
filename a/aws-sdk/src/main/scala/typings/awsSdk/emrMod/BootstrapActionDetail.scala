@@ -13,19 +13,15 @@ trait BootstrapActionDetail extends StObject {
 }
 object BootstrapActionDetail {
   
-  @scala.inline
-  def apply(): BootstrapActionDetail = {
+  inline def apply(): BootstrapActionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BootstrapActionDetail]
   }
   
-  @scala.inline
-  implicit class BootstrapActionDetailMutableBuilder[Self <: BootstrapActionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapActionDetail](x: Self) {
     
-    @scala.inline
-    def setBootstrapActionConfig(value: BootstrapActionConfig): Self = StObject.set(x, "BootstrapActionConfig", value.asInstanceOf[js.Any])
+    inline def setBootstrapActionConfig(value: BootstrapActionConfig): Self = StObject.set(x, "BootstrapActionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapActionConfigUndefined: Self = StObject.set(x, "BootstrapActionConfig", js.undefined)
+    inline def setBootstrapActionConfigUndefined: Self = StObject.set(x, "BootstrapActionConfig", js.undefined)
   }
 }

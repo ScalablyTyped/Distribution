@@ -26,37 +26,27 @@ trait GoogleActionsV2ExpectedInput extends StObject {
 }
 object GoogleActionsV2ExpectedInput {
   
-  @scala.inline
-  def apply(): GoogleActionsV2ExpectedInput = {
+  inline def apply(): GoogleActionsV2ExpectedInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2ExpectedInput]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2ExpectedInputMutableBuilder[Self <: GoogleActionsV2ExpectedInput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2ExpectedInput](x: Self) {
     
-    @scala.inline
-    def setInputPrompt(value: GoogleActionsV2InputPrompt): Self = StObject.set(x, "inputPrompt", value.asInstanceOf[js.Any])
+    inline def setInputPrompt(value: GoogleActionsV2InputPrompt): Self = StObject.set(x, "inputPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPromptUndefined: Self = StObject.set(x, "inputPrompt", js.undefined)
+    inline def setInputPromptUndefined: Self = StObject.set(x, "inputPrompt", js.undefined)
     
-    @scala.inline
-    def setPossibleIntents(value: js.Array[GoogleActionsV2ExpectedIntent]): Self = StObject.set(x, "possibleIntents", value.asInstanceOf[js.Any])
+    inline def setPossibleIntents(value: js.Array[GoogleActionsV2ExpectedIntent]): Self = StObject.set(x, "possibleIntents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleIntentsUndefined: Self = StObject.set(x, "possibleIntents", js.undefined)
+    inline def setPossibleIntentsUndefined: Self = StObject.set(x, "possibleIntents", js.undefined)
     
-    @scala.inline
-    def setPossibleIntentsVarargs(value: GoogleActionsV2ExpectedIntent*): Self = StObject.set(x, "possibleIntents", js.Array(value :_*))
+    inline def setPossibleIntentsVarargs(value: GoogleActionsV2ExpectedIntent*): Self = StObject.set(x, "possibleIntents", js.Array(value :_*))
     
-    @scala.inline
-    def setSpeechBiasingHints(value: js.Array[String]): Self = StObject.set(x, "speechBiasingHints", value.asInstanceOf[js.Any])
+    inline def setSpeechBiasingHints(value: js.Array[String]): Self = StObject.set(x, "speechBiasingHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
+    inline def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
     
-    @scala.inline
-    def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
+    inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
   }
 }

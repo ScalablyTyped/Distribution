@@ -29,31 +29,23 @@ trait requestPolymerPaymentOptions
 }
 object requestPolymerPaymentOptions {
   
-  @scala.inline
-  def apply(orderInfo: orderInfoOptions): requestPolymerPaymentOptions = {
+  inline def apply(orderInfo: orderInfoOptions): requestPolymerPaymentOptions = {
     val __obj = js.Dynamic.literal(orderInfo = orderInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[requestPolymerPaymentOptions]
   }
   
-  @scala.inline
-  implicit class requestPolymerPaymentOptionsMutableBuilder[Self <: requestPolymerPaymentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: requestPolymerPaymentOptions](x: Self) {
     
-    @scala.inline
-    def setBannedChannels(value: js.Array[String]): Self = StObject.set(x, "bannedChannels", value.asInstanceOf[js.Any])
+    inline def setBannedChannels(value: js.Array[String]): Self = StObject.set(x, "bannedChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannedChannelsUndefined: Self = StObject.set(x, "bannedChannels", js.undefined)
+    inline def setBannedChannelsUndefined: Self = StObject.set(x, "bannedChannels", js.undefined)
     
-    @scala.inline
-    def setBannedChannelsVarargs(value: String*): Self = StObject.set(x, "bannedChannels", js.Array(value :_*))
+    inline def setBannedChannelsVarargs(value: String*): Self = StObject.set(x, "bannedChannels", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderInfo(value: orderInfoOptions): Self = StObject.set(x, "orderInfo", value.asInstanceOf[js.Any])
+    inline def setOrderInfo(value: orderInfoOptions): Self = StObject.set(x, "orderInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ typings.baiduApp.anon.AuthSetting => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ typings.baiduApp.anon.AuthSetting => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -13,18 +13,15 @@ object i18n {
   @JSImport("sinon-chrome", "i18n.getAcceptLanguages")
   @js.native
   def getAcceptLanguages: SinonChromeStub = js.native
-  @scala.inline
-  def getAcceptLanguages_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAcceptLanguages")(x.asInstanceOf[js.Any])
+  inline def getAcceptLanguages_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAcceptLanguages")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "i18n.getMessage")
   @js.native
   def getMessage: SinonChromeStub = js.native
-  @scala.inline
-  def getMessage_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMessage")(x.asInstanceOf[js.Any])
+  inline def getMessage_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMessage")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "i18n.getUILanguage")
   @js.native
   def getUILanguage: SinonChromeStub = js.native
-  @scala.inline
-  def getUILanguage_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getUILanguage")(x.asInstanceOf[js.Any])
+  inline def getUILanguage_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getUILanguage")(x.asInstanceOf[js.Any])
 }

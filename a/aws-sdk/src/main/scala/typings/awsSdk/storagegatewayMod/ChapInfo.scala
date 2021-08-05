@@ -28,37 +28,27 @@ trait ChapInfo extends StObject {
 }
 object ChapInfo {
   
-  @scala.inline
-  def apply(): ChapInfo = {
+  inline def apply(): ChapInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChapInfo]
   }
   
-  @scala.inline
-  implicit class ChapInfoMutableBuilder[Self <: ChapInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChapInfo](x: Self) {
     
-    @scala.inline
-    def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
+    inline def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorNameUndefined: Self = StObject.set(x, "InitiatorName", js.undefined)
+    inline def setInitiatorNameUndefined: Self = StObject.set(x, "InitiatorName", js.undefined)
     
-    @scala.inline
-    def setSecretToAuthenticateInitiator(value: ChapSecret): Self = StObject.set(x, "SecretToAuthenticateInitiator", value.asInstanceOf[js.Any])
+    inline def setSecretToAuthenticateInitiator(value: ChapSecret): Self = StObject.set(x, "SecretToAuthenticateInitiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretToAuthenticateInitiatorUndefined: Self = StObject.set(x, "SecretToAuthenticateInitiator", js.undefined)
+    inline def setSecretToAuthenticateInitiatorUndefined: Self = StObject.set(x, "SecretToAuthenticateInitiator", js.undefined)
     
-    @scala.inline
-    def setSecretToAuthenticateTarget(value: ChapSecret): Self = StObject.set(x, "SecretToAuthenticateTarget", value.asInstanceOf[js.Any])
+    inline def setSecretToAuthenticateTarget(value: ChapSecret): Self = StObject.set(x, "SecretToAuthenticateTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretToAuthenticateTargetUndefined: Self = StObject.set(x, "SecretToAuthenticateTarget", js.undefined)
+    inline def setSecretToAuthenticateTargetUndefined: Self = StObject.set(x, "SecretToAuthenticateTarget", js.undefined)
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
+    inline def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
   }
 }

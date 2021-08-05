@@ -11,16 +11,13 @@ trait IROOM_ADD extends StObject {
 }
 object IROOM_ADD {
   
-  @scala.inline
-  def apply(room: SFSRoom): IROOM_ADD = {
+  inline def apply(room: SFSRoom): IROOM_ADD = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[IROOM_ADD]
   }
   
-  @scala.inline
-  implicit class IROOM_ADDMutableBuilder[Self <: IROOM_ADD] (val x: Self) extends AnyVal {
+  extension [Self <: IROOM_ADD](x: Self) {
     
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

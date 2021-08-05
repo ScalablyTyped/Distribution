@@ -15,19 +15,15 @@ trait TypeofForm extends StObject {
 }
 object TypeofForm {
   
-  @scala.inline
-  def apply(extend: js.Object => Form, fn: Form): TypeofForm = {
+  inline def apply(extend: js.Object => Form, fn: Form): TypeofForm = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofForm]
   }
   
-  @scala.inline
-  implicit class TypeofFormMutableBuilder[Self <: TypeofForm] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofForm](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Form): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Form): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Form): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Form): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

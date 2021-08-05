@@ -17,31 +17,23 @@ trait MembershipsDurationAtLevel extends StObject {
 }
 object MembershipsDurationAtLevel {
   
-  @scala.inline
-  def apply(): MembershipsDurationAtLevel = {
+  inline def apply(): MembershipsDurationAtLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MembershipsDurationAtLevel]
   }
   
-  @scala.inline
-  implicit class MembershipsDurationAtLevelMutableBuilder[Self <: MembershipsDurationAtLevel] (val x: Self) extends AnyVal {
+  extension [Self <: MembershipsDurationAtLevel](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMemberSince(value: String): Self = StObject.set(x, "memberSince", value.asInstanceOf[js.Any])
+    inline def setMemberSince(value: String): Self = StObject.set(x, "memberSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberSinceUndefined: Self = StObject.set(x, "memberSince", js.undefined)
+    inline def setMemberSinceUndefined: Self = StObject.set(x, "memberSince", js.undefined)
     
-    @scala.inline
-    def setMemberTotalDurationMonths(value: Double): Self = StObject.set(x, "memberTotalDurationMonths", value.asInstanceOf[js.Any])
+    inline def setMemberTotalDurationMonths(value: Double): Self = StObject.set(x, "memberTotalDurationMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberTotalDurationMonthsUndefined: Self = StObject.set(x, "memberTotalDurationMonths", js.undefined)
+    inline def setMemberTotalDurationMonthsUndefined: Self = StObject.set(x, "memberTotalDurationMonths", js.undefined)
   }
 }

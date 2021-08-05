@@ -14,22 +14,17 @@ trait Sheet extends StObject {
 }
 object Sheet {
   
-  @scala.inline
-  def apply(Description: String, Sheet: String, Success: Boolean): Sheet = {
+  inline def apply(Description: String, Sheet: String, Success: Boolean): Sheet = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any], Success = Success.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet]
   }
   
-  @scala.inline
-  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
+  extension [Self <: Sheet](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: String): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: String): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
   }
 }

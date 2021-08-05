@@ -13,22 +13,17 @@ trait ViewabilityConfigCallbackPair extends StObject {
 }
 object ViewabilityConfigCallbackPair {
   
-  @scala.inline
-  def apply(viewabilityConfig: ViewabilityConfig): ViewabilityConfigCallbackPair = {
+  inline def apply(viewabilityConfig: ViewabilityConfig): ViewabilityConfigCallbackPair = {
     val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig.asInstanceOf[js.Any], onViewableItemsChanged = null)
     __obj.asInstanceOf[ViewabilityConfigCallbackPair]
   }
   
-  @scala.inline
-  implicit class ViewabilityConfigCallbackPairMutableBuilder[Self <: ViewabilityConfigCallbackPair] (val x: Self) extends AnyVal {
+  extension [Self <: ViewabilityConfigCallbackPair](x: Self) {
     
-    @scala.inline
-    def setOnViewableItemsChanged(value: /* info */ Changed => Unit): Self = StObject.set(x, "onViewableItemsChanged", js.Any.fromFunction1(value))
+    inline def setOnViewableItemsChanged(value: /* info */ Changed => Unit): Self = StObject.set(x, "onViewableItemsChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewableItemsChangedNull: Self = StObject.set(x, "onViewableItemsChanged", null)
+    inline def setOnViewableItemsChangedNull: Self = StObject.set(x, "onViewableItemsChanged", null)
     
-    @scala.inline
-    def setViewabilityConfig(value: ViewabilityConfig): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+    inline def setViewabilityConfig(value: ViewabilityConfig): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
   }
 }

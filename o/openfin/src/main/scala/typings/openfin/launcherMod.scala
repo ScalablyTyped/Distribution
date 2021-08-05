@@ -26,13 +26,13 @@ object launcherMod {
     /* CompleteClass */
     override def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var macLaunch: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var os: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var winLaunch: js.Any = js.native
   }
   /* static members */
@@ -42,8 +42,7 @@ object launcherMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def IS_SUPPORTED(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IS_SUPPORTED")().asInstanceOf[Boolean]
+    inline def IS_SUPPORTED(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IS_SUPPORTED")().asInstanceOf[Boolean]
   }
   
   trait Launcher extends StObject {
@@ -56,18 +55,17 @@ object launcherMod {
     
     def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess]
     
-    var macLaunch: js.Any
+    /* private */ var macLaunch: js.Any
     
     var nixConfig: js.UndefOr[js.Any] = js.undefined
     
-    var os: js.Any
+    /* private */ var os: js.Any
     
-    var winLaunch: js.Any
+    /* private */ var winLaunch: js.Any
   }
   object Launcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Installer_Work_Dir: String,
       OpenFin_Installer: String,
       Security_Realm_Config_Key: String,
@@ -80,35 +78,25 @@ object launcherMod {
       __obj.asInstanceOf[Launcher]
     }
     
-    @scala.inline
-    implicit class LauncherMutableBuilder[Self <: Launcher] (val x: Self) extends AnyVal {
+    extension [Self <: Launcher](x: Self) {
       
-      @scala.inline
-      def setInstaller_Work_Dir(value: String): Self = StObject.set(x, "Installer_Work_Dir", value.asInstanceOf[js.Any])
+      inline def setInstaller_Work_Dir(value: String): Self = StObject.set(x, "Installer_Work_Dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunch(value: (ConfigWithRuntime, String, String) => js.Promise[ChildProcess]): Self = StObject.set(x, "launch", js.Any.fromFunction3(value))
+      inline def setLaunch(value: (ConfigWithRuntime, String, String) => js.Promise[ChildProcess]): Self = StObject.set(x, "launch", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMacLaunch(value: js.Any): Self = StObject.set(x, "macLaunch", value.asInstanceOf[js.Any])
+      inline def setMacLaunch(value: js.Any): Self = StObject.set(x, "macLaunch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNixConfig(value: js.Any): Self = StObject.set(x, "nixConfig", value.asInstanceOf[js.Any])
+      inline def setNixConfig(value: js.Any): Self = StObject.set(x, "nixConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNixConfigUndefined: Self = StObject.set(x, "nixConfig", js.undefined)
+      inline def setNixConfigUndefined: Self = StObject.set(x, "nixConfig", js.undefined)
       
-      @scala.inline
-      def setOpenFin_Installer(value: String): Self = StObject.set(x, "OpenFin_Installer", value.asInstanceOf[js.Any])
+      inline def setOpenFin_Installer(value: String): Self = StObject.set(x, "OpenFin_Installer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: js.Any): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: js.Any): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity_Realm_Config_Key(value: String): Self = StObject.set(x, "Security_Realm_Config_Key", value.asInstanceOf[js.Any])
+      inline def setSecurity_Realm_Config_Key(value: String): Self = StObject.set(x, "Security_Realm_Config_Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWinLaunch(value: js.Any): Self = StObject.set(x, "winLaunch", value.asInstanceOf[js.Any])
+      inline def setWinLaunch(value: js.Any): Self = StObject.set(x, "winLaunch", value.asInstanceOf[js.Any])
     }
   }
 }

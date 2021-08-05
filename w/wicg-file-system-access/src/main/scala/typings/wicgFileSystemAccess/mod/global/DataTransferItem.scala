@@ -10,16 +10,13 @@ trait DataTransferItem extends StObject {
 }
 object DataTransferItem {
   
-  @scala.inline
-  def apply(getAsFileSystemHandle: () => js.Promise[FileSystemHandle | Null]): DataTransferItem = {
+  inline def apply(getAsFileSystemHandle: () => js.Promise[FileSystemHandle | Null]): DataTransferItem = {
     val __obj = js.Dynamic.literal(getAsFileSystemHandle = js.Any.fromFunction0(getAsFileSystemHandle))
     __obj.asInstanceOf[DataTransferItem]
   }
   
-  @scala.inline
-  implicit class DataTransferItemMutableBuilder[Self <: DataTransferItem] (val x: Self) extends AnyVal {
+  extension [Self <: DataTransferItem](x: Self) {
     
-    @scala.inline
-    def setGetAsFileSystemHandle(value: () => js.Promise[FileSystemHandle | Null]): Self = StObject.set(x, "getAsFileSystemHandle", js.Any.fromFunction0(value))
+    inline def setGetAsFileSystemHandle(value: () => js.Promise[FileSystemHandle | Null]): Self = StObject.set(x, "getAsFileSystemHandle", js.Any.fromFunction0(value))
   }
 }

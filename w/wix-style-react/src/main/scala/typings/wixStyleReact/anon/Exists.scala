@@ -16,8 +16,7 @@ trait Exists extends StObject {
 }
 object Exists {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exists: () => Boolean,
     open: () => ReturnType[
       js.Function1[/* options */ js.UndefOr[FocusOptionsPolyfill], FocusOptionsPolyfill]
@@ -27,14 +26,11 @@ object Exists {
     __obj.asInstanceOf[Exists]
   }
   
-  @scala.inline
-  implicit class ExistsMutableBuilder[Self <: Exists] (val x: Self) extends AnyVal {
+  extension [Self <: Exists](x: Self) {
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(
+    inline def setOpen(
       value: () => ReturnType[
           js.Function1[/* options */ js.UndefOr[FocusOptionsPolyfill], FocusOptionsPolyfill]
         ]

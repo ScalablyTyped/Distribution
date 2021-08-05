@@ -18,31 +18,23 @@ trait DropTargetEvent
 }
 object DropTargetEvent {
   
-  @scala.inline
-  def apply(): DropTargetEvent = {
+  inline def apply(): DropTargetEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropTargetEvent]
   }
   
-  @scala.inline
-  implicit class DropTargetEventMutableBuilder[Self <: DropTargetEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetEvent](x: Self) {
     
-    @scala.inline
-    def setDraggable(value: Draggable): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Draggable): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    @scala.inline
-    def setDropTarget(value: JQuery): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    inline def setDropTarget(value: JQuery): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     
-    @scala.inline
-    def setSender(value: DropTarget): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: DropTarget): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
   }
 }

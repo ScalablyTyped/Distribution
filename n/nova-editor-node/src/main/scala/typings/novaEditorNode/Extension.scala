@@ -23,8 +23,7 @@ trait Extension extends StObject {
 }
 object Extension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     globalStoragePath: String,
     identifier: String,
     name: String,
@@ -37,28 +36,20 @@ object Extension {
     __obj.asInstanceOf[Extension]
   }
   
-  @scala.inline
-  implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+  extension [Self <: Extension](x: Self) {
     
-    @scala.inline
-    def setGlobalStoragePath(value: String): Self = StObject.set(x, "globalStoragePath", value.asInstanceOf[js.Any])
+    inline def setGlobalStoragePath(value: String): Self = StObject.set(x, "globalStoragePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceStoragePath(value: String): Self = StObject.set(x, "workspaceStoragePath", value.asInstanceOf[js.Any])
+    inline def setWorkspaceStoragePath(value: String): Self = StObject.set(x, "workspaceStoragePath", value.asInstanceOf[js.Any])
   }
 }

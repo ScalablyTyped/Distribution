@@ -65,8 +65,7 @@ object tabNodeMod extends Shortcut {
   }
   object TabNodeProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       id: String,
       onFocus: FocusEvent[Element] => Unit,
@@ -80,80 +79,55 @@ object tabNodeMod extends Shortcut {
       __obj.asInstanceOf[TabNodeProps]
     }
     
-    @scala.inline
-    implicit class TabNodePropsMutableBuilder[Self <: TabNodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabNodeProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
-      @scala.inline
-      def setEditable(value: EditableConfig): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: EditableConfig): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+      inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: /* e */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
+      inline def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnResize(value: (/* width */ Double, /* height */ Double, /* left */ Double, /* top */ Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction4(value))
+      inline def setOnResize(value: (/* width */ Double, /* height */ Double, /* left */ Double, /* top */ Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAriaLabel(value: String): Self = StObject.set(x, "removeAriaLabel", value.asInstanceOf[js.Any])
+      inline def setRemoveAriaLabel(value: String): Self = StObject.set(x, "removeAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAriaLabelUndefined: Self = StObject.set(x, "removeAriaLabel", js.undefined)
+      inline def setRemoveAriaLabelUndefined: Self = StObject.set(x, "removeAriaLabel", js.undefined)
       
-      @scala.inline
-      def setRemoveIcon(value: ReactNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(value: ReactNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      @scala.inline
-      def setRenderWrapper(value: /* node */ ReactElement => ReactElement): Self = StObject.set(x, "renderWrapper", js.Any.fromFunction1(value))
+      inline def setRenderWrapper(value: /* node */ ReactElement => ReactElement): Self = StObject.set(x, "renderWrapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderWrapperUndefined: Self = StObject.set(x, "renderWrapper", js.undefined)
+      inline def setRenderWrapperUndefined: Self = StObject.set(x, "renderWrapper", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+      inline def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarGutter(value: Double): Self = StObject.set(x, "tabBarGutter", value.asInstanceOf[js.Any])
+      inline def setTabBarGutter(value: Double): Self = StObject.set(x, "tabBarGutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarGutterUndefined: Self = StObject.set(x, "tabBarGutter", js.undefined)
+      inline def setTabBarGutterUndefined: Self = StObject.set(x, "tabBarGutter", js.undefined)
       
-      @scala.inline
-      def setTabPosition(value: TabPosition): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
+      inline def setTabPosition(value: TabPosition): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
     }
   }
   

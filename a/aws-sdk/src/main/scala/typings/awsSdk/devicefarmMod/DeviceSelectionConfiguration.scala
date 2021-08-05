@@ -18,22 +18,17 @@ trait DeviceSelectionConfiguration extends StObject {
 }
 object DeviceSelectionConfiguration {
   
-  @scala.inline
-  def apply(filters: DeviceFilters, maxDevices: Integer): DeviceSelectionConfiguration = {
+  inline def apply(filters: DeviceFilters, maxDevices: Integer): DeviceSelectionConfiguration = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], maxDevices = maxDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceSelectionConfiguration]
   }
   
-  @scala.inline
-  implicit class DeviceSelectionConfigurationMutableBuilder[Self <: DeviceSelectionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSelectionConfiguration](x: Self) {
     
-    @scala.inline
-    def setFilters(value: DeviceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: DeviceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
+    inline def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
   }
 }

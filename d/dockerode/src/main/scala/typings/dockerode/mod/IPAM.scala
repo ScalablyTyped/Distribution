@@ -16,31 +16,23 @@ trait IPAM extends StObject {
 }
 object IPAM {
   
-  @scala.inline
-  def apply(Driver: String): IPAM = {
+  inline def apply(Driver: String): IPAM = {
     val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPAM]
   }
   
-  @scala.inline
-  implicit class IPAMMutableBuilder[Self <: IPAM] (val x: Self) extends AnyVal {
+  extension [Self <: IPAM](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
     
-    @scala.inline
-    def setConfigVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "Config", js.Array(value :_*))
+    inline def setConfigVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "Config", js.Array(value :_*))
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
   }
 }

@@ -282,16 +282,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(search: Search): JQuery = {
+  inline def apply(search: Search): JQuery = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

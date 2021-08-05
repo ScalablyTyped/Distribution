@@ -15,17 +15,14 @@ trait SequentialScale
 }
 object SequentialScale {
   
-  @scala.inline
-  def apply(name: String): SequentialScale = {
+  inline def apply(name: String): SequentialScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sequential")
     __obj.asInstanceOf[SequentialScale]
   }
   
-  @scala.inline
-  implicit class SequentialScaleMutableBuilder[Self <: SequentialScale] (val x: Self) extends AnyVal {
+  extension [Self <: SequentialScale](x: Self) {
     
-    @scala.inline
-    def setType(value: sequential): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sequential): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

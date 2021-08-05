@@ -16,16 +16,13 @@ trait TextParagraph extends StObject {
 }
 object TextParagraph {
   
-  @scala.inline
-  def apply(setText: String => TextParagraph): TextParagraph = {
+  inline def apply(setText: String => TextParagraph): TextParagraph = {
     val __obj = js.Dynamic.literal(setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[TextParagraph]
   }
   
-  @scala.inline
-  implicit class TextParagraphMutableBuilder[Self <: TextParagraph] (val x: Self) extends AnyVal {
+  extension [Self <: TextParagraph](x: Self) {
     
-    @scala.inline
-    def setSetText(value: String => TextParagraph): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => TextParagraph): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

@@ -10,8 +10,6 @@ object useKeeperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useKeeper[T](arg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeeper")(arg.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def useKeeper[T](arg: T, refresh: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeeper")(arg.asInstanceOf[js.Any], refresh.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def useKeeper[T](arg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeeper")(arg.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useKeeper[T](arg: T, refresh: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeeper")(arg.asInstanceOf[js.Any], refresh.asInstanceOf[js.Any])).asInstanceOf[T]
 }

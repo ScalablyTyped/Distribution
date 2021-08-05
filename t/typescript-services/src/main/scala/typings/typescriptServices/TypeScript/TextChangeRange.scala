@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextChangeRange extends StObject {
   
-  var _newLength: js.Any
+  /* private */ var _newLength: js.Any
   
-  var _span: js.Any
+  /* private */ var _span: js.Any
   
   def isUnchanged(): Boolean
   
@@ -20,8 +20,7 @@ trait TextChangeRange extends StObject {
 }
 object TextChangeRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _newLength: js.Any,
     _span: js.Any,
     isUnchanged: () => Boolean,
@@ -33,25 +32,18 @@ object TextChangeRange {
     __obj.asInstanceOf[TextChangeRange]
   }
   
-  @scala.inline
-  implicit class TextChangeRangeMutableBuilder[Self <: TextChangeRange] (val x: Self) extends AnyVal {
+  extension [Self <: TextChangeRange](x: Self) {
     
-    @scala.inline
-    def setIsUnchanged(value: () => Boolean): Self = StObject.set(x, "isUnchanged", js.Any.fromFunction0(value))
+    inline def setIsUnchanged(value: () => Boolean): Self = StObject.set(x, "isUnchanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLength(value: () => Double): Self = StObject.set(x, "newLength", js.Any.fromFunction0(value))
+    inline def setNewLength(value: () => Double): Self = StObject.set(x, "newLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSpan(value: () => TextSpan): Self = StObject.set(x, "newSpan", js.Any.fromFunction0(value))
+    inline def setNewSpan(value: () => TextSpan): Self = StObject.set(x, "newSpan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSpan(value: () => TextSpan): Self = StObject.set(x, "span", js.Any.fromFunction0(value))
+    inline def setSpan(value: () => TextSpan): Self = StObject.set(x, "span", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_newLength(value: js.Any): Self = StObject.set(x, "_newLength", value.asInstanceOf[js.Any])
+    inline def set_newLength(value: js.Any): Self = StObject.set(x, "_newLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_span(value: js.Any): Self = StObject.set(x, "_span", value.asInstanceOf[js.Any])
+    inline def set_span(value: js.Any): Self = StObject.set(x, "_span", value.asInstanceOf[js.Any])
   }
 }

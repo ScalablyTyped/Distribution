@@ -18,8 +18,7 @@ trait ParametersAppsCreateInstallationAccessTokenEndpoint extends StObject {
 }
 object ParametersAppsCreateInstallationAccessTokenEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsCreateInstallationAccessTokenEndpoint,
     request: AppsCreateInstallationAccessTokenRequestOptions,
     response: OctokitResponse[AppsCreateInstallationAccessTokenResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsCreateInstallationAccessTokenEndpoint {
     __obj.asInstanceOf[ParametersAppsCreateInstallationAccessTokenEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsCreateInstallationAccessTokenEndpointMutableBuilder[Self <: ParametersAppsCreateInstallationAccessTokenEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsCreateInstallationAccessTokenEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsCreateInstallationAccessTokenEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsCreateInstallationAccessTokenEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsCreateInstallationAccessTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsCreateInstallationAccessTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsCreateInstallationAccessTokenResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsCreateInstallationAccessTokenResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

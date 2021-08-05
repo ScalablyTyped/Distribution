@@ -31,9 +31,9 @@ object friendshipRepositoryMod {
     def block(id: Double): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native
     def block(id: Double, mediaIdAttribution: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native
     
-    var change: js.Any = js.native
+    /* private */ var change: js.Any = js.native
     
-    var changeMuteFromFollow: js.Any = js.native
+    /* private */ var changeMuteFromFollow: js.Any = js.native
     
     def create(id: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native
     def create(id: String, mediaIdAttribution: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native

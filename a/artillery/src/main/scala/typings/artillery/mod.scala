@@ -22,17 +22,14 @@ object mod {
   }
   object ScenarioContext {
     
-    @scala.inline
-    def apply(vars: StringDictionary[js.Any]): ScenarioContext = {
+    inline def apply(vars: StringDictionary[js.Any]): ScenarioContext = {
       val __obj = js.Dynamic.literal(vars = vars.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScenarioContext]
     }
     
-    @scala.inline
-    implicit class ScenarioContextMutableBuilder[Self <: ScenarioContext] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioContext](x: Self) {
       
-      @scala.inline
-      def setVars(value: StringDictionary[js.Any]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: StringDictionary[js.Any]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     }
   }
 }

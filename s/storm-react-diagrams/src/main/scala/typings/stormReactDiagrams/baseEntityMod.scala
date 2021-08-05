@@ -54,17 +54,13 @@ object baseEntityMod {
   trait BaseEntityType extends StObject
   object BaseEntityType {
     
-    @scala.inline
-    def link: typings.stormReactDiagrams.stormReactDiagramsStrings.link = "link".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.link]
+    inline def link: typings.stormReactDiagrams.stormReactDiagramsStrings.link = "link".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.link]
     
-    @scala.inline
-    def node: typings.stormReactDiagrams.stormReactDiagramsStrings.node = "node".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.node]
+    inline def node: typings.stormReactDiagrams.stormReactDiagramsStrings.node = "node".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.node]
     
-    @scala.inline
-    def point: typings.stormReactDiagrams.stormReactDiagramsStrings.point = "point".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.point]
+    inline def point: typings.stormReactDiagrams.stormReactDiagramsStrings.point = "point".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.point]
     
-    @scala.inline
-    def port: typings.stormReactDiagrams.stormReactDiagramsStrings.port = "port".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.port]
+    inline def port: typings.stormReactDiagrams.stormReactDiagramsStrings.port = "port".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.port]
   }
   
   trait BaseEvent[T /* <: BaseEntity[BaseListener[js.Any]] */] extends StObject {
@@ -79,8 +75,7 @@ object baseEntityMod {
   }
   object BaseEvent {
     
-    @scala.inline
-    def apply[T /* <: BaseEntity[BaseListener[js.Any]] */](
+    inline def apply[T /* <: BaseEntity[BaseListener[js.Any]] */](
       entity: BaseEntity[BaseListener[js.Any]],
       firing: Boolean,
       id: String,
@@ -90,20 +85,15 @@ object baseEntityMod {
       __obj.asInstanceOf[BaseEvent[T]]
     }
     
-    @scala.inline
-    implicit class BaseEventMutableBuilder[Self <: BaseEvent[?], T /* <: BaseEntity[BaseListener[js.Any]] */] (val x: Self & BaseEvent[T]) extends AnyVal {
+    extension [Self <: BaseEvent[?], T /* <: BaseEntity[BaseListener[js.Any]] */](x: Self & BaseEvent[T]) {
       
-      @scala.inline
-      def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
+      inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     }
   }
   
@@ -113,20 +103,16 @@ object baseEntityMod {
   }
   object BaseListener {
     
-    @scala.inline
-    def apply[T /* <: BaseEntity[BaseListener[js.Any]] */](): BaseListener[T] = {
+    inline def apply[T /* <: BaseEntity[BaseListener[js.Any]] */](): BaseListener[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseListener[T]]
     }
     
-    @scala.inline
-    implicit class BaseListenerMutableBuilder[Self <: BaseListener[?], T /* <: BaseEntity[BaseListener[js.Any]] */] (val x: Self & BaseListener[T]) extends AnyVal {
+    extension [Self <: BaseListener[?], T /* <: BaseEntity[BaseListener[js.Any]] */](x: Self & BaseListener[T]) {
       
-      @scala.inline
-      def setLockChanged(value: /* event */ BaseEvent[T] & Locked => Unit): Self = StObject.set(x, "lockChanged", js.Any.fromFunction1(value))
+      inline def setLockChanged(value: /* event */ BaseEvent[T] & Locked => Unit): Self = StObject.set(x, "lockChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLockChangedUndefined: Self = StObject.set(x, "lockChanged", js.undefined)
+      inline def setLockChangedUndefined: Self = StObject.set(x, "lockChanged", js.undefined)
     }
   }
 }

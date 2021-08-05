@@ -43,58 +43,41 @@ trait GetConfigurationSetResponse extends StObject {
 }
 object GetConfigurationSetResponse {
   
-  @scala.inline
-  def apply(): GetConfigurationSetResponse = {
+  inline def apply(): GetConfigurationSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConfigurationSetResponse]
   }
   
-  @scala.inline
-  implicit class GetConfigurationSetResponseMutableBuilder[Self <: GetConfigurationSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigurationSetResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
+    inline def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
-    @scala.inline
-    def setDeliveryOptions(value: DeliveryOptions): Self = StObject.set(x, "DeliveryOptions", value.asInstanceOf[js.Any])
+    inline def setDeliveryOptions(value: DeliveryOptions): Self = StObject.set(x, "DeliveryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryOptionsUndefined: Self = StObject.set(x, "DeliveryOptions", js.undefined)
+    inline def setDeliveryOptionsUndefined: Self = StObject.set(x, "DeliveryOptions", js.undefined)
     
-    @scala.inline
-    def setReputationOptions(value: ReputationOptions): Self = StObject.set(x, "ReputationOptions", value.asInstanceOf[js.Any])
+    inline def setReputationOptions(value: ReputationOptions): Self = StObject.set(x, "ReputationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReputationOptionsUndefined: Self = StObject.set(x, "ReputationOptions", js.undefined)
+    inline def setReputationOptionsUndefined: Self = StObject.set(x, "ReputationOptions", js.undefined)
     
-    @scala.inline
-    def setSendingOptions(value: SendingOptions): Self = StObject.set(x, "SendingOptions", value.asInstanceOf[js.Any])
+    inline def setSendingOptions(value: SendingOptions): Self = StObject.set(x, "SendingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingOptionsUndefined: Self = StObject.set(x, "SendingOptions", js.undefined)
+    inline def setSendingOptionsUndefined: Self = StObject.set(x, "SendingOptions", js.undefined)
     
-    @scala.inline
-    def setSuppressionOptions(value: SuppressionOptions): Self = StObject.set(x, "SuppressionOptions", value.asInstanceOf[js.Any])
+    inline def setSuppressionOptions(value: SuppressionOptions): Self = StObject.set(x, "SuppressionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressionOptionsUndefined: Self = StObject.set(x, "SuppressionOptions", js.undefined)
+    inline def setSuppressionOptionsUndefined: Self = StObject.set(x, "SuppressionOptions", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
+    inline def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingOptionsUndefined: Self = StObject.set(x, "TrackingOptions", js.undefined)
+    inline def setTrackingOptionsUndefined: Self = StObject.set(x, "TrackingOptions", js.undefined)
   }
 }

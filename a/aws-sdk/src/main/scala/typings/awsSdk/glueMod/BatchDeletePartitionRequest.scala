@@ -28,31 +28,23 @@ trait BatchDeletePartitionRequest extends StObject {
 }
 object BatchDeletePartitionRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, PartitionsToDelete: BatchDeletePartitionValueList, TableName: NameString): BatchDeletePartitionRequest = {
+  inline def apply(DatabaseName: NameString, PartitionsToDelete: BatchDeletePartitionValueList, TableName: NameString): BatchDeletePartitionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], PartitionsToDelete = PartitionsToDelete.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeletePartitionRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeletePartitionRequestMutableBuilder[Self <: BatchDeletePartitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeletePartitionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsToDelete(value: BatchDeletePartitionValueList): Self = StObject.set(x, "PartitionsToDelete", value.asInstanceOf[js.Any])
+    inline def setPartitionsToDelete(value: BatchDeletePartitionValueList): Self = StObject.set(x, "PartitionsToDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsToDeleteVarargs(value: PartitionValueList*): Self = StObject.set(x, "PartitionsToDelete", js.Array(value :_*))
+    inline def setPartitionsToDeleteVarargs(value: PartitionValueList*): Self = StObject.set(x, "PartitionsToDelete", js.Array(value :_*))
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

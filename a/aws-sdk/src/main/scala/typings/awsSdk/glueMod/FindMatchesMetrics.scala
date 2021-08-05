@@ -33,43 +33,31 @@ trait FindMatchesMetrics extends StObject {
 }
 object FindMatchesMetrics {
   
-  @scala.inline
-  def apply(): FindMatchesMetrics = {
+  inline def apply(): FindMatchesMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindMatchesMetrics]
   }
   
-  @scala.inline
-  implicit class FindMatchesMetricsMutableBuilder[Self <: FindMatchesMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: FindMatchesMetrics](x: Self) {
     
-    @scala.inline
-    def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = StObject.set(x, "AreaUnderPRCurve", value.asInstanceOf[js.Any])
+    inline def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = StObject.set(x, "AreaUnderPRCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUnderPRCurveUndefined: Self = StObject.set(x, "AreaUnderPRCurve", js.undefined)
+    inline def setAreaUnderPRCurveUndefined: Self = StObject.set(x, "AreaUnderPRCurve", js.undefined)
     
-    @scala.inline
-    def setConfusionMatrix(value: ConfusionMatrix): Self = StObject.set(x, "ConfusionMatrix", value.asInstanceOf[js.Any])
+    inline def setConfusionMatrix(value: ConfusionMatrix): Self = StObject.set(x, "ConfusionMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfusionMatrixUndefined: Self = StObject.set(x, "ConfusionMatrix", js.undefined)
+    inline def setConfusionMatrixUndefined: Self = StObject.set(x, "ConfusionMatrix", js.undefined)
     
-    @scala.inline
-    def setF1(value: GenericBoundedDouble): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
+    inline def setF1(value: GenericBoundedDouble): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1Undefined: Self = StObject.set(x, "F1", js.undefined)
+    inline def setF1Undefined: Self = StObject.set(x, "F1", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: GenericBoundedDouble): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: GenericBoundedDouble): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
     
-    @scala.inline
-    def setRecall(value: GenericBoundedDouble): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
+    inline def setRecall(value: GenericBoundedDouble): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
+    inline def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
   }
 }

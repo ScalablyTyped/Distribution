@@ -12,8 +12,7 @@ trait LauncherUIOptions
      with ILauncherUIOptions
 object LauncherUIOptions {
   
-  @scala.inline
-  def apply(invocationPoint: Point, preferredPlacement: Placement, selectionRect: Rect): LauncherUIOptions = {
+  inline def apply(invocationPoint: Point, preferredPlacement: Placement, selectionRect: Rect): LauncherUIOptions = {
     val __obj = js.Dynamic.literal(invocationPoint = invocationPoint.asInstanceOf[js.Any], preferredPlacement = preferredPlacement.asInstanceOf[js.Any], selectionRect = selectionRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[LauncherUIOptions]
   }

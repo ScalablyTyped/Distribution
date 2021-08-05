@@ -38,53 +38,38 @@ trait SubscriptionMessage extends StObject {
 }
 object SubscriptionMessage {
   
-  @scala.inline
-  def apply(registered: Boolean, txId: Buffer, `type`: Double): SubscriptionMessage = {
+  inline def apply(registered: Boolean, txId: Buffer, `type`: Double): SubscriptionMessage = {
     val __obj = js.Dynamic.literal(registered = registered.asInstanceOf[js.Any], txId = txId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionMessage]
   }
   
-  @scala.inline
-  implicit class SubscriptionMessageMutableBuilder[Self <: SubscriptionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionMessage](x: Self) {
     
-    @scala.inline
-    def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
+    inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
+    inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
     
-    @scala.inline
-    def setQueries(value: js.Array[Tables]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[Tables]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueriesVarargs(value: Tables*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: Tables*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
-    @scala.inline
-    def setQueueName(value: String): Self = StObject.set(x, "queueName", value.asInstanceOf[js.Any])
+    inline def setQueueName(value: String): Self = StObject.set(x, "queueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueNameUndefined: Self = StObject.set(x, "queueName", js.undefined)
+    inline def setQueueNameUndefined: Self = StObject.set(x, "queueName", js.undefined)
     
-    @scala.inline
-    def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
+    inline def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTables(value: js.Array[SubscriptionTables]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: js.Array[SubscriptionTables]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    @scala.inline
-    def setTablesVarargs(value: SubscriptionTables*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: SubscriptionTables*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
-    @scala.inline
-    def setTxId(value: Buffer): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
+    inline def setTxId(value: Buffer): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

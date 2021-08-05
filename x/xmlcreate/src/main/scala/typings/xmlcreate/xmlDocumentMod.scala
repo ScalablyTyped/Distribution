@@ -30,29 +30,25 @@ object xmlDocumentMod {
   }
   object IXmlDocumentOptions {
     
-    @scala.inline
-    def apply(): IXmlDocumentOptions = {
+    inline def apply(): IXmlDocumentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IXmlDocumentOptions]
     }
     
-    @scala.inline
-    implicit class IXmlDocumentOptionsMutableBuilder[Self <: IXmlDocumentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlDocumentOptions](x: Self) {
       
-      @scala.inline
-      def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      inline def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+      inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     }
   }
   
   @js.native
   trait XmlDocument extends StObject {
     
-    val _children: js.Any = js.native
+    /* private */ val _children: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Adds a comment to this document and returns the new comment.

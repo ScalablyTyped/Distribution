@@ -10,6 +10,5 @@ object ignoreElementsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ignoreElements(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreElements")().asInstanceOf[js.Any]
+  inline def ignoreElements(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreElements")().asInstanceOf[js.Any]
 }

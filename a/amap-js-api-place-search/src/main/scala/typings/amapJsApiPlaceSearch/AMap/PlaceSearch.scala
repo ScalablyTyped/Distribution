@@ -211,8 +211,7 @@ object PlaceSearch {
   }
   object Cinema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deep_src: String,
       intro: String,
       opentime: String,
@@ -225,32 +224,23 @@ object PlaceSearch {
       __obj.asInstanceOf[Cinema]
     }
     
-    @scala.inline
-    implicit class CinemaMutableBuilder[Self <: Cinema] (val x: Self) extends AnyVal {
+    extension [Self <: Cinema](x: Self) {
       
-      @scala.inline
-      def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
+      inline def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+      inline def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpentime(value: String): Self = StObject.set(x, "opentime", value.asInstanceOf[js.Any])
+      inline def setOpentime(value: String): Self = StObject.set(x, "opentime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpentime_GDF(value: String): Self = StObject.set(x, "opentime_GDF", value.asInstanceOf[js.Any])
+      inline def setOpentime_GDF(value: String): Self = StObject.set(x, "opentime_GDF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParking(value: String): Self = StObject.set(x, "parking", value.asInstanceOf[js.Any])
+      inline def setParking(value: String): Self = StObject.set(x, "parking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,26 +268,20 @@ object PlaceSearch {
   }
   object CityInfo {
     
-    @scala.inline
-    def apply(adcode: String, citycode: String, count: Double, name: String): CityInfo = {
+    inline def apply(adcode: String, citycode: String, count: Double, name: String): CityInfo = {
       val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CityInfo]
     }
     
-    @scala.inline
-    implicit class CityInfoMutableBuilder[Self <: CityInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CityInfo](x: Self) {
       
-      @scala.inline
-      def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+      inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+      inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,8 +384,7 @@ object PlaceSearch {
   }
   object Dining {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addition: String,
       atmosphere: String,
       cost: String,
@@ -426,68 +409,47 @@ object PlaceSearch {
       __obj.asInstanceOf[Dining]
     }
     
-    @scala.inline
-    implicit class DiningMutableBuilder[Self <: Dining] (val x: Self) extends AnyVal {
+    extension [Self <: Dining](x: Self) {
       
-      @scala.inline
-      def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+      inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtmosphere(value: String): Self = StObject.set(x, "atmosphere", value.asInstanceOf[js.Any])
+      inline def setAtmosphere(value: String): Self = StObject.set(x, "atmosphere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCost(value: String): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      inline def setCost(value: String): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCp_rating(value: String): Self = StObject.set(x, "cp_rating", value.asInstanceOf[js.Any])
+      inline def setCp_rating(value: String): Self = StObject.set(x, "cp_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCuisines(value: String): Self = StObject.set(x, "cuisines", value.asInstanceOf[js.Any])
+      inline def setCuisines(value: String): Self = StObject.set(x, "cuisines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
+      inline def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment_rating(value: String): Self = StObject.set(x, "environment_rating", value.asInstanceOf[js.Any])
+      inline def setEnvironment_rating(value: String): Self = StObject.set(x, "environment_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+      inline def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpentime(value: String): Self = StObject.set(x, "opentime", value.asInstanceOf[js.Any])
+      inline def setOpentime(value: String): Self = StObject.set(x, "opentime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpentime_GDF(value: String): Self = StObject.set(x, "opentime_GDF", value.asInstanceOf[js.Any])
+      inline def setOpentime_GDF(value: String): Self = StObject.set(x, "opentime_GDF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdering_app_url(value: String): Self = StObject.set(x, "ordering_app_url", value.asInstanceOf[js.Any])
+      inline def setOrdering_app_url(value: String): Self = StObject.set(x, "ordering_app_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdering_wap_url(value: String): Self = StObject.set(x, "ordering_wap_url", value.asInstanceOf[js.Any])
+      inline def setOrdering_wap_url(value: String): Self = StObject.set(x, "ordering_wap_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdering_web_url(value: String): Self = StObject.set(x, "ordering_web_url", value.asInstanceOf[js.Any])
+      inline def setOrdering_web_url(value: String): Self = StObject.set(x, "ordering_web_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommend(value: String): Self = StObject.set(x, "recommend", value.asInstanceOf[js.Any])
+      inline def setRecommend(value: String): Self = StObject.set(x, "recommend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService_rating(value: String): Self = StObject.set(x, "service_rating", value.asInstanceOf[js.Any])
+      inline def setService_rating(value: String): Self = StObject.set(x, "service_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaste_rating(value: String): Self = StObject.set(x, "taste_rating", value.asInstanceOf[js.Any])
+      inline def setTaste_rating(value: String): Self = StObject.set(x, "taste_rating", value.asInstanceOf[js.Any])
     }
   }
   
@@ -535,8 +497,7 @@ object PlaceSearch {
   }
   object Discount {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       detail: String,
       end_time: String,
       photos: js.Array[PoiPhoto],
@@ -550,35 +511,25 @@ object PlaceSearch {
       __obj.asInstanceOf[Discount]
     }
     
-    @scala.inline
-    implicit class DiscountMutableBuilder[Self <: Discount] (val x: Self) extends AnyVal {
+    extension [Self <: Discount](x: Self) {
       
-      @scala.inline
-      def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
+      inline def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSold_num(value: Double): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
+      inline def setSold_num(value: Double): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+      inline def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -629,8 +580,7 @@ object PlaceSearch {
   }
   object EventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: Event_[complete, SearchResult],
       error: Event_[error, Info],
       infoWindowClick: Event_[infoWindowClick, SelectChangeEventDataeven],
@@ -646,38 +596,27 @@ object PlaceSearch {
       __obj.asInstanceOf[EventMap]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+    extension [Self <: EventMap](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoWindowClick(value: Event_[infoWindowClick, SelectChangeEventDataeven]): Self = StObject.set(x, "infoWindowClick", value.asInstanceOf[js.Any])
+      inline def setInfoWindowClick(value: Event_[infoWindowClick, SelectChangeEventDataeven]): Self = StObject.set(x, "infoWindowClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListElementClick(value: SelectChangeEvent[listElementClick, MouseEvent]): Self = StObject.set(x, "listElementClick", value.asInstanceOf[js.Any])
+      inline def setListElementClick(value: SelectChangeEvent[listElementClick, MouseEvent]): Self = StObject.set(x, "listElementClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListElementDetroyed(value: Event_[listElementDetroyed, SelectChangeEventData]): Self = StObject.set(x, "listElementDetroyed", value.asInstanceOf[js.Any])
+      inline def setListElementDetroyed(value: Event_[listElementDetroyed, SelectChangeEventData]): Self = StObject.set(x, "listElementDetroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerClick(value: SelectChangeEvent[markerClick, MapsEvent[click, Marker[js.Any]]]): Self = StObject.set(x, "markerClick", value.asInstanceOf[js.Any])
+      inline def setMarkerClick(value: SelectChangeEvent[markerClick, MapsEvent[click, Marker[js.Any]]]): Self = StObject.set(x, "markerClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerDestoryed(value: Event_[markerDestoryed, SelectChangeEventData]): Self = StObject.set(x, "markerDestoryed", value.asInstanceOf[js.Any])
+      inline def setMarkerDestoryed(value: Event_[markerDestoryed, SelectChangeEventData]): Self = StObject.set(x, "markerDestoryed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderComplete(value: Event_[renderComplete, ListElements]): Self = StObject.set(x, "renderComplete", value.asInstanceOf[js.Any])
+      inline def setRenderComplete(value: Event_[renderComplete, ListElements]): Self = StObject.set(x, "renderComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectChanged(value: Event_[selectChanged, LastSelected]): Self = StObject.set(x, "selectChanged", value.asInstanceOf[js.Any])
+      inline def setSelectChanged(value: Event_[selectChanged, LastSelected]): Self = StObject.set(x, "selectChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWillClear(value: Event_[willClear, Data]): Self = StObject.set(x, "willClear", value.asInstanceOf[js.Any])
+      inline def setWillClear(value: Event_[willClear, Data]): Self = StObject.set(x, "willClear", value.asInstanceOf[js.Any])
     }
   }
   
@@ -765,8 +704,7 @@ object PlaceSearch {
   }
   object Groupbuy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       detail: String,
       discount: Double,
@@ -789,59 +727,41 @@ object PlaceSearch {
       __obj.asInstanceOf[Groupbuy]
     }
     
-    @scala.inline
-    implicit class GroupbuyMutableBuilder[Self <: Groupbuy] (val x: Self) extends AnyVal {
+    extension [Self <: Groupbuy](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscount(value: Double): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+      inline def setDiscount(value: Double): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtime(value: String): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
+      inline def setEtime(value: String): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupbuy_price(value: Double): Self = StObject.set(x, "groupbuy_price", value.asInstanceOf[js.Any])
+      inline def setGroupbuy_price(value: Double): Self = StObject.set(x, "groupbuy_price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_price(value: Double): Self = StObject.set(x, "original_price", value.asInstanceOf[js.Any])
+      inline def setOriginal_price(value: Double): Self = StObject.set(x, "original_price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSold_num(value: Double): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
+      inline def setSold_num(value: Double): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
+      inline def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket_address(value: String): Self = StObject.set(x, "ticket_address", value.asInstanceOf[js.Any])
+      inline def setTicket_address(value: String): Self = StObject.set(x, "ticket_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket_tel(value: String): Self = StObject.set(x, "ticket_tel", value.asInstanceOf[js.Any])
+      inline def setTicket_tel(value: String): Self = StObject.set(x, "ticket_tel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType_code(value: String): Self = StObject.set(x, "type_code", value.asInstanceOf[js.Any])
+      inline def setType_code(value: String): Self = StObject.set(x, "type_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -909,8 +829,7 @@ object PlaceSearch {
   }
   object Hotel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addition: String,
       deep_src: String,
       environment_rating: String,
@@ -928,47 +847,33 @@ object PlaceSearch {
       __obj.asInstanceOf[Hotel]
     }
     
-    @scala.inline
-    implicit class HotelMutableBuilder[Self <: Hotel] (val x: Self) extends AnyVal {
+    extension [Self <: Hotel](x: Self) {
       
-      @scala.inline
-      def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+      inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
+      inline def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment_rating(value: String): Self = StObject.set(x, "environment_rating", value.asInstanceOf[js.Any])
+      inline def setEnvironment_rating(value: String): Self = StObject.set(x, "environment_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaci_rating(value: String): Self = StObject.set(x, "faci_rating", value.asInstanceOf[js.Any])
+      inline def setFaci_rating(value: String): Self = StObject.set(x, "faci_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealth_rating(value: String): Self = StObject.set(x, "health_rating", value.asInstanceOf[js.Any])
+      inline def setHealth_rating(value: String): Self = StObject.set(x, "health_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+      inline def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowest_price(value: String): Self = StObject.set(x, "lowest_price", value.asInstanceOf[js.Any])
+      inline def setLowest_price(value: String): Self = StObject.set(x, "lowest_price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService_rating(value: String): Self = StObject.set(x, "service_rating", value.asInstanceOf[js.Any])
+      inline def setService_rating(value: String): Self = StObject.set(x, "service_rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+      inline def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraffic(value: String): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+      inline def setTraffic(value: String): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1048,104 +953,72 @@ object PlaceSearch {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
+      inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFitViewUndefined: Self = StObject.set(x, "autoFitView", js.undefined)
+      inline def setAutoFitViewUndefined: Self = StObject.set(x, "autoFitView", js.undefined)
       
-      @scala.inline
-      def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
       
-      @scala.inline
-      def setCitylimit(value: Boolean): Self = StObject.set(x, "citylimit", value.asInstanceOf[js.Any])
+      inline def setCitylimit(value: Boolean): Self = StObject.set(x, "citylimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCitylimitUndefined: Self = StObject.set(x, "citylimit", js.undefined)
+      inline def setCitylimitUndefined: Self = StObject.set(x, "citylimit", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setLang(value: Lang): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: Lang): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+      inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
+      inline def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      @scala.inline
-      def setRankBy(value: String): Self = StObject.set(x, "rankBy", value.asInstanceOf[js.Any])
+      inline def setRankBy(value: String): Self = StObject.set(x, "rankBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankByUndefined: Self = StObject.set(x, "rankBy", js.undefined)
+      inline def setRankByUndefined: Self = StObject.set(x, "rankBy", js.undefined)
       
-      @scala.inline
-      def setRenderEngine(value: String): Self = StObject.set(x, "renderEngine", value.asInstanceOf[js.Any])
+      inline def setRenderEngine(value: String): Self = StObject.set(x, "renderEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderEngineUndefined: Self = StObject.set(x, "renderEngine", js.undefined)
+      inline def setRenderEngineUndefined: Self = StObject.set(x, "renderEngine", js.undefined)
       
-      @scala.inline
-      def setRenderStyle(value: newpc | default): Self = StObject.set(x, "renderStyle", value.asInstanceOf[js.Any])
+      inline def setRenderStyle(value: newpc | default): Self = StObject.set(x, "renderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderStyleUndefined: Self = StObject.set(x, "renderStyle", js.undefined)
+      inline def setRenderStyleUndefined: Self = StObject.set(x, "renderStyle", js.undefined)
       
-      @scala.inline
-      def setShowCover(value: Boolean): Self = StObject.set(x, "showCover", value.asInstanceOf[js.Any])
+      inline def setShowCover(value: Boolean): Self = StObject.set(x, "showCover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCoverUndefined: Self = StObject.set(x, "showCover", js.undefined)
+      inline def setShowCoverUndefined: Self = StObject.set(x, "showCover", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1194,8 +1067,7 @@ object PlaceSearch {
   }
   object PoiBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       distance: Double,
       id: String,
@@ -1209,44 +1081,31 @@ object PlaceSearch {
       __obj.asInstanceOf[PoiBase]
     }
     
-    @scala.inline
-    implicit class PoiBaseMutableBuilder[Self <: PoiBase] (val x: Self) extends AnyVal {
+    extension [Self <: PoiBase](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationNull: Self = StObject.set(x, "location", null)
+      inline def setLocationNull: Self = StObject.set(x, "location", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShopinfo(value: String): Self = StObject.set(x, "shopinfo", value.asInstanceOf[js.Any])
+      inline def setShopinfo(value: String): Self = StObject.set(x, "shopinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
+      inline def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1277,29 +1136,22 @@ object PlaceSearch {
   }
   object PoiList {
     
-    @scala.inline
-    def apply(count: Double, pageIndex: Double, pageSize: Double, pois: js.Array[Poi]): PoiList = {
+    inline def apply(count: Double, pageIndex: Double, pageSize: Double, pois: js.Array[Poi]): PoiList = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], pois = pois.asInstanceOf[js.Any])
       __obj.asInstanceOf[PoiList]
     }
     
-    @scala.inline
-    implicit class PoiListMutableBuilder[Self <: PoiList] (val x: Self) extends AnyVal {
+    extension [Self <: PoiList](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+      inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPois(value: js.Array[Poi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
+      inline def setPois(value: js.Array[Poi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoisVarargs(value: Poi*): Self = StObject.set(x, "pois", js.Array(value :_*))
+      inline def setPoisVarargs(value: Poi*): Self = StObject.set(x, "pois", js.Array(value :_*))
     }
   }
   
@@ -1317,20 +1169,16 @@ object PlaceSearch {
   }
   object PoiPhoto {
     
-    @scala.inline
-    def apply(title: String, url: String): PoiPhoto = {
+    inline def apply(title: String, url: String): PoiPhoto = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PoiPhoto]
     }
     
-    @scala.inline
-    implicit class PoiPhotoMutableBuilder[Self <: PoiPhoto] (val x: Self) extends AnyVal {
+    extension [Self <: PoiPhoto](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1403,8 +1251,7 @@ object PlaceSearch {
   }
   object Scenic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deep_src: String,
       intro: String,
       level: String,
@@ -1423,50 +1270,35 @@ object PlaceSearch {
       __obj.asInstanceOf[Scenic]
     }
     
-    @scala.inline
-    implicit class ScenicMutableBuilder[Self <: Scenic] (val x: Self) extends AnyVal {
+    extension [Self <: Scenic](x: Self) {
       
-      @scala.inline
-      def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
+      inline def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+      inline def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpentime(value: String): Self = StObject.set(x, "opentime", value.asInstanceOf[js.Any])
+      inline def setOpentime(value: String): Self = StObject.set(x, "opentime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpentime_GDF(value: String): Self = StObject.set(x, "opentime_GDF", value.asInstanceOf[js.Any])
+      inline def setOpentime_GDF(value: String): Self = StObject.set(x, "opentime_GDF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdering_wap_url(value: String): Self = StObject.set(x, "ordering_wap_url", value.asInstanceOf[js.Any])
+      inline def setOrdering_wap_url(value: String): Self = StObject.set(x, "ordering_wap_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdering_web_url(value: String): Self = StObject.set(x, "ordering_web_url", value.asInstanceOf[js.Any])
+      inline def setOrdering_web_url(value: String): Self = StObject.set(x, "ordering_web_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommend(value: String): Self = StObject.set(x, "recommend", value.asInstanceOf[js.Any])
+      inline def setRecommend(value: String): Self = StObject.set(x, "recommend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeason(value: String): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: String): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1494,38 +1326,28 @@ object PlaceSearch {
   }
   object SearchResult {
     
-    @scala.inline
-    def apply(info: String, poiList: PoiList): SearchResult = {
+    inline def apply(info: String, poiList: PoiList): SearchResult = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], poiList = poiList.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResult]
     }
     
-    @scala.inline
-    implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+    extension [Self <: SearchResult](x: Self) {
       
-      @scala.inline
-      def setCityList(value: js.Array[CityInfo]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
+      inline def setCityList(value: js.Array[CityInfo]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
+      inline def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
       
-      @scala.inline
-      def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value :_*))
+      inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value :_*))
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordList(value: js.Array[String]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
+      inline def setKeywordList(value: js.Array[String]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
+      inline def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
       
-      @scala.inline
-      def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
+      inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
       
-      @scala.inline
-      def setPoiList(value: PoiList): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
+      inline def setPoiList(value: PoiList): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1537,14 +1359,11 @@ object PlaceSearch {
   trait SearchStatus extends StObject
   object SearchStatus {
     
-    @scala.inline
-    def complete: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.complete]
+    inline def complete: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.complete]
     
-    @scala.inline
-    def error: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.error = "error".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.error]
+    inline def error: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.error = "error".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.error]
     
-    @scala.inline
-    def no_data: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.no_data]
+    inline def no_data: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.no_data]
   }
   
   type SelectChangeEvent[N /* <: String */, E] = Event_[N, SelectChangeEventData & Event[E]]
@@ -1578,32 +1397,24 @@ object PlaceSearch {
   }
   object SelectChangeEventData {
     
-    @scala.inline
-    def apply(data: js.Array[Poi], id: String, index: Double, listElement: HTMLLIElement, marker: Marker[js.Any]): SelectChangeEventData = {
+    inline def apply(data: js.Array[Poi], id: String, index: Double, listElement: HTMLLIElement, marker: Marker[js.Any]): SelectChangeEventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], listElement = listElement.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectChangeEventData]
     }
     
-    @scala.inline
-    implicit class SelectChangeEventDataMutableBuilder[Self <: SelectChangeEventData] (val x: Self) extends AnyVal {
+    extension [Self <: SelectChangeEventData](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
+      inline def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
   }
 }

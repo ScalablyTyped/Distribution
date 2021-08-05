@@ -71,67 +71,49 @@ trait SmartMappingSliderBaseProperties
 }
 object SmartMappingSliderBaseProperties {
   
-  @scala.inline
-  def apply(): SmartMappingSliderBaseProperties = {
+  inline def apply(): SmartMappingSliderBaseProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmartMappingSliderBaseProperties]
   }
   
-  @scala.inline
-  implicit class SmartMappingSliderBasePropertiesMutableBuilder[Self <: SmartMappingSliderBaseProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SmartMappingSliderBaseProperties](x: Self) {
     
-    @scala.inline
-    def setHistogramConfig(value: HistogramConfig): Self = StObject.set(x, "histogramConfig", value.asInstanceOf[js.Any])
+    inline def setHistogramConfig(value: HistogramConfig): Self = StObject.set(x, "histogramConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramConfigUndefined: Self = StObject.set(x, "histogramConfig", js.undefined)
+    inline def setHistogramConfigUndefined: Self = StObject.set(x, "histogramConfig", js.undefined)
     
-    @scala.inline
-    def setInputFormatFunction(
+    inline def setInputFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | value], /* index */ js.UndefOr[Double]) => String
     ): Self = StObject.set(x, "inputFormatFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInputFormatFunctionUndefined: Self = StObject.set(x, "inputFormatFunction", js.undefined)
+    inline def setInputFormatFunctionUndefined: Self = StObject.set(x, "inputFormatFunction", js.undefined)
     
-    @scala.inline
-    def setInputParseFunction(
+    inline def setInputParseFunction(
       value: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double
     ): Self = StObject.set(x, "inputParseFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInputParseFunctionUndefined: Self = StObject.set(x, "inputParseFunction", js.undefined)
+    inline def setInputParseFunctionUndefined: Self = StObject.set(x, "inputParseFunction", js.undefined)
     
-    @scala.inline
-    def setLabelFormatFunction(
+    inline def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | value], /* index */ js.UndefOr[Double]) => String
     ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
+    inline def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setZoomOptions(value: SmartMappingSliderBaseZoomOptions): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
+    inline def setZoomOptions(value: SmartMappingSliderBaseZoomOptions): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
+    inline def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
   }
 }

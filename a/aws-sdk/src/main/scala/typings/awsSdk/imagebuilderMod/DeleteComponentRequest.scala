@@ -13,16 +13,13 @@ trait DeleteComponentRequest extends StObject {
 }
 object DeleteComponentRequest {
   
-  @scala.inline
-  def apply(componentBuildVersionArn: ComponentBuildVersionArn): DeleteComponentRequest = {
+  inline def apply(componentBuildVersionArn: ComponentBuildVersionArn): DeleteComponentRequest = {
     val __obj = js.Dynamic.literal(componentBuildVersionArn = componentBuildVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteComponentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteComponentRequestMutableBuilder[Self <: DeleteComponentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteComponentRequest](x: Self) {
     
-    @scala.inline
-    def setComponentBuildVersionArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentBuildVersionArn", value.asInstanceOf[js.Any])
+    inline def setComponentBuildVersionArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentBuildVersionArn", value.asInstanceOf[js.Any])
   }
 }

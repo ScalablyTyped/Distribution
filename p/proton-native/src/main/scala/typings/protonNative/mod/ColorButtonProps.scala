@@ -23,25 +23,19 @@ trait ColorButtonProps
 }
 object ColorButtonProps {
   
-  @scala.inline
-  def apply(): ColorButtonProps = {
+  inline def apply(): ColorButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorButtonProps]
   }
   
-  @scala.inline
-  implicit class ColorButtonPropsMutableBuilder[Self <: ColorButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: ColorButtonProps](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* color */ A => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* color */ A => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

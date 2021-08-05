@@ -13,19 +13,15 @@ trait GetExtConfigSuccessCallbackResult extends StObject {
 }
 object GetExtConfigSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, extConfig: IAnyObject): GetExtConfigSuccessCallbackResult = {
+  inline def apply(errMsg: String, extConfig: IAnyObject): GetExtConfigSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], extConfig = extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExtConfigSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetExtConfigSuccessCallbackResultMutableBuilder[Self <: GetExtConfigSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetExtConfigSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtConfig(value: IAnyObject): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: IAnyObject): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
   }
 }

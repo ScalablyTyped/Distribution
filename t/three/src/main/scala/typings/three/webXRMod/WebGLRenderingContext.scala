@@ -10,16 +10,13 @@ trait WebGLRenderingContext extends StObject {
 }
 object WebGLRenderingContext {
   
-  @scala.inline
-  def apply(makeXRCompatible: () => js.Promise[Unit]): WebGLRenderingContext = {
+  inline def apply(makeXRCompatible: () => js.Promise[Unit]): WebGLRenderingContext = {
     val __obj = js.Dynamic.literal(makeXRCompatible = js.Any.fromFunction0(makeXRCompatible))
     __obj.asInstanceOf[WebGLRenderingContext]
   }
   
-  @scala.inline
-  implicit class WebGLRenderingContextMutableBuilder[Self <: WebGLRenderingContext] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLRenderingContext](x: Self) {
     
-    @scala.inline
-    def setMakeXRCompatible(value: () => js.Promise[Unit]): Self = StObject.set(x, "makeXRCompatible", js.Any.fromFunction0(value))
+    inline def setMakeXRCompatible(value: () => js.Promise[Unit]): Self = StObject.set(x, "makeXRCompatible", js.Any.fromFunction0(value))
   }
 }

@@ -33,35 +33,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(createElement: FnCall): Options = {
+    inline def apply(createElement: FnCall): Options = {
       val __obj = js.Dynamic.literal(createElement = createElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setCreateElement(value: FnCall): Self = StObject.set(x, "createElement", value.asInstanceOf[js.Any])
+      inline def setCreateElement(value: FnCall): Self = StObject.set(x, "createElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragment(value: ComponentType[Children]): Self = StObject.set(x, "Fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: ComponentType[Children]): Self = StObject.set(x, "Fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentUndefined: Self = StObject.set(x, "Fragment", js.undefined)
+      inline def setFragmentUndefined: Self = StObject.set(x, "Fragment", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -71,17 +62,14 @@ object mod {
   }
   object RehypeReact {
     
-    @scala.inline
-    def apply(Compiler: js.Any => js.Any): RehypeReact = {
+    inline def apply(Compiler: js.Any => js.Any): RehypeReact = {
       val __obj = js.Dynamic.literal(Compiler = js.Any.fromFunction1(Compiler))
       __obj.asInstanceOf[RehypeReact]
     }
     
-    @scala.inline
-    implicit class RehypeReactMutableBuilder[Self <: RehypeReact] (val x: Self) extends AnyVal {
+    extension [Self <: RehypeReact](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: js.Any => js.Any): Self = StObject.set(x, "Compiler", js.Any.fromFunction1(value))
+      inline def setCompiler(value: js.Any => js.Any): Self = StObject.set(x, "Compiler", js.Any.fromFunction1(value))
     }
   }
 }

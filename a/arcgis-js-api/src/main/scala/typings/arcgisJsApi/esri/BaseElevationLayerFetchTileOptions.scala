@@ -27,8 +27,7 @@ trait BaseElevationLayerFetchTileOptions
 }
 object BaseElevationLayerFetchTileOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -37,19 +36,14 @@ object BaseElevationLayerFetchTileOptions {
     __obj.asInstanceOf[BaseElevationLayerFetchTileOptions]
   }
   
-  @scala.inline
-  implicit class BaseElevationLayerFetchTileOptionsMutableBuilder[Self <: BaseElevationLayerFetchTileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseElevationLayerFetchTileOptions](x: Self) {
     
-    @scala.inline
-    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
+    inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

@@ -8,6 +8,5 @@ object atlassianCrowdClientStrings {
   
   @js.native
   sealed trait GROUP extends StObject
-  @scala.inline
-  def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
+  inline def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
 }

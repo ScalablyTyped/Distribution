@@ -14,26 +14,20 @@ trait GraphReference
 }
 object GraphReference {
   
-  @scala.inline
-  def apply(): GraphReference = {
+  inline def apply(): GraphReference = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphReference]
   }
   
-  @scala.inline
-  implicit class GraphReferenceMutableBuilder[Self <: GraphReference] (val x: Self) extends AnyVal {
+  extension [Self <: GraphReference](x: Self) {
     
-    @scala.inline
-    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+    inline def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
+    inline def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
   }
 }

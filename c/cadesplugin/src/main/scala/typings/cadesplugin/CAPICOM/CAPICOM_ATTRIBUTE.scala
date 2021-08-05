@@ -17,22 +17,17 @@ trait CAPICOM_ATTRIBUTE extends StObject {
 }
 object CAPICOM_ATTRIBUTE {
   
-  @scala.inline
-  def apply(): CAPICOM_ATTRIBUTE = {
+  inline def apply(): CAPICOM_ATTRIBUTE = {
     val __obj = js.Dynamic.literal(CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION = 2, CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME = 1, CAPICOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME = 0)
     __obj.asInstanceOf[CAPICOM_ATTRIBUTE]
   }
   
-  @scala.inline
-  implicit class CAPICOM_ATTRIBUTEMutableBuilder[Self <: CAPICOM_ATTRIBUTE] (val x: Self) extends AnyVal {
+  extension [Self <: CAPICOM_ATTRIBUTE](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION(value: `2`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION(value: `2`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME(value: `1`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME(value: `1`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME(value: `0`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME(value: `0`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME", value.asInstanceOf[js.Any])
   }
 }

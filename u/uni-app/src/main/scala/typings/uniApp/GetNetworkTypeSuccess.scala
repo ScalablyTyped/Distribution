@@ -13,19 +13,15 @@ trait GetNetworkTypeSuccess extends StObject {
 }
 object GetNetworkTypeSuccess {
   
-  @scala.inline
-  def apply(): GetNetworkTypeSuccess = {
+  inline def apply(): GetNetworkTypeSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNetworkTypeSuccess]
   }
   
-  @scala.inline
-  implicit class GetNetworkTypeSuccessMutableBuilder[Self <: GetNetworkTypeSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkTypeSuccess](x: Self) {
     
-    @scala.inline
-    def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTypeUndefined: Self = StObject.set(x, "networkType", js.undefined)
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "networkType", js.undefined)
   }
 }

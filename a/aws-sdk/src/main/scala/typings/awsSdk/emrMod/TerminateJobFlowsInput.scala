@@ -13,19 +13,15 @@ trait TerminateJobFlowsInput extends StObject {
 }
 object TerminateJobFlowsInput {
   
-  @scala.inline
-  def apply(JobFlowIds: XmlStringList): TerminateJobFlowsInput = {
+  inline def apply(JobFlowIds: XmlStringList): TerminateJobFlowsInput = {
     val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateJobFlowsInput]
   }
   
-  @scala.inline
-  implicit class TerminateJobFlowsInputMutableBuilder[Self <: TerminateJobFlowsInput] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateJobFlowsInput](x: Self) {
     
-    @scala.inline
-    def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
+    inline def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
+    inline def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
   }
 }

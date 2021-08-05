@@ -168,30 +168,21 @@ object Link {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def define(`type`: String): Constructor[Link] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String): Constructor[Link] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  inline def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
   
   trait Attributes
     extends StObject
        with typings.jointjs.mod.dia.Cell.GenericAttributes[LinkSelectors]
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
@@ -213,50 +204,36 @@ object Link {
   }
   object EndCellArgs {
     
-    @scala.inline
-    def apply(): EndCellArgs = {
+    inline def apply(): EndCellArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndCellArgs]
     }
     
-    @scala.inline
-    implicit class EndCellArgsMutableBuilder[Self <: EndCellArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndCellArgs](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: AnchorJSON): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: AnchorJSON): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setConnectionPoint(value: ConnectionPointJSON): Self = StObject.set(x, "connectionPoint", value.asInstanceOf[js.Any])
+      inline def setConnectionPoint(value: ConnectionPointJSON): Self = StObject.set(x, "connectionPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPointUndefined: Self = StObject.set(x, "connectionPoint", js.undefined)
+      inline def setConnectionPointUndefined: Self = StObject.set(x, "connectionPoint", js.undefined)
       
-      @scala.inline
-      def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
+      inline def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnetUndefined: Self = StObject.set(x, "magnet", js.undefined)
+      inline def setMagnetUndefined: Self = StObject.set(x, "magnet", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     }
   }
   
@@ -272,32 +249,24 @@ object Link {
   }
   object EndJSON {
     
-    @scala.inline
-    def apply(): EndJSON = {
+    inline def apply(): EndJSON = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndJSON]
     }
     
-    @scala.inline
-    implicit class EndJSONMutableBuilder[Self <: EndJSON] (val x: Self) extends AnyVal {
+    extension [Self <: EndJSON](x: Self) {
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -323,78 +292,56 @@ object Link {
   }
   object GenericAttributes {
     
-    @scala.inline
-    def apply[T](): GenericAttributes[T] = {
+    inline def apply[T](): GenericAttributes[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenericAttributes[T]]
     }
     
-    @scala.inline
-    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[?], T] (val x: Self & GenericAttributes[T]) extends AnyVal {
+    extension [Self <: GenericAttributes[?], T](x: Self & GenericAttributes[T]) {
       
-      @scala.inline
-      def setConnector(value: Connector | ConnectorJSON): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: Connector | ConnectorJSON): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectorFunction4(
+      inline def setConnectorFunction4(
         value: (/* sourcePoint */ Point, /* targetPoint */ Point, /* routePoints */ js.Array[Point], /* args */ js.UndefOr[GenericConnectorArguments[ConnectorType]]) => String | typings.jointjs.mod.g.Path
       ): Self = StObject.set(x, "connector", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+      inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
       
-      @scala.inline
-      def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setManhattan(value: Boolean): Self = StObject.set(x, "manhattan", value.asInstanceOf[js.Any])
+      inline def setManhattan(value: Boolean): Self = StObject.set(x, "manhattan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManhattanUndefined: Self = StObject.set(x, "manhattan", js.undefined)
+      inline def setManhattanUndefined: Self = StObject.set(x, "manhattan", js.undefined)
       
-      @scala.inline
-      def setRouter(value: Router | RouterJSON): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: Router | RouterJSON): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterFunction3(
+      inline def setRouterFunction3(
         value: (/* vertices */ js.Array[Point], /* args */ js.UndefOr[GenericRouterArguments[RouterType]], /* linkView */ js.UndefOr[LinkView]) => js.Array[Point]
       ): Self = StObject.set(x, "router", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
+      inline def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
       
-      @scala.inline
-      def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+      inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
       
-      @scala.inline
-      def setSource(value: EndJSON): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: EndJSON): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTarget(value: EndJSON): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EndJSON): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setVertices(value: js.Array[Point]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: js.Array[Point]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+      inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
       
-      @scala.inline
-      def setVerticesVarargs(value: Point*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Point*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     }
   }
   
@@ -411,38 +358,28 @@ object Link {
   }
   object Label {
     
-    @scala.inline
-    def apply(): Label = {
+    inline def apply(): Label = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: Selectors): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Selectors): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+      inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      @scala.inline
-      def setPosition(value: LabelPosition | Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: LabelPosition | Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -459,38 +396,28 @@ object Link {
   }
   object LabelPosition {
     
-    @scala.inline
-    def apply(): LabelPosition = {
+    inline def apply(): LabelPosition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelPosition]
     }
     
-    @scala.inline
-    implicit class LabelPositionMutableBuilder[Self <: LabelPosition] (val x: Self) extends AnyVal {
+    extension [Self <: LabelPosition](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setArgs(value: LabelOptions): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: LabelOptions): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | X): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | X): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -524,62 +451,44 @@ object Link {
   }
   object LinkSelectors {
     
-    @scala.inline
-    def apply(): LinkSelectors = {
+    inline def apply(): LinkSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkSelectors]
     }
     
-    @scala.inline
-    implicit class LinkSelectorsMutableBuilder[Self <: LinkSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: LinkSelectors](x: Self) {
       
-      @scala.inline
-      def setDotconnection(value: SVGPathAttributes): Self = StObject.set(x, ".connection", value.asInstanceOf[js.Any])
+      inline def setDotconnection(value: SVGPathAttributes): Self = StObject.set(x, ".connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotconnection-wrap`(value: SVGPathAttributes): Self = StObject.set(x, ".connection-wrap", value.asInstanceOf[js.Any])
+      inline def `setDotconnection-wrap`(value: SVGPathAttributes): Self = StObject.set(x, ".connection-wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotconnection-wrapUndefined`: Self = StObject.set(x, ".connection-wrap", js.undefined)
+      inline def `setDotconnection-wrapUndefined`: Self = StObject.set(x, ".connection-wrap", js.undefined)
       
-      @scala.inline
-      def setDotconnectionUndefined: Self = StObject.set(x, ".connection", js.undefined)
+      inline def setDotconnectionUndefined: Self = StObject.set(x, ".connection", js.undefined)
       
-      @scala.inline
-      def setDotlabels(value: SVGAttributes): Self = StObject.set(x, ".labels", value.asInstanceOf[js.Any])
+      inline def setDotlabels(value: SVGAttributes): Self = StObject.set(x, ".labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotlabelsUndefined: Self = StObject.set(x, ".labels", js.undefined)
+      inline def setDotlabelsUndefined: Self = StObject.set(x, ".labels", js.undefined)
       
-      @scala.inline
-      def `setDotlink-tools`(value: SVGAttributes): Self = StObject.set(x, ".link-tools", value.asInstanceOf[js.Any])
+      inline def `setDotlink-tools`(value: SVGAttributes): Self = StObject.set(x, ".link-tools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotlink-toolsUndefined`: Self = StObject.set(x, ".link-tools", js.undefined)
+      inline def `setDotlink-toolsUndefined`: Self = StObject.set(x, ".link-tools", js.undefined)
       
-      @scala.inline
-      def `setDotmarker-arrowheads`(value: SVGAttributes): Self = StObject.set(x, ".marker-arrowheads", value.asInstanceOf[js.Any])
+      inline def `setDotmarker-arrowheads`(value: SVGAttributes): Self = StObject.set(x, ".marker-arrowheads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotmarker-arrowheadsUndefined`: Self = StObject.set(x, ".marker-arrowheads", js.undefined)
+      inline def `setDotmarker-arrowheadsUndefined`: Self = StObject.set(x, ".marker-arrowheads", js.undefined)
       
-      @scala.inline
-      def `setDotmarker-source`(value: SVGPathAttributes): Self = StObject.set(x, ".marker-source", value.asInstanceOf[js.Any])
+      inline def `setDotmarker-source`(value: SVGPathAttributes): Self = StObject.set(x, ".marker-source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotmarker-sourceUndefined`: Self = StObject.set(x, ".marker-source", js.undefined)
+      inline def `setDotmarker-sourceUndefined`: Self = StObject.set(x, ".marker-source", js.undefined)
       
-      @scala.inline
-      def `setDotmarker-target`(value: SVGPathAttributes): Self = StObject.set(x, ".marker-target", value.asInstanceOf[js.Any])
+      inline def `setDotmarker-target`(value: SVGPathAttributes): Self = StObject.set(x, ".marker-target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotmarker-targetUndefined`: Self = StObject.set(x, ".marker-target", js.undefined)
+      inline def `setDotmarker-targetUndefined`: Self = StObject.set(x, ".marker-target", js.undefined)
       
-      @scala.inline
-      def `setDotmarker-vertices`(value: SVGAttributes): Self = StObject.set(x, ".marker-vertices", value.asInstanceOf[js.Any])
+      inline def `setDotmarker-vertices`(value: SVGAttributes): Self = StObject.set(x, ".marker-vertices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotmarker-verticesUndefined`: Self = StObject.set(x, ".marker-vertices", js.undefined)
+      inline def `setDotmarker-verticesUndefined`: Self = StObject.set(x, ".marker-vertices", js.undefined)
     }
   }
   
@@ -589,8 +498,7 @@ object Link {
        with /* key */ StringDictionary[js.Any]
   object Vertex {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Vertex = {
+    inline def apply(x: Double, y: Double): Vertex = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vertex]
     }

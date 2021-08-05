@@ -18,22 +18,17 @@ trait DescribeEffectivePolicyRequest extends StObject {
 }
 object DescribeEffectivePolicyRequest {
   
-  @scala.inline
-  def apply(PolicyType: EffectivePolicyType): DescribeEffectivePolicyRequest = {
+  inline def apply(PolicyType: EffectivePolicyType): DescribeEffectivePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyType = PolicyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEffectivePolicyRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEffectivePolicyRequestMutableBuilder[Self <: DescribeEffectivePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEffectivePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyType(value: EffectivePolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
+    inline def setPolicyType(value: EffectivePolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
   }
 }

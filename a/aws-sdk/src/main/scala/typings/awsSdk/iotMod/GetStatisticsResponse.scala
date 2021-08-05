@@ -13,19 +13,15 @@ trait GetStatisticsResponse extends StObject {
 }
 object GetStatisticsResponse {
   
-  @scala.inline
-  def apply(): GetStatisticsResponse = {
+  inline def apply(): GetStatisticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class GetStatisticsResponseMutableBuilder[Self <: GetStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setStatistics(value: Statistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: Statistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
   }
 }

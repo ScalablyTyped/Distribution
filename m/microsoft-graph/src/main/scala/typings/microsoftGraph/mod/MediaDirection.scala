@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaDirection extends StObject
 object MediaDirection {
   
-  @scala.inline
-  def inactive: typings.microsoftGraph.microsoftGraphStrings.inactive = "inactive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inactive]
+  inline def inactive: typings.microsoftGraph.microsoftGraphStrings.inactive = "inactive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inactive]
   
-  @scala.inline
-  def receiveOnly: typings.microsoftGraph.microsoftGraphStrings.receiveOnly = "receiveOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.receiveOnly]
+  inline def receiveOnly: typings.microsoftGraph.microsoftGraphStrings.receiveOnly = "receiveOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.receiveOnly]
   
-  @scala.inline
-  def sendOnly: typings.microsoftGraph.microsoftGraphStrings.sendOnly = "sendOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendOnly]
+  inline def sendOnly: typings.microsoftGraph.microsoftGraphStrings.sendOnly = "sendOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendOnly]
   
-  @scala.inline
-  def sendReceive: typings.microsoftGraph.microsoftGraphStrings.sendReceive = "sendReceive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendReceive]
+  inline def sendReceive: typings.microsoftGraph.microsoftGraphStrings.sendReceive = "sendReceive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendReceive]
 }

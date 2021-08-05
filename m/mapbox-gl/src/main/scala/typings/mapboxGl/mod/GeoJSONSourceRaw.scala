@@ -16,17 +16,14 @@ trait GeoJSONSourceRaw
 }
 object GeoJSONSourceRaw {
   
-  @scala.inline
-  def apply(): GeoJSONSourceRaw = {
+  inline def apply(): GeoJSONSourceRaw = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("geojson")
     __obj.asInstanceOf[GeoJSONSourceRaw]
   }
   
-  @scala.inline
-  implicit class GeoJSONSourceRawMutableBuilder[Self <: GeoJSONSourceRaw] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONSourceRaw](x: Self) {
     
-    @scala.inline
-    def setType(value: geojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: geojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

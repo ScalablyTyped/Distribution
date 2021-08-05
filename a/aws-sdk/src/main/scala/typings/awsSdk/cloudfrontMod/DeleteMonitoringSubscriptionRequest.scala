@@ -13,16 +13,13 @@ trait DeleteMonitoringSubscriptionRequest extends StObject {
 }
 object DeleteMonitoringSubscriptionRequest {
   
-  @scala.inline
-  def apply(DistributionId: String): DeleteMonitoringSubscriptionRequest = {
+  inline def apply(DistributionId: String): DeleteMonitoringSubscriptionRequest = {
     val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMonitoringSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMonitoringSubscriptionRequestMutableBuilder[Self <: DeleteMonitoringSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMonitoringSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
+    inline def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ object constantsMod {
   @js.native
   val DEFAULT_ROUTING_ROOT_PATH: /* "/" */ String = js.native
   
-  @scala.inline
-  def DUPLICATED_CONTROLLER_NAME(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DUPLICATED_CONTROLLER_NAME")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def DUPLICATED_CONTROLLER_NAME(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DUPLICATED_CONTROLLER_NAME")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object METADATA_KEY {
     
@@ -30,23 +29,19 @@ object constantsMod {
     @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.controllerMethod")
     @js.native
     def controllerMethod: String = js.native
-    @scala.inline
-    def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
+    inline def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
     
     @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.controllerParameter")
     @js.native
     def controllerParameter: String = js.native
-    @scala.inline
-    def controllerParameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerParameter")(x.asInstanceOf[js.Any])
+    inline def controllerParameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerParameter")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
+    inline def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
     
     @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.httpContext")
     @js.native
     def httpContext: String = js.native
-    @scala.inline
-    def httpContext_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpContext")(x.asInstanceOf[js.Any])
+    inline def httpContext_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpContext")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("inversify-express-utils/dts/constants", "NO_CONTROLLERS_FOUND")
@@ -126,19 +121,16 @@ object constantsMod {
     @JSImport("inversify-express-utils/dts/constants", "TYPE.AuthProvider")
     @js.native
     def AuthProvider: js.Symbol = js.native
-    @scala.inline
-    def AuthProvider_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthProvider")(x.asInstanceOf[js.Any])
+    inline def AuthProvider_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthProvider")(x.asInstanceOf[js.Any])
     
     @JSImport("inversify-express-utils/dts/constants", "TYPE.Controller")
     @js.native
     def Controller: js.Symbol = js.native
-    @scala.inline
-    def Controller_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Controller")(x.asInstanceOf[js.Any])
+    inline def Controller_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Controller")(x.asInstanceOf[js.Any])
     
     @JSImport("inversify-express-utils/dts/constants", "TYPE.HttpContext")
     @js.native
     def HttpContext: js.Symbol = js.native
-    @scala.inline
-    def HttpContext_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpContext")(x.asInstanceOf[js.Any])
+    inline def HttpContext_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpContext")(x.asInstanceOf[js.Any])
   }
 }

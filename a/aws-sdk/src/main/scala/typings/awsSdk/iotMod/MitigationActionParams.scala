@@ -38,49 +38,35 @@ trait MitigationActionParams extends StObject {
 }
 object MitigationActionParams {
   
-  @scala.inline
-  def apply(): MitigationActionParams = {
+  inline def apply(): MitigationActionParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MitigationActionParams]
   }
   
-  @scala.inline
-  implicit class MitigationActionParamsMutableBuilder[Self <: MitigationActionParams] (val x: Self) extends AnyVal {
+  extension [Self <: MitigationActionParams](x: Self) {
     
-    @scala.inline
-    def setAddThingsToThingGroupParams(value: AddThingsToThingGroupParams): Self = StObject.set(x, "addThingsToThingGroupParams", value.asInstanceOf[js.Any])
+    inline def setAddThingsToThingGroupParams(value: AddThingsToThingGroupParams): Self = StObject.set(x, "addThingsToThingGroupParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddThingsToThingGroupParamsUndefined: Self = StObject.set(x, "addThingsToThingGroupParams", js.undefined)
+    inline def setAddThingsToThingGroupParamsUndefined: Self = StObject.set(x, "addThingsToThingGroupParams", js.undefined)
     
-    @scala.inline
-    def setEnableIoTLoggingParams(value: EnableIoTLoggingParams): Self = StObject.set(x, "enableIoTLoggingParams", value.asInstanceOf[js.Any])
+    inline def setEnableIoTLoggingParams(value: EnableIoTLoggingParams): Self = StObject.set(x, "enableIoTLoggingParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIoTLoggingParamsUndefined: Self = StObject.set(x, "enableIoTLoggingParams", js.undefined)
+    inline def setEnableIoTLoggingParamsUndefined: Self = StObject.set(x, "enableIoTLoggingParams", js.undefined)
     
-    @scala.inline
-    def setPublishFindingToSnsParams(value: PublishFindingToSnsParams): Self = StObject.set(x, "publishFindingToSnsParams", value.asInstanceOf[js.Any])
+    inline def setPublishFindingToSnsParams(value: PublishFindingToSnsParams): Self = StObject.set(x, "publishFindingToSnsParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishFindingToSnsParamsUndefined: Self = StObject.set(x, "publishFindingToSnsParams", js.undefined)
+    inline def setPublishFindingToSnsParamsUndefined: Self = StObject.set(x, "publishFindingToSnsParams", js.undefined)
     
-    @scala.inline
-    def setReplaceDefaultPolicyVersionParams(value: ReplaceDefaultPolicyVersionParams): Self = StObject.set(x, "replaceDefaultPolicyVersionParams", value.asInstanceOf[js.Any])
+    inline def setReplaceDefaultPolicyVersionParams(value: ReplaceDefaultPolicyVersionParams): Self = StObject.set(x, "replaceDefaultPolicyVersionParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceDefaultPolicyVersionParamsUndefined: Self = StObject.set(x, "replaceDefaultPolicyVersionParams", js.undefined)
+    inline def setReplaceDefaultPolicyVersionParamsUndefined: Self = StObject.set(x, "replaceDefaultPolicyVersionParams", js.undefined)
     
-    @scala.inline
-    def setUpdateCACertificateParams(value: UpdateCACertificateParams): Self = StObject.set(x, "updateCACertificateParams", value.asInstanceOf[js.Any])
+    inline def setUpdateCACertificateParams(value: UpdateCACertificateParams): Self = StObject.set(x, "updateCACertificateParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCACertificateParamsUndefined: Self = StObject.set(x, "updateCACertificateParams", js.undefined)
+    inline def setUpdateCACertificateParamsUndefined: Self = StObject.set(x, "updateCACertificateParams", js.undefined)
     
-    @scala.inline
-    def setUpdateDeviceCertificateParams(value: UpdateDeviceCertificateParams): Self = StObject.set(x, "updateDeviceCertificateParams", value.asInstanceOf[js.Any])
+    inline def setUpdateDeviceCertificateParams(value: UpdateDeviceCertificateParams): Self = StObject.set(x, "updateDeviceCertificateParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDeviceCertificateParamsUndefined: Self = StObject.set(x, "updateDeviceCertificateParams", js.undefined)
+    inline def setUpdateDeviceCertificateParamsUndefined: Self = StObject.set(x, "updateDeviceCertificateParams", js.undefined)
   }
 }

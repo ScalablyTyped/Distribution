@@ -17,25 +17,19 @@ trait Shadow extends StObject {
 }
 object Shadow {
   
-  @scala.inline
-  def apply(blur: Double, color: String, offsetX: Double, offsetY: Double): Shadow = {
+  inline def apply(blur: Double, color: String, offsetX: Double, offsetY: Double): Shadow = {
     val __obj = js.Dynamic.literal(blur = blur.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shadow]
   }
   
-  @scala.inline
-  implicit class ShadowMutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
+  extension [Self <: Shadow](x: Self) {
     
-    @scala.inline
-    def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
   }
 }

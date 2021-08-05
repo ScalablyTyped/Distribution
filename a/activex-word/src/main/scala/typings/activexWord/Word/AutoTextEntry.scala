@@ -26,6 +26,6 @@ trait AutoTextEntry extends StObject {
   
   var Value: String = js.native
   
-  @JSName("Word.AutoTextEntry_typekey")
+  /* private */ @JSName("Word.AutoTextEntry_typekey")
   var WordDotAutoTextEntry_typekey: AutoTextEntry = js.native
 }

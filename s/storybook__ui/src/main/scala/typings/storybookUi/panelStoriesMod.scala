@@ -22,19 +22,15 @@ object panelStoriesMod {
     @JSImport("@storybook/ui/dist/components/panel/panel.stories", "default.component")
     @js.native
     def component: NamedExoticComponent[Absolute] = js.native
-    @scala.inline
-    def component_=(x: NamedExoticComponent[Absolute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: NamedExoticComponent[Absolute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/panel/panel.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def Default_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Default")().asInstanceOf[Element]
+  inline def Default_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Default")().asInstanceOf[Element]
   
-  @scala.inline
-  def NoPanels(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPanels")().asInstanceOf[Element]
+  inline def NoPanels(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPanels")().asInstanceOf[Element]
 }

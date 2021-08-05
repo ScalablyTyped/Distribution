@@ -15,19 +15,15 @@ trait FixedBidStrategy extends StObject {
 }
 object FixedBidStrategy {
   
-  @scala.inline
-  def apply(): FixedBidStrategy = {
+  inline def apply(): FixedBidStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FixedBidStrategy]
   }
   
-  @scala.inline
-  implicit class FixedBidStrategyMutableBuilder[Self <: FixedBidStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: FixedBidStrategy](x: Self) {
     
-    @scala.inline
-    def setBidAmountMicros(value: String): Self = StObject.set(x, "bidAmountMicros", value.asInstanceOf[js.Any])
+    inline def setBidAmountMicros(value: String): Self = StObject.set(x, "bidAmountMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidAmountMicrosUndefined: Self = StObject.set(x, "bidAmountMicros", js.undefined)
+    inline def setBidAmountMicrosUndefined: Self = StObject.set(x, "bidAmountMicros", js.undefined)
   }
 }

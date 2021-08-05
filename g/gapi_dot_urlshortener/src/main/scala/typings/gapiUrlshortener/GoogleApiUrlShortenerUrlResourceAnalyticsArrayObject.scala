@@ -18,19 +18,15 @@ trait GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject extends StObject {
 }
 object GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject {
   
-  @scala.inline
-  def apply(count: String, id: String): GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject = {
+  inline def apply(count: String, id: String): GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]
   }
   
-  @scala.inline
-  implicit class GoogleApiUrlShortenerUrlResourceAnalyticsArrayObjectMutableBuilder[Self <: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

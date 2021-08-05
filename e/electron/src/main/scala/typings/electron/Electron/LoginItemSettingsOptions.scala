@@ -22,28 +22,21 @@ trait LoginItemSettingsOptions extends StObject {
 }
 object LoginItemSettingsOptions {
   
-  @scala.inline
-  def apply(): LoginItemSettingsOptions = {
+  inline def apply(): LoginItemSettingsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginItemSettingsOptions]
   }
   
-  @scala.inline
-  implicit class LoginItemSettingsOptionsMutableBuilder[Self <: LoginItemSettingsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoginItemSettingsOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

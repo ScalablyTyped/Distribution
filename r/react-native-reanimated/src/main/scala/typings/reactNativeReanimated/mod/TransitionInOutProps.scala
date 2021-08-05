@@ -18,19 +18,15 @@ trait TransitionInOutProps
 }
 object TransitionInOutProps {
   
-  @scala.inline
-  def apply(): TransitionInOutProps = {
+  inline def apply(): TransitionInOutProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionInOutProps]
   }
   
-  @scala.inline
-  implicit class TransitionInOutPropsMutableBuilder[Self <: TransitionInOutProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionInOutProps](x: Self) {
     
-    @scala.inline
-    def setType(value: fade | scale | `slide-top` | `slide-bottom` | `slide-right` | `slide-left`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fade | scale | `slide-top` | `slide-bottom` | `slide-right` | `slide-left`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait XVolatileResult
 }
 object XVolatileResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addResultListener: XResultListener => Unit,
     queryInterface: `type` => js.Any,
@@ -35,13 +34,10 @@ object XVolatileResult {
     __obj.asInstanceOf[XVolatileResult]
   }
   
-  @scala.inline
-  implicit class XVolatileResultMutableBuilder[Self <: XVolatileResult] (val x: Self) extends AnyVal {
+  extension [Self <: XVolatileResult](x: Self) {
     
-    @scala.inline
-    def setAddResultListener(value: XResultListener => Unit): Self = StObject.set(x, "addResultListener", js.Any.fromFunction1(value))
+    inline def setAddResultListener(value: XResultListener => Unit): Self = StObject.set(x, "addResultListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveResultListener(value: XResultListener => Unit): Self = StObject.set(x, "removeResultListener", js.Any.fromFunction1(value))
+    inline def setRemoveResultListener(value: XResultListener => Unit): Self = StObject.set(x, "removeResultListener", js.Any.fromFunction1(value))
   }
 }

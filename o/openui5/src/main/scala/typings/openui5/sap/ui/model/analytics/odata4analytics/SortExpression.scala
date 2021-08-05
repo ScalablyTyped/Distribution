@@ -55,8 +55,7 @@ trait SortExpression extends StObject {
 }
 object SortExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSorter: (String, js.Any) => SortExpression,
     clear: () => Unit,
     getEntityType: () => EntityType,
@@ -69,28 +68,20 @@ object SortExpression {
     __obj.asInstanceOf[SortExpression]
   }
   
-  @scala.inline
-  implicit class SortExpressionMutableBuilder[Self <: SortExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SortExpression](x: Self) {
     
-    @scala.inline
-    def setAddSorter(value: (String, js.Any) => SortExpression): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
+    inline def setAddSorter(value: (String, js.Any) => SortExpression): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
+    inline def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExpressionAsUI5Sorter(value: () => Sorter): Self = StObject.set(x, "getExpressionAsUI5Sorter", js.Any.fromFunction0(value))
+    inline def setGetExpressionAsUI5Sorter(value: () => Sorter): Self = StObject.set(x, "getExpressionAsUI5Sorter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExpressionsAsUI5SorterArray(value: () => js.Array[Sorter]): Self = StObject.set(x, "getExpressionsAsUI5SorterArray", js.Any.fromFunction0(value))
+    inline def setGetExpressionsAsUI5SorterArray(value: () => js.Array[Sorter]): Self = StObject.set(x, "getExpressionsAsUI5SorterArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIOrderByOptionValue(value: js.Any => String): Self = StObject.set(x, "getURIOrderByOptionValue", js.Any.fromFunction1(value))
+    inline def setGetURIOrderByOptionValue(value: js.Any => String): Self = StObject.set(x, "getURIOrderByOptionValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSorter(value: String => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
+    inline def setRemoveSorter(value: String => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
   }
 }

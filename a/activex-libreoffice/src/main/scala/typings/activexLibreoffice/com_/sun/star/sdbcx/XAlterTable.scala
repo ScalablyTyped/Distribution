@@ -31,8 +31,7 @@ trait XAlterTable
 }
 object XAlterTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     alterColumnByIndex: (Double, XPropertySet) => Unit,
     alterColumnByName: (String, XPropertySet) => Unit,
@@ -43,13 +42,10 @@ object XAlterTable {
     __obj.asInstanceOf[XAlterTable]
   }
   
-  @scala.inline
-  implicit class XAlterTableMutableBuilder[Self <: XAlterTable] (val x: Self) extends AnyVal {
+  extension [Self <: XAlterTable](x: Self) {
     
-    @scala.inline
-    def setAlterColumnByIndex(value: (Double, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByIndex", js.Any.fromFunction2(value))
+    inline def setAlterColumnByIndex(value: (Double, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAlterColumnByName(value: (String, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByName", js.Any.fromFunction2(value))
+    inline def setAlterColumnByName(value: (String, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByName", js.Any.fromFunction2(value))
   }
 }

@@ -13,16 +13,13 @@ trait DescribeAssetModelRequest extends StObject {
 }
 object DescribeAssetModelRequest {
   
-  @scala.inline
-  def apply(assetModelId: ID): DescribeAssetModelRequest = {
+  inline def apply(assetModelId: ID): DescribeAssetModelRequest = {
     val __obj = js.Dynamic.literal(assetModelId = assetModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetModelRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAssetModelRequestMutableBuilder[Self <: DescribeAssetModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssetModelRequest](x: Self) {
     
-    @scala.inline
-    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
+    inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
   }
 }

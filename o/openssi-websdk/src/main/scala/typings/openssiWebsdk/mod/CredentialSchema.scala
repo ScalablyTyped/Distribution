@@ -18,8 +18,7 @@ trait CredentialSchema extends StObject {
 }
 object CredentialSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attr_names: js.Array[String],
     id: CredentialSchemaID,
     name: String,
@@ -30,25 +29,18 @@ object CredentialSchema {
     __obj.asInstanceOf[CredentialSchema]
   }
   
-  @scala.inline
-  implicit class CredentialSchemaMutableBuilder[Self <: CredentialSchema] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialSchema](x: Self) {
     
-    @scala.inline
-    def setAttr_names(value: js.Array[String]): Self = StObject.set(x, "attr_names", value.asInstanceOf[js.Any])
+    inline def setAttr_names(value: js.Array[String]): Self = StObject.set(x, "attr_names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttr_namesVarargs(value: String*): Self = StObject.set(x, "attr_names", js.Array(value :_*))
+    inline def setAttr_namesVarargs(value: String*): Self = StObject.set(x, "attr_names", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: CredentialSchemaID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: CredentialSchemaID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamever(value: String): Self = StObject.set(x, "namever", value.asInstanceOf[js.Any])
+    inline def setNamever(value: String): Self = StObject.set(x, "namever", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

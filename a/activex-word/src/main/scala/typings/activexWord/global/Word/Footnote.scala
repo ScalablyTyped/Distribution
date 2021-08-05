@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Footnote")
 @js.native
-class Footnote protected ()
+/* private */ class Footnote ()
   extends StObject
      with typings.activexWord.Word.Footnote {
   
@@ -31,7 +31,7 @@ class Footnote protected ()
   /* CompleteClass */
   override val Reference: typings.activexWord.Word.Range = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Footnote_typekey")
   var WordDotFootnote_typekey: typings.activexWord.Word.Footnote = js.native
 }

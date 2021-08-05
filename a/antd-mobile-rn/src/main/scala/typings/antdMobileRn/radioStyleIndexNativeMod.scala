@@ -22,8 +22,7 @@ object radioStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/radio/style/index.native", "default.icon")
     @js.native
     def icon: HeightWidth = js.native
-    @scala.inline
-    def icon_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
+    inline def icon_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/radio/style/index.native", "default.radioItem")
     @js.native
@@ -36,26 +35,21 @@ object radioStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/radio/style/index.native", "default.radioItemContentDisable")
     @js.native
     def radioItemContentDisable: ColorString = js.native
-    @scala.inline
-    def radioItemContentDisable_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItemContentDisable")(x.asInstanceOf[js.Any])
+    inline def radioItemContentDisable_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItemContentDisable")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def radioItemContent_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItemContent")(x.asInstanceOf[js.Any])
+    inline def radioItemContent_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItemContent")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/radio/style/index.native", "default.radioItemRadio")
     @js.native
     def radioItemRadio: MarginLeftMarginRight = js.native
-    @scala.inline
-    def radioItemRadio_=(x: MarginLeftMarginRight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItemRadio")(x.asInstanceOf[js.Any])
+    inline def radioItemRadio_=(x: MarginLeftMarginRight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItemRadio")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def radioItem_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItem")(x.asInstanceOf[js.Any])
+    inline def radioItem_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radioItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/radio/style/index.native", "default.wrapper")
     @js.native
     def wrapper: AlignItemsFlexDirection = js.native
-    @scala.inline
-    def wrapper_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
+    inline def wrapper_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
   trait IRadioStyle extends StObject {
@@ -74,8 +68,7 @@ object radioStyleIndexNativeMod {
   }
   object IRadioStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       icon: ViewStyle,
       radioItem: ViewStyle,
       radioItemContent: TextStyle,
@@ -87,26 +80,19 @@ object radioStyleIndexNativeMod {
       __obj.asInstanceOf[IRadioStyle]
     }
     
-    @scala.inline
-    implicit class IRadioStyleMutableBuilder[Self <: IRadioStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IRadioStyle](x: Self) {
       
-      @scala.inline
-      def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioItem(value: ViewStyle): Self = StObject.set(x, "radioItem", value.asInstanceOf[js.Any])
+      inline def setRadioItem(value: ViewStyle): Self = StObject.set(x, "radioItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioItemContent(value: TextStyle): Self = StObject.set(x, "radioItemContent", value.asInstanceOf[js.Any])
+      inline def setRadioItemContent(value: TextStyle): Self = StObject.set(x, "radioItemContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioItemContentDisable(value: TextStyle): Self = StObject.set(x, "radioItemContentDisable", value.asInstanceOf[js.Any])
+      inline def setRadioItemContentDisable(value: TextStyle): Self = StObject.set(x, "radioItemContentDisable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioItemRadio(value: ViewStyle): Self = StObject.set(x, "radioItemRadio", value.asInstanceOf[js.Any])
+      inline def setRadioItemRadio(value: ViewStyle): Self = StObject.set(x, "radioItemRadio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

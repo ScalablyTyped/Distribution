@@ -14,19 +14,15 @@ trait QueryError extends StObject {
 }
 object QueryError {
   
-  @scala.inline
-  def apply(body: String, code: Double): QueryError = {
+  inline def apply(body: String, code: Double): QueryError = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryError]
   }
   
-  @scala.inline
-  implicit class QueryErrorMutableBuilder[Self <: QueryError] (val x: Self) extends AnyVal {
+  extension [Self <: QueryError](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait BookmarksBookmarkEditEvent extends StObject {
 }
 object BookmarksBookmarkEditEvent {
   
-  @scala.inline
-  def apply(bookmark: Bookmark): BookmarksBookmarkEditEvent = {
+  inline def apply(bookmark: Bookmark): BookmarksBookmarkEditEvent = {
     val __obj = js.Dynamic.literal(bookmark = bookmark.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarksBookmarkEditEvent]
   }
   
-  @scala.inline
-  implicit class BookmarksBookmarkEditEventMutableBuilder[Self <: BookmarksBookmarkEditEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarksBookmarkEditEvent](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: Bookmark): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: Bookmark): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
   }
 }

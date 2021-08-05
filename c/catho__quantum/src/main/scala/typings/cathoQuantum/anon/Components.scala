@@ -14,31 +14,23 @@ trait Components extends StObject {
 }
 object Components {
   
-  @scala.inline
-  def apply(): Components = {
+  inline def apply(): Components = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Components]
   }
   
-  @scala.inline
-  implicit class ComponentsMutableBuilder[Self <: Components] (val x: Self) extends AnyVal {
+  extension [Self <: Components](x: Self) {
     
-    @scala.inline
-    def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+    inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+    inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
     
-    @scala.inline
-    def setComponents(value: Badge): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Badge): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

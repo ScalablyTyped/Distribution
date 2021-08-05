@@ -40,20 +40,16 @@ object pageMod {
   }
   object LoadingProcessData {
     
-    @scala.inline
-    def apply(loaded: Double, total: Double): LoadingProcessData = {
+    inline def apply(loaded: Double, total: Double): LoadingProcessData = {
       val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadingProcessData]
     }
     
-    @scala.inline
-    implicit class LoadingProcessDataMutableBuilder[Self <: LoadingProcessData] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingProcessData](x: Self) {
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,8 +69,7 @@ object pageMod {
   }
   object PDFPageItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _transport: js.Object,
       commonObjs: js.Object,
       getAnnotations: /* repeated */ js.Any => js.Any,
@@ -86,26 +81,19 @@ object pageMod {
       __obj.asInstanceOf[PDFPageItem]
     }
     
-    @scala.inline
-    implicit class PDFPageItemMutableBuilder[Self <: PDFPageItem] (val x: Self) extends AnyVal {
+    extension [Self <: PDFPageItem](x: Self) {
       
-      @scala.inline
-      def setCommonObjs(value: js.Object): Self = StObject.set(x, "commonObjs", value.asInstanceOf[js.Any])
+      inline def setCommonObjs(value: js.Object): Self = StObject.set(x, "commonObjs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAnnotations(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction1(value))
+      inline def setGetAnnotations(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTextContent(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getTextContent", js.Any.fromFunction1(value))
+      inline def setGetTextContent(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getTextContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetViewport(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
+      inline def setGetViewport(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRender(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_transport(value: js.Object): Self = StObject.set(x, "_transport", value.asInstanceOf[js.Any])
+      inline def set_transport(value: js.Object): Self = StObject.set(x, "_transport", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,8 +111,7 @@ object pageMod {
   }
   object PDFPageProxy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getAnnotations: () => PDFPromise[PDFAnnotations],
       getTextContent: () => PDFPromise[TextContent],
@@ -144,20 +131,15 @@ object pageMod {
       __obj.asInstanceOf[PDFPageProxy]
     }
     
-    @scala.inline
-    implicit class PDFPageProxyMutableBuilder[Self <: PDFPageProxy] (val x: Self) extends AnyVal {
+    extension [Self <: PDFPageProxy](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
+      inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
+      inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,182 +297,124 @@ object pageMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomTextRenderer(value: /* layer */ TextLayerItemInternal => Element): Self = StObject.set(x, "customTextRenderer", js.Any.fromFunction1(value))
+      inline def setCustomTextRenderer(value: /* layer */ TextLayerItemInternal => Element): Self = StObject.set(x, "customTextRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomTextRendererUndefined: Self = StObject.set(x, "customTextRenderer", js.undefined)
+      inline def setCustomTextRendererUndefined: Self = StObject.set(x, "customTextRenderer", js.undefined)
       
-      @scala.inline
-      def setError(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFunction0(value: () => Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      inline def setErrorFunction0(value: () => Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setLoading(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingFunction0(value: () => Element): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
+      inline def setLoadingFunction0(value: () => Element): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setNoData(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+      inline def setNoData(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDataFunction0(value: () => Element): Self = StObject.set(x, "noData", js.Any.fromFunction0(value))
+      inline def setNoDataFunction0(value: () => Element): Self = StObject.set(x, "noData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
+      inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
       
-      @scala.inline
-      def setOnGetAnnotationsError(value: /* error */ Error => Unit): Self = StObject.set(x, "onGetAnnotationsError", js.Any.fromFunction1(value))
+      inline def setOnGetAnnotationsError(value: /* error */ Error => Unit): Self = StObject.set(x, "onGetAnnotationsError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGetAnnotationsErrorUndefined: Self = StObject.set(x, "onGetAnnotationsError", js.undefined)
+      inline def setOnGetAnnotationsErrorUndefined: Self = StObject.set(x, "onGetAnnotationsError", js.undefined)
       
-      @scala.inline
-      def setOnGetAnnotationsSuccess(value: /* annotations */ js.Any => Unit): Self = StObject.set(x, "onGetAnnotationsSuccess", js.Any.fromFunction1(value))
+      inline def setOnGetAnnotationsSuccess(value: /* annotations */ js.Any => Unit): Self = StObject.set(x, "onGetAnnotationsSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGetAnnotationsSuccessUndefined: Self = StObject.set(x, "onGetAnnotationsSuccess", js.undefined)
+      inline def setOnGetAnnotationsSuccessUndefined: Self = StObject.set(x, "onGetAnnotationsSuccess", js.undefined)
       
-      @scala.inline
-      def setOnGetTextError(value: /* error */ Error => Unit): Self = StObject.set(x, "onGetTextError", js.Any.fromFunction1(value))
+      inline def setOnGetTextError(value: /* error */ Error => Unit): Self = StObject.set(x, "onGetTextError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGetTextErrorUndefined: Self = StObject.set(x, "onGetTextError", js.undefined)
+      inline def setOnGetTextErrorUndefined: Self = StObject.set(x, "onGetTextError", js.undefined)
       
-      @scala.inline
-      def setOnGetTextSuccess(value: /* items */ js.Array[TextItem] => Unit): Self = StObject.set(x, "onGetTextSuccess", js.Any.fromFunction1(value))
+      inline def setOnGetTextSuccess(value: /* items */ js.Array[TextItem] => Unit): Self = StObject.set(x, "onGetTextSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGetTextSuccessUndefined: Self = StObject.set(x, "onGetTextSuccess", js.undefined)
+      inline def setOnGetTextSuccessUndefined: Self = StObject.set(x, "onGetTextSuccess", js.undefined)
       
-      @scala.inline
-      def setOnLoadError(value: /* error */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+      inline def setOnLoadError(value: /* error */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
+      inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
       
-      @scala.inline
-      def setOnLoadProgress(value: /* data */ LoadingProcessData => Unit): Self = StObject.set(x, "onLoadProgress", js.Any.fromFunction1(value))
+      inline def setOnLoadProgress(value: /* data */ LoadingProcessData => Unit): Self = StObject.set(x, "onLoadProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadProgressUndefined: Self = StObject.set(x, "onLoadProgress", js.undefined)
+      inline def setOnLoadProgressUndefined: Self = StObject.set(x, "onLoadProgress", js.undefined)
       
-      @scala.inline
-      def setOnLoadSuccess(value: /* page */ PDFPageProxy => Unit): Self = StObject.set(x, "onLoadSuccess", js.Any.fromFunction1(value))
+      inline def setOnLoadSuccess(value: /* page */ PDFPageProxy => Unit): Self = StObject.set(x, "onLoadSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
+      inline def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
       
-      @scala.inline
-      def setOnRenderError(value: /* error */ Error => Unit): Self = StObject.set(x, "onRenderError", js.Any.fromFunction1(value))
+      inline def setOnRenderError(value: /* error */ Error => Unit): Self = StObject.set(x, "onRenderError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRenderErrorUndefined: Self = StObject.set(x, "onRenderError", js.undefined)
+      inline def setOnRenderErrorUndefined: Self = StObject.set(x, "onRenderError", js.undefined)
       
-      @scala.inline
-      def setOnRenderSuccess(value: () => Unit): Self = StObject.set(x, "onRenderSuccess", js.Any.fromFunction0(value))
+      inline def setOnRenderSuccess(value: () => Unit): Self = StObject.set(x, "onRenderSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRenderSuccessUndefined: Self = StObject.set(x, "onRenderSuccess", js.undefined)
+      inline def setOnRenderSuccessUndefined: Self = StObject.set(x, "onRenderSuccess", js.undefined)
       
-      @scala.inline
-      def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+      inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
+      inline def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+      inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
-      @scala.inline
-      def setRenderAnnotationLayer(value: Boolean): Self = StObject.set(x, "renderAnnotationLayer", value.asInstanceOf[js.Any])
+      inline def setRenderAnnotationLayer(value: Boolean): Self = StObject.set(x, "renderAnnotationLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderAnnotationLayerUndefined: Self = StObject.set(x, "renderAnnotationLayer", js.undefined)
+      inline def setRenderAnnotationLayerUndefined: Self = StObject.set(x, "renderAnnotationLayer", js.undefined)
       
-      @scala.inline
-      def setRenderInteractiveForms(value: Boolean): Self = StObject.set(x, "renderInteractiveForms", value.asInstanceOf[js.Any])
+      inline def setRenderInteractiveForms(value: Boolean): Self = StObject.set(x, "renderInteractiveForms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderInteractiveFormsUndefined: Self = StObject.set(x, "renderInteractiveForms", js.undefined)
+      inline def setRenderInteractiveFormsUndefined: Self = StObject.set(x, "renderInteractiveForms", js.undefined)
       
-      @scala.inline
-      def setRenderMode(value: canvas | svg | none): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+      inline def setRenderMode(value: canvas | svg | none): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
+      inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
       
-      @scala.inline
-      def setRenderTextLayer(value: Boolean): Self = StObject.set(x, "renderTextLayer", value.asInstanceOf[js.Any])
+      inline def setRenderTextLayer(value: Boolean): Self = StObject.set(x, "renderTextLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderTextLayerUndefined: Self = StObject.set(x, "renderTextLayer", js.undefined)
+      inline def setRenderTextLayerUndefined: Self = StObject.set(x, "renderTextLayer", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -512,8 +436,7 @@ object pageMod {
   }
   object TextItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dir: String,
       fontName: String,
       height: Double,
@@ -525,29 +448,21 @@ object pageMod {
       __obj.asInstanceOf[TextItem]
     }
     
-    @scala.inline
-    implicit class TextItemMutableBuilder[Self <: TextItem] (val x: Self) extends AnyVal {
+    extension [Self <: TextItem](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+      inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+      inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -571,8 +486,7 @@ object pageMod {
   }
   object TextLayerItemInternal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fontName: String,
       itemIndex: Double,
       page: PDFPageItem,
@@ -584,41 +498,29 @@ object pageMod {
       __obj.asInstanceOf[TextLayerItemInternal]
     }
     
-    @scala.inline
-    implicit class TextLayerItemInternalMutableBuilder[Self <: TextLayerItemInternal] (val x: Self) extends AnyVal {
+    extension [Self <: TextLayerItemInternal](x: Self) {
       
-      @scala.inline
-      def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+      inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
+      inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: PDFPageItem): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: PDFPageItem): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotate(value: `0` | `90` | `180` | `270`): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: `0` | `90` | `180` | `270`): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+      inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

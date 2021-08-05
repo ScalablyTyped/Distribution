@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.HWSAdapterObject")
 @js.native
-class HWSAdapterObject protected ()
+/* private */ class HWSAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.HWSAdapterObject {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.HWSAdapterObject_typekey")
   var InfoPathDotHWSAdapterObject_typekey: typings.activexInfopath.InfoPath.HWSAdapterObject = js.native
   

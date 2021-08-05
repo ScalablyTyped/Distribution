@@ -18,19 +18,15 @@ trait CommentIterationContext extends StObject {
 }
 object CommentIterationContext {
   
-  @scala.inline
-  def apply(firstComparingIteration: Double, secondComparingIteration: Double): CommentIterationContext = {
+  inline def apply(firstComparingIteration: Double, secondComparingIteration: Double): CommentIterationContext = {
     val __obj = js.Dynamic.literal(firstComparingIteration = firstComparingIteration.asInstanceOf[js.Any], secondComparingIteration = secondComparingIteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentIterationContext]
   }
   
-  @scala.inline
-  implicit class CommentIterationContextMutableBuilder[Self <: CommentIterationContext] (val x: Self) extends AnyVal {
+  extension [Self <: CommentIterationContext](x: Self) {
     
-    @scala.inline
-    def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
+    inline def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondComparingIteration(value: Double): Self = StObject.set(x, "secondComparingIteration", value.asInstanceOf[js.Any])
+    inline def setSecondComparingIteration(value: Double): Self = StObject.set(x, "secondComparingIteration", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait InboundCrossClusterSearchConnection extends StObject {
 }
 object InboundCrossClusterSearchConnection {
   
-  @scala.inline
-  def apply(): InboundCrossClusterSearchConnection = {
+  inline def apply(): InboundCrossClusterSearchConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InboundCrossClusterSearchConnection]
   }
   
-  @scala.inline
-  implicit class InboundCrossClusterSearchConnectionMutableBuilder[Self <: InboundCrossClusterSearchConnection] (val x: Self) extends AnyVal {
+  extension [Self <: InboundCrossClusterSearchConnection](x: Self) {
     
-    @scala.inline
-    def setConnectionStatus(value: InboundCrossClusterSearchConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
+    inline def setConnectionStatus(value: InboundCrossClusterSearchConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
+    inline def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
-    @scala.inline
-    def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
+    inline def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossClusterSearchConnectionIdUndefined: Self = StObject.set(x, "CrossClusterSearchConnectionId", js.undefined)
+    inline def setCrossClusterSearchConnectionIdUndefined: Self = StObject.set(x, "CrossClusterSearchConnectionId", js.undefined)
     
-    @scala.inline
-    def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
+    inline def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDomainInfoUndefined: Self = StObject.set(x, "DestinationDomainInfo", js.undefined)
+    inline def setDestinationDomainInfoUndefined: Self = StObject.set(x, "DestinationDomainInfo", js.undefined)
     
-    @scala.inline
-    def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
+    inline def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDomainInfoUndefined: Self = StObject.set(x, "SourceDomainInfo", js.undefined)
+    inline def setSourceDomainInfoUndefined: Self = StObject.set(x, "SourceDomainInfo", js.undefined)
   }
 }

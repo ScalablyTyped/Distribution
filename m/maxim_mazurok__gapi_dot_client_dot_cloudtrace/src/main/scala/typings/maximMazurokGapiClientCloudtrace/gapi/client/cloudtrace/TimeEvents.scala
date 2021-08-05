@@ -17,34 +17,25 @@ trait TimeEvents extends StObject {
 }
 object TimeEvents {
   
-  @scala.inline
-  def apply(): TimeEvents = {
+  inline def apply(): TimeEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeEvents]
   }
   
-  @scala.inline
-  implicit class TimeEventsMutableBuilder[Self <: TimeEvents] (val x: Self) extends AnyVal {
+  extension [Self <: TimeEvents](x: Self) {
     
-    @scala.inline
-    def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
+    inline def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedAnnotationsCountUndefined: Self = StObject.set(x, "droppedAnnotationsCount", js.undefined)
+    inline def setDroppedAnnotationsCountUndefined: Self = StObject.set(x, "droppedAnnotationsCount", js.undefined)
     
-    @scala.inline
-    def setDroppedMessageEventsCount(value: Double): Self = StObject.set(x, "droppedMessageEventsCount", value.asInstanceOf[js.Any])
+    inline def setDroppedMessageEventsCount(value: Double): Self = StObject.set(x, "droppedMessageEventsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedMessageEventsCountUndefined: Self = StObject.set(x, "droppedMessageEventsCount", js.undefined)
+    inline def setDroppedMessageEventsCountUndefined: Self = StObject.set(x, "droppedMessageEventsCount", js.undefined)
     
-    @scala.inline
-    def setTimeEvent(value: js.Array[TimeEvent]): Self = StObject.set(x, "timeEvent", value.asInstanceOf[js.Any])
+    inline def setTimeEvent(value: js.Array[TimeEvent]): Self = StObject.set(x, "timeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
+    inline def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
     
-    @scala.inline
-    def setTimeEventVarargs(value: TimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
+    inline def setTimeEventVarargs(value: TimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
   }
 }

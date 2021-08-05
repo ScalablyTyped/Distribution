@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def LinearGradient(hasColorsLocationsStartEndProps: PropsWithChildren[LinearGradientProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("LinearGradient")(hasColorsLocationsStartEndProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def LinearGradient(hasColorsLocationsStartEndProps: PropsWithChildren[LinearGradientProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("LinearGradient")(hasColorsLocationsStartEndProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type LinearGradientPoint = X | NativeLinearGradientPoint
   

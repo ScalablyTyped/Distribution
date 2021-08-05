@@ -10,16 +10,13 @@ trait KnockoutPageGenerator extends StObject {
 }
 object KnockoutPageGenerator {
   
-  @scala.inline
-  def apply(generate: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): KnockoutPageGenerator = {
+  inline def apply(generate: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): KnockoutPageGenerator = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
     __obj.asInstanceOf[KnockoutPageGenerator]
   }
   
-  @scala.inline
-  implicit class KnockoutPageGeneratorMutableBuilder[Self <: KnockoutPageGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutPageGenerator](x: Self) {
     
-    @scala.inline
-    def setGenerate(value: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+    inline def setGenerate(value: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }
 }

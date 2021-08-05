@@ -11,16 +11,13 @@ trait PickImplemail extends StObject {
 }
 object PickImplemail {
   
-  @scala.inline
-  def apply(email: String): PickImplemail = {
+  inline def apply(email: String): PickImplemail = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplemail]
   }
   
-  @scala.inline
-  implicit class PickImplemailMutableBuilder[Self <: PickImplemail] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplemail](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

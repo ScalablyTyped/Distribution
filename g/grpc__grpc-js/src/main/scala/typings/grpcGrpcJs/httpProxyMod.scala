@@ -15,11 +15,9 @@ object httpProxyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProxiedConnection(address: SubchannelAddress, channelOptions: ChannelOptions, connectionOptions: ConnectionOptions): js.Promise[ProxyConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProxiedConnection")(address.asInstanceOf[js.Any], channelOptions.asInstanceOf[js.Any], connectionOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyConnectionResult]]
+  inline def getProxiedConnection(address: SubchannelAddress, channelOptions: ChannelOptions, connectionOptions: ConnectionOptions): js.Promise[ProxyConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProxiedConnection")(address.asInstanceOf[js.Any], channelOptions.asInstanceOf[js.Any], connectionOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyConnectionResult]]
   
-  @scala.inline
-  def mapProxyName(target: GrpcUri, options: ChannelOptions): ProxyMapResult = (^.asInstanceOf[js.Dynamic].applyDynamic("mapProxyName")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProxyMapResult]
+  inline def mapProxyName(target: GrpcUri, options: ChannelOptions): ProxyMapResult = (^.asInstanceOf[js.Dynamic].applyDynamic("mapProxyName")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProxyMapResult]
   
   trait ProxyConnectionResult extends StObject {
     
@@ -29,26 +27,20 @@ object httpProxyMod {
   }
   object ProxyConnectionResult {
     
-    @scala.inline
-    def apply(): ProxyConnectionResult = {
+    inline def apply(): ProxyConnectionResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyConnectionResult]
     }
     
-    @scala.inline
-    implicit class ProxyConnectionResultMutableBuilder[Self <: ProxyConnectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyConnectionResult](x: Self) {
       
-      @scala.inline
-      def setRealTarget(value: GrpcUri): Self = StObject.set(x, "realTarget", value.asInstanceOf[js.Any])
+      inline def setRealTarget(value: GrpcUri): Self = StObject.set(x, "realTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealTargetUndefined: Self = StObject.set(x, "realTarget", js.undefined)
+      inline def setRealTargetUndefined: Self = StObject.set(x, "realTarget", js.undefined)
       
-      @scala.inline
-      def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+      inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     }
   }
   
@@ -60,20 +52,16 @@ object httpProxyMod {
   }
   object ProxyMapResult {
     
-    @scala.inline
-    def apply(extraOptions: ChannelOptions, target: GrpcUri): ProxyMapResult = {
+    inline def apply(extraOptions: ChannelOptions, target: GrpcUri): ProxyMapResult = {
       val __obj = js.Dynamic.literal(extraOptions = extraOptions.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyMapResult]
     }
     
-    @scala.inline
-    implicit class ProxyMapResultMutableBuilder[Self <: ProxyMapResult] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyMapResult](x: Self) {
       
-      @scala.inline
-      def setExtraOptions(value: ChannelOptions): Self = StObject.set(x, "extraOptions", value.asInstanceOf[js.Any])
+      inline def setExtraOptions(value: ChannelOptions): Self = StObject.set(x, "extraOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: GrpcUri): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: GrpcUri): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

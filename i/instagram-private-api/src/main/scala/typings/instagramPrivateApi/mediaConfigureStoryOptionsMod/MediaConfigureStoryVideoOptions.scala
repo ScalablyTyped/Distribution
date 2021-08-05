@@ -76,205 +76,139 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MediaConfigureStoryVideoOptions {
   
-  @scala.inline
-  def apply(configure_mode: `1` | `2`, height: Double, length: Double, upload_id: String, width: Double): MediaConfigureStoryVideoOptions = {
+  inline def apply(configure_mode: `1` | `2`, height: Double, length: Double, upload_id: String, width: Double): MediaConfigureStoryVideoOptions = {
     val __obj = js.Dynamic.literal(configure_mode = configure_mode.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureStoryVideoOptions]
   }
   
-  @scala.inline
-  implicit class MediaConfigureStoryVideoOptionsMutableBuilder[Self <: MediaConfigureStoryVideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MediaConfigureStoryVideoOptions](x: Self) {
     
-    @scala.inline
-    def setAllow_multi_configures(value: `0` | `1`): Self = StObject.set(x, "allow_multi_configures", value.asInstanceOf[js.Any])
+    inline def setAllow_multi_configures(value: `0` | `1`): Self = StObject.set(x, "allow_multi_configures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_multi_configuresUndefined: Self = StObject.set(x, "allow_multi_configures", js.undefined)
+    inline def setAllow_multi_configuresUndefined: Self = StObject.set(x, "allow_multi_configures", js.undefined)
     
-    @scala.inline
-    def setAttached_media(value: js.Array[StoryAttachedMedia] | String): Self = StObject.set(x, "attached_media", value.asInstanceOf[js.Any])
+    inline def setAttached_media(value: js.Array[StoryAttachedMedia] | String): Self = StObject.set(x, "attached_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttached_mediaUndefined: Self = StObject.set(x, "attached_media", js.undefined)
+    inline def setAttached_mediaUndefined: Self = StObject.set(x, "attached_media", js.undefined)
     
-    @scala.inline
-    def setAttached_mediaVarargs(value: StoryAttachedMedia*): Self = StObject.set(x, "attached_media", js.Array(value :_*))
+    inline def setAttached_mediaVarargs(value: StoryAttachedMedia*): Self = StObject.set(x, "attached_media", js.Array(value :_*))
     
-    @scala.inline
-    def setAudience(value: besties): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: besties): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setCamera_position(value: String): Self = StObject.set(x, "camera_position", value.asInstanceOf[js.Any])
+    inline def setCamera_position(value: String): Self = StObject.set(x, "camera_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamera_positionUndefined: Self = StObject.set(x, "camera_position", js.undefined)
+    inline def setCamera_positionUndefined: Self = StObject.set(x, "camera_position", js.undefined)
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setClient_context(value: String): Self = StObject.set(x, "client_context", value.asInstanceOf[js.Any])
+    inline def setClient_context(value: String): Self = StObject.set(x, "client_context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_contextUndefined: Self = StObject.set(x, "client_context", js.undefined)
+    inline def setClient_contextUndefined: Self = StObject.set(x, "client_context", js.undefined)
     
-    @scala.inline
-    def setClient_shared_at(value: String): Self = StObject.set(x, "client_shared_at", value.asInstanceOf[js.Any])
+    inline def setClient_shared_at(value: String): Self = StObject.set(x, "client_shared_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_shared_atUndefined: Self = StObject.set(x, "client_shared_at", js.undefined)
+    inline def setClient_shared_atUndefined: Self = StObject.set(x, "client_shared_at", js.undefined)
     
-    @scala.inline
-    def setConfigure_mode(value: `1` | `2`): Self = StObject.set(x, "configure_mode", value.asInstanceOf[js.Any])
+    inline def setConfigure_mode(value: `1` | `2`): Self = StObject.set(x, "configure_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternal_features(value: polling_sticker): Self = StObject.set(x, "internal_features", value.asInstanceOf[js.Any])
+    inline def setInternal_features(value: polling_sticker): Self = StObject.set(x, "internal_features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternal_featuresUndefined: Self = StObject.set(x, "internal_features", js.undefined)
+    inline def setInternal_featuresUndefined: Self = StObject.set(x, "internal_features", js.undefined)
     
-    @scala.inline
-    def setMas_opt_in(value: NOT_PROMPTED): Self = StObject.set(x, "mas_opt_in", value.asInstanceOf[js.Any])
+    inline def setMas_opt_in(value: NOT_PROMPTED): Self = StObject.set(x, "mas_opt_in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMas_opt_inUndefined: Self = StObject.set(x, "mas_opt_in", js.undefined)
+    inline def setMas_opt_inUndefined: Self = StObject.set(x, "mas_opt_in", js.undefined)
     
-    @scala.inline
-    def setRecipient_users(value: js.Array[String] | String): Self = StObject.set(x, "recipient_users", value.asInstanceOf[js.Any])
+    inline def setRecipient_users(value: js.Array[String] | String): Self = StObject.set(x, "recipient_users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient_usersUndefined: Self = StObject.set(x, "recipient_users", js.undefined)
+    inline def setRecipient_usersUndefined: Self = StObject.set(x, "recipient_users", js.undefined)
     
-    @scala.inline
-    def setRecipient_usersVarargs(value: String*): Self = StObject.set(x, "recipient_users", js.Array(value :_*))
+    inline def setRecipient_usersVarargs(value: String*): Self = StObject.set(x, "recipient_users", js.Array(value :_*))
     
-    @scala.inline
-    def setReel_mentions(value: js.Array[StoryMention] | String): Self = StObject.set(x, "reel_mentions", value.asInstanceOf[js.Any])
+    inline def setReel_mentions(value: js.Array[StoryMention] | String): Self = StObject.set(x, "reel_mentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReel_mentionsUndefined: Self = StObject.set(x, "reel_mentions", js.undefined)
+    inline def setReel_mentionsUndefined: Self = StObject.set(x, "reel_mentions", js.undefined)
     
-    @scala.inline
-    def setReel_mentionsVarargs(value: StoryMention*): Self = StObject.set(x, "reel_mentions", js.Array(value :_*))
+    inline def setReel_mentionsVarargs(value: StoryMention*): Self = StObject.set(x, "reel_mentions", js.Array(value :_*))
     
-    @scala.inline
-    def setReply_type(value: story | String): Self = StObject.set(x, "reply_type", value.asInstanceOf[js.Any])
+    inline def setReply_type(value: story | String): Self = StObject.set(x, "reply_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_typeUndefined: Self = StObject.set(x, "reply_type", js.undefined)
+    inline def setReply_typeUndefined: Self = StObject.set(x, "reply_type", js.undefined)
     
-    @scala.inline
-    def setStory_chats(value: js.Array[StoryChat] | String): Self = StObject.set(x, "story_chats", value.asInstanceOf[js.Any])
+    inline def setStory_chats(value: js.Array[StoryChat] | String): Self = StObject.set(x, "story_chats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_chatsUndefined: Self = StObject.set(x, "story_chats", js.undefined)
+    inline def setStory_chatsUndefined: Self = StObject.set(x, "story_chats", js.undefined)
     
-    @scala.inline
-    def setStory_chatsVarargs(value: StoryChat*): Self = StObject.set(x, "story_chats", js.Array(value :_*))
+    inline def setStory_chatsVarargs(value: StoryChat*): Self = StObject.set(x, "story_chats", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_countdowns(value: js.Array[StoryCountdown] | String): Self = StObject.set(x, "story_countdowns", value.asInstanceOf[js.Any])
+    inline def setStory_countdowns(value: js.Array[StoryCountdown] | String): Self = StObject.set(x, "story_countdowns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_countdownsUndefined: Self = StObject.set(x, "story_countdowns", js.undefined)
+    inline def setStory_countdownsUndefined: Self = StObject.set(x, "story_countdowns", js.undefined)
     
-    @scala.inline
-    def setStory_countdownsVarargs(value: StoryCountdown*): Self = StObject.set(x, "story_countdowns", js.Array(value :_*))
+    inline def setStory_countdownsVarargs(value: StoryCountdown*): Self = StObject.set(x, "story_countdowns", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_cta(value: js.Array[StoryCta] | String): Self = StObject.set(x, "story_cta", value.asInstanceOf[js.Any])
+    inline def setStory_cta(value: js.Array[StoryCta] | String): Self = StObject.set(x, "story_cta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_ctaUndefined: Self = StObject.set(x, "story_cta", js.undefined)
+    inline def setStory_ctaUndefined: Self = StObject.set(x, "story_cta", js.undefined)
     
-    @scala.inline
-    def setStory_ctaVarargs(value: StoryCta*): Self = StObject.set(x, "story_cta", js.Array(value :_*))
+    inline def setStory_ctaVarargs(value: StoryCta*): Self = StObject.set(x, "story_cta", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_hashtags(value: js.Array[StoryHashtag] | String): Self = StObject.set(x, "story_hashtags", value.asInstanceOf[js.Any])
+    inline def setStory_hashtags(value: js.Array[StoryHashtag] | String): Self = StObject.set(x, "story_hashtags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_hashtagsUndefined: Self = StObject.set(x, "story_hashtags", js.undefined)
+    inline def setStory_hashtagsUndefined: Self = StObject.set(x, "story_hashtags", js.undefined)
     
-    @scala.inline
-    def setStory_hashtagsVarargs(value: StoryHashtag*): Self = StObject.set(x, "story_hashtags", js.Array(value :_*))
+    inline def setStory_hashtagsVarargs(value: StoryHashtag*): Self = StObject.set(x, "story_hashtags", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_locations(value: js.Array[StoryLocation] | String): Self = StObject.set(x, "story_locations", value.asInstanceOf[js.Any])
+    inline def setStory_locations(value: js.Array[StoryLocation] | String): Self = StObject.set(x, "story_locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_locationsUndefined: Self = StObject.set(x, "story_locations", js.undefined)
+    inline def setStory_locationsUndefined: Self = StObject.set(x, "story_locations", js.undefined)
     
-    @scala.inline
-    def setStory_locationsVarargs(value: StoryLocation*): Self = StObject.set(x, "story_locations", js.Array(value :_*))
+    inline def setStory_locationsVarargs(value: StoryLocation*): Self = StObject.set(x, "story_locations", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_media_creation_date(value: String): Self = StObject.set(x, "story_media_creation_date", value.asInstanceOf[js.Any])
+    inline def setStory_media_creation_date(value: String): Self = StObject.set(x, "story_media_creation_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_media_creation_dateUndefined: Self = StObject.set(x, "story_media_creation_date", js.undefined)
+    inline def setStory_media_creation_dateUndefined: Self = StObject.set(x, "story_media_creation_date", js.undefined)
     
-    @scala.inline
-    def setStory_polls(value: js.Array[StoryPoll] | String): Self = StObject.set(x, "story_polls", value.asInstanceOf[js.Any])
+    inline def setStory_polls(value: js.Array[StoryPoll] | String): Self = StObject.set(x, "story_polls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_pollsUndefined: Self = StObject.set(x, "story_polls", js.undefined)
+    inline def setStory_pollsUndefined: Self = StObject.set(x, "story_polls", js.undefined)
     
-    @scala.inline
-    def setStory_pollsVarargs(value: StoryPoll*): Self = StObject.set(x, "story_polls", js.Array(value :_*))
+    inline def setStory_pollsVarargs(value: StoryPoll*): Self = StObject.set(x, "story_polls", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_questions(value: js.Array[StoryQuestion] | String): Self = StObject.set(x, "story_questions", value.asInstanceOf[js.Any])
+    inline def setStory_questions(value: js.Array[StoryQuestion] | String): Self = StObject.set(x, "story_questions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_questionsUndefined: Self = StObject.set(x, "story_questions", js.undefined)
+    inline def setStory_questionsUndefined: Self = StObject.set(x, "story_questions", js.undefined)
     
-    @scala.inline
-    def setStory_questionsVarargs(value: StoryQuestion*): Self = StObject.set(x, "story_questions", js.Array(value :_*))
+    inline def setStory_questionsVarargs(value: StoryQuestion*): Self = StObject.set(x, "story_questions", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_quizs(value: js.Array[StoryQuiz] | String): Self = StObject.set(x, "story_quizs", value.asInstanceOf[js.Any])
+    inline def setStory_quizs(value: js.Array[StoryQuiz] | String): Self = StObject.set(x, "story_quizs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_quizsUndefined: Self = StObject.set(x, "story_quizs", js.undefined)
+    inline def setStory_quizsUndefined: Self = StObject.set(x, "story_quizs", js.undefined)
     
-    @scala.inline
-    def setStory_quizsVarargs(value: StoryQuiz*): Self = StObject.set(x, "story_quizs", js.Array(value :_*))
+    inline def setStory_quizsVarargs(value: StoryQuiz*): Self = StObject.set(x, "story_quizs", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_sliders(value: js.Array[StorySlider] | String): Self = StObject.set(x, "story_sliders", value.asInstanceOf[js.Any])
+    inline def setStory_sliders(value: js.Array[StorySlider] | String): Self = StObject.set(x, "story_sliders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_slidersUndefined: Self = StObject.set(x, "story_sliders", js.undefined)
+    inline def setStory_slidersUndefined: Self = StObject.set(x, "story_sliders", js.undefined)
     
-    @scala.inline
-    def setStory_slidersVarargs(value: StorySlider*): Self = StObject.set(x, "story_sliders", js.Array(value :_*))
+    inline def setStory_slidersVarargs(value: StorySlider*): Self = StObject.set(x, "story_sliders", js.Array(value :_*))
     
-    @scala.inline
-    def setStory_sticker_ids(value: String | question_sticker_ma | countdown_sticker_time | chat_sticker_id): Self = StObject.set(x, "story_sticker_ids", value.asInstanceOf[js.Any])
+    inline def setStory_sticker_ids(value: String | question_sticker_ma | countdown_sticker_time | chat_sticker_id): Self = StObject.set(x, "story_sticker_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_sticker_idsUndefined: Self = StObject.set(x, "story_sticker_ids", js.undefined)
+    inline def setStory_sticker_idsUndefined: Self = StObject.set(x, "story_sticker_ids", js.undefined)
     
-    @scala.inline
-    def setThread_ids(value: js.Array[String] | String): Self = StObject.set(x, "thread_ids", value.asInstanceOf[js.Any])
+    inline def setThread_ids(value: js.Array[String] | String): Self = StObject.set(x, "thread_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThread_idsUndefined: Self = StObject.set(x, "thread_ids", js.undefined)
+    inline def setThread_idsUndefined: Self = StObject.set(x, "thread_ids", js.undefined)
     
-    @scala.inline
-    def setThread_idsVarargs(value: String*): Self = StObject.set(x, "thread_ids", js.Array(value :_*))
+    inline def setThread_idsVarargs(value: String*): Self = StObject.set(x, "thread_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setView_mode(value: replayable | once | String): Self = StObject.set(x, "view_mode", value.asInstanceOf[js.Any])
+    inline def setView_mode(value: replayable | once | String): Self = StObject.set(x, "view_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_modeUndefined: Self = StObject.set(x, "view_mode", js.undefined)
+    inline def setView_modeUndefined: Self = StObject.set(x, "view_mode", js.undefined)
   }
 }

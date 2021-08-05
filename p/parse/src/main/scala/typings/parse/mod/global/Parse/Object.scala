@@ -210,8 +210,7 @@ object Object extends Shortcut {
        with ScopeOptions
   object DestroyAllOptions {
     
-    @scala.inline
-    def apply(): DestroyAllOptions = {
+    inline def apply(): DestroyAllOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyAllOptions]
     }
@@ -224,8 +223,7 @@ object Object extends Shortcut {
        with ScopeOptions
   object DestroyOptions {
     
-    @scala.inline
-    def apply(): DestroyOptions = {
+    inline def apply(): DestroyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyOptions]
     }
@@ -255,8 +253,7 @@ object Object extends Shortcut {
        with ScopeOptions
   object FetchAllOptions {
     
-    @scala.inline
-    def apply(): FetchAllOptions = {
+    inline def apply(): FetchAllOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchAllOptions]
     }
@@ -268,8 +265,7 @@ object Object extends Shortcut {
        with ScopeOptions
   object FetchOptions {
     
-    @scala.inline
-    def apply(): FetchOptions = {
+    inline def apply(): FetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchOptions]
     }
@@ -281,8 +277,7 @@ object Object extends Shortcut {
        with ScopeOptions
   object SaveAllOptions {
     
-    @scala.inline
-    def apply(): SaveAllOptions = {
+    inline def apply(): SaveAllOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SaveAllOptions]
     }
@@ -297,8 +292,7 @@ object Object extends Shortcut {
        with ScopeOptions
   object SaveOptions {
     
-    @scala.inline
-    def apply(): SaveOptions = {
+    inline def apply(): SaveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SaveOptions]
     }
@@ -313,20 +307,16 @@ object Object extends Shortcut {
   }
   object SetOptions {
     
-    @scala.inline
-    def apply(): SetOptions = {
+    inline def apply(): SetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetOptions]
     }
     
-    @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetOptions](x: Self) {
       
-      @scala.inline
-      def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     }
   }
   
@@ -337,14 +327,12 @@ object Object extends Shortcut {
   trait _Encode[T] extends StObject
   object _Encode {
     
-    @scala.inline
-    def Iso(iso: String): typings.parse.anon.Iso = {
+    inline def Iso(iso: String): typings.parse.anon.Iso = {
       val __obj = js.Dynamic.literal(__type = "Date", iso = iso.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parse.anon.Iso]
     }
     
-    @scala.inline
-    def Pointer(__type: String, className: String, objectId: String): typings.parse.mod.global.Parse.Pointer = {
+    inline def Pointer(__type: String, className: String, objectId: String): typings.parse.mod.global.Parse.Pointer = {
       val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parse.mod.global.Parse.Pointer]
     }

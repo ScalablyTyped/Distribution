@@ -12,25 +12,19 @@ trait ChartAnimationParameter extends StObject {
 }
 object ChartAnimationParameter {
   
-  @scala.inline
-  def apply(): ChartAnimationParameter = {
+  inline def apply(): ChartAnimationParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAnimationParameter]
   }
   
-  @scala.inline
-  implicit class ChartAnimationParameterMutableBuilder[Self <: ChartAnimationParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAnimationParameter](x: Self) {
     
-    @scala.inline
-    def setAnimationObject(value: js.Any): Self = StObject.set(x, "animationObject", value.asInstanceOf[js.Any])
+    inline def setAnimationObject(value: js.Any): Self = StObject.set(x, "animationObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationObjectUndefined: Self = StObject.set(x, "animationObject", js.undefined)
+    inline def setAnimationObjectUndefined: Self = StObject.set(x, "animationObject", js.undefined)
     
-    @scala.inline
-    def setChartInstance(value: js.Any): Self = StObject.set(x, "chartInstance", value.asInstanceOf[js.Any])
+    inline def setChartInstance(value: js.Any): Self = StObject.set(x, "chartInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartInstanceUndefined: Self = StObject.set(x, "chartInstance", js.undefined)
+    inline def setChartInstanceUndefined: Self = StObject.set(x, "chartInstance", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait GanttTogglePlannedTasks
 }
 object GanttTogglePlannedTasks {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttTogglePlannedTasks = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttTogglePlannedTasks = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttTogglePlannedTasks]
   }
   
-  @scala.inline
-  implicit class GanttTogglePlannedTasksMutableBuilder[Self <: GanttTogglePlannedTasks] (val x: Self) extends AnyVal {
+  extension [Self <: GanttTogglePlannedTasks](x: Self) {
     
-    @scala.inline
-    def setShowPlannedTasks(value: Boolean): Self = StObject.set(x, "showPlannedTasks", value.asInstanceOf[js.Any])
+    inline def setShowPlannedTasks(value: Boolean): Self = StObject.set(x, "showPlannedTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPlannedTasksUndefined: Self = StObject.set(x, "showPlannedTasks", js.undefined)
+    inline def setShowPlannedTasksUndefined: Self = StObject.set(x, "showPlannedTasks", js.undefined)
   }
 }

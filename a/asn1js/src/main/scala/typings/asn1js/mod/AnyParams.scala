@@ -12,25 +12,19 @@ trait AnyParams extends StObject {
 }
 object AnyParams {
   
-  @scala.inline
-  def apply(): AnyParams = {
+  inline def apply(): AnyParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnyParams]
   }
   
-  @scala.inline
-  implicit class AnyParamsMutableBuilder[Self <: AnyParams] (val x: Self) extends AnyVal {
+  extension [Self <: AnyParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

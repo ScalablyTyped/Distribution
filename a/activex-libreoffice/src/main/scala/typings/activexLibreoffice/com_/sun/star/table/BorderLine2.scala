@@ -29,8 +29,7 @@ trait BorderLine2
 }
 object BorderLine2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Color: Color,
     InnerLineWidth: Double,
     LineDistance: Double,
@@ -42,13 +41,10 @@ object BorderLine2 {
     __obj.asInstanceOf[BorderLine2]
   }
   
-  @scala.inline
-  implicit class BorderLine2MutableBuilder[Self <: BorderLine2] (val x: Self) extends AnyVal {
+  extension [Self <: BorderLine2](x: Self) {
     
-    @scala.inline
-    def setLineStyle(value: Double): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: Double): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
   }
 }

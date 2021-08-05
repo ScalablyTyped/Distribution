@@ -14,28 +14,21 @@ trait GetJSONWebKeysResponse extends StObject {
 }
 object GetJSONWebKeysResponse {
   
-  @scala.inline
-  def apply(): GetJSONWebKeysResponse = {
+  inline def apply(): GetJSONWebKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetJSONWebKeysResponse]
   }
   
-  @scala.inline
-  implicit class GetJSONWebKeysResponseMutableBuilder[Self <: GetJSONWebKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetJSONWebKeysResponse](x: Self) {
     
-    @scala.inline
-    def setCacheHeader(value: HttpCacheControlResponseHeader): Self = StObject.set(x, "cacheHeader", value.asInstanceOf[js.Any])
+    inline def setCacheHeader(value: HttpCacheControlResponseHeader): Self = StObject.set(x, "cacheHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheHeaderUndefined: Self = StObject.set(x, "cacheHeader", js.undefined)
+    inline def setCacheHeaderUndefined: Self = StObject.set(x, "cacheHeader", js.undefined)
     
-    @scala.inline
-    def setKeys(value: js.Array[Jwk]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[Jwk]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: Jwk*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Jwk*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

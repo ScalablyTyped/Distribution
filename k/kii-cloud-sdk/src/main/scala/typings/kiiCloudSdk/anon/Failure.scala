@@ -14,19 +14,15 @@ trait Failure extends StObject {
 }
 object Failure {
   
-  @scala.inline
-  def apply(failure: (KiiACL, String) => js.Any, success: (KiiACL, js.Array[KiiACLEntry]) => js.Any): Failure = {
+  inline def apply(failure: (KiiACL, String) => js.Any, success: (KiiACL, js.Array[KiiACLEntry]) => js.Any): Failure = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction2(success))
     __obj.asInstanceOf[Failure]
   }
   
-  @scala.inline
-  implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
+  extension [Self <: Failure](x: Self) {
     
-    @scala.inline
-    def setFailure(value: (KiiACL, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
+    inline def setFailure(value: (KiiACL, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccess(value: (KiiACL, js.Array[KiiACLEntry]) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    inline def setSuccess(value: (KiiACL, js.Array[KiiACLEntry]) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
   }
 }

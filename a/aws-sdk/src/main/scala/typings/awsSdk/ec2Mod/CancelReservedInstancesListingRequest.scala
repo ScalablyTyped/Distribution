@@ -13,16 +13,13 @@ trait CancelReservedInstancesListingRequest extends StObject {
 }
 object CancelReservedInstancesListingRequest {
   
-  @scala.inline
-  def apply(ReservedInstancesListingId: ReservedInstancesListingId): CancelReservedInstancesListingRequest = {
+  inline def apply(ReservedInstancesListingId: ReservedInstancesListingId): CancelReservedInstancesListingRequest = {
     val __obj = js.Dynamic.literal(ReservedInstancesListingId = ReservedInstancesListingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelReservedInstancesListingRequest]
   }
   
-  @scala.inline
-  implicit class CancelReservedInstancesListingRequestMutableBuilder[Self <: CancelReservedInstancesListingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelReservedInstancesListingRequest](x: Self) {
     
-    @scala.inline
-    def setReservedInstancesListingId(value: ReservedInstancesListingId): Self = StObject.set(x, "ReservedInstancesListingId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesListingId(value: ReservedInstancesListingId): Self = StObject.set(x, "ReservedInstancesListingId", value.asInstanceOf[js.Any])
   }
 }

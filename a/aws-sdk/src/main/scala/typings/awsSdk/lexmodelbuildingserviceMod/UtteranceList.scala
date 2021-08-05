@@ -18,28 +18,21 @@ trait UtteranceList extends StObject {
 }
 object UtteranceList {
   
-  @scala.inline
-  def apply(): UtteranceList = {
+  inline def apply(): UtteranceList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UtteranceList]
   }
   
-  @scala.inline
-  implicit class UtteranceListMutableBuilder[Self <: UtteranceList] (val x: Self) extends AnyVal {
+  extension [Self <: UtteranceList](x: Self) {
     
-    @scala.inline
-    def setBotVersion(value: Version): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
+    inline def setBotVersion(value: Version): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
+    inline def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
     
-    @scala.inline
-    def setUtterances(value: ListOfUtterance): Self = StObject.set(x, "utterances", value.asInstanceOf[js.Any])
+    inline def setUtterances(value: ListOfUtterance): Self = StObject.set(x, "utterances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtterancesUndefined: Self = StObject.set(x, "utterances", js.undefined)
+    inline def setUtterancesUndefined: Self = StObject.set(x, "utterances", js.undefined)
     
-    @scala.inline
-    def setUtterancesVarargs(value: UtteranceData*): Self = StObject.set(x, "utterances", js.Array(value :_*))
+    inline def setUtterancesVarargs(value: UtteranceData*): Self = StObject.set(x, "utterances", js.Array(value :_*))
   }
 }

@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait StencilOp extends StObject
 object StencilOp {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[StencilOp & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("StencilOp")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StencilOp & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[StencilOp & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("StencilOp")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StencilOp & scala.Nothing]]
 }

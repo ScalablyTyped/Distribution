@@ -16,31 +16,23 @@ trait FieldsetHTMLAttributes[T]
 }
 object FieldsetHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): FieldsetHTMLAttributes[T] = {
+  inline def apply[T](): FieldsetHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldsetHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class FieldsetHTMLAttributesMutableBuilder[Self <: FieldsetHTMLAttributes[?], T] (val x: Self & FieldsetHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: FieldsetHTMLAttributes[?], T](x: Self & FieldsetHTMLAttributes[T]) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait DeletePullRequestApprovalRuleInput extends StObject {
 }
 object DeletePullRequestApprovalRuleInput {
   
-  @scala.inline
-  def apply(approvalRuleName: ApprovalRuleName, pullRequestId: PullRequestId): DeletePullRequestApprovalRuleInput = {
+  inline def apply(approvalRuleName: ApprovalRuleName, pullRequestId: PullRequestId): DeletePullRequestApprovalRuleInput = {
     val __obj = js.Dynamic.literal(approvalRuleName = approvalRuleName.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePullRequestApprovalRuleInput]
   }
   
-  @scala.inline
-  implicit class DeletePullRequestApprovalRuleInputMutableBuilder[Self <: DeletePullRequestApprovalRuleInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePullRequestApprovalRuleInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

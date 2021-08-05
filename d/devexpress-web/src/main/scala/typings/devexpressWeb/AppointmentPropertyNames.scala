@@ -21,19 +21,15 @@ trait AppointmentPropertyNames extends StObject {
 }
 object AppointmentPropertyNames {
   
-  @scala.inline
-  def apply(Normal: String, Pattern: String): AppointmentPropertyNames = {
+  inline def apply(Normal: String, Pattern: String): AppointmentPropertyNames = {
     val __obj = js.Dynamic.literal(Normal = Normal.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentPropertyNames]
   }
   
-  @scala.inline
-  implicit class AppointmentPropertyNamesMutableBuilder[Self <: AppointmentPropertyNames] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentPropertyNames](x: Self) {
     
-    @scala.inline
-    def setNormal(value: String): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: String): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
   }
 }

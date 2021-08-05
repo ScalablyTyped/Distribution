@@ -12,25 +12,19 @@ trait DataObjectRow extends StObject {
 }
 object DataObjectRow {
   
-  @scala.inline
-  def apply(c: js.Array[DataObjectCell]): DataObjectRow = {
+  inline def apply(c: js.Array[DataObjectCell]): DataObjectRow = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObjectRow]
   }
   
-  @scala.inline
-  implicit class DataObjectRowMutableBuilder[Self <: DataObjectRow] (val x: Self) extends AnyVal {
+  extension [Self <: DataObjectRow](x: Self) {
     
-    @scala.inline
-    def setC(value: js.Array[DataObjectCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: js.Array[DataObjectCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCVarargs(value: DataObjectCell*): Self = StObject.set(x, "c", js.Array(value :_*))
+    inline def setCVarargs(value: DataObjectCell*): Self = StObject.set(x, "c", js.Array(value :_*))
     
-    @scala.inline
-    def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
   }
 }

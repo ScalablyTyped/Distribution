@@ -24,40 +24,29 @@ trait PullsRemoveRequestedReviewersEndpoint extends StObject {
 }
 object PullsRemoveRequestedReviewersEndpoint {
   
-  @scala.inline
-  def apply(owner: String, pull_number: Double, repo: String): PullsRemoveRequestedReviewersEndpoint = {
+  inline def apply(owner: String, pull_number: Double, repo: String): PullsRemoveRequestedReviewersEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsRemoveRequestedReviewersEndpoint]
   }
   
-  @scala.inline
-  implicit class PullsRemoveRequestedReviewersEndpointMutableBuilder[Self <: PullsRemoveRequestedReviewersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: PullsRemoveRequestedReviewersEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
+    inline def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewers(value: js.Array[String]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
+    inline def setReviewers(value: js.Array[String]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewersUndefined: Self = StObject.set(x, "reviewers", js.undefined)
+    inline def setReviewersUndefined: Self = StObject.set(x, "reviewers", js.undefined)
     
-    @scala.inline
-    def setReviewersVarargs(value: String*): Self = StObject.set(x, "reviewers", js.Array(value :_*))
+    inline def setReviewersVarargs(value: String*): Self = StObject.set(x, "reviewers", js.Array(value :_*))
     
-    @scala.inline
-    def setTeam_reviewers(value: js.Array[String]): Self = StObject.set(x, "team_reviewers", value.asInstanceOf[js.Any])
+    inline def setTeam_reviewers(value: js.Array[String]): Self = StObject.set(x, "team_reviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_reviewersUndefined: Self = StObject.set(x, "team_reviewers", js.undefined)
+    inline def setTeam_reviewersUndefined: Self = StObject.set(x, "team_reviewers", js.undefined)
     
-    @scala.inline
-    def setTeam_reviewersVarargs(value: String*): Self = StObject.set(x, "team_reviewers", js.Array(value :_*))
+    inline def setTeam_reviewersVarargs(value: String*): Self = StObject.set(x, "team_reviewers", js.Array(value :_*))
   }
 }

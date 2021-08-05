@@ -13,16 +13,13 @@ trait DescribeRouteOutput extends StObject {
 }
 object DescribeRouteOutput {
   
-  @scala.inline
-  def apply(route: RouteData): DescribeRouteOutput = {
+  inline def apply(route: RouteData): DescribeRouteOutput = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRouteOutput]
   }
   
-  @scala.inline
-  implicit class DescribeRouteOutputMutableBuilder[Self <: DescribeRouteOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRouteOutput](x: Self) {
     
-    @scala.inline
-    def setRoute(value: RouteData): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: RouteData): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

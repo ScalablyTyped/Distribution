@@ -38,8 +38,7 @@ trait UserPoolVerificationMessageTemplate extends StObject {
 }
 object UserPoolVerificationMessageTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emailMessage: String,
     emailMessageByLink: String,
     emailSubject: String,
@@ -50,28 +49,20 @@ object UserPoolVerificationMessageTemplate {
     __obj.asInstanceOf[UserPoolVerificationMessageTemplate]
   }
   
-  @scala.inline
-  implicit class UserPoolVerificationMessageTemplateMutableBuilder[Self <: UserPoolVerificationMessageTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolVerificationMessageTemplate](x: Self) {
     
-    @scala.inline
-    def setDefaultEmailOption(value: String): Self = StObject.set(x, "defaultEmailOption", value.asInstanceOf[js.Any])
+    inline def setDefaultEmailOption(value: String): Self = StObject.set(x, "defaultEmailOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEmailOptionUndefined: Self = StObject.set(x, "defaultEmailOption", js.undefined)
+    inline def setDefaultEmailOptionUndefined: Self = StObject.set(x, "defaultEmailOption", js.undefined)
     
-    @scala.inline
-    def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
+    inline def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailMessageByLink(value: String): Self = StObject.set(x, "emailMessageByLink", value.asInstanceOf[js.Any])
+    inline def setEmailMessageByLink(value: String): Self = StObject.set(x, "emailMessageByLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubjectByLink(value: String): Self = StObject.set(x, "emailSubjectByLink", value.asInstanceOf[js.Any])
+    inline def setEmailSubjectByLink(value: String): Self = StObject.set(x, "emailSubjectByLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
+    inline def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
   }
 }

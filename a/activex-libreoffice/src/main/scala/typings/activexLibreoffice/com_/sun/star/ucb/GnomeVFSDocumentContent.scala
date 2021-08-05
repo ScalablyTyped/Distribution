@@ -27,8 +27,7 @@ trait GnomeVFSDocumentContent
      with XChild
 object GnomeVFSDocumentContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

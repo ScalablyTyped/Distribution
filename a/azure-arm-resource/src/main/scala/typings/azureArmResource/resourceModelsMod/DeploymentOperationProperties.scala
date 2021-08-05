@@ -49,61 +49,43 @@ trait DeploymentOperationProperties extends StObject {
 }
 object DeploymentOperationProperties {
   
-  @scala.inline
-  def apply(): DeploymentOperationProperties = {
+  inline def apply(): DeploymentOperationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentOperationProperties]
   }
   
-  @scala.inline
-  implicit class DeploymentOperationPropertiesMutableBuilder[Self <: DeploymentOperationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentOperationProperties](x: Self) {
     
-    @scala.inline
-    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
+    inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
+    inline def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
     
-    @scala.inline
-    def setRequest(value: HttpMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: HttpMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResponse(value: HttpMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: HttpMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setServiceRequestId(value: String): Self = StObject.set(x, "serviceRequestId", value.asInstanceOf[js.Any])
+    inline def setServiceRequestId(value: String): Self = StObject.set(x, "serviceRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRequestIdUndefined: Self = StObject.set(x, "serviceRequestId", js.undefined)
+    inline def setServiceRequestIdUndefined: Self = StObject.set(x, "serviceRequestId", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: js.Any): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: js.Any): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setTargetResource(value: TargetResource): Self = StObject.set(x, "targetResource", value.asInstanceOf[js.Any])
+    inline def setTargetResource(value: TargetResource): Self = StObject.set(x, "targetResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
+    inline def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

@@ -29,37 +29,27 @@ trait IonBackdrop extends StObject {
 }
 object IonBackdrop {
   
-  @scala.inline
-  def apply(): IonBackdrop = {
+  inline def apply(): IonBackdrop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonBackdrop]
   }
   
-  @scala.inline
-  implicit class IonBackdropMutableBuilder[Self <: IonBackdrop] (val x: Self) extends AnyVal {
+  extension [Self <: IonBackdrop](x: Self) {
     
-    @scala.inline
-    def setOnIonBackdropTap(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonBackdropTap", js.Any.fromFunction1(value))
+    inline def setOnIonBackdropTap(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonBackdropTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonBackdropTapUndefined: Self = StObject.set(x, "onIonBackdropTap", js.undefined)
+    inline def setOnIonBackdropTapUndefined: Self = StObject.set(x, "onIonBackdropTap", js.undefined)
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     
-    @scala.inline
-    def setTappable(value: Boolean): Self = StObject.set(x, "tappable", value.asInstanceOf[js.Any])
+    inline def setTappable(value: Boolean): Self = StObject.set(x, "tappable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTappableUndefined: Self = StObject.set(x, "tappable", js.undefined)
+    inline def setTappableUndefined: Self = StObject.set(x, "tappable", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

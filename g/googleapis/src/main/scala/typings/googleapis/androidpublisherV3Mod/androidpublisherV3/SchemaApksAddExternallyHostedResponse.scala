@@ -13,19 +13,15 @@ trait SchemaApksAddExternallyHostedResponse extends StObject {
 }
 object SchemaApksAddExternallyHostedResponse {
   
-  @scala.inline
-  def apply(): SchemaApksAddExternallyHostedResponse = {
+  inline def apply(): SchemaApksAddExternallyHostedResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApksAddExternallyHostedResponse]
   }
   
-  @scala.inline
-  implicit class SchemaApksAddExternallyHostedResponseMutableBuilder[Self <: SchemaApksAddExternallyHostedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApksAddExternallyHostedResponse](x: Self) {
     
-    @scala.inline
-    def setExternallyHostedApk(value: SchemaExternallyHostedApk): Self = StObject.set(x, "externallyHostedApk", value.asInstanceOf[js.Any])
+    inline def setExternallyHostedApk(value: SchemaExternallyHostedApk): Self = StObject.set(x, "externallyHostedApk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternallyHostedApkUndefined: Self = StObject.set(x, "externallyHostedApk", js.undefined)
+    inline def setExternallyHostedApkUndefined: Self = StObject.set(x, "externallyHostedApk", js.undefined)
   }
 }

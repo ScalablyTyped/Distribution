@@ -19,22 +19,17 @@ trait UpdateDeviceStateRequest extends StObject {
 }
 object UpdateDeviceStateRequest {
   
-  @scala.inline
-  def apply(DeviceId: string): UpdateDeviceStateRequest = {
+  inline def apply(DeviceId: string): UpdateDeviceStateRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceStateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceStateRequestMutableBuilder[Self <: UpdateDeviceStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceStateRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

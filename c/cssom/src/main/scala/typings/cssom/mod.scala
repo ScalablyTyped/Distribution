@@ -231,8 +231,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parse(ruleText: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parse(ruleText: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("cssom", "CSSStyleSheet")
@@ -312,9 +311,7 @@ object mod {
     var parentStyleSheet: StyleSheet | Null = js.native
   }
   
-  @scala.inline
-  def clone_(stylesheet: CSSStyleSheet): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(stylesheet.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
+  inline def clone_(stylesheet: CSSStyleSheet): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(stylesheet.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
   
-  @scala.inline
-  def parse(token: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(token.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
+  inline def parse(token: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(token.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPresetLightingSoftness extends StObject
 object MsoPresetLightingSoftness {
   
-  @scala.inline
-  def msoLightingBright: `3` = 3.asInstanceOf[`3`]
+  inline def msoLightingBright: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoLightingDim: `1` = 1.asInstanceOf[`1`]
+  inline def msoLightingDim: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoLightingNormal: `2` = 2.asInstanceOf[`2`]
+  inline def msoLightingNormal: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoPresetLightingSoftnessMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoPresetLightingSoftnessMixed: `-2` = -2.asInstanceOf[`-2`]
 }

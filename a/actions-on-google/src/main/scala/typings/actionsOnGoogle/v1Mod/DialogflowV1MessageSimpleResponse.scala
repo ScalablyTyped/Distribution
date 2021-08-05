@@ -16,25 +16,19 @@ trait DialogflowV1MessageSimpleResponse
 }
 object DialogflowV1MessageSimpleResponse {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageSimpleResponse = {
+  inline def apply(): DialogflowV1MessageSimpleResponse = {
     val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageSimpleResponse]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageSimpleResponseMutableBuilder[Self <: DialogflowV1MessageSimpleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageSimpleResponse](x: Self) {
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+    inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
     
-    @scala.inline
-    def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
+    inline def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
+    inline def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
   }
 }

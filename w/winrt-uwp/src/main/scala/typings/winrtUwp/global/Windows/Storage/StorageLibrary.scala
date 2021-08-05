@@ -24,8 +24,7 @@ object StorageLibrary {
     * @return When this method completes successfully, it returns the library (type StorageLibrary ).
     */
   /* static member */
-  @scala.inline
-  def getLibraryAsync(libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLibraryAsync")(libraryId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary]]
+  inline def getLibraryAsync(libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLibraryAsync")(libraryId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary]]
   
   /**
     * Gets the specified library for a User .
@@ -34,6 +33,5 @@ object StorageLibrary {
     * @return When this method completes successfully, it returns the library (type StorageLibrary ).
     */
   /* static member */
-  @scala.inline
-  def getLibraryForUserAsync(user: User, libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLibraryForUserAsync")(user.asInstanceOf[js.Any], libraryId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary]]
+  inline def getLibraryForUserAsync(user: User, libraryId: typings.winrtUwp.Windows.Storage.KnownLibraryId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLibraryForUserAsync")(user.asInstanceOf[js.Any], libraryId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageLibrary]]
 }

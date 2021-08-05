@@ -13,19 +13,15 @@ trait CheckIfPhoneNumberIsOptedOutResponse extends StObject {
 }
 object CheckIfPhoneNumberIsOptedOutResponse {
   
-  @scala.inline
-  def apply(): CheckIfPhoneNumberIsOptedOutResponse = {
+  inline def apply(): CheckIfPhoneNumberIsOptedOutResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckIfPhoneNumberIsOptedOutResponse]
   }
   
-  @scala.inline
-  implicit class CheckIfPhoneNumberIsOptedOutResponseMutableBuilder[Self <: CheckIfPhoneNumberIsOptedOutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIfPhoneNumberIsOptedOutResponse](x: Self) {
     
-    @scala.inline
-    def setIsOptedOut(value: Boolean): Self = StObject.set(x, "isOptedOut", value.asInstanceOf[js.Any])
+    inline def setIsOptedOut(value: Boolean): Self = StObject.set(x, "isOptedOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOptedOutUndefined: Self = StObject.set(x, "isOptedOut", js.undefined)
+    inline def setIsOptedOutUndefined: Self = StObject.set(x, "isOptedOut", js.undefined)
   }
 }

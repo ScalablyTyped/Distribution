@@ -11,6 +11,5 @@ object devLoadingViewIosMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element | Null]
+  inline def default(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element | Null]
 }

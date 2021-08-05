@@ -13,16 +13,13 @@ trait GetEvaluationInput extends StObject {
 }
 object GetEvaluationInput {
   
-  @scala.inline
-  def apply(EvaluationId: EntityId): GetEvaluationInput = {
+  inline def apply(EvaluationId: EntityId): GetEvaluationInput = {
     val __obj = js.Dynamic.literal(EvaluationId = EvaluationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEvaluationInput]
   }
   
-  @scala.inline
-  implicit class GetEvaluationInputMutableBuilder[Self <: GetEvaluationInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetEvaluationInput](x: Self) {
     
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
+    inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
   }
 }

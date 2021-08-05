@@ -13,8 +13,7 @@ trait WebCLUserEvent
 }
 object WebCLUserEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInfo: EventInfo => js.Any,
     getProfilingInfo: ProfilingInfo => Double,
     release: () => Unit,
@@ -25,10 +24,8 @@ object WebCLUserEvent {
     __obj.asInstanceOf[WebCLUserEvent]
   }
   
-  @scala.inline
-  implicit class WebCLUserEventMutableBuilder[Self <: WebCLUserEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLUserEvent](x: Self) {
     
-    @scala.inline
-    def setSetStatus(value: CommandExecutionStatus => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
+    inline def setSetStatus(value: CommandExecutionStatus => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
   }
 }

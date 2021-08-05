@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prepend-http"
-version := "3.0.1-2696af"
+version := "3.0.1-d031a5"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

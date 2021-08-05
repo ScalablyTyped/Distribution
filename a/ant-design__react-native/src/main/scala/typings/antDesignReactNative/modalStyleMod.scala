@@ -13,8 +13,7 @@ object modalStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ModalStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ModalStyle]
+  inline def default(theme: Theme): ModalStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ModalStyle]
   
   trait ModalStyle extends StObject {
     
@@ -60,8 +59,7 @@ object modalStyleMod {
   }
   object ModalStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: ViewStyle,
       buttonGroupH: ViewStyle,
       buttonGroupV: ViewStyle,
@@ -87,68 +85,47 @@ object modalStyleMod {
       __obj.asInstanceOf[ModalStyle]
     }
     
-    @scala.inline
-    implicit class ModalStyleMutableBuilder[Self <: ModalStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ModalStyle](x: Self) {
       
-      @scala.inline
-      def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonGroupH(value: ViewStyle): Self = StObject.set(x, "buttonGroupH", value.asInstanceOf[js.Any])
+      inline def setButtonGroupH(value: ViewStyle): Self = StObject.set(x, "buttonGroupH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonGroupV(value: ViewStyle): Self = StObject.set(x, "buttonGroupV", value.asInstanceOf[js.Any])
+      inline def setButtonGroupV(value: ViewStyle): Self = StObject.set(x, "buttonGroupV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonText(value: TextStyle): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: TextStyle): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextOperation(value: TextStyle): Self = StObject.set(x, "buttonTextOperation", value.asInstanceOf[js.Any])
+      inline def setButtonTextOperation(value: TextStyle): Self = StObject.set(x, "buttonTextOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrapH(value: ViewStyle): Self = StObject.set(x, "buttonWrapH", value.asInstanceOf[js.Any])
+      inline def setButtonWrapH(value: ViewStyle): Self = StObject.set(x, "buttonWrapH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrapV(value: ViewStyle): Self = StObject.set(x, "buttonWrapV", value.asInstanceOf[js.Any])
+      inline def setButtonWrapV(value: ViewStyle): Self = StObject.set(x, "buttonWrapV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: TextStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: TextStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
+      inline def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooter(value: ViewStyle): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ViewStyle): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: TextStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: TextStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
+      inline def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosable(value: ViewStyle): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      inline def setMaskClosable(value: ViewStyle): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationBody(value: ViewStyle): Self = StObject.set(x, "operationBody", value.asInstanceOf[js.Any])
+      inline def setOperationBody(value: ViewStyle): Self = StObject.set(x, "operationBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationContainer(value: ViewStyle): Self = StObject.set(x, "operationContainer", value.asInstanceOf[js.Any])
+      inline def setOperationContainer(value: ViewStyle): Self = StObject.set(x, "operationContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupContainer(value: ViewStyle): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
+      inline def setPopupContainer(value: ViewStyle): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupSlideDown(value: ViewStyle): Self = StObject.set(x, "popupSlideDown", value.asInstanceOf[js.Any])
+      inline def setPopupSlideDown(value: ViewStyle): Self = StObject.set(x, "popupSlideDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupSlideUp(value: ViewStyle): Self = StObject.set(x, "popupSlideUp", value.asInstanceOf[js.Any])
+      inline def setPopupSlideUp(value: ViewStyle): Self = StObject.set(x, "popupSlideUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     }
   }
 }

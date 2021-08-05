@@ -31,21 +31,17 @@ object ffmpegWorkerWebmMod {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String, `type`: String): Data = {
+    inline def apply(data: String, `type`: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,17 +51,14 @@ object ffmpegWorkerWebmMod {
   }
   object OnMessageOptions {
     
-    @scala.inline
-    def apply(data: Data): OnMessageOptions = {
+    inline def apply(data: Data): OnMessageOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnMessageOptions]
     }
     
-    @scala.inline
-    implicit class OnMessageOptionsMutableBuilder[Self <: OnMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnMessageOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,24 +70,19 @@ object ffmpegWorkerWebmMod {
   }
   object PostMessageOptions {
     
-    @scala.inline
-    def apply(arguments: js.Array[String], `type`: String): PostMessageOptions = {
+    inline def apply(arguments: js.Array[String], `type`: String): PostMessageOptions = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostMessageOptions]
     }
     
-    @scala.inline
-    implicit class PostMessageOptionsMutableBuilder[Self <: PostMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostMessageOptions](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,8 +96,7 @@ object ffmpegWorkerWebmMod {
   }
   object Worker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onmessage: OnMessageOptions => Unit,
       postMessage: PostMessageOptions => Unit,
       terminate: () => Unit
@@ -118,17 +105,13 @@ object ffmpegWorkerWebmMod {
       __obj.asInstanceOf[Worker]
     }
     
-    @scala.inline
-    implicit class WorkerMutableBuilder[Self <: Worker] (val x: Self) extends AnyVal {
+    extension [Self <: Worker](x: Self) {
       
-      @scala.inline
-      def setOnmessage(value: OnMessageOptions => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+      inline def setOnmessage(value: OnMessageOptions => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostMessage(value: PostMessageOptions => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+      inline def setPostMessage(value: PostMessageOptions => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+      inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
     }
   }
 }

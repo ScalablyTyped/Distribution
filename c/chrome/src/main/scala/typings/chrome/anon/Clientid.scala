@@ -12,25 +12,19 @@ trait Clientid extends StObject {
 }
 object Clientid {
   
-  @scala.inline
-  def apply(client_id: String): Clientid = {
+  inline def apply(client_id: String): Clientid = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Clientid]
   }
   
-  @scala.inline
-  implicit class ClientidMutableBuilder[Self <: Clientid] (val x: Self) extends AnyVal {
+  extension [Self <: Clientid](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

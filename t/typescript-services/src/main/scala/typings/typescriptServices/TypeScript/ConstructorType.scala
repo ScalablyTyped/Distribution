@@ -16,8 +16,7 @@ trait ConstructorType
 }
 object ConstructorType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -47,16 +46,12 @@ object ConstructorType {
     __obj.asInstanceOf[ConstructorType]
   }
   
-  @scala.inline
-  implicit class ConstructorTypeMutableBuilder[Self <: ConstructorType] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorType](x: Self) {
     
-    @scala.inline
-    def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
+    inline def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameterList(value: TypeParameterList): Self = StObject.set(x, "typeParameterList", value.asInstanceOf[js.Any])
+    inline def setTypeParameterList(value: TypeParameterList): Self = StObject.set(x, "typeParameterList", value.asInstanceOf[js.Any])
   }
 }

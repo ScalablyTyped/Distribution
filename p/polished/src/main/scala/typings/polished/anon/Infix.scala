@@ -16,22 +16,17 @@ trait Infix extends StObject {
 }
 object Infix {
   
-  @scala.inline
-  def apply(infix: F): Infix = {
+  inline def apply(infix: F): Infix = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = "\\^", symbol = "^")
     __obj.asInstanceOf[Infix]
   }
   
-  @scala.inline
-  implicit class InfixMutableBuilder[Self <: Infix] (val x: Self) extends AnyVal {
+  extension [Self <: Infix](x: Self) {
     
-    @scala.inline
-    def setInfix(value: F): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: F): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: `Backslash^`): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: `Backslash^`): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: ^): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: ^): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

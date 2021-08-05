@@ -13,19 +13,15 @@ trait PlacementResponse extends StObject {
 }
 object PlacementResponse {
   
-  @scala.inline
-  def apply(): PlacementResponse = {
+  inline def apply(): PlacementResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementResponse]
   }
   
-  @scala.inline
-  implicit class PlacementResponseMutableBuilder[Self <: PlacementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementResponse](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListDocumentClassifiersResponse extends StObject {
 }
 object ListDocumentClassifiersResponse {
   
-  @scala.inline
-  def apply(): ListDocumentClassifiersResponse = {
+  inline def apply(): ListDocumentClassifiersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDocumentClassifiersResponse]
   }
   
-  @scala.inline
-  implicit class ListDocumentClassifiersResponseMutableBuilder[Self <: ListDocumentClassifiersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDocumentClassifiersResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentClassifierPropertiesList(value: DocumentClassifierPropertiesList): Self = StObject.set(x, "DocumentClassifierPropertiesList", value.asInstanceOf[js.Any])
+    inline def setDocumentClassifierPropertiesList(value: DocumentClassifierPropertiesList): Self = StObject.set(x, "DocumentClassifierPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentClassifierPropertiesListUndefined: Self = StObject.set(x, "DocumentClassifierPropertiesList", js.undefined)
+    inline def setDocumentClassifierPropertiesListUndefined: Self = StObject.set(x, "DocumentClassifierPropertiesList", js.undefined)
     
-    @scala.inline
-    def setDocumentClassifierPropertiesListVarargs(value: DocumentClassifierProperties*): Self = StObject.set(x, "DocumentClassifierPropertiesList", js.Array(value :_*))
+    inline def setDocumentClassifierPropertiesListVarargs(value: DocumentClassifierProperties*): Self = StObject.set(x, "DocumentClassifierPropertiesList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

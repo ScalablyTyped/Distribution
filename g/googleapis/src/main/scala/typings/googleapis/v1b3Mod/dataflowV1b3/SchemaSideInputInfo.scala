@@ -31,34 +31,25 @@ trait SchemaSideInputInfo extends StObject {
 }
 object SchemaSideInputInfo {
   
-  @scala.inline
-  def apply(): SchemaSideInputInfo = {
+  inline def apply(): SchemaSideInputInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSideInputInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSideInputInfoMutableBuilder[Self <: SchemaSideInputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSideInputInfo](x: Self) {
     
-    @scala.inline
-    def setKind(value: StringDictionary[js.Any]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: StringDictionary[js.Any]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

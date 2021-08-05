@@ -23,43 +23,31 @@ trait Cont extends StObject {
 }
 object Cont {
   
-  @scala.inline
-  def apply(): Cont = {
+  inline def apply(): Cont = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cont]
   }
   
-  @scala.inline
-  implicit class ContMutableBuilder[Self <: Cont] (val x: Self) extends AnyVal {
+  extension [Self <: Cont](x: Self) {
     
-    @scala.inline
-    def setCont(value: ContinuationEvent): Self = StObject.set(x, "Cont", value.asInstanceOf[js.Any])
+    inline def setCont(value: ContinuationEvent): Self = StObject.set(x, "Cont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContUndefined: Self = StObject.set(x, "Cont", js.undefined)
+    inline def setContUndefined: Self = StObject.set(x, "Cont", js.undefined)
     
-    @scala.inline
-    def setEnd(value: EndEvent): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: EndEvent): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
-    @scala.inline
-    def setProgress(value: ProgressEvent): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ProgressEvent): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    @scala.inline
-    def setRecords(value: RecordsEvent): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: RecordsEvent): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
     
-    @scala.inline
-    def setStats(value: StatsEvent): Self = StObject.set(x, "Stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: StatsEvent): Self = StObject.set(x, "Stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "Stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "Stats", js.undefined)
   }
 }

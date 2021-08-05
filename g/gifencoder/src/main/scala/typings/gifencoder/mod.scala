@@ -63,8 +63,7 @@ object mod {
   }
   object GIFEncoder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addFrame: CanvasRenderingContext2D => Unit,
       createReadStream: () => Readable,
       createWriteStream: GIFOptions => Transform,
@@ -78,32 +77,23 @@ object mod {
       __obj.asInstanceOf[GIFEncoder]
     }
     
-    @scala.inline
-    implicit class GIFEncoderMutableBuilder[Self <: GIFEncoder] (val x: Self) extends AnyVal {
+    extension [Self <: GIFEncoder](x: Self) {
       
-      @scala.inline
-      def setAddFrame(value: CanvasRenderingContext2D => Unit): Self = StObject.set(x, "addFrame", js.Any.fromFunction1(value))
+      inline def setAddFrame(value: CanvasRenderingContext2D => Unit): Self = StObject.set(x, "addFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateReadStream(value: () => Readable): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
+      inline def setCreateReadStream(value: () => Readable): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateWriteStream(value: GIFOptions => Transform): Self = StObject.set(x, "createWriteStream", js.Any.fromFunction1(value))
+      inline def setCreateWriteStream(value: GIFOptions => Transform): Self = StObject.set(x, "createWriteStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDelay(value: Double => Unit): Self = StObject.set(x, "setDelay", js.Any.fromFunction1(value))
+      inline def setSetDelay(value: Double => Unit): Self = StObject.set(x, "setDelay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetQuality(value: Double => Unit): Self = StObject.set(x, "setQuality", js.Any.fromFunction1(value))
+      inline def setSetQuality(value: Double => Unit): Self = StObject.set(x, "setQuality", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRepeat(value: Double => Unit): Self = StObject.set(x, "setRepeat", js.Any.fromFunction1(value))
+      inline def setSetRepeat(value: Double => Unit): Self = StObject.set(x, "setRepeat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   
@@ -120,23 +110,18 @@ object mod {
   }
   object GIFOptions {
     
-    @scala.inline
-    def apply(delay: Double, quality: Double, repeat: Double): GIFOptions = {
+    inline def apply(delay: Double, quality: Double, repeat: Double): GIFOptions = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GIFOptions]
     }
     
-    @scala.inline
-    implicit class GIFOptionsMutableBuilder[Self <: GIFOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GIFOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     }
   }
 }

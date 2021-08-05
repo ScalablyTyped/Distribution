@@ -38,103 +38,71 @@ trait StockToolsGuiDefinitionsOptions extends StObject {
 }
 object StockToolsGuiDefinitionsOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsOptions = {
+  inline def apply(): StockToolsGuiDefinitionsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsOptions](x: Self) {
     
-    @scala.inline
-    def setAdvanced(value: StockToolsGuiDefinitionsAdvancedOptions): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
+    inline def setAdvanced(value: StockToolsGuiDefinitionsAdvancedOptions): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
+    inline def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
     
-    @scala.inline
-    def setCrookedLines(value: StockToolsGuiDefinitionsCrookedLinesOptions): Self = StObject.set(x, "crookedLines", value.asInstanceOf[js.Any])
+    inline def setCrookedLines(value: StockToolsGuiDefinitionsCrookedLinesOptions): Self = StObject.set(x, "crookedLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrookedLinesUndefined: Self = StObject.set(x, "crookedLines", js.undefined)
+    inline def setCrookedLinesUndefined: Self = StObject.set(x, "crookedLines", js.undefined)
     
-    @scala.inline
-    def setCurrentPriceIndicator(value: StockToolsGuiDefinitionsCurrentPriceIndicatorOptions): Self = StObject.set(x, "currentPriceIndicator", value.asInstanceOf[js.Any])
+    inline def setCurrentPriceIndicator(value: StockToolsGuiDefinitionsCurrentPriceIndicatorOptions): Self = StObject.set(x, "currentPriceIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPriceIndicatorUndefined: Self = StObject.set(x, "currentPriceIndicator", js.undefined)
+    inline def setCurrentPriceIndicatorUndefined: Self = StObject.set(x, "currentPriceIndicator", js.undefined)
     
-    @scala.inline
-    def setFlags(value: StockToolsGuiDefinitionsFlagsOptions): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: StockToolsGuiDefinitionsFlagsOptions): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setFullScreen(value: StockToolsGuiDefinitionsFullScreenOptions): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: StockToolsGuiDefinitionsFullScreenOptions): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
-    @scala.inline
-    def setIndicators(value: StockToolsGuiDefinitionsIndicatorsOptions): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
+    inline def setIndicators(value: StockToolsGuiDefinitionsIndicatorsOptions): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
+    inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
     
-    @scala.inline
-    def setLines(value: StockToolsGuiDefinitionsLinesOptions): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: StockToolsGuiDefinitionsLinesOptions): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setMeasure(value: StockToolsGuiDefinitionsMeasureOptions): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    inline def setMeasure(value: StockToolsGuiDefinitionsMeasureOptions): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
-    @scala.inline
-    def setSaveChart(value: StockToolsGuiDefinitionsSaveChartOptions): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
+    inline def setSaveChart(value: StockToolsGuiDefinitionsSaveChartOptions): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
+    inline def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: StockToolsGuiDefinitionsSeparatorOptions): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: StockToolsGuiDefinitionsSeparatorOptions): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setSimpleShapes(value: StockToolsGuiDefinitionsSimpleShapesOptions): Self = StObject.set(x, "simpleShapes", value.asInstanceOf[js.Any])
+    inline def setSimpleShapes(value: StockToolsGuiDefinitionsSimpleShapesOptions): Self = StObject.set(x, "simpleShapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleShapesUndefined: Self = StObject.set(x, "simpleShapes", js.undefined)
+    inline def setSimpleShapesUndefined: Self = StObject.set(x, "simpleShapes", js.undefined)
     
-    @scala.inline
-    def setToggleAnnotations(value: StockToolsGuiDefinitionsToggleAnnotationsOptions): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
+    inline def setToggleAnnotations(value: StockToolsGuiDefinitionsToggleAnnotationsOptions): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
+    inline def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
     
-    @scala.inline
-    def setTypeChange(value: StockToolsGuiDefinitionsTypeChangeOptions): Self = StObject.set(x, "typeChange", value.asInstanceOf[js.Any])
+    inline def setTypeChange(value: StockToolsGuiDefinitionsTypeChangeOptions): Self = StObject.set(x, "typeChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeChangeUndefined: Self = StObject.set(x, "typeChange", js.undefined)
+    inline def setTypeChangeUndefined: Self = StObject.set(x, "typeChange", js.undefined)
     
-    @scala.inline
-    def setVerticalLabels(value: StockToolsGuiDefinitionsVerticalLabelsOptions): Self = StObject.set(x, "verticalLabels", value.asInstanceOf[js.Any])
+    inline def setVerticalLabels(value: StockToolsGuiDefinitionsVerticalLabelsOptions): Self = StObject.set(x, "verticalLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLabelsUndefined: Self = StObject.set(x, "verticalLabels", js.undefined)
+    inline def setVerticalLabelsUndefined: Self = StObject.set(x, "verticalLabels", js.undefined)
     
-    @scala.inline
-    def setZoomChange(value: StockToolsGuiDefinitionsZoomChangeOptions): Self = StObject.set(x, "zoomChange", value.asInstanceOf[js.Any])
+    inline def setZoomChange(value: StockToolsGuiDefinitionsZoomChangeOptions): Self = StObject.set(x, "zoomChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomChangeUndefined: Self = StObject.set(x, "zoomChange", js.undefined)
+    inline def setZoomChangeUndefined: Self = StObject.set(x, "zoomChange", js.undefined)
   }
 }

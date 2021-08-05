@@ -20,8 +20,7 @@ object mod {
   renderGif(fs.readFileSync("unicorn.gif"), logUpdate);
   ```
   */
-  @scala.inline
-  def apply(
+  inline def apply(
     data: ArrayLike[Double],
     callback: js.Function1[/* data */ ArrayLike[Double], Unit],
     options: Options
@@ -38,20 +37,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMaximumFrameRate(value: Double): Self = StObject.set(x, "maximumFrameRate", value.asInstanceOf[js.Any])
+      inline def setMaximumFrameRate(value: Double): Self = StObject.set(x, "maximumFrameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFrameRateUndefined: Self = StObject.set(x, "maximumFrameRate", js.undefined)
+      inline def setMaximumFrameRateUndefined: Self = StObject.set(x, "maximumFrameRate", js.undefined)
     }
   }
   
@@ -62,17 +57,14 @@ object mod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply(isPlaying: Boolean): ReturnValue = {
+    inline def apply(isPlaying: Boolean): ReturnValue = {
       val __obj = js.Dynamic.literal(isPlaying = isPlaying.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReturnValue]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnValue](x: Self) {
       
-      @scala.inline
-      def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
+      inline def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
     }
   }
 }

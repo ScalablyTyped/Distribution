@@ -23,7 +23,7 @@ trait AddIn extends StObject {
   
   val Path: String
   
-  @JSName("PowerPoint.AddIn_typekey")
+  /* private */ @JSName("PowerPoint.AddIn_typekey")
   var PowerPointDotAddIn_typekey: AddIn
   
   var Registered: MsoTriState
@@ -32,8 +32,7 @@ trait AddIn extends StObject {
 }
 object AddIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoLoad: MsoTriState,
     DisplayAlerts: MsoTriState,
@@ -51,40 +50,28 @@ object AddIn {
     __obj.asInstanceOf[AddIn]
   }
   
-  @scala.inline
-  implicit class AddInMutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
+  extension [Self <: AddIn](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLoad(value: MsoTriState): Self = StObject.set(x, "AutoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: MsoTriState): Self = StObject.set(x, "AutoLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAlerts(value: MsoTriState): Self = StObject.set(x, "DisplayAlerts", value.asInstanceOf[js.Any])
+    inline def setDisplayAlerts(value: MsoTriState): Self = StObject.set(x, "DisplayAlerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: MsoTriState): Self = StObject.set(x, "Loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: MsoTriState): Self = StObject.set(x, "Loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "PowerPoint.AddIn_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "PowerPoint.AddIn_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistered(value: MsoTriState): Self = StObject.set(x, "Registered", value.asInstanceOf[js.Any])
+    inline def setRegistered(value: MsoTriState): Self = StObject.set(x, "Registered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredInHKLM(value: MsoTriState): Self = StObject.set(x, "RegisteredInHKLM", value.asInstanceOf[js.Any])
+    inline def setRegisteredInHKLM(value: MsoTriState): Self = StObject.set(x, "RegisteredInHKLM", value.asInstanceOf[js.Any])
   }
 }

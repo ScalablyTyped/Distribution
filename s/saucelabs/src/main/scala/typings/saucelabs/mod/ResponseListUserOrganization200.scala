@@ -17,34 +17,25 @@ trait ResponseListUserOrganization200
 }
 object ResponseListUserOrganization200 {
   
-  @scala.inline
-  def apply(): ResponseListUserOrganization200 = {
+  inline def apply(): ResponseListUserOrganization200 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseListUserOrganization200]
   }
   
-  @scala.inline
-  implicit class ResponseListUserOrganization200MutableBuilder[Self <: ResponseListUserOrganization200] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseListUserOrganization200](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setIs_ancestor(value: Boolean): Self = StObject.set(x, "is_ancestor", value.asInstanceOf[js.Any])
+    inline def setIs_ancestor(value: Boolean): Self = StObject.set(x, "is_ancestor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_ancestorUndefined: Self = StObject.set(x, "is_ancestor", js.undefined)
+    inline def setIs_ancestorUndefined: Self = StObject.set(x, "is_ancestor", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

@@ -32,6 +32,5 @@ object EntityView {
   @JSImport("cesium", "EntityView.defaultOffset3D")
   @js.native
   def defaultOffset3D: Cartesian3 = js.native
-  @scala.inline
-  def defaultOffset3D_=(x: Cartesian3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOffset3D")(x.asInstanceOf[js.Any])
+  inline def defaultOffset3D_=(x: Cartesian3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOffset3D")(x.asInstanceOf[js.Any])
 }

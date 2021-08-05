@@ -53,8 +53,7 @@ trait UnoControlModel
 }
 object UnoControlModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultControl: String,
     Height: Double,
     Name: String,
@@ -93,16 +92,12 @@ object UnoControlModel {
     __obj.asInstanceOf[UnoControlModel]
   }
   
-  @scala.inline
-  implicit class UnoControlModelMutableBuilder[Self <: UnoControlModel] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlModel](x: Self) {
     
-    @scala.inline
-    def setDefaultControl(value: String): Self = StObject.set(x, "DefaultControl", value.asInstanceOf[js.Any])
+    inline def setDefaultControl(value: String): Self = StObject.set(x, "DefaultControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -41,43 +41,31 @@ trait AnalyticsApplicationOutput extends StObject {
 }
 object AnalyticsApplicationOutput {
   
-  @scala.inline
-  def apply(name: Input[String], schema: Input[AnalyticsApplicationOutputSchema]): AnalyticsApplicationOutput = {
+  inline def apply(name: Input[String], schema: Input[AnalyticsApplicationOutputSchema]): AnalyticsApplicationOutput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationOutput]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationOutputMutableBuilder[Self <: AnalyticsApplicationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationOutput](x: Self) {
     
-    @scala.inline
-    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKinesisFirehose(value: Input[AnalyticsApplicationOutputKinesisFirehose]): Self = StObject.set(x, "kinesisFirehose", value.asInstanceOf[js.Any])
+    inline def setKinesisFirehose(value: Input[AnalyticsApplicationOutputKinesisFirehose]): Self = StObject.set(x, "kinesisFirehose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseUndefined: Self = StObject.set(x, "kinesisFirehose", js.undefined)
+    inline def setKinesisFirehoseUndefined: Self = StObject.set(x, "kinesisFirehose", js.undefined)
     
-    @scala.inline
-    def setKinesisStream(value: Input[AnalyticsApplicationOutputKinesisStream]): Self = StObject.set(x, "kinesisStream", value.asInstanceOf[js.Any])
+    inline def setKinesisStream(value: Input[AnalyticsApplicationOutputKinesisStream]): Self = StObject.set(x, "kinesisStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamUndefined: Self = StObject.set(x, "kinesisStream", js.undefined)
+    inline def setKinesisStreamUndefined: Self = StObject.set(x, "kinesisStream", js.undefined)
     
-    @scala.inline
-    def setLambda(value: Input[AnalyticsApplicationOutputLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: Input[AnalyticsApplicationOutputLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: Input[AnalyticsApplicationOutputSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Input[AnalyticsApplicationOutputSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

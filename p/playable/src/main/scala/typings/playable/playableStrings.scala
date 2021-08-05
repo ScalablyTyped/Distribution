@@ -8,16 +8,13 @@ object playableStrings {
   
   @js.native
   sealed trait html5video extends StObject
-  @scala.inline
-  def html5video: html5video = "html5video".asInstanceOf[html5video]
+  inline def html5video: html5video = "html5video".asInstanceOf[html5video]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
 }

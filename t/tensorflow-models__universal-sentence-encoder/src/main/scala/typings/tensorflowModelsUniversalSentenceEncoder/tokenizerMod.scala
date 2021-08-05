@@ -19,20 +19,17 @@ object tokenizerMod {
     
     def encode(input: String): js.Array[Double] = js.native
     
-    var reservedSymbolsCount: js.Any = js.native
+    /* private */ var reservedSymbolsCount: js.Any = js.native
     
     var trie: Trie = js.native
     
-    var vocabulary: js.Any = js.native
+    /* private */ var vocabulary: js.Any = js.native
   }
   
-  @scala.inline
-  def loadTokenizer(): js.Promise[Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")().asInstanceOf[js.Promise[Tokenizer]]
-  @scala.inline
-  def loadTokenizer(pathToVocabulary: String): js.Promise[Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tokenizer]]
+  inline def loadTokenizer(): js.Promise[Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")().asInstanceOf[js.Promise[Tokenizer]]
+  inline def loadTokenizer(pathToVocabulary: String): js.Promise[Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tokenizer]]
   
-  @scala.inline
-  def loadVocabulary(pathToVocabulary: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadVocabulary")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def loadVocabulary(pathToVocabulary: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadVocabulary")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   type Vocabulary = js.Array[js.Tuple2[String, Double]]
 }

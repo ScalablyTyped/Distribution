@@ -13,17 +13,14 @@ object anon {
   }
   object Async {
     
-    @scala.inline
-    def apply(): Async = {
+    inline def apply(): Async = {
       val __obj = js.Dynamic.literal(async = true)
       __obj.asInstanceOf[Async]
     }
     
-    @scala.inline
-    implicit class AsyncMutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
+    extension [Self <: Async](x: Self) {
       
-      @scala.inline
-      def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object Option {
     
-    @scala.inline
-    def apply[TValue](option: TValue): Option[TValue] = {
+    inline def apply[TValue](option: TValue): Option[TValue] = {
       val __obj = js.Dynamic.literal(option = option.asInstanceOf[js.Any])
       __obj.asInstanceOf[Option[TValue]]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option[?], TValue] (val x: Self & Option[TValue]) extends AnyVal {
+    extension [Self <: Option[?], TValue](x: Self & Option[TValue]) {
       
-      @scala.inline
-      def setOption(value: TValue): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: TValue): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,18 +20,15 @@ trait summaryStatisticsForAge extends StObject {
 }
 object summaryStatisticsForAge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     summaryStatisticsForAge: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]
   ): summaryStatisticsForAge = {
     val __obj = js.Dynamic.literal(summaryStatisticsForAge = js.Any.fromFunction1(summaryStatisticsForAge))
     __obj.asInstanceOf[summaryStatisticsForAge]
   }
   
-  @scala.inline
-  implicit class summaryStatisticsForAgeMutableBuilder[Self <: summaryStatisticsForAge] (val x: Self) extends AnyVal {
+  extension [Self <: summaryStatisticsForAge](x: Self) {
     
-    @scala.inline
-    def setSummaryStatisticsForAge(value: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatisticsForAge", js.Any.fromFunction1(value))
+    inline def setSummaryStatisticsForAge(value: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatisticsForAge", js.Any.fromFunction1(value))
   }
 }

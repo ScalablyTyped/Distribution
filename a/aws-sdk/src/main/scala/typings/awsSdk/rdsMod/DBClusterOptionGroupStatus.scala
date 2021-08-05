@@ -18,25 +18,19 @@ trait DBClusterOptionGroupStatus extends StObject {
 }
 object DBClusterOptionGroupStatus {
   
-  @scala.inline
-  def apply(): DBClusterOptionGroupStatus = {
+  inline def apply(): DBClusterOptionGroupStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterOptionGroupStatus]
   }
   
-  @scala.inline
-  implicit class DBClusterOptionGroupStatusMutableBuilder[Self <: DBClusterOptionGroupStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterOptionGroupStatus](x: Self) {
     
-    @scala.inline
-    def setDBClusterOptionGroupName(value: String): Self = StObject.set(x, "DBClusterOptionGroupName", value.asInstanceOf[js.Any])
+    inline def setDBClusterOptionGroupName(value: String): Self = StObject.set(x, "DBClusterOptionGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterOptionGroupNameUndefined: Self = StObject.set(x, "DBClusterOptionGroupName", js.undefined)
+    inline def setDBClusterOptionGroupNameUndefined: Self = StObject.set(x, "DBClusterOptionGroupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

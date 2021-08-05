@@ -14,22 +14,17 @@ trait ReposGetCombinedStatusForRefEndpoint extends StObject {
 }
 object ReposGetCombinedStatusForRefEndpoint {
   
-  @scala.inline
-  def apply(owner: String, ref: String, repo: String): ReposGetCombinedStatusForRefEndpoint = {
+  inline def apply(owner: String, ref: String, repo: String): ReposGetCombinedStatusForRefEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetCombinedStatusForRefEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetCombinedStatusForRefEndpointMutableBuilder[Self <: ReposGetCombinedStatusForRefEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetCombinedStatusForRefEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

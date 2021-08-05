@@ -26,25 +26,19 @@ trait PresetCriteriaConditionalFormatUpdateData extends StObject {
 }
 object PresetCriteriaConditionalFormatUpdateData {
   
-  @scala.inline
-  def apply(): PresetCriteriaConditionalFormatUpdateData = {
+  inline def apply(): PresetCriteriaConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PresetCriteriaConditionalFormatUpdateData]
   }
   
-  @scala.inline
-  implicit class PresetCriteriaConditionalFormatUpdateDataMutableBuilder[Self <: PresetCriteriaConditionalFormatUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: PresetCriteriaConditionalFormatUpdateData](x: Self) {
     
-    @scala.inline
-    def setFormat(value: ConditionalRangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ConditionalRangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setRule(value: ConditionalPresetCriteriaRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ConditionalPresetCriteriaRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

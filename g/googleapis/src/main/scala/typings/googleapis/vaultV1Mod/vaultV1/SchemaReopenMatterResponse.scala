@@ -16,19 +16,15 @@ trait SchemaReopenMatterResponse extends StObject {
 }
 object SchemaReopenMatterResponse {
   
-  @scala.inline
-  def apply(): SchemaReopenMatterResponse = {
+  inline def apply(): SchemaReopenMatterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReopenMatterResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReopenMatterResponseMutableBuilder[Self <: SchemaReopenMatterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReopenMatterResponse](x: Self) {
     
-    @scala.inline
-    def setMatter(value: SchemaMatter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
+    inline def setMatter(value: SchemaMatter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
+    inline def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
   }
 }

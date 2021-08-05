@@ -26,8 +26,7 @@ trait Mb extends StObject {
 }
 object Mb {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bl: Boolean,
     br: Boolean,
     mb: Boolean,
@@ -42,34 +41,24 @@ object Mb {
     __obj.asInstanceOf[Mb]
   }
   
-  @scala.inline
-  implicit class MbMutableBuilder[Self <: Mb] (val x: Self) extends AnyVal {
+  extension [Self <: Mb](x: Self) {
     
-    @scala.inline
-    def setBl(value: Boolean): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
+    inline def setBl(value: Boolean): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBr(value: Boolean): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+    inline def setBr(value: Boolean): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMb(value: Boolean): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+    inline def setMb(value: Boolean): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMl(value: Boolean): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+    inline def setMl(value: Boolean): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMr(value: Boolean): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+    inline def setMr(value: Boolean): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMt(value: Boolean): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    inline def setMt(value: Boolean): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtr(value: Boolean): Self = StObject.set(x, "mtr", value.asInstanceOf[js.Any])
+    inline def setMtr(value: Boolean): Self = StObject.set(x, "mtr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTl(value: Boolean): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
+    inline def setTl(value: Boolean): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTr(value: Boolean): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: Boolean): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
   }
 }

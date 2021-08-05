@@ -12,16 +12,13 @@ trait SpeechRecognitionHypothesis extends StObject {
 }
 object SpeechRecognitionHypothesis {
   
-  @scala.inline
-  def apply(text: String): SpeechRecognitionHypothesis = {
+  inline def apply(text: String): SpeechRecognitionHypothesis = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionHypothesis]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionHypothesisMutableBuilder[Self <: SpeechRecognitionHypothesis] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionHypothesis](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

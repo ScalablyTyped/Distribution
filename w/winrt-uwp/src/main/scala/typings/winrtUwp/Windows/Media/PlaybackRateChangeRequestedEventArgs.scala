@@ -12,16 +12,13 @@ trait PlaybackRateChangeRequestedEventArgs extends StObject {
 }
 object PlaybackRateChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(requestedPlaybackRate: Double): PlaybackRateChangeRequestedEventArgs = {
+  inline def apply(requestedPlaybackRate: Double): PlaybackRateChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(requestedPlaybackRate = requestedPlaybackRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackRateChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class PlaybackRateChangeRequestedEventArgsMutableBuilder[Self <: PlaybackRateChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackRateChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequestedPlaybackRate(value: Double): Self = StObject.set(x, "requestedPlaybackRate", value.asInstanceOf[js.Any])
+    inline def setRequestedPlaybackRate(value: Double): Self = StObject.set(x, "requestedPlaybackRate", value.asInstanceOf[js.Any])
   }
 }

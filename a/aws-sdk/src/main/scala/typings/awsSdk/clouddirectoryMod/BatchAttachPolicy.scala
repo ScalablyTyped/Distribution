@@ -18,19 +18,15 @@ trait BatchAttachPolicy extends StObject {
 }
 object BatchAttachPolicy {
   
-  @scala.inline
-  def apply(ObjectReference: ObjectReference, PolicyReference: ObjectReference): BatchAttachPolicy = {
+  inline def apply(ObjectReference: ObjectReference, PolicyReference: ObjectReference): BatchAttachPolicy = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any], PolicyReference = PolicyReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchAttachPolicy]
   }
   
-  @scala.inline
-  implicit class BatchAttachPolicyMutableBuilder[Self <: BatchAttachPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAttachPolicy](x: Self) {
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyReference(value: ObjectReference): Self = StObject.set(x, "PolicyReference", value.asInstanceOf[js.Any])
+    inline def setPolicyReference(value: ObjectReference): Self = StObject.set(x, "PolicyReference", value.asInstanceOf[js.Any])
   }
 }

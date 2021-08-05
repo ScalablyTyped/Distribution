@@ -18,13 +18,12 @@ trait TwoInitialCapsExceptions extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.TwoInitialCapsExceptions_typekey")
+  /* private */ @JSName("Word.TwoInitialCapsExceptions_typekey")
   var WordDotTwoInitialCapsExceptions_typekey: TwoInitialCapsExceptions
 }
 object TwoInitialCapsExceptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => TwoInitialCapsException,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object TwoInitialCapsExceptions {
     __obj.asInstanceOf[TwoInitialCapsExceptions]
   }
   
-  @scala.inline
-  implicit class TwoInitialCapsExceptionsMutableBuilder[Self <: TwoInitialCapsExceptions] (val x: Self) extends AnyVal {
+  extension [Self <: TwoInitialCapsExceptions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => TwoInitialCapsException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => TwoInitialCapsException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => TwoInitialCapsException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => TwoInitialCapsException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTwoInitialCapsExceptions_typekey(value: TwoInitialCapsExceptions): Self = StObject.set(x, "Word.TwoInitialCapsExceptions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTwoInitialCapsExceptions_typekey(value: TwoInitialCapsExceptions): Self = StObject.set(x, "Word.TwoInitialCapsExceptions_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Direction extends StObject
 object Direction {
   
-  @scala.inline
-  def horizontal: typings.reactBeautifulDnd.reactBeautifulDndStrings.horizontal = "horizontal".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.horizontal]
+  inline def horizontal: typings.reactBeautifulDnd.reactBeautifulDndStrings.horizontal = "horizontal".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.reactBeautifulDnd.reactBeautifulDndStrings.vertical = "vertical".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.vertical]
+  inline def vertical: typings.reactBeautifulDnd.reactBeautifulDndStrings.vertical = "vertical".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.vertical]
 }

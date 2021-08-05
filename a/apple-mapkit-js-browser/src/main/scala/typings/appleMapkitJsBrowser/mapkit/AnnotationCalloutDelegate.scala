@@ -56,61 +56,43 @@ trait AnnotationCalloutDelegate extends StObject {
 }
 object AnnotationCalloutDelegate {
   
-  @scala.inline
-  def apply(): AnnotationCalloutDelegate = {
+  inline def apply(): AnnotationCalloutDelegate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationCalloutDelegate]
   }
   
-  @scala.inline
-  implicit class AnnotationCalloutDelegateMutableBuilder[Self <: AnnotationCalloutDelegate] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationCalloutDelegate](x: Self) {
     
-    @scala.inline
-    def setCalloutAnchorOffsetForAnnotation(value: (/* annotation */ Annotation, /* size */ Height) => DOMPoint): Self = StObject.set(x, "calloutAnchorOffsetForAnnotation", js.Any.fromFunction2(value))
+    inline def setCalloutAnchorOffsetForAnnotation(value: (/* annotation */ Annotation, /* size */ Height) => DOMPoint): Self = StObject.set(x, "calloutAnchorOffsetForAnnotation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCalloutAnchorOffsetForAnnotationUndefined: Self = StObject.set(x, "calloutAnchorOffsetForAnnotation", js.undefined)
+    inline def setCalloutAnchorOffsetForAnnotationUndefined: Self = StObject.set(x, "calloutAnchorOffsetForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutAppearanceAnimationForAnnotation(value: /* annotation */ Annotation => String): Self = StObject.set(x, "calloutAppearanceAnimationForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutAppearanceAnimationForAnnotation(value: /* annotation */ Annotation => String): Self = StObject.set(x, "calloutAppearanceAnimationForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutAppearanceAnimationForAnnotationUndefined: Self = StObject.set(x, "calloutAppearanceAnimationForAnnotation", js.undefined)
+    inline def setCalloutAppearanceAnimationForAnnotationUndefined: Self = StObject.set(x, "calloutAppearanceAnimationForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutContentForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutContentForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutContentForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutContentForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutContentForAnnotationUndefined: Self = StObject.set(x, "calloutContentForAnnotation", js.undefined)
+    inline def setCalloutContentForAnnotationUndefined: Self = StObject.set(x, "calloutContentForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutElementForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutElementForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutElementForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutElementForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutElementForAnnotationUndefined: Self = StObject.set(x, "calloutElementForAnnotation", js.undefined)
+    inline def setCalloutElementForAnnotationUndefined: Self = StObject.set(x, "calloutElementForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutLeftAccessoryForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutLeftAccessoryForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutLeftAccessoryForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutLeftAccessoryForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutLeftAccessoryForAnnotationUndefined: Self = StObject.set(x, "calloutLeftAccessoryForAnnotation", js.undefined)
+    inline def setCalloutLeftAccessoryForAnnotationUndefined: Self = StObject.set(x, "calloutLeftAccessoryForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutRightAccessoryForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutRightAccessoryForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutRightAccessoryForAnnotation(value: /* annotation */ Annotation => Element): Self = StObject.set(x, "calloutRightAccessoryForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutRightAccessoryForAnnotationUndefined: Self = StObject.set(x, "calloutRightAccessoryForAnnotation", js.undefined)
+    inline def setCalloutRightAccessoryForAnnotationUndefined: Self = StObject.set(x, "calloutRightAccessoryForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutShouldAnimateForAnnotation(value: /* annotation */ Annotation => Boolean): Self = StObject.set(x, "calloutShouldAnimateForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutShouldAnimateForAnnotation(value: /* annotation */ Annotation => Boolean): Self = StObject.set(x, "calloutShouldAnimateForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutShouldAnimateForAnnotationUndefined: Self = StObject.set(x, "calloutShouldAnimateForAnnotation", js.undefined)
+    inline def setCalloutShouldAnimateForAnnotationUndefined: Self = StObject.set(x, "calloutShouldAnimateForAnnotation", js.undefined)
     
-    @scala.inline
-    def setCalloutShouldAppearForAnnotation(value: /* annotation */ Annotation => Boolean): Self = StObject.set(x, "calloutShouldAppearForAnnotation", js.Any.fromFunction1(value))
+    inline def setCalloutShouldAppearForAnnotation(value: /* annotation */ Annotation => Boolean): Self = StObject.set(x, "calloutShouldAppearForAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalloutShouldAppearForAnnotationUndefined: Self = StObject.set(x, "calloutShouldAppearForAnnotation", js.undefined)
+    inline def setCalloutShouldAppearForAnnotationUndefined: Self = StObject.set(x, "calloutShouldAppearForAnnotation", js.undefined)
   }
 }

@@ -18,29 +18,22 @@ object gestureControllerMod {
   }
   object BlockerConfig {
     
-    @scala.inline
-    def apply(): BlockerConfig = {
+    inline def apply(): BlockerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BlockerConfig]
     }
     
-    @scala.inline
-    implicit class BlockerConfigMutableBuilder[Self <: BlockerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BlockerConfig](x: Self) {
       
-      @scala.inline
-      def setDisable(value: js.Array[String]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: js.Array[String]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
+      inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setDisableVarargs(value: String*): Self = StObject.set(x, "disable", js.Array(value :_*))
+      inline def setDisableVarargs(value: String*): Self = StObject.set(x, "disable", js.Array(value :_*))
     }
   }
   
@@ -48,22 +41,21 @@ object gestureControllerMod {
     
     def block(): Unit
     
-    var ctrl: js.Any
+    /* private */ var ctrl: js.Any
     
     def destroy(): Unit
     
-    var disable: js.Any
+    /* private */ var disable: js.Any
     
-    var disableScroll: js.Any
+    /* private */ var disableScroll: js.Any
     
-    var id: js.Any
+    /* private */ var id: js.Any
     
     def unblock(): Unit
   }
   object BlockerDelegate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       block: () => Unit,
       ctrl: js.Any,
       destroy: () => Unit,
@@ -76,29 +68,21 @@ object gestureControllerMod {
       __obj.asInstanceOf[BlockerDelegate]
     }
     
-    @scala.inline
-    implicit class BlockerDelegateMutableBuilder[Self <: BlockerDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: BlockerDelegate](x: Self) {
       
-      @scala.inline
-      def setBlock(value: () => Unit): Self = StObject.set(x, "block", js.Any.fromFunction0(value))
+      inline def setBlock(value: () => Unit): Self = StObject.set(x, "block", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCtrl(value: js.Any): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+      inline def setCtrl(value: js.Any): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScroll(value: js.Any): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      inline def setDisableScroll(value: js.Any): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnblock(value: () => Unit): Self = StObject.set(x, "unblock", js.Any.fromFunction0(value))
+      inline def setUnblock(value: () => Unit): Self = StObject.set(x, "unblock", js.Any.fromFunction0(value))
     }
   }
   
@@ -112,29 +96,22 @@ object gestureControllerMod {
   }
   object GestureConfig {
     
-    @scala.inline
-    def apply(name: String): GestureConfig = {
+    inline def apply(name: String): GestureConfig = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GestureConfig]
     }
     
-    @scala.inline
-    implicit class GestureConfigMutableBuilder[Self <: GestureConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GestureConfig](x: Self) {
       
-      @scala.inline
-      def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
+      inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -145,7 +122,7 @@ object gestureControllerMod {
     
     def capture(gestureName: String, id: Double, priority: Double): Boolean = js.native
     
-    var capturedId: js.Any = js.native
+    /* private */ var capturedId: js.Any = js.native
     
     /**
       * Creates a blocker that will block any other gesture events from firing. Set in the ion-gesture component.
@@ -162,15 +139,15 @@ object gestureControllerMod {
     
     def disableScroll(id: Double): Unit = js.native
     
-    var disabledGestures: js.Any = js.native
+    /* private */ var disabledGestures: js.Any = js.native
     
-    var disabledScroll: js.Any = js.native
+    /* private */ var disabledScroll: js.Any = js.native
     
     def enableGesture(gestureName: String, id: Double): Unit = js.native
     
     def enableScroll(id: Double): Unit = js.native
     
-    var gestureId: js.Any = js.native
+    /* private */ var gestureId: js.Any = js.native
     
     def isCaptured(): Boolean = js.native
     
@@ -178,11 +155,11 @@ object gestureControllerMod {
     
     def isScrollDisabled(): Boolean = js.native
     
-    var newID: js.Any = js.native
+    /* private */ var newID: js.Any = js.native
     
     def release(id: Double): Unit = js.native
     
-    var requestedStart: js.Any = js.native
+    /* private */ var requestedStart: js.Any = js.native
     
     def start(gestureName: String, id: Double, priority: Double): Boolean = js.native
   }
@@ -193,17 +170,17 @@ object gestureControllerMod {
     
     def capture(): Boolean
     
-    var ctrl: js.Any
+    /* private */ var ctrl: js.Any
     
     def destroy(): Unit
     
-    var disableScroll: js.Any
+    /* private */ var disableScroll: js.Any
     
-    var id: js.Any
+    /* private */ var id: js.Any
     
-    var name: js.Any
+    /* private */ var name: js.Any
     
-    var priority: js.Any
+    /* private */ var priority: js.Any
     
     def release(): Unit
     
@@ -211,8 +188,7 @@ object gestureControllerMod {
   }
   object GestureDelegate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canStart: () => Boolean,
       capture: () => Boolean,
       ctrl: js.Any,
@@ -228,38 +204,27 @@ object gestureControllerMod {
       __obj.asInstanceOf[GestureDelegate]
     }
     
-    @scala.inline
-    implicit class GestureDelegateMutableBuilder[Self <: GestureDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: GestureDelegate](x: Self) {
       
-      @scala.inline
-      def setCanStart(value: () => Boolean): Self = StObject.set(x, "canStart", js.Any.fromFunction0(value))
+      inline def setCanStart(value: () => Boolean): Self = StObject.set(x, "canStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCapture(value: () => Boolean): Self = StObject.set(x, "capture", js.Any.fromFunction0(value))
+      inline def setCapture(value: () => Boolean): Self = StObject.set(x, "capture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCtrl(value: js.Any): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+      inline def setCtrl(value: js.Any): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableScroll(value: js.Any): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      inline def setDisableScroll(value: js.Any): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: js.Any): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: js.Any): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
 }

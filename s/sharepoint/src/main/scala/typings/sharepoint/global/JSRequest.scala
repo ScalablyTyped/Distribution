@@ -18,24 +18,21 @@ object JSRequest {
   
   /** initializes class.*/
   /* static member */
-  @scala.inline
-  def EnsureSetup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EnsureSetup")().asInstanceOf[Unit]
+  inline def EnsureSetup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EnsureSetup")().asInstanceOf[Unit]
   
   /** Current file name (after last '/' in url).*/
   /* static member */
   @JSGlobal("JSRequest.FileName")
   @js.native
   def FileName: String = js.native
-  @scala.inline
-  def FileName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileName")(x.asInstanceOf[js.Any])
+  inline def FileName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileName")(x.asInstanceOf[js.Any])
   
   /** Current file path (before last '/' in url).*/
   /* static member */
   @JSGlobal("JSRequest.PathName")
   @js.native
   def PathName: String = js.native
-  @scala.inline
-  def PathName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathName")(x.asInstanceOf[js.Any])
+  inline def PathName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathName")(x.asInstanceOf[js.Any])
   
   /** Query string parts.*/
   /* static member */

@@ -17,22 +17,17 @@ trait TimePickerAndroidTimeSetAction
 }
 object TimePickerAndroidTimeSetAction {
   
-  @scala.inline
-  def apply(hour: Double, minute: Double): TimePickerAndroidTimeSetAction = {
+  inline def apply(hour: Double, minute: Double): TimePickerAndroidTimeSetAction = {
     val __obj = js.Dynamic.literal(action = "timeSetAction", hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerAndroidTimeSetAction]
   }
   
-  @scala.inline
-  implicit class TimePickerAndroidTimeSetActionMutableBuilder[Self <: TimePickerAndroidTimeSetAction] (val x: Self) extends AnyVal {
+  extension [Self <: TimePickerAndroidTimeSetAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: timeSetAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: timeSetAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
   }
 }

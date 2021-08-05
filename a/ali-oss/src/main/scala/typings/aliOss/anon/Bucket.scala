@@ -13,19 +13,15 @@ trait Bucket extends StObject {
 }
 object Bucket {
   
-  @scala.inline
-  def apply(bucket: String, res: NormalSuccessResponse): Bucket = {
+  inline def apply(bucket: String, res: NormalSuccessResponse): Bucket = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bucket]
   }
   
-  @scala.inline
-  implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
+  extension [Self <: Bucket](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

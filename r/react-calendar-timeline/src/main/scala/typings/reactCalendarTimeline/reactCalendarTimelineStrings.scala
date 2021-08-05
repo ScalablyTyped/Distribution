@@ -9,80 +9,67 @@ object reactCalendarTimelineStrings {
   
   @js.native
   sealed trait both extends StObject
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait day
     extends StObject
        with Unit
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait hour
     extends StObject
        with Unit
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait minute
     extends StObject
        with Unit
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait month
     extends StObject
        with Unit
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait move extends StObject
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait primaryHeader extends StObject
-  @scala.inline
-  def primaryHeader: primaryHeader = "primaryHeader".asInstanceOf[primaryHeader]
+  inline def primaryHeader: primaryHeader = "primaryHeader".asInstanceOf[primaryHeader]
   
   @js.native
   sealed trait resize extends StObject
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait second
     extends StObject
        with Unit
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait week
     extends StObject
        with Unit
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
+  inline def week: week = "week".asInstanceOf[week]
   
   @js.native
   sealed trait year
     extends StObject
        with Unit
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  inline def year: year = "year".asInstanceOf[year]
 }

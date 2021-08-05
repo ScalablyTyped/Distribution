@@ -11,6 +11,5 @@ object htmlToElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(html: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def default(html: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

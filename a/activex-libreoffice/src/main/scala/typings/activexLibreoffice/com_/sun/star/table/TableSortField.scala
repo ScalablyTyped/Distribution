@@ -47,8 +47,7 @@ trait TableSortField extends StObject {
 }
 object TableSortField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CollatorAlgorithm: String,
     CollatorLocale: Locale,
     Field: Double,
@@ -60,25 +59,18 @@ object TableSortField {
     __obj.asInstanceOf[TableSortField]
   }
   
-  @scala.inline
-  implicit class TableSortFieldMutableBuilder[Self <: TableSortField] (val x: Self) extends AnyVal {
+  extension [Self <: TableSortField](x: Self) {
     
-    @scala.inline
-    def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
+    inline def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollatorLocale(value: Locale): Self = StObject.set(x, "CollatorLocale", value.asInstanceOf[js.Any])
+    inline def setCollatorLocale(value: Locale): Self = StObject.set(x, "CollatorLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldType(value: TableSortFieldType): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: TableSortFieldType): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
+    inline def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
   }
 }

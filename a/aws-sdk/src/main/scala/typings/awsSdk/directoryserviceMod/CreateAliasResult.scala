@@ -18,25 +18,19 @@ trait CreateAliasResult extends StObject {
 }
 object CreateAliasResult {
   
-  @scala.inline
-  def apply(): CreateAliasResult = {
+  inline def apply(): CreateAliasResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAliasResult]
   }
   
-  @scala.inline
-  implicit class CreateAliasResultMutableBuilder[Self <: CreateAliasResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAliasResult](x: Self) {
     
-    @scala.inline
-    def setAlias(value: AliasName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: AliasName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
   }
 }

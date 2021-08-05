@@ -20,13 +20,12 @@ trait AutoCorrectEntries extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.AutoCorrectEntries_typekey")
+  /* private */ @JSName("Word.AutoCorrectEntries_typekey")
   var WordDotAutoCorrectEntries_typekey: AutoCorrectEntries
 }
 object AutoCorrectEntries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (String, String) => AutoCorrectEntry,
     AddRichText: (String, Range) => AutoCorrectEntry,
     Application: Application,
@@ -41,31 +40,22 @@ object AutoCorrectEntries {
     __obj.asInstanceOf[AutoCorrectEntries]
   }
   
-  @scala.inline
-  implicit class AutoCorrectEntriesMutableBuilder[Self <: AutoCorrectEntries] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCorrectEntries](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, String) => AutoCorrectEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, String) => AutoCorrectEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddRichText(value: (String, Range) => AutoCorrectEntry): Self = StObject.set(x, "AddRichText", js.Any.fromFunction2(value))
+    inline def setAddRichText(value: (String, Range) => AutoCorrectEntry): Self = StObject.set(x, "AddRichText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => AutoCorrectEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => AutoCorrectEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotAutoCorrectEntries_typekey(value: AutoCorrectEntries): Self = StObject.set(x, "Word.AutoCorrectEntries_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotAutoCorrectEntries_typekey(value: AutoCorrectEntries): Self = StObject.set(x, "Word.AutoCorrectEntries_typekey", value.asInstanceOf[js.Any])
   }
 }

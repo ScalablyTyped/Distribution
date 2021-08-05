@@ -14,17 +14,14 @@ object contentInterfaceMod {
   }
   object ScrollBaseDetail {
     
-    @scala.inline
-    def apply(isScrolling: Boolean): ScrollBaseDetail = {
+    inline def apply(isScrolling: Boolean): ScrollBaseDetail = {
       val __obj = js.Dynamic.literal(isScrolling = isScrolling.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollBaseDetail]
     }
     
-    @scala.inline
-    implicit class ScrollBaseDetailMutableBuilder[Self <: ScrollBaseDetail] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollBaseDetail](x: Self) {
       
-      @scala.inline
-      def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+      inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,8 +38,7 @@ object contentInterfaceMod {
   }
   object ScrollDetail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTime: Double,
       currentX: Double,
       currentY: Double,
@@ -64,14 +60,11 @@ object contentInterfaceMod {
       __obj.asInstanceOf[ScrollDetail]
     }
     
-    @scala.inline
-    implicit class ScrollDetailMutableBuilder[Self <: ScrollDetail] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollDetail](x: Self) {
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
   }
 }

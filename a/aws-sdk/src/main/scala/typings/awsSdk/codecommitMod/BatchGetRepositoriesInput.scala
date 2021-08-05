@@ -13,19 +13,15 @@ trait BatchGetRepositoriesInput extends StObject {
 }
 object BatchGetRepositoriesInput {
   
-  @scala.inline
-  def apply(repositoryNames: RepositoryNameList): BatchGetRepositoriesInput = {
+  inline def apply(repositoryNames: RepositoryNameList): BatchGetRepositoriesInput = {
     val __obj = js.Dynamic.literal(repositoryNames = repositoryNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetRepositoriesInput]
   }
   
-  @scala.inline
-  implicit class BatchGetRepositoriesInputMutableBuilder[Self <: BatchGetRepositoriesInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetRepositoriesInput](x: Self) {
     
-    @scala.inline
-    def setRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
+    inline def setRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
+    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
   }
 }

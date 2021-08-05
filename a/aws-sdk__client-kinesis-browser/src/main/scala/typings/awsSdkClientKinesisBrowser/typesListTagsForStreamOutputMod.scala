@@ -31,26 +31,20 @@ object typesListTagsForStreamOutputMod {
   }
   object ListTagsForStreamOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, HasMoreTags: Boolean, Tags: js.Array[UnmarshalledTag]): ListTagsForStreamOutput = {
+    inline def apply($metadata: ResponseMetadata, HasMoreTags: Boolean, Tags: js.Array[UnmarshalledTag]): ListTagsForStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], HasMoreTags = HasMoreTags.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListTagsForStreamOutput]
     }
     
-    @scala.inline
-    implicit class ListTagsForStreamOutputMutableBuilder[Self <: ListTagsForStreamOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTagsForStreamOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoreTags(value: Boolean): Self = StObject.set(x, "HasMoreTags", value.asInstanceOf[js.Any])
+      inline def setHasMoreTags(value: Boolean): Self = StObject.set(x, "HasMoreTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
 }

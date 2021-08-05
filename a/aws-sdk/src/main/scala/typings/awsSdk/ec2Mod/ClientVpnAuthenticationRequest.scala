@@ -28,37 +28,27 @@ trait ClientVpnAuthenticationRequest extends StObject {
 }
 object ClientVpnAuthenticationRequest {
   
-  @scala.inline
-  def apply(): ClientVpnAuthenticationRequest = {
+  inline def apply(): ClientVpnAuthenticationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientVpnAuthenticationRequest]
   }
   
-  @scala.inline
-  implicit class ClientVpnAuthenticationRequestMutableBuilder[Self <: ClientVpnAuthenticationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClientVpnAuthenticationRequest](x: Self) {
     
-    @scala.inline
-    def setActiveDirectory(value: DirectoryServiceAuthenticationRequest): Self = StObject.set(x, "ActiveDirectory", value.asInstanceOf[js.Any])
+    inline def setActiveDirectory(value: DirectoryServiceAuthenticationRequest): Self = StObject.set(x, "ActiveDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDirectoryUndefined: Self = StObject.set(x, "ActiveDirectory", js.undefined)
+    inline def setActiveDirectoryUndefined: Self = StObject.set(x, "ActiveDirectory", js.undefined)
     
-    @scala.inline
-    def setFederatedAuthentication(value: FederatedAuthenticationRequest): Self = StObject.set(x, "FederatedAuthentication", value.asInstanceOf[js.Any])
+    inline def setFederatedAuthentication(value: FederatedAuthenticationRequest): Self = StObject.set(x, "FederatedAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFederatedAuthenticationUndefined: Self = StObject.set(x, "FederatedAuthentication", js.undefined)
+    inline def setFederatedAuthenticationUndefined: Self = StObject.set(x, "FederatedAuthentication", js.undefined)
     
-    @scala.inline
-    def setMutualAuthentication(value: CertificateAuthenticationRequest): Self = StObject.set(x, "MutualAuthentication", value.asInstanceOf[js.Any])
+    inline def setMutualAuthentication(value: CertificateAuthenticationRequest): Self = StObject.set(x, "MutualAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutualAuthenticationUndefined: Self = StObject.set(x, "MutualAuthentication", js.undefined)
+    inline def setMutualAuthenticationUndefined: Self = StObject.set(x, "MutualAuthentication", js.undefined)
     
-    @scala.inline
-    def setType(value: ClientVpnAuthenticationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClientVpnAuthenticationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

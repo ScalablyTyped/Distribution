@@ -152,166 +152,113 @@ trait CoreOptions extends StObject {
 }
 object CoreOptions {
   
-  @scala.inline
-  def apply(): CoreOptions = {
+  inline def apply(): CoreOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoreOptions]
   }
   
-  @scala.inline
-  implicit class CoreOptionsMutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CoreOptions](x: Self) {
     
-    @scala.inline
-    def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
+    inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
+    inline def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
     
-    @scala.inline
-    def setBlobs(value: BlobsOptions): Self = StObject.set(x, "blobs", value.asInstanceOf[js.Any])
+    inline def setBlobs(value: BlobsOptions): Self = StObject.set(x, "blobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobsUndefined: Self = StObject.set(x, "blobs", js.undefined)
+    inline def setBlobsUndefined: Self = StObject.set(x, "blobs", js.undefined)
     
-    @scala.inline
-    def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setCallbacks(value: CoreEvents): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+    inline def setCallbacks(value: CoreEvents): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+    inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
-    @scala.inline
-    def setCamera(value: CameraOptions): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: CameraOptions): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setChunking(value: ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
+    inline def setChunking(value: ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
+    inline def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
     
-    @scala.inline
-    def setCors(value: CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDeleteFile(value: DeleteFileOptions): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
+    inline def setDeleteFile(value: DeleteFileOptions): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteFileUndefined: Self = StObject.set(x, "deleteFile", js.undefined)
+    inline def setDeleteFileUndefined: Self = StObject.set(x, "deleteFile", js.undefined)
     
-    @scala.inline
-    def setDisableCancelForFormUploads(value: Boolean): Self = StObject.set(x, "disableCancelForFormUploads", value.asInstanceOf[js.Any])
+    inline def setDisableCancelForFormUploads(value: Boolean): Self = StObject.set(x, "disableCancelForFormUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCancelForFormUploadsUndefined: Self = StObject.set(x, "disableCancelForFormUploads", js.undefined)
+    inline def setDisableCancelForFormUploadsUndefined: Self = StObject.set(x, "disableCancelForFormUploads", js.undefined)
     
-    @scala.inline
-    def setExtraButtons(value: js.Array[ExtraButtonsOptions]): Self = StObject.set(x, "extraButtons", value.asInstanceOf[js.Any])
+    inline def setExtraButtons(value: js.Array[ExtraButtonsOptions]): Self = StObject.set(x, "extraButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraButtonsUndefined: Self = StObject.set(x, "extraButtons", js.undefined)
+    inline def setExtraButtonsUndefined: Self = StObject.set(x, "extraButtons", js.undefined)
     
-    @scala.inline
-    def setExtraButtonsVarargs(value: ExtraButtonsOptions*): Self = StObject.set(x, "extraButtons", js.Array(value :_*))
+    inline def setExtraButtonsVarargs(value: ExtraButtonsOptions*): Self = StObject.set(x, "extraButtons", js.Array(value :_*))
     
-    @scala.inline
-    def setForm(value: FormOptions): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: FormOptions): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setFormatFileName(value: /* fileOrBlobName */ String => String): Self = StObject.set(x, "formatFileName", js.Any.fromFunction1(value))
+    inline def setFormatFileName(value: /* fileOrBlobName */ String => String): Self = StObject.set(x, "formatFileName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatFileNameUndefined: Self = StObject.set(x, "formatFileName", js.undefined)
+    inline def setFormatFileNameUndefined: Self = StObject.set(x, "formatFileName", js.undefined)
     
-    @scala.inline
-    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
+    inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
-    @scala.inline
-    def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setPaste(value: PasteOptions): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+    inline def setPaste(value: PasteOptions): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+    inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
-    @scala.inline
-    def setRequest(value: RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResume(value: ResumeOptions): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+    inline def setResume(value: ResumeOptions): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
+    inline def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
     
-    @scala.inline
-    def setScaling(value: ScalingOptions): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
+    inline def setScaling(value: ScalingOptions): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
+    inline def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
     
-    @scala.inline
-    def setSession(value: SessionOptions): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionOptions): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    @scala.inline
-    def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setValidation(value: ValidationOptions): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: ValidationOptions): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     
-    @scala.inline
-    def setWarnBeforeUnload(value: Boolean): Self = StObject.set(x, "warnBeforeUnload", value.asInstanceOf[js.Any])
+    inline def setWarnBeforeUnload(value: Boolean): Self = StObject.set(x, "warnBeforeUnload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnBeforeUnloadUndefined: Self = StObject.set(x, "warnBeforeUnload", js.undefined)
+    inline def setWarnBeforeUnloadUndefined: Self = StObject.set(x, "warnBeforeUnload", js.undefined)
     
-    @scala.inline
-    def setWorkarounds(value: WorkArounds): Self = StObject.set(x, "workarounds", value.asInstanceOf[js.Any])
+    inline def setWorkarounds(value: WorkArounds): Self = StObject.set(x, "workarounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkaroundsUndefined: Self = StObject.set(x, "workarounds", js.undefined)
+    inline def setWorkaroundsUndefined: Self = StObject.set(x, "workarounds", js.undefined)
   }
 }

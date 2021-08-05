@@ -10,19 +10,15 @@ trait Animate extends StObject {
 }
 object Animate {
   
-  @scala.inline
-  def apply(): Animate = {
+  inline def apply(): Animate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Animate]
   }
   
-  @scala.inline
-  implicit class AnimateMutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
+  extension [Self <: Animate](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
   }
 }

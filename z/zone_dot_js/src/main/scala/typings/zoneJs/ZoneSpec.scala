@@ -172,86 +172,65 @@ trait ZoneSpec extends StObject {
 }
 object ZoneSpec {
   
-  @scala.inline
-  def apply(name: String): ZoneSpec = {
+  inline def apply(name: String): ZoneSpec = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneSpec]
   }
   
-  @scala.inline
-  implicit class ZoneSpecMutableBuilder[Self <: ZoneSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneSpec](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCancelTask(
+    inline def setOnCancelTask(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => js.Any
     ): Self = StObject.set(x, "onCancelTask", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnCancelTaskUndefined: Self = StObject.set(x, "onCancelTask", js.undefined)
+    inline def setOnCancelTaskUndefined: Self = StObject.set(x, "onCancelTask", js.undefined)
     
-    @scala.inline
-    def setOnFork(
+    inline def setOnFork(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, ZoneSpec) => Zone
     ): Self = StObject.set(x, "onFork", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnForkUndefined: Self = StObject.set(x, "onFork", js.undefined)
+    inline def setOnForkUndefined: Self = StObject.set(x, "onFork", js.undefined)
     
-    @scala.inline
-    def setOnHandleError(
+    inline def setOnHandleError(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* error */ js.Any) => Boolean
     ): Self = StObject.set(x, "onHandleError", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnHandleErrorUndefined: Self = StObject.set(x, "onHandleError", js.undefined)
+    inline def setOnHandleErrorUndefined: Self = StObject.set(x, "onHandleError", js.undefined)
     
-    @scala.inline
-    def setOnHasTask(
+    inline def setOnHasTask(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* hasTaskState */ HasTaskState) => Unit
     ): Self = StObject.set(x, "onHasTask", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnHasTaskUndefined: Self = StObject.set(x, "onHasTask", js.undefined)
+    inline def setOnHasTaskUndefined: Self = StObject.set(x, "onHasTask", js.undefined)
     
-    @scala.inline
-    def setOnIntercept(
+    inline def setOnIntercept(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* source */ String) => js.Function
     ): Self = StObject.set(x, "onIntercept", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setOnInterceptUndefined: Self = StObject.set(x, "onIntercept", js.undefined)
+    inline def setOnInterceptUndefined: Self = StObject.set(x, "onIntercept", js.undefined)
     
-    @scala.inline
-    def setOnInvoke(
+    inline def setOnInvoke(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]], /* source */ js.UndefOr[String]) => js.Any
     ): Self = StObject.set(x, "onInvoke", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setOnInvokeTask(
+    inline def setOnInvokeTask(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => js.Any
     ): Self = StObject.set(x, "onInvokeTask", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setOnInvokeTaskUndefined: Self = StObject.set(x, "onInvokeTask", js.undefined)
+    inline def setOnInvokeTaskUndefined: Self = StObject.set(x, "onInvokeTask", js.undefined)
     
-    @scala.inline
-    def setOnInvokeUndefined: Self = StObject.set(x, "onInvoke", js.undefined)
+    inline def setOnInvokeUndefined: Self = StObject.set(x, "onInvoke", js.undefined)
     
-    @scala.inline
-    def setOnScheduleTask(
+    inline def setOnScheduleTask(
       value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => Task
     ): Self = StObject.set(x, "onScheduleTask", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnScheduleTaskUndefined: Self = StObject.set(x, "onScheduleTask", js.undefined)
+    inline def setOnScheduleTaskUndefined: Self = StObject.set(x, "onScheduleTask", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply[T](data: T, selector: String): Data[T] = {
+    inline def apply[T](data: T, selector: String): Data[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data[T]]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
+    extension [Self <: Data[?], T](x: Self & Data[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,26 +38,20 @@ object anon {
   }
   object Elements {
     
-    @scala.inline
-    def apply[T](data: T, elements: js.Array[Element], selector: String): Elements[T] = {
+    inline def apply[T](data: T, elements: js.Array[Element], selector: String): Elements[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[Elements[T]]
     }
     
-    @scala.inline
-    implicit class ElementsMutableBuilder[Self <: Elements[?], T] (val x: Self & Elements[T]) extends AnyVal {
+    extension [Self <: Elements[?], T](x: Self & Elements[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
 }

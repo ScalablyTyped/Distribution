@@ -413,400 +413,269 @@ trait IgGridGroupBy
 }
 object IgGridGroupBy {
   
-  @scala.inline
-  def apply(): IgGridGroupBy = {
+  inline def apply(): IgGridGroupBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridGroupBy]
   }
   
-  @scala.inline
-  implicit class IgGridGroupByMutableBuilder[Self <: IgGridGroupBy] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridGroupBy](x: Self) {
     
-    @scala.inline
-    def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
+    inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
+    inline def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
     
-    @scala.inline
-    def setColumnSettings(value: IgGridGroupByColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: IgGridGroupByColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    @scala.inline
-    def setDefaultSortingDirection(value: String): Self = StObject.set(x, "defaultSortingDirection", value.asInstanceOf[js.Any])
+    inline def setDefaultSortingDirection(value: String): Self = StObject.set(x, "defaultSortingDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSortingDirectionUndefined: Self = StObject.set(x, "defaultSortingDirection", js.undefined)
+    inline def setDefaultSortingDirectionUndefined: Self = StObject.set(x, "defaultSortingDirection", js.undefined)
     
-    @scala.inline
-    def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
+    inline def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
+    inline def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
     
-    @scala.inline
-    def setEmptyGroupByAreaContentSelectColumnsCaption(value: String): Self = StObject.set(x, "emptyGroupByAreaContentSelectColumnsCaption", value.asInstanceOf[js.Any])
+    inline def setEmptyGroupByAreaContentSelectColumnsCaption(value: String): Self = StObject.set(x, "emptyGroupByAreaContentSelectColumnsCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyGroupByAreaContentSelectColumnsCaptionUndefined: Self = StObject.set(x, "emptyGroupByAreaContentSelectColumnsCaption", js.undefined)
+    inline def setEmptyGroupByAreaContentSelectColumnsCaptionUndefined: Self = StObject.set(x, "emptyGroupByAreaContentSelectColumnsCaption", js.undefined)
     
-    @scala.inline
-    def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
+    inline def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
+    inline def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
     
-    @scala.inline
-    def setExpansionIndicatorVisibility(value: Boolean): Self = StObject.set(x, "expansionIndicatorVisibility", value.asInstanceOf[js.Any])
+    inline def setExpansionIndicatorVisibility(value: Boolean): Self = StObject.set(x, "expansionIndicatorVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpansionIndicatorVisibilityUndefined: Self = StObject.set(x, "expansionIndicatorVisibility", js.undefined)
+    inline def setExpansionIndicatorVisibilityUndefined: Self = StObject.set(x, "expansionIndicatorVisibility", js.undefined)
     
-    @scala.inline
-    def setGroupByAreaVisibility(value: String): Self = StObject.set(x, "groupByAreaVisibility", value.asInstanceOf[js.Any])
+    inline def setGroupByAreaVisibility(value: String): Self = StObject.set(x, "groupByAreaVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByAreaVisibilityUndefined: Self = StObject.set(x, "groupByAreaVisibility", js.undefined)
+    inline def setGroupByAreaVisibilityUndefined: Self = StObject.set(x, "groupByAreaVisibility", js.undefined)
     
-    @scala.inline
-    def setGroupByDialogContainment(value: String): Self = StObject.set(x, "groupByDialogContainment", value.asInstanceOf[js.Any])
+    inline def setGroupByDialogContainment(value: String): Self = StObject.set(x, "groupByDialogContainment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByDialogContainmentUndefined: Self = StObject.set(x, "groupByDialogContainment", js.undefined)
+    inline def setGroupByDialogContainmentUndefined: Self = StObject.set(x, "groupByDialogContainment", js.undefined)
     
-    @scala.inline
-    def setGroupByLabelWidth(value: Double): Self = StObject.set(x, "groupByLabelWidth", value.asInstanceOf[js.Any])
+    inline def setGroupByLabelWidth(value: Double): Self = StObject.set(x, "groupByLabelWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByLabelWidthUndefined: Self = StObject.set(x, "groupByLabelWidth", js.undefined)
+    inline def setGroupByLabelWidthUndefined: Self = StObject.set(x, "groupByLabelWidth", js.undefined)
     
-    @scala.inline
-    def setGroupByUrlKey(value: String): Self = StObject.set(x, "groupByUrlKey", value.asInstanceOf[js.Any])
+    inline def setGroupByUrlKey(value: String): Self = StObject.set(x, "groupByUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByUrlKeyAscValue(value: String): Self = StObject.set(x, "groupByUrlKeyAscValue", value.asInstanceOf[js.Any])
+    inline def setGroupByUrlKeyAscValue(value: String): Self = StObject.set(x, "groupByUrlKeyAscValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByUrlKeyAscValueUndefined: Self = StObject.set(x, "groupByUrlKeyAscValue", js.undefined)
+    inline def setGroupByUrlKeyAscValueUndefined: Self = StObject.set(x, "groupByUrlKeyAscValue", js.undefined)
     
-    @scala.inline
-    def setGroupByUrlKeyDescValue(value: String): Self = StObject.set(x, "groupByUrlKeyDescValue", value.asInstanceOf[js.Any])
+    inline def setGroupByUrlKeyDescValue(value: String): Self = StObject.set(x, "groupByUrlKeyDescValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByUrlKeyDescValueUndefined: Self = StObject.set(x, "groupByUrlKeyDescValue", js.undefined)
+    inline def setGroupByUrlKeyDescValueUndefined: Self = StObject.set(x, "groupByUrlKeyDescValue", js.undefined)
     
-    @scala.inline
-    def setGroupByUrlKeyUndefined: Self = StObject.set(x, "groupByUrlKey", js.undefined)
+    inline def setGroupByUrlKeyUndefined: Self = StObject.set(x, "groupByUrlKey", js.undefined)
     
-    @scala.inline
-    def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
+    inline def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSummariesPosition(value: String): Self = StObject.set(x, "groupSummariesPosition", value.asInstanceOf[js.Any])
+    inline def setGroupSummariesPosition(value: String): Self = StObject.set(x, "groupSummariesPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSummariesPositionUndefined: Self = StObject.set(x, "groupSummariesPosition", js.undefined)
+    inline def setGroupSummariesPositionUndefined: Self = StObject.set(x, "groupSummariesPosition", js.undefined)
     
-    @scala.inline
-    def setGroupSummariesUndefined: Self = StObject.set(x, "groupSummaries", js.undefined)
+    inline def setGroupSummariesUndefined: Self = StObject.set(x, "groupSummaries", js.undefined)
     
-    @scala.inline
-    def setGroupedColumns(value: js.Array[IgGridGroupByGroupedColumn]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+    inline def setGroupedColumns(value: js.Array[IgGridGroupByGroupedColumn]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedColumnsChanged(value: (/* event */ Event, /* ui */ GroupedColumnsChangedEventUIParam) => Unit): Self = StObject.set(x, "groupedColumnsChanged", js.Any.fromFunction2(value))
+    inline def setGroupedColumnsChanged(value: (/* event */ Event, /* ui */ GroupedColumnsChangedEventUIParam) => Unit): Self = StObject.set(x, "groupedColumnsChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupedColumnsChangedUndefined: Self = StObject.set(x, "groupedColumnsChanged", js.undefined)
+    inline def setGroupedColumnsChangedUndefined: Self = StObject.set(x, "groupedColumnsChanged", js.undefined)
     
-    @scala.inline
-    def setGroupedColumnsChanging(value: (/* event */ Event, /* ui */ GroupedColumnsChangingEventUIParam) => Unit): Self = StObject.set(x, "groupedColumnsChanging", js.Any.fromFunction2(value))
+    inline def setGroupedColumnsChanging(value: (/* event */ Event, /* ui */ GroupedColumnsChangingEventUIParam) => Unit): Self = StObject.set(x, "groupedColumnsChanging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupedColumnsChangingUndefined: Self = StObject.set(x, "groupedColumnsChanging", js.undefined)
+    inline def setGroupedColumnsChangingUndefined: Self = StObject.set(x, "groupedColumnsChanging", js.undefined)
     
-    @scala.inline
-    def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
+    inline def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
     
-    @scala.inline
-    def setGroupedColumnsVarargs(value: IgGridGroupByGroupedColumn*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
+    inline def setGroupedColumnsVarargs(value: IgGridGroupByGroupedColumn*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupedRowTextTemplate(value: String): Self = StObject.set(x, "groupedRowTextTemplate", value.asInstanceOf[js.Any])
+    inline def setGroupedRowTextTemplate(value: String): Self = StObject.set(x, "groupedRowTextTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedRowTextTemplateUndefined: Self = StObject.set(x, "groupedRowTextTemplate", js.undefined)
+    inline def setGroupedRowTextTemplateUndefined: Self = StObject.set(x, "groupedRowTextTemplate", js.undefined)
     
-    @scala.inline
-    def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+    inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
+    inline def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setInitialExpand(value: Boolean): Self = StObject.set(x, "initialExpand", value.asInstanceOf[js.Any])
+    inline def setInitialExpand(value: Boolean): Self = StObject.set(x, "initialExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialExpandUndefined: Self = StObject.set(x, "initialExpand", js.undefined)
+    inline def setInitialExpandUndefined: Self = StObject.set(x, "initialExpand", js.undefined)
     
-    @scala.inline
-    def setLabelDragHelperOpacity(value: Double): Self = StObject.set(x, "labelDragHelperOpacity", value.asInstanceOf[js.Any])
+    inline def setLabelDragHelperOpacity(value: Double): Self = StObject.set(x, "labelDragHelperOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelDragHelperOpacityUndefined: Self = StObject.set(x, "labelDragHelperOpacity", js.undefined)
+    inline def setLabelDragHelperOpacityUndefined: Self = StObject.set(x, "labelDragHelperOpacity", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgGridGroupByLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgGridGroupByLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setModalDialogAnimationDuration(value: Double): Self = StObject.set(x, "modalDialogAnimationDuration", value.asInstanceOf[js.Any])
+    inline def setModalDialogAnimationDuration(value: Double): Self = StObject.set(x, "modalDialogAnimationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogAnimationDurationUndefined: Self = StObject.set(x, "modalDialogAnimationDuration", js.undefined)
+    inline def setModalDialogAnimationDurationUndefined: Self = StObject.set(x, "modalDialogAnimationDuration", js.undefined)
     
-    @scala.inline
-    def setModalDialogButtonApplyClick(value: (/* event */ Event, /* ui */ ModalDialogButtonApplyClickEventUIParam) => Unit): Self = StObject.set(x, "modalDialogButtonApplyClick", js.Any.fromFunction2(value))
+    inline def setModalDialogButtonApplyClick(value: (/* event */ Event, /* ui */ ModalDialogButtonApplyClickEventUIParam) => Unit): Self = StObject.set(x, "modalDialogButtonApplyClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogButtonApplyClickUndefined: Self = StObject.set(x, "modalDialogButtonApplyClick", js.undefined)
+    inline def setModalDialogButtonApplyClickUndefined: Self = StObject.set(x, "modalDialogButtonApplyClick", js.undefined)
     
-    @scala.inline
-    def setModalDialogButtonApplyText(value: String): Self = StObject.set(x, "modalDialogButtonApplyText", value.asInstanceOf[js.Any])
+    inline def setModalDialogButtonApplyText(value: String): Self = StObject.set(x, "modalDialogButtonApplyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogButtonApplyTextUndefined: Self = StObject.set(x, "modalDialogButtonApplyText", js.undefined)
+    inline def setModalDialogButtonApplyTextUndefined: Self = StObject.set(x, "modalDialogButtonApplyText", js.undefined)
     
-    @scala.inline
-    def setModalDialogButtonCancelText(value: String): Self = StObject.set(x, "modalDialogButtonCancelText", value.asInstanceOf[js.Any])
+    inline def setModalDialogButtonCancelText(value: String): Self = StObject.set(x, "modalDialogButtonCancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogButtonCancelTextUndefined: Self = StObject.set(x, "modalDialogButtonCancelText", js.undefined)
+    inline def setModalDialogButtonCancelTextUndefined: Self = StObject.set(x, "modalDialogButtonCancelText", js.undefined)
     
-    @scala.inline
-    def setModalDialogButtonResetClick(value: (/* event */ Event, /* ui */ ModalDialogButtonResetClickEventUIParam) => Unit): Self = StObject.set(x, "modalDialogButtonResetClick", js.Any.fromFunction2(value))
+    inline def setModalDialogButtonResetClick(value: (/* event */ Event, /* ui */ ModalDialogButtonResetClickEventUIParam) => Unit): Self = StObject.set(x, "modalDialogButtonResetClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogButtonResetClickUndefined: Self = StObject.set(x, "modalDialogButtonResetClick", js.undefined)
+    inline def setModalDialogButtonResetClickUndefined: Self = StObject.set(x, "modalDialogButtonResetClick", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionButtonAscUndefined: Self = StObject.set(x, "modalDialogCaptionButtonAsc", js.undefined)
+    inline def setModalDialogCaptionButtonAscUndefined: Self = StObject.set(x, "modalDialogCaptionButtonAsc", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionButtonDescUndefined: Self = StObject.set(x, "modalDialogCaptionButtonDesc", js.undefined)
+    inline def setModalDialogCaptionButtonDescUndefined: Self = StObject.set(x, "modalDialogCaptionButtonDesc", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionButtonUngroup(value: String): Self = StObject.set(x, "modalDialogCaptionButtonUngroup", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionButtonUngroup(value: String): Self = StObject.set(x, "modalDialogCaptionButtonUngroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionButtonUngroupUndefined: Self = StObject.set(x, "modalDialogCaptionButtonUngroup", js.undefined)
+    inline def setModalDialogCaptionButtonUngroupUndefined: Self = StObject.set(x, "modalDialogCaptionButtonUngroup", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionText(value: String): Self = StObject.set(x, "modalDialogCaptionText", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionText(value: String): Self = StObject.set(x, "modalDialogCaptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionTextUndefined: Self = StObject.set(x, "modalDialogCaptionText", js.undefined)
+    inline def setModalDialogCaptionTextUndefined: Self = StObject.set(x, "modalDialogCaptionText", js.undefined)
     
-    @scala.inline
-    def setModalDialogClearAllButtonLabel(value: String): Self = StObject.set(x, "modalDialogClearAllButtonLabel", value.asInstanceOf[js.Any])
+    inline def setModalDialogClearAllButtonLabel(value: String): Self = StObject.set(x, "modalDialogClearAllButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogClearAllButtonLabelUndefined: Self = StObject.set(x, "modalDialogClearAllButtonLabel", js.undefined)
+    inline def setModalDialogClearAllButtonLabelUndefined: Self = StObject.set(x, "modalDialogClearAllButtonLabel", js.undefined)
     
-    @scala.inline
-    def setModalDialogClosed(value: (/* event */ Event, /* ui */ ModalDialogClosedEventUIParam) => Unit): Self = StObject.set(x, "modalDialogClosed", js.Any.fromFunction2(value))
+    inline def setModalDialogClosed(value: (/* event */ Event, /* ui */ ModalDialogClosedEventUIParam) => Unit): Self = StObject.set(x, "modalDialogClosed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogClosedUndefined: Self = StObject.set(x, "modalDialogClosed", js.undefined)
+    inline def setModalDialogClosedUndefined: Self = StObject.set(x, "modalDialogClosed", js.undefined)
     
-    @scala.inline
-    def setModalDialogClosing(value: (/* event */ Event, /* ui */ ModalDialogClosingEventUIParam) => Unit): Self = StObject.set(x, "modalDialogClosing", js.Any.fromFunction2(value))
+    inline def setModalDialogClosing(value: (/* event */ Event, /* ui */ ModalDialogClosingEventUIParam) => Unit): Self = StObject.set(x, "modalDialogClosing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogClosingUndefined: Self = StObject.set(x, "modalDialogClosing", js.undefined)
+    inline def setModalDialogClosingUndefined: Self = StObject.set(x, "modalDialogClosing", js.undefined)
     
-    @scala.inline
-    def setModalDialogContentsRendered(value: (/* event */ Event, /* ui */ ModalDialogContentsRenderedEventUIParam) => Unit): Self = StObject.set(x, "modalDialogContentsRendered", js.Any.fromFunction2(value))
+    inline def setModalDialogContentsRendered(value: (/* event */ Event, /* ui */ ModalDialogContentsRenderedEventUIParam) => Unit): Self = StObject.set(x, "modalDialogContentsRendered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogContentsRenderedUndefined: Self = StObject.set(x, "modalDialogContentsRendered", js.undefined)
+    inline def setModalDialogContentsRenderedUndefined: Self = StObject.set(x, "modalDialogContentsRendered", js.undefined)
     
-    @scala.inline
-    def setModalDialogContentsRendering(value: (/* event */ Event, /* ui */ ModalDialogContentsRenderingEventUIParam) => Unit): Self = StObject.set(x, "modalDialogContentsRendering", js.Any.fromFunction2(value))
+    inline def setModalDialogContentsRendering(value: (/* event */ Event, /* ui */ ModalDialogContentsRenderingEventUIParam) => Unit): Self = StObject.set(x, "modalDialogContentsRendering", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogContentsRenderingUndefined: Self = StObject.set(x, "modalDialogContentsRendering", js.undefined)
+    inline def setModalDialogContentsRenderingUndefined: Self = StObject.set(x, "modalDialogContentsRendering", js.undefined)
     
-    @scala.inline
-    def setModalDialogDropDownAreaWidth(value: Double): Self = StObject.set(x, "modalDialogDropDownAreaWidth", value.asInstanceOf[js.Any])
+    inline def setModalDialogDropDownAreaWidth(value: Double): Self = StObject.set(x, "modalDialogDropDownAreaWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogDropDownAreaWidthUndefined: Self = StObject.set(x, "modalDialogDropDownAreaWidth", js.undefined)
+    inline def setModalDialogDropDownAreaWidthUndefined: Self = StObject.set(x, "modalDialogDropDownAreaWidth", js.undefined)
     
-    @scala.inline
-    def setModalDialogDropDownButtonCaption(value: String): Self = StObject.set(x, "modalDialogDropDownButtonCaption", value.asInstanceOf[js.Any])
+    inline def setModalDialogDropDownButtonCaption(value: String): Self = StObject.set(x, "modalDialogDropDownButtonCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogDropDownButtonCaptionUndefined: Self = StObject.set(x, "modalDialogDropDownButtonCaption", js.undefined)
+    inline def setModalDialogDropDownButtonCaptionUndefined: Self = StObject.set(x, "modalDialogDropDownButtonCaption", js.undefined)
     
-    @scala.inline
-    def setModalDialogDropDownLabel(value: String): Self = StObject.set(x, "modalDialogDropDownLabel", value.asInstanceOf[js.Any])
+    inline def setModalDialogDropDownLabel(value: String): Self = StObject.set(x, "modalDialogDropDownLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogDropDownLabelUndefined: Self = StObject.set(x, "modalDialogDropDownLabel", js.undefined)
+    inline def setModalDialogDropDownLabelUndefined: Self = StObject.set(x, "modalDialogDropDownLabel", js.undefined)
     
-    @scala.inline
-    def setModalDialogDropDownWidth(value: Double): Self = StObject.set(x, "modalDialogDropDownWidth", value.asInstanceOf[js.Any])
+    inline def setModalDialogDropDownWidth(value: Double): Self = StObject.set(x, "modalDialogDropDownWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogDropDownWidthUndefined: Self = StObject.set(x, "modalDialogDropDownWidth", js.undefined)
+    inline def setModalDialogDropDownWidthUndefined: Self = StObject.set(x, "modalDialogDropDownWidth", js.undefined)
     
-    @scala.inline
-    def setModalDialogGroupByButtonText(value: String): Self = StObject.set(x, "modalDialogGroupByButtonText", value.asInstanceOf[js.Any])
+    inline def setModalDialogGroupByButtonText(value: String): Self = StObject.set(x, "modalDialogGroupByButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogGroupByButtonTextUndefined: Self = StObject.set(x, "modalDialogGroupByButtonText", js.undefined)
+    inline def setModalDialogGroupByButtonTextUndefined: Self = StObject.set(x, "modalDialogGroupByButtonText", js.undefined)
     
-    @scala.inline
-    def setModalDialogGroupByOnClick(value: Boolean): Self = StObject.set(x, "modalDialogGroupByOnClick", value.asInstanceOf[js.Any])
+    inline def setModalDialogGroupByOnClick(value: Boolean): Self = StObject.set(x, "modalDialogGroupByOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogGroupByOnClickUndefined: Self = StObject.set(x, "modalDialogGroupByOnClick", js.undefined)
+    inline def setModalDialogGroupByOnClickUndefined: Self = StObject.set(x, "modalDialogGroupByOnClick", js.undefined)
     
-    @scala.inline
-    def setModalDialogGroupColumn(value: (/* event */ Event, /* ui */ ModalDialogGroupColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogGroupColumn", js.Any.fromFunction2(value))
+    inline def setModalDialogGroupColumn(value: (/* event */ Event, /* ui */ ModalDialogGroupColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogGroupColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogGroupColumnUndefined: Self = StObject.set(x, "modalDialogGroupColumn", js.undefined)
+    inline def setModalDialogGroupColumnUndefined: Self = StObject.set(x, "modalDialogGroupColumn", js.undefined)
     
-    @scala.inline
-    def setModalDialogGroupingColumn(value: (/* event */ Event, /* ui */ ModalDialogGroupingColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogGroupingColumn", js.Any.fromFunction2(value))
+    inline def setModalDialogGroupingColumn(value: (/* event */ Event, /* ui */ ModalDialogGroupingColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogGroupingColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogGroupingColumnUndefined: Self = StObject.set(x, "modalDialogGroupingColumn", js.undefined)
+    inline def setModalDialogGroupingColumnUndefined: Self = StObject.set(x, "modalDialogGroupingColumn", js.undefined)
     
-    @scala.inline
-    def setModalDialogHeight(value: String | Double): Self = StObject.set(x, "modalDialogHeight", value.asInstanceOf[js.Any])
+    inline def setModalDialogHeight(value: String | Double): Self = StObject.set(x, "modalDialogHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogHeightUndefined: Self = StObject.set(x, "modalDialogHeight", js.undefined)
+    inline def setModalDialogHeightUndefined: Self = StObject.set(x, "modalDialogHeight", js.undefined)
     
-    @scala.inline
-    def setModalDialogMoving(value: (/* event */ Event, /* ui */ ModalDialogMovingEventUIParam) => Unit): Self = StObject.set(x, "modalDialogMoving", js.Any.fromFunction2(value))
+    inline def setModalDialogMoving(value: (/* event */ Event, /* ui */ ModalDialogMovingEventUIParam) => Unit): Self = StObject.set(x, "modalDialogMoving", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogMovingUndefined: Self = StObject.set(x, "modalDialogMoving", js.undefined)
+    inline def setModalDialogMovingUndefined: Self = StObject.set(x, "modalDialogMoving", js.undefined)
     
-    @scala.inline
-    def setModalDialogOpened(value: (/* event */ Event, /* ui */ ModalDialogOpenedEventUIParam) => Unit): Self = StObject.set(x, "modalDialogOpened", js.Any.fromFunction2(value))
+    inline def setModalDialogOpened(value: (/* event */ Event, /* ui */ ModalDialogOpenedEventUIParam) => Unit): Self = StObject.set(x, "modalDialogOpened", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogOpenedUndefined: Self = StObject.set(x, "modalDialogOpened", js.undefined)
+    inline def setModalDialogOpenedUndefined: Self = StObject.set(x, "modalDialogOpened", js.undefined)
     
-    @scala.inline
-    def setModalDialogOpening(value: (/* event */ Event, /* ui */ ModalDialogOpeningEventUIParam) => Unit): Self = StObject.set(x, "modalDialogOpening", js.Any.fromFunction2(value))
+    inline def setModalDialogOpening(value: (/* event */ Event, /* ui */ ModalDialogOpeningEventUIParam) => Unit): Self = StObject.set(x, "modalDialogOpening", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogOpeningUndefined: Self = StObject.set(x, "modalDialogOpening", js.undefined)
+    inline def setModalDialogOpeningUndefined: Self = StObject.set(x, "modalDialogOpening", js.undefined)
     
-    @scala.inline
-    def setModalDialogRootLevelHierarchicalGrid(value: String): Self = StObject.set(x, "modalDialogRootLevelHierarchicalGrid", value.asInstanceOf[js.Any])
+    inline def setModalDialogRootLevelHierarchicalGrid(value: String): Self = StObject.set(x, "modalDialogRootLevelHierarchicalGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogRootLevelHierarchicalGridUndefined: Self = StObject.set(x, "modalDialogRootLevelHierarchicalGrid", js.undefined)
+    inline def setModalDialogRootLevelHierarchicalGridUndefined: Self = StObject.set(x, "modalDialogRootLevelHierarchicalGrid", js.undefined)
     
-    @scala.inline
-    def setModalDialogSortGroupedColumn(value: (/* event */ Event, /* ui */ ModalDialogSortGroupedColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogSortGroupedColumn", js.Any.fromFunction2(value))
+    inline def setModalDialogSortGroupedColumn(value: (/* event */ Event, /* ui */ ModalDialogSortGroupedColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogSortGroupedColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogSortGroupedColumnUndefined: Self = StObject.set(x, "modalDialogSortGroupedColumn", js.undefined)
+    inline def setModalDialogSortGroupedColumnUndefined: Self = StObject.set(x, "modalDialogSortGroupedColumn", js.undefined)
     
-    @scala.inline
-    def setModalDialogUngroupColumn(value: (/* event */ Event, /* ui */ ModalDialogUngroupColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogUngroupColumn", js.Any.fromFunction2(value))
+    inline def setModalDialogUngroupColumn(value: (/* event */ Event, /* ui */ ModalDialogUngroupColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogUngroupColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogUngroupColumnUndefined: Self = StObject.set(x, "modalDialogUngroupColumn", js.undefined)
+    inline def setModalDialogUngroupColumnUndefined: Self = StObject.set(x, "modalDialogUngroupColumn", js.undefined)
     
-    @scala.inline
-    def setModalDialogUngroupingColumn(value: (/* event */ Event, /* ui */ ModalDialogUngroupingColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogUngroupingColumn", js.Any.fromFunction2(value))
+    inline def setModalDialogUngroupingColumn(value: (/* event */ Event, /* ui */ ModalDialogUngroupingColumnEventUIParam) => Unit): Self = StObject.set(x, "modalDialogUngroupingColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModalDialogUngroupingColumnUndefined: Self = StObject.set(x, "modalDialogUngroupingColumn", js.undefined)
+    inline def setModalDialogUngroupingColumnUndefined: Self = StObject.set(x, "modalDialogUngroupingColumn", js.undefined)
     
-    @scala.inline
-    def setModalDialogWidth(value: String | Double): Self = StObject.set(x, "modalDialogWidth", value.asInstanceOf[js.Any])
+    inline def setModalDialogWidth(value: String | Double): Self = StObject.set(x, "modalDialogWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogWidthUndefined: Self = StObject.set(x, "modalDialogWidth", js.undefined)
+    inline def setModalDialogWidthUndefined: Self = StObject.set(x, "modalDialogWidth", js.undefined)
     
-    @scala.inline
-    def setPagingMode(value: String): Self = StObject.set(x, "pagingMode", value.asInstanceOf[js.Any])
+    inline def setPagingMode(value: String): Self = StObject.set(x, "pagingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagingModeUndefined: Self = StObject.set(x, "pagingMode", js.undefined)
+    inline def setPagingModeUndefined: Self = StObject.set(x, "pagingMode", js.undefined)
     
-    @scala.inline
-    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+    inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setRemoveButtonTooltip(value: String): Self = StObject.set(x, "removeButtonTooltip", value.asInstanceOf[js.Any])
+    inline def setRemoveButtonTooltip(value: String): Self = StObject.set(x, "removeButtonTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveButtonTooltipUndefined: Self = StObject.set(x, "removeButtonTooltip", js.undefined)
+    inline def setRemoveButtonTooltipUndefined: Self = StObject.set(x, "removeButtonTooltip", js.undefined)
     
-    @scala.inline
-    def setResultResponseKey(value: String): Self = StObject.set(x, "resultResponseKey", value.asInstanceOf[js.Any])
+    inline def setResultResponseKey(value: String): Self = StObject.set(x, "resultResponseKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultResponseKeyUndefined: Self = StObject.set(x, "resultResponseKey", js.undefined)
+    inline def setResultResponseKeyUndefined: Self = StObject.set(x, "resultResponseKey", js.undefined)
     
-    @scala.inline
-    def setSummarySettings(value: IgGridGroupBySummarySettings): Self = StObject.set(x, "summarySettings", value.asInstanceOf[js.Any])
+    inline def setSummarySettings(value: IgGridGroupBySummarySettings): Self = StObject.set(x, "summarySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummarySettingsUndefined: Self = StObject.set(x, "summarySettings", js.undefined)
+    inline def setSummarySettingsUndefined: Self = StObject.set(x, "summarySettings", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseGridColumnFormatter(value: Boolean): Self = StObject.set(x, "useGridColumnFormatter", value.asInstanceOf[js.Any])
+    inline def setUseGridColumnFormatter(value: Boolean): Self = StObject.set(x, "useGridColumnFormatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGridColumnFormatterUndefined: Self = StObject.set(x, "useGridColumnFormatter", js.undefined)
+    inline def setUseGridColumnFormatterUndefined: Self = StObject.set(x, "useGridColumnFormatter", js.undefined)
   }
 }

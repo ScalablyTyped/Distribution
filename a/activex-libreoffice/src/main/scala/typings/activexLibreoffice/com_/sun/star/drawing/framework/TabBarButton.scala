@@ -32,22 +32,17 @@ trait TabBarButton extends StObject {
 }
 object TabBarButton {
   
-  @scala.inline
-  def apply(ButtonLabel: String, HelpText: String, ResourceId: XResourceId): TabBarButton = {
+  inline def apply(ButtonLabel: String, HelpText: String, ResourceId: XResourceId): TabBarButton = {
     val __obj = js.Dynamic.literal(ButtonLabel = ButtonLabel.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarButton]
   }
   
-  @scala.inline
-  implicit class TabBarButtonMutableBuilder[Self <: TabBarButton] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarButton](x: Self) {
     
-    @scala.inline
-    def setButtonLabel(value: String): Self = StObject.set(x, "ButtonLabel", value.asInstanceOf[js.Any])
+    inline def setButtonLabel(value: String): Self = StObject.set(x, "ButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

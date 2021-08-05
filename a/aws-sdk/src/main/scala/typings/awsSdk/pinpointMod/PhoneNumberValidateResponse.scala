@@ -10,16 +10,13 @@ trait PhoneNumberValidateResponse extends StObject {
 }
 object PhoneNumberValidateResponse {
   
-  @scala.inline
-  def apply(NumberValidateResponse: NumberValidateResponse): PhoneNumberValidateResponse = {
+  inline def apply(NumberValidateResponse: NumberValidateResponse): PhoneNumberValidateResponse = {
     val __obj = js.Dynamic.literal(NumberValidateResponse = NumberValidateResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumberValidateResponse]
   }
   
-  @scala.inline
-  implicit class PhoneNumberValidateResponseMutableBuilder[Self <: PhoneNumberValidateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNumberValidateResponse](x: Self) {
     
-    @scala.inline
-    def setNumberValidateResponse(value: NumberValidateResponse): Self = StObject.set(x, "NumberValidateResponse", value.asInstanceOf[js.Any])
+    inline def setNumberValidateResponse(value: NumberValidateResponse): Self = StObject.set(x, "NumberValidateResponse", value.asInstanceOf[js.Any])
   }
 }

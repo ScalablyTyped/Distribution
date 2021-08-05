@@ -13,19 +13,15 @@ trait InstallToRemoteAccessSessionResult extends StObject {
 }
 object InstallToRemoteAccessSessionResult {
   
-  @scala.inline
-  def apply(): InstallToRemoteAccessSessionResult = {
+  inline def apply(): InstallToRemoteAccessSessionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstallToRemoteAccessSessionResult]
   }
   
-  @scala.inline
-  implicit class InstallToRemoteAccessSessionResultMutableBuilder[Self <: InstallToRemoteAccessSessionResult] (val x: Self) extends AnyVal {
+  extension [Self <: InstallToRemoteAccessSessionResult](x: Self) {
     
-    @scala.inline
-    def setAppUpload(value: Upload): Self = StObject.set(x, "appUpload", value.asInstanceOf[js.Any])
+    inline def setAppUpload(value: Upload): Self = StObject.set(x, "appUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUploadUndefined: Self = StObject.set(x, "appUpload", js.undefined)
+    inline def setAppUploadUndefined: Self = StObject.set(x, "appUpload", js.undefined)
   }
 }

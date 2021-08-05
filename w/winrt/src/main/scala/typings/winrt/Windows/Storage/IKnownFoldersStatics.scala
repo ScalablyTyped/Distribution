@@ -22,8 +22,7 @@ trait IKnownFoldersStatics extends StObject {
 }
 object IKnownFoldersStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     documentsLibrary: StorageFolder,
     homeGroup: StorageFolder,
     mediaServerDevices: StorageFolder,
@@ -36,28 +35,20 @@ object IKnownFoldersStatics {
     __obj.asInstanceOf[IKnownFoldersStatics]
   }
   
-  @scala.inline
-  implicit class IKnownFoldersStaticsMutableBuilder[Self <: IKnownFoldersStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IKnownFoldersStatics](x: Self) {
     
-    @scala.inline
-    def setDocumentsLibrary(value: StorageFolder): Self = StObject.set(x, "documentsLibrary", value.asInstanceOf[js.Any])
+    inline def setDocumentsLibrary(value: StorageFolder): Self = StObject.set(x, "documentsLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeGroup(value: StorageFolder): Self = StObject.set(x, "homeGroup", value.asInstanceOf[js.Any])
+    inline def setHomeGroup(value: StorageFolder): Self = StObject.set(x, "homeGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaServerDevices(value: StorageFolder): Self = StObject.set(x, "mediaServerDevices", value.asInstanceOf[js.Any])
+    inline def setMediaServerDevices(value: StorageFolder): Self = StObject.set(x, "mediaServerDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMusicLibrary(value: StorageFolder): Self = StObject.set(x, "musicLibrary", value.asInstanceOf[js.Any])
+    inline def setMusicLibrary(value: StorageFolder): Self = StObject.set(x, "musicLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicturesLibrary(value: StorageFolder): Self = StObject.set(x, "picturesLibrary", value.asInstanceOf[js.Any])
+    inline def setPicturesLibrary(value: StorageFolder): Self = StObject.set(x, "picturesLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovableDevices(value: StorageFolder): Self = StObject.set(x, "removableDevices", value.asInstanceOf[js.Any])
+    inline def setRemovableDevices(value: StorageFolder): Self = StObject.set(x, "removableDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideosLibrary(value: StorageFolder): Self = StObject.set(x, "videosLibrary", value.asInstanceOf[js.Any])
+    inline def setVideosLibrary(value: StorageFolder): Self = StObject.set(x, "videosLibrary", value.asInstanceOf[js.Any])
   }
 }

@@ -25,10 +25,8 @@ object mod {
     *
     * @param options
     */
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("conventional-commits-parser", JSImport.Namespace)
   @js.native
@@ -40,10 +38,8 @@ object mod {
     * @param commit  A single commit to be parsed.
     * @param options Same as the `options` of `conventionalCommitsParser`.
     */
-  @scala.inline
-  def sync(commit: String): Commit[String | Double | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(commit.asInstanceOf[js.Any]).asInstanceOf[Commit[String | Double | js.Symbol]]
-  @scala.inline
-  def sync(commit: String, options: Options): Commit[String | Double | js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(commit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Commit[String | Double | js.Symbol]]
+  inline def sync(commit: String): Commit[String | Double | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(commit.asInstanceOf[js.Any]).asInstanceOf[Commit[String | Double | js.Symbol]]
+  inline def sync(commit: String, options: Options): Commit[String | Double | js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(commit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Commit[String | Double | js.Symbol]]
   
   object Commit {
     
@@ -57,20 +53,16 @@ object mod {
     }
     object Note {
       
-      @scala.inline
-      def apply(text: String, title: String): Note = {
+      inline def apply(text: String, title: String): Note = {
         val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Note]
       }
       
-      @scala.inline
-      implicit class NoteMutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
+      extension [Self <: Note](x: Self) {
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -102,41 +94,30 @@ object mod {
     }
     object Reference {
       
-      @scala.inline
-      def apply(issue: String, prefix: String, raw: String): Reference = {
+      inline def apply(issue: String, prefix: String, raw: String): Reference = {
         val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], action = null, owner = null, repository = null)
         __obj.asInstanceOf[Reference]
       }
       
-      @scala.inline
-      implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+      extension [Self <: Reference](x: Self) {
         
-        @scala.inline
-        def setAction(value: Field): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: Field): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionNull: Self = StObject.set(x, "action", null)
+        inline def setActionNull: Self = StObject.set(x, "action", null)
         
-        @scala.inline
-        def setIssue(value: String): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+        inline def setIssue(value: String): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwner(value: Field): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+        inline def setOwner(value: Field): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerNull: Self = StObject.set(x, "owner", null)
+        inline def setOwnerNull: Self = StObject.set(x, "owner", null)
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRepository(value: Field): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+        inline def setRepository(value: Field): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRepositoryNull: Self = StObject.set(x, "repository", null)
+        inline def setRepositoryNull: Self = StObject.set(x, "repository", null)
       }
     }
     
@@ -150,32 +131,24 @@ object mod {
     }
     object Revert {
       
-      @scala.inline
-      def apply(): Revert = {
+      inline def apply(): Revert = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Revert]
       }
       
-      @scala.inline
-      implicit class RevertMutableBuilder[Self <: Revert] (val x: Self) extends AnyVal {
+      extension [Self <: Revert](x: Self) {
         
-        @scala.inline
-        def setHash(value: Field): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+        inline def setHash(value: Field): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHashNull: Self = StObject.set(x, "hash", null)
+        inline def setHashNull: Self = StObject.set(x, "hash", null)
         
-        @scala.inline
-        def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+        inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
         
-        @scala.inline
-        def setHeader(value: Field): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+        inline def setHeader(value: Field): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderNull: Self = StObject.set(x, "header", null)
+        inline def setHeaderNull: Self = StObject.set(x, "header", null)
         
-        @scala.inline
-        def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+        inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       }
     }
   }
@@ -239,89 +212,62 @@ object mod {
   }
   object CommitBase {
     
-    @scala.inline
-    def apply(mentions: js.Array[String], notes: js.Array[Note], references: js.Array[Reference]): CommitBase = {
+    inline def apply(mentions: js.Array[String], notes: js.Array[Note], references: js.Array[Reference]): CommitBase = {
       val __obj = js.Dynamic.literal(mentions = mentions.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], body = null, footer = null, header = null, merge = null, revert = null)
       __obj.asInstanceOf[CommitBase]
     }
     
-    @scala.inline
-    implicit class CommitBaseMutableBuilder[Self <: CommitBase] (val x: Self) extends AnyVal {
+    extension [Self <: CommitBase](x: Self) {
       
-      @scala.inline
-      def setBody(value: Field): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Field): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setFooter(value: Field): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Field): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterNull: Self = StObject.set(x, "footer", null)
+      inline def setFooterNull: Self = StObject.set(x, "footer", null)
       
-      @scala.inline
-      def setHeader(value: Field): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Field): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderNull: Self = StObject.set(x, "header", null)
+      inline def setHeaderNull: Self = StObject.set(x, "header", null)
       
-      @scala.inline
-      def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+      inline def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+      inline def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
       
-      @scala.inline
-      def setMerge(value: Field): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: Field): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeNull: Self = StObject.set(x, "merge", null)
+      inline def setMergeNull: Self = StObject.set(x, "merge", null)
       
-      @scala.inline
-      def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+      inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
       
-      @scala.inline
-      def setReferences(value: js.Array[Reference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[Reference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesVarargs(value: Reference*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: Reference*): Self = StObject.set(x, "references", js.Array(value :_*))
       
-      @scala.inline
-      def setRevert(value: Revert): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+      inline def setRevert(value: Revert): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertNull: Self = StObject.set(x, "revert", null)
+      inline def setRevertNull: Self = StObject.set(x, "revert", null)
       
-      @scala.inline
-      def setScope(value: Field): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Field): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeNull: Self = StObject.set(x, "scope", null)
+      inline def setScopeNull: Self = StObject.set(x, "scope", null)
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSubject(value: Field): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: Field): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectNull: Self = StObject.set(x, "subject", null)
+      inline def setSubjectNull: Self = StObject.set(x, "subject", null)
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setType(value: Field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -493,8 +439,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
@@ -505,140 +450,95 @@ object mod {
     
     type Keywords = js.Array[String] | String | Null
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCommentChar(value: String): Self = StObject.set(x, "commentChar", value.asInstanceOf[js.Any])
+      inline def setCommentChar(value: String): Self = StObject.set(x, "commentChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentCharNull: Self = StObject.set(x, "commentChar", null)
+      inline def setCommentCharNull: Self = StObject.set(x, "commentChar", null)
       
-      @scala.inline
-      def setCommentCharUndefined: Self = StObject.set(x, "commentChar", js.undefined)
+      inline def setCommentCharUndefined: Self = StObject.set(x, "commentChar", js.undefined)
       
-      @scala.inline
-      def setFieldPattern(value: Pattern): Self = StObject.set(x, "fieldPattern", value.asInstanceOf[js.Any])
+      inline def setFieldPattern(value: Pattern): Self = StObject.set(x, "fieldPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldPatternNull: Self = StObject.set(x, "fieldPattern", null)
+      inline def setFieldPatternNull: Self = StObject.set(x, "fieldPattern", null)
       
-      @scala.inline
-      def setFieldPatternUndefined: Self = StObject.set(x, "fieldPattern", js.undefined)
+      inline def setFieldPatternUndefined: Self = StObject.set(x, "fieldPattern", js.undefined)
       
-      @scala.inline
-      def setHeaderCorrespondence(value: Correspondence): Self = StObject.set(x, "headerCorrespondence", value.asInstanceOf[js.Any])
+      inline def setHeaderCorrespondence(value: Correspondence): Self = StObject.set(x, "headerCorrespondence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderCorrespondenceNull: Self = StObject.set(x, "headerCorrespondence", null)
+      inline def setHeaderCorrespondenceNull: Self = StObject.set(x, "headerCorrespondence", null)
       
-      @scala.inline
-      def setHeaderCorrespondenceUndefined: Self = StObject.set(x, "headerCorrespondence", js.undefined)
+      inline def setHeaderCorrespondenceUndefined: Self = StObject.set(x, "headerCorrespondence", js.undefined)
       
-      @scala.inline
-      def setHeaderCorrespondenceVarargs(value: String*): Self = StObject.set(x, "headerCorrespondence", js.Array(value :_*))
+      inline def setHeaderCorrespondenceVarargs(value: String*): Self = StObject.set(x, "headerCorrespondence", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaderPattern(value: Pattern): Self = StObject.set(x, "headerPattern", value.asInstanceOf[js.Any])
+      inline def setHeaderPattern(value: Pattern): Self = StObject.set(x, "headerPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPatternNull: Self = StObject.set(x, "headerPattern", null)
+      inline def setHeaderPatternNull: Self = StObject.set(x, "headerPattern", null)
       
-      @scala.inline
-      def setHeaderPatternUndefined: Self = StObject.set(x, "headerPattern", js.undefined)
+      inline def setHeaderPatternUndefined: Self = StObject.set(x, "headerPattern", js.undefined)
       
-      @scala.inline
-      def setIssuePrefixes(value: Prefixes): Self = StObject.set(x, "issuePrefixes", value.asInstanceOf[js.Any])
+      inline def setIssuePrefixes(value: Prefixes): Self = StObject.set(x, "issuePrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuePrefixesCaseSensitive(value: Boolean): Self = StObject.set(x, "issuePrefixesCaseSensitive", value.asInstanceOf[js.Any])
+      inline def setIssuePrefixesCaseSensitive(value: Boolean): Self = StObject.set(x, "issuePrefixesCaseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuePrefixesCaseSensitiveUndefined: Self = StObject.set(x, "issuePrefixesCaseSensitive", js.undefined)
+      inline def setIssuePrefixesCaseSensitiveUndefined: Self = StObject.set(x, "issuePrefixesCaseSensitive", js.undefined)
       
-      @scala.inline
-      def setIssuePrefixesNull: Self = StObject.set(x, "issuePrefixes", null)
+      inline def setIssuePrefixesNull: Self = StObject.set(x, "issuePrefixes", null)
       
-      @scala.inline
-      def setIssuePrefixesUndefined: Self = StObject.set(x, "issuePrefixes", js.undefined)
+      inline def setIssuePrefixesUndefined: Self = StObject.set(x, "issuePrefixes", js.undefined)
       
-      @scala.inline
-      def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value :_*))
+      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value :_*))
       
-      @scala.inline
-      def setMergeCorrespondence(value: Correspondence): Self = StObject.set(x, "mergeCorrespondence", value.asInstanceOf[js.Any])
+      inline def setMergeCorrespondence(value: Correspondence): Self = StObject.set(x, "mergeCorrespondence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeCorrespondenceNull: Self = StObject.set(x, "mergeCorrespondence", null)
+      inline def setMergeCorrespondenceNull: Self = StObject.set(x, "mergeCorrespondence", null)
       
-      @scala.inline
-      def setMergeCorrespondenceUndefined: Self = StObject.set(x, "mergeCorrespondence", js.undefined)
+      inline def setMergeCorrespondenceUndefined: Self = StObject.set(x, "mergeCorrespondence", js.undefined)
       
-      @scala.inline
-      def setMergeCorrespondenceVarargs(value: String*): Self = StObject.set(x, "mergeCorrespondence", js.Array(value :_*))
+      inline def setMergeCorrespondenceVarargs(value: String*): Self = StObject.set(x, "mergeCorrespondence", js.Array(value :_*))
       
-      @scala.inline
-      def setMergePattern(value: Pattern): Self = StObject.set(x, "mergePattern", value.asInstanceOf[js.Any])
+      inline def setMergePattern(value: Pattern): Self = StObject.set(x, "mergePattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergePatternNull: Self = StObject.set(x, "mergePattern", null)
+      inline def setMergePatternNull: Self = StObject.set(x, "mergePattern", null)
       
-      @scala.inline
-      def setMergePatternUndefined: Self = StObject.set(x, "mergePattern", js.undefined)
+      inline def setMergePatternUndefined: Self = StObject.set(x, "mergePattern", js.undefined)
       
-      @scala.inline
-      def setNoteKeywords(value: Keywords): Self = StObject.set(x, "noteKeywords", value.asInstanceOf[js.Any])
+      inline def setNoteKeywords(value: Keywords): Self = StObject.set(x, "noteKeywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoteKeywordsNull: Self = StObject.set(x, "noteKeywords", null)
+      inline def setNoteKeywordsNull: Self = StObject.set(x, "noteKeywords", null)
       
-      @scala.inline
-      def setNoteKeywordsUndefined: Self = StObject.set(x, "noteKeywords", js.undefined)
+      inline def setNoteKeywordsUndefined: Self = StObject.set(x, "noteKeywords", js.undefined)
       
-      @scala.inline
-      def setNoteKeywordsVarargs(value: String*): Self = StObject.set(x, "noteKeywords", js.Array(value :_*))
+      inline def setNoteKeywordsVarargs(value: String*): Self = StObject.set(x, "noteKeywords", js.Array(value :_*))
       
-      @scala.inline
-      def setReferenceActions(value: Actions): Self = StObject.set(x, "referenceActions", value.asInstanceOf[js.Any])
+      inline def setReferenceActions(value: Actions): Self = StObject.set(x, "referenceActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceActionsNull: Self = StObject.set(x, "referenceActions", null)
+      inline def setReferenceActionsNull: Self = StObject.set(x, "referenceActions", null)
       
-      @scala.inline
-      def setReferenceActionsUndefined: Self = StObject.set(x, "referenceActions", js.undefined)
+      inline def setReferenceActionsUndefined: Self = StObject.set(x, "referenceActions", js.undefined)
       
-      @scala.inline
-      def setReferenceActionsVarargs(value: String*): Self = StObject.set(x, "referenceActions", js.Array(value :_*))
+      inline def setReferenceActionsVarargs(value: String*): Self = StObject.set(x, "referenceActions", js.Array(value :_*))
       
-      @scala.inline
-      def setRevertCorrespondence(value: Correspondence): Self = StObject.set(x, "revertCorrespondence", value.asInstanceOf[js.Any])
+      inline def setRevertCorrespondence(value: Correspondence): Self = StObject.set(x, "revertCorrespondence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertCorrespondenceNull: Self = StObject.set(x, "revertCorrespondence", null)
+      inline def setRevertCorrespondenceNull: Self = StObject.set(x, "revertCorrespondence", null)
       
-      @scala.inline
-      def setRevertCorrespondenceUndefined: Self = StObject.set(x, "revertCorrespondence", js.undefined)
+      inline def setRevertCorrespondenceUndefined: Self = StObject.set(x, "revertCorrespondence", js.undefined)
       
-      @scala.inline
-      def setRevertCorrespondenceVarargs(value: String*): Self = StObject.set(x, "revertCorrespondence", js.Array(value :_*))
+      inline def setRevertCorrespondenceVarargs(value: String*): Self = StObject.set(x, "revertCorrespondence", js.Array(value :_*))
       
-      @scala.inline
-      def setRevertPattern(value: Pattern): Self = StObject.set(x, "revertPattern", value.asInstanceOf[js.Any])
+      inline def setRevertPattern(value: Pattern): Self = StObject.set(x, "revertPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertPatternNull: Self = StObject.set(x, "revertPattern", null)
+      inline def setRevertPatternNull: Self = StObject.set(x, "revertPattern", null)
       
-      @scala.inline
-      def setRevertPatternUndefined: Self = StObject.set(x, "revertPattern", js.undefined)
+      inline def setRevertPatternUndefined: Self = StObject.set(x, "revertPattern", js.undefined)
       
-      @scala.inline
-      def setWarn(value: (js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: (js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnFunction1(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarnFunction1(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
     
     type Pattern = RegExp | String | Null

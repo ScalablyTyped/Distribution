@@ -11,10 +11,8 @@ object useMergeStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TState /* <: js.Object */](initialState: TState): js.Tuple2[TState, MergeStateSetter[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TState, MergeStateSetter[TState]]]
-  @scala.inline
-  def default[TState /* <: js.Object */](initialState: js.Function0[TState]): js.Tuple2[TState, MergeStateSetter[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TState, MergeStateSetter[TState]]]
+  inline def default[TState /* <: js.Object */](initialState: TState): js.Tuple2[TState, MergeStateSetter[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TState, MergeStateSetter[TState]]]
+  inline def default[TState /* <: js.Object */](initialState: js.Function0[TState]): js.Tuple2[TState, MergeStateSetter[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TState, MergeStateSetter[TState]]]
   
   type MergeStateSetter[TState] = js.Function1[/* update */ Updater[TState] | Partial[TState] | Null, Unit]
   

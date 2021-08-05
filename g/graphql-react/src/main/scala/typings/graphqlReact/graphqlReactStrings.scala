@@ -8,16 +8,13 @@ object graphqlReactStrings {
   
   @js.native
   sealed trait cache extends StObject
-  @scala.inline
-  def cache: cache = "cache".asInstanceOf[cache]
+  inline def cache: cache = "cache".asInstanceOf[cache]
   
   @js.native
   sealed trait fetch extends StObject
-  @scala.inline
-  def fetch: fetch = "fetch".asInstanceOf[fetch]
+  inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   
   @js.native
   sealed trait reset extends StObject
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
+  inline def reset: reset = "reset".asInstanceOf[reset]
 }

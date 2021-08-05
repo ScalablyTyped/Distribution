@@ -43,46 +43,33 @@ trait AdminInitiateAuthRequest extends StObject {
 }
 object AdminInitiateAuthRequest {
   
-  @scala.inline
-  def apply(AuthFlow: AuthFlowType, ClientId: ClientIdType, UserPoolId: UserPoolIdType): AdminInitiateAuthRequest = {
+  inline def apply(AuthFlow: AuthFlowType, ClientId: ClientIdType, UserPoolId: UserPoolIdType): AdminInitiateAuthRequest = {
     val __obj = js.Dynamic.literal(AuthFlow = AuthFlow.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminInitiateAuthRequest]
   }
   
-  @scala.inline
-  implicit class AdminInitiateAuthRequestMutableBuilder[Self <: AdminInitiateAuthRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminInitiateAuthRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
+    inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
+    inline def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
-    @scala.inline
-    def setAuthFlow(value: AuthFlowType): Self = StObject.set(x, "AuthFlow", value.asInstanceOf[js.Any])
+    inline def setAuthFlow(value: AuthFlowType): Self = StObject.set(x, "AuthFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthParameters(value: AuthParametersType): Self = StObject.set(x, "AuthParameters", value.asInstanceOf[js.Any])
+    inline def setAuthParameters(value: AuthParametersType): Self = StObject.set(x, "AuthParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthParametersUndefined: Self = StObject.set(x, "AuthParameters", js.undefined)
+    inline def setAuthParametersUndefined: Self = StObject.set(x, "AuthParameters", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setContextData(value: ContextDataType): Self = StObject.set(x, "ContextData", value.asInstanceOf[js.Any])
+    inline def setContextData(value: ContextDataType): Self = StObject.set(x, "ContextData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextDataUndefined: Self = StObject.set(x, "ContextData", js.undefined)
+    inline def setContextDataUndefined: Self = StObject.set(x, "ContextData", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

@@ -20,16 +20,12 @@ object TSIntersectionType {
   @js.native
   def apply(types: js.Array[TSType]): TSIntersectionType = js.native
   
-  @scala.inline
-  implicit class TSIntersectionTypeMutableBuilder[Self <: TSIntersectionType] (val x: Self) extends AnyVal {
+  extension [Self <: TSIntersectionType](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

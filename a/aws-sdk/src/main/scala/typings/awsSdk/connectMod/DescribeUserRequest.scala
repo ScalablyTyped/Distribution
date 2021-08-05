@@ -18,19 +18,15 @@ trait DescribeUserRequest extends StObject {
 }
 object DescribeUserRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, UserId: UserId): DescribeUserRequest = {
+  inline def apply(InstanceId: InstanceId, UserId: UserId): DescribeUserRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserRequest]
   }
   
-  @scala.inline
-  implicit class DescribeUserRequestMutableBuilder[Self <: DescribeUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

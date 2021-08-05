@@ -82,47 +82,34 @@ trait CustomLayerInterface extends StObject {
 }
 object CustomLayerInterface {
   
-  @scala.inline
-  def apply(id: String, render: (WebGLRenderingContext, js.Array[Double]) => Unit): CustomLayerInterface = {
+  inline def apply(id: String, render: (WebGLRenderingContext, js.Array[Double]) => Unit): CustomLayerInterface = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
     __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[CustomLayerInterface]
   }
   
-  @scala.inline
-  implicit class CustomLayerInterfaceMutableBuilder[Self <: CustomLayerInterface] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLayerInterface](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAdd(value: (/* map */ Map, /* gl */ WebGLRenderingContext) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
+    inline def setOnAdd(value: (/* map */ Map, /* gl */ WebGLRenderingContext) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
-    @scala.inline
-    def setOnRemove(value: (/* map */ Map, /* gl */ WebGLRenderingContext) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
+    inline def setOnRemove(value: (/* map */ Map, /* gl */ WebGLRenderingContext) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+    inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     
-    @scala.inline
-    def setPrerender(value: (/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double]) => Unit): Self = StObject.set(x, "prerender", js.Any.fromFunction2(value))
+    inline def setPrerender(value: (/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double]) => Unit): Self = StObject.set(x, "prerender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrerenderUndefined: Self = StObject.set(x, "prerender", js.undefined)
+    inline def setPrerenderUndefined: Self = StObject.set(x, "prerender", js.undefined)
     
-    @scala.inline
-    def setRender(value: (WebGLRenderingContext, js.Array[Double]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (WebGLRenderingContext, js.Array[Double]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderingMode(value: `2d` | `3d`): Self = StObject.set(x, "renderingMode", value.asInstanceOf[js.Any])
+    inline def setRenderingMode(value: `2d` | `3d`): Self = StObject.set(x, "renderingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingModeUndefined: Self = StObject.set(x, "renderingMode", js.undefined)
+    inline def setRenderingModeUndefined: Self = StObject.set(x, "renderingMode", js.undefined)
     
-    @scala.inline
-    def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,20 +18,16 @@ trait CustomPropertyItems
 }
 object CustomPropertyItems {
   
-  @scala.inline
-  def apply(items: StringDictionary[CustomProperty]): CustomPropertyItems = {
+  inline def apply(items: StringDictionary[CustomProperty]): CustomPropertyItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("items")
     __obj.asInstanceOf[CustomPropertyItems]
   }
   
-  @scala.inline
-  implicit class CustomPropertyItemsMutableBuilder[Self <: CustomPropertyItems] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyItems](x: Self) {
     
-    @scala.inline
-    def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

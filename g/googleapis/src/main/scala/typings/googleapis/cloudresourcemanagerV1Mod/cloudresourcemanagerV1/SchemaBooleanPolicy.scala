@@ -42,19 +42,15 @@ trait SchemaBooleanPolicy extends StObject {
 }
 object SchemaBooleanPolicy {
   
-  @scala.inline
-  def apply(): SchemaBooleanPolicy = {
+  inline def apply(): SchemaBooleanPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBooleanPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaBooleanPolicyMutableBuilder[Self <: SchemaBooleanPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBooleanPolicy](x: Self) {
     
-    @scala.inline
-    def setEnforced(value: Boolean): Self = StObject.set(x, "enforced", value.asInstanceOf[js.Any])
+    inline def setEnforced(value: Boolean): Self = StObject.set(x, "enforced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcedUndefined: Self = StObject.set(x, "enforced", js.undefined)
+    inline def setEnforcedUndefined: Self = StObject.set(x, "enforced", js.undefined)
   }
 }

@@ -26,31 +26,23 @@ trait SchemaLogConfig extends StObject {
 }
 object SchemaLogConfig {
   
-  @scala.inline
-  def apply(): SchemaLogConfig = {
+  inline def apply(): SchemaLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogConfig]
   }
   
-  @scala.inline
-  implicit class SchemaLogConfigMutableBuilder[Self <: SchemaLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogConfig](x: Self) {
     
-    @scala.inline
-    def setCloudAudit(value: SchemaLogConfigCloudAuditOptions): Self = StObject.set(x, "cloudAudit", value.asInstanceOf[js.Any])
+    inline def setCloudAudit(value: SchemaLogConfigCloudAuditOptions): Self = StObject.set(x, "cloudAudit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudAuditUndefined: Self = StObject.set(x, "cloudAudit", js.undefined)
+    inline def setCloudAuditUndefined: Self = StObject.set(x, "cloudAudit", js.undefined)
     
-    @scala.inline
-    def setCounter(value: SchemaLogConfigCounterOptions): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: SchemaLogConfigCounterOptions): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+    inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
-    @scala.inline
-    def setDataAccess(value: SchemaLogConfigDataAccessOptions): Self = StObject.set(x, "dataAccess", value.asInstanceOf[js.Any])
+    inline def setDataAccess(value: SchemaLogConfigDataAccessOptions): Self = StObject.set(x, "dataAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAccessUndefined: Self = StObject.set(x, "dataAccess", js.undefined)
+    inline def setDataAccessUndefined: Self = StObject.set(x, "dataAccess", js.undefined)
   }
 }

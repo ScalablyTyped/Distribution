@@ -19,22 +19,17 @@ trait Country extends StObject {
 }
 object Country {
   
-  @scala.inline
-  def apply(country: String): Country = {
+  inline def apply(country: String): Country = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any])
     __obj.asInstanceOf[Country]
   }
   
-  @scala.inline
-  implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+  extension [Self <: Country](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferred_language(value: de | en | es | it | fr | nl | pl): Self = StObject.set(x, "preferred_language", value.asInstanceOf[js.Any])
+    inline def setPreferred_language(value: de | en | es | it | fr | nl | pl): Self = StObject.set(x, "preferred_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferred_languageUndefined: Self = StObject.set(x, "preferred_language", js.undefined)
+    inline def setPreferred_languageUndefined: Self = StObject.set(x, "preferred_language", js.undefined)
   }
 }

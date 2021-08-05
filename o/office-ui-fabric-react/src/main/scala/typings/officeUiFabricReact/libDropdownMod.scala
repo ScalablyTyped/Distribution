@@ -30,8 +30,7 @@ object libDropdownMod {
     @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase.defaultProps")
     @js.native
     def defaultProps: Options = js.native
-    @scala.inline
-    def defaultProps_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownMenuItemType")

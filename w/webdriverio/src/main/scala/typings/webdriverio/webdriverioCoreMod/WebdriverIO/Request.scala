@@ -59,8 +59,7 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headers: Record[String, String],
     initialPriority: ResourcePriority,
     method: String,
@@ -71,52 +70,36 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setHasPostData(value: Boolean): Self = StObject.set(x, "hasPostData", value.asInstanceOf[js.Any])
+    inline def setHasPostData(value: Boolean): Self = StObject.set(x, "hasPostData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPostDataUndefined: Self = StObject.set(x, "hasPostData", js.undefined)
+    inline def setHasPostDataUndefined: Self = StObject.set(x, "hasPostData", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPriority(value: ResourcePriority): Self = StObject.set(x, "initialPriority", value.asInstanceOf[js.Any])
+    inline def setInitialPriority(value: ResourcePriority): Self = StObject.set(x, "initialPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLinkPreload(value: Boolean): Self = StObject.set(x, "isLinkPreload", value.asInstanceOf[js.Any])
+    inline def setIsLinkPreload(value: Boolean): Self = StObject.set(x, "isLinkPreload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLinkPreloadUndefined: Self = StObject.set(x, "isLinkPreload", js.undefined)
+    inline def setIsLinkPreloadUndefined: Self = StObject.set(x, "isLinkPreload", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
+    inline def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixedContentTypeUndefined: Self = StObject.set(x, "mixedContentType", js.undefined)
+    inline def setMixedContentTypeUndefined: Self = StObject.set(x, "mixedContentType", js.undefined)
     
-    @scala.inline
-    def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+    inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
-    @scala.inline
-    def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+    inline def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlFragment(value: String): Self = StObject.set(x, "urlFragment", value.asInstanceOf[js.Any])
+    inline def setUrlFragment(value: String): Self = StObject.set(x, "urlFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlFragmentUndefined: Self = StObject.set(x, "urlFragment", js.undefined)
+    inline def setUrlFragmentUndefined: Self = StObject.set(x, "urlFragment", js.undefined)
   }
 }

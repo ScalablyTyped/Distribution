@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RuleStatusType extends StObject
 object RuleStatusType {
   
-  @scala.inline
-  def Disabled: typings.aliOss.aliOssStrings.Disabled = "Disabled".asInstanceOf[typings.aliOss.aliOssStrings.Disabled]
+  inline def Disabled: typings.aliOss.aliOssStrings.Disabled = "Disabled".asInstanceOf[typings.aliOss.aliOssStrings.Disabled]
   
-  @scala.inline
-  def Enabled: typings.aliOss.aliOssStrings.Enabled = "Enabled".asInstanceOf[typings.aliOss.aliOssStrings.Enabled]
+  inline def Enabled: typings.aliOss.aliOssStrings.Enabled = "Enabled".asInstanceOf[typings.aliOss.aliOssStrings.Enabled]
 }

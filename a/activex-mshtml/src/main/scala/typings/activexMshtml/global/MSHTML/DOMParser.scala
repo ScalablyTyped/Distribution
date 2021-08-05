@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMParser")
 @js.native
-class DOMParser protected ()
+/* private */ class DOMParser ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMParser {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMParser_typekey")
   var MSHTMLDotDOMParser_typekey: typings.activexMshtml.MSHTML.DOMParser = js.native
   

@@ -24,58 +24,41 @@ trait Light extends StObject {
 }
 object Light {
   
-  @scala.inline
-  def apply(): Light = {
+  inline def apply(): Light = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Light]
   }
   
-  @scala.inline
-  implicit class LightMutableBuilder[Self <: Light] (val x: Self) extends AnyVal {
+  extension [Self <: Light](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: map | viewport): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: map | viewport): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColor-transition`(value: Transition): Self = StObject.set(x, "color-transition", value.asInstanceOf[js.Any])
+    inline def `setColor-transition`(value: Transition): Self = StObject.set(x, "color-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColor-transitionUndefined`: Self = StObject.set(x, "color-transition", js.undefined)
+    inline def `setColor-transitionUndefined`: Self = StObject.set(x, "color-transition", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
+    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIntensity-transition`(value: Transition): Self = StObject.set(x, "intensity-transition", value.asInstanceOf[js.Any])
+    inline def `setIntensity-transition`(value: Transition): Self = StObject.set(x, "intensity-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIntensity-transitionUndefined`: Self = StObject.set(x, "intensity-transition", js.undefined)
+    inline def `setIntensity-transitionUndefined`: Self = StObject.set(x, "intensity-transition", js.undefined)
     
-    @scala.inline
-    def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
+    inline def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPosition-transition`(value: Transition): Self = StObject.set(x, "position-transition", value.asInstanceOf[js.Any])
+    inline def `setPosition-transition`(value: Transition): Self = StObject.set(x, "position-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPosition-transitionUndefined`: Self = StObject.set(x, "position-transition", js.undefined)
+    inline def `setPosition-transitionUndefined`: Self = StObject.set(x, "position-transition", js.undefined)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
   }
 }

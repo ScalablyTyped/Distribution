@@ -10,19 +10,15 @@ trait `9` extends StObject {
 }
 object `9` {
   
-  @scala.inline
-  def apply(): `9` = {
+  inline def apply(): `9` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`9`]
   }
   
-  @scala.inline
-  implicit class `9MutableBuilder`[Self <: `9`] (val x: Self) extends AnyVal {
+  extension [Self <: `9`](x: Self) {
     
-    @scala.inline
-    def setBaseFontSize(value: js.Object): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+    inline def setBaseFontSize(value: js.Object): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+    inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
   }
 }

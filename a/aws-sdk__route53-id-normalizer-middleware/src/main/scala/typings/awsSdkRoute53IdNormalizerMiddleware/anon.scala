@@ -14,20 +14,16 @@ object anon {
   }
   object AliasTarget {
     
-    @scala.inline
-    def apply(): AliasTarget = {
+    inline def apply(): AliasTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AliasTarget]
     }
     
-    @scala.inline
-    implicit class AliasTargetMutableBuilder[Self <: AliasTarget] (val x: Self) extends AnyVal {
+    extension [Self <: AliasTarget](x: Self) {
       
-      @scala.inline
-      def setAliasTarget(value: HostedZoneId): Self = StObject.set(x, "AliasTarget", value.asInstanceOf[js.Any])
+      inline def setAliasTarget(value: HostedZoneId): Self = StObject.set(x, "AliasTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasTargetUndefined: Self = StObject.set(x, "AliasTarget", js.undefined)
+      inline def setAliasTargetUndefined: Self = StObject.set(x, "AliasTarget", js.undefined)
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Changes {
     
-    @scala.inline
-    def apply(Changes: Iterable[Change]): Changes = {
+    inline def apply(Changes: Iterable[Change]): Changes = {
       val __obj = js.Dynamic.literal(Changes = Changes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Changes]
     }
     
-    @scala.inline
-    implicit class ChangesMutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
+    extension [Self <: Changes](x: Self) {
       
-      @scala.inline
-      def setChanges(value: Iterable[Change]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: Iterable[Change]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +50,14 @@ object anon {
   }
   object HostedZoneId {
     
-    @scala.inline
-    def apply(HostedZoneId: String): HostedZoneId = {
+    inline def apply(HostedZoneId: String): HostedZoneId = {
       val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedZoneId]
     }
     
-    @scala.inline
-    implicit class HostedZoneIdMutableBuilder[Self <: HostedZoneId] (val x: Self) extends AnyVal {
+    extension [Self <: HostedZoneId](x: Self) {
       
-      @scala.inline
-      def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,16 +16,13 @@ trait RepeatVectorLayerArgs
 }
 object RepeatVectorLayerArgs {
   
-  @scala.inline
-  def apply(n: Double): RepeatVectorLayerArgs = {
+  inline def apply(n: Double): RepeatVectorLayerArgs = {
     val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepeatVectorLayerArgs]
   }
   
-  @scala.inline
-  implicit class RepeatVectorLayerArgsMutableBuilder[Self <: RepeatVectorLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RepeatVectorLayerArgs](x: Self) {
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
   }
 }

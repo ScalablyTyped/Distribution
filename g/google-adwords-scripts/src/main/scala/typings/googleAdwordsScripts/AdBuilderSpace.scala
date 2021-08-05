@@ -22,8 +22,7 @@ trait AdBuilderSpace extends StObject {
 }
 object AdBuilderSpace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expandedTextAdBuilder: () => ExpandedTextAdBuilder[ExpandedTextAd],
     gmailImageAdBuilder: () => GmailImageAdBuilder[GmailImageAd],
     gmailMultiProductAdBuilder: () => GmailMultiProductAdBuilder[GmailMultiProductAd],
@@ -36,28 +35,20 @@ object AdBuilderSpace {
     __obj.asInstanceOf[AdBuilderSpace]
   }
   
-  @scala.inline
-  implicit class AdBuilderSpaceMutableBuilder[Self <: AdBuilderSpace] (val x: Self) extends AnyVal {
+  extension [Self <: AdBuilderSpace](x: Self) {
     
-    @scala.inline
-    def setExpandedTextAdBuilder(value: () => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "expandedTextAdBuilder", js.Any.fromFunction0(value))
+    inline def setExpandedTextAdBuilder(value: () => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "expandedTextAdBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGmailImageAdBuilder(value: () => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "gmailImageAdBuilder", js.Any.fromFunction0(value))
+    inline def setGmailImageAdBuilder(value: () => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "gmailImageAdBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGmailMultiProductAdBuilder(value: () => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "gmailMultiProductAdBuilder", js.Any.fromFunction0(value))
+    inline def setGmailMultiProductAdBuilder(value: () => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "gmailMultiProductAdBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGmailSinglePromotionAdBuilder(value: () => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "gmailSinglePromotionAdBuilder", js.Any.fromFunction0(value))
+    inline def setGmailSinglePromotionAdBuilder(value: () => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "gmailSinglePromotionAdBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHtml5AdBuilder(value: () => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "html5AdBuilder", js.Any.fromFunction0(value))
+    inline def setHtml5AdBuilder(value: () => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "html5AdBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImageAdBuilder(value: () => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "imageAdBuilder", js.Any.fromFunction0(value))
+    inline def setImageAdBuilder(value: () => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "imageAdBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResponsiveDisplayAdBuilder(value: () => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "responsiveDisplayAdBuilder", js.Any.fromFunction0(value))
+    inline def setResponsiveDisplayAdBuilder(value: () => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "responsiveDisplayAdBuilder", js.Any.fromFunction0(value))
   }
 }

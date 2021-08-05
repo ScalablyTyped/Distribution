@@ -18,8 +18,7 @@ trait EachMember extends StObject {
 }
 object EachMember {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eachMember: scala.Double,
     noDelivery: scala.Double,
     none: scala.Double,
@@ -30,22 +29,16 @@ object EachMember {
     __obj.asInstanceOf[EachMember]
   }
   
-  @scala.inline
-  implicit class EachMemberMutableBuilder[Self <: EachMember] (val x: Self) extends AnyVal {
+  extension [Self <: EachMember](x: Self) {
     
-    @scala.inline
-    def setEachMember(value: scala.Double): Self = StObject.set(x, "eachMember", value.asInstanceOf[js.Any])
+    inline def setEachMember(value: scala.Double): Self = StObject.set(x, "eachMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDelivery(value: scala.Double): Self = StObject.set(x, "noDelivery", value.asInstanceOf[js.Any])
+    inline def setNoDelivery(value: scala.Double): Self = StObject.set(x, "noDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
+    inline def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredEmailAddress(value: scala.Double): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
+    inline def setPreferredEmailAddress(value: scala.Double): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
   }
 }

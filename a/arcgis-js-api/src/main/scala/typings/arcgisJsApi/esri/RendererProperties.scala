@@ -15,19 +15,15 @@ trait RendererProperties extends StObject {
 }
 object RendererProperties {
   
-  @scala.inline
-  def apply(): RendererProperties = {
+  inline def apply(): RendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RendererProperties]
   }
   
-  @scala.inline
-  implicit class RendererPropertiesMutableBuilder[Self <: RendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RendererProperties](x: Self) {
     
-    @scala.inline
-    def setAuthoringInfo(value: AuthoringInfoProperties): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
+    inline def setAuthoringInfo(value: AuthoringInfoProperties): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoringInfoUndefined: Self = StObject.set(x, "authoringInfo", js.undefined)
+    inline def setAuthoringInfoUndefined: Self = StObject.set(x, "authoringInfo", js.undefined)
   }
 }

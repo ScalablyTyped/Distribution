@@ -39,17 +39,14 @@ object carouselMod {
   }
   object CarouselOptionItem {
     
-    @scala.inline
-    def apply(description: String, title: String): CarouselOptionItem = {
+    inline def apply(description: String, title: String): CarouselOptionItem = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CarouselOptionItem]
     }
     
-    @scala.inline
-    implicit class CarouselOptionItemMutableBuilder[Self <: CarouselOptionItem] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselOptionItem](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,30 +66,24 @@ object carouselMod {
   }
   object CarouselOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       items: OptionItems[CarouselOptionItem] | js.Array[GoogleActionsV2UiElementsCarouselSelectCarouselItem]
     ): CarouselOptions = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[CarouselOptions]
     }
     
-    @scala.inline
-    implicit class CarouselOptionsMutableBuilder[Self <: CarouselOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselOptions](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setItems(
+      inline def setItems(
         value: OptionItems[CarouselOptionItem] | js.Array[GoogleActionsV2UiElementsCarouselSelectCarouselItem]
       ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: GoogleActionsV2UiElementsCarouselSelectCarouselItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: GoogleActionsV2UiElementsCarouselSelectCarouselItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
 }

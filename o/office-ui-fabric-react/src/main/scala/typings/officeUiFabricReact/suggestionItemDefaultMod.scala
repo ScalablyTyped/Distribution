@@ -13,13 +13,9 @@ object suggestionItemDefaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SuggestionItemNormal(persona: IPersonaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any]).asInstanceOf[Element]
-  @scala.inline
-  def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[js.Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def SuggestionItemNormal(persona: IPersonaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[js.Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @scala.inline
-  def SuggestionItemSmall(persona: IPersonaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemSmall")(persona.asInstanceOf[js.Any]).asInstanceOf[Element]
-  @scala.inline
-  def SuggestionItemSmall(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[js.Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemSmall")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def SuggestionItemSmall(persona: IPersonaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemSmall")(persona.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SuggestionItemSmall(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[js.Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemSmall")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
 }

@@ -18,22 +18,17 @@ trait StartOnDemandAppReplicationRequest extends StObject {
 }
 object StartOnDemandAppReplicationRequest {
   
-  @scala.inline
-  def apply(appId: AppId): StartOnDemandAppReplicationRequest = {
+  inline def apply(appId: AppId): StartOnDemandAppReplicationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOnDemandAppReplicationRequest]
   }
   
-  @scala.inline
-  implicit class StartOnDemandAppReplicationRequestMutableBuilder[Self <: StartOnDemandAppReplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartOnDemandAppReplicationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

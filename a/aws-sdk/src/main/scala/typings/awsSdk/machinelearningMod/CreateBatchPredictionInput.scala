@@ -33,8 +33,7 @@ trait CreateBatchPredictionInput extends StObject {
 }
 object CreateBatchPredictionInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BatchPredictionDataSourceId: EntityId,
     BatchPredictionId: EntityId,
     MLModelId: EntityId,
@@ -44,25 +43,18 @@ object CreateBatchPredictionInput {
     __obj.asInstanceOf[CreateBatchPredictionInput]
   }
   
-  @scala.inline
-  implicit class CreateBatchPredictionInputMutableBuilder[Self <: CreateBatchPredictionInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBatchPredictionInput](x: Self) {
     
-    @scala.inline
-    def setBatchPredictionDataSourceId(value: EntityId): Self = StObject.set(x, "BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionDataSourceId(value: EntityId): Self = StObject.set(x, "BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPredictionName(value: EntityName): Self = StObject.set(x, "BatchPredictionName", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionName(value: EntityName): Self = StObject.set(x, "BatchPredictionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPredictionNameUndefined: Self = StObject.set(x, "BatchPredictionName", js.undefined)
+    inline def setBatchPredictionNameUndefined: Self = StObject.set(x, "BatchPredictionName", js.undefined)
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUri(value: S3Url): Self = StObject.set(x, "OutputUri", value.asInstanceOf[js.Any])
+    inline def setOutputUri(value: S3Url): Self = StObject.set(x, "OutputUri", value.asInstanceOf[js.Any])
   }
 }

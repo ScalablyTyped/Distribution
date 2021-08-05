@@ -41,62 +41,44 @@ object mod {
   }
   object StrategyOptions {
     
-    @scala.inline
-    def apply(): StrategyOptions = {
+    inline def apply(): StrategyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsMutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptions](x: Self) {
       
-      @scala.inline
-      def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+      inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+      inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
       
-      @scala.inline
-      def setHeaderFields(value: js.Array[String]): Self = StObject.set(x, "headerFields", value.asInstanceOf[js.Any])
+      inline def setHeaderFields(value: js.Array[String]): Self = StObject.set(x, "headerFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFieldsUndefined: Self = StObject.set(x, "headerFields", js.undefined)
+      inline def setHeaderFieldsUndefined: Self = StObject.set(x, "headerFields", js.undefined)
       
-      @scala.inline
-      def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value :_*))
+      inline def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value :_*))
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setParams(value: Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
-      @scala.inline
-      def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setTokenFields(value: js.Array[String]): Self = StObject.set(x, "tokenFields", value.asInstanceOf[js.Any])
+      inline def setTokenFields(value: js.Array[String]): Self = StObject.set(x, "tokenFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenFieldsUndefined: Self = StObject.set(x, "tokenFields", js.undefined)
+      inline def setTokenFieldsUndefined: Self = StObject.set(x, "tokenFields", js.undefined)
       
-      @scala.inline
-      def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value :_*))
+      inline def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value :_*))
     }
   }
   
@@ -118,59 +100,42 @@ object mod {
   }
   object StrategyOptionsWithRequest {
     
-    @scala.inline
-    def apply(): StrategyOptionsWithRequest = {
+    inline def apply(): StrategyOptionsWithRequest = {
       val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsWithRequestMutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptionsWithRequest](x: Self) {
       
-      @scala.inline
-      def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+      inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+      inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
       
-      @scala.inline
-      def setHeaderFields(value: js.Array[String]): Self = StObject.set(x, "headerFields", value.asInstanceOf[js.Any])
+      inline def setHeaderFields(value: js.Array[String]): Self = StObject.set(x, "headerFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFieldsUndefined: Self = StObject.set(x, "headerFields", js.undefined)
+      inline def setHeaderFieldsUndefined: Self = StObject.set(x, "headerFields", js.undefined)
       
-      @scala.inline
-      def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value :_*))
+      inline def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value :_*))
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setParams(value: Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setTokenFields(value: js.Array[String]): Self = StObject.set(x, "tokenFields", value.asInstanceOf[js.Any])
+      inline def setTokenFields(value: js.Array[String]): Self = StObject.set(x, "tokenFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenFieldsUndefined: Self = StObject.set(x, "tokenFields", js.undefined)
+      inline def setTokenFieldsUndefined: Self = StObject.set(x, "tokenFields", js.undefined)
       
-      @scala.inline
-      def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value :_*))
+      inline def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value :_*))
     }
   }
   
@@ -203,17 +168,14 @@ object mod {
   }
   object VerifyOptions {
     
-    @scala.inline
-    def apply(message: String): VerifyOptions = {
+    inline def apply(message: String): VerifyOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    @scala.inline
-    implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

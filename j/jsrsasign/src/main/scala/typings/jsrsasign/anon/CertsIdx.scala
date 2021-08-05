@@ -12,22 +12,17 @@ trait CertsIdx extends StObject {
 }
 object CertsIdx {
   
-  @scala.inline
-  def apply(certsIdx: Double, signerInfos: js.Array[js.Any]): CertsIdx = {
+  inline def apply(certsIdx: Double, signerInfos: js.Array[js.Any]): CertsIdx = {
     val __obj = js.Dynamic.literal(certsIdx = certsIdx.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertsIdx]
   }
   
-  @scala.inline
-  implicit class CertsIdxMutableBuilder[Self <: CertsIdx] (val x: Self) extends AnyVal {
+  extension [Self <: CertsIdx](x: Self) {
     
-    @scala.inline
-    def setCertsIdx(value: Double): Self = StObject.set(x, "certsIdx", value.asInstanceOf[js.Any])
+    inline def setCertsIdx(value: Double): Self = StObject.set(x, "certsIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerInfos(value: js.Array[js.Any]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
+    inline def setSignerInfos(value: js.Array[js.Any]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerInfosVarargs(value: js.Any*): Self = StObject.set(x, "signerInfos", js.Array(value :_*))
+    inline def setSignerInfosVarargs(value: js.Any*): Self = StObject.set(x, "signerInfos", js.Array(value :_*))
   }
 }

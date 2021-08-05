@@ -12,19 +12,15 @@ trait Plugin[T /* <: SlickData */] extends StObject {
 }
 object Plugin {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](destroy: () => Unit, init: Grid[T] => Unit): Plugin[T] = {
+  inline def apply[T /* <: SlickData */](destroy: () => Unit, init: Grid[T] => Unit): Plugin[T] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[Plugin[T]]
   }
   
-  @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin[?], T /* <: SlickData */] (val x: Self & Plugin[T]) extends AnyVal {
+  extension [Self <: Plugin[?], T /* <: SlickData */](x: Self & Plugin[T]) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: Grid[T] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: Grid[T] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

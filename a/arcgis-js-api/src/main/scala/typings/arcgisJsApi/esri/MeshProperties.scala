@@ -24,28 +24,21 @@ trait MeshProperties
 }
 object MeshProperties {
   
-  @scala.inline
-  def apply(): MeshProperties = {
+  inline def apply(): MeshProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshProperties]
   }
   
-  @scala.inline
-  implicit class MeshPropertiesMutableBuilder[Self <: MeshProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeshProperties](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[MeshComponentProperties]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[MeshComponentProperties]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setComponentsVarargs(value: MeshComponentProperties*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: MeshComponentProperties*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setVertexAttributes(value: MeshVertexAttributesProperties): Self = StObject.set(x, "vertexAttributes", value.asInstanceOf[js.Any])
+    inline def setVertexAttributes(value: MeshVertexAttributesProperties): Self = StObject.set(x, "vertexAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexAttributesUndefined: Self = StObject.set(x, "vertexAttributes", js.undefined)
+    inline def setVertexAttributesUndefined: Self = StObject.set(x, "vertexAttributes", js.undefined)
   }
 }

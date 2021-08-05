@@ -16,20 +16,16 @@ trait KeyErrorEvent
 }
 object KeyErrorEvent {
   
-  @scala.inline
-  def apply(data: KeyError): KeyErrorEvent = {
+  inline def apply(data: KeyError): KeyErrorEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_keyError")
     __obj.asInstanceOf[KeyErrorEvent]
   }
   
-  @scala.inline
-  implicit class KeyErrorEventMutableBuilder[Self <: KeyErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyErrorEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: KeyError): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: KeyError): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: public_keyError): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_keyError): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

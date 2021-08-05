@@ -13,19 +13,15 @@ trait SchemaTargetHttpsProxiesSetQuicOverrideRequest extends StObject {
 }
 object SchemaTargetHttpsProxiesSetQuicOverrideRequest {
   
-  @scala.inline
-  def apply(): SchemaTargetHttpsProxiesSetQuicOverrideRequest = {
+  inline def apply(): SchemaTargetHttpsProxiesSetQuicOverrideRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetHttpsProxiesSetQuicOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTargetHttpsProxiesSetQuicOverrideRequestMutableBuilder[Self <: SchemaTargetHttpsProxiesSetQuicOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetHttpsProxiesSetQuicOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setQuicOverride(value: String): Self = StObject.set(x, "quicOverride", value.asInstanceOf[js.Any])
+    inline def setQuicOverride(value: String): Self = StObject.set(x, "quicOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuicOverrideUndefined: Self = StObject.set(x, "quicOverride", js.undefined)
+    inline def setQuicOverrideUndefined: Self = StObject.set(x, "quicOverride", js.undefined)
   }
 }

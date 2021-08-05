@@ -18,25 +18,19 @@ trait AssociateSoftwareTokenResponse extends StObject {
 }
 object AssociateSoftwareTokenResponse {
   
-  @scala.inline
-  def apply(): AssociateSoftwareTokenResponse = {
+  inline def apply(): AssociateSoftwareTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateSoftwareTokenResponse]
   }
   
-  @scala.inline
-  implicit class AssociateSoftwareTokenResponseMutableBuilder[Self <: AssociateSoftwareTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSoftwareTokenResponse](x: Self) {
     
-    @scala.inline
-    def setSecretCode(value: SecretCodeType): Self = StObject.set(x, "SecretCode", value.asInstanceOf[js.Any])
+    inline def setSecretCode(value: SecretCodeType): Self = StObject.set(x, "SecretCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretCodeUndefined: Self = StObject.set(x, "SecretCode", js.undefined)
+    inline def setSecretCodeUndefined: Self = StObject.set(x, "SecretCode", js.undefined)
     
-    @scala.inline
-    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
   }
 }

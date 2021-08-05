@@ -23,25 +23,25 @@ class Document protected ()
     _topLevelDecl: typings.typescriptServices.TypeScript.PullDecl
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _amdDependencies: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _astDeclMap: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _bloomFilter: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _compiler: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _declASTMap: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _diagnostics: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _externalModuleIndicatorSpan: js.Any = js.native
   
   /* CompleteClass */
@@ -50,13 +50,13 @@ class Document protected ()
   /* CompleteClass */
   override def _getDeclForAST(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.PullDecl = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _lineMap: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _scriptSnapshot: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _semanticInfoChain: js.Any = js.native
   
   /* CompleteClass */
@@ -71,13 +71,13 @@ class Document protected ()
     decl: typings.typescriptServices.TypeScript.PullDecl
   ): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _sourceUnit: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _syntaxTree: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _topLevelDecl: js.Any = js.native
   
   /* CompleteClass */
@@ -89,8 +89,8 @@ class Document protected ()
   /* CompleteClass */
   var byteOrderMark: typings.typescriptServices.TypeScript.ByteOrderMark = js.native
   
-  /* CompleteClass */
-  /* private */ override def cacheSyntaxTreeInfo(syntaxTree: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def cacheSyntaxTreeInfo(syntaxTree: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def diagnostics(): js.Array[typings.typescriptServices.TypeScript.Diagnostic] = js.native
@@ -104,20 +104,20 @@ class Document protected ()
   /* CompleteClass */
   var fileName: String = js.native
   
-  /* CompleteClass */
-  /* private */ override def getAmdDependency(comment: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getAmdDependency(comment: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def getEnclosingDecl(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.PullDecl = js.native
   
-  /* CompleteClass */
-  /* private */ override def getImplicitImportSpan(sourceUnitLeadingTrivia: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getImplicitImportSpan(sourceUnitLeadingTrivia: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getImplicitImportSpanWorker(trivia: js.Any, position: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getImplicitImportSpanWorker(trivia: js.Any, position: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getTopLevelImportOrExportSpan(node: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getTopLevelImportOrExportSpan(node: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def invalidate(): Unit = js.native
@@ -164,8 +164,7 @@ object Document {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     compiler: typings.typescriptServices.TypeScript.TypeScriptCompiler,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain,
     fileName: String,

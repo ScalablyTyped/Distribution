@@ -14,25 +14,19 @@ trait StreamFileInput extends StObject {
 }
 object StreamFileInput {
   
-  @scala.inline
-  def apply(name: String, stream: js.Any): StreamFileInput = {
+  inline def apply(name: String, stream: js.Any): StreamFileInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamFileInput]
   }
   
-  @scala.inline
-  implicit class StreamFileInputMutableBuilder[Self <: StreamFileInput] (val x: Self) extends AnyVal {
+  extension [Self <: StreamFileInput](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

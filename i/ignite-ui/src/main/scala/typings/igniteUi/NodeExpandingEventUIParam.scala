@@ -18,25 +18,19 @@ trait NodeExpandingEventUIParam extends StObject {
 }
 object NodeExpandingEventUIParam {
   
-  @scala.inline
-  def apply(): NodeExpandingEventUIParam = {
+  inline def apply(): NodeExpandingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeExpandingEventUIParam]
   }
   
-  @scala.inline
-  implicit class NodeExpandingEventUIParamMutableBuilder[Self <: NodeExpandingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: NodeExpandingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

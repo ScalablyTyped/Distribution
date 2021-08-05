@@ -10,8 +10,7 @@ trait InkStrokeRenderingSegment
      with IInkStrokeRenderingSegment
 object InkStrokeRenderingSegment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bezierControlPoint1: Point,
     bezierControlPoint2: Point,
     position: Point,

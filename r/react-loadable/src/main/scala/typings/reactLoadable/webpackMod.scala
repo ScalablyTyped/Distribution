@@ -18,8 +18,7 @@ object webpackMod {
     def this(opts: ReactLoadablePluginOptions) = this()
   }
   
-  @scala.inline
-  def getBundles(manifest: Manifest, moduleIds: js.Array[String]): js.Array[Bundle] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundles")(manifest.asInstanceOf[js.Any], moduleIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bundle]]
+  inline def getBundles(manifest: Manifest, moduleIds: js.Array[String]): js.Array[Bundle] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundles")(manifest.asInstanceOf[js.Any], moduleIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bundle]]
   
   trait Bundle extends StObject {
     
@@ -33,29 +32,22 @@ object webpackMod {
   }
   object Bundle {
     
-    @scala.inline
-    def apply(file: String, id: String, publicPath: String): Bundle = {
+    inline def apply(file: String, id: String, publicPath: String): Bundle = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[Bundle]
     }
     
-    @scala.inline
-    implicit class BundleMutableBuilder[Self <: Bundle] (val x: Self) extends AnyVal {
+    extension [Self <: Bundle](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,17 +59,14 @@ object webpackMod {
   }
   object ReactLoadablePluginOptions {
     
-    @scala.inline
-    def apply(filename: String): ReactLoadablePluginOptions = {
+    inline def apply(filename: String): ReactLoadablePluginOptions = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactLoadablePluginOptions]
     }
     
-    @scala.inline
-    implicit class ReactLoadablePluginOptionsMutableBuilder[Self <: ReactLoadablePluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactLoadablePluginOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
   }
 }

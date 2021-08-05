@@ -13,16 +13,13 @@ trait DeleteMonitoringScheduleRequest extends StObject {
 }
 object DeleteMonitoringScheduleRequest {
   
-  @scala.inline
-  def apply(MonitoringScheduleName: MonitoringScheduleName): DeleteMonitoringScheduleRequest = {
+  inline def apply(MonitoringScheduleName: MonitoringScheduleName): DeleteMonitoringScheduleRequest = {
     val __obj = js.Dynamic.literal(MonitoringScheduleName = MonitoringScheduleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMonitoringScheduleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMonitoringScheduleRequestMutableBuilder[Self <: DeleteMonitoringScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMonitoringScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
   }
 }

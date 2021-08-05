@@ -21,11 +21,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def constructs[T](what: T): js.Function0[js.Function0[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructs")(what.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function0[T]]]
+    inline def constructs[T](what: T): js.Function0[js.Function0[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructs")(what.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function0[T]]]
     
-    @scala.inline
-    def returns[T](what: T): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("returns")(what.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
+    inline def returns[T](what: T): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("returns")(what.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
   }
   
   @js.native

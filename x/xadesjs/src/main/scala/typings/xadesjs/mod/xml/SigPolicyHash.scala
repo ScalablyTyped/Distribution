@@ -13,6 +13,5 @@ class SigPolicyHash ()
   extends typings.xadesjs.xmlMod.SigPolicyHash
 object SigPolicyHash {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SigPolicyHash] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigPolicyHash").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigPolicyHash]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SigPolicyHash] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigPolicyHash").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigPolicyHash]]
 }

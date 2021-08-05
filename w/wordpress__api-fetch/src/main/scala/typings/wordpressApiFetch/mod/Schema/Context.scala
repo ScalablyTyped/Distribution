@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Context extends StObject
 object Context {
   
-  @scala.inline
-  def edit: typings.wordpressApiFetch.wordpressApiFetchStrings.edit = "edit".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.edit]
+  inline def edit: typings.wordpressApiFetch.wordpressApiFetchStrings.edit = "edit".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.edit]
   
-  @scala.inline
-  def embed: typings.wordpressApiFetch.wordpressApiFetchStrings.embed = "embed".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.embed]
+  inline def embed: typings.wordpressApiFetch.wordpressApiFetchStrings.embed = "embed".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.embed]
   
-  @scala.inline
-  def view: typings.wordpressApiFetch.wordpressApiFetchStrings.view = "view".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.view]
+  inline def view: typings.wordpressApiFetch.wordpressApiFetchStrings.view = "view".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.view]
 }

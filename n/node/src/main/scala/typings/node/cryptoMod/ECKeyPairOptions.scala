@@ -19,8 +19,7 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
 }
 object ECKeyPairOptions {
   
-  @scala.inline
-  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+  inline def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     namedCurve: String,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & `1`,
     publicKeyEncoding: Format[PubF]
@@ -29,16 +28,12 @@ object ECKeyPairOptions {
     __obj.asInstanceOf[ECKeyPairOptions[PubF, PrivF]]
   }
   
-  @scala.inline
-  implicit class ECKeyPairOptionsMutableBuilder[Self <: ECKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (ECKeyPairOptions[PubF, PrivF])) extends AnyVal {
+  extension [Self <: ECKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (ECKeyPairOptions[PubF, PrivF])) {
     
-    @scala.inline
-    def setNamedCurve(value: String): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
+    inline def setNamedCurve(value: String): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `1`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `1`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyEncoding(value: Format[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPublicKeyEncoding(value: Format[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
   }
 }

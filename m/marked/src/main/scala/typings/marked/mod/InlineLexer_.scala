@@ -33,19 +33,15 @@ object InlineLexer_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def escapes(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapes")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapes(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapes")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def output(src: String, links: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(src.asInstanceOf[js.Any], links.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def output(src: String, links: js.Array[String], options: MarkedOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(src.asInstanceOf[js.Any], links.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def output(src: String, links: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(src.asInstanceOf[js.Any], links.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def output(src: String, links: js.Array[String], options: MarkedOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(src.asInstanceOf[js.Any], links.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
   @JSImport("marked", "InlineLexer.rules")
   @js.native
   def rules: Rules = js.native
-  @scala.inline
-  def rules_=(x: Rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
+  inline def rules_=(x: Rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
 }

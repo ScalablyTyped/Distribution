@@ -10,16 +10,13 @@ trait RemoveScriptToEvaluateOnNewDocumentRequest extends StObject {
 }
 object RemoveScriptToEvaluateOnNewDocumentRequest {
   
-  @scala.inline
-  def apply(identifier: ScriptIdentifier): RemoveScriptToEvaluateOnNewDocumentRequest = {
+  inline def apply(identifier: ScriptIdentifier): RemoveScriptToEvaluateOnNewDocumentRequest = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveScriptToEvaluateOnNewDocumentRequest]
   }
   
-  @scala.inline
-  implicit class RemoveScriptToEvaluateOnNewDocumentRequestMutableBuilder[Self <: RemoveScriptToEvaluateOnNewDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveScriptToEvaluateOnNewDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

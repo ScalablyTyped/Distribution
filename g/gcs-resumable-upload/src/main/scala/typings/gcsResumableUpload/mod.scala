@@ -41,7 +41,7 @@ object mod {
     
     var bucket: String = js.native
     
-    var bufferStream: js.Any = js.native
+    /* private */ var bufferStream: js.Any = js.native
     
     var cacheKey: String = js.native
     
@@ -49,7 +49,7 @@ object mod {
     
     var contentLength: Double | Asterisk = js.native
     
-    var continueUploading: js.Any = js.native
+    /* private */ var continueUploading: js.Any = js.native
     
     def createURI(): js.Promise[String] = js.native
     def createURI(callback: CreateUriCallback): Unit = js.native
@@ -66,17 +66,17 @@ object mod {
     
     var generation: js.UndefOr[Double] = js.native
     
-    var get: js.Any = js.native
+    /* private */ var get: js.Any = js.native
     
-    var getAndSetOffset: js.Any = js.native
+    /* private */ var getAndSetOffset: js.Any = js.native
     
     var key: js.UndefOr[String | Buffer] = js.native
     
     var kmsKeyName: js.UndefOr[String] = js.native
     
-    var makeRequest: js.Any = js.native
+    /* private */ var makeRequest: js.Any = js.native
     
-    var makeRequestStream: js.Any = js.native
+    /* private */ var makeRequestStream: js.Any = js.native
     
     var metadata: ConfigMetadata = js.native
     
@@ -86,14 +86,14 @@ object mod {
     
     var offset: js.UndefOr[Double] = js.native
     
-    var offsetStream: js.Any = js.native
+    /* private */ var offsetStream: js.Any = js.native
     
-    var onChunk: js.Any = js.native
+    /* private */ var onChunk: js.Any = js.native
     
     /**
       * @return {bool} is the request good?
       */
-    var onResponse: js.Any = js.native
+    /* private */ var onResponse: js.Any = js.native
     
     var origin: js.UndefOr[String] = js.native
     
@@ -105,13 +105,13 @@ object mod {
     
     var public: js.UndefOr[Boolean] = js.native
     
-    var restart: js.Any = js.native
+    /* private */ var restart: js.Any = js.native
     
-    var sanitizeEndpoint: js.Any = js.native
+    /* private */ var sanitizeEndpoint: js.Any = js.native
     
-    var set: js.Any = js.native
+    /* private */ var set: js.Any = js.native
     
-    var startUploading: js.Any = js.native
+    /* private */ var startUploading: js.Any = js.native
     
     var uri: js.UndefOr[String] = js.native
     
@@ -120,13 +120,10 @@ object mod {
     var userProject: js.UndefOr[String] = js.native
   }
   
-  @scala.inline
-  def createURI(cfg: UploadConfig): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def createURI(cfg: UploadConfig, callback: CreateUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createURI(cfg: UploadConfig): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def createURI(cfg: UploadConfig, callback: CreateUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def upload(cfg: UploadConfig): Upload_ = ^.asInstanceOf[js.Dynamic].applyDynamic("upload")(cfg.asInstanceOf[js.Any]).asInstanceOf[Upload_]
+  inline def upload(cfg: UploadConfig): Upload_ = ^.asInstanceOf[js.Dynamic].applyDynamic("upload")(cfg.asInstanceOf[js.Any]).asInstanceOf[Upload_]
   
   trait ConfigMetadata
     extends StObject
@@ -144,26 +141,20 @@ object mod {
   }
   object ConfigMetadata {
     
-    @scala.inline
-    def apply(): ConfigMetadata = {
+    inline def apply(): ConfigMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigMetadata]
     }
     
-    @scala.inline
-    implicit class ConfigMetadataMutableBuilder[Self <: ConfigMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigMetadata](x: Self) {
       
-      @scala.inline
-      def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+      inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
+      inline def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     }
   }
   
@@ -179,17 +170,14 @@ object mod {
   }
   object ErrorWithCode {
     
-    @scala.inline
-    def apply(code: Double, message: String, name: String): ErrorWithCode = {
+    inline def apply(code: Double, message: String, name: String): ErrorWithCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorWithCode]
     }
     
-    @scala.inline
-    implicit class ErrorWithCodeMutableBuilder[Self <: ErrorWithCode] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorWithCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,23 +192,17 @@ object mod {
   trait PredefinedAcl extends StObject
   object PredefinedAcl {
     
-    @scala.inline
-    def authenticatedRead: typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead = "authenticatedRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead]
+    inline def authenticatedRead: typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead = "authenticatedRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead]
     
-    @scala.inline
-    def bucketOwnerFullControl: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl]
+    inline def bucketOwnerFullControl: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl]
     
-    @scala.inline
-    def bucketOwnerRead: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead = "bucketOwnerRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead]
+    inline def bucketOwnerRead: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead = "bucketOwnerRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead]
     
-    @scala.inline
-    def `private`: typings.gcsResumableUpload.gcsResumableUploadStrings.`private` = "private".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.`private`]
+    inline def `private`: typings.gcsResumableUpload.gcsResumableUploadStrings.`private` = "private".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.`private`]
     
-    @scala.inline
-    def projectPrivate: typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate = "projectPrivate".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate]
+    inline def projectPrivate: typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate = "projectPrivate".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate]
     
-    @scala.inline
-    def publicRead: typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead = "publicRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead]
+    inline def publicRead: typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead = "publicRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead]
   }
   
   trait QueryParameters extends StObject {
@@ -245,68 +227,48 @@ object mod {
   }
   object QueryParameters {
     
-    @scala.inline
-    def apply(): QueryParameters = {
+    inline def apply(): QueryParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryParameters]
     }
     
-    @scala.inline
-    implicit class QueryParametersMutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
+    extension [Self <: QueryParameters](x: Self) {
       
-      @scala.inline
-      def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
       
-      @scala.inline
-      def setIfGenerationMatch(value: Double): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
+      inline def setIfGenerationMatch(value: Double): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
+      inline def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
       
-      @scala.inline
-      def setIfGenerationNotMatch(value: Double): Self = StObject.set(x, "ifGenerationNotMatch", value.asInstanceOf[js.Any])
+      inline def setIfGenerationNotMatch(value: Double): Self = StObject.set(x, "ifGenerationNotMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfGenerationNotMatchUndefined: Self = StObject.set(x, "ifGenerationNotMatch", js.undefined)
+      inline def setIfGenerationNotMatchUndefined: Self = StObject.set(x, "ifGenerationNotMatch", js.undefined)
       
-      @scala.inline
-      def setIfMetagenerationMatch(value: Double): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
+      inline def setIfMetagenerationMatch(value: Double): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
+      inline def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
       
-      @scala.inline
-      def setIfMetagenerationNotMatch(value: Double): Self = StObject.set(x, "ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
+      inline def setIfMetagenerationNotMatch(value: Double): Self = StObject.set(x, "ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfMetagenerationNotMatchUndefined: Self = StObject.set(x, "ifMetagenerationNotMatch", js.undefined)
+      inline def setIfMetagenerationNotMatchUndefined: Self = StObject.set(x, "ifMetagenerationNotMatch", js.undefined)
       
-      @scala.inline
-      def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+      inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+      inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
       
-      @scala.inline
-      def setPredefinedAcl(value: PredefinedAcl): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
+      inline def setPredefinedAcl(value: PredefinedAcl): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
+      inline def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
       
-      @scala.inline
-      def setProjection(value: full | noAcl): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: full | noAcl): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -426,122 +388,84 @@ object mod {
   }
   object UploadConfig {
     
-    @scala.inline
-    def apply(bucket: String, file: String): UploadConfig = {
+    inline def apply(bucket: String, file: String): UploadConfig = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadConfig]
     }
     
-    @scala.inline
-    implicit class UploadConfigMutableBuilder[Self <: UploadConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UploadConfig](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
+      inline def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
+      inline def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
       
-      @scala.inline
-      def setAuthConfig(value: GoogleAuthOptions): Self = StObject.set(x, "authConfig", value.asInstanceOf[js.Any])
+      inline def setAuthConfig(value: GoogleAuthOptions): Self = StObject.set(x, "authConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthConfigUndefined: Self = StObject.set(x, "authConfig", js.undefined)
+      inline def setAuthConfigUndefined: Self = StObject.set(x, "authConfig", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+      inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
       
-      @scala.inline
-      def setCustomRequestOptions(value: GaxiosOptions): Self = StObject.set(x, "customRequestOptions", value.asInstanceOf[js.Any])
+      inline def setCustomRequestOptions(value: GaxiosOptions): Self = StObject.set(x, "customRequestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRequestOptionsUndefined: Self = StObject.set(x, "customRequestOptions", js.undefined)
+      inline def setCustomRequestOptionsUndefined: Self = StObject.set(x, "customRequestOptions", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+      inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+      inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: ConfigMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: ConfigMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setParams(value: QueryParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: QueryParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPredefinedAcl(value: PredefinedAcl): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
+      inline def setPredefinedAcl(value: PredefinedAcl): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
+      inline def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
 }

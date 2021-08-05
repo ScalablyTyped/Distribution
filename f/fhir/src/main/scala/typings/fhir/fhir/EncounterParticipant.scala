@@ -28,34 +28,25 @@ trait EncounterParticipant
 }
 object EncounterParticipant {
   
-  @scala.inline
-  def apply(): EncounterParticipant = {
+  inline def apply(): EncounterParticipant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncounterParticipant]
   }
   
-  @scala.inline
-  implicit class EncounterParticipantMutableBuilder[Self <: EncounterParticipant] (val x: Self) extends AnyVal {
+  extension [Self <: EncounterParticipant](x: Self) {
     
-    @scala.inline
-    def setIndividual(value: Reference): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: Reference): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
+    inline def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

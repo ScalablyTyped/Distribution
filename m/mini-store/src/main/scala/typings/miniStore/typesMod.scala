@@ -46,8 +46,7 @@ object typesMod {
   }
   object Store {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       getState: () => S,
       setState: Partial[S] => Unit,
       subscribe: js.Function0[Unit] => js.Function0[Unit]
@@ -56,17 +55,13 @@ object typesMod {
       __obj.asInstanceOf[Store[S]]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store[?], S] (val x: Self & Store[S]) extends AnyVal {
+    extension [Self <: Store[?], S](x: Self & Store[S]) {
       
-      @scala.inline
-      def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetState(value: Partial[S] => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: Partial[S] => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribe(value: js.Function0[Unit] => js.Function0[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: js.Function0[Unit] => js.Function0[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -76,17 +71,14 @@ object typesMod {
   }
   object StoreProp {
     
-    @scala.inline
-    def apply[S](store: Store[S]): StoreProp[S] = {
+    inline def apply[S](store: Store[S]): StoreProp[S] = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreProp[S]]
     }
     
-    @scala.inline
-    implicit class StorePropMutableBuilder[Self <: StoreProp[?], S] (val x: Self & StoreProp[S]) extends AnyVal {
+    extension [Self <: StoreProp[?], S](x: Self & StoreProp[S]) {
       
-      @scala.inline
-      def setStore(value: Store[S]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store[S]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
 }

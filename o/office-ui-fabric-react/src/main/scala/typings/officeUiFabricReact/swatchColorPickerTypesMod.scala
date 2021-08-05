@@ -182,181 +182,124 @@ object swatchColorPickerTypesMod {
   }
   object ISwatchColorPickerProps {
     
-    @scala.inline
-    def apply(colorCells: js.Array[IColorCellProps], columnCount: Double): ISwatchColorPickerProps = {
+    inline def apply(colorCells: js.Array[IColorCellProps], columnCount: Double): ISwatchColorPickerProps = {
       val __obj = js.Dynamic.literal(colorCells = colorCells.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISwatchColorPickerProps]
     }
     
-    @scala.inline
-    implicit class ISwatchColorPickerPropsMutableBuilder[Self <: ISwatchColorPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISwatchColorPickerProps](x: Self) {
       
-      @scala.inline
-      def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+      inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+      inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
       
-      @scala.inline
-      def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+      inline def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+      inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
       
-      @scala.inline
-      def setCellBorderWidth(value: Double): Self = StObject.set(x, "cellBorderWidth", value.asInstanceOf[js.Any])
+      inline def setCellBorderWidth(value: Double): Self = StObject.set(x, "cellBorderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellBorderWidthUndefined: Self = StObject.set(x, "cellBorderWidth", js.undefined)
+      inline def setCellBorderWidthUndefined: Self = StObject.set(x, "cellBorderWidth", js.undefined)
       
-      @scala.inline
-      def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+      inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+      inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
       
-      @scala.inline
-      def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
+      inline def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
+      inline def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
       
-      @scala.inline
-      def setCellShape(value: circle | square): Self = StObject.set(x, "cellShape", value.asInstanceOf[js.Any])
+      inline def setCellShape(value: circle | square): Self = StObject.set(x, "cellShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellShapeUndefined: Self = StObject.set(x, "cellShape", js.undefined)
+      inline def setCellShapeUndefined: Self = StObject.set(x, "cellShape", js.undefined)
       
-      @scala.inline
-      def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+      inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
+      inline def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColorCells(value: js.Array[IColorCellProps]): Self = StObject.set(x, "colorCells", value.asInstanceOf[js.Any])
+      inline def setColorCells(value: js.Array[IColorCellProps]): Self = StObject.set(x, "colorCells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorCellsVarargs(value: IColorCellProps*): Self = StObject.set(x, "colorCells", js.Array(value :_*))
+      inline def setColorCellsVarargs(value: IColorCellProps*): Self = StObject.set(x, "colorCells", js.Array(value :_*))
       
-      @scala.inline
-      def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDoNotContainWithinFocusZone(value: Boolean): Self = StObject.set(x, "doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
+      inline def setDoNotContainWithinFocusZone(value: Boolean): Self = StObject.set(x, "doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
+      inline def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
       
-      @scala.inline
-      def setFocusOnHover(value: Boolean): Self = StObject.set(x, "focusOnHover", value.asInstanceOf[js.Any])
+      inline def setFocusOnHover(value: Boolean): Self = StObject.set(x, "focusOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusOnHoverUndefined: Self = StObject.set(x, "focusOnHover", js.undefined)
+      inline def setFocusOnHoverUndefined: Self = StObject.set(x, "focusOnHover", js.undefined)
       
-      @scala.inline
-      def setGetColorGridCellStyles(value: IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]): Self = StObject.set(x, "getColorGridCellStyles", value.asInstanceOf[js.Any])
+      inline def setGetColorGridCellStyles(value: IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]): Self = StObject.set(x, "getColorGridCellStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetColorGridCellStylesFunction1(value: IColorPickerGridCellStyleProps => DeepPartial[IColorPickerGridCellStyles]): Self = StObject.set(x, "getColorGridCellStyles", js.Any.fromFunction1(value))
+      inline def setGetColorGridCellStylesFunction1(value: IColorPickerGridCellStyleProps => DeepPartial[IColorPickerGridCellStyles]): Self = StObject.set(x, "getColorGridCellStyles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetColorGridCellStylesUndefined: Self = StObject.set(x, "getColorGridCellStyles", js.undefined)
+      inline def setGetColorGridCellStylesUndefined: Self = StObject.set(x, "getColorGridCellStyles", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsControlled(value: Boolean): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
+      inline def setIsControlled(value: Boolean): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsControlledUndefined: Self = StObject.set(x, "isControlled", js.undefined)
+      inline def setIsControlledUndefined: Self = StObject.set(x, "isControlled", js.undefined)
       
-      @scala.inline
-      def setMouseLeaveParentSelector(value: String): Self = StObject.set(x, "mouseLeaveParentSelector", value.asInstanceOf[js.Any])
+      inline def setMouseLeaveParentSelector(value: String): Self = StObject.set(x, "mouseLeaveParentSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseLeaveParentSelectorUndefined: Self = StObject.set(x, "mouseLeaveParentSelector", js.undefined)
+      inline def setMouseLeaveParentSelectorUndefined: Self = StObject.set(x, "mouseLeaveParentSelector", js.undefined)
       
-      @scala.inline
-      def setOnCellFocused(value: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onCellFocused", js.Any.fromFunction2(value))
+      inline def setOnCellFocused(value: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onCellFocused", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellFocusedUndefined: Self = StObject.set(x, "onCellFocused", js.undefined)
+      inline def setOnCellFocusedUndefined: Self = StObject.set(x, "onCellFocused", js.undefined)
       
-      @scala.inline
-      def setOnCellHovered(value: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onCellHovered", js.Any.fromFunction2(value))
+      inline def setOnCellHovered(value: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onCellHovered", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellHoveredUndefined: Self = StObject.set(x, "onCellHovered", js.undefined)
+      inline def setOnCellHoveredUndefined: Self = StObject.set(x, "onCellHovered", js.undefined)
       
-      @scala.inline
-      def setOnColorChanged(value: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onColorChanged", js.Any.fromFunction2(value))
+      inline def setOnColorChanged(value: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onColorChanged", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnColorChangedUndefined: Self = StObject.set(x, "onColorChanged", js.undefined)
+      inline def setOnColorChangedUndefined: Self = StObject.set(x, "onColorChanged", js.undefined)
       
-      @scala.inline
-      def setOnRenderColorCell(
+      inline def setOnRenderColorCell(
         value: (/* props */ js.UndefOr[IColorCellProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IColorCellProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderColorCell", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderColorCellUndefined: Self = StObject.set(x, "onRenderColorCell", js.undefined)
+      inline def setOnRenderColorCellUndefined: Self = StObject.set(x, "onRenderColorCell", js.undefined)
       
-      @scala.inline
-      def setPositionInSet(value: Double): Self = StObject.set(x, "positionInSet", value.asInstanceOf[js.Any])
+      inline def setPositionInSet(value: Double): Self = StObject.set(x, "positionInSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionInSetUndefined: Self = StObject.set(x, "positionInSet", js.undefined)
+      inline def setPositionInSetUndefined: Self = StObject.set(x, "positionInSet", js.undefined)
       
-      @scala.inline
-      def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+      inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      @scala.inline
-      def setSetSize(value: Double): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
+      inline def setSetSize(value: Double): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+      inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
       
-      @scala.inline
-      def setShouldFocusCircularNavigate(value: Boolean): Self = StObject.set(x, "shouldFocusCircularNavigate", value.asInstanceOf[js.Any])
+      inline def setShouldFocusCircularNavigate(value: Boolean): Self = StObject.set(x, "shouldFocusCircularNavigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFocusCircularNavigateUndefined: Self = StObject.set(x, "shouldFocusCircularNavigate", js.undefined)
+      inline def setShouldFocusCircularNavigateUndefined: Self = StObject.set(x, "shouldFocusCircularNavigate", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ISwatchColorPickerStyleProps, ISwatchColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ISwatchColorPickerStyleProps, ISwatchColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ISwatchColorPickerStyleProps => DeepPartial[ISwatchColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ISwatchColorPickerStyleProps => DeepPartial[ISwatchColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -379,29 +322,22 @@ object swatchColorPickerTypesMod {
   }
   object ISwatchColorPickerStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ISwatchColorPickerStyleProps = {
+    inline def apply(theme: ITheme): ISwatchColorPickerStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISwatchColorPickerStyleProps]
     }
     
-    @scala.inline
-    implicit class ISwatchColorPickerStylePropsMutableBuilder[Self <: ISwatchColorPickerStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISwatchColorPickerStyleProps](x: Self) {
       
-      @scala.inline
-      def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
+      inline def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
+      inline def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -424,41 +360,30 @@ object swatchColorPickerTypesMod {
   }
   object ISwatchColorPickerStyles {
     
-    @scala.inline
-    def apply(): ISwatchColorPickerStyles = {
+    inline def apply(): ISwatchColorPickerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISwatchColorPickerStyles]
     }
     
-    @scala.inline
-    implicit class ISwatchColorPickerStylesMutableBuilder[Self <: ISwatchColorPickerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISwatchColorPickerStyles](x: Self) {
       
-      @scala.inline
-      def setFocusedContainer(value: IStyle): Self = StObject.set(x, "focusedContainer", value.asInstanceOf[js.Any])
+      inline def setFocusedContainer(value: IStyle): Self = StObject.set(x, "focusedContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedContainerNull: Self = StObject.set(x, "focusedContainer", null)
+      inline def setFocusedContainerNull: Self = StObject.set(x, "focusedContainer", null)
       
-      @scala.inline
-      def setFocusedContainerUndefined: Self = StObject.set(x, "focusedContainer", js.undefined)
+      inline def setFocusedContainerUndefined: Self = StObject.set(x, "focusedContainer", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTableCell(value: IStyle): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
+      inline def setTableCell(value: IStyle): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCellNull: Self = StObject.set(x, "tableCell", null)
+      inline def setTableCellNull: Self = StObject.set(x, "tableCell", null)
       
-      @scala.inline
-      def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
+      inline def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
     }
   }
 }

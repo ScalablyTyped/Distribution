@@ -33,34 +33,25 @@ trait SchemaCommitRequest extends StObject {
 }
 object SchemaCommitRequest {
   
-  @scala.inline
-  def apply(): SchemaCommitRequest = {
+  inline def apply(): SchemaCommitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommitRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCommitRequestMutableBuilder[Self <: SchemaCommitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommitRequest](x: Self) {
     
-    @scala.inline
-    def setMutations(value: js.Array[SchemaMutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
+    inline def setMutations(value: js.Array[SchemaMutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
+    inline def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
     
-    @scala.inline
-    def setMutationsVarargs(value: SchemaMutation*): Self = StObject.set(x, "mutations", js.Array(value :_*))
+    inline def setMutationsVarargs(value: SchemaMutation*): Self = StObject.set(x, "mutations", js.Array(value :_*))
     
-    @scala.inline
-    def setSingleUseTransaction(value: SchemaTransactionOptions): Self = StObject.set(x, "singleUseTransaction", value.asInstanceOf[js.Any])
+    inline def setSingleUseTransaction(value: SchemaTransactionOptions): Self = StObject.set(x, "singleUseTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUseTransactionUndefined: Self = StObject.set(x, "singleUseTransaction", js.undefined)
+    inline def setSingleUseTransactionUndefined: Self = StObject.set(x, "singleUseTransaction", js.undefined)
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

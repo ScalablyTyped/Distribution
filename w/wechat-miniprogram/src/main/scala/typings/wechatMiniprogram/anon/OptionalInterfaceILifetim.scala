@@ -47,8 +47,7 @@ trait OptionalInterfaceILifetim extends StObject {
 }
 object OptionalInterfaceILifetim {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onAddToFavorites: js.UndefOr[js.Any | (/* options */ IAddToFavoritesOption)] => js.Any | IAddToFavoritesContent,
     onHide: Optional[js.Function0[Unit | js.Promise[Unit]]],
     onLoad: js.UndefOr[js.Any | (/* query */ Record[String, js.UndefOr[String]])] => js.Any | js.Promise[Unit] | Unit,
@@ -67,94 +66,66 @@ object OptionalInterfaceILifetim {
     __obj.asInstanceOf[OptionalInterfaceILifetim]
   }
   
-  @scala.inline
-  implicit class OptionalInterfaceILifetimMutableBuilder[Self <: OptionalInterfaceILifetim] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalInterfaceILifetim](x: Self) {
     
-    @scala.inline
-    def setOnAddToFavorites(
+    inline def setOnAddToFavorites(
       value: js.UndefOr[js.Any | (/* options */ IAddToFavoritesOption)] => js.Any | IAddToFavoritesContent
     ): Self = StObject.set(x, "onAddToFavorites", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHide(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
+    inline def setOnHide(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHideFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHideFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+    inline def setOnHideFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoad(
+    inline def setOnLoad(
       value: js.UndefOr[js.Any | (/* query */ Record[String, js.UndefOr[String]])] => js.Any | js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPageScroll(value: js.UndefOr[js.Any | (/* options */ IPageScrollOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
+    inline def setOnPageScroll(value: js.UndefOr[js.Any | (/* options */ IPageScrollOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPullDownRefresh(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
+    inline def setOnPullDownRefresh(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPullDownRefreshFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
+    inline def setOnPullDownRefreshFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPullDownRefreshFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
+    inline def setOnPullDownRefreshFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReachBottom(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReachBottom", value.asInstanceOf[js.Any])
+    inline def setOnReachBottom(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReachBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReachBottomFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
+    inline def setOnReachBottomFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReachBottomFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
+    inline def setOnReachBottomFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReady(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
+    inline def setOnReady(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReadyFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    inline def setOnReadyFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReadyFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+    inline def setOnReadyFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnResize(value: js.UndefOr[js.Any | (/* options */ IResizeOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    inline def setOnResize(value: js.UndefOr[js.Any | (/* options */ IResizeOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShareAppMessage(
+    inline def setOnShareAppMessage(
       value: js.UndefOr[js.Any | (/* options */ IShareAppMessageOption)] => js.Any | ICustomShareContent | Unit
     ): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShareTimeline(value: Optional[js.Function0[ICustomTimelineContent | Unit]]): Self = StObject.set(x, "onShareTimeline", value.asInstanceOf[js.Any])
+    inline def setOnShareTimeline(value: Optional[js.Function0[ICustomTimelineContent | Unit]]): Self = StObject.set(x, "onShareTimeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnShareTimelineFunction0(value: () => ICustomTimelineContent | Unit): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction0(value))
+    inline def setOnShareTimelineFunction0(value: () => ICustomTimelineContent | Unit): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShareTimelineFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction1(value))
+    inline def setOnShareTimelineFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShow(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    inline def setOnShow(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnShowFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShowFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShowFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTabItemTap(value: js.UndefOr[js.Any | (/* options */ ITabItemTapOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
+    inline def setOnTabItemTap(value: js.UndefOr[js.Any | (/* options */ ITabItemTapOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUnload(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onUnload", value.asInstanceOf[js.Any])
+    inline def setOnUnload(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onUnload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUnloadFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
+    inline def setOnUnloadFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnUnloadFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onUnload", js.Any.fromFunction1(value))
+    inline def setOnUnloadFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onUnload", js.Any.fromFunction1(value))
   }
 }

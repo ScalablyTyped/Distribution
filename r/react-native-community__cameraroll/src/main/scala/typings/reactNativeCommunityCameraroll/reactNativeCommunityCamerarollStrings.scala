@@ -13,113 +13,96 @@ object reactNativeCommunityCamerarollStrings {
   sealed trait Album
     extends StObject
        with GroupType
-  @scala.inline
-  def Album: Album = "Album".asInstanceOf[Album]
+  inline def Album: Album = "Album".asInstanceOf[Album]
   
   @js.native
   sealed trait All
     extends StObject
        with AssetType
        with GroupType
-  @scala.inline
-  def All: All = "All".asInstanceOf[All]
+  inline def All: All = "All".asInstanceOf[All]
   
   @js.native
   sealed trait Event
     extends StObject
        with GroupType
-  @scala.inline
-  def Event: Event = "Event".asInstanceOf[Event]
+  inline def Event: Event = "Event".asInstanceOf[Event]
   
   @js.native
   sealed trait Faces
     extends StObject
        with GroupType
-  @scala.inline
-  def Faces: Faces = "Faces".asInstanceOf[Faces]
+  inline def Faces: Faces = "Faces".asInstanceOf[Faces]
   
   @js.native
   sealed trait Library
     extends StObject
        with GroupType
-  @scala.inline
-  def Library: Library = "Library".asInstanceOf[Library]
+  inline def Library: Library = "Library".asInstanceOf[Library]
   
   @js.native
   sealed trait PhotoStream
     extends StObject
        with GroupType
-  @scala.inline
-  def PhotoStream: PhotoStream = "PhotoStream".asInstanceOf[PhotoStream]
+  inline def PhotoStream: PhotoStream = "PhotoStream".asInstanceOf[PhotoStream]
   
   @js.native
   sealed trait Photos
     extends StObject
        with AssetType
-  @scala.inline
-  def Photos: Photos = "Photos".asInstanceOf[Photos]
+  inline def Photos: Photos = "Photos".asInstanceOf[Photos]
   
   @js.native
   sealed trait SavedPhotos
     extends StObject
        with GroupType
-  @scala.inline
-  def SavedPhotos: SavedPhotos = "SavedPhotos".asInstanceOf[SavedPhotos]
+  inline def SavedPhotos: SavedPhotos = "SavedPhotos".asInstanceOf[SavedPhotos]
   
   @js.native
   sealed trait Videos
     extends StObject
        with AssetType
-  @scala.inline
-  def Videos: Videos = "Videos".asInstanceOf[Videos]
+  inline def Videos: Videos = "Videos".asInstanceOf[Videos]
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait fileSize
     extends StObject
        with Include
-  @scala.inline
-  def fileSize: fileSize = "fileSize".asInstanceOf[fileSize]
+  inline def fileSize: fileSize = "fileSize".asInstanceOf[fileSize]
   
   @js.native
   sealed trait filename
     extends StObject
        with Include
-  @scala.inline
-  def filename: filename = "filename".asInstanceOf[filename]
+  inline def filename: filename = "filename".asInstanceOf[filename]
   
   @js.native
   sealed trait imageSize
     extends StObject
        with Include
-  @scala.inline
-  def imageSize: imageSize = "imageSize".asInstanceOf[imageSize]
+  inline def imageSize: imageSize = "imageSize".asInstanceOf[imageSize]
   
   @js.native
   sealed trait location
     extends StObject
        with Include
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
   sealed trait photo extends StObject
-  @scala.inline
-  def photo: photo = "photo".asInstanceOf[photo]
+  inline def photo: photo = "photo".asInstanceOf[photo]
   
   @js.native
   sealed trait playableDuration
     extends StObject
        with Include
-  @scala.inline
-  def playableDuration: playableDuration = "playableDuration".asInstanceOf[playableDuration]
+  inline def playableDuration: playableDuration = "playableDuration".asInstanceOf[playableDuration]
   
   @js.native
   sealed trait video extends StObject
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  inline def video: video = "video".asInstanceOf[video]
 }

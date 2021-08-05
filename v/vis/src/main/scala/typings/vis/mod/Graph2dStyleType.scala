@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Graph2dStyleType extends StObject
 object Graph2dStyleType {
   
-  @scala.inline
-  def bar: typings.vis.visStrings.bar = "bar".asInstanceOf[typings.vis.visStrings.bar]
+  inline def bar: typings.vis.visStrings.bar = "bar".asInstanceOf[typings.vis.visStrings.bar]
   
-  @scala.inline
-  def line: typings.vis.visStrings.line = "line".asInstanceOf[typings.vis.visStrings.line]
+  inline def line: typings.vis.visStrings.line = "line".asInstanceOf[typings.vis.visStrings.line]
   
-  @scala.inline
-  def points: typings.vis.visStrings.points = "points".asInstanceOf[typings.vis.visStrings.points]
+  inline def points: typings.vis.visStrings.points = "points".asInstanceOf[typings.vis.visStrings.points]
 }

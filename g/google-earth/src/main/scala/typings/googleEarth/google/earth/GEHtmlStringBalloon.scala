@@ -24,8 +24,7 @@ trait GEHtmlStringBalloon
 }
 object GEHtmlStringBalloon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBackgroundColor: () => String,
     getCloseButtonEnabled: () => Boolean,
     getContentString: () => String,
@@ -51,13 +50,10 @@ object GEHtmlStringBalloon {
     __obj.asInstanceOf[GEHtmlStringBalloon]
   }
   
-  @scala.inline
-  implicit class GEHtmlStringBalloonMutableBuilder[Self <: GEHtmlStringBalloon] (val x: Self) extends AnyVal {
+  extension [Self <: GEHtmlStringBalloon](x: Self) {
     
-    @scala.inline
-    def setGetContentString(value: () => String): Self = StObject.set(x, "getContentString", js.Any.fromFunction0(value))
+    inline def setGetContentString(value: () => String): Self = StObject.set(x, "getContentString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContentString(value: String => Unit): Self = StObject.set(x, "setContentString", js.Any.fromFunction1(value))
+    inline def setSetContentString(value: String => Unit): Self = StObject.set(x, "setContentString", js.Any.fromFunction1(value))
   }
 }

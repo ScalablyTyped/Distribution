@@ -15,19 +15,15 @@ trait SchemaRetrievalImportance extends StObject {
 }
 object SchemaRetrievalImportance {
   
-  @scala.inline
-  def apply(): SchemaRetrievalImportance = {
+  inline def apply(): SchemaRetrievalImportance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRetrievalImportance]
   }
   
-  @scala.inline
-  implicit class SchemaRetrievalImportanceMutableBuilder[Self <: SchemaRetrievalImportance] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRetrievalImportance](x: Self) {
     
-    @scala.inline
-    def setImportance(value: String): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: String): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
+    inline def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
   }
 }

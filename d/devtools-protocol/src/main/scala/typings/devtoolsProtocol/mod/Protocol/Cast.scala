@@ -12,20 +12,16 @@ object Cast {
   }
   object EnableRequest {
     
-    @scala.inline
-    def apply(): EnableRequest = {
+    inline def apply(): EnableRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnableRequest]
     }
     
-    @scala.inline
-    implicit class EnableRequestMutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EnableRequest](x: Self) {
       
-      @scala.inline
-      def setPresentationUrl(value: String): Self = StObject.set(x, "presentationUrl", value.asInstanceOf[js.Any])
+      inline def setPresentationUrl(value: String): Self = StObject.set(x, "presentationUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresentationUrlUndefined: Self = StObject.set(x, "presentationUrl", js.undefined)
+      inline def setPresentationUrlUndefined: Self = StObject.set(x, "presentationUrl", js.undefined)
     }
   }
   
@@ -35,17 +31,14 @@ object Cast {
   }
   object IssueUpdatedEvent {
     
-    @scala.inline
-    def apply(issueMessage: String): IssueUpdatedEvent = {
+    inline def apply(issueMessage: String): IssueUpdatedEvent = {
       val __obj = js.Dynamic.literal(issueMessage = issueMessage.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueUpdatedEvent]
     }
     
-    @scala.inline
-    implicit class IssueUpdatedEventMutableBuilder[Self <: IssueUpdatedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IssueUpdatedEvent](x: Self) {
       
-      @scala.inline
-      def setIssueMessage(value: String): Self = StObject.set(x, "issueMessage", value.asInstanceOf[js.Any])
+      inline def setIssueMessage(value: String): Self = StObject.set(x, "issueMessage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,17 +48,14 @@ object Cast {
   }
   object SetSinkToUseRequest {
     
-    @scala.inline
-    def apply(sinkName: String): SetSinkToUseRequest = {
+    inline def apply(sinkName: String): SetSinkToUseRequest = {
       val __obj = js.Dynamic.literal(sinkName = sinkName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetSinkToUseRequest]
     }
     
-    @scala.inline
-    implicit class SetSinkToUseRequestMutableBuilder[Self <: SetSinkToUseRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetSinkToUseRequest](x: Self) {
       
-      @scala.inline
-      def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
+      inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,26 +73,20 @@ object Cast {
   }
   object Sink {
     
-    @scala.inline
-    def apply(id: String, name: String): Sink = {
+    inline def apply(id: String, name: String): Sink = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sink]
     }
     
-    @scala.inline
-    implicit class SinkMutableBuilder[Self <: Sink] (val x: Self) extends AnyVal {
+    extension [Self <: Sink](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     }
   }
   
@@ -112,20 +96,16 @@ object Cast {
   }
   object SinksUpdatedEvent {
     
-    @scala.inline
-    def apply(sinks: js.Array[Sink]): SinksUpdatedEvent = {
+    inline def apply(sinks: js.Array[Sink]): SinksUpdatedEvent = {
       val __obj = js.Dynamic.literal(sinks = sinks.asInstanceOf[js.Any])
       __obj.asInstanceOf[SinksUpdatedEvent]
     }
     
-    @scala.inline
-    implicit class SinksUpdatedEventMutableBuilder[Self <: SinksUpdatedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SinksUpdatedEvent](x: Self) {
       
-      @scala.inline
-      def setSinks(value: js.Array[Sink]): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
+      inline def setSinks(value: js.Array[Sink]): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinksVarargs(value: Sink*): Self = StObject.set(x, "sinks", js.Array(value :_*))
+      inline def setSinksVarargs(value: Sink*): Self = StObject.set(x, "sinks", js.Array(value :_*))
     }
   }
   
@@ -135,17 +115,14 @@ object Cast {
   }
   object StartTabMirroringRequest {
     
-    @scala.inline
-    def apply(sinkName: String): StartTabMirroringRequest = {
+    inline def apply(sinkName: String): StartTabMirroringRequest = {
       val __obj = js.Dynamic.literal(sinkName = sinkName.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartTabMirroringRequest]
     }
     
-    @scala.inline
-    implicit class StartTabMirroringRequestMutableBuilder[Self <: StartTabMirroringRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartTabMirroringRequest](x: Self) {
       
-      @scala.inline
-      def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
+      inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,17 +132,14 @@ object Cast {
   }
   object StopCastingRequest {
     
-    @scala.inline
-    def apply(sinkName: String): StopCastingRequest = {
+    inline def apply(sinkName: String): StopCastingRequest = {
       val __obj = js.Dynamic.literal(sinkName = sinkName.asInstanceOf[js.Any])
       __obj.asInstanceOf[StopCastingRequest]
     }
     
-    @scala.inline
-    implicit class StopCastingRequestMutableBuilder[Self <: StopCastingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StopCastingRequest](x: Self) {
       
-      @scala.inline
-      def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
+      inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
   }
 }

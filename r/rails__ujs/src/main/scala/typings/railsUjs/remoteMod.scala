@@ -11,12 +11,9 @@ object remoteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formSubmitButtonClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formSubmitButtonClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def formSubmitButtonClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formSubmitButtonClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def handleRemote(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRemote")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleRemote(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRemote")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def preventInsignificantClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventInsignificantClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def preventInsignificantClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventInsignificantClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -13,6 +13,5 @@ class OCSPValues ()
   extends typings.xadesjs.xmlMod.OCSPValues
 object OCSPValues {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPValues]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPValues]]
 }

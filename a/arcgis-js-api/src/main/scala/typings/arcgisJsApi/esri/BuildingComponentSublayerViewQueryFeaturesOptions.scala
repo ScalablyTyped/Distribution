@@ -20,8 +20,7 @@ trait BuildingComponentSublayerViewQueryFeaturesOptions
 }
 object BuildingComponentSublayerViewQueryFeaturesOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -30,13 +29,10 @@ object BuildingComponentSublayerViewQueryFeaturesOptions {
     __obj.asInstanceOf[BuildingComponentSublayerViewQueryFeaturesOptions]
   }
   
-  @scala.inline
-  implicit class BuildingComponentSublayerViewQueryFeaturesOptionsMutableBuilder[Self <: BuildingComponentSublayerViewQueryFeaturesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingComponentSublayerViewQueryFeaturesOptions](x: Self) {
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

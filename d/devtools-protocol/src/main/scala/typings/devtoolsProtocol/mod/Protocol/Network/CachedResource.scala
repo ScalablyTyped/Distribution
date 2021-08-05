@@ -28,29 +28,22 @@ trait CachedResource extends StObject {
 }
 object CachedResource {
   
-  @scala.inline
-  def apply(bodySize: Double, `type`: ResourceType, url: String): CachedResource = {
+  inline def apply(bodySize: Double, `type`: ResourceType, url: String): CachedResource = {
     val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachedResource]
   }
   
-  @scala.inline
-  implicit class CachedResourceMutableBuilder[Self <: CachedResource] (val x: Self) extends AnyVal {
+  extension [Self <: CachedResource](x: Self) {
     
-    @scala.inline
-    def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
+    inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -26,37 +26,27 @@ trait BandedRange extends StObject {
 }
 object BandedRange {
   
-  @scala.inline
-  def apply(): BandedRange = {
+  inline def apply(): BandedRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BandedRange]
   }
   
-  @scala.inline
-  implicit class BandedRangeMutableBuilder[Self <: BandedRange] (val x: Self) extends AnyVal {
+  extension [Self <: BandedRange](x: Self) {
     
-    @scala.inline
-    def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
+    inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
+    inline def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
     
-    @scala.inline
-    def setColumnProperties(value: BandingProperties): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
+    inline def setColumnProperties(value: BandingProperties): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
+    inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRowProperties(value: BandingProperties): Self = StObject.set(x, "rowProperties", value.asInstanceOf[js.Any])
+    inline def setRowProperties(value: BandingProperties): Self = StObject.set(x, "rowProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowPropertiesUndefined: Self = StObject.set(x, "rowProperties", js.undefined)
+    inline def setRowPropertiesUndefined: Self = StObject.set(x, "rowProperties", js.undefined)
   }
 }

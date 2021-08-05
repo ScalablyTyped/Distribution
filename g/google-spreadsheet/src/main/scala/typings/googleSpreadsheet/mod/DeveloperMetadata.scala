@@ -18,8 +18,7 @@ trait DeveloperMetadata extends StObject {
 }
 object DeveloperMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     location: DeveloperMetadataLocation,
     metadataId: Double,
     metadataKey: String,
@@ -30,22 +29,16 @@ object DeveloperMetadata {
     __obj.asInstanceOf[DeveloperMetadata]
   }
   
-  @scala.inline
-  implicit class DeveloperMetadataMutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperMetadata](x: Self) {
     
-    @scala.inline
-    def setLocation(value: DeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: DeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
+    inline def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
+    inline def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
+    inline def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: DeveloperMetadataVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: DeveloperMetadataVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

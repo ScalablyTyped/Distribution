@@ -81,9 +81,9 @@ object variablesMod {
     
     var trainable: Boolean = js.native
     
-    var trainable_ : js.Any = js.native
+    /* private */ var trainable_ : js.Any = js.native
     
-    val `val`: Variable_[Rank] = js.native
+    /* protected */ val `val`: Variable_[Rank] = js.native
     
     /**
       * Update the value of the Variable.
@@ -95,230 +95,124 @@ object variablesMod {
     def write(newVal: Tensor[Rank]): this.type = js.native
   }
   
-  @scala.inline
-  def batchGetValue(xs: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("batchGetValue")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
+  inline def batchGetValue(xs: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("batchGetValue")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
   
-  @scala.inline
-  def batchSetValue(variablesAndValues: js.Array[js.Tuple2[LayerVariable, Tensor[Rank]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("batchSetValue")(variablesAndValues.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def batchSetValue(variablesAndValues: js.Array[js.Tuple2[LayerVariable, Tensor[Rank]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("batchSetValue")(variablesAndValues.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def eyeVariable(size: Double): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def eyeVariable(size: Double, dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def eyeVariable(size: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def eyeVariable(size: Double, dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def eyeVariable(size: Double): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def eyeVariable(size: Double, dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def eyeVariable(size: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def eyeVariable(size: Double, dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("eyeVariable")(size.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def gradients(lossFn: js.Function0[Scalar], variables: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("gradients")(lossFn.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  inline def gradients(lossFn: js.Function0[Scalar], variables: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("gradients")(lossFn.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
   
-  @scala.inline
-  def onesLike(x: Tensor[Rank]): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def onesLike(x: Tensor[Rank], dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def onesLike(x: Tensor[Rank], dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def onesLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def onesLike(x: Tensor[Rank]): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def onesLike(x: Tensor[Rank], dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def onesLike(x: Tensor[Rank], dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def onesLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def onesVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def onesVariable(shape: Shape, dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def onesVariable(shape: Shape, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def onesVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def onesVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def onesVariable(shape: Shape, dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def onesVariable(shape: Shape, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def onesVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("onesVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def randomNormalVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformVariable")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Double, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: Unit, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Double, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def truncatedNormalVariable(shape: Shape, mean: Unit, stddev: Unit, dtype: DataType, seed: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormalVariable")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stddev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def update(x: LayerVariable, xNew: Tensor[Rank]): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(x.asInstanceOf[js.Any], xNew.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def update(x: LayerVariable, xNew: Tensor[Rank]): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(x.asInstanceOf[js.Any], xNew.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def updateAdd(x: LayerVariable, increment: Tensor[Rank]): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAdd")(x.asInstanceOf[js.Any], increment.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def updateAdd(x: LayerVariable, increment: Tensor[Rank]): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAdd")(x.asInstanceOf[js.Any], increment.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def updateSub(x: LayerVariable, decrement: Tensor[Rank]): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSub")(x.asInstanceOf[js.Any], decrement.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def updateSub(x: LayerVariable, decrement: Tensor[Rank]): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSub")(x.asInstanceOf[js.Any], decrement.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def variable(x: Tensor[Rank]): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: Unit, name: String, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: Unit, name: Unit, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: DataType, name: String, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def variable(x: Tensor[Rank], dtype: DataType, name: Unit, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank]): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: Unit, name: String, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: Unit, name: Unit, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: DataType, name: String, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def variable(x: Tensor[Rank], dtype: DataType, name: Unit, constraint: Constraint): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def zerosLike(x: Tensor[Rank]): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def zerosLike(x: Tensor[Rank], dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def zerosLike(x: Tensor[Rank], dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def zerosLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def zerosLike(x: Tensor[Rank]): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def zerosLike(x: Tensor[Rank], dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def zerosLike(x: Tensor[Rank], dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def zerosLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
   
-  @scala.inline
-  def zerosVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
-  @scala.inline
-  def zerosVariable(shape: Shape, dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def zerosVariable(shape: Shape, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
-  @scala.inline
-  def zerosVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def zerosVariable(shape: Shape): LayerVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any]).asInstanceOf[LayerVariable]
+  inline def zerosVariable(shape: Shape, dtype: Unit, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def zerosVariable(shape: Shape, dtype: DataType): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
+  inline def zerosVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = (^.asInstanceOf[js.Dynamic].applyDynamic("zerosVariable")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LayerVariable]
 }

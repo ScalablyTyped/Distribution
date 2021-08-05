@@ -14,22 +14,17 @@ trait initPtsFoundData extends StObject {
 }
 object initPtsFoundData {
   
-  @scala.inline
-  def apply(d: String, frag: Fragment, initPTS: Double): initPtsFoundData = {
+  inline def apply(d: String, frag: Fragment, initPTS: Double): initPtsFoundData = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], frag = frag.asInstanceOf[js.Any], initPTS = initPTS.asInstanceOf[js.Any])
     __obj.asInstanceOf[initPtsFoundData]
   }
   
-  @scala.inline
-  implicit class initPtsFoundDataMutableBuilder[Self <: initPtsFoundData] (val x: Self) extends AnyVal {
+  extension [Self <: initPtsFoundData](x: Self) {
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitPTS(value: Double): Self = StObject.set(x, "initPTS", value.asInstanceOf[js.Any])
+    inline def setInitPTS(value: Double): Self = StObject.set(x, "initPTS", value.asInstanceOf[js.Any])
   }
 }

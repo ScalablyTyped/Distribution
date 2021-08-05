@@ -13,16 +13,13 @@ trait PanoramasItemMode extends StObject {
 }
 object PanoramasItemMode {
   
-  @scala.inline
-  def apply(panoramasItemMode: on | off | ifMercator): PanoramasItemMode = {
+  inline def apply(panoramasItemMode: on | off | ifMercator): PanoramasItemMode = {
     val __obj = js.Dynamic.literal(panoramasItemMode = panoramasItemMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramasItemMode]
   }
   
-  @scala.inline
-  implicit class PanoramasItemModeMutableBuilder[Self <: PanoramasItemMode] (val x: Self) extends AnyVal {
+  extension [Self <: PanoramasItemMode](x: Self) {
     
-    @scala.inline
-    def setPanoramasItemMode(value: on | off | ifMercator): Self = StObject.set(x, "panoramasItemMode", value.asInstanceOf[js.Any])
+    inline def setPanoramasItemMode(value: on | off | ifMercator): Self = StObject.set(x, "panoramasItemMode", value.asInstanceOf[js.Any])
   }
 }

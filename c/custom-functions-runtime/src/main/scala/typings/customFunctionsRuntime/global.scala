@@ -65,12 +65,10 @@ object global {
     /**
       * Associates the JavaScript function to the name given by the "id" property in the metadata JSON file.
       */
-    @scala.inline
-    def associate(id: String, functionObject: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("associate")(id.asInstanceOf[js.Any], functionObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def associate(id: String, functionObject: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("associate")(id.asInstanceOf[js.Any], functionObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Associates the JavaScript functions to the names given by the "id" properties in the metadata JSON file.
       */
-    @scala.inline
-    def associate(mappings: StringDictionary[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("associate")(mappings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def associate(mappings: StringDictionary[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("associate")(mappings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

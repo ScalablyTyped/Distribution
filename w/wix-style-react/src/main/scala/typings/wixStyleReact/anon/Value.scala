@@ -14,16 +14,13 @@ trait Value
 }
 object Value {
   
-  @scala.inline
-  def apply(): Value = {
+  inline def apply(): Value = {
     val __obj = js.Dynamic.literal(value = "-")
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setValue(value: `-_`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: `-_`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

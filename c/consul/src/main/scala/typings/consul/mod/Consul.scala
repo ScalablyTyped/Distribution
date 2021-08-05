@@ -35,8 +35,7 @@ trait Consul extends StObject {
 }
 object Consul {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acl: Acl,
     agent: Agent,
     catalog: Catalog,
@@ -52,37 +51,26 @@ object Consul {
     __obj.asInstanceOf[Consul]
   }
   
-  @scala.inline
-  implicit class ConsulMutableBuilder[Self <: Consul] (val x: Self) extends AnyVal {
+  extension [Self <: Consul](x: Self) {
     
-    @scala.inline
-    def setAcl(value: Acl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: Acl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalog(value: Catalog): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealth(value: Health): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    inline def setHealth(value: Health): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKv(value: Kv): Self = StObject.set(x, "kv", value.asInstanceOf[js.Any])
+    inline def setKv(value: Kv): Self = StObject.set(x, "kv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock(value: Options => Lock): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
+    inline def setLock(value: Options => Lock): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatch(value: typings.consul.mod.Watch.Options => Watch): Self = StObject.set(x, "watch", js.Any.fromFunction1(value))
+    inline def setWatch(value: typings.consul.mod.Watch.Options => Watch): Self = StObject.set(x, "watch", js.Any.fromFunction1(value))
   }
 }

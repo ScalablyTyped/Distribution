@@ -20,23 +20,23 @@ object wsdlMod {
   class WSDL protected () extends StObject {
     def this(definition: js.Any, uri: String, options: IOptions) = this()
     
-    var _fromServices: js.Any = js.native
+    /* private */ var _fromServices: js.Any = js.native
     
-    var _fromXML: js.Any = js.native
+    /* private */ var _fromXML: js.Any = js.native
     
-    var _includesWsdl: js.Any = js.native
+    /* private */ var _includesWsdl: js.Any = js.native
     
-    var _initializeOptions: js.Any = js.native
+    /* private */ var _initializeOptions: js.Any = js.native
     
-    var _originalIgnoredNamespaces: js.Any = js.native
+    /* private */ var _originalIgnoredNamespaces: js.Any = js.native
     
-    var _parse: js.Any = js.native
+    /* private */ var _parse: js.Any = js.native
     
-    var _processNextInclude: js.Any = js.native
+    /* private */ var _processNextInclude: js.Any = js.native
     
-    var _xmlnsMap: js.Any = js.native
+    /* private */ var _xmlnsMap: js.Any = js.native
     
-    var callback: js.Any = js.native
+    /* private */ var callback: js.Any = js.native
     
     var definitions: DefinitionsElement = js.native
     
@@ -237,7 +237,7 @@ object wsdlMod {
     
     def processIncludes(callback: js.Any): Unit = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     def toXML(): String = js.native
     
@@ -245,7 +245,7 @@ object wsdlMod {
     
     var valueKey: String = js.native
     
-    var xml: js.Any = js.native
+    /* private */ var xml: js.Any = js.native
     
     var xmlKey: String = js.native
     
@@ -257,10 +257,8 @@ object wsdlMod {
     var xmlnsInHeader: String = js.native
   }
   
-  @scala.inline
-  def openWsdl(uri: js.Any, callback: WSDLCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open_wsdl")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def openWsdl(uri: js.Any, options: IOptions, callback: WSDLCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open_wsdl")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def openWsdl(uri: js.Any, callback: WSDLCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open_wsdl")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def openWsdl(uri: js.Any, options: IOptions, callback: WSDLCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open_wsdl")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait IInitializedOptions
     extends StObject
@@ -271,23 +269,18 @@ object wsdlMod {
   }
   object IInitializedOptions {
     
-    @scala.inline
-    def apply(): IInitializedOptions = {
+    inline def apply(): IInitializedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInitializedOptions]
     }
     
-    @scala.inline
-    implicit class IInitializedOptionsMutableBuilder[Self <: IInitializedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IInitializedOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoredNamespaces(value: js.Array[String]): Self = StObject.set(x, "ignoredNamespaces", value.asInstanceOf[js.Any])
+      inline def setIgnoredNamespaces(value: js.Array[String]): Self = StObject.set(x, "ignoredNamespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredNamespacesUndefined: Self = StObject.set(x, "ignoredNamespaces", js.undefined)
+      inline def setIgnoredNamespacesUndefined: Self = StObject.set(x, "ignoredNamespaces", js.undefined)
       
-      @scala.inline
-      def setIgnoredNamespacesVarargs(value: String*): Self = StObject.set(x, "ignoredNamespaces", js.Array(value :_*))
+      inline def setIgnoredNamespacesVarargs(value: String*): Self = StObject.set(x, "ignoredNamespaces", js.Array(value :_*))
     }
   }
   

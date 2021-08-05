@@ -12,8 +12,6 @@ object calculateWrappedTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateWrappedText(node: DOMElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateWrappedText")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def calculateWrappedText(node: TextNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateWrappedText")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def calculateWrappedText(node: DOMElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateWrappedText")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def calculateWrappedText(node: TextNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateWrappedText")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -28,9 +28,9 @@ object vsoClientMod {
   class VsoClient protected () extends StObject {
     def this(baseUrl: String, restClient: RestClient) = this()
     
-    var _initializationPromise: js.Any = js.native
+    /* private */ var _initializationPromise: js.Any = js.native
     
-    var _locationsByAreaPromises: js.Any = js.native
+    /* private */ var _locationsByAreaPromises: js.Any = js.native
     
     /**
       * Sets a promise that is waited on before any requests are issued. Can be used to asynchronously
@@ -81,14 +81,12 @@ object vsoClientMod {
     @JSImport("vso-node-api/VsoClient", "VsoClient.APIS_RELATIVE_PATH")
     @js.native
     def APIS_RELATIVE_PATH: js.Any = js.native
-    @scala.inline
-    def APIS_RELATIVE_PATH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIS_RELATIVE_PATH")(x.asInstanceOf[js.Any])
+    inline def APIS_RELATIVE_PATH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIS_RELATIVE_PATH")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/VsoClient", "VsoClient.PREVIEW_INDICATOR")
     @js.native
     def PREVIEW_INDICATOR: js.Any = js.native
-    @scala.inline
-    def PREVIEW_INDICATOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW_INDICATOR")(x.asInstanceOf[js.Any])
+    inline def PREVIEW_INDICATOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW_INDICATOR")(x.asInstanceOf[js.Any])
   }
   
   trait ClientVersioningData extends StObject {
@@ -105,26 +103,20 @@ object vsoClientMod {
   }
   object ClientVersioningData {
     
-    @scala.inline
-    def apply(): ClientVersioningData = {
+    inline def apply(): ClientVersioningData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientVersioningData]
     }
     
-    @scala.inline
-    implicit class ClientVersioningDataMutableBuilder[Self <: ClientVersioningData] (val x: Self) extends AnyVal {
+    extension [Self <: ClientVersioningData](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
+      inline def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
+      inline def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
     }
   }
 }

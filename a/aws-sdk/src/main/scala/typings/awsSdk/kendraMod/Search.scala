@@ -28,37 +28,27 @@ trait Search extends StObject {
 }
 object Search {
   
-  @scala.inline
-  def apply(): Search = {
+  inline def apply(): Search = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Search]
   }
   
-  @scala.inline
-  implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
+  extension [Self <: Search](x: Self) {
     
-    @scala.inline
-    def setDisplayable(value: Boolean): Self = StObject.set(x, "Displayable", value.asInstanceOf[js.Any])
+    inline def setDisplayable(value: Boolean): Self = StObject.set(x, "Displayable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayableUndefined: Self = StObject.set(x, "Displayable", js.undefined)
+    inline def setDisplayableUndefined: Self = StObject.set(x, "Displayable", js.undefined)
     
-    @scala.inline
-    def setFacetable(value: Boolean): Self = StObject.set(x, "Facetable", value.asInstanceOf[js.Any])
+    inline def setFacetable(value: Boolean): Self = StObject.set(x, "Facetable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetableUndefined: Self = StObject.set(x, "Facetable", js.undefined)
+    inline def setFacetableUndefined: Self = StObject.set(x, "Facetable", js.undefined)
     
-    @scala.inline
-    def setSearchable(value: Boolean): Self = StObject.set(x, "Searchable", value.asInstanceOf[js.Any])
+    inline def setSearchable(value: Boolean): Self = StObject.set(x, "Searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchableUndefined: Self = StObject.set(x, "Searchable", js.undefined)
+    inline def setSearchableUndefined: Self = StObject.set(x, "Searchable", js.undefined)
     
-    @scala.inline
-    def setSortable(value: Boolean): Self = StObject.set(x, "Sortable", value.asInstanceOf[js.Any])
+    inline def setSortable(value: Boolean): Self = StObject.set(x, "Sortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortableUndefined: Self = StObject.set(x, "Sortable", js.undefined)
+    inline def setSortableUndefined: Self = StObject.set(x, "Sortable", js.undefined)
   }
 }

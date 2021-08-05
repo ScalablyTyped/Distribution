@@ -12,8 +12,7 @@ object useDomMotionEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(callback: js.Function1[/* event */ MotionEvent, Unit]): js.Tuple2[
+  inline def default(callback: js.Function1[/* event */ MotionEvent, Unit]): js.Tuple2[
     js.Function1[/* element */ HTMLElement, Unit], 
     js.Function1[/* element */ HTMLElement, Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[

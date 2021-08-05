@@ -18,19 +18,15 @@ trait VirtualNodeSpecListenerTls extends StObject {
 }
 object VirtualNodeSpecListenerTls {
   
-  @scala.inline
-  def apply(certificate: VirtualNodeSpecListenerTlsCertificate, mode: String): VirtualNodeSpecListenerTls = {
+  inline def apply(certificate: VirtualNodeSpecListenerTlsCertificate, mode: String): VirtualNodeSpecListenerTls = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecListenerTls]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerTlsMutableBuilder[Self <: VirtualNodeSpecListenerTls] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerTls](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: VirtualNodeSpecListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: VirtualNodeSpecListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

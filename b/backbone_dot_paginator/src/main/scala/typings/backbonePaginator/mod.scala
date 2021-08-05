@@ -90,8 +90,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def noConflict(): TypeofPageableCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[TypeofPageableCollection]
+    inline def noConflict(): TypeofPageableCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[TypeofPageableCollection]
   }
   
   type PageableGetPageOptions = CollectionFetchOptions | Silenceable
@@ -108,38 +107,28 @@ object mod {
   }
   object PageableInitialOptions {
     
-    @scala.inline
-    def apply(): PageableInitialOptions = {
+    inline def apply(): PageableInitialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableInitialOptions]
     }
     
-    @scala.inline
-    implicit class PageableInitialOptionsMutableBuilder[Self <: PageableInitialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PageableInitialOptions](x: Self) {
       
-      @scala.inline
-      def setComparator(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction1(value))
+      inline def setComparator(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
       
-      @scala.inline
-      def setQueryParam(value: PageableQueryParams): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
+      inline def setQueryParam(value: PageableQueryParams): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
+      inline def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
       
-      @scala.inline
-      def setState(value: PageableState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: PageableState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -149,20 +138,16 @@ object mod {
   }
   object PageableParseLinksOptions {
     
-    @scala.inline
-    def apply(): PageableParseLinksOptions = {
+    inline def apply(): PageableParseLinksOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableParseLinksOptions]
     }
     
-    @scala.inline
-    implicit class PageableParseLinksOptionsMutableBuilder[Self <: PageableParseLinksOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PageableParseLinksOptions](x: Self) {
       
-      @scala.inline
-      def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -184,56 +169,40 @@ object mod {
   }
   object PageableQueryParams {
     
-    @scala.inline
-    def apply(): PageableQueryParams = {
+    inline def apply(): PageableQueryParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableQueryParams]
     }
     
-    @scala.inline
-    implicit class PageableQueryParamsMutableBuilder[Self <: PageableQueryParams] (val x: Self) extends AnyVal {
+    extension [Self <: PageableQueryParams](x: Self) {
       
-      @scala.inline
-      def setCurrentPage(value: String): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: String): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+      inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      @scala.inline
-      def setDirections(value: js.Any): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+      inline def setDirections(value: js.Any): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+      inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
       
-      @scala.inline
-      def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: String): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: String): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
+      inline def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
+      inline def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
       
-      @scala.inline
-      def setTotalPages(value: String): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: String): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
+      inline def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
       
-      @scala.inline
-      def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
+      inline def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
+      inline def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
     }
   }
   
@@ -247,32 +216,24 @@ object mod {
   }
   object PageableSetSortingOptions {
     
-    @scala.inline
-    def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): PageableSetSortingOptions[TModel] = {
+    inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): PageableSetSortingOptions[TModel] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableSetSortingOptions[TModel]]
     }
     
-    @scala.inline
-    implicit class PageableSetSortingOptionsMutableBuilder[Self <: PageableSetSortingOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & PageableSetSortingOptions[TModel]) extends AnyVal {
+    extension [Self <: PageableSetSortingOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](x: Self & PageableSetSortingOptions[TModel]) {
       
-      @scala.inline
-      def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
       
-      @scala.inline
-      def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setSortValue(value: (/* model */ TModel, /* sortKey */ String) => js.Any | String): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
+      inline def setSortValue(value: (/* model */ TModel, /* sortKey */ String) => js.Any | String): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
+      inline def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
     }
   }
   
@@ -296,62 +257,44 @@ object mod {
   }
   object PageableState {
     
-    @scala.inline
-    def apply(): PageableState = {
+    inline def apply(): PageableState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableState]
     }
     
-    @scala.inline
-    implicit class PageableStateMutableBuilder[Self <: PageableState] (val x: Self) extends AnyVal {
+    extension [Self <: PageableState](x: Self) {
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+      inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      @scala.inline
-      def setFirstPage(value: Double): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
+      inline def setFirstPage(value: Double): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
+      inline def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
       
-      @scala.inline
-      def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
+      inline def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
+      inline def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
+      inline def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
+      inline def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
+      inline def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
       
-      @scala.inline
-      def setTotalRecords(value: Double): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
+      inline def setTotalRecords(value: Double): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
+      inline def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
     }
   }
   
@@ -363,26 +306,20 @@ object mod {
   }
   object PageableSwitchModeOptions {
     
-    @scala.inline
-    def apply(): PageableSwitchModeOptions = {
+    inline def apply(): PageableSwitchModeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableSwitchModeOptions]
     }
     
-    @scala.inline
-    implicit class PageableSwitchModeOptionsMutableBuilder[Self <: PageableSwitchModeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PageableSwitchModeOptions](x: Self) {
       
-      @scala.inline
-      def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setResetState(value: Boolean): Self = StObject.set(x, "resetState", value.asInstanceOf[js.Any])
+      inline def setResetState(value: Boolean): Self = StObject.set(x, "resetState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetStateUndefined: Self = StObject.set(x, "resetState", js.undefined)
+      inline def setResetStateUndefined: Self = StObject.set(x, "resetState", js.undefined)
     }
   }
 }

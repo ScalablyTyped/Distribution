@@ -22,28 +22,21 @@ trait RelatedRecordsInfoProperties extends StObject {
 }
 object RelatedRecordsInfoProperties {
   
-  @scala.inline
-  def apply(): RelatedRecordsInfoProperties = {
+  inline def apply(): RelatedRecordsInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelatedRecordsInfoProperties]
   }
   
-  @scala.inline
-  implicit class RelatedRecordsInfoPropertiesMutableBuilder[Self <: RelatedRecordsInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedRecordsInfoProperties](x: Self) {
     
-    @scala.inline
-    def setOrderByFields(value: js.Array[RelatedRecordsInfoFieldOrderProperties]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
+    inline def setOrderByFields(value: js.Array[RelatedRecordsInfoFieldOrderProperties]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
+    inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
-    @scala.inline
-    def setOrderByFieldsVarargs(value: RelatedRecordsInfoFieldOrderProperties*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
+    inline def setOrderByFieldsVarargs(value: RelatedRecordsInfoFieldOrderProperties*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
     
-    @scala.inline
-    def setShowRelatedRecords(value: Boolean): Self = StObject.set(x, "showRelatedRecords", value.asInstanceOf[js.Any])
+    inline def setShowRelatedRecords(value: Boolean): Self = StObject.set(x, "showRelatedRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRelatedRecordsUndefined: Self = StObject.set(x, "showRelatedRecords", js.undefined)
+    inline def setShowRelatedRecordsUndefined: Self = StObject.set(x, "showRelatedRecords", js.undefined)
   }
 }

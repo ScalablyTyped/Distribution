@@ -13,19 +13,15 @@ trait UpdateSAMLProviderResponse extends StObject {
 }
 object UpdateSAMLProviderResponse {
   
-  @scala.inline
-  def apply(): UpdateSAMLProviderResponse = {
+  inline def apply(): UpdateSAMLProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSAMLProviderResponse]
   }
   
-  @scala.inline
-  implicit class UpdateSAMLProviderResponseMutableBuilder[Self <: UpdateSAMLProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSAMLProviderResponse](x: Self) {
     
-    @scala.inline
-    def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
+    inline def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAMLProviderArnUndefined: Self = StObject.set(x, "SAMLProviderArn", js.undefined)
+    inline def setSAMLProviderArnUndefined: Self = StObject.set(x, "SAMLProviderArn", js.undefined)
   }
 }

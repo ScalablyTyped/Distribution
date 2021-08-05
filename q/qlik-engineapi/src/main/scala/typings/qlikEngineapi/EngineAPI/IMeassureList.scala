@@ -13,19 +13,15 @@ trait IMeassureList extends StObject {
 }
 object IMeassureList {
   
-  @scala.inline
-  def apply(qItems: js.Array[IMeassureListItemLayout]): IMeassureList = {
+  inline def apply(qItems: js.Array[IMeassureListItemLayout]): IMeassureList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMeassureList]
   }
   
-  @scala.inline
-  implicit class IMeassureListMutableBuilder[Self <: IMeassureList] (val x: Self) extends AnyVal {
+  extension [Self <: IMeassureList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: js.Array[IMeassureListItemLayout]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: js.Array[IMeassureListItemLayout]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItemsVarargs(value: IMeassureListItemLayout*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: IMeassureListItemLayout*): Self = StObject.set(x, "qItems", js.Array(value :_*))
   }
 }

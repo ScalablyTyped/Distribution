@@ -22,17 +22,14 @@ object typesClientRequestTokenRequiredExceptionMod {
   }
   object ClientRequestTokenRequiredException {
     
-    @scala.inline
-    def apply(): ClientRequestTokenRequiredException = {
+    inline def apply(): ClientRequestTokenRequiredException = {
       val __obj = js.Dynamic.literal(name = "ClientRequestTokenRequiredException")
       __obj.asInstanceOf[ClientRequestTokenRequiredException]
     }
     
-    @scala.inline
-    implicit class ClientRequestTokenRequiredExceptionMutableBuilder[Self <: ClientRequestTokenRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: ClientRequestTokenRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ClientRequestTokenRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

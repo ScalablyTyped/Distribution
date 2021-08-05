@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditCellType extends StObject
 object EditCellType {
   
-  @scala.inline
-  def checkbox: typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox = "checkbox".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox]
+  inline def checkbox: typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox = "checkbox".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox]
   
-  @scala.inline
-  def datetime: typings.reactBootstrapTable.reactBootstrapTableStrings.datetime = "datetime".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.datetime]
+  inline def datetime: typings.reactBootstrapTable.reactBootstrapTableStrings.datetime = "datetime".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.datetime]
   
-  @scala.inline
-  def select: typings.reactBootstrapTable.reactBootstrapTableStrings.select = "select".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.select]
+  inline def select: typings.reactBootstrapTable.reactBootstrapTableStrings.select = "select".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.select]
   
-  @scala.inline
-  def textarea: typings.reactBootstrapTable.reactBootstrapTableStrings.textarea = "textarea".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.textarea]
+  inline def textarea: typings.reactBootstrapTable.reactBootstrapTableStrings.textarea = "textarea".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.textarea]
 }

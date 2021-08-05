@@ -21,7 +21,7 @@ object ntlmMod {
     def this(username: String, password: String, workstation: String, domain: String) = this()
     def this(username: String, password: String, workstation: Unit, domain: String) = this()
     
-    var _ntlmOptions: js.Any = js.native
+    /* private */ var _ntlmOptions: js.Any = js.native
     
     /* CompleteClass */
     override def canHandleAuthentication(response: IHttpClientResponse): Boolean = js.native
@@ -29,13 +29,13 @@ object ntlmMod {
     /* CompleteClass */
     override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse] = js.native
     
-    var handleAuthenticationPrivate: js.Any = js.native
+    /* private */ var handleAuthenticationPrivate: js.Any = js.native
     
     /* CompleteClass */
     override def prepareRequest(options: RequestOptions): Unit = js.native
     
-    var sendType1Message: js.Any = js.native
+    /* private */ var sendType1Message: js.Any = js.native
     
-    var sendType3Message: js.Any = js.native
+    /* private */ var sendType3Message: js.Any = js.native
   }
 }

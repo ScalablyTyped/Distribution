@@ -27,57 +27,41 @@ trait NotaryJurisdiction extends StObject {
 }
 object NotaryJurisdiction {
   
-  @scala.inline
-  def apply(): NotaryJurisdiction = {
+  inline def apply(): NotaryJurisdiction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotaryJurisdiction]
   }
   
-  @scala.inline
-  implicit class NotaryJurisdictionMutableBuilder[Self <: NotaryJurisdiction] (val x: Self) extends AnyVal {
+  extension [Self <: NotaryJurisdiction](x: Self) {
     
-    @scala.inline
-    def setCommissionExpiration(value: String): Self = StObject.set(x, "commissionExpiration", value.asInstanceOf[js.Any])
+    inline def setCommissionExpiration(value: String): Self = StObject.set(x, "commissionExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommissionExpirationUndefined: Self = StObject.set(x, "commissionExpiration", js.undefined)
+    inline def setCommissionExpirationUndefined: Self = StObject.set(x, "commissionExpiration", js.undefined)
     
-    @scala.inline
-    def setCommissionId(value: String): Self = StObject.set(x, "commissionId", value.asInstanceOf[js.Any])
+    inline def setCommissionId(value: String): Self = StObject.set(x, "commissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommissionIdUndefined: Self = StObject.set(x, "commissionId", js.undefined)
+    inline def setCommissionIdUndefined: Self = StObject.set(x, "commissionId", js.undefined)
     
-    @scala.inline
-    def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
+    inline def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountyUndefined: Self = StObject.set(x, "county", js.undefined)
+    inline def setCountyUndefined: Self = StObject.set(x, "county", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setJurisdiction(value: Jurisdiction): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
+    inline def setJurisdiction(value: Jurisdiction): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
+    inline def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
-    @scala.inline
-    def setRegisteredName(value: String): Self = StObject.set(x, "registeredName", value.asInstanceOf[js.Any])
+    inline def setRegisteredName(value: String): Self = StObject.set(x, "registeredName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredNameUndefined: Self = StObject.set(x, "registeredName", js.undefined)
+    inline def setRegisteredNameUndefined: Self = StObject.set(x, "registeredName", js.undefined)
     
-    @scala.inline
-    def setSealType(value: String): Self = StObject.set(x, "sealType", value.asInstanceOf[js.Any])
+    inline def setSealType(value: String): Self = StObject.set(x, "sealType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSealTypeUndefined: Self = StObject.set(x, "sealType", js.undefined)
+    inline def setSealTypeUndefined: Self = StObject.set(x, "sealType", js.undefined)
   }
 }

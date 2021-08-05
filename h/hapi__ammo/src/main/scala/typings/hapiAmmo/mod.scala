@@ -22,8 +22,7 @@ object mod {
     def this(range: Range) = this()
   }
   
-  @scala.inline
-  def header(header: String, length: Double): Null | js.Array[Range] = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(header.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Null | js.Array[Range]]
+  inline def header(header: String, length: Double): Null | js.Array[Range] = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(header.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Null | js.Array[Range]]
   
   trait Range extends StObject {
     
@@ -39,20 +38,16 @@ object mod {
   }
   object Range {
     
-    @scala.inline
-    def apply(from: Double, to: Double): Range = {
+    inline def apply(from: Double, to: Double): Range = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,19 +22,15 @@ trait Factory extends StObject {
 }
 object Factory {
   
-  @scala.inline
-  def apply(getPopupService: () => PopupService, requestRender: () => Unit): Factory = {
+  inline def apply(getPopupService: () => PopupService, requestRender: () => Unit): Factory = {
     val __obj = js.Dynamic.literal(getPopupService = js.Any.fromFunction0(getPopupService), requestRender = js.Any.fromFunction0(requestRender))
     __obj.asInstanceOf[Factory]
   }
   
-  @scala.inline
-  implicit class FactoryMutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
+  extension [Self <: Factory](x: Self) {
     
-    @scala.inline
-    def setGetPopupService(value: () => PopupService): Self = StObject.set(x, "getPopupService", js.Any.fromFunction0(value))
+    inline def setGetPopupService(value: () => PopupService): Self = StObject.set(x, "getPopupService", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestRender(value: () => Unit): Self = StObject.set(x, "requestRender", js.Any.fromFunction0(value))
+    inline def setRequestRender(value: () => Unit): Self = StObject.set(x, "requestRender", js.Any.fromFunction0(value))
   }
 }

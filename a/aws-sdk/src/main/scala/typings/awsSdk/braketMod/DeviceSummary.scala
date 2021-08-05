@@ -33,8 +33,7 @@ trait DeviceSummary extends StObject {
 }
 object DeviceSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceArn: DeviceArn,
     deviceName: String,
     deviceStatus: DeviceStatus,
@@ -45,22 +44,16 @@ object DeviceSummary {
     __obj.asInstanceOf[DeviceSummary]
   }
   
-  @scala.inline
-  implicit class DeviceSummaryMutableBuilder[Self <: DeviceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSummary](x: Self) {
     
-    @scala.inline
-    def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatus(value: DeviceStatus): Self = StObject.set(x, "deviceStatus", value.asInstanceOf[js.Any])
+    inline def setDeviceStatus(value: DeviceStatus): Self = StObject.set(x, "deviceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
   }
 }

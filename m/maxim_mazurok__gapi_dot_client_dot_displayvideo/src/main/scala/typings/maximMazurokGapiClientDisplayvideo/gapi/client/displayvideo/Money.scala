@@ -21,31 +21,23 @@ trait Money extends StObject {
 }
 object Money {
   
-  @scala.inline
-  def apply(): Money = {
+  inline def apply(): Money = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Money]
   }
   
-  @scala.inline
-  implicit class MoneyMutableBuilder[Self <: Money] (val x: Self) extends AnyVal {
+  extension [Self <: Money](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

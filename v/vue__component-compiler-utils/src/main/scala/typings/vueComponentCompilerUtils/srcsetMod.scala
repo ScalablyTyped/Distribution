@@ -12,8 +12,6 @@ object srcsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PostTransformNode]
-  @scala.inline
-  def default(transformAssetUrlsOptions: TransformAssetUrlsOptions): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(transformAssetUrlsOptions.asInstanceOf[js.Any]).asInstanceOf[PostTransformNode]
+  inline def default(): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PostTransformNode]
+  inline def default(transformAssetUrlsOptions: TransformAssetUrlsOptions): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(transformAssetUrlsOptions.asInstanceOf[js.Any]).asInstanceOf[PostTransformNode]
 }

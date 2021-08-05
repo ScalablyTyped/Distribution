@@ -15,25 +15,19 @@ trait ContextDependency[T] extends StObject {
 }
 object ContextDependency {
   
-  @scala.inline
-  def apply[T](context: ReactContext[T], observedBits: Double): ContextDependency[T] = {
+  inline def apply[T](context: ReactContext[T], observedBits: Double): ContextDependency[T] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], observedBits = observedBits.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[ContextDependency[T]]
   }
   
-  @scala.inline
-  implicit class ContextDependencyMutableBuilder[Self <: ContextDependency[?], T] (val x: Self & ContextDependency[T]) extends AnyVal {
+  extension [Self <: ContextDependency[?], T](x: Self & ContextDependency[T]) {
     
-    @scala.inline
-    def setContext(value: ReactContext[T]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ReactContext[T]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ContextDependency[js.Any]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ContextDependency[js.Any]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setObservedBits(value: Double): Self = StObject.set(x, "observedBits", value.asInstanceOf[js.Any])
+    inline def setObservedBits(value: Double): Self = StObject.set(x, "observedBits", value.asInstanceOf[js.Any])
   }
 }

@@ -59,8 +59,7 @@ trait StatsBase[T] extends StObject {
 }
 object StatsBase {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     atime: Date,
     atimeMs: T,
     birthtime: Date,
@@ -91,82 +90,56 @@ object StatsBase {
     __obj.asInstanceOf[StatsBase[T]]
   }
   
-  @scala.inline
-  implicit class StatsBaseMutableBuilder[Self <: StatsBase[?], T] (val x: Self & StatsBase[T]) extends AnyVal {
+  extension [Self <: StatsBase[?], T](x: Self & StatsBase[T]) {
     
-    @scala.inline
-    def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtimeMs(value: T): Self = StObject.set(x, "atimeMs", value.asInstanceOf[js.Any])
+    inline def setAtimeMs(value: T): Self = StObject.set(x, "atimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+    inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthtimeMs(value: T): Self = StObject.set(x, "birthtimeMs", value.asInstanceOf[js.Any])
+    inline def setBirthtimeMs(value: T): Self = StObject.set(x, "birthtimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlksize(value: T): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
+    inline def setBlksize(value: T): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocks(value: T): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: T): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtimeMs(value: T): Self = StObject.set(x, "ctimeMs", value.asInstanceOf[js.Any])
+    inline def setCtimeMs(value: T): Self = StObject.set(x, "ctimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDev(value: T): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+    inline def setDev(value: T): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGid(value: T): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+    inline def setGid(value: T): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIno(value: T): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+    inline def setIno(value: T): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
+    inline def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCharacterDevice(value: () => Boolean): Self = StObject.set(x, "isCharacterDevice", js.Any.fromFunction0(value))
+    inline def setIsCharacterDevice(value: () => Boolean): Self = StObject.set(x, "isCharacterDevice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+    inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFIFO(value: () => Boolean): Self = StObject.set(x, "isFIFO", js.Any.fromFunction0(value))
+    inline def setIsFIFO(value: () => Boolean): Self = StObject.set(x, "isFIFO", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
+    inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSocket(value: () => Boolean): Self = StObject.set(x, "isSocket", js.Any.fromFunction0(value))
+    inline def setIsSocket(value: () => Boolean): Self = StObject.set(x, "isSocket", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
+    inline def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMode(value: T): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: T): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeMs(value: T): Self = StObject.set(x, "mtimeMs", value.asInstanceOf[js.Any])
+    inline def setMtimeMs(value: T): Self = StObject.set(x, "mtimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNlink(value: T): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
+    inline def setNlink(value: T): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdev(value: T): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
+    inline def setRdev(value: T): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: T): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: T): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: T): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: T): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GuidVersions extends StObject
 object GuidVersions {
   
-  @scala.inline
-  def uuidv1: typings.hapiJoi.hapiJoiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv1]
+  inline def uuidv1: typings.hapiJoi.hapiJoiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv1]
   
-  @scala.inline
-  def uuidv2: typings.hapiJoi.hapiJoiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv2]
+  inline def uuidv2: typings.hapiJoi.hapiJoiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv2]
   
-  @scala.inline
-  def uuidv3: typings.hapiJoi.hapiJoiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv3]
+  inline def uuidv3: typings.hapiJoi.hapiJoiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv3]
   
-  @scala.inline
-  def uuidv4: typings.hapiJoi.hapiJoiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv4]
+  inline def uuidv4: typings.hapiJoi.hapiJoiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv4]
   
-  @scala.inline
-  def uuidv5: typings.hapiJoi.hapiJoiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv5]
+  inline def uuidv5: typings.hapiJoi.hapiJoiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.hapiJoi.hapiJoiStrings.uuidv5]
 }

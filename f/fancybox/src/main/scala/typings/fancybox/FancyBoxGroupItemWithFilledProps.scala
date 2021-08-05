@@ -19,37 +19,27 @@ trait FancyBoxGroupItemWithFilledProps
 }
 object FancyBoxGroupItemWithFilledProps {
   
-  @scala.inline
-  def apply(src: String): FancyBoxGroupItemWithFilledProps = {
+  inline def apply(src: String): FancyBoxGroupItemWithFilledProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxGroupItemWithFilledProps]
   }
   
-  @scala.inline
-  implicit class FancyBoxGroupItemWithFilledPropsMutableBuilder[Self <: FancyBoxGroupItemWithFilledProps] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxGroupItemWithFilledProps](x: Self) {
     
-    @scala.inline
-    def set$thumb(value: JQuery): Self = StObject.set(x, "$thumb", value.asInstanceOf[js.Any])
+    inline def set$thumb(value: JQuery): Self = StObject.set(x, "$thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$thumbUndefined: Self = StObject.set(x, "$thumb", js.undefined)
+    inline def set$thumbUndefined: Self = StObject.set(x, "$thumb", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setThumb(value: js.Any): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: js.Any): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+    inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
   }
 }

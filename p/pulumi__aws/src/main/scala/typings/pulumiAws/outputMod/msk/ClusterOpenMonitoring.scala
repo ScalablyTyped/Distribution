@@ -13,16 +13,13 @@ trait ClusterOpenMonitoring extends StObject {
 }
 object ClusterOpenMonitoring {
   
-  @scala.inline
-  def apply(prometheus: ClusterOpenMonitoringPrometheus): ClusterOpenMonitoring = {
+  inline def apply(prometheus: ClusterOpenMonitoringPrometheus): ClusterOpenMonitoring = {
     val __obj = js.Dynamic.literal(prometheus = prometheus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOpenMonitoring]
   }
   
-  @scala.inline
-  implicit class ClusterOpenMonitoringMutableBuilder[Self <: ClusterOpenMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterOpenMonitoring](x: Self) {
     
-    @scala.inline
-    def setPrometheus(value: ClusterOpenMonitoringPrometheus): Self = StObject.set(x, "prometheus", value.asInstanceOf[js.Any])
+    inline def setPrometheus(value: ClusterOpenMonitoringPrometheus): Self = StObject.set(x, "prometheus", value.asInstanceOf[js.Any])
   }
 }

@@ -53,67 +53,47 @@ trait DescribeProjectResult extends StObject {
 }
 object DescribeProjectResult {
   
-  @scala.inline
-  def apply(): DescribeProjectResult = {
+  inline def apply(): DescribeProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProjectResult]
   }
   
-  @scala.inline
-  implicit class DescribeProjectResultMutableBuilder[Self <: DescribeProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProjectResult](x: Self) {
     
-    @scala.inline
-    def setArn(value: ProjectArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ProjectArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setCreatedTimeStamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimeStamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimeStamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeStampUndefined: Self = StObject.set(x, "createdTimeStamp", js.undefined)
+    inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "createdTimeStamp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ProjectDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ProjectDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectTemplateId(value: ProjectTemplateId): Self = StObject.set(x, "projectTemplateId", value.asInstanceOf[js.Any])
+    inline def setProjectTemplateId(value: ProjectTemplateId): Self = StObject.set(x, "projectTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectTemplateIdUndefined: Self = StObject.set(x, "projectTemplateId", js.undefined)
+    inline def setProjectTemplateIdUndefined: Self = StObject.set(x, "projectTemplateId", js.undefined)
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ProjectStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ProjectStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

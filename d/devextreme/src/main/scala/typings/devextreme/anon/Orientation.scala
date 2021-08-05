@@ -18,25 +18,19 @@ trait Orientation extends StObject {
 }
 object Orientation {
   
-  @scala.inline
-  def apply(): Orientation = {
+  inline def apply(): Orientation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Orientation]
   }
   
-  @scala.inline
-  implicit class OrientationMutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
+  extension [Self <: Orientation](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: auto | vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: auto | vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setType(value: auto | off | tree | layered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: auto | off | tree | layered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

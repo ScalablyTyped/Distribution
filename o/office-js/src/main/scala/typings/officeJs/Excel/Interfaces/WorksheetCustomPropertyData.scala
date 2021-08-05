@@ -25,25 +25,19 @@ trait WorksheetCustomPropertyData extends StObject {
 }
 object WorksheetCustomPropertyData {
   
-  @scala.inline
-  def apply(): WorksheetCustomPropertyData = {
+  inline def apply(): WorksheetCustomPropertyData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetCustomPropertyData]
   }
   
-  @scala.inline
-  implicit class WorksheetCustomPropertyDataMutableBuilder[Self <: WorksheetCustomPropertyData] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetCustomPropertyData](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

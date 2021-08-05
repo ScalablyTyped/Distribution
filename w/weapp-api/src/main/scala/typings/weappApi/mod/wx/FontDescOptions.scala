@@ -17,31 +17,23 @@ trait FontDescOptions extends StObject {
 }
 object FontDescOptions {
   
-  @scala.inline
-  def apply(): FontDescOptions = {
+  inline def apply(): FontDescOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontDescOptions]
   }
   
-  @scala.inline
-  implicit class FontDescOptionsMutableBuilder[Self <: FontDescOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FontDescOptions](x: Self) {
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

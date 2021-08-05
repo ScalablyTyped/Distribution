@@ -11,6 +11,5 @@ object iosMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(projectRootPath: String, config: IosSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(projectRootPath: String, config: IosSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

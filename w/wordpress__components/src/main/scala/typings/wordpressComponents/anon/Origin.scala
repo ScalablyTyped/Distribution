@@ -16,19 +16,15 @@ trait Origin extends StObject {
 }
 object Origin {
   
-  @scala.inline
-  def apply(): Origin = {
+  inline def apply(): Origin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Origin]
   }
   
-  @scala.inline
-  implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+  extension [Self <: Origin](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`)): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`)): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

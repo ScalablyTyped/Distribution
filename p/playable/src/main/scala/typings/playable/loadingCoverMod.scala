@@ -17,25 +17,25 @@ object loadingCoverMod {
        with LoadingCover {
     def this(hasEventEmitterEngineBottomBlockRootContainer: BottomBlockEngine) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bottomBlock: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _checkForWaitingState: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
     /* CompleteClass */
@@ -69,39 +69,36 @@ object loadingCoverMod {
     @JSImport("playable/dist/src/modules/ui/loading-cover/loading-cover", "default.View")
     @js.native
     def View: Instantiable0[typings.playable.loadingCoverViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable0[typings.playable.loadingCoverViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable0[typings.playable.loadingCoverViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/loading-cover/loading-cover", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/loading-cover/loading-cover", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait LoadingCover
     extends StObject
        with ILoadingCover {
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _bottomBlock: js.Any
+    /* private */ var _bottomBlock: js.Any
     
-    var _checkForWaitingState: js.Any
+    /* private */ var _checkForWaitingState: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
     var isHidden: Boolean
     
@@ -109,8 +106,7 @@ object loadingCoverMod {
   }
   object LoadingCover {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindEvents: js.Any,
       _bottomBlock: js.Any,
       _checkForWaitingState: js.Any,
@@ -130,35 +126,25 @@ object loadingCoverMod {
       __obj.asInstanceOf[LoadingCover]
     }
     
-    @scala.inline
-    implicit class LoadingCoverMutableBuilder[Self <: LoadingCover] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingCover](x: Self) {
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: typings.playable.loadingCoverViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.loadingCoverViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bottomBlock(value: js.Any): Self = StObject.set(x, "_bottomBlock", value.asInstanceOf[js.Any])
+      inline def set_bottomBlock(value: js.Any): Self = StObject.set(x, "_bottomBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_checkForWaitingState(value: js.Any): Self = StObject.set(x, "_checkForWaitingState", value.asInstanceOf[js.Any])
+      inline def set_checkForWaitingState(value: js.Any): Self = StObject.set(x, "_checkForWaitingState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

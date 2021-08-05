@@ -10,8 +10,7 @@ trait CreateCampaignInput
      with typings.awsSdkClientPinpointBrowser.typesCreateCampaignInputMod.CreateCampaignInput
 object CreateCampaignInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, WriteCampaignRequest: WriteCampaignRequest): CreateCampaignInput = {
+  inline def apply(ApplicationId: String, WriteCampaignRequest: WriteCampaignRequest): CreateCampaignInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteCampaignRequest = WriteCampaignRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCampaignInput]
   }

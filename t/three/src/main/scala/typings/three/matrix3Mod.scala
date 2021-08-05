@@ -195,8 +195,7 @@ object matrix3Mod {
   }
   object Matrix {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       copy: Matrix => Matrix,
       determinant: () => Double,
       elements: js.Array[Double],
@@ -209,32 +208,23 @@ object matrix3Mod {
       __obj.asInstanceOf[Matrix]
     }
     
-    @scala.inline
-    implicit class MatrixMutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
+    extension [Self <: Matrix](x: Self) {
       
-      @scala.inline
-      def setCopy(value: Matrix => Matrix): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopy(value: Matrix => Matrix): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeterminant(value: () => Double): Self = StObject.set(x, "determinant", js.Any.fromFunction0(value))
+      inline def setDeterminant(value: () => Double): Self = StObject.set(x, "determinant", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setGetInverse(value: Matrix => Matrix): Self = StObject.set(x, "getInverse", js.Any.fromFunction1(value))
+      inline def setGetInverse(value: Matrix => Matrix): Self = StObject.set(x, "getInverse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdentity(value: () => Matrix): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
+      inline def setIdentity(value: () => Matrix): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMultiplyScalar(value: Double => Matrix): Self = StObject.set(x, "multiplyScalar", js.Any.fromFunction1(value))
+      inline def setMultiplyScalar(value: Double => Matrix): Self = StObject.set(x, "multiplyScalar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranspose(value: () => Matrix): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
+      inline def setTranspose(value: () => Matrix): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
     }
   }
 }

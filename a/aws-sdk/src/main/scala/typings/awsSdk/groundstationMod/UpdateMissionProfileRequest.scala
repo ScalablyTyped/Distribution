@@ -43,55 +43,39 @@ trait UpdateMissionProfileRequest extends StObject {
 }
 object UpdateMissionProfileRequest {
   
-  @scala.inline
-  def apply(missionProfileId: String): UpdateMissionProfileRequest = {
+  inline def apply(missionProfileId: String): UpdateMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMissionProfileRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMissionProfileRequestMutableBuilder[Self <: UpdateMissionProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMissionProfileRequest](x: Self) {
     
-    @scala.inline
-    def setContactPostPassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPostPassDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setContactPostPassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPostPassDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactPostPassDurationSecondsUndefined: Self = StObject.set(x, "contactPostPassDurationSeconds", js.undefined)
+    inline def setContactPostPassDurationSecondsUndefined: Self = StObject.set(x, "contactPostPassDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setContactPrePassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPrePassDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setContactPrePassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPrePassDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactPrePassDurationSecondsUndefined: Self = StObject.set(x, "contactPrePassDurationSeconds", js.undefined)
+    inline def setContactPrePassDurationSecondsUndefined: Self = StObject.set(x, "contactPrePassDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setDataflowEdges(value: DataflowEdgeList): Self = StObject.set(x, "dataflowEdges", value.asInstanceOf[js.Any])
+    inline def setDataflowEdges(value: DataflowEdgeList): Self = StObject.set(x, "dataflowEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowEdgesUndefined: Self = StObject.set(x, "dataflowEdges", js.undefined)
+    inline def setDataflowEdgesUndefined: Self = StObject.set(x, "dataflowEdges", js.undefined)
     
-    @scala.inline
-    def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value :_*))
+    inline def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumViableContactDurationSecondsUndefined: Self = StObject.set(x, "minimumViableContactDurationSeconds", js.undefined)
+    inline def setMinimumViableContactDurationSecondsUndefined: Self = StObject.set(x, "minimumViableContactDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTrackingConfigArn(value: ConfigArn): Self = StObject.set(x, "trackingConfigArn", value.asInstanceOf[js.Any])
+    inline def setTrackingConfigArn(value: ConfigArn): Self = StObject.set(x, "trackingConfigArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingConfigArnUndefined: Self = StObject.set(x, "trackingConfigArn", js.undefined)
+    inline def setTrackingConfigArnUndefined: Self = StObject.set(x, "trackingConfigArn", js.undefined)
   }
 }

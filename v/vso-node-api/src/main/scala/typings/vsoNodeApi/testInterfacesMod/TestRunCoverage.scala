@@ -16,28 +16,21 @@ trait TestRunCoverage extends StObject {
 }
 object TestRunCoverage {
   
-  @scala.inline
-  def apply(lastError: String, modules: js.Array[ModuleCoverage], state: String, testRun: ShallowReference): TestRunCoverage = {
+  inline def apply(lastError: String, modules: js.Array[ModuleCoverage], state: String, testRun: ShallowReference): TestRunCoverage = {
     val __obj = js.Dynamic.literal(lastError = lastError.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], testRun = testRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRunCoverage]
   }
   
-  @scala.inline
-  implicit class TestRunCoverageMutableBuilder[Self <: TestRunCoverage] (val x: Self) extends AnyVal {
+  extension [Self <: TestRunCoverage](x: Self) {
     
-    @scala.inline
-    def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
+    inline def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModules(value: js.Array[ModuleCoverage]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[ModuleCoverage]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRun(value: ShallowReference): Self = StObject.set(x, "testRun", value.asInstanceOf[js.Any])
+    inline def setTestRun(value: ShallowReference): Self = StObject.set(x, "testRun", value.asInstanceOf[js.Any])
   }
 }

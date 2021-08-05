@@ -13,16 +13,13 @@ trait DeleteGlobalSecondaryIndexAction extends StObject {
 }
 object DeleteGlobalSecondaryIndexAction {
   
-  @scala.inline
-  def apply(IndexName: IndexName): DeleteGlobalSecondaryIndexAction = {
+  inline def apply(IndexName: IndexName): DeleteGlobalSecondaryIndexAction = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGlobalSecondaryIndexAction]
   }
   
-  @scala.inline
-  implicit class DeleteGlobalSecondaryIndexActionMutableBuilder[Self <: DeleteGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGlobalSecondaryIndexAction](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
   }
 }

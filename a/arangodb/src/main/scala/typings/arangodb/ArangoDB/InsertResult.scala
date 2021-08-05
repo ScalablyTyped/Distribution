@@ -12,19 +12,15 @@ trait InsertResult[T /* <: js.Object */]
 }
 object InsertResult {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](_id: String, _key: String, _rev: String): InsertResult[T] = {
+  inline def apply[T /* <: js.Object */](_id: String, _key: String, _rev: String): InsertResult[T] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _key = _key.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertResult[T]]
   }
   
-  @scala.inline
-  implicit class InsertResultMutableBuilder[Self <: InsertResult[?], T /* <: js.Object */] (val x: Self & InsertResult[T]) extends AnyVal {
+  extension [Self <: InsertResult[?], T /* <: js.Object */](x: Self & InsertResult[T]) {
     
-    @scala.inline
-    def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+    inline def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
+    inline def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
   }
 }

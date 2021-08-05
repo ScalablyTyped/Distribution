@@ -18,13 +18,12 @@ trait ListEntry extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.ListEntry_typekey")
+  /* private */ @JSName("Word.ListEntry_typekey")
   var WordDotListEntry_typekey: ListEntry
 }
 object ListEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -38,28 +37,20 @@ object ListEntry {
     __obj.asInstanceOf[ListEntry]
   }
   
-  @scala.inline
-  implicit class ListEntryMutableBuilder[Self <: ListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ListEntry](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotListEntry_typekey(value: ListEntry): Self = StObject.set(x, "Word.ListEntry_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotListEntry_typekey(value: ListEntry): Self = StObject.set(x, "Word.ListEntry_typekey", value.asInstanceOf[js.Any])
   }
 }

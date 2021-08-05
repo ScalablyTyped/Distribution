@@ -10,16 +10,13 @@ trait SocketChannelData extends StObject {
 }
 object SocketChannelData {
   
-  @scala.inline
-  def apply(socketPath: String): SocketChannelData = {
+  inline def apply(socketPath: String): SocketChannelData = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketChannelData]
   }
   
-  @scala.inline
-  implicit class SocketChannelDataMutableBuilder[Self <: SocketChannelData] (val x: Self) extends AnyVal {
+  extension [Self <: SocketChannelData](x: Self) {
     
-    @scala.inline
-    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }
 }

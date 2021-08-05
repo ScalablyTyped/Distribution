@@ -35,7 +35,6 @@ object migrationCreateCommandMod {
     /**
       * Gets contents of the migration file.
       */
-    @scala.inline
-    def getTemplate(name: String, timestamp: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTemplate(name: String, timestamp: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

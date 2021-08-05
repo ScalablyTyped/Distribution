@@ -13,8 +13,7 @@ object useTransitionGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useTransitionGroup[E /* <: HTMLElement */](hasAppearEnterExitProvidedChildren: TransitionGroupOptions): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransitionGroup")(hasAppearEnterExitProvidedChildren.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useTransitionGroup[E /* <: HTMLElement */](hasAppearEnterExitProvidedChildren: TransitionGroupOptions): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransitionGroup")(hasAppearEnterExitProvidedChildren.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
   type TransitionGroupChild[E /* <: HTMLElement */] = ReactElement
   
@@ -33,20 +32,16 @@ object useTransitionGroupMod {
   }
   object TransitionGroupOptions {
     
-    @scala.inline
-    def apply(): TransitionGroupOptions = {
+    inline def apply(): TransitionGroupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionGroupOptions]
     }
     
-    @scala.inline
-    implicit class TransitionGroupOptionsMutableBuilder[Self <: TransitionGroupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionGroupOptions](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

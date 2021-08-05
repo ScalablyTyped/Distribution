@@ -15,29 +15,25 @@ trait ExtendedAttributeRightHandSideBase
      with ExtendedAttributeRightHandSide
 object ExtendedAttributeRightHandSideBase {
   
-  @scala.inline
-  def ExtendedAttributeRightHandSideDecimal(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideDecimal = {
+  inline def ExtendedAttributeRightHandSideDecimal(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideDecimal = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("decimal")
     __obj.asInstanceOf[typings.webidl2.mod.ExtendedAttributeRightHandSideDecimal]
   }
   
-  @scala.inline
-  def ExtendedAttributeRightHandSideIdentifier(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideIdentifier = {
+  inline def ExtendedAttributeRightHandSideIdentifier(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideIdentifier = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("identifier")
     __obj.asInstanceOf[typings.webidl2.mod.ExtendedAttributeRightHandSideIdentifier]
   }
   
-  @scala.inline
-  def ExtendedAttributeRightHandSideInteger(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideInteger = {
+  inline def ExtendedAttributeRightHandSideInteger(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideInteger = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[typings.webidl2.mod.ExtendedAttributeRightHandSideInteger]
   }
   
-  @scala.inline
-  def ExtendedAttributeRightHandSideString(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideString = {
+  inline def ExtendedAttributeRightHandSideString(value: String): typings.webidl2.mod.ExtendedAttributeRightHandSideString = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[typings.webidl2.mod.ExtendedAttributeRightHandSideString]

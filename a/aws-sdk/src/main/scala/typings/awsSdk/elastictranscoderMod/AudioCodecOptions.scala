@@ -28,37 +28,27 @@ trait AudioCodecOptions extends StObject {
 }
 object AudioCodecOptions {
   
-  @scala.inline
-  def apply(): AudioCodecOptions = {
+  inline def apply(): AudioCodecOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioCodecOptions]
   }
   
-  @scala.inline
-  implicit class AudioCodecOptionsMutableBuilder[Self <: AudioCodecOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AudioCodecOptions](x: Self) {
     
-    @scala.inline
-    def setBitDepth(value: AudioBitDepth): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
+    inline def setBitDepth(value: AudioBitDepth): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
+    inline def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
     
-    @scala.inline
-    def setBitOrder(value: AudioBitOrder): Self = StObject.set(x, "BitOrder", value.asInstanceOf[js.Any])
+    inline def setBitOrder(value: AudioBitOrder): Self = StObject.set(x, "BitOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitOrderUndefined: Self = StObject.set(x, "BitOrder", js.undefined)
+    inline def setBitOrderUndefined: Self = StObject.set(x, "BitOrder", js.undefined)
     
-    @scala.inline
-    def setProfile(value: AudioCodecProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: AudioCodecProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
     
-    @scala.inline
-    def setSigned(value: AudioSigned): Self = StObject.set(x, "Signed", value.asInstanceOf[js.Any])
+    inline def setSigned(value: AudioSigned): Self = StObject.set(x, "Signed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUndefined: Self = StObject.set(x, "Signed", js.undefined)
+    inline def setSignedUndefined: Self = StObject.set(x, "Signed", js.undefined)
   }
 }

@@ -39,39 +39,34 @@ object Store {
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.appId")
     @js.native
     def appId: String = js.native
-    @scala.inline
-    def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
+    inline def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
     
     /**
       * Retrieves the promotion campaign ID for the current app.
       * @return The advertising campaign ID for your app.
       */
     /* static member */
-    @scala.inline
-    def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppPurchaseCampaignIdAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppPurchaseCampaignIdAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Requests all receipts for the purchase of the app and any in-app products. For examples of how receipt information can be used, see Using receipts to verify product purchases.
       * @return An XML-formatted string that contains all receipt information for the purchase of the app and any in-app products.
       */
     /* static member */
-    @scala.inline
-    def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getCustomerCollectionsIdAsync")
     @js.native
     def getCustomerCollectionsIdAsync: js.Any = js.native
-    @scala.inline
-    def getCustomerCollectionsIdAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerCollectionsIdAsync")(x.asInstanceOf[js.Any])
+    inline def getCustomerCollectionsIdAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerCollectionsIdAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getCustomerPurchaseIdAsync")
     @js.native
     def getCustomerPurchaseIdAsync: js.Any = js.native
-    @scala.inline
-    def getCustomerPurchaseIdAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerPurchaseIdAsync")(x.asInstanceOf[js.Any])
+    inline def getCustomerPurchaseIdAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerPurchaseIdAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /**
@@ -80,40 +75,35 @@ object Store {
       * @return An XML-formatted string that contains the receipt for the specified productId.
       */
     /* static member */
-    @scala.inline
-    def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Returns a list of purchased consumable in-app products that have not been reported to the Windows Store as fulfilled.
       * @return When the operation completes, a list of consumable in-app products not yet reported as fulfilled is returned ( UnfulfilledConsumable objects). Each item of this list provides the product ID, offer ID, and transaction ID associated with a product.
       */
     /* static member */
-    @scala.inline
-    def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /** Gets the license metadata for the current app. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.licenseInformation")
     @js.native
     def licenseInformation: typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation = js.native
-    @scala.inline
-    def licenseInformation_=(x: typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
+    inline def licenseInformation_=(x: typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
     
     /** Gets the Uniform Resource Identifier (URI) of the app's listing page in the web catalog of the Windows Store. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.linkUri")
     @js.native
     def linkUri: Uri = js.native
-    @scala.inline
-    def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
+    inline def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
     
     /**
       * Loads the app's listing information asynchronously. Implements the IAsyncInfo interface.
       * @return The apps' listing information. If the method fails, it returns an HRESULT error code.
       */
     /* static member */
-    @scala.inline
-    def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the app listing information asynchronously, returning features and products in the ProductListings collection that match all supplied keywords. Implements the IAsyncInfo interface.
@@ -121,8 +111,7 @@ object Store {
       * @return The app's listing information, with ProductListings collection filtered by keywords. If the method fails, it returns an HRESULT error code. If no products or features are found that match all of the given keywords, the ProductListings collection will be empty.
       */
     /* static member */
-    @scala.inline
-    def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByKeywordsAsync")(keywords.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByKeywordsAsync")(keywords.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the app listing information asynchronously, returning features and products in the ProductListings collection that match any of the given products IDs. Implements the IAsyncInfo interface.
@@ -130,8 +119,7 @@ object Store {
       * @return The app's listing information, with ProductListings collection filtered by product IDs. If the method fails, it returns an HRESULT error code. If no products or features are found that match the given product IDs, the ProductListings collection will be empty.
       */
     /* static member */
-    @scala.inline
-    def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByProductIdsAsync")(productIds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByProductIdsAsync")(productIds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Notifies the Windows Store that the purchase of a consumable is fulfilled and that the user has the right to access the content.
@@ -140,16 +128,14 @@ object Store {
       * @return A value that indicates the status of fulfillment for a consumable in-app product. Possible values are defined by the FulfillmentResult enumeration.
       */
     /* static member */
-    @scala.inline
-    def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportConsumableFulfillmentAsync")(productId.asInstanceOf[js.Any], transactionId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FulfillmentResult]]
+    inline def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportConsumableFulfillmentAsync")(productId.asInstanceOf[js.Any], transactionId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FulfillmentResult]]
     
     /**
       * Notifies the Windows Store that the application has fulfilled the in-app product. This product cannot be re-purchased until the app has confirmed fulfillment using this method.
       * @param productId The ID of the product that has been delivered to the user.
       */
     /* static member */
-    @scala.inline
-    def reportProductFulfillment(productId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportProductFulfillment")(productId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def reportProductFulfillment(productId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportProductFulfillment")(productId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Requests the purchase of a full app license.
@@ -157,8 +143,7 @@ object Store {
       * @return If the includeReceipt parameter is set to true, this string contains XML that represents all receipts for the app and any in-app purchases. If includeReceipt is set to false, this string is empty.
       */
     /* static member */
-    @scala.inline
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Requests the purchase of an in-app product. Additionally, calling this method displays the UI that is used to complete the transaction via the Windows Store.
@@ -166,8 +151,7 @@ object Store {
       * @return The results of the in-app product purchase request.
       */
     /* static member */
-    @scala.inline
-    def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
+    inline def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
     /**
       * Requests the purchase of an in-app product. Additionally, calling this method displays the UI that is used to complete the transaction via the Windows Store.
       * @param productId Specifies the id of the in-app product.
@@ -175,8 +159,7 @@ object Store {
       * @return A string providing in-app transaction details for the provided productId. If includeReceipt is set true, the returned string will include a full receipt xml.
       */
     /* static member */
-    @scala.inline
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     /**
       * Requests the purchase of an in-app product. Additionally, calling this method displays the UI that is used to complete the transaction via the Windows Store.
       * @param productId Specifies the id of the in-app product.
@@ -185,8 +168,7 @@ object Store {
       * @return The results of the in-app product purchase request.
       */
     /* static member */
-    @scala.inline
-    def requestProductPurchaseAsync(
+    inline def requestProductPurchaseAsync(
       productId: String,
       offerId: String,
       displayProperties: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties
@@ -210,24 +192,21 @@ object Store {
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.appId")
     @js.native
     def appId: String = js.native
-    @scala.inline
-    def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
+    inline def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
     
     /**
       * Retrieves the promotion campaign ID for the current app.
       * @return The advertising campaign ID for your app.
       */
     /* static member */
-    @scala.inline
-    def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppPurchaseCampaignIdAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppPurchaseCampaignIdAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Creates the async operation that the user can use to simulate requesting all receipts for this app and any in-app product purchases. For examples of how receipt information can be used, see Using receipts to verify product purchases.
       * @return An XML-formatted string that contains all receipts for this app and any in-app product purchases.
       */
     /* static member */
-    @scala.inline
-    def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Creates the async operation that the user can use to simulate requesting the receipt for the specified productId. For examples of how receipt information can be used, see Using receipts to verify product purchases.
@@ -235,40 +214,35 @@ object Store {
       * @return An XML-formatted string that contains the receipt for the specified productId.
       */
     /* static member */
-    @scala.inline
-    def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Returns a list of purchased consumable in-app products that have not been fulfilled locally.
       * @return When the operation completes, a list of unfulfilled consumable in-app products ( UnfulfilledConsumable objects) is returned. Each item in this list provides the product ID, offer ID, and transaction ID associated with a product.
       */
     /* static member */
-    @scala.inline
-    def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /** Gets the simulated license metadata for the current app as provided by the simulation. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.licenseInformation")
     @js.native
     def licenseInformation: typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation = js.native
-    @scala.inline
-    def licenseInformation_=(x: typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
+    inline def licenseInformation_=(x: typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
     
     /** Gets the simulated Uniform Resource Identifier (URI) that represents a Windows Store listing page for the current app. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.linkUri")
     @js.native
     def linkUri: Uri = js.native
-    @scala.inline
-    def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
+    inline def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
     
     /**
       * Loads the simulated app listing information asynchronously. Implements the IAsyncInfo interface.
       * @return The app listing information as defined by the simulation. If the method fails, it returns an HRESULT error code.
       */
     /* static member */
-    @scala.inline
-    def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the simulated app listing information asynchronously, returning in-app products in the ProductListings collection that match all supplied keywords. Implements the IAsyncInfo interface.
@@ -276,8 +250,7 @@ object Store {
       * @return The simulated app listing information, with ProductListings collection filtered by keywords. If the method fails, it returns an HRESULT error code. If no in-app products are found that match all of the given keywords, the ProductListings collection will be empty.
       */
     /* static member */
-    @scala.inline
-    def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByKeywordsAsync")(keywords.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByKeywordsAsync")(keywords.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the simulated app listing information asynchronously, returning available in-app products in the ProductListings collection that match any of the given products IDs. This method implements the IAsyncInfo interface.
@@ -285,8 +258,7 @@ object Store {
       * @return The simulated app listing information, with ProductListings collection filtered by product IDs. If the method fails, it returns an HRESULT error code. If no in-app products are found that match the given product IDs, the ProductListings collection will be empty.
       */
     /* static member */
-    @scala.inline
-    def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByProductIdsAsync")(productIds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByProductIdsAsync")(productIds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Reloads the simulator using a StorageFile containing the WindowsStoreProxy.xml file.
@@ -294,8 +266,7 @@ object Store {
       * @return The async operation that reloads the simulator.
       */
     /* static member */
-    @scala.inline
-    def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSimulatorAsync")(simulatorSettingsFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSimulatorAsync")(simulatorSettingsFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Simulates notifying the Windows Store that the purchase of a consumable in-app product is fulfilled and that the user has the right to access the content.
@@ -304,8 +275,7 @@ object Store {
       * @return A value that indicates the status of fulfillment for a simulated consumable in-app product purchase.
       */
     /* static member */
-    @scala.inline
-    def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportConsumableFulfillmentAsync")(productId.asInstanceOf[js.Any], transactionId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FulfillmentResult]]
+    inline def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportConsumableFulfillmentAsync")(productId.asInstanceOf[js.Any], transactionId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FulfillmentResult]]
     
     /**
       * Creates the async operation that simulates a user request to buy a full license for the current app.
@@ -313,8 +283,7 @@ object Store {
       * @return If the includeReceipt parameter is set to true, this string contains XML that represents all receipts for the app and any in-app product purchases. If includeReceipt is set to false, this string is empty.
       */
     /* static member */
-    @scala.inline
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Creates the async operation that displays the UI that is used to simulate the purchase of in-app product from the Windows Store.
@@ -322,8 +291,7 @@ object Store {
       * @return A PurchaseResults object containing transaction details for the provided productId.
       */
     /* static member */
-    @scala.inline
-    def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
+    inline def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
     /**
       * Creates the async operation that displays the UI that is used to simulate the purchase of an in-app product from the Windows Store.
       * @param productId Specifies the id, as defined by the simulation, of the in-app product to buy.
@@ -331,8 +299,7 @@ object Store {
       * @return A string providing in-app product purchase details for the provided productId. If includeReceipt is set true, the returned string will include a full receipt xml.
       */
     /* static member */
-    @scala.inline
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     /**
       * Creates the async operation that displays the UI that is used to simulate the purchase of an in-app product from the Windows Store.
       * @param productId The product ID used for listing in the Windows Store.
@@ -341,8 +308,7 @@ object Store {
       * @return The results of the in-app product purchase.
       */
     /* static member */
-    @scala.inline
-    def requestProductPurchaseAsync(
+    inline def requestProductPurchaseAsync(
       productId: String,
       offerId: String,
       displayProperties: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties
@@ -577,16 +543,14 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns a list of hardware features that are supported on the current device. If you use Asynchronous programming, the result type is a read-only list/vector of StoreSystemFeature items. (You can use APIs of IVectorView<StoreSystemFeature> for C++ or JavaScript, APIs of IReadOnlyList<StoreSystemFeature> for .NET.)
         */
       /* static member */
-      @scala.inline
-      def filterUnsupportedSystemFeaturesAsync(systemFeatures: IIterable[StoreSystemFeature]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterUnsupportedSystemFeaturesAsync")(systemFeatures.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def filterUnsupportedSystemFeaturesAsync(systemFeatures: IIterable[StoreSystemFeature]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterUnsupportedSystemFeaturesAsync")(systemFeatures.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
       
       /** Gets hardware manufacturer information for the current device. */
       /* static member */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.hardwareManufacturerInfo")
       @js.native
       def hardwareManufacturerInfo: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo = js.native
-      @scala.inline
-      def hardwareManufacturerInfo_=(x: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hardwareManufacturerInfo")(x.asInstanceOf[js.Any])
+      inline def hardwareManufacturerInfo_=(x: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hardwareManufacturerInfo")(x.asInstanceOf[js.Any])
       
       /**
         * Determines whether a given user ID is also being used to sign in to the Windows Store. Typically, this method is used to determine whether a user ID that is currently signed in to an app is also signed in to the Windows Store.
@@ -594,16 +558,14 @@ object Store {
         * @return True if the user account specified by webAccountId is the same account that is signed in to the Windows Store; otherwise false.
         */
       /* static member */
-      @scala.inline
-      def isStoreWebAccountId(webAccountId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStoreWebAccountId")(webAccountId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isStoreWebAccountId(webAccountId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStoreWebAccountId")(webAccountId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /** Gets or sets a value that indicates whether the Windows Store prompts the user before making a purchase. */
       /* static member */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.purchasePromptingPolicy")
       @js.native
       def purchasePromptingPolicy: Double = js.native
-      @scala.inline
-      def purchasePromptingPolicy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purchasePromptingPolicy")(x.asInstanceOf[js.Any])
+      inline def purchasePromptingPolicy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purchasePromptingPolicy")(x.asInstanceOf[js.Any])
       
       /**
         * Configures mobile operator information for the device.
@@ -612,8 +574,7 @@ object Store {
         * @param updateDownloadLimitInMegabytes The maximum OS update download size defined by the mobile operator, in MB.
         */
       /* static member */
-      @scala.inline
-      def setMobileOperatorConfiguration(
+      inline def setMobileOperatorConfiguration(
         mobileOperatorId: String,
         appDownloadLimitInMegabytes: Double,
         updateDownloadLimitInMegabytes: Double
@@ -624,8 +585,7 @@ object Store {
         * @param webAccountId The user account ID (typically obtained from the WebAccount.Id property) that is signed in to the Windows Store.
         */
       /* static member */
-      @scala.inline
-      def setStoreWebAccountId(webAccountId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStoreWebAccountId")(webAccountId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setStoreWebAccountId(webAccountId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStoreWebAccountId")(webAccountId.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Configures miscellaneous system information for the device.
@@ -635,8 +595,7 @@ object Store {
         * @param catalogHardwareDescriptor A descriptor string that specifies the hardware components supported by the device.
         */
       /* static member */
-      @scala.inline
-      def setSystemConfiguration(
+      inline def setSystemConfiguration(
         catalogHardwareManufacturerId: String,
         catalogStoreContentModifierId: String,
         systemConfigurationExpiration: Date,
@@ -685,8 +644,7 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns the collection of in-app products for the current app (including the available SKUs for each product). If you use Asynchronous programming, the result type is a read-only list/vector of StorePreviewProductInfo items. (You can use APIs of IVectorView<StorePreviewProductInfo> for C++ or JavaScript, APIs of IReadOnlyList<StorePreviewProductInfo> for .NET.)
         */
       /* static member */
-      @scala.inline
-      def loadAddOnProductInfosAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAddOnProductInfosAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def loadAddOnProductInfosAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAddOnProductInfosAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
       
       /**
         * Requests the purchase of a SKU for an in-app product that is associated with the current app. Calling this method displays the UI that is used to complete the transaction via the Windows Store.
@@ -695,8 +653,7 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns a StorePreviewPurchaseResults that contains the results of the in-app product purchase request.
         */
       /* static member */
-      @scala.inline
-      def requestProductPurchaseByProductIdAndSkuIdAsync(productId: String, skuId: String): IPromiseWithIAsyncOperation[
+      inline def requestProductPurchaseByProductIdAndSkuIdAsync(productId: String, skuId: String): IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults
           ] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseByProductIdAndSkuIdAsync")(productId.asInstanceOf[js.Any], skuId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults

@@ -40,50 +40,36 @@ object device {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpenURL(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
+      inline def setOpenURL(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenURLUndefined: Self = StObject.set(x, "openURL", js.undefined)
+      inline def setOpenURLUndefined: Self = StObject.set(x, "openURL", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      @scala.inline
-      def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   
@@ -102,32 +88,24 @@ object device {
   }
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
     
-    @scala.inline
-    implicit class ICordovaMutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
+    extension [Self <: ICordova](x: Self) {
       
-      @scala.inline
-      def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+      inline def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
+      inline def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -146,32 +124,24 @@ object device {
   }
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    @scala.inline
-    implicit class IPhoneGapMutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
+    extension [Self <: IPhoneGap](x: Self) {
       
-      @scala.inline
-      def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+      inline def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
+      inline def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -187,20 +157,16 @@ object device {
   }
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
     
-    @scala.inline
-    implicit class ISenchaMutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
+    extension [Self <: ISencha](x: Self) {
       
-      @scala.inline
-      def setOpenURL(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
+      inline def setOpenURL(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenURLUndefined: Self = StObject.set(x, "openURL", js.undefined)
+      inline def setOpenURLUndefined: Self = StObject.set(x, "openURL", js.undefined)
     }
   }
   

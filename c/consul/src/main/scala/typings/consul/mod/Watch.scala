@@ -43,41 +43,30 @@ object Watch {
   }
   object Options {
     
-    @scala.inline
-    def apply(method: js.Function): Options = {
+    inline def apply(method: js.Function): Options = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBackoffFactor(value: Double): Self = StObject.set(x, "backoffFactor", value.asInstanceOf[js.Any])
+      inline def setBackoffFactor(value: Double): Self = StObject.set(x, "backoffFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffFactorUndefined: Self = StObject.set(x, "backoffFactor", js.undefined)
+      inline def setBackoffFactorUndefined: Self = StObject.set(x, "backoffFactor", js.undefined)
       
-      @scala.inline
-      def setBackoffMax(value: Double): Self = StObject.set(x, "backoffMax", value.asInstanceOf[js.Any])
+      inline def setBackoffMax(value: Double): Self = StObject.set(x, "backoffMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffMaxUndefined: Self = StObject.set(x, "backoffMax", js.undefined)
+      inline def setBackoffMaxUndefined: Self = StObject.set(x, "backoffMax", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setMethod(value: js.Function): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: js.Function): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: CommonOptions & WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CommonOptions & WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -87,20 +76,16 @@ object Watch {
   }
   object WatchOptions {
     
-    @scala.inline
-    def apply(): WatchOptions = {
+    inline def apply(): WatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WatchOptions]
     }
     
-    @scala.inline
-    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
 }

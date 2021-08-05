@@ -14,27 +14,22 @@ trait VerticalAlignProps[TLength] extends StObject {
 }
 object VerticalAlignProps {
   
-  @scala.inline
-  def apply[TLength](): VerticalAlignProps[TLength] = {
+  inline def apply[TLength](): VerticalAlignProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerticalAlignProps[TLength]]
   }
   
-  @scala.inline
-  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[?], TLength] (val x: Self & VerticalAlignProps[TLength]) extends AnyVal {
+  extension [Self <: VerticalAlignProps[?], TLength](x: Self & VerticalAlignProps[TLength]) {
     
-    @scala.inline
-    def setVerticalAlign(
+    inline def setVerticalAlign(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignVarargs(
+    inline def setVerticalAlignVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any)*
     ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
   }

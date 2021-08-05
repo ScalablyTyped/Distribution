@@ -32,14 +32,12 @@ object TabBar {
     @JSImport("antd-mobile", "TabBar.Item.defaultProps")
     @js.native
     def defaultProps: TabBarItemProps = js.native
-    @scala.inline
-    def defaultProps_=(x: TabBarItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: TabBarItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
   @JSImport("antd-mobile", "TabBar.defaultProps")
   @js.native
   def defaultProps: AntTabbarProps = js.native
-  @scala.inline
-  def defaultProps_=(x: AntTabbarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: AntTabbarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

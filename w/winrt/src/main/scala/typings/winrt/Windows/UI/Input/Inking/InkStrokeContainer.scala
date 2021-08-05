@@ -17,8 +17,7 @@ trait InkStrokeContainer
      with IInkStrokeContainer
 object InkStrokeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addStroke: InkStroke => Unit,
     boundingRect: Rect,
     canPasteFromClipboard: () => Boolean,

@@ -8,11 +8,9 @@ object tweezerJsStrings {
   
   @js.native
   sealed trait done extends StObject
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
   sealed trait tick extends StObject
-  @scala.inline
-  def tick: tick = "tick".asInstanceOf[tick]
+  inline def tick: tick = "tick".asInstanceOf[tick]
 }

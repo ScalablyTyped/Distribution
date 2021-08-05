@@ -10,8 +10,7 @@ trait MenuLauncher
      with IModalController
 object MenuLauncher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createComponentForDisplayMode: String => js.Any,
     dispose: () => scala.Unit,
     get_enabled: () => Boolean,

@@ -28,31 +28,23 @@ trait PutBucketWebsiteRequest extends StObject {
 }
 object PutBucketWebsiteRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, WebsiteConfiguration: WebsiteConfiguration): PutBucketWebsiteRequest = {
+  inline def apply(Bucket: BucketName, WebsiteConfiguration: WebsiteConfiguration): PutBucketWebsiteRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], WebsiteConfiguration = WebsiteConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketWebsiteRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketWebsiteRequestMutableBuilder[Self <: PutBucketWebsiteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketWebsiteRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setWebsiteConfiguration(value: WebsiteConfiguration): Self = StObject.set(x, "WebsiteConfiguration", value.asInstanceOf[js.Any])
+    inline def setWebsiteConfiguration(value: WebsiteConfiguration): Self = StObject.set(x, "WebsiteConfiguration", value.asInstanceOf[js.Any])
   }
 }

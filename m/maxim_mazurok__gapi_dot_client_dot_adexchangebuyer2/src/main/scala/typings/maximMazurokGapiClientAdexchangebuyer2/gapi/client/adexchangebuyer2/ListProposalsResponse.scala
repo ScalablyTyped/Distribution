@@ -14,28 +14,21 @@ trait ListProposalsResponse extends StObject {
 }
 object ListProposalsResponse {
   
-  @scala.inline
-  def apply(): ListProposalsResponse = {
+  inline def apply(): ListProposalsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProposalsResponse]
   }
   
-  @scala.inline
-  implicit class ListProposalsResponseMutableBuilder[Self <: ListProposalsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProposalsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProposals(value: js.Array[Proposal]): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
+    inline def setProposals(value: js.Array[Proposal]): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalsUndefined: Self = StObject.set(x, "proposals", js.undefined)
+    inline def setProposalsUndefined: Self = StObject.set(x, "proposals", js.undefined)
     
-    @scala.inline
-    def setProposalsVarargs(value: Proposal*): Self = StObject.set(x, "proposals", js.Array(value :_*))
+    inline def setProposalsVarargs(value: Proposal*): Self = StObject.set(x, "proposals", js.Array(value :_*))
   }
 }

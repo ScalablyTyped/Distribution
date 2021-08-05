@@ -15,19 +15,15 @@ trait SensorDataThresholdTriggerDetails extends StObject {
 }
 object SensorDataThresholdTriggerDetails {
   
-  @scala.inline
-  def apply(deviceId: String, sensorType: SensorType): SensorDataThresholdTriggerDetails = {
+  inline def apply(deviceId: String, sensorType: SensorType): SensorDataThresholdTriggerDetails = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], sensorType = sensorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensorDataThresholdTriggerDetails]
   }
   
-  @scala.inline
-  implicit class SensorDataThresholdTriggerDetailsMutableBuilder[Self <: SensorDataThresholdTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SensorDataThresholdTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensorType(value: SensorType): Self = StObject.set(x, "sensorType", value.asInstanceOf[js.Any])
+    inline def setSensorType(value: SensorType): Self = StObject.set(x, "sensorType", value.asInstanceOf[js.Any])
   }
 }

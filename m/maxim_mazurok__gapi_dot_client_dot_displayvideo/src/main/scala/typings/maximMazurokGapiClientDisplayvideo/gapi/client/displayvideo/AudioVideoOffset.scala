@@ -14,25 +14,19 @@ trait AudioVideoOffset extends StObject {
 }
 object AudioVideoOffset {
   
-  @scala.inline
-  def apply(): AudioVideoOffset = {
+  inline def apply(): AudioVideoOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioVideoOffset]
   }
   
-  @scala.inline
-  implicit class AudioVideoOffsetMutableBuilder[Self <: AudioVideoOffset] (val x: Self) extends AnyVal {
+  extension [Self <: AudioVideoOffset](x: Self) {
     
-    @scala.inline
-    def setPercentage(value: String): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: String): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

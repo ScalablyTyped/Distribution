@@ -40,8 +40,7 @@ object queueresultMod {
         }
         object QueueProperties {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             DeadLetteringOnMessageExpiration: String,
             DefaultMessageTimeToLive: String,
             DuplicateDetectionHistoryTimeWindow: String,
@@ -59,44 +58,31 @@ object queueresultMod {
             __obj.asInstanceOf[QueueProperties]
           }
           
-          @scala.inline
-          implicit class QueuePropertiesMutableBuilder[Self <: QueueProperties] (val x: Self) extends AnyVal {
+          extension [Self <: QueueProperties](x: Self) {
             
-            @scala.inline
-            def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+            inline def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+            inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+            inline def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
+            inline def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
+            inline def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+            inline def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMaxDeliveryCount(value: Double): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
+            inline def setMaxDeliveryCount(value: Double): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+            inline def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMessageCount(value: Double): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
+            inline def setMessageCount(value: Double): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+            inline def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+            inline def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setSizeInBytes(value: Double): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+            inline def setSizeInBytes(value: Double): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
           }
         }
         
@@ -108,20 +94,16 @@ object queueresultMod {
         }
         object QueueResult {
           
-          @scala.inline
-          def apply(parse: js.Object => js.Object | js.Array[js.Object], serialize: QueueProperties => String): QueueResult = {
+          inline def apply(parse: js.Object => js.Object | js.Array[js.Object], serialize: QueueProperties => String): QueueResult = {
             val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
             __obj.asInstanceOf[QueueResult]
           }
           
-          @scala.inline
-          implicit class QueueResultMutableBuilder[Self <: QueueResult] (val x: Self) extends AnyVal {
+          extension [Self <: QueueResult](x: Self) {
             
-            @scala.inline
-            def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+            inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSerialize(value: QueueProperties => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+            inline def setSerialize(value: QueueProperties => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
           }
         }
       }

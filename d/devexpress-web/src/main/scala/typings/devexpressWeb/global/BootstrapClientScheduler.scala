@@ -117,6 +117,5 @@ object BootstrapClientScheduler {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientScheduler]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientScheduler]
 }

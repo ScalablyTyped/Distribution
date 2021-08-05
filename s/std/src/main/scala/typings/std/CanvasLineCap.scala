@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CanvasLineCap extends StObject
 object CanvasLineCap {
   
-  @scala.inline
-  def butt: typings.std.stdStrings.butt = "butt".asInstanceOf[typings.std.stdStrings.butt]
+  inline def butt: typings.std.stdStrings.butt = "butt".asInstanceOf[typings.std.stdStrings.butt]
   
-  @scala.inline
-  def round: typings.std.stdStrings.round = "round".asInstanceOf[typings.std.stdStrings.round]
+  inline def round: typings.std.stdStrings.round = "round".asInstanceOf[typings.std.stdStrings.round]
   
-  @scala.inline
-  def square: typings.std.stdStrings.square = "square".asInstanceOf[typings.std.stdStrings.square]
+  inline def square: typings.std.stdStrings.square = "square".asInstanceOf[typings.std.stdStrings.square]
 }

@@ -31,38 +31,28 @@ object typesPartMod {
   }
   object Part {
     
-    @scala.inline
-    def apply(): Part = {
+    inline def apply(): Part = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Part]
     }
     
-    @scala.inline
-    implicit class PartMutableBuilder[Self <: Part] (val x: Self) extends AnyVal {
+    extension [Self <: Part](x: Self) {
       
-      @scala.inline
-      def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+      inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+      inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
       
-      @scala.inline
-      def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
-      @scala.inline
-      def setPartNumber(value: Double): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
+      inline def setPartNumber(value: Double): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
+      inline def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     }
   }
   
@@ -78,20 +68,16 @@ object typesPartMod {
   }
   object UnmarshalledPart {
     
-    @scala.inline
-    def apply(): UnmarshalledPart = {
+    inline def apply(): UnmarshalledPart = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledPart]
     }
     
-    @scala.inline
-    implicit class UnmarshalledPartMutableBuilder[Self <: UnmarshalledPart] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledPart](x: Self) {
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     }
   }
 }

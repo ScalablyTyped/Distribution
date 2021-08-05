@@ -14,25 +14,19 @@ trait HouseNumber extends StObject {
 }
 object HouseNumber {
   
-  @scala.inline
-  def apply(City: Double, HouseNumber: Double, Street: js.Array[Double]): HouseNumber = {
+  inline def apply(City: Double, HouseNumber: Double, Street: js.Array[Double]): HouseNumber = {
     val __obj = js.Dynamic.literal(City = City.asInstanceOf[js.Any], HouseNumber = HouseNumber.asInstanceOf[js.Any], Street = Street.asInstanceOf[js.Any])
     __obj.asInstanceOf[HouseNumber]
   }
   
-  @scala.inline
-  implicit class HouseNumberMutableBuilder[Self <: HouseNumber] (val x: Self) extends AnyVal {
+  extension [Self <: HouseNumber](x: Self) {
     
-    @scala.inline
-    def setCity(value: Double): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+    inline def setCity(value: Double): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHouseNumber(value: Double): Self = StObject.set(x, "HouseNumber", value.asInstanceOf[js.Any])
+    inline def setHouseNumber(value: Double): Self = StObject.set(x, "HouseNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet(value: js.Array[Double]): Self = StObject.set(x, "Street", value.asInstanceOf[js.Any])
+    inline def setStreet(value: js.Array[Double]): Self = StObject.set(x, "Street", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetVarargs(value: Double*): Self = StObject.set(x, "Street", js.Array(value :_*))
+    inline def setStreetVarargs(value: Double*): Self = StObject.set(x, "Street", js.Array(value :_*))
   }
 }

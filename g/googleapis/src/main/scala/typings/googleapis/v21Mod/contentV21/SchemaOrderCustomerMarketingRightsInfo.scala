@@ -28,31 +28,23 @@ trait SchemaOrderCustomerMarketingRightsInfo extends StObject {
 }
 object SchemaOrderCustomerMarketingRightsInfo {
   
-  @scala.inline
-  def apply(): SchemaOrderCustomerMarketingRightsInfo = {
+  inline def apply(): SchemaOrderCustomerMarketingRightsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderCustomerMarketingRightsInfo]
   }
   
-  @scala.inline
-  implicit class SchemaOrderCustomerMarketingRightsInfoMutableBuilder[Self <: SchemaOrderCustomerMarketingRightsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderCustomerMarketingRightsInfo](x: Self) {
     
-    @scala.inline
-    def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
+    inline def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitMarketingPreferenceUndefined: Self = StObject.set(x, "explicitMarketingPreference", js.undefined)
+    inline def setExplicitMarketingPreferenceUndefined: Self = StObject.set(x, "explicitMarketingPreference", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setMarketingEmailAddress(value: String): Self = StObject.set(x, "marketingEmailAddress", value.asInstanceOf[js.Any])
+    inline def setMarketingEmailAddress(value: String): Self = StObject.set(x, "marketingEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketingEmailAddressUndefined: Self = StObject.set(x, "marketingEmailAddress", js.undefined)
+    inline def setMarketingEmailAddressUndefined: Self = StObject.set(x, "marketingEmailAddress", js.undefined)
   }
 }

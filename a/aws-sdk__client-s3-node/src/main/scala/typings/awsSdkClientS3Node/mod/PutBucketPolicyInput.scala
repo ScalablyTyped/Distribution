@@ -9,8 +9,7 @@ trait PutBucketPolicyInput
      with typings.awsSdkClientS3Node.typesPutBucketPolicyInputMod.PutBucketPolicyInput
 object PutBucketPolicyInput {
   
-  @scala.inline
-  def apply(Bucket: String, Policy: String): PutBucketPolicyInput = {
+  inline def apply(Bucket: String, Policy: String): PutBucketPolicyInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketPolicyInput]
   }

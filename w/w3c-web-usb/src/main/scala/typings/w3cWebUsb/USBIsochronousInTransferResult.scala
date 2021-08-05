@@ -13,25 +13,19 @@ trait USBIsochronousInTransferResult extends StObject {
 }
 object USBIsochronousInTransferResult {
   
-  @scala.inline
-  def apply(packets: js.Array[USBIsochronousInTransferPacket]): USBIsochronousInTransferResult = {
+  inline def apply(packets: js.Array[USBIsochronousInTransferPacket]): USBIsochronousInTransferResult = {
     val __obj = js.Dynamic.literal(packets = packets.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBIsochronousInTransferResult]
   }
   
-  @scala.inline
-  implicit class USBIsochronousInTransferResultMutableBuilder[Self <: USBIsochronousInTransferResult] (val x: Self) extends AnyVal {
+  extension [Self <: USBIsochronousInTransferResult](x: Self) {
     
-    @scala.inline
-    def setData(value: DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setPackets(value: js.Array[USBIsochronousInTransferPacket]): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
+    inline def setPackets(value: js.Array[USBIsochronousInTransferPacket]): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketsVarargs(value: USBIsochronousInTransferPacket*): Self = StObject.set(x, "packets", js.Array(value :_*))
+    inline def setPacketsVarargs(value: USBIsochronousInTransferPacket*): Self = StObject.set(x, "packets", js.Array(value :_*))
   }
 }

@@ -33,31 +33,23 @@ trait IgPivotViewDataSelectorOptions
 }
 object IgPivotViewDataSelectorOptions {
   
-  @scala.inline
-  def apply(): IgPivotViewDataSelectorOptions = {
+  inline def apply(): IgPivotViewDataSelectorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotViewDataSelectorOptions]
   }
   
-  @scala.inline
-  implicit class IgPivotViewDataSelectorOptionsMutableBuilder[Self <: IgPivotViewDataSelectorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewDataSelectorOptions](x: Self) {
     
-    @scala.inline
-    def setCustomMoveValidation(value: js.Function): Self = StObject.set(x, "customMoveValidation", value.asInstanceOf[js.Any])
+    inline def setCustomMoveValidation(value: js.Function): Self = StObject.set(x, "customMoveValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMoveValidationUndefined: Self = StObject.set(x, "customMoveValidation", js.undefined)
+    inline def setCustomMoveValidationUndefined: Self = StObject.set(x, "customMoveValidation", js.undefined)
     
-    @scala.inline
-    def setDragAndDropSettings(value: IgPivotViewDataSelectorOptionsDragAndDropSettings): Self = StObject.set(x, "dragAndDropSettings", value.asInstanceOf[js.Any])
+    inline def setDragAndDropSettings(value: IgPivotViewDataSelectorOptionsDragAndDropSettings): Self = StObject.set(x, "dragAndDropSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragAndDropSettingsUndefined: Self = StObject.set(x, "dragAndDropSettings", js.undefined)
+    inline def setDragAndDropSettingsUndefined: Self = StObject.set(x, "dragAndDropSettings", js.undefined)
     
-    @scala.inline
-    def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
+    inline def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
+    inline def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
   }
 }

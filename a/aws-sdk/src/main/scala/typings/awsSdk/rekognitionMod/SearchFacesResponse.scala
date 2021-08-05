@@ -23,34 +23,25 @@ trait SearchFacesResponse extends StObject {
 }
 object SearchFacesResponse {
   
-  @scala.inline
-  def apply(): SearchFacesResponse = {
+  inline def apply(): SearchFacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchFacesResponse]
   }
   
-  @scala.inline
-  implicit class SearchFacesResponseMutableBuilder[Self <: SearchFacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFacesResponse](x: Self) {
     
-    @scala.inline
-    def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
+    inline def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
+    inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    @scala.inline
-    def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
+    inline def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
     
-    @scala.inline
-    def setSearchedFaceId(value: FaceId): Self = StObject.set(x, "SearchedFaceId", value.asInstanceOf[js.Any])
+    inline def setSearchedFaceId(value: FaceId): Self = StObject.set(x, "SearchedFaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchedFaceIdUndefined: Self = StObject.set(x, "SearchedFaceId", js.undefined)
+    inline def setSearchedFaceIdUndefined: Self = StObject.set(x, "SearchedFaceId", js.undefined)
   }
 }

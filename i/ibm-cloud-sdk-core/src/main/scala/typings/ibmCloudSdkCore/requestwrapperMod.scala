@@ -10,9 +10,7 @@ object requestwrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatError(axiosError: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(axiosError.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def formatError(axiosError: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(axiosError.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def sendRequest(parameters: js.Any, _callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(parameters.asInstanceOf[js.Any], _callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(parameters: js.Any, _callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(parameters.asInstanceOf[js.Any], _callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

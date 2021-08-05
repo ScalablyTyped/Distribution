@@ -19,16 +19,12 @@ object SchemaAttribute {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def EXTENSIBLE: `4` = 4.asInstanceOf[`4`]
+    inline def EXTENSIBLE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def LOCALIZED: `2` = 2.asInstanceOf[`2`]
+    inline def LOCALIZED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MASK: `255` = 255.asInstanceOf[`255`]
+    inline def MASK: `255` = 255.asInstanceOf[`255`]
     
-    @scala.inline
-    def REQUIRED: `1` = 1.asInstanceOf[`1`]
+    inline def REQUIRED: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -10,10 +10,7 @@ object deleteCookiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Promise[js.Array[Unit] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Array[Unit] | Unit]]
-  @scala.inline
-  def default(names: String): js.Promise[js.Array[Unit] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit] | Unit]]
-  @scala.inline
-  def default(names: js.Array[String]): js.Promise[js.Array[Unit] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit] | Unit]]
+  inline def default(): js.Promise[js.Array[Unit] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Array[Unit] | Unit]]
+  inline def default(names: String): js.Promise[js.Array[Unit] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit] | Unit]]
+  inline def default(names: js.Array[String]): js.Promise[js.Array[Unit] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit] | Unit]]
 }

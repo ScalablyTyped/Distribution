@@ -40,8 +40,7 @@ trait ElementInput extends StObject {
 }
 object ElementInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addElement: ElementComponent => Unit,
     attach: Element => Unit,
     detach: () => Unit,
@@ -51,19 +50,14 @@ object ElementInput {
     __obj.asInstanceOf[ElementInput]
   }
   
-  @scala.inline
-  implicit class ElementInputMutableBuilder[Self <: ElementInput] (val x: Self) extends AnyVal {
+  extension [Self <: ElementInput](x: Self) {
     
-    @scala.inline
-    def setAddElement(value: ElementComponent => Unit): Self = StObject.set(x, "addElement", js.Any.fromFunction1(value))
+    inline def setAddElement(value: ElementComponent => Unit): Self = StObject.set(x, "addElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttach(value: Element => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+    inline def setAttach(value: Element => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveElement(value: ElementComponent => Unit): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
+    inline def setRemoveElement(value: ElementComponent => Unit): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
   }
 }

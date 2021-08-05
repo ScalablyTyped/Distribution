@@ -24,19 +24,15 @@ trait ChangeTableCellPreferredWidthCommand
 }
 object ChangeTableCellPreferredWidthCommand {
   
-  @scala.inline
-  def apply(execute: TableWidthUnit => Boolean, getState: () => CommandState[TableWidthUnit]): ChangeTableCellPreferredWidthCommand = {
+  inline def apply(execute: TableWidthUnit => Boolean, getState: () => CommandState[TableWidthUnit]): ChangeTableCellPreferredWidthCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTableCellPreferredWidthCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableCellPreferredWidthCommandMutableBuilder[Self <: ChangeTableCellPreferredWidthCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableCellPreferredWidthCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TableWidthUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TableWidthUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableWidthUnit]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableWidthUnit]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

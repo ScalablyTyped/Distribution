@@ -20,8 +20,7 @@ trait OldCircularArc
 }
 object OldCircularArc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: js.Tuple4[
       Position, 
       // End point: x, y, <z>, <m>
@@ -36,11 +35,9 @@ object OldCircularArc {
     __obj.asInstanceOf[OldCircularArc]
   }
   
-  @scala.inline
-  implicit class OldCircularArcMutableBuilder[Self <: OldCircularArc] (val x: Self) extends AnyVal {
+  extension [Self <: OldCircularArc](x: Self) {
     
-    @scala.inline
-    def setA(
+    inline def setA(
       value: js.Tuple4[
           Position, 
           // End point: x, y, <z>, <m>

@@ -17,37 +17,27 @@ trait ClientTokenRequest extends StObject {
 }
 object ClientTokenRequest {
   
-  @scala.inline
-  def apply(): ClientTokenRequest = {
+  inline def apply(): ClientTokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientTokenRequest]
   }
   
-  @scala.inline
-  implicit class ClientTokenRequestMutableBuilder[Self <: ClientTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClientTokenRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setMerchantAccountId(value: String): Self = StObject.set(x, "merchantAccountId", value.asInstanceOf[js.Any])
+    inline def setMerchantAccountId(value: String): Self = StObject.set(x, "merchantAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantAccountIdUndefined: Self = StObject.set(x, "merchantAccountId", js.undefined)
+    inline def setMerchantAccountIdUndefined: Self = StObject.set(x, "merchantAccountId", js.undefined)
     
-    @scala.inline
-    def setOptions(value: FailOnDuplicatePaymentMethod): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FailOnDuplicatePaymentMethod): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

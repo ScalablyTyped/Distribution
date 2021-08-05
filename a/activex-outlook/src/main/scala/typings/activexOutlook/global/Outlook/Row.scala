@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Row")
 @js.native
-class Row protected ()
+/* private */ class Row ()
   extends StObject
      with typings.activexOutlook.Outlook.Row {
   
@@ -30,7 +30,7 @@ class Row protected ()
   /* CompleteClass */
   override def LocalTimeToUTC(Index: js.Any): VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Row_typekey")
   var OutlookDotRow_typekey: typings.activexOutlook.Outlook.Row = js.native
   

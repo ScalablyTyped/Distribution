@@ -10,11 +10,9 @@ object htmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createWriter(writer: js.Any): AsyncStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncStream]
+  inline def createWriter(writer: js.Any): AsyncStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncStream]
   
-  @scala.inline
-  def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
+  inline def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
   
   type AsyncStream = typings.marko.asyncStreamMod.AsyncStream
   

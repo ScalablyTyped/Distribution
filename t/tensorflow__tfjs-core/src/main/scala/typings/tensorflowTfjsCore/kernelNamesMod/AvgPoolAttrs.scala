@@ -21,8 +21,7 @@ trait AvgPoolAttrs extends StObject {
 }
 object AvgPoolAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterSize: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     strides: (js.Tuple2[Double, Double]) | Double
@@ -31,22 +30,16 @@ object AvgPoolAttrs {
     __obj.asInstanceOf[AvgPoolAttrs]
   }
   
-  @scala.inline
-  implicit class AvgPoolAttrsMutableBuilder[Self <: AvgPoolAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AvgPoolAttrs](x: Self) {
     
-    @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
+    inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
+    inline def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
     
-    @scala.inline
-    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
+    inline def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

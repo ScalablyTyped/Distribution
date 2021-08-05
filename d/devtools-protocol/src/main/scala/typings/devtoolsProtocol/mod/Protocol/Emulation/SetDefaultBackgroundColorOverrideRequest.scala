@@ -15,19 +15,15 @@ trait SetDefaultBackgroundColorOverrideRequest extends StObject {
 }
 object SetDefaultBackgroundColorOverrideRequest {
   
-  @scala.inline
-  def apply(): SetDefaultBackgroundColorOverrideRequest = {
+  inline def apply(): SetDefaultBackgroundColorOverrideRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetDefaultBackgroundColorOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetDefaultBackgroundColorOverrideRequestMutableBuilder[Self <: SetDefaultBackgroundColorOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDefaultBackgroundColorOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

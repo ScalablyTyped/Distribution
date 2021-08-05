@@ -19,18 +19,14 @@ trait NotePrintMode extends StObject
 object NotePrintMode {
   
   /** Notes are collected at the end of the document. */
-  @scala.inline
-  def DOC_END: `2` = 2.asInstanceOf[`2`]
+  inline def DOC_END: `2` = 2.asInstanceOf[`2`]
   
   /** Notes are not printed. */
-  @scala.inline
-  def NOT: `0` = 0.asInstanceOf[`0`]
+  inline def NOT: `0` = 0.asInstanceOf[`0`]
   
   /** Only notes are printed. */
-  @scala.inline
-  def ONLY: `1` = 1.asInstanceOf[`1`]
+  inline def ONLY: `1` = 1.asInstanceOf[`1`]
   
   /** Notes are collected at the end of a page and printed on an inserted page. */
-  @scala.inline
-  def PAGE_END: `3` = 3.asInstanceOf[`3`]
+  inline def PAGE_END: `3` = 3.asInstanceOf[`3`]
 }

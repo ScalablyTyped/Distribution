@@ -18,19 +18,15 @@ trait DeleteChapCredentialsInput extends StObject {
 }
 object DeleteChapCredentialsInput {
   
-  @scala.inline
-  def apply(InitiatorName: IqnName, TargetARN: TargetARN): DeleteChapCredentialsInput = {
+  inline def apply(InitiatorName: IqnName, TargetARN: TargetARN): DeleteChapCredentialsInput = {
     val __obj = js.Dynamic.literal(InitiatorName = InitiatorName.asInstanceOf[js.Any], TargetARN = TargetARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChapCredentialsInput]
   }
   
-  @scala.inline
-  implicit class DeleteChapCredentialsInputMutableBuilder[Self <: DeleteChapCredentialsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteChapCredentialsInput](x: Self) {
     
-    @scala.inline
-    def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
+    inline def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
   }
 }

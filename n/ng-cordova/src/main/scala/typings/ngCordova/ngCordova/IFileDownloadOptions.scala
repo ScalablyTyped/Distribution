@@ -15,25 +15,19 @@ trait IFileDownloadOptions
 }
 object IFileDownloadOptions {
   
-  @scala.inline
-  def apply(): IFileDownloadOptions = {
+  inline def apply(): IFileDownloadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileDownloadOptions]
   }
   
-  @scala.inline
-  implicit class IFileDownloadOptionsMutableBuilder[Self <: IFileDownloadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFileDownloadOptions](x: Self) {
     
-    @scala.inline
-    def setEncodeURI(value: Boolean): Self = StObject.set(x, "encodeURI", value.asInstanceOf[js.Any])
+    inline def setEncodeURI(value: Boolean): Self = StObject.set(x, "encodeURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeURIUndefined: Self = StObject.set(x, "encodeURI", js.undefined)
+    inline def setEncodeURIUndefined: Self = StObject.set(x, "encodeURI", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

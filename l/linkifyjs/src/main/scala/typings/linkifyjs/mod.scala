@@ -21,18 +21,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def find(str: String): js.Array[FindResultHash] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[FindResultHash]]
-  @scala.inline
-  def find(str: String, `type`: LinkEntityType): js.Array[FindResultHash] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(str.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[FindResultHash]]
+  inline def find(str: String): js.Array[FindResultHash] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[FindResultHash]]
+  inline def find(str: String, `type`: LinkEntityType): js.Array[FindResultHash] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(str.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[FindResultHash]]
   
-  @scala.inline
-  def test(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def test(str: String, `type`: LinkEntityType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def test(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def test(str: String, `type`: LinkEntityType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def tokenize(str: String): js.Array[VArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[VArray]]
+  inline def tokenize(str: String): js.Array[VArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[VArray]]
   
   trait FindResultHash extends StObject {
     
@@ -53,24 +48,19 @@ object mod {
   }
   object FindResultHash {
     
-    @scala.inline
-    def apply(href: String, `type`: LinkEntityType, value: String): FindResultHash = {
+    inline def apply(href: String, `type`: LinkEntityType, value: String): FindResultHash = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindResultHash]
     }
     
-    @scala.inline
-    implicit class FindResultHashMutableBuilder[Self <: FindResultHash] (val x: Self) extends AnyVal {
+    extension [Self <: FindResultHash](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: LinkEntityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: LinkEntityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,17 +73,13 @@ object mod {
   trait LinkEntityType extends StObject
   object LinkEntityType {
     
-    @scala.inline
-    def email: typings.linkifyjs.linkifyjsStrings.email = "email".asInstanceOf[typings.linkifyjs.linkifyjsStrings.email]
+    inline def email: typings.linkifyjs.linkifyjsStrings.email = "email".asInstanceOf[typings.linkifyjs.linkifyjsStrings.email]
     
-    @scala.inline
-    def hashtag: typings.linkifyjs.linkifyjsStrings.hashtag = "hashtag".asInstanceOf[typings.linkifyjs.linkifyjsStrings.hashtag]
+    inline def hashtag: typings.linkifyjs.linkifyjsStrings.hashtag = "hashtag".asInstanceOf[typings.linkifyjs.linkifyjsStrings.hashtag]
     
-    @scala.inline
-    def mention: typings.linkifyjs.linkifyjsStrings.mention = "mention".asInstanceOf[typings.linkifyjs.linkifyjsStrings.mention]
+    inline def mention: typings.linkifyjs.linkifyjsStrings.mention = "mention".asInstanceOf[typings.linkifyjs.linkifyjsStrings.mention]
     
-    @scala.inline
-    def url: typings.linkifyjs.linkifyjsStrings.url = "url".asInstanceOf[typings.linkifyjs.linkifyjsStrings.url]
+    inline def url: typings.linkifyjs.linkifyjsStrings.url = "url".asInstanceOf[typings.linkifyjs.linkifyjsStrings.url]
   }
   
   trait Options extends StObject {
@@ -221,115 +207,84 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]])
       ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesFunction2(value: (/* href */ String, /* type */ LinkEntityType) => Record[String, String]): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
+      inline def setAttributesFunction2(value: (/* href */ String, /* type */ LinkEntityType) => Record[String, String]): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAttributesNull: Self = StObject.set(x, "attributes", null)
+      inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClassName(
+      inline def setClassName(
         value: String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String])
       ): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
+      inline def setClassNameFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultProtocol(value: http | https | ftp | ftps | String): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
+      inline def setDefaultProtocol(value: http | https | ftp | ftps | String): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultProtocolUndefined: Self = StObject.set(x, "defaultProtocol", js.undefined)
+      inline def setDefaultProtocolUndefined: Self = StObject.set(x, "defaultProtocol", js.undefined)
       
-      @scala.inline
-      def setFormat(
+      inline def setFormat(
         value: (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail
       ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatFunction2(value: (/* value */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormatFunction2(value: (/* value */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatHref(
+      inline def setFormatHref(
         value: (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail
       ): Self = StObject.set(x, "formatHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatHrefFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "formatHref", js.Any.fromFunction2(value))
+      inline def setFormatHrefFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "formatHref", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatHrefNull: Self = StObject.set(x, "formatHref", null)
+      inline def setFormatHrefNull: Self = StObject.set(x, "formatHref", null)
       
-      @scala.inline
-      def setFormatHrefUndefined: Self = StObject.set(x, "formatHref", js.undefined)
+      inline def setFormatHrefUndefined: Self = StObject.set(x, "formatHref", js.undefined)
       
-      @scala.inline
-      def setFormatNull: Self = StObject.set(x, "format", null)
+      inline def setFormatNull: Self = StObject.set(x, "format", null)
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setNl2br(value: Boolean): Self = StObject.set(x, "nl2br", value.asInstanceOf[js.Any])
+      inline def setNl2br(value: Boolean): Self = StObject.set(x, "nl2br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNl2brUndefined: Self = StObject.set(x, "nl2br", js.undefined)
+      inline def setNl2brUndefined: Self = StObject.set(x, "nl2br", js.undefined)
       
-      @scala.inline
-      def setTagName(
+      inline def setTagName(
         value: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "tagName", js.Any.fromFunction2(value))
+      inline def setTagNameFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "tagName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
-      @scala.inline
-      def setTarget(
+      inline def setTarget(
         value: String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyMention
       ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "target", js.Any.fromFunction2(value))
+      inline def setTargetFunction2(value: (/* href */ String, /* type */ LinkEntityType) => String): Self = StObject.set(x, "target", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setValidate(
+      inline def setValidate(
         value: Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyUrl
       ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFunction2(value: (/* href */ String, /* type */ LinkEntityType) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidateFunction2(value: (/* href */ String, /* type */ LinkEntityType) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidateNull: Self = StObject.set(x, "validate", null)
+      inline def setValidateNull: Self = StObject.set(x, "validate", null)
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
 }

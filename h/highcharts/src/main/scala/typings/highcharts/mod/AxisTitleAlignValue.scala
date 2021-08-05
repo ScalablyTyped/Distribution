@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisTitleAlignValue extends StObject
 object AxisTitleAlignValue {
   
-  @scala.inline
-  def high: typings.highcharts.highchartsStrings.high = "high".asInstanceOf[typings.highcharts.highchartsStrings.high]
+  inline def high: typings.highcharts.highchartsStrings.high = "high".asInstanceOf[typings.highcharts.highchartsStrings.high]
   
-  @scala.inline
-  def low: typings.highcharts.highchartsStrings.low = "low".asInstanceOf[typings.highcharts.highchartsStrings.low]
+  inline def low: typings.highcharts.highchartsStrings.low = "low".asInstanceOf[typings.highcharts.highchartsStrings.low]
   
-  @scala.inline
-  def middle: typings.highcharts.highchartsStrings.middle = "middle".asInstanceOf[typings.highcharts.highchartsStrings.middle]
+  inline def middle: typings.highcharts.highchartsStrings.middle = "middle".asInstanceOf[typings.highcharts.highchartsStrings.middle]
 }

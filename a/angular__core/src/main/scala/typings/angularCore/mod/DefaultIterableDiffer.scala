@@ -13,35 +13,35 @@ class DefaultIterableDiffer[V] ()
      with IterableChanges[V] {
   def this(trackByFn: TrackByFunction[V]) = this()
   
-  var _addToRemovals: js.Any = js.native
+  /* private */ var _addToRemovals: js.Any = js.native
   
-  var _additionsHead: js.Any = js.native
+  /* private */ var _additionsHead: js.Any = js.native
   
-  var _additionsTail: js.Any = js.native
+  /* private */ var _additionsTail: js.Any = js.native
   
-  var _identityChangesHead: js.Any = js.native
+  /* private */ var _identityChangesHead: js.Any = js.native
   
-  var _identityChangesTail: js.Any = js.native
+  /* private */ var _identityChangesTail: js.Any = js.native
   
-  var _itHead: js.Any = js.native
+  /* private */ var _itHead: js.Any = js.native
   
-  var _itTail: js.Any = js.native
+  /* private */ var _itTail: js.Any = js.native
   
-  var _linkedRecords: js.Any = js.native
+  /* private */ var _linkedRecords: js.Any = js.native
   
-  var _movesHead: js.Any = js.native
+  /* private */ var _movesHead: js.Any = js.native
   
-  var _movesTail: js.Any = js.native
+  /* private */ var _movesTail: js.Any = js.native
   
-  var _previousItHead: js.Any = js.native
+  /* private */ var _previousItHead: js.Any = js.native
   
-  var _removalsHead: js.Any = js.native
+  /* private */ var _removalsHead: js.Any = js.native
   
-  var _removalsTail: js.Any = js.native
+  /* private */ var _removalsTail: js.Any = js.native
   
-  var _trackByFn: js.Any = js.native
+  /* private */ var _trackByFn: js.Any = js.native
   
-  var _unlinkedRecords: js.Any = js.native
+  /* private */ var _unlinkedRecords: js.Any = js.native
   
   def check(collection: NgIterable[V]): Boolean = js.native
   

@@ -45,41 +45,30 @@ object typesWebsiteConfigurationMod {
   }
   object UnmarshalledWebsiteConfiguration {
     
-    @scala.inline
-    def apply(): UnmarshalledWebsiteConfiguration = {
+    inline def apply(): UnmarshalledWebsiteConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledWebsiteConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledWebsiteConfigurationMutableBuilder[Self <: UnmarshalledWebsiteConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledWebsiteConfiguration](x: Self) {
       
-      @scala.inline
-      def setErrorDocument(value: UnmarshalledErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
+      inline def setErrorDocument(value: UnmarshalledErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDocumentUndefined: Self = StObject.set(x, "ErrorDocument", js.undefined)
+      inline def setErrorDocumentUndefined: Self = StObject.set(x, "ErrorDocument", js.undefined)
       
-      @scala.inline
-      def setIndexDocument(value: UnmarshalledIndexDocument): Self = StObject.set(x, "IndexDocument", value.asInstanceOf[js.Any])
+      inline def setIndexDocument(value: UnmarshalledIndexDocument): Self = StObject.set(x, "IndexDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexDocumentUndefined: Self = StObject.set(x, "IndexDocument", js.undefined)
+      inline def setIndexDocumentUndefined: Self = StObject.set(x, "IndexDocument", js.undefined)
       
-      @scala.inline
-      def setRedirectAllRequestsTo(value: UnmarshalledRedirectAllRequestsTo): Self = StObject.set(x, "RedirectAllRequestsTo", value.asInstanceOf[js.Any])
+      inline def setRedirectAllRequestsTo(value: UnmarshalledRedirectAllRequestsTo): Self = StObject.set(x, "RedirectAllRequestsTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
+      inline def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
       
-      @scala.inline
-      def setRoutingRules(value: js.Array[UnmarshalledRoutingRule]): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
+      inline def setRoutingRules(value: js.Array[UnmarshalledRoutingRule]): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
+      inline def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
       
-      @scala.inline
-      def setRoutingRulesVarargs(value: UnmarshalledRoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
+      inline def setRoutingRulesVarargs(value: UnmarshalledRoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
     }
   }
   
@@ -109,41 +98,30 @@ object typesWebsiteConfigurationMod {
   }
   object WebsiteConfiguration {
     
-    @scala.inline
-    def apply(): WebsiteConfiguration = {
+    inline def apply(): WebsiteConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebsiteConfiguration]
     }
     
-    @scala.inline
-    implicit class WebsiteConfigurationMutableBuilder[Self <: WebsiteConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WebsiteConfiguration](x: Self) {
       
-      @scala.inline
-      def setErrorDocument(value: ErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
+      inline def setErrorDocument(value: ErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDocumentUndefined: Self = StObject.set(x, "ErrorDocument", js.undefined)
+      inline def setErrorDocumentUndefined: Self = StObject.set(x, "ErrorDocument", js.undefined)
       
-      @scala.inline
-      def setIndexDocument(value: IndexDocument): Self = StObject.set(x, "IndexDocument", value.asInstanceOf[js.Any])
+      inline def setIndexDocument(value: IndexDocument): Self = StObject.set(x, "IndexDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexDocumentUndefined: Self = StObject.set(x, "IndexDocument", js.undefined)
+      inline def setIndexDocumentUndefined: Self = StObject.set(x, "IndexDocument", js.undefined)
       
-      @scala.inline
-      def setRedirectAllRequestsTo(value: RedirectAllRequestsTo): Self = StObject.set(x, "RedirectAllRequestsTo", value.asInstanceOf[js.Any])
+      inline def setRedirectAllRequestsTo(value: RedirectAllRequestsTo): Self = StObject.set(x, "RedirectAllRequestsTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
+      inline def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
       
-      @scala.inline
-      def setRoutingRules(value: js.Array[RoutingRule] | Iterable[RoutingRule]): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
+      inline def setRoutingRules(value: js.Array[RoutingRule] | Iterable[RoutingRule]): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
+      inline def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
       
-      @scala.inline
-      def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
+      inline def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
     }
   }
 }

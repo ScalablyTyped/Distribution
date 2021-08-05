@@ -17,31 +17,23 @@ trait ColorInfo extends StObject {
 }
 object ColorInfo {
   
-  @scala.inline
-  def apply(): ColorInfo = {
+  inline def apply(): ColorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorInfo]
   }
   
-  @scala.inline
-  implicit class ColorInfoMutableBuilder[Self <: ColorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ColorInfo](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setPixelFraction(value: Double): Self = StObject.set(x, "pixelFraction", value.asInstanceOf[js.Any])
+    inline def setPixelFraction(value: Double): Self = StObject.set(x, "pixelFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelFractionUndefined: Self = StObject.set(x, "pixelFraction", js.undefined)
+    inline def setPixelFractionUndefined: Self = StObject.set(x, "pixelFraction", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

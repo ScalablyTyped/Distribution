@@ -27,34 +27,25 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p2beta1TextSegmentMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p2beta1TextSegment](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1TextFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1TextFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p2beta1TextFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p2beta1TextFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setSegment(value: SchemaGoogleCloudVideointelligenceV1p2beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: SchemaGoogleCloudVideointelligenceV1p2beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

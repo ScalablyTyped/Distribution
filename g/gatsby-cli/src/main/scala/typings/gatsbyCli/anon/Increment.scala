@@ -12,19 +12,15 @@ trait Increment extends StObject {
 }
 object Increment {
   
-  @scala.inline
-  def apply(id: String, increment: Double): Increment = {
+  inline def apply(id: String, increment: Double): Increment = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], increment = increment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Increment]
   }
   
-  @scala.inline
-  implicit class IncrementMutableBuilder[Self <: Increment] (val x: Self) extends AnyVal {
+  extension [Self <: Increment](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
   }
 }

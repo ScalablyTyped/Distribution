@@ -18,28 +18,21 @@ trait GetOrganizationConfigRuleDetailedStatusResponse extends StObject {
 }
 object GetOrganizationConfigRuleDetailedStatusResponse {
   
-  @scala.inline
-  def apply(): GetOrganizationConfigRuleDetailedStatusResponse = {
+  inline def apply(): GetOrganizationConfigRuleDetailedStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOrganizationConfigRuleDetailedStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetOrganizationConfigRuleDetailedStatusResponseMutableBuilder[Self <: GetOrganizationConfigRuleDetailedStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOrganizationConfigRuleDetailedStatusResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleDetailedStatus(value: OrganizationConfigRuleDetailedStatus): Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRuleDetailedStatus(value: OrganizationConfigRuleDetailedStatus): Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConfigRuleDetailedStatusUndefined: Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.undefined)
+    inline def setOrganizationConfigRuleDetailedStatusUndefined: Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleDetailedStatusVarargs(value: MemberAccountStatus*): Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.Array(value :_*))
+    inline def setOrganizationConfigRuleDetailedStatusVarargs(value: MemberAccountStatus*): Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.Array(value :_*))
   }
 }

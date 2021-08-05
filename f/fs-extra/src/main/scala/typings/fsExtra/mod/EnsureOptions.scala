@@ -10,19 +10,15 @@ trait EnsureOptions extends StObject {
 }
 object EnsureOptions {
   
-  @scala.inline
-  def apply(): EnsureOptions = {
+  inline def apply(): EnsureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnsureOptions]
   }
   
-  @scala.inline
-  implicit class EnsureOptionsMutableBuilder[Self <: EnsureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnsureOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

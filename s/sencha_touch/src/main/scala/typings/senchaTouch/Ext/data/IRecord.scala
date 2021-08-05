@@ -316,397 +316,267 @@ trait IRecord
 }
 object IRecord {
   
-  @scala.inline
-  def apply(): IRecord = {
+  inline def apply(): IRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRecord]
   }
   
-  @scala.inline
-  implicit class IRecordMutableBuilder[Self <: IRecord] (val x: Self) extends AnyVal {
+  extension [Self <: IRecord](x: Self) {
     
-    @scala.inline
-    def setAssociations(value: Array): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: Array): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    @scala.inline
-    def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
+    inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeginEditUndefined: Self = StObject.set(x, "beginEdit", js.undefined)
+    inline def setBeginEditUndefined: Self = StObject.set(x, "beginEdit", js.undefined)
     
-    @scala.inline
-    def setBelongsTo(value: js.Any): Self = StObject.set(x, "belongsTo", value.asInstanceOf[js.Any])
+    inline def setBelongsTo(value: js.Any): Self = StObject.set(x, "belongsTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBelongsToUndefined: Self = StObject.set(x, "belongsTo", js.undefined)
+    inline def setBelongsToUndefined: Self = StObject.set(x, "belongsTo", js.undefined)
     
-    @scala.inline
-    def setCancelEdit(value: () => Unit): Self = StObject.set(x, "cancelEdit", js.Any.fromFunction0(value))
+    inline def setCancelEdit(value: () => Unit): Self = StObject.set(x, "cancelEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancelEditUndefined: Self = StObject.set(x, "cancelEdit", js.undefined)
+    inline def setCancelEditUndefined: Self = StObject.set(x, "cancelEdit", js.undefined)
     
-    @scala.inline
-    def setClientIdProperty(value: String): Self = StObject.set(x, "clientIdProperty", value.asInstanceOf[js.Any])
+    inline def setClientIdProperty(value: String): Self = StObject.set(x, "clientIdProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdPropertyUndefined: Self = StObject.set(x, "clientIdProperty", js.undefined)
+    inline def setClientIdPropertyUndefined: Self = StObject.set(x, "clientIdProperty", js.undefined)
     
-    @scala.inline
-    def setCommit(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
+    inline def setCommit(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+    inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
-    @scala.inline
-    def setCopy(value: /* id */ js.UndefOr[String] => IModel): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+    inline def setCopy(value: /* id */ js.UndefOr[String] => IModel): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+    inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
     
-    @scala.inline
-    def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+    inline def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+    inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
     
-    @scala.inline
-    def setEndEdit(value: (/* silent */ js.UndefOr[Boolean], /* modifiedFieldNames */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction2(value))
+    inline def setEndEdit(value: (/* silent */ js.UndefOr[Boolean], /* modifiedFieldNames */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndEditUndefined: Self = StObject.set(x, "endEdit", js.undefined)
+    inline def setEndEditUndefined: Self = StObject.set(x, "endEdit", js.undefined)
     
-    @scala.inline
-    def setErase(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "erase", js.Any.fromFunction2(value))
+    inline def setErase(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "erase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEraseUndefined: Self = StObject.set(x, "erase", js.undefined)
+    inline def setEraseUndefined: Self = StObject.set(x, "erase", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setGet(value: /* fieldName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* fieldName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAssociatedData(value: () => js.Any): Self = StObject.set(x, "getAssociatedData", js.Any.fromFunction0(value))
+    inline def setGetAssociatedData(value: () => js.Any): Self = StObject.set(x, "getAssociatedData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAssociatedDataUndefined: Self = StObject.set(x, "getAssociatedData", js.undefined)
+    inline def setGetAssociatedDataUndefined: Self = StObject.set(x, "getAssociatedData", js.undefined)
     
-    @scala.inline
-    def setGetAssociations(value: () => Array): Self = StObject.set(x, "getAssociations", js.Any.fromFunction0(value))
+    inline def setGetAssociations(value: () => Array): Self = StObject.set(x, "getAssociations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAssociationsUndefined: Self = StObject.set(x, "getAssociations", js.undefined)
+    inline def setGetAssociationsUndefined: Self = StObject.set(x, "getAssociations", js.undefined)
     
-    @scala.inline
-    def setGetBelongsTo(value: () => js.Any): Self = StObject.set(x, "getBelongsTo", js.Any.fromFunction0(value))
+    inline def setGetBelongsTo(value: () => js.Any): Self = StObject.set(x, "getBelongsTo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBelongsToUndefined: Self = StObject.set(x, "getBelongsTo", js.undefined)
+    inline def setGetBelongsToUndefined: Self = StObject.set(x, "getBelongsTo", js.undefined)
     
-    @scala.inline
-    def setGetChanges(value: () => js.Any): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
+    inline def setGetChanges(value: () => js.Any): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChangesUndefined: Self = StObject.set(x, "getChanges", js.undefined)
+    inline def setGetChangesUndefined: Self = StObject.set(x, "getChanges", js.undefined)
     
-    @scala.inline
-    def setGetClientIdProperty(value: () => String): Self = StObject.set(x, "getClientIdProperty", js.Any.fromFunction0(value))
+    inline def setGetClientIdProperty(value: () => String): Self = StObject.set(x, "getClientIdProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClientIdPropertyUndefined: Self = StObject.set(x, "getClientIdProperty", js.undefined)
+    inline def setGetClientIdPropertyUndefined: Self = StObject.set(x, "getClientIdProperty", js.undefined)
     
-    @scala.inline
-    def setGetData(value: /* includeAssociated */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: /* includeAssociated */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
+    inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
-    @scala.inline
-    def setGetFields(value: () => js.Any): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+    inline def setGetFields(value: () => js.Any): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
+    inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
     
-    @scala.inline
-    def setGetHasMany(value: () => js.Any): Self = StObject.set(x, "getHasMany", js.Any.fromFunction0(value))
+    inline def setGetHasMany(value: () => js.Any): Self = StObject.set(x, "getHasMany", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHasManyUndefined: Self = StObject.set(x, "getHasMany", js.undefined)
+    inline def setGetHasManyUndefined: Self = StObject.set(x, "getHasMany", js.undefined)
     
-    @scala.inline
-    def setGetHasOne(value: () => js.Any): Self = StObject.set(x, "getHasOne", js.Any.fromFunction0(value))
+    inline def setGetHasOne(value: () => js.Any): Self = StObject.set(x, "getHasOne", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHasOneUndefined: Self = StObject.set(x, "getHasOne", js.undefined)
+    inline def setGetHasOneUndefined: Self = StObject.set(x, "getHasOne", js.undefined)
     
-    @scala.inline
-    def setGetIdProperty(value: () => String): Self = StObject.set(x, "getIdProperty", js.Any.fromFunction0(value))
+    inline def setGetIdProperty(value: () => String): Self = StObject.set(x, "getIdProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIdPropertyUndefined: Self = StObject.set(x, "getIdProperty", js.undefined)
+    inline def setGetIdPropertyUndefined: Self = StObject.set(x, "getIdProperty", js.undefined)
     
-    @scala.inline
-    def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIdentifierUndefined: Self = StObject.set(x, "getIdentifier", js.undefined)
+    inline def setGetIdentifierUndefined: Self = StObject.set(x, "getIdentifier", js.undefined)
     
-    @scala.inline
-    def setGetIsErased(value: () => Unit): Self = StObject.set(x, "getIsErased", js.Any.fromFunction0(value))
+    inline def setGetIsErased(value: () => Unit): Self = StObject.set(x, "getIsErased", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsErasedUndefined: Self = StObject.set(x, "getIsErased", js.undefined)
+    inline def setGetIsErasedUndefined: Self = StObject.set(x, "getIsErased", js.undefined)
     
-    @scala.inline
-    def setGetProxy(value: () => js.Any): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => js.Any): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setGetUseCache(value: () => Boolean): Self = StObject.set(x, "getUseCache", js.Any.fromFunction0(value))
+    inline def setGetUseCache(value: () => Boolean): Self = StObject.set(x, "getUseCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseCacheUndefined: Self = StObject.set(x, "getUseCache", js.undefined)
+    inline def setGetUseCacheUndefined: Self = StObject.set(x, "getUseCache", js.undefined)
     
-    @scala.inline
-    def setGetValidations(value: () => Array): Self = StObject.set(x, "getValidations", js.Any.fromFunction0(value))
+    inline def setGetValidations(value: () => Array): Self = StObject.set(x, "getValidations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValidationsUndefined: Self = StObject.set(x, "getValidations", js.undefined)
+    inline def setGetValidationsUndefined: Self = StObject.set(x, "getValidations", js.undefined)
     
-    @scala.inline
-    def setHasMany(value: js.Any): Self = StObject.set(x, "hasMany", value.asInstanceOf[js.Any])
+    inline def setHasMany(value: js.Any): Self = StObject.set(x, "hasMany", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasManyUndefined: Self = StObject.set(x, "hasMany", js.undefined)
+    inline def setHasManyUndefined: Self = StObject.set(x, "hasMany", js.undefined)
     
-    @scala.inline
-    def setHasOne(value: js.Any): Self = StObject.set(x, "hasOne", value.asInstanceOf[js.Any])
+    inline def setHasOne(value: js.Any): Self = StObject.set(x, "hasOne", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOneUndefined: Self = StObject.set(x, "hasOne", js.undefined)
+    inline def setHasOneUndefined: Self = StObject.set(x, "hasOne", js.undefined)
     
-    @scala.inline
-    def setIdProperty(value: String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
+    inline def setIdProperty(value: String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
+    inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: js.Any): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Any): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIsModified(value: /* fieldName */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction1(value))
+    inline def setIsModified(value: /* fieldName */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
+    inline def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    @scala.inline
-    def setJoin(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
+    inline def setJoin(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+    inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    @scala.inline
-    def setModified(value: js.Any): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: js.Any): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+    inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
-    @scala.inline
-    def setPhantom(value: Boolean): Self = StObject.set(x, "phantom", value.asInstanceOf[js.Any])
+    inline def setPhantom(value: Boolean): Self = StObject.set(x, "phantom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhantomUndefined: Self = StObject.set(x, "phantom", js.undefined)
+    inline def setPhantomUndefined: Self = StObject.set(x, "phantom", js.undefined)
     
-    @scala.inline
-    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReject(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+    inline def setReject(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
+    inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
     
-    @scala.inline
-    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    @scala.inline
-    def setSave(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+    inline def setSave(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setSet(value: (/* fieldName */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (/* fieldName */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetAssociations(value: /* associations */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setAssociations", js.Any.fromFunction1(value))
+    inline def setSetAssociations(value: /* associations */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setAssociations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAssociationsUndefined: Self = StObject.set(x, "setAssociations", js.undefined)
+    inline def setSetAssociationsUndefined: Self = StObject.set(x, "setAssociations", js.undefined)
     
-    @scala.inline
-    def setSetBelongsTo(value: /* belongsTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBelongsTo", js.Any.fromFunction1(value))
+    inline def setSetBelongsTo(value: /* belongsTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBelongsTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBelongsToUndefined: Self = StObject.set(x, "setBelongsTo", js.undefined)
+    inline def setSetBelongsToUndefined: Self = StObject.set(x, "setBelongsTo", js.undefined)
     
-    @scala.inline
-    def setSetClientIdProperty(value: /* clientIdProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setClientIdProperty", js.Any.fromFunction1(value))
+    inline def setSetClientIdProperty(value: /* clientIdProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setClientIdProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClientIdPropertyUndefined: Self = StObject.set(x, "setClientIdProperty", js.undefined)
+    inline def setSetClientIdPropertyUndefined: Self = StObject.set(x, "setClientIdProperty", js.undefined)
     
-    @scala.inline
-    def setSetConvertedData(value: /* data */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "setConvertedData", js.Any.fromFunction1(value))
+    inline def setSetConvertedData(value: /* data */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "setConvertedData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetConvertedDataUndefined: Self = StObject.set(x, "setConvertedData", js.undefined)
+    inline def setSetConvertedDataUndefined: Self = StObject.set(x, "setConvertedData", js.undefined)
     
-    @scala.inline
-    def setSetData(value: /* rawData */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: /* rawData */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
+    inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     
-    @scala.inline
-    def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
+    inline def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
+    inline def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
     
-    @scala.inline
-    def setSetFields(value: /* fields */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+    inline def setSetFields(value: /* fields */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
+    inline def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
     
-    @scala.inline
-    def setSetHasMany(value: /* hasMany */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHasMany", js.Any.fromFunction1(value))
+    inline def setSetHasMany(value: /* hasMany */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHasMany", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHasManyUndefined: Self = StObject.set(x, "setHasMany", js.undefined)
+    inline def setSetHasManyUndefined: Self = StObject.set(x, "setHasMany", js.undefined)
     
-    @scala.inline
-    def setSetHasOne(value: /* hasOne */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHasOne", js.Any.fromFunction1(value))
+    inline def setSetHasOne(value: /* hasOne */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHasOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHasOneUndefined: Self = StObject.set(x, "setHasOne", js.undefined)
+    inline def setSetHasOneUndefined: Self = StObject.set(x, "setHasOne", js.undefined)
     
-    @scala.inline
-    def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIdProperty(value: /* idProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setIdProperty", js.Any.fromFunction1(value))
+    inline def setSetIdProperty(value: /* idProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setIdProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIdPropertyUndefined: Self = StObject.set(x, "setIdProperty", js.undefined)
+    inline def setSetIdPropertyUndefined: Self = StObject.set(x, "setIdProperty", js.undefined)
     
-    @scala.inline
-    def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
+    inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
     
-    @scala.inline
-    def setSetIdentifier(value: /* identifier */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIdentifier", js.Any.fromFunction1(value))
+    inline def setSetIdentifier(value: /* identifier */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIdentifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
+    inline def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
     
-    @scala.inline
-    def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
+    inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setSetUseCache(value: /* useCache */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseCache", js.Any.fromFunction1(value))
+    inline def setSetUseCache(value: /* useCache */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseCache", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseCacheUndefined: Self = StObject.set(x, "setUseCache", js.undefined)
+    inline def setSetUseCacheUndefined: Self = StObject.set(x, "setUseCache", js.undefined)
     
-    @scala.inline
-    def setSetValidations(value: /* validations */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setValidations", js.Any.fromFunction1(value))
+    inline def setSetValidations(value: /* validations */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setValidations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValidationsUndefined: Self = StObject.set(x, "setValidations", js.undefined)
+    inline def setSetValidationsUndefined: Self = StObject.set(x, "setValidations", js.undefined)
     
-    @scala.inline
-    def setStores(value: Array): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+    inline def setStores(value: Array): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
+    inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
     
-    @scala.inline
-    def setToUrl(value: () => String): Self = StObject.set(x, "toUrl", js.Any.fromFunction0(value))
+    inline def setToUrl(value: () => String): Self = StObject.set(x, "toUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToUrlUndefined: Self = StObject.set(x, "toUrl", js.undefined)
+    inline def setToUrlUndefined: Self = StObject.set(x, "toUrl", js.undefined)
     
-    @scala.inline
-    def setUnjoin(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "unjoin", js.Any.fromFunction1(value))
+    inline def setUnjoin(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "unjoin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnjoinUndefined: Self = StObject.set(x, "unjoin", js.undefined)
+    inline def setUnjoinUndefined: Self = StObject.set(x, "unjoin", js.undefined)
     
-    @scala.inline
-    def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
+    inline def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
+    inline def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
     
-    @scala.inline
-    def setValidate(value: () => IErrors): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => IErrors): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    @scala.inline
-    def setValidations(value: Array): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
+    inline def setValidations(value: Array): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
+    inline def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait InputParallelismUpdate extends StObject {
 }
 object InputParallelismUpdate {
   
-  @scala.inline
-  def apply(CountUpdate: InputParallelismCount): InputParallelismUpdate = {
+  inline def apply(CountUpdate: InputParallelismCount): InputParallelismUpdate = {
     val __obj = js.Dynamic.literal(CountUpdate = CountUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParallelismUpdate]
   }
   
-  @scala.inline
-  implicit class InputParallelismUpdateMutableBuilder[Self <: InputParallelismUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: InputParallelismUpdate](x: Self) {
     
-    @scala.inline
-    def setCountUpdate(value: InputParallelismCount): Self = StObject.set(x, "CountUpdate", value.asInstanceOf[js.Any])
+    inline def setCountUpdate(value: InputParallelismCount): Self = StObject.set(x, "CountUpdate", value.asInstanceOf[js.Any])
   }
 }

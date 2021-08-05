@@ -40,46 +40,33 @@ trait CompressVideoOption extends StObject {
 }
 object CompressVideoOption {
   
-  @scala.inline
-  def apply(bitrate: Double, fps: Double, quality: low | medium | high, resolution: Double, src: String): CompressVideoOption = {
+  inline def apply(bitrate: Double, fps: Double, quality: low | medium | high, resolution: Double, src: String): CompressVideoOption = {
     val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], fps = fps.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressVideoOption]
   }
   
-  @scala.inline
-  implicit class CompressVideoOptionMutableBuilder[Self <: CompressVideoOption] (val x: Self) extends AnyVal {
+  extension [Self <: CompressVideoOption](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: low | medium | high): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: low | medium | high): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* result */ CompressVideoSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ CompressVideoSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

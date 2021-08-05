@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit extends StObject
 object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit {
   
-  @scala.inline
-  def GRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM = "GRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM]
+  inline def GRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM = "GRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM]
   
-  @scala.inline
-  def KILOGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM = "KILOGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM]
+  inline def KILOGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM = "KILOGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM]
   
-  @scala.inline
-  def MILLIGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM = "MILLIGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM]
+  inline def MILLIGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM = "MILLIGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM]
   
-  @scala.inline
-  def OUNCE: typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE = "OUNCE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE]
+  inline def OUNCE: typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE = "OUNCE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE]
   
-  @scala.inline
-  def POUND: typings.actionsOnGoogle.actionsOnGoogleStrings.POUND = "POUND".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.POUND]
+  inline def POUND: typings.actionsOnGoogle.actionsOnGoogleStrings.POUND = "POUND".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.POUND]
   
-  @scala.inline
-  def UNIT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED = "UNIT_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED]
+  inline def UNIT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED = "UNIT_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED]
 }

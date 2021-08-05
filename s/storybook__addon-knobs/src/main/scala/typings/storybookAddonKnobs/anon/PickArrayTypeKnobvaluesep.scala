@@ -14,22 +14,17 @@ trait PickArrayTypeKnobvaluesep extends StObject {
 }
 object PickArrayTypeKnobvaluesep {
   
-  @scala.inline
-  def apply(separator: String, value: ArrayTypeKnobValue): PickArrayTypeKnobvaluesep = {
+  inline def apply(separator: String, value: ArrayTypeKnobValue): PickArrayTypeKnobvaluesep = {
     val __obj = js.Dynamic.literal(separator = separator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickArrayTypeKnobvaluesep]
   }
   
-  @scala.inline
-  implicit class PickArrayTypeKnobvaluesepMutableBuilder[Self <: PickArrayTypeKnobvaluesep] (val x: Self) extends AnyVal {
+  extension [Self <: PickArrayTypeKnobvaluesep](x: Self) {
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

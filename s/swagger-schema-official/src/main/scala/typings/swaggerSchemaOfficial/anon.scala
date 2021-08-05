@@ -20,17 +20,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(in = "header")
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setIn(value: header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,29 +41,22 @@ object anon {
   }
   object AllowEmptyValue {
     
-    @scala.inline
-    def apply(): AllowEmptyValue = {
+    inline def apply(): AllowEmptyValue = {
       val __obj = js.Dynamic.literal(in = "query")
       __obj.asInstanceOf[AllowEmptyValue]
     }
     
-    @scala.inline
-    implicit class AllowEmptyValueMutableBuilder[Self <: AllowEmptyValue] (val x: Self) extends AnyVal {
+    extension [Self <: AllowEmptyValue](x: Self) {
       
-      @scala.inline
-      def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
+      inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
+      inline def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
       
-      @scala.inline
-      def setCollectionFormat(value: ParameterCollectionFormat): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
+      inline def setCollectionFormat(value: ParameterCollectionFormat): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionFormatUndefined: Self = StObject.set(x, "collectionFormat", js.undefined)
+      inline def setCollectionFormatUndefined: Self = StObject.set(x, "collectionFormat", js.undefined)
       
-      @scala.inline
-      def setIn(value: query): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: query): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,33 +72,25 @@ object anon {
   }
   object CollectionFormat {
     
-    @scala.inline
-    def apply(`type`: ParameterType | file): CollectionFormat = {
+    inline def apply(`type`: ParameterType | file): CollectionFormat = {
       val __obj = js.Dynamic.literal(in = "formData")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionFormat]
     }
     
-    @scala.inline
-    implicit class CollectionFormatMutableBuilder[Self <: CollectionFormat] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionFormat](x: Self) {
       
-      @scala.inline
-      def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
+      inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
+      inline def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
       
-      @scala.inline
-      def setCollectionFormat(value: ParameterCollectionFormat): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
+      inline def setCollectionFormat(value: ParameterCollectionFormat): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionFormatUndefined: Self = StObject.set(x, "collectionFormat", js.undefined)
+      inline def setCollectionFormatUndefined: Self = StObject.set(x, "collectionFormat", js.undefined)
       
-      @scala.inline
-      def setIn(value: formData): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: formData): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ParameterType | file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ParameterType | file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,20 +102,16 @@ object anon {
   }
   object In {
     
-    @scala.inline
-    def apply(): In = {
+    inline def apply(): In = {
       val __obj = js.Dynamic.literal(in = "path", required = true)
       __obj.asInstanceOf[In]
     }
     
-    @scala.inline
-    implicit class InMutableBuilder[Self <: In] (val x: Self) extends AnyVal {
+    extension [Self <: In](x: Self) {
       
-      @scala.inline
-      def setIn(value: path): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: path): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: `true`): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: `true`): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     }
   }
 }

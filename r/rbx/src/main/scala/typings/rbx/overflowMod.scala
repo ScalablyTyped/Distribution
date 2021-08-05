@@ -14,10 +14,8 @@ object overflowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  @scala.inline
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/overflow", "makeValidatingTransform")
   @js.native
@@ -33,20 +31,16 @@ object overflowMod {
   }
   object OverflowHelpersProps {
     
-    @scala.inline
-    def apply(): OverflowHelpersProps = {
+    inline def apply(): OverflowHelpersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverflowHelpersProps]
     }
     
-    @scala.inline
-    implicit class OverflowHelpersPropsMutableBuilder[Self <: OverflowHelpersProps] (val x: Self) extends AnyVal {
+    extension [Self <: OverflowHelpersProps](x: Self) {
       
-      @scala.inline
-      def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
+      inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
+      inline def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
     }
   }
 }

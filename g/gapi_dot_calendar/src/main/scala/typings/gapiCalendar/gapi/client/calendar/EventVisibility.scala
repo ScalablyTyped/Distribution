@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventVisibility extends StObject
 object EventVisibility {
   
-  @scala.inline
-  def default: typings.gapiCalendar.gapiCalendarStrings.default = "default".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.default]
+  inline def default: typings.gapiCalendar.gapiCalendarStrings.default = "default".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.default]
   
-  @scala.inline
-  def confidential: typings.gapiCalendar.gapiCalendarStrings.confidential = "confidential".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.confidential]
+  inline def confidential: typings.gapiCalendar.gapiCalendarStrings.confidential = "confidential".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.confidential]
   
-  @scala.inline
-  def `private`: typings.gapiCalendar.gapiCalendarStrings.`private` = "private".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.`private`]
+  inline def `private`: typings.gapiCalendar.gapiCalendarStrings.`private` = "private".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.`private`]
   
-  @scala.inline
-  def public: typings.gapiCalendar.gapiCalendarStrings.public = "public".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.public]
+  inline def public: typings.gapiCalendar.gapiCalendarStrings.public = "public".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.public]
 }

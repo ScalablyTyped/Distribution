@@ -18,25 +18,19 @@ trait ListGatewaysResponse extends StObject {
 }
 object ListGatewaysResponse {
   
-  @scala.inline
-  def apply(gatewaySummaries: GatewaySummaries): ListGatewaysResponse = {
+  inline def apply(gatewaySummaries: GatewaySummaries): ListGatewaysResponse = {
     val __obj = js.Dynamic.literal(gatewaySummaries = gatewaySummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGatewaysResponse]
   }
   
-  @scala.inline
-  implicit class ListGatewaysResponseMutableBuilder[Self <: ListGatewaysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGatewaysResponse](x: Self) {
     
-    @scala.inline
-    def setGatewaySummaries(value: GatewaySummaries): Self = StObject.set(x, "gatewaySummaries", value.asInstanceOf[js.Any])
+    inline def setGatewaySummaries(value: GatewaySummaries): Self = StObject.set(x, "gatewaySummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewaySummariesVarargs(value: GatewaySummary*): Self = StObject.set(x, "gatewaySummaries", js.Array(value :_*))
+    inline def setGatewaySummariesVarargs(value: GatewaySummary*): Self = StObject.set(x, "gatewaySummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

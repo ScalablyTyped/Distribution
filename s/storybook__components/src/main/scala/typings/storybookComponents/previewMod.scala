@@ -36,59 +36,42 @@ object previewMod {
   }
   object PreviewProps {
     
-    @scala.inline
-    def apply(): PreviewProps = {
+    inline def apply(): PreviewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewProps]
     }
     
-    @scala.inline
-    implicit class PreviewPropsMutableBuilder[Self <: PreviewProps] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewProps](x: Self) {
       
-      @scala.inline
-      def setAdditionalActions(value: js.Array[ActionItem]): Self = StObject.set(x, "additionalActions", value.asInstanceOf[js.Any])
+      inline def setAdditionalActions(value: js.Array[ActionItem]): Self = StObject.set(x, "additionalActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalActionsUndefined: Self = StObject.set(x, "additionalActions", js.undefined)
+      inline def setAdditionalActionsUndefined: Self = StObject.set(x, "additionalActions", js.undefined)
       
-      @scala.inline
-      def setAdditionalActionsVarargs(value: ActionItem*): Self = StObject.set(x, "additionalActions", js.Array(value :_*))
+      inline def setAdditionalActionsVarargs(value: ActionItem*): Self = StObject.set(x, "additionalActions", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setIsColumn(value: Boolean): Self = StObject.set(x, "isColumn", value.asInstanceOf[js.Any])
+      inline def setIsColumn(value: Boolean): Self = StObject.set(x, "isColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsColumnUndefined: Self = StObject.set(x, "isColumn", js.undefined)
+      inline def setIsColumnUndefined: Self = StObject.set(x, "isColumn", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setWithSource(value: SourceProps): Self = StObject.set(x, "withSource", value.asInstanceOf[js.Any])
+      inline def setWithSource(value: SourceProps): Self = StObject.set(x, "withSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithSourceUndefined: Self = StObject.set(x, "withSource", js.undefined)
+      inline def setWithSourceUndefined: Self = StObject.set(x, "withSource", js.undefined)
       
-      @scala.inline
-      def setWithToolbar(value: Boolean): Self = StObject.set(x, "withToolbar", value.asInstanceOf[js.Any])
+      inline def setWithToolbar(value: Boolean): Self = StObject.set(x, "withToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithToolbarUndefined: Self = StObject.set(x, "withToolbar", js.undefined)
+      inline def setWithToolbarUndefined: Self = StObject.set(x, "withToolbar", js.undefined)
     }
   }
 }

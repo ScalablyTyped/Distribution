@@ -23,31 +23,23 @@ trait InferRxNormResponse extends StObject {
 }
 object InferRxNormResponse {
   
-  @scala.inline
-  def apply(Entities: RxNormEntityList): InferRxNormResponse = {
+  inline def apply(Entities: RxNormEntityList): InferRxNormResponse = {
     val __obj = js.Dynamic.literal(Entities = Entities.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferRxNormResponse]
   }
   
-  @scala.inline
-  implicit class InferRxNormResponseMutableBuilder[Self <: InferRxNormResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InferRxNormResponse](x: Self) {
     
-    @scala.inline
-    def setEntities(value: RxNormEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: RxNormEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: RxNormEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: RxNormEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
     
-    @scala.inline
-    def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
+    inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
+    inline def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
     
-    @scala.inline
-    def setPaginationToken(value: String): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: String): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
   }
 }

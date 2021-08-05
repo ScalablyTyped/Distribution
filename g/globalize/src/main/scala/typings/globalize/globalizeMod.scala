@@ -107,62 +107,44 @@ object globalizeMod extends Shortcut {
   }
   object CommonNumberFormatterOptions {
     
-    @scala.inline
-    def apply(): CommonNumberFormatterOptions = {
+    inline def apply(): CommonNumberFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonNumberFormatterOptions]
     }
     
-    @scala.inline
-    implicit class CommonNumberFormatterOptionsMutableBuilder[Self <: CommonNumberFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonNumberFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setCompact(value: short | long): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: short | long): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
+      inline def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
+      inline def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
       
-      @scala.inline
-      def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
+      inline def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
+      inline def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
+      inline def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
+      inline def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
+      inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
       
-      @scala.inline
-      def setRound(value: ceil | floor | round | truncate): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: ceil | floor | round | truncate): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+      inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+      inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
     }
   }
   
@@ -177,20 +159,16 @@ object globalizeMod extends Shortcut {
   }
   object CurrencyFormatterOptions {
     
-    @scala.inline
-    def apply(): CurrencyFormatterOptions = {
+    inline def apply(): CurrencyFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CurrencyFormatterOptions]
     }
     
-    @scala.inline
-    implicit class CurrencyFormatterOptionsMutableBuilder[Self <: CurrencyFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CurrencyFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setStyle(value: symbol | accounting | code | name): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: symbol | accounting | code | name): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -202,8 +180,7 @@ object globalizeMod extends Shortcut {
   }
   object DateFormatPart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `type`: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes,
       value: String
     ): DateFormatPart = {
@@ -212,14 +189,11 @@ object globalizeMod extends Shortcut {
       __obj.asInstanceOf[DateFormatPart]
     }
     
-    @scala.inline
-    implicit class DateFormatPartMutableBuilder[Self <: DateFormatPart] (val x: Self) extends AnyVal {
+    extension [Self <: DateFormatPart](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,38 +213,27 @@ object globalizeMod extends Shortcut {
   trait DateFormatPartTypes extends StObject
   object DateFormatPartTypes {
     
-    @scala.inline
-    def day: typings.globalize.globalizeStrings.day = "day".asInstanceOf[typings.globalize.globalizeStrings.day]
+    inline def day: typings.globalize.globalizeStrings.day = "day".asInstanceOf[typings.globalize.globalizeStrings.day]
     
-    @scala.inline
-    def dayperiod: typings.globalize.globalizeStrings.dayperiod = "dayperiod".asInstanceOf[typings.globalize.globalizeStrings.dayperiod]
+    inline def dayperiod: typings.globalize.globalizeStrings.dayperiod = "dayperiod".asInstanceOf[typings.globalize.globalizeStrings.dayperiod]
     
-    @scala.inline
-    def era: typings.globalize.globalizeStrings.era = "era".asInstanceOf[typings.globalize.globalizeStrings.era]
+    inline def era: typings.globalize.globalizeStrings.era = "era".asInstanceOf[typings.globalize.globalizeStrings.era]
     
-    @scala.inline
-    def hour: typings.globalize.globalizeStrings.hour = "hour".asInstanceOf[typings.globalize.globalizeStrings.hour]
+    inline def hour: typings.globalize.globalizeStrings.hour = "hour".asInstanceOf[typings.globalize.globalizeStrings.hour]
     
-    @scala.inline
-    def literal: typings.globalize.globalizeStrings.literal = "literal".asInstanceOf[typings.globalize.globalizeStrings.literal]
+    inline def literal: typings.globalize.globalizeStrings.literal = "literal".asInstanceOf[typings.globalize.globalizeStrings.literal]
     
-    @scala.inline
-    def minute: typings.globalize.globalizeStrings.minute = "minute".asInstanceOf[typings.globalize.globalizeStrings.minute]
+    inline def minute: typings.globalize.globalizeStrings.minute = "minute".asInstanceOf[typings.globalize.globalizeStrings.minute]
     
-    @scala.inline
-    def month: typings.globalize.globalizeStrings.month = "month".asInstanceOf[typings.globalize.globalizeStrings.month]
+    inline def month: typings.globalize.globalizeStrings.month = "month".asInstanceOf[typings.globalize.globalizeStrings.month]
     
-    @scala.inline
-    def second: typings.globalize.globalizeStrings.second = "second".asInstanceOf[typings.globalize.globalizeStrings.second]
+    inline def second: typings.globalize.globalizeStrings.second = "second".asInstanceOf[typings.globalize.globalizeStrings.second]
     
-    @scala.inline
-    def weekday: typings.globalize.globalizeStrings.weekday = "weekday".asInstanceOf[typings.globalize.globalizeStrings.weekday]
+    inline def weekday: typings.globalize.globalizeStrings.weekday = "weekday".asInstanceOf[typings.globalize.globalizeStrings.weekday]
     
-    @scala.inline
-    def year: typings.globalize.globalizeStrings.year = "year".asInstanceOf[typings.globalize.globalizeStrings.year]
+    inline def year: typings.globalize.globalizeStrings.year = "year".asInstanceOf[typings.globalize.globalizeStrings.year]
     
-    @scala.inline
-    def zone: typings.globalize.globalizeStrings.zone = "zone".asInstanceOf[typings.globalize.globalizeStrings.zone]
+    inline def zone: typings.globalize.globalizeStrings.zone = "zone".asInstanceOf[typings.globalize.globalizeStrings.zone]
   }
   
   trait DateFormatterOptions extends StObject {
@@ -311,50 +274,36 @@ object globalizeMod extends Shortcut {
   }
   object DateFormatterOptions {
     
-    @scala.inline
-    def apply(): DateFormatterOptions = {
+    inline def apply(): DateFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateFormatterOptions]
     }
     
-    @scala.inline
-    implicit class DateFormatterOptionsMutableBuilder[Self <: DateFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setDate(value: full | long | medium | short): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: full | long | medium | short): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDatetime(value: full | long | medium | short): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+      inline def setDatetime(value: full | long | medium | short): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
+      inline def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setSkeleton(value: String): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
+      inline def setSkeleton(value: String): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkeletonUndefined: Self = StObject.set(x, "skeleton", js.undefined)
+      inline def setSkeletonUndefined: Self = StObject.set(x, "skeleton", js.undefined)
       
-      @scala.inline
-      def setTime(value: full | long | medium | short): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: full | long | medium | short): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     }
   }
   
@@ -366,8 +315,7 @@ object globalizeMod extends Shortcut {
        with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberParserOptions
   object NumberFormatterOptions {
     
-    @scala.inline
-    def apply(): NumberFormatterOptions = {
+    inline def apply(): NumberFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberFormatterOptions]
     }
@@ -382,20 +330,16 @@ object globalizeMod extends Shortcut {
   }
   object NumberParserOptions {
     
-    @scala.inline
-    def apply(): NumberParserOptions = {
+    inline def apply(): NumberParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberParserOptions]
     }
     
-    @scala.inline
-    implicit class NumberParserOptionsMutableBuilder[Self <: NumberParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NumberParserOptions](x: Self) {
       
-      @scala.inline
-      def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -408,20 +352,16 @@ object globalizeMod extends Shortcut {
   }
   object PluralGeneratorOptions {
     
-    @scala.inline
-    def apply(): PluralGeneratorOptions = {
+    inline def apply(): PluralGeneratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluralGeneratorOptions]
     }
     
-    @scala.inline
-    implicit class PluralGeneratorOptionsMutableBuilder[Self <: PluralGeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluralGeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -434,20 +374,16 @@ object globalizeMod extends Shortcut {
   }
   object RelativeTimeFormatterOptions {
     
-    @scala.inline
-    def apply(): RelativeTimeFormatterOptions = {
+    inline def apply(): RelativeTimeFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelativeTimeFormatterOptions]
     }
     
-    @scala.inline
-    implicit class RelativeTimeFormatterOptionsMutableBuilder[Self <: RelativeTimeFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTimeFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setForm(value: short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     }
   }
   
@@ -778,28 +714,22 @@ object globalizeMod extends Shortcut {
   }
   object UnitFormatterOptions {
     
-    @scala.inline
-    def apply(): UnitFormatterOptions = {
+    inline def apply(): UnitFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnitFormatterOptions]
     }
     
-    @scala.inline
-    implicit class UnitFormatterOptionsMutableBuilder[Self <: UnitFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnitFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setForm(value: long | short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: long | short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setNumberFormatter(
+      inline def setNumberFormatter(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
       ): Self = StObject.set(x, "numberFormatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormatterUndefined: Self = StObject.set(x, "numberFormatter", js.undefined)
+      inline def setNumberFormatterUndefined: Self = StObject.set(x, "numberFormatter", js.undefined)
     }
   }
   

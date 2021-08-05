@@ -50,29 +50,22 @@ object resultsMod {
   }
   object ResultMap {
     
-    @scala.inline
-    def apply(): ResultMap = {
+    inline def apply(): ResultMap = {
       val __obj = js.Dynamic.literal(BLOCKED = "blocked", DENIED = "denied", GRANTED = "granted", LIMITED = "limited", UNAVAILABLE = "unavailable")
       __obj.asInstanceOf[ResultMap]
     }
     
-    @scala.inline
-    implicit class ResultMapMutableBuilder[Self <: ResultMap] (val x: Self) extends AnyVal {
+    extension [Self <: ResultMap](x: Self) {
       
-      @scala.inline
-      def setBLOCKED(value: blocked): Self = StObject.set(x, "BLOCKED", value.asInstanceOf[js.Any])
+      inline def setBLOCKED(value: blocked): Self = StObject.set(x, "BLOCKED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDENIED(value: denied): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
+      inline def setDENIED(value: denied): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRANTED(value: granted): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
+      inline def setGRANTED(value: granted): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIMITED(value: limited): Self = StObject.set(x, "LIMITED", value.asInstanceOf[js.Any])
+      inline def setLIMITED(value: limited): Self = StObject.set(x, "LIMITED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNAVAILABLE(value: unavailable): Self = StObject.set(x, "UNAVAILABLE", value.asInstanceOf[js.Any])
+      inline def setUNAVAILABLE(value: unavailable): Self = StObject.set(x, "UNAVAILABLE", value.asInstanceOf[js.Any])
     }
   }
 }

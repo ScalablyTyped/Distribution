@@ -18,22 +18,17 @@ trait UpdateCoreDefinitionRequest extends StObject {
 }
 object UpdateCoreDefinitionRequest {
   
-  @scala.inline
-  def apply(CoreDefinitionId: string): UpdateCoreDefinitionRequest = {
+  inline def apply(CoreDefinitionId: string): UpdateCoreDefinitionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCoreDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCoreDefinitionRequestMutableBuilder[Self <: UpdateCoreDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCoreDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
+    inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

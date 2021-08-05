@@ -22,49 +22,35 @@ trait ThumbnailSet
 }
 object ThumbnailSet {
   
-  @scala.inline
-  def apply(): ThumbnailSet = {
+  inline def apply(): ThumbnailSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThumbnailSet]
   }
   
-  @scala.inline
-  implicit class ThumbnailSetMutableBuilder[Self <: ThumbnailSet] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbnailSet](x: Self) {
     
-    @scala.inline
-    def setLarge(value: NullableOption[Thumbnail]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: NullableOption[Thumbnail]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeNull: Self = StObject.set(x, "large", null)
+    inline def setLargeNull: Self = StObject.set(x, "large", null)
     
-    @scala.inline
-    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+    inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
-    @scala.inline
-    def setMedium(value: NullableOption[Thumbnail]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: NullableOption[Thumbnail]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumNull: Self = StObject.set(x, "medium", null)
+    inline def setMediumNull: Self = StObject.set(x, "medium", null)
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setSmall(value: NullableOption[Thumbnail]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: NullableOption[Thumbnail]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallNull: Self = StObject.set(x, "small", null)
+    inline def setSmallNull: Self = StObject.set(x, "small", null)
     
-    @scala.inline
-    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
-    @scala.inline
-    def setSource(value: NullableOption[Thumbnail]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NullableOption[Thumbnail]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

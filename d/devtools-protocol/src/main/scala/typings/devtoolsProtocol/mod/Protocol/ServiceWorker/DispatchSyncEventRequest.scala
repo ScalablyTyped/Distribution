@@ -16,25 +16,19 @@ trait DispatchSyncEventRequest extends StObject {
 }
 object DispatchSyncEventRequest {
   
-  @scala.inline
-  def apply(lastChance: Boolean, origin: String, registrationId: RegistrationID, tag: String): DispatchSyncEventRequest = {
+  inline def apply(lastChance: Boolean, origin: String, registrationId: RegistrationID, tag: String): DispatchSyncEventRequest = {
     val __obj = js.Dynamic.literal(lastChance = lastChance.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], registrationId = registrationId.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchSyncEventRequest]
   }
   
-  @scala.inline
-  implicit class DispatchSyncEventRequestMutableBuilder[Self <: DispatchSyncEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchSyncEventRequest](x: Self) {
     
-    @scala.inline
-    def setLastChance(value: Boolean): Self = StObject.set(x, "lastChance", value.asInstanceOf[js.Any])
+    inline def setLastChance(value: Boolean): Self = StObject.set(x, "lastChance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

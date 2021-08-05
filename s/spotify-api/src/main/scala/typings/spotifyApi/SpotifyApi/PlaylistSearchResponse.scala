@@ -16,16 +16,13 @@ trait PlaylistSearchResponse extends StObject {
 }
 object PlaylistSearchResponse {
   
-  @scala.inline
-  def apply(playlists: PagingObject[PlaylistObjectSimplified]): PlaylistSearchResponse = {
+  inline def apply(playlists: PagingObject[PlaylistObjectSimplified]): PlaylistSearchResponse = {
     val __obj = js.Dynamic.literal(playlists = playlists.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistSearchResponse]
   }
   
-  @scala.inline
-  implicit class PlaylistSearchResponseMutableBuilder[Self <: PlaylistSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistSearchResponse](x: Self) {
     
-    @scala.inline
-    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
+    inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
   }
 }

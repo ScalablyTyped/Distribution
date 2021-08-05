@@ -10,8 +10,7 @@ trait ModelSetOptions
      with Validable
 object ModelSetOptions {
   
-  @scala.inline
-  def apply(): ModelSetOptions = {
+  inline def apply(): ModelSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelSetOptions]
   }

@@ -13,13 +13,13 @@ class VarianceScaling protected () extends Initializer {
     */
   def this(args: VarianceScalingArgs) = this()
   
-  var distribution: js.Any = js.native
+  /* private */ var distribution: js.Any = js.native
   
-  var mode: js.Any = js.native
+  /* private */ var mode: js.Any = js.native
   
-  var scale: js.Any = js.native
+  /* private */ var scale: js.Any = js.native
   
-  var seed: js.Any = js.native
+  /* private */ var seed: js.Any = js.native
 }
 /* static members */
 object VarianceScaling {
@@ -32,6 +32,5 @@ object VarianceScaling {
   @JSImport("@tensorflow/tfjs-layers/dist/initializers", "VarianceScaling.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

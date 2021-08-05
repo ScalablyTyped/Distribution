@@ -16,37 +16,27 @@ trait TileUTFGridOptions extends StObject {
 }
 object TileUTFGridOptions {
   
-  @scala.inline
-  def apply(): TileUTFGridOptions = {
+  inline def apply(): TileUTFGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileUTFGridOptions]
   }
   
-  @scala.inline
-  implicit class TileUTFGridOptionsMutableBuilder[Self <: TileUTFGridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileUTFGridOptions](x: Self) {
     
-    @scala.inline
-    def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
-    @scala.inline
-    def setPreemptive(value: Boolean): Self = StObject.set(x, "preemptive", value.asInstanceOf[js.Any])
+    inline def setPreemptive(value: Boolean): Self = StObject.set(x, "preemptive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreemptiveUndefined: Self = StObject.set(x, "preemptive", js.undefined)
+    inline def setPreemptiveUndefined: Self = StObject.set(x, "preemptive", js.undefined)
     
-    @scala.inline
-    def setTileJSON(value: TileJSON): Self = StObject.set(x, "tileJSON", value.asInstanceOf[js.Any])
+    inline def setTileJSON(value: TileJSON): Self = StObject.set(x, "tileJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileJSONUndefined: Self = StObject.set(x, "tileJSON", js.undefined)
+    inline def setTileJSONUndefined: Self = StObject.set(x, "tileJSON", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

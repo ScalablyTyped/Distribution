@@ -11,6 +11,5 @@ object bboxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBBoxMethod(`type`: String): BoxMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getBBoxMethod")(`type`.asInstanceOf[js.Any]).asInstanceOf[BoxMethod]
+  inline def getBBoxMethod(`type`: String): BoxMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getBBoxMethod")(`type`.asInstanceOf[js.Any]).asInstanceOf[BoxMethod]
 }

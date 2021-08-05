@@ -47,8 +47,7 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.Attachment")
   @js.native
   def Attachment: js.Any = js.native
-  @scala.inline
-  def Attachment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attachment")(x.asInstanceOf[js.Any])
+  inline def Attachment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attachment")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.Change")
   @js.native
@@ -57,11 +56,9 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.ChangeList")
   @js.native
   def ChangeList: js.Any = js.native
-  @scala.inline
-  def ChangeList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangeList")(x.asInstanceOf[js.Any])
+  inline def ChangeList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangeList")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Change_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Change")(x.asInstanceOf[js.Any])
+  inline def Change_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Change")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.Comment")
   @js.native
@@ -74,32 +71,26 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.CommentThreadStatus")
   @js.native
   def CommentThreadStatus: EnumValuesActive = js.native
-  @scala.inline
-  def CommentThreadStatus_=(x: EnumValuesActive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CommentThreadStatus")(x.asInstanceOf[js.Any])
+  inline def CommentThreadStatus_=(x: EnumValuesActive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CommentThreadStatus")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def CommentThread_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CommentThread")(x.asInstanceOf[js.Any])
+  inline def CommentThread_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CommentThread")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.CommentType")
   @js.native
   def CommentType: EnumValuesCodeChange = js.native
-  @scala.inline
-  def CommentType_=(x: EnumValuesCodeChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CommentType")(x.asInstanceOf[js.Any])
+  inline def CommentType_=(x: EnumValuesCodeChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CommentType")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Comment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Comment")(x.asInstanceOf[js.Any])
+  inline def Comment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Comment")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAnnotatedTag")
   @js.native
   def GitAnnotatedTag: js.Any = js.native
-  @scala.inline
-  def GitAnnotatedTag_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAnnotatedTag")(x.asInstanceOf[js.Any])
+  inline def GitAnnotatedTag_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAnnotatedTag")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAsyncOperationStatus")
   @js.native
   def GitAsyncOperationStatus: EnumValuesInProgress_ = js.native
-  @scala.inline
-  def GitAsyncOperationStatus_=(x: EnumValuesInProgress_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncOperationStatus")(x.asInstanceOf[js.Any])
+  inline def GitAsyncOperationStatus_=(x: EnumValuesInProgress_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncOperationStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAsyncRefOperation")
   @js.native
@@ -108,53 +99,44 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAsyncRefOperationDetail")
   @js.native
   def GitAsyncRefOperationDetail: js.Any = js.native
-  @scala.inline
-  def GitAsyncRefOperationDetail_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationDetail")(x.asInstanceOf[js.Any])
+  inline def GitAsyncRefOperationDetail_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationDetail")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAsyncRefOperationFailureStatus")
   @js.native
   def GitAsyncRefOperationFailureStatus: EnumValuesAsyncOperationNotFound = js.native
-  @scala.inline
-  def GitAsyncRefOperationFailureStatus_=(x: EnumValuesAsyncOperationNotFound): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationFailureStatus")(x.asInstanceOf[js.Any])
+  inline def GitAsyncRefOperationFailureStatus_=(x: EnumValuesAsyncOperationNotFound): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationFailureStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAsyncRefOperationParameters")
   @js.native
   def GitAsyncRefOperationParameters: js.Any = js.native
-  @scala.inline
-  def GitAsyncRefOperationParameters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationParameters")(x.asInstanceOf[js.Any])
+  inline def GitAsyncRefOperationParameters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationParameters")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitAsyncRefOperationSource")
   @js.native
   def GitAsyncRefOperationSource: js.Any = js.native
-  @scala.inline
-  def GitAsyncRefOperationSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationSource")(x.asInstanceOf[js.Any])
+  inline def GitAsyncRefOperationSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperationSource")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitAsyncRefOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperation")(x.asInstanceOf[js.Any])
+  inline def GitAsyncRefOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitAsyncRefOperation")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitBaseVersionDescriptor")
   @js.native
   def GitBaseVersionDescriptor: js.Any = js.native
-  @scala.inline
-  def GitBaseVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitBaseVersionDescriptor")(x.asInstanceOf[js.Any])
+  inline def GitBaseVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitBaseVersionDescriptor")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitBranchStats")
   @js.native
   def GitBranchStats: js.Any = js.native
-  @scala.inline
-  def GitBranchStats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitBranchStats")(x.asInstanceOf[js.Any])
+  inline def GitBranchStats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitBranchStats")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitChange")
   @js.native
   def GitChange: js.Any = js.native
-  @scala.inline
-  def GitChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitChange")(x.asInstanceOf[js.Any])
+  inline def GitChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitChange")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitCherryPick")
   @js.native
   def GitCherryPick: js.Any = js.native
-  @scala.inline
-  def GitCherryPick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCherryPick")(x.asInstanceOf[js.Any])
+  inline def GitCherryPick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCherryPick")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitCommit")
   @js.native
@@ -163,29 +145,24 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitCommitChanges")
   @js.native
   def GitCommitChanges: js.Any = js.native
-  @scala.inline
-  def GitCommitChanges_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitChanges")(x.asInstanceOf[js.Any])
+  inline def GitCommitChanges_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitChanges")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitCommitDiffs")
   @js.native
   def GitCommitDiffs: js.Any = js.native
-  @scala.inline
-  def GitCommitDiffs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitDiffs")(x.asInstanceOf[js.Any])
+  inline def GitCommitDiffs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitDiffs")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitCommitRef")
   @js.native
   def GitCommitRef: js.Any = js.native
-  @scala.inline
-  def GitCommitRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitRef")(x.asInstanceOf[js.Any])
+  inline def GitCommitRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitRef")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitCommitToCreate")
   @js.native
   def GitCommitToCreate: js.Any = js.native
-  @scala.inline
-  def GitCommitToCreate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitToCreate")(x.asInstanceOf[js.Any])
+  inline def GitCommitToCreate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommitToCreate")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitCommit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommit")(x.asInstanceOf[js.Any])
+  inline def GitCommit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitCommit")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflict")
   @js.native
@@ -194,143 +171,119 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictAddAdd")
   @js.native
   def GitConflictAddAdd: js.Any = js.native
-  @scala.inline
-  def GitConflictAddAdd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictAddAdd")(x.asInstanceOf[js.Any])
+  inline def GitConflictAddAdd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictAddAdd")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictAddRename")
   @js.native
   def GitConflictAddRename: js.Any = js.native
-  @scala.inline
-  def GitConflictAddRename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictAddRename")(x.asInstanceOf[js.Any])
+  inline def GitConflictAddRename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictAddRename")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictDeleteEdit")
   @js.native
   def GitConflictDeleteEdit: js.Any = js.native
-  @scala.inline
-  def GitConflictDeleteEdit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictDeleteEdit")(x.asInstanceOf[js.Any])
+  inline def GitConflictDeleteEdit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictDeleteEdit")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictDeleteRename")
   @js.native
   def GitConflictDeleteRename: js.Any = js.native
-  @scala.inline
-  def GitConflictDeleteRename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictDeleteRename")(x.asInstanceOf[js.Any])
+  inline def GitConflictDeleteRename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictDeleteRename")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictDirectoryFile")
   @js.native
   def GitConflictDirectoryFile: js.Any = js.native
-  @scala.inline
-  def GitConflictDirectoryFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictDirectoryFile")(x.asInstanceOf[js.Any])
+  inline def GitConflictDirectoryFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictDirectoryFile")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictEditDelete")
   @js.native
   def GitConflictEditDelete: js.Any = js.native
-  @scala.inline
-  def GitConflictEditDelete_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictEditDelete")(x.asInstanceOf[js.Any])
+  inline def GitConflictEditDelete_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictEditDelete")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictEditEdit")
   @js.native
   def GitConflictEditEdit: js.Any = js.native
-  @scala.inline
-  def GitConflictEditEdit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictEditEdit")(x.asInstanceOf[js.Any])
+  inline def GitConflictEditEdit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictEditEdit")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictFileDirectory")
   @js.native
   def GitConflictFileDirectory: js.Any = js.native
-  @scala.inline
-  def GitConflictFileDirectory_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictFileDirectory")(x.asInstanceOf[js.Any])
+  inline def GitConflictFileDirectory_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictFileDirectory")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictRename1to2")
   @js.native
   def GitConflictRename1to2: js.Any = js.native
-  @scala.inline
-  def GitConflictRename1to2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRename1to2")(x.asInstanceOf[js.Any])
+  inline def GitConflictRename1to2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRename1to2")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictRename2to1")
   @js.native
   def GitConflictRename2to1: js.Any = js.native
-  @scala.inline
-  def GitConflictRename2to1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRename2to1")(x.asInstanceOf[js.Any])
+  inline def GitConflictRename2to1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRename2to1")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictRenameAdd")
   @js.native
   def GitConflictRenameAdd: js.Any = js.native
-  @scala.inline
-  def GitConflictRenameAdd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRenameAdd")(x.asInstanceOf[js.Any])
+  inline def GitConflictRenameAdd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRenameAdd")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictRenameDelete")
   @js.native
   def GitConflictRenameDelete: js.Any = js.native
-  @scala.inline
-  def GitConflictRenameDelete_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRenameDelete")(x.asInstanceOf[js.Any])
+  inline def GitConflictRenameDelete_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRenameDelete")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictRenameRename")
   @js.native
   def GitConflictRenameRename: js.Any = js.native
-  @scala.inline
-  def GitConflictRenameRename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRenameRename")(x.asInstanceOf[js.Any])
+  inline def GitConflictRenameRename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictRenameRename")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictType")
   @js.native
   def GitConflictType: EnumValuesAddAdd = js.native
-  @scala.inline
-  def GitConflictType_=(x: EnumValuesAddAdd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictType")(x.asInstanceOf[js.Any])
+  inline def GitConflictType_=(x: EnumValuesAddAdd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictUpdateResult")
   @js.native
   def GitConflictUpdateResult: js.Any = js.native
-  @scala.inline
-  def GitConflictUpdateResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictUpdateResult")(x.asInstanceOf[js.Any])
+  inline def GitConflictUpdateResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictUpdateResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitConflictUpdateStatus")
   @js.native
   def GitConflictUpdateStatus: EnumValuesBadRequest = js.native
-  @scala.inline
-  def GitConflictUpdateStatus_=(x: EnumValuesBadRequest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictUpdateStatus")(x.asInstanceOf[js.Any])
+  inline def GitConflictUpdateStatus_=(x: EnumValuesBadRequest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflictUpdateStatus")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitConflict_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflict")(x.asInstanceOf[js.Any])
+  inline def GitConflict_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitConflict")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitDeletedRepository")
   @js.native
   def GitDeletedRepository: js.Any = js.native
-  @scala.inline
-  def GitDeletedRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitDeletedRepository")(x.asInstanceOf[js.Any])
+  inline def GitDeletedRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitDeletedRepository")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitForkRef")
   @js.native
   def GitForkRef: js.Any = js.native
-  @scala.inline
-  def GitForkRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitForkRef")(x.asInstanceOf[js.Any])
+  inline def GitForkRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitForkRef")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitForkSyncRequest")
   @js.native
   def GitForkSyncRequest: js.Any = js.native
-  @scala.inline
-  def GitForkSyncRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitForkSyncRequest")(x.asInstanceOf[js.Any])
+  inline def GitForkSyncRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitForkSyncRequest")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitHistoryMode")
   @js.native
   def GitHistoryMode: EnumValuesFirstParent = js.native
-  @scala.inline
-  def GitHistoryMode_=(x: EnumValuesFirstParent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitHistoryMode")(x.asInstanceOf[js.Any])
+  inline def GitHistoryMode_=(x: EnumValuesFirstParent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitHistoryMode")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitImportFailedEvent")
   @js.native
   def GitImportFailedEvent: js.Any = js.native
-  @scala.inline
-  def GitImportFailedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitImportFailedEvent")(x.asInstanceOf[js.Any])
+  inline def GitImportFailedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitImportFailedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitImportRequest")
   @js.native
   def GitImportRequest: js.Any = js.native
-  @scala.inline
-  def GitImportRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitImportRequest")(x.asInstanceOf[js.Any])
+  inline def GitImportRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitImportRequest")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitImportSucceededEvent")
   @js.native
   def GitImportSucceededEvent: js.Any = js.native
-  @scala.inline
-  def GitImportSucceededEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitImportSucceededEvent")(x.asInstanceOf[js.Any])
+  inline def GitImportSucceededEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitImportSucceededEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitItem")
   @js.native
@@ -339,23 +292,19 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitItemDescriptor")
   @js.native
   def GitItemDescriptor: js.Any = js.native
-  @scala.inline
-  def GitItemDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitItemDescriptor")(x.asInstanceOf[js.Any])
+  inline def GitItemDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitItemDescriptor")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitItemRequestData")
   @js.native
   def GitItemRequestData: js.Any = js.native
-  @scala.inline
-  def GitItemRequestData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitItemRequestData")(x.asInstanceOf[js.Any])
+  inline def GitItemRequestData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitItemRequestData")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitItem")(x.asInstanceOf[js.Any])
+  inline def GitItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitItem")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitLastChangeTreeItems")
   @js.native
   def GitLastChangeTreeItems: js.Any = js.native
-  @scala.inline
-  def GitLastChangeTreeItems_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitLastChangeTreeItems")(x.asInstanceOf[js.Any])
+  inline def GitLastChangeTreeItems_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitLastChangeTreeItems")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitObject")
   @js.native
@@ -364,29 +313,24 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitObjectType")
   @js.native
   def GitObjectType: EnumValuesBad = js.native
-  @scala.inline
-  def GitObjectType_=(x: EnumValuesBad): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitObjectType")(x.asInstanceOf[js.Any])
+  inline def GitObjectType_=(x: EnumValuesBad): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitObjectType")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitObject_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitObject")(x.asInstanceOf[js.Any])
+  inline def GitObject_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitObject")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPathAction")
   @js.native
   def GitPathAction: js.Any = js.native
-  @scala.inline
-  def GitPathAction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPathAction")(x.asInstanceOf[js.Any])
+  inline def GitPathAction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPathAction")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPathActions")
   @js.native
   def GitPathActions: EnumValuesRename = js.native
-  @scala.inline
-  def GitPathActions_=(x: EnumValuesRename): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPathActions")(x.asInstanceOf[js.Any])
+  inline def GitPathActions_=(x: EnumValuesRename): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPathActions")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPathToItemsCollection")
   @js.native
   def GitPathToItemsCollection: js.Any = js.native
-  @scala.inline
-  def GitPathToItemsCollection_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPathToItemsCollection")(x.asInstanceOf[js.Any])
+  inline def GitPathToItemsCollection_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPathToItemsCollection")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequest")
   @js.native
@@ -395,14 +339,12 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestChange")
   @js.native
   def GitPullRequestChange: js.Any = js.native
-  @scala.inline
-  def GitPullRequestChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestChange")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestChange")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestCommentThread")
   @js.native
   def GitPullRequestCommentThread: js.Any = js.native
-  @scala.inline
-  def GitPullRequestCommentThread_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestCommentThread")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestCommentThread_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestCommentThread")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestIteration")
   @js.native
@@ -411,11 +353,9 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestIterationChanges")
   @js.native
   def GitPullRequestIterationChanges: js.Any = js.native
-  @scala.inline
-  def GitPullRequestIterationChanges_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestIterationChanges")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestIterationChanges_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestIterationChanges")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitPullRequestIteration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestIteration")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestIteration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestIteration")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestQuery")
   @js.native
@@ -424,38 +364,31 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestQueryInput")
   @js.native
   def GitPullRequestQueryInput: js.Any = js.native
-  @scala.inline
-  def GitPullRequestQueryInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestQueryInput")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestQueryInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestQueryInput")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestQueryType")
   @js.native
   def GitPullRequestQueryType: EnumValuesCommit = js.native
-  @scala.inline
-  def GitPullRequestQueryType_=(x: EnumValuesCommit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestQueryType")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestQueryType_=(x: EnumValuesCommit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestQueryType")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitPullRequestQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestQuery")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestQuery")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestReviewFileType")
   @js.native
   def GitPullRequestReviewFileType: EnumValuesAttachment = js.native
-  @scala.inline
-  def GitPullRequestReviewFileType_=(x: EnumValuesAttachment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestReviewFileType")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestReviewFileType_=(x: EnumValuesAttachment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestReviewFileType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestSearchCriteria")
   @js.native
   def GitPullRequestSearchCriteria: js.Any = js.native
-  @scala.inline
-  def GitPullRequestSearchCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestSearchCriteria")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestSearchCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestSearchCriteria")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPullRequestStatus")
   @js.native
   def GitPullRequestStatus: js.Any = js.native
-  @scala.inline
-  def GitPullRequestStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestStatus")(x.asInstanceOf[js.Any])
+  inline def GitPullRequestStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequestStatus")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitPullRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequest")(x.asInstanceOf[js.Any])
+  inline def GitPullRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPullRequest")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPush")
   @js.native
@@ -464,41 +397,34 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPushEventData")
   @js.native
   def GitPushEventData: js.Any = js.native
-  @scala.inline
-  def GitPushEventData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPushEventData")(x.asInstanceOf[js.Any])
+  inline def GitPushEventData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPushEventData")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPushRef")
   @js.native
   def GitPushRef: js.Any = js.native
-  @scala.inline
-  def GitPushRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPushRef")(x.asInstanceOf[js.Any])
+  inline def GitPushRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPushRef")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitPushSearchCriteria")
   @js.native
   def GitPushSearchCriteria: js.Any = js.native
-  @scala.inline
-  def GitPushSearchCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPushSearchCriteria")(x.asInstanceOf[js.Any])
+  inline def GitPushSearchCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPushSearchCriteria")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitPush_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPush")(x.asInstanceOf[js.Any])
+  inline def GitPush_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitPush")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitQueryBranchStatsCriteria")
   @js.native
   def GitQueryBranchStatsCriteria: js.Any = js.native
-  @scala.inline
-  def GitQueryBranchStatsCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitQueryBranchStatsCriteria")(x.asInstanceOf[js.Any])
+  inline def GitQueryBranchStatsCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitQueryBranchStatsCriteria")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitQueryCommitsCriteria")
   @js.native
   def GitQueryCommitsCriteria: js.Any = js.native
-  @scala.inline
-  def GitQueryCommitsCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitQueryCommitsCriteria")(x.asInstanceOf[js.Any])
+  inline def GitQueryCommitsCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitQueryCommitsCriteria")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitQueryRefsCriteria")
   @js.native
   def GitQueryRefsCriteria: js.Any = js.native
-  @scala.inline
-  def GitQueryRefsCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitQueryRefsCriteria")(x.asInstanceOf[js.Any])
+  inline def GitQueryRefsCriteria_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitQueryRefsCriteria")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRef")
   @js.native
@@ -507,35 +433,29 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRefFavorite")
   @js.native
   def GitRefFavorite: js.Any = js.native
-  @scala.inline
-  def GitRefFavorite_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefFavorite")(x.asInstanceOf[js.Any])
+  inline def GitRefFavorite_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefFavorite")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRefSearchType")
   @js.native
   def GitRefSearchType: EnumValuesContains = js.native
-  @scala.inline
-  def GitRefSearchType_=(x: EnumValuesContains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefSearchType")(x.asInstanceOf[js.Any])
+  inline def GitRefSearchType_=(x: EnumValuesContains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefSearchType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRefUpdateMode")
   @js.native
   def GitRefUpdateMode: EnumValuesAllOrNone = js.native
-  @scala.inline
-  def GitRefUpdateMode_=(x: EnumValuesAllOrNone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefUpdateMode")(x.asInstanceOf[js.Any])
+  inline def GitRefUpdateMode_=(x: EnumValuesAllOrNone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefUpdateMode")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRefUpdateResult")
   @js.native
   def GitRefUpdateResult: js.Any = js.native
-  @scala.inline
-  def GitRefUpdateResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefUpdateResult")(x.asInstanceOf[js.Any])
+  inline def GitRefUpdateResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefUpdateResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRefUpdateStatus")
   @js.native
   def GitRefUpdateStatus: EnumValuesCreateBranchPermissionRequired = js.native
-  @scala.inline
-  def GitRefUpdateStatus_=(x: EnumValuesCreateBranchPermissionRequired): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefUpdateStatus")(x.asInstanceOf[js.Any])
+  inline def GitRefUpdateStatus_=(x: EnumValuesCreateBranchPermissionRequired): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRefUpdateStatus")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRef")(x.asInstanceOf[js.Any])
+  inline def GitRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRef")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRepository")
   @js.native
@@ -544,35 +464,29 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRepositoryCreateOptions")
   @js.native
   def GitRepositoryCreateOptions: js.Any = js.native
-  @scala.inline
-  def GitRepositoryCreateOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRepositoryCreateOptions")(x.asInstanceOf[js.Any])
+  inline def GitRepositoryCreateOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRepositoryCreateOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRepositoryRef")
   @js.native
   def GitRepositoryRef: js.Any = js.native
-  @scala.inline
-  def GitRepositoryRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRepositoryRef")(x.asInstanceOf[js.Any])
+  inline def GitRepositoryRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRepositoryRef")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRepository")(x.asInstanceOf[js.Any])
+  inline def GitRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRepository")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionError")
   @js.native
   def GitResolutionError: EnumValuesInvalidPath = js.native
-  @scala.inline
-  def GitResolutionError_=(x: EnumValuesInvalidPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionError")(x.asInstanceOf[js.Any])
+  inline def GitResolutionError_=(x: EnumValuesInvalidPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionError")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionMergeContent")
   @js.native
   def GitResolutionMergeContent: js.Any = js.native
-  @scala.inline
-  def GitResolutionMergeContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionMergeContent")(x.asInstanceOf[js.Any])
+  inline def GitResolutionMergeContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionMergeContent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionMergeType")
   @js.native
   def GitResolutionMergeType: EnumValuesAutoMerged = js.native
-  @scala.inline
-  def GitResolutionMergeType_=(x: EnumValuesAutoMerged): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionMergeType")(x.asInstanceOf[js.Any])
+  inline def GitResolutionMergeType_=(x: EnumValuesAutoMerged): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionMergeType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionPathConflict")
   @js.native
@@ -581,17 +495,14 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionPathConflictAction")
   @js.native
   def GitResolutionPathConflictAction: EnumValuesKeepSourceDeleteTarget = js.native
-  @scala.inline
-  def GitResolutionPathConflictAction_=(x: EnumValuesKeepSourceDeleteTarget): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionPathConflictAction")(x.asInstanceOf[js.Any])
+  inline def GitResolutionPathConflictAction_=(x: EnumValuesKeepSourceDeleteTarget): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionPathConflictAction")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitResolutionPathConflict_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionPathConflict")(x.asInstanceOf[js.Any])
+  inline def GitResolutionPathConflict_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionPathConflict")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionPickOneAction")
   @js.native
   def GitResolutionPickOneAction: js.Any = js.native
-  @scala.inline
-  def GitResolutionPickOneAction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionPickOneAction")(x.asInstanceOf[js.Any])
+  inline def GitResolutionPickOneAction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionPickOneAction")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionRename1to2")
   @js.native
@@ -600,29 +511,24 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionRename1to2Action")
   @js.native
   def GitResolutionRename1to2Action: EnumValuesKeepBothFiles = js.native
-  @scala.inline
-  def GitResolutionRename1to2Action_=(x: EnumValuesKeepBothFiles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionRename1to2Action")(x.asInstanceOf[js.Any])
+  inline def GitResolutionRename1to2Action_=(x: EnumValuesKeepBothFiles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionRename1to2Action")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitResolutionRename1to2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionRename1to2")(x.asInstanceOf[js.Any])
+  inline def GitResolutionRename1to2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionRename1to2")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionStatus")
   @js.native
   def GitResolutionStatus: EnumValuesPartiallyResolved = js.native
-  @scala.inline
-  def GitResolutionStatus_=(x: EnumValuesPartiallyResolved): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionStatus")(x.asInstanceOf[js.Any])
+  inline def GitResolutionStatus_=(x: EnumValuesPartiallyResolved): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitResolutionWhichAction")
   @js.native
   def GitResolutionWhichAction: EnumValuesPickSourceAction = js.native
-  @scala.inline
-  def GitResolutionWhichAction_=(x: EnumValuesPickSourceAction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionWhichAction")(x.asInstanceOf[js.Any])
+  inline def GitResolutionWhichAction_=(x: EnumValuesPickSourceAction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitResolutionWhichAction")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitRevert")
   @js.native
   def GitRevert: js.Any = js.native
-  @scala.inline
-  def GitRevert_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRevert")(x.asInstanceOf[js.Any])
+  inline def GitRevert_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitRevert")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitStatus")
   @js.native
@@ -631,17 +537,14 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitStatusState")
   @js.native
   def GitStatusState: EnumValuesNotApplicable = js.native
-  @scala.inline
-  def GitStatusState_=(x: EnumValuesNotApplicable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitStatusState")(x.asInstanceOf[js.Any])
+  inline def GitStatusState_=(x: EnumValuesNotApplicable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitStatusState")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitStatus")(x.asInstanceOf[js.Any])
+  inline def GitStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitTargetVersionDescriptor")
   @js.native
   def GitTargetVersionDescriptor: js.Any = js.native
-  @scala.inline
-  def GitTargetVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTargetVersionDescriptor")(x.asInstanceOf[js.Any])
+  inline def GitTargetVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTargetVersionDescriptor")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitTreeDiff")
   @js.native
@@ -650,65 +553,54 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitTreeDiffEntry")
   @js.native
   def GitTreeDiffEntry: js.Any = js.native
-  @scala.inline
-  def GitTreeDiffEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeDiffEntry")(x.asInstanceOf[js.Any])
+  inline def GitTreeDiffEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeDiffEntry")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitTreeDiffResponse")
   @js.native
   def GitTreeDiffResponse: js.Any = js.native
-  @scala.inline
-  def GitTreeDiffResponse_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeDiffResponse")(x.asInstanceOf[js.Any])
+  inline def GitTreeDiffResponse_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeDiffResponse")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GitTreeDiff_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeDiff")(x.asInstanceOf[js.Any])
+  inline def GitTreeDiff_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeDiff")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitTreeEntryRef")
   @js.native
   def GitTreeEntryRef: js.Any = js.native
-  @scala.inline
-  def GitTreeEntryRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeEntryRef")(x.asInstanceOf[js.Any])
+  inline def GitTreeEntryRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeEntryRef")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitTreeRef")
   @js.native
   def GitTreeRef: js.Any = js.native
-  @scala.inline
-  def GitTreeRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeRef")(x.asInstanceOf[js.Any])
+  inline def GitTreeRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitTreeRef")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitUserDate")
   @js.native
   def GitUserDate: js.Any = js.native
-  @scala.inline
-  def GitUserDate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitUserDate")(x.asInstanceOf[js.Any])
+  inline def GitUserDate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitUserDate")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitVersionDescriptor")
   @js.native
   def GitVersionDescriptor: js.Any = js.native
-  @scala.inline
-  def GitVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitVersionDescriptor")(x.asInstanceOf[js.Any])
+  inline def GitVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitVersionDescriptor")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitVersionOptions")
   @js.native
   def GitVersionOptions: EnumValuesPreviousChange = js.native
-  @scala.inline
-  def GitVersionOptions_=(x: EnumValuesPreviousChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitVersionOptions")(x.asInstanceOf[js.Any])
+  inline def GitVersionOptions_=(x: EnumValuesPreviousChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitVersionOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.GitVersionType")
   @js.native
   def GitVersionType: EnumValuesBranch = js.native
-  @scala.inline
-  def GitVersionType_=(x: EnumValuesBranch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitVersionType")(x.asInstanceOf[js.Any])
+  inline def GitVersionType_=(x: EnumValuesBranch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GitVersionType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.HistoryEntry")
   @js.native
   def HistoryEntry: js.Any = js.native
-  @scala.inline
-  def HistoryEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HistoryEntry")(x.asInstanceOf[js.Any])
+  inline def HistoryEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HistoryEntry")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.IncludedGitCommit")
   @js.native
   def IncludedGitCommit: js.Any = js.native
-  @scala.inline
-  def IncludedGitCommit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncludedGitCommit")(x.asInstanceOf[js.Any])
+  inline def IncludedGitCommit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncludedGitCommit")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.ItemContent")
   @js.native
@@ -717,47 +609,39 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.ItemContentType")
   @js.native
   def ItemContentType: EnumValuesBase64Encoded = js.native
-  @scala.inline
-  def ItemContentType_=(x: EnumValuesBase64Encoded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemContentType")(x.asInstanceOf[js.Any])
+  inline def ItemContentType_=(x: EnumValuesBase64Encoded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemContentType")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ItemContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemContent")(x.asInstanceOf[js.Any])
+  inline def ItemContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemContent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.ItemDetailsOptions")
   @js.native
   def ItemDetailsOptions: js.Any = js.native
-  @scala.inline
-  def ItemDetailsOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemDetailsOptions")(x.asInstanceOf[js.Any])
+  inline def ItemDetailsOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemDetailsOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.IterationReason")
   @js.native
   def IterationReason: EnumValuesForcePush = js.native
-  @scala.inline
-  def IterationReason_=(x: EnumValuesForcePush): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IterationReason")(x.asInstanceOf[js.Any])
+  inline def IterationReason_=(x: EnumValuesForcePush): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IterationReason")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.PullRequestAsyncStatus")
   @js.native
   def PullRequestAsyncStatus: EnumValuesConflicts = js.native
-  @scala.inline
-  def PullRequestAsyncStatus_=(x: EnumValuesConflicts): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PullRequestAsyncStatus")(x.asInstanceOf[js.Any])
+  inline def PullRequestAsyncStatus_=(x: EnumValuesConflicts): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PullRequestAsyncStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.PullRequestMergeFailureType")
   @js.native
   def PullRequestMergeFailureType: EnumValuesCaseSensitive = js.native
-  @scala.inline
-  def PullRequestMergeFailureType_=(x: EnumValuesCaseSensitive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PullRequestMergeFailureType")(x.asInstanceOf[js.Any])
+  inline def PullRequestMergeFailureType_=(x: EnumValuesCaseSensitive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PullRequestMergeFailureType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.PullRequestStatus")
   @js.native
   def PullRequestStatus: EnumValuesNotSet = js.native
-  @scala.inline
-  def PullRequestStatus_=(x: EnumValuesNotSet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PullRequestStatus")(x.asInstanceOf[js.Any])
+  inline def PullRequestStatus_=(x: EnumValuesNotSet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PullRequestStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.RefFavoriteType")
   @js.native
   def RefFavoriteType: EnumValuesFolder = js.native
-  @scala.inline
-  def RefFavoriteType_=(x: EnumValuesFolder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RefFavoriteType")(x.asInstanceOf[js.Any])
+  inline def RefFavoriteType_=(x: EnumValuesFolder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RefFavoriteType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.SupportedIde")
   @js.native
@@ -766,11 +650,9 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.SupportedIdeType")
   @js.native
   def SupportedIdeType: EnumValuesAndroidStudio = js.native
-  @scala.inline
-  def SupportedIdeType_=(x: EnumValuesAndroidStudio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedIdeType")(x.asInstanceOf[js.Any])
+  inline def SupportedIdeType_=(x: EnumValuesAndroidStudio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedIdeType")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def SupportedIde_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedIde")(x.asInstanceOf[js.Any])
+  inline def SupportedIde_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedIde")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcBranch")
   @js.native
@@ -779,17 +661,14 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcBranchRef")
   @js.native
   def TfvcBranchRef: js.Any = js.native
-  @scala.inline
-  def TfvcBranchRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcBranchRef")(x.asInstanceOf[js.Any])
+  inline def TfvcBranchRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcBranchRef")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TfvcBranch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcBranch")(x.asInstanceOf[js.Any])
+  inline def TfvcBranch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcBranch")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcChange")
   @js.native
   def TfvcChange: js.Any = js.native
-  @scala.inline
-  def TfvcChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcChange")(x.asInstanceOf[js.Any])
+  inline def TfvcChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcChange")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcChangeset")
   @js.native
@@ -798,23 +677,19 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcChangesetRef")
   @js.native
   def TfvcChangesetRef: js.Any = js.native
-  @scala.inline
-  def TfvcChangesetRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcChangesetRef")(x.asInstanceOf[js.Any])
+  inline def TfvcChangesetRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcChangesetRef")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TfvcChangeset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcChangeset")(x.asInstanceOf[js.Any])
+  inline def TfvcChangeset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcChangeset")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcCheckinEventData")
   @js.native
   def TfvcCheckinEventData: js.Any = js.native
-  @scala.inline
-  def TfvcCheckinEventData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcCheckinEventData")(x.asInstanceOf[js.Any])
+  inline def TfvcCheckinEventData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcCheckinEventData")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcHistoryEntry")
   @js.native
   def TfvcHistoryEntry: js.Any = js.native
-  @scala.inline
-  def TfvcHistoryEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcHistoryEntry")(x.asInstanceOf[js.Any])
+  inline def TfvcHistoryEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcHistoryEntry")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcItem")
   @js.native
@@ -823,17 +698,14 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcItemDescriptor")
   @js.native
   def TfvcItemDescriptor: js.Any = js.native
-  @scala.inline
-  def TfvcItemDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcItemDescriptor")(x.asInstanceOf[js.Any])
+  inline def TfvcItemDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcItemDescriptor")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcItemRequestData")
   @js.native
   def TfvcItemRequestData: js.Any = js.native
-  @scala.inline
-  def TfvcItemRequestData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcItemRequestData")(x.asInstanceOf[js.Any])
+  inline def TfvcItemRequestData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcItemRequestData")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TfvcItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcItem")(x.asInstanceOf[js.Any])
+  inline def TfvcItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcItem")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcLabel")
   @js.native
@@ -842,11 +714,9 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcLabelRef")
   @js.native
   def TfvcLabelRef: js.Any = js.native
-  @scala.inline
-  def TfvcLabelRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcLabelRef")(x.asInstanceOf[js.Any])
+  inline def TfvcLabelRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcLabelRef")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TfvcLabel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcLabel")(x.asInstanceOf[js.Any])
+  inline def TfvcLabel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcLabel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcShelveset")
   @js.native
@@ -855,51 +725,42 @@ object TypeInfo {
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcShelvesetRef")
   @js.native
   def TfvcShelvesetRef: js.Any = js.native
-  @scala.inline
-  def TfvcShelvesetRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcShelvesetRef")(x.asInstanceOf[js.Any])
+  inline def TfvcShelvesetRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcShelvesetRef")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TfvcShelveset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcShelveset")(x.asInstanceOf[js.Any])
+  inline def TfvcShelveset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcShelveset")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcVersionDescriptor")
   @js.native
   def TfvcVersionDescriptor: js.Any = js.native
-  @scala.inline
-  def TfvcVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcVersionDescriptor")(x.asInstanceOf[js.Any])
+  inline def TfvcVersionDescriptor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcVersionDescriptor")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcVersionOption")
   @js.native
   def TfvcVersionOption: EnumValuesPrevious = js.native
-  @scala.inline
-  def TfvcVersionOption_=(x: EnumValuesPrevious): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcVersionOption")(x.asInstanceOf[js.Any])
+  inline def TfvcVersionOption_=(x: EnumValuesPrevious): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcVersionOption")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.TfvcVersionType")
   @js.native
   def TfvcVersionType: EnumValuesChange = js.native
-  @scala.inline
-  def TfvcVersionType_=(x: EnumValuesChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcVersionType")(x.asInstanceOf[js.Any])
+  inline def TfvcVersionType_=(x: EnumValuesChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TfvcVersionType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.UpdateRefsRequest")
   @js.native
   def UpdateRefsRequest: js.Any = js.native
-  @scala.inline
-  def UpdateRefsRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpdateRefsRequest")(x.asInstanceOf[js.Any])
+  inline def UpdateRefsRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpdateRefsRequest")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.VersionControlChangeType")
   @js.native
   def VersionControlChangeType: EnumValuesEncoding = js.native
-  @scala.inline
-  def VersionControlChangeType_=(x: EnumValuesEncoding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VersionControlChangeType")(x.asInstanceOf[js.Any])
+  inline def VersionControlChangeType_=(x: EnumValuesEncoding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VersionControlChangeType")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.VersionControlProjectInfo")
   @js.native
   def VersionControlProjectInfo: js.Any = js.native
-  @scala.inline
-  def VersionControlProjectInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VersionControlProjectInfo")(x.asInstanceOf[js.Any])
+  inline def VersionControlProjectInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VersionControlProjectInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GitInterfaces", "TypeInfo.VersionControlRecursionType")
   @js.native
   def VersionControlRecursionType: EnumValuesFull = js.native
-  @scala.inline
-  def VersionControlRecursionType_=(x: EnumValuesFull): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VersionControlRecursionType")(x.asInstanceOf[js.Any])
+  inline def VersionControlRecursionType_=(x: EnumValuesFull): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VersionControlRecursionType")(x.asInstanceOf[js.Any])
 }

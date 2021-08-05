@@ -13,19 +13,15 @@ trait JQueryDeferred[T] extends StObject {
 }
 object JQueryDeferred {
   
-  @scala.inline
-  def apply[T](): JQueryDeferred[T] = {
+  inline def apply[T](): JQueryDeferred[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryDeferred[T]]
   }
   
-  @scala.inline
-  implicit class JQueryDeferredMutableBuilder[Self <: JQueryDeferred[?], T] (val x: Self & JQueryDeferred[T]) extends AnyVal {
+  extension [Self <: JQueryDeferred[?], T](x: Self & JQueryDeferred[T]) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
   }
 }

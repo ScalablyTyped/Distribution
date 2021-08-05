@@ -13,8 +13,7 @@ object circularProgressbarWithChildrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: CircularProgressbarWithChildrenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: CircularProgressbarWithChildrenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CircularProgressbarWithChildrenProps
     extends StObject
@@ -24,20 +23,16 @@ object circularProgressbarWithChildrenMod {
   }
   object CircularProgressbarWithChildrenProps {
     
-    @scala.inline
-    def apply(value: Double): CircularProgressbarWithChildrenProps = {
+    inline def apply(value: Double): CircularProgressbarWithChildrenProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CircularProgressbarWithChildrenProps]
     }
     
-    @scala.inline
-    implicit class CircularProgressbarWithChildrenPropsMutableBuilder[Self <: CircularProgressbarWithChildrenProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressbarWithChildrenProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

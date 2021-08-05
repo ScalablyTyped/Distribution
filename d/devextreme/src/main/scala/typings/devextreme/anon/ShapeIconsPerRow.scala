@@ -27,46 +27,33 @@ trait ShapeIconsPerRow extends StObject {
 }
 object ShapeIconsPerRow {
   
-  @scala.inline
-  def apply(): ShapeIconsPerRow = {
+  inline def apply(): ShapeIconsPerRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeIconsPerRow]
   }
   
-  @scala.inline
-  implicit class ShapeIconsPerRowMutableBuilder[Self <: ShapeIconsPerRow] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeIconsPerRow](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: (general | flowchart | orgChart | containers | custom | DisplayMode)*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: (general | flowchart | orgChart | containers | custom | DisplayMode)*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setShapeIconsPerRow(value: Double): Self = StObject.set(x, "shapeIconsPerRow", value.asInstanceOf[js.Any])
+    inline def setShapeIconsPerRow(value: Double): Self = StObject.set(x, "shapeIconsPerRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeIconsPerRowUndefined: Self = StObject.set(x, "shapeIconsPerRow", js.undefined)
+    inline def setShapeIconsPerRowUndefined: Self = StObject.set(x, "shapeIconsPerRow", js.undefined)
     
-    @scala.inline
-    def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
+    inline def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
+    inline def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

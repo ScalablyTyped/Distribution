@@ -16,29 +16,22 @@ trait UnnestSqlTokenType
 }
 object UnnestSqlTokenType {
   
-  @scala.inline
-  def apply(columnTypes: js.Array[String], tuples: js.Array[js.Array[ValueExpressionType]], `type`: js.Symbol): UnnestSqlTokenType = {
+  inline def apply(columnTypes: js.Array[String], tuples: js.Array[js.Array[ValueExpressionType]], `type`: js.Symbol): UnnestSqlTokenType = {
     val __obj = js.Dynamic.literal(columnTypes = columnTypes.asInstanceOf[js.Any], tuples = tuples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnnestSqlTokenType]
   }
   
-  @scala.inline
-  implicit class UnnestSqlTokenTypeMutableBuilder[Self <: UnnestSqlTokenType] (val x: Self) extends AnyVal {
+  extension [Self <: UnnestSqlTokenType](x: Self) {
     
-    @scala.inline
-    def setColumnTypes(value: js.Array[String]): Self = StObject.set(x, "columnTypes", value.asInstanceOf[js.Any])
+    inline def setColumnTypes(value: js.Array[String]): Self = StObject.set(x, "columnTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnTypesVarargs(value: String*): Self = StObject.set(x, "columnTypes", js.Array(value :_*))
+    inline def setColumnTypesVarargs(value: String*): Self = StObject.set(x, "columnTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTuples(value: js.Array[js.Array[ValueExpressionType]]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
+    inline def setTuples(value: js.Array[js.Array[ValueExpressionType]]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuplesVarargs(value: js.Array[ValueExpressionType]*): Self = StObject.set(x, "tuples", js.Array(value :_*))
+    inline def setTuplesVarargs(value: js.Array[ValueExpressionType]*): Self = StObject.set(x, "tuples", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

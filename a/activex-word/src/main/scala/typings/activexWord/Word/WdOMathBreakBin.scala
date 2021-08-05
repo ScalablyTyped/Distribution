@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOMathBreakBin extends StObject
 object WdOMathBreakBin {
   
-  @scala.inline
-  def wdOMathBreakBinAfter: `1` = 1.asInstanceOf[`1`]
+  inline def wdOMathBreakBinAfter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOMathBreakBinBefore: `0` = 0.asInstanceOf[`0`]
+  inline def wdOMathBreakBinBefore: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdOMathBreakBinRepeat: `2` = 2.asInstanceOf[`2`]
+  inline def wdOMathBreakBinRepeat: `2` = 2.asInstanceOf[`2`]
 }

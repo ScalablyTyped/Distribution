@@ -30,22 +30,17 @@ trait ISpawnParticleAttachedEntityParameters extends StObject {
 }
 object ISpawnParticleAttachedEntityParameters {
   
-  @scala.inline
-  def apply(effect: ParticleEffect, entity: IEntity, offset: VectorArray): ISpawnParticleAttachedEntityParameters = {
+  inline def apply(effect: ParticleEffect, entity: IEntity, offset: VectorArray): ISpawnParticleAttachedEntityParameters = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpawnParticleAttachedEntityParameters]
   }
   
-  @scala.inline
-  implicit class ISpawnParticleAttachedEntityParametersMutableBuilder[Self <: ISpawnParticleAttachedEntityParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ISpawnParticleAttachedEntityParameters](x: Self) {
     
-    @scala.inline
-    def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: VectorArray): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: VectorArray): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

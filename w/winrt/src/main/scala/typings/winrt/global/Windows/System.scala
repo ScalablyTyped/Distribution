@@ -54,15 +54,11 @@ object System {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def launchFileAsync(file: IStorageFile): IAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[Boolean]]
-    @scala.inline
-    def launchFileAsync(file: IStorageFile, options: typings.winrt.Windows.System.LauncherOptions): IAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[Boolean]]
+    inline def launchFileAsync(file: IStorageFile): IAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[Boolean]]
+    inline def launchFileAsync(file: IStorageFile, options: typings.winrt.Windows.System.LauncherOptions): IAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[Boolean]]
     
-    @scala.inline
-    def launchUriAsync(uri: Uri): IAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[Boolean]]
-    @scala.inline
-    def launchUriAsync(uri: Uri, options: typings.winrt.Windows.System.LauncherOptions): IAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[Boolean]]
+    inline def launchUriAsync(uri: Uri): IAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[Boolean]]
+    inline def launchUriAsync(uri: Uri, options: typings.winrt.Windows.System.LauncherOptions): IAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[Boolean]]
   }
   
   @JSGlobal("Windows.System.LauncherOptions")
@@ -144,8 +140,7 @@ object System {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def getPackageSpecificToken(nonce: IBuffer): typings.winrt.Windows.System.Profile.HardwareToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageSpecificToken")(nonce.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.System.Profile.HardwareToken]
+      inline def getPackageSpecificToken(nonce: IBuffer): typings.winrt.Windows.System.Profile.HardwareToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageSpecificToken")(nonce.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.System.Profile.HardwareToken]
     }
     
     @JSGlobal("Windows.System.Profile.HardwareToken")
@@ -182,8 +177,7 @@ object System {
       @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession.isRemote")
       @js.native
       def isRemote: Boolean = js.native
-      @scala.inline
-      def isRemote_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRemote")(x.asInstanceOf[js.Any])
+      inline def isRemote_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRemote")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -223,15 +217,11 @@ object System {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def attachToEvent(name: String, handler: SignalHandler): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToEvent")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
-        @scala.inline
-        def attachToEvent(name: String, handler: SignalHandler, timeout: Double): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToEvent")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
+        inline def attachToEvent(name: String, handler: SignalHandler): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToEvent")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
+        inline def attachToEvent(name: String, handler: SignalHandler, timeout: Double): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToEvent")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
         
-        @scala.inline
-        def attachToSemaphore(name: String, handler: SignalHandler): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSemaphore")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
-        @scala.inline
-        def attachToSemaphore(name: String, handler: SignalHandler, timeout: Double): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSemaphore")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
+        inline def attachToSemaphore(name: String, handler: SignalHandler): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSemaphore")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
+        inline def attachToSemaphore(name: String, handler: SignalHandler, timeout: Double): typings.winrt.Windows.System.Threading.Core.SignalNotifier = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSemaphore")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.Core.SignalNotifier]
       }
     }
     
@@ -247,12 +237,9 @@ object System {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def runAsync(handler: WorkItemHandler): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("runAsync")(handler.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
-      @scala.inline
-      def runAsync(handler: WorkItemHandler, priority: WorkItemPriority): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("runAsync")(handler.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
-      @scala.inline
-      def runAsync(handler: WorkItemHandler, priority: WorkItemPriority, options: WorkItemOptions): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("runAsync")(handler.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+      inline def runAsync(handler: WorkItemHandler): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("runAsync")(handler.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
+      inline def runAsync(handler: WorkItemHandler, priority: WorkItemPriority): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("runAsync")(handler.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+      inline def runAsync(handler: WorkItemHandler, priority: WorkItemPriority, options: WorkItemOptions): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("runAsync")(handler.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
     }
     
     @JSGlobal("Windows.System.Threading.ThreadPoolTimer")
@@ -277,15 +264,11 @@ object System {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def createPeriodicTimer(handler: TimerElapsedHandler, period: Double): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPeriodicTimer")(handler.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
-      @scala.inline
-      def createPeriodicTimer(handler: TimerElapsedHandler, period: Double, destroyed: TimerDestroyedHandler): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPeriodicTimer")(handler.asInstanceOf[js.Any], period.asInstanceOf[js.Any], destroyed.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
+      inline def createPeriodicTimer(handler: TimerElapsedHandler, period: Double): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPeriodicTimer")(handler.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
+      inline def createPeriodicTimer(handler: TimerElapsedHandler, period: Double, destroyed: TimerDestroyedHandler): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPeriodicTimer")(handler.asInstanceOf[js.Any], period.asInstanceOf[js.Any], destroyed.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
       
-      @scala.inline
-      def createTimer(handler: TimerElapsedHandler, delay: Double): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimer")(handler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
-      @scala.inline
-      def createTimer(handler: TimerElapsedHandler, delay: Double, destroyed: TimerDestroyedHandler): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimer")(handler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], destroyed.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
+      inline def createTimer(handler: TimerElapsedHandler, delay: Double): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimer")(handler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
+      inline def createTimer(handler: TimerElapsedHandler, delay: Double, destroyed: TimerDestroyedHandler): typings.winrt.Windows.System.Threading.ThreadPoolTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimer")(handler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], destroyed.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.System.Threading.ThreadPoolTimer]
     }
     
     @JSGlobal("Windows.System.Threading.WorkItemOptions")
@@ -346,38 +329,32 @@ object System {
       @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.calendars")
       @js.native
       def calendars: IVectorView[String] = js.native
-      @scala.inline
-      def calendars_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calendars")(x.asInstanceOf[js.Any])
+      inline def calendars_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calendars")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.clocks")
       @js.native
       def clocks: IVectorView[String] = js.native
-      @scala.inline
-      def clocks_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clocks")(x.asInstanceOf[js.Any])
+      inline def clocks_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clocks")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.currencies")
       @js.native
       def currencies: IVectorView[String] = js.native
-      @scala.inline
-      def currencies_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currencies")(x.asInstanceOf[js.Any])
+      inline def currencies_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currencies")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.homeGeographicRegion")
       @js.native
       def homeGeographicRegion: String = js.native
-      @scala.inline
-      def homeGeographicRegion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("homeGeographicRegion")(x.asInstanceOf[js.Any])
+      inline def homeGeographicRegion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("homeGeographicRegion")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.languages")
       @js.native
       def languages: IVectorView[String] = js.native
-      @scala.inline
-      def languages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
+      inline def languages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.weekStartsOn")
       @js.native
       def weekStartsOn: DayOfWeek = js.native
-      @scala.inline
-      def weekStartsOn_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weekStartsOn")(x.asInstanceOf[js.Any])
+      inline def weekStartsOn_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weekStartsOn")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Windows.System.UserProfile.LockScreen")
@@ -392,20 +369,16 @@ object System {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def getImageStream(): IRandomAccessStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageStream")().asInstanceOf[IRandomAccessStream]
+      inline def getImageStream(): IRandomAccessStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageStream")().asInstanceOf[IRandomAccessStream]
       
       @JSGlobal("Windows.System.UserProfile.LockScreen.originalImageFile")
       @js.native
       def originalImageFile: Uri = js.native
-      @scala.inline
-      def originalImageFile_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("originalImageFile")(x.asInstanceOf[js.Any])
+      inline def originalImageFile_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("originalImageFile")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageFileAsync(value: IStorageFile): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageFileAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
+      inline def setImageFileAsync(value: IStorageFile): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageFileAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
       
-      @scala.inline
-      def setImageStreamAsync(value: IRandomAccessStream): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageStreamAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
+      inline def setImageStreamAsync(value: IRandomAccessStream): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageStreamAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
     }
     
     @JSGlobal("Windows.System.UserProfile.SetAccountPictureResult")
@@ -443,53 +416,39 @@ object System {
       @JSGlobal("Windows.System.UserProfile.UserInformation.accountPictureChangeEnabled")
       @js.native
       def accountPictureChangeEnabled: Boolean = js.native
-      @scala.inline
-      def accountPictureChangeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountPictureChangeEnabled")(x.asInstanceOf[js.Any])
+      inline def accountPictureChangeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountPictureChangeEnabled")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def getAccountPicture(kind: AccountPictureKind): IStorageFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountPicture")(kind.asInstanceOf[js.Any]).asInstanceOf[IStorageFile]
+      inline def getAccountPicture(kind: AccountPictureKind): IStorageFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountPicture")(kind.asInstanceOf[js.Any]).asInstanceOf[IStorageFile]
       
-      @scala.inline
-      def getDisplayNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayNameAsync")().asInstanceOf[IAsyncOperation[String]]
+      inline def getDisplayNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayNameAsync")().asInstanceOf[IAsyncOperation[String]]
       
-      @scala.inline
-      def getDomainNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameAsync")().asInstanceOf[IAsyncOperation[String]]
+      inline def getDomainNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameAsync")().asInstanceOf[IAsyncOperation[String]]
       
-      @scala.inline
-      def getFirstNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstNameAsync")().asInstanceOf[IAsyncOperation[String]]
+      inline def getFirstNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstNameAsync")().asInstanceOf[IAsyncOperation[String]]
       
-      @scala.inline
-      def getLastNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastNameAsync")().asInstanceOf[IAsyncOperation[String]]
+      inline def getLastNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastNameAsync")().asInstanceOf[IAsyncOperation[String]]
       
-      @scala.inline
-      def getPrincipalNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrincipalNameAsync")().asInstanceOf[IAsyncOperation[String]]
+      inline def getPrincipalNameAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrincipalNameAsync")().asInstanceOf[IAsyncOperation[String]]
       
-      @scala.inline
-      def getSessionInitiationProtocolUriAsync(): IAsyncOperation[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionInitiationProtocolUriAsync")().asInstanceOf[IAsyncOperation[Uri]]
+      inline def getSessionInitiationProtocolUriAsync(): IAsyncOperation[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionInitiationProtocolUriAsync")().asInstanceOf[IAsyncOperation[Uri]]
       
       @JSGlobal("Windows.System.UserProfile.UserInformation.nameAccessAllowed")
       @js.native
       def nameAccessAllowed: Boolean = js.native
-      @scala.inline
-      def nameAccessAllowed_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameAccessAllowed")(x.asInstanceOf[js.Any])
+      inline def nameAccessAllowed_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameAccessAllowed")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.System.UserProfile.UserInformation.onaccountpicturechanged")
       @js.native
       def onaccountpicturechanged: js.Any = js.native
-      @scala.inline
-      def onaccountpicturechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
+      inline def onaccountpicturechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountPictureAsync(image: IStorageFile): IAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
+      inline def setAccountPictureAsync(image: IStorageFile): IAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
       
-      @scala.inline
-      def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureFromStreamAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
+      inline def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureFromStreamAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
       
-      @scala.inline
-      def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
+      inline def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
       
-      @scala.inline
-      def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesFromStreamsAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
+      inline def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesFromStreamsAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
     }
   }
   

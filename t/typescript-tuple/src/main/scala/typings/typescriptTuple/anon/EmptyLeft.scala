@@ -17,25 +17,19 @@ trait EmptyLeft[Right /* <: js.Array[js.Any] */, Left /* <: js.Array[js.Any] */]
 }
 object EmptyLeft {
   
-  @scala.inline
-  def apply[Right /* <: js.Array[js.Any] */, Left /* <: js.Array[js.Any] */](emptyLeft: Right, infiniteLeft: ERROR, multiLeft: js.Any, singleLeft: Prepend[Right, js.Any]): EmptyLeft[Right, Left] = {
+  inline def apply[Right /* <: js.Array[js.Any] */, Left /* <: js.Array[js.Any] */](emptyLeft: Right, infiniteLeft: ERROR, multiLeft: js.Any, singleLeft: Prepend[Right, js.Any]): EmptyLeft[Right, Left] = {
     val __obj = js.Dynamic.literal(emptyLeft = emptyLeft.asInstanceOf[js.Any], infiniteLeft = infiniteLeft.asInstanceOf[js.Any], multiLeft = multiLeft.asInstanceOf[js.Any], singleLeft = singleLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyLeft[Right, Left]]
   }
   
-  @scala.inline
-  implicit class EmptyLeftMutableBuilder[Self <: EmptyLeft[?, ?], Right /* <: js.Array[js.Any] */, Left /* <: js.Array[js.Any] */] (val x: Self & (EmptyLeft[Right, Left])) extends AnyVal {
+  extension [Self <: EmptyLeft[?, ?], Right /* <: js.Array[js.Any] */, Left /* <: js.Array[js.Any] */](x: Self & (EmptyLeft[Right, Left])) {
     
-    @scala.inline
-    def setEmptyLeft(value: Right): Self = StObject.set(x, "emptyLeft", value.asInstanceOf[js.Any])
+    inline def setEmptyLeft(value: Right): Self = StObject.set(x, "emptyLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfiniteLeft(value: ERROR): Self = StObject.set(x, "infiniteLeft", value.asInstanceOf[js.Any])
+    inline def setInfiniteLeft(value: ERROR): Self = StObject.set(x, "infiniteLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLeft(value: js.Any): Self = StObject.set(x, "multiLeft", value.asInstanceOf[js.Any])
+    inline def setMultiLeft(value: js.Any): Self = StObject.set(x, "multiLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleLeft(value: Prepend[Right, js.Any]): Self = StObject.set(x, "singleLeft", value.asInstanceOf[js.Any])
+    inline def setSingleLeft(value: Prepend[Right, js.Any]): Self = StObject.set(x, "singleLeft", value.asInstanceOf[js.Any])
   }
 }

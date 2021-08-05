@@ -12,19 +12,15 @@ trait BoardRow extends StObject {
 }
 object BoardRow {
   
-  @scala.inline
-  def apply(id: String, name: String): BoardRow = {
+  inline def apply(id: String, name: String): BoardRow = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardRow]
   }
   
-  @scala.inline
-  implicit class BoardRowMutableBuilder[Self <: BoardRow] (val x: Self) extends AnyVal {
+  extension [Self <: BoardRow](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

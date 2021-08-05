@@ -16,8 +16,7 @@ trait AppointmentDragEventArgs
 }
 object AppointmentDragEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow: Boolean,
     dragInformation: js.Array[BootstrapSchedulerAppointmentDragInfo],
     mouseEvent: js.Any,
@@ -27,19 +26,14 @@ object AppointmentDragEventArgs {
     __obj.asInstanceOf[AppointmentDragEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentDragEventArgsMutableBuilder[Self <: AppointmentDragEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentDragEventArgs](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragInformation(value: js.Array[BootstrapSchedulerAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
+    inline def setDragInformation(value: js.Array[BootstrapSchedulerAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragInformationVarargs(value: BootstrapSchedulerAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
+    inline def setDragInformationVarargs(value: BootstrapSchedulerAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
     
-    @scala.inline
-    def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
   }
 }

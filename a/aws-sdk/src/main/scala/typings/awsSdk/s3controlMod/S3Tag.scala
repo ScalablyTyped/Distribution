@@ -18,19 +18,15 @@ trait S3Tag extends StObject {
 }
 object S3Tag {
   
-  @scala.inline
-  def apply(Key: TagKeyString, Value: TagValueString): S3Tag = {
+  inline def apply(Key: TagKeyString, Value: TagValueString): S3Tag = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Tag]
   }
   
-  @scala.inline
-  implicit class S3TagMutableBuilder[Self <: S3Tag] (val x: Self) extends AnyVal {
+  extension [Self <: S3Tag](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TagValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

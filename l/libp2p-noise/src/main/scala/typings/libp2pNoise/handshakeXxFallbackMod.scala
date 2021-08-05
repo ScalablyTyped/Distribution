@@ -98,8 +98,8 @@ object handshakeXxFallbackMod {
       handshake: XX
     ) = this()
     
-    var ephemeralKeys: js.Any = js.native
+    /* private */ var ephemeralKeys: js.Any = js.native
     
-    var initialMsg: js.Any = js.native
+    /* private */ var initialMsg: js.Any = js.native
   }
 }

@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object IfInitial {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](hasChildrenPersistState: State[T]): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenPersistState.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply[T /* <: js.Object */](hasChildrenPersistState: State[T]): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenPersistState.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-async", "IfInitial")
   @js.native
@@ -26,6 +25,5 @@ object IfInitial {
   @JSImport("react-async", "IfInitial.propTypes")
   @js.native
   def propTypes: Persist = js.native
-  @scala.inline
-  def propTypes_=(x: Persist): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: Persist): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

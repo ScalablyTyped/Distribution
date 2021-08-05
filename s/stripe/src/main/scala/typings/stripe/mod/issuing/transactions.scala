@@ -86,8 +86,7 @@ object transactions {
   }
   object ITransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       authorization: String | IAuthorization,
       balance_transaction: String | IBalanceTransaction,
@@ -110,53 +109,37 @@ object transactions {
       __obj.asInstanceOf[ITransaction]
     }
     
-    @scala.inline
-    implicit class ITransactionMutableBuilder[Self <: ITransaction] (val x: Self) extends AnyVal {
+    extension [Self <: ITransaction](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorization(value: String | IAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: String | IAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
+      inline def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCard(value: String | IIssuingCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: String | IIssuingCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholder(value: String | ICardholder): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: String | ICardholder): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispute(value: String | IIssuingDispute): Self = StObject.set(x, "dispute", value.asInstanceOf[js.Any])
+      inline def setDispute(value: String | IIssuingDispute): Self = StObject.set(x, "dispute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerchant_amount(value: Double): Self = StObject.set(x, "merchant_amount", value.asInstanceOf[js.Any])
+      inline def setMerchant_amount(value: Double): Self = StObject.set(x, "merchant_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerchant_currency(value: String): Self = StObject.set(x, "merchant_currency", value.asInstanceOf[js.Any])
+      inline def setMerchant_currency(value: String): Self = StObject.set(x, "merchant_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerchant_data(value: MerchantData): Self = StObject.set(x, "merchant_data", value.asInstanceOf[js.Any])
+      inline def setMerchant_data(value: MerchantData): Self = StObject.set(x, "merchant_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: issuingDottransaction): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: issuingDottransaction): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,62 +187,44 @@ object transactions {
   }
   object ITransactionListOptions {
     
-    @scala.inline
-    def apply(): ITransactionListOptions = {
+    inline def apply(): ITransactionListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITransactionListOptions]
     }
     
-    @scala.inline
-    implicit class ITransactionListOptionsMutableBuilder[Self <: ITransactionListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITransactionListOptions](x: Self) {
       
-      @scala.inline
-      def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
       
-      @scala.inline
-      def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
+      inline def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
       
-      @scala.inline
-      def setCreated(value: ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setDispute(value: String): Self = StObject.set(x, "dispute", value.asInstanceOf[js.Any])
+      inline def setDispute(value: String): Self = StObject.set(x, "dispute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputeUndefined: Self = StObject.set(x, "dispute", js.undefined)
+      inline def setDisputeUndefined: Self = StObject.set(x, "dispute", js.undefined)
       
-      @scala.inline
-      def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+      inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+      inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setSettlement(value: String): Self = StObject.set(x, "settlement", value.asInstanceOf[js.Any])
+      inline def setSettlement(value: String): Self = StObject.set(x, "settlement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettlementUndefined: Self = StObject.set(x, "settlement", js.undefined)
+      inline def setSettlementUndefined: Self = StObject.set(x, "settlement", js.undefined)
       
-      @scala.inline
-      def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+      inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+      inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
     }
   }
   
@@ -269,20 +234,16 @@ object transactions {
   }
   object ITransactionUpdateOptions {
     
-    @scala.inline
-    def apply(): ITransactionUpdateOptions = {
+    inline def apply(): ITransactionUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITransactionUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ITransactionUpdateOptionsMutableBuilder[Self <: ITransactionUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITransactionUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -297,22 +258,16 @@ object transactions {
   trait TransactionType extends StObject
   object TransactionType {
     
-    @scala.inline
-    def capture: typings.stripe.stripeStrings.capture = "capture".asInstanceOf[typings.stripe.stripeStrings.capture]
+    inline def capture: typings.stripe.stripeStrings.capture = "capture".asInstanceOf[typings.stripe.stripeStrings.capture]
     
-    @scala.inline
-    def cash_withdrawal: typings.stripe.stripeStrings.cash_withdrawal = "cash_withdrawal".asInstanceOf[typings.stripe.stripeStrings.cash_withdrawal]
+    inline def cash_withdrawal: typings.stripe.stripeStrings.cash_withdrawal = "cash_withdrawal".asInstanceOf[typings.stripe.stripeStrings.cash_withdrawal]
     
-    @scala.inline
-    def dispute: typings.stripe.stripeStrings.dispute = "dispute".asInstanceOf[typings.stripe.stripeStrings.dispute]
+    inline def dispute: typings.stripe.stripeStrings.dispute = "dispute".asInstanceOf[typings.stripe.stripeStrings.dispute]
     
-    @scala.inline
-    def dispute_loss: typings.stripe.stripeStrings.dispute_loss = "dispute_loss".asInstanceOf[typings.stripe.stripeStrings.dispute_loss]
+    inline def dispute_loss: typings.stripe.stripeStrings.dispute_loss = "dispute_loss".asInstanceOf[typings.stripe.stripeStrings.dispute_loss]
     
-    @scala.inline
-    def refund: typings.stripe.stripeStrings.refund = "refund".asInstanceOf[typings.stripe.stripeStrings.refund]
+    inline def refund: typings.stripe.stripeStrings.refund = "refund".asInstanceOf[typings.stripe.stripeStrings.refund]
     
-    @scala.inline
-    def refund_reversal: typings.stripe.stripeStrings.refund_reversal = "refund_reversal".asInstanceOf[typings.stripe.stripeStrings.refund_reversal]
+    inline def refund_reversal: typings.stripe.stripeStrings.refund_reversal = "refund_reversal".asInstanceOf[typings.stripe.stripeStrings.refund_reversal]
   }
 }

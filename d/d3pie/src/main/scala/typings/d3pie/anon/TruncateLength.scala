@@ -12,25 +12,19 @@ trait TruncateLength extends StObject {
 }
 object TruncateLength {
   
-  @scala.inline
-  def apply(): TruncateLength = {
+  inline def apply(): TruncateLength = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TruncateLength]
   }
   
-  @scala.inline
-  implicit class TruncateLengthMutableBuilder[Self <: TruncateLength] (val x: Self) extends AnyVal {
+  extension [Self <: TruncateLength](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setTruncateLength(value: Double): Self = StObject.set(x, "truncateLength", value.asInstanceOf[js.Any])
+    inline def setTruncateLength(value: Double): Self = StObject.set(x, "truncateLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncateLengthUndefined: Self = StObject.set(x, "truncateLength", js.undefined)
+    inline def setTruncateLengthUndefined: Self = StObject.set(x, "truncateLength", js.undefined)
   }
 }

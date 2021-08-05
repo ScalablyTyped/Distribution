@@ -21,23 +21,18 @@ trait BinarySelectorAtom
 }
 object BinarySelectorAtom {
   
-  @scala.inline
-  def apply(left: SubjectSelector, right: SubjectSelector, `type`: child | sibling | adjacent | descendant): BinarySelectorAtom = {
+  inline def apply(left: SubjectSelector, right: SubjectSelector, `type`: child | sibling | adjacent | descendant): BinarySelectorAtom = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySelectorAtom]
   }
   
-  @scala.inline
-  implicit class BinarySelectorAtomMutableBuilder[Self <: BinarySelectorAtom] (val x: Self) extends AnyVal {
+  extension [Self <: BinarySelectorAtom](x: Self) {
     
-    @scala.inline
-    def setLeft(value: SubjectSelector): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: SubjectSelector): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: SubjectSelector): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: SubjectSelector): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: child | sibling | adjacent | descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: child | sibling | adjacent | descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

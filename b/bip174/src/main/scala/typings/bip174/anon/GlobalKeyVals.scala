@@ -15,8 +15,7 @@ trait GlobalKeyVals extends StObject {
 }
 object GlobalKeyVals {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     globalKeyVals: js.Array[KeyValue],
     inputKeyVals: js.Array[js.Array[KeyValue]],
     outputKeyVals: js.Array[js.Array[KeyValue]]
@@ -25,25 +24,18 @@ object GlobalKeyVals {
     __obj.asInstanceOf[GlobalKeyVals]
   }
   
-  @scala.inline
-  implicit class GlobalKeyValsMutableBuilder[Self <: GlobalKeyVals] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalKeyVals](x: Self) {
     
-    @scala.inline
-    def setGlobalKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "globalKeyVals", value.asInstanceOf[js.Any])
+    inline def setGlobalKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "globalKeyVals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "globalKeyVals", js.Array(value :_*))
+    inline def setGlobalKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "globalKeyVals", js.Array(value :_*))
     
-    @scala.inline
-    def setInputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "inputKeyVals", value.asInstanceOf[js.Any])
+    inline def setInputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "inputKeyVals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "inputKeyVals", js.Array(value :_*))
+    inline def setInputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "inputKeyVals", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "outputKeyVals", value.asInstanceOf[js.Any])
+    inline def setOutputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "outputKeyVals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "outputKeyVals", js.Array(value :_*))
+    inline def setOutputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "outputKeyVals", js.Array(value :_*))
   }
 }

@@ -27,26 +27,22 @@ object shortcutsStoriesMod {
     @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "default.component")
     @js.native
     def component: Instantiable1[/* props */ ShortcutsScreenProps, ShortcutsScreen] = js.native
-    @scala.inline
-    def component_=(x: Instantiable1[/* props */ ShortcutsScreenProps, ShortcutsScreen]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: Instantiable1[/* props */ ShortcutsScreenProps, ShortcutsScreen]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "default.decorators")
     @js.native
     def decorators: js.Array[DecoratorFunction[StoryFnReactReturnType]] = js.native
-    @scala.inline
-    def decorators_=(x: js.Array[DecoratorFunction[StoryFnReactReturnType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+    inline def decorators_=(x: js.Array[DecoratorFunction[StoryFnReactReturnType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
   object defaults {
     
-    @scala.inline
-    def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+    inline def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
     
     @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "defaults")
     @js.native
@@ -55,7 +51,6 @@ object shortcutsStoriesMod {
     @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "defaults.storyName")
     @js.native
     def storyName: String = js.native
-    @scala.inline
-    def storyName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyName")(x.asInstanceOf[js.Any])
+    inline def storyName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyName")(x.asInstanceOf[js.Any])
   }
 }

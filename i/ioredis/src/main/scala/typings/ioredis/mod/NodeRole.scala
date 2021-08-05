@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodeRole extends StObject
 object NodeRole {
   
-  @scala.inline
-  def all: typings.ioredis.ioredisStrings.all = "all".asInstanceOf[typings.ioredis.ioredisStrings.all]
+  inline def all: typings.ioredis.ioredisStrings.all = "all".asInstanceOf[typings.ioredis.ioredisStrings.all]
   
-  @scala.inline
-  def master: typings.ioredis.ioredisStrings.master = "master".asInstanceOf[typings.ioredis.ioredisStrings.master]
+  inline def master: typings.ioredis.ioredisStrings.master = "master".asInstanceOf[typings.ioredis.ioredisStrings.master]
   
-  @scala.inline
-  def slave: typings.ioredis.ioredisStrings.slave = "slave".asInstanceOf[typings.ioredis.ioredisStrings.slave]
+  inline def slave: typings.ioredis.ioredisStrings.slave = "slave".asInstanceOf[typings.ioredis.ioredisStrings.slave]
 }

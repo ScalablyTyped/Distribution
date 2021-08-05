@@ -32,8 +32,7 @@ trait RaphaelElementImplementationMap extends StObject {
 }
 object RaphaelElementImplementationMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     circle: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement],
     ellipse: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement],
     image: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement],
@@ -45,25 +44,18 @@ object RaphaelElementImplementationMap {
     __obj.asInstanceOf[RaphaelElementImplementationMap]
   }
   
-  @scala.inline
-  implicit class RaphaelElementImplementationMapMutableBuilder[Self <: RaphaelElementImplementationMap] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelElementImplementationMap](x: Self) {
     
-    @scala.inline
-    def setCircle(value: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipse(value: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    inline def setEllipse(value: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: RaphaelElementByTechnologyMap[SVGPathElement, VMLPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: RaphaelElementByTechnologyMap[SVGPathElement, VMLPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: RaphaelElementByTechnologyMap[SVGRectElement, VMLRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: RaphaelElementByTechnologyMap[SVGRectElement, VMLRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait WebGLShaderPrecisionFormat extends StObject {
 }
 object WebGLShaderPrecisionFormat {
   
-  @scala.inline
-  def apply(precision: GLint, rangeMax: GLint, rangeMin: GLint): WebGLShaderPrecisionFormat = {
+  inline def apply(precision: GLint, rangeMax: GLint, rangeMin: GLint): WebGLShaderPrecisionFormat = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], rangeMax = rangeMax.asInstanceOf[js.Any], rangeMin = rangeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLShaderPrecisionFormat]
   }
   
-  @scala.inline
-  implicit class WebGLShaderPrecisionFormatMutableBuilder[Self <: WebGLShaderPrecisionFormat] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLShaderPrecisionFormat](x: Self) {
     
-    @scala.inline
-    def setPrecision(value: GLint): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: GLint): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeMax(value: GLint): Self = StObject.set(x, "rangeMax", value.asInstanceOf[js.Any])
+    inline def setRangeMax(value: GLint): Self = StObject.set(x, "rangeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeMin(value: GLint): Self = StObject.set(x, "rangeMin", value.asInstanceOf[js.Any])
+    inline def setRangeMin(value: GLint): Self = StObject.set(x, "rangeMin", value.asInstanceOf[js.Any])
   }
 }

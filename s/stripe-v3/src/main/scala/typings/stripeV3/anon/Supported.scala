@@ -10,19 +10,15 @@ trait Supported extends StObject {
 }
 object Supported {
   
-  @scala.inline
-  def apply(): Supported = {
+  inline def apply(): Supported = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Supported]
   }
   
-  @scala.inline
-  implicit class SupportedMutableBuilder[Self <: Supported] (val x: Self) extends AnyVal {
+  extension [Self <: Supported](x: Self) {
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedUndefined: Self = StObject.set(x, "supported", js.undefined)
+    inline def setSupportedUndefined: Self = StObject.set(x, "supported", js.undefined)
   }
 }

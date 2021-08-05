@@ -12,28 +12,21 @@ trait AdditionalRoles extends StObject {
 }
 object AdditionalRoles {
   
-  @scala.inline
-  def apply(): AdditionalRoles = {
+  inline def apply(): AdditionalRoles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdditionalRoles]
   }
   
-  @scala.inline
-  implicit class AdditionalRolesMutableBuilder[Self <: AdditionalRoles] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalRoles](x: Self) {
     
-    @scala.inline
-    def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
+    inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
+    inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
     
-    @scala.inline
-    def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+    inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimaryRole(value: String): Self = StObject.set(x, "primaryRole", value.asInstanceOf[js.Any])
+    inline def setPrimaryRole(value: String): Self = StObject.set(x, "primaryRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryRoleUndefined: Self = StObject.set(x, "primaryRole", js.undefined)
+    inline def setPrimaryRoleUndefined: Self = StObject.set(x, "primaryRole", js.undefined)
   }
 }

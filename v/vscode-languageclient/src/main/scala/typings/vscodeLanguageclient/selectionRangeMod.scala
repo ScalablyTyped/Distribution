@@ -49,17 +49,14 @@ object selectionRangeMod {
   }
   object SelectionRangeProviderMiddleware {
     
-    @scala.inline
-    def apply(): SelectionRangeProviderMiddleware = {
+    inline def apply(): SelectionRangeProviderMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectionRangeProviderMiddleware]
     }
     
-    @scala.inline
-    implicit class SelectionRangeProviderMiddlewareMutableBuilder[Self <: SelectionRangeProviderMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionRangeProviderMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideSelectionRanges(
+      inline def setProvideSelectionRanges(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -70,8 +67,7 @@ object selectionRangeMod {
             ]
       ): Self = StObject.set(x, "provideSelectionRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideSelectionRangesUndefined: Self = StObject.set(x, "provideSelectionRanges", js.undefined)
+      inline def setProvideSelectionRangesUndefined: Self = StObject.set(x, "provideSelectionRanges", js.undefined)
     }
   }
 }

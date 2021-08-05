@@ -10,16 +10,13 @@ trait ValueAlign extends StObject {
 }
 object ValueAlign {
   
-  @scala.inline
-  def apply(value: typings.vegaTypings.encodeMod.Align): ValueAlign = {
+  inline def apply(value: typings.vegaTypings.encodeMod.Align): ValueAlign = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAlign]
   }
   
-  @scala.inline
-  implicit class ValueAlignMutableBuilder[Self <: ValueAlign] (val x: Self) extends AnyVal {
+  extension [Self <: ValueAlign](x: Self) {
     
-    @scala.inline
-    def setValue(value: typings.vegaTypings.encodeMod.Align): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.vegaTypings.encodeMod.Align): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

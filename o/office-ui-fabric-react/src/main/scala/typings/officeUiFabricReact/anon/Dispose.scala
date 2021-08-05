@@ -12,19 +12,15 @@ trait Dispose extends StObject {
 }
 object Dispose {
   
-  @scala.inline
-  def apply(dispose: () => scala.Unit, key: String): Dispose = {
+  inline def apply(dispose: () => scala.Unit, key: String): Dispose = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dispose]
   }
   
-  @scala.inline
-  implicit class DisposeMutableBuilder[Self <: Dispose] (val x: Self) extends AnyVal {
+  extension [Self <: Dispose](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

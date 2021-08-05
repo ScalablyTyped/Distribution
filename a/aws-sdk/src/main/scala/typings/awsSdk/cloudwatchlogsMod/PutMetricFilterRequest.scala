@@ -28,8 +28,7 @@ trait PutMetricFilterRequest extends StObject {
 }
 object PutMetricFilterRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterName: FilterName,
     filterPattern: FilterPattern,
     logGroupName: LogGroupName,
@@ -39,22 +38,16 @@ object PutMetricFilterRequest {
     __obj.asInstanceOf[PutMetricFilterRequest]
   }
   
-  @scala.inline
-  implicit class PutMetricFilterRequestMutableBuilder[Self <: PutMetricFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutMetricFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+    inline def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTransformations(value: MetricTransformations): Self = StObject.set(x, "metricTransformations", value.asInstanceOf[js.Any])
+    inline def setMetricTransformations(value: MetricTransformations): Self = StObject.set(x, "metricTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value :_*))
+    inline def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value :_*))
   }
 }

@@ -8,6 +8,5 @@ object pRetryStrings {
   
   @js.native
   sealed trait AbortError extends StObject
-  @scala.inline
-  def AbortError: AbortError = "AbortError".asInstanceOf[AbortError]
+  inline def AbortError: AbortError = "AbortError".asInstanceOf[AbortError]
 }

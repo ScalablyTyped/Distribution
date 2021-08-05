@@ -11,11 +11,9 @@ object lintErrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def errorComparator(err1: LintError, err2: LintError): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("errorComparator")(err1.asInstanceOf[js.Any], err2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def errorComparator(err1: LintError, err2: LintError): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("errorComparator")(err1.asInstanceOf[js.Any], err2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def lintSyntaxError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("lintSyntaxError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def lintSyntaxError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("lintSyntaxError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   trait LintError extends StObject {
     
@@ -27,23 +25,18 @@ object lintErrorMod {
   }
   object LintError {
     
-    @scala.inline
-    def apply(endPos: PositionInFile, message: String, startPos: PositionInFile): LintError = {
+    inline def apply(endPos: PositionInFile, message: String, startPos: PositionInFile): LintError = {
       val __obj = js.Dynamic.literal(endPos = endPos.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], startPos = startPos.asInstanceOf[js.Any])
       __obj.asInstanceOf[LintError]
     }
     
-    @scala.inline
-    implicit class LintErrorMutableBuilder[Self <: LintError] (val x: Self) extends AnyVal {
+    extension [Self <: LintError](x: Self) {
       
-      @scala.inline
-      def setEndPos(value: PositionInFile): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
+      inline def setEndPos(value: PositionInFile): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPos(value: PositionInFile): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
+      inline def setStartPos(value: PositionInFile): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,20 +48,16 @@ object lintErrorMod {
   }
   object PositionInFile {
     
-    @scala.inline
-    def apply(col: Double, line: Double): PositionInFile = {
+    inline def apply(col: Double, line: Double): PositionInFile = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[PositionInFile]
     }
     
-    @scala.inline
-    implicit class PositionInFileMutableBuilder[Self <: PositionInFile] (val x: Self) extends AnyVal {
+    extension [Self <: PositionInFile](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
 }

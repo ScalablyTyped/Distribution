@@ -9,58 +9,49 @@ object gcsResumableUploadStrings {
   
   @js.native
   sealed trait Asterisk extends StObject
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait authenticatedRead
     extends StObject
        with PredefinedAcl
-  @scala.inline
-  def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
+  inline def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
   
   @js.native
   sealed trait bucketOwnerFullControl
     extends StObject
        with PredefinedAcl
-  @scala.inline
-  def bucketOwnerFullControl: bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[bucketOwnerFullControl]
+  inline def bucketOwnerFullControl: bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[bucketOwnerFullControl]
   
   @js.native
   sealed trait bucketOwnerRead
     extends StObject
        with PredefinedAcl
-  @scala.inline
-  def bucketOwnerRead: bucketOwnerRead = "bucketOwnerRead".asInstanceOf[bucketOwnerRead]
+  inline def bucketOwnerRead: bucketOwnerRead = "bucketOwnerRead".asInstanceOf[bucketOwnerRead]
   
   @js.native
   sealed trait full extends StObject
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait noAcl extends StObject
-  @scala.inline
-  def noAcl: noAcl = "noAcl".asInstanceOf[noAcl]
+  inline def noAcl: noAcl = "noAcl".asInstanceOf[noAcl]
   
   @js.native
   sealed trait `private`
     extends StObject
        with PredefinedAcl
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait projectPrivate
     extends StObject
        with PredefinedAcl
-  @scala.inline
-  def projectPrivate: projectPrivate = "projectPrivate".asInstanceOf[projectPrivate]
+  inline def projectPrivate: projectPrivate = "projectPrivate".asInstanceOf[projectPrivate]
   
   @js.native
   sealed trait publicRead
     extends StObject
        with PredefinedAcl
-  @scala.inline
-  def publicRead: publicRead = "publicRead".asInstanceOf[publicRead]
+  inline def publicRead: publicRead = "publicRead".asInstanceOf[publicRead]
 }

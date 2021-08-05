@@ -26,8 +26,7 @@ trait ConversionInfo
 }
 object ConversionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     convert: () => Unit,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object ConversionInfo {
     __obj.asInstanceOf[ConversionInfo]
   }
   
-  @scala.inline
-  implicit class ConversionInfoMutableBuilder[Self <: ConversionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConversionInfo](x: Self) {
     
-    @scala.inline
-    def setConvert(value: () => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
+    inline def setConvert(value: () => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReverseConvert(value: () => Unit): Self = StObject.set(x, "reverseConvert", js.Any.fromFunction0(value))
+    inline def setReverseConvert(value: () => Unit): Self = StObject.set(x, "reverseConvert", js.Any.fromFunction0(value))
   }
 }

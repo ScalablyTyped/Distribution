@@ -20,22 +20,17 @@ trait SchemaInitializers extends StObject {
 }
 object SchemaInitializers {
   
-  @scala.inline
-  def apply(): SchemaInitializers = {
+  inline def apply(): SchemaInitializers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInitializers]
   }
   
-  @scala.inline
-  implicit class SchemaInitializersMutableBuilder[Self <: SchemaInitializers] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInitializers](x: Self) {
     
-    @scala.inline
-    def setPending(value: js.Array[SchemaInitializer]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: js.Array[SchemaInitializer]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
-    @scala.inline
-    def setPendingVarargs(value: SchemaInitializer*): Self = StObject.set(x, "pending", js.Array(value :_*))
+    inline def setPendingVarargs(value: SchemaInitializer*): Self = StObject.set(x, "pending", js.Array(value :_*))
   }
 }

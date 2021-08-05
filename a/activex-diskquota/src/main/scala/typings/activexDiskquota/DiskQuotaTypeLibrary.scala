@@ -24,23 +24,17 @@ object DiskQuotaTypeLibrary {
   trait AccountStatusConstants extends StObject
   object AccountStatusConstants {
     
-    @scala.inline
-    def dqAcctDeleted: `2` = 2.asInstanceOf[`2`]
+    inline def dqAcctDeleted: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def dqAcctInvalid: `3` = 3.asInstanceOf[`3`]
+    inline def dqAcctInvalid: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def dqAcctResolved: `0` = 0.asInstanceOf[`0`]
+    inline def dqAcctResolved: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def dqAcctUnavailable: `1` = 1.asInstanceOf[`1`]
+    inline def dqAcctUnavailable: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def dqAcctUnknown: `4` = 4.asInstanceOf[`4`]
+    inline def dqAcctUnknown: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def dqAcctUnresolved: `5` = 5.asInstanceOf[`5`]
+    inline def dqAcctUnresolved: `5` = 5.asInstanceOf[`5`]
   }
   
   /** Automation interface for DiskQuotaUser */
@@ -52,7 +46,7 @@ object DiskQuotaTypeLibrary {
     /** Status of user's account */
     val AccountStatus: AccountStatusConstants
     
-    @JSName("DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey")
+    /* private */ @JSName("DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey")
     var DiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey: DIDiskQuotaUser
     
     /** User's display name */
@@ -87,8 +81,7 @@ object DiskQuotaTypeLibrary {
   }
   object DIDiskQuotaUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccountContainerName: String,
       AccountStatus: AccountStatusConstants,
       DiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey: DIDiskQuotaUser,
@@ -108,47 +101,33 @@ object DiskQuotaTypeLibrary {
       __obj.asInstanceOf[DIDiskQuotaUser]
     }
     
-    @scala.inline
-    implicit class DIDiskQuotaUserMutableBuilder[Self <: DIDiskQuotaUser] (val x: Self) extends AnyVal {
+    extension [Self <: DIDiskQuotaUser](x: Self) {
       
-      @scala.inline
-      def setAccountContainerName(value: String): Self = StObject.set(x, "AccountContainerName", value.asInstanceOf[js.Any])
+      inline def setAccountContainerName(value: String): Self = StObject.set(x, "AccountContainerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountStatus(value: AccountStatusConstants): Self = StObject.set(x, "AccountStatus", value.asInstanceOf[js.Any])
+      inline def setAccountStatus(value: AccountStatusConstants): Self = StObject.set(x, "AccountStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey(value: DIDiskQuotaUser): Self = StObject.set(x, "DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey", value.asInstanceOf[js.Any])
+      inline def setDiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey(value: DIDiskQuotaUser): Self = StObject.set(x, "DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidate(value: () => Unit): Self = StObject.set(x, "Invalidate", js.Any.fromFunction0(value))
+      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "Invalidate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLogonName(value: String): Self = StObject.set(x, "LogonName", value.asInstanceOf[js.Any])
+      inline def setLogonName(value: String): Self = StObject.set(x, "LogonName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaLimit(value: Double): Self = StObject.set(x, "QuotaLimit", value.asInstanceOf[js.Any])
+      inline def setQuotaLimit(value: Double): Self = StObject.set(x, "QuotaLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaLimitText(value: String): Self = StObject.set(x, "QuotaLimitText", value.asInstanceOf[js.Any])
+      inline def setQuotaLimitText(value: String): Self = StObject.set(x, "QuotaLimitText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaThreshold(value: Double): Self = StObject.set(x, "QuotaThreshold", value.asInstanceOf[js.Any])
+      inline def setQuotaThreshold(value: Double): Self = StObject.set(x, "QuotaThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaThresholdText(value: String): Self = StObject.set(x, "QuotaThresholdText", value.asInstanceOf[js.Any])
+      inline def setQuotaThresholdText(value: String): Self = StObject.set(x, "QuotaThresholdText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaUsed(value: Double): Self = StObject.set(x, "QuotaUsed", value.asInstanceOf[js.Any])
+      inline def setQuotaUsed(value: Double): Self = StObject.set(x, "QuotaUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaUsedText(value: String): Self = StObject.set(x, "QuotaUsedText", value.asInstanceOf[js.Any])
+      inline def setQuotaUsedText(value: String): Self = StObject.set(x, "QuotaUsedText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,7 +152,7 @@ object DiskQuotaTypeLibrary {
     /** Delete a user quota entry */
     def DeleteUser(pUser: DIDiskQuotaUser): Unit
     
-    @JSName("DiskQuotaTypeLibrary.DiskQuotaControl_typekey")
+    /* private */ @JSName("DiskQuotaTypeLibrary.DiskQuotaControl_typekey")
     var DiskQuotaTypeLibraryDotDiskQuotaControl_typekey: DiskQuotaControl
     
     /** Find a user quota entry by Name */
@@ -214,8 +193,7 @@ object DiskQuotaTypeLibrary {
   }
   object DiskQuotaControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AddUser: String => DIDiskQuotaUser,
       DefaultQuotaLimit: Double,
       DefaultQuotaLimitText: String,
@@ -241,65 +219,45 @@ object DiskQuotaTypeLibrary {
       __obj.asInstanceOf[DiskQuotaControl]
     }
     
-    @scala.inline
-    implicit class DiskQuotaControlMutableBuilder[Self <: DiskQuotaControl] (val x: Self) extends AnyVal {
+    extension [Self <: DiskQuotaControl](x: Self) {
       
-      @scala.inline
-      def setAddUser(value: String => DIDiskQuotaUser): Self = StObject.set(x, "AddUser", js.Any.fromFunction1(value))
+      inline def setAddUser(value: String => DIDiskQuotaUser): Self = StObject.set(x, "AddUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultQuotaLimit(value: Double): Self = StObject.set(x, "DefaultQuotaLimit", value.asInstanceOf[js.Any])
+      inline def setDefaultQuotaLimit(value: Double): Self = StObject.set(x, "DefaultQuotaLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultQuotaLimitText(value: String): Self = StObject.set(x, "DefaultQuotaLimitText", value.asInstanceOf[js.Any])
+      inline def setDefaultQuotaLimitText(value: String): Self = StObject.set(x, "DefaultQuotaLimitText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultQuotaThreshold(value: Double): Self = StObject.set(x, "DefaultQuotaThreshold", value.asInstanceOf[js.Any])
+      inline def setDefaultQuotaThreshold(value: Double): Self = StObject.set(x, "DefaultQuotaThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultQuotaThresholdText(value: String): Self = StObject.set(x, "DefaultQuotaThresholdText", value.asInstanceOf[js.Any])
+      inline def setDefaultQuotaThresholdText(value: String): Self = StObject.set(x, "DefaultQuotaThresholdText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUser(value: DIDiskQuotaUser => Unit): Self = StObject.set(x, "DeleteUser", js.Any.fromFunction1(value))
+      inline def setDeleteUser(value: DIDiskQuotaUser => Unit): Self = StObject.set(x, "DeleteUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDiskQuotaTypeLibraryDotDiskQuotaControl_typekey(value: DiskQuotaControl): Self = StObject.set(x, "DiskQuotaTypeLibrary.DiskQuotaControl_typekey", value.asInstanceOf[js.Any])
+      inline def setDiskQuotaTypeLibraryDotDiskQuotaControl_typekey(value: DiskQuotaControl): Self = StObject.set(x, "DiskQuotaTypeLibrary.DiskQuotaControl_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindUser(value: String => DIDiskQuotaUser): Self = StObject.set(x, "FindUser", js.Any.fromFunction1(value))
+      inline def setFindUser(value: String => DIDiskQuotaUser): Self = StObject.set(x, "FindUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGiveUserNameResolutionPriority(value: DIDiskQuotaUser => Unit): Self = StObject.set(x, "GiveUserNameResolutionPriority", js.Any.fromFunction1(value))
+      inline def setGiveUserNameResolutionPriority(value: DIDiskQuotaUser => Unit): Self = StObject.set(x, "GiveUserNameResolutionPriority", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialize(value: (String, Boolean) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction2(value))
+      inline def setInitialize(value: (String, Boolean) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalidateSidNameCache(value: () => Unit): Self = StObject.set(x, "InvalidateSidNameCache", js.Any.fromFunction0(value))
+      inline def setInvalidateSidNameCache(value: () => Unit): Self = StObject.set(x, "InvalidateSidNameCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLogQuotaLimit(value: Boolean): Self = StObject.set(x, "LogQuotaLimit", value.asInstanceOf[js.Any])
+      inline def setLogQuotaLimit(value: Boolean): Self = StObject.set(x, "LogQuotaLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogQuotaThreshold(value: Boolean): Self = StObject.set(x, "LogQuotaThreshold", value.asInstanceOf[js.Any])
+      inline def setLogQuotaThreshold(value: Boolean): Self = StObject.set(x, "LogQuotaThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaFileIncomplete(value: Boolean): Self = StObject.set(x, "QuotaFileIncomplete", value.asInstanceOf[js.Any])
+      inline def setQuotaFileIncomplete(value: Boolean): Self = StObject.set(x, "QuotaFileIncomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaFileRebuilding(value: Boolean): Self = StObject.set(x, "QuotaFileRebuilding", value.asInstanceOf[js.Any])
+      inline def setQuotaFileRebuilding(value: Boolean): Self = StObject.set(x, "QuotaFileRebuilding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaState(value: QuotaStateConstants): Self = StObject.set(x, "QuotaState", value.asInstanceOf[js.Any])
+      inline def setQuotaState(value: QuotaStateConstants): Self = StObject.set(x, "QuotaState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShutdownNameResolution(value: () => Unit): Self = StObject.set(x, "ShutdownNameResolution", js.Any.fromFunction0(value))
+      inline def setShutdownNameResolution(value: () => Unit): Self = StObject.set(x, "ShutdownNameResolution", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTranslateLogonNameToSID(value: String => String): Self = StObject.set(x, "TranslateLogonNameToSID", js.Any.fromFunction1(value))
+      inline def setTranslateLogonNameToSID(value: String => String): Self = StObject.set(x, "TranslateLogonNameToSID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUserNameResolution(value: UserNameResolutionConstants): Self = StObject.set(x, "UserNameResolution", value.asInstanceOf[js.Any])
+      inline def setUserNameResolution(value: UserNameResolutionConstants): Self = StObject.set(x, "UserNameResolution", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,14 +270,11 @@ object DiskQuotaTypeLibrary {
   trait QuotaStateConstants extends StObject
   object QuotaStateConstants {
     
-    @scala.inline
-    def dqStateDisable: `0` = 0.asInstanceOf[`0`]
+    inline def dqStateDisable: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def dqStateEnforce: `2` = 2.asInstanceOf[`2`]
+    inline def dqStateEnforce: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def dqStateTrack: `1` = 1.asInstanceOf[`1`]
+    inline def dqStateTrack: `1` = 1.asInstanceOf[`1`]
   }
   
   // tslint:disable-next-line no-const-enum
@@ -331,13 +286,10 @@ object DiskQuotaTypeLibrary {
   trait UserNameResolutionConstants extends StObject
   object UserNameResolutionConstants {
     
-    @scala.inline
-    def dqResolveAsync: `2` = 2.asInstanceOf[`2`]
+    inline def dqResolveAsync: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def dqResolveNone: `0` = 0.asInstanceOf[`0`]
+    inline def dqResolveNone: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def dqResolveSync: `1` = 1.asInstanceOf[`1`]
+    inline def dqResolveSync: `1` = 1.asInstanceOf[`1`]
   }
 }

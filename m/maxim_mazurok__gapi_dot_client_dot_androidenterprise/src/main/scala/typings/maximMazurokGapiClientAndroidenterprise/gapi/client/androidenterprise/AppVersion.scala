@@ -23,46 +23,33 @@ trait AppVersion extends StObject {
 }
 object AppVersion {
   
-  @scala.inline
-  def apply(): AppVersion = {
+  inline def apply(): AppVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppVersion]
   }
   
-  @scala.inline
-  implicit class AppVersionMutableBuilder[Self <: AppVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AppVersion](x: Self) {
     
-    @scala.inline
-    def setIsProduction(value: Boolean): Self = StObject.set(x, "isProduction", value.asInstanceOf[js.Any])
+    inline def setIsProduction(value: Boolean): Self = StObject.set(x, "isProduction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsProductionUndefined: Self = StObject.set(x, "isProduction", js.undefined)
+    inline def setIsProductionUndefined: Self = StObject.set(x, "isProduction", js.undefined)
     
-    @scala.inline
-    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackId(value: js.Array[String]): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
+    inline def setTrackId(value: js.Array[String]): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
+    inline def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
     
-    @scala.inline
-    def setTrackIdVarargs(value: String*): Self = StObject.set(x, "trackId", js.Array(value :_*))
+    inline def setTrackIdVarargs(value: String*): Self = StObject.set(x, "trackId", js.Array(value :_*))
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
-    @scala.inline
-    def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
+    inline def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
+    inline def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
   }
 }

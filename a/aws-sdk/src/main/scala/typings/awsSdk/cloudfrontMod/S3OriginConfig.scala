@@ -13,16 +13,13 @@ trait S3OriginConfig extends StObject {
 }
 object S3OriginConfig {
   
-  @scala.inline
-  def apply(OriginAccessIdentity: String): S3OriginConfig = {
+  inline def apply(OriginAccessIdentity: String): S3OriginConfig = {
     val __obj = js.Dynamic.literal(OriginAccessIdentity = OriginAccessIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3OriginConfig]
   }
   
-  @scala.inline
-  implicit class S3OriginConfigMutableBuilder[Self <: S3OriginConfig] (val x: Self) extends AnyVal {
+  extension [Self <: S3OriginConfig](x: Self) {
     
-    @scala.inline
-    def setOriginAccessIdentity(value: String): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
+    inline def setOriginAccessIdentity(value: String): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
   }
 }

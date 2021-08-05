@@ -10,20 +10,17 @@ trait _InterpolationValue
      with _SimpleInterpolation
 object _InterpolationValue {
   
-  @scala.inline
-  def CSSObject(): typings.styledComponents.styledComponentsMod.CSSObject = {
+  inline def CSSObject(): typings.styledComponents.styledComponentsMod.CSSObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.styledComponents.styledComponentsMod.CSSObject]
   }
   
-  @scala.inline
-  def Keyframes_(getName: () => String): typings.styledComponents.styledComponentsMod.Keyframes_ = {
+  inline def Keyframes_(getName: () => String): typings.styledComponents.styledComponentsMod.Keyframes_ = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName))
     __obj.asInstanceOf[typings.styledComponents.styledComponentsMod.Keyframes_]
   }
   
-  @scala.inline
-  def PickStyledComponentBasean(
+  inline def PickStyledComponentBasean(
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
@@ -37,8 +34,7 @@ object _InterpolationValue {
     __obj.asInstanceOf[typings.styledComponents.anon.PickStyledComponentBasean]
   }
   
-  @scala.inline
-  def PickStyledComponentBaseanDefaultProps(
+  inline def PickStyledComponentBaseanDefaultProps(
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 

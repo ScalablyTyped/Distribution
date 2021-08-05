@@ -23,22 +23,17 @@ trait CategoryLanguageTitle extends StObject {
 }
 object CategoryLanguageTitle {
   
-  @scala.inline
-  def apply(lang: String, lcid: Double, title: String): CategoryLanguageTitle = {
+  inline def apply(lang: String, lcid: Double, title: String): CategoryLanguageTitle = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryLanguageTitle]
   }
   
-  @scala.inline
-  implicit class CategoryLanguageTitleMutableBuilder[Self <: CategoryLanguageTitle] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryLanguageTitle](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+    inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -27,25 +27,19 @@ trait SchemaMetricValue extends StObject {
 }
 object SchemaMetricValue {
   
-  @scala.inline
-  def apply(): SchemaMetricValue = {
+  inline def apply(): SchemaMetricValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetricValue]
   }
   
-  @scala.inline
-  implicit class SchemaMetricValueMutableBuilder[Self <: SchemaMetricValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetricValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setVariance(value: String): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: String): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

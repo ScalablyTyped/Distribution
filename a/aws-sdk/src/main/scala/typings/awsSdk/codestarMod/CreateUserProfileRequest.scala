@@ -28,28 +28,21 @@ trait CreateUserProfileRequest extends StObject {
 }
 object CreateUserProfileRequest {
   
-  @scala.inline
-  def apply(displayName: UserProfileDisplayName, emailAddress: Email, userArn: UserArn): CreateUserProfileRequest = {
+  inline def apply(displayName: UserProfileDisplayName, emailAddress: Email, userArn: UserArn): CreateUserProfileRequest = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserProfileRequest]
   }
   
-  @scala.inline
-  implicit class CreateUserProfileRequestMutableBuilder[Self <: CreateUserProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserProfileRequest](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: UserProfileDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: UserProfileDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
+    inline def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
+    inline def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
   }
 }

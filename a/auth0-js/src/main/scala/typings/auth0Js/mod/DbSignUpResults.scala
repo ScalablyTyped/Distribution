@@ -14,19 +14,15 @@ trait DbSignUpResults extends StObject {
 }
 object DbSignUpResults {
   
-  @scala.inline
-  def apply(email: String, emailVerified: Boolean): DbSignUpResults = {
+  inline def apply(email: String, emailVerified: Boolean): DbSignUpResults = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbSignUpResults]
   }
   
-  @scala.inline
-  implicit class DbSignUpResultsMutableBuilder[Self <: DbSignUpResults] (val x: Self) extends AnyVal {
+  extension [Self <: DbSignUpResults](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
+    inline def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
   }
 }

@@ -12,10 +12,8 @@ object getCertificateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateResult]]
-  @scala.inline
-  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
+  inline def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateResult]]
+  inline def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
   
   trait GetCertificateArgs extends StObject {
     
@@ -53,56 +51,40 @@ object getCertificateMod {
   }
   object GetCertificateArgs {
     
-    @scala.inline
-    def apply(domain: String): GetCertificateArgs = {
+    inline def apply(domain: String): GetCertificateArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCertificateArgs]
     }
     
-    @scala.inline
-    implicit class GetCertificateArgsMutableBuilder[Self <: GetCertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateArgs](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypes(value: js.Array[String]): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
+      inline def setKeyTypes(value: js.Array[String]): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
+      inline def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
       
-      @scala.inline
-      def setKeyTypesVarargs(value: String*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
+      inline def setKeyTypesVarargs(value: String*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setStatuses(value: js.Array[String]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+      inline def setStatuses(value: js.Array[String]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+      inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
       
-      @scala.inline
-      def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+      inline def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -135,59 +117,42 @@ object getCertificateMod {
   }
   object GetCertificateResult {
     
-    @scala.inline
-    def apply(arn: String, domain: String, id: String, tags: StringDictionary[String]): GetCertificateResult = {
+    inline def apply(arn: String, domain: String, id: String, tags: StringDictionary[String]): GetCertificateResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCertificateResult]
     }
     
-    @scala.inline
-    implicit class GetCertificateResultMutableBuilder[Self <: GetCertificateResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypes(value: js.Array[String]): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
+      inline def setKeyTypes(value: js.Array[String]): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
+      inline def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
       
-      @scala.inline
-      def setKeyTypesVarargs(value: String*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
+      inline def setKeyTypesVarargs(value: String*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setStatuses(value: js.Array[String]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+      inline def setStatuses(value: js.Array[String]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+      inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
       
-      @scala.inline
-      def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+      inline def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
 }

@@ -20,41 +20,30 @@ object anon {
   }
   object Args {
     
-    @scala.inline
-    def apply(): Args = {
+    inline def apply(): Args = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Args]
     }
     
-    @scala.inline
-    implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+    extension [Self <: Args](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setExtends(value: Error): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+      inline def setExtends(value: Error): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+      inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      @scala.inline
-      def setGenerateMessage(value: () => String): Self = StObject.set(x, "generateMessage", js.Any.fromFunction0(value))
+      inline def setGenerateMessage(value: () => String): Self = StObject.set(x, "generateMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerateMessageUndefined: Self = StObject.set(x, "generateMessage", js.undefined)
+      inline def setGenerateMessageUndefined: Self = StObject.set(x, "generateMessage", js.undefined)
       
-      @scala.inline
-      def setGlobalize(value: Boolean): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
+      inline def setGlobalize(value: Boolean): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalizeUndefined: Self = StObject.set(x, "globalize", js.undefined)
+      inline def setGlobalizeUndefined: Self = StObject.set(x, "globalize", js.undefined)
     }
   }
 }

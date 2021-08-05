@@ -27,46 +27,33 @@ trait GeocodingComponents extends StObject {
 }
 object GeocodingComponents {
   
-  @scala.inline
-  def apply(): GeocodingComponents = {
+  inline def apply(): GeocodingComponents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeocodingComponents]
   }
   
-  @scala.inline
-  implicit class GeocodingComponentsMutableBuilder[Self <: GeocodingComponents] (val x: Self) extends AnyVal {
+  extension [Self <: GeocodingComponents](x: Self) {
     
-    @scala.inline
-    def setAdministrative_area(value: String): Self = StObject.set(x, "administrative_area", value.asInstanceOf[js.Any])
+    inline def setAdministrative_area(value: String): Self = StObject.set(x, "administrative_area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministrative_areaUndefined: Self = StObject.set(x, "administrative_area", js.undefined)
+    inline def setAdministrative_areaUndefined: Self = StObject.set(x, "administrative_area", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String | js.Array[String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String | js.Array[String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value :_*))
+    inline def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value :_*))
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+    inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
-    @scala.inline
-    def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+    inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
+    inline def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
     
-    @scala.inline
-    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
   }
 }

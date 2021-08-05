@@ -15,22 +15,17 @@ trait GlobalXpub extends StObject {
 }
 object GlobalXpub {
   
-  @scala.inline
-  def apply(extendedPubkey: Buffer, masterFingerprint: Buffer, path: String): GlobalXpub = {
+  inline def apply(extendedPubkey: Buffer, masterFingerprint: Buffer, path: String): GlobalXpub = {
     val __obj = js.Dynamic.literal(extendedPubkey = extendedPubkey.asInstanceOf[js.Any], masterFingerprint = masterFingerprint.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalXpub]
   }
   
-  @scala.inline
-  implicit class GlobalXpubMutableBuilder[Self <: GlobalXpub] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalXpub](x: Self) {
     
-    @scala.inline
-    def setExtendedPubkey(value: Buffer): Self = StObject.set(x, "extendedPubkey", value.asInstanceOf[js.Any])
+    inline def setExtendedPubkey(value: Buffer): Self = StObject.set(x, "extendedPubkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterFingerprint(value: Buffer): Self = StObject.set(x, "masterFingerprint", value.asInstanceOf[js.Any])
+    inline def setMasterFingerprint(value: Buffer): Self = StObject.set(x, "masterFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

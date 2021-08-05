@@ -23,28 +23,21 @@ trait RemoteMutedState extends StObject {
 }
 object RemoteMutedState {
   
-  @scala.inline
-  def apply(audioMuted: Boolean, hasAudio: Boolean, hasVideo: Boolean, userId: String, videoMuted: Boolean): RemoteMutedState = {
+  inline def apply(audioMuted: Boolean, hasAudio: Boolean, hasVideo: Boolean, userId: String, videoMuted: Boolean): RemoteMutedState = {
     val __obj = js.Dynamic.literal(audioMuted = audioMuted.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], hasVideo = hasVideo.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], videoMuted = videoMuted.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteMutedState]
   }
   
-  @scala.inline
-  implicit class RemoteMutedStateMutableBuilder[Self <: RemoteMutedState] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteMutedState](x: Self) {
     
-    @scala.inline
-    def setAudioMuted(value: Boolean): Self = StObject.set(x, "audioMuted", value.asInstanceOf[js.Any])
+    inline def setAudioMuted(value: Boolean): Self = StObject.set(x, "audioMuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
+    inline def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasVideo(value: Boolean): Self = StObject.set(x, "hasVideo", value.asInstanceOf[js.Any])
+    inline def setHasVideo(value: Boolean): Self = StObject.set(x, "hasVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoMuted(value: Boolean): Self = StObject.set(x, "videoMuted", value.asInstanceOf[js.Any])
+    inline def setVideoMuted(value: Boolean): Self = StObject.set(x, "videoMuted", value.asInstanceOf[js.Any])
   }
 }

@@ -158,6 +158,5 @@ object Duplex {
     * @deprecated DO NOT USE
     */
   /* static member */
-  @scala.inline
-  def from(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def from(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

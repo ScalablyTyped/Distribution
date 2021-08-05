@@ -11,11 +11,11 @@ class QuestionPanelDynamicImplementor protected () extends QuestionImplementor {
   
   /* protected */ def addPanel(): Unit = js.native
   
-  val buttonAddCss: String = js.native
+  /* protected */ val buttonAddCss: String = js.native
   
-  val buttonNextCss: js.Any = js.native
+  /* protected */ val buttonNextCss: js.Any = js.native
   
-  val buttonPrevCss: js.Any = js.native
+  /* protected */ val buttonPrevCss: js.Any = js.native
   
   var koAddPanelClick: js.Any = js.native
   
@@ -65,7 +65,7 @@ class QuestionPanelDynamicImplementor protected () extends QuestionImplementor {
   
   /* protected */ def onRenderModeChanged(): Unit = js.native
   
-  val progress: String = js.native
+  /* protected */ val progress: String = js.native
   
   /* protected */ def removePanel(`val`: js.Any): Unit = js.native
 }

@@ -14,17 +14,14 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(file: String): File = {
+    inline def apply(file: String): File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,8 +41,7 @@ object anon {
   }
   object FromUrl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromUrl: (String, Store, js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit,
       upload: (ReadStream, Store, js.Function2[/* err */ Error, /* res */ File, Unit]) => Unit
     ): FromUrl = {
@@ -53,16 +49,13 @@ object anon {
       __obj.asInstanceOf[FromUrl]
     }
     
-    @scala.inline
-    implicit class FromUrlMutableBuilder[Self <: FromUrl] (val x: Self) extends AnyVal {
+    extension [Self <: FromUrl](x: Self) {
       
-      @scala.inline
-      def setFromUrl(
+      inline def setFromUrl(
         value: (String, Store, js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit
       ): Self = StObject.set(x, "fromUrl", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpload(value: (ReadStream, Store, js.Function2[/* err */ Error, /* res */ File, Unit]) => Unit): Self = StObject.set(x, "upload", js.Any.fromFunction3(value))
+      inline def setUpload(value: (ReadStream, Store, js.Function2[/* err */ Error, /* res */ File, Unit]) => Unit): Self = StObject.set(x, "upload", js.Any.fromFunction3(value))
     }
   }
   
@@ -74,8 +67,7 @@ object anon {
   }
   object Remove {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       remove: (String, js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit,
       store: (String, js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit
     ): Remove = {
@@ -83,16 +75,13 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    @scala.inline
-    implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
+    extension [Self <: Remove](x: Self) {
       
-      @scala.inline
-      def setRemove(
+      inline def setRemove(
         value: (String, js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit
       ): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStore(
+      inline def setStore(
         value: (String, js.Function2[/* err */ Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit
       ): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
     }
@@ -104,20 +93,16 @@ object anon {
   }
   object Store {
     
-    @scala.inline
-    def apply(): Store = {
+    inline def apply(): Store = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Store]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+    extension [Self <: Store](x: Self) {
       
-      @scala.inline
-      def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
 }

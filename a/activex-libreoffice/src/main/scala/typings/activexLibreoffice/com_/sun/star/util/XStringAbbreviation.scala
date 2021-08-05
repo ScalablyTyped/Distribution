@@ -32,8 +32,7 @@ trait XStringAbbreviation
 }
 object XStringAbbreviation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abbreviateString: (XStringWidth, Double, String) => String,
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
@@ -43,10 +42,8 @@ object XStringAbbreviation {
     __obj.asInstanceOf[XStringAbbreviation]
   }
   
-  @scala.inline
-  implicit class XStringAbbreviationMutableBuilder[Self <: XStringAbbreviation] (val x: Self) extends AnyVal {
+  extension [Self <: XStringAbbreviation](x: Self) {
     
-    @scala.inline
-    def setAbbreviateString(value: (XStringWidth, Double, String) => String): Self = StObject.set(x, "abbreviateString", js.Any.fromFunction3(value))
+    inline def setAbbreviateString(value: (XStringWidth, Double, String) => String): Self = StObject.set(x, "abbreviateString", js.Any.fromFunction3(value))
   }
 }

@@ -26,31 +26,23 @@ trait SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest extends StObject {
 }
 object SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest {
   
-  @scala.inline
-  def apply(): SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest = {
+  inline def apply(): SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest]
   }
   
-  @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequestMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
+    inline def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
+    inline def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
   }
 }

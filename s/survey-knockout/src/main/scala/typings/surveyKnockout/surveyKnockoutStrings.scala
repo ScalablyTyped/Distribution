@@ -8,16 +8,13 @@ object surveyKnockoutStrings {
   
   @js.native
   sealed trait autogonext extends StObject
-  @scala.inline
-  def autogonext: autogonext = "autogonext".asInstanceOf[autogonext]
+  inline def autogonext: autogonext = "autogonext".asInstanceOf[autogonext]
   
   @js.native
   sealed trait `survey-panel` extends StObject
-  @scala.inline
-  def `survey-panel`: `survey-panel` = "survey-panel".asInstanceOf[`survey-panel`]
+  inline def `survey-panel`: `survey-panel` = "survey-panel".asInstanceOf[`survey-panel`]
   
   @js.native
   sealed trait `survey-question` extends StObject
-  @scala.inline
-  def `survey-question`: `survey-question` = "survey-question".asInstanceOf[`survey-question`]
+  inline def `survey-question`: `survey-question` = "survey-question".asInstanceOf[`survey-question`]
 }

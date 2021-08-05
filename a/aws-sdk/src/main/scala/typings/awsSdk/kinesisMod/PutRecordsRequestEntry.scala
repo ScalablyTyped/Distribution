@@ -23,25 +23,19 @@ trait PutRecordsRequestEntry extends StObject {
 }
 object PutRecordsRequestEntry {
   
-  @scala.inline
-  def apply(Data: Data, PartitionKey: PartitionKey): PutRecordsRequestEntry = {
+  inline def apply(Data: Data, PartitionKey: PartitionKey): PutRecordsRequestEntry = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordsRequestEntry]
   }
   
-  @scala.inline
-  implicit class PutRecordsRequestEntryMutableBuilder[Self <: PutRecordsRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordsRequestEntry](x: Self) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitHashKey(value: HashKey): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
+    inline def setExplicitHashKey(value: HashKey): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
+    inline def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
     
-    @scala.inline
-    def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
   }
 }

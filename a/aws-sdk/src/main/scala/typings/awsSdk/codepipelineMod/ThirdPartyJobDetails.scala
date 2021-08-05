@@ -23,31 +23,23 @@ trait ThirdPartyJobDetails extends StObject {
 }
 object ThirdPartyJobDetails {
   
-  @scala.inline
-  def apply(): ThirdPartyJobDetails = {
+  inline def apply(): ThirdPartyJobDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyJobDetails]
   }
   
-  @scala.inline
-  implicit class ThirdPartyJobDetailsMutableBuilder[Self <: ThirdPartyJobDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyJobDetails](x: Self) {
     
-    @scala.inline
-    def setData(value: ThirdPartyJobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ThirdPartyJobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setId(value: ThirdPartyJobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ThirdPartyJobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setNonce(value: Nonce): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: Nonce): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
   }
 }

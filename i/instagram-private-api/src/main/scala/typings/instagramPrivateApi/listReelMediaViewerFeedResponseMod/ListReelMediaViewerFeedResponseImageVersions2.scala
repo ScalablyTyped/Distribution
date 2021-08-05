@@ -10,19 +10,15 @@ trait ListReelMediaViewerFeedResponseImageVersions2 extends StObject {
 }
 object ListReelMediaViewerFeedResponseImageVersions2 {
   
-  @scala.inline
-  def apply(candidates: js.Array[ListReelMediaViewerFeedResponseCandidatesItem]): ListReelMediaViewerFeedResponseImageVersions2 = {
+  inline def apply(candidates: js.Array[ListReelMediaViewerFeedResponseCandidatesItem]): ListReelMediaViewerFeedResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseImageVersions2]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseImageVersions2MutableBuilder[Self <: ListReelMediaViewerFeedResponseImageVersions2] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseImageVersions2](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[ListReelMediaViewerFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[ListReelMediaViewerFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: ListReelMediaViewerFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: ListReelMediaViewerFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
   }
 }

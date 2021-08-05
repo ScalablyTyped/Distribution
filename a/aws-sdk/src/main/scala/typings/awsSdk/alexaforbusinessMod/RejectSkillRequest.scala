@@ -13,16 +13,13 @@ trait RejectSkillRequest extends StObject {
 }
 object RejectSkillRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): RejectSkillRequest = {
+  inline def apply(SkillId: SkillId): RejectSkillRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectSkillRequest]
   }
   
-  @scala.inline
-  implicit class RejectSkillRequestMutableBuilder[Self <: RejectSkillRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectSkillRequest](x: Self) {
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

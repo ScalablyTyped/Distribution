@@ -18,19 +18,15 @@ trait TextTransformation extends StObject {
 }
 object TextTransformation {
   
-  @scala.inline
-  def apply(Priority: TextTransformationPriority, Type: TextTransformationType): TextTransformation = {
+  inline def apply(Priority: TextTransformationPriority, Type: TextTransformationType): TextTransformation = {
     val __obj = js.Dynamic.literal(Priority = Priority.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTransformation]
   }
   
-  @scala.inline
-  implicit class TextTransformationMutableBuilder[Self <: TextTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: TextTransformation](x: Self) {
     
-    @scala.inline
-    def setPriority(value: TextTransformationPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: TextTransformationPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TextTransformationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: TextTransformationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait b2DynamicTreeBroadPhase
 }
 object b2DynamicTreeBroadPhase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreateProxy: (b2AABB, js.Any) => b2DynamicTreeNode,
     DestroyProxy: b2DynamicTreeNode => Unit,
     GetFatAABB: b2DynamicTreeNode => b2AABB,
@@ -52,16 +51,12 @@ object b2DynamicTreeBroadPhase {
     __obj.asInstanceOf[b2DynamicTreeBroadPhase]
   }
   
-  @scala.inline
-  implicit class b2DynamicTreeBroadPhaseMutableBuilder[Self <: b2DynamicTreeBroadPhase] (val x: Self) extends AnyVal {
+  extension [Self <: b2DynamicTreeBroadPhase](x: Self) {
     
-    @scala.inline
-    def setTestOverlap(value: (b2DynamicTreeNode, b2DynamicTreeNode) => Boolean): Self = StObject.set(x, "TestOverlap", js.Any.fromFunction2(value))
+    inline def setTestOverlap(value: (b2DynamicTreeNode, b2DynamicTreeNode) => Boolean): Self = StObject.set(x, "TestOverlap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdatePairs(value: js.Function2[/* userDataA */ js.Any, /* userDataB */ js.Any, Unit] => Unit): Self = StObject.set(x, "UpdatePairs", js.Any.fromFunction1(value))
+    inline def setUpdatePairs(value: js.Function2[/* userDataA */ js.Any, /* userDataB */ js.Any, Unit] => Unit): Self = StObject.set(x, "UpdatePairs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidate(value: () => Unit): Self = StObject.set(x, "Validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => Unit): Self = StObject.set(x, "Validate", js.Any.fromFunction0(value))
   }
 }

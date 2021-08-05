@@ -33,43 +33,31 @@ trait RdsHttpEndpointConfig extends StObject {
 }
 object RdsHttpEndpointConfig {
   
-  @scala.inline
-  def apply(): RdsHttpEndpointConfig = {
+  inline def apply(): RdsHttpEndpointConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RdsHttpEndpointConfig]
   }
   
-  @scala.inline
-  implicit class RdsHttpEndpointConfigMutableBuilder[Self <: RdsHttpEndpointConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RdsHttpEndpointConfig](x: Self) {
     
-    @scala.inline
-    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
     
-    @scala.inline
-    def setAwsSecretStoreArn(value: String): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
+    inline def setAwsSecretStoreArn(value: String): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsSecretStoreArnUndefined: Self = StObject.set(x, "awsSecretStoreArn", js.undefined)
+    inline def setAwsSecretStoreArnUndefined: Self = StObject.set(x, "awsSecretStoreArn", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
     
-    @scala.inline
-    def setDbClusterIdentifier(value: String): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDbClusterIdentifier(value: String): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
+    inline def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

@@ -49,43 +49,31 @@ trait RichTextLoadOptions extends StObject {
 }
 object RichTextLoadOptions {
   
-  @scala.inline
-  def apply(): RichTextLoadOptions = {
+  inline def apply(): RichTextLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RichTextLoadOptions]
   }
   
-  @scala.inline
-  implicit class RichTextLoadOptionsMutableBuilder[Self <: RichTextLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RichTextLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLanguageId(value: Boolean): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: Boolean): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
+    inline def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

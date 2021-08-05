@@ -24,61 +24,43 @@ trait DebugOnly extends StObject {
 }
 object DebugOnly {
   
-  @scala.inline
-  def apply(): DebugOnly = {
+  inline def apply(): DebugOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugOnly]
   }
   
-  @scala.inline
-  implicit class DebugOnlyMutableBuilder[Self <: DebugOnly] (val x: Self) extends AnyVal {
+  extension [Self <: DebugOnly](x: Self) {
     
-    @scala.inline
-    def setDebugOnly(value: Boolean): Self = StObject.set(x, "debugOnly", value.asInstanceOf[js.Any])
+    inline def setDebugOnly(value: Boolean): Self = StObject.set(x, "debugOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOnlyUndefined: Self = StObject.set(x, "debugOnly", js.undefined)
+    inline def setDebugOnlyUndefined: Self = StObject.set(x, "debugOnly", js.undefined)
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setGit(value: String): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+    inline def setGit(value: String): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
+    inline def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProdOnly(value: Boolean): Self = StObject.set(x, "prodOnly", value.asInstanceOf[js.Any])
+    inline def setProdOnly(value: Boolean): Self = StObject.set(x, "prodOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProdOnlyUndefined: Self = StObject.set(x, "prodOnly", js.undefined)
+    inline def setProdOnlyUndefined: Self = StObject.set(x, "prodOnly", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setTestOnly(value: Boolean): Self = StObject.set(x, "testOnly", value.asInstanceOf[js.Any])
+    inline def setTestOnly(value: Boolean): Self = StObject.set(x, "testOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestOnlyUndefined: Self = StObject.set(x, "testOnly", js.undefined)
+    inline def setTestOnlyUndefined: Self = StObject.set(x, "testOnly", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

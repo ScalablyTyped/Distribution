@@ -62,8 +62,7 @@ trait MemoryApi extends StObject {
 }
 object MemoryApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forciblyPurgeJavaScriptMemory: () => js.Promise[Unit],
     getAllTimeSamplingProfile: () => js.Promise[GetAllTimeSamplingProfileResponse],
     getBrowserSamplingProfile: () => js.Promise[GetBrowserSamplingProfileResponse],
@@ -79,37 +78,26 @@ object MemoryApi {
     __obj.asInstanceOf[MemoryApi]
   }
   
-  @scala.inline
-  implicit class MemoryApiMutableBuilder[Self <: MemoryApi] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryApi](x: Self) {
     
-    @scala.inline
-    def setForciblyPurgeJavaScriptMemory(value: () => js.Promise[Unit]): Self = StObject.set(x, "forciblyPurgeJavaScriptMemory", js.Any.fromFunction0(value))
+    inline def setForciblyPurgeJavaScriptMemory(value: () => js.Promise[Unit]): Self = StObject.set(x, "forciblyPurgeJavaScriptMemory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllTimeSamplingProfile(value: () => js.Promise[GetAllTimeSamplingProfileResponse]): Self = StObject.set(x, "getAllTimeSamplingProfile", js.Any.fromFunction0(value))
+    inline def setGetAllTimeSamplingProfile(value: () => js.Promise[GetAllTimeSamplingProfileResponse]): Self = StObject.set(x, "getAllTimeSamplingProfile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBrowserSamplingProfile(value: () => js.Promise[GetBrowserSamplingProfileResponse]): Self = StObject.set(x, "getBrowserSamplingProfile", js.Any.fromFunction0(value))
+    inline def setGetBrowserSamplingProfile(value: () => js.Promise[GetBrowserSamplingProfileResponse]): Self = StObject.set(x, "getBrowserSamplingProfile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDOMCounters(value: () => js.Promise[GetDOMCountersResponse]): Self = StObject.set(x, "getDOMCounters", js.Any.fromFunction0(value))
+    inline def setGetDOMCounters(value: () => js.Promise[GetDOMCountersResponse]): Self = StObject.set(x, "getDOMCounters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSamplingProfile(value: () => js.Promise[GetSamplingProfileResponse]): Self = StObject.set(x, "getSamplingProfile", js.Any.fromFunction0(value))
+    inline def setGetSamplingProfile(value: () => js.Promise[GetSamplingProfileResponse]): Self = StObject.set(x, "getSamplingProfile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrepareForLeakDetection(value: () => js.Promise[Unit]): Self = StObject.set(x, "prepareForLeakDetection", js.Any.fromFunction0(value))
+    inline def setPrepareForLeakDetection(value: () => js.Promise[Unit]): Self = StObject.set(x, "prepareForLeakDetection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPressureNotificationsSuppressed(value: SetPressureNotificationsSuppressedRequest => js.Promise[Unit]): Self = StObject.set(x, "setPressureNotificationsSuppressed", js.Any.fromFunction1(value))
+    inline def setSetPressureNotificationsSuppressed(value: SetPressureNotificationsSuppressedRequest => js.Promise[Unit]): Self = StObject.set(x, "setPressureNotificationsSuppressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSimulatePressureNotification(value: SimulatePressureNotificationRequest => js.Promise[Unit]): Self = StObject.set(x, "simulatePressureNotification", js.Any.fromFunction1(value))
+    inline def setSimulatePressureNotification(value: SimulatePressureNotificationRequest => js.Promise[Unit]): Self = StObject.set(x, "simulatePressureNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartSampling(value: StartSamplingRequest => js.Promise[Unit]): Self = StObject.set(x, "startSampling", js.Any.fromFunction1(value))
+    inline def setStartSampling(value: StartSamplingRequest => js.Promise[Unit]): Self = StObject.set(x, "startSampling", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopSampling(value: () => js.Promise[Unit]): Self = StObject.set(x, "stopSampling", js.Any.fromFunction0(value))
+    inline def setStopSampling(value: () => js.Promise[Unit]): Self = StObject.set(x, "stopSampling", js.Any.fromFunction0(value))
   }
 }

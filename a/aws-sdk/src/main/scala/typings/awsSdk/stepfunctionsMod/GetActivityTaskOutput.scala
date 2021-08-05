@@ -18,25 +18,19 @@ trait GetActivityTaskOutput extends StObject {
 }
 object GetActivityTaskOutput {
   
-  @scala.inline
-  def apply(): GetActivityTaskOutput = {
+  inline def apply(): GetActivityTaskOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetActivityTaskOutput]
   }
   
-  @scala.inline
-  implicit class GetActivityTaskOutputMutableBuilder[Self <: GetActivityTaskOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetActivityTaskOutput](x: Self) {
     
-    @scala.inline
-    def setInput(value: SensitiveDataJobInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SensitiveDataJobInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTokenUndefined: Self = StObject.set(x, "taskToken", js.undefined)
+    inline def setTaskTokenUndefined: Self = StObject.set(x, "taskToken", js.undefined)
   }
 }

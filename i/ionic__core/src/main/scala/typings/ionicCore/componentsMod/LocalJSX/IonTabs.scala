@@ -20,25 +20,19 @@ trait IonTabs extends StObject {
 }
 object IonTabs {
   
-  @scala.inline
-  def apply(): IonTabs = {
+  inline def apply(): IonTabs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonTabs]
   }
   
-  @scala.inline
-  implicit class IonTabsMutableBuilder[Self <: IonTabs] (val x: Self) extends AnyVal {
+  extension [Self <: IonTabs](x: Self) {
     
-    @scala.inline
-    def setOnIonTabsDidChange(value: /* event */ CustomEvent[Tab] => Unit): Self = StObject.set(x, "onIonTabsDidChange", js.Any.fromFunction1(value))
+    inline def setOnIonTabsDidChange(value: /* event */ CustomEvent[Tab] => Unit): Self = StObject.set(x, "onIonTabsDidChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonTabsDidChangeUndefined: Self = StObject.set(x, "onIonTabsDidChange", js.undefined)
+    inline def setOnIonTabsDidChangeUndefined: Self = StObject.set(x, "onIonTabsDidChange", js.undefined)
     
-    @scala.inline
-    def setOnIonTabsWillChange(value: /* event */ CustomEvent[Tab] => Unit): Self = StObject.set(x, "onIonTabsWillChange", js.Any.fromFunction1(value))
+    inline def setOnIonTabsWillChange(value: /* event */ CustomEvent[Tab] => Unit): Self = StObject.set(x, "onIonTabsWillChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonTabsWillChangeUndefined: Self = StObject.set(x, "onIonTabsWillChange", js.undefined)
+    inline def setOnIonTabsWillChangeUndefined: Self = StObject.set(x, "onIonTabsWillChange", js.undefined)
   }
 }

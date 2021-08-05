@@ -101,109 +101,75 @@ trait PrintToPDFRequest extends StObject {
 }
 object PrintToPDFRequest {
   
-  @scala.inline
-  def apply(): PrintToPDFRequest = {
+  inline def apply(): PrintToPDFRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintToPDFRequest]
   }
   
-  @scala.inline
-  implicit class PrintToPDFRequestMutableBuilder[Self <: PrintToPDFRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PrintToPDFRequest](x: Self) {
     
-    @scala.inline
-    def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayHeaderFooterUndefined: Self = StObject.set(x, "displayHeaderFooter", js.undefined)
+    inline def setDisplayHeaderFooterUndefined: Self = StObject.set(x, "displayHeaderFooter", js.undefined)
     
-    @scala.inline
-    def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+    inline def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
+    inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
     
-    @scala.inline
-    def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+    inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
     
-    @scala.inline
-    def setIgnoreInvalidPageRanges(value: Boolean): Self = StObject.set(x, "ignoreInvalidPageRanges", value.asInstanceOf[js.Any])
+    inline def setIgnoreInvalidPageRanges(value: Boolean): Self = StObject.set(x, "ignoreInvalidPageRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreInvalidPageRangesUndefined: Self = StObject.set(x, "ignoreInvalidPageRanges", js.undefined)
+    inline def setIgnoreInvalidPageRangesUndefined: Self = StObject.set(x, "ignoreInvalidPageRanges", js.undefined)
     
-    @scala.inline
-    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    @scala.inline
-    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+    inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    @scala.inline
-    def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
+    inline def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
+    inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
     
-    @scala.inline
-    def setPaperHeight(value: Double): Self = StObject.set(x, "paperHeight", value.asInstanceOf[js.Any])
+    inline def setPaperHeight(value: Double): Self = StObject.set(x, "paperHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperHeightUndefined: Self = StObject.set(x, "paperHeight", js.undefined)
+    inline def setPaperHeightUndefined: Self = StObject.set(x, "paperHeight", js.undefined)
     
-    @scala.inline
-    def setPaperWidth(value: Double): Self = StObject.set(x, "paperWidth", value.asInstanceOf[js.Any])
+    inline def setPaperWidth(value: Double): Self = StObject.set(x, "paperWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperWidthUndefined: Self = StObject.set(x, "paperWidth", js.undefined)
+    inline def setPaperWidthUndefined: Self = StObject.set(x, "paperWidth", js.undefined)
     
-    @scala.inline
-    def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
+    inline def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferCSSPageSizeUndefined: Self = StObject.set(x, "preferCSSPageSize", js.undefined)
+    inline def setPreferCSSPageSizeUndefined: Self = StObject.set(x, "preferCSSPageSize", js.undefined)
     
-    @scala.inline
-    def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
+    inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
+    inline def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTransferMode(value: ReturnAsBase64 | ReturnAsStream): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
+    inline def setTransferMode(value: ReturnAsBase64 | ReturnAsStream): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferModeUndefined: Self = StObject.set(x, "transferMode", js.undefined)
+    inline def setTransferModeUndefined: Self = StObject.set(x, "transferMode", js.undefined)
   }
 }

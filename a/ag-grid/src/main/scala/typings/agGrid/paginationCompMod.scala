@@ -11,37 +11,37 @@ object paginationCompMod {
   @js.native
   class PaginationComp () extends Component {
     
-    var btFirst: js.Any = js.native
+    /* private */ var btFirst: js.Any = js.native
     
-    var btLast: js.Any = js.native
+    /* private */ var btLast: js.Any = js.native
     
-    var btNext: js.Any = js.native
+    /* private */ var btNext: js.Any = js.native
     
-    var btPrevious: js.Any = js.native
+    /* private */ var btPrevious: js.Any = js.native
     
-    var eSummaryPanel: js.Any = js.native
+    /* private */ var eSummaryPanel: js.Any = js.native
     
     /* private */ def enableOrDisableButtons(): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     /* private */ def formatNumber(value: js.Any): js.Any = js.native
     
     /* private */ def getTemplate(): js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def isZeroPagesToDisplay(): js.Any = js.native
     
-    var lbCurrent: js.Any = js.native
+    /* private */ var lbCurrent: js.Any = js.native
     
-    var lbFirstRowOnPage: js.Any = js.native
+    /* private */ var lbFirstRowOnPage: js.Any = js.native
     
-    var lbLastRowOnPage: js.Any = js.native
+    /* private */ var lbLastRowOnPage: js.Any = js.native
     
-    var lbRecordCount: js.Any = js.native
+    /* private */ var lbRecordCount: js.Any = js.native
     
-    var lbTotal: js.Any = js.native
+    /* private */ var lbTotal: js.Any = js.native
     
     /* private */ def onBtFirst(): js.Any = js.native
     
@@ -53,11 +53,11 @@ object paginationCompMod {
     
     /* private */ def onPaginationChanged(): js.Any = js.native
     
-    var paginationProxy: js.Any = js.native
+    /* private */ var paginationProxy: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    var rowRenderer: js.Any = js.native
+    /* private */ var rowRenderer: js.Any = js.native
     
     /* private */ def setCurrentPageLabel(): js.Any = js.native
     

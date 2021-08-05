@@ -10,16 +10,13 @@ trait NewsRepositoryInboxResponseAdsManager extends StObject {
 }
 object NewsRepositoryInboxResponseAdsManager {
   
-  @scala.inline
-  def apply(pending_count: Double): NewsRepositoryInboxResponseAdsManager = {
+  inline def apply(pending_count: Double): NewsRepositoryInboxResponseAdsManager = {
     val __obj = js.Dynamic.literal(pending_count = pending_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseAdsManager]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseAdsManagerMutableBuilder[Self <: NewsRepositoryInboxResponseAdsManager] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseAdsManager](x: Self) {
     
-    @scala.inline
-    def setPending_count(value: Double): Self = StObject.set(x, "pending_count", value.asInstanceOf[js.Any])
+    inline def setPending_count(value: Double): Self = StObject.set(x, "pending_count", value.asInstanceOf[js.Any])
   }
 }

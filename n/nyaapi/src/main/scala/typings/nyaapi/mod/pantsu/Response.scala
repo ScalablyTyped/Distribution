@@ -14,28 +14,21 @@ trait Response[T] extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply[T](data: js.Array[T], infos: js.Array[String], ok: Boolean): Response[T] = {
+  inline def apply[T](data: js.Array[T], infos: js.Array[String], ok: Boolean): Response[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], infos = infos.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[T]]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
+  extension [Self <: Response[?], T](x: Self & Response[T]) {
     
-    @scala.inline
-    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setInfos(value: js.Array[String]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[String]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfosVarargs(value: String*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: String*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

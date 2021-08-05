@@ -62,49 +62,35 @@ trait Length2
 }
 object Length2 {
   
-  @scala.inline
-  def apply(): Length2 = {
+  inline def apply(): Length2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Length2]
   }
   
-  @scala.inline
-  implicit class Length2MutableBuilder[Self <: Length2] (val x: Self) extends AnyVal {
+  extension [Self <: Length2](x: Self) {
     
-    @scala.inline
-    def setEmphasis(value: Show): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: Show): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+    inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength2(value: Double): Self = StObject.set(x, "length2", value.asInstanceOf[js.Any])
+    inline def setLength2(value: Double): Self = StObject.set(x, "length2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength2Undefined: Self = StObject.set(x, "length2", js.undefined)
+    inline def setLength2Undefined: Self = StObject.set(x, "length2", js.undefined)
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSmooth(value: Boolean | Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: Boolean | Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+    inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
   }
 }

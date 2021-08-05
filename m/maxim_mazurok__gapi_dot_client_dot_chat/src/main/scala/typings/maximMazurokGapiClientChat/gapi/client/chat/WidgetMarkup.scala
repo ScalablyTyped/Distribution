@@ -20,40 +20,29 @@ trait WidgetMarkup extends StObject {
 }
 object WidgetMarkup {
   
-  @scala.inline
-  def apply(): WidgetMarkup = {
+  inline def apply(): WidgetMarkup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidgetMarkup]
   }
   
-  @scala.inline
-  implicit class WidgetMarkupMutableBuilder[Self <: WidgetMarkup] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetMarkup](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
+    inline def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
+    inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
-    @scala.inline
-    def setTextParagraph(value: TextParagraph): Self = StObject.set(x, "textParagraph", value.asInstanceOf[js.Any])
+    inline def setTextParagraph(value: TextParagraph): Self = StObject.set(x, "textParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextParagraphUndefined: Self = StObject.set(x, "textParagraph", js.undefined)
+    inline def setTextParagraphUndefined: Self = StObject.set(x, "textParagraph", js.undefined)
   }
 }

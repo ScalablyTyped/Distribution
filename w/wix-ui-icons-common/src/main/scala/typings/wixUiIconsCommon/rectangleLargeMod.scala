@@ -22,20 +22,16 @@ object rectangleLargeMod extends Shortcut {
   }
   object RectangleLargeProps {
     
-    @scala.inline
-    def apply(): RectangleLargeProps = {
+    inline def apply(): RectangleLargeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RectangleLargeProps]
     }
     
-    @scala.inline
-    implicit class RectangleLargePropsMutableBuilder[Self <: RectangleLargeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RectangleLargeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -13,19 +13,15 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(): Dictkey = {
+  inline def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setParentRelative(value: Boolean): Self = StObject.set(x, "parentRelative", value.asInstanceOf[js.Any])
+    inline def setParentRelative(value: Boolean): Self = StObject.set(x, "parentRelative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRelativeUndefined: Self = StObject.set(x, "parentRelative", js.undefined)
+    inline def setParentRelativeUndefined: Self = StObject.set(x, "parentRelative", js.undefined)
   }
 }

@@ -27,31 +27,23 @@ trait SchemaFeatures extends StObject {
 }
 object SchemaFeatures {
   
-  @scala.inline
-  def apply(): SchemaFeatures = {
+  inline def apply(): SchemaFeatures = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeatures]
   }
   
-  @scala.inline
-  implicit class SchemaFeaturesMutableBuilder[Self <: SchemaFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeatures](x: Self) {
     
-    @scala.inline
-    def setExtractDocumentSentiment(value: Boolean): Self = StObject.set(x, "extractDocumentSentiment", value.asInstanceOf[js.Any])
+    inline def setExtractDocumentSentiment(value: Boolean): Self = StObject.set(x, "extractDocumentSentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractDocumentSentimentUndefined: Self = StObject.set(x, "extractDocumentSentiment", js.undefined)
+    inline def setExtractDocumentSentimentUndefined: Self = StObject.set(x, "extractDocumentSentiment", js.undefined)
     
-    @scala.inline
-    def setExtractEntities(value: Boolean): Self = StObject.set(x, "extractEntities", value.asInstanceOf[js.Any])
+    inline def setExtractEntities(value: Boolean): Self = StObject.set(x, "extractEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractEntitiesUndefined: Self = StObject.set(x, "extractEntities", js.undefined)
+    inline def setExtractEntitiesUndefined: Self = StObject.set(x, "extractEntities", js.undefined)
     
-    @scala.inline
-    def setExtractSyntax(value: Boolean): Self = StObject.set(x, "extractSyntax", value.asInstanceOf[js.Any])
+    inline def setExtractSyntax(value: Boolean): Self = StObject.set(x, "extractSyntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractSyntaxUndefined: Self = StObject.set(x, "extractSyntax", js.undefined)
+    inline def setExtractSyntaxUndefined: Self = StObject.set(x, "extractSyntax", js.undefined)
   }
 }

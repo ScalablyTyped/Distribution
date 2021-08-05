@@ -11,8 +11,7 @@ trait DescribeEndpointsOutput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeEndpointsOutputMod.DescribeEndpointsOutput
 object DescribeEndpointsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, Endpoints: js.Array[UnmarshalledEndpoint]): DescribeEndpointsOutput = {
+  inline def apply($metadata: ResponseMetadata, Endpoints: js.Array[UnmarshalledEndpoint]): DescribeEndpointsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Endpoints = Endpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointsOutput]
   }

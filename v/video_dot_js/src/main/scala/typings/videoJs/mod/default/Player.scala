@@ -40,6 +40,5 @@ object Player {
     * @return An object containing all of the settings
     *         for a player tag
     */
-  @scala.inline
-  def getTagSettings(tag: Element): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagSettings")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getTagSettings(tag: Element): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagSettings")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

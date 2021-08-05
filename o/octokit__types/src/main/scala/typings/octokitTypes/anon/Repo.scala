@@ -12,19 +12,15 @@ trait Repo extends StObject {
 }
 object Repo {
   
-  @scala.inline
-  def apply(repo: Allowmergecommit, starred_at: String): Repo = {
+  inline def apply(repo: Allowmergecommit, starred_at: String): Repo = {
     val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any], starred_at = starred_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Repo]
   }
   
-  @scala.inline
-  implicit class RepoMutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
+  extension [Self <: Repo](x: Self) {
     
-    @scala.inline
-    def setRepo(value: Allowmergecommit): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: Allowmergecommit): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarred_at(value: String): Self = StObject.set(x, "starred_at", value.asInstanceOf[js.Any])
+    inline def setStarred_at(value: String): Self = StObject.set(x, "starred_at", value.asInstanceOf[js.Any])
   }
 }

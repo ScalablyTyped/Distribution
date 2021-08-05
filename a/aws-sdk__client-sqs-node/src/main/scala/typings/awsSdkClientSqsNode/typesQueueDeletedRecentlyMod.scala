@@ -16,17 +16,14 @@ object typesQueueDeletedRecentlyMod {
   }
   object QueueDeletedRecently {
     
-    @scala.inline
-    def apply(): QueueDeletedRecently = {
+    inline def apply(): QueueDeletedRecently = {
       val __obj = js.Dynamic.literal(name = "QueueDeletedRecently")
       __obj.asInstanceOf[QueueDeletedRecently]
     }
     
-    @scala.inline
-    implicit class QueueDeletedRecentlyMutableBuilder[Self <: QueueDeletedRecently] (val x: Self) extends AnyVal {
+    extension [Self <: QueueDeletedRecently](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

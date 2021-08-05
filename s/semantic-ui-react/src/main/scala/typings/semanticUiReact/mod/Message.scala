@@ -19,6 +19,5 @@ class Message protected ()
 }
 object Message {
   
-  @scala.inline
-  def apply: MessageComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Message").asInstanceOf[MessageComponent]
+  inline def apply: MessageComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Message").asInstanceOf[MessageComponent]
 }

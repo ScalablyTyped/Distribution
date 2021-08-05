@@ -28,8 +28,7 @@ trait BatchAttachTypedLink extends StObject {
 }
 object BatchAttachTypedLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: AttributeNameAndValueList,
     SourceObjectReference: ObjectReference,
     TargetObjectReference: ObjectReference,
@@ -39,22 +38,16 @@ object BatchAttachTypedLink {
     __obj.asInstanceOf[BatchAttachTypedLink]
   }
   
-  @scala.inline
-  implicit class BatchAttachTypedLinkMutableBuilder[Self <: BatchAttachTypedLink] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAttachTypedLink](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeNameAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeNameAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceObjectReference(value: ObjectReference): Self = StObject.set(x, "SourceObjectReference", value.asInstanceOf[js.Any])
+    inline def setSourceObjectReference(value: ObjectReference): Self = StObject.set(x, "SourceObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetObjectReference(value: ObjectReference): Self = StObject.set(x, "TargetObjectReference", value.asInstanceOf[js.Any])
+    inline def setTargetObjectReference(value: ObjectReference): Self = StObject.set(x, "TargetObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypedLinkFacet(value: TypedLinkSchemaAndFacetName): Self = StObject.set(x, "TypedLinkFacet", value.asInstanceOf[js.Any])
+    inline def setTypedLinkFacet(value: TypedLinkSchemaAndFacetName): Self = StObject.set(x, "TypedLinkFacet", value.asInstanceOf[js.Any])
   }
 }

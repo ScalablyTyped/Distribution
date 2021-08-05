@@ -38,61 +38,43 @@ trait UrlMap extends StObject {
 }
 object UrlMap {
   
-  @scala.inline
-  def apply(): UrlMap = {
+  inline def apply(): UrlMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlMap]
   }
   
-  @scala.inline
-  implicit class UrlMapMutableBuilder[Self <: UrlMap] (val x: Self) extends AnyVal {
+  extension [Self <: UrlMap](x: Self) {
     
-    @scala.inline
-    def setApiEndpoint(value: ApiEndpointHandler): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+    inline def setApiEndpoint(value: ApiEndpointHandler): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+    inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
     
-    @scala.inline
-    def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
+    inline def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
+    inline def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+    inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
-    @scala.inline
-    def setRedirectHttpResponseCode(value: String): Self = StObject.set(x, "redirectHttpResponseCode", value.asInstanceOf[js.Any])
+    inline def setRedirectHttpResponseCode(value: String): Self = StObject.set(x, "redirectHttpResponseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectHttpResponseCodeUndefined: Self = StObject.set(x, "redirectHttpResponseCode", js.undefined)
+    inline def setRedirectHttpResponseCodeUndefined: Self = StObject.set(x, "redirectHttpResponseCode", js.undefined)
     
-    @scala.inline
-    def setScript(value: ScriptHandler): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: ScriptHandler): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
-    @scala.inline
-    def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
+    inline def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
+    inline def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
     
-    @scala.inline
-    def setStaticFiles(value: StaticFilesHandler): Self = StObject.set(x, "staticFiles", value.asInstanceOf[js.Any])
+    inline def setStaticFiles(value: StaticFilesHandler): Self = StObject.set(x, "staticFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticFilesUndefined: Self = StObject.set(x, "staticFiles", js.undefined)
+    inline def setStaticFilesUndefined: Self = StObject.set(x, "staticFiles", js.undefined)
     
-    @scala.inline
-    def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
+    inline def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
+    inline def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait LabelKey extends StObject {
 }
 object LabelKey {
   
-  @scala.inline
-  def apply(labelKey: String, valueKey: String): LabelKey = {
+  inline def apply(labelKey: String, valueKey: String): LabelKey = {
     val __obj = js.Dynamic.literal(labelKey = labelKey.asInstanceOf[js.Any], valueKey = valueKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelKey]
   }
   
-  @scala.inline
-  implicit class LabelKeyMutableBuilder[Self <: LabelKey] (val x: Self) extends AnyVal {
+  extension [Self <: LabelKey](x: Self) {
     
-    @scala.inline
-    def setLabelKey(value: String): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
+    inline def setLabelKey(value: String): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+    inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
   }
 }

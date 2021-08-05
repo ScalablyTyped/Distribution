@@ -36,8 +36,7 @@ trait WhereClause extends StObject {
 }
 object WhereClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calculateValue: js.Any => js.Any,
     fieldNames: js.Array[String],
     isStandardized: Boolean,
@@ -47,22 +46,16 @@ object WhereClause {
     __obj.asInstanceOf[WhereClause]
   }
   
-  @scala.inline
-  implicit class WhereClauseMutableBuilder[Self <: WhereClause] (val x: Self) extends AnyVal {
+  extension [Self <: WhereClause](x: Self) {
     
-    @scala.inline
-    def setCalculateValue(value: js.Any => js.Any): Self = StObject.set(x, "calculateValue", js.Any.fromFunction1(value))
+    inline def setCalculateValue(value: js.Any => js.Any): Self = StObject.set(x, "calculateValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+    inline def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setIsStandardized(value: Boolean): Self = StObject.set(x, "isStandardized", value.asInstanceOf[js.Any])
+    inline def setIsStandardized(value: Boolean): Self = StObject.set(x, "isStandardized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestFeature(value: js.Any => Boolean): Self = StObject.set(x, "testFeature", js.Any.fromFunction1(value))
+    inline def setTestFeature(value: js.Any => Boolean): Self = StObject.set(x, "testFeature", js.Any.fromFunction1(value))
   }
 }

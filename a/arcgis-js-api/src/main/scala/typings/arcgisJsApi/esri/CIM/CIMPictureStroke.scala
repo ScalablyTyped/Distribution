@@ -36,49 +36,36 @@ trait CIMPictureStroke
 }
 object CIMPictureStroke {
   
-  @scala.inline
-  def apply(): CIMPictureStroke = {
+  inline def apply(): CIMPictureStroke = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMPictureStroke")
     __obj.asInstanceOf[CIMPictureStroke]
   }
   
-  @scala.inline
-  implicit class CIMPictureStrokeMutableBuilder[Self <: CIMPictureStroke] (val x: Self) extends AnyVal {
+  extension [Self <: CIMPictureStroke](x: Self) {
     
-    @scala.inline
-    def setColorSubstitutions(value: js.Array[CIMColorSubstitution]): Self = StObject.set(x, "colorSubstitutions", value.asInstanceOf[js.Any])
+    inline def setColorSubstitutions(value: js.Array[CIMColorSubstitution]): Self = StObject.set(x, "colorSubstitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSubstitutionsUndefined: Self = StObject.set(x, "colorSubstitutions", js.undefined)
+    inline def setColorSubstitutionsUndefined: Self = StObject.set(x, "colorSubstitutions", js.undefined)
     
-    @scala.inline
-    def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value :_*))
+    inline def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value :_*))
     
-    @scala.inline
-    def setTextureFilter(
+    inline def setTextureFilter(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
     ): Self = StObject.set(x, "textureFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureFilterUndefined: Self = StObject.set(x, "textureFilter", js.undefined)
+    inline def setTextureFilterUndefined: Self = StObject.set(x, "textureFilter", js.undefined)
     
-    @scala.inline
-    def setTintColor(value: js.Array[Double]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: js.Array[Double]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    @scala.inline
-    def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
+    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait XssMatchSet extends StObject {
 }
 object XssMatchSet {
   
-  @scala.inline
-  def apply(XssMatchSetId: ResourceId, XssMatchTuples: XssMatchTuples): XssMatchSet = {
+  inline def apply(XssMatchSetId: ResourceId, XssMatchTuples: XssMatchTuples): XssMatchSet = {
     val __obj = js.Dynamic.literal(XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any], XssMatchTuples = XssMatchTuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[XssMatchSet]
   }
   
-  @scala.inline
-  implicit class XssMatchSetMutableBuilder[Self <: XssMatchSet] (val x: Self) extends AnyVal {
+  extension [Self <: XssMatchSet](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
+    inline def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchTuples(value: XssMatchTuples): Self = StObject.set(x, "XssMatchTuples", value.asInstanceOf[js.Any])
+    inline def setXssMatchTuples(value: XssMatchTuples): Self = StObject.set(x, "XssMatchTuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchTuplesVarargs(value: XssMatchTuple*): Self = StObject.set(x, "XssMatchTuples", js.Array(value :_*))
+    inline def setXssMatchTuplesVarargs(value: XssMatchTuple*): Self = StObject.set(x, "XssMatchTuples", js.Array(value :_*))
   }
 }

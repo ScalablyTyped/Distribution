@@ -8,6 +8,5 @@ object wordpressViewportStrings {
   
   @js.native
   sealed trait coreSlashviewport extends StObject
-  @scala.inline
-  def coreSlashviewport: coreSlashviewport = "core/viewport".asInstanceOf[coreSlashviewport]
+  inline def coreSlashviewport: coreSlashviewport = "core/viewport".asInstanceOf[coreSlashviewport]
 }

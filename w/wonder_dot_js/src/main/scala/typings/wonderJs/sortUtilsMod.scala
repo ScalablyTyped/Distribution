@@ -16,19 +16,15 @@ object sortUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def insertSort(targetArr: js.Array[js.Any], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def insertSort(
+    inline def insertSort(targetArr: js.Array[js.Any], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def insertSort(
       targetArr: js.Array[js.Any],
       compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean],
       isChangeSelf: Boolean
     ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any], isChangeSelf.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def quickSort(targetArr: js.Array[js.Any], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def quickSort(
+    inline def quickSort(targetArr: js.Array[js.Any], compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickSort")(targetArr.asInstanceOf[js.Any], compareFunc.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def quickSort(
       targetArr: js.Array[js.Any],
       compareFunc: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean],
       isChangeSelf: Boolean

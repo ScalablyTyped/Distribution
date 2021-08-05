@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuspenseListRevealOrder extends StObject
 object SuspenseListRevealOrder {
   
-  @scala.inline
-  def backwards: typings.react.reactStrings.backwards = "backwards".asInstanceOf[typings.react.reactStrings.backwards]
+  inline def backwards: typings.react.reactStrings.backwards = "backwards".asInstanceOf[typings.react.reactStrings.backwards]
   
-  @scala.inline
-  def forwards: typings.react.reactStrings.forwards = "forwards".asInstanceOf[typings.react.reactStrings.forwards]
+  inline def forwards: typings.react.reactStrings.forwards = "forwards".asInstanceOf[typings.react.reactStrings.forwards]
   
-  @scala.inline
-  def together: typings.react.reactStrings.together = "together".asInstanceOf[typings.react.reactStrings.together]
+  inline def together: typings.react.reactStrings.together = "together".asInstanceOf[typings.react.reactStrings.together]
 }

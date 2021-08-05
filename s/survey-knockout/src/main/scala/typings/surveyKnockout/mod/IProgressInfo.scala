@@ -16,8 +16,7 @@ trait IProgressInfo extends StObject {
 }
 object IProgressInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     answeredQuestionCount: Double,
     questionCount: Double,
     requiredAnsweredQuestionCount: Double,
@@ -27,19 +26,14 @@ object IProgressInfo {
     __obj.asInstanceOf[IProgressInfo]
   }
   
-  @scala.inline
-  implicit class IProgressInfoMutableBuilder[Self <: IProgressInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IProgressInfo](x: Self) {
     
-    @scala.inline
-    def setAnsweredQuestionCount(value: Double): Self = StObject.set(x, "answeredQuestionCount", value.asInstanceOf[js.Any])
+    inline def setAnsweredQuestionCount(value: Double): Self = StObject.set(x, "answeredQuestionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestionCount(value: Double): Self = StObject.set(x, "questionCount", value.asInstanceOf[js.Any])
+    inline def setQuestionCount(value: Double): Self = StObject.set(x, "questionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredAnsweredQuestionCount(value: Double): Self = StObject.set(x, "requiredAnsweredQuestionCount", value.asInstanceOf[js.Any])
+    inline def setRequiredAnsweredQuestionCount(value: Double): Self = StObject.set(x, "requiredAnsweredQuestionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredQuestionCount(value: Double): Self = StObject.set(x, "requiredQuestionCount", value.asInstanceOf[js.Any])
+    inline def setRequiredQuestionCount(value: Double): Self = StObject.set(x, "requiredQuestionCount", value.asInstanceOf[js.Any])
   }
 }

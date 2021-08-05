@@ -74,79 +74,55 @@ trait Columns extends StObject {
 }
 object Columns {
   
-  @scala.inline
-  def apply(): Columns = {
+  inline def apply(): Columns = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Columns]
   }
   
-  @scala.inline
-  implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+  extension [Self <: Columns](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def `setData-string`(value: String): Self = StObject.set(x, "data-string", value.asInstanceOf[js.Any])
+    inline def `setData-string`(value: String): Self = StObject.set(x, "data-string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setData-stringUndefined`: Self = StObject.set(x, "data-string", js.undefined)
+    inline def `setData-stringUndefined`: Self = StObject.set(x, "data-string", js.undefined)
     
-    @scala.inline
-    def `setHorizontal-labels`(value: Boolean): Self = StObject.set(x, "horizontal-labels", value.asInstanceOf[js.Any])
+    inline def `setHorizontal-labels`(value: Boolean): Self = StObject.set(x, "horizontal-labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHorizontal-labelsUndefined`: Self = StObject.set(x, "horizontal-labels", js.undefined)
+    inline def `setHorizontal-labelsUndefined`: Self = StObject.set(x, "horizontal-labels", js.undefined)
     
-    @scala.inline
-    def setMirrored(value: Boolean): Self = StObject.set(x, "mirrored", value.asInstanceOf[js.Any])
+    inline def setMirrored(value: Boolean): Self = StObject.set(x, "mirrored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirroredUndefined: Self = StObject.set(x, "mirrored", js.undefined)
+    inline def setMirroredUndefined: Self = StObject.set(x, "mirrored", js.undefined)
     
-    @scala.inline
-    def `setRow-separator`(value: String): Self = StObject.set(x, "row-separator", value.asInstanceOf[js.Any])
+    inline def `setRow-separator`(value: String): Self = StObject.set(x, "row-separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRow-separatorUndefined`: Self = StObject.set(x, "row-separator", js.undefined)
+    inline def `setRow-separatorUndefined`: Self = StObject.set(x, "row-separator", js.undefined)
     
-    @scala.inline
-    def `setSeparate-scales`(value: Boolean): Self = StObject.set(x, "separate-scales", value.asInstanceOf[js.Any])
+    inline def `setSeparate-scales`(value: Boolean): Self = StObject.set(x, "separate-scales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSeparate-scalesUndefined`: Self = StObject.set(x, "separate-scales", js.undefined)
+    inline def `setSeparate-scalesUndefined`: Self = StObject.set(x, "separate-scales", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def `setSmart-scales`(value: Boolean): Self = StObject.set(x, "smart-scales", value.asInstanceOf[js.Any])
+    inline def `setSmart-scales`(value: Boolean): Self = StObject.set(x, "smart-scales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSmart-scalesUndefined`: Self = StObject.set(x, "smart-scales", js.undefined)
+    inline def `setSmart-scalesUndefined`: Self = StObject.set(x, "smart-scales", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def `setVertical-labels`(value: Boolean): Self = StObject.set(x, "vertical-labels", value.asInstanceOf[js.Any])
+    inline def `setVertical-labels`(value: Boolean): Self = StObject.set(x, "vertical-labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setVertical-labelsUndefined`: Self = StObject.set(x, "vertical-labels", js.undefined)
+    inline def `setVertical-labelsUndefined`: Self = StObject.set(x, "vertical-labels", js.undefined)
   }
 }

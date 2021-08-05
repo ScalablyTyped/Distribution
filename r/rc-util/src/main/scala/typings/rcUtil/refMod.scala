@@ -11,12 +11,9 @@ object refMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def composeRef[T](refs: Ref[T]*): Ref[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeRef")(refs.asInstanceOf[js.Any]).asInstanceOf[Ref[T]]
+  inline def composeRef[T](refs: Ref[T]*): Ref[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeRef")(refs.asInstanceOf[js.Any]).asInstanceOf[Ref[T]]
   
-  @scala.inline
-  def fillRef[T](ref: Ref[T], node: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fillRef[T](ref: Ref[T], node: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def supportRef(nodeOrComponent: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportRef")(nodeOrComponent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def supportRef(nodeOrComponent: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportRef")(nodeOrComponent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

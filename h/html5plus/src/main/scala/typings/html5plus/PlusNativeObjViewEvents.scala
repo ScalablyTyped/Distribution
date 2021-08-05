@@ -58,43 +58,31 @@ trait PlusNativeObjViewEvents extends StObject {
 }
 object PlusNativeObjViewEvents {
   
-  @scala.inline
-  def apply(): PlusNativeObjViewEvents = {
+  inline def apply(): PlusNativeObjViewEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjViewEvents]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjViewEventsMutableBuilder[Self <: PlusNativeObjViewEvents] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjViewEvents](x: Self) {
     
-    @scala.inline
-    def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setDoubleclick(value: String): Self = StObject.set(x, "doubleclick", value.asInstanceOf[js.Any])
+    inline def setDoubleclick(value: String): Self = StObject.set(x, "doubleclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleclickUndefined: Self = StObject.set(x, "doubleclick", js.undefined)
+    inline def setDoubleclickUndefined: Self = StObject.set(x, "doubleclick", js.undefined)
     
-    @scala.inline
-    def setTouchend(value: String): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+    inline def setTouchend(value: String): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
+    inline def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
     
-    @scala.inline
-    def setTouchmove(value: String): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
+    inline def setTouchmove(value: String): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
+    inline def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
     
-    @scala.inline
-    def setTouchstart(value: String): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+    inline def setTouchstart(value: String): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
+    inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
   }
 }

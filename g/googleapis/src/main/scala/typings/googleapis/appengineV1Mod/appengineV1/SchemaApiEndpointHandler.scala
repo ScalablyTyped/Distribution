@@ -16,19 +16,15 @@ trait SchemaApiEndpointHandler extends StObject {
 }
 object SchemaApiEndpointHandler {
   
-  @scala.inline
-  def apply(): SchemaApiEndpointHandler = {
+  inline def apply(): SchemaApiEndpointHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApiEndpointHandler]
   }
   
-  @scala.inline
-  implicit class SchemaApiEndpointHandlerMutableBuilder[Self <: SchemaApiEndpointHandler] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApiEndpointHandler](x: Self) {
     
-    @scala.inline
-    def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
+    inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
+    inline def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
   }
 }

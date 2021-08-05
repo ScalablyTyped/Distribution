@@ -31,31 +31,23 @@ trait ParamsResourceUsersSettingsDelegatesGet
 }
 object ParamsResourceUsersSettingsDelegatesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceUsersSettingsDelegatesGet = {
+  inline def apply(): ParamsResourceUsersSettingsDelegatesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUsersSettingsDelegatesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUsersSettingsDelegatesGetMutableBuilder[Self <: ParamsResourceUsersSettingsDelegatesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUsersSettingsDelegatesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
+    inline def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
+    inline def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

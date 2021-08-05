@@ -10,16 +10,13 @@ trait EmitSelf extends StObject {
 }
 object EmitSelf {
   
-  @scala.inline
-  def apply(emitSelf: Boolean): EmitSelf = {
+  inline def apply(emitSelf: Boolean): EmitSelf = {
     val __obj = js.Dynamic.literal(emitSelf = emitSelf.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitSelf]
   }
   
-  @scala.inline
-  implicit class EmitSelfMutableBuilder[Self <: EmitSelf] (val x: Self) extends AnyVal {
+  extension [Self <: EmitSelf](x: Self) {
     
-    @scala.inline
-    def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
+    inline def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
   }
 }

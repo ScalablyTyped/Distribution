@@ -133,8 +133,7 @@ object BitmapText {
   @JSImport("phaser", "GameObjects.BitmapText.ALIGN_CENTER")
   @js.native
   def ALIGN_CENTER: integer = js.native
-  @scala.inline
-  def ALIGN_CENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_CENTER")(x.asInstanceOf[js.Any])
+  inline def ALIGN_CENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_CENTER")(x.asInstanceOf[js.Any])
   
   /**
     * Left align the text characters in a multi-line BitmapText object.
@@ -143,8 +142,7 @@ object BitmapText {
   @JSImport("phaser", "GameObjects.BitmapText.ALIGN_LEFT")
   @js.native
   def ALIGN_LEFT: integer = js.native
-  @scala.inline
-  def ALIGN_LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_LEFT")(x.asInstanceOf[js.Any])
+  inline def ALIGN_LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_LEFT")(x.asInstanceOf[js.Any])
   
   /**
     * Right align the text characters in a multi-line BitmapText object.
@@ -153,8 +151,7 @@ object BitmapText {
   @JSImport("phaser", "GameObjects.BitmapText.ALIGN_RIGHT")
   @js.native
   def ALIGN_RIGHT: integer = js.native
-  @scala.inline
-  def ALIGN_RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_RIGHT")(x.asInstanceOf[js.Any])
+  inline def ALIGN_RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_RIGHT")(x.asInstanceOf[js.Any])
   
   /**
     * Parse an XML Bitmap Font from an Atlas.
@@ -169,10 +166,8 @@ object BitmapText {
     * @param ySpacing The y-axis spacing to add to the line height.
     */
   /* static member */
-  @scala.inline
-  def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ParseFromAtlas(
+  inline def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ParseFromAtlas(
     scene: Scene,
     fontName: String,
     textureKey: String,
@@ -181,8 +176,7 @@ object BitmapText {
     xSpacing: Unit,
     ySpacing: integer
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ParseFromAtlas(
+  inline def ParseFromAtlas(
     scene: Scene,
     fontName: String,
     textureKey: String,
@@ -190,8 +184,7 @@ object BitmapText {
     xmlKey: String,
     xSpacing: integer
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ParseFromAtlas(
+  inline def ParseFromAtlas(
     scene: Scene,
     fontName: String,
     textureKey: String,
@@ -209,20 +202,12 @@ object BitmapText {
     * @param frame The texture frame to take into account while parsing.
     */
   /* static member */
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any]).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  @scala.inline
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any]).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
 }

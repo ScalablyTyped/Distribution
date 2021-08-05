@@ -18,19 +18,15 @@ trait HandlerExecutionContext
 }
 object HandlerExecutionContext {
   
-  @scala.inline
-  def apply(): HandlerExecutionContext = {
+  inline def apply(): HandlerExecutionContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandlerExecutionContext]
   }
   
-  @scala.inline
-  implicit class HandlerExecutionContextMutableBuilder[Self <: HandlerExecutionContext] (val x: Self) extends AnyVal {
+  extension [Self <: HandlerExecutionContext](x: Self) {
     
-    @scala.inline
-    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

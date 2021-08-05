@@ -17,31 +17,23 @@ trait InternalAppSharingArtifact extends StObject {
 }
 object InternalAppSharingArtifact {
   
-  @scala.inline
-  def apply(): InternalAppSharingArtifact = {
+  inline def apply(): InternalAppSharingArtifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InternalAppSharingArtifact]
   }
   
-  @scala.inline
-  implicit class InternalAppSharingArtifactMutableBuilder[Self <: InternalAppSharingArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: InternalAppSharingArtifact](x: Self) {
     
-    @scala.inline
-    def setCertificateFingerprint(value: String): Self = StObject.set(x, "certificateFingerprint", value.asInstanceOf[js.Any])
+    inline def setCertificateFingerprint(value: String): Self = StObject.set(x, "certificateFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateFingerprintUndefined: Self = StObject.set(x, "certificateFingerprint", js.undefined)
+    inline def setCertificateFingerprintUndefined: Self = StObject.set(x, "certificateFingerprint", js.undefined)
     
-    @scala.inline
-    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

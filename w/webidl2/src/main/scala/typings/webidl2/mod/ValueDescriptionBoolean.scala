@@ -17,8 +17,7 @@ trait ValueDescriptionBoolean
 }
 object ValueDescriptionBoolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
     value: Boolean
@@ -28,13 +27,10 @@ object ValueDescriptionBoolean {
     __obj.asInstanceOf[ValueDescriptionBoolean]
   }
   
-  @scala.inline
-  implicit class ValueDescriptionBooleanMutableBuilder[Self <: ValueDescriptionBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDescriptionBoolean](x: Self) {
     
-    @scala.inline
-    def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

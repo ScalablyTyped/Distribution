@@ -8,17 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def App(obj: Dictkey): Unit = js.Dynamic.global.applyDynamic("App")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def App(obj: Dictkey): Unit = js.Dynamic.global.applyDynamic("App")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def Page(obj: dataanyundefinedonLoadque): Unit = js.Dynamic.global.applyDynamic("Page")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Page(obj: dataanyundefinedonLoadque): Unit = js.Dynamic.global.applyDynamic("Page")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getApp(): js.Any = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[js.Any]
+  inline def getApp(): js.Any = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getCurrentPages(): js.Array[js.Any] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[js.Any]]
+  inline def getCurrentPages(): js.Array[js.Any] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[js.Any]]
   
   @JSGlobal("my")
   @js.native

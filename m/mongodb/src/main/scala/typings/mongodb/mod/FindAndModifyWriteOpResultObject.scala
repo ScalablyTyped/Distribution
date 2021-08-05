@@ -17,31 +17,23 @@ trait FindAndModifyWriteOpResultObject[TSchema] extends StObject {
 }
 object FindAndModifyWriteOpResultObject {
   
-  @scala.inline
-  def apply[TSchema](): FindAndModifyWriteOpResultObject[TSchema] = {
+  inline def apply[TSchema](): FindAndModifyWriteOpResultObject[TSchema] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindAndModifyWriteOpResultObject[TSchema]]
   }
   
-  @scala.inline
-  implicit class FindAndModifyWriteOpResultObjectMutableBuilder[Self <: FindAndModifyWriteOpResultObject[?], TSchema] (val x: Self & FindAndModifyWriteOpResultObject[TSchema]) extends AnyVal {
+  extension [Self <: FindAndModifyWriteOpResultObject[?], TSchema](x: Self & FindAndModifyWriteOpResultObject[TSchema]) {
     
-    @scala.inline
-    def setLastErrorObject(value: js.Any): Self = StObject.set(x, "lastErrorObject", value.asInstanceOf[js.Any])
+    inline def setLastErrorObject(value: js.Any): Self = StObject.set(x, "lastErrorObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorObjectUndefined: Self = StObject.set(x, "lastErrorObject", js.undefined)
+    inline def setLastErrorObjectUndefined: Self = StObject.set(x, "lastErrorObject", js.undefined)
     
-    @scala.inline
-    def setOk(value: scala.Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: scala.Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+    inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
     
-    @scala.inline
-    def setValue(value: TSchema): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TSchema): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

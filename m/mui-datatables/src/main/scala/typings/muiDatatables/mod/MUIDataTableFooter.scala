@@ -20,49 +20,35 @@ trait MUIDataTableFooter extends StObject {
 }
 object MUIDataTableFooter {
   
-  @scala.inline
-  def apply(): MUIDataTableFooter = {
+  inline def apply(): MUIDataTableFooter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableFooter]
   }
   
-  @scala.inline
-  implicit class MUIDataTableFooterMutableBuilder[Self <: MUIDataTableFooter] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableFooter](x: Self) {
     
-    @scala.inline
-    def setChangePage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
+    inline def setChangePage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangePageUndefined: Self = StObject.set(x, "changePage", js.undefined)
+    inline def setChangePageUndefined: Self = StObject.set(x, "changePage", js.undefined)
     
-    @scala.inline
-    def setChangeRowsPerPage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
+    inline def setChangeRowsPerPage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeRowsPerPageUndefined: Self = StObject.set(x, "changeRowsPerPage", js.undefined)
+    inline def setChangeRowsPerPageUndefined: Self = StObject.set(x, "changeRowsPerPage", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
+    inline def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
+    inline def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
   }
 }

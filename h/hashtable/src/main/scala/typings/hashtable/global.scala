@@ -23,6 +23,5 @@ object global {
   @JSGlobal("Hashtable")
   @js.native
   def Hashtable: IHashtableStatic = js.native
-  @scala.inline
-  def Hashtable_=(x: IHashtableStatic): Unit = js.Dynamic.global.updateDynamic("Hashtable")(x.asInstanceOf[js.Any])
+  inline def Hashtable_=(x: IHashtableStatic): Unit = js.Dynamic.global.updateDynamic("Hashtable")(x.asInstanceOf[js.Any])
 }

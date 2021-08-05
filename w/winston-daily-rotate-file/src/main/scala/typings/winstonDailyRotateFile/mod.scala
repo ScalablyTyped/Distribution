@@ -114,110 +114,76 @@ object mod {
   }
   object GeneralDailyRotateFileTransportOptions {
     
-    @scala.inline
-    def apply(): GeneralDailyRotateFileTransportOptions = {
+    inline def apply(): GeneralDailyRotateFileTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeneralDailyRotateFileTransportOptions]
     }
     
-    @scala.inline
-    implicit class GeneralDailyRotateFileTransportOptionsMutableBuilder[Self <: GeneralDailyRotateFileTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneralDailyRotateFileTransportOptions](x: Self) {
       
-      @scala.inline
-      def setAuditFile(value: String): Self = StObject.set(x, "auditFile", value.asInstanceOf[js.Any])
+      inline def setAuditFile(value: String): Self = StObject.set(x, "auditFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuditFileUndefined: Self = StObject.set(x, "auditFile", js.undefined)
+      inline def setAuditFileUndefined: Self = StObject.set(x, "auditFile", js.undefined)
       
-      @scala.inline
-      def setCreateSymlink(value: Boolean): Self = StObject.set(x, "createSymlink", value.asInstanceOf[js.Any])
+      inline def setCreateSymlink(value: Boolean): Self = StObject.set(x, "createSymlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSymlinkUndefined: Self = StObject.set(x, "createSymlink", js.undefined)
+      inline def setCreateSymlinkUndefined: Self = StObject.set(x, "createSymlink", js.undefined)
       
-      @scala.inline
-      def setDatePattern(value: String): Self = StObject.set(x, "datePattern", value.asInstanceOf[js.Any])
+      inline def setDatePattern(value: String): Self = StObject.set(x, "datePattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatePatternUndefined: Self = StObject.set(x, "datePattern", js.undefined)
+      inline def setDatePatternUndefined: Self = StObject.set(x, "datePattern", js.undefined)
       
-      @scala.inline
-      def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
+      inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setMaxFiles(value: String | Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
+      inline def setMaxFiles(value: String | Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
+      inline def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: String | Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: String | Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setOptions(value: String | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: String | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setSymlinkName(value: String): Self = StObject.set(x, "symlinkName", value.asInstanceOf[js.Any])
+      inline def setSymlinkName(value: String): Self = StObject.set(x, "symlinkName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymlinkNameUndefined: Self = StObject.set(x, "symlinkName", js.undefined)
+      inline def setSymlinkNameUndefined: Self = StObject.set(x, "symlinkName", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
       
-      @scala.inline
-      def setZippedArchive(value: Boolean): Self = StObject.set(x, "zippedArchive", value.asInstanceOf[js.Any])
+      inline def setZippedArchive(value: Boolean): Self = StObject.set(x, "zippedArchive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZippedArchiveUndefined: Self = StObject.set(x, "zippedArchive", js.undefined)
+      inline def setZippedArchiveUndefined: Self = StObject.set(x, "zippedArchive", js.undefined)
     }
   }
   
@@ -238,8 +204,7 @@ object mod {
     }
     object Transports {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         DailyRotateFile: Instantiable1[/* options */ js.UndefOr[DailyRotateFileTransportOptions], DailyRotateFile],
         DailyRotateFileTransportOptions: DailyRotateFileTransportOptions
       ): Transports = {
@@ -247,14 +212,11 @@ object mod {
         __obj.asInstanceOf[Transports]
       }
       
-      @scala.inline
-      implicit class TransportsMutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
+      extension [Self <: Transports](x: Self) {
         
-        @scala.inline
-        def setDailyRotateFile(value: Instantiable1[/* options */ js.UndefOr[DailyRotateFileTransportOptions], DailyRotateFile]): Self = StObject.set(x, "DailyRotateFile", value.asInstanceOf[js.Any])
+        inline def setDailyRotateFile(value: Instantiable1[/* options */ js.UndefOr[DailyRotateFileTransportOptions], DailyRotateFile]): Self = StObject.set(x, "DailyRotateFile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDailyRotateFileTransportOptions(value: DailyRotateFileTransportOptions): Self = StObject.set(x, "DailyRotateFileTransportOptions", value.asInstanceOf[js.Any])
+        inline def setDailyRotateFileTransportOptions(value: DailyRotateFileTransportOptions): Self = StObject.set(x, "DailyRotateFileTransportOptions", value.asInstanceOf[js.Any])
       }
     }
   }

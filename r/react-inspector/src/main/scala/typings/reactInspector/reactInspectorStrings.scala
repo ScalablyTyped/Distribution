@@ -11,13 +11,11 @@ object reactInspectorStrings {
   sealed trait chromeDark
     extends StObject
        with InspectorTheme
-  @scala.inline
-  def chromeDark: chromeDark = "chromeDark".asInstanceOf[chromeDark]
+  inline def chromeDark: chromeDark = "chromeDark".asInstanceOf[chromeDark]
   
   @js.native
   sealed trait chromeLight
     extends StObject
        with InspectorTheme
-  @scala.inline
-  def chromeLight: chromeLight = "chromeLight".asInstanceOf[chromeLight]
+  inline def chromeLight: chromeLight = "chromeLight".asInstanceOf[chromeLight]
 }

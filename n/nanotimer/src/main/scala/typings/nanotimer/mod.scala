@@ -98,17 +98,14 @@ object mod {
   }
   object TimeoutResults {
     
-    @scala.inline
-    def apply(waitTime: Double): TimeoutResults = {
+    inline def apply(waitTime: Double): TimeoutResults = {
       val __obj = js.Dynamic.literal(waitTime = waitTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeoutResults]
     }
     
-    @scala.inline
-    implicit class TimeoutResultsMutableBuilder[Self <: TimeoutResults] (val x: Self) extends AnyVal {
+    extension [Self <: TimeoutResults](x: Self) {
       
-      @scala.inline
-      def setWaitTime(value: Double): Self = StObject.set(x, "waitTime", value.asInstanceOf[js.Any])
+      inline def setWaitTime(value: Double): Self = StObject.set(x, "waitTime", value.asInstanceOf[js.Any])
     }
   }
 }

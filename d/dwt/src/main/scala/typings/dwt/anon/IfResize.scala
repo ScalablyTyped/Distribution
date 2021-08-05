@@ -15,31 +15,23 @@ trait IfResize extends StObject {
 }
 object IfResize {
   
-  @scala.inline
-  def apply(): IfResize = {
+  inline def apply(): IfResize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IfResize]
   }
   
-  @scala.inline
-  implicit class IfResizeMutableBuilder[Self <: IfResize] (val x: Self) extends AnyVal {
+  extension [Self <: IfResize](x: Self) {
     
-    @scala.inline
-    def setIfResize(value: Boolean): Self = StObject.set(x, "ifResize", value.asInstanceOf[js.Any])
+    inline def setIfResize(value: Boolean): Self = StObject.set(x, "ifResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfResizeUndefined: Self = StObject.set(x, "ifResize", js.undefined)
+    inline def setIfResizeUndefined: Self = StObject.set(x, "ifResize", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

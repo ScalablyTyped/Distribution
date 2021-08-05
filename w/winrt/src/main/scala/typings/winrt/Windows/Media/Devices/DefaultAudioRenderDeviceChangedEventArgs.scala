@@ -9,8 +9,7 @@ trait DefaultAudioRenderDeviceChangedEventArgs
      with IDefaultAudioDeviceChangedEventArgs
 object DefaultAudioRenderDeviceChangedEventArgs {
   
-  @scala.inline
-  def apply(id: String, role: AudioDeviceRole): DefaultAudioRenderDeviceChangedEventArgs = {
+  inline def apply(id: String, role: AudioDeviceRole): DefaultAudioRenderDeviceChangedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultAudioRenderDeviceChangedEventArgs]
   }

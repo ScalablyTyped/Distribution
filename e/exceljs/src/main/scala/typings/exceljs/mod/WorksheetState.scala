@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorksheetState extends StObject
 object WorksheetState {
   
-  @scala.inline
-  def hidden: typings.exceljs.exceljsStrings.hidden = "hidden".asInstanceOf[typings.exceljs.exceljsStrings.hidden]
+  inline def hidden: typings.exceljs.exceljsStrings.hidden = "hidden".asInstanceOf[typings.exceljs.exceljsStrings.hidden]
   
-  @scala.inline
-  def veryHidden: typings.exceljs.exceljsStrings.veryHidden = "veryHidden".asInstanceOf[typings.exceljs.exceljsStrings.veryHidden]
+  inline def veryHidden: typings.exceljs.exceljsStrings.veryHidden = "veryHidden".asInstanceOf[typings.exceljs.exceljsStrings.veryHidden]
   
-  @scala.inline
-  def visible: typings.exceljs.exceljsStrings.visible = "visible".asInstanceOf[typings.exceljs.exceljsStrings.visible]
+  inline def visible: typings.exceljs.exceljsStrings.visible = "visible".asInstanceOf[typings.exceljs.exceljsStrings.visible]
 }

@@ -13,19 +13,15 @@ trait ClientConfig
 }
 object ClientConfig {
   
-  @scala.inline
-  def apply(): ClientConfig = {
+  inline def apply(): ClientConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientConfig]
   }
   
-  @scala.inline
-  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientConfig](x: Self) {
     
-    @scala.inline
-    def setSsl(value: Boolean | TlsOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean | TlsOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

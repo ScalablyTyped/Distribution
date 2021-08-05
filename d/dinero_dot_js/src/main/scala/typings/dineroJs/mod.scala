@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Dinero = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Dinero]
-  @scala.inline
-  def apply(options: Options): Dinero = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Dinero]
+  inline def apply(): Dinero = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Dinero]
+  inline def apply(options: Options): Dinero = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Dinero]
   
   @JSImport("dinero.js", JSImport.Namespace)
   @js.native
@@ -19,26 +17,22 @@ object mod {
   @JSImport("dinero.js", "defaultAmount")
   @js.native
   def defaultAmount: Double = js.native
-  @scala.inline
-  def defaultAmount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultAmount")(x.asInstanceOf[js.Any])
+  inline def defaultAmount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultAmount")(x.asInstanceOf[js.Any])
   
   @JSImport("dinero.js", "defaultCurrency")
   @js.native
   def defaultCurrency: Currency = js.native
-  @scala.inline
-  def defaultCurrency_=(x: Currency): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCurrency")(x.asInstanceOf[js.Any])
+  inline def defaultCurrency_=(x: Currency): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCurrency")(x.asInstanceOf[js.Any])
   
   @JSImport("dinero.js", "defaultPrecision")
   @js.native
   def defaultPrecision: Double = js.native
-  @scala.inline
-  def defaultPrecision_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPrecision")(x.asInstanceOf[js.Any])
+  inline def defaultPrecision_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPrecision")(x.asInstanceOf[js.Any])
   
   @JSImport("dinero.js", "globalExchangeRatesApi")
   @js.native
   def globalExchangeRatesApi: ExchangeRatesApiOptions = js.native
-  @scala.inline
-  def globalExchangeRatesApi_=(x: ExchangeRatesApiOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalExchangeRatesApi")(x.asInstanceOf[js.Any])
+  inline def globalExchangeRatesApi_=(x: ExchangeRatesApiOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalExchangeRatesApi")(x.asInstanceOf[js.Any])
   
   @JSImport("dinero.js", "globalFormat")
   @js.native
@@ -47,32 +41,25 @@ object mod {
   @JSImport("dinero.js", "globalFormatRoundingMode")
   @js.native
   def globalFormatRoundingMode: String = js.native
-  @scala.inline
-  def globalFormatRoundingMode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalFormatRoundingMode")(x.asInstanceOf[js.Any])
+  inline def globalFormatRoundingMode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalFormatRoundingMode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def globalFormat_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalFormat")(x.asInstanceOf[js.Any])
+  inline def globalFormat_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalFormat")(x.asInstanceOf[js.Any])
   
   @JSImport("dinero.js", "globalLocale")
   @js.native
   def globalLocale: String = js.native
-  @scala.inline
-  def globalLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalLocale")(x.asInstanceOf[js.Any])
+  inline def globalLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalLocale")(x.asInstanceOf[js.Any])
   
   @JSImport("dinero.js", "globalRoundingMode")
   @js.native
   def globalRoundingMode: RoundingMode = js.native
-  @scala.inline
-  def globalRoundingMode_=(x: RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalRoundingMode")(x.asInstanceOf[js.Any])
+  inline def globalRoundingMode_=(x: RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalRoundingMode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def maximum(objects: js.Array[Dinero]): Dinero = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(objects.asInstanceOf[js.Any]).asInstanceOf[Dinero]
+  inline def maximum(objects: js.Array[Dinero]): Dinero = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(objects.asInstanceOf[js.Any]).asInstanceOf[Dinero]
   
-  @scala.inline
-  def minimum(objects: js.Array[Dinero]): Dinero = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(objects.asInstanceOf[js.Any]).asInstanceOf[Dinero]
+  inline def minimum(objects: js.Array[Dinero]): Dinero = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(objects.asInstanceOf[js.Any]).asInstanceOf[Dinero]
   
-  @scala.inline
-  def normalizePrecision(objects: js.Array[Dinero]): js.Array[Dinero] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[Dinero]]
+  inline def normalizePrecision(objects: js.Array[Dinero]): js.Array[Dinero] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[Dinero]]
   
   /**
     * ISO 4217 CURRENCY CODES as specified in the documentation
@@ -263,542 +250,363 @@ object mod {
   trait Currency extends StObject
   object Currency {
     
-    @scala.inline
-    def AED: typings.dineroJs.dineroJsStrings.AED = "AED".asInstanceOf[typings.dineroJs.dineroJsStrings.AED]
+    inline def AED: typings.dineroJs.dineroJsStrings.AED = "AED".asInstanceOf[typings.dineroJs.dineroJsStrings.AED]
     
-    @scala.inline
-    def AFN: typings.dineroJs.dineroJsStrings.AFN = "AFN".asInstanceOf[typings.dineroJs.dineroJsStrings.AFN]
+    inline def AFN: typings.dineroJs.dineroJsStrings.AFN = "AFN".asInstanceOf[typings.dineroJs.dineroJsStrings.AFN]
     
-    @scala.inline
-    def ALL: typings.dineroJs.dineroJsStrings.ALL = "ALL".asInstanceOf[typings.dineroJs.dineroJsStrings.ALL]
+    inline def ALL: typings.dineroJs.dineroJsStrings.ALL = "ALL".asInstanceOf[typings.dineroJs.dineroJsStrings.ALL]
     
-    @scala.inline
-    def AMD: typings.dineroJs.dineroJsStrings.AMD = "AMD".asInstanceOf[typings.dineroJs.dineroJsStrings.AMD]
+    inline def AMD: typings.dineroJs.dineroJsStrings.AMD = "AMD".asInstanceOf[typings.dineroJs.dineroJsStrings.AMD]
     
-    @scala.inline
-    def ANG: typings.dineroJs.dineroJsStrings.ANG = "ANG".asInstanceOf[typings.dineroJs.dineroJsStrings.ANG]
+    inline def ANG: typings.dineroJs.dineroJsStrings.ANG = "ANG".asInstanceOf[typings.dineroJs.dineroJsStrings.ANG]
     
-    @scala.inline
-    def AOA: typings.dineroJs.dineroJsStrings.AOA = "AOA".asInstanceOf[typings.dineroJs.dineroJsStrings.AOA]
+    inline def AOA: typings.dineroJs.dineroJsStrings.AOA = "AOA".asInstanceOf[typings.dineroJs.dineroJsStrings.AOA]
     
-    @scala.inline
-    def ARS: typings.dineroJs.dineroJsStrings.ARS = "ARS".asInstanceOf[typings.dineroJs.dineroJsStrings.ARS]
+    inline def ARS: typings.dineroJs.dineroJsStrings.ARS = "ARS".asInstanceOf[typings.dineroJs.dineroJsStrings.ARS]
     
-    @scala.inline
-    def AUD: typings.dineroJs.dineroJsStrings.AUD = "AUD".asInstanceOf[typings.dineroJs.dineroJsStrings.AUD]
+    inline def AUD: typings.dineroJs.dineroJsStrings.AUD = "AUD".asInstanceOf[typings.dineroJs.dineroJsStrings.AUD]
     
-    @scala.inline
-    def AWG: typings.dineroJs.dineroJsStrings.AWG = "AWG".asInstanceOf[typings.dineroJs.dineroJsStrings.AWG]
+    inline def AWG: typings.dineroJs.dineroJsStrings.AWG = "AWG".asInstanceOf[typings.dineroJs.dineroJsStrings.AWG]
     
-    @scala.inline
-    def AZN: typings.dineroJs.dineroJsStrings.AZN = "AZN".asInstanceOf[typings.dineroJs.dineroJsStrings.AZN]
+    inline def AZN: typings.dineroJs.dineroJsStrings.AZN = "AZN".asInstanceOf[typings.dineroJs.dineroJsStrings.AZN]
     
-    @scala.inline
-    def BAM: typings.dineroJs.dineroJsStrings.BAM = "BAM".asInstanceOf[typings.dineroJs.dineroJsStrings.BAM]
+    inline def BAM: typings.dineroJs.dineroJsStrings.BAM = "BAM".asInstanceOf[typings.dineroJs.dineroJsStrings.BAM]
     
-    @scala.inline
-    def BBD: typings.dineroJs.dineroJsStrings.BBD = "BBD".asInstanceOf[typings.dineroJs.dineroJsStrings.BBD]
+    inline def BBD: typings.dineroJs.dineroJsStrings.BBD = "BBD".asInstanceOf[typings.dineroJs.dineroJsStrings.BBD]
     
-    @scala.inline
-    def BDT: typings.dineroJs.dineroJsStrings.BDT = "BDT".asInstanceOf[typings.dineroJs.dineroJsStrings.BDT]
+    inline def BDT: typings.dineroJs.dineroJsStrings.BDT = "BDT".asInstanceOf[typings.dineroJs.dineroJsStrings.BDT]
     
-    @scala.inline
-    def BGN: typings.dineroJs.dineroJsStrings.BGN = "BGN".asInstanceOf[typings.dineroJs.dineroJsStrings.BGN]
+    inline def BGN: typings.dineroJs.dineroJsStrings.BGN = "BGN".asInstanceOf[typings.dineroJs.dineroJsStrings.BGN]
     
-    @scala.inline
-    def BHD: typings.dineroJs.dineroJsStrings.BHD = "BHD".asInstanceOf[typings.dineroJs.dineroJsStrings.BHD]
+    inline def BHD: typings.dineroJs.dineroJsStrings.BHD = "BHD".asInstanceOf[typings.dineroJs.dineroJsStrings.BHD]
     
-    @scala.inline
-    def BIF: typings.dineroJs.dineroJsStrings.BIF = "BIF".asInstanceOf[typings.dineroJs.dineroJsStrings.BIF]
+    inline def BIF: typings.dineroJs.dineroJsStrings.BIF = "BIF".asInstanceOf[typings.dineroJs.dineroJsStrings.BIF]
     
-    @scala.inline
-    def BMD: typings.dineroJs.dineroJsStrings.BMD = "BMD".asInstanceOf[typings.dineroJs.dineroJsStrings.BMD]
+    inline def BMD: typings.dineroJs.dineroJsStrings.BMD = "BMD".asInstanceOf[typings.dineroJs.dineroJsStrings.BMD]
     
-    @scala.inline
-    def BND: typings.dineroJs.dineroJsStrings.BND = "BND".asInstanceOf[typings.dineroJs.dineroJsStrings.BND]
+    inline def BND: typings.dineroJs.dineroJsStrings.BND = "BND".asInstanceOf[typings.dineroJs.dineroJsStrings.BND]
     
-    @scala.inline
-    def BOB: typings.dineroJs.dineroJsStrings.BOB = "BOB".asInstanceOf[typings.dineroJs.dineroJsStrings.BOB]
+    inline def BOB: typings.dineroJs.dineroJsStrings.BOB = "BOB".asInstanceOf[typings.dineroJs.dineroJsStrings.BOB]
     
-    @scala.inline
-    def BOV: typings.dineroJs.dineroJsStrings.BOV = "BOV".asInstanceOf[typings.dineroJs.dineroJsStrings.BOV]
+    inline def BOV: typings.dineroJs.dineroJsStrings.BOV = "BOV".asInstanceOf[typings.dineroJs.dineroJsStrings.BOV]
     
-    @scala.inline
-    def BRL: typings.dineroJs.dineroJsStrings.BRL = "BRL".asInstanceOf[typings.dineroJs.dineroJsStrings.BRL]
+    inline def BRL: typings.dineroJs.dineroJsStrings.BRL = "BRL".asInstanceOf[typings.dineroJs.dineroJsStrings.BRL]
     
-    @scala.inline
-    def BSD: typings.dineroJs.dineroJsStrings.BSD = "BSD".asInstanceOf[typings.dineroJs.dineroJsStrings.BSD]
+    inline def BSD: typings.dineroJs.dineroJsStrings.BSD = "BSD".asInstanceOf[typings.dineroJs.dineroJsStrings.BSD]
     
-    @scala.inline
-    def BTN: typings.dineroJs.dineroJsStrings.BTN = "BTN".asInstanceOf[typings.dineroJs.dineroJsStrings.BTN]
+    inline def BTN: typings.dineroJs.dineroJsStrings.BTN = "BTN".asInstanceOf[typings.dineroJs.dineroJsStrings.BTN]
     
-    @scala.inline
-    def BWP: typings.dineroJs.dineroJsStrings.BWP = "BWP".asInstanceOf[typings.dineroJs.dineroJsStrings.BWP]
+    inline def BWP: typings.dineroJs.dineroJsStrings.BWP = "BWP".asInstanceOf[typings.dineroJs.dineroJsStrings.BWP]
     
-    @scala.inline
-    def BYN: typings.dineroJs.dineroJsStrings.BYN = "BYN".asInstanceOf[typings.dineroJs.dineroJsStrings.BYN]
+    inline def BYN: typings.dineroJs.dineroJsStrings.BYN = "BYN".asInstanceOf[typings.dineroJs.dineroJsStrings.BYN]
     
-    @scala.inline
-    def BZD: typings.dineroJs.dineroJsStrings.BZD = "BZD".asInstanceOf[typings.dineroJs.dineroJsStrings.BZD]
+    inline def BZD: typings.dineroJs.dineroJsStrings.BZD = "BZD".asInstanceOf[typings.dineroJs.dineroJsStrings.BZD]
     
-    @scala.inline
-    def CAD: typings.dineroJs.dineroJsStrings.CAD = "CAD".asInstanceOf[typings.dineroJs.dineroJsStrings.CAD]
+    inline def CAD: typings.dineroJs.dineroJsStrings.CAD = "CAD".asInstanceOf[typings.dineroJs.dineroJsStrings.CAD]
     
-    @scala.inline
-    def CDF: typings.dineroJs.dineroJsStrings.CDF = "CDF".asInstanceOf[typings.dineroJs.dineroJsStrings.CDF]
+    inline def CDF: typings.dineroJs.dineroJsStrings.CDF = "CDF".asInstanceOf[typings.dineroJs.dineroJsStrings.CDF]
     
-    @scala.inline
-    def CHE: typings.dineroJs.dineroJsStrings.CHE = "CHE".asInstanceOf[typings.dineroJs.dineroJsStrings.CHE]
+    inline def CHE: typings.dineroJs.dineroJsStrings.CHE = "CHE".asInstanceOf[typings.dineroJs.dineroJsStrings.CHE]
     
-    @scala.inline
-    def CHF: typings.dineroJs.dineroJsStrings.CHF = "CHF".asInstanceOf[typings.dineroJs.dineroJsStrings.CHF]
+    inline def CHF: typings.dineroJs.dineroJsStrings.CHF = "CHF".asInstanceOf[typings.dineroJs.dineroJsStrings.CHF]
     
-    @scala.inline
-    def CHW: typings.dineroJs.dineroJsStrings.CHW = "CHW".asInstanceOf[typings.dineroJs.dineroJsStrings.CHW]
+    inline def CHW: typings.dineroJs.dineroJsStrings.CHW = "CHW".asInstanceOf[typings.dineroJs.dineroJsStrings.CHW]
     
-    @scala.inline
-    def CLF: typings.dineroJs.dineroJsStrings.CLF = "CLF".asInstanceOf[typings.dineroJs.dineroJsStrings.CLF]
+    inline def CLF: typings.dineroJs.dineroJsStrings.CLF = "CLF".asInstanceOf[typings.dineroJs.dineroJsStrings.CLF]
     
-    @scala.inline
-    def CLP: typings.dineroJs.dineroJsStrings.CLP = "CLP".asInstanceOf[typings.dineroJs.dineroJsStrings.CLP]
+    inline def CLP: typings.dineroJs.dineroJsStrings.CLP = "CLP".asInstanceOf[typings.dineroJs.dineroJsStrings.CLP]
     
-    @scala.inline
-    def CNY: typings.dineroJs.dineroJsStrings.CNY = "CNY".asInstanceOf[typings.dineroJs.dineroJsStrings.CNY]
+    inline def CNY: typings.dineroJs.dineroJsStrings.CNY = "CNY".asInstanceOf[typings.dineroJs.dineroJsStrings.CNY]
     
-    @scala.inline
-    def COP: typings.dineroJs.dineroJsStrings.COP = "COP".asInstanceOf[typings.dineroJs.dineroJsStrings.COP]
+    inline def COP: typings.dineroJs.dineroJsStrings.COP = "COP".asInstanceOf[typings.dineroJs.dineroJsStrings.COP]
     
-    @scala.inline
-    def COU: typings.dineroJs.dineroJsStrings.COU = "COU".asInstanceOf[typings.dineroJs.dineroJsStrings.COU]
+    inline def COU: typings.dineroJs.dineroJsStrings.COU = "COU".asInstanceOf[typings.dineroJs.dineroJsStrings.COU]
     
-    @scala.inline
-    def CRC: typings.dineroJs.dineroJsStrings.CRC = "CRC".asInstanceOf[typings.dineroJs.dineroJsStrings.CRC]
+    inline def CRC: typings.dineroJs.dineroJsStrings.CRC = "CRC".asInstanceOf[typings.dineroJs.dineroJsStrings.CRC]
     
-    @scala.inline
-    def CUC: typings.dineroJs.dineroJsStrings.CUC = "CUC".asInstanceOf[typings.dineroJs.dineroJsStrings.CUC]
+    inline def CUC: typings.dineroJs.dineroJsStrings.CUC = "CUC".asInstanceOf[typings.dineroJs.dineroJsStrings.CUC]
     
-    @scala.inline
-    def CUP: typings.dineroJs.dineroJsStrings.CUP = "CUP".asInstanceOf[typings.dineroJs.dineroJsStrings.CUP]
+    inline def CUP: typings.dineroJs.dineroJsStrings.CUP = "CUP".asInstanceOf[typings.dineroJs.dineroJsStrings.CUP]
     
-    @scala.inline
-    def CVE: typings.dineroJs.dineroJsStrings.CVE = "CVE".asInstanceOf[typings.dineroJs.dineroJsStrings.CVE]
+    inline def CVE: typings.dineroJs.dineroJsStrings.CVE = "CVE".asInstanceOf[typings.dineroJs.dineroJsStrings.CVE]
     
-    @scala.inline
-    def CZK: typings.dineroJs.dineroJsStrings.CZK = "CZK".asInstanceOf[typings.dineroJs.dineroJsStrings.CZK]
+    inline def CZK: typings.dineroJs.dineroJsStrings.CZK = "CZK".asInstanceOf[typings.dineroJs.dineroJsStrings.CZK]
     
-    @scala.inline
-    def DJF: typings.dineroJs.dineroJsStrings.DJF = "DJF".asInstanceOf[typings.dineroJs.dineroJsStrings.DJF]
+    inline def DJF: typings.dineroJs.dineroJsStrings.DJF = "DJF".asInstanceOf[typings.dineroJs.dineroJsStrings.DJF]
     
-    @scala.inline
-    def DKK: typings.dineroJs.dineroJsStrings.DKK = "DKK".asInstanceOf[typings.dineroJs.dineroJsStrings.DKK]
+    inline def DKK: typings.dineroJs.dineroJsStrings.DKK = "DKK".asInstanceOf[typings.dineroJs.dineroJsStrings.DKK]
     
-    @scala.inline
-    def DOP: typings.dineroJs.dineroJsStrings.DOP = "DOP".asInstanceOf[typings.dineroJs.dineroJsStrings.DOP]
+    inline def DOP: typings.dineroJs.dineroJsStrings.DOP = "DOP".asInstanceOf[typings.dineroJs.dineroJsStrings.DOP]
     
-    @scala.inline
-    def DZD: typings.dineroJs.dineroJsStrings.DZD = "DZD".asInstanceOf[typings.dineroJs.dineroJsStrings.DZD]
+    inline def DZD: typings.dineroJs.dineroJsStrings.DZD = "DZD".asInstanceOf[typings.dineroJs.dineroJsStrings.DZD]
     
-    @scala.inline
-    def EGP: typings.dineroJs.dineroJsStrings.EGP = "EGP".asInstanceOf[typings.dineroJs.dineroJsStrings.EGP]
+    inline def EGP: typings.dineroJs.dineroJsStrings.EGP = "EGP".asInstanceOf[typings.dineroJs.dineroJsStrings.EGP]
     
-    @scala.inline
-    def ERN: typings.dineroJs.dineroJsStrings.ERN = "ERN".asInstanceOf[typings.dineroJs.dineroJsStrings.ERN]
+    inline def ERN: typings.dineroJs.dineroJsStrings.ERN = "ERN".asInstanceOf[typings.dineroJs.dineroJsStrings.ERN]
     
-    @scala.inline
-    def ETB: typings.dineroJs.dineroJsStrings.ETB = "ETB".asInstanceOf[typings.dineroJs.dineroJsStrings.ETB]
+    inline def ETB: typings.dineroJs.dineroJsStrings.ETB = "ETB".asInstanceOf[typings.dineroJs.dineroJsStrings.ETB]
     
-    @scala.inline
-    def EUR: typings.dineroJs.dineroJsStrings.EUR = "EUR".asInstanceOf[typings.dineroJs.dineroJsStrings.EUR]
+    inline def EUR: typings.dineroJs.dineroJsStrings.EUR = "EUR".asInstanceOf[typings.dineroJs.dineroJsStrings.EUR]
     
-    @scala.inline
-    def FJD: typings.dineroJs.dineroJsStrings.FJD = "FJD".asInstanceOf[typings.dineroJs.dineroJsStrings.FJD]
+    inline def FJD: typings.dineroJs.dineroJsStrings.FJD = "FJD".asInstanceOf[typings.dineroJs.dineroJsStrings.FJD]
     
-    @scala.inline
-    def FKP: typings.dineroJs.dineroJsStrings.FKP = "FKP".asInstanceOf[typings.dineroJs.dineroJsStrings.FKP]
+    inline def FKP: typings.dineroJs.dineroJsStrings.FKP = "FKP".asInstanceOf[typings.dineroJs.dineroJsStrings.FKP]
     
-    @scala.inline
-    def GBP: typings.dineroJs.dineroJsStrings.GBP = "GBP".asInstanceOf[typings.dineroJs.dineroJsStrings.GBP]
+    inline def GBP: typings.dineroJs.dineroJsStrings.GBP = "GBP".asInstanceOf[typings.dineroJs.dineroJsStrings.GBP]
     
-    @scala.inline
-    def GEL: typings.dineroJs.dineroJsStrings.GEL = "GEL".asInstanceOf[typings.dineroJs.dineroJsStrings.GEL]
+    inline def GEL: typings.dineroJs.dineroJsStrings.GEL = "GEL".asInstanceOf[typings.dineroJs.dineroJsStrings.GEL]
     
-    @scala.inline
-    def GHS: typings.dineroJs.dineroJsStrings.GHS = "GHS".asInstanceOf[typings.dineroJs.dineroJsStrings.GHS]
+    inline def GHS: typings.dineroJs.dineroJsStrings.GHS = "GHS".asInstanceOf[typings.dineroJs.dineroJsStrings.GHS]
     
-    @scala.inline
-    def GIP: typings.dineroJs.dineroJsStrings.GIP = "GIP".asInstanceOf[typings.dineroJs.dineroJsStrings.GIP]
+    inline def GIP: typings.dineroJs.dineroJsStrings.GIP = "GIP".asInstanceOf[typings.dineroJs.dineroJsStrings.GIP]
     
-    @scala.inline
-    def GMD: typings.dineroJs.dineroJsStrings.GMD = "GMD".asInstanceOf[typings.dineroJs.dineroJsStrings.GMD]
+    inline def GMD: typings.dineroJs.dineroJsStrings.GMD = "GMD".asInstanceOf[typings.dineroJs.dineroJsStrings.GMD]
     
-    @scala.inline
-    def GNF: typings.dineroJs.dineroJsStrings.GNF = "GNF".asInstanceOf[typings.dineroJs.dineroJsStrings.GNF]
+    inline def GNF: typings.dineroJs.dineroJsStrings.GNF = "GNF".asInstanceOf[typings.dineroJs.dineroJsStrings.GNF]
     
-    @scala.inline
-    def GTQ: typings.dineroJs.dineroJsStrings.GTQ = "GTQ".asInstanceOf[typings.dineroJs.dineroJsStrings.GTQ]
+    inline def GTQ: typings.dineroJs.dineroJsStrings.GTQ = "GTQ".asInstanceOf[typings.dineroJs.dineroJsStrings.GTQ]
     
-    @scala.inline
-    def GYD: typings.dineroJs.dineroJsStrings.GYD = "GYD".asInstanceOf[typings.dineroJs.dineroJsStrings.GYD]
+    inline def GYD: typings.dineroJs.dineroJsStrings.GYD = "GYD".asInstanceOf[typings.dineroJs.dineroJsStrings.GYD]
     
-    @scala.inline
-    def HKD: typings.dineroJs.dineroJsStrings.HKD = "HKD".asInstanceOf[typings.dineroJs.dineroJsStrings.HKD]
+    inline def HKD: typings.dineroJs.dineroJsStrings.HKD = "HKD".asInstanceOf[typings.dineroJs.dineroJsStrings.HKD]
     
-    @scala.inline
-    def HNL: typings.dineroJs.dineroJsStrings.HNL = "HNL".asInstanceOf[typings.dineroJs.dineroJsStrings.HNL]
+    inline def HNL: typings.dineroJs.dineroJsStrings.HNL = "HNL".asInstanceOf[typings.dineroJs.dineroJsStrings.HNL]
     
-    @scala.inline
-    def HRK: typings.dineroJs.dineroJsStrings.HRK = "HRK".asInstanceOf[typings.dineroJs.dineroJsStrings.HRK]
+    inline def HRK: typings.dineroJs.dineroJsStrings.HRK = "HRK".asInstanceOf[typings.dineroJs.dineroJsStrings.HRK]
     
-    @scala.inline
-    def HTG: typings.dineroJs.dineroJsStrings.HTG = "HTG".asInstanceOf[typings.dineroJs.dineroJsStrings.HTG]
+    inline def HTG: typings.dineroJs.dineroJsStrings.HTG = "HTG".asInstanceOf[typings.dineroJs.dineroJsStrings.HTG]
     
-    @scala.inline
-    def HUF: typings.dineroJs.dineroJsStrings.HUF = "HUF".asInstanceOf[typings.dineroJs.dineroJsStrings.HUF]
+    inline def HUF: typings.dineroJs.dineroJsStrings.HUF = "HUF".asInstanceOf[typings.dineroJs.dineroJsStrings.HUF]
     
-    @scala.inline
-    def IDR: typings.dineroJs.dineroJsStrings.IDR = "IDR".asInstanceOf[typings.dineroJs.dineroJsStrings.IDR]
+    inline def IDR: typings.dineroJs.dineroJsStrings.IDR = "IDR".asInstanceOf[typings.dineroJs.dineroJsStrings.IDR]
     
-    @scala.inline
-    def ILS: typings.dineroJs.dineroJsStrings.ILS = "ILS".asInstanceOf[typings.dineroJs.dineroJsStrings.ILS]
+    inline def ILS: typings.dineroJs.dineroJsStrings.ILS = "ILS".asInstanceOf[typings.dineroJs.dineroJsStrings.ILS]
     
-    @scala.inline
-    def INR: typings.dineroJs.dineroJsStrings.INR = "INR".asInstanceOf[typings.dineroJs.dineroJsStrings.INR]
+    inline def INR: typings.dineroJs.dineroJsStrings.INR = "INR".asInstanceOf[typings.dineroJs.dineroJsStrings.INR]
     
-    @scala.inline
-    def IQD: typings.dineroJs.dineroJsStrings.IQD = "IQD".asInstanceOf[typings.dineroJs.dineroJsStrings.IQD]
+    inline def IQD: typings.dineroJs.dineroJsStrings.IQD = "IQD".asInstanceOf[typings.dineroJs.dineroJsStrings.IQD]
     
-    @scala.inline
-    def IRR: typings.dineroJs.dineroJsStrings.IRR = "IRR".asInstanceOf[typings.dineroJs.dineroJsStrings.IRR]
+    inline def IRR: typings.dineroJs.dineroJsStrings.IRR = "IRR".asInstanceOf[typings.dineroJs.dineroJsStrings.IRR]
     
-    @scala.inline
-    def ISK: typings.dineroJs.dineroJsStrings.ISK = "ISK".asInstanceOf[typings.dineroJs.dineroJsStrings.ISK]
+    inline def ISK: typings.dineroJs.dineroJsStrings.ISK = "ISK".asInstanceOf[typings.dineroJs.dineroJsStrings.ISK]
     
-    @scala.inline
-    def JMD: typings.dineroJs.dineroJsStrings.JMD = "JMD".asInstanceOf[typings.dineroJs.dineroJsStrings.JMD]
+    inline def JMD: typings.dineroJs.dineroJsStrings.JMD = "JMD".asInstanceOf[typings.dineroJs.dineroJsStrings.JMD]
     
-    @scala.inline
-    def JOD: typings.dineroJs.dineroJsStrings.JOD = "JOD".asInstanceOf[typings.dineroJs.dineroJsStrings.JOD]
+    inline def JOD: typings.dineroJs.dineroJsStrings.JOD = "JOD".asInstanceOf[typings.dineroJs.dineroJsStrings.JOD]
     
-    @scala.inline
-    def JPY: typings.dineroJs.dineroJsStrings.JPY = "JPY".asInstanceOf[typings.dineroJs.dineroJsStrings.JPY]
+    inline def JPY: typings.dineroJs.dineroJsStrings.JPY = "JPY".asInstanceOf[typings.dineroJs.dineroJsStrings.JPY]
     
-    @scala.inline
-    def KES: typings.dineroJs.dineroJsStrings.KES = "KES".asInstanceOf[typings.dineroJs.dineroJsStrings.KES]
+    inline def KES: typings.dineroJs.dineroJsStrings.KES = "KES".asInstanceOf[typings.dineroJs.dineroJsStrings.KES]
     
-    @scala.inline
-    def KGS: typings.dineroJs.dineroJsStrings.KGS = "KGS".asInstanceOf[typings.dineroJs.dineroJsStrings.KGS]
+    inline def KGS: typings.dineroJs.dineroJsStrings.KGS = "KGS".asInstanceOf[typings.dineroJs.dineroJsStrings.KGS]
     
-    @scala.inline
-    def KHR: typings.dineroJs.dineroJsStrings.KHR = "KHR".asInstanceOf[typings.dineroJs.dineroJsStrings.KHR]
+    inline def KHR: typings.dineroJs.dineroJsStrings.KHR = "KHR".asInstanceOf[typings.dineroJs.dineroJsStrings.KHR]
     
-    @scala.inline
-    def KMF: typings.dineroJs.dineroJsStrings.KMF = "KMF".asInstanceOf[typings.dineroJs.dineroJsStrings.KMF]
+    inline def KMF: typings.dineroJs.dineroJsStrings.KMF = "KMF".asInstanceOf[typings.dineroJs.dineroJsStrings.KMF]
     
-    @scala.inline
-    def KPW: typings.dineroJs.dineroJsStrings.KPW = "KPW".asInstanceOf[typings.dineroJs.dineroJsStrings.KPW]
+    inline def KPW: typings.dineroJs.dineroJsStrings.KPW = "KPW".asInstanceOf[typings.dineroJs.dineroJsStrings.KPW]
     
-    @scala.inline
-    def KRW: typings.dineroJs.dineroJsStrings.KRW = "KRW".asInstanceOf[typings.dineroJs.dineroJsStrings.KRW]
+    inline def KRW: typings.dineroJs.dineroJsStrings.KRW = "KRW".asInstanceOf[typings.dineroJs.dineroJsStrings.KRW]
     
-    @scala.inline
-    def KWD: typings.dineroJs.dineroJsStrings.KWD = "KWD".asInstanceOf[typings.dineroJs.dineroJsStrings.KWD]
+    inline def KWD: typings.dineroJs.dineroJsStrings.KWD = "KWD".asInstanceOf[typings.dineroJs.dineroJsStrings.KWD]
     
-    @scala.inline
-    def KYD: typings.dineroJs.dineroJsStrings.KYD = "KYD".asInstanceOf[typings.dineroJs.dineroJsStrings.KYD]
+    inline def KYD: typings.dineroJs.dineroJsStrings.KYD = "KYD".asInstanceOf[typings.dineroJs.dineroJsStrings.KYD]
     
-    @scala.inline
-    def KZT: typings.dineroJs.dineroJsStrings.KZT = "KZT".asInstanceOf[typings.dineroJs.dineroJsStrings.KZT]
+    inline def KZT: typings.dineroJs.dineroJsStrings.KZT = "KZT".asInstanceOf[typings.dineroJs.dineroJsStrings.KZT]
     
-    @scala.inline
-    def LAK: typings.dineroJs.dineroJsStrings.LAK = "LAK".asInstanceOf[typings.dineroJs.dineroJsStrings.LAK]
+    inline def LAK: typings.dineroJs.dineroJsStrings.LAK = "LAK".asInstanceOf[typings.dineroJs.dineroJsStrings.LAK]
     
-    @scala.inline
-    def LBP: typings.dineroJs.dineroJsStrings.LBP = "LBP".asInstanceOf[typings.dineroJs.dineroJsStrings.LBP]
+    inline def LBP: typings.dineroJs.dineroJsStrings.LBP = "LBP".asInstanceOf[typings.dineroJs.dineroJsStrings.LBP]
     
-    @scala.inline
-    def LKR: typings.dineroJs.dineroJsStrings.LKR = "LKR".asInstanceOf[typings.dineroJs.dineroJsStrings.LKR]
+    inline def LKR: typings.dineroJs.dineroJsStrings.LKR = "LKR".asInstanceOf[typings.dineroJs.dineroJsStrings.LKR]
     
-    @scala.inline
-    def LRD: typings.dineroJs.dineroJsStrings.LRD = "LRD".asInstanceOf[typings.dineroJs.dineroJsStrings.LRD]
+    inline def LRD: typings.dineroJs.dineroJsStrings.LRD = "LRD".asInstanceOf[typings.dineroJs.dineroJsStrings.LRD]
     
-    @scala.inline
-    def LSL: typings.dineroJs.dineroJsStrings.LSL = "LSL".asInstanceOf[typings.dineroJs.dineroJsStrings.LSL]
+    inline def LSL: typings.dineroJs.dineroJsStrings.LSL = "LSL".asInstanceOf[typings.dineroJs.dineroJsStrings.LSL]
     
-    @scala.inline
-    def LYD: typings.dineroJs.dineroJsStrings.LYD = "LYD".asInstanceOf[typings.dineroJs.dineroJsStrings.LYD]
+    inline def LYD: typings.dineroJs.dineroJsStrings.LYD = "LYD".asInstanceOf[typings.dineroJs.dineroJsStrings.LYD]
     
-    @scala.inline
-    def MAD: typings.dineroJs.dineroJsStrings.MAD = "MAD".asInstanceOf[typings.dineroJs.dineroJsStrings.MAD]
+    inline def MAD: typings.dineroJs.dineroJsStrings.MAD = "MAD".asInstanceOf[typings.dineroJs.dineroJsStrings.MAD]
     
-    @scala.inline
-    def MDL: typings.dineroJs.dineroJsStrings.MDL = "MDL".asInstanceOf[typings.dineroJs.dineroJsStrings.MDL]
+    inline def MDL: typings.dineroJs.dineroJsStrings.MDL = "MDL".asInstanceOf[typings.dineroJs.dineroJsStrings.MDL]
     
-    @scala.inline
-    def MGA: typings.dineroJs.dineroJsStrings.MGA = "MGA".asInstanceOf[typings.dineroJs.dineroJsStrings.MGA]
+    inline def MGA: typings.dineroJs.dineroJsStrings.MGA = "MGA".asInstanceOf[typings.dineroJs.dineroJsStrings.MGA]
     
-    @scala.inline
-    def MKD: typings.dineroJs.dineroJsStrings.MKD = "MKD".asInstanceOf[typings.dineroJs.dineroJsStrings.MKD]
+    inline def MKD: typings.dineroJs.dineroJsStrings.MKD = "MKD".asInstanceOf[typings.dineroJs.dineroJsStrings.MKD]
     
-    @scala.inline
-    def MMK: typings.dineroJs.dineroJsStrings.MMK = "MMK".asInstanceOf[typings.dineroJs.dineroJsStrings.MMK]
+    inline def MMK: typings.dineroJs.dineroJsStrings.MMK = "MMK".asInstanceOf[typings.dineroJs.dineroJsStrings.MMK]
     
-    @scala.inline
-    def MNT: typings.dineroJs.dineroJsStrings.MNT = "MNT".asInstanceOf[typings.dineroJs.dineroJsStrings.MNT]
+    inline def MNT: typings.dineroJs.dineroJsStrings.MNT = "MNT".asInstanceOf[typings.dineroJs.dineroJsStrings.MNT]
     
-    @scala.inline
-    def MOP: typings.dineroJs.dineroJsStrings.MOP = "MOP".asInstanceOf[typings.dineroJs.dineroJsStrings.MOP]
+    inline def MOP: typings.dineroJs.dineroJsStrings.MOP = "MOP".asInstanceOf[typings.dineroJs.dineroJsStrings.MOP]
     
-    @scala.inline
-    def MRU: typings.dineroJs.dineroJsStrings.MRU = "MRU".asInstanceOf[typings.dineroJs.dineroJsStrings.MRU]
+    inline def MRU: typings.dineroJs.dineroJsStrings.MRU = "MRU".asInstanceOf[typings.dineroJs.dineroJsStrings.MRU]
     
-    @scala.inline
-    def MUR: typings.dineroJs.dineroJsStrings.MUR = "MUR".asInstanceOf[typings.dineroJs.dineroJsStrings.MUR]
+    inline def MUR: typings.dineroJs.dineroJsStrings.MUR = "MUR".asInstanceOf[typings.dineroJs.dineroJsStrings.MUR]
     
-    @scala.inline
-    def MVR: typings.dineroJs.dineroJsStrings.MVR = "MVR".asInstanceOf[typings.dineroJs.dineroJsStrings.MVR]
+    inline def MVR: typings.dineroJs.dineroJsStrings.MVR = "MVR".asInstanceOf[typings.dineroJs.dineroJsStrings.MVR]
     
-    @scala.inline
-    def MWK: typings.dineroJs.dineroJsStrings.MWK = "MWK".asInstanceOf[typings.dineroJs.dineroJsStrings.MWK]
+    inline def MWK: typings.dineroJs.dineroJsStrings.MWK = "MWK".asInstanceOf[typings.dineroJs.dineroJsStrings.MWK]
     
-    @scala.inline
-    def MXN: typings.dineroJs.dineroJsStrings.MXN = "MXN".asInstanceOf[typings.dineroJs.dineroJsStrings.MXN]
+    inline def MXN: typings.dineroJs.dineroJsStrings.MXN = "MXN".asInstanceOf[typings.dineroJs.dineroJsStrings.MXN]
     
-    @scala.inline
-    def MXV: typings.dineroJs.dineroJsStrings.MXV = "MXV".asInstanceOf[typings.dineroJs.dineroJsStrings.MXV]
+    inline def MXV: typings.dineroJs.dineroJsStrings.MXV = "MXV".asInstanceOf[typings.dineroJs.dineroJsStrings.MXV]
     
-    @scala.inline
-    def MYR: typings.dineroJs.dineroJsStrings.MYR = "MYR".asInstanceOf[typings.dineroJs.dineroJsStrings.MYR]
+    inline def MYR: typings.dineroJs.dineroJsStrings.MYR = "MYR".asInstanceOf[typings.dineroJs.dineroJsStrings.MYR]
     
-    @scala.inline
-    def MZN: typings.dineroJs.dineroJsStrings.MZN = "MZN".asInstanceOf[typings.dineroJs.dineroJsStrings.MZN]
+    inline def MZN: typings.dineroJs.dineroJsStrings.MZN = "MZN".asInstanceOf[typings.dineroJs.dineroJsStrings.MZN]
     
-    @scala.inline
-    def NAD: typings.dineroJs.dineroJsStrings.NAD = "NAD".asInstanceOf[typings.dineroJs.dineroJsStrings.NAD]
+    inline def NAD: typings.dineroJs.dineroJsStrings.NAD = "NAD".asInstanceOf[typings.dineroJs.dineroJsStrings.NAD]
     
-    @scala.inline
-    def NGN: typings.dineroJs.dineroJsStrings.NGN = "NGN".asInstanceOf[typings.dineroJs.dineroJsStrings.NGN]
+    inline def NGN: typings.dineroJs.dineroJsStrings.NGN = "NGN".asInstanceOf[typings.dineroJs.dineroJsStrings.NGN]
     
-    @scala.inline
-    def NIO: typings.dineroJs.dineroJsStrings.NIO = "NIO".asInstanceOf[typings.dineroJs.dineroJsStrings.NIO]
+    inline def NIO: typings.dineroJs.dineroJsStrings.NIO = "NIO".asInstanceOf[typings.dineroJs.dineroJsStrings.NIO]
     
-    @scala.inline
-    def NOK: typings.dineroJs.dineroJsStrings.NOK = "NOK".asInstanceOf[typings.dineroJs.dineroJsStrings.NOK]
+    inline def NOK: typings.dineroJs.dineroJsStrings.NOK = "NOK".asInstanceOf[typings.dineroJs.dineroJsStrings.NOK]
     
-    @scala.inline
-    def NPR: typings.dineroJs.dineroJsStrings.NPR = "NPR".asInstanceOf[typings.dineroJs.dineroJsStrings.NPR]
+    inline def NPR: typings.dineroJs.dineroJsStrings.NPR = "NPR".asInstanceOf[typings.dineroJs.dineroJsStrings.NPR]
     
-    @scala.inline
-    def NZD: typings.dineroJs.dineroJsStrings.NZD = "NZD".asInstanceOf[typings.dineroJs.dineroJsStrings.NZD]
+    inline def NZD: typings.dineroJs.dineroJsStrings.NZD = "NZD".asInstanceOf[typings.dineroJs.dineroJsStrings.NZD]
     
-    @scala.inline
-    def OMR: typings.dineroJs.dineroJsStrings.OMR = "OMR".asInstanceOf[typings.dineroJs.dineroJsStrings.OMR]
+    inline def OMR: typings.dineroJs.dineroJsStrings.OMR = "OMR".asInstanceOf[typings.dineroJs.dineroJsStrings.OMR]
     
-    @scala.inline
-    def PAB: typings.dineroJs.dineroJsStrings.PAB = "PAB".asInstanceOf[typings.dineroJs.dineroJsStrings.PAB]
+    inline def PAB: typings.dineroJs.dineroJsStrings.PAB = "PAB".asInstanceOf[typings.dineroJs.dineroJsStrings.PAB]
     
-    @scala.inline
-    def PEN: typings.dineroJs.dineroJsStrings.PEN = "PEN".asInstanceOf[typings.dineroJs.dineroJsStrings.PEN]
+    inline def PEN: typings.dineroJs.dineroJsStrings.PEN = "PEN".asInstanceOf[typings.dineroJs.dineroJsStrings.PEN]
     
-    @scala.inline
-    def PGK: typings.dineroJs.dineroJsStrings.PGK = "PGK".asInstanceOf[typings.dineroJs.dineroJsStrings.PGK]
+    inline def PGK: typings.dineroJs.dineroJsStrings.PGK = "PGK".asInstanceOf[typings.dineroJs.dineroJsStrings.PGK]
     
-    @scala.inline
-    def PHP: typings.dineroJs.dineroJsStrings.PHP = "PHP".asInstanceOf[typings.dineroJs.dineroJsStrings.PHP]
+    inline def PHP: typings.dineroJs.dineroJsStrings.PHP = "PHP".asInstanceOf[typings.dineroJs.dineroJsStrings.PHP]
     
-    @scala.inline
-    def PKR: typings.dineroJs.dineroJsStrings.PKR = "PKR".asInstanceOf[typings.dineroJs.dineroJsStrings.PKR]
+    inline def PKR: typings.dineroJs.dineroJsStrings.PKR = "PKR".asInstanceOf[typings.dineroJs.dineroJsStrings.PKR]
     
-    @scala.inline
-    def PLN: typings.dineroJs.dineroJsStrings.PLN = "PLN".asInstanceOf[typings.dineroJs.dineroJsStrings.PLN]
+    inline def PLN: typings.dineroJs.dineroJsStrings.PLN = "PLN".asInstanceOf[typings.dineroJs.dineroJsStrings.PLN]
     
-    @scala.inline
-    def PYG: typings.dineroJs.dineroJsStrings.PYG = "PYG".asInstanceOf[typings.dineroJs.dineroJsStrings.PYG]
+    inline def PYG: typings.dineroJs.dineroJsStrings.PYG = "PYG".asInstanceOf[typings.dineroJs.dineroJsStrings.PYG]
     
-    @scala.inline
-    def QAR: typings.dineroJs.dineroJsStrings.QAR = "QAR".asInstanceOf[typings.dineroJs.dineroJsStrings.QAR]
+    inline def QAR: typings.dineroJs.dineroJsStrings.QAR = "QAR".asInstanceOf[typings.dineroJs.dineroJsStrings.QAR]
     
-    @scala.inline
-    def RON: typings.dineroJs.dineroJsStrings.RON = "RON".asInstanceOf[typings.dineroJs.dineroJsStrings.RON]
+    inline def RON: typings.dineroJs.dineroJsStrings.RON = "RON".asInstanceOf[typings.dineroJs.dineroJsStrings.RON]
     
-    @scala.inline
-    def RSD: typings.dineroJs.dineroJsStrings.RSD = "RSD".asInstanceOf[typings.dineroJs.dineroJsStrings.RSD]
+    inline def RSD: typings.dineroJs.dineroJsStrings.RSD = "RSD".asInstanceOf[typings.dineroJs.dineroJsStrings.RSD]
     
-    @scala.inline
-    def RUB: typings.dineroJs.dineroJsStrings.RUB = "RUB".asInstanceOf[typings.dineroJs.dineroJsStrings.RUB]
+    inline def RUB: typings.dineroJs.dineroJsStrings.RUB = "RUB".asInstanceOf[typings.dineroJs.dineroJsStrings.RUB]
     
-    @scala.inline
-    def RWF: typings.dineroJs.dineroJsStrings.RWF = "RWF".asInstanceOf[typings.dineroJs.dineroJsStrings.RWF]
+    inline def RWF: typings.dineroJs.dineroJsStrings.RWF = "RWF".asInstanceOf[typings.dineroJs.dineroJsStrings.RWF]
     
-    @scala.inline
-    def SAR: typings.dineroJs.dineroJsStrings.SAR = "SAR".asInstanceOf[typings.dineroJs.dineroJsStrings.SAR]
+    inline def SAR: typings.dineroJs.dineroJsStrings.SAR = "SAR".asInstanceOf[typings.dineroJs.dineroJsStrings.SAR]
     
-    @scala.inline
-    def SBD: typings.dineroJs.dineroJsStrings.SBD = "SBD".asInstanceOf[typings.dineroJs.dineroJsStrings.SBD]
+    inline def SBD: typings.dineroJs.dineroJsStrings.SBD = "SBD".asInstanceOf[typings.dineroJs.dineroJsStrings.SBD]
     
-    @scala.inline
-    def SCR: typings.dineroJs.dineroJsStrings.SCR = "SCR".asInstanceOf[typings.dineroJs.dineroJsStrings.SCR]
+    inline def SCR: typings.dineroJs.dineroJsStrings.SCR = "SCR".asInstanceOf[typings.dineroJs.dineroJsStrings.SCR]
     
-    @scala.inline
-    def SDG: typings.dineroJs.dineroJsStrings.SDG = "SDG".asInstanceOf[typings.dineroJs.dineroJsStrings.SDG]
+    inline def SDG: typings.dineroJs.dineroJsStrings.SDG = "SDG".asInstanceOf[typings.dineroJs.dineroJsStrings.SDG]
     
-    @scala.inline
-    def SEK: typings.dineroJs.dineroJsStrings.SEK = "SEK".asInstanceOf[typings.dineroJs.dineroJsStrings.SEK]
+    inline def SEK: typings.dineroJs.dineroJsStrings.SEK = "SEK".asInstanceOf[typings.dineroJs.dineroJsStrings.SEK]
     
-    @scala.inline
-    def SGD: typings.dineroJs.dineroJsStrings.SGD = "SGD".asInstanceOf[typings.dineroJs.dineroJsStrings.SGD]
+    inline def SGD: typings.dineroJs.dineroJsStrings.SGD = "SGD".asInstanceOf[typings.dineroJs.dineroJsStrings.SGD]
     
-    @scala.inline
-    def SHP: typings.dineroJs.dineroJsStrings.SHP = "SHP".asInstanceOf[typings.dineroJs.dineroJsStrings.SHP]
+    inline def SHP: typings.dineroJs.dineroJsStrings.SHP = "SHP".asInstanceOf[typings.dineroJs.dineroJsStrings.SHP]
     
-    @scala.inline
-    def SLL: typings.dineroJs.dineroJsStrings.SLL = "SLL".asInstanceOf[typings.dineroJs.dineroJsStrings.SLL]
+    inline def SLL: typings.dineroJs.dineroJsStrings.SLL = "SLL".asInstanceOf[typings.dineroJs.dineroJsStrings.SLL]
     
-    @scala.inline
-    def SOS: typings.dineroJs.dineroJsStrings.SOS = "SOS".asInstanceOf[typings.dineroJs.dineroJsStrings.SOS]
+    inline def SOS: typings.dineroJs.dineroJsStrings.SOS = "SOS".asInstanceOf[typings.dineroJs.dineroJsStrings.SOS]
     
-    @scala.inline
-    def SRD: typings.dineroJs.dineroJsStrings.SRD = "SRD".asInstanceOf[typings.dineroJs.dineroJsStrings.SRD]
+    inline def SRD: typings.dineroJs.dineroJsStrings.SRD = "SRD".asInstanceOf[typings.dineroJs.dineroJsStrings.SRD]
     
-    @scala.inline
-    def SSP: typings.dineroJs.dineroJsStrings.SSP = "SSP".asInstanceOf[typings.dineroJs.dineroJsStrings.SSP]
+    inline def SSP: typings.dineroJs.dineroJsStrings.SSP = "SSP".asInstanceOf[typings.dineroJs.dineroJsStrings.SSP]
     
-    @scala.inline
-    def STN: typings.dineroJs.dineroJsStrings.STN = "STN".asInstanceOf[typings.dineroJs.dineroJsStrings.STN]
+    inline def STN: typings.dineroJs.dineroJsStrings.STN = "STN".asInstanceOf[typings.dineroJs.dineroJsStrings.STN]
     
-    @scala.inline
-    def SVC: typings.dineroJs.dineroJsStrings.SVC = "SVC".asInstanceOf[typings.dineroJs.dineroJsStrings.SVC]
+    inline def SVC: typings.dineroJs.dineroJsStrings.SVC = "SVC".asInstanceOf[typings.dineroJs.dineroJsStrings.SVC]
     
-    @scala.inline
-    def SYP: typings.dineroJs.dineroJsStrings.SYP = "SYP".asInstanceOf[typings.dineroJs.dineroJsStrings.SYP]
+    inline def SYP: typings.dineroJs.dineroJsStrings.SYP = "SYP".asInstanceOf[typings.dineroJs.dineroJsStrings.SYP]
     
-    @scala.inline
-    def SZL: typings.dineroJs.dineroJsStrings.SZL = "SZL".asInstanceOf[typings.dineroJs.dineroJsStrings.SZL]
+    inline def SZL: typings.dineroJs.dineroJsStrings.SZL = "SZL".asInstanceOf[typings.dineroJs.dineroJsStrings.SZL]
     
-    @scala.inline
-    def THB: typings.dineroJs.dineroJsStrings.THB = "THB".asInstanceOf[typings.dineroJs.dineroJsStrings.THB]
+    inline def THB: typings.dineroJs.dineroJsStrings.THB = "THB".asInstanceOf[typings.dineroJs.dineroJsStrings.THB]
     
-    @scala.inline
-    def TJS: typings.dineroJs.dineroJsStrings.TJS = "TJS".asInstanceOf[typings.dineroJs.dineroJsStrings.TJS]
+    inline def TJS: typings.dineroJs.dineroJsStrings.TJS = "TJS".asInstanceOf[typings.dineroJs.dineroJsStrings.TJS]
     
-    @scala.inline
-    def TMT: typings.dineroJs.dineroJsStrings.TMT = "TMT".asInstanceOf[typings.dineroJs.dineroJsStrings.TMT]
+    inline def TMT: typings.dineroJs.dineroJsStrings.TMT = "TMT".asInstanceOf[typings.dineroJs.dineroJsStrings.TMT]
     
-    @scala.inline
-    def TND: typings.dineroJs.dineroJsStrings.TND = "TND".asInstanceOf[typings.dineroJs.dineroJsStrings.TND]
+    inline def TND: typings.dineroJs.dineroJsStrings.TND = "TND".asInstanceOf[typings.dineroJs.dineroJsStrings.TND]
     
-    @scala.inline
-    def TOP: typings.dineroJs.dineroJsStrings.TOP = "TOP".asInstanceOf[typings.dineroJs.dineroJsStrings.TOP]
+    inline def TOP: typings.dineroJs.dineroJsStrings.TOP = "TOP".asInstanceOf[typings.dineroJs.dineroJsStrings.TOP]
     
-    @scala.inline
-    def TRY: typings.dineroJs.dineroJsStrings.TRY = "TRY".asInstanceOf[typings.dineroJs.dineroJsStrings.TRY]
+    inline def TRY: typings.dineroJs.dineroJsStrings.TRY = "TRY".asInstanceOf[typings.dineroJs.dineroJsStrings.TRY]
     
-    @scala.inline
-    def TTD: typings.dineroJs.dineroJsStrings.TTD = "TTD".asInstanceOf[typings.dineroJs.dineroJsStrings.TTD]
+    inline def TTD: typings.dineroJs.dineroJsStrings.TTD = "TTD".asInstanceOf[typings.dineroJs.dineroJsStrings.TTD]
     
-    @scala.inline
-    def TWD: typings.dineroJs.dineroJsStrings.TWD = "TWD".asInstanceOf[typings.dineroJs.dineroJsStrings.TWD]
+    inline def TWD: typings.dineroJs.dineroJsStrings.TWD = "TWD".asInstanceOf[typings.dineroJs.dineroJsStrings.TWD]
     
-    @scala.inline
-    def TZS: typings.dineroJs.dineroJsStrings.TZS = "TZS".asInstanceOf[typings.dineroJs.dineroJsStrings.TZS]
+    inline def TZS: typings.dineroJs.dineroJsStrings.TZS = "TZS".asInstanceOf[typings.dineroJs.dineroJsStrings.TZS]
     
-    @scala.inline
-    def UAH: typings.dineroJs.dineroJsStrings.UAH = "UAH".asInstanceOf[typings.dineroJs.dineroJsStrings.UAH]
+    inline def UAH: typings.dineroJs.dineroJsStrings.UAH = "UAH".asInstanceOf[typings.dineroJs.dineroJsStrings.UAH]
     
-    @scala.inline
-    def UGX: typings.dineroJs.dineroJsStrings.UGX = "UGX".asInstanceOf[typings.dineroJs.dineroJsStrings.UGX]
+    inline def UGX: typings.dineroJs.dineroJsStrings.UGX = "UGX".asInstanceOf[typings.dineroJs.dineroJsStrings.UGX]
     
-    @scala.inline
-    def USD: typings.dineroJs.dineroJsStrings.USD = "USD".asInstanceOf[typings.dineroJs.dineroJsStrings.USD]
+    inline def USD: typings.dineroJs.dineroJsStrings.USD = "USD".asInstanceOf[typings.dineroJs.dineroJsStrings.USD]
     
-    @scala.inline
-    def USN: typings.dineroJs.dineroJsStrings.USN = "USN".asInstanceOf[typings.dineroJs.dineroJsStrings.USN]
+    inline def USN: typings.dineroJs.dineroJsStrings.USN = "USN".asInstanceOf[typings.dineroJs.dineroJsStrings.USN]
     
-    @scala.inline
-    def UYI: typings.dineroJs.dineroJsStrings.UYI = "UYI".asInstanceOf[typings.dineroJs.dineroJsStrings.UYI]
+    inline def UYI: typings.dineroJs.dineroJsStrings.UYI = "UYI".asInstanceOf[typings.dineroJs.dineroJsStrings.UYI]
     
-    @scala.inline
-    def UYU: typings.dineroJs.dineroJsStrings.UYU = "UYU".asInstanceOf[typings.dineroJs.dineroJsStrings.UYU]
+    inline def UYU: typings.dineroJs.dineroJsStrings.UYU = "UYU".asInstanceOf[typings.dineroJs.dineroJsStrings.UYU]
     
-    @scala.inline
-    def UYW: typings.dineroJs.dineroJsStrings.UYW = "UYW".asInstanceOf[typings.dineroJs.dineroJsStrings.UYW]
+    inline def UYW: typings.dineroJs.dineroJsStrings.UYW = "UYW".asInstanceOf[typings.dineroJs.dineroJsStrings.UYW]
     
-    @scala.inline
-    def UZS: typings.dineroJs.dineroJsStrings.UZS = "UZS".asInstanceOf[typings.dineroJs.dineroJsStrings.UZS]
+    inline def UZS: typings.dineroJs.dineroJsStrings.UZS = "UZS".asInstanceOf[typings.dineroJs.dineroJsStrings.UZS]
     
-    @scala.inline
-    def VES: typings.dineroJs.dineroJsStrings.VES = "VES".asInstanceOf[typings.dineroJs.dineroJsStrings.VES]
+    inline def VES: typings.dineroJs.dineroJsStrings.VES = "VES".asInstanceOf[typings.dineroJs.dineroJsStrings.VES]
     
-    @scala.inline
-    def VND: typings.dineroJs.dineroJsStrings.VND = "VND".asInstanceOf[typings.dineroJs.dineroJsStrings.VND]
+    inline def VND: typings.dineroJs.dineroJsStrings.VND = "VND".asInstanceOf[typings.dineroJs.dineroJsStrings.VND]
     
-    @scala.inline
-    def VUV: typings.dineroJs.dineroJsStrings.VUV = "VUV".asInstanceOf[typings.dineroJs.dineroJsStrings.VUV]
+    inline def VUV: typings.dineroJs.dineroJsStrings.VUV = "VUV".asInstanceOf[typings.dineroJs.dineroJsStrings.VUV]
     
-    @scala.inline
-    def WST: typings.dineroJs.dineroJsStrings.WST = "WST".asInstanceOf[typings.dineroJs.dineroJsStrings.WST]
+    inline def WST: typings.dineroJs.dineroJsStrings.WST = "WST".asInstanceOf[typings.dineroJs.dineroJsStrings.WST]
     
-    @scala.inline
-    def XAF: typings.dineroJs.dineroJsStrings.XAF = "XAF".asInstanceOf[typings.dineroJs.dineroJsStrings.XAF]
+    inline def XAF: typings.dineroJs.dineroJsStrings.XAF = "XAF".asInstanceOf[typings.dineroJs.dineroJsStrings.XAF]
     
-    @scala.inline
-    def XAG: typings.dineroJs.dineroJsStrings.XAG = "XAG".asInstanceOf[typings.dineroJs.dineroJsStrings.XAG]
+    inline def XAG: typings.dineroJs.dineroJsStrings.XAG = "XAG".asInstanceOf[typings.dineroJs.dineroJsStrings.XAG]
     
-    @scala.inline
-    def XAU: typings.dineroJs.dineroJsStrings.XAU = "XAU".asInstanceOf[typings.dineroJs.dineroJsStrings.XAU]
+    inline def XAU: typings.dineroJs.dineroJsStrings.XAU = "XAU".asInstanceOf[typings.dineroJs.dineroJsStrings.XAU]
     
-    @scala.inline
-    def XBA: typings.dineroJs.dineroJsStrings.XBA = "XBA".asInstanceOf[typings.dineroJs.dineroJsStrings.XBA]
+    inline def XBA: typings.dineroJs.dineroJsStrings.XBA = "XBA".asInstanceOf[typings.dineroJs.dineroJsStrings.XBA]
     
-    @scala.inline
-    def XBB: typings.dineroJs.dineroJsStrings.XBB = "XBB".asInstanceOf[typings.dineroJs.dineroJsStrings.XBB]
+    inline def XBB: typings.dineroJs.dineroJsStrings.XBB = "XBB".asInstanceOf[typings.dineroJs.dineroJsStrings.XBB]
     
-    @scala.inline
-    def XBC: typings.dineroJs.dineroJsStrings.XBC = "XBC".asInstanceOf[typings.dineroJs.dineroJsStrings.XBC]
+    inline def XBC: typings.dineroJs.dineroJsStrings.XBC = "XBC".asInstanceOf[typings.dineroJs.dineroJsStrings.XBC]
     
-    @scala.inline
-    def XBD: typings.dineroJs.dineroJsStrings.XBD = "XBD".asInstanceOf[typings.dineroJs.dineroJsStrings.XBD]
+    inline def XBD: typings.dineroJs.dineroJsStrings.XBD = "XBD".asInstanceOf[typings.dineroJs.dineroJsStrings.XBD]
     
-    @scala.inline
-    def XCD: typings.dineroJs.dineroJsStrings.XCD = "XCD".asInstanceOf[typings.dineroJs.dineroJsStrings.XCD]
+    inline def XCD: typings.dineroJs.dineroJsStrings.XCD = "XCD".asInstanceOf[typings.dineroJs.dineroJsStrings.XCD]
     
-    @scala.inline
-    def XDR: typings.dineroJs.dineroJsStrings.XDR = "XDR".asInstanceOf[typings.dineroJs.dineroJsStrings.XDR]
+    inline def XDR: typings.dineroJs.dineroJsStrings.XDR = "XDR".asInstanceOf[typings.dineroJs.dineroJsStrings.XDR]
     
-    @scala.inline
-    def XOF: typings.dineroJs.dineroJsStrings.XOF = "XOF".asInstanceOf[typings.dineroJs.dineroJsStrings.XOF]
+    inline def XOF: typings.dineroJs.dineroJsStrings.XOF = "XOF".asInstanceOf[typings.dineroJs.dineroJsStrings.XOF]
     
-    @scala.inline
-    def XPD: typings.dineroJs.dineroJsStrings.XPD = "XPD".asInstanceOf[typings.dineroJs.dineroJsStrings.XPD]
+    inline def XPD: typings.dineroJs.dineroJsStrings.XPD = "XPD".asInstanceOf[typings.dineroJs.dineroJsStrings.XPD]
     
-    @scala.inline
-    def XPF: typings.dineroJs.dineroJsStrings.XPF = "XPF".asInstanceOf[typings.dineroJs.dineroJsStrings.XPF]
+    inline def XPF: typings.dineroJs.dineroJsStrings.XPF = "XPF".asInstanceOf[typings.dineroJs.dineroJsStrings.XPF]
     
-    @scala.inline
-    def XPT: typings.dineroJs.dineroJsStrings.XPT = "XPT".asInstanceOf[typings.dineroJs.dineroJsStrings.XPT]
+    inline def XPT: typings.dineroJs.dineroJsStrings.XPT = "XPT".asInstanceOf[typings.dineroJs.dineroJsStrings.XPT]
     
-    @scala.inline
-    def XSU: typings.dineroJs.dineroJsStrings.XSU = "XSU".asInstanceOf[typings.dineroJs.dineroJsStrings.XSU]
+    inline def XSU: typings.dineroJs.dineroJsStrings.XSU = "XSU".asInstanceOf[typings.dineroJs.dineroJsStrings.XSU]
     
-    @scala.inline
-    def XTS: typings.dineroJs.dineroJsStrings.XTS = "XTS".asInstanceOf[typings.dineroJs.dineroJsStrings.XTS]
+    inline def XTS: typings.dineroJs.dineroJsStrings.XTS = "XTS".asInstanceOf[typings.dineroJs.dineroJsStrings.XTS]
     
-    @scala.inline
-    def XUA: typings.dineroJs.dineroJsStrings.XUA = "XUA".asInstanceOf[typings.dineroJs.dineroJsStrings.XUA]
+    inline def XUA: typings.dineroJs.dineroJsStrings.XUA = "XUA".asInstanceOf[typings.dineroJs.dineroJsStrings.XUA]
     
-    @scala.inline
-    def XXX: typings.dineroJs.dineroJsStrings.XXX = "XXX".asInstanceOf[typings.dineroJs.dineroJsStrings.XXX]
+    inline def XXX: typings.dineroJs.dineroJsStrings.XXX = "XXX".asInstanceOf[typings.dineroJs.dineroJsStrings.XXX]
     
-    @scala.inline
-    def YER: typings.dineroJs.dineroJsStrings.YER = "YER".asInstanceOf[typings.dineroJs.dineroJsStrings.YER]
+    inline def YER: typings.dineroJs.dineroJsStrings.YER = "YER".asInstanceOf[typings.dineroJs.dineroJsStrings.YER]
     
-    @scala.inline
-    def ZAR: typings.dineroJs.dineroJsStrings.ZAR = "ZAR".asInstanceOf[typings.dineroJs.dineroJsStrings.ZAR]
+    inline def ZAR: typings.dineroJs.dineroJsStrings.ZAR = "ZAR".asInstanceOf[typings.dineroJs.dineroJsStrings.ZAR]
     
-    @scala.inline
-    def ZMW: typings.dineroJs.dineroJsStrings.ZMW = "ZMW".asInstanceOf[typings.dineroJs.dineroJsStrings.ZMW]
+    inline def ZMW: typings.dineroJs.dineroJsStrings.ZMW = "ZMW".asInstanceOf[typings.dineroJs.dineroJsStrings.ZMW]
     
-    @scala.inline
-    def ZWL: typings.dineroJs.dineroJsStrings.ZWL = "ZWL".asInstanceOf[typings.dineroJs.dineroJsStrings.ZWL]
+    inline def ZWL: typings.dineroJs.dineroJsStrings.ZWL = "ZWL".asInstanceOf[typings.dineroJs.dineroJsStrings.ZWL]
   }
   
   @js.native
@@ -886,23 +694,18 @@ object mod {
   }
   object DineroObject {
     
-    @scala.inline
-    def apply(amount: Double, currency: Currency, precision: Double): DineroObject = {
+    inline def apply(amount: Double, currency: Currency, precision: Double): DineroObject = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any])
       __obj.asInstanceOf[DineroObject]
     }
     
-    @scala.inline
-    implicit class DineroObjectMutableBuilder[Self <: DineroObject] (val x: Self) extends AnyVal {
+    extension [Self <: DineroObject](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     }
   }
   
@@ -918,35 +721,26 @@ object mod {
   }
   object ExchangeRatesApiOptions {
     
-    @scala.inline
-    def apply(endpoint: String | js.Promise[StringDictionary[js.Any]]): ExchangeRatesApiOptions = {
+    inline def apply(endpoint: String | js.Promise[StringDictionary[js.Any]]): ExchangeRatesApiOptions = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExchangeRatesApiOptions]
     }
     
-    @scala.inline
-    implicit class ExchangeRatesApiOptionsMutableBuilder[Self <: ExchangeRatesApiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExchangeRatesApiOptions](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String | js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String | js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setPropertyPath(value: String): Self = StObject.set(x, "propertyPath", value.asInstanceOf[js.Any])
+      inline def setPropertyPath(value: String): Self = StObject.set(x, "propertyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyPathUndefined: Self = StObject.set(x, "propertyPath", js.undefined)
+      inline def setPropertyPathUndefined: Self = StObject.set(x, "propertyPath", js.undefined)
       
-      @scala.inline
-      def setRoundingMode(value: RoundingMode): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
+      inline def setRoundingMode(value: RoundingMode): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
+      inline def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
     }
   }
   
@@ -960,32 +754,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     }
   }
   
@@ -1000,22 +786,16 @@ object mod {
   trait RoundingMode extends StObject
   object RoundingMode {
     
-    @scala.inline
-    def HALF_AWAY_FROM_ZERO: typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO = "HALF_AWAY_FROM_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO]
+    inline def HALF_AWAY_FROM_ZERO: typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO = "HALF_AWAY_FROM_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO]
     
-    @scala.inline
-    def HALF_DOWN: typings.dineroJs.dineroJsStrings.HALF_DOWN = "HALF_DOWN".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_DOWN]
+    inline def HALF_DOWN: typings.dineroJs.dineroJsStrings.HALF_DOWN = "HALF_DOWN".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_DOWN]
     
-    @scala.inline
-    def HALF_EVEN: typings.dineroJs.dineroJsStrings.HALF_EVEN = "HALF_EVEN".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_EVEN]
+    inline def HALF_EVEN: typings.dineroJs.dineroJsStrings.HALF_EVEN = "HALF_EVEN".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_EVEN]
     
-    @scala.inline
-    def HALF_ODD: typings.dineroJs.dineroJsStrings.HALF_ODD = "HALF_ODD".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_ODD]
+    inline def HALF_ODD: typings.dineroJs.dineroJsStrings.HALF_ODD = "HALF_ODD".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_ODD]
     
-    @scala.inline
-    def HALF_TOWARDS_ZERO: typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO = "HALF_TOWARDS_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO]
+    inline def HALF_TOWARDS_ZERO: typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO = "HALF_TOWARDS_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO]
     
-    @scala.inline
-    def HALF_UP: typings.dineroJs.dineroJsStrings.HALF_UP = "HALF_UP".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_UP]
+    inline def HALF_UP: typings.dineroJs.dineroJsStrings.HALF_UP = "HALF_UP".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_UP]
   }
 }

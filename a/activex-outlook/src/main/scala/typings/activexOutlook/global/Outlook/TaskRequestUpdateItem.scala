@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.TaskRequestUpdateItem")
 @js.native
-class TaskRequestUpdateItem protected ()
+/* private */ class TaskRequestUpdateItem ()
   extends StObject
      with typings.activexOutlook.Outlook.TaskRequestUpdateItem

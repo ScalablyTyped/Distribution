@@ -131,14 +131,14 @@ object fromJsonValidatorMod {
         ]
     ): this.type = js.native
     
-    var formatErrors: js.Any = js.native
+    /* private */ var formatErrors: js.Any = js.native
     
     /**
       *  Records:
       * - keys are stringified array paths to the properties
       * - values are functions accepting
       */
-    var rules: js.Any = js.native
+    /* private */ var rules: js.Any = js.native
     
     def validate(jsonConfig: From): js.Promise[To] = js.native
   }

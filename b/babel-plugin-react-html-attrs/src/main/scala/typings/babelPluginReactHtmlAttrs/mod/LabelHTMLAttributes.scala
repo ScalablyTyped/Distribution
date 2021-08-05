@@ -16,31 +16,23 @@ trait LabelHTMLAttributes[T]
 }
 object LabelHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): LabelHTMLAttributes[T] = {
+  inline def apply[T](): LabelHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class LabelHTMLAttributesMutableBuilder[Self <: LabelHTMLAttributes[?], T] (val x: Self & LabelHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: LabelHTMLAttributes[?], T](x: Self & LabelHTMLAttributes[T]) {
     
-    @scala.inline
-    def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+    inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForUndefined: Self = StObject.set(x, "for", js.undefined)
+    inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
     
-    @scala.inline
-    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
+    inline def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
+    inline def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
   }
 }

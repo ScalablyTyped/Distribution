@@ -10,19 +10,15 @@ trait TimelineFeedResponseImageVersions2 extends StObject {
 }
 object TimelineFeedResponseImageVersions2 {
   
-  @scala.inline
-  def apply(candidates: js.Array[TimelineFeedResponseCandidatesItem]): TimelineFeedResponseImageVersions2 = {
+  inline def apply(candidates: js.Array[TimelineFeedResponseCandidatesItem]): TimelineFeedResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseImageVersions2]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseImageVersions2MutableBuilder[Self <: TimelineFeedResponseImageVersions2] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseImageVersions2](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[TimelineFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[TimelineFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: TimelineFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: TimelineFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
   }
 }

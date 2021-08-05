@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JwtAlgorithm extends StObject
 object JwtAlgorithm {
   
-  @scala.inline
-  def HS256: typings.arangodb.arangodbStrings.HS256 = "HS256".asInstanceOf[typings.arangodb.arangodbStrings.HS256]
+  inline def HS256: typings.arangodb.arangodbStrings.HS256 = "HS256".asInstanceOf[typings.arangodb.arangodbStrings.HS256]
   
-  @scala.inline
-  def HS384: typings.arangodb.arangodbStrings.HS384 = "HS384".asInstanceOf[typings.arangodb.arangodbStrings.HS384]
+  inline def HS384: typings.arangodb.arangodbStrings.HS384 = "HS384".asInstanceOf[typings.arangodb.arangodbStrings.HS384]
   
-  @scala.inline
-  def HS512: typings.arangodb.arangodbStrings.HS512 = "HS512".asInstanceOf[typings.arangodb.arangodbStrings.HS512]
+  inline def HS512: typings.arangodb.arangodbStrings.HS512 = "HS512".asInstanceOf[typings.arangodb.arangodbStrings.HS512]
 }

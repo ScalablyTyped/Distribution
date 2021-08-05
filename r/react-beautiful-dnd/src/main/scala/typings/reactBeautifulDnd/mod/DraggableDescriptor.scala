@@ -19,26 +19,20 @@ trait DraggableDescriptor extends StObject {
 }
 object DraggableDescriptor {
   
-  @scala.inline
-  def apply(droppableId: DroppableId, id: DraggableId, index: Double, `type`: TypeId): DraggableDescriptor = {
+  inline def apply(droppableId: DroppableId, id: DraggableId, index: Double, `type`: TypeId): DraggableDescriptor = {
     val __obj = js.Dynamic.literal(droppableId = droppableId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableDescriptor]
   }
   
-  @scala.inline
-  implicit class DraggableDescriptorMutableBuilder[Self <: DraggableDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableDescriptor](x: Self) {
     
-    @scala.inline
-    def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
+    inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: DraggableId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: DraggableId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

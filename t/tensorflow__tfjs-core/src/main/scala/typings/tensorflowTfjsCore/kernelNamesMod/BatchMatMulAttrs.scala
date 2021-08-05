@@ -12,19 +12,15 @@ trait BatchMatMulAttrs extends StObject {
 }
 object BatchMatMulAttrs {
   
-  @scala.inline
-  def apply(transposeA: Boolean, transposeB: Boolean): BatchMatMulAttrs = {
+  inline def apply(transposeA: Boolean, transposeB: Boolean): BatchMatMulAttrs = {
     val __obj = js.Dynamic.literal(transposeA = transposeA.asInstanceOf[js.Any], transposeB = transposeB.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchMatMulAttrs]
   }
   
-  @scala.inline
-  implicit class BatchMatMulAttrsMutableBuilder[Self <: BatchMatMulAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: BatchMatMulAttrs](x: Self) {
     
-    @scala.inline
-    def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
+    inline def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
+    inline def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
   }
 }

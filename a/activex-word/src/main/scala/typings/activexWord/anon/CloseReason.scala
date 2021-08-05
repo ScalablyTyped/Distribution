@@ -15,22 +15,17 @@ trait CloseReason extends StObject {
 }
 object CloseReason {
   
-  @scala.inline
-  def apply(Cancel: Boolean, CloseReason: Double, PvWindow: ProtectedViewWindow): CloseReason = {
+  inline def apply(Cancel: Boolean, CloseReason: Double, PvWindow: ProtectedViewWindow): CloseReason = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], CloseReason = CloseReason.asInstanceOf[js.Any], PvWindow = PvWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseReason]
   }
   
-  @scala.inline
-  implicit class CloseReasonMutableBuilder[Self <: CloseReason] (val x: Self) extends AnyVal {
+  extension [Self <: CloseReason](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseReason(value: Double): Self = StObject.set(x, "CloseReason", value.asInstanceOf[js.Any])
+    inline def setCloseReason(value: Double): Self = StObject.set(x, "CloseReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPvWindow(value: ProtectedViewWindow): Self = StObject.set(x, "PvWindow", value.asInstanceOf[js.Any])
+    inline def setPvWindow(value: ProtectedViewWindow): Self = StObject.set(x, "PvWindow", value.asInstanceOf[js.Any])
   }
 }

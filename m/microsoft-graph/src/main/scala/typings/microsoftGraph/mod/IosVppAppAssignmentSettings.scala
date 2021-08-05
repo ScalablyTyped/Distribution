@@ -16,28 +16,21 @@ trait IosVppAppAssignmentSettings
 }
 object IosVppAppAssignmentSettings {
   
-  @scala.inline
-  def apply(): IosVppAppAssignmentSettings = {
+  inline def apply(): IosVppAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosVppAppAssignmentSettings]
   }
   
-  @scala.inline
-  implicit class IosVppAppAssignmentSettingsMutableBuilder[Self <: IosVppAppAssignmentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IosVppAppAssignmentSettings](x: Self) {
     
-    @scala.inline
-    def setUseDeviceLicensing(value: Boolean): Self = StObject.set(x, "useDeviceLicensing", value.asInstanceOf[js.Any])
+    inline def setUseDeviceLicensing(value: Boolean): Self = StObject.set(x, "useDeviceLicensing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDeviceLicensingUndefined: Self = StObject.set(x, "useDeviceLicensing", js.undefined)
+    inline def setUseDeviceLicensingUndefined: Self = StObject.set(x, "useDeviceLicensing", js.undefined)
     
-    @scala.inline
-    def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
+    inline def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
+    inline def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
     
-    @scala.inline
-    def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
+    inline def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object registerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(`type`: types): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(`type`: types): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

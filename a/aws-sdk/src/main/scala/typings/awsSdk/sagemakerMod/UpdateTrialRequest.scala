@@ -18,22 +18,17 @@ trait UpdateTrialRequest extends StObject {
 }
 object UpdateTrialRequest {
   
-  @scala.inline
-  def apply(TrialName: ExperimentEntityName): UpdateTrialRequest = {
+  inline def apply(TrialName: ExperimentEntityName): UpdateTrialRequest = {
     val __obj = js.Dynamic.literal(TrialName = TrialName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTrialRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTrialRequestMutableBuilder[Self <: UpdateTrialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTrialRequest](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
   }
 }

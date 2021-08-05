@@ -42,10 +42,8 @@ object mod {
     *
     * @return {F & MemizeMemoizedFunction} Memoized function.
     */
-  @scala.inline
-  def apply[F /* <: js.Function */](fn: F): F & MemizeMemoizedFunction = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[F & MemizeMemoizedFunction]
-  @scala.inline
-  def apply[F /* <: js.Function */](fn: F, options: MemizeOptions): F & MemizeMemoizedFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & MemizeMemoizedFunction]
+  inline def apply[F /* <: js.Function */](fn: F): F & MemizeMemoizedFunction = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[F & MemizeMemoizedFunction]
+  inline def apply[F /* <: js.Function */](fn: F, options: MemizeOptions): F & MemizeMemoizedFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & MemizeMemoizedFunction]
   
   @JSImport("memize", JSImport.Namespace)
   @js.native
@@ -79,42 +77,31 @@ object mod {
   }
   object MemizeCacheNode {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], `val`: js.Any): MemizeCacheNode = {
+    inline def apply(args: js.Array[js.Any], `val`: js.Any): MemizeCacheNode = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemizeCacheNode]
     }
     
-    @scala.inline
-    implicit class MemizeCacheNodeMutableBuilder[Self <: MemizeCacheNode] (val x: Self) extends AnyVal {
+    extension [Self <: MemizeCacheNode](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setNext(value: MemizeCacheNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: MemizeCacheNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextNull: Self = StObject.set(x, "next", null)
+      inline def setNextNull: Self = StObject.set(x, "next", null)
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPrev(value: MemizeCacheNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: MemizeCacheNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevNull: Self = StObject.set(x, "prev", null)
+      inline def setPrevNull: Self = StObject.set(x, "prev", null)
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      @scala.inline
-      def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,17 +117,14 @@ object mod {
   }
   object MemizeMemoizedFunction {
     
-    @scala.inline
-    def apply(clear: () => Unit): MemizeMemoizedFunction = {
+    inline def apply(clear: () => Unit): MemizeMemoizedFunction = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
       __obj.asInstanceOf[MemizeMemoizedFunction]
     }
     
-    @scala.inline
-    implicit class MemizeMemoizedFunctionMutableBuilder[Self <: MemizeMemoizedFunction] (val x: Self) extends AnyVal {
+    extension [Self <: MemizeMemoizedFunction](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
   }
   
@@ -156,20 +140,16 @@ object mod {
   }
   object MemizeOptions {
     
-    @scala.inline
-    def apply(): MemizeOptions = {
+    inline def apply(): MemizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MemizeOptions]
     }
     
-    @scala.inline
-    implicit class MemizeOptionsMutableBuilder[Self <: MemizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MemizeOptions](x: Self) {
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     }
   }
 }

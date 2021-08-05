@@ -26,37 +26,31 @@ object TargetDocumentType {
   @JSImport("mendixmodelsdk", "microflows.TargetDocumentType.DOCX")
   @js.native
   def DOCX: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType = js.native
-  @scala.inline
-  def DOCX_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCX")(x.asInstanceOf[js.Any])
+  inline def DOCX_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCX")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def DOC_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOC")(x.asInstanceOf[js.Any])
+  inline def DOC_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOC")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.TargetDocumentType.HTML")
   @js.native
   def HTML: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType = js.native
-  @scala.inline
-  def HTML_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTML")(x.asInstanceOf[js.Any])
+  inline def HTML_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTML")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.TargetDocumentType.ODT")
   @js.native
   def ODT: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType = js.native
-  @scala.inline
-  def ODT_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ODT")(x.asInstanceOf[js.Any])
+  inline def ODT_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ODT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.TargetDocumentType.PDF")
   @js.native
   def PDF: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType = js.native
-  @scala.inline
-  def PDF_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDF")(x.asInstanceOf[js.Any])
+  inline def PDF_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDF")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.TargetDocumentType.RTF")
   @js.native
   def RTF: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType = js.native
-  @scala.inline
-  def RTF_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RTF")(x.asInstanceOf[js.Any])
+  inline def RTF_=(x: typings.mendixmodelsdk.microflowsMod.microflows.TargetDocumentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RTF")(x.asInstanceOf[js.Any])
 }

@@ -9,6 +9,5 @@ object global {
   @JSGlobal("quixote")
   @js.native
   def quixote: Quixote = js.native
-  @scala.inline
-  def quixote_=(x: Quixote): Unit = js.Dynamic.global.updateDynamic("quixote")(x.asInstanceOf[js.Any])
+  inline def quixote_=(x: Quixote): Unit = js.Dynamic.global.updateDynamic("quixote")(x.asInstanceOf[js.Any])
 }

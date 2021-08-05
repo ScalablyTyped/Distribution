@@ -16,37 +16,27 @@ trait OnClickSegment extends StObject {
 }
 object OnClickSegment {
   
-  @scala.inline
-  def apply(): OnClickSegment = {
+  inline def apply(): OnClickSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnClickSegment]
   }
   
-  @scala.inline
-  implicit class OnClickSegmentMutableBuilder[Self <: OnClickSegment] (val x: Self) extends AnyVal {
+  extension [Self <: OnClickSegment](x: Self) {
     
-    @scala.inline
-    def setOnClickSegment(value: js.Function): Self = StObject.set(x, "onClickSegment", value.asInstanceOf[js.Any])
+    inline def setOnClickSegment(value: js.Function): Self = StObject.set(x, "onClickSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickSegmentUndefined: Self = StObject.set(x, "onClickSegment", js.undefined)
+    inline def setOnClickSegmentUndefined: Self = StObject.set(x, "onClickSegment", js.undefined)
     
-    @scala.inline
-    def setOnMouseoutSegment(value: js.Function): Self = StObject.set(x, "onMouseoutSegment", value.asInstanceOf[js.Any])
+    inline def setOnMouseoutSegment(value: js.Function): Self = StObject.set(x, "onMouseoutSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseoutSegmentUndefined: Self = StObject.set(x, "onMouseoutSegment", js.undefined)
+    inline def setOnMouseoutSegmentUndefined: Self = StObject.set(x, "onMouseoutSegment", js.undefined)
     
-    @scala.inline
-    def setOnMouseoverSegment(value: js.Function): Self = StObject.set(x, "onMouseoverSegment", value.asInstanceOf[js.Any])
+    inline def setOnMouseoverSegment(value: js.Function): Self = StObject.set(x, "onMouseoverSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseoverSegmentUndefined: Self = StObject.set(x, "onMouseoverSegment", js.undefined)
+    inline def setOnMouseoverSegmentUndefined: Self = StObject.set(x, "onMouseoverSegment", js.undefined)
     
-    @scala.inline
-    def setOnload(value: js.Function): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setOnload(value: js.Function): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+    inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
   }
 }

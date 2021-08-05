@@ -13,10 +13,8 @@ object mod {
     * @param {Options} [options] Options.
     * @return {Transport} The stub transport.
     */
-  @scala.inline
-  def apply(): Transport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transport]
-  @scala.inline
-  def apply(options: Options): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def apply(): Transport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transport]
+  inline def apply(options: Options): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
   
   @JSImport("nodemailer-stub-transport", JSImport.Namespace)
   @js.native
@@ -40,26 +38,20 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+        inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        @scala.inline
-        def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
+        inline def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepBccUndefined: Self = StObject.set(x, "keepBcc", js.undefined)
+        inline def setKeepBccUndefined: Self = StObject.set(x, "keepBcc", js.undefined)
       }
     }
   }

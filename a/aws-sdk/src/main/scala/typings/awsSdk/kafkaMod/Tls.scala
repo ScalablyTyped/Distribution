@@ -15,22 +15,17 @@ trait Tls extends StObject {
 }
 object Tls {
   
-  @scala.inline
-  def apply(): Tls = {
+  inline def apply(): Tls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tls]
   }
   
-  @scala.inline
-  implicit class TlsMutableBuilder[Self <: Tls] (val x: Self) extends AnyVal {
+  extension [Self <: Tls](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArnList(value: listOfString): Self = StObject.set(x, "CertificateAuthorityArnList", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArnList(value: listOfString): Self = StObject.set(x, "CertificateAuthorityArnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArnListUndefined: Self = StObject.set(x, "CertificateAuthorityArnList", js.undefined)
+    inline def setCertificateAuthorityArnListUndefined: Self = StObject.set(x, "CertificateAuthorityArnList", js.undefined)
     
-    @scala.inline
-    def setCertificateAuthorityArnListVarargs(value: string*): Self = StObject.set(x, "CertificateAuthorityArnList", js.Array(value :_*))
+    inline def setCertificateAuthorityArnListVarargs(value: string*): Self = StObject.set(x, "CertificateAuthorityArnList", js.Array(value :_*))
   }
 }

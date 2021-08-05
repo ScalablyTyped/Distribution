@@ -32,8 +32,7 @@ object Scope {
     * @param {AccessRequest} result The access permission
     */
   /* static member */
-  @scala.inline
-  def checkPermission(
+  inline def checkPermission(
     scope: String,
     model: String,
     property: String,

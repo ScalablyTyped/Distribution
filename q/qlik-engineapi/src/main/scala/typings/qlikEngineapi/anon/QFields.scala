@@ -13,22 +13,17 @@ trait QFields extends StObject {
 }
 object QFields {
   
-  @scala.inline
-  def apply(qFields: js.Array[IDataField], qFormatSpec: String): QFields = {
+  inline def apply(qFields: js.Array[IDataField], qFormatSpec: String): QFields = {
     val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qFormatSpec = qFormatSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[QFields]
   }
   
-  @scala.inline
-  implicit class QFieldsMutableBuilder[Self <: QFields] (val x: Self) extends AnyVal {
+  extension [Self <: QFields](x: Self) {
     
-    @scala.inline
-    def setQFields(value: js.Array[IDataField]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
+    inline def setQFields(value: js.Array[IDataField]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldsVarargs(value: IDataField*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: IDataField*): Self = StObject.set(x, "qFields", js.Array(value :_*))
     
-    @scala.inline
-    def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
+    inline def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait ReceiveQueueMessageOptions extends StObject {
 }
 object ReceiveQueueMessageOptions {
   
-  @scala.inline
-  def apply(): ReceiveQueueMessageOptions = {
+  inline def apply(): ReceiveQueueMessageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReceiveQueueMessageOptions]
   }
   
-  @scala.inline
-  implicit class ReceiveQueueMessageOptionsMutableBuilder[Self <: ReceiveQueueMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiveQueueMessageOptions](x: Self) {
     
-    @scala.inline
-    def setIsPeekLock(value: Boolean): Self = StObject.set(x, "isPeekLock", value.asInstanceOf[js.Any])
+    inline def setIsPeekLock(value: Boolean): Self = StObject.set(x, "isPeekLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPeekLockUndefined: Self = StObject.set(x, "isPeekLock", js.undefined)
+    inline def setIsPeekLockUndefined: Self = StObject.set(x, "isPeekLock", js.undefined)
     
-    @scala.inline
-    def setTimeoutIntervalInS(value: Double): Self = StObject.set(x, "timeoutIntervalInS", value.asInstanceOf[js.Any])
+    inline def setTimeoutIntervalInS(value: Double): Self = StObject.set(x, "timeoutIntervalInS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutIntervalInSUndefined: Self = StObject.set(x, "timeoutIntervalInS", js.undefined)
+    inline def setTimeoutIntervalInSUndefined: Self = StObject.set(x, "timeoutIntervalInS", js.undefined)
   }
 }

@@ -32,53 +32,38 @@ object anon {
   }
   object AutoReport {
     
-    @scala.inline
-    def apply(sid: String): AutoReport = {
+    inline def apply(sid: String): AutoReport = {
       val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoReport]
     }
     
-    @scala.inline
-    implicit class AutoReportMutableBuilder[Self <: AutoReport] (val x: Self) extends AnyVal {
+    extension [Self <: AutoReport](x: Self) {
       
-      @scala.inline
-      def setAutoReport(value: `0` | `1`): Self = StObject.set(x, "autoReport", value.asInstanceOf[js.Any])
+      inline def setAutoReport(value: `0` | `1`): Self = StObject.set(x, "autoReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoReportUndefined: Self = StObject.set(x, "autoReport", js.undefined)
+      inline def setAutoReportUndefined: Self = StObject.set(x, "autoReport", js.undefined)
       
-      @scala.inline
-      def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setIgnoreParams(value: String): Self = StObject.set(x, "ignoreParams", value.asInstanceOf[js.Any])
+      inline def setIgnoreParams(value: String): Self = StObject.set(x, "ignoreParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreParamsUndefined: Self = StObject.set(x, "ignoreParams", js.undefined)
+      inline def setIgnoreParamsUndefined: Self = StObject.set(x, "ignoreParams", js.undefined)
       
-      @scala.inline
-      def setPerformanceMonitor(value: `0` | `1`): Self = StObject.set(x, "performanceMonitor", value.asInstanceOf[js.Any])
+      inline def setPerformanceMonitor(value: `0` | `1`): Self = StObject.set(x, "performanceMonitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerformanceMonitorUndefined: Self = StObject.set(x, "performanceMonitor", js.undefined)
+      inline def setPerformanceMonitorUndefined: Self = StObject.set(x, "performanceMonitor", js.undefined)
       
-      @scala.inline
-      def setSenseHash(value: `0` | `1`): Self = StObject.set(x, "senseHash", value.asInstanceOf[js.Any])
+      inline def setSenseHash(value: `0` | `1`): Self = StObject.set(x, "senseHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenseHashUndefined: Self = StObject.set(x, "senseHash", js.undefined)
+      inline def setSenseHashUndefined: Self = StObject.set(x, "senseHash", js.undefined)
       
-      @scala.inline
-      def setSenseQuery(value: `0` | `1`): Self = StObject.set(x, "senseQuery", value.asInstanceOf[js.Any])
+      inline def setSenseQuery(value: `0` | `1`): Self = StObject.set(x, "senseQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenseQueryUndefined: Self = StObject.set(x, "senseQuery", js.undefined)
+      inline def setSenseQueryUndefined: Self = StObject.set(x, "senseQuery", js.undefined)
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     }
   }
 }

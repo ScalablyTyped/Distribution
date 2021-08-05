@@ -28,25 +28,19 @@ trait Range
 }
 object Range {
   
-  @scala.inline
-  def apply(range: typings.vscodeLanguageserverTypes.mod.Range, text: String): Range = {
+  inline def apply(range: typings.vscodeLanguageserverTypes.mod.Range, text: String): Range = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setRange(value: typings.vscodeLanguageserverTypes.mod.Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.vscodeLanguageserverTypes.mod.Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeLength(value: Double): Self = StObject.set(x, "rangeLength", value.asInstanceOf[js.Any])
+    inline def setRangeLength(value: Double): Self = StObject.set(x, "rangeLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeLengthUndefined: Self = StObject.set(x, "rangeLength", js.undefined)
+    inline def setRangeLengthUndefined: Self = StObject.set(x, "rangeLength", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

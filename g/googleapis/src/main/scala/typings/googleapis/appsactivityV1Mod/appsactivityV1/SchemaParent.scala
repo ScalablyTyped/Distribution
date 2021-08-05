@@ -27,31 +27,23 @@ trait SchemaParent extends StObject {
 }
 object SchemaParent {
   
-  @scala.inline
-  def apply(): SchemaParent = {
+  inline def apply(): SchemaParent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParent]
   }
   
-  @scala.inline
-  implicit class SchemaParentMutableBuilder[Self <: SchemaParent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParent](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+    inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
+    inline def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

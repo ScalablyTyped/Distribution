@@ -21,13 +21,11 @@ object ElementFinder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromWebElement_(
+  inline def fromWebElement_(
     browser: typings.protractor.browserMod.ProtractorBrowser,
     webElem: typings.seleniumWebdriver.mod.WebElement
   ): typings.protractor.elementMod.ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any])).asInstanceOf[typings.protractor.elementMod.ElementFinder]
-  @scala.inline
-  def fromWebElement_(
+  inline def fromWebElement_(
     browser: typings.protractor.browserMod.ProtractorBrowser,
     webElem: typings.seleniumWebdriver.mod.WebElement,
     locator: Locator

@@ -20,8 +20,7 @@ trait IndexingPolicy extends StObject {
 }
 object IndexingPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExcludedPaths: js.Array[ExcludedPath],
     IncludedPaths: js.Array[IncludedPath],
     automatic: Boolean,
@@ -31,25 +30,18 @@ object IndexingPolicy {
     __obj.asInstanceOf[IndexingPolicy]
   }
   
-  @scala.inline
-  implicit class IndexingPolicyMutableBuilder[Self <: IndexingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IndexingPolicy](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedPaths(value: js.Array[ExcludedPath]): Self = StObject.set(x, "ExcludedPaths", value.asInstanceOf[js.Any])
+    inline def setExcludedPaths(value: js.Array[ExcludedPath]): Self = StObject.set(x, "ExcludedPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedPathsVarargs(value: ExcludedPath*): Self = StObject.set(x, "ExcludedPaths", js.Array(value :_*))
+    inline def setExcludedPathsVarargs(value: ExcludedPath*): Self = StObject.set(x, "ExcludedPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedPaths(value: js.Array[IncludedPath]): Self = StObject.set(x, "IncludedPaths", value.asInstanceOf[js.Any])
+    inline def setIncludedPaths(value: js.Array[IncludedPath]): Self = StObject.set(x, "IncludedPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedPathsVarargs(value: IncludedPath*): Self = StObject.set(x, "IncludedPaths", js.Array(value :_*))
+    inline def setIncludedPathsVarargs(value: IncludedPath*): Self = StObject.set(x, "IncludedPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexingMode(value: IndexingMode): Self = StObject.set(x, "indexingMode", value.asInstanceOf[js.Any])
+    inline def setIndexingMode(value: IndexingMode): Self = StObject.set(x, "indexingMode", value.asInstanceOf[js.Any])
   }
 }

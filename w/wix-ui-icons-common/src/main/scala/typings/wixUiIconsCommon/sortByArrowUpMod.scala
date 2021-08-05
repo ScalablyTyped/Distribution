@@ -22,20 +22,16 @@ object sortByArrowUpMod extends Shortcut {
   }
   object SortByArrowUpProps {
     
-    @scala.inline
-    def apply(): SortByArrowUpProps = {
+    inline def apply(): SortByArrowUpProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortByArrowUpProps]
     }
     
-    @scala.inline
-    implicit class SortByArrowUpPropsMutableBuilder[Self <: SortByArrowUpProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortByArrowUpProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

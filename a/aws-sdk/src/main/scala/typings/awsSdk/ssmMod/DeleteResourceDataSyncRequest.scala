@@ -18,22 +18,17 @@ trait DeleteResourceDataSyncRequest extends StObject {
 }
 object DeleteResourceDataSyncRequest {
   
-  @scala.inline
-  def apply(SyncName: ResourceDataSyncName): DeleteResourceDataSyncRequest = {
+  inline def apply(SyncName: ResourceDataSyncName): DeleteResourceDataSyncRequest = {
     val __obj = js.Dynamic.literal(SyncName = SyncName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourceDataSyncRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResourceDataSyncRequestMutableBuilder[Self <: DeleteResourceDataSyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourceDataSyncRequest](x: Self) {
     
-    @scala.inline
-    def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
+    inline def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
+    inline def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
+    inline def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
   }
 }

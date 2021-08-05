@@ -18,8 +18,7 @@ trait IRestoreJob extends StObject {
 }
 object IRestoreJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackupFileDifferential: String,
     BackupFileFull: String,
     Impersonation: IImpersonation,
@@ -30,22 +29,16 @@ object IRestoreJob {
     __obj.asInstanceOf[IRestoreJob]
   }
   
-  @scala.inline
-  implicit class IRestoreJobMutableBuilder[Self <: IRestoreJob] (val x: Self) extends AnyVal {
+  extension [Self <: IRestoreJob](x: Self) {
     
-    @scala.inline
-    def setBackupFileDifferential(value: String): Self = StObject.set(x, "BackupFileDifferential", value.asInstanceOf[js.Any])
+    inline def setBackupFileDifferential(value: String): Self = StObject.set(x, "BackupFileDifferential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupFileFull(value: String): Self = StObject.set(x, "BackupFileFull", value.asInstanceOf[js.Any])
+    inline def setBackupFileFull(value: String): Self = StObject.set(x, "BackupFileFull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
+    inline def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteExistingFiles(value: Boolean): Self = StObject.set(x, "OverwriteExistingFiles", value.asInstanceOf[js.Any])
+    inline def setOverwriteExistingFiles(value: Boolean): Self = StObject.set(x, "OverwriteExistingFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
+    inline def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
   }
 }

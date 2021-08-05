@@ -13,19 +13,15 @@ trait SaveObjectsOptions extends StObject {
 }
 object SaveObjectsOptions {
   
-  @scala.inline
-  def apply(): SaveObjectsOptions = {
+  inline def apply(): SaveObjectsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveObjectsOptions]
   }
   
-  @scala.inline
-  implicit class SaveObjectsOptionsMutableBuilder[Self <: SaveObjectsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveObjectsOptions](x: Self) {
     
-    @scala.inline
-    def setAutoGenerateObjectIDIfNotExist(value: Boolean): Self = StObject.set(x, "autoGenerateObjectIDIfNotExist", value.asInstanceOf[js.Any])
+    inline def setAutoGenerateObjectIDIfNotExist(value: Boolean): Self = StObject.set(x, "autoGenerateObjectIDIfNotExist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoGenerateObjectIDIfNotExistUndefined: Self = StObject.set(x, "autoGenerateObjectIDIfNotExist", js.undefined)
+    inline def setAutoGenerateObjectIDIfNotExistUndefined: Self = StObject.set(x, "autoGenerateObjectIDIfNotExist", js.undefined)
   }
 }

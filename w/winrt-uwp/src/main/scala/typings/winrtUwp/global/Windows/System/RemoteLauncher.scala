@@ -22,20 +22,17 @@ object RemoteLauncher {
   
   /** Starts the default app associated with the URI scheme name for the specified URI on a remote device. */
   /* static member */
-  @scala.inline
-  def launchUriAsync(remoteSystemConnectionRequest: RemoteSystemConnectionRequest, uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(remoteSystemConnectionRequest.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus]]
+  inline def launchUriAsync(remoteSystemConnectionRequest: RemoteSystemConnectionRequest, uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(remoteSystemConnectionRequest.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus]]
   /** Starts the default app associated with the URI scheme name for the specified URI on a remote device, using the specified options. */
   /* static member */
-  @scala.inline
-  def launchUriAsync(
+  inline def launchUriAsync(
     remoteSystemConnectionRequest: RemoteSystemConnectionRequest,
     uri: Uri,
     options: typings.winrtUwp.Windows.System.RemoteLauncherOptions
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(remoteSystemConnectionRequest.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus]]
   /** Starts the default app associated with the URI scheme name for the specified URI on a remote device, using the specified options and input data. */
   /* static member */
-  @scala.inline
-  def launchUriAsync(
+  inline def launchUriAsync(
     remoteSystemConnectionRequest: RemoteSystemConnectionRequest,
     uri: Uri,
     options: typings.winrtUwp.Windows.System.RemoteLauncherOptions,

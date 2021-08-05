@@ -20,31 +20,23 @@ trait Fps extends StObject {
 }
 object Fps {
   
-  @scala.inline
-  def apply(className: String, fps: Double, leading: Double, loop: Boolean, text: String, trailing: Double): Fps = {
+  inline def apply(className: String, fps: Double, leading: Double, loop: Boolean, text: String, trailing: Double): Fps = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fps = fps.asInstanceOf[js.Any], leading = leading.asInstanceOf[js.Any], loop = loop.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fps]
   }
   
-  @scala.inline
-  implicit class FpsMutableBuilder[Self <: Fps] (val x: Self) extends AnyVal {
+  extension [Self <: Fps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+    inline def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailing(value: Double): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+    inline def setTrailing(value: Double): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
   }
 }

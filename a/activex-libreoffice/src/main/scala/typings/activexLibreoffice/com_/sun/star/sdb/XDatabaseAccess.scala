@@ -27,8 +27,7 @@ trait XDatabaseAccess
 }
 object XDatabaseAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoginTimeout: Double,
     acquire: () => Unit,
     addDatabaseAccessListener: XDatabaseAccessListener => Unit,
@@ -46,22 +45,16 @@ object XDatabaseAccess {
     __obj.asInstanceOf[XDatabaseAccess]
   }
   
-  @scala.inline
-  implicit class XDatabaseAccessMutableBuilder[Self <: XDatabaseAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseAccess](x: Self) {
     
-    @scala.inline
-    def setAddDatabaseAccessListener(value: XDatabaseAccessListener => Unit): Self = StObject.set(x, "addDatabaseAccessListener", js.Any.fromFunction1(value))
+    inline def setAddDatabaseAccessListener(value: XDatabaseAccessListener => Unit): Self = StObject.set(x, "addDatabaseAccessListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIsolatedConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getIsolatedConnection", js.Any.fromFunction2(value))
+    inline def setGetIsolatedConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getIsolatedConnection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasConnections(value: () => Boolean): Self = StObject.set(x, "hasConnections", js.Any.fromFunction0(value))
+    inline def setHasConnections(value: () => Boolean): Self = StObject.set(x, "hasConnections", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveDatabaseAccessListener(value: XDatabaseAccessListener => Unit): Self = StObject.set(x, "removeDatabaseAccessListener", js.Any.fromFunction1(value))
+    inline def setRemoveDatabaseAccessListener(value: XDatabaseAccessListener => Unit): Self = StObject.set(x, "removeDatabaseAccessListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuspendConnections(value: () => Boolean): Self = StObject.set(x, "suspendConnections", js.Any.fromFunction0(value))
+    inline def setSuspendConnections(value: () => Boolean): Self = StObject.set(x, "suspendConnections", js.Any.fromFunction0(value))
   }
 }

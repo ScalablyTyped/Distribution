@@ -35,8 +35,7 @@ object bitcoinHelpersMod {
   }
   object BitcoinHelpers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Address: PubKeyHashFrom,
       Network: MAINNET,
       Transaction: AddWitnessSignature,
@@ -50,40 +49,29 @@ object bitcoinHelpersMod {
       __obj.asInstanceOf[BitcoinHelpers]
     }
     
-    @scala.inline
-    implicit class BitcoinHelpersMutableBuilder[Self <: BitcoinHelpers] (val x: Self) extends AnyVal {
+    extension [Self <: BitcoinHelpers](x: Self) {
       
-      @scala.inline
-      def setAddress(value: PubKeyHashFrom): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: PubKeyHashFrom): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectrumConfig(value: Config): Self = StObject.set(x, "electrumConfig", value.asInstanceOf[js.Any])
+      inline def setElectrumConfig(value: Config): Self = StObject.set(x, "electrumConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectrumConfigNull: Self = StObject.set(x, "electrumConfig", null)
+      inline def setElectrumConfigNull: Self = StObject.set(x, "electrumConfig", null)
       
-      @scala.inline
-      def setNetwork(value: MAINNET): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: MAINNET): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyPointToPublicKeyString(value: (String, String) => String): Self = StObject.set(x, "publicKeyPointToPublicKeyString", js.Any.fromFunction2(value))
+      inline def setPublicKeyPointToPublicKeyString(value: (String, String) => String): Self = StObject.set(x, "publicKeyPointToPublicKeyString", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSatoshisPerBtc(
+      inline def setSatoshisPerBtc(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ): Self = StObject.set(x, "satoshisPerBtc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetElectrumConfig(value: Config => Unit): Self = StObject.set(x, "setElectrumConfig", js.Any.fromFunction1(value))
+      inline def setSetElectrumConfig(value: Config => Unit): Self = StObject.set(x, "setElectrumConfig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignatureDER(value: (String, String) => Buffer): Self = StObject.set(x, "signatureDER", js.Any.fromFunction2(value))
+      inline def setSignatureDER(value: (String, String) => Buffer): Self = StObject.set(x, "signatureDER", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransaction(value: AddWitnessSignature): Self = StObject.set(x, "Transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: AddWitnessSignature): Self = StObject.set(x, "Transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithElectrumClient(value: js.Function1[/* client */ default, js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "withElectrumClient", js.Any.fromFunction1(value))
+      inline def setWithElectrumClient(value: js.Function1[/* client */ default, js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "withElectrumClient", js.Any.fromFunction1(value))
     }
   }
   
@@ -95,14 +83,11 @@ object bitcoinHelpersMod {
   trait BitcoinNetworkType extends StObject
   object BitcoinNetworkType {
     
-    @scala.inline
-    def main: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.main = "main".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.main]
+    inline def main: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.main = "main".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.main]
     
-    @scala.inline
-    def simnet: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.simnet = "simnet".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.simnet]
+    inline def simnet: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.simnet = "simnet".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.simnet]
     
-    @scala.inline
-    def testnet: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.testnet = "testnet".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.testnet]
+    inline def testnet: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.testnet = "testnet".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.testnet]
   }
   
   trait FoundTransaction extends StObject {
@@ -115,23 +100,18 @@ object bitcoinHelpersMod {
   }
   object FoundTransaction {
     
-    @scala.inline
-    def apply(outputPosition: Double, transactionID: String, value: Double): FoundTransaction = {
+    inline def apply(outputPosition: Double, transactionID: String, value: Double): FoundTransaction = {
       val __obj = js.Dynamic.literal(outputPosition = outputPosition.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FoundTransaction]
     }
     
-    @scala.inline
-    implicit class FoundTransactionMutableBuilder[Self <: FoundTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: FoundTransaction](x: Self) {
       
-      @scala.inline
-      def setOutputPosition(value: Double): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
+      inline def setOutputPosition(value: Double): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+      inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,26 +127,20 @@ object bitcoinHelpersMod {
   }
   object ParsedTransaction {
     
-    @scala.inline
-    def apply(locktime: String, txInVector: String, txOutVector: String, version: String): ParsedTransaction = {
+    inline def apply(locktime: String, txInVector: String, txOutVector: String, version: String): ParsedTransaction = {
       val __obj = js.Dynamic.literal(locktime = locktime.asInstanceOf[js.Any], txInVector = txInVector.asInstanceOf[js.Any], txOutVector = txOutVector.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedTransaction]
     }
     
-    @scala.inline
-    implicit class ParsedTransactionMutableBuilder[Self <: ParsedTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedTransaction](x: Self) {
       
-      @scala.inline
-      def setLocktime(value: String): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
+      inline def setLocktime(value: String): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxInVector(value: String): Self = StObject.set(x, "txInVector", value.asInstanceOf[js.Any])
+      inline def setTxInVector(value: String): Self = StObject.set(x, "txInVector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxOutVector(value: String): Self = StObject.set(x, "txOutVector", value.asInstanceOf[js.Any])
+      inline def setTxOutVector(value: String): Self = StObject.set(x, "txOutVector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,8 +152,7 @@ object bitcoinHelpersMod {
   }
   object SPVProof {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chainHeaders: String,
       merkleProof: String,
       parsedTransaction: ParsedTransaction,
@@ -190,11 +163,9 @@ object bitcoinHelpersMod {
       __obj.asInstanceOf[SPVProof]
     }
     
-    @scala.inline
-    implicit class SPVProofMutableBuilder[Self <: SPVProof] (val x: Self) extends AnyVal {
+    extension [Self <: SPVProof](x: Self) {
       
-      @scala.inline
-      def setParsedTransaction(value: ParsedTransaction): Self = StObject.set(x, "parsedTransaction", value.asInstanceOf[js.Any])
+      inline def setParsedTransaction(value: ParsedTransaction): Self = StObject.set(x, "parsedTransaction", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,19 +18,15 @@ trait StartApplicationRequest extends StObject {
 }
 object StartApplicationRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, RunConfiguration: RunConfiguration): StartApplicationRequest = {
+  inline def apply(ApplicationName: ApplicationName, RunConfiguration: RunConfiguration): StartApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], RunConfiguration = RunConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartApplicationRequest]
   }
   
-  @scala.inline
-  implicit class StartApplicationRequestMutableBuilder[Self <: StartApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunConfiguration(value: RunConfiguration): Self = StObject.set(x, "RunConfiguration", value.asInstanceOf[js.Any])
+    inline def setRunConfiguration(value: RunConfiguration): Self = StObject.set(x, "RunConfiguration", value.asInstanceOf[js.Any])
   }
 }

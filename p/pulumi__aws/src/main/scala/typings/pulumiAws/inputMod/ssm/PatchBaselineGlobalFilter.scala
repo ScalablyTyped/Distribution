@@ -13,22 +13,17 @@ trait PatchBaselineGlobalFilter extends StObject {
 }
 object PatchBaselineGlobalFilter {
   
-  @scala.inline
-  def apply(key: Input[String], values: Input[js.Array[Input[String]]]): PatchBaselineGlobalFilter = {
+  inline def apply(key: Input[String], values: Input[js.Array[Input[String]]]): PatchBaselineGlobalFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchBaselineGlobalFilter]
   }
   
-  @scala.inline
-  implicit class PatchBaselineGlobalFilterMutableBuilder[Self <: PatchBaselineGlobalFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PatchBaselineGlobalFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

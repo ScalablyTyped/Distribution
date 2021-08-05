@@ -18,8 +18,7 @@ trait ICreateRuleOptions extends StObject {
 }
 object ICreateRuleOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     correlationIdFilter: String,
     falseFilter: String,
     sqlExpressionFilter: String,
@@ -30,22 +29,16 @@ object ICreateRuleOptions {
     __obj.asInstanceOf[ICreateRuleOptions]
   }
   
-  @scala.inline
-  implicit class ICreateRuleOptionsMutableBuilder[Self <: ICreateRuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateRuleOptions](x: Self) {
     
-    @scala.inline
-    def setCorrelationIdFilter(value: String): Self = StObject.set(x, "correlationIdFilter", value.asInstanceOf[js.Any])
+    inline def setCorrelationIdFilter(value: String): Self = StObject.set(x, "correlationIdFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseFilter(value: String): Self = StObject.set(x, "falseFilter", value.asInstanceOf[js.Any])
+    inline def setFalseFilter(value: String): Self = StObject.set(x, "falseFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlExpressionFilter(value: String): Self = StObject.set(x, "sqlExpressionFilter", value.asInstanceOf[js.Any])
+    inline def setSqlExpressionFilter(value: String): Self = StObject.set(x, "sqlExpressionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlRuleAction(value: String): Self = StObject.set(x, "sqlRuleAction", value.asInstanceOf[js.Any])
+    inline def setSqlRuleAction(value: String): Self = StObject.set(x, "sqlRuleAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueFilter(value: String): Self = StObject.set(x, "trueFilter", value.asInstanceOf[js.Any])
+    inline def setTrueFilter(value: String): Self = StObject.set(x, "trueFilter", value.asInstanceOf[js.Any])
   }
 }

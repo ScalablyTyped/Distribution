@@ -27,19 +27,16 @@ object toHaveStringLongerThanMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](
+        inline def apply[T](
           toHaveStringLongerThan: (/* key */ String, /* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
         ): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveStringLongerThan = js.Any.fromFunction3(toHaveStringLongerThan))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveStringLongerThan(
+          inline def setToHaveStringLongerThan(
             value: (/* key */ String, /* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
           ): Self = StObject.set(x, "toHaveStringLongerThan", js.Any.fromFunction3(value))
         }

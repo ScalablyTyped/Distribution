@@ -14,28 +14,21 @@ trait DataSourceRefreshWeeklySchedule extends StObject {
 }
 object DataSourceRefreshWeeklySchedule {
   
-  @scala.inline
-  def apply(): DataSourceRefreshWeeklySchedule = {
+  inline def apply(): DataSourceRefreshWeeklySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceRefreshWeeklySchedule]
   }
   
-  @scala.inline
-  implicit class DataSourceRefreshWeeklyScheduleMutableBuilder[Self <: DataSourceRefreshWeeklySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceRefreshWeeklySchedule](x: Self) {
     
-    @scala.inline
-    def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
+    inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    @scala.inline
-    def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

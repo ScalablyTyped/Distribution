@@ -29,8 +29,7 @@ trait ContentSecurityPolicyIssueDetails extends StObject {
 }
 object ContentSecurityPolicyIssueDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentSecurityPolicyViolationType: ContentSecurityPolicyViolationType,
     isReportOnly: Boolean,
     violatedDirective: String
@@ -39,40 +38,28 @@ object ContentSecurityPolicyIssueDetails {
     __obj.asInstanceOf[ContentSecurityPolicyIssueDetails]
   }
   
-  @scala.inline
-  implicit class ContentSecurityPolicyIssueDetailsMutableBuilder[Self <: ContentSecurityPolicyIssueDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ContentSecurityPolicyIssueDetails](x: Self) {
     
-    @scala.inline
-    def setBlockedURL(value: String): Self = StObject.set(x, "blockedURL", value.asInstanceOf[js.Any])
+    inline def setBlockedURL(value: String): Self = StObject.set(x, "blockedURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedURLUndefined: Self = StObject.set(x, "blockedURL", js.undefined)
+    inline def setBlockedURLUndefined: Self = StObject.set(x, "blockedURL", js.undefined)
     
-    @scala.inline
-    def setContentSecurityPolicyViolationType(value: ContentSecurityPolicyViolationType): Self = StObject.set(x, "contentSecurityPolicyViolationType", value.asInstanceOf[js.Any])
+    inline def setContentSecurityPolicyViolationType(value: ContentSecurityPolicyViolationType): Self = StObject.set(x, "contentSecurityPolicyViolationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameAncestor(value: AffectedFrame): Self = StObject.set(x, "frameAncestor", value.asInstanceOf[js.Any])
+    inline def setFrameAncestor(value: AffectedFrame): Self = StObject.set(x, "frameAncestor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameAncestorUndefined: Self = StObject.set(x, "frameAncestor", js.undefined)
+    inline def setFrameAncestorUndefined: Self = StObject.set(x, "frameAncestor", js.undefined)
     
-    @scala.inline
-    def setIsReportOnly(value: Boolean): Self = StObject.set(x, "isReportOnly", value.asInstanceOf[js.Any])
+    inline def setIsReportOnly(value: Boolean): Self = StObject.set(x, "isReportOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeLocation(value: SourceCodeLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+    inline def setSourceCodeLocation(value: SourceCodeLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+    inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
     
-    @scala.inline
-    def setViolatedDirective(value: String): Self = StObject.set(x, "violatedDirective", value.asInstanceOf[js.Any])
+    inline def setViolatedDirective(value: String): Self = StObject.set(x, "violatedDirective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolatingNodeId(value: BackendNodeId): Self = StObject.set(x, "violatingNodeId", value.asInstanceOf[js.Any])
+    inline def setViolatingNodeId(value: BackendNodeId): Self = StObject.set(x, "violatingNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolatingNodeIdUndefined: Self = StObject.set(x, "violatingNodeId", js.undefined)
+    inline def setViolatingNodeIdUndefined: Self = StObject.set(x, "violatingNodeId", js.undefined)
   }
 }

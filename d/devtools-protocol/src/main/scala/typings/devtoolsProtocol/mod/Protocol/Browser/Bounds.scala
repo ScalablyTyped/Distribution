@@ -34,43 +34,31 @@ trait Bounds extends StObject {
 }
 object Bounds {
   
-  @scala.inline
-  def apply(): Bounds = {
+  inline def apply(): Bounds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bounds]
   }
   
-  @scala.inline
-  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+  extension [Self <: Bounds](x: Self) {
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWindowState(value: WindowState): Self = StObject.set(x, "windowState", value.asInstanceOf[js.Any])
+    inline def setWindowState(value: WindowState): Self = StObject.set(x, "windowState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowStateUndefined: Self = StObject.set(x, "windowState", js.undefined)
+    inline def setWindowStateUndefined: Self = StObject.set(x, "windowState", js.undefined)
   }
 }

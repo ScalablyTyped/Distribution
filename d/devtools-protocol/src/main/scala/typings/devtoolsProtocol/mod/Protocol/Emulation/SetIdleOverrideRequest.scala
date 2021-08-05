@@ -18,19 +18,15 @@ trait SetIdleOverrideRequest extends StObject {
 }
 object SetIdleOverrideRequest {
   
-  @scala.inline
-  def apply(isScreenUnlocked: Boolean, isUserActive: Boolean): SetIdleOverrideRequest = {
+  inline def apply(isScreenUnlocked: Boolean, isUserActive: Boolean): SetIdleOverrideRequest = {
     val __obj = js.Dynamic.literal(isScreenUnlocked = isScreenUnlocked.asInstanceOf[js.Any], isUserActive = isUserActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdleOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetIdleOverrideRequestMutableBuilder[Self <: SetIdleOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdleOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
+    inline def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserActive(value: Boolean): Self = StObject.set(x, "isUserActive", value.asInstanceOf[js.Any])
+    inline def setIsUserActive(value: Boolean): Self = StObject.set(x, "isUserActive", value.asInstanceOf[js.Any])
   }
 }

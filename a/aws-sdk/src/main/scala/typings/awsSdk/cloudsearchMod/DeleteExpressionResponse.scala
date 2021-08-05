@@ -13,16 +13,13 @@ trait DeleteExpressionResponse extends StObject {
 }
 object DeleteExpressionResponse {
   
-  @scala.inline
-  def apply(Expression: ExpressionStatus): DeleteExpressionResponse = {
+  inline def apply(Expression: ExpressionStatus): DeleteExpressionResponse = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteExpressionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteExpressionResponseMutableBuilder[Self <: DeleteExpressionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteExpressionResponse](x: Self) {
     
-    @scala.inline
-    def setExpression(value: ExpressionStatus): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: ExpressionStatus): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
   }
 }

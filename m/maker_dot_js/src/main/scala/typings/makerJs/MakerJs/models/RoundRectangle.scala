@@ -19,19 +19,15 @@ trait RoundRectangle
 }
 object RoundRectangle {
   
-  @scala.inline
-  def apply(origin: IPoint, paths: IPathMap): RoundRectangle = {
+  inline def apply(origin: IPoint, paths: IPathMap): RoundRectangle = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoundRectangle]
   }
   
-  @scala.inline
-  implicit class RoundRectangleMutableBuilder[Self <: RoundRectangle] (val x: Self) extends AnyVal {
+  extension [Self <: RoundRectangle](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

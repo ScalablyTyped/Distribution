@@ -37,46 +37,33 @@ trait BuildBazelRemoteExecutionV2Action extends StObject {
 }
 object BuildBazelRemoteExecutionV2Action {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2Action = {
+  inline def apply(): BuildBazelRemoteExecutionV2Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2Action]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ActionMutableBuilder[Self <: BuildBazelRemoteExecutionV2Action] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2Action](x: Self) {
     
-    @scala.inline
-    def setCommandDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "commandDigest", value.asInstanceOf[js.Any])
+    inline def setCommandDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "commandDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandDigestUndefined: Self = StObject.set(x, "commandDigest", js.undefined)
+    inline def setCommandDigestUndefined: Self = StObject.set(x, "commandDigest", js.undefined)
     
-    @scala.inline
-    def setDoNotCache(value: Boolean): Self = StObject.set(x, "doNotCache", value.asInstanceOf[js.Any])
+    inline def setDoNotCache(value: Boolean): Self = StObject.set(x, "doNotCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotCacheUndefined: Self = StObject.set(x, "doNotCache", js.undefined)
+    inline def setDoNotCacheUndefined: Self = StObject.set(x, "doNotCache", js.undefined)
     
-    @scala.inline
-    def setInputRootDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "inputRootDigest", value.asInstanceOf[js.Any])
+    inline def setInputRootDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "inputRootDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputRootDigestUndefined: Self = StObject.set(x, "inputRootDigest", js.undefined)
+    inline def setInputRootDigestUndefined: Self = StObject.set(x, "inputRootDigest", js.undefined)
     
-    @scala.inline
-    def setOutputNodeProperties(value: js.Array[String]): Self = StObject.set(x, "outputNodeProperties", value.asInstanceOf[js.Any])
+    inline def setOutputNodeProperties(value: js.Array[String]): Self = StObject.set(x, "outputNodeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputNodePropertiesUndefined: Self = StObject.set(x, "outputNodeProperties", js.undefined)
+    inline def setOutputNodePropertiesUndefined: Self = StObject.set(x, "outputNodeProperties", js.undefined)
     
-    @scala.inline
-    def setOutputNodePropertiesVarargs(value: String*): Self = StObject.set(x, "outputNodeProperties", js.Array(value :_*))
+    inline def setOutputNodePropertiesVarargs(value: String*): Self = StObject.set(x, "outputNodeProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

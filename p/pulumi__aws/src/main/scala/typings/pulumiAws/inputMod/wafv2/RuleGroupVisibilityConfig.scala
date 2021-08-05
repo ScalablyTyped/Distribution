@@ -24,8 +24,7 @@ trait RuleGroupVisibilityConfig extends StObject {
 }
 object RuleGroupVisibilityConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloudwatchMetricsEnabled: Input[Boolean],
     metricName: Input[String],
     sampledRequestsEnabled: Input[Boolean]
@@ -34,16 +33,12 @@ object RuleGroupVisibilityConfig {
     __obj.asInstanceOf[RuleGroupVisibilityConfig]
   }
   
-  @scala.inline
-  implicit class RuleGroupVisibilityConfigMutableBuilder[Self <: RuleGroupVisibilityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupVisibilityConfig](x: Self) {
     
-    @scala.inline
-    def setCloudwatchMetricsEnabled(value: Input[Boolean]): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setCloudwatchMetricsEnabled(value: Input[Boolean]): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledRequestsEnabled(value: Input[Boolean]): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
+    inline def setSampledRequestsEnabled(value: Input[Boolean]): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
   }
 }

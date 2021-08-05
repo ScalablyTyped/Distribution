@@ -10,8 +10,7 @@ trait IPurchases
      with ISencha
 object IPurchases {
   
-  @scala.inline
-  def apply(): IPurchases = {
+  inline def apply(): IPurchases = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPurchases]
   }

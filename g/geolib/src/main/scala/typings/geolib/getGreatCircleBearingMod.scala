@@ -14,6 +14,5 @@ object getGreatCircleBearingMod {
   /**
     * Gets great circle bearing of two points. See description of getRhumbLineBearing for more information
     */
-  @scala.inline
-  def default(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

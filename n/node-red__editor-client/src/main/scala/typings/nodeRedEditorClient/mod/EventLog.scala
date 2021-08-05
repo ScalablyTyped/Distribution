@@ -16,25 +16,19 @@ trait EventLog extends StObject {
 }
 object EventLog {
   
-  @scala.inline
-  def apply(init: () => Unit, log: (js.Any, js.Object) => Unit, show: () => Unit, startEvent: String => Unit): EventLog = {
+  inline def apply(init: () => Unit, log: (js.Any, js.Object) => Unit, show: () => Unit, startEvent: String => Unit): EventLog = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), log = js.Any.fromFunction2(log), show = js.Any.fromFunction0(show), startEvent = js.Any.fromFunction1(startEvent))
     __obj.asInstanceOf[EventLog]
   }
   
-  @scala.inline
-  implicit class EventLogMutableBuilder[Self <: EventLog] (val x: Self) extends AnyVal {
+  extension [Self <: EventLog](x: Self) {
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLog(value: (js.Any, js.Object) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (js.Any, js.Object) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartEvent(value: String => Unit): Self = StObject.set(x, "startEvent", js.Any.fromFunction1(value))
+    inline def setStartEvent(value: String => Unit): Self = StObject.set(x, "startEvent", js.Any.fromFunction1(value))
   }
 }

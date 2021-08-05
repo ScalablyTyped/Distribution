@@ -13,9 +13,9 @@ object takeUntilStreamMod {
   class TakeUntilStream protected () extends BaseStream {
     def this(source: Stream, otherStream: Stream) = this()
     
-    var _otherStream: js.Any = js.native
+    /* private */ var _otherStream: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
   }
   /* static members */
   object TakeUntilStream {
@@ -24,7 +24,6 @@ object takeUntilStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(source: Stream, otherSteam: Stream): TakeUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[TakeUntilStream]
+    inline def create(source: Stream, otherSteam: Stream): TakeUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[TakeUntilStream]
   }
 }

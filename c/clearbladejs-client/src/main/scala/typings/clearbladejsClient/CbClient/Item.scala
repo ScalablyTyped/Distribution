@@ -16,8 +16,7 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Object,
     destroy: CbCallback => Unit,
     refresh: CbCallback => Unit,
@@ -27,19 +26,14 @@ object Item {
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: CbCallback => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: CbCallback => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: CbCallback => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+    inline def setRefresh(value: CbCallback => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSave(value: CbCallback => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: CbCallback => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
   }
 }

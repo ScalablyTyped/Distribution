@@ -14,20 +14,16 @@ trait MessageResult
 }
 object MessageResult {
   
-  @scala.inline
-  def apply(trace: Trace, `type`: String, values: js.Any): MessageResult = {
+  inline def apply(trace: Trace, `type`: String, values: js.Any): MessageResult = {
     val __obj = js.Dynamic.literal(trace = trace.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResult]
   }
   
-  @scala.inline
-  implicit class MessageResultMutableBuilder[Self <: MessageResult] (val x: Self) extends AnyVal {
+  extension [Self <: MessageResult](x: Self) {
     
-    @scala.inline
-    def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

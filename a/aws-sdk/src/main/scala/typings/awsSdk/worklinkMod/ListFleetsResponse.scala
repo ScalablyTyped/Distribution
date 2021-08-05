@@ -18,28 +18,21 @@ trait ListFleetsResponse extends StObject {
 }
 object ListFleetsResponse {
   
-  @scala.inline
-  def apply(): ListFleetsResponse = {
+  inline def apply(): ListFleetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFleetsResponse]
   }
   
-  @scala.inline
-  implicit class ListFleetsResponseMutableBuilder[Self <: ListFleetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFleetsResponse](x: Self) {
     
-    @scala.inline
-    def setFleetSummaryList(value: FleetSummaryList): Self = StObject.set(x, "FleetSummaryList", value.asInstanceOf[js.Any])
+    inline def setFleetSummaryList(value: FleetSummaryList): Self = StObject.set(x, "FleetSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetSummaryListUndefined: Self = StObject.set(x, "FleetSummaryList", js.undefined)
+    inline def setFleetSummaryListUndefined: Self = StObject.set(x, "FleetSummaryList", js.undefined)
     
-    @scala.inline
-    def setFleetSummaryListVarargs(value: FleetSummary*): Self = StObject.set(x, "FleetSummaryList", js.Array(value :_*))
+    inline def setFleetSummaryListVarargs(value: FleetSummary*): Self = StObject.set(x, "FleetSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

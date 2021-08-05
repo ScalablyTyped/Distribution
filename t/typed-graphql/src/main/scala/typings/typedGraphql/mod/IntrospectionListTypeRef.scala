@@ -15,22 +15,17 @@ trait IntrospectionListTypeRef
 }
 object IntrospectionListTypeRef {
   
-  @scala.inline
-  def apply(): IntrospectionListTypeRef = {
+  inline def apply(): IntrospectionListTypeRef = {
     val __obj = js.Dynamic.literal(kind = "LIST")
     __obj.asInstanceOf[IntrospectionListTypeRef]
   }
   
-  @scala.inline
-  implicit class IntrospectionListTypeRefMutableBuilder[Self <: IntrospectionListTypeRef] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionListTypeRef](x: Self) {
     
-    @scala.inline
-    def setKind(value: LIST): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: LIST): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfType(value: IntrospectionTypeRef): Self = StObject.set(x, "ofType", value.asInstanceOf[js.Any])
+    inline def setOfType(value: IntrospectionTypeRef): Self = StObject.set(x, "ofType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfTypeUndefined: Self = StObject.set(x, "ofType", js.undefined)
+    inline def setOfTypeUndefined: Self = StObject.set(x, "ofType", js.undefined)
   }
 }

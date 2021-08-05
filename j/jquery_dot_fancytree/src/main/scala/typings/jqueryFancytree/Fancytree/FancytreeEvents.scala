@@ -97,187 +97,127 @@ trait FancytreeEvents extends StObject {
 }
 object FancytreeEvents {
   
-  @scala.inline
-  def apply(): FancytreeEvents = {
+  inline def apply(): FancytreeEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancytreeEvents]
   }
   
-  @scala.inline
-  implicit class FancytreeEventsMutableBuilder[Self <: FancytreeEvents] (val x: Self) extends AnyVal {
+  extension [Self <: FancytreeEvents](x: Self) {
     
-    @scala.inline
-    def setActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
+    inline def setActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setBeforeActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
+    inline def setBeforeActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
+    inline def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
     
-    @scala.inline
-    def setBeforeExpand(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeExpand", js.Any.fromFunction2(value))
+    inline def setBeforeExpand(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeExpand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeExpandUndefined: Self = StObject.set(x, "beforeExpand", js.undefined)
+    inline def setBeforeExpandUndefined: Self = StObject.set(x, "beforeExpand", js.undefined)
     
-    @scala.inline
-    def setBeforeSelect(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeSelect", js.Any.fromFunction2(value))
+    inline def setBeforeSelect(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeSelect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeSelectUndefined: Self = StObject.set(x, "beforeSelect", js.undefined)
+    inline def setBeforeSelectUndefined: Self = StObject.set(x, "beforeSelect", js.undefined)
     
-    @scala.inline
-    def setBlur(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
+    inline def setBlur(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlurTree(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "blurTree", js.Any.fromFunction2(value))
+    inline def setBlurTree(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "blurTree", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlurTreeUndefined: Self = StObject.set(x, "blurTree", js.undefined)
+    inline def setBlurTreeUndefined: Self = StObject.set(x, "blurTree", js.undefined)
     
-    @scala.inline
-    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    @scala.inline
-    def setClick(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    inline def setClick(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setCollapse(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
+    inline def setCollapse(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
+    inline def setCreateNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
+    inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDblclick(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "dblclick", js.Any.fromFunction2(value))
+    inline def setDblclick(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "dblclick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
+    inline def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
     
-    @scala.inline
-    def setDeactivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction2(value))
+    inline def setDeactivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+    inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
     
-    @scala.inline
-    def setExpand(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction2(value))
+    inline def setExpand(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setFocus(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
+    inline def setFocus(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocusTree(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "focusTree", js.Any.fromFunction2(value))
+    inline def setFocusTree(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "focusTree", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocusTreeUndefined: Self = StObject.set(x, "focusTree", js.undefined)
+    inline def setFocusTreeUndefined: Self = StObject.set(x, "focusTree", js.undefined)
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setInit(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+    inline def setInit(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setKeydown(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "keydown", js.Any.fromFunction2(value))
+    inline def setKeydown(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "keydown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
+    inline def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
     
-    @scala.inline
-    def setKeypress(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "keypress", js.Any.fromFunction2(value))
+    inline def setKeypress(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "keypress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
+    inline def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
     
-    @scala.inline
-    def setLazyLoad(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "lazyLoad", js.Any.fromFunction2(value))
+    inline def setLazyLoad(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "lazyLoad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
+    inline def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
     
-    @scala.inline
-    def setLoadChildren(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "loadChildren", js.Any.fromFunction2(value))
+    inline def setLoadChildren(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "loadChildren", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
+    inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
     
-    @scala.inline
-    def setLoadError(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "loadError", js.Any.fromFunction2(value))
+    inline def setLoadError(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "loadError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
+    inline def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
     
-    @scala.inline
-    def setPostProcess(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
+    inline def setPostProcess(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
+    inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
-    @scala.inline
-    def setRemoveNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction2(value))
+    inline def setRemoveNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveNodeUndefined: Self = StObject.set(x, "removeNode", js.undefined)
+    inline def setRemoveNodeUndefined: Self = StObject.set(x, "removeNode", js.undefined)
     
-    @scala.inline
-    def setRenderColumns(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "renderColumns", js.Any.fromFunction2(value))
+    inline def setRenderColumns(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "renderColumns", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderColumnsUndefined: Self = StObject.set(x, "renderColumns", js.undefined)
+    inline def setRenderColumnsUndefined: Self = StObject.set(x, "renderColumns", js.undefined)
     
-    @scala.inline
-    def setRenderNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "renderNode", js.Any.fromFunction2(value))
+    inline def setRenderNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "renderNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderNodeUndefined: Self = StObject.set(x, "renderNode", js.undefined)
+    inline def setRenderNodeUndefined: Self = StObject.set(x, "renderNode", js.undefined)
     
-    @scala.inline
-    def setRenderTitle(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "renderTitle", js.Any.fromFunction2(value))
+    inline def setRenderTitle(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "renderTitle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderTitleUndefined: Self = StObject.set(x, "renderTitle", js.undefined)
+    inline def setRenderTitleUndefined: Self = StObject.set(x, "renderTitle", js.undefined)
     
-    @scala.inline
-    def setRestore(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
+    inline def setRestore(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+    inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
-    @scala.inline
-    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+    inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     
-    @scala.inline
-    def setSelect(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    inline def setSelect(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

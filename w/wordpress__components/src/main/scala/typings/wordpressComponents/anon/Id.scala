@@ -14,22 +14,17 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(id: Double, name: String, parent: Double): Id = {
+  inline def apply(id: Double, name: String, parent: Double): Id = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

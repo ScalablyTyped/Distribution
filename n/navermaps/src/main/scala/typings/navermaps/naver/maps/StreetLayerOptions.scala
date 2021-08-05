@@ -12,25 +12,19 @@ trait StreetLayerOptions extends StObject {
 }
 object StreetLayerOptions {
   
-  @scala.inline
-  def apply(): StreetLayerOptions = {
+  inline def apply(): StreetLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreetLayerOptions]
   }
   
-  @scala.inline
-  implicit class StreetLayerOptionsMutableBuilder[Self <: StreetLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StreetLayerOptions](x: Self) {
     
-    @scala.inline
-    def setOverlayMap(value: Boolean): Self = StObject.set(x, "overlayMap", value.asInstanceOf[js.Any])
+    inline def setOverlayMap(value: Boolean): Self = StObject.set(x, "overlayMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayMapUndefined: Self = StObject.set(x, "overlayMap", js.undefined)
+    inline def setOverlayMapUndefined: Self = StObject.set(x, "overlayMap", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

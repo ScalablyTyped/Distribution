@@ -18,22 +18,17 @@ trait DeleteFieldLevelEncryptionConfigRequest extends StObject {
 }
 object DeleteFieldLevelEncryptionConfigRequest {
   
-  @scala.inline
-  def apply(Id: String): DeleteFieldLevelEncryptionConfigRequest = {
+  inline def apply(Id: String): DeleteFieldLevelEncryptionConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFieldLevelEncryptionConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFieldLevelEncryptionConfigRequestMutableBuilder[Self <: DeleteFieldLevelEncryptionConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFieldLevelEncryptionConfigRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

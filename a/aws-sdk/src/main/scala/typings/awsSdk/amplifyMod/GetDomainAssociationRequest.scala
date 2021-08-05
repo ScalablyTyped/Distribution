@@ -18,19 +18,15 @@ trait GetDomainAssociationRequest extends StObject {
 }
 object GetDomainAssociationRequest {
   
-  @scala.inline
-  def apply(appId: AppId, domainName: DomainName): GetDomainAssociationRequest = {
+  inline def apply(appId: AppId, domainName: DomainName): GetDomainAssociationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainAssociationRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainAssociationRequestMutableBuilder[Self <: GetDomainAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
   }
 }

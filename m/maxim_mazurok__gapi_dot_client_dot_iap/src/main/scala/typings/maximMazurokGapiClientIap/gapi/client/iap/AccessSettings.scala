@@ -20,37 +20,27 @@ trait AccessSettings extends StObject {
 }
 object AccessSettings {
   
-  @scala.inline
-  def apply(): AccessSettings = {
+  inline def apply(): AccessSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessSettings]
   }
   
-  @scala.inline
-  implicit class AccessSettingsMutableBuilder[Self <: AccessSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccessSettings](x: Self) {
     
-    @scala.inline
-    def setCorsSettings(value: CorsSettings): Self = StObject.set(x, "corsSettings", value.asInstanceOf[js.Any])
+    inline def setCorsSettings(value: CorsSettings): Self = StObject.set(x, "corsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsSettingsUndefined: Self = StObject.set(x, "corsSettings", js.undefined)
+    inline def setCorsSettingsUndefined: Self = StObject.set(x, "corsSettings", js.undefined)
     
-    @scala.inline
-    def setGcipSettings(value: GcipSettings): Self = StObject.set(x, "gcipSettings", value.asInstanceOf[js.Any])
+    inline def setGcipSettings(value: GcipSettings): Self = StObject.set(x, "gcipSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcipSettingsUndefined: Self = StObject.set(x, "gcipSettings", js.undefined)
+    inline def setGcipSettingsUndefined: Self = StObject.set(x, "gcipSettings", js.undefined)
     
-    @scala.inline
-    def setOauthSettings(value: OAuthSettings): Self = StObject.set(x, "oauthSettings", value.asInstanceOf[js.Any])
+    inline def setOauthSettings(value: OAuthSettings): Self = StObject.set(x, "oauthSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthSettingsUndefined: Self = StObject.set(x, "oauthSettings", js.undefined)
+    inline def setOauthSettingsUndefined: Self = StObject.set(x, "oauthSettings", js.undefined)
     
-    @scala.inline
-    def setPolicyDelegationSettings(value: PolicyDelegationSettings): Self = StObject.set(x, "policyDelegationSettings", value.asInstanceOf[js.Any])
+    inline def setPolicyDelegationSettings(value: PolicyDelegationSettings): Self = StObject.set(x, "policyDelegationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDelegationSettingsUndefined: Self = StObject.set(x, "policyDelegationSettings", js.undefined)
+    inline def setPolicyDelegationSettingsUndefined: Self = StObject.set(x, "policyDelegationSettings", js.undefined)
   }
 }

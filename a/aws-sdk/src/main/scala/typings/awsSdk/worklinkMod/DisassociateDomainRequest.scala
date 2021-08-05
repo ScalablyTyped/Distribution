@@ -18,19 +18,15 @@ trait DisassociateDomainRequest extends StObject {
 }
 object DisassociateDomainRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, FleetArn: FleetArn): DisassociateDomainRequest = {
+  inline def apply(DomainName: DomainName, FleetArn: FleetArn): DisassociateDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateDomainRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateDomainRequestMutableBuilder[Self <: DisassociateDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

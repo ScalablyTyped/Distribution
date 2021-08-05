@@ -12,8 +12,7 @@ trait CreateQuery
 }
 object CreateQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: () => typings.bluebird.mod.^[js.Array[Unit]],
     allWithin: DatabaseConnection => typings.bluebird.mod.^[js.Array[Unit]],
     exec: () => typings.bluebird.mod.^[Unit],
@@ -27,10 +26,8 @@ object CreateQuery {
     __obj.asInstanceOf[CreateQuery]
   }
   
-  @scala.inline
-  implicit class CreateQueryMutableBuilder[Self <: CreateQuery] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQuery](x: Self) {
     
-    @scala.inline
-    def setIfNotExists(value: () => Executable[Unit]): Self = StObject.set(x, "ifNotExists", js.Any.fromFunction0(value))
+    inline def setIfNotExists(value: () => Executable[Unit]): Self = StObject.set(x, "ifNotExists", js.Any.fromFunction0(value))
   }
 }

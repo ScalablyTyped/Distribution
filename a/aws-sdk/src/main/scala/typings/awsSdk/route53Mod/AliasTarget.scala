@@ -23,22 +23,17 @@ trait AliasTarget extends StObject {
 }
 object AliasTarget {
   
-  @scala.inline
-  def apply(DNSName: DNSName, EvaluateTargetHealth: AliasHealthEnabled, HostedZoneId: ResourceId): AliasTarget = {
+  inline def apply(DNSName: DNSName, EvaluateTargetHealth: AliasHealthEnabled, HostedZoneId: ResourceId): AliasTarget = {
     val __obj = js.Dynamic.literal(DNSName = DNSName.asInstanceOf[js.Any], EvaluateTargetHealth = EvaluateTargetHealth.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasTarget]
   }
   
-  @scala.inline
-  implicit class AliasTargetMutableBuilder[Self <: AliasTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AliasTarget](x: Self) {
     
-    @scala.inline
-    def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
+    inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluateTargetHealth(value: AliasHealthEnabled): Self = StObject.set(x, "EvaluateTargetHealth", value.asInstanceOf[js.Any])
+    inline def setEvaluateTargetHealth(value: AliasHealthEnabled): Self = StObject.set(x, "EvaluateTargetHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
   }
 }

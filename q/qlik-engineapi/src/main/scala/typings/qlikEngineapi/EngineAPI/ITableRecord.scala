@@ -52,8 +52,7 @@ trait ITableRecord extends StObject {
 }
 object ITableRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qComment: String,
     qFields: js.Array[IFieldInTableData],
     qIsDirectDiscovery: Boolean,
@@ -67,34 +66,24 @@ object ITableRecord {
     __obj.asInstanceOf[ITableRecord]
   }
   
-  @scala.inline
-  implicit class ITableRecordMutableBuilder[Self <: ITableRecord] (val x: Self) extends AnyVal {
+  extension [Self <: ITableRecord](x: Self) {
     
-    @scala.inline
-    def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
+    inline def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFields(value: js.Array[IFieldInTableData]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
+    inline def setQFields(value: js.Array[IFieldInTableData]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldsVarargs(value: IFieldInTableData*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: IFieldInTableData*): Self = StObject.set(x, "qFields", js.Array(value :_*))
     
-    @scala.inline
-    def setQIsDirectDiscovery(value: Boolean): Self = StObject.set(x, "qIsDirectDiscovery", value.asInstanceOf[js.Any])
+    inline def setQIsDirectDiscovery(value: Boolean): Self = StObject.set(x, "qIsDirectDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsSynthetic(value: Boolean): Self = StObject.set(x, "qIsSynthetic", value.asInstanceOf[js.Any])
+    inline def setQIsSynthetic(value: Boolean): Self = StObject.set(x, "qIsSynthetic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLoose(value: Boolean): Self = StObject.set(x, "qLoose", value.asInstanceOf[js.Any])
+    inline def setQLoose(value: Boolean): Self = StObject.set(x, "qLoose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNoOfRows(value: Double): Self = StObject.set(x, "qNoOfRows", value.asInstanceOf[js.Any])
+    inline def setQNoOfRows(value: Double): Self = StObject.set(x, "qNoOfRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
+    inline def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
   }
 }

@@ -23,40 +23,29 @@ trait Filters extends StObject {
 }
 object Filters {
   
-  @scala.inline
-  def apply(): Filters = {
+  inline def apply(): Filters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filters]
   }
   
-  @scala.inline
-  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
+  extension [Self <: Filters](x: Self) {
     
-    @scala.inline
-    def setExtendedKeyUsage(value: ExtendedKeyUsageFilterList): Self = StObject.set(x, "extendedKeyUsage", value.asInstanceOf[js.Any])
+    inline def setExtendedKeyUsage(value: ExtendedKeyUsageFilterList): Self = StObject.set(x, "extendedKeyUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedKeyUsageUndefined: Self = StObject.set(x, "extendedKeyUsage", js.undefined)
+    inline def setExtendedKeyUsageUndefined: Self = StObject.set(x, "extendedKeyUsage", js.undefined)
     
-    @scala.inline
-    def setExtendedKeyUsageVarargs(value: ExtendedKeyUsageName*): Self = StObject.set(x, "extendedKeyUsage", js.Array(value :_*))
+    inline def setExtendedKeyUsageVarargs(value: ExtendedKeyUsageName*): Self = StObject.set(x, "extendedKeyUsage", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyTypes(value: KeyAlgorithmList): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
+    inline def setKeyTypes(value: KeyAlgorithmList): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
+    inline def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
     
-    @scala.inline
-    def setKeyTypesVarargs(value: KeyAlgorithm*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
+    inline def setKeyTypesVarargs(value: KeyAlgorithm*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyUsage(value: KeyUsageFilterList): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
+    inline def setKeyUsage(value: KeyUsageFilterList): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
+    inline def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
     
-    @scala.inline
-    def setKeyUsageVarargs(value: KeyUsageName*): Self = StObject.set(x, "keyUsage", js.Array(value :_*))
+    inline def setKeyUsageVarargs(value: KeyUsageName*): Self = StObject.set(x, "keyUsage", js.Array(value :_*))
   }
 }

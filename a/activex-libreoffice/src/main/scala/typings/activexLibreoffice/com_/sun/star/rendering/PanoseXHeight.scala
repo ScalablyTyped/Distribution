@@ -27,28 +27,20 @@ object PanoseXHeight {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ANYTHING: `0` = 0.asInstanceOf[`0`]
+    inline def ANYTHING: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CONSTANT_LARGE: `4` = 4.asInstanceOf[`4`]
+    inline def CONSTANT_LARGE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def CONSTANT_SMALL: `2` = 2.asInstanceOf[`2`]
+    inline def CONSTANT_SMALL: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CONSTANT_STANDARD: `3` = 3.asInstanceOf[`3`]
+    inline def CONSTANT_STANDARD: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DUCKING_LARGE: `7` = 7.asInstanceOf[`7`]
+    inline def DUCKING_LARGE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def DUCKING_SMALL: `5` = 5.asInstanceOf[`5`]
+    inline def DUCKING_SMALL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def DUCKING_STANDARD: `6` = 6.asInstanceOf[`6`]
+    inline def DUCKING_STANDARD: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NO_FIT: `1` = 1.asInstanceOf[`1`]
+    inline def NO_FIT: `1` = 1.asInstanceOf[`1`]
   }
 }

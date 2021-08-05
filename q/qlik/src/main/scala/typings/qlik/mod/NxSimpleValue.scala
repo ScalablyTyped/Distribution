@@ -12,19 +12,15 @@ trait NxSimpleValue extends StObject {
 }
 object NxSimpleValue {
   
-  @scala.inline
-  def apply(qNum: Double, qText: String): NxSimpleValue = {
+  inline def apply(qNum: Double, qText: String): NxSimpleValue = {
     val __obj = js.Dynamic.literal(qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxSimpleValue]
   }
   
-  @scala.inline
-  implicit class NxSimpleValueMutableBuilder[Self <: NxSimpleValue] (val x: Self) extends AnyVal {
+  extension [Self <: NxSimpleValue](x: Self) {
     
-    @scala.inline
-    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }
 }

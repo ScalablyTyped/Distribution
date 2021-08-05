@@ -28,34 +28,25 @@ trait ListTestGridSessionArtifactsRequest extends StObject {
 }
 object ListTestGridSessionArtifactsRequest {
   
-  @scala.inline
-  def apply(sessionArn: DeviceFarmArn): ListTestGridSessionArtifactsRequest = {
+  inline def apply(sessionArn: DeviceFarmArn): ListTestGridSessionArtifactsRequest = {
     val __obj = js.Dynamic.literal(sessionArn = sessionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionArtifactsRequest]
   }
   
-  @scala.inline
-  implicit class ListTestGridSessionArtifactsRequestMutableBuilder[Self <: ListTestGridSessionArtifactsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestGridSessionArtifactsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
+    inline def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
+    inline def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSessionArn(value: DeviceFarmArn): Self = StObject.set(x, "sessionArn", value.asInstanceOf[js.Any])
+    inline def setSessionArn(value: DeviceFarmArn): Self = StObject.set(x, "sessionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TestGridSessionArtifactCategory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TestGridSessionArtifactCategory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

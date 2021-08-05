@@ -33,19 +33,15 @@ trait LoginResponse extends StObject {
 }
 object LoginResponse {
   
-  @scala.inline
-  def apply(code: String, errMsg: String): LoginResponse = {
+  inline def apply(code: String, errMsg: String): LoginResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginResponse]
   }
   
-  @scala.inline
-  implicit class LoginResponseMutableBuilder[Self <: LoginResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LoginResponse](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

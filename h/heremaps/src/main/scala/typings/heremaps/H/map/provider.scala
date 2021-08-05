@@ -80,8 +80,7 @@ object provider {
   }
   object Invalidations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMark: () => Mark,
       isAdd: Mark => Boolean,
       isAny: Mark => Boolean,
@@ -135,32 +134,23 @@ object provider {
            with Flag
     }
     
-    @scala.inline
-    implicit class InvalidationsMutableBuilder[Self <: Invalidations] (val x: Self) extends AnyVal {
+    extension [Self <: Invalidations](x: Self) {
       
-      @scala.inline
-      def setGetMark(value: () => Mark): Self = StObject.set(x, "getMark", js.Any.fromFunction0(value))
+      inline def setGetMark(value: () => Mark): Self = StObject.set(x, "getMark", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAdd(value: Mark => Boolean): Self = StObject.set(x, "isAdd", js.Any.fromFunction1(value))
+      inline def setIsAdd(value: Mark => Boolean): Self = StObject.set(x, "isAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsAny(value: Mark => Boolean): Self = StObject.set(x, "isAny", js.Any.fromFunction1(value))
+      inline def setIsAny(value: Mark => Boolean): Self = StObject.set(x, "isAny", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRemove(value: Mark => Boolean): Self = StObject.set(x, "isRemove", js.Any.fromFunction1(value))
+      inline def setIsRemove(value: Mark => Boolean): Self = StObject.set(x, "isRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSpatial(value: Mark => Boolean): Self = StObject.set(x, "isSpatial", js.Any.fromFunction1(value))
+      inline def setIsSpatial(value: Mark => Boolean): Self = StObject.set(x, "isSpatial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVisual(value: Mark => Boolean): Self = StObject.set(x, "isVisual", js.Any.fromFunction1(value))
+      inline def setIsVisual(value: Mark => Boolean): Self = StObject.set(x, "isVisual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsZOrder(value: Mark => Boolean): Self = StObject.set(x, "isZOrder", js.Any.fromFunction1(value))
+      inline def setIsZOrder(value: Mark => Boolean): Self = StObject.set(x, "isZOrder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: (Mark, BitMask) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (Mark, BitMask) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
     
     /**
@@ -214,53 +204,38 @@ object provider {
     }
     object Options {
       
-      @scala.inline
-      def apply(getURL: (Double, Double, Double) => String): Options = {
+      inline def apply(getURL: (Double, Double, Double) => String): Options = {
         val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction3(getURL))
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+        inline def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+        inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
         
-        @scala.inline
-        def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
+        inline def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setGetCopyrightsUndefined: Self = StObject.set(x, "getCopyrights", js.undefined)
+        inline def setGetCopyrightsUndefined: Self = StObject.set(x, "getCopyrights", js.undefined)
         
-        @scala.inline
-        def setGetURL(value: (Double, Double, Double) => String): Self = StObject.set(x, "getURL", js.Any.fromFunction3(value))
+        inline def setGetURL(value: (Double, Double, Double) => String): Self = StObject.set(x, "getURL", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+        inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+        inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+        inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       }
     }
   }
@@ -321,37 +296,28 @@ object provider {
     }
     object Options {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         requestData: (Double, Double, Double, js.Function1[/* markers */ js.Array[AbstractMarker], Unit], js.Function0[Unit]) => ICancelable
       ): Options = {
         val __obj = js.Dynamic.literal(requestData = js.Any.fromFunction5(requestData))
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setProvidesDomMarkers(value: Boolean): Self = StObject.set(x, "providesDomMarkers", value.asInstanceOf[js.Any])
+        inline def setProvidesDomMarkers(value: Boolean): Self = StObject.set(x, "providesDomMarkers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProvidesDomMarkersUndefined: Self = StObject.set(x, "providesDomMarkers", js.undefined)
+        inline def setProvidesDomMarkersUndefined: Self = StObject.set(x, "providesDomMarkers", js.undefined)
         
-        @scala.inline
-        def setRequestData(
+        inline def setRequestData(
           value: (Double, Double, Double, js.Function1[/* markers */ js.Array[AbstractMarker], Unit], js.Function0[Unit]) => ICancelable
         ): Self = StObject.set(x, "requestData", js.Any.fromFunction5(value))
       }
@@ -510,38 +476,28 @@ object provider {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
+        inline def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setGetCopyrightsUndefined: Self = StObject.set(x, "getCopyrights", js.undefined)
+        inline def setGetCopyrightsUndefined: Self = StObject.set(x, "getCopyrights", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+        inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       }
     }
   }
@@ -661,32 +617,24 @@ object provider {
   }
   object Tile {
     
-    @scala.inline
-    def apply(data: js.Any, key: String, valid: Boolean, x: Double, y: Double, z: Double): Tile = {
+    inline def apply(data: js.Any, key: String, valid: Boolean, x: Double, y: Double, z: Double): Tile = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tile]
     }
     
-    @scala.inline
-    implicit class TileMutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
+    extension [Self <: Tile](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   
@@ -760,44 +708,32 @@ object provider {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* number */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
+        inline def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* number */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setGetCopyrightsUndefined: Self = StObject.set(x, "getCopyrights", js.undefined)
+        inline def setGetCopyrightsUndefined: Self = StObject.set(x, "getCopyrights", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+        inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+        inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+        inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       }
     }
   }

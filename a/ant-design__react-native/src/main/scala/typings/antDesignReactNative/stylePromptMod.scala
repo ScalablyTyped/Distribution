@@ -13,8 +13,7 @@ object stylePromptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(variables: Theme): PromptStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[PromptStyle]
+  inline def default(variables: Theme): PromptStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[PromptStyle]
   
   trait PromptStyle extends StObject {
     
@@ -32,8 +31,7 @@ object stylePromptMod {
   }
   object PromptStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       input: TextStyle,
       inputFirst: ViewStyle,
       inputGroup: ViewStyle,
@@ -45,26 +43,19 @@ object stylePromptMod {
       __obj.asInstanceOf[PromptStyle]
     }
     
-    @scala.inline
-    implicit class PromptStyleMutableBuilder[Self <: PromptStyle] (val x: Self) extends AnyVal {
+    extension [Self <: PromptStyle](x: Self) {
       
-      @scala.inline
-      def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFirst(value: ViewStyle): Self = StObject.set(x, "inputFirst", value.asInstanceOf[js.Any])
+      inline def setInputFirst(value: ViewStyle): Self = StObject.set(x, "inputFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputGroup(value: ViewStyle): Self = StObject.set(x, "inputGroup", value.asInstanceOf[js.Any])
+      inline def setInputGroup(value: ViewStyle): Self = StObject.set(x, "inputGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputLast(value: ViewStyle): Self = StObject.set(x, "inputLast", value.asInstanceOf[js.Any])
+      inline def setInputLast(value: ViewStyle): Self = StObject.set(x, "inputLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
+      inline def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: TextStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: TextStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

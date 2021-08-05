@@ -35,37 +35,27 @@ trait SchemaNewDisk extends StObject {
 }
 object SchemaNewDisk {
   
-  @scala.inline
-  def apply(): SchemaNewDisk = {
+  inline def apply(): SchemaNewDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNewDisk]
   }
   
-  @scala.inline
-  implicit class SchemaNewDiskMutableBuilder[Self <: SchemaNewDisk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNewDisk](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: SchemaDiskAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: SchemaDiskAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+    inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
-    @scala.inline
-    def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
+    inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
+    inline def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
     
-    @scala.inline
-    def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
+    inline def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
+    inline def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
     
-    @scala.inline
-    def setInitializeParams(value: SchemaNewDiskInitializeParams): Self = StObject.set(x, "initializeParams", value.asInstanceOf[js.Any])
+    inline def setInitializeParams(value: SchemaNewDiskInitializeParams): Self = StObject.set(x, "initializeParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializeParamsUndefined: Self = StObject.set(x, "initializeParams", js.undefined)
+    inline def setInitializeParamsUndefined: Self = StObject.set(x, "initializeParams", js.undefined)
   }
 }

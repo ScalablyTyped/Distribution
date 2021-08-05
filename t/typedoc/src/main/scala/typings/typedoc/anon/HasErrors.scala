@@ -12,22 +12,17 @@ trait HasErrors extends StObject {
 }
 object HasErrors {
   
-  @scala.inline
-  def apply(hasErrors: Boolean, inputFiles: js.Array[String]): HasErrors = {
+  inline def apply(hasErrors: Boolean, inputFiles: js.Array[String]): HasErrors = {
     val __obj = js.Dynamic.literal(hasErrors = hasErrors.asInstanceOf[js.Any], inputFiles = inputFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasErrors]
   }
   
-  @scala.inline
-  implicit class HasErrorsMutableBuilder[Self <: HasErrors] (val x: Self) extends AnyVal {
+  extension [Self <: HasErrors](x: Self) {
     
-    @scala.inline
-    def setHasErrors(value: Boolean): Self = StObject.set(x, "hasErrors", value.asInstanceOf[js.Any])
+    inline def setHasErrors(value: Boolean): Self = StObject.set(x, "hasErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFiles(value: js.Array[String]): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
+    inline def setInputFiles(value: js.Array[String]): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFilesVarargs(value: String*): Self = StObject.set(x, "inputFiles", js.Array(value :_*))
+    inline def setInputFilesVarargs(value: String*): Self = StObject.set(x, "inputFiles", js.Array(value :_*))
   }
 }

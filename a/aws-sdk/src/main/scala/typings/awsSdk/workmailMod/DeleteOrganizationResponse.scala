@@ -18,25 +18,19 @@ trait DeleteOrganizationResponse extends StObject {
 }
 object DeleteOrganizationResponse {
   
-  @scala.inline
-  def apply(): DeleteOrganizationResponse = {
+  inline def apply(): DeleteOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class DeleteOrganizationResponseMutableBuilder[Self <: DeleteOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

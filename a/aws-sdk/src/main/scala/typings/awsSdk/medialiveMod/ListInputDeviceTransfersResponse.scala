@@ -18,28 +18,21 @@ trait ListInputDeviceTransfersResponse extends StObject {
 }
 object ListInputDeviceTransfersResponse {
   
-  @scala.inline
-  def apply(): ListInputDeviceTransfersResponse = {
+  inline def apply(): ListInputDeviceTransfersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInputDeviceTransfersResponse]
   }
   
-  @scala.inline
-  implicit class ListInputDeviceTransfersResponseMutableBuilder[Self <: ListInputDeviceTransfersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListInputDeviceTransfersResponse](x: Self) {
     
-    @scala.inline
-    def setInputDeviceTransfers(value: listOfTransferringInputDeviceSummary): Self = StObject.set(x, "InputDeviceTransfers", value.asInstanceOf[js.Any])
+    inline def setInputDeviceTransfers(value: listOfTransferringInputDeviceSummary): Self = StObject.set(x, "InputDeviceTransfers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDeviceTransfersUndefined: Self = StObject.set(x, "InputDeviceTransfers", js.undefined)
+    inline def setInputDeviceTransfersUndefined: Self = StObject.set(x, "InputDeviceTransfers", js.undefined)
     
-    @scala.inline
-    def setInputDeviceTransfersVarargs(value: TransferringInputDeviceSummary*): Self = StObject.set(x, "InputDeviceTransfers", js.Array(value :_*))
+    inline def setInputDeviceTransfersVarargs(value: TransferringInputDeviceSummary*): Self = StObject.set(x, "InputDeviceTransfers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

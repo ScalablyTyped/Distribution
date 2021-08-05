@@ -26,31 +26,23 @@ trait GetREFRsOptions extends StObject {
 }
 object GetREFRsOptions {
   
-  @scala.inline
-  def apply(): GetREFRsOptions = {
+  inline def apply(): GetREFRsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetREFRsOptions]
   }
   
-  @scala.inline
-  implicit class GetREFRsOptionsMutableBuilder[Self <: GetREFRsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetREFRsOptions](x: Self) {
     
-    @scala.inline
-    def setExcludeDeleted(value: Boolean): Self = StObject.set(x, "excludeDeleted", value.asInstanceOf[js.Any])
+    inline def setExcludeDeleted(value: Boolean): Self = StObject.set(x, "excludeDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDeletedUndefined: Self = StObject.set(x, "excludeDeleted", js.undefined)
+    inline def setExcludeDeletedUndefined: Self = StObject.set(x, "excludeDeleted", js.undefined)
     
-    @scala.inline
-    def setExcludeDisabled(value: Boolean): Self = StObject.set(x, "excludeDisabled", value.asInstanceOf[js.Any])
+    inline def setExcludeDisabled(value: Boolean): Self = StObject.set(x, "excludeDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDisabledUndefined: Self = StObject.set(x, "excludeDisabled", js.undefined)
+    inline def setExcludeDisabledUndefined: Self = StObject.set(x, "excludeDisabled", js.undefined)
     
-    @scala.inline
-    def setExcludeXESP(value: Boolean): Self = StObject.set(x, "excludeXESP", value.asInstanceOf[js.Any])
+    inline def setExcludeXESP(value: Boolean): Self = StObject.set(x, "excludeXESP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeXESPUndefined: Self = StObject.set(x, "excludeXESP", js.undefined)
+    inline def setExcludeXESPUndefined: Self = StObject.set(x, "excludeXESP", js.undefined)
   }
 }

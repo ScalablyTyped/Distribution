@@ -122,20 +122,15 @@ object frameFrameMod {
   trait EntityType extends StObject
   object EntityType {
     
-    @scala.inline
-    def `external connection`: typings.openfin.openfinStrings.`external connection` = ("external connection").asInstanceOf[typings.openfin.openfinStrings.`external connection`]
+    inline def `external connection`: typings.openfin.openfinStrings.`external connection` = ("external connection").asInstanceOf[typings.openfin.openfinStrings.`external connection`]
     
-    @scala.inline
-    def iframe: typings.openfin.openfinStrings.iframe = "iframe".asInstanceOf[typings.openfin.openfinStrings.iframe]
+    inline def iframe: typings.openfin.openfinStrings.iframe = "iframe".asInstanceOf[typings.openfin.openfinStrings.iframe]
     
-    @scala.inline
-    def unknown: typings.openfin.openfinStrings.unknown = "unknown".asInstanceOf[typings.openfin.openfinStrings.unknown]
+    inline def unknown: typings.openfin.openfinStrings.unknown = "unknown".asInstanceOf[typings.openfin.openfinStrings.unknown]
     
-    @scala.inline
-    def view: typings.openfin.openfinStrings.view = "view".asInstanceOf[typings.openfin.openfinStrings.view]
+    inline def view: typings.openfin.openfinStrings.view = "view".asInstanceOf[typings.openfin.openfinStrings.view]
     
-    @scala.inline
-    def window: typings.openfin.openfinStrings.window = "window".asInstanceOf[typings.openfin.openfinStrings.window]
+    inline def window: typings.openfin.openfinStrings.window = "window".asInstanceOf[typings.openfin.openfinStrings.window]
   }
   
   trait FrameInfo extends StObject {
@@ -150,26 +145,20 @@ object frameFrameMod {
   }
   object FrameInfo {
     
-    @scala.inline
-    def apply(entityType: EntityType, name: String, parent: Identity, uuid: String): FrameInfo = {
+    inline def apply(entityType: EntityType, name: String, parent: Identity, uuid: String): FrameInfo = {
       val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameInfo]
     }
     
-    @scala.inline
-    implicit class FrameInfoMutableBuilder[Self <: FrameInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FrameInfo](x: Self) {
       
-      @scala.inline
-      def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+      inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Identity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Identity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   

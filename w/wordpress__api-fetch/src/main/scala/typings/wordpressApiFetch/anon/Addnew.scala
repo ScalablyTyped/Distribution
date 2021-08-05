@@ -70,8 +70,7 @@ trait Addnew extends StObject {
 }
 object Addnew {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_new: String,
     add_new_item: String,
     all_items: String,
@@ -108,100 +107,68 @@ object Addnew {
     __obj.asInstanceOf[Addnew]
   }
   
-  @scala.inline
-  implicit class AddnewMutableBuilder[Self <: Addnew] (val x: Self) extends AnyVal {
+  extension [Self <: Addnew](x: Self) {
     
-    @scala.inline
-    def setAdd_new(value: String): Self = StObject.set(x, "add_new", value.asInstanceOf[js.Any])
+    inline def setAdd_new(value: String): Self = StObject.set(x, "add_new", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd_new_item(value: String): Self = StObject.set(x, "add_new_item", value.asInstanceOf[js.Any])
+    inline def setAdd_new_item(value: String): Self = StObject.set(x, "add_new_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll_items(value: String): Self = StObject.set(x, "all_items", value.asInstanceOf[js.Any])
+    inline def setAll_items(value: String): Self = StObject.set(x, "all_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchives(value: String): Self = StObject.set(x, "archives", value.asInstanceOf[js.Any])
+    inline def setArchives(value: String): Self = StObject.set(x, "archives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_item(value: String): Self = StObject.set(x, "edit_item", value.asInstanceOf[js.Any])
+    inline def setEdit_item(value: String): Self = StObject.set(x, "edit_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatured_image(value: String): Self = StObject.set(x, "featured_image", value.asInstanceOf[js.Any])
+    inline def setFeatured_image(value: String): Self = StObject.set(x, "featured_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter_items_list(value: String): Self = StObject.set(x, "filter_items_list", value.asInstanceOf[js.Any])
+    inline def setFilter_items_list(value: String): Self = StObject.set(x, "filter_items_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsert_into_item(value: String): Self = StObject.set(x, "insert_into_item", value.asInstanceOf[js.Any])
+    inline def setInsert_into_item(value: String): Self = StObject.set(x, "insert_into_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_published(value: String): Self = StObject.set(x, "item_published", value.asInstanceOf[js.Any])
+    inline def setItem_published(value: String): Self = StObject.set(x, "item_published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_published_privately(value: String): Self = StObject.set(x, "item_published_privately", value.asInstanceOf[js.Any])
+    inline def setItem_published_privately(value: String): Self = StObject.set(x, "item_published_privately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_reverted_to_draft(value: String): Self = StObject.set(x, "item_reverted_to_draft", value.asInstanceOf[js.Any])
+    inline def setItem_reverted_to_draft(value: String): Self = StObject.set(x, "item_reverted_to_draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_scheduled(value: String): Self = StObject.set(x, "item_scheduled", value.asInstanceOf[js.Any])
+    inline def setItem_scheduled(value: String): Self = StObject.set(x, "item_scheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_updated(value: String): Self = StObject.set(x, "item_updated", value.asInstanceOf[js.Any])
+    inline def setItem_updated(value: String): Self = StObject.set(x, "item_updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems_list(value: String): Self = StObject.set(x, "items_list", value.asInstanceOf[js.Any])
+    inline def setItems_list(value: String): Self = StObject.set(x, "items_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems_list_navigation(value: String): Self = StObject.set(x, "items_list_navigation", value.asInstanceOf[js.Any])
+    inline def setItems_list_navigation(value: String): Self = StObject.set(x, "items_list_navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu_name(value: String): Self = StObject.set(x, "menu_name", value.asInstanceOf[js.Any])
+    inline def setMenu_name(value: String): Self = StObject.set(x, "menu_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_admin_bar(value: String): Self = StObject.set(x, "name_admin_bar", value.asInstanceOf[js.Any])
+    inline def setName_admin_bar(value: String): Self = StObject.set(x, "name_admin_bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_item(value: String): Self = StObject.set(x, "new_item", value.asInstanceOf[js.Any])
+    inline def setNew_item(value: String): Self = StObject.set(x, "new_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot_found(value: String): Self = StObject.set(x, "not_found", value.asInstanceOf[js.Any])
+    inline def setNot_found(value: String): Self = StObject.set(x, "not_found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot_found_in_trash(value: String): Self = StObject.set(x, "not_found_in_trash", value.asInstanceOf[js.Any])
+    inline def setNot_found_in_trash(value: String): Self = StObject.set(x, "not_found_in_trash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_item_colon(value: String): Self = StObject.set(x, "parent_item_colon", value.asInstanceOf[js.Any])
+    inline def setParent_item_colon(value: String): Self = StObject.set(x, "parent_item_colon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove_featured_image(value: String): Self = StObject.set(x, "remove_featured_image", value.asInstanceOf[js.Any])
+    inline def setRemove_featured_image(value: String): Self = StObject.set(x, "remove_featured_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch_items(value: String): Self = StObject.set(x, "search_items", value.asInstanceOf[js.Any])
+    inline def setSearch_items(value: String): Self = StObject.set(x, "search_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet_featured_image(value: String): Self = StObject.set(x, "set_featured_image", value.asInstanceOf[js.Any])
+    inline def setSet_featured_image(value: String): Self = StObject.set(x, "set_featured_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingular_name(value: String): Self = StObject.set(x, "singular_name", value.asInstanceOf[js.Any])
+    inline def setSingular_name(value: String): Self = StObject.set(x, "singular_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploaded_to_this_item(value: String): Self = StObject.set(x, "uploaded_to_this_item", value.asInstanceOf[js.Any])
+    inline def setUploaded_to_this_item(value: String): Self = StObject.set(x, "uploaded_to_this_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_featured_image(value: String): Self = StObject.set(x, "use_featured_image", value.asInstanceOf[js.Any])
+    inline def setUse_featured_image(value: String): Self = StObject.set(x, "use_featured_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_item(value: String): Self = StObject.set(x, "view_item", value.asInstanceOf[js.Any])
+    inline def setView_item(value: String): Self = StObject.set(x, "view_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_items(value: String): Self = StObject.set(x, "view_items", value.asInstanceOf[js.Any])
+    inline def setView_items(value: String): Self = StObject.set(x, "view_items", value.asInstanceOf[js.Any])
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSalutationGender extends StObject
 object WdSalutationGender {
   
-  @scala.inline
-  def wdGenderFemale: `0` = 0.asInstanceOf[`0`]
+  inline def wdGenderFemale: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdGenderMale: `1` = 1.asInstanceOf[`1`]
+  inline def wdGenderMale: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdGenderNeutral: `2` = 2.asInstanceOf[`2`]
+  inline def wdGenderNeutral: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdGenderUnknown: `3` = 3.asInstanceOf[`3`]
+  inline def wdGenderUnknown: `3` = 3.asInstanceOf[`3`]
 }

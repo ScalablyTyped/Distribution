@@ -28,47 +28,35 @@ trait GoogleCloudDialogflowV2FulfillmentGenericWebService extends StObject {
 }
 object GoogleCloudDialogflowV2FulfillmentGenericWebService {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2FulfillmentGenericWebService = {
+  inline def apply(): GoogleCloudDialogflowV2FulfillmentGenericWebService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2FulfillmentGenericWebService]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2FulfillmentGenericWebServiceMutableBuilder[Self <: GoogleCloudDialogflowV2FulfillmentGenericWebService] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2FulfillmentGenericWebService](x: Self) {
     
-    @scala.inline
-    def setIsCloudFunction(value: Boolean): Self = StObject.set(x, "isCloudFunction", value.asInstanceOf[js.Any])
+    inline def setIsCloudFunction(value: Boolean): Self = StObject.set(x, "isCloudFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCloudFunctionUndefined: Self = StObject.set(x, "isCloudFunction", js.undefined)
+    inline def setIsCloudFunctionUndefined: Self = StObject.set(x, "isCloudFunction", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setRequestHeaders(
+    inline def setRequestHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2FulfillmentGenericWebService & TopLevel[js.Any]
     ): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

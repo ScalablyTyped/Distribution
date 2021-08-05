@@ -28,46 +28,33 @@ trait SynthesizeParams extends StObject {
 }
 object SynthesizeParams {
   
-  @scala.inline
-  def apply(text: String): SynthesizeParams = {
+  inline def apply(text: String): SynthesizeParams = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizeParams]
   }
   
-  @scala.inline
-  implicit class SynthesizeParamsMutableBuilder[Self <: SynthesizeParams] (val x: Self) extends AnyVal {
+  extension [Self <: SynthesizeParams](x: Self) {
     
-    @scala.inline
-    def setAccept(value: Accept | String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: Accept | String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+    inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomization_idUndefined: Self = StObject.set(x, "customization_id", js.undefined)
+    inline def setCustomization_idUndefined: Self = StObject.set(x, "customization_id", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoice(value: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Voice | String): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+    inline def setVoice(value: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Voice | String): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+    inline def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
   }
 }

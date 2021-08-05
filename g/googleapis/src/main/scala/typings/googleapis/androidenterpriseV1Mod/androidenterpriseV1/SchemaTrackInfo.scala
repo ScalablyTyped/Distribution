@@ -24,25 +24,19 @@ trait SchemaTrackInfo extends StObject {
 }
 object SchemaTrackInfo {
   
-  @scala.inline
-  def apply(): SchemaTrackInfo = {
+  inline def apply(): SchemaTrackInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrackInfo]
   }
   
-  @scala.inline
-  implicit class SchemaTrackInfoMutableBuilder[Self <: SchemaTrackInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrackInfo](x: Self) {
     
-    @scala.inline
-    def setTrackAlias(value: String): Self = StObject.set(x, "trackAlias", value.asInstanceOf[js.Any])
+    inline def setTrackAlias(value: String): Self = StObject.set(x, "trackAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackAliasUndefined: Self = StObject.set(x, "trackAlias", js.undefined)
+    inline def setTrackAliasUndefined: Self = StObject.set(x, "trackAlias", js.undefined)
     
-    @scala.inline
-    def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
+    inline def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
+    inline def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
   }
 }

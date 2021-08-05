@@ -29,35 +29,26 @@ trait CIMMarkerPlacementOnVertices
 }
 object CIMMarkerPlacementOnVertices {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementOnVertices = {
+  inline def apply(): CIMMarkerPlacementOnVertices = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementOnVertices")
     __obj.asInstanceOf[CIMMarkerPlacementOnVertices]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementOnVerticesMutableBuilder[Self <: CIMMarkerPlacementOnVertices] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementOnVertices](x: Self) {
     
-    @scala.inline
-    def setPlaceOnControlPoints(value: Boolean): Self = StObject.set(x, "placeOnControlPoints", value.asInstanceOf[js.Any])
+    inline def setPlaceOnControlPoints(value: Boolean): Self = StObject.set(x, "placeOnControlPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceOnControlPointsUndefined: Self = StObject.set(x, "placeOnControlPoints", js.undefined)
+    inline def setPlaceOnControlPointsUndefined: Self = StObject.set(x, "placeOnControlPoints", js.undefined)
     
-    @scala.inline
-    def setPlaceOnEndPoints(value: Boolean): Self = StObject.set(x, "placeOnEndPoints", value.asInstanceOf[js.Any])
+    inline def setPlaceOnEndPoints(value: Boolean): Self = StObject.set(x, "placeOnEndPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceOnEndPointsUndefined: Self = StObject.set(x, "placeOnEndPoints", js.undefined)
+    inline def setPlaceOnEndPointsUndefined: Self = StObject.set(x, "placeOnEndPoints", js.undefined)
     
-    @scala.inline
-    def setPlaceOnRegularVertices(value: Boolean): Self = StObject.set(x, "placeOnRegularVertices", value.asInstanceOf[js.Any])
+    inline def setPlaceOnRegularVertices(value: Boolean): Self = StObject.set(x, "placeOnRegularVertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceOnRegularVerticesUndefined: Self = StObject.set(x, "placeOnRegularVertices", js.undefined)
+    inline def setPlaceOnRegularVerticesUndefined: Self = StObject.set(x, "placeOnRegularVertices", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnVertices): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnVertices): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

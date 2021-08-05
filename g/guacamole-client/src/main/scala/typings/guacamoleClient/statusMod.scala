@@ -175,11 +175,9 @@ object statusMod {
       @js.native
       val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
       
-      @scala.inline
-      def fromHTTPCode(status: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[Code]
+      inline def fromHTTPCode(status: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[Code]
       
-      @scala.inline
-      def fromWebSocketCode(code: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[Code]
+      inline def fromWebSocketCode(code: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[Code]
     }
     
     /* Inlined std.Readonly<{  SUCCESS :0x0000,   UNSUPPORTED :0x0100,   SERVER_ERROR :0x0200,   SERVER_BUSY :0x0201,   UPSTREAM_TIMEOUT :0x0202,   UPSTREAM_ERROR :0x0203,   RESOURCE_NOT_FOUND :0x0204,   RESOURCE_CONFLICT :0x0205,   RESOURCE_CLOSED :0x0206,   UPSTREAM_NOT_FOUND :0x0207,   UPSTREAM_UNAVAILABLE :0x0208,   SESSION_CONFLICT :0x0209,   SESSION_TIMEOUT :0x020a,   SESSION_CLOSED :0x020b,   CLIENT_BAD_REQUEST :0x0300,   CLIENT_UNAUTHORIZED :0x0301,   CLIENT_FORBIDDEN :0x0303,   CLIENT_TIMEOUT :0x0308,   CLIENT_OVERRUN :0x030d,   CLIENT_BAD_TYPE :0x030f,   CLIENT_TOO_MANY :0x031d}> */
@@ -229,77 +227,54 @@ object statusMod {
     }
     object StatusCode {
       
-      @scala.inline
-      def apply(): StatusCode = {
+      inline def apply(): StatusCode = {
         val __obj = js.Dynamic.literal(CLIENT_BAD_REQUEST = 0x0300, CLIENT_BAD_TYPE = 0x030f, CLIENT_FORBIDDEN = 0x0303, CLIENT_OVERRUN = 0x030d, CLIENT_TIMEOUT = 0x0308, CLIENT_TOO_MANY = 0x031d, CLIENT_UNAUTHORIZED = 0x0301, RESOURCE_CLOSED = 0x0206, RESOURCE_CONFLICT = 0x0205, RESOURCE_NOT_FOUND = 0x0204, SERVER_BUSY = 0x0201, SERVER_ERROR = 0x0200, SESSION_CLOSED = 0x020b, SESSION_CONFLICT = 0x0209, SESSION_TIMEOUT = 0x020a, SUCCESS = 0x0000, UNSUPPORTED = 0x0100, UPSTREAM_ERROR = 0x0203, UPSTREAM_NOT_FOUND = 0x0207, UPSTREAM_TIMEOUT = 0x0202, UPSTREAM_UNAVAILABLE = 0x0208)
         __obj.asInstanceOf[StatusCode]
       }
       
-      @scala.inline
-      implicit class StatusCodeMutableBuilder[Self <: StatusCode] (val x: Self) extends AnyVal {
+      extension [Self <: StatusCode](x: Self) {
         
-        @scala.inline
-        def setCLIENT_BAD_REQUEST(value: `0x0300`): Self = StObject.set(x, "CLIENT_BAD_REQUEST", value.asInstanceOf[js.Any])
+        inline def setCLIENT_BAD_REQUEST(value: `0x0300`): Self = StObject.set(x, "CLIENT_BAD_REQUEST", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCLIENT_BAD_TYPE(value: `0x030f`): Self = StObject.set(x, "CLIENT_BAD_TYPE", value.asInstanceOf[js.Any])
+        inline def setCLIENT_BAD_TYPE(value: `0x030f`): Self = StObject.set(x, "CLIENT_BAD_TYPE", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCLIENT_FORBIDDEN(value: `0x0303`): Self = StObject.set(x, "CLIENT_FORBIDDEN", value.asInstanceOf[js.Any])
+        inline def setCLIENT_FORBIDDEN(value: `0x0303`): Self = StObject.set(x, "CLIENT_FORBIDDEN", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCLIENT_OVERRUN(value: `0x030d`): Self = StObject.set(x, "CLIENT_OVERRUN", value.asInstanceOf[js.Any])
+        inline def setCLIENT_OVERRUN(value: `0x030d`): Self = StObject.set(x, "CLIENT_OVERRUN", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCLIENT_TIMEOUT(value: `0x0308`): Self = StObject.set(x, "CLIENT_TIMEOUT", value.asInstanceOf[js.Any])
+        inline def setCLIENT_TIMEOUT(value: `0x0308`): Self = StObject.set(x, "CLIENT_TIMEOUT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCLIENT_TOO_MANY(value: `0x031d`): Self = StObject.set(x, "CLIENT_TOO_MANY", value.asInstanceOf[js.Any])
+        inline def setCLIENT_TOO_MANY(value: `0x031d`): Self = StObject.set(x, "CLIENT_TOO_MANY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCLIENT_UNAUTHORIZED(value: `0x0301`): Self = StObject.set(x, "CLIENT_UNAUTHORIZED", value.asInstanceOf[js.Any])
+        inline def setCLIENT_UNAUTHORIZED(value: `0x0301`): Self = StObject.set(x, "CLIENT_UNAUTHORIZED", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRESOURCE_CLOSED(value: `0x0206`): Self = StObject.set(x, "RESOURCE_CLOSED", value.asInstanceOf[js.Any])
+        inline def setRESOURCE_CLOSED(value: `0x0206`): Self = StObject.set(x, "RESOURCE_CLOSED", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRESOURCE_CONFLICT(value: `0x0205`): Self = StObject.set(x, "RESOURCE_CONFLICT", value.asInstanceOf[js.Any])
+        inline def setRESOURCE_CONFLICT(value: `0x0205`): Self = StObject.set(x, "RESOURCE_CONFLICT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRESOURCE_NOT_FOUND(value: `0x0204`): Self = StObject.set(x, "RESOURCE_NOT_FOUND", value.asInstanceOf[js.Any])
+        inline def setRESOURCE_NOT_FOUND(value: `0x0204`): Self = StObject.set(x, "RESOURCE_NOT_FOUND", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSERVER_BUSY(value: `0x0201`): Self = StObject.set(x, "SERVER_BUSY", value.asInstanceOf[js.Any])
+        inline def setSERVER_BUSY(value: `0x0201`): Self = StObject.set(x, "SERVER_BUSY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSERVER_ERROR(value: `0x0200`): Self = StObject.set(x, "SERVER_ERROR", value.asInstanceOf[js.Any])
+        inline def setSERVER_ERROR(value: `0x0200`): Self = StObject.set(x, "SERVER_ERROR", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSESSION_CLOSED(value: `0x020b`): Self = StObject.set(x, "SESSION_CLOSED", value.asInstanceOf[js.Any])
+        inline def setSESSION_CLOSED(value: `0x020b`): Self = StObject.set(x, "SESSION_CLOSED", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSESSION_CONFLICT(value: `0x0209`): Self = StObject.set(x, "SESSION_CONFLICT", value.asInstanceOf[js.Any])
+        inline def setSESSION_CONFLICT(value: `0x0209`): Self = StObject.set(x, "SESSION_CONFLICT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSESSION_TIMEOUT(value: `0x020a`): Self = StObject.set(x, "SESSION_TIMEOUT", value.asInstanceOf[js.Any])
+        inline def setSESSION_TIMEOUT(value: `0x020a`): Self = StObject.set(x, "SESSION_TIMEOUT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSUCCESS(value: `0x0000`): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+        inline def setSUCCESS(value: `0x0000`): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUNSUPPORTED(value: `0x0100`): Self = StObject.set(x, "UNSUPPORTED", value.asInstanceOf[js.Any])
+        inline def setUNSUPPORTED(value: `0x0100`): Self = StObject.set(x, "UNSUPPORTED", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUPSTREAM_ERROR(value: `0x0203`): Self = StObject.set(x, "UPSTREAM_ERROR", value.asInstanceOf[js.Any])
+        inline def setUPSTREAM_ERROR(value: `0x0203`): Self = StObject.set(x, "UPSTREAM_ERROR", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUPSTREAM_NOT_FOUND(value: `0x0207`): Self = StObject.set(x, "UPSTREAM_NOT_FOUND", value.asInstanceOf[js.Any])
+        inline def setUPSTREAM_NOT_FOUND(value: `0x0207`): Self = StObject.set(x, "UPSTREAM_NOT_FOUND", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUPSTREAM_TIMEOUT(value: `0x0202`): Self = StObject.set(x, "UPSTREAM_TIMEOUT", value.asInstanceOf[js.Any])
+        inline def setUPSTREAM_TIMEOUT(value: `0x0202`): Self = StObject.set(x, "UPSTREAM_TIMEOUT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUPSTREAM_UNAVAILABLE(value: `0x0208`): Self = StObject.set(x, "UPSTREAM_UNAVAILABLE", value.asInstanceOf[js.Any])
+        inline def setUPSTREAM_UNAVAILABLE(value: `0x0208`): Self = StObject.set(x, "UPSTREAM_UNAVAILABLE", value.asInstanceOf[js.Any])
       }
     }
   }

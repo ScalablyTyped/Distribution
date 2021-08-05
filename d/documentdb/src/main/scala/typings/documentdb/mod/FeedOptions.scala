@@ -19,31 +19,23 @@ trait FeedOptions
 }
 object FeedOptions {
   
-  @scala.inline
-  def apply(): FeedOptions = {
+  inline def apply(): FeedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeedOptions]
   }
   
-  @scala.inline
-  implicit class FeedOptionsMutableBuilder[Self <: FeedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FeedOptions](x: Self) {
     
-    @scala.inline
-    def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
+    inline def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
+    inline def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
     
-    @scala.inline
-    def setEnableScanInQuery(value: Boolean): Self = StObject.set(x, "enableScanInQuery", value.asInstanceOf[js.Any])
+    inline def setEnableScanInQuery(value: Boolean): Self = StObject.set(x, "enableScanInQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableScanInQueryUndefined: Self = StObject.set(x, "enableScanInQuery", js.undefined)
+    inline def setEnableScanInQueryUndefined: Self = StObject.set(x, "enableScanInQuery", js.undefined)
     
-    @scala.inline
-    def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
+    inline def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
+    inline def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
   }
 }

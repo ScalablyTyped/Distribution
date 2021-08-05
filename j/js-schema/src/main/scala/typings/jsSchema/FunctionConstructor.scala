@@ -10,16 +10,13 @@ trait FunctionConstructor extends StObject {
 }
 object FunctionConstructor {
   
-  @scala.inline
-  def apply(reference: js.Function => FunctionConstructor): FunctionConstructor = {
+  inline def apply(reference: js.Function => FunctionConstructor): FunctionConstructor = {
     val __obj = js.Dynamic.literal(reference = js.Any.fromFunction1(reference))
     __obj.asInstanceOf[FunctionConstructor]
   }
   
-  @scala.inline
-  implicit class FunctionConstructorMutableBuilder[Self <: FunctionConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionConstructor](x: Self) {
     
-    @scala.inline
-    def setReference(value: js.Function => FunctionConstructor): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
+    inline def setReference(value: js.Function => FunctionConstructor): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
   }
 }

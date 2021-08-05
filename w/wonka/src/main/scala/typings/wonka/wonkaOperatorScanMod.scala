@@ -11,6 +11,5 @@ object wonkaOperatorScanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scan[A, B](f: js.Function2[/* acc */ B, /* value */ A, B], acc: B): Operator[A, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(f.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Operator[A, B]]
+  inline def scan[A, B](f: js.Function2[/* acc */ B, /* value */ A, B], acc: B): Operator[A, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(f.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Operator[A, B]]
 }

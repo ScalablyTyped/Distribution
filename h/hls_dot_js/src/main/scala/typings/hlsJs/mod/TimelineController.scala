@@ -16,16 +16,13 @@ trait TimelineController extends StObject {
 }
 object TimelineController {
   
-  @scala.inline
-  def apply(destroy: () => Unit): TimelineController = {
+  inline def apply(destroy: () => Unit): TimelineController = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[TimelineController]
   }
   
-  @scala.inline
-  implicit class TimelineControllerMutableBuilder[Self <: TimelineController] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineController](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

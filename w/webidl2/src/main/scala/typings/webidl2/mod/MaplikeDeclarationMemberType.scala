@@ -18,8 +18,7 @@ trait MaplikeDeclarationMemberType
 }
 object MaplikeDeclarationMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
@@ -31,13 +30,10 @@ object MaplikeDeclarationMemberType {
     __obj.asInstanceOf[MaplikeDeclarationMemberType]
   }
   
-  @scala.inline
-  implicit class MaplikeDeclarationMemberTypeMutableBuilder[Self <: MaplikeDeclarationMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: MaplikeDeclarationMemberType](x: Self) {
     
-    @scala.inline
-    def setIdlType(value: js.Tuple2[IDLTypeDescription, IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: js.Tuple2[IDLTypeDescription, IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: maplike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: maplike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

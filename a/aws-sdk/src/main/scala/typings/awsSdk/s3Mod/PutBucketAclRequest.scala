@@ -58,70 +58,49 @@ trait PutBucketAclRequest extends StObject {
 }
 object PutBucketAclRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): PutBucketAclRequest = {
+  inline def apply(Bucket: BucketName): PutBucketAclRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketAclRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketAclRequestMutableBuilder[Self <: PutBucketAclRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketAclRequest](x: Self) {
     
-    @scala.inline
-    def setACL(value: BucketCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
+    inline def setACL(value: BucketCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACLUndefined: Self = StObject.set(x, "ACL", js.undefined)
+    inline def setACLUndefined: Self = StObject.set(x, "ACL", js.undefined)
     
-    @scala.inline
-    def setAccessControlPolicy(value: AccessControlPolicy): Self = StObject.set(x, "AccessControlPolicy", value.asInstanceOf[js.Any])
+    inline def setAccessControlPolicy(value: AccessControlPolicy): Self = StObject.set(x, "AccessControlPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlPolicyUndefined: Self = StObject.set(x, "AccessControlPolicy", js.undefined)
+    inline def setAccessControlPolicyUndefined: Self = StObject.set(x, "AccessControlPolicy", js.undefined)
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setGrantFullControl(value: GrantFullControl): Self = StObject.set(x, "GrantFullControl", value.asInstanceOf[js.Any])
+    inline def setGrantFullControl(value: GrantFullControl): Self = StObject.set(x, "GrantFullControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantFullControlUndefined: Self = StObject.set(x, "GrantFullControl", js.undefined)
+    inline def setGrantFullControlUndefined: Self = StObject.set(x, "GrantFullControl", js.undefined)
     
-    @scala.inline
-    def setGrantRead(value: GrantRead): Self = StObject.set(x, "GrantRead", value.asInstanceOf[js.Any])
+    inline def setGrantRead(value: GrantRead): Self = StObject.set(x, "GrantRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantReadACP(value: GrantReadACP): Self = StObject.set(x, "GrantReadACP", value.asInstanceOf[js.Any])
+    inline def setGrantReadACP(value: GrantReadACP): Self = StObject.set(x, "GrantReadACP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantReadACPUndefined: Self = StObject.set(x, "GrantReadACP", js.undefined)
+    inline def setGrantReadACPUndefined: Self = StObject.set(x, "GrantReadACP", js.undefined)
     
-    @scala.inline
-    def setGrantReadUndefined: Self = StObject.set(x, "GrantRead", js.undefined)
+    inline def setGrantReadUndefined: Self = StObject.set(x, "GrantRead", js.undefined)
     
-    @scala.inline
-    def setGrantWrite(value: GrantWrite): Self = StObject.set(x, "GrantWrite", value.asInstanceOf[js.Any])
+    inline def setGrantWrite(value: GrantWrite): Self = StObject.set(x, "GrantWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantWriteACP(value: GrantWriteACP): Self = StObject.set(x, "GrantWriteACP", value.asInstanceOf[js.Any])
+    inline def setGrantWriteACP(value: GrantWriteACP): Self = StObject.set(x, "GrantWriteACP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantWriteACPUndefined: Self = StObject.set(x, "GrantWriteACP", js.undefined)
+    inline def setGrantWriteACPUndefined: Self = StObject.set(x, "GrantWriteACP", js.undefined)
     
-    @scala.inline
-    def setGrantWriteUndefined: Self = StObject.set(x, "GrantWrite", js.undefined)
+    inline def setGrantWriteUndefined: Self = StObject.set(x, "GrantWrite", js.undefined)
   }
 }

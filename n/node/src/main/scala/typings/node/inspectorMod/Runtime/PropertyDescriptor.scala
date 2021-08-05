@@ -61,64 +61,45 @@ trait PropertyDescriptor extends StObject {
 }
 object PropertyDescriptor {
   
-  @scala.inline
-  def apply(configurable: Boolean, enumerable: Boolean, name: String): PropertyDescriptor = {
+  inline def apply(configurable: Boolean, enumerable: Boolean, name: String): PropertyDescriptor = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyDescriptor]
   }
   
-  @scala.inline
-  implicit class PropertyDescriptorMutableBuilder[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyDescriptor](x: Self) {
     
-    @scala.inline
-    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+    inline def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: RemoteObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: RemoteObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setIsOwn(value: Boolean): Self = StObject.set(x, "isOwn", value.asInstanceOf[js.Any])
+    inline def setIsOwn(value: Boolean): Self = StObject.set(x, "isOwn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOwnUndefined: Self = StObject.set(x, "isOwn", js.undefined)
+    inline def setIsOwnUndefined: Self = StObject.set(x, "isOwn", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: RemoteObject): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: RemoteObject): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: RemoteObject): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: RemoteObject): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setWasThrown(value: Boolean): Self = StObject.set(x, "wasThrown", value.asInstanceOf[js.Any])
+    inline def setWasThrown(value: Boolean): Self = StObject.set(x, "wasThrown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasThrownUndefined: Self = StObject.set(x, "wasThrown", js.undefined)
+    inline def setWasThrownUndefined: Self = StObject.set(x, "wasThrown", js.undefined)
     
-    @scala.inline
-    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

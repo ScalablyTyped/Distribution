@@ -18,8 +18,7 @@ trait ASPxClientCloudControl
 }
 object ASPxClientCloudControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -41,10 +40,8 @@ object ASPxClientCloudControl {
     __obj.asInstanceOf[ASPxClientCloudControl]
   }
   
-  @scala.inline
-  implicit class ASPxClientCloudControlMutableBuilder[Self <: ASPxClientCloudControl] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCloudControl](x: Self) {
     
-    @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientCloudControlItemEventHandler[ASPxClientCloudControl]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
+    inline def setItemClick(value: ASPxClientEvent[ASPxClientCloudControlItemEventHandler[ASPxClientCloudControl]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
   }
 }

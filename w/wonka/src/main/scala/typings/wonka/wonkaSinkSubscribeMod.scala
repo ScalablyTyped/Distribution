@@ -12,9 +12,7 @@ object wonkaSinkSubscribeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forEach[A](f: js.Function1[/* x */ A, Unit]): js.Function1[/* source */ Source[A], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* source */ Source[A], Unit]]
+  inline def forEach[A](f: js.Function1[/* x */ A, Unit]): js.Function1[/* source */ Source[A], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* source */ Source[A], Unit]]
   
-  @scala.inline
-  def subscribe[A](f: js.Function1[/* x */ A, Unit]): js.Function1[/* source */ Source[A], Subscription] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* source */ Source[A], Subscription]]
+  inline def subscribe[A](f: js.Function1[/* x */ A, Unit]): js.Function1[/* source */ Source[A], Subscription] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* source */ Source[A], Subscription]]
 }

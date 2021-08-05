@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceManagementPartnerAppType extends StObject
 object DeviceManagementPartnerAppType {
   
-  @scala.inline
-  def multiTenantApp: typings.microsoftGraph.microsoftGraphStrings.multiTenantApp = "multiTenantApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.multiTenantApp]
+  inline def multiTenantApp: typings.microsoftGraph.microsoftGraphStrings.multiTenantApp = "multiTenantApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.multiTenantApp]
   
-  @scala.inline
-  def singleTenantApp: typings.microsoftGraph.microsoftGraphStrings.singleTenantApp = "singleTenantApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.singleTenantApp]
+  inline def singleTenantApp: typings.microsoftGraph.microsoftGraphStrings.singleTenantApp = "singleTenantApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.singleTenantApp]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

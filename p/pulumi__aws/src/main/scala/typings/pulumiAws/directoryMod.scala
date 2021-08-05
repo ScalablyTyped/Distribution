@@ -118,21 +118,16 @@ object directoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Directory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DirectoryState): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Directory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    inline def get(name: String, id: Input[ID]): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    inline def get(name: String, id: Input[ID], state: DirectoryState): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Directory]
+    inline def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Directory]
     
     /**
       * Returns true if the given object is an instance of Directory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ Boolean]
   }
   
   trait DirectoryArgs extends StObject {
@@ -199,80 +194,56 @@ object directoryMod {
   }
   object DirectoryArgs {
     
-    @scala.inline
-    def apply(name: Input[String], password: Input[String]): DirectoryArgs = {
+    inline def apply(name: Input[String], password: Input[String]): DirectoryArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectoryArgs]
     }
     
-    @scala.inline
-    implicit class DirectoryArgsMutableBuilder[Self <: DirectoryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryArgs](x: Self) {
       
-      @scala.inline
-      def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setConnectSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]): Self = StObject.set(x, "connectSettings", value.asInstanceOf[js.Any])
+      inline def setConnectSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]): Self = StObject.set(x, "connectSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectSettingsUndefined: Self = StObject.set(x, "connectSettings", js.undefined)
+      inline def setConnectSettingsUndefined: Self = StObject.set(x, "connectSettings", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEdition(value: Input[String]): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+      inline def setEdition(value: Input[String]): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
+      inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
       
-      @scala.inline
-      def setEnableSso(value: Input[Boolean]): Self = StObject.set(x, "enableSso", value.asInstanceOf[js.Any])
+      inline def setEnableSso(value: Input[Boolean]): Self = StObject.set(x, "enableSso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSsoUndefined: Self = StObject.set(x, "enableSso", js.undefined)
+      inline def setEnableSsoUndefined: Self = StObject.set(x, "enableSso", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
-      @scala.inline
-      def setSize(value: Input[String]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Input[String]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVpcSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]): Self = StObject.set(x, "vpcSettings", value.asInstanceOf[js.Any])
+      inline def setVpcSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]): Self = StObject.set(x, "vpcSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSettingsUndefined: Self = StObject.set(x, "vpcSettings", js.undefined)
+      inline def setVpcSettingsUndefined: Self = StObject.set(x, "vpcSettings", js.undefined)
     }
   }
   
@@ -355,107 +326,74 @@ object directoryMod {
   }
   object DirectoryState {
     
-    @scala.inline
-    def apply(): DirectoryState = {
+    inline def apply(): DirectoryState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectoryState]
     }
     
-    @scala.inline
-    implicit class DirectoryStateMutableBuilder[Self <: DirectoryState] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryState](x: Self) {
       
-      @scala.inline
-      def setAccessUrl(value: Input[String]): Self = StObject.set(x, "accessUrl", value.asInstanceOf[js.Any])
+      inline def setAccessUrl(value: Input[String]): Self = StObject.set(x, "accessUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessUrlUndefined: Self = StObject.set(x, "accessUrl", js.undefined)
+      inline def setAccessUrlUndefined: Self = StObject.set(x, "accessUrl", js.undefined)
       
-      @scala.inline
-      def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setConnectSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]): Self = StObject.set(x, "connectSettings", value.asInstanceOf[js.Any])
+      inline def setConnectSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryConnectSettings]): Self = StObject.set(x, "connectSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectSettingsUndefined: Self = StObject.set(x, "connectSettings", js.undefined)
+      inline def setConnectSettingsUndefined: Self = StObject.set(x, "connectSettings", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDnsIpAddresses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIpAddresses", value.asInstanceOf[js.Any])
+      inline def setDnsIpAddresses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIpAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIpAddressesUndefined: Self = StObject.set(x, "dnsIpAddresses", js.undefined)
+      inline def setDnsIpAddressesUndefined: Self = StObject.set(x, "dnsIpAddresses", js.undefined)
       
-      @scala.inline
-      def setDnsIpAddressesVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIpAddresses", js.Array(value :_*))
+      inline def setDnsIpAddressesVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIpAddresses", js.Array(value :_*))
       
-      @scala.inline
-      def setEdition(value: Input[String]): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+      inline def setEdition(value: Input[String]): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
+      inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
       
-      @scala.inline
-      def setEnableSso(value: Input[Boolean]): Self = StObject.set(x, "enableSso", value.asInstanceOf[js.Any])
+      inline def setEnableSso(value: Input[Boolean]): Self = StObject.set(x, "enableSso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSsoUndefined: Self = StObject.set(x, "enableSso", js.undefined)
+      inline def setEnableSsoUndefined: Self = StObject.set(x, "enableSso", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
+      inline def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
       
-      @scala.inline
-      def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
-      @scala.inline
-      def setSize(value: Input[String]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Input[String]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVpcSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]): Self = StObject.set(x, "vpcSettings", value.asInstanceOf[js.Any])
+      inline def setVpcSettings(value: Input[typings.pulumiAws.inputMod.directoryservice.DirectoryVpcSettings]): Self = StObject.set(x, "vpcSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSettingsUndefined: Self = StObject.set(x, "vpcSettings", js.undefined)
+      inline def setVpcSettingsUndefined: Self = StObject.set(x, "vpcSettings", js.undefined)
     }
   }
 }

@@ -12,16 +12,13 @@ trait PluginRemoveMetadata
 }
 object PluginRemoveMetadata {
   
-  @scala.inline
-  def apply(removeMetadata: Boolean | js.Object): PluginRemoveMetadata = {
+  inline def apply(removeMetadata: Boolean | js.Object): PluginRemoveMetadata = {
     val __obj = js.Dynamic.literal(removeMetadata = removeMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveMetadata]
   }
   
-  @scala.inline
-  implicit class PluginRemoveMetadataMutableBuilder[Self <: PluginRemoveMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveMetadata](x: Self) {
     
-    @scala.inline
-    def setRemoveMetadata(value: Boolean | js.Object): Self = StObject.set(x, "removeMetadata", value.asInstanceOf[js.Any])
+    inline def setRemoveMetadata(value: Boolean | js.Object): Self = StObject.set(x, "removeMetadata", value.asInstanceOf[js.Any])
   }
 }

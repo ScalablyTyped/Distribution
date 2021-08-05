@@ -36,68 +36,48 @@ object anon {
   }
   object Partiali18nAPI {
     
-    @scala.inline
-    def apply(): Partiali18nAPI = {
+    inline def apply(): Partiali18nAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Partiali18nAPI]
     }
     
-    @scala.inline
-    implicit class Partiali18nAPIMutableBuilder[Self <: Partiali18nAPI] (val x: Self) extends AnyVal {
+    extension [Self <: Partiali18nAPI](x: Self) {
       
-      @scala.inline
-      def setGetCatalog(value: () => GlobalCatalog): Self = StObject.set(x, "getCatalog", js.Any.fromFunction0(value))
+      inline def setGetCatalog(value: () => GlobalCatalog): Self = StObject.set(x, "getCatalog", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCatalogUndefined: Self = StObject.set(x, "getCatalog", js.undefined)
+      inline def setGetCatalogUndefined: Self = StObject.set(x, "getCatalog", js.undefined)
       
-      @scala.inline
-      def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+      inline def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLocaleUndefined: Self = StObject.set(x, "getLocale", js.undefined)
+      inline def setGetLocaleUndefined: Self = StObject.set(x, "getLocale", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setSetLocale(value: /* locale */ String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+      inline def setSetLocale(value: /* locale */ String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLocaleUndefined: Self = StObject.set(x, "setLocale", js.undefined)
+      inline def setSetLocaleUndefined: Self = StObject.set(x, "setLocale", js.undefined)
       
-      @scala.inline
-      def set__(value: (/* phraseOrOptions */ String | TranslateOptions, /* repeated */ String) => String): Self = StObject.set(x, "__", js.Any.fromFunction2(value))
+      inline def set__(value: (/* phraseOrOptions */ String | TranslateOptions, /* repeated */ String) => String): Self = StObject.set(x, "__", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__Undefined: Self = StObject.set(x, "__", js.undefined)
+      inline def set__Undefined: Self = StObject.set(x, "__", js.undefined)
       
-      @scala.inline
-      def set__h(value: /* phrase */ String => js.Array[HashedList]): Self = StObject.set(x, "__h", js.Any.fromFunction1(value))
+      inline def set__h(value: /* phrase */ String => js.Array[HashedList]): Self = StObject.set(x, "__h", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__hUndefined: Self = StObject.set(x, "__h", js.undefined)
+      inline def set__hUndefined: Self = StObject.set(x, "__h", js.undefined)
       
-      @scala.inline
-      def set__l(value: /* phrase */ String => js.Array[String]): Self = StObject.set(x, "__l", js.Any.fromFunction1(value))
+      inline def set__l(value: /* phrase */ String => js.Array[String]): Self = StObject.set(x, "__l", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__lUndefined: Self = StObject.set(x, "__l", js.undefined)
+      inline def set__lUndefined: Self = StObject.set(x, "__l", js.undefined)
       
-      @scala.inline
-      def set__mf(value: (/* phraseOrOptions */ String | TranslateOptions, /* repeated */ js.Any) => String): Self = StObject.set(x, "__mf", js.Any.fromFunction2(value))
+      inline def set__mf(value: (/* phraseOrOptions */ String | TranslateOptions, /* repeated */ js.Any) => String): Self = StObject.set(x, "__mf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__mfUndefined: Self = StObject.set(x, "__mf", js.undefined)
+      inline def set__mfUndefined: Self = StObject.set(x, "__mf", js.undefined)
       
-      @scala.inline
-      def set__n(value: (/* phrase */ String, /* count */ Double) => String): Self = StObject.set(x, "__n", js.Any.fromFunction2(value))
+      inline def set__n(value: (/* phrase */ String, /* count */ Double) => String): Self = StObject.set(x, "__n", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__nUndefined: Self = StObject.set(x, "__n", js.undefined)
+      inline def set__nUndefined: Self = StObject.set(x, "__n", js.undefined)
     }
   }
 }

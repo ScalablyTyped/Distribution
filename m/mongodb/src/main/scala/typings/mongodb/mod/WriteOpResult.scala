@@ -14,25 +14,19 @@ trait WriteOpResult extends StObject {
 }
 object WriteOpResult {
   
-  @scala.inline
-  def apply(connection: js.Any, ops: js.Array[js.Any], result: js.Any): WriteOpResult = {
+  inline def apply(connection: js.Any, ops: js.Array[js.Any], result: js.Any): WriteOpResult = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOpResult]
   }
   
-  @scala.inline
-  implicit class WriteOpResultMutableBuilder[Self <: WriteOpResult] (val x: Self) extends AnyVal {
+  extension [Self <: WriteOpResult](x: Self) {
     
-    @scala.inline
-    def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(value: js.Array[js.Any]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: js.Array[js.Any]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsVarargs(value: js.Any*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: js.Any*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

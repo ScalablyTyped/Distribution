@@ -13,8 +13,7 @@ object mirrorPadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mirrorPad(args: AttrsMirrorPadAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def mirrorPad(args: AttrsMirrorPadAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MirrorPad", "mirrorPadConfig")
   @js.native

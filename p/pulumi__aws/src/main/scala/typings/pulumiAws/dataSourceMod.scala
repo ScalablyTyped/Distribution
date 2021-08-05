@@ -94,21 +94,16 @@ object dataSourceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DataSource]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataSource]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DataSourceState): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DataSource]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DataSourceState, opts: CustomResourceOptions): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    inline def get(name: String, id: Input[ID]): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    inline def get(name: String, id: Input[ID], state: DataSourceState): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    inline def get(name: String, id: Input[ID], state: DataSourceState, opts: CustomResourceOptions): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataSource]
     
     /**
       * Returns true if the given object is an instance of DataSource.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean]
   }
   
   trait DataSourceArgs extends StObject {
@@ -160,63 +155,45 @@ object dataSourceMod {
   }
   object DataSourceArgs {
     
-    @scala.inline
-    def apply(apiId: Input[String], `type`: Input[String]): DataSourceArgs = {
+    inline def apply(apiId: Input[String], `type`: Input[String]): DataSourceArgs = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSourceArgs]
     }
     
-    @scala.inline
-    implicit class DataSourceArgsMutableBuilder[Self <: DataSourceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DataSourceArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDynamodbConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
+      inline def setDynamodbConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
+      inline def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
       
-      @scala.inline
-      def setElasticsearchConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
+      inline def setElasticsearchConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
+      inline def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
       
-      @scala.inline
-      def setHttpConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
+      inline def setHttpConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
+      inline def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
       
-      @scala.inline
-      def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
+      inline def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
+      inline def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
+      inline def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,74 +251,52 @@ object dataSourceMod {
   }
   object DataSourceState {
     
-    @scala.inline
-    def apply(): DataSourceState = {
+    inline def apply(): DataSourceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataSourceState]
     }
     
-    @scala.inline
-    implicit class DataSourceStateMutableBuilder[Self <: DataSourceState] (val x: Self) extends AnyVal {
+    extension [Self <: DataSourceState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDynamodbConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
+      inline def setDynamodbConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
+      inline def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
       
-      @scala.inline
-      def setElasticsearchConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
+      inline def setElasticsearchConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
+      inline def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
       
-      @scala.inline
-      def setHttpConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
+      inline def setHttpConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
+      inline def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
       
-      @scala.inline
-      def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
+      inline def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
+      inline def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
+      inline def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

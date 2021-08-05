@@ -96,172 +96,117 @@ trait DocumentViewParams extends StObject {
 }
 object DocumentViewParams {
   
-  @scala.inline
-  def apply(): DocumentViewParams = {
+  inline def apply(): DocumentViewParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentViewParams]
   }
   
-  @scala.inline
-  implicit class DocumentViewParamsMutableBuilder[Self <: DocumentViewParams] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentViewParams](x: Self) {
     
-    @scala.inline
-    def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
+    inline def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtt_encoding_infoUndefined: Self = StObject.set(x, "att_encoding_info", js.undefined)
+    inline def setAtt_encoding_infoUndefined: Self = StObject.set(x, "att_encoding_info", js.undefined)
     
-    @scala.inline
-    def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
+    inline def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
+    inline def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
-    @scala.inline
-    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
+    inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
-    @scala.inline
-    def setEnd_key(value: js.Any): Self = StObject.set(x, "end_key", value.asInstanceOf[js.Any])
+    inline def setEnd_key(value: js.Any): Self = StObject.set(x, "end_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_keyUndefined: Self = StObject.set(x, "end_key", js.undefined)
+    inline def setEnd_keyUndefined: Self = StObject.set(x, "end_key", js.undefined)
     
-    @scala.inline
-    def setEnd_key_doc_id(value: String): Self = StObject.set(x, "end_key_doc_id", value.asInstanceOf[js.Any])
+    inline def setEnd_key_doc_id(value: String): Self = StObject.set(x, "end_key_doc_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_key_doc_idUndefined: Self = StObject.set(x, "end_key_doc_id", js.undefined)
+    inline def setEnd_key_doc_idUndefined: Self = StObject.set(x, "end_key_doc_id", js.undefined)
     
-    @scala.inline
-    def setEndkey(value: js.Any): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
+    inline def setEndkey(value: js.Any): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
+    inline def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
     
-    @scala.inline
-    def setEndkey_docid(value: String): Self = StObject.set(x, "endkey_docid", value.asInstanceOf[js.Any])
+    inline def setEndkey_docid(value: String): Self = StObject.set(x, "endkey_docid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndkey_docidUndefined: Self = StObject.set(x, "endkey_docid", js.undefined)
+    inline def setEndkey_docidUndefined: Self = StObject.set(x, "endkey_docid", js.undefined)
     
-    @scala.inline
-    def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setGroup_level(value: Double): Self = StObject.set(x, "group_level", value.asInstanceOf[js.Any])
+    inline def setGroup_level(value: Double): Self = StObject.set(x, "group_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup_levelUndefined: Self = StObject.set(x, "group_level", js.undefined)
+    inline def setGroup_levelUndefined: Self = StObject.set(x, "group_level", js.undefined)
     
-    @scala.inline
-    def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
+    inline def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
+    inline def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
     
-    @scala.inline
-    def setInclusive_end(value: Boolean): Self = StObject.set(x, "inclusive_end", value.asInstanceOf[js.Any])
+    inline def setInclusive_end(value: Boolean): Self = StObject.set(x, "inclusive_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusive_endUndefined: Self = StObject.set(x, "inclusive_end", js.undefined)
+    inline def setInclusive_endUndefined: Self = StObject.set(x, "inclusive_end", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setReduce(value: Boolean): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
+    inline def setReduce(value: Boolean): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
+    inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+    inline def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
+    inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
     
-    @scala.inline
-    def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
+    inline def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
+    inline def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
     
-    @scala.inline
-    def setStale(value: String): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    inline def setStale(value: String): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+    inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
-    @scala.inline
-    def setStart_key(value: js.Any): Self = StObject.set(x, "start_key", value.asInstanceOf[js.Any])
+    inline def setStart_key(value: js.Any): Self = StObject.set(x, "start_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_keyUndefined: Self = StObject.set(x, "start_key", js.undefined)
+    inline def setStart_keyUndefined: Self = StObject.set(x, "start_key", js.undefined)
     
-    @scala.inline
-    def setStart_key_doc_id(value: String): Self = StObject.set(x, "start_key_doc_id", value.asInstanceOf[js.Any])
+    inline def setStart_key_doc_id(value: String): Self = StObject.set(x, "start_key_doc_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_key_doc_idUndefined: Self = StObject.set(x, "start_key_doc_id", js.undefined)
+    inline def setStart_key_doc_idUndefined: Self = StObject.set(x, "start_key_doc_id", js.undefined)
     
-    @scala.inline
-    def setStartkey(value: js.Any): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
+    inline def setStartkey(value: js.Any): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
+    inline def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
     
-    @scala.inline
-    def setStartkey_docid(value: String): Self = StObject.set(x, "startkey_docid", value.asInstanceOf[js.Any])
+    inline def setStartkey_docid(value: String): Self = StObject.set(x, "startkey_docid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartkey_docidUndefined: Self = StObject.set(x, "startkey_docid", js.undefined)
+    inline def setStartkey_docidUndefined: Self = StObject.set(x, "startkey_docid", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUpdate_seq(value: Boolean): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
+    inline def setUpdate_seq(value: Boolean): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
+    inline def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
   }
 }

@@ -19,22 +19,22 @@ object debugPanelViewMod {
   trait DebugPanelView
     extends typings.playable.viewMod.default[IDebugPanelViewStyles] {
     
-    @JSName("_$closeButton")
+    /* private */ @JSName("_$closeButton")
     var _$closeButton: js.Any = js.native
     
-    @JSName("_$infoContainer")
+    /* private */ @JSName("_$infoContainer")
     var _$infoContainer: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     def destroy(): Unit = js.native
     

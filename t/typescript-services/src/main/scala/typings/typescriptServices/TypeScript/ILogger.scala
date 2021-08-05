@@ -20,8 +20,7 @@ trait ILogger extends StObject {
 }
 object ILogger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: () => Boolean,
     error: () => Boolean,
     fatal: () => Boolean,
@@ -33,25 +32,18 @@ object ILogger {
     __obj.asInstanceOf[ILogger]
   }
   
-  @scala.inline
-  implicit class ILoggerMutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
+  extension [Self <: ILogger](x: Self) {
     
-    @scala.inline
-    def setDebug(value: () => Boolean): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
+    inline def setDebug(value: () => Boolean): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: () => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+    inline def setError(value: () => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFatal(value: () => Boolean): Self = StObject.set(x, "fatal", js.Any.fromFunction0(value))
+    inline def setFatal(value: () => Boolean): Self = StObject.set(x, "fatal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInformation(value: () => Boolean): Self = StObject.set(x, "information", js.Any.fromFunction0(value))
+    inline def setInformation(value: () => Boolean): Self = StObject.set(x, "information", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarning(value: () => Boolean): Self = StObject.set(x, "warning", js.Any.fromFunction0(value))
+    inline def setWarning(value: () => Boolean): Self = StObject.set(x, "warning", js.Any.fromFunction0(value))
   }
 }

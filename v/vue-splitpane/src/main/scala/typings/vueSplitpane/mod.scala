@@ -26,20 +26,16 @@ object mod extends Shortcut {
   }
   object SplitpaneComputed {
     
-    @scala.inline
-    def apply(cursor: () => String, userSelect: () => String): SplitpaneComputed = {
+    inline def apply(cursor: () => String, userSelect: () => String): SplitpaneComputed = {
       val __obj = js.Dynamic.literal(cursor = js.Any.fromFunction0(cursor), userSelect = js.Any.fromFunction0(userSelect))
       __obj.asInstanceOf[SplitpaneComputed]
     }
     
-    @scala.inline
-    implicit class SplitpaneComputedMutableBuilder[Self <: SplitpaneComputed] (val x: Self) extends AnyVal {
+    extension [Self <: SplitpaneComputed](x: Self) {
       
-      @scala.inline
-      def setCursor(value: () => String): Self = StObject.set(x, "cursor", js.Any.fromFunction0(value))
+      inline def setCursor(value: () => String): Self = StObject.set(x, "cursor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUserSelect(value: () => String): Self = StObject.set(x, "userSelect", js.Any.fromFunction0(value))
+      inline def setUserSelect(value: () => String): Self = StObject.set(x, "userSelect", js.Any.fromFunction0(value))
     }
   }
   
@@ -76,8 +72,7 @@ object mod extends Shortcut {
   }
   object SplitpaneData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       hasMoved: Boolean,
       height: js.Any,
@@ -90,26 +85,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneData]
     }
     
-    @scala.inline
-    implicit class SplitpaneDataMutableBuilder[Self <: SplitpaneData] (val x: Self) extends AnyVal {
+    extension [Self <: SplitpaneData](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoved(value: Boolean): Self = StObject.set(x, "hasMoved", value.asInstanceOf[js.Any])
+      inline def setHasMoved(value: Boolean): Self = StObject.set(x, "hasMoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeType(value: String): Self = StObject.set(x, "resizeType", value.asInstanceOf[js.Any])
+      inline def setResizeType(value: String): Self = StObject.set(x, "resizeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,26 +113,20 @@ object mod extends Shortcut {
   }
   object SplitpaneMethods {
     
-    @scala.inline
-    def apply(onClick: () => Unit, onMouseDown: () => Unit, onMouseMove: Event => Unit, onMouseUp: () => Unit): SplitpaneMethods = {
+    inline def apply(onClick: () => Unit, onMouseDown: () => Unit, onMouseMove: Event => Unit, onMouseUp: () => Unit): SplitpaneMethods = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), onMouseDown = js.Any.fromFunction0(onMouseDown), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseUp = js.Any.fromFunction0(onMouseUp))
       __obj.asInstanceOf[SplitpaneMethods]
     }
     
-    @scala.inline
-    implicit class SplitpaneMethodsMutableBuilder[Self <: SplitpaneMethods] (val x: Self) extends AnyVal {
+    extension [Self <: SplitpaneMethods](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMouseDown(value: () => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction0(value))
+      inline def setOnMouseDown(value: () => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMouseMove(value: Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUp(value: () => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction0(value))
+      inline def setOnMouseUp(value: () => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction0(value))
     }
   }
   
@@ -161,26 +143,20 @@ object mod extends Shortcut {
   }
   object SplitpaneProps {
     
-    @scala.inline
-    def apply(className: String, defaultPercent: Double, minPercent: Double, split: String): SplitpaneProps = {
+    inline def apply(className: String, defaultPercent: Double, minPercent: Double, split: String): SplitpaneProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], defaultPercent = defaultPercent.asInstanceOf[js.Any], minPercent = minPercent.asInstanceOf[js.Any], split = split.asInstanceOf[js.Any])
       __obj.asInstanceOf[SplitpaneProps]
     }
     
-    @scala.inline
-    implicit class SplitpanePropsMutableBuilder[Self <: SplitpaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: SplitpaneProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPercent(value: Double): Self = StObject.set(x, "defaultPercent", value.asInstanceOf[js.Any])
+      inline def setDefaultPercent(value: Double): Self = StObject.set(x, "defaultPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPercent(value: Double): Self = StObject.set(x, "minPercent", value.asInstanceOf[js.Any])
+      inline def setMinPercent(value: Double): Self = StObject.set(x, "minPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplit(value: String): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: String): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,17 +166,14 @@ object mod extends Shortcut {
   }
   object SplitpaneWatch {
     
-    @scala.inline
-    def apply(defaultPercent: js.Any => Unit): SplitpaneWatch = {
+    inline def apply(defaultPercent: js.Any => Unit): SplitpaneWatch = {
       val __obj = js.Dynamic.literal(defaultPercent = js.Any.fromFunction1(defaultPercent))
       __obj.asInstanceOf[SplitpaneWatch]
     }
     
-    @scala.inline
-    implicit class SplitpaneWatchMutableBuilder[Self <: SplitpaneWatch] (val x: Self) extends AnyVal {
+    extension [Self <: SplitpaneWatch](x: Self) {
       
-      @scala.inline
-      def setDefaultPercent(value: js.Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
+      inline def setDefaultPercent(value: js.Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
     }
   }
   

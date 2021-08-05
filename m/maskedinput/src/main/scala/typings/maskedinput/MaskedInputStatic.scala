@@ -14,8 +14,7 @@ trait MaskedInputStatic extends StObject {
 }
 object MaskedInputStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaults: MaskedInputDefaults,
     format: (String, MaskedInputStaticDefaults) => Boolean,
     isValid: (String, MaskedInputStaticDefaults) => Boolean
@@ -24,16 +23,12 @@ object MaskedInputStatic {
     __obj.asInstanceOf[MaskedInputStatic]
   }
   
-  @scala.inline
-  implicit class MaskedInputStaticMutableBuilder[Self <: MaskedInputStatic] (val x: Self) extends AnyVal {
+  extension [Self <: MaskedInputStatic](x: Self) {
     
-    @scala.inline
-    def setDefaults(value: MaskedInputDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: MaskedInputDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: (String, MaskedInputStaticDefaults) => Boolean): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (String, MaskedInputStaticDefaults) => Boolean): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsValid(value: (String, MaskedInputStaticDefaults) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
+    inline def setIsValid(value: (String, MaskedInputStaticDefaults) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
   }
 }

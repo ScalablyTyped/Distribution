@@ -28,25 +28,19 @@ trait CommentReaction extends StObject {
 }
 object CommentReaction {
   
-  @scala.inline
-  def apply(authorHasReacted: Boolean, count: Double, iconPath: String | Uri, label: String): CommentReaction = {
+  inline def apply(authorHasReacted: Boolean, count: Double, iconPath: String | Uri, label: String): CommentReaction = {
     val __obj = js.Dynamic.literal(authorHasReacted = authorHasReacted.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], iconPath = iconPath.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReaction]
   }
   
-  @scala.inline
-  implicit class CommentReactionMutableBuilder[Self <: CommentReaction] (val x: Self) extends AnyVal {
+  extension [Self <: CommentReaction](x: Self) {
     
-    @scala.inline
-    def setAuthorHasReacted(value: Boolean): Self = StObject.set(x, "authorHasReacted", value.asInstanceOf[js.Any])
+    inline def setAuthorHasReacted(value: Boolean): Self = StObject.set(x, "authorHasReacted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPath(value: String | Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: String | Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

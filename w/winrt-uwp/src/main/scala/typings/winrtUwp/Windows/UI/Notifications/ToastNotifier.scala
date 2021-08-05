@@ -43,8 +43,7 @@ trait ToastNotifier extends StObject {
 }
 object ToastNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToSchedule: ScheduledToastNotification => Unit,
     getScheduledToastNotifications: () => IVectorView[ScheduledToastNotification],
     hide: ToastNotification => Unit,
@@ -56,25 +55,18 @@ object ToastNotifier {
     __obj.asInstanceOf[ToastNotifier]
   }
   
-  @scala.inline
-  implicit class ToastNotifierMutableBuilder[Self <: ToastNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: ToastNotifier](x: Self) {
     
-    @scala.inline
-    def setAddToSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "addToSchedule", js.Any.fromFunction1(value))
+    inline def setAddToSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "addToSchedule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScheduledToastNotifications(value: () => IVectorView[ScheduledToastNotification]): Self = StObject.set(x, "getScheduledToastNotifications", js.Any.fromFunction0(value))
+    inline def setGetScheduledToastNotifications(value: () => IVectorView[ScheduledToastNotification]): Self = StObject.set(x, "getScheduledToastNotifications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: ToastNotification => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: ToastNotification => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveFromSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "removeFromSchedule", js.Any.fromFunction1(value))
+    inline def setRemoveFromSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "removeFromSchedule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetting(value: NotificationSetting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: NotificationSetting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: ToastNotification => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: ToastNotification => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

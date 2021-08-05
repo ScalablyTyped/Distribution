@@ -14,20 +14,16 @@ object anon {
   }
   object Expressive {
     
-    @scala.inline
-    def apply(expressive: String, productive: String): Expressive = {
+    inline def apply(expressive: String, productive: String): Expressive = {
       val __obj = js.Dynamic.literal(expressive = expressive.asInstanceOf[js.Any], productive = productive.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expressive]
     }
     
-    @scala.inline
-    implicit class ExpressiveMutableBuilder[Self <: Expressive] (val x: Self) extends AnyVal {
+    extension [Self <: Expressive](x: Self) {
       
-      @scala.inline
-      def setExpressive(value: String): Self = StObject.set(x, "expressive", value.asInstanceOf[js.Any])
+      inline def setExpressive(value: String): Self = StObject.set(x, "expressive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductive(value: String): Self = StObject.set(x, "productive", value.asInstanceOf[js.Any])
+      inline def setProductive(value: String): Self = StObject.set(x, "productive", value.asInstanceOf[js.Any])
     }
   }
 }

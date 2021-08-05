@@ -43,55 +43,39 @@ trait CreateCsvClassifierRequest extends StObject {
 }
 object CreateCsvClassifierRequest {
   
-  @scala.inline
-  def apply(Name: NameString): CreateCsvClassifierRequest = {
+  inline def apply(Name: NameString): CreateCsvClassifierRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCsvClassifierRequest]
   }
   
-  @scala.inline
-  implicit class CreateCsvClassifierRequestMutableBuilder[Self <: CreateCsvClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCsvClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setAllowSingleColumn(value: NullableBoolean): Self = StObject.set(x, "AllowSingleColumn", value.asInstanceOf[js.Any])
+    inline def setAllowSingleColumn(value: NullableBoolean): Self = StObject.set(x, "AllowSingleColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSingleColumnUndefined: Self = StObject.set(x, "AllowSingleColumn", js.undefined)
+    inline def setAllowSingleColumnUndefined: Self = StObject.set(x, "AllowSingleColumn", js.undefined)
     
-    @scala.inline
-    def setContainsHeader(value: CsvHeaderOption): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
+    inline def setContainsHeader(value: CsvHeaderOption): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
+    inline def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: CsvColumnDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: CsvColumnDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
-    @scala.inline
-    def setDisableValueTrimming(value: NullableBoolean): Self = StObject.set(x, "DisableValueTrimming", value.asInstanceOf[js.Any])
+    inline def setDisableValueTrimming(value: NullableBoolean): Self = StObject.set(x, "DisableValueTrimming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableValueTrimmingUndefined: Self = StObject.set(x, "DisableValueTrimming", js.undefined)
+    inline def setDisableValueTrimmingUndefined: Self = StObject.set(x, "DisableValueTrimming", js.undefined)
     
-    @scala.inline
-    def setHeader(value: CsvHeader): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: CsvHeader): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
-    @scala.inline
-    def setHeaderVarargs(value: NameString*): Self = StObject.set(x, "Header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: NameString*): Self = StObject.set(x, "Header", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteSymbol(value: CsvQuoteSymbol): Self = StObject.set(x, "QuoteSymbol", value.asInstanceOf[js.Any])
+    inline def setQuoteSymbol(value: CsvQuoteSymbol): Self = StObject.set(x, "QuoteSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteSymbolUndefined: Self = StObject.set(x, "QuoteSymbol", js.undefined)
+    inline def setQuoteSymbolUndefined: Self = StObject.set(x, "QuoteSymbol", js.undefined)
   }
 }

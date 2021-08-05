@@ -13,28 +13,28 @@ object sshMod {
   class ProtocolSSH protected () extends QueryProtocolInterface {
     def this(config: ConnectionParams) = this()
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     /**
       * Called when the connection with the Socket gets closed
       */
-    var handleClose: js.Any = js.native
+    /* private */ var handleClose: js.Any = js.native
     
     /**
       * called when the Socket receives data
       */
-    var handleData: js.Any = js.native
+    /* private */ var handleData: js.Any = js.native
     
     /**
       * Called when the Socket emits an error
       */
-    var handleError: js.Any = js.native
+    /* private */ var handleError: js.Any = js.native
     
     /**
       * Called after the Socket has been established
       */
-    var handleReady: js.Any = js.native
+    /* private */ var handleReady: js.Any = js.native
     
-    var stream: js.Any = js.native
+    /* private */ var stream: js.Any = js.native
   }
 }

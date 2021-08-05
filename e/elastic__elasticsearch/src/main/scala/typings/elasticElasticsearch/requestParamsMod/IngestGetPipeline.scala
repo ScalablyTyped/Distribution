@@ -14,25 +14,19 @@ trait IngestGetPipeline
 }
 object IngestGetPipeline {
   
-  @scala.inline
-  def apply(): IngestGetPipeline = {
+  inline def apply(): IngestGetPipeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngestGetPipeline]
   }
   
-  @scala.inline
-  implicit class IngestGetPipelineMutableBuilder[Self <: IngestGetPipeline] (val x: Self) extends AnyVal {
+  extension [Self <: IngestGetPipeline](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
   }
 }

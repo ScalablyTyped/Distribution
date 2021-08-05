@@ -23,7 +23,6 @@ object indexNativeMod {
     @JSImport("rc-swipeout/lib/index.native", "default.defaultProps")
     @js.native
     def defaultProps: AutoClose = js.native
-    @scala.inline
-    def defaultProps_=(x: AutoClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AutoClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

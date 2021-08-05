@@ -11,16 +11,13 @@ trait OnStopCallbackResult extends StObject {
 }
 object OnStopCallbackResult {
   
-  @scala.inline
-  def apply(tempFilePath: String): OnStopCallbackResult = {
+  inline def apply(tempFilePath: String): OnStopCallbackResult = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnStopCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnStopCallbackResultMutableBuilder[Self <: OnStopCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnStopCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait UploadControlTextChangedEventArgs
 }
 object UploadControlTextChangedEventArgs {
   
-  @scala.inline
-  def apply(inputIndex: Double, sender: Control): UploadControlTextChangedEventArgs = {
+  inline def apply(inputIndex: Double, sender: Control): UploadControlTextChangedEventArgs = {
     val __obj = js.Dynamic.literal(inputIndex = inputIndex.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadControlTextChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class UploadControlTextChangedEventArgsMutableBuilder[Self <: UploadControlTextChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UploadControlTextChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
+    inline def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
   }
 }

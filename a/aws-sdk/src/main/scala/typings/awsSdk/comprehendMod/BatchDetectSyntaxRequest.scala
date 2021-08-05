@@ -18,22 +18,17 @@ trait BatchDetectSyntaxRequest extends StObject {
 }
 object BatchDetectSyntaxRequest {
   
-  @scala.inline
-  def apply(LanguageCode: SyntaxLanguageCode, TextList: CustomerInputStringList): BatchDetectSyntaxRequest = {
+  inline def apply(LanguageCode: SyntaxLanguageCode, TextList: CustomerInputStringList): BatchDetectSyntaxRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectSyntaxRequest]
   }
   
-  @scala.inline
-  implicit class BatchDetectSyntaxRequestMutableBuilder[Self <: BatchDetectSyntaxRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectSyntaxRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: SyntaxLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: SyntaxLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
+    inline def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
+    inline def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
   }
 }

@@ -73,70 +73,49 @@ trait WebMapProperties
 }
 object WebMapProperties {
   
-  @scala.inline
-  def apply(): WebMapProperties = {
+  inline def apply(): WebMapProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebMapProperties]
   }
   
-  @scala.inline
-  implicit class WebMapPropertiesMutableBuilder[Self <: WebMapProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WebMapProperties](x: Self) {
     
-    @scala.inline
-    def setApplicationProperties(value: ApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
+    inline def setApplicationProperties(value: ApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationPropertiesUndefined: Self = StObject.set(x, "applicationProperties", js.undefined)
+    inline def setApplicationPropertiesUndefined: Self = StObject.set(x, "applicationProperties", js.undefined)
     
-    @scala.inline
-    def setAuthoringApp(value: String): Self = StObject.set(x, "authoringApp", value.asInstanceOf[js.Any])
+    inline def setAuthoringApp(value: String): Self = StObject.set(x, "authoringApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoringAppUndefined: Self = StObject.set(x, "authoringApp", js.undefined)
+    inline def setAuthoringAppUndefined: Self = StObject.set(x, "authoringApp", js.undefined)
     
-    @scala.inline
-    def setAuthoringAppVersion(value: String): Self = StObject.set(x, "authoringAppVersion", value.asInstanceOf[js.Any])
+    inline def setAuthoringAppVersion(value: String): Self = StObject.set(x, "authoringAppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoringAppVersionUndefined: Self = StObject.set(x, "authoringAppVersion", js.undefined)
+    inline def setAuthoringAppVersionUndefined: Self = StObject.set(x, "authoringAppVersion", js.undefined)
     
-    @scala.inline
-    def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
+    inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    @scala.inline
-    def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialViewProperties(value: InitialViewPropertiesProperties): Self = StObject.set(x, "initialViewProperties", value.asInstanceOf[js.Any])
+    inline def setInitialViewProperties(value: InitialViewPropertiesProperties): Self = StObject.set(x, "initialViewProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialViewPropertiesUndefined: Self = StObject.set(x, "initialViewProperties", js.undefined)
+    inline def setInitialViewPropertiesUndefined: Self = StObject.set(x, "initialViewProperties", js.undefined)
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
-    @scala.inline
-    def setPresentation(value: js.Any): Self = StObject.set(x, "presentation", value.asInstanceOf[js.Any])
+    inline def setPresentation(value: js.Any): Self = StObject.set(x, "presentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationUndefined: Self = StObject.set(x, "presentation", js.undefined)
+    inline def setPresentationUndefined: Self = StObject.set(x, "presentation", js.undefined)
     
-    @scala.inline
-    def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
-    @scala.inline
-    def setWidgets(value: Widgets): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+    inline def setWidgets(value: Widgets): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
+    inline def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
   }
 }

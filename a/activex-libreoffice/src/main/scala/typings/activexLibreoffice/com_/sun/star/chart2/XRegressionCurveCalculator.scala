@@ -104,8 +104,7 @@ trait XRegressionCurveCalculator
 }
 object XRegressionCurveCalculator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CorrelationCoefficient: Double,
     Representation: String,
     acquire: () => Unit,
@@ -124,37 +123,26 @@ object XRegressionCurveCalculator {
     __obj.asInstanceOf[XRegressionCurveCalculator]
   }
   
-  @scala.inline
-  implicit class XRegressionCurveCalculatorMutableBuilder[Self <: XRegressionCurveCalculator] (val x: Self) extends AnyVal {
+  extension [Self <: XRegressionCurveCalculator](x: Self) {
     
-    @scala.inline
-    def setCorrelationCoefficient(value: Double): Self = StObject.set(x, "CorrelationCoefficient", value.asInstanceOf[js.Any])
+    inline def setCorrelationCoefficient(value: Double): Self = StObject.set(x, "CorrelationCoefficient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCorrelationCoefficient(value: () => Double): Self = StObject.set(x, "getCorrelationCoefficient", js.Any.fromFunction0(value))
+    inline def setGetCorrelationCoefficient(value: () => Double): Self = StObject.set(x, "getCorrelationCoefficient", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurveValue(value: Double => Double): Self = StObject.set(x, "getCurveValue", js.Any.fromFunction1(value))
+    inline def setGetCurveValue(value: Double => Double): Self = StObject.set(x, "getCurveValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurveValues(value: (Double, Double, Double, XScaling, XScaling, Boolean) => SafeArray[RealPoint2D]): Self = StObject.set(x, "getCurveValues", js.Any.fromFunction6(value))
+    inline def setGetCurveValues(value: (Double, Double, Double, XScaling, XScaling, Boolean) => SafeArray[RealPoint2D]): Self = StObject.set(x, "getCurveValues", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetFormattedRepresentation(value: (XNumberFormatsSupplier, Double, Double) => String): Self = StObject.set(x, "getFormattedRepresentation", js.Any.fromFunction3(value))
+    inline def setGetFormattedRepresentation(value: (XNumberFormatsSupplier, Double, Double) => String): Self = StObject.set(x, "getFormattedRepresentation", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetRepresentation(value: () => String): Self = StObject.set(x, "getRepresentation", js.Any.fromFunction0(value))
+    inline def setGetRepresentation(value: () => String): Self = StObject.set(x, "getRepresentation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecalculateRegression(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "recalculateRegression", js.Any.fromFunction2(value))
+    inline def setRecalculateRegression(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "recalculateRegression", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRepresentation(value: String): Self = StObject.set(x, "Representation", value.asInstanceOf[js.Any])
+    inline def setRepresentation(value: String): Self = StObject.set(x, "Representation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRegressionProperties(value: (Double, Boolean, Double, Double) => Unit): Self = StObject.set(x, "setRegressionProperties", js.Any.fromFunction4(value))
+    inline def setSetRegressionProperties(value: (Double, Boolean, Double, Double) => Unit): Self = StObject.set(x, "setRegressionProperties", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetXYNames(value: (String, String) => Unit): Self = StObject.set(x, "setXYNames", js.Any.fromFunction2(value))
+    inline def setSetXYNames(value: (String, String) => Unit): Self = StObject.set(x, "setXYNames", js.Any.fromFunction2(value))
   }
 }

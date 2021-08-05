@@ -11,10 +11,8 @@ object servicequotasGetServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
-  @scala.inline
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
+  inline def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
+  inline def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
   
   trait GetServiceArgs extends StObject {
     
@@ -25,17 +23,14 @@ object servicequotasGetServiceMod {
   }
   object GetServiceArgs {
     
-    @scala.inline
-    def apply(serviceName: String): GetServiceArgs = {
+    inline def apply(serviceName: String): GetServiceArgs = {
       val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetServiceArgs]
     }
     
-    @scala.inline
-    implicit class GetServiceArgsMutableBuilder[Self <: GetServiceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceArgs](x: Self) {
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,23 +50,18 @@ object servicequotasGetServiceMod {
   }
   object GetServiceResult {
     
-    @scala.inline
-    def apply(id: String, serviceCode: String, serviceName: String): GetServiceResult = {
+    inline def apply(id: String, serviceCode: String, serviceName: String): GetServiceResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], serviceCode = serviceCode.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetServiceResult]
     }
     
-    @scala.inline
-    implicit class GetServiceResultMutableBuilder[Self <: GetServiceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

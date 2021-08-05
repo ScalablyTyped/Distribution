@@ -18,8 +18,7 @@ trait ASPxClientChaikinsVolatility
 }
 object ASPxClientChaikinsVolatility {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -31,10 +30,8 @@ object ASPxClientChaikinsVolatility {
     __obj.asInstanceOf[ASPxClientChaikinsVolatility]
   }
   
-  @scala.inline
-  implicit class ASPxClientChaikinsVolatilityMutableBuilder[Self <: ASPxClientChaikinsVolatility] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientChaikinsVolatility](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }
 }

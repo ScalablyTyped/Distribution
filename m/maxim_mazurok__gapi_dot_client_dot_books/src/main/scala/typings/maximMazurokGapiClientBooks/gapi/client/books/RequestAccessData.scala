@@ -17,31 +17,23 @@ trait RequestAccessData extends StObject {
 }
 object RequestAccessData {
   
-  @scala.inline
-  def apply(): RequestAccessData = {
+  inline def apply(): RequestAccessData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestAccessData]
   }
   
-  @scala.inline
-  implicit class RequestAccessDataMutableBuilder[Self <: RequestAccessData] (val x: Self) extends AnyVal {
+  extension [Self <: RequestAccessData](x: Self) {
     
-    @scala.inline
-    def setConcurrentAccess(value: ConcurrentAccessRestriction): Self = StObject.set(x, "concurrentAccess", value.asInstanceOf[js.Any])
+    inline def setConcurrentAccess(value: ConcurrentAccessRestriction): Self = StObject.set(x, "concurrentAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentAccessUndefined: Self = StObject.set(x, "concurrentAccess", js.undefined)
+    inline def setConcurrentAccessUndefined: Self = StObject.set(x, "concurrentAccess", js.undefined)
     
-    @scala.inline
-    def setDownloadAccess(value: DownloadAccessRestriction): Self = StObject.set(x, "downloadAccess", value.asInstanceOf[js.Any])
+    inline def setDownloadAccess(value: DownloadAccessRestriction): Self = StObject.set(x, "downloadAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadAccessUndefined: Self = StObject.set(x, "downloadAccess", js.undefined)
+    inline def setDownloadAccessUndefined: Self = StObject.set(x, "downloadAccess", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

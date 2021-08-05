@@ -38,7 +38,7 @@ object abstractComponent2Mod {
       */
     def requestAnimationFrame(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
     
-    var requestIds: js.Any = js.native
+    /* private */ var requestIds: js.Any = js.native
     
     /**
       * Set a timeout and remember its ID.
@@ -48,7 +48,7 @@ object abstractComponent2Mod {
     def setTimeout(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
     def setTimeout(callback: js.Function0[Unit], timeout: Double): js.Function0[Unit] = js.native
     
-    var timeoutIds: js.Any = js.native
+    /* private */ var timeoutIds: js.Any = js.native
     
     /**
       * Ensures that the props specified for a component are valid.

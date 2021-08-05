@@ -14,8 +14,7 @@ trait GlobalUserTask
 }
 object GlobalUserTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -31,13 +30,10 @@ object GlobalUserTask {
     __obj.asInstanceOf[GlobalUserTask]
   }
   
-  @scala.inline
-  implicit class GlobalUserTaskMutableBuilder[Self <: GlobalUserTask] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalUserTask](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderings(value: Rendering): Self = StObject.set(x, "renderings", value.asInstanceOf[js.Any])
+    inline def setRenderings(value: Rendering): Self = StObject.set(x, "renderings", value.asInstanceOf[js.Any])
   }
 }

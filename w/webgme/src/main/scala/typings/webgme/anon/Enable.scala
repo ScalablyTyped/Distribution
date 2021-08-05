@@ -10,16 +10,13 @@ trait Enable extends StObject {
 }
 object Enable {
   
-  @scala.inline
-  def apply(enable: Boolean): Enable = {
+  inline def apply(enable: Boolean): Enable = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enable]
   }
   
-  @scala.inline
-  implicit class EnableMutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
+  extension [Self <: Enable](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }
 }

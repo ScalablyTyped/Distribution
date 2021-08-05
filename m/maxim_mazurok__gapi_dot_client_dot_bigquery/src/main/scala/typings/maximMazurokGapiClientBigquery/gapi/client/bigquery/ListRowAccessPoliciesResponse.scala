@@ -14,28 +14,21 @@ trait ListRowAccessPoliciesResponse extends StObject {
 }
 object ListRowAccessPoliciesResponse {
   
-  @scala.inline
-  def apply(): ListRowAccessPoliciesResponse = {
+  inline def apply(): ListRowAccessPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRowAccessPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ListRowAccessPoliciesResponseMutableBuilder[Self <: ListRowAccessPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRowAccessPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRowAccessPolicies(value: js.Array[RowAccessPolicy]): Self = StObject.set(x, "rowAccessPolicies", value.asInstanceOf[js.Any])
+    inline def setRowAccessPolicies(value: js.Array[RowAccessPolicy]): Self = StObject.set(x, "rowAccessPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowAccessPoliciesUndefined: Self = StObject.set(x, "rowAccessPolicies", js.undefined)
+    inline def setRowAccessPoliciesUndefined: Self = StObject.set(x, "rowAccessPolicies", js.undefined)
     
-    @scala.inline
-    def setRowAccessPoliciesVarargs(value: RowAccessPolicy*): Self = StObject.set(x, "rowAccessPolicies", js.Array(value :_*))
+    inline def setRowAccessPoliciesVarargs(value: RowAccessPolicy*): Self = StObject.set(x, "rowAccessPolicies", js.Array(value :_*))
   }
 }

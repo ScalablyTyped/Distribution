@@ -23,17 +23,14 @@ object loggerOptionsMod {
   }
   object FileLoggerOptions {
     
-    @scala.inline
-    def apply(logPath: String): FileLoggerOptions = {
+    inline def apply(logPath: String): FileLoggerOptions = {
       val __obj = js.Dynamic.literal(logPath = logPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileLoggerOptions]
     }
     
-    @scala.inline
-    implicit class FileLoggerOptionsMutableBuilder[Self <: FileLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setLogPath(value: String): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
+      inline def setLogPath(value: String): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
     }
   }
   

@@ -23,25 +23,19 @@ trait SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage extends StO
 }
 object SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguageMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

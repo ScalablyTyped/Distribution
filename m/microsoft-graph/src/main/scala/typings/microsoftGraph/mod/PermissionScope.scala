@@ -59,88 +59,61 @@ trait PermissionScope extends StObject {
 }
 object PermissionScope {
   
-  @scala.inline
-  def apply(): PermissionScope = {
+  inline def apply(): PermissionScope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionScope]
   }
   
-  @scala.inline
-  implicit class PermissionScopeMutableBuilder[Self <: PermissionScope] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionScope](x: Self) {
     
-    @scala.inline
-    def setAdminConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDescription", value.asInstanceOf[js.Any])
+    inline def setAdminConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminConsentDescriptionNull: Self = StObject.set(x, "adminConsentDescription", null)
+    inline def setAdminConsentDescriptionNull: Self = StObject.set(x, "adminConsentDescription", null)
     
-    @scala.inline
-    def setAdminConsentDescriptionUndefined: Self = StObject.set(x, "adminConsentDescription", js.undefined)
+    inline def setAdminConsentDescriptionUndefined: Self = StObject.set(x, "adminConsentDescription", js.undefined)
     
-    @scala.inline
-    def setAdminConsentDisplayName(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDisplayName", value.asInstanceOf[js.Any])
+    inline def setAdminConsentDisplayName(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminConsentDisplayNameNull: Self = StObject.set(x, "adminConsentDisplayName", null)
+    inline def setAdminConsentDisplayNameNull: Self = StObject.set(x, "adminConsentDisplayName", null)
     
-    @scala.inline
-    def setAdminConsentDisplayNameUndefined: Self = StObject.set(x, "adminConsentDisplayName", js.undefined)
+    inline def setAdminConsentDisplayNameUndefined: Self = StObject.set(x, "adminConsentDisplayName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: NullableOption[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: NullableOption[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginNull: Self = StObject.set(x, "origin", null)
+    inline def setOriginNull: Self = StObject.set(x, "origin", null)
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "userConsentDescription", value.asInstanceOf[js.Any])
+    inline def setUserConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "userConsentDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserConsentDescriptionNull: Self = StObject.set(x, "userConsentDescription", null)
+    inline def setUserConsentDescriptionNull: Self = StObject.set(x, "userConsentDescription", null)
     
-    @scala.inline
-    def setUserConsentDescriptionUndefined: Self = StObject.set(x, "userConsentDescription", js.undefined)
+    inline def setUserConsentDescriptionUndefined: Self = StObject.set(x, "userConsentDescription", js.undefined)
     
-    @scala.inline
-    def setUserConsentDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userConsentDisplayName", value.asInstanceOf[js.Any])
+    inline def setUserConsentDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userConsentDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserConsentDisplayNameNull: Self = StObject.set(x, "userConsentDisplayName", null)
+    inline def setUserConsentDisplayNameNull: Self = StObject.set(x, "userConsentDisplayName", null)
     
-    @scala.inline
-    def setUserConsentDisplayNameUndefined: Self = StObject.set(x, "userConsentDisplayName", js.undefined)
+    inline def setUserConsentDisplayNameUndefined: Self = StObject.set(x, "userConsentDisplayName", js.undefined)
     
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait ViewDescriptor
 }
 object ViewDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CatalogName: String,
     CheckOption: Double,
     Command: String,
@@ -56,19 +55,14 @@ object ViewDescriptor {
     __obj.asInstanceOf[ViewDescriptor]
   }
   
-  @scala.inline
-  implicit class ViewDescriptorMutableBuilder[Self <: ViewDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ViewDescriptor](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckOption(value: Double): Self = StObject.set(x, "CheckOption", value.asInstanceOf[js.Any])
+    inline def setCheckOption(value: Double): Self = StObject.set(x, "CheckOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
   }
 }

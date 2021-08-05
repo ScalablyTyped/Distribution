@@ -14,20 +14,16 @@ object anon {
   }
   object SelectionEnd {
     
-    @scala.inline
-    def apply(selectionEnd: Double, selectionStart: Double): SelectionEnd = {
+    inline def apply(selectionEnd: Double, selectionStart: Double): SelectionEnd = {
       val __obj = js.Dynamic.literal(selectionEnd = selectionEnd.asInstanceOf[js.Any], selectionStart = selectionStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionEnd]
     }
     
-    @scala.inline
-    implicit class SelectionEndMutableBuilder[Self <: SelectionEnd] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionEnd](x: Self) {
       
-      @scala.inline
-      def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
+      inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
+      inline def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
     }
   }
 }

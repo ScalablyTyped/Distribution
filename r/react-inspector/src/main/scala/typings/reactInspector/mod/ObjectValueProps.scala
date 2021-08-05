@@ -15,25 +15,19 @@ trait ObjectValueProps extends StObject {
 }
 object ObjectValueProps {
   
-  @scala.inline
-  def apply(): ObjectValueProps = {
+  inline def apply(): ObjectValueProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectValueProps]
   }
   
-  @scala.inline
-  implicit class ObjectValuePropsMutableBuilder[Self <: ObjectValueProps] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectValueProps](x: Self) {
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

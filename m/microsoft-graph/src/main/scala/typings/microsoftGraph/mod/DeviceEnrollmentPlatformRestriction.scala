@@ -20,43 +20,31 @@ trait DeviceEnrollmentPlatformRestriction extends StObject {
 }
 object DeviceEnrollmentPlatformRestriction {
   
-  @scala.inline
-  def apply(): DeviceEnrollmentPlatformRestriction = {
+  inline def apply(): DeviceEnrollmentPlatformRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestriction]
   }
   
-  @scala.inline
-  implicit class DeviceEnrollmentPlatformRestrictionMutableBuilder[Self <: DeviceEnrollmentPlatformRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceEnrollmentPlatformRestriction](x: Self) {
     
-    @scala.inline
-    def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
+    inline def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsMaximumVersionNull: Self = StObject.set(x, "osMaximumVersion", null)
+    inline def setOsMaximumVersionNull: Self = StObject.set(x, "osMaximumVersion", null)
     
-    @scala.inline
-    def setOsMaximumVersionUndefined: Self = StObject.set(x, "osMaximumVersion", js.undefined)
+    inline def setOsMaximumVersionUndefined: Self = StObject.set(x, "osMaximumVersion", js.undefined)
     
-    @scala.inline
-    def setOsMinimumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMinimumVersion", value.asInstanceOf[js.Any])
+    inline def setOsMinimumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMinimumVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsMinimumVersionNull: Self = StObject.set(x, "osMinimumVersion", null)
+    inline def setOsMinimumVersionNull: Self = StObject.set(x, "osMinimumVersion", null)
     
-    @scala.inline
-    def setOsMinimumVersionUndefined: Self = StObject.set(x, "osMinimumVersion", js.undefined)
+    inline def setOsMinimumVersionUndefined: Self = StObject.set(x, "osMinimumVersion", js.undefined)
     
-    @scala.inline
-    def setPersonalDeviceEnrollmentBlocked(value: Boolean): Self = StObject.set(x, "personalDeviceEnrollmentBlocked", value.asInstanceOf[js.Any])
+    inline def setPersonalDeviceEnrollmentBlocked(value: Boolean): Self = StObject.set(x, "personalDeviceEnrollmentBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalDeviceEnrollmentBlockedUndefined: Self = StObject.set(x, "personalDeviceEnrollmentBlocked", js.undefined)
+    inline def setPersonalDeviceEnrollmentBlockedUndefined: Self = StObject.set(x, "personalDeviceEnrollmentBlocked", js.undefined)
     
-    @scala.inline
-    def setPlatformBlocked(value: Boolean): Self = StObject.set(x, "platformBlocked", value.asInstanceOf[js.Any])
+    inline def setPlatformBlocked(value: Boolean): Self = StObject.set(x, "platformBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformBlockedUndefined: Self = StObject.set(x, "platformBlocked", js.undefined)
+    inline def setPlatformBlockedUndefined: Self = StObject.set(x, "platformBlocked", js.undefined)
   }
 }

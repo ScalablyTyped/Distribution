@@ -11,16 +11,13 @@ trait PickImplinitialRating extends StObject {
 }
 object PickImplinitialRating {
   
-  @scala.inline
-  def apply(initialRating: Double): PickImplinitialRating = {
+  inline def apply(initialRating: Double): PickImplinitialRating = {
     val __obj = js.Dynamic.literal(initialRating = initialRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinitialRating]
   }
   
-  @scala.inline
-  implicit class PickImplinitialRatingMutableBuilder[Self <: PickImplinitialRating] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinitialRating](x: Self) {
     
-    @scala.inline
-    def setInitialRating(value: Double): Self = StObject.set(x, "initialRating", value.asInstanceOf[js.Any])
+    inline def setInitialRating(value: Double): Self = StObject.set(x, "initialRating", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait USBDirection extends StObject
 object USBDirection {
   
-  @scala.inline
-  def in: typings.w3cWebUsb.w3cWebUsbStrings.in = "in".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.in]
+  inline def in: typings.w3cWebUsb.w3cWebUsbStrings.in = "in".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.in]
   
-  @scala.inline
-  def out: typings.w3cWebUsb.w3cWebUsbStrings.out = "out".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.out]
+  inline def out: typings.w3cWebUsb.w3cWebUsbStrings.out = "out".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.out]
 }

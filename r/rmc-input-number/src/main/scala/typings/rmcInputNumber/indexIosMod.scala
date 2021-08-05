@@ -51,44 +51,32 @@ object indexIosMod {
   }
   object PropsType {
     
-    @scala.inline
-    def apply(): PropsType = {
+    inline def apply(): PropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropsType]
     }
     
-    @scala.inline
-    implicit class PropsTypeMutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PropsType](x: Self) {
       
-      @scala.inline
-      def setDownStyle(value: js.Any): Self = StObject.set(x, "downStyle", value.asInstanceOf[js.Any])
+      inline def setDownStyle(value: js.Any): Self = StObject.set(x, "downStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownStyleUndefined: Self = StObject.set(x, "downStyle", js.undefined)
+      inline def setDownStyleUndefined: Self = StObject.set(x, "downStyle", js.undefined)
       
-      @scala.inline
-      def setInputStyle(value: js.Any): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: js.Any): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
+      inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
-      @scala.inline
-      def setKeyboardType(value: js.Any): Self = StObject.set(x, "keyboardType", value.asInstanceOf[js.Any])
+      inline def setKeyboardType(value: js.Any): Self = StObject.set(x, "keyboardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardTypeUndefined: Self = StObject.set(x, "keyboardType", js.undefined)
+      inline def setKeyboardTypeUndefined: Self = StObject.set(x, "keyboardType", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setUpStyle(value: js.Any): Self = StObject.set(x, "upStyle", value.asInstanceOf[js.Any])
+      inline def setUpStyle(value: js.Any): Self = StObject.set(x, "upStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpStyleUndefined: Self = StObject.set(x, "upStyle", js.undefined)
+      inline def setUpStyleUndefined: Self = StObject.set(x, "upStyle", js.undefined)
     }
   }
   

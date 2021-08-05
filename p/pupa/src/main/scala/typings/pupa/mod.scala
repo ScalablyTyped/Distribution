@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(template: String, data: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(template: String, data: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(template: String, data: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(template: String, data: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("pupa", JSImport.Namespace)
   @js.native

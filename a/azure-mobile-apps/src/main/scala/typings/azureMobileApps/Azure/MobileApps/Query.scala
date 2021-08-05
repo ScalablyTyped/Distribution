@@ -16,22 +16,17 @@ trait Query extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply(create: String => QueryJs, fromRequest: Request => QueryJs, toOData: QueryJs => OData): Query = {
+  inline def apply(create: String => QueryJs, fromRequest: Request => QueryJs, toOData: QueryJs => OData): Query = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), fromRequest = js.Any.fromFunction1(fromRequest), toOData = js.Any.fromFunction1(toOData))
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => QueryJs): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => QueryJs): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromRequest(value: Request => QueryJs): Self = StObject.set(x, "fromRequest", js.Any.fromFunction1(value))
+    inline def setFromRequest(value: Request => QueryJs): Self = StObject.set(x, "fromRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToOData(value: QueryJs => OData): Self = StObject.set(x, "toOData", js.Any.fromFunction1(value))
+    inline def setToOData(value: QueryJs => OData): Self = StObject.set(x, "toOData", js.Any.fromFunction1(value))
   }
 }

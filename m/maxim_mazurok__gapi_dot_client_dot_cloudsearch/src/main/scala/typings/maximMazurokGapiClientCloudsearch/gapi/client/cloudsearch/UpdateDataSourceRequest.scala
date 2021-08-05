@@ -13,25 +13,19 @@ trait UpdateDataSourceRequest extends StObject {
 }
 object UpdateDataSourceRequest {
   
-  @scala.inline
-  def apply(): UpdateDataSourceRequest = {
+  inline def apply(): UpdateDataSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDataSourceRequestMutableBuilder[Self <: UpdateDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setSource(value: DataSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: DataSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

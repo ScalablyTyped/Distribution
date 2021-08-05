@@ -12,25 +12,19 @@ trait Rules extends StObject {
 }
 object Rules {
   
-  @scala.inline
-  def apply(): Rules = {
+  inline def apply(): Rules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rules]
   }
   
-  @scala.inline
-  implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+  extension [Self <: Rules](x: Self) {
     
-    @scala.inline
-    def setRuleFile(value: String): Self = StObject.set(x, "ruleFile", value.asInstanceOf[js.Any])
+    inline def setRuleFile(value: String): Self = StObject.set(x, "ruleFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleFileUndefined: Self = StObject.set(x, "ruleFile", js.undefined)
+    inline def setRuleFileUndefined: Self = StObject.set(x, "ruleFile", js.undefined)
     
-    @scala.inline
-    def setRules(value: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
   }
 }

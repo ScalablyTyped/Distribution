@@ -29,58 +29,41 @@ trait Results extends StObject {
 }
 object Results {
   
-  @scala.inline
-  def apply(): Results = {
+  inline def apply(): Results = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Results]
   }
   
-  @scala.inline
-  implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+  extension [Self <: Results](x: Self) {
     
-    @scala.inline
-    def setArtifactManifest(value: String): Self = StObject.set(x, "artifactManifest", value.asInstanceOf[js.Any])
+    inline def setArtifactManifest(value: String): Self = StObject.set(x, "artifactManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactManifestUndefined: Self = StObject.set(x, "artifactManifest", js.undefined)
+    inline def setArtifactManifestUndefined: Self = StObject.set(x, "artifactManifest", js.undefined)
     
-    @scala.inline
-    def setArtifactTiming(value: TimeSpan): Self = StObject.set(x, "artifactTiming", value.asInstanceOf[js.Any])
+    inline def setArtifactTiming(value: TimeSpan): Self = StObject.set(x, "artifactTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactTimingUndefined: Self = StObject.set(x, "artifactTiming", js.undefined)
+    inline def setArtifactTimingUndefined: Self = StObject.set(x, "artifactTiming", js.undefined)
     
-    @scala.inline
-    def setBuildStepImages(value: js.Array[String]): Self = StObject.set(x, "buildStepImages", value.asInstanceOf[js.Any])
+    inline def setBuildStepImages(value: js.Array[String]): Self = StObject.set(x, "buildStepImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildStepImagesUndefined: Self = StObject.set(x, "buildStepImages", js.undefined)
+    inline def setBuildStepImagesUndefined: Self = StObject.set(x, "buildStepImages", js.undefined)
     
-    @scala.inline
-    def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value :_*))
+    inline def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildStepOutputs(value: js.Array[String]): Self = StObject.set(x, "buildStepOutputs", value.asInstanceOf[js.Any])
+    inline def setBuildStepOutputs(value: js.Array[String]): Self = StObject.set(x, "buildStepOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildStepOutputsUndefined: Self = StObject.set(x, "buildStepOutputs", js.undefined)
+    inline def setBuildStepOutputsUndefined: Self = StObject.set(x, "buildStepOutputs", js.undefined)
     
-    @scala.inline
-    def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value :_*))
+    inline def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value :_*))
     
-    @scala.inline
-    def setImages(value: js.Array[BuiltImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[BuiltImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: BuiltImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: BuiltImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setNumArtifacts(value: String): Self = StObject.set(x, "numArtifacts", value.asInstanceOf[js.Any])
+    inline def setNumArtifacts(value: String): Self = StObject.set(x, "numArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumArtifactsUndefined: Self = StObject.set(x, "numArtifacts", js.undefined)
+    inline def setNumArtifactsUndefined: Self = StObject.set(x, "numArtifacts", js.undefined)
   }
 }

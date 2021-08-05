@@ -23,31 +23,23 @@ trait ProgressEventUIParam extends StObject {
 }
 object ProgressEventUIParam {
   
-  @scala.inline
-  def apply(): ProgressEventUIParam = {
+  inline def apply(): ProgressEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressEventUIParam]
   }
   
-  @scala.inline
-  implicit class ProgressEventUIParamMutableBuilder[Self <: ProgressEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
+    inline def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

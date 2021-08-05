@@ -47,8 +47,7 @@ object filterMod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       receiveMessage: js.Promise[Buffer] => js.Promise[Buffer],
       receiveMetadata: Metadata => Metadata,
       receiveTrailers: StatusObject => StatusObject,
@@ -59,23 +58,17 @@ object filterMod {
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setReceiveMessage(value: js.Promise[Buffer] => js.Promise[Buffer]): Self = StObject.set(x, "receiveMessage", js.Any.fromFunction1(value))
+      inline def setReceiveMessage(value: js.Promise[Buffer] => js.Promise[Buffer]): Self = StObject.set(x, "receiveMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReceiveMetadata(value: Metadata => Metadata): Self = StObject.set(x, "receiveMetadata", js.Any.fromFunction1(value))
+      inline def setReceiveMetadata(value: Metadata => Metadata): Self = StObject.set(x, "receiveMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReceiveTrailers(value: StatusObject => StatusObject): Self = StObject.set(x, "receiveTrailers", js.Any.fromFunction1(value))
+      inline def setReceiveTrailers(value: StatusObject => StatusObject): Self = StObject.set(x, "receiveTrailers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendMessage(value: js.Promise[WriteObject] => js.Promise[WriteObject]): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+      inline def setSendMessage(value: js.Promise[WriteObject] => js.Promise[WriteObject]): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendMetadata(value: js.Promise[Metadata] => js.Promise[Metadata]): Self = StObject.set(x, "sendMetadata", js.Any.fromFunction1(value))
+      inline def setSendMetadata(value: js.Promise[Metadata] => js.Promise[Metadata]): Self = StObject.set(x, "sendMetadata", js.Any.fromFunction1(value))
     }
   }
   
@@ -85,17 +78,14 @@ object filterMod {
   }
   object FilterFactory {
     
-    @scala.inline
-    def apply[T /* <: Filter */](createFilter: Call => T): FilterFactory[T] = {
+    inline def apply[T /* <: Filter */](createFilter: Call => T): FilterFactory[T] = {
       val __obj = js.Dynamic.literal(createFilter = js.Any.fromFunction1(createFilter))
       __obj.asInstanceOf[FilterFactory[T]]
     }
     
-    @scala.inline
-    implicit class FilterFactoryMutableBuilder[Self <: FilterFactory[?], T /* <: Filter */] (val x: Self & FilterFactory[T]) extends AnyVal {
+    extension [Self <: FilterFactory[?], T /* <: Filter */](x: Self & FilterFactory[T]) {
       
-      @scala.inline
-      def setCreateFilter(value: Call => T): Self = StObject.set(x, "createFilter", js.Any.fromFunction1(value))
+      inline def setCreateFilter(value: Call => T): Self = StObject.set(x, "createFilter", js.Any.fromFunction1(value))
     }
   }
 }

@@ -44,106 +44,73 @@ trait ChartBase
 }
 object ChartBase {
   
-  @scala.inline
-  def apply(): ChartBase = {
+  inline def apply(): ChartBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartBase]
   }
   
-  @scala.inline
-  implicit class ChartBaseMutableBuilder[Self <: ChartBase] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBase](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: DurationX): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: DurationX): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setChartBackgroundColor(value: Color): Self = StObject.set(x, "chartBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setChartBackgroundColor(value: Color): Self = StObject.set(x, "chartBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartBackgroundColorUndefined: Self = StObject.set(x, "chartBackgroundColor", js.undefined)
+    inline def setChartBackgroundColorUndefined: Self = StObject.set(x, "chartBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setChartDescription(value: ChartDescription): Self = StObject.set(x, "chartDescription", value.asInstanceOf[js.Any])
+    inline def setChartDescription(value: ChartDescription): Self = StObject.set(x, "chartDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartDescriptionUndefined: Self = StObject.set(x, "chartDescription", js.undefined)
+    inline def setChartDescriptionUndefined: Self = StObject.set(x, "chartDescription", js.undefined)
     
-    @scala.inline
-    def setDragDecelerationEnabled(value: Boolean): Self = StObject.set(x, "dragDecelerationEnabled", value.asInstanceOf[js.Any])
+    inline def setDragDecelerationEnabled(value: Boolean): Self = StObject.set(x, "dragDecelerationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragDecelerationEnabledUndefined: Self = StObject.set(x, "dragDecelerationEnabled", js.undefined)
+    inline def setDragDecelerationEnabledUndefined: Self = StObject.set(x, "dragDecelerationEnabled", js.undefined)
     
-    @scala.inline
-    def setDragDecelerationFrictionCoef(value: Double): Self = StObject.set(x, "dragDecelerationFrictionCoef", value.asInstanceOf[js.Any])
+    inline def setDragDecelerationFrictionCoef(value: Double): Self = StObject.set(x, "dragDecelerationFrictionCoef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragDecelerationFrictionCoefUndefined: Self = StObject.set(x, "dragDecelerationFrictionCoef", js.undefined)
+    inline def setDragDecelerationFrictionCoefUndefined: Self = StObject.set(x, "dragDecelerationFrictionCoef", js.undefined)
     
-    @scala.inline
-    def setHighlightPerTapEnabled(value: Boolean): Self = StObject.set(x, "highlightPerTapEnabled", value.asInstanceOf[js.Any])
+    inline def setHighlightPerTapEnabled(value: Boolean): Self = StObject.set(x, "highlightPerTapEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightPerTapEnabledUndefined: Self = StObject.set(x, "highlightPerTapEnabled", js.undefined)
+    inline def setHighlightPerTapEnabledUndefined: Self = StObject.set(x, "highlightPerTapEnabled", js.undefined)
     
-    @scala.inline
-    def setHighlights(value: js.Array[DataIndex]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: js.Array[DataIndex]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
+    inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
-    @scala.inline
-    def setHighlightsVarargs(value: DataIndex*): Self = StObject.set(x, "highlights", js.Array(value :_*))
+    inline def setHighlightsVarargs(value: DataIndex*): Self = StObject.set(x, "highlights", js.Array(value :_*))
     
-    @scala.inline
-    def setLegend(value: ChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: ChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    @scala.inline
-    def setLogEnabled(value: Boolean): Self = StObject.set(x, "logEnabled", value.asInstanceOf[js.Any])
+    inline def setLogEnabled(value: Boolean): Self = StObject.set(x, "logEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogEnabledUndefined: Self = StObject.set(x, "logEnabled", js.undefined)
+    inline def setLogEnabledUndefined: Self = StObject.set(x, "logEnabled", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Digits): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Digits): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
+    inline def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+    inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* event */ ChartChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* event */ ChartChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnSelect(value: /* event */ ChartSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: /* event */ ChartSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    @scala.inline
-    def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
+    inline def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchEnabledUndefined: Self = StObject.set(x, "touchEnabled", js.undefined)
+    inline def setTouchEnabledUndefined: Self = StObject.set(x, "touchEnabled", js.undefined)
     
-    @scala.inline
-    def setXAxis(value: xAxis): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: xAxis): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
   }
 }

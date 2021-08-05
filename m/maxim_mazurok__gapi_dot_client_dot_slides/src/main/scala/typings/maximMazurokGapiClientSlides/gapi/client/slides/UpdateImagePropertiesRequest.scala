@@ -21,31 +21,23 @@ trait UpdateImagePropertiesRequest extends StObject {
 }
 object UpdateImagePropertiesRequest {
   
-  @scala.inline
-  def apply(): UpdateImagePropertiesRequest = {
+  inline def apply(): UpdateImagePropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateImagePropertiesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateImagePropertiesRequestMutableBuilder[Self <: UpdateImagePropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateImagePropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+    inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+    inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

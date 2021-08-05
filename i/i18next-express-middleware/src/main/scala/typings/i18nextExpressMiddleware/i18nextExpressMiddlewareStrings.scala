@@ -8,6 +8,5 @@ object i18nextExpressMiddlewareStrings {
   
   @js.native
   sealed trait languageDetector extends StObject
-  @scala.inline
-  def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
+  inline def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
 }

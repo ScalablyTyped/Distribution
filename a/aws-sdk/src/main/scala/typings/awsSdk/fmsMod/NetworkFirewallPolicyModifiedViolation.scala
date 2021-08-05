@@ -23,31 +23,23 @@ trait NetworkFirewallPolicyModifiedViolation extends StObject {
 }
 object NetworkFirewallPolicyModifiedViolation {
   
-  @scala.inline
-  def apply(): NetworkFirewallPolicyModifiedViolation = {
+  inline def apply(): NetworkFirewallPolicyModifiedViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkFirewallPolicyModifiedViolation]
   }
   
-  @scala.inline
-  implicit class NetworkFirewallPolicyModifiedViolationMutableBuilder[Self <: NetworkFirewallPolicyModifiedViolation] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkFirewallPolicyModifiedViolation](x: Self) {
     
-    @scala.inline
-    def setCurrentPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "CurrentPolicyDescription", value.asInstanceOf[js.Any])
+    inline def setCurrentPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "CurrentPolicyDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPolicyDescriptionUndefined: Self = StObject.set(x, "CurrentPolicyDescription", js.undefined)
+    inline def setCurrentPolicyDescriptionUndefined: Self = StObject.set(x, "CurrentPolicyDescription", js.undefined)
     
-    @scala.inline
-    def setExpectedPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "ExpectedPolicyDescription", value.asInstanceOf[js.Any])
+    inline def setExpectedPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "ExpectedPolicyDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedPolicyDescriptionUndefined: Self = StObject.set(x, "ExpectedPolicyDescription", js.undefined)
+    inline def setExpectedPolicyDescriptionUndefined: Self = StObject.set(x, "ExpectedPolicyDescription", js.undefined)
     
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
+    inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
+    inline def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

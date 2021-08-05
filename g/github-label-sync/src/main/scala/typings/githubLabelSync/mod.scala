@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: Options): js.Promise[js.Array[LabelDiff]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LabelDiff]]]
+  inline def default(options: Options): js.Promise[js.Array[LabelDiff]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LabelDiff]]]
   
   @JSImport("github-label-sync", "defaults")
   @js.native
@@ -27,20 +26,16 @@ object mod {
   }
   object BasicLabel {
     
-    @scala.inline
-    def apply(color: String, name: String): BasicLabel = {
+    inline def apply(color: String, name: String): BasicLabel = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasicLabel]
     }
     
-    @scala.inline
-    implicit class BasicLabelMutableBuilder[Self <: BasicLabel] (val x: Self) extends AnyVal {
+    extension [Self <: BasicLabel](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +60,7 @@ object mod {
   }
   object DefaultOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessToken: Null,
       allowAddedLabels: Boolean,
       dryRun: Boolean,
@@ -80,35 +74,25 @@ object mod {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    @scala.inline
-    implicit class DefaultOptionsMutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: Null): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: Null): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAddedLabels(value: Boolean): Self = StObject.set(x, "allowAddedLabels", value.asInstanceOf[js.Any])
+      inline def setAllowAddedLabels(value: Boolean): Self = StObject.set(x, "allowAddedLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: Null): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Null): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: Diff): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Diff): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Array[LabelInfo]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[LabelInfo]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setLog(value: Info): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Info): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepo(value: Null): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: Null): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,33 +108,25 @@ object mod {
   }
   object LabelDiff {
     
-    @scala.inline
-    def apply(name: String, `type`: String): LabelDiff = {
+    inline def apply(name: String, `type`: String): LabelDiff = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LabelDiff]
     }
     
-    @scala.inline
-    implicit class LabelDiffMutableBuilder[Self <: LabelDiff] (val x: Self) extends AnyVal {
+    extension [Self <: LabelDiff](x: Self) {
       
-      @scala.inline
-      def setActual(value: BasicLabel): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: BasicLabel): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
       
-      @scala.inline
-      def setExpected(value: BasicLabel): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: BasicLabel): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,29 +140,22 @@ object mod {
   }
   object LabelInfo {
     
-    @scala.inline
-    def apply(color: String, name: String): LabelInfo = {
+    inline def apply(color: String, name: String): LabelInfo = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LabelInfo]
     }
     
-    @scala.inline
-    implicit class LabelInfoMutableBuilder[Self <: LabelInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LabelInfo](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     }
   }
   
@@ -202,26 +171,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(accessToken: String, labels: js.Array[LabelInfo], repo: String): Options = {
+    inline def apply(accessToken: String, labels: js.Array[LabelInfo], repo: String): Options = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,44 +202,32 @@ object mod {
   }
   object OptionsBase {
     
-    @scala.inline
-    def apply(labels: js.Array[LabelInfo]): OptionsBase = {
+    inline def apply(labels: js.Array[LabelInfo]): OptionsBase = {
       val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsBase]
     }
     
-    @scala.inline
-    implicit class OptionsBaseMutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsBase](x: Self) {
       
-      @scala.inline
-      def setAllowAddedLabels(value: Boolean): Self = StObject.set(x, "allowAddedLabels", value.asInstanceOf[js.Any])
+      inline def setAllowAddedLabels(value: Boolean): Self = StObject.set(x, "allowAddedLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAddedLabelsUndefined: Self = StObject.set(x, "allowAddedLabels", js.undefined)
+      inline def setAllowAddedLabelsUndefined: Self = StObject.set(x, "allowAddedLabels", js.undefined)
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Diff): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Diff): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLabels(value: js.Array[LabelInfo]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[LabelInfo]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setLog(value: Info): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Info): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     }
   }
 }

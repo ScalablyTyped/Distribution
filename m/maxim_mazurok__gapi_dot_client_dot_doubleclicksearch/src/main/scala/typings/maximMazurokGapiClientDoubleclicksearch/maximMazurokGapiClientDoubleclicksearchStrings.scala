@@ -8,11 +8,9 @@ object maximMazurokGapiClientDoubleclicksearchStrings {
   
   @js.native
   sealed trait doubleclicksearch extends StObject
-  @scala.inline
-  def doubleclicksearch: doubleclicksearch = "doubleclicksearch".asInstanceOf[doubleclicksearch]
+  inline def doubleclicksearch: doubleclicksearch = "doubleclicksearch".asInstanceOf[doubleclicksearch]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

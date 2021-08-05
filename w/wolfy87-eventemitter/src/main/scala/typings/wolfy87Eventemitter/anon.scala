@@ -12,17 +12,14 @@ object anon {
   }
   object Listener {
     
-    @scala.inline
-    def apply(listener: js.Function): Listener = {
+    inline def apply(listener: js.Function): Listener = {
       val __obj = js.Dynamic.literal(listener = listener.asInstanceOf[js.Any])
       __obj.asInstanceOf[Listener]
     }
     
-    @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+    extension [Self <: Listener](x: Self) {
       
-      @scala.inline
-      def setListener(value: js.Function): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+      inline def setListener(value: js.Function): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     }
   }
 }

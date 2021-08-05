@@ -15,9 +15,9 @@ class ɵangularPackagesRouterRouterH protected () extends StObject {
   
   def bootstrapListener(bootstrappedComponentRef: ComponentRef[js.Any]): Unit = js.native
   
-  var initNavigation: js.Any = js.native
+  /* private */ var initNavigation: js.Any = js.native
   
-  var injector: js.Any = js.native
+  /* private */ var injector: js.Any = js.native
   
-  var resultOfPreactivationDone: js.Any = js.native
+  /* private */ var resultOfPreactivationDone: js.Any = js.native
 }

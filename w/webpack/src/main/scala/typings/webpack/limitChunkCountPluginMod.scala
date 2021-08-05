@@ -20,26 +20,20 @@ object limitChunkCountPluginMod {
   }
   object LimitChunkCountPluginOptions {
     
-    @scala.inline
-    def apply(): LimitChunkCountPluginOptions = {
+    inline def apply(): LimitChunkCountPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LimitChunkCountPluginOptions]
     }
     
-    @scala.inline
-    implicit class LimitChunkCountPluginOptionsMutableBuilder[Self <: LimitChunkCountPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LimitChunkCountPluginOptions](x: Self) {
       
-      @scala.inline
-      def setMaxChunks(value: Double): Self = StObject.set(x, "maxChunks", value.asInstanceOf[js.Any])
+      inline def setMaxChunks(value: Double): Self = StObject.set(x, "maxChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxChunksUndefined: Self = StObject.set(x, "maxChunks", js.undefined)
+      inline def setMaxChunksUndefined: Self = StObject.set(x, "maxChunks", js.undefined)
       
-      @scala.inline
-      def setMinChunkSize(value: Double): Self = StObject.set(x, "minChunkSize", value.asInstanceOf[js.Any])
+      inline def setMinChunkSize(value: Double): Self = StObject.set(x, "minChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinChunkSizeUndefined: Self = StObject.set(x, "minChunkSize", js.undefined)
+      inline def setMinChunkSizeUndefined: Self = StObject.set(x, "minChunkSize", js.undefined)
     }
   }
 }

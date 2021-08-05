@@ -349,14 +349,12 @@ object clientMod {
     trait ExportLayer extends StObject
     object ExportLayer {
       
-      @scala.inline
-      def ExportLayerBase(height: Double, width: Double): typings.guacamoleClient.clientMod.Client.ExportLayerBase = {
+      inline def ExportLayerBase(height: Double, width: Double): typings.guacamoleClient.clientMod.Client.ExportLayerBase = {
         val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.guacamoleClient.clientMod.Client.ExportLayerBase]
       }
       
-      @scala.inline
-      def ExportLayerBasexnumberynu(
+      inline def ExportLayerBasexnumberynu(
         alpha: Double,
         height: Double,
         matrix: js.Any,
@@ -384,26 +382,20 @@ object clientMod {
     }
     object ExportLayerBase {
       
-      @scala.inline
-      def apply(height: Double, width: Double): ExportLayerBase = {
+      inline def apply(height: Double, width: Double): ExportLayerBase = {
         val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExportLayerBase]
       }
       
-      @scala.inline
-      implicit class ExportLayerBaseMutableBuilder[Self <: ExportLayerBase] (val x: Self) extends AnyVal {
+      extension [Self <: ExportLayerBase](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     
@@ -417,23 +409,18 @@ object clientMod {
     }
     object ExportedState {
       
-      @scala.inline
-      def apply(currentState: State, currentTimestamp: Double, layers: NumberDictionary[ExportLayer]): ExportedState = {
+      inline def apply(currentState: State, currentTimestamp: Double, layers: NumberDictionary[ExportLayer]): ExportedState = {
         val __obj = js.Dynamic.literal(currentState = currentState.asInstanceOf[js.Any], currentTimestamp = currentTimestamp.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExportedState]
       }
       
-      @scala.inline
-      implicit class ExportedStateMutableBuilder[Self <: ExportedState] (val x: Self) extends AnyVal {
+      extension [Self <: ExportedState](x: Self) {
         
-        @scala.inline
-        def setCurrentState(value: State): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+        inline def setCurrentState(value: State): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentTimestamp(value: Double): Self = StObject.set(x, "currentTimestamp", value.asInstanceOf[js.Any])
+        inline def setCurrentTimestamp(value: Double): Self = StObject.set(x, "currentTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayers(value: NumberDictionary[ExportLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: NumberDictionary[ExportLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       }
     }
     
@@ -448,23 +435,17 @@ object clientMod {
     trait State extends StObject
     object State {
       
-      @scala.inline
-      def `0`: typings.guacamoleClient.guacamoleClientNumbers.`0` = 0.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`0`]
+      inline def `0`: typings.guacamoleClient.guacamoleClientNumbers.`0` = 0.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.guacamoleClient.guacamoleClientNumbers.`1` = 1.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`1`]
+      inline def `1`: typings.guacamoleClient.guacamoleClientNumbers.`1` = 1.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`1`]
       
-      @scala.inline
-      def `2`: typings.guacamoleClient.guacamoleClientNumbers.`2` = 2.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`2`]
+      inline def `2`: typings.guacamoleClient.guacamoleClientNumbers.`2` = 2.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`2`]
       
-      @scala.inline
-      def `3`: typings.guacamoleClient.guacamoleClientNumbers.`3` = 3.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`3`]
+      inline def `3`: typings.guacamoleClient.guacamoleClientNumbers.`3` = 3.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`3`]
       
-      @scala.inline
-      def `4`: typings.guacamoleClient.guacamoleClientNumbers.`4` = 4.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`4`]
+      inline def `4`: typings.guacamoleClient.guacamoleClientNumbers.`4` = 4.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`4`]
       
-      @scala.inline
-      def `5`: typings.guacamoleClient.guacamoleClientNumbers.`5` = 5.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`5`]
+      inline def `5`: typings.guacamoleClient.guacamoleClientNumbers.`5` = 5.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`5`]
     }
   }
 }

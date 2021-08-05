@@ -10,19 +10,15 @@ trait DescribeCostCategoryDefinitionResponse extends StObject {
 }
 object DescribeCostCategoryDefinitionResponse {
   
-  @scala.inline
-  def apply(): DescribeCostCategoryDefinitionResponse = {
+  inline def apply(): DescribeCostCategoryDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCostCategoryDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCostCategoryDefinitionResponseMutableBuilder[Self <: DescribeCostCategoryDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCostCategoryDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setCostCategory(value: CostCategory): Self = StObject.set(x, "CostCategory", value.asInstanceOf[js.Any])
+    inline def setCostCategory(value: CostCategory): Self = StObject.set(x, "CostCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCategoryUndefined: Self = StObject.set(x, "CostCategory", js.undefined)
+    inline def setCostCategoryUndefined: Self = StObject.set(x, "CostCategory", js.undefined)
   }
 }

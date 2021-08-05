@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMatchEntry extends StObject
 object OlMatchEntry {
   
-  @scala.inline
-  def olMatchEntryComplete: `1` = 1.asInstanceOf[`1`]
+  inline def olMatchEntryComplete: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMatchEntryFirstLetter: `0` = 0.asInstanceOf[`0`]
+  inline def olMatchEntryFirstLetter: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olMatchEntryNone: `2` = 2.asInstanceOf[`2`]
+  inline def olMatchEntryNone: `2` = 2.asInstanceOf[`2`]
 }

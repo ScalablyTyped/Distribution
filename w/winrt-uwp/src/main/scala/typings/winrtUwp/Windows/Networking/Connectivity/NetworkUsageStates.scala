@@ -15,19 +15,15 @@ trait NetworkUsageStates extends StObject {
 }
 object NetworkUsageStates {
   
-  @scala.inline
-  def apply(roaming: TriStates, shared: TriStates): NetworkUsageStates = {
+  inline def apply(roaming: TriStates, shared: TriStates): NetworkUsageStates = {
     val __obj = js.Dynamic.literal(roaming = roaming.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkUsageStates]
   }
   
-  @scala.inline
-  implicit class NetworkUsageStatesMutableBuilder[Self <: NetworkUsageStates] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkUsageStates](x: Self) {
     
-    @scala.inline
-    def setRoaming(value: TriStates): Self = StObject.set(x, "roaming", value.asInstanceOf[js.Any])
+    inline def setRoaming(value: TriStates): Self = StObject.set(x, "roaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShared(value: TriStates): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: TriStates): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
   }
 }

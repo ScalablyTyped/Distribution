@@ -29,64 +29,45 @@ trait DataSourceTable extends StObject {
 }
 object DataSourceTable {
   
-  @scala.inline
-  def apply(): DataSourceTable = {
+  inline def apply(): DataSourceTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceTable]
   }
   
-  @scala.inline
-  implicit class DataSourceTableMutableBuilder[Self <: DataSourceTable] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceTable](x: Self) {
     
-    @scala.inline
-    def setColumnSelectionType(value: String): Self = StObject.set(x, "columnSelectionType", value.asInstanceOf[js.Any])
+    inline def setColumnSelectionType(value: String): Self = StObject.set(x, "columnSelectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSelectionTypeUndefined: Self = StObject.set(x, "columnSelectionType", js.undefined)
+    inline def setColumnSelectionTypeUndefined: Self = StObject.set(x, "columnSelectionType", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[DataSourceColumnReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[DataSourceColumnReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
+    inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
+    inline def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setFilterSpecs(value: js.Array[FilterSpec]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
+    inline def setFilterSpecs(value: js.Array[FilterSpec]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
+    inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    @scala.inline
-    def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
     
-    @scala.inline
-    def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
+    inline def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
+    inline def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
     
-    @scala.inline
-    def setSortSpecs(value: js.Array[SortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
+    inline def setSortSpecs(value: js.Array[SortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
+    inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    @scala.inline
-    def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
   }
 }

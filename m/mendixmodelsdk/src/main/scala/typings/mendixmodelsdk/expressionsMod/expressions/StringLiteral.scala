@@ -74,8 +74,7 @@ object StringLiteral {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def create(model: IModel): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -86,8 +85,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -98,8 +96,7 @@ object StringLiteral {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -110,8 +107,7 @@ object StringLiteral {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @scala.inline
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -122,8 +118,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInBinaryExpressionUnderLeft(container: BinaryExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -134,8 +129,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInBinaryExpressionUnderRight(container: BinaryExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -146,8 +140,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -158,8 +151,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInChangeListActionUnderValueModel(container: ChangeListAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -170,8 +162,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -182,8 +173,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -194,8 +184,7 @@ object StringLiteral {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -206,8 +195,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -218,8 +206,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -230,8 +217,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -242,8 +228,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -254,8 +239,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEndEventUnderReturnValueModel(container: EndEvent): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInEndEventUnderReturnValueModel(container: EndEvent): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -266,8 +250,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -278,8 +261,7 @@ object StringLiteral {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFormDataPartUnderValueModel(container: FormDataPart): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInFormDataPartUnderValueModel(container: FormDataPart): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -290,8 +272,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -302,8 +283,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -314,8 +294,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -326,8 +305,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -338,8 +316,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -350,8 +327,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -362,8 +338,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -374,8 +349,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -386,8 +360,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -398,8 +371,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderCondition(container: IfExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInIfExpressionUnderCondition(container: IfExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -410,8 +382,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfFalse(container: IfExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInIfExpressionUnderIfFalse(container: IfExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -422,8 +393,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfTrue(container: IfExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInIfExpressionUnderIfTrue(container: IfExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -434,8 +404,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -446,8 +415,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -458,8 +426,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMemberChangeUnderValueModel(container: MemberChange): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInMemberChangeUnderValueModel(container: MemberChange): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -470,8 +437,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -482,8 +448,7 @@ object StringLiteral {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -494,8 +459,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -506,8 +470,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -518,8 +481,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -530,8 +492,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -542,8 +503,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -554,8 +514,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -566,8 +525,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -578,8 +536,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -590,8 +547,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -602,8 +558,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInUnaryExpressionUnderExpression(container: UnaryExpression): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -614,8 +569,7 @@ object StringLiteral {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -626,8 +580,7 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /**
     * Creates and returns a new StringLiteral instance in the SDK and on the server.
@@ -638,20 +591,17 @@ object StringLiteral {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+  inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.StringLiteral.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.StringLiteral.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

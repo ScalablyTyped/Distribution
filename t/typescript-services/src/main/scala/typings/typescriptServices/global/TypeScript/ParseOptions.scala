@@ -15,10 +15,10 @@ class ParseOptions protected ()
     allowAutomaticSemicolonInsertion: Boolean
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _allowAutomaticSemicolonInsertion: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _languageVersion: js.Any = js.native
   
   /* CompleteClass */

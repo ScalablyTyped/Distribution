@@ -11,9 +11,7 @@ object safeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readdir(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def readdir(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @scala.inline
-  def stat(p: String): js.Promise[js.UndefOr[Stats]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Stats]]]
+  inline def stat(p: String): js.Promise[js.UndefOr[Stats]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Stats]]]
 }

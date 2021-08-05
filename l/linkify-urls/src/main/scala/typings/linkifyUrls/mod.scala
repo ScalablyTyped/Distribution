@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
   Linkify URLs in a string.
   @param string - String with URLs to linkify.
@@ -39,8 +37,7 @@ object mod {
   document.body.appendChild(fragment);
   ```
   */
-  @scala.inline
-  def apply(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  inline def apply(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
   
   @JSImport("linkify-urls", JSImport.Namespace)
   @js.native
@@ -75,35 +72,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String | Double | Boolean | js.Array[String]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String | Double | Boolean | js.Array[String]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setType(value: string | dom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string | dom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | (js.Function1[/* url */ String, String])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | (js.Function1[/* url */ String, String])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueFunction1(value: /* url */ String => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValueFunction1(value: /* url */ String => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -116,18 +104,15 @@ object mod {
   }
   object TypeDomOptions {
     
-    @scala.inline
-    def apply(): TypeDomOptions = {
+    inline def apply(): TypeDomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("dom")
       __obj.asInstanceOf[TypeDomOptions]
     }
     
-    @scala.inline
-    implicit class TypeDomOptionsMutableBuilder[Self <: TypeDomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TypeDomOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: dom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

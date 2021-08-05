@@ -26,6 +26,5 @@ object Tuple {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromArray(elements: js.Array[js.Any]): Tuple = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(elements.asInstanceOf[js.Any]).asInstanceOf[Tuple]
+  inline def fromArray(elements: js.Array[js.Any]): Tuple = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(elements.asInstanceOf[js.Any]).asInstanceOf[Tuple]
 }

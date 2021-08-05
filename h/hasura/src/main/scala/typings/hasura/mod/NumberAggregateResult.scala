@@ -53,83 +53,67 @@ trait NumberAggregateResult[T, Keys /* <: /* keyof T */ String */]
 }
 object NumberAggregateResult {
   
-  @scala.inline
-  def apply[T, Keys /* <: /* keyof T */ String */](): NumberAggregateResult[T, Keys] = {
+  inline def apply[T, Keys /* <: /* keyof T */ String */](): NumberAggregateResult[T, Keys] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberAggregateResult[T, Keys]]
   }
   
-  @scala.inline
-  implicit class NumberAggregateResultMutableBuilder[Self <: NumberAggregateResult[?, ?], T, Keys /* <: /* keyof T */ String */] (val x: Self & (NumberAggregateResult[T, Keys])) extends AnyVal {
+  extension [Self <: NumberAggregateResult[?, ?], T, Keys /* <: /* keyof T */ String */](x: Self & (NumberAggregateResult[T, Keys])) {
     
-    @scala.inline
-    def setAvg(
+    inline def setAvg(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
+    inline def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
     
-    @scala.inline
-    def setStddev(
+    inline def setStddev(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+    inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
     
-    @scala.inline
-    def setStddev_pop(
+    inline def setStddev_pop(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "stddev_pop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddev_popUndefined: Self = StObject.set(x, "stddev_pop", js.undefined)
+    inline def setStddev_popUndefined: Self = StObject.set(x, "stddev_pop", js.undefined)
     
-    @scala.inline
-    def setStddev_samp(
+    inline def setStddev_samp(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "stddev_samp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddev_sampUndefined: Self = StObject.set(x, "stddev_samp", js.undefined)
+    inline def setStddev_sampUndefined: Self = StObject.set(x, "stddev_samp", js.undefined)
     
-    @scala.inline
-    def setSum(
+    inline def setSum(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
-    @scala.inline
-    def setVar_pop(
+    inline def setVar_pop(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "var_pop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVar_popUndefined: Self = StObject.set(x, "var_pop", js.undefined)
+    inline def setVar_popUndefined: Self = StObject.set(x, "var_pop", js.undefined)
     
-    @scala.inline
-    def setVariance(
+    inline def setVariance(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
       */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

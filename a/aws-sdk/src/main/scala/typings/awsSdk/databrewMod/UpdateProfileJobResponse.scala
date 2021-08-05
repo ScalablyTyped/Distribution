@@ -13,16 +13,13 @@ trait UpdateProfileJobResponse extends StObject {
 }
 object UpdateProfileJobResponse {
   
-  @scala.inline
-  def apply(Name: JobName): UpdateProfileJobResponse = {
+  inline def apply(Name: JobName): UpdateProfileJobResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProfileJobResponse]
   }
   
-  @scala.inline
-  implicit class UpdateProfileJobResponseMutableBuilder[Self <: UpdateProfileJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProfileJobResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

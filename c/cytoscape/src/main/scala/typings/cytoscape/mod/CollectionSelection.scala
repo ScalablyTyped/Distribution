@@ -37,8 +37,7 @@ trait CollectionSelection extends StObject {
 }
 object CollectionSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deselect: () => CollectionSelection,
     select: () => CollectionSelection,
     selectify: () => CollectionSelection,
@@ -49,22 +48,16 @@ object CollectionSelection {
     __obj.asInstanceOf[CollectionSelection]
   }
   
-  @scala.inline
-  implicit class CollectionSelectionMutableBuilder[Self <: CollectionSelection] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionSelection](x: Self) {
     
-    @scala.inline
-    def setDeselect(value: () => CollectionSelection): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+    inline def setDeselect(value: () => CollectionSelection): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelect(value: () => CollectionSelection): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => CollectionSelection): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectify(value: () => CollectionSelection): Self = StObject.set(x, "selectify", js.Any.fromFunction0(value))
+    inline def setSelectify(value: () => CollectionSelection): Self = StObject.set(x, "selectify", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnselect(value: () => CollectionSelection): Self = StObject.set(x, "unselect", js.Any.fromFunction0(value))
+    inline def setUnselect(value: () => CollectionSelection): Self = StObject.set(x, "unselect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnselectify(value: () => CollectionSelection): Self = StObject.set(x, "unselectify", js.Any.fromFunction0(value))
+    inline def setUnselectify(value: () => CollectionSelection): Self = StObject.set(x, "unselectify", js.Any.fromFunction0(value))
   }
 }

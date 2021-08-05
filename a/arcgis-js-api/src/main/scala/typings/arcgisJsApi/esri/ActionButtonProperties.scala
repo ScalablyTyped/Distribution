@@ -17,19 +17,15 @@ trait ActionButtonProperties
 }
 object ActionButtonProperties {
   
-  @scala.inline
-  def apply(): ActionButtonProperties = {
+  inline def apply(): ActionButtonProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionButtonProperties]
   }
   
-  @scala.inline
-  implicit class ActionButtonPropertiesMutableBuilder[Self <: ActionButtonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ActionButtonProperties](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

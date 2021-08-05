@@ -23,31 +23,23 @@ trait PlayerLatency extends StObject {
 }
 object PlayerLatency {
   
-  @scala.inline
-  def apply(): PlayerLatency = {
+  inline def apply(): PlayerLatency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerLatency]
   }
   
-  @scala.inline
-  implicit class PlayerLatencyMutableBuilder[Self <: PlayerLatency] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerLatency](x: Self) {
     
-    @scala.inline
-    def setLatencyInMilliseconds(value: Float): Self = StObject.set(x, "LatencyInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setLatencyInMilliseconds(value: Float): Self = StObject.set(x, "LatencyInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyInMillisecondsUndefined: Self = StObject.set(x, "LatencyInMilliseconds", js.undefined)
+    inline def setLatencyInMillisecondsUndefined: Self = StObject.set(x, "LatencyInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
     
-    @scala.inline
-    def setRegionIdentifier(value: NonZeroAndMaxString): Self = StObject.set(x, "RegionIdentifier", value.asInstanceOf[js.Any])
+    inline def setRegionIdentifier(value: NonZeroAndMaxString): Self = StObject.set(x, "RegionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionIdentifierUndefined: Self = StObject.set(x, "RegionIdentifier", js.undefined)
+    inline def setRegionIdentifierUndefined: Self = StObject.set(x, "RegionIdentifier", js.undefined)
   }
 }

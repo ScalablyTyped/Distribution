@@ -14,25 +14,19 @@ trait Header[TEvent /* <: js.Object */] extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](): Header[TEvent] = {
+  inline def apply[TEvent /* <: js.Object */](): Header[TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Header[TEvent]]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header[?], TEvent /* <: js.Object */] (val x: Self & Header[TEvent]) extends AnyVal {
+  extension [Self <: Header[?], TEvent /* <: js.Object */](x: Self & Header[TEvent]) {
     
-    @scala.inline
-    def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setHeader(value: ComponentType[js.Object]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ComponentType[js.Object]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

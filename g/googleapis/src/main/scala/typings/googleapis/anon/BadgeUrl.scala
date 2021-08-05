@@ -14,31 +14,23 @@ trait BadgeUrl extends StObject {
 }
 object BadgeUrl {
   
-  @scala.inline
-  def apply(): BadgeUrl = {
+  inline def apply(): BadgeUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BadgeUrl]
   }
   
-  @scala.inline
-  implicit class BadgeUrlMutableBuilder[Self <: BadgeUrl] (val x: Self) extends AnyVal {
+  extension [Self <: BadgeUrl](x: Self) {
     
-    @scala.inline
-    def setBadgeUrl(value: String): Self = StObject.set(x, "badgeUrl", value.asInstanceOf[js.Any])
+    inline def setBadgeUrl(value: String): Self = StObject.set(x, "badgeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUrlUndefined: Self = StObject.set(x, "badgeUrl", js.undefined)
+    inline def setBadgeUrlUndefined: Self = StObject.set(x, "badgeUrl", js.undefined)
     
-    @scala.inline
-    def setCategoryId(value: String): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
+    inline def setCategoryId(value: String): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryIdUndefined: Self = StObject.set(x, "categoryId", js.undefined)
+    inline def setCategoryIdUndefined: Self = StObject.set(x, "categoryId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

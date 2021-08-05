@@ -16,37 +16,27 @@ trait CommonMarkerProps extends StObject {
 }
 object CommonMarkerProps {
   
-  @scala.inline
-  def apply(): CommonMarkerProps = {
+  inline def apply(): CommonMarkerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonMarkerProps]
   }
   
-  @scala.inline
-  implicit class CommonMarkerPropsMutableBuilder[Self <: CommonMarkerProps] (val x: Self) extends AnyVal {
+  extension [Self <: CommonMarkerProps](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerEnd(value: String): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
+    inline def setMarkerEnd(value: String): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
+    inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
-    @scala.inline
-    def setMarkerMid(value: String): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
+    inline def setMarkerMid(value: String): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
+    inline def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
     
-    @scala.inline
-    def setMarkerStart(value: String): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
+    inline def setMarkerStart(value: String): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
+    inline def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
   }
 }

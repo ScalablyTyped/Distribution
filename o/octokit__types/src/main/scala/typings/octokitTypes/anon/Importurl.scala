@@ -22,8 +22,7 @@ trait Importurl extends StObject {
 }
 object Importurl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     email: String,
     id: Double,
     import_url: String,
@@ -36,28 +35,20 @@ object Importurl {
     __obj.asInstanceOf[Importurl]
   }
   
-  @scala.inline
-  implicit class ImporturlMutableBuilder[Self <: Importurl] (val x: Self) extends AnyVal {
+  extension [Self <: Importurl](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImport_url(value: String): Self = StObject.set(x, "import_url", value.asInstanceOf[js.Any])
+    inline def setImport_url(value: String): Self = StObject.set(x, "import_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemote_id(value: String): Self = StObject.set(x, "remote_id", value.asInstanceOf[js.Any])
+    inline def setRemote_id(value: String): Self = StObject.set(x, "remote_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemote_name(value: String): Self = StObject.set(x, "remote_name", value.asInstanceOf[js.Any])
+    inline def setRemote_name(value: String): Self = StObject.set(x, "remote_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

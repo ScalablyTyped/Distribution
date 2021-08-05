@@ -22,17 +22,14 @@ object tableExpandedRowMod extends Shortcut {
   }
   object TableExpandedRowProps {
     
-    @scala.inline
-    def apply(colSpan: Double): TableExpandedRowProps = {
+    inline def apply(colSpan: Double): TableExpandedRowProps = {
       val __obj = js.Dynamic.literal(colSpan = colSpan.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableExpandedRowProps]
     }
     
-    @scala.inline
-    implicit class TableExpandedRowPropsMutableBuilder[Self <: TableExpandedRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableExpandedRowProps](x: Self) {
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     }
   }
   

@@ -16,22 +16,18 @@ object optionsMod {
   }
   object ComponentOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
       
-      @scala.inline
-      def setHttp(
+      inline def setHttp(
         value: Dictkey & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any)
       ): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     }
   }
 }

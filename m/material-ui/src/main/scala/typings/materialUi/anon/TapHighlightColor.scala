@@ -10,19 +10,15 @@ trait TapHighlightColor extends StObject {
 }
 object TapHighlightColor {
   
-  @scala.inline
-  def apply(): TapHighlightColor = {
+  inline def apply(): TapHighlightColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TapHighlightColor]
   }
   
-  @scala.inline
-  implicit class TapHighlightColorMutableBuilder[Self <: TapHighlightColor] (val x: Self) extends AnyVal {
+  extension [Self <: TapHighlightColor](x: Self) {
     
-    @scala.inline
-    def setTapHighlightColor(value: String): Self = StObject.set(x, "tapHighlightColor", value.asInstanceOf[js.Any])
+    inline def setTapHighlightColor(value: String): Self = StObject.set(x, "tapHighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapHighlightColorUndefined: Self = StObject.set(x, "tapHighlightColor", js.undefined)
+    inline def setTapHighlightColorUndefined: Self = StObject.set(x, "tapHighlightColor", js.undefined)
   }
 }

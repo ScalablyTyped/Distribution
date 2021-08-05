@@ -274,8 +274,7 @@ object Texture {
   @JSImport("pixi.js", "Texture.EMPTY")
   @js.native
   def EMPTY: typings.pixiJs.PIXI.Texture = js.native
-  @scala.inline
-  def EMPTY_=(x: typings.pixiJs.PIXI.Texture): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
+  inline def EMPTY_=(x: typings.pixiJs.PIXI.Texture): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
   
   /**
     * A white texture of 16x16 size, used for graphics and other things
@@ -289,8 +288,7 @@ object Texture {
   @JSImport("pixi.js", "Texture.WHITE")
   @js.native
   def WHITE: typings.pixiJs.PIXI.Texture = js.native
-  @scala.inline
-  def WHITE_=(x: typings.pixiJs.PIXI.Texture): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
+  inline def WHITE_=(x: typings.pixiJs.PIXI.Texture): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
   
   /**
     * Adds a Texture to the global TextureCache. This cache is shared across the whole PIXI object.
@@ -300,8 +298,7 @@ object Texture {
     * @param {string} id - The id that the Texture will be stored against.
     */
   /* static member */
-  @scala.inline
-  def addToCache(texture: typings.pixiJs.PIXI.Texture, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToCache")(texture.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addToCache(texture: typings.pixiJs.PIXI.Texture, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToCache")(texture.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Helper function that creates a new Texture based on the source you provide.
@@ -315,46 +312,26 @@ object Texture {
     * @return {PIXI.Texture} The newly created texture
     */
   /* static member */
-  @scala.inline
-  def from(source: String): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: String, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: String, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: String, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: typings.pixiJs.PIXI.BaseTexture): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: typings.pixiJs.PIXI.BaseTexture, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLCanvasElement, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLImageElement): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLImageElement, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLImageElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLImageElement, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def from(source: HTMLVideoElement, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: String): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: String, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: String, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: String, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: typings.pixiJs.PIXI.BaseTexture): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: typings.pixiJs.PIXI.BaseTexture, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLCanvasElement, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLImageElement): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLImageElement, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLImageElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLImageElement, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def from(source: HTMLVideoElement, options: Unit, strict: Boolean): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
   
   /**
     * Create a new Texture with a BufferResource from a Float32Array.
@@ -368,19 +345,13 @@ object Texture {
     * @return {PIXI.Texture} The resulting new BaseTexture
     */
   /* static member */
-  @scala.inline
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromBuffer(buffer: Float32Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromBuffer(buffer: Uint8Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
   
-  @scala.inline
-  def fromLoader(source: HTMLCanvasElement, imageUrl: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def fromLoader(source: HTMLCanvasElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromLoader(source: HTMLCanvasElement, imageUrl: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromLoader(source: HTMLCanvasElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
   /**
     * Create a texture from a source and add to the cache.
     *
@@ -392,10 +363,8 @@ object Texture {
     * @return {PIXI.Texture} Output texture
     */
   /* static member */
-  @scala.inline
-  def fromLoader(source: HTMLImageElement, imageUrl: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
-  @scala.inline
-  def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromLoader(source: HTMLImageElement, imageUrl: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
+  inline def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Texture]
   
   /**
     * Useful for loading textures via URLs. Use instead of `Texture.from` because
@@ -406,10 +375,8 @@ object Texture {
     * @return {Promise<PIXI.Texture>} A Promise that resolves to a Texture.
     */
   /* static member */
-  @scala.inline
-  def fromURL(url: String): js.Promise[typings.pixiJs.PIXI.Texture] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pixiJs.PIXI.Texture]]
-  @scala.inline
-  def fromURL(url: String, options: js.Any): js.Promise[typings.pixiJs.PIXI.Texture] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pixiJs.PIXI.Texture]]
+  inline def fromURL(url: String): js.Promise[typings.pixiJs.PIXI.Texture] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pixiJs.PIXI.Texture]]
+  inline def fromURL(url: String, options: js.Any): js.Promise[typings.pixiJs.PIXI.Texture] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pixiJs.PIXI.Texture]]
   
   /**
     * Remove a Texture from the global TextureCache.
@@ -419,8 +386,6 @@ object Texture {
     * @return {PIXI.Texture|null} The Texture that was removed
     */
   /* static member */
-  @scala.inline
-  def removeFromCache(texture: String): typings.pixiJs.PIXI.Texture | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture | Null]
-  @scala.inline
-  def removeFromCache(texture: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Texture | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture | Null]
+  inline def removeFromCache(texture: String): typings.pixiJs.PIXI.Texture | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture | Null]
+  inline def removeFromCache(texture: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Texture | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Texture | Null]
 }

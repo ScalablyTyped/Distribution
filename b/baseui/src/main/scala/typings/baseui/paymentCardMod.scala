@@ -58,20 +58,15 @@ object paymentCardMod {
     @JSImport("baseui/payment-card", "valid.cardholderName")
     @js.native
     def cardholderName: js.Function1[/* value */ String | js.Any, Verification] = js.native
-    @scala.inline
-    def cardholderName(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
-    @scala.inline
-    def cardholderName(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
-    @scala.inline
-    def cardholderName_=(x: js.Function1[/* value */ String | js.Any, Verification]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cardholderName")(x.asInstanceOf[js.Any])
+    inline def cardholderName(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+    inline def cardholderName(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+    inline def cardholderName_=(x: js.Function1[/* value */ String | js.Any, Verification]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cardholderName")(x.asInstanceOf[js.Any])
     
     @JSImport("baseui/payment-card", "valid.creditCardType")
     @js.native
     def creditCardType: js.Function1[/* cardNumber */ String, js.Array[CreditCardType]] = js.native
-    @scala.inline
-    def creditCardType(cardNumber: String): js.Array[CreditCardType] = ^.asInstanceOf[js.Dynamic].applyDynamic("creditCardType")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[js.Array[CreditCardType]]
-    @scala.inline
-    def creditCardType_=(x: js.Function1[/* cardNumber */ String, js.Array[CreditCardType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("creditCardType")(x.asInstanceOf[js.Any])
+    inline def creditCardType(cardNumber: String): js.Array[CreditCardType] = ^.asInstanceOf[js.Dynamic].applyDynamic("creditCardType")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[js.Array[CreditCardType]]
+    inline def creditCardType_=(x: js.Function1[/* cardNumber */ String, js.Array[CreditCardType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("creditCardType")(x.asInstanceOf[js.Any])
     
     @JSImport("baseui/payment-card", "valid.cvv")
     @js.native
@@ -80,20 +75,13 @@ object paymentCardMod {
         /* maxLength */ js.UndefOr[Double | js.Array[Double]], 
         Verification
       ] = js.native
-    @scala.inline
-    def cvv(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
-    @scala.inline
-    def cvv(value: String, maxLength: js.Array[Double]): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
-    @scala.inline
-    def cvv(value: String, maxLength: Double): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
-    @scala.inline
-    def cvv(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
-    @scala.inline
-    def cvv(value: js.Any, maxLength: js.Array[Double]): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
-    @scala.inline
-    def cvv(value: js.Any, maxLength: Double): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
-    @scala.inline
-    def cvv_=(
+    inline def cvv(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+    inline def cvv(value: String, maxLength: js.Array[Double]): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+    inline def cvv(value: String, maxLength: Double): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+    inline def cvv(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+    inline def cvv(value: js.Any, maxLength: js.Array[Double]): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+    inline def cvv(value: js.Any, maxLength: Double): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+    inline def cvv_=(
       x: js.Function2[
           /* value */ String | js.Any, 
           /* maxLength */ js.UndefOr[Double | js.Array[Double]], 
@@ -108,20 +96,13 @@ object paymentCardMod {
         /* maxElapsedYear */ js.UndefOr[Double], 
         ExpirationDateVerification
       ] = js.native
-    @scala.inline
-    def expirationDate(value: String): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
-    @scala.inline
-    def expirationDate(value: String, maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
-    @scala.inline
-    def expirationDate(value: js.Any): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
-    @scala.inline
-    def expirationDate(value: js.Any, maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
-    @scala.inline
-    def expirationDate(value: Record[String, String | Double]): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
-    @scala.inline
-    def expirationDate(value: Record[String, String | Double], maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
-    @scala.inline
-    def expirationDate_=(
+    inline def expirationDate(value: String): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
+    inline def expirationDate(value: String, maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
+    inline def expirationDate(value: js.Any): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
+    inline def expirationDate(value: js.Any, maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
+    inline def expirationDate(value: Record[String, String | Double]): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
+    inline def expirationDate(value: Record[String, String | Double], maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
+    inline def expirationDate_=(
       x: js.Function2[
           /* value */ String | (Record[String, String | Double]) | js.Any, 
           /* maxElapsedYear */ js.UndefOr[Double], 
@@ -132,12 +113,9 @@ object paymentCardMod {
     @JSImport("baseui/payment-card", "valid.expirationMonth")
     @js.native
     def expirationMonth: js.Function1[/* value */ String | js.Any, ExpirationMonthVerification] = js.native
-    @scala.inline
-    def expirationMonth(value: String): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
-    @scala.inline
-    def expirationMonth(value: js.Any): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
-    @scala.inline
-    def expirationMonth_=(x: js.Function1[/* value */ String | js.Any, ExpirationMonthVerification]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expirationMonth")(x.asInstanceOf[js.Any])
+    inline def expirationMonth(value: String): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
+    inline def expirationMonth(value: js.Any): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
+    inline def expirationMonth_=(x: js.Function1[/* value */ String | js.Any, ExpirationMonthVerification]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expirationMonth")(x.asInstanceOf[js.Any])
     
     @JSImport("baseui/payment-card", "valid.expirationYear")
     @js.native
@@ -146,16 +124,11 @@ object paymentCardMod {
         /* maxElapsedYear */ js.UndefOr[Double], 
         ExpirationYearVerification
       ] = js.native
-    @scala.inline
-    def expirationYear(value: String): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
-    @scala.inline
-    def expirationYear(value: String, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
-    @scala.inline
-    def expirationYear(value: js.Any): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
-    @scala.inline
-    def expirationYear(value: js.Any, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
-    @scala.inline
-    def expirationYear_=(
+    inline def expirationYear(value: String): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
+    inline def expirationYear(value: String, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
+    inline def expirationYear(value: js.Any): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
+    inline def expirationYear(value: js.Any, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
+    inline def expirationYear_=(
       x: js.Function2[
           /* value */ String | js.Any, 
           /* maxElapsedYear */ js.UndefOr[Double], 
@@ -166,8 +139,7 @@ object paymentCardMod {
     @JSImport("baseui/payment-card", "valid.number")
     @js.native
     def number: Double = js.native
-    @scala.inline
-    def number_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
+    inline def number_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
     
     @JSImport("baseui/payment-card", "valid.postalCode")
     @js.native
@@ -176,16 +148,11 @@ object paymentCardMod {
         /* options */ js.UndefOr[PostalCodeOptions], 
         Verification
       ] = js.native
-    @scala.inline
-    def postalCode(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
-    @scala.inline
-    def postalCode(value: String, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
-    @scala.inline
-    def postalCode(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
-    @scala.inline
-    def postalCode(value: js.Any, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
-    @scala.inline
-    def postalCode_=(
+    inline def postalCode(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+    inline def postalCode(value: String, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
+    inline def postalCode(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+    inline def postalCode(value: js.Any, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
+    inline def postalCode_=(
       x: js.Function2[
           /* value */ String | js.Any, 
           /* options */ js.UndefOr[PostalCodeOptions], 
@@ -251,118 +218,90 @@ object paymentCardMod {
   }
   object PaymentCardOverrides {
     
-    @scala.inline
-    def apply(): PaymentCardOverrides = {
+    inline def apply(): PaymentCardOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaymentCardOverrides]
     }
     
-    @scala.inline
-    implicit class PaymentCardOverridesMutableBuilder[Self <: PaymentCardOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentCardOverrides](x: Self) {
       
-      @scala.inline
-      def setAfter(
+      inline def setAfter(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "After", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "After", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "After", js.undefined)
       
-      @scala.inline
-      def setBefore(
+      inline def setBefore(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "Before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "Before", js.undefined)
       
-      @scala.inline
-      def setClearIcon(
+      inline def setClearIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "ClearIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearIconContainer(
+      inline def setClearIconContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "ClearIconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearIconContainerUndefined: Self = StObject.set(x, "ClearIconContainer", js.undefined)
+      inline def setClearIconContainerUndefined: Self = StObject.set(x, "ClearIconContainer", js.undefined)
       
-      @scala.inline
-      def setClearIconUndefined: Self = StObject.set(x, "ClearIcon", js.undefined)
+      inline def setClearIconUndefined: Self = StObject.set(x, "ClearIcon", js.undefined)
       
-      @scala.inline
-      def setEndEnhancer(
+      inline def setEndEnhancer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "EndEnhancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndEnhancerUndefined: Self = StObject.set(x, "EndEnhancer", js.undefined)
+      inline def setEndEnhancerUndefined: Self = StObject.set(x, "EndEnhancer", js.undefined)
       
-      @scala.inline
-      def setIconWrapper(
+      inline def setIconWrapper(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "IconWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconWrapperUndefined: Self = StObject.set(x, "IconWrapper", js.undefined)
+      inline def setIconWrapperUndefined: Self = StObject.set(x, "IconWrapper", js.undefined)
       
-      @scala.inline
-      def setInput(
+      inline def setInput(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputContainer(
+      inline def setInputContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "InputContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputContainerUndefined: Self = StObject.set(x, "InputContainer", js.undefined)
+      inline def setInputContainerUndefined: Self = StObject.set(x, "InputContainer", js.undefined)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
       
-      @scala.inline
-      def setMaskToggleButton(
+      inline def setMaskToggleButton(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "MaskToggleButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskToggleButtonUndefined: Self = StObject.set(x, "MaskToggleButton", js.undefined)
+      inline def setMaskToggleButtonUndefined: Self = StObject.set(x, "MaskToggleButton", js.undefined)
       
-      @scala.inline
-      def setMaskToggleHideIcon(
+      inline def setMaskToggleHideIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "MaskToggleHideIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskToggleHideIconUndefined: Self = StObject.set(x, "MaskToggleHideIcon", js.undefined)
+      inline def setMaskToggleHideIconUndefined: Self = StObject.set(x, "MaskToggleHideIcon", js.undefined)
       
-      @scala.inline
-      def setMaskToggleShowIcon(
+      inline def setMaskToggleShowIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "MaskToggleShowIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskToggleShowIconUndefined: Self = StObject.set(x, "MaskToggleShowIcon", js.undefined)
+      inline def setMaskToggleShowIconUndefined: Self = StObject.set(x, "MaskToggleShowIcon", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setStartEnhancer(
+      inline def setStartEnhancer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "StartEnhancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartEnhancerUndefined: Self = StObject.set(x, "StartEnhancer", js.undefined)
+      inline def setStartEnhancerUndefined: Self = StObject.set(x, "StartEnhancer", js.undefined)
     }
   }
   
@@ -375,20 +314,16 @@ object paymentCardMod {
   }
   object PaymentCardProps {
     
-    @scala.inline
-    def apply(): PaymentCardProps = {
+    inline def apply(): PaymentCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaymentCardProps]
     }
     
-    @scala.inline
-    implicit class PaymentCardPropsMutableBuilder[Self <: PaymentCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentCardProps](x: Self) {
       
-      @scala.inline
-      def setOverrides(value: PaymentCardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PaymentCardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -408,38 +343,28 @@ object paymentCardMod {
   }
   object StatefulPaymentCardProps {
     
-    @scala.inline
-    def apply(): StatefulPaymentCardProps = {
+    inline def apply(): StatefulPaymentCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulPaymentCardProps]
     }
     
-    @scala.inline
-    implicit class StatefulPaymentCardPropsMutableBuilder[Self <: StatefulPaymentCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulPaymentCardProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: scala.Nothing | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: scala.Nothing | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: PaymentCardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PaymentCardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
 }

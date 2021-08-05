@@ -38,49 +38,35 @@ trait ConfigExportDeliveryInfo extends StObject {
 }
 object ConfigExportDeliveryInfo {
   
-  @scala.inline
-  def apply(): ConfigExportDeliveryInfo = {
+  inline def apply(): ConfigExportDeliveryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigExportDeliveryInfo]
   }
   
-  @scala.inline
-  implicit class ConfigExportDeliveryInfoMutableBuilder[Self <: ConfigExportDeliveryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigExportDeliveryInfo](x: Self) {
     
-    @scala.inline
-    def setLastAttemptTime(value: Date): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
+    inline def setLastAttemptTime(value: Date): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
+    inline def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
     
-    @scala.inline
-    def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
+    inline def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
+    inline def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
     
-    @scala.inline
-    def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
+    inline def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
+    inline def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastStatus(value: DeliveryStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
+    inline def setLastStatus(value: DeliveryStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
+    inline def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
-    @scala.inline
-    def setLastSuccessfulTime(value: Date): Self = StObject.set(x, "lastSuccessfulTime", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfulTime(value: Date): Self = StObject.set(x, "lastSuccessfulTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSuccessfulTimeUndefined: Self = StObject.set(x, "lastSuccessfulTime", js.undefined)
+    inline def setLastSuccessfulTimeUndefined: Self = StObject.set(x, "lastSuccessfulTime", js.undefined)
     
-    @scala.inline
-    def setNextDeliveryTime(value: Date): Self = StObject.set(x, "nextDeliveryTime", value.asInstanceOf[js.Any])
+    inline def setNextDeliveryTime(value: Date): Self = StObject.set(x, "nextDeliveryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextDeliveryTimeUndefined: Self = StObject.set(x, "nextDeliveryTime", js.undefined)
+    inline def setNextDeliveryTimeUndefined: Self = StObject.set(x, "nextDeliveryTime", js.undefined)
   }
 }

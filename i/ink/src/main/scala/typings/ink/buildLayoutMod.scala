@@ -13,10 +13,8 @@ object buildLayoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildLayout(node: DOMElement, options: BuildLayoutOptions): TextNode | DOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLayout")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TextNode | DOMElement]
-  @scala.inline
-  def buildLayout(node: TextNode, options: BuildLayoutOptions): TextNode | DOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLayout")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TextNode | DOMElement]
+  inline def buildLayout(node: DOMElement, options: BuildLayoutOptions): TextNode | DOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLayout")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TextNode | DOMElement]
+  inline def buildLayout(node: TextNode, options: BuildLayoutOptions): TextNode | DOMElement = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLayout")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TextNode | DOMElement]
   
   trait BuildLayoutOptions extends StObject {
     
@@ -28,23 +26,18 @@ object buildLayoutMod {
   }
   object BuildLayoutOptions {
     
-    @scala.inline
-    def apply(config: YogaConfig, skipStaticElements: Boolean, terminalWidth: Double): BuildLayoutOptions = {
+    inline def apply(config: YogaConfig, skipStaticElements: Boolean, terminalWidth: Double): BuildLayoutOptions = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], skipStaticElements = skipStaticElements.asInstanceOf[js.Any], terminalWidth = terminalWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildLayoutOptions]
     }
     
-    @scala.inline
-    implicit class BuildLayoutOptionsMutableBuilder[Self <: BuildLayoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BuildLayoutOptions](x: Self) {
       
-      @scala.inline
-      def setConfig(value: YogaConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: YogaConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipStaticElements(value: Boolean): Self = StObject.set(x, "skipStaticElements", value.asInstanceOf[js.Any])
+      inline def setSkipStaticElements(value: Boolean): Self = StObject.set(x, "skipStaticElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminalWidth(value: Double): Self = StObject.set(x, "terminalWidth", value.asInstanceOf[js.Any])
+      inline def setTerminalWidth(value: Double): Self = StObject.set(x, "terminalWidth", value.asInstanceOf[js.Any])
     }
   }
 }

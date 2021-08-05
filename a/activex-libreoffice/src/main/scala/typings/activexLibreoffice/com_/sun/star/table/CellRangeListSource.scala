@@ -27,8 +27,7 @@ trait CellRangeListSource
 }
 object CellRangeListSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllListEntries: SafeArray[String],
     CellRange: CellRangeAddress,
     ListEntryCount: Double,
@@ -49,10 +48,8 @@ object CellRangeListSource {
     __obj.asInstanceOf[CellRangeListSource]
   }
   
-  @scala.inline
-  implicit class CellRangeListSourceMutableBuilder[Self <: CellRangeListSource] (val x: Self) extends AnyVal {
+  extension [Self <: CellRangeListSource](x: Self) {
     
-    @scala.inline
-    def setCellRange(value: CellRangeAddress): Self = StObject.set(x, "CellRange", value.asInstanceOf[js.Any])
+    inline def setCellRange(value: CellRangeAddress): Self = StObject.set(x, "CellRange", value.asInstanceOf[js.Any])
   }
 }

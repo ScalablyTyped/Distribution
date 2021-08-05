@@ -41,49 +41,34 @@ object UserDataPart {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CITY: `7` = 7.asInstanceOf[`7`]
+    inline def CITY: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def COMPANY: `0` = 0.asInstanceOf[`0`]
+    inline def COMPANY: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def COUNTRY: `5` = 5.asInstanceOf[`5`]
+    inline def COUNTRY: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def EMAIL: `13` = 13.asInstanceOf[`13`]
+    inline def EMAIL: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def FAX: `12` = 12.asInstanceOf[`12`]
+    inline def FAX: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def FIRSTNAME: `1` = 1.asInstanceOf[`1`]
+    inline def FIRSTNAME: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NAME: `2` = 2.asInstanceOf[`2`]
+    inline def NAME: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def PHONE_COMPANY: `11` = 11.asInstanceOf[`11`]
+    inline def PHONE_COMPANY: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def PHONE_PRIVATE: `10` = 10.asInstanceOf[`10`]
+    inline def PHONE_PRIVATE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def POSITION: `9` = 9.asInstanceOf[`9`]
+    inline def POSITION: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def SHORTCUT: `3` = 3.asInstanceOf[`3`]
+    inline def SHORTCUT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def STATE: `14` = 14.asInstanceOf[`14`]
+    inline def STATE: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def STREET: `4` = 4.asInstanceOf[`4`]
+    inline def STREET: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def TITLE: `8` = 8.asInstanceOf[`8`]
+    inline def TITLE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def ZIP: `6` = 6.asInstanceOf[`6`]
+    inline def ZIP: `6` = 6.asInstanceOf[`6`]
   }
 }

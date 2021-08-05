@@ -13,7 +13,7 @@ trait HeaderFooter extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.HeaderFooter_typekey")
+  /* private */ @JSName("PowerPoint.HeaderFooter_typekey")
   var PowerPointDotHeaderFooter_typekey: HeaderFooter
   
   var Text: String
@@ -24,8 +24,7 @@ trait HeaderFooter extends StObject {
 }
 object HeaderFooter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Format: PpDateTimeFormat,
     Parent: js.Any,
@@ -39,28 +38,20 @@ object HeaderFooter {
     __obj.asInstanceOf[HeaderFooter]
   }
   
-  @scala.inline
-  implicit class HeaderFooterMutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderFooter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: PpDateTimeFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PpDateTimeFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "PowerPoint.HeaderFooter_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "PowerPoint.HeaderFooter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFormat(value: MsoTriState): Self = StObject.set(x, "UseFormat", value.asInstanceOf[js.Any])
+    inline def setUseFormat(value: MsoTriState): Self = StObject.set(x, "UseFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

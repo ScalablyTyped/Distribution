@@ -24,25 +24,19 @@ trait ParamsResourceResellernotifyUnregister
 }
 object ParamsResourceResellernotifyUnregister {
   
-  @scala.inline
-  def apply(): ParamsResourceResellernotifyUnregister = {
+  inline def apply(): ParamsResourceResellernotifyUnregister = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceResellernotifyUnregister]
   }
   
-  @scala.inline
-  implicit class ParamsResourceResellernotifyUnregisterMutableBuilder[Self <: ParamsResourceResellernotifyUnregister] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceResellernotifyUnregister](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmailAddress(value: String): Self = StObject.set(x, "serviceAccountEmailAddress", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmailAddress(value: String): Self = StObject.set(x, "serviceAccountEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailAddressUndefined: Self = StObject.set(x, "serviceAccountEmailAddress", js.undefined)
+    inline def setServiceAccountEmailAddressUndefined: Self = StObject.set(x, "serviceAccountEmailAddress", js.undefined)
   }
 }

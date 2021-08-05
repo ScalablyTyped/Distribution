@@ -23,31 +23,23 @@ trait DetectionFilter extends StObject {
 }
 object DetectionFilter {
   
-  @scala.inline
-  def apply(): DetectionFilter = {
+  inline def apply(): DetectionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectionFilter]
   }
   
-  @scala.inline
-  implicit class DetectionFilterMutableBuilder[Self <: DetectionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DetectionFilter](x: Self) {
     
-    @scala.inline
-    def setMinBoundingBoxHeight(value: BoundingBoxHeight): Self = StObject.set(x, "MinBoundingBoxHeight", value.asInstanceOf[js.Any])
+    inline def setMinBoundingBoxHeight(value: BoundingBoxHeight): Self = StObject.set(x, "MinBoundingBoxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBoundingBoxHeightUndefined: Self = StObject.set(x, "MinBoundingBoxHeight", js.undefined)
+    inline def setMinBoundingBoxHeightUndefined: Self = StObject.set(x, "MinBoundingBoxHeight", js.undefined)
     
-    @scala.inline
-    def setMinBoundingBoxWidth(value: BoundingBoxWidth): Self = StObject.set(x, "MinBoundingBoxWidth", value.asInstanceOf[js.Any])
+    inline def setMinBoundingBoxWidth(value: BoundingBoxWidth): Self = StObject.set(x, "MinBoundingBoxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBoundingBoxWidthUndefined: Self = StObject.set(x, "MinBoundingBoxWidth", js.undefined)
+    inline def setMinBoundingBoxWidthUndefined: Self = StObject.set(x, "MinBoundingBoxWidth", js.undefined)
     
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
+    inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
+    inline def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
   }
 }

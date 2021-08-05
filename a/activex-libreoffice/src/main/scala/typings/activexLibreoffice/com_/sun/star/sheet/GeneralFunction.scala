@@ -43,28 +43,22 @@ object GeneralFunction {
     *
     * function is determined automatically. <p>If the values are all numerical, SUM is used, otherwise COUNT.</p>
     */
-  @scala.inline
-  def AUTO: `1` = 1.asInstanceOf[`1`]
+  inline def AUTO: `1` = 1.asInstanceOf[`1`]
   
   /** average of all numerical values is calculated. */
-  @scala.inline
-  def AVERAGE: `4` = 4.asInstanceOf[`4`]
+  inline def AVERAGE: `4` = 4.asInstanceOf[`4`]
   
   /** all values, including non-numerical values, are counted. */
-  @scala.inline
-  def COUNT: `3` = 3.asInstanceOf[`3`]
+  inline def COUNT: `3` = 3.asInstanceOf[`3`]
   
   /** numerical values are counted. */
-  @scala.inline
-  def COUNTNUMS: `8` = 8.asInstanceOf[`8`]
+  inline def COUNTNUMS: `8` = 8.asInstanceOf[`8`]
   
   /** maximum value of all numerical values is calculated. */
-  @scala.inline
-  def MAX: `5` = 5.asInstanceOf[`5`]
+  inline def MAX: `5` = 5.asInstanceOf[`5`]
   
   /** minimum value of all numerical values is calculated. */
-  @scala.inline
-  def MIN: `6` = 6.asInstanceOf[`6`]
+  inline def MIN: `6` = 6.asInstanceOf[`6`]
   
   /**
     * no cells are moved.
@@ -79,30 +73,23 @@ object GeneralFunction {
     *
     * sheet is not linked.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** product of all numerical values is calculated. */
-  @scala.inline
-  def PRODUCT: `7` = 7.asInstanceOf[`7`]
+  inline def PRODUCT: `7` = 7.asInstanceOf[`7`]
   
   /** standard deviation is calculated based on a sample. */
-  @scala.inline
-  def STDEV: `9` = 9.asInstanceOf[`9`]
+  inline def STDEV: `9` = 9.asInstanceOf[`9`]
   
   /** standard deviation is calculated based on the entire population. */
-  @scala.inline
-  def STDEVP: `10` = 10.asInstanceOf[`10`]
+  inline def STDEVP: `10` = 10.asInstanceOf[`10`]
   
   /** sum of all numerical values is calculated. */
-  @scala.inline
-  def SUM: `2` = 2.asInstanceOf[`2`]
+  inline def SUM: `2` = 2.asInstanceOf[`2`]
   
   /** variance is calculated based on a sample. */
-  @scala.inline
-  def VAR: `11` = 11.asInstanceOf[`11`]
+  inline def VAR: `11` = 11.asInstanceOf[`11`]
   
   /** variance is calculated based on the entire population. */
-  @scala.inline
-  def VARP: `12` = 12.asInstanceOf[`12`]
+  inline def VARP: `12` = 12.asInstanceOf[`12`]
 }

@@ -7,39 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(fromProjection: String): Converter = ^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any]).asInstanceOf[Converter]
-  @scala.inline
-  def apply(fromProjection: String, toProjection: String): Converter = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any])).asInstanceOf[Converter]
-  @scala.inline
-  def apply(fromProjection: String, toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def apply(fromProjection: String, toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
-  @scala.inline
-  def apply(toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def apply(toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].apply(toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
+  inline def apply(fromProjection: String): Converter = ^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any]).asInstanceOf[Converter]
+  inline def apply(fromProjection: String, toProjection: String): Converter = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any])).asInstanceOf[Converter]
+  inline def apply(fromProjection: String, toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def apply(fromProjection: String, toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
+  inline def apply(toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def apply(toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].apply(toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
   
   @JSImport("proj4", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Point(coordinates: String): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("Point")(coordinates.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
-  @scala.inline
-  def Point(coordinates: TemplateCoordinates): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("Point")(coordinates.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
+  inline def Point(coordinates: String): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("Point")(coordinates.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
+  inline def Point(coordinates: TemplateCoordinates): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("Point")(coordinates.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
   /**
     * @deprecated v3
     */
-  @scala.inline
-  def Point(x: Double, y: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
-  @scala.inline
-  def Point(x: Double, y: Double, z: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
+  inline def Point(x: Double, y: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
+  inline def Point(x: Double, y: Double, z: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
   
-  @scala.inline
-  def Proj(srsCode: js.Any): InterfaceProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any]).asInstanceOf[InterfaceProjection]
-  @scala.inline
-  def Proj(srsCode: js.Any, callback: js.Any): InterfaceProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[InterfaceProjection]
+  inline def Proj(srsCode: js.Any): InterfaceProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any]).asInstanceOf[InterfaceProjection]
+  inline def Proj(srsCode: js.Any, callback: js.Any): InterfaceProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[InterfaceProjection]
   
   @JSImport("proj4", "WGS84")
   @js.native
@@ -49,23 +37,16 @@ object mod {
   @js.native
   val defaultDatum: String = js.native
   
-  @scala.inline
-  def defs(name: String): ProjectionDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any]).asInstanceOf[ProjectionDefinition]
-  @scala.inline
-  def defs(name: String, projection: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def defs(name: String, projection: ProjectionDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def defs(name: js.Array[js.Array[String]]): js.Array[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[Unit]]
+  inline def defs(name: String): ProjectionDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any]).asInstanceOf[ProjectionDefinition]
+  inline def defs(name: String, projection: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defs(name: String, projection: ProjectionDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defs(name: js.Array[js.Array[String]]): js.Array[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[Unit]]
   
-  @scala.inline
-  def mgrs(coordinates: js.Array[Double], accuracy: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mgrs")(coordinates.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mgrs(coordinates: js.Array[Double], accuracy: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mgrs")(coordinates.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toPoint(array: js.Array[Double]): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("toPoint")(array.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
+  inline def toPoint(array: js.Array[Double]): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("toPoint")(array.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
   
-  @scala.inline
-  def transform(source: InterfaceProjection, dest: InterfaceProjection, point: TemplateCoordinates): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def transform(source: InterfaceProjection, dest: InterfaceProjection, point: TemplateCoordinates): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("proj4", "version")
   @js.native
@@ -93,32 +74,24 @@ object mod {
   }
   object InterfaceCoordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): InterfaceCoordinates = {
+    inline def apply(x: Double, y: Double): InterfaceCoordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterfaceCoordinates]
     }
     
-    @scala.inline
-    implicit class InterfaceCoordinatesMutableBuilder[Self <: InterfaceCoordinates] (val x: Self) extends AnyVal {
+    extension [Self <: InterfaceCoordinates](x: Self) {
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+      inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     }
   }
   
@@ -136,29 +109,22 @@ object mod {
   }
   object InterfaceDatum {
     
-    @scala.inline
-    def apply(a: Double, b: Double, datum_type: Double, ep2: Double, es: Double): InterfaceDatum = {
+    inline def apply(a: Double, b: Double, datum_type: Double, ep2: Double, es: Double): InterfaceDatum = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], datum_type = datum_type.asInstanceOf[js.Any], ep2 = ep2.asInstanceOf[js.Any], es = es.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterfaceDatum]
     }
     
-    @scala.inline
-    implicit class InterfaceDatumMutableBuilder[Self <: InterfaceDatum] (val x: Self) extends AnyVal {
+    extension [Self <: InterfaceDatum](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatum_type(value: Double): Self = StObject.set(x, "datum_type", value.asInstanceOf[js.Any])
+      inline def setDatum_type(value: Double): Self = StObject.set(x, "datum_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEp2(value: Double): Self = StObject.set(x, "ep2", value.asInstanceOf[js.Any])
+      inline def setEp2(value: Double): Self = StObject.set(x, "ep2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs(value: Double): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+      inline def setEs(value: Double): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,8 +150,7 @@ object mod {
   }
   object InterfaceProjection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       b: Double,
       datum: String,
       e: Double,
@@ -200,35 +165,25 @@ object mod {
       __obj.asInstanceOf[InterfaceProjection]
     }
     
-    @scala.inline
-    implicit class InterfaceProjectionMutableBuilder[Self <: InterfaceProjection] (val x: Self) extends AnyVal {
+    extension [Self <: InterfaceProjection](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatum(value: String): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: String): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEp2(value: Double): Self = StObject.set(x, "ep2", value.asInstanceOf[js.Any])
+      inline def setEp2(value: Double): Self = StObject.set(x, "ep2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs(value: Double): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+      inline def setEs(value: Double): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForward(value: TemplateCoordinates => js.Array[Double]): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
+      inline def setForward(value: TemplateCoordinates => js.Array[Double]): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInverse(value: TemplateCoordinates => js.Array[Double]): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
+      inline def setInverse(value: TemplateCoordinates => js.Array[Double]): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRf(value: Double): Self = StObject.set(x, "rf", value.asInstanceOf[js.Any])
+      inline def setRf(value: Double): Self = StObject.set(x, "rf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSphere(value: Double): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+      inline def setSphere(value: Double): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,194 +251,132 @@ object mod {
   }
   object ProjectionDefinition {
     
-    @scala.inline
-    def apply(title: String): ProjectionDefinition = {
+    inline def apply(title: String): ProjectionDefinition = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectionDefinition]
     }
     
-    @scala.inline
-    implicit class ProjectionDefinitionMutableBuilder[Self <: ProjectionDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectionDefinition](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
       
-      @scala.inline
-      def setDatum(value: String): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: String): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatumCode(value: String): Self = StObject.set(x, "datumCode", value.asInstanceOf[js.Any])
+      inline def setDatumCode(value: String): Self = StObject.set(x, "datumCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatumCodeUndefined: Self = StObject.set(x, "datumCode", js.undefined)
+      inline def setDatumCodeUndefined: Self = StObject.set(x, "datumCode", js.undefined)
       
-      @scala.inline
-      def setDatumName(value: String): Self = StObject.set(x, "datumName", value.asInstanceOf[js.Any])
+      inline def setDatumName(value: String): Self = StObject.set(x, "datumName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatumNameUndefined: Self = StObject.set(x, "datumName", js.undefined)
+      inline def setDatumNameUndefined: Self = StObject.set(x, "datumName", js.undefined)
       
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+      inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
       
-      @scala.inline
-      def setDatum_params(value: String | js.Array[Double]): Self = StObject.set(x, "datum_params", value.asInstanceOf[js.Any])
+      inline def setDatum_params(value: String | js.Array[Double]): Self = StObject.set(x, "datum_params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatum_paramsUndefined: Self = StObject.set(x, "datum_params", js.undefined)
+      inline def setDatum_paramsUndefined: Self = StObject.set(x, "datum_params", js.undefined)
       
-      @scala.inline
-      def setDatum_paramsVarargs(value: Double*): Self = StObject.set(x, "datum_params", js.Array(value :_*))
+      inline def setDatum_paramsVarargs(value: Double*): Self = StObject.set(x, "datum_params", js.Array(value :_*))
       
-      @scala.inline
-      def setEllps(value: String): Self = StObject.set(x, "ellps", value.asInstanceOf[js.Any])
+      inline def setEllps(value: String): Self = StObject.set(x, "ellps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllpsUndefined: Self = StObject.set(x, "ellps", js.undefined)
+      inline def setEllpsUndefined: Self = StObject.set(x, "ellps", js.undefined)
       
-      @scala.inline
-      def setFrom_greenwich(value: Double): Self = StObject.set(x, "from_greenwich", value.asInstanceOf[js.Any])
+      inline def setFrom_greenwich(value: Double): Self = StObject.set(x, "from_greenwich", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_greenwichUndefined: Self = StObject.set(x, "from_greenwich", js.undefined)
+      inline def setFrom_greenwichUndefined: Self = StObject.set(x, "from_greenwich", js.undefined)
       
-      @scala.inline
-      def setK0(value: Double): Self = StObject.set(x, "k0", value.asInstanceOf[js.Any])
+      inline def setK0(value: Double): Self = StObject.set(x, "k0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK0Undefined: Self = StObject.set(x, "k0", js.undefined)
+      inline def setK0Undefined: Self = StObject.set(x, "k0", js.undefined)
       
-      @scala.inline
-      def setLat0(value: Double): Self = StObject.set(x, "lat0", value.asInstanceOf[js.Any])
+      inline def setLat0(value: Double): Self = StObject.set(x, "lat0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat0Undefined: Self = StObject.set(x, "lat0", js.undefined)
+      inline def setLat0Undefined: Self = StObject.set(x, "lat0", js.undefined)
       
-      @scala.inline
-      def setLat1(value: Double): Self = StObject.set(x, "lat1", value.asInstanceOf[js.Any])
+      inline def setLat1(value: Double): Self = StObject.set(x, "lat1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat1Undefined: Self = StObject.set(x, "lat1", js.undefined)
+      inline def setLat1Undefined: Self = StObject.set(x, "lat1", js.undefined)
       
-      @scala.inline
-      def setLat2(value: Double): Self = StObject.set(x, "lat2", value.asInstanceOf[js.Any])
+      inline def setLat2(value: Double): Self = StObject.set(x, "lat2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat2Undefined: Self = StObject.set(x, "lat2", js.undefined)
+      inline def setLat2Undefined: Self = StObject.set(x, "lat2", js.undefined)
       
-      @scala.inline
-      def setLat_ts(value: Double): Self = StObject.set(x, "lat_ts", value.asInstanceOf[js.Any])
+      inline def setLat_ts(value: Double): Self = StObject.set(x, "lat_ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat_tsUndefined: Self = StObject.set(x, "lat_ts", js.undefined)
+      inline def setLat_tsUndefined: Self = StObject.set(x, "lat_ts", js.undefined)
       
-      @scala.inline
-      def setLong0(value: Double): Self = StObject.set(x, "long0", value.asInstanceOf[js.Any])
+      inline def setLong0(value: Double): Self = StObject.set(x, "long0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong0Undefined: Self = StObject.set(x, "long0", js.undefined)
+      inline def setLong0Undefined: Self = StObject.set(x, "long0", js.undefined)
       
-      @scala.inline
-      def setLong1(value: Double): Self = StObject.set(x, "long1", value.asInstanceOf[js.Any])
+      inline def setLong1(value: Double): Self = StObject.set(x, "long1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong1Undefined: Self = StObject.set(x, "long1", js.undefined)
+      inline def setLong1Undefined: Self = StObject.set(x, "long1", js.undefined)
       
-      @scala.inline
-      def setLong2(value: Double): Self = StObject.set(x, "long2", value.asInstanceOf[js.Any])
+      inline def setLong2(value: Double): Self = StObject.set(x, "long2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong2Undefined: Self = StObject.set(x, "long2", js.undefined)
+      inline def setLong2Undefined: Self = StObject.set(x, "long2", js.undefined)
       
-      @scala.inline
-      def setLongc(value: Double): Self = StObject.set(x, "longc", value.asInstanceOf[js.Any])
+      inline def setLongc(value: Double): Self = StObject.set(x, "longc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongcUndefined: Self = StObject.set(x, "longc", js.undefined)
+      inline def setLongcUndefined: Self = StObject.set(x, "longc", js.undefined)
       
-      @scala.inline
-      def setNatGrids(value: String): Self = StObject.set(x, "natGrids", value.asInstanceOf[js.Any])
+      inline def setNatGrids(value: String): Self = StObject.set(x, "natGrids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNatGridsUndefined: Self = StObject.set(x, "natGrids", js.undefined)
+      inline def setNatGridsUndefined: Self = StObject.set(x, "natGrids", js.undefined)
       
-      @scala.inline
-      def setProjName(value: String): Self = StObject.set(x, "projName", value.asInstanceOf[js.Any])
+      inline def setProjName(value: String): Self = StObject.set(x, "projName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjNameUndefined: Self = StObject.set(x, "projName", js.undefined)
+      inline def setProjNameUndefined: Self = StObject.set(x, "projName", js.undefined)
       
-      @scala.inline
-      def setR_A(value: `true`): Self = StObject.set(x, "R_A", value.asInstanceOf[js.Any])
+      inline def setR_A(value: `true`): Self = StObject.set(x, "R_A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR_AUndefined: Self = StObject.set(x, "R_A", js.undefined)
+      inline def setR_AUndefined: Self = StObject.set(x, "R_A", js.undefined)
       
-      @scala.inline
-      def setRf(value: Double): Self = StObject.set(x, "rf", value.asInstanceOf[js.Any])
+      inline def setRf(value: Double): Self = StObject.set(x, "rf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRfUndefined: Self = StObject.set(x, "rf", js.undefined)
+      inline def setRfUndefined: Self = StObject.set(x, "rf", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_meter(value: Double): Self = StObject.set(x, "to_meter", value.asInstanceOf[js.Any])
+      inline def setTo_meter(value: Double): Self = StObject.set(x, "to_meter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_meterUndefined: Self = StObject.set(x, "to_meter", js.undefined)
+      inline def setTo_meterUndefined: Self = StObject.set(x, "to_meter", js.undefined)
       
-      @scala.inline
-      def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
-      @scala.inline
-      def setUtmSouth(value: `true`): Self = StObject.set(x, "utmSouth", value.asInstanceOf[js.Any])
+      inline def setUtmSouth(value: `true`): Self = StObject.set(x, "utmSouth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtmSouthUndefined: Self = StObject.set(x, "utmSouth", js.undefined)
+      inline def setUtmSouthUndefined: Self = StObject.set(x, "utmSouth", js.undefined)
       
-      @scala.inline
-      def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
+      inline def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setZone(value: Double): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+      inline def setZone(value: Double): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+      inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     }
   }
   

@@ -13,9 +13,9 @@ object typeTokenMod {
     def this(`type`: js.Array[js.Any]) = this()
     def this(`type`: ClassType[T]) = this()
     
-    var _hash: js.Any = js.native
+    /* private */ var _hash: js.Any = js.native
     
-    var _type: js.Any = js.native
+    /* private */ var _type: js.Any = js.native
     
     val hash: String = js.native
     

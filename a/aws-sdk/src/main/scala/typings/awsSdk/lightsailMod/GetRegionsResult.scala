@@ -13,22 +13,17 @@ trait GetRegionsResult extends StObject {
 }
 object GetRegionsResult {
   
-  @scala.inline
-  def apply(): GetRegionsResult = {
+  inline def apply(): GetRegionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRegionsResult]
   }
   
-  @scala.inline
-  implicit class GetRegionsResultMutableBuilder[Self <: GetRegionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRegionsResult](x: Self) {
     
-    @scala.inline
-    def setRegions(value: RegionList): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: RegionList): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

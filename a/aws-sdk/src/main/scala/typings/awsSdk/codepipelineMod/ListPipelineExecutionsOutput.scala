@@ -18,28 +18,21 @@ trait ListPipelineExecutionsOutput extends StObject {
 }
 object ListPipelineExecutionsOutput {
   
-  @scala.inline
-  def apply(): ListPipelineExecutionsOutput = {
+  inline def apply(): ListPipelineExecutionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPipelineExecutionsOutput]
   }
   
-  @scala.inline
-  implicit class ListPipelineExecutionsOutputMutableBuilder[Self <: ListPipelineExecutionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPipelineExecutionsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPipelineExecutionSummaries(value: PipelineExecutionSummaryList): Self = StObject.set(x, "pipelineExecutionSummaries", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionSummaries(value: PipelineExecutionSummaryList): Self = StObject.set(x, "pipelineExecutionSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionSummariesUndefined: Self = StObject.set(x, "pipelineExecutionSummaries", js.undefined)
+    inline def setPipelineExecutionSummariesUndefined: Self = StObject.set(x, "pipelineExecutionSummaries", js.undefined)
     
-    @scala.inline
-    def setPipelineExecutionSummariesVarargs(value: PipelineExecutionSummary*): Self = StObject.set(x, "pipelineExecutionSummaries", js.Array(value :_*))
+    inline def setPipelineExecutionSummariesVarargs(value: PipelineExecutionSummary*): Self = StObject.set(x, "pipelineExecutionSummaries", js.Array(value :_*))
   }
 }

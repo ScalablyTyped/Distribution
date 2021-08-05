@@ -81,157 +81,117 @@ trait Formats extends StObject {
 }
 object Formats {
   
-  @scala.inline
-  def apply(): Formats = {
+  inline def apply(): Formats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Formats]
   }
   
-  @scala.inline
-  implicit class FormatsMutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
+  extension [Self <: Formats](x: Self) {
     
-    @scala.inline
-    def setAgendaDateFormat(value: DateFormat): Self = StObject.set(x, "agendaDateFormat", value.asInstanceOf[js.Any])
+    inline def setAgendaDateFormat(value: DateFormat): Self = StObject.set(x, "agendaDateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgendaDateFormatFunction3(
+    inline def setAgendaDateFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "agendaDateFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAgendaDateFormatUndefined: Self = StObject.set(x, "agendaDateFormat", js.undefined)
+    inline def setAgendaDateFormatUndefined: Self = StObject.set(x, "agendaDateFormat", js.undefined)
     
-    @scala.inline
-    def setAgendaHeaderFormat(
+    inline def setAgendaHeaderFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "agendaHeaderFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAgendaHeaderFormatUndefined: Self = StObject.set(x, "agendaHeaderFormat", js.undefined)
+    inline def setAgendaHeaderFormatUndefined: Self = StObject.set(x, "agendaHeaderFormat", js.undefined)
     
-    @scala.inline
-    def setAgendaTimeFormat(value: DateFormat): Self = StObject.set(x, "agendaTimeFormat", value.asInstanceOf[js.Any])
+    inline def setAgendaTimeFormat(value: DateFormat): Self = StObject.set(x, "agendaTimeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgendaTimeFormatFunction3(
+    inline def setAgendaTimeFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "agendaTimeFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAgendaTimeFormatUndefined: Self = StObject.set(x, "agendaTimeFormat", js.undefined)
+    inline def setAgendaTimeFormatUndefined: Self = StObject.set(x, "agendaTimeFormat", js.undefined)
     
-    @scala.inline
-    def setAgendaTimeRangeFormat(
+    inline def setAgendaTimeRangeFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "agendaTimeRangeFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAgendaTimeRangeFormatUndefined: Self = StObject.set(x, "agendaTimeRangeFormat", js.undefined)
+    inline def setAgendaTimeRangeFormatUndefined: Self = StObject.set(x, "agendaTimeRangeFormat", js.undefined)
     
-    @scala.inline
-    def setDateFormat(value: DateFormat): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: DateFormat): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatFunction3(
+    inline def setDateFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dateFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDayFormat(value: DateFormat): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
+    inline def setDayFormat(value: DateFormat): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayFormatFunction3(
+    inline def setDayFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dayFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
+    inline def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
     
-    @scala.inline
-    def setDayHeaderFormat(value: DateFormat): Self = StObject.set(x, "dayHeaderFormat", value.asInstanceOf[js.Any])
+    inline def setDayHeaderFormat(value: DateFormat): Self = StObject.set(x, "dayHeaderFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayHeaderFormatFunction3(
+    inline def setDayHeaderFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dayHeaderFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDayHeaderFormatUndefined: Self = StObject.set(x, "dayHeaderFormat", js.undefined)
+    inline def setDayHeaderFormatUndefined: Self = StObject.set(x, "dayHeaderFormat", js.undefined)
     
-    @scala.inline
-    def setDayRangeHeaderFormat(
+    inline def setDayRangeHeaderFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dayRangeHeaderFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDayRangeHeaderFormatUndefined: Self = StObject.set(x, "dayRangeHeaderFormat", js.undefined)
+    inline def setDayRangeHeaderFormatUndefined: Self = StObject.set(x, "dayRangeHeaderFormat", js.undefined)
     
-    @scala.inline
-    def setEventTimeRangeEndFormat(
+    inline def setEventTimeRangeEndFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "eventTimeRangeEndFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEventTimeRangeEndFormatUndefined: Self = StObject.set(x, "eventTimeRangeEndFormat", js.undefined)
+    inline def setEventTimeRangeEndFormatUndefined: Self = StObject.set(x, "eventTimeRangeEndFormat", js.undefined)
     
-    @scala.inline
-    def setEventTimeRangeFormat(
+    inline def setEventTimeRangeFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "eventTimeRangeFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEventTimeRangeFormatUndefined: Self = StObject.set(x, "eventTimeRangeFormat", js.undefined)
+    inline def setEventTimeRangeFormatUndefined: Self = StObject.set(x, "eventTimeRangeFormat", js.undefined)
     
-    @scala.inline
-    def setEventTimeRangeStartFormat(
+    inline def setEventTimeRangeStartFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "eventTimeRangeStartFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEventTimeRangeStartFormatUndefined: Self = StObject.set(x, "eventTimeRangeStartFormat", js.undefined)
+    inline def setEventTimeRangeStartFormatUndefined: Self = StObject.set(x, "eventTimeRangeStartFormat", js.undefined)
     
-    @scala.inline
-    def setMonthHeaderFormat(value: DateFormat): Self = StObject.set(x, "monthHeaderFormat", value.asInstanceOf[js.Any])
+    inline def setMonthHeaderFormat(value: DateFormat): Self = StObject.set(x, "monthHeaderFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthHeaderFormatFunction3(
+    inline def setMonthHeaderFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "monthHeaderFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMonthHeaderFormatUndefined: Self = StObject.set(x, "monthHeaderFormat", js.undefined)
+    inline def setMonthHeaderFormatUndefined: Self = StObject.set(x, "monthHeaderFormat", js.undefined)
     
-    @scala.inline
-    def setSelectRangeFormat(
+    inline def setSelectRangeFormat(
       value: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "selectRangeFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSelectRangeFormatUndefined: Self = StObject.set(x, "selectRangeFormat", js.undefined)
+    inline def setSelectRangeFormatUndefined: Self = StObject.set(x, "selectRangeFormat", js.undefined)
     
-    @scala.inline
-    def setTimeGutterFormat(value: DateFormat): Self = StObject.set(x, "timeGutterFormat", value.asInstanceOf[js.Any])
+    inline def setTimeGutterFormat(value: DateFormat): Self = StObject.set(x, "timeGutterFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeGutterFormatFunction3(
+    inline def setTimeGutterFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "timeGutterFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTimeGutterFormatUndefined: Self = StObject.set(x, "timeGutterFormat", js.undefined)
+    inline def setTimeGutterFormatUndefined: Self = StObject.set(x, "timeGutterFormat", js.undefined)
     
-    @scala.inline
-    def setWeekdayFormat(value: DateFormat): Self = StObject.set(x, "weekdayFormat", value.asInstanceOf[js.Any])
+    inline def setWeekdayFormat(value: DateFormat): Self = StObject.set(x, "weekdayFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdayFormatFunction3(
+    inline def setWeekdayFormatFunction3(
       value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "weekdayFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWeekdayFormatUndefined: Self = StObject.set(x, "weekdayFormat", js.undefined)
+    inline def setWeekdayFormatUndefined: Self = StObject.set(x, "weekdayFormat", js.undefined)
   }
 }

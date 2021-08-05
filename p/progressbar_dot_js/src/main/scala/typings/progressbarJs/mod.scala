@@ -24,8 +24,7 @@ object mod {
   @JSImport("progressbar.js", "Circle")
   @js.native
   def Circle: Instantiable0[typings.progressbarJs.circleMod.^] = js.native
-  @scala.inline
-  def Circle_=(x: Instantiable0[typings.progressbarJs.circleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
+  inline def Circle_=(x: Instantiable0[typings.progressbarJs.circleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Line")
@@ -35,8 +34,7 @@ object mod {
   @JSImport("progressbar.js", "Line")
   @js.native
   def Line: Instantiable0[typings.progressbarJs.lineMod.^] = js.native
-  @scala.inline
-  def Line_=(x: Instantiable0[typings.progressbarJs.lineMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
+  inline def Line_=(x: Instantiable0[typings.progressbarJs.lineMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Path")
@@ -59,8 +57,7 @@ object mod {
     /* options */ js.UndefOr[AnimationOptions], 
     typings.progressbarJs.pathMod.^[Element]
   ] = js.native
-  @scala.inline
-  def Path_=(
+  inline def Path_=(
     x: Instantiable2[
       /* path */ (/* import warning: RewrittenClass.unapply cls was tparam SElement */ js.Any) | String | Null, 
       /* options */ js.UndefOr[AnimationOptions], 
@@ -76,8 +73,7 @@ object mod {
   @JSImport("progressbar.js", "SemiCircle")
   @js.native
   def SemiCircle: Instantiable0[typings.progressbarJs.semicircleMod.^] = js.native
-  @scala.inline
-  def SemiCircle_=(x: Instantiable0[typings.progressbarJs.semicircleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SemiCircle")(x.asInstanceOf[js.Any])
+  inline def SemiCircle_=(x: Instantiable0[typings.progressbarJs.semicircleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SemiCircle")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Shape")
@@ -103,8 +99,7 @@ object mod {
     /* opts */ js.UndefOr[PathDrawingOptions], 
     typings.progressbarJs.shapeMod.^
   ] = js.native
-  @scala.inline
-  def Shape_=(
+  inline def Shape_=(
     x: Instantiable2[
       /* container */ SVGPathElement | String | Null, 
       /* opts */ js.UndefOr[PathDrawingOptions], 
@@ -120,14 +115,12 @@ object mod {
   @JSImport("progressbar.js", "Square")
   @js.native
   def Square: Instantiable0[typings.progressbarJs.squareMod.^] = js.native
-  @scala.inline
-  def Square_=(x: Instantiable0[typings.progressbarJs.squareMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Square")(x.asInstanceOf[js.Any])
+  inline def Square_=(x: Instantiable0[typings.progressbarJs.squareMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Square")(x.asInstanceOf[js.Any])
   
   @JSImport("progressbar.js", "utils")
   @js.native
   def utils: Typeofutils = js.native
-  @scala.inline
-  def utils_=(x: Typeofutils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utils")(x.asInstanceOf[js.Any])
+  inline def utils_=(x: Typeofutils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utils")(x.asInstanceOf[js.Any])
   
   trait AnimationOptions extends StObject {
     
@@ -157,52 +150,38 @@ object mod {
   }
   object AnimationOptions {
     
-    @scala.inline
-    def apply(): AnimationOptions = {
+    inline def apply(): AnimationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimationOptions]
     }
     
-    @scala.inline
-    implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationOptions](x: Self) {
       
-      @scala.inline
-      def setAttachement(value: SVGPathElement): Self = StObject.set(x, "attachement", value.asInstanceOf[js.Any])
+      inline def setAttachement(value: SVGPathElement): Self = StObject.set(x, "attachement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachementUndefined: Self = StObject.set(x, "attachement", js.undefined)
+      inline def setAttachementUndefined: Self = StObject.set(x, "attachement", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Color): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Color): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setStep(
+      inline def setStep(
         value: (/* state */ StringDictionary[js.Any], /* path */ typings.progressbarJs.pathMod.^[SVGPathElement], /* attachement */ SVGPathElement) => Unit
       ): Self = StObject.set(x, "step", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setTo(value: Color): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Color): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -246,17 +225,14 @@ object mod {
   }
   object Color {
     
-    @scala.inline
-    def apply(color: String): Color = {
+    inline def apply(color: String): Color = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
   
@@ -331,71 +307,50 @@ object mod {
   }
   object PathDrawingOptions {
     
-    @scala.inline
-    def apply(): PathDrawingOptions = {
+    inline def apply(): PathDrawingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathDrawingOptions]
     }
     
-    @scala.inline
-    implicit class PathDrawingOptionsMutableBuilder[Self <: PathDrawingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathDrawingOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillNull: Self = StObject.set(x, "fill", null)
+      inline def setFillNull: Self = StObject.set(x, "fill", null)
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setSvgStyle(value: SvgInlineStyle): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+      inline def setSvgStyle(value: SvgInlineStyle): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgStyleNull: Self = StObject.set(x, "svgStyle", null)
+      inline def setSvgStyleNull: Self = StObject.set(x, "svgStyle", null)
       
-      @scala.inline
-      def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+      inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
       
-      @scala.inline
-      def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTrailColor(value: String): Self = StObject.set(x, "trailColor", value.asInstanceOf[js.Any])
+      inline def setTrailColor(value: String): Self = StObject.set(x, "trailColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailColorUndefined: Self = StObject.set(x, "trailColor", js.undefined)
+      inline def setTrailColorUndefined: Self = StObject.set(x, "trailColor", js.undefined)
       
-      @scala.inline
-      def setTrailWidth(value: Double): Self = StObject.set(x, "trailWidth", value.asInstanceOf[js.Any])
+      inline def setTrailWidth(value: Double): Self = StObject.set(x, "trailWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailWidthUndefined: Self = StObject.set(x, "trailWidth", js.undefined)
+      inline def setTrailWidthUndefined: Self = StObject.set(x, "trailWidth", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     }
   }
   
@@ -455,50 +410,36 @@ object mod {
   }
   object TextOptions {
     
-    @scala.inline
-    def apply(): TextOptions = {
+    inline def apply(): TextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextOptions]
     }
     
-    @scala.inline
-    implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextOptions](x: Self) {
       
-      @scala.inline
-      def setAlignToBottom(value: Boolean): Self = StObject.set(x, "alignToBottom", value.asInstanceOf[js.Any])
+      inline def setAlignToBottom(value: Boolean): Self = StObject.set(x, "alignToBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignToBottomUndefined: Self = StObject.set(x, "alignToBottom", js.undefined)
+      inline def setAlignToBottomUndefined: Self = StObject.set(x, "alignToBottom", js.undefined)
       
-      @scala.inline
-      def setAutoStyleContainer(value: Boolean): Self = StObject.set(x, "autoStyleContainer", value.asInstanceOf[js.Any])
+      inline def setAutoStyleContainer(value: Boolean): Self = StObject.set(x, "autoStyleContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStyleContainerUndefined: Self = StObject.set(x, "autoStyleContainer", js.undefined)
+      inline def setAutoStyleContainerUndefined: Self = StObject.set(x, "autoStyleContainer", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyle(value: TextInlineStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: TextInlineStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -16,20 +16,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setDetectBrowsers(value: KarmaDetectBrowsers): Self = StObject.set(x, "detectBrowsers", value.asInstanceOf[js.Any])
+      inline def setDetectBrowsers(value: KarmaDetectBrowsers): Self = StObject.set(x, "detectBrowsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectBrowsersUndefined: Self = StObject.set(x, "detectBrowsers", js.undefined)
+      inline def setDetectBrowsersUndefined: Self = StObject.set(x, "detectBrowsers", js.undefined)
     }
   }
   
@@ -52,35 +48,26 @@ object mod {
   }
   object KarmaDetectBrowsers {
     
-    @scala.inline
-    def apply(postDetection: js.Array[String] => js.Array[String]): KarmaDetectBrowsers = {
+    inline def apply(postDetection: js.Array[String] => js.Array[String]): KarmaDetectBrowsers = {
       val __obj = js.Dynamic.literal(postDetection = js.Any.fromFunction1(postDetection))
       __obj.asInstanceOf[KarmaDetectBrowsers]
     }
     
-    @scala.inline
-    implicit class KarmaDetectBrowsersMutableBuilder[Self <: KarmaDetectBrowsers] (val x: Self) extends AnyVal {
+    extension [Self <: KarmaDetectBrowsers](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPostDetection(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "postDetection", js.Any.fromFunction1(value))
+      inline def setPostDetection(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "postDetection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreferHeadless(value: Boolean): Self = StObject.set(x, "preferHeadless", value.asInstanceOf[js.Any])
+      inline def setPreferHeadless(value: Boolean): Self = StObject.set(x, "preferHeadless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferHeadlessUndefined: Self = StObject.set(x, "preferHeadless", js.undefined)
+      inline def setPreferHeadlessUndefined: Self = StObject.set(x, "preferHeadless", js.undefined)
       
-      @scala.inline
-      def setUsePhantomJS(value: Boolean): Self = StObject.set(x, "usePhantomJS", value.asInstanceOf[js.Any])
+      inline def setUsePhantomJS(value: Boolean): Self = StObject.set(x, "usePhantomJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePhantomJSUndefined: Self = StObject.set(x, "usePhantomJS", js.undefined)
+      inline def setUsePhantomJSUndefined: Self = StObject.set(x, "usePhantomJS", js.undefined)
     }
   }
 }

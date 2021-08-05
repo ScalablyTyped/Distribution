@@ -13,19 +13,15 @@ trait Windows10EnterpriseModernAppManagementConfiguration
 }
 object Windows10EnterpriseModernAppManagementConfiguration {
   
-  @scala.inline
-  def apply(): Windows10EnterpriseModernAppManagementConfiguration = {
+  inline def apply(): Windows10EnterpriseModernAppManagementConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Windows10EnterpriseModernAppManagementConfiguration]
   }
   
-  @scala.inline
-  implicit class Windows10EnterpriseModernAppManagementConfigurationMutableBuilder[Self <: Windows10EnterpriseModernAppManagementConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: Windows10EnterpriseModernAppManagementConfiguration](x: Self) {
     
-    @scala.inline
-    def setUninstallBuiltInApps(value: Boolean): Self = StObject.set(x, "uninstallBuiltInApps", value.asInstanceOf[js.Any])
+    inline def setUninstallBuiltInApps(value: Boolean): Self = StObject.set(x, "uninstallBuiltInApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninstallBuiltInAppsUndefined: Self = StObject.set(x, "uninstallBuiltInApps", js.undefined)
+    inline def setUninstallBuiltInAppsUndefined: Self = StObject.set(x, "uninstallBuiltInApps", js.undefined)
   }
 }

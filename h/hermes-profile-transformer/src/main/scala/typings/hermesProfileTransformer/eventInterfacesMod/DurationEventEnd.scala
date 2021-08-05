@@ -15,16 +15,13 @@ trait DurationEventEnd
 }
 object DurationEventEnd {
   
-  @scala.inline
-  def apply(ph: DURATION_EVENTS_END): DurationEventEnd = {
+  inline def apply(ph: DURATION_EVENTS_END): DurationEventEnd = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationEventEnd]
   }
   
-  @scala.inline
-  implicit class DurationEventEndMutableBuilder[Self <: DurationEventEnd] (val x: Self) extends AnyVal {
+  extension [Self <: DurationEventEnd](x: Self) {
     
-    @scala.inline
-    def setPh(value: DURATION_EVENTS_END): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: DURATION_EVENTS_END): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

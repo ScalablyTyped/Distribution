@@ -28,8 +28,7 @@ trait ASPxClientAppointmentDropEventArgs
 }
 object ASPxClientAppointmentDropEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dragInformation: js.Array[ASPxClientAppointmentDragInfo],
     handled: Boolean,
     operation: ASPxClientAppointmentOperation
@@ -38,19 +37,14 @@ object ASPxClientAppointmentDropEventArgs {
     __obj.asInstanceOf[ASPxClientAppointmentDropEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentDropEventArgsMutableBuilder[Self <: ASPxClientAppointmentDropEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentDropEventArgs](x: Self) {
     
-    @scala.inline
-    def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
+    inline def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
+    inline def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: ASPxClientAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: ASPxClientAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

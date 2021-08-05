@@ -46,8 +46,7 @@ trait Frustum extends StObject {
 }
 object Frustum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containsPoint: Vec3 => Boolean,
     containsSphere: BoundingSphere => Double,
     setFromMat4: Mat4 => Unit
@@ -56,16 +55,12 @@ object Frustum {
     __obj.asInstanceOf[Frustum]
   }
   
-  @scala.inline
-  implicit class FrustumMutableBuilder[Self <: Frustum] (val x: Self) extends AnyVal {
+  extension [Self <: Frustum](x: Self) {
     
-    @scala.inline
-    def setContainsPoint(value: Vec3 => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
+    inline def setContainsPoint(value: Vec3 => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsSphere(value: BoundingSphere => Double): Self = StObject.set(x, "containsSphere", js.Any.fromFunction1(value))
+    inline def setContainsSphere(value: BoundingSphere => Double): Self = StObject.set(x, "containsSphere", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFromMat4(value: Mat4 => Unit): Self = StObject.set(x, "setFromMat4", js.Any.fromFunction1(value))
+    inline def setSetFromMat4(value: Mat4 => Unit): Self = StObject.set(x, "setFromMat4", js.Any.fromFunction1(value))
   }
 }

@@ -48,55 +48,39 @@ trait TestInvokeAuthorizerRequest extends StObject {
 }
 object TestInvokeAuthorizerRequest {
   
-  @scala.inline
-  def apply(authorizerId: String, restApiId: String): TestInvokeAuthorizerRequest = {
+  inline def apply(authorizerId: String, restApiId: String): TestInvokeAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerId = authorizerId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeAuthorizerRequest]
   }
   
-  @scala.inline
-  implicit class TestInvokeAuthorizerRequestMutableBuilder[Self <: TestInvokeAuthorizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestInvokeAuthorizerRequest](x: Self) {
     
-    @scala.inline
-    def setAdditionalContext(value: MapOfStringToString): Self = StObject.set(x, "additionalContext", value.asInstanceOf[js.Any])
+    inline def setAdditionalContext(value: MapOfStringToString): Self = StObject.set(x, "additionalContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalContextUndefined: Self = StObject.set(x, "additionalContext", js.undefined)
+    inline def setAdditionalContextUndefined: Self = StObject.set(x, "additionalContext", js.undefined)
     
-    @scala.inline
-    def setAuthorizerId(value: String): Self = StObject.set(x, "authorizerId", value.asInstanceOf[js.Any])
+    inline def setAuthorizerId(value: String): Self = StObject.set(x, "authorizerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+    inline def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
+    inline def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
     
-    @scala.inline
-    def setPathWithQueryString(value: String): Self = StObject.set(x, "pathWithQueryString", value.asInstanceOf[js.Any])
+    inline def setPathWithQueryString(value: String): Self = StObject.set(x, "pathWithQueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathWithQueryStringUndefined: Self = StObject.set(x, "pathWithQueryString", js.undefined)
+    inline def setPathWithQueryStringUndefined: Self = StObject.set(x, "pathWithQueryString", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageVariables(value: MapOfStringToString): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+    inline def setStageVariables(value: MapOfStringToString): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
+    inline def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
   }
 }

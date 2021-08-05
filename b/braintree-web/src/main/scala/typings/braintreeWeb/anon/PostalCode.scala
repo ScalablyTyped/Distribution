@@ -10,19 +10,15 @@ trait PostalCode extends StObject {
 }
 object PostalCode {
   
-  @scala.inline
-  def apply(): PostalCode = {
+  inline def apply(): PostalCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostalCode]
   }
   
-  @scala.inline
-  implicit class PostalCodeMutableBuilder[Self <: PostalCode] (val x: Self) extends AnyVal {
+  extension [Self <: PostalCode](x: Self) {
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+    inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
   }
 }

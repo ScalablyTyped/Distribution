@@ -38,9 +38,9 @@ object observeOnMod {
     /* CompleteClass */
     override def call(subscriber: Subscriber[T], source: js.Any): TeardownLogic = js.native
     
-    var delay: js.Any = js.native
+    /* private */ var delay: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/operators/observeOn", "ObserveOnSubscriber")
@@ -49,11 +49,11 @@ object observeOnMod {
     def this(destination: Subscriber[T], scheduler: SchedulerLike) = this()
     def this(destination: Subscriber[T], scheduler: SchedulerLike, delay: Double) = this()
     
-    var delay: js.Any = js.native
+    /* private */ var delay: js.Any = js.native
     
-    var scheduleMessage: js.Any = js.native
+    /* private */ var scheduleMessage: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
   }
   /* static members */
   object ObserveOnSubscriber {
@@ -63,12 +63,9 @@ object observeOnMod {
     val ^ : js.Any = js.native
     
     /** @nocollapse */
-    @scala.inline
-    def dispatch(arg: ObserveOnMessage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def dispatch(arg: ObserveOnMessage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def observeOn[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def observeOn[T](scheduler: SchedulerLike, delay: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def observeOn[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def observeOn[T](scheduler: SchedulerLike, delay: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

@@ -16,21 +16,17 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(`type`: String): Default = {
+    inline def apply(`type`: String): Default = {
       val __obj = js.Dynamic.literal(default = "")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setDefault(value: _empty): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: _empty): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,21 +38,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: Boolean): Type = {
+    inline def apply(`type`: Boolean): Type = {
       val __obj = js.Dynamic.literal(default = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setDefault(value: `true`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: `true`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

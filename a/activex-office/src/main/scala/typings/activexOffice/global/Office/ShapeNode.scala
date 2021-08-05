@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ShapeNode")
 @js.native
-class ShapeNode protected ()
+/* private */ class ShapeNode ()
   extends StObject
      with typings.activexOffice.Office.ShapeNode {
   
@@ -21,7 +21,7 @@ class ShapeNode protected ()
   /* CompleteClass */
   override val EditingType: MsoEditingType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ShapeNode_typekey")
   var OfficeDotShapeNode_typekey: typings.activexOffice.Office.ShapeNode = js.native
   

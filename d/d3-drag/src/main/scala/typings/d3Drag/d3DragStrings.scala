@@ -8,21 +8,17 @@ object d3DragStrings {
   
   @js.native
   sealed trait drag extends StObject
-  @scala.inline
-  def drag: drag = "drag".asInstanceOf[drag]
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait mouse extends StObject
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait start extends StObject
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

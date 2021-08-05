@@ -28,8 +28,7 @@ trait TTextNode
 }
 object TTextNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     child: Null,
     classBindings: TStylingRange,
     directiveEnd: Double,
@@ -50,22 +49,16 @@ object TTextNode {
     __obj.asInstanceOf[TTextNode]
   }
   
-  @scala.inline
-  implicit class TTextNodeMutableBuilder[Self <: TTextNode] (val x: Self) extends AnyVal {
+  extension [Self <: TTextNode](x: Self) {
     
-    @scala.inline
-    def setChild(value: Null): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+    inline def setChild(value: Null): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setProjection(value: Null): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Null): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
+    inline def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
   }
 }

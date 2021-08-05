@@ -23,19 +23,15 @@ trait AllowedHostPath extends StObject {
 }
 object AllowedHostPath {
   
-  @scala.inline
-  def apply(pathPrefix: String, readOnly: Boolean): AllowedHostPath = {
+  inline def apply(pathPrefix: String, readOnly: Boolean): AllowedHostPath = {
     val __obj = js.Dynamic.literal(pathPrefix = pathPrefix.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowedHostPath]
   }
   
-  @scala.inline
-  implicit class AllowedHostPathMutableBuilder[Self <: AllowedHostPath] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedHostPath](x: Self) {
     
-    @scala.inline
-    def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+    inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

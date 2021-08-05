@@ -13,16 +13,13 @@ trait DeregisterRdsDbInstanceRequest extends StObject {
 }
 object DeregisterRdsDbInstanceRequest {
   
-  @scala.inline
-  def apply(RdsDbInstanceArn: String): DeregisterRdsDbInstanceRequest = {
+  inline def apply(RdsDbInstanceArn: String): DeregisterRdsDbInstanceRequest = {
     val __obj = js.Dynamic.literal(RdsDbInstanceArn = RdsDbInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterRdsDbInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterRdsDbInstanceRequestMutableBuilder[Self <: DeregisterRdsDbInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterRdsDbInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
+    inline def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
   }
 }

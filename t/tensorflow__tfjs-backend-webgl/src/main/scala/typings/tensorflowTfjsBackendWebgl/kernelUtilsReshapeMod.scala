@@ -12,6 +12,5 @@ object kernelUtilsReshapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def packedReshape(input: TensorInfo, afterShape: js.Array[Double], backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("packedReshape")(input.asInstanceOf[js.Any], afterShape.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
+  inline def packedReshape(input: TensorInfo, afterShape: js.Array[Double], backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("packedReshape")(input.asInstanceOf[js.Any], afterShape.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
 }

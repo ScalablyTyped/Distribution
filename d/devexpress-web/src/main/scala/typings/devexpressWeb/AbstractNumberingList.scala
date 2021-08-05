@@ -16,16 +16,13 @@ trait AbstractNumberingList extends StObject {
 }
 object AbstractNumberingList {
   
-  @scala.inline
-  def apply(deleted: Boolean): AbstractNumberingList = {
+  inline def apply(deleted: Boolean): AbstractNumberingList = {
     val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractNumberingList]
   }
   
-  @scala.inline
-  implicit class AbstractNumberingListMutableBuilder[Self <: AbstractNumberingList] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractNumberingList](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
   }
 }

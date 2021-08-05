@@ -25,8 +25,7 @@ trait ISyndicationLink
 }
 object ISyndicationLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     baseUri: Uri,
     elementExtensions: IVector[ISyndicationNode],
@@ -46,25 +45,18 @@ object ISyndicationLink {
     __obj.asInstanceOf[ISyndicationLink]
   }
   
-  @scala.inline
-  implicit class ISyndicationLinkMutableBuilder[Self <: ISyndicationLink] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationLink](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationship(value: String): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: String): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLanguage(value: String): Self = StObject.set(x, "resourceLanguage", value.asInstanceOf[js.Any])
+    inline def setResourceLanguage(value: String): Self = StObject.set(x, "resourceLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

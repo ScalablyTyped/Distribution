@@ -22,8 +22,7 @@ trait X11DragSource
      with XComponent
 object X11DragSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,

@@ -20,19 +20,15 @@ trait RibbonUpdaterData extends StObject {
 }
 object RibbonUpdaterData {
   
-  @scala.inline
-  def apply(tabs: js.Array[Tab]): RibbonUpdaterData = {
+  inline def apply(tabs: js.Array[Tab]): RibbonUpdaterData = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RibbonUpdaterData]
   }
   
-  @scala.inline
-  implicit class RibbonUpdaterDataMutableBuilder[Self <: RibbonUpdaterData] (val x: Self) extends AnyVal {
+  extension [Self <: RibbonUpdaterData](x: Self) {
     
-    @scala.inline
-    def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
   }
 }

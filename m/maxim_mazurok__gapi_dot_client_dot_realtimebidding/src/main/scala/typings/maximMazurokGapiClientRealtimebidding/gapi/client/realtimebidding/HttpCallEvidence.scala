@@ -11,22 +11,17 @@ trait HttpCallEvidence extends StObject {
 }
 object HttpCallEvidence {
   
-  @scala.inline
-  def apply(): HttpCallEvidence = {
+  inline def apply(): HttpCallEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpCallEvidence]
   }
   
-  @scala.inline
-  implicit class HttpCallEvidenceMutableBuilder[Self <: HttpCallEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: HttpCallEvidence](x: Self) {
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

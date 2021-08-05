@@ -14,31 +14,23 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(): Settings = {
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setBinaries(value: Boolean): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
+    inline def setBinaries(value: Boolean): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinariesUndefined: Self = StObject.set(x, "binaries", js.undefined)
+    inline def setBinariesUndefined: Self = StObject.set(x, "binaries", js.undefined)
     
-    @scala.inline
-    def setCustomIcons(value: Boolean): Self = StObject.set(x, "customIcons", value.asInstanceOf[js.Any])
+    inline def setCustomIcons(value: Boolean): Self = StObject.set(x, "customIcons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomIconsUndefined: Self = StObject.set(x, "customIcons", js.undefined)
+    inline def setCustomIconsUndefined: Self = StObject.set(x, "customIcons", js.undefined)
     
-    @scala.inline
-    def setHistoryRules(value: Boolean): Self = StObject.set(x, "historyRules", value.asInstanceOf[js.Any])
+    inline def setHistoryRules(value: Boolean): Self = StObject.set(x, "historyRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryRulesUndefined: Self = StObject.set(x, "historyRules", js.undefined)
+    inline def setHistoryRulesUndefined: Self = StObject.set(x, "historyRules", js.undefined)
   }
 }

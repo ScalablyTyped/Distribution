@@ -16,25 +16,19 @@ trait PostDeploy extends StObject {
 }
 object PostDeploy {
   
-  @scala.inline
-  def apply(all: scala.Double, postDeploy: scala.Double, preDeploy: scala.Double, undefined: scala.Double): PostDeploy = {
+  inline def apply(all: scala.Double, postDeploy: scala.Double, preDeploy: scala.Double, undefined: scala.Double): PostDeploy = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], postDeploy = postDeploy.asInstanceOf[js.Any], preDeploy = preDeploy.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostDeploy]
   }
   
-  @scala.inline
-  implicit class PostDeployMutableBuilder[Self <: PostDeploy] (val x: Self) extends AnyVal {
+  extension [Self <: PostDeploy](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDeploy(value: scala.Double): Self = StObject.set(x, "postDeploy", value.asInstanceOf[js.Any])
+    inline def setPostDeploy(value: scala.Double): Self = StObject.set(x, "postDeploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreDeploy(value: scala.Double): Self = StObject.set(x, "preDeploy", value.asInstanceOf[js.Any])
+    inline def setPreDeploy(value: scala.Double): Self = StObject.set(x, "preDeploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

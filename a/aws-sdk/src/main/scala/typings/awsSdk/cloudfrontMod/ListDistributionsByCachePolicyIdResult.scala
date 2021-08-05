@@ -13,19 +13,15 @@ trait ListDistributionsByCachePolicyIdResult extends StObject {
 }
 object ListDistributionsByCachePolicyIdResult {
   
-  @scala.inline
-  def apply(): ListDistributionsByCachePolicyIdResult = {
+  inline def apply(): ListDistributionsByCachePolicyIdResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDistributionsByCachePolicyIdResult]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByCachePolicyIdResultMutableBuilder[Self <: ListDistributionsByCachePolicyIdResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByCachePolicyIdResult](x: Self) {
     
-    @scala.inline
-    def setDistributionIdList(value: DistributionIdList): Self = StObject.set(x, "DistributionIdList", value.asInstanceOf[js.Any])
+    inline def setDistributionIdList(value: DistributionIdList): Self = StObject.set(x, "DistributionIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionIdListUndefined: Self = StObject.set(x, "DistributionIdList", js.undefined)
+    inline def setDistributionIdListUndefined: Self = StObject.set(x, "DistributionIdList", js.undefined)
   }
 }

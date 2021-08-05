@@ -16,19 +16,15 @@ trait SchemaHttpsTrigger extends StObject {
 }
 object SchemaHttpsTrigger {
   
-  @scala.inline
-  def apply(): SchemaHttpsTrigger = {
+  inline def apply(): SchemaHttpsTrigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpsTrigger]
   }
   
-  @scala.inline
-  implicit class SchemaHttpsTriggerMutableBuilder[Self <: SchemaHttpsTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpsTrigger](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

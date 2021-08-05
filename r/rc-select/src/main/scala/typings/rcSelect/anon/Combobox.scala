@@ -12,19 +12,15 @@ trait Combobox extends StObject {
 }
 object Combobox {
   
-  @scala.inline
-  def apply(combobox: Boolean, labelInValue: Boolean): Combobox = {
+  inline def apply(combobox: Boolean, labelInValue: Boolean): Combobox = {
     val __obj = js.Dynamic.literal(combobox = combobox.asInstanceOf[js.Any], labelInValue = labelInValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Combobox]
   }
   
-  @scala.inline
-  implicit class ComboboxMutableBuilder[Self <: Combobox] (val x: Self) extends AnyVal {
+  extension [Self <: Combobox](x: Self) {
     
-    @scala.inline
-    def setCombobox(value: Boolean): Self = StObject.set(x, "combobox", value.asInstanceOf[js.Any])
+    inline def setCombobox(value: Boolean): Self = StObject.set(x, "combobox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])
+    inline def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])
   }
 }

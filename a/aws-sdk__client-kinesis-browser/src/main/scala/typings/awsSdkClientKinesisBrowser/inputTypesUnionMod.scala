@@ -59,62 +59,52 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    @scala.inline
-    def AddTagsToStreamInput(StreamName: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput = {
+    inline def AddTagsToStreamInput(StreamName: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput]
     }
     
-    @scala.inline
-    def CreateStreamInput(ShardCount: Double, StreamName: String): typings.awsSdkClientKinesisBrowser.typesCreateStreamInputMod.CreateStreamInput = {
+    inline def CreateStreamInput(ShardCount: Double, StreamName: String): typings.awsSdkClientKinesisBrowser.typesCreateStreamInputMod.CreateStreamInput = {
       val __obj = js.Dynamic.literal(ShardCount = ShardCount.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesCreateStreamInputMod.CreateStreamInput]
     }
     
-    @scala.inline
-    def DecreaseStreamRetentionPeriodInput(RetentionPeriodHours: Double, StreamName: String): typings.awsSdkClientKinesisBrowser.typesDecreaseStreamRetentionPeriodInputMod.DecreaseStreamRetentionPeriodInput = {
+    inline def DecreaseStreamRetentionPeriodInput(RetentionPeriodHours: Double, StreamName: String): typings.awsSdkClientKinesisBrowser.typesDecreaseStreamRetentionPeriodInputMod.DecreaseStreamRetentionPeriodInput = {
       val __obj = js.Dynamic.literal(RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDecreaseStreamRetentionPeriodInputMod.DecreaseStreamRetentionPeriodInput]
     }
     
-    @scala.inline
-    def DeleteStreamInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesDeleteStreamInputMod.DeleteStreamInput = {
+    inline def DeleteStreamInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesDeleteStreamInputMod.DeleteStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDeleteStreamInputMod.DeleteStreamInput]
     }
     
-    @scala.inline
-    def DeregisterStreamConsumerInput(): typings.awsSdkClientKinesisBrowser.typesDeregisterStreamConsumerInputMod.DeregisterStreamConsumerInput = {
+    inline def DeregisterStreamConsumerInput(): typings.awsSdkClientKinesisBrowser.typesDeregisterStreamConsumerInputMod.DeregisterStreamConsumerInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDeregisterStreamConsumerInputMod.DeregisterStreamConsumerInput]
     }
     
-    @scala.inline
-    def DescribeLimitsInput(): typings.awsSdkClientKinesisBrowser.typesDescribeLimitsInputMod.DescribeLimitsInput = {
+    inline def DescribeLimitsInput(): typings.awsSdkClientKinesisBrowser.typesDescribeLimitsInputMod.DescribeLimitsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeLimitsInputMod.DescribeLimitsInput]
     }
     
-    @scala.inline
-    def DescribeStreamConsumerInput(): typings.awsSdkClientKinesisBrowser.typesDescribeStreamConsumerInputMod.DescribeStreamConsumerInput = {
+    inline def DescribeStreamConsumerInput(): typings.awsSdkClientKinesisBrowser.typesDescribeStreamConsumerInputMod.DescribeStreamConsumerInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeStreamConsumerInputMod.DescribeStreamConsumerInput]
     }
     
-    @scala.inline
-    def DescribeStreamInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesDescribeStreamInputMod.DescribeStreamInput = {
+    inline def DescribeStreamInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesDescribeStreamInputMod.DescribeStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeStreamInputMod.DescribeStreamInput]
     }
     
-    @scala.inline
-    def DescribeStreamSummaryInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryInputMod.DescribeStreamSummaryInput = {
+    inline def DescribeStreamSummaryInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryInputMod.DescribeStreamSummaryInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryInputMod.DescribeStreamSummaryInput]
     }
     
-    @scala.inline
-    def DisableEnhancedMonitoringInput(
+    inline def DisableEnhancedMonitoringInput(
       ShardLevelMetrics: (js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]) | (Iterable[
@@ -126,8 +116,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringInputMod.DisableEnhancedMonitoringInput]
     }
     
-    @scala.inline
-    def EnableEnhancedMonitoringInput(
+    inline def EnableEnhancedMonitoringInput(
       ShardLevelMetrics: (js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]) | (Iterable[
@@ -139,14 +128,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesEnableEnhancedMonitoringInputMod.EnableEnhancedMonitoringInput]
     }
     
-    @scala.inline
-    def GetRecordsInput(ShardIterator: String): typings.awsSdkClientKinesisBrowser.typesGetRecordsInputMod.GetRecordsInput = {
+    inline def GetRecordsInput(ShardIterator: String): typings.awsSdkClientKinesisBrowser.typesGetRecordsInputMod.GetRecordsInput = {
       val __obj = js.Dynamic.literal(ShardIterator = ShardIterator.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesGetRecordsInputMod.GetRecordsInput]
     }
     
-    @scala.inline
-    def GetShardIteratorInput(
+    inline def GetShardIteratorInput(
       ShardId: String,
       ShardIteratorType: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String,
       StreamName: String
@@ -155,86 +142,72 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesGetShardIteratorInputMod.GetShardIteratorInput]
     }
     
-    @scala.inline
-    def IncreaseStreamRetentionPeriodInput(RetentionPeriodHours: Double, StreamName: String): typings.awsSdkClientKinesisBrowser.typesIncreaseStreamRetentionPeriodInputMod.IncreaseStreamRetentionPeriodInput = {
+    inline def IncreaseStreamRetentionPeriodInput(RetentionPeriodHours: Double, StreamName: String): typings.awsSdkClientKinesisBrowser.typesIncreaseStreamRetentionPeriodInputMod.IncreaseStreamRetentionPeriodInput = {
       val __obj = js.Dynamic.literal(RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesIncreaseStreamRetentionPeriodInputMod.IncreaseStreamRetentionPeriodInput]
     }
     
-    @scala.inline
-    def ListShardsInput(): typings.awsSdkClientKinesisBrowser.typesListShardsInputMod.ListShardsInput = {
+    inline def ListShardsInput(): typings.awsSdkClientKinesisBrowser.typesListShardsInputMod.ListShardsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListShardsInputMod.ListShardsInput]
     }
     
-    @scala.inline
-    def ListStreamConsumersInput(StreamARN: String): typings.awsSdkClientKinesisBrowser.typesListStreamConsumersInputMod.ListStreamConsumersInput = {
+    inline def ListStreamConsumersInput(StreamARN: String): typings.awsSdkClientKinesisBrowser.typesListStreamConsumersInputMod.ListStreamConsumersInput = {
       val __obj = js.Dynamic.literal(StreamARN = StreamARN.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListStreamConsumersInputMod.ListStreamConsumersInput]
     }
     
-    @scala.inline
-    def ListStreamsInput(): typings.awsSdkClientKinesisBrowser.typesListStreamsInputMod.ListStreamsInput = {
+    inline def ListStreamsInput(): typings.awsSdkClientKinesisBrowser.typesListStreamsInputMod.ListStreamsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListStreamsInputMod.ListStreamsInput]
     }
     
-    @scala.inline
-    def ListTagsForStreamInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesListTagsForStreamInputMod.ListTagsForStreamInput = {
+    inline def ListTagsForStreamInput(StreamName: String): typings.awsSdkClientKinesisBrowser.typesListTagsForStreamInputMod.ListTagsForStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListTagsForStreamInputMod.ListTagsForStreamInput]
     }
     
-    @scala.inline
-    def MergeShardsInput(AdjacentShardToMerge: String, ShardToMerge: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesMergeShardsInputMod.MergeShardsInput = {
+    inline def MergeShardsInput(AdjacentShardToMerge: String, ShardToMerge: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesMergeShardsInputMod.MergeShardsInput = {
       val __obj = js.Dynamic.literal(AdjacentShardToMerge = AdjacentShardToMerge.asInstanceOf[js.Any], ShardToMerge = ShardToMerge.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesMergeShardsInputMod.MergeShardsInput]
     }
     
-    @scala.inline
-    def PutRecordInput(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesPutRecordInputMod.PutRecordInput = {
+    inline def PutRecordInput(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesPutRecordInputMod.PutRecordInput = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesPutRecordInputMod.PutRecordInput]
     }
     
-    @scala.inline
-    def PutRecordsInput(Records: js.Array[PutRecordsRequestEntry] | Iterable[PutRecordsRequestEntry], StreamName: String): typings.awsSdkClientKinesisBrowser.typesPutRecordsInputMod.PutRecordsInput = {
+    inline def PutRecordsInput(Records: js.Array[PutRecordsRequestEntry] | Iterable[PutRecordsRequestEntry], StreamName: String): typings.awsSdkClientKinesisBrowser.typesPutRecordsInputMod.PutRecordsInput = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesPutRecordsInputMod.PutRecordsInput]
     }
     
-    @scala.inline
-    def RegisterStreamConsumerInput(ConsumerName: String, StreamARN: String): typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerInputMod.RegisterStreamConsumerInput = {
+    inline def RegisterStreamConsumerInput(ConsumerName: String, StreamARN: String): typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerInputMod.RegisterStreamConsumerInput = {
       val __obj = js.Dynamic.literal(ConsumerName = ConsumerName.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerInputMod.RegisterStreamConsumerInput]
     }
     
-    @scala.inline
-    def RemoveTagsFromStreamInput(StreamName: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamInputMod.RemoveTagsFromStreamInput = {
+    inline def RemoveTagsFromStreamInput(StreamName: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamInputMod.RemoveTagsFromStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamInputMod.RemoveTagsFromStreamInput]
     }
     
-    @scala.inline
-    def SplitShardInput(NewStartingHashKey: String, ShardToSplit: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesSplitShardInputMod.SplitShardInput = {
+    inline def SplitShardInput(NewStartingHashKey: String, ShardToSplit: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesSplitShardInputMod.SplitShardInput = {
       val __obj = js.Dynamic.literal(NewStartingHashKey = NewStartingHashKey.asInstanceOf[js.Any], ShardToSplit = ShardToSplit.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesSplitShardInputMod.SplitShardInput]
     }
     
-    @scala.inline
-    def StartStreamEncryptionInput(EncryptionType: NONE | KMS | String, KeyId: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionInputMod.StartStreamEncryptionInput = {
+    inline def StartStreamEncryptionInput(EncryptionType: NONE | KMS | String, KeyId: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionInputMod.StartStreamEncryptionInput = {
       val __obj = js.Dynamic.literal(EncryptionType = EncryptionType.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionInputMod.StartStreamEncryptionInput]
     }
     
-    @scala.inline
-    def StopStreamEncryptionInput(EncryptionType: NONE | KMS | String, KeyId: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionInputMod.StopStreamEncryptionInput = {
+    inline def StopStreamEncryptionInput(EncryptionType: NONE | KMS | String, KeyId: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionInputMod.StopStreamEncryptionInput = {
       val __obj = js.Dynamic.literal(EncryptionType = EncryptionType.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionInputMod.StopStreamEncryptionInput]
     }
     
-    @scala.inline
-    def UpdateShardCountInput(ScalingType: UNIFORM_SCALING | String, StreamName: String, TargetShardCount: Double): typings.awsSdkClientKinesisBrowser.typesUpdateShardCountInputMod.UpdateShardCountInput = {
+    inline def UpdateShardCountInput(ScalingType: UNIFORM_SCALING | String, StreamName: String, TargetShardCount: Double): typings.awsSdkClientKinesisBrowser.typesUpdateShardCountInputMod.UpdateShardCountInput = {
       val __obj = js.Dynamic.literal(ScalingType = ScalingType.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any], TargetShardCount = TargetShardCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesUpdateShardCountInputMod.UpdateShardCountInput]
     }

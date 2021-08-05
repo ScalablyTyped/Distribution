@@ -18,28 +18,21 @@ trait GetAuthorizersResponse extends StObject {
 }
 object GetAuthorizersResponse {
   
-  @scala.inline
-  def apply(): GetAuthorizersResponse = {
+  inline def apply(): GetAuthorizersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAuthorizersResponse]
   }
   
-  @scala.inline
-  implicit class GetAuthorizersResponseMutableBuilder[Self <: GetAuthorizersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthorizersResponse](x: Self) {
     
-    @scala.inline
-    def setItems(value: listOfAuthorizer): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: listOfAuthorizer): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Authorizer*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Authorizer*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -20,42 +20,34 @@ trait MarginTopProps[TLength] extends StObject {
 }
 object MarginTopProps {
   
-  @scala.inline
-  def apply[TLength](): MarginTopProps[TLength] = {
+  inline def apply[TLength](): MarginTopProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarginTopProps[TLength]]
   }
   
-  @scala.inline
-  implicit class MarginTopPropsMutableBuilder[Self <: MarginTopProps[?], TLength] (val x: Self & MarginTopProps[TLength]) extends AnyVal {
+  extension [Self <: MarginTopProps[?], TLength](x: Self & MarginTopProps[TLength]) {
     
-    @scala.inline
-    def setMarginTop(
+    inline def setMarginTop(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    @scala.inline
-    def setMarginTopVarargs(
+    inline def setMarginTopVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
     ): Self = StObject.set(x, "marginTop", js.Array(value :_*))
     
-    @scala.inline
-    def setMt(
+    inline def setMt(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
+    inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
-    @scala.inline
-    def setMtVarargs(
+    inline def setMtVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
     ): Self = StObject.set(x, "mt", js.Array(value :_*))
   }

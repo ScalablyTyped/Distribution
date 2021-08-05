@@ -17,25 +17,19 @@ trait NodeMessageParts extends StObject {
 }
 object NodeMessageParts {
   
-  @scala.inline
-  def apply(id: String, index: Double): NodeMessageParts = {
+  inline def apply(id: String, index: Double): NodeMessageParts = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeMessageParts]
   }
   
-  @scala.inline
-  implicit class NodeMessagePartsMutableBuilder[Self <: NodeMessageParts] (val x: Self) extends AnyVal {
+  extension [Self <: NodeMessageParts](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

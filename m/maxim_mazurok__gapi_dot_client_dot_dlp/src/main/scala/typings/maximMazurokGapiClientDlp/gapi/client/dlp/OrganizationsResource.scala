@@ -16,8 +16,7 @@ trait OrganizationsResource extends StObject {
 }
 object OrganizationsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deidentifyTemplates: DeidentifyTemplatesResource,
     inspectTemplates: InspectTemplatesResource,
     locations: LocationsResource,
@@ -27,19 +26,14 @@ object OrganizationsResource {
     __obj.asInstanceOf[OrganizationsResource]
   }
   
-  @scala.inline
-  implicit class OrganizationsResourceMutableBuilder[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationsResource](x: Self) {
     
-    @scala.inline
-    def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
+    inline def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplates(value: InspectTemplatesResource): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
+    inline def setInspectTemplates(value: InspectTemplatesResource): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredInfoTypes(value: StoredInfoTypesResource): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
+    inline def setStoredInfoTypes(value: StoredInfoTypesResource): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
   }
 }

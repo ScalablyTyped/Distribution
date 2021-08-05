@@ -38,8 +38,7 @@ object ipagewidgetMod {
   }
   object IPageWidget {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ContainerId: String,
       DisplayOrder: String,
       Grid: String,
@@ -59,50 +58,35 @@ object ipagewidgetMod {
       __obj.asInstanceOf[IPageWidget]
     }
     
-    @scala.inline
-    implicit class IPageWidgetMutableBuilder[Self <: IPageWidget] (val x: Self) extends AnyVal {
+    extension [Self <: IPageWidget](x: Self) {
       
-      @scala.inline
-      def setContainerId(value: String): Self = StObject.set(x, "ContainerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: String): Self = StObject.set(x, "ContainerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayOrder(value: String): Self = StObject.set(x, "DisplayOrder", value.asInstanceOf[js.Any])
+      inline def setDisplayOrder(value: String): Self = StObject.set(x, "DisplayOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid(value: String): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: String): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutId(value: String): Self = StObject.set(x, "LayoutId", value.asInstanceOf[js.Any])
+      inline def setLayoutId(value: String): Self = StObject.set(x, "LayoutId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageId(value: String): Self = StObject.set(x, "PageId", value.asInstanceOf[js.Any])
+      inline def setPageId(value: String): Self = StObject.set(x, "PageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualWidgetInstanceId(value: String): Self = StObject.set(x, "VirtualWidgetInstanceId", value.asInstanceOf[js.Any])
+      inline def setVirtualWidgetInstanceId(value: String): Self = StObject.set(x, "VirtualWidgetInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetDescription(value: String): Self = StObject.set(x, "WidgetDescription", value.asInstanceOf[js.Any])
+      inline def setWidgetDescription(value: String): Self = StObject.set(x, "WidgetDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetIcon(value: String): Self = StObject.set(x, "WidgetIcon", value.asInstanceOf[js.Any])
+      inline def setWidgetIcon(value: String): Self = StObject.set(x, "WidgetIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetInstanceId(value: String): Self = StObject.set(x, "WidgetInstanceId", value.asInstanceOf[js.Any])
+      inline def setWidgetInstanceId(value: String): Self = StObject.set(x, "WidgetInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetName(value: String): Self = StObject.set(x, "WidgetName", value.asInstanceOf[js.Any])
+      inline def setWidgetName(value: String): Self = StObject.set(x, "WidgetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetOptions(value: String): Self = StObject.set(x, "WidgetOptions", value.asInstanceOf[js.Any])
+      inline def setWidgetOptions(value: String): Self = StObject.set(x, "WidgetOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetProperties(value: String): Self = StObject.set(x, "WidgetProperties", value.asInstanceOf[js.Any])
+      inline def setWidgetProperties(value: String): Self = StObject.set(x, "WidgetProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneId(value: String): Self = StObject.set(x, "ZoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: String): Self = StObject.set(x, "ZoneId", value.asInstanceOf[js.Any])
     }
   }
 }

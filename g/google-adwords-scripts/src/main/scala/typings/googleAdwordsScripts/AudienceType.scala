@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AudienceType extends StObject
 object AudienceType {
   
-  @scala.inline
-  def USER_INTEREST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST = "USER_INTEREST".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST]
+  inline def USER_INTEREST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST = "USER_INTEREST".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST]
   
-  @scala.inline
-  def USER_LIST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST = "USER_LIST".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST]
+  inline def USER_LIST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST = "USER_LIST".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST]
 }

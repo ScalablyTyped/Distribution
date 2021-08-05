@@ -86,8 +86,7 @@ trait InteractionHandler
 }
 object InteractionHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithParent: XWindow => Unit,
     createWithParentAndContext: (XWindow, String) => Unit,
@@ -100,13 +99,10 @@ object InteractionHandler {
     __obj.asInstanceOf[InteractionHandler]
   }
   
-  @scala.inline
-  implicit class InteractionHandlerMutableBuilder[Self <: InteractionHandler] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionHandler](x: Self) {
     
-    @scala.inline
-    def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
+    inline def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithParentAndContext(value: (XWindow, String) => Unit): Self = StObject.set(x, "createWithParentAndContext", js.Any.fromFunction2(value))
+    inline def setCreateWithParentAndContext(value: (XWindow, String) => Unit): Self = StObject.set(x, "createWithParentAndContext", js.Any.fromFunction2(value))
   }
 }

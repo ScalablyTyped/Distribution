@@ -12,22 +12,17 @@ trait CustomGestureProps extends StObject {
 }
 object CustomGestureProps {
   
-  @scala.inline
-  def apply(config: js.Array[moves], onGesture: () => Unit): CustomGestureProps = {
+  inline def apply(config: js.Array[moves], onGesture: () => Unit): CustomGestureProps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], onGesture = js.Any.fromFunction0(onGesture))
     __obj.asInstanceOf[CustomGestureProps]
   }
   
-  @scala.inline
-  implicit class CustomGesturePropsMutableBuilder[Self <: CustomGestureProps] (val x: Self) extends AnyVal {
+  extension [Self <: CustomGestureProps](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Array[moves]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Array[moves]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigVarargs(value: moves*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: moves*): Self = StObject.set(x, "config", js.Array(value :_*))
     
-    @scala.inline
-    def setOnGesture(value: () => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction0(value))
+    inline def setOnGesture(value: () => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction0(value))
   }
 }

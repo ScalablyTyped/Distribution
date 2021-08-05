@@ -18,19 +18,15 @@ trait GetApiMappingRequest extends StObject {
 }
 object GetApiMappingRequest {
   
-  @scala.inline
-  def apply(ApiMappingId: string, DomainName: string): GetApiMappingRequest = {
+  inline def apply(ApiMappingId: string, DomainName: string): GetApiMappingRequest = {
     val __obj = js.Dynamic.literal(ApiMappingId = ApiMappingId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiMappingRequest]
   }
   
-  @scala.inline
-  implicit class GetApiMappingRequestMutableBuilder[Self <: GetApiMappingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetApiMappingRequest](x: Self) {
     
-    @scala.inline
-    def setApiMappingId(value: string): Self = StObject.set(x, "ApiMappingId", value.asInstanceOf[js.Any])
+    inline def setApiMappingId(value: string): Self = StObject.set(x, "ApiMappingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

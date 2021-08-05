@@ -12,8 +12,7 @@ object formatModeMod {
     * @param {boolean} isDirectory
     * @returns {string}
     */
-  @scala.inline
-  def apply(mode: Mode, isDirectory: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mode.asInstanceOf[js.Any], isDirectory.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(mode: Mode, isDirectory: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mode.asInstanceOf[js.Any], isDirectory.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("ipfs-core-utils/dist/src/files/format-mode", JSImport.Namespace)
   @js.native

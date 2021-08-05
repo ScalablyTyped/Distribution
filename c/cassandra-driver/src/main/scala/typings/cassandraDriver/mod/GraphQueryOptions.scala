@@ -21,43 +21,31 @@ trait GraphQueryOptions
 }
 object GraphQueryOptions {
   
-  @scala.inline
-  def apply(): GraphQueryOptions = {
+  inline def apply(): GraphQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphQueryOptions]
   }
   
-  @scala.inline
-  implicit class GraphQueryOptionsMutableBuilder[Self <: GraphQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQueryOptions](x: Self) {
     
-    @scala.inline
-    def setGraphLanguage(value: String): Self = StObject.set(x, "graphLanguage", value.asInstanceOf[js.Any])
+    inline def setGraphLanguage(value: String): Self = StObject.set(x, "graphLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphLanguageUndefined: Self = StObject.set(x, "graphLanguage", js.undefined)
+    inline def setGraphLanguageUndefined: Self = StObject.set(x, "graphLanguage", js.undefined)
     
-    @scala.inline
-    def setGraphName(value: String): Self = StObject.set(x, "graphName", value.asInstanceOf[js.Any])
+    inline def setGraphName(value: String): Self = StObject.set(x, "graphName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphNameUndefined: Self = StObject.set(x, "graphName", js.undefined)
+    inline def setGraphNameUndefined: Self = StObject.set(x, "graphName", js.undefined)
     
-    @scala.inline
-    def setGraphReadConsistency(value: consistencies): Self = StObject.set(x, "graphReadConsistency", value.asInstanceOf[js.Any])
+    inline def setGraphReadConsistency(value: consistencies): Self = StObject.set(x, "graphReadConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphReadConsistencyUndefined: Self = StObject.set(x, "graphReadConsistency", js.undefined)
+    inline def setGraphReadConsistencyUndefined: Self = StObject.set(x, "graphReadConsistency", js.undefined)
     
-    @scala.inline
-    def setGraphSource(value: String): Self = StObject.set(x, "graphSource", value.asInstanceOf[js.Any])
+    inline def setGraphSource(value: String): Self = StObject.set(x, "graphSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphSourceUndefined: Self = StObject.set(x, "graphSource", js.undefined)
+    inline def setGraphSourceUndefined: Self = StObject.set(x, "graphSource", js.undefined)
     
-    @scala.inline
-    def setGraphWriteConsistency(value: consistencies): Self = StObject.set(x, "graphWriteConsistency", value.asInstanceOf[js.Any])
+    inline def setGraphWriteConsistency(value: consistencies): Self = StObject.set(x, "graphWriteConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphWriteConsistencyUndefined: Self = StObject.set(x, "graphWriteConsistency", js.undefined)
+    inline def setGraphWriteConsistencyUndefined: Self = StObject.set(x, "graphWriteConsistency", js.undefined)
   }
 }

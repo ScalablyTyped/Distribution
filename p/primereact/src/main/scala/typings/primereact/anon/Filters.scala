@@ -10,16 +10,13 @@ trait Filters extends StObject {
 }
 object Filters {
   
-  @scala.inline
-  def apply(filters: js.Any): Filters = {
+  inline def apply(filters: js.Any): Filters = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filters]
   }
   
-  @scala.inline
-  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
+  extension [Self <: Filters](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
   }
 }

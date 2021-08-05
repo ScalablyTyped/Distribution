@@ -22,8 +22,7 @@ trait XFrameSetModel
 }
 object XFrameSetModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Source: String,
     acquire: () => Unit,
     getSource: () => String,
@@ -35,16 +34,12 @@ object XFrameSetModel {
     __obj.asInstanceOf[XFrameSetModel]
   }
   
-  @scala.inline
-  implicit class XFrameSetModelMutableBuilder[Self <: XFrameSetModel] (val x: Self) extends AnyVal {
+  extension [Self <: XFrameSetModel](x: Self) {
     
-    @scala.inline
-    def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+    inline def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSource(value: String => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+    inline def setSetSource(value: String => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

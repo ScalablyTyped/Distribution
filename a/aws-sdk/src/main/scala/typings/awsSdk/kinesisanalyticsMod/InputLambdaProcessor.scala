@@ -18,19 +18,15 @@ trait InputLambdaProcessor extends StObject {
 }
 object InputLambdaProcessor {
   
-  @scala.inline
-  def apply(ResourceARN: ResourceARN, RoleARN: RoleARN): InputLambdaProcessor = {
+  inline def apply(ResourceARN: ResourceARN, RoleARN: RoleARN): InputLambdaProcessor = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLambdaProcessor]
   }
   
-  @scala.inline
-  implicit class InputLambdaProcessorMutableBuilder[Self <: InputLambdaProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: InputLambdaProcessor](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
   }
 }

@@ -14,16 +14,13 @@ trait CreateCollectionSuccess extends StObject {
 }
 object CreateCollectionSuccess {
   
-  @scala.inline
-  def apply(errMsg: String): CreateCollectionSuccess = {
+  inline def apply(errMsg: String): CreateCollectionSuccess = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionSuccess]
   }
   
-  @scala.inline
-  implicit class CreateCollectionSuccessMutableBuilder[Self <: CreateCollectionSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectionSuccess](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

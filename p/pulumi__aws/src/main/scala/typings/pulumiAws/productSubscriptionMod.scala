@@ -50,21 +50,16 @@ object productSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProductSubscriptionState): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProductSubscriptionState, opts: CustomResourceOptions): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    inline def get(name: String, id: Input[ID]): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    inline def get(name: String, id: Input[ID], state: ProductSubscriptionState): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    inline def get(name: String, id: Input[ID], state: ProductSubscriptionState, opts: CustomResourceOptions): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
     
     /**
       * Returns true if the given object is an instance of ProductSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean]
   }
   
   trait ProductSubscriptionArgs extends StObject {
@@ -76,17 +71,14 @@ object productSubscriptionMod {
   }
   object ProductSubscriptionArgs {
     
-    @scala.inline
-    def apply(productArn: Input[String]): ProductSubscriptionArgs = {
+    inline def apply(productArn: Input[String]): ProductSubscriptionArgs = {
       val __obj = js.Dynamic.literal(productArn = productArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProductSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class ProductSubscriptionArgsMutableBuilder[Self <: ProductSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProductSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setProductArn(value: Input[String]): Self = StObject.set(x, "productArn", value.asInstanceOf[js.Any])
+      inline def setProductArn(value: Input[String]): Self = StObject.set(x, "productArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +96,20 @@ object productSubscriptionMod {
   }
   object ProductSubscriptionState {
     
-    @scala.inline
-    def apply(): ProductSubscriptionState = {
+    inline def apply(): ProductSubscriptionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProductSubscriptionState]
     }
     
-    @scala.inline
-    implicit class ProductSubscriptionStateMutableBuilder[Self <: ProductSubscriptionState] (val x: Self) extends AnyVal {
+    extension [Self <: ProductSubscriptionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setProductArn(value: Input[String]): Self = StObject.set(x, "productArn", value.asInstanceOf[js.Any])
+      inline def setProductArn(value: Input[String]): Self = StObject.set(x, "productArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductArnUndefined: Self = StObject.set(x, "productArn", js.undefined)
+      inline def setProductArnUndefined: Self = StObject.set(x, "productArn", js.undefined)
     }
   }
 }

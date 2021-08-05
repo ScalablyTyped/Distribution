@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedEnumeration extends StObject {
   
-  @JSName("MSHTML.SVGAnimatedEnumeration_typekey")
+  /* private */ @JSName("MSHTML.SVGAnimatedEnumeration_typekey")
   var MSHTMLDotSVGAnimatedEnumeration_typekey: SVGAnimatedEnumeration
   
   var animVal: Double
@@ -15,23 +15,18 @@ trait SVGAnimatedEnumeration extends StObject {
 }
 object SVGAnimatedEnumeration {
   
-  @scala.inline
-  def apply(MSHTMLDotSVGAnimatedEnumeration_typekey: SVGAnimatedEnumeration, animVal: Double, baseVal: Double): SVGAnimatedEnumeration = {
+  inline def apply(MSHTMLDotSVGAnimatedEnumeration_typekey: SVGAnimatedEnumeration, animVal: Double, baseVal: Double): SVGAnimatedEnumeration = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.SVGAnimatedEnumeration_typekey")(MSHTMLDotSVGAnimatedEnumeration_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedEnumeration]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedEnumerationMutableBuilder[Self <: SVGAnimatedEnumeration] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedEnumeration](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: Double): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: Double): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: Double): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: Double): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedEnumeration_typekey(value: SVGAnimatedEnumeration): Self = StObject.set(x, "MSHTML.SVGAnimatedEnumeration_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGAnimatedEnumeration_typekey(value: SVGAnimatedEnumeration): Self = StObject.set(x, "MSHTML.SVGAnimatedEnumeration_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait GlobalResource extends StObject {
 }
 object GlobalResource {
   
-  @scala.inline
-  def apply(domains: DomainsResource, operations: OperationsResource): GlobalResource = {
+  inline def apply(domains: DomainsResource, operations: OperationsResource): GlobalResource = {
     val __obj = js.Dynamic.literal(domains = domains.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalResource]
   }
   
-  @scala.inline
-  implicit class GlobalResourceMutableBuilder[Self <: GlobalResource] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalResource](x: Self) {
     
-    @scala.inline
-    def setDomains(value: DomainsResource): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: DomainsResource): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

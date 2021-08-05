@@ -18,22 +18,17 @@ trait FrameFlashCapabilities extends StObject {
 }
 object FrameFlashCapabilities {
   
-  @scala.inline
-  def apply(powerSupported: Boolean, redEyeReductionSupported: Boolean, supported: Boolean): FrameFlashCapabilities = {
+  inline def apply(powerSupported: Boolean, redEyeReductionSupported: Boolean, supported: Boolean): FrameFlashCapabilities = {
     val __obj = js.Dynamic.literal(powerSupported = powerSupported.asInstanceOf[js.Any], redEyeReductionSupported = redEyeReductionSupported.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameFlashCapabilities]
   }
   
-  @scala.inline
-  implicit class FrameFlashCapabilitiesMutableBuilder[Self <: FrameFlashCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: FrameFlashCapabilities](x: Self) {
     
-    @scala.inline
-    def setPowerSupported(value: Boolean): Self = StObject.set(x, "powerSupported", value.asInstanceOf[js.Any])
+    inline def setPowerSupported(value: Boolean): Self = StObject.set(x, "powerSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedEyeReductionSupported(value: Boolean): Self = StObject.set(x, "redEyeReductionSupported", value.asInstanceOf[js.Any])
+    inline def setRedEyeReductionSupported(value: Boolean): Self = StObject.set(x, "redEyeReductionSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

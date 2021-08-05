@@ -13,19 +13,15 @@ trait DeleteBackupResponse extends StObject {
 }
 object DeleteBackupResponse {
   
-  @scala.inline
-  def apply(): DeleteBackupResponse = {
+  inline def apply(): DeleteBackupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBackupResponse]
   }
   
-  @scala.inline
-  implicit class DeleteBackupResponseMutableBuilder[Self <: DeleteBackupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupResponse](x: Self) {
     
-    @scala.inline
-    def setBackup(value: Backup): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: Backup): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "Backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "Backup", js.undefined)
   }
 }

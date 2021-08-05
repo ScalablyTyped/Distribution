@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(rawHtml: String): js.Array[Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawHtml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block]]
+  inline def parse(rawHtml: String): js.Array[Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawHtml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block]]
   
   trait Block extends StObject {
     
@@ -28,8 +27,7 @@ object mod {
   }
   object Block {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attrs: Record[String, js.Any],
       innerBlocks: js.Array[Block],
       innerContent: js.Array[String],
@@ -39,32 +37,23 @@ object mod {
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
+      inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockNameNull: Self = StObject.set(x, "blockName", null)
+      inline def setBlockNameNull: Self = StObject.set(x, "blockName", null)
       
-      @scala.inline
-      def setInnerBlocks(value: js.Array[Block]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+      inline def setInnerBlocks(value: js.Array[Block]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerBlocksVarargs(value: Block*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+      inline def setInnerBlocksVarargs(value: Block*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setInnerContent(value: js.Array[String]): Self = StObject.set(x, "innerContent", value.asInstanceOf[js.Any])
+      inline def setInnerContent(value: js.Array[String]): Self = StObject.set(x, "innerContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContentVarargs(value: String*): Self = StObject.set(x, "innerContent", js.Array(value :_*))
+      inline def setInnerContentVarargs(value: String*): Self = StObject.set(x, "innerContent", js.Array(value :_*))
       
-      @scala.inline
-      def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
+      inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
     }
   }
 }

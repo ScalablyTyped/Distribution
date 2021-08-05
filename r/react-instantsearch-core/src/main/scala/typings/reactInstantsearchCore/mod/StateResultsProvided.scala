@@ -33,8 +33,7 @@ trait StateResultsProvided[TDoc] extends StObject {
 }
 object StateResultsProvided {
   
-  @scala.inline
-  def apply[TDoc](
+  inline def apply[TDoc](
     allSearchResults: AllSearchResults[TDoc],
     error: AlgoliaError,
     isSearchStalled: js.Any,
@@ -47,28 +46,20 @@ object StateResultsProvided {
     __obj.asInstanceOf[StateResultsProvided[TDoc]]
   }
   
-  @scala.inline
-  implicit class StateResultsProvidedMutableBuilder[Self <: StateResultsProvided[?], TDoc] (val x: Self & StateResultsProvided[TDoc]) extends AnyVal {
+  extension [Self <: StateResultsProvided[?], TDoc](x: Self & StateResultsProvided[TDoc]) {
     
-    @scala.inline
-    def setAllSearchResults(value: AllSearchResults[TDoc]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
+    inline def setAllSearchResults(value: AllSearchResults[TDoc]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: AlgoliaError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: AlgoliaError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchStalled(value: js.Any): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
+    inline def setIsSearchStalled(value: js.Any): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchResults(value: SearchResults[TDoc]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+    inline def setSearchResults(value: SearchResults[TDoc]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchState(value: SearchState): Self = StObject.set(x, "searchState", value.asInstanceOf[js.Any])
+    inline def setSearchState(value: SearchState): Self = StObject.set(x, "searchState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearching(value: Boolean): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
+    inline def setSearching(value: Boolean): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchingForFacetValues(value: js.Any): Self = StObject.set(x, "searchingForFacetValues", value.asInstanceOf[js.Any])
+    inline def setSearchingForFacetValues(value: js.Any): Self = StObject.set(x, "searchingForFacetValues", value.asInstanceOf[js.Any])
   }
 }

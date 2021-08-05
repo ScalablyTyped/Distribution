@@ -30,31 +30,23 @@ trait SchemaDomainMappingSpec extends StObject {
 }
 object SchemaDomainMappingSpec {
   
-  @scala.inline
-  def apply(): SchemaDomainMappingSpec = {
+  inline def apply(): SchemaDomainMappingSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainMappingSpec]
   }
   
-  @scala.inline
-  implicit class SchemaDomainMappingSpecMutableBuilder[Self <: SchemaDomainMappingSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomainMappingSpec](x: Self) {
     
-    @scala.inline
-    def setCertificateMode(value: String): Self = StObject.set(x, "certificateMode", value.asInstanceOf[js.Any])
+    inline def setCertificateMode(value: String): Self = StObject.set(x, "certificateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateModeUndefined: Self = StObject.set(x, "certificateMode", js.undefined)
+    inline def setCertificateModeUndefined: Self = StObject.set(x, "certificateMode", js.undefined)
     
-    @scala.inline
-    def setForceOverride(value: Boolean): Self = StObject.set(x, "forceOverride", value.asInstanceOf[js.Any])
+    inline def setForceOverride(value: Boolean): Self = StObject.set(x, "forceOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceOverrideUndefined: Self = StObject.set(x, "forceOverride", js.undefined)
+    inline def setForceOverrideUndefined: Self = StObject.set(x, "forceOverride", js.undefined)
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
+    inline def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
   }
 }

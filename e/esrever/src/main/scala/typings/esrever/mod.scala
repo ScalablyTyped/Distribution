@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reverse(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def reverse(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("esrever", "version")
   @js.native

@@ -12,16 +12,13 @@ trait EnrichDeletePolicy
 }
 object EnrichDeletePolicy {
   
-  @scala.inline
-  def apply(name: String): EnrichDeletePolicy = {
+  inline def apply(name: String): EnrichDeletePolicy = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrichDeletePolicy]
   }
   
-  @scala.inline
-  implicit class EnrichDeletePolicyMutableBuilder[Self <: EnrichDeletePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: EnrichDeletePolicy](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

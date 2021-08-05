@@ -19,9 +19,7 @@ object MetadataStore {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def importMetadata(exportedString: String): typings.breeze.breeze.MetadataStore = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetadata")(exportedString.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.MetadataStore]
+  inline def importMetadata(exportedString: String): typings.breeze.breeze.MetadataStore = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetadata")(exportedString.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.MetadataStore]
   
-  @scala.inline
-  def normalizeTypeName(typeName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTypeName")(typeName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizeTypeName(typeName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTypeName")(typeName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

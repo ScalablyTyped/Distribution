@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "DiffieHellman")
 @js.native
-class DiffieHellman_ protected () extends StObject {
+/* private */ class DiffieHellman_ () extends StObject {
   
   def computeSecret(other_public_key: String, input_encoding: HexBase64Latin1Encoding): Buffer = js.native
   def computeSecret(

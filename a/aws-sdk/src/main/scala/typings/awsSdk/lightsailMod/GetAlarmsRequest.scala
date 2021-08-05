@@ -23,31 +23,23 @@ trait GetAlarmsRequest extends StObject {
 }
 object GetAlarmsRequest {
   
-  @scala.inline
-  def apply(): GetAlarmsRequest = {
+  inline def apply(): GetAlarmsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAlarmsRequest]
   }
   
-  @scala.inline
-  implicit class GetAlarmsRequestMutableBuilder[Self <: GetAlarmsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAlarmsRequest](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNameUndefined: Self = StObject.set(x, "alarmName", js.undefined)
+    inline def setAlarmNameUndefined: Self = StObject.set(x, "alarmName", js.undefined)
     
-    @scala.inline
-    def setMonitoredResourceName(value: ResourceName): Self = StObject.set(x, "monitoredResourceName", value.asInstanceOf[js.Any])
+    inline def setMonitoredResourceName(value: ResourceName): Self = StObject.set(x, "monitoredResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceNameUndefined: Self = StObject.set(x, "monitoredResourceName", js.undefined)
+    inline def setMonitoredResourceNameUndefined: Self = StObject.set(x, "monitoredResourceName", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

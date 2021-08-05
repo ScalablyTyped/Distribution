@@ -45,46 +45,33 @@ trait SchemaReplaceAllShapesWithSheetsChartRequest extends StObject {
 }
 object SchemaReplaceAllShapesWithSheetsChartRequest {
   
-  @scala.inline
-  def apply(): SchemaReplaceAllShapesWithSheetsChartRequest = {
+  inline def apply(): SchemaReplaceAllShapesWithSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceAllShapesWithSheetsChartRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceAllShapesWithSheetsChartRequestMutableBuilder[Self <: SchemaReplaceAllShapesWithSheetsChartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceAllShapesWithSheetsChartRequest](x: Self) {
     
-    @scala.inline
-    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+    inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
-    @scala.inline
-    def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+    inline def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+    inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
-    @scala.inline
-    def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
+    inline def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
+    inline def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
     
-    @scala.inline
-    def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
+    inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
+    inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
-    @scala.inline
-    def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }
 }

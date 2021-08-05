@@ -16,31 +16,23 @@ trait KeyFrame
 }
 object KeyFrame {
   
-  @scala.inline
-  def apply(): KeyFrame = {
+  inline def apply(): KeyFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyFrame]
   }
   
-  @scala.inline
-  implicit class KeyFrameMutableBuilder[Self <: KeyFrame] (val x: Self) extends AnyVal {
+  extension [Self <: KeyFrame](x: Self) {
     
-    @scala.inline
-    def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
+    inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    @scala.inline
-    def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

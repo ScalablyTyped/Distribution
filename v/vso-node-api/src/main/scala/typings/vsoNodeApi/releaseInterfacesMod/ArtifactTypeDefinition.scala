@@ -17,8 +17,7 @@ trait ArtifactTypeDefinition extends StObject {
 }
 object ArtifactTypeDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     inputDescriptors: js.Array[InputDescriptor],
     name: String,
@@ -28,22 +27,16 @@ object ArtifactTypeDefinition {
     __obj.asInstanceOf[ArtifactTypeDefinition]
   }
   
-  @scala.inline
-  implicit class ArtifactTypeDefinitionMutableBuilder[Self <: ArtifactTypeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactTypeDefinition](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
+    inline def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
+    inline def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueSourceIdentifier(value: String): Self = StObject.set(x, "uniqueSourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setUniqueSourceIdentifier(value: String): Self = StObject.set(x, "uniqueSourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

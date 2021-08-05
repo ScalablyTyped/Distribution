@@ -44,8 +44,7 @@ trait Batch extends StObject {
 }
 object Batch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dynamic: Boolean,
     meshInstance: MeshInstance,
     model: Model,
@@ -55,28 +54,20 @@ object Batch {
     __obj.asInstanceOf[Batch]
   }
   
-  @scala.inline
-  implicit class BatchMutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
+  extension [Self <: Batch](x: Self) {
     
-    @scala.inline
-    def setBatchGroupId(value: Double): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
+    inline def setBatchGroupId(value: Double): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchGroupIdUndefined: Self = StObject.set(x, "batchGroupId", js.undefined)
+    inline def setBatchGroupIdUndefined: Self = StObject.set(x, "batchGroupId", js.undefined)
     
-    @scala.inline
-    def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+    inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshInstance(value: MeshInstance): Self = StObject.set(x, "meshInstance", value.asInstanceOf[js.Any])
+    inline def setMeshInstance(value: MeshInstance): Self = StObject.set(x, "meshInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigMeshInstances(value: js.Array[MeshInstance]): Self = StObject.set(x, "origMeshInstances", value.asInstanceOf[js.Any])
+    inline def setOrigMeshInstances(value: js.Array[MeshInstance]): Self = StObject.set(x, "origMeshInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigMeshInstancesVarargs(value: MeshInstance*): Self = StObject.set(x, "origMeshInstances", js.Array(value :_*))
+    inline def setOrigMeshInstancesVarargs(value: MeshInstance*): Self = StObject.set(x, "origMeshInstances", js.Array(value :_*))
   }
 }

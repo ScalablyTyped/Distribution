@@ -29,8 +29,7 @@ object nestableListMod {
   }
   object IRenderData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connectDragSource: js.Any,
       depth: Double,
       isPlaceholder: Boolean,
@@ -41,23 +40,17 @@ object nestableListMod {
       __obj.asInstanceOf[IRenderData]
     }
     
-    @scala.inline
-    implicit class IRenderDataMutableBuilder[Self <: IRenderData] (val x: Self) extends AnyVal {
+    extension [Self <: IRenderData](x: Self) {
       
-      @scala.inline
-      def setConnectDragSource(value: js.Any): Self = StObject.set(x, "connectDragSource", value.asInstanceOf[js.Any])
+      inline def setConnectDragSource(value: js.Any): Self = StObject.set(x, "connectDragSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPlaceholder(value: Boolean): Self = StObject.set(x, "isPlaceholder", value.asInstanceOf[js.Any])
+      inline def setIsPlaceholder(value: Boolean): Self = StObject.set(x, "isPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
+      inline def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,107 +90,74 @@ object nestableListMod {
   }
   object NestableListProps {
     
-    @scala.inline
-    def apply(): NestableListProps = {
+    inline def apply(): NestableListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NestableListProps]
     }
     
-    @scala.inline
-    implicit class NestableListPropsMutableBuilder[Self <: NestableListProps] (val x: Self) extends AnyVal {
+    extension [Self <: NestableListProps](x: Self) {
       
-      @scala.inline
-      def setChildrenProperty(value: String): Self = StObject.set(x, "childrenProperty", value.asInstanceOf[js.Any])
+      inline def setChildrenProperty(value: String): Self = StObject.set(x, "childrenProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenPropertyUndefined: Self = StObject.set(x, "childrenProperty", js.undefined)
+      inline def setChildrenPropertyUndefined: Self = StObject.set(x, "childrenProperty", js.undefined)
       
-      @scala.inline
-      def setChildrenStyle(value: CSSProperties): Self = StObject.set(x, "childrenStyle", value.asInstanceOf[js.Any])
+      inline def setChildrenStyle(value: CSSProperties): Self = StObject.set(x, "childrenStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenStyleUndefined: Self = StObject.set(x, "childrenStyle", js.undefined)
+      inline def setChildrenStyleUndefined: Self = StObject.set(x, "childrenStyle", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setIsRenderDraggingChildren(value: Boolean): Self = StObject.set(x, "isRenderDraggingChildren", value.asInstanceOf[js.Any])
+      inline def setIsRenderDraggingChildren(value: Boolean): Self = StObject.set(x, "isRenderDraggingChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRenderDraggingChildrenUndefined: Self = StObject.set(x, "isRenderDraggingChildren", js.undefined)
+      inline def setIsRenderDraggingChildrenUndefined: Self = StObject.set(x, "isRenderDraggingChildren", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+      inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
-      @scala.inline
-      def setOnDragEnd(value: /* itemProps */ js.Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: /* itemProps */ js.Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* itemProps */ js.Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* itemProps */ js.Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* data */ Item => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* data */ Item => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setRenderAction(value: /* data */ IRenderData => ReactNode): Self = StObject.set(x, "renderAction", js.Any.fromFunction1(value))
+      inline def setRenderAction(value: /* data */ IRenderData => ReactNode): Self = StObject.set(x, "renderAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderActionUndefined: Self = StObject.set(x, "renderAction", js.undefined)
+      inline def setRenderActionUndefined: Self = StObject.set(x, "renderAction", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: /* data */ IRenderData => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+      inline def setRenderItem(value: /* data */ IRenderData => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
+      inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
       
-      @scala.inline
-      def setRenderPrefix(value: /* data */ IRenderData => ReactNode): Self = StObject.set(x, "renderPrefix", js.Any.fromFunction1(value))
+      inline def setRenderPrefix(value: /* data */ IRenderData => ReactNode): Self = StObject.set(x, "renderPrefix", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderPrefixUndefined: Self = StObject.set(x, "renderPrefix", js.undefined)
+      inline def setRenderPrefixUndefined: Self = StObject.set(x, "renderPrefix", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setUseDragHandle(value: Boolean): Self = StObject.set(x, "useDragHandle", value.asInstanceOf[js.Any])
+      inline def setUseDragHandle(value: Boolean): Self = StObject.set(x, "useDragHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDragHandleUndefined: Self = StObject.set(x, "useDragHandle", js.undefined)
+      inline def setUseDragHandleUndefined: Self = StObject.set(x, "useDragHandle", js.undefined)
     }
   }
 }

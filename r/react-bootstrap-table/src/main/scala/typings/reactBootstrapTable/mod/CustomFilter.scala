@@ -32,8 +32,7 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
 }
 object CustomFilter {
   
-  @scala.inline
-  def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
+  inline def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
     customFilterParameters: CustomFilterParameters[FParams],
     getElement: (js.Function2[
       /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
@@ -46,14 +45,11 @@ object CustomFilter {
     __obj.asInstanceOf[CustomFilter[FParams, FElement]]
   }
   
-  @scala.inline
-  implicit class CustomFilterMutableBuilder[Self <: CustomFilter[?, ?], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] (val x: Self & (CustomFilter[FParams, FElement])) extends AnyVal {
+  extension [Self <: CustomFilter[?, ?], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](x: Self & (CustomFilter[FParams, FElement])) {
     
-    @scala.inline
-    def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = StObject.set(x, "customFilterParameters", value.asInstanceOf[js.Any])
+    inline def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = StObject.set(x, "customFilterParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetElement(
+    inline def setGetElement(
       value: (js.Function2[
           /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
           /* type */ js.UndefOr[typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter], 
@@ -61,7 +57,6 @@ object CustomFilter {
         ], CustomFilterParameters[FParams]) => ReactElement
     ): Self = StObject.set(x, "getElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

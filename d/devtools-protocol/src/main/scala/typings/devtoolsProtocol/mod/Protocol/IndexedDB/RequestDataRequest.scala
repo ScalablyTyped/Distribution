@@ -44,8 +44,7 @@ trait RequestDataRequest extends StObject {
 }
 object RequestDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     databaseName: String,
     indexName: String,
     objectStoreName: String,
@@ -57,31 +56,22 @@ object RequestDataRequest {
     __obj.asInstanceOf[RequestDataRequest]
   }
   
-  @scala.inline
-  implicit class RequestDataRequestMutableBuilder[Self <: RequestDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RequestDataRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRange(value: KeyRange): Self = StObject.set(x, "keyRange", value.asInstanceOf[js.Any])
+    inline def setKeyRange(value: KeyRange): Self = StObject.set(x, "keyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRangeUndefined: Self = StObject.set(x, "keyRange", js.undefined)
+    inline def setKeyRangeUndefined: Self = StObject.set(x, "keyRange", js.undefined)
     
-    @scala.inline
-    def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
+    inline def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: integer): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: integer): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
+    inline def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
   }
 }

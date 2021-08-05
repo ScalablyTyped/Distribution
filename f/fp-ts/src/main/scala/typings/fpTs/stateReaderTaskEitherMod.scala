@@ -53,11 +53,9 @@ object stateReaderTaskEitherMod {
   val URI: /* "StateReaderTaskEither" */ String = js.native
   type URI = /* "StateReaderTaskEither" */ String
   
-  @scala.inline
-  def alt[S, R, E, A](that: Lazy[StateReaderTaskEither_[S, R, E, A]]): js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]]]
+  inline def alt[S, R, E, A](that: Lazy[StateReaderTaskEither_[S, R, E, A]]): js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]]]
   
-  @scala.inline
-  def ap[S, R, E, A](fa: StateReaderTaskEither_[S, R, E, A]): js.Function1[
+  inline def ap[S, R, E, A](fa: StateReaderTaskEither_[S, R, E, A]): js.Function1[
     /* fab */ StateReaderTaskEither_[S, R, E, js.Function1[/* a */ A, js.Any]], 
     StateReaderTaskEither_[S, R, E, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -65,8 +63,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[S, R, E, js.Any]
   ]]
   
-  @scala.inline
-  def apFirst[S, R, E, B](fb: StateReaderTaskEither_[S, R, E, B]): js.Function1[
+  inline def apFirst[S, R, E, B](fb: StateReaderTaskEither_[S, R, E, B]): js.Function1[
     /* fa */ StateReaderTaskEither_[S, R, E, js.Any], 
     StateReaderTaskEither_[S, R, E, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -74,8 +71,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[S, R, E, js.Any]
   ]]
   
-  @scala.inline
-  def apS[A, N /* <: String */, S, R, E, B](name: Exclude[N, /* keyof A */ String], fb: StateReaderTaskEither_[S, R, E, B]): js.Function1[
+  inline def apS[A, N /* <: String */, S, R, E, B](name: Exclude[N, /* keyof A */ String], fb: StateReaderTaskEither_[S, R, E, B]): js.Function1[
     /* fa */ StateReaderTaskEither_[S, R, E, A], 
     StateReaderTaskEither_[
       S, 
@@ -97,8 +93,7 @@ object stateReaderTaskEitherMod {
     ]
   ]]
   
-  @scala.inline
-  def apSW[A, N /* <: String */, S, Q, D, B](name: Exclude[N, /* keyof A */ String], fb: StateReaderTaskEither_[S, Q, D, B]): js.Function1[
+  inline def apSW[A, N /* <: String */, S, Q, D, B](name: Exclude[N, /* keyof A */ String], fb: StateReaderTaskEither_[S, Q, D, B]): js.Function1[
     /* fa */ StateReaderTaskEither_[S, js.Any, js.Any, A], 
     StateReaderTaskEither_[
       S, 
@@ -120,8 +115,7 @@ object stateReaderTaskEitherMod {
     ]
   ]]
   
-  @scala.inline
-  def apSecond[S, R, E, B](fb: StateReaderTaskEither_[S, R, E, B]): js.Function1[
+  inline def apSecond[S, R, E, B](fb: StateReaderTaskEither_[S, R, E, B]): js.Function1[
     /* fa */ StateReaderTaskEither_[S, R, E, js.Any], 
     StateReaderTaskEither_[S, R, E, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -129,8 +123,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[S, R, E, B]
   ]]
   
-  @scala.inline
-  def apW[S, Q, D, A](fa: StateReaderTaskEither_[S, Q, D, A]): js.Function1[
+  inline def apW[S, Q, D, A](fa: StateReaderTaskEither_[S, Q, D, A]): js.Function1[
     /* fab */ StateReaderTaskEither_[S, js.Any, js.Any, js.Function1[/* a */ A, js.Any]], 
     StateReaderTaskEither_[S, Q & js.Any, D | js.Any, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("apW")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -138,8 +131,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[S, Q & js.Any, D | js.Any, js.Any]
   ]]
   
-  @scala.inline
-  def bimap[E, G, A, B](f: js.Function1[/* e */ E, G], g: js.Function1[/* a */ A, B]): js.Function1[
+  inline def bimap[E, G, A, B](f: js.Function1[/* e */ E, G], g: js.Function1[/* a */ A, B]): js.Function1[
     /* fa */ StateReaderTaskEither_[js.Any, js.Any, E, A], 
     StateReaderTaskEither_[js.Any, js.Any, G, B]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bimap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -147,8 +139,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, G, B]
   ]]
   
-  @scala.inline
-  def bind[N /* <: String */, A, S, R, E, B](
+  inline def bind[N /* <: String */, A, S, R, E, B](
     name: Exclude[N, /* keyof A */ String],
     f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]
   ): js.Function1[
@@ -173,8 +164,7 @@ object stateReaderTaskEitherMod {
     ]
   ]]
   
-  @scala.inline
-  def bindTo[N /* <: String */](name: N): js.Function1[
+  inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ StateReaderTaskEither_[js.Any, js.Any, js.Any, js.Any], 
     StateReaderTaskEither_[
       js.Any, 
@@ -196,8 +186,7 @@ object stateReaderTaskEitherMod {
     ]
   ]]
   
-  @scala.inline
-  def bindW[N /* <: String */, A, S, Q, D, B](
+  inline def bindW[N /* <: String */, A, S, Q, D, B](
     name: Exclude[N, /* keyof A */ String],
     f: js.Function1[/* a */ A, StateReaderTaskEither_[S, Q, D, B]]
   ): js.Function1[
@@ -222,11 +211,9 @@ object stateReaderTaskEitherMod {
     ]
   ]]
   
-  @scala.inline
-  def chain[S, R, E, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]): js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, B]]]
+  inline def chain[S, R, E, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]): js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, B]]]
   
-  @scala.inline
-  def chainEitherK[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[
+  inline def chainEitherK[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, E, A], 
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -234,8 +221,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ]]
   
-  @scala.inline
-  def chainEitherKW[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[
+  inline def chainEitherKW[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, js.Any, A], 
     StateReaderTaskEither_[js.Any, js.Any, E | js.Any, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -243,11 +229,9 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E | js.Any, B]
   ]]
   
-  @scala.inline
-  def chainFirst[S, R, E, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]): js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]]]
+  inline def chainFirst[S, R, E, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]): js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]]]
   
-  @scala.inline
-  def chainFirstW[S, R, D, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, D, B]]): js.Function1[
+  inline def chainFirstW[S, R, D, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, D, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[S, js.Any, js.Any, A], 
     StateReaderTaskEither_[S, js.Any & R, D | js.Any, A]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -255,8 +239,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[S, js.Any & R, D | js.Any, A]
   ]]
   
-  @scala.inline
-  def chainIOEitherK[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[
+  inline def chainIOEitherK[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, E, A], 
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -264,8 +247,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ]]
   
-  @scala.inline
-  def chainIOEitherKW[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[
+  inline def chainIOEitherKW[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, js.Any, A], 
     StateReaderTaskEither_[js.Any, js.Any, E | js.Any, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -273,8 +255,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E | js.Any, B]
   ]]
   
-  @scala.inline
-  def chainReaderTaskEitherK[R, E, A, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[
+  inline def chainReaderTaskEitherK[R, E, A, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, R, E, A], 
     StateReaderTaskEither_[js.Any, R, E, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -282,8 +263,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, R, E, B]
   ]]
   
-  @scala.inline
-  def chainReaderTaskEitherKW[R, E, A, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[
+  inline def chainReaderTaskEitherKW[R, E, A, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, R, js.Any, A], 
     StateReaderTaskEither_[js.Any, R, E | js.Any, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderTaskEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -291,8 +271,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, R, E | js.Any, B]
   ]]
   
-  @scala.inline
-  def chainTaskEitherK[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[
+  inline def chainTaskEitherK[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, E, A], 
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -300,8 +279,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ]]
   
-  @scala.inline
-  def chainTaskEitherKW[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[
+  inline def chainTaskEitherKW[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, js.Any, A], 
     StateReaderTaskEither_[js.Any, js.Any, E | js.Any, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainTaskEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -309,8 +287,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E | js.Any, B]
   ]]
   
-  @scala.inline
-  def chainW[S, R, E, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]): js.Function1[
+  inline def chainW[S, R, E, A, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R, E, B]]): js.Function1[
     /* ma */ StateReaderTaskEither_[S, js.Any, js.Any, A], 
     StateReaderTaskEither_[S, js.Any & R, js.Any | E, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -318,11 +295,9 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[S, js.Any & R, js.Any | E, B]
   ]]
   
-  @scala.inline
-  def evalState[S, R, E, A](ma: StateReaderTaskEither_[S, R, E, A], s: S): ReaderTaskEither_[R, E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("evalState")(ma.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E, A]]
+  inline def evalState[S, R, E, A](ma: StateReaderTaskEither_[S, R, E, A], s: S): ReaderTaskEither_[R, E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("evalState")(ma.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
-  @scala.inline
-  def evaluate[S](s: S): js.Function1[
+  inline def evaluate[S](s: S): js.Function1[
     /* ma */ StateReaderTaskEither_[S, js.Any, js.Any, js.Any], 
     ReaderTaskEither_[js.Any, js.Any, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -330,11 +305,9 @@ object stateReaderTaskEitherMod {
     ReaderTaskEither_[js.Any, js.Any, js.Any]
   ]]
   
-  @scala.inline
-  def execState[S, R, E, A](ma: StateReaderTaskEither_[S, R, E, A], s: S): ReaderTaskEither_[R, E, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("execState")(ma.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E, S]]
+  inline def execState[S, R, E, A](ma: StateReaderTaskEither_[S, R, E, A], s: S): ReaderTaskEither_[R, E, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("execState")(ma.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E, S]]
   
-  @scala.inline
-  def execute[S](s: S): js.Function1[
+  inline def execute[S](s: S): js.Function1[
     /* ma */ StateReaderTaskEither_[S, js.Any, js.Any, js.Any], 
     ReaderTaskEither_[js.Any, js.Any, S]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -342,8 +315,7 @@ object stateReaderTaskEitherMod {
     ReaderTaskEither_[js.Any, js.Any, S]
   ]]
   
-  @scala.inline
-  def filterOrElse[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[
+  inline def filterOrElse[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, E, A], 
     StateReaderTaskEither_[js.Any, js.Any, E, A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -351,8 +323,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E, A]
   ]]
   
-  @scala.inline
-  def filterOrElse_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
+  inline def filterOrElse_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
     /* ma */ StateReaderTaskEither_[js.Any, js.Any, E, A], 
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -360,14 +331,11 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, E, B]
   ]]
   
-  @scala.inline
-  def flatten[S, R, E, A](mma: StateReaderTaskEither_[S, R, E, StateReaderTaskEither_[S, R, E, A]]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def flatten[S, R, E, A](mma: StateReaderTaskEither_[S, R, E, StateReaderTaskEither_[S, R, E, A]]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def fromEither[S, R, E, A](ma: Either_[E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def fromEither[S, R, E, A](ma: Either_[E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def fromEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
+  inline def fromEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
   
   @JSImport("fp-ts/lib/StateReaderTaskEither", "fromIO")
   @js.native
@@ -376,29 +344,21 @@ object stateReaderTaskEitherMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def fromIOEither[S, R, E, A](ma: IOEither_[E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def fromIOEither[S, R, E, A](ma: IOEither_[E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def fromIOEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
+  inline def fromIOEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
   
-  @scala.inline
-  def fromOption[E](onNone: Lazy[E]): js.Function1[/* ma */ Option_[js.Any], StateReaderTaskEither_[js.Any, js.Any, E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[js.Any], StateReaderTaskEither_[js.Any, js.Any, E, js.Any]]]
+  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* ma */ Option_[js.Any], StateReaderTaskEither_[js.Any, js.Any, E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[js.Any], StateReaderTaskEither_[js.Any, js.Any, E, js.Any]]]
   
-  @scala.inline
-  def fromPredicate[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, A]]]
+  inline def fromPredicate[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, A]]]
   
-  @scala.inline
-  def fromPredicate_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
+  inline def fromPredicate_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
   
-  @scala.inline
-  def fromReaderEither[S, R, E, A](ma: ReaderEither_[R, E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def fromReaderEither[S, R, E, A](ma: ReaderEither_[R, E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def fromReaderTaskEither[S, R, E, A](ma: ReaderTaskEither_[R, E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderTaskEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def fromReaderTaskEither[S, R, E, A](ma: ReaderTaskEither_[R, E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderTaskEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def fromReaderTaskEitherK[R, E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, R, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, R, E, B]]]
+  inline def fromReaderTaskEitherK[R, E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, R, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, R, E, B]]]
   
   @JSImport("fp-ts/lib/StateReaderTaskEither", "fromTask")
   @js.native
@@ -407,35 +367,25 @@ object stateReaderTaskEitherMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def fromTaskEither[S, R, E, A](ma: TaskEither_[E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def fromTaskEither[S, R, E, A](ma: TaskEither_[E, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEither")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def fromTaskEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
+  inline def fromTaskEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[js.Any, js.Any, E, B]]]
   
-  @scala.inline
-  def get[S, R, E](): StateReaderTaskEither_[S, R, E, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[StateReaderTaskEither_[S, R, E, S]]
+  inline def get[S, R, E](): StateReaderTaskEither_[S, R, E, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[StateReaderTaskEither_[S, R, E, S]]
   
-  @scala.inline
-  def gets[S, R, E, A](f: js.Function1[/* s */ S, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("gets")(f.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def gets[S, R, E, A](f: js.Function1[/* s */ S, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("gets")(f.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def left[S, R, E, A](e: E): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(e.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def left[S, R, E, A](e: E): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(e.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def leftIO[S, R, E, A](me: IO_[E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftIO")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def leftIO[S, R, E, A](me: IO_[E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftIO")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def leftReader[S, R, E, A](me: Reader_[R, E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftReader")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def leftReader[S, R, E, A](me: Reader_[R, E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftReader")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def leftState[S, R, E, A](me: State_[S, E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftState")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def leftState[S, R, E, A](me: State_[S, E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftState")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def leftTask[S, R, E, A](me: Task_[E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftTask")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def leftTask[S, R, E, A](me: Task_[E]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftTask")(me.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[
     /* fa */ StateReaderTaskEither_[js.Any, js.Any, js.Any, A], 
     StateReaderTaskEither_[js.Any, js.Any, js.Any, B]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -443,8 +393,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, js.Any, B]
   ]]
   
-  @scala.inline
-  def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[
+  inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[
     /* fa */ StateReaderTaskEither_[js.Any, js.Any, E, js.Any], 
     StateReaderTaskEither_[js.Any, js.Any, G, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -452,8 +401,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[js.Any, js.Any, G, js.Any]
   ]]
   
-  @scala.inline
-  def modify[S, R, E](f: js.Function1[/* s */ S, S]): StateReaderTaskEither_[S, R, E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, Unit]]
+  inline def modify[S, R, E](f: js.Function1[/* s */ S, S]): StateReaderTaskEither_[S, R, E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, Unit]]
   
   @JSImport("fp-ts/lib/StateReaderTaskEither", "of")
   @js.native
@@ -462,26 +410,19 @@ object stateReaderTaskEitherMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def put[S, R, E](s: S): StateReaderTaskEither_[S, R, E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(s.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, Unit]]
+  inline def put[S, R, E](s: S): StateReaderTaskEither_[S, R, E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(s.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, Unit]]
   
-  @scala.inline
-  def right[S, R, E, A](a: A): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(a.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def right[S, R, E, A](a: A): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(a.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def rightIO[S, R, E, A](ma: IO_[A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightIO")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def rightIO[S, R, E, A](ma: IO_[A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightIO")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def rightReader[S, R, E, A](ma: Reader_[R, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightReader")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def rightReader[S, R, E, A](ma: Reader_[R, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightReader")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def rightState[S, R, E, A](ma: State_[S, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightState")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def rightState[S, R, E, A](ma: State_[S, A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightState")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def rightTask[S, R, E, A](ma: Task_[A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightTask")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
+  inline def rightTask[S, R, E, A](ma: Task_[A]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightTask")(ma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
-  @scala.inline
-  def run[S, R, E, A](ma: StateReaderTaskEither_[S, R, E, A], s: S, r: R): js.Promise[Either_[E, js.Tuple2[A, S]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(ma.asInstanceOf[js.Any], s.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Either_[E, js.Tuple2[A, S]]]]
+  inline def run[S, R, E, A](ma: StateReaderTaskEither_[S, R, E, A], s: S, r: R): js.Promise[Either_[E, js.Tuple2[A, S]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(ma.asInstanceOf[js.Any], s.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Either_[E, js.Tuple2[A, S]]]]
   
   @JSImport("fp-ts/lib/StateReaderTaskEither", "stateReaderTaskEither")
   @js.native

@@ -18,15 +18,15 @@ object metadataStorageMod {
   @js.native
   class MetadataStorage () extends StObject {
     
-    var _ancestorsMap: js.Any = js.native
+    /* private */ var _ancestorsMap: js.Any = js.native
     
-    var _excludeMetadatas: js.Any = js.native
+    /* private */ var _excludeMetadatas: js.Any = js.native
     
-    var _exposeMetadatas: js.Any = js.native
+    /* private */ var _exposeMetadatas: js.Any = js.native
     
-    var _transformMetadatas: js.Any = js.native
+    /* private */ var _transformMetadatas: js.Any = js.native
     
-    var _typeMetadatas: js.Any = js.native
+    /* private */ var _typeMetadatas: js.Any = js.native
     
     def addExcludeMetadata(metadata: ExcludeMetadata): Unit = js.native
     
@@ -44,15 +44,15 @@ object metadataStorageMod {
     
     def findExposeMetadataByCustomName(target: js.Function, name: String): ExposeMetadata = js.native
     
-    var findMetadata: js.Any = js.native
+    /* private */ var findMetadata: js.Any = js.native
     
-    var findMetadatas: js.Any = js.native
+    /* private */ var findMetadatas: js.Any = js.native
     
     def findTransformMetadatas(target: js.Function, propertyName: String, transformationType: TransformationType): js.Array[TransformMetadata] = js.native
     
     def findTypeMetadata(target: js.Function, propertyName: String): TypeMetadata = js.native
     
-    var getAncestors: js.Any = js.native
+    /* private */ var getAncestors: js.Any = js.native
     
     def getExcludedMetadatas(target: js.Function): js.Array[ExcludeMetadata] = js.native
     
@@ -62,7 +62,7 @@ object metadataStorageMod {
     
     def getExposedProperties(target: js.Function, transformationType: TransformationType): js.Array[String] = js.native
     
-    var getMetadata: js.Any = js.native
+    /* private */ var getMetadata: js.Any = js.native
     
     def getStrategy(target: js.Function): excludeAll | exposeAll | none = js.native
   }

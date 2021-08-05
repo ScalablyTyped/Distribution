@@ -22,25 +22,19 @@ trait SchemaI18nLanguageSnippet extends StObject {
 }
 object SchemaI18nLanguageSnippet {
   
-  @scala.inline
-  def apply(): SchemaI18nLanguageSnippet = {
+  inline def apply(): SchemaI18nLanguageSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaI18nLanguageSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaI18nLanguageSnippetMutableBuilder[Self <: SchemaI18nLanguageSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaI18nLanguageSnippet](x: Self) {
     
-    @scala.inline
-    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

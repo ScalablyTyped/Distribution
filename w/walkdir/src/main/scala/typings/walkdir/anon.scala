@@ -71,76 +71,54 @@ object anon {
   }
   object WalkOptionsreturnobjectbo {
     
-    @scala.inline
-    def apply(): WalkOptionsreturnobjectbo = {
+    inline def apply(): WalkOptionsreturnobjectbo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WalkOptionsreturnobjectbo]
     }
     
-    @scala.inline
-    implicit class WalkOptionsreturnobjectboMutableBuilder[Self <: WalkOptionsreturnobjectbo] (val x: Self) extends AnyVal {
+    extension [Self <: WalkOptionsreturnobjectbo](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
+      inline def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
+      inline def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
       
-      @scala.inline
-      def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
+      inline def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
+      inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
+      inline def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
+      inline def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
-      @scala.inline
-      def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
+      inline def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
+      inline def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
       
-      @scala.inline
-      def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
+      inline def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
+      inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      @scala.inline
-      def setReturn_object(value: Boolean): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: Boolean): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
+      inline def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
+      inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
+      inline def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
     }
   }
   
@@ -207,73 +185,52 @@ object anon {
   }
   object WalkOptionsreturnobjectfa {
     
-    @scala.inline
-    def apply(return_object: js.UndefOr[Boolean] & js.UndefOr[`false`]): WalkOptionsreturnobjectfa = {
+    inline def apply(return_object: js.UndefOr[Boolean] & js.UndefOr[`false`]): WalkOptionsreturnobjectfa = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any])
       __obj.asInstanceOf[WalkOptionsreturnobjectfa]
     }
     
-    @scala.inline
-    implicit class WalkOptionsreturnobjectfaMutableBuilder[Self <: WalkOptionsreturnobjectfa] (val x: Self) extends AnyVal {
+    extension [Self <: WalkOptionsreturnobjectfa](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
+      inline def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
+      inline def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
       
-      @scala.inline
-      def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
+      inline def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
+      inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
+      inline def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
+      inline def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
-      @scala.inline
-      def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
+      inline def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
+      inline def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
       
-      @scala.inline
-      def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
+      inline def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
+      inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      @scala.inline
-      def setReturn_object(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
+      inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
+      inline def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
     }
   }
   
@@ -340,73 +297,52 @@ object anon {
   }
   object WalkOptionsreturnobjecttr {
     
-    @scala.inline
-    def apply(return_object: js.UndefOr[Boolean] & `true`): WalkOptionsreturnobjecttr = {
+    inline def apply(return_object: js.UndefOr[Boolean] & `true`): WalkOptionsreturnobjecttr = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any])
       __obj.asInstanceOf[WalkOptionsreturnobjecttr]
     }
     
-    @scala.inline
-    implicit class WalkOptionsreturnobjecttrMutableBuilder[Self <: WalkOptionsreturnobjecttr] (val x: Self) extends AnyVal {
+    extension [Self <: WalkOptionsreturnobjecttr](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
+      inline def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
+      inline def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
       
-      @scala.inline
-      def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
+      inline def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
+      inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
+      inline def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
+      inline def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
-      @scala.inline
-      def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
+      inline def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
+      inline def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
       
-      @scala.inline
-      def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
+      inline def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
+      inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      @scala.inline
-      def setReturn_object(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
+      inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
+      inline def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
     }
   }
   
@@ -473,73 +409,52 @@ object anon {
   }
   object syncfalseundefinedWalkOpt {
     
-    @scala.inline
-    def apply(sync: js.UndefOr[`false`] & js.UndefOr[Boolean]): syncfalseundefinedWalkOpt = {
+    inline def apply(sync: js.UndefOr[`false`] & js.UndefOr[Boolean]): syncfalseundefinedWalkOpt = {
       val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[syncfalseundefinedWalkOpt]
     }
     
-    @scala.inline
-    implicit class syncfalseundefinedWalkOptMutableBuilder[Self <: syncfalseundefinedWalkOpt] (val x: Self) extends AnyVal {
+    extension [Self <: syncfalseundefinedWalkOpt](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
+      inline def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
+      inline def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
       
-      @scala.inline
-      def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
+      inline def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
+      inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
+      inline def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
+      inline def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
-      @scala.inline
-      def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
+      inline def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
+      inline def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
       
-      @scala.inline
-      def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
+      inline def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
+      inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      @scala.inline
-      def setReturn_object(value: Boolean): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: Boolean): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
+      inline def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
       
-      @scala.inline
-      def setSync(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
+      inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
+      inline def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
     }
   }
   
@@ -606,70 +521,50 @@ object anon {
   }
   object synctruereturnobjectfalse {
     
-    @scala.inline
-    def apply(return_object: js.UndefOr[`false`] & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjectfalse = {
+    inline def apply(return_object: js.UndefOr[`false`] & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjectfalse = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[synctruereturnobjectfalse]
     }
     
-    @scala.inline
-    implicit class synctruereturnobjectfalseMutableBuilder[Self <: synctruereturnobjectfalse] (val x: Self) extends AnyVal {
+    extension [Self <: synctruereturnobjectfalse](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
+      inline def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
+      inline def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
       
-      @scala.inline
-      def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
+      inline def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
+      inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
+      inline def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
+      inline def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
-      @scala.inline
-      def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
+      inline def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
+      inline def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
       
-      @scala.inline
-      def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
+      inline def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
+      inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      @scala.inline
-      def setReturn_object(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
+      inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
+      inline def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
     }
   }
   
@@ -736,70 +631,50 @@ object anon {
   }
   object synctruereturnobjecttrueW {
     
-    @scala.inline
-    def apply(return_object: `true` & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjecttrueW = {
+    inline def apply(return_object: `true` & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjecttrueW = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[synctruereturnobjecttrueW]
     }
     
-    @scala.inline
-    implicit class synctruereturnobjecttrueWMutableBuilder[Self <: synctruereturnobjecttrueW] (val x: Self) extends AnyVal {
+    extension [Self <: synctruereturnobjecttrueW](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
+      inline def setFind_links(value: Boolean): Self = StObject.set(x, "find_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
+      inline def setFind_linksUndefined: Self = StObject.set(x, "find_links", js.undefined)
       
-      @scala.inline
-      def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
+      inline def setFollow_symlinks(value: Boolean): Self = StObject.set(x, "follow_symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
+      inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
+      inline def setMax_depth(value: Double): Self = StObject.set(x, "max_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
+      inline def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
-      @scala.inline
-      def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
+      inline def setNo_recurse(value: Boolean): Self = StObject.set(x, "no_recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
+      inline def setNo_recurseUndefined: Self = StObject.set(x, "no_recurse", js.undefined)
       
-      @scala.inline
-      def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
+      inline def setNo_return(value: Boolean): Self = StObject.set(x, "no_return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
+      inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      @scala.inline
-      def setReturn_object(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
+      inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
+      inline def setTrack_inodesUndefined: Self = StObject.set(x, "track_inodes", js.undefined)
     }
   }
 }

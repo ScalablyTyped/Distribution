@@ -12,25 +12,19 @@ trait `13` extends StObject {
 }
 object `13` {
   
-  @scala.inline
-  def apply(): `13` = {
+  inline def apply(): `13` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`13`]
   }
   
-  @scala.inline
-  implicit class `13MutableBuilder`[Self <: `13`] (val x: Self) extends AnyVal {
+  extension [Self <: `13`](x: Self) {
     
-    @scala.inline
-    def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+    inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+    inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

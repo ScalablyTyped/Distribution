@@ -16,26 +16,16 @@ object mod {
     * To wrap videos that have been added to the page dynamically, just call the function again.
     * Fitvids is smart enough to only wrap the new videos.
     */
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: String): Unit = ^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: Null, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: Unit, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: Element, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: NodeListOf[Element]): Unit = ^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(parentSelector: NodeListOf[Element], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(options: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(parentSelector: String): Unit = ^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(parentSelector: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(parentSelector: Null, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(parentSelector: Unit, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(parentSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(parentSelector: Element, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(parentSelector: NodeListOf[Element]): Unit = ^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(parentSelector: NodeListOf[Element], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(parentSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("fitvids", JSImport.Namespace)
   @js.native
@@ -58,32 +48,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setPlayers(value: String | js.Array[String]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
+      inline def setPlayers(value: String | js.Array[String]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayersUndefined: Self = StObject.set(x, "players", js.undefined)
+      inline def setPlayersUndefined: Self = StObject.set(x, "players", js.undefined)
       
-      @scala.inline
-      def setPlayersVarargs(value: String*): Self = StObject.set(x, "players", js.Array(value :_*))
+      inline def setPlayersVarargs(value: String*): Self = StObject.set(x, "players", js.Array(value :_*))
     }
   }
 }

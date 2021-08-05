@@ -29,8 +29,6 @@ object Root {
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
-  @scala.inline
-  def fromJSON(json: INamespace): typings.apolloProtobufjs.mod.Root = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Root]
-  @scala.inline
-  def fromJSON(json: INamespace, root: typings.apolloProtobufjs.mod.Root): typings.apolloProtobufjs.mod.Root = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Root]
+  inline def fromJSON(json: INamespace): typings.apolloProtobufjs.mod.Root = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Root]
+  inline def fromJSON(json: INamespace, root: typings.apolloProtobufjs.mod.Root): typings.apolloProtobufjs.mod.Root = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Root]
 }

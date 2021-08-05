@@ -10,19 +10,15 @@ trait TooltipContent extends StObject {
 }
 object TooltipContent {
   
-  @scala.inline
-  def apply(): TooltipContent = {
+  inline def apply(): TooltipContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TooltipContent]
   }
   
-  @scala.inline
-  implicit class TooltipContentMutableBuilder[Self <: TooltipContent] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipContent](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

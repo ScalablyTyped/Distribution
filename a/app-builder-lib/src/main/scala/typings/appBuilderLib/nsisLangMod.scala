@@ -23,14 +23,12 @@ object nsisLangMod {
     val langs: js.Array[String] = js.native
   }
   
-  @scala.inline
-  def addCustomMessageFileInclude(
+  inline def addCustomMessageFileInclude(
     input: String,
     packager: PlatformPackager[js.Any],
     scriptGenerator: NsisScriptGenerator,
     langConfigurator: LangConfigurator
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessageFileInclude")(input.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], scriptGenerator.asInstanceOf[js.Any], langConfigurator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def createAddLangsMacro(scriptGenerator: NsisScriptGenerator, langConfigurator: LangConfigurator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddLangsMacro")(scriptGenerator.asInstanceOf[js.Any], langConfigurator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAddLangsMacro(scriptGenerator: NsisScriptGenerator, langConfigurator: LangConfigurator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddLangsMacro")(scriptGenerator.asInstanceOf[js.Any], langConfigurator.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -75,21 +75,16 @@ object jobQueueMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: JobQueueState): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    inline def get(name: String, id: Input[ID]): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    inline def get(name: String, id: Input[ID], state: JobQueueState): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    inline def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
     
     /**
       * Returns true if the given object is an instance of JobQueue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean]
   }
   
   trait JobQueueArgs extends StObject {
@@ -125,38 +120,28 @@ object jobQueueMod {
   }
   object JobQueueArgs {
     
-    @scala.inline
-    def apply(computeEnvironments: Input[js.Array[Input[String]]], priority: Input[Double], state: Input[String]): JobQueueArgs = {
+    inline def apply(computeEnvironments: Input[js.Array[Input[String]]], priority: Input[Double], state: Input[String]): JobQueueArgs = {
       val __obj = js.Dynamic.literal(computeEnvironments = computeEnvironments.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobQueueArgs]
     }
     
-    @scala.inline
-    implicit class JobQueueArgsMutableBuilder[Self <: JobQueueArgs] (val x: Self) extends AnyVal {
+    extension [Self <: JobQueueArgs](x: Self) {
       
-      @scala.inline
-      def setComputeEnvironments(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironments(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentsVarargs(value: Input[String]*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
+      inline def setComputeEnvironmentsVarargs(value: Input[String]*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -198,53 +183,38 @@ object jobQueueMod {
   }
   object JobQueueState {
     
-    @scala.inline
-    def apply(): JobQueueState = {
+    inline def apply(): JobQueueState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobQueueState]
     }
     
-    @scala.inline
-    implicit class JobQueueStateMutableBuilder[Self <: JobQueueState] (val x: Self) extends AnyVal {
+    extension [Self <: JobQueueState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setComputeEnvironments(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironments(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentsUndefined: Self = StObject.set(x, "computeEnvironments", js.undefined)
+      inline def setComputeEnvironmentsUndefined: Self = StObject.set(x, "computeEnvironments", js.undefined)
       
-      @scala.inline
-      def setComputeEnvironmentsVarargs(value: Input[String]*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
+      inline def setComputeEnvironmentsVarargs(value: Input[String]*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

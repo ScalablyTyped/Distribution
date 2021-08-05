@@ -8,16 +8,13 @@ object prosemirrorModelStrings {
   
   @js.native
   sealed trait Schema extends StObject
-  @scala.inline
-  def Schema: Schema = "Schema".asInstanceOf[Schema]
+  inline def Schema: Schema = "Schema".asInstanceOf[Schema]
   
   @js.native
   sealed trait SchemaSpec extends StObject
-  @scala.inline
-  def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
+  inline def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
   
   @js.native
   sealed trait full extends StObject
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
 }

@@ -31,25 +31,19 @@ trait PlusDisplay extends StObject {
 }
 object PlusDisplay {
   
-  @scala.inline
-  def apply(): PlusDisplay = {
+  inline def apply(): PlusDisplay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusDisplay]
   }
   
-  @scala.inline
-  implicit class PlusDisplayMutableBuilder[Self <: PlusDisplay] (val x: Self) extends AnyVal {
+  extension [Self <: PlusDisplay](x: Self) {
     
-    @scala.inline
-    def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
+    inline def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
+    inline def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
     
-    @scala.inline
-    def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
+    inline def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
+    inline def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
   }
 }

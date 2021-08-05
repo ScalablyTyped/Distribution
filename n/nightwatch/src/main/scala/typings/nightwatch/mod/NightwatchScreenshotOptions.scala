@@ -16,37 +16,27 @@ trait NightwatchScreenshotOptions extends StObject {
 }
 object NightwatchScreenshotOptions {
   
-  @scala.inline
-  def apply(): NightwatchScreenshotOptions = {
+  inline def apply(): NightwatchScreenshotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NightwatchScreenshotOptions]
   }
   
-  @scala.inline
-  implicit class NightwatchScreenshotOptionsMutableBuilder[Self <: NightwatchScreenshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchScreenshotOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOn_error(value: Boolean): Self = StObject.set(x, "on_error", value.asInstanceOf[js.Any])
+    inline def setOn_error(value: Boolean): Self = StObject.set(x, "on_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_errorUndefined: Self = StObject.set(x, "on_error", js.undefined)
+    inline def setOn_errorUndefined: Self = StObject.set(x, "on_error", js.undefined)
     
-    @scala.inline
-    def setOn_failure(value: Boolean): Self = StObject.set(x, "on_failure", value.asInstanceOf[js.Any])
+    inline def setOn_failure(value: Boolean): Self = StObject.set(x, "on_failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_failureUndefined: Self = StObject.set(x, "on_failure", js.undefined)
+    inline def setOn_failureUndefined: Self = StObject.set(x, "on_failure", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

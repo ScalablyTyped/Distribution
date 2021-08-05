@@ -24,61 +24,43 @@ trait ChatOptions extends StObject {
 }
 object ChatOptions {
   
-  @scala.inline
-  def apply(): ChatOptions = {
+  inline def apply(): ChatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatOptions]
   }
   
-  @scala.inline
-  implicit class ChatOptionsMutableBuilder[Self <: ChatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChatOptions](x: Self) {
     
-    @scala.inline
-    def setActionClick(value: /* e */ ChatActionClickEvent => Unit): Self = StObject.set(x, "actionClick", js.Any.fromFunction1(value))
+    inline def setActionClick(value: /* e */ ChatActionClickEvent => Unit): Self = StObject.set(x, "actionClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActionClickUndefined: Self = StObject.set(x, "actionClick", js.undefined)
+    inline def setActionClickUndefined: Self = StObject.set(x, "actionClick", js.undefined)
     
-    @scala.inline
-    def setMessages(value: ChatMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: ChatMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPost(value: /* e */ ChatPostEvent => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+    inline def setPost(value: /* e */ ChatPostEvent => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setSendMessage(value: /* e */ ChatSendMessageEvent => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+    inline def setSendMessage(value: /* e */ ChatSendMessageEvent => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
+    inline def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
     
-    @scala.inline
-    def setTypingEnd(value: /* e */ ChatTypingEndEvent => Unit): Self = StObject.set(x, "typingEnd", js.Any.fromFunction1(value))
+    inline def setTypingEnd(value: /* e */ ChatTypingEndEvent => Unit): Self = StObject.set(x, "typingEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypingEndUndefined: Self = StObject.set(x, "typingEnd", js.undefined)
+    inline def setTypingEndUndefined: Self = StObject.set(x, "typingEnd", js.undefined)
     
-    @scala.inline
-    def setTypingStart(value: /* e */ ChatTypingStartEvent => Unit): Self = StObject.set(x, "typingStart", js.Any.fromFunction1(value))
+    inline def setTypingStart(value: /* e */ ChatTypingStartEvent => Unit): Self = StObject.set(x, "typingStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypingStartUndefined: Self = StObject.set(x, "typingStart", js.undefined)
+    inline def setTypingStartUndefined: Self = StObject.set(x, "typingStart", js.undefined)
     
-    @scala.inline
-    def setUser(value: ChatUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ChatUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OtherLimitModeType extends StObject
 object OtherLimitModeType {
   
-  @scala.inline
-  def OTHER_GE_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT = "OTHER_GE_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT]
+  inline def OTHER_GE_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT = "OTHER_GE_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT]
   
-  @scala.inline
-  def OTHER_GT_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT = "OTHER_GT_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT]
+  inline def OTHER_GT_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT = "OTHER_GT_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT]
   
-  @scala.inline
-  def OTHER_LE_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT = "OTHER_LE_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT]
+  inline def OTHER_LE_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT = "OTHER_LE_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT]
   
-  @scala.inline
-  def OTHER_LT_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT = "OTHER_LT_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT]
+  inline def OTHER_LT_LIMIT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT = "OTHER_LT_LIMIT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT]
 }

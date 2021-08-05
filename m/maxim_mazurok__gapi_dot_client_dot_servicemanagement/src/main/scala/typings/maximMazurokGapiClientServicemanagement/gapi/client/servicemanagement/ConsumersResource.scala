@@ -22,8 +22,7 @@ trait ConsumersResource extends StObject {
 }
 object ConsumersResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getIamPolicy: (PrettyPrint, GetIamPolicyRequest) => Request[Policy],
     setIamPolicy: (PrettyPrint, SetIamPolicyRequest) => Request[Policy],
     testIamPermissions: (PrettyPrint, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]
@@ -32,16 +31,12 @@ object ConsumersResource {
     __obj.asInstanceOf[ConsumersResource]
   }
   
-  @scala.inline
-  implicit class ConsumersResourceMutableBuilder[Self <: ConsumersResource] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumersResource](x: Self) {
     
-    @scala.inline
-    def setGetIamPolicy(value: (PrettyPrint, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
+    inline def setGetIamPolicy(value: (PrettyPrint, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetIamPolicy(value: (PrettyPrint, SetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "setIamPolicy", js.Any.fromFunction2(value))
+    inline def setSetIamPolicy(value: (PrettyPrint, SetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "setIamPolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTestIamPermissions(value: (PrettyPrint, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = StObject.set(x, "testIamPermissions", js.Any.fromFunction2(value))
+    inline def setTestIamPermissions(value: (PrettyPrint, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = StObject.set(x, "testIamPermissions", js.Any.fromFunction2(value))
   }
 }

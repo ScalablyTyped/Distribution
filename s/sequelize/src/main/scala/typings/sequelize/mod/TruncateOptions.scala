@@ -29,25 +29,19 @@ trait TruncateOptions
 }
 object TruncateOptions {
   
-  @scala.inline
-  def apply(): TruncateOptions = {
+  inline def apply(): TruncateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TruncateOptions]
   }
   
-  @scala.inline
-  implicit class TruncateOptionsMutableBuilder[Self <: TruncateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TruncateOptions](x: Self) {
     
-    @scala.inline
-    def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+    inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+    inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

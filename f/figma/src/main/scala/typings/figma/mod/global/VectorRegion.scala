@@ -12,22 +12,17 @@ trait VectorRegion extends StObject {
 }
 object VectorRegion {
   
-  @scala.inline
-  def apply(loops: js.Array[js.Array[Double]], windingRule: WindingRule): VectorRegion = {
+  inline def apply(loops: js.Array[js.Array[Double]], windingRule: WindingRule): VectorRegion = {
     val __obj = js.Dynamic.literal(loops = loops.asInstanceOf[js.Any], windingRule = windingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorRegion]
   }
   
-  @scala.inline
-  implicit class VectorRegionMutableBuilder[Self <: VectorRegion] (val x: Self) extends AnyVal {
+  extension [Self <: VectorRegion](x: Self) {
     
-    @scala.inline
-    def setLoops(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
+    inline def setLoops(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "loops", js.Array(value :_*))
+    inline def setLoopsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "loops", js.Array(value :_*))
     
-    @scala.inline
-    def setWindingRule(value: WindingRule): Self = StObject.set(x, "windingRule", value.asInstanceOf[js.Any])
+    inline def setWindingRule(value: WindingRule): Self = StObject.set(x, "windingRule", value.asInstanceOf[js.Any])
   }
 }

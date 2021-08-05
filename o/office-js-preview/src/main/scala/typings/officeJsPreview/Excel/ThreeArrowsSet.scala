@@ -17,22 +17,17 @@ trait ThreeArrowsSet
 }
 object ThreeArrowsSet {
   
-  @scala.inline
-  def apply(greenUpArrow: Icon, redDownArrow: Icon, yellowSideArrow: Icon): ThreeArrowsSet = {
+  inline def apply(greenUpArrow: Icon, redDownArrow: Icon, yellowSideArrow: Icon): ThreeArrowsSet = {
     val __obj = js.Dynamic.literal(greenUpArrow = greenUpArrow.asInstanceOf[js.Any], redDownArrow = redDownArrow.asInstanceOf[js.Any], yellowSideArrow = yellowSideArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreeArrowsSet]
   }
   
-  @scala.inline
-  implicit class ThreeArrowsSetMutableBuilder[Self <: ThreeArrowsSet] (val x: Self) extends AnyVal {
+  extension [Self <: ThreeArrowsSet](x: Self) {
     
-    @scala.inline
-    def setGreenUpArrow(value: Icon): Self = StObject.set(x, "greenUpArrow", value.asInstanceOf[js.Any])
+    inline def setGreenUpArrow(value: Icon): Self = StObject.set(x, "greenUpArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedDownArrow(value: Icon): Self = StObject.set(x, "redDownArrow", value.asInstanceOf[js.Any])
+    inline def setRedDownArrow(value: Icon): Self = StObject.set(x, "redDownArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellowSideArrow(value: Icon): Self = StObject.set(x, "yellowSideArrow", value.asInstanceOf[js.Any])
+    inline def setYellowSideArrow(value: Icon): Self = StObject.set(x, "yellowSideArrow", value.asInstanceOf[js.Any])
   }
 }

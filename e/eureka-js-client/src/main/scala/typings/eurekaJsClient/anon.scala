@@ -18,8 +18,7 @@ object anon {
   }
   object Debug {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* repeated */ js.Any => Unit,
       error: /* repeated */ js.Any => Unit,
       info: /* repeated */ js.Any => Unit,
@@ -29,20 +28,15 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    @scala.inline
-    implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+    extension [Self <: Debug](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
 }

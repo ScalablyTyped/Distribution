@@ -84,41 +84,29 @@ object mod {
   trait QueueEvent extends StObject
   object QueueEvent {
     
-    @scala.inline
-    def batch_failed: typings.betterQueue.betterQueueStrings.batch_failed = "batch_failed".asInstanceOf[typings.betterQueue.betterQueueStrings.batch_failed]
+    inline def batch_failed: typings.betterQueue.betterQueueStrings.batch_failed = "batch_failed".asInstanceOf[typings.betterQueue.betterQueueStrings.batch_failed]
     
-    @scala.inline
-    def batch_finish: typings.betterQueue.betterQueueStrings.batch_finish = "batch_finish".asInstanceOf[typings.betterQueue.betterQueueStrings.batch_finish]
+    inline def batch_finish: typings.betterQueue.betterQueueStrings.batch_finish = "batch_finish".asInstanceOf[typings.betterQueue.betterQueueStrings.batch_finish]
     
-    @scala.inline
-    def batch_progress: typings.betterQueue.betterQueueStrings.batch_progress = "batch_progress".asInstanceOf[typings.betterQueue.betterQueueStrings.batch_progress]
+    inline def batch_progress: typings.betterQueue.betterQueueStrings.batch_progress = "batch_progress".asInstanceOf[typings.betterQueue.betterQueueStrings.batch_progress]
     
-    @scala.inline
-    def drain: typings.betterQueue.betterQueueStrings.drain = "drain".asInstanceOf[typings.betterQueue.betterQueueStrings.drain]
+    inline def drain: typings.betterQueue.betterQueueStrings.drain = "drain".asInstanceOf[typings.betterQueue.betterQueueStrings.drain]
     
-    @scala.inline
-    def empty: typings.betterQueue.betterQueueStrings.empty = "empty".asInstanceOf[typings.betterQueue.betterQueueStrings.empty]
+    inline def empty: typings.betterQueue.betterQueueStrings.empty = "empty".asInstanceOf[typings.betterQueue.betterQueueStrings.empty]
     
-    @scala.inline
-    def error: typings.betterQueue.betterQueueStrings.error = "error".asInstanceOf[typings.betterQueue.betterQueueStrings.error]
+    inline def error: typings.betterQueue.betterQueueStrings.error = "error".asInstanceOf[typings.betterQueue.betterQueueStrings.error]
     
-    @scala.inline
-    def task_accepted: typings.betterQueue.betterQueueStrings.task_accepted = "task_accepted".asInstanceOf[typings.betterQueue.betterQueueStrings.task_accepted]
+    inline def task_accepted: typings.betterQueue.betterQueueStrings.task_accepted = "task_accepted".asInstanceOf[typings.betterQueue.betterQueueStrings.task_accepted]
     
-    @scala.inline
-    def task_failed: typings.betterQueue.betterQueueStrings.task_failed = "task_failed".asInstanceOf[typings.betterQueue.betterQueueStrings.task_failed]
+    inline def task_failed: typings.betterQueue.betterQueueStrings.task_failed = "task_failed".asInstanceOf[typings.betterQueue.betterQueueStrings.task_failed]
     
-    @scala.inline
-    def task_finish: typings.betterQueue.betterQueueStrings.task_finish = "task_finish".asInstanceOf[typings.betterQueue.betterQueueStrings.task_finish]
+    inline def task_finish: typings.betterQueue.betterQueueStrings.task_finish = "task_finish".asInstanceOf[typings.betterQueue.betterQueueStrings.task_finish]
     
-    @scala.inline
-    def task_progress: typings.betterQueue.betterQueueStrings.task_progress = "task_progress".asInstanceOf[typings.betterQueue.betterQueueStrings.task_progress]
+    inline def task_progress: typings.betterQueue.betterQueueStrings.task_progress = "task_progress".asInstanceOf[typings.betterQueue.betterQueueStrings.task_progress]
     
-    @scala.inline
-    def task_queued: typings.betterQueue.betterQueueStrings.task_queued = "task_queued".asInstanceOf[typings.betterQueue.betterQueueStrings.task_queued]
+    inline def task_queued: typings.betterQueue.betterQueueStrings.task_queued = "task_queued".asInstanceOf[typings.betterQueue.betterQueueStrings.task_queued]
     
-    @scala.inline
-    def task_started: typings.betterQueue.betterQueueStrings.task_started = "task_started".asInstanceOf[typings.betterQueue.betterQueueStrings.task_started]
+    inline def task_started: typings.betterQueue.betterQueueStrings.task_started = "task_started".asInstanceOf[typings.betterQueue.betterQueueStrings.task_started]
   }
   
   trait QueueOptions[T, K] extends StObject {
@@ -194,77 +182,54 @@ object mod {
   }
   object QueueOptions {
     
-    @scala.inline
-    def apply[T, K](process: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): QueueOptions[T, K] = {
+    inline def apply[T, K](process: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): QueueOptions[T, K] = {
       val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process))
       __obj.asInstanceOf[QueueOptions[T, K]]
     }
     
-    @scala.inline
-    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions[?, ?], T, K] (val x: Self & (QueueOptions[T, K])) extends AnyVal {
+    extension [Self <: QueueOptions[?, ?], T, K](x: Self & (QueueOptions[T, K])) {
       
-      @scala.inline
-      def setAfterProcessDelay(value: Double): Self = StObject.set(x, "afterProcessDelay", value.asInstanceOf[js.Any])
+      inline def setAfterProcessDelay(value: Double): Self = StObject.set(x, "afterProcessDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterProcessDelayUndefined: Self = StObject.set(x, "afterProcessDelay", js.undefined)
+      inline def setAfterProcessDelayUndefined: Self = StObject.set(x, "afterProcessDelay", js.undefined)
       
-      @scala.inline
-      def setAutoResume(value: Boolean): Self = StObject.set(x, "autoResume", value.asInstanceOf[js.Any])
+      inline def setAutoResume(value: Boolean): Self = StObject.set(x, "autoResume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResumeUndefined: Self = StObject.set(x, "autoResume", js.undefined)
+      inline def setAutoResumeUndefined: Self = StObject.set(x, "autoResume", js.undefined)
       
-      @scala.inline
-      def setBatchDelay(value: Double): Self = StObject.set(x, "batchDelay", value.asInstanceOf[js.Any])
+      inline def setBatchDelay(value: Double): Self = StObject.set(x, "batchDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchDelayTimeout(value: Double): Self = StObject.set(x, "batchDelayTimeout", value.asInstanceOf[js.Any])
+      inline def setBatchDelayTimeout(value: Double): Self = StObject.set(x, "batchDelayTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchDelayTimeoutUndefined: Self = StObject.set(x, "batchDelayTimeout", js.undefined)
+      inline def setBatchDelayTimeoutUndefined: Self = StObject.set(x, "batchDelayTimeout", js.undefined)
       
-      @scala.inline
-      def setBatchDelayUndefined: Self = StObject.set(x, "batchDelay", js.undefined)
+      inline def setBatchDelayUndefined: Self = StObject.set(x, "batchDelay", js.undefined)
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setCancelIfRunning(value: Boolean): Self = StObject.set(x, "cancelIfRunning", value.asInstanceOf[js.Any])
+      inline def setCancelIfRunning(value: Boolean): Self = StObject.set(x, "cancelIfRunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelIfRunningUndefined: Self = StObject.set(x, "cancelIfRunning", js.undefined)
+      inline def setCancelIfRunningUndefined: Self = StObject.set(x, "cancelIfRunning", js.undefined)
       
-      @scala.inline
-      def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
+      inline def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
+      inline def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
       
-      @scala.inline
-      def setFailTaskOnProcessException(value: Boolean): Self = StObject.set(x, "failTaskOnProcessException", value.asInstanceOf[js.Any])
+      inline def setFailTaskOnProcessException(value: Boolean): Self = StObject.set(x, "failTaskOnProcessException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailTaskOnProcessExceptionUndefined: Self = StObject.set(x, "failTaskOnProcessException", js.undefined)
+      inline def setFailTaskOnProcessExceptionUndefined: Self = StObject.set(x, "failTaskOnProcessException", js.undefined)
       
-      @scala.inline
-      def setFilo(value: Boolean): Self = StObject.set(x, "filo", value.asInstanceOf[js.Any])
+      inline def setFilo(value: Boolean): Self = StObject.set(x, "filo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiloUndefined: Self = StObject.set(x, "filo", js.undefined)
+      inline def setFiloUndefined: Self = StObject.set(x, "filo", js.undefined)
       
-      @scala.inline
-      def setFilter(value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setId(
+      inline def setId(
         value: (/* keyof T */ String) | (js.Function2[
               /* task */ T, 
               /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit], 
@@ -272,80 +237,57 @@ object mod {
             ])
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdFunction2(
+      inline def setIdFunction2(
         value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit]) => Unit
       ): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+      inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+      inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
       
-      @scala.inline
-      def setMerge(
+      inline def setMerge(
         value: (/* oldTask */ T, /* newTask */ T, /* cb */ js.Function2[/* error */ js.Any, /* mergedTask */ T, Unit]) => Unit
       ): Self = StObject.set(x, "merge", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+      inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
       
-      @scala.inline
-      def setPrecondition(value: /* cb */ js.Function2[/* error */ js.Any, /* passOrFail */ Boolean, Unit] => Unit): Self = StObject.set(x, "precondition", js.Any.fromFunction1(value))
+      inline def setPrecondition(value: /* cb */ js.Function2[/* error */ js.Any, /* passOrFail */ Boolean, Unit] => Unit): Self = StObject.set(x, "precondition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreconditionRetryTimeout(value: Double): Self = StObject.set(x, "preconditionRetryTimeout", value.asInstanceOf[js.Any])
+      inline def setPreconditionRetryTimeout(value: Double): Self = StObject.set(x, "preconditionRetryTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreconditionRetryTimeoutUndefined: Self = StObject.set(x, "preconditionRetryTimeout", js.undefined)
+      inline def setPreconditionRetryTimeoutUndefined: Self = StObject.set(x, "preconditionRetryTimeout", js.undefined)
       
-      @scala.inline
-      def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
+      inline def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
       
-      @scala.inline
-      def setPriority(
+      inline def setPriority(
         value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* priority */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "priority", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setProcess(value: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      inline def setProcess(value: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      @scala.inline
-      def setStore(value: String | StoreOptions | Store[T]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: String | StoreOptions | Store[T]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreMaxRetries(value: Double): Self = StObject.set(x, "storeMaxRetries", value.asInstanceOf[js.Any])
+      inline def setStoreMaxRetries(value: Double): Self = StObject.set(x, "storeMaxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreMaxRetriesUndefined: Self = StObject.set(x, "storeMaxRetries", js.undefined)
+      inline def setStoreMaxRetriesUndefined: Self = StObject.set(x, "storeMaxRetries", js.undefined)
       
-      @scala.inline
-      def setStoreRetryTimeout(value: Double): Self = StObject.set(x, "storeRetryTimeout", value.asInstanceOf[js.Any])
+      inline def setStoreRetryTimeout(value: Double): Self = StObject.set(x, "storeRetryTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreRetryTimeoutUndefined: Self = StObject.set(x, "storeRetryTimeout", js.undefined)
+      inline def setStoreRetryTimeoutUndefined: Self = StObject.set(x, "storeRetryTimeout", js.undefined)
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -361,26 +303,20 @@ object mod {
   }
   object QueueStats {
     
-    @scala.inline
-    def apply(average: Double, peak: Double, successRate: Double, total: Double): QueueStats = {
+    inline def apply(average: Double, peak: Double, successRate: Double, total: Double): QueueStats = {
       val __obj = js.Dynamic.literal(average = average.asInstanceOf[js.Any], peak = peak.asInstanceOf[js.Any], successRate = successRate.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueStats]
     }
     
-    @scala.inline
-    implicit class QueueStatsMutableBuilder[Self <: QueueStats] (val x: Self) extends AnyVal {
+    extension [Self <: QueueStats](x: Self) {
       
-      @scala.inline
-      def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+      inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeak(value: Double): Self = StObject.set(x, "peak", value.asInstanceOf[js.Any])
+      inline def setPeak(value: Double): Self = StObject.set(x, "peak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessRate(value: Double): Self = StObject.set(x, "successRate", value.asInstanceOf[js.Any])
+      inline def setSuccessRate(value: Double): Self = StObject.set(x, "successRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -404,8 +340,7 @@ object mod {
   }
   object Store {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       connect: js.Function2[/* error */ js.Any, /* length */ Double, Unit] => Unit,
       deleteTask: (js.Any, js.Function0[Unit]) => Unit,
       getLock: (String, js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]) => Unit,
@@ -419,32 +354,23 @@ object mod {
       __obj.asInstanceOf[Store[T]]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store[?], T] (val x: Self & Store[T]) extends AnyVal {
+    extension [Self <: Store[?], T](x: Self & Store[T]) {
       
-      @scala.inline
-      def setConnect(value: js.Function2[/* error */ js.Any, /* length */ Double, Unit] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: js.Function2[/* error */ js.Any, /* length */ Double, Unit] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteTask(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteTask", js.Any.fromFunction2(value))
+      inline def setDeleteTask(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteTask", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLock(value: (String, js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]) => Unit): Self = StObject.set(x, "getLock", js.Any.fromFunction2(value))
+      inline def setGetLock(value: (String, js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]) => Unit): Self = StObject.set(x, "getLock", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetTask(value: (js.Any, js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "getTask", js.Any.fromFunction2(value))
+      inline def setGetTask(value: (js.Any, js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "getTask", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPutTask(value: (js.Any, T, Double, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "putTask", js.Any.fromFunction4(value))
+      inline def setPutTask(value: (js.Any, T, Double, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "putTask", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setReleaseLock(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "releaseLock", js.Any.fromFunction2(value))
+      inline def setReleaseLock(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "releaseLock", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTakeFirstN(value: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeFirstN", js.Any.fromFunction2(value))
+      inline def setTakeFirstN(value: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeFirstN", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTakeLastN(value: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeLastN", js.Any.fromFunction2(value))
+      inline def setTakeLastN(value: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeLastN", js.Any.fromFunction2(value))
     }
   }
   
@@ -457,18 +383,15 @@ object mod {
   }
   object StoreOptions {
     
-    @scala.inline
-    def apply(`type`: String): StoreOptions = {
+    inline def apply(`type`: String): StoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreOptions]
     }
     
-    @scala.inline
-    implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoreOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,29 +409,22 @@ object mod {
   }
   object TickerProgress {
     
-    @scala.inline
-    def apply(complete: Double, eta: String, message: String, pct: Double, total: Double): TickerProgress = {
+    inline def apply(complete: Double, eta: String, message: String, pct: Double, total: Double): TickerProgress = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], eta = eta.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pct = pct.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[TickerProgress]
     }
     
-    @scala.inline
-    implicit class TickerProgressMutableBuilder[Self <: TickerProgress] (val x: Self) extends AnyVal {
+    extension [Self <: TickerProgress](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Double): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Double): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEta(value: String): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
+      inline def setEta(value: String): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPct(value: Double): Self = StObject.set(x, "pct", value.asInstanceOf[js.Any])
+      inline def setPct(value: Double): Self = StObject.set(x, "pct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -524,25 +440,18 @@ object mod {
   trait TicketEvent extends StObject
   object TicketEvent {
     
-    @scala.inline
-    def accept: typings.betterQueue.betterQueueStrings.accept = "accept".asInstanceOf[typings.betterQueue.betterQueueStrings.accept]
+    inline def accept: typings.betterQueue.betterQueueStrings.accept = "accept".asInstanceOf[typings.betterQueue.betterQueueStrings.accept]
     
-    @scala.inline
-    def error: typings.betterQueue.betterQueueStrings.error = "error".asInstanceOf[typings.betterQueue.betterQueueStrings.error]
+    inline def error: typings.betterQueue.betterQueueStrings.error = "error".asInstanceOf[typings.betterQueue.betterQueueStrings.error]
     
-    @scala.inline
-    def failed: typings.betterQueue.betterQueueStrings.failed = "failed".asInstanceOf[typings.betterQueue.betterQueueStrings.failed]
+    inline def failed: typings.betterQueue.betterQueueStrings.failed = "failed".asInstanceOf[typings.betterQueue.betterQueueStrings.failed]
     
-    @scala.inline
-    def finish: typings.betterQueue.betterQueueStrings.finish = "finish".asInstanceOf[typings.betterQueue.betterQueueStrings.finish]
+    inline def finish: typings.betterQueue.betterQueueStrings.finish = "finish".asInstanceOf[typings.betterQueue.betterQueueStrings.finish]
     
-    @scala.inline
-    def progress: typings.betterQueue.betterQueueStrings.progress = "progress".asInstanceOf[typings.betterQueue.betterQueueStrings.progress]
+    inline def progress: typings.betterQueue.betterQueueStrings.progress = "progress".asInstanceOf[typings.betterQueue.betterQueueStrings.progress]
     
-    @scala.inline
-    def queued: typings.betterQueue.betterQueueStrings.queued = "queued".asInstanceOf[typings.betterQueue.betterQueueStrings.queued]
+    inline def queued: typings.betterQueue.betterQueueStrings.queued = "queued".asInstanceOf[typings.betterQueue.betterQueueStrings.queued]
     
-    @scala.inline
-    def started: typings.betterQueue.betterQueueStrings.started = "started".asInstanceOf[typings.betterQueue.betterQueueStrings.started]
+    inline def started: typings.betterQueue.betterQueueStrings.started = "started".asInstanceOf[typings.betterQueue.betterQueueStrings.started]
   }
 }

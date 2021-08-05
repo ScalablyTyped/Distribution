@@ -17,8 +17,6 @@ object Vector2 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.vector2Mod.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
-  @scala.inline
-  def create(x: js.Any, y: js.Any): typings.wonderJs.vector2Mod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
+  inline def create(): typings.wonderJs.vector2Mod.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
+  inline def create(x: js.Any, y: js.Any): typings.wonderJs.vector2Mod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
 }

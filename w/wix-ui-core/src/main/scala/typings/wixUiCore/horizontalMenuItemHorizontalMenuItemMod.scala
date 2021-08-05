@@ -23,17 +23,17 @@ object horizontalMenuItemHorizontalMenuItemMod {
       */
     def this(props: HorizontalMenuItemProps, context: js.Any) = this()
     
-    val hideMenu: js.Any = js.native
+    /* private */ val hideMenu: js.Any = js.native
     
     var hideTimeout: js.Any = js.native
     
     var menuItemRef: RefObject[HTMLLIElement] = js.native
     
-    var renderExpandIcon: js.Any = js.native
+    /* private */ var renderExpandIcon: js.Any = js.native
     
-    var renderLink: js.Any = js.native
+    /* private */ var renderLink: js.Any = js.native
     
-    val showMenu: js.Any = js.native
+    /* private */ val showMenu: js.Any = js.native
     
     var showTimeout: js.Any = js.native
     
@@ -50,14 +50,12 @@ object horizontalMenuItemHorizontalMenuItemMod {
     @JSImport("wix-ui-core/dist/src/components/horizontal-menu/horizontal-menu-item/HorizontalMenuItem", "HorizontalMenuItem.defaultProps")
     @js.native
     def defaultProps: typings.wixUiCore.anon.ExpandSize = js.native
-    @scala.inline
-    def defaultProps_=(x: typings.wixUiCore.anon.ExpandSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: typings.wixUiCore.anon.ExpandSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/horizontal-menu/horizontal-menu-item/HorizontalMenuItem", "HorizontalMenuItem.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait ExpandIconProps extends StObject {
@@ -66,17 +64,14 @@ object horizontalMenuItemHorizontalMenuItemMod {
   }
   object ExpandIconProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): ExpandIconProps = {
+    inline def apply(isOpen: Boolean): ExpandIconProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpandIconProps]
     }
     
-    @scala.inline
-    implicit class ExpandIconPropsMutableBuilder[Self <: ExpandIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandIconProps](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,14 +83,11 @@ object horizontalMenuItemHorizontalMenuItemMod {
   trait ExpandSize extends StObject
   object ExpandSize {
     
-    @scala.inline
-    def column: typings.wixUiCore.wixUiCoreStrings.column = "column".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.column]
+    inline def column: typings.wixUiCore.wixUiCoreStrings.column = "column".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.column]
     
-    @scala.inline
-    def fullWidth: typings.wixUiCore.wixUiCoreStrings.fullWidth = "fullWidth".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.fullWidth]
+    inline def fullWidth: typings.wixUiCore.wixUiCoreStrings.fullWidth = "fullWidth".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.fullWidth]
     
-    @scala.inline
-    def menu: typings.wixUiCore.wixUiCoreStrings.menu = "menu".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.menu]
+    inline def menu: typings.wixUiCore.wixUiCoreStrings.menu = "menu".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.menu]
   }
   
   trait HorizontalMenuItemProps extends StObject {
@@ -124,77 +116,54 @@ object horizontalMenuItemHorizontalMenuItemMod {
   }
   object HorizontalMenuItemProps {
     
-    @scala.inline
-    def apply(label: String): HorizontalMenuItemProps = {
+    inline def apply(label: String): HorizontalMenuItemProps = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalMenuItemProps]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuItemPropsMutableBuilder[Self <: HorizontalMenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuItemProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(value: /* props */ ExpandIconProps => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
+      inline def setExpandIcon(value: /* props */ ExpandIconProps => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      @scala.inline
-      def setExpandSize(value: ExpandSize): Self = StObject.set(x, "expandSize", value.asInstanceOf[js.Any])
+      inline def setExpandSize(value: ExpandSize): Self = StObject.set(x, "expandSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandSizeUndefined: Self = StObject.set(x, "expandSize", js.undefined)
+      inline def setExpandSizeUndefined: Self = StObject.set(x, "expandSize", js.undefined)
       
-      @scala.inline
-      def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+      inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+      inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIsForceOpened(value: Boolean): Self = StObject.set(x, "isForceOpened", value.asInstanceOf[js.Any])
+      inline def setIsForceOpened(value: Boolean): Self = StObject.set(x, "isForceOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsForceOpenedUndefined: Self = StObject.set(x, "isForceOpened", js.undefined)
+      inline def setIsForceOpenedUndefined: Self = StObject.set(x, "isForceOpened", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
+      inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
+      inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -204,17 +173,14 @@ object horizontalMenuItemHorizontalMenuItemMod {
   }
   object HorizontalMenuItemState {
     
-    @scala.inline
-    def apply(isOpen: Boolean): HorizontalMenuItemState = {
+    inline def apply(isOpen: Boolean): HorizontalMenuItemState = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalMenuItemState]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuItemStateMutableBuilder[Self <: HorizontalMenuItemState] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuItemState](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
 }

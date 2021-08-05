@@ -13,16 +13,13 @@ trait CreatePresignedPortalUrlResponse extends StObject {
 }
 object CreatePresignedPortalUrlResponse {
   
-  @scala.inline
-  def apply(presignedPortalUrl: Url): CreatePresignedPortalUrlResponse = {
+  inline def apply(presignedPortalUrl: Url): CreatePresignedPortalUrlResponse = {
     val __obj = js.Dynamic.literal(presignedPortalUrl = presignedPortalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedPortalUrlResponse]
   }
   
-  @scala.inline
-  implicit class CreatePresignedPortalUrlResponseMutableBuilder[Self <: CreatePresignedPortalUrlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePresignedPortalUrlResponse](x: Self) {
     
-    @scala.inline
-    def setPresignedPortalUrl(value: Url): Self = StObject.set(x, "presignedPortalUrl", value.asInstanceOf[js.Any])
+    inline def setPresignedPortalUrl(value: Url): Self = StObject.set(x, "presignedPortalUrl", value.asInstanceOf[js.Any])
   }
 }

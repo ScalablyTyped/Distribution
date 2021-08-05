@@ -32,37 +32,27 @@ trait DISCONNECTED extends StObject {
 }
 object DISCONNECTED {
   
-  @scala.inline
-  def apply(): DISCONNECTED = {
+  inline def apply(): DISCONNECTED = {
     val __obj = js.Dynamic.literal(CONNECTED = "connected", DISCONNECTED = "disconnected", ERROR = "error", LINK_CHANGED = "linkChanged", LINK_DOWN = "linkDown", LINK_UP = "linkUp", RESUME = "resume", SUSPEND = "suspend")
     __obj.asInstanceOf[DISCONNECTED]
   }
   
-  @scala.inline
-  implicit class DISCONNECTEDMutableBuilder[Self <: DISCONNECTED] (val x: Self) extends AnyVal {
+  extension [Self <: DISCONNECTED](x: Self) {
     
-    @scala.inline
-    def setCONNECTED(value: connected__): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
+    inline def setCONNECTED(value: connected__): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDISCONNECTED(value: disconnected__): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
+    inline def setDISCONNECTED(value: disconnected__): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: error_): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: error_): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLINK_CHANGED(value: linkChanged): Self = StObject.set(x, "LINK_CHANGED", value.asInstanceOf[js.Any])
+    inline def setLINK_CHANGED(value: linkChanged): Self = StObject.set(x, "LINK_CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLINK_DOWN(value: linkDown): Self = StObject.set(x, "LINK_DOWN", value.asInstanceOf[js.Any])
+    inline def setLINK_DOWN(value: linkDown): Self = StObject.set(x, "LINK_DOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLINK_UP(value: linkUp): Self = StObject.set(x, "LINK_UP", value.asInstanceOf[js.Any])
+    inline def setLINK_UP(value: linkUp): Self = StObject.set(x, "LINK_UP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRESUME(value: resume_): Self = StObject.set(x, "RESUME", value.asInstanceOf[js.Any])
+    inline def setRESUME(value: resume_): Self = StObject.set(x, "RESUME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUSPEND(value: suspend_): Self = StObject.set(x, "SUSPEND", value.asInstanceOf[js.Any])
+    inline def setSUSPEND(value: suspend_): Self = StObject.set(x, "SUSPEND", value.asInstanceOf[js.Any])
   }
 }

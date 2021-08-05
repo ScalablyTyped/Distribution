@@ -18,26 +18,20 @@ object anon {
   }
   object Audio {
     
-    @scala.inline
-    def apply(): Audio = {
+    inline def apply(): Audio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Audio]
     }
     
-    @scala.inline
-    implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+    extension [Self <: Audio](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -49,20 +43,16 @@ object anon {
   }
   object CurState {
     
-    @scala.inline
-    def apply(curState: ConnectionState, prevState: ConnectionState): CurState = {
+    inline def apply(curState: ConnectionState, prevState: ConnectionState): CurState = {
       val __obj = js.Dynamic.literal(curState = curState.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurState]
     }
     
-    @scala.inline
-    implicit class CurStateMutableBuilder[Self <: CurState] (val x: Self) extends AnyVal {
+    extension [Self <: CurState](x: Self) {
       
-      @scala.inline
-      def setCurState(value: ConnectionState): Self = StObject.set(x, "curState", value.asInstanceOf[js.Any])
+      inline def setCurState(value: ConnectionState): Self = StObject.set(x, "curState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevState(value: ConnectionState): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
+      inline def setPrevState(value: ConnectionState): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,21 +64,17 @@ object anon {
   }
   object State {
     
-    @scala.inline
-    def apply(state: PLAYING | PAUSED | STOPPED, `type`: String): State = {
+    inline def apply(state: PLAYING | PAUSED | STOPPED, `type`: String): State = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setState(value: PLAYING | PAUSED | STOPPED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: PLAYING | PAUSED | STOPPED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

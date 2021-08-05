@@ -14,19 +14,15 @@ trait Compiler extends StObject {
 }
 object Compiler {
   
-  @scala.inline
-  def apply(compiler: AotCompiler, reflector: StaticReflector): Compiler = {
+  inline def apply(compiler: AotCompiler, reflector: StaticReflector): Compiler = {
     val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], reflector = reflector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compiler]
   }
   
-  @scala.inline
-  implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+  extension [Self <: Compiler](x: Self) {
     
-    @scala.inline
-    def setCompiler(value: AotCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    inline def setCompiler(value: AotCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflector(value: StaticReflector): Self = StObject.set(x, "reflector", value.asInstanceOf[js.Any])
+    inline def setReflector(value: StaticReflector): Self = StObject.set(x, "reflector", value.asInstanceOf[js.Any])
   }
 }

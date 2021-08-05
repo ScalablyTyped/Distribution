@@ -14,22 +14,17 @@ trait OAuthIdentityDetails extends StObject {
 }
 object OAuthIdentityDetails {
   
-  @scala.inline
-  def apply(html_url: String, name: String, username: String): OAuthIdentityDetails = {
+  inline def apply(html_url: String, name: String, username: String): OAuthIdentityDetails = {
     val __obj = js.Dynamic.literal(html_url = html_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthIdentityDetails]
   }
   
-  @scala.inline
-  implicit class OAuthIdentityDetailsMutableBuilder[Self <: OAuthIdentityDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthIdentityDetails](x: Self) {
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

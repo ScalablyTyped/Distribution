@@ -24,20 +24,16 @@ trait ImageOptions
 }
 object ImageOptions {
   
-  @scala.inline
-  def apply(file: String, `type`: ansi | overlay | w3m): ImageOptions = {
+  inline def apply(file: String, `type`: ansi | overlay | w3m): ImageOptions = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOptions]
   }
   
-  @scala.inline
-  implicit class ImageOptionsMutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageOptions](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ansi | overlay | w3m): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ansi | overlay | w3m): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

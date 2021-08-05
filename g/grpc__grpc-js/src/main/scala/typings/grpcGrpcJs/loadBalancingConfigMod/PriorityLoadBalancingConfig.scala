@@ -15,19 +15,15 @@ trait PriorityLoadBalancingConfig
 }
 object PriorityLoadBalancingConfig {
   
-  @scala.inline
-  def apply(priority: PriorityLbConfig): PriorityLoadBalancingConfig = {
+  inline def apply(priority: PriorityLbConfig): PriorityLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(name = "priority", priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class PriorityLoadBalancingConfigMutableBuilder[Self <: PriorityLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: priority): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: priority): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: PriorityLbConfig): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: PriorityLbConfig): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

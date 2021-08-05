@@ -12,19 +12,15 @@ trait PDFViewerOpenEvent
 }
 object PDFViewerOpenEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PDFViewer): PDFViewerOpenEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PDFViewer): PDFViewerOpenEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerOpenEvent]
   }
   
-  @scala.inline
-  implicit class PDFViewerOpenEventMutableBuilder[Self <: PDFViewerOpenEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerOpenEvent](x: Self) {
     
-    @scala.inline
-    def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

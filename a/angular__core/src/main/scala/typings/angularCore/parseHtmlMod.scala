@@ -11,6 +11,5 @@ object parseHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseHtmlGracefully(htmlContent: String, filePath: String): js.Array[Node] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlGracefully")(htmlContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node] | Null]
+  inline def parseHtmlGracefully(htmlContent: String, filePath: String): js.Array[Node] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlGracefully")(htmlContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node] | Null]
 }

@@ -29,19 +29,15 @@ trait ArrayWrapper extends StObject {
 }
 object ArrayWrapper {
   
-  @scala.inline
-  def apply(Array: js.Any, IsZeroIndex: Boolean): ArrayWrapper = {
+  inline def apply(Array: js.Any, IsZeroIndex: Boolean): ArrayWrapper = {
     val __obj = js.Dynamic.literal(Array = Array.asInstanceOf[js.Any], IsZeroIndex = IsZeroIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayWrapper]
   }
   
-  @scala.inline
-  implicit class ArrayWrapperMutableBuilder[Self <: ArrayWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayWrapper](x: Self) {
     
-    @scala.inline
-    def setArray(value: js.Any): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Any): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsZeroIndex(value: Boolean): Self = StObject.set(x, "IsZeroIndex", value.asInstanceOf[js.Any])
+    inline def setIsZeroIndex(value: Boolean): Self = StObject.set(x, "IsZeroIndex", value.asInstanceOf[js.Any])
   }
 }

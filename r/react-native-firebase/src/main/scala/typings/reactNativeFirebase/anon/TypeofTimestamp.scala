@@ -19,22 +19,17 @@ trait TypeofTimestamp extends StObject {
 }
 object TypeofTimestamp {
   
-  @scala.inline
-  def apply(fromDate: Date => Timestamp, fromMillis: Double => Timestamp, now: () => Timestamp): TypeofTimestamp = {
+  inline def apply(fromDate: Date => Timestamp, fromMillis: Double => Timestamp, now: () => Timestamp): TypeofTimestamp = {
     val __obj = js.Dynamic.literal(fromDate = js.Any.fromFunction1(fromDate), fromMillis = js.Any.fromFunction1(fromMillis), now = js.Any.fromFunction0(now))
     __obj.asInstanceOf[TypeofTimestamp]
   }
   
-  @scala.inline
-  implicit class TypeofTimestampMutableBuilder[Self <: TypeofTimestamp] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTimestamp](x: Self) {
     
-    @scala.inline
-    def setFromDate(value: Date => Timestamp): Self = StObject.set(x, "fromDate", js.Any.fromFunction1(value))
+    inline def setFromDate(value: Date => Timestamp): Self = StObject.set(x, "fromDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromMillis(value: Double => Timestamp): Self = StObject.set(x, "fromMillis", js.Any.fromFunction1(value))
+    inline def setFromMillis(value: Double => Timestamp): Self = StObject.set(x, "fromMillis", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNow(value: () => Timestamp): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+    inline def setNow(value: () => Timestamp): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
   }
 }

@@ -22,23 +22,18 @@ object data20122022Mod extends Shortcut {
   }
   object TimeZoneData {
     
-    @scala.inline
-    def apply(links: js.Array[String], zones: PackedTimeZones): TimeZoneData = {
+    inline def apply(links: js.Array[String], zones: PackedTimeZones): TimeZoneData = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeZoneData]
     }
     
-    @scala.inline
-    implicit class TimeZoneDataMutableBuilder[Self <: TimeZoneData] (val x: Self) extends AnyVal {
+    extension [Self <: TimeZoneData](x: Self) {
       
-      @scala.inline
-      def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setZones(value: PackedTimeZones): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+      inline def setZones(value: PackedTimeZones): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     }
   }
   

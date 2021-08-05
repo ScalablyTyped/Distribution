@@ -13,25 +13,19 @@ trait EqualizerOptions extends StObject {
 }
 object EqualizerOptions {
   
-  @scala.inline
-  def apply(): EqualizerOptions = {
+  inline def apply(): EqualizerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EqualizerOptions]
   }
   
-  @scala.inline
-  implicit class EqualizerOptionsMutableBuilder[Self <: EqualizerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EqualizerOptions](x: Self) {
     
-    @scala.inline
-    def setEqualize_on_stack(value: Boolean): Self = StObject.set(x, "equalize_on_stack", value.asInstanceOf[js.Any])
+    inline def setEqualize_on_stack(value: Boolean): Self = StObject.set(x, "equalize_on_stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualize_on_stackUndefined: Self = StObject.set(x, "equalize_on_stack", js.undefined)
+    inline def setEqualize_on_stackUndefined: Self = StObject.set(x, "equalize_on_stack", js.undefined)
     
-    @scala.inline
-    def setUse_tallest(value: Boolean): Self = StObject.set(x, "use_tallest", value.asInstanceOf[js.Any])
+    inline def setUse_tallest(value: Boolean): Self = StObject.set(x, "use_tallest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_tallestUndefined: Self = StObject.set(x, "use_tallest", js.undefined)
+    inline def setUse_tallestUndefined: Self = StObject.set(x, "use_tallest", js.undefined)
   }
 }

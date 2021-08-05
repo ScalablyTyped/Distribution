@@ -48,55 +48,39 @@ trait ProvenanceEntity
 }
 object ProvenanceEntity {
   
-  @scala.inline
-  def apply(role: code): ProvenanceEntity = {
+  inline def apply(role: code): ProvenanceEntity = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvenanceEntity]
   }
   
-  @scala.inline
-  implicit class ProvenanceEntityMutableBuilder[Self <: ProvenanceEntity] (val x: Self) extends AnyVal {
+  extension [Self <: ProvenanceEntity](x: Self) {
     
-    @scala.inline
-    def setAgent(value: js.Array[ProvenanceAgent]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: js.Array[ProvenanceAgent]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+    inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
-    @scala.inline
-    def setAgentVarargs(value: ProvenanceAgent*): Self = StObject.set(x, "agent", js.Array(value :_*))
+    inline def setAgentVarargs(value: ProvenanceAgent*): Self = StObject.set(x, "agent", js.Array(value :_*))
     
-    @scala.inline
-    def setRole(value: code): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: code): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhatIdentifier(value: Identifier): Self = StObject.set(x, "whatIdentifier", value.asInstanceOf[js.Any])
+    inline def setWhatIdentifier(value: Identifier): Self = StObject.set(x, "whatIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhatIdentifierUndefined: Self = StObject.set(x, "whatIdentifier", js.undefined)
+    inline def setWhatIdentifierUndefined: Self = StObject.set(x, "whatIdentifier", js.undefined)
     
-    @scala.inline
-    def setWhatReference(value: Reference): Self = StObject.set(x, "whatReference", value.asInstanceOf[js.Any])
+    inline def setWhatReference(value: Reference): Self = StObject.set(x, "whatReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhatReferenceUndefined: Self = StObject.set(x, "whatReference", js.undefined)
+    inline def setWhatReferenceUndefined: Self = StObject.set(x, "whatReference", js.undefined)
     
-    @scala.inline
-    def setWhatUri(value: uri): Self = StObject.set(x, "whatUri", value.asInstanceOf[js.Any])
+    inline def setWhatUri(value: uri): Self = StObject.set(x, "whatUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhatUriUndefined: Self = StObject.set(x, "whatUri", js.undefined)
+    inline def setWhatUriUndefined: Self = StObject.set(x, "whatUri", js.undefined)
     
-    @scala.inline
-    def set_role(value: Element): Self = StObject.set(x, "_role", value.asInstanceOf[js.Any])
+    inline def set_role(value: Element): Self = StObject.set(x, "_role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_roleUndefined: Self = StObject.set(x, "_role", js.undefined)
+    inline def set_roleUndefined: Self = StObject.set(x, "_role", js.undefined)
     
-    @scala.inline
-    def set_whatUri(value: Element): Self = StObject.set(x, "_whatUri", value.asInstanceOf[js.Any])
+    inline def set_whatUri(value: Element): Self = StObject.set(x, "_whatUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_whatUriUndefined: Self = StObject.set(x, "_whatUri", js.undefined)
+    inline def set_whatUriUndefined: Self = StObject.set(x, "_whatUri", js.undefined)
   }
 }

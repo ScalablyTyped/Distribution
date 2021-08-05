@@ -16,32 +16,24 @@ object anon {
   }
   object Hard {
     
-    @scala.inline
-    def apply(): Hard = {
+    inline def apply(): Hard = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hard]
     }
     
-    @scala.inline
-    implicit class HardMutableBuilder[Self <: Hard] (val x: Self) extends AnyVal {
+    extension [Self <: Hard](x: Self) {
       
-      @scala.inline
-      def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+      inline def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
+      inline def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+      inline def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+      inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     }
   }
 }

@@ -12,22 +12,17 @@ trait Title extends StObject {
 }
 object Title {
   
-  @scala.inline
-  def apply(title: String | Double): Title = {
+  inline def apply(title: String | Double): Title = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]
   }
   
-  @scala.inline
-  implicit class TitleMutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
+  extension [Self <: Title](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String | Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

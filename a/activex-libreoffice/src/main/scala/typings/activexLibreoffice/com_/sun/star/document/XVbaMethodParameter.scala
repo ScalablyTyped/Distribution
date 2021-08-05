@@ -18,8 +18,7 @@ trait XVbaMethodParameter
 }
 object XVbaMethodParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getVbaMethodParameter: String => js.Any,
     queryInterface: `type` => js.Any,
@@ -30,13 +29,10 @@ object XVbaMethodParameter {
     __obj.asInstanceOf[XVbaMethodParameter]
   }
   
-  @scala.inline
-  implicit class XVbaMethodParameterMutableBuilder[Self <: XVbaMethodParameter] (val x: Self) extends AnyVal {
+  extension [Self <: XVbaMethodParameter](x: Self) {
     
-    @scala.inline
-    def setGetVbaMethodParameter(value: String => js.Any): Self = StObject.set(x, "getVbaMethodParameter", js.Any.fromFunction1(value))
+    inline def setGetVbaMethodParameter(value: String => js.Any): Self = StObject.set(x, "getVbaMethodParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVbaMethodParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "setVbaMethodParameter", js.Any.fromFunction2(value))
+    inline def setSetVbaMethodParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "setVbaMethodParameter", js.Any.fromFunction2(value))
   }
 }

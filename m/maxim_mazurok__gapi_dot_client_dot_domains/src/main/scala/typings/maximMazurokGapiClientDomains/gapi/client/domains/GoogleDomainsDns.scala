@@ -20,37 +20,27 @@ trait GoogleDomainsDns extends StObject {
 }
 object GoogleDomainsDns {
   
-  @scala.inline
-  def apply(): GoogleDomainsDns = {
+  inline def apply(): GoogleDomainsDns = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDomainsDns]
   }
   
-  @scala.inline
-  implicit class GoogleDomainsDnsMutableBuilder[Self <: GoogleDomainsDns] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDomainsDns](x: Self) {
     
-    @scala.inline
-    def setDsRecords(value: js.Array[DsRecord]): Self = StObject.set(x, "dsRecords", value.asInstanceOf[js.Any])
+    inline def setDsRecords(value: js.Array[DsRecord]): Self = StObject.set(x, "dsRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
+    inline def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
     
-    @scala.inline
-    def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
+    inline def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setDsState(value: String): Self = StObject.set(x, "dsState", value.asInstanceOf[js.Any])
+    inline def setDsState(value: String): Self = StObject.set(x, "dsState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsStateUndefined: Self = StObject.set(x, "dsState", js.undefined)
+    inline def setDsStateUndefined: Self = StObject.set(x, "dsState", js.undefined)
     
-    @scala.inline
-    def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+    inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
+    inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
-    @scala.inline
-    def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
   }
 }

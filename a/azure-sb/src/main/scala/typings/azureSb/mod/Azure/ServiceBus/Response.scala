@@ -18,8 +18,7 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: Dictionary[String | js.Object],
     headers: Dictionary[String],
     isSuccessful: Boolean,
@@ -29,25 +28,18 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setBody(value: Dictionary[String | js.Object]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Dictionary[String | js.Object]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
+    inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+    inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
+    inline def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

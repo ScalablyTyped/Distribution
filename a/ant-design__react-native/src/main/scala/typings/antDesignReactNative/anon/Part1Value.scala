@@ -12,19 +12,15 @@ trait Part1Value extends StObject {
 }
 object Part1Value {
   
-  @scala.inline
-  def apply(part1Value: Double, part2Value: Double): Part1Value = {
+  inline def apply(part1Value: Double, part2Value: Double): Part1Value = {
     val __obj = js.Dynamic.literal(part1Value = part1Value.asInstanceOf[js.Any], part2Value = part2Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Part1Value]
   }
   
-  @scala.inline
-  implicit class Part1ValueMutableBuilder[Self <: Part1Value] (val x: Self) extends AnyVal {
+  extension [Self <: Part1Value](x: Self) {
     
-    @scala.inline
-    def setPart1Value(value: Double): Self = StObject.set(x, "part1Value", value.asInstanceOf[js.Any])
+    inline def setPart1Value(value: Double): Self = StObject.set(x, "part1Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart2Value(value: Double): Self = StObject.set(x, "part2Value", value.asInstanceOf[js.Any])
+    inline def setPart2Value(value: Double): Self = StObject.set(x, "part2Value", value.asInstanceOf[js.Any])
   }
 }

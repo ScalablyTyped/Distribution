@@ -10,19 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def decode(value: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(value: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def encode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(value: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(value: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def escape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unescape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

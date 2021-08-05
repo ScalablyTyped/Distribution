@@ -25,8 +25,7 @@ object formValuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formValues[Values, P](obj: Values): js.Function1[
+  inline def formValues[Values, P](obj: Values): js.Function1[
     /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any]], 
     ComponentClass[
       P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any], 
@@ -39,8 +38,7 @@ object formValuesMod {
       ComponentState
     ]
   ]]
-  @scala.inline
-  def formValues[FormData, K /* <: /* keyof FormData */ append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
+  inline def formValues[FormData, K /* <: /* keyof FormData */ append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
     /* component */ ComponentType[P & (Pick[FormData, K])], 
     ComponentClass[P & (Pick[FormData, K]), ComponentState]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(names.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

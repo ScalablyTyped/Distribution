@@ -15,8 +15,7 @@ object stackedBarChartUniDriverMod {
   }
   object StackedBarChartUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object stackedBarChartUniDriverMod {
       __obj.asInstanceOf[StackedBarChartUniDriver]
     }
     
-    @scala.inline
-    implicit class StackedBarChartUniDriverMutableBuilder[Self <: StackedBarChartUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: StackedBarChartUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetTooltipContentAt(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "getTooltipContentAt", js.Any.fromFunction1(value))
+      inline def setGetTooltipContentAt(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "getTooltipContentAt", js.Any.fromFunction1(value))
     }
   }
 }

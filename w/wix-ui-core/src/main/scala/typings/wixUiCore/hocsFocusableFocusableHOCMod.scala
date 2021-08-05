@@ -10,6 +10,5 @@ object hocsFocusableFocusableHOCMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withFocusable(Component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusable")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def withFocusable(Component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusable")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -11,13 +11,11 @@ object screenfullStrings {
   sealed trait change
     extends StObject
        with EventName
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
   sealed trait error
     extends StObject
        with EventName
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
 }

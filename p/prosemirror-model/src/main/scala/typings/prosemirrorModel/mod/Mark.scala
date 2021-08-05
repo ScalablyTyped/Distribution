@@ -57,8 +57,7 @@ object Mark {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Mark[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Mark[S]]
+  inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Mark[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Mark[S]]
   
   /**
     * The empty set of marks.
@@ -66,23 +65,18 @@ object Mark {
   @JSImport("prosemirror-model", "Mark.none")
   @js.native
   def none: js.Array[Mark[js.Any]] = js.native
-  @scala.inline
-  def none_=(x: js.Array[Mark[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  inline def none_=(x: js.Array[Mark[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   
   /**
     * Test whether two sets of marks are identical.
     */
-  @scala.inline
-  def sameSet[S /* <: Schema[js.Any, js.Any] */](a: js.Array[Mark[S]], b: js.Array[Mark[S]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sameSet")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def sameSet[S /* <: Schema[js.Any, js.Any] */](a: js.Array[Mark[S]], b: js.Array[Mark[S]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sameSet")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a properly sorted mark set from null, a single mark, or an
     * unsorted array of marks.
     */
-  @scala.inline
-  def setFrom[S /* <: Schema[js.Any, js.Any] */](): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")().asInstanceOf[js.Array[Mark[S]]]
-  @scala.inline
-  def setFrom[S /* <: Schema[js.Any, js.Any] */](marks: js.Array[Mark[S]]): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark[S]]]
-  @scala.inline
-  def setFrom[S /* <: Schema[js.Any, js.Any] */](marks: Mark[S]): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark[S]]]
+  inline def setFrom[S /* <: Schema[js.Any, js.Any] */](): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")().asInstanceOf[js.Array[Mark[S]]]
+  inline def setFrom[S /* <: Schema[js.Any, js.Any] */](marks: js.Array[Mark[S]]): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark[S]]]
+  inline def setFrom[S /* <: Schema[js.Any, js.Any] */](marks: Mark[S]): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark[S]]]
 }

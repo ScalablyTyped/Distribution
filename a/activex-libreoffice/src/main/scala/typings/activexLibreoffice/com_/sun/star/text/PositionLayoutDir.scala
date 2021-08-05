@@ -15,10 +15,8 @@ object PositionLayoutDir {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def PositionInHoriL2R: `1` = 1.asInstanceOf[`1`]
+    inline def PositionInHoriL2R: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PositionInLayoutDirOfAnchor: `2` = 2.asInstanceOf[`2`]
+    inline def PositionInLayoutDirOfAnchor: `2` = 2.asInstanceOf[`2`]
   }
 }

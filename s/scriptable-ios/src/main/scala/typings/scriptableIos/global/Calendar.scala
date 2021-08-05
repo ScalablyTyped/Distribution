@@ -26,8 +26,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#createforreminders
     */
   /* static member */
-  @scala.inline
-  def createForReminders(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForReminders")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
+  inline def createForReminders(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForReminders")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
   
   /**
     * _Default calendar for events._
@@ -36,8 +35,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#defaultforevents
     */
   /* static member */
-  @scala.inline
-  def defaultForEvents(): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultForEvents")().asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
+  inline def defaultForEvents(): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultForEvents")().asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
   
   /**
     * _Default calendar for reminders._
@@ -46,8 +44,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#defaultforreminders
     */
   /* static member */
-  @scala.inline
-  def defaultForReminders(): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultForReminders")().asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
+  inline def defaultForReminders(): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultForReminders")().asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
   
   /**
     * _Find or create a new calendar that holds reminders._
@@ -58,8 +55,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#findorcreateforreminders
     */
   /* static member */
-  @scala.inline
-  def findOrCreateForReminders(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreateForReminders")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
+  inline def findOrCreateForReminders(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreateForReminders")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
   
   /**
     * _Fetches calendars for events._
@@ -68,8 +64,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#forevents
     */
   /* static member */
-  @scala.inline
-  def forEvents(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEvents")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
+  inline def forEvents(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEvents")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
   
   /**
     * _Fetches a calendar that holds events._
@@ -77,8 +72,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#foreventsbytitle
     */
   /* static member */
-  @scala.inline
-  def forEventsByTitle(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEventsByTitle")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
+  inline def forEventsByTitle(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEventsByTitle")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
   
   /**
     * _Fetches calendars for reminders._
@@ -87,8 +81,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#forreminders
     */
   /* static member */
-  @scala.inline
-  def forReminders(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forReminders")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
+  inline def forReminders(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forReminders")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
   
   /**
     * _Fetches a calendar that holds reminders._
@@ -96,8 +89,7 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#forremindersbytitle
     */
   /* static member */
-  @scala.inline
-  def forRemindersByTitle(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRemindersByTitle")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
+  inline def forRemindersByTitle(title: String): js.Promise[typings.scriptableIos.Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRemindersByTitle")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scriptableIos.Calendar]]
   
   /**
     * _Presents a view for picking calendars._
@@ -105,8 +97,6 @@ object Calendar {
     * @see https://docs.scriptable.app/calendar/#presentpicker
     */
   /* static member */
-  @scala.inline
-  def presentPicker(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentPicker")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
-  @scala.inline
-  def presentPicker(allowMultiple: Boolean): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentPicker")(allowMultiple.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
+  inline def presentPicker(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentPicker")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
+  inline def presentPicker(allowMultiple: Boolean): js.Promise[js.Array[typings.scriptableIos.Calendar]] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentPicker")(allowMultiple.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Calendar]]]
 }

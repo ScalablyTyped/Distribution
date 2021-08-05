@@ -32,73 +32,51 @@ trait SearchApplication extends StObject {
 }
 object SearchApplication {
   
-  @scala.inline
-  def apply(): SearchApplication = {
+  inline def apply(): SearchApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchApplication]
   }
   
-  @scala.inline
-  implicit class SearchApplicationMutableBuilder[Self <: SearchApplication] (val x: Self) extends AnyVal {
+  extension [Self <: SearchApplication](x: Self) {
     
-    @scala.inline
-    def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
+    inline def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
+    inline def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
-    @scala.inline
-    def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
+    inline def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultFacetOptions(value: js.Array[FacetOptions]): Self = StObject.set(x, "defaultFacetOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultFacetOptions(value: js.Array[FacetOptions]): Self = StObject.set(x, "defaultFacetOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFacetOptionsUndefined: Self = StObject.set(x, "defaultFacetOptions", js.undefined)
+    inline def setDefaultFacetOptionsUndefined: Self = StObject.set(x, "defaultFacetOptions", js.undefined)
     
-    @scala.inline
-    def setDefaultFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "defaultFacetOptions", js.Array(value :_*))
+    inline def setDefaultFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "defaultFacetOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultSortOptions(value: SortOptions): Self = StObject.set(x, "defaultSortOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultSortOptions(value: SortOptions): Self = StObject.set(x, "defaultSortOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSortOptionsUndefined: Self = StObject.set(x, "defaultSortOptions", js.undefined)
+    inline def setDefaultSortOptionsUndefined: Self = StObject.set(x, "defaultSortOptions", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
+    inline def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
+    inline def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
-    @scala.inline
-    def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
+    inline def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setScoringConfig(value: ScoringConfig): Self = StObject.set(x, "scoringConfig", value.asInstanceOf[js.Any])
+    inline def setScoringConfig(value: ScoringConfig): Self = StObject.set(x, "scoringConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoringConfigUndefined: Self = StObject.set(x, "scoringConfig", js.undefined)
+    inline def setScoringConfigUndefined: Self = StObject.set(x, "scoringConfig", js.undefined)
     
-    @scala.inline
-    def setSourceConfig(value: js.Array[SourceConfig]): Self = StObject.set(x, "sourceConfig", value.asInstanceOf[js.Any])
+    inline def setSourceConfig(value: js.Array[SourceConfig]): Self = StObject.set(x, "sourceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceConfigUndefined: Self = StObject.set(x, "sourceConfig", js.undefined)
+    inline def setSourceConfigUndefined: Self = StObject.set(x, "sourceConfig", js.undefined)
     
-    @scala.inline
-    def setSourceConfigVarargs(value: SourceConfig*): Self = StObject.set(x, "sourceConfig", js.Array(value :_*))
+    inline def setSourceConfigVarargs(value: SourceConfig*): Self = StObject.set(x, "sourceConfig", js.Array(value :_*))
   }
 }

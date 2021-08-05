@@ -31,37 +31,27 @@ trait SchemaBullet extends StObject {
 }
 object SchemaBullet {
   
-  @scala.inline
-  def apply(): SchemaBullet = {
+  inline def apply(): SchemaBullet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBullet]
   }
   
-  @scala.inline
-  implicit class SchemaBulletMutableBuilder[Self <: SchemaBullet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBullet](x: Self) {
     
-    @scala.inline
-    def setBulletStyle(value: SchemaTextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
+    inline def setBulletStyle(value: SchemaTextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
+    inline def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
     
-    @scala.inline
-    def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+    inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+    inline def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+    inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
   }
 }

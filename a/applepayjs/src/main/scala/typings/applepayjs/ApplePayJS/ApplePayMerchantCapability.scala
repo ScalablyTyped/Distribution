@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayMerchantCapability extends StObject
 object ApplePayMerchantCapability {
   
-  @scala.inline
-  def supports3DS: typings.applepayjs.applepayjsStrings.supports3DS = "supports3DS".asInstanceOf[typings.applepayjs.applepayjsStrings.supports3DS]
+  inline def supports3DS: typings.applepayjs.applepayjsStrings.supports3DS = "supports3DS".asInstanceOf[typings.applepayjs.applepayjsStrings.supports3DS]
   
-  @scala.inline
-  def supportsCredit: typings.applepayjs.applepayjsStrings.supportsCredit = "supportsCredit".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsCredit]
+  inline def supportsCredit: typings.applepayjs.applepayjsStrings.supportsCredit = "supportsCredit".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsCredit]
   
-  @scala.inline
-  def supportsDebit: typings.applepayjs.applepayjsStrings.supportsDebit = "supportsDebit".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsDebit]
+  inline def supportsDebit: typings.applepayjs.applepayjsStrings.supportsDebit = "supportsDebit".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsDebit]
   
-  @scala.inline
-  def supportsEMV: typings.applepayjs.applepayjsStrings.supportsEMV = "supportsEMV".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsEMV]
+  inline def supportsEMV: typings.applepayjs.applepayjsStrings.supportsEMV = "supportsEMV".asInstanceOf[typings.applepayjs.applepayjsStrings.supportsEMV]
 }

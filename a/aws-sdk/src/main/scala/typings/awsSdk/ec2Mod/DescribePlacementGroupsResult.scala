@@ -13,22 +13,17 @@ trait DescribePlacementGroupsResult extends StObject {
 }
 object DescribePlacementGroupsResult {
   
-  @scala.inline
-  def apply(): DescribePlacementGroupsResult = {
+  inline def apply(): DescribePlacementGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePlacementGroupsResult]
   }
   
-  @scala.inline
-  implicit class DescribePlacementGroupsResultMutableBuilder[Self <: DescribePlacementGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePlacementGroupsResult](x: Self) {
     
-    @scala.inline
-    def setPlacementGroups(value: PlacementGroupList): Self = StObject.set(x, "PlacementGroups", value.asInstanceOf[js.Any])
+    inline def setPlacementGroups(value: PlacementGroupList): Self = StObject.set(x, "PlacementGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementGroupsUndefined: Self = StObject.set(x, "PlacementGroups", js.undefined)
+    inline def setPlacementGroupsUndefined: Self = StObject.set(x, "PlacementGroups", js.undefined)
     
-    @scala.inline
-    def setPlacementGroupsVarargs(value: PlacementGroup*): Self = StObject.set(x, "PlacementGroups", js.Array(value :_*))
+    inline def setPlacementGroupsVarargs(value: PlacementGroup*): Self = StObject.set(x, "PlacementGroups", js.Array(value :_*))
   }
 }

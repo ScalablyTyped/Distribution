@@ -11,34 +11,29 @@ object rcTriggerStrings {
   sealed trait align
     extends StObject
        with _PopupStatus
-  @scala.inline
-  def align: align = "align".asInstanceOf[align]
+  inline def align: align = "align".asInstanceOf[align]
   
   @js.native
   sealed trait aligned
     extends StObject
        with _PopupStatus
-  @scala.inline
-  def aligned: aligned = "aligned".asInstanceOf[aligned]
+  inline def aligned: aligned = "aligned".asInstanceOf[aligned]
   
   @js.native
   sealed trait measure
     extends StObject
        with _PopupStatus
-  @scala.inline
-  def measure: measure = "measure".asInstanceOf[measure]
+  inline def measure: measure = "measure".asInstanceOf[measure]
   
   @js.native
   sealed trait motion
     extends StObject
        with _PopupStatus
-  @scala.inline
-  def motion: motion = "motion".asInstanceOf[motion]
+  inline def motion: motion = "motion".asInstanceOf[motion]
   
   @js.native
   sealed trait stable
     extends StObject
        with _PopupStatus
-  @scala.inline
-  def stable: stable = "stable".asInstanceOf[stable]
+  inline def stable: stable = "stable".asInstanceOf[stable]
 }

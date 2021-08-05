@@ -11,22 +11,17 @@ trait DefaultActionsContainer extends StObject {
 }
 object DefaultActionsContainer {
   
-  @scala.inline
-  def apply(): DefaultActionsContainer = {
+  inline def apply(): DefaultActionsContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultActionsContainer]
   }
   
-  @scala.inline
-  implicit class DefaultActionsContainerMutableBuilder[Self <: DefaultActionsContainer] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultActionsContainer](x: Self) {
     
-    @scala.inline
-    def setDefaultActionsContainer(value: ViewStyle): Self = StObject.set(x, "defaultActionsContainer", value.asInstanceOf[js.Any])
+    inline def setDefaultActionsContainer(value: ViewStyle): Self = StObject.set(x, "defaultActionsContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultActionsContainerNull: Self = StObject.set(x, "defaultActionsContainer", null)
+    inline def setDefaultActionsContainerNull: Self = StObject.set(x, "defaultActionsContainer", null)
     
-    @scala.inline
-    def setDefaultActionsContainerUndefined: Self = StObject.set(x, "defaultActionsContainer", js.undefined)
+    inline def setDefaultActionsContainerUndefined: Self = StObject.set(x, "defaultActionsContainer", js.undefined)
   }
 }

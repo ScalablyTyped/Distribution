@@ -18,25 +18,19 @@ trait RetryPolicy extends StObject {
 }
 object RetryPolicy {
   
-  @scala.inline
-  def apply(): RetryPolicy = {
+  inline def apply(): RetryPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryPolicy]
   }
   
-  @scala.inline
-  implicit class RetryPolicyMutableBuilder[Self <: RetryPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RetryPolicy](x: Self) {
     
-    @scala.inline
-    def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = StObject.set(x, "MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = StObject.set(x, "MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "MaximumEventAgeInSeconds", js.undefined)
+    inline def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "MaximumEventAgeInSeconds", js.undefined)
     
-    @scala.inline
-    def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = StObject.set(x, "MaximumRetryAttempts", value.asInstanceOf[js.Any])
+    inline def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = StObject.set(x, "MaximumRetryAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "MaximumRetryAttempts", js.undefined)
+    inline def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "MaximumRetryAttempts", js.undefined)
   }
 }

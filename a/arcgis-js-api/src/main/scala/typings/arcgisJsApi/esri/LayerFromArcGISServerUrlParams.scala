@@ -26,8 +26,7 @@ trait LayerFromArcGISServerUrlParams
 }
 object LayerFromArcGISServerUrlParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -37,16 +36,12 @@ object LayerFromArcGISServerUrlParams {
     __obj.asInstanceOf[LayerFromArcGISServerUrlParams]
   }
   
-  @scala.inline
-  implicit class LayerFromArcGISServerUrlParamsMutableBuilder[Self <: LayerFromArcGISServerUrlParams] (val x: Self) extends AnyVal {
+  extension [Self <: LayerFromArcGISServerUrlParams](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

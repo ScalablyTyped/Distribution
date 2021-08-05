@@ -26,42 +26,34 @@ trait TemplateCustomFields extends StObject {
 }
 object TemplateCustomFields {
   
-  @scala.inline
-  def apply(): TemplateCustomFields = {
+  inline def apply(): TemplateCustomFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateCustomFields]
   }
   
-  @scala.inline
-  implicit class TemplateCustomFieldsMutableBuilder[Self <: TemplateCustomFields] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateCustomFields](x: Self) {
     
-    @scala.inline
-    def setListCustomFields(
+    inline def setListCustomFields(
       value: js.Array[
           /* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField
         ]
     ): Self = StObject.set(x, "listCustomFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCustomFieldsUndefined: Self = StObject.set(x, "listCustomFields", js.undefined)
+    inline def setListCustomFieldsUndefined: Self = StObject.set(x, "listCustomFields", js.undefined)
     
-    @scala.inline
-    def setListCustomFieldsVarargs(
+    inline def setListCustomFieldsVarargs(
       value: (/* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField)*
     ): Self = StObject.set(x, "listCustomFields", js.Array(value :_*))
     
-    @scala.inline
-    def setTextCustomFields(
+    inline def setTextCustomFields(
       value: js.Array[
           /* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField
         ]
     ): Self = StObject.set(x, "textCustomFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextCustomFieldsUndefined: Self = StObject.set(x, "textCustomFields", js.undefined)
+    inline def setTextCustomFieldsUndefined: Self = StObject.set(x, "textCustomFields", js.undefined)
     
-    @scala.inline
-    def setTextCustomFieldsVarargs(
+    inline def setTextCustomFieldsVarargs(
       value: (/* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField)*
     ): Self = StObject.set(x, "textCustomFields", js.Array(value :_*))
   }

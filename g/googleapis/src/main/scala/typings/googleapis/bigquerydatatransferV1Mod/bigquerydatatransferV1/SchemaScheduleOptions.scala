@@ -36,31 +36,23 @@ trait SchemaScheduleOptions extends StObject {
 }
 object SchemaScheduleOptions {
   
-  @scala.inline
-  def apply(): SchemaScheduleOptions = {
+  inline def apply(): SchemaScheduleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScheduleOptions]
   }
   
-  @scala.inline
-  implicit class SchemaScheduleOptionsMutableBuilder[Self <: SchemaScheduleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScheduleOptions](x: Self) {
     
-    @scala.inline
-    def setDisableAutoScheduling(value: Boolean): Self = StObject.set(x, "disableAutoScheduling", value.asInstanceOf[js.Any])
+    inline def setDisableAutoScheduling(value: Boolean): Self = StObject.set(x, "disableAutoScheduling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAutoSchedulingUndefined: Self = StObject.set(x, "disableAutoScheduling", js.undefined)
+    inline def setDisableAutoSchedulingUndefined: Self = StObject.set(x, "disableAutoScheduling", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

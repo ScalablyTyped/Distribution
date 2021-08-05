@@ -25,8 +25,7 @@ trait MagnetometerReading extends StObject {
 }
 object MagnetometerReading {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directionalAccuracy: MagnetometerAccuracy,
     magneticFieldX: Double,
     magneticFieldY: Double,
@@ -37,22 +36,16 @@ object MagnetometerReading {
     __obj.asInstanceOf[MagnetometerReading]
   }
   
-  @scala.inline
-  implicit class MagnetometerReadingMutableBuilder[Self <: MagnetometerReading] (val x: Self) extends AnyVal {
+  extension [Self <: MagnetometerReading](x: Self) {
     
-    @scala.inline
-    def setDirectionalAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "directionalAccuracy", value.asInstanceOf[js.Any])
+    inline def setDirectionalAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "directionalAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagneticFieldX(value: Double): Self = StObject.set(x, "magneticFieldX", value.asInstanceOf[js.Any])
+    inline def setMagneticFieldX(value: Double): Self = StObject.set(x, "magneticFieldX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagneticFieldY(value: Double): Self = StObject.set(x, "magneticFieldY", value.asInstanceOf[js.Any])
+    inline def setMagneticFieldY(value: Double): Self = StObject.set(x, "magneticFieldY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagneticFieldZ(value: Double): Self = StObject.set(x, "magneticFieldZ", value.asInstanceOf[js.Any])
+    inline def setMagneticFieldZ(value: Double): Self = StObject.set(x, "magneticFieldZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

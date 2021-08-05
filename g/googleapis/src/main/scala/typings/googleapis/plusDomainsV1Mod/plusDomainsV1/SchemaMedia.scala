@@ -109,124 +109,85 @@ trait SchemaMedia extends StObject {
 }
 object SchemaMedia {
   
-  @scala.inline
-  def apply(): SchemaMedia = {
+  inline def apply(): SchemaMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMedia]
   }
   
-  @scala.inline
-  implicit class SchemaMediaMutableBuilder[Self <: SchemaMedia] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMedia](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Image): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Image): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setExif(value: Time): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+    inline def setExif(value: Time): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
+    inline def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMediaCreatedTime(value: String): Self = StObject.set(x, "mediaCreatedTime", value.asInstanceOf[js.Any])
+    inline def setMediaCreatedTime(value: String): Self = StObject.set(x, "mediaCreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaCreatedTimeUndefined: Self = StObject.set(x, "mediaCreatedTime", js.undefined)
+    inline def setMediaCreatedTimeUndefined: Self = StObject.set(x, "mediaCreatedTime", js.undefined)
     
-    @scala.inline
-    def setMediaUrl(value: String): Self = StObject.set(x, "mediaUrl", value.asInstanceOf[js.Any])
+    inline def setMediaUrl(value: String): Self = StObject.set(x, "mediaUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUrlUndefined: Self = StObject.set(x, "mediaUrl", js.undefined)
+    inline def setMediaUrlUndefined: Self = StObject.set(x, "mediaUrl", js.undefined)
     
-    @scala.inline
-    def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+    inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
     
-    @scala.inline
-    def setStreams(value: js.Array[SchemaVideostream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+    inline def setStreams(value: js.Array[SchemaVideostream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+    inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
-    @scala.inline
-    def setStreamsVarargs(value: SchemaVideostream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: SchemaVideostream*): Self = StObject.set(x, "streams", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVideoDuration(value: String): Self = StObject.set(x, "videoDuration", value.asInstanceOf[js.Any])
+    inline def setVideoDuration(value: String): Self = StObject.set(x, "videoDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDurationUndefined: Self = StObject.set(x, "videoDuration", js.undefined)
+    inline def setVideoDurationUndefined: Self = StObject.set(x, "videoDuration", js.undefined)
     
-    @scala.inline
-    def setVideoStatus(value: String): Self = StObject.set(x, "videoStatus", value.asInstanceOf[js.Any])
+    inline def setVideoStatus(value: String): Self = StObject.set(x, "videoStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoStatusUndefined: Self = StObject.set(x, "videoStatus", js.undefined)
+    inline def setVideoStatusUndefined: Self = StObject.set(x, "videoStatus", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -23,37 +23,27 @@ trait Reference extends StObject {
 }
 object Reference {
   
-  @scala.inline
-  def apply(): Reference = {
+  inline def apply(): Reference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setReferenceType(value: String): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
+    inline def setReferenceType(value: String): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceTypeUndefined: Self = StObject.set(x, "referenceType", js.undefined)
+    inline def setReferenceTypeUndefined: Self = StObject.set(x, "referenceType", js.undefined)
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

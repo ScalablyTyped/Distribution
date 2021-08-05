@@ -23,8 +23,7 @@ trait SocialLink
 }
 object SocialLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -39,19 +38,14 @@ object SocialLink {
     __obj.asInstanceOf[SocialLink]
   }
   
-  @scala.inline
-  implicit class SocialLinkMutableBuilder[Self <: SocialLink] (val x: Self) extends AnyVal {
+  extension [Self <: SocialLink](x: Self) {
     
-    @scala.inline
-    def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
+    inline def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
+    inline def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_text(value: String => String): Self = StObject.set(x, "set_text", js.Any.fromFunction1(value))
+    inline def setSet_text(value: String => String): Self = StObject.set(x, "set_text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
+    inline def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
   }
 }

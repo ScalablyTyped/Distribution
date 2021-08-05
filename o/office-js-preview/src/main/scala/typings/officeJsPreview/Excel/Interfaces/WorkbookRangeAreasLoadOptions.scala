@@ -28,25 +28,19 @@ trait WorkbookRangeAreasLoadOptions extends StObject {
 }
 object WorkbookRangeAreasLoadOptions {
   
-  @scala.inline
-  def apply(): WorkbookRangeAreasLoadOptions = {
+  inline def apply(): WorkbookRangeAreasLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookRangeAreasLoadOptions]
   }
   
-  @scala.inline
-  implicit class WorkbookRangeAreasLoadOptionsMutableBuilder[Self <: WorkbookRangeAreasLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookRangeAreasLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAddresses(value: Boolean): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: Boolean): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait RotateWithOffsetInputs extends StObject {
 }
 object RotateWithOffsetInputs {
   
-  @scala.inline
-  def apply(): RotateWithOffsetInputs = {
+  inline def apply(): RotateWithOffsetInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotateWithOffsetInputs]
   }
   
-  @scala.inline
-  implicit class RotateWithOffsetInputsMutableBuilder[Self <: RotateWithOffsetInputs] (val x: Self) extends AnyVal {
+  extension [Self <: RotateWithOffsetInputs](x: Self) {
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

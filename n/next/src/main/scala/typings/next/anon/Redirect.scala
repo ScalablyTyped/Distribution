@@ -15,22 +15,17 @@ trait Redirect
 }
 object Redirect {
   
-  @scala.inline
-  def apply(redirect: typings.next.mod.Redirect): Redirect = {
+  inline def apply(redirect: typings.next.mod.Redirect): Redirect = {
     val __obj = js.Dynamic.literal(redirect = redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirect]
   }
   
-  @scala.inline
-  implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
+  extension [Self <: Redirect](x: Self) {
     
-    @scala.inline
-    def setRedirect(value: typings.next.mod.Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: typings.next.mod.Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevalidate(value: Double | Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
+    inline def setRevalidate(value: Double | Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
+    inline def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
   }
 }

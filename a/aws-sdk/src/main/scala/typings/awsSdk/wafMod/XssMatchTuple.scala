@@ -18,19 +18,15 @@ trait XssMatchTuple extends StObject {
 }
 object XssMatchTuple {
   
-  @scala.inline
-  def apply(FieldToMatch: FieldToMatch, TextTransformation: TextTransformation): XssMatchTuple = {
+  inline def apply(FieldToMatch: FieldToMatch, TextTransformation: TextTransformation): XssMatchTuple = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[XssMatchTuple]
   }
   
-  @scala.inline
-  implicit class XssMatchTupleMutableBuilder[Self <: XssMatchTuple] (val x: Self) extends AnyVal {
+  extension [Self <: XssMatchTuple](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
   }
 }

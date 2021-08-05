@@ -15,6 +15,5 @@ object mod {
   @js.native
   val graphql: typings.octokitGraphql.typesMod.graphql = js.native
   
-  @scala.inline
-  def withCustomRequest(customRequest: RequestInterface[js.Object]): typings.octokitGraphql.typesMod.graphql = ^.asInstanceOf[js.Dynamic].applyDynamic("withCustomRequest")(customRequest.asInstanceOf[js.Any]).asInstanceOf[typings.octokitGraphql.typesMod.graphql]
+  inline def withCustomRequest(customRequest: RequestInterface[js.Object]): typings.octokitGraphql.typesMod.graphql = ^.asInstanceOf[js.Dynamic].applyDynamic("withCustomRequest")(customRequest.asInstanceOf[js.Any]).asInstanceOf[typings.octokitGraphql.typesMod.graphql]
 }

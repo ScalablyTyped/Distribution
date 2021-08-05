@@ -15,8 +15,7 @@ object pathVisitorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fork: Fork): PathVisitorConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[PathVisitorConstructor]
+  inline def default(fork: Fork): PathVisitorConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[PathVisitorConstructor]
   
   /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/lib/path-visitor.PathVisitor, 'visit' | 'reset'> */
   /* Inlined parent ast-types.ast-types/lib/path-visitor.SharedContextMethods */
@@ -118,8 +117,7 @@ object pathVisitorMod {
   }
   object PathVisitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AbortRequest: js.Any,
       Context: js.Any,
       _abortRequested: Boolean,
@@ -142,59 +140,41 @@ object pathVisitorMod {
       __obj.asInstanceOf[PathVisitor]
     }
     
-    @scala.inline
-    implicit class PathVisitorMutableBuilder[Self <: PathVisitor] (val x: Self) extends AnyVal {
+    extension [Self <: PathVisitor](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAbortRequest(value: js.Any): Self = StObject.set(x, "AbortRequest", value.asInstanceOf[js.Any])
+      inline def setAbortRequest(value: js.Any): Self = StObject.set(x, "AbortRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcquireContext(value: js.Any => js.Any): Self = StObject.set(x, "acquireContext", js.Any.fromFunction1(value))
+      inline def setAcquireContext(value: js.Any => js.Any): Self = StObject.set(x, "acquireContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseContext(value: js.Any => Unit): Self = StObject.set(x, "releaseContext", js.Any.fromFunction1(value))
+      inline def setReleaseContext(value: js.Any => Unit): Self = StObject.set(x, "releaseContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportChanged(value: () => Unit): Self = StObject.set(x, "reportChanged", js.Any.fromFunction0(value))
+      inline def setReportChanged(value: () => Unit): Self = StObject.set(x, "reportChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+      inline def setVisit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitWithoutReset(value: js.Any => js.Any): Self = StObject.set(x, "visitWithoutReset", js.Any.fromFunction1(value))
+      inline def setVisitWithoutReset(value: js.Any => js.Any): Self = StObject.set(x, "visitWithoutReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitor(value: js.Any): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
+      inline def setVisitor(value: js.Any): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasChangeReported(value: () => js.Any): Self = StObject.set(x, "wasChangeReported", js.Any.fromFunction0(value))
+      inline def setWasChangeReported(value: () => js.Any): Self = StObject.set(x, "wasChangeReported", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_abortRequested(value: Boolean): Self = StObject.set(x, "_abortRequested", value.asInstanceOf[js.Any])
+      inline def set_abortRequested(value: Boolean): Self = StObject.set(x, "_abortRequested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_changeReported(value: js.Any): Self = StObject.set(x, "_changeReported", value.asInstanceOf[js.Any])
+      inline def set_changeReported(value: js.Any): Self = StObject.set(x, "_changeReported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_methodNameTable(value: js.Any): Self = StObject.set(x, "_methodNameTable", value.asInstanceOf[js.Any])
+      inline def set_methodNameTable(value: js.Any): Self = StObject.set(x, "_methodNameTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_reusableContextStack(value: js.Any): Self = StObject.set(x, "_reusableContextStack", value.asInstanceOf[js.Any])
+      inline def set_reusableContextStack(value: js.Any): Self = StObject.set(x, "_reusableContextStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_shouldVisitComments(value: js.Any): Self = StObject.set(x, "_shouldVisitComments", value.asInstanceOf[js.Any])
+      inline def set_shouldVisitComments(value: js.Any): Self = StObject.set(x, "_shouldVisitComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_visiting(value: js.Any): Self = StObject.set(x, "_visiting", value.asInstanceOf[js.Any])
+      inline def set_visiting(value: js.Any): Self = StObject.set(x, "_visiting", value.asInstanceOf[js.Any])
     }
   }
   

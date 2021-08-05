@@ -12,8 +12,7 @@ trait DropQuery
 }
 object DropQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: () => typings.bluebird.mod.^[js.Array[Unit]],
     allWithin: DatabaseConnection => typings.bluebird.mod.^[js.Array[Unit]],
     exec: () => typings.bluebird.mod.^[Unit],
@@ -27,10 +26,8 @@ object DropQuery {
     __obj.asInstanceOf[DropQuery]
   }
   
-  @scala.inline
-  implicit class DropQueryMutableBuilder[Self <: DropQuery] (val x: Self) extends AnyVal {
+  extension [Self <: DropQuery](x: Self) {
     
-    @scala.inline
-    def setIfExists(value: () => Executable[Unit]): Self = StObject.set(x, "ifExists", js.Any.fromFunction0(value))
+    inline def setIfExists(value: () => Executable[Unit]): Self = StObject.set(x, "ifExists", js.Any.fromFunction0(value))
   }
 }

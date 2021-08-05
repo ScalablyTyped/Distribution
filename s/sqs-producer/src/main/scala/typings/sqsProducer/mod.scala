@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(opts: Options): Producer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Producer]
+  inline def create(opts: Options): Producer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Producer]
   
   trait Options extends StObject {
     
@@ -34,47 +33,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(queueUrl: String): Options = {
+    inline def apply(queueUrl: String): Options = {
       val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setQueueUrl(value: String): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
+      inline def setQueueUrl(value: String): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+      inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
       
-      @scala.inline
-      def setSqs(value: SQS): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+      inline def setSqs(value: SQS): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
+      inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
     }
   }
   
@@ -106,44 +92,32 @@ object mod {
   }
   object ProducerMessage {
     
-    @scala.inline
-    def apply(body: String, id: String): ProducerMessage = {
+    inline def apply(body: String, id: String): ProducerMessage = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProducerMessage]
     }
     
-    @scala.inline
-    implicit class ProducerMessageMutableBuilder[Self <: ProducerMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ProducerMessage](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeduplicationId(value: String): Self = StObject.set(x, "deduplicationId", value.asInstanceOf[js.Any])
+      inline def setDeduplicationId(value: String): Self = StObject.set(x, "deduplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeduplicationIdUndefined: Self = StObject.set(x, "deduplicationId", js.undefined)
+      inline def setDeduplicationIdUndefined: Self = StObject.set(x, "deduplicationId", js.undefined)
       
-      @scala.inline
-      def setDelaySeconds(value: Double): Self = StObject.set(x, "delaySeconds", value.asInstanceOf[js.Any])
+      inline def setDelaySeconds(value: Double): Self = StObject.set(x, "delaySeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelaySecondsUndefined: Self = StObject.set(x, "delaySeconds", js.undefined)
+      inline def setDelaySecondsUndefined: Self = StObject.set(x, "delaySeconds", js.undefined)
       
-      @scala.inline
-      def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+      inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+      inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributes(value: StringDictionary[ProducerMessageAttribute]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
+      inline def setMessageAttributes(value: StringDictionary[ProducerMessageAttribute]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributesUndefined: Self = StObject.set(x, "messageAttributes", js.undefined)
+      inline def setMessageAttributesUndefined: Self = StObject.set(x, "messageAttributes", js.undefined)
     }
   }
   
@@ -157,29 +131,22 @@ object mod {
   }
   object ProducerMessageAttribute {
     
-    @scala.inline
-    def apply(DataType: typings.sqsProducer.sqsProducerStrings.String | Binary): ProducerMessageAttribute = {
+    inline def apply(DataType: typings.sqsProducer.sqsProducerStrings.String | Binary): ProducerMessageAttribute = {
       val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProducerMessageAttribute]
     }
     
-    @scala.inline
-    implicit class ProducerMessageAttributeMutableBuilder[Self <: ProducerMessageAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: ProducerMessageAttribute](x: Self) {
       
-      @scala.inline
-      def setBinaryValue(value: Buffer): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
+      inline def setBinaryValue(value: Buffer): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryValueUndefined: Self = StObject.set(x, "BinaryValue", js.undefined)
+      inline def setBinaryValueUndefined: Self = StObject.set(x, "BinaryValue", js.undefined)
       
-      @scala.inline
-      def setDataType(value: typings.sqsProducer.sqsProducerStrings.String | Binary): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+      inline def setDataType(value: typings.sqsProducer.sqsProducerStrings.String | Binary): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+      inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
+      inline def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
     }
   }
 }

@@ -14,22 +14,17 @@ trait CompletionEntry extends StObject {
 }
 object CompletionEntry {
   
-  @scala.inline
-  def apply(kind: String, kindModifiers: String, name: String): CompletionEntry = {
+  inline def apply(kind: String, kindModifiers: String, name: String): CompletionEntry = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionEntry]
   }
   
-  @scala.inline
-  implicit class CompletionEntryMutableBuilder[Self <: CompletionEntry] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionEntry](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
+    inline def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

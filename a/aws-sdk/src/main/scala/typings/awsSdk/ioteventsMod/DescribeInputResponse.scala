@@ -13,19 +13,15 @@ trait DescribeInputResponse extends StObject {
 }
 object DescribeInputResponse {
   
-  @scala.inline
-  def apply(): DescribeInputResponse = {
+  inline def apply(): DescribeInputResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInputResponse]
   }
   
-  @scala.inline
-  implicit class DescribeInputResponseMutableBuilder[Self <: DescribeInputResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInputResponse](x: Self) {
     
-    @scala.inline
-    def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }
 }

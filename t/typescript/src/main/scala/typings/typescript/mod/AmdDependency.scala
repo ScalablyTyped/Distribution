@@ -12,22 +12,17 @@ trait AmdDependency extends StObject {
 }
 object AmdDependency {
   
-  @scala.inline
-  def apply(path: java.lang.String): AmdDependency = {
+  inline def apply(path: java.lang.String): AmdDependency = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmdDependency]
   }
   
-  @scala.inline
-  implicit class AmdDependencyMutableBuilder[Self <: AmdDependency] (val x: Self) extends AnyVal {
+  extension [Self <: AmdDependency](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

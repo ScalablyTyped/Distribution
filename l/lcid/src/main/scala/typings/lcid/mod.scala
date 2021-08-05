@@ -19,8 +19,7 @@ object mod {
   	//=> 'nb_NO'
   	```
   	*/
-  @scala.inline
-  def from(lcidCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(lcidCode.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def from(lcidCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(lcidCode.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Get a [Windows locale identifier (LCID)](https://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms) from a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)).
@@ -31,8 +30,7 @@ object mod {
   	//=> 1044
   	```
   	*/
-  @scala.inline
-  def to(localeId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(localeId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def to(localeId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(localeId.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
   	Mapping between [standard locale identifiers](https://en.wikipedia.org/wiki/Locale_(computer_software)) and [Windows locale identifiers (LCID)](http://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms).

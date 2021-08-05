@@ -69,7 +69,6 @@ object canvasBufferMod {
     /**
       * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
       */
-    @scala.inline
-    def sizePixels(ctx: CanvasRenderingContext2D, screenWidth: Double, screenHeight: Double, devicePixelRatio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sizePixels")(ctx.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], screenHeight.asInstanceOf[js.Any], devicePixelRatio.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sizePixels(ctx: CanvasRenderingContext2D, screenWidth: Double, screenHeight: Double, devicePixelRatio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sizePixels")(ctx.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], screenHeight.asInstanceOf[js.Any], devicePixelRatio.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

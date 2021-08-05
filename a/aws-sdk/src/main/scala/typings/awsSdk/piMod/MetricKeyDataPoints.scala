@@ -18,28 +18,21 @@ trait MetricKeyDataPoints extends StObject {
 }
 object MetricKeyDataPoints {
   
-  @scala.inline
-  def apply(): MetricKeyDataPoints = {
+  inline def apply(): MetricKeyDataPoints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricKeyDataPoints]
   }
   
-  @scala.inline
-  implicit class MetricKeyDataPointsMutableBuilder[Self <: MetricKeyDataPoints] (val x: Self) extends AnyVal {
+  extension [Self <: MetricKeyDataPoints](x: Self) {
     
-    @scala.inline
-    def setDataPoints(value: DataPointsList): Self = StObject.set(x, "DataPoints", value.asInstanceOf[js.Any])
+    inline def setDataPoints(value: DataPointsList): Self = StObject.set(x, "DataPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPointsUndefined: Self = StObject.set(x, "DataPoints", js.undefined)
+    inline def setDataPointsUndefined: Self = StObject.set(x, "DataPoints", js.undefined)
     
-    @scala.inline
-    def setDataPointsVarargs(value: DataPoint*): Self = StObject.set(x, "DataPoints", js.Array(value :_*))
+    inline def setDataPointsVarargs(value: DataPoint*): Self = StObject.set(x, "DataPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: ResponseResourceMetricKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ResponseResourceMetricKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

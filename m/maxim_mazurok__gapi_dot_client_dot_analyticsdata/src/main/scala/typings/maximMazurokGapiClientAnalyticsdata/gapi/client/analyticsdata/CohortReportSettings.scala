@@ -11,19 +11,15 @@ trait CohortReportSettings extends StObject {
 }
 object CohortReportSettings {
   
-  @scala.inline
-  def apply(): CohortReportSettings = {
+  inline def apply(): CohortReportSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CohortReportSettings]
   }
   
-  @scala.inline
-  implicit class CohortReportSettingsMutableBuilder[Self <: CohortReportSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CohortReportSettings](x: Self) {
     
-    @scala.inline
-    def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
+    inline def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
+    inline def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
   }
 }

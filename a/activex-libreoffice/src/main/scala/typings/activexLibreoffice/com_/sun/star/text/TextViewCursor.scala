@@ -47,8 +47,7 @@ trait TextViewCursor
 }
 object TextViewCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     BorderDistance: Double,
     BottomBorder: BorderLine,
@@ -267,10 +266,8 @@ object TextViewCursor {
     __obj.asInstanceOf[TextViewCursor]
   }
   
-  @scala.inline
-  implicit class TextViewCursorMutableBuilder[Self <: TextViewCursor] (val x: Self) extends AnyVal {
+  extension [Self <: TextViewCursor](x: Self) {
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

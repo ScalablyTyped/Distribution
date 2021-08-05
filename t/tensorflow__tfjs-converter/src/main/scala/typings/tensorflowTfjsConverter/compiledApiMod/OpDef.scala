@@ -32,77 +32,54 @@ object OpDef {
   }
   object IArgDef {
     
-    @scala.inline
-    def apply(): IArgDef = {
+    inline def apply(): IArgDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IArgDef]
     }
     
-    @scala.inline
-    implicit class IArgDefMutableBuilder[Self <: IArgDef] (val x: Self) extends AnyVal {
+    extension [Self <: IArgDef](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIsRef(value: Boolean): Self = StObject.set(x, "isRef", value.asInstanceOf[js.Any])
+      inline def setIsRef(value: Boolean): Self = StObject.set(x, "isRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRefNull: Self = StObject.set(x, "isRef", null)
+      inline def setIsRefNull: Self = StObject.set(x, "isRef", null)
       
-      @scala.inline
-      def setIsRefUndefined: Self = StObject.set(x, "isRef", js.undefined)
+      inline def setIsRefUndefined: Self = StObject.set(x, "isRef", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNumberAttr(value: String): Self = StObject.set(x, "numberAttr", value.asInstanceOf[js.Any])
+      inline def setNumberAttr(value: String): Self = StObject.set(x, "numberAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberAttrNull: Self = StObject.set(x, "numberAttr", null)
+      inline def setNumberAttrNull: Self = StObject.set(x, "numberAttr", null)
       
-      @scala.inline
-      def setNumberAttrUndefined: Self = StObject.set(x, "numberAttr", js.undefined)
+      inline def setNumberAttrUndefined: Self = StObject.set(x, "numberAttr", js.undefined)
       
-      @scala.inline
-      def setType(value: DataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAttr(value: String): Self = StObject.set(x, "typeAttr", value.asInstanceOf[js.Any])
+      inline def setTypeAttr(value: String): Self = StObject.set(x, "typeAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAttrNull: Self = StObject.set(x, "typeAttr", null)
+      inline def setTypeAttrNull: Self = StObject.set(x, "typeAttr", null)
       
-      @scala.inline
-      def setTypeAttrUndefined: Self = StObject.set(x, "typeAttr", js.undefined)
+      inline def setTypeAttrUndefined: Self = StObject.set(x, "typeAttr", js.undefined)
       
-      @scala.inline
-      def setTypeListAttr(value: String): Self = StObject.set(x, "typeListAttr", value.asInstanceOf[js.Any])
+      inline def setTypeListAttr(value: String): Self = StObject.set(x, "typeListAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeListAttrNull: Self = StObject.set(x, "typeListAttr", null)
+      inline def setTypeListAttrNull: Self = StObject.set(x, "typeListAttr", null)
       
-      @scala.inline
-      def setTypeListAttrUndefined: Self = StObject.set(x, "typeListAttr", js.undefined)
+      inline def setTypeListAttrUndefined: Self = StObject.set(x, "typeListAttr", js.undefined)
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -132,77 +109,54 @@ object OpDef {
   }
   object IAttrDef {
     
-    @scala.inline
-    def apply(): IAttrDef = {
+    inline def apply(): IAttrDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAttrDef]
     }
     
-    @scala.inline
-    implicit class IAttrDefMutableBuilder[Self <: IAttrDef] (val x: Self) extends AnyVal {
+    extension [Self <: IAttrDef](x: Self) {
       
-      @scala.inline
-      def setAllowedValues(value: IAttrValue): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+      inline def setAllowedValues(value: IAttrValue): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedValuesNull: Self = StObject.set(x, "allowedValues", null)
+      inline def setAllowedValuesNull: Self = StObject.set(x, "allowedValues", null)
       
-      @scala.inline
-      def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
+      inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: IAttrValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: IAttrValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setHasMinimum(value: Boolean): Self = StObject.set(x, "hasMinimum", value.asInstanceOf[js.Any])
+      inline def setHasMinimum(value: Boolean): Self = StObject.set(x, "hasMinimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMinimumNull: Self = StObject.set(x, "hasMinimum", null)
+      inline def setHasMinimumNull: Self = StObject.set(x, "hasMinimum", null)
       
-      @scala.inline
-      def setHasMinimumUndefined: Self = StObject.set(x, "hasMinimum", js.undefined)
+      inline def setHasMinimumUndefined: Self = StObject.set(x, "hasMinimum", js.undefined)
       
-      @scala.inline
-      def setMinimum(value: Double | String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+      inline def setMinimum(value: Double | String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumNull: Self = StObject.set(x, "minimum", null)
+      inline def setMinimumNull: Self = StObject.set(x, "minimum", null)
       
-      @scala.inline
-      def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+      inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -217,32 +171,24 @@ object OpDef {
   }
   object IOpDeprecation {
     
-    @scala.inline
-    def apply(): IOpDeprecation = {
+    inline def apply(): IOpDeprecation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOpDeprecation]
     }
     
-    @scala.inline
-    implicit class IOpDeprecationMutableBuilder[Self <: IOpDeprecation] (val x: Self) extends AnyVal {
+    extension [Self <: IOpDeprecation](x: Self) {
       
-      @scala.inline
-      def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+      inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplanationNull: Self = StObject.set(x, "explanation", null)
+      inline def setExplanationNull: Self = StObject.set(x, "explanation", null)
       
-      @scala.inline
-      def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
+      inline def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionNull: Self = StObject.set(x, "version", null)
+      inline def setVersionNull: Self = StObject.set(x, "version", null)
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

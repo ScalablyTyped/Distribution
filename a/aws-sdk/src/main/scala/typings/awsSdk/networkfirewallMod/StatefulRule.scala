@@ -23,25 +23,19 @@ trait StatefulRule extends StObject {
 }
 object StatefulRule {
   
-  @scala.inline
-  def apply(Action: StatefulAction, Header: Header, RuleOptions: RuleOptions): StatefulRule = {
+  inline def apply(Action: StatefulAction, Header: Header, RuleOptions: RuleOptions): StatefulRule = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], RuleOptions = RuleOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulRule]
   }
   
-  @scala.inline
-  implicit class StatefulRuleMutableBuilder[Self <: StatefulRule] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: StatefulAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: StatefulAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: Header): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Header): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleOptions(value: RuleOptions): Self = StObject.set(x, "RuleOptions", value.asInstanceOf[js.Any])
+    inline def setRuleOptions(value: RuleOptions): Self = StObject.set(x, "RuleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleOptionsVarargs(value: RuleOption*): Self = StObject.set(x, "RuleOptions", js.Array(value :_*))
+    inline def setRuleOptionsVarargs(value: RuleOption*): Self = StObject.set(x, "RuleOptions", js.Array(value :_*))
   }
 }

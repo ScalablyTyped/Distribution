@@ -31,32 +31,24 @@ object anon {
   }
   object Destination {
     
-    @scala.inline
-    def apply(destination: LocationValue, origin: LocationValue): Destination = {
+    inline def apply(destination: LocationValue, origin: LocationValue): Destination = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Destination]
     }
     
-    @scala.inline
-    implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+    extension [Self <: Destination](x: Self) {
       
-      @scala.inline
-      def setDestination(value: LocationValue): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: LocationValue): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+      inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+      inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: LocationValue): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: LocationValue): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginName(value: String): Self = StObject.set(x, "originName", value.asInstanceOf[js.Any])
+      inline def setOriginName(value: String): Self = StObject.set(x, "originName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginNameUndefined: Self = StObject.set(x, "originName", js.undefined)
+      inline def setOriginNameUndefined: Self = StObject.set(x, "originName", js.undefined)
     }
   }
   
@@ -66,17 +58,14 @@ object anon {
   }
   object Info {
     
-    @scala.inline
-    def apply(info: String): Info = {
+    inline def apply(info: String): Info = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
   }
 }

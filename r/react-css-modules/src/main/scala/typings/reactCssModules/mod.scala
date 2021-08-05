@@ -32,20 +32,16 @@ object mod extends Shortcut {
   }
   object InjectedCSSModuleProps {
     
-    @scala.inline
-    def apply(): InjectedCSSModuleProps = {
+    inline def apply(): InjectedCSSModuleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InjectedCSSModuleProps]
     }
     
-    @scala.inline
-    implicit class InjectedCSSModulePropsMutableBuilder[Self <: InjectedCSSModuleProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedCSSModuleProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: StylesObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: StylesObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -59,26 +55,20 @@ object mod extends Shortcut {
   }
   object TypeOptions {
     
-    @scala.inline
-    def apply(): TypeOptions = {
+    inline def apply(): TypeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeOptions]
     }
     
-    @scala.inline
-    implicit class TypeOptionsMutableBuilder[Self <: TypeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TypeOptions](x: Self) {
       
-      @scala.inline
-      def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
+      inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
+      inline def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
       
-      @scala.inline
-      def setHandleNotFoundStyleName(value: `throw` | log | ignore): Self = StObject.set(x, "handleNotFoundStyleName", value.asInstanceOf[js.Any])
+      inline def setHandleNotFoundStyleName(value: `throw` | log | ignore): Self = StObject.set(x, "handleNotFoundStyleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleNotFoundStyleNameUndefined: Self = StObject.set(x, "handleNotFoundStyleName", js.undefined)
+      inline def setHandleNotFoundStyleNameUndefined: Self = StObject.set(x, "handleNotFoundStyleName", js.undefined)
     }
   }
   
@@ -95,20 +85,16 @@ object mod extends Shortcut {
     }
     object HTMLAttributes {
       
-      @scala.inline
-      def apply[T](): HTMLAttributes[T] = {
+      inline def apply[T](): HTMLAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HTMLAttributes[T]]
       }
       
-      @scala.inline
-      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
+      extension [Self <: HTMLAttributes[?], T](x: Self & HTMLAttributes[T]) {
         
-        @scala.inline
-        def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+        inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
+        inline def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
       }
     }
     
@@ -118,20 +104,16 @@ object mod extends Shortcut {
     }
     object SVGAttributes {
       
-      @scala.inline
-      def apply[T](): SVGAttributes[T] = {
+      inline def apply[T](): SVGAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SVGAttributes[T]]
       }
       
-      @scala.inline
-      implicit class SVGAttributesMutableBuilder[Self <: SVGAttributes[?], T] (val x: Self & SVGAttributes[T]) extends AnyVal {
+      extension [Self <: SVGAttributes[?], T](x: Self & SVGAttributes[T]) {
         
-        @scala.inline
-        def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+        inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
+        inline def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
       }
     }
   }

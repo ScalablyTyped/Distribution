@@ -122,17 +122,14 @@ object Users extends Shortcut {
   }
   object FindAllParams {
     
-    @scala.inline
-    def apply(workspace: String | Double): FindAllParams = {
+    inline def apply(workspace: String | Double): FindAllParams = {
       val __obj = js.Dynamic.literal(workspace = workspace.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindAllParams]
     }
     
-    @scala.inline
-    implicit class FindAllParamsMutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
+    extension [Self <: FindAllParams](x: Self) {
       
-      @scala.inline
-      def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+      inline def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     }
   }
   

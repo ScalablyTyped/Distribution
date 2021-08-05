@@ -52,8 +52,7 @@ object SplitView {
     @JSGlobal("WinJS.UI.SplitView.ClosedDisplayMode.none")
     @js.native
     def none: String = js.native
-    @scala.inline
-    def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -79,8 +78,7 @@ object SplitView {
     @JSGlobal("WinJS.UI.SplitView.OpenedDisplayMode.overlay")
     @js.native
     def overlay: String = js.native
-    @scala.inline
-    def overlay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlay")(x.asInstanceOf[js.Any])
+    inline def overlay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlay")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -99,8 +97,7 @@ object SplitView {
     @JSGlobal("WinJS.UI.SplitView.PanePlacement.bottom")
     @js.native
     def bottom: String = js.native
-    @scala.inline
-    def bottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     /**
       * Pane is positioned left of the SplitView's content.
@@ -108,8 +105,7 @@ object SplitView {
     @JSGlobal("WinJS.UI.SplitView.PanePlacement.left")
     @js.native
     def left: String = js.native
-    @scala.inline
-    def left_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+    inline def left_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
     
     /**
       * Pane is positioned right of the SplitView's content.
@@ -117,8 +113,7 @@ object SplitView {
     @JSGlobal("WinJS.UI.SplitView.PanePlacement.right")
     @js.native
     def right: String = js.native
-    @scala.inline
-    def right_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+    inline def right_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
     
     /**
       * Pane is positioned above the SplitView's content.
@@ -126,8 +121,7 @@ object SplitView {
     @JSGlobal("WinJS.UI.SplitView.PanePlacement.top")
     @js.native
     def top: String = js.native
-    @scala.inline
-    def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -137,6 +131,5 @@ object SplitView {
   @JSGlobal("WinJS.UI.SplitView.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

@@ -24,14 +24,12 @@ object mediaOverlayMod {
     @JSImport("wix-style-react/dist/es/src/MediaOverlay", "default.Content")
     @js.native
     def Content: FC[MediaOverlayContentProps] = js.native
-    @scala.inline
-    def Content_=(x: FC[MediaOverlayContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+    inline def Content_=(x: FC[MediaOverlayContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/MediaOverlay", "default.DragHandle")
     @js.native
     def DragHandle: FC[js.Object] = js.native
-    @scala.inline
-    def DragHandle_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragHandle")(x.asInstanceOf[js.Any])
+    inline def DragHandle_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragHandle")(x.asInstanceOf[js.Any])
   }
   
   type MediaOverlay = PureComponent[MediaOverlayProps, js.Object, js.Any]
@@ -46,20 +44,15 @@ object mediaOverlayMod {
   trait MediaOverlayContentPlacement extends StObject
   object MediaOverlayContentPlacement {
     
-    @scala.inline
-    def `bottom-end`: typings.wixStyleReact.wixStyleReactStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`bottom-end`]
+    inline def `bottom-end`: typings.wixStyleReact.wixStyleReactStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`bottom-end`]
     
-    @scala.inline
-    def `bottom-start`: typings.wixStyleReact.wixStyleReactStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`bottom-start`]
+    inline def `bottom-start`: typings.wixStyleReact.wixStyleReactStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`bottom-start`]
     
-    @scala.inline
-    def middle: typings.wixStyleReact.wixStyleReactStrings.middle = "middle".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.middle]
+    inline def middle: typings.wixStyleReact.wixStyleReactStrings.middle = "middle".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.middle]
     
-    @scala.inline
-    def `top-end`: typings.wixStyleReact.wixStyleReactStrings.`top-end` = "top-end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`top-end`]
+    inline def `top-end`: typings.wixStyleReact.wixStyleReactStrings.`top-end` = "top-end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`top-end`]
     
-    @scala.inline
-    def `top-start`: typings.wixStyleReact.wixStyleReactStrings.`top-start` = "top-start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`top-start`]
+    inline def `top-start`: typings.wixStyleReact.wixStyleReactStrings.`top-start` = "top-start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`top-start`]
   }
   
   trait MediaOverlayContentProps extends StObject {
@@ -70,26 +63,20 @@ object mediaOverlayMod {
   }
   object MediaOverlayContentProps {
     
-    @scala.inline
-    def apply(): MediaOverlayContentProps = {
+    inline def apply(): MediaOverlayContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaOverlayContentProps]
     }
     
-    @scala.inline
-    implicit class MediaOverlayContentPropsMutableBuilder[Self <: MediaOverlayContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaOverlayContentProps](x: Self) {
       
-      @scala.inline
-      def setPlacement(value: MediaOverlayContentPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: MediaOverlayContentPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setVisible(value: MediaOverlayContentVisible): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: MediaOverlayContentVisible): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -101,14 +88,11 @@ object mediaOverlayMod {
   trait MediaOverlayContentVisible extends StObject
   object MediaOverlayContentVisible {
     
-    @scala.inline
-    def default: typings.wixStyleReact.wixStyleReactStrings.default = "default".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.default]
+    inline def default: typings.wixStyleReact.wixStyleReactStrings.default = "default".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.default]
     
-    @scala.inline
-    def always: typings.wixStyleReact.wixStyleReactStrings.always = "always".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.always]
+    inline def always: typings.wixStyleReact.wixStyleReactStrings.always = "always".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.always]
     
-    @scala.inline
-    def hover: typings.wixStyleReact.wixStyleReactStrings.hover = "hover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.hover]
+    inline def hover: typings.wixStyleReact.wixStyleReactStrings.hover = "hover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.hover]
   }
   
   trait MediaOverlayProps extends StObject {
@@ -131,62 +115,44 @@ object mediaOverlayMod {
   }
   object MediaOverlayProps {
     
-    @scala.inline
-    def apply(): MediaOverlayProps = {
+    inline def apply(): MediaOverlayProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaOverlayProps]
     }
     
-    @scala.inline
-    implicit class MediaOverlayPropsMutableBuilder[Self <: MediaOverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaOverlayProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setHoverSkin(value: MediaOverlaySkin): Self = StObject.set(x, "hoverSkin", value.asInstanceOf[js.Any])
+      inline def setHoverSkin(value: MediaOverlaySkin): Self = StObject.set(x, "hoverSkin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverSkinUndefined: Self = StObject.set(x, "hoverSkin", js.undefined)
+      inline def setHoverSkinUndefined: Self = StObject.set(x, "hoverSkin", js.undefined)
       
-      @scala.inline
-      def setHovered(value: Boolean): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
+      inline def setHovered(value: Boolean): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoveredUndefined: Self = StObject.set(x, "hovered", js.undefined)
+      inline def setHoveredUndefined: Self = StObject.set(x, "hovered", js.undefined)
       
-      @scala.inline
-      def setMedia(value: ReactNode): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: ReactNode): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRemoveRoundedBorders(value: Boolean): Self = StObject.set(x, "removeRoundedBorders", value.asInstanceOf[js.Any])
+      inline def setRemoveRoundedBorders(value: Boolean): Self = StObject.set(x, "removeRoundedBorders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveRoundedBordersUndefined: Self = StObject.set(x, "removeRoundedBorders", js.undefined)
+      inline def setRemoveRoundedBordersUndefined: Self = StObject.set(x, "removeRoundedBorders", js.undefined)
       
-      @scala.inline
-      def setSkin(value: MediaOverlaySkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: MediaOverlaySkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     }
   }
   
@@ -198,13 +164,10 @@ object mediaOverlayMod {
   trait MediaOverlaySkin extends StObject
   object MediaOverlaySkin {
     
-    @scala.inline
-    def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
+    inline def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
     
-    @scala.inline
-    def gradient: typings.wixStyleReact.wixStyleReactStrings.gradient = "gradient".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.gradient]
+    inline def gradient: typings.wixStyleReact.wixStyleReactStrings.gradient = "gradient".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.gradient]
     
-    @scala.inline
-    def none: none_ = "none".asInstanceOf[none_]
+    inline def none: none_ = "none".asInstanceOf[none_]
   }
 }

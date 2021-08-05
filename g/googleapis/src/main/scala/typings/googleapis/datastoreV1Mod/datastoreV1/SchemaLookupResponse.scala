@@ -32,40 +32,29 @@ trait SchemaLookupResponse extends StObject {
 }
 object SchemaLookupResponse {
   
-  @scala.inline
-  def apply(): SchemaLookupResponse = {
+  inline def apply(): SchemaLookupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLookupResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLookupResponseMutableBuilder[Self <: SchemaLookupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLookupResponse](x: Self) {
     
-    @scala.inline
-    def setDeferred(value: js.Array[SchemaKey]): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+    inline def setDeferred(value: js.Array[SchemaKey]): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+    inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
-    @scala.inline
-    def setDeferredVarargs(value: SchemaKey*): Self = StObject.set(x, "deferred", js.Array(value :_*))
+    inline def setDeferredVarargs(value: SchemaKey*): Self = StObject.set(x, "deferred", js.Array(value :_*))
     
-    @scala.inline
-    def setFound(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
+    inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
-    @scala.inline
-    def setFoundVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "found", js.Array(value :_*))
+    inline def setFoundVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "found", js.Array(value :_*))
     
-    @scala.inline
-    def setMissing(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+    inline def setMissing(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+    inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
-    @scala.inline
-    def setMissingVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "missing", js.Array(value :_*))
+    inline def setMissingVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "missing", js.Array(value :_*))
   }
 }

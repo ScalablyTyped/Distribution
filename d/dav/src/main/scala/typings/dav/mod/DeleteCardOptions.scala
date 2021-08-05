@@ -19,25 +19,19 @@ trait DeleteCardOptions extends StObject {
 }
 object DeleteCardOptions {
   
-  @scala.inline
-  def apply(): DeleteCardOptions = {
+  inline def apply(): DeleteCardOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCardOptions]
   }
   
-  @scala.inline
-  implicit class DeleteCardOptionsMutableBuilder[Self <: DeleteCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCardOptions](x: Self) {
     
-    @scala.inline
-    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

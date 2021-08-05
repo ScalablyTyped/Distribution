@@ -12,6 +12,5 @@ object createPlayerStoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPlayerStory(storyId: String, playerProps: StoryProps): Player = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlayerStory")(storyId.asInstanceOf[js.Any], playerProps.asInstanceOf[js.Any])).asInstanceOf[Player]
+  inline def createPlayerStory(storyId: String, playerProps: StoryProps): Player = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlayerStory")(storyId.asInstanceOf[js.Any], playerProps.asInstanceOf[js.Any])).asInstanceOf[Player]
 }

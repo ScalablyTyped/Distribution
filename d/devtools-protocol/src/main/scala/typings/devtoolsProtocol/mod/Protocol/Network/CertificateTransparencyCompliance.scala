@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateTransparencyCompliance extends StObject
 object CertificateTransparencyCompliance {
   
-  @scala.inline
-  def compliant: typings.devtoolsProtocol.devtoolsProtocolStrings.compliant = "compliant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.compliant]
+  inline def compliant: typings.devtoolsProtocol.devtoolsProtocolStrings.compliant = "compliant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.compliant]
   
-  @scala.inline
-  def `not-compliant`: typings.devtoolsProtocol.devtoolsProtocolStrings.`not-compliant` = "not-compliant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`not-compliant`]
+  inline def `not-compliant`: typings.devtoolsProtocol.devtoolsProtocolStrings.`not-compliant` = "not-compliant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`not-compliant`]
   
-  @scala.inline
-  def unknown: typings.devtoolsProtocol.devtoolsProtocolStrings.unknown = "unknown".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unknown]
+  inline def unknown: typings.devtoolsProtocol.devtoolsProtocolStrings.unknown = "unknown".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unknown]
 }

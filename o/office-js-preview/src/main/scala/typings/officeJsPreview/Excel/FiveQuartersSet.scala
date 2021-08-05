@@ -21,8 +21,7 @@ trait FiveQuartersSet
 }
 object FiveQuartersSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blackCircle: Icon,
     circleWithOneWhiteQuarter: Icon,
     circleWithThreeWhiteQuarters: Icon,
@@ -33,22 +32,16 @@ object FiveQuartersSet {
     __obj.asInstanceOf[FiveQuartersSet]
   }
   
-  @scala.inline
-  implicit class FiveQuartersSetMutableBuilder[Self <: FiveQuartersSet] (val x: Self) extends AnyVal {
+  extension [Self <: FiveQuartersSet](x: Self) {
     
-    @scala.inline
-    def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
+    inline def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleWithOneWhiteQuarter(value: Icon): Self = StObject.set(x, "circleWithOneWhiteQuarter", value.asInstanceOf[js.Any])
+    inline def setCircleWithOneWhiteQuarter(value: Icon): Self = StObject.set(x, "circleWithOneWhiteQuarter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleWithThreeWhiteQuarters(value: Icon): Self = StObject.set(x, "circleWithThreeWhiteQuarters", value.asInstanceOf[js.Any])
+    inline def setCircleWithThreeWhiteQuarters(value: Icon): Self = StObject.set(x, "circleWithThreeWhiteQuarters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleWithTwoWhiteQuarters(value: Icon): Self = StObject.set(x, "circleWithTwoWhiteQuarters", value.asInstanceOf[js.Any])
+    inline def setCircleWithTwoWhiteQuarters(value: Icon): Self = StObject.set(x, "circleWithTwoWhiteQuarters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteCircleAllWhiteQuarters(value: Icon): Self = StObject.set(x, "whiteCircleAllWhiteQuarters", value.asInstanceOf[js.Any])
+    inline def setWhiteCircleAllWhiteQuarters(value: Icon): Self = StObject.set(x, "whiteCircleAllWhiteQuarters", value.asInstanceOf[js.Any])
   }
 }

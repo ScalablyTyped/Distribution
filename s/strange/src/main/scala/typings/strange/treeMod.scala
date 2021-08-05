@@ -55,8 +55,7 @@ object treeMod {
     * RangeTree.from(ranges).search(42) // => [new Range(40, 50)]
     */
   /* static member */
-  @scala.inline
-  def from[U /* <: Date | Double | String */](ranges: js.Array[Range[U]]): RangeTree[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(ranges.asInstanceOf[js.Any]).asInstanceOf[RangeTree[U]]
+  inline def from[U /* <: Date | Double | String */](ranges: js.Array[Range[U]]): RangeTree[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(ranges.asInstanceOf[js.Any]).asInstanceOf[RangeTree[U]]
   
   /**
     * Create an interval tree node.
@@ -77,11 +76,11 @@ object treeMod {
     /**
       * Ranges of current tree node.
       */
-    var keys: js.Array[Range[T]] = js.native
+    /* private */ var keys: js.Array[Range[T]] = js.native
     
-    var left: RangeTree[T] | Null = js.native
+    /* private */ var left: RangeTree[T] | Null = js.native
     
-    var right: RangeTree[T] | Null = js.native
+    /* private */ var right: RangeTree[T] | Null = js.native
     
     /**
       * Search for ranges that include the given value or, given a range, intersect

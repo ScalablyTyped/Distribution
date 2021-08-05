@@ -11,16 +11,13 @@ trait PickImpldelay extends StObject {
 }
 object PickImpldelay {
   
-  @scala.inline
-  def apply(delay: Boolean): PickImpldelay = {
+  inline def apply(delay: Boolean): PickImpldelay = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldelay]
   }
   
-  @scala.inline
-  implicit class PickImpldelayMutableBuilder[Self <: PickImpldelay] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldelay](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
   }
 }

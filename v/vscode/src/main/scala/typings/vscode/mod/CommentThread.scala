@@ -68,8 +68,7 @@ trait CommentThread extends StObject {
 }
 object CommentThread {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canReply: Boolean,
     collapsibleState: CommentThreadCollapsibleState,
     comments: js.Array[Comment],
@@ -81,40 +80,28 @@ object CommentThread {
     __obj.asInstanceOf[CommentThread]
   }
   
-  @scala.inline
-  implicit class CommentThreadMutableBuilder[Self <: CommentThread] (val x: Self) extends AnyVal {
+  extension [Self <: CommentThread](x: Self) {
     
-    @scala.inline
-    def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
+    inline def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleState(value: CommentThreadCollapsibleState): Self = StObject.set(x, "collapsibleState", value.asInstanceOf[js.Any])
+    inline def setCollapsibleState(value: CommentThreadCollapsibleState): Self = StObject.set(x, "collapsibleState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
+    inline def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
+    inline def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -8,21 +8,17 @@ object reactGithubButtonStrings {
   
   @js.native
   sealed trait forks extends StObject
-  @scala.inline
-  def forks: forks = "forks".asInstanceOf[forks]
+  inline def forks: forks = "forks".asInstanceOf[forks]
   
   @js.native
   sealed trait large extends StObject
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait stargazers extends StObject
-  @scala.inline
-  def stargazers: stargazers = "stargazers".asInstanceOf[stargazers]
+  inline def stargazers: stargazers = "stargazers".asInstanceOf[stargazers]
   
   @js.native
   sealed trait watchers extends StObject
-  @scala.inline
-  def watchers: watchers = "watchers".asInstanceOf[watchers]
+  inline def watchers: watchers = "watchers".asInstanceOf[watchers]
 }

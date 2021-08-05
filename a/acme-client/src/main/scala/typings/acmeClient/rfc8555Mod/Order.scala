@@ -32,8 +32,7 @@ trait Order extends StObject {
 }
 object Order {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizations: js.Array[String],
     finalize_ : String,
     identifiers: js.Array[Identifier],
@@ -44,55 +43,38 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setAuthorizations(value: js.Array[String]): Self = StObject.set(x, "authorizations", value.asInstanceOf[js.Any])
+    inline def setAuthorizations(value: js.Array[String]): Self = StObject.set(x, "authorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationsVarargs(value: String*): Self = StObject.set(x, "authorizations", js.Array(value :_*))
+    inline def setAuthorizationsVarargs(value: String*): Self = StObject.set(x, "authorizations", js.Array(value :_*))
     
-    @scala.inline
-    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setFinalize_(value: String): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
+    inline def setFinalize_(value: String): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifiers(value: js.Array[Identifier]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
+    inline def setIdentifiers(value: js.Array[Identifier]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setNotAfter(value: String): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: String): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
+    inline def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
-    @scala.inline
-    def setNotBefore(value: String): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: String): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
     
-    @scala.inline
-    def setStatus(value: pending | ready | processing | valid | invalid): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: pending | ready | processing | valid | invalid): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

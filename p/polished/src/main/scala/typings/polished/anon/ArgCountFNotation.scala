@@ -24,31 +24,23 @@ trait ArgCountFNotation extends StObject {
 }
 object ArgCountFNotation {
   
-  @scala.inline
-  def apply(f: Unit): ArgCountFNotation = {
+  inline def apply(f: Unit): ArgCountFNotation = {
     val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "postfix", precedence = 0, rightToLeft = 0, symbol = ")")
     __obj.asInstanceOf[ArgCountFNotation]
   }
   
-  @scala.inline
-  implicit class ArgCountFNotationMutableBuilder[Self <: ArgCountFNotation] (val x: Self) extends AnyVal {
+  extension [Self <: ArgCountFNotation](x: Self) {
     
-    @scala.inline
-    def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
+    inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: Unit): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: Unit): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotation(value: postfix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: postfix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecedence(value: `0`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: `0`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
+    inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

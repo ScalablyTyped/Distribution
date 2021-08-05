@@ -15,11 +15,9 @@ object wallet {
   trait ClientFundsType extends StObject
   object ClientFundsType {
     
-    @scala.inline
-    def CREDIT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT = "CREDIT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT]
+    inline def CREDIT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT = "CREDIT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT]
     
-    @scala.inline
-    def FEES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES = "FEES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES]
+    inline def FEES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES = "FEES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES]
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.Omit<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.wallet.WalletData, 'Owners' | 'Description'> */
@@ -39,8 +37,7 @@ object wallet {
   }
   object ClientWalletData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Balance: MoneyData,
       CreationDate: Double,
       Currency: CurrencyISO,
@@ -52,26 +49,19 @@ object wallet {
       __obj.asInstanceOf[ClientWalletData]
     }
     
-    @scala.inline
-    implicit class ClientWalletDataMutableBuilder[Self <: ClientWalletData] (val x: Self) extends AnyVal {
+    extension [Self <: ClientWalletData](x: Self) {
       
-      @scala.inline
-      def setBalance(value: MoneyData): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: MoneyData): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFundsType(value: ClientFundsType): Self = StObject.set(x, "FundsType", value.asInstanceOf[js.Any])
+      inline def setFundsType(value: ClientFundsType): Self = StObject.set(x, "FundsType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,32 +78,24 @@ object wallet {
   }
   object CreateWallet {
     
-    @scala.inline
-    def apply(Currency: CurrencyISO, Description: js.UndefOr[String] & String, Owners: js.Array[String]): CreateWallet = {
+    inline def apply(Currency: CurrencyISO, Description: js.UndefOr[String] & String, Owners: js.Array[String]): CreateWallet = {
       val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Owners = Owners.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateWallet]
     }
     
-    @scala.inline
-    implicit class CreateWalletMutableBuilder[Self <: CreateWallet] (val x: Self) extends AnyVal {
+    extension [Self <: CreateWallet](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: js.UndefOr[String] & String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: js.UndefOr[String] & String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -125,14 +107,11 @@ object wallet {
   trait FundsType extends StObject
   object FundsType {
     
-    @scala.inline
-    def CREDIT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT = "CREDIT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT]
+    inline def CREDIT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT = "CREDIT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREDIT]
     
-    @scala.inline
-    def DEFAULT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT]
+    inline def DEFAULT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT]
     
-    @scala.inline
-    def FEES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES = "FEES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES]
+    inline def FEES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES = "FEES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FEES]
   }
   
   /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.wallet.WalletData, 'Tag' | 'Description'> */
@@ -144,26 +123,20 @@ object wallet {
   }
   object UpdateWallet {
     
-    @scala.inline
-    def apply(): UpdateWallet = {
+    inline def apply(): UpdateWallet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateWallet]
     }
     
-    @scala.inline
-    implicit class UpdateWalletMutableBuilder[Self <: UpdateWallet] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateWallet](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -198,8 +171,7 @@ object wallet {
   }
   object WalletData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Balance: MoneyData,
       CreationDate: Double,
       Currency: CurrencyISO,
@@ -213,26 +185,19 @@ object wallet {
       __obj.asInstanceOf[WalletData]
     }
     
-    @scala.inline
-    implicit class WalletDataMutableBuilder[Self <: WalletData] (val x: Self) extends AnyVal {
+    extension [Self <: WalletData](x: Self) {
       
-      @scala.inline
-      def setBalance(value: MoneyData): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: MoneyData): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFundsType(value: FundsType): Self = StObject.set(x, "FundsType", value.asInstanceOf[js.Any])
+      inline def setFundsType(value: FundsType): Self = StObject.set(x, "FundsType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
     }
   }
 }

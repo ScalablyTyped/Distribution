@@ -11,8 +11,7 @@ trait FormValidation
      with /* fieldName */ StringDictionary[FieldValidation]
 object FormValidation {
   
-  @scala.inline
-  def apply(__errors: js.Array[FieldError], addError: String => Unit): FormValidation = {
+  inline def apply(__errors: js.Array[FieldError], addError: String => Unit): FormValidation = {
     val __obj = js.Dynamic.literal(__errors = __errors.asInstanceOf[js.Any], addError = js.Any.fromFunction1(addError))
     __obj.asInstanceOf[FormValidation]
   }

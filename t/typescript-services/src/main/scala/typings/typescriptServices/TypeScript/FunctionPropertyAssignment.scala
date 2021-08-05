@@ -16,8 +16,7 @@ trait FunctionPropertyAssignment
 }
 object FunctionPropertyAssignment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,16 +45,12 @@ object FunctionPropertyAssignment {
     __obj.asInstanceOf[FunctionPropertyAssignment]
   }
   
-  @scala.inline
-  implicit class FunctionPropertyAssignmentMutableBuilder[Self <: FunctionPropertyAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionPropertyAssignment](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
+    inline def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: Identifier): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: Identifier): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

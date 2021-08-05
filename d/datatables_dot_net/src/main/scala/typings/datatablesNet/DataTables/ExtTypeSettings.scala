@@ -35,25 +35,19 @@ trait ExtTypeSettings extends StObject {
 }
 object ExtTypeSettings {
   
-  @scala.inline
-  def apply(detect: js.Array[FunctionExtTypeSettingsDetect], order: js.Object, search: js.Object): ExtTypeSettings = {
+  inline def apply(detect: js.Array[FunctionExtTypeSettingsDetect], order: js.Object, search: js.Object): ExtTypeSettings = {
     val __obj = js.Dynamic.literal(detect = detect.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtTypeSettings]
   }
   
-  @scala.inline
-  implicit class ExtTypeSettingsMutableBuilder[Self <: ExtTypeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ExtTypeSettings](x: Self) {
     
-    @scala.inline
-    def setDetect(value: js.Array[FunctionExtTypeSettingsDetect]): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
+    inline def setDetect(value: js.Array[FunctionExtTypeSettingsDetect]): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectVarargs(value: FunctionExtTypeSettingsDetect*): Self = StObject.set(x, "detect", js.Array(value :_*))
+    inline def setDetectVarargs(value: FunctionExtTypeSettingsDetect*): Self = StObject.set(x, "detect", js.Array(value :_*))
     
-    @scala.inline
-    def setOrder(value: js.Object): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Object): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

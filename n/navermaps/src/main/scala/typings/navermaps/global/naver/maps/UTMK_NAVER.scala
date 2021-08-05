@@ -6,47 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object UTMK_NAVER {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   
   @JSGlobal("naver.maps.UTMK_NAVER")
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromCoordToNaver(latlng: typings.navermaps.naver.maps.LatLng): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToNaver")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
+  inline def fromCoordToNaver(latlng: typings.navermaps.naver.maps.LatLng): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToNaver")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @scala.inline
-  def fromLatLngToNaver(latlng: typings.navermaps.naver.maps.LatLng): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLngToNaver")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
+  inline def fromLatLngToNaver(latlng: typings.navermaps.naver.maps.LatLng): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLngToNaver")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @scala.inline
-  def fromNaverToCoord(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToCoord")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.LatLng]
+  inline def fromNaverToCoord(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToCoord")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.LatLng]
   
-  @scala.inline
-  def fromNaverToLatLng(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToLatLng")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.LatLng]
+  inline def fromNaverToLatLng(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToLatLng")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.LatLng]
   
-  @scala.inline
-  def fromNaverToPoint(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToPoint")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
+  inline def fromNaverToPoint(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToPoint")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @scala.inline
-  def fromNaverToUTMK(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToUTMK")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
+  inline def fromNaverToUTMK(naverPoint: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaverToUTMK")(naverPoint.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @scala.inline
-  def fromPointToNaver(point: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPointToNaver")(point.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
+  inline def fromPointToNaver(point: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPointToNaver")(point.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
-  @scala.inline
-  def fromUTMKToNaver(utmk: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUTMKToNaver")(utmk.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
+  inline def fromUTMKToNaver(utmk: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUTMKToNaver")(utmk.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]
   
   // extends UTMK
   @JSGlobal("naver.maps.UTMK_NAVER.name")
   @js.native
   def name: String = js.native
-  @scala.inline
-  def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+  inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   
   @JSGlobal("naver.maps.UTMK_NAVER.pointPerMeter")
   @js.native
   def pointPerMeter: Double = js.native
-  @scala.inline
-  def pointPerMeter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pointPerMeter")(x.asInstanceOf[js.Any])
+  inline def pointPerMeter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pointPerMeter")(x.asInstanceOf[js.Any])
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppRestartBehavior extends StObject
 object Win32LobAppRestartBehavior {
   
-  @scala.inline
-  def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
+  inline def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
   
-  @scala.inline
-  def basedOnReturnCode: typings.microsoftGraph.microsoftGraphStrings.basedOnReturnCode = "basedOnReturnCode".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.basedOnReturnCode]
+  inline def basedOnReturnCode: typings.microsoftGraph.microsoftGraphStrings.basedOnReturnCode = "basedOnReturnCode".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.basedOnReturnCode]
   
-  @scala.inline
-  def force: typings.microsoftGraph.microsoftGraphStrings.force = "force".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.force]
+  inline def force: typings.microsoftGraph.microsoftGraphStrings.force = "force".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.force]
   
-  @scala.inline
-  def suppress: typings.microsoftGraph.microsoftGraphStrings.suppress = "suppress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.suppress]
+  inline def suppress: typings.microsoftGraph.microsoftGraphStrings.suppress = "suppress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.suppress]
 }

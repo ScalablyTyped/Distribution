@@ -12,16 +12,13 @@ trait MlValidate[T]
 }
 object MlValidate {
   
-  @scala.inline
-  def apply[T](body: T): MlValidate[T] = {
+  inline def apply[T](body: T): MlValidate[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlValidate[T]]
   }
   
-  @scala.inline
-  implicit class MlValidateMutableBuilder[Self <: MlValidate[?], T] (val x: Self & MlValidate[T]) extends AnyVal {
+  extension [Self <: MlValidate[?], T](x: Self & MlValidate[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

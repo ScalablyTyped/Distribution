@@ -32,8 +32,7 @@ trait DirectionsViewModelTimeAttribute
 }
 object DirectionsViewModelTimeAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
@@ -43,16 +42,12 @@ object DirectionsViewModelTimeAttribute {
     __obj.asInstanceOf[DirectionsViewModelTimeAttribute]
   }
   
-  @scala.inline
-  implicit class DirectionsViewModelTimeAttributeMutableBuilder[Self <: DirectionsViewModelTimeAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsViewModelTimeAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnits(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

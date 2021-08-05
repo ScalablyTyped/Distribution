@@ -170,8 +170,7 @@ object BinaryConstants {
     /* 31 */ val VHASH64: typings.googleProtobuf.mod.BinaryConstants.FieldType.VHASH64 & Double = js.native
   }
   
-  @scala.inline
-  def FieldTypeToWireType(fieldType: FieldType): WireType = ^.asInstanceOf[js.Dynamic].applyDynamic("FieldTypeToWireType")(fieldType.asInstanceOf[js.Any]).asInstanceOf[WireType]
+  inline def FieldTypeToWireType(fieldType: FieldType): WireType = ^.asInstanceOf[js.Dynamic].applyDynamic("FieldTypeToWireType")(fieldType.asInstanceOf[js.Any]).asInstanceOf[WireType]
   
   @JSImport("google-protobuf", "BinaryConstants.INVALID_FIELD_NUMBER")
   @js.native

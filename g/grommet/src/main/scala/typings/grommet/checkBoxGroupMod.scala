@@ -58,59 +58,42 @@ object checkBoxGroupMod {
   }
   object CheckBoxGroupProps {
     
-    @scala.inline
-    def apply(options: js.Array[CheckBoxType]): CheckBoxGroupProps = {
+    inline def apply(options: js.Array[CheckBoxType]): CheckBoxGroupProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckBoxGroupProps]
     }
     
-    @scala.inline
-    implicit class CheckBoxGroupPropsMutableBuilder[Self <: CheckBoxGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckBoxGroupProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabelKey(value: String): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
+      inline def setLabelKey(value: String): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
+      inline def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* event */ js.UndefOr[OnChangeEvent] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ js.UndefOr[OnChangeEvent] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[CheckBoxType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CheckBoxType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: CheckBoxType*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CheckBoxType*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
+      inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -127,20 +110,16 @@ object checkBoxGroupMod {
   }
   object OnChangeEvent {
     
-    @scala.inline
-    def apply(option: String | CheckBoxProps, value: String): OnChangeEvent = {
+    inline def apply(option: String | CheckBoxProps, value: String): OnChangeEvent = {
       val __obj = js.Dynamic.literal(option = option.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeEvent]
     }
     
-    @scala.inline
-    implicit class OnChangeEventMutableBuilder[Self <: OnChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeEvent](x: Self) {
       
-      @scala.inline
-      def setOption(value: String | CheckBoxProps): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: String | CheckBoxProps): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,23 +23,18 @@ object MapVGL {
   }
   object GeoJSON {
     
-    @scala.inline
-    def apply(geometry: Coordinates): GeoJSON = {
+    inline def apply(geometry: Coordinates): GeoJSON = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoJSON]
     }
     
-    @scala.inline
-    implicit class GeoJSONMutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJSON](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     }
   }
   
@@ -59,8 +54,7 @@ object MapVGL {
   }
   object Layer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getData: () => js.Array[GeoJSON],
       getDefaultOptions: () => LayerOptions,
@@ -72,26 +66,19 @@ object MapVGL {
       __obj.asInstanceOf[Layer]
     }
     
-    @scala.inline
-    implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+    extension [Self <: Layer](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetData(value: () => js.Array[GeoJSON]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => js.Array[GeoJSON]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultOptions(value: () => LayerOptions): Self = StObject.set(x, "getDefaultOptions", js.Any.fromFunction0(value))
+      inline def setGetDefaultOptions(value: () => LayerOptions): Self = StObject.set(x, "getDefaultOptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOptions(value: () => LayerOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+      inline def setGetOptions(value: () => LayerOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetData(value: js.Array[GeoJSON] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: js.Array[GeoJSON] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOptions(value: LayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+      inline def setSetOptions(value: LayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     }
   }
   
@@ -105,29 +92,22 @@ object MapVGL {
   }
   object LayerOptions {
     
-    @scala.inline
-    def apply(): LayerOptions = {
+    inline def apply(): LayerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayerOptions]
     }
     
-    @scala.inline
-    implicit class LayerOptionsMutableBuilder[Self <: LayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LayerOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[GeoJSON]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[GeoJSON]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: GeoJSON*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: GeoJSON*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     }
   }
   
@@ -145,8 +125,7 @@ object MapVGL {
   }
   object View {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addLayer: Layer => Unit,
       destroy: () => Unit,
       getAllLayers: Layer => js.Array[Layer],
@@ -157,23 +136,17 @@ object MapVGL {
       __obj.asInstanceOf[View]
     }
     
-    @scala.inline
-    implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+    extension [Self <: View](x: Self) {
       
-      @scala.inline
-      def setAddLayer(value: Layer => Unit): Self = StObject.set(x, "addLayer", js.Any.fromFunction1(value))
+      inline def setAddLayer(value: Layer => Unit): Self = StObject.set(x, "addLayer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllLayers(value: Layer => js.Array[Layer]): Self = StObject.set(x, "getAllLayers", js.Any.fromFunction1(value))
+      inline def setGetAllLayers(value: Layer => js.Array[Layer]): Self = StObject.set(x, "getAllLayers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAllThreeLayers(value: Layer => js.Array[Layer]): Self = StObject.set(x, "getAllThreeLayers", js.Any.fromFunction1(value))
+      inline def setGetAllThreeLayers(value: Layer => js.Array[Layer]): Self = StObject.set(x, "getAllThreeLayers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveLayer(value: Layer => Unit): Self = StObject.set(x, "removeLayer", js.Any.fromFunction1(value))
+      inline def setRemoveLayer(value: Layer => Unit): Self = StObject.set(x, "removeLayer", js.Any.fromFunction1(value))
     }
   }
   
@@ -187,35 +160,26 @@ object MapVGL {
   }
   object ViewOptions {
     
-    @scala.inline
-    def apply(): ViewOptions = {
+    inline def apply(): ViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewOptions]
     }
     
-    @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewOptions](x: Self) {
       
-      @scala.inline
-      def setEffects(value: js.Array[Effects]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      inline def setEffects(value: js.Array[Effects]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+      inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
       
-      @scala.inline
-      def setEffectsVarargs(value: Effects*): Self = StObject.set(x, "effects", js.Array(value :_*))
+      inline def setEffectsVarargs(value: Effects*): Self = StObject.set(x, "effects", js.Array(value :_*))
       
-      @scala.inline
-      def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapType(value: bmap | blank | cesium): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
+      inline def setMapType(value: bmap | blank | cesium): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
+      inline def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }
   }
 }

@@ -13,14 +13,12 @@ object purgeQueueExceptionsUnionMod {
   trait PurgeQueueExceptionsUnion extends StObject
   object PurgeQueueExceptionsUnion {
     
-    @scala.inline
-    def PurgeQueueInProgress(): typings.awsSdkClientSqsNode.typesPurgeQueueInProgressMod.PurgeQueueInProgress = {
+    inline def PurgeQueueInProgress(): typings.awsSdkClientSqsNode.typesPurgeQueueInProgressMod.PurgeQueueInProgress = {
       val __obj = js.Dynamic.literal(name = "PurgeQueueInProgress")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesPurgeQueueInProgressMod.PurgeQueueInProgress]
     }
     
-    @scala.inline
-    def QueueDoesNotExist(): typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist = {
+    inline def QueueDoesNotExist(): typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist = {
       val __obj = js.Dynamic.literal(name = "QueueDoesNotExist")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist]
     }

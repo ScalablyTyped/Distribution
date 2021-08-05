@@ -115,7 +115,7 @@ class PanelModelBase ()
   
   /* protected */ def createRow(): QuestionRowModel = js.native
   
-  val css: js.Any = js.native
+  /* protected */ val css: js.Any = js.native
   
   val cssClasses: js.Any = js.native
   
@@ -351,7 +351,7 @@ class PanelModelBase ()
     */
   val requiredText: String = js.native
   
-  val root: PanelModelBase = js.native
+  /* protected */ val root: PanelModelBase = js.native
   
   val rows: js.Array[QuestionRowModel] = js.native
   
@@ -364,7 +364,7 @@ class PanelModelBase ()
     */
   var title: String = js.native
   
-  val titlePattern: String = js.native
+  /* protected */ val titlePattern: String = js.native
   
   def updateElementVisibility(): Unit = js.native
   

@@ -16,40 +16,29 @@ trait MessageRejectOptions extends StObject {
 }
 object MessageRejectOptions {
   
-  @scala.inline
-  def apply(reason_phrase: String): MessageRejectOptions = {
+  inline def apply(reason_phrase: String): MessageRejectOptions = {
     val __obj = js.Dynamic.literal(reason_phrase = reason_phrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRejectOptions]
   }
   
-  @scala.inline
-  implicit class MessageRejectOptionsMutableBuilder[Self <: MessageRejectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageRejectOptions](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setReason_phrase(value: String): Self = StObject.set(x, "reason_phrase", value.asInstanceOf[js.Any])
+    inline def setReason_phrase(value: String): Self = StObject.set(x, "reason_phrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus_code(value: js.Array[Double]): Self = StObject.set(x, "status_code", value.asInstanceOf[js.Any])
+    inline def setStatus_code(value: js.Array[Double]): Self = StObject.set(x, "status_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus_codeUndefined: Self = StObject.set(x, "status_code", js.undefined)
+    inline def setStatus_codeUndefined: Self = StObject.set(x, "status_code", js.undefined)
     
-    @scala.inline
-    def setStatus_codeVarargs(value: Double*): Self = StObject.set(x, "status_code", js.Array(value :_*))
+    inline def setStatus_codeVarargs(value: Double*): Self = StObject.set(x, "status_code", js.Array(value :_*))
   }
 }

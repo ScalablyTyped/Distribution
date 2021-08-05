@@ -19,17 +19,14 @@ object CordovaPluginDeviceName {
   }
   object CordovaPluginDeviceName {
     
-    @scala.inline
-    def apply(name: String): typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName = {
+    inline def apply(name: String): typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName]
     }
     
-    @scala.inline
-    implicit class CordovaPluginDeviceNameMutableBuilder[Self <: typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName] (val x: Self) extends AnyVal {
+    extension [Self <: typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

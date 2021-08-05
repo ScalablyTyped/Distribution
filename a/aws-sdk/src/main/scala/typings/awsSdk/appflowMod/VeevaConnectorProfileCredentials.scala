@@ -18,19 +18,15 @@ trait VeevaConnectorProfileCredentials extends StObject {
 }
 object VeevaConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(password: Password, username: Username): VeevaConnectorProfileCredentials = {
+  inline def apply(password: Password, username: Username): VeevaConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[VeevaConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class VeevaConnectorProfileCredentialsMutableBuilder[Self <: VeevaConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: VeevaConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

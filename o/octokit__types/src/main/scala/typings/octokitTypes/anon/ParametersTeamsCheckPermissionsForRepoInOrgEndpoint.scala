@@ -18,8 +18,7 @@ trait ParametersTeamsCheckPermissionsForRepoInOrgEndpoint extends StObject {
 }
 object ParametersTeamsCheckPermissionsForRepoInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: TeamsCheckPermissionsForRepoInOrgEndpoint,
     request: TeamsCheckPermissionsForRepoInOrgRequestOptions,
     response: OctokitResponse[TeamsCheckPermissionsForRepoInOrgResponseData]
@@ -28,16 +27,12 @@ object ParametersTeamsCheckPermissionsForRepoInOrgEndpoint {
     __obj.asInstanceOf[ParametersTeamsCheckPermissionsForRepoInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersTeamsCheckPermissionsForRepoInOrgEndpointMutableBuilder[Self <: ParametersTeamsCheckPermissionsForRepoInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersTeamsCheckPermissionsForRepoInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: TeamsCheckPermissionsForRepoInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TeamsCheckPermissionsForRepoInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: TeamsCheckPermissionsForRepoInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: TeamsCheckPermissionsForRepoInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsCheckPermissionsForRepoInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[TeamsCheckPermissionsForRepoInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

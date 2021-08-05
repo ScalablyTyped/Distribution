@@ -19,25 +19,19 @@ trait TableResponse
 }
 object TableResponse {
   
-  @scala.inline
-  def apply(code: Double, count: Double, data: js.Any, msg: String): TableResponse = {
+  inline def apply(code: Double, count: Double, data: js.Any, msg: String): TableResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableResponse]
   }
   
-  @scala.inline
-  implicit class TableResponseMutableBuilder[Self <: TableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TableResponse](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

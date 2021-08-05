@@ -20,25 +20,19 @@ trait PlotRsiParamsOptions extends StObject {
 }
 object PlotRsiParamsOptions {
   
-  @scala.inline
-  def apply(): PlotRsiParamsOptions = {
+  inline def apply(): PlotRsiParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotRsiParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotRsiParamsOptionsMutableBuilder[Self <: PlotRsiParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotRsiParamsOptions](x: Self) {
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

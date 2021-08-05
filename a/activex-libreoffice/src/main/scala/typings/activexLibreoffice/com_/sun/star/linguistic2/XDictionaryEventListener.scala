@@ -27,8 +27,7 @@ trait XDictionaryEventListener
 }
 object XDictionaryEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     processDictionaryEvent: DictionaryEvent => Unit,
@@ -39,10 +38,8 @@ object XDictionaryEventListener {
     __obj.asInstanceOf[XDictionaryEventListener]
   }
   
-  @scala.inline
-  implicit class XDictionaryEventListenerMutableBuilder[Self <: XDictionaryEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDictionaryEventListener](x: Self) {
     
-    @scala.inline
-    def setProcessDictionaryEvent(value: DictionaryEvent => Unit): Self = StObject.set(x, "processDictionaryEvent", js.Any.fromFunction1(value))
+    inline def setProcessDictionaryEvent(value: DictionaryEvent => Unit): Self = StObject.set(x, "processDictionaryEvent", js.Any.fromFunction1(value))
   }
 }

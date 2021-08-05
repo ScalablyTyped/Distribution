@@ -24,8 +24,7 @@ trait XServiceDocumenter extends StObject {
 }
 object XServiceDocumenter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CoreBaseUrl: String,
     ServiceBaseUrl: String,
     showCoreDocs: XServiceInfo => Unit,
@@ -36,22 +35,16 @@ object XServiceDocumenter {
     __obj.asInstanceOf[XServiceDocumenter]
   }
   
-  @scala.inline
-  implicit class XServiceDocumenterMutableBuilder[Self <: XServiceDocumenter] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceDocumenter](x: Self) {
     
-    @scala.inline
-    def setCoreBaseUrl(value: String): Self = StObject.set(x, "CoreBaseUrl", value.asInstanceOf[js.Any])
+    inline def setCoreBaseUrl(value: String): Self = StObject.set(x, "CoreBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceBaseUrl(value: String): Self = StObject.set(x, "ServiceBaseUrl", value.asInstanceOf[js.Any])
+    inline def setServiceBaseUrl(value: String): Self = StObject.set(x, "ServiceBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCoreDocs(value: XServiceInfo => Unit): Self = StObject.set(x, "showCoreDocs", js.Any.fromFunction1(value))
+    inline def setShowCoreDocs(value: XServiceInfo => Unit): Self = StObject.set(x, "showCoreDocs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowInterfaceDocs(value: XTypeProvider => Unit): Self = StObject.set(x, "showInterfaceDocs", js.Any.fromFunction1(value))
+    inline def setShowInterfaceDocs(value: XTypeProvider => Unit): Self = StObject.set(x, "showInterfaceDocs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowServiceDocs(value: XServiceInfo => Unit): Self = StObject.set(x, "showServiceDocs", js.Any.fromFunction1(value))
+    inline def setShowServiceDocs(value: XServiceInfo => Unit): Self = StObject.set(x, "showServiceDocs", js.Any.fromFunction1(value))
   }
 }

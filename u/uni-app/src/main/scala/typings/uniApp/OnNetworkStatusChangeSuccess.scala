@@ -18,25 +18,19 @@ trait OnNetworkStatusChangeSuccess extends StObject {
 }
 object OnNetworkStatusChangeSuccess {
   
-  @scala.inline
-  def apply(): OnNetworkStatusChangeSuccess = {
+  inline def apply(): OnNetworkStatusChangeSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnNetworkStatusChangeSuccess]
   }
   
-  @scala.inline
-  implicit class OnNetworkStatusChangeSuccessMutableBuilder[Self <: OnNetworkStatusChangeSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: OnNetworkStatusChangeSuccess](x: Self) {
     
-    @scala.inline
-    def setIsConnected(value: Double): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Double): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConnectedUndefined: Self = StObject.set(x, "isConnected", js.undefined)
+    inline def setIsConnectedUndefined: Self = StObject.set(x, "isConnected", js.undefined)
     
-    @scala.inline
-    def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTypeUndefined: Self = StObject.set(x, "networkType", js.undefined)
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "networkType", js.undefined)
   }
 }

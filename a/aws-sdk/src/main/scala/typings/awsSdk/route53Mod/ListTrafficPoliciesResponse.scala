@@ -28,8 +28,7 @@ trait ListTrafficPoliciesResponse extends StObject {
 }
 object ListTrafficPoliciesResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsTruncated: PageTruncated,
     MaxItems: PageMaxItems,
     TrafficPolicyIdMarker: TrafficPolicyId,
@@ -39,22 +38,16 @@ object ListTrafficPoliciesResponse {
     __obj.asInstanceOf[ListTrafficPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ListTrafficPoliciesResponseMutableBuilder[Self <: ListTrafficPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTrafficPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyIdMarker(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyIdMarker", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyIdMarker(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyIdMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicySummaries(value: TrafficPolicySummaries): Self = StObject.set(x, "TrafficPolicySummaries", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicySummaries(value: TrafficPolicySummaries): Self = StObject.set(x, "TrafficPolicySummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicySummariesVarargs(value: TrafficPolicySummary*): Self = StObject.set(x, "TrafficPolicySummaries", js.Array(value :_*))
+    inline def setTrafficPolicySummariesVarargs(value: TrafficPolicySummary*): Self = StObject.set(x, "TrafficPolicySummaries", js.Array(value :_*))
   }
 }

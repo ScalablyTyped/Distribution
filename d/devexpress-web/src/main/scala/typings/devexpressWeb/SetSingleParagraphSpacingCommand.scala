@@ -18,16 +18,13 @@ trait SetSingleParagraphSpacingCommand
 }
 object SetSingleParagraphSpacingCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): SetSingleParagraphSpacingCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): SetSingleParagraphSpacingCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[SetSingleParagraphSpacingCommand]
   }
   
-  @scala.inline
-  implicit class SetSingleParagraphSpacingCommandMutableBuilder[Self <: SetSingleParagraphSpacingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SetSingleParagraphSpacingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

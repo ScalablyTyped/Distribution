@@ -14,22 +14,17 @@ trait SFCScriptCompileOptions extends StObject {
 }
 object SFCScriptCompileOptions {
   
-  @scala.inline
-  def apply(): SFCScriptCompileOptions = {
+  inline def apply(): SFCScriptCompileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SFCScriptCompileOptions]
   }
   
-  @scala.inline
-  implicit class SFCScriptCompileOptionsMutableBuilder[Self <: SFCScriptCompileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SFCScriptCompileOptions](x: Self) {
     
-    @scala.inline
-    def setBabelParserPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "babelParserPlugins", value.asInstanceOf[js.Any])
+    inline def setBabelParserPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "babelParserPlugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBabelParserPluginsUndefined: Self = StObject.set(x, "babelParserPlugins", js.undefined)
+    inline def setBabelParserPluginsUndefined: Self = StObject.set(x, "babelParserPlugins", js.undefined)
     
-    @scala.inline
-    def setBabelParserPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "babelParserPlugins", js.Array(value :_*))
+    inline def setBabelParserPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "babelParserPlugins", js.Array(value :_*))
   }
 }

@@ -22,34 +22,25 @@ trait NavigateToMiniProgramOptions
 }
 object NavigateToMiniProgramOptions {
   
-  @scala.inline
-  def apply(appId: String): NavigateToMiniProgramOptions = {
+  inline def apply(appId: String): NavigateToMiniProgramOptions = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateToMiniProgramOptions]
   }
   
-  @scala.inline
-  implicit class NavigateToMiniProgramOptionsMutableBuilder[Self <: NavigateToMiniProgramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateToMiniProgramOptions](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvVersion(value: envVersion): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
+    inline def setEnvVersion(value: envVersion): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
+    inline def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
     
-    @scala.inline
-    def setExtraData(value: js.Object): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: js.Object): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+    inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

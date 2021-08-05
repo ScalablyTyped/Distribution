@@ -18,28 +18,21 @@ trait DescribeGameSessionDetailsOutput extends StObject {
 }
 object DescribeGameSessionDetailsOutput {
   
-  @scala.inline
-  def apply(): DescribeGameSessionDetailsOutput = {
+  inline def apply(): DescribeGameSessionDetailsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGameSessionDetailsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeGameSessionDetailsOutputMutableBuilder[Self <: DescribeGameSessionDetailsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGameSessionDetailsOutput](x: Self) {
     
-    @scala.inline
-    def setGameSessionDetails(value: GameSessionDetailList): Self = StObject.set(x, "GameSessionDetails", value.asInstanceOf[js.Any])
+    inline def setGameSessionDetails(value: GameSessionDetailList): Self = StObject.set(x, "GameSessionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionDetailsUndefined: Self = StObject.set(x, "GameSessionDetails", js.undefined)
+    inline def setGameSessionDetailsUndefined: Self = StObject.set(x, "GameSessionDetails", js.undefined)
     
-    @scala.inline
-    def setGameSessionDetailsVarargs(value: GameSessionDetail*): Self = StObject.set(x, "GameSessionDetails", js.Array(value :_*))
+    inline def setGameSessionDetailsVarargs(value: GameSessionDetail*): Self = StObject.set(x, "GameSessionDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

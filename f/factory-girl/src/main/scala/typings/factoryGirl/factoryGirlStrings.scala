@@ -8,6 +8,5 @@ object factoryGirlStrings {
   
   @js.native
   sealed trait Attributes extends StObject
-  @scala.inline
-  def Attributes: Attributes = "Attributes".asInstanceOf[Attributes]
+  inline def Attributes: Attributes = "Attributes".asInstanceOf[Attributes]
 }

@@ -13,19 +13,15 @@ trait BatchUpdatePhoneNumberRequest extends StObject {
 }
 object BatchUpdatePhoneNumberRequest {
   
-  @scala.inline
-  def apply(UpdatePhoneNumberRequestItems: UpdatePhoneNumberRequestItemList): BatchUpdatePhoneNumberRequest = {
+  inline def apply(UpdatePhoneNumberRequestItems: UpdatePhoneNumberRequestItemList): BatchUpdatePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(UpdatePhoneNumberRequestItems = UpdatePhoneNumberRequestItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdatePhoneNumberRequest]
   }
   
-  @scala.inline
-  implicit class BatchUpdatePhoneNumberRequestMutableBuilder[Self <: BatchUpdatePhoneNumberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdatePhoneNumberRequest](x: Self) {
     
-    @scala.inline
-    def setUpdatePhoneNumberRequestItems(value: UpdatePhoneNumberRequestItemList): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", value.asInstanceOf[js.Any])
+    inline def setUpdatePhoneNumberRequestItems(value: UpdatePhoneNumberRequestItemList): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatePhoneNumberRequestItemsVarargs(value: UpdatePhoneNumberRequestItem*): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", js.Array(value :_*))
+    inline def setUpdatePhoneNumberRequestItemsVarargs(value: UpdatePhoneNumberRequestItem*): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", js.Array(value :_*))
   }
 }

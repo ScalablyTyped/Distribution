@@ -19,34 +19,25 @@ trait ChangeNotificationCollection extends StObject {
 }
 object ChangeNotificationCollection {
   
-  @scala.inline
-  def apply(): ChangeNotificationCollection = {
+  inline def apply(): ChangeNotificationCollection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangeNotificationCollection]
   }
   
-  @scala.inline
-  implicit class ChangeNotificationCollectionMutableBuilder[Self <: ChangeNotificationCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeNotificationCollection](x: Self) {
     
-    @scala.inline
-    def setValidationTokens(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "validationTokens", value.asInstanceOf[js.Any])
+    inline def setValidationTokens(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "validationTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationTokensNull: Self = StObject.set(x, "validationTokens", null)
+    inline def setValidationTokensNull: Self = StObject.set(x, "validationTokens", null)
     
-    @scala.inline
-    def setValidationTokensUndefined: Self = StObject.set(x, "validationTokens", js.undefined)
+    inline def setValidationTokensUndefined: Self = StObject.set(x, "validationTokens", js.undefined)
     
-    @scala.inline
-    def setValidationTokensVarargs(value: String*): Self = StObject.set(x, "validationTokens", js.Array(value :_*))
+    inline def setValidationTokensVarargs(value: String*): Self = StObject.set(x, "validationTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: js.Array[ChangeNotification]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[ChangeNotification]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: ChangeNotification*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: ChangeNotification*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

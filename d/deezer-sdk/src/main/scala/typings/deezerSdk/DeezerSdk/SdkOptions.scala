@@ -21,19 +21,15 @@ trait SdkOptions extends StObject {
 }
 object SdkOptions {
   
-  @scala.inline
-  def apply(player: PlayerState, token: Accesstoken): SdkOptions = {
+  inline def apply(player: PlayerState, token: Accesstoken): SdkOptions = {
     val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[SdkOptions]
   }
   
-  @scala.inline
-  implicit class SdkOptionsMutableBuilder[Self <: SdkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SdkOptions](x: Self) {
     
-    @scala.inline
-    def setPlayer(value: PlayerState): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: PlayerState): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: Accesstoken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Accesstoken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

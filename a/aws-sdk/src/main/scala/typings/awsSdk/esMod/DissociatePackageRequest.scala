@@ -18,19 +18,15 @@ trait DissociatePackageRequest extends StObject {
 }
 object DissociatePackageRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, PackageID: PackageID): DissociatePackageRequest = {
+  inline def apply(DomainName: DomainName, PackageID: PackageID): DissociatePackageRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], PackageID = PackageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DissociatePackageRequest]
   }
   
-  @scala.inline
-  implicit class DissociatePackageRequestMutableBuilder[Self <: DissociatePackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DissociatePackageRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
+    inline def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
   }
 }

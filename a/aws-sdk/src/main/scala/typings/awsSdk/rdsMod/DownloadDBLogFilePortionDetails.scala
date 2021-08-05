@@ -23,31 +23,23 @@ trait DownloadDBLogFilePortionDetails extends StObject {
 }
 object DownloadDBLogFilePortionDetails {
   
-  @scala.inline
-  def apply(): DownloadDBLogFilePortionDetails = {
+  inline def apply(): DownloadDBLogFilePortionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadDBLogFilePortionDetails]
   }
   
-  @scala.inline
-  implicit class DownloadDBLogFilePortionDetailsMutableBuilder[Self <: DownloadDBLogFilePortionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadDBLogFilePortionDetails](x: Self) {
     
-    @scala.inline
-    def setAdditionalDataPending(value: Boolean): Self = StObject.set(x, "AdditionalDataPending", value.asInstanceOf[js.Any])
+    inline def setAdditionalDataPending(value: Boolean): Self = StObject.set(x, "AdditionalDataPending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDataPendingUndefined: Self = StObject.set(x, "AdditionalDataPending", js.undefined)
+    inline def setAdditionalDataPendingUndefined: Self = StObject.set(x, "AdditionalDataPending", js.undefined)
     
-    @scala.inline
-    def setLogFileData(value: String): Self = StObject.set(x, "LogFileData", value.asInstanceOf[js.Any])
+    inline def setLogFileData(value: String): Self = StObject.set(x, "LogFileData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFileDataUndefined: Self = StObject.set(x, "LogFileData", js.undefined)
+    inline def setLogFileDataUndefined: Self = StObject.set(x, "LogFileData", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

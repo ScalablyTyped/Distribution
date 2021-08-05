@@ -41,8 +41,7 @@ trait BootstrapClientAccordionGroup
 }
 object BootstrapClientAccordionGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetEnabled: () => Boolean,
     GetExpanded: () => Boolean,
     GetHeaderBadgeIconCssClass: () => String,
@@ -65,22 +64,16 @@ object BootstrapClientAccordionGroup {
     __obj.asInstanceOf[BootstrapClientAccordionGroup]
   }
   
-  @scala.inline
-  implicit class BootstrapClientAccordionGroupMutableBuilder[Self <: BootstrapClientAccordionGroup] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientAccordionGroup](x: Self) {
     
-    @scala.inline
-    def setGetHeaderBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetHeaderBadgeIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetHeaderBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetHeaderBadgeIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeaderBadgeText(value: () => String): Self = StObject.set(x, "GetHeaderBadgeText", js.Any.fromFunction0(value))
+    inline def setGetHeaderBadgeText(value: () => String): Self = StObject.set(x, "GetHeaderBadgeText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNavBar(value: BootstrapClientAccordion): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
+    inline def setNavBar(value: BootstrapClientAccordion): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetHeaderBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetHeaderBadgeIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetHeaderBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetHeaderBadgeIconCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeaderBadgeText(value: String => Unit): Self = StObject.set(x, "SetHeaderBadgeText", js.Any.fromFunction1(value))
+    inline def setSetHeaderBadgeText(value: String => Unit): Self = StObject.set(x, "SetHeaderBadgeText", js.Any.fromFunction1(value))
   }
 }

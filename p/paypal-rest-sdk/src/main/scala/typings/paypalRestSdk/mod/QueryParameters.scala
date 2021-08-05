@@ -40,112 +40,77 @@ trait QueryParameters extends StObject {
 }
 object QueryParameters {
   
-  @scala.inline
-  def apply(): QueryParameters = {
+  inline def apply(): QueryParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryParameters]
   }
   
-  @scala.inline
-  implicit class QueryParametersMutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
+  extension [Self <: QueryParameters](x: Self) {
     
-    @scala.inline
-    def setAnchor_type(value: String): Self = StObject.set(x, "anchor_type", value.asInstanceOf[js.Any])
+    inline def setAnchor_type(value: String): Self = StObject.set(x, "anchor_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchor_typeUndefined: Self = StObject.set(x, "anchor_type", js.undefined)
+    inline def setAnchor_typeUndefined: Self = StObject.set(x, "anchor_type", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
+    inline def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
+    inline def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
-    @scala.inline
-    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
+    inline def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
+    inline def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+    inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+    inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
     
-    @scala.inline
-    def setPayee_id(value: String): Self = StObject.set(x, "payee_id", value.asInstanceOf[js.Any])
+    inline def setPayee_id(value: String): Self = StObject.set(x, "payee_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayee_idUndefined: Self = StObject.set(x, "payee_id", js.undefined)
+    inline def setPayee_idUndefined: Self = StObject.set(x, "payee_id", js.undefined)
     
-    @scala.inline
-    def setSort_by(value: String): Self = StObject.set(x, "sort_by", value.asInstanceOf[js.Any])
+    inline def setSort_by(value: String): Self = StObject.set(x, "sort_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort_byUndefined: Self = StObject.set(x, "sort_by", js.undefined)
+    inline def setSort_byUndefined: Self = StObject.set(x, "sort_by", js.undefined)
     
-    @scala.inline
-    def setSort_order(value: String): Self = StObject.set(x, "sort_order", value.asInstanceOf[js.Any])
+    inline def setSort_order(value: String): Self = StObject.set(x, "sort_order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort_orderUndefined: Self = StObject.set(x, "sort_order", js.undefined)
+    inline def setSort_orderUndefined: Self = StObject.set(x, "sort_order", js.undefined)
     
-    @scala.inline
-    def setStart_id(value: String): Self = StObject.set(x, "start_id", value.asInstanceOf[js.Any])
+    inline def setStart_id(value: String): Self = StObject.set(x, "start_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_idUndefined: Self = StObject.set(x, "start_id", js.undefined)
+    inline def setStart_idUndefined: Self = StObject.set(x, "start_id", js.undefined)
     
-    @scala.inline
-    def setStart_index(value: Double): Self = StObject.set(x, "start_index", value.asInstanceOf[js.Any])
+    inline def setStart_index(value: Double): Self = StObject.set(x, "start_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_indexUndefined: Self = StObject.set(x, "start_index", js.undefined)
+    inline def setStart_indexUndefined: Self = StObject.set(x, "start_index", js.undefined)
     
-    @scala.inline
-    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
+    inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     
-    @scala.inline
-    def setStatus(value: js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count_required(value: Boolean): Self = StObject.set(x, "total_count_required", value.asInstanceOf[js.Any])
+    inline def setTotal_count_required(value: Boolean): Self = StObject.set(x, "total_count_required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_count_requiredUndefined: Self = StObject.set(x, "total_count_required", js.undefined)
+    inline def setTotal_count_requiredUndefined: Self = StObject.set(x, "total_count_required", js.undefined)
     
-    @scala.inline
-    def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
+    inline def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
+    inline def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
     
-    @scala.inline
-    def setWebhook_id(value: String): Self = StObject.set(x, "webhook_id", value.asInstanceOf[js.Any])
+    inline def setWebhook_id(value: String): Self = StObject.set(x, "webhook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhook_idUndefined: Self = StObject.set(x, "webhook_id", js.undefined)
+    inline def setWebhook_idUndefined: Self = StObject.set(x, "webhook_id", js.undefined)
   }
 }

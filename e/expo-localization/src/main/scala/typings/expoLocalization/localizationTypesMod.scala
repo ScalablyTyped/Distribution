@@ -51,44 +51,32 @@ object localizationTypesMod {
   }
   object Localization {
     
-    @scala.inline
-    def apply(isRTL: Boolean, locale: String, locales: js.Array[String], timezone: String): Localization = {
+    inline def apply(isRTL: Boolean, locale: String, locales: js.Array[String], timezone: String): Localization = {
       val __obj = js.Dynamic.literal(isRTL = isRTL.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], region = null)
       __obj.asInstanceOf[Localization]
     }
     
-    @scala.inline
-    implicit class LocalizationMutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
+    extension [Self <: Localization](x: Self) {
       
-      @scala.inline
-      def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+      inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoCurrencyCodes(value: js.Array[String]): Self = StObject.set(x, "isoCurrencyCodes", value.asInstanceOf[js.Any])
+      inline def setIsoCurrencyCodes(value: js.Array[String]): Self = StObject.set(x, "isoCurrencyCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoCurrencyCodesUndefined: Self = StObject.set(x, "isoCurrencyCodes", js.undefined)
+      inline def setIsoCurrencyCodesUndefined: Self = StObject.set(x, "isoCurrencyCodes", js.undefined)
       
-      @scala.inline
-      def setIsoCurrencyCodesVarargs(value: String*): Self = StObject.set(x, "isoCurrencyCodes", js.Array(value :_*))
+      inline def setIsoCurrencyCodesVarargs(value: String*): Self = StObject.set(x, "isoCurrencyCodes", js.Array(value :_*))
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNull: Self = StObject.set(x, "region", null)
+      inline def setRegionNull: Self = StObject.set(x, "region", null)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
 }

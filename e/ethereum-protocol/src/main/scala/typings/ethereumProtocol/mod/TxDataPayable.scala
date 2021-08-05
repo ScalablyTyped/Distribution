@@ -14,19 +14,15 @@ trait TxDataPayable
 }
 object TxDataPayable {
   
-  @scala.inline
-  def apply(from: String): TxDataPayable = {
+  inline def apply(from: String): TxDataPayable = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxDataPayable]
   }
   
-  @scala.inline
-  implicit class TxDataPayableMutableBuilder[Self <: TxDataPayable] (val x: Self) extends AnyVal {
+  extension [Self <: TxDataPayable](x: Self) {
     
-    @scala.inline
-    def setValue(value: default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

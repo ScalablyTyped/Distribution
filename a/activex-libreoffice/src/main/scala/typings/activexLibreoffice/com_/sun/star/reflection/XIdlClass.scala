@@ -190,8 +190,7 @@ trait XIdlClass[T]
 }
 object XIdlClass {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     Array: XIdlArray,
     Classes: SafeArray[XIdlClass[js.Any]],
     ComponentType: XIdlClass[js.Any],
@@ -228,85 +227,58 @@ object XIdlClass {
     __obj.asInstanceOf[XIdlClass[T]]
   }
   
-  @scala.inline
-  implicit class XIdlClassMutableBuilder[Self <: XIdlClass[?], T] (val x: Self & XIdlClass[T]) extends AnyVal {
+  extension [Self <: XIdlClass[?], T](x: Self & XIdlClass[T]) {
     
-    @scala.inline
-    def setArray(value: XIdlArray): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
+    inline def setArray(value: XIdlArray): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentType(value: XIdlClass[js.Any]): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
+    inline def setComponentType(value: XIdlClass[js.Any]): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateObject(value: js.Array[T] => Unit): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
+    inline def setCreateObject(value: js.Array[T] => Unit): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquals_(value: XIdlClass[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: XIdlClass[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFields(value: SafeArray[XIdlField]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: SafeArray[XIdlField]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetArray(value: () => XIdlArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+    inline def setGetArray(value: () => XIdlArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClass_(value: String => XIdlClass[js.Any]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
+    inline def setGetClass_(value: String => XIdlClass[js.Any]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction0(value))
+    inline def setGetClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetComponentType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getComponentType", js.Any.fromFunction0(value))
+    inline def setGetComponentType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getComponentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetField(value: String => XIdlField): Self = StObject.set(x, "getField", js.Any.fromFunction1(value))
+    inline def setGetField(value: String => XIdlField): Self = StObject.set(x, "getField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFields(value: () => SafeArray[XIdlField]): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+    inline def setGetFields(value: () => SafeArray[XIdlField]): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInterfaces(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getInterfaces", js.Any.fromFunction0(value))
+    inline def setGetInterfaces(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getInterfaces", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMethod(value: String => XIdlMethod): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
+    inline def setGetMethod(value: String => XIdlMethod): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMethods(value: () => SafeArray[XIdlMethod]): Self = StObject.set(x, "getMethods", js.Any.fromFunction0(value))
+    inline def setGetMethods(value: () => SafeArray[XIdlMethod]): Self = StObject.set(x, "getMethods", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSuperclasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getSuperclasses", js.Any.fromFunction0(value))
+    inline def setGetSuperclasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getSuperclasses", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypeClass(value: () => TypeClass): Self = StObject.set(x, "getTypeClass", js.Any.fromFunction0(value))
+    inline def setGetTypeClass(value: () => TypeClass): Self = StObject.set(x, "getTypeClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUik(value: () => Uik): Self = StObject.set(x, "getUik", js.Any.fromFunction0(value))
+    inline def setGetUik(value: () => Uik): Self = StObject.set(x, "getUik", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInterfaces(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Interfaces", value.asInstanceOf[js.Any])
+    inline def setInterfaces(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Interfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAssignableFrom(value: XIdlClass[js.Any] => Boolean): Self = StObject.set(x, "isAssignableFrom", js.Any.fromFunction1(value))
+    inline def setIsAssignableFrom(value: XIdlClass[js.Any] => Boolean): Self = StObject.set(x, "isAssignableFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMethods(value: SafeArray[XIdlMethod]): Self = StObject.set(x, "Methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: SafeArray[XIdlMethod]): Self = StObject.set(x, "Methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperclasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Superclasses", value.asInstanceOf[js.Any])
+    inline def setSuperclasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Superclasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeClass(value: TypeClass): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])
+    inline def setTypeClass(value: TypeClass): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUik(value: Uik): Self = StObject.set(x, "Uik", value.asInstanceOf[js.Any])
+    inline def setUik(value: Uik): Self = StObject.set(x, "Uik", value.asInstanceOf[js.Any])
   }
 }

@@ -32,8 +32,7 @@ trait XChartTypeContainer
 }
 object XChartTypeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChartTypes: SafeArray[XChartType],
     acquire: () => Unit,
     addChartType: XChartType => Unit,
@@ -47,22 +46,16 @@ object XChartTypeContainer {
     __obj.asInstanceOf[XChartTypeContainer]
   }
   
-  @scala.inline
-  implicit class XChartTypeContainerMutableBuilder[Self <: XChartTypeContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XChartTypeContainer](x: Self) {
     
-    @scala.inline
-    def setAddChartType(value: XChartType => Unit): Self = StObject.set(x, "addChartType", js.Any.fromFunction1(value))
+    inline def setAddChartType(value: XChartType => Unit): Self = StObject.set(x, "addChartType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChartTypes(value: SafeArray[XChartType]): Self = StObject.set(x, "ChartTypes", value.asInstanceOf[js.Any])
+    inline def setChartTypes(value: SafeArray[XChartType]): Self = StObject.set(x, "ChartTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChartTypes(value: () => SafeArray[XChartType]): Self = StObject.set(x, "getChartTypes", js.Any.fromFunction0(value))
+    inline def setGetChartTypes(value: () => SafeArray[XChartType]): Self = StObject.set(x, "getChartTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveChartType(value: XChartType => Unit): Self = StObject.set(x, "removeChartType", js.Any.fromFunction1(value))
+    inline def setRemoveChartType(value: XChartType => Unit): Self = StObject.set(x, "removeChartType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetChartTypes(value: SeqEquiv[XChartType] => Unit): Self = StObject.set(x, "setChartTypes", js.Any.fromFunction1(value))
+    inline def setSetChartTypes(value: SeqEquiv[XChartType] => Unit): Self = StObject.set(x, "setChartTypes", js.Any.fromFunction1(value))
   }
 }

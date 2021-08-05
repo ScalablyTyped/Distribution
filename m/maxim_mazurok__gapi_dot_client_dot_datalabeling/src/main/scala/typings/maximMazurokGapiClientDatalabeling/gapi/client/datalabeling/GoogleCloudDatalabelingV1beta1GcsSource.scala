@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1GcsSource extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1GcsSource {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1GcsSource = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1GcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1GcsSource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1GcsSourceMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1GcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1GcsSource](x: Self) {
     
-    @scala.inline
-    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
+    inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
+    inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

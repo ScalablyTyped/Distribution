@@ -12,25 +12,19 @@ trait CanPreventDefault extends StObject {
 }
 object CanPreventDefault {
   
-  @scala.inline
-  def apply(): CanPreventDefault = {
+  inline def apply(): CanPreventDefault = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanPreventDefault]
   }
   
-  @scala.inline
-  implicit class CanPreventDefaultMutableBuilder[Self <: CanPreventDefault] (val x: Self) extends AnyVal {
+  extension [Self <: CanPreventDefault](x: Self) {
     
-    @scala.inline
-    def setCanPreventDefault(value: Boolean): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
+    inline def setCanPreventDefault(value: Boolean): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPreventDefaultUndefined: Self = StObject.set(x, "canPreventDefault", js.undefined)
+    inline def setCanPreventDefaultUndefined: Self = StObject.set(x, "canPreventDefault", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

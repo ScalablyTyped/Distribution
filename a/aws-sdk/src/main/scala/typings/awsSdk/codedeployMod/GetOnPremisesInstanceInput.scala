@@ -13,16 +13,13 @@ trait GetOnPremisesInstanceInput extends StObject {
 }
 object GetOnPremisesInstanceInput {
   
-  @scala.inline
-  def apply(instanceName: InstanceName): GetOnPremisesInstanceInput = {
+  inline def apply(instanceName: InstanceName): GetOnPremisesInstanceInput = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOnPremisesInstanceInput]
   }
   
-  @scala.inline
-  implicit class GetOnPremisesInstanceInputMutableBuilder[Self <: GetOnPremisesInstanceInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOnPremisesInstanceInput](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

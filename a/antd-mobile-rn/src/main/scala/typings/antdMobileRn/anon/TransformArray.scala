@@ -10,19 +10,15 @@ trait TransformArray extends StObject {
 }
 object TransformArray {
   
-  @scala.inline
-  def apply(transform: js.Array[Rotate]): TransformArray = {
+  inline def apply(transform: js.Array[Rotate]): TransformArray = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformArray]
   }
   
-  @scala.inline
-  implicit class TransformArrayMutableBuilder[Self <: TransformArray] (val x: Self) extends AnyVal {
+  extension [Self <: TransformArray](x: Self) {
     
-    @scala.inline
-    def setTransform(value: js.Array[Rotate]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[Rotate]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformVarargs(value: Rotate*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Rotate*): Self = StObject.set(x, "transform", js.Array(value :_*))
   }
 }

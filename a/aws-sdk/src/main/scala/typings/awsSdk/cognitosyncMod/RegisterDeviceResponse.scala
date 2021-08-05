@@ -13,19 +13,15 @@ trait RegisterDeviceResponse extends StObject {
 }
 object RegisterDeviceResponse {
   
-  @scala.inline
-  def apply(): RegisterDeviceResponse = {
+  inline def apply(): RegisterDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterDeviceResponse]
   }
   
-  @scala.inline
-  implicit class RegisterDeviceResponseMutableBuilder[Self <: RegisterDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
   }
 }

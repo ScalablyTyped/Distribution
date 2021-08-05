@@ -10,19 +10,15 @@ trait CreateHsmClientCertificateResult extends StObject {
 }
 object CreateHsmClientCertificateResult {
   
-  @scala.inline
-  def apply(): CreateHsmClientCertificateResult = {
+  inline def apply(): CreateHsmClientCertificateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateHsmClientCertificateResult]
   }
   
-  @scala.inline
-  implicit class CreateHsmClientCertificateResultMutableBuilder[Self <: CreateHsmClientCertificateResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHsmClientCertificateResult](x: Self) {
     
-    @scala.inline
-    def setHsmClientCertificate(value: HsmClientCertificate): Self = StObject.set(x, "HsmClientCertificate", value.asInstanceOf[js.Any])
+    inline def setHsmClientCertificate(value: HsmClientCertificate): Self = StObject.set(x, "HsmClientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmClientCertificateUndefined: Self = StObject.set(x, "HsmClientCertificate", js.undefined)
+    inline def setHsmClientCertificateUndefined: Self = StObject.set(x, "HsmClientCertificate", js.undefined)
   }
 }

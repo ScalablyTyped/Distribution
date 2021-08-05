@@ -18,8 +18,7 @@ trait PayPalError extends StObject {
 }
 object PayPalError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug_id: String,
     details: js.Array[ErrorDetails],
     information_link: String,
@@ -30,25 +29,18 @@ object PayPalError {
     __obj.asInstanceOf[PayPalError]
   }
   
-  @scala.inline
-  implicit class PayPalErrorMutableBuilder[Self <: PayPalError] (val x: Self) extends AnyVal {
+  extension [Self <: PayPalError](x: Self) {
     
-    @scala.inline
-    def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
+    inline def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: js.Array[ErrorDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[ErrorDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsVarargs(value: ErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setInformation_link(value: String): Self = StObject.set(x, "information_link", value.asInstanceOf[js.Any])
+    inline def setInformation_link(value: String): Self = StObject.set(x, "information_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ object listItemSectionUniDriverMod {
   }
   object ListItemSectionUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object listItemSectionUniDriverMod {
       __obj.asInstanceOf[ListItemSectionUniDriver]
     }
     
-    @scala.inline
-    implicit class ListItemSectionUniDriverMutableBuilder[Self <: ListItemSectionUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemSectionUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSuffix(value: () => js.Promise[BaseUniDriver]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+      inline def setGetSuffix(value: () => js.Promise[BaseUniDriver]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

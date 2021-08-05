@@ -18,19 +18,15 @@ trait ExternalWorkflowExecutionSignaledEventAttributes extends StObject {
 }
 object ExternalWorkflowExecutionSignaledEventAttributes {
   
-  @scala.inline
-  def apply(initiatedEventId: EventId, workflowExecution: WorkflowExecution): ExternalWorkflowExecutionSignaledEventAttributes = {
+  inline def apply(initiatedEventId: EventId, workflowExecution: WorkflowExecution): ExternalWorkflowExecutionSignaledEventAttributes = {
     val __obj = js.Dynamic.literal(initiatedEventId = initiatedEventId.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalWorkflowExecutionSignaledEventAttributes]
   }
   
-  @scala.inline
-  implicit class ExternalWorkflowExecutionSignaledEventAttributesMutableBuilder[Self <: ExternalWorkflowExecutionSignaledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalWorkflowExecutionSignaledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
+    inline def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
+    inline def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
   }
 }

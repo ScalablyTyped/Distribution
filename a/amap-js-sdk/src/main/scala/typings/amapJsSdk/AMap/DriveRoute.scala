@@ -20,8 +20,7 @@ trait DriveRoute extends StObject {
 }
 object DriveRoute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Double,
     policy: String,
     steps: js.Array[DriveStep],
@@ -33,28 +32,20 @@ object DriveRoute {
     __obj.asInstanceOf[DriveRoute]
   }
   
-  @scala.inline
-  implicit class DriveRouteMutableBuilder[Self <: DriveRoute] (val x: Self) extends AnyVal {
+  extension [Self <: DriveRoute](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: js.Array[DriveStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[DriveStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: DriveStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: DriveStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTolls(value: Double): Self = StObject.set(x, "tolls", value.asInstanceOf[js.Any])
+    inline def setTolls(value: Double): Self = StObject.set(x, "tolls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTolls_distance(value: Double): Self = StObject.set(x, "tolls_distance", value.asInstanceOf[js.Any])
+    inline def setTolls_distance(value: Double): Self = StObject.set(x, "tolls_distance", value.asInstanceOf[js.Any])
   }
 }

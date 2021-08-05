@@ -20,43 +20,31 @@ trait ISDKConfig extends StObject {
 }
 object ISDKConfig {
   
-  @scala.inline
-  def apply(name: String, url: String): ISDKConfig = {
+  inline def apply(name: String, url: String): ISDKConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISDKConfig]
   }
   
-  @scala.inline
-  implicit class ISDKConfigMutableBuilder[Self <: ISDKConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ISDKConfig](x: Self) {
     
-    @scala.inline
-    def setIsLoaded(value: /* sdk */ js.Any => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction1(value))
+    inline def setIsLoaded(value: /* sdk */ js.Any => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoadedUndefined: Self = StObject.set(x, "isLoaded", js.undefined)
+    inline def setIsLoadedUndefined: Self = StObject.set(x, "isLoaded", js.undefined)
     
-    @scala.inline
-    def setIsRequireAllow(value: Boolean): Self = StObject.set(x, "isRequireAllow", value.asInstanceOf[js.Any])
+    inline def setIsRequireAllow(value: Boolean): Self = StObject.set(x, "isRequireAllow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequireAllowUndefined: Self = StObject.set(x, "isRequireAllow", js.undefined)
+    inline def setIsRequireAllowUndefined: Self = StObject.set(x, "isRequireAllow", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReady(value: String): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
+    inline def setOnReady(value: String): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    @scala.inline
-    def setResolveRequire(value: /* sdk */ js.Any => js.Any): Self = StObject.set(x, "resolveRequire", js.Any.fromFunction1(value))
+    inline def setResolveRequire(value: /* sdk */ js.Any => js.Any): Self = StObject.set(x, "resolveRequire", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveRequireUndefined: Self = StObject.set(x, "resolveRequire", js.undefined)
+    inline def setResolveRequireUndefined: Self = StObject.set(x, "resolveRequire", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

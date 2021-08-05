@@ -38,49 +38,35 @@ trait ListPoliciesRequest extends StObject {
 }
 object ListPoliciesRequest {
   
-  @scala.inline
-  def apply(): ListPoliciesRequest = {
+  inline def apply(): ListPoliciesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListPoliciesRequestMutableBuilder[Self <: ListPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setOnlyAttached(value: booleanType): Self = StObject.set(x, "OnlyAttached", value.asInstanceOf[js.Any])
+    inline def setOnlyAttached(value: booleanType): Self = StObject.set(x, "OnlyAttached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyAttachedUndefined: Self = StObject.set(x, "OnlyAttached", js.undefined)
+    inline def setOnlyAttachedUndefined: Self = StObject.set(x, "OnlyAttached", js.undefined)
     
-    @scala.inline
-    def setPathPrefix(value: policyPathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
+    inline def setPathPrefix(value: policyPathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
+    inline def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
     
-    @scala.inline
-    def setPolicyUsageFilter(value: PolicyUsageType): Self = StObject.set(x, "PolicyUsageFilter", value.asInstanceOf[js.Any])
+    inline def setPolicyUsageFilter(value: PolicyUsageType): Self = StObject.set(x, "PolicyUsageFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUsageFilterUndefined: Self = StObject.set(x, "PolicyUsageFilter", js.undefined)
+    inline def setPolicyUsageFilterUndefined: Self = StObject.set(x, "PolicyUsageFilter", js.undefined)
     
-    @scala.inline
-    def setScope(value: policyScopeType): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: policyScopeType): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
   }
 }

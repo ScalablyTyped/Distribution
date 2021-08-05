@@ -12,10 +12,8 @@ object replaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def replace(source: String, selector: String, stringTransformer: TSQueryStringTransformer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(source.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], stringTransformer.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def replace(
+  inline def replace(source: String, selector: String, stringTransformer: TSQueryStringTransformer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(source.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], stringTransformer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replace(
     source: String,
     selector: String,
     stringTransformer: TSQueryStringTransformer,

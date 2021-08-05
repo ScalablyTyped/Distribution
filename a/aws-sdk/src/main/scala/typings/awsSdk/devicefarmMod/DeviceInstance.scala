@@ -38,52 +38,37 @@ trait DeviceInstance extends StObject {
 }
 object DeviceInstance {
   
-  @scala.inline
-  def apply(): DeviceInstance = {
+  inline def apply(): DeviceInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceInstance]
   }
   
-  @scala.inline
-  implicit class DeviceInstanceMutableBuilder[Self <: DeviceInstance] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInstance](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setDeviceArn(value: AmazonResourceName): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: AmazonResourceName): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArnUndefined: Self = StObject.set(x, "deviceArn", js.undefined)
+    inline def setDeviceArnUndefined: Self = StObject.set(x, "deviceArn", js.undefined)
     
-    @scala.inline
-    def setInstanceProfile(value: InstanceProfile): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
+    inline def setInstanceProfile(value: InstanceProfile): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProfileUndefined: Self = StObject.set(x, "instanceProfile", js.undefined)
+    inline def setInstanceProfileUndefined: Self = StObject.set(x, "instanceProfile", js.undefined)
     
-    @scala.inline
-    def setLabels(value: InstanceLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: InstanceLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: InstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: InstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUdid(value: String): Self = StObject.set(x, "udid", value.asInstanceOf[js.Any])
+    inline def setUdid(value: String): Self = StObject.set(x, "udid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUdidUndefined: Self = StObject.set(x, "udid", js.undefined)
+    inline def setUdidUndefined: Self = StObject.set(x, "udid", js.undefined)
   }
 }

@@ -8,18 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LinkifyIt]
-  @scala.inline
-  def apply(schemas: Unit, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
-  @scala.inline
-  def apply(schemas: Options): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any]).asInstanceOf[LinkifyIt]
-  @scala.inline
-  def apply(schemas: Options, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
-  @scala.inline
-  def apply(schemas: SchemaRules): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any]).asInstanceOf[LinkifyIt]
-  @scala.inline
-  def apply(schemas: SchemaRules, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
+  inline def apply(): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LinkifyIt]
+  inline def apply(schemas: Unit, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
+  inline def apply(schemas: Options): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any]).asInstanceOf[LinkifyIt]
+  inline def apply(schemas: Options, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
+  inline def apply(schemas: SchemaRules): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any]).asInstanceOf[LinkifyIt]
+  inline def apply(schemas: SchemaRules, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("linkify-it", JSImport.Namespace)
@@ -45,26 +39,20 @@ object mod {
   }
   object FullRule {
     
-    @scala.inline
-    def apply(validate: String | RegExp | Validate): FullRule = {
+    inline def apply(validate: String | RegExp | Validate): FullRule = {
       val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
       __obj.asInstanceOf[FullRule]
     }
     
-    @scala.inline
-    implicit class FullRuleMutableBuilder[Self <: FullRule] (val x: Self) extends AnyVal {
+    extension [Self <: FullRule](x: Self) {
       
-      @scala.inline
-      def setNormalize(value: /* match */ Match => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+      inline def setNormalize(value: /* match */ Match => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      @scala.inline
-      def setValidate(value: String | RegExp | Validate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: String | RegExp | Validate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFunction3(value: (/* text */ String, /* pos */ Double, /* self */ LinkifyIt) => Double | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+      inline def setValidateFunction3(value: (/* text */ String, /* pos */ Double, /* self */ LinkifyIt) => Double | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     }
   }
   
@@ -109,32 +97,24 @@ object mod {
   }
   object Match {
     
-    @scala.inline
-    def apply(index: Double, lastIndex: Double, raw: String, schema: String, text: String, url: String): Match = {
+    inline def apply(index: Double, lastIndex: Double, raw: String, schema: String, text: String, url: String): Match = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], lastIndex = lastIndex.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+    extension [Self <: Match](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+      inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,32 +128,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFuzzyEmail(value: Boolean): Self = StObject.set(x, "fuzzyEmail", value.asInstanceOf[js.Any])
+      inline def setFuzzyEmail(value: Boolean): Self = StObject.set(x, "fuzzyEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzyEmailUndefined: Self = StObject.set(x, "fuzzyEmail", js.undefined)
+      inline def setFuzzyEmailUndefined: Self = StObject.set(x, "fuzzyEmail", js.undefined)
       
-      @scala.inline
-      def setFuzzyIP(value: Boolean): Self = StObject.set(x, "fuzzyIP", value.asInstanceOf[js.Any])
+      inline def setFuzzyIP(value: Boolean): Self = StObject.set(x, "fuzzyIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzyIPUndefined: Self = StObject.set(x, "fuzzyIP", js.undefined)
+      inline def setFuzzyIPUndefined: Self = StObject.set(x, "fuzzyIP", js.undefined)
       
-      @scala.inline
-      def setFuzzyLink(value: Boolean): Self = StObject.set(x, "fuzzyLink", value.asInstanceOf[js.Any])
+      inline def setFuzzyLink(value: Boolean): Self = StObject.set(x, "fuzzyLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzyLinkUndefined: Self = StObject.set(x, "fuzzyLink", js.undefined)
+      inline def setFuzzyLinkUndefined: Self = StObject.set(x, "fuzzyLink", js.undefined)
     }
   }
   

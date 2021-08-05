@@ -15,19 +15,15 @@ trait LockEntry extends StObject {
 }
 object LockEntry {
   
-  @scala.inline
-  def apply(Scope: LockScope, Type: LockType): LockEntry = {
+  inline def apply(Scope: LockScope, Type: LockType): LockEntry = {
     val __obj = js.Dynamic.literal(Scope = Scope.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockEntry]
   }
   
-  @scala.inline
-  implicit class LockEntryMutableBuilder[Self <: LockEntry] (val x: Self) extends AnyVal {
+  extension [Self <: LockEntry](x: Self) {
     
-    @scala.inline
-    def setScope(value: LockScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: LockScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LockType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: LockType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

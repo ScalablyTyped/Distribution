@@ -30,28 +30,21 @@ trait SetDownloadBehaviorRequest extends StObject {
 }
 object SetDownloadBehaviorRequest {
   
-  @scala.inline
-  def apply(behavior: deny | allow | allowAndName | default_): SetDownloadBehaviorRequest = {
+  inline def apply(behavior: deny | allow | allowAndName | default_): SetDownloadBehaviorRequest = {
     val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDownloadBehaviorRequest]
   }
   
-  @scala.inline
-  implicit class SetDownloadBehaviorRequestMutableBuilder[Self <: SetDownloadBehaviorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDownloadBehaviorRequest](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: deny | allow | allowAndName | default_): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: deny | allow | allowAndName | default_): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
+    inline def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
-    @scala.inline
-    def setDownloadPath(value: String): Self = StObject.set(x, "downloadPath", value.asInstanceOf[js.Any])
+    inline def setDownloadPath(value: String): Self = StObject.set(x, "downloadPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadPathUndefined: Self = StObject.set(x, "downloadPath", js.undefined)
+    inline def setDownloadPathUndefined: Self = StObject.set(x, "downloadPath", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait DayPickerNavigationPhrases extends StObject {
 }
 object DayPickerNavigationPhrases {
   
-  @scala.inline
-  def apply(): DayPickerNavigationPhrases = {
+  inline def apply(): DayPickerNavigationPhrases = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DayPickerNavigationPhrases]
   }
   
-  @scala.inline
-  implicit class DayPickerNavigationPhrasesMutableBuilder[Self <: DayPickerNavigationPhrases] (val x: Self) extends AnyVal {
+  extension [Self <: DayPickerNavigationPhrases](x: Self) {
     
-    @scala.inline
-    def setJumpToNextMonth(value: String): Self = StObject.set(x, "jumpToNextMonth", value.asInstanceOf[js.Any])
+    inline def setJumpToNextMonth(value: String): Self = StObject.set(x, "jumpToNextMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJumpToNextMonthUndefined: Self = StObject.set(x, "jumpToNextMonth", js.undefined)
+    inline def setJumpToNextMonthUndefined: Self = StObject.set(x, "jumpToNextMonth", js.undefined)
     
-    @scala.inline
-    def setJumpToPrevMonth(value: String): Self = StObject.set(x, "jumpToPrevMonth", value.asInstanceOf[js.Any])
+    inline def setJumpToPrevMonth(value: String): Self = StObject.set(x, "jumpToPrevMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJumpToPrevMonthUndefined: Self = StObject.set(x, "jumpToPrevMonth", js.undefined)
+    inline def setJumpToPrevMonthUndefined: Self = StObject.set(x, "jumpToPrevMonth", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait Value extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply(value: NavigationProp[js.Any]): Value = {
+  inline def apply(value: NavigationProp[js.Any]): Value = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setValue(value: NavigationProp[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NavigationProp[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

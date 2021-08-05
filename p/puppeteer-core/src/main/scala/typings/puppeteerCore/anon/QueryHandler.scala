@@ -13,19 +13,15 @@ trait QueryHandler extends StObject {
 }
 object QueryHandler {
   
-  @scala.inline
-  def apply(queryHandler: InternalQueryHandler, updatedSelector: String): QueryHandler = {
+  inline def apply(queryHandler: InternalQueryHandler, updatedSelector: String): QueryHandler = {
     val __obj = js.Dynamic.literal(queryHandler = queryHandler.asInstanceOf[js.Any], updatedSelector = updatedSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryHandler]
   }
   
-  @scala.inline
-  implicit class QueryHandlerMutableBuilder[Self <: QueryHandler] (val x: Self) extends AnyVal {
+  extension [Self <: QueryHandler](x: Self) {
     
-    @scala.inline
-    def setQueryHandler(value: InternalQueryHandler): Self = StObject.set(x, "queryHandler", value.asInstanceOf[js.Any])
+    inline def setQueryHandler(value: InternalQueryHandler): Self = StObject.set(x, "queryHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedSelector(value: String): Self = StObject.set(x, "updatedSelector", value.asInstanceOf[js.Any])
+    inline def setUpdatedSelector(value: String): Self = StObject.set(x, "updatedSelector", value.asInstanceOf[js.Any])
   }
 }

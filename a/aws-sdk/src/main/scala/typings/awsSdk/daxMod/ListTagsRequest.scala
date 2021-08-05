@@ -18,22 +18,17 @@ trait ListTagsRequest extends StObject {
 }
 object ListTagsRequest {
   
-  @scala.inline
-  def apply(ResourceName: String): ListTagsRequest = {
+  inline def apply(ResourceName: String): ListTagsRequest = {
     val __obj = js.Dynamic.literal(ResourceName = ResourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsRequest]
   }
   
-  @scala.inline
-  implicit class ListTagsRequestMutableBuilder[Self <: ListTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
   }
 }

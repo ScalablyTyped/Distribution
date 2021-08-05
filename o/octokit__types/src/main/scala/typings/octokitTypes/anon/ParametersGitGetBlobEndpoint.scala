@@ -18,8 +18,7 @@ trait ParametersGitGetBlobEndpoint extends StObject {
 }
 object ParametersGitGetBlobEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitGetBlobEndpoint,
     request: GitGetBlobRequestOptions,
     response: OctokitResponse[GitGetBlobResponseData]
@@ -28,16 +27,12 @@ object ParametersGitGetBlobEndpoint {
     __obj.asInstanceOf[ParametersGitGetBlobEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitGetBlobEndpointMutableBuilder[Self <: ParametersGitGetBlobEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitGetBlobEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitGetBlobEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitGetBlobEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitGetBlobRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitGetBlobRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitGetBlobResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitGetBlobResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

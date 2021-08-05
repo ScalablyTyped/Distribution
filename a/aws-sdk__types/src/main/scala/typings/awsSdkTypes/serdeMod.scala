@@ -20,17 +20,14 @@ object serdeMod {
   }
   object EndpointBearer {
     
-    @scala.inline
-    def apply(endpoint: () => js.Promise[Endpoint]): EndpointBearer = {
+    inline def apply(endpoint: () => js.Promise[Endpoint]): EndpointBearer = {
       val __obj = js.Dynamic.literal(endpoint = js.Any.fromFunction0(endpoint))
       __obj.asInstanceOf[EndpointBearer]
     }
     
-    @scala.inline
-    implicit class EndpointBearerMutableBuilder[Self <: EndpointBearer] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointBearer](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
     }
   }
   
@@ -68,8 +65,7 @@ object serdeMod {
   }
   object SerdeContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base64Decoder: /* input */ String => Uint8Array,
       base64Encoder: /* input */ Uint8Array => String,
       disableHostPrefix: Boolean,
@@ -83,29 +79,21 @@ object serdeMod {
       __obj.asInstanceOf[SerdeContext]
     }
     
-    @scala.inline
-    implicit class SerdeContextMutableBuilder[Self <: SerdeContext] (val x: Self) extends AnyVal {
+    extension [Self <: SerdeContext](x: Self) {
       
-      @scala.inline
-      def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
+      inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
     }
   }
   

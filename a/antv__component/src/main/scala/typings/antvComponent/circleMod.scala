@@ -16,7 +16,7 @@ object circleMod {
   trait Circle
     extends typings.antvComponent.baseMod.default[CircleAxisCfg] {
     
-    var getCirclePoint: js.Any = js.native
+    /* private */ var getCirclePoint: js.Any = js.native
     
     /* protected */ def getTickPoint(tickValue: js.Any): Point = js.native
   }

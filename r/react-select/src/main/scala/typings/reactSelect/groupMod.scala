@@ -27,11 +27,9 @@ object groupMod {
   @js.native
   val GroupHeading: ComponentType[js.Any] = js.native
   
-  @scala.inline
-  def groupCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")().asInstanceOf[CSSProperties]
+  inline def groupCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")().asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def groupHeadingCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")().asInstanceOf[CSSProperties]
+  inline def groupHeadingCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")().asInstanceOf[CSSProperties]
   
   trait ComponentProps extends StObject {
     
@@ -49,32 +47,24 @@ object groupMod {
   }
   object ComponentProps {
     
-    @scala.inline
-    def apply(Heading: ComponentType[js.Any], headingProps: js.Any): ComponentProps = {
+    inline def apply(Heading: ComponentType[js.Any], headingProps: js.Any): ComponentProps = {
       val __obj = js.Dynamic.literal(Heading = Heading.asInstanceOf[js.Any], headingProps = headingProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentProps]
     }
     
-    @scala.inline
-    implicit class ComponentPropsMutableBuilder[Self <: ComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHeading(value: ComponentType[js.Any]): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: ComponentType[js.Any]): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingProps(value: js.Any): Self = StObject.set(x, "headingProps", value.asInstanceOf[js.Any])
+      inline def setHeadingProps(value: js.Any): Self = StObject.set(x, "headingProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     }
   }
   

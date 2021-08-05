@@ -13,6 +13,5 @@ object minMaxGradUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def gradForMinAndMax[T /* <: Tensor[Rank] */](dy: T, y: T, xOrig: Tensor[Rank], origAxes: js.Array[Double]): X = (^.asInstanceOf[js.Dynamic].applyDynamic("gradForMinAndMax")(dy.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xOrig.asInstanceOf[js.Any], origAxes.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def gradForMinAndMax[T /* <: Tensor[Rank] */](dy: T, y: T, xOrig: Tensor[Rank], origAxes: js.Array[Double]): X = (^.asInstanceOf[js.Dynamic].applyDynamic("gradForMinAndMax")(dy.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xOrig.asInstanceOf[js.Any], origAxes.asInstanceOf[js.Any])).asInstanceOf[X]
 }

@@ -10,19 +10,15 @@ trait DocumentTimelineOptions extends StObject {
 }
 object DocumentTimelineOptions {
   
-  @scala.inline
-  def apply(): DocumentTimelineOptions = {
+  inline def apply(): DocumentTimelineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentTimelineOptions]
   }
   
-  @scala.inline
-  implicit class DocumentTimelineOptionsMutableBuilder[Self <: DocumentTimelineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentTimelineOptions](x: Self) {
     
-    @scala.inline
-    def setOriginTime(value: Double): Self = StObject.set(x, "originTime", value.asInstanceOf[js.Any])
+    inline def setOriginTime(value: Double): Self = StObject.set(x, "originTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginTimeUndefined: Self = StObject.set(x, "originTime", js.undefined)
+    inline def setOriginTimeUndefined: Self = StObject.set(x, "originTime", js.undefined)
   }
 }

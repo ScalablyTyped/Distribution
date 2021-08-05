@@ -22,22 +22,17 @@ trait Readonlynamestorenotifyco
 }
 object Readonlynamestorenotifyco {
   
-  @scala.inline
-  def apply(invalidatedRecordIDs: Set[DataID], updatedRecordIDs: UpdatedRecords): Readonlynamestorenotifyco = {
+  inline def apply(invalidatedRecordIDs: Set[DataID], updatedRecordIDs: UpdatedRecords): Readonlynamestorenotifyco = {
     val __obj = js.Dynamic.literal(invalidatedRecordIDs = invalidatedRecordIDs.asInstanceOf[js.Any], name = "store.notify.complete", updatedRecordIDs = updatedRecordIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynamestorenotifyco]
   }
   
-  @scala.inline
-  implicit class ReadonlynamestorenotifycoMutableBuilder[Self <: Readonlynamestorenotifyco] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamestorenotifyco](x: Self) {
     
-    @scala.inline
-    def setInvalidatedRecordIDs(value: Set[DataID]): Self = StObject.set(x, "invalidatedRecordIDs", value.asInstanceOf[js.Any])
+    inline def setInvalidatedRecordIDs(value: Set[DataID]): Self = StObject.set(x, "invalidatedRecordIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: storeDotnotifyDotcomplete): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: storeDotnotifyDotcomplete): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedRecordIDs(value: UpdatedRecords): Self = StObject.set(x, "updatedRecordIDs", value.asInstanceOf[js.Any])
+    inline def setUpdatedRecordIDs(value: UpdatedRecords): Self = StObject.set(x, "updatedRecordIDs", value.asInstanceOf[js.Any])
   }
 }

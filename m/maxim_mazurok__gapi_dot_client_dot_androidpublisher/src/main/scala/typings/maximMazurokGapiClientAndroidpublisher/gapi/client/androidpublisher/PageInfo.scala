@@ -17,31 +17,23 @@ trait PageInfo extends StObject {
 }
 object PageInfo {
   
-  @scala.inline
-  def apply(): PageInfo = {
+  inline def apply(): PageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageInfo]
   }
   
-  @scala.inline
-  implicit class PageInfoMutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PageInfo](x: Self) {
     
-    @scala.inline
-    def setResultPerPage(value: Double): Self = StObject.set(x, "resultPerPage", value.asInstanceOf[js.Any])
+    inline def setResultPerPage(value: Double): Self = StObject.set(x, "resultPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultPerPageUndefined: Self = StObject.set(x, "resultPerPage", js.undefined)
+    inline def setResultPerPageUndefined: Self = StObject.set(x, "resultPerPage", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
+    inline def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
+    inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
   }
 }

@@ -21,31 +21,23 @@ trait SketchMSStyleColorControls extends StObject {
 }
 object SketchMSStyleColorControls {
   
-  @scala.inline
-  def apply(brightness: Double, contrast: Double, hue: Double, isEnabled: Double, saturation: Double): SketchMSStyleColorControls = {
+  inline def apply(brightness: Double, contrast: Double, hue: Double, isEnabled: Double, saturation: Double): SketchMSStyleColorControls = {
     val __obj = js.Dynamic.literal(_class = "styleColorControls", brightness = brightness.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleColorControls]
   }
   
-  @scala.inline
-  implicit class SketchMSStyleColorControlsMutableBuilder[Self <: SketchMSStyleColorControls] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStyleColorControls](x: Self) {
     
-    @scala.inline
-    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: styleColorControls): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: styleColorControls): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

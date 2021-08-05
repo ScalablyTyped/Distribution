@@ -24,58 +24,41 @@ trait BaseRoomAttributes extends StObject {
 }
 object BaseRoomAttributes {
   
-  @scala.inline
-  def apply(description: String, name: String): BaseRoomAttributes = {
+  inline def apply(description: String, name: String): BaseRoomAttributes = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseRoomAttributes]
   }
   
-  @scala.inline
-  implicit class BaseRoomAttributesMutableBuilder[Self <: BaseRoomAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: BaseRoomAttributes](x: Self) {
     
-    @scala.inline
-    def setCrossPod(value: Boolean): Self = StObject.set(x, "crossPod", value.asInstanceOf[js.Any])
+    inline def setCrossPod(value: Boolean): Self = StObject.set(x, "crossPod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossPodUndefined: Self = StObject.set(x, "crossPod", js.undefined)
+    inline def setCrossPodUndefined: Self = StObject.set(x, "crossPod", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoverable(value: Boolean): Self = StObject.set(x, "discoverable", value.asInstanceOf[js.Any])
+    inline def setDiscoverable(value: Boolean): Self = StObject.set(x, "discoverable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoverableUndefined: Self = StObject.set(x, "discoverable", js.undefined)
+    inline def setDiscoverableUndefined: Self = StObject.set(x, "discoverable", js.undefined)
     
-    @scala.inline
-    def setKeywords(value: js.Array[Keyword]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: js.Array[Keyword]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setKeywordsVarargs(value: Keyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: Keyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
-    @scala.inline
-    def setMembersCanInvite(value: Boolean): Self = StObject.set(x, "membersCanInvite", value.asInstanceOf[js.Any])
+    inline def setMembersCanInvite(value: Boolean): Self = StObject.set(x, "membersCanInvite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersCanInviteUndefined: Self = StObject.set(x, "membersCanInvite", js.undefined)
+    inline def setMembersCanInviteUndefined: Self = StObject.set(x, "membersCanInvite", js.undefined)
     
-    @scala.inline
-    def setMultiLateralRoom(value: Boolean): Self = StObject.set(x, "multiLateralRoom", value.asInstanceOf[js.Any])
+    inline def setMultiLateralRoom(value: Boolean): Self = StObject.set(x, "multiLateralRoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLateralRoomUndefined: Self = StObject.set(x, "multiLateralRoom", js.undefined)
+    inline def setMultiLateralRoomUndefined: Self = StObject.set(x, "multiLateralRoom", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewHistory(value: Boolean): Self = StObject.set(x, "viewHistory", value.asInstanceOf[js.Any])
+    inline def setViewHistory(value: Boolean): Self = StObject.set(x, "viewHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewHistoryUndefined: Self = StObject.set(x, "viewHistory", js.undefined)
+    inline def setViewHistoryUndefined: Self = StObject.set(x, "viewHistory", js.undefined)
   }
 }

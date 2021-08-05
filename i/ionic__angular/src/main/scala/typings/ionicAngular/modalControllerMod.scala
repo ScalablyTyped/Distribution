@@ -18,10 +18,10 @@ object modalControllerMod {
   class ModalController protected () extends OverlayBaseController[ModalOptions[ComponentRef], HTMLIonModalElement] {
     def this(angularDelegate: AngularDelegate, resolver: ComponentFactoryResolver, injector: Injector) = this()
     
-    var angularDelegate: js.Any = js.native
+    /* private */ var angularDelegate: js.Any = js.native
     
-    var injector: js.Any = js.native
+    /* private */ var injector: js.Any = js.native
     
-    var resolver: js.Any = js.native
+    /* private */ var resolver: js.Any = js.native
   }
 }

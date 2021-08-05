@@ -13,41 +13,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def cmp(a: CmpArgs, b: CmpArgs): Null | Lookup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Null | Lookup_]
+  inline def cmp(a: CmpArgs, b: CmpArgs): Null | Lookup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Null | Lookup_]
   
-  @scala.inline
-  def lookup(ip: String): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
-  @scala.inline
-  def lookup(ip: Double): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
+  inline def lookup(ip: String): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
+  inline def lookup(ip: Double): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
   
-  @scala.inline
-  def pretty(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def pretty(ip: js.Array[String | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def pretty(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pretty(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pretty(ip: js.Array[String | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pretty(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def reloadData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadData")().asInstanceOf[Unit]
-  @scala.inline
-  def reloadData(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadData")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def reloadData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadData")().asInstanceOf[Unit]
+  inline def reloadData(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadData")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def reloadDataSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadDataSync")().asInstanceOf[Unit]
+  inline def reloadDataSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadDataSync")().asInstanceOf[Unit]
   
-  @scala.inline
-  def startWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")().asInstanceOf[Unit]
-  @scala.inline
-  def startWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")().asInstanceOf[Unit]
+  inline def startWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def stopWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")().asInstanceOf[Unit]
-  @scala.inline
-  def stopWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stopWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")().asInstanceOf[Unit]
+  inline def stopWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AsyncCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
   
@@ -97,8 +83,7 @@ object mod {
   }
   object Lookup_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       area: Double,
       city: String,
       country: String,
@@ -113,35 +98,25 @@ object mod {
       __obj.asInstanceOf[Lookup_]
     }
     
-    @scala.inline
-    implicit class Lookup_MutableBuilder[Self <: Lookup_] (val x: Self) extends AnyVal {
+    extension [Self <: Lookup_](x: Self) {
       
-      @scala.inline
-      def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEu(value: `1` | `0`): Self = StObject.set(x, "eu", value.asInstanceOf[js.Any])
+      inline def setEu(value: `1` | `0`): Self = StObject.set(x, "eu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLl(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "ll", value.asInstanceOf[js.Any])
+      inline def setLl(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "ll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetro(value: Double): Self = StObject.set(x, "metro", value.asInstanceOf[js.Any])
+      inline def setMetro(value: Double): Self = StObject.set(x, "metro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
   

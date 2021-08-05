@@ -18,28 +18,21 @@ trait ListPrincipalsForPortfolioOutput extends StObject {
 }
 object ListPrincipalsForPortfolioOutput {
   
-  @scala.inline
-  def apply(): ListPrincipalsForPortfolioOutput = {
+  inline def apply(): ListPrincipalsForPortfolioOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPrincipalsForPortfolioOutput]
   }
   
-  @scala.inline
-  implicit class ListPrincipalsForPortfolioOutputMutableBuilder[Self <: ListPrincipalsForPortfolioOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPrincipalsForPortfolioOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setPrincipals(value: Principals): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: Principals): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
   }
 }

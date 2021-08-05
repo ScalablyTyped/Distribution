@@ -16,29 +16,23 @@ trait ChildMenuPopover extends StObject {
 }
 object ChildMenuPopover {
   
-  @scala.inline
-  def apply(): ChildMenuPopover = {
+  inline def apply(): ChildMenuPopover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChildMenuPopover]
   }
   
-  @scala.inline
-  implicit class ChildMenuPopoverMutableBuilder[Self <: ChildMenuPopover] (val x: Self) extends AnyVal {
+  extension [Self <: ChildMenuPopover](x: Self) {
     
-    @scala.inline
-    def setChildMenuPopover(
+    inline def setChildMenuPopover(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "ChildMenuPopover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildMenuPopoverUndefined: Self = StObject.set(x, "ChildMenuPopover", js.undefined)
+    inline def setChildMenuPopoverUndefined: Self = StObject.set(x, "ChildMenuPopover", js.undefined)
     
-    @scala.inline
-    def setListItem(
+    inline def setListItem(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemUndefined: Self = StObject.set(x, "ListItem", js.undefined)
+    inline def setListItemUndefined: Self = StObject.set(x, "ListItem", js.undefined)
   }
 }

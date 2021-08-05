@@ -13,8 +13,6 @@ object popoverAnimationsMdEnterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mdEnterAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
-  @scala.inline
-  def mdEnterAnimation(baseEl: HTMLElement, ev: Event): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any], ev.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def mdEnterAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def mdEnterAnimation(baseEl: HTMLElement, ev: Event): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any], ev.asInstanceOf[js.Any])).asInstanceOf[Animation]
 }

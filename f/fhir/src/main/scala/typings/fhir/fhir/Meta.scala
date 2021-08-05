@@ -53,73 +53,51 @@ trait Meta
 }
 object Meta {
   
-  @scala.inline
-  def apply(): Meta = {
+  inline def apply(): Meta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Meta]
   }
   
-  @scala.inline
-  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+  extension [Self <: Meta](x: Self) {
     
-    @scala.inline
-    def setLastUpdated(value: instant): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: instant): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setProfile(value: js.Array[uri]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: js.Array[uri]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setProfileVarargs(value: uri*): Self = StObject.set(x, "profile", js.Array(value :_*))
+    inline def setProfileVarargs(value: uri*): Self = StObject.set(x, "profile", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurity(value: js.Array[Coding]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+    inline def setSecurity(value: js.Array[Coding]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+    inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    @scala.inline
-    def setSecurityVarargs(value: Coding*): Self = StObject.set(x, "security", js.Array(value :_*))
+    inline def setSecurityVarargs(value: Coding*): Self = StObject.set(x, "security", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: js.Array[Coding]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Array[Coding]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTagVarargs(value: Coding*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: Coding*): Self = StObject.set(x, "tag", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionId(value: id): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: id): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     
-    @scala.inline
-    def set_lastUpdated(value: Element): Self = StObject.set(x, "_lastUpdated", value.asInstanceOf[js.Any])
+    inline def set_lastUpdated(value: Element): Self = StObject.set(x, "_lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lastUpdatedUndefined: Self = StObject.set(x, "_lastUpdated", js.undefined)
+    inline def set_lastUpdatedUndefined: Self = StObject.set(x, "_lastUpdated", js.undefined)
     
-    @scala.inline
-    def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
+    inline def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
+    inline def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
-    @scala.inline
-    def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value :_*))
+    inline def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value :_*))
     
-    @scala.inline
-    def set_versionId(value: Element): Self = StObject.set(x, "_versionId", value.asInstanceOf[js.Any])
+    inline def set_versionId(value: Element): Self = StObject.set(x, "_versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionIdUndefined: Self = StObject.set(x, "_versionId", js.undefined)
+    inline def set_versionIdUndefined: Self = StObject.set(x, "_versionId", js.undefined)
   }
 }

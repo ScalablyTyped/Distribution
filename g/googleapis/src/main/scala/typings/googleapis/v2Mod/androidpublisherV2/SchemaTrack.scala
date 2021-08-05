@@ -22,34 +22,25 @@ trait SchemaTrack extends StObject {
 }
 object SchemaTrack {
   
-  @scala.inline
-  def apply(): SchemaTrack = {
+  inline def apply(): SchemaTrack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrack]
   }
   
-  @scala.inline
-  implicit class SchemaTrackMutableBuilder[Self <: SchemaTrack] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrack](x: Self) {
     
-    @scala.inline
-    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
-    @scala.inline
-    def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
+    inline def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
+    inline def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
     
-    @scala.inline
-    def setVersionCodes(value: js.Array[Double]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
+    inline def setVersionCodes(value: js.Array[Double]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
+    inline def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
     
-    @scala.inline
-    def setVersionCodesVarargs(value: Double*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
+    inline def setVersionCodesVarargs(value: Double*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
   }
 }

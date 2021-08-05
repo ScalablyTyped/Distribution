@@ -40,25 +40,19 @@ trait Matrix2D extends StObject {
 }
 object Matrix2D {
   
-  @scala.inline
-  def apply(m00: Double, m01: Double, m10: Double, m11: Double): Matrix2D = {
+  inline def apply(m00: Double, m01: Double, m10: Double, m11: Double): Matrix2D = {
     val __obj = js.Dynamic.literal(m00 = m00.asInstanceOf[js.Any], m01 = m01.asInstanceOf[js.Any], m10 = m10.asInstanceOf[js.Any], m11 = m11.asInstanceOf[js.Any])
     __obj.asInstanceOf[Matrix2D]
   }
   
-  @scala.inline
-  implicit class Matrix2DMutableBuilder[Self <: Matrix2D] (val x: Self) extends AnyVal {
+  extension [Self <: Matrix2D](x: Self) {
     
-    @scala.inline
-    def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
+    inline def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM01(value: Double): Self = StObject.set(x, "m01", value.asInstanceOf[js.Any])
+    inline def setM01(value: Double): Self = StObject.set(x, "m01", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM10(value: Double): Self = StObject.set(x, "m10", value.asInstanceOf[js.Any])
+    inline def setM10(value: Double): Self = StObject.set(x, "m10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
+    inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
   }
 }

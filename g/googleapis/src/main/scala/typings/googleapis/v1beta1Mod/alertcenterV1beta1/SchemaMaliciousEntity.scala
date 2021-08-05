@@ -16,19 +16,15 @@ trait SchemaMaliciousEntity extends StObject {
 }
 object SchemaMaliciousEntity {
   
-  @scala.inline
-  def apply(): SchemaMaliciousEntity = {
+  inline def apply(): SchemaMaliciousEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMaliciousEntity]
   }
   
-  @scala.inline
-  implicit class SchemaMaliciousEntityMutableBuilder[Self <: SchemaMaliciousEntity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMaliciousEntity](x: Self) {
     
-    @scala.inline
-    def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
+    inline def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
+    inline def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
   }
 }

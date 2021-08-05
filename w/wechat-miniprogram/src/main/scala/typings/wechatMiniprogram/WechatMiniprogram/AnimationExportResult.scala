@@ -11,19 +11,15 @@ trait AnimationExportResult extends StObject {
 }
 object AnimationExportResult {
   
-  @scala.inline
-  def apply(actions: js.Array[IAnyObject]): AnimationExportResult = {
+  inline def apply(actions: js.Array[IAnyObject]): AnimationExportResult = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationExportResult]
   }
   
-  @scala.inline
-  implicit class AnimationExportResultMutableBuilder[Self <: AnimationExportResult] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationExportResult](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[IAnyObject]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[IAnyObject]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: IAnyObject*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: IAnyObject*): Self = StObject.set(x, "actions", js.Array(value :_*))
   }
 }

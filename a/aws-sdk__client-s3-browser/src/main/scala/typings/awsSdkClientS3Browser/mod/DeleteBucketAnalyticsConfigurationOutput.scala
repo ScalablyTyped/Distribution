@@ -10,8 +10,7 @@ trait DeleteBucketAnalyticsConfigurationOutput
      with typings.awsSdkClientS3Browser.typesDeleteBucketAnalyticsConfigurationOutputMod.DeleteBucketAnalyticsConfigurationOutput
 object DeleteBucketAnalyticsConfigurationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DeleteBucketAnalyticsConfigurationOutput = {
+  inline def apply($metadata: ResponseMetadata): DeleteBucketAnalyticsConfigurationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketAnalyticsConfigurationOutput]
   }

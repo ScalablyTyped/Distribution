@@ -23,34 +23,25 @@ trait SchemaInstanceWithNamedPorts extends StObject {
 }
 object SchemaInstanceWithNamedPorts {
   
-  @scala.inline
-  def apply(): SchemaInstanceWithNamedPorts = {
+  inline def apply(): SchemaInstanceWithNamedPorts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceWithNamedPorts]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceWithNamedPortsMutableBuilder[Self <: SchemaInstanceWithNamedPorts] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceWithNamedPorts](x: Self) {
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setNamedPorts(value: js.Array[SchemaNamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
+    inline def setNamedPorts(value: js.Array[SchemaNamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
+    inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    @scala.inline
-    def setNamedPortsVarargs(value: SchemaNamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: SchemaNamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

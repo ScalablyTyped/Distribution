@@ -12,25 +12,19 @@ trait FeatureName extends StObject {
 }
 object FeatureName {
   
-  @scala.inline
-  def apply(): FeatureName = {
+  inline def apply(): FeatureName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureName]
   }
   
-  @scala.inline
-  implicit class FeatureNameMutableBuilder[Self <: FeatureName] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureName](x: Self) {
     
-    @scala.inline
-    def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
+    inline def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
     
-    @scala.inline
-    def setFeatureRate(value: Double): Self = StObject.set(x, "featureRate", value.asInstanceOf[js.Any])
+    inline def setFeatureRate(value: Double): Self = StObject.set(x, "featureRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureRateUndefined: Self = StObject.set(x, "featureRate", js.undefined)
+    inline def setFeatureRateUndefined: Self = StObject.set(x, "featureRate", js.undefined)
   }
 }

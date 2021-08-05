@@ -17,22 +17,17 @@ trait StoreLocationPlugin extends StObject {
 }
 object StoreLocationPlugin {
   
-  @scala.inline
-  def apply(): StoreLocationPlugin = {
+  inline def apply(): StoreLocationPlugin = {
     val __obj = js.Dynamic.literal(CADESCOM_CONTAINER_STORE = 100, CADESCOM_CURRENT_USER_STORE = 2, CADESCOM_LOCAL_MACHINE_STORE = 1)
     __obj.asInstanceOf[StoreLocationPlugin]
   }
   
-  @scala.inline
-  implicit class StoreLocationPluginMutableBuilder[Self <: StoreLocationPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: StoreLocationPlugin](x: Self) {
     
-    @scala.inline
-    def setCADESCOM_CONTAINER_STORE(value: `100`): Self = StObject.set(x, "CADESCOM_CONTAINER_STORE", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_CONTAINER_STORE(value: `100`): Self = StObject.set(x, "CADESCOM_CONTAINER_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CADESCOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CADESCOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CADESCOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CADESCOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
   }
 }

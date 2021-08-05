@@ -28,46 +28,33 @@ trait CmafPackageCreateOrUpdateParameters extends StObject {
 }
 object CmafPackageCreateOrUpdateParameters {
   
-  @scala.inline
-  def apply(): CmafPackageCreateOrUpdateParameters = {
+  inline def apply(): CmafPackageCreateOrUpdateParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CmafPackageCreateOrUpdateParameters]
   }
   
-  @scala.inline
-  implicit class CmafPackageCreateOrUpdateParametersMutableBuilder[Self <: CmafPackageCreateOrUpdateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CmafPackageCreateOrUpdateParameters](x: Self) {
     
-    @scala.inline
-    def setEncryption(value: CmafEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: CmafEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setHlsManifests(value: listOfHlsManifestCreateOrUpdateParameters): Self = StObject.set(x, "HlsManifests", value.asInstanceOf[js.Any])
+    inline def setHlsManifests(value: listOfHlsManifestCreateOrUpdateParameters): Self = StObject.set(x, "HlsManifests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsManifestsUndefined: Self = StObject.set(x, "HlsManifests", js.undefined)
+    inline def setHlsManifestsUndefined: Self = StObject.set(x, "HlsManifests", js.undefined)
     
-    @scala.inline
-    def setHlsManifestsVarargs(value: HlsManifestCreateOrUpdateParameters*): Self = StObject.set(x, "HlsManifests", js.Array(value :_*))
+    inline def setHlsManifestsVarargs(value: HlsManifestCreateOrUpdateParameters*): Self = StObject.set(x, "HlsManifests", js.Array(value :_*))
     
-    @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
+    inline def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setSegmentPrefix(value: string): Self = StObject.set(x, "SegmentPrefix", value.asInstanceOf[js.Any])
+    inline def setSegmentPrefix(value: string): Self = StObject.set(x, "SegmentPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentPrefixUndefined: Self = StObject.set(x, "SegmentPrefix", js.undefined)
+    inline def setSegmentPrefixUndefined: Self = StObject.set(x, "SegmentPrefix", js.undefined)
     
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
+    inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
+    inline def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

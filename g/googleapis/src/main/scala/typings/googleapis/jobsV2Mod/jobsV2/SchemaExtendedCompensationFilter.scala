@@ -41,46 +41,33 @@ trait SchemaExtendedCompensationFilter extends StObject {
 }
 object SchemaExtendedCompensationFilter {
   
-  @scala.inline
-  def apply(): SchemaExtendedCompensationFilter = {
+  inline def apply(): SchemaExtendedCompensationFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtendedCompensationFilter]
   }
   
-  @scala.inline
-  implicit class SchemaExtendedCompensationFilterMutableBuilder[Self <: SchemaExtendedCompensationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtendedCompensationFilter](x: Self) {
     
-    @scala.inline
-    def setCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "compensationRange", value.asInstanceOf[js.Any])
+    inline def setCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "compensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompensationRangeUndefined: Self = StObject.set(x, "compensationRange", js.undefined)
+    inline def setCompensationRangeUndefined: Self = StObject.set(x, "compensationRange", js.undefined)
     
-    @scala.inline
-    def setCompensationUnits(value: js.Array[String]): Self = StObject.set(x, "compensationUnits", value.asInstanceOf[js.Any])
+    inline def setCompensationUnits(value: js.Array[String]): Self = StObject.set(x, "compensationUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompensationUnitsUndefined: Self = StObject.set(x, "compensationUnits", js.undefined)
+    inline def setCompensationUnitsUndefined: Self = StObject.set(x, "compensationUnits", js.undefined)
     
-    @scala.inline
-    def setCompensationUnitsVarargs(value: String*): Self = StObject.set(x, "compensationUnits", js.Array(value :_*))
+    inline def setCompensationUnitsVarargs(value: String*): Self = StObject.set(x, "compensationUnits", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setIncludeJobWithUnspecifiedCompensationRange(value: Boolean): Self = StObject.set(x, "includeJobWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
+    inline def setIncludeJobWithUnspecifiedCompensationRange(value: Boolean): Self = StObject.set(x, "includeJobWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeJobWithUnspecifiedCompensationRangeUndefined: Self = StObject.set(x, "includeJobWithUnspecifiedCompensationRange", js.undefined)
+    inline def setIncludeJobWithUnspecifiedCompensationRangeUndefined: Self = StObject.set(x, "includeJobWithUnspecifiedCompensationRange", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

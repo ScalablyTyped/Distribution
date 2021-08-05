@@ -33,46 +33,33 @@ trait ResourceDataSyncSourceWithState extends StObject {
 }
 object ResourceDataSyncSourceWithState {
   
-  @scala.inline
-  def apply(): ResourceDataSyncSourceWithState = {
+  inline def apply(): ResourceDataSyncSourceWithState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceDataSyncSourceWithState]
   }
   
-  @scala.inline
-  implicit class ResourceDataSyncSourceWithStateMutableBuilder[Self <: ResourceDataSyncSourceWithState] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataSyncSourceWithState](x: Self) {
     
-    @scala.inline
-    def setAwsOrganizationsSource(value: ResourceDataSyncAwsOrganizationsSource): Self = StObject.set(x, "AwsOrganizationsSource", value.asInstanceOf[js.Any])
+    inline def setAwsOrganizationsSource(value: ResourceDataSyncAwsOrganizationsSource): Self = StObject.set(x, "AwsOrganizationsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsOrganizationsSourceUndefined: Self = StObject.set(x, "AwsOrganizationsSource", js.undefined)
+    inline def setAwsOrganizationsSourceUndefined: Self = StObject.set(x, "AwsOrganizationsSource", js.undefined)
     
-    @scala.inline
-    def setIncludeFutureRegions(value: ResourceDataSyncIncludeFutureRegions): Self = StObject.set(x, "IncludeFutureRegions", value.asInstanceOf[js.Any])
+    inline def setIncludeFutureRegions(value: ResourceDataSyncIncludeFutureRegions): Self = StObject.set(x, "IncludeFutureRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFutureRegionsUndefined: Self = StObject.set(x, "IncludeFutureRegions", js.undefined)
+    inline def setIncludeFutureRegionsUndefined: Self = StObject.set(x, "IncludeFutureRegions", js.undefined)
     
-    @scala.inline
-    def setSourceRegions(value: ResourceDataSyncSourceRegionList): Self = StObject.set(x, "SourceRegions", value.asInstanceOf[js.Any])
+    inline def setSourceRegions(value: ResourceDataSyncSourceRegionList): Self = StObject.set(x, "SourceRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRegionsUndefined: Self = StObject.set(x, "SourceRegions", js.undefined)
+    inline def setSourceRegionsUndefined: Self = StObject.set(x, "SourceRegions", js.undefined)
     
-    @scala.inline
-    def setSourceRegionsVarargs(value: ResourceDataSyncSourceRegion*): Self = StObject.set(x, "SourceRegions", js.Array(value :_*))
+    inline def setSourceRegionsVarargs(value: ResourceDataSyncSourceRegion*): Self = StObject.set(x, "SourceRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceType(value: ResourceDataSyncSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: ResourceDataSyncSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    @scala.inline
-    def setState(value: ResourceDataSyncState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ResourceDataSyncState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

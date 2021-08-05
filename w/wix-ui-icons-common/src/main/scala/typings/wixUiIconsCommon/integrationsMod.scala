@@ -22,20 +22,16 @@ object integrationsMod extends Shortcut {
   }
   object IntegrationsProps {
     
-    @scala.inline
-    def apply(): IntegrationsProps = {
+    inline def apply(): IntegrationsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntegrationsProps]
     }
     
-    @scala.inline
-    implicit class IntegrationsPropsMutableBuilder[Self <: IntegrationsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IntegrationsProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

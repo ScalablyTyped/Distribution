@@ -43,46 +43,33 @@ trait CapabilityStatementSoftware
 }
 object CapabilityStatementSoftware {
   
-  @scala.inline
-  def apply(name: String): CapabilityStatementSoftware = {
+  inline def apply(name: String): CapabilityStatementSoftware = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementSoftware]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementSoftwareMutableBuilder[Self <: CapabilityStatementSoftware] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementSoftware](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDate(value: dateTime): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: dateTime): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
+    inline def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_releaseDate(value: Element): Self = StObject.set(x, "_releaseDate", value.asInstanceOf[js.Any])
+    inline def set_releaseDate(value: Element): Self = StObject.set(x, "_releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_releaseDateUndefined: Self = StObject.set(x, "_releaseDate", js.undefined)
+    inline def set_releaseDateUndefined: Self = StObject.set(x, "_releaseDate", js.undefined)
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

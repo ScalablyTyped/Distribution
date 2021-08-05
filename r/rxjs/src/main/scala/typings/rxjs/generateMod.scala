@@ -12,29 +12,23 @@ object generateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S]): Observable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any])).asInstanceOf[Observable[S]]
-  @scala.inline
-  def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S], scheduler: SchedulerLike): Observable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[S]]
-  @scala.inline
-  def generate[S](options: GenerateBaseOptions[S]): Observable[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Observable[S]]
-  @scala.inline
-  def generate[T, S](
+  inline def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S]): Observable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any])).asInstanceOf[Observable[S]]
+  inline def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S], scheduler: SchedulerLike): Observable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[S]]
+  inline def generate[S](options: GenerateBaseOptions[S]): Observable[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Observable[S]]
+  inline def generate[T, S](
     initialState: S,
     condition: ConditionFunc[S],
     iterate: IterateFunc[S],
     resultSelector: ResultFunc[S, T]
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  @scala.inline
-  def generate[T, S](
+  inline def generate[T, S](
     initialState: S,
     condition: ConditionFunc[S],
     iterate: IterateFunc[S],
     resultSelector: ResultFunc[S, T],
     scheduler: SchedulerLike
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  @scala.inline
-  def generate[T, S](options: GenerateOptions[T, S]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def generate[T, S](options: GenerateOptions[T, S]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
   type ConditionFunc[S] = js.Function1[/* state */ S, Boolean]
   
@@ -70,32 +64,24 @@ object generateMod {
   }
   object GenerateBaseOptions {
     
-    @scala.inline
-    def apply[S](initialState: S, iterate: S => S): GenerateBaseOptions[S] = {
+    inline def apply[S](initialState: S, iterate: S => S): GenerateBaseOptions[S] = {
       val __obj = js.Dynamic.literal(initialState = initialState.asInstanceOf[js.Any], iterate = js.Any.fromFunction1(iterate))
       __obj.asInstanceOf[GenerateBaseOptions[S]]
     }
     
-    @scala.inline
-    implicit class GenerateBaseOptionsMutableBuilder[Self <: GenerateBaseOptions[?], S] (val x: Self & GenerateBaseOptions[S]) extends AnyVal {
+    extension [Self <: GenerateBaseOptions[?], S](x: Self & GenerateBaseOptions[S]) {
       
-      @scala.inline
-      def setCondition(value: S => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+      inline def setCondition(value: S => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: S): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: S): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterate(value: S => S): Self = StObject.set(x, "iterate", js.Any.fromFunction1(value))
+      inline def setIterate(value: S => S): Self = StObject.set(x, "iterate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScheduler(value: SchedulerLike): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      inline def setScheduler(value: SchedulerLike): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
+      inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
     }
   }
   
@@ -115,17 +101,14 @@ object generateMod {
   }
   object GenerateOptions {
     
-    @scala.inline
-    def apply[T, S](initialState: S, iterate: S => S, resultSelector: S => T): GenerateOptions[T, S] = {
+    inline def apply[T, S](initialState: S, iterate: S => S, resultSelector: S => T): GenerateOptions[T, S] = {
       val __obj = js.Dynamic.literal(initialState = initialState.asInstanceOf[js.Any], iterate = js.Any.fromFunction1(iterate), resultSelector = js.Any.fromFunction1(resultSelector))
       __obj.asInstanceOf[GenerateOptions[T, S]]
     }
     
-    @scala.inline
-    implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions[?, ?], T, S] (val x: Self & (GenerateOptions[T, S])) extends AnyVal {
+    extension [Self <: GenerateOptions[?, ?], T, S](x: Self & (GenerateOptions[T, S])) {
       
-      @scala.inline
-      def setResultSelector(value: S => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
+      inline def setResultSelector(value: S => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
     }
   }
   

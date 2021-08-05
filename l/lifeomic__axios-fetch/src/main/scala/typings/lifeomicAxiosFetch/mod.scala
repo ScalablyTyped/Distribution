@@ -15,8 +15,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildAxiosFetch(axios: AxiosInstance): js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]]
-  @scala.inline
-  def buildAxiosFetch(axios: AxiosInstance, transformer: AxiosTransformer): js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]]
+  inline def buildAxiosFetch(axios: AxiosInstance): js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]]
+  inline def buildAxiosFetch(axios: AxiosInstance, transformer: AxiosTransformer): js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]]
 }

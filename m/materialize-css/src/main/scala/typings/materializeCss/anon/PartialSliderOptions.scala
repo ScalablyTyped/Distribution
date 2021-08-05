@@ -17,37 +17,27 @@ trait PartialSliderOptions extends StObject {
 }
 object PartialSliderOptions {
   
-  @scala.inline
-  def apply(): PartialSliderOptions = {
+  inline def apply(): PartialSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSliderOptions]
   }
   
-  @scala.inline
-  implicit class PartialSliderOptionsMutableBuilder[Self <: PartialSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSliderOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
+    inline def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
+    inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait MeshCreateFromPolygonParams
 }
 object MeshCreateFromPolygonParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object MeshCreateFromPolygonParams {
     __obj.asInstanceOf[MeshCreateFromPolygonParams]
   }
   
-  @scala.inline
-  implicit class MeshCreateFromPolygonParamsMutableBuilder[Self <: MeshCreateFromPolygonParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshCreateFromPolygonParams](x: Self) {
     
-    @scala.inline
-    def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
   }
 }

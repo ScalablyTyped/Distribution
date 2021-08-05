@@ -15,8 +15,7 @@ object fillButtonUniDriverMod {
   }
   object FillButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object fillButtonUniDriverMod {
       __obj.asInstanceOf[FillButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class FillButtonUniDriverMutableBuilder[Self <: FillButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FillButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
+      inline def setGetTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
     }
   }
 }

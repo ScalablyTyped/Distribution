@@ -26,17 +26,13 @@ object urlbar {
   trait EngagementState extends StObject
   object EngagementState {
     
-    @scala.inline
-    def abandonment: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.abandonment = "abandonment".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.abandonment]
+    inline def abandonment: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.abandonment = "abandonment".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.abandonment]
     
-    @scala.inline
-    def discard: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.discard = "discard".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.discard]
+    inline def discard: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.discard = "discard".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.discard]
     
-    @scala.inline
-    def engagement: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.engagement = "engagement".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.engagement]
+    inline def engagement: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.engagement = "engagement".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.engagement]
     
-    @scala.inline
-    def start: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start = "start".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start]
+    inline def start: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start = "start".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start]
   }
   
   /** A query performed in the urlbar. */
@@ -56,29 +52,22 @@ object urlbar {
   }
   object Query {
     
-    @scala.inline
-    def apply(isPrivate: Boolean, maxResults: Double, searchString: String, sources: js.Array[SourceType]): Query = {
+    inline def apply(isPrivate: Boolean, maxResults: Double, searchString: String, sources: js.Array[SourceType]): Query = {
       val __obj = js.Dynamic.literal(isPrivate = isPrivate.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], searchString = searchString.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+      inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+      inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSources(value: js.Array[SourceType]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[SourceType]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesVarargs(value: SourceType*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: SourceType*): Self = StObject.set(x, "sources", js.Array(value :_*))
     }
   }
   
@@ -99,30 +88,23 @@ object urlbar {
   }
   object Result {
     
-    @scala.inline
-    def apply(payload: js.Object, source: SourceType, `type`: ResultType): Result = {
+    inline def apply(payload: js.Object, source: SourceType, `type`: ResultType): Result = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: SourceType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: SourceType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedIndex(value: Double): Self = StObject.set(x, "suggestedIndex", value.asInstanceOf[js.Any])
+      inline def setSuggestedIndex(value: Double): Self = StObject.set(x, "suggestedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedIndexUndefined: Self = StObject.set(x, "suggestedIndex", js.undefined)
+      inline def setSuggestedIndexUndefined: Self = StObject.set(x, "suggestedIndex", js.undefined)
       
-      @scala.inline
-      def setType(value: ResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,23 +122,17 @@ object urlbar {
   trait ResultType extends StObject
   object ResultType {
     
-    @scala.inline
-    def dynamic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dynamic = "dynamic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dynamic]
+    inline def dynamic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dynamic = "dynamic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dynamic]
     
-    @scala.inline
-    def remote_tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab = "remote_tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab]
+    inline def remote_tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab = "remote_tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab]
     
-    @scala.inline
-    def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
+    inline def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
     
-    @scala.inline
-    def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
+    inline def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
     
-    @scala.inline
-    def tip: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tip = "tip".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tip]
+    inline def tip: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tip = "tip".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tip]
     
-    @scala.inline
-    def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
+    inline def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
   }
   
   /** Options to the `search` function. */
@@ -167,20 +143,16 @@ object urlbar {
   }
   object SearchOptions {
     
-    @scala.inline
-    def apply(): SearchOptions = {
+    inline def apply(): SearchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchOptions]
     }
     
-    @scala.inline
-    implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SearchOptions](x: Self) {
       
-      @scala.inline
-      def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     }
   }
   
@@ -198,23 +170,17 @@ object urlbar {
   trait SourceType extends StObject
   object SourceType {
     
-    @scala.inline
-    def bookmarks: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks = "bookmarks".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks]
+    inline def bookmarks: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks = "bookmarks".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks]
     
-    @scala.inline
-    def history: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history = "history".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history]
+    inline def history: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history = "history".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history]
     
-    @scala.inline
-    def local: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.local = "local".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.local]
+    inline def local: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.local = "local".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.local]
     
-    @scala.inline
-    def network: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.network = "network".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.network]
+    inline def network: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.network = "network".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.network]
     
-    @scala.inline
-    def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
+    inline def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
     
-    @scala.inline
-    def tabs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs = "tabs".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs]
+    inline def tabs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs = "tabs".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs]
   }
   
   trait UrlbarOnBehaviorRequestedEvent[TCallback] extends StObject {
@@ -227,8 +193,7 @@ object urlbar {
   }
   object UrlbarOnBehaviorRequestedEvent {
     
-    @scala.inline
-    def apply[TCallback](
+    inline def apply[TCallback](
       addListener: (TCallback, String) => Unit,
       hasListener: TCallback => Boolean,
       removeListener: TCallback => Unit
@@ -237,17 +202,13 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnBehaviorRequestedEvent[TCallback]]
     }
     
-    @scala.inline
-    implicit class UrlbarOnBehaviorRequestedEventMutableBuilder[Self <: UrlbarOnBehaviorRequestedEvent[?], TCallback] (val x: Self & UrlbarOnBehaviorRequestedEvent[TCallback]) extends AnyVal {
+    extension [Self <: UrlbarOnBehaviorRequestedEvent[?], TCallback](x: Self & UrlbarOnBehaviorRequestedEvent[TCallback]) {
       
-      @scala.inline
-      def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+      inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -261,8 +222,7 @@ object urlbar {
   }
   object UrlbarOnEngagementEvent {
     
-    @scala.inline
-    def apply[TCallback](
+    inline def apply[TCallback](
       addListener: (TCallback, String) => Unit,
       hasListener: TCallback => Boolean,
       removeListener: TCallback => Unit
@@ -271,17 +231,13 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnEngagementEvent[TCallback]]
     }
     
-    @scala.inline
-    implicit class UrlbarOnEngagementEventMutableBuilder[Self <: UrlbarOnEngagementEvent[?], TCallback] (val x: Self & UrlbarOnEngagementEvent[TCallback]) extends AnyVal {
+    extension [Self <: UrlbarOnEngagementEvent[?], TCallback](x: Self & UrlbarOnEngagementEvent[TCallback]) {
       
-      @scala.inline
-      def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+      inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -295,8 +251,7 @@ object urlbar {
   }
   object UrlbarOnQueryCanceledEvent {
     
-    @scala.inline
-    def apply[TCallback](
+    inline def apply[TCallback](
       addListener: (TCallback, String) => Unit,
       hasListener: TCallback => Boolean,
       removeListener: TCallback => Unit
@@ -305,17 +260,13 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnQueryCanceledEvent[TCallback]]
     }
     
-    @scala.inline
-    implicit class UrlbarOnQueryCanceledEventMutableBuilder[Self <: UrlbarOnQueryCanceledEvent[?], TCallback] (val x: Self & UrlbarOnQueryCanceledEvent[TCallback]) extends AnyVal {
+    extension [Self <: UrlbarOnQueryCanceledEvent[?], TCallback](x: Self & UrlbarOnQueryCanceledEvent[TCallback]) {
       
-      @scala.inline
-      def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+      inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -329,8 +280,7 @@ object urlbar {
   }
   object UrlbarOnResultPickedEvent {
     
-    @scala.inline
-    def apply[TCallback](
+    inline def apply[TCallback](
       addListener: (TCallback, String) => Unit,
       hasListener: TCallback => Boolean,
       removeListener: TCallback => Unit
@@ -339,17 +289,13 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnResultPickedEvent[TCallback]]
     }
     
-    @scala.inline
-    implicit class UrlbarOnResultPickedEventMutableBuilder[Self <: UrlbarOnResultPickedEvent[?], TCallback] (val x: Self & UrlbarOnResultPickedEvent[TCallback]) extends AnyVal {
+    extension [Self <: UrlbarOnResultPickedEvent[?], TCallback](x: Self & UrlbarOnResultPickedEvent[TCallback]) {
       
-      @scala.inline
-      def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+      inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -363,8 +309,7 @@ object urlbar {
   }
   object UrlbarOnResultsRequestedEvent {
     
-    @scala.inline
-    def apply[TCallback](
+    inline def apply[TCallback](
       addListener: (TCallback, String) => Unit,
       hasListener: TCallback => Boolean,
       removeListener: TCallback => Unit
@@ -373,17 +318,13 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnResultsRequestedEvent[TCallback]]
     }
     
-    @scala.inline
-    implicit class UrlbarOnResultsRequestedEventMutableBuilder[Self <: UrlbarOnResultsRequestedEvent[?], TCallback] (val x: Self & UrlbarOnResultsRequestedEvent[TCallback]) extends AnyVal {
+    extension [Self <: UrlbarOnResultsRequestedEvent[?], TCallback](x: Self & UrlbarOnResultsRequestedEvent[TCallback]) {
       
-      @scala.inline
-      def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+      inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
 }

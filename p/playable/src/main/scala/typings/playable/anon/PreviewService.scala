@@ -14,19 +14,15 @@ trait PreviewService extends StObject {
 }
 object PreviewService {
   
-  @scala.inline
-  def apply(previewService: IPreviewService, rootContainer: IRootContainer): PreviewService = {
+  inline def apply(previewService: IPreviewService, rootContainer: IRootContainer): PreviewService = {
     val __obj = js.Dynamic.literal(previewService = previewService.asInstanceOf[js.Any], rootContainer = rootContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewService]
   }
   
-  @scala.inline
-  implicit class PreviewServiceMutableBuilder[Self <: PreviewService] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewService](x: Self) {
     
-    @scala.inline
-    def setPreviewService(value: IPreviewService): Self = StObject.set(x, "previewService", value.asInstanceOf[js.Any])
+    inline def setPreviewService(value: IPreviewService): Self = StObject.set(x, "previewService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
+    inline def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
   }
 }

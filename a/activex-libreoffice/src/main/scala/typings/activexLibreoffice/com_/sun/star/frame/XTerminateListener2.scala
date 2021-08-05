@@ -24,8 +24,7 @@ trait XTerminateListener2
 }
 object XTerminateListener2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancelTermination: EventObject => Unit,
     disposing: EventObject => Unit,
@@ -38,10 +37,8 @@ object XTerminateListener2 {
     __obj.asInstanceOf[XTerminateListener2]
   }
   
-  @scala.inline
-  implicit class XTerminateListener2MutableBuilder[Self <: XTerminateListener2] (val x: Self) extends AnyVal {
+  extension [Self <: XTerminateListener2](x: Self) {
     
-    @scala.inline
-    def setCancelTermination(value: EventObject => Unit): Self = StObject.set(x, "cancelTermination", js.Any.fromFunction1(value))
+    inline def setCancelTermination(value: EventObject => Unit): Self = StObject.set(x, "cancelTermination", js.Any.fromFunction1(value))
   }
 }

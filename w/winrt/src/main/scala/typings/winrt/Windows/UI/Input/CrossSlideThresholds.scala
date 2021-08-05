@@ -16,25 +16,19 @@ trait CrossSlideThresholds extends StObject {
 }
 object CrossSlideThresholds {
   
-  @scala.inline
-  def apply(rearrangeStart: Double, selectionStart: Double, speedBumpEnd: Double, speedBumpStart: Double): CrossSlideThresholds = {
+  inline def apply(rearrangeStart: Double, selectionStart: Double, speedBumpEnd: Double, speedBumpStart: Double): CrossSlideThresholds = {
     val __obj = js.Dynamic.literal(rearrangeStart = rearrangeStart.asInstanceOf[js.Any], selectionStart = selectionStart.asInstanceOf[js.Any], speedBumpEnd = speedBumpEnd.asInstanceOf[js.Any], speedBumpStart = speedBumpStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossSlideThresholds]
   }
   
-  @scala.inline
-  implicit class CrossSlideThresholdsMutableBuilder[Self <: CrossSlideThresholds] (val x: Self) extends AnyVal {
+  extension [Self <: CrossSlideThresholds](x: Self) {
     
-    @scala.inline
-    def setRearrangeStart(value: Double): Self = StObject.set(x, "rearrangeStart", value.asInstanceOf[js.Any])
+    inline def setRearrangeStart(value: Double): Self = StObject.set(x, "rearrangeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
+    inline def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedBumpEnd(value: Double): Self = StObject.set(x, "speedBumpEnd", value.asInstanceOf[js.Any])
+    inline def setSpeedBumpEnd(value: Double): Self = StObject.set(x, "speedBumpEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedBumpStart(value: Double): Self = StObject.set(x, "speedBumpStart", value.asInstanceOf[js.Any])
+    inline def setSpeedBumpStart(value: Double): Self = StObject.set(x, "speedBumpStart", value.asInstanceOf[js.Any])
   }
 }

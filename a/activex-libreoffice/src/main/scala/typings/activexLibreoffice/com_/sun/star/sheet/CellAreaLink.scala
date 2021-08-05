@@ -48,8 +48,7 @@ trait CellAreaLink
 }
 object CellAreaLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestArea: CellRangeAddress,
     Filter: String,
     FilterOptions: String,
@@ -80,22 +79,16 @@ object CellAreaLink {
     __obj.asInstanceOf[CellAreaLink]
   }
   
-  @scala.inline
-  implicit class CellAreaLinkMutableBuilder[Self <: CellAreaLink] (val x: Self) extends AnyVal {
+  extension [Self <: CellAreaLink](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOptions(value: String): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
+    inline def setFilterOptions(value: String): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshDelay(value: Double): Self = StObject.set(x, "RefreshDelay", value.asInstanceOf[js.Any])
+    inline def setRefreshDelay(value: Double): Self = StObject.set(x, "RefreshDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshPeriod(value: Double): Self = StObject.set(x, "RefreshPeriod", value.asInstanceOf[js.Any])
+    inline def setRefreshPeriod(value: Double): Self = StObject.set(x, "RefreshPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

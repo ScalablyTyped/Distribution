@@ -18,25 +18,19 @@ trait MetricPolicy extends StObject {
 }
 object MetricPolicy {
   
-  @scala.inline
-  def apply(ContainerLevelMetrics: ContainerLevelMetrics): MetricPolicy = {
+  inline def apply(ContainerLevelMetrics: ContainerLevelMetrics): MetricPolicy = {
     val __obj = js.Dynamic.literal(ContainerLevelMetrics = ContainerLevelMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricPolicy]
   }
   
-  @scala.inline
-  implicit class MetricPolicyMutableBuilder[Self <: MetricPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: MetricPolicy](x: Self) {
     
-    @scala.inline
-    def setContainerLevelMetrics(value: ContainerLevelMetrics): Self = StObject.set(x, "ContainerLevelMetrics", value.asInstanceOf[js.Any])
+    inline def setContainerLevelMetrics(value: ContainerLevelMetrics): Self = StObject.set(x, "ContainerLevelMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricPolicyRules(value: MetricPolicyRules): Self = StObject.set(x, "MetricPolicyRules", value.asInstanceOf[js.Any])
+    inline def setMetricPolicyRules(value: MetricPolicyRules): Self = StObject.set(x, "MetricPolicyRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricPolicyRulesUndefined: Self = StObject.set(x, "MetricPolicyRules", js.undefined)
+    inline def setMetricPolicyRulesUndefined: Self = StObject.set(x, "MetricPolicyRules", js.undefined)
     
-    @scala.inline
-    def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = StObject.set(x, "MetricPolicyRules", js.Array(value :_*))
+    inline def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = StObject.set(x, "MetricPolicyRules", js.Array(value :_*))
   }
 }

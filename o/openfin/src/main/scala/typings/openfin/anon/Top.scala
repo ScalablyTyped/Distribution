@@ -18,19 +18,15 @@ trait Top extends StObject {
 }
 object Top {
   
-  @scala.inline
-  def apply(left: Double, top: Double): Top = {
+  inline def apply(left: Double, top: Double): Top = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Top]
   }
   
-  @scala.inline
-  implicit class TopMutableBuilder[Self <: Top] (val x: Self) extends AnyVal {
+  extension [Self <: Top](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

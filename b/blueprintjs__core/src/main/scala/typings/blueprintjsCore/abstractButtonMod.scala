@@ -30,9 +30,9 @@ object abstractButtonMod {
     def this(props: IButtonProps & H) = this()
     def this(props: IButtonProps & H, context: js.Any) = this()
     
-    var buttonRef: HTMLElement | IRefObject[HTMLElement] | Null = js.native
+    /* protected */ var buttonRef: HTMLElement | IRefObject[HTMLElement] | Null = js.native
     
-    var currentKeyDown: js.Any = js.native
+    /* private */ var currentKeyDown: js.Any = js.native
     
     /* protected */ def getCommonButtonProps(): ClassName[H] = js.native
     
@@ -103,77 +103,54 @@ object abstractButtonMod {
   }
   object IButtonProps {
     
-    @scala.inline
-    def apply(): IButtonProps = {
+    inline def apply(): IButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IButtonProps]
     }
     
-    @scala.inline
-    implicit class IButtonPropsMutableBuilder[Self <: IButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: IButtonProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAlignText(value: Alignment): Self = StObject.set(x, "alignText", value.asInstanceOf[js.Any])
+      inline def setAlignText(value: Alignment): Self = StObject.set(x, "alignText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignTextUndefined: Self = StObject.set(x, "alignText", js.undefined)
+      inline def setAlignTextUndefined: Self = StObject.set(x, "alignText", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
+      inline def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
+      inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      @scala.inline
-      def setOutlined(value: Boolean): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+      inline def setOutlined(value: Boolean): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
+      inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
       
-      @scala.inline
-      def setRightIcon(value: IconName | MaybeElement): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+      inline def setRightIcon(value: IconName | MaybeElement): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightIconNull: Self = StObject.set(x, "rightIcon", null)
+      inline def setRightIconNull: Self = StObject.set(x, "rightIcon", null)
       
-      @scala.inline
-      def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
+      inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -183,17 +160,14 @@ object abstractButtonMod {
   }
   object IButtonState {
     
-    @scala.inline
-    def apply(isActive: Boolean): IButtonState = {
+    inline def apply(isActive: Boolean): IButtonState = {
       val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
       __obj.asInstanceOf[IButtonState]
     }
     
-    @scala.inline
-    implicit class IButtonStateMutableBuilder[Self <: IButtonState] (val x: Self) extends AnyVal {
+    extension [Self <: IButtonState](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }
   }
 }

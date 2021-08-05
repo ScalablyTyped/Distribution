@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFNamedValueType extends StObject
 object MFNamedValueType {
   
-  @scala.inline
-  def AdminConfiguration: `7` = 7.asInstanceOf[`7`]
+  inline def AdminConfiguration: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ConfigurationValue: `3` = 3.asInstanceOf[`3`]
+  inline def ConfigurationValue: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def FolderConfiguration: `6` = 6.asInstanceOf[`6`]
+  inline def FolderConfiguration: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def RegistryValue: `5` = 5.asInstanceOf[`5`]
+  inline def RegistryValue: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def SystemAdminConfiguration: `8` = 8.asInstanceOf[`8`]
+  inline def SystemAdminConfiguration: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def UserDefinedValue: `4` = 4.asInstanceOf[`4`]
+  inline def UserDefinedValue: `4` = 4.asInstanceOf[`4`]
 }

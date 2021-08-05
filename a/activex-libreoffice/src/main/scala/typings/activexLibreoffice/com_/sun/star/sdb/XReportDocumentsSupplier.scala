@@ -31,8 +31,7 @@ trait XReportDocumentsSupplier
 }
 object XReportDocumentsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReportDocuments: XNameAccess,
     acquire: () => Unit,
     getReportDocuments: () => XNameAccess,
@@ -43,13 +42,10 @@ object XReportDocumentsSupplier {
     __obj.asInstanceOf[XReportDocumentsSupplier]
   }
   
-  @scala.inline
-  implicit class XReportDocumentsSupplierMutableBuilder[Self <: XReportDocumentsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XReportDocumentsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetReportDocuments(value: () => XNameAccess): Self = StObject.set(x, "getReportDocuments", js.Any.fromFunction0(value))
+    inline def setGetReportDocuments(value: () => XNameAccess): Self = StObject.set(x, "getReportDocuments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportDocuments(value: XNameAccess): Self = StObject.set(x, "ReportDocuments", value.asInstanceOf[js.Any])
+    inline def setReportDocuments(value: XNameAccess): Self = StObject.set(x, "ReportDocuments", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,8 @@ object mod {
   @JSImport("electron-publish", "HttpPublisher")
   @js.native
   abstract class HttpPublisher protected () extends Publisher {
-    protected def this(context: PublishContext) = this()
-    protected def this(context: PublishContext, useSafeArtifactName: Boolean) = this()
+    /* protected */ def this(context: PublishContext) = this()
+    /* protected */ def this(context: PublishContext, useSafeArtifactName: Boolean) = this()
     
     /* protected */ def doUpload(
       fileName: String,
@@ -47,7 +47,7 @@ object mod {
       file: String
     ): js.Promise[js.Any] = js.native
     
-    val useSafeArtifactName: js.Any = js.native
+    /* private */ val useSafeArtifactName: js.Any = js.native
   }
   
   @JSImport("electron-publish", "ProgressCallback")
@@ -60,9 +60,9 @@ object mod {
   @JSImport("electron-publish", "Publisher")
   @js.native
   abstract class Publisher protected () extends StObject {
-    protected def this(context: PublishContext) = this()
+    /* protected */ def this(context: PublishContext) = this()
     
-    val context: PublishContext = js.native
+    /* protected */ val context: PublishContext = js.native
     
     /* protected */ def createProgressBar(fileName: String, size: Double): ProgressBar | Null = js.native
     
@@ -79,8 +79,7 @@ object mod {
     def upload(task: UploadTask): js.Promise[js.Any] = js.native
   }
   
-  @scala.inline
-  def getCiTag(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCiTag")().asInstanceOf[String | Null]
+  inline def getCiTag(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCiTag")().asInstanceOf[String | Null]
   
   trait PublishContext extends StObject {
     
@@ -90,23 +89,18 @@ object mod {
   }
   object PublishContext {
     
-    @scala.inline
-    def apply(cancellationToken: CancellationToken): PublishContext = {
+    inline def apply(cancellationToken: CancellationToken): PublishContext = {
       val __obj = js.Dynamic.literal(cancellationToken = cancellationToken.asInstanceOf[js.Any], progress = null)
       __obj.asInstanceOf[PublishContext]
     }
     
-    @scala.inline
-    implicit class PublishContextMutableBuilder[Self <: PublishContext] (val x: Self) extends AnyVal {
+    extension [Self <: PublishContext](x: Self) {
       
-      @scala.inline
-      def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
+      inline def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: MultiProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: MultiProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressNull: Self = StObject.set(x, "progress", null)
+      inline def setProgressNull: Self = StObject.set(x, "progress", null)
     }
   }
   
@@ -116,23 +110,18 @@ object mod {
   }
   object PublishOptions {
     
-    @scala.inline
-    def apply(): PublishOptions = {
+    inline def apply(): PublishOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublishOptions]
     }
     
-    @scala.inline
-    implicit class PublishOptionsMutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PublishOptions](x: Self) {
       
-      @scala.inline
-      def setPublish(value: PublishPolicy): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+      inline def setPublish(value: PublishPolicy): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishNull: Self = StObject.set(x, "publish", null)
+      inline def setPublishNull: Self = StObject.set(x, "publish", null)
       
-      @scala.inline
-      def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+      inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
     }
   }
   
@@ -145,17 +134,13 @@ object mod {
   trait PublishPolicy extends StObject
   object PublishPolicy {
     
-    @scala.inline
-    def always: typings.electronPublish.electronPublishStrings.always = "always".asInstanceOf[typings.electronPublish.electronPublishStrings.always]
+    inline def always: typings.electronPublish.electronPublishStrings.always = "always".asInstanceOf[typings.electronPublish.electronPublishStrings.always]
     
-    @scala.inline
-    def never: typings.electronPublish.electronPublishStrings.never = "never".asInstanceOf[typings.electronPublish.electronPublishStrings.never]
+    inline def never: typings.electronPublish.electronPublishStrings.never = "never".asInstanceOf[typings.electronPublish.electronPublishStrings.never]
     
-    @scala.inline
-    def onTag: typings.electronPublish.electronPublishStrings.onTag = "onTag".asInstanceOf[typings.electronPublish.electronPublishStrings.onTag]
+    inline def onTag: typings.electronPublish.electronPublishStrings.onTag = "onTag".asInstanceOf[typings.electronPublish.electronPublishStrings.onTag]
     
-    @scala.inline
-    def onTagOrDraft: typings.electronPublish.electronPublishStrings.onTagOrDraft = "onTagOrDraft".asInstanceOf[typings.electronPublish.electronPublishStrings.onTagOrDraft]
+    inline def onTagOrDraft: typings.electronPublish.electronPublishStrings.onTagOrDraft = "onTagOrDraft".asInstanceOf[typings.electronPublish.electronPublishStrings.onTagOrDraft]
   }
   
   trait UploadTask extends StObject {
@@ -170,41 +155,30 @@ object mod {
   }
   object UploadTask {
     
-    @scala.inline
-    def apply(file: String): UploadTask = {
+    inline def apply(file: String): UploadTask = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], arch = null)
       __obj.asInstanceOf[UploadTask]
     }
     
-    @scala.inline
-    implicit class UploadTaskMutableBuilder[Self <: UploadTask] (val x: Self) extends AnyVal {
+    extension [Self <: UploadTask](x: Self) {
       
-      @scala.inline
-      def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchNull: Self = StObject.set(x, "arch", null)
+      inline def setArchNull: Self = StObject.set(x, "arch", null)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileContent(value: Buffer): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: Buffer): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileContentNull: Self = StObject.set(x, "fileContent", null)
+      inline def setFileContentNull: Self = StObject.set(x, "fileContent", null)
       
-      @scala.inline
-      def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
+      inline def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
       
-      @scala.inline
-      def setSafeArtifactName(value: String): Self = StObject.set(x, "safeArtifactName", value.asInstanceOf[js.Any])
+      inline def setSafeArtifactName(value: String): Self = StObject.set(x, "safeArtifactName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeArtifactNameNull: Self = StObject.set(x, "safeArtifactName", null)
+      inline def setSafeArtifactNameNull: Self = StObject.set(x, "safeArtifactName", null)
       
-      @scala.inline
-      def setSafeArtifactNameUndefined: Self = StObject.set(x, "safeArtifactName", js.undefined)
+      inline def setSafeArtifactNameUndefined: Self = StObject.set(x, "safeArtifactName", js.undefined)
     }
   }
 }

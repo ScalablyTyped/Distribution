@@ -23,25 +23,19 @@ trait UpdateAccountSettingsRequest extends StObject {
 }
 object UpdateAccountSettingsRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DefaultNamespace: Namespace): UpdateAccountSettingsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DefaultNamespace: Namespace): UpdateAccountSettingsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DefaultNamespace = DefaultNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAccountSettingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAccountSettingsRequestMutableBuilder[Self <: UpdateAccountSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAccountSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNamespace(value: Namespace): Self = StObject.set(x, "DefaultNamespace", value.asInstanceOf[js.Any])
+    inline def setDefaultNamespace(value: Namespace): Self = StObject.set(x, "DefaultNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEmail(value: String): Self = StObject.set(x, "NotificationEmail", value.asInstanceOf[js.Any])
+    inline def setNotificationEmail(value: String): Self = StObject.set(x, "NotificationEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEmailUndefined: Self = StObject.set(x, "NotificationEmail", js.undefined)
+    inline def setNotificationEmailUndefined: Self = StObject.set(x, "NotificationEmail", js.undefined)
   }
 }

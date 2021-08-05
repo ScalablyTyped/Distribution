@@ -23,31 +23,23 @@ trait ConfigIdResponse extends StObject {
 }
 object ConfigIdResponse {
   
-  @scala.inline
-  def apply(): ConfigIdResponse = {
+  inline def apply(): ConfigIdResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigIdResponse]
   }
   
-  @scala.inline
-  implicit class ConfigIdResponseMutableBuilder[Self <: ConfigIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigIdResponse](x: Self) {
     
-    @scala.inline
-    def setConfigArn(value: ConfigArn): Self = StObject.set(x, "configArn", value.asInstanceOf[js.Any])
+    inline def setConfigArn(value: ConfigArn): Self = StObject.set(x, "configArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigArnUndefined: Self = StObject.set(x, "configArn", js.undefined)
+    inline def setConfigArnUndefined: Self = StObject.set(x, "configArn", js.undefined)
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
+    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
-    @scala.inline
-    def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
+    inline def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigTypeUndefined: Self = StObject.set(x, "configType", js.undefined)
+    inline def setConfigTypeUndefined: Self = StObject.set(x, "configType", js.undefined)
   }
 }

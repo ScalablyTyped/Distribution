@@ -18,43 +18,31 @@ trait PostStarParams extends StObject {
 }
 object PostStarParams {
   
-  @scala.inline
-  def apply(): PostStarParams = {
+  inline def apply(): PostStarParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostStarParams]
   }
   
-  @scala.inline
-  implicit class PostStarParamsMutableBuilder[Self <: PostStarParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostStarParams](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: Double): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: Double): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
+    inline def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
     
-    @scala.inline
-    def setIssueId(value: Double): Self = StObject.set(x, "issueId", value.asInstanceOf[js.Any])
+    inline def setIssueId(value: Double): Self = StObject.set(x, "issueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueIdUndefined: Self = StObject.set(x, "issueId", js.undefined)
+    inline def setIssueIdUndefined: Self = StObject.set(x, "issueId", js.undefined)
     
-    @scala.inline
-    def setPullRequestCommentId(value: Double): Self = StObject.set(x, "pullRequestCommentId", value.asInstanceOf[js.Any])
+    inline def setPullRequestCommentId(value: Double): Self = StObject.set(x, "pullRequestCommentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestCommentIdUndefined: Self = StObject.set(x, "pullRequestCommentId", js.undefined)
+    inline def setPullRequestCommentIdUndefined: Self = StObject.set(x, "pullRequestCommentId", js.undefined)
     
-    @scala.inline
-    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
+    inline def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
     
-    @scala.inline
-    def setWikiId(value: Double): Self = StObject.set(x, "wikiId", value.asInstanceOf[js.Any])
+    inline def setWikiId(value: Double): Self = StObject.set(x, "wikiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWikiIdUndefined: Self = StObject.set(x, "wikiId", js.undefined)
+    inline def setWikiIdUndefined: Self = StObject.set(x, "wikiId", js.undefined)
   }
 }

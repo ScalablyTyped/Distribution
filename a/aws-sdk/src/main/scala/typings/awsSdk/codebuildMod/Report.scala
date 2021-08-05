@@ -68,85 +68,59 @@ trait Report extends StObject {
 }
 object Report {
   
-  @scala.inline
-  def apply(): Report = {
+  inline def apply(): Report = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Report]
   }
   
-  @scala.inline
-  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+  extension [Self <: Report](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCodeCoverageSummary(value: CodeCoverageReportSummary): Self = StObject.set(x, "codeCoverageSummary", value.asInstanceOf[js.Any])
+    inline def setCodeCoverageSummary(value: CodeCoverageReportSummary): Self = StObject.set(x, "codeCoverageSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeCoverageSummaryUndefined: Self = StObject.set(x, "codeCoverageSummary", js.undefined)
+    inline def setCodeCoverageSummaryUndefined: Self = StObject.set(x, "codeCoverageSummary", js.undefined)
     
-    @scala.inline
-    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
-    @scala.inline
-    def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+    inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     
-    @scala.inline
-    def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
+    inline def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
+    inline def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReportGroupArn(value: NonEmptyString): Self = StObject.set(x, "reportGroupArn", value.asInstanceOf[js.Any])
+    inline def setReportGroupArn(value: NonEmptyString): Self = StObject.set(x, "reportGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportGroupArnUndefined: Self = StObject.set(x, "reportGroupArn", js.undefined)
+    inline def setReportGroupArnUndefined: Self = StObject.set(x, "reportGroupArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReportStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReportStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTestSummary(value: TestReportSummary): Self = StObject.set(x, "testSummary", value.asInstanceOf[js.Any])
+    inline def setTestSummary(value: TestReportSummary): Self = StObject.set(x, "testSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSummaryUndefined: Self = StObject.set(x, "testSummary", js.undefined)
+    inline def setTestSummaryUndefined: Self = StObject.set(x, "testSummary", js.undefined)
     
-    @scala.inline
-    def setTruncated(value: WrapperBoolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: WrapperBoolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
     
-    @scala.inline
-    def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

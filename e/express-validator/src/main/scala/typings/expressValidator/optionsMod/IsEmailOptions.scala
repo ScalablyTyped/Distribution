@@ -14,31 +14,23 @@ trait IsEmailOptions extends StObject {
 }
 object IsEmailOptions {
   
-  @scala.inline
-  def apply(): IsEmailOptions = {
+  inline def apply(): IsEmailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsEmailOptions]
   }
   
-  @scala.inline
-  implicit class IsEmailOptionsMutableBuilder[Self <: IsEmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsEmailOptions](x: Self) {
     
-    @scala.inline
-    def setAllow_display_name(value: Boolean): Self = StObject.set(x, "allow_display_name", value.asInstanceOf[js.Any])
+    inline def setAllow_display_name(value: Boolean): Self = StObject.set(x, "allow_display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_display_nameUndefined: Self = StObject.set(x, "allow_display_name", js.undefined)
+    inline def setAllow_display_nameUndefined: Self = StObject.set(x, "allow_display_name", js.undefined)
     
-    @scala.inline
-    def setAllow_utf8_local_part(value: Boolean): Self = StObject.set(x, "allow_utf8_local_part", value.asInstanceOf[js.Any])
+    inline def setAllow_utf8_local_part(value: Boolean): Self = StObject.set(x, "allow_utf8_local_part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_utf8_local_partUndefined: Self = StObject.set(x, "allow_utf8_local_part", js.undefined)
+    inline def setAllow_utf8_local_partUndefined: Self = StObject.set(x, "allow_utf8_local_part", js.undefined)
     
-    @scala.inline
-    def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
+    inline def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequire_tldUndefined: Self = StObject.set(x, "require_tld", js.undefined)
+    inline def setRequire_tldUndefined: Self = StObject.set(x, "require_tld", js.undefined)
   }
 }

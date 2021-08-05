@@ -21,8 +21,7 @@ trait TypeofpartialSig extends StObject {
 }
 object TypeofpartialSig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAddToArray: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean,
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean,
     decode: KeyValue => PartialSig,
@@ -33,22 +32,16 @@ object TypeofpartialSig {
     __obj.asInstanceOf[TypeofpartialSig]
   }
   
-  @scala.inline
-  implicit class TypeofpartialSigMutableBuilder[Self <: TypeofpartialSig] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpartialSig](x: Self) {
     
-    @scala.inline
-    def setCanAddToArray(value: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
+    inline def setCanAddToArray(value: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => PartialSig): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => PartialSig): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: PartialSig => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: PartialSig => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: /* "{ pubkey: Buffer; signature: Buffer; }" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: /* "{ pubkey: Buffer; signature: Buffer; }" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

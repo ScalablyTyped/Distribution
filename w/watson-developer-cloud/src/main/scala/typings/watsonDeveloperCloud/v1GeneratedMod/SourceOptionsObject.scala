@@ -15,22 +15,17 @@ trait SourceOptionsObject extends StObject {
 }
 object SourceOptionsObject {
   
-  @scala.inline
-  def apply(name: String): SourceOptionsObject = {
+  inline def apply(name: String): SourceOptionsObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsObject]
   }
   
-  @scala.inline
-  implicit class SourceOptionsObjectMutableBuilder[Self <: SourceOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SourceOptionsObject](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

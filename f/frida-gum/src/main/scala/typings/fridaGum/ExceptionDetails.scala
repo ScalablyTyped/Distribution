@@ -37,32 +37,24 @@ trait ExceptionDetails extends StObject {
 }
 object ExceptionDetails {
   
-  @scala.inline
-  def apply(address: NativePointer, context: CpuContext, nativeContext: NativePointer, `type`: ExceptionType): ExceptionDetails = {
+  inline def apply(address: NativePointer, context: CpuContext, nativeContext: NativePointer, `type`: ExceptionType): ExceptionDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], nativeContext = nativeContext.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionDetails]
   }
   
-  @scala.inline
-  implicit class ExceptionDetailsMutableBuilder[Self <: ExceptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptionDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: ExceptionMemoryDetails): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: ExceptionMemoryDetails): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
-    @scala.inline
-    def setNativeContext(value: NativePointer): Self = StObject.set(x, "nativeContext", value.asInstanceOf[js.Any])
+    inline def setNativeContext(value: NativePointer): Self = StObject.set(x, "nativeContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExceptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExceptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

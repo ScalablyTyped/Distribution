@@ -48,38 +48,28 @@ object cardContentMod {
   }
   object CardContentProps {
     
-    @scala.inline
-    def apply(): CardContentProps = {
+    inline def apply(): CardContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardContentProps]
     }
     
-    @scala.inline
-    implicit class CardContentPropsMutableBuilder[Self <: CardContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardContentProps](x: Self) {
       
-      @scala.inline
-      def setDisableExtraPadding(value: Boolean): Self = StObject.set(x, "disableExtraPadding", value.asInstanceOf[js.Any])
+      inline def setDisableExtraPadding(value: Boolean): Self = StObject.set(x, "disableExtraPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableExtraPaddingUndefined: Self = StObject.set(x, "disableExtraPadding", js.undefined)
+      inline def setDisableExtraPaddingUndefined: Self = StObject.set(x, "disableExtraPadding", js.undefined)
       
-      @scala.inline
-      def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
+      inline def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
+      inline def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
       
-      @scala.inline
-      def setDisableParagraphMargin(value: Boolean): Self = StObject.set(x, "disableParagraphMargin", value.asInstanceOf[js.Any])
+      inline def setDisableParagraphMargin(value: Boolean): Self = StObject.set(x, "disableParagraphMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableParagraphMarginUndefined: Self = StObject.set(x, "disableParagraphMargin", js.undefined)
+      inline def setDisableParagraphMarginUndefined: Self = StObject.set(x, "disableParagraphMargin", js.undefined)
       
-      @scala.inline
-      def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
+      inline def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSecondaryColorUndefined: Self = StObject.set(x, "disableSecondaryColor", js.undefined)
+      inline def setDisableSecondaryColorUndefined: Self = StObject.set(x, "disableSecondaryColor", js.undefined)
     }
   }
 }

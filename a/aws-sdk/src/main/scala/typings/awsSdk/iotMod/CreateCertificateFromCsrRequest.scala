@@ -18,22 +18,17 @@ trait CreateCertificateFromCsrRequest extends StObject {
 }
 object CreateCertificateFromCsrRequest {
   
-  @scala.inline
-  def apply(certificateSigningRequest: CertificateSigningRequest): CreateCertificateFromCsrRequest = {
+  inline def apply(certificateSigningRequest: CertificateSigningRequest): CreateCertificateFromCsrRequest = {
     val __obj = js.Dynamic.literal(certificateSigningRequest = certificateSigningRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCertificateFromCsrRequest]
   }
   
-  @scala.inline
-  implicit class CreateCertificateFromCsrRequestMutableBuilder[Self <: CreateCertificateFromCsrRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCertificateFromCsrRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateSigningRequest(value: CertificateSigningRequest): Self = StObject.set(x, "certificateSigningRequest", value.asInstanceOf[js.Any])
+    inline def setCertificateSigningRequest(value: CertificateSigningRequest): Self = StObject.set(x, "certificateSigningRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsActive(value: SetAsActive): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
+    inline def setSetAsActive(value: SetAsActive): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
+    inline def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
   }
 }

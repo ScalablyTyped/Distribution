@@ -24,19 +24,15 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(bootpag: Options => JQuery, on: (page, PageEventHandler) => JQuery): JQuery = {
+  inline def apply(bootpag: Options => JQuery, on: (page, PageEventHandler) => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(bootpag = js.Any.fromFunction1(bootpag), on = js.Any.fromFunction2(on))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setBootpag(value: Options => JQuery): Self = StObject.set(x, "bootpag", js.Any.fromFunction1(value))
+    inline def setBootpag(value: Options => JQuery): Self = StObject.set(x, "bootpag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn(value: (page, PageEventHandler) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (page, PageEventHandler) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

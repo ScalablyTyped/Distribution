@@ -10,8 +10,7 @@ object global {
   @JSGlobal("ActiveXObject")
   @js.native
   def ActiveXObject: typings.activexInterop.ActiveXObject = js.native
-  @scala.inline
-  def ActiveXObject_=(x: ActiveXObject): Unit = js.Dynamic.global.updateDynamic("ActiveXObject")(x.asInstanceOf[js.Any])
+  inline def ActiveXObject_=(x: ActiveXObject): Unit = js.Dynamic.global.updateDynamic("ActiveXObject")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Enumerator")
@@ -51,19 +50,18 @@ object global {
   @JSGlobal("Enumerator")
   @js.native
   def Enumerator: EnumeratorConstructor = js.native
-  @scala.inline
-  def Enumerator_=(x: EnumeratorConstructor): Unit = js.Dynamic.global.updateDynamic("Enumerator")(x.asInstanceOf[js.Any])
+  inline def Enumerator_=(x: EnumeratorConstructor): Unit = js.Dynamic.global.updateDynamic("Enumerator")(x.asInstanceOf[js.Any])
   
   /**
     * Represents an Automation SAFEARRAY
     */
   @JSGlobal("SafeArray")
   @js.native
-  class SafeArray[T] protected ()
+  /* private */ class SafeArray[T] ()
     extends StObject
        with typings.activexInterop.SafeArray[T] {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var SafeArray_typekey: typings.activexInterop.SafeArray[T] = js.native
   }
   
@@ -78,17 +76,16 @@ object global {
   @JSGlobal("VBArray")
   @js.native
   def VBArray: VBArrayConstructor = js.native
-  @scala.inline
-  def VBArray_=(x: VBArrayConstructor): Unit = js.Dynamic.global.updateDynamic("VBArray")(x.asInstanceOf[js.Any])
+  inline def VBArray_=(x: VBArrayConstructor): Unit = js.Dynamic.global.updateDynamic("VBArray")(x.asInstanceOf[js.Any])
   
   /** Automation date (VT_DATE) */
   @JSGlobal("VarDate")
   @js.native
-  class VarDate protected ()
+  /* private */ class VarDate ()
     extends StObject
        with typings.activexInterop.VarDate {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var VarDate_typekey: typings.activexInterop.VarDate = js.native
   }
 }

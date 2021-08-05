@@ -39,56 +39,40 @@ object anon {
   }
   object Drag {
     
-    @scala.inline
-    def apply(): Drag = {
+    inline def apply(): Drag = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Drag]
     }
     
-    @scala.inline
-    implicit class DragMutableBuilder[Self <: Drag] (val x: Self) extends AnyVal {
+    extension [Self <: Drag](x: Self) {
       
-      @scala.inline
-      def setDrag(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction3(value))
+      inline def setDrag(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+      inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      @scala.inline
-      def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
+      inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
+      inline def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
       
-      @scala.inline
-      def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+      inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+      inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
       
-      @scala.inline
-      def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+      inline def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
+      inline def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+      inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     }
   }
   
@@ -118,47 +102,34 @@ object anon {
   }
   object Enabled {
     
-    @scala.inline
-    def apply(): Enabled = {
+    inline def apply(): Enabled = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Enabled]
     }
     
-    @scala.inline
-    implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    extension [Self <: Enabled](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHandles(value: js.Array[String]): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+      inline def setHandles(value: js.Array[String]): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+      inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
       
-      @scala.inline
-      def setHandlesVarargs(value: String*): Self = StObject.set(x, "handles", js.Array(value :_*))
+      inline def setHandlesVarargs(value: String*): Self = StObject.set(x, "handles", js.Array(value :_*))
       
-      @scala.inline
-      def setResize(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
+      inline def setResize(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+      inline def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
+      inline def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+      inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     }
   }
 }

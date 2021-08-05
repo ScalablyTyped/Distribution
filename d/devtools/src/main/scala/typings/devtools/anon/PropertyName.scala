@@ -12,19 +12,15 @@ trait PropertyName extends StObject {
 }
 object PropertyName {
   
-  @scala.inline
-  def apply(elementId: String, propertyName: String): PropertyName = {
+  inline def apply(elementId: String, propertyName: String): PropertyName = {
     val __obj = js.Dynamic.literal(elementId = elementId.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyName]
   }
   
-  @scala.inline
-  implicit class PropertyNameMutableBuilder[Self <: PropertyName] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyName](x: Self) {
     
-    @scala.inline
-    def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+    inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

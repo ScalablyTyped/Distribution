@@ -16,8 +16,7 @@ trait ContinuousDeploymentTriggerIssue
 }
 object ContinuousDeploymentTriggerIssue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactType: String,
     artifactVersionId: String,
     issue: Issue,
@@ -31,16 +30,12 @@ object ContinuousDeploymentTriggerIssue {
     __obj.asInstanceOf[ContinuousDeploymentTriggerIssue]
   }
   
-  @scala.inline
-  implicit class ContinuousDeploymentTriggerIssueMutableBuilder[Self <: ContinuousDeploymentTriggerIssue] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousDeploymentTriggerIssue](x: Self) {
     
-    @scala.inline
-    def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
+    inline def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactVersionId(value: String): Self = StObject.set(x, "artifactVersionId", value.asInstanceOf[js.Any])
+    inline def setArtifactVersionId(value: String): Self = StObject.set(x, "artifactVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
   }
 }

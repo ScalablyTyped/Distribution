@@ -23,31 +23,23 @@ trait ListV2LoggingLevelsRequest extends StObject {
 }
 object ListV2LoggingLevelsRequest {
   
-  @scala.inline
-  def apply(): ListV2LoggingLevelsRequest = {
+  inline def apply(): ListV2LoggingLevelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListV2LoggingLevelsRequest]
   }
   
-  @scala.inline
-  implicit class ListV2LoggingLevelsRequestMutableBuilder[Self <: ListV2LoggingLevelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListV2LoggingLevelsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: SkyfallMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: SkyfallMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: LogTargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: LogTargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
   }
 }

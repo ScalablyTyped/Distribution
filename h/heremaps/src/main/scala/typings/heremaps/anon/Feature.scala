@@ -16,32 +16,24 @@ trait Feature extends StObject {
 }
 object Feature {
   
-  @scala.inline
-  def apply(feature: js.Array[js.Any], trafficMode: String, transportModes: js.Array[String], `type`: String): Feature = {
+  inline def apply(feature: js.Array[js.Any], trafficMode: String, transportModes: js.Array[String], `type`: String): Feature = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], trafficMode = trafficMode.asInstanceOf[js.Any], transportModes = transportModes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature]
   }
   
-  @scala.inline
-  implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
+  extension [Self <: Feature](x: Self) {
     
-    @scala.inline
-    def setFeature(value: js.Array[js.Any]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: js.Array[js.Any]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureVarargs(value: js.Any*): Self = StObject.set(x, "feature", js.Array(value :_*))
+    inline def setFeatureVarargs(value: js.Any*): Self = StObject.set(x, "feature", js.Array(value :_*))
     
-    @scala.inline
-    def setTrafficMode(value: String): Self = StObject.set(x, "trafficMode", value.asInstanceOf[js.Any])
+    inline def setTrafficMode(value: String): Self = StObject.set(x, "trafficMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportModes(value: js.Array[String]): Self = StObject.set(x, "transportModes", value.asInstanceOf[js.Any])
+    inline def setTransportModes(value: js.Array[String]): Self = StObject.set(x, "transportModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportModesVarargs(value: String*): Self = StObject.set(x, "transportModes", js.Array(value :_*))
+    inline def setTransportModesVarargs(value: String*): Self = StObject.set(x, "transportModes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

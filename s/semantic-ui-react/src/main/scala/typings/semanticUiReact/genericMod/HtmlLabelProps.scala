@@ -11,8 +11,7 @@ trait HtmlLabelProps
      with /* key */ StringDictionary[js.Any]
 object HtmlLabelProps {
   
-  @scala.inline
-  def apply(): HtmlLabelProps = {
+  inline def apply(): HtmlLabelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlLabelProps]
   }

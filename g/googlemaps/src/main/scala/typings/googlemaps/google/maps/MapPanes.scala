@@ -52,8 +52,7 @@ trait MapPanes extends StObject {
 }
 object MapPanes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     floatPane: Element,
     mapPane: Element,
     markerLayer: Element,
@@ -64,22 +63,16 @@ object MapPanes {
     __obj.asInstanceOf[MapPanes]
   }
   
-  @scala.inline
-  implicit class MapPanesMutableBuilder[Self <: MapPanes] (val x: Self) extends AnyVal {
+  extension [Self <: MapPanes](x: Self) {
     
-    @scala.inline
-    def setFloatPane(value: Element): Self = StObject.set(x, "floatPane", value.asInstanceOf[js.Any])
+    inline def setFloatPane(value: Element): Self = StObject.set(x, "floatPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapPane(value: Element): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
+    inline def setMapPane(value: Element): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerLayer(value: Element): Self = StObject.set(x, "markerLayer", value.asInstanceOf[js.Any])
+    inline def setMarkerLayer(value: Element): Self = StObject.set(x, "markerLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayLayer(value: Element): Self = StObject.set(x, "overlayLayer", value.asInstanceOf[js.Any])
+    inline def setOverlayLayer(value: Element): Self = StObject.set(x, "overlayLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayMouseTarget(value: Element): Self = StObject.set(x, "overlayMouseTarget", value.asInstanceOf[js.Any])
+    inline def setOverlayMouseTarget(value: Element): Self = StObject.set(x, "overlayMouseTarget", value.asInstanceOf[js.Any])
   }
 }

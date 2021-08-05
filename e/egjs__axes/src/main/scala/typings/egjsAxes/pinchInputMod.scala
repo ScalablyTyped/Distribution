@@ -17,7 +17,7 @@ object pinchInputMod {
     def this(el: js.Any) = this()
     def this(el: js.Any, options: PinchInputOption) = this()
     
-    var _prev: js.Any = js.native
+    /* private */ var _prev: js.Any = js.native
     
     /* private */ def attachEvent(observer: js.Any): js.Any = js.native
     
@@ -50,7 +50,7 @@ object pinchInputMod {
     /* CompleteClass */
     override def mapAxes(axes: js.Array[String]): js.Any = js.native
     
-    var observer: js.Any = js.native
+    /* private */ var observer: js.Any = js.native
     
     /* private */ def onPinchEnd(event: js.Any): js.Any = js.native
     
@@ -69,26 +69,20 @@ object pinchInputMod {
   }
   object PinchInputOption {
     
-    @scala.inline
-    def apply(): PinchInputOption = {
+    inline def apply(): PinchInputOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PinchInputOption]
     }
     
-    @scala.inline
-    implicit class PinchInputOptionMutableBuilder[Self <: PinchInputOption] (val x: Self) extends AnyVal {
+    extension [Self <: PinchInputOption](x: Self) {
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

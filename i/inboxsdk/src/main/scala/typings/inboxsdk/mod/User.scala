@@ -21,8 +21,7 @@ object User {
   }
   object UserInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAccountSwitcherContactList: () => js.Array[Contact],
       getEmailAddress: () => String,
       getLanguage: () => String,
@@ -33,23 +32,17 @@ object User {
       __obj.asInstanceOf[UserInstance]
     }
     
-    @scala.inline
-    implicit class UserInstanceMutableBuilder[Self <: UserInstance] (val x: Self) extends AnyVal {
+    extension [Self <: UserInstance](x: Self) {
       
-      @scala.inline
-      def setGetAccountSwitcherContactList(value: () => js.Array[Contact]): Self = StObject.set(x, "getAccountSwitcherContactList", js.Any.fromFunction0(value))
+      inline def setGetAccountSwitcherContactList(value: () => js.Array[Contact]): Self = StObject.set(x, "getAccountSwitcherContactList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEmailAddress(value: () => String): Self = StObject.set(x, "getEmailAddress", js.Any.fromFunction0(value))
+      inline def setGetEmailAddress(value: () => String): Self = StObject.set(x, "getEmailAddress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
+      inline def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConversationViewDisabled(value: () => Boolean): Self = StObject.set(x, "isConversationViewDisabled", js.Any.fromFunction0(value))
+      inline def setIsConversationViewDisabled(value: () => Boolean): Self = StObject.set(x, "isConversationViewDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUsingGmailMaterialUI(value: () => Boolean): Self = StObject.set(x, "isUsingGmailMaterialUI", js.Any.fromFunction0(value))
+      inline def setIsUsingGmailMaterialUI(value: () => Boolean): Self = StObject.set(x, "isUsingGmailMaterialUI", js.Any.fromFunction0(value))
     }
   }
 }

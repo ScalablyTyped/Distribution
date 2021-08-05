@@ -18,28 +18,21 @@ trait DescribeDRTAccessResponse extends StObject {
 }
 object DescribeDRTAccessResponse {
   
-  @scala.inline
-  def apply(): DescribeDRTAccessResponse = {
+  inline def apply(): DescribeDRTAccessResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDRTAccessResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDRTAccessResponseMutableBuilder[Self <: DescribeDRTAccessResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDRTAccessResponse](x: Self) {
     
-    @scala.inline
-    def setLogBucketList(value: LogBucketList): Self = StObject.set(x, "LogBucketList", value.asInstanceOf[js.Any])
+    inline def setLogBucketList(value: LogBucketList): Self = StObject.set(x, "LogBucketList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogBucketListUndefined: Self = StObject.set(x, "LogBucketList", js.undefined)
+    inline def setLogBucketListUndefined: Self = StObject.set(x, "LogBucketList", js.undefined)
     
-    @scala.inline
-    def setLogBucketListVarargs(value: LogBucket*): Self = StObject.set(x, "LogBucketList", js.Array(value :_*))
+    inline def setLogBucketListVarargs(value: LogBucket*): Self = StObject.set(x, "LogBucketList", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

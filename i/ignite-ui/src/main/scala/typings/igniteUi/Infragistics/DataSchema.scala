@@ -35,8 +35,7 @@ trait DataSchema extends StObject {
 }
 object DataSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: () => js.Array[js.Any],
     isEmpty: js.Object => js.Object,
     isObjEmpty: js.Object => js.Object,
@@ -46,19 +45,14 @@ object DataSchema {
     __obj.asInstanceOf[DataSchema]
   }
   
-  @scala.inline
-  implicit class DataSchemaMutableBuilder[Self <: DataSchema] (val x: Self) extends AnyVal {
+  extension [Self <: DataSchema](x: Self) {
     
-    @scala.inline
-    def setFields(value: () => js.Array[js.Any]): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
+    inline def setFields(value: () => js.Array[js.Any]): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+    inline def setIsEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsObjEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isObjEmpty", js.Any.fromFunction1(value))
+    inline def setIsObjEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isObjEmpty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransform(value: js.Object => js.Object): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: js.Object => js.Object): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

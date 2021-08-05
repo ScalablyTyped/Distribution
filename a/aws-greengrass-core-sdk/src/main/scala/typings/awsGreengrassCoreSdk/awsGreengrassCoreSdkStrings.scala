@@ -8,11 +8,9 @@ object awsGreengrassCoreSdkStrings {
   
   @js.native
   sealed trait AllOrError extends StObject
-  @scala.inline
-  def AllOrError: AllOrError = "AllOrError".asInstanceOf[AllOrError]
+  inline def AllOrError: AllOrError = "AllOrError".asInstanceOf[AllOrError]
   
   @js.native
   sealed trait BestEffort extends StObject
-  @scala.inline
-  def BestEffort: BestEffort = "BestEffort".asInstanceOf[BestEffort]
+  inline def BestEffort: BestEffort = "BestEffort".asInstanceOf[BestEffort]
 }

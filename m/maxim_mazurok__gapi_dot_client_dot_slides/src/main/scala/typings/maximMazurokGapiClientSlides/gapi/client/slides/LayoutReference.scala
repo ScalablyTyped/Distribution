@@ -14,25 +14,19 @@ trait LayoutReference extends StObject {
 }
 object LayoutReference {
   
-  @scala.inline
-  def apply(): LayoutReference = {
+  inline def apply(): LayoutReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutReference]
   }
   
-  @scala.inline
-  implicit class LayoutReferenceMutableBuilder[Self <: LayoutReference] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutReference](x: Self) {
     
-    @scala.inline
-    def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
+    inline def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutIdUndefined: Self = StObject.set(x, "layoutId", js.undefined)
+    inline def setLayoutIdUndefined: Self = StObject.set(x, "layoutId", js.undefined)
     
-    @scala.inline
-    def setPredefinedLayout(value: String): Self = StObject.set(x, "predefinedLayout", value.asInstanceOf[js.Any])
+    inline def setPredefinedLayout(value: String): Self = StObject.set(x, "predefinedLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedLayoutUndefined: Self = StObject.set(x, "predefinedLayout", js.undefined)
+    inline def setPredefinedLayoutUndefined: Self = StObject.set(x, "predefinedLayout", js.undefined)
   }
 }

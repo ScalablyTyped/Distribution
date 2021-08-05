@@ -19,25 +19,19 @@ trait BlobWrapper extends StObject {
 }
 object BlobWrapper {
   
-  @scala.inline
-  def apply(): BlobWrapper = {
+  inline def apply(): BlobWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlobWrapper]
   }
   
-  @scala.inline
-  implicit class BlobWrapperMutableBuilder[Self <: BlobWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: BlobWrapper](x: Self) {
     
-    @scala.inline
-    def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -22,25 +22,19 @@ trait IPBlock extends StObject {
 }
 object IPBlock {
   
-  @scala.inline
-  def apply(cidr: Input[String]): IPBlock = {
+  inline def apply(cidr: Input[String]): IPBlock = {
     val __obj = js.Dynamic.literal(cidr = cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPBlock]
   }
   
-  @scala.inline
-  implicit class IPBlockMutableBuilder[Self <: IPBlock] (val x: Self) extends AnyVal {
+  extension [Self <: IPBlock](x: Self) {
     
-    @scala.inline
-    def setCidr(value: Input[String]): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: Input[String]): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcept(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+    inline def setExcept(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
+    inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
-    @scala.inline
-    def setExceptVarargs(value: Input[String]*): Self = StObject.set(x, "except", js.Array(value :_*))
+    inline def setExceptVarargs(value: Input[String]*): Self = StObject.set(x, "except", js.Array(value :_*))
   }
 }

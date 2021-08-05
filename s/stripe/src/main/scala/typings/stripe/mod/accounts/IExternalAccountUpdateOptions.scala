@@ -16,19 +16,15 @@ trait IExternalAccountUpdateOptions
 }
 object IExternalAccountUpdateOptions {
   
-  @scala.inline
-  def apply(): IExternalAccountUpdateOptions = {
+  inline def apply(): IExternalAccountUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExternalAccountUpdateOptions]
   }
   
-  @scala.inline
-  implicit class IExternalAccountUpdateOptionsMutableBuilder[Self <: IExternalAccountUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IExternalAccountUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
+    inline def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
+    inline def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
   }
 }

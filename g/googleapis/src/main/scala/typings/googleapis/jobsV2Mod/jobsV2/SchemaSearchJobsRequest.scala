@@ -112,97 +112,67 @@ trait SchemaSearchJobsRequest extends StObject {
 }
 object SchemaSearchJobsRequest {
   
-  @scala.inline
-  def apply(): SchemaSearchJobsRequest = {
+  inline def apply(): SchemaSearchJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSearchJobsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSearchJobsRequestMutableBuilder[Self <: SchemaSearchJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSearchJobsRequest](x: Self) {
     
-    @scala.inline
-    def setDisableRelevanceThresholding(value: Boolean): Self = StObject.set(x, "disableRelevanceThresholding", value.asInstanceOf[js.Any])
+    inline def setDisableRelevanceThresholding(value: Boolean): Self = StObject.set(x, "disableRelevanceThresholding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableRelevanceThresholdingUndefined: Self = StObject.set(x, "disableRelevanceThresholding", js.undefined)
+    inline def setDisableRelevanceThresholdingUndefined: Self = StObject.set(x, "disableRelevanceThresholding", js.undefined)
     
-    @scala.inline
-    def setEnableBroadening(value: Boolean): Self = StObject.set(x, "enableBroadening", value.asInstanceOf[js.Any])
+    inline def setEnableBroadening(value: Boolean): Self = StObject.set(x, "enableBroadening", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableBroadeningUndefined: Self = StObject.set(x, "enableBroadening", js.undefined)
+    inline def setEnableBroadeningUndefined: Self = StObject.set(x, "enableBroadening", js.undefined)
     
-    @scala.inline
-    def setEnablePreciseResultSize(value: Boolean): Self = StObject.set(x, "enablePreciseResultSize", value.asInstanceOf[js.Any])
+    inline def setEnablePreciseResultSize(value: Boolean): Self = StObject.set(x, "enablePreciseResultSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePreciseResultSizeUndefined: Self = StObject.set(x, "enablePreciseResultSize", js.undefined)
+    inline def setEnablePreciseResultSizeUndefined: Self = StObject.set(x, "enablePreciseResultSize", js.undefined)
     
-    @scala.inline
-    def setFilters(value: SchemaJobFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: SchemaJobFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setHistogramFacets(value: SchemaHistogramFacets): Self = StObject.set(x, "histogramFacets", value.asInstanceOf[js.Any])
+    inline def setHistogramFacets(value: SchemaHistogramFacets): Self = StObject.set(x, "histogramFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramFacetsUndefined: Self = StObject.set(x, "histogramFacets", js.undefined)
+    inline def setHistogramFacetsUndefined: Self = StObject.set(x, "histogramFacets", js.undefined)
     
-    @scala.inline
-    def setJobView(value: String): Self = StObject.set(x, "jobView", value.asInstanceOf[js.Any])
+    inline def setJobView(value: String): Self = StObject.set(x, "jobView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobViewUndefined: Self = StObject.set(x, "jobView", js.undefined)
+    inline def setJobViewUndefined: Self = StObject.set(x, "jobView", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaJobQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaJobQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRequestMetadata(value: SchemaRequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
+    inline def setRequestMetadata(value: SchemaRequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
+    inline def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait GetSamplingStatisticSummariesResult extends StObject {
 }
 object GetSamplingStatisticSummariesResult {
   
-  @scala.inline
-  def apply(): GetSamplingStatisticSummariesResult = {
+  inline def apply(): GetSamplingStatisticSummariesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSamplingStatisticSummariesResult]
   }
   
-  @scala.inline
-  implicit class GetSamplingStatisticSummariesResultMutableBuilder[Self <: GetSamplingStatisticSummariesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSamplingStatisticSummariesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSamplingStatisticSummaries(value: SamplingStatisticSummaryList): Self = StObject.set(x, "SamplingStatisticSummaries", value.asInstanceOf[js.Any])
+    inline def setSamplingStatisticSummaries(value: SamplingStatisticSummaryList): Self = StObject.set(x, "SamplingStatisticSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingStatisticSummariesUndefined: Self = StObject.set(x, "SamplingStatisticSummaries", js.undefined)
+    inline def setSamplingStatisticSummariesUndefined: Self = StObject.set(x, "SamplingStatisticSummaries", js.undefined)
     
-    @scala.inline
-    def setSamplingStatisticSummariesVarargs(value: SamplingStatisticSummary*): Self = StObject.set(x, "SamplingStatisticSummaries", js.Array(value :_*))
+    inline def setSamplingStatisticSummariesVarargs(value: SamplingStatisticSummary*): Self = StObject.set(x, "SamplingStatisticSummaries", js.Array(value :_*))
   }
 }

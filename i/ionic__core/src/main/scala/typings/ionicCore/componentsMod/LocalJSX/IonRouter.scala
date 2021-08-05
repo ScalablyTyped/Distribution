@@ -30,37 +30,27 @@ trait IonRouter extends StObject {
 }
 object IonRouter {
   
-  @scala.inline
-  def apply(): IonRouter = {
+  inline def apply(): IonRouter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonRouter]
   }
   
-  @scala.inline
-  implicit class IonRouterMutableBuilder[Self <: IonRouter] (val x: Self) extends AnyVal {
+  extension [Self <: IonRouter](x: Self) {
     
-    @scala.inline
-    def setOnIonRouteDidChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = StObject.set(x, "onIonRouteDidChange", js.Any.fromFunction1(value))
+    inline def setOnIonRouteDidChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = StObject.set(x, "onIonRouteDidChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonRouteDidChangeUndefined: Self = StObject.set(x, "onIonRouteDidChange", js.undefined)
+    inline def setOnIonRouteDidChangeUndefined: Self = StObject.set(x, "onIonRouteDidChange", js.undefined)
     
-    @scala.inline
-    def setOnIonRouteWillChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = StObject.set(x, "onIonRouteWillChange", js.Any.fromFunction1(value))
+    inline def setOnIonRouteWillChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = StObject.set(x, "onIonRouteWillChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonRouteWillChangeUndefined: Self = StObject.set(x, "onIonRouteWillChange", js.undefined)
+    inline def setOnIonRouteWillChangeUndefined: Self = StObject.set(x, "onIonRouteWillChange", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
+    inline def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
+    inline def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
   }
 }

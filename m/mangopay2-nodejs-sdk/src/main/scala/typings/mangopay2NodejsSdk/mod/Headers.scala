@@ -19,8 +19,7 @@ trait Headers
 }
 object Headers {
   
-  @scala.inline
-  def apply(Authorization: String, `Content-Type`: String, `Idempotency-Key`: String, `User-Agent`: String): Headers = {
+  inline def apply(Authorization: String, `Content-Type`: String, `Idempotency-Key`: String, `User-Agent`: String): Headers = {
     val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
     __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
     __obj.updateDynamic("Idempotency-Key")(`Idempotency-Key`.asInstanceOf[js.Any])
@@ -28,19 +27,14 @@ object Headers {
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+    inline def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIdempotency-Key`(value: String): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
+    inline def `setIdempotency-Key`(value: String): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+    inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
   }
 }

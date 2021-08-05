@@ -9,6 +9,5 @@ object global {
   @JSGlobal("nanp")
   @js.native
   def nanp: Nanp = js.native
-  @scala.inline
-  def nanp_=(x: Nanp): Unit = js.Dynamic.global.updateDynamic("nanp")(x.asInstanceOf[js.Any])
+  inline def nanp_=(x: Nanp): Unit = js.Dynamic.global.updateDynamic("nanp")(x.asInstanceOf[js.Any])
 }

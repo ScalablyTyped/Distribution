@@ -32,8 +32,7 @@ trait RegionsMixin extends StObject {
 }
 object RegionsMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRegion: js.Any,
     addRegions: js.Any,
     detachChildView: js.Any,
@@ -51,43 +50,30 @@ object RegionsMixin {
     __obj.asInstanceOf[RegionsMixin]
   }
   
-  @scala.inline
-  implicit class RegionsMixinMutableBuilder[Self <: RegionsMixin] (val x: Self) extends AnyVal {
+  extension [Self <: RegionsMixin](x: Self) {
     
-    @scala.inline
-    def setAddRegion(value: js.Any): Self = StObject.set(x, "addRegion", value.asInstanceOf[js.Any])
+    inline def setAddRegion(value: js.Any): Self = StObject.set(x, "addRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRegions(value: js.Any): Self = StObject.set(x, "addRegions", value.asInstanceOf[js.Any])
+    inline def setAddRegions(value: js.Any): Self = StObject.set(x, "addRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachChildView(value: js.Any): Self = StObject.set(x, "detachChildView", value.asInstanceOf[js.Any])
+    inline def setDetachChildView(value: js.Any): Self = StObject.set(x, "detachChildView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyRegions(value: js.Any): Self = StObject.set(x, "emptyRegions", value.asInstanceOf[js.Any])
+    inline def setEmptyRegions(value: js.Any): Self = StObject.set(x, "emptyRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChildView(value: js.Any): Self = StObject.set(x, "getChildView", value.asInstanceOf[js.Any])
+    inline def setGetChildView(value: js.Any): Self = StObject.set(x, "getChildView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRegion(value: js.Any): Self = StObject.set(x, "getRegion", value.asInstanceOf[js.Any])
+    inline def setGetRegion(value: js.Any): Self = StObject.set(x, "getRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRegions(value: js.Any): Self = StObject.set(x, "getRegions", value.asInstanceOf[js.Any])
+    inline def setGetRegions(value: js.Any): Self = StObject.set(x, "getRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasRegion(value: js.Any): Self = StObject.set(x, "hasRegion", value.asInstanceOf[js.Any])
+    inline def setHasRegion(value: js.Any): Self = StObject.set(x, "hasRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionClass(value: js.Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
+    inline def setRegionClass(value: js.Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRegion(value: js.Any): Self = StObject.set(x, "removeRegion", value.asInstanceOf[js.Any])
+    inline def setRemoveRegion(value: js.Any): Self = StObject.set(x, "removeRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRegions(value: js.Any): Self = StObject.set(x, "removeRegions", value.asInstanceOf[js.Any])
+    inline def setRemoveRegions(value: js.Any): Self = StObject.set(x, "removeRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowChildView(value: js.Any): Self = StObject.set(x, "showChildView", value.asInstanceOf[js.Any])
+    inline def setShowChildView(value: js.Any): Self = StObject.set(x, "showChildView", value.asInstanceOf[js.Any])
   }
 }

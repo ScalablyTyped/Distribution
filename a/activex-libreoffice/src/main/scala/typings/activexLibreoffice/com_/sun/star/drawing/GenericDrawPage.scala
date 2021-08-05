@@ -73,8 +73,7 @@ trait GenericDrawPage
 }
 object GenericDrawPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderBottom: Double,
     BorderLeft: Double,
     BorderRight: Double,
@@ -119,40 +118,28 @@ object GenericDrawPage {
     __obj.asInstanceOf[GenericDrawPage]
   }
   
-  @scala.inline
-  implicit class GenericDrawPageMutableBuilder[Self <: GenericDrawPage] (val x: Self) extends AnyVal {
+  extension [Self <: GenericDrawPage](x: Self) {
     
-    @scala.inline
-    def setBorderBottom(value: Double): Self = StObject.set(x, "BorderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: Double): Self = StObject.set(x, "BorderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeft(value: Double): Self = StObject.set(x, "BorderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: Double): Self = StObject.set(x, "BorderLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRight(value: Double): Self = StObject.set(x, "BorderRight", value.asInstanceOf[js.Any])
+    inline def setBorderRight(value: Double): Self = StObject.set(x, "BorderRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTop(value: Double): Self = StObject.set(x, "BorderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: Double): Self = StObject.set(x, "BorderTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBackgroundDark(value: Boolean): Self = StObject.set(x, "IsBackgroundDark", value.asInstanceOf[js.Any])
+    inline def setIsBackgroundDark(value: Boolean): Self = StObject.set(x, "IsBackgroundDark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOrder(value: XIndexAccess): Self = StObject.set(x, "NavigationOrder", value.asInstanceOf[js.Any])
+    inline def setNavigationOrder(value: XIndexAccess): Self = StObject.set(x, "NavigationOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: PaperOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: PaperOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
+    inline def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

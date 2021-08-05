@@ -12,22 +12,17 @@ trait QueryLike extends StObject {
 }
 object QueryLike {
   
-  @scala.inline
-  def apply(text: String, values: js.Array[js.Any]): QueryLike = {
+  inline def apply(text: String, values: js.Array[js.Any]): QueryLike = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryLike]
   }
   
-  @scala.inline
-  implicit class QueryLikeMutableBuilder[Self <: QueryLike] (val x: Self) extends AnyVal {
+  extension [Self <: QueryLike](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

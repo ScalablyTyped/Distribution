@@ -36,8 +36,7 @@ object sheetsMod {
     @JSImport("googleapis/build/src/apis/sheets", "VERSIONS.v4")
     @js.native
     def v4: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sheets] = js.native
-    @scala.inline
-    def v4_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sheets]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
+    inline def v4_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sheets]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
   }
   
   object auth extends Shortcut {
@@ -73,8 +72,7 @@ object sheetsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -118,9 +116,7 @@ object sheetsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def sheets(options: Options): Sheets = ^.asInstanceOf[js.Dynamic].applyDynamic("sheets")(options.asInstanceOf[js.Any]).asInstanceOf[Sheets]
+  inline def sheets(options: Options): Sheets = ^.asInstanceOf[js.Dynamic].applyDynamic("sheets")(options.asInstanceOf[js.Any]).asInstanceOf[Sheets]
   
-  @scala.inline
-  def sheets_v4(version: v4): Sheets = ^.asInstanceOf[js.Dynamic].applyDynamic("sheets")(version.asInstanceOf[js.Any]).asInstanceOf[Sheets]
+  inline def sheets_v4(version: v4): Sheets = ^.asInstanceOf[js.Dynamic].applyDynamic("sheets")(version.asInstanceOf[js.Any]).asInstanceOf[Sheets]
 }

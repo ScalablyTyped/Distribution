@@ -26,6 +26,5 @@ object global {
   @JSGlobal("ZeroClipboard")
   @js.native
   def ZeroClipboard: ZeroClipboardStatic = js.native
-  @scala.inline
-  def ZeroClipboard_=(x: ZeroClipboardStatic): Unit = js.Dynamic.global.updateDynamic("ZeroClipboard")(x.asInstanceOf[js.Any])
+  inline def ZeroClipboard_=(x: ZeroClipboardStatic): Unit = js.Dynamic.global.updateDynamic("ZeroClipboard")(x.asInstanceOf[js.Any])
 }

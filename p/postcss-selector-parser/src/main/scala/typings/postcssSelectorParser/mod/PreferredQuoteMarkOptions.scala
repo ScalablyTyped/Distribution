@@ -12,28 +12,21 @@ trait PreferredQuoteMarkOptions extends StObject {
 }
 object PreferredQuoteMarkOptions {
   
-  @scala.inline
-  def apply(): PreferredQuoteMarkOptions = {
+  inline def apply(): PreferredQuoteMarkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreferredQuoteMarkOptions]
   }
   
-  @scala.inline
-  implicit class PreferredQuoteMarkOptionsMutableBuilder[Self <: PreferredQuoteMarkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PreferredQuoteMarkOptions](x: Self) {
     
-    @scala.inline
-    def setPreferCurrentQuoteMark(value: Boolean): Self = StObject.set(x, "preferCurrentQuoteMark", value.asInstanceOf[js.Any])
+    inline def setPreferCurrentQuoteMark(value: Boolean): Self = StObject.set(x, "preferCurrentQuoteMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferCurrentQuoteMarkUndefined: Self = StObject.set(x, "preferCurrentQuoteMark", js.undefined)
+    inline def setPreferCurrentQuoteMarkUndefined: Self = StObject.set(x, "preferCurrentQuoteMark", js.undefined)
     
-    @scala.inline
-    def setQuoteMark(value: QuoteMark): Self = StObject.set(x, "quoteMark", value.asInstanceOf[js.Any])
+    inline def setQuoteMark(value: QuoteMark): Self = StObject.set(x, "quoteMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteMarkNull: Self = StObject.set(x, "quoteMark", null)
+    inline def setQuoteMarkNull: Self = StObject.set(x, "quoteMark", null)
     
-    @scala.inline
-    def setQuoteMarkUndefined: Self = StObject.set(x, "quoteMark", js.undefined)
+    inline def setQuoteMarkUndefined: Self = StObject.set(x, "quoteMark", js.undefined)
   }
 }

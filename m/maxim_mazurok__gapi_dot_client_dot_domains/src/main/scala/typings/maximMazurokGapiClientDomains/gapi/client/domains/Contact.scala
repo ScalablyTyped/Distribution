@@ -20,37 +20,27 @@ trait Contact extends StObject {
 }
 object Contact {
   
-  @scala.inline
-  def apply(): Contact = {
+  inline def apply(): Contact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Contact]
   }
   
-  @scala.inline
-  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+  extension [Self <: Contact](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFaxNumber(value: String): Self = StObject.set(x, "faxNumber", value.asInstanceOf[js.Any])
+    inline def setFaxNumber(value: String): Self = StObject.set(x, "faxNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxNumberUndefined: Self = StObject.set(x, "faxNumber", js.undefined)
+    inline def setFaxNumberUndefined: Self = StObject.set(x, "faxNumber", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
+    inline def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
+    inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
   }
 }

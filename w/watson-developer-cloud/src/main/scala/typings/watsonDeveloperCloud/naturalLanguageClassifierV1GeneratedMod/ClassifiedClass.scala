@@ -15,25 +15,19 @@ trait ClassifiedClass extends StObject {
 }
 object ClassifiedClass {
   
-  @scala.inline
-  def apply(): ClassifiedClass = {
+  inline def apply(): ClassifiedClass = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassifiedClass]
   }
   
-  @scala.inline
-  implicit class ClassifiedClassMutableBuilder[Self <: ClassifiedClass] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifiedClass](x: Self) {
     
-    @scala.inline
-    def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
+    inline def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass_nameUndefined: Self = StObject.set(x, "class_name", js.undefined)
+    inline def setClass_nameUndefined: Self = StObject.set(x, "class_name", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
   }
 }

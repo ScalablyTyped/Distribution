@@ -26,22 +26,17 @@ trait EventSeries extends StObject {
 }
 object EventSeries {
   
-  @scala.inline
-  def apply(count: Double, lastObservedTime: String, state: String): EventSeries = {
+  inline def apply(count: Double, lastObservedTime: String, state: String): EventSeries = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lastObservedTime = lastObservedTime.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSeries]
   }
   
-  @scala.inline
-  implicit class EventSeriesMutableBuilder[Self <: EventSeries] (val x: Self) extends AnyVal {
+  extension [Self <: EventSeries](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastObservedTime(value: String): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
+    inline def setLastObservedTime(value: String): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

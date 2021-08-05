@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEncodedResponseRequestEncoding extends StObject
 object GetEncodedResponseRequestEncoding {
   
-  @scala.inline
-  def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  inline def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
-  @scala.inline
-  def Png: png = "png".asInstanceOf[png]
+  inline def Png: png = "png".asInstanceOf[png]
   
-  @scala.inline
-  def Webp: webp = "webp".asInstanceOf[webp]
+  inline def Webp: webp = "webp".asInstanceOf[webp]
 }

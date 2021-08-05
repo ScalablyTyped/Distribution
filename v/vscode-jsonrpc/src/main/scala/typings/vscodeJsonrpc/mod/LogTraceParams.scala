@@ -12,22 +12,17 @@ trait LogTraceParams extends StObject {
 }
 object LogTraceParams {
   
-  @scala.inline
-  def apply(message: String): LogTraceParams = {
+  inline def apply(message: String): LogTraceParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogTraceParams]
   }
   
-  @scala.inline
-  implicit class LogTraceParamsMutableBuilder[Self <: LogTraceParams] (val x: Self) extends AnyVal {
+  extension [Self <: LogTraceParams](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbose(value: String): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: String): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

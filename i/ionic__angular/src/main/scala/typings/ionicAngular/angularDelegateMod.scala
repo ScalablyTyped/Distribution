@@ -23,12 +23,12 @@ object angularDelegateMod {
   class AngularDelegate protected () extends StObject {
     def this(zone: NgZone, appRef: ApplicationRef) = this()
     
-    var appRef: js.Any = js.native
+    /* private */ var appRef: js.Any = js.native
     
     def create(resolver: ComponentFactoryResolver, injector: Injector): AngularFrameworkDelegate = js.native
     def create(resolver: ComponentFactoryResolver, injector: Injector, location: ViewContainerRef): AngularFrameworkDelegate = js.native
     
-    var zone: js.Any = js.native
+    /* private */ var zone: js.Any = js.native
   }
   
   @JSImport("@ionic/angular/providers/angular-delegate", "AngularFrameworkDelegate")
@@ -51,23 +51,22 @@ object angularDelegateMod {
       zone: NgZone
     ) = this()
     
-    var appRef: js.Any = js.native
+    /* private */ var appRef: js.Any = js.native
     
-    var elEventsMap: js.Any = js.native
+    /* private */ var elEventsMap: js.Any = js.native
     
-    var elRefMap: js.Any = js.native
+    /* private */ var elRefMap: js.Any = js.native
     
-    var injector: js.Any = js.native
+    /* private */ var injector: js.Any = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
-    var resolver: js.Any = js.native
+    /* private */ var resolver: js.Any = js.native
     
-    var zone: js.Any = js.native
+    /* private */ var zone: js.Any = js.native
   }
   
-  @scala.inline
-  def attachView(
+  inline def attachView(
     zone: NgZone,
     resolver: ComponentFactoryResolver,
     injector: Injector,
@@ -81,6 +80,5 @@ object angularDelegateMod {
     cssClasses: js.Array[String]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("attachView")(zone.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], location.asInstanceOf[js.Any], appRef.asInstanceOf[js.Any], elRefMap.asInstanceOf[js.Any], elEventsMap.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], params.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def bindLifecycleEvents(zone: NgZone, instance: js.Any, element: HTMLElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindLifecycleEvents")(zone.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def bindLifecycleEvents(zone: NgZone, instance: js.Any, element: HTMLElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindLifecycleEvents")(zone.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

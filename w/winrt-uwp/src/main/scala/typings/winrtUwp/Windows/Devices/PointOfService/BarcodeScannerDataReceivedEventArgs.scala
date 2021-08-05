@@ -12,16 +12,13 @@ trait BarcodeScannerDataReceivedEventArgs extends StObject {
 }
 object BarcodeScannerDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(report: BarcodeScannerReport): BarcodeScannerDataReceivedEventArgs = {
+  inline def apply(report: BarcodeScannerReport): BarcodeScannerDataReceivedEventArgs = {
     val __obj = js.Dynamic.literal(report = report.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeScannerDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class BarcodeScannerDataReceivedEventArgsMutableBuilder[Self <: BarcodeScannerDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeScannerDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReport(value: BarcodeScannerReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: BarcodeScannerReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }
 }

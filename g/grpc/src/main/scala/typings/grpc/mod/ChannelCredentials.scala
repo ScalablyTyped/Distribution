@@ -16,16 +16,13 @@ trait ChannelCredentials extends StObject {
 }
 object ChannelCredentials {
   
-  @scala.inline
-  def apply(compose: CallCredentials => ChannelCredentials): ChannelCredentials = {
+  inline def apply(compose: CallCredentials => ChannelCredentials): ChannelCredentials = {
     val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose))
     __obj.asInstanceOf[ChannelCredentials]
   }
   
-  @scala.inline
-  implicit class ChannelCredentialsMutableBuilder[Self <: ChannelCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelCredentials](x: Self) {
     
-    @scala.inline
-    def setCompose(value: CallCredentials => ChannelCredentials): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
+    inline def setCompose(value: CallCredentials => ChannelCredentials): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
   }
 }

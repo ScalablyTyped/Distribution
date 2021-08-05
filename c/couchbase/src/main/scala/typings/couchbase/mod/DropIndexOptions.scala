@@ -13,19 +13,15 @@ trait DropIndexOptions extends StObject {
 }
 object DropIndexOptions {
   
-  @scala.inline
-  def apply(): DropIndexOptions = {
+  inline def apply(): DropIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropIndexOptions]
   }
   
-  @scala.inline
-  implicit class DropIndexOptionsMutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DropIndexOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfNotExistsUndefined: Self = StObject.set(x, "ignoreIfNotExists", js.undefined)
+    inline def setIgnoreIfNotExistsUndefined: Self = StObject.set(x, "ignoreIfNotExists", js.undefined)
   }
 }

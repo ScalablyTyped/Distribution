@@ -11,16 +11,13 @@ trait IBUDDY_BLOCK extends StObject {
 }
 object IBUDDY_BLOCK {
   
-  @scala.inline
-  def apply(buddy: SFSBuddy): IBUDDY_BLOCK = {
+  inline def apply(buddy: SFSBuddy): IBUDDY_BLOCK = {
     val __obj = js.Dynamic.literal(buddy = buddy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBUDDY_BLOCK]
   }
   
-  @scala.inline
-  implicit class IBUDDY_BLOCKMutableBuilder[Self <: IBUDDY_BLOCK] (val x: Self) extends AnyVal {
+  extension [Self <: IBUDDY_BLOCK](x: Self) {
     
-    @scala.inline
-    def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
+    inline def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
   }
 }

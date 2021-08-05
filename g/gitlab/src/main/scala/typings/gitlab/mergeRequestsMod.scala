@@ -204,50 +204,36 @@ object mergeRequestsMod {
   }
   object AcceptMergeRequestOptions {
     
-    @scala.inline
-    def apply(): AcceptMergeRequestOptions = {
+    inline def apply(): AcceptMergeRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceptMergeRequestOptions]
     }
     
-    @scala.inline
-    implicit class AcceptMergeRequestOptionsMutableBuilder[Self <: AcceptMergeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AcceptMergeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setMerge_commit_message(value: String): Self = StObject.set(x, "merge_commit_message", value.asInstanceOf[js.Any])
+      inline def setMerge_commit_message(value: String): Self = StObject.set(x, "merge_commit_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_commit_messageUndefined: Self = StObject.set(x, "merge_commit_message", js.undefined)
+      inline def setMerge_commit_messageUndefined: Self = StObject.set(x, "merge_commit_message", js.undefined)
       
-      @scala.inline
-      def setMerge_when_pipeline_succeeds(value: Boolean): Self = StObject.set(x, "merge_when_pipeline_succeeds", value.asInstanceOf[js.Any])
+      inline def setMerge_when_pipeline_succeeds(value: Boolean): Self = StObject.set(x, "merge_when_pipeline_succeeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_when_pipeline_succeedsUndefined: Self = StObject.set(x, "merge_when_pipeline_succeeds", js.undefined)
+      inline def setMerge_when_pipeline_succeedsUndefined: Self = StObject.set(x, "merge_when_pipeline_succeeds", js.undefined)
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+      inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
       
-      @scala.inline
-      def setShould_remove_source_branch(value: Boolean): Self = StObject.set(x, "should_remove_source_branch", value.asInstanceOf[js.Any])
+      inline def setShould_remove_source_branch(value: Boolean): Self = StObject.set(x, "should_remove_source_branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShould_remove_source_branchUndefined: Self = StObject.set(x, "should_remove_source_branch", js.undefined)
+      inline def setShould_remove_source_branchUndefined: Self = StObject.set(x, "should_remove_source_branch", js.undefined)
       
-      @scala.inline
-      def setSquash(value: Boolean): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
+      inline def setSquash(value: Boolean): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
+      inline def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
       
-      @scala.inline
-      def setSquash_commit_message(value: String): Self = StObject.set(x, "squash_commit_message", value.asInstanceOf[js.Any])
+      inline def setSquash_commit_message(value: String): Self = StObject.set(x, "squash_commit_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquash_commit_messageUndefined: Self = StObject.set(x, "squash_commit_message", js.undefined)
+      inline def setSquash_commit_messageUndefined: Self = StObject.set(x, "squash_commit_message", js.undefined)
     }
   }
   
@@ -273,68 +259,48 @@ object mergeRequestsMod {
   }
   object CreateMergeRequestOptions {
     
-    @scala.inline
-    def apply(): CreateMergeRequestOptions = {
+    inline def apply(): CreateMergeRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateMergeRequestOptions]
     }
     
-    @scala.inline
-    implicit class CreateMergeRequestOptionsMutableBuilder[Self <: CreateMergeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateMergeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAllow_collaboration(value: Boolean): Self = StObject.set(x, "allow_collaboration", value.asInstanceOf[js.Any])
+      inline def setAllow_collaboration(value: Boolean): Self = StObject.set(x, "allow_collaboration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_collaborationUndefined: Self = StObject.set(x, "allow_collaboration", js.undefined)
+      inline def setAllow_collaborationUndefined: Self = StObject.set(x, "allow_collaboration", js.undefined)
       
-      @scala.inline
-      def setAllow_maintainer_to_push(value: Boolean): Self = StObject.set(x, "allow_maintainer_to_push", value.asInstanceOf[js.Any])
+      inline def setAllow_maintainer_to_push(value: Boolean): Self = StObject.set(x, "allow_maintainer_to_push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_maintainer_to_pushUndefined: Self = StObject.set(x, "allow_maintainer_to_push", js.undefined)
+      inline def setAllow_maintainer_to_pushUndefined: Self = StObject.set(x, "allow_maintainer_to_push", js.undefined)
       
-      @scala.inline
-      def setAssignee_id(value: Double): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
+      inline def setAssignee_id(value: Double): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignee_idUndefined: Self = StObject.set(x, "assignee_id", js.undefined)
+      inline def setAssignee_idUndefined: Self = StObject.set(x, "assignee_id", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setMilestone_id(value: Double): Self = StObject.set(x, "milestone_id", value.asInstanceOf[js.Any])
+      inline def setMilestone_id(value: Double): Self = StObject.set(x, "milestone_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilestone_idUndefined: Self = StObject.set(x, "milestone_id", js.undefined)
+      inline def setMilestone_idUndefined: Self = StObject.set(x, "milestone_id", js.undefined)
       
-      @scala.inline
-      def setRemove_source_branch(value: Boolean): Self = StObject.set(x, "remove_source_branch", value.asInstanceOf[js.Any])
+      inline def setRemove_source_branch(value: Boolean): Self = StObject.set(x, "remove_source_branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove_source_branchUndefined: Self = StObject.set(x, "remove_source_branch", js.undefined)
+      inline def setRemove_source_branchUndefined: Self = StObject.set(x, "remove_source_branch", js.undefined)
       
-      @scala.inline
-      def setSquash(value: Boolean): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
+      inline def setSquash(value: Boolean): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
+      inline def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
       
-      @scala.inline
-      def setTarget_project_id(value: Double): Self = StObject.set(x, "target_project_id", value.asInstanceOf[js.Any])
+      inline def setTarget_project_id(value: Double): Self = StObject.set(x, "target_project_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget_project_idUndefined: Self = StObject.set(x, "target_project_id", js.undefined)
+      inline def setTarget_project_idUndefined: Self = StObject.set(x, "target_project_id", js.undefined)
     }
   }
   
@@ -348,32 +314,24 @@ object mergeRequestsMod {
   }
   object ShowMergeRequestOptions {
     
-    @scala.inline
-    def apply(): ShowMergeRequestOptions = {
+    inline def apply(): ShowMergeRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShowMergeRequestOptions]
     }
     
-    @scala.inline
-    implicit class ShowMergeRequestOptionsMutableBuilder[Self <: ShowMergeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShowMergeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setInclude_diverged_commits_count(value: `true`): Self = StObject.set(x, "include_diverged_commits_count", value.asInstanceOf[js.Any])
+      inline def setInclude_diverged_commits_count(value: `true`): Self = StObject.set(x, "include_diverged_commits_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude_diverged_commits_countUndefined: Self = StObject.set(x, "include_diverged_commits_count", js.undefined)
+      inline def setInclude_diverged_commits_countUndefined: Self = StObject.set(x, "include_diverged_commits_count", js.undefined)
       
-      @scala.inline
-      def setInclude_rebase_in_progress(value: Boolean): Self = StObject.set(x, "include_rebase_in_progress", value.asInstanceOf[js.Any])
+      inline def setInclude_rebase_in_progress(value: Boolean): Self = StObject.set(x, "include_rebase_in_progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude_rebase_in_progressUndefined: Self = StObject.set(x, "include_rebase_in_progress", js.undefined)
+      inline def setInclude_rebase_in_progressUndefined: Self = StObject.set(x, "include_rebase_in_progress", js.undefined)
       
-      @scala.inline
-      def setRender_html(value: Boolean): Self = StObject.set(x, "render_html", value.asInstanceOf[js.Any])
+      inline def setRender_html(value: Boolean): Self = StObject.set(x, "render_html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender_htmlUndefined: Self = StObject.set(x, "render_html", js.undefined)
+      inline def setRender_htmlUndefined: Self = StObject.set(x, "render_html", js.undefined)
     }
   }
   
@@ -405,86 +363,60 @@ object mergeRequestsMod {
   }
   object UpdateMergeRequestOptions {
     
-    @scala.inline
-    def apply(): UpdateMergeRequestOptions = {
+    inline def apply(): UpdateMergeRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateMergeRequestOptions]
     }
     
-    @scala.inline
-    implicit class UpdateMergeRequestOptionsMutableBuilder[Self <: UpdateMergeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateMergeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAllow_collaboration(value: Boolean): Self = StObject.set(x, "allow_collaboration", value.asInstanceOf[js.Any])
+      inline def setAllow_collaboration(value: Boolean): Self = StObject.set(x, "allow_collaboration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_collaborationUndefined: Self = StObject.set(x, "allow_collaboration", js.undefined)
+      inline def setAllow_collaborationUndefined: Self = StObject.set(x, "allow_collaboration", js.undefined)
       
-      @scala.inline
-      def setAllow_maintainer_to_push(value: Boolean): Self = StObject.set(x, "allow_maintainer_to_push", value.asInstanceOf[js.Any])
+      inline def setAllow_maintainer_to_push(value: Boolean): Self = StObject.set(x, "allow_maintainer_to_push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_maintainer_to_pushUndefined: Self = StObject.set(x, "allow_maintainer_to_push", js.undefined)
+      inline def setAllow_maintainer_to_pushUndefined: Self = StObject.set(x, "allow_maintainer_to_push", js.undefined)
       
-      @scala.inline
-      def setAssignee_id(value: Double): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
+      inline def setAssignee_id(value: Double): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignee_idUndefined: Self = StObject.set(x, "assignee_id", js.undefined)
+      inline def setAssignee_idUndefined: Self = StObject.set(x, "assignee_id", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDiscussion_locked(value: Boolean): Self = StObject.set(x, "discussion_locked", value.asInstanceOf[js.Any])
+      inline def setDiscussion_locked(value: Boolean): Self = StObject.set(x, "discussion_locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscussion_lockedUndefined: Self = StObject.set(x, "discussion_locked", js.undefined)
+      inline def setDiscussion_lockedUndefined: Self = StObject.set(x, "discussion_locked", js.undefined)
       
-      @scala.inline
-      def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setMilestone_id(value: Double): Self = StObject.set(x, "milestone_id", value.asInstanceOf[js.Any])
+      inline def setMilestone_id(value: Double): Self = StObject.set(x, "milestone_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilestone_idUndefined: Self = StObject.set(x, "milestone_id", js.undefined)
+      inline def setMilestone_idUndefined: Self = StObject.set(x, "milestone_id", js.undefined)
       
-      @scala.inline
-      def setRemove_source_branch(value: Boolean): Self = StObject.set(x, "remove_source_branch", value.asInstanceOf[js.Any])
+      inline def setRemove_source_branch(value: Boolean): Self = StObject.set(x, "remove_source_branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove_source_branchUndefined: Self = StObject.set(x, "remove_source_branch", js.undefined)
+      inline def setRemove_source_branchUndefined: Self = StObject.set(x, "remove_source_branch", js.undefined)
       
-      @scala.inline
-      def setSquash(value: Boolean): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
+      inline def setSquash(value: Boolean): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
+      inline def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
       
-      @scala.inline
-      def setState_event(value: String): Self = StObject.set(x, "state_event", value.asInstanceOf[js.Any])
+      inline def setState_event(value: String): Self = StObject.set(x, "state_event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_eventUndefined: Self = StObject.set(x, "state_event", js.undefined)
+      inline def setState_eventUndefined: Self = StObject.set(x, "state_event", js.undefined)
       
-      @scala.inline
-      def setTarget_branch(value: Double): Self = StObject.set(x, "target_branch", value.asInstanceOf[js.Any])
+      inline def setTarget_branch(value: Double): Self = StObject.set(x, "target_branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget_branchUndefined: Self = StObject.set(x, "target_branch", js.undefined)
+      inline def setTarget_branchUndefined: Self = StObject.set(x, "target_branch", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

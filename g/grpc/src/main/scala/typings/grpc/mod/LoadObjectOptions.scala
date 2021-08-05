@@ -47,43 +47,31 @@ trait LoadObjectOptions extends StObject {
 }
 object LoadObjectOptions {
   
-  @scala.inline
-  def apply(): LoadObjectOptions = {
+  inline def apply(): LoadObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadObjectOptions]
   }
   
-  @scala.inline
-  implicit class LoadObjectOptionsMutableBuilder[Self <: LoadObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadObjectOptions](x: Self) {
     
-    @scala.inline
-    def setBinaryAsBase64(value: Boolean): Self = StObject.set(x, "binaryAsBase64", value.asInstanceOf[js.Any])
+    inline def setBinaryAsBase64(value: Boolean): Self = StObject.set(x, "binaryAsBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryAsBase64Undefined: Self = StObject.set(x, "binaryAsBase64", js.undefined)
+    inline def setBinaryAsBase64Undefined: Self = StObject.set(x, "binaryAsBase64", js.undefined)
     
-    @scala.inline
-    def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
+    inline def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
+    inline def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
     
-    @scala.inline
-    def setEnumsAsStrings(value: Boolean): Self = StObject.set(x, "enumsAsStrings", value.asInstanceOf[js.Any])
+    inline def setEnumsAsStrings(value: Boolean): Self = StObject.set(x, "enumsAsStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumsAsStringsUndefined: Self = StObject.set(x, "enumsAsStrings", js.undefined)
+    inline def setEnumsAsStringsUndefined: Self = StObject.set(x, "enumsAsStrings", js.undefined)
     
-    @scala.inline
-    def setLongsAsStrings(value: Boolean): Self = StObject.set(x, "longsAsStrings", value.asInstanceOf[js.Any])
+    inline def setLongsAsStrings(value: Boolean): Self = StObject.set(x, "longsAsStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongsAsStringsUndefined: Self = StObject.set(x, "longsAsStrings", js.undefined)
+    inline def setLongsAsStringsUndefined: Self = StObject.set(x, "longsAsStrings", js.undefined)
     
-    @scala.inline
-    def setProtobufjsVersion(value: `5` | `6` | detect): Self = StObject.set(x, "protobufjsVersion", value.asInstanceOf[js.Any])
+    inline def setProtobufjsVersion(value: `5` | `6` | detect): Self = StObject.set(x, "protobufjsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtobufjsVersionUndefined: Self = StObject.set(x, "protobufjsVersion", js.undefined)
+    inline def setProtobufjsVersionUndefined: Self = StObject.set(x, "protobufjsVersion", js.undefined)
   }
 }

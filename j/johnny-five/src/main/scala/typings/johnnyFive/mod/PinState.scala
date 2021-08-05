@@ -18,8 +18,7 @@ trait PinState extends StObject {
 }
 object PinState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     analogChannel: Double,
     mode: Double,
     report: Double,
@@ -30,25 +29,18 @@ object PinState {
     __obj.asInstanceOf[PinState]
   }
   
-  @scala.inline
-  implicit class PinStateMutableBuilder[Self <: PinState] (val x: Self) extends AnyVal {
+  extension [Self <: PinState](x: Self) {
     
-    @scala.inline
-    def setAnalogChannel(value: Double): Self = StObject.set(x, "analogChannel", value.asInstanceOf[js.Any])
+    inline def setAnalogChannel(value: Double): Self = StObject.set(x, "analogChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReport(value: Double): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: Double): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedModes(value: js.Array[Double]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: js.Array[Double]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedModesVarargs(value: Double*): Self = StObject.set(x, "supportedModes", js.Array(value :_*))
+    inline def setSupportedModesVarargs(value: Double*): Self = StObject.set(x, "supportedModes", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

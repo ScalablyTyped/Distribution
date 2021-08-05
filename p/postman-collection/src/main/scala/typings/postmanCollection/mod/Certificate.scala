@@ -33,6 +33,5 @@ object Certificate {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isCertificate(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCertificate(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

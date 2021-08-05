@@ -12,16 +12,13 @@ trait SystemMediaTransportControlsButtonPressedEventArgs extends StObject {
 }
 object SystemMediaTransportControlsButtonPressedEventArgs {
   
-  @scala.inline
-  def apply(button: SystemMediaTransportControlsButton): SystemMediaTransportControlsButtonPressedEventArgs = {
+  inline def apply(button: SystemMediaTransportControlsButton): SystemMediaTransportControlsButtonPressedEventArgs = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemMediaTransportControlsButtonPressedEventArgs]
   }
   
-  @scala.inline
-  implicit class SystemMediaTransportControlsButtonPressedEventArgsMutableBuilder[Self <: SystemMediaTransportControlsButtonPressedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMediaTransportControlsButtonPressedEventArgs](x: Self) {
     
-    @scala.inline
-    def setButton(value: SystemMediaTransportControlsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: SystemMediaTransportControlsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
   }
 }

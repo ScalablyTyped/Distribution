@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hexbin[T](): Hexbin_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexbin")().asInstanceOf[Hexbin_[T]]
+  inline def hexbin[T](): Hexbin_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexbin")().asInstanceOf[Hexbin_[T]]
   
   @js.native
   trait HexbinBin[T]

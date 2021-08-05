@@ -43,8 +43,7 @@ trait RegisterScalableTargetRequest extends StObject {
 }
 object RegisterScalableTargetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
     ServiceNamespace: ServiceNamespace
@@ -53,40 +52,28 @@ object RegisterScalableTargetRequest {
     __obj.asInstanceOf[RegisterScalableTargetRequest]
   }
   
-  @scala.inline
-  implicit class RegisterScalableTargetRequestMutableBuilder[Self <: RegisterScalableTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterScalableTargetRequest](x: Self) {
     
-    @scala.inline
-    def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
+    inline def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
-    @scala.inline
-    def setMinCapacity(value: ResourceCapacity): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
+    inline def setMinCapacity(value: ResourceCapacity): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
+    inline def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedState(value: SuspendedState): Self = StObject.set(x, "SuspendedState", value.asInstanceOf[js.Any])
+    inline def setSuspendedState(value: SuspendedState): Self = StObject.set(x, "SuspendedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedStateUndefined: Self = StObject.set(x, "SuspendedState", js.undefined)
+    inline def setSuspendedStateUndefined: Self = StObject.set(x, "SuspendedState", js.undefined)
   }
 }

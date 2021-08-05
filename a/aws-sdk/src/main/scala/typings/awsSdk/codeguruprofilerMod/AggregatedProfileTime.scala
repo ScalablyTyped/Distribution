@@ -18,25 +18,19 @@ trait AggregatedProfileTime extends StObject {
 }
 object AggregatedProfileTime {
   
-  @scala.inline
-  def apply(): AggregatedProfileTime = {
+  inline def apply(): AggregatedProfileTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregatedProfileTime]
   }
   
-  @scala.inline
-  implicit class AggregatedProfileTimeMutableBuilder[Self <: AggregatedProfileTime] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedProfileTime](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: AggregationPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: AggregationPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setStart(value: Timestamp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Timestamp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ trait S3BucketDestination extends StObject {
 }
 object S3BucketDestination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountId: AccountId,
     Arn: S3BucketArnString,
     Format: Format,
@@ -49,31 +48,22 @@ object S3BucketDestination {
     __obj.asInstanceOf[S3BucketDestination]
   }
   
-  @scala.inline
-  implicit class S3BucketDestinationMutableBuilder[Self <: S3BucketDestination] (val x: Self) extends AnyVal {
+  extension [Self <: S3BucketDestination](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArn(value: S3BucketArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: S3BucketArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryption(value: StorageLensDataExportEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: StorageLensDataExportEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSchemaVersion(value: OutputSchemaVersion): Self = StObject.set(x, "OutputSchemaVersion", value.asInstanceOf[js.Any])
+    inline def setOutputSchemaVersion(value: OutputSchemaVersion): Self = StObject.set(x, "OutputSchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

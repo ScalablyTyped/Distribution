@@ -18,28 +18,21 @@ trait ListNotificationRulesResult extends StObject {
 }
 object ListNotificationRulesResult {
   
-  @scala.inline
-  def apply(): ListNotificationRulesResult = {
+  inline def apply(): ListNotificationRulesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNotificationRulesResult]
   }
   
-  @scala.inline
-  implicit class ListNotificationRulesResultMutableBuilder[Self <: ListNotificationRulesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotificationRulesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNotificationRules(value: NotificationRuleBatch): Self = StObject.set(x, "NotificationRules", value.asInstanceOf[js.Any])
+    inline def setNotificationRules(value: NotificationRuleBatch): Self = StObject.set(x, "NotificationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationRulesUndefined: Self = StObject.set(x, "NotificationRules", js.undefined)
+    inline def setNotificationRulesUndefined: Self = StObject.set(x, "NotificationRules", js.undefined)
     
-    @scala.inline
-    def setNotificationRulesVarargs(value: NotificationRuleSummary*): Self = StObject.set(x, "NotificationRules", js.Array(value :_*))
+    inline def setNotificationRulesVarargs(value: NotificationRuleSummary*): Self = StObject.set(x, "NotificationRules", js.Array(value :_*))
   }
 }

@@ -14,22 +14,17 @@ trait IBrowserColors extends StObject {
 }
 object IBrowserColors {
   
-  @scala.inline
-  def apply(hue: String, palette: String, theme: String): IBrowserColors = {
+  inline def apply(hue: String, palette: String, theme: String): IBrowserColors = {
     val __obj = js.Dynamic.literal(hue = hue.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowserColors]
   }
   
-  @scala.inline
-  implicit class IBrowserColorsMutableBuilder[Self <: IBrowserColors] (val x: Self) extends AnyVal {
+  extension [Self <: IBrowserColors](x: Self) {
     
-    @scala.inline
-    def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPalette(value: String): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: String): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

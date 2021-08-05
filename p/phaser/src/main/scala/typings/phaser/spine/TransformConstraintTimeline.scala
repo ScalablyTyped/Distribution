@@ -23,8 +23,7 @@ trait TransformConstraintTimeline
 }
 object TransformConstraintTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     curves: js.Any,
     frames: ArrayLike[Double],
@@ -42,16 +41,12 @@ object TransformConstraintTimeline {
     __obj.asInstanceOf[TransformConstraintTimeline]
   }
   
-  @scala.inline
-  implicit class TransformConstraintTimelineMutableBuilder[Self <: TransformConstraintTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: TransformConstraintTimeline](x: Self) {
     
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFrame(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction6(value))
+    inline def setSetFrame(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setTransformConstraintIndex(value: Double): Self = StObject.set(x, "transformConstraintIndex", value.asInstanceOf[js.Any])
+    inline def setTransformConstraintIndex(value: Double): Self = StObject.set(x, "transformConstraintIndex", value.asInstanceOf[js.Any])
   }
 }

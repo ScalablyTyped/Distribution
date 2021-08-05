@@ -10,8 +10,7 @@ object operatorsEveryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def every[T](
+  inline def every[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -19,8 +18,7 @@ object operatorsEveryMod {
       Boolean
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def every[T](
+  inline def every[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

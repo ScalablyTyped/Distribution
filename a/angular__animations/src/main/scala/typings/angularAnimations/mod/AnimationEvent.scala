@@ -44,8 +44,7 @@ trait AnimationEvent extends StObject {
 }
 object AnimationEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disabled: Boolean,
     element: js.Any,
     fromState: String,
@@ -58,28 +57,20 @@ object AnimationEvent {
     __obj.asInstanceOf[AnimationEvent]
   }
   
-  @scala.inline
-  implicit class AnimationEventMutableBuilder[Self <: AnimationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationEvent](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromState(value: String): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
+    inline def setFromState(value: String): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseName(value: String): Self = StObject.set(x, "phaseName", value.asInstanceOf[js.Any])
+    inline def setPhaseName(value: String): Self = StObject.set(x, "phaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToState(value: String): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
+    inline def setToState(value: String): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
+    inline def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
   }
 }

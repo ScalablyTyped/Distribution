@@ -45,37 +45,27 @@ trait PlusPushClientInfo extends StObject {
 }
 object PlusPushClientInfo {
   
-  @scala.inline
-  def apply(): PlusPushClientInfo = {
+  inline def apply(): PlusPushClientInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusPushClientInfo]
   }
   
-  @scala.inline
-  implicit class PlusPushClientInfoMutableBuilder[Self <: PlusPushClientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlusPushClientInfo](x: Self) {
     
-    @scala.inline
-    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    @scala.inline
-    def setAppkey(value: String): Self = StObject.set(x, "appkey", value.asInstanceOf[js.Any])
+    inline def setAppkey(value: String): Self = StObject.set(x, "appkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppkeyUndefined: Self = StObject.set(x, "appkey", js.undefined)
+    inline def setAppkeyUndefined: Self = StObject.set(x, "appkey", js.undefined)
     
-    @scala.inline
-    def setClientid(value: String): Self = StObject.set(x, "clientid", value.asInstanceOf[js.Any])
+    inline def setClientid(value: String): Self = StObject.set(x, "clientid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientidUndefined: Self = StObject.set(x, "clientid", js.undefined)
+    inline def setClientidUndefined: Self = StObject.set(x, "clientid", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

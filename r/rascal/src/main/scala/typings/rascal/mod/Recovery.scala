@@ -28,58 +28,41 @@ trait Recovery extends StObject {
 }
 object Recovery {
   
-  @scala.inline
-  def apply(strategy: ack | nack | republish | forward): Recovery = {
+  inline def apply(strategy: ack | nack | republish | forward): Recovery = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recovery]
   }
   
-  @scala.inline
-  implicit class RecoveryMutableBuilder[Self <: Recovery] (val x: Self) extends AnyVal {
+  extension [Self <: Recovery](x: Self) {
     
-    @scala.inline
-    def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+    inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
-    @scala.inline
-    def setImmediateNack(value: Boolean): Self = StObject.set(x, "immediateNack", value.asInstanceOf[js.Any])
+    inline def setImmediateNack(value: Boolean): Self = StObject.set(x, "immediateNack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediateNackUndefined: Self = StObject.set(x, "immediateNack", js.undefined)
+    inline def setImmediateNackUndefined: Self = StObject.set(x, "immediateNack", js.undefined)
     
-    @scala.inline
-    def setOptions(value: PublicationConfig): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PublicationConfig): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPublication(value: String): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
+    inline def setPublication(value: String): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicationUndefined: Self = StObject.set(x, "publication", js.undefined)
+    inline def setPublicationUndefined: Self = StObject.set(x, "publication", js.undefined)
     
-    @scala.inline
-    def setRequeue(value: Boolean): Self = StObject.set(x, "requeue", value.asInstanceOf[js.Any])
+    inline def setRequeue(value: Boolean): Self = StObject.set(x, "requeue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequeueUndefined: Self = StObject.set(x, "requeue", js.undefined)
+    inline def setRequeueUndefined: Self = StObject.set(x, "requeue", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: ack | nack | republish | forward): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: ack | nack | republish | forward): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDeathFix(value: Boolean): Self = StObject.set(x, "xDeathFix", value.asInstanceOf[js.Any])
+    inline def setXDeathFix(value: Boolean): Self = StObject.set(x, "xDeathFix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDeathFixUndefined: Self = StObject.set(x, "xDeathFix", js.undefined)
+    inline def setXDeathFixUndefined: Self = StObject.set(x, "xDeathFix", js.undefined)
   }
 }

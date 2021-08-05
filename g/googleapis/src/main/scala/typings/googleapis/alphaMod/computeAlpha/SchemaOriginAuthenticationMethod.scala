@@ -13,19 +13,15 @@ trait SchemaOriginAuthenticationMethod extends StObject {
 }
 object SchemaOriginAuthenticationMethod {
   
-  @scala.inline
-  def apply(): SchemaOriginAuthenticationMethod = {
+  inline def apply(): SchemaOriginAuthenticationMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOriginAuthenticationMethod]
   }
   
-  @scala.inline
-  implicit class SchemaOriginAuthenticationMethodMutableBuilder[Self <: SchemaOriginAuthenticationMethod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOriginAuthenticationMethod](x: Self) {
     
-    @scala.inline
-    def setJwt(value: SchemaJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+    inline def setJwt(value: SchemaJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
+    inline def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
   }
 }

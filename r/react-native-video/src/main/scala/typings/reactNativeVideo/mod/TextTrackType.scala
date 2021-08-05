@@ -16,18 +16,15 @@ object TextTrackType {
   @JSImport("react-native-video", "TextTrackType.SRT")
   @js.native
   def SRT: `applicationSlashx-subrip` = js.native
-  @scala.inline
-  def SRT_=(x: `applicationSlashx-subrip`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SRT")(x.asInstanceOf[js.Any])
+  inline def SRT_=(x: `applicationSlashx-subrip`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SRT")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-video", "TextTrackType.TTML")
   @js.native
   def TTML: applicationSlashttmlPlussignxml = js.native
-  @scala.inline
-  def TTML_=(x: applicationSlashttmlPlussignxml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TTML")(x.asInstanceOf[js.Any])
+  inline def TTML_=(x: applicationSlashttmlPlussignxml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TTML")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-video", "TextTrackType.VTT")
   @js.native
   def VTT: textSlashvtt = js.native
-  @scala.inline
-  def VTT_=(x: textSlashvtt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VTT")(x.asInstanceOf[js.Any])
+  inline def VTT_=(x: textSlashvtt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VTT")(x.asInstanceOf[js.Any])
 }

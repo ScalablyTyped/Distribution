@@ -16,9 +16,9 @@ object basicAuthSecurityMod {
     def this(username: String, password: String) = this()
     def this(username: String, password: String, defaults: js.Any) = this()
     
-    var _password: js.Any = js.native
+    /* private */ var _password: js.Any = js.native
     
-    var _username: js.Any = js.native
+    /* private */ var _username: js.Any = js.native
     
     @JSName("addHeaders")
     def addHeaders_MBasicAuthSecurity(headers: IHeaders): Unit = js.native
@@ -26,7 +26,7 @@ object basicAuthSecurityMod {
     @JSName("addOptions")
     def addOptions_MBasicAuthSecurity(options: js.Any): Unit = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
     @JSName("toXML")
     def toXML_MBasicAuthSecurity(): String = js.native

@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFObjectAccess extends StObject
 object MFObjectAccess {
   
-  @scala.inline
-  def AttachObjects: `16` = 16.asInstanceOf[`16`]
+  inline def AttachObjects: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def ChangePermissions: `4` = 4.asInstanceOf[`4`]
+  inline def ChangePermissions: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Delete: `8` = 8.asInstanceOf[`8`]
+  inline def Delete: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Edit: `2` = 2.asInstanceOf[`2`]
+  inline def Edit: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Read: `1` = 1.asInstanceOf[`1`]
+  inline def Read: `1` = 1.asInstanceOf[`1`]
 }

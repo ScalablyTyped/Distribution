@@ -37,13 +37,13 @@ object cliMod {
       */
     def this(opts: CliOpts[ConfigType]) = this()
     
-    var args: js.Any = js.native
+    /* private */ var args: js.Any = js.native
     
-    var assignConfigFile: js.Any = js.native
+    /* private */ var assignConfigFile: js.Any = js.native
     
-    var bridgeConfig: js.Any = js.native
+    /* private */ var bridgeConfig: js.Any = js.native
     
-    var generateRegistration: js.Any = js.native
+    /* private */ var generateRegistration: js.Any = js.native
     
     /**
       * Get the parsed arguments. Only set after run is called and arguments parsed.
@@ -64,13 +64,13 @@ object cliMod {
       */
     def getRegistrationFilePath(): String = js.native
     
-    var loadConfig: js.Any = js.native
+    /* private */ var loadConfig: js.Any = js.native
     
-    var loadYaml: js.Any = js.native
+    /* private */ var loadYaml: js.Any = js.native
     
-    var opts: js.Any = js.native
+    /* private */ var opts: js.Any = js.native
     
-    var printHelp: js.Any = js.native
+    /* private */ var printHelp: js.Any = js.native
     
     /**
       * Run the app from the command line. Will parse sys args.
@@ -78,7 +78,7 @@ object cliMod {
     def run(): Unit = js.native
     def run(args: CliArgs): Unit = js.native
     
-    var startWithConfig: js.Any = js.native
+    /* private */ var startWithConfig: js.Any = js.native
   }
   /* static members */
   object Cli {
@@ -90,20 +90,17 @@ object cliMod {
     @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli.DEFAULT_FILENAME")
     @js.native
     def DEFAULT_FILENAME: String = js.native
-    @scala.inline
-    def DEFAULT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FILENAME")(x.asInstanceOf[js.Any])
     
     @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli.DEFAULT_PORT")
     @js.native
     def DEFAULT_PORT: Double = js.native
-    @scala.inline
-    def DEFAULT_PORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PORT")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_PORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PORT")(x.asInstanceOf[js.Any])
     
     @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli.DEFAULT_WATCH_INTERVAL")
     @js.native
     def DEFAULT_WATCH_INTERVAL: Double = js.native
-    @scala.inline
-    def DEFAULT_WATCH_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WATCH_INTERVAL")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_WATCH_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WATCH_INTERVAL")(x.asInstanceOf[js.Any])
   }
   
   trait CliArgs extends StObject {
@@ -124,8 +121,7 @@ object cliMod {
   }
   object CliArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: String,
       file: String,
       `generate-registration`: Boolean,
@@ -138,32 +134,23 @@ object cliMod {
       __obj.asInstanceOf[CliArgs]
     }
     
-    @scala.inline
-    implicit class CliArgsMutableBuilder[Self <: CliArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CliArgs](x: Self) {
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGenerate-registration`(value: Boolean): Self = StObject.set(x, "generate-registration", value.asInstanceOf[js.Any])
+      inline def `setGenerate-registration`(value: Boolean): Self = StObject.set(x, "generate-registration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalpart(value: String): Self = StObject.set(x, "localpart", value.asInstanceOf[js.Any])
+      inline def setLocalpart(value: String): Self = StObject.set(x, "localpart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

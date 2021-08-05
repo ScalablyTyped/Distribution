@@ -15,31 +15,23 @@ trait FileCallback extends StObject {
 }
 object FileCallback {
   
-  @scala.inline
-  def apply(fn: (String, String) => js.Any): FileCallback = {
+  inline def apply(fn: (String, String) => js.Any): FileCallback = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
     __obj.asInstanceOf[FileCallback]
   }
   
-  @scala.inline
-  implicit class FileCallbackMutableBuilder[Self <: FileCallback] (val x: Self) extends AnyVal {
+  extension [Self <: FileCallback](x: Self) {
     
-    @scala.inline
-    def setFn(value: (String, String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+    inline def setFn(value: (String, String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

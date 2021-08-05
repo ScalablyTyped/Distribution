@@ -15,28 +15,21 @@ trait Query extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply(query: String): Query = {
+  inline def apply(query: String): Query = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setBindVars(value: js.Object): Self = StObject.set(x, "bindVars", value.asInstanceOf[js.Any])
+    inline def setBindVars(value: js.Object): Self = StObject.set(x, "bindVars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindVarsUndefined: Self = StObject.set(x, "bindVars", js.undefined)
+    inline def setBindVarsUndefined: Self = StObject.set(x, "bindVars", js.undefined)
     
-    @scala.inline
-    def setOptions(value: QueryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: QueryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

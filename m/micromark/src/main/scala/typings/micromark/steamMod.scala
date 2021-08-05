@@ -12,8 +12,6 @@ object steamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EventEmitter]
-  @scala.inline
-  def default(options: Options): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  inline def default(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EventEmitter]
+  inline def default(options: Options): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
 }

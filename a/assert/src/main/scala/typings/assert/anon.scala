@@ -20,44 +20,32 @@ object anon {
   }
   object Actual {
     
-    @scala.inline
-    def apply(): Actual = {
+    inline def apply(): Actual = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Actual]
     }
     
-    @scala.inline
-    implicit class ActualMutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
+    extension [Self <: Actual](x: Self) {
       
-      @scala.inline
-      def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
       
-      @scala.inline
-      def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setStackStartFunction(value: () => Unit): Self = StObject.set(x, "stackStartFunction", js.Any.fromFunction0(value))
+      inline def setStackStartFunction(value: () => Unit): Self = StObject.set(x, "stackStartFunction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStackStartFunctionUndefined: Self = StObject.set(x, "stackStartFunction", js.undefined)
+      inline def setStackStartFunctionUndefined: Self = StObject.set(x, "stackStartFunction", js.undefined)
     }
   }
 }

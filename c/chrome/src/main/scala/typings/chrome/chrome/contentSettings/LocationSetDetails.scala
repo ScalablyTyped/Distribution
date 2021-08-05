@@ -16,16 +16,13 @@ trait LocationSetDetails
 }
 object LocationSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | ask): LocationSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | ask): LocationSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationSetDetails]
   }
   
-  @scala.inline
-  implicit class LocationSetDetailsMutableBuilder[Self <: LocationSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LocationSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

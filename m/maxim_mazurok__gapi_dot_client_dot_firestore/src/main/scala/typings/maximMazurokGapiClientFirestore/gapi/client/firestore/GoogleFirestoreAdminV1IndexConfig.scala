@@ -29,40 +29,29 @@ trait GoogleFirestoreAdminV1IndexConfig extends StObject {
 }
 object GoogleFirestoreAdminV1IndexConfig {
   
-  @scala.inline
-  def apply(): GoogleFirestoreAdminV1IndexConfig = {
+  inline def apply(): GoogleFirestoreAdminV1IndexConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleFirestoreAdminV1IndexConfig]
   }
   
-  @scala.inline
-  implicit class GoogleFirestoreAdminV1IndexConfigMutableBuilder[Self <: GoogleFirestoreAdminV1IndexConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleFirestoreAdminV1IndexConfig](x: Self) {
     
-    @scala.inline
-    def setAncestorField(value: String): Self = StObject.set(x, "ancestorField", value.asInstanceOf[js.Any])
+    inline def setAncestorField(value: String): Self = StObject.set(x, "ancestorField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorFieldUndefined: Self = StObject.set(x, "ancestorField", js.undefined)
+    inline def setAncestorFieldUndefined: Self = StObject.set(x, "ancestorField", js.undefined)
     
-    @scala.inline
-    def setIndexes(value: js.Array[GoogleFirestoreAdminV1Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[GoogleFirestoreAdminV1Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+    inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    @scala.inline
-    def setIndexesVarargs(value: GoogleFirestoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: GoogleFirestoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setReverting(value: Boolean): Self = StObject.set(x, "reverting", value.asInstanceOf[js.Any])
+    inline def setReverting(value: Boolean): Self = StObject.set(x, "reverting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevertingUndefined: Self = StObject.set(x, "reverting", js.undefined)
+    inline def setRevertingUndefined: Self = StObject.set(x, "reverting", js.undefined)
     
-    @scala.inline
-    def setUsesAncestorConfig(value: Boolean): Self = StObject.set(x, "usesAncestorConfig", value.asInstanceOf[js.Any])
+    inline def setUsesAncestorConfig(value: Boolean): Self = StObject.set(x, "usesAncestorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesAncestorConfigUndefined: Self = StObject.set(x, "usesAncestorConfig", js.undefined)
+    inline def setUsesAncestorConfigUndefined: Self = StObject.set(x, "usesAncestorConfig", js.undefined)
   }
 }

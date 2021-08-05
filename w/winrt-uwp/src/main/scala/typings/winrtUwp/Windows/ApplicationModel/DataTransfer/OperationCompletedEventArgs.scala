@@ -15,19 +15,15 @@ trait OperationCompletedEventArgs extends StObject {
 }
 object OperationCompletedEventArgs {
   
-  @scala.inline
-  def apply(acceptedFormatId: js.Any, operation: DataPackageOperation): OperationCompletedEventArgs = {
+  inline def apply(acceptedFormatId: js.Any, operation: DataPackageOperation): OperationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(acceptedFormatId = acceptedFormatId.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class OperationCompletedEventArgsMutableBuilder[Self <: OperationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: OperationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAcceptedFormatId(value: js.Any): Self = StObject.set(x, "acceptedFormatId", value.asInstanceOf[js.Any])
+    inline def setAcceptedFormatId(value: js.Any): Self = StObject.set(x, "acceptedFormatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: DataPackageOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: DataPackageOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

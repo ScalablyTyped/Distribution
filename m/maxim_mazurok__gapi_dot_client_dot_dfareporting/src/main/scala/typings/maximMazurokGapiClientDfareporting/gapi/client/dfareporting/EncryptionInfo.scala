@@ -20,37 +20,27 @@ trait EncryptionInfo extends StObject {
 }
 object EncryptionInfo {
   
-  @scala.inline
-  def apply(): EncryptionInfo = {
+  inline def apply(): EncryptionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionInfo]
   }
   
-  @scala.inline
-  implicit class EncryptionInfoMutableBuilder[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionInfo](x: Self) {
     
-    @scala.inline
-    def setEncryptionEntityId(value: String): Self = StObject.set(x, "encryptionEntityId", value.asInstanceOf[js.Any])
+    inline def setEncryptionEntityId(value: String): Self = StObject.set(x, "encryptionEntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionEntityIdUndefined: Self = StObject.set(x, "encryptionEntityId", js.undefined)
+    inline def setEncryptionEntityIdUndefined: Self = StObject.set(x, "encryptionEntityId", js.undefined)
     
-    @scala.inline
-    def setEncryptionEntityType(value: String): Self = StObject.set(x, "encryptionEntityType", value.asInstanceOf[js.Any])
+    inline def setEncryptionEntityType(value: String): Self = StObject.set(x, "encryptionEntityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionEntityTypeUndefined: Self = StObject.set(x, "encryptionEntityType", js.undefined)
+    inline def setEncryptionEntityTypeUndefined: Self = StObject.set(x, "encryptionEntityType", js.undefined)
     
-    @scala.inline
-    def setEncryptionSource(value: String): Self = StObject.set(x, "encryptionSource", value.asInstanceOf[js.Any])
+    inline def setEncryptionSource(value: String): Self = StObject.set(x, "encryptionSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionSourceUndefined: Self = StObject.set(x, "encryptionSource", js.undefined)
+    inline def setEncryptionSourceUndefined: Self = StObject.set(x, "encryptionSource", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

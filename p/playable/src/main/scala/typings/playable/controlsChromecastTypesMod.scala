@@ -24,8 +24,7 @@ object controlsChromecastTypesMod {
   }
   object IChromecastButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -36,23 +35,17 @@ object controlsChromecastTypesMod {
       __obj.asInstanceOf[IChromecastButton]
     }
     
-    @scala.inline
-    implicit class IChromecastButtonMutableBuilder[Self <: IChromecastButton] (val x: Self) extends AnyVal {
+    extension [Self <: IChromecastButton](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetChromecastButtonCallback(value: js.Function => Unit): Self = StObject.set(x, "setChromecastButtonCallback", js.Any.fromFunction1(value))
+      inline def setSetChromecastButtonCallback(value: js.Function => Unit): Self = StObject.set(x, "setChromecastButtonCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -66,23 +59,18 @@ object controlsChromecastTypesMod {
   }
   object IChromecastStyles {
     
-    @scala.inline
-    def apply(buttonWrapper: String, downloadButton: String, hidden: String): IChromecastStyles = {
+    inline def apply(buttonWrapper: String, downloadButton: String, hidden: String): IChromecastStyles = {
       val __obj = js.Dynamic.literal(buttonWrapper = buttonWrapper.asInstanceOf[js.Any], downloadButton = downloadButton.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChromecastStyles]
     }
     
-    @scala.inline
-    implicit class IChromecastStylesMutableBuilder[Self <: IChromecastStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IChromecastStyles](x: Self) {
       
-      @scala.inline
-      def setButtonWrapper(value: String): Self = StObject.set(x, "buttonWrapper", value.asInstanceOf[js.Any])
+      inline def setButtonWrapper(value: String): Self = StObject.set(x, "buttonWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadButton(value: String): Self = StObject.set(x, "downloadButton", value.asInstanceOf[js.Any])
+      inline def setDownloadButton(value: String): Self = StObject.set(x, "downloadButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +80,14 @@ object controlsChromecastTypesMod {
   }
   object IChromecastViewCallbacks {
     
-    @scala.inline
-    def apply(onButtonClick: js.Function): IChromecastViewCallbacks = {
+    inline def apply(onButtonClick: js.Function): IChromecastViewCallbacks = {
       val __obj = js.Dynamic.literal(onButtonClick = onButtonClick.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChromecastViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IChromecastViewCallbacksMutableBuilder[Self <: IChromecastViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IChromecastViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnButtonClick(value: js.Function): Self = StObject.set(x, "onButtonClick", value.asInstanceOf[js.Any])
+      inline def setOnButtonClick(value: js.Function): Self = StObject.set(x, "onButtonClick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,8 +103,7 @@ object controlsChromecastTypesMod {
   }
   object IChromecastViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: IChromecastViewCallbacks,
       textMap: ITextMap,
       theme: IThemeService,
@@ -129,20 +113,15 @@ object controlsChromecastTypesMod {
       __obj.asInstanceOf[IChromecastViewConfig]
     }
     
-    @scala.inline
-    implicit class IChromecastViewConfigMutableBuilder[Self <: IChromecastViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IChromecastViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IChromecastViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IChromecastViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
 }

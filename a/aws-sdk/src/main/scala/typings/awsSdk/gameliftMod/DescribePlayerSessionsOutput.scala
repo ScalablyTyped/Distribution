@@ -18,28 +18,21 @@ trait DescribePlayerSessionsOutput extends StObject {
 }
 object DescribePlayerSessionsOutput {
   
-  @scala.inline
-  def apply(): DescribePlayerSessionsOutput = {
+  inline def apply(): DescribePlayerSessionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePlayerSessionsOutput]
   }
   
-  @scala.inline
-  implicit class DescribePlayerSessionsOutputMutableBuilder[Self <: DescribePlayerSessionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePlayerSessionsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPlayerSessions(value: PlayerSessionList): Self = StObject.set(x, "PlayerSessions", value.asInstanceOf[js.Any])
+    inline def setPlayerSessions(value: PlayerSessionList): Self = StObject.set(x, "PlayerSessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerSessionsUndefined: Self = StObject.set(x, "PlayerSessions", js.undefined)
+    inline def setPlayerSessionsUndefined: Self = StObject.set(x, "PlayerSessions", js.undefined)
     
-    @scala.inline
-    def setPlayerSessionsVarargs(value: PlayerSession*): Self = StObject.set(x, "PlayerSessions", js.Array(value :_*))
+    inline def setPlayerSessionsVarargs(value: PlayerSession*): Self = StObject.set(x, "PlayerSessions", js.Array(value :_*))
   }
 }

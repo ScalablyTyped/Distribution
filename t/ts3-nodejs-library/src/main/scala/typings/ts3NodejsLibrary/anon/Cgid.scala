@@ -10,16 +10,13 @@ trait Cgid extends StObject {
 }
 object Cgid {
   
-  @scala.inline
-  def apply(cgid: String): Cgid = {
+  inline def apply(cgid: String): Cgid = {
     val __obj = js.Dynamic.literal(cgid = cgid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cgid]
   }
   
-  @scala.inline
-  implicit class CgidMutableBuilder[Self <: Cgid] (val x: Self) extends AnyVal {
+  extension [Self <: Cgid](x: Self) {
     
-    @scala.inline
-    def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
+    inline def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
   }
 }

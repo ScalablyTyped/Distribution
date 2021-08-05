@@ -16,17 +16,14 @@ object anon {
   }
   object Globals {
     
-    @scala.inline
-    def apply(globals: StringDictionary[js.Any]): Globals = {
+    inline def apply(globals: StringDictionary[js.Any]): Globals = {
       val __obj = js.Dynamic.literal(globals = globals.asInstanceOf[js.Any])
       __obj.asInstanceOf[Globals]
     }
     
-    @scala.inline
-    implicit class GlobalsMutableBuilder[Self <: Globals] (val x: Self) extends AnyVal {
+    extension [Self <: Globals](x: Self) {
       
-      @scala.inline
-      def setGlobals(value: StringDictionary[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: StringDictionary[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     }
   }
 }

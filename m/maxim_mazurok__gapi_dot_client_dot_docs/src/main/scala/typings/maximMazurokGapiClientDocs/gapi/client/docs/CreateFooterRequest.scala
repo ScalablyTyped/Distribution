@@ -17,25 +17,19 @@ trait CreateFooterRequest extends StObject {
 }
 object CreateFooterRequest {
   
-  @scala.inline
-  def apply(): CreateFooterRequest = {
+  inline def apply(): CreateFooterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFooterRequest]
   }
   
-  @scala.inline
-  implicit class CreateFooterRequestMutableBuilder[Self <: CreateFooterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFooterRequest](x: Self) {
     
-    @scala.inline
-    def setSectionBreakLocation(value: Location): Self = StObject.set(x, "sectionBreakLocation", value.asInstanceOf[js.Any])
+    inline def setSectionBreakLocation(value: Location): Self = StObject.set(x, "sectionBreakLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionBreakLocationUndefined: Self = StObject.set(x, "sectionBreakLocation", js.undefined)
+    inline def setSectionBreakLocationUndefined: Self = StObject.set(x, "sectionBreakLocation", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

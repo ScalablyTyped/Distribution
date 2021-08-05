@@ -18,19 +18,15 @@ trait GetArchiveRuleRequest extends StObject {
 }
 object GetArchiveRuleRequest {
   
-  @scala.inline
-  def apply(analyzerName: Name, ruleName: Name): GetArchiveRuleRequest = {
+  inline def apply(analyzerName: Name, ruleName: Name): GetArchiveRuleRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetArchiveRuleRequest]
   }
   
-  @scala.inline
-  implicit class GetArchiveRuleRequestMutableBuilder[Self <: GetArchiveRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetArchiveRuleRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
+    inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }
 }

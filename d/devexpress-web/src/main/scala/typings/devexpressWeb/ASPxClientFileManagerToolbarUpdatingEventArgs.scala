@@ -18,16 +18,13 @@ trait ASPxClientFileManagerToolbarUpdatingEventArgs
 }
 object ASPxClientFileManagerToolbarUpdatingEventArgs {
   
-  @scala.inline
-  def apply(activeAreaName: String): ASPxClientFileManagerToolbarUpdatingEventArgs = {
+  inline def apply(activeAreaName: String): ASPxClientFileManagerToolbarUpdatingEventArgs = {
     val __obj = js.Dynamic.literal(activeAreaName = activeAreaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerToolbarUpdatingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerToolbarUpdatingEventArgsMutableBuilder[Self <: ASPxClientFileManagerToolbarUpdatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerToolbarUpdatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setActiveAreaName(value: String): Self = StObject.set(x, "activeAreaName", value.asInstanceOf[js.Any])
+    inline def setActiveAreaName(value: String): Self = StObject.set(x, "activeAreaName", value.asInstanceOf[js.Any])
   }
 }

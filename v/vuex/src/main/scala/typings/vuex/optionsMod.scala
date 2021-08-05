@@ -14,20 +14,16 @@ object optionsMod {
   }
   object ComponentOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
       
-      @scala.inline
-      def setStore(value: Store[js.Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store[js.Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
 }

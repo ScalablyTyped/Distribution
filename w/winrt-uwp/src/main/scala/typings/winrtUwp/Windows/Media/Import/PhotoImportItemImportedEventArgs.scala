@@ -12,16 +12,13 @@ trait PhotoImportItemImportedEventArgs extends StObject {
 }
 object PhotoImportItemImportedEventArgs {
   
-  @scala.inline
-  def apply(importedItem: PhotoImportItem): PhotoImportItemImportedEventArgs = {
+  inline def apply(importedItem: PhotoImportItem): PhotoImportItemImportedEventArgs = {
     val __obj = js.Dynamic.literal(importedItem = importedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoImportItemImportedEventArgs]
   }
   
-  @scala.inline
-  implicit class PhotoImportItemImportedEventArgsMutableBuilder[Self <: PhotoImportItemImportedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportItemImportedEventArgs](x: Self) {
     
-    @scala.inline
-    def setImportedItem(value: PhotoImportItem): Self = StObject.set(x, "importedItem", value.asInstanceOf[js.Any])
+    inline def setImportedItem(value: PhotoImportItem): Self = StObject.set(x, "importedItem", value.asInstanceOf[js.Any])
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PictureEffect")
 @js.native
-class PictureEffect protected ()
+/* private */ class PictureEffect ()
   extends StObject
      with typings.activexOffice.Office.PictureEffect {
   
@@ -30,7 +30,7 @@ class PictureEffect protected ()
   @JSName("EffectParameters")
   override val EffectParameters_Original: EffectParameters = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.PictureEffect_typekey")
   var OfficeDotPictureEffect_typekey: typings.activexOffice.Office.PictureEffect = js.native
   

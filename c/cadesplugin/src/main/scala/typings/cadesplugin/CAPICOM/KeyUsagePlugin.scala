@@ -11,16 +11,13 @@ trait KeyUsagePlugin extends StObject {
 }
 object KeyUsagePlugin {
   
-  @scala.inline
-  def apply(): KeyUsagePlugin = {
+  inline def apply(): KeyUsagePlugin = {
     val __obj = js.Dynamic.literal(CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE = 128)
     __obj.asInstanceOf[KeyUsagePlugin]
   }
   
-  @scala.inline
-  implicit class KeyUsagePluginMutableBuilder[Self <: KeyUsagePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: KeyUsagePlugin](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_DIGITAL_SIGNATURE_KEY_USAGE(value: `128`): Self = StObject.set(x, "CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_DIGITAL_SIGNATURE_KEY_USAGE(value: `128`): Self = StObject.set(x, "CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE", value.asInstanceOf[js.Any])
   }
 }

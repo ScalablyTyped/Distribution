@@ -44,48 +44,35 @@ object auroraDataApiConnectionOptionsMod {
   }
   object AuroraDataApiConnectionOptions {
     
-    @scala.inline
-    def apply(database: String, region: String, resourceArn: String, secretArn: String): AuroraDataApiConnectionOptions = {
+    inline def apply(database: String, region: String, resourceArn: String, secretArn: String): AuroraDataApiConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("aurora-data-api")
       __obj.asInstanceOf[AuroraDataApiConnectionOptions]
     }
     
-    @scala.inline
-    implicit class AuroraDataApiConnectionOptionsMutableBuilder[Self <: AuroraDataApiConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuroraDataApiConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
+      inline def setFormatOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatOptionsUndefined: Self = StObject.set(x, "formatOptions", js.undefined)
+      inline def setFormatOptionsUndefined: Self = StObject.set(x, "formatOptions", js.undefined)
       
-      @scala.inline
-      def setLegacySpatialSupport(value: Boolean): Self = StObject.set(x, "legacySpatialSupport", value.asInstanceOf[js.Any])
+      inline def setLegacySpatialSupport(value: Boolean): Self = StObject.set(x, "legacySpatialSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegacySpatialSupportUndefined: Self = StObject.set(x, "legacySpatialSupport", js.undefined)
+      inline def setLegacySpatialSupportUndefined: Self = StObject.set(x, "legacySpatialSupport", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretArn(value: String): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+      inline def setSecretArn(value: String): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceConfigOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "serviceConfigOptions", value.asInstanceOf[js.Any])
+      inline def setServiceConfigOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "serviceConfigOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceConfigOptionsUndefined: Self = StObject.set(x, "serviceConfigOptions", js.undefined)
+      inline def setServiceConfigOptionsUndefined: Self = StObject.set(x, "serviceConfigOptions", js.undefined)
       
-      @scala.inline
-      def setType(value: `aurora-data-api`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `aurora-data-api`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

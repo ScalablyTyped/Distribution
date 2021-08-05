@@ -21,18 +21,15 @@ object NormalsKind {
     *
     * With FLAT shading, the faces of the object are rendered in a solid color.
     */
-  @scala.inline
-  def FLAT: `1` = 1.asInstanceOf[`1`]
+  inline def FLAT: `1` = 1.asInstanceOf[`1`]
   
   /** does not produce standard normals, but leaves the object-specific ones untouched. */
-  @scala.inline
-  def SPECIFIC: `0` = 0.asInstanceOf[`0`]
+  inline def SPECIFIC: `0` = 0.asInstanceOf[`0`]
   
   /**
     * forces normals to think that the object is a sphere.
     *
     * This value forces projection to wrapping in X and/or Y.
     */
-  @scala.inline
-  def SPHERE: `2` = 2.asInstanceOf[`2`]
+  inline def SPHERE: `2` = 2.asInstanceOf[`2`]
 }

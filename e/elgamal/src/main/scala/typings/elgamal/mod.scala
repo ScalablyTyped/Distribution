@@ -28,10 +28,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def generateAsync(): js.Promise[ElGamal] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsync")().asInstanceOf[js.Promise[ElGamal]]
-    @scala.inline
-    def generateAsync(primeBits: Double): js.Promise[ElGamal] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsync")(primeBits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElGamal]]
+    inline def generateAsync(): js.Promise[ElGamal] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsync")().asInstanceOf[js.Promise[ElGamal]]
+    inline def generateAsync(primeBits: Double): js.Promise[ElGamal] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsync")(primeBits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElGamal]]
   }
   
   @JSImport("elgamal", "BigInt")
@@ -55,14 +53,12 @@ object mod {
     @JSImport("elgamal", "BigInt.ONE")
     @js.native
     def ONE: BigInteger = js.native
-    @scala.inline
-    def ONE_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     @JSImport("elgamal", "BigInt.ZERO")
     @js.native
     def ZERO: BigInteger = js.native
-    @scala.inline
-    def ZERO_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("elgamal", "DecryptedValue")
@@ -110,21 +106,15 @@ object mod {
     @js.native
     val BIG_TWO: BigInteger = js.native
     
-    @scala.inline
-    def getBigPrimeAsync(bits: Double): js.Promise[BigInteger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBigPrimeAsync")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BigInteger]]
+    inline def getBigPrimeAsync(bits: Double): js.Promise[BigInteger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBigPrimeAsync")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BigInteger]]
     
-    @scala.inline
-    def getRandomBigIntAsync(min: BigInteger, max: BigInteger): js.Promise[BigInteger] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntAsync")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BigInteger]]
+    inline def getRandomBigIntAsync(min: BigInteger, max: BigInteger): js.Promise[BigInteger] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntAsync")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BigInteger]]
     
-    @scala.inline
-    def getRandomNbitBigIntAsync(bits: Double): js.Promise[BigInteger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomNbitBigIntAsync")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BigInteger]]
+    inline def getRandomNbitBigIntAsync(bits: Double): js.Promise[BigInteger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomNbitBigIntAsync")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BigInteger]]
     
-    @scala.inline
-    def parseBigInt(obj: String): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
-    @scala.inline
-    def parseBigInt(obj: Double): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
-    @scala.inline
-    def parseBigInt(obj: BigInteger): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
+    inline def parseBigInt(obj: String): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
+    inline def parseBigInt(obj: Double): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
+    inline def parseBigInt(obj: BigInteger): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
   }
   
   @js.native

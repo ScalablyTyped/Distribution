@@ -8,6 +8,5 @@ object pluginErrorStrings {
   
   @js.native
   sealed trait Constructor extends StObject
-  @scala.inline
-  def Constructor: Constructor = "Constructor".asInstanceOf[Constructor]
+  inline def Constructor: Constructor = "Constructor".asInstanceOf[Constructor]
 }

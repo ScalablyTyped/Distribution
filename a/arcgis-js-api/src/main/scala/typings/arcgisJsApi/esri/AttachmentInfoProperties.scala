@@ -78,76 +78,53 @@ trait AttachmentInfoProperties extends StObject {
 }
 object AttachmentInfoProperties {
   
-  @scala.inline
-  def apply(): AttachmentInfoProperties = {
+  inline def apply(): AttachmentInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentInfoProperties]
   }
   
-  @scala.inline
-  implicit class AttachmentInfoPropertiesMutableBuilder[Self <: AttachmentInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentInfoProperties](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setExifInfo(value: js.Array[ExifInfo]): Self = StObject.set(x, "exifInfo", value.asInstanceOf[js.Any])
+    inline def setExifInfo(value: js.Array[ExifInfo]): Self = StObject.set(x, "exifInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExifInfoUndefined: Self = StObject.set(x, "exifInfo", js.undefined)
+    inline def setExifInfoUndefined: Self = StObject.set(x, "exifInfo", js.undefined)
     
-    @scala.inline
-    def setExifInfoVarargs(value: ExifInfo*): Self = StObject.set(x, "exifInfo", js.Array(value :_*))
+    inline def setExifInfoVarargs(value: ExifInfo*): Self = StObject.set(x, "exifInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
+    inline def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalIdUndefined: Self = StObject.set(x, "globalId", js.undefined)
+    inline def setGlobalIdUndefined: Self = StObject.set(x, "globalId", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentGlobalId(value: Double): Self = StObject.set(x, "parentGlobalId", value.asInstanceOf[js.Any])
+    inline def setParentGlobalId(value: Double): Self = StObject.set(x, "parentGlobalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentGlobalIdUndefined: Self = StObject.set(x, "parentGlobalId", js.undefined)
+    inline def setParentGlobalIdUndefined: Self = StObject.set(x, "parentGlobalId", js.undefined)
     
-    @scala.inline
-    def setParentObjectId(value: Double): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
+    inline def setParentObjectId(value: Double): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
+    inline def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

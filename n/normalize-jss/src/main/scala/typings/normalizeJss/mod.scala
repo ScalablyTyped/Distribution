@@ -15,6 +15,5 @@ object mod {
   @js.native
   def global: A = js.native
   
-  @scala.inline
-  def global_=(x: A): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("@global")(x.asInstanceOf[js.Any])
+  inline def global_=(x: A): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("@global")(x.asInstanceOf[js.Any])
 }

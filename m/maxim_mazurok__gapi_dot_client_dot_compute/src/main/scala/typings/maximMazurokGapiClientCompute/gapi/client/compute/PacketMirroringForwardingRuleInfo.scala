@@ -14,25 +14,19 @@ trait PacketMirroringForwardingRuleInfo extends StObject {
 }
 object PacketMirroringForwardingRuleInfo {
   
-  @scala.inline
-  def apply(): PacketMirroringForwardingRuleInfo = {
+  inline def apply(): PacketMirroringForwardingRuleInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PacketMirroringForwardingRuleInfo]
   }
   
-  @scala.inline
-  implicit class PacketMirroringForwardingRuleInfoMutableBuilder[Self <: PacketMirroringForwardingRuleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PacketMirroringForwardingRuleInfo](x: Self) {
     
-    @scala.inline
-    def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
+    inline def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalUrlUndefined: Self = StObject.set(x, "canonicalUrl", js.undefined)
+    inline def setCanonicalUrlUndefined: Self = StObject.set(x, "canonicalUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

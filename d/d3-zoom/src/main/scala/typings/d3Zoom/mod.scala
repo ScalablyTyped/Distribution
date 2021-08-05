@@ -19,15 +19,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")().asInstanceOf[ZoomBehavior[ZoomRefElement, Datum]]
+  inline def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")().asInstanceOf[ZoomBehavior[ZoomRefElement, Datum]]
   
   @JSImport("d3-zoom", "zoomIdentity")
   @js.native
   val zoomIdentity: ZoomTransform_ = js.native
   
-  @scala.inline
-  def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomTransform")(node.asInstanceOf[js.Any]).asInstanceOf[ZoomTransform_]
+  inline def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomTransform")(node.asInstanceOf[js.Any]).asInstanceOf[ZoomTransform_]
   
   trait D3ZoomEvent[ZoomRefElement /* <: ZoomedElementBaseType */, Datum] extends StObject {
     
@@ -69,8 +67,7 @@ object mod {
   }
   object D3ZoomEvent {
     
-    @scala.inline
-    def apply[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](
+    inline def apply[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](
       sourceEvent: js.Any,
       target: ZoomBehavior[ZoomRefElement, Datum],
       transform: ZoomTransform_,
@@ -81,20 +78,15 @@ object mod {
       __obj.asInstanceOf[D3ZoomEvent[ZoomRefElement, Datum]]
     }
     
-    @scala.inline
-    implicit class D3ZoomEventMutableBuilder[Self <: D3ZoomEvent[?, ?], ZoomRefElement /* <: ZoomedElementBaseType */, Datum] (val x: Self & (D3ZoomEvent[ZoomRefElement, Datum])) extends AnyVal {
+    extension [Self <: D3ZoomEvent[?, ?], ZoomRefElement /* <: ZoomedElementBaseType */, Datum](x: Self & (D3ZoomEvent[ZoomRefElement, Datum])) {
       
-      @scala.inline
-      def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: ZoomBehavior[ZoomRefElement, Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ZoomBehavior[ZoomRefElement, Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: ZoomTransform_): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: ZoomTransform_): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: start | zoom | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: start | zoom | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -893,8 +885,7 @@ object mod {
   }
   object ZoomTransform_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: js.Tuple2[Double, Double] => js.Tuple2[Double, Double],
       applyX: Double => Double,
       applyY: Double => Double,
@@ -913,47 +904,33 @@ object mod {
       __obj.asInstanceOf[ZoomTransform_]
     }
     
-    @scala.inline
-    implicit class ZoomTransform_MutableBuilder[Self <: ZoomTransform_] (val x: Self) extends AnyVal {
+    extension [Self <: ZoomTransform_](x: Self) {
       
-      @scala.inline
-      def setApply(value: js.Tuple2[Double, Double] => js.Tuple2[Double, Double]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: js.Tuple2[Double, Double] => js.Tuple2[Double, Double]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setApplyX(value: Double => Double): Self = StObject.set(x, "applyX", js.Any.fromFunction1(value))
+      inline def setApplyX(value: Double => Double): Self = StObject.set(x, "applyX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setApplyY(value: Double => Double): Self = StObject.set(x, "applyY", js.Any.fromFunction1(value))
+      inline def setApplyY(value: Double => Double): Self = StObject.set(x, "applyY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvert(value: js.Tuple2[Double, Double] => js.Tuple2[Double, Double]): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
+      inline def setInvert(value: js.Tuple2[Double, Double] => js.Tuple2[Double, Double]): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvertX(value: Double => Double): Self = StObject.set(x, "invertX", js.Any.fromFunction1(value))
+      inline def setInvertX(value: Double => Double): Self = StObject.set(x, "invertX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvertY(value: Double => Double): Self = StObject.set(x, "invertY", js.Any.fromFunction1(value))
+      inline def setInvertY(value: Double => Double): Self = StObject.set(x, "invertY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRescaleX(value: js.Any => js.Any): Self = StObject.set(x, "rescaleX", js.Any.fromFunction1(value))
+      inline def setRescaleX(value: js.Any => js.Any): Self = StObject.set(x, "rescaleX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRescaleY(value: js.Any => js.Any): Self = StObject.set(x, "rescaleY", js.Any.fromFunction1(value))
+      inline def setRescaleY(value: js.Any => js.Any): Self = StObject.set(x, "rescaleY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScale(value: Double => ZoomTransform_): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+      inline def setScale(value: Double => ZoomTransform_): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranslate(value: (Double, Double) => ZoomTransform_): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+      inline def setTranslate(value: (Double, Double) => ZoomTransform_): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

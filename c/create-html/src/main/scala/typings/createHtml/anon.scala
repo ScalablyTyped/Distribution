@@ -40,83 +40,58 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(): Body = {
+    inline def apply(): Body = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCss(value: String | js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String | js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssAsync(value: String | js.Array[String]): Self = StObject.set(x, "cssAsync", value.asInstanceOf[js.Any])
+      inline def setCssAsync(value: String | js.Array[String]): Self = StObject.set(x, "cssAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssAsyncUndefined: Self = StObject.set(x, "cssAsync", js.undefined)
+      inline def setCssAsyncUndefined: Self = StObject.set(x, "cssAsync", js.undefined)
       
-      @scala.inline
-      def setCssAsyncVarargs(value: String*): Self = StObject.set(x, "cssAsync", js.Array(value :_*))
+      inline def setCssAsyncVarargs(value: String*): Self = StObject.set(x, "cssAsync", js.Array(value :_*))
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
+      inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
+      inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
       
-      @scala.inline
-      def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setScript(value: String | js.Array[String]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String | js.Array[String]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptAsync(value: Boolean): Self = StObject.set(x, "scriptAsync", value.asInstanceOf[js.Any])
+      inline def setScriptAsync(value: Boolean): Self = StObject.set(x, "scriptAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptAsyncUndefined: Self = StObject.set(x, "scriptAsync", js.undefined)
+      inline def setScriptAsyncUndefined: Self = StObject.set(x, "scriptAsync", js.undefined)
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      @scala.inline
-      def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value :_*))
+      inline def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

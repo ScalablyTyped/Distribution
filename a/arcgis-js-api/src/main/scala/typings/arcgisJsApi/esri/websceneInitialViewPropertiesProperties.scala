@@ -38,37 +38,27 @@ trait websceneInitialViewPropertiesProperties extends StObject {
 }
 object websceneInitialViewPropertiesProperties {
   
-  @scala.inline
-  def apply(): websceneInitialViewPropertiesProperties = {
+  inline def apply(): websceneInitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[websceneInitialViewPropertiesProperties]
   }
   
-  @scala.inline
-  implicit class websceneInitialViewPropertiesPropertiesMutableBuilder[Self <: websceneInitialViewPropertiesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: websceneInitialViewPropertiesProperties](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: EnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: EnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setViewingMode(value: global | local): Self = StObject.set(x, "viewingMode", value.asInstanceOf[js.Any])
+    inline def setViewingMode(value: global | local): Self = StObject.set(x, "viewingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewingModeUndefined: Self = StObject.set(x, "viewingMode", js.undefined)
+    inline def setViewingModeUndefined: Self = StObject.set(x, "viewingMode", js.undefined)
     
-    @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

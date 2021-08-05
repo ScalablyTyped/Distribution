@@ -29,31 +29,23 @@ trait CorsOptions extends StObject {
 }
 object CorsOptions {
   
-  @scala.inline
-  def apply(): CorsOptions = {
+  inline def apply(): CorsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CorsOptions]
   }
   
-  @scala.inline
-  implicit class CorsOptionsMutableBuilder[Self <: CorsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CorsOptions](x: Self) {
     
-    @scala.inline
-    def setAllowXdr(value: Boolean): Self = StObject.set(x, "allowXdr", value.asInstanceOf[js.Any])
+    inline def setAllowXdr(value: Boolean): Self = StObject.set(x, "allowXdr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowXdrUndefined: Self = StObject.set(x, "allowXdr", js.undefined)
+    inline def setAllowXdrUndefined: Self = StObject.set(x, "allowXdr", js.undefined)
     
-    @scala.inline
-    def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
+    inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
     
-    @scala.inline
-    def setSendCredentials(value: Boolean): Self = StObject.set(x, "sendCredentials", value.asInstanceOf[js.Any])
+    inline def setSendCredentials(value: Boolean): Self = StObject.set(x, "sendCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendCredentialsUndefined: Self = StObject.set(x, "sendCredentials", js.undefined)
+    inline def setSendCredentialsUndefined: Self = StObject.set(x, "sendCredentials", js.undefined)
   }
 }

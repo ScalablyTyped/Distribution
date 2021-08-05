@@ -15,10 +15,8 @@ object STATE_CHANGE_TYPE {
   @js.native
   val ^ : STATE_CHANGE_TYPE = js.native
   
-  @scala.inline
-  implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: STATE_CHANGE_TYPE](x: Self) {
     
-    @scala.inline
-    def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
   }
 }

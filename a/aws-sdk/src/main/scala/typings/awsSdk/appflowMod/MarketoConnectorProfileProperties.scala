@@ -13,16 +13,13 @@ trait MarketoConnectorProfileProperties extends StObject {
 }
 object MarketoConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): MarketoConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): MarketoConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarketoConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class MarketoConnectorProfilePropertiesMutableBuilder[Self <: MarketoConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MarketoConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -21,19 +21,15 @@ trait RuleSet extends StObject {
 }
 object RuleSet {
   
-  @scala.inline
-  def apply(HandleFolder: Boolean, Rules: SafeArray[Rule]): RuleSet = {
+  inline def apply(HandleFolder: Boolean, Rules: SafeArray[Rule]): RuleSet = {
     val __obj = js.Dynamic.literal(HandleFolder = HandleFolder.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleSet]
   }
   
-  @scala.inline
-  implicit class RuleSetMutableBuilder[Self <: RuleSet] (val x: Self) extends AnyVal {
+  extension [Self <: RuleSet](x: Self) {
     
-    @scala.inline
-    def setHandleFolder(value: Boolean): Self = StObject.set(x, "HandleFolder", value.asInstanceOf[js.Any])
+    inline def setHandleFolder(value: Boolean): Self = StObject.set(x, "HandleFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: SafeArray[Rule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: SafeArray[Rule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
   }
 }

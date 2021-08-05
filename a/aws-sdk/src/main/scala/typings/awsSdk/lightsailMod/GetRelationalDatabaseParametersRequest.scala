@@ -18,22 +18,17 @@ trait GetRelationalDatabaseParametersRequest extends StObject {
 }
 object GetRelationalDatabaseParametersRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseParametersRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseParametersRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseParametersRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseParametersRequestMutableBuilder[Self <: GetRelationalDatabaseParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseParametersRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

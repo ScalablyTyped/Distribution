@@ -41,17 +41,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(unit = "AUTO")
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setUnit(value: AUTO): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: AUTO): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,18 +60,15 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): `1` = {
+    inline def apply(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setType(value: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,18 +80,15 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("NONE")
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setType(value: NONE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NONE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,21 +102,17 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(color: RGBA): Color = {
+    inline def apply(color: RGBA): Color = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("SOLID_COLOR")
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: SOLID_COLOR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SOLID_COLOR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,21 +126,17 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(delay: Double, `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): Delay = {
+    inline def apply(delay: Double, `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): Delay = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,42 +160,31 @@ object anon {
   }
   object DestinationId {
     
-    @scala.inline
-    def apply(navigation: Navigation, preserveScrollPosition: Boolean): DestinationId = {
+    inline def apply(navigation: Navigation, preserveScrollPosition: Boolean): DestinationId = {
       val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], preserveScrollPosition = preserveScrollPosition.asInstanceOf[js.Any], destinationId = null, transition = null)
       __obj.updateDynamic("type")("NODE")
       __obj.asInstanceOf[DestinationId]
     }
     
-    @scala.inline
-    implicit class DestinationIdMutableBuilder[Self <: DestinationId] (val x: Self) extends AnyVal {
+    extension [Self <: DestinationId](x: Self) {
       
-      @scala.inline
-      def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
+      inline def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationIdNull: Self = StObject.set(x, "destinationId", null)
+      inline def setDestinationIdNull: Self = StObject.set(x, "destinationId", null)
       
-      @scala.inline
-      def setNavigation(value: Navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: Navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayRelativePosition(value: Vector): Self = StObject.set(x, "overlayRelativePosition", value.asInstanceOf[js.Any])
+      inline def setOverlayRelativePosition(value: Vector): Self = StObject.set(x, "overlayRelativePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayRelativePositionUndefined: Self = StObject.set(x, "overlayRelativePosition", js.undefined)
+      inline def setOverlayRelativePositionUndefined: Self = StObject.set(x, "overlayRelativePosition", js.undefined)
       
-      @scala.inline
-      def setPreserveScrollPosition(value: Boolean): Self = StObject.set(x, "preserveScrollPosition", value.asInstanceOf[js.Any])
+      inline def setPreserveScrollPosition(value: Boolean): Self = StObject.set(x, "preserveScrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNull: Self = StObject.set(x, "transition", null)
+      inline def setTransitionNull: Self = StObject.set(x, "transition", null)
       
-      @scala.inline
-      def setType(value: NODE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NODE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,23 +198,18 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: Double, node: TextNode, start: Double): End = {
+    inline def apply(end: Double, node: TextNode, start: Double): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: TextNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: TextNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,21 +223,17 @@ object anon {
   }
   object Timeout {
     
-    @scala.inline
-    def apply(timeout: Double): Timeout = {
+    inline def apply(timeout: Double): Timeout = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("AFTER_TIMEOUT")
       __obj.asInstanceOf[Timeout]
     }
     
-    @scala.inline
-    implicit class TimeoutMutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
+    extension [Self <: Timeout](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: AFTER_TIMEOUT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AFTER_TIMEOUT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,18 +245,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: BACK | CLOSE): Type = {
+    inline def apply(`type`: BACK | CLOSE): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: BACK | CLOSE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BACK | CLOSE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,20 +267,16 @@ object anon {
   }
   object Unit {
     
-    @scala.inline
-    def apply(unit: PIXELS | PERCENT, value: Double): Unit = {
+    inline def apply(unit: PIXELS | PERCENT, value: Double): Unit = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Unit]
     }
     
-    @scala.inline
-    implicit class UnitMutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
+    extension [Self <: Unit](x: Self) {
       
-      @scala.inline
-      def setUnit(value: PIXELS | PERCENT): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: PIXELS | PERCENT): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,21 +290,17 @@ object anon {
   }
   object Url {
     
-    @scala.inline
-    def apply(url: String): Url = {
+    inline def apply(url: String): Url = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("URL")
       __obj.asInstanceOf[Url]
     }
     
-    @scala.inline
-    implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+    extension [Self <: Url](x: Self) {
       
-      @scala.inline
-      def setType(value: URL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: URL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

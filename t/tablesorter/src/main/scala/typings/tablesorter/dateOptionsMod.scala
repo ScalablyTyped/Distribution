@@ -15,20 +15,16 @@ object dateOptionsMod {
   }
   object DateOptions {
     
-    @scala.inline
-    def apply(): DateOptions = {
+    inline def apply(): DateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateOptions]
     }
     
-    @scala.inline
-    implicit class DateOptionsMutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateOptions](x: Self) {
       
-      @scala.inline
-      def setEndOfDay(value: Boolean): Self = StObject.set(x, "endOfDay", value.asInstanceOf[js.Any])
+      inline def setEndOfDay(value: Boolean): Self = StObject.set(x, "endOfDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndOfDayUndefined: Self = StObject.set(x, "endOfDay", js.undefined)
+      inline def setEndOfDayUndefined: Self = StObject.set(x, "endOfDay", js.undefined)
     }
   }
 }

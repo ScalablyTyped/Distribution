@@ -35,8 +35,7 @@ object anon {
   }
   object BigIntSeed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bigIntSeed: Double,
       globalSymbolSeed: Double,
       localSymbolSeed: Double,
@@ -47,59 +46,41 @@ object anon {
       __obj.asInstanceOf[BigIntSeed]
     }
     
-    @scala.inline
-    implicit class BigIntSeedMutableBuilder[Self <: BigIntSeed] (val x: Self) extends AnyVal {
+    extension [Self <: BigIntSeed](x: Self) {
       
-      @scala.inline
-      def setBigIntSeed(value: Double): Self = StObject.set(x, "bigIntSeed", value.asInstanceOf[js.Any])
+      inline def setBigIntSeed(value: Double): Self = StObject.set(x, "bigIntSeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSymbolHashes(value: Map[js.Symbol, Double]): Self = StObject.set(x, "globalSymbolHashes", value.asInstanceOf[js.Any])
+      inline def setGlobalSymbolHashes(value: Map[js.Symbol, Double]): Self = StObject.set(x, "globalSymbolHashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSymbolHashesUndefined: Self = StObject.set(x, "globalSymbolHashes", js.undefined)
+      inline def setGlobalSymbolHashesUndefined: Self = StObject.set(x, "globalSymbolHashes", js.undefined)
       
-      @scala.inline
-      def setGlobalSymbolSeed(value: Double): Self = StObject.set(x, "globalSymbolSeed", value.asInstanceOf[js.Any])
+      inline def setGlobalSymbolSeed(value: Double): Self = StObject.set(x, "globalSymbolSeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSymbolCounter(value: Counter): Self = StObject.set(x, "localSymbolCounter", value.asInstanceOf[js.Any])
+      inline def setLocalSymbolCounter(value: Counter): Self = StObject.set(x, "localSymbolCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSymbolCounterUndefined: Self = StObject.set(x, "localSymbolCounter", js.undefined)
+      inline def setLocalSymbolCounterUndefined: Self = StObject.set(x, "localSymbolCounter", js.undefined)
       
-      @scala.inline
-      def setLocalSymbolHashes(value: Map[js.Symbol, Double]): Self = StObject.set(x, "localSymbolHashes", value.asInstanceOf[js.Any])
+      inline def setLocalSymbolHashes(value: Map[js.Symbol, Double]): Self = StObject.set(x, "localSymbolHashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSymbolHashesUndefined: Self = StObject.set(x, "localSymbolHashes", js.undefined)
+      inline def setLocalSymbolHashesUndefined: Self = StObject.set(x, "localSymbolHashes", js.undefined)
       
-      @scala.inline
-      def setLocalSymbolSeed(value: Double): Self = StObject.set(x, "localSymbolSeed", value.asInstanceOf[js.Any])
+      inline def setLocalSymbolSeed(value: Double): Self = StObject.set(x, "localSymbolSeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullPrototypeCounter(value: Counter): Self = StObject.set(x, "nullPrototypeCounter", value.asInstanceOf[js.Any])
+      inline def setNullPrototypeCounter(value: Counter): Self = StObject.set(x, "nullPrototypeCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullPrototypeCounterUndefined: Self = StObject.set(x, "nullPrototypeCounter", js.undefined)
+      inline def setNullPrototypeCounterUndefined: Self = StObject.set(x, "nullPrototypeCounter", js.undefined)
       
-      @scala.inline
-      def setObjectSeed(value: Double): Self = StObject.set(x, "objectSeed", value.asInstanceOf[js.Any])
+      inline def setObjectSeed(value: Double): Self = StObject.set(x, "objectSeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringSeed(value: Double): Self = StObject.set(x, "stringSeed", value.asInstanceOf[js.Any])
+      inline def setStringSeed(value: Double): Self = StObject.set(x, "stringSeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakObjectHashes(value: WeakMap[js.Object, Double]): Self = StObject.set(x, "weakObjectHashes", value.asInstanceOf[js.Any])
+      inline def setWeakObjectHashes(value: WeakMap[js.Object, Double]): Self = StObject.set(x, "weakObjectHashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakObjectHashesUndefined: Self = StObject.set(x, "weakObjectHashes", js.undefined)
+      inline def setWeakObjectHashesUndefined: Self = StObject.set(x, "weakObjectHashes", js.undefined)
       
-      @scala.inline
-      def setWeakPrototypeCounters(value: WeakMap[js.Object, Counter]): Self = StObject.set(x, "weakPrototypeCounters", value.asInstanceOf[js.Any])
+      inline def setWeakPrototypeCounters(value: WeakMap[js.Object, Counter]): Self = StObject.set(x, "weakPrototypeCounters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakPrototypeCountersUndefined: Self = StObject.set(x, "weakPrototypeCounters", js.undefined)
+      inline def setWeakPrototypeCountersUndefined: Self = StObject.set(x, "weakPrototypeCounters", js.undefined)
     }
   }
 }

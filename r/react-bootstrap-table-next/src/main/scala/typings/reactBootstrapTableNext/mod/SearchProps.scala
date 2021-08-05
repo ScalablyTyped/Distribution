@@ -18,37 +18,27 @@ trait SearchProps[T] extends StObject {
 }
 object SearchProps {
   
-  @scala.inline
-  def apply[T](): SearchProps[T] = {
+  inline def apply[T](): SearchProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchProps[T]]
   }
   
-  @scala.inline
-  implicit class SearchPropsMutableBuilder[Self <: SearchProps[?], T] (val x: Self & SearchProps[T]) extends AnyVal {
+  extension [Self <: SearchProps[?], T](x: Self & SearchProps[T]) {
     
-    @scala.inline
-    def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
+    inline def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
+    inline def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
     
-    @scala.inline
-    def setOnColumnMatch(value: /* searchProps */ Column[T] => Boolean): Self = StObject.set(x, "onColumnMatch", js.Any.fromFunction1(value))
+    inline def setOnColumnMatch(value: /* searchProps */ Column[T] => Boolean): Self = StObject.set(x, "onColumnMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnColumnMatchUndefined: Self = StObject.set(x, "onColumnMatch", js.undefined)
+    inline def setOnColumnMatchUndefined: Self = StObject.set(x, "onColumnMatch", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
   }
 }

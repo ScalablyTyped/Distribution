@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cli-interact"
-version := "0.1-dt-20180925Z-073518"
+version := "0.1-dt-20180925Z-b5bcdb"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "readline-sync" % "1.4-dt-20200515Z-722eb6",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "readline-sync" % "1.4-dt-20200515Z-18738e",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -53,67 +53,47 @@ trait ModifyTrafficMirrorSessionRequest extends StObject {
 }
 object ModifyTrafficMirrorSessionRequest {
   
-  @scala.inline
-  def apply(TrafficMirrorSessionId: TrafficMirrorSessionId): ModifyTrafficMirrorSessionRequest = {
+  inline def apply(TrafficMirrorSessionId: TrafficMirrorSessionId): ModifyTrafficMirrorSessionRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorSessionId = TrafficMirrorSessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorSessionRequest]
   }
   
-  @scala.inline
-  implicit class ModifyTrafficMirrorSessionRequestMutableBuilder[Self <: ModifyTrafficMirrorSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTrafficMirrorSessionRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPacketLength(value: Integer): Self = StObject.set(x, "PacketLength", value.asInstanceOf[js.Any])
+    inline def setPacketLength(value: Integer): Self = StObject.set(x, "PacketLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketLengthUndefined: Self = StObject.set(x, "PacketLength", js.undefined)
+    inline def setPacketLengthUndefined: Self = StObject.set(x, "PacketLength", js.undefined)
     
-    @scala.inline
-    def setRemoveFields(value: TrafficMirrorSessionFieldList): Self = StObject.set(x, "RemoveFields", value.asInstanceOf[js.Any])
+    inline def setRemoveFields(value: TrafficMirrorSessionFieldList): Self = StObject.set(x, "RemoveFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFieldsUndefined: Self = StObject.set(x, "RemoveFields", js.undefined)
+    inline def setRemoveFieldsUndefined: Self = StObject.set(x, "RemoveFields", js.undefined)
     
-    @scala.inline
-    def setRemoveFieldsVarargs(value: TrafficMirrorSessionField*): Self = StObject.set(x, "RemoveFields", js.Array(value :_*))
+    inline def setRemoveFieldsVarargs(value: TrafficMirrorSessionField*): Self = StObject.set(x, "RemoveFields", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionNumber(value: Integer): Self = StObject.set(x, "SessionNumber", value.asInstanceOf[js.Any])
+    inline def setSessionNumber(value: Integer): Self = StObject.set(x, "SessionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionNumberUndefined: Self = StObject.set(x, "SessionNumber", js.undefined)
+    inline def setSessionNumberUndefined: Self = StObject.set(x, "SessionNumber", js.undefined)
     
-    @scala.inline
-    def setTrafficMirrorFilterId(value: TrafficMirrorFilterId): Self = StObject.set(x, "TrafficMirrorFilterId", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorFilterId(value: TrafficMirrorFilterId): Self = StObject.set(x, "TrafficMirrorFilterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficMirrorFilterIdUndefined: Self = StObject.set(x, "TrafficMirrorFilterId", js.undefined)
+    inline def setTrafficMirrorFilterIdUndefined: Self = StObject.set(x, "TrafficMirrorFilterId", js.undefined)
     
-    @scala.inline
-    def setTrafficMirrorSessionId(value: TrafficMirrorSessionId): Self = StObject.set(x, "TrafficMirrorSessionId", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorSessionId(value: TrafficMirrorSessionId): Self = StObject.set(x, "TrafficMirrorSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficMirrorTargetId(value: TrafficMirrorTargetId): Self = StObject.set(x, "TrafficMirrorTargetId", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorTargetId(value: TrafficMirrorTargetId): Self = StObject.set(x, "TrafficMirrorTargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficMirrorTargetIdUndefined: Self = StObject.set(x, "TrafficMirrorTargetId", js.undefined)
+    inline def setTrafficMirrorTargetIdUndefined: Self = StObject.set(x, "TrafficMirrorTargetId", js.undefined)
     
-    @scala.inline
-    def setVirtualNetworkId(value: Integer): Self = StObject.set(x, "VirtualNetworkId", value.asInstanceOf[js.Any])
+    inline def setVirtualNetworkId(value: Integer): Self = StObject.set(x, "VirtualNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNetworkIdUndefined: Self = StObject.set(x, "VirtualNetworkId", js.undefined)
+    inline def setVirtualNetworkIdUndefined: Self = StObject.set(x, "VirtualNetworkId", js.undefined)
   }
 }

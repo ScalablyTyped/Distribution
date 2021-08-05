@@ -28,11 +28,9 @@ object searchBarStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/search-bar/style/index.native", "default.cancelTextContainer")
     @js.native
     def cancelTextContainer: AlignItemsHeight = js.native
-    @scala.inline
-    def cancelTextContainer_=(x: AlignItemsHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelTextContainer")(x.asInstanceOf[js.Any])
+    inline def cancelTextContainer_=(x: AlignItemsHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelTextContainer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def cancelText_=(x: FontSizePaddingLeft): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    inline def cancelText_=(x: FontSizePaddingLeft): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/search-bar/style/index.native", "default.input")
     @js.native
@@ -41,23 +39,19 @@ object searchBarStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/search-bar/style/index.native", "default.inputWrapper")
     @js.native
     def inputWrapper: FlexFlexDirection = js.native
-    @scala.inline
-    def inputWrapper_=(x: FlexFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputWrapper")(x.asInstanceOf[js.Any])
+    inline def inputWrapper_=(x: FlexFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputWrapper")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def input_=(x: PaddingRight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+    inline def input_=(x: PaddingRight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/search-bar/style/index.native", "default.search")
     @js.native
     def search: TintColor = js.native
-    @scala.inline
-    def search_=(x: TintColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("search")(x.asInstanceOf[js.Any])
+    inline def search_=(x: TintColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("search")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/search-bar/style/index.native", "default.wrapper")
     @js.native
     def wrapper: BackgroundColorFlexDirection = js.native
-    @scala.inline
-    def wrapper_=(x: BackgroundColorFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
+    inline def wrapper_=(x: BackgroundColorFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
   trait ISearchBarStyle extends StObject {
@@ -76,8 +70,7 @@ object searchBarStyleIndexNativeMod {
   }
   object ISearchBarStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelText: TextStyle,
       cancelTextContainer: ViewStyle,
       input: TextStyle,
@@ -89,26 +82,19 @@ object searchBarStyleIndexNativeMod {
       __obj.asInstanceOf[ISearchBarStyle]
     }
     
-    @scala.inline
-    implicit class ISearchBarStyleMutableBuilder[Self <: ISearchBarStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchBarStyle](x: Self) {
       
-      @scala.inline
-      def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
+      inline def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
+      inline def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: ImageStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: ImageStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

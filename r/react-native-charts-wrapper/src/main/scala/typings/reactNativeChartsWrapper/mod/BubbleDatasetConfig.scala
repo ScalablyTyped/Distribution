@@ -13,19 +13,15 @@ trait BubbleDatasetConfig
 }
 object BubbleDatasetConfig {
   
-  @scala.inline
-  def apply(): BubbleDatasetConfig = {
+  inline def apply(): BubbleDatasetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BubbleDatasetConfig]
   }
   
-  @scala.inline
-  implicit class BubbleDatasetConfigMutableBuilder[Self <: BubbleDatasetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BubbleDatasetConfig](x: Self) {
     
-    @scala.inline
-    def setHighlightCircleWidth(value: Double): Self = StObject.set(x, "highlightCircleWidth", value.asInstanceOf[js.Any])
+    inline def setHighlightCircleWidth(value: Double): Self = StObject.set(x, "highlightCircleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightCircleWidthUndefined: Self = StObject.set(x, "highlightCircleWidth", js.undefined)
+    inline def setHighlightCircleWidthUndefined: Self = StObject.set(x, "highlightCircleWidth", js.undefined)
   }
 }

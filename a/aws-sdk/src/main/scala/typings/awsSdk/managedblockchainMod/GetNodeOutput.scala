@@ -13,19 +13,15 @@ trait GetNodeOutput extends StObject {
 }
 object GetNodeOutput {
   
-  @scala.inline
-  def apply(): GetNodeOutput = {
+  inline def apply(): GetNodeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNodeOutput]
   }
   
-  @scala.inline
-  implicit class GetNodeOutputMutableBuilder[Self <: GetNodeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetNodeOutput](x: Self) {
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "Node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "Node", js.undefined)
   }
 }

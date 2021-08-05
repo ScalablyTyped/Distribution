@@ -44,8 +44,7 @@ trait Validators extends StObject {
 }
 object Validators {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     email: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String,
     numeric: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String,
     required: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String,
@@ -56,22 +55,16 @@ object Validators {
     __obj.asInstanceOf[Validators]
   }
   
-  @scala.inline
-  implicit class ValidatorsMutableBuilder[Self <: Validators] (val x: Self) extends AnyVal {
+  extension [Self <: Validators](x: Self) {
     
-    @scala.inline
-    def setEmail(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "email", js.Any.fromFunction2(value))
+    inline def setEmail(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "email", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNumeric(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "numeric", js.Any.fromFunction2(value))
+    inline def setNumeric(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "numeric", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRequired(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "required", js.Any.fromFunction2(value))
+    inline def setRequired(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "required", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSlug(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "slug", js.Any.fromFunction2(value))
+    inline def setSlug(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "slug", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUrl(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "url", js.Any.fromFunction2(value))
+    inline def setUrl(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "url", js.Any.fromFunction2(value))
   }
 }

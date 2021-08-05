@@ -18,19 +18,15 @@ trait DescribeTagsInput extends StObject {
 }
 object DescribeTagsInput {
   
-  @scala.inline
-  def apply(ResourceId: EntityId, ResourceType: TaggableResourceType): DescribeTagsInput = {
+  inline def apply(ResourceId: EntityId, ResourceType: TaggableResourceType): DescribeTagsInput = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsInput]
   }
   
-  @scala.inline
-  implicit class DescribeTagsInputMutableBuilder[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagsInput](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: EntityId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: EntityId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: TaggableResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: TaggableResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

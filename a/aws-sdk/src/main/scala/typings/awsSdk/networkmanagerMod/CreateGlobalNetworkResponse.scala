@@ -13,19 +13,15 @@ trait CreateGlobalNetworkResponse extends StObject {
 }
 object CreateGlobalNetworkResponse {
   
-  @scala.inline
-  def apply(): CreateGlobalNetworkResponse = {
+  inline def apply(): CreateGlobalNetworkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGlobalNetworkResponse]
   }
   
-  @scala.inline
-  implicit class CreateGlobalNetworkResponseMutableBuilder[Self <: CreateGlobalNetworkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGlobalNetworkResponse](x: Self) {
     
-    @scala.inline
-    def setGlobalNetwork(value: GlobalNetwork): Self = StObject.set(x, "GlobalNetwork", value.asInstanceOf[js.Any])
+    inline def setGlobalNetwork(value: GlobalNetwork): Self = StObject.set(x, "GlobalNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkUndefined: Self = StObject.set(x, "GlobalNetwork", js.undefined)
+    inline def setGlobalNetworkUndefined: Self = StObject.set(x, "GlobalNetwork", js.undefined)
   }
 }

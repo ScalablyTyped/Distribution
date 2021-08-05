@@ -27,8 +27,7 @@ trait BitmapProperties extends StObject {
 }
 object BitmapProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPropertiesAsync: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet],
     setPropertiesAsync: IIterable[IKeyValuePair[js.Any, js.Any]] => IPromiseWithIAsyncAction
   ): BitmapProperties = {
@@ -36,13 +35,10 @@ object BitmapProperties {
     __obj.asInstanceOf[BitmapProperties]
   }
   
-  @scala.inline
-  implicit class BitmapPropertiesMutableBuilder[Self <: BitmapProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapProperties](x: Self) {
     
-    @scala.inline
-    def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
+    inline def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertiesAsync(value: IIterable[IKeyValuePair[js.Any, js.Any]] => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
+    inline def setSetPropertiesAsync(value: IIterable[IKeyValuePair[js.Any, js.Any]] => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
   }
 }

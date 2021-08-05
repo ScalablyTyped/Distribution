@@ -18,19 +18,15 @@ trait CancelSchemaExtensionRequest extends StObject {
 }
 object CancelSchemaExtensionRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, SchemaExtensionId: SchemaExtensionId): CancelSchemaExtensionRequest = {
+  inline def apply(DirectoryId: DirectoryId, SchemaExtensionId: SchemaExtensionId): CancelSchemaExtensionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], SchemaExtensionId = SchemaExtensionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSchemaExtensionRequest]
   }
   
-  @scala.inline
-  implicit class CancelSchemaExtensionRequestMutableBuilder[Self <: CancelSchemaExtensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSchemaExtensionRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
+    inline def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
   }
 }

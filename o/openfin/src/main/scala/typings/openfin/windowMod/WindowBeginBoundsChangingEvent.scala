@@ -24,8 +24,7 @@ trait WindowBeginBoundsChangingEvent[Topic, Type]
 }
 object WindowBeginBoundsChangingEvent {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     height: Double,
     left: Double,
     name: String,
@@ -41,22 +40,16 @@ object WindowBeginBoundsChangingEvent {
     __obj.asInstanceOf[WindowBeginBoundsChangingEvent[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowBeginBoundsChangingEventMutableBuilder[Self <: WindowBeginBoundsChangingEvent[?, ?], Topic, Type] (val x: Self & (WindowBeginBoundsChangingEvent[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowBeginBoundsChangingEvent[?, ?], Topic, Type](x: Self & (WindowBeginBoundsChangingEvent[Topic, Type])) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowState(value: minimized | normal | maximized): Self = StObject.set(x, "windowState", value.asInstanceOf[js.Any])
+    inline def setWindowState(value: minimized | normal | maximized): Self = StObject.set(x, "windowState", value.asInstanceOf[js.Any])
   }
 }

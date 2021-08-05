@@ -11,10 +11,8 @@ object viewportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styler]
-  @scala.inline
-  def default(
+  inline def default(): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styler]
+  inline def default(
     hasProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.Props */ js.Any
   ): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Styler]
 }

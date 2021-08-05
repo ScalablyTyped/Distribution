@@ -12,19 +12,15 @@ trait ProximityData extends StObject {
 }
 object ProximityData {
   
-  @scala.inline
-  def apply(cm: Double, in: Double): ProximityData = {
+  inline def apply(cm: Double, in: Double): ProximityData = {
     val __obj = js.Dynamic.literal(cm = cm.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProximityData]
   }
   
-  @scala.inline
-  implicit class ProximityDataMutableBuilder[Self <: ProximityData] (val x: Self) extends AnyVal {
+  extension [Self <: ProximityData](x: Self) {
     
-    @scala.inline
-    def setCm(value: Double): Self = StObject.set(x, "cm", value.asInstanceOf[js.Any])
+    inline def setCm(value: Double): Self = StObject.set(x, "cm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
   }
 }

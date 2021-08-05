@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildQueryString(query: QueryParameterBag): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryString")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buildQueryString(query: QueryParameterBag): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryString")(query.asInstanceOf[js.Any]).asInstanceOf[String]
 }

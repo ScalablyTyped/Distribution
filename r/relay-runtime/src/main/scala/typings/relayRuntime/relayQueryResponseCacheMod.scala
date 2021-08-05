@@ -36,8 +36,7 @@ object relayQueryResponseCacheMod {
   }
   object RelayQueryResponseCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => Unit,
       get: (String, Variables) => GraphQLResponse | Null,
       set: (String, Variables, GraphQLResponse) => Unit
@@ -46,17 +45,13 @@ object relayQueryResponseCacheMod {
       __obj.asInstanceOf[RelayQueryResponseCache]
     }
     
-    @scala.inline
-    implicit class RelayQueryResponseCacheMutableBuilder[Self <: RelayQueryResponseCache] (val x: Self) extends AnyVal {
+    extension [Self <: RelayQueryResponseCache](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: (String, Variables) => GraphQLResponse | Null): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (String, Variables) => GraphQLResponse | Null): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(value: (String, Variables, GraphQLResponse) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (String, Variables, GraphQLResponse) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     }
   }
 }

@@ -33,6 +33,6 @@ object metadataBuilderJunctionEntityMetadataBuilderMod {
       */
     /* protected */ def collectReferencedColumns(relation: RelationMetadata, joinTable: JoinTableMetadataArgs): js.Array[ColumnMetadata] = js.native
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
   }
 }

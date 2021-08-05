@@ -15,19 +15,15 @@ trait TypeofAlert extends StObject {
 }
 object TypeofAlert {
   
-  @scala.inline
-  def apply(extend: js.Object => Alert, fn: Alert): TypeofAlert = {
+  inline def apply(extend: js.Object => Alert, fn: Alert): TypeofAlert = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAlert]
   }
   
-  @scala.inline
-  implicit class TypeofAlertMutableBuilder[Self <: TypeofAlert] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAlert](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Alert): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Alert): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Alert): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Alert): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

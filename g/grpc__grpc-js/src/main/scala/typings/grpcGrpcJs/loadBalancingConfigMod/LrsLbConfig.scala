@@ -18,8 +18,7 @@ trait LrsLbConfig extends StObject {
 }
 object LrsLbConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     child_policy: js.Array[LoadBalancingConfig],
     cluster_name: String,
     eds_service_name: String,
@@ -30,27 +29,20 @@ object LrsLbConfig {
     __obj.asInstanceOf[LrsLbConfig]
   }
   
-  @scala.inline
-  implicit class LrsLbConfigMutableBuilder[Self <: LrsLbConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LrsLbConfig](x: Self) {
     
-    @scala.inline
-    def setChild_policy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "child_policy", value.asInstanceOf[js.Any])
+    inline def setChild_policy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "child_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChild_policyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "child_policy", js.Array(value :_*))
+    inline def setChild_policyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "child_policy", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster_name(value: String): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
+    inline def setCluster_name(value: String): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEds_service_name(value: String): Self = StObject.set(x, "eds_service_name", value.asInstanceOf[js.Any])
+    inline def setEds_service_name(value: String): Self = StObject.set(x, "eds_service_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocality(
+    inline def setLocality(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Locality__Output */ js.Any
     ): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLrs_load_reporting_server_name(value: String): Self = StObject.set(x, "lrs_load_reporting_server_name", value.asInstanceOf[js.Any])
+    inline def setLrs_load_reporting_server_name(value: String): Self = StObject.set(x, "lrs_load_reporting_server_name", value.asInstanceOf[js.Any])
   }
 }

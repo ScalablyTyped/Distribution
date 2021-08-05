@@ -17,30 +17,30 @@ object tooltipHtmlMod {
   trait Tooltip[T /* <: TooltipCfg */]
     extends typings.antvComponent.htmlComponentMod.default[HtmlComponentCfg] {
     
-    var cacheDoms: js.Any = js.native
+    /* private */ var cacheDoms: js.Any = js.native
     
-    var checkCrosshair: js.Any = js.native
+    /* private */ var checkCrosshair: js.Any = js.native
     
-    var clearCrosshairs: js.Any = js.native
+    /* private */ var clearCrosshairs: js.Any = js.native
     
-    var clearItemDoms: js.Any = js.native
+    /* private */ var clearItemDoms: js.Any = js.native
     
-    var getHtmlContentNode: js.Any = js.native
+    /* private */ var getHtmlContentNode: js.Any = js.native
     
-    var renderCustomContent: js.Any = js.native
+    /* private */ var renderCustomContent: js.Any = js.native
     
-    var renderItems: js.Any = js.native
+    /* private */ var renderItems: js.Any = js.native
     
-    var resetCrosshair: js.Any = js.native
+    /* private */ var resetCrosshair: js.Any = js.native
     
-    var resetCrosshairs: js.Any = js.native
+    /* private */ var resetCrosshairs: js.Any = js.native
     
-    var resetTitle: js.Any = js.native
+    /* private */ var resetTitle: js.Any = js.native
     
     def setCrossHairsVisible(visible: js.Any): Unit = js.native
     
     def setLocation(point: Point): Unit = js.native
     
-    var setTitle: js.Any = js.native
+    /* private */ var setTitle: js.Any = js.native
   }
 }

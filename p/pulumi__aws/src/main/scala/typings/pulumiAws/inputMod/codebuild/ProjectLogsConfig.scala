@@ -19,25 +19,19 @@ trait ProjectLogsConfig extends StObject {
 }
 object ProjectLogsConfig {
   
-  @scala.inline
-  def apply(): ProjectLogsConfig = {
+  inline def apply(): ProjectLogsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectLogsConfig]
   }
   
-  @scala.inline
-  implicit class ProjectLogsConfigMutableBuilder[Self <: ProjectLogsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectLogsConfig](x: Self) {
     
-    @scala.inline
-    def setCloudwatchLogs(value: Input[ProjectLogsConfigCloudwatchLogs]): Self = StObject.set(x, "cloudwatchLogs", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLogs(value: Input[ProjectLogsConfigCloudwatchLogs]): Self = StObject.set(x, "cloudwatchLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchLogsUndefined: Self = StObject.set(x, "cloudwatchLogs", js.undefined)
+    inline def setCloudwatchLogsUndefined: Self = StObject.set(x, "cloudwatchLogs", js.undefined)
     
-    @scala.inline
-    def setS3Logs(value: Input[ProjectLogsConfigS3Logs]): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
+    inline def setS3Logs(value: Input[ProjectLogsConfigS3Logs]): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
+    inline def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait TransferringInputDeviceSummary extends StObject {
 }
 object TransferringInputDeviceSummary {
   
-  @scala.inline
-  def apply(): TransferringInputDeviceSummary = {
+  inline def apply(): TransferringInputDeviceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferringInputDeviceSummary]
   }
   
-  @scala.inline
-  implicit class TransferringInputDeviceSummaryMutableBuilder[Self <: TransferringInputDeviceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TransferringInputDeviceSummary](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setTargetCustomerId(value: string): Self = StObject.set(x, "TargetCustomerId", value.asInstanceOf[js.Any])
+    inline def setTargetCustomerId(value: string): Self = StObject.set(x, "TargetCustomerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCustomerIdUndefined: Self = StObject.set(x, "TargetCustomerId", js.undefined)
+    inline def setTargetCustomerIdUndefined: Self = StObject.set(x, "TargetCustomerId", js.undefined)
     
-    @scala.inline
-    def setTransferType(value: InputDeviceTransferType): Self = StObject.set(x, "TransferType", value.asInstanceOf[js.Any])
+    inline def setTransferType(value: InputDeviceTransferType): Self = StObject.set(x, "TransferType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferTypeUndefined: Self = StObject.set(x, "TransferType", js.undefined)
+    inline def setTransferTypeUndefined: Self = StObject.set(x, "TransferType", js.undefined)
   }
 }

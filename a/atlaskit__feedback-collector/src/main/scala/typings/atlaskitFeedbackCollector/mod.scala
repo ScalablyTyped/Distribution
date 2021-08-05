@@ -123,200 +123,136 @@ object mod {
   }
   object FeedbackCollectorProps {
     
-    @scala.inline
-    def apply(email: String, embeddableKey: String, name: String, requestTypeId: String): FeedbackCollectorProps = {
+    inline def apply(email: String, embeddableKey: String, name: String, requestTypeId: String): FeedbackCollectorProps = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], embeddableKey = embeddableKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], requestTypeId = requestTypeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeedbackCollectorProps]
     }
     
-    @scala.inline
-    implicit class FeedbackCollectorPropsMutableBuilder[Self <: FeedbackCollectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: FeedbackCollectorProps](x: Self) {
       
-      @scala.inline
-      def setAdditionalFields(value: js.Array[FieldType]): Self = StObject.set(x, "additionalFields", value.asInstanceOf[js.Any])
+      inline def setAdditionalFields(value: js.Array[FieldType]): Self = StObject.set(x, "additionalFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalFieldsUndefined: Self = StObject.set(x, "additionalFields", js.undefined)
+      inline def setAdditionalFieldsUndefined: Self = StObject.set(x, "additionalFields", js.undefined)
       
-      @scala.inline
-      def setAdditionalFieldsVarargs(value: FieldType*): Self = StObject.set(x, "additionalFields", js.Array(value :_*))
+      inline def setAdditionalFieldsVarargs(value: FieldType*): Self = StObject.set(x, "additionalFields", js.Array(value :_*))
       
-      @scala.inline
-      def setCanBeContactedDefaultValue(value: FieldValueType): Self = StObject.set(x, "canBeContactedDefaultValue", value.asInstanceOf[js.Any])
+      inline def setCanBeContactedDefaultValue(value: FieldValueType): Self = StObject.set(x, "canBeContactedDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanBeContactedDefaultValueUndefined: Self = StObject.set(x, "canBeContactedDefaultValue", js.undefined)
+      inline def setCanBeContactedDefaultValueUndefined: Self = StObject.set(x, "canBeContactedDefaultValue", js.undefined)
       
-      @scala.inline
-      def setCanBeContactedDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "canBeContactedDefaultValue", js.Array(value :_*))
+      inline def setCanBeContactedDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "canBeContactedDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setCanBeContactedFieldId(value: String): Self = StObject.set(x, "canBeContactedFieldId", value.asInstanceOf[js.Any])
+      inline def setCanBeContactedFieldId(value: String): Self = StObject.set(x, "canBeContactedFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanBeContactedFieldIdUndefined: Self = StObject.set(x, "canBeContactedFieldId", js.undefined)
+      inline def setCanBeContactedFieldIdUndefined: Self = StObject.set(x, "canBeContactedFieldId", js.undefined)
       
-      @scala.inline
-      def setCustomerNameDefaultValue(value: FieldValueType): Self = StObject.set(x, "customerNameDefaultValue", value.asInstanceOf[js.Any])
+      inline def setCustomerNameDefaultValue(value: FieldValueType): Self = StObject.set(x, "customerNameDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerNameDefaultValueUndefined: Self = StObject.set(x, "customerNameDefaultValue", js.undefined)
+      inline def setCustomerNameDefaultValueUndefined: Self = StObject.set(x, "customerNameDefaultValue", js.undefined)
       
-      @scala.inline
-      def setCustomerNameDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "customerNameDefaultValue", js.Array(value :_*))
+      inline def setCustomerNameDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "customerNameDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomerNameFieldId(value: String): Self = StObject.set(x, "customerNameFieldId", value.asInstanceOf[js.Any])
+      inline def setCustomerNameFieldId(value: String): Self = StObject.set(x, "customerNameFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerNameFieldIdUndefined: Self = StObject.set(x, "customerNameFieldId", js.undefined)
+      inline def setCustomerNameFieldIdUndefined: Self = StObject.set(x, "customerNameFieldId", js.undefined)
       
-      @scala.inline
-      def setDescriptionDefaultValue(value: FieldValueType): Self = StObject.set(x, "descriptionDefaultValue", value.asInstanceOf[js.Any])
+      inline def setDescriptionDefaultValue(value: FieldValueType): Self = StObject.set(x, "descriptionDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionDefaultValueUndefined: Self = StObject.set(x, "descriptionDefaultValue", js.undefined)
+      inline def setDescriptionDefaultValueUndefined: Self = StObject.set(x, "descriptionDefaultValue", js.undefined)
       
-      @scala.inline
-      def setDescriptionDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "descriptionDefaultValue", js.Array(value :_*))
+      inline def setDescriptionDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "descriptionDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDescriptionFieldId(value: String): Self = StObject.set(x, "descriptionFieldId", value.asInstanceOf[js.Any])
+      inline def setDescriptionFieldId(value: String): Self = StObject.set(x, "descriptionFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFieldIdUndefined: Self = StObject.set(x, "descriptionFieldId", js.undefined)
+      inline def setDescriptionFieldIdUndefined: Self = StObject.set(x, "descriptionFieldId", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailDefaultValue(value: FieldValueType): Self = StObject.set(x, "emailDefaultValue", value.asInstanceOf[js.Any])
+      inline def setEmailDefaultValue(value: FieldValueType): Self = StObject.set(x, "emailDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailDefaultValueUndefined: Self = StObject.set(x, "emailDefaultValue", js.undefined)
+      inline def setEmailDefaultValueUndefined: Self = StObject.set(x, "emailDefaultValue", js.undefined)
       
-      @scala.inline
-      def setEmailDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "emailDefaultValue", js.Array(value :_*))
+      inline def setEmailDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "emailDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setEmailFieldId(value: String): Self = StObject.set(x, "emailFieldId", value.asInstanceOf[js.Any])
+      inline def setEmailFieldId(value: String): Self = StObject.set(x, "emailFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailFieldIdUndefined: Self = StObject.set(x, "emailFieldId", js.undefined)
+      inline def setEmailFieldIdUndefined: Self = StObject.set(x, "emailFieldId", js.undefined)
       
-      @scala.inline
-      def setEmbeddableKey(value: String): Self = StObject.set(x, "embeddableKey", value.asInstanceOf[js.Any])
+      inline def setEmbeddableKey(value: String): Self = StObject.set(x, "embeddableKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnrollInResearchDefaultValue(value: FieldValueType): Self = StObject.set(x, "enrollInResearchDefaultValue", value.asInstanceOf[js.Any])
+      inline def setEnrollInResearchDefaultValue(value: FieldValueType): Self = StObject.set(x, "enrollInResearchDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnrollInResearchDefaultValueUndefined: Self = StObject.set(x, "enrollInResearchDefaultValue", js.undefined)
+      inline def setEnrollInResearchDefaultValueUndefined: Self = StObject.set(x, "enrollInResearchDefaultValue", js.undefined)
       
-      @scala.inline
-      def setEnrollInResearchDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "enrollInResearchDefaultValue", js.Array(value :_*))
+      inline def setEnrollInResearchDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "enrollInResearchDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setEnrollInResearchFieldId(value: String): Self = StObject.set(x, "enrollInResearchFieldId", value.asInstanceOf[js.Any])
+      inline def setEnrollInResearchFieldId(value: String): Self = StObject.set(x, "enrollInResearchFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnrollInResearchFieldIdUndefined: Self = StObject.set(x, "enrollInResearchFieldId", js.undefined)
+      inline def setEnrollInResearchFieldIdUndefined: Self = StObject.set(x, "enrollInResearchFieldId", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: () => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction0(value))
+      inline def setOnSubmit(value: () => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setRequestTypeId(value: String): Self = StObject.set(x, "requestTypeId", value.asInstanceOf[js.Any])
+      inline def setRequestTypeId(value: String): Self = StObject.set(x, "requestTypeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryDefaultValue(value: FieldValueType): Self = StObject.set(x, "summaryDefaultValue", value.asInstanceOf[js.Any])
+      inline def setSummaryDefaultValue(value: FieldValueType): Self = StObject.set(x, "summaryDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryDefaultValueUndefined: Self = StObject.set(x, "summaryDefaultValue", js.undefined)
+      inline def setSummaryDefaultValueUndefined: Self = StObject.set(x, "summaryDefaultValue", js.undefined)
       
-      @scala.inline
-      def setSummaryDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "summaryDefaultValue", js.Array(value :_*))
+      inline def setSummaryDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "summaryDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setSummaryFieldId(value: String): Self = StObject.set(x, "summaryFieldId", value.asInstanceOf[js.Any])
+      inline def setSummaryFieldId(value: String): Self = StObject.set(x, "summaryFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryFieldIdUndefined: Self = StObject.set(x, "summaryFieldId", js.undefined)
+      inline def setSummaryFieldIdUndefined: Self = StObject.set(x, "summaryFieldId", js.undefined)
       
-      @scala.inline
-      def setSummaryTruncateLength(value: Double): Self = StObject.set(x, "summaryTruncateLength", value.asInstanceOf[js.Any])
+      inline def setSummaryTruncateLength(value: Double): Self = StObject.set(x, "summaryTruncateLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryTruncateLengthUndefined: Self = StObject.set(x, "summaryTruncateLength", js.undefined)
+      inline def setSummaryTruncateLengthUndefined: Self = StObject.set(x, "summaryTruncateLength", js.undefined)
       
-      @scala.inline
-      def setTimeoutOnSubmit(value: Double): Self = StObject.set(x, "timeoutOnSubmit", value.asInstanceOf[js.Any])
+      inline def setTimeoutOnSubmit(value: Double): Self = StObject.set(x, "timeoutOnSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutOnSubmitUndefined: Self = StObject.set(x, "timeoutOnSubmit", js.undefined)
+      inline def setTimeoutOnSubmitUndefined: Self = StObject.set(x, "timeoutOnSubmit", js.undefined)
       
-      @scala.inline
-      def setTypeBugDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeBugDefaultValue", value.asInstanceOf[js.Any])
+      inline def setTypeBugDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeBugDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeBugDefaultValueUndefined: Self = StObject.set(x, "typeBugDefaultValue", js.undefined)
+      inline def setTypeBugDefaultValueUndefined: Self = StObject.set(x, "typeBugDefaultValue", js.undefined)
       
-      @scala.inline
-      def setTypeBugDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeBugDefaultValue", js.Array(value :_*))
+      inline def setTypeBugDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeBugDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setTypeCommentDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeCommentDefaultValue", value.asInstanceOf[js.Any])
+      inline def setTypeCommentDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeCommentDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeCommentDefaultValueUndefined: Self = StObject.set(x, "typeCommentDefaultValue", js.undefined)
+      inline def setTypeCommentDefaultValueUndefined: Self = StObject.set(x, "typeCommentDefaultValue", js.undefined)
       
-      @scala.inline
-      def setTypeCommentDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeCommentDefaultValue", js.Array(value :_*))
+      inline def setTypeCommentDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeCommentDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setTypeEmptyDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeEmptyDefaultValue", value.asInstanceOf[js.Any])
+      inline def setTypeEmptyDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeEmptyDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeEmptyDefaultValueUndefined: Self = StObject.set(x, "typeEmptyDefaultValue", js.undefined)
+      inline def setTypeEmptyDefaultValueUndefined: Self = StObject.set(x, "typeEmptyDefaultValue", js.undefined)
       
-      @scala.inline
-      def setTypeEmptyDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeEmptyDefaultValue", js.Array(value :_*))
+      inline def setTypeEmptyDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeEmptyDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setTypeFieldId(value: String): Self = StObject.set(x, "typeFieldId", value.asInstanceOf[js.Any])
+      inline def setTypeFieldId(value: String): Self = StObject.set(x, "typeFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFieldIdUndefined: Self = StObject.set(x, "typeFieldId", js.undefined)
+      inline def setTypeFieldIdUndefined: Self = StObject.set(x, "typeFieldId", js.undefined)
       
-      @scala.inline
-      def setTypeQuestionDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeQuestionDefaultValue", value.asInstanceOf[js.Any])
+      inline def setTypeQuestionDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeQuestionDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeQuestionDefaultValueUndefined: Self = StObject.set(x, "typeQuestionDefaultValue", js.undefined)
+      inline def setTypeQuestionDefaultValueUndefined: Self = StObject.set(x, "typeQuestionDefaultValue", js.undefined)
       
-      @scala.inline
-      def setTypeQuestionDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeQuestionDefaultValue", js.Array(value :_*))
+      inline def setTypeQuestionDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeQuestionDefaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setTypeSuggestionDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeSuggestionDefaultValue", value.asInstanceOf[js.Any])
+      inline def setTypeSuggestionDefaultValue(value: FieldValueType): Self = StObject.set(x, "typeSuggestionDefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeSuggestionDefaultValueUndefined: Self = StObject.set(x, "typeSuggestionDefaultValue", js.undefined)
+      inline def setTypeSuggestionDefaultValueUndefined: Self = StObject.set(x, "typeSuggestionDefaultValue", js.undefined)
       
-      @scala.inline
-      def setTypeSuggestionDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeSuggestionDefaultValue", js.Array(value :_*))
+      inline def setTypeSuggestionDefaultValueVarargs(value: js.Object*): Self = StObject.set(x, "typeSuggestionDefaultValue", js.Array(value :_*))
     }
   }
   
@@ -328,26 +264,20 @@ object mod {
   }
   object FeedbackFlagProps {
     
-    @scala.inline
-    def apply(): FeedbackFlagProps = {
+    inline def apply(): FeedbackFlagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeedbackFlagProps]
     }
     
-    @scala.inline
-    implicit class FeedbackFlagPropsMutableBuilder[Self <: FeedbackFlagProps] (val x: Self) extends AnyVal {
+    extension [Self <: FeedbackFlagProps](x: Self) {
       
-      @scala.inline
-      def setIsDismissAllowed(value: Boolean): Self = StObject.set(x, "isDismissAllowed", value.asInstanceOf[js.Any])
+      inline def setIsDismissAllowed(value: Boolean): Self = StObject.set(x, "isDismissAllowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDismissAllowedUndefined: Self = StObject.set(x, "isDismissAllowed", js.undefined)
+      inline def setIsDismissAllowedUndefined: Self = StObject.set(x, "isDismissAllowed", js.undefined)
       
-      @scala.inline
-      def setOnDismissed(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction1(value))
+      inline def setOnDismissed(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
+      inline def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
     }
   }
   
@@ -361,20 +291,16 @@ object mod {
   }
   object FeedbackFormProps {
     
-    @scala.inline
-    def apply(onClose: () => Unit, onSubmit: FormFields => Unit): FeedbackFormProps = {
+    inline def apply(onClose: () => Unit, onSubmit: FormFields => Unit): FeedbackFormProps = {
       val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), onSubmit = js.Any.fromFunction1(onSubmit))
       __obj.asInstanceOf[FeedbackFormProps]
     }
     
-    @scala.inline
-    implicit class FeedbackFormPropsMutableBuilder[Self <: FeedbackFormProps] (val x: Self) extends AnyVal {
+    extension [Self <: FeedbackFormProps](x: Self) {
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSubmit(value: FormFields => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormFields => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     }
   }
   
@@ -384,20 +310,16 @@ object mod {
   }
   object FeedbackType {
     
-    @scala.inline
-    def apply(fields: js.Array[FieldType]): FeedbackType = {
+    inline def apply(fields: js.Array[FieldType]): FeedbackType = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeedbackType]
     }
     
-    @scala.inline
-    implicit class FeedbackTypeMutableBuilder[Self <: FeedbackType] (val x: Self) extends AnyVal {
+    extension [Self <: FeedbackType](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Array[FieldType]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[FieldType]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value :_*))
     }
   }
   
@@ -409,23 +331,18 @@ object mod {
   }
   object FieldType {
     
-    @scala.inline
-    def apply(id: String, value: FieldValueType): FieldType = {
+    inline def apply(id: String, value: FieldValueType): FieldType = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldType]
     }
     
-    @scala.inline
-    implicit class FieldTypeMutableBuilder[Self <: FieldType] (val x: Self) extends AnyVal {
+    extension [Self <: FieldType](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: FieldValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: FieldValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: js.Object*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Object*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -443,27 +360,21 @@ object mod {
   }
   object FormFields {
     
-    @scala.inline
-    def apply(canBeContacted: Boolean, description: String, enrollInResearchGroup: Boolean, `type`: SelectValue): FormFields = {
+    inline def apply(canBeContacted: Boolean, description: String, enrollInResearchGroup: Boolean, `type`: SelectValue): FormFields = {
       val __obj = js.Dynamic.literal(canBeContacted = canBeContacted.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enrollInResearchGroup = enrollInResearchGroup.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormFields]
     }
     
-    @scala.inline
-    implicit class FormFieldsMutableBuilder[Self <: FormFields] (val x: Self) extends AnyVal {
+    extension [Self <: FormFields](x: Self) {
       
-      @scala.inline
-      def setCanBeContacted(value: Boolean): Self = StObject.set(x, "canBeContacted", value.asInstanceOf[js.Any])
+      inline def setCanBeContacted(value: Boolean): Self = StObject.set(x, "canBeContacted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnrollInResearchGroup(value: Boolean): Self = StObject.set(x, "enrollInResearchGroup", value.asInstanceOf[js.Any])
+      inline def setEnrollInResearchGroup(value: Boolean): Self = StObject.set(x, "enrollInResearchGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: SelectValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SelectValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -477,19 +388,14 @@ object mod {
   trait SelectValue extends StObject
   object SelectValue {
     
-    @scala.inline
-    def bug: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug = "bug".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug]
+    inline def bug: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug = "bug".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug]
     
-    @scala.inline
-    def comment: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment = "comment".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment]
+    inline def comment: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment = "comment".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment]
     
-    @scala.inline
-    def empty: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty = "empty".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty]
+    inline def empty: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty = "empty".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty]
     
-    @scala.inline
-    def question: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question = "question".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question]
+    inline def question: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question = "question".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question]
     
-    @scala.inline
-    def suggestion: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion = "suggestion".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion]
+    inline def suggestion: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion = "suggestion".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion]
   }
 }

@@ -24,8 +24,7 @@ trait ReelsMediaFeedResponseQuestionSticker extends StObject {
 }
 object ReelsMediaFeedResponseQuestionSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background_color: String,
     media_id: Double,
     profile_pic_url: String,
@@ -39,31 +38,22 @@ object ReelsMediaFeedResponseQuestionSticker {
     __obj.asInstanceOf[ReelsMediaFeedResponseQuestionSticker]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseQuestionStickerMutableBuilder[Self <: ReelsMediaFeedResponseQuestionSticker] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseQuestionSticker](x: Self) {
     
-    @scala.inline
-    def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
+    inline def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_id(value: Double): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+    inline def setMedia_id(value: Double): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion_id(value: Double): Self = StObject.set(x, "question_id", value.asInstanceOf[js.Any])
+    inline def setQuestion_id(value: Double): Self = StObject.set(x, "question_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion_type(value: String): Self = StObject.set(x, "question_type", value.asInstanceOf[js.Any])
+    inline def setQuestion_type(value: String): Self = StObject.set(x, "question_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
+    inline def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_can_interact(value: Boolean): Self = StObject.set(x, "viewer_can_interact", value.asInstanceOf[js.Any])
+    inline def setViewer_can_interact(value: Boolean): Self = StObject.set(x, "viewer_can_interact", value.asInstanceOf[js.Any])
   }
 }

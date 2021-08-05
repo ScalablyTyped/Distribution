@@ -15,8 +15,7 @@ trait ParametersActionsListWorkflowRunArtifactsEndpoint extends StObject {
 }
 object ParametersActionsListWorkflowRunArtifactsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsListWorkflowRunArtifactsEndpoint,
     response: OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`
   ): ParametersActionsListWorkflowRunArtifactsEndpoint = {
@@ -24,13 +23,10 @@ object ParametersActionsListWorkflowRunArtifactsEndpoint {
     __obj.asInstanceOf[ParametersActionsListWorkflowRunArtifactsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsListWorkflowRunArtifactsEndpointMutableBuilder[Self <: ParametersActionsListWorkflowRunArtifactsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsListWorkflowRunArtifactsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsListWorkflowRunArtifactsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsListWorkflowRunArtifactsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -84,98 +84,68 @@ object JQueryNotifyBar {
   }
   object NotifyBarOptions {
     
-    @scala.inline
-    def apply(): NotifyBarOptions = {
+    inline def apply(): NotifyBarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotifyBarOptions]
     }
     
-    @scala.inline
-    implicit class NotifyBarOptionsMutableBuilder[Self <: NotifyBarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyBarOptions](x: Self) {
       
-      @scala.inline
-      def setAnimationSpeed(value: String | Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
+      inline def setAnimationSpeed(value: String | Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
       
-      @scala.inline
-      def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+      inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+      inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
       
-      @scala.inline
-      def setCloseOnOver(value: Boolean): Self = StObject.set(x, "closeOnOver", value.asInstanceOf[js.Any])
+      inline def setCloseOnOver(value: Boolean): Self = StObject.set(x, "closeOnOver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnOverUndefined: Self = StObject.set(x, "closeOnOver", js.undefined)
+      inline def setCloseOnOverUndefined: Self = StObject.set(x, "closeOnOver", js.undefined)
       
-      @scala.inline
-      def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+      inline def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
+      inline def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setJqObject(value: JQuery[HTMLElement]): Self = StObject.set(x, "jqObject", value.asInstanceOf[js.Any])
+      inline def setJqObject(value: JQuery[HTMLElement]): Self = StObject.set(x, "jqObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJqObjectUndefined: Self = StObject.set(x, "jqObject", js.undefined)
+      inline def setJqObjectUndefined: Self = StObject.set(x, "jqObject", js.undefined)
       
-      @scala.inline
-      def setOnBeforeHide(value: () => js.Any): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction0(value))
+      inline def setOnBeforeHide(value: () => js.Any): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
+      inline def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
       
-      @scala.inline
-      def setOnBeforeShow(value: () => js.Any): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction0(value))
+      inline def setOnBeforeShow(value: () => js.Any): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
+      inline def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      inline def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      inline def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -191,20 +161,16 @@ object JQueryNotifyBar {
   }
   object NotifyBarOptionsForAnimationSpeedNumber {
     
-    @scala.inline
-    def apply(): NotifyBarOptionsForAnimationSpeedNumber = {
+    inline def apply(): NotifyBarOptionsForAnimationSpeedNumber = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotifyBarOptionsForAnimationSpeedNumber]
     }
     
-    @scala.inline
-    implicit class NotifyBarOptionsForAnimationSpeedNumberMutableBuilder[Self <: NotifyBarOptionsForAnimationSpeedNumber] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyBarOptionsForAnimationSpeedNumber](x: Self) {
       
-      @scala.inline
-      def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
+      inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
     }
   }
   
@@ -220,20 +186,16 @@ object JQueryNotifyBar {
   }
   object NotifyBarOptionsForAnimationSpeedString {
     
-    @scala.inline
-    def apply(): NotifyBarOptionsForAnimationSpeedString = {
+    inline def apply(): NotifyBarOptionsForAnimationSpeedString = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotifyBarOptionsForAnimationSpeedString]
     }
     
-    @scala.inline
-    implicit class NotifyBarOptionsForAnimationSpeedStringMutableBuilder[Self <: NotifyBarOptionsForAnimationSpeedString] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyBarOptionsForAnimationSpeedString](x: Self) {
       
-      @scala.inline
-      def setAnimationSpeed(value: String): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
+      inline def setAnimationSpeed(value: String): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
     }
   }
 }

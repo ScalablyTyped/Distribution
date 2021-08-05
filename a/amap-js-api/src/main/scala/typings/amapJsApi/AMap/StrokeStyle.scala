@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StrokeStyle extends StObject
 object StrokeStyle {
   
-  @scala.inline
-  def dashed: typings.amapJsApi.amapJsApiStrings.dashed = "dashed".asInstanceOf[typings.amapJsApi.amapJsApiStrings.dashed]
+  inline def dashed: typings.amapJsApi.amapJsApiStrings.dashed = "dashed".asInstanceOf[typings.amapJsApi.amapJsApiStrings.dashed]
   
-  @scala.inline
-  def solid: typings.amapJsApi.amapJsApiStrings.solid = "solid".asInstanceOf[typings.amapJsApi.amapJsApiStrings.solid]
+  inline def solid: typings.amapJsApi.amapJsApiStrings.solid = "solid".asInstanceOf[typings.amapJsApi.amapJsApiStrings.solid]
 }

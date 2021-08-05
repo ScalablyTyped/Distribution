@@ -13,16 +13,13 @@ trait FilePathLengthRequestedEventOptions
 }
 object FilePathLengthRequestedEventOptions {
   
-  @scala.inline
-  def apply(filePath: String, fileSystemId: String, length: Double, requestId: Double): FilePathLengthRequestedEventOptions = {
+  inline def apply(filePath: String, fileSystemId: String, length: Double, requestId: Double): FilePathLengthRequestedEventOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePathLengthRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class FilePathLengthRequestedEventOptionsMutableBuilder[Self <: FilePathLengthRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilePathLengthRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait IPingrespPacket
 }
 object IPingrespPacket {
   
-  @scala.inline
-  def apply(): IPingrespPacket = {
+  inline def apply(): IPingrespPacket = {
     val __obj = js.Dynamic.literal(cmd = "pingresp")
     __obj.asInstanceOf[IPingrespPacket]
   }
   
-  @scala.inline
-  implicit class IPingrespPacketMutableBuilder[Self <: IPingrespPacket] (val x: Self) extends AnyVal {
+  extension [Self <: IPingrespPacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: pingresp): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: pingresp): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def apply(filePath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def apply(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[String]]
+  inline def apply(filePath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   @JSImport("parent-module", JSImport.Namespace)
   @js.native

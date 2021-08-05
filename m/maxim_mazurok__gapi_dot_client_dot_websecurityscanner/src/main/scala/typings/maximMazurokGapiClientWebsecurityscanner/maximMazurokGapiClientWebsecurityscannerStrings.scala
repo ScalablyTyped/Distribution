@@ -8,11 +8,9 @@ object maximMazurokGapiClientWebsecurityscannerStrings {
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
   sealed trait websecurityscanner extends StObject
-  @scala.inline
-  def websecurityscanner: websecurityscanner = "websecurityscanner".asInstanceOf[websecurityscanner]
+  inline def websecurityscanner: websecurityscanner = "websecurityscanner".asInstanceOf[websecurityscanner]
 }

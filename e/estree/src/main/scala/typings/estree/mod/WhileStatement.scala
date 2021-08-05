@@ -18,23 +18,18 @@ trait WhileStatement
 }
 object WhileStatement {
   
-  @scala.inline
-  def apply(body: Statement, test: Expression): WhileStatement = {
+  inline def apply(body: Statement, test: Expression): WhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[WhileStatement]
   }
   
-  @scala.inline
-  implicit class WhileStatementMutableBuilder[Self <: WhileStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WhileStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.WhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.WhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

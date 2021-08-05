@@ -78,73 +78,51 @@ trait OAuthInfoProperties extends StObject {
 }
 object OAuthInfoProperties {
   
-  @scala.inline
-  def apply(): OAuthInfoProperties = {
+  inline def apply(): OAuthInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuthInfoProperties]
   }
   
-  @scala.inline
-  implicit class OAuthInfoPropertiesMutableBuilder[Self <: OAuthInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthInfoProperties](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setAuthNamespace(value: String): Self = StObject.set(x, "authNamespace", value.asInstanceOf[js.Any])
+    inline def setAuthNamespace(value: String): Self = StObject.set(x, "authNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthNamespaceUndefined: Self = StObject.set(x, "authNamespace", js.undefined)
+    inline def setAuthNamespaceUndefined: Self = StObject.set(x, "authNamespace", js.undefined)
     
-    @scala.inline
-    def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+    inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMinTimeUntilExpiration(value: Double): Self = StObject.set(x, "minTimeUntilExpiration", value.asInstanceOf[js.Any])
+    inline def setMinTimeUntilExpiration(value: Double): Self = StObject.set(x, "minTimeUntilExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTimeUntilExpirationUndefined: Self = StObject.set(x, "minTimeUntilExpiration", js.undefined)
+    inline def setMinTimeUntilExpirationUndefined: Self = StObject.set(x, "minTimeUntilExpiration", js.undefined)
     
-    @scala.inline
-    def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupCallbackUrl(value: String): Self = StObject.set(x, "popupCallbackUrl", value.asInstanceOf[js.Any])
+    inline def setPopupCallbackUrl(value: String): Self = StObject.set(x, "popupCallbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupCallbackUrlUndefined: Self = StObject.set(x, "popupCallbackUrl", js.undefined)
+    inline def setPopupCallbackUrlUndefined: Self = StObject.set(x, "popupCallbackUrl", js.undefined)
     
-    @scala.inline
-    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    @scala.inline
-    def setPopupWindowFeatures(value: String): Self = StObject.set(x, "popupWindowFeatures", value.asInstanceOf[js.Any])
+    inline def setPopupWindowFeatures(value: String): Self = StObject.set(x, "popupWindowFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupWindowFeaturesUndefined: Self = StObject.set(x, "popupWindowFeatures", js.undefined)
+    inline def setPopupWindowFeaturesUndefined: Self = StObject.set(x, "popupWindowFeatures", js.undefined)
     
-    @scala.inline
-    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+    inline def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
+    inline def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
     
-    @scala.inline
-    def setPreserveUrlHash(value: Boolean): Self = StObject.set(x, "preserveUrlHash", value.asInstanceOf[js.Any])
+    inline def setPreserveUrlHash(value: Boolean): Self = StObject.set(x, "preserveUrlHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveUrlHashUndefined: Self = StObject.set(x, "preserveUrlHash", js.undefined)
+    inline def setPreserveUrlHashUndefined: Self = StObject.set(x, "preserveUrlHash", js.undefined)
   }
 }

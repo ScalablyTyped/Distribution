@@ -10,19 +10,15 @@ trait FunctionDefaultConfig extends StObject {
 }
 object FunctionDefaultConfig {
   
-  @scala.inline
-  def apply(): FunctionDefaultConfig = {
+  inline def apply(): FunctionDefaultConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionDefaultConfig]
   }
   
-  @scala.inline
-  implicit class FunctionDefaultConfigMutableBuilder[Self <: FunctionDefaultConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionDefaultConfig](x: Self) {
     
-    @scala.inline
-    def setExecution(value: FunctionDefaultExecutionConfig): Self = StObject.set(x, "Execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: FunctionDefaultExecutionConfig): Self = StObject.set(x, "Execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUndefined: Self = StObject.set(x, "Execution", js.undefined)
+    inline def setExecutionUndefined: Self = StObject.set(x, "Execution", js.undefined)
   }
 }

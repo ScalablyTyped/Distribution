@@ -48,58 +48,41 @@ trait SchemaOrderLegacyPromotion extends StObject {
 }
 object SchemaOrderLegacyPromotion {
   
-  @scala.inline
-  def apply(): SchemaOrderLegacyPromotion = {
+  inline def apply(): SchemaOrderLegacyPromotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderLegacyPromotion]
   }
   
-  @scala.inline
-  implicit class SchemaOrderLegacyPromotionMutableBuilder[Self <: SchemaOrderLegacyPromotion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderLegacyPromotion](x: Self) {
     
-    @scala.inline
-    def setBenefits(value: js.Array[SchemaOrderLegacyPromotionBenefit]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
+    inline def setBenefits(value: js.Array[SchemaOrderLegacyPromotionBenefit]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenefitsUndefined: Self = StObject.set(x, "benefits", js.undefined)
+    inline def setBenefitsUndefined: Self = StObject.set(x, "benefits", js.undefined)
     
-    @scala.inline
-    def setBenefitsVarargs(value: SchemaOrderLegacyPromotionBenefit*): Self = StObject.set(x, "benefits", js.Array(value :_*))
+    inline def setBenefitsVarargs(value: SchemaOrderLegacyPromotionBenefit*): Self = StObject.set(x, "benefits", js.Array(value :_*))
     
-    @scala.inline
-    def setEffectiveDates(value: String): Self = StObject.set(x, "effectiveDates", value.asInstanceOf[js.Any])
+    inline def setEffectiveDates(value: String): Self = StObject.set(x, "effectiveDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveDatesUndefined: Self = StObject.set(x, "effectiveDates", js.undefined)
+    inline def setEffectiveDatesUndefined: Self = StObject.set(x, "effectiveDates", js.undefined)
     
-    @scala.inline
-    def setGenericRedemptionCode(value: String): Self = StObject.set(x, "genericRedemptionCode", value.asInstanceOf[js.Any])
+    inline def setGenericRedemptionCode(value: String): Self = StObject.set(x, "genericRedemptionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericRedemptionCodeUndefined: Self = StObject.set(x, "genericRedemptionCode", js.undefined)
+    inline def setGenericRedemptionCodeUndefined: Self = StObject.set(x, "genericRedemptionCode", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLongTitle(value: String): Self = StObject.set(x, "longTitle", value.asInstanceOf[js.Any])
+    inline def setLongTitle(value: String): Self = StObject.set(x, "longTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongTitleUndefined: Self = StObject.set(x, "longTitle", js.undefined)
+    inline def setLongTitleUndefined: Self = StObject.set(x, "longTitle", js.undefined)
     
-    @scala.inline
-    def setProductApplicability(value: String): Self = StObject.set(x, "productApplicability", value.asInstanceOf[js.Any])
+    inline def setProductApplicability(value: String): Self = StObject.set(x, "productApplicability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductApplicabilityUndefined: Self = StObject.set(x, "productApplicability", js.undefined)
+    inline def setProductApplicabilityUndefined: Self = StObject.set(x, "productApplicability", js.undefined)
     
-    @scala.inline
-    def setRedemptionChannel(value: String): Self = StObject.set(x, "redemptionChannel", value.asInstanceOf[js.Any])
+    inline def setRedemptionChannel(value: String): Self = StObject.set(x, "redemptionChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedemptionChannelUndefined: Self = StObject.set(x, "redemptionChannel", js.undefined)
+    inline def setRedemptionChannelUndefined: Self = StObject.set(x, "redemptionChannel", js.undefined)
   }
 }

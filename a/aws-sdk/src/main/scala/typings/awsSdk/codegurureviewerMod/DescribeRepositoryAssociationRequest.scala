@@ -13,16 +13,13 @@ trait DescribeRepositoryAssociationRequest extends StObject {
 }
 object DescribeRepositoryAssociationRequest {
   
-  @scala.inline
-  def apply(AssociationArn: AssociationArn): DescribeRepositoryAssociationRequest = {
+  inline def apply(AssociationArn: AssociationArn): DescribeRepositoryAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationArn = AssociationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRepositoryAssociationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRepositoryAssociationRequestMutableBuilder[Self <: DescribeRepositoryAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRepositoryAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
+    inline def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
   }
 }

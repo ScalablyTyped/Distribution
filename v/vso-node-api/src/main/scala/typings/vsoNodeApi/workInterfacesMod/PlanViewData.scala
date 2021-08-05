@@ -12,19 +12,15 @@ trait PlanViewData extends StObject {
 }
 object PlanViewData {
   
-  @scala.inline
-  def apply(id: String, revision: Double): PlanViewData = {
+  inline def apply(id: String, revision: Double): PlanViewData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanViewData]
   }
   
-  @scala.inline
-  implicit class PlanViewDataMutableBuilder[Self <: PlanViewData] (val x: Self) extends AnyVal {
+  extension [Self <: PlanViewData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

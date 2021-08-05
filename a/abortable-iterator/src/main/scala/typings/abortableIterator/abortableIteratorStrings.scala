@@ -8,6 +8,5 @@ object abortableIteratorStrings {
   
   @js.native
   sealed trait aborted extends StObject
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
 }

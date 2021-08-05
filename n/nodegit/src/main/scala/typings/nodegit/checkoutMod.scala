@@ -50,41 +50,28 @@ object checkoutMod {
     /**
       * Patch head checkout to automatically coerce objects.
       */
-    @scala.inline
-    def head(repo: Repository): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def head(repo: Repository, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(repo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def head(repo: Repository): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def head(repo: Repository, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(repo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Patch index checkout to automatically coerce objects.
       */
-    @scala.inline
-    def index(repo: Repository, The: Index): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(repo.asInstanceOf[js.Any], The.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def index(repo: Repository, The: Index, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(repo.asInstanceOf[js.Any], The.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def index(repo: Repository, The: Index): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(repo.asInstanceOf[js.Any], The.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def index(repo: Repository, The: Index, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(repo.asInstanceOf[js.Any], The.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def initOptions(opts: CheckoutOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def initOptions(opts: CheckoutOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def tree(repo: Repository, treeish: Commit): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def tree(repo: Repository, treeish: Commit, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Commit): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Commit, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     /**
       * Patch tree checkout to automatically coerce objects.
       */
-    @scala.inline
-    def tree(repo: Repository, treeish: Oid): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def tree(repo: Repository, treeish: Oid, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def tree(repo: Repository, treeish: Reference): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def tree(repo: Repository, treeish: Reference, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def tree(repo: Repository, treeish: Tree): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def tree(repo: Repository, treeish: Tree, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Oid): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Oid, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Reference): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Reference, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Tree): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def tree(repo: Repository, treeish: Tree, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -98,26 +85,19 @@ object checkoutMod {
     trait NOTIFY extends StObject
     object NOTIFY {
       
-      @scala.inline
-      def ALL: `65535` = 65535.asInstanceOf[`65535`]
+      inline def ALL: `65535` = 65535.asInstanceOf[`65535`]
       
-      @scala.inline
-      def CONFLICT: `1` = 1.asInstanceOf[`1`]
+      inline def CONFLICT: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def DIRTY: `2` = 2.asInstanceOf[`2`]
+      inline def DIRTY: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def IGNORED: `16` = 16.asInstanceOf[`16`]
+      inline def IGNORED: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def NONE: `0` = 0.asInstanceOf[`0`]
+      inline def NONE: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def UNTRACKED: `8` = 8.asInstanceOf[`8`]
+      inline def UNTRACKED: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def UPDATED: `4` = 4.asInstanceOf[`4`]
+      inline def UPDATED: `4` = 4.asInstanceOf[`4`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -147,71 +127,49 @@ object checkoutMod {
     trait STRATEGY extends StObject
     object STRATEGY {
       
-      @scala.inline
-      def ALLOW_CONFLICTS: `16` = 16.asInstanceOf[`16`]
+      inline def ALLOW_CONFLICTS: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def CONFLICT_STYLE_DIFF3: `2097152` = 2097152.asInstanceOf[`2097152`]
+      inline def CONFLICT_STYLE_DIFF3: `2097152` = 2097152.asInstanceOf[`2097152`]
       
-      @scala.inline
-      def CONFLICT_STYLE_MERGE: `1048576` = 1048576.asInstanceOf[`1048576`]
+      inline def CONFLICT_STYLE_MERGE: `1048576` = 1048576.asInstanceOf[`1048576`]
       
-      @scala.inline
-      def DISABLE_PATHSPEC_MATCH: `8192` = 8192.asInstanceOf[`8192`]
+      inline def DISABLE_PATHSPEC_MATCH: `8192` = 8192.asInstanceOf[`8192`]
       
-      @scala.inline
-      def DONT_OVERWRITE_IGNORED: `524288` = 524288.asInstanceOf[`524288`]
+      inline def DONT_OVERWRITE_IGNORED: `524288` = 524288.asInstanceOf[`524288`]
       
-      @scala.inline
-      def DONT_REMOVE_EXISTING: `4194304` = 4194304.asInstanceOf[`4194304`]
+      inline def DONT_REMOVE_EXISTING: `4194304` = 4194304.asInstanceOf[`4194304`]
       
-      @scala.inline
-      def DONT_UPDATE_INDEX: `256` = 256.asInstanceOf[`256`]
+      inline def DONT_UPDATE_INDEX: `256` = 256.asInstanceOf[`256`]
       
-      @scala.inline
-      def DONT_WRITE_INDEX: `8388608` = 8388608.asInstanceOf[`8388608`]
+      inline def DONT_WRITE_INDEX: `8388608` = 8388608.asInstanceOf[`8388608`]
       
-      @scala.inline
-      def FORCE: `2` = 2.asInstanceOf[`2`]
+      inline def FORCE: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def NONE: `0` = 0.asInstanceOf[`0`]
+      inline def NONE: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def NO_REFRESH: `512` = 512.asInstanceOf[`512`]
+      inline def NO_REFRESH: `512` = 512.asInstanceOf[`512`]
       
-      @scala.inline
-      def RECREATE_MISSING: `4` = 4.asInstanceOf[`4`]
+      inline def RECREATE_MISSING: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def REMOVE_IGNORED: `64` = 64.asInstanceOf[`64`]
+      inline def REMOVE_IGNORED: `64` = 64.asInstanceOf[`64`]
       
-      @scala.inline
-      def REMOVE_UNTRACKED: `32` = 32.asInstanceOf[`32`]
+      inline def REMOVE_UNTRACKED: `32` = 32.asInstanceOf[`32`]
       
-      @scala.inline
-      def SAFE: `1` = 1.asInstanceOf[`1`]
+      inline def SAFE: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def SKIP_LOCKED_DIRECTORIES: `262144` = 262144.asInstanceOf[`262144`]
+      inline def SKIP_LOCKED_DIRECTORIES: `262144` = 262144.asInstanceOf[`262144`]
       
-      @scala.inline
-      def SKIP_UNMERGED: `1024` = 1024.asInstanceOf[`1024`]
+      inline def SKIP_UNMERGED: `1024` = 1024.asInstanceOf[`1024`]
       
-      @scala.inline
-      def UPDATE_ONLY: `128` = 128.asInstanceOf[`128`]
+      inline def UPDATE_ONLY: `128` = 128.asInstanceOf[`128`]
       
-      @scala.inline
-      def UPDATE_SUBMODULES: `65536` = 65536.asInstanceOf[`65536`]
+      inline def UPDATE_SUBMODULES: `65536` = 65536.asInstanceOf[`65536`]
       
-      @scala.inline
-      def UPDATE_SUBMODULES_IF_CHANGED: `131072` = 131072.asInstanceOf[`131072`]
+      inline def UPDATE_SUBMODULES_IF_CHANGED: `131072` = 131072.asInstanceOf[`131072`]
       
-      @scala.inline
-      def USE_OURS: `2048` = 2048.asInstanceOf[`2048`]
+      inline def USE_OURS: `2048` = 2048.asInstanceOf[`2048`]
       
-      @scala.inline
-      def USE_THEIRS: `4096` = 4096.asInstanceOf[`4096`]
+      inline def USE_THEIRS: `4096` = 4096.asInstanceOf[`4096`]
     }
   }
 }

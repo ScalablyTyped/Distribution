@@ -33,40 +33,29 @@ trait DescribeGroupsRequest extends StObject {
 }
 object DescribeGroupsRequest {
   
-  @scala.inline
-  def apply(SearchQuery: SearchQueryType): DescribeGroupsRequest = {
+  inline def apply(SearchQuery: SearchQueryType): DescribeGroupsRequest = {
     val __obj = js.Dynamic.literal(SearchQuery = SearchQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeGroupsRequestMutableBuilder[Self <: DescribeGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PositiveIntegerType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntegerType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setSearchQuery(value: SearchQueryType): Self = StObject.set(x, "SearchQuery", value.asInstanceOf[js.Any])
+    inline def setSearchQuery(value: SearchQueryType): Self = StObject.set(x, "SearchQuery", value.asInstanceOf[js.Any])
   }
 }

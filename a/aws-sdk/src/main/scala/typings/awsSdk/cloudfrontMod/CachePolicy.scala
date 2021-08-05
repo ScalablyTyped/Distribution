@@ -23,22 +23,17 @@ trait CachePolicy extends StObject {
 }
 object CachePolicy {
   
-  @scala.inline
-  def apply(CachePolicyConfig: CachePolicyConfig, Id: String, LastModifiedTime: timestamp): CachePolicy = {
+  inline def apply(CachePolicyConfig: CachePolicyConfig, Id: String, LastModifiedTime: timestamp): CachePolicy = {
     val __obj = js.Dynamic.literal(CachePolicyConfig = CachePolicyConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachePolicy]
   }
   
-  @scala.inline
-  implicit class CachePolicyMutableBuilder[Self <: CachePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: CachePolicy](x: Self) {
     
-    @scala.inline
-    def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
+    inline def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

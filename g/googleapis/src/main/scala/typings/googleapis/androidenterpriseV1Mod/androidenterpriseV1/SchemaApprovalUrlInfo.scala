@@ -23,25 +23,19 @@ trait SchemaApprovalUrlInfo extends StObject {
 }
 object SchemaApprovalUrlInfo {
   
-  @scala.inline
-  def apply(): SchemaApprovalUrlInfo = {
+  inline def apply(): SchemaApprovalUrlInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApprovalUrlInfo]
   }
   
-  @scala.inline
-  implicit class SchemaApprovalUrlInfoMutableBuilder[Self <: SchemaApprovalUrlInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApprovalUrlInfo](x: Self) {
     
-    @scala.inline
-    def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
+    inline def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
+    inline def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

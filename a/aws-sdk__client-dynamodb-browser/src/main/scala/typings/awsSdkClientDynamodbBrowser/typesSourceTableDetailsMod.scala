@@ -56,8 +56,7 @@ object typesSourceTableDetailsMod {
   }
   object SourceTableDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
       ProvisionedThroughput: ProvisionedThroughput,
       TableCreationDateTime: Date | String | Double,
@@ -68,44 +67,31 @@ object typesSourceTableDetailsMod {
       __obj.asInstanceOf[SourceTableDetails]
     }
     
-    @scala.inline
-    implicit class SourceTableDetailsMutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SourceTableDetails](x: Self) {
       
-      @scala.inline
-      def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArn(value: String): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: String): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      @scala.inline
-      def setTableCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setTableCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableId(value: String): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+      inline def setTableId(value: String): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableSizeBytes(value: Double): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+      inline def setTableSizeBytes(value: Double): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
+      inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
     }
   }
   
@@ -133,8 +119,7 @@ object typesSourceTableDetailsMod {
   }
   object UnmarshalledSourceTableDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       KeySchema: js.Array[UnmarshalledKeySchemaElement],
       ProvisionedThroughput: UnmarshalledProvisionedThroughput,
       TableCreationDateTime: Date,
@@ -145,20 +130,15 @@ object typesSourceTableDetailsMod {
       __obj.asInstanceOf[UnmarshalledSourceTableDetails]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSourceTableDetailsMutableBuilder[Self <: UnmarshalledSourceTableDetails] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSourceTableDetails](x: Self) {
       
-      @scala.inline
-      def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughput(value: UnmarshalledProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: UnmarshalledProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCreationDateTime(value: Date): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setTableCreationDateTime(value: Date): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
     }
   }
 }

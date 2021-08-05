@@ -30,13 +30,12 @@ trait LinkFormat extends StObject {
   
   def Update(): Unit
   
-  @JSName("Word.LinkFormat_typekey")
+  /* private */ @JSName("Word.LinkFormat_typekey")
   var WordDotLinkFormat_typekey: LinkFormat
 }
 object LinkFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoUpdate: Boolean,
     BreakLink: () => Unit,
@@ -56,46 +55,32 @@ object LinkFormat {
     __obj.asInstanceOf[LinkFormat]
   }
   
-  @scala.inline
-  implicit class LinkFormatMutableBuilder[Self <: LinkFormat] (val x: Self) extends AnyVal {
+  extension [Self <: LinkFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
+    inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
+    inline def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavePictureWithDocument(value: Boolean): Self = StObject.set(x, "SavePictureWithDocument", value.asInstanceOf[js.Any])
+    inline def setSavePictureWithDocument(value: Boolean): Self = StObject.set(x, "SavePictureWithDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFullName(value: String): Self = StObject.set(x, "SourceFullName", value.asInstanceOf[js.Any])
+    inline def setSourceFullName(value: String): Self = StObject.set(x, "SourceFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePath(value: String): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: String): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdLinkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdLinkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "Word.LinkFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "Word.LinkFormat_typekey", value.asInstanceOf[js.Any])
   }
 }

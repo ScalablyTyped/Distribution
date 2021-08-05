@@ -19,8 +19,7 @@ trait QualifiedTypeIdentifier_
 }
 object QualifiedTypeIdentifier_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -32,16 +31,12 @@ object QualifiedTypeIdentifier_ {
     __obj.asInstanceOf[QualifiedTypeIdentifier_]
   }
   
-  @scala.inline
-  implicit class QualifiedTypeIdentifier_MutableBuilder[Self <: QualifiedTypeIdentifier_] (val x: Self) extends AnyVal {
+  extension [Self <: QualifiedTypeIdentifier_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualification(value: Identifier_ | QualifiedTypeIdentifier_): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
+    inline def setQualification(value: Identifier_ | QualifiedTypeIdentifier_): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: QualifiedTypeIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: QualifiedTypeIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

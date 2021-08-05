@@ -55,21 +55,16 @@ object tagMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Tag]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Tag]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TagState): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Tag]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TagState, opts: CustomResourceOptions): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    inline def get(name: String, id: Input[ID]): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    inline def get(name: String, id: Input[ID], state: TagState): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Tag]
+    inline def get(name: String, id: Input[ID], state: TagState, opts: CustomResourceOptions): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Tag]
     
     /**
       * Returns true if the given object is an instance of Tag.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/tag.Tag */ Boolean]
   }
   
   trait TagArgs extends StObject {
@@ -91,23 +86,18 @@ object tagMod {
   }
   object TagArgs {
     
-    @scala.inline
-    def apply(key: Input[String], resourceId: Input[String], value: Input[String]): TagArgs = {
+    inline def apply(key: Input[String], resourceId: Input[String], value: Input[String]): TagArgs = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagArgs]
     }
     
-    @scala.inline
-    implicit class TagArgsMutableBuilder[Self <: TagArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TagArgs](x: Self) {
       
-      @scala.inline
-      def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,32 +120,24 @@ object tagMod {
   }
   object TagState {
     
-    @scala.inline
-    def apply(): TagState = {
+    inline def apply(): TagState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagState]
     }
     
-    @scala.inline
-    implicit class TagStateMutableBuilder[Self <: TagState] (val x: Self) extends AnyVal {
+    extension [Self <: TagState](x: Self) {
       
-      @scala.inline
-      def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+      inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

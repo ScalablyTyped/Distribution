@@ -12,9 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pack(data: js.Any): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(data.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def pack(data: js.Any): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(data.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
-  @scala.inline
-  def unpack(data: ArrayBuffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def unpack(data: ArrayBuffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

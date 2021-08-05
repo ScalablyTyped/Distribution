@@ -33,43 +33,31 @@ trait SAMLOptionsOutput extends StObject {
 }
 object SAMLOptionsOutput {
   
-  @scala.inline
-  def apply(): SAMLOptionsOutput = {
+  inline def apply(): SAMLOptionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SAMLOptionsOutput]
   }
   
-  @scala.inline
-  implicit class SAMLOptionsOutputMutableBuilder[Self <: SAMLOptionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SAMLOptionsOutput](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setIdp(value: SAMLIdp): Self = StObject.set(x, "Idp", value.asInstanceOf[js.Any])
+    inline def setIdp(value: SAMLIdp): Self = StObject.set(x, "Idp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdpUndefined: Self = StObject.set(x, "Idp", js.undefined)
+    inline def setIdpUndefined: Self = StObject.set(x, "Idp", js.undefined)
     
-    @scala.inline
-    def setRolesKey(value: String): Self = StObject.set(x, "RolesKey", value.asInstanceOf[js.Any])
+    inline def setRolesKey(value: String): Self = StObject.set(x, "RolesKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesKeyUndefined: Self = StObject.set(x, "RolesKey", js.undefined)
+    inline def setRolesKeyUndefined: Self = StObject.set(x, "RolesKey", js.undefined)
     
-    @scala.inline
-    def setSessionTimeoutMinutes(value: IntegerClass): Self = StObject.set(x, "SessionTimeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setSessionTimeoutMinutes(value: IntegerClass): Self = StObject.set(x, "SessionTimeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTimeoutMinutesUndefined: Self = StObject.set(x, "SessionTimeoutMinutes", js.undefined)
+    inline def setSessionTimeoutMinutesUndefined: Self = StObject.set(x, "SessionTimeoutMinutes", js.undefined)
     
-    @scala.inline
-    def setSubjectKey(value: String): Self = StObject.set(x, "SubjectKey", value.asInstanceOf[js.Any])
+    inline def setSubjectKey(value: String): Self = StObject.set(x, "SubjectKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectKeyUndefined: Self = StObject.set(x, "SubjectKey", js.undefined)
+    inline def setSubjectKeyUndefined: Self = StObject.set(x, "SubjectKey", js.undefined)
   }
 }

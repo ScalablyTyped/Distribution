@@ -16,19 +16,15 @@ trait SchemaCreateSlideResponse extends StObject {
 }
 object SchemaCreateSlideResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateSlideResponse = {
+  inline def apply(): SchemaCreateSlideResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateSlideResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateSlideResponseMutableBuilder[Self <: SchemaCreateSlideResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateSlideResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

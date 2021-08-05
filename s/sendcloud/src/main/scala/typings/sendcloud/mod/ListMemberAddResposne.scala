@@ -13,19 +13,15 @@ trait ListMemberAddResposne extends StObject {
 }
 object ListMemberAddResposne {
   
-  @scala.inline
-  def apply(total_counts: Double): ListMemberAddResposne = {
+  inline def apply(total_counts: Double): ListMemberAddResposne = {
     val __obj = js.Dynamic.literal(message = "success", total_counts = total_counts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMemberAddResposne]
   }
   
-  @scala.inline
-  implicit class ListMemberAddResposneMutableBuilder[Self <: ListMemberAddResposne] (val x: Self) extends AnyVal {
+  extension [Self <: ListMemberAddResposne](x: Self) {
     
-    @scala.inline
-    def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_counts(value: Double): Self = StObject.set(x, "total_counts", value.asInstanceOf[js.Any])
+    inline def setTotal_counts(value: Double): Self = StObject.set(x, "total_counts", value.asInstanceOf[js.Any])
   }
 }

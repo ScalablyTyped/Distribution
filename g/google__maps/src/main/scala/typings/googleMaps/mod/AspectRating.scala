@@ -14,20 +14,16 @@ trait AspectRating extends StObject {
 }
 object AspectRating {
   
-  @scala.inline
-  def apply(rating: Double, `type`: AspectRatingType): AspectRating = {
+  inline def apply(rating: Double, `type`: AspectRatingType): AspectRating = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AspectRating]
   }
   
-  @scala.inline
-  implicit class AspectRatingMutableBuilder[Self <: AspectRating] (val x: Self) extends AnyVal {
+  extension [Self <: AspectRating](x: Self) {
     
-    @scala.inline
-    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AspectRatingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AspectRatingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

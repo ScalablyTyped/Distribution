@@ -20,49 +20,35 @@ trait CopyOptions extends StObject {
 }
 object CopyOptions {
   
-  @scala.inline
-  def apply(): CopyOptions = {
+  inline def apply(): CopyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyOptions]
   }
   
-  @scala.inline
-  implicit class CopyOptionsMutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CopyOptions](x: Self) {
     
-    @scala.inline
-    def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+    inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+    inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
     
-    @scala.inline
-    def setErrorOnExist(value: Boolean): Self = StObject.set(x, "errorOnExist", value.asInstanceOf[js.Any])
+    inline def setErrorOnExist(value: Boolean): Self = StObject.set(x, "errorOnExist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorOnExistUndefined: Self = StObject.set(x, "errorOnExist", js.undefined)
+    inline def setErrorOnExistUndefined: Self = StObject.set(x, "errorOnExist", js.undefined)
     
-    @scala.inline
-    def setFilter(value: (/* src */ String, /* dest */ String) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    inline def setFilter(value: (/* src */ String, /* dest */ String) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setPreserveTimestamps(value: Boolean): Self = StObject.set(x, "preserveTimestamps", value.asInstanceOf[js.Any])
+    inline def setPreserveTimestamps(value: Boolean): Self = StObject.set(x, "preserveTimestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveTimestampsUndefined: Self = StObject.set(x, "preserveTimestamps", js.undefined)
+    inline def setPreserveTimestampsUndefined: Self = StObject.set(x, "preserveTimestamps", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

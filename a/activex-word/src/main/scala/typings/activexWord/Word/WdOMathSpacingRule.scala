@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOMathSpacingRule extends StObject
 object WdOMathSpacingRule {
   
-  @scala.inline
-  def wdOMathSpacing1pt5: `1` = 1.asInstanceOf[`1`]
+  inline def wdOMathSpacing1pt5: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOMathSpacingDouble: `2` = 2.asInstanceOf[`2`]
+  inline def wdOMathSpacingDouble: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdOMathSpacingExactly: `3` = 3.asInstanceOf[`3`]
+  inline def wdOMathSpacingExactly: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdOMathSpacingMultiple: `4` = 4.asInstanceOf[`4`]
+  inline def wdOMathSpacingMultiple: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdOMathSpacingSingle: `0` = 0.asInstanceOf[`0`]
+  inline def wdOMathSpacingSingle: `0` = 0.asInstanceOf[`0`]
 }

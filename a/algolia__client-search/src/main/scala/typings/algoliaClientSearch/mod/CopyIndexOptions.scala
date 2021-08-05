@@ -10,22 +10,17 @@ trait CopyIndexOptions extends StObject {
 }
 object CopyIndexOptions {
   
-  @scala.inline
-  def apply(): CopyIndexOptions = {
+  inline def apply(): CopyIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyIndexOptions]
   }
   
-  @scala.inline
-  implicit class CopyIndexOptionsMutableBuilder[Self <: CopyIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CopyIndexOptions](x: Self) {
     
-    @scala.inline
-    def setScope(value: js.Array[ScopeType]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[ScopeType]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: ScopeType*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: ScopeType*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

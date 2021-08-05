@@ -12,19 +12,15 @@ trait DoNotResetEntireContent extends StObject {
 }
 object DoNotResetEntireContent {
   
-  @scala.inline
-  def apply(doNotResetEntireContent: Boolean, leaveUnmerged: Boolean): DoNotResetEntireContent = {
+  inline def apply(doNotResetEntireContent: Boolean, leaveUnmerged: Boolean): DoNotResetEntireContent = {
     val __obj = js.Dynamic.literal(doNotResetEntireContent = doNotResetEntireContent.asInstanceOf[js.Any], leaveUnmerged = leaveUnmerged.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoNotResetEntireContent]
   }
   
-  @scala.inline
-  implicit class DoNotResetEntireContentMutableBuilder[Self <: DoNotResetEntireContent] (val x: Self) extends AnyVal {
+  extension [Self <: DoNotResetEntireContent](x: Self) {
     
-    @scala.inline
-    def setDoNotResetEntireContent(value: Boolean): Self = StObject.set(x, "doNotResetEntireContent", value.asInstanceOf[js.Any])
+    inline def setDoNotResetEntireContent(value: Boolean): Self = StObject.set(x, "doNotResetEntireContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveUnmerged(value: Boolean): Self = StObject.set(x, "leaveUnmerged", value.asInstanceOf[js.Any])
+    inline def setLeaveUnmerged(value: Boolean): Self = StObject.set(x, "leaveUnmerged", value.asInstanceOf[js.Any])
   }
 }

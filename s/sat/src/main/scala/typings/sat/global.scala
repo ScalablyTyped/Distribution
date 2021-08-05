@@ -152,38 +152,28 @@ object global {
       def this(x: Unit, y: Double) = this()
     }
     
-    @scala.inline
-    def pointInCircle(p: typings.sat.SAT.Vector, c: typings.sat.SAT.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointInCircle")(p.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def pointInCircle(p: typings.sat.SAT.Vector, c: typings.sat.SAT.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointInCircle")(p.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def pointInPolygon(p: typings.sat.SAT.Vector, poly: typings.sat.SAT.Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointInPolygon")(p.asInstanceOf[js.Any], poly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def pointInPolygon(p: typings.sat.SAT.Vector, poly: typings.sat.SAT.Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointInPolygon")(p.asInstanceOf[js.Any], poly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def testCircleCircle(a: typings.sat.SAT.Circle, b: typings.sat.SAT.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCircleCircle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def testCircleCircle(a: typings.sat.SAT.Circle, b: typings.sat.SAT.Circle, response: typings.sat.SAT.Response): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCircleCircle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def testCircleCircle(a: typings.sat.SAT.Circle, b: typings.sat.SAT.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCircleCircle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def testCircleCircle(a: typings.sat.SAT.Circle, b: typings.sat.SAT.Circle, response: typings.sat.SAT.Response): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCircleCircle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def testCirclePolygon(circle: typings.sat.SAT.Circle, polygon: typings.sat.SAT.Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCirclePolygon")(circle.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def testCirclePolygon(
+    inline def testCirclePolygon(circle: typings.sat.SAT.Circle, polygon: typings.sat.SAT.Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCirclePolygon")(circle.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def testCirclePolygon(
       circle: typings.sat.SAT.Circle,
       polygon: typings.sat.SAT.Polygon,
       response: typings.sat.SAT.Response
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testCirclePolygon")(circle.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def testPolygonCircle(polygon: typings.sat.SAT.Polygon, circle: typings.sat.SAT.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonCircle")(polygon.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def testPolygonCircle(
+    inline def testPolygonCircle(polygon: typings.sat.SAT.Polygon, circle: typings.sat.SAT.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonCircle")(polygon.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def testPolygonCircle(
       polygon: typings.sat.SAT.Polygon,
       circle: typings.sat.SAT.Circle,
       response: typings.sat.SAT.Response
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonCircle")(polygon.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def testPolygonPolygon(a: typings.sat.SAT.Polygon, b: typings.sat.SAT.Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonPolygon")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def testPolygonPolygon(a: typings.sat.SAT.Polygon, b: typings.sat.SAT.Polygon, response: typings.sat.SAT.Response): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonPolygon")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def testPolygonPolygon(a: typings.sat.SAT.Polygon, b: typings.sat.SAT.Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonPolygon")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def testPolygonPolygon(a: typings.sat.SAT.Polygon, b: typings.sat.SAT.Polygon, response: typings.sat.SAT.Response): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testPolygonPolygon")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

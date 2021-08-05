@@ -13,19 +13,15 @@ trait FilterDialogClosedEventUIParam extends StObject {
 }
 object FilterDialogClosedEventUIParam {
   
-  @scala.inline
-  def apply(): FilterDialogClosedEventUIParam = {
+  inline def apply(): FilterDialogClosedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterDialogClosedEventUIParam]
   }
   
-  @scala.inline
-  implicit class FilterDialogClosedEventUIParamMutableBuilder[Self <: FilterDialogClosedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FilterDialogClosedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

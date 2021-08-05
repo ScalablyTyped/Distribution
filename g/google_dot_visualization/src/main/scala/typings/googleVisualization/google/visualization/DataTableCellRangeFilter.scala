@@ -9,8 +9,7 @@ trait DataTableCellRangeFilter
      with DataTableCellFilter
 object DataTableCellRangeFilter {
   
-  @scala.inline
-  def apply(column: Double): DataTableCellRangeFilter = {
+  inline def apply(column: Double): DataTableCellRangeFilter = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableCellRangeFilter]
   }

@@ -10,8 +10,7 @@ trait HeadBucketExceptionsUnion
      with NoSuchBucket
 object HeadBucketExceptionsUnion {
   
-  @scala.inline
-  def apply(): HeadBucketExceptionsUnion = {
+  inline def apply(): HeadBucketExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "NoSuchBucket")
     __obj.asInstanceOf[HeadBucketExceptionsUnion]
   }

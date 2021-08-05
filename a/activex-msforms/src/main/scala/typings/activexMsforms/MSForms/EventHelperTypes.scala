@@ -51,8 +51,7 @@ object EventHelperTypes {
   }
   object ContainerBeforeDragOverParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Cancel: ReturnBoolean,
       Control: Control,
       Data: DataObject,
@@ -66,32 +65,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[ContainerBeforeDragOverParameter]
     }
     
-    @scala.inline
-    implicit class ContainerBeforeDragOverParameterMutableBuilder[Self <: ContainerBeforeDragOverParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerBeforeDragOverParameter](x: Self) {
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: fmDragState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: fmDragState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,8 +116,7 @@ object EventHelperTypes {
   }
   object ContainerBeforeDropOrPasteParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Action: fmAction,
       Cancel: ReturnBoolean,
       Control: Control,
@@ -141,32 +130,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[ContainerBeforeDropOrPasteParameter]
     }
     
-    @scala.inline
-    implicit class ContainerBeforeDropOrPasteParameterMutableBuilder[Self <: ContainerBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerBeforeDropOrPasteParameter](x: Self) {
       
-      @scala.inline
-      def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,8 +168,7 @@ object EventHelperTypes {
   }
   object ContainerScrollParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActionX: fmScrollAction,
       ActionY: fmScrollAction,
       ActualDx: ReturnSingle,
@@ -201,26 +180,19 @@ object EventHelperTypes {
       __obj.asInstanceOf[ContainerScrollParameter]
     }
     
-    @scala.inline
-    implicit class ContainerScrollParameterMutableBuilder[Self <: ContainerScrollParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerScrollParameter](x: Self) {
       
-      @scala.inline
-      def setActionX(value: fmScrollAction): Self = StObject.set(x, "ActionX", value.asInstanceOf[js.Any])
+      inline def setActionX(value: fmScrollAction): Self = StObject.set(x, "ActionX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionY(value: fmScrollAction): Self = StObject.set(x, "ActionY", value.asInstanceOf[js.Any])
+      inline def setActionY(value: fmScrollAction): Self = StObject.set(x, "ActionY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualDx(value: ReturnSingle): Self = StObject.set(x, "ActualDx", value.asInstanceOf[js.Any])
+      inline def setActualDx(value: ReturnSingle): Self = StObject.set(x, "ActualDx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualDy(value: ReturnSingle): Self = StObject.set(x, "ActualDy", value.asInstanceOf[js.Any])
+      inline def setActualDy(value: ReturnSingle): Self = StObject.set(x, "ActualDy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDx(value: Double): Self = StObject.set(x, "RequestDx", value.asInstanceOf[js.Any])
+      inline def setRequestDx(value: Double): Self = StObject.set(x, "RequestDx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDy(value: Double): Self = StObject.set(x, "RequestDy", value.asInstanceOf[js.Any])
+      inline def setRequestDy(value: Double): Self = StObject.set(x, "RequestDy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,8 +216,7 @@ object EventHelperTypes {
   }
   object ControlBeforeDragOverParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Cancel: ReturnBoolean,
       Data: DataObject,
       DragState: fmDragState,
@@ -258,29 +229,21 @@ object EventHelperTypes {
       __obj.asInstanceOf[ControlBeforeDragOverParameter]
     }
     
-    @scala.inline
-    implicit class ControlBeforeDragOverParameterMutableBuilder[Self <: ControlBeforeDragOverParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ControlBeforeDragOverParameter](x: Self) {
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragState(value: fmDragState): Self = StObject.set(x, "DragState", value.asInstanceOf[js.Any])
+      inline def setDragState(value: fmDragState): Self = StObject.set(x, "DragState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,8 +267,7 @@ object EventHelperTypes {
   }
   object ControlBeforeDropOrPasteParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Action: fmAction,
       Cancel: ReturnBoolean,
       Data: DataObject,
@@ -318,29 +280,21 @@ object EventHelperTypes {
       __obj.asInstanceOf[ControlBeforeDropOrPasteParameter]
     }
     
-    @scala.inline
-    implicit class ControlBeforeDropOrPasteParameterMutableBuilder[Self <: ControlBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ControlBeforeDropOrPasteParameter](x: Self) {
       
-      @scala.inline
-      def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,8 +318,7 @@ object EventHelperTypes {
   }
   object ErrorParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CancelDisplay: ReturnBoolean,
       Description: ReturnString,
       HelpContext: Double,
@@ -378,29 +331,21 @@ object EventHelperTypes {
       __obj.asInstanceOf[ErrorParameter]
     }
     
-    @scala.inline
-    implicit class ErrorParameterMutableBuilder[Self <: ErrorParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorParameter](x: Self) {
       
-      @scala.inline
-      def setCancelDisplay(value: ReturnBoolean): Self = StObject.set(x, "CancelDisplay", value.asInstanceOf[js.Any])
+      inline def setCancelDisplay(value: ReturnBoolean): Self = StObject.set(x, "CancelDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: ReturnString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReturnString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpContext(value: Double): Self = StObject.set(x, "HelpContext", value.asInstanceOf[js.Any])
+      inline def setHelpContext(value: Double): Self = StObject.set(x, "HelpContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
+      inline def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCode(value: Double): Self = StObject.set(x, "SCode", value.asInstanceOf[js.Any])
+      inline def setSCode(value: Double): Self = StObject.set(x, "SCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -438,8 +383,7 @@ object EventHelperTypes {
   }
   object MultiPageBeforeDragOverParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Cancel: ReturnBoolean,
       Control: Control,
       Data: DataObject,
@@ -454,35 +398,25 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageBeforeDragOverParameter]
     }
     
-    @scala.inline
-    implicit class MultiPageBeforeDragOverParameterMutableBuilder[Self <: MultiPageBeforeDragOverParameter] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPageBeforeDragOverParameter](x: Self) {
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: fmDragState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: fmDragState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -520,8 +454,7 @@ object EventHelperTypes {
   }
   object MultiPageBeforeDropOrPasteParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Action: fmAction,
       Cancel: ReturnBoolean,
       Control: Control,
@@ -536,35 +469,25 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageBeforeDropOrPasteParameter]
     }
     
-    @scala.inline
-    implicit class MultiPageBeforeDropOrPasteParameterMutableBuilder[Self <: MultiPageBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPageBeforeDropOrPasteParameter](x: Self) {
       
-      @scala.inline
-      def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -590,8 +513,7 @@ object EventHelperTypes {
   }
   object MultiPageErrorParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CancelDisplay: ReturnBoolean,
       Description: ReturnString,
       HelpContext: Double,
@@ -605,32 +527,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageErrorParameter]
     }
     
-    @scala.inline
-    implicit class MultiPageErrorParameterMutableBuilder[Self <: MultiPageErrorParameter] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPageErrorParameter](x: Self) {
       
-      @scala.inline
-      def setCancelDisplay(value: ReturnBoolean): Self = StObject.set(x, "CancelDisplay", value.asInstanceOf[js.Any])
+      inline def setCancelDisplay(value: ReturnBoolean): Self = StObject.set(x, "CancelDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: ReturnString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReturnString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpContext(value: Double): Self = StObject.set(x, "HelpContext", value.asInstanceOf[js.Any])
+      inline def setHelpContext(value: Double): Self = StObject.set(x, "HelpContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
+      inline def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCode(value: Double): Self = StObject.set(x, "SCode", value.asInstanceOf[js.Any])
+      inline def setSCode(value: Double): Self = StObject.set(x, "SCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -654,8 +567,7 @@ object EventHelperTypes {
   }
   object MultiPageScrollParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActionX: fmScrollAction,
       ActionY: fmScrollAction,
       ActualDx: ReturnSingle,
@@ -668,29 +580,21 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageScrollParameter]
     }
     
-    @scala.inline
-    implicit class MultiPageScrollParameterMutableBuilder[Self <: MultiPageScrollParameter] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPageScrollParameter](x: Self) {
       
-      @scala.inline
-      def setActionX(value: fmScrollAction): Self = StObject.set(x, "ActionX", value.asInstanceOf[js.Any])
+      inline def setActionX(value: fmScrollAction): Self = StObject.set(x, "ActionX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionY(value: fmScrollAction): Self = StObject.set(x, "ActionY", value.asInstanceOf[js.Any])
+      inline def setActionY(value: fmScrollAction): Self = StObject.set(x, "ActionY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualDx(value: ReturnSingle): Self = StObject.set(x, "ActualDx", value.asInstanceOf[js.Any])
+      inline def setActualDx(value: ReturnSingle): Self = StObject.set(x, "ActualDx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualDy(value: ReturnSingle): Self = StObject.set(x, "ActualDy", value.asInstanceOf[js.Any])
+      inline def setActualDy(value: ReturnSingle): Self = StObject.set(x, "ActualDy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDx(value: Double): Self = StObject.set(x, "RequestDx", value.asInstanceOf[js.Any])
+      inline def setRequestDx(value: Double): Self = StObject.set(x, "RequestDx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDy(value: Double): Self = StObject.set(x, "RequestDy", value.asInstanceOf[js.Any])
+      inline def setRequestDy(value: Double): Self = StObject.set(x, "RequestDy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -716,8 +620,7 @@ object EventHelperTypes {
   }
   object TabStripBeforeDragOverParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Cancel: ReturnBoolean,
       Data: DataObject,
       DragState: fmDragState,
@@ -731,32 +634,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[TabStripBeforeDragOverParameter]
     }
     
-    @scala.inline
-    implicit class TabStripBeforeDragOverParameterMutableBuilder[Self <: TabStripBeforeDragOverParameter] (val x: Self) extends AnyVal {
+    extension [Self <: TabStripBeforeDragOverParameter](x: Self) {
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragState(value: fmDragState): Self = StObject.set(x, "DragState", value.asInstanceOf[js.Any])
+      inline def setDragState(value: fmDragState): Self = StObject.set(x, "DragState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -782,8 +676,7 @@ object EventHelperTypes {
   }
   object TabStripBeforeDropOrPasteParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Action: fmAction,
       Cancel: ReturnBoolean,
       Data: DataObject,
@@ -797,32 +690,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[TabStripBeforeDropOrPasteParameter]
     }
     
-    @scala.inline
-    implicit class TabStripBeforeDropOrPasteParameterMutableBuilder[Self <: TabStripBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
+    extension [Self <: TabStripBeforeDropOrPasteParameter](x: Self) {
       
-      @scala.inline
-      def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataObject): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: ReturnEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     }
   }
 }

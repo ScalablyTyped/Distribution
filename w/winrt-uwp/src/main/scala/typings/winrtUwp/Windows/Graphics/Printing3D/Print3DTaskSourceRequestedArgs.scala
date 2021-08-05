@@ -15,16 +15,13 @@ trait Print3DTaskSourceRequestedArgs extends StObject {
 }
 object Print3DTaskSourceRequestedArgs {
   
-  @scala.inline
-  def apply(setSource: Printing3D3MFPackage => Unit): Print3DTaskSourceRequestedArgs = {
+  inline def apply(setSource: Printing3D3MFPackage => Unit): Print3DTaskSourceRequestedArgs = {
     val __obj = js.Dynamic.literal(setSource = js.Any.fromFunction1(setSource))
     __obj.asInstanceOf[Print3DTaskSourceRequestedArgs]
   }
   
-  @scala.inline
-  implicit class Print3DTaskSourceRequestedArgsMutableBuilder[Self <: Print3DTaskSourceRequestedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: Print3DTaskSourceRequestedArgs](x: Self) {
     
-    @scala.inline
-    def setSetSource(value: Printing3D3MFPackage => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+    inline def setSetSource(value: Printing3D3MFPackage => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
   }
 }

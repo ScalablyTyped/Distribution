@@ -17,19 +17,15 @@ trait Error
 }
 object Error {
   
-  @scala.inline
-  def apply(error: RollupError): Error = {
+  inline def apply(error: RollupError): Error = {
     val __obj = js.Dynamic.literal(code = "ERROR", error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setCode(value: ERROR): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ERROR): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: RollupError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: RollupError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

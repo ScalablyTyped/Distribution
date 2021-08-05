@@ -12,16 +12,13 @@ trait SpeechRecognitionHypothesisGeneratedEventArgs extends StObject {
 }
 object SpeechRecognitionHypothesisGeneratedEventArgs {
   
-  @scala.inline
-  def apply(hypothesis: SpeechRecognitionHypothesis): SpeechRecognitionHypothesisGeneratedEventArgs = {
+  inline def apply(hypothesis: SpeechRecognitionHypothesis): SpeechRecognitionHypothesisGeneratedEventArgs = {
     val __obj = js.Dynamic.literal(hypothesis = hypothesis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionHypothesisGeneratedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionHypothesisGeneratedEventArgsMutableBuilder[Self <: SpeechRecognitionHypothesisGeneratedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionHypothesisGeneratedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHypothesis(value: SpeechRecognitionHypothesis): Self = StObject.set(x, "hypothesis", value.asInstanceOf[js.Any])
+    inline def setHypothesis(value: SpeechRecognitionHypothesis): Self = StObject.set(x, "hypothesis", value.asInstanceOf[js.Any])
   }
 }

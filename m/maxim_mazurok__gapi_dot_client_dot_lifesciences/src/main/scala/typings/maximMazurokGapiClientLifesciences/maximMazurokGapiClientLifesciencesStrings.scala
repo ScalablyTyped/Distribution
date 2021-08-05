@@ -8,56 +8,45 @@ object maximMazurokGapiClientLifesciencesStrings {
   
   @js.native
   sealed trait Action extends StObject
-  @scala.inline
-  def Action: Action = "Action".asInstanceOf[Action]
+  inline def Action: Action = "Action".asInstanceOf[Action]
   
   @js.native
   sealed trait ContainerStartedEvent extends StObject
-  @scala.inline
-  def ContainerStartedEvent: ContainerStartedEvent = "ContainerStartedEvent".asInstanceOf[ContainerStartedEvent]
+  inline def ContainerStartedEvent: ContainerStartedEvent = "ContainerStartedEvent".asInstanceOf[ContainerStartedEvent]
   
   @js.native
   sealed trait Location extends StObject
-  @scala.inline
-  def Location: Location = "Location".asInstanceOf[Location]
+  inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
   sealed trait Metadata extends StObject
-  @scala.inline
-  def Metadata: Metadata = "Metadata".asInstanceOf[Metadata]
+  inline def Metadata: Metadata = "Metadata".asInstanceOf[Metadata]
   
   @js.native
   sealed trait Operation extends StObject
-  @scala.inline
-  def Operation: Operation = "Operation".asInstanceOf[Operation]
+  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
   sealed trait Pipeline extends StObject
-  @scala.inline
-  def Pipeline: Pipeline = "Pipeline".asInstanceOf[Pipeline]
+  inline def Pipeline: Pipeline = "Pipeline".asInstanceOf[Pipeline]
   
   @js.native
   sealed trait RunPipelineRequest extends StObject
-  @scala.inline
-  def RunPipelineRequest: RunPipelineRequest = "RunPipelineRequest".asInstanceOf[RunPipelineRequest]
+  inline def RunPipelineRequest: RunPipelineRequest = "RunPipelineRequest".asInstanceOf[RunPipelineRequest]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait VirtualMachine extends StObject
-  @scala.inline
-  def VirtualMachine: VirtualMachine = "VirtualMachine".asInstanceOf[VirtualMachine]
+  inline def VirtualMachine: VirtualMachine = "VirtualMachine".asInstanceOf[VirtualMachine]
   
   @js.native
   sealed trait lifesciences extends StObject
-  @scala.inline
-  def lifesciences: lifesciences = "lifesciences".asInstanceOf[lifesciences]
+  inline def lifesciences: lifesciences = "lifesciences".asInstanceOf[lifesciences]
   
   @js.native
   sealed trait v2beta extends StObject
-  @scala.inline
-  def v2beta: v2beta = "v2beta".asInstanceOf[v2beta]
+  inline def v2beta: v2beta = "v2beta".asInstanceOf[v2beta]
 }

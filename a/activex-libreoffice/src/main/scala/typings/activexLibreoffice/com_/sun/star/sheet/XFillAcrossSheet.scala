@@ -16,8 +16,7 @@ trait XFillAcrossSheet
 }
 object XFillAcrossSheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     fillAcrossSheets: Double => Unit,
     queryInterface: `type` => js.Any,
@@ -27,10 +26,8 @@ object XFillAcrossSheet {
     __obj.asInstanceOf[XFillAcrossSheet]
   }
   
-  @scala.inline
-  implicit class XFillAcrossSheetMutableBuilder[Self <: XFillAcrossSheet] (val x: Self) extends AnyVal {
+  extension [Self <: XFillAcrossSheet](x: Self) {
     
-    @scala.inline
-    def setFillAcrossSheets(value: Double => Unit): Self = StObject.set(x, "fillAcrossSheets", js.Any.fromFunction1(value))
+    inline def setFillAcrossSheets(value: Double => Unit): Self = StObject.set(x, "fillAcrossSheets", js.Any.fromFunction1(value))
   }
 }

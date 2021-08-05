@@ -12,25 +12,19 @@ trait ProjectIntegration extends StObject {
 }
 object ProjectIntegration {
   
-  @scala.inline
-  def apply(): ProjectIntegration = {
+  inline def apply(): ProjectIntegration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectIntegration]
   }
   
-  @scala.inline
-  implicit class ProjectIntegrationMutableBuilder[Self <: ProjectIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectIntegration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

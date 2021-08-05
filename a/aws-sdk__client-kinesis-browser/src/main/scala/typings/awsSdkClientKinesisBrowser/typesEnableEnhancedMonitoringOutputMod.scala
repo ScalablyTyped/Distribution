@@ -51,53 +51,42 @@ object typesEnableEnhancedMonitoringOutputMod {
   }
   object EnableEnhancedMonitoringOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): EnableEnhancedMonitoringOutput = {
+    inline def apply($metadata: ResponseMetadata): EnableEnhancedMonitoringOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnableEnhancedMonitoringOutput]
     }
     
-    @scala.inline
-    implicit class EnableEnhancedMonitoringOutputMutableBuilder[Self <: EnableEnhancedMonitoringOutput] (val x: Self) extends AnyVal {
+    extension [Self <: EnableEnhancedMonitoringOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentShardLevelMetrics(
+      inline def setCurrentShardLevelMetrics(
         value: js.Array[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
             ]
       ): Self = StObject.set(x, "CurrentShardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentShardLevelMetricsUndefined: Self = StObject.set(x, "CurrentShardLevelMetrics", js.undefined)
+      inline def setCurrentShardLevelMetricsUndefined: Self = StObject.set(x, "CurrentShardLevelMetrics", js.undefined)
       
-      @scala.inline
-      def setCurrentShardLevelMetricsVarargs(
+      inline def setCurrentShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
       ): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value :_*))
       
-      @scala.inline
-      def setDesiredShardLevelMetrics(
+      inline def setDesiredShardLevelMetrics(
         value: js.Array[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
             ]
       ): Self = StObject.set(x, "DesiredShardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredShardLevelMetricsUndefined: Self = StObject.set(x, "DesiredShardLevelMetrics", js.undefined)
+      inline def setDesiredShardLevelMetricsUndefined: Self = StObject.set(x, "DesiredShardLevelMetrics", js.undefined)
       
-      @scala.inline
-      def setDesiredShardLevelMetricsVarargs(
+      inline def setDesiredShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
       ): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value :_*))
       
-      @scala.inline
-      def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+      inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     }
   }
 }

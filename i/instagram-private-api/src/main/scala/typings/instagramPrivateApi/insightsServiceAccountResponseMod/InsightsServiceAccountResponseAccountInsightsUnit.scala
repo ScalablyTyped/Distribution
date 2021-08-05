@@ -56,8 +56,7 @@ trait InsightsServiceAccountResponseAccountInsightsUnit extends StObject {
 }
 object InsightsServiceAccountResponseAccountInsightsUnit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account_actions_graph: InsightsServiceAccountResponseAccountActionsGraph,
     account_discovery_graph: InsightsServiceAccountResponseAccountDiscoveryGraph,
     aymt_instagram_account_insights_channel: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel,
@@ -87,79 +86,54 @@ object InsightsServiceAccountResponseAccountInsightsUnit {
     __obj.asInstanceOf[InsightsServiceAccountResponseAccountInsightsUnit]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseAccountInsightsUnitMutableBuilder[Self <: InsightsServiceAccountResponseAccountInsightsUnit] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseAccountInsightsUnit](x: Self) {
     
-    @scala.inline
-    def setAccount_actions_graph(value: InsightsServiceAccountResponseAccountActionsGraph): Self = StObject.set(x, "account_actions_graph", value.asInstanceOf[js.Any])
+    inline def setAccount_actions_graph(value: InsightsServiceAccountResponseAccountActionsGraph): Self = StObject.set(x, "account_actions_graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccount_discovery_graph(value: InsightsServiceAccountResponseAccountDiscoveryGraph): Self = StObject.set(x, "account_discovery_graph", value.asInstanceOf[js.Any])
+    inline def setAccount_discovery_graph(value: InsightsServiceAccountResponseAccountDiscoveryGraph): Self = StObject.set(x, "account_discovery_graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAymt_instagram_account_insights_channel(value: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel): Self = StObject.set(x, "aymt_instagram_account_insights_channel", value.asInstanceOf[js.Any])
+    inline def setAymt_instagram_account_insights_channel(value: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel): Self = StObject.set(x, "aymt_instagram_account_insights_channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCall_metric_count(value: Double): Self = StObject.set(x, "call_metric_count", value.asInstanceOf[js.Any])
+    inline def setCall_metric_count(value: Double): Self = StObject.set(x, "call_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCall_metric_delta(value: Double): Self = StObject.set(x, "call_metric_delta", value.asInstanceOf[js.Any])
+    inline def setCall_metric_delta(value: Double): Self = StObject.set(x, "call_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_metric_count(value: Double): Self = StObject.set(x, "email_metric_count", value.asInstanceOf[js.Any])
+    inline def setEmail_metric_count(value: Double): Self = StObject.set(x, "email_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_metric_delta(value: Double): Self = StObject.set(x, "email_metric_delta", value.asInstanceOf[js.Any])
+    inline def setEmail_metric_delta(value: Double): Self = StObject.set(x, "email_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet_direction_metric_count(value: Double): Self = StObject.set(x, "get_direction_metric_count", value.asInstanceOf[js.Any])
+    inline def setGet_direction_metric_count(value: Double): Self = StObject.set(x, "get_direction_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet_direction_metric_delta(value: Double): Self = StObject.set(x, "get_direction_metric_delta", value.asInstanceOf[js.Any])
+    inline def setGet_direction_metric_delta(value: Double): Self = StObject.set(x, "get_direction_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraph(value: InsightsServiceAccountResponseGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: InsightsServiceAccountResponseGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashtags_impressions(value: InsightsServiceAccountResponseHashtagsImpressions): Self = StObject.set(x, "hashtags_impressions", value.asInstanceOf[js.Any])
+    inline def setHashtags_impressions(value: InsightsServiceAccountResponseHashtagsImpressions): Self = StObject.set(x, "hashtags_impressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashtags_reach(value: InsightsServiceAccountResponseHashtagsReach): Self = StObject.set(x, "hashtags_reach", value.asInstanceOf[js.Any])
+    inline def setHashtags_reach(value: InsightsServiceAccountResponseHashtagsReach): Self = StObject.set(x, "hashtags_reach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressions_metric_count(value: Double): Self = StObject.set(x, "impressions_metric_count", value.asInstanceOf[js.Any])
+    inline def setImpressions_metric_count(value: Double): Self = StObject.set(x, "impressions_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressions_metric_delta(value: Double): Self = StObject.set(x, "impressions_metric_delta", value.asInstanceOf[js.Any])
+    inline def setImpressions_metric_delta(value: Double): Self = StObject.set(x, "impressions_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_week_impressions(value: Double): Self = StObject.set(x, "last_week_impressions", value.asInstanceOf[js.Any])
+    inline def setLast_week_impressions(value: Double): Self = StObject.set(x, "last_week_impressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric_graph(value: InsightsServiceAccountResponseMetricGraph): Self = StObject.set(x, "metric_graph", value.asInstanceOf[js.Any])
+    inline def setMetric_graph(value: InsightsServiceAccountResponseMetricGraph): Self = StObject.set(x, "metric_graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_visits_metric_count(value: Double): Self = StObject.set(x, "profile_visits_metric_count", value.asInstanceOf[js.Any])
+    inline def setProfile_visits_metric_count(value: Double): Self = StObject.set(x, "profile_visits_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_visits_metric_delta(value: Double): Self = StObject.set(x, "profile_visits_metric_delta", value.asInstanceOf[js.Any])
+    inline def setProfile_visits_metric_delta(value: Double): Self = StObject.set(x, "profile_visits_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReach_metric_count(value: Double): Self = StObject.set(x, "reach_metric_count", value.asInstanceOf[js.Any])
+    inline def setReach_metric_count(value: Double): Self = StObject.set(x, "reach_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReach_metric_delta(value: Double): Self = StObject.set(x, "reach_metric_delta", value.asInstanceOf[js.Any])
+    inline def setReach_metric_delta(value: Double): Self = StObject.set(x, "reach_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_metric_count(value: Double): Self = StObject.set(x, "text_metric_count", value.asInstanceOf[js.Any])
+    inline def setText_metric_count(value: Double): Self = StObject.set(x, "text_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_metric_delta(value: Double): Self = StObject.set(x, "text_metric_delta", value.asInstanceOf[js.Any])
+    inline def setText_metric_delta(value: Double): Self = StObject.set(x, "text_metric_delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite_visits_metric_count(value: Double): Self = StObject.set(x, "website_visits_metric_count", value.asInstanceOf[js.Any])
+    inline def setWebsite_visits_metric_count(value: Double): Self = StObject.set(x, "website_visits_metric_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite_visits_metric_delta(value: Double): Self = StObject.set(x, "website_visits_metric_delta", value.asInstanceOf[js.Any])
+    inline def setWebsite_visits_metric_delta(value: Double): Self = StObject.set(x, "website_visits_metric_delta", value.asInstanceOf[js.Any])
   }
 }

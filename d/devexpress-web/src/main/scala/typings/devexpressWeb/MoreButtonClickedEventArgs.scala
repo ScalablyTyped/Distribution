@@ -34,8 +34,7 @@ trait MoreButtonClickedEventArgs
 }
 object MoreButtonClickedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handled: Boolean,
     interval: ASPxClientTimeInterval,
     processOnServer: Boolean,
@@ -46,19 +45,14 @@ object MoreButtonClickedEventArgs {
     __obj.asInstanceOf[MoreButtonClickedEventArgs]
   }
   
-  @scala.inline
-  implicit class MoreButtonClickedEventArgsMutableBuilder[Self <: MoreButtonClickedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MoreButtonClickedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDateTime(value: Date): Self = StObject.set(x, "targetDateTime", value.asInstanceOf[js.Any])
+    inline def setTargetDateTime(value: Date): Self = StObject.set(x, "targetDateTime", value.asInstanceOf[js.Any])
   }
 }

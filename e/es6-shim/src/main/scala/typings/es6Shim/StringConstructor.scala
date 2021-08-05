@@ -24,8 +24,7 @@ trait StringConstructor extends StObject {
 }
 object StringConstructor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromCodePoint: /* repeated */ Double => java.lang.String,
     raw: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String
   ): StringConstructor = {
@@ -33,13 +32,10 @@ object StringConstructor {
     __obj.asInstanceOf[StringConstructor]
   }
   
-  @scala.inline
-  implicit class StringConstructorMutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: StringConstructor](x: Self) {
     
-    @scala.inline
-    def setFromCodePoint(value: /* repeated */ Double => java.lang.String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
+    inline def setFromCodePoint(value: /* repeated */ Double => java.lang.String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRaw(value: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "raw", js.Any.fromFunction2(value))
+    inline def setRaw(value: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "raw", js.Any.fromFunction2(value))
   }
 }

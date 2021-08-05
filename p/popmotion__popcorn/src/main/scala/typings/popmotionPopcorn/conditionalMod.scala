@@ -10,8 +10,7 @@ object conditionalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(check: Check, apply: Apply): js.Function1[/* v */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(check.asInstanceOf[js.Any], apply.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ js.Any, js.Any]]
+  inline def default(check: Check, apply: Apply): js.Function1[/* v */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(check.asInstanceOf[js.Any], apply.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ js.Any, js.Any]]
   
   type Apply = js.Function1[/* v */ js.Any, js.Any]
   

@@ -23,38 +23,28 @@ object lazyRenderBoxMod {
   }
   object ILazyRenderBoxProps {
     
-    @scala.inline
-    def apply(): ILazyRenderBoxProps = {
+    inline def apply(): ILazyRenderBoxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILazyRenderBoxProps]
     }
     
-    @scala.inline
-    implicit class ILazyRenderBoxPropsMutableBuilder[Self <: ILazyRenderBoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILazyRenderBoxProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHiddenClassName(value: String): Self = StObject.set(x, "hiddenClassName", value.asInstanceOf[js.Any])
+      inline def setHiddenClassName(value: String): Self = StObject.set(x, "hiddenClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenClassNameUndefined: Self = StObject.set(x, "hiddenClassName", js.undefined)
+      inline def setHiddenClassNameUndefined: Self = StObject.set(x, "hiddenClassName", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFRelationshipsMode extends StObject
 object MFRelationshipsMode {
   
-  @scala.inline
-  def All: `3` = 3.asInstanceOf[`3`]
+  inline def All: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def FromThisObject: `1` = 1.asInstanceOf[`1`]
+  inline def FromThisObject: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ToThisObject: `2` = 2.asInstanceOf[`2`]
+  inline def ToThisObject: `2` = 2.asInstanceOf[`2`]
 }

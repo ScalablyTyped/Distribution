@@ -21,10 +21,8 @@ object mod {
   	console.log(link);
   	```
   	*/
-  @scala.inline
-  def apply(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(text: String, url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("terminal-link", JSImport.Namespace)
   @js.native
@@ -54,10 +52,8 @@ object mod {
   		console.error(link);
   		```
   		*/
-  @scala.inline
-  def stderr(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stderr(text: String, url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stderr(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stderr(text: String, url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -69,23 +65,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFallback(value: (js.Function2[/* text */ String, /* url */ String, String]) | Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: (js.Function2[/* text */ String, /* url */ String, String]) | Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackFunction2(value: (/* text */ String, /* url */ String) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
+      inline def setFallbackFunction2(value: (/* text */ String, /* url */ String) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     }
   }
 }

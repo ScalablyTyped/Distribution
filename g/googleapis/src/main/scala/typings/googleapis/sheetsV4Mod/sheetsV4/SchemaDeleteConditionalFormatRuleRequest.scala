@@ -22,25 +22,19 @@ trait SchemaDeleteConditionalFormatRuleRequest extends StObject {
 }
 object SchemaDeleteConditionalFormatRuleRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteConditionalFormatRuleRequest = {
+  inline def apply(): SchemaDeleteConditionalFormatRuleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteConditionalFormatRuleRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteConditionalFormatRuleRequestMutableBuilder[Self <: SchemaDeleteConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteConditionalFormatRuleRequest](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

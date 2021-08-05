@@ -29,25 +29,19 @@ trait PlusRuntimeBadgeOptions extends StObject {
 }
 object PlusRuntimeBadgeOptions {
   
-  @scala.inline
-  def apply(): PlusRuntimeBadgeOptions = {
+  inline def apply(): PlusRuntimeBadgeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusRuntimeBadgeOptions]
   }
   
-  @scala.inline
-  implicit class PlusRuntimeBadgeOptionsMutableBuilder[Self <: PlusRuntimeBadgeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusRuntimeBadgeOptions](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

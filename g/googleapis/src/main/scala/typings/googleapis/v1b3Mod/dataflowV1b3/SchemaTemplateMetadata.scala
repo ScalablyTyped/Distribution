@@ -26,34 +26,25 @@ trait SchemaTemplateMetadata extends StObject {
 }
 object SchemaTemplateMetadata {
   
-  @scala.inline
-  def apply(): SchemaTemplateMetadata = {
+  inline def apply(): SchemaTemplateMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTemplateMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaTemplateMetadataMutableBuilder[Self <: SchemaTemplateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTemplateMetadata](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[SchemaParameterMetadata]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[SchemaParameterMetadata]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: SchemaParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SchemaParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

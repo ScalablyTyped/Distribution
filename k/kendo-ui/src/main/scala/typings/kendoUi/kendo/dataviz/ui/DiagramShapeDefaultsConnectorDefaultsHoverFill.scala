@@ -12,25 +12,19 @@ trait DiagramShapeDefaultsConnectorDefaultsHoverFill extends StObject {
 }
 object DiagramShapeDefaultsConnectorDefaultsHoverFill {
   
-  @scala.inline
-  def apply(): DiagramShapeDefaultsConnectorDefaultsHoverFill = {
+  inline def apply(): DiagramShapeDefaultsConnectorDefaultsHoverFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramShapeDefaultsConnectorDefaultsHoverFill]
   }
   
-  @scala.inline
-  implicit class DiagramShapeDefaultsConnectorDefaultsHoverFillMutableBuilder[Self <: DiagramShapeDefaultsConnectorDefaultsHoverFill] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShapeDefaultsConnectorDefaultsHoverFill](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

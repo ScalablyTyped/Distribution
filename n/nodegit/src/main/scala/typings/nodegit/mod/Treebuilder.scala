@@ -15,8 +15,6 @@ object Treebuilder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.treeBuilderMod.Treebuilder] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.treeBuilderMod.Treebuilder]]
-  @scala.inline
-  def create(repo: typings.nodegit.repositoryMod.Repository, source: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.treeBuilderMod.Treebuilder] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.treeBuilderMod.Treebuilder]]
+  inline def create(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.treeBuilderMod.Treebuilder] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.treeBuilderMod.Treebuilder]]
+  inline def create(repo: typings.nodegit.repositoryMod.Repository, source: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.treeBuilderMod.Treebuilder] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.treeBuilderMod.Treebuilder]]
 }

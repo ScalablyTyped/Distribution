@@ -11,13 +11,11 @@ object reactCountdownCircleTimerStrings {
   sealed trait round
     extends StObject
        with StrokeLinecapType
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait square
     extends StObject
        with StrokeLinecapType
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  inline def square: square = "square".asInstanceOf[square]
 }

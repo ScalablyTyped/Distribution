@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGMatrix")
 @js.native
-class SVGMatrix protected ()
+/* private */ class SVGMatrix ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGMatrix {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGMatrix_typekey")
   var MSHTMLDotSVGMatrix_typekey: typings.activexMshtml.MSHTML.SVGMatrix = js.native
   

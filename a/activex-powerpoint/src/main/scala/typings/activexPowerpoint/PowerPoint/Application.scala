@@ -130,7 +130,7 @@ trait Application extends StObject {
   
   val Path: String = js.native
   
-  @JSName("PowerPoint.Application_typekey")
+  /* private */ @JSName("PowerPoint.Application_typekey")
   var PowerPointDotApplication_typekey: Application = js.native
   
   val Presentations: typings.activexPowerpoint.PowerPoint.Presentations = js.native

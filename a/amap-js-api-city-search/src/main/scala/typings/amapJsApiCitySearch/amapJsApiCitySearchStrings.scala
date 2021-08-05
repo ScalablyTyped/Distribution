@@ -11,20 +11,17 @@ object amapJsApiCitySearchStrings {
   sealed trait complete
     extends StObject
        with SearchStatus
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait error
     extends StObject
        with SearchStatus
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait no_data
     extends StObject
        with SearchStatus
-  @scala.inline
-  def no_data: no_data = "no_data".asInstanceOf[no_data]
+  inline def no_data: no_data = "no_data".asInstanceOf[no_data]
 }

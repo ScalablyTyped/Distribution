@@ -26,67 +26,47 @@ trait CanvasSize extends StObject {
 }
 object CanvasSize {
   
-  @scala.inline
-  def apply(): CanvasSize = {
+  inline def apply(): CanvasSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasSize]
   }
   
-  @scala.inline
-  implicit class CanvasSizeMutableBuilder[Self <: CanvasSize] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasSize](x: Self) {
     
-    @scala.inline
-    def setCanvasSize(value: Double): Self = StObject.set(x, "canvasSize", value.asInstanceOf[js.Any])
+    inline def setCanvasSize(value: Double): Self = StObject.set(x, "canvasSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasSizeUndefined: Self = StObject.set(x, "canvasSize", js.undefined)
+    inline def setCanvasSizeUndefined: Self = StObject.set(x, "canvasSize", js.undefined)
     
-    @scala.inline
-    def setCells(value: Double): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: Double): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setGlowColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "glowColor", value.asInstanceOf[js.Any])
+    inline def setGlowColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "glowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlowColorUndefined: Self = StObject.set(x, "glowColor", js.undefined)
+    inline def setGlowColorUndefined: Self = StObject.set(x, "glowColor", js.undefined)
     
-    @scala.inline
-    def setGlowWidth(value: Double): Self = StObject.set(x, "glowWidth", value.asInstanceOf[js.Any])
+    inline def setGlowWidth(value: Double): Self = StObject.set(x, "glowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlowWidthUndefined: Self = StObject.set(x, "glowWidth", js.undefined)
+    inline def setGlowWidthUndefined: Self = StObject.set(x, "glowWidth", js.undefined)
     
-    @scala.inline
-    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+    inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
+    inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
-    @scala.inline
-    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+    inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
+    inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
-    @scala.inline
-    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
+    inline def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
+    inline def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
   }
 }

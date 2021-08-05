@@ -25,26 +25,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object LinkOpenToken {
   
-  @scala.inline
-  def apply(href: String, level: Double): LinkOpenToken = {
+  inline def apply(href: String, level: Double): LinkOpenToken = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("link_open")
     __obj.asInstanceOf[LinkOpenToken]
   }
   
-  @scala.inline
-  implicit class LinkOpenTokenMutableBuilder[Self <: LinkOpenToken] (val x: Self) extends AnyVal {
+  extension [Self <: LinkOpenToken](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: link_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: link_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

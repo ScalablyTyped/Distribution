@@ -18,28 +18,21 @@ trait ListSimulationApplicationsResponse extends StObject {
 }
 object ListSimulationApplicationsResponse {
   
-  @scala.inline
-  def apply(): ListSimulationApplicationsResponse = {
+  inline def apply(): ListSimulationApplicationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSimulationApplicationsResponse]
   }
   
-  @scala.inline
-  implicit class ListSimulationApplicationsResponseMutableBuilder[Self <: ListSimulationApplicationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSimulationApplicationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSimulationApplicationSummaries(value: SimulationApplicationSummaries): Self = StObject.set(x, "simulationApplicationSummaries", value.asInstanceOf[js.Any])
+    inline def setSimulationApplicationSummaries(value: SimulationApplicationSummaries): Self = StObject.set(x, "simulationApplicationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulationApplicationSummariesUndefined: Self = StObject.set(x, "simulationApplicationSummaries", js.undefined)
+    inline def setSimulationApplicationSummariesUndefined: Self = StObject.set(x, "simulationApplicationSummaries", js.undefined)
     
-    @scala.inline
-    def setSimulationApplicationSummariesVarargs(value: SimulationApplicationSummary*): Self = StObject.set(x, "simulationApplicationSummaries", js.Array(value :_*))
+    inline def setSimulationApplicationSummariesVarargs(value: SimulationApplicationSummary*): Self = StObject.set(x, "simulationApplicationSummaries", js.Array(value :_*))
   }
 }

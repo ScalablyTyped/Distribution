@@ -37,17 +37,14 @@ object anon {
   }
   object TypeofColor {
     
-    @scala.inline
-    def apply(random: () => Color): TypeofColor = {
+    inline def apply(random: () => Color): TypeofColor = {
       val __obj = js.Dynamic.literal(random = js.Any.fromFunction0(random))
       __obj.asInstanceOf[TypeofColor]
     }
     
-    @scala.inline
-    implicit class TypeofColorMutableBuilder[Self <: TypeofColor] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofColor](x: Self) {
       
-      @scala.inline
-      def setRandom(value: () => Color): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => Color): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }
   }
   
@@ -91,20 +88,16 @@ object anon {
   }
   object TypeofKey {
     
-    @scala.inline
-    def apply(isDown: String => Boolean, modifiers: js.Any): TypeofKey = {
+    inline def apply(isDown: String => Boolean, modifiers: js.Any): TypeofKey = {
       val __obj = js.Dynamic.literal(isDown = js.Any.fromFunction1(isDown), modifiers = modifiers.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofKey]
     }
     
-    @scala.inline
-    implicit class TypeofKeyMutableBuilder[Self <: TypeofKey] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofKey](x: Self) {
       
-      @scala.inline
-      def setIsDown(value: String => Boolean): Self = StObject.set(x, "isDown", js.Any.fromFunction1(value))
+      inline def setIsDown(value: String => Boolean): Self = StObject.set(x, "isDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setModifiers(value: js.Any): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Any): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,17 +111,14 @@ object anon {
   }
   object TypeofPaperScope {
     
-    @scala.inline
-    def apply(get: js.Any => PaperScope): TypeofPaperScope = {
+    inline def apply(get: js.Any => PaperScope): TypeofPaperScope = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[TypeofPaperScope]
     }
     
-    @scala.inline
-    implicit class TypeofPaperScopeMutableBuilder[Self <: TypeofPaperScope] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofPaperScope](x: Self) {
       
-      @scala.inline
-      def setGet(value: js.Any => PaperScope): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Any => PaperScope): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -229,8 +219,7 @@ object anon {
   }
   object TypeofPath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Arc: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, Arc],
       Circle: Instantiable2[/* center */ Point, /* radius */ Double, Circle],
       Ellipse: Instantiable1[/* rectangle */ Rectangle, Ellipse],
@@ -253,23 +242,17 @@ object anon {
       __obj.asInstanceOf[TypeofPath]
     }
     
-    @scala.inline
-    implicit class TypeofPathMutableBuilder[Self <: TypeofPath] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofPath](x: Self) {
       
-      @scala.inline
-      def setArc(value: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, Arc]): Self = StObject.set(x, "Arc", value.asInstanceOf[js.Any])
+      inline def setArc(value: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, Arc]): Self = StObject.set(x, "Arc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircle(value: Instantiable2[/* center */ Point, /* radius */ Double, Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Instantiable2[/* center */ Point, /* radius */ Double, Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipse(value: Instantiable1[/* rectangle */ Rectangle, Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
+      inline def setEllipse(value: Instantiable1[/* rectangle */ Rectangle, Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Instantiable2[/* from */ Point, /* to */ Point, Line]): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Instantiable2[/* from */ Point, /* to */ Point, Line]): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangle(
+      inline def setRectangle(
         value: Instantiable2[
               /* rectangle */ Rectangle, 
               /* radius */ js.UndefOr[Size], 
@@ -277,11 +260,9 @@ object anon {
             ]
       ): Self = StObject.set(x, "Rectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularPolygon(value: Instantiable3[/* center */ Point, /* sides */ Double, /* radius */ Double, RegularPolygon]): Self = StObject.set(x, "RegularPolygon", value.asInstanceOf[js.Any])
+      inline def setRegularPolygon(value: Instantiable3[/* center */ Point, /* sides */ Double, /* radius */ Double, RegularPolygon]): Self = StObject.set(x, "RegularPolygon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar(
+      inline def setStar(
         value: Instantiable4[
               /* center */ Point, 
               /* points */ Double, 
@@ -363,23 +344,18 @@ object anon {
   }
   object TypeofPoint {
     
-    @scala.inline
-    def apply(max: (Point, Point) => Point, min: (Point, Point) => Point, random: () => Point): TypeofPoint = {
+    inline def apply(max: (Point, Point) => Point, min: (Point, Point) => Point, random: () => Point): TypeofPoint = {
       val __obj = js.Dynamic.literal(max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min), random = js.Any.fromFunction0(random))
       __obj.asInstanceOf[TypeofPoint]
     }
     
-    @scala.inline
-    implicit class TypeofPointMutableBuilder[Self <: TypeofPoint] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofPoint](x: Self) {
       
-      @scala.inline
-      def setMax(value: (Point, Point) => Point): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+      inline def setMax(value: (Point, Point) => Point): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMin(value: (Point, Point) => Point): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+      inline def setMin(value: (Point, Point) => Point): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRandom(value: () => Point): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => Point): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }
   }
   
@@ -397,8 +373,7 @@ object anon {
   }
   object TypeofShape {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle],
       Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse],
       Rectangle: Instantiable2[
@@ -411,17 +386,13 @@ object anon {
       __obj.asInstanceOf[TypeofShape]
     }
     
-    @scala.inline
-    implicit class TypeofShapeMutableBuilder[Self <: TypeofShape] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofShape](x: Self) {
       
-      @scala.inline
-      def setCircle(value: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipse(value: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
+      inline def setEllipse(value: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangle(
+      inline def setRectangle(
         value: Instantiable2[
               /* rectangle */ Rectangle, 
               /* radius */ js.UndefOr[Size], 
@@ -462,23 +433,18 @@ object anon {
   }
   object TypeofSize {
     
-    @scala.inline
-    def apply(max: (Size, Size) => Size, min: (Size, Size) => Size, random: () => Size): TypeofSize = {
+    inline def apply(max: (Size, Size) => Size, min: (Size, Size) => Size, random: () => Size): TypeofSize = {
       val __obj = js.Dynamic.literal(max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min), random = js.Any.fromFunction0(random))
       __obj.asInstanceOf[TypeofSize]
     }
     
-    @scala.inline
-    implicit class TypeofSizeMutableBuilder[Self <: TypeofSize] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofSize](x: Self) {
       
-      @scala.inline
-      def setMax(value: (Size, Size) => Size): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+      inline def setMax(value: (Size, Size) => Size): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMin(value: (Size, Size) => Size): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+      inline def setMin(value: (Size, Size) => Size): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRandom(value: () => Size): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => Size): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }
   }
 }

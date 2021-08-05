@@ -18,40 +18,29 @@ trait IPathErrorStats extends StObject {
 }
 object IPathErrorStats {
   
-  @scala.inline
-  def apply(): IPathErrorStats = {
+  inline def apply(): IPathErrorStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPathErrorStats]
   }
   
-  @scala.inline
-  implicit class IPathErrorStatsMutableBuilder[Self <: IPathErrorStats] (val x: Self) extends AnyVal {
+  extension [Self <: IPathErrorStats](x: Self) {
     
-    @scala.inline
-    def setChildren(value: StringDictionary[IPathErrorStats]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: StringDictionary[IPathErrorStats]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenNull: Self = StObject.set(x, "children", null)
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setErrorsCount(value: Double): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
+    inline def setErrorsCount(value: Double): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsCountNull: Self = StObject.set(x, "errorsCount", null)
+    inline def setErrorsCountNull: Self = StObject.set(x, "errorsCount", null)
     
-    @scala.inline
-    def setErrorsCountUndefined: Self = StObject.set(x, "errorsCount", js.undefined)
+    inline def setErrorsCountUndefined: Self = StObject.set(x, "errorsCount", js.undefined)
     
-    @scala.inline
-    def setRequestsWithErrorsCount(value: Double): Self = StObject.set(x, "requestsWithErrorsCount", value.asInstanceOf[js.Any])
+    inline def setRequestsWithErrorsCount(value: Double): Self = StObject.set(x, "requestsWithErrorsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
+    inline def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
     
-    @scala.inline
-    def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
+    inline def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
   }
 }

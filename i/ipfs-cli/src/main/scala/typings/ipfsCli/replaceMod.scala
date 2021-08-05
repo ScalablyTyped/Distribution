@@ -29,6 +29,5 @@ object replaceMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsIsDaemonFileTimeout: File): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsIsDaemonFileTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def handler(hasHasIpfsIsDaemonFileTimeout: File): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsIsDaemonFileTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

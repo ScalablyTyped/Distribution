@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(generator: AsyncIterableIterator[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].apply(generator.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply(generator: AsyncIterableIterator[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].apply(generator.asInstanceOf[js.Any]).asInstanceOf[Readable]
   
   @JSImport("async-stream-generator", JSImport.Namespace)
   @js.native

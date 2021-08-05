@@ -28,40 +28,29 @@ trait DescribeApplicationVersionsMessage extends StObject {
 }
 object DescribeApplicationVersionsMessage {
   
-  @scala.inline
-  def apply(): DescribeApplicationVersionsMessage = {
+  inline def apply(): DescribeApplicationVersionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeApplicationVersionsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeApplicationVersionsMessageMutableBuilder[Self <: DescribeApplicationVersionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicationVersionsMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVersionLabels(value: VersionLabelsList): Self = StObject.set(x, "VersionLabels", value.asInstanceOf[js.Any])
+    inline def setVersionLabels(value: VersionLabelsList): Self = StObject.set(x, "VersionLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionLabelsUndefined: Self = StObject.set(x, "VersionLabels", js.undefined)
+    inline def setVersionLabelsUndefined: Self = StObject.set(x, "VersionLabels", js.undefined)
     
-    @scala.inline
-    def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value :_*))
+    inline def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value :_*))
   }
 }

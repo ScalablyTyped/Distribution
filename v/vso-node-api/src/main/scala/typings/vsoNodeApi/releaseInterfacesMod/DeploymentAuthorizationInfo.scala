@@ -16,8 +16,7 @@ trait DeploymentAuthorizationInfo extends StObject {
 }
 object DeploymentAuthorizationInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizationHeaderFor: AuthorizationHeaderFor,
     resources: js.Array[String],
     tenantId: String,
@@ -27,22 +26,16 @@ object DeploymentAuthorizationInfo {
     __obj.asInstanceOf[DeploymentAuthorizationInfo]
   }
   
-  @scala.inline
-  implicit class DeploymentAuthorizationInfoMutableBuilder[Self <: DeploymentAuthorizationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentAuthorizationInfo](x: Self) {
     
-    @scala.inline
-    def setAuthorizationHeaderFor(value: AuthorizationHeaderFor): Self = StObject.set(x, "authorizationHeaderFor", value.asInstanceOf[js.Any])
+    inline def setAuthorizationHeaderFor(value: AuthorizationHeaderFor): Self = StObject.set(x, "authorizationHeaderFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVstsAccessTokenKey(value: String): Self = StObject.set(x, "vstsAccessTokenKey", value.asInstanceOf[js.Any])
+    inline def setVstsAccessTokenKey(value: String): Self = StObject.set(x, "vstsAccessTokenKey", value.asInstanceOf[js.Any])
   }
 }

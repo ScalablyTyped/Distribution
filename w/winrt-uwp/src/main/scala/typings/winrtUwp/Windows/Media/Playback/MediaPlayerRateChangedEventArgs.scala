@@ -12,16 +12,13 @@ trait MediaPlayerRateChangedEventArgs extends StObject {
 }
 object MediaPlayerRateChangedEventArgs {
   
-  @scala.inline
-  def apply(newRate: Double): MediaPlayerRateChangedEventArgs = {
+  inline def apply(newRate: Double): MediaPlayerRateChangedEventArgs = {
     val __obj = js.Dynamic.literal(newRate = newRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlayerRateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaPlayerRateChangedEventArgsMutableBuilder[Self <: MediaPlayerRateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlayerRateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewRate(value: Double): Self = StObject.set(x, "newRate", value.asInstanceOf[js.Any])
+    inline def setNewRate(value: Double): Self = StObject.set(x, "newRate", value.asInstanceOf[js.Any])
   }
 }

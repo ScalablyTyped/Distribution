@@ -26,8 +26,7 @@ trait LocationPokemon extends StObject {
 }
 object LocationPokemon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     games: js.Array[String],
     location: String,
     max_level: Double,
@@ -39,52 +38,36 @@ object LocationPokemon {
     __obj.asInstanceOf[LocationPokemon]
   }
   
-  @scala.inline
-  implicit class LocationPokemonMutableBuilder[Self <: LocationPokemon] (val x: Self) extends AnyVal {
+  extension [Self <: LocationPokemon](x: Self) {
     
-    @scala.inline
-    def setDay_times(value: js.Array[String]): Self = StObject.set(x, "day_times", value.asInstanceOf[js.Any])
+    inline def setDay_times(value: js.Array[String]): Self = StObject.set(x, "day_times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay_timesUndefined: Self = StObject.set(x, "day_times", js.undefined)
+    inline def setDay_timesUndefined: Self = StObject.set(x, "day_times", js.undefined)
     
-    @scala.inline
-    def setDay_timesVarargs(value: String*): Self = StObject.set(x, "day_times", js.Array(value :_*))
+    inline def setDay_timesVarargs(value: String*): Self = StObject.set(x, "day_times", js.Array(value :_*))
     
-    @scala.inline
-    def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
+    inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_level(value: Double): Self = StObject.set(x, "max_level", value.asInstanceOf[js.Any])
+    inline def setMax_level(value: Double): Self = StObject.set(x, "max_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_level(value: Double): Self = StObject.set(x, "min_level", value.asInstanceOf[js.Any])
+    inline def setMin_level(value: Double): Self = StObject.set(x, "min_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPokemon(value: String): Self = StObject.set(x, "pokemon", value.asInstanceOf[js.Any])
+    inline def setPokemon(value: String): Self = StObject.set(x, "pokemon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRarity(value: String): Self = StObject.set(x, "rarity", value.asInstanceOf[js.Any])
+    inline def setRarity(value: String): Self = StObject.set(x, "rarity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeasons(value: js.Array[String]): Self = StObject.set(x, "seasons", value.asInstanceOf[js.Any])
+    inline def setSeasons(value: js.Array[String]): Self = StObject.set(x, "seasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeasonsUndefined: Self = StObject.set(x, "seasons", js.undefined)
+    inline def setSeasonsUndefined: Self = StObject.set(x, "seasons", js.undefined)
     
-    @scala.inline
-    def setSeasonsVarargs(value: String*): Self = StObject.set(x, "seasons", js.Array(value :_*))
+    inline def setSeasonsVarargs(value: String*): Self = StObject.set(x, "seasons", js.Array(value :_*))
     
-    @scala.inline
-    def setVariation(value: String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
+    inline def setVariation(value: String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariationUndefined: Self = StObject.set(x, "variation", js.undefined)
+    inline def setVariationUndefined: Self = StObject.set(x, "variation", js.undefined)
   }
 }

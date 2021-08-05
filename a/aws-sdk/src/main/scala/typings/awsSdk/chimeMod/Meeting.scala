@@ -28,37 +28,27 @@ trait Meeting extends StObject {
 }
 object Meeting {
   
-  @scala.inline
-  def apply(): Meeting = {
+  inline def apply(): Meeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Meeting]
   }
   
-  @scala.inline
-  implicit class MeetingMutableBuilder[Self <: Meeting] (val x: Self) extends AnyVal {
+  extension [Self <: Meeting](x: Self) {
     
-    @scala.inline
-    def setExternalMeetingId(value: ExternalMeetingIdType): Self = StObject.set(x, "ExternalMeetingId", value.asInstanceOf[js.Any])
+    inline def setExternalMeetingId(value: ExternalMeetingIdType): Self = StObject.set(x, "ExternalMeetingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalMeetingIdUndefined: Self = StObject.set(x, "ExternalMeetingId", js.undefined)
+    inline def setExternalMeetingIdUndefined: Self = StObject.set(x, "ExternalMeetingId", js.undefined)
     
-    @scala.inline
-    def setMediaPlacement(value: MediaPlacement): Self = StObject.set(x, "MediaPlacement", value.asInstanceOf[js.Any])
+    inline def setMediaPlacement(value: MediaPlacement): Self = StObject.set(x, "MediaPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaPlacementUndefined: Self = StObject.set(x, "MediaPlacement", js.undefined)
+    inline def setMediaPlacementUndefined: Self = StObject.set(x, "MediaPlacement", js.undefined)
     
-    @scala.inline
-    def setMediaRegion(value: String): Self = StObject.set(x, "MediaRegion", value.asInstanceOf[js.Any])
+    inline def setMediaRegion(value: String): Self = StObject.set(x, "MediaRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaRegionUndefined: Self = StObject.set(x, "MediaRegion", js.undefined)
+    inline def setMediaRegionUndefined: Self = StObject.set(x, "MediaRegion", js.undefined)
     
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
+    inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingIdUndefined: Self = StObject.set(x, "MeetingId", js.undefined)
+    inline def setMeetingIdUndefined: Self = StObject.set(x, "MeetingId", js.undefined)
   }
 }

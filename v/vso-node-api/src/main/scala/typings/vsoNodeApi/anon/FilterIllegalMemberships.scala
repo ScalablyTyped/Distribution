@@ -12,19 +12,15 @@ trait FilterIllegalMemberships extends StObject {
 }
 object FilterIllegalMemberships {
   
-  @scala.inline
-  def apply(filterIllegalMemberships: scala.Double, none: scala.Double): FilterIllegalMemberships = {
+  inline def apply(filterIllegalMemberships: scala.Double, none: scala.Double): FilterIllegalMemberships = {
     val __obj = js.Dynamic.literal(filterIllegalMemberships = filterIllegalMemberships.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterIllegalMemberships]
   }
   
-  @scala.inline
-  implicit class FilterIllegalMembershipsMutableBuilder[Self <: FilterIllegalMemberships] (val x: Self) extends AnyVal {
+  extension [Self <: FilterIllegalMemberships](x: Self) {
     
-    @scala.inline
-    def setFilterIllegalMemberships(value: scala.Double): Self = StObject.set(x, "filterIllegalMemberships", value.asInstanceOf[js.Any])
+    inline def setFilterIllegalMemberships(value: scala.Double): Self = StObject.set(x, "filterIllegalMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

@@ -61,17 +61,14 @@ object mod extends Shortcut {
     }
     object Humanize {
       
-      @scala.inline
-      def apply(capitalize: Boolean): Humanize = {
+      inline def apply(capitalize: Boolean): Humanize = {
         val __obj = js.Dynamic.literal(capitalize = capitalize.asInstanceOf[js.Any])
         __obj.asInstanceOf[Humanize]
       }
       
-      @scala.inline
-      implicit class HumanizeMutableBuilder[Self <: Humanize] (val x: Self) extends AnyVal {
+      extension [Self <: Humanize](x: Self) {
         
-        @scala.inline
-        def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
+        inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
       }
     }
     
@@ -81,17 +78,14 @@ object mod extends Shortcut {
     }
     object Parameterize {
       
-      @scala.inline
-      def apply(separator: String): Parameterize = {
+      inline def apply(separator: String): Parameterize = {
         val __obj = js.Dynamic.literal(separator = separator.asInstanceOf[js.Any])
         __obj.asInstanceOf[Parameterize]
       }
       
-      @scala.inline
-      implicit class ParameterizeMutableBuilder[Self <: Parameterize] (val x: Self) extends AnyVal {
+      extension [Self <: Parameterize](x: Self) {
         
-        @scala.inline
-        def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+        inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       }
     }
     
@@ -103,20 +97,16 @@ object mod extends Shortcut {
     }
     object Transliterate {
       
-      @scala.inline
-      def apply(locale: String, replacement: String): Transliterate = {
+      inline def apply(locale: String, replacement: String): Transliterate = {
         val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any])
         __obj.asInstanceOf[Transliterate]
       }
       
-      @scala.inline
-      implicit class TransliterateMutableBuilder[Self <: Transliterate] (val x: Self) extends AnyVal {
+      extension [Self <: Transliterate](x: Self) {
         
-        @scala.inline
-        def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+        inline def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
       }
     }
   }

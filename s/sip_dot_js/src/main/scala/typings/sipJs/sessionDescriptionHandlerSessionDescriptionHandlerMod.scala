@@ -40,19 +40,19 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
     ) = this()
     
     /** The data channel. Undefined before created. */
-    var _dataChannel: js.UndefOr[RTCDataChannel] = js.native
+    /* protected */ var _dataChannel: js.UndefOr[RTCDataChannel] = js.native
     
     /** The local media stream. */
-    var _localMediaStream: MediaStream = js.native
+    /* protected */ var _localMediaStream: MediaStream = js.native
     
     /** The peer connection. Undefined after SessionDescriptionHandler.close(). */
-    var _peerConnection: js.UndefOr[RTCPeerConnection] = js.native
+    /* protected */ var _peerConnection: js.UndefOr[RTCPeerConnection] = js.native
     
     /** The peer connection delegate. */
-    var _peerConnectionDelegate: js.UndefOr[PeerConnectionDelegate] = js.native
+    /* protected */ var _peerConnectionDelegate: js.UndefOr[PeerConnectionDelegate] = js.native
     
     /** The remote media stream. */
-    var _remoteMediaStream: MediaStream = js.native
+    /* protected */ var _remoteMediaStream: MediaStream = js.native
     
     /**
       * Applies modifiers to SDP prior to setting the local or remote description.
@@ -105,18 +105,18 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
       */
     /* protected */ def iceGatheringComplete(): Unit = js.native
     
-    var iceGatheringCompletePromise: js.Any = js.native
+    /* private */ var iceGatheringCompletePromise: js.Any = js.native
     
-    var iceGatheringCompleteReject: js.Any = js.native
+    /* private */ var iceGatheringCompleteReject: js.Any = js.native
     
-    var iceGatheringCompleteResolve: js.Any = js.native
+    /* private */ var iceGatheringCompleteResolve: js.Any = js.native
     
-    var iceGatheringCompleteTimeoutId: js.Any = js.native
+    /* private */ var iceGatheringCompleteTimeoutId: js.Any = js.native
     
     /**
       * Initializes the peer connection event handlers
       */
-    var initPeerConnectionEventHandlers: js.Any = js.native
+    /* private */ var initPeerConnectionEventHandlers: js.Any = js.native
     
     /**
       * The local media stream currently being sent.
@@ -133,18 +133,18 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
       */
     def localMediaStream: MediaStream = js.native
     
-    var localMediaStreamConstraints: js.Any = js.native
+    /* private */ var localMediaStreamConstraints: js.Any = js.native
     
     /** Logger. */
-    var logger: Logger = js.native
+    /* protected */ var logger: Logger = js.native
     
     /** Media stream factory. */
     /* protected */ def mediaStreamFactory(constraints: MediaStreamConstraints, sessionDescriptionHandler: SessionDescriptionHandler): js.Promise[MediaStream] = js.native
     /** Media stream factory. */
-    @JSName("mediaStreamFactory")
+    /* protected */ @JSName("mediaStreamFactory")
     var mediaStreamFactory_Original: MediaStreamFactory = js.native
     
-    var onDataChannel: js.Any = js.native
+    /* private */ var onDataChannel: js.Any = js.native
     
     /**
       * The peer connection. Undefined if peer connection has closed.
@@ -190,7 +190,7 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
     def sendDtmf(tones: String, options: Duration): Boolean = js.native
     
     /** Configuration options. */
-    var sessionDescriptionHandlerConfiguration: js.UndefOr[SessionDescriptionHandlerConfiguration] = js.native
+    /* protected */ var sessionDescriptionHandlerConfiguration: js.UndefOr[SessionDescriptionHandlerConfiguration] = js.native
     
     def setDescription(sdp: String, options: SessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
     def setDescription(
@@ -252,13 +252,11 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
     @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler.dispatchAddTrackEvent")
     @js.native
     def dispatchAddTrackEvent: js.Any = js.native
-    @scala.inline
-    def dispatchAddTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
+    inline def dispatchAddTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
     
     @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler.dispatchRemoveTrackEvent")
     @js.native
     def dispatchRemoveTrackEvent: js.Any = js.native
-    @scala.inline
-    def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
+    inline def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
 }

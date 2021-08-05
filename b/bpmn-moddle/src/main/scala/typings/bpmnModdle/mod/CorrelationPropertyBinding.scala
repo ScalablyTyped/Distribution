@@ -14,8 +14,7 @@ trait CorrelationPropertyBinding
 }
 object CorrelationPropertyBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     correlationPropertyRef: CorrelationProperty,
@@ -26,13 +25,10 @@ object CorrelationPropertyBinding {
     __obj.asInstanceOf[CorrelationPropertyBinding]
   }
   
-  @scala.inline
-  implicit class CorrelationPropertyBindingMutableBuilder[Self <: CorrelationPropertyBinding] (val x: Self) extends AnyVal {
+  extension [Self <: CorrelationPropertyBinding](x: Self) {
     
-    @scala.inline
-    def setCorrelationPropertyRef(value: CorrelationProperty): Self = StObject.set(x, "correlationPropertyRef", value.asInstanceOf[js.Any])
+    inline def setCorrelationPropertyRef(value: CorrelationProperty): Self = StObject.set(x, "correlationPropertyRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPath(value: FormalExpression): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
+    inline def setDataPath(value: FormalExpression): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
   }
 }

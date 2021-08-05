@@ -40,8 +40,7 @@ trait XUIElementSettings
 }
 object XUIElementSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getSettings: Boolean => XIndexAccess,
     queryInterface: `type` => js.Any,
@@ -53,16 +52,12 @@ object XUIElementSettings {
     __obj.asInstanceOf[XUIElementSettings]
   }
   
-  @scala.inline
-  implicit class XUIElementSettingsMutableBuilder[Self <: XUIElementSettings] (val x: Self) extends AnyVal {
+  extension [Self <: XUIElementSettings](x: Self) {
     
-    @scala.inline
-    def setGetSettings(value: Boolean => XIndexAccess): Self = StObject.set(x, "getSettings", js.Any.fromFunction1(value))
+    inline def setGetSettings(value: Boolean => XIndexAccess): Self = StObject.set(x, "getSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSettings(value: XIndexAccess => Unit): Self = StObject.set(x, "setSettings", js.Any.fromFunction1(value))
+    inline def setSetSettings(value: XIndexAccess => Unit): Self = StObject.set(x, "setSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateSettings(value: () => Unit): Self = StObject.set(x, "updateSettings", js.Any.fromFunction0(value))
+    inline def setUpdateSettings(value: () => Unit): Self = StObject.set(x, "updateSettings", js.Any.fromFunction0(value))
   }
 }

@@ -13,19 +13,15 @@ trait GeneralCallbackResult extends StObject {
 }
 object GeneralCallbackResult {
   
-  @scala.inline
-  def apply(): GeneralCallbackResult = {
+  inline def apply(): GeneralCallbackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeneralCallbackResult]
   }
   
-  @scala.inline
-  implicit class GeneralCallbackResultMutableBuilder[Self <: GeneralCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait strokeLineCapType extends StObject
 object strokeLineCapType {
   
-  @scala.inline
-  def butt: typings.navermaps.navermapsStrings.butt = "butt".asInstanceOf[typings.navermaps.navermapsStrings.butt]
+  inline def butt: typings.navermaps.navermapsStrings.butt = "butt".asInstanceOf[typings.navermaps.navermapsStrings.butt]
   
-  @scala.inline
-  def round: typings.navermaps.navermapsStrings.round = "round".asInstanceOf[typings.navermaps.navermapsStrings.round]
+  inline def round: typings.navermaps.navermapsStrings.round = "round".asInstanceOf[typings.navermaps.navermapsStrings.round]
   
-  @scala.inline
-  def square: typings.navermaps.navermapsStrings.square = "square".asInstanceOf[typings.navermaps.navermapsStrings.square]
+  inline def square: typings.navermaps.navermapsStrings.square = "square".asInstanceOf[typings.navermaps.navermapsStrings.square]
 }

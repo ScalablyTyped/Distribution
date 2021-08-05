@@ -13,19 +13,15 @@ trait TranslateY extends StObject {
 }
 object TranslateY {
   
-  @scala.inline
-  def apply(translateX: AnimatedInterpolation, translateY: Unit): TranslateY = {
+  inline def apply(translateX: AnimatedInterpolation, translateY: Unit): TranslateY = {
     val __obj = js.Dynamic.literal(translateX = translateX.asInstanceOf[js.Any], translateY = translateY.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateY]
   }
   
-  @scala.inline
-  implicit class TranslateYMutableBuilder[Self <: TranslateY] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateY](x: Self) {
     
-    @scala.inline
-    def setTranslateX(value: AnimatedInterpolation): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+    inline def setTranslateX(value: AnimatedInterpolation): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateY(value: Unit): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: Unit): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
   }
 }

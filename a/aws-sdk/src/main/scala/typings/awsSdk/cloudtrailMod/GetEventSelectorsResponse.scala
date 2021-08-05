@@ -18,28 +18,21 @@ trait GetEventSelectorsResponse extends StObject {
 }
 object GetEventSelectorsResponse {
   
-  @scala.inline
-  def apply(): GetEventSelectorsResponse = {
+  inline def apply(): GetEventSelectorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEventSelectorsResponse]
   }
   
-  @scala.inline
-  implicit class GetEventSelectorsResponseMutableBuilder[Self <: GetEventSelectorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventSelectorsResponse](x: Self) {
     
-    @scala.inline
-    def setEventSelectors(value: EventSelectors): Self = StObject.set(x, "EventSelectors", value.asInstanceOf[js.Any])
+    inline def setEventSelectors(value: EventSelectors): Self = StObject.set(x, "EventSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSelectorsUndefined: Self = StObject.set(x, "EventSelectors", js.undefined)
+    inline def setEventSelectorsUndefined: Self = StObject.set(x, "EventSelectors", js.undefined)
     
-    @scala.inline
-    def setEventSelectorsVarargs(value: EventSelector*): Self = StObject.set(x, "EventSelectors", js.Array(value :_*))
+    inline def setEventSelectorsVarargs(value: EventSelector*): Self = StObject.set(x, "EventSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailARN(value: String): Self = StObject.set(x, "TrailARN", value.asInstanceOf[js.Any])
+    inline def setTrailARN(value: String): Self = StObject.set(x, "TrailARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailARNUndefined: Self = StObject.set(x, "TrailARN", js.undefined)
+    inline def setTrailARNUndefined: Self = StObject.set(x, "TrailARN", js.undefined)
   }
 }

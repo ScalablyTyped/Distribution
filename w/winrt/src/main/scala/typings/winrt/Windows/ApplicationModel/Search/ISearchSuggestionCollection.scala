@@ -26,8 +26,7 @@ trait ISearchSuggestionCollection extends StObject {
 }
 object ISearchSuggestionCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendQuerySuggestion: String => Unit,
     appendQuerySuggestions: IIterable[String] => Unit,
     appendResultSuggestion: (String, String, String, IRandomAccessStreamReference, String) => Unit,
@@ -38,22 +37,16 @@ object ISearchSuggestionCollection {
     __obj.asInstanceOf[ISearchSuggestionCollection]
   }
   
-  @scala.inline
-  implicit class ISearchSuggestionCollectionMutableBuilder[Self <: ISearchSuggestionCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchSuggestionCollection](x: Self) {
     
-    @scala.inline
-    def setAppendQuerySuggestion(value: String => Unit): Self = StObject.set(x, "appendQuerySuggestion", js.Any.fromFunction1(value))
+    inline def setAppendQuerySuggestion(value: String => Unit): Self = StObject.set(x, "appendQuerySuggestion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendQuerySuggestions(value: IIterable[String] => Unit): Self = StObject.set(x, "appendQuerySuggestions", js.Any.fromFunction1(value))
+    inline def setAppendQuerySuggestions(value: IIterable[String] => Unit): Self = StObject.set(x, "appendQuerySuggestions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendResultSuggestion(value: (String, String, String, IRandomAccessStreamReference, String) => Unit): Self = StObject.set(x, "appendResultSuggestion", js.Any.fromFunction5(value))
+    inline def setAppendResultSuggestion(value: (String, String, String, IRandomAccessStreamReference, String) => Unit): Self = StObject.set(x, "appendResultSuggestion", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAppendSearchSeparator(value: String => Unit): Self = StObject.set(x, "appendSearchSeparator", js.Any.fromFunction1(value))
+    inline def setAppendSearchSeparator(value: String => Unit): Self = StObject.set(x, "appendSearchSeparator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

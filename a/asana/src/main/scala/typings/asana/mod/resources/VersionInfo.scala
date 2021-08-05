@@ -18,28 +18,21 @@ trait VersionInfo extends StObject {
 }
 object VersionInfo {
   
-  @scala.inline
-  def apply(language: String, language_version: String, os: String, os_version: String, version: String): VersionInfo = {
+  inline def apply(language: String, language_version: String, os: String, os_version: String, version: String): VersionInfo = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], language_version = language_version.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], os_version = os_version.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionInfo]
   }
   
-  @scala.inline
-  implicit class VersionInfoMutableBuilder[Self <: VersionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VersionInfo](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage_version(value: String): Self = StObject.set(x, "language_version", value.asInstanceOf[js.Any])
+    inline def setLanguage_version(value: String): Self = StObject.set(x, "language_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs_version(value: String): Self = StObject.set(x, "os_version", value.asInstanceOf[js.Any])
+    inline def setOs_version(value: String): Self = StObject.set(x, "os_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

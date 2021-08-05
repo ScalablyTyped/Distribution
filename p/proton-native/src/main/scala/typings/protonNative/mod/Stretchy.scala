@@ -19,19 +19,15 @@ trait Stretchy extends StObject {
 }
 object Stretchy {
   
-  @scala.inline
-  def apply(): Stretchy = {
+  inline def apply(): Stretchy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stretchy]
   }
   
-  @scala.inline
-  implicit class StretchyMutableBuilder[Self <: Stretchy] (val x: Self) extends AnyVal {
+  extension [Self <: Stretchy](x: Self) {
     
-    @scala.inline
-    def setStretchy(value: Boolean): Self = StObject.set(x, "stretchy", value.asInstanceOf[js.Any])
+    inline def setStretchy(value: Boolean): Self = StObject.set(x, "stretchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchyUndefined: Self = StObject.set(x, "stretchy", js.undefined)
+    inline def setStretchyUndefined: Self = StObject.set(x, "stretchy", js.undefined)
   }
 }

@@ -31,20 +31,16 @@ object popconfirmMod extends Shortcut {
   }
   object PopconfirmLocale {
     
-    @scala.inline
-    def apply(cancelText: String, okText: String): PopconfirmLocale = {
+    inline def apply(cancelText: String, okText: String): PopconfirmLocale = {
       val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopconfirmLocale]
     }
     
-    @scala.inline
-    implicit class PopconfirmLocaleMutableBuilder[Self <: PopconfirmLocale] (val x: Self) extends AnyVal {
+    extension [Self <: PopconfirmLocale](x: Self) {
       
-      @scala.inline
-      def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+      inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,85 +83,60 @@ object popconfirmMod extends Shortcut {
   }
   object PopconfirmProps {
     
-    @scala.inline
-    def apply(): PopconfirmProps = {
+    inline def apply(): PopconfirmProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopconfirmProps]
     }
     
-    @scala.inline
-    implicit class PopconfirmPropsMutableBuilder[Self <: PopconfirmProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopconfirmProps](x: Self) {
       
-      @scala.inline
-      def setCancelButtonProps(value: NativeButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
+      inline def setCancelButtonProps(value: NativeButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
+      inline def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
       
-      @scala.inline
-      def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+      inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setOkButtonProps(value: NativeButtonProps): Self = StObject.set(x, "okButtonProps", value.asInstanceOf[js.Any])
+      inline def setOkButtonProps(value: NativeButtonProps): Self = StObject.set(x, "okButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkButtonPropsUndefined: Self = StObject.set(x, "okButtonProps", js.undefined)
+      inline def setOkButtonPropsUndefined: Self = StObject.set(x, "okButtonProps", js.undefined)
       
-      @scala.inline
-      def setOkText(value: ReactNode): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+      inline def setOkText(value: ReactNode): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+      inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
       
-      @scala.inline
-      def setOkType(value: LegacyButtonType): Self = StObject.set(x, "okType", value.asInstanceOf[js.Any])
+      inline def setOkType(value: LegacyButtonType): Self = StObject.set(x, "okType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkTypeUndefined: Self = StObject.set(x, "okType", js.undefined)
+      inline def setOkTypeUndefined: Self = StObject.set(x, "okType", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+      inline def setOnConfirm(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
-      @scala.inline
-      def setOnVisibleChange(
+      inline def setOnVisibleChange(
         value: (/* visible */ Boolean, /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]]) => Unit
       ): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
+      inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode | RenderFunction): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode | RenderFunction): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFunction0(value: () => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitleFunction0(value: () => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -175,20 +146,16 @@ object popconfirmMod extends Shortcut {
   }
   object PopconfirmState {
     
-    @scala.inline
-    def apply(): PopconfirmState = {
+    inline def apply(): PopconfirmState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopconfirmState]
     }
     
-    @scala.inline
-    implicit class PopconfirmStateMutableBuilder[Self <: PopconfirmState] (val x: Self) extends AnyVal {
+    extension [Self <: PopconfirmState](x: Self) {
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

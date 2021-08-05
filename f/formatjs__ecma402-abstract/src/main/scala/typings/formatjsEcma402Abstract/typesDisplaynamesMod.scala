@@ -28,20 +28,16 @@ object typesDisplaynamesMod {
   }
   object DisplayNamesData {
     
-    @scala.inline
-    def apply(patterns: Locale, types: Region): DisplayNamesData = {
+    inline def apply(patterns: Locale, types: Region): DisplayNamesData = {
       val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesData]
     }
     
-    @scala.inline
-    implicit class DisplayNamesDataMutableBuilder[Self <: DisplayNamesData] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayNamesData](x: Self) {
       
-      @scala.inline
-      def setPatterns(value: Locale): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: Locale): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: Region): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: Region): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     }
   }
   

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlStart extends StObject
 object htmlStart {
   
-  @scala.inline
-  def htmlStart_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlStart_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def htmlStartfileopen: `0` = 0.asInstanceOf[`0`]
+  inline def htmlStartfileopen: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlStartmouseover: `1` = 1.asInstanceOf[`1`]
+  inline def htmlStartmouseover: `1` = 1.asInstanceOf[`1`]
 }

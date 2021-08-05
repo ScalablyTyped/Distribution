@@ -51,14 +51,10 @@ object dataCatalogEncryptionSettingsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DataCatalogEncryptionSettingsState): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
+    inline def get(name: String, id: Input[ID], state: DataCatalogEncryptionSettingsState): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
+    inline def get(
       name: String,
       id: Input[ID],
       state: DataCatalogEncryptionSettingsState,
@@ -69,8 +65,7 @@ object dataCatalogEncryptionSettingsMod {
       * Returns true if the given object is an instance of DataCatalogEncryptionSettings.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean]
   }
   
   trait DataCatalogEncryptionSettingsArgs extends StObject {
@@ -89,8 +84,7 @@ object dataCatalogEncryptionSettingsMod {
   }
   object DataCatalogEncryptionSettingsArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataCatalogEncryptionSettings: Input[
           typings.pulumiAws.inputMod.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings
         ]
@@ -99,17 +93,13 @@ object dataCatalogEncryptionSettingsMod {
       __obj.asInstanceOf[DataCatalogEncryptionSettingsArgs]
     }
     
-    @scala.inline
-    implicit class DataCatalogEncryptionSettingsArgsMutableBuilder[Self <: DataCatalogEncryptionSettingsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DataCatalogEncryptionSettingsArgs](x: Self) {
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setDataCatalogEncryptionSettings(
+      inline def setDataCatalogEncryptionSettings(
         value: Input[
               typings.pulumiAws.inputMod.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings
             ]
@@ -135,30 +125,24 @@ object dataCatalogEncryptionSettingsMod {
   }
   object DataCatalogEncryptionSettingsState {
     
-    @scala.inline
-    def apply(): DataCatalogEncryptionSettingsState = {
+    inline def apply(): DataCatalogEncryptionSettingsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataCatalogEncryptionSettingsState]
     }
     
-    @scala.inline
-    implicit class DataCatalogEncryptionSettingsStateMutableBuilder[Self <: DataCatalogEncryptionSettingsState] (val x: Self) extends AnyVal {
+    extension [Self <: DataCatalogEncryptionSettingsState](x: Self) {
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setDataCatalogEncryptionSettings(
+      inline def setDataCatalogEncryptionSettings(
         value: Input[
               typings.pulumiAws.inputMod.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings
             ]
       ): Self = StObject.set(x, "dataCatalogEncryptionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataCatalogEncryptionSettingsUndefined: Self = StObject.set(x, "dataCatalogEncryptionSettings", js.undefined)
+      inline def setDataCatalogEncryptionSettingsUndefined: Self = StObject.set(x, "dataCatalogEncryptionSettings", js.undefined)
     }
   }
 }

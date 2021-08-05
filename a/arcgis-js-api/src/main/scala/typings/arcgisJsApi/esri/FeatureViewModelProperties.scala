@@ -43,43 +43,31 @@ trait FeatureViewModelProperties extends StObject {
 }
 object FeatureViewModelProperties {
   
-  @scala.inline
-  def apply(): FeatureViewModelProperties = {
+  inline def apply(): FeatureViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureViewModelProperties]
   }
   
-  @scala.inline
-  implicit class FeatureViewModelPropertiesMutableBuilder[Self <: FeatureViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setDefaultPopupTemplateEnabled(value: Boolean): Self = StObject.set(x, "defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
+    inline def setDefaultPopupTemplateEnabled(value: Boolean): Self = StObject.set(x, "defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPopupTemplateEnabledUndefined: Self = StObject.set(x, "defaultPopupTemplateEnabled", js.undefined)
+    inline def setDefaultPopupTemplateEnabledUndefined: Self = StObject.set(x, "defaultPopupTemplateEnabled", js.undefined)
     
-    @scala.inline
-    def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
-    @scala.inline
-    def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

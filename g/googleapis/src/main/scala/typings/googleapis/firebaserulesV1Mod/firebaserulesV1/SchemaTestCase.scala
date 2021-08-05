@@ -50,40 +50,29 @@ trait SchemaTestCase extends StObject {
 }
 object SchemaTestCase {
   
-  @scala.inline
-  def apply(): SchemaTestCase = {
+  inline def apply(): SchemaTestCase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestCase]
   }
   
-  @scala.inline
-  implicit class SchemaTestCaseMutableBuilder[Self <: SchemaTestCase] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestCase](x: Self) {
     
-    @scala.inline
-    def setExpectation(value: String): Self = StObject.set(x, "expectation", value.asInstanceOf[js.Any])
+    inline def setExpectation(value: String): Self = StObject.set(x, "expectation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectationUndefined: Self = StObject.set(x, "expectation", js.undefined)
+    inline def setExpectationUndefined: Self = StObject.set(x, "expectation", js.undefined)
     
-    @scala.inline
-    def setFunctionMocks(value: js.Array[SchemaFunctionMock]): Self = StObject.set(x, "functionMocks", value.asInstanceOf[js.Any])
+    inline def setFunctionMocks(value: js.Array[SchemaFunctionMock]): Self = StObject.set(x, "functionMocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
+    inline def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
     
-    @scala.inline
-    def setFunctionMocksVarargs(value: SchemaFunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
+    inline def setFunctionMocksVarargs(value: SchemaFunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
     
-    @scala.inline
-    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrderByDirection extends StObject
 object OrderByDirection {
   
-  @scala.inline
-  def asc: typings.googleCloudFirestore.googleCloudFirestoreStrings.asc = "asc".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.asc]
+  inline def asc: typings.googleCloudFirestore.googleCloudFirestoreStrings.asc = "asc".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.asc]
   
-  @scala.inline
-  def desc: typings.googleCloudFirestore.googleCloudFirestoreStrings.desc = "desc".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.desc]
+  inline def desc: typings.googleCloudFirestore.googleCloudFirestoreStrings.desc = "desc".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.desc]
 }

@@ -17,23 +17,18 @@ trait ReturnStatement
 }
 object ReturnStatement {
   
-  @scala.inline
-  def apply(loc: SourceLocation, returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): ReturnStatement = {
+  inline def apply(loc: SourceLocation, returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): ReturnStatement = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], returns = returns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(26)
     __obj.asInstanceOf[ReturnStatement]
   }
   
-  @scala.inline
-  implicit class ReturnStatementMutableBuilder[Self <: ReturnStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnStatement](x: Self) {
     
-    @scala.inline
-    def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+    inline def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `26`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `26`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -28,49 +28,35 @@ trait PluginObject extends StObject {
 }
 object PluginObject {
   
-  @scala.inline
-  def apply(): PluginObject = {
+  inline def apply(): PluginObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PluginObject]
   }
   
-  @scala.inline
-  implicit class PluginObjectMutableBuilder[Self <: PluginObject] (val x: Self) extends AnyVal {
+  extension [Self <: PluginObject](x: Self) {
     
-    @scala.inline
-    def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMerge(value: js.Array[String]): Self = StObject.set(x, "defaultMerge", value.asInstanceOf[js.Any])
+    inline def setDefaultMerge(value: js.Array[String]): Self = StObject.set(x, "defaultMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMergeUndefined: Self = StObject.set(x, "defaultMerge", js.undefined)
+    inline def setDefaultMergeUndefined: Self = StObject.set(x, "defaultMerge", js.undefined)
     
-    @scala.inline
-    def setDefaultMergeVarargs(value: String*): Self = StObject.set(x, "defaultMerge", js.Array(value :_*))
+    inline def setDefaultMergeVarargs(value: String*): Self = StObject.set(x, "defaultMerge", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
     
-    @scala.inline
-    def setGlobal(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    @scala.inline
-    def setGlobalVarargs(value: PluginObjectItem*): Self = StObject.set(x, "global", js.Array(value :_*))
+    inline def setGlobalVarargs(value: PluginObjectItem*): Self = StObject.set(x, "global", js.Array(value :_*))
     
-    @scala.inline
-    def setScene(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
-    @scala.inline
-    def setSceneVarargs(value: PluginObjectItem*): Self = StObject.set(x, "scene", js.Array(value :_*))
+    inline def setSceneVarargs(value: PluginObjectItem*): Self = StObject.set(x, "scene", js.Array(value :_*))
   }
 }

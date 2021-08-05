@@ -23,31 +23,23 @@ trait PhysicalTable extends StObject {
 }
 object PhysicalTable {
   
-  @scala.inline
-  def apply(): PhysicalTable = {
+  inline def apply(): PhysicalTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhysicalTable]
   }
   
-  @scala.inline
-  implicit class PhysicalTableMutableBuilder[Self <: PhysicalTable] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicalTable](x: Self) {
     
-    @scala.inline
-    def setCustomSql(value: CustomSql): Self = StObject.set(x, "CustomSql", value.asInstanceOf[js.Any])
+    inline def setCustomSql(value: CustomSql): Self = StObject.set(x, "CustomSql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSqlUndefined: Self = StObject.set(x, "CustomSql", js.undefined)
+    inline def setCustomSqlUndefined: Self = StObject.set(x, "CustomSql", js.undefined)
     
-    @scala.inline
-    def setRelationalTable(value: RelationalTable): Self = StObject.set(x, "RelationalTable", value.asInstanceOf[js.Any])
+    inline def setRelationalTable(value: RelationalTable): Self = StObject.set(x, "RelationalTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalTableUndefined: Self = StObject.set(x, "RelationalTable", js.undefined)
+    inline def setRelationalTableUndefined: Self = StObject.set(x, "RelationalTable", js.undefined)
     
-    @scala.inline
-    def setS3Source(value: S3Source): Self = StObject.set(x, "S3Source", value.asInstanceOf[js.Any])
+    inline def setS3Source(value: S3Source): Self = StObject.set(x, "S3Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3SourceUndefined: Self = StObject.set(x, "S3Source", js.undefined)
+    inline def setS3SourceUndefined: Self = StObject.set(x, "S3Source", js.undefined)
   }
 }

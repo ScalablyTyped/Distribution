@@ -12,19 +12,15 @@ trait ViewTransitionStartEvent
 }
 object ViewTransitionStartEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: View): ViewTransitionStartEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: View): ViewTransitionStartEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewTransitionStartEvent]
   }
   
-  @scala.inline
-  implicit class ViewTransitionStartEventMutableBuilder[Self <: ViewTransitionStartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ViewTransitionStartEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

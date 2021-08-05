@@ -24,20 +24,16 @@ object tableToolbarMod extends Shortcut {
   }
   object TableToolbarProps {
     
-    @scala.inline
-    def apply(): TableToolbarProps = {
+    inline def apply(): TableToolbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableToolbarProps]
     }
     
-    @scala.inline
-    implicit class TableToolbarPropsMutableBuilder[Self <: TableToolbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableToolbarProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: normal | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: normal | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

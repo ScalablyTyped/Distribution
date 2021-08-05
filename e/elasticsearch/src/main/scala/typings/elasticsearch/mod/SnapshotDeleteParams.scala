@@ -16,25 +16,19 @@ trait SnapshotDeleteParams
 }
 object SnapshotDeleteParams {
   
-  @scala.inline
-  def apply(repository: String, snapshot: String): SnapshotDeleteParams = {
+  inline def apply(repository: String, snapshot: String): SnapshotDeleteParams = {
     val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotDeleteParams]
   }
   
-  @scala.inline
-  implicit class SnapshotDeleteParamsMutableBuilder[Self <: SnapshotDeleteParams] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotDeleteParams](x: Self) {
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

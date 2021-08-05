@@ -18,22 +18,17 @@ trait DeleteDocumentRequest extends StObject {
 }
 object DeleteDocumentRequest {
   
-  @scala.inline
-  def apply(DocumentId: ResourceIdType): DeleteDocumentRequest = {
+  inline def apply(DocumentId: ResourceIdType): DeleteDocumentRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentRequestMutableBuilder[Self <: DeleteDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
   }
 }

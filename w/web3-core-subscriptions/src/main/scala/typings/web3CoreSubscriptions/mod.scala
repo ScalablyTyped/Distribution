@@ -77,8 +77,7 @@ object mod {
   }
   object SubscriptionModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inputFormatter: js.Array[js.Function0[Unit]],
       outputFormatter: () => Unit,
       params: Double,
@@ -89,26 +88,19 @@ object mod {
       __obj.asInstanceOf[SubscriptionModel]
     }
     
-    @scala.inline
-    implicit class SubscriptionModelMutableBuilder[Self <: SubscriptionModel] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionModel](x: Self) {
       
-      @scala.inline
-      def setInputFormatter(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "inputFormatter", value.asInstanceOf[js.Any])
+      inline def setInputFormatter(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "inputFormatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFormatterVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "inputFormatter", js.Array(value :_*))
+      inline def setInputFormatterVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "inputFormatter", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputFormatter(value: () => Unit): Self = StObject.set(x, "outputFormatter", js.Any.fromFunction0(value))
+      inline def setOutputFormatter(value: () => Unit): Self = StObject.set(x, "outputFormatter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParams(value: Double): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Double): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionHandler(value: () => Unit): Self = StObject.set(x, "subscriptionHandler", js.Any.fromFunction0(value))
+      inline def setSubscriptionHandler(value: () => Unit): Self = StObject.set(x, "subscriptionHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubscriptionName(value: String): Self = StObject.set(x, "subscriptionName", value.asInstanceOf[js.Any])
+      inline def setSubscriptionName(value: String): Self = StObject.set(x, "subscriptionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,24 +114,19 @@ object mod {
   }
   object SubscriptionOptions {
     
-    @scala.inline
-    def apply(requestManager: js.Any, subscription: String, `type`: String): SubscriptionOptions = {
+    inline def apply(requestManager: js.Any, subscription: String, `type`: String): SubscriptionOptions = {
       val __obj = js.Dynamic.literal(requestManager = requestManager.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    @scala.inline
-    implicit class SubscriptionOptionsMutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionOptions](x: Self) {
       
-      @scala.inline
-      def setRequestManager(value: js.Any): Self = StObject.set(x, "requestManager", value.asInstanceOf[js.Any])
+      inline def setRequestManager(value: js.Any): Self = StObject.set(x, "requestManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,24 +142,19 @@ object mod {
   }
   object SubscriptionsOptions {
     
-    @scala.inline
-    def apply(name: String, subscriptions: SubscriptionsModel, `type`: String): SubscriptionsOptions = {
+    inline def apply(name: String, subscriptions: SubscriptionsModel, `type`: String): SubscriptionsOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionsOptions]
     }
     
-    @scala.inline
-    implicit class SubscriptionsOptionsMutableBuilder[Self <: SubscriptionsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionsOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptions(value: SubscriptionsModel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: SubscriptionsModel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

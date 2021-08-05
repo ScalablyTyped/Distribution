@@ -43,33 +43,25 @@ object mod extends Shortcut {
   }
   object CollapsedFieldProps {
     
-    @scala.inline
-    def apply(namespace: js.Array[String | Null], src: js.Object, `type`: array | `object`): CollapsedFieldProps = {
+    inline def apply(namespace: js.Array[String | Null], src: js.Object, `type`: array | `object`): CollapsedFieldProps = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], name = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapsedFieldProps]
     }
     
-    @scala.inline
-    implicit class CollapsedFieldPropsMutableBuilder[Self <: CollapsedFieldProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapsedFieldProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
       
-      @scala.inline
-      def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: array | `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: array | `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,47 +99,34 @@ object mod extends Shortcut {
   }
   object InteractionProps {
     
-    @scala.inline
-    def apply(existing_src: js.Object, namespace: js.Array[String | Null], updated_src: js.Object): InteractionProps = {
+    inline def apply(existing_src: js.Object, namespace: js.Array[String | Null], updated_src: js.Object): InteractionProps = {
       val __obj = js.Dynamic.literal(existing_src = existing_src.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], updated_src = updated_src.asInstanceOf[js.Any], existing_value = null, name = null)
       __obj.asInstanceOf[InteractionProps]
     }
     
-    @scala.inline
-    implicit class InteractionPropsMutableBuilder[Self <: InteractionProps] (val x: Self) extends AnyVal {
+    extension [Self <: InteractionProps](x: Self) {
       
-      @scala.inline
-      def setExisting_src(value: js.Object): Self = StObject.set(x, "existing_src", value.asInstanceOf[js.Any])
+      inline def setExisting_src(value: js.Object): Self = StObject.set(x, "existing_src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExisting_value(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "existing_value", value.asInstanceOf[js.Any])
+      inline def setExisting_value(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "existing_value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExisting_valueNull: Self = StObject.set(x, "existing_value", null)
+      inline def setExisting_valueNull: Self = StObject.set(x, "existing_value", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
       
-      @scala.inline
-      def setNew_value(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "new_value", value.asInstanceOf[js.Any])
+      inline def setNew_value(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "new_value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNew_valueNull: Self = StObject.set(x, "new_value", null)
+      inline def setNew_valueNull: Self = StObject.set(x, "new_value", null)
       
-      @scala.inline
-      def setNew_valueUndefined: Self = StObject.set(x, "new_value", js.undefined)
+      inline def setNew_valueUndefined: Self = StObject.set(x, "new_value", js.undefined)
       
-      @scala.inline
-      def setUpdated_src(value: js.Object): Self = StObject.set(x, "updated_src", value.asInstanceOf[js.Any])
+      inline def setUpdated_src(value: js.Object): Self = StObject.set(x, "updated_src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,29 +149,22 @@ object mod extends Shortcut {
   }
   object OnCopyProps {
     
-    @scala.inline
-    def apply(namespace: js.Array[String | Null], src: js.Object): OnCopyProps = {
+    inline def apply(namespace: js.Array[String | Null], src: js.Object): OnCopyProps = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[OnCopyProps]
     }
     
-    @scala.inline
-    implicit class OnCopyPropsMutableBuilder[Self <: OnCopyProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnCopyProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
       
-      @scala.inline
-      def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,36 +193,27 @@ object mod extends Shortcut {
   }
   object OnSelectProps {
     
-    @scala.inline
-    def apply(namespace: js.Array[String | Null], `type`: String): OnSelectProps = {
+    inline def apply(namespace: js.Array[String | Null], `type`: String): OnSelectProps = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], name = null, value = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnSelectProps]
     }
     
-    @scala.inline
-    implicit class OnSelectPropsMutableBuilder[Self <: OnSelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnSelectProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: js.Array[String | Null]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: (String | Null)*): Self = StObject.set(x, "namespace", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Object | String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
   
@@ -412,158 +375,108 @@ object mod extends Shortcut {
   }
   object ReactJsonViewProps {
     
-    @scala.inline
-    def apply(src: js.Object): ReactJsonViewProps = {
+    inline def apply(src: js.Object): ReactJsonViewProps = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactJsonViewProps]
     }
     
-    @scala.inline
-    implicit class ReactJsonViewPropsMutableBuilder[Self <: ReactJsonViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactJsonViewProps](x: Self) {
       
-      @scala.inline
-      def setCollapseStringsAfterLength(value: Double | `false`): Self = StObject.set(x, "collapseStringsAfterLength", value.asInstanceOf[js.Any])
+      inline def setCollapseStringsAfterLength(value: Double | `false`): Self = StObject.set(x, "collapseStringsAfterLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseStringsAfterLengthUndefined: Self = StObject.set(x, "collapseStringsAfterLength", js.undefined)
+      inline def setCollapseStringsAfterLengthUndefined: Self = StObject.set(x, "collapseStringsAfterLength", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean | Double): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean | Double): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: TypeDefaultValue | js.Array[TypeDefaultValue]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: TypeDefaultValue | js.Array[TypeDefaultValue]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: TypeDefaultValue*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: TypeDefaultValue*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDisplayDataTypes(value: Boolean): Self = StObject.set(x, "displayDataTypes", value.asInstanceOf[js.Any])
+      inline def setDisplayDataTypes(value: Boolean): Self = StObject.set(x, "displayDataTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayDataTypesUndefined: Self = StObject.set(x, "displayDataTypes", js.undefined)
+      inline def setDisplayDataTypesUndefined: Self = StObject.set(x, "displayDataTypes", js.undefined)
       
-      @scala.inline
-      def setDisplayObjectSize(value: Boolean): Self = StObject.set(x, "displayObjectSize", value.asInstanceOf[js.Any])
+      inline def setDisplayObjectSize(value: Boolean): Self = StObject.set(x, "displayObjectSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayObjectSizeUndefined: Self = StObject.set(x, "displayObjectSize", js.undefined)
+      inline def setDisplayObjectSizeUndefined: Self = StObject.set(x, "displayObjectSize", js.undefined)
       
-      @scala.inline
-      def setEnableClipboard(value: Boolean | (js.Function1[/* copy */ OnCopyProps, Unit])): Self = StObject.set(x, "enableClipboard", value.asInstanceOf[js.Any])
+      inline def setEnableClipboard(value: Boolean | (js.Function1[/* copy */ OnCopyProps, Unit])): Self = StObject.set(x, "enableClipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableClipboardFunction1(value: /* copy */ OnCopyProps => Unit): Self = StObject.set(x, "enableClipboard", js.Any.fromFunction1(value))
+      inline def setEnableClipboardFunction1(value: /* copy */ OnCopyProps => Unit): Self = StObject.set(x, "enableClipboard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnableClipboardUndefined: Self = StObject.set(x, "enableClipboard", js.undefined)
+      inline def setEnableClipboardUndefined: Self = StObject.set(x, "enableClipboard", js.undefined)
       
-      @scala.inline
-      def setGroupArraysAfterLength(value: Double): Self = StObject.set(x, "groupArraysAfterLength", value.asInstanceOf[js.Any])
+      inline def setGroupArraysAfterLength(value: Double): Self = StObject.set(x, "groupArraysAfterLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupArraysAfterLengthUndefined: Self = StObject.set(x, "groupArraysAfterLength", js.undefined)
+      inline def setGroupArraysAfterLengthUndefined: Self = StObject.set(x, "groupArraysAfterLength", js.undefined)
       
-      @scala.inline
-      def setIconStyle(value: circle | triangle | square): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+      inline def setIconStyle(value: circle | triangle | square): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+      inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
-      @scala.inline
-      def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
+      inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
+      inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
       
-      @scala.inline
-      def setName(value: String | `false`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | `false`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnAdd(value: (js.Function1[/* add */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
+      inline def setOnAdd(value: (js.Function1[/* add */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAddFunction1(value: /* add */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAddFunction1(value: /* add */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+      inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      @scala.inline
-      def setOnDelete(value: (js.Function1[/* del */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: (js.Function1[/* del */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteFunction1(value: /* del */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
+      inline def setOnDeleteFunction1(value: /* del */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onEdit", value.asInstanceOf[js.Any])
+      inline def setOnEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | js.Any]) | `false`): Self = StObject.set(x, "onEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditFunction1(value: /* edit */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
+      inline def setOnEditFunction1(value: /* edit */ InteractionProps => `false` | js.Any): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEditUndefined: Self = StObject.set(x, "onEdit", js.undefined)
+      inline def setOnEditUndefined: Self = StObject.set(x, "onEdit", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: (js.Function1[/* select */ OnSelectProps, Unit]) | `false`): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+      inline def setOnSelect(value: (js.Function1[/* select */ OnSelectProps, Unit]) | `false`): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelectFunction1(value: /* select */ OnSelectProps => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelectFunction1(value: /* select */ OnSelectProps => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setShouldCollapse(value: `false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean])): Self = StObject.set(x, "shouldCollapse", value.asInstanceOf[js.Any])
+      inline def setShouldCollapse(value: `false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean])): Self = StObject.set(x, "shouldCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldCollapseFunction1(value: /* field */ CollapsedFieldProps => Boolean): Self = StObject.set(x, "shouldCollapse", js.Any.fromFunction1(value))
+      inline def setShouldCollapseFunction1(value: /* field */ CollapsedFieldProps => Boolean): Self = StObject.set(x, "shouldCollapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldCollapseUndefined: Self = StObject.set(x, "shouldCollapse", js.undefined)
+      inline def setShouldCollapseUndefined: Self = StObject.set(x, "shouldCollapse", js.undefined)
       
-      @scala.inline
-      def setSortKeys(value: Boolean): Self = StObject.set(x, "sortKeys", value.asInstanceOf[js.Any])
+      inline def setSortKeys(value: Boolean): Self = StObject.set(x, "sortKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortKeysUndefined: Self = StObject.set(x, "sortKeys", js.undefined)
+      inline def setSortKeysUndefined: Self = StObject.set(x, "sortKeys", js.undefined)
       
-      @scala.inline
-      def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Object): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ThemeKeys | ThemeObject): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeKeys | ThemeObject): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setValidationMessage(value: String): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: String): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
+      inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
     }
   }
   
@@ -609,116 +522,79 @@ object mod extends Shortcut {
   trait ThemeKeys extends StObject
   object ThemeKeys {
     
-    @scala.inline
-    def apathy: typings.reactJsonView.reactJsonViewStrings.apathy = "apathy".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.apathy]
+    inline def apathy: typings.reactJsonView.reactJsonViewStrings.apathy = "apathy".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.apathy]
     
-    @scala.inline
-    def apathyColoninverted: typings.reactJsonView.reactJsonViewStrings.apathyColoninverted = "apathy:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.apathyColoninverted]
+    inline def apathyColoninverted: typings.reactJsonView.reactJsonViewStrings.apathyColoninverted = "apathy:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.apathyColoninverted]
     
-    @scala.inline
-    def ashes: typings.reactJsonView.reactJsonViewStrings.ashes = "ashes".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.ashes]
+    inline def ashes: typings.reactJsonView.reactJsonViewStrings.ashes = "ashes".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.ashes]
     
-    @scala.inline
-    def bespin: typings.reactJsonView.reactJsonViewStrings.bespin = "bespin".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.bespin]
+    inline def bespin: typings.reactJsonView.reactJsonViewStrings.bespin = "bespin".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.bespin]
     
-    @scala.inline
-    def brewer: typings.reactJsonView.reactJsonViewStrings.brewer = "brewer".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.brewer]
+    inline def brewer: typings.reactJsonView.reactJsonViewStrings.brewer = "brewer".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.brewer]
     
-    @scala.inline
-    def bright: typings.reactJsonView.reactJsonViewStrings.bright = "bright".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.bright]
+    inline def bright: typings.reactJsonView.reactJsonViewStrings.bright = "bright".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.bright]
     
-    @scala.inline
-    def brightColoninverted: typings.reactJsonView.reactJsonViewStrings.brightColoninverted = "bright:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.brightColoninverted]
+    inline def brightColoninverted: typings.reactJsonView.reactJsonViewStrings.brightColoninverted = "bright:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.brightColoninverted]
     
-    @scala.inline
-    def chalk: typings.reactJsonView.reactJsonViewStrings.chalk = "chalk".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.chalk]
+    inline def chalk: typings.reactJsonView.reactJsonViewStrings.chalk = "chalk".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.chalk]
     
-    @scala.inline
-    def codeschool: typings.reactJsonView.reactJsonViewStrings.codeschool = "codeschool".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.codeschool]
+    inline def codeschool: typings.reactJsonView.reactJsonViewStrings.codeschool = "codeschool".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.codeschool]
     
-    @scala.inline
-    def colors: typings.reactJsonView.reactJsonViewStrings.colors = "colors".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.colors]
+    inline def colors: typings.reactJsonView.reactJsonViewStrings.colors = "colors".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.colors]
     
-    @scala.inline
-    def eighties: typings.reactJsonView.reactJsonViewStrings.eighties = "eighties".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.eighties]
+    inline def eighties: typings.reactJsonView.reactJsonViewStrings.eighties = "eighties".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.eighties]
     
-    @scala.inline
-    def embers: typings.reactJsonView.reactJsonViewStrings.embers = "embers".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.embers]
+    inline def embers: typings.reactJsonView.reactJsonViewStrings.embers = "embers".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.embers]
     
-    @scala.inline
-    def flat: typings.reactJsonView.reactJsonViewStrings.flat = "flat".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.flat]
+    inline def flat: typings.reactJsonView.reactJsonViewStrings.flat = "flat".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.flat]
     
-    @scala.inline
-    def google: typings.reactJsonView.reactJsonViewStrings.google = "google".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.google]
+    inline def google: typings.reactJsonView.reactJsonViewStrings.google = "google".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.google]
     
-    @scala.inline
-    def grayscale: typings.reactJsonView.reactJsonViewStrings.grayscale = "grayscale".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.grayscale]
+    inline def grayscale: typings.reactJsonView.reactJsonViewStrings.grayscale = "grayscale".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.grayscale]
     
-    @scala.inline
-    def grayscaleColoninverted: typings.reactJsonView.reactJsonViewStrings.grayscaleColoninverted = "grayscale:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.grayscaleColoninverted]
+    inline def grayscaleColoninverted: typings.reactJsonView.reactJsonViewStrings.grayscaleColoninverted = "grayscale:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.grayscaleColoninverted]
     
-    @scala.inline
-    def greenscreen: typings.reactJsonView.reactJsonViewStrings.greenscreen = "greenscreen".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.greenscreen]
+    inline def greenscreen: typings.reactJsonView.reactJsonViewStrings.greenscreen = "greenscreen".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.greenscreen]
     
-    @scala.inline
-    def harmonic: typings.reactJsonView.reactJsonViewStrings.harmonic = "harmonic".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.harmonic]
+    inline def harmonic: typings.reactJsonView.reactJsonViewStrings.harmonic = "harmonic".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.harmonic]
     
-    @scala.inline
-    def hopscotch: typings.reactJsonView.reactJsonViewStrings.hopscotch = "hopscotch".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.hopscotch]
+    inline def hopscotch: typings.reactJsonView.reactJsonViewStrings.hopscotch = "hopscotch".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.hopscotch]
     
-    @scala.inline
-    def isotope: typings.reactJsonView.reactJsonViewStrings.isotope = "isotope".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.isotope]
+    inline def isotope: typings.reactJsonView.reactJsonViewStrings.isotope = "isotope".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.isotope]
     
-    @scala.inline
-    def marrakesh: typings.reactJsonView.reactJsonViewStrings.marrakesh = "marrakesh".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.marrakesh]
+    inline def marrakesh: typings.reactJsonView.reactJsonViewStrings.marrakesh = "marrakesh".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.marrakesh]
     
-    @scala.inline
-    def mocha: typings.reactJsonView.reactJsonViewStrings.mocha = "mocha".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.mocha]
+    inline def mocha: typings.reactJsonView.reactJsonViewStrings.mocha = "mocha".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.mocha]
     
-    @scala.inline
-    def monokai: typings.reactJsonView.reactJsonViewStrings.monokai = "monokai".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.monokai]
+    inline def monokai: typings.reactJsonView.reactJsonViewStrings.monokai = "monokai".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.monokai]
     
-    @scala.inline
-    def ocean: typings.reactJsonView.reactJsonViewStrings.ocean = "ocean".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.ocean]
+    inline def ocean: typings.reactJsonView.reactJsonViewStrings.ocean = "ocean".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.ocean]
     
-    @scala.inline
-    def paraiso: typings.reactJsonView.reactJsonViewStrings.paraiso = "paraiso".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.paraiso]
+    inline def paraiso: typings.reactJsonView.reactJsonViewStrings.paraiso = "paraiso".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.paraiso]
     
-    @scala.inline
-    def pop: typings.reactJsonView.reactJsonViewStrings.pop = "pop".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.pop]
+    inline def pop: typings.reactJsonView.reactJsonViewStrings.pop = "pop".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.pop]
     
-    @scala.inline
-    def railscasts: typings.reactJsonView.reactJsonViewStrings.railscasts = "railscasts".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.railscasts]
+    inline def railscasts: typings.reactJsonView.reactJsonViewStrings.railscasts = "railscasts".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.railscasts]
     
-    @scala.inline
-    def `rjv-default`: typings.reactJsonView.reactJsonViewStrings.`rjv-default` = "rjv-default".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.`rjv-default`]
+    inline def `rjv-default`: typings.reactJsonView.reactJsonViewStrings.`rjv-default` = "rjv-default".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.`rjv-default`]
     
-    @scala.inline
-    def shapeshifter: typings.reactJsonView.reactJsonViewStrings.shapeshifter = "shapeshifter".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.shapeshifter]
+    inline def shapeshifter: typings.reactJsonView.reactJsonViewStrings.shapeshifter = "shapeshifter".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.shapeshifter]
     
-    @scala.inline
-    def shapeshifterColoninverted: typings.reactJsonView.reactJsonViewStrings.shapeshifterColoninverted = "shapeshifter:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.shapeshifterColoninverted]
+    inline def shapeshifterColoninverted: typings.reactJsonView.reactJsonViewStrings.shapeshifterColoninverted = "shapeshifter:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.shapeshifterColoninverted]
     
-    @scala.inline
-    def solarized: typings.reactJsonView.reactJsonViewStrings.solarized = "solarized".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.solarized]
+    inline def solarized: typings.reactJsonView.reactJsonViewStrings.solarized = "solarized".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.solarized]
     
-    @scala.inline
-    def summerfruit: typings.reactJsonView.reactJsonViewStrings.summerfruit = "summerfruit".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.summerfruit]
+    inline def summerfruit: typings.reactJsonView.reactJsonViewStrings.summerfruit = "summerfruit".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.summerfruit]
     
-    @scala.inline
-    def summerfruitColoninverted: typings.reactJsonView.reactJsonViewStrings.summerfruitColoninverted = "summerfruit:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.summerfruitColoninverted]
+    inline def summerfruitColoninverted: typings.reactJsonView.reactJsonViewStrings.summerfruitColoninverted = "summerfruit:inverted".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.summerfruitColoninverted]
     
-    @scala.inline
-    def threezerotwofour: typings.reactJsonView.reactJsonViewStrings.threezerotwofour = "threezerotwofour".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.threezerotwofour]
+    inline def threezerotwofour: typings.reactJsonView.reactJsonViewStrings.threezerotwofour = "threezerotwofour".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.threezerotwofour]
     
-    @scala.inline
-    def tomorrow: typings.reactJsonView.reactJsonViewStrings.tomorrow = "tomorrow".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.tomorrow]
+    inline def tomorrow: typings.reactJsonView.reactJsonViewStrings.tomorrow = "tomorrow".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.tomorrow]
     
-    @scala.inline
-    def tube: typings.reactJsonView.reactJsonViewStrings.tube = "tube".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.tube]
+    inline def tube: typings.reactJsonView.reactJsonViewStrings.tube = "tube".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.tube]
     
-    @scala.inline
-    def twilight: typings.reactJsonView.reactJsonViewStrings.twilight = "twilight".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.twilight]
+    inline def twilight: typings.reactJsonView.reactJsonViewStrings.twilight = "twilight".asInstanceOf[typings.reactJsonView.reactJsonViewStrings.twilight]
   }
   
   trait ThemeObject extends StObject {
@@ -757,8 +633,7 @@ object mod extends Shortcut {
   }
   object ThemeObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base00: String,
       base01: String,
       base02: String,
@@ -780,56 +655,39 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ThemeObject]
     }
     
-    @scala.inline
-    implicit class ThemeObjectMutableBuilder[Self <: ThemeObject] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeObject](x: Self) {
       
-      @scala.inline
-      def setBase00(value: String): Self = StObject.set(x, "base00", value.asInstanceOf[js.Any])
+      inline def setBase00(value: String): Self = StObject.set(x, "base00", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase01(value: String): Self = StObject.set(x, "base01", value.asInstanceOf[js.Any])
+      inline def setBase01(value: String): Self = StObject.set(x, "base01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase02(value: String): Self = StObject.set(x, "base02", value.asInstanceOf[js.Any])
+      inline def setBase02(value: String): Self = StObject.set(x, "base02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase03(value: String): Self = StObject.set(x, "base03", value.asInstanceOf[js.Any])
+      inline def setBase03(value: String): Self = StObject.set(x, "base03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase04(value: String): Self = StObject.set(x, "base04", value.asInstanceOf[js.Any])
+      inline def setBase04(value: String): Self = StObject.set(x, "base04", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase05(value: String): Self = StObject.set(x, "base05", value.asInstanceOf[js.Any])
+      inline def setBase05(value: String): Self = StObject.set(x, "base05", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase06(value: String): Self = StObject.set(x, "base06", value.asInstanceOf[js.Any])
+      inline def setBase06(value: String): Self = StObject.set(x, "base06", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase07(value: String): Self = StObject.set(x, "base07", value.asInstanceOf[js.Any])
+      inline def setBase07(value: String): Self = StObject.set(x, "base07", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase08(value: String): Self = StObject.set(x, "base08", value.asInstanceOf[js.Any])
+      inline def setBase08(value: String): Self = StObject.set(x, "base08", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase09(value: String): Self = StObject.set(x, "base09", value.asInstanceOf[js.Any])
+      inline def setBase09(value: String): Self = StObject.set(x, "base09", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0A(value: String): Self = StObject.set(x, "base0A", value.asInstanceOf[js.Any])
+      inline def setBase0A(value: String): Self = StObject.set(x, "base0A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0B(value: String): Self = StObject.set(x, "base0B", value.asInstanceOf[js.Any])
+      inline def setBase0B(value: String): Self = StObject.set(x, "base0B", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0C(value: String): Self = StObject.set(x, "base0C", value.asInstanceOf[js.Any])
+      inline def setBase0C(value: String): Self = StObject.set(x, "base0C", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0D(value: String): Self = StObject.set(x, "base0D", value.asInstanceOf[js.Any])
+      inline def setBase0D(value: String): Self = StObject.set(x, "base0D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0E(value: String): Self = StObject.set(x, "base0E", value.asInstanceOf[js.Any])
+      inline def setBase0E(value: String): Self = StObject.set(x, "base0E", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0F(value: String): Self = StObject.set(x, "base0F", value.asInstanceOf[js.Any])
+      inline def setBase0F(value: String): Self = StObject.set(x, "base0F", value.asInstanceOf[js.Any])
     }
   }
   

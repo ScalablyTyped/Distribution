@@ -28,68 +28,48 @@ object anon {
   }
   object CurX {
     
-    @scala.inline
-    def apply(): CurX = {
+    inline def apply(): CurX = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CurX]
     }
     
-    @scala.inline
-    implicit class CurXMutableBuilder[Self <: CurX] (val x: Self) extends AnyVal {
+    extension [Self <: CurX](x: Self) {
       
-      @scala.inline
-      def setCurX(value: Double): Self = StObject.set(x, "curX", value.asInstanceOf[js.Any])
+      inline def setCurX(value: Double): Self = StObject.set(x, "curX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurXUndefined: Self = StObject.set(x, "curX", js.undefined)
+      inline def setCurXUndefined: Self = StObject.set(x, "curX", js.undefined)
       
-      @scala.inline
-      def setCurY(value: Double): Self = StObject.set(x, "curY", value.asInstanceOf[js.Any])
+      inline def setCurY(value: Double): Self = StObject.set(x, "curY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurYUndefined: Self = StObject.set(x, "curY", js.undefined)
+      inline def setCurYUndefined: Self = StObject.set(x, "curY", js.undefined)
       
-      @scala.inline
-      def setEdgeHit(value: Boolean): Self = StObject.set(x, "edgeHit", value.asInstanceOf[js.Any])
+      inline def setEdgeHit(value: Boolean): Self = StObject.set(x, "edgeHit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeHitUndefined: Self = StObject.set(x, "edgeHit", js.undefined)
+      inline def setEdgeHitUndefined: Self = StObject.set(x, "edgeHit", js.undefined)
       
-      @scala.inline
-      def setFingerCount(value: Double): Self = StObject.set(x, "fingerCount", value.asInstanceOf[js.Any])
+      inline def setFingerCount(value: Double): Self = StObject.set(x, "fingerCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerCountUndefined: Self = StObject.set(x, "fingerCount", js.undefined)
+      inline def setFingerCountUndefined: Self = StObject.set(x, "fingerCount", js.undefined)
       
-      @scala.inline
-      def setMinSwipe(value: Double): Self = StObject.set(x, "minSwipe", value.asInstanceOf[js.Any])
+      inline def setMinSwipe(value: Double): Self = StObject.set(x, "minSwipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSwipeUndefined: Self = StObject.set(x, "minSwipe", js.undefined)
+      inline def setMinSwipeUndefined: Self = StObject.set(x, "minSwipe", js.undefined)
       
-      @scala.inline
-      def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
+      inline def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartXUndefined: Self = StObject.set(x, "startX", js.undefined)
+      inline def setStartXUndefined: Self = StObject.set(x, "startX", js.undefined)
       
-      @scala.inline
-      def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
+      inline def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartYUndefined: Self = StObject.set(x, "startY", js.undefined)
+      inline def setStartYUndefined: Self = StObject.set(x, "startY", js.undefined)
       
-      @scala.inline
-      def setSwipeLength(value: Double): Self = StObject.set(x, "swipeLength", value.asInstanceOf[js.Any])
+      inline def setSwipeLength(value: Double): Self = StObject.set(x, "swipeLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeLengthUndefined: Self = StObject.set(x, "swipeLength", js.undefined)
+      inline def setSwipeLengthUndefined: Self = StObject.set(x, "swipeLength", js.undefined)
       
-      @scala.inline
-      def setVerticalSwiping(value: Boolean): Self = StObject.set(x, "verticalSwiping", value.asInstanceOf[js.Any])
+      inline def setVerticalSwiping(value: Boolean): Self = StObject.set(x, "verticalSwiping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalSwipingUndefined: Self = StObject.set(x, "verticalSwiping", js.undefined)
+      inline def setVerticalSwipingUndefined: Self = StObject.set(x, "verticalSwiping", js.undefined)
     }
   }
 }

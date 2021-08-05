@@ -318,8 +318,7 @@ object DiscoveryV1 {
   @JSImport("watson-developer-cloud/sdk", "DiscoveryV1.URL")
   @js.native
   def URL: String = js.native
-  @scala.inline
-  def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
   
   /** Constants for the `updateCredentials` operation. */
   object UpdateCredentialsConstants {

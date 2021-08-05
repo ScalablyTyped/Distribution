@@ -15,16 +15,13 @@ trait InvalidBootstrapFileException
 }
 object InvalidBootstrapFileException {
   
-  @scala.inline
-  def apply(BootstrapFileURL: String, Context: XInterface, Message: String): InvalidBootstrapFileException = {
+  inline def apply(BootstrapFileURL: String, Context: XInterface, Message: String): InvalidBootstrapFileException = {
     val __obj = js.Dynamic.literal(BootstrapFileURL = BootstrapFileURL.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidBootstrapFileException]
   }
   
-  @scala.inline
-  implicit class InvalidBootstrapFileExceptionMutableBuilder[Self <: InvalidBootstrapFileException] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidBootstrapFileException](x: Self) {
     
-    @scala.inline
-    def setBootstrapFileURL(value: String): Self = StObject.set(x, "BootstrapFileURL", value.asInstanceOf[js.Any])
+    inline def setBootstrapFileURL(value: String): Self = StObject.set(x, "BootstrapFileURL", value.asInstanceOf[js.Any])
   }
 }

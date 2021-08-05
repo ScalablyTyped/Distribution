@@ -27,8 +27,7 @@ trait UseGroupByRowProps[D /* <: js.Object */] extends StObject {
 }
 object UseGroupByRowProps {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](
+  inline def apply[D /* <: js.Object */](
     depth: Double,
     groupByID: IdType[D],
     groupByVal: String,
@@ -43,40 +42,28 @@ object UseGroupByRowProps {
     __obj.asInstanceOf[UseGroupByRowProps[D]]
   }
   
-  @scala.inline
-  implicit class UseGroupByRowPropsMutableBuilder[Self <: UseGroupByRowProps[?], D /* <: js.Object */] (val x: Self & UseGroupByRowProps[D]) extends AnyVal {
+  extension [Self <: UseGroupByRowProps[?], D /* <: js.Object */](x: Self & UseGroupByRowProps[D]) {
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByID(value: IdType[D]): Self = StObject.set(x, "groupByID", value.asInstanceOf[js.Any])
+    inline def setGroupByID(value: IdType[D]): Self = StObject.set(x, "groupByID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByVal(value: String): Self = StObject.set(x, "groupByVal", value.asInstanceOf[js.Any])
+    inline def setGroupByVal(value: String): Self = StObject.set(x, "groupByVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
+    inline def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafRows(value: js.Array[Row[D]]): Self = StObject.set(x, "leafRows", value.asInstanceOf[js.Any])
+    inline def setLeafRows(value: js.Array[Row[D]]): Self = StObject.set(x, "leafRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafRowsVarargs(value: Row[D]*): Self = StObject.set(x, "leafRows", js.Array(value :_*))
+    inline def setLeafRowsVarargs(value: Row[D]*): Self = StObject.set(x, "leafRows", js.Array(value :_*))
     
-    @scala.inline
-    def setSubRows(value: js.Array[Row[D]]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
+    inline def setSubRows(value: js.Array[Row[D]]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubRowsVarargs(value: Row[D]*): Self = StObject.set(x, "subRows", js.Array(value :_*))
+    inline def setSubRowsVarargs(value: Row[D]*): Self = StObject.set(x, "subRows", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: Record[IdType[D], AggregatedValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Record[IdType[D], AggregatedValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

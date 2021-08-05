@@ -42,8 +42,7 @@ trait ServeOptions extends StObject {
 }
 object ServeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     devapp: Boolean,
@@ -61,79 +60,54 @@ object ServeOptions {
     __obj.asInstanceOf[ServeOptions]
   }
   
-  @scala.inline
-  implicit class ServeOptionsMutableBuilder[Self <: ServeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServeOptions](x: Self) {
     
-    @scala.inline
-    def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
+    inline def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
+    inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserOption(value: String): Self = StObject.set(x, "browserOption", value.asInstanceOf[js.Any])
+    inline def setBrowserOption(value: String): Self = StObject.set(x, "browserOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserOptionUndefined: Self = StObject.set(x, "browserOption", js.undefined)
+    inline def setBrowserOptionUndefined: Self = StObject.set(x, "browserOption", js.undefined)
     
-    @scala.inline
-    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
-    @scala.inline
-    def setDevapp(value: Boolean): Self = StObject.set(x, "devapp", value.asInstanceOf[js.Any])
+    inline def setDevapp(value: Boolean): Self = StObject.set(x, "devapp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAddressRequired(value: Boolean): Self = StObject.set(x, "externalAddressRequired", value.asInstanceOf[js.Any])
+    inline def setExternalAddressRequired(value: Boolean): Self = StObject.set(x, "externalAddressRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAddressRequiredUndefined: Self = StObject.set(x, "externalAddressRequired", js.undefined)
+    inline def setExternalAddressRequiredUndefined: Self = StObject.set(x, "externalAddressRequired", js.undefined)
     
-    @scala.inline
-    def setLab(value: Boolean): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
+    inline def setLab(value: Boolean): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabHost(value: String): Self = StObject.set(x, "labHost", value.asInstanceOf[js.Any])
+    inline def setLabHost(value: String): Self = StObject.set(x, "labHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabPort(value: Double): Self = StObject.set(x, "labPort", value.asInstanceOf[js.Any])
+    inline def setLabPort(value: Double): Self = StObject.set(x, "labPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLivereload(value: Boolean): Self = StObject.set(x, "livereload", value.asInstanceOf[js.Any])
+    inline def setLivereload(value: Boolean): Self = StObject.set(x, "livereload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setProxy(value: Boolean): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: Boolean): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

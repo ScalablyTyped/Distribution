@@ -12,16 +12,13 @@ trait GetChannelMembersParameters
 }
 object GetChannelMembersParameters {
   
-  @scala.inline
-  def apply(channel: String): GetChannelMembersParameters = {
+  inline def apply(channel: String): GetChannelMembersParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChannelMembersParameters]
   }
   
-  @scala.inline
-  implicit class GetChannelMembersParametersMutableBuilder[Self <: GetChannelMembersParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GetChannelMembersParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

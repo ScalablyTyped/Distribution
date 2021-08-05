@@ -13,19 +13,15 @@ trait DeregisterTransitGatewayMulticastGroupSourcesResult extends StObject {
 }
 object DeregisterTransitGatewayMulticastGroupSourcesResult {
   
-  @scala.inline
-  def apply(): DeregisterTransitGatewayMulticastGroupSourcesResult = {
+  inline def apply(): DeregisterTransitGatewayMulticastGroupSourcesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterTransitGatewayMulticastGroupSourcesResult]
   }
   
-  @scala.inline
-  implicit class DeregisterTransitGatewayMulticastGroupSourcesResultMutableBuilder[Self <: DeregisterTransitGatewayMulticastGroupSourcesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterTransitGatewayMulticastGroupSourcesResult](x: Self) {
     
-    @scala.inline
-    def setDeregisteredMulticastGroupSources(value: TransitGatewayMulticastDeregisteredGroupSources): Self = StObject.set(x, "DeregisteredMulticastGroupSources", value.asInstanceOf[js.Any])
+    inline def setDeregisteredMulticastGroupSources(value: TransitGatewayMulticastDeregisteredGroupSources): Self = StObject.set(x, "DeregisteredMulticastGroupSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeregisteredMulticastGroupSourcesUndefined: Self = StObject.set(x, "DeregisteredMulticastGroupSources", js.undefined)
+    inline def setDeregisteredMulticastGroupSourcesUndefined: Self = StObject.set(x, "DeregisteredMulticastGroupSources", js.undefined)
   }
 }

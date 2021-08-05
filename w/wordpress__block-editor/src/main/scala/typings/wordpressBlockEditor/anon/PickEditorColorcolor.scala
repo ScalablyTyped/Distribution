@@ -11,16 +11,13 @@ trait PickEditorColorcolor extends StObject {
 }
 object PickEditorColorcolor {
   
-  @scala.inline
-  def apply(color: String): PickEditorColorcolor = {
+  inline def apply(color: String): PickEditorColorcolor = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickEditorColorcolor]
   }
   
-  @scala.inline
-  implicit class PickEditorColorcolorMutableBuilder[Self <: PickEditorColorcolor] (val x: Self) extends AnyVal {
+  extension [Self <: PickEditorColorcolor](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

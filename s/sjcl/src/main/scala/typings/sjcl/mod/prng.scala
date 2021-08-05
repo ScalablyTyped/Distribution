@@ -15,6 +15,5 @@ class prng protected ()
 }
 object prng {
   
-  @scala.inline
-  def apply: SjclRandomStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("prng").asInstanceOf[SjclRandomStatic]
+  inline def apply: SjclRandomStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("prng").asInstanceOf[SjclRandomStatic]
 }

@@ -16,37 +16,27 @@ trait RenderOptions extends StObject {
 }
 object RenderOptions {
   
-  @scala.inline
-  def apply(): RenderOptions = {
+  inline def apply(): RenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderOptions]
   }
   
-  @scala.inline
-  implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenderOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHelpers(value: js.Any): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+    inline def setHelpers(value: js.Any): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
+    inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
     
-    @scala.inline
-    def setPartials(value: js.Any): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+    inline def setPartials(value: js.Any): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
+    inline def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
   }
 }

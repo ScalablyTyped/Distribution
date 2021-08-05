@@ -43,67 +43,47 @@ trait GetSegmentDetectionResponse extends StObject {
 }
 object GetSegmentDetectionResponse {
   
-  @scala.inline
-  def apply(): GetSegmentDetectionResponse = {
+  inline def apply(): GetSegmentDetectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSegmentDetectionResponse]
   }
   
-  @scala.inline
-  implicit class GetSegmentDetectionResponseMutableBuilder[Self <: GetSegmentDetectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSegmentDetectionResponse](x: Self) {
     
-    @scala.inline
-    def setAudioMetadata(value: AudioMetadataList): Self = StObject.set(x, "AudioMetadata", value.asInstanceOf[js.Any])
+    inline def setAudioMetadata(value: AudioMetadataList): Self = StObject.set(x, "AudioMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioMetadataUndefined: Self = StObject.set(x, "AudioMetadata", js.undefined)
+    inline def setAudioMetadataUndefined: Self = StObject.set(x, "AudioMetadata", js.undefined)
     
-    @scala.inline
-    def setAudioMetadataVarargs(value: AudioMetadata*): Self = StObject.set(x, "AudioMetadata", js.Array(value :_*))
+    inline def setAudioMetadataVarargs(value: AudioMetadata*): Self = StObject.set(x, "AudioMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSegments(value: SegmentDetections): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: SegmentDetections): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: SegmentDetection*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SegmentDetection*): Self = StObject.set(x, "Segments", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedSegmentTypes(value: SegmentTypesInfo): Self = StObject.set(x, "SelectedSegmentTypes", value.asInstanceOf[js.Any])
+    inline def setSelectedSegmentTypes(value: SegmentTypesInfo): Self = StObject.set(x, "SelectedSegmentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedSegmentTypesUndefined: Self = StObject.set(x, "SelectedSegmentTypes", js.undefined)
+    inline def setSelectedSegmentTypesUndefined: Self = StObject.set(x, "SelectedSegmentTypes", js.undefined)
     
-    @scala.inline
-    def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = StObject.set(x, "SelectedSegmentTypes", js.Array(value :_*))
+    inline def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = StObject.set(x, "SelectedSegmentTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadataList): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
+    inline def setVideoMetadata(value: VideoMetadataList): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
+    inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
     
-    @scala.inline
-    def setVideoMetadataVarargs(value: VideoMetadata*): Self = StObject.set(x, "VideoMetadata", js.Array(value :_*))
+    inline def setVideoMetadataVarargs(value: VideoMetadata*): Self = StObject.set(x, "VideoMetadata", js.Array(value :_*))
   }
 }

@@ -11,10 +11,8 @@ object getBillingServiceAccountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBillingServiceAccount(): js.Promise[GetBillingServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBillingServiceAccount")().asInstanceOf[js.Promise[GetBillingServiceAccountResult]]
-  @scala.inline
-  def getBillingServiceAccount(opts: InvokeOptions): js.Promise[GetBillingServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBillingServiceAccount")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBillingServiceAccountResult]]
+  inline def getBillingServiceAccount(): js.Promise[GetBillingServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBillingServiceAccount")().asInstanceOf[js.Promise[GetBillingServiceAccountResult]]
+  inline def getBillingServiceAccount(opts: InvokeOptions): js.Promise[GetBillingServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBillingServiceAccount")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBillingServiceAccountResult]]
   
   trait GetBillingServiceAccountResult extends StObject {
     
@@ -30,20 +28,16 @@ object getBillingServiceAccountMod {
   }
   object GetBillingServiceAccountResult {
     
-    @scala.inline
-    def apply(arn: String, id: String): GetBillingServiceAccountResult = {
+    inline def apply(arn: String, id: String): GetBillingServiceAccountResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBillingServiceAccountResult]
     }
     
-    @scala.inline
-    implicit class GetBillingServiceAccountResultMutableBuilder[Self <: GetBillingServiceAccountResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBillingServiceAccountResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

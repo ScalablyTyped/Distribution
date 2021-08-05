@@ -18,19 +18,15 @@ trait PutAppInstanceRetentionSettingsRequest extends StObject {
 }
 object PutAppInstanceRetentionSettingsRequest {
   
-  @scala.inline
-  def apply(AppInstanceArn: ChimeArn, AppInstanceRetentionSettings: AppInstanceRetentionSettings): PutAppInstanceRetentionSettingsRequest = {
+  inline def apply(AppInstanceArn: ChimeArn, AppInstanceRetentionSettings: AppInstanceRetentionSettings): PutAppInstanceRetentionSettingsRequest = {
     val __obj = js.Dynamic.literal(AppInstanceArn = AppInstanceArn.asInstanceOf[js.Any], AppInstanceRetentionSettings = AppInstanceRetentionSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAppInstanceRetentionSettingsRequest]
   }
   
-  @scala.inline
-  implicit class PutAppInstanceRetentionSettingsRequestMutableBuilder[Self <: PutAppInstanceRetentionSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppInstanceRetentionSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceRetentionSettings(value: AppInstanceRetentionSettings): Self = StObject.set(x, "AppInstanceRetentionSettings", value.asInstanceOf[js.Any])
+    inline def setAppInstanceRetentionSettings(value: AppInstanceRetentionSettings): Self = StObject.set(x, "AppInstanceRetentionSettings", value.asInstanceOf[js.Any])
   }
 }

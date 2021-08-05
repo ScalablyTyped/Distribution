@@ -18,28 +18,21 @@ trait GetDifferencesOutput extends StObject {
 }
 object GetDifferencesOutput {
   
-  @scala.inline
-  def apply(): GetDifferencesOutput = {
+  inline def apply(): GetDifferencesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDifferencesOutput]
   }
   
-  @scala.inline
-  implicit class GetDifferencesOutputMutableBuilder[Self <: GetDifferencesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDifferencesOutput](x: Self) {
     
-    @scala.inline
-    def setDifferences(value: DifferenceList): Self = StObject.set(x, "differences", value.asInstanceOf[js.Any])
+    inline def setDifferences(value: DifferenceList): Self = StObject.set(x, "differences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferencesUndefined: Self = StObject.set(x, "differences", js.undefined)
+    inline def setDifferencesUndefined: Self = StObject.set(x, "differences", js.undefined)
     
-    @scala.inline
-    def setDifferencesVarargs(value: Difference*): Self = StObject.set(x, "differences", js.Array(value :_*))
+    inline def setDifferencesVarargs(value: Difference*): Self = StObject.set(x, "differences", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

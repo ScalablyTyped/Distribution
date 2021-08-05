@@ -16,16 +16,13 @@ trait DataEditorEvent
 }
 object DataEditorEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, Type: DataEditorEventType): DataEditorEvent = {
+  inline def apply(Source: XInterface, Type: DataEditorEventType): DataEditorEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataEditorEvent]
   }
   
-  @scala.inline
-  implicit class DataEditorEventMutableBuilder[Self <: DataEditorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataEditorEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: DataEditorEventType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataEditorEventType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply extends StObjec
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReplyMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply](x: Self) {
     
-    @scala.inline
-    def setPostbackData(value: String): Self = StObject.set(x, "postbackData", value.asInstanceOf[js.Any])
+    inline def setPostbackData(value: String): Self = StObject.set(x, "postbackData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostbackDataUndefined: Self = StObject.set(x, "postbackData", js.undefined)
+    inline def setPostbackDataUndefined: Self = StObject.set(x, "postbackData", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

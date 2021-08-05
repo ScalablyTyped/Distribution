@@ -25,22 +25,17 @@ trait RosterReceived
 }
 object RosterReceived {
   
-  @scala.inline
-  def apply(id: String, roster: js.Array[RosterItem]): RosterReceived = {
+  inline def apply(id: String, roster: js.Array[RosterItem]): RosterReceived = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], roster = roster.asInstanceOf[js.Any])
     __obj.asInstanceOf[RosterReceived]
   }
   
-  @scala.inline
-  implicit class RosterReceivedMutableBuilder[Self <: RosterReceived] (val x: Self) extends AnyVal {
+  extension [Self <: RosterReceived](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoster(value: js.Array[RosterItem]): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
+    inline def setRoster(value: js.Array[RosterItem]): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRosterVarargs(value: RosterItem*): Self = StObject.set(x, "roster", js.Array(value :_*))
+    inline def setRosterVarargs(value: RosterItem*): Self = StObject.set(x, "roster", js.Array(value :_*))
   }
 }

@@ -38,8 +38,7 @@ trait DOMSnapshotApi extends StObject {
 }
 object DOMSnapshotApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     captureSnapshot: CaptureSnapshotRequest => js.Promise[CaptureSnapshotResponse],
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
@@ -49,19 +48,14 @@ object DOMSnapshotApi {
     __obj.asInstanceOf[DOMSnapshotApi]
   }
   
-  @scala.inline
-  implicit class DOMSnapshotApiMutableBuilder[Self <: DOMSnapshotApi] (val x: Self) extends AnyVal {
+  extension [Self <: DOMSnapshotApi](x: Self) {
     
-    @scala.inline
-    def setCaptureSnapshot(value: CaptureSnapshotRequest => js.Promise[CaptureSnapshotResponse]): Self = StObject.set(x, "captureSnapshot", js.Any.fromFunction1(value))
+    inline def setCaptureSnapshot(value: CaptureSnapshotRequest => js.Promise[CaptureSnapshotResponse]): Self = StObject.set(x, "captureSnapshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSnapshot(value: GetSnapshotRequest => js.Promise[GetSnapshotResponse]): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
+    inline def setGetSnapshot(value: GetSnapshotRequest => js.Promise[GetSnapshotResponse]): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
   }
 }

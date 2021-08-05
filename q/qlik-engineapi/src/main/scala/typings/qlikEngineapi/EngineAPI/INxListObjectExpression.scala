@@ -22,22 +22,17 @@ trait INxListObjectExpression extends StObject {
 }
 object INxListObjectExpression {
   
-  @scala.inline
-  def apply(qExpr: String): INxListObjectExpression = {
+  inline def apply(qExpr: String): INxListObjectExpression = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxListObjectExpression]
   }
   
-  @scala.inline
-  implicit class INxListObjectExpressionMutableBuilder[Self <: INxListObjectExpression] (val x: Self) extends AnyVal {
+  extension [Self <: INxListObjectExpression](x: Self) {
     
-    @scala.inline
-    def setQError(value: INxLayoutErrors): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
+    inline def setQError(value: INxLayoutErrors): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
+    inline def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
     
-    @scala.inline
-    def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
+    inline def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
   }
 }

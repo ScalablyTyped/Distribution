@@ -14,19 +14,15 @@ trait BackendMathBackendWebGL extends StObject {
 }
 object BackendMathBackendWebGL {
   
-  @scala.inline
-  def apply(backend: MathBackendWebGL, inputs: FFTInputs): BackendMathBackendWebGL = {
+  inline def apply(backend: MathBackendWebGL, inputs: FFTInputs): BackendMathBackendWebGL = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendMathBackendWebGL]
   }
   
-  @scala.inline
-  implicit class BackendMathBackendWebGLMutableBuilder[Self <: BackendMathBackendWebGL] (val x: Self) extends AnyVal {
+  extension [Self <: BackendMathBackendWebGL](x: Self) {
     
-    @scala.inline
-    def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: FFTInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: FFTInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

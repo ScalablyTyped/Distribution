@@ -26,22 +26,17 @@ trait CookiesGetDetails extends StObject {
 }
 object CookiesGetDetails {
   
-  @scala.inline
-  def apply(name: String, storeId: String, url: String): CookiesGetDetails = {
+  inline def apply(name: String, storeId: String, url: String): CookiesGetDetails = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookiesGetDetails]
   }
   
-  @scala.inline
-  implicit class CookiesGetDetailsMutableBuilder[Self <: CookiesGetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CookiesGetDetails](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+    inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

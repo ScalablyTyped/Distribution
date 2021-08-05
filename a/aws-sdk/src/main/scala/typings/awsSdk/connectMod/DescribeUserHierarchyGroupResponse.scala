@@ -13,19 +13,15 @@ trait DescribeUserHierarchyGroupResponse extends StObject {
 }
 object DescribeUserHierarchyGroupResponse {
   
-  @scala.inline
-  def apply(): DescribeUserHierarchyGroupResponse = {
+  inline def apply(): DescribeUserHierarchyGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUserHierarchyGroupResponse]
   }
   
-  @scala.inline
-  implicit class DescribeUserHierarchyGroupResponseMutableBuilder[Self <: DescribeUserHierarchyGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserHierarchyGroupResponse](x: Self) {
     
-    @scala.inline
-    def setHierarchyGroup(value: HierarchyGroup): Self = StObject.set(x, "HierarchyGroup", value.asInstanceOf[js.Any])
+    inline def setHierarchyGroup(value: HierarchyGroup): Self = StObject.set(x, "HierarchyGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyGroupUndefined: Self = StObject.set(x, "HierarchyGroup", js.undefined)
+    inline def setHierarchyGroupUndefined: Self = StObject.set(x, "HierarchyGroup", js.undefined)
   }
 }

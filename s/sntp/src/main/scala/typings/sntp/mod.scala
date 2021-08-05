@@ -10,24 +10,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @scala.inline
-  def offset(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[js.Promise[Double]]
+  inline def offset(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[js.Promise[Double]]
   
-  @scala.inline
-  def start(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def start(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def start(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[Unit]]
+  inline def start(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
-  @scala.inline
-  def time(): js.Promise[TimeOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[js.Promise[TimeOptions]]
-  @scala.inline
-  def time(options: Options): js.Promise[TimeOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TimeOptions]]
+  inline def time(): js.Promise[TimeOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[js.Promise[TimeOptions]]
+  inline def time(options: Options): js.Promise[TimeOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TimeOptions]]
   
   trait Options extends StObject {
     
@@ -41,38 +34,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setResolveReference(value: Boolean): Self = StObject.set(x, "resolveReference", value.asInstanceOf[js.Any])
+      inline def setResolveReference(value: Boolean): Self = StObject.set(x, "resolveReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveReferenceUndefined: Self = StObject.set(x, "resolveReference", js.undefined)
+      inline def setResolveReferenceUndefined: Self = StObject.set(x, "resolveReference", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -114,8 +97,7 @@ object mod {
   }
   object TimeOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       d: Double,
       isValid: Boolean,
       leapIndicator: String,
@@ -138,59 +120,41 @@ object mod {
       __obj.asInstanceOf[TimeOptions]
     }
     
-    @scala.inline
-    implicit class TimeOptionsMutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimeOptions](x: Self) {
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeapIndicator(value: String): Self = StObject.set(x, "leapIndicator", value.asInstanceOf[js.Any])
+      inline def setLeapIndicator(value: String): Self = StObject.set(x, "leapIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginateTimestamp(value: Double): Self = StObject.set(x, "originateTimestamp", value.asInstanceOf[js.Any])
+      inline def setOriginateTimestamp(value: Double): Self = StObject.set(x, "originateTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
+      inline def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveTimestamp(value: Double): Self = StObject.set(x, "receiveTimestamp", value.asInstanceOf[js.Any])
+      inline def setReceiveTimestamp(value: Double): Self = StObject.set(x, "receiveTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceivedLocally(value: Double): Self = StObject.set(x, "receivedLocally", value.asInstanceOf[js.Any])
+      inline def setReceivedLocally(value: Double): Self = StObject.set(x, "receivedLocally", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
+      inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceTimestamp(value: Double): Self = StObject.set(x, "referenceTimestamp", value.asInstanceOf[js.Any])
+      inline def setReferenceTimestamp(value: Double): Self = StObject.set(x, "referenceTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDelay(value: Double): Self = StObject.set(x, "rootDelay", value.asInstanceOf[js.Any])
+      inline def setRootDelay(value: Double): Self = StObject.set(x, "rootDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDispersion(value: Double): Self = StObject.set(x, "rootDispersion", value.asInstanceOf[js.Any])
+      inline def setRootDispersion(value: Double): Self = StObject.set(x, "rootDispersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStratum(value: String): Self = StObject.set(x, "stratum", value.asInstanceOf[js.Any])
+      inline def setStratum(value: String): Self = StObject.set(x, "stratum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransmitTimestamp(value: Double): Self = StObject.set(x, "transmitTimestamp", value.asInstanceOf[js.Any])
+      inline def setTransmitTimestamp(value: Double): Self = StObject.set(x, "transmitTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -26,28 +26,21 @@ trait SchemaSignBlobRequest extends StObject {
 }
 object SchemaSignBlobRequest {
   
-  @scala.inline
-  def apply(): SchemaSignBlobRequest = {
+  inline def apply(): SchemaSignBlobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignBlobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSignBlobRequestMutableBuilder[Self <: SchemaSignBlobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignBlobRequest](x: Self) {
     
-    @scala.inline
-    def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+    inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+    inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
-    @scala.inline
-    def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

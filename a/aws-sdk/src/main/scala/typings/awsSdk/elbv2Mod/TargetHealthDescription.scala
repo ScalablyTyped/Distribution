@@ -23,31 +23,23 @@ trait TargetHealthDescription extends StObject {
 }
 object TargetHealthDescription {
   
-  @scala.inline
-  def apply(): TargetHealthDescription = {
+  inline def apply(): TargetHealthDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetHealthDescription]
   }
   
-  @scala.inline
-  implicit class TargetHealthDescriptionMutableBuilder[Self <: TargetHealthDescription] (val x: Self) extends AnyVal {
+  extension [Self <: TargetHealthDescription](x: Self) {
     
-    @scala.inline
-    def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
+    inline def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
     
-    @scala.inline
-    def setTarget(value: TargetDescription): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TargetDescription): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetHealth(value: TargetHealth): Self = StObject.set(x, "TargetHealth", value.asInstanceOf[js.Any])
+    inline def setTargetHealth(value: TargetHealth): Self = StObject.set(x, "TargetHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetHealthUndefined: Self = StObject.set(x, "TargetHealth", js.undefined)
+    inline def setTargetHealthUndefined: Self = StObject.set(x, "TargetHealth", js.undefined)
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

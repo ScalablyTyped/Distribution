@@ -26,8 +26,7 @@ trait ChannelHangupRequest
 }
 object ChannelHangupRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     cause: Double,
     channel: Channel,
@@ -40,16 +39,12 @@ object ChannelHangupRequest {
     __obj.asInstanceOf[ChannelHangupRequest]
   }
   
-  @scala.inline
-  implicit class ChannelHangupRequestMutableBuilder[Self <: ChannelHangupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelHangupRequest](x: Self) {
     
-    @scala.inline
-    def setCause(value: Double): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: Double): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoft(value: Boolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
+    inline def setSoft(value: Boolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
   }
 }

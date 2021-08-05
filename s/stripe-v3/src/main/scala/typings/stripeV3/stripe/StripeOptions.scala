@@ -14,34 +14,25 @@ trait StripeOptions extends StObject {
 }
 object StripeOptions {
   
-  @scala.inline
-  def apply(): StripeOptions = {
+  inline def apply(): StripeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StripeOptions]
   }
   
-  @scala.inline
-  implicit class StripeOptionsMutableBuilder[Self <: StripeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StripeOptions](x: Self) {
     
-    @scala.inline
-    def setBetas(value: js.Array[String]): Self = StObject.set(x, "betas", value.asInstanceOf[js.Any])
+    inline def setBetas(value: js.Array[String]): Self = StObject.set(x, "betas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetasUndefined: Self = StObject.set(x, "betas", js.undefined)
+    inline def setBetasUndefined: Self = StObject.set(x, "betas", js.undefined)
     
-    @scala.inline
-    def setBetasVarargs(value: String*): Self = StObject.set(x, "betas", js.Array(value :_*))
+    inline def setBetasVarargs(value: String*): Self = StObject.set(x, "betas", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
+    inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
+    inline def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesBacklogInError extends StObject {
 }
 object EnumValuesBacklogInError {
   
-  @scala.inline
-  def apply(enumValues: BacklogInError): EnumValuesBacklogInError = {
+  inline def apply(enumValues: BacklogInError): EnumValuesBacklogInError = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBacklogInError]
   }
   
-  @scala.inline
-  implicit class EnumValuesBacklogInErrorMutableBuilder[Self <: EnumValuesBacklogInError] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBacklogInError](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: BacklogInError): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: BacklogInError): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

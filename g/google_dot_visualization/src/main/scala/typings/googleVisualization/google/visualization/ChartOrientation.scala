@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartOrientation extends StObject
 object ChartOrientation {
   
-  @scala.inline
-  def horizontal: typings.googleVisualization.googleVisualizationStrings.horizontal = "horizontal".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.horizontal]
+  inline def horizontal: typings.googleVisualization.googleVisualizationStrings.horizontal = "horizontal".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.googleVisualization.googleVisualizationStrings.vertical = "vertical".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.vertical]
+  inline def vertical: typings.googleVisualization.googleVisualizationStrings.vertical = "vertical".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.vertical]
 }

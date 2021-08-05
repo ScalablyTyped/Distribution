@@ -20,16 +20,13 @@ trait Access extends StObject {
 }
 object Access {
   
-  @scala.inline
-  def apply(access: typings.hapiHapi.mod.Request => Boolean): Access = {
+  inline def apply(access: typings.hapiHapi.mod.Request => Boolean): Access = {
     val __obj = js.Dynamic.literal(access = js.Any.fromFunction1(access))
     __obj.asInstanceOf[Access]
   }
   
-  @scala.inline
-  implicit class AccessMutableBuilder[Self <: Access] (val x: Self) extends AnyVal {
+  extension [Self <: Access](x: Self) {
     
-    @scala.inline
-    def setAccess(value: typings.hapiHapi.mod.Request => Boolean): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
+    inline def setAccess(value: typings.hapiHapi.mod.Request => Boolean): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
   }
 }

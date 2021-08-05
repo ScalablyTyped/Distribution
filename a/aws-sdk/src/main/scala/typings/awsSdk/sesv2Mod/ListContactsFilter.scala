@@ -18,25 +18,19 @@ trait ListContactsFilter extends StObject {
 }
 object ListContactsFilter {
   
-  @scala.inline
-  def apply(): ListContactsFilter = {
+  inline def apply(): ListContactsFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListContactsFilter]
   }
   
-  @scala.inline
-  implicit class ListContactsFilterMutableBuilder[Self <: ListContactsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ListContactsFilter](x: Self) {
     
-    @scala.inline
-    def setFilteredStatus(value: SubscriptionStatus): Self = StObject.set(x, "FilteredStatus", value.asInstanceOf[js.Any])
+    inline def setFilteredStatus(value: SubscriptionStatus): Self = StObject.set(x, "FilteredStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteredStatusUndefined: Self = StObject.set(x, "FilteredStatus", js.undefined)
+    inline def setFilteredStatusUndefined: Self = StObject.set(x, "FilteredStatus", js.undefined)
     
-    @scala.inline
-    def setTopicFilter(value: TopicFilter): Self = StObject.set(x, "TopicFilter", value.asInstanceOf[js.Any])
+    inline def setTopicFilter(value: TopicFilter): Self = StObject.set(x, "TopicFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicFilterUndefined: Self = StObject.set(x, "TopicFilter", js.undefined)
+    inline def setTopicFilterUndefined: Self = StObject.set(x, "TopicFilter", js.undefined)
   }
 }

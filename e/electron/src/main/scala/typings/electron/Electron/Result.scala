@@ -27,8 +27,7 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeMatchOrdinal: Double,
     finalUpdate: Boolean,
     matches: Double,
@@ -39,22 +38,16 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setActiveMatchOrdinal(value: Double): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
+    inline def setActiveMatchOrdinal(value: Double): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUpdate(value: Boolean): Self = StObject.set(x, "finalUpdate", value.asInstanceOf[js.Any])
+    inline def setFinalUpdate(value: Boolean): Self = StObject.set(x, "finalUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: Double): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: Double): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionArea(value: Rectangle): Self = StObject.set(x, "selectionArea", value.asInstanceOf[js.Any])
+    inline def setSelectionArea(value: Rectangle): Self = StObject.set(x, "selectionArea", value.asInstanceOf[js.Any])
   }
 }

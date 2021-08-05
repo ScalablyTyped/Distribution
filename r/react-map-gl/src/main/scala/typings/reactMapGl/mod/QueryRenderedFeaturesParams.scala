@@ -12,31 +12,23 @@ trait QueryRenderedFeaturesParams extends StObject {
 }
 object QueryRenderedFeaturesParams {
   
-  @scala.inline
-  def apply(): QueryRenderedFeaturesParams = {
+  inline def apply(): QueryRenderedFeaturesParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRenderedFeaturesParams]
   }
   
-  @scala.inline
-  implicit class QueryRenderedFeaturesParamsMutableBuilder[Self <: QueryRenderedFeaturesParams] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRenderedFeaturesParams](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
-    @scala.inline
-    def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

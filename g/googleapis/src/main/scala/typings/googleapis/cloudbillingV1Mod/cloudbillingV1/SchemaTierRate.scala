@@ -24,25 +24,19 @@ trait SchemaTierRate extends StObject {
 }
 object SchemaTierRate {
   
-  @scala.inline
-  def apply(): SchemaTierRate = {
+  inline def apply(): SchemaTierRate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTierRate]
   }
   
-  @scala.inline
-  implicit class SchemaTierRateMutableBuilder[Self <: SchemaTierRate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTierRate](x: Self) {
     
-    @scala.inline
-    def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
+    inline def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
+    inline def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
     
-    @scala.inline
-    def setUnitPrice(value: SchemaMoney): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
+    inline def setUnitPrice(value: SchemaMoney): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
+    inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }
 }

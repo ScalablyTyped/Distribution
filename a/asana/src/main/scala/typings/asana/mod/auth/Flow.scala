@@ -21,19 +21,15 @@ trait Flow extends StObject {
 }
 object Flow {
   
-  @scala.inline
-  def apply(authorizeUrl: () => String, run: () => Unit): Flow = {
+  inline def apply(authorizeUrl: () => String, run: () => Unit): Flow = {
     val __obj = js.Dynamic.literal(authorizeUrl = js.Any.fromFunction0(authorizeUrl), run = js.Any.fromFunction0(run))
     __obj.asInstanceOf[Flow]
   }
   
-  @scala.inline
-  implicit class FlowMutableBuilder[Self <: Flow] (val x: Self) extends AnyVal {
+  extension [Self <: Flow](x: Self) {
     
-    @scala.inline
-    def setAuthorizeUrl(value: () => String): Self = StObject.set(x, "authorizeUrl", js.Any.fromFunction0(value))
+    inline def setAuthorizeUrl(value: () => String): Self = StObject.set(x, "authorizeUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }
 }

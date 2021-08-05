@@ -45,13 +45,13 @@ object transitionServiceMod {
     var $view: ViewService = js.native
     
     /** The  paths on a criteria object */
-    var _criteriaPaths: js.Any = js.native
+    /* private */ var _criteriaPaths: js.Any = js.native
     
     /** @internal */
-    var _defineCoreEvents: js.Any = js.native
+    /* private */ var _defineCoreEvents: js.Any = js.native
     
     /** @internal */
-    var _defineCorePaths: js.Any = js.native
+    /* private */ var _defineCorePaths: js.Any = js.native
     
     /** @internal */
     def _defineEvent(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType): Unit = js.native
@@ -208,7 +208,7 @@ object transitionServiceMod {
       *
       * @internal
       */
-    var _definePathType: js.Any = js.native
+    /* private */ var _definePathType: js.Any = js.native
     
     /**
       * This object has hook de-registration functions for the built-in hooks.
@@ -219,25 +219,25 @@ object transitionServiceMod {
     var _deregisterHookFns: ActivateViews = js.native
     
     /** The transition hook types, such as `onEnter`, `onStart`, etc */
-    var _eventTypes: js.Any = js.native
+    /* private */ var _eventTypes: js.Any = js.native
     
     /** @internal */
-    var _getEvents: js.Any = js.native
+    /* private */ var _getEvents: js.Any = js.native
     
     /** @internal */
-    var _getPathTypes: js.Any = js.native
+    /* private */ var _getPathTypes: js.Any = js.native
     
     /** @internal */
     var _pluginapi: TransitionServicePluginAPI = js.native
     
     /** @internal */
-    var _registerCoreTransitionHooks: js.Any = js.native
+    /* private */ var _registerCoreTransitionHooks: js.Any = js.native
     
     /** @internal The registered transition hooks */
     @JSName("_registeredHooks")
     var _registeredHooks_TransitionService: RegisteredHooks = js.native
     
-    var _router: js.Any = js.native
+    /* private */ var _router: js.Any = js.native
     
     /** @internal */
     var _transitionCount: Double = js.native
@@ -285,8 +285,7 @@ object transitionServiceMod {
   @JSImport("@uirouter/core/lib/transition/transitionService", "defaultTransOpts")
   @js.native
   def defaultTransOpts: TransitionOptions = js.native
-  @scala.inline
-  def defaultTransOpts_=(x: TransitionOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransOpts")(x.asInstanceOf[js.Any])
+  inline def defaultTransOpts_=(x: TransitionOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransOpts")(x.asInstanceOf[js.Any])
   
   @js.native
   trait TransitionServicePluginAPI extends StObject {

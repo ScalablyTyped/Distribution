@@ -30,8 +30,7 @@ trait XModule
 }
 object XModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Identifier: String,
     acquire: () => Unit,
     getIdentifier: () => String,
@@ -43,16 +42,12 @@ object XModule {
     __obj.asInstanceOf[XModule]
   }
   
-  @scala.inline
-  implicit class XModuleMutableBuilder[Self <: XModule] (val x: Self) extends AnyVal {
+  extension [Self <: XModule](x: Self) {
     
-    @scala.inline
-    def setGetIdentifier(value: () => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIdentifier(value: String => Unit): Self = StObject.set(x, "setIdentifier", js.Any.fromFunction1(value))
+    inline def setSetIdentifier(value: String => Unit): Self = StObject.set(x, "setIdentifier", js.Any.fromFunction1(value))
   }
 }

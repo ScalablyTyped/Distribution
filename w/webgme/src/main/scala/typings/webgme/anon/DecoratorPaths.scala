@@ -58,8 +58,7 @@ trait DecoratorPaths extends StObject {
 }
 object DecoratorPaths {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decoratorPaths: js.Array[String],
     extraCss: js.Array[String],
     layout: Default,
@@ -71,46 +70,32 @@ object DecoratorPaths {
     __obj.asInstanceOf[DecoratorPaths]
   }
   
-  @scala.inline
-  implicit class DecoratorPathsMutableBuilder[Self <: DecoratorPaths] (val x: Self) extends AnyVal {
+  extension [Self <: DecoratorPaths](x: Self) {
     
-    @scala.inline
-    def setDecoratorPaths(value: js.Array[String]): Self = StObject.set(x, "decoratorPaths", value.asInstanceOf[js.Any])
+    inline def setDecoratorPaths(value: js.Array[String]): Self = StObject.set(x, "decoratorPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorPathsVarargs(value: String*): Self = StObject.set(x, "decoratorPaths", js.Array(value :_*))
+    inline def setDecoratorPathsVarargs(value: String*): Self = StObject.set(x, "decoratorPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setDecoratorToPreload(value: Double): Self = StObject.set(x, "decoratorToPreload", value.asInstanceOf[js.Any])
+    inline def setDecoratorToPreload(value: Double): Self = StObject.set(x, "decoratorToPreload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorToPreloadNull: Self = StObject.set(x, "decoratorToPreload", null)
+    inline def setDecoratorToPreloadNull: Self = StObject.set(x, "decoratorToPreload", null)
     
-    @scala.inline
-    def setExtraCss(value: js.Array[String]): Self = StObject.set(x, "extraCss", value.asInstanceOf[js.Any])
+    inline def setExtraCss(value: js.Array[String]): Self = StObject.set(x, "extraCss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraCssVarargs(value: String*): Self = StObject.set(x, "extraCss", js.Array(value :_*))
+    inline def setExtraCssVarargs(value: String*): Self = StObject.set(x, "extraCss", js.Array(value :_*))
     
-    @scala.inline
-    def setLayout(value: Default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelPaths(value: js.Array[String]): Self = StObject.set(x, "panelPaths", value.asInstanceOf[js.Any])
+    inline def setPanelPaths(value: js.Array[String]): Self = StObject.set(x, "panelPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelPathsVarargs(value: String*): Self = StObject.set(x, "panelPaths", js.Array(value :_*))
+    inline def setPanelPathsVarargs(value: String*): Self = StObject.set(x, "panelPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setSvgDirs(value: js.Array[String]): Self = StObject.set(x, "svgDirs", value.asInstanceOf[js.Any])
+    inline def setSvgDirs(value: js.Array[String]): Self = StObject.set(x, "svgDirs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgDirsVarargs(value: String*): Self = StObject.set(x, "svgDirs", js.Array(value :_*))
+    inline def setSvgDirsVarargs(value: String*): Self = StObject.set(x, "svgDirs", js.Array(value :_*))
     
-    @scala.inline
-    def setVisualizerDescriptors(value: js.Array[String]): Self = StObject.set(x, "visualizerDescriptors", value.asInstanceOf[js.Any])
+    inline def setVisualizerDescriptors(value: js.Array[String]): Self = StObject.set(x, "visualizerDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualizerDescriptorsVarargs(value: String*): Self = StObject.set(x, "visualizerDescriptors", js.Array(value :_*))
+    inline def setVisualizerDescriptorsVarargs(value: String*): Self = StObject.set(x, "visualizerDescriptors", js.Array(value :_*))
   }
 }

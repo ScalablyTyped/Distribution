@@ -27,49 +27,35 @@ trait SentenceAnalysis extends StObject {
 }
 object SentenceAnalysis {
   
-  @scala.inline
-  def apply(sentence_id: Double, text: String): SentenceAnalysis = {
+  inline def apply(sentence_id: Double, text: String): SentenceAnalysis = {
     val __obj = js.Dynamic.literal(sentence_id = sentence_id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentenceAnalysis]
   }
   
-  @scala.inline
-  implicit class SentenceAnalysisMutableBuilder[Self <: SentenceAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: SentenceAnalysis](x: Self) {
     
-    @scala.inline
-    def setInput_from(value: Double): Self = StObject.set(x, "input_from", value.asInstanceOf[js.Any])
+    inline def setInput_from(value: Double): Self = StObject.set(x, "input_from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_fromUndefined: Self = StObject.set(x, "input_from", js.undefined)
+    inline def setInput_fromUndefined: Self = StObject.set(x, "input_from", js.undefined)
     
-    @scala.inline
-    def setInput_to(value: Double): Self = StObject.set(x, "input_to", value.asInstanceOf[js.Any])
+    inline def setInput_to(value: Double): Self = StObject.set(x, "input_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_toUndefined: Self = StObject.set(x, "input_to", js.undefined)
+    inline def setInput_toUndefined: Self = StObject.set(x, "input_to", js.undefined)
     
-    @scala.inline
-    def setSentence_id(value: Double): Self = StObject.set(x, "sentence_id", value.asInstanceOf[js.Any])
+    inline def setSentence_id(value: Double): Self = StObject.set(x, "sentence_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTone_categories(value: js.Array[ToneCategory]): Self = StObject.set(x, "tone_categories", value.asInstanceOf[js.Any])
+    inline def setTone_categories(value: js.Array[ToneCategory]): Self = StObject.set(x, "tone_categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTone_categoriesUndefined: Self = StObject.set(x, "tone_categories", js.undefined)
+    inline def setTone_categoriesUndefined: Self = StObject.set(x, "tone_categories", js.undefined)
     
-    @scala.inline
-    def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value :_*))
+    inline def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value :_*))
     
-    @scala.inline
-    def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
+    inline def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
+    inline def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
-    @scala.inline
-    def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
   }
 }

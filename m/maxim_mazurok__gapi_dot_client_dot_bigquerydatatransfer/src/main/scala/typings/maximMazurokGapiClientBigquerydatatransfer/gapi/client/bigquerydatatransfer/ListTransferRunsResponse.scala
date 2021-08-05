@@ -14,28 +14,21 @@ trait ListTransferRunsResponse extends StObject {
 }
 object ListTransferRunsResponse {
   
-  @scala.inline
-  def apply(): ListTransferRunsResponse = {
+  inline def apply(): ListTransferRunsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTransferRunsResponse]
   }
   
-  @scala.inline
-  implicit class ListTransferRunsResponseMutableBuilder[Self <: ListTransferRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTransferRunsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTransferRuns(value: js.Array[TransferRun]): Self = StObject.set(x, "transferRuns", value.asInstanceOf[js.Any])
+    inline def setTransferRuns(value: js.Array[TransferRun]): Self = StObject.set(x, "transferRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferRunsUndefined: Self = StObject.set(x, "transferRuns", js.undefined)
+    inline def setTransferRunsUndefined: Self = StObject.set(x, "transferRuns", js.undefined)
     
-    @scala.inline
-    def setTransferRunsVarargs(value: TransferRun*): Self = StObject.set(x, "transferRuns", js.Array(value :_*))
+    inline def setTransferRunsVarargs(value: TransferRun*): Self = StObject.set(x, "transferRuns", js.Array(value :_*))
   }
 }

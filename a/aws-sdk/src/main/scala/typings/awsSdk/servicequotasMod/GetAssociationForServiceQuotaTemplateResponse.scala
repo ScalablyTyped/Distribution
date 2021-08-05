@@ -13,19 +13,15 @@ trait GetAssociationForServiceQuotaTemplateResponse extends StObject {
 }
 object GetAssociationForServiceQuotaTemplateResponse {
   
-  @scala.inline
-  def apply(): GetAssociationForServiceQuotaTemplateResponse = {
+  inline def apply(): GetAssociationForServiceQuotaTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAssociationForServiceQuotaTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GetAssociationForServiceQuotaTemplateResponseMutableBuilder[Self <: GetAssociationForServiceQuotaTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssociationForServiceQuotaTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setServiceQuotaTemplateAssociationStatus(value: ServiceQuotaTemplateAssociationStatus): Self = StObject.set(x, "ServiceQuotaTemplateAssociationStatus", value.asInstanceOf[js.Any])
+    inline def setServiceQuotaTemplateAssociationStatus(value: ServiceQuotaTemplateAssociationStatus): Self = StObject.set(x, "ServiceQuotaTemplateAssociationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceQuotaTemplateAssociationStatusUndefined: Self = StObject.set(x, "ServiceQuotaTemplateAssociationStatus", js.undefined)
+    inline def setServiceQuotaTemplateAssociationStatusUndefined: Self = StObject.set(x, "ServiceQuotaTemplateAssociationStatus", js.undefined)
   }
 }

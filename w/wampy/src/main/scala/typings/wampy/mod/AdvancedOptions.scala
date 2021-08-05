@@ -16,43 +16,31 @@ trait AdvancedOptions extends StObject {
 }
 object AdvancedOptions {
   
-  @scala.inline
-  def apply(): AdvancedOptions = {
+  inline def apply(): AdvancedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvancedOptions]
   }
   
-  @scala.inline
-  implicit class AdvancedOptionsMutableBuilder[Self <: AdvancedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedOptions](x: Self) {
     
-    @scala.inline
-    def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
+    inline def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisclose_meUndefined: Self = StObject.set(x, "disclose_me", js.undefined)
+    inline def setDisclose_meUndefined: Self = StObject.set(x, "disclose_me", js.undefined)
     
-    @scala.inline
-    def setEligible(value: Double | js.Array[Double]): Self = StObject.set(x, "eligible", value.asInstanceOf[js.Any])
+    inline def setEligible(value: Double | js.Array[Double]): Self = StObject.set(x, "eligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEligibleUndefined: Self = StObject.set(x, "eligible", js.undefined)
+    inline def setEligibleUndefined: Self = StObject.set(x, "eligible", js.undefined)
     
-    @scala.inline
-    def setEligibleVarargs(value: Double*): Self = StObject.set(x, "eligible", js.Array(value :_*))
+    inline def setEligibleVarargs(value: Double*): Self = StObject.set(x, "eligible", js.Array(value :_*))
     
-    @scala.inline
-    def setExclude(value: Double | js.Array[Double]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: Double | js.Array[Double]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setExclude_me(value: Boolean): Self = StObject.set(x, "exclude_me", value.asInstanceOf[js.Any])
+    inline def setExclude_me(value: Boolean): Self = StObject.set(x, "exclude_me", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude_meUndefined: Self = StObject.set(x, "exclude_me", js.undefined)
+    inline def setExclude_meUndefined: Self = StObject.set(x, "exclude_me", js.undefined)
   }
 }

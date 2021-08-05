@@ -10,16 +10,13 @@ trait Where extends StObject {
 }
 object Where {
   
-  @scala.inline
-  def apply(where: js.Any): Where = {
+  inline def apply(where: js.Any): Where = {
     val __obj = js.Dynamic.literal(where = where.asInstanceOf[js.Any])
     __obj.asInstanceOf[Where]
   }
   
-  @scala.inline
-  implicit class WhereMutableBuilder[Self <: Where] (val x: Self) extends AnyVal {
+  extension [Self <: Where](x: Self) {
     
-    @scala.inline
-    def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait IProfilerMoreRowsNotificationParams extends StObject {
 }
 object IProfilerMoreRowsNotificationParams {
   
-  @scala.inline
-  def apply(data: IProfilerTableRow, rowCount: Double, uri: String): IProfilerMoreRowsNotificationParams = {
+  inline def apply(data: IProfilerTableRow, rowCount: Double, uri: String): IProfilerMoreRowsNotificationParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProfilerMoreRowsNotificationParams]
   }
   
-  @scala.inline
-  implicit class IProfilerMoreRowsNotificationParamsMutableBuilder[Self <: IProfilerMoreRowsNotificationParams] (val x: Self) extends AnyVal {
+  extension [Self <: IProfilerMoreRowsNotificationParams](x: Self) {
     
-    @scala.inline
-    def setData(value: IProfilerTableRow): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IProfilerTableRow): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -26,67 +26,47 @@ trait PopupOptions extends StObject {
 }
 object PopupOptions {
   
-  @scala.inline
-  def apply(): PopupOptions = {
+  inline def apply(): PopupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupOptions]
   }
   
-  @scala.inline
-  implicit class PopupOptionsMutableBuilder[Self <: PopupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopupOptions](x: Self) {
     
-    @scala.inline
-    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
+    inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
+    inline def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
-    @scala.inline
-    def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
+    inline def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
+    inline def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
-    @scala.inline
-    def setOverlayTheme(value: String): Self = StObject.set(x, "overlayTheme", value.asInstanceOf[js.Any])
+    inline def setOverlayTheme(value: String): Self = StObject.set(x, "overlayTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayThemeUndefined: Self = StObject.set(x, "overlayTheme", js.undefined)
+    inline def setOverlayThemeUndefined: Self = StObject.set(x, "overlayTheme", js.undefined)
     
-    @scala.inline
-    def setPositionTo(value: String): Self = StObject.set(x, "positionTo", value.asInstanceOf[js.Any])
+    inline def setPositionTo(value: String): Self = StObject.set(x, "positionTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionToUndefined: Self = StObject.set(x, "positionTo", js.undefined)
+    inline def setPositionToUndefined: Self = StObject.set(x, "positionTo", js.undefined)
     
-    @scala.inline
-    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setTolerance(value: String): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: String): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

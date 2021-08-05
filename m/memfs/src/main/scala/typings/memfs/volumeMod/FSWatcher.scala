@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FSWatcher protected () extends EventEmitter {
   def this(vol: Volume) = this()
   
-  var _emit: js.Any = js.native
+  /* private */ var _emit: js.Any = js.native
   
   var _encoding: BufferEncoding = js.native
   
@@ -22,15 +22,15 @@ class FSWatcher protected () extends EventEmitter {
   
   var _filenameEncoded: TDataOut = js.native
   
-  var _getName: js.Any = js.native
+  /* private */ var _getName: js.Any = js.native
   
   var _link: Link = js.native
   
-  var _onNodeChange: js.Any = js.native
+  /* private */ var _onNodeChange: js.Any = js.native
   
-  var _onParentChild: js.Any = js.native
+  /* private */ var _onParentChild: js.Any = js.native
   
-  var _persist: js.Any = js.native
+  /* private */ var _persist: js.Any = js.native
   
   var _recursive: Boolean = js.native
   

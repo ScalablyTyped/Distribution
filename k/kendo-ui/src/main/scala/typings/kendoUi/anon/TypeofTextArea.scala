@@ -15,19 +15,15 @@ trait TypeofTextArea extends StObject {
 }
 object TypeofTextArea {
   
-  @scala.inline
-  def apply(extend: js.Object => TextArea, fn: TextArea): TypeofTextArea = {
+  inline def apply(extend: js.Object => TextArea, fn: TextArea): TypeofTextArea = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTextArea]
   }
   
-  @scala.inline
-  implicit class TypeofTextAreaMutableBuilder[Self <: TypeofTextArea] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTextArea](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => TextArea): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => TextArea): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: TextArea): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TextArea): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

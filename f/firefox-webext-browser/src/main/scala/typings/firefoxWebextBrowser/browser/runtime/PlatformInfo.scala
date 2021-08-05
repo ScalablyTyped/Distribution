@@ -21,25 +21,19 @@ trait PlatformInfo extends StObject {
 }
 object PlatformInfo {
   
-  @scala.inline
-  def apply(arch: PlatformArch, os: PlatformOs): PlatformInfo = {
+  inline def apply(arch: PlatformArch, os: PlatformOs): PlatformInfo = {
     val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformInfo]
   }
   
-  @scala.inline
-  implicit class PlatformInfoMutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformInfo](x: Self) {
     
-    @scala.inline
-    def setArch(value: PlatformArch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+    inline def setArch(value: PlatformArch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNacl_arch(value: PlatformNaclArch): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
+    inline def setNacl_arch(value: PlatformNaclArch): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNacl_archUndefined: Self = StObject.set(x, "nacl_arch", js.undefined)
+    inline def setNacl_archUndefined: Self = StObject.set(x, "nacl_arch", js.undefined)
     
-    @scala.inline
-    def setOs(value: PlatformOs): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: PlatformOs): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
   }
 }

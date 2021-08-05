@@ -21,19 +21,15 @@ trait AlternativePlaceId extends StObject {
 }
 object AlternativePlaceId {
   
-  @scala.inline
-  def apply(place_id: String): AlternativePlaceId = {
+  inline def apply(place_id: String): AlternativePlaceId = {
     val __obj = js.Dynamic.literal(place_id = place_id.asInstanceOf[js.Any], scope = "APP")
     __obj.asInstanceOf[AlternativePlaceId]
   }
   
-  @scala.inline
-  implicit class AlternativePlaceIdMutableBuilder[Self <: AlternativePlaceId] (val x: Self) extends AnyVal {
+  extension [Self <: AlternativePlaceId](x: Self) {
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: APP): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: APP): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait LogGroupField extends StObject {
 }
 object LogGroupField {
   
-  @scala.inline
-  def apply(): LogGroupField = {
+  inline def apply(): LogGroupField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogGroupField]
   }
   
-  @scala.inline
-  implicit class LogGroupFieldMutableBuilder[Self <: LogGroupField] (val x: Self) extends AnyVal {
+  extension [Self <: LogGroupField](x: Self) {
     
-    @scala.inline
-    def setName(value: Field): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Field): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPercent(value: Percentage): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Percentage): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

@@ -44,43 +44,31 @@ trait ParamsResourceVideocategoriesList
 }
 object ParamsResourceVideocategoriesList {
   
-  @scala.inline
-  def apply(): ParamsResourceVideocategoriesList = {
+  inline def apply(): ParamsResourceVideocategoriesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVideocategoriesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVideocategoriesListMutableBuilder[Self <: ParamsResourceVideocategoriesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVideocategoriesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

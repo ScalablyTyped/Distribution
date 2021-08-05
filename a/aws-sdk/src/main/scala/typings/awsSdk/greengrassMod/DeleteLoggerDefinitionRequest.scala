@@ -13,16 +13,13 @@ trait DeleteLoggerDefinitionRequest extends StObject {
 }
 object DeleteLoggerDefinitionRequest {
   
-  @scala.inline
-  def apply(LoggerDefinitionId: string): DeleteLoggerDefinitionRequest = {
+  inline def apply(LoggerDefinitionId: string): DeleteLoggerDefinitionRequest = {
     val __obj = js.Dynamic.literal(LoggerDefinitionId = LoggerDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoggerDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLoggerDefinitionRequestMutableBuilder[Self <: DeleteLoggerDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLoggerDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
+    inline def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
   }
 }

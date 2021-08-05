@@ -28,8 +28,7 @@ object datePickerMod {
     @JSImport("office-ui-fabric-react/lib/components/DatePicker", "DatePickerBase.defaultProps")
     @js.native
     def defaultProps: IDatePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/DatePicker", "DateRangeType")

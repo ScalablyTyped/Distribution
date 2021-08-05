@@ -43,55 +43,39 @@ trait ContainerDefinition extends StObject {
 }
 object ContainerDefinition {
   
-  @scala.inline
-  def apply(): ContainerDefinition = {
+  inline def apply(): ContainerDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerDefinition]
   }
   
-  @scala.inline
-  implicit class ContainerDefinitionMutableBuilder[Self <: ContainerDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerDefinition](x: Self) {
     
-    @scala.inline
-    def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
+    inline def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerHostnameUndefined: Self = StObject.set(x, "ContainerHostname", js.undefined)
+    inline def setContainerHostnameUndefined: Self = StObject.set(x, "ContainerHostname", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: EnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: EnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    @scala.inline
-    def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageConfig(value: ImageConfig): Self = StObject.set(x, "ImageConfig", value.asInstanceOf[js.Any])
+    inline def setImageConfig(value: ImageConfig): Self = StObject.set(x, "ImageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageConfigUndefined: Self = StObject.set(x, "ImageConfig", js.undefined)
+    inline def setImageConfigUndefined: Self = StObject.set(x, "ImageConfig", js.undefined)
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
-    @scala.inline
-    def setMode(value: ContainerMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ContainerMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
+    inline def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
+    inline def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
     
-    @scala.inline
-    def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
+    inline def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageNameUndefined: Self = StObject.set(x, "ModelPackageName", js.undefined)
+    inline def setModelPackageNameUndefined: Self = StObject.set(x, "ModelPackageName", js.undefined)
   }
 }

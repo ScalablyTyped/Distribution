@@ -13,19 +13,15 @@ trait UpdateMultiplexResponse extends StObject {
 }
 object UpdateMultiplexResponse {
   
-  @scala.inline
-  def apply(): UpdateMultiplexResponse = {
+  inline def apply(): UpdateMultiplexResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMultiplexResponse]
   }
   
-  @scala.inline
-  implicit class UpdateMultiplexResponseMutableBuilder[Self <: UpdateMultiplexResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMultiplexResponse](x: Self) {
     
-    @scala.inline
-    def setMultiplex(value: Multiplex): Self = StObject.set(x, "Multiplex", value.asInstanceOf[js.Any])
+    inline def setMultiplex(value: Multiplex): Self = StObject.set(x, "Multiplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexUndefined: Self = StObject.set(x, "Multiplex", js.undefined)
+    inline def setMultiplexUndefined: Self = StObject.set(x, "Multiplex", js.undefined)
   }
 }

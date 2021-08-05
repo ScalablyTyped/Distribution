@@ -15,10 +15,8 @@ object FastToken {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DONTKNOW: `-1` = -1.asInstanceOf[`-1`]
+    inline def DONTKNOW: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def NAMESPACE: `65536` = 65536.asInstanceOf[`65536`]
+    inline def NAMESPACE: `65536` = 65536.asInstanceOf[`65536`]
   }
 }

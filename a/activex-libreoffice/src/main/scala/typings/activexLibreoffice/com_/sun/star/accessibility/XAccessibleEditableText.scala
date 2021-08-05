@@ -113,8 +113,7 @@ trait XAccessibleEditableText
 }
 object XAccessibleEditableText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaretPosition: Double,
     CharacterCount: Double,
     SelectedText: String,
@@ -153,28 +152,20 @@ object XAccessibleEditableText {
     __obj.asInstanceOf[XAccessibleEditableText]
   }
   
-  @scala.inline
-  implicit class XAccessibleEditableTextMutableBuilder[Self <: XAccessibleEditableText] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleEditableText](x: Self) {
     
-    @scala.inline
-    def setCutText(value: (Double, Double) => Boolean): Self = StObject.set(x, "cutText", js.Any.fromFunction2(value))
+    inline def setCutText(value: (Double, Double) => Boolean): Self = StObject.set(x, "cutText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeleteText(value: (Double, Double) => Boolean): Self = StObject.set(x, "deleteText", js.Any.fromFunction2(value))
+    inline def setDeleteText(value: (Double, Double) => Boolean): Self = StObject.set(x, "deleteText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertText(value: (String, Double) => Boolean): Self = StObject.set(x, "insertText", js.Any.fromFunction2(value))
+    inline def setInsertText(value: (String, Double) => Boolean): Self = StObject.set(x, "insertText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPasteText(value: Double => Boolean): Self = StObject.set(x, "pasteText", js.Any.fromFunction1(value))
+    inline def setPasteText(value: Double => Boolean): Self = StObject.set(x, "pasteText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceText(value: (Double, Double, String) => Boolean): Self = StObject.set(x, "replaceText", js.Any.fromFunction3(value))
+    inline def setReplaceText(value: (Double, Double, String) => Boolean): Self = StObject.set(x, "replaceText", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Boolean): Self = StObject.set(x, "setAttributes", js.Any.fromFunction3(value))
+    inline def setSetAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Boolean): Self = StObject.set(x, "setAttributes", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetText(value: String => Boolean): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Boolean): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

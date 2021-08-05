@@ -15,19 +15,16 @@ object pullToRefreshLocaleZhCNMod {
     @JSImport("antd-mobile/lib/pull-to-refresh/locale/zh_CN", "default.activateText")
     @js.native
     def activateText: String = js.native
-    @scala.inline
-    def activateText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activateText")(x.asInstanceOf[js.Any])
+    inline def activateText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activateText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/pull-to-refresh/locale/zh_CN", "default.deactivateText")
     @js.native
     def deactivateText: String = js.native
-    @scala.inline
-    def deactivateText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deactivateText")(x.asInstanceOf[js.Any])
+    inline def deactivateText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deactivateText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/pull-to-refresh/locale/zh_CN", "default.finishText")
     @js.native
     def finishText: String = js.native
-    @scala.inline
-    def finishText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("finishText")(x.asInstanceOf[js.Any])
+    inline def finishText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("finishText")(x.asInstanceOf[js.Any])
   }
 }

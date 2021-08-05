@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EdgeSearchEngineType extends StObject
 object EdgeSearchEngineType {
   
-  @scala.inline
-  def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
+  inline def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
   
-  @scala.inline
-  def bing: typings.microsoftGraph.microsoftGraphStrings.bing = "bing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.bing]
+  inline def bing: typings.microsoftGraph.microsoftGraphStrings.bing = "bing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.bing]
 }

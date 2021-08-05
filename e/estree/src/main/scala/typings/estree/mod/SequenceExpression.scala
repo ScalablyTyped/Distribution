@@ -16,23 +16,18 @@ trait SequenceExpression
 }
 object SequenceExpression {
   
-  @scala.inline
-  def apply(expressions: js.Array[Expression]): SequenceExpression = {
+  inline def apply(expressions: js.Array[Expression]): SequenceExpression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SequenceExpression")
     __obj.asInstanceOf[SequenceExpression]
   }
   
-  @scala.inline
-  implicit class SequenceExpressionMutableBuilder[Self <: SequenceExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceExpression](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.SequenceExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.SequenceExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

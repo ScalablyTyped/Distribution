@@ -25,26 +25,20 @@ object alert {
   }
   object IAlert {
     
-    @scala.inline
-    def apply($promise: IPromise[Unit], hide: () => Unit, show: () => Unit, toggle: () => Unit): IAlert = {
+    inline def apply($promise: IPromise[Unit], hide: () => Unit, show: () => Unit, toggle: () => Unit): IAlert = {
       val __obj = js.Dynamic.literal($promise = $promise.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
       __obj.asInstanceOf[IAlert]
     }
     
-    @scala.inline
-    implicit class IAlertMutableBuilder[Self <: IAlert] (val x: Self) extends AnyVal {
+    extension [Self <: IAlert](x: Self) {
       
-      @scala.inline
-      def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
+      inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
   
@@ -86,116 +80,80 @@ object alert {
   }
   object IAlertOptions {
     
-    @scala.inline
-    def apply(): IAlertOptions = {
+    inline def apply(): IAlertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAlertOptions]
     }
     
-    @scala.inline
-    implicit class IAlertOptionsMutableBuilder[Self <: IAlertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAlertOptions](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String | Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String | Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+      inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+      inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      @scala.inline
-      def setDismissable(value: Boolean): Self = StObject.set(x, "dismissable", value.asInstanceOf[js.Any])
+      inline def setDismissable(value: Boolean): Self = StObject.set(x, "dismissable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissableUndefined: Self = StObject.set(x, "dismissable", js.undefined)
+      inline def setDismissableUndefined: Self = StObject.set(x, "dismissable", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double | Boolean): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double | Boolean): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setOnBeforeHide(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction1(value))
+      inline def setOnBeforeHide(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
+      inline def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
       
-      @scala.inline
-      def setOnBeforeShow(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction1(value))
+      inline def setOnBeforeShow(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
+      inline def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+      inline def setOnHide(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* alert */ IAlert => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -205,17 +163,14 @@ object alert {
   }
   object IAlertProvider {
     
-    @scala.inline
-    def apply(defaults: IAlertOptions): IAlertProvider = {
+    inline def apply(defaults: IAlertOptions): IAlertProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAlertProvider]
     }
     
-    @scala.inline
-    implicit class IAlertProviderMutableBuilder[Self <: IAlertProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IAlertProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: IAlertOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: IAlertOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
   

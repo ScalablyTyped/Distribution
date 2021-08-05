@@ -22,25 +22,19 @@ trait DrawProperties extends StObject {
 }
 object DrawProperties {
   
-  @scala.inline
-  def apply(): DrawProperties = {
+  inline def apply(): DrawProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawProperties]
   }
   
-  @scala.inline
-  implicit class DrawPropertiesMutableBuilder[Self <: DrawProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DrawProperties](x: Self) {
     
-    @scala.inline
-    def setActiveAction(value: DrawActionProperties): Self = StObject.set(x, "activeAction", value.asInstanceOf[js.Any])
+    inline def setActiveAction(value: DrawActionProperties): Self = StObject.set(x, "activeAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveActionUndefined: Self = StObject.set(x, "activeAction", js.undefined)
+    inline def setActiveActionUndefined: Self = StObject.set(x, "activeAction", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

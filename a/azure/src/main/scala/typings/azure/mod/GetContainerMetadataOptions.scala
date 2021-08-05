@@ -12,19 +12,15 @@ trait GetContainerMetadataOptions
 }
 object GetContainerMetadataOptions {
   
-  @scala.inline
-  def apply(): GetContainerMetadataOptions = {
+  inline def apply(): GetContainerMetadataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerMetadataOptions]
   }
   
-  @scala.inline
-  implicit class GetContainerMetadataOptionsMutableBuilder[Self <: GetContainerMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "accessConditions", value.asInstanceOf[js.Any])
+    inline def setAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "accessConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessConditionsUndefined: Self = StObject.set(x, "accessConditions", js.undefined)
+    inline def setAccessConditionsUndefined: Self = StObject.set(x, "accessConditions", js.undefined)
   }
 }

@@ -17,16 +17,13 @@ trait ServiceClientCredentials extends StObject {
 }
 object ServiceClientCredentials {
   
-  @scala.inline
-  def apply(signRequest: (WebResource, js.Function1[/* err */ Error, Unit]) => Unit): ServiceClientCredentials = {
+  inline def apply(signRequest: (WebResource, js.Function1[/* err */ Error, Unit]) => Unit): ServiceClientCredentials = {
     val __obj = js.Dynamic.literal(signRequest = js.Any.fromFunction2(signRequest))
     __obj.asInstanceOf[ServiceClientCredentials]
   }
   
-  @scala.inline
-  implicit class ServiceClientCredentialsMutableBuilder[Self <: ServiceClientCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceClientCredentials](x: Self) {
     
-    @scala.inline
-    def setSignRequest(value: (WebResource, js.Function1[/* err */ Error, Unit]) => Unit): Self = StObject.set(x, "signRequest", js.Any.fromFunction2(value))
+    inline def setSignRequest(value: (WebResource, js.Function1[/* err */ Error, Unit]) => Unit): Self = StObject.set(x, "signRequest", js.Any.fromFunction2(value))
   }
 }

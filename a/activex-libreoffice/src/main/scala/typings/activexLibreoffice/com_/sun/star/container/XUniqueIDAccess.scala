@@ -19,8 +19,7 @@ trait XUniqueIDAccess
 }
 object XUniqueIDAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getByUniqueID: String => js.Any,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XUniqueIDAccess {
     __obj.asInstanceOf[XUniqueIDAccess]
   }
   
-  @scala.inline
-  implicit class XUniqueIDAccessMutableBuilder[Self <: XUniqueIDAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XUniqueIDAccess](x: Self) {
     
-    @scala.inline
-    def setGetByUniqueID(value: String => js.Any): Self = StObject.set(x, "getByUniqueID", js.Any.fromFunction1(value))
+    inline def setGetByUniqueID(value: String => js.Any): Self = StObject.set(x, "getByUniqueID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveByUniqueID(value: String => Unit): Self = StObject.set(x, "removeByUniqueID", js.Any.fromFunction1(value))
+    inline def setRemoveByUniqueID(value: String => Unit): Self = StObject.set(x, "removeByUniqueID", js.Any.fromFunction1(value))
   }
 }

@@ -23,43 +23,31 @@ trait Actor extends StObject {
 }
 object Actor {
   
-  @scala.inline
-  def apply(): Actor = {
+  inline def apply(): Actor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Actor]
   }
   
-  @scala.inline
-  implicit class ActorMutableBuilder[Self <: Actor] (val x: Self) extends AnyVal {
+  extension [Self <: Actor](x: Self) {
     
-    @scala.inline
-    def setAdministrator(value: js.Any): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
+    inline def setAdministrator(value: js.Any): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
+    inline def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
     
-    @scala.inline
-    def setAnonymous(value: js.Any): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: js.Any): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+    inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     
-    @scala.inline
-    def setImpersonation(value: Impersonation): Self = StObject.set(x, "impersonation", value.asInstanceOf[js.Any])
+    inline def setImpersonation(value: Impersonation): Self = StObject.set(x, "impersonation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonationUndefined: Self = StObject.set(x, "impersonation", js.undefined)
+    inline def setImpersonationUndefined: Self = StObject.set(x, "impersonation", js.undefined)
     
-    @scala.inline
-    def setSystem(value: SystemEvent): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: SystemEvent): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

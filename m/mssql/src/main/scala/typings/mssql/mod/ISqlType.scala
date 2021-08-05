@@ -10,17 +10,14 @@ trait ISqlType extends StObject {
 }
 object ISqlType {
   
-  @scala.inline
-  def apply(`type`: ISqlTypeFactory): ISqlType = {
+  inline def apply(`type`: ISqlTypeFactory): ISqlType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISqlType]
   }
   
-  @scala.inline
-  implicit class ISqlTypeMutableBuilder[Self <: ISqlType] (val x: Self) extends AnyVal {
+  extension [Self <: ISqlType](x: Self) {
     
-    @scala.inline
-    def setType(value: ISqlTypeFactory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ISqlTypeFactory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

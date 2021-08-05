@@ -21,6 +21,5 @@ object LightSensor {
     * @return The default ambient-light sensor or null if no integrated light sensors are found.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.LightSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.LightSensor]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.LightSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.LightSensor]
 }

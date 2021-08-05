@@ -29,20 +29,16 @@ object cardActionsMod {
   }
   object CardActionsProps {
     
-    @scala.inline
-    def apply(): CardActionsProps = {
+    inline def apply(): CardActionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardActionsProps]
     }
     
-    @scala.inline
-    implicit class CardActionsPropsMutableBuilder[Self <: CardActionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardActionsProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     }
   }
 }

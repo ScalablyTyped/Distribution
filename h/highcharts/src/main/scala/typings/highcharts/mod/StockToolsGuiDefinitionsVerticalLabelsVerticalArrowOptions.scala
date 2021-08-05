@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions extends StObjec
 }
 object StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions = {
+  inline def apply(): StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

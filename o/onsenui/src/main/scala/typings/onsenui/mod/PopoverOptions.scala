@@ -10,19 +10,15 @@ trait PopoverOptions extends StObject {
 }
 object PopoverOptions {
   
-  @scala.inline
-  def apply(): PopoverOptions = {
+  inline def apply(): PopoverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopoverOptions]
   }
   
-  @scala.inline
-  implicit class PopoverOptionsMutableBuilder[Self <: PopoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopoverOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

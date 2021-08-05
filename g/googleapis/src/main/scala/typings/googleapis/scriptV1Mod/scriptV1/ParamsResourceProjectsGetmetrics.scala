@@ -35,37 +35,27 @@ trait ParamsResourceProjectsGetmetrics
 }
 object ParamsResourceProjectsGetmetrics {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsGetmetrics = {
+  inline def apply(): ParamsResourceProjectsGetmetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsGetmetrics]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsGetmetricsMutableBuilder[Self <: ParamsResourceProjectsGetmetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsGetmetrics](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMetricsFilterDotdeploymentId(value: String): Self = StObject.set(x, "metricsFilter.deploymentId", value.asInstanceOf[js.Any])
+    inline def setMetricsFilterDotdeploymentId(value: String): Self = StObject.set(x, "metricsFilter.deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsFilterDotdeploymentIdUndefined: Self = StObject.set(x, "metricsFilter.deploymentId", js.undefined)
+    inline def setMetricsFilterDotdeploymentIdUndefined: Self = StObject.set(x, "metricsFilter.deploymentId", js.undefined)
     
-    @scala.inline
-    def setMetricsGranularity(value: String): Self = StObject.set(x, "metricsGranularity", value.asInstanceOf[js.Any])
+    inline def setMetricsGranularity(value: String): Self = StObject.set(x, "metricsGranularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsGranularityUndefined: Self = StObject.set(x, "metricsGranularity", js.undefined)
+    inline def setMetricsGranularityUndefined: Self = StObject.set(x, "metricsGranularity", js.undefined)
     
-    @scala.inline
-    def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
   }
 }

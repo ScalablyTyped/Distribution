@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DEBUG(isDebug: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DEBUG")(isDebug.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def DEBUG(isDebug: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DEBUG")(isDebug.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   sealed trait SQLErrors extends StObject
@@ -71,32 +70,21 @@ object mod {
     /* 2 */ val VERSION_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.VERSION_ERR & Double = js.native
   }
   
-  @scala.inline
-  def deleteDatabase(params: DatabaseParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def deleteDatabase(params: DatabaseParams, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deleteDatabase(params: DatabaseParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deleteDatabase(params: DatabaseParams, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def deleteDatabase_Promise(params: DatabaseParams): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def deleteDatabase_Promise(params: DatabaseParams): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def enablePromise(enablePromise: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePromise")(enablePromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enablePromise(enablePromise: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePromise")(enablePromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def openDatabase(params: DatabaseParams): SQLiteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[SQLiteDatabase]
-  @scala.inline
-  def openDatabase(params: DatabaseParams, success: js.Function0[Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
-  @scala.inline
-  def openDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
-  @scala.inline
-  def openDatabase(params: DatabaseParams, success: Unit, error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
+  inline def openDatabase(params: DatabaseParams): SQLiteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[SQLiteDatabase]
+  inline def openDatabase(params: DatabaseParams, success: js.Function0[Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
+  inline def openDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
+  inline def openDatabase(params: DatabaseParams, success: Unit, error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
   
-  @scala.inline
-  def openDatabase_Promise(params: DatabaseParams): js.Promise[SQLiteDatabase] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SQLiteDatabase]]
+  inline def openDatabase_Promise(params: DatabaseParams): js.Promise[SQLiteDatabase] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SQLiteDatabase]]
   
   trait DatabaseOptionalParams extends StObject {
     
@@ -109,32 +97,24 @@ object mod {
   }
   object DatabaseOptionalParams {
     
-    @scala.inline
-    def apply(): DatabaseOptionalParams = {
+    inline def apply(): DatabaseOptionalParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatabaseOptionalParams]
     }
     
-    @scala.inline
-    implicit class DatabaseOptionalParamsMutableBuilder[Self <: DatabaseOptionalParams] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseOptionalParams](x: Self) {
       
-      @scala.inline
-      def setCreateFromLocation(value: Double | String): Self = StObject.set(x, "createFromLocation", value.asInstanceOf[js.Any])
+      inline def setCreateFromLocation(value: Double | String): Self = StObject.set(x, "createFromLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromLocationUndefined: Self = StObject.set(x, "createFromLocation", js.undefined)
+      inline def setCreateFromLocationUndefined: Self = StObject.set(x, "createFromLocation", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     }
   }
   
@@ -154,20 +134,16 @@ object mod {
   }
   object DatabaseParams {
     
-    @scala.inline
-    def apply(location: Location, name: String): DatabaseParams = {
+    inline def apply(location: Location, name: String): DatabaseParams = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatabaseParams]
     }
     
-    @scala.inline
-    implicit class DatabaseParamsMutableBuilder[Self <: DatabaseParams] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseParams](x: Self) {
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,17 +156,13 @@ object mod {
   trait Location extends StObject
   object Location {
     
-    @scala.inline
-    def default: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default = "default".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default]
+    inline def default: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default = "default".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default]
     
-    @scala.inline
-    def Documents: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents = "Documents".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents]
+    inline def Documents: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents = "Documents".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents]
     
-    @scala.inline
-    def Library: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library = "Library".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library]
+    inline def Library: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library = "Library".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library]
     
-    @scala.inline
-    def Shared: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Shared = "Shared".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Shared]
+    inline def Shared: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Shared = "Shared".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Shared]
   }
   
   trait ResultSet extends StObject {
@@ -203,23 +175,18 @@ object mod {
   }
   object ResultSet {
     
-    @scala.inline
-    def apply(insertId: Double, rows: ResultSetRowList, rowsAffected: Double): ResultSet = {
+    inline def apply(insertId: Double, rows: ResultSetRowList, rowsAffected: Double): ResultSet = {
       val __obj = js.Dynamic.literal(insertId = insertId.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultSet]
     }
     
-    @scala.inline
-    implicit class ResultSetMutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
+    extension [Self <: ResultSet](x: Self) {
       
-      @scala.inline
-      def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
+      inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: ResultSetRowList): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: ResultSetRowList): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+      inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,23 +200,18 @@ object mod {
   }
   object ResultSetRowList {
     
-    @scala.inline
-    def apply(item: Double => js.Any, length: Double, raw: () => js.Array[js.Any]): ResultSetRowList = {
+    inline def apply(item: Double => js.Any, length: Double, raw: () => js.Array[js.Any]): ResultSetRowList = {
       val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any], raw = js.Any.fromFunction0(raw))
       __obj.asInstanceOf[ResultSetRowList]
     }
     
-    @scala.inline
-    implicit class ResultSetRowListMutableBuilder[Self <: ResultSetRowList] (val x: Self) extends AnyVal {
+    extension [Self <: ResultSetRowList](x: Self) {
       
-      @scala.inline
-      def setItem(value: Double => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: () => js.Array[js.Any]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => js.Array[js.Any]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
     }
   }
   
@@ -261,20 +223,16 @@ object mod {
   }
   object SQLError {
     
-    @scala.inline
-    def apply(code: Double, message: String): SQLError = {
+    inline def apply(code: Double, message: String): SQLError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[SQLError]
     }
     
-    @scala.inline
-    implicit class SQLErrorMutableBuilder[Self <: SQLError] (val x: Self) extends AnyVal {
+    extension [Self <: SQLError](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   

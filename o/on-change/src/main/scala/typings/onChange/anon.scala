@@ -90,56 +90,40 @@ object anon {
   }
   object OptionspathAsArrayfalseun {
     
-    @scala.inline
-    def apply(pathAsArray: js.UndefOr[Boolean] & js.UndefOr[`false`]): OptionspathAsArrayfalseun = {
+    inline def apply(pathAsArray: js.UndefOr[Boolean] & js.UndefOr[`false`]): OptionspathAsArrayfalseun = {
       val __obj = js.Dynamic.literal(pathAsArray = pathAsArray.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionspathAsArrayfalseun]
     }
     
-    @scala.inline
-    implicit class OptionspathAsArrayfalseunMutableBuilder[Self <: OptionspathAsArrayfalseun] (val x: Self) extends AnyVal {
+    extension [Self <: OptionspathAsArrayfalseun](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setIgnoreDetached(value: Boolean): Self = StObject.set(x, "ignoreDetached", value.asInstanceOf[js.Any])
+      inline def setIgnoreDetached(value: Boolean): Self = StObject.set(x, "ignoreDetached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDetachedUndefined: Self = StObject.set(x, "ignoreDetached", js.undefined)
+      inline def setIgnoreDetachedUndefined: Self = StObject.set(x, "ignoreDetached", js.undefined)
       
-      @scala.inline
-      def setIgnoreKeys(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "ignoreKeys", value.asInstanceOf[js.Any])
+      inline def setIgnoreKeys(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "ignoreKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreKeysUndefined: Self = StObject.set(x, "ignoreKeys", js.undefined)
+      inline def setIgnoreKeysUndefined: Self = StObject.set(x, "ignoreKeys", js.undefined)
       
-      @scala.inline
-      def setIgnoreKeysVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "ignoreKeys", js.Array(value :_*))
+      inline def setIgnoreKeysVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "ignoreKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreSymbols(value: Boolean): Self = StObject.set(x, "ignoreSymbols", value.asInstanceOf[js.Any])
+      inline def setIgnoreSymbols(value: Boolean): Self = StObject.set(x, "ignoreSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSymbolsUndefined: Self = StObject.set(x, "ignoreSymbols", js.undefined)
+      inline def setIgnoreSymbolsUndefined: Self = StObject.set(x, "ignoreSymbols", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnderscores(value: Boolean): Self = StObject.set(x, "ignoreUnderscores", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnderscores(value: Boolean): Self = StObject.set(x, "ignoreUnderscores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnderscoresUndefined: Self = StObject.set(x, "ignoreUnderscores", js.undefined)
+      inline def setIgnoreUnderscoresUndefined: Self = StObject.set(x, "ignoreUnderscores", js.undefined)
       
-      @scala.inline
-      def setIsShallow(value: Boolean): Self = StObject.set(x, "isShallow", value.asInstanceOf[js.Any])
+      inline def setIsShallow(value: Boolean): Self = StObject.set(x, "isShallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
+      inline def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
       
-      @scala.inline
-      def setPathAsArray(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      inline def setPathAsArray(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,56 +209,40 @@ object anon {
   }
   object OptionspathAsArraytrue {
     
-    @scala.inline
-    def apply(pathAsArray: js.UndefOr[Boolean] & `true`): OptionspathAsArraytrue = {
+    inline def apply(pathAsArray: js.UndefOr[Boolean] & `true`): OptionspathAsArraytrue = {
       val __obj = js.Dynamic.literal(pathAsArray = pathAsArray.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionspathAsArraytrue]
     }
     
-    @scala.inline
-    implicit class OptionspathAsArraytrueMutableBuilder[Self <: OptionspathAsArraytrue] (val x: Self) extends AnyVal {
+    extension [Self <: OptionspathAsArraytrue](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setIgnoreDetached(value: Boolean): Self = StObject.set(x, "ignoreDetached", value.asInstanceOf[js.Any])
+      inline def setIgnoreDetached(value: Boolean): Self = StObject.set(x, "ignoreDetached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDetachedUndefined: Self = StObject.set(x, "ignoreDetached", js.undefined)
+      inline def setIgnoreDetachedUndefined: Self = StObject.set(x, "ignoreDetached", js.undefined)
       
-      @scala.inline
-      def setIgnoreKeys(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "ignoreKeys", value.asInstanceOf[js.Any])
+      inline def setIgnoreKeys(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "ignoreKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreKeysUndefined: Self = StObject.set(x, "ignoreKeys", js.undefined)
+      inline def setIgnoreKeysUndefined: Self = StObject.set(x, "ignoreKeys", js.undefined)
       
-      @scala.inline
-      def setIgnoreKeysVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "ignoreKeys", js.Array(value :_*))
+      inline def setIgnoreKeysVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "ignoreKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreSymbols(value: Boolean): Self = StObject.set(x, "ignoreSymbols", value.asInstanceOf[js.Any])
+      inline def setIgnoreSymbols(value: Boolean): Self = StObject.set(x, "ignoreSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSymbolsUndefined: Self = StObject.set(x, "ignoreSymbols", js.undefined)
+      inline def setIgnoreSymbolsUndefined: Self = StObject.set(x, "ignoreSymbols", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnderscores(value: Boolean): Self = StObject.set(x, "ignoreUnderscores", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnderscores(value: Boolean): Self = StObject.set(x, "ignoreUnderscores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnderscoresUndefined: Self = StObject.set(x, "ignoreUnderscores", js.undefined)
+      inline def setIgnoreUnderscoresUndefined: Self = StObject.set(x, "ignoreUnderscores", js.undefined)
       
-      @scala.inline
-      def setIsShallow(value: Boolean): Self = StObject.set(x, "isShallow", value.asInstanceOf[js.Any])
+      inline def setIsShallow(value: Boolean): Self = StObject.set(x, "isShallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
+      inline def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
       
-      @scala.inline
-      def setPathAsArray(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      inline def setPathAsArray(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
     }
   }
 }

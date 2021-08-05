@@ -18,37 +18,27 @@ trait DeepPartialPartialHeaders extends StObject {
 }
 object DeepPartialPartialHeaders {
   
-  @scala.inline
-  def apply(): DeepPartialPartialHeaders = {
+  inline def apply(): DeepPartialPartialHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeepPartialPartialHeaders]
   }
   
-  @scala.inline
-  implicit class DeepPartialPartialHeadersMutableBuilder[Self <: DeepPartialPartialHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: DeepPartialPartialHeaders](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
     
-    @scala.inline
-    def `setContent-Type`(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+    inline def `setContent-Type`(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
+    inline def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
     
-    @scala.inline
-    def `setIdempotency-Key`(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
+    inline def `setIdempotency-Key`(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIdempotency-KeyUndefined`: Self = StObject.set(x, "Idempotency-Key", js.undefined)
+    inline def `setIdempotency-KeyUndefined`: Self = StObject.set(x, "Idempotency-Key", js.undefined)
     
-    @scala.inline
-    def `setUser-Agent`(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+    inline def `setUser-Agent`(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
+    inline def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
   }
 }

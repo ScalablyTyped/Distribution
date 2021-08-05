@@ -10,16 +10,13 @@ trait ExcludedPath extends StObject {
 }
 object ExcludedPath {
   
-  @scala.inline
-  def apply(Path: String): ExcludedPath = {
+  inline def apply(Path: String): ExcludedPath = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludedPath]
   }
   
-  @scala.inline
-  implicit class ExcludedPathMutableBuilder[Self <: ExcludedPath] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedPath](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

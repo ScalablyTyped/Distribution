@@ -10,8 +10,7 @@ trait ICapture
      with IAbstract
 object ICapture {
   
-  @scala.inline
-  def apply(): ICapture = {
+  inline def apply(): ICapture = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICapture]
   }

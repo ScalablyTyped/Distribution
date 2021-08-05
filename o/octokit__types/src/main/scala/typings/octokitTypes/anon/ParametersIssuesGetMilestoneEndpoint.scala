@@ -18,8 +18,7 @@ trait ParametersIssuesGetMilestoneEndpoint extends StObject {
 }
 object ParametersIssuesGetMilestoneEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: IssuesGetMilestoneEndpoint,
     request: IssuesGetMilestoneRequestOptions,
     response: OctokitResponse[IssuesGetMilestoneResponseData]
@@ -28,16 +27,12 @@ object ParametersIssuesGetMilestoneEndpoint {
     __obj.asInstanceOf[ParametersIssuesGetMilestoneEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersIssuesGetMilestoneEndpointMutableBuilder[Self <: ParametersIssuesGetMilestoneEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersIssuesGetMilestoneEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: IssuesGetMilestoneEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IssuesGetMilestoneEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: IssuesGetMilestoneRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IssuesGetMilestoneRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[IssuesGetMilestoneResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[IssuesGetMilestoneResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

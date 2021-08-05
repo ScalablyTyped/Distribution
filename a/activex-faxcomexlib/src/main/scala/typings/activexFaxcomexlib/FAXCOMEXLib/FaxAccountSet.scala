@@ -10,7 +10,7 @@ trait FaxAccountSet extends StObject {
   /** Adds a fax account */
   def AddAccount(bstrAccountName: String): FaxAccount
   
-  @JSName("FAXCOMEXLib.FaxAccountSet_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxAccountSet_typekey")
   var FAXCOMEXLibDotFaxAccountSet_typekey: FaxAccountSet
   
   /** Get fax account by name */
@@ -24,8 +24,7 @@ trait FaxAccountSet extends StObject {
 }
 object FaxAccountSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddAccount: String => FaxAccount,
     FAXCOMEXLibDotFaxAccountSet_typekey: FaxAccountSet,
     GetAccount: String => FaxAccount,
@@ -37,22 +36,16 @@ object FaxAccountSet {
     __obj.asInstanceOf[FaxAccountSet]
   }
   
-  @scala.inline
-  implicit class FaxAccountSetMutableBuilder[Self <: FaxAccountSet] (val x: Self) extends AnyVal {
+  extension [Self <: FaxAccountSet](x: Self) {
     
-    @scala.inline
-    def setAddAccount(value: String => FaxAccount): Self = StObject.set(x, "AddAccount", js.Any.fromFunction1(value))
+    inline def setAddAccount(value: String => FaxAccount): Self = StObject.set(x, "AddAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxAccountSet_typekey(value: FaxAccountSet): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountSet_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxAccountSet_typekey(value: FaxAccountSet): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountSet_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccount(value: String => FaxAccount): Self = StObject.set(x, "GetAccount", js.Any.fromFunction1(value))
+    inline def setGetAccount(value: String => FaxAccount): Self = StObject.set(x, "GetAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccounts(value: () => FaxAccounts): Self = StObject.set(x, "GetAccounts", js.Any.fromFunction0(value))
+    inline def setGetAccounts(value: () => FaxAccounts): Self = StObject.set(x, "GetAccounts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAccount(value: String => Unit): Self = StObject.set(x, "RemoveAccount", js.Any.fromFunction1(value))
+    inline def setRemoveAccount(value: String => Unit): Self = StObject.set(x, "RemoveAccount", js.Any.fromFunction1(value))
   }
 }

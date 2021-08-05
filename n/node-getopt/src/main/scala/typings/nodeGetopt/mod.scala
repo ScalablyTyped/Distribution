@@ -35,48 +35,41 @@ object mod {
   @JSImport("node-getopt", "HAS_ARGUMENT")
   @js.native
   def HAS_ARGUMENT: Boolean = js.native
-  @scala.inline
-  def HAS_ARGUMENT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HAS_ARGUMENT")(x.asInstanceOf[js.Any])
+  inline def HAS_ARGUMENT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HAS_ARGUMENT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("node-getopt", "MULTI_SUPPORTED")
   @js.native
   def MULTI_SUPPORTED: Boolean = js.native
-  @scala.inline
-  def MULTI_SUPPORTED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MULTI_SUPPORTED")(x.asInstanceOf[js.Any])
+  inline def MULTI_SUPPORTED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MULTI_SUPPORTED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("node-getopt", "NO_ARGUMENT")
   @js.native
   def NO_ARGUMENT: Boolean = js.native
-  @scala.inline
-  def NO_ARGUMENT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_ARGUMENT")(x.asInstanceOf[js.Any])
+  inline def NO_ARGUMENT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_ARGUMENT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("node-getopt", "SINGLE_ONLY")
   @js.native
   def SINGLE_ONLY: Boolean = js.native
-  @scala.inline
-  def SINGLE_ONLY_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINGLE_ONLY")(x.asInstanceOf[js.Any])
+  inline def SINGLE_ONLY_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINGLE_ONLY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("node-getopt", "VERSION")
   @js.native
   def VERSION: String = js.native
-  @scala.inline
-  def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   
   /**
     * equals new Getopt(options)
     * @param options
     */
   /* static member */
-  @scala.inline
-  def create(options: js.Array[js.Array[String]]): Getopt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Getopt]
+  inline def create(options: js.Array[js.Array[String]]): Getopt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Getopt]
   
   /* static member */
-  @scala.inline
-  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
+  inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
   
   type ErrorFunc = js.Function1[/* exception */ Error, Unit]
   
@@ -165,26 +158,20 @@ object mod {
   }
   object ParsedOption {
     
-    @scala.inline
-    def apply(argv: js.Array[String], empty: () => Boolean, options: OptionMap): ParsedOption = {
+    inline def apply(argv: js.Array[String], empty: () => Boolean, options: OptionMap): ParsedOption = {
       val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], empty = js.Any.fromFunction0(empty), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedOption]
     }
     
-    @scala.inline
-    implicit class ParsedOptionMutableBuilder[Self <: ParsedOption] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedOption](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: OptionMap): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionMap): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

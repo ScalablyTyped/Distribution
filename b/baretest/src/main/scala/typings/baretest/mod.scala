@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(headline: String): TesterFunctionObject = ^.asInstanceOf[js.Dynamic].apply(headline.asInstanceOf[js.Any]).asInstanceOf[TesterFunctionObject]
+  inline def apply(headline: String): TesterFunctionObject = ^.asInstanceOf[js.Dynamic].apply(headline.asInstanceOf[js.Any]).asInstanceOf[TesterFunctionObject]
   
   @JSImport("baretest", JSImport.Namespace)
   @js.native

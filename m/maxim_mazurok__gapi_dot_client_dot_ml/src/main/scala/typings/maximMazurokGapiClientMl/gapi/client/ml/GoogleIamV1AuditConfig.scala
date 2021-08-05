@@ -17,28 +17,21 @@ trait GoogleIamV1AuditConfig extends StObject {
 }
 object GoogleIamV1AuditConfig {
   
-  @scala.inline
-  def apply(): GoogleIamV1AuditConfig = {
+  inline def apply(): GoogleIamV1AuditConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIamV1AuditConfig]
   }
   
-  @scala.inline
-  implicit class GoogleIamV1AuditConfigMutableBuilder[Self <: GoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIamV1AuditConfig](x: Self) {
     
-    @scala.inline
-    def setAuditLogConfigs(value: js.Array[GoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
+    inline def setAuditLogConfigs(value: js.Array[GoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
+    inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
-    @scala.inline
-    def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+    inline def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

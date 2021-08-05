@@ -19,8 +19,7 @@ object mod {
   	//=> true
   	```
   	*/
-  @scala.inline
-  def apply(string: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(string: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("is-ip", JSImport.Namespace)
   @js.native
@@ -35,8 +34,7 @@ object mod {
   	//=> true
   	```
   	*/
-  @scala.inline
-  def v4(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def v4(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	Check if `string` is IPv6.
@@ -47,8 +45,7 @@ object mod {
   	//=> true
   	```
   	*/
-  @scala.inline
-  def v6(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def v6(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	@returns `6` if `string` is IPv6, `4` if `string` is IPv4, or `undefined` if `string` is neither.
@@ -63,6 +60,5 @@ object mod {
   	//=> undefined
   	```
   	*/
-  @scala.inline
-  def version(string: String): js.UndefOr[`4` | `6`] = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`4` | `6`]]
+  inline def version(string: String): js.UndefOr[`4` | `6`] = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`4` | `6`]]
 }

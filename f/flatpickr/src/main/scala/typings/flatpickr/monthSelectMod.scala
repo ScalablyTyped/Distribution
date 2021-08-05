@@ -18,10 +18,8 @@ object monthSelectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
-  @scala.inline
-  def default(pluginConfig: PartialConfig): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  inline def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
+  inline def default(pluginConfig: PartialConfig): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
   
   trait Config extends StObject {
     
@@ -35,26 +33,20 @@ object monthSelectMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(altFormat: String, dateFormat: String, shorthand: Boolean, theme: String): Config = {
+    inline def apply(altFormat: String, dateFormat: String, shorthand: Boolean, theme: String): Config = {
       val __obj = js.Dynamic.literal(altFormat = altFormat.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAltFormat(value: String): Self = StObject.set(x, "altFormat", value.asInstanceOf[js.Any])
+      inline def setAltFormat(value: String): Self = StObject.set(x, "altFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
+      inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   

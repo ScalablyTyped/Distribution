@@ -12,20 +12,16 @@ trait BaseExpressionData extends StObject {
 }
 object BaseExpressionData {
   
-  @scala.inline
-  def apply(evaluate: js.Any => js.Any, `type`: ExpressionType): BaseExpressionData = {
+  inline def apply(evaluate: js.Any => js.Any, `type`: ExpressionType): BaseExpressionData = {
     val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction1(evaluate))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseExpressionData]
   }
   
-  @scala.inline
-  implicit class BaseExpressionDataMutableBuilder[Self <: BaseExpressionData] (val x: Self) extends AnyVal {
+  extension [Self <: BaseExpressionData](x: Self) {
     
-    @scala.inline
-    def setEvaluate(value: js.Any => js.Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
+    inline def setEvaluate(value: js.Any => js.Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: ExpressionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExpressionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait DeleteDeploymentRequest extends StObject {
 }
 object DeleteDeploymentRequest {
   
-  @scala.inline
-  def apply(ApiId: string, DeploymentId: string): DeleteDeploymentRequest = {
+  inline def apply(ApiId: string, DeploymentId: string): DeleteDeploymentRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], DeploymentId = DeploymentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDeploymentRequestMutableBuilder[Self <: DeleteDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
   }
 }

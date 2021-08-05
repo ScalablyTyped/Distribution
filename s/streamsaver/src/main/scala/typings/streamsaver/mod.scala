@@ -44,22 +44,18 @@ object mod {
     def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
   }
   
-  @scala.inline
-  def createWriteStream(filename: String): typings.std.WritableStream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.std.WritableStream[js.Any]]
-  @scala.inline
-  def createWriteStream(filename: String, options: CreateWriteStreamOptions[js.Any, js.Any]): typings.std.WritableStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.WritableStream[js.Any]]
+  inline def createWriteStream(filename: String): typings.std.WritableStream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.std.WritableStream[js.Any]]
+  inline def createWriteStream(filename: String, options: CreateWriteStreamOptions[js.Any, js.Any]): typings.std.WritableStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.WritableStream[js.Any]]
   
   @JSImport("streamsaver", "mitm")
   @js.native
   def mitm: String = js.native
-  @scala.inline
-  def mitm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mitm")(x.asInstanceOf[js.Any])
+  inline def mitm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mitm")(x.asInstanceOf[js.Any])
   
   @JSImport("streamsaver", "supported")
   @js.native
   def supported: Boolean = js.native
-  @scala.inline
-  def supported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supported")(x.asInstanceOf[js.Any])
+  inline def supported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supported")(x.asInstanceOf[js.Any])
   
   @JSImport("streamsaver", "version")
   @js.native
@@ -84,38 +80,28 @@ object mod {
   }
   object CreateWriteStreamOptions {
     
-    @scala.inline
-    def apply[I, O](): CreateWriteStreamOptions[I, O] = {
+    inline def apply[I, O](): CreateWriteStreamOptions[I, O] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateWriteStreamOptions[I, O]]
     }
     
-    @scala.inline
-    implicit class CreateWriteStreamOptionsMutableBuilder[Self <: CreateWriteStreamOptions[?, ?], I, O] (val x: Self & (CreateWriteStreamOptions[I, O])) extends AnyVal {
+    extension [Self <: CreateWriteStreamOptions[?, ?], I, O](x: Self & (CreateWriteStreamOptions[I, O])) {
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      @scala.inline
-      def setReadableStrategy(value: QueuingStrategy[O]): Self = StObject.set(x, "readableStrategy", value.asInstanceOf[js.Any])
+      inline def setReadableStrategy(value: QueuingStrategy[O]): Self = StObject.set(x, "readableStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableStrategyUndefined: Self = StObject.set(x, "readableStrategy", js.undefined)
+      inline def setReadableStrategyUndefined: Self = StObject.set(x, "readableStrategy", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setWritableStrategy(value: QueuingStrategy[I]): Self = StObject.set(x, "writableStrategy", value.asInstanceOf[js.Any])
+      inline def setWritableStrategy(value: QueuingStrategy[I]): Self = StObject.set(x, "writableStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableStrategyUndefined: Self = StObject.set(x, "writableStrategy", js.undefined)
+      inline def setWritableStrategyUndefined: Self = StObject.set(x, "writableStrategy", js.undefined)
     }
   }
   
@@ -131,26 +117,20 @@ object mod {
   }
   object Version_ {
     
-    @scala.inline
-    def apply(dot: Double, full: String, major: Double, minor: Double): Version_ = {
+    inline def apply(dot: Double, full: String, major: Double, minor: Double): Version_ = {
       val __obj = js.Dynamic.literal(dot = dot.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
       __obj.asInstanceOf[Version_]
     }
     
-    @scala.inline
-    implicit class Version_MutableBuilder[Self <: Version_] (val x: Self) extends AnyVal {
+    extension [Self <: Version_](x: Self) {
       
-      @scala.inline
-      def setDot(value: Double): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Double): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     }
   }
 }

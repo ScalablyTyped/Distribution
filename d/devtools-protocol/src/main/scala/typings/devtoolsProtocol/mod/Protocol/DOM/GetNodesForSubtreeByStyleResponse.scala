@@ -13,19 +13,15 @@ trait GetNodesForSubtreeByStyleResponse extends StObject {
 }
 object GetNodesForSubtreeByStyleResponse {
   
-  @scala.inline
-  def apply(nodeIds: js.Array[NodeId]): GetNodesForSubtreeByStyleResponse = {
+  inline def apply(nodeIds: js.Array[NodeId]): GetNodesForSubtreeByStyleResponse = {
     val __obj = js.Dynamic.literal(nodeIds = nodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNodesForSubtreeByStyleResponse]
   }
   
-  @scala.inline
-  implicit class GetNodesForSubtreeByStyleResponseMutableBuilder[Self <: GetNodesForSubtreeByStyleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNodesForSubtreeByStyleResponse](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

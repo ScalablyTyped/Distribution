@@ -16,19 +16,15 @@ trait SchemaRemoveMatterPermissionsRequest extends StObject {
 }
 object SchemaRemoveMatterPermissionsRequest {
   
-  @scala.inline
-  def apply(): SchemaRemoveMatterPermissionsRequest = {
+  inline def apply(): SchemaRemoveMatterPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRemoveMatterPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRemoveMatterPermissionsRequestMutableBuilder[Self <: SchemaRemoveMatterPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRemoveMatterPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }
 }

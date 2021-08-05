@@ -15,25 +15,19 @@ trait SocksUDPFrameDetails extends StObject {
 }
 object SocksUDPFrameDetails {
   
-  @scala.inline
-  def apply(data: Buffer, remoteHost: SocksRemoteHost): SocksUDPFrameDetails = {
+  inline def apply(data: Buffer, remoteHost: SocksRemoteHost): SocksUDPFrameDetails = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], remoteHost = remoteHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksUDPFrameDetails]
   }
   
-  @scala.inline
-  implicit class SocksUDPFrameDetailsMutableBuilder[Self <: SocksUDPFrameDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SocksUDPFrameDetails](x: Self) {
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameNumber(value: Double): Self = StObject.set(x, "frameNumber", value.asInstanceOf[js.Any])
+    inline def setFrameNumber(value: Double): Self = StObject.set(x, "frameNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameNumberUndefined: Self = StObject.set(x, "frameNumber", js.undefined)
+    inline def setFrameNumberUndefined: Self = StObject.set(x, "frameNumber", js.undefined)
     
-    @scala.inline
-    def setRemoteHost(value: SocksRemoteHost): Self = StObject.set(x, "remoteHost", value.asInstanceOf[js.Any])
+    inline def setRemoteHost(value: SocksRemoteHost): Self = StObject.set(x, "remoteHost", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAlertLevel extends StObject
 object WdAlertLevel {
   
-  @scala.inline
-  def wdAlertsAll: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdAlertsAll: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def wdAlertsMessageBox: `-2` = -2.asInstanceOf[`-2`]
+  inline def wdAlertsMessageBox: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def wdAlertsNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdAlertsNone: `0` = 0.asInstanceOf[`0`]
 }

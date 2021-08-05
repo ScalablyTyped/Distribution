@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2IntentMessageTableCardRow extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageTableCardRow {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageTableCardRow = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageTableCardRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageTableCardRow]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageTableCardRowMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageTableCardRow] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageTableCardRow](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[GoogleCloudDialogflowV2IntentMessageTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[GoogleCloudDialogflowV2IntentMessageTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setCellsVarargs(value: GoogleCloudDialogflowV2IntentMessageTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: GoogleCloudDialogflowV2IntentMessageTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
+    inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
+    inline def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
   }
 }

@@ -26,13 +26,11 @@ object PerInstanceColorAppearance {
   @JSImport("cesium", "PerInstanceColorAppearance.FLAT_VERTEX_FORMAT")
   @js.native
   def FLAT_VERTEX_FORMAT: VertexFormat = js.native
-  @scala.inline
-  def FLAT_VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAT_VERTEX_FORMAT")(x.asInstanceOf[js.Any])
+  inline def FLAT_VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAT_VERTEX_FORMAT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "PerInstanceColorAppearance.VERTEX_FORMAT")
   @js.native
   def VERTEX_FORMAT: VertexFormat = js.native
-  @scala.inline
-  def VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_FORMAT")(x.asInstanceOf[js.Any])
+  inline def VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_FORMAT")(x.asInstanceOf[js.Any])
 }

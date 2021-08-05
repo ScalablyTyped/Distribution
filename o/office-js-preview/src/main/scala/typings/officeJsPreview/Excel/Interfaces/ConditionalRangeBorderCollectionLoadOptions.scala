@@ -44,37 +44,27 @@ trait ConditionalRangeBorderCollectionLoadOptions extends StObject {
 }
 object ConditionalRangeBorderCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): ConditionalRangeBorderCollectionLoadOptions = {
+  inline def apply(): ConditionalRangeBorderCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalRangeBorderCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class ConditionalRangeBorderCollectionLoadOptionsMutableBuilder[Self <: ConditionalRangeBorderCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalRangeBorderCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSideIndex(value: Boolean): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
+    inline def setSideIndex(value: Boolean): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
+    inline def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

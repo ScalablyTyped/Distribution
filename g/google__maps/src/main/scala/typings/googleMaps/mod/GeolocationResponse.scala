@@ -14,19 +14,15 @@ trait GeolocationResponse extends StObject {
 }
 object GeolocationResponse {
   
-  @scala.inline
-  def apply(accuracy: Double, location: LatLngLiteral): GeolocationResponse = {
+  inline def apply(accuracy: Double, location: LatLngLiteral): GeolocationResponse = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationResponse]
   }
   
-  @scala.inline
-  implicit class GeolocationResponseMutableBuilder[Self <: GeolocationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationResponse](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

@@ -20,20 +20,16 @@ object Tethering {
   }
   object AcceptedEvent {
     
-    @scala.inline
-    def apply(connectionId: String, port: integer): AcceptedEvent = {
+    inline def apply(connectionId: String, port: integer): AcceptedEvent = {
       val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[AcceptedEvent]
     }
     
-    @scala.inline
-    implicit class AcceptedEventMutableBuilder[Self <: AcceptedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AcceptedEvent](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,17 +42,14 @@ object Tethering {
   }
   object BindRequest {
     
-    @scala.inline
-    def apply(port: integer): BindRequest = {
+    inline def apply(port: integer): BindRequest = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[BindRequest]
     }
     
-    @scala.inline
-    implicit class BindRequestMutableBuilder[Self <: BindRequest] (val x: Self) extends AnyVal {
+    extension [Self <: BindRequest](x: Self) {
       
-      @scala.inline
-      def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,17 +62,14 @@ object Tethering {
   }
   object UnbindRequest {
     
-    @scala.inline
-    def apply(port: integer): UnbindRequest = {
+    inline def apply(port: integer): UnbindRequest = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnbindRequest]
     }
     
-    @scala.inline
-    implicit class UnbindRequestMutableBuilder[Self <: UnbindRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnbindRequest](x: Self) {
       
-      @scala.inline
-      def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,28 +12,21 @@ trait CacheConfig extends StObject {
 }
 object CacheConfig {
   
-  @scala.inline
-  def apply(): CacheConfig = {
+  inline def apply(): CacheConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheConfig]
   }
   
-  @scala.inline
-  implicit class CacheConfigMutableBuilder[Self <: CacheConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CacheConfig](x: Self) {
     
-    @scala.inline
-    def setCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
+    inline def setCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheConfigNull: Self = StObject.set(x, "cacheConfig", null)
+    inline def setCacheConfigNull: Self = StObject.set(x, "cacheConfig", null)
     
-    @scala.inline
-    def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
+    inline def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
     
-    @scala.inline
-    def setFetchPolicy(value: typings.reactRelay.mod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: typings.reactRelay.mod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+    inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
   }
 }

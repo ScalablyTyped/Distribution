@@ -13,8 +13,7 @@ object jestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getJestAdapter(scope: Expect): js.Function2[
+  inline def getJestAdapter(scope: Expect): js.Function2[
     /* name */ String, 
     /* matcher */ CustomMatcher, 
     StringDictionary[

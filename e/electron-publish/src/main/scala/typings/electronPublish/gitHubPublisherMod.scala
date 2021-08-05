@@ -19,36 +19,36 @@ object gitHubPublisherMod {
     
     val _release: Lazy[js.Any] = js.native
     
-    var createRelease: js.Any = js.native
+    /* private */ var createRelease: js.Any = js.native
     
     def deleteRelease(): js.Promise[js.Any] = js.native
     
-    var doUploadFile: js.Any = js.native
+    /* private */ var doUploadFile: js.Any = js.native
     
-    var getOrCreateRelease: js.Any = js.native
+    /* private */ var getOrCreateRelease: js.Any = js.native
     
     def getRelease(): js.Promise[js.Any] = js.native
     
-    var githubRequest: js.Any = js.native
+    /* private */ var githubRequest: js.Any = js.native
     
-    val info: js.Any = js.native
+    /* private */ val info: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    var overwriteArtifact: js.Any = js.native
+    /* private */ var overwriteArtifact: js.Any = js.native
     
     @JSName("providerName")
     val providerName_FGitHubPublisher: /* "GitHub" */ String = js.native
     
-    var releaseLogFields: js.Any = js.native
+    /* private */ var releaseLogFields: js.Any = js.native
     
-    val releaseType: js.Any = js.native
+    /* private */ val releaseType: js.Any = js.native
     
-    val tag: js.Any = js.native
+    /* private */ val tag: js.Any = js.native
     
-    val token: js.Any = js.native
+    /* private */ val token: js.Any = js.native
     
-    val version: js.Any = js.native
+    /* private */ val version: js.Any = js.native
   }
   
   trait Release extends StObject {
@@ -67,8 +67,7 @@ object gitHubPublisherMod {
   }
   object Release {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       draft: Boolean,
       id: Double,
       prerelease: Boolean,
@@ -80,26 +79,19 @@ object gitHubPublisherMod {
       __obj.asInstanceOf[Release]
     }
     
-    @scala.inline
-    implicit class ReleaseMutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
+    extension [Self <: Release](x: Self) {
       
-      @scala.inline
-      def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+      inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrerelease(value: Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+      inline def setPrerelease(value: Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
+      inline def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
+      inline def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
+      inline def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
     }
   }
 }

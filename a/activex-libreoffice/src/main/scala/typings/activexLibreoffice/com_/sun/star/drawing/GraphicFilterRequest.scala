@@ -19,16 +19,13 @@ trait GraphicFilterRequest
 }
 object GraphicFilterRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, ErrCode: Double, Message: String): GraphicFilterRequest = {
+  inline def apply(Context: XInterface, ErrCode: Double, Message: String): GraphicFilterRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrCode = ErrCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicFilterRequest]
   }
   
-  @scala.inline
-  implicit class GraphicFilterRequestMutableBuilder[Self <: GraphicFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicFilterRequest](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "ErrCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "ErrCode", value.asInstanceOf[js.Any])
   }
 }

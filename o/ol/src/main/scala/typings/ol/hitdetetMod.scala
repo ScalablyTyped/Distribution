@@ -17,8 +17,7 @@ object hitdetetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createHitDetectionImageData(
+  inline def createHitDetectionImageData(
     size: Size,
     transforms: js.Array[Transform],
     features: js.Array[FeatureLike],
@@ -27,8 +26,7 @@ object hitdetetMod {
     resolution: Double,
     rotation: Double
   ): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("createHitDetectionImageData")(size.asInstanceOf[js.Any], transforms.asInstanceOf[js.Any], features.asInstanceOf[js.Any], styleFunction.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[ImageData]
-  @scala.inline
-  def createHitDetectionImageData(
+  inline def createHitDetectionImageData(
     size: Size,
     transforms: js.Array[Transform],
     features: js.Array[FeatureLike],
@@ -38,6 +36,5 @@ object hitdetetMod {
     rotation: Double
   ): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("createHitDetectionImageData")(size.asInstanceOf[js.Any], transforms.asInstanceOf[js.Any], features.asInstanceOf[js.Any], styleFunction.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[ImageData]
   
-  @scala.inline
-  def hitDetect(pixel: Pixel, features: js.Array[FeatureLike], imageData: ImageData): js.Array[FeatureLike] = (^.asInstanceOf[js.Dynamic].applyDynamic("hitDetect")(pixel.asInstanceOf[js.Any], features.asInstanceOf[js.Any], imageData.asInstanceOf[js.Any])).asInstanceOf[js.Array[FeatureLike]]
+  inline def hitDetect(pixel: Pixel, features: js.Array[FeatureLike], imageData: ImageData): js.Array[FeatureLike] = (^.asInstanceOf[js.Dynamic].applyDynamic("hitDetect")(pixel.asInstanceOf[js.Any], features.asInstanceOf[js.Any], imageData.asInstanceOf[js.Any])).asInstanceOf[js.Array[FeatureLike]]
 }

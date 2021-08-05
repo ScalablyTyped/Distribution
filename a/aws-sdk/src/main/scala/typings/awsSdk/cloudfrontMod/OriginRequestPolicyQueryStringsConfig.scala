@@ -18,22 +18,17 @@ trait OriginRequestPolicyQueryStringsConfig extends StObject {
 }
 object OriginRequestPolicyQueryStringsConfig {
   
-  @scala.inline
-  def apply(QueryStringBehavior: OriginRequestPolicyQueryStringBehavior): OriginRequestPolicyQueryStringsConfig = {
+  inline def apply(QueryStringBehavior: OriginRequestPolicyQueryStringBehavior): OriginRequestPolicyQueryStringsConfig = {
     val __obj = js.Dynamic.literal(QueryStringBehavior = QueryStringBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicyQueryStringsConfig]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicyQueryStringsConfigMutableBuilder[Self <: OriginRequestPolicyQueryStringsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicyQueryStringsConfig](x: Self) {
     
-    @scala.inline
-    def setQueryStringBehavior(value: OriginRequestPolicyQueryStringBehavior): Self = StObject.set(x, "QueryStringBehavior", value.asInstanceOf[js.Any])
+    inline def setQueryStringBehavior(value: OriginRequestPolicyQueryStringBehavior): Self = StObject.set(x, "QueryStringBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStrings(value: QueryStringNames): Self = StObject.set(x, "QueryStrings", value.asInstanceOf[js.Any])
+    inline def setQueryStrings(value: QueryStringNames): Self = StObject.set(x, "QueryStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringsUndefined: Self = StObject.set(x, "QueryStrings", js.undefined)
+    inline def setQueryStringsUndefined: Self = StObject.set(x, "QueryStrings", js.undefined)
   }
 }

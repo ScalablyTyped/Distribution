@@ -10,14 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(locales: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def default(locales: String, constructorsToCheck: js.Array[IntlConstructor]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any], constructorsToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(locales: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def default(locales: js.Array[String], constructorsToCheck: js.Array[IntlConstructor]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any], constructorsToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(locales: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(locales: String, constructorsToCheck: js.Array[IntlConstructor]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any], constructorsToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(locales: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(locales: js.Array[String], constructorsToCheck: js.Array[IntlConstructor]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any], constructorsToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait IntlConstructor extends StObject {

@@ -20,25 +20,19 @@ trait PlotScatterJitterOptions extends StObject {
 }
 object PlotScatterJitterOptions {
   
-  @scala.inline
-  def apply(): PlotScatterJitterOptions = {
+  inline def apply(): PlotScatterJitterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotScatterJitterOptions]
   }
   
-  @scala.inline
-  implicit class PlotScatterJitterOptionsMutableBuilder[Self <: PlotScatterJitterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotScatterJitterOptions](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

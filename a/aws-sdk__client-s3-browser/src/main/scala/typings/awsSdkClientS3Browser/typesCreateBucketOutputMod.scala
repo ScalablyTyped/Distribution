@@ -21,20 +21,16 @@ object typesCreateBucketOutputMod {
   }
   object CreateBucketOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateBucketOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateBucketOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateBucketOutput]
     }
     
-    @scala.inline
-    implicit class CreateBucketOutputMutableBuilder[Self <: CreateBucketOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBucketOutput](x: Self) {
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     }
   }
 }

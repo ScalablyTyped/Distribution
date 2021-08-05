@@ -35,8 +35,7 @@ trait StackNavigationEventMap extends StObject {
 }
 object StackNavigationEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gestureCancel: DataUndefined,
     gestureEnd: DataUndefined,
     gestureStart: DataUndefined,
@@ -47,22 +46,16 @@ object StackNavigationEventMap {
     __obj.asInstanceOf[StackNavigationEventMap]
   }
   
-  @scala.inline
-  implicit class StackNavigationEventMapMutableBuilder[Self <: StackNavigationEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: StackNavigationEventMap](x: Self) {
     
-    @scala.inline
-    def setGestureCancel(value: DataUndefined): Self = StObject.set(x, "gestureCancel", value.asInstanceOf[js.Any])
+    inline def setGestureCancel(value: DataUndefined): Self = StObject.set(x, "gestureCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureEnd(value: DataUndefined): Self = StObject.set(x, "gestureEnd", value.asInstanceOf[js.Any])
+    inline def setGestureEnd(value: DataUndefined): Self = StObject.set(x, "gestureEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureStart(value: DataUndefined): Self = StObject.set(x, "gestureStart", value.asInstanceOf[js.Any])
+    inline def setGestureStart(value: DataUndefined): Self = StObject.set(x, "gestureStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionEnd(value: Data): Self = StObject.set(x, "transitionEnd", value.asInstanceOf[js.Any])
+    inline def setTransitionEnd(value: Data): Self = StObject.set(x, "transitionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionStart(value: Data): Self = StObject.set(x, "transitionStart", value.asInstanceOf[js.Any])
+    inline def setTransitionStart(value: Data): Self = StObject.set(x, "transitionStart", value.asInstanceOf[js.Any])
   }
 }

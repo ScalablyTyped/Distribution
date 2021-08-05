@@ -18,25 +18,19 @@ trait CompletedPart extends StObject {
 }
 object CompletedPart {
   
-  @scala.inline
-  def apply(): CompletedPart = {
+  inline def apply(): CompletedPart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompletedPart]
   }
   
-  @scala.inline
-  implicit class CompletedPartMutableBuilder[Self <: CompletedPart] (val x: Self) extends AnyVal {
+  extension [Self <: CompletedPart](x: Self) {
     
-    @scala.inline
-    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
+    inline def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
+    inline def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
   }
 }

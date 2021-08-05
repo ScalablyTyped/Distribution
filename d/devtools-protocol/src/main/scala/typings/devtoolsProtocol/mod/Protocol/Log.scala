@@ -43,17 +43,14 @@ object Log {
   }
   object EntryAddedEvent {
     
-    @scala.inline
-    def apply(entry: LogEntry): EntryAddedEvent = {
+    inline def apply(entry: LogEntry): EntryAddedEvent = {
       val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryAddedEvent]
     }
     
-    @scala.inline
-    implicit class EntryAddedEventMutableBuilder[Self <: EntryAddedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: EntryAddedEvent](x: Self) {
       
-      @scala.inline
-      def setEntry(value: LogEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: LogEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,8 +108,7 @@ object Log {
   }
   object LogEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       level: verbose | info | warning | error,
       source: xml | javascript_ | network | storage | appcache | rendering | security | deprecation | worker_ | violation | intervention | recommendation | other_,
       text: String,
@@ -122,61 +118,43 @@ object Log {
       __obj.asInstanceOf[LogEntry]
     }
     
-    @scala.inline
-    implicit class LogEntryMutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
+    extension [Self <: LogEntry](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: RemoteObject*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: RemoteObject*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: verbose | info | warning | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: verbose | info | warning | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setNetworkRequestId(value: RequestId): Self = StObject.set(x, "networkRequestId", value.asInstanceOf[js.Any])
+      inline def setNetworkRequestId(value: RequestId): Self = StObject.set(x, "networkRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkRequestIdUndefined: Self = StObject.set(x, "networkRequestId", js.undefined)
+      inline def setNetworkRequestIdUndefined: Self = StObject.set(x, "networkRequestId", js.undefined)
       
-      @scala.inline
-      def setSource(
+      inline def setSource(
         value: xml | javascript_ | network | storage | appcache | rendering | security | deprecation | worker_ | violation | intervention | recommendation | other_
       ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+      inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+      inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+      inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+      inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
     }
   }
   
@@ -189,17 +167,13 @@ object Log {
   trait LogEntryLevel extends StObject
   object LogEntryLevel {
     
-    @scala.inline
-    def Error: error = "error".asInstanceOf[error]
+    inline def Error: error = "error".asInstanceOf[error]
     
-    @scala.inline
-    def Info: info = "info".asInstanceOf[info]
+    inline def Info: info = "info".asInstanceOf[info]
     
-    @scala.inline
-    def Verbose: verbose = "verbose".asInstanceOf[verbose]
+    inline def Verbose: verbose = "verbose".asInstanceOf[verbose]
     
-    @scala.inline
-    def Warning: warning = "warning".asInstanceOf[warning]
+    inline def Warning: warning = "warning".asInstanceOf[warning]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -220,44 +194,31 @@ object Log {
   trait LogEntrySource extends StObject
   object LogEntrySource {
     
-    @scala.inline
-    def Appcache: appcache = "appcache".asInstanceOf[appcache]
+    inline def Appcache: appcache = "appcache".asInstanceOf[appcache]
     
-    @scala.inline
-    def Deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
+    inline def Deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
     
-    @scala.inline
-    def Intervention: intervention = "intervention".asInstanceOf[intervention]
+    inline def Intervention: intervention = "intervention".asInstanceOf[intervention]
     
-    @scala.inline
-    def Javascript: javascript_ = "javascript".asInstanceOf[javascript_]
+    inline def Javascript: javascript_ = "javascript".asInstanceOf[javascript_]
     
-    @scala.inline
-    def Network: network = "network".asInstanceOf[network]
+    inline def Network: network = "network".asInstanceOf[network]
     
-    @scala.inline
-    def Other: other_ = "other".asInstanceOf[other_]
+    inline def Other: other_ = "other".asInstanceOf[other_]
     
-    @scala.inline
-    def Recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
+    inline def Recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
     
-    @scala.inline
-    def Rendering: rendering = "rendering".asInstanceOf[rendering]
+    inline def Rendering: rendering = "rendering".asInstanceOf[rendering]
     
-    @scala.inline
-    def Security: security = "security".asInstanceOf[security]
+    inline def Security: security = "security".asInstanceOf[security]
     
-    @scala.inline
-    def Storage: storage = "storage".asInstanceOf[storage]
+    inline def Storage: storage = "storage".asInstanceOf[storage]
     
-    @scala.inline
-    def Violation: violation = "violation".asInstanceOf[violation]
+    inline def Violation: violation = "violation".asInstanceOf[violation]
     
-    @scala.inline
-    def Worker: worker_ = "worker".asInstanceOf[worker_]
+    inline def Worker: worker_ = "worker".asInstanceOf[worker_]
     
-    @scala.inline
-    def XML: xml = "xml".asInstanceOf[xml]
+    inline def XML: xml = "xml".asInstanceOf[xml]
   }
   
   trait StartViolationsReportRequest extends StObject {
@@ -269,20 +230,16 @@ object Log {
   }
   object StartViolationsReportRequest {
     
-    @scala.inline
-    def apply(config: js.Array[ViolationSetting]): StartViolationsReportRequest = {
+    inline def apply(config: js.Array[ViolationSetting]): StartViolationsReportRequest = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartViolationsReportRequest]
     }
     
-    @scala.inline
-    implicit class StartViolationsReportRequestMutableBuilder[Self <: StartViolationsReportRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartViolationsReportRequest](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Array[ViolationSetting]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Array[ViolationSetting]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigVarargs(value: ViolationSetting*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: ViolationSetting*): Self = StObject.set(x, "config", js.Array(value :_*))
     }
   }
   
@@ -300,8 +257,7 @@ object Log {
   }
   object ViolationSetting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: longTask | longLayout | blockedEvent | blockedParser | discouragedAPIUse | handler | recurringHandler,
       threshold: Double
     ): ViolationSetting = {
@@ -309,16 +265,13 @@ object Log {
       __obj.asInstanceOf[ViolationSetting]
     }
     
-    @scala.inline
-    implicit class ViolationSettingMutableBuilder[Self <: ViolationSetting] (val x: Self) extends AnyVal {
+    extension [Self <: ViolationSetting](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: longTask | longLayout | blockedEvent | blockedParser | discouragedAPIUse | handler | recurringHandler
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,25 +287,18 @@ object Log {
   trait ViolationSettingName extends StObject
   object ViolationSettingName {
     
-    @scala.inline
-    def BlockedEvent: blockedEvent = "blockedEvent".asInstanceOf[blockedEvent]
+    inline def BlockedEvent: blockedEvent = "blockedEvent".asInstanceOf[blockedEvent]
     
-    @scala.inline
-    def BlockedParser: blockedParser = "blockedParser".asInstanceOf[blockedParser]
+    inline def BlockedParser: blockedParser = "blockedParser".asInstanceOf[blockedParser]
     
-    @scala.inline
-    def DiscouragedAPIUse: discouragedAPIUse = "discouragedAPIUse".asInstanceOf[discouragedAPIUse]
+    inline def DiscouragedAPIUse: discouragedAPIUse = "discouragedAPIUse".asInstanceOf[discouragedAPIUse]
     
-    @scala.inline
-    def Handler: handler = "handler".asInstanceOf[handler]
+    inline def Handler: handler = "handler".asInstanceOf[handler]
     
-    @scala.inline
-    def LongLayout: longLayout = "longLayout".asInstanceOf[longLayout]
+    inline def LongLayout: longLayout = "longLayout".asInstanceOf[longLayout]
     
-    @scala.inline
-    def LongTask: longTask = "longTask".asInstanceOf[longTask]
+    inline def LongTask: longTask = "longTask".asInstanceOf[longTask]
     
-    @scala.inline
-    def RecurringHandler: recurringHandler = "recurringHandler".asInstanceOf[recurringHandler]
+    inline def RecurringHandler: recurringHandler = "recurringHandler".asInstanceOf[recurringHandler]
   }
 }

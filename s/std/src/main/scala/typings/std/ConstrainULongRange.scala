@@ -14,25 +14,19 @@ trait ConstrainULongRange
 }
 object ConstrainULongRange {
   
-  @scala.inline
-  def apply(): ConstrainULongRange = {
+  inline def apply(): ConstrainULongRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstrainULongRange]
   }
   
-  @scala.inline
-  implicit class ConstrainULongRangeMutableBuilder[Self <: ConstrainULongRange] (val x: Self) extends AnyVal {
+  extension [Self <: ConstrainULongRange](x: Self) {
     
-    @scala.inline
-    def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    inline def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
   }
 }

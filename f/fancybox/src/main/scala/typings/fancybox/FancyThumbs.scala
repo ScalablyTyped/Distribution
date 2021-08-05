@@ -39,8 +39,7 @@ trait FancyThumbs extends StObject {
 }
 object FancyThumbs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: () => Unit,
     focus: Double => Unit,
     hide: () => Unit,
@@ -57,58 +56,40 @@ object FancyThumbs {
     __obj.asInstanceOf[FancyThumbs]
   }
   
-  @scala.inline
-  implicit class FancyThumbsMutableBuilder[Self <: FancyThumbs] (val x: Self) extends AnyVal {
+  extension [Self <: FancyThumbs](x: Self) {
     
-    @scala.inline
-    def set$button(value: JQuery): Self = StObject.set(x, "$button", value.asInstanceOf[js.Any])
+    inline def set$button(value: JQuery): Self = StObject.set(x, "$button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$buttonUndefined: Self = StObject.set(x, "$button", js.undefined)
+    inline def set$buttonUndefined: Self = StObject.set(x, "$button", js.undefined)
     
-    @scala.inline
-    def set$grid(value: JQuery): Self = StObject.set(x, "$grid", value.asInstanceOf[js.Any])
+    inline def set$grid(value: JQuery): Self = StObject.set(x, "$grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$gridUndefined: Self = StObject.set(x, "$grid", js.undefined)
+    inline def set$gridUndefined: Self = StObject.set(x, "$grid", js.undefined)
     
-    @scala.inline
-    def set$list(value: JQuery): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
+    inline def set$list(value: JQuery): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$listUndefined: Self = StObject.set(x, "$list", js.undefined)
+    inline def set$listUndefined: Self = StObject.set(x, "$list", js.undefined)
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: Double => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+    inline def setFocus(value: Double => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: FancyBoxInstance => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: FancyBoxInstance => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInstance(value: FancyBoxInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: FancyBoxInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpts(value: FancyThumbsOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: FancyThumbsOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

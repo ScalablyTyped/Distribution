@@ -13,8 +13,7 @@ object usingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def `using`[T](
+  inline def `using`[T](
     resourceFactory: js.Function0[Unsubscribable | Unit],
     observableFactory: js.Function1[/* resource */ Unsubscribable | Unit, ObservableInput[T] | Unit]
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(resourceFactory.asInstanceOf[js.Any], observableFactory.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]

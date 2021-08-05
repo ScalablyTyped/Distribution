@@ -15,20 +15,15 @@ object kernelUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
-  @scala.inline
-  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: Unit, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
-  @scala.inline
-  def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: ComplexBinaryKernelImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
-  @scala.inline
-  def binaryKernelFunc(
+  inline def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: Unit, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def binaryKernelFunc(name: String, simpleImpl: SimpleBinaryKernelImpl, complexImpl: ComplexBinaryKernelImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def binaryKernelFunc(
     name: String,
     simpleImpl: SimpleBinaryKernelImpl,
     complexImpl: ComplexBinaryKernelImpl,
     dtype: DataType
   ): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(name.asInstanceOf[js.Any], simpleImpl.asInstanceOf[js.Any], complexImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
   
-  @scala.inline
-  def createComplexBinaryKernelImpl(op: ComplexBinaryOperation): ComplexBinaryKernelImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplexBinaryKernelImpl")(op.asInstanceOf[js.Any]).asInstanceOf[ComplexBinaryKernelImpl]
+  inline def createComplexBinaryKernelImpl(op: ComplexBinaryOperation): ComplexBinaryKernelImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplexBinaryKernelImpl")(op.asInstanceOf[js.Any]).asInstanceOf[ComplexBinaryKernelImpl]
 }

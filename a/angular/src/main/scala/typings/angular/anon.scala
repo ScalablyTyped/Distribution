@@ -14,20 +14,16 @@ object anon {
   }
   object Capacity {
     
-    @scala.inline
-    def apply(): Capacity = {
+    inline def apply(): Capacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Capacity]
     }
     
-    @scala.inline
-    implicit class CapacityMutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
+    extension [Self <: Capacity](x: Self) {
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+      inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     }
   }
   
@@ -45,29 +41,22 @@ object anon {
   }
   object CodeName {
     
-    @scala.inline
-    def apply(codeName: String, dot: Double, full: String, major: Double, minor: Double): CodeName = {
+    inline def apply(codeName: String, dot: Double, full: String, major: Double, minor: Double): CodeName = {
       val __obj = js.Dynamic.literal(codeName = codeName.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeName]
     }
     
-    @scala.inline
-    implicit class CodeNameMutableBuilder[Self <: CodeName] (val x: Self) extends AnyVal {
+    extension [Self <: CodeName](x: Self) {
       
-      @scala.inline
-      def setCodeName(value: String): Self = StObject.set(x, "codeName", value.asInstanceOf[js.Any])
+      inline def setCodeName(value: String): Self = StObject.set(x, "codeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDot(value: Double): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Double): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,32 +70,24 @@ object anon {
   }
   object Enabled {
     
-    @scala.inline
-    def apply(): Enabled = {
+    inline def apply(): Enabled = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Enabled]
     }
     
-    @scala.inline
-    implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    extension [Self <: Enabled](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setRequireBase(value: Boolean): Self = StObject.set(x, "requireBase", value.asInstanceOf[js.Any])
+      inline def setRequireBase(value: Boolean): Self = StObject.set(x, "requireBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireBaseUndefined: Self = StObject.set(x, "requireBase", js.undefined)
+      inline def setRequireBaseUndefined: Self = StObject.set(x, "requireBase", js.undefined)
       
-      @scala.inline
-      def setRewriteLinks(value: Boolean): Self = StObject.set(x, "rewriteLinks", value.asInstanceOf[js.Any])
+      inline def setRewriteLinks(value: Boolean): Self = StObject.set(x, "rewriteLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewriteLinksUndefined: Self = StObject.set(x, "rewriteLinks", js.undefined)
+      inline def setRewriteLinksUndefined: Self = StObject.set(x, "rewriteLinks", js.undefined)
     }
   }
   
@@ -124,20 +105,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String, size: Double): Id = {
+    inline def apply(id: String, size: Double): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,17 +124,14 @@ object anon {
   }
   object Instance {
     
-    @scala.inline
-    def apply(instance: IController): Instance = {
+    inline def apply(instance: IController): Instance = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[Instance]
     }
     
-    @scala.inline
-    implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+    extension [Self <: Instance](x: Self) {
       
-      @scala.inline
-      def setInstance(value: IController): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: IController): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
   

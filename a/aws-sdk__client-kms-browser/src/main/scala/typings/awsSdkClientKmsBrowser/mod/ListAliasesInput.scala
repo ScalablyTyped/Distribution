@@ -9,8 +9,7 @@ trait ListAliasesInput
      with typings.awsSdkClientKmsBrowser.typesListAliasesInputMod.ListAliasesInput
 object ListAliasesInput {
   
-  @scala.inline
-  def apply(): ListAliasesInput = {
+  inline def apply(): ListAliasesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAliasesInput]
   }

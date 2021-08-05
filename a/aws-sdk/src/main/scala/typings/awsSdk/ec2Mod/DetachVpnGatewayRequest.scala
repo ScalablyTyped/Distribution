@@ -23,25 +23,19 @@ trait DetachVpnGatewayRequest extends StObject {
 }
 object DetachVpnGatewayRequest {
   
-  @scala.inline
-  def apply(VpcId: VpcId, VpnGatewayId: VpnGatewayId): DetachVpnGatewayRequest = {
+  inline def apply(VpcId: VpcId, VpnGatewayId: VpnGatewayId): DetachVpnGatewayRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any], VpnGatewayId = VpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachVpnGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DetachVpnGatewayRequestMutableBuilder[Self <: DetachVpnGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachVpnGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnGatewayId(value: VpnGatewayId): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
+    inline def setVpnGatewayId(value: VpnGatewayId): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
   }
 }

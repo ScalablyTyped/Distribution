@@ -15,19 +15,15 @@ trait VoiceCommandUserMessage extends StObject {
 }
 object VoiceCommandUserMessage {
   
-  @scala.inline
-  def apply(displayMessage: String, spokenMessage: String): VoiceCommandUserMessage = {
+  inline def apply(displayMessage: String, spokenMessage: String): VoiceCommandUserMessage = {
     val __obj = js.Dynamic.literal(displayMessage = displayMessage.asInstanceOf[js.Any], spokenMessage = spokenMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceCommandUserMessage]
   }
   
-  @scala.inline
-  implicit class VoiceCommandUserMessageMutableBuilder[Self <: VoiceCommandUserMessage] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandUserMessage](x: Self) {
     
-    @scala.inline
-    def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
+    inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpokenMessage(value: String): Self = StObject.set(x, "spokenMessage", value.asInstanceOf[js.Any])
+    inline def setSpokenMessage(value: String): Self = StObject.set(x, "spokenMessage", value.asInstanceOf[js.Any])
   }
 }

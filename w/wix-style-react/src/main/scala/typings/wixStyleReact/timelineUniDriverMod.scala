@@ -17,8 +17,7 @@ object timelineUniDriverMod {
   }
   object TimelineUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object timelineUniDriverMod {
       __obj.asInstanceOf[TimelineUniDriver]
     }
     
-    @scala.inline
-    implicit class TimelineUniDriverMutableBuilder[Self <: TimelineUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetLabelText(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction1(value))
+      inline def setGetLabelText(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSuffixText(value: Double => js.Promise[String]): Self = StObject.set(x, "getSuffixText", js.Any.fromFunction1(value))
+      inline def setGetSuffixText(value: Double => js.Promise[String]): Self = StObject.set(x, "getSuffixText", js.Any.fromFunction1(value))
     }
   }
 }

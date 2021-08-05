@@ -13,19 +13,15 @@ trait VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm exte
 }
 object VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm {
   
-  @scala.inline
-  def apply(certificateAuthorityArns: js.Array[String]): VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm = {
+  inline def apply(certificateAuthorityArns: js.Array[String]): VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm = {
     val __obj = js.Dynamic.literal(certificateAuthorityArns = certificateAuthorityArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmMutableBuilder[Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArns(value: js.Array[String]): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArns(value: js.Array[String]): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArnsVarargs(value: String*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
+    inline def setCertificateAuthorityArnsVarargs(value: String*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
   }
 }

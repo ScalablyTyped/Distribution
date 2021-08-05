@@ -13,10 +13,8 @@ object ParseMockDB {
   trait HookType extends StObject
   object HookType {
     
-    @scala.inline
-    def beforeDelete: typings.parseMockdb.parseMockdbStrings.beforeDelete = "beforeDelete".asInstanceOf[typings.parseMockdb.parseMockdbStrings.beforeDelete]
+    inline def beforeDelete: typings.parseMockdb.parseMockdbStrings.beforeDelete = "beforeDelete".asInstanceOf[typings.parseMockdb.parseMockdbStrings.beforeDelete]
     
-    @scala.inline
-    def beforeSave: typings.parseMockdb.parseMockdbStrings.beforeSave = "beforeSave".asInstanceOf[typings.parseMockdb.parseMockdbStrings.beforeSave]
+    inline def beforeSave: typings.parseMockdb.parseMockdbStrings.beforeSave = "beforeSave".asInstanceOf[typings.parseMockdb.parseMockdbStrings.beforeSave]
   }
 }

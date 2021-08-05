@@ -17,26 +17,26 @@ object deltaSenderMod {
     
     def closeConnection(): Unit = js.native
     
-    var errorCallback: js.Any = js.native
+    /* private */ var errorCallback: js.Any = js.native
     
     def flush(): Unit = js.native
     
-    var flushCallback: js.Any = js.native
+    /* private */ var flushCallback: js.Any = js.native
     
-    var hasError: js.Any = js.native
+    /* private */ var hasError: js.Any = js.native
     
     var isClosing: Boolean = js.native
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
     
     var pending: Boolean = js.native
     
-    var processQueue: js.Any = js.native
+    /* private */ var processQueue: js.Any = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
     def scheduleDeltas(deltas: js.Array[Delta]): Unit = js.native
     
-    var sendDeltas: js.Any = js.native
+    /* private */ var sendDeltas: js.Any = js.native
   }
 }

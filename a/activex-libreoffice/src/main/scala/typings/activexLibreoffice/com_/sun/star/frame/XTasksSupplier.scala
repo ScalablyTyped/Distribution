@@ -41,8 +41,7 @@ trait XTasksSupplier
 }
 object XTasksSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTask: XTask,
     Tasks: XEnumerationAccess,
     acquire: () => Unit,
@@ -55,19 +54,14 @@ object XTasksSupplier {
     __obj.asInstanceOf[XTasksSupplier]
   }
   
-  @scala.inline
-  implicit class XTasksSupplierMutableBuilder[Self <: XTasksSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTasksSupplier](x: Self) {
     
-    @scala.inline
-    def setActiveTask(value: XTask): Self = StObject.set(x, "ActiveTask", value.asInstanceOf[js.Any])
+    inline def setActiveTask(value: XTask): Self = StObject.set(x, "ActiveTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveTask(value: () => XTask): Self = StObject.set(x, "getActiveTask", js.Any.fromFunction0(value))
+    inline def setGetActiveTask(value: () => XTask): Self = StObject.set(x, "getActiveTask", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTasks(value: () => XEnumerationAccess): Self = StObject.set(x, "getTasks", js.Any.fromFunction0(value))
+    inline def setGetTasks(value: () => XEnumerationAccess): Self = StObject.set(x, "getTasks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTasks(value: XEnumerationAccess): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: XEnumerationAccess): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
   }
 }

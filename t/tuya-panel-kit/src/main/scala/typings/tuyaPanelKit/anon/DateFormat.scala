@@ -25,8 +25,7 @@ trait DateFormat extends StObject {
 }
 object DateFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dateFormat: (String, Date) => Double,
     dateToTimer: String => Double,
     parseHour12: Double => String,
@@ -40,31 +39,22 @@ object DateFormat {
     __obj.asInstanceOf[DateFormat]
   }
   
-  @scala.inline
-  implicit class DateFormatMutableBuilder[Self <: DateFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DateFormat](x: Self) {
     
-    @scala.inline
-    def setDateFormat(value: (String, Date) => Double): Self = StObject.set(x, "dateFormat", js.Any.fromFunction2(value))
+    inline def setDateFormat(value: (String, Date) => Double): Self = StObject.set(x, "dateFormat", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDateToTimer(value: String => Double): Self = StObject.set(x, "dateToTimer", js.Any.fromFunction1(value))
+    inline def setDateToTimer(value: String => Double): Self = StObject.set(x, "dateToTimer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseHour12(value: Double => String): Self = StObject.set(x, "parseHour12", js.Any.fromFunction1(value))
+    inline def setParseHour12(value: Double => String): Self = StObject.set(x, "parseHour12", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseSecond(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "parseSecond", js.Any.fromFunction2(value))
+    inline def setParseSecond(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "parseSecond", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseTimer(value: Double => String): Self = StObject.set(x, "parseTimer", js.Any.fromFunction1(value))
+    inline def setParseTimer(value: Double => String): Self = StObject.set(x, "parseTimer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseTimers(value: Double => String): Self = StObject.set(x, "parseTimers", js.Any.fromFunction1(value))
+    inline def setParseTimers(value: Double => String): Self = StObject.set(x, "parseTimers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringToSecond(value: String => Double): Self = StObject.set(x, "stringToSecond", js.Any.fromFunction1(value))
+    inline def setStringToSecond(value: String => Double): Self = StObject.set(x, "stringToSecond", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimezone(value: () => String): Self = StObject.set(x, "timezone", js.Any.fromFunction0(value))
+    inline def setTimezone(value: () => String): Self = StObject.set(x, "timezone", js.Any.fromFunction0(value))
   }
 }

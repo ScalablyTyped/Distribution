@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PluginStatus extends StObject
 object PluginStatus {
   
-  @scala.inline
-  def error: typings.mapboxGl.mapboxGlStrings.error = "error".asInstanceOf[typings.mapboxGl.mapboxGlStrings.error]
+  inline def error: typings.mapboxGl.mapboxGlStrings.error = "error".asInstanceOf[typings.mapboxGl.mapboxGlStrings.error]
   
-  @scala.inline
-  def loaded: typings.mapboxGl.mapboxGlStrings.loaded = "loaded".asInstanceOf[typings.mapboxGl.mapboxGlStrings.loaded]
+  inline def loaded: typings.mapboxGl.mapboxGlStrings.loaded = "loaded".asInstanceOf[typings.mapboxGl.mapboxGlStrings.loaded]
   
-  @scala.inline
-  def loading: typings.mapboxGl.mapboxGlStrings.loading = "loading".asInstanceOf[typings.mapboxGl.mapboxGlStrings.loading]
+  inline def loading: typings.mapboxGl.mapboxGlStrings.loading = "loading".asInstanceOf[typings.mapboxGl.mapboxGlStrings.loading]
   
-  @scala.inline
-  def unavailable: typings.mapboxGl.mapboxGlStrings.unavailable = "unavailable".asInstanceOf[typings.mapboxGl.mapboxGlStrings.unavailable]
+  inline def unavailable: typings.mapboxGl.mapboxGlStrings.unavailable = "unavailable".asInstanceOf[typings.mapboxGl.mapboxGlStrings.unavailable]
 }

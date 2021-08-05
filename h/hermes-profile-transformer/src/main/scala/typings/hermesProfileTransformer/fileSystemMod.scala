@@ -10,6 +10,5 @@ object fileSystemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readFileAsync(path: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def readFileAsync(path: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

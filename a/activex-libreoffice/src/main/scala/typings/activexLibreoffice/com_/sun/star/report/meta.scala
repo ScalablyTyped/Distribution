@@ -40,8 +40,7 @@ object meta {
   }
   object XFormulaParser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FormulaOpCodeMapper: XFormulaOpCodeMapper,
       OpCodeMap: SafeArray[FormulaOpCodeMapEntry],
       PropertySetInfo: XPropertySetInfo,
@@ -65,14 +64,11 @@ object meta {
       __obj.asInstanceOf[XFormulaParser]
     }
     
-    @scala.inline
-    implicit class XFormulaParserMutableBuilder[Self <: XFormulaParser] (val x: Self) extends AnyVal {
+    extension [Self <: XFormulaParser](x: Self) {
       
-      @scala.inline
-      def setFormulaOpCodeMapper(value: XFormulaOpCodeMapper): Self = StObject.set(x, "FormulaOpCodeMapper", value.asInstanceOf[js.Any])
+      inline def setFormulaOpCodeMapper(value: XFormulaOpCodeMapper): Self = StObject.set(x, "FormulaOpCodeMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpCodeMap(value: SafeArray[FormulaOpCodeMapEntry]): Self = StObject.set(x, "OpCodeMap", value.asInstanceOf[js.Any])
+      inline def setOpCodeMap(value: SafeArray[FormulaOpCodeMapEntry]): Self = StObject.set(x, "OpCodeMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +92,7 @@ object meta {
   }
   object XFunctionCategory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Count: Double,
       ElementType: `type`,
       Name: String,
@@ -123,17 +118,13 @@ object meta {
       __obj.asInstanceOf[XFunctionCategory]
     }
     
-    @scala.inline
-    implicit class XFunctionCategoryMutableBuilder[Self <: XFunctionCategory] (val x: Self) extends AnyVal {
+    extension [Self <: XFunctionCategory](x: Self) {
       
-      @scala.inline
-      def setGetFunction(value: Double => XFunctionDescription): Self = StObject.set(x, "getFunction", js.Any.fromFunction1(value))
+      inline def setGetFunction(value: Double => XFunctionDescription): Self = StObject.set(x, "getFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,8 +152,7 @@ object meta {
   }
   object XFunctionDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Arguments: SafeArray[FunctionArgument],
       Category: XFunctionCategory,
       Description: String,
@@ -185,26 +175,19 @@ object meta {
       __obj.asInstanceOf[XFunctionDescription]
     }
     
-    @scala.inline
-    implicit class XFunctionDescriptionMutableBuilder[Self <: XFunctionDescription] (val x: Self) extends AnyVal {
+    extension [Self <: XFunctionDescription](x: Self) {
       
-      @scala.inline
-      def setArguments(value: SafeArray[FunctionArgument]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: SafeArray[FunctionArgument]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategory(value: XFunctionCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: XFunctionCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFormula(value: SeqEquiv[String] => String): Self = StObject.set(x, "createFormula", js.Any.fromFunction1(value))
+      inline def setCreateFormula(value: SeqEquiv[String] => String): Self = StObject.set(x, "createFormula", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,8 +212,7 @@ object meta {
   }
   object XFunctionManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Count: Double,
       ElementType: `type`,
       acquire: () => Unit,
@@ -250,14 +232,11 @@ object meta {
       __obj.asInstanceOf[XFunctionManager]
     }
     
-    @scala.inline
-    implicit class XFunctionManagerMutableBuilder[Self <: XFunctionManager] (val x: Self) extends AnyVal {
+    extension [Self <: XFunctionManager](x: Self) {
       
-      @scala.inline
-      def setGetCategory(value: Double => XFunctionCategory): Self = StObject.set(x, "getCategory", js.Any.fromFunction1(value))
+      inline def setGetCategory(value: Double => XFunctionCategory): Self = StObject.set(x, "getCategory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFunctionByName(value: String => XFunctionDescription): Self = StObject.set(x, "getFunctionByName", js.Any.fromFunction1(value))
+      inline def setGetFunctionByName(value: String => XFunctionDescription): Self = StObject.set(x, "getFunctionByName", js.Any.fromFunction1(value))
     }
   }
 }

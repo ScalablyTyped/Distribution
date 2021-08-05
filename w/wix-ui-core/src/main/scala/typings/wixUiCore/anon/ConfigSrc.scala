@@ -12,25 +12,19 @@ trait ConfigSrc extends StObject {
 }
 object ConfigSrc {
   
-  @scala.inline
-  def apply(config: js.Array[ValueDailymotion | ValuePlayable | ValueYoutube], src: js.Array[Label]): ConfigSrc = {
+  inline def apply(config: js.Array[ValueDailymotion | ValuePlayable | ValueYoutube], src: js.Array[Label]): ConfigSrc = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigSrc]
   }
   
-  @scala.inline
-  implicit class ConfigSrcMutableBuilder[Self <: ConfigSrc] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigSrc](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Array[ValueDailymotion | ValuePlayable | ValueYoutube]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Array[ValueDailymotion | ValuePlayable | ValueYoutube]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigVarargs(value: (ValueDailymotion | ValuePlayable | ValueYoutube)*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: (ValueDailymotion | ValuePlayable | ValueYoutube)*): Self = StObject.set(x, "config", js.Array(value :_*))
     
-    @scala.inline
-    def setSrc(value: js.Array[Label]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: js.Array[Label]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcVarargs(value: Label*): Self = StObject.set(x, "src", js.Array(value :_*))
+    inline def setSrcVarargs(value: Label*): Self = StObject.set(x, "src", js.Array(value :_*))
   }
 }

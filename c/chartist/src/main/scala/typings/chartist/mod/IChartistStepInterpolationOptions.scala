@@ -12,19 +12,15 @@ trait IChartistStepInterpolationOptions
 }
 object IChartistStepInterpolationOptions {
   
-  @scala.inline
-  def apply(): IChartistStepInterpolationOptions = {
+  inline def apply(): IChartistStepInterpolationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChartistStepInterpolationOptions]
   }
   
-  @scala.inline
-  implicit class IChartistStepInterpolationOptionsMutableBuilder[Self <: IChartistStepInterpolationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistStepInterpolationOptions](x: Self) {
     
-    @scala.inline
-    def setPostpone(value: Boolean): Self = StObject.set(x, "postpone", value.asInstanceOf[js.Any])
+    inline def setPostpone(value: Boolean): Self = StObject.set(x, "postpone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostponeUndefined: Self = StObject.set(x, "postpone", js.undefined)
+    inline def setPostponeUndefined: Self = StObject.set(x, "postpone", js.undefined)
   }
 }

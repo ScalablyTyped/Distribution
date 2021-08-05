@@ -17,40 +17,29 @@ trait Vertex3DList extends StObject {
 }
 object Vertex3DList {
   
-  @scala.inline
-  def apply(): Vertex3DList = {
+  inline def apply(): Vertex3DList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Vertex3DList]
   }
   
-  @scala.inline
-  implicit class Vertex3DListMutableBuilder[Self <: Vertex3DList] (val x: Self) extends AnyVal {
+  extension [Self <: Vertex3DList](x: Self) {
     
-    @scala.inline
-    def setXOffsets(value: js.Array[Double]): Self = StObject.set(x, "xOffsets", value.asInstanceOf[js.Any])
+    inline def setXOffsets(value: js.Array[Double]): Self = StObject.set(x, "xOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffsetsUndefined: Self = StObject.set(x, "xOffsets", js.undefined)
+    inline def setXOffsetsUndefined: Self = StObject.set(x, "xOffsets", js.undefined)
     
-    @scala.inline
-    def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value :_*))
+    inline def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value :_*))
     
-    @scala.inline
-    def setYOffsets(value: js.Array[Double]): Self = StObject.set(x, "yOffsets", value.asInstanceOf[js.Any])
+    inline def setYOffsets(value: js.Array[Double]): Self = StObject.set(x, "yOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetsUndefined: Self = StObject.set(x, "yOffsets", js.undefined)
+    inline def setYOffsetsUndefined: Self = StObject.set(x, "yOffsets", js.undefined)
     
-    @scala.inline
-    def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value :_*))
+    inline def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value :_*))
     
-    @scala.inline
-    def setZOffsets(value: js.Array[Double]): Self = StObject.set(x, "zOffsets", value.asInstanceOf[js.Any])
+    inline def setZOffsets(value: js.Array[Double]): Self = StObject.set(x, "zOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOffsetsUndefined: Self = StObject.set(x, "zOffsets", js.undefined)
+    inline def setZOffsetsUndefined: Self = StObject.set(x, "zOffsets", js.undefined)
     
-    @scala.inline
-    def setZOffsetsVarargs(value: Double*): Self = StObject.set(x, "zOffsets", js.Array(value :_*))
+    inline def setZOffsetsVarargs(value: Double*): Self = StObject.set(x, "zOffsets", js.Array(value :_*))
   }
 }

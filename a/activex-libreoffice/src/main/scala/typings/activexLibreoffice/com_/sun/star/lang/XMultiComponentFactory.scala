@@ -49,8 +49,7 @@ trait XMultiComponentFactory
 }
 object XMultiComponentFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
     createInstanceWithArgumentsAndContext: (String, SeqEquiv[js.Any], XComponentContext) => XInterface,
@@ -63,19 +62,14 @@ object XMultiComponentFactory {
     __obj.asInstanceOf[XMultiComponentFactory]
   }
   
-  @scala.inline
-  implicit class XMultiComponentFactoryMutableBuilder[Self <: XMultiComponentFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiComponentFactory](x: Self) {
     
-    @scala.inline
-    def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
+    inline def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateInstanceWithArgumentsAndContext(value: (String, SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction3(value))
+    inline def setCreateInstanceWithArgumentsAndContext(value: (String, SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateInstanceWithContext(value: (String, XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction2(value))
+    inline def setCreateInstanceWithContext(value: (String, XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAvailableServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableServiceNames", js.Any.fromFunction0(value))
+    inline def setGetAvailableServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableServiceNames", js.Any.fromFunction0(value))
   }
 }

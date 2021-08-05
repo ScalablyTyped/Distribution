@@ -23,8 +23,7 @@ object filePickerDriverMod {
   }
   object FilePickerDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errorMessage: () => String,
       exists: () => Boolean,
       getMainLabel: () => String,
@@ -36,23 +35,17 @@ object filePickerDriverMod {
       __obj.asInstanceOf[FilePickerDriver]
     }
     
-    @scala.inline
-    implicit class FilePickerDriverMutableBuilder[Self <: FilePickerDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FilePickerDriver](x: Self) {
       
-      @scala.inline
-      def setErrorMessage(value: () => String): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
+      inline def setErrorMessage(value: () => String): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMainLabel(value: () => String): Self = StObject.set(x, "getMainLabel", js.Any.fromFunction0(value))
+      inline def setGetMainLabel(value: () => String): Self = StObject.set(x, "getMainLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubLabel(value: () => String): Self = StObject.set(x, "getSubLabel", js.Any.fromFunction0(value))
+      inline def setGetSubLabel(value: () => String): Self = StObject.set(x, "getSubLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+      inline def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
     }
   }
 }

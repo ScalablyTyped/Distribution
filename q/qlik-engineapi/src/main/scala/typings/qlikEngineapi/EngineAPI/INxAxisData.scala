@@ -16,19 +16,15 @@ trait INxAxisData extends StObject {
 }
 object INxAxisData {
   
-  @scala.inline
-  def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
+  inline def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
     val __obj = js.Dynamic.literal(qAxis = qAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAxisData]
   }
   
-  @scala.inline
-  implicit class INxAxisDataMutableBuilder[Self <: INxAxisData] (val x: Self) extends AnyVal {
+  extension [Self <: INxAxisData](x: Self) {
     
-    @scala.inline
-    def setQAxis(value: js.Array[INxAxisTicks]): Self = StObject.set(x, "qAxis", value.asInstanceOf[js.Any])
+    inline def setQAxis(value: js.Array[INxAxisTicks]): Self = StObject.set(x, "qAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAxisVarargs(value: INxAxisTicks*): Self = StObject.set(x, "qAxis", js.Array(value :_*))
+    inline def setQAxisVarargs(value: INxAxisTicks*): Self = StObject.set(x, "qAxis", js.Array(value :_*))
   }
 }

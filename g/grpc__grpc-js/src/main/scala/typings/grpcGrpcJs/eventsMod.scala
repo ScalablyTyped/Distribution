@@ -24,8 +24,7 @@ object eventsMod {
   }
   object EmitterAugmentation1 {
     
-    @scala.inline
-    def apply[Name /* <: String | js.Symbol */, Arg](
+    inline def apply[Name /* <: String | js.Symbol */, Arg](
       addListener: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg],
       emit: (Name, Arg) => Boolean,
       on: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg],
@@ -38,29 +37,21 @@ object eventsMod {
       __obj.asInstanceOf[EmitterAugmentation1[Name, Arg]]
     }
     
-    @scala.inline
-    implicit class EmitterAugmentation1MutableBuilder[Self <: EmitterAugmentation1[?, ?], Name /* <: String | js.Symbol */, Arg] (val x: Self & (EmitterAugmentation1[Name, Arg])) extends AnyVal {
+    extension [Self <: EmitterAugmentation1[?, ?], Name /* <: String | js.Symbol */, Arg](x: Self & (EmitterAugmentation1[Name, Arg])) {
       
-      @scala.inline
-      def setAddListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmit(value: (Name, Arg) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (Name, Arg) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      inline def setPrependListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependOnceListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      inline def setPrependOnceListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
 }

@@ -11,22 +11,17 @@ trait GoogleCloudMlV1ListTrialsResponse extends StObject {
 }
 object GoogleCloudMlV1ListTrialsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ListTrialsResponse = {
+  inline def apply(): GoogleCloudMlV1ListTrialsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ListTrialsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ListTrialsResponseMutableBuilder[Self <: GoogleCloudMlV1ListTrialsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ListTrialsResponse](x: Self) {
     
-    @scala.inline
-    def setTrials(value: js.Array[GoogleCloudMlV1Trial]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
+    inline def setTrials(value: js.Array[GoogleCloudMlV1Trial]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
+    inline def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
     
-    @scala.inline
-    def setTrialsVarargs(value: GoogleCloudMlV1Trial*): Self = StObject.set(x, "trials", js.Array(value :_*))
+    inline def setTrialsVarargs(value: GoogleCloudMlV1Trial*): Self = StObject.set(x, "trials", js.Array(value :_*))
   }
 }

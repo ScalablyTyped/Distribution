@@ -16,19 +16,15 @@ trait IngParams extends StObject {
 }
 object IngParams {
   
-  @scala.inline
-  def apply(name: select | open | close | unselect, prevented: Boolean): IngParams = {
+  inline def apply(name: select | open | close | unselect, prevented: Boolean): IngParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], prevented = prevented.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngParams]
   }
   
-  @scala.inline
-  implicit class IngParamsMutableBuilder[Self <: IngParams] (val x: Self) extends AnyVal {
+  extension [Self <: IngParams](x: Self) {
     
-    @scala.inline
-    def setName(value: select | open | close | unselect): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: select | open | close | unselect): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevented(value: Boolean): Self = StObject.set(x, "prevented", value.asInstanceOf[js.Any])
+    inline def setPrevented(value: Boolean): Self = StObject.set(x, "prevented", value.asInstanceOf[js.Any])
   }
 }

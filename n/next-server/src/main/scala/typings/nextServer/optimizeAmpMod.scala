@@ -10,6 +10,5 @@ object optimizeAmpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(html: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(html: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

@@ -34,8 +34,7 @@ trait VoiceCommandContentTile extends StObject {
 }
 object VoiceCommandContentTile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appContext: js.Any,
     appLaunchArgument: String,
     contentTileType: VoiceCommandContentTileType,
@@ -49,31 +48,22 @@ object VoiceCommandContentTile {
     __obj.asInstanceOf[VoiceCommandContentTile]
   }
   
-  @scala.inline
-  implicit class VoiceCommandContentTileMutableBuilder[Self <: VoiceCommandContentTile] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandContentTile](x: Self) {
     
-    @scala.inline
-    def setAppContext(value: js.Any): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
+    inline def setAppContext(value: js.Any): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
+    inline def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTileType(value: VoiceCommandContentTileType): Self = StObject.set(x, "contentTileType", value.asInstanceOf[js.Any])
+    inline def setContentTileType(value: VoiceCommandContentTileType): Self = StObject.set(x, "contentTileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: IStorageFile): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: IStorageFile): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLine1(value: String): Self = StObject.set(x, "textLine1", value.asInstanceOf[js.Any])
+    inline def setTextLine1(value: String): Self = StObject.set(x, "textLine1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLine2(value: String): Self = StObject.set(x, "textLine2", value.asInstanceOf[js.Any])
+    inline def setTextLine2(value: String): Self = StObject.set(x, "textLine2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLine3(value: String): Self = StObject.set(x, "textLine3", value.asInstanceOf[js.Any])
+    inline def setTextLine3(value: String): Self = StObject.set(x, "textLine3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

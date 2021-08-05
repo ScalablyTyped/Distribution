@@ -44,20 +44,15 @@ object archMod {
     /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
   }
   
-  @scala.inline
-  def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
+  inline def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
   
-  @scala.inline
-  def getArchCliNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchCliNames")().asInstanceOf[js.Array[String]]
+  inline def getArchCliNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchCliNames")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getArtifactArchName(arch: Arch, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactArchName")(arch.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getArtifactArchName(arch: Arch, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactArchName")(arch.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toLinuxArchString(arch: Arch, targetName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLinuxArchString")(arch.asInstanceOf[js.Any], targetName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toLinuxArchString(arch: Arch, targetName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLinuxArchString")(arch.asInstanceOf[js.Any], targetName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.builderUtil.builderUtilStrings.x64
@@ -68,16 +63,12 @@ object archMod {
   trait ArchType extends StObject
   object ArchType {
     
-    @scala.inline
-    def arm64: typings.builderUtil.builderUtilStrings.arm64 = "arm64".asInstanceOf[typings.builderUtil.builderUtilStrings.arm64]
+    inline def arm64: typings.builderUtil.builderUtilStrings.arm64 = "arm64".asInstanceOf[typings.builderUtil.builderUtilStrings.arm64]
     
-    @scala.inline
-    def armv7l: typings.builderUtil.builderUtilStrings.armv7l = "armv7l".asInstanceOf[typings.builderUtil.builderUtilStrings.armv7l]
+    inline def armv7l: typings.builderUtil.builderUtilStrings.armv7l = "armv7l".asInstanceOf[typings.builderUtil.builderUtilStrings.armv7l]
     
-    @scala.inline
-    def ia32: typings.builderUtil.builderUtilStrings.ia32 = "ia32".asInstanceOf[typings.builderUtil.builderUtilStrings.ia32]
+    inline def ia32: typings.builderUtil.builderUtilStrings.ia32 = "ia32".asInstanceOf[typings.builderUtil.builderUtilStrings.ia32]
     
-    @scala.inline
-    def x64: typings.builderUtil.builderUtilStrings.x64 = "x64".asInstanceOf[typings.builderUtil.builderUtilStrings.x64]
+    inline def x64: typings.builderUtil.builderUtilStrings.x64 = "x64".asInstanceOf[typings.builderUtil.builderUtilStrings.x64]
   }
 }

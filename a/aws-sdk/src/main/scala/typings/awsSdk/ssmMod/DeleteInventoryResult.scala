@@ -23,31 +23,23 @@ trait DeleteInventoryResult extends StObject {
 }
 object DeleteInventoryResult {
   
-  @scala.inline
-  def apply(): DeleteInventoryResult = {
+  inline def apply(): DeleteInventoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteInventoryResult]
   }
   
-  @scala.inline
-  implicit class DeleteInventoryResultMutableBuilder[Self <: DeleteInventoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInventoryResult](x: Self) {
     
-    @scala.inline
-    def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
+    inline def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
+    inline def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
     
-    @scala.inline
-    def setDeletionSummary(value: InventoryDeletionSummary): Self = StObject.set(x, "DeletionSummary", value.asInstanceOf[js.Any])
+    inline def setDeletionSummary(value: InventoryDeletionSummary): Self = StObject.set(x, "DeletionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionSummaryUndefined: Self = StObject.set(x, "DeletionSummary", js.undefined)
+    inline def setDeletionSummaryUndefined: Self = StObject.set(x, "DeletionSummary", js.undefined)
     
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
   }
 }

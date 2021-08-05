@@ -21,25 +21,19 @@ trait SchemaGoogleCloudVisionV1p2beta1LatLongRect extends StObject {
 }
 object SchemaGoogleCloudVisionV1p2beta1LatLongRect {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1LatLongRect = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1LatLongRect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1LatLongRect]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1LatLongRectMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1LatLongRect] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1LatLongRect](x: Self) {
     
-    @scala.inline
-    def setMaxLatLng(value: SchemaLatLng): Self = StObject.set(x, "maxLatLng", value.asInstanceOf[js.Any])
+    inline def setMaxLatLng(value: SchemaLatLng): Self = StObject.set(x, "maxLatLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLatLngUndefined: Self = StObject.set(x, "maxLatLng", js.undefined)
+    inline def setMaxLatLngUndefined: Self = StObject.set(x, "maxLatLng", js.undefined)
     
-    @scala.inline
-    def setMinLatLng(value: SchemaLatLng): Self = StObject.set(x, "minLatLng", value.asInstanceOf[js.Any])
+    inline def setMinLatLng(value: SchemaLatLng): Self = StObject.set(x, "minLatLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLatLngUndefined: Self = StObject.set(x, "minLatLng", js.undefined)
+    inline def setMinLatLngUndefined: Self = StObject.set(x, "minLatLng", js.undefined)
   }
 }

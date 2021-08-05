@@ -10,9 +10,7 @@ object opentracingApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
   
-  @scala.inline
-  def opentracingAPITests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opentracingAPITests")().asInstanceOf[Unit]
+  inline def opentracingAPITests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opentracingAPITests")().asInstanceOf[Unit]
 }

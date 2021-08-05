@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotFieldSubtotal extends StObject
 object PivotFieldSubtotal {
   
-  @scala.inline
-  def Automatic: `1` = 1.asInstanceOf[`1`]
+  inline def Automatic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Average: `4` = 4.asInstanceOf[`4`]
+  inline def Average: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Count: `3` = 3.asInstanceOf[`3`]
+  inline def Count: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def CountNums: `8` = 8.asInstanceOf[`8`]
+  inline def CountNums: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Max: `5` = 5.asInstanceOf[`5`]
+  inline def Max: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Min: `6` = 6.asInstanceOf[`6`]
+  inline def Min: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Product: `7` = 7.asInstanceOf[`7`]
+  inline def Product: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def StdDev: `9` = 9.asInstanceOf[`9`]
+  inline def StdDev: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def StdDevp: `10` = 10.asInstanceOf[`10`]
+  inline def StdDevp: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def Sum: `2` = 2.asInstanceOf[`2`]
+  inline def Sum: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Var: `11` = 11.asInstanceOf[`11`]
+  inline def Var: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def Varp: `12` = 12.asInstanceOf[`12`]
+  inline def Varp: `12` = 12.asInstanceOf[`12`]
 }

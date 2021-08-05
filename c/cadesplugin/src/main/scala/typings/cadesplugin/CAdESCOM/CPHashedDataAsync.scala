@@ -36,8 +36,7 @@ trait CPHashedDataAsync
 }
 object CPHashedDataAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Algorithm: (// tslint:disable-line ban-types
   js.Promise[Unpacked[ValuesOf[CAPICOM_HASH_ALGORITHM]]]) | PromisifiedFunction[ValuesOf[CAPICOM_HASH_ALGORITHM]],
     DataEncoding: (// tslint:disable-line ban-types
@@ -55,75 +54,62 @@ object CPHashedDataAsync {
     __obj.asInstanceOf[CPHashedDataAsync]
   }
   
-  @scala.inline
-  implicit class CPHashedDataAsyncMutableBuilder[Self <: CPHashedDataAsync] (val x: Self) extends AnyVal {
+  extension [Self <: CPHashedDataAsync](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(
+    inline def setAlgorithm(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CAPICOM_HASH_ALGORITHM]]]) | PromisifiedFunction[ValuesOf[CAPICOM_HASH_ALGORITHM]]
     ): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmFunction1(
+    inline def setAlgorithmFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Algorithm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataEncoding(
+    inline def setDataEncoding(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]]
     ): Self = StObject.set(x, "DataEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEncodingFunction1(
+    inline def setDataEncodingFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "DataEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHash(
+    inline def setHash(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[js.Function1[/* newVal */ String, Unit]]]) | (PromisifiedFunction[js.Function1[/* newVal */ String, Unit]])
     ): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashFunction1(
+    inline def setHashFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* newVal */ String) => js.Promise[Unpacked[js.Any]] | Unit
     ): Self = StObject.set(x, "Hash", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_Algorithm(value: ValuesOf[CAPICOM_HASH_ALGORITHM] => js.Promise[Unit]): Self = StObject.set(x, "propset_Algorithm", js.Any.fromFunction1(value))
+    inline def setPropset_Algorithm(value: ValuesOf[CAPICOM_HASH_ALGORITHM] => js.Promise[Unit]): Self = StObject.set(x, "propset_Algorithm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_DataEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_DataEncoding", js.Any.fromFunction1(value))
+    inline def setPropset_DataEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_DataEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHashValue(
+    inline def setSetHashValue(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[js.Function1[/* newVal */ String, Unit]]]) | (PromisifiedFunction[js.Function1[/* newVal */ String, Unit]])
     ): Self = StObject.set(x, "SetHashValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetHashValueFunction1(
+    inline def setSetHashValueFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* newVal */ String) => js.Promise[Unpacked[js.Any]] | Unit
     ): Self = StObject.set(x, "SetHashValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFunction1(
+    inline def setValueFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]

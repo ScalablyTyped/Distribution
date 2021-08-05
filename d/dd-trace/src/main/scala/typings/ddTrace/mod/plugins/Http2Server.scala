@@ -10,8 +10,7 @@ trait Http2Server
      with Http_
 object Http2Server {
   
-  @scala.inline
-  def apply(): Http2Server = {
+  inline def apply(): Http2Server = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Http2Server]
   }

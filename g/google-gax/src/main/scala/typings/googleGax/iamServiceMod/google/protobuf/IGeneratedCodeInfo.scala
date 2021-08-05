@@ -13,25 +13,19 @@ trait IGeneratedCodeInfo extends StObject {
 }
 object IGeneratedCodeInfo {
   
-  @scala.inline
-  def apply(): IGeneratedCodeInfo = {
+  inline def apply(): IGeneratedCodeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeneratedCodeInfo]
   }
   
-  @scala.inline
-  implicit class IGeneratedCodeInfoMutableBuilder[Self <: IGeneratedCodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IGeneratedCodeInfo](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: js.Array[IAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: js.Array[IAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationNull: Self = StObject.set(x, "annotation", null)
+    inline def setAnnotationNull: Self = StObject.set(x, "annotation", null)
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
-    @scala.inline
-    def setAnnotationVarargs(value: IAnnotation*): Self = StObject.set(x, "annotation", js.Array(value :_*))
+    inline def setAnnotationVarargs(value: IAnnotation*): Self = StObject.set(x, "annotation", js.Array(value :_*))
   }
 }

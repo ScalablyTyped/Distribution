@@ -16,8 +16,7 @@ object offsetUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDragPreviewOffset(
+  inline def getDragPreviewOffset(
     sourceNode: HTMLElement,
     dragPreview: HTMLElement,
     clientOffset: XYCoord,
@@ -25,9 +24,7 @@ object offsetUtilsMod {
     offsetPoint: OffsetX
   ): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("getDragPreviewOffset")(sourceNode.asInstanceOf[js.Any], dragPreview.asInstanceOf[js.Any], clientOffset.asInstanceOf[js.Any], anchorPoint.asInstanceOf[js.Any], offsetPoint.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
   
-  @scala.inline
-  def getEventClientOffset(e: MouseEvent): XYCoord = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[XYCoord]
+  inline def getEventClientOffset(e: MouseEvent): XYCoord = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[XYCoord]
   
-  @scala.inline
-  def getNodeClientOffset(node: Node): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeClientOffset")(node.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
+  inline def getNodeClientOffset(node: Node): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeClientOffset")(node.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
 }

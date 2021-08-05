@@ -13,22 +13,17 @@ trait DescribeLoadBalancerPolicyTypesInput extends StObject {
 }
 object DescribeLoadBalancerPolicyTypesInput {
   
-  @scala.inline
-  def apply(): DescribeLoadBalancerPolicyTypesInput = {
+  inline def apply(): DescribeLoadBalancerPolicyTypesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLoadBalancerPolicyTypesInput]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBalancerPolicyTypesInputMutableBuilder[Self <: DescribeLoadBalancerPolicyTypesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBalancerPolicyTypesInput](x: Self) {
     
-    @scala.inline
-    def setPolicyTypeNames(value: PolicyTypeNames): Self = StObject.set(x, "PolicyTypeNames", value.asInstanceOf[js.Any])
+    inline def setPolicyTypeNames(value: PolicyTypeNames): Self = StObject.set(x, "PolicyTypeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypeNamesUndefined: Self = StObject.set(x, "PolicyTypeNames", js.undefined)
+    inline def setPolicyTypeNamesUndefined: Self = StObject.set(x, "PolicyTypeNames", js.undefined)
     
-    @scala.inline
-    def setPolicyTypeNamesVarargs(value: PolicyTypeName*): Self = StObject.set(x, "PolicyTypeNames", js.Array(value :_*))
+    inline def setPolicyTypeNamesVarargs(value: PolicyTypeName*): Self = StObject.set(x, "PolicyTypeNames", js.Array(value :_*))
   }
 }

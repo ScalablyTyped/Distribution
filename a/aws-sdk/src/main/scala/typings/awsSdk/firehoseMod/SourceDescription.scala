@@ -13,19 +13,15 @@ trait SourceDescription extends StObject {
 }
 object SourceDescription {
   
-  @scala.inline
-  def apply(): SourceDescription = {
+  inline def apply(): SourceDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceDescription]
   }
   
-  @scala.inline
-  implicit class SourceDescriptionMutableBuilder[Self <: SourceDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SourceDescription](x: Self) {
     
-    @scala.inline
-    def setKinesisStreamSourceDescription(value: KinesisStreamSourceDescription): Self = StObject.set(x, "KinesisStreamSourceDescription", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamSourceDescription(value: KinesisStreamSourceDescription): Self = StObject.set(x, "KinesisStreamSourceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamSourceDescriptionUndefined: Self = StObject.set(x, "KinesisStreamSourceDescription", js.undefined)
+    inline def setKinesisStreamSourceDescriptionUndefined: Self = StObject.set(x, "KinesisStreamSourceDescription", js.undefined)
   }
 }

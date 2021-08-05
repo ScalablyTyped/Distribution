@@ -31,8 +31,7 @@ object modalModalMod {
     @JSImport("antd-mobile/lib/modal/Modal", "default.defaultProps")
     @js.native
     def defaultProps: Animated = js.native
-    @scala.inline
-    def defaultProps_=(x: Animated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Animated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("antd-mobile/lib/modal/Modal", "ModalComponent")
@@ -53,36 +52,25 @@ object modalModalMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def alert(title: ReactNode, message: ReactNode): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]]): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]], platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def alert(title: ReactNode, message: ReactNode, actions: Unit, platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def alert(title: ReactNode, message: ReactNode): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]]): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]], platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def alert(title: ReactNode, message: ReactNode, actions: Unit, platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
     
-    @scala.inline
-    def operation(): Close = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")().asInstanceOf[Close]
-    @scala.inline
-    def operation(actions: js.Array[Action[CSSProperties]]): Close = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")(actions.asInstanceOf[js.Any]).asInstanceOf[Close]
-    @scala.inline
-    def operation(actions: js.Array[Action[CSSProperties]], platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def operation(actions: Unit, platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def operation(): Close = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")().asInstanceOf[Close]
+    inline def operation(actions: js.Array[Action[CSSProperties]]): Close = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")(actions.asInstanceOf[js.Any]).asInstanceOf[Close]
+    inline def operation(actions: js.Array[Action[CSSProperties]], platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def operation(actions: Unit, platform: String): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(actions.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
     
-    @scala.inline
-    def prompt(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any])).asInstanceOf[Close]
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: Unit,
       defaultValue: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -90,8 +78,7 @@ object modalModalMod {
       defaultValue: String,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -100,8 +87,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -110,8 +96,7 @@ object modalModalMod {
       placeholders: Unit,
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -119,8 +104,7 @@ object modalModalMod {
       defaultValue: Unit,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -129,8 +113,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt(
+    inline def prompt(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -140,23 +123,20 @@ object modalModalMod {
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
     
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: typings.antdMobile.antdMobileStrings.default
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: typings.antdMobile.antdMobileStrings.default,
       defaultValue: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -164,8 +144,7 @@ object modalModalMod {
       defaultValue: String,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -174,8 +153,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -184,8 +162,7 @@ object modalModalMod {
       placeholders: Unit,
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -193,8 +170,7 @@ object modalModalMod {
       defaultValue: Unit,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -203,8 +179,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_default(
+    inline def prompt_default(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -214,23 +189,20 @@ object modalModalMod {
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
     
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: `login-password`
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: `login-password`,
       defaultValue: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -238,8 +210,7 @@ object modalModalMod {
       defaultValue: String,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -248,8 +219,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -258,8 +228,7 @@ object modalModalMod {
       placeholders: Unit,
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -267,8 +236,7 @@ object modalModalMod {
       defaultValue: Unit,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -277,8 +245,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_loginpassword(
+    inline def prompt_loginpassword(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -288,23 +255,20 @@ object modalModalMod {
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
     
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: `secure-text`
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
       `type`: `secure-text`,
       defaultValue: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -312,8 +276,7 @@ object modalModalMod {
       defaultValue: String,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -322,8 +285,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -332,8 +294,7 @@ object modalModalMod {
       placeholders: Unit,
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -341,8 +302,7 @@ object modalModalMod {
       defaultValue: Unit,
       placeholders: js.Array[String]
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -351,8 +311,7 @@ object modalModalMod {
       placeholders: js.Array[String],
       platform: String
     ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-    @scala.inline
-    def prompt_securetext(
+    inline def prompt_securetext(
       title: ReactNode,
       message: ReactNode,
       callbackOrActions: CallbackOrActions[CSSProperties],
@@ -395,68 +354,48 @@ object modalModalMod {
   }
   object ModalProps {
     
-    @scala.inline
-    def apply(visible: Boolean): ModalProps = {
+    inline def apply(visible: Boolean): ModalProps = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalProps]
     }
     
-    @scala.inline
-    implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProps](x: Self) {
       
-      @scala.inline
-      def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
+      inline def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
+      inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
+      inline def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
+      inline def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      @scala.inline
-      def setWrapClassName(value: String): Self = StObject.set(x, "wrapClassName", value.asInstanceOf[js.Any])
+      inline def setWrapClassName(value: String): Self = StObject.set(x, "wrapClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapClassNameUndefined: Self = StObject.set(x, "wrapClassName", js.undefined)
+      inline def setWrapClassNameUndefined: Self = StObject.set(x, "wrapClassName", js.undefined)
       
-      @scala.inline
-      def setWrapProps(value: PartialHTMLPropsHTMLDivEl): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
+      inline def setWrapProps(value: PartialHTMLPropsHTMLDivEl): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapPropsUndefined: Self = StObject.set(x, "wrapProps", js.undefined)
+      inline def setWrapPropsUndefined: Self = StObject.set(x, "wrapProps", js.undefined)
     }
   }
 }

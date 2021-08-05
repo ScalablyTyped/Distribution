@@ -13,16 +13,13 @@ trait IndexDocument extends StObject {
 }
 object IndexDocument {
   
-  @scala.inline
-  def apply(Suffix: Suffix): IndexDocument = {
+  inline def apply(Suffix: Suffix): IndexDocument = {
     val __obj = js.Dynamic.literal(Suffix = Suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDocument]
   }
   
-  @scala.inline
-  implicit class IndexDocumentMutableBuilder[Self <: IndexDocument] (val x: Self) extends AnyVal {
+  extension [Self <: IndexDocument](x: Self) {
     
-    @scala.inline
-    def setSuffix(value: Suffix): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: Suffix): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
   }
 }

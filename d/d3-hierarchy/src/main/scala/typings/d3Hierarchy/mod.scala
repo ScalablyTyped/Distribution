@@ -13,50 +13,36 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cluster[Datum](): ClusterLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("cluster")().asInstanceOf[ClusterLayout[Datum]]
+  inline def cluster[Datum](): ClusterLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("cluster")().asInstanceOf[ClusterLayout[Datum]]
   
-  @scala.inline
-  def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
-  @scala.inline
-  def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
+  inline def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
+  inline def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
   
-  @scala.inline
-  def pack[Datum](): PackLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[PackLayout[Datum]]
+  inline def pack[Datum](): PackLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[PackLayout[Datum]]
   
-  @scala.inline
-  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = ^.asInstanceOf[js.Dynamic].applyDynamic("packEnclose")(circles.asInstanceOf[js.Any]).asInstanceOf[PackCircle]
+  inline def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = ^.asInstanceOf[js.Dynamic].applyDynamic("packEnclose")(circles.asInstanceOf[js.Any]).asInstanceOf[PackCircle]
   
-  @scala.inline
-  def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum & PackCircle] = ^.asInstanceOf[js.Dynamic].applyDynamic("packSiblings")(circles.asInstanceOf[js.Any]).asInstanceOf[js.Array[Datum & PackCircle]]
+  inline def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum & PackCircle] = ^.asInstanceOf[js.Dynamic].applyDynamic("packSiblings")(circles.asInstanceOf[js.Any]).asInstanceOf[js.Array[Datum & PackCircle]]
   
-  @scala.inline
-  def partition[Datum](): PartitionLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")().asInstanceOf[PartitionLayout[Datum]]
+  inline def partition[Datum](): PartitionLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")().asInstanceOf[PartitionLayout[Datum]]
   
-  @scala.inline
-  def stratify[Datum](): StratifyOperator[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("stratify")().asInstanceOf[StratifyOperator[Datum]]
+  inline def stratify[Datum](): StratifyOperator[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("stratify")().asInstanceOf[StratifyOperator[Datum]]
   
-  @scala.inline
-  def tree[Datum](): TreeLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")().asInstanceOf[TreeLayout[Datum]]
+  inline def tree[Datum](): TreeLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")().asInstanceOf[TreeLayout[Datum]]
   
-  @scala.inline
-  def treemap[Datum](): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("treemap")().asInstanceOf[TreemapLayout[Datum]]
+  inline def treemap[Datum](): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("treemap")().asInstanceOf[TreemapLayout[Datum]]
   
-  @scala.inline
-  def treemapBinary(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapBinary(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def treemapDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("d3-hierarchy", "treemapResquarify")
   @js.native
   val treemapResquarify: RatioSquarifyTilingFactory = js.native
   
-  @scala.inline
-  def treemapSlice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapSlice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def treemapSliceDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapSliceDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("d3-hierarchy", "treemapSquarify")
   @js.native
@@ -128,20 +114,16 @@ object mod {
   }
   object HierarchyCircularLink {
     
-    @scala.inline
-    def apply[Datum](source: HierarchyCircularNode[Datum], target: HierarchyCircularNode[Datum]): HierarchyCircularLink[Datum] = {
+    inline def apply[Datum](source: HierarchyCircularNode[Datum], target: HierarchyCircularNode[Datum]): HierarchyCircularLink[Datum] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[HierarchyCircularLink[Datum]]
     }
     
-    @scala.inline
-    implicit class HierarchyCircularLinkMutableBuilder[Self <: HierarchyCircularLink[?], Datum] (val x: Self & HierarchyCircularLink[Datum]) extends AnyVal {
+    extension [Self <: HierarchyCircularLink[?], Datum](x: Self & HierarchyCircularLink[Datum]) {
       
-      @scala.inline
-      def setSource(value: HierarchyCircularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: HierarchyCircularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HierarchyCircularNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HierarchyCircularNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,20 +162,16 @@ object mod {
   }
   object HierarchyLink {
     
-    @scala.inline
-    def apply[Datum](source: HierarchyNode[Datum], target: HierarchyNode[Datum]): HierarchyLink[Datum] = {
+    inline def apply[Datum](source: HierarchyNode[Datum], target: HierarchyNode[Datum]): HierarchyLink[Datum] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[HierarchyLink[Datum]]
     }
     
-    @scala.inline
-    implicit class HierarchyLinkMutableBuilder[Self <: HierarchyLink[?], Datum] (val x: Self & HierarchyLink[Datum]) extends AnyVal {
+    extension [Self <: HierarchyLink[?], Datum](x: Self & HierarchyLink[Datum]) {
       
-      @scala.inline
-      def setSource(value: HierarchyNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: HierarchyNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HierarchyNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HierarchyNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -369,20 +347,16 @@ object mod {
   }
   object HierarchyPointLink {
     
-    @scala.inline
-    def apply[Datum](source: HierarchyPointNode[Datum], target: HierarchyPointNode[Datum]): HierarchyPointLink[Datum] = {
+    inline def apply[Datum](source: HierarchyPointNode[Datum], target: HierarchyPointNode[Datum]): HierarchyPointLink[Datum] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[HierarchyPointLink[Datum]]
     }
     
-    @scala.inline
-    implicit class HierarchyPointLinkMutableBuilder[Self <: HierarchyPointLink[?], Datum] (val x: Self & HierarchyPointLink[Datum]) extends AnyVal {
+    extension [Self <: HierarchyPointLink[?], Datum](x: Self & HierarchyPointLink[Datum]) {
       
-      @scala.inline
-      def setSource(value: HierarchyPointNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: HierarchyPointNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HierarchyPointNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HierarchyPointNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -416,20 +390,16 @@ object mod {
   }
   object HierarchyRectangularLink {
     
-    @scala.inline
-    def apply[Datum](source: HierarchyRectangularNode[Datum], target: HierarchyRectangularNode[Datum]): HierarchyRectangularLink[Datum] = {
+    inline def apply[Datum](source: HierarchyRectangularNode[Datum], target: HierarchyRectangularNode[Datum]): HierarchyRectangularLink[Datum] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[HierarchyRectangularLink[Datum]]
     }
     
-    @scala.inline
-    implicit class HierarchyRectangularLinkMutableBuilder[Self <: HierarchyRectangularLink[?], Datum] (val x: Self & HierarchyRectangularLink[Datum]) extends AnyVal {
+    extension [Self <: HierarchyRectangularLink[?], Datum](x: Self & HierarchyRectangularLink[Datum]) {
       
-      @scala.inline
-      def setSource(value: HierarchyRectangularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: HierarchyRectangularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HierarchyRectangularNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HierarchyRectangularNode[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -478,23 +448,18 @@ object mod {
   }
   object PackCircle {
     
-    @scala.inline
-    def apply(r: Double, x: Double, y: Double): PackCircle = {
+    inline def apply(r: Double, x: Double, y: Double): PackCircle = {
       val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackCircle]
     }
     
-    @scala.inline
-    implicit class PackCircleMutableBuilder[Self <: PackCircle] (val x: Self) extends AnyVal {
+    extension [Self <: PackCircle](x: Self) {
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -588,29 +553,22 @@ object mod {
   }
   object PackRadius {
     
-    @scala.inline
-    def apply(r: Double): PackRadius = {
+    inline def apply(r: Double): PackRadius = {
       val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackRadius]
     }
     
-    @scala.inline
-    implicit class PackRadiusMutableBuilder[Self <: PackRadius] (val x: Self) extends AnyVal {
+    extension [Self <: PackRadius](x: Self) {
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   

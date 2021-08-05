@@ -51,20 +51,17 @@ object Color {
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_fromNumber
   		 */
   /* static member */
-  @scala.inline
-  def fromNumber(value: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def fromNumber(value: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_fromRGB
   		 */
   /* static member */
-  @scala.inline
-  def fromRGB(red: Double, green: Double, blue: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRGB")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromRGB(red: Double, green: Double, blue: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRGB")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_fromRGBA
   		 */
   /* static member */
-  @scala.inline
-  def fromRGBA(red: Double, green: Double, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromRGBA(red: Double, green: Double, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
 }

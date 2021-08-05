@@ -12,6 +12,5 @@ object indexReadonlyRecordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indexReadonlyRecord[A](): Index_[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyRecord")().asInstanceOf[Index_[Record[String, A], String, A]]
+  inline def indexReadonlyRecord[A](): Index_[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyRecord")().asInstanceOf[Index_[Record[String, A], String, A]]
 }

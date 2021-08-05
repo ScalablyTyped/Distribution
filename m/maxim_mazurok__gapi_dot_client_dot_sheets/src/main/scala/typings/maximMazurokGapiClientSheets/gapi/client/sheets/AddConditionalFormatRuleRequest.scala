@@ -14,25 +14,19 @@ trait AddConditionalFormatRuleRequest extends StObject {
 }
 object AddConditionalFormatRuleRequest {
   
-  @scala.inline
-  def apply(): AddConditionalFormatRuleRequest = {
+  inline def apply(): AddConditionalFormatRuleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddConditionalFormatRuleRequest]
   }
   
-  @scala.inline
-  implicit class AddConditionalFormatRuleRequestMutableBuilder[Self <: AddConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddConditionalFormatRuleRequest](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setRule(value: ConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

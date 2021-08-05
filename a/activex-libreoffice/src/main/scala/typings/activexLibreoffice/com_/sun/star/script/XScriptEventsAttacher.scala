@@ -25,8 +25,7 @@ trait XScriptEventsAttacher
 }
 object XScriptEventsAttacher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     attachEvents: (SeqEquiv[XInterface], XScriptListener, js.Any) => Unit,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XScriptEventsAttacher {
     __obj.asInstanceOf[XScriptEventsAttacher]
   }
   
-  @scala.inline
-  implicit class XScriptEventsAttacherMutableBuilder[Self <: XScriptEventsAttacher] (val x: Self) extends AnyVal {
+  extension [Self <: XScriptEventsAttacher](x: Self) {
     
-    @scala.inline
-    def setAttachEvents(value: (SeqEquiv[XInterface], XScriptListener, js.Any) => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction3(value))
+    inline def setAttachEvents(value: (SeqEquiv[XInterface], XScriptListener, js.Any) => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction3(value))
   }
 }

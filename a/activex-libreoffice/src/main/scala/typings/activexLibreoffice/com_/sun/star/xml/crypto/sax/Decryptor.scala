@@ -18,8 +18,7 @@ trait Decryptor
      with XInitialization
 object Decryptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addDecryptionResultListener: XDecryptionResultListener => Unit,
     endMission: () => Boolean,

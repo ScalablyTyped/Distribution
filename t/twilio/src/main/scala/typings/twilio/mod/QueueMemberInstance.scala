@@ -17,16 +17,13 @@ trait QueueMemberInstance
 }
 object QueueMemberInstance {
   
-  @scala.inline
-  def apply(get: RestMethod, post: RestMethod, update: RestMethod): QueueMemberInstance = {
+  inline def apply(get: RestMethod, post: RestMethod, update: RestMethod): QueueMemberInstance = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueMemberInstance]
   }
   
-  @scala.inline
-  implicit class QueueMemberInstanceMutableBuilder[Self <: QueueMemberInstance] (val x: Self) extends AnyVal {
+  extension [Self <: QueueMemberInstance](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

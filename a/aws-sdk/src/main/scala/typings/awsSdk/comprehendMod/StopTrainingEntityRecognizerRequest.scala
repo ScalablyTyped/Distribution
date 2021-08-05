@@ -13,16 +13,13 @@ trait StopTrainingEntityRecognizerRequest extends StObject {
 }
 object StopTrainingEntityRecognizerRequest {
   
-  @scala.inline
-  def apply(EntityRecognizerArn: EntityRecognizerArn): StopTrainingEntityRecognizerRequest = {
+  inline def apply(EntityRecognizerArn: EntityRecognizerArn): StopTrainingEntityRecognizerRequest = {
     val __obj = js.Dynamic.literal(EntityRecognizerArn = EntityRecognizerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopTrainingEntityRecognizerRequest]
   }
   
-  @scala.inline
-  implicit class StopTrainingEntityRecognizerRequestMutableBuilder[Self <: StopTrainingEntityRecognizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopTrainingEntityRecognizerRequest](x: Self) {
     
-    @scala.inline
-    def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
+    inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
   }
 }

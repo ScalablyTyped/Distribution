@@ -53,8 +53,7 @@ trait SharedProps extends StObject {
 }
 object SharedProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $adjoined: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both,
     $disabled: Boolean,
     $error: Boolean,
@@ -69,34 +68,24 @@ object SharedProps {
     __obj.asInstanceOf[SharedProps]
   }
   
-  @scala.inline
-  implicit class SharedPropsMutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
+  extension [Self <: SharedProps](x: Self) {
     
-    @scala.inline
-    def set$adjoined(value: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
+    inline def set$adjoined(value: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+    inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
+    inline def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$hasIconTrailing(value: Boolean): Self = StObject.set(x, "$hasIconTrailing", value.asInstanceOf[js.Any])
+    inline def set$hasIconTrailing(value: Boolean): Self = StObject.set(x, "$hasIconTrailing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
+    inline def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$position(value: /* keyof baseui.baseui/input.ENHANCER_POSITION */ start | end): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
+    inline def set$position(value: /* keyof baseui.baseui/input.ENHANCER_POSITION */ start | end): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$positive(value: Boolean): Self = StObject.set(x, "$positive", value.asInstanceOf[js.Any])
+    inline def set$positive(value: Boolean): Self = StObject.set(x, "$positive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
+    inline def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$size(value: /* keyof baseui.baseui/input.SIZE */ mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$size(value: /* keyof baseui.baseui/input.SIZE */ mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
   }
 }

@@ -33,31 +33,23 @@ trait FilterPivotHierarchyUpdateData extends StObject {
 }
 object FilterPivotHierarchyUpdateData {
   
-  @scala.inline
-  def apply(): FilterPivotHierarchyUpdateData = {
+  inline def apply(): FilterPivotHierarchyUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterPivotHierarchyUpdateData]
   }
   
-  @scala.inline
-  implicit class FilterPivotHierarchyUpdateDataMutableBuilder[Self <: FilterPivotHierarchyUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: FilterPivotHierarchyUpdateData](x: Self) {
     
-    @scala.inline
-    def setEnableMultipleFilterItems(value: Boolean): Self = StObject.set(x, "enableMultipleFilterItems", value.asInstanceOf[js.Any])
+    inline def setEnableMultipleFilterItems(value: Boolean): Self = StObject.set(x, "enableMultipleFilterItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMultipleFilterItemsUndefined: Self = StObject.set(x, "enableMultipleFilterItems", js.undefined)
+    inline def setEnableMultipleFilterItemsUndefined: Self = StObject.set(x, "enableMultipleFilterItems", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

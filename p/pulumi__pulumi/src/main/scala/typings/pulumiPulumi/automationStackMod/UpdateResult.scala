@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateResult extends StObject
 object UpdateResult {
   
-  @scala.inline
-  def failed: typings.pulumiPulumi.pulumiPulumiStrings.failed = "failed".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.failed]
+  inline def failed: typings.pulumiPulumi.pulumiPulumiStrings.failed = "failed".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.failed]
   
-  @scala.inline
-  def `in-progress`: typings.pulumiPulumi.pulumiPulumiStrings.`in-progress` = "in-progress".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`in-progress`]
+  inline def `in-progress`: typings.pulumiPulumi.pulumiPulumiStrings.`in-progress` = "in-progress".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`in-progress`]
   
-  @scala.inline
-  def `not-started`: typings.pulumiPulumi.pulumiPulumiStrings.`not-started` = "not-started".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`not-started`]
+  inline def `not-started`: typings.pulumiPulumi.pulumiPulumiStrings.`not-started` = "not-started".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`not-started`]
   
-  @scala.inline
-  def succeeded: typings.pulumiPulumi.pulumiPulumiStrings.succeeded = "succeeded".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.succeeded]
+  inline def succeeded: typings.pulumiPulumi.pulumiPulumiStrings.succeeded = "succeeded".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.succeeded]
 }

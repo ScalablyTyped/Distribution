@@ -17,25 +17,19 @@ trait BufferLoadOptions extends StObject {
 }
 object BufferLoadOptions {
   
-  @scala.inline
-  def apply(): BufferLoadOptions = {
+  inline def apply(): BufferLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BufferLoadOptions]
   }
   
-  @scala.inline
-  implicit class BufferLoadOptionsMutableBuilder[Self <: BufferLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BufferLoadOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
+    inline def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
+    inline def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
   }
 }

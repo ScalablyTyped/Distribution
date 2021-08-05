@@ -23,22 +23,17 @@ trait PreviewImageConfig
 }
 object PreviewImageConfig {
   
-  @scala.inline
-  def apply(current: String, urls: js.Array[String]): PreviewImageConfig = {
+  inline def apply(current: String, urls: js.Array[String]): PreviewImageConfig = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewImageConfig]
   }
   
-  @scala.inline
-  implicit class PreviewImageConfigMutableBuilder[Self <: PreviewImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewImageConfig](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

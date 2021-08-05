@@ -50,7 +50,7 @@ object externalSystemRoleMod {
       * used in {@link ExternalSystemArray.getRole} and {@link ExternalSystem.get}, as a key elements. Thus, this
       * {@link name} should be unique in an {@link ExternalSystemArray}.
       */
-    var name: String = js.native
+    /* protected */ var name: String = js.native
     
     /**
       * Sending message.
@@ -75,6 +75,6 @@ object externalSystemRoleMod {
     /**
       * @hidden
       */
-    var system: js.Any = js.native
+    /* private */ var system: js.Any = js.native
   }
 }

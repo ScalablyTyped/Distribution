@@ -15,16 +15,13 @@ trait TwitterLike extends StObject {
 }
 object TwitterLike {
   
-  @scala.inline
-  def apply(ready: js.Function1[/* twttr */ Twitter, Unit] => Unit): TwitterLike = {
+  inline def apply(ready: js.Function1[/* twttr */ Twitter, Unit] => Unit): TwitterLike = {
     val __obj = js.Dynamic.literal(ready = js.Any.fromFunction1(ready))
     __obj.asInstanceOf[TwitterLike]
   }
   
-  @scala.inline
-  implicit class TwitterLikeMutableBuilder[Self <: TwitterLike] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterLike](x: Self) {
     
-    @scala.inline
-    def setReady(value: js.Function1[/* twttr */ Twitter, Unit] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    inline def setReady(value: js.Function1[/* twttr */ Twitter, Unit] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
   }
 }

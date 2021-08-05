@@ -74,8 +74,7 @@ trait PropertyBrowserController
 }
 object PropertyBrowserController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: String,
     Frame: XFrame,
     IntrospectedObject: XPropertySet,
@@ -114,19 +113,14 @@ object PropertyBrowserController {
     __obj.asInstanceOf[PropertyBrowserController]
   }
   
-  @scala.inline
-  implicit class PropertyBrowserControllerMutableBuilder[Self <: PropertyBrowserController] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyBrowserController](x: Self) {
     
-    @scala.inline
-    def setCurrentPage(value: String): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: String): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntrospectedObject(value: XPropertySet): Self = StObject.set(x, "IntrospectedObject", value.asInstanceOf[js.Any])
+    inline def setIntrospectedObject(value: XPropertySet): Self = StObject.set(x, "IntrospectedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
   }
 }

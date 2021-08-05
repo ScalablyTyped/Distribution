@@ -16,37 +16,27 @@ trait LoggingPreferences extends StObject {
 }
 object LoggingPreferences {
   
-  @scala.inline
-  def apply(): LoggingPreferences = {
+  inline def apply(): LoggingPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoggingPreferences]
   }
   
-  @scala.inline
-  implicit class LoggingPreferencesMutableBuilder[Self <: LoggingPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingPreferences](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: LoggingPreferenceType): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: LoggingPreferenceType): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
-    @scala.inline
-    def setClient(value: LoggingPreferenceType): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: LoggingPreferenceType): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setDriver(value: LoggingPreferenceType): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: LoggingPreferenceType): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
+    inline def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
     
-    @scala.inline
-    def setServer(value: LoggingPreferenceType): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: LoggingPreferenceType): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

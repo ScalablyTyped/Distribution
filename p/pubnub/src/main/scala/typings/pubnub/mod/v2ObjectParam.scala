@@ -10,19 +10,15 @@ trait v2ObjectParam[Custom /* <: ObjectCustom */] extends StObject {
 }
 object v2ObjectParam {
   
-  @scala.inline
-  def apply[Custom /* <: ObjectCustom */](): v2ObjectParam[Custom] = {
+  inline def apply[Custom /* <: ObjectCustom */](): v2ObjectParam[Custom] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[v2ObjectParam[Custom]]
   }
   
-  @scala.inline
-  implicit class v2ObjectParamMutableBuilder[Self <: v2ObjectParam[?], Custom /* <: ObjectCustom */] (val x: Self & v2ObjectParam[Custom]) extends AnyVal {
+  extension [Self <: v2ObjectParam[?], Custom /* <: ObjectCustom */](x: Self & v2ObjectParam[Custom]) {
     
-    @scala.inline
-    def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
   }
 }

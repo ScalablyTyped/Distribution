@@ -14,13 +14,12 @@ trait SlideShowWindows extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.SlideShowWindows_typekey")
+  /* private */ @JSName("PowerPoint.SlideShowWindows_typekey")
   var PowerPointDotSlideShowWindows_typekey: SlideShowWindows
 }
 object SlideShowWindows {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: Double => SlideShowWindow,
@@ -32,22 +31,16 @@ object SlideShowWindows {
     __obj.asInstanceOf[SlideShowWindows]
   }
   
-  @scala.inline
-  implicit class SlideShowWindowsMutableBuilder[Self <: SlideShowWindows] (val x: Self) extends AnyVal {
+  extension [Self <: SlideShowWindows](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => SlideShowWindow): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => SlideShowWindow): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSlideShowWindows_typekey(value: SlideShowWindows): Self = StObject.set(x, "PowerPoint.SlideShowWindows_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSlideShowWindows_typekey(value: SlideShowWindows): Self = StObject.set(x, "PowerPoint.SlideShowWindows_typekey", value.asInstanceOf[js.Any])
   }
 }

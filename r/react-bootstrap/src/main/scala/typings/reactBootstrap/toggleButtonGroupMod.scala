@@ -37,26 +37,20 @@ object toggleButtonGroupMod {
   }
   object BaseProps {
     
-    @scala.inline
-    def apply(): BaseProps = {
+    inline def apply(): BaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseProps]
     }
     
-    @scala.inline
-    implicit class BasePropsMutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseProps](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -70,30 +64,23 @@ object toggleButtonGroupMod {
   }
   object CheckboxProps {
     
-    @scala.inline
-    def apply(): CheckboxProps = {
+    inline def apply(): CheckboxProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("checkbox")
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    @scala.inline
-    implicit class CheckboxPropsMutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* values */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* values */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,27 +95,21 @@ object toggleButtonGroupMod {
   }
   object RadioProps {
     
-    @scala.inline
-    def apply(name: String): RadioProps = {
+    inline def apply(name: String): RadioProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("radio")
       __obj.asInstanceOf[RadioProps]
     }
     
-    @scala.inline
-    implicit class RadioPropsMutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setType(value: radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

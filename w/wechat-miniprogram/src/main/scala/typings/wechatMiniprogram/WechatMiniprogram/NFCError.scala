@@ -34,19 +34,15 @@ trait NFCError extends StObject {
 }
 object NFCError {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): NFCError = {
+  inline def apply(errCode: Double, errMsg: String): NFCError = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[NFCError]
   }
   
-  @scala.inline
-  implicit class NFCErrorMutableBuilder[Self <: NFCError] (val x: Self) extends AnyVal {
+  extension [Self <: NFCError](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait ListComponentBuildVersionsRequest extends StObject {
 }
 object ListComponentBuildVersionsRequest {
   
-  @scala.inline
-  def apply(componentVersionArn: ComponentVersionArn): ListComponentBuildVersionsRequest = {
+  inline def apply(componentVersionArn: ComponentVersionArn): ListComponentBuildVersionsRequest = {
     val __obj = js.Dynamic.literal(componentVersionArn = componentVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListComponentBuildVersionsRequest]
   }
   
-  @scala.inline
-  implicit class ListComponentBuildVersionsRequestMutableBuilder[Self <: ListComponentBuildVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListComponentBuildVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setComponentVersionArn(value: ComponentVersionArn): Self = StObject.set(x, "componentVersionArn", value.asInstanceOf[js.Any])
+    inline def setComponentVersionArn(value: ComponentVersionArn): Self = StObject.set(x, "componentVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: RestrictedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: RestrictedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

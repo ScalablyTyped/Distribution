@@ -21,52 +21,37 @@ trait GridProps[T] extends StObject {
 }
 object GridProps {
   
-  @scala.inline
-  def apply[T](): GridProps[T] = {
+  inline def apply[T](): GridProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridProps[T]]
   }
   
-  @scala.inline
-  implicit class GridPropsMutableBuilder[Self <: GridProps[?], T] (val x: Self & GridProps[T]) extends AnyVal {
+  extension [Self <: GridProps[?], T](x: Self & GridProps[T]) {
     
-    @scala.inline
-    def setBelowChart(value: Boolean): Self = StObject.set(x, "belowChart", value.asInstanceOf[js.Any])
+    inline def setBelowChart(value: Boolean): Self = StObject.set(x, "belowChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBelowChartUndefined: Self = StObject.set(x, "belowChart", js.undefined)
+    inline def setBelowChartUndefined: Self = StObject.set(x, "belowChart", js.undefined)
     
-    @scala.inline
-    def setDirection(value: GridDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: GridDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setSvg(value: PartialLineProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: PartialLineProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+    inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
-    @scala.inline
-    def setTicks(value: js.Array[T]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[T]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    @scala.inline
-    def setTicksVarargs(value: T*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: T*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
-    @scala.inline
-    def setX(value: /* t */ T => Double): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
+    inline def setX(value: /* t */ T => Double): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: /* t */ T => Double): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
+    inline def setY(value: /* t */ T => Double): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

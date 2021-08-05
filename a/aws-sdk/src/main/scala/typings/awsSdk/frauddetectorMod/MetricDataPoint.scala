@@ -28,37 +28,27 @@ trait MetricDataPoint extends StObject {
 }
 object MetricDataPoint {
   
-  @scala.inline
-  def apply(): MetricDataPoint = {
+  inline def apply(): MetricDataPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricDataPoint]
   }
   
-  @scala.inline
-  implicit class MetricDataPointMutableBuilder[Self <: MetricDataPoint] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDataPoint](x: Self) {
     
-    @scala.inline
-    def setFpr(value: float): Self = StObject.set(x, "fpr", value.asInstanceOf[js.Any])
+    inline def setFpr(value: float): Self = StObject.set(x, "fpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFprUndefined: Self = StObject.set(x, "fpr", js.undefined)
+    inline def setFprUndefined: Self = StObject.set(x, "fpr", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: float): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: float): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: float): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: float): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
-    @scala.inline
-    def setTpr(value: float): Self = StObject.set(x, "tpr", value.asInstanceOf[js.Any])
+    inline def setTpr(value: float): Self = StObject.set(x, "tpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTprUndefined: Self = StObject.set(x, "tpr", js.undefined)
+    inline def setTprUndefined: Self = StObject.set(x, "tpr", js.undefined)
   }
 }

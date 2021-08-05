@@ -14,8 +14,7 @@ trait DestroyEvent
 }
 object DestroyEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: Scene,
     namespace: String,
     reset: Boolean,
@@ -28,10 +27,8 @@ object DestroyEvent {
     __obj.asInstanceOf[DestroyEvent]
   }
   
-  @scala.inline
-  implicit class DestroyEventMutableBuilder[Self <: DestroyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DestroyEvent](x: Self) {
     
-    @scala.inline
-    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }
 }

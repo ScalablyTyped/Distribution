@@ -8,11 +8,9 @@ object turbolinksStrings {
   
   @js.native
   sealed trait advance extends StObject
-  @scala.inline
-  def advance: advance = "advance".asInstanceOf[advance]
+  inline def advance: advance = "advance".asInstanceOf[advance]
   
   @js.native
   sealed trait replace extends StObject
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }

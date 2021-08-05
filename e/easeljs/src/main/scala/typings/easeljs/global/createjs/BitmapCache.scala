@@ -17,8 +17,6 @@ object BitmapCache {
   val ^ : js.Any = js.native
   
   // methods
-  @scala.inline
-  def getFilterBounds(target: typings.easeljs.createjs.DisplayObject): typings.easeljs.createjs.Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterBounds")(target.asInstanceOf[js.Any]).asInstanceOf[typings.easeljs.createjs.Rectangle]
-  @scala.inline
-  def getFilterBounds(target: typings.easeljs.createjs.DisplayObject, output: typings.easeljs.createjs.Rectangle): typings.easeljs.createjs.Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilterBounds")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.easeljs.createjs.Rectangle]
+  inline def getFilterBounds(target: typings.easeljs.createjs.DisplayObject): typings.easeljs.createjs.Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterBounds")(target.asInstanceOf[js.Any]).asInstanceOf[typings.easeljs.createjs.Rectangle]
+  inline def getFilterBounds(target: typings.easeljs.createjs.DisplayObject, output: typings.easeljs.createjs.Rectangle): typings.easeljs.createjs.Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilterBounds")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.easeljs.createjs.Rectangle]
 }

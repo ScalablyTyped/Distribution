@@ -10,19 +10,15 @@ trait Rejection extends StObject {
 }
 object Rejection {
   
-  @scala.inline
-  def apply(): Rejection = {
+  inline def apply(): Rejection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rejection]
   }
   
-  @scala.inline
-  implicit class RejectionMutableBuilder[Self <: Rejection] (val x: Self) extends AnyVal {
+  extension [Self <: Rejection](x: Self) {
     
-    @scala.inline
-    def setRejectReason(value: String): Self = StObject.set(x, "rejectReason", value.asInstanceOf[js.Any])
+    inline def setRejectReason(value: String): Self = StObject.set(x, "rejectReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
+    inline def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
   }
 }

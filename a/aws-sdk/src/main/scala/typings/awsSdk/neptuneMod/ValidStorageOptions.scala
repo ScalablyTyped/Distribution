@@ -28,46 +28,33 @@ trait ValidStorageOptions extends StObject {
 }
 object ValidStorageOptions {
   
-  @scala.inline
-  def apply(): ValidStorageOptions = {
+  inline def apply(): ValidStorageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidStorageOptions]
   }
   
-  @scala.inline
-  implicit class ValidStorageOptionsMutableBuilder[Self <: ValidStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ValidStorageOptions](x: Self) {
     
-    @scala.inline
-    def setIopsToStorageRatio(value: DoubleRangeList): Self = StObject.set(x, "IopsToStorageRatio", value.asInstanceOf[js.Any])
+    inline def setIopsToStorageRatio(value: DoubleRangeList): Self = StObject.set(x, "IopsToStorageRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsToStorageRatioUndefined: Self = StObject.set(x, "IopsToStorageRatio", js.undefined)
+    inline def setIopsToStorageRatioUndefined: Self = StObject.set(x, "IopsToStorageRatio", js.undefined)
     
-    @scala.inline
-    def setIopsToStorageRatioVarargs(value: DoubleRange*): Self = StObject.set(x, "IopsToStorageRatio", js.Array(value :_*))
+    inline def setIopsToStorageRatioVarargs(value: DoubleRange*): Self = StObject.set(x, "IopsToStorageRatio", js.Array(value :_*))
     
-    @scala.inline
-    def setProvisionedIops(value: RangeList): Self = StObject.set(x, "ProvisionedIops", value.asInstanceOf[js.Any])
+    inline def setProvisionedIops(value: RangeList): Self = StObject.set(x, "ProvisionedIops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedIopsUndefined: Self = StObject.set(x, "ProvisionedIops", js.undefined)
+    inline def setProvisionedIopsUndefined: Self = StObject.set(x, "ProvisionedIops", js.undefined)
     
-    @scala.inline
-    def setProvisionedIopsVarargs(value: Range*): Self = StObject.set(x, "ProvisionedIops", js.Array(value :_*))
+    inline def setProvisionedIopsVarargs(value: Range*): Self = StObject.set(x, "ProvisionedIops", js.Array(value :_*))
     
-    @scala.inline
-    def setStorageSize(value: RangeList): Self = StObject.set(x, "StorageSize", value.asInstanceOf[js.Any])
+    inline def setStorageSize(value: RangeList): Self = StObject.set(x, "StorageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageSizeUndefined: Self = StObject.set(x, "StorageSize", js.undefined)
+    inline def setStorageSizeUndefined: Self = StObject.set(x, "StorageSize", js.undefined)
     
-    @scala.inline
-    def setStorageSizeVarargs(value: Range*): Self = StObject.set(x, "StorageSize", js.Array(value :_*))
+    inline def setStorageSizeVarargs(value: Range*): Self = StObject.set(x, "StorageSize", js.Array(value :_*))
     
-    @scala.inline
-    def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
   }
 }

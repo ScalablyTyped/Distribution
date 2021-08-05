@@ -18,22 +18,17 @@ trait CancelCapacityReservationRequest extends StObject {
 }
 object CancelCapacityReservationRequest {
   
-  @scala.inline
-  def apply(CapacityReservationId: CapacityReservationId): CancelCapacityReservationRequest = {
+  inline def apply(CapacityReservationId: CapacityReservationId): CancelCapacityReservationRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationId = CapacityReservationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelCapacityReservationRequest]
   }
   
-  @scala.inline
-  implicit class CancelCapacityReservationRequestMutableBuilder[Self <: CancelCapacityReservationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelCapacityReservationRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationId(value: CapacityReservationId): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationId(value: CapacityReservationId): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

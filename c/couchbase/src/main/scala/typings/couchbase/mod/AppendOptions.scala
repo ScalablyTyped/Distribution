@@ -24,31 +24,23 @@ trait AppendOptions extends StObject {
 }
 object AppendOptions {
   
-  @scala.inline
-  def apply(): AppendOptions = {
+  inline def apply(): AppendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppendOptions]
   }
   
-  @scala.inline
-  implicit class AppendOptionsMutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppendOptions](x: Self) {
     
-    @scala.inline
-    def setCas(value: CAS): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
+    inline def setCas(value: CAS): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
+    inline def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
     
-    @scala.inline
-    def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
+    inline def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
+    inline def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
     
-    @scala.inline
-    def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
+    inline def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
+    inline def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
   }
 }

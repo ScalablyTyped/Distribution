@@ -21,8 +21,7 @@ trait AgentRequestEvent extends StObject {
 }
 object AgentRequestEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventType: String,
     planId: String,
     poolId: Double,
@@ -34,25 +33,18 @@ object AgentRequestEvent {
     __obj.asInstanceOf[AgentRequestEvent]
   }
   
-  @scala.inline
-  implicit class AgentRequestEventMutableBuilder[Self <: AgentRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AgentRequestEvent](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolId(value: Double): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: Double): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedAgentId(value: Double): Self = StObject.set(x, "reservedAgentId", value.asInstanceOf[js.Any])
+    inline def setReservedAgentId(value: Double): Self = StObject.set(x, "reservedAgentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

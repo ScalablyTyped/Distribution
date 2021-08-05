@@ -12,25 +12,19 @@ trait IBatchUpdateEntityTypesResponse extends StObject {
 }
 object IBatchUpdateEntityTypesResponse {
   
-  @scala.inline
-  def apply(): IBatchUpdateEntityTypesResponse = {
+  inline def apply(): IBatchUpdateEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBatchUpdateEntityTypesResponse]
   }
   
-  @scala.inline
-  implicit class IBatchUpdateEntityTypesResponseMutableBuilder[Self <: IBatchUpdateEntityTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IBatchUpdateEntityTypesResponse](x: Self) {
     
-    @scala.inline
-    def setEntityTypes(value: js.Array[IEntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
+    inline def setEntityTypes(value: js.Array[IEntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypesNull: Self = StObject.set(x, "entityTypes", null)
+    inline def setEntityTypesNull: Self = StObject.set(x, "entityTypes", null)
     
-    @scala.inline
-    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+    inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    @scala.inline
-    def setEntityTypesVarargs(value: IEntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: IEntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
   }
 }

@@ -2165,7 +2165,7 @@ trait LoaderPlugin
   /**
     * A reference to the global Scene Manager.
     */
-  var sceneManager: SceneManager = js.native
+  /* protected */ var sceneManager: SceneManager = js.native
   
   /**
     * Adds a Scene Plugin Script file, or array of plugin files, to the current load queue.

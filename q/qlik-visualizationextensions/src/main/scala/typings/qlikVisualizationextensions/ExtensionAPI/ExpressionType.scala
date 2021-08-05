@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpressionType extends StObject
 object ExpressionType {
   
-  @scala.inline
-  def _empty: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty = "".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty]
+  inline def _empty: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty = "".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty]
   
-  @scala.inline
-  def always: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always = "always".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always]
+  inline def always: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always = "always".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always]
   
-  @scala.inline
-  def optional: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional = "optional".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional]
+  inline def optional: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional = "optional".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional]
 }

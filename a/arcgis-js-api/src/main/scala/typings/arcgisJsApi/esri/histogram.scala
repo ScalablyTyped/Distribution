@@ -20,16 +20,13 @@ trait histogram extends StObject {
 }
 object histogram {
   
-  @scala.inline
-  def apply(histogram: histogramHistogramParams => js.Promise[HistogramResult]): histogram = {
+  inline def apply(histogram: histogramHistogramParams => js.Promise[HistogramResult]): histogram = {
     val __obj = js.Dynamic.literal(histogram = js.Any.fromFunction1(histogram))
     __obj.asInstanceOf[histogram]
   }
   
-  @scala.inline
-  implicit class histogramMutableBuilder[Self <: histogram] (val x: Self) extends AnyVal {
+  extension [Self <: histogram](x: Self) {
     
-    @scala.inline
-    def setHistogram(value: histogramHistogramParams => js.Promise[HistogramResult]): Self = StObject.set(x, "histogram", js.Any.fromFunction1(value))
+    inline def setHistogram(value: histogramHistogramParams => js.Promise[HistogramResult]): Self = StObject.set(x, "histogram", js.Any.fromFunction1(value))
   }
 }

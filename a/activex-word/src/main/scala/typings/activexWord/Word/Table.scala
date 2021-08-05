@@ -145,6 +145,6 @@ trait Table extends StObject {
   
   def UpdateAutoFormat(): Unit = js.native
   
-  @JSName("Word.Table_typekey")
+  /* private */ @JSName("Word.Table_typekey")
   var WordDotTable_typekey: Table = js.native
 }

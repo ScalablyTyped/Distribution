@@ -10,16 +10,13 @@ trait IDiffLineInformation extends StObject {
 }
 object IDiffLineInformation {
   
-  @scala.inline
-  def apply(equivalentLineNumber: Double): IDiffLineInformation = {
+  inline def apply(equivalentLineNumber: Double): IDiffLineInformation = {
     val __obj = js.Dynamic.literal(equivalentLineNumber = equivalentLineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiffLineInformation]
   }
   
-  @scala.inline
-  implicit class IDiffLineInformationMutableBuilder[Self <: IDiffLineInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IDiffLineInformation](x: Self) {
     
-    @scala.inline
-    def setEquivalentLineNumber(value: Double): Self = StObject.set(x, "equivalentLineNumber", value.asInstanceOf[js.Any])
+    inline def setEquivalentLineNumber(value: Double): Self = StObject.set(x, "equivalentLineNumber", value.asInstanceOf[js.Any])
   }
 }

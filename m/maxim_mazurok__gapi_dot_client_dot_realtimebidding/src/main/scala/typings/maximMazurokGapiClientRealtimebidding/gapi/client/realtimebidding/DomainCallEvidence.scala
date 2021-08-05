@@ -14,28 +14,21 @@ trait DomainCallEvidence extends StObject {
 }
 object DomainCallEvidence {
   
-  @scala.inline
-  def apply(): DomainCallEvidence = {
+  inline def apply(): DomainCallEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainCallEvidence]
   }
   
-  @scala.inline
-  implicit class DomainCallEvidenceMutableBuilder[Self <: DomainCallEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: DomainCallEvidence](x: Self) {
     
-    @scala.inline
-    def setTopHttpCallDomains(value: js.Array[DomainCalls]): Self = StObject.set(x, "topHttpCallDomains", value.asInstanceOf[js.Any])
+    inline def setTopHttpCallDomains(value: js.Array[DomainCalls]): Self = StObject.set(x, "topHttpCallDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopHttpCallDomainsUndefined: Self = StObject.set(x, "topHttpCallDomains", js.undefined)
+    inline def setTopHttpCallDomainsUndefined: Self = StObject.set(x, "topHttpCallDomains", js.undefined)
     
-    @scala.inline
-    def setTopHttpCallDomainsVarargs(value: DomainCalls*): Self = StObject.set(x, "topHttpCallDomains", js.Array(value :_*))
+    inline def setTopHttpCallDomainsVarargs(value: DomainCalls*): Self = StObject.set(x, "topHttpCallDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalHttpCallCount(value: Double): Self = StObject.set(x, "totalHttpCallCount", value.asInstanceOf[js.Any])
+    inline def setTotalHttpCallCount(value: Double): Self = StObject.set(x, "totalHttpCallCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalHttpCallCountUndefined: Self = StObject.set(x, "totalHttpCallCount", js.undefined)
+    inline def setTotalHttpCallCountUndefined: Self = StObject.set(x, "totalHttpCallCount", js.undefined)
   }
 }

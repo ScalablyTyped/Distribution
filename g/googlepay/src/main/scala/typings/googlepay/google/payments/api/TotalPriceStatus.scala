@@ -29,12 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TotalPriceStatus extends StObject
 object TotalPriceStatus {
   
-  @scala.inline
-  def ESTIMATED: typings.googlepay.googlepayStrings.ESTIMATED = "ESTIMATED".asInstanceOf[typings.googlepay.googlepayStrings.ESTIMATED]
+  inline def ESTIMATED: typings.googlepay.googlepayStrings.ESTIMATED = "ESTIMATED".asInstanceOf[typings.googlepay.googlepayStrings.ESTIMATED]
   
-  @scala.inline
-  def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
+  inline def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
   
-  @scala.inline
-  def NOT_CURRENTLY_KNOWN: typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN]
+  inline def NOT_CURRENTLY_KNOWN: typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN]
 }

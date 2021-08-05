@@ -14,28 +14,21 @@ trait ResultDisplayMetadata extends StObject {
 }
 object ResultDisplayMetadata {
   
-  @scala.inline
-  def apply(): ResultDisplayMetadata = {
+  inline def apply(): ResultDisplayMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultDisplayMetadata]
   }
   
-  @scala.inline
-  implicit class ResultDisplayMetadataMutableBuilder[Self <: ResultDisplayMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ResultDisplayMetadata](x: Self) {
     
-    @scala.inline
-    def setMetalines(value: js.Array[ResultDisplayLine]): Self = StObject.set(x, "metalines", value.asInstanceOf[js.Any])
+    inline def setMetalines(value: js.Array[ResultDisplayLine]): Self = StObject.set(x, "metalines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
+    inline def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
     
-    @scala.inline
-    def setMetalinesVarargs(value: ResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value :_*))
+    inline def setMetalinesVarargs(value: ResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectTypeLabel(value: String): Self = StObject.set(x, "objectTypeLabel", value.asInstanceOf[js.Any])
+    inline def setObjectTypeLabel(value: String): Self = StObject.set(x, "objectTypeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeLabelUndefined: Self = StObject.set(x, "objectTypeLabel", js.undefined)
+    inline def setObjectTypeLabelUndefined: Self = StObject.set(x, "objectTypeLabel", js.undefined)
   }
 }

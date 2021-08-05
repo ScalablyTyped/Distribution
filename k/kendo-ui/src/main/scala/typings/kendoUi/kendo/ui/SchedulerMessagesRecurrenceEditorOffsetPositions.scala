@@ -18,43 +18,31 @@ trait SchedulerMessagesRecurrenceEditorOffsetPositions extends StObject {
 }
 object SchedulerMessagesRecurrenceEditorOffsetPositions {
   
-  @scala.inline
-  def apply(): SchedulerMessagesRecurrenceEditorOffsetPositions = {
+  inline def apply(): SchedulerMessagesRecurrenceEditorOffsetPositions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorOffsetPositions]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorOffsetPositionsMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorOffsetPositions] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesRecurrenceEditorOffsetPositions](x: Self) {
     
-    @scala.inline
-    def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setFourth(value: String): Self = StObject.set(x, "fourth", value.asInstanceOf[js.Any])
+    inline def setFourth(value: String): Self = StObject.set(x, "fourth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFourthUndefined: Self = StObject.set(x, "fourth", js.undefined)
+    inline def setFourthUndefined: Self = StObject.set(x, "fourth", js.undefined)
     
-    @scala.inline
-    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
-    @scala.inline
-    def setThird(value: String): Self = StObject.set(x, "third", value.asInstanceOf[js.Any])
+    inline def setThird(value: String): Self = StObject.set(x, "third", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdUndefined: Self = StObject.set(x, "third", js.undefined)
+    inline def setThirdUndefined: Self = StObject.set(x, "third", js.undefined)
   }
 }

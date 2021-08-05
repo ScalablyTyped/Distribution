@@ -13,19 +13,15 @@ trait JQueryXHR extends StObject {
 }
 object JQueryXHR {
   
-  @scala.inline
-  def apply(): JQueryXHR = {
+  inline def apply(): JQueryXHR = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryXHR]
   }
   
-  @scala.inline
-  implicit class JQueryXHRMutableBuilder[Self <: JQueryXHR] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryXHR](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
   }
 }

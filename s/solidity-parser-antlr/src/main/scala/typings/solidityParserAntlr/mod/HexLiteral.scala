@@ -16,20 +16,16 @@ trait HexLiteral
 }
 object HexLiteral {
   
-  @scala.inline
-  def apply(value: String): HexLiteral = {
+  inline def apply(value: String): HexLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("HexLiteral")
     __obj.asInstanceOf[HexLiteral]
   }
   
-  @scala.inline
-  implicit class HexLiteralMutableBuilder[Self <: HexLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: HexLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

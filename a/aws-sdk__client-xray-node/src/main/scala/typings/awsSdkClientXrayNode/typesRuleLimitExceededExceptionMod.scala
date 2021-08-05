@@ -16,17 +16,14 @@ object typesRuleLimitExceededExceptionMod {
   }
   object RuleLimitExceededException {
     
-    @scala.inline
-    def apply(): RuleLimitExceededException = {
+    inline def apply(): RuleLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "RuleLimitExceededException")
       __obj.asInstanceOf[RuleLimitExceededException]
     }
     
-    @scala.inline
-    implicit class RuleLimitExceededExceptionMutableBuilder[Self <: RuleLimitExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: RuleLimitExceededException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.RuleLimitExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.RuleLimitExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +36,16 @@ object typesRuleLimitExceededExceptionMod {
   }
   object RuleLimitExceededExceptionDetails {
     
-    @scala.inline
-    def apply(): RuleLimitExceededExceptionDetails = {
+    inline def apply(): RuleLimitExceededExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleLimitExceededExceptionDetails]
     }
     
-    @scala.inline
-    implicit class RuleLimitExceededExceptionDetailsMutableBuilder[Self <: RuleLimitExceededExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RuleLimitExceededExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     }
   }
 }

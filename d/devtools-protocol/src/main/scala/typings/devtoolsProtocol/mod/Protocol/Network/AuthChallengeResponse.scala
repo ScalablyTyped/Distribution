@@ -30,28 +30,21 @@ trait AuthChallengeResponse extends StObject {
 }
 object AuthChallengeResponse {
   
-  @scala.inline
-  def apply(response: Default | CancelAuth | ProvideCredentials): AuthChallengeResponse = {
+  inline def apply(response: Default | CancelAuth | ProvideCredentials): AuthChallengeResponse = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthChallengeResponse]
   }
   
-  @scala.inline
-  implicit class AuthChallengeResponseMutableBuilder[Self <: AuthChallengeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AuthChallengeResponse](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setResponse(value: Default | CancelAuth | ProvideCredentials): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Default | CancelAuth | ProvideCredentials): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

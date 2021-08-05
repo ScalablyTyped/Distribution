@@ -23,37 +23,27 @@ trait AuthorizationInfo extends StObject {
 }
 object AuthorizationInfo {
   
-  @scala.inline
-  def apply(): AuthorizationInfo = {
+  inline def apply(): AuthorizationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizationInfo]
   }
   
-  @scala.inline
-  implicit class AuthorizationInfoMutableBuilder[Self <: AuthorizationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationInfo](x: Self) {
     
-    @scala.inline
-    def setGranted(value: Boolean): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
+    inline def setGranted(value: Boolean): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantedUndefined: Self = StObject.set(x, "granted", js.undefined)
+    inline def setGrantedUndefined: Self = StObject.set(x, "granted", js.undefined)
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAttributes(value: Resource): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
+    inline def setResourceAttributes(value: Resource): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
+    inline def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

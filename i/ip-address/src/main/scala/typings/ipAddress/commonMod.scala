@@ -12,11 +12,8 @@ object commonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isCorrect(defaultBits: Double): js.ThisFunction0[/* this */ Address4 | Address6, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCorrect")(defaultBits.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ Address4 | Address6, Boolean]]
+  inline def isCorrect(defaultBits: Double): js.ThisFunction0[/* this */ Address4 | Address6, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCorrect")(defaultBits.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ Address4 | Address6, Boolean]]
   
-  @scala.inline
-  def isInSubnet(address: Address4): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSubnet")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isInSubnet(address: Address6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSubnet")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInSubnet(address: Address4): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSubnet")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInSubnet(address: Address6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSubnet")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

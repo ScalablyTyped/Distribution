@@ -12,19 +12,15 @@ trait VerticalAlign extends StObject {
 }
 object VerticalAlign {
   
-  @scala.inline
-  def apply(borderStyle: String, verticalAlign: String): VerticalAlign = {
+  inline def apply(borderStyle: String, verticalAlign: String): VerticalAlign = {
     val __obj = js.Dynamic.literal(borderStyle = borderStyle.asInstanceOf[js.Any], verticalAlign = verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalAlign]
   }
   
-  @scala.inline
-  implicit class VerticalAlignMutableBuilder[Self <: VerticalAlign] (val x: Self) extends AnyVal {
+  extension [Self <: VerticalAlign](x: Self) {
     
-    @scala.inline
-    def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
   }
 }

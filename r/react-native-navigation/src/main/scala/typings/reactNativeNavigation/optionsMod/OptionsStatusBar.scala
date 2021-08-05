@@ -58,61 +58,43 @@ trait OptionsStatusBar extends StObject {
 }
 object OptionsStatusBar {
   
-  @scala.inline
-  def apply(): OptionsStatusBar = {
+  inline def apply(): OptionsStatusBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsStatusBar]
   }
   
-  @scala.inline
-  implicit class OptionsStatusBarMutableBuilder[Self <: OptionsStatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsStatusBar](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    @scala.inline
-    def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
+    inline def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
+    inline def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
     
-    @scala.inline
-    def setHideWithTopBar(value: Boolean): Self = StObject.set(x, "hideWithTopBar", value.asInstanceOf[js.Any])
+    inline def setHideWithTopBar(value: Boolean): Self = StObject.set(x, "hideWithTopBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideWithTopBarUndefined: Self = StObject.set(x, "hideWithTopBar", js.undefined)
+    inline def setHideWithTopBarUndefined: Self = StObject.set(x, "hideWithTopBar", js.undefined)
     
-    @scala.inline
-    def setStyle(value: light | dark): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: light | dark): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

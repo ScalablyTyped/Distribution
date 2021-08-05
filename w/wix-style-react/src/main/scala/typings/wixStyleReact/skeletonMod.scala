@@ -22,11 +22,9 @@ object skeletonMod {
   trait SkeletonAlignment extends StObject
   object SkeletonAlignment {
     
-    @scala.inline
-    def middle: typings.wixStyleReact.wixStyleReactStrings.middle = "middle".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.middle]
+    inline def middle: typings.wixStyleReact.wixStyleReactStrings.middle = "middle".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.middle]
     
-    @scala.inline
-    def start: typings.wixStyleReact.wixStyleReactStrings.start = "start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.start]
+    inline def start: typings.wixStyleReact.wixStyleReactStrings.start = "start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.start]
   }
   
   trait SkeletonContent extends StObject {
@@ -37,21 +35,17 @@ object skeletonMod {
   }
   object SkeletonContent {
     
-    @scala.inline
-    def apply(size: SkeletonContentSize, `type`: SkeletonContentType): SkeletonContent = {
+    inline def apply(size: SkeletonContentSize, `type`: SkeletonContentType): SkeletonContent = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonContent]
     }
     
-    @scala.inline
-    implicit class SkeletonContentMutableBuilder[Self <: SkeletonContent] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonContent](x: Self) {
       
-      @scala.inline
-      def setSize(value: SkeletonContentSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SkeletonContentSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: SkeletonContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SkeletonContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,17 +58,13 @@ object skeletonMod {
   trait SkeletonContentSize extends StObject
   object SkeletonContentSize {
     
-    @scala.inline
-    def full: typings.wixStyleReact.wixStyleReactStrings.full = "full".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.full]
+    inline def full: typings.wixStyleReact.wixStyleReactStrings.full = "full".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.full]
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   type SkeletonContentType = line
@@ -93,44 +83,32 @@ object skeletonMod {
   }
   object SkeletonProps {
     
-    @scala.inline
-    def apply(content: js.Array[SkeletonContent]): SkeletonProps = {
+    inline def apply(content: js.Array[SkeletonContent]): SkeletonProps = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    @scala.inline
-    implicit class SkeletonPropsMutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonProps](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: SkeletonAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: SkeletonAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: js.Array[SkeletonContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[SkeletonContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentVarargs(value: SkeletonContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: SkeletonContent*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: SkeletonSpacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: SkeletonSpacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     }
   }
   
@@ -142,13 +120,10 @@ object skeletonMod {
   trait SkeletonSpacing extends StObject
   object SkeletonSpacing {
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
 }

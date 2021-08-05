@@ -20,15 +20,14 @@ trait SeriesLines extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.SeriesLines_typekey")
+  /* private */ @JSName("PowerPoint.SeriesLines_typekey")
   var PowerPointDotSeriesLines_typekey: SeriesLines
   
   def Select(): js.Any
 }
 object SeriesLines {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Border: ChartBorder,
     Creator: Double,
@@ -44,34 +43,24 @@ object SeriesLines {
     __obj.asInstanceOf[SeriesLines]
   }
   
-  @scala.inline
-  implicit class SeriesLinesMutableBuilder[Self <: SeriesLines] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesLines](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSeriesLines_typekey(value: SeriesLines): Self = StObject.set(x, "PowerPoint.SeriesLines_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSeriesLines_typekey(value: SeriesLines): Self = StObject.set(x, "PowerPoint.SeriesLines_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

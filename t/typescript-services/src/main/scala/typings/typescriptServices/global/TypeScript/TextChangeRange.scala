@@ -11,10 +11,10 @@ class TextChangeRange protected ()
      with typings.typescriptServices.TypeScript.TextChangeRange {
   def this(span: typings.typescriptServices.TypeScript.TextSpan, newLength: Double) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _newLength: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _span: js.Any = js.native
   
   /* CompleteClass */
@@ -36,17 +36,14 @@ object TextChangeRange {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def collapseChangesAcrossMultipleVersions(changes: js.Array[typings.typescriptServices.TypeScript.TextChangeRange]): typings.typescriptServices.TypeScript.TextChangeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseChangesAcrossMultipleVersions")(changes.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TextChangeRange]
+  inline def collapseChangesAcrossMultipleVersions(changes: js.Array[typings.typescriptServices.TypeScript.TextChangeRange]): typings.typescriptServices.TypeScript.TextChangeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseChangesAcrossMultipleVersions")(changes.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TextChangeRange]
   
   /* static member */
-  @scala.inline
-  def collapseChangesFromSingleVersion(changes: js.Array[typings.typescriptServices.TypeScript.TextChangeRange]): typings.typescriptServices.TypeScript.TextChangeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseChangesFromSingleVersion")(changes.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TextChangeRange]
+  inline def collapseChangesFromSingleVersion(changes: js.Array[typings.typescriptServices.TypeScript.TextChangeRange]): typings.typescriptServices.TypeScript.TextChangeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseChangesFromSingleVersion")(changes.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TextChangeRange]
   
   /* static member */
   @JSGlobal("TypeScript.TextChangeRange.unchanged")
   @js.native
   def unchanged: typings.typescriptServices.TypeScript.TextChangeRange = js.native
-  @scala.inline
-  def unchanged_=(x: typings.typescriptServices.TypeScript.TextChangeRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unchanged")(x.asInstanceOf[js.Any])
+  inline def unchanged_=(x: typings.typescriptServices.TypeScript.TextChangeRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unchanged")(x.asInstanceOf[js.Any])
 }

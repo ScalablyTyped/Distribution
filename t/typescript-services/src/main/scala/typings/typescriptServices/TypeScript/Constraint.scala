@@ -12,8 +12,7 @@ trait Constraint
 }
 object Constraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -41,10 +40,8 @@ object Constraint {
     __obj.asInstanceOf[Constraint]
   }
   
-  @scala.inline
-  implicit class ConstraintMutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
+  extension [Self <: Constraint](x: Self) {
     
-    @scala.inline
-    def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

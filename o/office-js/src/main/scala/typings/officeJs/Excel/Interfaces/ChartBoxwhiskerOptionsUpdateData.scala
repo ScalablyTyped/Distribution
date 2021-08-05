@@ -52,43 +52,31 @@ trait ChartBoxwhiskerOptionsUpdateData extends StObject {
 }
 object ChartBoxwhiskerOptionsUpdateData {
   
-  @scala.inline
-  def apply(): ChartBoxwhiskerOptionsUpdateData = {
+  inline def apply(): ChartBoxwhiskerOptionsUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartBoxwhiskerOptionsUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartBoxwhiskerOptionsUpdateDataMutableBuilder[Self <: ChartBoxwhiskerOptionsUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBoxwhiskerOptionsUpdateData](x: Self) {
     
-    @scala.inline
-    def setQuartileCalculation(value: ChartBoxQuartileCalculation | Inclusive | Exclusive): Self = StObject.set(x, "quartileCalculation", value.asInstanceOf[js.Any])
+    inline def setQuartileCalculation(value: ChartBoxQuartileCalculation | Inclusive | Exclusive): Self = StObject.set(x, "quartileCalculation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuartileCalculationUndefined: Self = StObject.set(x, "quartileCalculation", js.undefined)
+    inline def setQuartileCalculationUndefined: Self = StObject.set(x, "quartileCalculation", js.undefined)
     
-    @scala.inline
-    def setShowInnerPoints(value: Boolean): Self = StObject.set(x, "showInnerPoints", value.asInstanceOf[js.Any])
+    inline def setShowInnerPoints(value: Boolean): Self = StObject.set(x, "showInnerPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInnerPointsUndefined: Self = StObject.set(x, "showInnerPoints", js.undefined)
+    inline def setShowInnerPointsUndefined: Self = StObject.set(x, "showInnerPoints", js.undefined)
     
-    @scala.inline
-    def setShowMeanLine(value: Boolean): Self = StObject.set(x, "showMeanLine", value.asInstanceOf[js.Any])
+    inline def setShowMeanLine(value: Boolean): Self = StObject.set(x, "showMeanLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMeanLineUndefined: Self = StObject.set(x, "showMeanLine", js.undefined)
+    inline def setShowMeanLineUndefined: Self = StObject.set(x, "showMeanLine", js.undefined)
     
-    @scala.inline
-    def setShowMeanMarker(value: Boolean): Self = StObject.set(x, "showMeanMarker", value.asInstanceOf[js.Any])
+    inline def setShowMeanMarker(value: Boolean): Self = StObject.set(x, "showMeanMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMeanMarkerUndefined: Self = StObject.set(x, "showMeanMarker", js.undefined)
+    inline def setShowMeanMarkerUndefined: Self = StObject.set(x, "showMeanMarker", js.undefined)
     
-    @scala.inline
-    def setShowOutlierPoints(value: Boolean): Self = StObject.set(x, "showOutlierPoints", value.asInstanceOf[js.Any])
+    inline def setShowOutlierPoints(value: Boolean): Self = StObject.set(x, "showOutlierPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOutlierPointsUndefined: Self = StObject.set(x, "showOutlierPoints", js.undefined)
+    inline def setShowOutlierPointsUndefined: Self = StObject.set(x, "showOutlierPoints", js.undefined)
   }
 }

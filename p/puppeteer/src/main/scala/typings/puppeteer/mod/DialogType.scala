@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DialogType extends StObject
 object DialogType {
   
-  @scala.inline
-  def alert: typings.puppeteer.puppeteerStrings.alert = "alert".asInstanceOf[typings.puppeteer.puppeteerStrings.alert]
+  inline def alert: typings.puppeteer.puppeteerStrings.alert = "alert".asInstanceOf[typings.puppeteer.puppeteerStrings.alert]
   
-  @scala.inline
-  def beforeunload: typings.puppeteer.puppeteerStrings.beforeunload = "beforeunload".asInstanceOf[typings.puppeteer.puppeteerStrings.beforeunload]
+  inline def beforeunload: typings.puppeteer.puppeteerStrings.beforeunload = "beforeunload".asInstanceOf[typings.puppeteer.puppeteerStrings.beforeunload]
   
-  @scala.inline
-  def confirm: typings.puppeteer.puppeteerStrings.confirm = "confirm".asInstanceOf[typings.puppeteer.puppeteerStrings.confirm]
+  inline def confirm: typings.puppeteer.puppeteerStrings.confirm = "confirm".asInstanceOf[typings.puppeteer.puppeteerStrings.confirm]
   
-  @scala.inline
-  def prompt: typings.puppeteer.puppeteerStrings.prompt = "prompt".asInstanceOf[typings.puppeteer.puppeteerStrings.prompt]
+  inline def prompt: typings.puppeteer.puppeteerStrings.prompt = "prompt".asInstanceOf[typings.puppeteer.puppeteerStrings.prompt]
 }

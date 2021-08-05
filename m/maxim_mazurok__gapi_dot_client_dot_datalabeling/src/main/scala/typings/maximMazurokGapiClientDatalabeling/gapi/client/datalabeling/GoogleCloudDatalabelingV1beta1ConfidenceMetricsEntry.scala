@@ -42,73 +42,51 @@ trait GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntryMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry](x: Self) {
     
-    @scala.inline
-    def setConfidenceThreshold(value: Double): Self = StObject.set(x, "confidenceThreshold", value.asInstanceOf[js.Any])
+    inline def setConfidenceThreshold(value: Double): Self = StObject.set(x, "confidenceThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceThresholdUndefined: Self = StObject.set(x, "confidenceThreshold", js.undefined)
+    inline def setConfidenceThresholdUndefined: Self = StObject.set(x, "confidenceThreshold", js.undefined)
     
-    @scala.inline
-    def setF1Score(value: Double): Self = StObject.set(x, "f1Score", value.asInstanceOf[js.Any])
+    inline def setF1Score(value: Double): Self = StObject.set(x, "f1Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreAt1(value: Double): Self = StObject.set(x, "f1ScoreAt1", value.asInstanceOf[js.Any])
+    inline def setF1ScoreAt1(value: Double): Self = StObject.set(x, "f1ScoreAt1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreAt1Undefined: Self = StObject.set(x, "f1ScoreAt1", js.undefined)
+    inline def setF1ScoreAt1Undefined: Self = StObject.set(x, "f1ScoreAt1", js.undefined)
     
-    @scala.inline
-    def setF1ScoreAt5(value: Double): Self = StObject.set(x, "f1ScoreAt5", value.asInstanceOf[js.Any])
+    inline def setF1ScoreAt5(value: Double): Self = StObject.set(x, "f1ScoreAt5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreAt5Undefined: Self = StObject.set(x, "f1ScoreAt5", js.undefined)
+    inline def setF1ScoreAt5Undefined: Self = StObject.set(x, "f1ScoreAt5", js.undefined)
     
-    @scala.inline
-    def setF1ScoreUndefined: Self = StObject.set(x, "f1Score", js.undefined)
+    inline def setF1ScoreUndefined: Self = StObject.set(x, "f1Score", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionAt1(value: Double): Self = StObject.set(x, "precisionAt1", value.asInstanceOf[js.Any])
+    inline def setPrecisionAt1(value: Double): Self = StObject.set(x, "precisionAt1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionAt1Undefined: Self = StObject.set(x, "precisionAt1", js.undefined)
+    inline def setPrecisionAt1Undefined: Self = StObject.set(x, "precisionAt1", js.undefined)
     
-    @scala.inline
-    def setPrecisionAt5(value: Double): Self = StObject.set(x, "precisionAt5", value.asInstanceOf[js.Any])
+    inline def setPrecisionAt5(value: Double): Self = StObject.set(x, "precisionAt5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionAt5Undefined: Self = StObject.set(x, "precisionAt5", js.undefined)
+    inline def setPrecisionAt5Undefined: Self = StObject.set(x, "precisionAt5", js.undefined)
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setRecall(value: Double): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
+    inline def setRecall(value: Double): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallAt1(value: Double): Self = StObject.set(x, "recallAt1", value.asInstanceOf[js.Any])
+    inline def setRecallAt1(value: Double): Self = StObject.set(x, "recallAt1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallAt1Undefined: Self = StObject.set(x, "recallAt1", js.undefined)
+    inline def setRecallAt1Undefined: Self = StObject.set(x, "recallAt1", js.undefined)
     
-    @scala.inline
-    def setRecallAt5(value: Double): Self = StObject.set(x, "recallAt5", value.asInstanceOf[js.Any])
+    inline def setRecallAt5(value: Double): Self = StObject.set(x, "recallAt5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallAt5Undefined: Self = StObject.set(x, "recallAt5", js.undefined)
+    inline def setRecallAt5Undefined: Self = StObject.set(x, "recallAt5", js.undefined)
     
-    @scala.inline
-    def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
+    inline def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
   }
 }

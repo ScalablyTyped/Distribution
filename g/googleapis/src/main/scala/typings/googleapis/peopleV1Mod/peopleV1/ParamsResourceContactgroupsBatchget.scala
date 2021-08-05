@@ -29,34 +29,25 @@ trait ParamsResourceContactgroupsBatchget
 }
 object ParamsResourceContactgroupsBatchget {
   
-  @scala.inline
-  def apply(): ParamsResourceContactgroupsBatchget = {
+  inline def apply(): ParamsResourceContactgroupsBatchget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceContactgroupsBatchget]
   }
   
-  @scala.inline
-  implicit class ParamsResourceContactgroupsBatchgetMutableBuilder[Self <: ParamsResourceContactgroupsBatchget] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceContactgroupsBatchget](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMaxMembers(value: Double): Self = StObject.set(x, "maxMembers", value.asInstanceOf[js.Any])
+    inline def setMaxMembers(value: Double): Self = StObject.set(x, "maxMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMembersUndefined: Self = StObject.set(x, "maxMembers", js.undefined)
+    inline def setMaxMembersUndefined: Self = StObject.set(x, "maxMembers", js.undefined)
     
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

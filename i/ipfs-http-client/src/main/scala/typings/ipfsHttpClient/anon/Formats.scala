@@ -18,28 +18,21 @@ trait Formats extends StObject {
 }
 object Formats {
   
-  @scala.inline
-  def apply(): Formats = {
+  inline def apply(): Formats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Formats]
   }
   
-  @scala.inline
-  implicit class FormatsMutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
+  extension [Self <: Formats](x: Self) {
     
-    @scala.inline
-    def setFormats(value: js.Array[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: js.Array[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    @scala.inline
-    def setFormatsVarargs(value: js.Any*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: js.Any*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadFormat(value: /* format */ String => js.Promise[js.Any]): Self = StObject.set(x, "loadFormat", js.Any.fromFunction1(value))
+    inline def setLoadFormat(value: /* format */ String => js.Promise[js.Any]): Self = StObject.set(x, "loadFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadFormatUndefined: Self = StObject.set(x, "loadFormat", js.undefined)
+    inline def setLoadFormatUndefined: Self = StObject.set(x, "loadFormat", js.undefined)
   }
 }

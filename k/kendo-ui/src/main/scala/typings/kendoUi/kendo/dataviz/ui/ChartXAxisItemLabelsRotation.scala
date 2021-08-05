@@ -12,25 +12,19 @@ trait ChartXAxisItemLabelsRotation extends StObject {
 }
 object ChartXAxisItemLabelsRotation {
   
-  @scala.inline
-  def apply(): ChartXAxisItemLabelsRotation = {
+  inline def apply(): ChartXAxisItemLabelsRotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartXAxisItemLabelsRotation]
   }
   
-  @scala.inline
-  implicit class ChartXAxisItemLabelsRotationMutableBuilder[Self <: ChartXAxisItemLabelsRotation] (val x: Self) extends AnyVal {
+  extension [Self <: ChartXAxisItemLabelsRotation](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setAngle(value: Double | String): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double | String): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
   }
 }

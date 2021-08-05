@@ -8,6 +8,5 @@ object reactAriaModalStrings {
   
   @js.native
   sealed trait RequiredAriaTypes extends StObject
-  @scala.inline
-  def RequiredAriaTypes: RequiredAriaTypes = "RequiredAriaTypes".asInstanceOf[RequiredAriaTypes]
+  inline def RequiredAriaTypes: RequiredAriaTypes = "RequiredAriaTypes".asInstanceOf[RequiredAriaTypes]
 }

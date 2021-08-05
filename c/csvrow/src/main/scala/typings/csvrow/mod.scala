@@ -10,12 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalize(row: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(row.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(row: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(row.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(row: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(row.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def parse(row: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(row.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def stringify(columns: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(columns.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(columns: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(columns.asInstanceOf[js.Any]).asInstanceOf[String]
 }

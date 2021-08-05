@@ -9,8 +9,7 @@ trait GetBucketReplicationInput
      with typings.awsSdkClientS3Browser.typesGetBucketReplicationInputMod.GetBucketReplicationInput
 object GetBucketReplicationInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketReplicationInput = {
+  inline def apply(Bucket: String): GetBucketReplicationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketReplicationInput]
   }

@@ -39,10 +39,8 @@ object mod {
     * // | foo  |  10106  | qrstuv |
     * // | bar  |    45   |   lmno |
     */
-  @scala.inline
-  def apply(table: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(table: js.Array[js.Array[String]], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(table: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(table: js.Array[js.Array[String]], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("markdown-table", JSImport.Namespace)
   @js.native
@@ -193,53 +191,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: String | js.Array[String]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String | js.Array[String]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignDelimiters(value: Boolean): Self = StObject.set(x, "alignDelimiters", value.asInstanceOf[js.Any])
+      inline def setAlignDelimiters(value: Boolean): Self = StObject.set(x, "alignDelimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignDelimitersUndefined: Self = StObject.set(x, "alignDelimiters", js.undefined)
+      inline def setAlignDelimitersUndefined: Self = StObject.set(x, "alignDelimiters", js.undefined)
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAlignVarargs(value: String*): Self = StObject.set(x, "align", js.Array(value :_*))
+      inline def setAlignVarargs(value: String*): Self = StObject.set(x, "align", js.Array(value :_*))
       
-      @scala.inline
-      def setDelimiterEnd(value: Boolean): Self = StObject.set(x, "delimiterEnd", value.asInstanceOf[js.Any])
+      inline def setDelimiterEnd(value: Boolean): Self = StObject.set(x, "delimiterEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterEndUndefined: Self = StObject.set(x, "delimiterEnd", js.undefined)
+      inline def setDelimiterEndUndefined: Self = StObject.set(x, "delimiterEnd", js.undefined)
       
-      @scala.inline
-      def setDelimiterStart(value: Boolean): Self = StObject.set(x, "delimiterStart", value.asInstanceOf[js.Any])
+      inline def setDelimiterStart(value: Boolean): Self = StObject.set(x, "delimiterStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterStartUndefined: Self = StObject.set(x, "delimiterStart", js.undefined)
+      inline def setDelimiterStartUndefined: Self = StObject.set(x, "delimiterStart", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Boolean): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Boolean): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setStringLength(value: /* s */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
+      inline def setStringLength(value: /* s */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringLengthUndefined: Self = StObject.set(x, "stringLength", js.undefined)
+      inline def setStringLengthUndefined: Self = StObject.set(x, "stringLength", js.undefined)
     }
   }
 }

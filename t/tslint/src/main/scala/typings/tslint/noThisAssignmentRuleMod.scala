@@ -24,16 +24,13 @@ object noThisAssignmentRuleMod {
     @JSImport("tslint/lib/rules/noThisAssignmentRule", "Rule.FAILURE_STRING_BINDINGS")
     @js.native
     def FAILURE_STRING_BINDINGS: String = js.native
-    @scala.inline
-    def FAILURE_STRING_BINDINGS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_BINDINGS")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_BINDINGS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_BINDINGS")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FAILURE_STRING_FACTORY_IDENTIFIERS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY_IDENTIFIERS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_FACTORY_IDENTIFIERS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY_IDENTIFIERS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noThisAssignmentRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

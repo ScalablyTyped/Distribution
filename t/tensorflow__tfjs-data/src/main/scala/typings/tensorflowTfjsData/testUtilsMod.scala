@@ -31,8 +31,7 @@ object testUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createInstance(): FakeAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[FakeAudioContext]
+    inline def createInstance(): FakeAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[FakeAudioContext]
   }
   
   @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "FakeAudioMediaStream")
@@ -42,23 +41,17 @@ object testUtilsMod {
     def getTracks(): js.Array[js.Object] = js.native
   }
   
-  @scala.inline
-  def describeAllEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeAllEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def describeAllEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeAllEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def describeBrowserEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeBrowserEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def describeBrowserEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeBrowserEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def describeNodeEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeNodeEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def describeNodeEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeNodeEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def replaceHTMLVideoElementSource(videoElement: HTMLVideoElement): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceHTMLVideoElementSource")(videoElement.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def replaceHTMLVideoElementSource(videoElement: HTMLVideoElement): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceHTMLVideoElementSource")(videoElement.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def setupFakeAudeoStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupFakeAudeoStream")().asInstanceOf[Unit]
+  inline def setupFakeAudeoStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupFakeAudeoStream")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setupFakeVideoStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupFakeVideoStream")().asInstanceOf[Unit]
+  inline def setupFakeVideoStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupFakeVideoStream")().asInstanceOf[Unit]
   
   trait FakeAnalyser extends StObject {
     
@@ -72,12 +65,11 @@ object testUtilsMod {
     
     var smoothingTimeConstant: Double
     
-    var x: js.Any
+    /* private */ var x: js.Any
   }
   object FakeAnalyser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disconnect: () => Unit,
       fftSize: Double,
       getFloatFrequencyData: Float32Array => Unit,
@@ -89,26 +81,19 @@ object testUtilsMod {
       __obj.asInstanceOf[FakeAnalyser]
     }
     
-    @scala.inline
-    implicit class FakeAnalyserMutableBuilder[Self <: FakeAnalyser] (val x: Self) extends AnyVal {
+    extension [Self <: FakeAnalyser](x: Self) {
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
+      inline def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFloatFrequencyData(value: Float32Array => Unit): Self = StObject.set(x, "getFloatFrequencyData", js.Any.fromFunction1(value))
+      inline def setGetFloatFrequencyData(value: Float32Array => Unit): Self = StObject.set(x, "getFloatFrequencyData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFloatTimeDomainData(value: Float32Array => Unit): Self = StObject.set(x, "getFloatTimeDomainData", js.Any.fromFunction1(value))
+      inline def setGetFloatTimeDomainData(value: Float32Array => Unit): Self = StObject.set(x, "getFloatTimeDomainData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
+      inline def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,17 +103,14 @@ object testUtilsMod {
   }
   object FakeMediaStreamAudioSourceNode {
     
-    @scala.inline
-    def apply(connect: js.Object => Unit): FakeMediaStreamAudioSourceNode = {
+    inline def apply(connect: js.Object => Unit): FakeMediaStreamAudioSourceNode = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect))
       __obj.asInstanceOf[FakeMediaStreamAudioSourceNode]
     }
     
-    @scala.inline
-    implicit class FakeMediaStreamAudioSourceNodeMutableBuilder[Self <: FakeMediaStreamAudioSourceNode] (val x: Self) extends AnyVal {
+    extension [Self <: FakeMediaStreamAudioSourceNode](x: Self) {
       
-      @scala.inline
-      def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     }
   }
 }

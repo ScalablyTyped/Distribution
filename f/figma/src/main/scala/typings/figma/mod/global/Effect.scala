@@ -15,15 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Effect extends StObject
 object Effect {
   
-  @scala.inline
-  def BlurEffect(radius: Double, `type`: LAYER_BLUR | BACKGROUND_BLUR, visible: Boolean): typings.figma.mod.global.BlurEffect = {
+  inline def BlurEffect(radius: Double, `type`: LAYER_BLUR | BACKGROUND_BLUR, visible: Boolean): typings.figma.mod.global.BlurEffect = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.mod.global.BlurEffect]
   }
   
-  @scala.inline
-  def ShadowEffect(
+  inline def ShadowEffect(
     blendMode: BlendMode,
     color: RGBA,
     offset: Vector,

@@ -12,8 +12,7 @@ trait TimingState
 }
 object TimingState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     finished: AnimatedValue[Double],
     frameTime: AnimatedValue[Double],
     position: AnimatedValue[Double],
@@ -23,10 +22,8 @@ object TimingState {
     __obj.asInstanceOf[TimingState]
   }
   
-  @scala.inline
-  implicit class TimingStateMutableBuilder[Self <: TimingState] (val x: Self) extends AnyVal {
+  extension [Self <: TimingState](x: Self) {
     
-    @scala.inline
-    def setFrameTime(value: AnimatedValue[Double]): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
+    inline def setFrameTime(value: AnimatedValue[Double]): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
   }
 }

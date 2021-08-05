@@ -21,31 +21,23 @@ trait SchemaUrlSampleDetails extends StObject {
 }
 object SchemaUrlSampleDetails {
   
-  @scala.inline
-  def apply(): SchemaUrlSampleDetails = {
+  inline def apply(): SchemaUrlSampleDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlSampleDetails]
   }
   
-  @scala.inline
-  implicit class SchemaUrlSampleDetailsMutableBuilder[Self <: SchemaUrlSampleDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlSampleDetails](x: Self) {
     
-    @scala.inline
-    def setContainingSitemaps(value: js.Array[String]): Self = StObject.set(x, "containingSitemaps", value.asInstanceOf[js.Any])
+    inline def setContainingSitemaps(value: js.Array[String]): Self = StObject.set(x, "containingSitemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainingSitemapsUndefined: Self = StObject.set(x, "containingSitemaps", js.undefined)
+    inline def setContainingSitemapsUndefined: Self = StObject.set(x, "containingSitemaps", js.undefined)
     
-    @scala.inline
-    def setContainingSitemapsVarargs(value: String*): Self = StObject.set(x, "containingSitemaps", js.Array(value :_*))
+    inline def setContainingSitemapsVarargs(value: String*): Self = StObject.set(x, "containingSitemaps", js.Array(value :_*))
     
-    @scala.inline
-    def setLinkedFromUrls(value: js.Array[String]): Self = StObject.set(x, "linkedFromUrls", value.asInstanceOf[js.Any])
+    inline def setLinkedFromUrls(value: js.Array[String]): Self = StObject.set(x, "linkedFromUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedFromUrlsUndefined: Self = StObject.set(x, "linkedFromUrls", js.undefined)
+    inline def setLinkedFromUrlsUndefined: Self = StObject.set(x, "linkedFromUrls", js.undefined)
     
-    @scala.inline
-    def setLinkedFromUrlsVarargs(value: String*): Self = StObject.set(x, "linkedFromUrls", js.Array(value :_*))
+    inline def setLinkedFromUrlsVarargs(value: String*): Self = StObject.set(x, "linkedFromUrls", js.Array(value :_*))
   }
 }

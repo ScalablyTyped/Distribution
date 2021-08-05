@@ -10,19 +10,15 @@ trait TrafficLayerOptions extends StObject {
 }
 object TrafficLayerOptions {
   
-  @scala.inline
-  def apply(): TrafficLayerOptions = {
+  inline def apply(): TrafficLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficLayerOptions]
   }
   
-  @scala.inline
-  implicit class TrafficLayerOptionsMutableBuilder[Self <: TrafficLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficLayerOptions](x: Self) {
     
-    @scala.inline
-    def setPredictDate(value: PredictDate): Self = StObject.set(x, "predictDate", value.asInstanceOf[js.Any])
+    inline def setPredictDate(value: PredictDate): Self = StObject.set(x, "predictDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictDateUndefined: Self = StObject.set(x, "predictDate", js.undefined)
+    inline def setPredictDateUndefined: Self = StObject.set(x, "predictDate", js.undefined)
   }
 }

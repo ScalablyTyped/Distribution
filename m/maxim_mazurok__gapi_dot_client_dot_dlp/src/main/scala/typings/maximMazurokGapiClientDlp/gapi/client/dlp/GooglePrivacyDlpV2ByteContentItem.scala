@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2ByteContentItem extends StObject {
 }
 object GooglePrivacyDlpV2ByteContentItem {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ByteContentItem = {
+  inline def apply(): GooglePrivacyDlpV2ByteContentItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ByteContentItem]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ByteContentItemMutableBuilder[Self <: GooglePrivacyDlpV2ByteContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ByteContentItem](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -32,40 +32,29 @@ trait GoogleFirestoreAdminV1Index extends StObject {
 }
 object GoogleFirestoreAdminV1Index {
   
-  @scala.inline
-  def apply(): GoogleFirestoreAdminV1Index = {
+  inline def apply(): GoogleFirestoreAdminV1Index = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleFirestoreAdminV1Index]
   }
   
-  @scala.inline
-  implicit class GoogleFirestoreAdminV1IndexMutableBuilder[Self <: GoogleFirestoreAdminV1Index] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleFirestoreAdminV1Index](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[GoogleFirestoreAdminV1IndexField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[GoogleFirestoreAdminV1IndexField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: GoogleFirestoreAdminV1IndexField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: GoogleFirestoreAdminV1IndexField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setQueryScope(value: String): Self = StObject.set(x, "queryScope", value.asInstanceOf[js.Any])
+    inline def setQueryScope(value: String): Self = StObject.set(x, "queryScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryScopeUndefined: Self = StObject.set(x, "queryScope", js.undefined)
+    inline def setQueryScopeUndefined: Self = StObject.set(x, "queryScope", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

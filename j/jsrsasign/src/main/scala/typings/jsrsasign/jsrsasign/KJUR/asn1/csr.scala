@@ -108,8 +108,7 @@ object csr {
   }
   object CertificationRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -126,14 +125,11 @@ object csr {
       __obj.asInstanceOf[CertificationRequest]
     }
     
-    @scala.inline
-    implicit class CertificationRequestMutableBuilder[Self <: CertificationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CertificationRequest](x: Self) {
       
-      @scala.inline
-      def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
+      inline def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSign(value: (String, js.Any) => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+      inline def setSign(value: (String, js.Any) => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
     }
   }
   
@@ -218,20 +214,16 @@ object csr {
   }
   object PEMInfo {
     
-    @scala.inline
-    def apply(pubkey: Obj, subject: HexName): PEMInfo = {
+    inline def apply(pubkey: Obj, subject: HexName): PEMInfo = {
       val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
       __obj.asInstanceOf[PEMInfo]
     }
     
-    @scala.inline
-    implicit class PEMInfoMutableBuilder[Self <: PEMInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PEMInfo](x: Self) {
       
-      @scala.inline
-      def setPubkey(value: Obj): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
+      inline def setPubkey(value: Obj): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: HexName): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: HexName): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
 }

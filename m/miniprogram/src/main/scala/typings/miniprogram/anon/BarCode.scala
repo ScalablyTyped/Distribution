@@ -14,28 +14,21 @@ trait BarCode extends StObject {
 }
 object BarCode {
   
-  @scala.inline
-  def apply(code: String): BarCode = {
+  inline def apply(code: String): BarCode = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarCode]
   }
   
-  @scala.inline
-  implicit class BarCodeMutableBuilder[Self <: BarCode] (val x: Self) extends AnyVal {
+  extension [Self <: BarCode](x: Self) {
     
-    @scala.inline
-    def setBarCode(value: String): Self = StObject.set(x, "barCode", value.asInstanceOf[js.Any])
+    inline def setBarCode(value: String): Self = StObject.set(x, "barCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarCodeUndefined: Self = StObject.set(x, "barCode", js.undefined)
+    inline def setBarCodeUndefined: Self = StObject.set(x, "barCode", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
+    inline def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
+    inline def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
   }
 }

@@ -12,24 +12,19 @@ trait NavigationOptions[Options, NavigationScreenPropType] extends StObject {
 }
 object NavigationOptions {
   
-  @scala.inline
-  def apply[Options, NavigationScreenPropType](): NavigationOptions[Options, NavigationScreenPropType] = {
+  inline def apply[Options, NavigationScreenPropType](): NavigationOptions[Options, NavigationScreenPropType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationOptions[Options, NavigationScreenPropType]]
   }
   
-  @scala.inline
-  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions[?, ?], Options, NavigationScreenPropType] (val x: Self & (NavigationOptions[Options, NavigationScreenPropType])) extends AnyVal {
+  extension [Self <: NavigationOptions[?, ?], Options, NavigationScreenPropType](x: Self & (NavigationOptions[Options, NavigationScreenPropType])) {
     
-    @scala.inline
-    def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, js.Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, js.Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptionsFunction1(
+    inline def setNavigationOptionsFunction1(
       value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, js.Any]) & NavigationOptionsOptions[Options] => Options
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
   }
 }

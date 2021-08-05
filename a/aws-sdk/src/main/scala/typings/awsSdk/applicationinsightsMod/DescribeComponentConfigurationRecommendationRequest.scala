@@ -23,22 +23,17 @@ trait DescribeComponentConfigurationRecommendationRequest extends StObject {
 }
 object DescribeComponentConfigurationRecommendationRequest {
   
-  @scala.inline
-  def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName, Tier: Tier): DescribeComponentConfigurationRecommendationRequest = {
+  inline def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName, Tier: Tier): DescribeComponentConfigurationRecommendationRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any], Tier = Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeComponentConfigurationRecommendationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeComponentConfigurationRecommendationRequestMutableBuilder[Self <: DescribeComponentConfigurationRecommendationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComponentConfigurationRecommendationRequest](x: Self) {
     
-    @scala.inline
-    def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
+    inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
   }
 }

@@ -21,34 +21,25 @@ trait GoogleMapsPlayablelocationsV3LogPlayerReportsRequest extends StObject {
 }
 object GoogleMapsPlayablelocationsV3LogPlayerReportsRequest {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3LogPlayerReportsRequest = {
+  inline def apply(): GoogleMapsPlayablelocationsV3LogPlayerReportsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3LogPlayerReportsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3LogPlayerReportsRequestMutableBuilder[Self <: GoogleMapsPlayablelocationsV3LogPlayerReportsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3LogPlayerReportsRequest](x: Self) {
     
-    @scala.inline
-    def setClientInfo(value: GoogleMapsUnityClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
+    inline def setClientInfo(value: GoogleMapsUnityClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
+    inline def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
-    @scala.inline
-    def setPlayerReports(value: js.Array[GoogleMapsPlayablelocationsV3PlayerReport]): Self = StObject.set(x, "playerReports", value.asInstanceOf[js.Any])
+    inline def setPlayerReports(value: js.Array[GoogleMapsPlayablelocationsV3PlayerReport]): Self = StObject.set(x, "playerReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerReportsUndefined: Self = StObject.set(x, "playerReports", js.undefined)
+    inline def setPlayerReportsUndefined: Self = StObject.set(x, "playerReports", js.undefined)
     
-    @scala.inline
-    def setPlayerReportsVarargs(value: GoogleMapsPlayablelocationsV3PlayerReport*): Self = StObject.set(x, "playerReports", js.Array(value :_*))
+    inline def setPlayerReportsVarargs(value: GoogleMapsPlayablelocationsV3PlayerReport*): Self = StObject.set(x, "playerReports", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

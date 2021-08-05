@@ -12,19 +12,15 @@ trait ViewFocusEvent extends StObject {
 }
 object ViewFocusEvent {
   
-  @scala.inline
-  def apply(native: js.Any, target: View): ViewFocusEvent = {
+  inline def apply(native: js.Any, target: View): ViewFocusEvent = {
     val __obj = js.Dynamic.literal(native = native.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewFocusEvent]
   }
   
-  @scala.inline
-  implicit class ViewFocusEventMutableBuilder[Self <: ViewFocusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ViewFocusEvent](x: Self) {
     
-    @scala.inline
-    def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: View): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: View): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

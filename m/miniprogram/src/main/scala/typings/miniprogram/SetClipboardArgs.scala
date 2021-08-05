@@ -12,16 +12,13 @@ trait SetClipboardArgs
 }
 object SetClipboardArgs {
   
-  @scala.inline
-  def apply(text: String): SetClipboardArgs = {
+  inline def apply(text: String): SetClipboardArgs = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetClipboardArgs]
   }
   
-  @scala.inline
-  implicit class SetClipboardArgsMutableBuilder[Self <: SetClipboardArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SetClipboardArgs](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

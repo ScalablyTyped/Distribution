@@ -13,16 +13,13 @@ trait CreateWebACLMigrationStackResponse extends StObject {
 }
 object CreateWebACLMigrationStackResponse {
   
-  @scala.inline
-  def apply(S3ObjectUrl: S3ObjectUrl): CreateWebACLMigrationStackResponse = {
+  inline def apply(S3ObjectUrl: S3ObjectUrl): CreateWebACLMigrationStackResponse = {
     val __obj = js.Dynamic.literal(S3ObjectUrl = S3ObjectUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWebACLMigrationStackResponse]
   }
   
-  @scala.inline
-  implicit class CreateWebACLMigrationStackResponseMutableBuilder[Self <: CreateWebACLMigrationStackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWebACLMigrationStackResponse](x: Self) {
     
-    @scala.inline
-    def setS3ObjectUrl(value: S3ObjectUrl): Self = StObject.set(x, "S3ObjectUrl", value.asInstanceOf[js.Any])
+    inline def setS3ObjectUrl(value: S3ObjectUrl): Self = StObject.set(x, "S3ObjectUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait IOneofOptions extends StObject {
 }
 object IOneofOptions {
   
-  @scala.inline
-  def apply(): IOneofOptions = {
+  inline def apply(): IOneofOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOneofOptions]
   }
   
-  @scala.inline
-  implicit class IOneofOptionsMutableBuilder[Self <: IOneofOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IOneofOptions](x: Self) {
     
-    @scala.inline
-    def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
+    inline def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
+    inline def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
     
-    @scala.inline
-    def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
+    inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
   }
 }

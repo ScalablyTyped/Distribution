@@ -23,8 +23,7 @@ trait GitDeletedRepository extends StObject {
 }
 object GitDeletedRepository {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdDate: Date,
     deletedBy: IdentityRef,
     deletedDate: Date,
@@ -36,25 +35,18 @@ object GitDeletedRepository {
     __obj.asInstanceOf[GitDeletedRepository]
   }
   
-  @scala.inline
-  implicit class GitDeletedRepositoryMutableBuilder[Self <: GitDeletedRepository] (val x: Self) extends AnyVal {
+  extension [Self <: GitDeletedRepository](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedBy(value: IdentityRef): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
+    inline def setDeletedBy(value: IdentityRef): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedDate(value: Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
+    inline def setDeletedDate(value: Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
   }
 }

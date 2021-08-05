@@ -54,8 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ControlShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Control: XControlModel,
     GluePoints: XIndexContainer,
     Hyperlink: String,
@@ -109,16 +108,12 @@ object ControlShape {
     __obj.asInstanceOf[ControlShape]
   }
   
-  @scala.inline
-  implicit class ControlShapeMutableBuilder[Self <: ControlShape] (val x: Self) extends AnyVal {
+  extension [Self <: ControlShape](x: Self) {
     
-    @scala.inline
-    def setControl(value: XControlModel): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+    inline def setControl(value: XControlModel): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetControl(value: () => XControlModel): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
+    inline def setGetControl(value: () => XControlModel): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetControl(value: XControlModel => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
+    inline def setSetControl(value: XControlModel => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
   }
 }

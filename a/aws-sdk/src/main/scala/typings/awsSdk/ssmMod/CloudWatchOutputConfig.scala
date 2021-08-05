@@ -18,25 +18,19 @@ trait CloudWatchOutputConfig extends StObject {
 }
 object CloudWatchOutputConfig {
   
-  @scala.inline
-  def apply(): CloudWatchOutputConfig = {
+  inline def apply(): CloudWatchOutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudWatchOutputConfig]
   }
   
-  @scala.inline
-  implicit class CloudWatchOutputConfigMutableBuilder[Self <: CloudWatchOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchOutputConfig](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogGroupName(value: CloudWatchLogGroupName): Self = StObject.set(x, "CloudWatchLogGroupName", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogGroupName(value: CloudWatchLogGroupName): Self = StObject.set(x, "CloudWatchLogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLogGroupNameUndefined: Self = StObject.set(x, "CloudWatchLogGroupName", js.undefined)
+    inline def setCloudWatchLogGroupNameUndefined: Self = StObject.set(x, "CloudWatchLogGroupName", js.undefined)
     
-    @scala.inline
-    def setCloudWatchOutputEnabled(value: CloudWatchOutputEnabled): Self = StObject.set(x, "CloudWatchOutputEnabled", value.asInstanceOf[js.Any])
+    inline def setCloudWatchOutputEnabled(value: CloudWatchOutputEnabled): Self = StObject.set(x, "CloudWatchOutputEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchOutputEnabledUndefined: Self = StObject.set(x, "CloudWatchOutputEnabled", js.undefined)
+    inline def setCloudWatchOutputEnabledUndefined: Self = StObject.set(x, "CloudWatchOutputEnabled", js.undefined)
   }
 }

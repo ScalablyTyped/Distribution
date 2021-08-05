@@ -13,8 +13,7 @@ trait LineConfig[ES /* <: ExprRef | SignalRef */]
      with _AnyMarkConfig[ES]
 object LineConfig {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): LineConfig[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): LineConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineConfig[ES]]
   }

@@ -18,19 +18,15 @@ trait NotificationPromptResult extends StObject {
 }
 object NotificationPromptResult {
   
-  @scala.inline
-  def apply(buttonIndex: Double, input1: String): NotificationPromptResult = {
+  inline def apply(buttonIndex: Double, input1: String): NotificationPromptResult = {
     val __obj = js.Dynamic.literal(buttonIndex = buttonIndex.asInstanceOf[js.Any], input1 = input1.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationPromptResult]
   }
   
-  @scala.inline
-  implicit class NotificationPromptResultMutableBuilder[Self <: NotificationPromptResult] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationPromptResult](x: Self) {
     
-    @scala.inline
-    def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
+    inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput1(value: String): Self = StObject.set(x, "input1", value.asInstanceOf[js.Any])
+    inline def setInput1(value: String): Self = StObject.set(x, "input1", value.asInstanceOf[js.Any])
   }
 }

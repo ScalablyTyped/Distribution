@@ -13,16 +13,13 @@ trait GetPlaybackConfigurationRequest extends StObject {
 }
 object GetPlaybackConfigurationRequest {
   
-  @scala.inline
-  def apply(Name: string): GetPlaybackConfigurationRequest = {
+  inline def apply(Name: string): GetPlaybackConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlaybackConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetPlaybackConfigurationRequestMutableBuilder[Self <: GetPlaybackConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlaybackConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

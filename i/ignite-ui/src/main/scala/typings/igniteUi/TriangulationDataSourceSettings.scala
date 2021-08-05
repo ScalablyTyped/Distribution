@@ -39,43 +39,31 @@ trait TriangulationDataSourceSettings
 }
 object TriangulationDataSourceSettings {
   
-  @scala.inline
-  def apply(): TriangulationDataSourceSettings = {
+  inline def apply(): TriangulationDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriangulationDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class TriangulationDataSourceSettingsMutableBuilder[Self <: TriangulationDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TriangulationDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
+    inline def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTriangulationSource(value: String): Self = StObject.set(x, "triangulationSource", value.asInstanceOf[js.Any])
+    inline def setTriangulationSource(value: String): Self = StObject.set(x, "triangulationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangulationSourceUndefined: Self = StObject.set(x, "triangulationSource", js.undefined)
+    inline def setTriangulationSourceUndefined: Self = StObject.set(x, "triangulationSource", js.undefined)
   }
 }

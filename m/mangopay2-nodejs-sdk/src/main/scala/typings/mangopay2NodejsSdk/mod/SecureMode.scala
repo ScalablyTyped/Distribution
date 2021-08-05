@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecureMode extends StObject
 object SecureMode {
   
-  @scala.inline
-  def DEFAULT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT]
+  inline def DEFAULT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT]
   
-  @scala.inline
-  def FORCE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE = "FORCE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE]
+  inline def FORCE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE = "FORCE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE]
 }

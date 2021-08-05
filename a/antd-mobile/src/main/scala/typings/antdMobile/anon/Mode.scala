@@ -14,22 +14,17 @@ trait Mode extends StObject {
 }
 object Mode {
   
-  @scala.inline
-  def apply(mode: String, onLeftClick: () => Unit, prefixCls: String): Mode = {
+  inline def apply(mode: String, onLeftClick: () => Unit, prefixCls: String): Mode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], onLeftClick = js.Any.fromFunction0(onLeftClick), prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLeftClick(value: () => Unit): Self = StObject.set(x, "onLeftClick", js.Any.fromFunction0(value))
+    inline def setOnLeftClick(value: () => Unit): Self = StObject.set(x, "onLeftClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

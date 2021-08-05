@@ -79,20 +79,16 @@ object mod {
     }
     object TextDecodeOptions {
       
-      @scala.inline
-      def apply(): TextDecodeOptions = {
+      inline def apply(): TextDecodeOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextDecodeOptions]
       }
       
-      @scala.inline
-      implicit class TextDecodeOptionsMutableBuilder[Self <: TextDecodeOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TextDecodeOptions](x: Self) {
         
-        @scala.inline
-        def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+        inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+        inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       }
     }
     
@@ -121,26 +117,20 @@ object mod {
     }
     object TextDecoderOptions {
       
-      @scala.inline
-      def apply(): TextDecoderOptions = {
+      inline def apply(): TextDecoderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextDecoderOptions]
       }
       
-      @scala.inline
-      implicit class TextDecoderOptionsMutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TextDecoderOptions](x: Self) {
         
-        @scala.inline
-        def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+        inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+        inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
         
-        @scala.inline
-        def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
+        inline def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
+        inline def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
       }
     }
     
@@ -167,20 +157,16 @@ object mod {
     }
     object TextEncodeOptions {
       
-      @scala.inline
-      def apply(): TextEncodeOptions = {
+      inline def apply(): TextEncodeOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextEncodeOptions]
       }
       
-      @scala.inline
-      implicit class TextEncodeOptionsMutableBuilder[Self <: TextEncodeOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TextEncodeOptions](x: Self) {
         
-        @scala.inline
-        def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+        inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+        inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       }
     }
     
@@ -201,20 +187,16 @@ object mod {
     }
     object TextEncoderOptions {
       
-      @scala.inline
-      def apply(): TextEncoderOptions = {
+      inline def apply(): TextEncoderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextEncoderOptions]
       }
       
-      @scala.inline
-      implicit class TextEncoderOptionsMutableBuilder[Self <: TextEncoderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TextEncoderOptions](x: Self) {
         
-        @scala.inline
-        def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
+        inline def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNONSTANDARD_allowLegacyEncodingUndefined: Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", js.undefined)
+        inline def setNONSTANDARD_allowLegacyEncodingUndefined: Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", js.undefined)
       }
     }
     
@@ -253,20 +235,16 @@ object mod {
     }
     object TextEncodingStatic {
       
-      @scala.inline
-      def apply(TextDecoder: TextDecoderStatic, TextEncoder: TextEncoderStatic): TextEncodingStatic = {
+      inline def apply(TextDecoder: TextDecoderStatic, TextEncoder: TextEncoderStatic): TextEncodingStatic = {
         val __obj = js.Dynamic.literal(TextDecoder = TextDecoder.asInstanceOf[js.Any], TextEncoder = TextEncoder.asInstanceOf[js.Any])
         __obj.asInstanceOf[TextEncodingStatic]
       }
       
-      @scala.inline
-      implicit class TextEncodingStaticMutableBuilder[Self <: TextEncodingStatic] (val x: Self) extends AnyVal {
+      extension [Self <: TextEncodingStatic](x: Self) {
         
-        @scala.inline
-        def setTextDecoder(value: TextDecoderStatic): Self = StObject.set(x, "TextDecoder", value.asInstanceOf[js.Any])
+        inline def setTextDecoder(value: TextDecoderStatic): Self = StObject.set(x, "TextDecoder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextEncoder(value: TextEncoderStatic): Self = StObject.set(x, "TextEncoder", value.asInstanceOf[js.Any])
+        inline def setTextEncoder(value: TextEncoderStatic): Self = StObject.set(x, "TextEncoder", value.asInstanceOf[js.Any])
       }
     }
     

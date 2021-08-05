@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOriginalFormat extends StObject
 object WdOriginalFormat {
   
-  @scala.inline
-  def wdOriginalDocumentFormat: `1` = 1.asInstanceOf[`1`]
+  inline def wdOriginalDocumentFormat: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdPromptUser: `2` = 2.asInstanceOf[`2`]
+  inline def wdPromptUser: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdWordDocument: `0` = 0.asInstanceOf[`0`]
+  inline def wdWordDocument: `0` = 0.asInstanceOf[`0`]
 }

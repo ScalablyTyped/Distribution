@@ -31,8 +31,7 @@ object mod {
     @JSImport("@fast-csv/parse", "CsvParserStream.wrapDoneCallback")
     @js.native
     def wrapDoneCallback: js.Any = js.native
-    @scala.inline
-    def wrapDoneCallback_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapDoneCallback")(x.asInstanceOf[js.Any])
+    inline def wrapDoneCallback_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapDoneCallback")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@fast-csv/parse", "ParserOptions")
@@ -42,29 +41,19 @@ object mod {
     def this(opts: ParserOptionsArgs) = this()
   }
   
-  @scala.inline
-  def isSyncTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](transform: RowTransformFunction[I, O]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean]
+  inline def isSyncTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](transform: RowTransformFunction[I, O]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean]
   
-  @scala.inline
-  def isSyncValidate[R /* <: Row[js.Any] */](validate: RowValidate[R]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncValidate")(validate.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean]
+  inline def isSyncValidate[R /* <: Row[js.Any] */](validate: RowValidate[R]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncValidate")(validate.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean]
   
-  @scala.inline
-  def parse[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
-  @scala.inline
-  def parse[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](args: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(args.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parse[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parse[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](args: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(args.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
   
-  @scala.inline
-  def parseFile[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](location: String): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(location.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
-  @scala.inline
-  def parseFile[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](location: String, options: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parseFile[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](location: String): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(location.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parseFile[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](location: String, options: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
   
-  @scala.inline
-  def parseStream[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](stream: ReadableStream): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStream")(stream.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
-  @scala.inline
-  def parseStream[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](stream: ReadableStream, options: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parseStream[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](stream: ReadableStream): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStream")(stream.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parseStream[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](stream: ReadableStream, options: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
   
-  @scala.inline
-  def parseString[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](string: String): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(string.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
-  @scala.inline
-  def parseString[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](string: String, options: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parseString[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](string: String): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(string.asInstanceOf[js.Any]).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
+  inline def parseString[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](string: String, options: ParserOptionsArgs): typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fastCsvParse.csvParserStreamMod.CsvParserStream[I, O]]
 }

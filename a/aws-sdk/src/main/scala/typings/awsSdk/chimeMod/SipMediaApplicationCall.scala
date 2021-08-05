@@ -13,19 +13,15 @@ trait SipMediaApplicationCall extends StObject {
 }
 object SipMediaApplicationCall {
   
-  @scala.inline
-  def apply(): SipMediaApplicationCall = {
+  inline def apply(): SipMediaApplicationCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SipMediaApplicationCall]
   }
   
-  @scala.inline
-  implicit class SipMediaApplicationCallMutableBuilder[Self <: SipMediaApplicationCall] (val x: Self) extends AnyVal {
+  extension [Self <: SipMediaApplicationCall](x: Self) {
     
-    @scala.inline
-    def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

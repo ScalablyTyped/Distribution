@@ -12,19 +12,15 @@ trait CollectionChecksum extends StObject {
 }
 object CollectionChecksum {
   
-  @scala.inline
-  def apply(checksum: String, revision: String): CollectionChecksum = {
+  inline def apply(checksum: String, revision: String): CollectionChecksum = {
     val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionChecksum]
   }
   
-  @scala.inline
-  implicit class CollectionChecksumMutableBuilder[Self <: CollectionChecksum] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionChecksum](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

@@ -46,8 +46,7 @@ trait ResolverFactory extends StObject {
 }
 object ResolverFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     postSolvePosition: js.Array[BodyType] => Unit,
     preSolvePosition: js.Array[IPair] => Unit,
     preSolveVelocity: js.Array[IPair] => Unit,
@@ -58,22 +57,16 @@ object ResolverFactory {
     __obj.asInstanceOf[ResolverFactory]
   }
   
-  @scala.inline
-  implicit class ResolverFactoryMutableBuilder[Self <: ResolverFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ResolverFactory](x: Self) {
     
-    @scala.inline
-    def setPostSolvePosition(value: js.Array[BodyType] => Unit): Self = StObject.set(x, "postSolvePosition", js.Any.fromFunction1(value))
+    inline def setPostSolvePosition(value: js.Array[BodyType] => Unit): Self = StObject.set(x, "postSolvePosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreSolvePosition(value: js.Array[IPair] => Unit): Self = StObject.set(x, "preSolvePosition", js.Any.fromFunction1(value))
+    inline def setPreSolvePosition(value: js.Array[IPair] => Unit): Self = StObject.set(x, "preSolvePosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreSolveVelocity(value: js.Array[IPair] => Unit): Self = StObject.set(x, "preSolveVelocity", js.Any.fromFunction1(value))
+    inline def setPreSolveVelocity(value: js.Array[IPair] => Unit): Self = StObject.set(x, "preSolveVelocity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSolvePosition(value: (js.Array[IPair], js.Array[BodyType], Double) => Unit): Self = StObject.set(x, "solvePosition", js.Any.fromFunction3(value))
+    inline def setSolvePosition(value: (js.Array[IPair], js.Array[BodyType], Double) => Unit): Self = StObject.set(x, "solvePosition", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSolveVelocity(value: (js.Array[IPair], Double) => Unit): Self = StObject.set(x, "solveVelocity", js.Any.fromFunction2(value))
+    inline def setSolveVelocity(value: (js.Array[IPair], Double) => Unit): Self = StObject.set(x, "solveVelocity", js.Any.fromFunction2(value))
   }
 }

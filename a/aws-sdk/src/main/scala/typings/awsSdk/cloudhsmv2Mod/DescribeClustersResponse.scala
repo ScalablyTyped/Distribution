@@ -18,28 +18,21 @@ trait DescribeClustersResponse extends StObject {
 }
 object DescribeClustersResponse {
   
-  @scala.inline
-  def apply(): DescribeClustersResponse = {
+  inline def apply(): DescribeClustersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClustersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeClustersResponseMutableBuilder[Self <: DescribeClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: Clusters): Self = StObject.set(x, "Clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: Clusters): Self = StObject.set(x, "Clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "Clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "Clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

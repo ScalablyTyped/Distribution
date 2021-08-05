@@ -28,26 +28,22 @@ object mod {
     @JSImport("@opentelemetry/api", "default.context")
     @js.native
     def context: ContextAPI = js.native
-    @scala.inline
-    def context_=(x: ContextAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+    inline def context_=(x: ContextAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/api", "default.metrics")
     @js.native
     def metrics: MetricsAPI = js.native
-    @scala.inline
-    def metrics_=(x: MetricsAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metrics")(x.asInstanceOf[js.Any])
+    inline def metrics_=(x: MetricsAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metrics")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/api", "default.propagation")
     @js.native
     def propagation: PropagationAPI = js.native
-    @scala.inline
-    def propagation_=(x: PropagationAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propagation")(x.asInstanceOf[js.Any])
+    inline def propagation_=(x: PropagationAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propagation")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/api", "default.trace")
     @js.native
     def trace: TraceAPI = js.native
-    @scala.inline
-    def trace_=(x: TraceAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trace")(x.asInstanceOf[js.Any])
+    inline def trace_=(x: TraceAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trace")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@opentelemetry/api", "CanonicalCode")
@@ -99,7 +95,7 @@ object mod {
     *
     * @param parentContext a context from which to inherit values
     */
-  class Context_ protected () extends Context
+  /* private */ class Context_ () extends Context
   /* static members */
   object Context_ {
     
@@ -123,8 +119,7 @@ object mod {
     val TODO: typings.opentelemetryContextBase.contextMod.Context = js.native
     
     /** Get a key to uniquely identify a context value */
-    @scala.inline
-    def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
+    inline def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
   }
   
   @JSImport("@opentelemetry/api", "EntryTtl")
@@ -370,11 +365,9 @@ object mod {
   @js.native
   val context: ContextAPI = js.native
   
-  @scala.inline
-  def defaultGetter(carrier: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defaultGetter(carrier: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def defaultSetter(carrier: js.Any, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defaultSetter(carrier: js.Any, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@opentelemetry/api", "metrics")
   @js.native

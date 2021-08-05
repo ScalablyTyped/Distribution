@@ -18,19 +18,15 @@ trait SqlInjectionMatchSetSummary extends StObject {
 }
 object SqlInjectionMatchSetSummary {
   
-  @scala.inline
-  def apply(Name: ResourceName, SqlInjectionMatchSetId: ResourceId): SqlInjectionMatchSetSummary = {
+  inline def apply(Name: ResourceName, SqlInjectionMatchSetId: ResourceId): SqlInjectionMatchSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlInjectionMatchSetSummary]
   }
   
-  @scala.inline
-  implicit class SqlInjectionMatchSetSummaryMutableBuilder[Self <: SqlInjectionMatchSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInjectionMatchSetSummary](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchSetId(value: ResourceId): Self = StObject.set(x, "SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchSetId(value: ResourceId): Self = StObject.set(x, "SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
   }
 }

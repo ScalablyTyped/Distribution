@@ -14,34 +14,25 @@ trait FinishingPunching extends StObject {
 }
 object FinishingPunching {
   
-  @scala.inline
-  def apply(): FinishingPunching = {
+  inline def apply(): FinishingPunching = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishingPunching]
   }
   
-  @scala.inline
-  implicit class FinishingPunchingMutableBuilder[Self <: FinishingPunching] (val x: Self) extends AnyVal {
+  extension [Self <: FinishingPunching](x: Self) {
     
-    @scala.inline
-    def `setPunching-locations`(value: js.Array[Double]): Self = StObject.set(x, "punching-locations", value.asInstanceOf[js.Any])
+    inline def `setPunching-locations`(value: js.Array[Double]): Self = StObject.set(x, "punching-locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPunching-locationsUndefined`: Self = StObject.set(x, "punching-locations", js.undefined)
+    inline def `setPunching-locationsUndefined`: Self = StObject.set(x, "punching-locations", js.undefined)
     
-    @scala.inline
-    def `setPunching-locationsVarargs`(value: Double*): Self = StObject.set(x, "punching-locations", js.Array(value :_*))
+    inline def `setPunching-locationsVarargs`(value: Double*): Self = StObject.set(x, "punching-locations", js.Array(value :_*))
     
-    @scala.inline
-    def `setPunching-offset`(value: Double): Self = StObject.set(x, "punching-offset", value.asInstanceOf[js.Any])
+    inline def `setPunching-offset`(value: Double): Self = StObject.set(x, "punching-offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPunching-offsetUndefined`: Self = StObject.set(x, "punching-offset", js.undefined)
+    inline def `setPunching-offsetUndefined`: Self = StObject.set(x, "punching-offset", js.undefined)
     
-    @scala.inline
-    def `setPunching-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "punching-reference-edge", value.asInstanceOf[js.Any])
+    inline def `setPunching-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "punching-reference-edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPunching-reference-edgeUndefined`: Self = StObject.set(x, "punching-reference-edge", js.undefined)
+    inline def `setPunching-reference-edgeUndefined`: Self = StObject.set(x, "punching-reference-edge", js.undefined)
   }
 }

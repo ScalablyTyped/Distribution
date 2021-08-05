@@ -43,55 +43,39 @@ trait ClientVpnRoute extends StObject {
 }
 object ClientVpnRoute {
   
-  @scala.inline
-  def apply(): ClientVpnRoute = {
+  inline def apply(): ClientVpnRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientVpnRoute]
   }
   
-  @scala.inline
-  implicit class ClientVpnRouteMutableBuilder[Self <: ClientVpnRoute] (val x: Self) extends AnyVal {
+  extension [Self <: ClientVpnRoute](x: Self) {
     
-    @scala.inline
-    def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
+    inline def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDestinationCidr(value: String): Self = StObject.set(x, "DestinationCidr", value.asInstanceOf[js.Any])
+    inline def setDestinationCidr(value: String): Self = StObject.set(x, "DestinationCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCidrUndefined: Self = StObject.set(x, "DestinationCidr", js.undefined)
+    inline def setDestinationCidrUndefined: Self = StObject.set(x, "DestinationCidr", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ClientVpnRouteStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClientVpnRouteStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetSubnet(value: String): Self = StObject.set(x, "TargetSubnet", value.asInstanceOf[js.Any])
+    inline def setTargetSubnet(value: String): Self = StObject.set(x, "TargetSubnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSubnetUndefined: Self = StObject.set(x, "TargetSubnet", js.undefined)
+    inline def setTargetSubnetUndefined: Self = StObject.set(x, "TargetSubnet", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

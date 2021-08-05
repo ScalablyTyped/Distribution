@@ -34,8 +34,7 @@ trait FetchResource
 }
 object FetchResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     created: Date,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object FetchResource {
     __obj.asInstanceOf[FetchResource]
   }
   
-  @scala.inline
-  implicit class FetchResourceMutableBuilder[Self <: FetchResource] (val x: Self) extends AnyVal {
+  extension [Self <: FetchResource](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: PortalItemResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: PortalItemResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

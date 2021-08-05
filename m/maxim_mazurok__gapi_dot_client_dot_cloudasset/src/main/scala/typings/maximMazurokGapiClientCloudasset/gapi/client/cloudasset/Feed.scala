@@ -42,55 +42,39 @@ trait Feed extends StObject {
 }
 object Feed {
   
-  @scala.inline
-  def apply(): Feed = {
+  inline def apply(): Feed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Feed]
   }
   
-  @scala.inline
-  implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
+  extension [Self <: Feed](x: Self) {
     
-    @scala.inline
-    def setAssetNames(value: js.Array[String]): Self = StObject.set(x, "assetNames", value.asInstanceOf[js.Any])
+    inline def setAssetNames(value: js.Array[String]): Self = StObject.set(x, "assetNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetNamesUndefined: Self = StObject.set(x, "assetNames", js.undefined)
+    inline def setAssetNamesUndefined: Self = StObject.set(x, "assetNames", js.undefined)
     
-    @scala.inline
-    def setAssetNamesVarargs(value: String*): Self = StObject.set(x, "assetNames", js.Array(value :_*))
+    inline def setAssetNamesVarargs(value: String*): Self = StObject.set(x, "assetNames", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
+    inline def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
+    inline def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
     
-    @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
+    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setFeedOutputConfig(value: FeedOutputConfig): Self = StObject.set(x, "feedOutputConfig", value.asInstanceOf[js.Any])
+    inline def setFeedOutputConfig(value: FeedOutputConfig): Self = StObject.set(x, "feedOutputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedOutputConfigUndefined: Self = StObject.set(x, "feedOutputConfig", js.undefined)
+    inline def setFeedOutputConfigUndefined: Self = StObject.set(x, "feedOutputConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

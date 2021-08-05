@@ -14,25 +14,19 @@ trait PartialPickImplkeyofImplIos extends StObject {
 }
 object PartialPickImplkeyofImplIos {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplIos = {
+  inline def apply(): PartialPickImplkeyofImplIos = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplIos]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplIosMutableBuilder[Self <: PartialPickImplkeyofImplIos] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplIos](x: Self) {
     
-    @scala.inline
-    def setIos(value: RegExp): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: RegExp): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
-    @scala.inline
-    def setMobile(value: RegExp): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: RegExp): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+    inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
   }
 }

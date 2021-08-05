@@ -18,23 +18,18 @@ trait DoWhileStatement
 }
 object DoWhileStatement {
   
-  @scala.inline
-  def apply(body: Statement, test: Expression): DoWhileStatement = {
+  inline def apply(body: Statement, test: Expression): DoWhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[DoWhileStatement]
   }
   
-  @scala.inline
-  implicit class DoWhileStatementMutableBuilder[Self <: DoWhileStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DoWhileStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.DoWhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.DoWhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

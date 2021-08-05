@@ -26,8 +26,7 @@ trait XPrintSettingsSupplier
 }
 object XPrintSettingsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PrintSettings: XPropertySet,
     acquire: () => Unit,
     getPrintSettings: () => XPropertySet,
@@ -38,13 +37,10 @@ object XPrintSettingsSupplier {
     __obj.asInstanceOf[XPrintSettingsSupplier]
   }
   
-  @scala.inline
-  implicit class XPrintSettingsSupplierMutableBuilder[Self <: XPrintSettingsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XPrintSettingsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetPrintSettings(value: () => XPropertySet): Self = StObject.set(x, "getPrintSettings", js.Any.fromFunction0(value))
+    inline def setGetPrintSettings(value: () => XPropertySet): Self = StObject.set(x, "getPrintSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintSettings(value: XPropertySet): Self = StObject.set(x, "PrintSettings", value.asInstanceOf[js.Any])
+    inline def setPrintSettings(value: XPropertySet): Self = StObject.set(x, "PrintSettings", value.asInstanceOf[js.Any])
   }
 }

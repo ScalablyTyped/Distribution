@@ -14,16 +14,13 @@ trait Screen extends StObject {
 }
 object Screen {
   
-  @scala.inline
-  def apply(screen: Layout): Screen = {
+  inline def apply(screen: Layout): Screen = {
     val __obj = js.Dynamic.literal(screen = screen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Screen]
   }
   
-  @scala.inline
-  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
+  extension [Self <: Screen](x: Self) {
     
-    @scala.inline
-    def setScreen(value: Layout): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Layout): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
   }
 }

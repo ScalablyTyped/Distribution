@@ -23,17 +23,14 @@ object themeContextMod {
   }
   object ThemeContextI {
     
-    @scala.inline
-    def apply(Consumer: Consumer[ThemeValue], Extend: FC[ValueThemeValue], Provider: Provider[ThemeValue]): ThemeContextI = {
+    inline def apply(Consumer: Consumer[ThemeValue], Extend: FC[ValueThemeValue], Provider: Provider[ThemeValue]): ThemeContextI = {
       val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Extend = Extend.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeContextI]
     }
     
-    @scala.inline
-    implicit class ThemeContextIMutableBuilder[Self <: ThemeContextI] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeContextI](x: Self) {
       
-      @scala.inline
-      def setExtend(value: FC[ValueThemeValue]): Self = StObject.set(x, "Extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: FC[ValueThemeValue]): Self = StObject.set(x, "Extend", value.asInstanceOf[js.Any])
     }
   }
   

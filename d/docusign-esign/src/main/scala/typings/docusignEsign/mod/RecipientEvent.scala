@@ -18,25 +18,19 @@ trait RecipientEvent extends StObject {
 }
 object RecipientEvent {
   
-  @scala.inline
-  def apply(): RecipientEvent = {
+  inline def apply(): RecipientEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientEvent]
   }
   
-  @scala.inline
-  implicit class RecipientEventMutableBuilder[Self <: RecipientEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientEvent](x: Self) {
     
-    @scala.inline
-    def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
+    inline def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
+    inline def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
     
-    @scala.inline
-    def setRecipientEventStatusCode(value: String): Self = StObject.set(x, "recipientEventStatusCode", value.asInstanceOf[js.Any])
+    inline def setRecipientEventStatusCode(value: String): Self = StObject.set(x, "recipientEventStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientEventStatusCodeUndefined: Self = StObject.set(x, "recipientEventStatusCode", js.undefined)
+    inline def setRecipientEventStatusCodeUndefined: Self = StObject.set(x, "recipientEventStatusCode", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait ParametersPullsCheckIfMergedEndpoint extends StObject {
 }
 object ParametersPullsCheckIfMergedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: PullsCheckIfMergedEndpoint,
     request: PullsCheckIfMergedRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersPullsCheckIfMergedEndpoint {
     __obj.asInstanceOf[ParametersPullsCheckIfMergedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsCheckIfMergedEndpointMutableBuilder[Self <: ParametersPullsCheckIfMergedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsCheckIfMergedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsCheckIfMergedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsCheckIfMergedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: PullsCheckIfMergedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PullsCheckIfMergedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

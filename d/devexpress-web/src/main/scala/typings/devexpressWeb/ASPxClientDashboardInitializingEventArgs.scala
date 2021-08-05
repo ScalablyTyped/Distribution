@@ -28,22 +28,17 @@ trait ASPxClientDashboardInitializingEventArgs
 }
 object ASPxClientDashboardInitializingEventArgs {
   
-  @scala.inline
-  def apply(Dashboard: js.Any, DashboardId: String, Ready: js.Any): ASPxClientDashboardInitializingEventArgs = {
+  inline def apply(Dashboard: js.Any, DashboardId: String, Ready: js.Any): ASPxClientDashboardInitializingEventArgs = {
     val __obj = js.Dynamic.literal(Dashboard = Dashboard.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], Ready = Ready.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardInitializingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardInitializingEventArgsMutableBuilder[Self <: ASPxClientDashboardInitializingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardInitializingEventArgs](x: Self) {
     
-    @scala.inline
-    def setDashboard(value: js.Any): Self = StObject.set(x, "Dashboard", value.asInstanceOf[js.Any])
+    inline def setDashboard(value: js.Any): Self = StObject.set(x, "Dashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReady(value: js.Any): Self = StObject.set(x, "Ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: js.Any): Self = StObject.set(x, "Ready", value.asInstanceOf[js.Any])
   }
 }

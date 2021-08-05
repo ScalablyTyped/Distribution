@@ -8,7 +8,7 @@ trait CertificateObject extends StObject {
   
   val ExpirationDate: String
   
-  @JSName("InfoPath.CertificateObject_typekey")
+  /* private */ @JSName("InfoPath.CertificateObject_typekey")
   var InfoPathDotCertificateObject_typekey: CertificateObject
   
   val IssuedBy: String
@@ -19,8 +19,7 @@ trait CertificateObject extends StObject {
 }
 object CertificateObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExpirationDate: String,
     InfoPathDotCertificateObject_typekey: CertificateObject,
     IssuedBy: String,
@@ -32,22 +31,16 @@ object CertificateObject {
     __obj.asInstanceOf[CertificateObject]
   }
   
-  @scala.inline
-  implicit class CertificateObjectMutableBuilder[Self <: CertificateObject] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateObject](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotCertificateObject_typekey(value: CertificateObject): Self = StObject.set(x, "InfoPath.CertificateObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotCertificateObject_typekey(value: CertificateObject): Self = StObject.set(x, "InfoPath.CertificateObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuedBy(value: String): Self = StObject.set(x, "IssuedBy", value.asInstanceOf[js.Any])
+    inline def setIssuedBy(value: String): Self = StObject.set(x, "IssuedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuedTo(value: String): Self = StObject.set(x, "IssuedTo", value.asInstanceOf[js.Any])
+    inline def setIssuedTo(value: String): Self = StObject.set(x, "IssuedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: XdCertificateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: XdCertificateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

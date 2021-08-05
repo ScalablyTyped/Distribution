@@ -18,28 +18,21 @@ trait Anonymous extends StObject {
 }
 object Anonymous {
   
-  @scala.inline
-  def apply(anonymous: String, asyncArrow: String, constructor: String, method: String, named: String): Anonymous = {
+  inline def apply(anonymous: String, asyncArrow: String, constructor: String, method: String, named: String): Anonymous = {
     val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], asyncArrow = asyncArrow.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anonymous]
   }
   
-  @scala.inline
-  implicit class AnonymousMutableBuilder[Self <: Anonymous] (val x: Self) extends AnyVal {
+  extension [Self <: Anonymous](x: Self) {
     
-    @scala.inline
-    def setAnonymous(value: String): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: String): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncArrow(value: String): Self = StObject.set(x, "asyncArrow", value.asInstanceOf[js.Any])
+    inline def setAsyncArrow(value: String): Self = StObject.set(x, "asyncArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructor(value: String): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: String): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamed(value: String): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+    inline def setNamed(value: String): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
   }
 }

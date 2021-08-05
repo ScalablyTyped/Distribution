@@ -46,9 +46,7 @@ object vector4Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
-    @scala.inline
-    def create(x: js.Any, y: js.Any, z: js.Any, w: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    inline def create(x: js.Any, y: js.Any, z: js.Any, w: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

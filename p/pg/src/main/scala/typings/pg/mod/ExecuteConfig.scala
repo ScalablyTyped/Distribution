@@ -12,25 +12,19 @@ trait ExecuteConfig extends StObject {
 }
 object ExecuteConfig {
   
-  @scala.inline
-  def apply(): ExecuteConfig = {
+  inline def apply(): ExecuteConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteConfig]
   }
   
-  @scala.inline
-  implicit class ExecuteConfigMutableBuilder[Self <: ExecuteConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteConfig](x: Self) {
     
-    @scala.inline
-    def setPortal(value: String): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: String): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    @scala.inline
-    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

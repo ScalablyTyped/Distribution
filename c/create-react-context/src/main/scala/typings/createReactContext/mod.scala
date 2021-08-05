@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](defaultValue: T): Context[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Context[T]]
-  @scala.inline
-  def default[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]): Context[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any], calculateChangedBits.asInstanceOf[js.Any])).asInstanceOf[Context[T]]
+  inline def default[T](defaultValue: T): Context[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Context[T]]
+  inline def default[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]): Context[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any], calculateChangedBits.asInstanceOf[js.Any])).asInstanceOf[Context[T]]
   
   trait ConsumerProps[T] extends StObject {
     
@@ -26,29 +24,22 @@ object mod {
   }
   object ConsumerProps {
     
-    @scala.inline
-    def apply[T](children: RenderFn[T] | js.Array[RenderFn[T]]): ConsumerProps[T] = {
+    inline def apply[T](children: RenderFn[T] | js.Array[RenderFn[T]]): ConsumerProps[T] = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConsumerProps[T]]
     }
     
-    @scala.inline
-    implicit class ConsumerPropsMutableBuilder[Self <: ConsumerProps[?], T] (val x: Self & ConsumerProps[T]) extends AnyVal {
+    extension [Self <: ConsumerProps[?], T](x: Self & ConsumerProps[T]) {
       
-      @scala.inline
-      def setChildren(value: RenderFn[T] | js.Array[RenderFn[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: RenderFn[T] | js.Array[RenderFn[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenVarargs(value: RenderFn[T]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: RenderFn[T]*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setObservedBits(value: Double): Self = StObject.set(x, "observedBits", value.asInstanceOf[js.Any])
+      inline def setObservedBits(value: Double): Self = StObject.set(x, "observedBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObservedBitsUndefined: Self = StObject.set(x, "observedBits", js.undefined)
+      inline def setObservedBitsUndefined: Self = StObject.set(x, "observedBits", js.undefined)
     }
   }
   
@@ -60,8 +51,7 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       Consumer: ComponentClass[ConsumerProps[T], ComponentState],
       Provider: ComponentClass[ProviderProps[T], ComponentState]
     ): Context[T] = {
@@ -69,14 +59,11 @@ object mod {
       __obj.asInstanceOf[Context[T]]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
+    extension [Self <: Context[?], T](x: Self & Context[T]) {
       
-      @scala.inline
-      def setConsumer(value: ComponentClass[ConsumerProps[T], ComponentState]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
+      inline def setConsumer(value: ComponentClass[ConsumerProps[T], ComponentState]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider(value: ComponentClass[ProviderProps[T], ComponentState]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: ComponentClass[ProviderProps[T], ComponentState]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,23 +75,18 @@ object mod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply[T](value: T): ProviderProps[T] = {
+    inline def apply[T](value: T): ProviderProps[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderProps[T]]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[?], T] (val x: Self & ProviderProps[T]) extends AnyVal {
+    extension [Self <: ProviderProps[?], T](x: Self & ProviderProps[T]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,22 +14,17 @@ trait TransformStartTransform
 }
 object TransformStartTransform {
   
-  @scala.inline
-  def apply(transform_id: String): TransformStartTransform = {
+  inline def apply(transform_id: String): TransformStartTransform = {
     val __obj = js.Dynamic.literal(transform_id = transform_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformStartTransform]
   }
   
-  @scala.inline
-  implicit class TransformStartTransformMutableBuilder[Self <: TransformStartTransform] (val x: Self) extends AnyVal {
+  extension [Self <: TransformStartTransform](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
+    inline def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
   }
 }

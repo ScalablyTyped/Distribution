@@ -20,49 +20,35 @@ trait CustomReporter extends StObject {
 }
 object CustomReporter {
   
-  @scala.inline
-  def apply(): CustomReporter = {
+  inline def apply(): CustomReporter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomReporter]
   }
   
-  @scala.inline
-  implicit class CustomReporterMutableBuilder[Self <: CustomReporter] (val x: Self) extends AnyVal {
+  extension [Self <: CustomReporter](x: Self) {
     
-    @scala.inline
-    def setJasmineDone(value: /* runDetails */ RunDetails => Unit): Self = StObject.set(x, "jasmineDone", js.Any.fromFunction1(value))
+    inline def setJasmineDone(value: /* runDetails */ RunDetails => Unit): Self = StObject.set(x, "jasmineDone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJasmineDoneUndefined: Self = StObject.set(x, "jasmineDone", js.undefined)
+    inline def setJasmineDoneUndefined: Self = StObject.set(x, "jasmineDone", js.undefined)
     
-    @scala.inline
-    def setJasmineStarted(value: /* suiteInfo */ SuiteInfo => Unit): Self = StObject.set(x, "jasmineStarted", js.Any.fromFunction1(value))
+    inline def setJasmineStarted(value: /* suiteInfo */ SuiteInfo => Unit): Self = StObject.set(x, "jasmineStarted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJasmineStartedUndefined: Self = StObject.set(x, "jasmineStarted", js.undefined)
+    inline def setJasmineStartedUndefined: Self = StObject.set(x, "jasmineStarted", js.undefined)
     
-    @scala.inline
-    def setSpecDone(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction1(value))
+    inline def setSpecDone(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpecDoneUndefined: Self = StObject.set(x, "specDone", js.undefined)
+    inline def setSpecDoneUndefined: Self = StObject.set(x, "specDone", js.undefined)
     
-    @scala.inline
-    def setSpecStarted(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction1(value))
+    inline def setSpecStarted(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpecStartedUndefined: Self = StObject.set(x, "specStarted", js.undefined)
+    inline def setSpecStartedUndefined: Self = StObject.set(x, "specStarted", js.undefined)
     
-    @scala.inline
-    def setSuiteDone(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "suiteDone", js.Any.fromFunction1(value))
+    inline def setSuiteDone(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "suiteDone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuiteDoneUndefined: Self = StObject.set(x, "suiteDone", js.undefined)
+    inline def setSuiteDoneUndefined: Self = StObject.set(x, "suiteDone", js.undefined)
     
-    @scala.inline
-    def setSuiteStarted(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "suiteStarted", js.Any.fromFunction1(value))
+    inline def setSuiteStarted(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "suiteStarted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuiteStartedUndefined: Self = StObject.set(x, "suiteStarted", js.undefined)
+    inline def setSuiteStartedUndefined: Self = StObject.set(x, "suiteStarted", js.undefined)
   }
 }

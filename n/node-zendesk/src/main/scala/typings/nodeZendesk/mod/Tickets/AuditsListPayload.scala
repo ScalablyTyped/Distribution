@@ -13,19 +13,15 @@ trait AuditsListPayload
 }
 object AuditsListPayload {
   
-  @scala.inline
-  def apply(audits: js.Array[Audit], count: Double): AuditsListPayload = {
+  inline def apply(audits: js.Array[Audit], count: Double): AuditsListPayload = {
     val __obj = js.Dynamic.literal(audits = audits.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[AuditsListPayload]
   }
   
-  @scala.inline
-  implicit class AuditsListPayloadMutableBuilder[Self <: AuditsListPayload] (val x: Self) extends AnyVal {
+  extension [Self <: AuditsListPayload](x: Self) {
     
-    @scala.inline
-    def setAudits(value: js.Array[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
+    inline def setAudits(value: js.Array[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditsVarargs(value: Audit*): Self = StObject.set(x, "audits", js.Array(value :_*))
+    inline def setAuditsVarargs(value: Audit*): Self = StObject.set(x, "audits", js.Array(value :_*))
   }
 }

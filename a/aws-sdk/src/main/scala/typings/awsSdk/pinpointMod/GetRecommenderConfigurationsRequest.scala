@@ -18,25 +18,19 @@ trait GetRecommenderConfigurationsRequest extends StObject {
 }
 object GetRecommenderConfigurationsRequest {
   
-  @scala.inline
-  def apply(): GetRecommenderConfigurationsRequest = {
+  inline def apply(): GetRecommenderConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRecommenderConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class GetRecommenderConfigurationsRequestMutableBuilder[Self <: GetRecommenderConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecommenderConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

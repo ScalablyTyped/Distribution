@@ -12,25 +12,19 @@ trait TextDecoderOptions extends StObject {
 }
 object TextDecoderOptions {
   
-  @scala.inline
-  def apply(): TextDecoderOptions = {
+  inline def apply(): TextDecoderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDecoderOptions]
   }
   
-  @scala.inline
-  implicit class TextDecoderOptionsMutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextDecoderOptions](x: Self) {
     
-    @scala.inline
-    def setFatal(value: scala.Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+    inline def setFatal(value: scala.Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+    inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
     
-    @scala.inline
-    def setIgnoreBOM(value: scala.Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
+    inline def setIgnoreBOM(value: scala.Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
+    inline def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
   }
 }

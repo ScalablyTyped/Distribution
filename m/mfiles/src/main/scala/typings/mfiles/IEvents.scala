@@ -14,19 +14,15 @@ trait IEvents extends StObject {
 }
 object IEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[IEvents]
   }
   
-  @scala.inline
-  implicit class IEventsMutableBuilder[Self <: IEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IEvents](x: Self) {
     
-    @scala.inline
-    def setRegister(value: (Event, js.Function) => Double): Self = StObject.set(x, "Register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (Event, js.Function) => Double): Self = StObject.set(x, "Register", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnregister(value: Double => Unit): Self = StObject.set(x, "Unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: Double => Unit): Self = StObject.set(x, "Unregister", js.Any.fromFunction1(value))
   }
 }

@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IspResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autonomous_system_number: Double,
     autonomous_system_organization: String,
     isp: String,
@@ -26,13 +25,10 @@ object IspResponse {
     __obj.asInstanceOf[IspResponse]
   }
   
-  @scala.inline
-  implicit class IspResponseMutableBuilder[Self <: IspResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IspResponse](x: Self) {
     
-    @scala.inline
-    def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
+    inline def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
   }
 }

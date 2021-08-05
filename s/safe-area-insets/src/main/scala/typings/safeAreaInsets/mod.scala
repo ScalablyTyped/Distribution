@@ -21,18 +21,14 @@ object mod {
   @JSImport("safe-area-insets", "offChange")
   @js.native
   def offChange: js.Function1[/* callback */ js.Function, Unit] = js.native
-  @scala.inline
-  def offChange(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def offChange_=(x: js.Function1[/* callback */ js.Function, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offChange")(x.asInstanceOf[js.Any])
+  inline def offChange(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def offChange_=(x: js.Function1[/* callback */ js.Function, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offChange")(x.asInstanceOf[js.Any])
   
   @JSImport("safe-area-insets", "onChange")
   @js.native
   def onChange: js.Function1[/* callback */ js.Function, Unit] = js.native
-  @scala.inline
-  def onChange(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def onChange_=(x: js.Function1[/* callback */ js.Function, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
+  inline def onChange(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onChange_=(x: js.Function1[/* callback */ js.Function, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
   
   @JSImport("safe-area-insets", "right")
   @js.native

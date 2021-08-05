@@ -18,28 +18,21 @@ trait ListSharedReportGroupsOutput extends StObject {
 }
 object ListSharedReportGroupsOutput {
   
-  @scala.inline
-  def apply(): ListSharedReportGroupsOutput = {
+  inline def apply(): ListSharedReportGroupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSharedReportGroupsOutput]
   }
   
-  @scala.inline
-  implicit class ListSharedReportGroupsOutputMutableBuilder[Self <: ListSharedReportGroupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSharedReportGroupsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReportGroups(value: ReportGroupArns): Self = StObject.set(x, "reportGroups", value.asInstanceOf[js.Any])
+    inline def setReportGroups(value: ReportGroupArns): Self = StObject.set(x, "reportGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportGroupsUndefined: Self = StObject.set(x, "reportGroups", js.undefined)
+    inline def setReportGroupsUndefined: Self = StObject.set(x, "reportGroups", js.undefined)
     
-    @scala.inline
-    def setReportGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroups", js.Array(value :_*))
+    inline def setReportGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroups", js.Array(value :_*))
   }
 }

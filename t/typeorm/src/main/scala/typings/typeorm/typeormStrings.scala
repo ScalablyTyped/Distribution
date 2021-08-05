@@ -28,8 +28,7 @@ object typeormStrings {
   
   @js.native
   sealed trait ASC extends StObject
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
   sealed trait CASCADE
@@ -38,8 +37,7 @@ object typeormStrings {
        with typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
        with OnUpdateType
        with typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
-  @scala.inline
-  def CASCADE: CASCADE = "CASCADE".asInstanceOf[CASCADE]
+  inline def CASCADE: CASCADE = "CASCADE".asInstanceOf[CASCADE]
   
   @js.native
   sealed trait DEFAULT
@@ -48,64 +46,53 @@ object typeormStrings {
        with typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
        with OnUpdateType
        with typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
   sealed trait DESC extends StObject
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
+  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
   sealed trait DeepPartial extends StObject
-  @scala.inline
-  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
+  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
   sealed trait EntitySchemaOptions extends StObject
-  @scala.inline
-  def EntitySchemaOptions: EntitySchemaOptions = "EntitySchemaOptions".asInstanceOf[EntitySchemaOptions]
+  inline def EntitySchemaOptions: EntitySchemaOptions = "EntitySchemaOptions".asInstanceOf[EntitySchemaOptions]
   
   @js.native
   sealed trait FilterQuery extends StObject
-  @scala.inline
-  def FilterQuery: FilterQuery = "FilterQuery".asInstanceOf[FilterQuery]
+  inline def FilterQuery: FilterQuery = "FilterQuery".asInstanceOf[FilterQuery]
   
   @js.native
   sealed trait FindConditions extends StObject
-  @scala.inline
-  def FindConditions: FindConditions = "FindConditions".asInstanceOf[FindConditions]
+  inline def FindConditions: FindConditions = "FindConditions".asInstanceOf[FindConditions]
   
   @js.native
   sealed trait FindOneOptions extends StObject
-  @scala.inline
-  def FindOneOptions: FindOneOptions = "FindOneOptions".asInstanceOf[FindOneOptions]
+  inline def FindOneOptions: FindOneOptions = "FindOneOptions".asInstanceOf[FindOneOptions]
   
   @js.native
   sealed trait `INITIALLY DEFERRED`
     extends StObject
        with DeferrableType
        with typings.typeorm.deferrableTypeMod.DeferrableType
-  @scala.inline
-  def `INITIALLY DEFERRED`: `INITIALLY DEFERRED` = ("INITIALLY DEFERRED").asInstanceOf[`INITIALLY DEFERRED`]
+  inline def `INITIALLY DEFERRED`: `INITIALLY DEFERRED` = ("INITIALLY DEFERRED").asInstanceOf[`INITIALLY DEFERRED`]
   
   @js.native
   sealed trait `INITIALLY IMMEDIATE`
     extends StObject
        with DeferrableType
        with typings.typeorm.deferrableTypeMod.DeferrableType
-  @scala.inline
-  def `INITIALLY IMMEDIATE`: `INITIALLY IMMEDIATE` = ("INITIALLY IMMEDIATE").asInstanceOf[`INITIALLY IMMEDIATE`]
+  inline def `INITIALLY IMMEDIATE`: `INITIALLY IMMEDIATE` = ("INITIALLY IMMEDIATE").asInstanceOf[`INITIALLY IMMEDIATE`]
   
   @js.native
   sealed trait INNER extends StObject
-  @scala.inline
-  def INNER: INNER = "INNER".asInstanceOf[INNER]
+  inline def INNER: INNER = "INNER".asInstanceOf[INNER]
   
   @js.native
   sealed trait LEFT extends StObject
-  @scala.inline
-  def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
+  inline def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
   sealed trait `NO ACTION`
@@ -114,77 +101,64 @@ object typeormStrings {
        with typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
        with OnUpdateType
        with typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
-  @scala.inline
-  def `NO ACTION`: `NO ACTION` = ("NO ACTION").asInstanceOf[`NO ACTION`]
+  inline def `NO ACTION`: `NO ACTION` = ("NO ACTION").asInstanceOf[`NO ACTION`]
   
   @js.native
   sealed trait `NULLS FIRST` extends StObject
-  @scala.inline
-  def `NULLS FIRST`: `NULLS FIRST` = ("NULLS FIRST").asInstanceOf[`NULLS FIRST`]
+  inline def `NULLS FIRST`: `NULLS FIRST` = ("NULLS FIRST").asInstanceOf[`NULLS FIRST`]
   
   @js.native
   sealed trait `NULLS LAST` extends StObject
-  @scala.inline
-  def `NULLS LAST`: `NULLS LAST` = ("NULLS LAST").asInstanceOf[`NULLS LAST`]
+  inline def `NULLS LAST`: `NULLS LAST` = ("NULLS LAST").asInstanceOf[`NULLS LAST`]
   
   @js.native
   sealed trait ORDER extends StObject
-  @scala.inline
-  def ORDER: ORDER = "ORDER".asInstanceOf[ORDER]
+  inline def ORDER: ORDER = "ORDER".asInstanceOf[ORDER]
   
   @js.native
   sealed trait QueryDeepPartialEntity extends StObject
-  @scala.inline
-  def QueryDeepPartialEntity: QueryDeepPartialEntity = "QueryDeepPartialEntity".asInstanceOf[QueryDeepPartialEntity]
+  inline def QueryDeepPartialEntity: QueryDeepPartialEntity = "QueryDeepPartialEntity".asInstanceOf[QueryDeepPartialEntity]
   
   @js.native
   sealed trait QueryPartialEntity extends StObject
-  @scala.inline
-  def QueryPartialEntity: QueryPartialEntity = "QueryPartialEntity".asInstanceOf[QueryPartialEntity]
+  inline def QueryPartialEntity: QueryPartialEntity = "QueryPartialEntity".asInstanceOf[QueryPartialEntity]
   
   @js.native
   sealed trait RANDOM extends StObject
-  @scala.inline
-  def RANDOM: RANDOM = "RANDOM".asInstanceOf[RANDOM]
+  inline def RANDOM: RANDOM = "RANDOM".asInstanceOf[RANDOM]
   
   @js.native
   sealed trait `READ COMMITTED`
     extends StObject
        with IsolationLevel
        with typings.typeorm.typesIsolationLevelMod.IsolationLevel
-  @scala.inline
-  def `READ COMMITTED`: `READ COMMITTED` = ("READ COMMITTED").asInstanceOf[`READ COMMITTED`]
+  inline def `READ COMMITTED`: `READ COMMITTED` = ("READ COMMITTED").asInstanceOf[`READ COMMITTED`]
   
   @js.native
   sealed trait `READ UNCOMMITTED`
     extends StObject
        with IsolationLevel
        with typings.typeorm.typesIsolationLevelMod.IsolationLevel
-  @scala.inline
-  def `READ UNCOMMITTED`: `READ UNCOMMITTED` = ("READ UNCOMMITTED").asInstanceOf[`READ UNCOMMITTED`]
+  inline def `READ UNCOMMITTED`: `READ UNCOMMITTED` = ("READ UNCOMMITTED").asInstanceOf[`READ UNCOMMITTED`]
   
   @js.native
   sealed trait READ_COMMITTED extends StObject
-  @scala.inline
-  def READ_COMMITTED: READ_COMMITTED = "READ_COMMITTED".asInstanceOf[READ_COMMITTED]
+  inline def READ_COMMITTED: READ_COMMITTED = "READ_COMMITTED".asInstanceOf[READ_COMMITTED]
   
   @js.native
   sealed trait READ_UNCOMMITTED extends StObject
-  @scala.inline
-  def READ_UNCOMMITTED: READ_UNCOMMITTED = "READ_UNCOMMITTED".asInstanceOf[READ_UNCOMMITTED]
+  inline def READ_UNCOMMITTED: READ_UNCOMMITTED = "READ_UNCOMMITTED".asInstanceOf[READ_UNCOMMITTED]
   
   @js.native
   sealed trait `REPEATABLE READ`
     extends StObject
        with IsolationLevel
        with typings.typeorm.typesIsolationLevelMod.IsolationLevel
-  @scala.inline
-  def `REPEATABLE READ`: `REPEATABLE READ` = ("REPEATABLE READ").asInstanceOf[`REPEATABLE READ`]
+  inline def `REPEATABLE READ`: `REPEATABLE READ` = ("REPEATABLE READ").asInstanceOf[`REPEATABLE READ`]
   
   @js.native
   sealed trait REPEATABLE_READ extends StObject
-  @scala.inline
-  def REPEATABLE_READ: REPEATABLE_READ = "REPEATABLE_READ".asInstanceOf[REPEATABLE_READ]
+  inline def REPEATABLE_READ: REPEATABLE_READ = "REPEATABLE_READ".asInstanceOf[REPEATABLE_READ]
   
   @js.native
   sealed trait RESTRICT
@@ -193,21 +167,18 @@ object typeormStrings {
        with typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
        with OnUpdateType
        with typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
-  @scala.inline
-  def RESTRICT: RESTRICT = "RESTRICT".asInstanceOf[RESTRICT]
+  inline def RESTRICT: RESTRICT = "RESTRICT".asInstanceOf[RESTRICT]
   
   @js.native
   sealed trait RR extends StObject
-  @scala.inline
-  def RR: RR = "RR".asInstanceOf[RR]
+  inline def RR: RR = "RR".asInstanceOf[RR]
   
   @js.native
   sealed trait SERIALIZABLE
     extends StObject
        with IsolationLevel
        with typings.typeorm.typesIsolationLevelMod.IsolationLevel
-  @scala.inline
-  def SERIALIZABLE: SERIALIZABLE = "SERIALIZABLE".asInstanceOf[SERIALIZABLE]
+  inline def SERIALIZABLE: SERIALIZABLE = "SERIALIZABLE".asInstanceOf[SERIALIZABLE]
   
   @js.native
   sealed trait `SET NULL`
@@ -216,88 +187,74 @@ object typeormStrings {
        with typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
        with OnUpdateType
        with typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
-  @scala.inline
-  def `SET NULL`: `SET NULL` = ("SET NULL").asInstanceOf[`SET NULL`]
+  inline def `SET NULL`: `SET NULL` = ("SET NULL").asInstanceOf[`SET NULL`]
   
   @js.native
   sealed trait SNAPSHOT extends StObject
-  @scala.inline
-  def SNAPSHOT: SNAPSHOT = "SNAPSHOT".asInstanceOf[SNAPSHOT]
+  inline def SNAPSHOT: SNAPSHOT = "SNAPSHOT".asInstanceOf[SNAPSHOT]
   
   @js.native
   sealed trait STI extends StObject
-  @scala.inline
-  def STI: STI = "STI".asInstanceOf[STI]
+  inline def STI: STI = "STI".asInstanceOf[STI]
   
   @js.native
   sealed trait STORED extends StObject
-  @scala.inline
-  def STORED: STORED = "STORED".asInstanceOf[STORED]
+  inline def STORED: STORED = "STORED".asInstanceOf[STORED]
   
   @js.native
   sealed trait UpdateQuery extends StObject
-  @scala.inline
-  def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
+  inline def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
   
   @js.native
   sealed trait VIRTUAL extends StObject
-  @scala.inline
-  def VIRTUAL: VIRTUAL = "VIRTUAL".asInstanceOf[VIRTUAL]
+  inline def VIRTUAL: VIRTUAL = "VIRTUAL".asInstanceOf[VIRTUAL]
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait `adjacency-list`
     extends StObject
        with TreeType
        with typings.typeorm.treeTypesMod.TreeType
-  @scala.inline
-  def `adjacency-list`: `adjacency-list` = "adjacency-list".asInstanceOf[`adjacency-list`]
+  inline def `adjacency-list`: `adjacency-list` = "adjacency-list".asInstanceOf[`adjacency-list`]
   
   @js.native
   sealed trait `advanced-console` extends StObject
-  @scala.inline
-  def `advanced-console`: `advanced-console` = "advanced-console".asInstanceOf[`advanced-console`]
+  inline def `advanced-console`: `advanced-console` = "advanced-console".asInstanceOf[`advanced-console`]
   
   @js.native
   sealed trait `after-insert`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `after-insert`: `after-insert` = "after-insert".asInstanceOf[`after-insert`]
+  inline def `after-insert`: `after-insert` = "after-insert".asInstanceOf[`after-insert`]
   
   @js.native
   sealed trait `after-load`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `after-load`: `after-load` = "after-load".asInstanceOf[`after-load`]
+  inline def `after-load`: `after-load` = "after-load".asInstanceOf[`after-load`]
   
   @js.native
   sealed trait `after-remove`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `after-remove`: `after-remove` = "after-remove".asInstanceOf[`after-remove`]
+  inline def `after-remove`: `after-remove` = "after-remove".asInstanceOf[`after-remove`]
   
   @js.native
   sealed trait `after-update`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `after-update`: `after-update` = "after-update".asInstanceOf[`after-update`]
+  inline def `after-update`: `after-update` = "after-update".asInstanceOf[`after-update`]
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait alphanum
@@ -306,26 +263,22 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
+  inline def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
   
   @js.native
   sealed trait ancestor extends StObject
-  @scala.inline
-  def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
+  inline def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
   
   @js.native
   sealed trait and extends StObject
-  @scala.inline
-  def and: and = "and".asInstanceOf[and]
+  inline def and: and = "and".asInstanceOf[and]
   
   @js.native
   sealed trait any
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait array
@@ -334,80 +287,70 @@ object typeormStrings {
        with typings.typeorm.columnModeMod.ColumnMode
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait `aurora-data-api`
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def `aurora-data-api`: `aurora-data-api` = "aurora-data-api".asInstanceOf[`aurora-data-api`]
+  inline def `aurora-data-api`: `aurora-data-api` = "aurora-data-api".asInstanceOf[`aurora-data-api`]
   
   @js.native
   sealed trait `aurora-data-api-pg`
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def `aurora-data-api-pg`: `aurora-data-api-pg` = "aurora-data-api-pg".asInstanceOf[`aurora-data-api-pg`]
+  inline def `aurora-data-api-pg`: `aurora-data-api-pg` = "aurora-data-api-pg".asInstanceOf[`aurora-data-api-pg`]
   
   @js.native
   sealed trait available
     extends StObject
        with ReadConcernLevel
        with typings.typeorm.mongodbTypingsMod.ReadConcernLevel
-  @scala.inline
-  def available: available = "available".asInstanceOf[available]
+  inline def available: available = "available".asInstanceOf[available]
   
   @js.native
   sealed trait `before-insert`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `before-insert`: `before-insert` = "before-insert".asInstanceOf[`before-insert`]
+  inline def `before-insert`: `before-insert` = "before-insert".asInstanceOf[`before-insert`]
   
   @js.native
   sealed trait `before-remove`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `before-remove`: `before-remove` = "before-remove".asInstanceOf[`before-remove`]
+  inline def `before-remove`: `before-remove` = "before-remove".asInstanceOf[`before-remove`]
   
   @js.native
   sealed trait `before-update`
     extends StObject
        with EventListenerType
        with typings.typeorm.eventListenerTypesMod.EventListenerType
-  @scala.inline
-  def `before-update`: `before-update` = "before-update".asInstanceOf[`before-update`]
+  inline def `before-update`: `before-update` = "before-update".asInstanceOf[`before-update`]
   
   @js.native
   sealed trait `better-sqlite3`
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def `better-sqlite3`: `better-sqlite3` = "better-sqlite3".asInstanceOf[`better-sqlite3`]
+  inline def `better-sqlite3`: `better-sqlite3` = "better-sqlite3".asInstanceOf[`better-sqlite3`]
   
   @js.native
   sealed trait between
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
+  inline def between: between = "between".asInstanceOf[between]
   
   @js.native
   sealed trait bfile
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def bfile: bfile = "bfile".asInstanceOf[bfile]
+  inline def bfile: bfile = "bfile".asInstanceOf[bfile]
   
   @js.native
   sealed trait bigint
@@ -416,263 +359,229 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithWidthColumnType
        with typings.typeorm.columnTypesMod.WithWidthColumnType
-  @scala.inline
-  def bigint: bigint = "bigint".asInstanceOf[bigint]
+  inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
   sealed trait binary
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait bit
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def bit: bit = "bit".asInstanceOf[bit]
+  inline def bit: bit = "bit".asInstanceOf[bit]
   
   @js.native
   sealed trait `bit varying`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `bit varying`: `bit varying` = ("bit varying").asInstanceOf[`bit varying`]
+  inline def `bit varying`: `bit varying` = ("bit varying").asInstanceOf[`bit varying`]
   
   @js.native
   sealed trait blob
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
   sealed trait bool
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
+  inline def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
   sealed trait boolean
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait box
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def box: box = "box".asInstanceOf[box]
+  inline def box: box = "box".asInstanceOf[box]
   
   @js.native
   sealed trait browser extends StObject
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait bytea
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def bytea: bytea = "bytea".asInstanceOf[bytea]
+  inline def bytea: bytea = "bytea".asInstanceOf[bytea]
   
   @js.native
   sealed trait bytes
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def bytes: bytes = "bytes".asInstanceOf[bytes]
+  inline def bytes: bytes = "bytes".asInstanceOf[bytes]
   
   @js.native
   sealed trait char
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def char: char = "char".asInstanceOf[char]
+  inline def char: char = "char".asInstanceOf[char]
   
   @js.native
   sealed trait `char varying`
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def `char varying`: `char varying` = ("char varying").asInstanceOf[`char varying`]
+  inline def `char varying`: `char varying` = ("char varying").asInstanceOf[`char varying`]
   
   @js.native
   sealed trait character
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def character: character = "character".asInstanceOf[character]
+  inline def character: character = "character".asInstanceOf[character]
   
   @js.native
   sealed trait `character varying`
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def `character varying`: `character varying` = ("character varying").asInstanceOf[`character varying`]
+  inline def `character varying`: `character varying` = ("character varying").asInstanceOf[`character varying`]
   
   @js.native
   sealed trait cidr
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def cidr: cidr = "cidr".asInstanceOf[cidr]
+  inline def cidr: cidr = "cidr".asInstanceOf[cidr]
   
   @js.native
   sealed trait circle
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait citext
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def citext: citext = "citext".asInstanceOf[citext]
+  inline def citext: citext = "citext".asInstanceOf[citext]
   
   @js.native
   sealed trait clob
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def clob: clob = "clob".asInstanceOf[clob]
+  inline def clob: clob = "clob".asInstanceOf[clob]
   
   @js.native
   sealed trait closure
     extends StObject
        with TableType
        with typings.typeorm.tableTypesMod.TableType
-  @scala.inline
-  def closure: closure = "closure".asInstanceOf[closure]
+  inline def closure: closure = "closure".asInstanceOf[closure]
   
   @js.native
   sealed trait `closure-junction`
     extends StObject
        with TableType
        with typings.typeorm.tableTypesMod.TableType
-  @scala.inline
-  def `closure-junction`: `closure-junction` = "closure-junction".asInstanceOf[`closure-junction`]
+  inline def `closure-junction`: `closure-junction` = "closure-junction".asInstanceOf[`closure-junction`]
   
   @js.native
   sealed trait `closure-table`
     extends StObject
        with TreeType
        with typings.typeorm.treeTypesMod.TreeType
-  @scala.inline
-  def `closure-table`: `closure-table` = "closure-table".asInstanceOf[`closure-table`]
+  inline def `closure-table`: `closure-table` = "closure-table".asInstanceOf[`closure-table`]
   
   @js.native
   sealed trait cockroachdb
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def cockroachdb: cockroachdb = "cockroachdb".asInstanceOf[cockroachdb]
+  inline def cockroachdb: cockroachdb = "cockroachdb".asInstanceOf[cockroachdb]
   
   @js.native
   sealed trait cordova
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def cordova: cordova = "cordova".asInstanceOf[cordova]
+  inline def cordova: cordova = "cordova".asInstanceOf[cordova]
   
   @js.native
   sealed trait `create-pojo`
     extends StObject
        with SelectQueryBuilderOption
        with typings.typeorm.queryBuilderSelectQueryBuilderOptionMod.SelectQueryBuilderOption
-  @scala.inline
-  def `create-pojo`: `create-pojo` = "create-pojo".asInstanceOf[`create-pojo`]
+  inline def `create-pojo`: `create-pojo` = "create-pojo".asInstanceOf[`create-pojo`]
   
   @js.native
   sealed trait createDate
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def createDate: createDate = "createDate".asInstanceOf[createDate]
+  inline def createDate: createDate = "createDate".asInstanceOf[createDate]
   
   @js.native
   sealed trait cube
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def cube: cube = "cube".asInstanceOf[cube]
+  inline def cube: cube = "cube".asInstanceOf[cube]
   
   @js.native
   sealed trait database extends StObject
-  @scala.inline
-  def database: database = "database".asInstanceOf[database]
+  inline def database: database = "database".asInstanceOf[database]
   
   @js.native
   sealed trait date
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait daterange
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def daterange: daterange = "daterange".asInstanceOf[daterange]
+  inline def daterange: daterange = "daterange".asInstanceOf[daterange]
   
   @js.native
   sealed trait datetime
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
   sealed trait datetime2
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def datetime2: datetime2 = "datetime2".asInstanceOf[datetime2]
+  inline def datetime2: datetime2 = "datetime2".asInstanceOf[datetime2]
   
   @js.native
   sealed trait datetimeoffset
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def datetimeoffset: datetimeoffset = "datetimeoffset".asInstanceOf[datetimeoffset]
+  inline def datetimeoffset: datetimeoffset = "datetimeoffset".asInstanceOf[datetimeoffset]
   
   @js.native
   sealed trait debug extends StObject
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait dec
@@ -681,8 +590,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def dec: dec = "dec".asInstanceOf[dec]
+  inline def dec: dec = "dec".asInstanceOf[dec]
   
   @js.native
   sealed trait decimal
@@ -691,102 +599,87 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
   sealed trait delete extends StObject
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait deleteDate
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def deleteDate: deleteDate = "deleteDate".asInstanceOf[deleteDate]
+  inline def deleteDate: deleteDate = "deleteDate".asInstanceOf[deleteDate]
   
   @js.native
   sealed trait descendant extends StObject
-  @scala.inline
-  def descendant: descendant = "descendant".asInstanceOf[descendant]
+  inline def descendant: descendant = "descendant".asInstanceOf[descendant]
   
   @js.native
   sealed trait dirty_read extends StObject
-  @scala.inline
-  def dirty_read: dirty_read = "dirty_read".asInstanceOf[dirty_read]
+  inline def dirty_read: dirty_read = "dirty_read".asInstanceOf[dirty_read]
   
   @js.native
   sealed trait `disable-global-order`
     extends StObject
        with SelectQueryBuilderOption
        with typings.typeorm.queryBuilderSelectQueryBuilderOptionMod.SelectQueryBuilderOption
-  @scala.inline
-  def `disable-global-order`: `disable-global-order` = "disable-global-order".asInstanceOf[`disable-global-order`]
+  inline def `disable-global-order`: `disable-global-order` = "disable-global-order".asInstanceOf[`disable-global-order`]
   
   @js.native
   sealed trait double
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait `double precision`
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def `double precision`: `double precision` = ("double precision").asInstanceOf[`double precision`]
+  inline def `double precision`: `double precision` = ("double precision").asInstanceOf[`double precision`]
   
   @js.native
   sealed trait each extends StObject
-  @scala.inline
-  def each: each = "each".asInstanceOf[each]
+  inline def each: each = "each".asInstanceOf[each]
   
   @js.native
   sealed trait `entity-child`
     extends StObject
        with TableType
        with typings.typeorm.tableTypesMod.TableType
-  @scala.inline
-  def `entity-child`: `entity-child` = "entity-child".asInstanceOf[`entity-child`]
+  inline def `entity-child`: `entity-child` = "entity-child".asInstanceOf[`entity-child`]
   
   @js.native
   sealed trait `enum`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
+  inline def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait equal
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
+  inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait expo
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def expo: expo = "expo".asInstanceOf[expo]
+  inline def expo: expo = "expo".asInstanceOf[expo]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait fixed
@@ -795,8 +688,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
   sealed trait float
@@ -805,34 +697,29 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait float4
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def float4: float4 = "float4".asInstanceOf[float4]
+  inline def float4: float4 = "float4".asInstanceOf[float4]
   
   @js.native
   sealed trait float8
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def float8: float8 = "float8".asInstanceOf[float8]
+  inline def float8: float8 = "float8".asInstanceOf[float8]
   
   @js.native
   sealed trait for_no_key_update extends StObject
-  @scala.inline
-  def for_no_key_update: for_no_key_update = "for_no_key_update".asInstanceOf[for_no_key_update]
+  inline def for_no_key_update: for_no_key_update = "for_no_key_update".asInstanceOf[for_no_key_update]
   
   @js.native
   sealed trait from extends StObject
-  @scala.inline
-  def from: from = "from".asInstanceOf[from]
+  inline def from: from = "from".asInstanceOf[from]
   
   @js.native
   sealed trait geography
@@ -841,8 +728,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with SpatialColumnType
        with typings.typeorm.columnTypesMod.SpatialColumnType
-  @scala.inline
-  def geography: geography = "geography".asInstanceOf[geography]
+  inline def geography: geography = "geography".asInstanceOf[geography]
   
   @js.native
   sealed trait geometry
@@ -851,79 +737,68 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with SpatialColumnType
        with typings.typeorm.columnTypesMod.SpatialColumnType
-  @scala.inline
-  def geometry: geometry = "geometry".asInstanceOf[geometry]
+  inline def geometry: geometry = "geometry".asInstanceOf[geometry]
   
   @js.native
   sealed trait geometrycollection
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def geometrycollection: geometrycollection = "geometrycollection".asInstanceOf[geometrycollection]
+  inline def geometrycollection: geometrycollection = "geometrycollection".asInstanceOf[geometrycollection]
   
   @js.native
   sealed trait hierarchyid
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def hierarchyid: hierarchyid = "hierarchyid".asInstanceOf[hierarchyid]
+  inline def hierarchyid: hierarchyid = "hierarchyid".asInstanceOf[hierarchyid]
   
   @js.native
   sealed trait hstore
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def hstore: hstore = "hstore".asInstanceOf[hstore]
+  inline def hstore: hstore = "hstore".asInstanceOf[hstore]
   
   @js.native
   sealed trait ilike
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def ilike: ilike = "ilike".asInstanceOf[ilike]
+  inline def ilike: ilike = "ilike".asInstanceOf[ilike]
   
   @js.native
   sealed trait image
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait in
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
+  inline def in: in = "in".asInstanceOf[in]
   
   @js.native
   sealed trait increment extends StObject
-  @scala.inline
-  def increment: increment = "increment".asInstanceOf[increment]
+  inline def increment: increment = "increment".asInstanceOf[increment]
   
   @js.native
   sealed trait inet
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def inet: inet = "inet".asInstanceOf[inet]
+  inline def inet: inet = "inet".asInstanceOf[inet]
   
   @js.native
   sealed trait info extends StObject
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait insert extends StObject
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
   sealed trait int
@@ -932,8 +807,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithWidthColumnType
        with typings.typeorm.columnTypesMod.WithWidthColumnType
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
   sealed trait int2
@@ -942,8 +816,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def int2: int2 = "int2".asInstanceOf[int2]
+  inline def int2: int2 = "int2".asInstanceOf[int2]
   
   @js.native
   sealed trait int4
@@ -952,24 +825,21 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def int4: int4 = "int4".asInstanceOf[int4]
+  inline def int4: int4 = "int4".asInstanceOf[int4]
   
   @js.native
   sealed trait int4range
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def int4range: int4range = "int4range".asInstanceOf[int4range]
+  inline def int4range: int4range = "int4range".asInstanceOf[int4range]
   
   @js.native
   sealed trait int64
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def int64: int64 = "int64".asInstanceOf[int64]
+  inline def int64: int64 = "int64".asInstanceOf[int64]
   
   @js.native
   sealed trait int8
@@ -978,16 +848,14 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def int8: int8 = "int8".asInstanceOf[int8]
+  inline def int8: int8 = "int8".asInstanceOf[int8]
   
   @js.native
   sealed trait int8range
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def int8range: int8range = "int8range".asInstanceOf[int8range]
+  inline def int8range: int8range = "int8range".asInstanceOf[int8range]
   
   @js.native
   sealed trait integer
@@ -996,252 +864,219 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait interval
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def interval: interval = "interval".asInstanceOf[interval]
+  inline def interval: interval = "interval".asInstanceOf[interval]
   
   @js.native
   sealed trait `interval day to second`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `interval day to second`: `interval day to second` = ("interval day to second").asInstanceOf[`interval day to second`]
+  inline def `interval day to second`: `interval day to second` = ("interval day to second").asInstanceOf[`interval day to second`]
   
   @js.native
   sealed trait `interval year to month`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `interval year to month`: `interval year to month` = ("interval year to month").asInstanceOf[`interval year to month`]
+  inline def `interval year to month`: `interval year to month` = ("interval year to month").asInstanceOf[`interval year to month`]
   
   @js.native
   sealed trait ioredis extends StObject
-  @scala.inline
-  def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
+  inline def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
   
   @js.native
   sealed trait ioredisSlashcluster extends StObject
-  @scala.inline
-  def ioredisSlashcluster: ioredisSlashcluster = "ioredis/cluster".asInstanceOf[ioredisSlashcluster]
+  inline def ioredisSlashcluster: ioredisSlashcluster = "ioredis/cluster".asInstanceOf[ioredisSlashcluster]
   
   @js.native
   sealed trait isNull
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def isNull: isNull = "isNull".asInstanceOf[isNull]
+  inline def isNull: isNull = "isNull".asInstanceOf[isNull]
   
   @js.native
   sealed trait join extends StObject
-  @scala.inline
-  def join: join = "join".asInstanceOf[join]
+  inline def join: join = "join".asInstanceOf[join]
   
   @js.native
   sealed trait json
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait jsonb
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def jsonb: jsonb = "jsonb".asInstanceOf[jsonb]
+  inline def jsonb: jsonb = "jsonb".asInstanceOf[jsonb]
   
   @js.native
   sealed trait junction
     extends StObject
        with TableType
        with typings.typeorm.tableTypesMod.TableType
-  @scala.inline
-  def junction: junction = "junction".asInstanceOf[junction]
+  inline def junction: junction = "junction".asInstanceOf[junction]
   
   @js.native
   sealed trait lessThan
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
+  inline def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
   
   @js.native
   sealed trait lessThanOrEqual
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
+  inline def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
   
   @js.native
   sealed trait like
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def like: like = "like".asInstanceOf[like]
+  inline def like: like = "like".asInstanceOf[like]
   
   @js.native
   sealed trait line
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait linearizable
     extends StObject
        with ReadConcernLevel
        with typings.typeorm.mongodbTypingsMod.ReadConcernLevel
-  @scala.inline
-  def linearizable: linearizable = "linearizable".asInstanceOf[linearizable]
+  inline def linearizable: linearizable = "linearizable".asInstanceOf[linearizable]
   
   @js.native
   sealed trait linestring
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def linestring: linestring = "linestring".asInstanceOf[linestring]
+  inline def linestring: linestring = "linestring".asInstanceOf[linestring]
   
   @js.native
   sealed trait local
     extends StObject
        with ReadConcernLevel
        with typings.typeorm.mongodbTypingsMod.ReadConcernLevel
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait log extends StObject
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait long
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
+  inline def long: long = "long".asInstanceOf[long]
   
   @js.native
   sealed trait `long raw`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `long raw`: `long raw` = ("long raw").asInstanceOf[`long raw`]
+  inline def `long raw`: `long raw` = ("long raw").asInstanceOf[`long raw`]
   
   @js.native
   sealed trait longblob
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def longblob: longblob = "longblob".asInstanceOf[longblob]
+  inline def longblob: longblob = "longblob".asInstanceOf[longblob]
   
   @js.native
   sealed trait longtext
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def longtext: longtext = "longtext".asInstanceOf[longtext]
+  inline def longtext: longtext = "longtext".asInstanceOf[longtext]
   
   @js.native
   sealed trait lseg
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def lseg: lseg = "lseg".asInstanceOf[lseg]
+  inline def lseg: lseg = "lseg".asInstanceOf[lseg]
   
   @js.native
   sealed trait ltree
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def ltree: ltree = "ltree".asInstanceOf[ltree]
+  inline def ltree: ltree = "ltree".asInstanceOf[ltree]
   
   @js.native
   sealed trait macaddr
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def macaddr: macaddr = "macaddr".asInstanceOf[macaddr]
+  inline def macaddr: macaddr = "macaddr".asInstanceOf[macaddr]
   
   @js.native
   sealed trait majority
     extends StObject
        with ReadConcernLevel
        with typings.typeorm.mongodbTypingsMod.ReadConcernLevel
-  @scala.inline
-  def majority: majority = "majority".asInstanceOf[majority]
+  inline def majority: majority = "majority".asInstanceOf[majority]
   
   @js.native
   sealed trait `many-to-many`
     extends StObject
        with RelationType
        with typings.typeorm.relationTypesMod.RelationType
-  @scala.inline
-  def `many-to-many`: `many-to-many` = "many-to-many".asInstanceOf[`many-to-many`]
+  inline def `many-to-many`: `many-to-many` = "many-to-many".asInstanceOf[`many-to-many`]
   
   @js.native
   sealed trait `many-to-one`
     extends StObject
        with RelationType
        with typings.typeorm.relationTypesMod.RelationType
-  @scala.inline
-  def `many-to-one`: `many-to-one` = "many-to-one".asInstanceOf[`many-to-one`]
+  inline def `many-to-one`: `many-to-one` = "many-to-one".asInstanceOf[`many-to-one`]
   
   @js.native
   sealed trait mariadb
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def mariadb: mariadb = "mariadb".asInstanceOf[mariadb]
+  inline def mariadb: mariadb = "mariadb".asInstanceOf[mariadb]
   
   @js.native
   sealed trait master
     extends StObject
        with ReplicationMode
        with typings.typeorm.typesReplicationModeMod.ReplicationMode
-  @scala.inline
-  def master: master = "master".asInstanceOf[master]
+  inline def master: master = "master".asInstanceOf[master]
   
   @js.native
   sealed trait `materialized-path`
     extends StObject
        with TreeType
        with typings.typeorm.treeTypesMod.TreeType
-  @scala.inline
-  def `materialized-path`: `materialized-path` = "materialized-path".asInstanceOf[`materialized-path`]
+  inline def `materialized-path`: `materialized-path` = "materialized-path".asInstanceOf[`materialized-path`]
   
   @js.native
   sealed trait mediumblob
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def mediumblob: mediumblob = "mediumblob".asInstanceOf[mediumblob]
+  inline def mediumblob: mediumblob = "mediumblob".asInstanceOf[mediumblob]
   
   @js.native
   sealed trait mediumint
@@ -1250,175 +1085,152 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithWidthColumnType
        with typings.typeorm.columnTypesMod.WithWidthColumnType
-  @scala.inline
-  def mediumint: mediumint = "mediumint".asInstanceOf[mediumint]
+  inline def mediumint: mediumint = "mediumint".asInstanceOf[mediumint]
   
   @js.native
   sealed trait mediumtext
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def mediumtext: mediumtext = "mediumtext".asInstanceOf[mediumtext]
+  inline def mediumtext: mediumtext = "mediumtext".asInstanceOf[mediumtext]
   
   @js.native
   sealed trait migration extends StObject
-  @scala.inline
-  def migration: migration = "migration".asInstanceOf[migration]
+  inline def migration: migration = "migration".asInstanceOf[migration]
   
   @js.native
   sealed trait money
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def money: money = "money".asInstanceOf[money]
+  inline def money: money = "money".asInstanceOf[money]
   
   @js.native
   sealed trait mongodb
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def mongodb: mongodb = "mongodb".asInstanceOf[mongodb]
+  inline def mongodb: mongodb = "mongodb".asInstanceOf[mongodb]
   
   @js.native
   sealed trait moreThan
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def moreThan: moreThan = "moreThan".asInstanceOf[moreThan]
+  inline def moreThan: moreThan = "moreThan".asInstanceOf[moreThan]
   
   @js.native
   sealed trait moreThanOrEqual
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def moreThanOrEqual: moreThanOrEqual = "moreThanOrEqual".asInstanceOf[moreThanOrEqual]
+  inline def moreThanOrEqual: moreThanOrEqual = "moreThanOrEqual".asInstanceOf[moreThanOrEqual]
   
   @js.native
   sealed trait mssql
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def mssql: mssql = "mssql".asInstanceOf[mssql]
+  inline def mssql: mssql = "mssql".asInstanceOf[mssql]
   
   @js.native
   sealed trait multilinestring
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def multilinestring: multilinestring = "multilinestring".asInstanceOf[multilinestring]
+  inline def multilinestring: multilinestring = "multilinestring".asInstanceOf[multilinestring]
   
   @js.native
   sealed trait multipoint
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def multipoint: multipoint = "multipoint".asInstanceOf[multipoint]
+  inline def multipoint: multipoint = "multipoint".asInstanceOf[multipoint]
   
   @js.native
   sealed trait multipolygon
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def multipolygon: multipolygon = "multipolygon".asInstanceOf[multipolygon]
+  inline def multipolygon: multipolygon = "multipolygon".asInstanceOf[multipolygon]
   
   @js.native
   sealed trait mysql
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def mysql: mysql = "mysql".asInstanceOf[mysql]
+  inline def mysql: mysql = "mysql".asInstanceOf[mysql]
   
   @js.native
   sealed trait `national char`
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def `national char`: `national char` = ("national char").asInstanceOf[`national char`]
+  inline def `national char`: `national char` = ("national char").asInstanceOf[`national char`]
   
   @js.native
   sealed trait `national varchar`
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def `national varchar`: `national varchar` = ("national varchar").asInstanceOf[`national varchar`]
+  inline def `national varchar`: `national varchar` = ("national varchar").asInstanceOf[`national varchar`]
   
   @js.native
   sealed trait `native character`
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def `native character`: `native character` = ("native character").asInstanceOf[`native character`]
+  inline def `native character`: `native character` = ("native character").asInstanceOf[`native character`]
   
   @js.native
   sealed trait nativescript
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def nativescript: nativescript = "nativescript".asInstanceOf[nativescript]
+  inline def nativescript: nativescript = "nativescript".asInstanceOf[nativescript]
   
   @js.native
   sealed trait nchar
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def nchar: nchar = "nchar".asInstanceOf[nchar]
+  inline def nchar: nchar = "nchar".asInstanceOf[nchar]
   
   @js.native
   sealed trait nclob
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def nclob: nclob = "nclob".asInstanceOf[nclob]
+  inline def nclob: nclob = "nclob".asInstanceOf[nclob]
   
   @js.native
   sealed trait `nested-set`
     extends StObject
        with TreeType
        with typings.typeorm.treeTypesMod.TreeType
-  @scala.inline
-  def `nested-set`: `nested-set` = "nested-set".asInstanceOf[`nested-set`]
+  inline def `nested-set`: `nested-set` = "nested-set".asInstanceOf[`nested-set`]
   
   @js.native
   sealed trait node extends StObject
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait not
     extends StObject
        with FindOperatorType
        with typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
-  @scala.inline
-  def not: not = "not".asInstanceOf[not]
+  inline def not: not = "not".asInstanceOf[not]
   
   @js.native
   sealed trait ntext
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def ntext: ntext = "ntext".asInstanceOf[ntext]
+  inline def ntext: ntext = "ntext".asInstanceOf[ntext]
   
   @js.native
   sealed trait number
@@ -1427,8 +1239,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait numeric
@@ -1437,146 +1248,124 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait numrange
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def numrange: numrange = "numrange".asInstanceOf[numrange]
+  inline def numrange: numrange = "numrange".asInstanceOf[numrange]
   
   @js.native
   sealed trait nvarchar
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def nvarchar: nvarchar = "nvarchar".asInstanceOf[nvarchar]
+  inline def nvarchar: nvarchar = "nvarchar".asInstanceOf[nvarchar]
   
   @js.native
   sealed trait nvarchar2
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def nvarchar2: nvarchar2 = "nvarchar2".asInstanceOf[nvarchar2]
+  inline def nvarchar2: nvarchar2 = "nvarchar2".asInstanceOf[nvarchar2]
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait objectId
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def objectId: objectId = "objectId".asInstanceOf[objectId]
+  inline def objectId: objectId = "objectId".asInstanceOf[objectId]
   
   @js.native
   sealed trait `one-to-many`
     extends StObject
        with RelationType
        with typings.typeorm.relationTypesMod.RelationType
-  @scala.inline
-  def `one-to-many`: `one-to-many` = "one-to-many".asInstanceOf[`one-to-many`]
+  inline def `one-to-many`: `one-to-many` = "one-to-many".asInstanceOf[`one-to-many`]
   
   @js.native
   sealed trait `one-to-one`
     extends StObject
        with RelationType
        with typings.typeorm.relationTypesMod.RelationType
-  @scala.inline
-  def `one-to-one`: `one-to-one` = "one-to-one".asInstanceOf[`one-to-one`]
+  inline def `one-to-one`: `one-to-one` = "one-to-one".asInstanceOf[`one-to-one`]
   
   @js.native
   sealed trait optimistic extends StObject
-  @scala.inline
-  def optimistic: optimistic = "optimistic".asInstanceOf[optimistic]
+  inline def optimistic: optimistic = "optimistic".asInstanceOf[optimistic]
   
   @js.native
   sealed trait or extends StObject
-  @scala.inline
-  def or: or = "or".asInstanceOf[or]
+  inline def or: or = "or".asInstanceOf[or]
   
   @js.native
   sealed trait oracle
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def oracle: oracle = "oracle".asInstanceOf[oracle]
+  inline def oracle: oracle = "oracle".asInstanceOf[oracle]
   
   @js.native
   sealed trait other extends StObject
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait path
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
+  inline def path: path = "path".asInstanceOf[path]
   
   @js.native
   sealed trait pessimistic_partial_write extends StObject
-  @scala.inline
-  def pessimistic_partial_write: pessimistic_partial_write = "pessimistic_partial_write".asInstanceOf[pessimistic_partial_write]
+  inline def pessimistic_partial_write: pessimistic_partial_write = "pessimistic_partial_write".asInstanceOf[pessimistic_partial_write]
   
   @js.native
   sealed trait pessimistic_read extends StObject
-  @scala.inline
-  def pessimistic_read: pessimistic_read = "pessimistic_read".asInstanceOf[pessimistic_read]
+  inline def pessimistic_read: pessimistic_read = "pessimistic_read".asInstanceOf[pessimistic_read]
   
   @js.native
   sealed trait pessimistic_write extends StObject
-  @scala.inline
-  def pessimistic_write: pessimistic_write = "pessimistic_write".asInstanceOf[pessimistic_write]
+  inline def pessimistic_write: pessimistic_write = "pessimistic_write".asInstanceOf[pessimistic_write]
   
   @js.native
   sealed trait pessimistic_write_or_fail extends StObject
-  @scala.inline
-  def pessimistic_write_or_fail: pessimistic_write_or_fail = "pessimistic_write_or_fail".asInstanceOf[pessimistic_write_or_fail]
+  inline def pessimistic_write_or_fail: pessimistic_write_or_fail = "pessimistic_write_or_fail".asInstanceOf[pessimistic_write_or_fail]
   
   @js.native
   sealed trait pgcrypto extends StObject
-  @scala.inline
-  def pgcrypto: pgcrypto = "pgcrypto".asInstanceOf[pgcrypto]
+  inline def pgcrypto: pgcrypto = "pgcrypto".asInstanceOf[pgcrypto]
   
   @js.native
   sealed trait point
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
+  inline def point: point = "point".asInstanceOf[point]
   
   @js.native
   sealed trait polygon
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
+  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
   
   @js.native
   sealed trait postgres
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def postgres: postgres = "postgres".asInstanceOf[postgres]
+  inline def postgres: postgres = "postgres".asInstanceOf[postgres]
   
   @js.native
   sealed trait query extends StObject
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
   sealed trait raw
@@ -1587,34 +1376,29 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
+  inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
   sealed trait `react-native`
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def `react-native`: `react-native` = "react-native".asInstanceOf[`react-native`]
+  inline def `react-native`: `react-native` = "react-native".asInstanceOf[`react-native`]
   
   @js.native
   sealed trait real
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def real: real = "real".asInstanceOf[real]
+  inline def real: real = "real".asInstanceOf[real]
   
   @js.native
   sealed trait recover extends StObject
-  @scala.inline
-  def recover: recover = "recover".asInstanceOf[recover]
+  inline def recover: recover = "recover".asInstanceOf[recover]
   
   @js.native
   sealed trait redis extends StObject
-  @scala.inline
-  def redis: redis = "redis".asInstanceOf[redis]
+  inline def redis: redis = "redis".asInstanceOf[redis]
   
   @js.native
   sealed trait regular
@@ -1623,78 +1407,66 @@ object typeormStrings {
        with typings.typeorm.columnModeMod.ColumnMode
        with TableType
        with typings.typeorm.tableTypesMod.TableType
-  @scala.inline
-  def regular: regular = "regular".asInstanceOf[regular]
+  inline def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
   sealed trait relation extends StObject
-  @scala.inline
-  def relation: relation = "relation".asInstanceOf[relation]
+  inline def relation: relation = "relation".asInstanceOf[relation]
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait restore extends StObject
-  @scala.inline
-  def restore: restore = "restore".asInstanceOf[restore]
+  inline def restore: restore = "restore".asInstanceOf[restore]
   
   @js.native
   sealed trait rowid
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def rowid: rowid = "rowid".asInstanceOf[rowid]
+  inline def rowid: rowid = "rowid".asInstanceOf[rowid]
   
   @js.native
   sealed trait rowversion
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def rowversion: rowversion = "rowversion".asInstanceOf[rowversion]
+  inline def rowversion: rowversion = "rowversion".asInstanceOf[rowversion]
   
   @js.native
   sealed trait sap
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def sap: sap = "sap".asInstanceOf[sap]
+  inline def sap: sap = "sap".asInstanceOf[sap]
   
   @js.native
   sealed trait save extends StObject
-  @scala.inline
-  def save: save = "save".asInstanceOf[save]
+  inline def save: save = "save".asInstanceOf[save]
   
   @js.native
   sealed trait schema extends StObject
-  @scala.inline
-  def schema: schema = "schema".asInstanceOf[schema]
+  inline def schema: schema = "schema".asInstanceOf[schema]
   
   @js.native
   sealed trait seconddate
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def seconddate: seconddate = "seconddate".asInstanceOf[seconddate]
+  inline def seconddate: seconddate = "seconddate".asInstanceOf[seconddate]
   
   @js.native
   sealed trait select extends StObject
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait set
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
   sealed trait shorttext
@@ -1703,58 +1475,50 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def shorttext: shorttext = "shorttext".asInstanceOf[shorttext]
+  inline def shorttext: shorttext = "shorttext".asInstanceOf[shorttext]
   
   @js.native
   sealed trait simple extends StObject
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
+  inline def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
   sealed trait `simple-array`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `simple-array`: `simple-array` = "simple-array".asInstanceOf[`simple-array`]
+  inline def `simple-array`: `simple-array` = "simple-array".asInstanceOf[`simple-array`]
   
   @js.native
   sealed trait `simple-console` extends StObject
-  @scala.inline
-  def `simple-console`: `simple-console` = "simple-console".asInstanceOf[`simple-console`]
+  inline def `simple-console`: `simple-console` = "simple-console".asInstanceOf[`simple-console`]
   
   @js.native
   sealed trait `simple-enum`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `simple-enum`: `simple-enum` = "simple-enum".asInstanceOf[`simple-enum`]
+  inline def `simple-enum`: `simple-enum` = "simple-enum".asInstanceOf[`simple-enum`]
   
   @js.native
   sealed trait `simple-json`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `simple-json`: `simple-json` = "simple-json".asInstanceOf[`simple-json`]
+  inline def `simple-json`: `simple-json` = "simple-json".asInstanceOf[`simple-json`]
   
   @js.native
   sealed trait slave
     extends StObject
        with ReplicationMode
        with typings.typeorm.typesReplicationModeMod.ReplicationMode
-  @scala.inline
-  def slave: slave = "slave".asInstanceOf[slave]
+  inline def slave: slave = "slave".asInstanceOf[slave]
   
   @js.native
   sealed trait smalldatetime
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def smalldatetime: smalldatetime = "smalldatetime".asInstanceOf[smalldatetime]
+  inline def smalldatetime: smalldatetime = "smalldatetime".asInstanceOf[smalldatetime]
   
   @js.native
   sealed trait smalldecimal
@@ -1763,8 +1527,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def smalldecimal: smalldecimal = "smalldecimal".asInstanceOf[smalldecimal]
+  inline def smalldecimal: smalldecimal = "smalldecimal".asInstanceOf[smalldecimal]
   
   @js.native
   sealed trait smallint
@@ -1773,58 +1536,50 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithWidthColumnType
        with typings.typeorm.columnTypesMod.WithWidthColumnType
-  @scala.inline
-  def smallint: smallint = "smallint".asInstanceOf[smallint]
+  inline def smallint: smallint = "smallint".asInstanceOf[smallint]
   
   @js.native
   sealed trait smallmoney
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def smallmoney: smallmoney = "smallmoney".asInstanceOf[smallmoney]
+  inline def smallmoney: smallmoney = "smallmoney".asInstanceOf[smallmoney]
   
   @js.native
   sealed trait snapshot_
     extends StObject
        with ReadConcernLevel
        with typings.typeorm.mongodbTypingsMod.ReadConcernLevel
-  @scala.inline
-  def snapshot_ : snapshot_ = "snapshot".asInstanceOf[snapshot_]
+  inline def snapshot_ : snapshot_ = "snapshot".asInstanceOf[snapshot_]
   
   @js.native
   sealed trait `soft-delete` extends StObject
-  @scala.inline
-  def `soft-delete`: `soft-delete` = "soft-delete".asInstanceOf[`soft-delete`]
+  inline def `soft-delete`: `soft-delete` = "soft-delete".asInstanceOf[`soft-delete`]
   
   @js.native
   sealed trait `soft-remove` extends StObject
-  @scala.inline
-  def `soft-remove`: `soft-remove` = "soft-remove".asInstanceOf[`soft-remove`]
+  inline def `soft-remove`: `soft-remove` = "soft-remove".asInstanceOf[`soft-remove`]
   
   @js.native
   sealed trait sql_variant
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def sql_variant: sql_variant = "sql_variant".asInstanceOf[sql_variant]
+  inline def sql_variant: sql_variant = "sql_variant".asInstanceOf[sql_variant]
   
   @js.native
   sealed trait sqlite
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
+  inline def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
   
   @js.native
   sealed trait sqljs
     extends StObject
        with DatabaseType
        with typings.typeorm.typesDatabaseTypeMod.DatabaseType
-  @scala.inline
-  def sqljs: sqljs = "sqljs".asInstanceOf[sqljs]
+  inline def sqljs: sqljs = "sqljs".asInstanceOf[sqljs]
   
   @js.native
   sealed trait st_geometry
@@ -1833,8 +1588,7 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with SpatialColumnType
        with typings.typeorm.columnTypesMod.SpatialColumnType
-  @scala.inline
-  def st_geometry: st_geometry = "st_geometry".asInstanceOf[st_geometry]
+  inline def st_geometry: st_geometry = "st_geometry".asInstanceOf[st_geometry]
   
   @js.native
   sealed trait st_point
@@ -1843,56 +1597,49 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with SpatialColumnType
        with typings.typeorm.columnTypesMod.SpatialColumnType
-  @scala.inline
-  def st_point: st_point = "st_point".asInstanceOf[st_point]
+  inline def st_point: st_point = "st_point".asInstanceOf[st_point]
   
   @js.native
   sealed trait string
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait text
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait time
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait `time with time zone`
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def `time with time zone`: `time with time zone` = ("time with time zone").asInstanceOf[`time with time zone`]
+  inline def `time with time zone`: `time with time zone` = ("time with time zone").asInstanceOf[`time with time zone`]
   
   @js.native
   sealed trait `time without time zone`
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def `time without time zone`: `time without time zone` = ("time without time zone").asInstanceOf[`time without time zone`]
+  inline def `time without time zone`: `time without time zone` = ("time without time zone").asInstanceOf[`time without time zone`]
   
   @js.native
   sealed trait timestamp
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
   sealed trait `timestamp with local time zone`
@@ -1901,48 +1648,42 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def `timestamp with local time zone`: `timestamp with local time zone` = ("timestamp with local time zone").asInstanceOf[`timestamp with local time zone`]
+  inline def `timestamp with local time zone`: `timestamp with local time zone` = ("timestamp with local time zone").asInstanceOf[`timestamp with local time zone`]
   
   @js.native
   sealed trait `timestamp with time zone`
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def `timestamp with time zone`: `timestamp with time zone` = ("timestamp with time zone").asInstanceOf[`timestamp with time zone`]
+  inline def `timestamp with time zone`: `timestamp with time zone` = ("timestamp with time zone").asInstanceOf[`timestamp with time zone`]
   
   @js.native
   sealed trait `timestamp without time zone`
     extends StObject
        with WithPrecisionColumnType
        with typings.typeorm.columnTypesMod.WithPrecisionColumnType
-  @scala.inline
-  def `timestamp without time zone`: `timestamp without time zone` = ("timestamp without time zone").asInstanceOf[`timestamp without time zone`]
+  inline def `timestamp without time zone`: `timestamp without time zone` = ("timestamp without time zone").asInstanceOf[`timestamp without time zone`]
   
   @js.native
   sealed trait timestamptz
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def timestamptz: timestamptz = "timestamptz".asInstanceOf[timestamptz]
+  inline def timestamptz: timestamptz = "timestamptz".asInstanceOf[timestamptz]
   
   @js.native
   sealed trait timetz
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def timetz: timetz = "timetz".asInstanceOf[timetz]
+  inline def timetz: timetz = "timetz".asInstanceOf[timetz]
   
   @js.native
   sealed trait tinyblob
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def tinyblob: tinyblob = "tinyblob".asInstanceOf[tinyblob]
+  inline def tinyblob: tinyblob = "tinyblob".asInstanceOf[tinyblob]
   
   @js.native
   sealed trait tinyint
@@ -1951,106 +1692,92 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with WithWidthColumnType
        with typings.typeorm.columnTypesMod.WithWidthColumnType
-  @scala.inline
-  def tinyint: tinyint = "tinyint".asInstanceOf[tinyint]
+  inline def tinyint: tinyint = "tinyint".asInstanceOf[tinyint]
   
   @js.native
   sealed trait tinytext
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def tinytext: tinytext = "tinytext".asInstanceOf[tinytext]
+  inline def tinytext: tinytext = "tinytext".asInstanceOf[tinytext]
   
   @js.native
   sealed trait treeChildrenCount
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def treeChildrenCount: treeChildrenCount = "treeChildrenCount".asInstanceOf[treeChildrenCount]
+  inline def treeChildrenCount: treeChildrenCount = "treeChildrenCount".asInstanceOf[treeChildrenCount]
   
   @js.native
   sealed trait treeLevel
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def treeLevel: treeLevel = "treeLevel".asInstanceOf[treeLevel]
+  inline def treeLevel: treeLevel = "treeLevel".asInstanceOf[treeLevel]
   
   @js.native
   sealed trait tsquery
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def tsquery: tsquery = "tsquery".asInstanceOf[tsquery]
+  inline def tsquery: tsquery = "tsquery".asInstanceOf[tsquery]
   
   @js.native
   sealed trait tsrange
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def tsrange: tsrange = "tsrange".asInstanceOf[tsrange]
+  inline def tsrange: tsrange = "tsrange".asInstanceOf[tsrange]
   
   @js.native
   sealed trait tstzrange
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def tstzrange: tstzrange = "tstzrange".asInstanceOf[tstzrange]
+  inline def tstzrange: tstzrange = "tstzrange".asInstanceOf[tstzrange]
   
   @js.native
   sealed trait tsvector
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def tsvector: tsvector = "tsvector".asInstanceOf[tsvector]
+  inline def tsvector: tsvector = "tsvector".asInstanceOf[tsvector]
   
   @js.native
   sealed trait udt extends StObject
-  @scala.inline
-  def udt: udt = "udt".asInstanceOf[udt]
+  inline def udt: udt = "udt".asInstanceOf[udt]
   
   @js.native
   sealed trait uniqueidentifier
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def uniqueidentifier: uniqueidentifier = "uniqueidentifier".asInstanceOf[uniqueidentifier]
+  inline def uniqueidentifier: uniqueidentifier = "uniqueidentifier".asInstanceOf[uniqueidentifier]
   
   @js.native
   sealed trait `unsigned big int`
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def `unsigned big int`: `unsigned big int` = ("unsigned big int").asInstanceOf[`unsigned big int`]
+  inline def `unsigned big int`: `unsigned big int` = ("unsigned big int").asInstanceOf[`unsigned big int`]
   
   @js.native
   sealed trait update extends StObject
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait updateDate
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def updateDate: updateDate = "updateDate".asInstanceOf[updateDate]
+  inline def updateDate: updateDate = "updateDate".asInstanceOf[updateDate]
   
   @js.native
   sealed trait urowid
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def urowid: urowid = "urowid".asInstanceOf[urowid]
+  inline def urowid: urowid = "urowid".asInstanceOf[urowid]
   
   @js.native
   sealed trait uuid
@@ -2059,13 +1786,11 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.PrimaryGeneratedColumnType
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def uuid: uuid = "uuid".asInstanceOf[uuid]
+  inline def uuid: uuid = "uuid".asInstanceOf[uuid]
   
   @js.native
   sealed trait `uuid-ossp` extends StObject
-  @scala.inline
-  def `uuid-ossp`: `uuid-ossp` = "uuid-ossp".asInstanceOf[`uuid-ossp`]
+  inline def `uuid-ossp`: `uuid-ossp` = "uuid-ossp".asInstanceOf[`uuid-ossp`]
   
   @js.native
   sealed trait varbinary
@@ -2074,88 +1799,76 @@ object typeormStrings {
        with typings.typeorm.columnTypesMod.SimpleColumnType
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def varbinary: varbinary = "varbinary".asInstanceOf[varbinary]
+  inline def varbinary: varbinary = "varbinary".asInstanceOf[varbinary]
   
   @js.native
   sealed trait varbit
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def varbit: varbit = "varbit".asInstanceOf[varbit]
+  inline def varbit: varbit = "varbit".asInstanceOf[varbit]
   
   @js.native
   sealed trait varchar
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def varchar: varchar = "varchar".asInstanceOf[varchar]
+  inline def varchar: varchar = "varchar".asInstanceOf[varchar]
   
   @js.native
   sealed trait varchar2
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def varchar2: varchar2 = "varchar2".asInstanceOf[varchar2]
+  inline def varchar2: varchar2 = "varchar2".asInstanceOf[varchar2]
   
   @js.native
   sealed trait variant extends StObject
-  @scala.inline
-  def variant: variant = "variant".asInstanceOf[variant]
+  inline def variant: variant = "variant".asInstanceOf[variant]
   
   @js.native
   sealed trait `varying character`
     extends StObject
        with WithLengthColumnType
        with typings.typeorm.columnTypesMod.WithLengthColumnType
-  @scala.inline
-  def `varying character`: `varying character` = ("varying character").asInstanceOf[`varying character`]
+  inline def `varying character`: `varying character` = ("varying character").asInstanceOf[`varying character`]
   
   @js.native
   sealed trait version
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def version: version = "version".asInstanceOf[version]
+  inline def version: version = "version".asInstanceOf[version]
   
   @js.native
   sealed trait view
     extends StObject
        with TableType
        with typings.typeorm.tableTypesMod.TableType
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
+  inline def view: view = "view".asInstanceOf[view]
   
   @js.native
   sealed trait virtual_
     extends StObject
        with ColumnMode
        with typings.typeorm.columnModeMod.ColumnMode
-  @scala.inline
-  def virtual_ : virtual_ = "virtual".asInstanceOf[virtual_]
+  inline def virtual_ : virtual_ = "virtual".asInstanceOf[virtual_]
   
   @js.native
   sealed trait warn extends StObject
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait xml
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
+  inline def xml: xml = "xml".asInstanceOf[xml]
   
   @js.native
   sealed trait year
     extends StObject
        with SimpleColumnType
        with typings.typeorm.columnTypesMod.SimpleColumnType
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  inline def year: year = "year".asInstanceOf[year]
 }

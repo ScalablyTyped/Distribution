@@ -46,8 +46,7 @@ object anon {
   }
   object ArrowSize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrowSize: Requireable[InferProps[X]],
       arrowStyle: Requireable[js.Any],
       backgroundStyle: Requireable[js.Any],
@@ -66,47 +65,33 @@ object anon {
       __obj.asInstanceOf[ArrowSize]
     }
     
-    @scala.inline
-    implicit class ArrowSizeMutableBuilder[Self <: ArrowSize] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowSize](x: Self) {
       
-      @scala.inline
-      def setArrowSize(value: Requireable[InferProps[X]]): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
+      inline def setArrowSize(value: Requireable[InferProps[X]]): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowStyle(value: Requireable[js.Any]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
+      inline def setArrowStyle(value: Requireable[js.Any]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundStyle(value: Requireable[js.Any]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+      inline def setBackgroundStyle(value: Requireable[js.Any]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyle(value: Requireable[js.Any]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: Requireable[js.Any]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayArea(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "displayArea", value.asInstanceOf[js.Any])
+      inline def setDisplayArea(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "displayArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Requireable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Requireable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasing(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRect(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "fromRect", value.asInstanceOf[js.Any])
+      inline def setFromRect(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "fromRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+      inline def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDismiss(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      inline def setOnDismiss(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: Requireable[String]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Requireable[String]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverStyle(value: Requireable[js.Any]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
+      inline def setPopoverStyle(value: Requireable[js.Any]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Requireable[Boolean]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Requireable[Boolean]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,17 +101,14 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Children = {
+    inline def apply(children: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,8 +124,7 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Requireable[Double],
       width: Requireable[Double],
       x: Requireable[Double],
@@ -153,20 +134,15 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Requireable[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Requireable[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Requireable[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Requireable[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Requireable[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Requireable[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Requireable[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Requireable[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,17 +152,14 @@ object anon {
   }
   object OnPopoverDisplayed {
     
-    @scala.inline
-    def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): OnPopoverDisplayed = {
+    inline def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): OnPopoverDisplayed = {
       val __obj = js.Dynamic.literal(onPopoverDisplayed = onPopoverDisplayed.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnPopoverDisplayed]
     }
     
-    @scala.inline
-    implicit class OnPopoverDisplayedMutableBuilder[Self <: OnPopoverDisplayed] (val x: Self) extends AnyVal {
+    extension [Self <: OnPopoverDisplayed](x: Self) {
       
-      @scala.inline
-      def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
+      inline def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,119 +198,82 @@ object anon {
   }
   object PartialPopoverProps {
     
-    @scala.inline
-    def apply(): PartialPopoverProps = {
+    inline def apply(): PartialPopoverProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialPopoverProps]
     }
     
-    @scala.inline
-    implicit class PartialPopoverPropsMutableBuilder[Self <: PartialPopoverProps] (val x: Self) extends AnyVal {
+    extension [Self <: PartialPopoverProps](x: Self) {
       
-      @scala.inline
-      def setArrowSize(value: Size): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
+      inline def setArrowSize(value: Size): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
+      inline def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
       
-      @scala.inline
-      def setArrowStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
+      inline def setArrowStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowStyleNull: Self = StObject.set(x, "arrowStyle", null)
+      inline def setArrowStyleNull: Self = StObject.set(x, "arrowStyle", null)
       
-      @scala.inline
-      def setArrowStyleUndefined: Self = StObject.set(x, "arrowStyle", js.undefined)
+      inline def setArrowStyleUndefined: Self = StObject.set(x, "arrowStyle", js.undefined)
       
-      @scala.inline
-      def setBackgroundStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+      inline def setBackgroundStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundStyleNull: Self = StObject.set(x, "backgroundStyle", null)
+      inline def setBackgroundStyleNull: Self = StObject.set(x, "backgroundStyle", null)
       
-      @scala.inline
-      def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
+      inline def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
       
-      @scala.inline
-      def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
+      inline def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
       
-      @scala.inline
-      def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      @scala.inline
-      def setDisplayArea(value: Rect): Self = StObject.set(x, "displayArea", value.asInstanceOf[js.Any])
+      inline def setDisplayArea(value: Rect): Self = StObject.set(x, "displayArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayAreaUndefined: Self = StObject.set(x, "displayArea", js.undefined)
+      inline def setDisplayAreaUndefined: Self = StObject.set(x, "displayArea", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: /* show */ Boolean => js.Function1[/* value */ Double, Double]): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: /* show */ Boolean => js.Function1[/* value */ Double, Double]): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFromRect(value: Rect): Self = StObject.set(x, "fromRect", value.asInstanceOf[js.Any])
+      inline def setFromRect(value: Rect): Self = StObject.set(x, "fromRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRectUndefined: Self = StObject.set(x, "fromRect", js.undefined)
+      inline def setFromRectUndefined: Self = StObject.set(x, "fromRect", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+      inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement | auto): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement | auto): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPopoverStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
+      inline def setPopoverStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverStyleNull: Self = StObject.set(x, "popoverStyle", null)
+      inline def setPopoverStyleNull: Self = StObject.set(x, "popoverStyle", null)
       
-      @scala.inline
-      def setPopoverStyleUndefined: Self = StObject.set(x, "popoverStyle", js.undefined)
+      inline def setPopoverStyleUndefined: Self = StObject.set(x, "popoverStyle", js.undefined)
       
-      @scala.inline
-      def setSupportedOrientations(value: js.Array[Orientation]): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
+      inline def setSupportedOrientations(value: js.Array[Orientation]): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
+      inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      @scala.inline
-      def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -349,20 +285,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Requireable[Double], y: Requireable[Double]): X = {
+    inline def apply(x: Requireable[Double], y: Requireable[Double]): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Requireable[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Requireable[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Requireable[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Requireable[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

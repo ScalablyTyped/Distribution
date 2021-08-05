@@ -20,19 +20,15 @@ trait PropertyCommandArgument extends StObject {
 }
 object PropertyCommandArgument {
   
-  @scala.inline
-  def apply(DefaultValue: js.Any, Property: Property): PropertyCommandArgument = {
+  inline def apply(DefaultValue: js.Any, Property: Property): PropertyCommandArgument = {
     val __obj = js.Dynamic.literal(DefaultValue = DefaultValue.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyCommandArgument]
   }
   
-  @scala.inline
-  implicit class PropertyCommandArgumentMutableBuilder[Self <: PropertyCommandArgument] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyCommandArgument](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Property): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Property): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
   }
 }

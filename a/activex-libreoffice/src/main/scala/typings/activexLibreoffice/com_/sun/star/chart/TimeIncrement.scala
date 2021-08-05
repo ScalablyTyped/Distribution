@@ -30,22 +30,17 @@ trait TimeIncrement extends StObject {
 }
 object TimeIncrement {
   
-  @scala.inline
-  def apply(MajorTimeInterval: js.Any, MinorTimeInterval: js.Any, TimeResolution: js.Any): TimeIncrement = {
+  inline def apply(MajorTimeInterval: js.Any, MinorTimeInterval: js.Any, TimeResolution: js.Any): TimeIncrement = {
     val __obj = js.Dynamic.literal(MajorTimeInterval = MajorTimeInterval.asInstanceOf[js.Any], MinorTimeInterval = MinorTimeInterval.asInstanceOf[js.Any], TimeResolution = TimeResolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeIncrement]
   }
   
-  @scala.inline
-  implicit class TimeIncrementMutableBuilder[Self <: TimeIncrement] (val x: Self) extends AnyVal {
+  extension [Self <: TimeIncrement](x: Self) {
     
-    @scala.inline
-    def setMajorTimeInterval(value: js.Any): Self = StObject.set(x, "MajorTimeInterval", value.asInstanceOf[js.Any])
+    inline def setMajorTimeInterval(value: js.Any): Self = StObject.set(x, "MajorTimeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorTimeInterval(value: js.Any): Self = StObject.set(x, "MinorTimeInterval", value.asInstanceOf[js.Any])
+    inline def setMinorTimeInterval(value: js.Any): Self = StObject.set(x, "MinorTimeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeResolution(value: js.Any): Self = StObject.set(x, "TimeResolution", value.asInstanceOf[js.Any])
+    inline def setTimeResolution(value: js.Any): Self = StObject.set(x, "TimeResolution", value.asInstanceOf[js.Any])
   }
 }

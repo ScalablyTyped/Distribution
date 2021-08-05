@@ -12,7 +12,7 @@ trait SoundNote extends StObject {
   
   def Delete(): js.Any
   
-  @JSName("Excel.SoundNote_typekey")
+  /* private */ @JSName("Excel.SoundNote_typekey")
   var ExcelDotSoundNote_typekey: SoundNote
   
   def Import(Filename: String): js.Any
@@ -25,8 +25,7 @@ trait SoundNote extends StObject {
 }
 object SoundNote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => js.Any,
@@ -41,31 +40,22 @@ object SoundNote {
     __obj.asInstanceOf[SoundNote]
   }
   
-  @scala.inline
-  implicit class SoundNoteMutableBuilder[Self <: SoundNote] (val x: Self) extends AnyVal {
+  extension [Self <: SoundNote](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotSoundNote_typekey(value: SoundNote): Self = StObject.set(x, "Excel.SoundNote_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSoundNote_typekey(value: SoundNote): Self = StObject.set(x, "Excel.SoundNote_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImport(value: String => js.Any): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
+    inline def setImport(value: String => js.Any): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay(value: () => js.Any): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => js.Any): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecord(value: () => js.Any): Self = StObject.set(x, "Record", js.Any.fromFunction0(value))
+    inline def setRecord(value: () => js.Any): Self = StObject.set(x, "Record", js.Any.fromFunction0(value))
   }
 }

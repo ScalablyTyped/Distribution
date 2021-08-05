@@ -61,43 +61,31 @@ trait ParamsResourceProjectsLocationsTransferconfigsCreate
 }
 object ParamsResourceProjectsLocationsTransferconfigsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsTransferconfigsCreate = {
+  inline def apply(): ParamsResourceProjectsLocationsTransferconfigsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsTransferconfigsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsTransferconfigsCreateMutableBuilder[Self <: ParamsResourceProjectsLocationsTransferconfigsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsTransferconfigsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
+    inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
+    inline def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaTransferConfig): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaTransferConfig): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

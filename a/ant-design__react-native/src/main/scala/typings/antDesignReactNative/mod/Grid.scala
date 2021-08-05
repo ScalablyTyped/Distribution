@@ -19,6 +19,5 @@ object Grid {
   @JSImport("@ant-design/react-native", "Grid.defaultProps")
   @js.native
   def defaultProps: GridProps = js.native
-  @scala.inline
-  def defaultProps_=(x: GridProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: GridProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

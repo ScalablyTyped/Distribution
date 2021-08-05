@@ -14,10 +14,8 @@ object KeysNavigation {
   @js.native
   val ^ : KeysNavigation = js.native
   
-  @scala.inline
-  implicit class KeysNavigationMutableBuilder[Self <: KeysNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: KeysNavigation](x: Self) {
     
-    @scala.inline
-    def setMoveSelection(value: String => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction1(value))
+    inline def setMoveSelection(value: String => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction1(value))
   }
 }

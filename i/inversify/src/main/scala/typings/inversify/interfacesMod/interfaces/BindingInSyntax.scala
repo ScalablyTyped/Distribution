@@ -14,8 +14,7 @@ trait BindingInSyntax[T] extends StObject {
 }
 object BindingInSyntax {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     inRequestScope: () => BindingWhenOnSyntax[T],
     inSingletonScope: () => BindingWhenOnSyntax[T],
     inTransientScope: () => BindingWhenOnSyntax[T]
@@ -24,16 +23,12 @@ object BindingInSyntax {
     __obj.asInstanceOf[BindingInSyntax[T]]
   }
   
-  @scala.inline
-  implicit class BindingInSyntaxMutableBuilder[Self <: BindingInSyntax[?], T] (val x: Self & BindingInSyntax[T]) extends AnyVal {
+  extension [Self <: BindingInSyntax[?], T](x: Self & BindingInSyntax[T]) {
     
-    @scala.inline
-    def setInRequestScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inRequestScope", js.Any.fromFunction0(value))
+    inline def setInRequestScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inRequestScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInSingletonScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inSingletonScope", js.Any.fromFunction0(value))
+    inline def setInSingletonScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inSingletonScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInTransientScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inTransientScope", js.Any.fromFunction0(value))
+    inline def setInTransientScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inTransientScope", js.Any.fromFunction0(value))
   }
 }

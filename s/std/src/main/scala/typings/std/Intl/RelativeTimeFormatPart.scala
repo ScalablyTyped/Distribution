@@ -22,26 +22,20 @@ trait RelativeTimeFormatPart extends StObject {
 }
 object RelativeTimeFormatPart {
   
-  @scala.inline
-  def apply(`type`: String, value: String): RelativeTimeFormatPart = {
+  inline def apply(`type`: String, value: String): RelativeTimeFormatPart = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeTimeFormatPart]
   }
   
-  @scala.inline
-  implicit class RelativeTimeFormatPartMutableBuilder[Self <: RelativeTimeFormatPart] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeTimeFormatPart](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: RelativeTimeFormatUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: RelativeTimeFormatUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

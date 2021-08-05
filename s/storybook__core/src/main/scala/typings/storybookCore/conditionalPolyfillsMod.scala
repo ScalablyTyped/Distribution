@@ -10,6 +10,5 @@ object conditionalPolyfillsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def importPolyfills(): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importPolyfills")().asInstanceOf[js.Promise[js.Array[Unit]]]
+  inline def importPolyfills(): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importPolyfills")().asInstanceOf[js.Promise[js.Array[Unit]]]
 }

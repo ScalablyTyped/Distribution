@@ -18,22 +18,17 @@ trait CreateParticipantConnectionRequest extends StObject {
 }
 object CreateParticipantConnectionRequest {
   
-  @scala.inline
-  def apply(ParticipantToken: ParticipantToken, Type: ConnectionTypeList): CreateParticipantConnectionRequest = {
+  inline def apply(ParticipantToken: ParticipantToken, Type: ConnectionTypeList): CreateParticipantConnectionRequest = {
     val __obj = js.Dynamic.literal(ParticipantToken = ParticipantToken.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParticipantConnectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateParticipantConnectionRequestMutableBuilder[Self <: CreateParticipantConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateParticipantConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setParticipantToken(value: ParticipantToken): Self = StObject.set(x, "ParticipantToken", value.asInstanceOf[js.Any])
+    inline def setParticipantToken(value: ParticipantToken): Self = StObject.set(x, "ParticipantToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ConnectionTypeList): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConnectionTypeList): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: ConnectionType*): Self = StObject.set(x, "Type", js.Array(value :_*))
+    inline def setTypeVarargs(value: ConnectionType*): Self = StObject.set(x, "Type", js.Array(value :_*))
   }
 }

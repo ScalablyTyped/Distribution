@@ -24,28 +24,21 @@ trait SchemaGetHistogramResponse extends StObject {
 }
 object SchemaGetHistogramResponse {
   
-  @scala.inline
-  def apply(): SchemaGetHistogramResponse = {
+  inline def apply(): SchemaGetHistogramResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetHistogramResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetHistogramResponseMutableBuilder[Self <: SchemaGetHistogramResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetHistogramResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaHistogramResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaHistogramResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaHistogramResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaHistogramResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

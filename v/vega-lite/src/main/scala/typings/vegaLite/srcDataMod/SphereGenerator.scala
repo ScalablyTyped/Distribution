@@ -17,16 +17,13 @@ trait SphereGenerator
 }
 object SphereGenerator {
   
-  @scala.inline
-  def apply(sphere: `true` | js.Object): SphereGenerator = {
+  inline def apply(sphere: `true` | js.Object): SphereGenerator = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[SphereGenerator]
   }
   
-  @scala.inline
-  implicit class SphereGeneratorMutableBuilder[Self <: SphereGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: SphereGenerator](x: Self) {
     
-    @scala.inline
-    def setSphere(value: `true` | js.Object): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+    inline def setSphere(value: `true` | js.Object): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }
 }

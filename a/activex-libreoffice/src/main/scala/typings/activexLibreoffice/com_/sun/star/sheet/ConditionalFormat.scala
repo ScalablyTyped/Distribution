@@ -22,8 +22,7 @@ trait ConditionalFormat
 }
 object ConditionalFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     ID: Double,
@@ -50,13 +49,10 @@ object ConditionalFormat {
     __obj.asInstanceOf[ConditionalFormat]
   }
   
-  @scala.inline
-  implicit class ConditionalFormatMutableBuilder[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormat](x: Self) {
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: XSheetCellRanges): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: XSheetCellRanges): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
   }
 }

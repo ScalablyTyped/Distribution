@@ -22,25 +22,19 @@ trait GitCreateRefEndpoint extends StObject {
 }
 object GitCreateRefEndpoint {
   
-  @scala.inline
-  def apply(owner: String, ref: String, repo: String, sha: String): GitCreateRefEndpoint = {
+  inline def apply(owner: String, ref: String, repo: String, sha: String): GitCreateRefEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateRefEndpoint]
   }
   
-  @scala.inline
-  implicit class GitCreateRefEndpointMutableBuilder[Self <: GitCreateRefEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateRefEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
   }
 }

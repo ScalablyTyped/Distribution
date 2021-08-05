@@ -30,8 +30,7 @@ object path {
     * @param pathname - The full path to process.
     * @returns The path without a last element from list split by slash.
     */
-  @scala.inline
-  def extractPath(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPath")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extractPath(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPath")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Return the basename of the path. That is the second element of the pair returned by
@@ -42,16 +41,14 @@ object path {
     * @param pathname - The path to process.
     * @returns The basename.
     */
-  @scala.inline
-  def getBasename(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasename")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getBasename(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasename")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Get the directory name from the path. This is everything up to the final instance of pc.path.delimiter.
     * @param pathname - The path to get the directory from.
     * @returns The directory part of the path.
     */
-  @scala.inline
-  def getDirectory(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDirectory(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Return the extension of the path. Pop the last value of a list after path is split by question mark and comma.
@@ -62,8 +59,7 @@ object path {
     * @param pathname - The path to process.
     * @returns The extension.
     */
-  @scala.inline
-  def getExtension(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getExtension(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Check if a string s is relative path.
@@ -77,8 +73,7 @@ object path {
     * @param pathname - The path to process.
     * @returns True if s doesn't start with slash and doesn't include colon and double slash.
     */
-  @scala.inline
-  def isRelativePath(pathname: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativePath")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRelativePath(pathname: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativePath")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Join two or more sections of file path together, inserting a
@@ -93,16 +88,14 @@ object path {
     * provided as parameters.
     * @returns The joined file path.
     */
-  @scala.inline
-  def join(section: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(section.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def join(section: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(section.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Normalize the path by removing '.' and '..' instances.
     * @param pathname - The path to normalize.
     * @returns The normalized path.
     */
-  @scala.inline
-  def normalize(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Split the pathname path into a pair [head, tail] where tail is the final part of the path
@@ -110,6 +103,5 @@ object path {
     * @param pathname - The path to split.
     * @returns The split path which is an array of two strings, the path and the filename.
     */
-  @scala.inline
-  def split(pathname: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def split(pathname: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

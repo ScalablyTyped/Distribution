@@ -163,7 +163,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   
   /* protected */ def isObject(value: js.Any): Boolean = js.native
   
-  var isRowChanging: Boolean = js.native
+  /* protected */ var isRowChanging: Boolean = js.native
   
   val isRowsDynamic: Boolean = js.native
   
@@ -246,12 +246,10 @@ object QuestionMatrixDropdownModelBase {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addDefaultColumns(matrix: QuestionMatrixDropdownModelBase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDefaultColumns")(matrix.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addDefaultColumns(matrix: QuestionMatrixDropdownModelBase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDefaultColumns")(matrix.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase.defaultCellType")
   @js.native
   def defaultCellType: String = js.native
-  @scala.inline
-  def defaultCellType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCellType")(x.asInstanceOf[js.Any])
+  inline def defaultCellType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCellType")(x.asInstanceOf[js.Any])
 }

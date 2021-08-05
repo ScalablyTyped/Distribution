@@ -41,8 +41,7 @@ object mod {
     var validations: StringDictionary[js.Array[Messages]] = js.native
   }
   
-  @scala.inline
-  def addSchemaProperties(
+  inline def addSchemaProperties(
     newProperties: StringDictionary[
       js.Function4[
         /* instance */ js.Any, 
@@ -54,8 +53,7 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSchemaProperties")(newProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[
+  inline def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -66,8 +64,7 @@ object mod {
     /* next */ NextFunction, 
     Unit
   ]]
-  @scala.inline
-  def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[
+  inline def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 

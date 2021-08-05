@@ -23,31 +23,23 @@ trait ListItemsRequest extends StObject {
 }
 object ListItemsRequest {
   
-  @scala.inline
-  def apply(): ListItemsRequest = {
+  inline def apply(): ListItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemsRequest]
   }
   
-  @scala.inline
-  implicit class ListItemsRequestMutableBuilder[Self <: ListItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPath(value: ListPathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: ListPathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

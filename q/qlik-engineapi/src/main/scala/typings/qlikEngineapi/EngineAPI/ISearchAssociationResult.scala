@@ -38,8 +38,7 @@ trait ISearchAssociationResult extends StObject {
 }
 object ISearchAssociationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qFieldDictionaries: js.Array[ISearchFieldDictionary],
     qFieldNames: js.Array[String],
     qSearchTerms: js.Array[String],
@@ -50,34 +49,24 @@ object ISearchAssociationResult {
     __obj.asInstanceOf[ISearchAssociationResult]
   }
   
-  @scala.inline
-  implicit class ISearchAssociationResultMutableBuilder[Self <: ISearchAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchAssociationResult](x: Self) {
     
-    @scala.inline
-    def setQFieldDictionaries(value: js.Array[ISearchFieldDictionary]): Self = StObject.set(x, "qFieldDictionaries", value.asInstanceOf[js.Any])
+    inline def setQFieldDictionaries(value: js.Array[ISearchFieldDictionary]): Self = StObject.set(x, "qFieldDictionaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldDictionariesVarargs(value: ISearchFieldDictionary*): Self = StObject.set(x, "qFieldDictionaries", js.Array(value :_*))
+    inline def setQFieldDictionariesVarargs(value: ISearchFieldDictionary*): Self = StObject.set(x, "qFieldDictionaries", js.Array(value :_*))
     
-    @scala.inline
-    def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
+    inline def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value :_*))
+    inline def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQSearchTerms(value: js.Array[String]): Self = StObject.set(x, "qSearchTerms", value.asInstanceOf[js.Any])
+    inline def setQSearchTerms(value: js.Array[String]): Self = StObject.set(x, "qSearchTerms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSearchTermsMatched(value: js.Array[ISearchMatchCombinations]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
+    inline def setQSearchTermsMatched(value: js.Array[ISearchMatchCombinations]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSearchTermsMatchedVarargs(value: ISearchMatchCombinations*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
+    inline def setQSearchTermsMatchedVarargs(value: ISearchMatchCombinations*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
     
-    @scala.inline
-    def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value :_*))
+    inline def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value :_*))
     
-    @scala.inline
-    def setQTotalSearchResults(value: Double): Self = StObject.set(x, "qTotalSearchResults", value.asInstanceOf[js.Any])
+    inline def setQTotalSearchResults(value: Double): Self = StObject.set(x, "qTotalSearchResults", value.asInstanceOf[js.Any])
   }
 }

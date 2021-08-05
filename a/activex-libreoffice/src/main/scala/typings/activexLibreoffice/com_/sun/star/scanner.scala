@@ -31,28 +31,22 @@ object scanner {
   object ScanError {
     
     /** InvalidContext: a device was requested that does not exist */
-    @scala.inline
-    def InvalidContext: `5` = 5.asInstanceOf[`5`]
+    inline def InvalidContext: `5` = 5.asInstanceOf[`5`]
     
     /** ScanCanceled: the scan was canceled by the user */
-    @scala.inline
-    def ScanCanceled: `4` = 4.asInstanceOf[`4`]
+    inline def ScanCanceled: `4` = 4.asInstanceOf[`4`]
     
     /** ScanErrorNone: no error occurred */
-    @scala.inline
-    def ScanErrorNone: `0` = 0.asInstanceOf[`0`]
+    inline def ScanErrorNone: `0` = 0.asInstanceOf[`0`]
     
     /** ScanFailed: an error occurred during scanning */
-    @scala.inline
-    def ScanFailed: `2` = 2.asInstanceOf[`2`]
+    inline def ScanFailed: `2` = 2.asInstanceOf[`2`]
     
     /** ScanInProgress: a scan is already in progress on this device that has to end before a new one can be started */
-    @scala.inline
-    def ScanInProgress: `3` = 3.asInstanceOf[`3`]
+    inline def ScanInProgress: `3` = 3.asInstanceOf[`3`]
     
     /** ScannerNotAvailable: the requested device could not be opened */
-    @scala.inline
-    def ScannerNotAvailable: `1` = 1.asInstanceOf[`1`]
+    inline def ScannerNotAvailable: `1` = 1.asInstanceOf[`1`]
   }
   
   /** a scanner context is an identifier for a specific scanner device */
@@ -66,20 +60,16 @@ object scanner {
   }
   object ScannerContext {
     
-    @scala.inline
-    def apply(InternalData: Double, ScannerName: String): ScannerContext = {
+    inline def apply(InternalData: Double, ScannerName: String): ScannerContext = {
       val __obj = js.Dynamic.literal(InternalData = InternalData.asInstanceOf[js.Any], ScannerName = ScannerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScannerContext]
     }
     
-    @scala.inline
-    implicit class ScannerContextMutableBuilder[Self <: ScannerContext] (val x: Self) extends AnyVal {
+    extension [Self <: ScannerContext](x: Self) {
       
-      @scala.inline
-      def setInternalData(value: Double): Self = StObject.set(x, "InternalData", value.asInstanceOf[js.Any])
+      inline def setInternalData(value: Double): Self = StObject.set(x, "InternalData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannerName(value: String): Self = StObject.set(x, "ScannerName", value.asInstanceOf[js.Any])
+      inline def setScannerName(value: String): Self = StObject.set(x, "ScannerName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,17 +83,14 @@ object scanner {
   }
   object ScannerException {
     
-    @scala.inline
-    def apply(Context: XInterface, Error: ScanError, Message: String): ScannerException = {
+    inline def apply(Context: XInterface, Error: ScanError, Message: String): ScannerException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Error = Error.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScannerException]
     }
     
-    @scala.inline
-    implicit class ScannerExceptionMutableBuilder[Self <: ScannerException] (val x: Self) extends AnyVal {
+    extension [Self <: ScannerException](x: Self) {
       
-      @scala.inline
-      def setError(value: ScanError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+      inline def setError(value: ScanError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,8 +124,7 @@ object scanner {
   }
   object XScannerManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvailableScanners: SafeArray[ScannerContext],
       acquire: () => Unit,
       configureScanner: js.Array[ScannerContext] => Boolean,
@@ -153,26 +139,19 @@ object scanner {
       __obj.asInstanceOf[XScannerManager]
     }
     
-    @scala.inline
-    implicit class XScannerManagerMutableBuilder[Self <: XScannerManager] (val x: Self) extends AnyVal {
+    extension [Self <: XScannerManager](x: Self) {
       
-      @scala.inline
-      def setAvailableScanners(value: SafeArray[ScannerContext]): Self = StObject.set(x, "AvailableScanners", value.asInstanceOf[js.Any])
+      inline def setAvailableScanners(value: SafeArray[ScannerContext]): Self = StObject.set(x, "AvailableScanners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigureScanner(value: js.Array[ScannerContext] => Boolean): Self = StObject.set(x, "configureScanner", js.Any.fromFunction1(value))
+      inline def setConfigureScanner(value: js.Array[ScannerContext] => Boolean): Self = StObject.set(x, "configureScanner", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAvailableScanners(value: () => SafeArray[ScannerContext]): Self = StObject.set(x, "getAvailableScanners", js.Any.fromFunction0(value))
+      inline def setGetAvailableScanners(value: () => SafeArray[ScannerContext]): Self = StObject.set(x, "getAvailableScanners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBitmap(value: ScannerContext => XBitmap): Self = StObject.set(x, "getBitmap", js.Any.fromFunction1(value))
+      inline def setGetBitmap(value: ScannerContext => XBitmap): Self = StObject.set(x, "getBitmap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetError(value: ScannerContext => ScanError): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
+      inline def setGetError(value: ScannerContext => ScanError): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartScan(value: (ScannerContext, XEventListener) => Unit): Self = StObject.set(x, "startScan", js.Any.fromFunction2(value))
+      inline def setStartScan(value: (ScannerContext, XEventListener) => Unit): Self = StObject.set(x, "startScan", js.Any.fromFunction2(value))
     }
   }
   
@@ -192,8 +171,7 @@ object scanner {
   }
   object XScannerManager2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvailableScanners: SafeArray[ScannerContext],
       acquire: () => Unit,
       configureScanner: js.Array[ScannerContext] => Boolean,
@@ -209,11 +187,9 @@ object scanner {
       __obj.asInstanceOf[XScannerManager2]
     }
     
-    @scala.inline
-    implicit class XScannerManager2MutableBuilder[Self <: XScannerManager2] (val x: Self) extends AnyVal {
+    extension [Self <: XScannerManager2](x: Self) {
       
-      @scala.inline
-      def setConfigureScannerAndScan(value: (js.Array[ScannerContext], XEventListener) => Boolean): Self = StObject.set(x, "configureScannerAndScan", js.Any.fromFunction2(value))
+      inline def setConfigureScannerAndScan(value: (js.Array[ScannerContext], XEventListener) => Boolean): Self = StObject.set(x, "configureScannerAndScan", js.Any.fromFunction2(value))
     }
   }
 }

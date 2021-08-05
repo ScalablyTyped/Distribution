@@ -30,44 +30,32 @@ object actionButtonMod extends Shortcut {
   }
   object ActionButtonProps {
     
-    @scala.inline
-    def apply(closeModal: js.Function, prefixCls: String): ActionButtonProps = {
+    inline def apply(closeModal: js.Function, prefixCls: String): ActionButtonProps = {
       val __obj = js.Dynamic.literal(closeModal = closeModal.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionButtonProps]
     }
     
-    @scala.inline
-    implicit class ActionButtonPropsMutableBuilder[Self <: ActionButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActionButtonProps](x: Self) {
       
-      @scala.inline
-      def setActionFn(value: /* repeated */ js.Any => js.Any | js.Thenable[js.Any]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
+      inline def setActionFn(value: /* repeated */ js.Any => js.Any | js.Thenable[js.Any]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionFnUndefined: Self = StObject.set(x, "actionFn", js.undefined)
+      inline def setActionFnUndefined: Self = StObject.set(x, "actionFn", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setButtonProps(value: ButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: ButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
+      inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
-      @scala.inline
-      def setCloseModal(value: js.Function): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
+      inline def setCloseModal(value: js.Function): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: LegacyButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: LegacyButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

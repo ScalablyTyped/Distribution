@@ -22,22 +22,17 @@ trait DataFlavor extends StObject {
 }
 object DataFlavor {
   
-  @scala.inline
-  def apply(DataType: `type`, HumanPresentableName: String, MimeType: String): DataFlavor = {
+  inline def apply(DataType: `type`, HumanPresentableName: String, MimeType: String): DataFlavor = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], HumanPresentableName = HumanPresentableName.asInstanceOf[js.Any], MimeType = MimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataFlavor]
   }
   
-  @scala.inline
-  implicit class DataFlavorMutableBuilder[Self <: DataFlavor] (val x: Self) extends AnyVal {
+  extension [Self <: DataFlavor](x: Self) {
     
-    @scala.inline
-    def setDataType(value: `type`): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: `type`): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanPresentableName(value: String): Self = StObject.set(x, "HumanPresentableName", value.asInstanceOf[js.Any])
+    inline def setHumanPresentableName(value: String): Self = StObject.set(x, "HumanPresentableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
   }
 }

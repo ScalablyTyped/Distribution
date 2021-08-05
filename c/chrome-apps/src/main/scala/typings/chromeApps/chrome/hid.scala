@@ -36,26 +36,20 @@ object hid {
   }
   object Collection {
     
-    @scala.inline
-    def apply(reportIds: js.Array[integer], usage: integer, usagePage: integer): Collection = {
+    inline def apply(reportIds: js.Array[integer], usage: integer, usagePage: integer): Collection = {
       val __obj = js.Dynamic.literal(reportIds = reportIds.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], usagePage = usagePage.asInstanceOf[js.Any])
       __obj.asInstanceOf[Collection]
     }
     
-    @scala.inline
-    implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
+    extension [Self <: Collection](x: Self) {
       
-      @scala.inline
-      def setReportIds(value: js.Array[integer]): Self = StObject.set(x, "reportIds", value.asInstanceOf[js.Any])
+      inline def setReportIds(value: js.Array[integer]): Self = StObject.set(x, "reportIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportIdsVarargs(value: integer*): Self = StObject.set(x, "reportIds", js.Array(value :_*))
+      inline def setReportIdsVarargs(value: integer*): Self = StObject.set(x, "reportIds", js.Array(value :_*))
       
-      @scala.inline
-      def setUsage(value: integer): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: integer): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePage(value: integer): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+      inline def setUsagePage(value: integer): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,38 +70,28 @@ object hid {
   }
   object DeviceFilter {
     
-    @scala.inline
-    def apply(): DeviceFilter = {
+    inline def apply(): DeviceFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeviceFilter]
     }
     
-    @scala.inline
-    implicit class DeviceFilterMutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceFilter](x: Self) {
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setUsage(value: integer): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: integer): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePage(value: integer): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+      inline def setUsagePage(value: integer): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePageUndefined: Self = StObject.set(x, "usagePage", js.undefined)
+      inline def setUsagePageUndefined: Self = StObject.set(x, "usagePage", js.undefined)
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
+      inline def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
     }
   }
   
@@ -134,35 +118,26 @@ object hid {
   }
   object DeviceOptions {
     
-    @scala.inline
-    def apply(): DeviceOptions = {
+    inline def apply(): DeviceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeviceOptions]
     }
     
-    @scala.inline
-    implicit class DeviceOptionsMutableBuilder[Self <: DeviceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceOptions](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setProductId(value: deprecated): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: deprecated): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: deprecated): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: deprecated): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
+      inline def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
     }
   }
   
@@ -211,8 +186,7 @@ object hid {
   }
   object HidDeviceInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collections: js.Array[Collection],
       deviceId: integer,
       maxFeatureReportSize: integer,
@@ -228,41 +202,29 @@ object hid {
       __obj.asInstanceOf[HidDeviceInfo]
     }
     
-    @scala.inline
-    implicit class HidDeviceInfoMutableBuilder[Self <: HidDeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: HidDeviceInfo](x: Self) {
       
-      @scala.inline
-      def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+      inline def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionsVarargs(value: Collection*): Self = StObject.set(x, "collections", js.Array(value :_*))
+      inline def setCollectionsVarargs(value: Collection*): Self = StObject.set(x, "collections", js.Array(value :_*))
       
-      @scala.inline
-      def setDeviceId(value: integer): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: integer): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFeatureReportSize(value: integer): Self = StObject.set(x, "maxFeatureReportSize", value.asInstanceOf[js.Any])
+      inline def setMaxFeatureReportSize(value: integer): Self = StObject.set(x, "maxFeatureReportSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInputReportSize(value: integer): Self = StObject.set(x, "maxInputReportSize", value.asInstanceOf[js.Any])
+      inline def setMaxInputReportSize(value: integer): Self = StObject.set(x, "maxInputReportSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOutputReportSize(value: integer): Self = StObject.set(x, "maxOutputReportSize", value.asInstanceOf[js.Any])
+      inline def setMaxOutputReportSize(value: integer): Self = StObject.set(x, "maxOutputReportSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+      inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportDescriptor(value: ArrayBuffer): Self = StObject.set(x, "reportDescriptor", value.asInstanceOf[js.Any])
+      inline def setReportDescriptor(value: ArrayBuffer): Self = StObject.set(x, "reportDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,29 +243,22 @@ object hid {
   }
   object UserSelectedDevicePickerOptions {
     
-    @scala.inline
-    def apply(): UserSelectedDevicePickerOptions = {
+    inline def apply(): UserSelectedDevicePickerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserSelectedDevicePickerOptions]
     }
     
-    @scala.inline
-    implicit class UserSelectedDevicePickerOptionsMutableBuilder[Self <: UserSelectedDevicePickerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserSelectedDevicePickerOptions](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait fragLoadingData extends StObject {
 }
 object fragLoadingData {
   
-  @scala.inline
-  def apply(frag: Fragment): fragLoadingData = {
+  inline def apply(frag: Fragment): fragLoadingData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragLoadingData]
   }
   
-  @scala.inline
-  implicit class fragLoadingDataMutableBuilder[Self <: fragLoadingData] (val x: Self) extends AnyVal {
+  extension [Self <: fragLoadingData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
   }
 }

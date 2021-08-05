@@ -18,19 +18,15 @@ trait CommitTransactionRequest extends StObject {
 }
 object CommitTransactionRequest {
   
-  @scala.inline
-  def apply(CommitDigest: CommitDigest, TransactionId: TransactionId): CommitTransactionRequest = {
+  inline def apply(CommitDigest: CommitDigest, TransactionId: TransactionId): CommitTransactionRequest = {
     val __obj = js.Dynamic.literal(CommitDigest = CommitDigest.asInstanceOf[js.Any], TransactionId = TransactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitTransactionRequest]
   }
   
-  @scala.inline
-  implicit class CommitTransactionRequestMutableBuilder[Self <: CommitTransactionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommitTransactionRequest](x: Self) {
     
-    @scala.inline
-    def setCommitDigest(value: CommitDigest): Self = StObject.set(x, "CommitDigest", value.asInstanceOf[js.Any])
+    inline def setCommitDigest(value: CommitDigest): Self = StObject.set(x, "CommitDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
   }
 }

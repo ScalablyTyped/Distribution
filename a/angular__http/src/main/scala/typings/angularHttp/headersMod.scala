@@ -58,7 +58,7 @@ object headersMod {
       */
     def keys(): js.Array[String] = js.native
     
-    var mayBeSetNormalizedName: js.Any = js.native
+    /* private */ var mayBeSetNormalizedName: js.Any = js.native
     
     /**
       * Sets or overrides header value for given name.
@@ -86,7 +86,6 @@ object headersMod {
     /**
       * Returns a new Headers instance from the given DOMString of Response Headers
       */
-    @scala.inline
-    def fromResponseHeaderString(headersString: String): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[Headers]
+    inline def fromResponseHeaderString(headersString: String): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[Headers]
   }
 }

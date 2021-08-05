@@ -39,74 +39,52 @@ trait FileAppender
 }
 object FileAppender {
   
-  @scala.inline
-  def apply(filename: String): FileAppender = {
+  inline def apply(filename: String): FileAppender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("file")
     __obj.asInstanceOf[FileAppender]
   }
   
-  @scala.inline
-  implicit class FileAppenderMutableBuilder[Self <: FileAppender] (val x: Self) extends AnyVal {
+  extension [Self <: FileAppender](x: Self) {
     
-    @scala.inline
-    def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
+    inline def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
+    inline def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
     
-    @scala.inline
-    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setKeepFileExt(value: Boolean): Self = StObject.set(x, "keepFileExt", value.asInstanceOf[js.Any])
+    inline def setKeepFileExt(value: Boolean): Self = StObject.set(x, "keepFileExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepFileExtUndefined: Self = StObject.set(x, "keepFileExt", js.undefined)
+    inline def setKeepFileExtUndefined: Self = StObject.set(x, "keepFileExt", js.undefined)
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setMaxLogSize(value: Double | String): Self = StObject.set(x, "maxLogSize", value.asInstanceOf[js.Any])
+    inline def setMaxLogSize(value: Double | String): Self = StObject.set(x, "maxLogSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLogSizeUndefined: Self = StObject.set(x, "maxLogSize", js.undefined)
+    inline def setMaxLogSizeUndefined: Self = StObject.set(x, "maxLogSize", js.undefined)
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setNumBackups(value: Double): Self = StObject.set(x, "numBackups", value.asInstanceOf[js.Any])
+    inline def setNumBackups(value: Double): Self = StObject.set(x, "numBackups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumBackupsUndefined: Self = StObject.set(x, "numBackups", js.undefined)
+    inline def setNumBackupsUndefined: Self = StObject.set(x, "numBackups", js.undefined)
     
-    @scala.inline
-    def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

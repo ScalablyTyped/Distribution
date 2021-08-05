@@ -13,19 +13,15 @@ trait BillingPeriodEndDate extends StObject {
 }
 object BillingPeriodEndDate {
   
-  @scala.inline
-  def apply(billingPeriodEndDate: Date, billingPeriodStartDate: Date): BillingPeriodEndDate = {
+  inline def apply(billingPeriodEndDate: Date, billingPeriodStartDate: Date): BillingPeriodEndDate = {
     val __obj = js.Dynamic.literal(billingPeriodEndDate = billingPeriodEndDate.asInstanceOf[js.Any], billingPeriodStartDate = billingPeriodStartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingPeriodEndDate]
   }
   
-  @scala.inline
-  implicit class BillingPeriodEndDateMutableBuilder[Self <: BillingPeriodEndDate] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPeriodEndDate](x: Self) {
     
-    @scala.inline
-    def setBillingPeriodEndDate(value: Date): Self = StObject.set(x, "billingPeriodEndDate", value.asInstanceOf[js.Any])
+    inline def setBillingPeriodEndDate(value: Date): Self = StObject.set(x, "billingPeriodEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingPeriodStartDate(value: Date): Self = StObject.set(x, "billingPeriodStartDate", value.asInstanceOf[js.Any])
+    inline def setBillingPeriodStartDate(value: Date): Self = StObject.set(x, "billingPeriodStartDate", value.asInstanceOf[js.Any])
   }
 }

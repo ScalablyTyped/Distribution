@@ -44,43 +44,31 @@ trait SyncOptions extends StObject {
 }
 object SyncOptions {
   
-  @scala.inline
-  def apply(): SyncOptions = {
+  inline def apply(): SyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncOptions]
   }
   
-  @scala.inline
-  implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyncOptions](x: Self) {
     
-    @scala.inline
-    def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
+    inline def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentKeyUndefined: Self = StObject.set(x, "deploymentKey", js.undefined)
+    inline def setDeploymentKeyUndefined: Self = StObject.set(x, "deploymentKey", js.undefined)
     
-    @scala.inline
-    def setInstallMode(value: InstallMode): Self = StObject.set(x, "installMode", value.asInstanceOf[js.Any])
+    inline def setInstallMode(value: InstallMode): Self = StObject.set(x, "installMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallModeUndefined: Self = StObject.set(x, "installMode", js.undefined)
+    inline def setInstallModeUndefined: Self = StObject.set(x, "installMode", js.undefined)
     
-    @scala.inline
-    def setMandatoryInstallMode(value: InstallMode): Self = StObject.set(x, "mandatoryInstallMode", value.asInstanceOf[js.Any])
+    inline def setMandatoryInstallMode(value: InstallMode): Self = StObject.set(x, "mandatoryInstallMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatoryInstallModeUndefined: Self = StObject.set(x, "mandatoryInstallMode", js.undefined)
+    inline def setMandatoryInstallModeUndefined: Self = StObject.set(x, "mandatoryInstallMode", js.undefined)
     
-    @scala.inline
-    def setMinimumBackgroundDuration(value: Double): Self = StObject.set(x, "minimumBackgroundDuration", value.asInstanceOf[js.Any])
+    inline def setMinimumBackgroundDuration(value: Double): Self = StObject.set(x, "minimumBackgroundDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumBackgroundDurationUndefined: Self = StObject.set(x, "minimumBackgroundDuration", js.undefined)
+    inline def setMinimumBackgroundDurationUndefined: Self = StObject.set(x, "minimumBackgroundDuration", js.undefined)
     
-    @scala.inline
-    def setUpdateDialog(value: UpdateDialog): Self = StObject.set(x, "updateDialog", value.asInstanceOf[js.Any])
+    inline def setUpdateDialog(value: UpdateDialog): Self = StObject.set(x, "updateDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDialogUndefined: Self = StObject.set(x, "updateDialog", js.undefined)
+    inline def setUpdateDialogUndefined: Self = StObject.set(x, "updateDialog", js.undefined)
   }
 }

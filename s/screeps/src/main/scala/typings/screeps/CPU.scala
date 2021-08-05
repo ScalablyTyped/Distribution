@@ -86,8 +86,7 @@ trait CPU extends StObject {
 }
 object CPU {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bucket: Double,
     generatePixel: () => OK | ERR_NOT_ENOUGH_RESOURCES,
     getUsed: () => Double,
@@ -102,52 +101,36 @@ object CPU {
     __obj.asInstanceOf[CPU]
   }
   
-  @scala.inline
-  implicit class CPUMutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
+  extension [Self <: CPU](x: Self) {
     
-    @scala.inline
-    def setBucket(value: Double): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: Double): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratePixel(value: () => OK | ERR_NOT_ENOUGH_RESOURCES): Self = StObject.set(x, "generatePixel", js.Any.fromFunction0(value))
+    inline def setGeneratePixel(value: () => OK | ERR_NOT_ENOUGH_RESOURCES): Self = StObject.set(x, "generatePixel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeapStatistics(value: () => HeapStatistics): Self = StObject.set(x, "getHeapStatistics", js.Any.fromFunction0(value))
+    inline def setGetHeapStatistics(value: () => HeapStatistics): Self = StObject.set(x, "getHeapStatistics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeapStatisticsUndefined: Self = StObject.set(x, "getHeapStatistics", js.undefined)
+    inline def setGetHeapStatisticsUndefined: Self = StObject.set(x, "getHeapStatistics", js.undefined)
     
-    @scala.inline
-    def setGetUsed(value: () => Double): Self = StObject.set(x, "getUsed", js.Any.fromFunction0(value))
+    inline def setGetUsed(value: () => Double): Self = StObject.set(x, "getUsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHalt(value: () => scala.Nothing): Self = StObject.set(x, "halt", js.Any.fromFunction0(value))
+    inline def setHalt(value: () => scala.Nothing): Self = StObject.set(x, "halt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHaltUndefined: Self = StObject.set(x, "halt", js.undefined)
+    inline def setHaltUndefined: Self = StObject.set(x, "halt", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetShardLimits(value: CPUShardLimits => OK | ERR_BUSY | ERR_INVALID_ARGS): Self = StObject.set(x, "setShardLimits", js.Any.fromFunction1(value))
+    inline def setSetShardLimits(value: CPUShardLimits => OK | ERR_BUSY | ERR_INVALID_ARGS): Self = StObject.set(x, "setShardLimits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShardLimits(value: CPUShardLimits): Self = StObject.set(x, "shardLimits", value.asInstanceOf[js.Any])
+    inline def setShardLimits(value: CPUShardLimits): Self = StObject.set(x, "shardLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLimit(value: Double): Self = StObject.set(x, "tickLimit", value.asInstanceOf[js.Any])
+    inline def setTickLimit(value: Double): Self = StObject.set(x, "tickLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlock(value: () => OK | ERR_NOT_ENOUGH_RESOURCES | ERR_FULL): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+    inline def setUnlock(value: () => OK | ERR_NOT_ENOUGH_RESOURCES | ERR_FULL): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnlocked(value: Boolean): Self = StObject.set(x, "unlocked", value.asInstanceOf[js.Any])
+    inline def setUnlocked(value: Boolean): Self = StObject.set(x, "unlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockedTime(value: Double): Self = StObject.set(x, "unlockedTime", value.asInstanceOf[js.Any])
+    inline def setUnlockedTime(value: Double): Self = StObject.set(x, "unlockedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockedTimeUndefined: Self = StObject.set(x, "unlockedTime", js.undefined)
+    inline def setUnlockedTimeUndefined: Self = StObject.set(x, "unlockedTime", js.undefined)
   }
 }

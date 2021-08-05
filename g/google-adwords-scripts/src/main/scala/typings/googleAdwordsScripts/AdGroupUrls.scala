@@ -13,8 +13,7 @@ trait AdGroupUrls
 }
 object AdGroupUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearTrackingTemplate: () => Unit,
     getCustomParameters: () => js.Object,
     getTrackingTemplate: () => String,
@@ -25,10 +24,8 @@ object AdGroupUrls {
     __obj.asInstanceOf[AdGroupUrls]
   }
   
-  @scala.inline
-  implicit class AdGroupUrlsMutableBuilder[Self <: AdGroupUrls] (val x: Self) extends AnyVal {
+  extension [Self <: AdGroupUrls](x: Self) {
     
-    @scala.inline
-    def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
+    inline def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
   }
 }

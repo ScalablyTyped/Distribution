@@ -12,20 +12,16 @@ object anon {
   }
   object Tf {
     
-    @scala.inline
-    def apply(): Tf = {
+    inline def apply(): Tf = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Tf]
     }
     
-    @scala.inline
-    implicit class TfMutableBuilder[Self <: Tf] (val x: Self) extends AnyVal {
+    extension [Self <: Tf](x: Self) {
       
-      @scala.inline
-      def setTf(value: Double): Self = StObject.set(x, "tf", value.asInstanceOf[js.Any])
+      inline def setTf(value: Double): Self = StObject.set(x, "tf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfUndefined: Self = StObject.set(x, "tf", js.undefined)
+      inline def setTfUndefined: Self = StObject.set(x, "tf", js.undefined)
     }
   }
 }

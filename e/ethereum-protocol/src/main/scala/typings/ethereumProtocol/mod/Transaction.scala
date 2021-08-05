@@ -31,8 +31,7 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     from: String,
     gas: Double,
     gasPrice: default,
@@ -45,52 +44,36 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+    inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockHashNull: Self = StObject.set(x, "blockHash", null)
+    inline def setBlockHashNull: Self = StObject.set(x, "blockHash", null)
     
-    @scala.inline
-    def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+    inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNumberNull: Self = StObject.set(x, "blockNumber", null)
+    inline def setBlockNumberNull: Self = StObject.set(x, "blockNumber", null)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+    inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGasPrice(value: default): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+    inline def setGasPrice(value: default): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToNull: Self = StObject.set(x, "to", null)
+    inline def setToNull: Self = StObject.set(x, "to", null)
     
-    @scala.inline
-    def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+    inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIndexNull: Self = StObject.set(x, "transactionIndex", null)
+    inline def setTransactionIndexNull: Self = StObject.set(x, "transactionIndex", null)
     
-    @scala.inline
-    def setValue(value: default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

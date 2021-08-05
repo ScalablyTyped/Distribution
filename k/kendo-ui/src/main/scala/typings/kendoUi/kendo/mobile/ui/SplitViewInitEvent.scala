@@ -13,19 +13,15 @@ trait SplitViewInitEvent
 }
 object SplitViewInitEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: SplitView): SplitViewInitEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: SplitView): SplitViewInitEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitViewInitEvent]
   }
   
-  @scala.inline
-  implicit class SplitViewInitEventMutableBuilder[Self <: SplitViewInitEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SplitViewInitEvent](x: Self) {
     
-    @scala.inline
-    def setView(value: JQuery): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: JQuery): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

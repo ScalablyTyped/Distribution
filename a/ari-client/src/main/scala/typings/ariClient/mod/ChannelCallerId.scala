@@ -26,8 +26,7 @@ trait ChannelCallerId
 }
 object ChannelCallerId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     caller_presentation: Double,
     caller_presentation_txt: String,
@@ -40,16 +39,12 @@ object ChannelCallerId {
     __obj.asInstanceOf[ChannelCallerId]
   }
   
-  @scala.inline
-  implicit class ChannelCallerIdMutableBuilder[Self <: ChannelCallerId] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelCallerId](x: Self) {
     
-    @scala.inline
-    def setCaller_presentation(value: Double): Self = StObject.set(x, "caller_presentation", value.asInstanceOf[js.Any])
+    inline def setCaller_presentation(value: Double): Self = StObject.set(x, "caller_presentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaller_presentation_txt(value: String): Self = StObject.set(x, "caller_presentation_txt", value.asInstanceOf[js.Any])
+    inline def setCaller_presentation_txt(value: String): Self = StObject.set(x, "caller_presentation_txt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait DispatchProvider
      with XDispatchProviderInterception
 object DispatchProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],

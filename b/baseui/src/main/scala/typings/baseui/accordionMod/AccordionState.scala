@@ -11,19 +11,15 @@ trait AccordionState extends StObject {
 }
 object AccordionState {
   
-  @scala.inline
-  def apply(expanded: js.Array[Key]): AccordionState = {
+  inline def apply(expanded: js.Array[Key]): AccordionState = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionState]
   }
   
-  @scala.inline
-  implicit class AccordionStateMutableBuilder[Self <: AccordionState] (val x: Self) extends AnyVal {
+  extension [Self <: AccordionState](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: js.Array[Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: js.Array[Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedVarargs(value: Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
   }
 }

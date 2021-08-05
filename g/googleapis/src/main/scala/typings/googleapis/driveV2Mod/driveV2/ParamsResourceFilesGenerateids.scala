@@ -30,31 +30,23 @@ trait ParamsResourceFilesGenerateids
 }
 object ParamsResourceFilesGenerateids {
   
-  @scala.inline
-  def apply(): ParamsResourceFilesGenerateids = {
+  inline def apply(): ParamsResourceFilesGenerateids = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceFilesGenerateids]
   }
   
-  @scala.inline
-  implicit class ParamsResourceFilesGenerateidsMutableBuilder[Self <: ParamsResourceFilesGenerateids] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceFilesGenerateids](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
   }
 }

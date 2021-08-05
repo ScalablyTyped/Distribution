@@ -28,34 +28,25 @@ trait S3DataSpec extends StObject {
 }
 object S3DataSpec {
   
-  @scala.inline
-  def apply(DataLocationS3: S3Url): S3DataSpec = {
+  inline def apply(DataLocationS3: S3Url): S3DataSpec = {
     val __obj = js.Dynamic.literal(DataLocationS3 = DataLocationS3.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DataSpec]
   }
   
-  @scala.inline
-  implicit class S3DataSpecMutableBuilder[Self <: S3DataSpec] (val x: Self) extends AnyVal {
+  extension [Self <: S3DataSpec](x: Self) {
     
-    @scala.inline
-    def setDataLocationS3(value: S3Url): Self = StObject.set(x, "DataLocationS3", value.asInstanceOf[js.Any])
+    inline def setDataLocationS3(value: S3Url): Self = StObject.set(x, "DataLocationS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
+    inline def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
+    inline def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
     
-    @scala.inline
-    def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
+    inline def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaLocationS3(value: S3Url): Self = StObject.set(x, "DataSchemaLocationS3", value.asInstanceOf[js.Any])
+    inline def setDataSchemaLocationS3(value: S3Url): Self = StObject.set(x, "DataSchemaLocationS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaLocationS3Undefined: Self = StObject.set(x, "DataSchemaLocationS3", js.undefined)
+    inline def setDataSchemaLocationS3Undefined: Self = StObject.set(x, "DataSchemaLocationS3", js.undefined)
     
-    @scala.inline
-    def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
+    inline def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait MappingItem extends StObject {
 }
 object MappingItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generatedColumn: Double,
     generatedLine: Double,
     name: String,
@@ -33,25 +32,18 @@ object MappingItem {
     __obj.asInstanceOf[MappingItem]
   }
   
-  @scala.inline
-  implicit class MappingItemMutableBuilder[Self <: MappingItem] (val x: Self) extends AnyVal {
+  extension [Self <: MappingItem](x: Self) {
     
-    @scala.inline
-    def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
+    inline def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratedLine(value: Double): Self = StObject.set(x, "generatedLine", value.asInstanceOf[js.Any])
+    inline def setGeneratedLine(value: Double): Self = StObject.set(x, "generatedLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalColumn(value: Double): Self = StObject.set(x, "originalColumn", value.asInstanceOf[js.Any])
+    inline def setOriginalColumn(value: Double): Self = StObject.set(x, "originalColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalLine(value: Double): Self = StObject.set(x, "originalLine", value.asInstanceOf[js.Any])
+    inline def setOriginalLine(value: Double): Self = StObject.set(x, "originalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

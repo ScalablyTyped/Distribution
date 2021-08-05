@@ -43,55 +43,39 @@ trait DescribeApplicableIndividualAssessmentsMessage extends StObject {
 }
 object DescribeApplicableIndividualAssessmentsMessage {
   
-  @scala.inline
-  def apply(): DescribeApplicableIndividualAssessmentsMessage = {
+  inline def apply(): DescribeApplicableIndividualAssessmentsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeApplicableIndividualAssessmentsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeApplicableIndividualAssessmentsMessageMutableBuilder[Self <: DescribeApplicableIndividualAssessmentsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicableIndividualAssessmentsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setMigrationType(value: MigrationTypeValue): Self = StObject.set(x, "MigrationType", value.asInstanceOf[js.Any])
+    inline def setMigrationType(value: MigrationTypeValue): Self = StObject.set(x, "MigrationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrationTypeUndefined: Self = StObject.set(x, "MigrationType", js.undefined)
+    inline def setMigrationTypeUndefined: Self = StObject.set(x, "MigrationType", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
+    inline def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
-    @scala.inline
-    def setSourceEngineName(value: String): Self = StObject.set(x, "SourceEngineName", value.asInstanceOf[js.Any])
+    inline def setSourceEngineName(value: String): Self = StObject.set(x, "SourceEngineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEngineNameUndefined: Self = StObject.set(x, "SourceEngineName", js.undefined)
+    inline def setSourceEngineNameUndefined: Self = StObject.set(x, "SourceEngineName", js.undefined)
     
-    @scala.inline
-    def setTargetEngineName(value: String): Self = StObject.set(x, "TargetEngineName", value.asInstanceOf[js.Any])
+    inline def setTargetEngineName(value: String): Self = StObject.set(x, "TargetEngineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetEngineNameUndefined: Self = StObject.set(x, "TargetEngineName", js.undefined)
+    inline def setTargetEngineNameUndefined: Self = StObject.set(x, "TargetEngineName", js.undefined)
   }
 }

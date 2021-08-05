@@ -21,6 +21,5 @@ object DropTarget {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def destroyGroup(groupName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyGroup")(groupName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def destroyGroup(groupName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyGroup")(groupName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

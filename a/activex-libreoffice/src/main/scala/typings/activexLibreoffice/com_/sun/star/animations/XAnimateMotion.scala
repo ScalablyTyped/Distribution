@@ -27,8 +27,7 @@ trait XAnimateMotion
 }
 object XAnimateMotion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     Accumulate: Boolean,
     Additive: Double,
@@ -71,13 +70,10 @@ object XAnimateMotion {
     __obj.asInstanceOf[XAnimateMotion]
   }
   
-  @scala.inline
-  implicit class XAnimateMotionMutableBuilder[Self <: XAnimateMotion] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimateMotion](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: js.Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: js.Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Any): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Any): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

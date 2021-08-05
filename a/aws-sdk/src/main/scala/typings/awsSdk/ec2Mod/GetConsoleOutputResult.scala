@@ -23,31 +23,23 @@ trait GetConsoleOutputResult extends StObject {
 }
 object GetConsoleOutputResult {
   
-  @scala.inline
-  def apply(): GetConsoleOutputResult = {
+  inline def apply(): GetConsoleOutputResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConsoleOutputResult]
   }
   
-  @scala.inline
-  implicit class GetConsoleOutputResultMutableBuilder[Self <: GetConsoleOutputResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetConsoleOutputResult](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setOutput(value: String): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: String): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

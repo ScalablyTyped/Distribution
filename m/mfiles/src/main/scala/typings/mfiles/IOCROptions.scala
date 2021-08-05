@@ -15,22 +15,17 @@ trait IOCROptions extends StObject {
 }
 object IOCROptions {
   
-  @scala.inline
-  def apply(Clone: () => IOCROptions, PrimaryLanguage: MFOCRLanguage, SecondaryLanguage: MFOCRLanguage): IOCROptions = {
+  inline def apply(Clone: () => IOCROptions, PrimaryLanguage: MFOCRLanguage, SecondaryLanguage: MFOCRLanguage): IOCROptions = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PrimaryLanguage = PrimaryLanguage.asInstanceOf[js.Any], SecondaryLanguage = SecondaryLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOCROptions]
   }
   
-  @scala.inline
-  implicit class IOCROptionsMutableBuilder[Self <: IOCROptions] (val x: Self) extends AnyVal {
+  extension [Self <: IOCROptions](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IOCROptions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IOCROptions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrimaryLanguage(value: MFOCRLanguage): Self = StObject.set(x, "PrimaryLanguage", value.asInstanceOf[js.Any])
+    inline def setPrimaryLanguage(value: MFOCRLanguage): Self = StObject.set(x, "PrimaryLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryLanguage(value: MFOCRLanguage): Self = StObject.set(x, "SecondaryLanguage", value.asInstanceOf[js.Any])
+    inline def setSecondaryLanguage(value: MFOCRLanguage): Self = StObject.set(x, "SecondaryLanguage", value.asInstanceOf[js.Any])
   }
 }

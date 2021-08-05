@@ -15,19 +15,15 @@ trait TypeofView extends StObject {
 }
 object TypeofView {
   
-  @scala.inline
-  def apply(extend: js.Object => View, fn: View): TypeofView = {
+  inline def apply(extend: js.Object => View, fn: View): TypeofView = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofView]
   }
   
-  @scala.inline
-  implicit class TypeofViewMutableBuilder[Self <: TypeofView] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofView](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => View): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => View): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: View): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: View): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

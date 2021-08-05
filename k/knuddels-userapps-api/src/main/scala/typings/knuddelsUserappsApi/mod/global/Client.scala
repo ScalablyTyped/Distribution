@@ -61,15 +61,13 @@ object Client {
     			 * @see https://developer.knuddels.de/docs/classes/Client.Color.html#method_fromHexString
     			 */
     /* static member */
-    @scala.inline
-    def fromHexString(colorString: java.lang.String): typings.knuddelsUserappsApi.mod.global.Client.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHexString")(colorString.asInstanceOf[js.Any]).asInstanceOf[typings.knuddelsUserappsApi.mod.global.Client.Color]
+    inline def fromHexString(colorString: java.lang.String): typings.knuddelsUserappsApi.mod.global.Client.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHexString")(colorString.asInstanceOf[js.Any]).asInstanceOf[typings.knuddelsUserappsApi.mod.global.Client.Color]
     
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.Color.html#method_fromRGB
     			 */
     /* static member */
-    @scala.inline
-    def fromRGB(red: Double, green: Double, blue: Double): typings.knuddelsUserappsApi.mod.global.Client.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRGB")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[typings.knuddelsUserappsApi.mod.global.Client.Color]
+    inline def fromRGB(red: Double, green: Double, blue: Double): typings.knuddelsUserappsApi.mod.global.Client.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRGB")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[typings.knuddelsUserappsApi.mod.global.Client.Color]
   }
   
   @JSGlobal("Client.Event")
@@ -136,92 +134,79 @@ object Client {
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_addConnectionTypeChangeListener
   		 */
   /* static member */
-  @scala.inline
-  def addConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConnectionTypeChangeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConnectionTypeChangeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_addEventListener
   		 */
   /* static member */
-  @scala.inline
-  def addEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_close
   		 */
   /* static member */
-  @scala.inline
-  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
+  inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_dispatchEvent
   		 */
   /* static member */
-  @scala.inline
-  def dispatchEvent(event: typings.std.Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dispatchEvent(event: typings.std.Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_executeSlashCommand
   		 */
   /* static member */
-  @scala.inline
-  def executeSlashCommand(command: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeSlashCommand")(command.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def executeSlashCommand(command: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeSlashCommand")(command.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_freeSound
   		 */
   /* static member */
-  @scala.inline
-  def freeSound(fileName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeSound")(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def freeSound(fileName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeSound")(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getCacheInvalidationId
   		 */
   /* static member */
-  @scala.inline
-  def getCacheInvalidationId(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheInvalidationId")().asInstanceOf[java.lang.String]
+  inline def getCacheInvalidationId(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheInvalidationId")().asInstanceOf[java.lang.String]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getClientType
   		 */
   /* static member */
-  @scala.inline
-  def getClientType(): ClientType = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientType")().asInstanceOf[ClientType]
+  inline def getClientType(): ClientType = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientType")().asInstanceOf[ClientType]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getDirectConnection
   		 */
   /* static member */
-  @scala.inline
-  def getDirectConnection(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnection")().asInstanceOf[js.Promise[Unit]]
+  inline def getDirectConnection(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnection")().asInstanceOf[js.Promise[Unit]]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getHostFrame
   		 */
   /* static member */
-  @scala.inline
-  def getHostFrame(): HostFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostFrame")().asInstanceOf[HostFrame]
+  inline def getHostFrame(): HostFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostFrame")().asInstanceOf[HostFrame]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getNick
   		 */
   /* static member */
-  @scala.inline
-  def getNick(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNick")().asInstanceOf[java.lang.String]
+  inline def getNick(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNick")().asInstanceOf[java.lang.String]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_includeCSS
   		 */
   /* static member */
-  @scala.inline
-  def includeCSS(files: java.lang.String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("includeCSS")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def includeCSS(files: java.lang.String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("includeCSS")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_includeJS
   		 */
   /* static member */
-  @scala.inline
-  def includeJS(files: java.lang.String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("includeJS")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def includeJS(files: java.lang.String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("includeJS")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#property_pageData
@@ -230,43 +215,36 @@ object Client {
   @JSGlobal("Client.pageData")
   @js.native
   def pageData: Json = js.native
-  @scala.inline
-  def pageData_=(x: Json): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageData")(x.asInstanceOf[js.Any])
+  inline def pageData_=(x: Json): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageData")(x.asInstanceOf[js.Any])
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_playSound
   		 */
   /* static member */
-  @scala.inline
-  def playSound(fileName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def playSound(fileName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_prefetchSound
   		 */
   /* static member */
-  @scala.inline
-  def prefetchSound(fileName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prefetchSound")(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def prefetchSound(fileName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prefetchSound")(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeConnectionTypeChangeListener
   		 */
   /* static member */
-  @scala.inline
-  def removeConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConnectionTypeChangeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConnectionTypeChangeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeEventListener
   		 */
   /* static member */
-  @scala.inline
-  def removeEventListener(`type`: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_sendEvent
   		 */
   /* static member */
-  @scala.inline
-  def sendEvent(`type`: java.lang.String, data: KnuddelsEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEvent")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendEvent(`type`: java.lang.String, data: KnuddelsEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEvent")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

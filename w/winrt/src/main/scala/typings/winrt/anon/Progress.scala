@@ -25,8 +25,7 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completed: (/* asyncInfo */ IAsyncOperation[IVectorView[ISmsMessage]], /* asyncStatus */ AsyncStatus) => Unit,
     getResults: () => IVectorView[ISmsMessage],
     progress: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double], Double) => Unit
@@ -35,19 +34,15 @@ object Progress {
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setCompleted(
+    inline def setCompleted(
       value: (/* asyncInfo */ IAsyncOperation[IVectorView[ISmsMessage]], /* asyncStatus */ AsyncStatus) => Unit
     ): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => IVectorView[ISmsMessage]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => IVectorView[ISmsMessage]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProgress(
+    inline def setProgress(
       value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double], Double) => Unit
     ): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
   }

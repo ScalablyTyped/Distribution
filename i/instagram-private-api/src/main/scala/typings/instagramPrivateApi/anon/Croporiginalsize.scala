@@ -14,31 +14,23 @@ trait Croporiginalsize extends StObject {
 }
 object Croporiginalsize {
   
-  @scala.inline
-  def apply(): Croporiginalsize = {
+  inline def apply(): Croporiginalsize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Croporiginalsize]
   }
   
-  @scala.inline
-  implicit class CroporiginalsizeMutableBuilder[Self <: Croporiginalsize] (val x: Self) extends AnyVal {
+  extension [Self <: Croporiginalsize](x: Self) {
     
-    @scala.inline
-    def setCrop_center(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "crop_center", value.asInstanceOf[js.Any])
+    inline def setCrop_center(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "crop_center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrop_centerUndefined: Self = StObject.set(x, "crop_center", js.undefined)
+    inline def setCrop_centerUndefined: Self = StObject.set(x, "crop_center", js.undefined)
     
-    @scala.inline
-    def setCrop_original_size(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "crop_original_size", value.asInstanceOf[js.Any])
+    inline def setCrop_original_size(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "crop_original_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrop_original_sizeUndefined: Self = StObject.set(x, "crop_original_size", js.undefined)
+    inline def setCrop_original_sizeUndefined: Self = StObject.set(x, "crop_original_size", js.undefined)
     
-    @scala.inline
-    def setCrop_zoom(value: Double | String): Self = StObject.set(x, "crop_zoom", value.asInstanceOf[js.Any])
+    inline def setCrop_zoom(value: Double | String): Self = StObject.set(x, "crop_zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrop_zoomUndefined: Self = StObject.set(x, "crop_zoom", js.undefined)
+    inline def setCrop_zoomUndefined: Self = StObject.set(x, "crop_zoom", js.undefined)
   }
 }

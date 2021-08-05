@@ -43,43 +43,31 @@ trait PlanDefinitionActionRelatedAction
 }
 object PlanDefinitionActionRelatedAction {
   
-  @scala.inline
-  def apply(actionId: id, relationship: code): PlanDefinitionActionRelatedAction = {
+  inline def apply(actionId: id, relationship: code): PlanDefinitionActionRelatedAction = {
     val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], relationship = relationship.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanDefinitionActionRelatedAction]
   }
   
-  @scala.inline
-  implicit class PlanDefinitionActionRelatedActionMutableBuilder[Self <: PlanDefinitionActionRelatedAction] (val x: Self) extends AnyVal {
+  extension [Self <: PlanDefinitionActionRelatedAction](x: Self) {
     
-    @scala.inline
-    def setActionId(value: id): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: id): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetDuration(value: Duration): Self = StObject.set(x, "offsetDuration", value.asInstanceOf[js.Any])
+    inline def setOffsetDuration(value: Duration): Self = StObject.set(x, "offsetDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetDurationUndefined: Self = StObject.set(x, "offsetDuration", js.undefined)
+    inline def setOffsetDurationUndefined: Self = StObject.set(x, "offsetDuration", js.undefined)
     
-    @scala.inline
-    def setOffsetRange(value: Range): Self = StObject.set(x, "offsetRange", value.asInstanceOf[js.Any])
+    inline def setOffsetRange(value: Range): Self = StObject.set(x, "offsetRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetRangeUndefined: Self = StObject.set(x, "offsetRange", js.undefined)
+    inline def setOffsetRangeUndefined: Self = StObject.set(x, "offsetRange", js.undefined)
     
-    @scala.inline
-    def setRelationship(value: code): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: code): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_actionId(value: Element): Self = StObject.set(x, "_actionId", value.asInstanceOf[js.Any])
+    inline def set_actionId(value: Element): Self = StObject.set(x, "_actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_actionIdUndefined: Self = StObject.set(x, "_actionId", js.undefined)
+    inline def set_actionIdUndefined: Self = StObject.set(x, "_actionId", js.undefined)
     
-    @scala.inline
-    def set_relationship(value: Element): Self = StObject.set(x, "_relationship", value.asInstanceOf[js.Any])
+    inline def set_relationship(value: Element): Self = StObject.set(x, "_relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_relationshipUndefined: Self = StObject.set(x, "_relationship", js.undefined)
+    inline def set_relationshipUndefined: Self = StObject.set(x, "_relationship", js.undefined)
   }
 }

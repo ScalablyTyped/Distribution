@@ -23,31 +23,23 @@ trait SelectedItemChangingEventUIParam extends StObject {
 }
 object SelectedItemChangingEventUIParam {
   
-  @scala.inline
-  def apply(): SelectedItemChangingEventUIParam = {
+  inline def apply(): SelectedItemChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectedItemChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class SelectedItemChangingEventUIParamMutableBuilder[Self <: SelectedItemChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedItemChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCancel(value: js.Any): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: js.Any): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setNewItem(value: js.Any): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
+    inline def setNewItem(value: js.Any): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewItemUndefined: Self = StObject.set(x, "newItem", js.undefined)
+    inline def setNewItemUndefined: Self = StObject.set(x, "newItem", js.undefined)
     
-    @scala.inline
-    def setOldItem(value: js.Any): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
+    inline def setOldItem(value: js.Any): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldItemUndefined: Self = StObject.set(x, "oldItem", js.undefined)
+    inline def setOldItemUndefined: Self = StObject.set(x, "oldItem", js.undefined)
   }
 }

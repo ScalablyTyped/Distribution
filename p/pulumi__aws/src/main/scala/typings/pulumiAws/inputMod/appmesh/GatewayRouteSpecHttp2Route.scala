@@ -19,20 +19,16 @@ trait GatewayRouteSpecHttp2Route extends StObject {
 }
 object GatewayRouteSpecHttp2Route {
   
-  @scala.inline
-  def apply(action: Input[GatewayRouteSpecHttp2RouteAction], `match`: Input[GatewayRouteSpecHttp2RouteMatch]): GatewayRouteSpecHttp2Route = {
+  inline def apply(action: Input[GatewayRouteSpecHttp2RouteAction], `match`: Input[GatewayRouteSpecHttp2RouteMatch]): GatewayRouteSpecHttp2Route = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayRouteSpecHttp2Route]
   }
   
-  @scala.inline
-  implicit class GatewayRouteSpecHttp2RouteMutableBuilder[Self <: GatewayRouteSpecHttp2Route] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteSpecHttp2Route](x: Self) {
     
-    @scala.inline
-    def setAction(value: Input[GatewayRouteSpecHttp2RouteAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Input[GatewayRouteSpecHttp2RouteAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: Input[GatewayRouteSpecHttp2RouteMatch]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Input[GatewayRouteSpecHttp2RouteMatch]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }
 }

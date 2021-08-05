@@ -13,16 +13,13 @@ trait RemoveRegionRequest extends StObject {
 }
 object RemoveRegionRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): RemoveRegionRequest = {
+  inline def apply(DirectoryId: DirectoryId): RemoveRegionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveRegionRequest]
   }
   
-  @scala.inline
-  implicit class RemoveRegionRequestMutableBuilder[Self <: RemoveRegionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveRegionRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

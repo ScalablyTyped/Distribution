@@ -66,56 +66,40 @@ object pointsMaterialMod {
   }
   object PointsMaterialParameters {
     
-    @scala.inline
-    def apply(): PointsMaterialParameters = {
+    inline def apply(): PointsMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PointsMaterialParameters]
     }
     
-    @scala.inline
-    implicit class PointsMaterialParametersMutableBuilder[Self <: PointsMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: PointsMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
+      inline def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
+      inline def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
       
-      @scala.inline
-      def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
+      inline def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
       
-      @scala.inline
-      def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
+      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
+      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeAttenuation(value: Boolean): Self = StObject.set(x, "sizeAttenuation", value.asInstanceOf[js.Any])
+      inline def setSizeAttenuation(value: Boolean): Self = StObject.set(x, "sizeAttenuation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeAttenuationUndefined: Self = StObject.set(x, "sizeAttenuation", js.undefined)
+      inline def setSizeAttenuationUndefined: Self = StObject.set(x, "sizeAttenuation", js.undefined)
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

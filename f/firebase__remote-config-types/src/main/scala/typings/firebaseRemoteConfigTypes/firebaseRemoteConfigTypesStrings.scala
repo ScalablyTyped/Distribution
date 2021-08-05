@@ -13,69 +13,59 @@ object firebaseRemoteConfigTypesStrings {
   sealed trait default
     extends StObject
        with ValueSource
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait debug
     extends StObject
        with LogLevel
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait error
     extends StObject
        with LogLevel
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait failure
     extends StObject
        with FetchStatus
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
   sealed trait `no-fetch-yet`
     extends StObject
        with FetchStatus
-  @scala.inline
-  def `no-fetch-yet`: `no-fetch-yet` = "no-fetch-yet".asInstanceOf[`no-fetch-yet`]
+  inline def `no-fetch-yet`: `no-fetch-yet` = "no-fetch-yet".asInstanceOf[`no-fetch-yet`]
   
   @js.native
   sealed trait remote
     extends StObject
        with ValueSource
-  @scala.inline
-  def remote: remote = "remote".asInstanceOf[remote]
+  inline def remote: remote = "remote".asInstanceOf[remote]
   
   @js.native
   sealed trait silent
     extends StObject
        with LogLevel
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait static
     extends StObject
        with ValueSource
-  @scala.inline
-  def static: static = "static".asInstanceOf[static]
+  inline def static: static = "static".asInstanceOf[static]
   
   @js.native
   sealed trait success
     extends StObject
        with FetchStatus
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait throttle
     extends StObject
        with FetchStatus
-  @scala.inline
-  def throttle: throttle = "throttle".asInstanceOf[throttle]
+  inline def throttle: throttle = "throttle".asInstanceOf[throttle]
 }

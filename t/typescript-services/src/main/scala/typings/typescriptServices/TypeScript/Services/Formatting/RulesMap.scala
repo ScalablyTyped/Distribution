@@ -22,8 +22,7 @@ trait RulesMap extends StObject {
 }
 object RulesMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillRule: (js.Any, js.Any) => js.Any,
     FillRules: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Unit,
     GetRule: FormattingContext => Rule,
@@ -36,31 +35,22 @@ object RulesMap {
     __obj.asInstanceOf[RulesMap]
   }
   
-  @scala.inline
-  implicit class RulesMapMutableBuilder[Self <: RulesMap] (val x: Self) extends AnyVal {
+  extension [Self <: RulesMap](x: Self) {
     
-    @scala.inline
-    def setFillRule(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "FillRule", js.Any.fromFunction2(value))
+    inline def setFillRule(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "FillRule", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFillRules(value: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Unit): Self = StObject.set(x, "FillRules", js.Any.fromFunction2(value))
+    inline def setFillRules(value: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Unit): Self = StObject.set(x, "FillRules", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetRule(value: FormattingContext => Rule): Self = StObject.set(x, "GetRule", js.Any.fromFunction1(value))
+    inline def setGetRule(value: FormattingContext => Rule): Self = StObject.set(x, "GetRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRuleBucketIndex(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "GetRuleBucketIndex", js.Any.fromFunction2(value))
+    inline def setGetRuleBucketIndex(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "GetRuleBucketIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInitialize(value: js.Array[Rule] => js.Array[RulesBucket]): Self = StObject.set(x, "Initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: js.Array[Rule] => js.Array[RulesBucket]): Self = StObject.set(x, "Initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMap(value: js.Array[RulesBucket]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[RulesBucket]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapRowLength(value: Double): Self = StObject.set(x, "mapRowLength", value.asInstanceOf[js.Any])
+    inline def setMapRowLength(value: Double): Self = StObject.set(x, "mapRowLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapVarargs(value: RulesBucket*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: RulesBucket*): Self = StObject.set(x, "map", js.Array(value :_*))
   }
 }

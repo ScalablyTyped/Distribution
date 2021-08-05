@@ -18,8 +18,7 @@ trait EntityError extends StObject {
 }
 object EntityError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: Entity,
     errorMessage: String,
     errorName: String,
@@ -30,22 +29,16 @@ object EntityError {
     __obj.asInstanceOf[EntityError]
   }
   
-  @scala.inline
-  implicit class EntityErrorMutableBuilder[Self <: EntityError] (val x: Self) extends AnyVal {
+  extension [Self <: EntityError](x: Self) {
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
+    inline def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsServerError(value: Boolean): Self = StObject.set(x, "isServerError", value.asInstanceOf[js.Any])
+    inline def setIsServerError(value: Boolean): Self = StObject.set(x, "isServerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

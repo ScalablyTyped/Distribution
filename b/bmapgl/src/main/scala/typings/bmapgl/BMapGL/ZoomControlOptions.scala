@@ -12,25 +12,19 @@ trait ZoomControlOptions extends StObject {
 }
 object ZoomControlOptions {
   
-  @scala.inline
-  def apply(): ZoomControlOptions = {
+  inline def apply(): ZoomControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoomControlOptions]
   }
   
-  @scala.inline
-  implicit class ZoomControlOptionsMutableBuilder[Self <: ZoomControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomControlOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

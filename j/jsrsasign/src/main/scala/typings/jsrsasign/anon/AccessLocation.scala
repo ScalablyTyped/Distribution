@@ -13,19 +13,15 @@ trait AccessLocation extends StObject {
 }
 object AccessLocation {
   
-  @scala.inline
-  def apply(accessLocation: UriParam, accessMethod: OidString): AccessLocation = {
+  inline def apply(accessLocation: UriParam, accessMethod: OidString): AccessLocation = {
     val __obj = js.Dynamic.literal(accessLocation = accessLocation.asInstanceOf[js.Any], accessMethod = accessMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessLocation]
   }
   
-  @scala.inline
-  implicit class AccessLocationMutableBuilder[Self <: AccessLocation] (val x: Self) extends AnyVal {
+  extension [Self <: AccessLocation](x: Self) {
     
-    @scala.inline
-    def setAccessLocation(value: UriParam): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
+    inline def setAccessLocation(value: UriParam): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessMethod(value: OidString): Self = StObject.set(x, "accessMethod", value.asInstanceOf[js.Any])
+    inline def setAccessMethod(value: OidString): Self = StObject.set(x, "accessMethod", value.asInstanceOf[js.Any])
   }
 }

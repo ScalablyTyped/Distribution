@@ -21,8 +21,7 @@ trait XEntityResolver
 }
 object XEntityResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -32,10 +31,8 @@ object XEntityResolver {
     __obj.asInstanceOf[XEntityResolver]
   }
   
-  @scala.inline
-  implicit class XEntityResolverMutableBuilder[Self <: XEntityResolver] (val x: Self) extends AnyVal {
+  extension [Self <: XEntityResolver](x: Self) {
     
-    @scala.inline
-    def setResolveEntity(value: (String, String) => InputSource): Self = StObject.set(x, "resolveEntity", js.Any.fromFunction2(value))
+    inline def setResolveEntity(value: (String, String) => InputSource): Self = StObject.set(x, "resolveEntity", js.Any.fromFunction2(value))
   }
 }

@@ -18,22 +18,17 @@ trait ListenerRuleActionForwardTargetGroup extends StObject {
 }
 object ListenerRuleActionForwardTargetGroup {
   
-  @scala.inline
-  def apply(arn: String): ListenerRuleActionForwardTargetGroup = {
+  inline def apply(arn: String): ListenerRuleActionForwardTargetGroup = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionForwardTargetGroup]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionForwardTargetGroupMutableBuilder[Self <: ListenerRuleActionForwardTargetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleActionForwardTargetGroup](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -8,21 +8,17 @@ object passportFacebookStrings {
   
   @js.native
   sealed trait page extends StObject
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait popup extends StObject
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
+  inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
   sealed trait reauthenticate extends StObject
-  @scala.inline
-  def reauthenticate: reauthenticate = "reauthenticate".asInstanceOf[reauthenticate]
+  inline def reauthenticate: reauthenticate = "reauthenticate".asInstanceOf[reauthenticate]
   
   @js.native
   sealed trait touch extends StObject
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
+  inline def touch: touch = "touch".asInstanceOf[touch]
 }

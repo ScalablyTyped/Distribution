@@ -16,31 +16,23 @@ trait TeamsAppInstallation
 }
 object TeamsAppInstallation {
   
-  @scala.inline
-  def apply(): TeamsAppInstallation = {
+  inline def apply(): TeamsAppInstallation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamsAppInstallation]
   }
   
-  @scala.inline
-  implicit class TeamsAppInstallationMutableBuilder[Self <: TeamsAppInstallation] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAppInstallation](x: Self) {
     
-    @scala.inline
-    def setTeamsApp(value: NullableOption[TeamsApp]): Self = StObject.set(x, "teamsApp", value.asInstanceOf[js.Any])
+    inline def setTeamsApp(value: NullableOption[TeamsApp]): Self = StObject.set(x, "teamsApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamsAppDefinition(value: NullableOption[TeamsAppDefinition]): Self = StObject.set(x, "teamsAppDefinition", value.asInstanceOf[js.Any])
+    inline def setTeamsAppDefinition(value: NullableOption[TeamsAppDefinition]): Self = StObject.set(x, "teamsAppDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamsAppDefinitionNull: Self = StObject.set(x, "teamsAppDefinition", null)
+    inline def setTeamsAppDefinitionNull: Self = StObject.set(x, "teamsAppDefinition", null)
     
-    @scala.inline
-    def setTeamsAppDefinitionUndefined: Self = StObject.set(x, "teamsAppDefinition", js.undefined)
+    inline def setTeamsAppDefinitionUndefined: Self = StObject.set(x, "teamsAppDefinition", js.undefined)
     
-    @scala.inline
-    def setTeamsAppNull: Self = StObject.set(x, "teamsApp", null)
+    inline def setTeamsAppNull: Self = StObject.set(x, "teamsApp", null)
     
-    @scala.inline
-    def setTeamsAppUndefined: Self = StObject.set(x, "teamsApp", js.undefined)
+    inline def setTeamsAppUndefined: Self = StObject.set(x, "teamsApp", js.undefined)
   }
 }

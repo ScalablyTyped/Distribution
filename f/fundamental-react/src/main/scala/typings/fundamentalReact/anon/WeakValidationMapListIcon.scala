@@ -15,25 +15,19 @@ trait WeakValidationMapListIcon extends StObject {
 }
 object WeakValidationMapListIcon {
   
-  @scala.inline
-  def apply(): WeakValidationMapListIcon = {
+  inline def apply(): WeakValidationMapListIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapListIcon]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapListIconMutableBuilder[Self <: WeakValidationMapListIcon] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapListIcon](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setGlyph(value: Validator[js.UndefOr[IconGlyph | Null]]): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: Validator[js.UndefOr[IconGlyph | Null]]): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+    inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
   }
 }

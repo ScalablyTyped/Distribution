@@ -23,25 +23,19 @@ trait ResourceQuotaStatus extends StObject {
 }
 object ResourceQuotaStatus {
   
-  @scala.inline
-  def apply(): ResourceQuotaStatus = {
+  inline def apply(): ResourceQuotaStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceQuotaStatus]
   }
   
-  @scala.inline
-  implicit class ResourceQuotaStatusMutableBuilder[Self <: ResourceQuotaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuotaStatus](x: Self) {
     
-    @scala.inline
-    def setHard(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+    inline def setHard(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
+    inline def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
     
-    @scala.inline
-    def setUsed(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
+    inline def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
   }
 }

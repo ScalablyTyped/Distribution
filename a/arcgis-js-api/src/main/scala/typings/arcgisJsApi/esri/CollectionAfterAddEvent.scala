@@ -10,16 +10,13 @@ trait CollectionAfterAddEvent extends StObject {
 }
 object CollectionAfterAddEvent {
   
-  @scala.inline
-  def apply(item: js.Any): CollectionAfterAddEvent = {
+  inline def apply(item: js.Any): CollectionAfterAddEvent = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAfterAddEvent]
   }
   
-  @scala.inline
-  implicit class CollectionAfterAddEventMutableBuilder[Self <: CollectionAfterAddEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionAfterAddEvent](x: Self) {
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

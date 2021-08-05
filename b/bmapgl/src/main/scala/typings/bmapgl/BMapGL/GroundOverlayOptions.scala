@@ -16,37 +16,27 @@ trait GroundOverlayOptions extends StObject {
 }
 object GroundOverlayOptions {
   
-  @scala.inline
-  def apply(): GroundOverlayOptions = {
+  inline def apply(): GroundOverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroundOverlayOptions]
   }
   
-  @scala.inline
-  implicit class GroundOverlayOptionsMutableBuilder[Self <: GroundOverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GroundOverlayOptions](x: Self) {
     
-    @scala.inline
-    def setDisplayOnMaxLevel(value: Double): Self = StObject.set(x, "displayOnMaxLevel", value.asInstanceOf[js.Any])
+    inline def setDisplayOnMaxLevel(value: Double): Self = StObject.set(x, "displayOnMaxLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOnMaxLevelUndefined: Self = StObject.set(x, "displayOnMaxLevel", js.undefined)
+    inline def setDisplayOnMaxLevelUndefined: Self = StObject.set(x, "displayOnMaxLevel", js.undefined)
     
-    @scala.inline
-    def setDisplayOnMinLevel(value: Double): Self = StObject.set(x, "displayOnMinLevel", value.asInstanceOf[js.Any])
+    inline def setDisplayOnMinLevel(value: Double): Self = StObject.set(x, "displayOnMinLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOnMinLevelUndefined: Self = StObject.set(x, "displayOnMinLevel", js.undefined)
+    inline def setDisplayOnMinLevelUndefined: Self = StObject.set(x, "displayOnMinLevel", js.undefined)
     
-    @scala.inline
-    def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
+    inline def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageURLUndefined: Self = StObject.set(x, "imageURL", js.undefined)
+    inline def setImageURLUndefined: Self = StObject.set(x, "imageURL", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

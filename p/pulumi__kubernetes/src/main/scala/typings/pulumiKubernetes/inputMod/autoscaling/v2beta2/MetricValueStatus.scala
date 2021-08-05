@@ -27,31 +27,23 @@ trait MetricValueStatus extends StObject {
 }
 object MetricValueStatus {
   
-  @scala.inline
-  def apply(): MetricValueStatus = {
+  inline def apply(): MetricValueStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricValueStatus]
   }
   
-  @scala.inline
-  implicit class MetricValueStatusMutableBuilder[Self <: MetricValueStatus] (val x: Self) extends AnyVal {
+  extension [Self <: MetricValueStatus](x: Self) {
     
-    @scala.inline
-    def setAverageUtilization(value: Input[Double]): Self = StObject.set(x, "averageUtilization", value.asInstanceOf[js.Any])
+    inline def setAverageUtilization(value: Input[Double]): Self = StObject.set(x, "averageUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUtilizationUndefined: Self = StObject.set(x, "averageUtilization", js.undefined)
+    inline def setAverageUtilizationUndefined: Self = StObject.set(x, "averageUtilization", js.undefined)
     
-    @scala.inline
-    def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
+    inline def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
+    inline def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

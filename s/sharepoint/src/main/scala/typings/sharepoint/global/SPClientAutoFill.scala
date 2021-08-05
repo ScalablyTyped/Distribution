@@ -93,28 +93,23 @@ object SPClientAutoFill {
   @JSGlobal("SPClientAutoFill.DisplayTextProperty")
   @js.native
   def DisplayTextProperty: String = js.native
-  @scala.inline
-  def DisplayTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayTextProperty")(x.asInstanceOf[js.Any])
+  inline def DisplayTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayTextProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def GetAutoFillMenuItemFromOption(elmChild: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillMenuItemFromOption")(elmChild.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def GetAutoFillMenuItemFromOption(elmChild: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillMenuItemFromOption")(elmChild.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /* static member */
-  @scala.inline
-  def GetAutoFillObjFromContainer(elmChild: HTMLElement): typings.sharepoint.SPClientAutoFill = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillObjFromContainer")(elmChild.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientAutoFill]
+  inline def GetAutoFillObjFromContainer(elmChild: HTMLElement): typings.sharepoint.SPClientAutoFill = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillObjFromContainer")(elmChild.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientAutoFill]
   
   // = 'AutoFillMenuOptionType';
   /* static member */
-  @scala.inline
-  def GetAutoFillObjFromInput(elmText: HTMLInputElement): typings.sharepoint.SPClientAutoFill = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillObjFromInput")(elmText.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientAutoFill]
+  inline def GetAutoFillObjFromInput(elmText: HTMLInputElement): typings.sharepoint.SPClientAutoFill = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillObjFromInput")(elmText.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientAutoFill]
   
   /* static member */
   @JSGlobal("SPClientAutoFill.KeyProperty")
   @js.native
   def KeyProperty: String = js.native
-  @scala.inline
-  def KeyProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeyProperty")(x.asInstanceOf[js.Any])
+  inline def KeyProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeyProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   object MenuOptionType {
@@ -126,26 +121,22 @@ object SPClientAutoFill {
     @JSGlobal("SPClientAutoFill.MenuOptionType.Footer")
     @js.native
     def Footer: Double = js.native
-    @scala.inline
-    def Footer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+    inline def Footer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSGlobal("SPClientAutoFill.MenuOptionType.Loading")
     @js.native
     def Loading: Double = js.native
-    @scala.inline
-    def Loading_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Loading")(x.asInstanceOf[js.Any])
+    inline def Loading_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Loading")(x.asInstanceOf[js.Any])
     
     @JSGlobal("SPClientAutoFill.MenuOptionType.Option")
     @js.native
     def Option: Double = js.native
-    @scala.inline
-    def Option_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
+    inline def Option_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
     
     @JSGlobal("SPClientAutoFill.MenuOptionType.Separator")
     @js.native
     def Separator: Double = js.native
-    @scala.inline
-    def Separator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
+    inline def Separator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
   }
   
   // = 'AutoFillTitleText';
@@ -153,22 +144,19 @@ object SPClientAutoFill {
   @JSGlobal("SPClientAutoFill.MenuOptionTypeProperty")
   @js.native
   def MenuOptionTypeProperty: String = js.native
-  @scala.inline
-  def MenuOptionTypeProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuOptionTypeProperty")(x.asInstanceOf[js.Any])
+  inline def MenuOptionTypeProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuOptionTypeProperty")(x.asInstanceOf[js.Any])
   
   // = 'AutoFillDisplayText';
   /* static member */
   @JSGlobal("SPClientAutoFill.SubDisplayTextProperty")
   @js.native
   def SubDisplayTextProperty: String = js.native
-  @scala.inline
-  def SubDisplayTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubDisplayTextProperty")(x.asInstanceOf[js.Any])
+  inline def SubDisplayTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubDisplayTextProperty")(x.asInstanceOf[js.Any])
   
   // = 'AutoFillSubDisplayText';
   /* static member */
   @JSGlobal("SPClientAutoFill.TitleTextProperty")
   @js.native
   def TitleTextProperty: String = js.native
-  @scala.inline
-  def TitleTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TitleTextProperty")(x.asInstanceOf[js.Any])
+  inline def TitleTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TitleTextProperty")(x.asInstanceOf[js.Any])
 }

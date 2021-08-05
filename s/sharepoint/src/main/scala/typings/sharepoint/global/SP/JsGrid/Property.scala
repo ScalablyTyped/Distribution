@@ -17,8 +17,7 @@ object Property {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def MakeProperty(
+  inline def MakeProperty(
     dataValue: js.Any,
     localizedValue: String,
     bHasDataValue: Boolean,
@@ -27,8 +26,6 @@ object Property {
   ): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeProperty")(dataValue.asInstanceOf[js.Any], localizedValue.asInstanceOf[js.Any], bHasDataValue.asInstanceOf[js.Any], bHasLocalizedValue.asInstanceOf[js.Any], propType.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
   
   /* static member */
-  @scala.inline
-  def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
-  @scala.inline
-  def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String, optPropType: js.Any): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any], optPropType.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
+  inline def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
+  inline def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String, optPropType: js.Any): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any], optPropType.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
 }

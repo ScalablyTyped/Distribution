@@ -22,41 +22,31 @@ trait RepresentativeInfoData extends StObject {
 }
 object RepresentativeInfoData {
   
-  @scala.inline
-  def apply(): RepresentativeInfoData = {
+  inline def apply(): RepresentativeInfoData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepresentativeInfoData]
   }
   
-  @scala.inline
-  implicit class RepresentativeInfoDataMutableBuilder[Self <: RepresentativeInfoData] (val x: Self) extends AnyVal {
+  extension [Self <: RepresentativeInfoData](x: Self) {
     
-    @scala.inline
-    def setDivisions(
+    inline def setDivisions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
       */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[js.Any]
     ): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivisionsUndefined: Self = StObject.set(x, "divisions", js.undefined)
+    inline def setDivisionsUndefined: Self = StObject.set(x, "divisions", js.undefined)
     
-    @scala.inline
-    def setOffices(value: js.Array[Office]): Self = StObject.set(x, "offices", value.asInstanceOf[js.Any])
+    inline def setOffices(value: js.Array[Office]): Self = StObject.set(x, "offices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficesUndefined: Self = StObject.set(x, "offices", js.undefined)
+    inline def setOfficesUndefined: Self = StObject.set(x, "offices", js.undefined)
     
-    @scala.inline
-    def setOfficesVarargs(value: Office*): Self = StObject.set(x, "offices", js.Array(value :_*))
+    inline def setOfficesVarargs(value: Office*): Self = StObject.set(x, "offices", js.Array(value :_*))
     
-    @scala.inline
-    def setOfficials(value: js.Array[Official]): Self = StObject.set(x, "officials", value.asInstanceOf[js.Any])
+    inline def setOfficials(value: js.Array[Official]): Self = StObject.set(x, "officials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficialsUndefined: Self = StObject.set(x, "officials", js.undefined)
+    inline def setOfficialsUndefined: Self = StObject.set(x, "officials", js.undefined)
     
-    @scala.inline
-    def setOfficialsVarargs(value: Official*): Self = StObject.set(x, "officials", js.Array(value :_*))
+    inline def setOfficialsVarargs(value: Official*): Self = StObject.set(x, "officials", js.Array(value :_*))
   }
 }

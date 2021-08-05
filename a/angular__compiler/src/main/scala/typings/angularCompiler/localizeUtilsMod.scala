@@ -16,9 +16,7 @@ object localizeUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createLocalizeStatements(variable: ReadVarExpr, message: Message, params: StringDictionary[Expression]): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocalizeStatements")(variable.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
+  inline def createLocalizeStatements(variable: ReadVarExpr, message: Message, params: StringDictionary[Expression]): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocalizeStatements")(variable.asInstanceOf[js.Any], message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
   
-  @scala.inline
-  def serializeI18nMessageForLocalize(message: Message): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeI18nMessageForLocalize")(message.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
+  inline def serializeI18nMessageForLocalize(message: Message): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeI18nMessageForLocalize")(message.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
 }

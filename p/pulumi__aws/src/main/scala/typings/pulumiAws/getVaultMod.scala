@@ -12,10 +12,8 @@ object getVaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVault(args: GetVaultArgs): js.Promise[GetVaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVaultResult]]
-  @scala.inline
-  def getVault(args: GetVaultArgs, opts: InvokeOptions): js.Promise[GetVaultResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVaultResult]]
+  inline def getVault(args: GetVaultArgs): js.Promise[GetVaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVaultResult]]
+  inline def getVault(args: GetVaultArgs, opts: InvokeOptions): js.Promise[GetVaultResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVaultResult]]
   
   trait GetVaultArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getVaultMod {
   }
   object GetVaultArgs {
     
-    @scala.inline
-    def apply(name: String): GetVaultArgs = {
+    inline def apply(name: String): GetVaultArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVaultArgs]
     }
     
-    @scala.inline
-    implicit class GetVaultArgsMutableBuilder[Self <: GetVaultArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVaultArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -82,8 +75,7 @@ object getVaultMod {
   }
   object GetVaultResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       id: String,
       kmsKeyArn: String,
@@ -95,26 +87,19 @@ object getVaultMod {
       __obj.asInstanceOf[GetVaultResult]
     }
     
-    @scala.inline
-    implicit class GetVaultResultMutableBuilder[Self <: GetVaultResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVaultResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveryPoints(value: Double): Self = StObject.set(x, "recoveryPoints", value.asInstanceOf[js.Any])
+      inline def setRecoveryPoints(value: Double): Self = StObject.set(x, "recoveryPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

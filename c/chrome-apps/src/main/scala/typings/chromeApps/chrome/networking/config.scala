@@ -58,47 +58,34 @@ object config {
   }
   object NetworkInfo {
     
-    @scala.inline
-    def apply(Type: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]): NetworkInfo = {
+    inline def apply(Type: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]): NetworkInfo = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkInfo]
     }
     
-    @scala.inline
-    implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInfo](x: Self) {
       
-      @scala.inline
-      def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+      inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
+      inline def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
       
-      @scala.inline
-      def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+      inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGUIDUndefined: Self = StObject.set(x, "GUID", js.undefined)
+      inline def setGUIDUndefined: Self = StObject.set(x, "GUID", js.undefined)
       
-      @scala.inline
-      def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
+      inline def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
+      inline def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
       
-      @scala.inline
-      def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+      inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
+      inline def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
       
-      @scala.inline
-      def setSecurity(value: None | `WEP-PSK` | `WPA-PSK` | `WPA-EAP`): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: None | `WEP-PSK` | `WPA-PSK` | `WPA-EAP`): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
       
-      @scala.inline
-      def setType(value: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +98,16 @@ object config {
   }
   object NetworkInfoFilterHexSSID {
     
-    @scala.inline
-    def apply(): NetworkInfoFilterHexSSID = {
+    inline def apply(): NetworkInfoFilterHexSSID = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkInfoFilterHexSSID]
     }
     
-    @scala.inline
-    implicit class NetworkInfoFilterHexSSIDMutableBuilder[Self <: NetworkInfoFilterHexSSID] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInfoFilterHexSSID](x: Self) {
       
-      @scala.inline
-      def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
+      inline def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
+      inline def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
     }
   }
   
@@ -138,20 +121,16 @@ object config {
   }
   object NetworkInfoFilterSSID {
     
-    @scala.inline
-    def apply(): NetworkInfoFilterSSID = {
+    inline def apply(): NetworkInfoFilterSSID = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkInfoFilterSSID]
     }
     
-    @scala.inline
-    implicit class NetworkInfoFilterSSIDMutableBuilder[Self <: NetworkInfoFilterSSID] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInfoFilterSSID](x: Self) {
       
-      @scala.inline
-      def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+      inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
+      inline def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
     }
   }
 }

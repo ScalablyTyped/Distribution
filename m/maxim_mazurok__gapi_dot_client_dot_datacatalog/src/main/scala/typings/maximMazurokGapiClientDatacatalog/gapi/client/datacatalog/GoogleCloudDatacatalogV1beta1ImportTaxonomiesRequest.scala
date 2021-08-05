@@ -11,19 +11,15 @@ trait GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequestMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest](x: Self) {
     
-    @scala.inline
-    def setInlineSource(value: GoogleCloudDatacatalogV1beta1InlineSource): Self = StObject.set(x, "inlineSource", value.asInstanceOf[js.Any])
+    inline def setInlineSource(value: GoogleCloudDatacatalogV1beta1InlineSource): Self = StObject.set(x, "inlineSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineSourceUndefined: Self = StObject.set(x, "inlineSource", js.undefined)
+    inline def setInlineSourceUndefined: Self = StObject.set(x, "inlineSource", js.undefined)
   }
 }

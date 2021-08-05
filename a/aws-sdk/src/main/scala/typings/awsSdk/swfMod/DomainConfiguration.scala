@@ -13,16 +13,13 @@ trait DomainConfiguration extends StObject {
 }
 object DomainConfiguration {
   
-  @scala.inline
-  def apply(workflowExecutionRetentionPeriodInDays: DurationInDays): DomainConfiguration = {
+  inline def apply(workflowExecutionRetentionPeriodInDays: DurationInDays): DomainConfiguration = {
     val __obj = js.Dynamic.literal(workflowExecutionRetentionPeriodInDays = workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainConfiguration]
   }
   
-  @scala.inline
-  implicit class DomainConfigurationMutableBuilder[Self <: DomainConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DomainConfiguration](x: Self) {
     
-    @scala.inline
-    def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = StObject.set(x, "workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = StObject.set(x, "workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
   }
 }

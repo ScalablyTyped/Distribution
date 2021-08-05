@@ -19,8 +19,7 @@ object abstractPickerMod {
   @js.native
   abstract class default () extends AbstractPicker
   
-  @scala.inline
-  def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
+  inline def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
   
   @js.native
   trait AbstractPicker
@@ -38,7 +37,7 @@ object abstractPickerMod {
     
     def onVisibleChange(visible: Boolean): Unit = js.native
     
-    var scrollValue: js.Any = js.native
+    /* private */ var scrollValue: js.Any = js.native
     
     def setCasecadeScrollValue(v: js.Any): Unit = js.native
     
@@ -55,26 +54,20 @@ object abstractPickerMod {
   }
   object AbstractPickerProps {
     
-    @scala.inline
-    def apply(data: js.Array[js.Array[PickerData] | PickerData]): AbstractPickerProps = {
+    inline def apply(data: js.Array[js.Array[PickerData] | PickerData]): AbstractPickerProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbstractPickerProps]
     }
     
-    @scala.inline
-    implicit class AbstractPickerPropsMutableBuilder[Self <: AbstractPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractPickerProps](x: Self) {
       
-      @scala.inline
-      def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
+      inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerPrefixClsUndefined: Self = StObject.set(x, "pickerPrefixCls", js.undefined)
+      inline def setPickerPrefixClsUndefined: Self = StObject.set(x, "pickerPrefixCls", js.undefined)
       
-      @scala.inline
-      def setPopupPrefixCls(value: String): Self = StObject.set(x, "popupPrefixCls", value.asInstanceOf[js.Any])
+      inline def setPopupPrefixCls(value: String): Self = StObject.set(x, "popupPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupPrefixClsUndefined: Self = StObject.set(x, "popupPrefixCls", js.undefined)
+      inline def setPopupPrefixClsUndefined: Self = StObject.set(x, "popupPrefixCls", js.undefined)
     }
   }
 }

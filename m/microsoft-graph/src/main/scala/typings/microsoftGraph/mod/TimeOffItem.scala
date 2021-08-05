@@ -13,22 +13,17 @@ trait TimeOffItem
 }
 object TimeOffItem {
   
-  @scala.inline
-  def apply(): TimeOffItem = {
+  inline def apply(): TimeOffItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeOffItem]
   }
   
-  @scala.inline
-  implicit class TimeOffItemMutableBuilder[Self <: TimeOffItem] (val x: Self) extends AnyVal {
+  extension [Self <: TimeOffItem](x: Self) {
     
-    @scala.inline
-    def setTimeOffReasonId(value: NullableOption[String]): Self = StObject.set(x, "timeOffReasonId", value.asInstanceOf[js.Any])
+    inline def setTimeOffReasonId(value: NullableOption[String]): Self = StObject.set(x, "timeOffReasonId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffReasonIdNull: Self = StObject.set(x, "timeOffReasonId", null)
+    inline def setTimeOffReasonIdNull: Self = StObject.set(x, "timeOffReasonId", null)
     
-    @scala.inline
-    def setTimeOffReasonIdUndefined: Self = StObject.set(x, "timeOffReasonId", js.undefined)
+    inline def setTimeOffReasonIdUndefined: Self = StObject.set(x, "timeOffReasonId", js.undefined)
   }
 }

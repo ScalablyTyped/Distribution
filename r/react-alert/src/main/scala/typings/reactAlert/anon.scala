@@ -13,17 +13,14 @@ object anon {
   }
   object Alert {
     
-    @scala.inline
-    def apply(alert: AlertManager): Alert = {
+    inline def apply(alert: AlertManager): Alert = {
       val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alert]
     }
     
-    @scala.inline
-    implicit class AlertMutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
+    extension [Self <: Alert](x: Self) {
       
-      @scala.inline
-      def setAlert(value: AlertManager): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: AlertManager): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     }
   }
 }

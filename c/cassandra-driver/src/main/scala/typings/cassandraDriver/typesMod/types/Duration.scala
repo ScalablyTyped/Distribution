@@ -22,10 +22,8 @@ object Duration {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromBuffer(buffer: Buffer): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def fromBuffer(buffer: Buffer): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def fromString(input: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def fromString(input: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any]).asInstanceOf[Duration]
 }

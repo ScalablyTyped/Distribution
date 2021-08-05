@@ -27,8 +27,7 @@ trait LoggingOptions extends StObject {
 }
 object LoggingOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activityId: String,
     keywords: Double,
     opcode: LoggingOpcode,
@@ -40,25 +39,18 @@ object LoggingOptions {
     __obj.asInstanceOf[LoggingOptions]
   }
   
-  @scala.inline
-  implicit class LoggingOptionsMutableBuilder[Self <: LoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingOptions](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords(value: Double): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: Double): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpcode(value: LoggingOpcode): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
+    inline def setOpcode(value: LoggingOpcode): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedActivityId(value: String): Self = StObject.set(x, "relatedActivityId", value.asInstanceOf[js.Any])
+    inline def setRelatedActivityId(value: String): Self = StObject.set(x, "relatedActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: Double): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: Double): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
   }
 }

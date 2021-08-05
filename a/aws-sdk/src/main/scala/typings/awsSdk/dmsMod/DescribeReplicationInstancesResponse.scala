@@ -18,28 +18,21 @@ trait DescribeReplicationInstancesResponse extends StObject {
 }
 object DescribeReplicationInstancesResponse {
   
-  @scala.inline
-  def apply(): DescribeReplicationInstancesResponse = {
+  inline def apply(): DescribeReplicationInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationInstancesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationInstancesResponseMutableBuilder[Self <: DescribeReplicationInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationInstances(value: ReplicationInstanceList): Self = StObject.set(x, "ReplicationInstances", value.asInstanceOf[js.Any])
+    inline def setReplicationInstances(value: ReplicationInstanceList): Self = StObject.set(x, "ReplicationInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstancesUndefined: Self = StObject.set(x, "ReplicationInstances", js.undefined)
+    inline def setReplicationInstancesUndefined: Self = StObject.set(x, "ReplicationInstances", js.undefined)
     
-    @scala.inline
-    def setReplicationInstancesVarargs(value: ReplicationInstance*): Self = StObject.set(x, "ReplicationInstances", js.Array(value :_*))
+    inline def setReplicationInstancesVarargs(value: ReplicationInstance*): Self = StObject.set(x, "ReplicationInstances", js.Array(value :_*))
   }
 }

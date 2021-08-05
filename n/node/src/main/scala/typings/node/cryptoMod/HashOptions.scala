@@ -17,19 +17,15 @@ trait HashOptions
 }
 object HashOptions {
   
-  @scala.inline
-  def apply(): HashOptions = {
+  inline def apply(): HashOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HashOptions]
   }
   
-  @scala.inline
-  implicit class HashOptionsMutableBuilder[Self <: HashOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HashOptions](x: Self) {
     
-    @scala.inline
-    def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
+    inline def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLengthUndefined: Self = StObject.set(x, "outputLength", js.undefined)
+    inline def setOutputLengthUndefined: Self = StObject.set(x, "outputLength", js.undefined)
   }
 }

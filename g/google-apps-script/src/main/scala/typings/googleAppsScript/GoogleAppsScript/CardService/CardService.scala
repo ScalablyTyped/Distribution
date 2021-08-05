@@ -136,8 +136,7 @@ trait CardService extends StObject {
 }
 object CardService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComposedEmailType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ComposedEmailType */ js.Any,
     ContentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any,
     Icon: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ js.Any,
@@ -185,144 +184,101 @@ object CardService {
     __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.CardService.CardService]
   }
   
-  @scala.inline
-  implicit class CardServiceMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.CardService.CardService] (val x: Self) extends AnyVal {
+  extension [Self <: typings.googleAppsScript.GoogleAppsScript.CardService.CardService](x: Self) {
     
-    @scala.inline
-    def setComposedEmailType(
+    inline def setComposedEmailType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ComposedEmailType */ js.Any
     ): Self = StObject.set(x, "ComposedEmailType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ js.Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ js.Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImageStyle */ js.Any): Self = StObject.set(x, "ImageStyle", value.asInstanceOf[js.Any])
+    inline def setImageStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImageStyle */ js.Any): Self = StObject.set(x, "ImageStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadIndicator(
+    inline def setLoadIndicator(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LoadIndicator */ js.Any
     ): Self = StObject.set(x, "LoadIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAction(value: () => Action): Self = StObject.set(x, "newAction", js.Any.fromFunction0(value))
+    inline def setNewAction(value: () => Action): Self = StObject.set(x, "newAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewActionResponseBuilder(value: () => ActionResponseBuilder): Self = StObject.set(x, "newActionResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewActionResponseBuilder(value: () => ActionResponseBuilder): Self = StObject.set(x, "newActionResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewAuthorizationAction(value: () => AuthorizationAction): Self = StObject.set(x, "newAuthorizationAction", js.Any.fromFunction0(value))
+    inline def setNewAuthorizationAction(value: () => AuthorizationAction): Self = StObject.set(x, "newAuthorizationAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewAuthorizationException(value: () => AuthorizationException): Self = StObject.set(x, "newAuthorizationException", js.Any.fromFunction0(value))
+    inline def setNewAuthorizationException(value: () => AuthorizationException): Self = StObject.set(x, "newAuthorizationException", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewButtonSet(value: () => ButtonSet): Self = StObject.set(x, "newButtonSet", js.Any.fromFunction0(value))
+    inline def setNewButtonSet(value: () => ButtonSet): Self = StObject.set(x, "newButtonSet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCalendarEventActionResponseBuilder(value: () => CalendarEventActionResponseBuilder): Self = StObject.set(x, "newCalendarEventActionResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewCalendarEventActionResponseBuilder(value: () => CalendarEventActionResponseBuilder): Self = StObject.set(x, "newCalendarEventActionResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCardAction(value: () => CardAction): Self = StObject.set(x, "newCardAction", js.Any.fromFunction0(value))
+    inline def setNewCardAction(value: () => CardAction): Self = StObject.set(x, "newCardAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCardBuilder(value: () => CardBuilder): Self = StObject.set(x, "newCardBuilder", js.Any.fromFunction0(value))
+    inline def setNewCardBuilder(value: () => CardBuilder): Self = StObject.set(x, "newCardBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCardHeader(value: () => CardHeader): Self = StObject.set(x, "newCardHeader", js.Any.fromFunction0(value))
+    inline def setNewCardHeader(value: () => CardHeader): Self = StObject.set(x, "newCardHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCardSection(value: () => CardSection): Self = StObject.set(x, "newCardSection", js.Any.fromFunction0(value))
+    inline def setNewCardSection(value: () => CardSection): Self = StObject.set(x, "newCardSection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewComposeActionResponseBuilder(value: () => ComposeActionResponseBuilder): Self = StObject.set(x, "newComposeActionResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewComposeActionResponseBuilder(value: () => ComposeActionResponseBuilder): Self = StObject.set(x, "newComposeActionResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDatePicker(value: () => DatePicker): Self = StObject.set(x, "newDatePicker", js.Any.fromFunction0(value))
+    inline def setNewDatePicker(value: () => DatePicker): Self = StObject.set(x, "newDatePicker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDateTimePicker(value: () => DateTimePicker): Self = StObject.set(x, "newDateTimePicker", js.Any.fromFunction0(value))
+    inline def setNewDateTimePicker(value: () => DateTimePicker): Self = StObject.set(x, "newDateTimePicker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDriveItemsSelectedActionResponseBuilder(value: () => DriveItemsSelectedActionResponseBuilder): Self = StObject.set(x, "newDriveItemsSelectedActionResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewDriveItemsSelectedActionResponseBuilder(value: () => DriveItemsSelectedActionResponseBuilder): Self = StObject.set(x, "newDriveItemsSelectedActionResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFixedFooter(value: () => FixedFooter): Self = StObject.set(x, "newFixedFooter", js.Any.fromFunction0(value))
+    inline def setNewFixedFooter(value: () => FixedFooter): Self = StObject.set(x, "newFixedFooter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewImage(value: () => Image): Self = StObject.set(x, "newImage", js.Any.fromFunction0(value))
+    inline def setNewImage(value: () => Image): Self = StObject.set(x, "newImage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewImageButton(value: () => ImageButton): Self = StObject.set(x, "newImageButton", js.Any.fromFunction0(value))
+    inline def setNewImageButton(value: () => ImageButton): Self = StObject.set(x, "newImageButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewKeyValue(value: () => KeyValue): Self = StObject.set(x, "newKeyValue", js.Any.fromFunction0(value))
+    inline def setNewKeyValue(value: () => KeyValue): Self = StObject.set(x, "newKeyValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewNavigation(value: () => Navigation): Self = StObject.set(x, "newNavigation", js.Any.fromFunction0(value))
+    inline def setNewNavigation(value: () => Navigation): Self = StObject.set(x, "newNavigation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewNotification(value: () => Notification): Self = StObject.set(x, "newNotification", js.Any.fromFunction0(value))
+    inline def setNewNotification(value: () => Notification): Self = StObject.set(x, "newNotification", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOpenLink(value: () => OpenLink): Self = StObject.set(x, "newOpenLink", js.Any.fromFunction0(value))
+    inline def setNewOpenLink(value: () => OpenLink): Self = StObject.set(x, "newOpenLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSelectionInput(value: () => SelectionInput): Self = StObject.set(x, "newSelectionInput", js.Any.fromFunction0(value))
+    inline def setNewSelectionInput(value: () => SelectionInput): Self = StObject.set(x, "newSelectionInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSuggestions(value: () => Suggestions): Self = StObject.set(x, "newSuggestions", js.Any.fromFunction0(value))
+    inline def setNewSuggestions(value: () => Suggestions): Self = StObject.set(x, "newSuggestions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSuggestionsResponseBuilder(value: () => SuggestionsResponseBuilder): Self = StObject.set(x, "newSuggestionsResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewSuggestionsResponseBuilder(value: () => SuggestionsResponseBuilder): Self = StObject.set(x, "newSuggestionsResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSwitch(value: () => Switch): Self = StObject.set(x, "newSwitch", js.Any.fromFunction0(value))
+    inline def setNewSwitch(value: () => Switch): Self = StObject.set(x, "newSwitch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextButton(value: () => TextButton): Self = StObject.set(x, "newTextButton", js.Any.fromFunction0(value))
+    inline def setNewTextButton(value: () => TextButton): Self = StObject.set(x, "newTextButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextInput(value: () => TextInput): Self = StObject.set(x, "newTextInput", js.Any.fromFunction0(value))
+    inline def setNewTextInput(value: () => TextInput): Self = StObject.set(x, "newTextInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextParagraph(value: () => TextParagraph): Self = StObject.set(x, "newTextParagraph", js.Any.fromFunction0(value))
+    inline def setNewTextParagraph(value: () => TextParagraph): Self = StObject.set(x, "newTextParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUniversalActionResponseBuilder(value: () => UniversalActionResponseBuilder): Self = StObject.set(x, "newUniversalActionResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewUniversalActionResponseBuilder(value: () => UniversalActionResponseBuilder): Self = StObject.set(x, "newUniversalActionResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateDraftActionResponseBuilder(value: () => UpdateDraftActionResponseBuilder): Self = StObject.set(x, "newUpdateDraftActionResponseBuilder", js.Any.fromFunction0(value))
+    inline def setNewUpdateDraftActionResponseBuilder(value: () => UpdateDraftActionResponseBuilder): Self = StObject.set(x, "newUpdateDraftActionResponseBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateDraftBodyAction(value: () => UpdateDraftBodyAction): Self = StObject.set(x, "newUpdateDraftBodyAction", js.Any.fromFunction0(value))
+    inline def setNewUpdateDraftBodyAction(value: () => UpdateDraftBodyAction): Self = StObject.set(x, "newUpdateDraftBodyAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClose(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OnClose */ js.Any): Self = StObject.set(x, "OnClose", value.asInstanceOf[js.Any])
+    inline def setOnClose(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OnClose */ js.Any): Self = StObject.set(x, "OnClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenAs(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OpenAs */ js.Any): Self = StObject.set(x, "OpenAs", value.asInstanceOf[js.Any])
+    inline def setOpenAs(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OpenAs */ js.Any): Self = StObject.set(x, "OpenAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionInputType(
+    inline def setSelectionInputType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionInputType */ js.Any
     ): Self = StObject.set(x, "SelectionInputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchControlType(
+    inline def setSwitchControlType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SwitchControlType */ js.Any
     ): Self = StObject.set(x, "SwitchControlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextButtonStyle(
+    inline def setTextButtonStyle(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextButtonStyle */ js.Any
     ): Self = StObject.set(x, "TextButtonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDraftBodyType(
+    inline def setUpdateDraftBodyType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UpdateDraftBodyType */ js.Any
     ): Self = StObject.set(x, "UpdateDraftBodyType", value.asInstanceOf[js.Any])
   }

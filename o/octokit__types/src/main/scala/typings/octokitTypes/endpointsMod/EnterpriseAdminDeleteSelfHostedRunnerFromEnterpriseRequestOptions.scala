@@ -20,25 +20,19 @@ trait EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions extends 
 }
 object EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/enterprises/:enterprise/actions/runners/:runner_id")
     __obj.asInstanceOf[EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptionsMutableBuilder[Self <: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashColonrunner_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashColonrunner_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

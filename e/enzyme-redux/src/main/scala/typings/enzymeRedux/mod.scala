@@ -14,15 +14,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mountWithState[P](Component: ReactElement, state: js.Any): ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithState")(Component.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def mountWithState[P](Component: ReactElement, state: js.Any): ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithState")(Component.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
   
-  @scala.inline
-  def mountWithStore[P](Component: ReactElement, store: js.Any): ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithStore")(Component.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def mountWithStore[P](Component: ReactElement, store: js.Any): ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithStore")(Component.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
   
-  @scala.inline
-  def shallowWithState[P](Component: ReactElement, state: js.Any): ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithState")(Component.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def shallowWithState[P](Component: ReactElement, state: js.Any): ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithState")(Component.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
   
-  @scala.inline
-  def shallowWithStore[P](Component: ReactElement, store: js.Any): ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithStore")(Component.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def shallowWithStore[P](Component: ReactElement, store: js.Any): ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithStore")(Component.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, js.Object, Component[js.Object, js.Object, js.Any]]]
 }

@@ -196,38 +196,28 @@ object clustering {
     }
     object ClusteringOptions {
       
-      @scala.inline
-      def apply(): ClusteringOptions = {
+      inline def apply(): ClusteringOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ClusteringOptions]
       }
       
-      @scala.inline
-      implicit class ClusteringOptionsMutableBuilder[Self <: ClusteringOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ClusteringOptions](x: Self) {
         
-        @scala.inline
-        def setEps(value: Double): Self = StObject.set(x, "eps", value.asInstanceOf[js.Any])
+        inline def setEps(value: Double): Self = StObject.set(x, "eps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEpsUndefined: Self = StObject.set(x, "eps", js.undefined)
+        inline def setEpsUndefined: Self = StObject.set(x, "eps", js.undefined)
         
-        @scala.inline
-        def setMinWeight(value: Double): Self = StObject.set(x, "minWeight", value.asInstanceOf[js.Any])
+        inline def setMinWeight(value: Double): Self = StObject.set(x, "minWeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinWeightUndefined: Self = StObject.set(x, "minWeight", js.undefined)
+        inline def setMinWeightUndefined: Self = StObject.set(x, "minWeight", js.undefined)
         
-        @scala.inline
-        def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+        inline def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+        inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
         
-        @scala.inline
-        def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+        inline def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+        inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       }
     }
     
@@ -250,38 +240,28 @@ object clustering {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setClusteringOptions(value: ClusteringOptions): Self = StObject.set(x, "clusteringOptions", value.asInstanceOf[js.Any])
+        inline def setClusteringOptions(value: ClusteringOptions): Self = StObject.set(x, "clusteringOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClusteringOptionsUndefined: Self = StObject.set(x, "clusteringOptions", js.undefined)
+        inline def setClusteringOptionsUndefined: Self = StObject.set(x, "clusteringOptions", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+        inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       }
     }
   }
@@ -309,26 +289,20 @@ object clustering {
   }
   object DataPoint {
     
-    @scala.inline
-    def apply(alt: Altitude, ctx: AltitudeContext, data: js.Any, lat: Latitude, lng: Longitude, wt: Double): DataPoint = {
+    inline def apply(alt: Altitude, ctx: AltitudeContext, data: js.Any, lat: Latitude, lng: Longitude, wt: Double): DataPoint = {
       val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], wt = wt.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataPoint]
     }
     
-    @scala.inline
-    implicit class DataPointMutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
+    extension [Self <: DataPoint](x: Self) {
       
-      @scala.inline
-      def setAlt(value: Altitude): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: Altitude): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtx(value: AltitudeContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: AltitudeContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWt(value: Double): Self = StObject.set(x, "wt", value.asInstanceOf[js.Any])
+      inline def setWt(value: Double): Self = StObject.set(x, "wt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,8 +362,7 @@ object clustering {
   }
   object ICluster {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachDataPoint: js.Function1[/* noise */ INoisePoint, Unit] => Unit,
       forEachEntry: js.Function1[/* result */ IResult, Unit] => Unit,
       getBounds: () => Rect,
@@ -403,32 +376,23 @@ object clustering {
       __obj.asInstanceOf[ICluster]
     }
     
-    @scala.inline
-    implicit class IClusterMutableBuilder[Self <: ICluster] (val x: Self) extends AnyVal {
+    extension [Self <: ICluster](x: Self) {
       
-      @scala.inline
-      def setForEachDataPoint(value: js.Function1[/* noise */ INoisePoint, Unit] => Unit): Self = StObject.set(x, "forEachDataPoint", js.Any.fromFunction1(value))
+      inline def setForEachDataPoint(value: js.Function1[/* noise */ INoisePoint, Unit] => Unit): Self = StObject.set(x, "forEachDataPoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEachEntry(value: js.Function1[/* result */ IResult, Unit] => Unit): Self = StObject.set(x, "forEachEntry", js.Any.fromFunction1(value))
+      inline def setForEachEntry(value: js.Function1[/* result */ IResult, Unit] => Unit): Self = StObject.set(x, "forEachEntry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBounds(value: () => Rect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+      inline def setGetBounds(value: () => Rect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+      inline def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+      inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
+      inline def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
     }
   }
   
@@ -469,8 +433,7 @@ object clustering {
   }
   object INoisePoint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getData: () => js.Any,
       getMinZoom: () => Double,
       getPosition: () => Point,
@@ -481,23 +444,17 @@ object clustering {
       __obj.asInstanceOf[INoisePoint]
     }
     
-    @scala.inline
-    implicit class INoisePointMutableBuilder[Self <: INoisePoint] (val x: Self) extends AnyVal {
+    extension [Self <: INoisePoint](x: Self) {
       
-      @scala.inline
-      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+      inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
+      inline def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
     }
   }
   
@@ -532,8 +489,7 @@ object clustering {
   }
   object IResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMinZoom: () => Double,
       getPosition: () => Point,
       getWeight: () => Double,
@@ -543,20 +499,15 @@ object clustering {
       __obj.asInstanceOf[IResult]
     }
     
-    @scala.inline
-    implicit class IResultMutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
+    extension [Self <: IResult](x: Self) {
       
-      @scala.inline
-      def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+      inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
+      inline def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
     }
   }
   
@@ -581,20 +532,16 @@ object clustering {
   }
   object ITheme {
     
-    @scala.inline
-    def apply(getClusterPresentation: ICluster => Object, getNoisePresentation: INoisePoint => Object): ITheme = {
+    inline def apply(getClusterPresentation: ICluster => Object, getNoisePresentation: INoisePoint => Object): ITheme = {
       val __obj = js.Dynamic.literal(getClusterPresentation = js.Any.fromFunction1(getClusterPresentation), getNoisePresentation = js.Any.fromFunction1(getNoisePresentation))
       __obj.asInstanceOf[ITheme]
     }
     
-    @scala.inline
-    implicit class IThemeMutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
+    extension [Self <: ITheme](x: Self) {
       
-      @scala.inline
-      def setGetClusterPresentation(value: ICluster => Object): Self = StObject.set(x, "getClusterPresentation", js.Any.fromFunction1(value))
+      inline def setGetClusterPresentation(value: ICluster => Object): Self = StObject.set(x, "getClusterPresentation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNoisePresentation(value: INoisePoint => Object): Self = StObject.set(x, "getNoisePresentation", js.Any.fromFunction1(value))
+      inline def setGetNoisePresentation(value: INoisePoint => Object): Self = StObject.set(x, "getNoisePresentation", js.Any.fromFunction1(value))
     }
   }
 }

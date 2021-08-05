@@ -60,21 +60,16 @@ object userProfileMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserProfileState): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserProfileState, opts: CustomResourceOptions): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    inline def get(name: String, id: Input[ID]): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    inline def get(name: String, id: Input[ID], state: UserProfileState): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
+    inline def get(name: String, id: Input[ID], state: UserProfileState, opts: CustomResourceOptions): UserProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserProfile]
     
     /**
       * Returns true if the given object is an instance of UserProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ Boolean]
   }
   
   trait UserProfileArgs extends StObject {
@@ -101,32 +96,24 @@ object userProfileMod {
   }
   object UserProfileArgs {
     
-    @scala.inline
-    def apply(sshUsername: Input[String], userArn: Input[String]): UserProfileArgs = {
+    inline def apply(sshUsername: Input[String], userArn: Input[String]): UserProfileArgs = {
       val __obj = js.Dynamic.literal(sshUsername = sshUsername.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserProfileArgs]
     }
     
-    @scala.inline
-    implicit class UserProfileArgsMutableBuilder[Self <: UserProfileArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserProfileArgs](x: Self) {
       
-      @scala.inline
-      def setAllowSelfManagement(value: Input[Boolean]): Self = StObject.set(x, "allowSelfManagement", value.asInstanceOf[js.Any])
+      inline def setAllowSelfManagement(value: Input[Boolean]): Self = StObject.set(x, "allowSelfManagement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSelfManagementUndefined: Self = StObject.set(x, "allowSelfManagement", js.undefined)
+      inline def setAllowSelfManagementUndefined: Self = StObject.set(x, "allowSelfManagement", js.undefined)
       
-      @scala.inline
-      def setSshPublicKey(value: Input[String]): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
+      inline def setSshPublicKey(value: Input[String]): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
+      inline def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
       
-      @scala.inline
-      def setSshUsername(value: Input[String]): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
+      inline def setSshUsername(value: Input[String]): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+      inline def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,38 +141,28 @@ object userProfileMod {
   }
   object UserProfileState {
     
-    @scala.inline
-    def apply(): UserProfileState = {
+    inline def apply(): UserProfileState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserProfileState]
     }
     
-    @scala.inline
-    implicit class UserProfileStateMutableBuilder[Self <: UserProfileState] (val x: Self) extends AnyVal {
+    extension [Self <: UserProfileState](x: Self) {
       
-      @scala.inline
-      def setAllowSelfManagement(value: Input[Boolean]): Self = StObject.set(x, "allowSelfManagement", value.asInstanceOf[js.Any])
+      inline def setAllowSelfManagement(value: Input[Boolean]): Self = StObject.set(x, "allowSelfManagement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSelfManagementUndefined: Self = StObject.set(x, "allowSelfManagement", js.undefined)
+      inline def setAllowSelfManagementUndefined: Self = StObject.set(x, "allowSelfManagement", js.undefined)
       
-      @scala.inline
-      def setSshPublicKey(value: Input[String]): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
+      inline def setSshPublicKey(value: Input[String]): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
+      inline def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
       
-      @scala.inline
-      def setSshUsername(value: Input[String]): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
+      inline def setSshUsername(value: Input[String]): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSshUsernameUndefined: Self = StObject.set(x, "sshUsername", js.undefined)
+      inline def setSshUsernameUndefined: Self = StObject.set(x, "sshUsername", js.undefined)
       
-      @scala.inline
-      def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+      inline def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
+      inline def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
     }
   }
 }

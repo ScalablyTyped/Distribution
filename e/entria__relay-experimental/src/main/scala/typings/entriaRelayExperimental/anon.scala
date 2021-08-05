@@ -19,23 +19,18 @@ object anon {
   }
   object Cursor {
     
-    @scala.inline
-    def apply(hasMore: Boolean): Cursor = {
+    inline def apply(hasMore: Boolean): Cursor = {
       val __obj = js.Dynamic.literal(hasMore = hasMore.asInstanceOf[js.Any], cursor = null)
       __obj.asInstanceOf[Cursor]
     }
     
-    @scala.inline
-    implicit class CursorMutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
+    extension [Self <: Cursor](x: Self) {
       
-      @scala.inline
-      def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorNull: Self = StObject.set(x, "cursor", null)
+      inline def setCursorNull: Self = StObject.set(x, "cursor", null)
       
-      @scala.inline
-      def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+      inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,8 +46,7 @@ object anon {
   }
   object Environment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       environment: typings.relayRuntime.relayStoreTypesMod.Environment,
       fragmentIdentifier: String,
       `type`: String
@@ -62,17 +56,13 @@ object anon {
       __obj.asInstanceOf[Environment]
     }
     
-    @scala.inline
-    implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+    extension [Self <: Environment](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
+      inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,32 +76,24 @@ object anon {
   }
   object FetchKey {
     
-    @scala.inline
-    def apply(): FetchKey = {
+    inline def apply(): FetchKey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchKey]
     }
     
-    @scala.inline
-    implicit class FetchKeyMutableBuilder[Self <: FetchKey] (val x: Self) extends AnyVal {
+    extension [Self <: FetchKey](x: Self) {
       
-      @scala.inline
-      def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
+      inline def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchKeyUndefined: Self = StObject.set(x, "fetchKey", js.undefined)
+      inline def setFetchKeyUndefined: Self = StObject.set(x, "fetchKey", js.undefined)
       
-      @scala.inline
-      def setFetchPolicy(value: typings.entriaRelayExperimental.queryResourceMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: typings.entriaRelayExperimental.queryResourceMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      @scala.inline
-      def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
+      inline def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
+      inline def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
     }
   }
   
@@ -133,8 +115,7 @@ object anon {
   }
   object FetchPolicy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       environment: typings.relayRuntime.relayStoreTypesMod.Environment,
       refetchVariables: Variables,
       `type`: String
@@ -144,35 +125,25 @@ object anon {
       __obj.asInstanceOf[FetchPolicy]
     }
     
-    @scala.inline
-    implicit class FetchPolicyMutableBuilder[Self <: FetchPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: FetchPolicy](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicy(value: typings.entriaRelayExperimental.queryResourceMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: typings.entriaRelayExperimental.queryResourceMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* args */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* args */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setRefetchVariables(value: Variables): Self = StObject.set(x, "refetchVariables", value.asInstanceOf[js.Any])
+      inline def setRefetchVariables(value: Variables): Self = StObject.set(x, "refetchVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
+      inline def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
+      inline def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,20 +153,16 @@ object anon {
   }
   object NetworkCacheConfig {
     
-    @scala.inline
-    def apply(): NetworkCacheConfig = {
+    inline def apply(): NetworkCacheConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkCacheConfig]
     }
     
-    @scala.inline
-    implicit class NetworkCacheConfigMutableBuilder[Self <: NetworkCacheConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkCacheConfig](x: Self) {
       
-      @scala.inline
-      def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
+      inline def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
+      inline def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
     }
   }
   
@@ -205,20 +172,16 @@ object anon {
   }
   object OnComplete {
     
-    @scala.inline
-    def apply(): OnComplete = {
+    inline def apply(): OnComplete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnComplete]
     }
     
-    @scala.inline
-    implicit class OnCompleteMutableBuilder[Self <: OnComplete] (val x: Self) extends AnyVal {
+    extension [Self <: OnComplete](x: Self) {
       
-      @scala.inline
-      def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     }
   }
 }

@@ -34,40 +34,29 @@ trait TaskDefinitionVolumeDockerVolumeConfiguration extends StObject {
 }
 object TaskDefinitionVolumeDockerVolumeConfiguration {
   
-  @scala.inline
-  def apply(scope: String): TaskDefinitionVolumeDockerVolumeConfiguration = {
+  inline def apply(scope: String): TaskDefinitionVolumeDockerVolumeConfiguration = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionVolumeDockerVolumeConfiguration]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionVolumeDockerVolumeConfigurationMutableBuilder[Self <: TaskDefinitionVolumeDockerVolumeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionVolumeDockerVolumeConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoprovision(value: Boolean): Self = StObject.set(x, "autoprovision", value.asInstanceOf[js.Any])
+    inline def setAutoprovision(value: Boolean): Self = StObject.set(x, "autoprovision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoprovisionUndefined: Self = StObject.set(x, "autoprovision", js.undefined)
+    inline def setAutoprovisionUndefined: Self = StObject.set(x, "autoprovision", js.undefined)
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverOpts(value: StringDictionary[String]): Self = StObject.set(x, "driverOpts", value.asInstanceOf[js.Any])
+    inline def setDriverOpts(value: StringDictionary[String]): Self = StObject.set(x, "driverOpts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverOptsUndefined: Self = StObject.set(x, "driverOpts", js.undefined)
+    inline def setDriverOptsUndefined: Self = StObject.set(x, "driverOpts", js.undefined)
     
-    @scala.inline
-    def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
+    inline def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

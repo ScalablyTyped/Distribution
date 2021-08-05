@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Accessor extends StObject {
   
   /* protected */ def _get(propertyName: String): js.Any = js.native
-  @JSName("_get")
-  /* protected */ def _get_T_T[T](propertyName: String): T = js.native
+  /* protected */ @JSName("_get")
+  def _get_T_T[T](propertyName: String): T = js.native
   
   /* protected */ def _set[T](propertyName: String, value: T): this.type = js.native
   

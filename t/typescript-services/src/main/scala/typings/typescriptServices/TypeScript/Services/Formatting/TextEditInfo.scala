@@ -14,22 +14,17 @@ trait TextEditInfo extends StObject {
 }
 object TextEditInfo {
   
-  @scala.inline
-  def apply(length: Double, position: Double, replaceWith: String): TextEditInfo = {
+  inline def apply(length: Double, position: Double, replaceWith: String): TextEditInfo = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], replaceWith = replaceWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEditInfo]
   }
   
-  @scala.inline
-  implicit class TextEditInfoMutableBuilder[Self <: TextEditInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditInfo](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceWith(value: String): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
+    inline def setReplaceWith(value: String): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
   }
 }

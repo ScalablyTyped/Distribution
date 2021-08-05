@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebsiteType extends StObject
 object WebsiteType {
   
-  @scala.inline
-  def blog: typings.microsoftGraph.microsoftGraphStrings.blog = "blog".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blog]
+  inline def blog: typings.microsoftGraph.microsoftGraphStrings.blog = "blog".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blog]
   
-  @scala.inline
-  def home: typings.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.home]
+  inline def home: typings.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.home]
   
-  @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
+  inline def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   
-  @scala.inline
-  def profile: typings.microsoftGraph.microsoftGraphStrings.profile = "profile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.profile]
+  inline def profile: typings.microsoftGraph.microsoftGraphStrings.profile = "profile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.profile]
   
-  @scala.inline
-  def work: typings.microsoftGraph.microsoftGraphStrings.work = "work".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.work]
+  inline def work: typings.microsoftGraph.microsoftGraphStrings.work = "work".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.work]
 }

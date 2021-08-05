@@ -20,37 +20,27 @@ trait ReverseSshConnectivity extends StObject {
 }
 object ReverseSshConnectivity {
   
-  @scala.inline
-  def apply(): ReverseSshConnectivity = {
+  inline def apply(): ReverseSshConnectivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReverseSshConnectivity]
   }
   
-  @scala.inline
-  implicit class ReverseSshConnectivityMutableBuilder[Self <: ReverseSshConnectivity] (val x: Self) extends AnyVal {
+  extension [Self <: ReverseSshConnectivity](x: Self) {
     
-    @scala.inline
-    def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
+    inline def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIp(value: String): Self = StObject.set(x, "vmIp", value.asInstanceOf[js.Any])
+    inline def setVmIp(value: String): Self = StObject.set(x, "vmIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIpUndefined: Self = StObject.set(x, "vmIp", js.undefined)
+    inline def setVmIpUndefined: Self = StObject.set(x, "vmIp", js.undefined)
     
-    @scala.inline
-    def setVmPort(value: Double): Self = StObject.set(x, "vmPort", value.asInstanceOf[js.Any])
+    inline def setVmPort(value: Double): Self = StObject.set(x, "vmPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmPortUndefined: Self = StObject.set(x, "vmPort", js.undefined)
+    inline def setVmPortUndefined: Self = StObject.set(x, "vmPort", js.undefined)
     
-    @scala.inline
-    def setVmUndefined: Self = StObject.set(x, "vm", js.undefined)
+    inline def setVmUndefined: Self = StObject.set(x, "vm", js.undefined)
     
-    @scala.inline
-    def setVpc(value: String): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: String): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
+    inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
   }
 }

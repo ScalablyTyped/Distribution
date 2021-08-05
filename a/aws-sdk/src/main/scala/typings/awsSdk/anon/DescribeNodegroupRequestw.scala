@@ -24,25 +24,19 @@ trait DescribeNodegroupRequestw extends StObject {
 }
 object DescribeNodegroupRequestw {
   
-  @scala.inline
-  def apply(clusterName: String, nodegroupName: String): DescribeNodegroupRequestw = {
+  inline def apply(clusterName: String, nodegroupName: String): DescribeNodegroupRequestw = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNodegroupRequestw]
   }
   
-  @scala.inline
-  implicit class DescribeNodegroupRequestwMutableBuilder[Self <: DescribeNodegroupRequestw] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNodegroupRequestw](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
   }
 }

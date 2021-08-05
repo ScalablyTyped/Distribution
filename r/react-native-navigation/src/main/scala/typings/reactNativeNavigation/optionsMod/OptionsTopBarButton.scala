@@ -107,118 +107,81 @@ trait OptionsTopBarButton extends StObject {
 }
 object OptionsTopBarButton {
   
-  @scala.inline
-  def apply(id: String): OptionsTopBarButton = {
+  inline def apply(id: String): OptionsTopBarButton = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarButton]
   }
   
-  @scala.inline
-  implicit class OptionsTopBarButtonMutableBuilder[Self <: OptionsTopBarButton] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsTopBarButton](x: Self) {
     
-    @scala.inline
-    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    @scala.inline
-    def setAllCaps(value: Boolean): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
+    inline def setAllCaps(value: Boolean): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllCapsUndefined: Self = StObject.set(x, "allCaps", js.undefined)
+    inline def setAllCapsUndefined: Self = StObject.set(x, "allCaps", js.undefined)
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setComponent(value: Height): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Height): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setDisableIconTint(value: Boolean): Self = StObject.set(x, "disableIconTint", value.asInstanceOf[js.Any])
+    inline def setDisableIconTint(value: Boolean): Self = StObject.set(x, "disableIconTint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableIconTintUndefined: Self = StObject.set(x, "disableIconTint", js.undefined)
+    inline def setDisableIconTintUndefined: Self = StObject.set(x, "disableIconTint", js.undefined)
     
-    @scala.inline
-    def setDisabledColor(value: Color): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
+    inline def setDisabledColor(value: Color): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
+    inline def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setIcon(value: ImageResource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ImageResource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconInsets(value: IconInsets): Self = StObject.set(x, "iconInsets", value.asInstanceOf[js.Any])
+    inline def setIconInsets(value: IconInsets): Self = StObject.set(x, "iconInsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconInsetsUndefined: Self = StObject.set(x, "iconInsets", js.undefined)
+    inline def setIconInsetsUndefined: Self = StObject.set(x, "iconInsets", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAsAction(value: ifRoom | withText | always | never): Self = StObject.set(x, "showAsAction", value.asInstanceOf[js.Any])
+    inline def setShowAsAction(value: ifRoom | withText | always | never): Self = StObject.set(x, "showAsAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAsActionUndefined: Self = StObject.set(x, "showAsAction", js.undefined)
+    inline def setShowAsActionUndefined: Self = StObject.set(x, "showAsAction", js.undefined)
     
-    @scala.inline
-    def setSystemItem(value: SystemItemIcon): Self = StObject.set(x, "systemItem", value.asInstanceOf[js.Any])
+    inline def setSystemItem(value: SystemItemIcon): Self = StObject.set(x, "systemItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemItemUndefined: Self = StObject.set(x, "systemItem", js.undefined)
+    inline def setSystemItemUndefined: Self = StObject.set(x, "systemItem", js.undefined)
     
-    @scala.inline
-    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

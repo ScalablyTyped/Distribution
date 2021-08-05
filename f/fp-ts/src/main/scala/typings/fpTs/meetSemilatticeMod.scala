@@ -12,17 +12,14 @@ object meetSemilatticeMod {
   }
   object MeetSemilattice {
     
-    @scala.inline
-    def apply[A](meet: (A, A) => A): MeetSemilattice[A] = {
+    inline def apply[A](meet: (A, A) => A): MeetSemilattice[A] = {
       val __obj = js.Dynamic.literal(meet = js.Any.fromFunction2(meet))
       __obj.asInstanceOf[MeetSemilattice[A]]
     }
     
-    @scala.inline
-    implicit class MeetSemilatticeMutableBuilder[Self <: MeetSemilattice[?], A] (val x: Self & MeetSemilattice[A]) extends AnyVal {
+    extension [Self <: MeetSemilattice[?], A](x: Self & MeetSemilattice[A]) {
       
-      @scala.inline
-      def setMeet(value: (A, A) => A): Self = StObject.set(x, "meet", js.Any.fromFunction2(value))
+      inline def setMeet(value: (A, A) => A): Self = StObject.set(x, "meet", js.Any.fromFunction2(value))
     }
   }
 }

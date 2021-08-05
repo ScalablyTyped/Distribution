@@ -10,40 +10,31 @@ object shareReplayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shareReplay[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")().asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](bufferSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](bufferSize: Double, windowTime: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](
+  inline def shareReplay[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")().asInstanceOf[js.Any]
+  inline def shareReplay[T](bufferSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def shareReplay[T](bufferSize: Double, windowTime: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def shareReplay[T](
     bufferSize: Double,
     windowTime: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](
+  inline def shareReplay[T](
     bufferSize: Double,
     windowTime: Unit,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](bufferSize: Unit, windowTime: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](
+  inline def shareReplay[T](bufferSize: Unit, windowTime: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def shareReplay[T](
     bufferSize: Unit,
     windowTime: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](
+  inline def shareReplay[T](
     bufferSize: Unit,
     windowTime: Unit,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def shareReplay[T](
+  inline def shareReplay[T](
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShareReplayConfig */ js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shareReplay")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

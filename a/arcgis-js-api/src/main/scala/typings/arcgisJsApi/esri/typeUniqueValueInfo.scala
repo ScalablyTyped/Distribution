@@ -40,8 +40,7 @@ trait typeUniqueValueInfo
 }
 object typeUniqueValueInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -54,19 +53,14 @@ object typeUniqueValueInfo {
     __obj.asInstanceOf[typeUniqueValueInfo]
   }
   
-  @scala.inline
-  implicit class typeUniqueValueInfoMutableBuilder[Self <: typeUniqueValueInfo] (val x: Self) extends AnyVal {
+  extension [Self <: typeUniqueValueInfo](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

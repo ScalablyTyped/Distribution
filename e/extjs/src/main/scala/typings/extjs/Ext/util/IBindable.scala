@@ -55,55 +55,39 @@ trait IBindable
 }
 object IBindable {
   
-  @scala.inline
-  def apply(): IBindable = {
+  inline def apply(): IBindable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBindable]
   }
   
-  @scala.inline
-  implicit class IBindableMutableBuilder[Self <: IBindable] (val x: Self) extends AnyVal {
+  extension [Self <: IBindable](x: Self) {
     
-    @scala.inline
-    def setBindStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBindStoreListeners(value: /* store */ js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
+    inline def setBindStoreListeners(value: /* store */ js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBindStoreListenersUndefined: Self = StObject.set(x, "bindStoreListeners", js.undefined)
+    inline def setBindStoreListenersUndefined: Self = StObject.set(x, "bindStoreListeners", js.undefined)
     
-    @scala.inline
-    def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
+    inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
-    @scala.inline
-    def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    inline def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStoreListeners(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListeners(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
+    inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     
-    @scala.inline
-    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
+    inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
-    @scala.inline
-    def setOnBindStore(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
+    inline def setOnBindStore(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
+    inline def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
     
-    @scala.inline
-    def setOnUnbindStore(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
+    inline def setOnUnbindStore(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
+    inline def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
     
-    @scala.inline
-    def setUnbindStoreListeners(value: /* store */ js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "unbindStoreListeners", js.Any.fromFunction1(value))
+    inline def setUnbindStoreListeners(value: /* store */ js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "unbindStoreListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnbindStoreListenersUndefined: Self = StObject.set(x, "unbindStoreListeners", js.undefined)
+    inline def setUnbindStoreListenersUndefined: Self = StObject.set(x, "unbindStoreListeners", js.undefined)
   }
 }

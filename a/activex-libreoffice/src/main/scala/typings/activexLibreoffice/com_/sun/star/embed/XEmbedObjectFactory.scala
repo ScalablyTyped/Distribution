@@ -47,8 +47,7 @@ trait XEmbedObjectFactory
 }
 object XEmbedObjectFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceUserInit: (SeqEquiv[Double], String, XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
     queryInterface: `type` => js.Any,
@@ -58,11 +57,9 @@ object XEmbedObjectFactory {
     __obj.asInstanceOf[XEmbedObjectFactory]
   }
   
-  @scala.inline
-  implicit class XEmbedObjectFactoryMutableBuilder[Self <: XEmbedObjectFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbedObjectFactory](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceUserInit(
+    inline def setCreateInstanceUserInit(
       value: (SeqEquiv[Double], String, XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface
     ): Self = StObject.set(x, "createInstanceUserInit", js.Any.fromFunction7(value))
   }

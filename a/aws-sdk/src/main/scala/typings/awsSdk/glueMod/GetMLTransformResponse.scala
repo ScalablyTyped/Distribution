@@ -103,133 +103,91 @@ trait GetMLTransformResponse extends StObject {
 }
 object GetMLTransformResponse {
   
-  @scala.inline
-  def apply(): GetMLTransformResponse = {
+  inline def apply(): GetMLTransformResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMLTransformResponse]
   }
   
-  @scala.inline
-  implicit class GetMLTransformResponseMutableBuilder[Self <: GetMLTransformResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMLTransformResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedOn(value: Timestamp): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Timestamp): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
+    inline def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEvaluationMetrics(value: EvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
+    inline def setEvaluationMetrics(value: EvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
+    inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
     
-    @scala.inline
-    def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
+    inline def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
+    inline def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
-    @scala.inline
-    def setInputRecordTables(value: GlueTables): Self = StObject.set(x, "InputRecordTables", value.asInstanceOf[js.Any])
+    inline def setInputRecordTables(value: GlueTables): Self = StObject.set(x, "InputRecordTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputRecordTablesUndefined: Self = StObject.set(x, "InputRecordTables", js.undefined)
+    inline def setInputRecordTablesUndefined: Self = StObject.set(x, "InputRecordTables", js.undefined)
     
-    @scala.inline
-    def setInputRecordTablesVarargs(value: GlueTable*): Self = StObject.set(x, "InputRecordTables", js.Array(value :_*))
+    inline def setInputRecordTablesVarargs(value: GlueTable*): Self = StObject.set(x, "InputRecordTables", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelCount(value: LabelCount): Self = StObject.set(x, "LabelCount", value.asInstanceOf[js.Any])
+    inline def setLabelCount(value: LabelCount): Self = StObject.set(x, "LabelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelCountUndefined: Self = StObject.set(x, "LabelCount", js.undefined)
+    inline def setLabelCountUndefined: Self = StObject.set(x, "LabelCount", js.undefined)
     
-    @scala.inline
-    def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
+    inline def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
-    @scala.inline
-    def setMaxCapacity(value: NullableDouble): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: NullableDouble): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
+    inline def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: NullableInteger): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: NullableInteger): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNumberOfWorkers(value: NullableInteger): Self = StObject.set(x, "NumberOfWorkers", value.asInstanceOf[js.Any])
+    inline def setNumberOfWorkers(value: NullableInteger): Self = StObject.set(x, "NumberOfWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfWorkersUndefined: Self = StObject.set(x, "NumberOfWorkers", js.undefined)
+    inline def setNumberOfWorkersUndefined: Self = StObject.set(x, "NumberOfWorkers", js.undefined)
     
-    @scala.inline
-    def setParameters(value: TransformParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TransformParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setRole(value: RoleString): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: RoleString): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setSchema(value: TransformSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: TransformSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    @scala.inline
-    def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
-    @scala.inline
-    def setTransformEncryption(value: TransformEncryption): Self = StObject.set(x, "TransformEncryption", value.asInstanceOf[js.Any])
+    inline def setTransformEncryption(value: TransformEncryption): Self = StObject.set(x, "TransformEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformEncryptionUndefined: Self = StObject.set(x, "TransformEncryption", js.undefined)
+    inline def setTransformEncryptionUndefined: Self = StObject.set(x, "TransformEncryption", js.undefined)
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
+    inline def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
     
-    @scala.inline
-    def setWorkerType(value: WorkerType): Self = StObject.set(x, "WorkerType", value.asInstanceOf[js.Any])
+    inline def setWorkerType(value: WorkerType): Self = StObject.set(x, "WorkerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerTypeUndefined: Self = StObject.set(x, "WorkerType", js.undefined)
+    inline def setWorkerTypeUndefined: Self = StObject.set(x, "WorkerType", js.undefined)
   }
 }

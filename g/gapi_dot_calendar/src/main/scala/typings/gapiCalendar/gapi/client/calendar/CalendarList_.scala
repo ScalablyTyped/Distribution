@@ -27,37 +27,27 @@ trait CalendarList_ extends StObject {
 }
 object CalendarList_ {
   
-  @scala.inline
-  def apply(etag: etag, items: js.Array[CalendarListEntry]): CalendarList_ = {
+  inline def apply(etag: etag, items: js.Array[CalendarListEntry]): CalendarList_ = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = "calendar#calendarList")
     __obj.asInstanceOf[CalendarList_]
   }
   
-  @scala.inline
-  implicit class CalendarList_MutableBuilder[Self <: CalendarList_] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarList_](x: Self) {
     
-    @scala.inline
-    def setEtag(value: etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[CalendarListEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[CalendarListEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: calendarNumbersigncalendarList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: calendarNumbersigncalendarList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
+    inline def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
+    inline def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
   }
 }

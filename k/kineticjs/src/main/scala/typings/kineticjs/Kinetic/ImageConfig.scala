@@ -15,22 +15,17 @@ trait ImageConfig
 }
 object ImageConfig {
   
-  @scala.inline
-  def apply(image: js.Any): ImageConfig = {
+  inline def apply(image: js.Any): ImageConfig = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageConfig]
   }
   
-  @scala.inline
-  implicit class ImageConfigMutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ImageConfig](x: Self) {
     
-    @scala.inline
-    def setCrop(value: js.Any): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: js.Any): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

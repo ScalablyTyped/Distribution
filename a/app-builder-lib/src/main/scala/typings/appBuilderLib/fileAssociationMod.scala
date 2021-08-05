@@ -54,74 +54,52 @@ object fileAssociationMod {
   }
   object FileAssociation {
     
-    @scala.inline
-    def apply(ext: String | js.Array[String]): FileAssociation = {
+    inline def apply(ext: String | js.Array[String]): FileAssociation = {
       val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileAssociation]
     }
     
-    @scala.inline
-    implicit class FileAssociationMutableBuilder[Self <: FileAssociation] (val x: Self) extends AnyVal {
+    extension [Self <: FileAssociation](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExt(value: String | js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String | js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIsPackage(value: Boolean): Self = StObject.set(x, "isPackage", value.asInstanceOf[js.Any])
+      inline def setIsPackage(value: Boolean): Self = StObject.set(x, "isPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPackageUndefined: Self = StObject.set(x, "isPackage", js.undefined)
+      inline def setIsPackageUndefined: Self = StObject.set(x, "isPackage", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
+      inline def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRank(value: String): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: String): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+      inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
 }

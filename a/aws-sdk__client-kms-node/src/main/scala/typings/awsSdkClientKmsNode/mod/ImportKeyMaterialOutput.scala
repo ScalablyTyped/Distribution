@@ -10,8 +10,7 @@ trait ImportKeyMaterialOutput
      with typings.awsSdkClientKmsNode.typesImportKeyMaterialOutputMod.ImportKeyMaterialOutput
 object ImportKeyMaterialOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ImportKeyMaterialOutput = {
+  inline def apply($metadata: ResponseMetadata): ImportKeyMaterialOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyMaterialOutput]
   }

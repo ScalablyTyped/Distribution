@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: Weighted */](objects: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].apply(objects.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: Weighted */](objects: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].apply(objects.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("weighted-random-object", JSImport.Namespace)
   @js.native
@@ -19,17 +18,14 @@ object mod {
   }
   object Weighted {
     
-    @scala.inline
-    def apply(weight: Double): Weighted = {
+    inline def apply(weight: Double): Weighted = {
       val __obj = js.Dynamic.literal(weight = weight.asInstanceOf[js.Any])
       __obj.asInstanceOf[Weighted]
     }
     
-    @scala.inline
-    implicit class WeightedMutableBuilder[Self <: Weighted] (val x: Self) extends AnyVal {
+    extension [Self <: Weighted](x: Self) {
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
 }

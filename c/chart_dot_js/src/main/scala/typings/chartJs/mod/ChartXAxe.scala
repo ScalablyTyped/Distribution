@@ -14,19 +14,15 @@ trait ChartXAxe
 }
 object ChartXAxe {
   
-  @scala.inline
-  def apply(): ChartXAxe = {
+  inline def apply(): ChartXAxe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartXAxe]
   }
   
-  @scala.inline
-  implicit class ChartXAxeMutableBuilder[Self <: ChartXAxe] (val x: Self) extends AnyVal {
+  extension [Self <: ChartXAxe](x: Self) {
     
-    @scala.inline
-    def setDistribution(value: linear | series): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: linear | series): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait hasSchedulesBuilder[B] extends StObject {
 }
 object hasSchedulesBuilder {
   
-  @scala.inline
-  def apply[B](withSchedules: ExtensionScheduleInput => B): hasSchedulesBuilder[B] = {
+  inline def apply[B](withSchedules: ExtensionScheduleInput => B): hasSchedulesBuilder[B] = {
     val __obj = js.Dynamic.literal(withSchedules = js.Any.fromFunction1(withSchedules))
     __obj.asInstanceOf[hasSchedulesBuilder[B]]
   }
   
-  @scala.inline
-  implicit class hasSchedulesBuilderMutableBuilder[Self <: hasSchedulesBuilder[?], B] (val x: Self & hasSchedulesBuilder[B]) extends AnyVal {
+  extension [Self <: hasSchedulesBuilder[?], B](x: Self & hasSchedulesBuilder[B]) {
     
-    @scala.inline
-    def setWithSchedules(value: ExtensionScheduleInput => B): Self = StObject.set(x, "withSchedules", js.Any.fromFunction1(value))
+    inline def setWithSchedules(value: ExtensionScheduleInput => B): Self = StObject.set(x, "withSchedules", js.Any.fromFunction1(value))
   }
 }

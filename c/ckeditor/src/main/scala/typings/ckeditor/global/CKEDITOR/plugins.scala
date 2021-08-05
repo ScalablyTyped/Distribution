@@ -31,15 +31,11 @@ object plugins {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def add(name: String, definition: pluginDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def add(name: String, definition: pluginDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addExternal(name: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExternal")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addExternal(name: String, path: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExternal")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addExternal(name: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExternal")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addExternal(name: String, path: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExternal")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("CKEDITOR.plugins.autoEmbed")
   @js.native
@@ -76,11 +72,9 @@ object plugins {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addPasteButton(editor: typings.ckeditor.CKEDITOR.editor, name: String, definition: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPasteButton")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addPasteButton(editor: typings.ckeditor.CKEDITOR.editor, name: String, definition: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPasteButton")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def canClipboardApiBeTrusted(
+    inline def canClipboardApiBeTrusted(
       dataTransfer: typings.ckeditor.CKEDITOR.plugins.clipboard.dataTransfer,
       editor: typings.ckeditor.CKEDITOR.editor
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canClipboardApiBeTrusted")(dataTransfer.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -103,29 +97,19 @@ object plugins {
       def this(dataTransfer: typings.ckeditor.CKEDITOR.plugins.clipboard.dataTransfer) = this()
     }
     
-    @scala.inline
-    def getDropTarget(editor: typings.ckeditor.CKEDITOR.editor): domObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getDropTarget")(editor.asInstanceOf[js.Any]).asInstanceOf[domObject]
+    inline def getDropTarget(editor: typings.ckeditor.CKEDITOR.editor): domObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getDropTarget")(editor.asInstanceOf[js.Any]).asInstanceOf[domObject]
     
-    @scala.inline
-    def getRangeAtDropPosition(domEvent: Event, editor: typings.ckeditor.CKEDITOR.editor): range = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangeAtDropPosition")(domEvent.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[range]
+    inline def getRangeAtDropPosition(domEvent: Event, editor: typings.ckeditor.CKEDITOR.editor): range = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangeAtDropPosition")(domEvent.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[range]
     
-    @scala.inline
-    def initDragDataTransfer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")().asInstanceOf[Unit]
-    @scala.inline
-    def initDragDataTransfer(evt: Unit, editor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")(evt.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def initDragDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def initDragDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event, editor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")(evt.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def initDragDataTransfer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")().asInstanceOf[Unit]
+    inline def initDragDataTransfer(evt: Unit, editor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")(evt.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def initDragDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def initDragDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event, editor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initDragDataTransfer")(evt.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def initPasteDataTransfer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")().asInstanceOf[Unit]
-    @scala.inline
-    def initPasteDataTransfer(evt: Unit, sourceEditor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")(evt.asInstanceOf[js.Any], sourceEditor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def initPasteDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def initPasteDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event, sourceEditor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")(evt.asInstanceOf[js.Any], sourceEditor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def initPasteDataTransfer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")().asInstanceOf[Unit]
+    inline def initPasteDataTransfer(evt: Unit, sourceEditor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")(evt.asInstanceOf[js.Any], sourceEditor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def initPasteDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def initPasteDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event, sourceEditor: typings.ckeditor.CKEDITOR.editor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initPasteDataTransfer")(evt.asInstanceOf[js.Any], sourceEditor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("CKEDITOR.plugins.clipboard.isCustomCopyCutSupported")
     @js.native
@@ -143,11 +127,9 @@ object plugins {
     @js.native
     val mainPasteEvent: String = js.native
     
-    @scala.inline
-    def preventDefaultDropOnElement(element: element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefaultDropOnElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def preventDefaultDropOnElement(element: element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefaultDropOnElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def resetDragDataTransfer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDragDataTransfer")().asInstanceOf[Unit]
+    inline def resetDragDataTransfer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDragDataTransfer")().asInstanceOf[Unit]
   }
   
   object cloudservices {
@@ -206,8 +188,7 @@ object plugins {
       override val ready: Boolean = js.native
     }
     
-    @scala.inline
-    def setHighlighter(highlighter: typings.ckeditor.CKEDITOR.plugins.condesnippet.highlighter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHighlighter")(highlighter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setHighlighter(highlighter: typings.ckeditor.CKEDITOR.plugins.condesnippet.highlighter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHighlighter")(highlighter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("CKEDITOR.plugins.contextMenu")
@@ -227,14 +208,12 @@ object plugins {
     @JSGlobal("CKEDITOR.plugins.copyformatting.breakOnElements")
     @js.native
     def breakOnElements: js.Array[String] = js.native
-    @scala.inline
-    def breakOnElements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakOnElements")(x.asInstanceOf[js.Any])
+    inline def breakOnElements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakOnElements")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CKEDITOR.plugins.copyformatting.elementsForInlineTransform")
     @js.native
     def elementsForInlineTransform: js.Array[String] = js.native
-    @scala.inline
-    def elementsForInlineTransform_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elementsForInlineTransform")(x.asInstanceOf[js.Any])
+    inline def elementsForInlineTransform_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elementsForInlineTransform")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CKEDITOR.plugins.copyformatting.excludedAttributes")
     @js.native
@@ -243,23 +222,19 @@ object plugins {
     @JSGlobal("CKEDITOR.plugins.copyformatting.excludedAttributesFromInlineTransform")
     @js.native
     def excludedAttributesFromInlineTransform: js.Array[String] = js.native
-    @scala.inline
-    def excludedAttributesFromInlineTransform_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excludedAttributesFromInlineTransform")(x.asInstanceOf[js.Any])
+    inline def excludedAttributesFromInlineTransform_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excludedAttributesFromInlineTransform")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def excludedAttributes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excludedAttributes")(x.asInstanceOf[js.Any])
+    inline def excludedAttributes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excludedAttributes")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CKEDITOR.plugins.copyformatting.inlineBoundary")
     @js.native
     def inlineBoundary: js.Array[String] = js.native
-    @scala.inline
-    def inlineBoundary_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineBoundary")(x.asInstanceOf[js.Any])
+    inline def inlineBoundary_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineBoundary")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CKEDITOR.plugins.copyformatting.preservedElements")
     @js.native
     def preservedElements: js.Array[String] = js.native
-    @scala.inline
-    def preservedElements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preservedElements")(x.asInstanceOf[js.Any])
+    inline def preservedElements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preservedElements")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CKEDITOR.plugins.copyformatting.state")
     @js.native
@@ -276,18 +251,14 @@ object plugins {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createWidgetBaseDefinition(editor: typings.ckeditor.CKEDITOR.editor): baseDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createWidgetBaseDefinition")(editor.asInstanceOf[js.Any]).asInstanceOf[baseDefinition]
+    inline def createWidgetBaseDefinition(editor: typings.ckeditor.CKEDITOR.editor): baseDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createWidgetBaseDefinition")(editor.asInstanceOf[js.Any]).asInstanceOf[baseDefinition]
   }
   
-  @scala.inline
-  def get(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getFilePath(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilePath")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFilePath(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilePath")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getPath(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPath(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object image2 {
     
@@ -295,11 +266,9 @@ object plugins {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def checkHasNaturalRatio(image: element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkHasNaturalRatio")(image.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def checkHasNaturalRatio(image: element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkHasNaturalRatio")(image.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def getLinkAttributesGetter(): js.Function2[
+    inline def getLinkAttributesGetter(): js.Function2[
         /* editor */ typings.ckeditor.CKEDITOR.editor, 
         /* data */ StringDictionary[String], 
         Removed
@@ -309,8 +278,7 @@ object plugins {
         Removed
       ]]
     
-    @scala.inline
-    def getLinkAttributesParser(): js.Function2[
+    inline def getLinkAttributesParser(): js.Function2[
         /* editor */ typings.ckeditor.CKEDITOR.editor, 
         /* element */ element, 
         StringDictionary[String]
@@ -320,8 +288,7 @@ object plugins {
         StringDictionary[String]
       ]]
     
-    @scala.inline
-    def getNatural(image: element): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatural")(image.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+    inline def getNatural(image: element): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatural")(image.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   }
   
   object imagebase {
@@ -330,11 +297,9 @@ object plugins {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addFeature(editor: typings.ckeditor.CKEDITOR.editor, name: String, definition: imageWidgetDefinition): imageWidgetDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("addFeature")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[imageWidgetDefinition]
+    inline def addFeature(editor: typings.ckeditor.CKEDITOR.editor, name: String, definition: imageWidgetDefinition): imageWidgetDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("addFeature")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[imageWidgetDefinition]
     
-    @scala.inline
-    def addImageWidget(editor: typings.ckeditor.CKEDITOR.editor, name: String, definition: imageWidgetDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addImageWidget")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addImageWidget(editor: typings.ckeditor.CKEDITOR.editor, name: String, definition: imageWidgetDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addImageWidget")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("CKEDITOR.plugins.imagebase.progressBar")
     @js.native
@@ -409,8 +374,7 @@ object plugins {
       extends StObject
          with typings.ckeditor.CKEDITOR.plugins.indent.genericDefinition
     
-    @scala.inline
-    def registerCommands(
+    inline def registerCommands(
       editor: typings.ckeditor.CKEDITOR.editor,
       commands: StringDictionary[typings.ckeditor.CKEDITOR.command]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCommands")(editor.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -456,16 +420,11 @@ object plugins {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def firstItemInPath(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def firstItemInPath(query: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def firstItemInPath(query: js.Function1[/* element */ element, Boolean]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def firstItemInPath(query: StringDictionary[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def firstItemInPath(query: element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def firstItemInPath(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def firstItemInPath(query: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def firstItemInPath(query: js.Function1[/* element */ element, Boolean]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def firstItemInPath(query: StringDictionary[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def firstItemInPath(query: element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("firstItemInPath")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object link {
@@ -484,30 +443,23 @@ object plugins {
     @js.native
     val fakeAnchor: Boolean = js.native
     
-    @scala.inline
-    def getEditorAnchors(editor: typings.ckeditor.CKEDITOR.editor): js.Array[element] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorAnchors")(editor.asInstanceOf[js.Any]).asInstanceOf[js.Array[element]]
+    inline def getEditorAnchors(editor: typings.ckeditor.CKEDITOR.editor): js.Array[element] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorAnchors")(editor.asInstanceOf[js.Any]).asInstanceOf[js.Array[element]]
     
-    @scala.inline
-    def getLinkAttributes(editor: typings.ckeditor.CKEDITOR.editor, data: StringDictionary[js.Any]): Set = (^.asInstanceOf[js.Dynamic].applyDynamic("getLinkAttributes")(editor.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Set]
+    inline def getLinkAttributes(editor: typings.ckeditor.CKEDITOR.editor, data: StringDictionary[js.Any]): Set = (^.asInstanceOf[js.Dynamic].applyDynamic("getLinkAttributes")(editor.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Set]
     
-    @scala.inline
-    def getSelectedLink(editor: typings.ckeditor.CKEDITOR.editor): element | js.Array[element] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedLink")(editor.asInstanceOf[js.Any]).asInstanceOf[element | js.Array[element]]
-    @scala.inline
-    def getSelectedLink(editor: typings.ckeditor.CKEDITOR.editor, returnMultiple: Boolean): element | js.Array[element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedLink")(editor.asInstanceOf[js.Any], returnMultiple.asInstanceOf[js.Any])).asInstanceOf[element | js.Array[element]]
+    inline def getSelectedLink(editor: typings.ckeditor.CKEDITOR.editor): element | js.Array[element] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedLink")(editor.asInstanceOf[js.Any]).asInstanceOf[element | js.Array[element]]
+    inline def getSelectedLink(editor: typings.ckeditor.CKEDITOR.editor, returnMultiple: Boolean): element | js.Array[element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedLink")(editor.asInstanceOf[js.Any], returnMultiple.asInstanceOf[js.Any])).asInstanceOf[element | js.Array[element]]
     
-    @scala.inline
-    def parseLinkAttributes(editor: typings.ckeditor.CKEDITOR.editor, element: element): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLinkAttributes")(editor.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def parseLinkAttributes(editor: typings.ckeditor.CKEDITOR.editor, element: element): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLinkAttributes")(editor.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
-    @scala.inline
-    def showDisplayTextForElement(element: element, editor: typings.ckeditor.CKEDITOR.editor): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("showDisplayTextForElement")(element.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def showDisplayTextForElement(element: element, editor: typings.ckeditor.CKEDITOR.editor): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("showDisplayTextForElement")(element.asInstanceOf[js.Any], editor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     // DEPRECATED 4.3.3
     @JSGlobal("CKEDITOR.plugins.link.synAnchorSelector")
     @js.native
     val synAnchorSelector: Boolean = js.native
     
-    @scala.inline
-    def tryRestoreFakeAnchor(editor: typings.ckeditor.CKEDITOR.editor, element: element): element = (^.asInstanceOf[js.Dynamic].applyDynamic("tryRestoreFakeAnchor")(editor.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[element]
+    inline def tryRestoreFakeAnchor(editor: typings.ckeditor.CKEDITOR.editor, element: element): element = (^.asInstanceOf[js.Dynamic].applyDynamic("tryRestoreFakeAnchor")(editor.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[element]
   }
   
   @JSGlobal("CKEDITOR.plugins.list")
@@ -529,10 +481,8 @@ object plugins {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def load(name: String, callback: js.Function1[/* plugins */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(name: String, callback: js.Function1[/* plugins */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def load(
     name: String,
     callback: js.Function1[/* plugins */ js.Array[String], Unit],
     scope: StringDictionary[js.Any]
@@ -638,8 +588,7 @@ object plugins {
          with typings.ckeditor.CKEDITOR.plugins.pastefromword.styles
   }
   
-  @scala.inline
-  def setLang(pluginName: String, languageCode: String, languageEntries: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLang")(pluginName.asInstanceOf[js.Any], languageCode.asInstanceOf[js.Any], languageEntries.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLang(pluginName: String, languageCode: String, languageEntries: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLang")(pluginName.asInstanceOf[js.Any], languageCode.asInstanceOf[js.Any], languageEntries.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object tableselection {
     
@@ -647,8 +596,7 @@ object plugins {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getCellsBetween(first: element, last: element): js.Array[element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellsBetween")(first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[element]]
+    inline def getCellsBetween(first: element, last: element): js.Array[element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellsBetween")(first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[element]]
   }
   
   @JSGlobal("CKEDITOR.plugins.widget")
@@ -679,35 +627,25 @@ object plugins {
     @JSGlobal("CKEDITOR.plugins.widget.WRAPPER_CLASS_PREFIX")
     @js.native
     def WRAPPER_CLASS_PREFIX: String = js.native
-    @scala.inline
-    def WRAPPER_CLASS_PREFIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRAPPER_CLASS_PREFIX")(x.asInstanceOf[js.Any])
+    inline def WRAPPER_CLASS_PREFIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRAPPER_CLASS_PREFIX")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getNestedEditable(guard: element, node: node): element = (^.asInstanceOf[js.Dynamic].applyDynamic("getNestedEditable")(guard.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[element]
+    inline def getNestedEditable(guard: element, node: node): element = (^.asInstanceOf[js.Dynamic].applyDynamic("getNestedEditable")(guard.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[element]
     
-    @scala.inline
-    def isDomDragHandler(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomDragHandler")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDomDragHandler(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomDragHandler")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isDomDragHandlerContainer(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomDragHandlerContainer")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDomDragHandlerContainer(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomDragHandlerContainer")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isDomNestedEditable(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomNestedEditable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDomNestedEditable(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomNestedEditable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isDomWidget(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomWidget")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDomWidget(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomWidget")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isDomWidgetElement(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomWidgetElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDomWidgetElement(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomWidgetElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isDomWidgetWrapper(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomWidgetWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDomWidgetWrapper(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomWidgetWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isParserWidgetElement(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParserWidgetElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isParserWidgetElement(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParserWidgetElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isParserWidgetWrapper(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParserWidgetWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isParserWidgetWrapper(node: node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParserWidgetWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("CKEDITOR.plugins.widget.nestedEditable")
     @js.native

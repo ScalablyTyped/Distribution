@@ -10,8 +10,7 @@ trait UpdateEmailChannelInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateEmailChannelInputMod.UpdateEmailChannelInput
 object UpdateEmailChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, EmailChannelRequest: EmailChannelRequest): UpdateEmailChannelInput = {
+  inline def apply(ApplicationId: String, EmailChannelRequest: EmailChannelRequest): UpdateEmailChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EmailChannelRequest = EmailChannelRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEmailChannelInput]
   }

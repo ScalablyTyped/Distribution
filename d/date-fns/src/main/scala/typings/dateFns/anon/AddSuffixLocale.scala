@@ -25,37 +25,27 @@ trait AddSuffixLocale extends StObject {
 }
 object AddSuffixLocale {
   
-  @scala.inline
-  def apply(): AddSuffixLocale = {
+  inline def apply(): AddSuffixLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddSuffixLocale]
   }
   
-  @scala.inline
-  implicit class AddSuffixLocaleMutableBuilder[Self <: AddSuffixLocale] (val x: Self) extends AnyVal {
+  extension [Self <: AddSuffixLocale](x: Self) {
     
-    @scala.inline
-    def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
+    inline def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSuffixUndefined: Self = StObject.set(x, "addSuffix", js.undefined)
+    inline def setAddSuffixUndefined: Self = StObject.set(x, "addSuffix", js.undefined)
     
-    @scala.inline
-    def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRoundingMethod(value: floor | ceil | round): Self = StObject.set(x, "roundingMethod", value.asInstanceOf[js.Any])
+    inline def setRoundingMethod(value: floor | ceil | round): Self = StObject.set(x, "roundingMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundingMethodUndefined: Self = StObject.set(x, "roundingMethod", js.undefined)
+    inline def setRoundingMethodUndefined: Self = StObject.set(x, "roundingMethod", js.undefined)
     
-    @scala.inline
-    def setUnit(value: second | minute | hour | day | month | year): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: second | minute | hour | day | month | year): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

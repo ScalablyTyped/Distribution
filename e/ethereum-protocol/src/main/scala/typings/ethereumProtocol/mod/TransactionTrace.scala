@@ -14,25 +14,19 @@ trait TransactionTrace extends StObject {
 }
 object TransactionTrace {
   
-  @scala.inline
-  def apply(gas: Double, returnValue: js.Any, structLogs: js.Array[StructLog]): TransactionTrace = {
+  inline def apply(gas: Double, returnValue: js.Any, structLogs: js.Array[StructLog]): TransactionTrace = {
     val __obj = js.Dynamic.literal(gas = gas.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], structLogs = structLogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionTrace]
   }
   
-  @scala.inline
-  implicit class TransactionTraceMutableBuilder[Self <: TransactionTrace] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionTrace](x: Self) {
     
-    @scala.inline
-    def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+    inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructLogs(value: js.Array[StructLog]): Self = StObject.set(x, "structLogs", value.asInstanceOf[js.Any])
+    inline def setStructLogs(value: js.Array[StructLog]): Self = StObject.set(x, "structLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructLogsVarargs(value: StructLog*): Self = StObject.set(x, "structLogs", js.Array(value :_*))
+    inline def setStructLogsVarargs(value: StructLog*): Self = StObject.set(x, "structLogs", js.Array(value :_*))
   }
 }

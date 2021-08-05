@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](func: js.Function1[/* param */ T, Unit]): typings.bluebird.mod.^[T] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[T]]
-  @scala.inline
-  def apply[T](func: js.Function1[/* param */ T, Unit], options: Options): typings.bluebird.mod.^[T] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[T]]
+  inline def apply[T](func: js.Function1[/* param */ T, Unit]): typings.bluebird.mod.^[T] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[T]]
+  inline def apply[T](func: js.Function1[/* param */ T, Unit], options: Options): typings.bluebird.mod.^[T] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[T]]
   
   @JSImport("bluebird-retry", JSImport.Namespace)
   @js.native
@@ -51,68 +49,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
+      inline def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMax_interval(value: Double): Self = StObject.set(x, "max_interval", value.asInstanceOf[js.Any])
+      inline def setMax_interval(value: Double): Self = StObject.set(x, "max_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_intervalUndefined: Self = StObject.set(x, "max_interval", js.undefined)
+      inline def setMax_intervalUndefined: Self = StObject.set(x, "max_interval", js.undefined)
       
-      @scala.inline
-      def setMax_tries(value: Double): Self = StObject.set(x, "max_tries", value.asInstanceOf[js.Any])
+      inline def setMax_tries(value: Double): Self = StObject.set(x, "max_tries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_triesUndefined: Self = StObject.set(x, "max_tries", js.undefined)
+      inline def setMax_triesUndefined: Self = StObject.set(x, "max_tries", js.undefined)
       
-      @scala.inline
-      def setPredicate(value: js.Any): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+      inline def setPredicate(value: js.Any): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
+      inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
-      @scala.inline
-      def setThrow_original(value: Boolean): Self = StObject.set(x, "throw_original", value.asInstanceOf[js.Any])
+      inline def setThrow_original(value: Boolean): Self = StObject.set(x, "throw_original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrow_originalUndefined: Self = StObject.set(x, "throw_original", js.undefined)
+      inline def setThrow_originalUndefined: Self = StObject.set(x, "throw_original", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

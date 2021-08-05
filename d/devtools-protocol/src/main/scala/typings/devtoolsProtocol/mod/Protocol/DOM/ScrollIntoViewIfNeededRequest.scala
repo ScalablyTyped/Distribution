@@ -30,37 +30,27 @@ trait ScrollIntoViewIfNeededRequest extends StObject {
 }
 object ScrollIntoViewIfNeededRequest {
   
-  @scala.inline
-  def apply(): ScrollIntoViewIfNeededRequest = {
+  inline def apply(): ScrollIntoViewIfNeededRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollIntoViewIfNeededRequest]
   }
   
-  @scala.inline
-  implicit class ScrollIntoViewIfNeededRequestMutableBuilder[Self <: ScrollIntoViewIfNeededRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollIntoViewIfNeededRequest](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
   }
 }

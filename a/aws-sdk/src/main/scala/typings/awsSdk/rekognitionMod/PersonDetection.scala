@@ -18,25 +18,19 @@ trait PersonDetection extends StObject {
 }
 object PersonDetection {
   
-  @scala.inline
-  def apply(): PersonDetection = {
+  inline def apply(): PersonDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersonDetection]
   }
   
-  @scala.inline
-  implicit class PersonDetectionMutableBuilder[Self <: PersonDetection] (val x: Self) extends AnyVal {
+  extension [Self <: PersonDetection](x: Self) {
     
-    @scala.inline
-    def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "Person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "Person", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

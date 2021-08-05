@@ -199,8 +199,7 @@ trait NightwatchClient extends StObject {
 }
 object NightwatchClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: NightwatchAPI,
     assertion: (/* passed */ Boolean, /* receivedValue */ js.UndefOr[js.Any], /* expectedValue */ js.UndefOr[js.Any], /* message */ js.UndefOr[String], /* abortOnFailure */ js.UndefOr[Boolean], /* originalStackTrace */ js.UndefOr[String]) => Unit
   ): NightwatchClient = {
@@ -208,14 +207,11 @@ object NightwatchClient {
     __obj.asInstanceOf[NightwatchClient]
   }
   
-  @scala.inline
-  implicit class NightwatchClientMutableBuilder[Self <: NightwatchClient] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchClient](x: Self) {
     
-    @scala.inline
-    def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertion(
+    inline def setAssertion(
       value: (/* passed */ Boolean, /* receivedValue */ js.UndefOr[js.Any], /* expectedValue */ js.UndefOr[js.Any], /* message */ js.UndefOr[String], /* abortOnFailure */ js.UndefOr[Boolean], /* originalStackTrace */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "assertion", js.Any.fromFunction6(value))
   }

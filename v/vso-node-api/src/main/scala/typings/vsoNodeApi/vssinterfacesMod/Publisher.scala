@@ -18,19 +18,15 @@ trait Publisher extends StObject {
 }
 object Publisher {
   
-  @scala.inline
-  def apply(name: String, serviceOwnerId: String): Publisher = {
+  inline def apply(name: String, serviceOwnerId: String): Publisher = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serviceOwnerId = serviceOwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Publisher]
   }
   
-  @scala.inline
-  implicit class PublisherMutableBuilder[Self <: Publisher] (val x: Self) extends AnyVal {
+  extension [Self <: Publisher](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceOwnerId(value: String): Self = StObject.set(x, "serviceOwnerId", value.asInstanceOf[js.Any])
+    inline def setServiceOwnerId(value: String): Self = StObject.set(x, "serviceOwnerId", value.asInstanceOf[js.Any])
   }
 }

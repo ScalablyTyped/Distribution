@@ -47,26 +47,22 @@ object certificateProvider {
     @JSGlobal("chrome.certificateProvider.PinRequestErrorType.INVALID_PIN")
     @js.native
     def INVALID_PIN: typings.chromeApps.chromeAppsStrings.INVALID_PIN = js.native
-    @scala.inline
-    def INVALID_PIN_=(x: INVALID_PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PIN")(x.asInstanceOf[js.Any])
+    inline def INVALID_PIN_=(x: INVALID_PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PIN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.certificateProvider.PinRequestErrorType.INVALID_PUK")
     @js.native
     def INVALID_PUK: typings.chromeApps.chromeAppsStrings.INVALID_PUK = js.native
-    @scala.inline
-    def INVALID_PUK_=(x: INVALID_PUK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PUK")(x.asInstanceOf[js.Any])
+    inline def INVALID_PUK_=(x: INVALID_PUK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PUK")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.certificateProvider.PinRequestErrorType.MAX_ATTEMPTS_EXCEEDED")
     @js.native
     def MAX_ATTEMPTS_EXCEEDED: typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED = js.native
-    @scala.inline
-    def MAX_ATTEMPTS_EXCEEDED_=(x: MAX_ATTEMPTS_EXCEEDED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_ATTEMPTS_EXCEEDED")(x.asInstanceOf[js.Any])
+    inline def MAX_ATTEMPTS_EXCEEDED_=(x: MAX_ATTEMPTS_EXCEEDED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_ATTEMPTS_EXCEEDED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.certificateProvider.PinRequestErrorType.UNKNOWN_ERROR")
     @js.native
     def UNKNOWN_ERROR: typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR = js.native
-    @scala.inline
-    def UNKNOWN_ERROR_=(x: UNKNOWN_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
+    inline def UNKNOWN_ERROR_=(x: UNKNOWN_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -82,14 +78,12 @@ object certificateProvider {
     @JSGlobal("chrome.certificateProvider.PinRequestType.PIN")
     @js.native
     def PIN: typings.chromeApps.chromeAppsStrings.PIN = js.native
-    @scala.inline
-    def PIN_=(x: PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PIN")(x.asInstanceOf[js.Any])
+    inline def PIN_=(x: PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PIN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.certificateProvider.PinRequestType.PUK")
     @js.native
     def PUK: typings.chromeApps.chromeAppsStrings.PUK = js.native
-    @scala.inline
-    def PUK_=(x: PUK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUK")(x.asInstanceOf[js.Any])
+    inline def PUK_=(x: PUK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUK")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -137,8 +131,7 @@ object certificateProvider {
     * when the dialog request finishes unsuccessfully (e.g. the dialog was
     * canceled by the user or was not allowed to be shown).
     */
-  @scala.inline
-  def requestPin(
+  inline def requestPin(
     details: RequestPinDetails,
     callback: js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPin")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -149,6 +142,5 @@ object certificateProvider {
     * @param callback To be used by Chrome to send to the app the status from
     * their request to close PIN dialog for user.
     */
-  @scala.inline
-  def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopPinRequest")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopPinRequest")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

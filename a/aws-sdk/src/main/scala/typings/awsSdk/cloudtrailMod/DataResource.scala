@@ -18,28 +18,21 @@ trait DataResource extends StObject {
 }
 object DataResource {
   
-  @scala.inline
-  def apply(): DataResource = {
+  inline def apply(): DataResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataResource]
   }
   
-  @scala.inline
-  implicit class DataResourceMutableBuilder[Self <: DataResource] (val x: Self) extends AnyVal {
+  extension [Self <: DataResource](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValues(value: DataResourceValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: DataResourceValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

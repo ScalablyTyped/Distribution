@@ -10,6 +10,5 @@ object group {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isUserIn(uri: String, grp: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_user_in")(uri.asInstanceOf[js.Any], grp.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def isUserIn(uri: String, grp: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_user_in")(uri.asInstanceOf[js.Any], grp.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -10,19 +10,15 @@ trait Slice extends StObject {
 }
 object Slice {
   
-  @scala.inline
-  def apply(): Slice = {
+  inline def apply(): Slice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Slice]
   }
   
-  @scala.inline
-  implicit class SliceMutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
+  extension [Self <: Slice](x: Self) {
     
-    @scala.inline
-    def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

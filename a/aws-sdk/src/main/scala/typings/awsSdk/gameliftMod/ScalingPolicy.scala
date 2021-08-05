@@ -63,79 +63,55 @@ trait ScalingPolicy extends StObject {
 }
 object ScalingPolicy {
   
-  @scala.inline
-  def apply(): ScalingPolicy = {
+  inline def apply(): ScalingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScalingPolicy]
   }
   
-  @scala.inline
-  implicit class ScalingPolicyMutableBuilder[Self <: ScalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingPolicy](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperatorType): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperatorType): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
+    inline def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
     
-    @scala.inline
-    def setEvaluationPeriods(value: PositiveInteger): Self = StObject.set(x, "EvaluationPeriods", value.asInstanceOf[js.Any])
+    inline def setEvaluationPeriods(value: PositiveInteger): Self = StObject.set(x, "EvaluationPeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationPeriodsUndefined: Self = StObject.set(x, "EvaluationPeriods", js.undefined)
+    inline def setEvaluationPeriodsUndefined: Self = StObject.set(x, "EvaluationPeriods", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
+    inline def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
+    inline def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
-    @scala.inline
-    def setScalingAdjustment(value: Integer): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
+    inline def setScalingAdjustment(value: Integer): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingAdjustmentType(value: ScalingAdjustmentType): Self = StObject.set(x, "ScalingAdjustmentType", value.asInstanceOf[js.Any])
+    inline def setScalingAdjustmentType(value: ScalingAdjustmentType): Self = StObject.set(x, "ScalingAdjustmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingAdjustmentTypeUndefined: Self = StObject.set(x, "ScalingAdjustmentType", js.undefined)
+    inline def setScalingAdjustmentTypeUndefined: Self = StObject.set(x, "ScalingAdjustmentType", js.undefined)
     
-    @scala.inline
-    def setScalingAdjustmentUndefined: Self = StObject.set(x, "ScalingAdjustment", js.undefined)
+    inline def setScalingAdjustmentUndefined: Self = StObject.set(x, "ScalingAdjustment", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ScalingStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ScalingStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetConfiguration(value: TargetConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
+    inline def setTargetConfiguration(value: TargetConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
+    inline def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
   }
 }

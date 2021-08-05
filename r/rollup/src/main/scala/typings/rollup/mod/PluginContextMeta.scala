@@ -12,19 +12,15 @@ trait PluginContextMeta extends StObject {
 }
 object PluginContextMeta {
   
-  @scala.inline
-  def apply(rollupVersion: String, watchMode: Boolean): PluginContextMeta = {
+  inline def apply(rollupVersion: String, watchMode: Boolean): PluginContextMeta = {
     val __obj = js.Dynamic.literal(rollupVersion = rollupVersion.asInstanceOf[js.Any], watchMode = watchMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginContextMeta]
   }
   
-  @scala.inline
-  implicit class PluginContextMetaMutableBuilder[Self <: PluginContextMeta] (val x: Self) extends AnyVal {
+  extension [Self <: PluginContextMeta](x: Self) {
     
-    @scala.inline
-    def setRollupVersion(value: String): Self = StObject.set(x, "rollupVersion", value.asInstanceOf[js.Any])
+    inline def setRollupVersion(value: String): Self = StObject.set(x, "rollupVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchMode(value: Boolean): Self = StObject.set(x, "watchMode", value.asInstanceOf[js.Any])
+    inline def setWatchMode(value: Boolean): Self = StObject.set(x, "watchMode", value.asInstanceOf[js.Any])
   }
 }

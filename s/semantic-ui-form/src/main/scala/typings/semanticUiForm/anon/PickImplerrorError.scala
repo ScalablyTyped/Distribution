@@ -14,16 +14,13 @@ trait PickImplerrorError extends StObject {
 }
 object PickImplerrorError {
   
-  @scala.inline
-  def apply(error: /* errors */ js.Array[String] => JQuery): PickImplerrorError = {
+  inline def apply(error: /* errors */ js.Array[String] => JQuery): PickImplerrorError = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
     __obj.asInstanceOf[PickImplerrorError]
   }
   
-  @scala.inline
-  implicit class PickImplerrorErrorMutableBuilder[Self <: PickImplerrorError] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplerrorError](x: Self) {
     
-    @scala.inline
-    def setError(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
   }
 }

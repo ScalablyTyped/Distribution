@@ -13,93 +13,79 @@ object reactTooltipStrings {
   sealed trait bottom
     extends StObject
        with Place
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait dark
     extends StObject
        with Type
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait div extends StObject
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
   sealed trait error
     extends StObject
        with Type
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait float
     extends StObject
        with Effect
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait info
     extends StObject
        with Type
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait left
     extends StObject
        with Place
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait light
     extends StObject
        with Type
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait right
     extends StObject
        with Place
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait solid
     extends StObject
        with Effect
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
+  inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
   sealed trait span extends StObject
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
+  inline def span: span = "span".asInstanceOf[span]
   
   @js.native
   sealed trait success
     extends StObject
        with Type
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait top
     extends StObject
        with Place
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait warning
     extends StObject
        with Type
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

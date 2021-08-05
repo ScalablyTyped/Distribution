@@ -16,17 +16,14 @@ object reactDataGridAddonsMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(ReactDataGridPlugins: Data): Window = {
+      inline def apply(ReactDataGridPlugins: Data): Window = {
         val __obj = js.Dynamic.literal(ReactDataGridPlugins = ReactDataGridPlugins.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setReactDataGridPlugins(value: Data): Self = StObject.set(x, "ReactDataGridPlugins", value.asInstanceOf[js.Any])
+        inline def setReactDataGridPlugins(value: Data): Self = StObject.set(x, "ReactDataGridPlugins", value.asInstanceOf[js.Any])
       }
     }
   }

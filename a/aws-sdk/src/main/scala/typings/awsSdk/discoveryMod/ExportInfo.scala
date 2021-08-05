@@ -48,8 +48,7 @@ trait ExportInfo extends StObject {
 }
 object ExportInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exportId: ConfigurationsExportId,
     exportRequestTime: ExportRequestTime,
     exportStatus: ExportStatus,
@@ -59,43 +58,30 @@ object ExportInfo {
     __obj.asInstanceOf[ExportInfo]
   }
   
-  @scala.inline
-  implicit class ExportInfoMutableBuilder[Self <: ExportInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExportInfo](x: Self) {
     
-    @scala.inline
-    def setConfigurationsDownloadUrl(value: ConfigurationsDownloadUrl): Self = StObject.set(x, "configurationsDownloadUrl", value.asInstanceOf[js.Any])
+    inline def setConfigurationsDownloadUrl(value: ConfigurationsDownloadUrl): Self = StObject.set(x, "configurationsDownloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsDownloadUrlUndefined: Self = StObject.set(x, "configurationsDownloadUrl", js.undefined)
+    inline def setConfigurationsDownloadUrlUndefined: Self = StObject.set(x, "configurationsDownloadUrl", js.undefined)
     
-    @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportRequestTime(value: ExportRequestTime): Self = StObject.set(x, "exportRequestTime", value.asInstanceOf[js.Any])
+    inline def setExportRequestTime(value: ExportRequestTime): Self = StObject.set(x, "exportRequestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportStatus(value: ExportStatus): Self = StObject.set(x, "exportStatus", value.asInstanceOf[js.Any])
+    inline def setExportStatus(value: ExportStatus): Self = StObject.set(x, "exportStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
     
-    @scala.inline
-    def setRequestedEndTime(value: TimeStamp): Self = StObject.set(x, "requestedEndTime", value.asInstanceOf[js.Any])
+    inline def setRequestedEndTime(value: TimeStamp): Self = StObject.set(x, "requestedEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedEndTimeUndefined: Self = StObject.set(x, "requestedEndTime", js.undefined)
+    inline def setRequestedEndTimeUndefined: Self = StObject.set(x, "requestedEndTime", js.undefined)
     
-    @scala.inline
-    def setRequestedStartTime(value: TimeStamp): Self = StObject.set(x, "requestedStartTime", value.asInstanceOf[js.Any])
+    inline def setRequestedStartTime(value: TimeStamp): Self = StObject.set(x, "requestedStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedStartTimeUndefined: Self = StObject.set(x, "requestedStartTime", js.undefined)
+    inline def setRequestedStartTimeUndefined: Self = StObject.set(x, "requestedStartTime", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: ExportStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: ExportStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

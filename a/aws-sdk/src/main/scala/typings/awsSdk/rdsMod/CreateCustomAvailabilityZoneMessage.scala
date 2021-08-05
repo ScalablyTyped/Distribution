@@ -28,34 +28,25 @@ trait CreateCustomAvailabilityZoneMessage extends StObject {
 }
 object CreateCustomAvailabilityZoneMessage {
   
-  @scala.inline
-  def apply(CustomAvailabilityZoneName: String): CreateCustomAvailabilityZoneMessage = {
+  inline def apply(CustomAvailabilityZoneName: String): CreateCustomAvailabilityZoneMessage = {
     val __obj = js.Dynamic.literal(CustomAvailabilityZoneName = CustomAvailabilityZoneName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomAvailabilityZoneMessage]
   }
   
-  @scala.inline
-  implicit class CreateCustomAvailabilityZoneMessageMutableBuilder[Self <: CreateCustomAvailabilityZoneMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomAvailabilityZoneMessage](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZoneName(value: String): Self = StObject.set(x, "CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneName(value: String): Self = StObject.set(x, "CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingVpnId(value: String): Self = StObject.set(x, "ExistingVpnId", value.asInstanceOf[js.Any])
+    inline def setExistingVpnId(value: String): Self = StObject.set(x, "ExistingVpnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingVpnIdUndefined: Self = StObject.set(x, "ExistingVpnId", js.undefined)
+    inline def setExistingVpnIdUndefined: Self = StObject.set(x, "ExistingVpnId", js.undefined)
     
-    @scala.inline
-    def setNewVpnTunnelName(value: String): Self = StObject.set(x, "NewVpnTunnelName", value.asInstanceOf[js.Any])
+    inline def setNewVpnTunnelName(value: String): Self = StObject.set(x, "NewVpnTunnelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewVpnTunnelNameUndefined: Self = StObject.set(x, "NewVpnTunnelName", js.undefined)
+    inline def setNewVpnTunnelNameUndefined: Self = StObject.set(x, "NewVpnTunnelName", js.undefined)
     
-    @scala.inline
-    def setVpnTunnelOriginatorIP(value: String): Self = StObject.set(x, "VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
+    inline def setVpnTunnelOriginatorIP(value: String): Self = StObject.set(x, "VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnTunnelOriginatorIPUndefined: Self = StObject.set(x, "VpnTunnelOriginatorIP", js.undefined)
+    inline def setVpnTunnelOriginatorIPUndefined: Self = StObject.set(x, "VpnTunnelOriginatorIP", js.undefined)
   }
 }

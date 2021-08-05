@@ -12,16 +12,13 @@ trait ReadonlyComponentWrapperS extends StObject {
 }
 object ReadonlyComponentWrapperS {
   
-  @scala.inline
-  def apply(visibles: Record[Double, Boolean]): ReadonlyComponentWrapperS = {
+  inline def apply(visibles: Record[Double, Boolean]): ReadonlyComponentWrapperS = {
     val __obj = js.Dynamic.literal(visibles = visibles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyComponentWrapperS]
   }
   
-  @scala.inline
-  implicit class ReadonlyComponentWrapperSMutableBuilder[Self <: ReadonlyComponentWrapperS] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyComponentWrapperS](x: Self) {
     
-    @scala.inline
-    def setVisibles(value: Record[Double, Boolean]): Self = StObject.set(x, "visibles", value.asInstanceOf[js.Any])
+    inline def setVisibles(value: Record[Double, Boolean]): Self = StObject.set(x, "visibles", value.asInstanceOf[js.Any])
   }
 }

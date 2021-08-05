@@ -18,28 +18,21 @@ trait DescribeManagedPrefixListsResult extends StObject {
 }
 object DescribeManagedPrefixListsResult {
   
-  @scala.inline
-  def apply(): DescribeManagedPrefixListsResult = {
+  inline def apply(): DescribeManagedPrefixListsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeManagedPrefixListsResult]
   }
   
-  @scala.inline
-  implicit class DescribeManagedPrefixListsResultMutableBuilder[Self <: DescribeManagedPrefixListsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeManagedPrefixListsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPrefixLists(value: ManagedPrefixListSet): Self = StObject.set(x, "PrefixLists", value.asInstanceOf[js.Any])
+    inline def setPrefixLists(value: ManagedPrefixListSet): Self = StObject.set(x, "PrefixLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListsUndefined: Self = StObject.set(x, "PrefixLists", js.undefined)
+    inline def setPrefixListsUndefined: Self = StObject.set(x, "PrefixLists", js.undefined)
     
-    @scala.inline
-    def setPrefixListsVarargs(value: ManagedPrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value :_*))
+    inline def setPrefixListsVarargs(value: ManagedPrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value :_*))
   }
 }

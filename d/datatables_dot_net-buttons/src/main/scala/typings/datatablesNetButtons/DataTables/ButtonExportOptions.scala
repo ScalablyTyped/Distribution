@@ -10,22 +10,17 @@ trait ButtonExportOptions extends StObject {
 }
 object ButtonExportOptions {
   
-  @scala.inline
-  def apply(): ButtonExportOptions = {
+  inline def apply(): ButtonExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonExportOptions]
   }
   
-  @scala.inline
-  implicit class ButtonExportOptionsMutableBuilder[Self <: ButtonExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonExportOptions](x: Self) {
     
-    @scala.inline
-    def setColumns(value: ButtonSelectorTypes | js.Array[ButtonSelectorTypes]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: ButtonSelectorTypes | js.Array[ButtonSelectorTypes]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: ButtonSelectorTypes*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ButtonSelectorTypes*): Self = StObject.set(x, "columns", js.Array(value :_*))
   }
 }

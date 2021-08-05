@@ -18,28 +18,21 @@ trait DescribePatchBaselinesResult extends StObject {
 }
 object DescribePatchBaselinesResult {
   
-  @scala.inline
-  def apply(): DescribePatchBaselinesResult = {
+  inline def apply(): DescribePatchBaselinesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePatchBaselinesResult]
   }
   
-  @scala.inline
-  implicit class DescribePatchBaselinesResultMutableBuilder[Self <: DescribePatchBaselinesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePatchBaselinesResult](x: Self) {
     
-    @scala.inline
-    def setBaselineIdentities(value: PatchBaselineIdentityList): Self = StObject.set(x, "BaselineIdentities", value.asInstanceOf[js.Any])
+    inline def setBaselineIdentities(value: PatchBaselineIdentityList): Self = StObject.set(x, "BaselineIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineIdentitiesUndefined: Self = StObject.set(x, "BaselineIdentities", js.undefined)
+    inline def setBaselineIdentitiesUndefined: Self = StObject.set(x, "BaselineIdentities", js.undefined)
     
-    @scala.inline
-    def setBaselineIdentitiesVarargs(value: PatchBaselineIdentity*): Self = StObject.set(x, "BaselineIdentities", js.Array(value :_*))
+    inline def setBaselineIdentitiesVarargs(value: PatchBaselineIdentity*): Self = StObject.set(x, "BaselineIdentities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object sylvesterEs6Strings {
   
   @js.native
   sealed trait convex extends StObject
-  @scala.inline
-  def convex: convex = "convex".asInstanceOf[convex]
+  inline def convex: convex = "convex".asInstanceOf[convex]
   
   @js.native
   sealed trait reflex extends StObject
-  @scala.inline
-  def reflex: reflex = "reflex".asInstanceOf[reflex]
+  inline def reflex: reflex = "reflex".asInstanceOf[reflex]
 }

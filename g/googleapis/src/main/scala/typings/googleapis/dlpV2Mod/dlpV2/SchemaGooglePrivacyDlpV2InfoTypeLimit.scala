@@ -25,25 +25,19 @@ trait SchemaGooglePrivacyDlpV2InfoTypeLimit extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InfoTypeLimit {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InfoTypeLimit = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InfoTypeLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InfoTypeLimit]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InfoTypeLimitMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InfoTypeLimit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InfoTypeLimit](x: Self) {
     
-    @scala.inline
-    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
-    @scala.inline
-    def setMaxFindings(value: Double): Self = StObject.set(x, "maxFindings", value.asInstanceOf[js.Any])
+    inline def setMaxFindings(value: Double): Self = StObject.set(x, "maxFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFindingsUndefined: Self = StObject.set(x, "maxFindings", js.undefined)
+    inline def setMaxFindingsUndefined: Self = StObject.set(x, "maxFindings", js.undefined)
   }
 }

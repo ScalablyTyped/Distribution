@@ -24,25 +24,19 @@ trait FrameAttachedEvent extends StObject {
 }
 object FrameAttachedEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId, parentFrameId: FrameId): FrameAttachedEvent = {
+  inline def apply(frameId: FrameId, parentFrameId: FrameId): FrameAttachedEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameAttachedEvent]
   }
   
-  @scala.inline
-  implicit class FrameAttachedEventMutableBuilder[Self <: FrameAttachedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FrameAttachedEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFrameId(value: FrameId): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+    inline def setParentFrameId(value: FrameId): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: StackTrace): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: StackTrace): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

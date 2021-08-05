@@ -12,16 +12,13 @@ trait Sh extends StObject {
 }
 object Sh {
   
-  @scala.inline
-  def apply(Sh: Chart | Worksheet): Sh = {
+  inline def apply(Sh: Chart | Worksheet): Sh = {
     val __obj = js.Dynamic.literal(Sh = Sh.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sh]
   }
   
-  @scala.inline
-  implicit class ShMutableBuilder[Self <: Sh] (val x: Self) extends AnyVal {
+  extension [Self <: Sh](x: Self) {
     
-    @scala.inline
-    def setSh(value: Chart | Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
+    inline def setSh(value: Chart | Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
   }
 }

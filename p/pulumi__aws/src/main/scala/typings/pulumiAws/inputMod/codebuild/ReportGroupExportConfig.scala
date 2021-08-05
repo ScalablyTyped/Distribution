@@ -19,23 +19,18 @@ trait ReportGroupExportConfig extends StObject {
 }
 object ReportGroupExportConfig {
   
-  @scala.inline
-  def apply(`type`: Input[String]): ReportGroupExportConfig = {
+  inline def apply(`type`: Input[String]): ReportGroupExportConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportGroupExportConfig]
   }
   
-  @scala.inline
-  implicit class ReportGroupExportConfigMutableBuilder[Self <: ReportGroupExportConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ReportGroupExportConfig](x: Self) {
     
-    @scala.inline
-    def setS3Destination(value: Input[ReportGroupExportConfigS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: Input[ReportGroupExportConfigS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
+    inline def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,9 +15,9 @@ object entityStoreMod {
     extends StObject
        with IEntityStore[T] {
     
-    var _entities: js.Any = js.native
+    /* private */ var _entities: js.Any = js.native
     
-    var _rtree: js.Any = js.native
+    /* private */ var _rtree: js.Any = js.native
   }
   
   @js.native
@@ -110,17 +110,14 @@ object entityStoreMod {
   }
   object IPositionedEntity {
     
-    @scala.inline
-    def apply(position: Point): IPositionedEntity = {
+    inline def apply(position: Point): IPositionedEntity = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPositionedEntity]
     }
     
-    @scala.inline
-    implicit class IPositionedEntityMutableBuilder[Self <: IPositionedEntity] (val x: Self) extends AnyVal {
+    extension [Self <: IPositionedEntity](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,8 +17,7 @@ trait CitySearch
 }
 object CitySearch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCityByIp: (String, js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]) => Unit,
     getLocalCity: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit] => Unit,
     off: (String, EventCallback) => Unit,
@@ -28,15 +27,12 @@ object CitySearch {
     __obj.asInstanceOf[CitySearch]
   }
   
-  @scala.inline
-  implicit class CitySearchMutableBuilder[Self <: CitySearch] (val x: Self) extends AnyVal {
+  extension [Self <: CitySearch](x: Self) {
     
-    @scala.inline
-    def setGetCityByIp(
+    inline def setGetCityByIp(
       value: (String, js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]) => Unit
     ): Self = StObject.set(x, "getCityByIp", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLocalCity(value: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit] => Unit): Self = StObject.set(x, "getLocalCity", js.Any.fromFunction1(value))
+    inline def setGetLocalCity(value: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit] => Unit): Self = StObject.set(x, "getLocalCity", js.Any.fromFunction1(value))
   }
 }

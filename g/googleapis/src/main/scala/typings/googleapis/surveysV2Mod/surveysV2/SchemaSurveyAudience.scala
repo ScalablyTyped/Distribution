@@ -55,55 +55,39 @@ trait SchemaSurveyAudience extends StObject {
 }
 object SchemaSurveyAudience {
   
-  @scala.inline
-  def apply(): SchemaSurveyAudience = {
+  inline def apply(): SchemaSurveyAudience = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveyAudience]
   }
   
-  @scala.inline
-  implicit class SchemaSurveyAudienceMutableBuilder[Self <: SchemaSurveyAudience] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveyAudience](x: Self) {
     
-    @scala.inline
-    def setAges(value: js.Array[String]): Self = StObject.set(x, "ages", value.asInstanceOf[js.Any])
+    inline def setAges(value: js.Array[String]): Self = StObject.set(x, "ages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgesUndefined: Self = StObject.set(x, "ages", js.undefined)
+    inline def setAgesUndefined: Self = StObject.set(x, "ages", js.undefined)
     
-    @scala.inline
-    def setAgesVarargs(value: String*): Self = StObject.set(x, "ages", js.Array(value :_*))
+    inline def setAgesVarargs(value: String*): Self = StObject.set(x, "ages", js.Array(value :_*))
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySubdivision(value: String): Self = StObject.set(x, "countrySubdivision", value.asInstanceOf[js.Any])
+    inline def setCountrySubdivision(value: String): Self = StObject.set(x, "countrySubdivision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySubdivisionUndefined: Self = StObject.set(x, "countrySubdivision", js.undefined)
+    inline def setCountrySubdivisionUndefined: Self = StObject.set(x, "countrySubdivision", js.undefined)
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
-    @scala.inline
-    def setPopulationSource(value: String): Self = StObject.set(x, "populationSource", value.asInstanceOf[js.Any])
+    inline def setPopulationSource(value: String): Self = StObject.set(x, "populationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulationSourceUndefined: Self = StObject.set(x, "populationSource", js.undefined)
+    inline def setPopulationSourceUndefined: Self = StObject.set(x, "populationSource", js.undefined)
   }
 }

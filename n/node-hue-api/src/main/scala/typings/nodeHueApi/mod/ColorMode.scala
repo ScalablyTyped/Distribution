@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorMode extends StObject
 object ColorMode {
   
-  @scala.inline
-  def ct: typings.nodeHueApi.nodeHueApiStrings.ct = "ct".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.ct]
+  inline def ct: typings.nodeHueApi.nodeHueApiStrings.ct = "ct".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.ct]
   
-  @scala.inline
-  def hs: typings.nodeHueApi.nodeHueApiStrings.hs = "hs".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.hs]
+  inline def hs: typings.nodeHueApi.nodeHueApiStrings.hs = "hs".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.hs]
   
-  @scala.inline
-  def xy: typings.nodeHueApi.nodeHueApiStrings.xy = "xy".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.xy]
+  inline def xy: typings.nodeHueApi.nodeHueApiStrings.xy = "xy".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.xy]
 }

@@ -84,38 +84,28 @@ object HubSpotPaceInterfaces {
   }
   object PaceAjaxOptions {
     
-    @scala.inline
-    def apply(): PaceAjaxOptions = {
+    inline def apply(): PaceAjaxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaceAjaxOptions]
     }
     
-    @scala.inline
-    implicit class PaceAjaxOptionsMutableBuilder[Self <: PaceAjaxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaceAjaxOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreURLs(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreURLs", value.asInstanceOf[js.Any])
+      inline def setIgnoreURLs(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreURLs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreURLsUndefined: Self = StObject.set(x, "ignoreURLs", js.undefined)
+      inline def setIgnoreURLsUndefined: Self = StObject.set(x, "ignoreURLs", js.undefined)
       
-      @scala.inline
-      def setIgnoreURLsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreURLs", js.Array(value :_*))
+      inline def setIgnoreURLsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreURLs", js.Array(value :_*))
       
-      @scala.inline
-      def setTrackMethods(value: js.Array[String]): Self = StObject.set(x, "trackMethods", value.asInstanceOf[js.Any])
+      inline def setTrackMethods(value: js.Array[String]): Self = StObject.set(x, "trackMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackMethodsUndefined: Self = StObject.set(x, "trackMethods", js.undefined)
+      inline def setTrackMethodsUndefined: Self = StObject.set(x, "trackMethods", js.undefined)
       
-      @scala.inline
-      def setTrackMethodsVarargs(value: String*): Self = StObject.set(x, "trackMethods", js.Array(value :_*))
+      inline def setTrackMethodsVarargs(value: String*): Self = StObject.set(x, "trackMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setTrackWebSockets(value: Boolean): Self = StObject.set(x, "trackWebSockets", value.asInstanceOf[js.Any])
+      inline def setTrackWebSockets(value: Boolean): Self = StObject.set(x, "trackWebSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackWebSocketsUndefined: Self = StObject.set(x, "trackWebSockets", js.undefined)
+      inline def setTrackWebSocketsUndefined: Self = StObject.set(x, "trackWebSockets", js.undefined)
     }
   }
   
@@ -133,29 +123,22 @@ object HubSpotPaceInterfaces {
   }
   object PaceElementsOptions {
     
-    @scala.inline
-    def apply(): PaceElementsOptions = {
+    inline def apply(): PaceElementsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaceElementsOptions]
     }
     
-    @scala.inline
-    implicit class PaceElementsOptionsMutableBuilder[Self <: PaceElementsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaceElementsOptions](x: Self) {
       
-      @scala.inline
-      def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+      inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+      inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
       
-      @scala.inline
-      def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
       
-      @scala.inline
-      def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     }
   }
   
@@ -178,32 +161,24 @@ object HubSpotPaceInterfaces {
   }
   object PaceEventLagOptions {
     
-    @scala.inline
-    def apply(): PaceEventLagOptions = {
+    inline def apply(): PaceEventLagOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaceEventLagOptions]
     }
     
-    @scala.inline
-    implicit class PaceEventLagOptionsMutableBuilder[Self <: PaceEventLagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaceEventLagOptions](x: Self) {
       
-      @scala.inline
-      def setLagThreshold(value: Double): Self = StObject.set(x, "lagThreshold", value.asInstanceOf[js.Any])
+      inline def setLagThreshold(value: Double): Self = StObject.set(x, "lagThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLagThresholdUndefined: Self = StObject.set(x, "lagThreshold", js.undefined)
+      inline def setLagThresholdUndefined: Self = StObject.set(x, "lagThreshold", js.undefined)
       
-      @scala.inline
-      def setMinSamples(value: Double): Self = StObject.set(x, "minSamples", value.asInstanceOf[js.Any])
+      inline def setMinSamples(value: Double): Self = StObject.set(x, "minSamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSamplesUndefined: Self = StObject.set(x, "minSamples", js.undefined)
+      inline def setMinSamplesUndefined: Self = StObject.set(x, "minSamples", js.undefined)
       
-      @scala.inline
-      def setSampleCount(value: Double): Self = StObject.set(x, "sampleCount", value.asInstanceOf[js.Any])
+      inline def setSampleCount(value: Double): Self = StObject.set(x, "sampleCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleCountUndefined: Self = StObject.set(x, "sampleCount", js.undefined)
+      inline def setSampleCountUndefined: Self = StObject.set(x, "sampleCount", js.undefined)
     }
   }
   
@@ -269,98 +244,68 @@ object HubSpotPaceInterfaces {
   }
   object PaceOptions {
     
-    @scala.inline
-    def apply(): PaceOptions = {
+    inline def apply(): PaceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaceOptions]
     }
     
-    @scala.inline
-    implicit class PaceOptionsMutableBuilder[Self <: PaceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaceOptions](x: Self) {
       
-      @scala.inline
-      def setAjax(value: Boolean | PaceAjaxOptions): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+      inline def setAjax(value: Boolean | PaceAjaxOptions): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
+      inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
       
-      @scala.inline
-      def setCatchupTime(value: Double): Self = StObject.set(x, "catchupTime", value.asInstanceOf[js.Any])
+      inline def setCatchupTime(value: Double): Self = StObject.set(x, "catchupTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchupTimeUndefined: Self = StObject.set(x, "catchupTime", js.undefined)
+      inline def setCatchupTimeUndefined: Self = StObject.set(x, "catchupTime", js.undefined)
       
-      @scala.inline
-      def setDocument(value: Boolean | String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: Boolean | String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+      inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
       
-      @scala.inline
-      def setEaseFactor(value: Double): Self = StObject.set(x, "easeFactor", value.asInstanceOf[js.Any])
+      inline def setEaseFactor(value: Double): Self = StObject.set(x, "easeFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseFactorUndefined: Self = StObject.set(x, "easeFactor", js.undefined)
+      inline def setEaseFactorUndefined: Self = StObject.set(x, "easeFactor", js.undefined)
       
-      @scala.inline
-      def setElements(value: Boolean | PaceElementsOptions): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: Boolean | PaceElementsOptions): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      @scala.inline
-      def setEventLag(value: Boolean | PaceEventLagOptions): Self = StObject.set(x, "eventLag", value.asInstanceOf[js.Any])
+      inline def setEventLag(value: Boolean | PaceEventLagOptions): Self = StObject.set(x, "eventLag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventLagUndefined: Self = StObject.set(x, "eventLag", js.undefined)
+      inline def setEventLagUndefined: Self = StObject.set(x, "eventLag", js.undefined)
       
-      @scala.inline
-      def setGhostTime(value: Double): Self = StObject.set(x, "ghostTime", value.asInstanceOf[js.Any])
+      inline def setGhostTime(value: Double): Self = StObject.set(x, "ghostTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostTimeUndefined: Self = StObject.set(x, "ghostTime", js.undefined)
+      inline def setGhostTimeUndefined: Self = StObject.set(x, "ghostTime", js.undefined)
       
-      @scala.inline
-      def setInitialRate(value: Double): Self = StObject.set(x, "initialRate", value.asInstanceOf[js.Any])
+      inline def setInitialRate(value: Double): Self = StObject.set(x, "initialRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRateUndefined: Self = StObject.set(x, "initialRate", js.undefined)
+      inline def setInitialRateUndefined: Self = StObject.set(x, "initialRate", js.undefined)
       
-      @scala.inline
-      def setMaxProgressPerFrame(value: Double): Self = StObject.set(x, "maxProgressPerFrame", value.asInstanceOf[js.Any])
+      inline def setMaxProgressPerFrame(value: Double): Self = StObject.set(x, "maxProgressPerFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxProgressPerFrameUndefined: Self = StObject.set(x, "maxProgressPerFrame", js.undefined)
+      inline def setMaxProgressPerFrameUndefined: Self = StObject.set(x, "maxProgressPerFrame", js.undefined)
       
-      @scala.inline
-      def setMinTime(value: Double): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+      inline def setMinTime(value: Double): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
+      inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
       
-      @scala.inline
-      def setRestartOnPushState(value: Boolean): Self = StObject.set(x, "restartOnPushState", value.asInstanceOf[js.Any])
+      inline def setRestartOnPushState(value: Boolean): Self = StObject.set(x, "restartOnPushState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestartOnPushStateUndefined: Self = StObject.set(x, "restartOnPushState", js.undefined)
+      inline def setRestartOnPushStateUndefined: Self = StObject.set(x, "restartOnPushState", js.undefined)
       
-      @scala.inline
-      def setRestartOnRequestAfter(value: Boolean | Double): Self = StObject.set(x, "restartOnRequestAfter", value.asInstanceOf[js.Any])
+      inline def setRestartOnRequestAfter(value: Boolean | Double): Self = StObject.set(x, "restartOnRequestAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestartOnRequestAfterUndefined: Self = StObject.set(x, "restartOnRequestAfter", js.undefined)
+      inline def setRestartOnRequestAfterUndefined: Self = StObject.set(x, "restartOnRequestAfter", js.undefined)
       
-      @scala.inline
-      def setStartOnPageLoad(value: Boolean): Self = StObject.set(x, "startOnPageLoad", value.asInstanceOf[js.Any])
+      inline def setStartOnPageLoad(value: Boolean): Self = StObject.set(x, "startOnPageLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOnPageLoadUndefined: Self = StObject.set(x, "startOnPageLoad", js.undefined)
+      inline def setStartOnPageLoadUndefined: Self = StObject.set(x, "startOnPageLoad", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

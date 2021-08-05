@@ -12,19 +12,15 @@ trait _FILETIME extends StObject {
 }
 object _FILETIME {
   
-  @scala.inline
-  def apply(dwHighDateTime: Double, dwLowDateTime: Double): _FILETIME = {
+  inline def apply(dwHighDateTime: Double, dwLowDateTime: Double): _FILETIME = {
     val __obj = js.Dynamic.literal(dwHighDateTime = dwHighDateTime.asInstanceOf[js.Any], dwLowDateTime = dwLowDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FILETIME]
   }
   
-  @scala.inline
-  implicit class _FILETIMEMutableBuilder[Self <: _FILETIME] (val x: Self) extends AnyVal {
+  extension [Self <: _FILETIME](x: Self) {
     
-    @scala.inline
-    def setDwHighDateTime(value: Double): Self = StObject.set(x, "dwHighDateTime", value.asInstanceOf[js.Any])
+    inline def setDwHighDateTime(value: Double): Self = StObject.set(x, "dwHighDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDwLowDateTime(value: Double): Self = StObject.set(x, "dwLowDateTime", value.asInstanceOf[js.Any])
+    inline def setDwLowDateTime(value: Double): Self = StObject.set(x, "dwLowDateTime", value.asInstanceOf[js.Any])
   }
 }

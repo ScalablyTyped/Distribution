@@ -20,46 +20,38 @@ object implementationMod {
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply(receiver: ReadonlyArray[js.Any]): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
-  @scala.inline
-  def apply(receiver: ReadonlyArray[js.Any], depth: Double): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+  inline def apply(receiver: ReadonlyArray[js.Any]): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
+  inline def apply(receiver: ReadonlyArray[js.Any], depth: Double): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def apply[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[U]]]]]]], depth: `6`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
-  @scala.inline
-  def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[U]]]]]]], depth: `6`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply[U](receiver: ReadonlyArray[U], depth: `0`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
-  @scala.inline
-  def apply[U](receiver: ReadonlyArray[Array[U] | ReadonlyArray[U]], depth: `1`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def apply[U](receiver: ReadonlyArray[U], depth: `0`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def apply[U](receiver: ReadonlyArray[Array[U] | ReadonlyArray[U]], depth: `1`): Array[U] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply[U](
+  inline def apply[U](
     receiver: ReadonlyArray[
       (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
     ],
@@ -71,8 +63,7 @@ object implementationMod {
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply[U](
+  inline def apply[U](
     receiver: ReadonlyArray[
       (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[
         (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
@@ -86,8 +77,7 @@ object implementationMod {
     *
     * @param depth The maximum recursion depth
     */
-  @scala.inline
-  def apply[U](
+  inline def apply[U](
     receiver: ReadonlyArray[
       (Array[
         (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[Array[Array[U]] | ReadonlyArray[ReadonlyArray[U]]])

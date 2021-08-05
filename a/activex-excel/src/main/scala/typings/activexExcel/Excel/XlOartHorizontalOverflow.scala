@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlOartHorizontalOverflow extends StObject
 object XlOartHorizontalOverflow {
   
-  @scala.inline
-  def xlOartHorizontalOverflowClip: `1` = 1.asInstanceOf[`1`]
+  inline def xlOartHorizontalOverflowClip: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlOartHorizontalOverflowOverflow: `0` = 0.asInstanceOf[`0`]
+  inline def xlOartHorizontalOverflowOverflow: `0` = 0.asInstanceOf[`0`]
 }

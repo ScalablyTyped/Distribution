@@ -12,19 +12,15 @@ trait InternalAddressComponent extends StObject {
 }
 object InternalAddressComponent {
   
-  @scala.inline
-  def apply(long: String, short: String): InternalAddressComponent = {
+  inline def apply(long: String, short: String): InternalAddressComponent = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalAddressComponent]
   }
   
-  @scala.inline
-  implicit class InternalAddressComponentMutableBuilder[Self <: InternalAddressComponent] (val x: Self) extends AnyVal {
+  extension [Self <: InternalAddressComponent](x: Self) {
     
-    @scala.inline
-    def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

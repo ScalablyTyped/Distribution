@@ -26,61 +26,43 @@ trait PivotSchema
 }
 object PivotSchema {
   
-  @scala.inline
-  def apply(): PivotSchema = {
+  inline def apply(): PivotSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotSchema]
   }
   
-  @scala.inline
-  implicit class PivotSchemaMutableBuilder[Self <: PivotSchema] (val x: Self) extends AnyVal {
+  extension [Self <: PivotSchema](x: Self) {
     
-    @scala.inline
-    def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setCatalogs(value: js.Any): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
+    inline def setCatalogs(value: js.Any): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
+    inline def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
     
-    @scala.inline
-    def setCube(value: js.Any): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: js.Any): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
-    @scala.inline
-    def setCubes(value: js.Any): Self = StObject.set(x, "cubes", value.asInstanceOf[js.Any])
+    inline def setCubes(value: js.Any): Self = StObject.set(x, "cubes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubesUndefined: Self = StObject.set(x, "cubes", js.undefined)
+    inline def setCubesUndefined: Self = StObject.set(x, "cubes", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: js.Any): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Any): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setHierarchies(value: js.Any): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
+    inline def setHierarchies(value: js.Any): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
+    inline def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
     
-    @scala.inline
-    def setLevels(value: js.Any): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Any): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setMeasures(value: js.Any): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
+    inline def setMeasures(value: js.Any): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
+    inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
   }
 }

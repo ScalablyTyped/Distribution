@@ -13,19 +13,15 @@ trait TtmlDestinationSettings extends StObject {
 }
 object TtmlDestinationSettings {
   
-  @scala.inline
-  def apply(): TtmlDestinationSettings = {
+  inline def apply(): TtmlDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TtmlDestinationSettings]
   }
   
-  @scala.inline
-  implicit class TtmlDestinationSettingsMutableBuilder[Self <: TtmlDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TtmlDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setStylePassthrough(value: TtmlStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
+    inline def setStylePassthrough(value: TtmlStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylePassthroughUndefined: Self = StObject.set(x, "StylePassthrough", js.undefined)
+    inline def setStylePassthroughUndefined: Self = StObject.set(x, "StylePassthrough", js.undefined)
   }
 }

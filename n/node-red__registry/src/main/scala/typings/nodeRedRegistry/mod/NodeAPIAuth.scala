@@ -23,8 +23,7 @@ trait NodeAPIAuth extends StObject {
 }
 object NodeAPIAuth {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     needsPermission: String => js.Function3[
       /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
       /* res */ Response_[js.Any], 
@@ -36,11 +35,9 @@ object NodeAPIAuth {
     __obj.asInstanceOf[NodeAPIAuth]
   }
   
-  @scala.inline
-  implicit class NodeAPIAuthMutableBuilder[Self <: NodeAPIAuth] (val x: Self) extends AnyVal {
+  extension [Self <: NodeAPIAuth](x: Self) {
     
-    @scala.inline
-    def setNeedsPermission(
+    inline def setNeedsPermission(
       value: String => js.Function3[
           /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* res */ Response_[js.Any], 

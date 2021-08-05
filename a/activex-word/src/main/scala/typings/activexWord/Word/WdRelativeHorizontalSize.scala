@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRelativeHorizontalSize extends StObject
 object WdRelativeHorizontalSize {
   
-  @scala.inline
-  def wdRelativeHorizontalSizeInnerMarginArea: `4` = 4.asInstanceOf[`4`]
+  inline def wdRelativeHorizontalSizeInnerMarginArea: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdRelativeHorizontalSizeLeftMarginArea: `2` = 2.asInstanceOf[`2`]
+  inline def wdRelativeHorizontalSizeLeftMarginArea: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdRelativeHorizontalSizeMargin: `0` = 0.asInstanceOf[`0`]
+  inline def wdRelativeHorizontalSizeMargin: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRelativeHorizontalSizeOuterMarginArea: `5` = 5.asInstanceOf[`5`]
+  inline def wdRelativeHorizontalSizeOuterMarginArea: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdRelativeHorizontalSizePage: `1` = 1.asInstanceOf[`1`]
+  inline def wdRelativeHorizontalSizePage: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdRelativeHorizontalSizeRightMarginArea: `3` = 3.asInstanceOf[`3`]
+  inline def wdRelativeHorizontalSizeRightMarginArea: `3` = 3.asInstanceOf[`3`]
 }

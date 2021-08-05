@@ -17,34 +17,25 @@ trait ClaimsParameterMember
 }
 object ClaimsParameterMember {
   
-  @scala.inline
-  def apply(): ClaimsParameterMember = {
+  inline def apply(): ClaimsParameterMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClaimsParameterMember]
   }
   
-  @scala.inline
-  implicit class ClaimsParameterMemberMutableBuilder[Self <: ClaimsParameterMember] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimsParameterMember](x: Self) {
     
-    @scala.inline
-    def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
+    inline def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEssentialUndefined: Self = StObject.set(x, "essential", js.undefined)
+    inline def setEssentialUndefined: Self = StObject.set(x, "essential", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

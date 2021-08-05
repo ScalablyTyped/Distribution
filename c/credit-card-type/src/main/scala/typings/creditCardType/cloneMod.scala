@@ -10,6 +10,5 @@ object cloneMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clone_[T](originalObject: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(originalObject.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  inline def clone_[T](originalObject: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(originalObject.asInstanceOf[js.Any]).asInstanceOf[T | Null]
 }

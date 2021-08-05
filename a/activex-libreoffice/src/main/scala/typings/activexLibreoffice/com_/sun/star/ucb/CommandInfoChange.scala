@@ -15,10 +15,8 @@ object CommandInfoChange {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def COMMAND_INSERTED: `0` = 0.asInstanceOf[`0`]
+    inline def COMMAND_INSERTED: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def COMMAND_REMOVED: `1` = 1.asInstanceOf[`1`]
+    inline def COMMAND_REMOVED: `1` = 1.asInstanceOf[`1`]
   }
 }

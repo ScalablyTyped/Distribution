@@ -15,22 +15,17 @@ trait ThreadRowAttachmentIconUrlDescriptor
 }
 object ThreadRowAttachmentIconUrlDescriptor {
   
-  @scala.inline
-  def apply(iconUrl: String): ThreadRowAttachmentIconUrlDescriptor = {
+  inline def apply(iconUrl: String): ThreadRowAttachmentIconUrlDescriptor = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowAttachmentIconUrlDescriptor]
   }
   
-  @scala.inline
-  implicit class ThreadRowAttachmentIconUrlDescriptorMutableBuilder[Self <: ThreadRowAttachmentIconUrlDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadRowAttachmentIconUrlDescriptor](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
   }
 }

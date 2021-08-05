@@ -15,22 +15,17 @@ trait SecurityDisableUser
 }
 object SecurityDisableUser {
   
-  @scala.inline
-  def apply(username: String): SecurityDisableUser = {
+  inline def apply(username: String): SecurityDisableUser = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityDisableUser]
   }
   
-  @scala.inline
-  implicit class SecurityDisableUserMutableBuilder[Self <: SecurityDisableUser] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityDisableUser](x: Self) {
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

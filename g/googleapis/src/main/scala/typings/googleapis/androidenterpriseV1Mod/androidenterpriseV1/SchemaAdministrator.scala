@@ -17,19 +17,15 @@ trait SchemaAdministrator extends StObject {
 }
 object SchemaAdministrator {
   
-  @scala.inline
-  def apply(): SchemaAdministrator = {
+  inline def apply(): SchemaAdministrator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdministrator]
   }
   
-  @scala.inline
-  implicit class SchemaAdministratorMutableBuilder[Self <: SchemaAdministrator] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdministrator](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

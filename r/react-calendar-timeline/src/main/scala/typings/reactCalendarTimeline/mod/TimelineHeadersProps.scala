@@ -20,49 +20,35 @@ trait TimelineHeadersProps extends StObject {
 }
 object TimelineHeadersProps {
   
-  @scala.inline
-  def apply(): TimelineHeadersProps = {
+  inline def apply(): TimelineHeadersProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineHeadersProps]
   }
   
-  @scala.inline
-  implicit class TimelineHeadersPropsMutableBuilder[Self <: TimelineHeadersProps] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineHeadersProps](x: Self) {
     
-    @scala.inline
-    def setCalendarHeaderClassName(value: String): Self = StObject.set(x, "calendarHeaderClassName", value.asInstanceOf[js.Any])
+    inline def setCalendarHeaderClassName(value: String): Self = StObject.set(x, "calendarHeaderClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarHeaderClassNameUndefined: Self = StObject.set(x, "calendarHeaderClassName", js.undefined)
+    inline def setCalendarHeaderClassNameUndefined: Self = StObject.set(x, "calendarHeaderClassName", js.undefined)
     
-    @scala.inline
-    def setCalendarHeaderStyle(value: CSSProperties): Self = StObject.set(x, "calendarHeaderStyle", value.asInstanceOf[js.Any])
+    inline def setCalendarHeaderStyle(value: CSSProperties): Self = StObject.set(x, "calendarHeaderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarHeaderStyleUndefined: Self = StObject.set(x, "calendarHeaderStyle", js.undefined)
+    inline def setCalendarHeaderStyleUndefined: Self = StObject.set(x, "calendarHeaderStyle", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setHeaderRef(value: Ref[js.Any]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
+    inline def setHeaderRef(value: Ref[js.Any]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
+    inline def setHeaderRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeaderRefNull: Self = StObject.set(x, "headerRef", null)
+    inline def setHeaderRefNull: Self = StObject.set(x, "headerRef", null)
     
-    @scala.inline
-    def setHeaderRefUndefined: Self = StObject.set(x, "headerRef", js.undefined)
+    inline def setHeaderRefUndefined: Self = StObject.set(x, "headerRef", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

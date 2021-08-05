@@ -14,8 +14,7 @@ trait Universal_
 }
 object Universal_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -37,10 +36,8 @@ object Universal_ {
     __obj.asInstanceOf[Universal_]
   }
   
-  @scala.inline
-  implicit class Universal_MutableBuilder[Self <: Universal_] (val x: Self) extends AnyVal {
+  extension [Self <: Universal_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.universal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.universal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

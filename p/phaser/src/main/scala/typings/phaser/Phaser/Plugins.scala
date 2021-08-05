@@ -25,7 +25,7 @@ object Plugins {
     /**
       * A reference to the Game instance this plugin is running under.
       */
-    var game: Game = js.native
+    /* protected */ var game: Game = js.native
     
     /**
       * The PluginManager calls this method on a Global Plugin when the plugin is first instantiated.
@@ -42,7 +42,7 @@ object Plugins {
       * A handy reference to the Plugin Manager that is responsible for this plugin.
       * Can be used as a route to gain access to game systems and  events.
       */
-    var pluginManager: PluginManager = js.native
+    /* protected */ var pluginManager: PluginManager = js.native
     
     /**
       * The PluginManager calls this method on a Global Plugin when the plugin is started.
@@ -82,32 +82,24 @@ object Plugins {
   }
   object DefaultPlugins {
     
-    @scala.inline
-    def apply(CoreScene: js.Array[js.Any], DefaultScene: js.Array[js.Any], Global: js.Array[js.Any]): DefaultPlugins = {
+    inline def apply(CoreScene: js.Array[js.Any], DefaultScene: js.Array[js.Any], Global: js.Array[js.Any]): DefaultPlugins = {
       val __obj = js.Dynamic.literal(CoreScene = CoreScene.asInstanceOf[js.Any], DefaultScene = DefaultScene.asInstanceOf[js.Any], Global = Global.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultPlugins]
     }
     
-    @scala.inline
-    implicit class DefaultPluginsMutableBuilder[Self <: DefaultPlugins] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultPlugins](x: Self) {
       
-      @scala.inline
-      def setCoreScene(value: js.Array[js.Any]): Self = StObject.set(x, "CoreScene", value.asInstanceOf[js.Any])
+      inline def setCoreScene(value: js.Array[js.Any]): Self = StObject.set(x, "CoreScene", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoreSceneVarargs(value: js.Any*): Self = StObject.set(x, "CoreScene", js.Array(value :_*))
+      inline def setCoreSceneVarargs(value: js.Any*): Self = StObject.set(x, "CoreScene", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultScene(value: js.Array[js.Any]): Self = StObject.set(x, "DefaultScene", value.asInstanceOf[js.Any])
+      inline def setDefaultScene(value: js.Array[js.Any]): Self = StObject.set(x, "DefaultScene", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSceneVarargs(value: js.Any*): Self = StObject.set(x, "DefaultScene", js.Array(value :_*))
+      inline def setDefaultSceneVarargs(value: js.Any*): Self = StObject.set(x, "DefaultScene", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobal(value: js.Array[js.Any]): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: js.Array[js.Any]): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalVarargs(value: js.Any*): Self = StObject.set(x, "Global", js.Array(value :_*))
+      inline def setGlobalVarargs(value: js.Any*): Self = StObject.set(x, "Global", js.Array(value :_*))
     }
   }
   
@@ -473,7 +465,7 @@ object Plugins {
       * This property is only set when the plugin is instantiated and added to the Scene, not before.
       * You can use it during the `boot` method.
       */
-    var scene: Scene = js.native
+    /* protected */ var scene: Scene = js.native
     
     /**
       * A reference to the Scene Systems of the Scene that has installed this plugin.
@@ -481,6 +473,6 @@ object Plugins {
       * This property is only set when the plugin is instantiated and added to the Scene, not before.
       * You can use it during the `boot` method.
       */
-    var systems: Systems = js.native
+    /* protected */ var systems: Systems = js.native
   }
 }

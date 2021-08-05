@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSegmentType extends StObject
 object MsoSegmentType {
   
-  @scala.inline
-  def msoSegmentCurve: `1` = 1.asInstanceOf[`1`]
+  inline def msoSegmentCurve: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoSegmentLine: `0` = 0.asInstanceOf[`0`]
+  inline def msoSegmentLine: `0` = 0.asInstanceOf[`0`]
 }

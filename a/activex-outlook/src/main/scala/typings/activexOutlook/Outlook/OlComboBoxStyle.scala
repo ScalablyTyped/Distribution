@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlComboBoxStyle extends StObject
 object OlComboBoxStyle {
   
-  @scala.inline
-  def olComboBoxStyleCombo: `0` = 0.asInstanceOf[`0`]
+  inline def olComboBoxStyleCombo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olComboBoxStyleList: `2` = 2.asInstanceOf[`2`]
+  inline def olComboBoxStyleList: `2` = 2.asInstanceOf[`2`]
 }

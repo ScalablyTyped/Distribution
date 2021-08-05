@@ -11,19 +11,15 @@ trait DeleteConditionalFormatRuleResponse extends StObject {
 }
 object DeleteConditionalFormatRuleResponse {
   
-  @scala.inline
-  def apply(): DeleteConditionalFormatRuleResponse = {
+  inline def apply(): DeleteConditionalFormatRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteConditionalFormatRuleResponse]
   }
   
-  @scala.inline
-  implicit class DeleteConditionalFormatRuleResponseMutableBuilder[Self <: DeleteConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConditionalFormatRuleResponse](x: Self) {
     
-    @scala.inline
-    def setRule(value: ConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

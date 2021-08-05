@@ -55,8 +55,7 @@ trait RecipientsChangedFields extends StObject {
 }
 object RecipientsChangedFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bcc: Boolean,
     cc: Boolean,
     optionalAttendees: Boolean,
@@ -68,25 +67,18 @@ object RecipientsChangedFields {
     __obj.asInstanceOf[RecipientsChangedFields]
   }
   
-  @scala.inline
-  implicit class RecipientsChangedFieldsMutableBuilder[Self <: RecipientsChangedFields] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientsChangedFields](x: Self) {
     
-    @scala.inline
-    def setBcc(value: Boolean): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+    inline def setBcc(value: Boolean): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCc(value: Boolean): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: Boolean): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalAttendees(value: Boolean): Self = StObject.set(x, "optionalAttendees", value.asInstanceOf[js.Any])
+    inline def setOptionalAttendees(value: Boolean): Self = StObject.set(x, "optionalAttendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredAttendees(value: Boolean): Self = StObject.set(x, "requiredAttendees", value.asInstanceOf[js.Any])
+    inline def setRequiredAttendees(value: Boolean): Self = StObject.set(x, "requiredAttendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: Boolean): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Boolean): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: Boolean): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Boolean): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

@@ -30,79 +30,55 @@ trait ChangePageOptions extends StObject {
 }
 object ChangePageOptions {
   
-  @scala.inline
-  def apply(): ChangePageOptions = {
+  inline def apply(): ChangePageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangePageOptions]
   }
   
-  @scala.inline
-  implicit class ChangePageOptionsMutableBuilder[Self <: ChangePageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePageOptions](x: Self) {
     
-    @scala.inline
-    def setAllowSamePageTransition(value: Boolean): Self = StObject.set(x, "allowSamePageTransition", value.asInstanceOf[js.Any])
+    inline def setAllowSamePageTransition(value: Boolean): Self = StObject.set(x, "allowSamePageTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSamePageTransitionUndefined: Self = StObject.set(x, "allowSamePageTransition", js.undefined)
+    inline def setAllowSamePageTransitionUndefined: Self = StObject.set(x, "allowSamePageTransition", js.undefined)
     
-    @scala.inline
-    def setChangeHash(value: Boolean): Self = StObject.set(x, "changeHash", value.asInstanceOf[js.Any])
+    inline def setChangeHash(value: Boolean): Self = StObject.set(x, "changeHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeHashUndefined: Self = StObject.set(x, "changeHash", js.undefined)
+    inline def setChangeHashUndefined: Self = StObject.set(x, "changeHash", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
+    inline def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
     
-    @scala.inline
-    def setPageContainer(value: JQuery): Self = StObject.set(x, "pageContainer", value.asInstanceOf[js.Any])
+    inline def setPageContainer(value: JQuery): Self = StObject.set(x, "pageContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageContainerUndefined: Self = StObject.set(x, "pageContainer", js.undefined)
+    inline def setPageContainerUndefined: Self = StObject.set(x, "pageContainer", js.undefined)
     
-    @scala.inline
-    def setReloadPage(value: Boolean): Self = StObject.set(x, "reloadPage", value.asInstanceOf[js.Any])
+    inline def setReloadPage(value: Boolean): Self = StObject.set(x, "reloadPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReloadPageUndefined: Self = StObject.set(x, "reloadPage", js.undefined)
+    inline def setReloadPageUndefined: Self = StObject.set(x, "reloadPage", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setShowLoadMsg(value: Boolean): Self = StObject.set(x, "showLoadMsg", value.asInstanceOf[js.Any])
+    inline def setShowLoadMsg(value: Boolean): Self = StObject.set(x, "showLoadMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLoadMsgUndefined: Self = StObject.set(x, "showLoadMsg", js.undefined)
+    inline def setShowLoadMsgUndefined: Self = StObject.set(x, "showLoadMsg", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

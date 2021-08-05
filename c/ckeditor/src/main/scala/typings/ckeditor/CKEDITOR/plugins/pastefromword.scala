@@ -15,17 +15,14 @@ object pastefromword {
   }
   object lists {
     
-    @scala.inline
-    def apply(numbering: numbering): lists = {
+    inline def apply(numbering: numbering): lists = {
       val __obj = js.Dynamic.literal(numbering = numbering.asInstanceOf[js.Any])
       __obj.asInstanceOf[lists]
     }
     
-    @scala.inline
-    implicit class listsMutableBuilder[Self <: lists] (val x: Self) extends AnyVal {
+    extension [Self <: lists](x: Self) {
       
-      @scala.inline
-      def setNumbering(value: numbering): Self = StObject.set(x, "numbering", value.asInstanceOf[js.Any])
+      inline def setNumbering(value: numbering): Self = StObject.set(x, "numbering", value.asInstanceOf[js.Any])
     }
     
     trait numbering extends StObject {
@@ -36,20 +33,16 @@ object pastefromword {
     }
     object numbering {
       
-      @scala.inline
-      def apply(getStyle: String => String, toNumber: (String, String) => Double): numbering = {
+      inline def apply(getStyle: String => String, toNumber: (String, String) => Double): numbering = {
         val __obj = js.Dynamic.literal(getStyle = js.Any.fromFunction1(getStyle), toNumber = js.Any.fromFunction2(toNumber))
         __obj.asInstanceOf[numbering]
       }
       
-      @scala.inline
-      implicit class numberingMutableBuilder[Self <: numbering] (val x: Self) extends AnyVal {
+      extension [Self <: numbering](x: Self) {
         
-        @scala.inline
-        def setGetStyle(value: String => String): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
+        inline def setGetStyle(value: String => String): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToNumber(value: (String, String) => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction2(value))
+        inline def setToNumber(value: (String, String) => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction2(value))
       }
     }
   }

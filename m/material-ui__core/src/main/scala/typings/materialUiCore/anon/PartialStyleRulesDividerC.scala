@@ -20,43 +20,31 @@ trait PartialStyleRulesDividerC extends StObject {
 }
 object PartialStyleRulesDividerC {
   
-  @scala.inline
-  def apply(): PartialStyleRulesDividerC = {
+  inline def apply(): PartialStyleRulesDividerC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesDividerC]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesDividerCMutableBuilder[Self <: PartialStyleRulesDividerC] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesDividerC](x: Self) {
     
-    @scala.inline
-    def setAbsolute(value: CSSProperties): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+    inline def setAbsolute(value: CSSProperties): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+    inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
-    @scala.inline
-    def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setLight(value: CSSProperties): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: CSSProperties): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
-    @scala.inline
-    def setMiddle(value: CSSProperties): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+    inline def setMiddle(value: CSSProperties): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
+    inline def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

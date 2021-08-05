@@ -20,34 +20,25 @@ trait ListHITsResponse extends StObject {
 }
 object ListHITsResponse {
   
-  @scala.inline
-  def apply(): ListHITsResponse = {
+  inline def apply(): ListHITsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHITsResponse]
   }
   
-  @scala.inline
-  implicit class ListHITsResponseMutableBuilder[Self <: ListHITsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHITsResponse](x: Self) {
     
-    @scala.inline
-    def setHITs(value: HITList): Self = StObject.set(x, "HITs", value.asInstanceOf[js.Any])
+    inline def setHITs(value: HITList): Self = StObject.set(x, "HITs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITsUndefined: Self = StObject.set(x, "HITs", js.undefined)
+    inline def setHITsUndefined: Self = StObject.set(x, "HITs", js.undefined)
     
-    @scala.inline
-    def setHITsVarargs(value: HIT*): Self = StObject.set(x, "HITs", js.Array(value :_*))
+    inline def setHITsVarargs(value: HIT*): Self = StObject.set(x, "HITs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
   }
 }

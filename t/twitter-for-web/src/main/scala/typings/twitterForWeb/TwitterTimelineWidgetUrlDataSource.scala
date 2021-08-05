@@ -15,19 +15,15 @@ trait TwitterTimelineWidgetUrlDataSource
 }
 object TwitterTimelineWidgetUrlDataSource {
   
-  @scala.inline
-  def apply(url: String): TwitterTimelineWidgetUrlDataSource = {
+  inline def apply(url: String): TwitterTimelineWidgetUrlDataSource = {
     val __obj = js.Dynamic.literal(sourceType = "url", url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterTimelineWidgetUrlDataSource]
   }
   
-  @scala.inline
-  implicit class TwitterTimelineWidgetUrlDataSourceMutableBuilder[Self <: TwitterTimelineWidgetUrlDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterTimelineWidgetUrlDataSource](x: Self) {
     
-    @scala.inline
-    def setSourceType(value: url): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: url): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

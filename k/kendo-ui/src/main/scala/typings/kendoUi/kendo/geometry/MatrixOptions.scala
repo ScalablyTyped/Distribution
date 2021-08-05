@@ -10,19 +10,15 @@ trait MatrixOptions extends StObject {
 }
 object MatrixOptions {
   
-  @scala.inline
-  def apply(): MatrixOptions = {
+  inline def apply(): MatrixOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatrixOptions]
   }
   
-  @scala.inline
-  implicit class MatrixOptionsMutableBuilder[Self <: MatrixOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MatrixOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

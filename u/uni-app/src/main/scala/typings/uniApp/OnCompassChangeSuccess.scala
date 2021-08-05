@@ -13,19 +13,15 @@ trait OnCompassChangeSuccess extends StObject {
 }
 object OnCompassChangeSuccess {
   
-  @scala.inline
-  def apply(): OnCompassChangeSuccess = {
+  inline def apply(): OnCompassChangeSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnCompassChangeSuccess]
   }
   
-  @scala.inline
-  implicit class OnCompassChangeSuccessMutableBuilder[Self <: OnCompassChangeSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: OnCompassChangeSuccess](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
   }
 }

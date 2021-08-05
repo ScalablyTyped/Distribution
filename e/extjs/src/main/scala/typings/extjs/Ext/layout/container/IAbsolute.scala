@@ -19,25 +19,19 @@ trait IAbsolute
 }
 object IAbsolute {
   
-  @scala.inline
-  def apply(): IAbsolute = {
+  inline def apply(): IAbsolute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAbsolute]
   }
   
-  @scala.inline
-  implicit class IAbsoluteMutableBuilder[Self <: IAbsolute] (val x: Self) extends AnyVal {
+  extension [Self <: IAbsolute](x: Self) {
     
-    @scala.inline
-    def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
+    inline def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreOnContentChangeUndefined: Self = StObject.set(x, "ignoreOnContentChange", js.undefined)
+    inline def setIgnoreOnContentChangeUndefined: Self = StObject.set(x, "ignoreOnContentChange", js.undefined)
     
-    @scala.inline
-    def setOnContentChange(value: () => Boolean): Self = StObject.set(x, "onContentChange", js.Any.fromFunction0(value))
+    inline def setOnContentChange(value: () => Boolean): Self = StObject.set(x, "onContentChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
+    inline def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
   }
 }

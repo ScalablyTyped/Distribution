@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.INotifyHostEventHandler")
 @js.native
-class INotifyHostEventHandler protected ()
+/* private */ class INotifyHostEventHandler ()
   extends StObject
      with typings.activexInfopath.InfoPath.INotifyHostEventHandler {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.INotifyHostEventHandler_typekey")
   var InfoPathDotINotifyHostEventHandler_typekey: typings.activexInfopath.InfoPath.INotifyHostEventHandler = js.native
   

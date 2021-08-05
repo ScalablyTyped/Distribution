@@ -33,31 +33,23 @@ trait DeviceShadowEnrichActivity extends StObject {
 }
 object DeviceShadowEnrichActivity {
   
-  @scala.inline
-  def apply(attribute: AttributeName, name: ActivityName, roleArn: RoleArn, thingName: AttributeName): DeviceShadowEnrichActivity = {
+  inline def apply(attribute: AttributeName, name: ActivityName, roleArn: RoleArn, thingName: AttributeName): DeviceShadowEnrichActivity = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceShadowEnrichActivity]
   }
   
-  @scala.inline
-  implicit class DeviceShadowEnrichActivityMutableBuilder[Self <: DeviceShadowEnrichActivity] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceShadowEnrichActivity](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: AttributeName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: AttributeName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingName(value: AttributeName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: AttributeName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

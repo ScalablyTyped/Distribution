@@ -13,16 +13,13 @@ trait GroupIdentity extends StObject {
 }
 object GroupIdentity {
   
-  @scala.inline
-  def apply(id: IdentityId): GroupIdentity = {
+  inline def apply(id: IdentityId): GroupIdentity = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupIdentity]
   }
   
-  @scala.inline
-  implicit class GroupIdentityMutableBuilder[Self <: GroupIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: GroupIdentity](x: Self) {
     
-    @scala.inline
-    def setId(value: IdentityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdentityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

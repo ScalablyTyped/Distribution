@@ -26,31 +26,23 @@ trait SchemaBigQueryLocation extends StObject {
 }
 object SchemaBigQueryLocation {
   
-  @scala.inline
-  def apply(): SchemaBigQueryLocation = {
+  inline def apply(): SchemaBigQueryLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigQueryLocation]
   }
   
-  @scala.inline
-  implicit class SchemaBigQueryLocationMutableBuilder[Self <: SchemaBigQueryLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBigQueryLocation](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setSchemaConfig(value: SchemaSchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
+    inline def setSchemaConfig(value: SchemaSchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
+    inline def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
   }
 }

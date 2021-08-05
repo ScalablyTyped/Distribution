@@ -16,19 +16,15 @@ trait SchemaAnnotationSource extends StObject {
 }
 object SchemaAnnotationSource {
   
-  @scala.inline
-  def apply(): SchemaAnnotationSource = {
+  inline def apply(): SchemaAnnotationSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnnotationSource]
   }
   
-  @scala.inline
-  implicit class SchemaAnnotationSourceMutableBuilder[Self <: SchemaAnnotationSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnnotationSource](x: Self) {
     
-    @scala.inline
-    def setCloudHealthcareSource(value: SchemaCloudHealthcareSource): Self = StObject.set(x, "cloudHealthcareSource", value.asInstanceOf[js.Any])
+    inline def setCloudHealthcareSource(value: SchemaCloudHealthcareSource): Self = StObject.set(x, "cloudHealthcareSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudHealthcareSourceUndefined: Self = StObject.set(x, "cloudHealthcareSource", js.undefined)
+    inline def setCloudHealthcareSourceUndefined: Self = StObject.set(x, "cloudHealthcareSource", js.undefined)
   }
 }

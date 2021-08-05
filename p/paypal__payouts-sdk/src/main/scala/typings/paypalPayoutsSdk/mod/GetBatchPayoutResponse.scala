@@ -20,55 +20,39 @@ trait GetBatchPayoutResponse extends StObject {
 }
 object GetBatchPayoutResponse {
   
-  @scala.inline
-  def apply(): GetBatchPayoutResponse = {
+  inline def apply(): GetBatchPayoutResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBatchPayoutResponse]
   }
   
-  @scala.inline
-  implicit class GetBatchPayoutResponseMutableBuilder[Self <: GetBatchPayoutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBatchPayoutResponse](x: Self) {
     
-    @scala.inline
-    def setBatch_header(value: PayoutBatchHeader): Self = StObject.set(x, "batch_header", value.asInstanceOf[js.Any])
+    inline def setBatch_header(value: PayoutBatchHeader): Self = StObject.set(x, "batch_header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatch_headerUndefined: Self = StObject.set(x, "batch_header", js.undefined)
+    inline def setBatch_headerUndefined: Self = StObject.set(x, "batch_header", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[PayoutBatchItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PayoutBatchItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: PayoutBatchItems*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PayoutBatchItems*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
+    inline def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_itemsUndefined: Self = StObject.set(x, "total_items", js.undefined)
+    inline def setTotal_itemsUndefined: Self = StObject.set(x, "total_items", js.undefined)
     
-    @scala.inline
-    def setTotal_pages(value: Double): Self = StObject.set(x, "total_pages", value.asInstanceOf[js.Any])
+    inline def setTotal_pages(value: Double): Self = StObject.set(x, "total_pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_pagesUndefined: Self = StObject.set(x, "total_pages", js.undefined)
+    inline def setTotal_pagesUndefined: Self = StObject.set(x, "total_pages", js.undefined)
   }
 }

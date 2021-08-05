@@ -109,79 +109,55 @@ trait VictoryBrushContainerProps
 }
 object VictoryBrushContainerProps {
   
-  @scala.inline
-  def apply(): VictoryBrushContainerProps = {
+  inline def apply(): VictoryBrushContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryBrushContainerProps]
   }
   
-  @scala.inline
-  implicit class VictoryBrushContainerPropsMutableBuilder[Self <: VictoryBrushContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryBrushContainerProps](x: Self) {
     
-    @scala.inline
-    def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
+    inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
+    inline def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
     
-    @scala.inline
-    def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
+    inline def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
+    inline def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
     
-    @scala.inline
-    def setBrushComponent(value: ReactElement): Self = StObject.set(x, "brushComponent", value.asInstanceOf[js.Any])
+    inline def setBrushComponent(value: ReactElement): Self = StObject.set(x, "brushComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrushComponentUndefined: Self = StObject.set(x, "brushComponent", js.undefined)
+    inline def setBrushComponentUndefined: Self = StObject.set(x, "brushComponent", js.undefined)
     
-    @scala.inline
-    def setBrushDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "brushDimension", value.asInstanceOf[js.Any])
+    inline def setBrushDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "brushDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrushDimensionUndefined: Self = StObject.set(x, "brushDimension", js.undefined)
+    inline def setBrushDimensionUndefined: Self = StObject.set(x, "brushDimension", js.undefined)
     
-    @scala.inline
-    def setBrushDomain(value: DomainPropType): Self = StObject.set(x, "brushDomain", value.asInstanceOf[js.Any])
+    inline def setBrushDomain(value: DomainPropType): Self = StObject.set(x, "brushDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrushDomainUndefined: Self = StObject.set(x, "brushDomain", js.undefined)
+    inline def setBrushDomainUndefined: Self = StObject.set(x, "brushDomain", js.undefined)
     
-    @scala.inline
-    def setBrushStyle(value: CSSProperties): Self = StObject.set(x, "brushStyle", value.asInstanceOf[js.Any])
+    inline def setBrushStyle(value: CSSProperties): Self = StObject.set(x, "brushStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrushStyleUndefined: Self = StObject.set(x, "brushStyle", js.undefined)
+    inline def setBrushStyleUndefined: Self = StObject.set(x, "brushStyle", js.undefined)
     
-    @scala.inline
-    def setDefaultBrushArea(value: all | none | disable): Self = StObject.set(x, "defaultBrushArea", value.asInstanceOf[js.Any])
+    inline def setDefaultBrushArea(value: all | none | disable): Self = StObject.set(x, "defaultBrushArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBrushAreaUndefined: Self = StObject.set(x, "defaultBrushArea", js.undefined)
+    inline def setDefaultBrushAreaUndefined: Self = StObject.set(x, "defaultBrushArea", js.undefined)
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setHandleComponent(value: ReactElement): Self = StObject.set(x, "handleComponent", value.asInstanceOf[js.Any])
+    inline def setHandleComponent(value: ReactElement): Self = StObject.set(x, "handleComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleComponentUndefined: Self = StObject.set(x, "handleComponent", js.undefined)
+    inline def setHandleComponentUndefined: Self = StObject.set(x, "handleComponent", js.undefined)
     
-    @scala.inline
-    def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
+    inline def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
+    inline def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
     
-    @scala.inline
-    def setOnBrushDomainChange(value: (/* domain */ DomainPropType, VictoryBrushContainerProps) => Unit): Self = StObject.set(x, "onBrushDomainChange", js.Any.fromFunction2(value))
+    inline def setOnBrushDomainChange(value: (/* domain */ DomainPropType, VictoryBrushContainerProps) => Unit): Self = StObject.set(x, "onBrushDomainChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnBrushDomainChangeUndefined: Self = StObject.set(x, "onBrushDomainChange", js.undefined)
+    inline def setOnBrushDomainChangeUndefined: Self = StObject.set(x, "onBrushDomainChange", js.undefined)
   }
 }

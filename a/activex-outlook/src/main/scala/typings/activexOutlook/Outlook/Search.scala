@@ -16,7 +16,7 @@ trait Search extends StObject {
   
   val IsSynchronous: Boolean
   
-  @JSName("Outlook.Search_typekey")
+  /* private */ @JSName("Outlook.Search_typekey")
   var OutlookDotSearch_typekey: Search
   
   val Parent: js.Any
@@ -37,8 +37,7 @@ trait Search extends StObject {
 }
 object Search {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Filter: String,
@@ -59,49 +58,34 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  @scala.inline
-  implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
+  extension [Self <: Search](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTable(value: () => Table): Self = StObject.set(x, "GetTable", js.Any.fromFunction0(value))
+    inline def setGetTable(value: () => Table): Self = StObject.set(x, "GetTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSynchronous(value: Boolean): Self = StObject.set(x, "IsSynchronous", value.asInstanceOf[js.Any])
+    inline def setIsSynchronous(value: Boolean): Self = StObject.set(x, "IsSynchronous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotSearch_typekey(value: Search): Self = StObject.set(x, "Outlook.Search_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotSearch_typekey(value: Search): Self = StObject.set(x, "Outlook.Search_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: Results): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Results): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: String => Folder): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
+    inline def setSave(value: String => Folder): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSubFolders(value: Boolean): Self = StObject.set(x, "SearchSubFolders", value.asInstanceOf[js.Any])
+    inline def setSearchSubFolders(value: Boolean): Self = StObject.set(x, "SearchSubFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
   }
 }

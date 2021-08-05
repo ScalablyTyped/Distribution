@@ -10,16 +10,13 @@ trait EnumValuesExclusion extends StObject {
 }
 object EnumValuesExclusion {
   
-  @scala.inline
-  def apply(enumValues: Exclusion): EnumValuesExclusion = {
+  inline def apply(enumValues: Exclusion): EnumValuesExclusion = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesExclusion]
   }
   
-  @scala.inline
-  implicit class EnumValuesExclusionMutableBuilder[Self <: EnumValuesExclusion] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesExclusion](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Exclusion): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Exclusion): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

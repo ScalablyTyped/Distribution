@@ -28,34 +28,25 @@ trait GetParameterHistoryRequest extends StObject {
 }
 object GetParameterHistoryRequest {
   
-  @scala.inline
-  def apply(Name: PSParameterName): GetParameterHistoryRequest = {
+  inline def apply(Name: PSParameterName): GetParameterHistoryRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParameterHistoryRequest]
   }
   
-  @scala.inline
-  implicit class GetParameterHistoryRequestMutableBuilder[Self <: GetParameterHistoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetParameterHistoryRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
+    inline def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
+    inline def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
   }
 }

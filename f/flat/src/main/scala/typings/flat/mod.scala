@@ -43,38 +43,28 @@ object mod extends Shortcut {
     }
     object FlattenOptions {
       
-      @scala.inline
-      def apply(): FlattenOptions = {
+      inline def apply(): FlattenOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FlattenOptions]
       }
       
-      @scala.inline
-      implicit class FlattenOptionsMutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FlattenOptions](x: Self) {
         
-        @scala.inline
-        def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+        inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+        inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
         
-        @scala.inline
-        def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+        inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+        inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
         
-        @scala.inline
-        def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+        inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+        inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
         
-        @scala.inline
-        def setTransformKey(value: /* key */ String => String): Self = StObject.set(x, "transformKey", js.Any.fromFunction1(value))
+        inline def setTransformKey(value: /* key */ String => String): Self = StObject.set(x, "transformKey", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
+        inline def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
       }
     }
     
@@ -92,38 +82,28 @@ object mod extends Shortcut {
     }
     object UnflattenOptions {
       
-      @scala.inline
-      def apply(): UnflattenOptions = {
+      inline def apply(): UnflattenOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UnflattenOptions]
       }
       
-      @scala.inline
-      implicit class UnflattenOptionsMutableBuilder[Self <: UnflattenOptions] (val x: Self) extends AnyVal {
+      extension [Self <: UnflattenOptions](x: Self) {
         
-        @scala.inline
-        def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+        inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+        inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
         
-        @scala.inline
-        def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+        inline def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+        inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
         
-        @scala.inline
-        def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+        inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+        inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
         
-        @scala.inline
-        def setTransformKey(value: /* key */ String => String): Self = StObject.set(x, "transformKey", js.Any.fromFunction1(value))
+        inline def setTransformKey(value: /* key */ String => String): Self = StObject.set(x, "transformKey", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
+        inline def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
       }
     }
   }

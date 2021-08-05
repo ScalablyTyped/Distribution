@@ -19,22 +19,17 @@ trait AssertsIdentifierTypePredicate
 }
 object AssertsIdentifierTypePredicate {
   
-  @scala.inline
-  def apply(kind: AssertsIdentifier, parameterIndex: Double, parameterName: java.lang.String): AssertsIdentifierTypePredicate = {
+  inline def apply(kind: AssertsIdentifier, parameterIndex: Double, parameterName: java.lang.String): AssertsIdentifierTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertsIdentifierTypePredicate]
   }
   
-  @scala.inline
-  implicit class AssertsIdentifierTypePredicateMutableBuilder[Self <: AssertsIdentifierTypePredicate] (val x: Self) extends AnyVal {
+  extension [Self <: AssertsIdentifierTypePredicate](x: Self) {
     
-    @scala.inline
-    def setKind(value: AssertsIdentifier): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: AssertsIdentifier): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterIndex(value: Double): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
+    inline def setParameterIndex(value: Double): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterName(value: java.lang.String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: java.lang.String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
   }
 }

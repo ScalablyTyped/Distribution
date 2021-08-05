@@ -28,31 +28,23 @@ trait InitiateMultipartUploadInput extends StObject {
 }
 object InitiateMultipartUploadInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): InitiateMultipartUploadInput = {
+  inline def apply(accountId: String, vaultName: String): InitiateMultipartUploadInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateMultipartUploadInput]
   }
   
-  @scala.inline
-  implicit class InitiateMultipartUploadInputMutableBuilder[Self <: InitiateMultipartUploadInput] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateMultipartUploadInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
+    inline def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
+    inline def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
     
-    @scala.inline
-    def setPartSize(value: String): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+    inline def setPartSize(value: String): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+    inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

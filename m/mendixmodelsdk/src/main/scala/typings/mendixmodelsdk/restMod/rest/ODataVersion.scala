@@ -21,20 +21,17 @@ object ODataVersion {
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataVersion.OData2")
   @js.native
   def OData2: ODataVersion = js.native
-  @scala.inline
-  def OData2_=(x: ODataVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OData2")(x.asInstanceOf[js.Any])
+  inline def OData2_=(x: ODataVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OData2")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataVersion.OData3")
   @js.native
   def OData3: ODataVersion = js.native
-  @scala.inline
-  def OData3_=(x: ODataVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OData3")(x.asInstanceOf[js.Any])
+  inline def OData3_=(x: ODataVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OData3")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataVersion.OData4")
   @js.native
   def OData4: ODataVersion = js.native
-  @scala.inline
-  def OData4_=(x: ODataVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OData4")(x.asInstanceOf[js.Any])
+  inline def OData4_=(x: ODataVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OData4")(x.asInstanceOf[js.Any])
 }

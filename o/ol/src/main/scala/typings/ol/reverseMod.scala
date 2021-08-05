@@ -10,6 +10,5 @@ object reverseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def coordinates(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coordinates")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def coordinates(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coordinates")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

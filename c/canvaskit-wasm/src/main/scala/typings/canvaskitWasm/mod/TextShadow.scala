@@ -17,37 +17,27 @@ trait TextShadow extends StObject {
 }
 object TextShadow {
   
-  @scala.inline
-  def apply(): TextShadow = {
+  inline def apply(): TextShadow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextShadow]
   }
   
-  @scala.inline
-  implicit class TextShadowMutableBuilder[Self <: TextShadow] (val x: Self) extends AnyVal {
+  extension [Self <: TextShadow](x: Self) {
     
-    @scala.inline
-    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
-    @scala.inline
-    def setColor(value: InputColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: InputColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
   }
 }

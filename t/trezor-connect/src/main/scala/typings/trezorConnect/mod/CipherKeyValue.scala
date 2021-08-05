@@ -12,16 +12,13 @@ trait CipherKeyValue
 }
 object CipherKeyValue {
   
-  @scala.inline
-  def apply(value: String): CipherKeyValue = {
+  inline def apply(value: String): CipherKeyValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherKeyValue]
   }
   
-  @scala.inline
-  implicit class CipherKeyValueMutableBuilder[Self <: CipherKeyValue] (val x: Self) extends AnyVal {
+  extension [Self <: CipherKeyValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

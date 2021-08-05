@@ -36,31 +36,23 @@ trait TimelineStyleLoadOptions extends StObject {
 }
 object TimelineStyleLoadOptions {
   
-  @scala.inline
-  def apply(): TimelineStyleLoadOptions = {
+  inline def apply(): TimelineStyleLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineStyleLoadOptions]
   }
   
-  @scala.inline
-  implicit class TimelineStyleLoadOptionsMutableBuilder[Self <: TimelineStyleLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineStyleLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

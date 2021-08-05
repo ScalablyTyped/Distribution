@@ -10,16 +10,13 @@ trait UpdateRegistrationRequest extends StObject {
 }
 object UpdateRegistrationRequest {
   
-  @scala.inline
-  def apply(scopeURL: String): UpdateRegistrationRequest = {
+  inline def apply(scopeURL: String): UpdateRegistrationRequest = {
     val __obj = js.Dynamic.literal(scopeURL = scopeURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRegistrationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRegistrationRequestMutableBuilder[Self <: UpdateRegistrationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRegistrationRequest](x: Self) {
     
-    @scala.inline
-    def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
+    inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }
 }

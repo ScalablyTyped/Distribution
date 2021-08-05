@@ -9,56 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(files: String, bundleIdOrLoaded: String): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: String, bundleIdOrLoaded: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: String, bundleIdOrLoaded: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: String, bundleId: String, optionsOrCallback: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: String, bundleId: String, optionsOrCallback: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: String, bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply(files: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply(files: js.Array[String], bundleIdOrLoaded: String): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: js.Array[String], bundleIdOrLoaded: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: js.Array[String], bundleIdOrLoaded: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: js.Array[String], bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply(files: js.Array[String], options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(files: String, bundleIdOrLoaded: String): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: String, bundleIdOrLoaded: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: String, bundleIdOrLoaded: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: String, bundleId: String, optionsOrCallback: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: String, bundleId: String, optionsOrCallback: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: String, bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(files: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(files: js.Array[String], bundleIdOrLoaded: String): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[String], bundleIdOrLoaded: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[String], bundleIdOrLoaded: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleIdOrLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadedFn): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[String], bundleId: String, options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], bundleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(files: js.Array[String], options: LoadOptionsreturnPromiset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("loadjs", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def done(bundleId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("done")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def done(bundleId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("done")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isDefined(bundleId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDefined(bundleId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ready(bundleIds: String, optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
-  @scala.inline
-  def ready(bundleIds: String, optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
-  @scala.inline
-  def ready(bundleIds: js.Array[String], optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
-  @scala.inline
-  def ready(bundleIds: js.Array[String], optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  inline def ready(bundleIds: String, optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  inline def ready(bundleIds: String, optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  inline def ready(bundleIds: js.Array[String], optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  inline def ready(bundleIds: js.Array[String], optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
   
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   trait LoadOptions extends StObject {
     
@@ -75,44 +54,32 @@ object mod {
   }
   object LoadOptions {
     
-    @scala.inline
-    def apply(): LoadOptions = {
+    inline def apply(): LoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadOptions]
     }
     
-    @scala.inline
-    implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoadOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setBefore(value: (/* path */ String, /* scriptEl */ HTMLElement) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (/* path */ String, /* scriptEl */ HTMLElement) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
+      inline def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
+      inline def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+      inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -126,26 +93,20 @@ object mod {
   }
   object ReadyOptions {
     
-    @scala.inline
-    def apply(): ReadyOptions = {
+    inline def apply(): ReadyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadyOptions]
     }
     
-    @scala.inline
-    implicit class ReadyOptionsMutableBuilder[Self <: ReadyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadyOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+      inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
 }

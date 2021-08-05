@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBarPosition extends StObject
 object MsoBarPosition {
   
-  @scala.inline
-  def msoBarBottom: `3` = 3.asInstanceOf[`3`]
+  inline def msoBarBottom: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoBarFloating: `4` = 4.asInstanceOf[`4`]
+  inline def msoBarFloating: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoBarLeft: `0` = 0.asInstanceOf[`0`]
+  inline def msoBarLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBarMenuBar: `6` = 6.asInstanceOf[`6`]
+  inline def msoBarMenuBar: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoBarPopup: `5` = 5.asInstanceOf[`5`]
+  inline def msoBarPopup: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoBarRight: `2` = 2.asInstanceOf[`2`]
+  inline def msoBarRight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBarTop: `1` = 1.asInstanceOf[`1`]
+  inline def msoBarTop: `1` = 1.asInstanceOf[`1`]
 }

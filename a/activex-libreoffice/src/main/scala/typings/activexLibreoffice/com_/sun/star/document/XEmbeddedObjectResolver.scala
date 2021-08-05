@@ -16,8 +16,7 @@ trait XEmbeddedObjectResolver
 }
 object XEmbeddedObjectResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -27,10 +26,8 @@ object XEmbeddedObjectResolver {
     __obj.asInstanceOf[XEmbeddedObjectResolver]
   }
   
-  @scala.inline
-  implicit class XEmbeddedObjectResolverMutableBuilder[Self <: XEmbeddedObjectResolver] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbeddedObjectResolver](x: Self) {
     
-    @scala.inline
-    def setResolveEmbeddedObjectURL(value: String => String): Self = StObject.set(x, "resolveEmbeddedObjectURL", js.Any.fromFunction1(value))
+    inline def setResolveEmbeddedObjectURL(value: String => String): Self = StObject.set(x, "resolveEmbeddedObjectURL", js.Any.fromFunction1(value))
   }
 }

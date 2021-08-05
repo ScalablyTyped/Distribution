@@ -10,16 +10,13 @@ trait StaticPlots extends StObject {
 }
 object StaticPlots {
   
-  @scala.inline
-  def apply(resize: Root => Unit): StaticPlots = {
+  inline def apply(resize: Root => Unit): StaticPlots = {
     val __obj = js.Dynamic.literal(resize = js.Any.fromFunction1(resize))
     __obj.asInstanceOf[StaticPlots]
   }
   
-  @scala.inline
-  implicit class StaticPlotsMutableBuilder[Self <: StaticPlots] (val x: Self) extends AnyVal {
+  extension [Self <: StaticPlots](x: Self) {
     
-    @scala.inline
-    def setResize(value: Root => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+    inline def setResize(value: Root => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
   }
 }

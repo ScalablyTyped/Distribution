@@ -19,38 +19,28 @@ object anon {
   }
   object OmitOptionsonce {
     
-    @scala.inline
-    def apply(): OmitOptionsonce = {
+    inline def apply(): OmitOptionsonce = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OmitOptionsonce]
     }
     
-    @scala.inline
-    implicit class OmitOptionsonceMutableBuilder[Self <: OmitOptionsonce] (val x: Self) extends AnyVal {
+    extension [Self <: OmitOptionsonce](x: Self) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+      inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      @scala.inline
-      def setPart(value: Boolean): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+      inline def setPart(value: Boolean): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+      inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
       
-      @scala.inline
-      def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+      inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     }
   }
 }

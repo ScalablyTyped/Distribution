@@ -30,26 +30,22 @@ object mod {
     @JSImport("react-waypoint", "Waypoint.above")
     @js.native
     def above: String = js.native
-    @scala.inline
-    def above_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("above")(x.asInstanceOf[js.Any])
+    inline def above_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("above")(x.asInstanceOf[js.Any])
     
     @JSImport("react-waypoint", "Waypoint.below")
     @js.native
     def below: String = js.native
-    @scala.inline
-    def below_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("below")(x.asInstanceOf[js.Any])
+    inline def below_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("below")(x.asInstanceOf[js.Any])
     
     @JSImport("react-waypoint", "Waypoint.inside")
     @js.native
     def inside: String = js.native
-    @scala.inline
-    def inside_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inside")(x.asInstanceOf[js.Any])
+    inline def inside_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inside")(x.asInstanceOf[js.Any])
     
     @JSImport("react-waypoint", "Waypoint.invisible")
     @js.native
     def invisible: String = js.native
-    @scala.inline
-    def invisible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invisible")(x.asInstanceOf[js.Any])
+    inline def invisible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invisible")(x.asInstanceOf[js.Any])
     
     trait CallbackArgs extends StObject {
       
@@ -88,8 +84,7 @@ object mod {
     }
     object CallbackArgs {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         currentPosition: String,
         previousPosition: String,
         viewportBottom: Double,
@@ -100,29 +95,21 @@ object mod {
         __obj.asInstanceOf[CallbackArgs]
       }
       
-      @scala.inline
-      implicit class CallbackArgsMutableBuilder[Self <: CallbackArgs] (val x: Self) extends AnyVal {
+      extension [Self <: CallbackArgs](x: Self) {
         
-        @scala.inline
-        def setCurrentPosition(value: String): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
+        inline def setCurrentPosition(value: String): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+        inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+        inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
         
-        @scala.inline
-        def setPreviousPosition(value: String): Self = StObject.set(x, "previousPosition", value.asInstanceOf[js.Any])
+        inline def setPreviousPosition(value: String): Self = StObject.set(x, "previousPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewportBottom(value: Double): Self = StObject.set(x, "viewportBottom", value.asInstanceOf[js.Any])
+        inline def setViewportBottom(value: Double): Self = StObject.set(x, "viewportBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewportTop(value: Double): Self = StObject.set(x, "viewportTop", value.asInstanceOf[js.Any])
+        inline def setViewportTop(value: Double): Self = StObject.set(x, "viewportTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWaypointTop(value: Double): Self = StObject.set(x, "waypointTop", value.asInstanceOf[js.Any])
+        inline def setWaypointTop(value: Double): Self = StObject.set(x, "waypointTop", value.asInstanceOf[js.Any])
       }
     }
     
@@ -189,68 +176,48 @@ object mod {
     }
     object WaypointProps {
       
-      @scala.inline
-      def apply(): WaypointProps = {
+      inline def apply(): WaypointProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WaypointProps]
       }
       
-      @scala.inline
-      implicit class WaypointPropsMutableBuilder[Self <: WaypointProps] (val x: Self) extends AnyVal {
+      extension [Self <: WaypointProps](x: Self) {
         
-        @scala.inline
-        def setBottomOffset(value: String | Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+        inline def setBottomOffset(value: String | Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
+        inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+        inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
         
-        @scala.inline
-        def setFireOnRapidScroll(value: Boolean): Self = StObject.set(x, "fireOnRapidScroll", value.asInstanceOf[js.Any])
+        inline def setFireOnRapidScroll(value: Boolean): Self = StObject.set(x, "fireOnRapidScroll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFireOnRapidScrollUndefined: Self = StObject.set(x, "fireOnRapidScroll", js.undefined)
+        inline def setFireOnRapidScrollUndefined: Self = StObject.set(x, "fireOnRapidScroll", js.undefined)
         
-        @scala.inline
-        def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+        inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+        inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
         
-        @scala.inline
-        def setOnEnter(value: /* args */ CallbackArgs => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+        inline def setOnEnter(value: /* args */ CallbackArgs => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+        inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
         
-        @scala.inline
-        def setOnLeave(value: /* args */ CallbackArgs => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
+        inline def setOnLeave(value: /* args */ CallbackArgs => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+        inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
         
-        @scala.inline
-        def setOnPositionChange(value: /* args */ CallbackArgs => Unit): Self = StObject.set(x, "onPositionChange", js.Any.fromFunction1(value))
+        inline def setOnPositionChange(value: /* args */ CallbackArgs => Unit): Self = StObject.set(x, "onPositionChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnPositionChangeUndefined: Self = StObject.set(x, "onPositionChange", js.undefined)
+        inline def setOnPositionChangeUndefined: Self = StObject.set(x, "onPositionChange", js.undefined)
         
-        @scala.inline
-        def setScrollableAncestor(value: js.Any): Self = StObject.set(x, "scrollableAncestor", value.asInstanceOf[js.Any])
+        inline def setScrollableAncestor(value: js.Any): Self = StObject.set(x, "scrollableAncestor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollableAncestorUndefined: Self = StObject.set(x, "scrollableAncestor", js.undefined)
+        inline def setScrollableAncestorUndefined: Self = StObject.set(x, "scrollableAncestor", js.undefined)
         
-        @scala.inline
-        def setTopOffset(value: String | Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+        inline def setTopOffset(value: String | Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+        inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
       }
     }
   }

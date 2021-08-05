@@ -53,8 +53,7 @@ object multipleSelectorMod extends Shortcut {
   }
   object SelectorProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessibilityIndex: Double,
       id: String,
       mode: Mode,
@@ -74,62 +73,43 @@ object multipleSelectorMod extends Shortcut {
       __obj.asInstanceOf[SelectorProps]
     }
     
-    @scala.inline
-    implicit class SelectorPropsMutableBuilder[Self <: SelectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorProps](x: Self) {
       
-      @scala.inline
-      def setChoiceTransitionName(value: String): Self = StObject.set(x, "choiceTransitionName", value.asInstanceOf[js.Any])
+      inline def setChoiceTransitionName(value: String): Self = StObject.set(x, "choiceTransitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoiceTransitionNameUndefined: Self = StObject.set(x, "choiceTransitionName", js.undefined)
+      inline def setChoiceTransitionNameUndefined: Self = StObject.set(x, "choiceTransitionName", js.undefined)
       
-      @scala.inline
-      def setMaxTagCount(value: Double): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxTagCount(value: Double): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
+      inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
-      @scala.inline
-      def setMaxTagPlaceholder(value: ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])): Self = StObject.set(x, "maxTagPlaceholder", value.asInstanceOf[js.Any])
+      inline def setMaxTagPlaceholder(value: ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])): Self = StObject.set(x, "maxTagPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTagPlaceholderFunction1(value: /* omittedValues */ js.Array[LabelValueType] => ReactNode): Self = StObject.set(x, "maxTagPlaceholder", js.Any.fromFunction1(value))
+      inline def setMaxTagPlaceholderFunction1(value: /* omittedValues */ js.Array[LabelValueType] => ReactNode): Self = StObject.set(x, "maxTagPlaceholder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxTagPlaceholderUndefined: Self = StObject.set(x, "maxTagPlaceholder", js.undefined)
+      inline def setMaxTagPlaceholderUndefined: Self = StObject.set(x, "maxTagPlaceholder", js.undefined)
       
-      @scala.inline
-      def setMaxTagTextLength(value: Double): Self = StObject.set(x, "maxTagTextLength", value.asInstanceOf[js.Any])
+      inline def setMaxTagTextLength(value: Double): Self = StObject.set(x, "maxTagTextLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTagTextLengthUndefined: Self = StObject.set(x, "maxTagTextLength", js.undefined)
+      inline def setMaxTagTextLengthUndefined: Self = StObject.set(x, "maxTagTextLength", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: (RawValueType, Selected) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (RawValueType, Selected) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveIcon(value: RenderNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(value: RenderNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
+      inline def setRemoveIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      @scala.inline
-      def setTagRender(value: /* props */ CustomTagProps => ReactElement): Self = StObject.set(x, "tagRender", js.Any.fromFunction1(value))
+      inline def setTagRender(value: /* props */ CustomTagProps => ReactElement): Self = StObject.set(x, "tagRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
+      inline def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
       
-      @scala.inline
-      def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
+      inline def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
+      inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
       
-      @scala.inline
-      def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value :_*))
+      inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value :_*))
     }
   }
   

@@ -12,8 +12,7 @@ trait CampaignExtensions
 }
 object CampaignExtensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callouts: () => AdWordsSelector[Callout],
     message: () => AdWordsSelector[Message],
     mobileApps: () => AdWordsSelector[MobileApp],
@@ -26,10 +25,8 @@ object CampaignExtensions {
     __obj.asInstanceOf[CampaignExtensions]
   }
   
-  @scala.inline
-  implicit class CampaignExtensionsMutableBuilder[Self <: CampaignExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignExtensions](x: Self) {
     
-    @scala.inline
-    def setPhoneNumbers(value: () => AdWordsSelector[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction0(value))
+    inline def setPhoneNumbers(value: () => AdWordsSelector[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction0(value))
   }
 }

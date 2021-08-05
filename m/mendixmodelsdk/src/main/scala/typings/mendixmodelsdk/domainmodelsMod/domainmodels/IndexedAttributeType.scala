@@ -21,20 +21,17 @@ object IndexedAttributeType {
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttributeType.ChangedDate")
   @js.native
   def ChangedDate: IndexedAttributeType = js.native
-  @scala.inline
-  def ChangedDate_=(x: IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangedDate")(x.asInstanceOf[js.Any])
+  inline def ChangedDate_=(x: IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangedDate")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttributeType.CreatedDate")
   @js.native
   def CreatedDate: IndexedAttributeType = js.native
-  @scala.inline
-  def CreatedDate_=(x: IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatedDate")(x.asInstanceOf[js.Any])
+  inline def CreatedDate_=(x: IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatedDate")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttributeType.Normal")
   @js.native
   def Normal: IndexedAttributeType = js.native
-  @scala.inline
-  def Normal_=(x: IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
+  inline def Normal_=(x: IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
 }

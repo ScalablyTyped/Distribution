@@ -18,19 +18,15 @@ trait TextDocumentStatistics extends StObject {
 }
 object TextDocumentStatistics {
   
-  @scala.inline
-  def apply(IndexedTextBytes: IndexedTextBytes, IndexedTextDocumentsCount: IndexedTextDocumentsCount): TextDocumentStatistics = {
+  inline def apply(IndexedTextBytes: IndexedTextBytes, IndexedTextDocumentsCount: IndexedTextDocumentsCount): TextDocumentStatistics = {
     val __obj = js.Dynamic.literal(IndexedTextBytes = IndexedTextBytes.asInstanceOf[js.Any], IndexedTextDocumentsCount = IndexedTextDocumentsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentStatistics]
   }
   
-  @scala.inline
-  implicit class TextDocumentStatisticsMutableBuilder[Self <: TextDocumentStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentStatistics](x: Self) {
     
-    @scala.inline
-    def setIndexedTextBytes(value: IndexedTextBytes): Self = StObject.set(x, "IndexedTextBytes", value.asInstanceOf[js.Any])
+    inline def setIndexedTextBytes(value: IndexedTextBytes): Self = StObject.set(x, "IndexedTextBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexedTextDocumentsCount(value: IndexedTextDocumentsCount): Self = StObject.set(x, "IndexedTextDocumentsCount", value.asInstanceOf[js.Any])
+    inline def setIndexedTextDocumentsCount(value: IndexedTextDocumentsCount): Self = StObject.set(x, "IndexedTextDocumentsCount", value.asInstanceOf[js.Any])
   }
 }

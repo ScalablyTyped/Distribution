@@ -23,22 +23,17 @@ trait BuildArtifact extends StObject {
 }
 object BuildArtifact {
   
-  @scala.inline
-  def apply(id: Double, name: String, resource: ArtifactResource): BuildArtifact = {
+  inline def apply(id: Double, name: String, resource: ArtifactResource): BuildArtifact = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildArtifact]
   }
   
-  @scala.inline
-  implicit class BuildArtifactMutableBuilder[Self <: BuildArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: BuildArtifact](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: ArtifactResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ArtifactResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

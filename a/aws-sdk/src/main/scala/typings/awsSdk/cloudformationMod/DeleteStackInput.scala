@@ -28,37 +28,27 @@ trait DeleteStackInput extends StObject {
 }
 object DeleteStackInput {
   
-  @scala.inline
-  def apply(StackName: StackName): DeleteStackInput = {
+  inline def apply(StackName: StackName): DeleteStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStackInput]
   }
   
-  @scala.inline
-  implicit class DeleteStackInputMutableBuilder[Self <: DeleteStackInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStackInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setRetainResources(value: RetainResources): Self = StObject.set(x, "RetainResources", value.asInstanceOf[js.Any])
+    inline def setRetainResources(value: RetainResources): Self = StObject.set(x, "RetainResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainResourcesUndefined: Self = StObject.set(x, "RetainResources", js.undefined)
+    inline def setRetainResourcesUndefined: Self = StObject.set(x, "RetainResources", js.undefined)
     
-    @scala.inline
-    def setRetainResourcesVarargs(value: LogicalResourceId*): Self = StObject.set(x, "RetainResources", js.Array(value :_*))
+    inline def setRetainResourcesVarargs(value: LogicalResourceId*): Self = StObject.set(x, "RetainResources", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

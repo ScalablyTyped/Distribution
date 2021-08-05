@@ -17,19 +17,15 @@ trait AsyncValidationOptions
 }
 object AsyncValidationOptions {
   
-  @scala.inline
-  def apply(): AsyncValidationOptions = {
+  inline def apply(): AsyncValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncValidationOptions]
   }
   
-  @scala.inline
-  implicit class AsyncValidationOptionsMutableBuilder[Self <: AsyncValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncValidationOptions](x: Self) {
     
-    @scala.inline
-    def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }
 }

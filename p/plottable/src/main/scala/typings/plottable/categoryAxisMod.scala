@@ -40,27 +40,27 @@ object categoryAxisMod {
       */
     /* private */ def _measureTickLabels(axisWidth: js.Any, axisHeight: js.Any): js.Any = js.native
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
     /**
       * The rotation angle of tick label text. Only 0, 90, -90 are supported
       */
-    var _tickLabelAngle: js.Any = js.native
+    /* private */ var _tickLabelAngle: js.Any = js.native
     
     /**
       * Maximum allowable number of wrapped lines for tick labels.
       */
-    var _tickLabelMaxLines: js.Any = js.native
+    /* private */ var _tickLabelMaxLines: js.Any = js.native
     
     /**
       * Maximum allowable px width of tick labels.
       */
-    var _tickLabelMaxWidth: js.Any = js.native
+    /* private */ var _tickLabelMaxWidth: js.Any = js.native
     
     /**
       * The shear angle of the tick label text. Only values -80 <= x <= 80 are supported
       */
-    var _tickLabelShearAngle: js.Any = js.native
+    /* private */ var _tickLabelShearAngle: js.Any = js.native
     
     /**
       * Return the space required by the ticks, padding included.
@@ -68,19 +68,19 @@ object categoryAxisMod {
       */
     /* private */ def _tickSpaceRequired(): js.Any = js.native
     
-    var _typesetterContext: js.Any = js.native
+    /* private */ var _typesetterContext: js.Any = js.native
     
     /**
       * A Wrapper configured according to the other properties on this axis.
       * @returns {Typesettable.Wrapper}
       */
-    val _wrapper: js.Any = js.native
+    /* private */ val _wrapper: js.Any = js.native
     
     /**
       * A Writer attached to this measurer and wrapper.
       * @returns {Typesettable.Writer}
       */
-    val _writer: js.Any = js.native
+    /* private */ val _writer: js.Any = js.native
     
     /**
       * Take the scale and drop ticks at regular intervals such that the resultant ticks are all a reasonable minimum
@@ -160,8 +160,7 @@ object categoryAxisMod {
     @JSImport("plottable/build/src/axes/categoryAxis", "Category._MINIMUM_WIDTH_PER_LABEL_PX")
     @js.native
     def _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
-    @scala.inline
-    def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
+    inline def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
   }
   
   trait IDownsampleInfo extends StObject {
@@ -172,23 +171,18 @@ object categoryAxisMod {
   }
   object IDownsampleInfo {
     
-    @scala.inline
-    def apply(domain: js.Array[String], stepWidth: Double): IDownsampleInfo = {
+    inline def apply(domain: js.Array[String], stepWidth: Double): IDownsampleInfo = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], stepWidth = stepWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDownsampleInfo]
     }
     
-    @scala.inline
-    implicit class IDownsampleInfoMutableBuilder[Self <: IDownsampleInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IDownsampleInfo](x: Self) {
       
-      @scala.inline
-      def setDomain(value: js.Array[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: js.Array[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
       
-      @scala.inline
-      def setStepWidth(value: Double): Self = StObject.set(x, "stepWidth", value.asInstanceOf[js.Any])
+      inline def setStepWidth(value: Double): Self = StObject.set(x, "stepWidth", value.asInstanceOf[js.Any])
     }
   }
 }

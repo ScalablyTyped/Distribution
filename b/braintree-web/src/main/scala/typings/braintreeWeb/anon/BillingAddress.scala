@@ -14,31 +14,23 @@ trait BillingAddress extends StObject {
 }
 object BillingAddress {
   
-  @scala.inline
-  def apply(): BillingAddress = {
+  inline def apply(): BillingAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingAddress]
   }
   
-  @scala.inline
-  implicit class BillingAddressMutableBuilder[Self <: BillingAddress] (val x: Self) extends AnyVal {
+  extension [Self <: BillingAddress](x: Self) {
     
-    @scala.inline
-    def setBillingAddress(value: js.Any): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: js.Any): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
     
-    @scala.inline
-    def setVault(value: Boolean): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
+    inline def setVault(value: Boolean): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
+    inline def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
   }
 }

@@ -29,25 +29,19 @@ trait PerformanceObserver extends StObject {
 }
 object PerformanceObserver {
   
-  @scala.inline
-  def apply(disconnect: () => Unit, observe: IAnyObject => Unit, supportedEntryTypes: js.Array[js.Any]): PerformanceObserver = {
+  inline def apply(disconnect: () => Unit, observe: IAnyObject => Unit, supportedEntryTypes: js.Array[js.Any]): PerformanceObserver = {
     val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction1(observe), supportedEntryTypes = supportedEntryTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceObserver]
   }
   
-  @scala.inline
-  implicit class PerformanceObserverMutableBuilder[Self <: PerformanceObserver] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceObserver](x: Self) {
     
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+    inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObserve(value: IAnyObject => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+    inline def setObserve(value: IAnyObject => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedEntryTypes(value: js.Array[js.Any]): Self = StObject.set(x, "supportedEntryTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedEntryTypes(value: js.Array[js.Any]): Self = StObject.set(x, "supportedEntryTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedEntryTypesVarargs(value: js.Any*): Self = StObject.set(x, "supportedEntryTypes", js.Array(value :_*))
+    inline def setSupportedEntryTypesVarargs(value: js.Any*): Self = StObject.set(x, "supportedEntryTypes", js.Array(value :_*))
   }
 }

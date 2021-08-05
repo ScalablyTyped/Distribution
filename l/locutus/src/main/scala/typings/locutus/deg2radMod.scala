@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deg2radMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(angle: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(angle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(angle: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(angle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/math/deg2rad", JSImport.Namespace)
   @js.native

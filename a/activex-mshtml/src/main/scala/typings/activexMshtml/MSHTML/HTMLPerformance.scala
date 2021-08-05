@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLPerformance extends StObject {
   
-  @JSName("MSHTML.HTMLPerformance_typekey")
+  /* private */ @JSName("MSHTML.HTMLPerformance_typekey")
   var MSHTMLDotHTMLPerformance_typekey: HTMLPerformance
   
   val navigation: IHTMLPerformanceNavigation
@@ -17,8 +17,7 @@ trait HTMLPerformance extends StObject {
 }
 object HTMLPerformance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLPerformance_typekey: HTMLPerformance,
     navigation: IHTMLPerformanceNavigation,
     timing: IHTMLPerformanceTiming,
@@ -29,19 +28,14 @@ object HTMLPerformance {
     __obj.asInstanceOf[HTMLPerformance]
   }
   
-  @scala.inline
-  implicit class HTMLPerformanceMutableBuilder[Self <: HTMLPerformance] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLPerformance](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotHTMLPerformance_typekey(value: HTMLPerformance): Self = StObject.set(x, "MSHTML.HTMLPerformance_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLPerformance_typekey(value: HTMLPerformance): Self = StObject.set(x, "MSHTML.HTMLPerformance_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: IHTMLPerformanceNavigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: IHTMLPerformanceNavigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiming(value: IHTMLPerformanceTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: IHTMLPerformanceTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

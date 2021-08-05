@@ -20,26 +20,20 @@ object anon {
   }
   object LABELFLOATABOVE {
     
-    @scala.inline
-    def apply(LABEL_FLOAT_ABOVE: String, LABEL_REQUIRED: String, LABEL_SHAKE: String, ROOT: String): LABELFLOATABOVE = {
+    inline def apply(LABEL_FLOAT_ABOVE: String, LABEL_REQUIRED: String, LABEL_SHAKE: String, ROOT: String): LABELFLOATABOVE = {
       val __obj = js.Dynamic.literal(LABEL_FLOAT_ABOVE = LABEL_FLOAT_ABOVE.asInstanceOf[js.Any], LABEL_REQUIRED = LABEL_REQUIRED.asInstanceOf[js.Any], LABEL_SHAKE = LABEL_SHAKE.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any])
       __obj.asInstanceOf[LABELFLOATABOVE]
     }
     
-    @scala.inline
-    implicit class LABELFLOATABOVEMutableBuilder[Self <: LABELFLOATABOVE] (val x: Self) extends AnyVal {
+    extension [Self <: LABELFLOATABOVE](x: Self) {
       
-      @scala.inline
-      def setLABEL_FLOAT_ABOVE(value: String): Self = StObject.set(x, "LABEL_FLOAT_ABOVE", value.asInstanceOf[js.Any])
+      inline def setLABEL_FLOAT_ABOVE(value: String): Self = StObject.set(x, "LABEL_FLOAT_ABOVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLABEL_REQUIRED(value: String): Self = StObject.set(x, "LABEL_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setLABEL_REQUIRED(value: String): Self = StObject.set(x, "LABEL_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLABEL_SHAKE(value: String): Self = StObject.set(x, "LABEL_SHAKE", value.asInstanceOf[js.Any])
+      inline def setLABEL_SHAKE(value: String): Self = StObject.set(x, "LABEL_SHAKE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
+      inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,44 +56,32 @@ object anon {
   }
   object PartialMDCFloatingLabelAd {
     
-    @scala.inline
-    def apply(): PartialMDCFloatingLabelAd = {
+    inline def apply(): PartialMDCFloatingLabelAd = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCFloatingLabelAd]
     }
     
-    @scala.inline
-    implicit class PartialMDCFloatingLabelAdMutableBuilder[Self <: PartialMDCFloatingLabelAd] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCFloatingLabelAd](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
+      inline def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
+      inline def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
       
-      @scala.inline
-      def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
+      inline def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
     }
   }
 }

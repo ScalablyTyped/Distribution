@@ -25,32 +25,24 @@ object mod {
   }
   object ApiOptions {
     
-    @scala.inline
-    def apply(): ApiOptions = {
+    inline def apply(): ApiOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApiOptions]
     }
     
-    @scala.inline
-    implicit class ApiOptionsMutableBuilder[Self <: ApiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ApiOptions](x: Self) {
       
-      @scala.inline
-      def setErrorMiddleware(value: () => js.Any): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
+      inline def setErrorMiddleware(value: () => js.Any): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrorMiddlewareUndefined: Self = StObject.set(x, "errorMiddleware", js.undefined)
+      inline def setErrorMiddlewareUndefined: Self = StObject.set(x, "errorMiddleware", js.undefined)
       
-      @scala.inline
-      def setRequestMiddleware(value: () => js.Any): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction0(value))
+      inline def setRequestMiddleware(value: () => js.Any): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequestMiddlewareUndefined: Self = StObject.set(x, "requestMiddleware", js.undefined)
+      inline def setRequestMiddlewareUndefined: Self = StObject.set(x, "requestMiddleware", js.undefined)
       
-      @scala.inline
-      def setResponseMiddleware(value: () => js.Any): Self = StObject.set(x, "responseMiddleware", js.Any.fromFunction0(value))
+      inline def setResponseMiddleware(value: () => js.Any): Self = StObject.set(x, "responseMiddleware", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResponseMiddlewareUndefined: Self = StObject.set(x, "responseMiddleware", js.undefined)
+      inline def setResponseMiddlewareUndefined: Self = StObject.set(x, "responseMiddleware", js.undefined)
     }
   }
   
@@ -60,20 +52,16 @@ object mod {
   }
   object HttpMethodOptions {
     
-    @scala.inline
-    def apply(): HttpMethodOptions = {
+    inline def apply(): HttpMethodOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpMethodOptions]
     }
     
-    @scala.inline
-    implicit class HttpMethodOptionsMutableBuilder[Self <: HttpMethodOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpMethodOptions](x: Self) {
       
-      @scala.inline
-      def setRawBody(value: Boolean): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
+      inline def setRawBody(value: Boolean): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawBodyUndefined: Self = StObject.set(x, "rawBody", js.undefined)
+      inline def setRawBodyUndefined: Self = StObject.set(x, "rawBody", js.undefined)
     }
   }
   
@@ -87,32 +75,24 @@ object mod {
   }
   object HttpResponse {
     
-    @scala.inline
-    def apply(): HttpResponse = {
+    inline def apply(): HttpResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpResponse]
     }
     
-    @scala.inline
-    implicit class HttpResponseMutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
+    extension [Self <: HttpResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
   

@@ -14,25 +14,19 @@ trait RemoveParameter extends StObject {
 }
 object RemoveParameter {
   
-  @scala.inline
-  def apply(removeParameter: js.Array[CallExpression], removeProperty: js.Array[ObjectLiteralExpression]): RemoveParameter = {
+  inline def apply(removeParameter: js.Array[CallExpression], removeProperty: js.Array[ObjectLiteralExpression]): RemoveParameter = {
     val __obj = js.Dynamic.literal(removeParameter = removeParameter.asInstanceOf[js.Any], removeProperty = removeProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveParameter]
   }
   
-  @scala.inline
-  implicit class RemoveParameterMutableBuilder[Self <: RemoveParameter] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveParameter](x: Self) {
     
-    @scala.inline
-    def setRemoveParameter(value: js.Array[CallExpression]): Self = StObject.set(x, "removeParameter", value.asInstanceOf[js.Any])
+    inline def setRemoveParameter(value: js.Array[CallExpression]): Self = StObject.set(x, "removeParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveParameterVarargs(value: CallExpression*): Self = StObject.set(x, "removeParameter", js.Array(value :_*))
+    inline def setRemoveParameterVarargs(value: CallExpression*): Self = StObject.set(x, "removeParameter", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveProperty(value: js.Array[ObjectLiteralExpression]): Self = StObject.set(x, "removeProperty", value.asInstanceOf[js.Any])
+    inline def setRemoveProperty(value: js.Array[ObjectLiteralExpression]): Self = StObject.set(x, "removeProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePropertyVarargs(value: ObjectLiteralExpression*): Self = StObject.set(x, "removeProperty", js.Array(value :_*))
+    inline def setRemovePropertyVarargs(value: ObjectLiteralExpression*): Self = StObject.set(x, "removeProperty", js.Array(value :_*))
   }
 }

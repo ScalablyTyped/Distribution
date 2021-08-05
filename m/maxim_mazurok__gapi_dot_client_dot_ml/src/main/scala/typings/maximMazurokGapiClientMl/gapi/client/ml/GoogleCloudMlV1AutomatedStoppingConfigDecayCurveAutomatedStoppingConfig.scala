@@ -11,19 +11,15 @@ trait GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig ex
 }
 object GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig = {
+  inline def apply(): GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfigMutableBuilder[Self <: GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig](x: Self) {
     
-    @scala.inline
-    def setUseElapsedTime(value: Boolean): Self = StObject.set(x, "useElapsedTime", value.asInstanceOf[js.Any])
+    inline def setUseElapsedTime(value: Boolean): Self = StObject.set(x, "useElapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseElapsedTimeUndefined: Self = StObject.set(x, "useElapsedTime", js.undefined)
+    inline def setUseElapsedTimeUndefined: Self = StObject.set(x, "useElapsedTime", js.undefined)
   }
 }

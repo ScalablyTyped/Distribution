@@ -12,19 +12,15 @@ trait NativeScrollPoint extends StObject {
 }
 object NativeScrollPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): NativeScrollPoint = {
+  inline def apply(x: Double, y: Double): NativeScrollPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeScrollPoint]
   }
   
-  @scala.inline
-  implicit class NativeScrollPointMutableBuilder[Self <: NativeScrollPoint] (val x: Self) extends AnyVal {
+  extension [Self <: NativeScrollPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

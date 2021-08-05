@@ -14,23 +14,18 @@ trait SubscriptionChannelWithAddress extends StObject {
 }
 object SubscriptionChannelWithAddress {
   
-  @scala.inline
-  def apply(address: String, `type`: String, useCustomAddress: Boolean): SubscriptionChannelWithAddress = {
+  inline def apply(address: String, `type`: String, useCustomAddress: Boolean): SubscriptionChannelWithAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], useCustomAddress = useCustomAddress.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionChannelWithAddress]
   }
   
-  @scala.inline
-  implicit class SubscriptionChannelWithAddressMutableBuilder[Self <: SubscriptionChannelWithAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionChannelWithAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCustomAddress(value: Boolean): Self = StObject.set(x, "useCustomAddress", value.asInstanceOf[js.Any])
+    inline def setUseCustomAddress(value: Boolean): Self = StObject.set(x, "useCustomAddress", value.asInstanceOf[js.Any])
   }
 }

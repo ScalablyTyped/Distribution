@@ -14,8 +14,7 @@ trait Size extends StObject {
 }
 object Size {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromJS: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit,
     height: Double,
     width: Double
@@ -24,16 +23,12 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  @scala.inline
-  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+  extension [Self <: Size](x: Self) {
     
-    @scala.inline
-    def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
+    inline def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

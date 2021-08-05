@@ -20,13 +20,12 @@ trait OMathGroupChar extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.OMathGroupChar_typekey")
+  /* private */ @JSName("Word.OMathGroupChar_typekey")
   var WordDotOMathGroupChar_typekey: OMathGroupChar
 }
 object OMathGroupChar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlignTop: Boolean,
     Application: Application,
     Char: Double,
@@ -41,31 +40,22 @@ object OMathGroupChar {
     __obj.asInstanceOf[OMathGroupChar]
   }
   
-  @scala.inline
-  implicit class OMathGroupCharMutableBuilder[Self <: OMathGroupChar] (val x: Self) extends AnyVal {
+  extension [Self <: OMathGroupChar](x: Self) {
     
-    @scala.inline
-    def setAlignTop(value: Boolean): Self = StObject.set(x, "AlignTop", value.asInstanceOf[js.Any])
+    inline def setAlignTop(value: Boolean): Self = StObject.set(x, "AlignTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChar(value: Double): Self = StObject.set(x, "Char", value.asInstanceOf[js.Any])
+    inline def setChar(value: Double): Self = StObject.set(x, "Char", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharTop(value: Boolean): Self = StObject.set(x, "CharTop", value.asInstanceOf[js.Any])
+    inline def setCharTop(value: Boolean): Self = StObject.set(x, "CharTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathGroupChar_typekey(value: OMathGroupChar): Self = StObject.set(x, "Word.OMathGroupChar_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathGroupChar_typekey(value: OMathGroupChar): Self = StObject.set(x, "Word.OMathGroupChar_typekey", value.asInstanceOf[js.Any])
   }
 }

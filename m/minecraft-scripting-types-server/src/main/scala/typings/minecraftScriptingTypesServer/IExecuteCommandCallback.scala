@@ -13,19 +13,15 @@ trait IExecuteCommandCallback extends StObject {
 }
 object IExecuteCommandCallback {
   
-  @scala.inline
-  def apply(command: String, data: Message): IExecuteCommandCallback = {
+  inline def apply(command: String, data: Message): IExecuteCommandCallback = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteCommandCallback]
   }
   
-  @scala.inline
-  implicit class IExecuteCommandCallbackMutableBuilder[Self <: IExecuteCommandCallback] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteCommandCallback](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: Message): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Message): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

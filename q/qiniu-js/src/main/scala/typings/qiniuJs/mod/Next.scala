@@ -11,16 +11,13 @@ trait Next extends StObject {
 }
 object Next {
   
-  @scala.inline
-  def apply(total: Loaded): Next = {
+  inline def apply(total: Loaded): Next = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Next]
   }
   
-  @scala.inline
-  implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+  extension [Self <: Next](x: Self) {
     
-    @scala.inline
-    def setTotal(value: Loaded): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Loaded): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

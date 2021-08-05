@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceComponent extends StObject
 object RTCIceComponent {
   
-  @scala.inline
-  def rtcp: typings.std.stdStrings.rtcp = "rtcp".asInstanceOf[typings.std.stdStrings.rtcp]
+  inline def rtcp: typings.std.stdStrings.rtcp = "rtcp".asInstanceOf[typings.std.stdStrings.rtcp]
   
-  @scala.inline
-  def rtp: typings.std.stdStrings.rtp = "rtp".asInstanceOf[typings.std.stdStrings.rtp]
+  inline def rtp: typings.std.stdStrings.rtp = "rtp".asInstanceOf[typings.std.stdStrings.rtp]
 }

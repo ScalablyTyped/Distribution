@@ -16,25 +16,19 @@ trait WebSocketEventMap extends StObject {
 }
 object WebSocketEventMap {
   
-  @scala.inline
-  def apply(close: CloseEvent, error: Event, message: MessageEvent[js.Any], open: Event): WebSocketEventMap = {
+  inline def apply(close: CloseEvent, error: Event, message: MessageEvent[js.Any], open: Event): WebSocketEventMap = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketEventMap]
   }
   
-  @scala.inline
-  implicit class WebSocketEventMapMutableBuilder[Self <: WebSocketEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketEventMap](x: Self) {
     
-    @scala.inline
-    def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

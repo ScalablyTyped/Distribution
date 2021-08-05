@@ -11,19 +11,15 @@ trait UpdateOpts extends StObject {
 }
 object UpdateOpts {
   
-  @scala.inline
-  def apply(): UpdateOpts = {
+  inline def apply(): UpdateOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateOpts]
   }
   
-  @scala.inline
-  implicit class UpdateOptsMutableBuilder[Self <: UpdateOpts] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOpts](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

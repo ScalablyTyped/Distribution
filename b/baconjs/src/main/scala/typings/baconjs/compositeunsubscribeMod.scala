@@ -59,8 +59,7 @@ object compositeunsubscribeMod {
   }
   object CompositeUnsubscribe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Subscription => Unit,
       count: () => Double,
       empty: () => Boolean,
@@ -74,38 +73,27 @@ object compositeunsubscribeMod {
       __obj.asInstanceOf[CompositeUnsubscribe]
     }
     
-    @scala.inline
-    implicit class CompositeUnsubscribeMutableBuilder[Self <: CompositeUnsubscribe] (val x: Self) extends AnyVal {
+    extension [Self <: CompositeUnsubscribe](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Subscription => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Subscription => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: Unsub => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Unsub => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStarting(value: js.Array[Subscription]): Self = StObject.set(x, "starting", value.asInstanceOf[js.Any])
+      inline def setStarting(value: js.Array[Subscription]): Self = StObject.set(x, "starting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingVarargs(value: Subscription*): Self = StObject.set(x, "starting", js.Array(value :_*))
+      inline def setStartingVarargs(value: Subscription*): Self = StObject.set(x, "starting", js.Array(value :_*))
       
-      @scala.inline
-      def setSubscriptions(value: js.Array[Unsub]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: js.Array[Unsub]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionsVarargs(value: Unsub*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+      inline def setSubscriptionsVarargs(value: Unsub*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnsubscribed(value: Boolean): Self = StObject.set(x, "unsubscribed", value.asInstanceOf[js.Any])
+      inline def setUnsubscribed(value: Boolean): Self = StObject.set(x, "unsubscribed", value.asInstanceOf[js.Any])
     }
   }
   

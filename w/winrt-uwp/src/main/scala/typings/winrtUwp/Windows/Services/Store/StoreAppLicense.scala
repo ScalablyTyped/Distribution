@@ -38,8 +38,7 @@ trait StoreAppLicense extends StObject {
 }
 object StoreAppLicense {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addOnLicenses: IMapView[String, StoreLicense],
     expirationDate: Date,
     extendedJsonData: String,
@@ -54,34 +53,24 @@ object StoreAppLicense {
     __obj.asInstanceOf[StoreAppLicense]
   }
   
-  @scala.inline
-  implicit class StoreAppLicenseMutableBuilder[Self <: StoreAppLicense] (val x: Self) extends AnyVal {
+  extension [Self <: StoreAppLicense](x: Self) {
     
-    @scala.inline
-    def setAddOnLicenses(value: IMapView[String, StoreLicense]): Self = StObject.set(x, "addOnLicenses", value.asInstanceOf[js.Any])
+    inline def setAddOnLicenses(value: IMapView[String, StoreLicense]): Self = StObject.set(x, "addOnLicenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
+    inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
+    inline def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrialOwnedByThisUser(value: Boolean): Self = StObject.set(x, "isTrialOwnedByThisUser", value.asInstanceOf[js.Any])
+    inline def setIsTrialOwnedByThisUser(value: Boolean): Self = StObject.set(x, "isTrialOwnedByThisUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuStoreId(value: String): Self = StObject.set(x, "skuStoreId", value.asInstanceOf[js.Any])
+    inline def setSkuStoreId(value: String): Self = StObject.set(x, "skuStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialTimeRemaining(value: Double): Self = StObject.set(x, "trialTimeRemaining", value.asInstanceOf[js.Any])
+    inline def setTrialTimeRemaining(value: Double): Self = StObject.set(x, "trialTimeRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialUniqueId(value: String): Self = StObject.set(x, "trialUniqueId", value.asInstanceOf[js.Any])
+    inline def setTrialUniqueId(value: String): Self = StObject.set(x, "trialUniqueId", value.asInstanceOf[js.Any])
   }
 }

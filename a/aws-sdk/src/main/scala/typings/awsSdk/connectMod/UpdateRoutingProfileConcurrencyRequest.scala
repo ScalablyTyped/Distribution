@@ -23,25 +23,19 @@ trait UpdateRoutingProfileConcurrencyRequest extends StObject {
 }
 object UpdateRoutingProfileConcurrencyRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, MediaConcurrencies: MediaConcurrencies, RoutingProfileId: RoutingProfileId): UpdateRoutingProfileConcurrencyRequest = {
+  inline def apply(InstanceId: InstanceId, MediaConcurrencies: MediaConcurrencies, RoutingProfileId: RoutingProfileId): UpdateRoutingProfileConcurrencyRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], MediaConcurrencies = MediaConcurrencies.asInstanceOf[js.Any], RoutingProfileId = RoutingProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoutingProfileConcurrencyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRoutingProfileConcurrencyRequestMutableBuilder[Self <: UpdateRoutingProfileConcurrencyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoutingProfileConcurrencyRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaConcurrencies(value: MediaConcurrencies): Self = StObject.set(x, "MediaConcurrencies", value.asInstanceOf[js.Any])
+    inline def setMediaConcurrencies(value: MediaConcurrencies): Self = StObject.set(x, "MediaConcurrencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
+    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

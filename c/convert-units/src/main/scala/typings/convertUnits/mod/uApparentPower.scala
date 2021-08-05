@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uApparentPower extends StObject
 object uApparentPower {
   
-  @scala.inline
-  def GVA: typings.convertUnits.convertUnitsStrings.GVA = "GVA".asInstanceOf[typings.convertUnits.convertUnitsStrings.GVA]
+  inline def GVA: typings.convertUnits.convertUnitsStrings.GVA = "GVA".asInstanceOf[typings.convertUnits.convertUnitsStrings.GVA]
   
-  @scala.inline
-  def MVA: typings.convertUnits.convertUnitsStrings.MVA = "MVA".asInstanceOf[typings.convertUnits.convertUnitsStrings.MVA]
+  inline def MVA: typings.convertUnits.convertUnitsStrings.MVA = "MVA".asInstanceOf[typings.convertUnits.convertUnitsStrings.MVA]
   
-  @scala.inline
-  def VA: typings.convertUnits.convertUnitsStrings.VA = "VA".asInstanceOf[typings.convertUnits.convertUnitsStrings.VA]
+  inline def VA: typings.convertUnits.convertUnitsStrings.VA = "VA".asInstanceOf[typings.convertUnits.convertUnitsStrings.VA]
   
-  @scala.inline
-  def kVA: typings.convertUnits.convertUnitsStrings.kVA = "kVA".asInstanceOf[typings.convertUnits.convertUnitsStrings.kVA]
+  inline def kVA: typings.convertUnits.convertUnitsStrings.kVA = "kVA".asInstanceOf[typings.convertUnits.convertUnitsStrings.kVA]
   
-  @scala.inline
-  def mVA: mVA_ = "mVA".asInstanceOf[mVA_]
+  inline def mVA: mVA_ = "mVA".asInstanceOf[mVA_]
 }

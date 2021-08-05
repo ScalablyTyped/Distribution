@@ -14,16 +14,13 @@ trait DataHelperMixin extends StObject {
 }
 object DataHelperMixin {
   
-  @scala.inline
-  def apply(getDataSource: () => DataSource): DataHelperMixin = {
+  inline def apply(getDataSource: () => DataSource): DataHelperMixin = {
     val __obj = js.Dynamic.literal(getDataSource = js.Any.fromFunction0(getDataSource))
     __obj.asInstanceOf[DataHelperMixin]
   }
   
-  @scala.inline
-  implicit class DataHelperMixinMutableBuilder[Self <: DataHelperMixin] (val x: Self) extends AnyVal {
+  extension [Self <: DataHelperMixin](x: Self) {
     
-    @scala.inline
-    def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
+    inline def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
   }
 }

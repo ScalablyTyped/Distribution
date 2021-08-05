@@ -18,19 +18,15 @@ trait IModelLanguageChangedEvent extends StObject {
 }
 object IModelLanguageChangedEvent {
   
-  @scala.inline
-  def apply(newLanguage: String, oldLanguage: String): IModelLanguageChangedEvent = {
+  inline def apply(newLanguage: String, oldLanguage: String): IModelLanguageChangedEvent = {
     val __obj = js.Dynamic.literal(newLanguage = newLanguage.asInstanceOf[js.Any], oldLanguage = oldLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelLanguageChangedEvent]
   }
   
-  @scala.inline
-  implicit class IModelLanguageChangedEventMutableBuilder[Self <: IModelLanguageChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IModelLanguageChangedEvent](x: Self) {
     
-    @scala.inline
-    def setNewLanguage(value: String): Self = StObject.set(x, "newLanguage", value.asInstanceOf[js.Any])
+    inline def setNewLanguage(value: String): Self = StObject.set(x, "newLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldLanguage(value: String): Self = StObject.set(x, "oldLanguage", value.asInstanceOf[js.Any])
+    inline def setOldLanguage(value: String): Self = StObject.set(x, "oldLanguage", value.asInstanceOf[js.Any])
   }
 }

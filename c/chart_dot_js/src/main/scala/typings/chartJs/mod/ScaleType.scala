@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleType extends StObject
 object ScaleType {
   
-  @scala.inline
-  def category: typings.chartJs.chartJsStrings.category = "category".asInstanceOf[typings.chartJs.chartJsStrings.category]
+  inline def category: typings.chartJs.chartJsStrings.category = "category".asInstanceOf[typings.chartJs.chartJsStrings.category]
   
-  @scala.inline
-  def linear: typings.chartJs.chartJsStrings.linear = "linear".asInstanceOf[typings.chartJs.chartJsStrings.linear]
+  inline def linear: typings.chartJs.chartJsStrings.linear = "linear".asInstanceOf[typings.chartJs.chartJsStrings.linear]
   
-  @scala.inline
-  def logarithmic: typings.chartJs.chartJsStrings.logarithmic = "logarithmic".asInstanceOf[typings.chartJs.chartJsStrings.logarithmic]
+  inline def logarithmic: typings.chartJs.chartJsStrings.logarithmic = "logarithmic".asInstanceOf[typings.chartJs.chartJsStrings.logarithmic]
   
-  @scala.inline
-  def radialLinear: typings.chartJs.chartJsStrings.radialLinear = "radialLinear".asInstanceOf[typings.chartJs.chartJsStrings.radialLinear]
+  inline def radialLinear: typings.chartJs.chartJsStrings.radialLinear = "radialLinear".asInstanceOf[typings.chartJs.chartJsStrings.radialLinear]
   
-  @scala.inline
-  def time: typings.chartJs.chartJsStrings.time = "time".asInstanceOf[typings.chartJs.chartJsStrings.time]
+  inline def time: typings.chartJs.chartJsStrings.time = "time".asInstanceOf[typings.chartJs.chartJsStrings.time]
 }

@@ -31,8 +31,7 @@ trait SkShaderFactory extends StObject {
 }
 object SkShaderFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Blend: (BlendMode, SkShader, SkShader) => SkShader,
     Color: (InputColor, ColorSpace) => SkShader,
     Lerp: (Double, SkShader, SkShader) => SkShader
@@ -41,16 +40,12 @@ object SkShaderFactory {
     __obj.asInstanceOf[SkShaderFactory]
   }
   
-  @scala.inline
-  implicit class SkShaderFactoryMutableBuilder[Self <: SkShaderFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SkShaderFactory](x: Self) {
     
-    @scala.inline
-    def setBlend(value: (BlendMode, SkShader, SkShader) => SkShader): Self = StObject.set(x, "Blend", js.Any.fromFunction3(value))
+    inline def setBlend(value: (BlendMode, SkShader, SkShader) => SkShader): Self = StObject.set(x, "Blend", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setColor(value: (InputColor, ColorSpace) => SkShader): Self = StObject.set(x, "Color", js.Any.fromFunction2(value))
+    inline def setColor(value: (InputColor, ColorSpace) => SkShader): Self = StObject.set(x, "Color", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLerp(value: (Double, SkShader, SkShader) => SkShader): Self = StObject.set(x, "Lerp", js.Any.fromFunction3(value))
+    inline def setLerp(value: (Double, SkShader, SkShader) => SkShader): Self = StObject.set(x, "Lerp", js.Any.fromFunction3(value))
   }
 }

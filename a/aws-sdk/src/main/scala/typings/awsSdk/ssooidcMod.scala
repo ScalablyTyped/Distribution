@@ -35,20 +35,16 @@ object ssooidcMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -109,53 +105,38 @@ object ssooidcMod {
   }
   object CreateTokenRequest {
     
-    @scala.inline
-    def apply(clientId: ClientId, clientSecret: ClientSecret, deviceCode: DeviceCode, grantType: GrantType): CreateTokenRequest = {
+    inline def apply(clientId: ClientId, clientSecret: ClientSecret, deviceCode: DeviceCode, grantType: GrantType): CreateTokenRequest = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], deviceCode = deviceCode.asInstanceOf[js.Any], grantType = grantType.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTokenRequest]
     }
     
-    @scala.inline
-    implicit class CreateTokenRequestMutableBuilder[Self <: CreateTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTokenRequest](x: Self) {
       
-      @scala.inline
-      def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: AuthCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: AuthCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDeviceCode(value: DeviceCode): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
+      inline def setDeviceCode(value: DeviceCode): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantType(value: GrantType): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
+      inline def setGrantType(value: GrantType): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUri(value: URI): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: URI): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
       
-      @scala.inline
-      def setScope(value: Scopes): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Scopes): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: Scope*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: Scope*): Self = StObject.set(x, "scope", js.Array(value :_*))
     }
   }
   
@@ -188,44 +169,32 @@ object ssooidcMod {
   }
   object CreateTokenResponse {
     
-    @scala.inline
-    def apply(): CreateTokenResponse = {
+    inline def apply(): CreateTokenResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTokenResponse]
     }
     
-    @scala.inline
-    implicit class CreateTokenResponseMutableBuilder[Self <: CreateTokenResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTokenResponse](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      @scala.inline
-      def setExpiresIn(value: ExpirationInSeconds): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: ExpirationInSeconds): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setIdToken(value: IdToken): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+      inline def setIdToken(value: IdToken): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+      inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
       
-      @scala.inline
-      def setTokenType(value: TokenType): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+      inline def setTokenType(value: TokenType): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
+      inline def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
     }
   }
   
@@ -262,29 +231,22 @@ object ssooidcMod {
   }
   object RegisterClientRequest {
     
-    @scala.inline
-    def apply(clientName: ClientName, clientType: ClientType): RegisterClientRequest = {
+    inline def apply(clientName: ClientName, clientType: ClientType): RegisterClientRequest = {
       val __obj = js.Dynamic.literal(clientName = clientName.asInstanceOf[js.Any], clientType = clientType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegisterClientRequest]
     }
     
-    @scala.inline
-    implicit class RegisterClientRequestMutableBuilder[Self <: RegisterClientRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterClientRequest](x: Self) {
       
-      @scala.inline
-      def setClientName(value: ClientName): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
+      inline def setClientName(value: ClientName): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientType(value: ClientType): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
+      inline def setClientType(value: ClientType): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopes(value: Scopes): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: Scopes): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -322,50 +284,36 @@ object ssooidcMod {
   }
   object RegisterClientResponse {
     
-    @scala.inline
-    def apply(): RegisterClientResponse = {
+    inline def apply(): RegisterClientResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegisterClientResponse]
     }
     
-    @scala.inline
-    implicit class RegisterClientResponseMutableBuilder[Self <: RegisterClientResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterClientResponse](x: Self) {
       
-      @scala.inline
-      def setAuthorizationEndpoint(value: URI): Self = StObject.set(x, "authorizationEndpoint", value.asInstanceOf[js.Any])
+      inline def setAuthorizationEndpoint(value: URI): Self = StObject.set(x, "authorizationEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationEndpointUndefined: Self = StObject.set(x, "authorizationEndpoint", js.undefined)
+      inline def setAuthorizationEndpointUndefined: Self = StObject.set(x, "authorizationEndpoint", js.undefined)
       
-      @scala.inline
-      def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdIssuedAt(value: LongTimeStampType): Self = StObject.set(x, "clientIdIssuedAt", value.asInstanceOf[js.Any])
+      inline def setClientIdIssuedAt(value: LongTimeStampType): Self = StObject.set(x, "clientIdIssuedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdIssuedAtUndefined: Self = StObject.set(x, "clientIdIssuedAt", js.undefined)
+      inline def setClientIdIssuedAtUndefined: Self = StObject.set(x, "clientIdIssuedAt", js.undefined)
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecretExpiresAt(value: LongTimeStampType): Self = StObject.set(x, "clientSecretExpiresAt", value.asInstanceOf[js.Any])
+      inline def setClientSecretExpiresAt(value: LongTimeStampType): Self = StObject.set(x, "clientSecretExpiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecretExpiresAtUndefined: Self = StObject.set(x, "clientSecretExpiresAt", js.undefined)
+      inline def setClientSecretExpiresAtUndefined: Self = StObject.set(x, "clientSecretExpiresAt", js.undefined)
       
-      @scala.inline
-      def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+      inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
       
-      @scala.inline
-      def setTokenEndpoint(value: URI): Self = StObject.set(x, "tokenEndpoint", value.asInstanceOf[js.Any])
+      inline def setTokenEndpoint(value: URI): Self = StObject.set(x, "tokenEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenEndpointUndefined: Self = StObject.set(x, "tokenEndpoint", js.undefined)
+      inline def setTokenEndpointUndefined: Self = StObject.set(x, "tokenEndpoint", js.undefined)
     }
   }
   
@@ -441,23 +389,18 @@ object ssooidcMod {
   }
   object StartDeviceAuthorizationRequest {
     
-    @scala.inline
-    def apply(clientId: ClientId, clientSecret: ClientSecret, startUrl: URI): StartDeviceAuthorizationRequest = {
+    inline def apply(clientId: ClientId, clientSecret: ClientSecret, startUrl: URI): StartDeviceAuthorizationRequest = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], startUrl = startUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartDeviceAuthorizationRequest]
     }
     
-    @scala.inline
-    implicit class StartDeviceAuthorizationRequestMutableBuilder[Self <: StartDeviceAuthorizationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartDeviceAuthorizationRequest](x: Self) {
       
-      @scala.inline
-      def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUrl(value: URI): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
+      inline def setStartUrl(value: URI): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -495,50 +438,36 @@ object ssooidcMod {
   }
   object StartDeviceAuthorizationResponse {
     
-    @scala.inline
-    def apply(): StartDeviceAuthorizationResponse = {
+    inline def apply(): StartDeviceAuthorizationResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartDeviceAuthorizationResponse]
     }
     
-    @scala.inline
-    implicit class StartDeviceAuthorizationResponseMutableBuilder[Self <: StartDeviceAuthorizationResponse] (val x: Self) extends AnyVal {
+    extension [Self <: StartDeviceAuthorizationResponse](x: Self) {
       
-      @scala.inline
-      def setDeviceCode(value: DeviceCode): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
+      inline def setDeviceCode(value: DeviceCode): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceCodeUndefined: Self = StObject.set(x, "deviceCode", js.undefined)
+      inline def setDeviceCodeUndefined: Self = StObject.set(x, "deviceCode", js.undefined)
       
-      @scala.inline
-      def setExpiresIn(value: ExpirationInSeconds): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: ExpirationInSeconds): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setInterval(value: IntervalInSeconds): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: IntervalInSeconds): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setUserCode(value: UserCode): Self = StObject.set(x, "userCode", value.asInstanceOf[js.Any])
+      inline def setUserCode(value: UserCode): Self = StObject.set(x, "userCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserCodeUndefined: Self = StObject.set(x, "userCode", js.undefined)
+      inline def setUserCodeUndefined: Self = StObject.set(x, "userCode", js.undefined)
       
-      @scala.inline
-      def setVerificationUri(value: URI): Self = StObject.set(x, "verificationUri", value.asInstanceOf[js.Any])
+      inline def setVerificationUri(value: URI): Self = StObject.set(x, "verificationUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationUriComplete(value: URI): Self = StObject.set(x, "verificationUriComplete", value.asInstanceOf[js.Any])
+      inline def setVerificationUriComplete(value: URI): Self = StObject.set(x, "verificationUriComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationUriCompleteUndefined: Self = StObject.set(x, "verificationUriComplete", js.undefined)
+      inline def setVerificationUriCompleteUndefined: Self = StObject.set(x, "verificationUriComplete", js.undefined)
       
-      @scala.inline
-      def setVerificationUriUndefined: Self = StObject.set(x, "verificationUri", js.undefined)
+      inline def setVerificationUriUndefined: Self = StObject.set(x, "verificationUri", js.undefined)
     }
   }
   

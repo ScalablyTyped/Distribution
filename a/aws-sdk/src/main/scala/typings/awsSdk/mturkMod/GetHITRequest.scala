@@ -13,16 +13,13 @@ trait GetHITRequest extends StObject {
 }
 object GetHITRequest {
   
-  @scala.inline
-  def apply(HITId: EntityId): GetHITRequest = {
+  inline def apply(HITId: EntityId): GetHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHITRequest]
   }
   
-  @scala.inline
-  implicit class GetHITRequestMutableBuilder[Self <: GetHITRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHITRequest](x: Self) {
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
   }
 }

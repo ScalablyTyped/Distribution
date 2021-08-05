@@ -14,10 +14,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(rules: js.Array[RuleProperties]): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any]).asInstanceOf[Engine]
-  @scala.inline
-  def default(rules: js.Array[RuleProperties], options: EngineOptions): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
+  inline def default(rules: js.Array[RuleProperties]): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any]).asInstanceOf[Engine]
+  inline def default(rules: js.Array[RuleProperties], options: EngineOptions): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
   
   @JSImport("json-rules-engine", "Almanac")
   @js.native
@@ -141,20 +139,16 @@ object mod {
   }
   object AllConditions {
     
-    @scala.inline
-    def apply(all: js.Array[NestedCondition]): AllConditions = {
+    inline def apply(all: js.Array[NestedCondition]): AllConditions = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllConditions]
     }
     
-    @scala.inline
-    implicit class AllConditionsMutableBuilder[Self <: AllConditions] (val x: Self) extends AnyVal {
+    extension [Self <: AllConditions](x: Self) {
       
-      @scala.inline
-      def setAll(value: js.Array[NestedCondition]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: js.Array[NestedCondition]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllVarargs(value: NestedCondition*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: NestedCondition*): Self = StObject.set(x, "all", js.Array(value :_*))
     }
   }
   
@@ -166,20 +160,16 @@ object mod {
   }
   object AnyConditions {
     
-    @scala.inline
-    def apply(any: js.Array[NestedCondition]): AnyConditions = {
+    inline def apply(any: js.Array[NestedCondition]): AnyConditions = {
       val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnyConditions]
     }
     
-    @scala.inline
-    implicit class AnyConditionsMutableBuilder[Self <: AnyConditions] (val x: Self) extends AnyVal {
+    extension [Self <: AnyConditions](x: Self) {
       
-      @scala.inline
-      def setAny(value: js.Array[NestedCondition]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+      inline def setAny(value: js.Array[NestedCondition]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyVarargs(value: NestedCondition*): Self = StObject.set(x, "any", js.Array(value :_*))
+      inline def setAnyVarargs(value: NestedCondition*): Self = StObject.set(x, "any", js.Array(value :_*))
     }
   }
   
@@ -201,41 +191,30 @@ object mod {
   }
   object ConditionProperties {
     
-    @scala.inline
-    def apply(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | js.Any): ConditionProperties = {
+    inline def apply(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | js.Any): ConditionProperties = {
       val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConditionProperties]
     }
     
-    @scala.inline
-    implicit class ConditionPropertiesMutableBuilder[Self <: ConditionProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ConditionProperties](x: Self) {
       
-      @scala.inline
-      def setFact(value: String): Self = StObject.set(x, "fact", value.asInstanceOf[js.Any])
+      inline def setFact(value: String): Self = StObject.set(x, "fact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setValue(value: typings.jsonRulesEngine.anon.Fact | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: typings.jsonRulesEngine.anon.Fact | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,17 +226,14 @@ object mod {
   }
   object EngineOptions {
     
-    @scala.inline
-    def apply(allowUndefinedFacts: Boolean): EngineOptions = {
+    inline def apply(allowUndefinedFacts: Boolean): EngineOptions = {
       val __obj = js.Dynamic.literal(allowUndefinedFacts = allowUndefinedFacts.asInstanceOf[js.Any])
       __obj.asInstanceOf[EngineOptions]
     }
     
-    @scala.inline
-    implicit class EngineOptionsMutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EngineOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUndefinedFacts(value: Boolean): Self = StObject.set(x, "allowUndefinedFacts", value.asInstanceOf[js.Any])
+      inline def setAllowUndefinedFacts(value: Boolean): Self = StObject.set(x, "allowUndefinedFacts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,23 +245,18 @@ object mod {
   }
   object EngineResult {
     
-    @scala.inline
-    def apply(almanac: Almanac, events: js.Array[Event]): EngineResult = {
+    inline def apply(almanac: Almanac, events: js.Array[Event]): EngineResult = {
       val __obj = js.Dynamic.literal(almanac = almanac.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[EngineResult]
     }
     
-    @scala.inline
-    implicit class EngineResultMutableBuilder[Self <: EngineResult] (val x: Self) extends AnyVal {
+    extension [Self <: EngineResult](x: Self) {
       
-      @scala.inline
-      def setAlmanac(value: Almanac): Self = StObject.set(x, "almanac", value.asInstanceOf[js.Any])
+      inline def setAlmanac(value: Almanac): Self = StObject.set(x, "almanac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     }
   }
   
@@ -297,24 +268,19 @@ object mod {
   }
   object Event {
     
-    @scala.inline
-    def apply(`type`: String): Event = {
+    inline def apply(`type`: String): Event = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -328,26 +294,20 @@ object mod {
   }
   object FactOptions {
     
-    @scala.inline
-    def apply(): FactOptions = {
+    inline def apply(): FactOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FactOptions]
     }
     
-    @scala.inline
-    implicit class FactOptionsMutableBuilder[Self <: FactOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FactOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -358,20 +318,17 @@ object mod {
   trait NestedCondition extends StObject
   object NestedCondition {
     
-    @scala.inline
-    def AllConditions(all: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AllConditions = {
+    inline def AllConditions(all: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AllConditions = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.AllConditions]
     }
     
-    @scala.inline
-    def AnyConditions(any: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AnyConditions = {
+    inline def AnyConditions(any: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AnyConditions = {
       val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.AnyConditions]
     }
     
-    @scala.inline
-    def ConditionProperties(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | js.Any): typings.jsonRulesEngine.mod.ConditionProperties = {
+    inline def ConditionProperties(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | js.Any): typings.jsonRulesEngine.mod.ConditionProperties = {
       val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.ConditionProperties]
     }
@@ -395,44 +352,32 @@ object mod {
   }
   object RuleProperties {
     
-    @scala.inline
-    def apply(conditions: TopLevelCondition, event: Event): RuleProperties = {
+    inline def apply(conditions: TopLevelCondition, event: Event): RuleProperties = {
       val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleProperties]
     }
     
-    @scala.inline
-    implicit class RulePropertiesMutableBuilder[Self <: RuleProperties] (val x: Self) extends AnyVal {
+    extension [Self <: RuleProperties](x: Self) {
       
-      @scala.inline
-      def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnFailure(value: (/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction3(value))
+      inline def setOnFailure(value: (/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+      inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: (/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+      inline def setOnSuccess(value: (/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -450,35 +395,26 @@ object mod {
   }
   object RuleResult {
     
-    @scala.inline
-    def apply(conditions: TopLevelCondition, name: String, result: js.Any): RuleResult = {
+    inline def apply(conditions: TopLevelCondition, name: String, result: js.Any): RuleResult = {
       val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleResult]
     }
     
-    @scala.inline
-    implicit class RuleResultMutableBuilder[Self <: RuleResult] (val x: Self) extends AnyVal {
+    extension [Self <: RuleResult](x: Self) {
       
-      @scala.inline
-      def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -495,26 +431,20 @@ object mod {
   }
   object RuleSerializable {
     
-    @scala.inline
-    def apply(conditions: TopLevelCondition, event: Event, name: String, priority: Double): RuleSerializable = {
+    inline def apply(conditions: TopLevelCondition, event: Event, name: String, priority: Double): RuleSerializable = {
       val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleSerializable]
     }
     
-    @scala.inline
-    implicit class RuleSerializableMutableBuilder[Self <: RuleSerializable] (val x: Self) extends AnyVal {
+    extension [Self <: RuleSerializable](x: Self) {
       
-      @scala.inline
-      def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -527,14 +457,12 @@ object mod {
        with NestedCondition
   object TopLevelCondition {
     
-    @scala.inline
-    def AllConditions(all: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AllConditions = {
+    inline def AllConditions(all: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AllConditions = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.AllConditions]
     }
     
-    @scala.inline
-    def AnyConditions(any: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AnyConditions = {
+    inline def AnyConditions(any: js.Array[NestedCondition]): typings.jsonRulesEngine.mod.AnyConditions = {
       val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.AnyConditions]
     }

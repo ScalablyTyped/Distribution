@@ -29,20 +29,16 @@ trait IPathArc
 }
 object IPathArc {
   
-  @scala.inline
-  def apply(endAngle: Double, origin: IPoint, radius: Double, startAngle: Double, `type`: String): IPathArc = {
+  inline def apply(endAngle: Double, origin: IPoint, radius: Double, startAngle: Double, `type`: String): IPathArc = {
     val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathArc]
   }
   
-  @scala.inline
-  implicit class IPathArcMutableBuilder[Self <: IPathArc] (val x: Self) extends AnyVal {
+  extension [Self <: IPathArc](x: Self) {
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
   }
 }

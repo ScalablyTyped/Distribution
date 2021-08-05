@@ -17,22 +17,17 @@ trait LoadingState extends StObject {
 }
 object LoadingState {
   
-  @scala.inline
-  def apply(status: aborted | complete | error_ | missing): LoadingState = {
+  inline def apply(status: aborted | complete | error_ | missing): LoadingState = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingState]
   }
   
-  @scala.inline
-  implicit class LoadingStateMutableBuilder[Self <: LoadingState] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingState](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatus(value: aborted | complete | error_ | missing): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: aborted | complete | error_ | missing): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

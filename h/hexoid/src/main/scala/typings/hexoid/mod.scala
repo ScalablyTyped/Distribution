@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function0[String]]
-  @scala.inline
-  def default(len: Double): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(len.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
+  inline def default(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function0[String]]
+  inline def default(len: Double): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(len.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
 }

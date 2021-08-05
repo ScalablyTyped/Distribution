@@ -26,8 +26,7 @@ object mod {
     def print_table(): String = js.native
   }
   
-  @scala.inline
-  def crc(width: Double, poly: Double, xor_in: Double, xor_out: Double, reflect: Boolean): js.Function1[/* buffer */ Buffer, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("crc")(width.asInstanceOf[js.Any], poly.asInstanceOf[js.Any], xor_in.asInstanceOf[js.Any], xor_out.asInstanceOf[js.Any], reflect.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* buffer */ Buffer, Double]]
+  inline def crc(width: Double, poly: Double, xor_in: Double, xor_out: Double, reflect: Boolean): js.Function1[/* buffer */ Buffer, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("crc")(width.asInstanceOf[js.Any], poly.asInstanceOf[js.Any], xor_in.asInstanceOf[js.Any], xor_out.asInstanceOf[js.Any], reflect.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* buffer */ Buffer, Double]]
   
   @JSImport("polycrc", "crc1")
   @js.native

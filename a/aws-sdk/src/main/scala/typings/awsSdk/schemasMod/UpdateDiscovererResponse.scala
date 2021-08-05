@@ -38,49 +38,35 @@ trait UpdateDiscovererResponse extends StObject {
 }
 object UpdateDiscovererResponse {
   
-  @scala.inline
-  def apply(): UpdateDiscovererResponse = {
+  inline def apply(): UpdateDiscovererResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDiscovererResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDiscovererResponseMutableBuilder[Self <: UpdateDiscovererResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDiscovererResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDiscovererArn(value: string): Self = StObject.set(x, "DiscovererArn", value.asInstanceOf[js.Any])
+    inline def setDiscovererArn(value: string): Self = StObject.set(x, "DiscovererArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovererArnUndefined: Self = StObject.set(x, "DiscovererArn", js.undefined)
+    inline def setDiscovererArnUndefined: Self = StObject.set(x, "DiscovererArn", js.undefined)
     
-    @scala.inline
-    def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
+    inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovererIdUndefined: Self = StObject.set(x, "DiscovererId", js.undefined)
+    inline def setDiscovererIdUndefined: Self = StObject.set(x, "DiscovererId", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setState(value: DiscovererState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: DiscovererState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait ListSentimentDetectionJobsRequest extends StObject {
 }
 object ListSentimentDetectionJobsRequest {
   
-  @scala.inline
-  def apply(): ListSentimentDetectionJobsRequest = {
+  inline def apply(): ListSentimentDetectionJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSentimentDetectionJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListSentimentDetectionJobsRequestMutableBuilder[Self <: ListSentimentDetectionJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSentimentDetectionJobsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: SentimentDetectionJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SentimentDetectionJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

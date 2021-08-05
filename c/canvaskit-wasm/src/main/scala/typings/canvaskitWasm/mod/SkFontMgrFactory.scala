@@ -21,19 +21,15 @@ trait SkFontMgrFactory extends StObject {
 }
 object SkFontMgrFactory {
   
-  @scala.inline
-  def apply(FromData: /* repeated */ ArrayBuffer => SkFontMgr | Null, RefDefault: () => SkFontMgr): SkFontMgrFactory = {
+  inline def apply(FromData: /* repeated */ ArrayBuffer => SkFontMgr | Null, RefDefault: () => SkFontMgr): SkFontMgrFactory = {
     val __obj = js.Dynamic.literal(FromData = js.Any.fromFunction1(FromData), RefDefault = js.Any.fromFunction0(RefDefault))
     __obj.asInstanceOf[SkFontMgrFactory]
   }
   
-  @scala.inline
-  implicit class SkFontMgrFactoryMutableBuilder[Self <: SkFontMgrFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SkFontMgrFactory](x: Self) {
     
-    @scala.inline
-    def setFromData(value: /* repeated */ ArrayBuffer => SkFontMgr | Null): Self = StObject.set(x, "FromData", js.Any.fromFunction1(value))
+    inline def setFromData(value: /* repeated */ ArrayBuffer => SkFontMgr | Null): Self = StObject.set(x, "FromData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefDefault(value: () => SkFontMgr): Self = StObject.set(x, "RefDefault", js.Any.fromFunction0(value))
+    inline def setRefDefault(value: () => SkFontMgr): Self = StObject.set(x, "RefDefault", js.Any.fromFunction0(value))
   }
 }

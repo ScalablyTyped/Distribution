@@ -15,8 +15,8 @@ object scratchReadStreamMod {
     
     def _read(): js.Promise[Unit] = js.native
     
-    var _started: js.Any = js.native
+    /* private */ var _started: js.Any = js.native
     
-    var trie: js.Any = js.native
+    /* private */ var trie: js.Any = js.native
   }
 }

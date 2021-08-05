@@ -11,16 +11,13 @@ trait ChartTooltipsStaticConfiguration extends StObject {
 }
 object ChartTooltipsStaticConfiguration {
   
-  @scala.inline
-  def apply(positioners: StringDictionary[ChartTooltipPositioner]): ChartTooltipsStaticConfiguration = {
+  inline def apply(positioners: StringDictionary[ChartTooltipPositioner]): ChartTooltipsStaticConfiguration = {
     val __obj = js.Dynamic.literal(positioners = positioners.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTooltipsStaticConfiguration]
   }
   
-  @scala.inline
-  implicit class ChartTooltipsStaticConfigurationMutableBuilder[Self <: ChartTooltipsStaticConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTooltipsStaticConfiguration](x: Self) {
     
-    @scala.inline
-    def setPositioners(value: StringDictionary[ChartTooltipPositioner]): Self = StObject.set(x, "positioners", value.asInstanceOf[js.Any])
+    inline def setPositioners(value: StringDictionary[ChartTooltipPositioner]): Self = StObject.set(x, "positioners", value.asInstanceOf[js.Any])
   }
 }

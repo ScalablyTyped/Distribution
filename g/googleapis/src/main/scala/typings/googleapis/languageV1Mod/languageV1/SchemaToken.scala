@@ -32,37 +32,27 @@ trait SchemaToken extends StObject {
 }
 object SchemaToken {
   
-  @scala.inline
-  def apply(): SchemaToken = {
+  inline def apply(): SchemaToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaToken]
   }
   
-  @scala.inline
-  implicit class SchemaTokenMutableBuilder[Self <: SchemaToken] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaToken](x: Self) {
     
-    @scala.inline
-    def setDependencyEdge(value: SchemaDependencyEdge): Self = StObject.set(x, "dependencyEdge", value.asInstanceOf[js.Any])
+    inline def setDependencyEdge(value: SchemaDependencyEdge): Self = StObject.set(x, "dependencyEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyEdgeUndefined: Self = StObject.set(x, "dependencyEdge", js.undefined)
+    inline def setDependencyEdgeUndefined: Self = StObject.set(x, "dependencyEdge", js.undefined)
     
-    @scala.inline
-    def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
+    inline def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
+    inline def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
     
-    @scala.inline
-    def setPartOfSpeech(value: SchemaPartOfSpeech): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
+    inline def setPartOfSpeech(value: SchemaPartOfSpeech): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartOfSpeechUndefined: Self = StObject.set(x, "partOfSpeech", js.undefined)
+    inline def setPartOfSpeechUndefined: Self = StObject.set(x, "partOfSpeech", js.undefined)
     
-    @scala.inline
-    def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

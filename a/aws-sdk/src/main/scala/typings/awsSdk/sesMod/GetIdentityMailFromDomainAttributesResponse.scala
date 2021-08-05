@@ -13,16 +13,13 @@ trait GetIdentityMailFromDomainAttributesResponse extends StObject {
 }
 object GetIdentityMailFromDomainAttributesResponse {
   
-  @scala.inline
-  def apply(MailFromDomainAttributes: MailFromDomainAttributes): GetIdentityMailFromDomainAttributesResponse = {
+  inline def apply(MailFromDomainAttributes: MailFromDomainAttributes): GetIdentityMailFromDomainAttributesResponse = {
     val __obj = js.Dynamic.literal(MailFromDomainAttributes = MailFromDomainAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityMailFromDomainAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetIdentityMailFromDomainAttributesResponseMutableBuilder[Self <: GetIdentityMailFromDomainAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityMailFromDomainAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setMailFromDomainAttributes(value: MailFromDomainAttributes): Self = StObject.set(x, "MailFromDomainAttributes", value.asInstanceOf[js.Any])
+    inline def setMailFromDomainAttributes(value: MailFromDomainAttributes): Self = StObject.set(x, "MailFromDomainAttributes", value.asInstanceOf[js.Any])
   }
 }

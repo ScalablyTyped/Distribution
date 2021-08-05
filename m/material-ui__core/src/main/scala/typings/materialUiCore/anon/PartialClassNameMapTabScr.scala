@@ -11,19 +11,15 @@ trait PartialClassNameMapTabScr extends StObject {
 }
 object PartialClassNameMapTabScr {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTabScr = {
+  inline def apply(): PartialClassNameMapTabScr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTabScr]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTabScrMutableBuilder[Self <: PartialClassNameMapTabScr] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTabScr](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

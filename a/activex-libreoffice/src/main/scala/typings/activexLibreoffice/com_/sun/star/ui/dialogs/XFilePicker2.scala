@@ -43,8 +43,7 @@ trait XFilePicker2
 }
 object XFilePicker2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayDirectory: String,
     Files: SafeArray[String],
     SelectedFiles: SafeArray[String],
@@ -64,13 +63,10 @@ object XFilePicker2 {
     __obj.asInstanceOf[XFilePicker2]
   }
   
-  @scala.inline
-  implicit class XFilePicker2MutableBuilder[Self <: XFilePicker2] (val x: Self) extends AnyVal {
+  extension [Self <: XFilePicker2](x: Self) {
     
-    @scala.inline
-    def setGetSelectedFiles(value: () => SafeArray[String]): Self = StObject.set(x, "getSelectedFiles", js.Any.fromFunction0(value))
+    inline def setGetSelectedFiles(value: () => SafeArray[String]): Self = StObject.set(x, "getSelectedFiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedFiles(value: SafeArray[String]): Self = StObject.set(x, "SelectedFiles", value.asInstanceOf[js.Any])
+    inline def setSelectedFiles(value: SafeArray[String]): Self = StObject.set(x, "SelectedFiles", value.asInstanceOf[js.Any])
   }
 }

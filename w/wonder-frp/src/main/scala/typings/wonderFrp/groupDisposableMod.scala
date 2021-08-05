@@ -15,9 +15,9 @@ object groupDisposableMod {
        with IDisposable {
     def this(disposable: IDisposable) = this()
     
-    var _group: js.Any = js.native
+    /* private */ var _group: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     def add(disposable: IDisposable): this.type = js.native
     
@@ -35,9 +35,7 @@ object groupDisposableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GroupDisposable]
-    @scala.inline
-    def create(disposable: IDisposable): GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposable.asInstanceOf[js.Any]).asInstanceOf[GroupDisposable]
+    inline def create(): GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GroupDisposable]
+    inline def create(disposable: IDisposable): GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposable.asInstanceOf[js.Any]).asInstanceOf[GroupDisposable]
   }
 }

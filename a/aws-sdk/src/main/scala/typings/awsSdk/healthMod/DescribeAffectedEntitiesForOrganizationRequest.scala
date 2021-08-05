@@ -28,37 +28,27 @@ trait DescribeAffectedEntitiesForOrganizationRequest extends StObject {
 }
 object DescribeAffectedEntitiesForOrganizationRequest {
   
-  @scala.inline
-  def apply(organizationEntityFilters: OrganizationEntityFiltersList): DescribeAffectedEntitiesForOrganizationRequest = {
+  inline def apply(organizationEntityFilters: OrganizationEntityFiltersList): DescribeAffectedEntitiesForOrganizationRequest = {
     val __obj = js.Dynamic.literal(organizationEntityFilters = organizationEntityFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAffectedEntitiesForOrganizationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAffectedEntitiesForOrganizationRequestMutableBuilder[Self <: DescribeAffectedEntitiesForOrganizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAffectedEntitiesForOrganizationRequest](x: Self) {
     
-    @scala.inline
-    def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationEntityFilters(value: OrganizationEntityFiltersList): Self = StObject.set(x, "organizationEntityFilters", value.asInstanceOf[js.Any])
+    inline def setOrganizationEntityFilters(value: OrganizationEntityFiltersList): Self = StObject.set(x, "organizationEntityFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEntityFilters", js.Array(value :_*))
+    inline def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEntityFilters", js.Array(value :_*))
   }
 }

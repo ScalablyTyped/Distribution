@@ -10,6 +10,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stringLiteralArray[T /* <: String */](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringLiteralArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def stringLiteralArray[T /* <: String */](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringLiteralArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

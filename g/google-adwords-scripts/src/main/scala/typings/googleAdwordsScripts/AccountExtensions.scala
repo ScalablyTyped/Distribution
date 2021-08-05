@@ -21,8 +21,7 @@ trait AccountExtensions extends StObject {
 }
 object AccountExtensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callouts: () => AdWordsSelector[Callout],
     message: () => AdWordsSelector[Message],
     mobileApps: () => AdWordsSelector[MobileApp],
@@ -34,25 +33,18 @@ object AccountExtensions {
     __obj.asInstanceOf[AccountExtensions]
   }
   
-  @scala.inline
-  implicit class AccountExtensionsMutableBuilder[Self <: AccountExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: AccountExtensions](x: Self) {
     
-    @scala.inline
-    def setCallouts(value: () => AdWordsSelector[Callout]): Self = StObject.set(x, "callouts", js.Any.fromFunction0(value))
+    inline def setCallouts(value: () => AdWordsSelector[Callout]): Self = StObject.set(x, "callouts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessage(value: () => AdWordsSelector[Message]): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+    inline def setMessage(value: () => AdWordsSelector[Message]): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMobileApps(value: () => AdWordsSelector[MobileApp]): Self = StObject.set(x, "mobileApps", js.Any.fromFunction0(value))
+    inline def setMobileApps(value: () => AdWordsSelector[MobileApp]): Self = StObject.set(x, "mobileApps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReviews(value: () => AdWordsSelector[Review]): Self = StObject.set(x, "reviews", js.Any.fromFunction0(value))
+    inline def setReviews(value: () => AdWordsSelector[Review]): Self = StObject.set(x, "reviews", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSitelinks(value: () => AdWordsSelector[Sitelink]): Self = StObject.set(x, "sitelinks", js.Any.fromFunction0(value))
+    inline def setSitelinks(value: () => AdWordsSelector[Sitelink]): Self = StObject.set(x, "sitelinks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSnippets(value: () => AdWordsSelector[Snippet]): Self = StObject.set(x, "snippets", js.Any.fromFunction0(value))
+    inline def setSnippets(value: () => AdWordsSelector[Snippet]): Self = StObject.set(x, "snippets", js.Any.fromFunction0(value))
   }
 }

@@ -11,6 +11,5 @@ object json2CSSMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(jsonStyles: PartialCSSStyleDeclaratio): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(jsonStyles.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(jsonStyles: PartialCSSStyleDeclaratio): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(jsonStyles.asInstanceOf[js.Any]).asInstanceOf[String]
 }

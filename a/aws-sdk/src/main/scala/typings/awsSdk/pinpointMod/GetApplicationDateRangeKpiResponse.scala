@@ -10,16 +10,13 @@ trait GetApplicationDateRangeKpiResponse extends StObject {
 }
 object GetApplicationDateRangeKpiResponse {
   
-  @scala.inline
-  def apply(ApplicationDateRangeKpiResponse: ApplicationDateRangeKpiResponse): GetApplicationDateRangeKpiResponse = {
+  inline def apply(ApplicationDateRangeKpiResponse: ApplicationDateRangeKpiResponse): GetApplicationDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(ApplicationDateRangeKpiResponse = ApplicationDateRangeKpiResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationDateRangeKpiResponse]
   }
   
-  @scala.inline
-  implicit class GetApplicationDateRangeKpiResponseMutableBuilder[Self <: GetApplicationDateRangeKpiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetApplicationDateRangeKpiResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationDateRangeKpiResponse(value: ApplicationDateRangeKpiResponse): Self = StObject.set(x, "ApplicationDateRangeKpiResponse", value.asInstanceOf[js.Any])
+    inline def setApplicationDateRangeKpiResponse(value: ApplicationDateRangeKpiResponse): Self = StObject.set(x, "ApplicationDateRangeKpiResponse", value.asInstanceOf[js.Any])
   }
 }

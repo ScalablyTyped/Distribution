@@ -18,19 +18,15 @@ trait EnvironmentExecutionPolicy extends StObject {
 }
 object EnvironmentExecutionPolicy {
   
-  @scala.inline
-  def apply(concurrencyCount: Double, queueDepthCount: Double): EnvironmentExecutionPolicy = {
+  inline def apply(concurrencyCount: Double, queueDepthCount: Double): EnvironmentExecutionPolicy = {
     val __obj = js.Dynamic.literal(concurrencyCount = concurrencyCount.asInstanceOf[js.Any], queueDepthCount = queueDepthCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentExecutionPolicy]
   }
   
-  @scala.inline
-  implicit class EnvironmentExecutionPolicyMutableBuilder[Self <: EnvironmentExecutionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentExecutionPolicy](x: Self) {
     
-    @scala.inline
-    def setConcurrencyCount(value: Double): Self = StObject.set(x, "concurrencyCount", value.asInstanceOf[js.Any])
+    inline def setConcurrencyCount(value: Double): Self = StObject.set(x, "concurrencyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueDepthCount(value: Double): Self = StObject.set(x, "queueDepthCount", value.asInstanceOf[js.Any])
+    inline def setQueueDepthCount(value: Double): Self = StObject.set(x, "queueDepthCount", value.asInstanceOf[js.Any])
   }
 }

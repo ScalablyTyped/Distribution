@@ -12,16 +12,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(noty: Noty): JQuery = {
+  inline def apply(noty: Noty): JQuery = {
     val __obj = js.Dynamic.literal(noty = noty.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setNoty(value: Noty): Self = StObject.set(x, "noty", value.asInstanceOf[js.Any])
+    inline def setNoty(value: Noty): Self = StObject.set(x, "noty", value.asInstanceOf[js.Any])
   }
 }

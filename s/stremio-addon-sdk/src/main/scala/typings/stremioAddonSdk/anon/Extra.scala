@@ -15,23 +15,18 @@ trait Extra extends StObject {
 }
 object Extra {
   
-  @scala.inline
-  def apply(extra: VideoHash, id: String, `type`: ContentType): Extra = {
+  inline def apply(extra: VideoHash, id: String, `type`: ContentType): Extra = {
     val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extra]
   }
   
-  @scala.inline
-  implicit class ExtraMutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
+  extension [Self <: Extra](x: Self) {
     
-    @scala.inline
-    def setExtra(value: VideoHash): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: VideoHash): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

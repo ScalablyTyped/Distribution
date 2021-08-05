@@ -23,43 +23,31 @@ trait BasicChartAxis extends StObject {
 }
 object BasicChartAxis {
   
-  @scala.inline
-  def apply(): BasicChartAxis = {
+  inline def apply(): BasicChartAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicChartAxis]
   }
   
-  @scala.inline
-  implicit class BasicChartAxisMutableBuilder[Self <: BasicChartAxis] (val x: Self) extends AnyVal {
+  extension [Self <: BasicChartAxis](x: Self) {
     
-    @scala.inline
-    def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTextPosition(value: TextPosition): Self = StObject.set(x, "titleTextPosition", value.asInstanceOf[js.Any])
+    inline def setTitleTextPosition(value: TextPosition): Self = StObject.set(x, "titleTextPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTextPositionUndefined: Self = StObject.set(x, "titleTextPosition", js.undefined)
+    inline def setTitleTextPositionUndefined: Self = StObject.set(x, "titleTextPosition", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setViewWindowOptions(value: ChartAxisViewWindowOptions): Self = StObject.set(x, "viewWindowOptions", value.asInstanceOf[js.Any])
+    inline def setViewWindowOptions(value: ChartAxisViewWindowOptions): Self = StObject.set(x, "viewWindowOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewWindowOptionsUndefined: Self = StObject.set(x, "viewWindowOptions", js.undefined)
+    inline def setViewWindowOptionsUndefined: Self = StObject.set(x, "viewWindowOptions", js.undefined)
   }
 }

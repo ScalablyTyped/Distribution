@@ -37,8 +37,7 @@ object expandable {
   }
   object IGridExpandableApi {
     
-    @scala.inline
-    def apply[TEntity](
+    inline def apply[TEntity](
       collapseAllRows: () => Unit,
       expandAllRows: () => Unit,
       on: RowExpandedStateChanged[TEntity],
@@ -49,23 +48,17 @@ object expandable {
       __obj.asInstanceOf[IGridExpandableApi[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridExpandableApiMutableBuilder[Self <: IGridExpandableApi[?], TEntity] (val x: Self & IGridExpandableApi[TEntity]) extends AnyVal {
+    extension [Self <: IGridExpandableApi[?], TEntity](x: Self & IGridExpandableApi[TEntity]) {
       
-      @scala.inline
-      def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
+      inline def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExpandAllRows(value: () => Unit): Self = StObject.set(x, "expandAllRows", js.Any.fromFunction0(value))
+      inline def setExpandAllRows(value: () => Unit): Self = StObject.set(x, "expandAllRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: RowExpandedStateChanged[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: RowExpandedStateChanged[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleAllRows(value: () => Unit): Self = StObject.set(x, "toggleAllRows", js.Any.fromFunction0(value))
+      inline def setToggleAllRows(value: () => Unit): Self = StObject.set(x, "toggleAllRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleRowExpansion(value: TEntity => Unit): Self = StObject.set(x, "toggleRowExpansion", js.Any.fromFunction1(value))
+      inline def setToggleRowExpansion(value: TEntity => Unit): Self = StObject.set(x, "toggleRowExpansion", js.Any.fromFunction1(value))
     }
   }
   
@@ -108,50 +101,36 @@ object expandable {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.expandable.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.expandable.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.expandable.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.expandable.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.expandable.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableExpandable(value: Boolean): Self = StObject.set(x, "enableExpandable", value.asInstanceOf[js.Any])
+      inline def setEnableExpandable(value: Boolean): Self = StObject.set(x, "enableExpandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableExpandableRowHeader(value: Boolean): Self = StObject.set(x, "enableExpandableRowHeader", value.asInstanceOf[js.Any])
+      inline def setEnableExpandableRowHeader(value: Boolean): Self = StObject.set(x, "enableExpandableRowHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableExpandableRowHeaderUndefined: Self = StObject.set(x, "enableExpandableRowHeader", js.undefined)
+      inline def setEnableExpandableRowHeaderUndefined: Self = StObject.set(x, "enableExpandableRowHeader", js.undefined)
       
-      @scala.inline
-      def setEnableExpandableUndefined: Self = StObject.set(x, "enableExpandable", js.undefined)
+      inline def setEnableExpandableUndefined: Self = StObject.set(x, "enableExpandable", js.undefined)
       
-      @scala.inline
-      def setExpandableRowHeaderWidth(value: Double): Self = StObject.set(x, "expandableRowHeaderWidth", value.asInstanceOf[js.Any])
+      inline def setExpandableRowHeaderWidth(value: Double): Self = StObject.set(x, "expandableRowHeaderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableRowHeaderWidthUndefined: Self = StObject.set(x, "expandableRowHeaderWidth", js.undefined)
+      inline def setExpandableRowHeaderWidthUndefined: Self = StObject.set(x, "expandableRowHeaderWidth", js.undefined)
       
-      @scala.inline
-      def setExpandableRowHeight(value: Double): Self = StObject.set(x, "expandableRowHeight", value.asInstanceOf[js.Any])
+      inline def setExpandableRowHeight(value: Double): Self = StObject.set(x, "expandableRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableRowHeightUndefined: Self = StObject.set(x, "expandableRowHeight", js.undefined)
+      inline def setExpandableRowHeightUndefined: Self = StObject.set(x, "expandableRowHeight", js.undefined)
       
-      @scala.inline
-      def setExpandableRowScope(value: IScope | js.Object): Self = StObject.set(x, "expandableRowScope", value.asInstanceOf[js.Any])
+      inline def setExpandableRowScope(value: IScope | js.Object): Self = StObject.set(x, "expandableRowScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableRowScopeUndefined: Self = StObject.set(x, "expandableRowScope", js.undefined)
+      inline def setExpandableRowScopeUndefined: Self = StObject.set(x, "expandableRowScope", js.undefined)
       
-      @scala.inline
-      def setExpandableRowTemplate(value: String): Self = StObject.set(x, "expandableRowTemplate", value.asInstanceOf[js.Any])
+      inline def setExpandableRowTemplate(value: String): Self = StObject.set(x, "expandableRowTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableRowTemplateUndefined: Self = StObject.set(x, "expandableRowTemplate", js.undefined)
+      inline def setExpandableRowTemplateUndefined: Self = StObject.set(x, "expandableRowTemplate", js.undefined)
     }
   }
   
@@ -166,20 +145,16 @@ object expandable {
   }
   object IGridRow {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.expandable.IGridRow = {
+    inline def apply(): typings.uiGrid.mod.expandable.IGridRow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.expandable.IGridRow]
     }
     
-    @scala.inline
-    implicit class IGridRowMutableBuilder[Self <: typings.uiGrid.mod.expandable.IGridRow] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.expandable.IGridRow](x: Self) {
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     }
   }
   

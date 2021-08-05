@@ -13,16 +13,13 @@ trait CreateAlgorithmOutput extends StObject {
 }
 object CreateAlgorithmOutput {
   
-  @scala.inline
-  def apply(AlgorithmArn: AlgorithmArn): CreateAlgorithmOutput = {
+  inline def apply(AlgorithmArn: AlgorithmArn): CreateAlgorithmOutput = {
     val __obj = js.Dynamic.literal(AlgorithmArn = AlgorithmArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAlgorithmOutput]
   }
   
-  @scala.inline
-  implicit class CreateAlgorithmOutputMutableBuilder[Self <: CreateAlgorithmOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAlgorithmOutput](x: Self) {
     
-    @scala.inline
-    def setAlgorithmArn(value: AlgorithmArn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
+    inline def setAlgorithmArn(value: AlgorithmArn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
   }
 }

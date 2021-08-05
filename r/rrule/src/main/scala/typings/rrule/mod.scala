@@ -91,34 +91,25 @@ object mod {
     @js.native
     val YEARLY: String | Double = js.native
     
-    @scala.inline
-    def fromString(str: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromString(str: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
     
-    @scala.inline
-    def fromText(text: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
-    @scala.inline
-    def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromText(text: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.RRule]
     
     @JSImport("rrule", "default.optionsToString")
     @js.native
     def optionsToString: js.Function1[/* options */ PartialOptions, String] = js.native
-    @scala.inline
-    def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
+    inline def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule", "default.parseString")
     @js.native
     def parseString: js.Function1[/* rfcString */ String, PartialOptions] = js.native
-    @scala.inline
-    def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
-    @scala.inline
-    def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
+    inline def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
+    inline def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
-    @scala.inline
-    def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
+    inline def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
+    inline def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
   }
   
   @JSImport("rrule", "Frequency")
@@ -220,34 +211,25 @@ object mod {
     @js.native
     val YEARLY: String | Double = js.native
     
-    @scala.inline
-    def fromString(str: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromString(str: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
     
-    @scala.inline
-    def fromText(text: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
-    @scala.inline
-    def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromText(text: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.RRule]
     
     @JSImport("rrule", "RRule.optionsToString")
     @js.native
     def optionsToString: js.Function1[/* options */ PartialOptions, String] = js.native
-    @scala.inline
-    def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
+    inline def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule", "RRule.parseString")
     @js.native
     def parseString: js.Function1[/* rfcString */ String, PartialOptions] = js.native
-    @scala.inline
-    def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
-    @scala.inline
-    def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
+    inline def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
+    inline def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
-    @scala.inline
-    def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
+    inline def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
+    inline def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
   }
   
   @JSImport("rrule", "RRuleSet")
@@ -277,12 +259,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromStr(str: WeekdayStr): typings.rrule.weekdayMod.Weekday = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStr")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.weekdayMod.Weekday]
+    inline def fromStr(str: WeekdayStr): typings.rrule.weekdayMod.Weekday = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStr")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.weekdayMod.Weekday]
   }
   
-  @scala.inline
-  def rrulestr(s: String): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default]
-  @scala.inline
-  def rrulestr(s: String, options: PartialRRuleStrOptions): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default]
+  inline def rrulestr(s: String): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default]
+  inline def rrulestr(s: String, options: PartialRRuleStrOptions): typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.default | typings.rrule.rrulesetMod.default]
 }

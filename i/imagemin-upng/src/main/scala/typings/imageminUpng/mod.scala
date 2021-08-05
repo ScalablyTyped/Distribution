@@ -10,10 +10,8 @@ object mod {
   /**
     * upng imagemin plugin
     */
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  @scala.inline
-  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("imagemin-upng", JSImport.Namespace)
   @js.native
@@ -29,20 +27,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCnum(value: Double): Self = StObject.set(x, "cnum", value.asInstanceOf[js.Any])
+      inline def setCnum(value: Double): Self = StObject.set(x, "cnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCnumUndefined: Self = StObject.set(x, "cnum", js.undefined)
+      inline def setCnumUndefined: Self = StObject.set(x, "cnum", js.undefined)
     }
   }
 }

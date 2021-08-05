@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.FreeformBuilder")
 @js.native
-class FreeformBuilder protected ()
+/* private */ class FreeformBuilder ()
   extends StObject
      with typings.activexOffice.Office.FreeformBuilder

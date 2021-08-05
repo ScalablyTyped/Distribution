@@ -19,8 +19,7 @@ object gestureMod {
   @js.native
   val GESTURE_CONTROLLER: GestureController = js.native
   
-  @scala.inline
-  def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
+  inline def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
   
   @js.native
   trait Gesture extends StObject {
@@ -67,98 +66,68 @@ object gestureMod {
   }
   object GestureConfig {
     
-    @scala.inline
-    def apply(el: Node, gestureName: String): GestureConfig = {
+    inline def apply(el: Node, gestureName: String): GestureConfig = {
       val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], gestureName = gestureName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GestureConfig]
     }
     
-    @scala.inline
-    implicit class GestureConfigMutableBuilder[Self <: GestureConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GestureConfig](x: Self) {
       
-      @scala.inline
-      def setBlurOnStart(value: Boolean): Self = StObject.set(x, "blurOnStart", value.asInstanceOf[js.Any])
+      inline def setBlurOnStart(value: Boolean): Self = StObject.set(x, "blurOnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurOnStartUndefined: Self = StObject.set(x, "blurOnStart", js.undefined)
+      inline def setBlurOnStartUndefined: Self = StObject.set(x, "blurOnStart", js.undefined)
       
-      @scala.inline
-      def setCanStart(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "canStart", js.Any.fromFunction1(value))
+      inline def setCanStart(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "canStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanStartUndefined: Self = StObject.set(x, "canStart", js.undefined)
+      inline def setCanStartUndefined: Self = StObject.set(x, "canStart", js.undefined)
       
-      @scala.inline
-      def setDirection(value: typings.ionicCore.ionicCoreStrings.x | y): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: typings.ionicCore.ionicCoreStrings.x | y): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
+      inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
       
-      @scala.inline
-      def setEl(value: Node): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: Node): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureName(value: String): Self = StObject.set(x, "gestureName", value.asInstanceOf[js.Any])
+      inline def setGestureName(value: String): Self = StObject.set(x, "gestureName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGesturePriority(value: Double): Self = StObject.set(x, "gesturePriority", value.asInstanceOf[js.Any])
+      inline def setGesturePriority(value: Double): Self = StObject.set(x, "gesturePriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGesturePriorityUndefined: Self = StObject.set(x, "gesturePriority", js.undefined)
+      inline def setGesturePriorityUndefined: Self = StObject.set(x, "gesturePriority", js.undefined)
       
-      @scala.inline
-      def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
+      inline def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAngleUndefined: Self = StObject.set(x, "maxAngle", js.undefined)
+      inline def setMaxAngleUndefined: Self = StObject.set(x, "maxAngle", js.undefined)
       
-      @scala.inline
-      def setNotCaptured(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "notCaptured", js.Any.fromFunction1(value))
+      inline def setNotCaptured(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "notCaptured", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotCapturedUndefined: Self = StObject.set(x, "notCaptured", js.undefined)
+      inline def setNotCapturedUndefined: Self = StObject.set(x, "notCaptured", js.undefined)
       
-      @scala.inline
-      def setOnEnd(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setOnMove(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
+      inline def setOnMove(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
+      inline def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* detail */ GestureDetail => Boolean | Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnWillStart(value: /* _ */ GestureDetail => js.Promise[Unit]): Self = StObject.set(x, "onWillStart", js.Any.fromFunction1(value))
+      inline def setOnWillStart(value: /* _ */ GestureDetail => js.Promise[Unit]): Self = StObject.set(x, "onWillStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWillStartUndefined: Self = StObject.set(x, "onWillStart", js.undefined)
+      inline def setOnWillStartUndefined: Self = StObject.set(x, "onWillStart", js.undefined)
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
   
@@ -192,8 +161,7 @@ object gestureMod {
   }
   object GestureDetail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTime: Double,
       currentX: Double,
       currentY: Double,
@@ -212,50 +180,35 @@ object gestureMod {
       __obj.asInstanceOf[GestureDetail]
     }
     
-    @scala.inline
-    implicit class GestureDetailMutableBuilder[Self <: GestureDetail] (val x: Self) extends AnyVal {
+    extension [Self <: GestureDetail](x: Self) {
       
-      @scala.inline
-      def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+      inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentX(value: Double): Self = StObject.set(x, "currentX", value.asInstanceOf[js.Any])
+      inline def setCurrentX(value: Double): Self = StObject.set(x, "currentX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentY(value: Double): Self = StObject.set(x, "currentY", value.asInstanceOf[js.Any])
+      inline def setCurrentY(value: Double): Self = StObject.set(x, "currentY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+      inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+      inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: UIEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: UIEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
+      inline def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
+      inline def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
+      inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
+      inline def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
     }
   }
 }

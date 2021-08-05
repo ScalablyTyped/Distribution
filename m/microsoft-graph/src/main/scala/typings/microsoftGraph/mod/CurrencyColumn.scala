@@ -11,22 +11,17 @@ trait CurrencyColumn extends StObject {
 }
 object CurrencyColumn {
   
-  @scala.inline
-  def apply(): CurrencyColumn = {
+  inline def apply(): CurrencyColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrencyColumn]
   }
   
-  @scala.inline
-  implicit class CurrencyColumnMutableBuilder[Self <: CurrencyColumn] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyColumn](x: Self) {
     
-    @scala.inline
-    def setLocale(value: NullableOption[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: NullableOption[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleNull: Self = StObject.set(x, "locale", null)
+    inline def setLocaleNull: Self = StObject.set(x, "locale", null)
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

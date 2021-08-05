@@ -48,61 +48,43 @@ trait SchemaNotification extends StObject {
 }
 object SchemaNotification {
   
-  @scala.inline
-  def apply(): SchemaNotification = {
+  inline def apply(): SchemaNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotification]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationMutableBuilder[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotification](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setFromAddress(value: String): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
+    inline def setFromAddress(value: String): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
+    inline def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
     
-    @scala.inline
-    def setIsUnread(value: Boolean): Self = StObject.set(x, "isUnread", value.asInstanceOf[js.Any])
+    inline def setIsUnread(value: Boolean): Self = StObject.set(x, "isUnread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnreadUndefined: Self = StObject.set(x, "isUnread", js.undefined)
+    inline def setIsUnreadUndefined: Self = StObject.set(x, "isUnread", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
+    inline def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationIdUndefined: Self = StObject.set(x, "notificationId", js.undefined)
+    inline def setNotificationIdUndefined: Self = StObject.set(x, "notificationId", js.undefined)
     
-    @scala.inline
-    def setSendTime(value: String): Self = StObject.set(x, "sendTime", value.asInstanceOf[js.Any])
+    inline def setSendTime(value: String): Self = StObject.set(x, "sendTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendTimeUndefined: Self = StObject.set(x, "sendTime", js.undefined)
+    inline def setSendTimeUndefined: Self = StObject.set(x, "sendTime", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

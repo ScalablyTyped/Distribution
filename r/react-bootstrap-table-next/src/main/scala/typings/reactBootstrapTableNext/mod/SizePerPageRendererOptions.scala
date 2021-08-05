@@ -24,25 +24,19 @@ trait SizePerPageRendererOptions extends StObject {
 }
 object SizePerPageRendererOptions {
   
-  @scala.inline
-  def apply(currentSizePerPage: Double, onSizePerPageChange: (Double, Double) => Unit, options: js.Array[Text]): SizePerPageRendererOptions = {
+  inline def apply(currentSizePerPage: Double, onSizePerPageChange: (Double, Double) => Unit, options: js.Array[Text]): SizePerPageRendererOptions = {
     val __obj = js.Dynamic.literal(currentSizePerPage = currentSizePerPage.asInstanceOf[js.Any], onSizePerPageChange = js.Any.fromFunction2(onSizePerPageChange), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizePerPageRendererOptions]
   }
   
-  @scala.inline
-  implicit class SizePerPageRendererOptionsMutableBuilder[Self <: SizePerPageRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SizePerPageRendererOptions](x: Self) {
     
-    @scala.inline
-    def setCurrentSizePerPage(value: Double): Self = StObject.set(x, "currentSizePerPage", value.asInstanceOf[js.Any])
+    inline def setCurrentSizePerPage(value: Double): Self = StObject.set(x, "currentSizePerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSizePerPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onSizePerPageChange", js.Any.fromFunction2(value))
+    inline def setOnSizePerPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onSizePerPageChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: js.Array[Text]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Text]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: Text*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Text*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

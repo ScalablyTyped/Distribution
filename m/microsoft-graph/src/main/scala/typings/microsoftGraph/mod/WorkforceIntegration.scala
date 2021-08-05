@@ -32,67 +32,47 @@ trait WorkforceIntegration
 }
 object WorkforceIntegration {
   
-  @scala.inline
-  def apply(): WorkforceIntegration = {
+  inline def apply(): WorkforceIntegration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkforceIntegration]
   }
   
-  @scala.inline
-  implicit class WorkforceIntegrationMutableBuilder[Self <: WorkforceIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: WorkforceIntegration](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: NullableOption[Double]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: NullableOption[Double]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionNull: Self = StObject.set(x, "apiVersion", null)
+    inline def setApiVersionNull: Self = StObject.set(x, "apiVersion", null)
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: NullableOption[WorkforceIntegrationEncryption]): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: NullableOption[WorkforceIntegrationEncryption]): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionNull: Self = StObject.set(x, "encryption", null)
+    inline def setEncryptionNull: Self = StObject.set(x, "encryption", null)
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: NullableOption[Boolean]): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: NullableOption[Boolean]): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveNull: Self = StObject.set(x, "isActive", null)
+    inline def setIsActiveNull: Self = StObject.set(x, "isActive", null)
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setSupportedEntities(value: NullableOption[WorkforceIntegrationSupportedEntities]): Self = StObject.set(x, "supportedEntities", value.asInstanceOf[js.Any])
+    inline def setSupportedEntities(value: NullableOption[WorkforceIntegrationSupportedEntities]): Self = StObject.set(x, "supportedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedEntitiesNull: Self = StObject.set(x, "supportedEntities", null)
+    inline def setSupportedEntitiesNull: Self = StObject.set(x, "supportedEntities", null)
     
-    @scala.inline
-    def setSupportedEntitiesUndefined: Self = StObject.set(x, "supportedEntities", js.undefined)
+    inline def setSupportedEntitiesUndefined: Self = StObject.set(x, "supportedEntities", js.undefined)
     
-    @scala.inline
-    def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlNull: Self = StObject.set(x, "url", null)
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

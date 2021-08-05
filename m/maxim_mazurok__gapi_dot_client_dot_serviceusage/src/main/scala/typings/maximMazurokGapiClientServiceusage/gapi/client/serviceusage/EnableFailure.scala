@@ -14,25 +14,19 @@ trait EnableFailure extends StObject {
 }
 object EnableFailure {
   
-  @scala.inline
-  def apply(): EnableFailure = {
+  inline def apply(): EnableFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableFailure]
   }
   
-  @scala.inline
-  implicit class EnableFailureMutableBuilder[Self <: EnableFailure] (val x: Self) extends AnyVal {
+  extension [Self <: EnableFailure](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
   }
 }

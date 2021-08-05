@@ -12,25 +12,19 @@ trait ErrorsTextOptions extends StObject {
 }
 object ErrorsTextOptions {
   
-  @scala.inline
-  def apply(): ErrorsTextOptions = {
+  inline def apply(): ErrorsTextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorsTextOptions]
   }
   
-  @scala.inline
-  implicit class ErrorsTextOptionsMutableBuilder[Self <: ErrorsTextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorsTextOptions](x: Self) {
     
-    @scala.inline
-    def setDataVar(value: String): Self = StObject.set(x, "dataVar", value.asInstanceOf[js.Any])
+    inline def setDataVar(value: String): Self = StObject.set(x, "dataVar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarUndefined: Self = StObject.set(x, "dataVar", js.undefined)
+    inline def setDataVarUndefined: Self = StObject.set(x, "dataVar", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

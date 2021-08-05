@@ -30,8 +30,7 @@ object adapterMod {
   }
   object MDCCheckboxAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       forceLayout: () => Unit,
       hasNativeControl: () => Boolean,
@@ -47,38 +46,27 @@ object adapterMod {
       __obj.asInstanceOf[MDCCheckboxAdapter]
     }
     
-    @scala.inline
-    implicit class MDCCheckboxAdapterMutableBuilder[Self <: MDCCheckboxAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCCheckboxAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForceLayout(value: () => Unit): Self = StObject.set(x, "forceLayout", js.Any.fromFunction0(value))
+      inline def setForceLayout(value: () => Unit): Self = StObject.set(x, "forceLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasNativeControl(value: () => Boolean): Self = StObject.set(x, "hasNativeControl", js.Any.fromFunction0(value))
+      inline def setHasNativeControl(value: () => Boolean): Self = StObject.set(x, "hasNativeControl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAttachedToDOM(value: () => Boolean): Self = StObject.set(x, "isAttachedToDOM", js.Any.fromFunction0(value))
+      inline def setIsAttachedToDOM(value: () => Boolean): Self = StObject.set(x, "isAttachedToDOM", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsIndeterminate(value: () => Boolean): Self = StObject.set(x, "isIndeterminate", js.Any.fromFunction0(value))
+      inline def setIsIndeterminate(value: () => Boolean): Self = StObject.set(x, "isIndeterminate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveNativeControlAttr(value: String => Unit): Self = StObject.set(x, "removeNativeControlAttr", js.Any.fromFunction1(value))
+      inline def setRemoveNativeControlAttr(value: String => Unit): Self = StObject.set(x, "removeNativeControlAttr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNativeControlAttr(value: (String, String) => Unit): Self = StObject.set(x, "setNativeControlAttr", js.Any.fromFunction2(value))
+      inline def setSetNativeControlAttr(value: (String, String) => Unit): Self = StObject.set(x, "setNativeControlAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetNativeControlDisabled(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
+      inline def setSetNativeControlDisabled(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
     }
   }
 }

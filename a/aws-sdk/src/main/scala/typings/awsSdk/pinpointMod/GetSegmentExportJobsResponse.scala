@@ -10,16 +10,13 @@ trait GetSegmentExportJobsResponse extends StObject {
 }
 object GetSegmentExportJobsResponse {
   
-  @scala.inline
-  def apply(ExportJobsResponse: ExportJobsResponse): GetSegmentExportJobsResponse = {
+  inline def apply(ExportJobsResponse: ExportJobsResponse): GetSegmentExportJobsResponse = {
     val __obj = js.Dynamic.literal(ExportJobsResponse = ExportJobsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentExportJobsResponse]
   }
   
-  @scala.inline
-  implicit class GetSegmentExportJobsResponseMutableBuilder[Self <: GetSegmentExportJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSegmentExportJobsResponse](x: Self) {
     
-    @scala.inline
-    def setExportJobsResponse(value: ExportJobsResponse): Self = StObject.set(x, "ExportJobsResponse", value.asInstanceOf[js.Any])
+    inline def setExportJobsResponse(value: ExportJobsResponse): Self = StObject.set(x, "ExportJobsResponse", value.asInstanceOf[js.Any])
   }
 }

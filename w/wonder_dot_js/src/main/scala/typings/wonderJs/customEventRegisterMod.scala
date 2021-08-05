@@ -14,7 +14,7 @@ object customEventRegisterMod {
   @js.native
   class CustomEventRegister () extends EventRegister {
     
-    @JSName("listenerMap")
+    /* protected */ @JSName("listenerMap")
     var listenerMap_CustomEventRegister: CustomEventListenerMap = js.native
     
     def register(
@@ -49,8 +49,7 @@ object customEventRegisterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
   }
   
   trait CustomEventRegisterData extends StObject {
@@ -67,8 +66,7 @@ object customEventRegisterMod {
   }
   object CustomEventRegisterData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domHandler: js.Function,
       handler: js.Function,
       originHandler: js.Function,
@@ -79,23 +77,17 @@ object customEventRegisterMod {
       __obj.asInstanceOf[CustomEventRegisterData]
     }
     
-    @scala.inline
-    implicit class CustomEventRegisterDataMutableBuilder[Self <: CustomEventRegisterData] (val x: Self) extends AnyVal {
+    extension [Self <: CustomEventRegisterData](x: Self) {
       
-      @scala.inline
-      def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
+      inline def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginHandler(value: js.Function): Self = StObject.set(x, "originHandler", value.asInstanceOf[js.Any])
+      inline def setOriginHandler(value: js.Function): Self = StObject.set(x, "originHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: EntityObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EntityObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

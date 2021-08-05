@@ -10,16 +10,13 @@ trait TypeofWebTwain extends StObject {
 }
 object TypeofWebTwain {
   
-  @scala.inline
-  def apply(Addon: TypeofAddon): TypeofWebTwain = {
+  inline def apply(Addon: TypeofAddon): TypeofWebTwain = {
     val __obj = js.Dynamic.literal(Addon = Addon.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofWebTwain]
   }
   
-  @scala.inline
-  implicit class TypeofWebTwainMutableBuilder[Self <: TypeofWebTwain] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofWebTwain](x: Self) {
     
-    @scala.inline
-    def setAddon(value: TypeofAddon): Self = StObject.set(x, "Addon", value.asInstanceOf[js.Any])
+    inline def setAddon(value: TypeofAddon): Self = StObject.set(x, "Addon", value.asInstanceOf[js.Any])
   }
 }

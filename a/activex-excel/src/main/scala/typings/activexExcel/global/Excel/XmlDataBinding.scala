@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XmlDataBinding")
 @js.native
-class XmlDataBinding protected ()
+/* private */ class XmlDataBinding ()
   extends StObject
      with typings.activexExcel.Excel.XmlDataBinding {
   
@@ -21,7 +21,7 @@ class XmlDataBinding protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.XmlDataBinding_typekey")
   var ExcelDotXmlDataBinding_typekey: typings.activexExcel.Excel.XmlDataBinding = js.native
   

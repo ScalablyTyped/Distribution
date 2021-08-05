@@ -14,8 +14,7 @@ trait IPanoramaGraph extends StObject {
 }
 object IPanoramaGraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEdges: () => js.Array[IPanoramaGraphEdge],
     getNodes: () => js.Array[IPanoramaGraphEdge],
     getPanorama: () => IPanorama
@@ -24,16 +23,12 @@ object IPanoramaGraph {
     __obj.asInstanceOf[IPanoramaGraph]
   }
   
-  @scala.inline
-  implicit class IPanoramaGraphMutableBuilder[Self <: IPanoramaGraph] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaGraph](x: Self) {
     
-    @scala.inline
-    def setGetEdges(value: () => js.Array[IPanoramaGraphEdge]): Self = StObject.set(x, "getEdges", js.Any.fromFunction0(value))
+    inline def setGetEdges(value: () => js.Array[IPanoramaGraphEdge]): Self = StObject.set(x, "getEdges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodes(value: () => js.Array[IPanoramaGraphEdge]): Self = StObject.set(x, "getNodes", js.Any.fromFunction0(value))
+    inline def setGetNodes(value: () => js.Array[IPanoramaGraphEdge]): Self = StObject.set(x, "getNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
+    inline def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
   }
 }

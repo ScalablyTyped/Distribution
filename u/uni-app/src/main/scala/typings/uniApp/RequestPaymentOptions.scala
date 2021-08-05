@@ -67,73 +67,51 @@ trait RequestPaymentOptions extends StObject {
 }
 object RequestPaymentOptions {
   
-  @scala.inline
-  def apply(): RequestPaymentOptions = {
+  inline def apply(): RequestPaymentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestPaymentOptions]
   }
   
-  @scala.inline
-  implicit class RequestPaymentOptionsMutableBuilder[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestPaymentOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceStrUndefined: Self = StObject.set(x, "nonceStr", js.undefined)
+    inline def setNonceStrUndefined: Self = StObject.set(x, "nonceStr", js.undefined)
     
-    @scala.inline
-    def setOrderInfo(value: String): Self = StObject.set(x, "orderInfo", value.asInstanceOf[js.Any])
+    inline def setOrderInfo(value: String): Self = StObject.set(x, "orderInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderInfoUndefined: Self = StObject.set(x, "orderInfo", js.undefined)
+    inline def setOrderInfoUndefined: Self = StObject.set(x, "orderInfo", js.undefined)
     
-    @scala.inline
-    def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
+    inline def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaySignUndefined: Self = StObject.set(x, "paySign", js.undefined)
+    inline def setPaySignUndefined: Self = StObject.set(x, "paySign", js.undefined)
     
-    @scala.inline
-    def setProvider(value: alipay | wxpay | baidu | appleiap): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: alipay | wxpay | baidu | appleiap): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    inline def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignTypeUndefined: Self = StObject.set(x, "signType", js.undefined)
+    inline def setSignTypeUndefined: Self = StObject.set(x, "signType", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+    inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

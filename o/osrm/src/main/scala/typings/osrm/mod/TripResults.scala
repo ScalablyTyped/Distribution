@@ -12,25 +12,19 @@ trait TripResults extends StObject {
 }
 object TripResults {
   
-  @scala.inline
-  def apply(trips: js.Array[Route], waypoints: js.Array[TripWaypoint]): TripResults = {
+  inline def apply(trips: js.Array[Route], waypoints: js.Array[TripWaypoint]): TripResults = {
     val __obj = js.Dynamic.literal(trips = trips.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[TripResults]
   }
   
-  @scala.inline
-  implicit class TripResultsMutableBuilder[Self <: TripResults] (val x: Self) extends AnyVal {
+  extension [Self <: TripResults](x: Self) {
     
-    @scala.inline
-    def setTrips(value: js.Array[Route]): Self = StObject.set(x, "trips", value.asInstanceOf[js.Any])
+    inline def setTrips(value: js.Array[Route]): Self = StObject.set(x, "trips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTripsVarargs(value: Route*): Self = StObject.set(x, "trips", js.Array(value :_*))
+    inline def setTripsVarargs(value: Route*): Self = StObject.set(x, "trips", js.Array(value :_*))
     
-    @scala.inline
-    def setWaypoints(value: js.Array[TripWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[TripWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsVarargs(value: TripWaypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: TripWaypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

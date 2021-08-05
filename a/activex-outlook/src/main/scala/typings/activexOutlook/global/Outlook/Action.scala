@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Action")
 @js.native
-class Action protected ()
+/* private */ class Action ()
   extends StObject
      with typings.activexOutlook.Outlook.Action {
   
@@ -39,7 +39,7 @@ class Action protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Action_typekey")
   var OutlookDotAction_typekey: typings.activexOutlook.Outlook.Action = js.native
   

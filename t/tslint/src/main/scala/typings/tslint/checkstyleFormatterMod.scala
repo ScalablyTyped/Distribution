@@ -12,9 +12,9 @@ object checkstyleFormatterMod {
   @js.native
   class Formatter () extends AbstractFormatter {
     
-    var escapeXml: js.Any = js.native
+    /* private */ var escapeXml: js.Any = js.native
     
-    var formatFailure: js.Any = js.native
+    /* private */ var formatFailure: js.Any = js.native
   }
   /* static members */
   object Formatter {
@@ -26,7 +26,6 @@ object checkstyleFormatterMod {
     @JSImport("tslint/lib/formatters/checkstyleFormatter", "Formatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

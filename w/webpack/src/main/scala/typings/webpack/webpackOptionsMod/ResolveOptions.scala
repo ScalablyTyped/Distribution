@@ -113,166 +113,114 @@ trait ResolveOptions extends StObject {
 }
 object ResolveOptions {
   
-  @scala.inline
-  def apply(): ResolveOptions = {
+  inline def apply(): ResolveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveOptions]
   }
   
-  @scala.inline
-  implicit class ResolveOptionsMutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveOptions](x: Self) {
     
-    @scala.inline
-    def setAlias(value: (/**
+    inline def setAlias(value: (/**
     				 * New request
     				 */
     StringDictionary[String]) | js.Array[Alias]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasFields(value: ArrayOfStringOrStringArrayValues): Self = StObject.set(x, "aliasFields", value.asInstanceOf[js.Any])
+    inline def setAliasFields(value: ArrayOfStringOrStringArrayValues): Self = StObject.set(x, "aliasFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasFieldsUndefined: Self = StObject.set(x, "aliasFields", js.undefined)
+    inline def setAliasFieldsUndefined: Self = StObject.set(x, "aliasFields", js.undefined)
     
-    @scala.inline
-    def setAliasFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "aliasFields", js.Array(value :_*))
+    inline def setAliasFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "aliasFields", js.Array(value :_*))
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setAliasVarargs(value: Alias*): Self = StObject.set(x, "alias", js.Array(value :_*))
+    inline def setAliasVarargs(value: Alias*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
-    @scala.inline
-    def setCachePredicate(value: js.Function): Self = StObject.set(x, "cachePredicate", value.asInstanceOf[js.Any])
+    inline def setCachePredicate(value: js.Function): Self = StObject.set(x, "cachePredicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachePredicateUndefined: Self = StObject.set(x, "cachePredicate", js.undefined)
+    inline def setCachePredicateUndefined: Self = StObject.set(x, "cachePredicate", js.undefined)
     
-    @scala.inline
-    def setCacheWithContext(value: Boolean): Self = StObject.set(x, "cacheWithContext", value.asInstanceOf[js.Any])
+    inline def setCacheWithContext(value: Boolean): Self = StObject.set(x, "cacheWithContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheWithContextUndefined: Self = StObject.set(x, "cacheWithContext", js.undefined)
+    inline def setCacheWithContextUndefined: Self = StObject.set(x, "cacheWithContext", js.undefined)
     
-    @scala.inline
-    def setConcord(value: Boolean): Self = StObject.set(x, "concord", value.asInstanceOf[js.Any])
+    inline def setConcord(value: Boolean): Self = StObject.set(x, "concord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcordUndefined: Self = StObject.set(x, "concord", js.undefined)
+    inline def setConcordUndefined: Self = StObject.set(x, "concord", js.undefined)
     
-    @scala.inline
-    def setDescriptionFiles(value: ArrayOfStringValues): Self = StObject.set(x, "descriptionFiles", value.asInstanceOf[js.Any])
+    inline def setDescriptionFiles(value: ArrayOfStringValues): Self = StObject.set(x, "descriptionFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionFilesUndefined: Self = StObject.set(x, "descriptionFiles", js.undefined)
+    inline def setDescriptionFilesUndefined: Self = StObject.set(x, "descriptionFiles", js.undefined)
     
-    @scala.inline
-    def setDescriptionFilesVarargs(value: String*): Self = StObject.set(x, "descriptionFiles", js.Array(value :_*))
+    inline def setDescriptionFilesVarargs(value: String*): Self = StObject.set(x, "descriptionFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setEnforceExtension(value: Boolean): Self = StObject.set(x, "enforceExtension", value.asInstanceOf[js.Any])
+    inline def setEnforceExtension(value: Boolean): Self = StObject.set(x, "enforceExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceExtensionUndefined: Self = StObject.set(x, "enforceExtension", js.undefined)
+    inline def setEnforceExtensionUndefined: Self = StObject.set(x, "enforceExtension", js.undefined)
     
-    @scala.inline
-    def setEnforceModuleExtension(value: Boolean): Self = StObject.set(x, "enforceModuleExtension", value.asInstanceOf[js.Any])
+    inline def setEnforceModuleExtension(value: Boolean): Self = StObject.set(x, "enforceModuleExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceModuleExtensionUndefined: Self = StObject.set(x, "enforceModuleExtension", js.undefined)
+    inline def setEnforceModuleExtensionUndefined: Self = StObject.set(x, "enforceModuleExtension", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: ArrayOfStringValues): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: ArrayOfStringValues): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setFileSystem(value: StringDictionary[js.Any]): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
+    inline def setFileSystem(value: StringDictionary[js.Any]): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemUndefined: Self = StObject.set(x, "fileSystem", js.undefined)
+    inline def setFileSystemUndefined: Self = StObject.set(x, "fileSystem", js.undefined)
     
-    @scala.inline
-    def setMainFields(value: ArrayOfStringOrStringArrayValues): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+    inline def setMainFields(value: ArrayOfStringOrStringArrayValues): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
+    inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
     
-    @scala.inline
-    def setMainFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+    inline def setMainFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
     
-    @scala.inline
-    def setMainFiles(value: ArrayOfStringValues): Self = StObject.set(x, "mainFiles", value.asInstanceOf[js.Any])
+    inline def setMainFiles(value: ArrayOfStringValues): Self = StObject.set(x, "mainFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainFilesUndefined: Self = StObject.set(x, "mainFiles", js.undefined)
+    inline def setMainFilesUndefined: Self = StObject.set(x, "mainFiles", js.undefined)
     
-    @scala.inline
-    def setMainFilesVarargs(value: String*): Self = StObject.set(x, "mainFiles", js.Array(value :_*))
+    inline def setMainFilesVarargs(value: String*): Self = StObject.set(x, "mainFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setModuleExtensions(value: ArrayOfStringValues): Self = StObject.set(x, "moduleExtensions", value.asInstanceOf[js.Any])
+    inline def setModuleExtensions(value: ArrayOfStringValues): Self = StObject.set(x, "moduleExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
+    inline def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
     
-    @scala.inline
-    def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
+    inline def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
     
-    @scala.inline
-    def setModules(value: ArrayOfStringValues): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: ArrayOfStringValues): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+    inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
-    @scala.inline
-    def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
-    @scala.inline
-    def setPlugins(value: js.Array[WebpackPluginInstance | WebpackPluginFunction]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[WebpackPluginInstance | WebpackPluginFunction]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setPluginsVarargs(value: (WebpackPluginInstance | WebpackPluginFunction)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: (WebpackPluginInstance | WebpackPluginFunction)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setResolver(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+    inline def setResolver(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+    inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
     
-    @scala.inline
-    def setRoots(value: js.Array[String]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+    inline def setRoots(value: js.Array[String]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
+    inline def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
     
-    @scala.inline
-    def setRootsVarargs(value: String*): Self = StObject.set(x, "roots", js.Array(value :_*))
+    inline def setRootsVarargs(value: String*): Self = StObject.set(x, "roots", js.Array(value :_*))
     
-    @scala.inline
-    def setSymlinks(value: Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
+    inline def setSymlinks(value: Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
+    inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
     
-    @scala.inline
-    def setUnsafeCache(value: Boolean | StringDictionary[js.Any]): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
+    inline def setUnsafeCache(value: Boolean | StringDictionary[js.Any]): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsafeCacheUndefined: Self = StObject.set(x, "unsafeCache", js.undefined)
+    inline def setUnsafeCacheUndefined: Self = StObject.set(x, "unsafeCache", js.undefined)
     
-    @scala.inline
-    def setUseSyncFileSystemCalls(value: Boolean): Self = StObject.set(x, "useSyncFileSystemCalls", value.asInstanceOf[js.Any])
+    inline def setUseSyncFileSystemCalls(value: Boolean): Self = StObject.set(x, "useSyncFileSystemCalls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSyncFileSystemCallsUndefined: Self = StObject.set(x, "useSyncFileSystemCalls", js.undefined)
+    inline def setUseSyncFileSystemCallsUndefined: Self = StObject.set(x, "useSyncFileSystemCalls", js.undefined)
   }
 }

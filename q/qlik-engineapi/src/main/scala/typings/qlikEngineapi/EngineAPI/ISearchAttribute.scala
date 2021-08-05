@@ -24,19 +24,15 @@ trait ISearchAttribute extends StObject {
 }
 object ISearchAttribute {
   
-  @scala.inline
-  def apply(qKey: String, qValue: String): ISearchAttribute = {
+  inline def apply(qKey: String, qValue: String): ISearchAttribute = {
     val __obj = js.Dynamic.literal(qKey = qKey.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchAttribute]
   }
   
-  @scala.inline
-  implicit class ISearchAttributeMutableBuilder[Self <: ISearchAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchAttribute](x: Self) {
     
-    @scala.inline
-    def setQKey(value: String): Self = StObject.set(x, "qKey", value.asInstanceOf[js.Any])
+    inline def setQKey(value: String): Self = StObject.set(x, "qKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

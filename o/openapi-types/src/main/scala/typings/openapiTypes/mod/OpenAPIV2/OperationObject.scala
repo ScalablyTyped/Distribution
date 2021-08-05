@@ -37,100 +37,69 @@ trait OperationObject
 }
 object OperationObject {
   
-  @scala.inline
-  def apply(responses: ResponsesObject): OperationObject = {
+  inline def apply(responses: ResponsesObject): OperationObject = {
     val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationObject]
   }
   
-  @scala.inline
-  implicit class OperationObjectMutableBuilder[Self <: OperationObject] (val x: Self) extends AnyVal {
+  extension [Self <: OperationObject](x: Self) {
     
-    @scala.inline
-    def setConsumes(value: MimeTypes): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
+    inline def setConsumes(value: MimeTypes): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumesUndefined: Self = StObject.set(x, "consumes", js.undefined)
+    inline def setConsumesUndefined: Self = StObject.set(x, "consumes", js.undefined)
     
-    @scala.inline
-    def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
+    inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExternalDocs(value: ExternalDocumentationObject): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
+    inline def setExternalDocs(value: ExternalDocumentationObject): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
+    inline def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: (ReferenceObject | Parameter)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (ReferenceObject | Parameter)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setProduces(value: MimeTypes): Self = StObject.set(x, "produces", value.asInstanceOf[js.Any])
+    inline def setProduces(value: MimeTypes): Self = StObject.set(x, "produces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducesUndefined: Self = StObject.set(x, "produces", js.undefined)
+    inline def setProducesUndefined: Self = StObject.set(x, "produces", js.undefined)
     
-    @scala.inline
-    def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value :_*))
+    inline def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value :_*))
     
-    @scala.inline
-    def setResponses(value: ResponsesObject): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: ResponsesObject): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+    inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
+    inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
     
-    @scala.inline
-    def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+    inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+    inline def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+    inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    @scala.inline
-    def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value :_*))
+    inline def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

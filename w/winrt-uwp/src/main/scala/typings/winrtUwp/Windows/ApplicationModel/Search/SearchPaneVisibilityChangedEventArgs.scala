@@ -12,16 +12,13 @@ trait SearchPaneVisibilityChangedEventArgs extends StObject {
 }
 object SearchPaneVisibilityChangedEventArgs {
   
-  @scala.inline
-  def apply(visible: Boolean): SearchPaneVisibilityChangedEventArgs = {
+  inline def apply(visible: Boolean): SearchPaneVisibilityChangedEventArgs = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPaneVisibilityChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SearchPaneVisibilityChangedEventArgsMutableBuilder[Self <: SearchPaneVisibilityChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPaneVisibilityChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait ListTypedLinkFacetNamesRequest extends StObject {
 }
 object ListTypedLinkFacetNamesRequest {
   
-  @scala.inline
-  def apply(SchemaArn: Arn): ListTypedLinkFacetNamesRequest = {
+  inline def apply(SchemaArn: Arn): ListTypedLinkFacetNamesRequest = {
     val __obj = js.Dynamic.literal(SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTypedLinkFacetNamesRequest]
   }
   
-  @scala.inline
-  implicit class ListTypedLinkFacetNamesRequestMutableBuilder[Self <: ListTypedLinkFacetNamesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypedLinkFacetNamesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

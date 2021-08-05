@@ -55,8 +55,7 @@ trait GattDeviceService extends StObject {
 }
 object GattDeviceService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeHandle: Double,
     close: () => Unit,
     device: BluetoothLEDevice,
@@ -72,37 +71,26 @@ object GattDeviceService {
     __obj.asInstanceOf[GattDeviceService]
   }
   
-  @scala.inline
-  implicit class GattDeviceServiceMutableBuilder[Self <: GattDeviceService] (val x: Self) extends AnyVal {
+  extension [Self <: GattDeviceService](x: Self) {
     
-    @scala.inline
-    def setAttributeHandle(value: Double): Self = StObject.set(x, "attributeHandle", value.asInstanceOf[js.Any])
+    inline def setAttributeHandle(value: Double): Self = StObject.set(x, "attributeHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDevice(value: BluetoothLEDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: BluetoothLEDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllCharacteristics(value: () => IVectorView[GattCharacteristic]): Self = StObject.set(x, "getAllCharacteristics", js.Any.fromFunction0(value))
+    inline def setGetAllCharacteristics(value: () => IVectorView[GattCharacteristic]): Self = StObject.set(x, "getAllCharacteristics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllIncludedServices(value: () => IVectorView[GattDeviceService]): Self = StObject.set(x, "getAllIncludedServices", js.Any.fromFunction0(value))
+    inline def setGetAllIncludedServices(value: () => IVectorView[GattDeviceService]): Self = StObject.set(x, "getAllIncludedServices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCharacteristics(value: String => IVectorView[GattCharacteristic]): Self = StObject.set(x, "getCharacteristics", js.Any.fromFunction1(value))
+    inline def setGetCharacteristics(value: String => IVectorView[GattCharacteristic]): Self = StObject.set(x, "getCharacteristics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIncludedServices(value: String => IVectorView[GattDeviceService]): Self = StObject.set(x, "getIncludedServices", js.Any.fromFunction1(value))
+    inline def setGetIncludedServices(value: String => IVectorView[GattDeviceService]): Self = StObject.set(x, "getIncludedServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParentServices(value: IVectorView[GattDeviceService]): Self = StObject.set(x, "parentServices", value.asInstanceOf[js.Any])
+    inline def setParentServices(value: IVectorView[GattDeviceService]): Self = StObject.set(x, "parentServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

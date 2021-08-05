@@ -14,26 +14,20 @@ trait Payload extends StObject {
 }
 object Payload {
   
-  @scala.inline
-  def apply(payload: Double, `type`: String): Payload = {
+  inline def apply(payload: Double, `type`: String): Payload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload]
   }
   
-  @scala.inline
-  implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+  extension [Self <: Payload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

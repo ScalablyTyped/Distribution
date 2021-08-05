@@ -11,19 +11,15 @@ trait PartialProtection extends StObject {
 }
 object PartialProtection {
   
-  @scala.inline
-  def apply(): PartialProtection = {
+  inline def apply(): PartialProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialProtection]
   }
   
-  @scala.inline
-  implicit class PartialProtectionMutableBuilder[Self <: PartialProtection] (val x: Self) extends AnyVal {
+  extension [Self <: PartialProtection](x: Self) {
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
   }
 }

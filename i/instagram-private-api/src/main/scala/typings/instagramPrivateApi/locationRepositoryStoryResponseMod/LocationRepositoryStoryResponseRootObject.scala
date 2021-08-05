@@ -12,19 +12,15 @@ trait LocationRepositoryStoryResponseRootObject extends StObject {
 }
 object LocationRepositoryStoryResponseRootObject {
   
-  @scala.inline
-  def apply(status: String, story: LocationRepositoryStoryResponseStory): LocationRepositoryStoryResponseRootObject = {
+  inline def apply(status: String, story: LocationRepositoryStoryResponseStory): LocationRepositoryStoryResponseRootObject = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRepositoryStoryResponseRootObject]
   }
   
-  @scala.inline
-  implicit class LocationRepositoryStoryResponseRootObjectMutableBuilder[Self <: LocationRepositoryStoryResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRepositoryStoryResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory(value: LocationRepositoryStoryResponseStory): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+    inline def setStory(value: LocationRepositoryStoryResponseStory): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
   }
 }

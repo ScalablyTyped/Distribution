@@ -12,25 +12,19 @@ trait GetEndpointsResult extends StObject {
 }
 object GetEndpointsResult {
   
-  @scala.inline
-  def apply(addresses: js.Array[Endpoint], endpoints: js.Array[Endpoint]): GetEndpointsResult = {
+  inline def apply(addresses: js.Array[Endpoint], endpoints: js.Array[Endpoint]): GetEndpointsResult = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEndpointsResult]
   }
   
-  @scala.inline
-  implicit class GetEndpointsResultMutableBuilder[Self <: GetEndpointsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetEndpointsResult](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[Endpoint]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[Endpoint]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesVarargs(value: Endpoint*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Endpoint*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
   }
 }

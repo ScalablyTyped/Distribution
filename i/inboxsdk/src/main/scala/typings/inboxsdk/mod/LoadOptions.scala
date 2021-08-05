@@ -22,31 +22,23 @@ trait LoadOptions extends StObject {
 }
 object LoadOptions {
   
-  @scala.inline
-  def apply(): LoadOptions = {
+  inline def apply(): LoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadOptions]
   }
   
-  @scala.inline
-  implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadOptions](x: Self) {
     
-    @scala.inline
-    def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
+    inline def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
+    inline def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
-    @scala.inline
-    def setSuppressAddonTitle(value: String): Self = StObject.set(x, "suppressAddonTitle", value.asInstanceOf[js.Any])
+    inline def setSuppressAddonTitle(value: String): Self = StObject.set(x, "suppressAddonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressAddonTitleUndefined: Self = StObject.set(x, "suppressAddonTitle", js.undefined)
+    inline def setSuppressAddonTitleUndefined: Self = StObject.set(x, "suppressAddonTitle", js.undefined)
   }
 }

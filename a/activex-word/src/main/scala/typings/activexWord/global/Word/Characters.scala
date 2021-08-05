@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Characters")
 @js.native
-class Characters protected ()
+/* private */ class Characters ()
   extends StObject
      with typings.activexWord.Word.Characters {
   
@@ -31,7 +31,7 @@ class Characters protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Characters_typekey")
   var WordDotCharacters_typekey: typings.activexWord.Word.Characters = js.native
 }

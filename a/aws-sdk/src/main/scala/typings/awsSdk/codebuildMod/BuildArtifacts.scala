@@ -38,49 +38,35 @@ trait BuildArtifacts extends StObject {
 }
 object BuildArtifacts {
   
-  @scala.inline
-  def apply(): BuildArtifacts = {
+  inline def apply(): BuildArtifacts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildArtifacts]
   }
   
-  @scala.inline
-  implicit class BuildArtifactsMutableBuilder[Self <: BuildArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: BuildArtifacts](x: Self) {
     
-    @scala.inline
-    def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
+    inline def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
+    inline def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
     
-    @scala.inline
-    def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
+    inline def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
+    inline def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMd5sum(value: String): Self = StObject.set(x, "md5sum", value.asInstanceOf[js.Any])
+    inline def setMd5sum(value: String): Self = StObject.set(x, "md5sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5sumUndefined: Self = StObject.set(x, "md5sum", js.undefined)
+    inline def setMd5sumUndefined: Self = StObject.set(x, "md5sum", js.undefined)
     
-    @scala.inline
-    def setOverrideArtifactName(value: WrapperBoolean): Self = StObject.set(x, "overrideArtifactName", value.asInstanceOf[js.Any])
+    inline def setOverrideArtifactName(value: WrapperBoolean): Self = StObject.set(x, "overrideArtifactName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideArtifactNameUndefined: Self = StObject.set(x, "overrideArtifactName", js.undefined)
+    inline def setOverrideArtifactNameUndefined: Self = StObject.set(x, "overrideArtifactName", js.undefined)
     
-    @scala.inline
-    def setSha256sum(value: String): Self = StObject.set(x, "sha256sum", value.asInstanceOf[js.Any])
+    inline def setSha256sum(value: String): Self = StObject.set(x, "sha256sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256sumUndefined: Self = StObject.set(x, "sha256sum", js.undefined)
+    inline def setSha256sumUndefined: Self = StObject.set(x, "sha256sum", js.undefined)
   }
 }

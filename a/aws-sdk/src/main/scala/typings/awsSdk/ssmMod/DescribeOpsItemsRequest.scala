@@ -23,34 +23,25 @@ trait DescribeOpsItemsRequest extends StObject {
 }
 object DescribeOpsItemsRequest {
   
-  @scala.inline
-  def apply(): DescribeOpsItemsRequest = {
+  inline def apply(): DescribeOpsItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOpsItemsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeOpsItemsRequestMutableBuilder[Self <: DescribeOpsItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOpsItemsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: OpsItemMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: OpsItemMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOpsItemFilters(value: OpsItemFilters): Self = StObject.set(x, "OpsItemFilters", value.asInstanceOf[js.Any])
+    inline def setOpsItemFilters(value: OpsItemFilters): Self = StObject.set(x, "OpsItemFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsItemFiltersUndefined: Self = StObject.set(x, "OpsItemFilters", js.undefined)
+    inline def setOpsItemFiltersUndefined: Self = StObject.set(x, "OpsItemFilters", js.undefined)
     
-    @scala.inline
-    def setOpsItemFiltersVarargs(value: OpsItemFilter*): Self = StObject.set(x, "OpsItemFilters", js.Array(value :_*))
+    inline def setOpsItemFiltersVarargs(value: OpsItemFilter*): Self = StObject.set(x, "OpsItemFilters", js.Array(value :_*))
   }
 }

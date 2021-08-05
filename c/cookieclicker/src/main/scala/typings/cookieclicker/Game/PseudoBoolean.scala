@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PseudoBoolean extends StObject
 object PseudoBoolean {
   
-  @scala.inline
-  def `0`: typings.cookieclicker.cookieclickerNumbers.`0` = 0.asInstanceOf[typings.cookieclicker.cookieclickerNumbers.`0`]
+  inline def `0`: typings.cookieclicker.cookieclickerNumbers.`0` = 0.asInstanceOf[typings.cookieclicker.cookieclickerNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.cookieclicker.cookieclickerNumbers.`1` = 1.asInstanceOf[typings.cookieclicker.cookieclickerNumbers.`1`]
+  inline def `1`: typings.cookieclicker.cookieclickerNumbers.`1` = 1.asInstanceOf[typings.cookieclicker.cookieclickerNumbers.`1`]
 }

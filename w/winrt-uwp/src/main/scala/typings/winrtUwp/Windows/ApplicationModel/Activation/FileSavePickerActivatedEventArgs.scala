@@ -28,8 +28,7 @@ trait FileSavePickerActivatedEventArgs extends StObject {
 }
 object FileSavePickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callerPackageFamilyName: String,
     enterpriseId: String,
     fileSavePickerUI: FileSavePickerUI,
@@ -41,25 +40,18 @@ object FileSavePickerActivatedEventArgs {
     __obj.asInstanceOf[FileSavePickerActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class FileSavePickerActivatedEventArgsMutableBuilder[Self <: FileSavePickerActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FileSavePickerActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
+    inline def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSavePickerUI(value: FileSavePickerUI): Self = StObject.set(x, "fileSavePickerUI", value.asInstanceOf[js.Any])
+    inline def setFileSavePickerUI(value: FileSavePickerUI): Self = StObject.set(x, "fileSavePickerUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

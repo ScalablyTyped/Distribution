@@ -92,7 +92,7 @@ trait Pane extends StObject {
   
   val View: typings.activexWord.Word.View = js.native
   
-  @JSName("Word.Pane_typekey")
+  /* private */ @JSName("Word.Pane_typekey")
   var WordDotPane_typekey: Pane = js.native
   
   val Zooms: typings.activexWord.Word.Zooms = js.native

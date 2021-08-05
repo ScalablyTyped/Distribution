@@ -43,9 +43,7 @@ object leafletMod {
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   }
   
-  @scala.inline
-  def geodesicPolygon(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolygon_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geodesicPolygon")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeodesicPolygon_]
+  inline def geodesicPolygon(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolygon_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geodesicPolygon")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeodesicPolygon_]
   
-  @scala.inline
-  def geodesicPolyline(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolyline_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geodesicPolyline")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeodesicPolyline_]
+  inline def geodesicPolyline(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolyline_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geodesicPolyline")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeodesicPolyline_]
 }

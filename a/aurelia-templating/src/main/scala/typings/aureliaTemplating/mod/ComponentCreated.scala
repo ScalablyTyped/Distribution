@@ -17,16 +17,13 @@ trait ComponentCreated extends StObject {
 }
 object ComponentCreated {
   
-  @scala.inline
-  def apply(created: (View_, View_) => Unit): ComponentCreated = {
+  inline def apply(created: (View_, View_) => Unit): ComponentCreated = {
     val __obj = js.Dynamic.literal(created = js.Any.fromFunction2(created))
     __obj.asInstanceOf[ComponentCreated]
   }
   
-  @scala.inline
-  implicit class ComponentCreatedMutableBuilder[Self <: ComponentCreated] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentCreated](x: Self) {
     
-    @scala.inline
-    def setCreated(value: (View_, View_) => Unit): Self = StObject.set(x, "created", js.Any.fromFunction2(value))
+    inline def setCreated(value: (View_, View_) => Unit): Self = StObject.set(x, "created", js.Any.fromFunction2(value))
   }
 }

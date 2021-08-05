@@ -38,43 +38,31 @@ trait SchemaOverlayPosition extends StObject {
 }
 object SchemaOverlayPosition {
   
-  @scala.inline
-  def apply(): SchemaOverlayPosition = {
+  inline def apply(): SchemaOverlayPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOverlayPosition]
   }
   
-  @scala.inline
-  implicit class SchemaOverlayPositionMutableBuilder[Self <: SchemaOverlayPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOverlayPosition](x: Self) {
     
-    @scala.inline
-    def setAnchorCell(value: SchemaGridCoordinate): Self = StObject.set(x, "anchorCell", value.asInstanceOf[js.Any])
+    inline def setAnchorCell(value: SchemaGridCoordinate): Self = StObject.set(x, "anchorCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorCellUndefined: Self = StObject.set(x, "anchorCell", js.undefined)
+    inline def setAnchorCellUndefined: Self = StObject.set(x, "anchorCell", js.undefined)
     
-    @scala.inline
-    def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
+    inline def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
+    inline def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
     
-    @scala.inline
-    def setOffsetXPixels(value: Double): Self = StObject.set(x, "offsetXPixels", value.asInstanceOf[js.Any])
+    inline def setOffsetXPixels(value: Double): Self = StObject.set(x, "offsetXPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXPixelsUndefined: Self = StObject.set(x, "offsetXPixels", js.undefined)
+    inline def setOffsetXPixelsUndefined: Self = StObject.set(x, "offsetXPixels", js.undefined)
     
-    @scala.inline
-    def setOffsetYPixels(value: Double): Self = StObject.set(x, "offsetYPixels", value.asInstanceOf[js.Any])
+    inline def setOffsetYPixels(value: Double): Self = StObject.set(x, "offsetYPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYPixelsUndefined: Self = StObject.set(x, "offsetYPixels", js.undefined)
+    inline def setOffsetYPixelsUndefined: Self = StObject.set(x, "offsetYPixels", js.undefined)
     
-    @scala.inline
-    def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
+    inline def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
+    inline def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
   }
 }

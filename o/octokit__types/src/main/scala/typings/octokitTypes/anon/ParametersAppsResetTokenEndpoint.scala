@@ -18,8 +18,7 @@ trait ParametersAppsResetTokenEndpoint extends StObject {
 }
 object ParametersAppsResetTokenEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsResetTokenEndpoint,
     request: AppsResetTokenRequestOptions,
     response: OctokitResponse[AppsResetTokenResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsResetTokenEndpoint {
     __obj.asInstanceOf[ParametersAppsResetTokenEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsResetTokenEndpointMutableBuilder[Self <: ParametersAppsResetTokenEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsResetTokenEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsResetTokenEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsResetTokenEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsResetTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsResetTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsResetTokenResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsResetTokenResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

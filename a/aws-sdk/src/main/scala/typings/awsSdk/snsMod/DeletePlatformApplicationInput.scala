@@ -13,16 +13,13 @@ trait DeletePlatformApplicationInput extends StObject {
 }
 object DeletePlatformApplicationInput {
   
-  @scala.inline
-  def apply(PlatformApplicationArn: String): DeletePlatformApplicationInput = {
+  inline def apply(PlatformApplicationArn: String): DeletePlatformApplicationInput = {
     val __obj = js.Dynamic.literal(PlatformApplicationArn = PlatformApplicationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePlatformApplicationInput]
   }
   
-  @scala.inline
-  implicit class DeletePlatformApplicationInputMutableBuilder[Self <: DeletePlatformApplicationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePlatformApplicationInput](x: Self) {
     
-    @scala.inline
-    def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
+    inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
   }
 }

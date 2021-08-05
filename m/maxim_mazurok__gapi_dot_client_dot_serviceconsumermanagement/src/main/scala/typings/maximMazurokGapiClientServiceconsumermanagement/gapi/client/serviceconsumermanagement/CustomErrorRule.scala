@@ -14,25 +14,19 @@ trait CustomErrorRule extends StObject {
 }
 object CustomErrorRule {
   
-  @scala.inline
-  def apply(): CustomErrorRule = {
+  inline def apply(): CustomErrorRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomErrorRule]
   }
   
-  @scala.inline
-  implicit class CustomErrorRuleMutableBuilder[Self <: CustomErrorRule] (val x: Self) extends AnyVal {
+  extension [Self <: CustomErrorRule](x: Self) {
     
-    @scala.inline
-    def setIsErrorType(value: Boolean): Self = StObject.set(x, "isErrorType", value.asInstanceOf[js.Any])
+    inline def setIsErrorType(value: Boolean): Self = StObject.set(x, "isErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsErrorTypeUndefined: Self = StObject.set(x, "isErrorType", js.undefined)
+    inline def setIsErrorTypeUndefined: Self = StObject.set(x, "isErrorType", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

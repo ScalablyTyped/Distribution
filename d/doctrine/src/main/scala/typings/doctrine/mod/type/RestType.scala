@@ -15,23 +15,18 @@ trait RestType
 }
 object RestType {
   
-  @scala.inline
-  def apply(): RestType = {
+  inline def apply(): RestType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("RestType")
     __obj.asInstanceOf[RestType]
   }
   
-  @scala.inline
-  implicit class RestTypeMutableBuilder[Self <: RestType] (val x: Self) extends AnyVal {
+  extension [Self <: RestType](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.RestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.RestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

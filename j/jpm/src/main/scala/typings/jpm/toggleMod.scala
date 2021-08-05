@@ -15,6 +15,5 @@ object toggleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ToggleButton(options: BadgeColor): typings.jpm.FFAddonSDK.ToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleButton")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.ToggleButton]
+  inline def ToggleButton(options: BadgeColor): typings.jpm.FFAddonSDK.ToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleButton")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.ToggleButton]
 }

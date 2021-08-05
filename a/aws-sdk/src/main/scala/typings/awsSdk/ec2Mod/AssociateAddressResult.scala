@@ -13,19 +13,15 @@ trait AssociateAddressResult extends StObject {
 }
 object AssociateAddressResult {
   
-  @scala.inline
-  def apply(): AssociateAddressResult = {
+  inline def apply(): AssociateAddressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateAddressResult]
   }
   
-  @scala.inline
-  implicit class AssociateAddressResultMutableBuilder[Self <: AssociateAddressResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateAddressResult](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
   }
 }

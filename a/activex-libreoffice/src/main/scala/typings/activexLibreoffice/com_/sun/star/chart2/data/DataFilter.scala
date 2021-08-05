@@ -17,8 +17,7 @@ trait DataFilter
      with XDataSource
 object DataFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataSequences: SafeArray[XLabeledDataSequence],
     acquire: () => Unit,
     getDataSequences: () => SafeArray[XLabeledDataSequence],

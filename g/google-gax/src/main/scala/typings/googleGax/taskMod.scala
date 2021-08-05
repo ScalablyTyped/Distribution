@@ -87,10 +87,8 @@ object taskMod {
     def run(): js.Array[String] = js.native
   }
   
-  @scala.inline
-  def deepCopyForResponse(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def deepCopyForResponse(obj: js.Any, subresponseInfo: SubResponseInfo): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any], subresponseInfo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deepCopyForResponse(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def deepCopyForResponse(obj: js.Any, subresponseInfo: SubResponseInfo): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any], subresponseInfo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait SubResponseInfo extends StObject {
     
@@ -102,29 +100,22 @@ object taskMod {
   }
   object SubResponseInfo {
     
-    @scala.inline
-    def apply(field: String): SubResponseInfo = {
+    inline def apply(field: String): SubResponseInfo = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubResponseInfo]
     }
     
-    @scala.inline
-    implicit class SubResponseInfoMutableBuilder[Self <: SubResponseInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SubResponseInfo](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -146,32 +137,24 @@ object taskMod {
   }
   object TaskData {
     
-    @scala.inline
-    def apply(bytes: Double, callback: TaskCallback, elements: js.Array[js.Object]): TaskData = {
+    inline def apply(bytes: Double, callback: TaskCallback, elements: js.Array[js.Object]): TaskData = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], callback = callback.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskData]
     }
     
-    @scala.inline
-    implicit class TaskDataMutableBuilder[Self <: TaskData] (val x: Self) extends AnyVal {
+    extension [Self <: TaskData](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallback(value: TaskCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: TaskCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+      inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
+      inline def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
       
-      @scala.inline
-      def setElements(value: js.Array[js.Object]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[js.Object]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: js.Object*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: js.Object*): Self = StObject.set(x, "elements", js.Array(value :_*))
     }
   }
 }

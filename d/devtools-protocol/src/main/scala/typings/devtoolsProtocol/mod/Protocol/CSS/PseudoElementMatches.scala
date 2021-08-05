@@ -19,22 +19,17 @@ trait PseudoElementMatches extends StObject {
 }
 object PseudoElementMatches {
   
-  @scala.inline
-  def apply(matches: js.Array[RuleMatch], pseudoType: PseudoType): PseudoElementMatches = {
+  inline def apply(matches: js.Array[RuleMatch], pseudoType: PseudoType): PseudoElementMatches = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], pseudoType = pseudoType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PseudoElementMatches]
   }
   
-  @scala.inline
-  implicit class PseudoElementMatchesMutableBuilder[Self <: PseudoElementMatches] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoElementMatches](x: Self) {
     
-    @scala.inline
-    def setMatches(value: js.Array[RuleMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[RuleMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: RuleMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: RuleMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
+    inline def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
   }
 }

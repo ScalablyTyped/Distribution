@@ -74,8 +74,7 @@ trait XCellRangesQuery
 }
 object XCellRangesQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryColumnDifferences: CellAddress => XSheetCellRanges,
     queryContentCells: Double => XSheetCellRanges,
@@ -91,28 +90,20 @@ object XCellRangesQuery {
     __obj.asInstanceOf[XCellRangesQuery]
   }
   
-  @scala.inline
-  implicit class XCellRangesQueryMutableBuilder[Self <: XCellRangesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangesQuery](x: Self) {
     
-    @scala.inline
-    def setQueryColumnDifferences(value: CellAddress => XSheetCellRanges): Self = StObject.set(x, "queryColumnDifferences", js.Any.fromFunction1(value))
+    inline def setQueryColumnDifferences(value: CellAddress => XSheetCellRanges): Self = StObject.set(x, "queryColumnDifferences", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryContentCells(value: Double => XSheetCellRanges): Self = StObject.set(x, "queryContentCells", js.Any.fromFunction1(value))
+    inline def setQueryContentCells(value: Double => XSheetCellRanges): Self = StObject.set(x, "queryContentCells", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryEmptyCells(value: () => XSheetCellRanges): Self = StObject.set(x, "queryEmptyCells", js.Any.fromFunction0(value))
+    inline def setQueryEmptyCells(value: () => XSheetCellRanges): Self = StObject.set(x, "queryEmptyCells", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryFormulaCells(value: Double => XSheetCellRanges): Self = StObject.set(x, "queryFormulaCells", js.Any.fromFunction1(value))
+    inline def setQueryFormulaCells(value: Double => XSheetCellRanges): Self = StObject.set(x, "queryFormulaCells", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryIntersection(value: CellRangeAddress => XSheetCellRanges): Self = StObject.set(x, "queryIntersection", js.Any.fromFunction1(value))
+    inline def setQueryIntersection(value: CellRangeAddress => XSheetCellRanges): Self = StObject.set(x, "queryIntersection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryRowDifferences(value: CellAddress => XSheetCellRanges): Self = StObject.set(x, "queryRowDifferences", js.Any.fromFunction1(value))
+    inline def setQueryRowDifferences(value: CellAddress => XSheetCellRanges): Self = StObject.set(x, "queryRowDifferences", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryVisibleCells(value: () => XSheetCellRanges): Self = StObject.set(x, "queryVisibleCells", js.Any.fromFunction0(value))
+    inline def setQueryVisibleCells(value: () => XSheetCellRanges): Self = StObject.set(x, "queryVisibleCells", js.Any.fromFunction0(value))
   }
 }

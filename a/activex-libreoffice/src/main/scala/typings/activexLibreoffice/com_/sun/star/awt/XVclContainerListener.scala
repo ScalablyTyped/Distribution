@@ -25,8 +25,7 @@ trait XVclContainerListener
 }
 object XVclContainerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -38,13 +37,10 @@ object XVclContainerListener {
     __obj.asInstanceOf[XVclContainerListener]
   }
   
-  @scala.inline
-  implicit class XVclContainerListenerMutableBuilder[Self <: XVclContainerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XVclContainerListener](x: Self) {
     
-    @scala.inline
-    def setWindowAdded(value: VclContainerEvent => Unit): Self = StObject.set(x, "windowAdded", js.Any.fromFunction1(value))
+    inline def setWindowAdded(value: VclContainerEvent => Unit): Self = StObject.set(x, "windowAdded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowRemoved(value: VclContainerEvent => Unit): Self = StObject.set(x, "windowRemoved", js.Any.fromFunction1(value))
+    inline def setWindowRemoved(value: VclContainerEvent => Unit): Self = StObject.set(x, "windowRemoved", js.Any.fromFunction1(value))
   }
 }

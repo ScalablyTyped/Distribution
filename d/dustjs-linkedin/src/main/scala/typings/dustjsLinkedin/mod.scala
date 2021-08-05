@@ -10,59 +10,41 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile(source: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def compile(source: String, name: String, strip: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any], strip.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def compile(source: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def compile(source: String, name: String, strip: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any], strip.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def compileFn(source: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFn")(source.asInstanceOf[js.Any]).asInstanceOf[Template]
-  @scala.inline
-  def compileFn(source: String, name: String): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFn")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Template]
+  inline def compileFn(source: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFn")(source.asInstanceOf[js.Any]).asInstanceOf[Template]
+  inline def compileFn(source: String, name: String): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFn")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Template]
   
-  @scala.inline
-  def escapeHtml(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtml")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeHtml(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtml")(html.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def escapeJs(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeJs")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeJs(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeJs")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def loadSource(compiled: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSource")(compiled.asInstanceOf[js.Any]).asInstanceOf[Template]
+  inline def loadSource(compiled: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSource")(compiled.asInstanceOf[js.Any]).asInstanceOf[Template]
   
-  @scala.inline
-  def makeBase(global: js.Any): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
-  @scala.inline
-  def makeBase(global: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def makeBase(global: js.Any): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def makeBase(global: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @scala.inline
-  def register(name: String, tmpl: Template): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], tmpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(name: String, tmpl: Template): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], tmpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def render(name: String, context: js.Any, callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def render(name: String, context: Context, callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(name: String, context: js.Any, callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(name: String, context: Context, callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def renderSource(source: String, context: js.Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
-  @scala.inline
-  def renderSource(
+  inline def renderSource(source: String, context: js.Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
+  inline def renderSource(
     source: String,
     context: js.Any,
     callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def renderSource(source: String, context: Context): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
-  @scala.inline
-  def renderSource(
+  inline def renderSource(source: String, context: Context): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
+  inline def renderSource(
     source: String,
     context: Context,
     callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def stream(name: String, context: js.Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
-  @scala.inline
-  def stream(name: String, context: Context): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
+  inline def stream(name: String, context: js.Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
+  inline def stream(name: String, context: Context): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
   
   trait Chunk extends StObject {
     
@@ -103,8 +85,7 @@ object mod {
   }
   object Chunk {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       end: String => Chunk,
       map: js.Function1[Chunk, js.Any] => Chunk,
       render: (js.Any, Context) => Chunk,
@@ -117,29 +98,21 @@ object mod {
       __obj.asInstanceOf[Chunk]
     }
     
-    @scala.inline
-    implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+    extension [Self <: Chunk](x: Self) {
       
-      @scala.inline
-      def setEnd(value: String => Chunk): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEnd(value: String => Chunk): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: js.Function1[Chunk, js.Any] => Chunk): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[Chunk, js.Any] => Chunk): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRender(value: (js.Any, Context) => Chunk): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (js.Any, Context) => Chunk): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetError(value: js.Any => Chunk): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: js.Any => Chunk): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTap(value: js.Function1[/* value */ js.Any, js.Any] => Chunk): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
+      inline def setTap(value: js.Function1[/* value */ js.Any, js.Any] => Chunk): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUntap(value: () => Chunk): Self = StObject.set(x, "untap", js.Any.fromFunction0(value))
+      inline def setUntap(value: () => Chunk): Self = StObject.set(x, "untap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWrite(value: String => Chunk): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Chunk): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -186,8 +159,7 @@ object mod {
   }
   object Stream_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emit: (String, js.Any) => Unit,
       flush: () => Unit,
       on: (String, js.Function1[/* data */ js.UndefOr[js.Any], js.Any]) => Stream_,
@@ -197,20 +169,15 @@ object mod {
       __obj.asInstanceOf[Stream_]
     }
     
-    @scala.inline
-    implicit class Stream_MutableBuilder[Self <: Stream_] (val x: Self) extends AnyVal {
+    extension [Self <: Stream_](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function1[/* data */ js.UndefOr[js.Any], js.Any]) => Stream_): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* data */ js.UndefOr[js.Any], js.Any]) => Stream_): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPipe(value: Stream_ => Stream_): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
+      inline def setPipe(value: Stream_ => Stream_): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
     }
   }
   

@@ -45,8 +45,7 @@ trait Admitstate extends StObject {
 }
 object Admitstate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     admit_state: Y | N | String,
     callbackData: js.Any,
     invoke_state: String,
@@ -58,25 +57,18 @@ object Admitstate {
     __obj.asInstanceOf[Admitstate]
   }
   
-  @scala.inline
-  implicit class AdmitstateMutableBuilder[Self <: Admitstate] (val x: Self) extends AnyVal {
+  extension [Self <: Admitstate](x: Self) {
     
-    @scala.inline
-    def setAdmit_state(value: Y | N | String): Self = StObject.set(x, "admit_state", value.asInstanceOf[js.Any])
+    inline def setAdmit_state(value: Y | N | String): Self = StObject.set(x, "admit_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
+    inline def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoke_state(value: String): Self = StObject.set(x, "invoke_state", value.asInstanceOf[js.Any])
+    inline def setInvoke_state(value: String): Self = StObject.set(x, "invoke_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder_no(value: String): Self = StObject.set(x, "order_no", value.asInstanceOf[js.Any])
+    inline def setOrder_no(value: String): Self = StObject.set(x, "order_no", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOut_order_no(value: String): Self = StObject.set(x, "out_order_no", value.asInstanceOf[js.Any])
+    inline def setOut_order_no(value: String): Self = StObject.set(x, "out_order_no", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoginBehaviorAndroid extends StObject
 object LoginBehaviorAndroid {
   
-  @scala.inline
-  def native_only: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_only = "native_only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_only]
+  inline def native_only: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_only = "native_only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_only]
   
-  @scala.inline
-  def native_with_fallback: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback = "native_with_fallback".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback]
+  inline def native_with_fallback: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback = "native_with_fallback".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback]
   
-  @scala.inline
-  def web_only: typings.reactNativeFbsdk.reactNativeFbsdkStrings.web_only = "web_only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.web_only]
+  inline def web_only: typings.reactNativeFbsdk.reactNativeFbsdkStrings.web_only = "web_only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.web_only]
 }

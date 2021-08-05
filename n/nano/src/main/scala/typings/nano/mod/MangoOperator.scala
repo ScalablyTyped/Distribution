@@ -29,63 +29,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MangoOperator extends StObject
 object MangoOperator {
   
-  @scala.inline
-  def $all: typings.nano.nanoStrings.$all = "$all".asInstanceOf[typings.nano.nanoStrings.$all]
+  inline def $all: typings.nano.nanoStrings.$all = "$all".asInstanceOf[typings.nano.nanoStrings.$all]
   
-  @scala.inline
-  def $allMatch: typings.nano.nanoStrings.$allMatch = "$allMatch".asInstanceOf[typings.nano.nanoStrings.$allMatch]
+  inline def $allMatch: typings.nano.nanoStrings.$allMatch = "$allMatch".asInstanceOf[typings.nano.nanoStrings.$allMatch]
   
-  @scala.inline
-  def $and: typings.nano.nanoStrings.$and = "$and".asInstanceOf[typings.nano.nanoStrings.$and]
+  inline def $and: typings.nano.nanoStrings.$and = "$and".asInstanceOf[typings.nano.nanoStrings.$and]
   
-  @scala.inline
-  def $elemMatch: typings.nano.nanoStrings.$elemMatch = "$elemMatch".asInstanceOf[typings.nano.nanoStrings.$elemMatch]
+  inline def $elemMatch: typings.nano.nanoStrings.$elemMatch = "$elemMatch".asInstanceOf[typings.nano.nanoStrings.$elemMatch]
   
-  @scala.inline
-  def $eq: typings.nano.nanoStrings.$eq = "$eq".asInstanceOf[typings.nano.nanoStrings.$eq]
+  inline def $eq: typings.nano.nanoStrings.$eq = "$eq".asInstanceOf[typings.nano.nanoStrings.$eq]
   
-  @scala.inline
-  def $exists: typings.nano.nanoStrings.$exists = "$exists".asInstanceOf[typings.nano.nanoStrings.$exists]
+  inline def $exists: typings.nano.nanoStrings.$exists = "$exists".asInstanceOf[typings.nano.nanoStrings.$exists]
   
-  @scala.inline
-  def $gt: typings.nano.nanoStrings.$gt = "$gt".asInstanceOf[typings.nano.nanoStrings.$gt]
+  inline def $gt: typings.nano.nanoStrings.$gt = "$gt".asInstanceOf[typings.nano.nanoStrings.$gt]
   
-  @scala.inline
-  def $gte: typings.nano.nanoStrings.$gte = "$gte".asInstanceOf[typings.nano.nanoStrings.$gte]
+  inline def $gte: typings.nano.nanoStrings.$gte = "$gte".asInstanceOf[typings.nano.nanoStrings.$gte]
   
-  @scala.inline
-  def $in: typings.nano.nanoStrings.$in = "$in".asInstanceOf[typings.nano.nanoStrings.$in]
+  inline def $in: typings.nano.nanoStrings.$in = "$in".asInstanceOf[typings.nano.nanoStrings.$in]
   
-  @scala.inline
-  def $lt: typings.nano.nanoStrings.$lt = "$lt".asInstanceOf[typings.nano.nanoStrings.$lt]
+  inline def $lt: typings.nano.nanoStrings.$lt = "$lt".asInstanceOf[typings.nano.nanoStrings.$lt]
   
-  @scala.inline
-  def $lte: typings.nano.nanoStrings.$lte = "$lte".asInstanceOf[typings.nano.nanoStrings.$lte]
+  inline def $lte: typings.nano.nanoStrings.$lte = "$lte".asInstanceOf[typings.nano.nanoStrings.$lte]
   
-  @scala.inline
-  def $mod: typings.nano.nanoStrings.$mod = "$mod".asInstanceOf[typings.nano.nanoStrings.$mod]
+  inline def $mod: typings.nano.nanoStrings.$mod = "$mod".asInstanceOf[typings.nano.nanoStrings.$mod]
   
-  @scala.inline
-  def $ne: typings.nano.nanoStrings.$ne = "$ne".asInstanceOf[typings.nano.nanoStrings.$ne]
+  inline def $ne: typings.nano.nanoStrings.$ne = "$ne".asInstanceOf[typings.nano.nanoStrings.$ne]
   
-  @scala.inline
-  def $nin: typings.nano.nanoStrings.$nin = "$nin".asInstanceOf[typings.nano.nanoStrings.$nin]
+  inline def $nin: typings.nano.nanoStrings.$nin = "$nin".asInstanceOf[typings.nano.nanoStrings.$nin]
   
-  @scala.inline
-  def $nor: typings.nano.nanoStrings.$nor = "$nor".asInstanceOf[typings.nano.nanoStrings.$nor]
+  inline def $nor: typings.nano.nanoStrings.$nor = "$nor".asInstanceOf[typings.nano.nanoStrings.$nor]
   
-  @scala.inline
-  def $not: typings.nano.nanoStrings.$not = "$not".asInstanceOf[typings.nano.nanoStrings.$not]
+  inline def $not: typings.nano.nanoStrings.$not = "$not".asInstanceOf[typings.nano.nanoStrings.$not]
   
-  @scala.inline
-  def $or: typings.nano.nanoStrings.$or = "$or".asInstanceOf[typings.nano.nanoStrings.$or]
+  inline def $or: typings.nano.nanoStrings.$or = "$or".asInstanceOf[typings.nano.nanoStrings.$or]
   
-  @scala.inline
-  def $regex: typings.nano.nanoStrings.$regex = "$regex".asInstanceOf[typings.nano.nanoStrings.$regex]
+  inline def $regex: typings.nano.nanoStrings.$regex = "$regex".asInstanceOf[typings.nano.nanoStrings.$regex]
   
-  @scala.inline
-  def $size: typings.nano.nanoStrings.$size = "$size".asInstanceOf[typings.nano.nanoStrings.$size]
+  inline def $size: typings.nano.nanoStrings.$size = "$size".asInstanceOf[typings.nano.nanoStrings.$size]
   
-  @scala.inline
-  def $type: typings.nano.nanoStrings.$type = "$type".asInstanceOf[typings.nano.nanoStrings.$type]
+  inline def $type: typings.nano.nanoStrings.$type = "$type".asInstanceOf[typings.nano.nanoStrings.$type]
 }

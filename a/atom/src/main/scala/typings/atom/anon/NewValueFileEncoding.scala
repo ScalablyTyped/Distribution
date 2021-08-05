@@ -13,22 +13,17 @@ trait NewValueFileEncoding extends StObject {
 }
 object NewValueFileEncoding {
   
-  @scala.inline
-  def apply(newValue: FileEncoding): NewValueFileEncoding = {
+  inline def apply(newValue: FileEncoding): NewValueFileEncoding = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewValueFileEncoding]
   }
   
-  @scala.inline
-  implicit class NewValueFileEncodingMutableBuilder[Self <: NewValueFileEncoding] (val x: Self) extends AnyVal {
+  extension [Self <: NewValueFileEncoding](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: FileEncoding): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: FileEncoding): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: FileEncoding): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: FileEncoding): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

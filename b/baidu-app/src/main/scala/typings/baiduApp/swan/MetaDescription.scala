@@ -12,19 +12,15 @@ trait MetaDescription
 }
 object MetaDescription {
   
-  @scala.inline
-  def apply(): MetaDescription = {
+  inline def apply(): MetaDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetaDescription]
   }
   
-  @scala.inline
-  implicit class MetaDescriptionMutableBuilder[Self <: MetaDescription] (val x: Self) extends AnyVal {
+  extension [Self <: MetaDescription](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

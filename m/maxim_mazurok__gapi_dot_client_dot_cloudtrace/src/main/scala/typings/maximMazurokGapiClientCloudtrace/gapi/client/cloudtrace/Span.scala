@@ -70,97 +70,67 @@ trait Span extends StObject {
 }
 object Span {
   
-  @scala.inline
-  def apply(): Span = {
+  inline def apply(): Span = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Span]
   }
   
-  @scala.inline
-  implicit class SpanMutableBuilder[Self <: Span] (val x: Self) extends AnyVal {
+  extension [Self <: Span](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setChildSpanCount(value: Double): Self = StObject.set(x, "childSpanCount", value.asInstanceOf[js.Any])
+    inline def setChildSpanCount(value: Double): Self = StObject.set(x, "childSpanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildSpanCountUndefined: Self = StObject.set(x, "childSpanCount", js.undefined)
+    inline def setChildSpanCountUndefined: Self = StObject.set(x, "childSpanCount", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: TruncatableString): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: TruncatableString): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
+    inline def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
+    inline def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
     
-    @scala.inline
-    def setSameProcessAsParentSpan(value: Boolean): Self = StObject.set(x, "sameProcessAsParentSpan", value.asInstanceOf[js.Any])
+    inline def setSameProcessAsParentSpan(value: Boolean): Self = StObject.set(x, "sameProcessAsParentSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSameProcessAsParentSpanUndefined: Self = StObject.set(x, "sameProcessAsParentSpan", js.undefined)
+    inline def setSameProcessAsParentSpanUndefined: Self = StObject.set(x, "sameProcessAsParentSpan", js.undefined)
     
-    @scala.inline
-    def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+    inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+    inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
-    @scala.inline
-    def setSpanKind(value: String): Self = StObject.set(x, "spanKind", value.asInstanceOf[js.Any])
+    inline def setSpanKind(value: String): Self = StObject.set(x, "spanKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanKindUndefined: Self = StObject.set(x, "spanKind", js.undefined)
+    inline def setSpanKindUndefined: Self = StObject.set(x, "spanKind", js.undefined)
     
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+    inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTimeEvents(value: TimeEvents): Self = StObject.set(x, "timeEvents", value.asInstanceOf[js.Any])
+    inline def setTimeEvents(value: TimeEvents): Self = StObject.set(x, "timeEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeEventsUndefined: Self = StObject.set(x, "timeEvents", js.undefined)
+    inline def setTimeEventsUndefined: Self = StObject.set(x, "timeEvents", js.undefined)
   }
 }

@@ -27,7 +27,7 @@ object publisherMod {
     
     /* protected */ def buildMessage(ip: String): PublisherMessage = js.native
     
-    var client: js.UndefOr[Socket] = js.native
+    /* protected */ var client: js.UndefOr[Socket] = js.native
     
     var commPort: js.UndefOr[Double] = js.native
     
@@ -37,7 +37,7 @@ object publisherMod {
     
     var interfaces: js.UndefOr[js.Array[Interface]] = js.native
     
-    var interval: Double = js.native
+    /* protected */ var interval: Double = js.native
     
     var name: String = js.native
     
@@ -59,17 +59,14 @@ object publisherMod {
     
     def stop(): Unit = js.native
     
-    var timer: js.UndefOr[Timer] = js.native
+    /* protected */ var timer: js.UndefOr[Timer] = js.native
   }
   
-  @scala.inline
-  def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def newSilentPublisher(namespace: String, name: String, port: Double): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("newSilentPublisher")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Publisher]
+  inline def newSilentPublisher(namespace: String, name: String, port: Double): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("newSilentPublisher")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Publisher]
   
-  @scala.inline
-  def prepareInterfaces(interfaces: StringDictionary[js.Array[NetworkInterfaceInfo]]): js.Array[Interface] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareInterfaces")(interfaces.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interface]]
+  inline def prepareInterfaces(interfaces: StringDictionary[js.Array[NetworkInterfaceInfo]]): js.Array[Interface] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareInterfaces")(interfaces.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interface]]
   
   trait IPublisherEventEmitter extends StObject {
     
@@ -78,17 +75,14 @@ object publisherMod {
   }
   object IPublisherEventEmitter {
     
-    @scala.inline
-    def apply(on: (error, js.Function1[/* err */ Error, Unit]) => IPublisherEventEmitter): IPublisherEventEmitter = {
+    inline def apply(on: (error, js.Function1[/* err */ Error, Unit]) => IPublisherEventEmitter): IPublisherEventEmitter = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[IPublisherEventEmitter]
     }
     
-    @scala.inline
-    implicit class IPublisherEventEmitterMutableBuilder[Self <: IPublisherEventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: IPublisherEventEmitter](x: Self) {
       
-      @scala.inline
-      def setOn(value: (error, js.Function1[/* err */ Error, Unit]) => IPublisherEventEmitter): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (error, js.Function1[/* err */ Error, Unit]) => IPublisherEventEmitter): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
   
@@ -100,20 +94,16 @@ object publisherMod {
   }
   object Interface {
     
-    @scala.inline
-    def apply(address: String, broadcast: String): Interface = {
+    inline def apply(address: String, broadcast: String): Interface = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], broadcast = broadcast.asInstanceOf[js.Any])
       __obj.asInstanceOf[Interface]
     }
     
-    @scala.inline
-    implicit class InterfaceMutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
+    extension [Self <: Interface](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcast(value: String): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
+      inline def setBroadcast(value: String): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,8 +129,7 @@ object publisherMod {
   }
   object PublisherMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       host: String,
       id: String,
       ip: String,
@@ -154,38 +143,27 @@ object publisherMod {
       __obj.asInstanceOf[PublisherMessage]
     }
     
-    @scala.inline
-    implicit class PublisherMessageMutableBuilder[Self <: PublisherMessage] (val x: Self) extends AnyVal {
+    extension [Self <: PublisherMessage](x: Self) {
       
-      @scala.inline
-      def setCommPort(value: Double): Self = StObject.set(x, "commPort", value.asInstanceOf[js.Any])
+      inline def setCommPort(value: Double): Self = StObject.set(x, "commPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommPortUndefined: Self = StObject.set(x, "commPort", js.undefined)
+      inline def setCommPortUndefined: Self = StObject.set(x, "commPort", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNspace(value: String): Self = StObject.set(x, "nspace", value.asInstanceOf[js.Any])
+      inline def setNspace(value: String): Self = StObject.set(x, "nspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
 }

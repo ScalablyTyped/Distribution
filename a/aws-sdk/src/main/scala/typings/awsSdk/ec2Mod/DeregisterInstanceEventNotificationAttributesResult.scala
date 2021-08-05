@@ -13,19 +13,15 @@ trait DeregisterInstanceEventNotificationAttributesResult extends StObject {
 }
 object DeregisterInstanceEventNotificationAttributesResult {
   
-  @scala.inline
-  def apply(): DeregisterInstanceEventNotificationAttributesResult = {
+  inline def apply(): DeregisterInstanceEventNotificationAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterInstanceEventNotificationAttributesResult]
   }
   
-  @scala.inline
-  implicit class DeregisterInstanceEventNotificationAttributesResultMutableBuilder[Self <: DeregisterInstanceEventNotificationAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterInstanceEventNotificationAttributesResult](x: Self) {
     
-    @scala.inline
-    def setInstanceTagAttribute(value: InstanceTagNotificationAttribute): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
+    inline def setInstanceTagAttribute(value: InstanceTagNotificationAttribute): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTagAttributeUndefined: Self = StObject.set(x, "InstanceTagAttribute", js.undefined)
+    inline def setInstanceTagAttributeUndefined: Self = StObject.set(x, "InstanceTagAttribute", js.undefined)
   }
 }

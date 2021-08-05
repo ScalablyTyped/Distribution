@@ -11,8 +11,6 @@ object operatorMoreThanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def MoreThan[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("MoreThan")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def MoreThan[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("MoreThan")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def MoreThan[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("MoreThan")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def MoreThan[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("MoreThan")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

@@ -13,19 +13,15 @@ trait DecoderResult extends StObject {
 }
 object DecoderResult {
   
-  @scala.inline
-  def apply(error: Error, value: js.Object): DecoderResult = {
+  inline def apply(error: Error, value: js.Object): DecoderResult = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecoderResult]
   }
   
-  @scala.inline
-  implicit class DecoderResultMutableBuilder[Self <: DecoderResult] (val x: Self) extends AnyVal {
+  extension [Self <: DecoderResult](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait ListSchemaVersionsInput extends StObject {
 }
 object ListSchemaVersionsInput {
   
-  @scala.inline
-  def apply(SchemaId: SchemaId): ListSchemaVersionsInput = {
+  inline def apply(SchemaId: SchemaId): ListSchemaVersionsInput = {
     val __obj = js.Dynamic.literal(SchemaId = SchemaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchemaVersionsInput]
   }
   
-  @scala.inline
-  implicit class ListSchemaVersionsInputMutableBuilder[Self <: ListSchemaVersionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSchemaVersionsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResultsNumber): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsNumber): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
   }
 }

@@ -35,79 +35,55 @@ trait PartialSurface extends StObject {
 }
 object PartialSurface {
   
-  @scala.inline
-  def apply(): PartialSurface = {
+  inline def apply(): PartialSurface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSurface]
   }
   
-  @scala.inline
-  implicit class PartialSurfaceMutableBuilder[Self <: PartialSurface] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSurface](x: Self) {
     
-    @scala.inline
-    def setConstructor(value: (/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter]) => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
+    inline def setConstructor(value: (/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter]) => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
-    @scala.inline
-    def setCullBackfaces(value: Boolean): Self = StObject.set(x, "cullBackfaces", value.asInstanceOf[js.Any])
+    inline def setCullBackfaces(value: Boolean): Self = StObject.set(x, "cullBackfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCullBackfacesUndefined: Self = StObject.set(x, "cullBackfaces", js.undefined)
+    inline def setCullBackfacesUndefined: Self = StObject.set(x, "cullBackfaces", js.undefined)
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyNull: Self = StObject.set(x, "dirty", null)
+    inline def setDirtyNull: Self = StObject.set(x, "dirty", null)
     
-    @scala.inline
-    def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+    inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
     
-    @scala.inline
-    def setFill(value: /* fill */ String | Color => PartialSurface): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* fill */ String | Color => PartialSurface): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFillMaterial(value: Material): Self = StObject.set(x, "fillMaterial", value.asInstanceOf[js.Any])
+    inline def setFillMaterial(value: Material): Self = StObject.set(x, "fillMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillMaterialUndefined: Self = StObject.set(x, "fillMaterial", js.undefined)
+    inline def setFillMaterialUndefined: Self = StObject.set(x, "fillMaterial", js.undefined)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPainter(value: Painter): Self = StObject.set(x, "painter", value.asInstanceOf[js.Any])
+    inline def setPainter(value: Painter): Self = StObject.set(x, "painter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPainterUndefined: Self = StObject.set(x, "painter", js.undefined)
+    inline def setPainterUndefined: Self = StObject.set(x, "painter", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setStroke(value: /* stroke */ String | Color => PartialSurface): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
+    inline def setStroke(value: /* stroke */ String | Color => PartialSurface): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStrokeMaterial(value: Material): Self = StObject.set(x, "strokeMaterial", value.asInstanceOf[js.Any])
+    inline def setStrokeMaterial(value: Material): Self = StObject.set(x, "strokeMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeMaterialUndefined: Self = StObject.set(x, "strokeMaterial", js.undefined)
+    inline def setStrokeMaterialUndefined: Self = StObject.set(x, "strokeMaterial", js.undefined)
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait GoogleApiYouTubePlaylistItemResource extends StObject {
 }
 object GoogleApiYouTubePlaylistItemResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentDetails: EndAt,
     etag: String,
     id: String,
@@ -54,25 +53,18 @@ object GoogleApiYouTubePlaylistItemResource {
     __obj.asInstanceOf[GoogleApiYouTubePlaylistItemResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubePlaylistItemResourceMutableBuilder[Self <: GoogleApiYouTubePlaylistItemResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubePlaylistItemResource](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: EndAt): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: EndAt): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: ChannelTitle): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: ChannelTitle): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PrivacyStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PrivacyStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

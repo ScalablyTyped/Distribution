@@ -13,25 +13,19 @@ trait TokenPagination extends StObject {
 }
 object TokenPagination {
   
-  @scala.inline
-  def apply(): TokenPagination = {
+  inline def apply(): TokenPagination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenPagination]
   }
   
-  @scala.inline
-  implicit class TokenPaginationMutableBuilder[Self <: TokenPagination] (val x: Self) extends AnyVal {
+  extension [Self <: TokenPagination](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPreviousPageToken(value: String): Self = StObject.set(x, "previousPageToken", value.asInstanceOf[js.Any])
+    inline def setPreviousPageToken(value: String): Self = StObject.set(x, "previousPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousPageTokenUndefined: Self = StObject.set(x, "previousPageToken", js.undefined)
+    inline def setPreviousPageTokenUndefined: Self = StObject.set(x, "previousPageToken", js.undefined)
   }
 }

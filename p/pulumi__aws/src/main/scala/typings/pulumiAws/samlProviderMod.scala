@@ -60,21 +60,16 @@ object samlProviderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SamlProviderState): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SamlProviderState, opts: CustomResourceOptions): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
+    inline def get(name: String, id: Input[ID]): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
+    inline def get(name: String, id: Input[ID], state: SamlProviderState): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
+    inline def get(name: String, id: Input[ID], state: SamlProviderState, opts: CustomResourceOptions): SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SamlProvider]
     
     /**
       * Returns true if the given object is an instance of SamlProvider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean]
   }
   
   trait SamlProviderArgs extends StObject {
@@ -91,23 +86,18 @@ object samlProviderMod {
   }
   object SamlProviderArgs {
     
-    @scala.inline
-    def apply(samlMetadataDocument: Input[String]): SamlProviderArgs = {
+    inline def apply(samlMetadataDocument: Input[String]): SamlProviderArgs = {
       val __obj = js.Dynamic.literal(samlMetadataDocument = samlMetadataDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamlProviderArgs]
     }
     
-    @scala.inline
-    implicit class SamlProviderArgsMutableBuilder[Self <: SamlProviderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SamlProviderArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSamlMetadataDocument(value: Input[String]): Self = StObject.set(x, "samlMetadataDocument", value.asInstanceOf[js.Any])
+      inline def setSamlMetadataDocument(value: Input[String]): Self = StObject.set(x, "samlMetadataDocument", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,38 +125,28 @@ object samlProviderMod {
   }
   object SamlProviderState {
     
-    @scala.inline
-    def apply(): SamlProviderState = {
+    inline def apply(): SamlProviderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SamlProviderState]
     }
     
-    @scala.inline
-    implicit class SamlProviderStateMutableBuilder[Self <: SamlProviderState] (val x: Self) extends AnyVal {
+    extension [Self <: SamlProviderState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSamlMetadataDocument(value: Input[String]): Self = StObject.set(x, "samlMetadataDocument", value.asInstanceOf[js.Any])
+      inline def setSamlMetadataDocument(value: Input[String]): Self = StObject.set(x, "samlMetadataDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamlMetadataDocumentUndefined: Self = StObject.set(x, "samlMetadataDocument", js.undefined)
+      inline def setSamlMetadataDocumentUndefined: Self = StObject.set(x, "samlMetadataDocument", js.undefined)
       
-      @scala.inline
-      def setValidUntil(value: Input[String]): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
+      inline def setValidUntil(value: Input[String]): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
+      inline def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
     }
   }
 }

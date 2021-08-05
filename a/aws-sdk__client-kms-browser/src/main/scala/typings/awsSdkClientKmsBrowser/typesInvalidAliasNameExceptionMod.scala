@@ -16,17 +16,14 @@ object typesInvalidAliasNameExceptionMod {
   }
   object InvalidAliasNameException {
     
-    @scala.inline
-    def apply(): InvalidAliasNameException = {
+    inline def apply(): InvalidAliasNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidAliasNameException")
       __obj.asInstanceOf[InvalidAliasNameException]
     }
     
-    @scala.inline
-    implicit class InvalidAliasNameExceptionMutableBuilder[Self <: InvalidAliasNameException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidAliasNameException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidAliasNameException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidAliasNameException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +36,16 @@ object typesInvalidAliasNameExceptionMod {
   }
   object InvalidAliasNameExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidAliasNameExceptionDetails = {
+    inline def apply(): InvalidAliasNameExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidAliasNameExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidAliasNameExceptionDetailsMutableBuilder[Self <: InvalidAliasNameExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidAliasNameExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

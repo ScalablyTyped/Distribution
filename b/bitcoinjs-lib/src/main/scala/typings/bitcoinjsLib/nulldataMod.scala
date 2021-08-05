@@ -9,10 +9,8 @@ object nulldataMod {
   
   object check {
     
-    @scala.inline
-    def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("bitcoinjs-lib/types/templates/nulldata", "check")
     @js.native
@@ -21,8 +19,7 @@ object nulldataMod {
     @JSImport("bitcoinjs-lib/types/templates/nulldata", "check.toJSON")
     @js.native
     def toJSON: js.Function0[String] = js.native
-    @scala.inline
-    def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
+    inline def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
   }
   
   object output {
@@ -34,11 +31,8 @@ object nulldataMod {
     @JSImport("bitcoinjs-lib/types/templates/nulldata", "output.check")
     @js.native
     def check: js.Function1[/* script */ Buffer | (js.Array[Double | Buffer]), Boolean] = js.native
-    @scala.inline
-    def check(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def check(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def check_=(x: js.Function1[/* script */ Buffer | (js.Array[Double | Buffer]), Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
+    inline def check(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def check(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def check_=(x: js.Function1[/* script */ Buffer | (js.Array[Double | Buffer]), Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
   }
 }

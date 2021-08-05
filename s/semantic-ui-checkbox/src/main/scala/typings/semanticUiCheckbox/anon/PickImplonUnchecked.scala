@@ -14,16 +14,13 @@ trait PickImplonUnchecked extends StObject {
 }
 object PickImplonUnchecked {
   
-  @scala.inline
-  def apply(onUnchecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonUnchecked = {
+  inline def apply(onUnchecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonUnchecked = {
     val __obj = js.Dynamic.literal(onUnchecked = onUnchecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUnchecked]
   }
   
-  @scala.inline
-  implicit class PickImplonUncheckedMutableBuilder[Self <: PickImplonUnchecked] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonUnchecked](x: Self) {
     
-    @scala.inline
-    def setOnUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
+    inline def setOnUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
   }
 }

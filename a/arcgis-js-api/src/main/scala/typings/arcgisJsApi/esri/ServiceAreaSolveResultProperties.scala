@@ -57,76 +57,53 @@ trait ServiceAreaSolveResultProperties extends StObject {
 }
 object ServiceAreaSolveResultProperties {
   
-  @scala.inline
-  def apply(): ServiceAreaSolveResultProperties = {
+  inline def apply(): ServiceAreaSolveResultProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceAreaSolveResultProperties]
   }
   
-  @scala.inline
-  implicit class ServiceAreaSolveResultPropertiesMutableBuilder[Self <: ServiceAreaSolveResultProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAreaSolveResultProperties](x: Self) {
     
-    @scala.inline
-    def setFacilities(value: js.Array[PointProperties]): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
+    inline def setFacilities(value: js.Array[PointProperties]): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
+    inline def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
     
-    @scala.inline
-    def setFacilitiesVarargs(value: PointProperties*): Self = StObject.set(x, "facilities", js.Array(value :_*))
+    inline def setFacilitiesVarargs(value: PointProperties*): Self = StObject.set(x, "facilities", js.Array(value :_*))
     
-    @scala.inline
-    def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: NAMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: NAMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setPointBarriers(value: js.Array[PointProperties]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
+    inline def setPointBarriers(value: js.Array[PointProperties]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
+    inline def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
     
-    @scala.inline
-    def setPointBarriersVarargs(value: PointProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value :_*))
+    inline def setPointBarriersVarargs(value: PointProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value :_*))
     
-    @scala.inline
-    def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
+    inline def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
+    inline def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
     
-    @scala.inline
-    def setPolygonBarriersVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value :_*))
+    inline def setPolygonBarriersVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value :_*))
     
-    @scala.inline
-    def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
+    inline def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
+    inline def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
     
-    @scala.inline
-    def setPolylineBarriersVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value :_*))
+    inline def setPolylineBarriersVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAreaPolygons(value: js.Array[GraphicProperties]): Self = StObject.set(x, "serviceAreaPolygons", value.asInstanceOf[js.Any])
+    inline def setServiceAreaPolygons(value: js.Array[GraphicProperties]): Self = StObject.set(x, "serviceAreaPolygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAreaPolygonsUndefined: Self = StObject.set(x, "serviceAreaPolygons", js.undefined)
+    inline def setServiceAreaPolygonsUndefined: Self = StObject.set(x, "serviceAreaPolygons", js.undefined)
     
-    @scala.inline
-    def setServiceAreaPolygonsVarargs(value: GraphicProperties*): Self = StObject.set(x, "serviceAreaPolygons", js.Array(value :_*))
+    inline def setServiceAreaPolygonsVarargs(value: GraphicProperties*): Self = StObject.set(x, "serviceAreaPolygons", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAreaPolylines(value: js.Array[GraphicProperties]): Self = StObject.set(x, "serviceAreaPolylines", value.asInstanceOf[js.Any])
+    inline def setServiceAreaPolylines(value: js.Array[GraphicProperties]): Self = StObject.set(x, "serviceAreaPolylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAreaPolylinesUndefined: Self = StObject.set(x, "serviceAreaPolylines", js.undefined)
+    inline def setServiceAreaPolylinesUndefined: Self = StObject.set(x, "serviceAreaPolylines", js.undefined)
     
-    @scala.inline
-    def setServiceAreaPolylinesVarargs(value: GraphicProperties*): Self = StObject.set(x, "serviceAreaPolylines", js.Array(value :_*))
+    inline def setServiceAreaPolylinesVarargs(value: GraphicProperties*): Self = StObject.set(x, "serviceAreaPolylines", js.Array(value :_*))
   }
 }

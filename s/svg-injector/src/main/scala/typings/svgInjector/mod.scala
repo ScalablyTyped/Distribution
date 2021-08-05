@@ -46,32 +46,24 @@ object mod extends Shortcut {
   }
   object SVGInjectorOptions {
     
-    @scala.inline
-    def apply(): SVGInjectorOptions = {
+    inline def apply(): SVGInjectorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SVGInjectorOptions]
     }
     
-    @scala.inline
-    implicit class SVGInjectorOptionsMutableBuilder[Self <: SVGInjectorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SVGInjectorOptions](x: Self) {
       
-      @scala.inline
-      def setEach(value: /* svg */ SVGElement | String => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+      inline def setEach(value: /* svg */ SVGElement | String => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+      inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
       
-      @scala.inline
-      def setEvalScripts(value: String): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
+      inline def setEvalScripts(value: String): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalScriptsUndefined: Self = StObject.set(x, "evalScripts", js.undefined)
+      inline def setEvalScriptsUndefined: Self = StObject.set(x, "evalScripts", js.undefined)
       
-      @scala.inline
-      def setPngFallback(value: String): Self = StObject.set(x, "pngFallback", value.asInstanceOf[js.Any])
+      inline def setPngFallback(value: String): Self = StObject.set(x, "pngFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPngFallbackUndefined: Self = StObject.set(x, "pngFallback", js.undefined)
+      inline def setPngFallbackUndefined: Self = StObject.set(x, "pngFallback", js.undefined)
     }
   }
   

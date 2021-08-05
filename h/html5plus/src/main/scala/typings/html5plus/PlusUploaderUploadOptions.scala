@@ -62,49 +62,35 @@ trait PlusUploaderUploadOptions extends StObject {
 }
 object PlusUploaderUploadOptions {
   
-  @scala.inline
-  def apply(): PlusUploaderUploadOptions = {
+  inline def apply(): PlusUploaderUploadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusUploaderUploadOptions]
   }
   
-  @scala.inline
-  implicit class PlusUploaderUploadOptionsMutableBuilder[Self <: PlusUploaderUploadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusUploaderUploadOptions](x: Self) {
     
-    @scala.inline
-    def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
+    inline def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksizeUndefined: Self = StObject.set(x, "blocksize", js.undefined)
+    inline def setBlocksizeUndefined: Self = StObject.set(x, "blocksize", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
+    inline def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
+    inline def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

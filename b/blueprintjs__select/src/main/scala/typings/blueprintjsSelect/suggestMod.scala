@@ -20,38 +20,38 @@ object suggestMod {
     def this(props: ISuggestProps[T]) = this()
     def this(props: ISuggestProps[T], context: js.Any) = this()
     
-    var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MSuggest(_prevProps: ISuggestProps[T], prevState: ISuggestState[T]): Unit = js.native
     
-    var getInitialSelectedItem: js.Any = js.native
+    /* private */ var getInitialSelectedItem: js.Any = js.native
     
-    var getTargetKeyDownHandler: js.Any = js.native
+    /* private */ var getTargetKeyDownHandler: js.Any = js.native
     
-    var getTargetKeyUpHandler: js.Any = js.native
+    /* private */ var getTargetKeyUpHandler: js.Any = js.native
     
-    var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputFocus: js.Any = js.native
     
-    var handleItemSelect: js.Any = js.native
+    /* private */ var handleItemSelect: js.Any = js.native
     
-    var handlePopoverInteraction: js.Any = js.native
+    /* private */ var handlePopoverInteraction: js.Any = js.native
     
-    var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverOpened: js.Any = js.native
     
-    var handlePopoverOpening: js.Any = js.native
+    /* private */ var handlePopoverOpening: js.Any = js.native
     
-    var inputEl: js.Any = js.native
+    /* private */ var inputEl: js.Any = js.native
     
-    var maybeResetActiveItemToSelectedItem: js.Any = js.native
+    /* private */ var maybeResetActiveItemToSelectedItem: js.Any = js.native
     
-    var queryList: js.Any = js.native
+    /* private */ var queryList: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderQueryList: js.Any = js.native
+    /* private */ var renderQueryList: js.Any = js.native
     
-    var selectText: js.Any = js.native
+    /* private */ var selectText: js.Any = js.native
   }
   /* static members */
   object Suggest {
@@ -63,17 +63,14 @@ object suggestMod {
     @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest.defaultProps")
     @js.native
     def defaultProps: PartialISuggestPropsany = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialISuggestPropsany): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialISuggestPropsany): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ofType[U](): Instantiable1[/* props */ ISuggestProps[U], Suggest[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISuggestProps[U], Suggest[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ ISuggestProps[U], Suggest[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISuggestProps[U], Suggest[U]]]
   }
   
   @js.native
@@ -149,23 +146,18 @@ object suggestMod {
   }
   object ISuggestState {
     
-    @scala.inline
-    def apply[T](isOpen: Boolean): ISuggestState[T] = {
+    inline def apply[T](isOpen: Boolean): ISuggestState[T] = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], selectedItem = null)
       __obj.asInstanceOf[ISuggestState[T]]
     }
     
-    @scala.inline
-    implicit class ISuggestStateMutableBuilder[Self <: ISuggestState[?], T] (val x: Self & ISuggestState[T]) extends AnyVal {
+    extension [Self <: ISuggestState[?], T](x: Self & ISuggestState[T]) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItem(value: T): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      inline def setSelectedItem(value: T): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
+      inline def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
     }
   }
 }

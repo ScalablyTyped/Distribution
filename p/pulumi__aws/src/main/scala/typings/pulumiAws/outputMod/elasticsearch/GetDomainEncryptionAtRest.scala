@@ -18,19 +18,15 @@ trait GetDomainEncryptionAtRest extends StObject {
 }
 object GetDomainEncryptionAtRest {
   
-  @scala.inline
-  def apply(enabled: Boolean, kmsKeyId: String): GetDomainEncryptionAtRest = {
+  inline def apply(enabled: Boolean, kmsKeyId: String): GetDomainEncryptionAtRest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], kmsKeyId = kmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainEncryptionAtRest]
   }
   
-  @scala.inline
-  implicit class GetDomainEncryptionAtRestMutableBuilder[Self <: GetDomainEncryptionAtRest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainEncryptionAtRest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
   }
 }

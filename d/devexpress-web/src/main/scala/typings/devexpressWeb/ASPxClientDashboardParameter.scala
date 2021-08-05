@@ -59,8 +59,7 @@ trait ASPxClientDashboardParameter extends StObject {
 }
 object ASPxClientDashboardParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDefaultValue: () => js.Any,
     GetDescription: () => String,
     GetName: () => String,
@@ -75,34 +74,24 @@ object ASPxClientDashboardParameter {
     __obj.asInstanceOf[ASPxClientDashboardParameter]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardParameterMutableBuilder[Self <: ASPxClientDashboardParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardParameter](x: Self) {
     
-    @scala.inline
-    def setGetDefaultValue(value: () => js.Any): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
+    inline def setGetDefaultValue(value: () => js.Any): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDescription(value: () => String): Self = StObject.set(x, "GetDescription", js.Any.fromFunction0(value))
+    inline def setGetDescription(value: () => String): Self = StObject.set(x, "GetDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => String): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => String): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValues(value: () => js.Array[ASPxClientDashboardParameterValue]): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
+    inline def setGetValues(value: () => js.Array[ASPxClientDashboardParameterValue]): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

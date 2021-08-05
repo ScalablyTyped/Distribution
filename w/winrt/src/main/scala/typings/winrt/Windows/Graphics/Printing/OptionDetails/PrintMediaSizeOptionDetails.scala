@@ -10,8 +10,7 @@ trait PrintMediaSizeOptionDetails
      with IPrintItemListOptionDetails
 object PrintMediaSizeOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     items: IVectorView[js.Any],
     optionId: String,

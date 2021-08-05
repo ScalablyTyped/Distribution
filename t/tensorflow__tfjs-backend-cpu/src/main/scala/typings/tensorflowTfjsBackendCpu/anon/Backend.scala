@@ -13,19 +13,15 @@ trait Backend extends StObject {
 }
 object Backend {
   
-  @scala.inline
-  def apply(backend: MathBackendCPU, inputs: PickNamedTensorInfoMapx): Backend = {
+  inline def apply(backend: MathBackendCPU, inputs: PickNamedTensorInfoMapx): Backend = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backend]
   }
   
-  @scala.inline
-  implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+  extension [Self <: Backend](x: Self) {
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: PickNamedTensorInfoMapx): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: PickNamedTensorInfoMapx): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

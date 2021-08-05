@@ -17,40 +17,29 @@ trait FolderView extends StObject {
 }
 object FolderView {
   
-  @scala.inline
-  def apply(): FolderView = {
+  inline def apply(): FolderView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FolderView]
   }
   
-  @scala.inline
-  implicit class FolderViewMutableBuilder[Self <: FolderView] (val x: Self) extends AnyVal {
+  extension [Self <: FolderView](x: Self) {
     
-    @scala.inline
-    def setSortBy(value: NullableOption[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: NullableOption[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByNull: Self = StObject.set(x, "sortBy", null)
+    inline def setSortByNull: Self = StObject.set(x, "sortBy", null)
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: NullableOption[String]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: NullableOption[String]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
+    inline def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    @scala.inline
-    def setViewType(value: NullableOption[String]): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: NullableOption[String]): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewTypeNull: Self = StObject.set(x, "viewType", null)
+    inline def setViewTypeNull: Self = StObject.set(x, "viewType", null)
     
-    @scala.inline
-    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
+    inline def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

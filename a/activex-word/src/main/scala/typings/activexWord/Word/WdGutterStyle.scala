@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdGutterStyle extends StObject
 object WdGutterStyle {
   
-  @scala.inline
-  def wdGutterPosLeft: `0` = 0.asInstanceOf[`0`]
+  inline def wdGutterPosLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdGutterPosRight: `2` = 2.asInstanceOf[`2`]
+  inline def wdGutterPosRight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdGutterPosTop: `1` = 1.asInstanceOf[`1`]
+  inline def wdGutterPosTop: `1` = 1.asInstanceOf[`1`]
 }

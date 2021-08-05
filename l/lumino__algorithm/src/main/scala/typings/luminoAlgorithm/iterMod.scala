@@ -24,9 +24,9 @@ object iterMod {
       */
     def this(source: ArrayLike[T]) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -73,7 +73,7 @@ object iterMod {
       */
     def this(fn: js.Function0[js.UndefOr[T]]) = this()
     
-    var _fn: js.Any = js.native
+    /* private */ var _fn: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -123,11 +123,11 @@ object iterMod {
     def this(source: StringDictionary[T]) = this()
     def this(source: StringDictionary[T], keys: js.Array[String]) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -177,11 +177,11 @@ object iterMod {
     def this(source: StringDictionary[js.Any]) = this()
     def this(source: StringDictionary[js.Any], keys: js.Array[String]) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -231,11 +231,11 @@ object iterMod {
     def this(source: StringDictionary[T]) = this()
     def this(source: StringDictionary[T], keys: js.Array[String]) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -270,38 +270,28 @@ object iterMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def each[T](
+  inline def each[T](
     `object`: IterableOrArrayLike[T],
     fn: js.Function2[/* value */ T, /* index */ Double, Boolean | Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iter")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iter")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @scala.inline
-  def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterFn")(fn.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterFn")(fn.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @scala.inline
-  def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterItems")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[String, T]]]
+  inline def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterItems")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[String, T]]]
   
-  @scala.inline
-  def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[String]]
+  inline def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[String]]
   
-  @scala.inline
-  def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @scala.inline
-  def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
+  inline def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
   
   trait IIterable[T] extends StObject {
     
@@ -320,17 +310,14 @@ object iterMod {
   }
   object IIterable {
     
-    @scala.inline
-    def apply[T](iter: () => IIterator[T]): IIterable[T] = {
+    inline def apply[T](iter: () => IIterator[T]): IIterable[T] = {
       val __obj = js.Dynamic.literal(iter = js.Any.fromFunction0(iter))
       __obj.asInstanceOf[IIterable[T]]
     }
     
-    @scala.inline
-    implicit class IIterableMutableBuilder[Self <: IIterable[?], T] (val x: Self & IIterable[T]) extends AnyVal {
+    extension [Self <: IIterable[?], T](x: Self & IIterable[T]) {
       
-      @scala.inline
-      def setIter(value: () => IIterator[T]): Self = StObject.set(x, "iter", js.Any.fromFunction0(value))
+      inline def setIter(value: () => IIterator[T]): Self = StObject.set(x, "iter", js.Any.fromFunction0(value))
     }
   }
   
@@ -357,17 +344,14 @@ object iterMod {
   }
   object IIterator {
     
-    @scala.inline
-    def apply[T](iter: () => IIterator[T], next: () => js.UndefOr[T]): IIterator[T] = {
+    inline def apply[T](iter: () => IIterator[T], next: () => js.UndefOr[T]): IIterator[T] = {
       val __obj = js.Dynamic.literal(iter = js.Any.fromFunction0(iter), next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[IIterator[T]]
     }
     
-    @scala.inline
-    implicit class IIteratorMutableBuilder[Self <: IIterator[?], T] (val x: Self & IIterator[T]) extends AnyVal {
+    extension [Self <: IIterator[?], T](x: Self & IIterator[T]) {
       
-      @scala.inline
-      def setNext(value: () => js.UndefOr[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => js.UndefOr[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   

@@ -63,61 +63,43 @@ trait FeatureSetProperties extends StObject {
 }
 object FeatureSetProperties {
   
-  @scala.inline
-  def apply(): FeatureSetProperties = {
+  inline def apply(): FeatureSetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureSetProperties]
   }
   
-  @scala.inline
-  implicit class FeatureSetPropertiesMutableBuilder[Self <: FeatureSetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureSetProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
+    inline def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
+    inline def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
     
-    @scala.inline
-    def setExceededTransferLimit(value: Boolean): Self = StObject.set(x, "exceededTransferLimit", value.asInstanceOf[js.Any])
+    inline def setExceededTransferLimit(value: Boolean): Self = StObject.set(x, "exceededTransferLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceededTransferLimitUndefined: Self = StObject.set(x, "exceededTransferLimit", js.undefined)
+    inline def setExceededTransferLimitUndefined: Self = StObject.set(x, "exceededTransferLimit", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: js.Array[GraphicProperties]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[GraphicProperties]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setGeometryType(value: point | multipoint | polyline | polygon | extent | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | extent | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
-    @scala.inline
-    def setQueryGeometry(value: GeometryProperties): Self = StObject.set(x, "queryGeometry", value.asInstanceOf[js.Any])
+    inline def setQueryGeometry(value: GeometryProperties): Self = StObject.set(x, "queryGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryGeometryUndefined: Self = StObject.set(x, "queryGeometry", js.undefined)
+    inline def setQueryGeometryUndefined: Self = StObject.set(x, "queryGeometry", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

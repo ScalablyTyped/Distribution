@@ -29,8 +29,7 @@ trait XChild
 }
 object XChild {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Parent: XInterface,
     acquire: () => Unit,
     getParent: () => XInterface,
@@ -42,16 +41,12 @@ object XChild {
     __obj.asInstanceOf[XChild]
   }
   
-  @scala.inline
-  implicit class XChildMutableBuilder[Self <: XChild] (val x: Self) extends AnyVal {
+  extension [Self <: XChild](x: Self) {
     
-    @scala.inline
-    def setGetParent(value: () => XInterface): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => XInterface): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: XInterface): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: XInterface): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetParent(value: XInterface => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+    inline def setSetParent(value: XInterface => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
   }
 }

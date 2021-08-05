@@ -76,8 +76,7 @@ trait NotebookDocument extends StObject {
 }
 object NotebookDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cells: js.Array[NotebookCell],
     fileName: String,
     isClosed: Boolean,
@@ -93,40 +92,28 @@ object NotebookDocument {
     __obj.asInstanceOf[NotebookDocument]
   }
   
-  @scala.inline
-  implicit class NotebookDocumentMutableBuilder[Self <: NotebookDocument] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookDocument](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[NotebookCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[NotebookCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsVarargs(value: NotebookCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: NotebookCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
+    inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUntitled(value: Boolean): Self = StObject.set(x, "isUntitled", value.asInstanceOf[js.Any])
+    inline def setIsUntitled(value: Boolean): Self = StObject.set(x, "isUntitled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelSpec(value: IKernelSpec): Self = StObject.set(x, "kernelSpec", value.asInstanceOf[js.Any])
+    inline def setKernelSpec(value: IKernelSpec): Self = StObject.set(x, "kernelSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: () => Thenable[Boolean]): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Thenable[Boolean]): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateCellRange(value: CellRange => CellRange): Self = StObject.set(x, "validateCellRange", js.Any.fromFunction1(value))
+    inline def setValidateCellRange(value: CellRange => CellRange): Self = StObject.set(x, "validateCellRange", js.Any.fromFunction1(value))
   }
 }

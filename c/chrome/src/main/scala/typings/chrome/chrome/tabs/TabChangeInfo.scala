@@ -56,67 +56,47 @@ trait TabChangeInfo extends StObject {
 }
 object TabChangeInfo {
   
-  @scala.inline
-  def apply(): TabChangeInfo = {
+  inline def apply(): TabChangeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabChangeInfo]
   }
   
-  @scala.inline
-  implicit class TabChangeInfoMutableBuilder[Self <: TabChangeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TabChangeInfo](x: Self) {
     
-    @scala.inline
-    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
+    inline def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
+    inline def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
-    @scala.inline
-    def setAutoDiscardable(value: Boolean): Self = StObject.set(x, "autoDiscardable", value.asInstanceOf[js.Any])
+    inline def setAutoDiscardable(value: Boolean): Self = StObject.set(x, "autoDiscardable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDiscardableUndefined: Self = StObject.set(x, "autoDiscardable", js.undefined)
+    inline def setAutoDiscardableUndefined: Self = StObject.set(x, "autoDiscardable", js.undefined)
     
-    @scala.inline
-    def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
+    inline def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
+    inline def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
     
-    @scala.inline
-    def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
+    inline def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
+    inline def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
     
-    @scala.inline
-    def setMutedInfo(value: MutedInfo): Self = StObject.set(x, "mutedInfo", value.asInstanceOf[js.Any])
+    inline def setMutedInfo(value: MutedInfo): Self = StObject.set(x, "mutedInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutedInfoUndefined: Self = StObject.set(x, "mutedInfo", js.undefined)
+    inline def setMutedInfoUndefined: Self = StObject.set(x, "mutedInfo", js.undefined)
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

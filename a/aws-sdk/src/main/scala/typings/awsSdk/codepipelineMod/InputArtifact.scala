@@ -13,16 +13,13 @@ trait InputArtifact extends StObject {
 }
 object InputArtifact {
   
-  @scala.inline
-  def apply(name: ArtifactName): InputArtifact = {
+  inline def apply(name: ArtifactName): InputArtifact = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputArtifact]
   }
   
-  @scala.inline
-  implicit class InputArtifactMutableBuilder[Self <: InputArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: InputArtifact](x: Self) {
     
-    @scala.inline
-    def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

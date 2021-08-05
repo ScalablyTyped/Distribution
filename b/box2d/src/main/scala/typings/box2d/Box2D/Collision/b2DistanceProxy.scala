@@ -58,8 +58,7 @@ trait b2DistanceProxy extends StObject {
 }
 object b2DistanceProxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetSupport: b2Vec2 => Double,
     GetSupportVertex: b2Vec2 => b2Vec2,
     GetVertex: Double => b2Vec2,
@@ -73,34 +72,24 @@ object b2DistanceProxy {
     __obj.asInstanceOf[b2DistanceProxy]
   }
   
-  @scala.inline
-  implicit class b2DistanceProxyMutableBuilder[Self <: b2DistanceProxy] (val x: Self) extends AnyVal {
+  extension [Self <: b2DistanceProxy](x: Self) {
     
-    @scala.inline
-    def setGetSupport(value: b2Vec2 => Double): Self = StObject.set(x, "GetSupport", js.Any.fromFunction1(value))
+    inline def setGetSupport(value: b2Vec2 => Double): Self = StObject.set(x, "GetSupport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSupportVertex(value: b2Vec2 => b2Vec2): Self = StObject.set(x, "GetSupportVertex", js.Any.fromFunction1(value))
+    inline def setGetSupportVertex(value: b2Vec2 => b2Vec2): Self = StObject.set(x, "GetSupportVertex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVertex(value: Double => b2Vec2): Self = StObject.set(x, "GetVertex", js.Any.fromFunction1(value))
+    inline def setGetVertex(value: Double => b2Vec2): Self = StObject.set(x, "GetVertex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVertexCount(value: () => Double): Self = StObject.set(x, "GetVertexCount", js.Any.fromFunction0(value))
+    inline def setGetVertexCount(value: () => Double): Self = StObject.set(x, "GetVertexCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setM_count(value: Double): Self = StObject.set(x, "m_count", value.asInstanceOf[js.Any])
+    inline def setM_count(value: Double): Self = StObject.set(x, "m_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_radius(value: Double): Self = StObject.set(x, "m_radius", value.asInstanceOf[js.Any])
+    inline def setM_radius(value: Double): Self = StObject.set(x, "m_radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_vertices(value: js.Array[b2Vec2]): Self = StObject.set(x, "m_vertices", value.asInstanceOf[js.Any])
+    inline def setM_vertices(value: js.Array[b2Vec2]): Self = StObject.set(x, "m_vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_verticesVarargs(value: b2Vec2*): Self = StObject.set(x, "m_vertices", js.Array(value :_*))
+    inline def setM_verticesVarargs(value: b2Vec2*): Self = StObject.set(x, "m_vertices", js.Array(value :_*))
     
-    @scala.inline
-    def setSet(value: b2Shape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+    inline def setSet(value: b2Shape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }
 }

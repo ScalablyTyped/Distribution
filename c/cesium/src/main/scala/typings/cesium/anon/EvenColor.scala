@@ -15,31 +15,23 @@ trait EvenColor extends StObject {
 }
 object EvenColor {
   
-  @scala.inline
-  def apply(): EvenColor = {
+  inline def apply(): EvenColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvenColor]
   }
   
-  @scala.inline
-  implicit class EvenColorMutableBuilder[Self <: EvenColor] (val x: Self) extends AnyVal {
+  extension [Self <: EvenColor](x: Self) {
     
-    @scala.inline
-    def setEvenColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "evenColor", value.asInstanceOf[js.Any])
+    inline def setEvenColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "evenColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvenColorUndefined: Self = StObject.set(x, "evenColor", js.undefined)
+    inline def setEvenColorUndefined: Self = StObject.set(x, "evenColor", js.undefined)
     
-    @scala.inline
-    def setOddColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "oddColor", value.asInstanceOf[js.Any])
+    inline def setOddColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "oddColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddColorUndefined: Self = StObject.set(x, "oddColor", js.undefined)
+    inline def setOddColorUndefined: Self = StObject.set(x, "oddColor", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: Property): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Property): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
   }
 }

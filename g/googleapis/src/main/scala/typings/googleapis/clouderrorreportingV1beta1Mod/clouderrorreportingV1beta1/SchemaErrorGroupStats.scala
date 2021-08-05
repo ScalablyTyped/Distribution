@@ -79,73 +79,51 @@ trait SchemaErrorGroupStats extends StObject {
 }
 object SchemaErrorGroupStats {
   
-  @scala.inline
-  def apply(): SchemaErrorGroupStats = {
+  inline def apply(): SchemaErrorGroupStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorGroupStats]
   }
   
-  @scala.inline
-  implicit class SchemaErrorGroupStatsMutableBuilder[Self <: SchemaErrorGroupStats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorGroupStats](x: Self) {
     
-    @scala.inline
-    def setAffectedServices(value: js.Array[SchemaServiceContext]): Self = StObject.set(x, "affectedServices", value.asInstanceOf[js.Any])
+    inline def setAffectedServices(value: js.Array[SchemaServiceContext]): Self = StObject.set(x, "affectedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedServicesUndefined: Self = StObject.set(x, "affectedServices", js.undefined)
+    inline def setAffectedServicesUndefined: Self = StObject.set(x, "affectedServices", js.undefined)
     
-    @scala.inline
-    def setAffectedServicesVarargs(value: SchemaServiceContext*): Self = StObject.set(x, "affectedServices", js.Array(value :_*))
+    inline def setAffectedServicesVarargs(value: SchemaServiceContext*): Self = StObject.set(x, "affectedServices", js.Array(value :_*))
     
-    @scala.inline
-    def setAffectedUsersCount(value: String): Self = StObject.set(x, "affectedUsersCount", value.asInstanceOf[js.Any])
+    inline def setAffectedUsersCount(value: String): Self = StObject.set(x, "affectedUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedUsersCountUndefined: Self = StObject.set(x, "affectedUsersCount", js.undefined)
+    inline def setAffectedUsersCountUndefined: Self = StObject.set(x, "affectedUsersCount", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setFirstSeenTime(value: String): Self = StObject.set(x, "firstSeenTime", value.asInstanceOf[js.Any])
+    inline def setFirstSeenTime(value: String): Self = StObject.set(x, "firstSeenTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSeenTimeUndefined: Self = StObject.set(x, "firstSeenTime", js.undefined)
+    inline def setFirstSeenTimeUndefined: Self = StObject.set(x, "firstSeenTime", js.undefined)
     
-    @scala.inline
-    def setGroup(value: SchemaErrorGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: SchemaErrorGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setLastSeenTime(value: String): Self = StObject.set(x, "lastSeenTime", value.asInstanceOf[js.Any])
+    inline def setLastSeenTime(value: String): Self = StObject.set(x, "lastSeenTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSeenTimeUndefined: Self = StObject.set(x, "lastSeenTime", js.undefined)
+    inline def setLastSeenTimeUndefined: Self = StObject.set(x, "lastSeenTime", js.undefined)
     
-    @scala.inline
-    def setNumAffectedServices(value: Double): Self = StObject.set(x, "numAffectedServices", value.asInstanceOf[js.Any])
+    inline def setNumAffectedServices(value: Double): Self = StObject.set(x, "numAffectedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumAffectedServicesUndefined: Self = StObject.set(x, "numAffectedServices", js.undefined)
+    inline def setNumAffectedServicesUndefined: Self = StObject.set(x, "numAffectedServices", js.undefined)
     
-    @scala.inline
-    def setRepresentative(value: SchemaErrorEvent): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
+    inline def setRepresentative(value: SchemaErrorEvent): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
+    inline def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
     
-    @scala.inline
-    def setTimedCounts(value: js.Array[SchemaTimedCount]): Self = StObject.set(x, "timedCounts", value.asInstanceOf[js.Any])
+    inline def setTimedCounts(value: js.Array[SchemaTimedCount]): Self = StObject.set(x, "timedCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedCountsUndefined: Self = StObject.set(x, "timedCounts", js.undefined)
+    inline def setTimedCountsUndefined: Self = StObject.set(x, "timedCounts", js.undefined)
     
-    @scala.inline
-    def setTimedCountsVarargs(value: SchemaTimedCount*): Self = StObject.set(x, "timedCounts", js.Array(value :_*))
+    inline def setTimedCountsVarargs(value: SchemaTimedCount*): Self = StObject.set(x, "timedCounts", js.Array(value :_*))
   }
 }

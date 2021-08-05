@@ -23,34 +23,25 @@ trait SimpleScopeTerm extends StObject {
 }
 object SimpleScopeTerm {
   
-  @scala.inline
-  def apply(): SimpleScopeTerm = {
+  inline def apply(): SimpleScopeTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleScopeTerm]
   }
   
-  @scala.inline
-  implicit class SimpleScopeTermMutableBuilder[Self <: SimpleScopeTerm] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleScopeTerm](x: Self) {
     
-    @scala.inline
-    def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
-    @scala.inline
-    def setKey(value: ScopeFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ScopeFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

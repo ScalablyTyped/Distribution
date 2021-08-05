@@ -81,21 +81,16 @@ object clusterEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterEndpointState): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterEndpointState, opts: CustomResourceOptions): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    inline def get(name: String, id: Input[ID]): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    inline def get(name: String, id: Input[ID], state: ClusterEndpointState): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    inline def get(name: String, id: Input[ID], state: ClusterEndpointState, opts: CustomResourceOptions): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
     
     /**
       * Returns true if the given object is an instance of ClusterEndpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean]
   }
   
   trait ClusterEndpointArgs extends StObject {
@@ -132,8 +127,7 @@ object clusterEndpointMod {
   }
   object ClusterEndpointArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clusterEndpointIdentifier: Input[String],
       clusterIdentifier: Input[String],
       customEndpointType: Input[String]
@@ -142,41 +136,29 @@ object clusterEndpointMod {
       __obj.asInstanceOf[ClusterEndpointArgs]
     }
     
-    @scala.inline
-    implicit class ClusterEndpointArgsMutableBuilder[Self <: ClusterEndpointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterEndpointArgs](x: Self) {
       
-      @scala.inline
-      def setClusterEndpointIdentifier(value: Input[String]): Self = StObject.set(x, "clusterEndpointIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterEndpointIdentifier(value: Input[String]): Self = StObject.set(x, "clusterEndpointIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomEndpointType(value: Input[String]): Self = StObject.set(x, "customEndpointType", value.asInstanceOf[js.Any])
+      inline def setCustomEndpointType(value: Input[String]): Self = StObject.set(x, "customEndpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "excludedMembers", value.asInstanceOf[js.Any])
+      inline def setExcludedMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "excludedMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedMembersUndefined: Self = StObject.set(x, "excludedMembers", js.undefined)
+      inline def setExcludedMembersUndefined: Self = StObject.set(x, "excludedMembers", js.undefined)
       
-      @scala.inline
-      def setExcludedMembersVarargs(value: Input[String]*): Self = StObject.set(x, "excludedMembers", js.Array(value :_*))
+      inline def setExcludedMembersVarargs(value: Input[String]*): Self = StObject.set(x, "excludedMembers", js.Array(value :_*))
       
-      @scala.inline
-      def setStaticMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "staticMembers", value.asInstanceOf[js.Any])
+      inline def setStaticMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "staticMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticMembersUndefined: Self = StObject.set(x, "staticMembers", js.undefined)
+      inline def setStaticMembersUndefined: Self = StObject.set(x, "staticMembers", js.undefined)
       
-      @scala.inline
-      def setStaticMembersVarargs(value: Input[String]*): Self = StObject.set(x, "staticMembers", js.Array(value :_*))
+      inline def setStaticMembersVarargs(value: Input[String]*): Self = StObject.set(x, "staticMembers", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -224,68 +206,48 @@ object clusterEndpointMod {
   }
   object ClusterEndpointState {
     
-    @scala.inline
-    def apply(): ClusterEndpointState = {
+    inline def apply(): ClusterEndpointState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterEndpointState]
     }
     
-    @scala.inline
-    implicit class ClusterEndpointStateMutableBuilder[Self <: ClusterEndpointState] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterEndpointState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setClusterEndpointIdentifier(value: Input[String]): Self = StObject.set(x, "clusterEndpointIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterEndpointIdentifier(value: Input[String]): Self = StObject.set(x, "clusterEndpointIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterEndpointIdentifierUndefined: Self = StObject.set(x, "clusterEndpointIdentifier", js.undefined)
+      inline def setClusterEndpointIdentifierUndefined: Self = StObject.set(x, "clusterEndpointIdentifier", js.undefined)
       
-      @scala.inline
-      def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdentifierUndefined: Self = StObject.set(x, "clusterIdentifier", js.undefined)
+      inline def setClusterIdentifierUndefined: Self = StObject.set(x, "clusterIdentifier", js.undefined)
       
-      @scala.inline
-      def setCustomEndpointType(value: Input[String]): Self = StObject.set(x, "customEndpointType", value.asInstanceOf[js.Any])
+      inline def setCustomEndpointType(value: Input[String]): Self = StObject.set(x, "customEndpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomEndpointTypeUndefined: Self = StObject.set(x, "customEndpointType", js.undefined)
+      inline def setCustomEndpointTypeUndefined: Self = StObject.set(x, "customEndpointType", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setExcludedMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "excludedMembers", value.asInstanceOf[js.Any])
+      inline def setExcludedMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "excludedMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedMembersUndefined: Self = StObject.set(x, "excludedMembers", js.undefined)
+      inline def setExcludedMembersUndefined: Self = StObject.set(x, "excludedMembers", js.undefined)
       
-      @scala.inline
-      def setExcludedMembersVarargs(value: Input[String]*): Self = StObject.set(x, "excludedMembers", js.Array(value :_*))
+      inline def setExcludedMembersVarargs(value: Input[String]*): Self = StObject.set(x, "excludedMembers", js.Array(value :_*))
       
-      @scala.inline
-      def setStaticMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "staticMembers", value.asInstanceOf[js.Any])
+      inline def setStaticMembers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "staticMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticMembersUndefined: Self = StObject.set(x, "staticMembers", js.undefined)
+      inline def setStaticMembersUndefined: Self = StObject.set(x, "staticMembers", js.undefined)
       
-      @scala.inline
-      def setStaticMembersVarargs(value: Input[String]*): Self = StObject.set(x, "staticMembers", js.Array(value :_*))
+      inline def setStaticMembersVarargs(value: Input[String]*): Self = StObject.set(x, "staticMembers", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

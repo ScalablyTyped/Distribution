@@ -18,16 +18,13 @@ trait MenuShareQQ
 }
 object MenuShareQQ {
   
-  @scala.inline
-  def apply(desc: String, link: String, title: String): MenuShareQQ = {
+  inline def apply(desc: String, link: String, title: String): MenuShareQQ = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuShareQQ]
   }
   
-  @scala.inline
-  implicit class MenuShareQQMutableBuilder[Self <: MenuShareQQ] (val x: Self) extends AnyVal {
+  extension [Self <: MenuShareQQ](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }
 }

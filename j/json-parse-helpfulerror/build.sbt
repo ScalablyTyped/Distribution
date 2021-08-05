@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-parse-helpfulerror"
-version := "1.0-dt-20200914Z-13c2a9"
+version := "1.0-dt-20200914Z-887f23"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

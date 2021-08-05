@@ -12,19 +12,15 @@ trait DELETED extends StObject {
 }
 object DELETED {
   
-  @scala.inline
-  def apply(): DELETED = {
+  inline def apply(): DELETED = {
     val __obj = js.Dynamic.literal(CHANGED = "CHANGED", DELETED = "DELETED")
     __obj.asInstanceOf[DELETED]
   }
   
-  @scala.inline
-  implicit class DELETEDMutableBuilder[Self <: DELETED] (val x: Self) extends AnyVal {
+  extension [Self <: DELETED](x: Self) {
     
-    @scala.inline
-    def setCHANGED(value: typings.chromeApps.chromeAppsStrings.CHANGED): Self = StObject.set(x, "CHANGED", value.asInstanceOf[js.Any])
+    inline def setCHANGED(value: typings.chromeApps.chromeAppsStrings.CHANGED): Self = StObject.set(x, "CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDELETED(value: typings.chromeApps.chromeAppsStrings.DELETED): Self = StObject.set(x, "DELETED", value.asInstanceOf[js.Any])
+    inline def setDELETED(value: typings.chromeApps.chromeAppsStrings.DELETED): Self = StObject.set(x, "DELETED", value.asInstanceOf[js.Any])
   }
 }

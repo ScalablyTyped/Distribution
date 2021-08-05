@@ -13,19 +13,15 @@ trait PullRequestStatusChangedEventMetadata extends StObject {
 }
 object PullRequestStatusChangedEventMetadata {
   
-  @scala.inline
-  def apply(): PullRequestStatusChangedEventMetadata = {
+  inline def apply(): PullRequestStatusChangedEventMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullRequestStatusChangedEventMetadata]
   }
   
-  @scala.inline
-  implicit class PullRequestStatusChangedEventMetadataMutableBuilder[Self <: PullRequestStatusChangedEventMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestStatusChangedEventMetadata](x: Self) {
     
-    @scala.inline
-    def setPullRequestStatus(value: PullRequestStatusEnum): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
+    inline def setPullRequestStatus(value: PullRequestStatusEnum): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
+    inline def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
   }
 }

@@ -23,6 +23,6 @@ object navDelegateMod {
       location: ViewContainerRef
     ) = this()
     
-    var el: HTMLElement = js.native
+    /* protected */ var el: HTMLElement = js.native
   }
 }

@@ -16,16 +16,13 @@ trait ErrorCodeIOException
 }
 object ErrorCodeIOException {
   
-  @scala.inline
-  def apply(Context: XInterface, ErrCode: Double, Message: String): ErrorCodeIOException = {
+  inline def apply(Context: XInterface, ErrCode: Double, Message: String): ErrorCodeIOException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrCode = ErrCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorCodeIOException]
   }
   
-  @scala.inline
-  implicit class ErrorCodeIOExceptionMutableBuilder[Self <: ErrorCodeIOException] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorCodeIOException](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "ErrCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "ErrCode", value.asInstanceOf[js.Any])
   }
 }

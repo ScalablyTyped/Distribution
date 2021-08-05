@@ -11,6 +11,5 @@ object emptyBlockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def EmptyBlock(props: js.Any): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("EmptyBlock")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def EmptyBlock(props: js.Any): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("EmptyBlock")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

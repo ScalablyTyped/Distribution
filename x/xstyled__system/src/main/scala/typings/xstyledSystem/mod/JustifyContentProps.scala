@@ -14,27 +14,22 @@ trait JustifyContentProps extends StObject {
 }
 object JustifyContentProps {
   
-  @scala.inline
-  def apply(): JustifyContentProps = {
+  inline def apply(): JustifyContentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JustifyContentProps]
   }
   
-  @scala.inline
-  implicit class JustifyContentPropsMutableBuilder[Self <: JustifyContentProps] (val x: Self) extends AnyVal {
+  extension [Self <: JustifyContentProps](x: Self) {
     
-    @scala.inline
-    def setJustifyContent(
+    inline def setJustifyContent(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
         ]
     ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+    inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
-    @scala.inline
-    def setJustifyContentVarargs(
+    inline def setJustifyContentVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any)*
     ): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
   }

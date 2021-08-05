@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListType extends StObject
 object ListType {
   
-  @scala.inline
-  def Color: typings.gm.gmStrings.Color = "Color".asInstanceOf[typings.gm.gmStrings.Color]
+  inline def Color: typings.gm.gmStrings.Color = "Color".asInstanceOf[typings.gm.gmStrings.Color]
   
-  @scala.inline
-  def Delegate: typings.gm.gmStrings.Delegate = "Delegate".asInstanceOf[typings.gm.gmStrings.Delegate]
+  inline def Delegate: typings.gm.gmStrings.Delegate = "Delegate".asInstanceOf[typings.gm.gmStrings.Delegate]
   
-  @scala.inline
-  def Format: typings.gm.gmStrings.Format = "Format".asInstanceOf[typings.gm.gmStrings.Format]
+  inline def Format: typings.gm.gmStrings.Format = "Format".asInstanceOf[typings.gm.gmStrings.Format]
   
-  @scala.inline
-  def Magic: typings.gm.gmStrings.Magic = "Magic".asInstanceOf[typings.gm.gmStrings.Magic]
+  inline def Magic: typings.gm.gmStrings.Magic = "Magic".asInstanceOf[typings.gm.gmStrings.Magic]
   
-  @scala.inline
-  def Module: typings.gm.gmStrings.Module = "Module".asInstanceOf[typings.gm.gmStrings.Module]
+  inline def Module: typings.gm.gmStrings.Module = "Module".asInstanceOf[typings.gm.gmStrings.Module]
   
-  @scala.inline
-  def Resource: typings.gm.gmStrings.Resource = "Resource".asInstanceOf[typings.gm.gmStrings.Resource]
+  inline def Resource: typings.gm.gmStrings.Resource = "Resource".asInstanceOf[typings.gm.gmStrings.Resource]
   
-  @scala.inline
-  def Type: typings.gm.gmStrings.Type = "Type".asInstanceOf[typings.gm.gmStrings.Type]
+  inline def Type: typings.gm.gmStrings.Type = "Type".asInstanceOf[typings.gm.gmStrings.Type]
 }

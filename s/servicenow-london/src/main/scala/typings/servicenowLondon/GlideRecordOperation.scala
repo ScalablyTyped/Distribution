@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlideRecordOperation extends StObject
 object GlideRecordOperation {
   
-  @scala.inline
-  def delete: typings.servicenowLondon.servicenowLondonStrings.delete = "delete".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.delete]
+  inline def delete: typings.servicenowLondon.servicenowLondonStrings.delete = "delete".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.delete]
   
-  @scala.inline
-  def insert: typings.servicenowLondon.servicenowLondonStrings.insert = "insert".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.insert]
+  inline def insert: typings.servicenowLondon.servicenowLondonStrings.insert = "insert".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.insert]
   
-  @scala.inline
-  def update: typings.servicenowLondon.servicenowLondonStrings.update = "update".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.update]
+  inline def update: typings.servicenowLondon.servicenowLondonStrings.update = "update".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.update]
 }

@@ -21,22 +21,17 @@ trait INewAlbum extends StObject {
 }
 object INewAlbum {
   
-  @scala.inline
-  def apply(name: String): INewAlbum = {
+  inline def apply(name: String): INewAlbum = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewAlbum]
   }
   
-  @scala.inline
-  implicit class INewAlbumMutableBuilder[Self <: INewAlbum] (val x: Self) extends AnyVal {
+  extension [Self <: INewAlbum](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

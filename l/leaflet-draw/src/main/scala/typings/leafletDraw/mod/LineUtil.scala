@@ -14,6 +14,5 @@ object LineUtil {
     * Checks to see if two line segments intersect.
     * Does not handle degenerate cases.
     */
-  @scala.inline
-  def segmentsIntersect(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("segmentsIntersect")().asInstanceOf[Boolean]
+  inline def segmentsIntersect(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("segmentsIntersect")().asInstanceOf[Boolean]
 }

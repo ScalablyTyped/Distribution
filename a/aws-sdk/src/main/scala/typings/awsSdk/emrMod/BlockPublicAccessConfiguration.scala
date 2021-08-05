@@ -18,25 +18,19 @@ trait BlockPublicAccessConfiguration extends StObject {
 }
 object BlockPublicAccessConfiguration {
   
-  @scala.inline
-  def apply(BlockPublicSecurityGroupRules: Boolean): BlockPublicAccessConfiguration = {
+  inline def apply(BlockPublicSecurityGroupRules: Boolean): BlockPublicAccessConfiguration = {
     val __obj = js.Dynamic.literal(BlockPublicSecurityGroupRules = BlockPublicSecurityGroupRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockPublicAccessConfiguration]
   }
   
-  @scala.inline
-  implicit class BlockPublicAccessConfigurationMutableBuilder[Self <: BlockPublicAccessConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BlockPublicAccessConfiguration](x: Self) {
     
-    @scala.inline
-    def setBlockPublicSecurityGroupRules(value: Boolean): Self = StObject.set(x, "BlockPublicSecurityGroupRules", value.asInstanceOf[js.Any])
+    inline def setBlockPublicSecurityGroupRules(value: Boolean): Self = StObject.set(x, "BlockPublicSecurityGroupRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermittedPublicSecurityGroupRuleRanges(value: PortRanges): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", value.asInstanceOf[js.Any])
+    inline def setPermittedPublicSecurityGroupRuleRanges(value: PortRanges): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermittedPublicSecurityGroupRuleRangesUndefined: Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.undefined)
+    inline def setPermittedPublicSecurityGroupRuleRangesUndefined: Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.undefined)
     
-    @scala.inline
-    def setPermittedPublicSecurityGroupRuleRangesVarargs(value: PortRange*): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.Array(value :_*))
+    inline def setPermittedPublicSecurityGroupRuleRangesVarargs(value: PortRange*): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.Array(value :_*))
   }
 }

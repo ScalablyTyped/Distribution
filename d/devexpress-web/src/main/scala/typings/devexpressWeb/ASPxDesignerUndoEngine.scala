@@ -22,8 +22,7 @@ trait ASPxDesignerUndoEngine extends StObject {
 }
 object ASPxDesignerUndoEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearHistory: () => Unit,
     isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
     redo: () => Unit,
@@ -36,33 +35,25 @@ object ASPxDesignerUndoEngine {
     __obj.asInstanceOf[ASPxDesignerUndoEngine]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerUndoEngineMutableBuilder[Self <: ASPxDesignerUndoEngine] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerUndoEngine](x: Self) {
     
-    @scala.inline
-    def setClearHistory(value: () => Unit): Self = StObject.set(x, "clearHistory", js.Any.fromFunction0(value))
+    inline def setClearHistory(value: () => Unit): Self = StObject.set(x, "clearHistory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDirty(
+    inline def setIsDirty(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+    inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRedoEnabled(
+    inline def setRedoEnabled(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "redoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
+    inline def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndoAll(value: () => Unit): Self = StObject.set(x, "undoAll", js.Any.fromFunction0(value))
+    inline def setUndoAll(value: () => Unit): Self = StObject.set(x, "undoAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndoEnabled(
+    inline def setUndoEnabled(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "undoEnabled", value.asInstanceOf[js.Any])
   }

@@ -216,26 +216,20 @@ object Tags extends Shortcut {
   }
   object FindAllParams {
     
-    @scala.inline
-    def apply(): FindAllParams = {
+    inline def apply(): FindAllParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindAllParams]
     }
     
-    @scala.inline
-    implicit class FindAllParamsMutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
+    extension [Self <: FindAllParams](x: Self) {
       
-      @scala.inline
-      def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+      inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+      inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
       
-      @scala.inline
-      def setTeam(value: String | Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String | Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     }
   }
   

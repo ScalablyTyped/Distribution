@@ -57,8 +57,7 @@ object mod {
   }
   object VirtualModulesPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any => Unit,
       writeModule: (String, String) => Unit
     ): VirtualModulesPlugin = {
@@ -66,16 +65,13 @@ object mod {
       __obj.asInstanceOf[VirtualModulesPlugin]
     }
     
-    @scala.inline
-    implicit class VirtualModulesPluginMutableBuilder[Self <: VirtualModulesPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: VirtualModulesPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteModule(value: (String, String) => Unit): Self = StObject.set(x, "writeModule", js.Any.fromFunction2(value))
+      inline def setWriteModule(value: (String, String) => Unit): Self = StObject.set(x, "writeModule", js.Any.fromFunction2(value))
     }
   }
 }

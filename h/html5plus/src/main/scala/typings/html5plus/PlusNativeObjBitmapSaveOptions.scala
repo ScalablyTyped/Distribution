@@ -53,37 +53,27 @@ trait PlusNativeObjBitmapSaveOptions extends StObject {
 }
 object PlusNativeObjBitmapSaveOptions {
   
-  @scala.inline
-  def apply(): PlusNativeObjBitmapSaveOptions = {
+  inline def apply(): PlusNativeObjBitmapSaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjBitmapSaveOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjBitmapSaveOptionsMutableBuilder[Self <: PlusNativeObjBitmapSaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjBitmapSaveOptions](x: Self) {
     
-    @scala.inline
-    def setClip(value: PlusNativeObjRect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: PlusNativeObjRect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

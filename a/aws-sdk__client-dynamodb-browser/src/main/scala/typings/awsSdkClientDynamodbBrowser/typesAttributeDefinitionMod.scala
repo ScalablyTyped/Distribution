@@ -23,20 +23,16 @@ object typesAttributeDefinitionMod {
   }
   object AttributeDefinition {
     
-    @scala.inline
-    def apply(AttributeName: String, AttributeType: S | N | B | String): AttributeDefinition = {
+    inline def apply(AttributeName: String, AttributeType: S | N | B | String): AttributeDefinition = {
       val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeDefinition]
     }
     
-    @scala.inline
-    implicit class AttributeDefinitionMutableBuilder[Self <: AttributeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeDefinition](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeType(value: S | N | B | String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+      inline def setAttributeType(value: S | N | B | String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     }
   }
   

@@ -13,16 +13,13 @@ trait DescribeRobotRequest extends StObject {
 }
 object DescribeRobotRequest {
   
-  @scala.inline
-  def apply(robot: Arn): DescribeRobotRequest = {
+  inline def apply(robot: Arn): DescribeRobotRequest = {
     val __obj = js.Dynamic.literal(robot = robot.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRobotRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRobotRequestMutableBuilder[Self <: DescribeRobotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRobotRequest](x: Self) {
     
-    @scala.inline
-    def setRobot(value: Arn): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
+    inline def setRobot(value: Arn): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GetUserAttributeVerificationCodeResponse extends StObject {
 }
 object GetUserAttributeVerificationCodeResponse {
   
-  @scala.inline
-  def apply(): GetUserAttributeVerificationCodeResponse = {
+  inline def apply(): GetUserAttributeVerificationCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserAttributeVerificationCodeResponse]
   }
   
-  @scala.inline
-  implicit class GetUserAttributeVerificationCodeResponseMutableBuilder[Self <: GetUserAttributeVerificationCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserAttributeVerificationCodeResponse](x: Self) {
     
-    @scala.inline
-    def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
+    inline def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
+    inline def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
   }
 }

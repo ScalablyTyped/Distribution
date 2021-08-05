@@ -147,8 +147,7 @@ object interfacesMod {
   }
   object IObjectPool {
     
-    @scala.inline
-    def apply[T /* <: IObservableDisposable */](
+    inline def apply[T /* <: IObservableDisposable */](
       added: ISignal[IObjectPool[T], T],
       currentChanged: ISignal[IObjectPool[T], T | Null],
       dispose: () => Unit,
@@ -164,38 +163,27 @@ object interfacesMod {
       __obj.asInstanceOf[IObjectPool[T]]
     }
     
-    @scala.inline
-    implicit class IObjectPoolMutableBuilder[Self <: IObjectPool[?], T /* <: IObservableDisposable */] (val x: Self & IObjectPool[T]) extends AnyVal {
+    extension [Self <: IObjectPool[?], T /* <: IObservableDisposable */](x: Self & IObjectPool[T]) {
       
-      @scala.inline
-      def setAdded(value: ISignal[IObjectPool[T], T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+      inline def setAdded(value: ISignal[IObjectPool[T], T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentChanged(value: ISignal[IObjectPool[T], T | Null]): Self = StObject.set(x, "currentChanged", value.asInstanceOf[js.Any])
+      inline def setCurrentChanged(value: ISignal[IObjectPool[T], T | Null]): Self = StObject.set(x, "currentChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentNull: Self = StObject.set(x, "current", null)
+      inline def setCurrentNull: Self = StObject.set(x, "current", null)
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* obj */ T, Boolean] => js.Array[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* obj */ T, Boolean] => js.Array[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFind(value: js.Function1[/* obj */ T, Boolean] => js.UndefOr[T]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: js.Function1[/* obj */ T, Boolean] => js.UndefOr[T]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function1[/* obj */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function1[/* obj */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: ISignal[IObjectPool[T], T]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: ISignal[IObjectPool[T], T]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,8 +206,7 @@ object interfacesMod {
   }
   object IRestorable {
     
-    @scala.inline
-    def apply[T /* <: IObservableDisposable */, U](restore: IOptions[T] => js.Promise[U], restored: js.Promise[U]): IRestorable[T, U] = {
+    inline def apply[T /* <: IObservableDisposable */, U](restore: IOptions[T] => js.Promise[U], restored: js.Promise[U]): IRestorable[T, U] = {
       val __obj = js.Dynamic.literal(restore = js.Any.fromFunction1(restore), restored = restored.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRestorable[T, U]]
     }
@@ -245,8 +232,7 @@ object interfacesMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: IObservableDisposable */](
+      inline def apply[T /* <: IObservableDisposable */](
         command: String,
         connector: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String],
         name: T => String,
@@ -256,25 +242,19 @@ object interfacesMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T /* <: IObservableDisposable */] (val x: Self & IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T /* <: IObservableDisposable */](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setConnector(value: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+        inline def setConnector(value: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegistry(value: CommandRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: CommandRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class IRestorableMutableBuilder[Self <: IRestorable[?, ?], T /* <: IObservableDisposable */, U] (val x: Self & (IRestorable[T, U])) extends AnyVal {
+    extension [Self <: IRestorable[?, ?], T /* <: IObservableDisposable */, U](x: Self & (IRestorable[T, U])) {
       
-      @scala.inline
-      def setRestore(value: IOptions[T] => js.Promise[U]): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
+      inline def setRestore(value: IOptions[T] => js.Promise[U]): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRestored(value: js.Promise[U]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
+      inline def setRestored(value: js.Promise[U]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
     }
   }
   
@@ -299,8 +279,7 @@ object interfacesMod {
   }
   object IRestorer {
     
-    @scala.inline
-    def apply[T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V](
+    inline def apply[T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V](
       restore: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V],
       restored: js.Promise[V]
     ): IRestorer[T, U, V] = {
@@ -337,46 +316,34 @@ object interfacesMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: IObservableDisposable */](command: String, name: T => String): typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T] = {
+      inline def apply[T /* <: IObservableDisposable */](command: String, name: T => String): typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T] = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], name = js.Any.fromFunction1(name))
         __obj.asInstanceOf[typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[?], T /* <: IObservableDisposable */] (val x: Self & typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T]) extends AnyVal {
+      extension [Self <: typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[?], T /* <: IObservableDisposable */](x: Self & typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T]) {
         
-        @scala.inline
-        def setArgs(value: /* obj */ T => ReadonlyPartialJSONObject): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
+        inline def setArgs(value: /* obj */ T => ReadonlyPartialJSONObject): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: T => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+        inline def setName(value: T => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWhen(value: js.Promise[js.Any] | js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+        inline def setWhen(value: js.Promise[js.Any] | js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+        inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
         
-        @scala.inline
-        def setWhenVarargs(value: js.Promise[js.Any]*): Self = StObject.set(x, "when", js.Array(value :_*))
+        inline def setWhenVarargs(value: js.Promise[js.Any]*): Self = StObject.set(x, "when", js.Array(value :_*))
       }
     }
     
-    @scala.inline
-    implicit class IRestorerMutableBuilder[Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V] (val x: Self & (IRestorer[T, U, V])) extends AnyVal {
+    extension [Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V](x: Self & (IRestorer[T, U, V])) {
       
-      @scala.inline
-      def setRestore(value: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
+      inline def setRestore(value: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRestored(value: js.Promise[V]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
+      inline def setRestored(value: js.Promise[V]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
     }
   }
 }

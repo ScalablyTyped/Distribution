@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object LeafletKeyboardEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layer: js.Any,
     originalEvent: KeyboardEvent,
     propagatedFrom: js.Any,
@@ -28,10 +27,8 @@ object LeafletKeyboardEvent {
     __obj.asInstanceOf[LeafletKeyboardEvent]
   }
   
-  @scala.inline
-  implicit class LeafletKeyboardEventMutableBuilder[Self <: LeafletKeyboardEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LeafletKeyboardEvent](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: KeyboardEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: KeyboardEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

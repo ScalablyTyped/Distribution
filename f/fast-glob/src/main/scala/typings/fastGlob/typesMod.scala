@@ -46,62 +46,44 @@ object typesMod {
   }
   object MicromatchOptions {
     
-    @scala.inline
-    def apply(): MicromatchOptions = {
+    inline def apply(): MicromatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MicromatchOptions]
     }
     
-    @scala.inline
-    implicit class MicromatchOptionsMutableBuilder[Self <: MicromatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MicromatchOptions](x: Self) {
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setMatchBase(value: Boolean): Self = StObject.set(x, "matchBase", value.asInstanceOf[js.Any])
+      inline def setMatchBase(value: Boolean): Self = StObject.set(x, "matchBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchBaseUndefined: Self = StObject.set(x, "matchBase", js.undefined)
+      inline def setMatchBaseUndefined: Self = StObject.set(x, "matchBase", js.undefined)
       
-      @scala.inline
-      def setNobrace(value: Boolean): Self = StObject.set(x, "nobrace", value.asInstanceOf[js.Any])
+      inline def setNobrace(value: Boolean): Self = StObject.set(x, "nobrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNobraceUndefined: Self = StObject.set(x, "nobrace", js.undefined)
+      inline def setNobraceUndefined: Self = StObject.set(x, "nobrace", js.undefined)
       
-      @scala.inline
-      def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
+      inline def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
+      inline def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
       
-      @scala.inline
-      def setNoext(value: Boolean): Self = StObject.set(x, "noext", value.asInstanceOf[js.Any])
+      inline def setNoext(value: Boolean): Self = StObject.set(x, "noext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoextUndefined: Self = StObject.set(x, "noext", js.undefined)
+      inline def setNoextUndefined: Self = StObject.set(x, "noext", js.undefined)
       
-      @scala.inline
-      def setNoglobstar(value: Boolean): Self = StObject.set(x, "noglobstar", value.asInstanceOf[js.Any])
+      inline def setNoglobstar(value: Boolean): Self = StObject.set(x, "noglobstar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoglobstarUndefined: Self = StObject.set(x, "noglobstar", js.undefined)
+      inline def setNoglobstarUndefined: Self = StObject.set(x, "noglobstar", js.undefined)
       
-      @scala.inline
-      def setPosix(value: Boolean): Self = StObject.set(x, "posix", value.asInstanceOf[js.Any])
+      inline def setPosix(value: Boolean): Self = StObject.set(x, "posix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixUndefined: Self = StObject.set(x, "posix", js.undefined)
+      inline def setPosixUndefined: Self = StObject.set(x, "posix", js.undefined)
       
-      @scala.inline
-      def setStrictSlashes(value: Boolean): Self = StObject.set(x, "strictSlashes", value.asInstanceOf[js.Any])
+      inline def setStrictSlashes(value: Boolean): Self = StObject.set(x, "strictSlashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictSlashesUndefined: Self = StObject.set(x, "strictSlashes", js.undefined)
+      inline def setStrictSlashesUndefined: Self = StObject.set(x, "strictSlashes", js.undefined)
     }
   }
   
@@ -140,8 +122,7 @@ object typesMod {
   }
   object ReaderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deepFilter: typings.nodelibFsWalk.typesMod.Entry => Boolean,
       entryFilter: typings.nodelibFsWalk.typesMod.Entry => Boolean,
       errorFilter: Errno => Boolean,
@@ -153,26 +134,19 @@ object typesMod {
       __obj.asInstanceOf[ReaderOptions]
     }
     
-    @scala.inline
-    implicit class ReaderOptionsMutableBuilder[Self <: ReaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReaderOptions](x: Self) {
       
-      @scala.inline
-      def setDeepFilter(value: typings.nodelibFsWalk.typesMod.Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
+      inline def setDeepFilter(value: typings.nodelibFsWalk.typesMod.Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryFilter(value: typings.nodelibFsWalk.typesMod.Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
+      inline def setEntryFilter(value: typings.nodelibFsWalk.typesMod.Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      inline def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFs(value: FileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: FileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: Entry => EntryItem): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: Entry => EntryItem): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     }
   }
 }

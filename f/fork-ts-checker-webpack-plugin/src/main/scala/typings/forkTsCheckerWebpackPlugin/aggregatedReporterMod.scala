@@ -14,6 +14,5 @@ object aggregatedReporterMod {
   /**
     * This higher order reporter aggregates too frequent getReport requests to avoid unnecessary computation.
     */
-  @scala.inline
-  def createAggregatedReporter[TReporter /* <: Reporter */](reporter: TReporter): TReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createAggregatedReporter")(reporter.asInstanceOf[js.Any]).asInstanceOf[TReporter]
+  inline def createAggregatedReporter[TReporter /* <: Reporter */](reporter: TReporter): TReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createAggregatedReporter")(reporter.asInstanceOf[js.Any]).asInstanceOf[TReporter]
 }

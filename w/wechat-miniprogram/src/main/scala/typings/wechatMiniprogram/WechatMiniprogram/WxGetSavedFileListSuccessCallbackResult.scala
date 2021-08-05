@@ -13,22 +13,17 @@ trait WxGetSavedFileListSuccessCallbackResult extends StObject {
 }
 object WxGetSavedFileListSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, fileList: js.Array[FileItem]): WxGetSavedFileListSuccessCallbackResult = {
+  inline def apply(errMsg: String, fileList: js.Array[FileItem]): WxGetSavedFileListSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[WxGetSavedFileListSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class WxGetSavedFileListSuccessCallbackResultMutableBuilder[Self <: WxGetSavedFileListSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: WxGetSavedFileListSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileList(value: js.Array[FileItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[FileItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: FileItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: FileItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

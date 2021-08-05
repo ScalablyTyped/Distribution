@@ -36,31 +36,23 @@ trait SchemaChildLink extends StObject {
 }
 object SchemaChildLink {
   
-  @scala.inline
-  def apply(): SchemaChildLink = {
+  inline def apply(): SchemaChildLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChildLink]
   }
   
-  @scala.inline
-  implicit class SchemaChildLinkMutableBuilder[Self <: SchemaChildLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChildLink](x: Self) {
     
-    @scala.inline
-    def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
+    inline def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildIndexUndefined: Self = StObject.set(x, "childIndex", js.undefined)
+    inline def setChildIndexUndefined: Self = StObject.set(x, "childIndex", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mutexMod {
   
-  @scala.inline
-  def apply(): Mutex = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mutex]
+  inline def apply(): Mutex = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mutex]
   
   @JSImport("promise-the-world/mutex", JSImport.Namespace)
   @js.native

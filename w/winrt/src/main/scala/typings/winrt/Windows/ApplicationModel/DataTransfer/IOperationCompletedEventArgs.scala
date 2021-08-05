@@ -10,16 +10,13 @@ trait IOperationCompletedEventArgs extends StObject {
 }
 object IOperationCompletedEventArgs {
   
-  @scala.inline
-  def apply(operation: DataPackageOperation): IOperationCompletedEventArgs = {
+  inline def apply(operation: DataPackageOperation): IOperationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOperationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class IOperationCompletedEventArgsMutableBuilder[Self <: IOperationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IOperationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOperation(value: DataPackageOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: DataPackageOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

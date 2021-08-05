@@ -13,16 +13,13 @@ trait DeleteSecurityConfigurationInput extends StObject {
 }
 object DeleteSecurityConfigurationInput {
   
-  @scala.inline
-  def apply(Name: XmlString): DeleteSecurityConfigurationInput = {
+  inline def apply(Name: XmlString): DeleteSecurityConfigurationInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSecurityConfigurationInput]
   }
   
-  @scala.inline
-  implicit class DeleteSecurityConfigurationInputMutableBuilder[Self <: DeleteSecurityConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSecurityConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

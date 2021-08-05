@@ -56,8 +56,7 @@ trait XOptimizedStorage extends StObject {
 }
 object XOptimizedStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachToURL: (String, Boolean) => Unit,
     copyElementDirectlyTo: (String, XOptimizedStorage, String) => Unit,
     copyStreamElementData: (String, XStream) => Unit,
@@ -70,28 +69,20 @@ object XOptimizedStorage {
     __obj.asInstanceOf[XOptimizedStorage]
   }
   
-  @scala.inline
-  implicit class XOptimizedStorageMutableBuilder[Self <: XOptimizedStorage] (val x: Self) extends AnyVal {
+  extension [Self <: XOptimizedStorage](x: Self) {
     
-    @scala.inline
-    def setAttachToURL(value: (String, Boolean) => Unit): Self = StObject.set(x, "attachToURL", js.Any.fromFunction2(value))
+    inline def setAttachToURL(value: (String, Boolean) => Unit): Self = StObject.set(x, "attachToURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCopyElementDirectlyTo(value: (String, XOptimizedStorage, String) => Unit): Self = StObject.set(x, "copyElementDirectlyTo", js.Any.fromFunction3(value))
+    inline def setCopyElementDirectlyTo(value: (String, XOptimizedStorage, String) => Unit): Self = StObject.set(x, "copyElementDirectlyTo", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCopyStreamElementData(value: (String, XStream) => Unit): Self = StObject.set(x, "copyStreamElementData", js.Any.fromFunction2(value))
+    inline def setCopyStreamElementData(value: (String, XStream) => Unit): Self = StObject.set(x, "copyStreamElementData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetElementPropertyValue(value: (String, String) => js.Any): Self = StObject.set(x, "getElementPropertyValue", js.Any.fromFunction2(value))
+    inline def setGetElementPropertyValue(value: (String, String) => js.Any): Self = StObject.set(x, "getElementPropertyValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertRawNonEncrStreamElementDirect(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawNonEncrStreamElementDirect", js.Any.fromFunction2(value))
+    inline def setInsertRawNonEncrStreamElementDirect(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawNonEncrStreamElementDirect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertStreamElementDirect(value: (String, XInputStream, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "insertStreamElementDirect", js.Any.fromFunction3(value))
+    inline def setInsertStreamElementDirect(value: (String, XInputStream, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "insertStreamElementDirect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWriteAndAttachToStream(value: XStream => Unit): Self = StObject.set(x, "writeAndAttachToStream", js.Any.fromFunction1(value))
+    inline def setWriteAndAttachToStream(value: XStream => Unit): Self = StObject.set(x, "writeAndAttachToStream", js.Any.fromFunction1(value))
   }
 }

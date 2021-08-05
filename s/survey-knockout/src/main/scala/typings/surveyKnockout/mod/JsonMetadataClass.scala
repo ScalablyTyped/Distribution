@@ -44,12 +44,10 @@ object JsonMetadataClass {
   @JSImport("survey-knockout", "JsonMetadataClass.requiredSymbol")
   @js.native
   def requiredSymbol: String = js.native
-  @scala.inline
-  def requiredSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requiredSymbol")(x.asInstanceOf[js.Any])
+  inline def requiredSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requiredSymbol")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "JsonMetadataClass.typeSymbol")
   @js.native
   def typeSymbol: String = js.native
-  @scala.inline
-  def typeSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeSymbol")(x.asInstanceOf[js.Any])
+  inline def typeSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeSymbol")(x.asInstanceOf[js.Any])
 }

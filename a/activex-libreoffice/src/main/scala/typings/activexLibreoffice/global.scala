@@ -12,7 +12,7 @@ object global {
     extends StObject
        with typings.activexLibreoffice.sequence[T] {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var typekey: typings.activexLibreoffice.sequence[T] = js.native
   }
   
@@ -22,7 +22,7 @@ object global {
     extends StObject
        with typings.activexLibreoffice.`type` {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var typekey: typings.activexLibreoffice.`type` = js.native
   }
   

@@ -15,16 +15,13 @@ trait SecureFileReference
 }
 object SecureFileReference {
   
-  @scala.inline
-  def apply(alias: String, id: String): SecureFileReference = {
+  inline def apply(alias: String, id: String): SecureFileReference = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureFileReference]
   }
   
-  @scala.inline
-  implicit class SecureFileReferenceMutableBuilder[Self <: SecureFileReference] (val x: Self) extends AnyVal {
+  extension [Self <: SecureFileReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

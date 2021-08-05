@@ -126,44 +126,32 @@ object JQueryMmenu {
   }
   object ClassnamesConfigurations {
     
-    @scala.inline
-    def apply(): ClassnamesConfigurations = {
+    inline def apply(): ClassnamesConfigurations = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassnamesConfigurations]
     }
     
-    @scala.inline
-    implicit class ClassnamesConfigurationsMutableBuilder[Self <: ClassnamesConfigurations] (val x: Self) extends AnyVal {
+    extension [Self <: ClassnamesConfigurations](x: Self) {
       
-      @scala.inline
-      def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+      inline def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+      inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
       
-      @scala.inline
-      def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -202,44 +190,32 @@ object JQueryMmenu {
   }
   object Configurations {
     
-    @scala.inline
-    def apply(): Configurations = {
+    inline def apply(): Configurations = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configurations]
     }
     
-    @scala.inline
-    implicit class ConfigurationsMutableBuilder[Self <: Configurations] (val x: Self) extends AnyVal {
+    extension [Self <: Configurations](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: ClassnamesConfigurations): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: ClassnamesConfigurations): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setOpeningInterval(value: Double): Self = StObject.set(x, "openingInterval", value.asInstanceOf[js.Any])
+      inline def setOpeningInterval(value: Double): Self = StObject.set(x, "openingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpeningIntervalUndefined: Self = StObject.set(x, "openingInterval", js.undefined)
+      inline def setOpeningIntervalUndefined: Self = StObject.set(x, "openingInterval", js.undefined)
       
-      @scala.inline
-      def setPanelNodetype(value: String): Self = StObject.set(x, "panelNodetype", value.asInstanceOf[js.Any])
+      inline def setPanelNodetype(value: String): Self = StObject.set(x, "panelNodetype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelNodetypeUndefined: Self = StObject.set(x, "panelNodetype", js.undefined)
+      inline def setPanelNodetypeUndefined: Self = StObject.set(x, "panelNodetype", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
   
@@ -266,32 +242,24 @@ object JQueryMmenu {
   }
   object NavbarOptions {
     
-    @scala.inline
-    def apply(): NavbarOptions = {
+    inline def apply(): NavbarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavbarOptions]
     }
     
-    @scala.inline
-    implicit class NavbarOptionsMutableBuilder[Self <: NavbarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NavbarOptions](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLink(value: String): Self = StObject.set(x, "titleLink", value.asInstanceOf[js.Any])
+      inline def setTitleLink(value: String): Self = StObject.set(x, "titleLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLinkUndefined: Self = StObject.set(x, "titleLink", js.undefined)
+      inline def setTitleLinkUndefined: Self = StObject.set(x, "titleLink", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -321,32 +289,24 @@ object JQueryMmenu {
   }
   object OnclickOptions {
     
-    @scala.inline
-    def apply(): OnclickOptions = {
+    inline def apply(): OnclickOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnclickOptions]
     }
     
-    @scala.inline
-    implicit class OnclickOptionsMutableBuilder[Self <: OnclickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnclickOptions](x: Self) {
       
-      @scala.inline
-      def setClose(value: Boolean | js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Boolean | js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: Boolean | js.Any): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean | js.Any): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setSetSelected(value: Boolean | js.Any): Self = StObject.set(x, "setSelected", value.asInstanceOf[js.Any])
+      inline def setSetSelected(value: Boolean | js.Any): Self = StObject.set(x, "setSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetSelectedUndefined: Self = StObject.set(x, "setSelected", js.undefined)
+      inline def setSetSelectedUndefined: Self = StObject.set(x, "setSelected", js.undefined)
     }
   }
   
@@ -379,41 +339,30 @@ object JQueryMmenu {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[js.Object]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[js.Object]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: js.Object*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: js.Object*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setNavbar(value: NavbarOptions): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
+      inline def setNavbar(value: NavbarOptions): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
+      inline def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: OnclickOptions): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: OnclickOptions): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setSlidingSubmenus(value: Boolean): Self = StObject.set(x, "slidingSubmenus", value.asInstanceOf[js.Any])
+      inline def setSlidingSubmenus(value: Boolean): Self = StObject.set(x, "slidingSubmenus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidingSubmenusUndefined: Self = StObject.set(x, "slidingSubmenus", js.undefined)
+      inline def setSlidingSubmenusUndefined: Self = StObject.set(x, "slidingSubmenus", js.undefined)
     }
   }
 }

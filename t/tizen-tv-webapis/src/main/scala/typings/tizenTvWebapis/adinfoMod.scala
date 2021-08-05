@@ -52,23 +52,18 @@ object adinfoMod {
   }
   object AdInfoManager {
     
-    @scala.inline
-    def apply(getTIFA: () => String, getVersion: () => String, isLATEnabled: () => Boolean): AdInfoManager = {
+    inline def apply(getTIFA: () => String, getVersion: () => String, isLATEnabled: () => Boolean): AdInfoManager = {
       val __obj = js.Dynamic.literal(getTIFA = js.Any.fromFunction0(getTIFA), getVersion = js.Any.fromFunction0(getVersion), isLATEnabled = js.Any.fromFunction0(isLATEnabled))
       __obj.asInstanceOf[AdInfoManager]
     }
     
-    @scala.inline
-    implicit class AdInfoManagerMutableBuilder[Self <: AdInfoManager] (val x: Self) extends AnyVal {
+    extension [Self <: AdInfoManager](x: Self) {
       
-      @scala.inline
-      def setGetTIFA(value: () => String): Self = StObject.set(x, "getTIFA", js.Any.fromFunction0(value))
+      inline def setGetTIFA(value: () => String): Self = StObject.set(x, "getTIFA", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+      inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLATEnabled(value: () => Boolean): Self = StObject.set(x, "isLATEnabled", js.Any.fromFunction0(value))
+      inline def setIsLATEnabled(value: () => Boolean): Self = StObject.set(x, "isLATEnabled", js.Any.fromFunction0(value))
     }
   }
 }

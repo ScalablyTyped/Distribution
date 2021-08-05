@@ -11,19 +11,15 @@ trait Entries extends StObject {
 }
 object Entries {
   
-  @scala.inline
-  def apply(entries: js.Array[WorkerSchedule]): Entries = {
+  inline def apply(entries: js.Array[WorkerSchedule]): Entries = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entries]
   }
   
-  @scala.inline
-  implicit class EntriesMutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
+  extension [Self <: Entries](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[WorkerSchedule]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[WorkerSchedule]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: WorkerSchedule*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: WorkerSchedule*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

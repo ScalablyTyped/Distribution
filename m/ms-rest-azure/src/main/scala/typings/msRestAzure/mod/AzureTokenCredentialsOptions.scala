@@ -32,37 +32,27 @@ trait AzureTokenCredentialsOptions extends StObject {
 }
 object AzureTokenCredentialsOptions {
   
-  @scala.inline
-  def apply(): AzureTokenCredentialsOptions = {
+  inline def apply(): AzureTokenCredentialsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AzureTokenCredentialsOptions]
   }
   
-  @scala.inline
-  implicit class AzureTokenCredentialsOptionsMutableBuilder[Self <: AzureTokenCredentialsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AzureTokenCredentialsOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorizationScheme(value: String): Self = StObject.set(x, "authorizationScheme", value.asInstanceOf[js.Any])
+    inline def setAuthorizationScheme(value: String): Self = StObject.set(x, "authorizationScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationSchemeUndefined: Self = StObject.set(x, "authorizationScheme", js.undefined)
+    inline def setAuthorizationSchemeUndefined: Self = StObject.set(x, "authorizationScheme", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: AzureEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: AzureEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setTokenAudience(value: graph | batch | String): Self = StObject.set(x, "tokenAudience", value.asInstanceOf[js.Any])
+    inline def setTokenAudience(value: graph | batch | String): Self = StObject.set(x, "tokenAudience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenAudienceUndefined: Self = StObject.set(x, "tokenAudience", js.undefined)
+    inline def setTokenAudienceUndefined: Self = StObject.set(x, "tokenAudience", js.undefined)
     
-    @scala.inline
-    def setTokenCache(value: js.Any): Self = StObject.set(x, "tokenCache", value.asInstanceOf[js.Any])
+    inline def setTokenCache(value: js.Any): Self = StObject.set(x, "tokenCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenCacheUndefined: Self = StObject.set(x, "tokenCache", js.undefined)
+    inline def setTokenCacheUndefined: Self = StObject.set(x, "tokenCache", js.undefined)
   }
 }

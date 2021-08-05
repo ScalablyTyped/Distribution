@@ -14,22 +14,17 @@ trait CtxFormat extends StObject {
 }
 object CtxFormat {
   
-  @scala.inline
-  def apply(ctx: Print, format: js.Any, timeout: js.Any): CtxFormat = {
+  inline def apply(ctx: Print, format: js.Any, timeout: js.Any): CtxFormat = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtxFormat]
   }
   
-  @scala.inline
-  implicit class CtxFormatMutableBuilder[Self <: CtxFormat] (val x: Self) extends AnyVal {
+  extension [Self <: CtxFormat](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

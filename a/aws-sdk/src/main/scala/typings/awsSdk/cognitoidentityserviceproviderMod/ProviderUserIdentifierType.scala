@@ -23,31 +23,23 @@ trait ProviderUserIdentifierType extends StObject {
 }
 object ProviderUserIdentifierType {
   
-  @scala.inline
-  def apply(): ProviderUserIdentifierType = {
+  inline def apply(): ProviderUserIdentifierType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProviderUserIdentifierType]
   }
   
-  @scala.inline
-  implicit class ProviderUserIdentifierTypeMutableBuilder[Self <: ProviderUserIdentifierType] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderUserIdentifierType](x: Self) {
     
-    @scala.inline
-    def setProviderAttributeName(value: StringType): Self = StObject.set(x, "ProviderAttributeName", value.asInstanceOf[js.Any])
+    inline def setProviderAttributeName(value: StringType): Self = StObject.set(x, "ProviderAttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderAttributeNameUndefined: Self = StObject.set(x, "ProviderAttributeName", js.undefined)
+    inline def setProviderAttributeNameUndefined: Self = StObject.set(x, "ProviderAttributeName", js.undefined)
     
-    @scala.inline
-    def setProviderAttributeValue(value: StringType): Self = StObject.set(x, "ProviderAttributeValue", value.asInstanceOf[js.Any])
+    inline def setProviderAttributeValue(value: StringType): Self = StObject.set(x, "ProviderAttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderAttributeValueUndefined: Self = StObject.set(x, "ProviderAttributeValue", js.undefined)
+    inline def setProviderAttributeValueUndefined: Self = StObject.set(x, "ProviderAttributeValue", js.undefined)
     
-    @scala.inline
-    def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
+    inline def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait ParameterValidation extends StObject {
 }
 object ParameterValidation {
   
-  @scala.inline
-  def apply(): ParameterValidation = {
+  inline def apply(): ParameterValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterValidation]
   }
   
-  @scala.inline
-  implicit class ParameterValidationMutableBuilder[Self <: ParameterValidation] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterValidation](x: Self) {
     
-    @scala.inline
-    def setRegex(value: RegexValidation): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: RegexValidation): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
-    @scala.inline
-    def setValues(value: ValueValidation): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ValueValidation): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

@@ -39,43 +39,31 @@ trait ParamsResourceAccountsInsert
 }
 object ParamsResourceAccountsInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsInsert = {
+  inline def apply(): ParamsResourceAccountsInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsInsertMutableBuilder[Self <: ParamsResourceAccountsInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsInsert](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
-    @scala.inline
-    def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
+    inline def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
+    inline def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaAccount): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaAccount): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
+    inline def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
+    inline def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
   }
 }

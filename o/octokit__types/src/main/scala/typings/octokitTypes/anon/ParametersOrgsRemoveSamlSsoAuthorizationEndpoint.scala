@@ -17,8 +17,7 @@ trait ParametersOrgsRemoveSamlSsoAuthorizationEndpoint extends StObject {
 }
 object ParametersOrgsRemoveSamlSsoAuthorizationEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsRemoveSamlSsoAuthorizationEndpoint,
     request: OrgsRemoveSamlSsoAuthorizationRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersOrgsRemoveSamlSsoAuthorizationEndpoint {
     __obj.asInstanceOf[ParametersOrgsRemoveSamlSsoAuthorizationEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsRemoveSamlSsoAuthorizationEndpointMutableBuilder[Self <: ParametersOrgsRemoveSamlSsoAuthorizationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsRemoveSamlSsoAuthorizationEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsRemoveSamlSsoAuthorizationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsRemoveSamlSsoAuthorizationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: OrgsRemoveSamlSsoAuthorizationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OrgsRemoveSamlSsoAuthorizationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

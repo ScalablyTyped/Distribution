@@ -33,43 +33,31 @@ trait ListTaskDefinitionsRequest extends StObject {
 }
 object ListTaskDefinitionsRequest {
   
-  @scala.inline
-  def apply(): ListTaskDefinitionsRequest = {
+  inline def apply(): ListTaskDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTaskDefinitionsRequest]
   }
   
-  @scala.inline
-  implicit class ListTaskDefinitionsRequestMutableBuilder[Self <: ListTaskDefinitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTaskDefinitionsRequest](x: Self) {
     
-    @scala.inline
-    def setFamilyPrefix(value: String): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
+    inline def setFamilyPrefix(value: String): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyPrefixUndefined: Self = StObject.set(x, "familyPrefix", js.undefined)
+    inline def setFamilyPrefixUndefined: Self = StObject.set(x, "familyPrefix", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSort(value: SortOrder): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortOrder): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

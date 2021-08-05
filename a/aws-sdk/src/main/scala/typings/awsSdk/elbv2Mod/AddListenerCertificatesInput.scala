@@ -18,22 +18,17 @@ trait AddListenerCertificatesInput extends StObject {
 }
 object AddListenerCertificatesInput {
   
-  @scala.inline
-  def apply(Certificates: CertificateList, ListenerArn: ListenerArn): AddListenerCertificatesInput = {
+  inline def apply(Certificates: CertificateList, ListenerArn: ListenerArn): AddListenerCertificatesInput = {
     val __obj = js.Dynamic.literal(Certificates = Certificates.asInstanceOf[js.Any], ListenerArn = ListenerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddListenerCertificatesInput]
   }
   
-  @scala.inline
-  implicit class AddListenerCertificatesInputMutableBuilder[Self <: AddListenerCertificatesInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddListenerCertificatesInput](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: CertificateList): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: CertificateList): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "Certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "Certificates", js.Array(value :_*))
     
-    @scala.inline
-    def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
   }
 }

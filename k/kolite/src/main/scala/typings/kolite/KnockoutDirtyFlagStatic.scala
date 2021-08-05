@@ -12,16 +12,13 @@ trait KnockoutDirtyFlagStatic extends StObject {
 }
 object KnockoutDirtyFlagStatic {
   
-  @scala.inline
-  def apply(DirtyFlag: DirtyFlag): KnockoutDirtyFlagStatic = {
+  inline def apply(DirtyFlag: DirtyFlag): KnockoutDirtyFlagStatic = {
     val __obj = js.Dynamic.literal(DirtyFlag = DirtyFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutDirtyFlagStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutDirtyFlagStaticMutableBuilder[Self <: KnockoutDirtyFlagStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutDirtyFlagStatic](x: Self) {
     
-    @scala.inline
-    def setDirtyFlag(value: DirtyFlag): Self = StObject.set(x, "DirtyFlag", value.asInstanceOf[js.Any])
+    inline def setDirtyFlag(value: DirtyFlag): Self = StObject.set(x, "DirtyFlag", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ object ContentResultSetCapability {
   
   object Constants {
     
-    @scala.inline
-    def SORTED: `1` = 1.asInstanceOf[`1`]
+    inline def SORTED: `1` = 1.asInstanceOf[`1`]
   }
   type Constants = `1`
 }

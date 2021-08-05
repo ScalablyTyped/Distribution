@@ -27,37 +27,27 @@ trait AnnotationsElliottWaveTypePointsOptions extends StObject {
 }
 object AnnotationsElliottWaveTypePointsOptions {
   
-  @scala.inline
-  def apply(): AnnotationsElliottWaveTypePointsOptions = {
+  inline def apply(): AnnotationsElliottWaveTypePointsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsElliottWaveTypePointsOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsElliottWaveTypePointsOptionsMutableBuilder[Self <: AnnotationsElliottWaveTypePointsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsElliottWaveTypePointsOptions](x: Self) {
     
-    @scala.inline
-    def setControlPoint(value: Double): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
+    inline def setControlPoint(value: Double): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointUndefined: Self = StObject.set(x, "controlPoint", js.undefined)
+    inline def setControlPointUndefined: Self = StObject.set(x, "controlPoint", js.undefined)
     
-    @scala.inline
-    def setLabel(value: AnnotationsElliottWaveTypePointsLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: AnnotationsElliottWaveTypePointsLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

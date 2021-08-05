@@ -56,55 +56,39 @@ trait SchemaRouteStatus extends StObject {
 }
 object SchemaRouteStatus {
   
-  @scala.inline
-  def apply(): SchemaRouteStatus = {
+  inline def apply(): SchemaRouteStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouteStatus]
   }
   
-  @scala.inline
-  implicit class SchemaRouteStatusMutableBuilder[Self <: SchemaRouteStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouteStatus](x: Self) {
     
-    @scala.inline
-    def setAddress(value: SchemaAddressable): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: SchemaAddressable): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[SchemaRouteCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[SchemaRouteCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: SchemaRouteCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SchemaRouteCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainInternal(value: String): Self = StObject.set(x, "domainInternal", value.asInstanceOf[js.Any])
+    inline def setDomainInternal(value: String): Self = StObject.set(x, "domainInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainInternalUndefined: Self = StObject.set(x, "domainInternal", js.undefined)
+    inline def setDomainInternalUndefined: Self = StObject.set(x, "domainInternal", js.undefined)
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
-    @scala.inline
-    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+    inline def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
+    inline def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
-    @scala.inline
-    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
+    inline def setTrafficVarargs(value: SchemaTrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
   }
 }

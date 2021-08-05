@@ -39,50 +39,36 @@ object mod {
   }
   object StrategyOptions {
     
-    @scala.inline
-    def apply(): StrategyOptions = {
+    inline def apply(): StrategyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsMutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptions](x: Self) {
       
-      @scala.inline
-      def setFailedOnMissing(value: Boolean): Self = StObject.set(x, "failedOnMissing", value.asInstanceOf[js.Any])
+      inline def setFailedOnMissing(value: Boolean): Self = StObject.set(x, "failedOnMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedOnMissingUndefined: Self = StObject.set(x, "failedOnMissing", js.undefined)
+      inline def setFailedOnMissingUndefined: Self = StObject.set(x, "failedOnMissing", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
-      @scala.inline
-      def setTokenField(value: String): Self = StObject.set(x, "tokenField", value.asInstanceOf[js.Any])
+      inline def setTokenField(value: String): Self = StObject.set(x, "tokenField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenFieldUndefined: Self = StObject.set(x, "tokenField", js.undefined)
+      inline def setTokenFieldUndefined: Self = StObject.set(x, "tokenField", js.undefined)
       
-      @scala.inline
-      def setTokenHeader(value: String): Self = StObject.set(x, "tokenHeader", value.asInstanceOf[js.Any])
+      inline def setTokenHeader(value: String): Self = StObject.set(x, "tokenHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenHeaderUndefined: Self = StObject.set(x, "tokenHeader", js.undefined)
+      inline def setTokenHeaderUndefined: Self = StObject.set(x, "tokenHeader", js.undefined)
       
-      @scala.inline
-      def setTokenParams(value: String): Self = StObject.set(x, "tokenParams", value.asInstanceOf[js.Any])
+      inline def setTokenParams(value: String): Self = StObject.set(x, "tokenParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenParamsUndefined: Self = StObject.set(x, "tokenParams", js.undefined)
+      inline def setTokenParamsUndefined: Self = StObject.set(x, "tokenParams", js.undefined)
       
-      @scala.inline
-      def setTokenQuery(value: String): Self = StObject.set(x, "tokenQuery", value.asInstanceOf[js.Any])
+      inline def setTokenQuery(value: String): Self = StObject.set(x, "tokenQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenQueryUndefined: Self = StObject.set(x, "tokenQuery", js.undefined)
+      inline def setTokenQueryUndefined: Self = StObject.set(x, "tokenQuery", js.undefined)
     }
   }
   
@@ -102,47 +88,34 @@ object mod {
   }
   object StrategyOptionsWithRequest {
     
-    @scala.inline
-    def apply(): StrategyOptionsWithRequest = {
+    inline def apply(): StrategyOptionsWithRequest = {
       val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsWithRequestMutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptionsWithRequest](x: Self) {
       
-      @scala.inline
-      def setFailedOnMissing(value: Boolean): Self = StObject.set(x, "failedOnMissing", value.asInstanceOf[js.Any])
+      inline def setFailedOnMissing(value: Boolean): Self = StObject.set(x, "failedOnMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedOnMissingUndefined: Self = StObject.set(x, "failedOnMissing", js.undefined)
+      inline def setFailedOnMissingUndefined: Self = StObject.set(x, "failedOnMissing", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenField(value: String): Self = StObject.set(x, "tokenField", value.asInstanceOf[js.Any])
+      inline def setTokenField(value: String): Self = StObject.set(x, "tokenField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenFieldUndefined: Self = StObject.set(x, "tokenField", js.undefined)
+      inline def setTokenFieldUndefined: Self = StObject.set(x, "tokenField", js.undefined)
       
-      @scala.inline
-      def setTokenHeader(value: String): Self = StObject.set(x, "tokenHeader", value.asInstanceOf[js.Any])
+      inline def setTokenHeader(value: String): Self = StObject.set(x, "tokenHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenHeaderUndefined: Self = StObject.set(x, "tokenHeader", js.undefined)
+      inline def setTokenHeaderUndefined: Self = StObject.set(x, "tokenHeader", js.undefined)
       
-      @scala.inline
-      def setTokenParams(value: String): Self = StObject.set(x, "tokenParams", value.asInstanceOf[js.Any])
+      inline def setTokenParams(value: String): Self = StObject.set(x, "tokenParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenParamsUndefined: Self = StObject.set(x, "tokenParams", js.undefined)
+      inline def setTokenParamsUndefined: Self = StObject.set(x, "tokenParams", js.undefined)
       
-      @scala.inline
-      def setTokenQuery(value: String): Self = StObject.set(x, "tokenQuery", value.asInstanceOf[js.Any])
+      inline def setTokenQuery(value: String): Self = StObject.set(x, "tokenQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenQueryUndefined: Self = StObject.set(x, "tokenQuery", js.undefined)
+      inline def setTokenQueryUndefined: Self = StObject.set(x, "tokenQuery", js.undefined)
     }
   }
   
@@ -175,17 +148,14 @@ object mod {
   }
   object VerifyOptions {
     
-    @scala.inline
-    def apply(message: String): VerifyOptions = {
+    inline def apply(message: String): VerifyOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    @scala.inline
-    implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

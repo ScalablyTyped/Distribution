@@ -31,8 +31,7 @@ trait InkRecognizerContainer extends StObject {
 }
 object InkRecognizerContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRecognizers: () => IVectorView[InkRecognizer],
     recognizeAsync: (InkStrokeContainer, InkRecognitionTarget) => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
     setDefaultRecognizer: InkRecognizer => Unit
@@ -41,18 +40,14 @@ object InkRecognizerContainer {
     __obj.asInstanceOf[InkRecognizerContainer]
   }
   
-  @scala.inline
-  implicit class InkRecognizerContainerMutableBuilder[Self <: InkRecognizerContainer] (val x: Self) extends AnyVal {
+  extension [Self <: InkRecognizerContainer](x: Self) {
     
-    @scala.inline
-    def setGetRecognizers(value: () => IVectorView[InkRecognizer]): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
+    inline def setGetRecognizers(value: () => IVectorView[InkRecognizer]): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecognizeAsync(
+    inline def setRecognizeAsync(
       value: (InkStrokeContainer, InkRecognitionTarget) => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
     ): Self = StObject.set(x, "recognizeAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDefaultRecognizer(value: InkRecognizer => Unit): Self = StObject.set(x, "setDefaultRecognizer", js.Any.fromFunction1(value))
+    inline def setSetDefaultRecognizer(value: InkRecognizer => Unit): Self = StObject.set(x, "setDefaultRecognizer", js.Any.fromFunction1(value))
   }
 }

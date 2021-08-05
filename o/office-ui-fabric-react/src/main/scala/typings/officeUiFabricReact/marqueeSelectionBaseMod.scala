@@ -17,66 +17,66 @@ object marqueeSelectionBaseMod {
     extends Component[IMarqueeSelectionProps, IMarqueeSelectionState, js.Any] {
     def this(props: IMarqueeSelectionProps) = this()
     
-    var _allSelectedIndices: js.Any = js.native
+    /* private */ var _allSelectedIndices: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _autoScroll: js.Any = js.native
+    /* private */ var _autoScroll: js.Any = js.native
     
-    var _dragOrigin: js.Any = js.native
+    /* private */ var _dragOrigin: js.Any = js.native
     
-    var _evaluateSelection: js.Any = js.native
+    /* private */ var _evaluateSelection: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _getRootRect: js.Any = js.native
+    /* private */ var _getRootRect: js.Any = js.native
     
     /**
       * We do not want to start the marquee if we're trying to marquee
       * from within an existing marquee selection.
       */
-    var _isDragStartInSelection: js.Any = js.native
+    /* private */ var _isDragStartInSelection: js.Any = js.native
     
-    var _isInSelectionToggle: js.Any = js.native
+    /* private */ var _isInSelectionToggle: js.Any = js.native
     
     /** Determine if the mouse event occured on a scrollbar of the target element. */
-    var _isMouseEventOnScrollbar: js.Any = js.native
+    /* private */ var _isMouseEventOnScrollbar: js.Any = js.native
     
-    var _isPointInRectangle: js.Any = js.native
+    /* private */ var _isPointInRectangle: js.Any = js.native
     
-    var _isTouch: js.Any = js.native
+    /* private */ var _isTouch: js.Any = js.native
     
-    var _itemRectCache: js.Any = js.native
+    /* private */ var _itemRectCache: js.Any = js.native
     
-    var _lastMouseEvent: js.Any = js.native
+    /* private */ var _lastMouseEvent: js.Any = js.native
     
-    var _onAsyncMouseMove: js.Any = js.native
+    /* private */ var _onAsyncMouseMove: js.Any = js.native
     
-    var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: js.Any = js.native
     
-    var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: js.Any = js.native
     
-    var _onMouseUp: js.Any = js.native
+    /* private */ var _onMouseUp: js.Any = js.native
     
-    var _onPointerDown: js.Any = js.native
+    /* private */ var _onPointerDown: js.Any = js.native
     
-    var _onTouchStart: js.Any = js.native
+    /* private */ var _onTouchStart: js.Any = js.native
     
-    var _preservedIndicies: js.Any = js.native
+    /* private */ var _preservedIndicies: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _rootRect: js.Any = js.native
+    /* private */ var _rootRect: js.Any = js.native
     
-    var _scrollLeft: js.Any = js.native
+    /* private */ var _scrollLeft: js.Any = js.native
     
-    var _scrollTop: js.Any = js.native
+    /* private */ var _scrollTop: js.Any = js.native
     
-    var _scrollableParent: js.Any = js.native
+    /* private */ var _scrollableParent: js.Any = js.native
     
-    var _scrollableSurface: js.Any = js.native
+    /* private */ var _scrollableSurface: js.Any = js.native
     
-    var _selectedIndicies: js.Any = js.native
+    /* private */ var _selectedIndicies: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MMarqueeSelectionBase(): Unit = js.native
@@ -94,8 +94,7 @@ object marqueeSelectionBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/MarqueeSelection/MarqueeSelection.base", "MarqueeSelectionBase.defaultProps")
     @js.native
     def defaultProps: IsEnabled = js.native
-    @scala.inline
-    def defaultProps_=(x: IsEnabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IsEnabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IMarqueeSelectionState extends StObject {
@@ -106,26 +105,20 @@ object marqueeSelectionBaseMod {
   }
   object IMarqueeSelectionState {
     
-    @scala.inline
-    def apply(): IMarqueeSelectionState = {
+    inline def apply(): IMarqueeSelectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMarqueeSelectionState]
     }
     
-    @scala.inline
-    implicit class IMarqueeSelectionStateMutableBuilder[Self <: IMarqueeSelectionState] (val x: Self) extends AnyVal {
+    extension [Self <: IMarqueeSelectionState](x: Self) {
       
-      @scala.inline
-      def setDragOrigin(value: Point): Self = StObject.set(x, "dragOrigin", value.asInstanceOf[js.Any])
+      inline def setDragOrigin(value: Point): Self = StObject.set(x, "dragOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOriginUndefined: Self = StObject.set(x, "dragOrigin", js.undefined)
+      inline def setDragOriginUndefined: Self = StObject.set(x, "dragOrigin", js.undefined)
       
-      @scala.inline
-      def setDragRect(value: IRectangle): Self = StObject.set(x, "dragRect", value.asInstanceOf[js.Any])
+      inline def setDragRect(value: IRectangle): Self = StObject.set(x, "dragRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragRectUndefined: Self = StObject.set(x, "dragRect", js.undefined)
+      inline def setDragRectUndefined: Self = StObject.set(x, "dragRect", js.undefined)
     }
   }
 }

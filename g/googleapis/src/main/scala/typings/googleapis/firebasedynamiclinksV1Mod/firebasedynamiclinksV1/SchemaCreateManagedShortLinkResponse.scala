@@ -26,34 +26,25 @@ trait SchemaCreateManagedShortLinkResponse extends StObject {
 }
 object SchemaCreateManagedShortLinkResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateManagedShortLinkResponse = {
+  inline def apply(): SchemaCreateManagedShortLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateManagedShortLinkResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateManagedShortLinkResponseMutableBuilder[Self <: SchemaCreateManagedShortLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateManagedShortLinkResponse](x: Self) {
     
-    @scala.inline
-    def setManagedShortLink(value: SchemaManagedShortLink): Self = StObject.set(x, "managedShortLink", value.asInstanceOf[js.Any])
+    inline def setManagedShortLink(value: SchemaManagedShortLink): Self = StObject.set(x, "managedShortLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedShortLinkUndefined: Self = StObject.set(x, "managedShortLink", js.undefined)
+    inline def setManagedShortLinkUndefined: Self = StObject.set(x, "managedShortLink", js.undefined)
     
-    @scala.inline
-    def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
+    inline def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
+    inline def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
     
-    @scala.inline
-    def setWarning(value: js.Array[SchemaDynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: js.Array[SchemaDynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    @scala.inline
-    def setWarningVarargs(value: SchemaDynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: SchemaDynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
   }
 }

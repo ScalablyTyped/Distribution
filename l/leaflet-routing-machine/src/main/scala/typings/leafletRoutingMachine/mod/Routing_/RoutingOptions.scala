@@ -19,8 +19,7 @@ trait RoutingOptions extends StObject {
 }
 object RoutingOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowUTurns: Boolean,
     fileFormat: String,
     geometryOnly: Boolean,
@@ -31,22 +30,16 @@ object RoutingOptions {
     __obj.asInstanceOf[RoutingOptions]
   }
   
-  @scala.inline
-  implicit class RoutingOptionsMutableBuilder[Self <: RoutingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingOptions](x: Self) {
     
-    @scala.inline
-    def setAllowUTurns(value: Boolean): Self = StObject.set(x, "allowUTurns", value.asInstanceOf[js.Any])
+    inline def setAllowUTurns(value: Boolean): Self = StObject.set(x, "allowUTurns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileFormat(value: String): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
+    inline def setFileFormat(value: String): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryOnly(value: Boolean): Self = StObject.set(x, "geometryOnly", value.asInstanceOf[js.Any])
+    inline def setGeometryOnly(value: Boolean): Self = StObject.set(x, "geometryOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifyGeometry(value: Boolean): Self = StObject.set(x, "simplifyGeometry", value.asInstanceOf[js.Any])
+    inline def setSimplifyGeometry(value: Boolean): Self = StObject.set(x, "simplifyGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

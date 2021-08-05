@@ -20,28 +20,21 @@ trait CreateConfigurationSetEventDestinationRequest extends StObject {
 }
 object CreateConfigurationSetEventDestinationRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: _String): CreateConfigurationSetEventDestinationRequest = {
+  inline def apply(ConfigurationSetName: _String): CreateConfigurationSetEventDestinationRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationSetEventDestinationRequest]
   }
   
-  @scala.inline
-  implicit class CreateConfigurationSetEventDestinationRequestMutableBuilder[Self <: CreateConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConfigurationSetEventDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDestination(value: EventDestinationDefinition): Self = StObject.set(x, "EventDestination", value.asInstanceOf[js.Any])
+    inline def setEventDestination(value: EventDestinationDefinition): Self = StObject.set(x, "EventDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDestinationName(value: NonEmptyString): Self = StObject.set(x, "EventDestinationName", value.asInstanceOf[js.Any])
+    inline def setEventDestinationName(value: NonEmptyString): Self = StObject.set(x, "EventDestinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDestinationNameUndefined: Self = StObject.set(x, "EventDestinationName", js.undefined)
+    inline def setEventDestinationNameUndefined: Self = StObject.set(x, "EventDestinationName", js.undefined)
     
-    @scala.inline
-    def setEventDestinationUndefined: Self = StObject.set(x, "EventDestination", js.undefined)
+    inline def setEventDestinationUndefined: Self = StObject.set(x, "EventDestination", js.undefined)
   }
 }

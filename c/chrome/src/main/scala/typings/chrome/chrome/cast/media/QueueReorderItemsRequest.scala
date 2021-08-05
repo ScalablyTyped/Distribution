@@ -14,25 +14,19 @@ trait QueueReorderItemsRequest extends StObject {
 }
 object QueueReorderItemsRequest {
   
-  @scala.inline
-  def apply(customData: js.Object, insertBefore: Double, itemIds: js.Array[Double]): QueueReorderItemsRequest = {
+  inline def apply(customData: js.Object, insertBefore: Double, itemIds: js.Array[Double]): QueueReorderItemsRequest = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], itemIds = itemIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueReorderItemsRequest]
   }
   
-  @scala.inline
-  implicit class QueueReorderItemsRequestMutableBuilder[Self <: QueueReorderItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueueReorderItemsRequest](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+    inline def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIds(value: js.Array[Double]): Self = StObject.set(x, "itemIds", value.asInstanceOf[js.Any])
+    inline def setItemIds(value: js.Array[Double]): Self = StObject.set(x, "itemIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value :_*))
+    inline def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value :_*))
   }
 }

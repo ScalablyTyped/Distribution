@@ -24,9 +24,9 @@ object mediaMod {
   class Media protected () extends StObject {
     def this(config: Configuration, network: Network, data: js.Any) = this()
     
-    var _update: js.Any = js.native
+    /* private */ var _update: js.Any = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     def contentType: String = js.native
     
@@ -43,7 +43,7 @@ object mediaMod {
       */
     def getContentUrl(): js.Promise[String] = js.native
     
-    var network: js.Any = js.native
+    /* private */ var network: js.Any = js.native
     
     def serviceSid: String = js.native
     
@@ -51,6 +51,6 @@ object mediaMod {
     
     def size: Double = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
   }
 }

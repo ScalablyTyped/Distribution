@@ -12,6 +12,5 @@ object zindexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def zindex(model: UnitModel): PartialRecordVgEncodeChan = ^.asInstanceOf[js.Dynamic].applyDynamic("zindex")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordVgEncodeChan]
+  inline def zindex(model: UnitModel): PartialRecordVgEncodeChan = ^.asInstanceOf[js.Dynamic].applyDynamic("zindex")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordVgEncodeChan]
 }

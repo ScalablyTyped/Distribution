@@ -12,19 +12,15 @@ trait ResourceName extends StObject {
 }
 object ResourceName {
   
-  @scala.inline
-  def apply(dataService: typings.breeze.breeze.DataService, resourceName: String): ResourceName = {
+  inline def apply(dataService: typings.breeze.breeze.DataService, resourceName: String): ResourceName = {
     val __obj = js.Dynamic.literal(dataService = dataService.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceName]
   }
   
-  @scala.inline
-  implicit class ResourceNameMutableBuilder[Self <: ResourceName] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceName](x: Self) {
     
-    @scala.inline
-    def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    inline def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

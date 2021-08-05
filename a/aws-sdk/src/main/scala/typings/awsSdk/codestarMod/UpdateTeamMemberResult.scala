@@ -23,31 +23,23 @@ trait UpdateTeamMemberResult extends StObject {
 }
 object UpdateTeamMemberResult {
   
-  @scala.inline
-  def apply(): UpdateTeamMemberResult = {
+  inline def apply(): UpdateTeamMemberResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTeamMemberResult]
   }
   
-  @scala.inline
-  implicit class UpdateTeamMemberResultMutableBuilder[Self <: UpdateTeamMemberResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTeamMemberResult](x: Self) {
     
-    @scala.inline
-    def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
+    inline def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectRoleUndefined: Self = StObject.set(x, "projectRole", js.undefined)
+    inline def setProjectRoleUndefined: Self = StObject.set(x, "projectRole", js.undefined)
     
-    @scala.inline
-    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = StObject.set(x, "remoteAccessAllowed", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = StObject.set(x, "remoteAccessAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessAllowedUndefined: Self = StObject.set(x, "remoteAccessAllowed", js.undefined)
+    inline def setRemoteAccessAllowedUndefined: Self = StObject.set(x, "remoteAccessAllowed", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
   }
 }

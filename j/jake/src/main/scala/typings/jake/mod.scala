@@ -22,31 +22,26 @@ object mod {
       * Complets an asynchronous task, allowing Jake's execution to proceed to the next task
       * @param value A value to return from the task.
       */
-    @scala.inline
-    def complete(): Unit = js.Dynamic.global.applyDynamic("complete")().asInstanceOf[Unit]
-    @scala.inline
-    def complete(value: js.Any): Unit = js.Dynamic.global.applyDynamic("complete")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def complete(): Unit = js.Dynamic.global.applyDynamic("complete")().asInstanceOf[Unit]
+    inline def complete(value: js.Any): Unit = js.Dynamic.global.applyDynamic("complete")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a description for a Jake Task (or FileTask, DirectoryTask). When invoked, the description that iscreated will be associated with whatever Task is created next.
       * @param description The description for the Task
       */
-    @scala.inline
-    def desc(description: String): Unit = js.Dynamic.global.applyDynamic("desc")(description.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def desc(description: String): Unit = js.Dynamic.global.applyDynamic("desc")(description.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a Jake DirectoryTask. Can be used as a prerequisite for FileTasks, or for simply ensuring a directory exists for use with a Task's action.
       * @param name The name of the DiretoryTask
       */
-    @scala.inline
-    def directory(name: String): DirectoryTask = js.Dynamic.global.applyDynamic("directory")(name.asInstanceOf[js.Any]).asInstanceOf[DirectoryTask]
+    inline def directory(name: String): DirectoryTask = js.Dynamic.global.applyDynamic("directory")(name.asInstanceOf[js.Any]).asInstanceOf[DirectoryTask]
     
     /**
       * Causes Jake execution to abort with an error. Allows passing an optional error code, which will be used to set the exit-code of exiting process.
       * @param err The error to thow when aborting execution. If this argument is an Error object, it will simply be thrown. If a String, it will be used as the error-message. (If it is a multi-line String, the first line will be used as the Error message, and the remaining lines will be used as the error-stack.)
       */
-    @scala.inline
-    def fail(err: (js.Any | Error | String)*): Unit = js.Dynamic.global.applyDynamic("fail")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fail(err: (js.Any | Error | String)*): Unit = js.Dynamic.global.applyDynamic("fail")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a Jake FileTask.
@@ -55,32 +50,24 @@ object mod {
       * @param action The action to perform for this task
       * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
       */
-    @scala.inline
-    def file(name: String): FileTask = js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any]).asInstanceOf[FileTask]
-    @scala.inline
-    def file(name: String, prereqs: js.Array[String]): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[FileTask]
-    @scala.inline
-    def file(name: String, prereqs: js.Array[String], action: js.ThisFunction0[/* this */ FileTask, Unit]): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[FileTask]
-    @scala.inline
-    def file(
+    inline def file(name: String): FileTask = js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any]).asInstanceOf[FileTask]
+    inline def file(name: String, prereqs: js.Array[String]): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[FileTask]
+    inline def file(name: String, prereqs: js.Array[String], action: js.ThisFunction0[/* this */ FileTask, Unit]): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[FileTask]
+    inline def file(
       name: String,
       prereqs: js.Array[String],
       action: js.ThisFunction0[/* this */ FileTask, Unit],
       opts: FileTaskOptions
     ): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileTask]
-    @scala.inline
-    def file(name: String, prereqs: js.Array[String], action: Unit, opts: FileTaskOptions): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileTask]
-    @scala.inline
-    def file(name: String, prereqs: Unit, action: js.ThisFunction0[/* this */ FileTask, Unit]): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[FileTask]
-    @scala.inline
-    def file(
+    inline def file(name: String, prereqs: js.Array[String], action: Unit, opts: FileTaskOptions): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileTask]
+    inline def file(name: String, prereqs: Unit, action: js.ThisFunction0[/* this */ FileTask, Unit]): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[FileTask]
+    inline def file(
       name: String,
       prereqs: Unit,
       action: js.ThisFunction0[/* this */ FileTask, Unit],
       opts: FileTaskOptions
     ): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileTask]
-    @scala.inline
-    def file(name: String, prereqs: Unit, action: Unit, opts: FileTaskOptions): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileTask]
+    inline def file(name: String, prereqs: Unit, action: Unit, opts: FileTaskOptions): FileTask = (js.Dynamic.global.applyDynamic("file")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileTask]
     
     object jake {
       
@@ -326,86 +313,52 @@ object mod {
         def this(name: String, definition: js.Function0[Unit]) = this()
       }
       
-      @scala.inline
-      def addListener(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
+      inline def addListener(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
       
-      @scala.inline
-      def cpR(path: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def cpR(path: String, destination: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def cpR(path: String, destination: String, opts: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def cpR(path: String, destination: String, opts: UtilOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def cpR(path: String, destination: String, opts: UtilOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def cpR(path: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def cpR(path: String, destination: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def cpR(path: String, destination: String, opts: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def cpR(path: String, destination: String, opts: UtilOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def cpR(path: String, destination: String, opts: UtilOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpR")(path.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def createExec(cmds: String): Exec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: String, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: String, callback: js.Function0[Unit], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: String, callback: Unit, opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: String, opts: Unit, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: String, opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: String, opts: ExecOptions, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String]): Exec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String], callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String], callback: js.Function0[Unit], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String], callback: Unit, opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String], opts: Unit, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
-      @scala.inline
-      def createExec(cmds: js.Array[String], opts: ExecOptions, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: String): Exec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Exec_]
+      inline def createExec(cmds: String, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: String, callback: js.Function0[Unit], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: String, callback: Unit, opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: String, opts: Unit, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: String, opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: String, opts: ExecOptions, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String]): Exec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String], callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String], callback: js.Function0[Unit], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String], callback: Unit, opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String], opts: Unit, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
+      inline def createExec(cmds: js.Array[String], opts: ExecOptions, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
       
-      @scala.inline
-      def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def exec(cmds: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def exec(cmds: js.Array[String], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def exec(cmds: js.Array[String], callback: js.Function0[Unit], opts: ExecOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def exec(cmds: js.Array[String], callback: Unit, opts: ExecOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def exec(cmds: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def exec(cmds: js.Array[String], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def exec(cmds: js.Array[String], callback: js.Function0[Unit], opts: ExecOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def exec(cmds: js.Array[String], callback: Unit, opts: ExecOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+      inline def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
       
       @JSGlobal("jake.logger")
       @js.native
       def logger: Logger_ = js.native
-      @scala.inline
-      def logger_=(x: Logger_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
+      inline def logger_=(x: Logger_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def mkdirP(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def mkdirP(name: String, f: js.Function2[/* er */ Error, /* made */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def mkdirP(name: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def mkdirP(name: String, mode: String, f: js.Function2[/* er */ Error, /* made */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def mkdirP(name: String, mode: Unit, f: js.Function2[/* er */ Error, /* made */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def mkdirP(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def mkdirP(name: String, f: js.Function2[/* er */ Error, /* made */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def mkdirP(name: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def mkdirP(name: String, mode: String, f: js.Function2[/* er */ Error, /* made */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def mkdirP(name: String, mode: Unit, f: js.Function2[/* er */ Error, /* made */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirP")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def on(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
+      inline def on(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
       
-      @scala.inline
-      def once(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
+      inline def once(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
       
       object program {
         
@@ -416,40 +369,30 @@ object mod {
         @JSGlobal("jake.program.opts")
         @js.native
         def opts: Dictname = js.native
-        @scala.inline
-        def opts_=(x: Dictname): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opts")(x.asInstanceOf[js.Any])
+        inline def opts_=(x: Dictname): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opts")(x.asInstanceOf[js.Any])
         
         @JSGlobal("jake.program.taskArgs")
         @js.native
         def taskArgs: js.Array[String] = js.native
-        @scala.inline
-        def taskArgs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("taskArgs")(x.asInstanceOf[js.Any])
+        inline def taskArgs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("taskArgs")(x.asInstanceOf[js.Any])
         
         @JSGlobal("jake.program.taskNames")
         @js.native
         def taskNames: js.Array[String] = js.native
-        @scala.inline
-        def taskNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("taskNames")(x.asInstanceOf[js.Any])
+        inline def taskNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("taskNames")(x.asInstanceOf[js.Any])
       }
       
-      @scala.inline
-      def readdirR(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirR")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-      @scala.inline
-      def readdirR(name: String, opts: UtilOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirR")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      inline def readdirR(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirR")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+      inline def readdirR(name: String, opts: UtilOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirR")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
-      @scala.inline
-      def removeAllListener(event: String): typings.node.eventsMod.global.NodeJS.EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListener")(event.asInstanceOf[js.Any]).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
+      inline def removeAllListener(event: String): typings.node.eventsMod.global.NodeJS.EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListener")(event.asInstanceOf[js.Any]).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
       
-      @scala.inline
-      def removeListener(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
+      inline def removeListener(event: String, listener: js.Function): typings.node.eventsMod.global.NodeJS.EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.eventsMod.global.NodeJS.EventEmitter]
       
-      @scala.inline
-      def rmRf(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmRf")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def rmRf(name: String, opts: UtilOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmRf")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def rmRf(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmRf")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def rmRf(name: String, opts: UtilOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmRf")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def setMaxListeners(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setMaxListeners(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       //////////////////////////////////////////////////////////////////////////////////////////////
       // Running shell-commands ////////////////////////////////////////////////////////////////////
@@ -478,38 +421,28 @@ object mod {
       }
       object ExecOptions {
         
-        @scala.inline
-        def apply(): ExecOptions = {
+        inline def apply(): ExecOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ExecOptions]
         }
         
-        @scala.inline
-        implicit class ExecOptionsMutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
+        extension [Self <: ExecOptions](x: Self) {
           
-          @scala.inline
-          def setBreakOnError(value: Boolean): Self = StObject.set(x, "breakOnError", value.asInstanceOf[js.Any])
+          inline def setBreakOnError(value: Boolean): Self = StObject.set(x, "breakOnError", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBreakOnErrorUndefined: Self = StObject.set(x, "breakOnError", js.undefined)
+          inline def setBreakOnErrorUndefined: Self = StObject.set(x, "breakOnError", js.undefined)
           
-          @scala.inline
-          def setPrintStderr(value: Boolean): Self = StObject.set(x, "printStderr", value.asInstanceOf[js.Any])
+          inline def setPrintStderr(value: Boolean): Self = StObject.set(x, "printStderr", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPrintStderrUndefined: Self = StObject.set(x, "printStderr", js.undefined)
+          inline def setPrintStderrUndefined: Self = StObject.set(x, "printStderr", js.undefined)
           
-          @scala.inline
-          def setPrintStdout(value: Boolean): Self = StObject.set(x, "printStdout", value.asInstanceOf[js.Any])
+          inline def setPrintStdout(value: Boolean): Self = StObject.set(x, "printStdout", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPrintStdoutUndefined: Self = StObject.set(x, "printStdout", js.undefined)
+          inline def setPrintStdoutUndefined: Self = StObject.set(x, "printStdout", js.undefined)
           
-          @scala.inline
-          def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
+          inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
+          inline def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
         }
       }
       
@@ -535,20 +468,16 @@ object mod {
       }
       object FileTaskOptions {
         
-        @scala.inline
-        def apply(): FileTaskOptions = {
+        inline def apply(): FileTaskOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FileTaskOptions]
         }
         
-        @scala.inline
-        implicit class FileTaskOptionsMutableBuilder[Self <: FileTaskOptions] (val x: Self) extends AnyVal {
+        extension [Self <: FileTaskOptions](x: Self) {
           
-          @scala.inline
-          def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+          inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+          inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
         }
       }
       
@@ -563,20 +492,16 @@ object mod {
       }
       object Logger_ {
         
-        @scala.inline
-        def apply(error: js.Any => Unit, log: js.Any => Unit): Logger_ = {
+        inline def apply(error: js.Any => Unit, log: js.Any => Unit): Logger_ = {
           val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
           __obj.asInstanceOf[Logger_]
         }
         
-        @scala.inline
-        implicit class Logger_MutableBuilder[Self <: Logger_] (val x: Self) extends AnyVal {
+        extension [Self <: Logger_](x: Self) {
           
-          @scala.inline
-          def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+          inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setLog(value: js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+          inline def setLog(value: js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
         }
       }
       
@@ -595,26 +520,20 @@ object mod {
       }
       object TaskOptions {
         
-        @scala.inline
-        def apply(): TaskOptions = {
+        inline def apply(): TaskOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[TaskOptions]
         }
         
-        @scala.inline
-        implicit class TaskOptionsMutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
+        extension [Self <: TaskOptions](x: Self) {
           
-          @scala.inline
-          def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+          inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+          inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
           
-          @scala.inline
-          def setParallelLimit(value: Double): Self = StObject.set(x, "parallelLimit", value.asInstanceOf[js.Any])
+          inline def setParallelLimit(value: Double): Self = StObject.set(x, "parallelLimit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParallelLimitUndefined: Self = StObject.set(x, "parallelLimit", js.undefined)
+          inline def setParallelLimitUndefined: Self = StObject.set(x, "parallelLimit", js.undefined)
         }
       }
       
@@ -627,20 +546,16 @@ object mod {
       }
       object UtilOptions {
         
-        @scala.inline
-        def apply(): UtilOptions = {
+        inline def apply(): UtilOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[UtilOptions]
         }
         
-        @scala.inline
-        implicit class UtilOptionsMutableBuilder[Self <: UtilOptions] (val x: Self) extends AnyVal {
+        extension [Self <: UtilOptions](x: Self) {
           
-          @scala.inline
-          def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+          inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+          inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
         }
       }
     }
@@ -650,20 +565,16 @@ object mod {
       * @param name The name of the namespace
       * @param scope The enclosing scope for the namespaced tasks
       */
-    @scala.inline
-    def namespace(name: String, scope: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("namespace")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def namespace(name: String, scope: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("namespace")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def npmPublishTask(name: String): NpmPublishTask = js.Dynamic.global.applyDynamic("npmPublishTask")(name.asInstanceOf[js.Any]).asInstanceOf[NpmPublishTask]
-    @scala.inline
-    def npmPublishTask(name: String, definition: js.Function0[Unit]): NpmPublishTask = (js.Dynamic.global.applyDynamic("npmPublishTask")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[NpmPublishTask]
+    inline def npmPublishTask(name: String): NpmPublishTask = js.Dynamic.global.applyDynamic("npmPublishTask")(name.asInstanceOf[js.Any]).asInstanceOf[NpmPublishTask]
+    inline def npmPublishTask(name: String, definition: js.Function0[Unit]): NpmPublishTask = (js.Dynamic.global.applyDynamic("npmPublishTask")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[NpmPublishTask]
     /**
       * @param name The name of the NpmPublishTask
       * @param packageFiles The files to include in the package
       * @param definition A function that creates the package definition
       */
-    @scala.inline
-    def npmPublishTask(name: String, packageFiles: js.Array[String]): NpmPublishTask = (js.Dynamic.global.applyDynamic("npmPublishTask")(name.asInstanceOf[js.Any], packageFiles.asInstanceOf[js.Any])).asInstanceOf[NpmPublishTask]
+    inline def npmPublishTask(name: String, packageFiles: js.Array[String]): NpmPublishTask = (js.Dynamic.global.applyDynamic("npmPublishTask")(name.asInstanceOf[js.Any], packageFiles.asInstanceOf[js.Any])).asInstanceOf[NpmPublishTask]
     
     /**
       * Creates Jake FileTask from regex patterns
@@ -673,72 +584,56 @@ object mod {
       * @param action The action to perform for this task
       * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
       */
-    @scala.inline
-    def rule(pattern: RegExp, source: String): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: String, prereqs: js.Array[String]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: String, prereqs: js.Array[String], action: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(pattern: RegExp, source: String): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: String, prereqs: js.Array[String]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: String, prereqs: js.Array[String], action: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(
       pattern: RegExp,
       source: String,
       prereqs: js.Array[String],
       action: js.Function0[Unit],
       opts: TaskOptions
     ): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: String, prereqs: js.Array[String], action: Unit, opts: TaskOptions): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: String, prereqs: Unit, action: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: String, prereqs: Unit, action: js.Function0[Unit], opts: TaskOptions): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: String, prereqs: Unit, action: Unit, opts: TaskOptions): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: js.Function1[/* name */ String, String]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(pattern: RegExp, source: js.Function1[/* name */ String, String], prereqs: js.Array[String]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(pattern: RegExp, source: String, prereqs: js.Array[String], action: Unit, opts: TaskOptions): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: String, prereqs: Unit, action: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: String, prereqs: Unit, action: js.Function0[Unit], opts: TaskOptions): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: String, prereqs: Unit, action: Unit, opts: TaskOptions): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: js.Function1[/* name */ String, String]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(pattern: RegExp, source: js.Function1[/* name */ String, String], prereqs: js.Array[String]): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rule(
       pattern: RegExp,
       source: js.Function1[/* name */ String, String],
       prereqs: js.Array[String],
       action: js.Function0[Unit]
     ): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(
       pattern: RegExp,
       source: js.Function1[/* name */ String, String],
       prereqs: js.Array[String],
       action: js.Function0[Unit],
       opts: TaskOptions
     ): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(
       pattern: RegExp,
       source: js.Function1[/* name */ String, String],
       prereqs: js.Array[String],
       action: Unit,
       opts: TaskOptions
     ): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(
       pattern: RegExp,
       source: js.Function1[/* name */ String, String],
       prereqs: Unit,
       action: js.Function0[Unit]
     ): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(
       pattern: RegExp,
       source: js.Function1[/* name */ String, String],
       prereqs: Unit,
       action: js.Function0[Unit],
       opts: TaskOptions
     ): Unit = (js.Dynamic.global.applyDynamic("rule")(pattern.asInstanceOf[js.Any], source.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rule(
+    inline def rule(
       pattern: RegExp,
       source: js.Function1[/* name */ String, String],
       prereqs: Unit,
@@ -752,57 +647,44 @@ object mod {
       * @param action The action to perform for this task
       * @param opts
       */
-    @scala.inline
-    def task(name: String): Task = js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any]).asInstanceOf[Task]
-    @scala.inline
-    def task(name: String, action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any]): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(
+    inline def task(name: String): Task = js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any]).asInstanceOf[Task]
+    inline def task(name: String, action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any]): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def task(
       name: String,
       action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any],
       opts: TaskOptions
     ): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(name: String, action: Unit, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(name: String, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(
+    inline def task(name: String, action: Unit, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def task(name: String, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def task(
       name: String,
       opts: TaskOptions,
       action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any]
     ): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(name: String, prereqs: js.Array[String]): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(
+    inline def task(name: String, prereqs: js.Array[String]): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def task(
       name: String,
       prereqs: js.Array[String],
       action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any]
     ): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(
+    inline def task(
       name: String,
       prereqs: js.Array[String],
       action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any],
       opts: TaskOptions
     ): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(name: String, prereqs: js.Array[String], action: Unit, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(
+    inline def task(name: String, prereqs: js.Array[String], action: Unit, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def task(
       name: String,
       prereqs: Unit,
       action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any]
     ): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(
+    inline def task(
       name: String,
       prereqs: Unit,
       action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, js.Any],
       opts: TaskOptions
     ): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def task(name: String, prereqs: Unit, action: Unit, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def task(name: String, prereqs: Unit, action: Unit, opts: TaskOptions): Task = (js.Dynamic.global.applyDynamic("task")(name.asInstanceOf[js.Any], prereqs.asInstanceOf[js.Any], action.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
   }
 }

@@ -8,11 +8,9 @@ object detectNewlineStrings {
   
   @js.native
   sealed trait CarriagereturnLinefeed extends StObject
-  @scala.inline
-  def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
+  inline def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
   
   @js.native
   sealed trait Linefeed extends StObject
-  @scala.inline
-  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
+  inline def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
 }

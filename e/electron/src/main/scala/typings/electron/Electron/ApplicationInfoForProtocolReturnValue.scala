@@ -23,22 +23,17 @@ trait ApplicationInfoForProtocolReturnValue extends StObject {
 }
 object ApplicationInfoForProtocolReturnValue {
   
-  @scala.inline
-  def apply(icon: NativeImage_, name: String, path: String): ApplicationInfoForProtocolReturnValue = {
+  inline def apply(icon: NativeImage_, name: String, path: String): ApplicationInfoForProtocolReturnValue = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationInfoForProtocolReturnValue]
   }
   
-  @scala.inline
-  implicit class ApplicationInfoForProtocolReturnValueMutableBuilder[Self <: ApplicationInfoForProtocolReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationInfoForProtocolReturnValue](x: Self) {
     
-    @scala.inline
-    def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

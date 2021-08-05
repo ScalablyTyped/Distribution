@@ -13,19 +13,15 @@ trait ListSubscriptionsInput extends StObject {
 }
 object ListSubscriptionsInput {
   
-  @scala.inline
-  def apply(): ListSubscriptionsInput = {
+  inline def apply(): ListSubscriptionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSubscriptionsInput]
   }
   
-  @scala.inline
-  implicit class ListSubscriptionsInputMutableBuilder[Self <: ListSubscriptionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSubscriptionsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

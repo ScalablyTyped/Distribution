@@ -14,22 +14,17 @@ trait IngestGetPipelineParams
 }
 object IngestGetPipelineParams {
   
-  @scala.inline
-  def apply(id: String): IngestGetPipelineParams = {
+  inline def apply(id: String): IngestGetPipelineParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestGetPipelineParams]
   }
   
-  @scala.inline
-  implicit class IngestGetPipelineParamsMutableBuilder[Self <: IngestGetPipelineParams] (val x: Self) extends AnyVal {
+  extension [Self <: IngestGetPipelineParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
   }
 }

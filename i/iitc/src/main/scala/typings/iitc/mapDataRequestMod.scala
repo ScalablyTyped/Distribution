@@ -124,7 +124,7 @@ object mapDataRequestMod {
     var failedTileCount: Double = js.native
     
     /** store the parameters used for fetching the data. used to prevent unneeded refreshes after move/zoom */
-    var fetchedDataParams: js.Any = js.native
+    /* private */ var fetchedDataParams: js.Any = js.native
     
     def getStatus(): MapDataRequestStatus = js.native
     
@@ -177,7 +177,7 @@ object mapDataRequestMod {
     
     def startQueueTimer(delayInSecond: Double): Unit = js.native
     
-    var status: MapDataRequestStatus = js.native
+    /* private */ var status: MapDataRequestStatus = js.native
     
     var successTileCount: Double = js.native
   }
@@ -192,29 +192,22 @@ object mapDataRequestMod {
   }
   object MapDataRequestStatus {
     
-    @scala.inline
-    def apply(short: String): MapDataRequestStatus = {
+    inline def apply(short: String): MapDataRequestStatus = {
       val __obj = js.Dynamic.literal(short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapDataRequestStatus]
     }
     
-    @scala.inline
-    implicit class MapDataRequestStatusMutableBuilder[Self <: MapDataRequestStatus] (val x: Self) extends AnyVal {
+    extension [Self <: MapDataRequestStatus](x: Self) {
       
-      @scala.inline
-      def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+      inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
 }

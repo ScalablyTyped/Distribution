@@ -48,8 +48,7 @@ trait ContactPicker extends StObject {
 }
 object ContactPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     desiredFields: IVector[String],
     desiredFieldsWithContactFieldType: IVector[ContactFieldType],
@@ -63,31 +62,22 @@ object ContactPicker {
     __obj.asInstanceOf[ContactPicker]
   }
   
-  @scala.inline
-  implicit class ContactPickerMutableBuilder[Self <: ContactPicker] (val x: Self) extends AnyVal {
+  extension [Self <: ContactPicker](x: Self) {
     
-    @scala.inline
-    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
+    inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredFields(value: IVector[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
+    inline def setDesiredFields(value: IVector[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredFieldsWithContactFieldType(value: IVector[ContactFieldType]): Self = StObject.set(x, "desiredFieldsWithContactFieldType", value.asInstanceOf[js.Any])
+    inline def setDesiredFieldsWithContactFieldType(value: IVector[ContactFieldType]): Self = StObject.set(x, "desiredFieldsWithContactFieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickContactAsync(value: () => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "pickContactAsync", js.Any.fromFunction0(value))
+    inline def setPickContactAsync(value: () => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "pickContactAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
+    inline def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
+    inline def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickSingleContactAsync(value: () => IPromiseWithIAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))
+    inline def setPickSingleContactAsync(value: () => IPromiseWithIAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
   }
 }

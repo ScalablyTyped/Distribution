@@ -24,31 +24,23 @@ trait LaunchOptionsApp extends StObject {
 }
 object LaunchOptionsApp {
   
-  @scala.inline
-  def apply(path: String, query: IAnyObject, referrerInfo: ReferrerInfo, scene: Double): LaunchOptionsApp = {
+  inline def apply(path: String, query: IAnyObject, referrerInfo: ReferrerInfo, scene: Double): LaunchOptionsApp = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptionsApp]
   }
   
-  @scala.inline
-  implicit class LaunchOptionsAppMutableBuilder[Self <: LaunchOptionsApp] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchOptionsApp](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfo(value: ReferrerInfo): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
+    inline def setReferrerInfo(value: ReferrerInfo): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicketUndefined: Self = StObject.set(x, "shareTicket", js.undefined)
+    inline def setShareTicketUndefined: Self = StObject.set(x, "shareTicket", js.undefined)
   }
 }

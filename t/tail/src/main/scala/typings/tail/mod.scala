@@ -34,17 +34,14 @@ object mod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(Tail: TailConstructor): Static = {
+    inline def apply(Tail: TailConstructor): Static = {
       val __obj = js.Dynamic.literal(Tail = Tail.asInstanceOf[js.Any])
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setTail(value: TailConstructor): Self = StObject.set(x, "Tail", value.asInstanceOf[js.Any])
+      inline def setTail(value: TailConstructor): Self = StObject.set(x, "Tail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,65 +89,46 @@ object mod extends Shortcut {
   }
   object TailOptions {
     
-    @scala.inline
-    def apply(): TailOptions = {
+    inline def apply(): TailOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TailOptions]
     }
     
-    @scala.inline
-    implicit class TailOptionsMutableBuilder[Self <: TailOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TailOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFlushAtEOF(value: Boolean): Self = StObject.set(x, "flushAtEOF", value.asInstanceOf[js.Any])
+      inline def setFlushAtEOF(value: Boolean): Self = StObject.set(x, "flushAtEOF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushAtEOFUndefined: Self = StObject.set(x, "flushAtEOF", js.undefined)
+      inline def setFlushAtEOFUndefined: Self = StObject.set(x, "flushAtEOF", js.undefined)
       
-      @scala.inline
-      def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
       
-      @scala.inline
-      def setFromBeginning(value: Boolean): Self = StObject.set(x, "fromBeginning", value.asInstanceOf[js.Any])
+      inline def setFromBeginning(value: Boolean): Self = StObject.set(x, "fromBeginning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromBeginningUndefined: Self = StObject.set(x, "fromBeginning", js.undefined)
+      inline def setFromBeginningUndefined: Self = StObject.set(x, "fromBeginning", js.undefined)
       
-      @scala.inline
-      def setFsWatchOptions(value: Record[String, js.Any]): Self = StObject.set(x, "fsWatchOptions", value.asInstanceOf[js.Any])
+      inline def setFsWatchOptions(value: Record[String, js.Any]): Self = StObject.set(x, "fsWatchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsWatchOptionsUndefined: Self = StObject.set(x, "fsWatchOptions", js.undefined)
+      inline def setFsWatchOptionsUndefined: Self = StObject.set(x, "fsWatchOptions", js.undefined)
       
-      @scala.inline
-      def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String | RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String | RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorNull: Self = StObject.set(x, "separator", null)
+      inline def setSeparatorNull: Self = StObject.set(x, "separator", null)
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setUseWatchFile(value: Boolean): Self = StObject.set(x, "useWatchFile", value.asInstanceOf[js.Any])
+      inline def setUseWatchFile(value: Boolean): Self = StObject.set(x, "useWatchFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWatchFileUndefined: Self = StObject.set(x, "useWatchFile", js.undefined)
+      inline def setUseWatchFileUndefined: Self = StObject.set(x, "useWatchFile", js.undefined)
     }
   }
   

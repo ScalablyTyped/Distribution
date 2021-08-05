@@ -21,8 +21,7 @@ trait SheetCellCursor
      with XUsedAreaCursor
 object SheetCellCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SheetCellRange: SheetCellRange,
     XSheetCellCursor: XSheetCellCursor,
     XUsedAreaCursor: XUsedAreaCursor,

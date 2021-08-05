@@ -47,8 +47,7 @@ trait EventChannel extends StObject {
 }
 object EventChannel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emit: (String, js.Any) => Unit,
     off: (String, EventCallback) => Unit,
     on: (String, EventCallback) => Unit,
@@ -58,19 +57,14 @@ object EventChannel {
     __obj.asInstanceOf[EventChannel]
   }
   
-  @scala.inline
-  implicit class EventChannelMutableBuilder[Self <: EventChannel] (val x: Self) extends AnyVal {
+  extension [Self <: EventChannel](x: Self) {
     
-    @scala.inline
-    def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOff(value: (String, EventCallback) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, EventCallback) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, EventCallback) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, EventCallback) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnce(value: (String, EventCallback) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+    inline def setOnce(value: (String, EventCallback) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
   }
 }

@@ -41,6 +41,5 @@ object CreditDisplay {
   @JSImport("cesium", "CreditDisplay.cesiumCredit")
   @js.native
   def cesiumCredit: Credit = js.native
-  @scala.inline
-  def cesiumCredit_=(x: Credit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cesiumCredit")(x.asInstanceOf[js.Any])
+  inline def cesiumCredit_=(x: Credit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cesiumCredit")(x.asInstanceOf[js.Any])
 }

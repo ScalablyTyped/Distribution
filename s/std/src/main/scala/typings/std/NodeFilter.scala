@@ -11,16 +11,13 @@ trait NodeFilter extends StObject {
 }
 object NodeFilter {
   
-  @scala.inline
-  def apply(acceptNode: Node => Double): NodeFilter = {
+  inline def apply(acceptNode: Node => Double): NodeFilter = {
     val __obj = js.Dynamic.literal(acceptNode = js.Any.fromFunction1(acceptNode))
     __obj.asInstanceOf[NodeFilter]
   }
   
-  @scala.inline
-  implicit class NodeFilterMutableBuilder[Self <: NodeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: NodeFilter](x: Self) {
     
-    @scala.inline
-    def setAcceptNode(value: Node => Double): Self = StObject.set(x, "acceptNode", js.Any.fromFunction1(value))
+    inline def setAcceptNode(value: Node => Double): Self = StObject.set(x, "acceptNode", js.Any.fromFunction1(value))
   }
 }

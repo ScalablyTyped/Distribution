@@ -17,7 +17,7 @@ class TextureAtlas protected ()
   /* CompleteClass */
   override def findRegion(name: String): typings.phaser.spine.TextureAtlasRegion = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var load: js.Any = js.native
   
   /* CompleteClass */

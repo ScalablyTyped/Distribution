@@ -13,19 +13,15 @@ trait DescribeEntitiesDetectionJobResponse extends StObject {
 }
 object DescribeEntitiesDetectionJobResponse {
   
-  @scala.inline
-  def apply(): DescribeEntitiesDetectionJobResponse = {
+  inline def apply(): DescribeEntitiesDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEntitiesDetectionJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEntitiesDetectionJobResponseMutableBuilder[Self <: DescribeEntitiesDetectionJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEntitiesDetectionJobResponse](x: Self) {
     
-    @scala.inline
-    def setEntitiesDetectionJobProperties(value: EntitiesDetectionJobProperties): Self = StObject.set(x, "EntitiesDetectionJobProperties", value.asInstanceOf[js.Any])
+    inline def setEntitiesDetectionJobProperties(value: EntitiesDetectionJobProperties): Self = StObject.set(x, "EntitiesDetectionJobProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesDetectionJobPropertiesUndefined: Self = StObject.set(x, "EntitiesDetectionJobProperties", js.undefined)
+    inline def setEntitiesDetectionJobPropertiesUndefined: Self = StObject.set(x, "EntitiesDetectionJobProperties", js.undefined)
   }
 }

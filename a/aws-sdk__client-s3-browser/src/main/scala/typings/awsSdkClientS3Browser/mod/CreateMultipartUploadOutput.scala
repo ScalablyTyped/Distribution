@@ -10,8 +10,7 @@ trait CreateMultipartUploadOutput
      with typings.awsSdkClientS3Browser.typesCreateMultipartUploadOutputMod.CreateMultipartUploadOutput
 object CreateMultipartUploadOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CreateMultipartUploadOutput = {
+  inline def apply($metadata: ResponseMetadata): CreateMultipartUploadOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMultipartUploadOutput]
   }

@@ -43,55 +43,39 @@ trait Alias extends StObject {
 }
 object Alias {
   
-  @scala.inline
-  def apply(): Alias = {
+  inline def apply(): Alias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alias]
   }
   
-  @scala.inline
-  implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+  extension [Self <: Alias](x: Self) {
     
-    @scala.inline
-    def setAliasArn(value: AliasArn): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
+    inline def setAliasArn(value: AliasArn): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasArnUndefined: Self = StObject.set(x, "AliasArn", js.undefined)
+    inline def setAliasArnUndefined: Self = StObject.set(x, "AliasArn", js.undefined)
     
-    @scala.inline
-    def setAliasId(value: AliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: AliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
+    inline def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: FreeText): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: FreeText): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: Timestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: Timestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setName(value: NonBlankAndLengthConstraintString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonBlankAndLengthConstraintString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRoutingStrategy(value: RoutingStrategy): Self = StObject.set(x, "RoutingStrategy", value.asInstanceOf[js.Any])
+    inline def setRoutingStrategy(value: RoutingStrategy): Self = StObject.set(x, "RoutingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingStrategyUndefined: Self = StObject.set(x, "RoutingStrategy", js.undefined)
+    inline def setRoutingStrategyUndefined: Self = StObject.set(x, "RoutingStrategy", js.undefined)
   }
 }

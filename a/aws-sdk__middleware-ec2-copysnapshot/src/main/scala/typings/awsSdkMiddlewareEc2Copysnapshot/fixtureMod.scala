@@ -34,11 +34,9 @@ object fixtureMod {
   @js.native
   val context: HandlerExecutionContext = js.native
   
-  @scala.inline
-  def credentials(): js.Promise[AccessKeyId] = ^.asInstanceOf[js.Dynamic].applyDynamic("credentials")().asInstanceOf[js.Promise[AccessKeyId]]
+  inline def credentials(): js.Promise[AccessKeyId] = ^.asInstanceOf[js.Dynamic].applyDynamic("credentials")().asInstanceOf[js.Promise[AccessKeyId]]
   
-  @scala.inline
-  def endpoint(): js.Promise[Hostname] = ^.asInstanceOf[js.Dynamic].applyDynamic("endpoint")().asInstanceOf[js.Promise[Hostname]]
+  inline def endpoint(): js.Promise[Hostname] = ^.asInstanceOf[js.Dynamic].applyDynamic("endpoint")().asInstanceOf[js.Promise[Hostname]]
   
   @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "fromUtf8")
   @js.native
@@ -48,8 +46,7 @@ object fixtureMod {
   @js.native
   val nextHandler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<Promise<void>> */ js.Any = js.native
   
-  @scala.inline
-  def region(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("region")().asInstanceOf[js.Promise[String]]
+  inline def region(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("region")().asInstanceOf[js.Promise[String]]
   
   @JSImport("@aws-sdk/middleware-ec2-copysnapshot/build/fixture", "toBase64")
   @js.native

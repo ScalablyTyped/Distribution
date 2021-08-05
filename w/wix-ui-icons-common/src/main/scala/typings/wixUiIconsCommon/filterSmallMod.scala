@@ -22,20 +22,16 @@ object filterSmallMod extends Shortcut {
   }
   object FilterSmallProps {
     
-    @scala.inline
-    def apply(): FilterSmallProps = {
+    inline def apply(): FilterSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterSmallProps]
     }
     
-    @scala.inline
-    implicit class FilterSmallPropsMutableBuilder[Self <: FilterSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: FilterSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

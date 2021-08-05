@@ -39,51 +39,37 @@ object keystoreMod {
     override val privateKey: String = js.native
   }
   
-  @scala.inline
-  def decrypt(json: String, password: String): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
-  @scala.inline
-  def decrypt(json: String, password: String, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
-  @scala.inline
-  def decrypt(json: String, password: Bytes): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
-  @scala.inline
-  def decrypt(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  inline def decrypt(json: String, password: String): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  inline def decrypt(json: String, password: String, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  inline def decrypt(json: String, password: Bytes): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  inline def decrypt(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
   
-  @scala.inline
-  def decryptSync(json: String, password: String): KeystoreAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KeystoreAccount]
-  @scala.inline
-  def decryptSync(json: String, password: Bytes): KeystoreAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KeystoreAccount]
+  inline def decryptSync(json: String, password: String): KeystoreAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KeystoreAccount]
+  inline def decryptSync(json: String, password: Bytes): KeystoreAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KeystoreAccount]
   
-  @scala.inline
-  def encrypt(account: ExternallyOwnedAccount, password: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(
+  inline def encrypt(account: ExternallyOwnedAccount, password: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def encrypt(
     account: ExternallyOwnedAccount,
     password: String,
     options: Unit,
     progressCallback: ProgressCallback
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(account: ExternallyOwnedAccount, password: String, options: EncryptOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(
+  inline def encrypt(account: ExternallyOwnedAccount, password: String, options: EncryptOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def encrypt(
     account: ExternallyOwnedAccount,
     password: String,
     options: EncryptOptions,
     progressCallback: ProgressCallback
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(account: ExternallyOwnedAccount, password: Bytes): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(
+  inline def encrypt(account: ExternallyOwnedAccount, password: Bytes): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def encrypt(
     account: ExternallyOwnedAccount,
     password: Bytes,
     options: Unit,
     progressCallback: ProgressCallback
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(account: ExternallyOwnedAccount, password: Bytes, options: EncryptOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(
+  inline def encrypt(account: ExternallyOwnedAccount, password: Bytes, options: EncryptOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def encrypt(
     account: ExternallyOwnedAccount,
     password: Bytes,
     options: EncryptOptions,
@@ -106,50 +92,36 @@ object keystoreMod {
   }
   object EncryptOptions {
     
-    @scala.inline
-    def apply(): EncryptOptions = {
+    inline def apply(): EncryptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    @scala.inline
-    implicit class EncryptOptionsMutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setEntropy(value: BytesLike): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+      inline def setEntropy(value: BytesLike): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntropyUndefined: Self = StObject.set(x, "entropy", js.undefined)
+      inline def setEntropyUndefined: Self = StObject.set(x, "entropy", js.undefined)
       
-      @scala.inline
-      def setIv(value: BytesLike): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: BytesLike): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setSalt(value: BytesLike): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: BytesLike): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      @scala.inline
-      def setScrypt(value: N): Self = StObject.set(x, "scrypt", value.asInstanceOf[js.Any])
+      inline def setScrypt(value: N): Self = StObject.set(x, "scrypt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScryptUndefined: Self = StObject.set(x, "scrypt", js.undefined)
+      inline def setScryptUndefined: Self = StObject.set(x, "scrypt", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   
@@ -167,29 +139,22 @@ object keystoreMod {
   }
   object _KeystoreAccount {
     
-    @scala.inline
-    def apply(_isKeystoreAccount: Boolean, address: String, privateKey: String): _KeystoreAccount = {
+    inline def apply(_isKeystoreAccount: Boolean, address: String, privateKey: String): _KeystoreAccount = {
       val __obj = js.Dynamic.literal(_isKeystoreAccount = _isKeystoreAccount.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[_KeystoreAccount]
     }
     
-    @scala.inline
-    implicit class _KeystoreAccountMutableBuilder[Self <: _KeystoreAccount] (val x: Self) extends AnyVal {
+    extension [Self <: _KeystoreAccount](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMnemonic(value: Mnemonic): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+      inline def setMnemonic(value: Mnemonic): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
+      inline def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isKeystoreAccount(value: Boolean): Self = StObject.set(x, "_isKeystoreAccount", value.asInstanceOf[js.Any])
+      inline def set_isKeystoreAccount(value: Boolean): Self = StObject.set(x, "_isKeystoreAccount", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,19 +10,15 @@ trait NxAttributeExpressionValues extends StObject {
 }
 object NxAttributeExpressionValues {
   
-  @scala.inline
-  def apply(qValues: js.Array[NxSimpleValue]): NxAttributeExpressionValues = {
+  inline def apply(qValues: js.Array[NxSimpleValue]): NxAttributeExpressionValues = {
     val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxAttributeExpressionValues]
   }
   
-  @scala.inline
-  implicit class NxAttributeExpressionValuesMutableBuilder[Self <: NxAttributeExpressionValues] (val x: Self) extends AnyVal {
+  extension [Self <: NxAttributeExpressionValues](x: Self) {
     
-    @scala.inline
-    def setQValues(value: js.Array[NxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
+    inline def setQValues(value: js.Array[NxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValuesVarargs(value: NxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: NxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

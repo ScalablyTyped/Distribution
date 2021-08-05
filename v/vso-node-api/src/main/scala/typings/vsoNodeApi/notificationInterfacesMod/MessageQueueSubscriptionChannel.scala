@@ -10,17 +10,14 @@ trait MessageQueueSubscriptionChannel extends StObject {
 }
 object MessageQueueSubscriptionChannel {
   
-  @scala.inline
-  def apply(`type`: String): MessageQueueSubscriptionChannel = {
+  inline def apply(`type`: String): MessageQueueSubscriptionChannel = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageQueueSubscriptionChannel]
   }
   
-  @scala.inline
-  implicit class MessageQueueSubscriptionChannelMutableBuilder[Self <: MessageQueueSubscriptionChannel] (val x: Self) extends AnyVal {
+  extension [Self <: MessageQueueSubscriptionChannel](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait BaseStarterTemplate extends StObject {
 }
 object BaseStarterTemplate {
   
-  @scala.inline
-  def apply(name: String, projectType: ProjectType): BaseStarterTemplate = {
+  inline def apply(name: String, projectType: ProjectType): BaseStarterTemplate = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseStarterTemplate]
   }
   
-  @scala.inline
-  implicit class BaseStarterTemplateMutableBuilder[Self <: BaseStarterTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: BaseStarterTemplate](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectType(value: ProjectType): Self = StObject.set(x, "projectType", value.asInstanceOf[js.Any])
+    inline def setProjectType(value: ProjectType): Self = StObject.set(x, "projectType", value.asInstanceOf[js.Any])
   }
 }

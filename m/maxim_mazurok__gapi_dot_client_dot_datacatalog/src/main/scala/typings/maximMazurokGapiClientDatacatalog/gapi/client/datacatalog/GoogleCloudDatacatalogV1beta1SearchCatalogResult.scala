@@ -29,37 +29,27 @@ trait GoogleCloudDatacatalogV1beta1SearchCatalogResult extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1SearchCatalogResult {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1SearchCatalogResult = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1SearchCatalogResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1SearchCatalogResult]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogResultMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1SearchCatalogResult](x: Self) {
     
-    @scala.inline
-    def setLinkedResource(value: String): Self = StObject.set(x, "linkedResource", value.asInstanceOf[js.Any])
+    inline def setLinkedResource(value: String): Self = StObject.set(x, "linkedResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedResourceUndefined: Self = StObject.set(x, "linkedResource", js.undefined)
+    inline def setLinkedResourceUndefined: Self = StObject.set(x, "linkedResource", js.undefined)
     
-    @scala.inline
-    def setRelativeResourceName(value: String): Self = StObject.set(x, "relativeResourceName", value.asInstanceOf[js.Any])
+    inline def setRelativeResourceName(value: String): Self = StObject.set(x, "relativeResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeResourceNameUndefined: Self = StObject.set(x, "relativeResourceName", js.undefined)
+    inline def setRelativeResourceNameUndefined: Self = StObject.set(x, "relativeResourceName", js.undefined)
     
-    @scala.inline
-    def setSearchResultSubtype(value: String): Self = StObject.set(x, "searchResultSubtype", value.asInstanceOf[js.Any])
+    inline def setSearchResultSubtype(value: String): Self = StObject.set(x, "searchResultSubtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchResultSubtypeUndefined: Self = StObject.set(x, "searchResultSubtype", js.undefined)
+    inline def setSearchResultSubtypeUndefined: Self = StObject.set(x, "searchResultSubtype", js.undefined)
     
-    @scala.inline
-    def setSearchResultType(value: String): Self = StObject.set(x, "searchResultType", value.asInstanceOf[js.Any])
+    inline def setSearchResultType(value: String): Self = StObject.set(x, "searchResultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchResultTypeUndefined: Self = StObject.set(x, "searchResultType", js.undefined)
+    inline def setSearchResultTypeUndefined: Self = StObject.set(x, "searchResultType", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait StartThingRegistrationTaskResponse extends StObject {
 }
 object StartThingRegistrationTaskResponse {
   
-  @scala.inline
-  def apply(): StartThingRegistrationTaskResponse = {
+  inline def apply(): StartThingRegistrationTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartThingRegistrationTaskResponse]
   }
   
-  @scala.inline
-  implicit class StartThingRegistrationTaskResponseMutableBuilder[Self <: StartThingRegistrationTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartThingRegistrationTaskResponse](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

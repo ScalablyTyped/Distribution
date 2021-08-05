@@ -13,8 +13,7 @@ trait NumberLiteralType
 }
 object NumberLiteralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     freshType: LiteralType,
     getApparentProperties: () => js.Array[Symbol],
@@ -47,10 +46,8 @@ object NumberLiteralType {
     __obj.asInstanceOf[NumberLiteralType]
   }
   
-  @scala.inline
-  implicit class NumberLiteralTypeMutableBuilder[Self <: NumberLiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: NumberLiteralType](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

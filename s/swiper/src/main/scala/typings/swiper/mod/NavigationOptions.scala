@@ -45,43 +45,31 @@ trait NavigationOptions extends StObject {
 }
 object NavigationOptions {
   
-  @scala.inline
-  def apply(): NavigationOptions = {
+  inline def apply(): NavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationOptions]
   }
   
-  @scala.inline
-  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationOptions](x: Self) {
     
-    @scala.inline
-    def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
+    inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
+    inline def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
     
-    @scala.inline
-    def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
+    inline def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
+    inline def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
     
-    @scala.inline
-    def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
+    inline def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
+    inline def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
     
-    @scala.inline
-    def setNextEl(value: SelectableElement): Self = StObject.set(x, "nextEl", value.asInstanceOf[js.Any])
+    inline def setNextEl(value: SelectableElement): Self = StObject.set(x, "nextEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextElUndefined: Self = StObject.set(x, "nextEl", js.undefined)
+    inline def setNextElUndefined: Self = StObject.set(x, "nextEl", js.undefined)
     
-    @scala.inline
-    def setPrevEl(value: SelectableElement): Self = StObject.set(x, "prevEl", value.asInstanceOf[js.Any])
+    inline def setPrevEl(value: SelectableElement): Self = StObject.set(x, "prevEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevElUndefined: Self = StObject.set(x, "prevEl", js.undefined)
+    inline def setPrevElUndefined: Self = StObject.set(x, "prevEl", js.undefined)
   }
 }

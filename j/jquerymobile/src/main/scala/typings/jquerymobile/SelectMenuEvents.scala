@@ -11,19 +11,15 @@ trait SelectMenuEvents extends StObject {
 }
 object SelectMenuEvents {
   
-  @scala.inline
-  def apply(): SelectMenuEvents = {
+  inline def apply(): SelectMenuEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectMenuEvents]
   }
   
-  @scala.inline
-  implicit class SelectMenuEventsMutableBuilder[Self <: SelectMenuEvents] (val x: Self) extends AnyVal {
+  extension [Self <: SelectMenuEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

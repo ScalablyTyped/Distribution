@@ -15,16 +15,13 @@ trait DescribeClusterOperationRequest extends StObject {
 }
 object DescribeClusterOperationRequest {
   
-  @scala.inline
-  def apply(ClusterOperationArn: string): DescribeClusterOperationRequest = {
+  inline def apply(ClusterOperationArn: string): DescribeClusterOperationRequest = {
     val __obj = js.Dynamic.literal(ClusterOperationArn = ClusterOperationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterOperationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeClusterOperationRequestMutableBuilder[Self <: DescribeClusterOperationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClusterOperationRequest](x: Self) {
     
-    @scala.inline
-    def setClusterOperationArn(value: string): Self = StObject.set(x, "ClusterOperationArn", value.asInstanceOf[js.Any])
+    inline def setClusterOperationArn(value: string): Self = StObject.set(x, "ClusterOperationArn", value.asInstanceOf[js.Any])
   }
 }

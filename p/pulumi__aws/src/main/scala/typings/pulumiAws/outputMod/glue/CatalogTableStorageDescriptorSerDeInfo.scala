@@ -24,31 +24,23 @@ trait CatalogTableStorageDescriptorSerDeInfo extends StObject {
 }
 object CatalogTableStorageDescriptorSerDeInfo {
   
-  @scala.inline
-  def apply(): CatalogTableStorageDescriptorSerDeInfo = {
+  inline def apply(): CatalogTableStorageDescriptorSerDeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatalogTableStorageDescriptorSerDeInfo]
   }
   
-  @scala.inline
-  implicit class CatalogTableStorageDescriptorSerDeInfoMutableBuilder[Self <: CatalogTableStorageDescriptorSerDeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CatalogTableStorageDescriptorSerDeInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setSerializationLibrary(value: String): Self = StObject.set(x, "serializationLibrary", value.asInstanceOf[js.Any])
+    inline def setSerializationLibrary(value: String): Self = StObject.set(x, "serializationLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationLibraryUndefined: Self = StObject.set(x, "serializationLibrary", js.undefined)
+    inline def setSerializationLibraryUndefined: Self = StObject.set(x, "serializationLibrary", js.undefined)
   }
 }

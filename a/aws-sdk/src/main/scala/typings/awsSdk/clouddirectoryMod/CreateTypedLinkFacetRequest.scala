@@ -18,19 +18,15 @@ trait CreateTypedLinkFacetRequest extends StObject {
 }
 object CreateTypedLinkFacetRequest {
   
-  @scala.inline
-  def apply(Facet: TypedLinkFacet, SchemaArn: Arn): CreateTypedLinkFacetRequest = {
+  inline def apply(Facet: TypedLinkFacet, SchemaArn: Arn): CreateTypedLinkFacetRequest = {
     val __obj = js.Dynamic.literal(Facet = Facet.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTypedLinkFacetRequest]
   }
   
-  @scala.inline
-  implicit class CreateTypedLinkFacetRequestMutableBuilder[Self <: CreateTypedLinkFacetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTypedLinkFacetRequest](x: Self) {
     
-    @scala.inline
-    def setFacet(value: TypedLinkFacet): Self = StObject.set(x, "Facet", value.asInstanceOf[js.Any])
+    inline def setFacet(value: TypedLinkFacet): Self = StObject.set(x, "Facet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

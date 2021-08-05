@@ -14,15 +14,14 @@ trait FileDialogFilter extends StObject {
   
   val Extensions: String
   
-  @JSName("Office.FileDialogFilter_typekey")
+  /* private */ @JSName("Office.FileDialogFilter_typekey")
   var OfficeDotFileDialogFilter_typekey: FileDialogFilter
   
   val Parent: js.Any
 }
 object FileDialogFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Description: String,
@@ -35,25 +34,18 @@ object FileDialogFilter {
     __obj.asInstanceOf[FileDialogFilter]
   }
   
-  @scala.inline
-  implicit class FileDialogFilterMutableBuilder[Self <: FileDialogFilter] (val x: Self) extends AnyVal {
+  extension [Self <: FileDialogFilter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotFileDialogFilter_typekey(value: FileDialogFilter): Self = StObject.set(x, "Office.FileDialogFilter_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotFileDialogFilter_typekey(value: FileDialogFilter): Self = StObject.set(x, "Office.FileDialogFilter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

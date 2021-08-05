@@ -13,16 +13,13 @@ trait DeleteBackendEnvironmentResult extends StObject {
 }
 object DeleteBackendEnvironmentResult {
   
-  @scala.inline
-  def apply(backendEnvironment: BackendEnvironment): DeleteBackendEnvironmentResult = {
+  inline def apply(backendEnvironment: BackendEnvironment): DeleteBackendEnvironmentResult = {
     val __obj = js.Dynamic.literal(backendEnvironment = backendEnvironment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackendEnvironmentResult]
   }
   
-  @scala.inline
-  implicit class DeleteBackendEnvironmentResultMutableBuilder[Self <: DeleteBackendEnvironmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackendEnvironmentResult](x: Self) {
     
-    @scala.inline
-    def setBackendEnvironment(value: BackendEnvironment): Self = StObject.set(x, "backendEnvironment", value.asInstanceOf[js.Any])
+    inline def setBackendEnvironment(value: BackendEnvironment): Self = StObject.set(x, "backendEnvironment", value.asInstanceOf[js.Any])
   }
 }

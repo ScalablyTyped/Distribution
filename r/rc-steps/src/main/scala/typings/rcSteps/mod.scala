@@ -22,14 +22,12 @@ object mod {
     @JSImport("rc-steps", "default.Step")
     @js.native
     def Step: Instantiable0[typings.rcSteps.stepMod.default] = js.native
-    @scala.inline
-    def Step_=(x: Instantiable0[typings.rcSteps.stepMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    inline def Step_=(x: Instantiable0[typings.rcSteps.stepMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-steps", "default.defaultProps")
     @js.native
     def defaultProps: Current = js.native
-    @scala.inline
-    def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rc-steps", "Step")

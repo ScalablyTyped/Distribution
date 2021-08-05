@@ -19,8 +19,7 @@ trait ExtrudeSymbol3DLayerMaterial
 }
 object ExtrudeSymbol3DLayerMaterial {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -32,13 +31,10 @@ object ExtrudeSymbol3DLayerMaterial {
     __obj.asInstanceOf[ExtrudeSymbol3DLayerMaterial]
   }
   
-  @scala.inline
-  implicit class ExtrudeSymbol3DLayerMaterialMutableBuilder[Self <: ExtrudeSymbol3DLayerMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: ExtrudeSymbol3DLayerMaterial](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

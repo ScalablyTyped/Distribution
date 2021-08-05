@@ -14,25 +14,19 @@ trait JobTemplate extends StObject {
 }
 object JobTemplate {
   
-  @scala.inline
-  def apply(): JobTemplate = {
+  inline def apply(): JobTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobTemplate]
   }
   
-  @scala.inline
-  implicit class JobTemplateMutableBuilder[Self <: JobTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: JobTemplate](x: Self) {
     
-    @scala.inline
-    def setConfig(value: JobConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: JobConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

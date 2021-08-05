@@ -13,16 +13,13 @@ trait DeleteEvaluationResultsRequest extends StObject {
 }
 object DeleteEvaluationResultsRequest {
   
-  @scala.inline
-  def apply(ConfigRuleName: StringWithCharLimit64): DeleteEvaluationResultsRequest = {
+  inline def apply(ConfigRuleName: StringWithCharLimit64): DeleteEvaluationResultsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEvaluationResultsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEvaluationResultsRequestMutableBuilder[Self <: DeleteEvaluationResultsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEvaluationResultsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
   }
 }

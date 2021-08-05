@@ -18,8 +18,7 @@ trait Bend
 }
 object Bend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,
@@ -46,16 +45,12 @@ object Bend {
     __obj.asInstanceOf[Bend]
   }
   
-  @scala.inline
-  implicit class BendMutableBuilder[Self <: Bend] (val x: Self) extends AnyVal {
+  extension [Self <: Bend](x: Self) {
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFont(value: String => Bend): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
+    inline def setSetFont(value: String => Bend): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateWidth(value: () => Bend): Self = StObject.set(x, "updateWidth", js.Any.fromFunction0(value))
+    inline def setUpdateWidth(value: () => Bend): Self = StObject.set(x, "updateWidth", js.Any.fromFunction0(value))
   }
 }

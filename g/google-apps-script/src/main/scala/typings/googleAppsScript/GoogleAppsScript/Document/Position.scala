@@ -44,8 +44,7 @@ trait Position extends StObject {
 }
 object Position {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getElement: () => Element,
     getOffset: () => Integer,
     getSurroundingText: () => Text,
@@ -58,28 +57,20 @@ object Position {
     __obj.asInstanceOf[Position]
   }
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOffset(value: () => Integer): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
+    inline def setGetOffset(value: () => Integer): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSurroundingText(value: () => Text): Self = StObject.set(x, "getSurroundingText", js.Any.fromFunction0(value))
+    inline def setGetSurroundingText(value: () => Text): Self = StObject.set(x, "getSurroundingText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSurroundingTextOffset(value: () => Integer): Self = StObject.set(x, "getSurroundingTextOffset", js.Any.fromFunction0(value))
+    inline def setGetSurroundingTextOffset(value: () => Integer): Self = StObject.set(x, "getSurroundingTextOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertBookmark(value: () => Bookmark): Self = StObject.set(x, "insertBookmark", js.Any.fromFunction0(value))
+    inline def setInsertBookmark(value: () => Bookmark): Self = StObject.set(x, "insertBookmark", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertInlineImage(value: BlobSource => InlineImage): Self = StObject.set(x, "insertInlineImage", js.Any.fromFunction1(value))
+    inline def setInsertInlineImage(value: BlobSource => InlineImage): Self = StObject.set(x, "insertInlineImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertText(value: String => Text): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
+    inline def setInsertText(value: String => Text): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
   }
 }

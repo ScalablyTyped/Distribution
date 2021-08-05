@@ -19,22 +19,17 @@ trait DeviceInformationUpdate extends StObject {
 }
 object DeviceInformationUpdate {
   
-  @scala.inline
-  def apply(id: String, kind: DeviceInformationKind, properties: IMapView[String, js.Any]): DeviceInformationUpdate = {
+  inline def apply(id: String, kind: DeviceInformationKind, properties: IMapView[String, js.Any]): DeviceInformationUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInformationUpdate]
   }
   
-  @scala.inline
-  implicit class DeviceInformationUpdateMutableBuilder[Self <: DeviceInformationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInformationUpdate](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: DeviceInformationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: DeviceInformationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

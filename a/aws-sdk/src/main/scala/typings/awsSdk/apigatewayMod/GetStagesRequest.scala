@@ -18,22 +18,17 @@ trait GetStagesRequest extends StObject {
 }
 object GetStagesRequest {
   
-  @scala.inline
-  def apply(restApiId: String): GetStagesRequest = {
+  inline def apply(restApiId: String): GetStagesRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStagesRequest]
   }
   
-  @scala.inline
-  implicit class GetStagesRequestMutableBuilder[Self <: GetStagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetStagesRequest](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

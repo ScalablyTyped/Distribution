@@ -25,22 +25,17 @@ trait ChatRoomParticipants
 }
 object ChatRoomParticipants {
   
-  @scala.inline
-  def apply(participants: js.Array[ChatRoomParticipant], room: String): ChatRoomParticipants = {
+  inline def apply(participants: js.Array[ChatRoomParticipant], room: String): ChatRoomParticipants = {
     val __obj = js.Dynamic.literal(participants = participants.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomParticipants]
   }
   
-  @scala.inline
-  implicit class ChatRoomParticipantsMutableBuilder[Self <: ChatRoomParticipants] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomParticipants](x: Self) {
     
-    @scala.inline
-    def setParticipants(value: js.Array[ChatRoomParticipant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: js.Array[ChatRoomParticipant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsVarargs(value: ChatRoomParticipant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: ChatRoomParticipant*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

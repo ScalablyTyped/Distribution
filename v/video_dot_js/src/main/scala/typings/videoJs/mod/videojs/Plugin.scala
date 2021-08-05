@@ -90,23 +90,18 @@ object Plugin {
   }
   object PluginEventHash {
     
-    @scala.inline
-    def apply(instance: Plugin, name: String, plugin: String): PluginEventHash = {
+    inline def apply(instance: Plugin, name: String, plugin: String): PluginEventHash = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginEventHash]
     }
     
-    @scala.inline
-    implicit class PluginEventHashMutableBuilder[Self <: PluginEventHash] (val x: Self) extends AnyVal {
+    extension [Self <: PluginEventHash](x: Self) {
       
-      @scala.inline
-      def setInstance(value: Plugin): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Plugin): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     }
   }
 }

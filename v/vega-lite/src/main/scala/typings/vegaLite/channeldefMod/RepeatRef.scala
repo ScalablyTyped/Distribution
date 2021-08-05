@@ -14,16 +14,13 @@ trait RepeatRef extends StObject {
 }
 object RepeatRef {
   
-  @scala.inline
-  def apply(repeat: row | column | repeat | layer): RepeatRef = {
+  inline def apply(repeat: row | column | repeat | layer): RepeatRef = {
     val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepeatRef]
   }
   
-  @scala.inline
-  implicit class RepeatRefMutableBuilder[Self <: RepeatRef] (val x: Self) extends AnyVal {
+  extension [Self <: RepeatRef](x: Self) {
     
-    @scala.inline
-    def setRepeat(value: row | column | repeat | layer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: row | column | repeat | layer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
   }
 }

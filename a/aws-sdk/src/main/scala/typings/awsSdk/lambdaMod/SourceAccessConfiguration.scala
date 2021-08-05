@@ -18,25 +18,19 @@ trait SourceAccessConfiguration extends StObject {
 }
 object SourceAccessConfiguration {
   
-  @scala.inline
-  def apply(): SourceAccessConfiguration = {
+  inline def apply(): SourceAccessConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceAccessConfiguration]
   }
   
-  @scala.inline
-  implicit class SourceAccessConfigurationMutableBuilder[Self <: SourceAccessConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SourceAccessConfiguration](x: Self) {
     
-    @scala.inline
-    def setType(value: SourceAccessType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SourceAccessType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setURI(value: Arn): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: Arn): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
+    inline def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
   }
 }

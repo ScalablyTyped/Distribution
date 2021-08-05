@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScriptLanguage extends StObject
 object ScriptLanguage {
   
-  @scala.inline
-  def JavaScript: typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScript = "JavaScript".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScript]
+  inline def JavaScript: typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScript = "JavaScript".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScript]
   
-  @scala.inline
-  def WebAssembly: typings.devtoolsProtocol.devtoolsProtocolStrings.WebAssembly = "WebAssembly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebAssembly]
+  inline def WebAssembly: typings.devtoolsProtocol.devtoolsProtocolStrings.WebAssembly = "WebAssembly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebAssembly]
 }

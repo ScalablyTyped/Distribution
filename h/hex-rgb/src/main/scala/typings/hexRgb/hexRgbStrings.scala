@@ -8,16 +8,13 @@ object hexRgbStrings {
   
   @js.native
   sealed trait array extends StObject
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait css extends StObject
-  @scala.inline
-  def css: css = "css".asInstanceOf[css]
+  inline def css: css = "css".asInstanceOf[css]
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
 }

@@ -21,15 +21,13 @@ object mod {
   @JSImport("mpromise", "FAILURE")
   @js.native
   def FAILURE: String = js.native
-  @scala.inline
-  def FAILURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE")(x.asInstanceOf[js.Any])
+  inline def FAILURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mpromise", "SUCCESS")
   @js.native
   def SUCCESS: String = js.native
-  @scala.inline
-  def SUCCESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+  inline def SUCCESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
   
   @js.native
   trait IResolveFunction[F, R] extends StObject {

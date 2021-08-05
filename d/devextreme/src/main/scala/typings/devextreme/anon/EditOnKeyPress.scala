@@ -21,37 +21,27 @@ trait EditOnKeyPress extends StObject {
 }
 object EditOnKeyPress {
   
-  @scala.inline
-  def apply(): EditOnKeyPress = {
+  inline def apply(): EditOnKeyPress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditOnKeyPress]
   }
   
-  @scala.inline
-  implicit class EditOnKeyPressMutableBuilder[Self <: EditOnKeyPress] (val x: Self) extends AnyVal {
+  extension [Self <: EditOnKeyPress](x: Self) {
     
-    @scala.inline
-    def setEditOnKeyPress(value: Boolean): Self = StObject.set(x, "editOnKeyPress", value.asInstanceOf[js.Any])
+    inline def setEditOnKeyPress(value: Boolean): Self = StObject.set(x, "editOnKeyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditOnKeyPressUndefined: Self = StObject.set(x, "editOnKeyPress", js.undefined)
+    inline def setEditOnKeyPressUndefined: Self = StObject.set(x, "editOnKeyPress", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEnterKeyAction(value: startEdit | moveFocus): Self = StObject.set(x, "enterKeyAction", value.asInstanceOf[js.Any])
+    inline def setEnterKeyAction(value: startEdit | moveFocus): Self = StObject.set(x, "enterKeyAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterKeyActionUndefined: Self = StObject.set(x, "enterKeyAction", js.undefined)
+    inline def setEnterKeyActionUndefined: Self = StObject.set(x, "enterKeyAction", js.undefined)
     
-    @scala.inline
-    def setEnterKeyDirection(value: none | column | row): Self = StObject.set(x, "enterKeyDirection", value.asInstanceOf[js.Any])
+    inline def setEnterKeyDirection(value: none | column | row): Self = StObject.set(x, "enterKeyDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterKeyDirectionUndefined: Self = StObject.set(x, "enterKeyDirection", js.undefined)
+    inline def setEnterKeyDirectionUndefined: Self = StObject.set(x, "enterKeyDirection", js.undefined)
   }
 }

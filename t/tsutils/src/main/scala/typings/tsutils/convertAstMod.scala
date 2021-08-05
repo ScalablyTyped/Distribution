@@ -13,8 +13,7 @@ object convertAstMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertAst(sourceFile: SourceFile): ConvertedAst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertAst")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[ConvertedAst]
+  inline def convertAst(sourceFile: SourceFile): ConvertedAst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertAst")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[ConvertedAst]
   
   trait ConvertedAst extends StObject {
     
@@ -24,23 +23,18 @@ object convertAstMod {
   }
   object ConvertedAst {
     
-    @scala.inline
-    def apply(flat: js.Array[Node], wrapped: WrappedAst): ConvertedAst = {
+    inline def apply(flat: js.Array[Node], wrapped: WrappedAst): ConvertedAst = {
       val __obj = js.Dynamic.literal(flat = flat.asInstanceOf[js.Any], wrapped = wrapped.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvertedAst]
     }
     
-    @scala.inline
-    implicit class ConvertedAstMutableBuilder[Self <: ConvertedAst] (val x: Self) extends AnyVal {
+    extension [Self <: ConvertedAst](x: Self) {
       
-      @scala.inline
-      def setFlat(value: js.Array[Node]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+      inline def setFlat(value: js.Array[Node]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatVarargs(value: Node*): Self = StObject.set(x, "flat", js.Array(value :_*))
+      inline def setFlatVarargs(value: Node*): Self = StObject.set(x, "flat", js.Array(value :_*))
       
-      @scala.inline
-      def setWrapped(value: WrappedAst): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
+      inline def setWrapped(value: WrappedAst): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,44 +54,32 @@ object convertAstMod {
   }
   object NodeWrap {
     
-    @scala.inline
-    def apply(children: js.Array[NodeWrap], kind: SyntaxKind, node: Node): NodeWrap = {
+    inline def apply(children: js.Array[NodeWrap], kind: SyntaxKind, node: Node): NodeWrap = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeWrap]
     }
     
-    @scala.inline
-    implicit class NodeWrapMutableBuilder[Self <: NodeWrap] (val x: Self) extends AnyVal {
+    extension [Self <: NodeWrap](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[NodeWrap]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[NodeWrap]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: NodeWrap*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NodeWrap*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: SyntaxKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: SyntaxKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: NodeWrap): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: NodeWrap): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: NodeWrap): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: NodeWrap): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setSkip(value: NodeWrap): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: NodeWrap): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   
@@ -119,8 +101,7 @@ object convertAstMod {
   }
   object WrappedAst {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: js.Array[NodeWrap],
       kind: SyntaxKind,
       next: NodeWrap,
@@ -132,20 +113,15 @@ object convertAstMod {
       __obj.asInstanceOf[WrappedAst]
     }
     
-    @scala.inline
-    implicit class WrappedAstMutableBuilder[Self <: WrappedAst] (val x: Self) extends AnyVal {
+    extension [Self <: WrappedAst](x: Self) {
       
-      @scala.inline
-      def setNext(value: NodeWrap): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: NodeWrap): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: SourceFile): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: SourceFile): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Unit): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Unit): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Unit): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Unit): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
 }

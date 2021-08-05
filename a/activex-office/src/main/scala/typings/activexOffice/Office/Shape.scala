@@ -106,7 +106,7 @@ trait Shape extends StObject {
   @JSName("Nodes")
   val Nodes_Original: ShapeNodes = js.native
   
-  @JSName("Office.Shape_typekey")
+  /* private */ @JSName("Office.Shape_typekey")
   var OfficeDotShape_typekey: Shape = js.native
   
   val Parent: js.Any = js.native

@@ -12,25 +12,19 @@ trait Province extends StObject {
 }
 object Province {
   
-  @scala.inline
-  def apply(): Province = {
+  inline def apply(): Province = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Province]
   }
   
-  @scala.inline
-  implicit class ProvinceMutableBuilder[Self <: Province] (val x: Self) extends AnyVal {
+  extension [Self <: Province](x: Self) {
     
-    @scala.inline
-    def setIsoCode(value: String): Self = StObject.set(x, "isoCode", value.asInstanceOf[js.Any])
+    inline def setIsoCode(value: String): Self = StObject.set(x, "isoCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsoCodeUndefined: Self = StObject.set(x, "isoCode", js.undefined)
+    inline def setIsoCodeUndefined: Self = StObject.set(x, "isoCode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

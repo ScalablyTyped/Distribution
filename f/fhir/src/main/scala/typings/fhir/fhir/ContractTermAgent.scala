@@ -23,25 +23,19 @@ trait ContractTermAgent
 }
 object ContractTermAgent {
   
-  @scala.inline
-  def apply(actor: Reference): ContractTermAgent = {
+  inline def apply(actor: Reference): ContractTermAgent = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContractTermAgent]
   }
   
-  @scala.inline
-  implicit class ContractTermAgentMutableBuilder[Self <: ContractTermAgent] (val x: Self) extends AnyVal {
+  extension [Self <: ContractTermAgent](x: Self) {
     
-    @scala.inline
-    def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value :_*))
+    inline def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value :_*))
   }
 }

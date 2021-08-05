@@ -24,25 +24,19 @@ trait SchemaSourceReference extends StObject {
 }
 object SchemaSourceReference {
   
-  @scala.inline
-  def apply(): SchemaSourceReference = {
+  inline def apply(): SchemaSourceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceReference]
   }
   
-  @scala.inline
-  implicit class SchemaSourceReferenceMutableBuilder[Self <: SchemaSourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceReference](x: Self) {
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

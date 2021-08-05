@@ -19,8 +19,7 @@ trait MasterSlaves extends StObject {
 }
 object MasterSlaves {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     master: PostgresConnectionCredentialsOptions,
     slaves: js.Array[PostgresConnectionCredentialsOptions]
   ): MasterSlaves = {
@@ -28,16 +27,12 @@ object MasterSlaves {
     __obj.asInstanceOf[MasterSlaves]
   }
   
-  @scala.inline
-  implicit class MasterSlavesMutableBuilder[Self <: MasterSlaves] (val x: Self) extends AnyVal {
+  extension [Self <: MasterSlaves](x: Self) {
     
-    @scala.inline
-    def setMaster(value: PostgresConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: PostgresConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlaves(value: js.Array[PostgresConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
+    inline def setSlaves(value: js.Array[PostgresConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlavesVarargs(value: PostgresConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
+    inline def setSlavesVarargs(value: PostgresConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
   }
 }

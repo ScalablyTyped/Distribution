@@ -23,31 +23,23 @@ trait SpotInstanceStatus extends StObject {
 }
 object SpotInstanceStatus {
   
-  @scala.inline
-  def apply(): SpotInstanceStatus = {
+  inline def apply(): SpotInstanceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotInstanceStatus]
   }
   
-  @scala.inline
-  implicit class SpotInstanceStatusMutableBuilder[Self <: SpotInstanceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SpotInstanceStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }
 }

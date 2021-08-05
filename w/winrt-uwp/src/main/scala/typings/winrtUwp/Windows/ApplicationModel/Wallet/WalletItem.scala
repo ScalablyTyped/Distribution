@@ -100,8 +100,7 @@ trait WalletItem extends StObject {
 }
 object WalletItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     barcode: WalletBarcode,
     bodyBackgroundImage: IRandomAccessStreamReference,
     bodyColor: Color,
@@ -136,94 +135,64 @@ object WalletItem {
     __obj.asInstanceOf[WalletItem]
   }
   
-  @scala.inline
-  implicit class WalletItemMutableBuilder[Self <: WalletItem] (val x: Self) extends AnyVal {
+  extension [Self <: WalletItem](x: Self) {
     
-    @scala.inline
-    def setBarcode(value: WalletBarcode): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
+    inline def setBarcode(value: WalletBarcode): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyBackgroundImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "bodyBackgroundImage", value.asInstanceOf[js.Any])
+    inline def setBodyBackgroundImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "bodyBackgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyColor(value: Color): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
+    inline def setBodyColor(value: Color): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyFontColor(value: Color): Self = StObject.set(x, "bodyFontColor", value.asInstanceOf[js.Any])
+    inline def setBodyFontColor(value: Color): Self = StObject.set(x, "bodyFontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
+    inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayProperties(value: IMap[String, WalletItemCustomProperty]): Self = StObject.set(x, "displayProperties", value.asInstanceOf[js.Any])
+    inline def setDisplayProperties(value: IMap[String, WalletItemCustomProperty]): Self = StObject.set(x, "displayProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderBackgroundImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "headerBackgroundImage", value.asInstanceOf[js.Any])
+    inline def setHeaderBackgroundImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "headerBackgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderColor(value: Color): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
+    inline def setHeaderColor(value: Color): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFontColor(value: Color): Self = StObject.set(x, "headerFontColor", value.asInstanceOf[js.Any])
+    inline def setHeaderFontColor(value: Color): Self = StObject.set(x, "headerFontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAcknowledged(value: Boolean): Self = StObject.set(x, "isAcknowledged", value.asInstanceOf[js.Any])
+    inline def setIsAcknowledged(value: Boolean): Self = StObject.set(x, "isAcknowledged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisplayMessageLaunchable(value: Boolean): Self = StObject.set(x, "isDisplayMessageLaunchable", value.asInstanceOf[js.Any])
+    inline def setIsDisplayMessageLaunchable(value: Boolean): Self = StObject.set(x, "isDisplayMessageLaunchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMoreTransactionHistoryLaunchable(value: Boolean): Self = StObject.set(x, "isMoreTransactionHistoryLaunchable", value.asInstanceOf[js.Any])
+    inline def setIsMoreTransactionHistoryLaunchable(value: Boolean): Self = StObject.set(x, "isMoreTransactionHistoryLaunchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerDisplayName(value: String): Self = StObject.set(x, "issuerDisplayName", value.asInstanceOf[js.Any])
+    inline def setIssuerDisplayName(value: String): Self = StObject.set(x, "issuerDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: WalletItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WalletItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo159x159(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo159x159", value.asInstanceOf[js.Any])
+    inline def setLogo159x159(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo159x159", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo336x336(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo336x336", value.asInstanceOf[js.Any])
+    inline def setLogo336x336(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo336x336", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo99x99(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo99x99", value.asInstanceOf[js.Any])
+    inline def setLogo99x99(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo99x99", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "logoImage", value.asInstanceOf[js.Any])
+    inline def setLogoImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "logoImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoText(value: String): Self = StObject.set(x, "logoText", value.asInstanceOf[js.Any])
+    inline def setLogoText(value: String): Self = StObject.set(x, "logoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionalImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "promotionalImage", value.asInstanceOf[js.Any])
+    inline def setPromotionalImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "promotionalImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantDate(value: Date): Self = StObject.set(x, "relevantDate", value.asInstanceOf[js.Any])
+    inline def setRelevantDate(value: Date): Self = StObject.set(x, "relevantDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantDateDisplayMessage(value: String): Self = StObject.set(x, "relevantDateDisplayMessage", value.asInstanceOf[js.Any])
+    inline def setRelevantDateDisplayMessage(value: String): Self = StObject.set(x, "relevantDateDisplayMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantLocations(value: IMap[String, WalletRelevantLocation]): Self = StObject.set(x, "relevantLocations", value.asInstanceOf[js.Any])
+    inline def setRelevantLocations(value: IMap[String, WalletRelevantLocation]): Self = StObject.set(x, "relevantLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionHistory(value: IMap[String, WalletTransaction]): Self = StObject.set(x, "transactionHistory", value.asInstanceOf[js.Any])
+    inline def setTransactionHistory(value: IMap[String, WalletTransaction]): Self = StObject.set(x, "transactionHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbs(value: IMap[String, WalletVerb]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
+    inline def setVerbs(value: IMap[String, WalletVerb]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
   }
 }

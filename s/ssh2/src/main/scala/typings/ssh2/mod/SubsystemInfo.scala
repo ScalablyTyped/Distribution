@@ -11,16 +11,13 @@ trait SubsystemInfo extends StObject {
 }
 object SubsystemInfo {
   
-  @scala.inline
-  def apply(name: String): SubsystemInfo = {
+  inline def apply(name: String): SubsystemInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubsystemInfo]
   }
   
-  @scala.inline
-  implicit class SubsystemInfoMutableBuilder[Self <: SubsystemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SubsystemInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

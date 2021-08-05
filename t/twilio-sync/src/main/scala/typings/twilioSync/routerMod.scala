@@ -17,9 +17,9 @@ object routerMod {
   class Router protected () extends StObject {
     def this(params: js.Any) = this()
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
-    var notifications: js.Any = js.native
+    /* private */ var notifications: js.Any = js.native
     
     /**
       * Handle transport establishing event
@@ -39,7 +39,7 @@ object routerMod {
       */
     def subscribe(sid: String, entity: js.Any): Unit = js.native
     
-    var subscriptions: js.Any = js.native
+    /* private */ var subscriptions: js.Any = js.native
     
     /**
       * Unsubscribe from events

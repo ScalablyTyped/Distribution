@@ -13,16 +13,13 @@ trait CreateFilterResponse extends StObject {
 }
 object CreateFilterResponse {
   
-  @scala.inline
-  def apply(Name: FilterName): CreateFilterResponse = {
+  inline def apply(Name: FilterName): CreateFilterResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFilterResponse]
   }
   
-  @scala.inline
-  implicit class CreateFilterResponseMutableBuilder[Self <: CreateFilterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFilterResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: FilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

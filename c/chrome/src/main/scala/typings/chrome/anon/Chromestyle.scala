@@ -14,31 +14,23 @@ trait Chromestyle extends StObject {
 }
 object Chromestyle {
   
-  @scala.inline
-  def apply(): Chromestyle = {
+  inline def apply(): Chromestyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Chromestyle]
   }
   
-  @scala.inline
-  implicit class ChromestyleMutableBuilder[Self <: Chromestyle] (val x: Self) extends AnyVal {
+  extension [Self <: Chromestyle](x: Self) {
     
-    @scala.inline
-    def setChrome_style(value: Boolean): Self = StObject.set(x, "chrome_style", value.asInstanceOf[js.Any])
+    inline def setChrome_style(value: Boolean): Self = StObject.set(x, "chrome_style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChrome_styleUndefined: Self = StObject.set(x, "chrome_style", js.undefined)
+    inline def setChrome_styleUndefined: Self = StObject.set(x, "chrome_style", js.undefined)
     
-    @scala.inline
-    def setOpen_in_tab(value: Boolean): Self = StObject.set(x, "open_in_tab", value.asInstanceOf[js.Any])
+    inline def setOpen_in_tab(value: Boolean): Self = StObject.set(x, "open_in_tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_in_tabUndefined: Self = StObject.set(x, "open_in_tab", js.undefined)
+    inline def setOpen_in_tabUndefined: Self = StObject.set(x, "open_in_tab", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

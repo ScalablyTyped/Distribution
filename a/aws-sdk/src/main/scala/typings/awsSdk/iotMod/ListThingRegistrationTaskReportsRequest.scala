@@ -28,31 +28,23 @@ trait ListThingRegistrationTaskReportsRequest extends StObject {
 }
 object ListThingRegistrationTaskReportsRequest {
   
-  @scala.inline
-  def apply(reportType: ReportType, taskId: TaskId): ListThingRegistrationTaskReportsRequest = {
+  inline def apply(reportType: ReportType, taskId: TaskId): ListThingRegistrationTaskReportsRequest = {
     val __obj = js.Dynamic.literal(reportType = reportType.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingRegistrationTaskReportsRequest]
   }
   
-  @scala.inline
-  implicit class ListThingRegistrationTaskReportsRequestMutableBuilder[Self <: ListThingRegistrationTaskReportsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListThingRegistrationTaskReportsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

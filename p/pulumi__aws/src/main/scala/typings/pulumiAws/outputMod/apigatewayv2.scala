@@ -40,62 +40,44 @@ object apigatewayv2 {
   }
   object ApiCorsConfiguration {
     
-    @scala.inline
-    def apply(): ApiCorsConfiguration = {
+    inline def apply(): ApiCorsConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApiCorsConfiguration]
     }
     
-    @scala.inline
-    implicit class ApiCorsConfigurationMutableBuilder[Self <: ApiCorsConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ApiCorsConfiguration](x: Self) {
       
-      @scala.inline
-      def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
+      inline def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCredentialsUndefined: Self = StObject.set(x, "allowCredentials", js.undefined)
+      inline def setAllowCredentialsUndefined: Self = StObject.set(x, "allowCredentials", js.undefined)
       
-      @scala.inline
-      def setAllowHeaders(value: js.Array[String]): Self = StObject.set(x, "allowHeaders", value.asInstanceOf[js.Any])
+      inline def setAllowHeaders(value: js.Array[String]): Self = StObject.set(x, "allowHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHeadersUndefined: Self = StObject.set(x, "allowHeaders", js.undefined)
+      inline def setAllowHeadersUndefined: Self = StObject.set(x, "allowHeaders", js.undefined)
       
-      @scala.inline
-      def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
+      inline def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowMethods(value: js.Array[String]): Self = StObject.set(x, "allowMethods", value.asInstanceOf[js.Any])
+      inline def setAllowMethods(value: js.Array[String]): Self = StObject.set(x, "allowMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMethodsUndefined: Self = StObject.set(x, "allowMethods", js.undefined)
+      inline def setAllowMethodsUndefined: Self = StObject.set(x, "allowMethods", js.undefined)
       
-      @scala.inline
-      def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value :_*))
+      inline def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowOrigins(value: js.Array[String]): Self = StObject.set(x, "allowOrigins", value.asInstanceOf[js.Any])
+      inline def setAllowOrigins(value: js.Array[String]): Self = StObject.set(x, "allowOrigins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOriginsUndefined: Self = StObject.set(x, "allowOrigins", js.undefined)
+      inline def setAllowOriginsUndefined: Self = StObject.set(x, "allowOrigins", js.undefined)
       
-      @scala.inline
-      def setAllowOriginsVarargs(value: String*): Self = StObject.set(x, "allowOrigins", js.Array(value :_*))
+      inline def setAllowOriginsVarargs(value: String*): Self = StObject.set(x, "allowOrigins", js.Array(value :_*))
       
-      @scala.inline
-      def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
+      inline def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
+      inline def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
       
-      @scala.inline
-      def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     }
   }
   
@@ -113,29 +95,22 @@ object apigatewayv2 {
   }
   object AuthorizerJwtConfiguration {
     
-    @scala.inline
-    def apply(): AuthorizerJwtConfiguration = {
+    inline def apply(): AuthorizerJwtConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizerJwtConfiguration]
     }
     
-    @scala.inline
-    implicit class AuthorizerJwtConfigurationMutableBuilder[Self <: AuthorizerJwtConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizerJwtConfiguration](x: Self) {
       
-      @scala.inline
-      def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+      inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+      inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
       
-      @scala.inline
-      def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+      inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     }
   }
   
@@ -169,8 +144,7 @@ object apigatewayv2 {
   }
   object DomainNameDomainNameConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       certificateArn: String,
       endpointType: String,
       hostedZoneId: String,
@@ -181,23 +155,17 @@ object apigatewayv2 {
       __obj.asInstanceOf[DomainNameDomainNameConfiguration]
     }
     
-    @scala.inline
-    implicit class DomainNameDomainNameConfigurationMutableBuilder[Self <: DomainNameDomainNameConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: DomainNameDomainNameConfiguration](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: String): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: String): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointType(value: String): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: String): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
+      inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
+      inline def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,20 +178,16 @@ object apigatewayv2 {
   }
   object IntegrationTlsConfig {
     
-    @scala.inline
-    def apply(): IntegrationTlsConfig = {
+    inline def apply(): IntegrationTlsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntegrationTlsConfig]
     }
     
-    @scala.inline
-    implicit class IntegrationTlsConfigMutableBuilder[Self <: IntegrationTlsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IntegrationTlsConfig](x: Self) {
       
-      @scala.inline
-      def setServerNameToVerify(value: String): Self = StObject.set(x, "serverNameToVerify", value.asInstanceOf[js.Any])
+      inline def setServerNameToVerify(value: String): Self = StObject.set(x, "serverNameToVerify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerNameToVerifyUndefined: Self = StObject.set(x, "serverNameToVerify", js.undefined)
+      inline def setServerNameToVerifyUndefined: Self = StObject.set(x, "serverNameToVerify", js.undefined)
     }
   }
   
@@ -241,20 +205,16 @@ object apigatewayv2 {
   }
   object StageAccessLogSettings {
     
-    @scala.inline
-    def apply(destinationArn: String, format: String): StageAccessLogSettings = {
+    inline def apply(destinationArn: String, format: String): StageAccessLogSettings = {
       val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[StageAccessLogSettings]
     }
     
-    @scala.inline
-    implicit class StageAccessLogSettingsMutableBuilder[Self <: StageAccessLogSettings] (val x: Self) extends AnyVal {
+    extension [Self <: StageAccessLogSettings](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,41 +249,30 @@ object apigatewayv2 {
   }
   object StageDefaultRouteSettings {
     
-    @scala.inline
-    def apply(loggingLevel: String): StageDefaultRouteSettings = {
+    inline def apply(loggingLevel: String): StageDefaultRouteSettings = {
       val __obj = js.Dynamic.literal(loggingLevel = loggingLevel.asInstanceOf[js.Any])
       __obj.asInstanceOf[StageDefaultRouteSettings]
     }
     
-    @scala.inline
-    implicit class StageDefaultRouteSettingsMutableBuilder[Self <: StageDefaultRouteSettings] (val x: Self) extends AnyVal {
+    extension [Self <: StageDefaultRouteSettings](x: Self) {
       
-      @scala.inline
-      def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
+      inline def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTraceEnabledUndefined: Self = StObject.set(x, "dataTraceEnabled", js.undefined)
+      inline def setDataTraceEnabledUndefined: Self = StObject.set(x, "dataTraceEnabled", js.undefined)
       
-      @scala.inline
-      def setDetailedMetricsEnabled(value: Boolean): Self = StObject.set(x, "detailedMetricsEnabled", value.asInstanceOf[js.Any])
+      inline def setDetailedMetricsEnabled(value: Boolean): Self = StObject.set(x, "detailedMetricsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailedMetricsEnabledUndefined: Self = StObject.set(x, "detailedMetricsEnabled", js.undefined)
+      inline def setDetailedMetricsEnabledUndefined: Self = StObject.set(x, "detailedMetricsEnabled", js.undefined)
       
-      @scala.inline
-      def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
+      inline def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingBurstLimit(value: Double): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
+      inline def setThrottlingBurstLimit(value: Double): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
+      inline def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
       
-      @scala.inline
-      def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
+      inline def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
+      inline def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
     }
   }
   
@@ -363,44 +312,32 @@ object apigatewayv2 {
   }
   object StageRouteSetting {
     
-    @scala.inline
-    def apply(loggingLevel: String, routeKey: String): StageRouteSetting = {
+    inline def apply(loggingLevel: String, routeKey: String): StageRouteSetting = {
       val __obj = js.Dynamic.literal(loggingLevel = loggingLevel.asInstanceOf[js.Any], routeKey = routeKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[StageRouteSetting]
     }
     
-    @scala.inline
-    implicit class StageRouteSettingMutableBuilder[Self <: StageRouteSetting] (val x: Self) extends AnyVal {
+    extension [Self <: StageRouteSetting](x: Self) {
       
-      @scala.inline
-      def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
+      inline def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTraceEnabledUndefined: Self = StObject.set(x, "dataTraceEnabled", js.undefined)
+      inline def setDataTraceEnabledUndefined: Self = StObject.set(x, "dataTraceEnabled", js.undefined)
       
-      @scala.inline
-      def setDetailedMetricsEnabled(value: Boolean): Self = StObject.set(x, "detailedMetricsEnabled", value.asInstanceOf[js.Any])
+      inline def setDetailedMetricsEnabled(value: Boolean): Self = StObject.set(x, "detailedMetricsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailedMetricsEnabledUndefined: Self = StObject.set(x, "detailedMetricsEnabled", js.undefined)
+      inline def setDetailedMetricsEnabledUndefined: Self = StObject.set(x, "detailedMetricsEnabled", js.undefined)
       
-      @scala.inline
-      def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
+      inline def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
+      inline def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingBurstLimit(value: Double): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
+      inline def setThrottlingBurstLimit(value: Double): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
+      inline def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
       
-      @scala.inline
-      def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
+      inline def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
+      inline def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
     }
   }
 }

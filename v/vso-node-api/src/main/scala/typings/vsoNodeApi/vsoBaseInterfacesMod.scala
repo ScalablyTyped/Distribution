@@ -51,8 +51,7 @@ object vsoBaseInterfacesMod {
   }
   object ApiResourceLocation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       area: String,
       id: String,
       maxVersion: String,
@@ -66,32 +65,23 @@ object vsoBaseInterfacesMod {
       __obj.asInstanceOf[ApiResourceLocation]
     }
     
-    @scala.inline
-    implicit class ApiResourceLocationMutableBuilder[Self <: ApiResourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: ApiResourceLocation](x: Self) {
       
-      @scala.inline
-      def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+      inline def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
+      inline def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleasedVersion(value: String): Self = StObject.set(x, "releasedVersion", value.asInstanceOf[js.Any])
+      inline def setReleasedVersion(value: String): Self = StObject.set(x, "releasedVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+      inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+      inline def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteTemplate(value: String): Self = StObject.set(x, "routeTemplate", value.asInstanceOf[js.Any])
+      inline def setRouteTemplate(value: String): Self = StObject.set(x, "routeTemplate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,20 +93,16 @@ object vsoBaseInterfacesMod {
   }
   object IBasicCredentials {
     
-    @scala.inline
-    def apply(password: String, username: String): IBasicCredentials = {
+    inline def apply(password: String, username: String): IBasicCredentials = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBasicCredentials]
     }
     
-    @scala.inline
-    implicit class IBasicCredentialsMutableBuilder[Self <: IBasicCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: IBasicCredentials](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,38 +118,28 @@ object vsoBaseInterfacesMod {
   }
   object ICertConfiguration {
     
-    @scala.inline
-    def apply(): ICertConfiguration = {
+    inline def apply(): ICertConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICertConfiguration]
     }
     
-    @scala.inline
-    implicit class ICertConfigurationMutableBuilder[Self <: ICertConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ICertConfiguration](x: Self) {
       
-      @scala.inline
-      def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
+      inline def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
+      inline def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
       
-      @scala.inline
-      def setCertFile(value: String): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
+      inline def setCertFile(value: String): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
+      inline def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
       
-      @scala.inline
-      def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      inline def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     }
   }
   
@@ -177,23 +153,18 @@ object vsoBaseInterfacesMod {
   }
   object IHttpResponse {
     
-    @scala.inline
-    def apply(headers: js.Any): IHttpResponse = {
+    inline def apply(headers: js.Any): IHttpResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHttpResponse]
     }
     
-    @scala.inline
-    implicit class IHttpResponseMutableBuilder[Self <: IHttpResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IHttpResponse](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
   
@@ -209,38 +180,28 @@ object vsoBaseInterfacesMod {
   }
   object IProxyConfiguration {
     
-    @scala.inline
-    def apply(proxyUrl: String): IProxyConfiguration = {
+    inline def apply(proxyUrl: String): IProxyConfiguration = {
       val __obj = js.Dynamic.literal(proxyUrl = proxyUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProxyConfiguration]
     }
     
-    @scala.inline
-    implicit class IProxyConfigurationMutableBuilder[Self <: IProxyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: IProxyConfiguration](x: Self) {
       
-      @scala.inline
-      def setProxyBypassHosts(value: js.Array[String]): Self = StObject.set(x, "proxyBypassHosts", value.asInstanceOf[js.Any])
+      inline def setProxyBypassHosts(value: js.Array[String]): Self = StObject.set(x, "proxyBypassHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyBypassHostsUndefined: Self = StObject.set(x, "proxyBypassHosts", js.undefined)
+      inline def setProxyBypassHostsUndefined: Self = StObject.set(x, "proxyBypassHosts", js.undefined)
       
-      @scala.inline
-      def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value :_*))
+      inline def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value :_*))
       
-      @scala.inline
-      def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
+      inline def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
+      inline def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
       
-      @scala.inline
-      def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
+      inline def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
+      inline def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
     }
   }
   
@@ -254,8 +215,7 @@ object vsoBaseInterfacesMod {
   }
   object IRequestHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canHandleAuthentication: IHttpResponse => Boolean,
       handleAuthentication: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit,
       prepareRequest: js.Any => Unit
@@ -264,17 +224,13 @@ object vsoBaseInterfacesMod {
       __obj.asInstanceOf[IRequestHandler]
     }
     
-    @scala.inline
-    implicit class IRequestHandlerMutableBuilder[Self <: IRequestHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestHandler](x: Self) {
       
-      @scala.inline
-      def setCanHandleAuthentication(value: IHttpResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
+      inline def setCanHandleAuthentication(value: IHttpResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleAuthentication(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction5(value))
+      inline def setHandleAuthentication(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setPrepareRequest(value: js.Any => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
+      inline def setPrepareRequest(value: js.Any => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
     }
   }
   
@@ -290,38 +246,28 @@ object vsoBaseInterfacesMod {
   }
   object IRequestOptions {
     
-    @scala.inline
-    def apply(): IRequestOptions = {
+    inline def apply(): IRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    @scala.inline
-    implicit class IRequestOptionsMutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestOptions](x: Self) {
       
-      @scala.inline
-      def setCert(value: ICertConfiguration): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: ICertConfiguration): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setIgnoreSslError(value: Boolean): Self = StObject.set(x, "ignoreSslError", value.asInstanceOf[js.Any])
+      inline def setIgnoreSslError(value: Boolean): Self = StObject.set(x, "ignoreSslError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSslErrorUndefined: Self = StObject.set(x, "ignoreSslError", js.undefined)
+      inline def setIgnoreSslErrorUndefined: Self = StObject.set(x, "ignoreSslError", js.undefined)
       
-      @scala.inline
-      def setProxy(value: IProxyConfiguration): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: IProxyConfiguration): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
+      inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
+      inline def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
     }
   }
 }

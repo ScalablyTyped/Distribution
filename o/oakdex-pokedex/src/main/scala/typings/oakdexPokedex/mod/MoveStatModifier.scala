@@ -14,25 +14,19 @@ trait MoveStatModifier extends StObject {
 }
 object MoveStatModifier {
   
-  @scala.inline
-  def apply(change_by: Double, stat: String): MoveStatModifier = {
+  inline def apply(change_by: Double, stat: String): MoveStatModifier = {
     val __obj = js.Dynamic.literal(change_by = change_by.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveStatModifier]
   }
   
-  @scala.inline
-  implicit class MoveStatModifierMutableBuilder[Self <: MoveStatModifier] (val x: Self) extends AnyVal {
+  extension [Self <: MoveStatModifier](x: Self) {
     
-    @scala.inline
-    def setAffects_user(value: Boolean): Self = StObject.set(x, "affects_user", value.asInstanceOf[js.Any])
+    inline def setAffects_user(value: Boolean): Self = StObject.set(x, "affects_user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffects_userUndefined: Self = StObject.set(x, "affects_user", js.undefined)
+    inline def setAffects_userUndefined: Self = StObject.set(x, "affects_user", js.undefined)
     
-    @scala.inline
-    def setChange_by(value: Double): Self = StObject.set(x, "change_by", value.asInstanceOf[js.Any])
+    inline def setChange_by(value: Double): Self = StObject.set(x, "change_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStat(value: String): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+    inline def setStat(value: String): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
   }
 }

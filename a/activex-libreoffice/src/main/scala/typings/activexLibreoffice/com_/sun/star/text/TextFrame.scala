@@ -97,8 +97,7 @@ trait TextFrame
 }
 object TextFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorFrame: XTextFrame,
     AnchorPageNo: Double,
@@ -206,40 +205,28 @@ object TextFrame {
     __obj.asInstanceOf[TextFrame]
   }
   
-  @scala.inline
-  implicit class TextFrameMutableBuilder[Self <: TextFrame] (val x: Self) extends AnyVal {
+  extension [Self <: TextFrame](x: Self) {
     
-    @scala.inline
-    def setEditInReadonly(value: Boolean): Self = StObject.set(x, "EditInReadonly", value.asInstanceOf[js.Any])
+    inline def setEditInReadonly(value: Boolean): Self = StObject.set(x, "EditInReadonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameHeightAbsolute(value: Double): Self = StObject.set(x, "FrameHeightAbsolute", value.asInstanceOf[js.Any])
+    inline def setFrameHeightAbsolute(value: Double): Self = StObject.set(x, "FrameHeightAbsolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameHeightPercent(value: Double): Self = StObject.set(x, "FrameHeightPercent", value.asInstanceOf[js.Any])
+    inline def setFrameHeightPercent(value: Double): Self = StObject.set(x, "FrameHeightPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIsAutomaticHeight(value: Boolean): Self = StObject.set(x, "FrameIsAutomaticHeight", value.asInstanceOf[js.Any])
+    inline def setFrameIsAutomaticHeight(value: Boolean): Self = StObject.set(x, "FrameIsAutomaticHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameWidthAbsolute(value: Double): Self = StObject.set(x, "FrameWidthAbsolute", value.asInstanceOf[js.Any])
+    inline def setFrameWidthAbsolute(value: Double): Self = StObject.set(x, "FrameWidthAbsolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameWidthPercent(value: Double): Self = StObject.set(x, "FrameWidthPercent", value.asInstanceOf[js.Any])
+    inline def setFrameWidthPercent(value: Double): Self = StObject.set(x, "FrameWidthPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFollowingTextFlow(value: Boolean): Self = StObject.set(x, "IsFollowingTextFlow", value.asInstanceOf[js.Any])
+    inline def setIsFollowingTextFlow(value: Boolean): Self = StObject.set(x, "IsFollowingTextFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeType(value: Double): Self = StObject.set(x, "SizeType", value.asInstanceOf[js.Any])
+    inline def setSizeType(value: Double): Self = StObject.set(x, "SizeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVerticalAdjust(value: TextVerticalAdjust): Self = StObject.set(x, "TextVerticalAdjust", value.asInstanceOf[js.Any])
+    inline def setTextVerticalAdjust(value: TextVerticalAdjust): Self = StObject.set(x, "TextVerticalAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthType(value: Double): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
+    inline def setWidthType(value: Double): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
+    inline def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
   }
 }

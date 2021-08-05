@@ -36,8 +36,7 @@ trait VertexAddEventInfo
 }
 object VertexAddEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     added: js.Array[Graphic],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -49,22 +48,16 @@ object VertexAddEventInfo {
     __obj.asInstanceOf[VertexAddEventInfo]
   }
   
-  @scala.inline
-  implicit class VertexAddEventInfoMutableBuilder[Self <: VertexAddEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VertexAddEventInfo](x: Self) {
     
-    @scala.inline
-    def setAdded(value: js.Array[Graphic]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[Graphic]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedVarargs(value: Graphic*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: Graphic*): Self = StObject.set(x, "added", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `vertex-add`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `vertex-add`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertices(value: js.Array[VertexAddEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[VertexAddEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: VertexAddEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: VertexAddEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

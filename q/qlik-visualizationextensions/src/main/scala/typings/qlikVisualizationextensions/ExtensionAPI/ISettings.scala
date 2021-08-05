@@ -16,28 +16,21 @@ trait ISettings extends StObject {
 }
 object ISettings {
   
-  @scala.inline
-  def apply(): ISettings = {
+  inline def apply(): ISettings = {
     val __obj = js.Dynamic.literal(uses = "settings")
     __obj.asInstanceOf[ISettings]
   }
   
-  @scala.inline
-  implicit class ISettingsMutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
+  extension [Self <: ISettings](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setUses(value: settings): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+    inline def setUses(value: settings): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
   }
 }

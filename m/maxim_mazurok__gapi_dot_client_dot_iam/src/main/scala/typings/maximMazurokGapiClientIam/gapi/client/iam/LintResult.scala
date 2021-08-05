@@ -30,49 +30,35 @@ trait LintResult extends StObject {
 }
 object LintResult {
   
-  @scala.inline
-  def apply(): LintResult = {
+  inline def apply(): LintResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LintResult]
   }
   
-  @scala.inline
-  implicit class LintResultMutableBuilder[Self <: LintResult] (val x: Self) extends AnyVal {
+  extension [Self <: LintResult](x: Self) {
     
-    @scala.inline
-    def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
+    inline def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugMessageUndefined: Self = StObject.set(x, "debugMessage", js.undefined)
+    inline def setDebugMessageUndefined: Self = StObject.set(x, "debugMessage", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLocationOffset(value: Double): Self = StObject.set(x, "locationOffset", value.asInstanceOf[js.Any])
+    inline def setLocationOffset(value: Double): Self = StObject.set(x, "locationOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationOffsetUndefined: Self = StObject.set(x, "locationOffset", js.undefined)
+    inline def setLocationOffsetUndefined: Self = StObject.set(x, "locationOffset", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setValidationUnitName(value: String): Self = StObject.set(x, "validationUnitName", value.asInstanceOf[js.Any])
+    inline def setValidationUnitName(value: String): Self = StObject.set(x, "validationUnitName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUnitNameUndefined: Self = StObject.set(x, "validationUnitName", js.undefined)
+    inline def setValidationUnitNameUndefined: Self = StObject.set(x, "validationUnitName", js.undefined)
   }
 }

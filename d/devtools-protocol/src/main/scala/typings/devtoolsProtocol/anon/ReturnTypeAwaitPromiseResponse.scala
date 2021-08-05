@@ -14,22 +14,17 @@ trait ReturnTypeAwaitPromiseResponse extends StObject {
 }
 object ReturnTypeAwaitPromiseResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[AwaitPromiseRequest], returnType: AwaitPromiseResponse): ReturnTypeAwaitPromiseResponse = {
+  inline def apply(paramsType: js.Array[AwaitPromiseRequest], returnType: AwaitPromiseResponse): ReturnTypeAwaitPromiseResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeAwaitPromiseResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeAwaitPromiseResponseMutableBuilder[Self <: ReturnTypeAwaitPromiseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeAwaitPromiseResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[AwaitPromiseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[AwaitPromiseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: AwaitPromiseRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: AwaitPromiseRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: AwaitPromiseResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: AwaitPromiseResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait OnenoteEntitySchemaObjectModel
 }
 object OnenoteEntitySchemaObjectModel {
   
-  @scala.inline
-  def apply(): OnenoteEntitySchemaObjectModel = {
+  inline def apply(): OnenoteEntitySchemaObjectModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenoteEntitySchemaObjectModel]
   }
   
-  @scala.inline
-  implicit class OnenoteEntitySchemaObjectModelMutableBuilder[Self <: OnenoteEntitySchemaObjectModel] (val x: Self) extends AnyVal {
+  extension [Self <: OnenoteEntitySchemaObjectModel](x: Self) {
     
-    @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
   }
 }

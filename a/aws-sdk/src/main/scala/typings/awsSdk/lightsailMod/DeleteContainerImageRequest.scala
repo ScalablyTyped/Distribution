@@ -18,19 +18,15 @@ trait DeleteContainerImageRequest extends StObject {
 }
 object DeleteContainerImageRequest {
   
-  @scala.inline
-  def apply(image: String, serviceName: ContainerServiceName): DeleteContainerImageRequest = {
+  inline def apply(image: String, serviceName: ContainerServiceName): DeleteContainerImageRequest = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteContainerImageRequest]
   }
   
-  @scala.inline
-  implicit class DeleteContainerImageRequestMutableBuilder[Self <: DeleteContainerImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContainerImageRequest](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

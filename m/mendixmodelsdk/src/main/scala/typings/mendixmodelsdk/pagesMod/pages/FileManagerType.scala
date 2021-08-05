@@ -21,20 +21,17 @@ object FileManagerType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManagerType.Both")
   @js.native
   def Both: FileManagerType = js.native
-  @scala.inline
-  def Both_=(x: FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
+  inline def Both_=(x: FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManagerType.Download")
   @js.native
   def Download: FileManagerType = js.native
-  @scala.inline
-  def Download_=(x: FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Download")(x.asInstanceOf[js.Any])
+  inline def Download_=(x: FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Download")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManagerType.Upload")
   @js.native
   def Upload: FileManagerType = js.native
-  @scala.inline
-  def Upload_=(x: FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upload")(x.asInstanceOf[js.Any])
+  inline def Upload_=(x: FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upload")(x.asInstanceOf[js.Any])
 }

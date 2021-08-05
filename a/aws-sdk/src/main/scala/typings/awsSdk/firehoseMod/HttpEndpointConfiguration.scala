@@ -23,28 +23,21 @@ trait HttpEndpointConfiguration extends StObject {
 }
 object HttpEndpointConfiguration {
   
-  @scala.inline
-  def apply(Url: HttpEndpointUrl): HttpEndpointConfiguration = {
+  inline def apply(Url: HttpEndpointUrl): HttpEndpointConfiguration = {
     val __obj = js.Dynamic.literal(Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpEndpointConfiguration]
   }
   
-  @scala.inline
-  implicit class HttpEndpointConfigurationMutableBuilder[Self <: HttpEndpointConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: HttpEndpointConfiguration](x: Self) {
     
-    @scala.inline
-    def setAccessKey(value: HttpEndpointAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
+    inline def setAccessKey(value: HttpEndpointAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyUndefined: Self = StObject.set(x, "AccessKey", js.undefined)
+    inline def setAccessKeyUndefined: Self = StObject.set(x, "AccessKey", js.undefined)
     
-    @scala.inline
-    def setName(value: HttpEndpointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HttpEndpointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setUrl(value: HttpEndpointUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: HttpEndpointUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

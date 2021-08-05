@@ -14,22 +14,17 @@ trait NumberDisplayWidgetHTML extends StObject {
 }
 object NumberDisplayWidgetHTML {
   
-  @scala.inline
-  def apply(none: String, one: String, some: String): NumberDisplayWidgetHTML = {
+  inline def apply(none: String, one: String, some: String): NumberDisplayWidgetHTML = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], one = one.asInstanceOf[js.Any], some = some.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberDisplayWidgetHTML]
   }
   
-  @scala.inline
-  implicit class NumberDisplayWidgetHTMLMutableBuilder[Self <: NumberDisplayWidgetHTML] (val x: Self) extends AnyVal {
+  extension [Self <: NumberDisplayWidgetHTML](x: Self) {
     
-    @scala.inline
-    def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+    inline def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSome(value: String): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
+    inline def setSome(value: String): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ object PropertyType {
   }
   object CheckBoxBoolean {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
       DataToLocalized: js.Any => java.lang.String,
       GetBool: js.Any => Boolean,
@@ -31,14 +30,11 @@ object PropertyType {
       __obj.asInstanceOf[CheckBoxBoolean]
     }
     
-    @scala.inline
-    implicit class CheckBoxBooleanMutableBuilder[Self <: CheckBoxBoolean] (val x: Self) extends AnyVal {
+    extension [Self <: CheckBoxBoolean](x: Self) {
       
-      @scala.inline
-      def setDataToLocalized(value: js.Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
+      inline def setDataToLocalized(value: js.Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBool(value: js.Any => Boolean): Self = StObject.set(x, "GetBool", js.Any.fromFunction1(value))
+      inline def setGetBool(value: js.Any => Boolean): Self = StObject.set(x, "GetBool", js.Any.fromFunction1(value))
     }
   }
   
@@ -52,8 +48,7 @@ object PropertyType {
   }
   object DropDownBoolean {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
       DataToLocalized: js.Any => java.lang.String,
       GetBool: js.Any => Boolean,
@@ -63,14 +58,11 @@ object PropertyType {
       __obj.asInstanceOf[DropDownBoolean]
     }
     
-    @scala.inline
-    implicit class DropDownBooleanMutableBuilder[Self <: DropDownBoolean] (val x: Self) extends AnyVal {
+    extension [Self <: DropDownBoolean](x: Self) {
       
-      @scala.inline
-      def setDataToLocalized(value: js.Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
+      inline def setDataToLocalized(value: js.Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBool(value: js.Any => Boolean): Self = StObject.set(x, "GetBool", js.Any.fromFunction1(value))
+      inline def setGetBool(value: js.Any => Boolean): Self = StObject.set(x, "GetBool", js.Any.fromFunction1(value))
     }
   }
   
@@ -89,8 +81,7 @@ object PropertyType {
   }
   object HyperLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
       DataToLocalized: js.Any => java.lang.String,
       GetAddress: js.Any => java.lang.String,
@@ -102,20 +93,15 @@ object PropertyType {
       __obj.asInstanceOf[HyperLink]
     }
     
-    @scala.inline
-    implicit class HyperLinkMutableBuilder[Self <: HyperLink] (val x: Self) extends AnyVal {
+    extension [Self <: HyperLink](x: Self) {
       
-      @scala.inline
-      def setBHyperlink(value: Boolean): Self = StObject.set(x, "bHyperlink", value.asInstanceOf[js.Any])
+      inline def setBHyperlink(value: Boolean): Self = StObject.set(x, "bHyperlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataToLocalized(value: js.Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
+      inline def setDataToLocalized(value: js.Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAddress(value: js.Any => java.lang.String): Self = StObject.set(x, "GetAddress", js.Any.fromFunction1(value))
+      inline def setGetAddress(value: js.Any => java.lang.String): Self = StObject.set(x, "GetAddress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCopyValue(value: (IRecord, js.Any, java.lang.String) => java.lang.String): Self = StObject.set(x, "GetCopyValue", js.Any.fromFunction3(value))
+      inline def setGetCopyValue(value: (IRecord, js.Any, java.lang.String) => java.lang.String): Self = StObject.set(x, "GetCopyValue", js.Any.fromFunction3(value))
     }
   }
   
@@ -124,8 +110,7 @@ object PropertyType {
        with ILookupPropertyType
   object LookupTable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
       DataToLocalized: js.Any => java.lang.String,
       GetImageSource: (IRecord, js.Any) => java.lang.String,
@@ -146,8 +131,7 @@ object PropertyType {
        with IMultiValuePropertyType
   object MultiValuePropType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
       GetSerializableMultiValuePropType: () => BDelayInit,
       ID: java.lang.String,
@@ -168,8 +152,7 @@ object PropertyType {
        with IPropertyType
   object String {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginValidateNormalizeConvert: (Double, java.lang.String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
       ID: java.lang.String
     ): String = {

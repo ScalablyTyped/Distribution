@@ -31,8 +31,7 @@ trait DragSourceDragEvent
 }
 object DragSourceDragEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DragSource: XDragSource,
     DragSourceContext: XDragSourceContext,
     DropAction: Double,
@@ -43,13 +42,10 @@ object DragSourceDragEvent {
     __obj.asInstanceOf[DragSourceDragEvent]
   }
   
-  @scala.inline
-  implicit class DragSourceDragEventMutableBuilder[Self <: DragSourceDragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DragSourceDragEvent](x: Self) {
     
-    @scala.inline
-    def setDropAction(value: Double): Self = StObject.set(x, "DropAction", value.asInstanceOf[js.Any])
+    inline def setDropAction(value: Double): Self = StObject.set(x, "DropAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAction(value: Double): Self = StObject.set(x, "UserAction", value.asInstanceOf[js.Any])
+    inline def setUserAction(value: Double): Self = StObject.set(x, "UserAction", value.asInstanceOf[js.Any])
   }
 }

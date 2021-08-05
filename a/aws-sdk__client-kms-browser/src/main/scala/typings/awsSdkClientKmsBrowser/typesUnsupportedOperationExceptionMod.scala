@@ -30,17 +30,14 @@ object typesUnsupportedOperationExceptionMod {
   }
   object UnsupportedOperationException {
     
-    @scala.inline
-    def apply(): UnsupportedOperationException = {
+    inline def apply(): UnsupportedOperationException = {
       val __obj = js.Dynamic.literal(name = "UnsupportedOperationException")
       __obj.asInstanceOf[UnsupportedOperationException]
     }
     
-    @scala.inline
-    implicit class UnsupportedOperationExceptionMutableBuilder[Self <: UnsupportedOperationException] (val x: Self) extends AnyVal {
+    extension [Self <: UnsupportedOperationException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.UnsupportedOperationException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.UnsupportedOperationException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,20 +50,16 @@ object typesUnsupportedOperationExceptionMod {
   }
   object UnsupportedOperationExceptionDetails {
     
-    @scala.inline
-    def apply(): UnsupportedOperationExceptionDetails = {
+    inline def apply(): UnsupportedOperationExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnsupportedOperationExceptionDetails]
     }
     
-    @scala.inline
-    implicit class UnsupportedOperationExceptionDetailsMutableBuilder[Self <: UnsupportedOperationExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: UnsupportedOperationExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

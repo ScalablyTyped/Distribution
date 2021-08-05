@@ -20,22 +20,17 @@ trait PushOptions extends StObject {
 }
 object PushOptions {
   
-  @scala.inline
-  def apply(data: js.Any): PushOptions = {
+  inline def apply(data: js.Any): PushOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOptions]
   }
   
-  @scala.inline
-  implicit class PushOptionsMutableBuilder[Self <: PushOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PushOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThen(value: /* result */ js.Any => Unit): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+    inline def setThen(value: /* result */ js.Any => Unit): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+    inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

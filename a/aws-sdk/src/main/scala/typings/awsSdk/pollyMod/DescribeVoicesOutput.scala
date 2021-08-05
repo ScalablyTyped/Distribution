@@ -18,28 +18,21 @@ trait DescribeVoicesOutput extends StObject {
 }
 object DescribeVoicesOutput {
   
-  @scala.inline
-  def apply(): DescribeVoicesOutput = {
+  inline def apply(): DescribeVoicesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVoicesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeVoicesOutputMutableBuilder[Self <: DescribeVoicesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVoicesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVoices(value: VoiceList): Self = StObject.set(x, "Voices", value.asInstanceOf[js.Any])
+    inline def setVoices(value: VoiceList): Self = StObject.set(x, "Voices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoicesUndefined: Self = StObject.set(x, "Voices", js.undefined)
+    inline def setVoicesUndefined: Self = StObject.set(x, "Voices", js.undefined)
     
-    @scala.inline
-    def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "Voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "Voices", js.Array(value :_*))
   }
 }

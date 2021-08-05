@@ -85,8 +85,7 @@ trait IgSchedulerMethods extends StObject {
 }
 object IgSchedulerMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: () => Unit,
@@ -105,46 +104,32 @@ object IgSchedulerMethods {
     __obj.asInstanceOf[IgSchedulerMethods]
   }
   
-  @scala.inline
-  implicit class IgSchedulerMethodsMutableBuilder[Self <: IgSchedulerMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgSchedulerMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateAppointment(value: js.Object => js.Object): Self = StObject.set(x, "createAppointment", js.Any.fromFunction1(value))
+    inline def setCreateAppointment(value: js.Object => js.Object): Self = StObject.set(x, "createAppointment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDateRangeButton(value: () => String): Self = StObject.set(x, "dateRangeButton", js.Any.fromFunction0(value))
+    inline def setDateRangeButton(value: () => String): Self = StObject.set(x, "dateRangeButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteAppointment(value: js.Object => js.Object): Self = StObject.set(x, "deleteAppointment", js.Any.fromFunction1(value))
+    inline def setDeleteAppointment(value: js.Object => js.Object): Self = StObject.set(x, "deleteAppointment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEditAppointment(value: (js.Object, js.Object) => js.Object): Self = StObject.set(x, "editAppointment", js.Any.fromFunction2(value))
+    inline def setEditAppointment(value: (js.Object, js.Object) => js.Object): Self = StObject.set(x, "editAppointment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAppointmentsInRange(value: (Date, Date) => js.Object): Self = StObject.set(x, "getAppointmentsInRange", js.Any.fromFunction2(value))
+    inline def setGetAppointmentsInRange(value: (Date, Date) => js.Object): Self = StObject.set(x, "getAppointmentsInRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCalendar(value: () => String): Self = StObject.set(x, "getCalendar", js.Any.fromFunction0(value))
+    inline def setGetCalendar(value: () => String): Self = StObject.set(x, "getCalendar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextButton(value: () => String): Self = StObject.set(x, "nextButton", js.Any.fromFunction0(value))
+    inline def setNextButton(value: () => String): Self = StObject.set(x, "nextButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreviousButton(value: () => String): Self = StObject.set(x, "previousButton", js.Any.fromFunction0(value))
+    inline def setPreviousButton(value: () => String): Self = StObject.set(x, "previousButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTodayButton(value: () => String): Self = StObject.set(x, "todayButton", js.Any.fromFunction0(value))
+    inline def setTodayButton(value: () => String): Self = StObject.set(x, "todayButton", js.Any.fromFunction0(value))
   }
 }

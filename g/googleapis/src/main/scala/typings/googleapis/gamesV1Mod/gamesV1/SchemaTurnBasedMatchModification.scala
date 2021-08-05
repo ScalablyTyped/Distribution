@@ -28,31 +28,23 @@ trait SchemaTurnBasedMatchModification extends StObject {
 }
 object SchemaTurnBasedMatchModification {
   
-  @scala.inline
-  def apply(): SchemaTurnBasedMatchModification = {
+  inline def apply(): SchemaTurnBasedMatchModification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTurnBasedMatchModification]
   }
   
-  @scala.inline
-  implicit class SchemaTurnBasedMatchModificationMutableBuilder[Self <: SchemaTurnBasedMatchModification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTurnBasedMatchModification](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setModifiedTimestampMillis(value: String): Self = StObject.set(x, "modifiedTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setModifiedTimestampMillis(value: String): Self = StObject.set(x, "modifiedTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTimestampMillisUndefined: Self = StObject.set(x, "modifiedTimestampMillis", js.undefined)
+    inline def setModifiedTimestampMillisUndefined: Self = StObject.set(x, "modifiedTimestampMillis", js.undefined)
     
-    @scala.inline
-    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
+    inline def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
   }
 }

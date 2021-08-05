@@ -16,8 +16,7 @@ trait InteractiveButtons[T] extends StObject {
 }
 object InteractiveButtons {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     addResponse: InteractiveButtonOptions[T] => Unit,
     calls: js.Array[InteractiveButtonCall[T]],
     reset: () => Unit,
@@ -27,22 +26,16 @@ object InteractiveButtons {
     __obj.asInstanceOf[InteractiveButtons[T]]
   }
   
-  @scala.inline
-  implicit class InteractiveButtonsMutableBuilder[Self <: InteractiveButtons[?], T] (val x: Self & InteractiveButtons[T]) extends AnyVal {
+  extension [Self <: InteractiveButtons[?], T](x: Self & InteractiveButtons[T]) {
     
-    @scala.inline
-    def setAddResponse(value: InteractiveButtonOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
+    inline def setAddResponse(value: InteractiveButtonOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalls(value: js.Array[InteractiveButtonCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[InteractiveButtonCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: InteractiveButtonCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: InteractiveButtonCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: (InteractiveButtonUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (InteractiveButtonUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
   }
 }

@@ -17,31 +17,23 @@ trait TransactionOptions extends StObject {
 }
 object TransactionOptions {
   
-  @scala.inline
-  def apply(): TransactionOptions = {
+  inline def apply(): TransactionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransactionOptions]
   }
   
-  @scala.inline
-  implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionOptions](x: Self) {
     
-    @scala.inline
-    def setPartitionedDml(value: js.Any): Self = StObject.set(x, "partitionedDml", value.asInstanceOf[js.Any])
+    inline def setPartitionedDml(value: js.Any): Self = StObject.set(x, "partitionedDml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionedDmlUndefined: Self = StObject.set(x, "partitionedDml", js.undefined)
+    inline def setPartitionedDmlUndefined: Self = StObject.set(x, "partitionedDml", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: ReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: ReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setReadWrite(value: js.Any): Self = StObject.set(x, "readWrite", value.asInstanceOf[js.Any])
+    inline def setReadWrite(value: js.Any): Self = StObject.set(x, "readWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadWriteUndefined: Self = StObject.set(x, "readWrite", js.undefined)
+    inline def setReadWriteUndefined: Self = StObject.set(x, "readWrite", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait TerminateAppRequest extends StObject {
 }
 object TerminateAppRequest {
   
-  @scala.inline
-  def apply(): TerminateAppRequest = {
+  inline def apply(): TerminateAppRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateAppRequest]
   }
   
-  @scala.inline
-  implicit class TerminateAppRequestMutableBuilder[Self <: TerminateAppRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateAppRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

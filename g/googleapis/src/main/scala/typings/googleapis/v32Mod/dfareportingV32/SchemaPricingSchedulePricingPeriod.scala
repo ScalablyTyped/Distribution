@@ -46,43 +46,31 @@ trait SchemaPricingSchedulePricingPeriod extends StObject {
 }
 object SchemaPricingSchedulePricingPeriod {
   
-  @scala.inline
-  def apply(): SchemaPricingSchedulePricingPeriod = {
+  inline def apply(): SchemaPricingSchedulePricingPeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPricingSchedulePricingPeriod]
   }
   
-  @scala.inline
-  implicit class SchemaPricingSchedulePricingPeriodMutableBuilder[Self <: SchemaPricingSchedulePricingPeriod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPricingSchedulePricingPeriod](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setPricingComment(value: String): Self = StObject.set(x, "pricingComment", value.asInstanceOf[js.Any])
+    inline def setPricingComment(value: String): Self = StObject.set(x, "pricingComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingCommentUndefined: Self = StObject.set(x, "pricingComment", js.undefined)
+    inline def setPricingCommentUndefined: Self = StObject.set(x, "pricingComment", js.undefined)
     
-    @scala.inline
-    def setRateOrCostNanos(value: String): Self = StObject.set(x, "rateOrCostNanos", value.asInstanceOf[js.Any])
+    inline def setRateOrCostNanos(value: String): Self = StObject.set(x, "rateOrCostNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateOrCostNanosUndefined: Self = StObject.set(x, "rateOrCostNanos", js.undefined)
+    inline def setRateOrCostNanosUndefined: Self = StObject.set(x, "rateOrCostNanos", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

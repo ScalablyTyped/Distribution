@@ -23,32 +23,24 @@ trait CanvasEllipse
 }
 object CanvasEllipse {
   
-  @scala.inline
-  def apply(r1: Double, x: Double, y: Double): CanvasEllipse = {
+  inline def apply(r1: Double, x: Double, y: Double): CanvasEllipse = {
     val __obj = js.Dynamic.literal(r1 = r1.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ellipse")
     __obj.asInstanceOf[CanvasEllipse]
   }
   
-  @scala.inline
-  implicit class CanvasEllipseMutableBuilder[Self <: CanvasEllipse] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasEllipse](x: Self) {
     
-    @scala.inline
-    def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+    inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+    inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2Undefined: Self = StObject.set(x, "r2", js.undefined)
+    inline def setR2Undefined: Self = StObject.set(x, "r2", js.undefined)
     
-    @scala.inline
-    def setType(value: ellipse): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ellipse): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

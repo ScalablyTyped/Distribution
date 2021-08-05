@@ -9,8 +9,7 @@ trait Gyrometer
      with IGyrometer
 object Gyrometer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => GyrometerReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,

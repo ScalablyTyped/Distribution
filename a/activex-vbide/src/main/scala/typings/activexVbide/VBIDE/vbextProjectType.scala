@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait vbextProjectType extends StObject
 object vbextProjectType {
   
-  @scala.inline
-  def vbext_pt_HostProject: `100` = 100.asInstanceOf[`100`]
+  inline def vbext_pt_HostProject: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def vbext_pt_StandAlone: `101` = 101.asInstanceOf[`101`]
+  inline def vbext_pt_StandAlone: `101` = 101.asInstanceOf[`101`]
 }

@@ -12,19 +12,15 @@ trait IGetFileInfoSuccessResult extends StObject {
 }
 object IGetFileInfoSuccessResult {
   
-  @scala.inline
-  def apply(digest: String, size: Double): IGetFileInfoSuccessResult = {
+  inline def apply(digest: String, size: Double): IGetFileInfoSuccessResult = {
     val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetFileInfoSuccessResult]
   }
   
-  @scala.inline
-  implicit class IGetFileInfoSuccessResultMutableBuilder[Self <: IGetFileInfoSuccessResult] (val x: Self) extends AnyVal {
+  extension [Self <: IGetFileInfoSuccessResult](x: Self) {
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

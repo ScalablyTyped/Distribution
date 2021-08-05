@@ -76,81 +76,57 @@ object metadataArgsTableMetadataArgsMod {
   }
   object TableMetadataArgs {
     
-    @scala.inline
-    def apply(target: js.Function | String, `type`: TableType): TableMetadataArgs = {
+    inline def apply(target: js.Function | String, `type`: TableType): TableMetadataArgs = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableMetadataArgs]
     }
     
-    @scala.inline
-    implicit class TableMetadataArgsMutableBuilder[Self <: TableMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TableMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setExpression(value: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]])): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]])): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionFunction1(value: /* connection */ Connection => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "expression", js.Any.fromFunction1(value))
+      inline def setExpressionFunction1(value: /* connection */ Connection => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "expression", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      @scala.inline
-      def setMaterialized(value: Boolean): Self = StObject.set(x, "materialized", value.asInstanceOf[js.Any])
+      inline def setMaterialized(value: Boolean): Self = StObject.set(x, "materialized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaterializedUndefined: Self = StObject.set(x, "materialized", js.undefined)
+      inline def setMaterializedUndefined: Self = StObject.set(x, "materialized", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOrderBy(value: OrderByCondition | (js.Function1[/* object */ js.Any, OrderByCondition | js.Any])): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: OrderByCondition | (js.Function1[/* object */ js.Any, OrderByCondition | js.Any])): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderByFunction1(value: /* object */ js.Any => OrderByCondition | js.Any): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
+      inline def setOrderByFunction1(value: /* object */ js.Any => OrderByCondition | js.Any): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+      inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSynchronize(value: Boolean): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
+      inline def setSynchronize(value: Boolean): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
+      inline def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutRowid(value: Boolean): Self = StObject.set(x, "withoutRowid", value.asInstanceOf[js.Any])
+      inline def setWithoutRowid(value: Boolean): Self = StObject.set(x, "withoutRowid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutRowidUndefined: Self = StObject.set(x, "withoutRowid", js.undefined)
+      inline def setWithoutRowidUndefined: Self = StObject.set(x, "withoutRowid", js.undefined)
     }
   }
 }

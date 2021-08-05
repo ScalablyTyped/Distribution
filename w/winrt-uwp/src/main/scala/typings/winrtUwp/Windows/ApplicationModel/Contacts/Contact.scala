@@ -133,8 +133,7 @@ trait Contact extends StObject {
 }
 object Contact {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: IVector[ContactAddress],
     aggregateId: String,
     connectedServiceAccounts: IVector[ContactConnectedServiceAccount],
@@ -180,127 +179,86 @@ object Contact {
     __obj.asInstanceOf[Contact]
   }
   
-  @scala.inline
-  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+  extension [Self <: Contact](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: IVector[ContactAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: IVector[ContactAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateId(value: String): Self = StObject.set(x, "aggregateId", value.asInstanceOf[js.Any])
+    inline def setAggregateId(value: String): Self = StObject.set(x, "aggregateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedServiceAccounts(value: IVector[ContactConnectedServiceAccount]): Self = StObject.set(x, "connectedServiceAccounts", value.asInstanceOf[js.Any])
+    inline def setConnectedServiceAccounts(value: IVector[ContactConnectedServiceAccount]): Self = StObject.set(x, "connectedServiceAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactListId(value: String): Self = StObject.set(x, "contactListId", value.asInstanceOf[js.Any])
+    inline def setContactListId(value: String): Self = StObject.set(x, "contactListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSuppliers(value: IVector[String]): Self = StObject.set(x, "dataSuppliers", value.asInstanceOf[js.Any])
+    inline def setDataSuppliers(value: IVector[String]): Self = StObject.set(x, "dataSuppliers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameOverride(value: String): Self = StObject.set(x, "displayNameOverride", value.asInstanceOf[js.Any])
+    inline def setDisplayNameOverride(value: String): Self = StObject.set(x, "displayNameOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPictureUserUpdateTime(value: Date): Self = StObject.set(x, "displayPictureUserUpdateTime", value.asInstanceOf[js.Any])
+    inline def setDisplayPictureUserUpdateTime(value: Date): Self = StObject.set(x, "displayPictureUserUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmails(value: IVector[ContactEmail]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: IVector[ContactEmail]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: IVector[IContactField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: IVector[IContactField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorificNamePrefix(value: String): Self = StObject.set(x, "honorificNamePrefix", value.asInstanceOf[js.Any])
+    inline def setHonorificNamePrefix(value: String): Self = StObject.set(x, "honorificNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorificNameSuffix(value: String): Self = StObject.set(x, "honorificNameSuffix", value.asInstanceOf[js.Any])
+    inline def setHonorificNameSuffix(value: String): Self = StObject.set(x, "honorificNameSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportantDates(value: IVector[ContactDate]): Self = StObject.set(x, "importantDates", value.asInstanceOf[js.Any])
+    inline def setImportantDates(value: IVector[ContactDate]): Self = StObject.set(x, "importantDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAggregate(value: Boolean): Self = StObject.set(x, "isAggregate", value.asInstanceOf[js.Any])
+    inline def setIsAggregate(value: Boolean): Self = StObject.set(x, "isAggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisplayPictureManuallySet(value: Boolean): Self = StObject.set(x, "isDisplayPictureManuallySet", value.asInstanceOf[js.Any])
+    inline def setIsDisplayPictureManuallySet(value: Boolean): Self = StObject.set(x, "isDisplayPictureManuallySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
+    inline def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobInfo(value: IVector[ContactJobInfo]): Self = StObject.set(x, "jobInfo", value.asInstanceOf[js.Any])
+    inline def setJobInfo(value: IVector[ContactJobInfo]): Self = StObject.set(x, "jobInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeDisplayPicture(value: IRandomAccessStreamReference): Self = StObject.set(x, "largeDisplayPicture", value.asInstanceOf[js.Any])
+    inline def setLargeDisplayPicture(value: IRandomAccessStreamReference): Self = StObject.set(x, "largeDisplayPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
+    inline def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhones(value: IVector[ContactPhone]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
+    inline def setPhones(value: IVector[ContactPhone]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderProperties(value: IPropertySet): Self = StObject.set(x, "providerProperties", value.asInstanceOf[js.Any])
+    inline def setProviderProperties(value: IPropertySet): Self = StObject.set(x, "providerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
+    inline def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRingToneToken(value: String): Self = StObject.set(x, "ringToneToken", value.asInstanceOf[js.Any])
+    inline def setRingToneToken(value: String): Self = StObject.set(x, "ringToneToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignificantOthers(value: IVector[ContactSignificantOther]): Self = StObject.set(x, "significantOthers", value.asInstanceOf[js.Any])
+    inline def setSignificantOthers(value: IVector[ContactSignificantOther]): Self = StObject.set(x, "significantOthers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallDisplayPicture(value: IRandomAccessStreamReference): Self = StObject.set(x, "smallDisplayPicture", value.asInstanceOf[js.Any])
+    inline def setSmallDisplayPicture(value: IRandomAccessStreamReference): Self = StObject.set(x, "smallDisplayPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortName(value: String): Self = StObject.set(x, "sortName", value.asInstanceOf[js.Any])
+    inline def setSortName(value: String): Self = StObject.set(x, "sortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDisplayPicture(value: IRandomAccessStreamReference): Self = StObject.set(x, "sourceDisplayPicture", value.asInstanceOf[js.Any])
+    inline def setSourceDisplayPicture(value: IRandomAccessStreamReference): Self = StObject.set(x, "sourceDisplayPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToneToken(value: String): Self = StObject.set(x, "textToneToken", value.asInstanceOf[js.Any])
+    inline def setTextToneToken(value: String): Self = StObject.set(x, "textToneToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsites(value: IVector[ContactWebsite]): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
+    inline def setWebsites(value: IVector[ContactWebsite]): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYomiDisplayName(value: String): Self = StObject.set(x, "yomiDisplayName", value.asInstanceOf[js.Any])
+    inline def setYomiDisplayName(value: String): Self = StObject.set(x, "yomiDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYomiFamilyName(value: String): Self = StObject.set(x, "yomiFamilyName", value.asInstanceOf[js.Any])
+    inline def setYomiFamilyName(value: String): Self = StObject.set(x, "yomiFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYomiGivenName(value: String): Self = StObject.set(x, "yomiGivenName", value.asInstanceOf[js.Any])
+    inline def setYomiGivenName(value: String): Self = StObject.set(x, "yomiGivenName", value.asInstanceOf[js.Any])
   }
 }

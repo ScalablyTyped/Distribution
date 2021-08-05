@@ -46,92 +46,64 @@ object keyboardMod {
   }
   object KeyboardProps {
     
-    @scala.inline
-    def apply(): KeyboardProps = {
+    inline def apply(): KeyboardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyboardProps]
     }
     
-    @scala.inline
-    implicit class KeyboardPropsMutableBuilder[Self <: KeyboardProps] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardProps](x: Self) {
       
-      @scala.inline
-      def setOnBackspace(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBackspace", js.Any.fromFunction1(value))
+      inline def setOnBackspace(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBackspace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackspaceUndefined: Self = StObject.set(x, "onBackspace", js.undefined)
+      inline def setOnBackspaceUndefined: Self = StObject.set(x, "onBackspace", js.undefined)
       
-      @scala.inline
-      def setOnComma(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onComma", js.Any.fromFunction1(value))
+      inline def setOnComma(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onComma", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCommaUndefined: Self = StObject.set(x, "onComma", js.undefined)
+      inline def setOnCommaUndefined: Self = StObject.set(x, "onComma", js.undefined)
       
-      @scala.inline
-      def setOnDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onDown", js.Any.fromFunction1(value))
+      inline def setOnDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDownUndefined: Self = StObject.set(x, "onDown", js.undefined)
+      inline def setOnDownUndefined: Self = StObject.set(x, "onDown", js.undefined)
       
-      @scala.inline
-      def setOnEnter(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      inline def setOnEnter(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnEsc(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onEsc", js.Any.fromFunction1(value))
+      inline def setOnEsc(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onEsc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
+      inline def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnLeft(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onLeft", js.Any.fromFunction1(value))
+      inline def setOnLeft(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLeftUndefined: Self = StObject.set(x, "onLeft", js.undefined)
+      inline def setOnLeftUndefined: Self = StObject.set(x, "onLeft", js.undefined)
       
-      @scala.inline
-      def setOnRight(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onRight", js.Any.fromFunction1(value))
+      inline def setOnRight(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRightUndefined: Self = StObject.set(x, "onRight", js.undefined)
+      inline def setOnRightUndefined: Self = StObject.set(x, "onRight", js.undefined)
       
-      @scala.inline
-      def setOnShift(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onShift", js.Any.fromFunction1(value))
+      inline def setOnShift(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onShift", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShiftUndefined: Self = StObject.set(x, "onShift", js.undefined)
+      inline def setOnShiftUndefined: Self = StObject.set(x, "onShift", js.undefined)
       
-      @scala.inline
-      def setOnSpace(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onSpace", js.Any.fromFunction1(value))
+      inline def setOnSpace(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onSpace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSpaceUndefined: Self = StObject.set(x, "onSpace", js.undefined)
+      inline def setOnSpaceUndefined: Self = StObject.set(x, "onSpace", js.undefined)
       
-      @scala.inline
-      def setOnTab(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTab", js.Any.fromFunction1(value))
+      inline def setOnTab(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTab", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabUndefined: Self = StObject.set(x, "onTab", js.undefined)
+      inline def setOnTabUndefined: Self = StObject.set(x, "onTab", js.undefined)
       
-      @scala.inline
-      def setOnUp(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction1(value))
+      inline def setOnUp(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpUndefined: Self = StObject.set(x, "onUp", js.undefined)
+      inline def setOnUpUndefined: Self = StObject.set(x, "onUp", js.undefined)
       
-      @scala.inline
-      def setTarget(value: component | document): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: component | document): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

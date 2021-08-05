@@ -15,31 +15,23 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(): ClassName = {
+  inline def apply(): ClassName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setOnDidClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onDidClick", js.Any.fromFunction1(value))
+    inline def setOnDidClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onDidClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidClickUndefined: Self = StObject.set(x, "onDidClick", js.undefined)
+    inline def setOnDidClickUndefined: Self = StObject.set(x, "onDidClick", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

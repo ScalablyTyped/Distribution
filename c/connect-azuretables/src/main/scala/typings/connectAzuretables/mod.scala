@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     session: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
       RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
@@ -49,17 +48,14 @@ object mod {
   }
   object AzureTableStoreFactory {
     
-    @scala.inline
-    def apply(create: AzureTableStoreOptions => AzureTableStore): AzureTableStoreFactory = {
+    inline def apply(create: AzureTableStoreOptions => AzureTableStore): AzureTableStoreFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[AzureTableStoreFactory]
     }
     
-    @scala.inline
-    implicit class AzureTableStoreFactoryMutableBuilder[Self <: AzureTableStoreFactory] (val x: Self) extends AnyVal {
+    extension [Self <: AzureTableStoreFactory](x: Self) {
       
-      @scala.inline
-      def setCreate(value: AzureTableStoreOptions => AzureTableStore): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: AzureTableStoreOptions => AzureTableStore): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -83,56 +79,40 @@ object mod {
   }
   object AzureTableStoreOptions {
     
-    @scala.inline
-    def apply(): AzureTableStoreOptions = {
+    inline def apply(): AzureTableStoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AzureTableStoreOptions]
     }
     
-    @scala.inline
-    implicit class AzureTableStoreOptionsMutableBuilder[Self <: AzureTableStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AzureTableStoreOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setErrorLogger(value: /* message */ String => Unit): Self = StObject.set(x, "errorLogger", js.Any.fromFunction1(value))
+      inline def setErrorLogger(value: /* message */ String => Unit): Self = StObject.set(x, "errorLogger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorLoggerUndefined: Self = StObject.set(x, "errorLogger", js.undefined)
+      inline def setErrorLoggerUndefined: Self = StObject.set(x, "errorLogger", js.undefined)
       
-      @scala.inline
-      def setLogger(value: /* message */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+      inline def setLogger(value: /* message */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setOverrideCron(value: String): Self = StObject.set(x, "overrideCron", value.asInstanceOf[js.Any])
+      inline def setOverrideCron(value: String): Self = StObject.set(x, "overrideCron", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideCronUndefined: Self = StObject.set(x, "overrideCron", js.undefined)
+      inline def setOverrideCronUndefined: Self = StObject.set(x, "overrideCron", js.undefined)
       
-      @scala.inline
-      def setSessionTimeOut(value: Double): Self = StObject.set(x, "sessionTimeOut", value.asInstanceOf[js.Any])
+      inline def setSessionTimeOut(value: Double): Self = StObject.set(x, "sessionTimeOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeOutUndefined: Self = StObject.set(x, "sessionTimeOut", js.undefined)
+      inline def setSessionTimeOutUndefined: Self = StObject.set(x, "sessionTimeOut", js.undefined)
       
-      @scala.inline
-      def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
+      inline def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageAccountUndefined: Self = StObject.set(x, "storageAccount", js.undefined)
+      inline def setStorageAccountUndefined: Self = StObject.set(x, "storageAccount", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     }
   }
 }

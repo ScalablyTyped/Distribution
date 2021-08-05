@@ -13,17 +13,14 @@ trait GotoStatement
 }
 object GotoStatement {
   
-  @scala.inline
-  def apply(label: Identifier): GotoStatement = {
+  inline def apply(label: Identifier): GotoStatement = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("GotoStatement")
     __obj.asInstanceOf[GotoStatement]
   }
   
-  @scala.inline
-  implicit class GotoStatementMutableBuilder[Self <: GotoStatement] (val x: Self) extends AnyVal {
+  extension [Self <: GotoStatement](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Identifier): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Identifier): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

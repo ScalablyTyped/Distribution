@@ -26,13 +26,10 @@ object TSLiteralType {
   @js.native
   def apply(literal: StringLiteral_): TSLiteralType = js.native
   
-  @scala.inline
-  implicit class TSLiteralTypeMutableBuilder[Self <: TSLiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: TSLiteralType](x: Self) {
     
-    @scala.inline
-    def setLiteral(value: NumericLiteral_ | StringLiteral_ | BooleanLiteral_): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+    inline def setLiteral(value: NumericLiteral_ | StringLiteral_ | BooleanLiteral_): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSLiteralType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSLiteralType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

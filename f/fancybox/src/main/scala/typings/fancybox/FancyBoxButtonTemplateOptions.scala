@@ -24,49 +24,35 @@ trait FancyBoxButtonTemplateOptions extends StObject {
 }
 object FancyBoxButtonTemplateOptions {
   
-  @scala.inline
-  def apply(): FancyBoxButtonTemplateOptions = {
+  inline def apply(): FancyBoxButtonTemplateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyBoxButtonTemplateOptions]
   }
   
-  @scala.inline
-  implicit class FancyBoxButtonTemplateOptionsMutableBuilder[Self <: FancyBoxButtonTemplateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxButtonTemplateOptions](x: Self) {
     
-    @scala.inline
-    def setArrowLeft(value: String): Self = StObject.set(x, "arrowLeft", value.asInstanceOf[js.Any])
+    inline def setArrowLeft(value: String): Self = StObject.set(x, "arrowLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowLeftUndefined: Self = StObject.set(x, "arrowLeft", js.undefined)
+    inline def setArrowLeftUndefined: Self = StObject.set(x, "arrowLeft", js.undefined)
     
-    @scala.inline
-    def setArrowRight(value: String): Self = StObject.set(x, "arrowRight", value.asInstanceOf[js.Any])
+    inline def setArrowRight(value: String): Self = StObject.set(x, "arrowRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowRightUndefined: Self = StObject.set(x, "arrowRight", js.undefined)
+    inline def setArrowRightUndefined: Self = StObject.set(x, "arrowRight", js.undefined)
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
-    @scala.inline
-    def setSmallBtn(value: String): Self = StObject.set(x, "smallBtn", value.asInstanceOf[js.Any])
+    inline def setSmallBtn(value: String): Self = StObject.set(x, "smallBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallBtnUndefined: Self = StObject.set(x, "smallBtn", js.undefined)
+    inline def setSmallBtnUndefined: Self = StObject.set(x, "smallBtn", js.undefined)
     
-    @scala.inline
-    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

@@ -26,17 +26,13 @@ object datetimeMod {
   @js.native
   val SHORT_MONTHS: js.Array[String] = js.native
   
-  @scala.inline
-  def dateTimeExprToExpr(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeExprToExpr")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateTimeExprToExpr(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeExprToExpr")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def dateTimeToExpr(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToExpr")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateTimeToExpr(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToExpr")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def dateTimeToTimestamp(d: DateTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToTimestamp")(d.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def dateTimeToTimestamp(d: DateTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToTimestamp")(d.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def isDateTime(o: js.Any): /* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean]
+  inline def isDateTime(o: js.Any): /* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean]
   
   trait DateTime extends StObject {
     
@@ -119,74 +115,52 @@ object datetimeMod {
   }
   object DateTime {
     
-    @scala.inline
-    def apply(): DateTime = {
+    inline def apply(): DateTime = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTime]
     }
     
-    @scala.inline
-    implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+    extension [Self <: DateTime](x: Self) {
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDay(value: Day | String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: Day | String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+      inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
       
-      @scala.inline
-      def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
+      inline def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+      inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
       
-      @scala.inline
-      def setMonth(value: Month | String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Month | String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setQuarter(value: Double): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
+      inline def setQuarter(value: Double): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
+      inline def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+      inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -214,74 +188,52 @@ object datetimeMod {
   }
   object DateTimeExpr {
     
-    @scala.inline
-    def apply(): DateTimeExpr = {
+    inline def apply(): DateTimeExpr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTimeExpr]
     }
     
-    @scala.inline
-    implicit class DateTimeExprMutableBuilder[Self <: DateTimeExpr] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeExpr](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+      inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
       
-      @scala.inline
-      def setMilliseconds(value: String): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: String): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
+      inline def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
       
-      @scala.inline
-      def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+      inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setQuarter(value: String): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
+      inline def setQuarter(value: String): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
+      inline def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
       
-      @scala.inline
-      def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+      inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   

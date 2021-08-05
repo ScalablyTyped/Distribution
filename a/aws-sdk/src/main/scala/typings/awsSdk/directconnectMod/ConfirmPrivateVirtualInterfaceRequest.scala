@@ -23,28 +23,21 @@ trait ConfirmPrivateVirtualInterfaceRequest extends StObject {
 }
 object ConfirmPrivateVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(virtualInterfaceId: VirtualInterfaceId): ConfirmPrivateVirtualInterfaceRequest = {
+  inline def apply(virtualInterfaceId: VirtualInterfaceId): ConfirmPrivateVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmPrivateVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class ConfirmPrivateVirtualInterfaceRequestMutableBuilder[Self <: ConfirmPrivateVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmPrivateVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
+    inline def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
-    @scala.inline
-    def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
+    inline def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

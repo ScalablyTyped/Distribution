@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartGroup")
 @js.native
-class ChartGroup protected ()
+/* private */ class ChartGroup ()
   extends StObject
      with typings.activexWord.Word.ChartGroup

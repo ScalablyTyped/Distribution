@@ -9,8 +9,7 @@ trait DeleteBucketEncryptionInput
      with typings.awsSdkClientS3Browser.typesDeleteBucketEncryptionInputMod.DeleteBucketEncryptionInput
 object DeleteBucketEncryptionInput {
   
-  @scala.inline
-  def apply(Bucket: String): DeleteBucketEncryptionInput = {
+  inline def apply(Bucket: String): DeleteBucketEncryptionInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketEncryptionInput]
   }

@@ -29,8 +29,7 @@ object badgeDriverMod {
   }
   object BadgeDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => Unit,
       exists: () => Boolean,
       getContent: () => String,
@@ -45,32 +44,23 @@ object badgeDriverMod {
       __obj.asInstanceOf[BadgeDriver]
     }
     
-    @scala.inline
-    implicit class BadgeDriverMutableBuilder[Self <: BadgeDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => Skin): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => Skin): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => Type): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => Type): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClickCursor(value: () => Boolean): Self = StObject.set(x, "hasClickCursor", js.Any.fromFunction0(value))
+      inline def setHasClickCursor(value: () => Boolean): Self = StObject.set(x, "hasClickCursor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUppercase(value: () => Boolean): Self = StObject.set(x, "isUppercase", js.Any.fromFunction0(value))
+      inline def setIsUppercase(value: () => Boolean): Self = StObject.set(x, "isUppercase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
   
@@ -81,11 +71,9 @@ object badgeDriverMod {
   trait Size extends StObject
   object Size {
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -104,38 +92,27 @@ object badgeDriverMod {
   trait Skin extends StObject
   object Skin {
     
-    @scala.inline
-    def danger: typings.wixStyleReact.wixStyleReactStrings.danger = "danger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.danger]
+    inline def danger: typings.wixStyleReact.wixStyleReactStrings.danger = "danger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.danger]
     
-    @scala.inline
-    def general: typings.wixStyleReact.wixStyleReactStrings.general = "general".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.general]
+    inline def general: typings.wixStyleReact.wixStyleReactStrings.general = "general".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.general]
     
-    @scala.inline
-    def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
+    inline def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
     
-    @scala.inline
-    def neutralStandard: typings.wixStyleReact.wixStyleReactStrings.neutralStandard = "neutralStandard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralStandard]
+    inline def neutralStandard: typings.wixStyleReact.wixStyleReactStrings.neutralStandard = "neutralStandard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralStandard]
     
-    @scala.inline
-    def neutralSuccess: typings.wixStyleReact.wixStyleReactStrings.neutralSuccess = "neutralSuccess".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralSuccess]
+    inline def neutralSuccess: typings.wixStyleReact.wixStyleReactStrings.neutralSuccess = "neutralSuccess".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralSuccess]
     
-    @scala.inline
-    def nutralDanger: typings.wixStyleReact.wixStyleReactStrings.nutralDanger = "nutralDanger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.nutralDanger]
+    inline def nutralDanger: typings.wixStyleReact.wixStyleReactStrings.nutralDanger = "nutralDanger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.nutralDanger]
     
-    @scala.inline
-    def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
+    inline def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
     
-    @scala.inline
-    def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
+    inline def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
     
-    @scala.inline
-    def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
+    inline def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
     
-    @scala.inline
-    def urgent: typings.wixStyleReact.wixStyleReactStrings.urgent = "urgent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.urgent]
+    inline def urgent: typings.wixStyleReact.wixStyleReactStrings.urgent = "urgent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.urgent]
     
-    @scala.inline
-    def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
+    inline def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -146,13 +123,10 @@ object badgeDriverMod {
   trait Type extends StObject
   object Type {
     
-    @scala.inline
-    def outlined: typings.wixStyleReact.wixStyleReactStrings.outlined = "outlined".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.outlined]
+    inline def outlined: typings.wixStyleReact.wixStyleReactStrings.outlined = "outlined".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.outlined]
     
-    @scala.inline
-    def solid: typings.wixStyleReact.wixStyleReactStrings.solid = "solid".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.solid]
+    inline def solid: typings.wixStyleReact.wixStyleReactStrings.solid = "solid".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.solid]
     
-    @scala.inline
-    def transparent: typings.wixStyleReact.wixStyleReactStrings.transparent = "transparent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.transparent]
+    inline def transparent: typings.wixStyleReact.wixStyleReactStrings.transparent = "transparent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.transparent]
   }
 }

@@ -15,20 +15,16 @@ trait SliderMaximumAction
 }
 object SliderMaximumAction {
   
-  @scala.inline
-  def apply(max: Double): SliderMaximumAction = {
+  inline def apply(max: Double): SliderMaximumAction = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("maximum")
     __obj.asInstanceOf[SliderMaximumAction]
   }
   
-  @scala.inline
-  implicit class SliderMaximumActionMutableBuilder[Self <: SliderMaximumAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderMaximumAction](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: maximum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: maximum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

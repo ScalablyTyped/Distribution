@@ -10,16 +10,13 @@ trait IsMeasured extends StObject {
 }
 object IsMeasured {
   
-  @scala.inline
-  def apply(isMeasured: Boolean): IsMeasured = {
+  inline def apply(isMeasured: Boolean): IsMeasured = {
     val __obj = js.Dynamic.literal(isMeasured = isMeasured.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMeasured]
   }
   
-  @scala.inline
-  implicit class IsMeasuredMutableBuilder[Self <: IsMeasured] (val x: Self) extends AnyVal {
+  extension [Self <: IsMeasured](x: Self) {
     
-    @scala.inline
-    def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
+    inline def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
   }
 }

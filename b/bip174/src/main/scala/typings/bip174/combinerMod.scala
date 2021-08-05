@@ -11,6 +11,5 @@ object combinerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def combine(psbts: js.Array[PsbtAttributes]): PsbtAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(psbts.asInstanceOf[js.Any]).asInstanceOf[PsbtAttributes]
+  inline def combine(psbts: js.Array[PsbtAttributes]): PsbtAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(psbts.asInstanceOf[js.Any]).asInstanceOf[PsbtAttributes]
 }

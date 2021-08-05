@@ -27,7 +27,7 @@ class ScaleTimeline protected ()
   /* CompleteClass */
   var boneIndex: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var curves: js.Any = js.native
   
   /* CompleteClass */

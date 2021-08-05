@@ -56,17 +56,14 @@ object webBrowserTypesMod {
   }
   object RedirectEvent {
     
-    @scala.inline
-    def apply(url: String): RedirectEvent = {
+    inline def apply(url: String): RedirectEvent = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedirectEvent]
     }
     
-    @scala.inline
-    implicit class RedirectEventMutableBuilder[Self <: RedirectEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RedirectEvent](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,20 +73,16 @@ object webBrowserTypesMod {
   }
   object ServiceActionResult {
     
-    @scala.inline
-    def apply(): ServiceActionResult = {
+    inline def apply(): ServiceActionResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceActionResult]
     }
     
-    @scala.inline
-    implicit class ServiceActionResultMutableBuilder[Self <: ServiceActionResult] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceActionResult](x: Self) {
       
-      @scala.inline
-      def setServicePackage(value: String): Self = StObject.set(x, "servicePackage", value.asInstanceOf[js.Any])
+      inline def setServicePackage(value: String): Self = StObject.set(x, "servicePackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePackageUndefined: Self = StObject.set(x, "servicePackage", js.undefined)
+      inline def setServicePackageUndefined: Self = StObject.set(x, "servicePackage", js.undefined)
     }
   }
   
@@ -100,15 +93,13 @@ object webBrowserTypesMod {
   trait WebBrowserAuthSessionResult extends StObject
   object WebBrowserAuthSessionResult {
     
-    @scala.inline
-    def WebBrowserRedirectResult(url: String): typings.expoWebBrowser.webBrowserTypesMod.WebBrowserRedirectResult = {
+    inline def WebBrowserRedirectResult(url: String): typings.expoWebBrowser.webBrowserTypesMod.WebBrowserRedirectResult = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserRedirectResult]
     }
     
-    @scala.inline
-    def WebBrowserResult(`type`: WebBrowserResultType): typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResult = {
+    inline def WebBrowserResult(`type`: WebBrowserResultType): typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResult = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResult]
@@ -129,38 +120,28 @@ object webBrowserTypesMod {
   }
   object WebBrowserCustomTabsResults {
     
-    @scala.inline
-    def apply(browserPackages: js.Array[String], servicePackages: js.Array[String]): WebBrowserCustomTabsResults = {
+    inline def apply(browserPackages: js.Array[String], servicePackages: js.Array[String]): WebBrowserCustomTabsResults = {
       val __obj = js.Dynamic.literal(browserPackages = browserPackages.asInstanceOf[js.Any], servicePackages = servicePackages.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebBrowserCustomTabsResults]
     }
     
-    @scala.inline
-    implicit class WebBrowserCustomTabsResultsMutableBuilder[Self <: WebBrowserCustomTabsResults] (val x: Self) extends AnyVal {
+    extension [Self <: WebBrowserCustomTabsResults](x: Self) {
       
-      @scala.inline
-      def setBrowserPackages(value: js.Array[String]): Self = StObject.set(x, "browserPackages", value.asInstanceOf[js.Any])
+      inline def setBrowserPackages(value: js.Array[String]): Self = StObject.set(x, "browserPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserPackagesVarargs(value: String*): Self = StObject.set(x, "browserPackages", js.Array(value :_*))
+      inline def setBrowserPackagesVarargs(value: String*): Self = StObject.set(x, "browserPackages", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultBrowserPackage(value: String): Self = StObject.set(x, "defaultBrowserPackage", value.asInstanceOf[js.Any])
+      inline def setDefaultBrowserPackage(value: String): Self = StObject.set(x, "defaultBrowserPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultBrowserPackageUndefined: Self = StObject.set(x, "defaultBrowserPackage", js.undefined)
+      inline def setDefaultBrowserPackageUndefined: Self = StObject.set(x, "defaultBrowserPackage", js.undefined)
       
-      @scala.inline
-      def setPreferredBrowserPackage(value: String): Self = StObject.set(x, "preferredBrowserPackage", value.asInstanceOf[js.Any])
+      inline def setPreferredBrowserPackage(value: String): Self = StObject.set(x, "preferredBrowserPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredBrowserPackageUndefined: Self = StObject.set(x, "preferredBrowserPackage", js.undefined)
+      inline def setPreferredBrowserPackageUndefined: Self = StObject.set(x, "preferredBrowserPackage", js.undefined)
       
-      @scala.inline
-      def setServicePackages(value: js.Array[String]): Self = StObject.set(x, "servicePackages", value.asInstanceOf[js.Any])
+      inline def setServicePackages(value: js.Array[String]): Self = StObject.set(x, "servicePackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePackagesVarargs(value: String*): Self = StObject.set(x, "servicePackages", js.Array(value :_*))
+      inline def setServicePackagesVarargs(value: String*): Self = StObject.set(x, "servicePackages", js.Array(value :_*))
     }
   }
   
@@ -218,86 +199,60 @@ object webBrowserTypesMod {
   }
   object WebBrowserOpenOptions {
     
-    @scala.inline
-    def apply(): WebBrowserOpenOptions = {
+    inline def apply(): WebBrowserOpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebBrowserOpenOptions]
     }
     
-    @scala.inline
-    implicit class WebBrowserOpenOptionsMutableBuilder[Self <: WebBrowserOpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebBrowserOpenOptions](x: Self) {
       
-      @scala.inline
-      def setBrowserPackage(value: String): Self = StObject.set(x, "browserPackage", value.asInstanceOf[js.Any])
+      inline def setBrowserPackage(value: String): Self = StObject.set(x, "browserPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserPackageUndefined: Self = StObject.set(x, "browserPackage", js.undefined)
+      inline def setBrowserPackageUndefined: Self = StObject.set(x, "browserPackage", js.undefined)
       
-      @scala.inline
-      def setControlsColor(value: String): Self = StObject.set(x, "controlsColor", value.asInstanceOf[js.Any])
+      inline def setControlsColor(value: String): Self = StObject.set(x, "controlsColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsColorUndefined: Self = StObject.set(x, "controlsColor", js.undefined)
+      inline def setControlsColorUndefined: Self = StObject.set(x, "controlsColor", js.undefined)
       
-      @scala.inline
-      def setDismissButtonStyle(value: done | close | cancel): Self = StObject.set(x, "dismissButtonStyle", value.asInstanceOf[js.Any])
+      inline def setDismissButtonStyle(value: done | close | cancel): Self = StObject.set(x, "dismissButtonStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissButtonStyleUndefined: Self = StObject.set(x, "dismissButtonStyle", js.undefined)
+      inline def setDismissButtonStyleUndefined: Self = StObject.set(x, "dismissButtonStyle", js.undefined)
       
-      @scala.inline
-      def setEnableBarCollapsing(value: Boolean): Self = StObject.set(x, "enableBarCollapsing", value.asInstanceOf[js.Any])
+      inline def setEnableBarCollapsing(value: Boolean): Self = StObject.set(x, "enableBarCollapsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableBarCollapsingUndefined: Self = StObject.set(x, "enableBarCollapsing", js.undefined)
+      inline def setEnableBarCollapsingUndefined: Self = StObject.set(x, "enableBarCollapsing", js.undefined)
       
-      @scala.inline
-      def setEnableDefaultShareMenuItem(value: Boolean): Self = StObject.set(x, "enableDefaultShareMenuItem", value.asInstanceOf[js.Any])
+      inline def setEnableDefaultShareMenuItem(value: Boolean): Self = StObject.set(x, "enableDefaultShareMenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableDefaultShareMenuItemUndefined: Self = StObject.set(x, "enableDefaultShareMenuItem", js.undefined)
+      inline def setEnableDefaultShareMenuItemUndefined: Self = StObject.set(x, "enableDefaultShareMenuItem", js.undefined)
       
-      @scala.inline
-      def setReaderMode(value: Boolean): Self = StObject.set(x, "readerMode", value.asInstanceOf[js.Any])
+      inline def setReaderMode(value: Boolean): Self = StObject.set(x, "readerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaderModeUndefined: Self = StObject.set(x, "readerMode", js.undefined)
+      inline def setReaderModeUndefined: Self = StObject.set(x, "readerMode", js.undefined)
       
-      @scala.inline
-      def setSecondaryToolbarColor(value: String): Self = StObject.set(x, "secondaryToolbarColor", value.asInstanceOf[js.Any])
+      inline def setSecondaryToolbarColor(value: String): Self = StObject.set(x, "secondaryToolbarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryToolbarColorUndefined: Self = StObject.set(x, "secondaryToolbarColor", js.undefined)
+      inline def setSecondaryToolbarColorUndefined: Self = StObject.set(x, "secondaryToolbarColor", js.undefined)
       
-      @scala.inline
-      def setShowInRecents(value: Boolean): Self = StObject.set(x, "showInRecents", value.asInstanceOf[js.Any])
+      inline def setShowInRecents(value: Boolean): Self = StObject.set(x, "showInRecents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowInRecentsUndefined: Self = StObject.set(x, "showInRecents", js.undefined)
+      inline def setShowInRecentsUndefined: Self = StObject.set(x, "showInRecents", js.undefined)
       
-      @scala.inline
-      def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+      inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+      inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
       
-      @scala.inline
-      def setToolbarColor(value: String): Self = StObject.set(x, "toolbarColor", value.asInstanceOf[js.Any])
+      inline def setToolbarColor(value: String): Self = StObject.set(x, "toolbarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarColorUndefined: Self = StObject.set(x, "toolbarColor", js.undefined)
+      inline def setToolbarColorUndefined: Self = StObject.set(x, "toolbarColor", js.undefined)
       
-      @scala.inline
-      def setWindowFeatures(value: String | WebBrowserWindowFeatures): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
+      inline def setWindowFeatures(value: String | WebBrowserWindowFeatures): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowFeaturesUndefined: Self = StObject.set(x, "windowFeatures", js.undefined)
+      inline def setWindowFeaturesUndefined: Self = StObject.set(x, "windowFeatures", js.undefined)
       
-      @scala.inline
-      def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+      inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
+      inline def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
     }
   }
   
@@ -311,21 +266,17 @@ object webBrowserTypesMod {
   }
   object WebBrowserRedirectResult {
     
-    @scala.inline
-    def apply(url: String): WebBrowserRedirectResult = {
+    inline def apply(url: String): WebBrowserRedirectResult = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[WebBrowserRedirectResult]
     }
     
-    @scala.inline
-    implicit class WebBrowserRedirectResultMutableBuilder[Self <: WebBrowserRedirectResult] (val x: Self) extends AnyVal {
+    extension [Self <: WebBrowserRedirectResult](x: Self) {
       
-      @scala.inline
-      def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,18 +288,15 @@ object webBrowserTypesMod {
   }
   object WebBrowserResult {
     
-    @scala.inline
-    def apply(`type`: WebBrowserResultType): WebBrowserResult = {
+    inline def apply(`type`: WebBrowserResultType): WebBrowserResult = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebBrowserResult]
     }
     
-    @scala.inline
-    implicit class WebBrowserResultMutableBuilder[Self <: WebBrowserResult] (val x: Self) extends AnyVal {
+    extension [Self <: WebBrowserResult](x: Self) {
       
-      @scala.inline
-      def setType(value: WebBrowserResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: WebBrowserResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

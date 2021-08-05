@@ -12,22 +12,17 @@ trait ContainerSnapshot extends StObject {
 }
 object ContainerSnapshot {
   
-  @scala.inline
-  def apply(bindings: Lookup[Binding[js.Any]]): ContainerSnapshot = {
+  inline def apply(bindings: Lookup[Binding[js.Any]]): ContainerSnapshot = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], middleware = null)
     __obj.asInstanceOf[ContainerSnapshot]
   }
   
-  @scala.inline
-  implicit class ContainerSnapshotMutableBuilder[Self <: ContainerSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerSnapshot](x: Self) {
     
-    @scala.inline
-    def setBindings(value: Lookup[Binding[js.Any]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: Lookup[Binding[js.Any]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleware(value: /* args */ NextArgs => js.Any | js.Array[js.Any]): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+    inline def setMiddleware(value: /* args */ NextArgs => js.Any | js.Array[js.Any]): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMiddlewareNull: Self = StObject.set(x, "middleware", null)
+    inline def setMiddlewareNull: Self = StObject.set(x, "middleware", null)
   }
 }

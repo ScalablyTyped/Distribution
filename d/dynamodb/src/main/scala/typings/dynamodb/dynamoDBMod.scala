@@ -35,24 +35,19 @@ object dynamoDBMod {
   }
   object BinarySet {
     
-    @scala.inline
-    def apply(values: js.Array[binaryType]): BinarySet = {
+    inline def apply(values: js.Array[binaryType]): BinarySet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Binary")
       __obj.asInstanceOf[BinarySet]
     }
     
-    @scala.inline
-    implicit class BinarySetMutableBuilder[Self <: BinarySet] (val x: Self) extends AnyVal {
+    extension [Self <: BinarySet](x: Self) {
       
-      @scala.inline
-      def setType(value: Binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[binaryType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[binaryType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -68,22 +63,19 @@ object dynamoDBMod {
   trait DynamoDbSet extends StObject
   object DynamoDbSet {
     
-    @scala.inline
-    def BinarySet(values: js.Array[binaryType]): typings.dynamodb.dynamoDBMod.BinarySet = {
+    inline def BinarySet(values: js.Array[binaryType]): typings.dynamodb.dynamoDBMod.BinarySet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Binary")
       __obj.asInstanceOf[typings.dynamodb.dynamoDBMod.BinarySet]
     }
     
-    @scala.inline
-    def NumberSet(values: js.Array[Double]): typings.dynamodb.dynamoDBMod.NumberSet = {
+    inline def NumberSet(values: js.Array[Double]): typings.dynamodb.dynamoDBMod.NumberSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[typings.dynamodb.dynamoDBMod.NumberSet]
     }
     
-    @scala.inline
-    def StringSet(values: js.Array[String]): typings.dynamodb.dynamoDBMod.StringSet = {
+    inline def StringSet(values: js.Array[String]): typings.dynamodb.dynamoDBMod.StringSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("String")
       __obj.asInstanceOf[typings.dynamodb.dynamoDBMod.StringSet]
@@ -108,53 +100,38 @@ object dynamoDBMod {
   }
   object GetItemInput {
     
-    @scala.inline
-    def apply(Key: js.Object, TableName: String): GetItemInput = {
+    inline def apply(Key: js.Object, TableName: String): GetItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetItemInput]
     }
     
-    @scala.inline
-    implicit class GetItemInputMutableBuilder[Self <: GetItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetItemInput](x: Self) {
       
-      @scala.inline
-      def setAttributesToGet(value: js.Array[String]): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+      inline def setAttributesToGet(value: js.Array[String]): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+      inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      @scala.inline
-      def setAttributesToGetVarargs(value: String*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: String*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
       
-      @scala.inline
-      def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      inline def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: StringDictionary[String]): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: StringDictionary[String]): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setKey(value: js.Object): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: js.Object): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpression(value: String): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+      inline def setProjectionExpression(value: String): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+      inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: String): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: String): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,24 +145,19 @@ object dynamoDBMod {
   }
   object NumberSet {
     
-    @scala.inline
-    def apply(values: js.Array[Double]): NumberSet = {
+    inline def apply(values: js.Array[Double]): NumberSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[NumberSet]
     }
     
-    @scala.inline
-    implicit class NumberSetMutableBuilder[Self <: NumberSet] (val x: Self) extends AnyVal {
+    extension [Self <: NumberSet](x: Self) {
       
-      @scala.inline
-      def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -197,29 +169,22 @@ object dynamoDBMod {
   }
   object Projection {
     
-    @scala.inline
-    def apply(): Projection = {
+    inline def apply(): Projection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
+      inline def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
+      inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
       
-      @scala.inline
-      def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectionType(value: ALL | KEYS_ONLY | INCLUDE | String): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
+      inline def setProjectionType(value: ALL | KEYS_ONLY | INCLUDE | String): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
+      inline def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
     }
   }
   
@@ -233,24 +198,19 @@ object dynamoDBMod {
   }
   object StringSet {
     
-    @scala.inline
-    def apply(values: js.Array[String]): StringSet = {
+    inline def apply(values: js.Array[String]): StringSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("String")
       __obj.asInstanceOf[StringSet]
     }
     
-    @scala.inline
-    implicit class StringSetMutableBuilder[Self <: StringSet] (val x: Self) extends AnyVal {
+    extension [Self <: StringSet](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.dynamodb.dynamodbStrings.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.dynamodb.dynamodbStrings.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   

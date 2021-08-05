@@ -11,19 +11,15 @@ trait StrictHtmlLabelProps extends StObject {
 }
 object StrictHtmlLabelProps {
   
-  @scala.inline
-  def apply(): StrictHtmlLabelProps = {
+  inline def apply(): StrictHtmlLabelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrictHtmlLabelProps]
   }
   
-  @scala.inline
-  implicit class StrictHtmlLabelPropsMutableBuilder[Self <: StrictHtmlLabelProps] (val x: Self) extends AnyVal {
+  extension [Self <: StrictHtmlLabelProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

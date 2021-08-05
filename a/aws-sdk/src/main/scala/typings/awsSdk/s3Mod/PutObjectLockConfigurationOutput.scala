@@ -10,19 +10,15 @@ trait PutObjectLockConfigurationOutput extends StObject {
 }
 object PutObjectLockConfigurationOutput {
   
-  @scala.inline
-  def apply(): PutObjectLockConfigurationOutput = {
+  inline def apply(): PutObjectLockConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectLockConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class PutObjectLockConfigurationOutputMutableBuilder[Self <: PutObjectLockConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectLockConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

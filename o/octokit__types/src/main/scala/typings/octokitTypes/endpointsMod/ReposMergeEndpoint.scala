@@ -27,31 +27,23 @@ trait ReposMergeEndpoint extends StObject {
 }
 object ReposMergeEndpoint {
   
-  @scala.inline
-  def apply(base: String, head: String, owner: String, repo: String): ReposMergeEndpoint = {
+  inline def apply(base: String, head: String, owner: String, repo: String): ReposMergeEndpoint = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposMergeEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposMergeEndpointMutableBuilder[Self <: ReposMergeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposMergeEndpoint](x: Self) {
     
-    @scala.inline
-    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit_message(value: String): Self = StObject.set(x, "commit_message", value.asInstanceOf[js.Any])
+    inline def setCommit_message(value: String): Self = StObject.set(x, "commit_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit_messageUndefined: Self = StObject.set(x, "commit_message", js.undefined)
+    inline def setCommit_messageUndefined: Self = StObject.set(x, "commit_message", js.undefined)
     
-    @scala.inline
-    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

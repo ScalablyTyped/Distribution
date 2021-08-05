@@ -44,8 +44,7 @@ trait Database
 }
 object Database {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -81,19 +80,14 @@ object Database {
     __obj.asInstanceOf[Database]
   }
   
-  @scala.inline
-  implicit class DatabaseMutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
+  extension [Self <: Database](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+    inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBaseFormat(value: Boolean): Self = StObject.set(x, "DataBaseFormat", value.asInstanceOf[js.Any])
+    inline def setDataBaseFormat(value: Boolean): Self = StObject.set(x, "DataBaseFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
   }
 }

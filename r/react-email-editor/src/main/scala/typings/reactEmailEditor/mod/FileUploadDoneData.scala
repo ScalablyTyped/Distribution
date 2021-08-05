@@ -12,22 +12,17 @@ trait FileUploadDoneData extends StObject {
 }
 object FileUploadDoneData {
   
-  @scala.inline
-  def apply(progress: Double): FileUploadDoneData = {
+  inline def apply(progress: Double): FileUploadDoneData = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadDoneData]
   }
   
-  @scala.inline
-  implicit class FileUploadDoneDataMutableBuilder[Self <: FileUploadDoneData] (val x: Self) extends AnyVal {
+  extension [Self <: FileUploadDoneData](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

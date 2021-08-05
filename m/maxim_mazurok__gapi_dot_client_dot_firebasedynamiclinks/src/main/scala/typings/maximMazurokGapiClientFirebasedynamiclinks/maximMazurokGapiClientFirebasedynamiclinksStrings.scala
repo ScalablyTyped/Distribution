@@ -8,11 +8,9 @@ object maximMazurokGapiClientFirebasedynamiclinksStrings {
   
   @js.native
   sealed trait firebasedynamiclinks extends StObject
-  @scala.inline
-  def firebasedynamiclinks: firebasedynamiclinks = "firebasedynamiclinks".asInstanceOf[firebasedynamiclinks]
+  inline def firebasedynamiclinks: firebasedynamiclinks = "firebasedynamiclinks".asInstanceOf[firebasedynamiclinks]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

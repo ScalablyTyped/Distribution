@@ -33,46 +33,33 @@ trait StepScalingPolicyConfiguration extends StObject {
 }
 object StepScalingPolicyConfiguration {
   
-  @scala.inline
-  def apply(): StepScalingPolicyConfiguration = {
+  inline def apply(): StepScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StepScalingPolicyConfiguration]
   }
   
-  @scala.inline
-  implicit class StepScalingPolicyConfigurationMutableBuilder[Self <: StepScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: StepScalingPolicyConfiguration](x: Self) {
     
-    @scala.inline
-    def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
+    inline def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
+    inline def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
     
-    @scala.inline
-    def setCooldown(value: Cooldown): Self = StObject.set(x, "Cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: Cooldown): Self = StObject.set(x, "Cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldownUndefined: Self = StObject.set(x, "Cooldown", js.undefined)
+    inline def setCooldownUndefined: Self = StObject.set(x, "Cooldown", js.undefined)
     
-    @scala.inline
-    def setMetricAggregationType(value: MetricAggregationType): Self = StObject.set(x, "MetricAggregationType", value.asInstanceOf[js.Any])
+    inline def setMetricAggregationType(value: MetricAggregationType): Self = StObject.set(x, "MetricAggregationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricAggregationTypeUndefined: Self = StObject.set(x, "MetricAggregationType", js.undefined)
+    inline def setMetricAggregationTypeUndefined: Self = StObject.set(x, "MetricAggregationType", js.undefined)
     
-    @scala.inline
-    def setMinAdjustmentMagnitude(value: MinAdjustmentMagnitude): Self = StObject.set(x, "MinAdjustmentMagnitude", value.asInstanceOf[js.Any])
+    inline def setMinAdjustmentMagnitude(value: MinAdjustmentMagnitude): Self = StObject.set(x, "MinAdjustmentMagnitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "MinAdjustmentMagnitude", js.undefined)
+    inline def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "MinAdjustmentMagnitude", js.undefined)
     
-    @scala.inline
-    def setStepAdjustments(value: StepAdjustments): Self = StObject.set(x, "StepAdjustments", value.asInstanceOf[js.Any])
+    inline def setStepAdjustments(value: StepAdjustments): Self = StObject.set(x, "StepAdjustments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepAdjustmentsUndefined: Self = StObject.set(x, "StepAdjustments", js.undefined)
+    inline def setStepAdjustmentsUndefined: Self = StObject.set(x, "StepAdjustments", js.undefined)
     
-    @scala.inline
-    def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = StObject.set(x, "StepAdjustments", js.Array(value :_*))
+    inline def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = StObject.set(x, "StepAdjustments", js.Array(value :_*))
   }
 }

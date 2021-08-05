@@ -33,43 +33,31 @@ trait SchemaSummary extends StObject {
 }
 object SchemaSummary {
   
-  @scala.inline
-  def apply(): SchemaSummary = {
+  inline def apply(): SchemaSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSummary]
   }
   
-  @scala.inline
-  implicit class SchemaSummaryMutableBuilder[Self <: SchemaSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSummary](x: Self) {
     
-    @scala.inline
-    def setLastModified(value: timestampIso8601): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: timestampIso8601): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setVersionCount(value: long): Self = StObject.set(x, "VersionCount", value.asInstanceOf[js.Any])
+    inline def setVersionCount(value: long): Self = StObject.set(x, "VersionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCountUndefined: Self = StObject.set(x, "VersionCount", js.undefined)
+    inline def setVersionCountUndefined: Self = StObject.set(x, "VersionCount", js.undefined)
   }
 }

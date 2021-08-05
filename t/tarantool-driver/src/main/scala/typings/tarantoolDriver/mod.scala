@@ -107,71 +107,50 @@ object mod {
   }
   object TarantoolOptions {
     
-    @scala.inline
-    def apply(): TarantoolOptions = {
+    inline def apply(): TarantoolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TarantoolOptions]
     }
     
-    @scala.inline
-    implicit class TarantoolOptionsMutableBuilder[Self <: TarantoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TarantoolOptions](x: Self) {
       
-      @scala.inline
-      def setBeforeReserve(value: Double): Self = StObject.set(x, "beforeReserve", value.asInstanceOf[js.Any])
+      inline def setBeforeReserve(value: Double): Self = StObject.set(x, "beforeReserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeReserveUndefined: Self = StObject.set(x, "beforeReserve", js.undefined)
+      inline def setBeforeReserveUndefined: Self = StObject.set(x, "beforeReserve", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLazyConnect(value: Boolean): Self = StObject.set(x, "lazyConnect", value.asInstanceOf[js.Any])
+      inline def setLazyConnect(value: Boolean): Self = StObject.set(x, "lazyConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyConnectUndefined: Self = StObject.set(x, "lazyConnect", js.undefined)
+      inline def setLazyConnectUndefined: Self = StObject.set(x, "lazyConnect", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setReserveHosts(value: js.Array[String]): Self = StObject.set(x, "reserveHosts", value.asInstanceOf[js.Any])
+      inline def setReserveHosts(value: js.Array[String]): Self = StObject.set(x, "reserveHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReserveHostsUndefined: Self = StObject.set(x, "reserveHosts", js.undefined)
+      inline def setReserveHostsUndefined: Self = StObject.set(x, "reserveHosts", js.undefined)
       
-      @scala.inline
-      def setReserveHostsVarargs(value: String*): Self = StObject.set(x, "reserveHosts", js.Array(value :_*))
+      inline def setReserveHostsVarargs(value: String*): Self = StObject.set(x, "reserveHosts", js.Array(value :_*))
       
-      @scala.inline
-      def setRetryStrategy(value: /* times */ Double => Double): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction1(value))
+      inline def setRetryStrategy(value: /* times */ Double => Double): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

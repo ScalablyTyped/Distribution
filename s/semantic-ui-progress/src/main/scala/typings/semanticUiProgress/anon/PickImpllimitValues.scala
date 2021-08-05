@@ -11,16 +11,13 @@ trait PickImpllimitValues extends StObject {
 }
 object PickImpllimitValues {
   
-  @scala.inline
-  def apply(limitValues: Boolean): PickImpllimitValues = {
+  inline def apply(limitValues: Boolean): PickImpllimitValues = {
     val __obj = js.Dynamic.literal(limitValues = limitValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllimitValues]
   }
   
-  @scala.inline
-  implicit class PickImpllimitValuesMutableBuilder[Self <: PickImpllimitValues] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpllimitValues](x: Self) {
     
-    @scala.inline
-    def setLimitValues(value: Boolean): Self = StObject.set(x, "limitValues", value.asInstanceOf[js.Any])
+    inline def setLimitValues(value: Boolean): Self = StObject.set(x, "limitValues", value.asInstanceOf[js.Any])
   }
 }

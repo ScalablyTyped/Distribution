@@ -10,19 +10,15 @@ trait OnsOptions extends StObject {
 }
 object OnsOptions {
   
-  @scala.inline
-  def apply(): OnsOptions = {
+  inline def apply(): OnsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnsOptions]
   }
   
-  @scala.inline
-  implicit class OnsOptionsMutableBuilder[Self <: OnsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OnsOptions](x: Self) {
     
-    @scala.inline
-    def setParentScope(value: js.Object): Self = StObject.set(x, "parentScope", value.asInstanceOf[js.Any])
+    inline def setParentScope(value: js.Object): Self = StObject.set(x, "parentScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentScopeUndefined: Self = StObject.set(x, "parentScope", js.undefined)
+    inline def setParentScopeUndefined: Self = StObject.set(x, "parentScope", js.undefined)
   }
 }

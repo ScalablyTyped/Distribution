@@ -15,16 +15,13 @@ trait DOM extends StObject {
 }
 object DOM {
   
-  @scala.inline
-  def apply(update: () => Unit): DOM = {
+  inline def apply(update: () => Unit): DOM = {
     val __obj = js.Dynamic.literal(update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[DOM]
   }
   
-  @scala.inline
-  implicit class DOMMutableBuilder[Self <: DOM] (val x: Self) extends AnyVal {
+  extension [Self <: DOM](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

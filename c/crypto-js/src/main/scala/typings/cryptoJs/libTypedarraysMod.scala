@@ -23,14 +23,10 @@ object libTypedarraysMod {
     *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607]);
     *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607], 6);
     */
-  @scala.inline
-  def create(): WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WordArray]
-  @scala.inline
-  def create(words: js.Array[Double]): WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any]).asInstanceOf[WordArray]
-  @scala.inline
-  def create(words: js.Array[Double], sigBytes: Double): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[WordArray]
-  @scala.inline
-  def create(words: Unit, sigBytes: Double): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+  inline def create(): WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WordArray]
+  inline def create(words: js.Array[Double]): WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any]).asInstanceOf[WordArray]
+  inline def create(words: js.Array[Double], sigBytes: Double): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+  inline def create(words: Unit, sigBytes: Double): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[WordArray]
   
   /**
     * Creates a word array filled with random bytes.
@@ -43,6 +39,5 @@ object libTypedarraysMod {
     *
     *     var wordArray = CryptoJS.lib.WordArray.random(16);
     */
-  @scala.inline
-  def random(nBytes: Double): WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(nBytes.asInstanceOf[js.Any]).asInstanceOf[WordArray]
+  inline def random(nBytes: Double): WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(nBytes.asInstanceOf[js.Any]).asInstanceOf[WordArray]
 }

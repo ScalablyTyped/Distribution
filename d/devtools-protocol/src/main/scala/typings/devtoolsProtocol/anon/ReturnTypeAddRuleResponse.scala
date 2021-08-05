@@ -14,22 +14,17 @@ trait ReturnTypeAddRuleResponse extends StObject {
 }
 object ReturnTypeAddRuleResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[AddRuleRequest], returnType: AddRuleResponse): ReturnTypeAddRuleResponse = {
+  inline def apply(paramsType: js.Array[AddRuleRequest], returnType: AddRuleResponse): ReturnTypeAddRuleResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeAddRuleResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeAddRuleResponseMutableBuilder[Self <: ReturnTypeAddRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeAddRuleResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[AddRuleRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[AddRuleRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: AddRuleRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: AddRuleRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: AddRuleResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: AddRuleResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

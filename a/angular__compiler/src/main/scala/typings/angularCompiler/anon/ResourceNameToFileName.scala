@@ -10,16 +10,13 @@ trait ResourceNameToFileName extends StObject {
 }
 object ResourceNameToFileName {
   
-  @scala.inline
-  def apply(resourceNameToFileName: (String, String) => String | Null): ResourceNameToFileName = {
+  inline def apply(resourceNameToFileName: (String, String) => String | Null): ResourceNameToFileName = {
     val __obj = js.Dynamic.literal(resourceNameToFileName = js.Any.fromFunction2(resourceNameToFileName))
     __obj.asInstanceOf[ResourceNameToFileName]
   }
   
-  @scala.inline
-  implicit class ResourceNameToFileNameMutableBuilder[Self <: ResourceNameToFileName] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceNameToFileName](x: Self) {
     
-    @scala.inline
-    def setResourceNameToFileName(value: (String, String) => String | Null): Self = StObject.set(x, "resourceNameToFileName", js.Any.fromFunction2(value))
+    inline def setResourceNameToFileName(value: (String, String) => String | Null): Self = StObject.set(x, "resourceNameToFileName", js.Any.fromFunction2(value))
   }
 }

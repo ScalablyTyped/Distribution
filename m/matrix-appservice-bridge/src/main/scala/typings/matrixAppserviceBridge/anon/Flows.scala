@@ -10,19 +10,15 @@ trait Flows extends StObject {
 }
 object Flows {
   
-  @scala.inline
-  def apply(flows: js.Array[TypeString]): Flows = {
+  inline def apply(flows: js.Array[TypeString]): Flows = {
     val __obj = js.Dynamic.literal(flows = flows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flows]
   }
   
-  @scala.inline
-  implicit class FlowsMutableBuilder[Self <: Flows] (val x: Self) extends AnyVal {
+  extension [Self <: Flows](x: Self) {
     
-    @scala.inline
-    def setFlows(value: js.Array[TypeString]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
+    inline def setFlows(value: js.Array[TypeString]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowsVarargs(value: TypeString*): Self = StObject.set(x, "flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: TypeString*): Self = StObject.set(x, "flows", js.Array(value :_*))
   }
 }

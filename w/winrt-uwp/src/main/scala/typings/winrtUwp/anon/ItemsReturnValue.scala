@@ -13,19 +13,15 @@ trait ItemsReturnValue extends StObject {
 }
 object ItemsReturnValue {
   
-  @scala.inline
-  def apply(items: AudioTrack, returnValue: Double): ItemsReturnValue = {
+  inline def apply(items: AudioTrack, returnValue: Double): ItemsReturnValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsReturnValue]
   }
   
-  @scala.inline
-  implicit class ItemsReturnValueMutableBuilder[Self <: ItemsReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsReturnValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: AudioTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: AudioTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

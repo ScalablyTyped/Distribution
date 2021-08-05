@@ -14,17 +14,14 @@ object incomingResponseMod {
   }
   object IncomingResponse {
     
-    @scala.inline
-    def apply(message: IncomingResponseMessage): IncomingResponse = {
+    inline def apply(message: IncomingResponseMessage): IncomingResponse = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncomingResponse]
     }
     
-    @scala.inline
-    implicit class IncomingResponseMutableBuilder[Self <: IncomingResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IncomingResponse](x: Self) {
       
-      @scala.inline
-      def setMessage(value: IncomingResponseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: IncomingResponseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

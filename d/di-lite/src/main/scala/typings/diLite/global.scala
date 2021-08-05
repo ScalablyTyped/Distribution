@@ -10,6 +10,5 @@ object global {
   @JSGlobal("di")
   @js.native
   def di: DiLiteStatic = js.native
-  @scala.inline
-  def di_=(x: DiLiteStatic): Unit = js.Dynamic.global.updateDynamic("di")(x.asInstanceOf[js.Any])
+  inline def di_=(x: DiLiteStatic): Unit = js.Dynamic.global.updateDynamic("di")(x.asInstanceOf[js.Any])
 }

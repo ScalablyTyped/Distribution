@@ -9,8 +9,7 @@ trait SentenceTokenizer
      with Tokenizer
 object SentenceTokenizer {
   
-  @scala.inline
-  def apply(tokenize: String => js.Array[String]): SentenceTokenizer = {
+  inline def apply(tokenize: String => js.Array[String]): SentenceTokenizer = {
     val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
     __obj.asInstanceOf[SentenceTokenizer]
   }

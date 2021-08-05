@@ -18,28 +18,21 @@ trait DescribeInstancePatchStatesForPatchGroupResult extends StObject {
 }
 object DescribeInstancePatchStatesForPatchGroupResult {
   
-  @scala.inline
-  def apply(): DescribeInstancePatchStatesForPatchGroupResult = {
+  inline def apply(): DescribeInstancePatchStatesForPatchGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstancePatchStatesForPatchGroupResult]
   }
   
-  @scala.inline
-  implicit class DescribeInstancePatchStatesForPatchGroupResultMutableBuilder[Self <: DescribeInstancePatchStatesForPatchGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstancePatchStatesForPatchGroupResult](x: Self) {
     
-    @scala.inline
-    def setInstancePatchStates(value: InstancePatchStatesList): Self = StObject.set(x, "InstancePatchStates", value.asInstanceOf[js.Any])
+    inline def setInstancePatchStates(value: InstancePatchStatesList): Self = StObject.set(x, "InstancePatchStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancePatchStatesUndefined: Self = StObject.set(x, "InstancePatchStates", js.undefined)
+    inline def setInstancePatchStatesUndefined: Self = StObject.set(x, "InstancePatchStates", js.undefined)
     
-    @scala.inline
-    def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = StObject.set(x, "InstancePatchStates", js.Array(value :_*))
+    inline def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = StObject.set(x, "InstancePatchStates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

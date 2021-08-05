@@ -23,31 +23,23 @@ trait IMask
 }
 object IMask {
   
-  @scala.inline
-  def apply(): IMask = {
+  inline def apply(): IMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMask]
   }
   
-  @scala.inline
-  implicit class IMaskMutableBuilder[Self <: IMask] (val x: Self) extends AnyVal {
+  extension [Self <: IMask](x: Self) {
     
-    @scala.inline
-    def setGetTransparent(value: () => Boolean): Self = StObject.set(x, "getTransparent", js.Any.fromFunction0(value))
+    inline def setGetTransparent(value: () => Boolean): Self = StObject.set(x, "getTransparent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTransparentUndefined: Self = StObject.set(x, "getTransparent", js.undefined)
+    inline def setGetTransparentUndefined: Self = StObject.set(x, "getTransparent", js.undefined)
     
-    @scala.inline
-    def setSetTransparent(value: /* transparent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setTransparent", js.Any.fromFunction1(value))
+    inline def setSetTransparent(value: /* transparent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setTransparent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTransparentUndefined: Self = StObject.set(x, "setTransparent", js.undefined)
+    inline def setSetTransparentUndefined: Self = StObject.set(x, "setTransparent", js.undefined)
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
   }
 }

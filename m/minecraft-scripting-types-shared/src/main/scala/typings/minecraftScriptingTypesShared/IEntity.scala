@@ -27,22 +27,17 @@ trait IEntity
 }
 object IEntity {
   
-  @scala.inline
-  def apply(__identifier__ : String, __type__ : entity | item_entity, id: Double): IEntity = {
+  inline def apply(__identifier__ : String, __type__ : entity | item_entity, id: Double): IEntity = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntity]
   }
   
-  @scala.inline
-  implicit class IEntityMutableBuilder[Self <: IEntity] (val x: Self) extends AnyVal {
+  extension [Self <: IEntity](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
+    inline def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: entity | item_entity): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: entity | item_entity): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait axis
 }
 object axis {
   
-  @scala.inline
-  def apply(c2p: canvasPoint => point, options: axisOptions, p2c: point => canvasPoint): axis = {
+  inline def apply(c2p: canvasPoint => point, options: axisOptions, p2c: point => canvasPoint): axis = {
     val __obj = js.Dynamic.literal(c2p = js.Any.fromFunction1(c2p), options = options.asInstanceOf[js.Any], p2c = js.Any.fromFunction1(p2c))
     __obj.asInstanceOf[axis]
   }
   
-  @scala.inline
-  implicit class axisMutableBuilder[Self <: axis] (val x: Self) extends AnyVal {
+  extension [Self <: axis](x: Self) {
     
-    @scala.inline
-    def setC2p(value: canvasPoint => point): Self = StObject.set(x, "c2p", js.Any.fromFunction1(value))
+    inline def setC2p(value: canvasPoint => point): Self = StObject.set(x, "c2p", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptions(value: axisOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: axisOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP2c(value: point => canvasPoint): Self = StObject.set(x, "p2c", js.Any.fromFunction1(value))
+    inline def setP2c(value: point => canvasPoint): Self = StObject.set(x, "p2c", js.Any.fromFunction1(value))
   }
 }

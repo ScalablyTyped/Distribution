@@ -11,16 +11,13 @@ trait PickImplparseError extends StObject {
 }
 object PickImplparseError {
   
-  @scala.inline
-  def apply(parseError: String): PickImplparseError = {
+  inline def apply(parseError: String): PickImplparseError = {
     val __obj = js.Dynamic.literal(parseError = parseError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplparseError]
   }
   
-  @scala.inline
-  implicit class PickImplparseErrorMutableBuilder[Self <: PickImplparseError] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplparseError](x: Self) {
     
-    @scala.inline
-    def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
+    inline def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
   }
 }

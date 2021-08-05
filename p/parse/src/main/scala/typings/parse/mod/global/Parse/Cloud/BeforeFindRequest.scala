@@ -21,8 +21,7 @@ trait BeforeFindRequest
 }
 object BeforeFindRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Boolean,
     headers: js.Any,
     ip: String,
@@ -37,22 +36,16 @@ object BeforeFindRequest {
     __obj.asInstanceOf[BeforeFindRequest]
   }
   
-  @scala.inline
-  implicit class BeforeFindRequestMutableBuilder[Self <: BeforeFindRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BeforeFindRequest](x: Self) {
     
-    @scala.inline
-    def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGet(value: Boolean): Self = StObject.set(x, "isGet", value.asInstanceOf[js.Any])
+    inline def setIsGet(value: Boolean): Self = StObject.set(x, "isGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query[Object[Attributes]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query[Object[Attributes]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOption): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOption): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

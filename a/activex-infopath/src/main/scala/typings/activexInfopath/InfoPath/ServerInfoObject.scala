@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServerInfoObject extends StObject {
   
-  @JSName("InfoPath.ServerInfoObject_typekey")
+  /* private */ @JSName("InfoPath.ServerInfoObject_typekey")
   var InfoPathDotServerInfoObject_typekey: ServerInfoObject
   
   val SharePointListUrl: String
@@ -19,8 +19,7 @@ trait ServerInfoObject extends StObject {
 }
 object ServerInfoObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotServerInfoObject_typekey: ServerInfoObject,
     SharePointListUrl: String,
     SharePointServerRootUrl: String,
@@ -32,22 +31,16 @@ object ServerInfoObject {
     __obj.asInstanceOf[ServerInfoObject]
   }
   
-  @scala.inline
-  implicit class ServerInfoObjectMutableBuilder[Self <: ServerInfoObject] (val x: Self) extends AnyVal {
+  extension [Self <: ServerInfoObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotServerInfoObject_typekey(value: ServerInfoObject): Self = StObject.set(x, "InfoPath.ServerInfoObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotServerInfoObject_typekey(value: ServerInfoObject): Self = StObject.set(x, "InfoPath.ServerInfoObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharePointListUrl(value: String): Self = StObject.set(x, "SharePointListUrl", value.asInstanceOf[js.Any])
+    inline def setSharePointListUrl(value: String): Self = StObject.set(x, "SharePointListUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharePointServerRootUrl(value: String): Self = StObject.set(x, "SharePointServerRootUrl", value.asInstanceOf[js.Any])
+    inline def setSharePointServerRootUrl(value: String): Self = StObject.set(x, "SharePointServerRootUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharePointSiteCollectionUrl(value: String): Self = StObject.set(x, "SharePointSiteCollectionUrl", value.asInstanceOf[js.Any])
+    inline def setSharePointSiteCollectionUrl(value: String): Self = StObject.set(x, "SharePointSiteCollectionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharePointSiteUrl(value: String): Self = StObject.set(x, "SharePointSiteUrl", value.asInstanceOf[js.Any])
+    inline def setSharePointSiteUrl(value: String): Self = StObject.set(x, "SharePointSiteUrl", value.asInstanceOf[js.Any])
   }
 }

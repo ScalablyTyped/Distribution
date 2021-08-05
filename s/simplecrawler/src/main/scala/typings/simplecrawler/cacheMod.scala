@@ -39,8 +39,6 @@ object cacheMod {
     def setCacheData(queueObject: QueueItem, data: js.Any, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def FilesystemBackend(): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("FilesystemBackend")().asInstanceOf[FSBackend]
-  @scala.inline
-  def FilesystemBackend(loadParameter: String): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("FilesystemBackend")(loadParameter.asInstanceOf[js.Any]).asInstanceOf[FSBackend]
+  inline def FilesystemBackend(): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("FilesystemBackend")().asInstanceOf[FSBackend]
+  inline def FilesystemBackend(loadParameter: String): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("FilesystemBackend")(loadParameter.asInstanceOf[js.Any]).asInstanceOf[FSBackend]
 }

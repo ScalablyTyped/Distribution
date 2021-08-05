@@ -34,13 +34,13 @@ object tableBodyMod {
     def this(props: ITableBodyProps) = this()
     def this(props: ITableBodyProps, context: js.Any) = this()
     
-    var activationCell: js.Any = js.native
+    /* private */ var activationCell: js.Any = js.native
     
-    var handleSelectionEnd: js.Any = js.native
+    /* private */ var handleSelectionEnd: js.Any = js.native
     
-    var locateClick: js.Any = js.native
+    /* private */ var locateClick: js.Any = js.native
     
-    var locateDrag: js.Any = js.native
+    /* private */ var locateDrag: js.Any = js.native
     
     def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
     
@@ -54,14 +54,12 @@ object tableBodyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody.defaultProps")
     @js.native
     def defaultProps: Loading = js.native
-    @scala.inline
-    def defaultProps_=(x: Loading): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Loading): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -134,8 +132,7 @@ object tableBodyMod {
   }
   object ITableBodyProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement,
       columnIndexEnd: Double,
       columnIndexStart: Double,
@@ -152,53 +149,37 @@ object tableBodyMod {
       __obj.asInstanceOf[ITableBodyProps]
     }
     
-    @scala.inline
-    implicit class ITableBodyPropsMutableBuilder[Self <: ITableBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITableBodyProps](x: Self) {
       
-      @scala.inline
-      def setBodyContextMenuRenderer(value: /* context */ IMenuContext => Element): Self = StObject.set(x, "bodyContextMenuRenderer", js.Any.fromFunction1(value))
+      inline def setBodyContextMenuRenderer(value: /* context */ IMenuContext => Element): Self = StObject.set(x, "bodyContextMenuRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBodyContextMenuRendererUndefined: Self = StObject.set(x, "bodyContextMenuRenderer", js.undefined)
+      inline def setBodyContextMenuRendererUndefined: Self = StObject.set(x, "bodyContextMenuRenderer", js.undefined)
       
-      @scala.inline
-      def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
+      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocator(value: ILocator): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
+      inline def setLocator(value: ILocator): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumFrozenColumns(value: Double): Self = StObject.set(x, "numFrozenColumns", value.asInstanceOf[js.Any])
+      inline def setNumFrozenColumns(value: Double): Self = StObject.set(x, "numFrozenColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumFrozenColumnsUndefined: Self = StObject.set(x, "numFrozenColumns", js.undefined)
+      inline def setNumFrozenColumnsUndefined: Self = StObject.set(x, "numFrozenColumns", js.undefined)
       
-      @scala.inline
-      def setNumFrozenRows(value: Double): Self = StObject.set(x, "numFrozenRows", value.asInstanceOf[js.Any])
+      inline def setNumFrozenRows(value: Double): Self = StObject.set(x, "numFrozenRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumFrozenRowsUndefined: Self = StObject.set(x, "numFrozenRows", js.undefined)
+      inline def setNumFrozenRowsUndefined: Self = StObject.set(x, "numFrozenRows", js.undefined)
       
-      @scala.inline
-      def setOnCompleteRender(value: () => Unit): Self = StObject.set(x, "onCompleteRender", js.Any.fromFunction0(value))
+      inline def setOnCompleteRender(value: () => Unit): Self = StObject.set(x, "onCompleteRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompleteRenderUndefined: Self = StObject.set(x, "onCompleteRender", js.undefined)
+      inline def setOnCompleteRenderUndefined: Self = StObject.set(x, "onCompleteRender", js.undefined)
       
-      @scala.inline
-      def setRenderMode(value: BATCH | NONE): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+      inline def setRenderMode(value: BATCH | NONE): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
+      inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
       
-      @scala.inline
-      def setViewportRect(value: Rect): Self = StObject.set(x, "viewportRect", value.asInstanceOf[js.Any])
+      inline def setViewportRect(value: Rect): Self = StObject.set(x, "viewportRect", value.asInstanceOf[js.Any])
     }
   }
 }

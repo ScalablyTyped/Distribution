@@ -13,16 +13,13 @@ trait DescribeStateMachineForExecutionInput extends StObject {
 }
 object DescribeStateMachineForExecutionInput {
   
-  @scala.inline
-  def apply(executionArn: Arn): DescribeStateMachineForExecutionInput = {
+  inline def apply(executionArn: Arn): DescribeStateMachineForExecutionInput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStateMachineForExecutionInput]
   }
   
-  @scala.inline
-  implicit class DescribeStateMachineForExecutionInputMutableBuilder[Self <: DescribeStateMachineForExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStateMachineForExecutionInput](x: Self) {
     
-    @scala.inline
-    def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+    inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
   }
 }

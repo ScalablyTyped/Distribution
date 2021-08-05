@@ -23,28 +23,21 @@ trait OpsFilter extends StObject {
 }
 object OpsFilter {
   
-  @scala.inline
-  def apply(Key: OpsFilterKey, Values: OpsFilterValueList): OpsFilter = {
+  inline def apply(Key: OpsFilterKey, Values: OpsFilterValueList): OpsFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpsFilter]
   }
   
-  @scala.inline
-  implicit class OpsFilterMutableBuilder[Self <: OpsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: OpsFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: OpsFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: OpsFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: OpsFilterOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpsFilterOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValues(value: OpsFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: OpsFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: OpsFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: OpsFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

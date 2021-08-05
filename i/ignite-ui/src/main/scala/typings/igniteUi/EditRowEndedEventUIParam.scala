@@ -38,49 +38,35 @@ trait EditRowEndedEventUIParam extends StObject {
 }
 object EditRowEndedEventUIParam {
   
-  @scala.inline
-  def apply(): EditRowEndedEventUIParam = {
+  inline def apply(): EditRowEndedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditRowEndedEventUIParam]
   }
   
-  @scala.inline
-  implicit class EditRowEndedEventUIParamMutableBuilder[Self <: EditRowEndedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: EditRowEndedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOldValues(value: js.Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
+    inline def setOldValues(value: js.Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValuesUndefined: Self = StObject.set(x, "oldValues", js.undefined)
+    inline def setOldValuesUndefined: Self = StObject.set(x, "oldValues", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRowAdding(value: Boolean): Self = StObject.set(x, "rowAdding", value.asInstanceOf[js.Any])
+    inline def setRowAdding(value: Boolean): Self = StObject.set(x, "rowAdding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
+    inline def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
     
-    @scala.inline
-    def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
+    inline def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
+    inline def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

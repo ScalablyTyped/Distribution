@@ -35,22 +35,17 @@ trait WebAPIError extends StObject {
 }
 object WebAPIError {
   
-  @scala.inline
-  def apply(code: Double, message: String, name: String): WebAPIError = {
+  inline def apply(code: Double, message: String, name: String): WebAPIError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAPIError]
   }
   
-  @scala.inline
-  implicit class WebAPIErrorMutableBuilder[Self <: WebAPIError] (val x: Self) extends AnyVal {
+  extension [Self <: WebAPIError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

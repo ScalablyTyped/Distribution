@@ -27,31 +27,23 @@ trait SchemaTeamDrive extends StObject {
 }
 object SchemaTeamDrive {
   
-  @scala.inline
-  def apply(): SchemaTeamDrive = {
+  inline def apply(): SchemaTeamDrive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTeamDrive]
   }
   
-  @scala.inline
-  implicit class SchemaTeamDriveMutableBuilder[Self <: SchemaTeamDrive] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTeamDrive](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SchemaDriveItem): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SchemaDriveItem): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

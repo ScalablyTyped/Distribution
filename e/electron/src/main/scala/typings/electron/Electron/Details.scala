@@ -45,8 +45,7 @@ trait Details extends StObject {
 }
 object Details {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exitCode: Double,
     reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`,
     `type`: Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
@@ -56,25 +55,19 @@ object Details {
     __obj.asInstanceOf[Details]
   }
   
-  @scala.inline
-  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+  extension [Self <: Details](x: Self) {
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReason(
+    inline def setReason(
       value: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
     ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

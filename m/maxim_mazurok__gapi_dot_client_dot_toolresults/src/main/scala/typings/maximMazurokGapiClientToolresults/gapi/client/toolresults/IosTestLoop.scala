@@ -11,19 +11,15 @@ trait IosTestLoop extends StObject {
 }
 object IosTestLoop {
   
-  @scala.inline
-  def apply(): IosTestLoop = {
+  inline def apply(): IosTestLoop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosTestLoop]
   }
   
-  @scala.inline
-  implicit class IosTestLoopMutableBuilder[Self <: IosTestLoop] (val x: Self) extends AnyVal {
+  extension [Self <: IosTestLoop](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
   }
 }

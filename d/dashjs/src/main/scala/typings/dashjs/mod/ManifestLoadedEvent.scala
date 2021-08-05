@@ -16,20 +16,16 @@ trait ManifestLoadedEvent
 }
 object ManifestLoadedEvent {
   
-  @scala.inline
-  def apply(data: js.Object): ManifestLoadedEvent = {
+  inline def apply(data: js.Object): ManifestLoadedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("manifestLoaded")
     __obj.asInstanceOf[ManifestLoadedEvent]
   }
   
-  @scala.inline
-  implicit class ManifestLoadedEventMutableBuilder[Self <: ManifestLoadedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestLoadedEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: manifestLoaded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: manifestLoaded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

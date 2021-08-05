@@ -46,10 +46,8 @@ object codeConverterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConverter(): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("createConverter")().asInstanceOf[Converter]
-  @scala.inline
-  def createConverter(uriConverter: URIConverter): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("createConverter")(uriConverter.asInstanceOf[js.Any]).asInstanceOf[Converter]
+  inline def createConverter(): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("createConverter")().asInstanceOf[Converter]
+  inline def createConverter(uriConverter: URIConverter): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("createConverter")(uriConverter.asInstanceOf[js.Any]).asInstanceOf[Converter]
   
   @js.native
   trait Converter extends StObject {

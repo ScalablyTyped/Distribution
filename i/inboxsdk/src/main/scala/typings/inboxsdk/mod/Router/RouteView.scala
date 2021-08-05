@@ -20,8 +20,7 @@ trait RouteView extends StObject {
 }
 object RouteView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroyed: Boolean,
     getParams: () => RouteParams,
     getRouteID: () => String,
@@ -32,22 +31,16 @@ object RouteView {
     __obj.asInstanceOf[RouteView]
   }
   
-  @scala.inline
-  implicit class RouteViewMutableBuilder[Self <: RouteView] (val x: Self) extends AnyVal {
+  extension [Self <: RouteView](x: Self) {
     
-    @scala.inline
-    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+    inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetParams(value: () => RouteParams): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    inline def setGetParams(value: () => RouteParams): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRouteID(value: () => String): Self = StObject.set(x, "getRouteID", js.Any.fromFunction0(value))
+    inline def setGetRouteID(value: () => String): Self = StObject.set(x, "getRouteID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRouteType(value: () => RouteTypes): Self = StObject.set(x, "getRouteType", js.Any.fromFunction0(value))
+    inline def setGetRouteType(value: () => RouteTypes): Self = StObject.set(x, "getRouteType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

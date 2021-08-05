@@ -8,11 +8,9 @@ object maximMazurokGapiClientDeploymentmanagerStrings {
   
   @js.native
   sealed trait deploymentmanager extends StObject
-  @scala.inline
-  def deploymentmanager: deploymentmanager = "deploymentmanager".asInstanceOf[deploymentmanager]
+  inline def deploymentmanager: deploymentmanager = "deploymentmanager".asInstanceOf[deploymentmanager]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

@@ -18,25 +18,19 @@ trait DefaultMessage extends StObject {
 }
 object DefaultMessage {
   
-  @scala.inline
-  def apply(): DefaultMessage = {
+  inline def apply(): DefaultMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultMessage]
   }
   
-  @scala.inline
-  implicit class DefaultMessageMutableBuilder[Self <: DefaultMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+    inline def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
   }
 }

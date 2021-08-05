@@ -20,8 +20,7 @@ trait SoftphoneError extends StObject {
 }
 object SoftphoneError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endPointUrl: String,
     errorMessage: String,
     errorType: String,
@@ -33,25 +32,18 @@ object SoftphoneError {
     __obj.asInstanceOf[SoftphoneError]
   }
   
-  @scala.inline
-  implicit class SoftphoneErrorMutableBuilder[Self <: SoftphoneError] (val x: Self) extends AnyVal {
+  extension [Self <: SoftphoneError](x: Self) {
     
-    @scala.inline
-    def setEndPointUrl(value: String): Self = StObject.set(x, "endPointUrl", value.asInstanceOf[js.Any])
+    inline def setEndPointUrl(value: String): Self = StObject.set(x, "endPointUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEndPointUrl(value: () => String): Self = StObject.set(x, "getEndPointUrl", js.Any.fromFunction0(value))
+    inline def setGetEndPointUrl(value: () => String): Self = StObject.set(x, "getEndPointUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
+    inline def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetErrorType(value: () => String): Self = StObject.set(x, "getErrorType", js.Any.fromFunction0(value))
+    inline def setGetErrorType(value: () => String): Self = StObject.set(x, "getErrorType", js.Any.fromFunction0(value))
   }
 }

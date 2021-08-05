@@ -95,10 +95,8 @@ object TypeParameterListSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(lessThanToken: ISyntaxToken, greaterThanToken: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterListSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lessThanToken.asInstanceOf[js.Any], greaterThanToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterListSyntax]
+  inline def create(lessThanToken: ISyntaxToken, greaterThanToken: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterListSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lessThanToken.asInstanceOf[js.Any], greaterThanToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterListSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.TypeParameterListSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterListSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.TypeParameterListSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterListSyntax]
 }

@@ -18,8 +18,7 @@ trait PostResponseDataMessage extends StObject {
 }
 object PostResponseDataMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bcc: js.Array[PostResponseDataTo],
     Cc: js.Array[PostResponseDataTo],
     CustomID: String,
@@ -30,31 +29,22 @@ object PostResponseDataMessage {
     __obj.asInstanceOf[PostResponseDataMessage]
   }
   
-  @scala.inline
-  implicit class PostResponseDataMessageMutableBuilder[Self <: PostResponseDataMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PostResponseDataMessage](x: Self) {
     
-    @scala.inline
-    def setBcc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
+    inline def setBcc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
     
-    @scala.inline
-    def setCc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Cc", js.Array(value :_*))
+    inline def setCcVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Cc", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
+    inline def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "To", js.Array(value :_*))
+    inline def setToVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "To", js.Array(value :_*))
   }
 }

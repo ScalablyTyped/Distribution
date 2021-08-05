@@ -52,10 +52,8 @@ object CommandActionComplete {
     * @returns CommandActionComplete instance
     */
   /* static member */
-  @scala.inline
-  def create(): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandActionComplete]
-  @scala.inline
-  def create(properties: ICommandActionComplete): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  inline def create(): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandActionComplete]
+  inline def create(properties: ICommandActionComplete): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
   
   /**
     * Decodes a CommandActionComplete message from the specified reader or buffer.
@@ -66,14 +64,10 @@ object CommandActionComplete {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
-  @scala.inline
-  def decode(reader: Reader, length: Double): CommandActionComplete = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandActionComplete]
-  @scala.inline
-  def decode(reader: Uint8Array): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): CommandActionComplete = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandActionComplete]
+  inline def decode(reader: Reader): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  inline def decode(reader: Reader, length: Double): CommandActionComplete = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandActionComplete]
+  inline def decode(reader: Uint8Array): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  inline def decode(reader: Uint8Array, length: Double): CommandActionComplete = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandActionComplete]
   
   /**
     * Decodes a CommandActionComplete message from the specified reader or buffer, length delimited.
@@ -83,10 +77,8 @@ object CommandActionComplete {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  inline def decodeDelimited(reader: Reader): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  inline def decodeDelimited(reader: Uint8Array): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
   
   /**
     * Encodes the specified CommandActionComplete message. Does not implicitly {@link io.cucumber.messages.CommandActionComplete.verify|verify} messages.
@@ -95,10 +87,8 @@ object CommandActionComplete {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ICommandActionComplete): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ICommandActionComplete, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ICommandActionComplete): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ICommandActionComplete, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandActionComplete message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandActionComplete.verify|verify} messages.
@@ -107,10 +97,8 @@ object CommandActionComplete {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ICommandActionComplete): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ICommandActionComplete, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ICommandActionComplete): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ICommandActionComplete, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandActionComplete message from a plain object. Also converts values to their respective internal types.
@@ -118,8 +106,7 @@ object CommandActionComplete {
     * @returns CommandActionComplete
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  inline def fromObject(`object`: StringDictionary[js.Any]): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
   
   /**
     * Creates a plain object from a CommandActionComplete message. Also converts values to other types if specified.
@@ -128,10 +115,8 @@ object CommandActionComplete {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: CommandActionComplete): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: CommandActionComplete, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CommandActionComplete): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CommandActionComplete, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandActionComplete message.
@@ -139,6 +124,5 @@ object CommandActionComplete {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

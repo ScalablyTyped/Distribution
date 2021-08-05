@@ -25,18 +25,15 @@ object privacy {
   @JSGlobal("chrome.privacy.network")
   @js.native
   def network: Network = js.native
-  @scala.inline
-  def network_=(x: Network): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("network")(x.asInstanceOf[js.Any])
+  inline def network_=(x: Network): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("network")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.privacy.services")
   @js.native
   def services: Services = js.native
-  @scala.inline
-  def services_=(x: Services): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("services")(x.asInstanceOf[js.Any])
+  inline def services_=(x: Services): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("services")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.privacy.websites")
   @js.native
   def websites: Websites = js.native
-  @scala.inline
-  def websites_=(x: Websites): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("websites")(x.asInstanceOf[js.Any])
+  inline def websites_=(x: Websites): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("websites")(x.asInstanceOf[js.Any])
 }

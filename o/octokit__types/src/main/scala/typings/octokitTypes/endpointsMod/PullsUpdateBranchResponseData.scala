@@ -12,19 +12,15 @@ trait PullsUpdateBranchResponseData extends StObject {
 }
 object PullsUpdateBranchResponseData {
   
-  @scala.inline
-  def apply(message: String, url: String): PullsUpdateBranchResponseData = {
+  inline def apply(message: String, url: String): PullsUpdateBranchResponseData = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsUpdateBranchResponseData]
   }
   
-  @scala.inline
-  implicit class PullsUpdateBranchResponseDataMutableBuilder[Self <: PullsUpdateBranchResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: PullsUpdateBranchResponseData](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

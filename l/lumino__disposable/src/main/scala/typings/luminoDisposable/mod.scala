@@ -20,7 +20,7 @@ object mod {
       */
     def this(fn: js.Function0[Unit]) = this()
     
-    var _fn: js.Any = js.native
+    /* private */ var _fn: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -55,9 +55,9 @@ object mod {
     extends StObject
        with IDisposable {
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
     /**
       * Add a disposable item to the set.
@@ -129,8 +129,7 @@ object mod {
       *
       * @returns A new disposable initialized with the given items.
       */
-    @scala.inline
-    def from(items: IterableOrArrayLike[IDisposable]): DisposableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[DisposableSet]
+    inline def from(items: IterableOrArrayLike[IDisposable]): DisposableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[DisposableSet]
   }
   
   @JSImport("@lumino/disposable", "ObservableDisposableDelegate")
@@ -145,7 +144,7 @@ object mod {
       */
     def this(fn: js.Function0[Unit]) = this()
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -186,7 +185,7 @@ object mod {
     extends DisposableSet
        with IObservableDisposable {
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -230,8 +229,7 @@ object mod {
       *
       * @returns A new disposable initialized with the given items.
       */
-    @scala.inline
-    def from(items: IterableOrArrayLike[IDisposable]): ObservableDisposableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[ObservableDisposableSet]
+    inline def from(items: IterableOrArrayLike[IDisposable]): ObservableDisposableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[ObservableDisposableSet]
   }
   
   trait IDisposable extends StObject {
@@ -259,20 +257,16 @@ object mod {
   }
   object IDisposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit, isDisposed: Boolean): IDisposable = {
+    inline def apply(dispose: () => Unit, isDisposed: Boolean): IDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDisposable]
     }
     
-    @scala.inline
-    implicit class IDisposableMutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: IDisposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+      inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,17 +281,14 @@ object mod {
   }
   object IObservableDisposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit, disposed: ISignal[IObservableDisposable, Unit], isDisposed: Boolean): IObservableDisposable = {
+    inline def apply(dispose: () => Unit, disposed: ISignal[IObservableDisposable, Unit], isDisposed: Boolean): IObservableDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), disposed = disposed.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any])
       __obj.asInstanceOf[IObservableDisposable]
     }
     
-    @scala.inline
-    implicit class IObservableDisposableMutableBuilder[Self <: IObservableDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: IObservableDisposable](x: Self) {
       
-      @scala.inline
-      def setDisposed(value: ISignal[IObservableDisposable, Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
+      inline def setDisposed(value: ISignal[IObservableDisposable, Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
     }
   }
 }

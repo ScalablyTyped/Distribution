@@ -12,19 +12,15 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(container: scala.Double, job: scala.Double): Container = {
+  inline def apply(container: scala.Double, job: scala.Double): Container = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setContainer(value: scala.Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: scala.Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob(value: scala.Double): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: scala.Double): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait KruskalMST extends StObject {
 }
 object KruskalMST {
   
-  @scala.inline
-  def apply(mst: js.Array[Edge]): KruskalMST = {
+  inline def apply(mst: js.Array[Edge]): KruskalMST = {
     val __obj = js.Dynamic.literal(mst = mst.asInstanceOf[js.Any])
     __obj.asInstanceOf[KruskalMST]
   }
   
-  @scala.inline
-  implicit class KruskalMSTMutableBuilder[Self <: KruskalMST] (val x: Self) extends AnyVal {
+  extension [Self <: KruskalMST](x: Self) {
     
-    @scala.inline
-    def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
+    inline def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value :_*))
+    inline def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value :_*))
   }
 }

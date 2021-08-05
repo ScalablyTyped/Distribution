@@ -31,25 +31,19 @@ trait ShippingOptionParameters extends StObject {
 }
 object ShippingOptionParameters {
   
-  @scala.inline
-  def apply(shippingOptions: js.Array[SelectionOption]): ShippingOptionParameters = {
+  inline def apply(shippingOptions: js.Array[SelectionOption]): ShippingOptionParameters = {
     val __obj = js.Dynamic.literal(shippingOptions = shippingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingOptionParameters]
   }
   
-  @scala.inline
-  implicit class ShippingOptionParametersMutableBuilder[Self <: ShippingOptionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingOptionParameters](x: Self) {
     
-    @scala.inline
-    def setDefaultSelectedOptionId(value: String): Self = StObject.set(x, "defaultSelectedOptionId", value.asInstanceOf[js.Any])
+    inline def setDefaultSelectedOptionId(value: String): Self = StObject.set(x, "defaultSelectedOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSelectedOptionIdUndefined: Self = StObject.set(x, "defaultSelectedOptionId", js.undefined)
+    inline def setDefaultSelectedOptionIdUndefined: Self = StObject.set(x, "defaultSelectedOptionId", js.undefined)
     
-    @scala.inline
-    def setShippingOptions(value: js.Array[SelectionOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
+    inline def setShippingOptions(value: js.Array[SelectionOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionsVarargs(value: SelectionOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+    inline def setShippingOptionsVarargs(value: SelectionOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait TemplateOptions[T] extends StObject {
 }
 object TemplateOptions {
   
-  @scala.inline
-  def apply[T](): TemplateOptions[T] = {
+  inline def apply[T](): TemplateOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateOptions[T]]
   }
   
-  @scala.inline
-  implicit class TemplateOptionsMutableBuilder[Self <: TemplateOptions[?], T] (val x: Self & TemplateOptions[T]) extends AnyVal {
+  extension [Self <: TemplateOptions[?], T](x: Self & TemplateOptions[T]) {
     
-    @scala.inline
-    def setAfterRender(value: (/* elements */ js.Array[Node], /* dataItem */ T) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
+    inline def setAfterRender(value: (/* elements */ js.Array[Node], /* dataItem */ T) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
+    inline def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
-    @scala.inline
-    def setTemplateEngine(value: templateEngine): Self = StObject.set(x, "templateEngine", value.asInstanceOf[js.Any])
+    inline def setTemplateEngine(value: templateEngine): Self = StObject.set(x, "templateEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateEngineUndefined: Self = StObject.set(x, "templateEngine", js.undefined)
+    inline def setTemplateEngineUndefined: Self = StObject.set(x, "templateEngine", js.undefined)
   }
 }

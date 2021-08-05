@@ -38,8 +38,7 @@ trait IShellPaneTab extends StObject {
 }
 object IShellPaneTab {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Events: IShellPaneTabEvents,
     IsBuiltIn: Boolean,
     Remove: () => Unit,
@@ -60,52 +59,36 @@ object IShellPaneTab {
     __obj.asInstanceOf[IShellPaneTab]
   }
   
-  @scala.inline
-  implicit class IShellPaneTabMutableBuilder[Self <: IShellPaneTab] (val x: Self) extends AnyVal {
+  extension [Self <: IShellPaneTab](x: Self) {
     
-    @scala.inline
-    def setEvents(value: IShellPaneTabEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IShellPaneTabEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "IsBuiltIn", value.asInstanceOf[js.Any])
+    inline def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "IsBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDashboard(value: (String, js.Any) => Unit): Self = StObject.set(x, "ShowDashboard", js.Any.fromFunction2(value))
+    inline def setShowDashboard(value: (String, js.Any) => Unit): Self = StObject.set(x, "ShowDashboard", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowEmptyContent(value: () => Unit): Self = StObject.set(x, "ShowEmptyContent", js.Any.fromFunction0(value))
+    inline def setShowEmptyContent(value: () => Unit): Self = StObject.set(x, "ShowEmptyContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowFilePreview(value: String => Unit): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
+    inline def setShowFilePreview(value: String => Unit): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowObjectVersionProperties(value: IPropertyValuesWithIconClues => Unit): Self = StObject.set(x, "ShowObjectVersionProperties", js.Any.fromFunction1(value))
+    inline def setShowObjectVersionProperties(value: IPropertyValuesWithIconClues => Unit): Self = StObject.set(x, "ShowObjectVersionProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowPersistentContent(value: Double => Unit): Self = StObject.set(x, "ShowPersistentContent", js.Any.fromFunction1(value))
+    inline def setShowPersistentContent(value: Double => Unit): Self = StObject.set(x, "ShowPersistentContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowSSRSReport(value: String => Unit): Self = StObject.set(x, "ShowSSRSReport", js.Any.fromFunction1(value))
+    inline def setShowSSRSReport(value: String => Unit): Self = StObject.set(x, "ShowSSRSReport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTabId(value: String): Self = StObject.set(x, "TabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: String): Self = StObject.set(x, "TabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselect(value: () => Unit): Self = StObject.set(x, "Unselect", js.Any.fromFunction0(value))
+    inline def setUnselect(value: () => Unit): Self = StObject.set(x, "Unselect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

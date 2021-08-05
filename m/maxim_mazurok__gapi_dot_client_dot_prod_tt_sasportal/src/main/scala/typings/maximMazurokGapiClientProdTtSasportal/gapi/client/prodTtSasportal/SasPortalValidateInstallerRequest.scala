@@ -17,31 +17,23 @@ trait SasPortalValidateInstallerRequest extends StObject {
 }
 object SasPortalValidateInstallerRequest {
   
-  @scala.inline
-  def apply(): SasPortalValidateInstallerRequest = {
+  inline def apply(): SasPortalValidateInstallerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalValidateInstallerRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalValidateInstallerRequestMutableBuilder[Self <: SasPortalValidateInstallerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalValidateInstallerRequest](x: Self) {
     
-    @scala.inline
-    def setEncodedSecret(value: String): Self = StObject.set(x, "encodedSecret", value.asInstanceOf[js.Any])
+    inline def setEncodedSecret(value: String): Self = StObject.set(x, "encodedSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedSecretUndefined: Self = StObject.set(x, "encodedSecret", js.undefined)
+    inline def setEncodedSecretUndefined: Self = StObject.set(x, "encodedSecret", js.undefined)
     
-    @scala.inline
-    def setInstallerId(value: String): Self = StObject.set(x, "installerId", value.asInstanceOf[js.Any])
+    inline def setInstallerId(value: String): Self = StObject.set(x, "installerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallerIdUndefined: Self = StObject.set(x, "installerId", js.undefined)
+    inline def setInstallerIdUndefined: Self = StObject.set(x, "installerId", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
   }
 }

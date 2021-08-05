@@ -19,20 +19,16 @@ trait IgetLocation
 }
 object IgetLocation {
   
-  @scala.inline
-  def apply(success: Accuracy => Unit, `type`: wgs84 | gcj02): IgetLocation = {
+  inline def apply(success: Accuracy => Unit, `type`: wgs84 | gcj02): IgetLocation = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgetLocation]
   }
   
-  @scala.inline
-  implicit class IgetLocationMutableBuilder[Self <: IgetLocation] (val x: Self) extends AnyVal {
+  extension [Self <: IgetLocation](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Accuracy => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Accuracy => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: wgs84 | gcj02): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: wgs84 | gcj02): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

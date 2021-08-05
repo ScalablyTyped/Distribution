@@ -12,8 +12,7 @@ trait ConstructSignature
 }
 object ConstructSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object ConstructSignature {
     __obj.asInstanceOf[ConstructSignature]
   }
   
-  @scala.inline
-  implicit class ConstructSignatureMutableBuilder[Self <: ConstructSignature] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructSignature](x: Self) {
     
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
+    inline def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait BatchDeleteObject extends StObject {
 }
 object BatchDeleteObject {
   
-  @scala.inline
-  def apply(ObjectReference: ObjectReference): BatchDeleteObject = {
+  inline def apply(ObjectReference: ObjectReference): BatchDeleteObject = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteObject]
   }
   
-  @scala.inline
-  implicit class BatchDeleteObjectMutableBuilder[Self <: BatchDeleteObject] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteObject](x: Self) {
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DescribeBackupsResponse extends StObject {
 }
 object DescribeBackupsResponse {
   
-  @scala.inline
-  def apply(): DescribeBackupsResponse = {
+  inline def apply(): DescribeBackupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBackupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBackupsResponseMutableBuilder[Self <: DescribeBackupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBackupsResponse](x: Self) {
     
-    @scala.inline
-    def setBackups(value: Backups): Self = StObject.set(x, "Backups", value.asInstanceOf[js.Any])
+    inline def setBackups(value: Backups): Self = StObject.set(x, "Backups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupsUndefined: Self = StObject.set(x, "Backups", js.undefined)
+    inline def setBackupsUndefined: Self = StObject.set(x, "Backups", js.undefined)
     
-    @scala.inline
-    def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "Backups", js.Array(value :_*))
+    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "Backups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

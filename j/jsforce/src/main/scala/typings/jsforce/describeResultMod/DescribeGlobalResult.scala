@@ -14,25 +14,19 @@ trait DescribeGlobalResult extends StObject {
 }
 object DescribeGlobalResult {
   
-  @scala.inline
-  def apply(encoding: String, maxBatchSize: Double, sobjects: js.Array[DescribeGlobalSObjectResult]): DescribeGlobalResult = {
+  inline def apply(encoding: String, maxBatchSize: Double, sobjects: js.Array[DescribeGlobalSObjectResult]): DescribeGlobalResult = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], maxBatchSize = maxBatchSize.asInstanceOf[js.Any], sobjects = sobjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGlobalResult]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalResultMutableBuilder[Self <: DescribeGlobalResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalResult](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchSize(value: Double): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    inline def setMaxBatchSize(value: Double): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSobjects(value: js.Array[DescribeGlobalSObjectResult]): Self = StObject.set(x, "sobjects", value.asInstanceOf[js.Any])
+    inline def setSobjects(value: js.Array[DescribeGlobalSObjectResult]): Self = StObject.set(x, "sobjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSobjectsVarargs(value: DescribeGlobalSObjectResult*): Self = StObject.set(x, "sobjects", js.Array(value :_*))
+    inline def setSobjectsVarargs(value: DescribeGlobalSObjectResult*): Self = StObject.set(x, "sobjects", js.Array(value :_*))
   }
 }

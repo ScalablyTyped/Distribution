@@ -15,7 +15,7 @@ object newsFeedMod {
   class NewsFeed protected () extends Feed[NewsFeedResponseRootObject, NewsFeedResponseStoriesItem] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[NewsFeedResponseRootObject] = js.native
   }

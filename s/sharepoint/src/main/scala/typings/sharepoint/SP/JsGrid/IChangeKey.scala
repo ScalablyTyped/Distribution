@@ -16,8 +16,7 @@ trait IChangeKey extends StObject {
 }
 object IChangeKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CompareTo: IChangeKey => Double,
     GetVersionNumber: () => Double,
     Release: () => Unit,
@@ -27,19 +26,14 @@ object IChangeKey {
     __obj.asInstanceOf[IChangeKey]
   }
   
-  @scala.inline
-  implicit class IChangeKeyMutableBuilder[Self <: IChangeKey] (val x: Self) extends AnyVal {
+  extension [Self <: IChangeKey](x: Self) {
     
-    @scala.inline
-    def setCompareTo(value: IChangeKey => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
+    inline def setCompareTo(value: IChangeKey => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVersionNumber(value: () => Double): Self = StObject.set(x, "GetVersionNumber", js.Any.fromFunction0(value))
+    inline def setGetVersionNumber(value: () => Double): Self = StObject.set(x, "GetVersionNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "Release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "Release", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReserve(value: () => Unit): Self = StObject.set(x, "Reserve", js.Any.fromFunction0(value))
+    inline def setReserve(value: () => Unit): Self = StObject.set(x, "Reserve", js.Any.fromFunction0(value))
   }
 }

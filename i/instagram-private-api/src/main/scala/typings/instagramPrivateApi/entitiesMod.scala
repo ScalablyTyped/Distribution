@@ -30,8 +30,7 @@ object entitiesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlAndKey")(info.asInstanceOf[js.Any]).asInstanceOf[LiveRtmpSettings]
+    inline def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlAndKey")(info.asInstanceOf[js.Any]).asInstanceOf[LiveRtmpSettings]
   }
   
   @JSImport("instagram-private-api/dist/entities", "MediaEntity")
@@ -47,8 +46,7 @@ object entitiesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def oembed(url: String): js.Promise[MediaEntityOembedResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("oembed")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MediaEntityOembedResponse]]
+    inline def oembed(url: String): js.Promise[MediaEntityOembedResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("oembed")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MediaEntityOembedResponse]]
   }
   
   @JSImport("instagram-private-api/dist/entities", "ProfileEntity")

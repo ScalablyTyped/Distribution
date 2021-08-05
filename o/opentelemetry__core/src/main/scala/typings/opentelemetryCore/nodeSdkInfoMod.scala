@@ -15,25 +15,21 @@ object nodeSdkInfoMod {
     @JSImport("@opentelemetry/core/build/src/platform/node/sdk-info", "SDK_INFO.LANGUAGE")
     @js.native
     def LANGUAGE: String = js.native
-    @scala.inline
-    def LANGUAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LANGUAGE")(x.asInstanceOf[js.Any])
+    inline def LANGUAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LANGUAGE")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/core/build/src/platform/node/sdk-info", "SDK_INFO.NAME")
     @js.native
     def NAME: String = js.native
-    @scala.inline
-    def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+    inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/core/build/src/platform/node/sdk-info", "SDK_INFO.RUNTIME")
     @js.native
     def RUNTIME: String = js.native
-    @scala.inline
-    def RUNTIME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNTIME")(x.asInstanceOf[js.Any])
+    inline def RUNTIME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNTIME")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/core/build/src/platform/node/sdk-info", "SDK_INFO.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

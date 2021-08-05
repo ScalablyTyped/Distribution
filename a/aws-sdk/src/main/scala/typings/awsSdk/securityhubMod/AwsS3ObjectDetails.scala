@@ -38,49 +38,35 @@ trait AwsS3ObjectDetails extends StObject {
 }
 object AwsS3ObjectDetails {
   
-  @scala.inline
-  def apply(): AwsS3ObjectDetails = {
+  inline def apply(): AwsS3ObjectDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsS3ObjectDetails]
   }
   
-  @scala.inline
-  implicit class AwsS3ObjectDetailsMutableBuilder[Self <: AwsS3ObjectDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsS3ObjectDetails](x: Self) {
     
-    @scala.inline
-    def setContentType(value: NonEmptyString): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: NonEmptyString): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setETag(value: NonEmptyString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: NonEmptyString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: NonEmptyString): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: NonEmptyString): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setSSEKMSKeyId(value: NonEmptyString): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
+    inline def setSSEKMSKeyId(value: NonEmptyString): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
+    inline def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
     
-    @scala.inline
-    def setServerSideEncryption(value: NonEmptyString): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
+    inline def setServerSideEncryption(value: NonEmptyString): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
+    inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: NonEmptyString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: NonEmptyString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

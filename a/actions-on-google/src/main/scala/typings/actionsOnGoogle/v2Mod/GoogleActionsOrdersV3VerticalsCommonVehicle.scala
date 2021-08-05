@@ -42,43 +42,31 @@ trait GoogleActionsOrdersV3VerticalsCommonVehicle extends StObject {
 }
 object GoogleActionsOrdersV3VerticalsCommonVehicle {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsCommonVehicle = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsCommonVehicle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsCommonVehicle]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsCommonVehicleMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsCommonVehicle] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsCommonVehicle](x: Self) {
     
-    @scala.inline
-    def setColorName(value: String): Self = StObject.set(x, "colorName", value.asInstanceOf[js.Any])
+    inline def setColorName(value: String): Self = StObject.set(x, "colorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNameUndefined: Self = StObject.set(x, "colorName", js.undefined)
+    inline def setColorNameUndefined: Self = StObject.set(x, "colorName", js.undefined)
     
-    @scala.inline
-    def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLicensePlate(value: String): Self = StObject.set(x, "licensePlate", value.asInstanceOf[js.Any])
+    inline def setLicensePlate(value: String): Self = StObject.set(x, "licensePlate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensePlateUndefined: Self = StObject.set(x, "licensePlate", js.undefined)
+    inline def setLicensePlateUndefined: Self = StObject.set(x, "licensePlate", js.undefined)
     
-    @scala.inline
-    def setMake(value: String): Self = StObject.set(x, "make", value.asInstanceOf[js.Any])
+    inline def setMake(value: String): Self = StObject.set(x, "make", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeUndefined: Self = StObject.set(x, "make", js.undefined)
+    inline def setMakeUndefined: Self = StObject.set(x, "make", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

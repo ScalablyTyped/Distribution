@@ -29,15 +29,13 @@ object mod {
   @JSImport("node-int64", "MAX_INT")
   @js.native
   def MAX_INT: Double = js.native
-  @scala.inline
-  def MAX_INT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_INT")(x.asInstanceOf[js.Any])
+  inline def MAX_INT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_INT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("node-int64", "MIN_INT")
   @js.native
   def MIN_INT: Double = js.native
-  @scala.inline
-  def MIN_INT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_INT")(x.asInstanceOf[js.Any])
+  inline def MIN_INT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_INT")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Int64 extends StObject {

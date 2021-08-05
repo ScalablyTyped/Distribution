@@ -17,37 +17,27 @@ trait Resources extends StObject {
 }
 object Resources {
   
-  @scala.inline
-  def apply(): Resources = {
+  inline def apply(): Resources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resources]
   }
   
-  @scala.inline
-  implicit class ResourcesMutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
+  extension [Self <: Resources](x: Self) {
     
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
-    @scala.inline
-    def setVirtualMachine(value: VirtualMachine): Self = StObject.set(x, "virtualMachine", value.asInstanceOf[js.Any])
+    inline def setVirtualMachine(value: VirtualMachine): Self = StObject.set(x, "virtualMachine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualMachineUndefined: Self = StObject.set(x, "virtualMachine", js.undefined)
+    inline def setVirtualMachineUndefined: Self = StObject.set(x, "virtualMachine", js.undefined)
     
-    @scala.inline
-    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

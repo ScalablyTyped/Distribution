@@ -14,16 +14,13 @@ trait PickImplonChange extends StObject {
 }
 object PickImplonChange {
   
-  @scala.inline
-  def apply(onChange: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonChange = {
+  inline def apply(onChange: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonChange = {
     val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonChange]
   }
   
-  @scala.inline
-  implicit class PickImplonChangeMutableBuilder[Self <: PickImplonChange] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonChange](x: Self) {
     
-    @scala.inline
-    def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
   }
 }

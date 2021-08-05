@@ -11,11 +11,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildChildren(children: js.Array[String | IFragment]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildChildren")(children.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buildChildren(children: js.Array[String | IFragment]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildChildren")(children.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def toArray[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

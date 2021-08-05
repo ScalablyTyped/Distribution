@@ -25,8 +25,7 @@ object wordpressApiFetchStrings {
   
   @js.native
   sealed trait Decontextualize extends StObject
-  @scala.inline
-  def Decontextualize: Decontextualize = "Decontextualize".asInstanceOf[Decontextualize]
+  inline def Decontextualize: Decontextualize = "Decontextualize".asInstanceOf[Decontextualize]
   
   @js.native
   sealed trait _embedded
@@ -43,8 +42,7 @@ object wordpressApiFetchStrings {
        with Taxonomy
        with Type
        with User
-  @scala.inline
-  def _embedded: _embedded = "_embedded".asInstanceOf[_embedded]
+  inline def _embedded: _embedded = "_embedded".asInstanceOf[_embedded]
   
   @js.native
   sealed trait _links
@@ -61,34 +59,29 @@ object wordpressApiFetchStrings {
        with Taxonomy
        with Type
        with User
-  @scala.inline
-  def _links: _links = "_links".asInstanceOf[_links]
+  inline def _links: _links = "_links".asInstanceOf[_links]
   
   @js.native
   sealed trait alt_text
     extends StObject
        with Media
-  @scala.inline
-  def alt_text: alt_text = "alt_text".asInstanceOf[alt_text]
+  inline def alt_text: alt_text = "alt_text".asInstanceOf[alt_text]
   
   @js.native
   sealed trait approved extends StObject
-  @scala.inline
-  def approved: approved = "approved".asInstanceOf[approved]
+  inline def approved: approved = "approved".asInstanceOf[approved]
   
   @js.native
   sealed trait aside
     extends StObject
        with PostFormat
-  @scala.inline
-  def aside: aside = "aside".asInstanceOf[aside]
+  inline def aside: aside = "aside".asInstanceOf[aside]
   
   @js.native
   sealed trait audio
     extends StObject
        with PostFormat
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait author
@@ -98,71 +91,61 @@ object wordpressApiFetchStrings {
        with Page
        with Post
        with PostRevision
-  @scala.inline
-  def author: author = "author".asInstanceOf[author]
+  inline def author: author = "author".asInstanceOf[author]
   
   @js.native
   sealed trait author_avatar_urls
     extends StObject
        with Comment
-  @scala.inline
-  def author_avatar_urls: author_avatar_urls = "author_avatar_urls".asInstanceOf[author_avatar_urls]
+  inline def author_avatar_urls: author_avatar_urls = "author_avatar_urls".asInstanceOf[author_avatar_urls]
   
   @js.native
   sealed trait author_name
     extends StObject
        with Comment
-  @scala.inline
-  def author_name: author_name = "author_name".asInstanceOf[author_name]
+  inline def author_name: author_name = "author_name".asInstanceOf[author_name]
   
   @js.native
   sealed trait author_url
     extends StObject
        with Comment
-  @scala.inline
-  def author_url: author_url = "author_url".asInstanceOf[author_url]
+  inline def author_url: author_url = "author_url".asInstanceOf[author_url]
   
   @js.native
   sealed trait avatar_urls
     extends StObject
        with User
-  @scala.inline
-  def avatar_urls: avatar_urls = "avatar_urls".asInstanceOf[avatar_urls]
+  inline def avatar_urls: avatar_urls = "avatar_urls".asInstanceOf[avatar_urls]
   
   @js.native
   sealed trait caption
     extends StObject
        with Media
-  @scala.inline
-  def caption: caption = "caption".asInstanceOf[caption]
+  inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
   sealed trait categories
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def categories: categories = "categories".asInstanceOf[categories]
+  inline def categories: categories = "categories".asInstanceOf[categories]
   
   @js.native
   sealed trait category
     extends StObject
        with TaxonomyKind
-  @scala.inline
-  def category: category = "category".asInstanceOf[category]
+  inline def category: category = "category".asInstanceOf[category]
   
   @js.native
   sealed trait chat
     extends StObject
        with PostFormat
-  @scala.inline
-  def chat: chat = "chat".asInstanceOf[chat]
+  inline def chat: chat = "chat".asInstanceOf[chat]
   
   @js.native
   sealed trait closed
     extends StObject
        with OpenOrClosed
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait comment_status
@@ -170,8 +153,7 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Media
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def comment_status: comment_status = "comment_status".asInstanceOf[comment_status]
+  inline def comment_status: comment_status = "comment_status".asInstanceOf[comment_status]
   
   @js.native
   sealed trait content
@@ -181,15 +163,13 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
   sealed trait count
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Category
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
+  inline def count: count = "count".asInstanceOf[count]
   
   @js.native
   sealed trait date
@@ -200,8 +180,7 @@ object wordpressApiFetchStrings {
        with Page
        with Post
        with PostRevision
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait date_gmt
@@ -212,8 +191,7 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
-  @scala.inline
-  def date_gmt: date_gmt = "date_gmt".asInstanceOf[date_gmt]
+  inline def date_gmt: date_gmt = "date_gmt".asInstanceOf[date_gmt]
   
   @js.native
   sealed trait description
@@ -223,29 +201,25 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Taxonomy
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Type
        with User
-  @scala.inline
-  def description: description = "description".asInstanceOf[description]
+  inline def description: description = "description".asInstanceOf[description]
   
   @js.native
   sealed trait draft
     extends StObject
        with PostStatus
-  @scala.inline
-  def draft: draft = "draft".asInstanceOf[draft]
+  inline def draft: draft = "draft".asInstanceOf[draft]
   
   @js.native
   sealed trait edit
     extends StObject
        with Context
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
+  inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
   sealed trait embed
     extends StObject
        with Context
-  @scala.inline
-  def embed: embed = "embed".asInstanceOf[embed]
+  inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
   sealed trait excerpt
@@ -253,42 +227,36 @@ object wordpressApiFetchStrings {
        with Page
        with Post
        with PostRevision
-  @scala.inline
-  def excerpt: excerpt = "excerpt".asInstanceOf[excerpt]
+  inline def excerpt: excerpt = "excerpt".asInstanceOf[excerpt]
   
   @js.native
   sealed trait featured_media
     extends StObject
        with Page
        with Post
-  @scala.inline
-  def featured_media: featured_media = "featured_media".asInstanceOf[featured_media]
+  inline def featured_media: featured_media = "featured_media".asInstanceOf[featured_media]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait format
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def format: format = "format".asInstanceOf[format]
+  inline def format: format = "format".asInstanceOf[format]
   
   @js.native
   sealed trait future
     extends StObject
        with PostStatus
-  @scala.inline
-  def future: future = "future".asInstanceOf[future]
+  inline def future: future = "future".asInstanceOf[future]
   
   @js.native
   sealed trait gallery
     extends StObject
        with PostFormat
-  @scala.inline
-  def gallery: gallery = "gallery".asInstanceOf[gallery]
+  inline def gallery: gallery = "gallery".asInstanceOf[gallery]
   
   @js.native
   sealed trait guid
@@ -298,21 +266,18 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
-  @scala.inline
-  def guid: guid = "guid".asInstanceOf[guid]
+  inline def guid: guid = "guid".asInstanceOf[guid]
   
   @js.native
   sealed trait hierarchical
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Taxonomy
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Type
-  @scala.inline
-  def hierarchical: hierarchical = "hierarchical".asInstanceOf[hierarchical]
+  inline def hierarchical: hierarchical = "hierarchical".asInstanceOf[hierarchical]
   
   @js.native
   sealed trait hold extends StObject
-  @scala.inline
-  def hold: hold = "hold".asInstanceOf[hold]
+  inline def hold: hold = "hold".asInstanceOf[hold]
   
   @js.native
   sealed trait id
@@ -326,20 +291,17 @@ object wordpressApiFetchStrings {
        with PostRevision
        with Tag
        with User
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait image
     extends StObject
        with PostFormat
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait inherit extends StObject
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
   sealed trait link
@@ -353,36 +315,31 @@ object wordpressApiFetchStrings {
        with PostFormat
        with Tag
        with User
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait link_category
     extends StObject
        with TaxonomyKind
-  @scala.inline
-  def link_category: link_category = "link_category".asInstanceOf[link_category]
+  inline def link_category: link_category = "link_category".asInstanceOf[link_category]
   
   @js.native
   sealed trait media_details
     extends StObject
        with Media
-  @scala.inline
-  def media_details: media_details = "media_details".asInstanceOf[media_details]
+  inline def media_details: media_details = "media_details".asInstanceOf[media_details]
   
   @js.native
   sealed trait media_type
     extends StObject
        with Media
-  @scala.inline
-  def media_type: media_type = "media_type".asInstanceOf[media_type]
+  inline def media_type: media_type = "media_type".asInstanceOf[media_type]
   
   @js.native
   sealed trait menu_order
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
-  @scala.inline
-  def menu_order: menu_order = "menu_order".asInstanceOf[menu_order]
+  inline def menu_order: menu_order = "menu_order".asInstanceOf[menu_order]
   
   @js.native
   sealed trait meta
@@ -393,15 +350,13 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.User
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
   sealed trait mime_type
     extends StObject
        with Media
-  @scala.inline
-  def mime_type: mime_type = "mime_type".asInstanceOf[mime_type]
+  inline def mime_type: mime_type = "mime_type".asInstanceOf[mime_type]
   
   @js.native
   sealed trait modified
@@ -411,8 +366,7 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
-  @scala.inline
-  def modified: modified = "modified".asInstanceOf[modified]
+  inline def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
   sealed trait modified_gmt
@@ -422,8 +376,7 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
-  @scala.inline
-  def modified_gmt: modified_gmt = "modified_gmt".asInstanceOf[modified_gmt]
+  inline def modified_gmt: modified_gmt = "modified_gmt".asInstanceOf[modified_gmt]
   
   @js.native
   sealed trait name
@@ -434,22 +387,19 @@ object wordpressApiFetchStrings {
        with Taxonomy
        with Type
        with User
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait nav_menu
     extends StObject
        with TaxonomyKind
-  @scala.inline
-  def nav_menu: nav_menu = "nav_menu".asInstanceOf[nav_menu]
+  inline def nav_menu: nav_menu = "nav_menu".asInstanceOf[nav_menu]
   
   @js.native
   sealed trait open
     extends StObject
        with OpenOrClosed
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
   sealed trait parent
@@ -458,15 +408,13 @@ object wordpressApiFetchStrings {
        with Comment
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with PostRevision
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait pending
     extends StObject
        with PostStatus
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait ping_status
@@ -474,73 +422,63 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Media
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def ping_status: ping_status = "ping_status".asInstanceOf[ping_status]
+  inline def ping_status: ping_status = "ping_status".asInstanceOf[ping_status]
   
   @js.native
   sealed trait post
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Comment
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Media
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait post_format
     extends StObject
        with TaxonomyKind
-  @scala.inline
-  def post_format: post_format = "post_format".asInstanceOf[post_format]
+  inline def post_format: post_format = "post_format".asInstanceOf[post_format]
   
   @js.native
   sealed trait post_tag
     extends StObject
        with TaxonomyKind
-  @scala.inline
-  def post_tag: post_tag = "post_tag".asInstanceOf[post_tag]
+  inline def post_tag: post_tag = "post_tag".asInstanceOf[post_tag]
   
   @js.native
   sealed trait `private`
     extends StObject
        with PostStatus
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait public
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Status
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait publish
     extends StObject
        with PostStatus
-  @scala.inline
-  def publish: publish = "publish".asInstanceOf[publish]
+  inline def publish: publish = "publish".asInstanceOf[publish]
   
   @js.native
   sealed trait queryable
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Status
-  @scala.inline
-  def queryable: queryable = "queryable".asInstanceOf[queryable]
+  inline def queryable: queryable = "queryable".asInstanceOf[queryable]
   
   @js.native
   sealed trait quote
     extends StObject
        with PostFormat
-  @scala.inline
-  def quote: quote = "quote".asInstanceOf[quote]
+  inline def quote: quote = "quote".asInstanceOf[quote]
   
   @js.native
   sealed trait rest_base
     extends StObject
        with Taxonomy
        with Type
-  @scala.inline
-  def rest_base: rest_base = "rest_base".asInstanceOf[rest_base]
+  inline def rest_base: rest_base = "rest_base".asInstanceOf[rest_base]
   
   @js.native
   sealed trait slug
@@ -556,27 +494,23 @@ object wordpressApiFetchStrings {
        with Taxonomy
        with Type
        with User
-  @scala.inline
-  def slug: slug = "slug".asInstanceOf[slug]
+  inline def slug: slug = "slug".asInstanceOf[slug]
   
   @js.native
   sealed trait source_url
     extends StObject
        with Media
-  @scala.inline
-  def source_url: source_url = "source_url".asInstanceOf[source_url]
+  inline def source_url: source_url = "source_url".asInstanceOf[source_url]
   
   @js.native
   sealed trait spam extends StObject
-  @scala.inline
-  def spam: spam = "spam".asInstanceOf[spam]
+  inline def spam: spam = "spam".asInstanceOf[spam]
   
   @js.native
   sealed trait standard
     extends StObject
        with PostFormat
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait status
@@ -587,37 +521,32 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
        with PostFormat
-  @scala.inline
-  def status: status = "status".asInstanceOf[status]
+  inline def status: status = "status".asInstanceOf[status]
   
   @js.native
   sealed trait sticky
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def sticky: sticky = "sticky".asInstanceOf[sticky]
+  inline def sticky: sticky = "sticky".asInstanceOf[sticky]
   
   @js.native
   sealed trait tags
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def tags: tags = "tags".asInstanceOf[tags]
+  inline def tags: tags = "tags".asInstanceOf[tags]
   
   @js.native
   sealed trait taxonomies
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Type
-  @scala.inline
-  def taxonomies: taxonomies = "taxonomies".asInstanceOf[taxonomies]
+  inline def taxonomies: taxonomies = "taxonomies".asInstanceOf[taxonomies]
   
   @js.native
   sealed trait taxonomy
     extends StObject
        with Category
        with Tag
-  @scala.inline
-  def taxonomy: taxonomy = "taxonomy".asInstanceOf[taxonomy]
+  inline def taxonomy: taxonomy = "taxonomy".asInstanceOf[taxonomy]
   
   @js.native
   sealed trait template
@@ -626,8 +555,7 @@ object wordpressApiFetchStrings {
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Media
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
-  @scala.inline
-  def template: template = "template".asInstanceOf[template]
+  inline def template: template = "template".asInstanceOf[template]
   
   @js.native
   sealed trait title
@@ -637,13 +565,11 @@ object wordpressApiFetchStrings {
        with Page
        with Post
        with PostRevision
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
   sealed trait trash extends StObject
-  @scala.inline
-  def trash: trash = "trash".asInstanceOf[trash]
+  inline def trash: trash = "trash".asInstanceOf[trash]
   
   @js.native
   sealed trait `type`
@@ -653,34 +579,29 @@ object wordpressApiFetchStrings {
        with Media
        with Page
        with Post
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait types
     extends StObject
        with typings.wordpressApiFetch.mod.Schema.ViewKeys.Taxonomy
-  @scala.inline
-  def types: types = "types".asInstanceOf[types]
+  inline def types: types = "types".asInstanceOf[types]
   
   @js.native
   sealed trait url
     extends StObject
        with User
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
   sealed trait video
     extends StObject
        with PostFormat
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait view
     extends StObject
        with Context
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
+  inline def view: view = "view".asInstanceOf[view]
 }

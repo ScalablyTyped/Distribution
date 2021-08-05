@@ -18,22 +18,17 @@ trait WxGetSavedFileListSuccessCallbackResultFileItem extends StObject {
 }
 object WxGetSavedFileListSuccessCallbackResultFileItem {
   
-  @scala.inline
-  def apply(createTime: Double, filePath: String, size: Double): WxGetSavedFileListSuccessCallbackResultFileItem = {
+  inline def apply(createTime: Double, filePath: String, size: Double): WxGetSavedFileListSuccessCallbackResultFileItem = {
     val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[WxGetSavedFileListSuccessCallbackResultFileItem]
   }
   
-  @scala.inline
-  implicit class WxGetSavedFileListSuccessCallbackResultFileItemMutableBuilder[Self <: WxGetSavedFileListSuccessCallbackResultFileItem] (val x: Self) extends AnyVal {
+  extension [Self <: WxGetSavedFileListSuccessCallbackResultFileItem](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ object mod {
   	//=> '🦄'
   	```
   	*/
-  @scala.inline
-  def apply[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("random-item", JSImport.Namespace)
   @js.native
@@ -32,6 +31,5 @@ object mod {
   	//=> ['🌈', '🦄']
   	```
   	*/
-  @scala.inline
-  def multiple[T](input: js.Array[T], count: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(input.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def multiple[T](input: js.Array[T], count: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(input.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

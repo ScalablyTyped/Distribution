@@ -50,21 +50,16 @@ object vpcDhcpOptionsAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    inline def get(name: String, id: Input[ID]): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    inline def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    inline def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
     
     /**
       * Returns true if the given object is an instance of VpcDhcpOptionsAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean]
   }
   
   trait VpcDhcpOptionsAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object vpcDhcpOptionsAssociationMod {
   }
   object VpcDhcpOptionsAssociationArgs {
     
-    @scala.inline
-    def apply(dhcpOptionsId: Input[String], vpcId: Input[String]): VpcDhcpOptionsAssociationArgs = {
+    inline def apply(dhcpOptionsId: Input[String], vpcId: Input[String]): VpcDhcpOptionsAssociationArgs = {
       val __obj = js.Dynamic.literal(dhcpOptionsId = dhcpOptionsId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcDhcpOptionsAssociationArgs]
     }
     
-    @scala.inline
-    implicit class VpcDhcpOptionsAssociationArgsMutableBuilder[Self <: VpcDhcpOptionsAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcDhcpOptionsAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setDhcpOptionsId(value: Input[String]): Self = StObject.set(x, "dhcpOptionsId", value.asInstanceOf[js.Any])
+      inline def setDhcpOptionsId(value: Input[String]): Self = StObject.set(x, "dhcpOptionsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object vpcDhcpOptionsAssociationMod {
   }
   object VpcDhcpOptionsAssociationState {
     
-    @scala.inline
-    def apply(): VpcDhcpOptionsAssociationState = {
+    inline def apply(): VpcDhcpOptionsAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcDhcpOptionsAssociationState]
     }
     
-    @scala.inline
-    implicit class VpcDhcpOptionsAssociationStateMutableBuilder[Self <: VpcDhcpOptionsAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcDhcpOptionsAssociationState](x: Self) {
       
-      @scala.inline
-      def setDhcpOptionsId(value: Input[String]): Self = StObject.set(x, "dhcpOptionsId", value.asInstanceOf[js.Any])
+      inline def setDhcpOptionsId(value: Input[String]): Self = StObject.set(x, "dhcpOptionsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDhcpOptionsIdUndefined: Self = StObject.set(x, "dhcpOptionsId", js.undefined)
+      inline def setDhcpOptionsIdUndefined: Self = StObject.set(x, "dhcpOptionsId", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

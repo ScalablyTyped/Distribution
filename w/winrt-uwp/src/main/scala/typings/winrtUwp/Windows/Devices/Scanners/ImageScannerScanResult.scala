@@ -14,16 +14,13 @@ trait ImageScannerScanResult extends StObject {
 }
 object ImageScannerScanResult {
   
-  @scala.inline
-  def apply(scannedFiles: IVectorView[StorageFile]): ImageScannerScanResult = {
+  inline def apply(scannedFiles: IVectorView[StorageFile]): ImageScannerScanResult = {
     val __obj = js.Dynamic.literal(scannedFiles = scannedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageScannerScanResult]
   }
   
-  @scala.inline
-  implicit class ImageScannerScanResultMutableBuilder[Self <: ImageScannerScanResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScannerScanResult](x: Self) {
     
-    @scala.inline
-    def setScannedFiles(value: IVectorView[StorageFile]): Self = StObject.set(x, "scannedFiles", value.asInstanceOf[js.Any])
+    inline def setScannedFiles(value: IVectorView[StorageFile]): Self = StObject.set(x, "scannedFiles", value.asInstanceOf[js.Any])
   }
 }

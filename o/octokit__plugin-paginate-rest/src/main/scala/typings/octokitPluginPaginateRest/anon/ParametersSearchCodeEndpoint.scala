@@ -15,19 +15,15 @@ trait ParametersSearchCodeEndpoint extends StObject {
 }
 object ParametersSearchCodeEndpoint {
   
-  @scala.inline
-  def apply(parameters: SearchCodeEndpoint, response: OctokitResponse[SearchCodeResponseData] & `17`): ParametersSearchCodeEndpoint = {
+  inline def apply(parameters: SearchCodeEndpoint, response: OctokitResponse[SearchCodeResponseData] & `17`): ParametersSearchCodeEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersSearchCodeEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersSearchCodeEndpointMutableBuilder[Self <: ParametersSearchCodeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersSearchCodeEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: SearchCodeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SearchCodeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[SearchCodeResponseData] & `17`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[SearchCodeResponseData] & `17`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

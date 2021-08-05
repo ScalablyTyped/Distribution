@@ -33,8 +33,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def exponential(options: js.Any): typings.operationRetrier.backoffMod.Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[typings.operationRetrier.backoffMod.Backoff]
+    inline def exponential(options: js.Any): typings.operationRetrier.backoffMod.Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[typings.operationRetrier.backoffMod.Backoff]
   }
   
   /**

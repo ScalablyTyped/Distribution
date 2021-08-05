@@ -26,8 +26,7 @@ trait HeatmapSliderViewModelStopInfo
 }
 object HeatmapSliderViewModelStopInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object HeatmapSliderViewModelStopInfo {
     __obj.asInstanceOf[HeatmapSliderViewModelStopInfo]
   }
   
-  @scala.inline
-  implicit class HeatmapSliderViewModelStopInfoMutableBuilder[Self <: HeatmapSliderViewModelStopInfo] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapSliderViewModelStopInfo](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

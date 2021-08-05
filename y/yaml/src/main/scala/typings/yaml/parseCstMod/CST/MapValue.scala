@@ -14,8 +14,7 @@ trait MapValue
 }
 object MapValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -28,10 +27,8 @@ object MapValue {
     __obj.asInstanceOf[MapValue]
   }
   
-  @scala.inline
-  implicit class MapValueMutableBuilder[Self <: MapValue] (val x: Self) extends AnyVal {
+  extension [Self <: MapValue](x: Self) {
     
-    @scala.inline
-    def setType(value: MAP_VALUE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MAP_VALUE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

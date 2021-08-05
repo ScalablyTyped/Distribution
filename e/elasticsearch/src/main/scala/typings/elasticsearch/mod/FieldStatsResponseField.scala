@@ -26,8 +26,7 @@ trait FieldStatsResponseField extends StObject {
 }
 object FieldStatsResponseField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     density: Double,
     doc_count: Double,
     is_aggregatable: String,
@@ -42,34 +41,24 @@ object FieldStatsResponseField {
     __obj.asInstanceOf[FieldStatsResponseField]
   }
   
-  @scala.inline
-  implicit class FieldStatsResponseFieldMutableBuilder[Self <: FieldStatsResponseField] (val x: Self) extends AnyVal {
+  extension [Self <: FieldStatsResponseField](x: Self) {
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
+    inline def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_aggregatable(value: String): Self = StObject.set(x, "is_aggregatable", value.asInstanceOf[js.Any])
+    inline def setIs_aggregatable(value: String): Self = StObject.set(x, "is_aggregatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_searchable(value: String): Self = StObject.set(x, "is_searchable", value.asInstanceOf[js.Any])
+    inline def setIs_searchable(value: String): Self = StObject.set(x, "is_searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_doc(value: Double): Self = StObject.set(x, "max_doc", value.asInstanceOf[js.Any])
+    inline def setMax_doc(value: Double): Self = StObject.set(x, "max_doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_value(value: js.Any): Self = StObject.set(x, "max_value", value.asInstanceOf[js.Any])
+    inline def setMax_value(value: js.Any): Self = StObject.set(x, "max_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_value(value: js.Any): Self = StObject.set(x, "min_value", value.asInstanceOf[js.Any])
+    inline def setMin_value(value: js.Any): Self = StObject.set(x, "min_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum_doc_freq(value: Double): Self = StObject.set(x, "sum_doc_freq", value.asInstanceOf[js.Any])
+    inline def setSum_doc_freq(value: Double): Self = StObject.set(x, "sum_doc_freq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum_total_term_freq(value: Double): Self = StObject.set(x, "sum_total_term_freq", value.asInstanceOf[js.Any])
+    inline def setSum_total_term_freq(value: Double): Self = StObject.set(x, "sum_total_term_freq", value.asInstanceOf[js.Any])
   }
 }

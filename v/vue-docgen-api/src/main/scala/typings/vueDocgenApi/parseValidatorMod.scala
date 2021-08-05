@@ -12,8 +12,6 @@ object parseValidatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(validatorNode: ArrowFunctionExpression_): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(validatorNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
-  @scala.inline
-  def default(validatorNode: Method): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(validatorNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
+  inline def default(validatorNode: ArrowFunctionExpression_): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(validatorNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
+  inline def default(validatorNode: Method): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(validatorNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
 }

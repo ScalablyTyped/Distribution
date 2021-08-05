@@ -10,6 +10,5 @@ object keepalive {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAlive(dest: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_alive")(dest.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def isAlive(dest: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_alive")(dest.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

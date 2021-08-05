@@ -23,31 +23,23 @@ trait SqlParameter extends StObject {
 }
 object SqlParameter {
   
-  @scala.inline
-  def apply(): SqlParameter = {
+  inline def apply(): SqlParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlParameter]
   }
   
-  @scala.inline
-  implicit class SqlParameterMutableBuilder[Self <: SqlParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SqlParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTypeHint(value: TypeHint): Self = StObject.set(x, "typeHint", value.asInstanceOf[js.Any])
+    inline def setTypeHint(value: TypeHint): Self = StObject.set(x, "typeHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeHintUndefined: Self = StObject.set(x, "typeHint", js.undefined)
+    inline def setTypeHintUndefined: Self = StObject.set(x, "typeHint", js.undefined)
     
-    @scala.inline
-    def setValue(value: Field): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Field): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

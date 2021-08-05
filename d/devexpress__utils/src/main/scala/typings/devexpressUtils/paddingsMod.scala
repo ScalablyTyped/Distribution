@@ -22,7 +22,6 @@ object paddingsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def empty(): Paddings = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Paddings]
+    inline def empty(): Paddings = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Paddings]
   }
 }

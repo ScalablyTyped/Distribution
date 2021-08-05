@@ -14,25 +14,19 @@ trait PartialDocumentPageConsul extends StObject {
 }
 object PartialDocumentPageConsul {
   
-  @scala.inline
-  def apply(): PartialDocumentPageConsul = {
+  inline def apply(): PartialDocumentPageConsul = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDocumentPageConsul]
   }
   
-  @scala.inline
-  implicit class PartialDocumentPageConsulMutableBuilder[Self <: PartialDocumentPageConsul] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDocumentPageConsul](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

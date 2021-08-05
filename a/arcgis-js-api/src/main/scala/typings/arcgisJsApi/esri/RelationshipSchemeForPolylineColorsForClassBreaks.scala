@@ -26,8 +26,7 @@ trait RelationshipSchemeForPolylineColorsForClassBreaks
 }
 object RelationshipSchemeForPolylineColorsForClassBreaks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colors: js.Array[js.Array[Color_]],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,16 +37,12 @@ object RelationshipSchemeForPolylineColorsForClassBreaks {
     __obj.asInstanceOf[RelationshipSchemeForPolylineColorsForClassBreaks]
   }
   
-  @scala.inline
-  implicit class RelationshipSchemeForPolylineColorsForClassBreaksMutableBuilder[Self <: RelationshipSchemeForPolylineColorsForClassBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipSchemeForPolylineColorsForClassBreaks](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: js.Array[Color_]*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: js.Array[Color_]*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
+    inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
   }
 }

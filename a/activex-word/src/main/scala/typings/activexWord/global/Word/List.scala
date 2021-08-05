@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.List")
 @js.native
-class List protected ()
+/* private */ class List ()
   extends StObject
      with typings.activexWord.Word.List

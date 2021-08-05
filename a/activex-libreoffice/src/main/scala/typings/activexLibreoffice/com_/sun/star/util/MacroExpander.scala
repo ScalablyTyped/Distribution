@@ -21,8 +21,7 @@ trait MacroExpander
      with XComponent
 object MacroExpander {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,

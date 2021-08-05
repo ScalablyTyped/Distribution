@@ -13,16 +13,13 @@ trait MaxNumber extends StObject {
 }
 object MaxNumber {
   
-  @scala.inline
-  def apply(max: Double): MaxNumber = {
+  inline def apply(max: Double): MaxNumber = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxNumber]
   }
   
-  @scala.inline
-  implicit class MaxNumberMutableBuilder[Self <: MaxNumber] (val x: Self) extends AnyVal {
+  extension [Self <: MaxNumber](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }
 }

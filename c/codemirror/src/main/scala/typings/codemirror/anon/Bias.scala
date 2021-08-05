@@ -14,31 +14,23 @@ trait Bias extends StObject {
 }
 object Bias {
   
-  @scala.inline
-  def apply(): Bias = {
+  inline def apply(): Bias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bias]
   }
   
-  @scala.inline
-  implicit class BiasMutableBuilder[Self <: Bias] (val x: Self) extends AnyVal {
+  extension [Self <: Bias](x: Self) {
     
-    @scala.inline
-    def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+    inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait IAnimatedFrameEventArgs extends StObject {
 }
 object IAnimatedFrameEventArgs {
   
-  @scala.inline
-  def apply(animatedTileLayer: AnimatedTileLayer, index: Double): IAnimatedFrameEventArgs = {
+  inline def apply(animatedTileLayer: AnimatedTileLayer, index: Double): IAnimatedFrameEventArgs = {
     val __obj = js.Dynamic.literal(animatedTileLayer = animatedTileLayer.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimatedFrameEventArgs]
   }
   
-  @scala.inline
-  implicit class IAnimatedFrameEventArgsMutableBuilder[Self <: IAnimatedFrameEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IAnimatedFrameEventArgs](x: Self) {
     
-    @scala.inline
-    def setAnimatedTileLayer(value: AnimatedTileLayer): Self = StObject.set(x, "animatedTileLayer", value.asInstanceOf[js.Any])
+    inline def setAnimatedTileLayer(value: AnimatedTileLayer): Self = StObject.set(x, "animatedTileLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait IDeviceOrientationWatchOptions extends StObject {
 }
 object IDeviceOrientationWatchOptions {
   
-  @scala.inline
-  def apply(): IDeviceOrientationWatchOptions = {
+  inline def apply(): IDeviceOrientationWatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDeviceOrientationWatchOptions]
   }
   
-  @scala.inline
-  implicit class IDeviceOrientationWatchOptionsMutableBuilder[Self <: IDeviceOrientationWatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceOrientationWatchOptions](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

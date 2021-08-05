@@ -42,43 +42,31 @@ trait AzureDiskVolumeSource extends StObject {
 }
 object AzureDiskVolumeSource {
   
-  @scala.inline
-  def apply(diskName: Input[String], diskURI: Input[String]): AzureDiskVolumeSource = {
+  inline def apply(diskName: Input[String], diskURI: Input[String]): AzureDiskVolumeSource = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any], diskURI = diskURI.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureDiskVolumeSource]
   }
   
-  @scala.inline
-  implicit class AzureDiskVolumeSourceMutableBuilder[Self <: AzureDiskVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: AzureDiskVolumeSource](x: Self) {
     
-    @scala.inline
-    def setCachingMode(value: Input[String]): Self = StObject.set(x, "cachingMode", value.asInstanceOf[js.Any])
+    inline def setCachingMode(value: Input[String]): Self = StObject.set(x, "cachingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachingModeUndefined: Self = StObject.set(x, "cachingMode", js.undefined)
+    inline def setCachingModeUndefined: Self = StObject.set(x, "cachingMode", js.undefined)
     
-    @scala.inline
-    def setDiskName(value: Input[String]): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: Input[String]): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskURI(value: Input[String]): Self = StObject.set(x, "diskURI", value.asInstanceOf[js.Any])
+    inline def setDiskURI(value: Input[String]): Self = StObject.set(x, "diskURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

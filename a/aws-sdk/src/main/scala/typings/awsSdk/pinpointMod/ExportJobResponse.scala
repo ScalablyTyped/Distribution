@@ -73,8 +73,7 @@ trait ExportJobResponse extends StObject {
 }
 object ExportJobResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationId: string,
     CreationDate: string,
     Definition: ExportJobResource,
@@ -86,70 +85,48 @@ object ExportJobResponse {
     __obj.asInstanceOf[ExportJobResponse]
   }
   
-  @scala.inline
-  implicit class ExportJobResponseMutableBuilder[Self <: ExportJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJobResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedPieces(value: integer): Self = StObject.set(x, "CompletedPieces", value.asInstanceOf[js.Any])
+    inline def setCompletedPieces(value: integer): Self = StObject.set(x, "CompletedPieces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedPiecesUndefined: Self = StObject.set(x, "CompletedPieces", js.undefined)
+    inline def setCompletedPiecesUndefined: Self = StObject.set(x, "CompletedPieces", js.undefined)
     
-    @scala.inline
-    def setCompletionDate(value: string): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: string): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
+    inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: ExportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: ExportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedPieces(value: integer): Self = StObject.set(x, "FailedPieces", value.asInstanceOf[js.Any])
+    inline def setFailedPieces(value: integer): Self = StObject.set(x, "FailedPieces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedPiecesUndefined: Self = StObject.set(x, "FailedPieces", js.undefined)
+    inline def setFailedPiecesUndefined: Self = StObject.set(x, "FailedPieces", js.undefined)
     
-    @scala.inline
-    def setFailures(value: ListOfString): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: ListOfString): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: string*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: string*): Self = StObject.set(x, "Failures", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFailures(value: integer): Self = StObject.set(x, "TotalFailures", value.asInstanceOf[js.Any])
+    inline def setTotalFailures(value: integer): Self = StObject.set(x, "TotalFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFailuresUndefined: Self = StObject.set(x, "TotalFailures", js.undefined)
+    inline def setTotalFailuresUndefined: Self = StObject.set(x, "TotalFailures", js.undefined)
     
-    @scala.inline
-    def setTotalPieces(value: integer): Self = StObject.set(x, "TotalPieces", value.asInstanceOf[js.Any])
+    inline def setTotalPieces(value: integer): Self = StObject.set(x, "TotalPieces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPiecesUndefined: Self = StObject.set(x, "TotalPieces", js.undefined)
+    inline def setTotalPiecesUndefined: Self = StObject.set(x, "TotalPieces", js.undefined)
     
-    @scala.inline
-    def setTotalProcessed(value: integer): Self = StObject.set(x, "TotalProcessed", value.asInstanceOf[js.Any])
+    inline def setTotalProcessed(value: integer): Self = StObject.set(x, "TotalProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalProcessedUndefined: Self = StObject.set(x, "TotalProcessed", js.undefined)
+    inline def setTotalProcessedUndefined: Self = StObject.set(x, "TotalProcessed", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object getElementTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasElementId: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(hasElementId: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

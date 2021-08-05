@@ -17,19 +17,15 @@ trait Userreport extends StObject {
 }
 object Userreport {
   
-  @scala.inline
-  def apply(): Userreport = {
+  inline def apply(): Userreport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Userreport]
   }
   
-  @scala.inline
-  implicit class UserreportMutableBuilder[Self <: Userreport] (val x: Self) extends AnyVal {
+  extension [Self <: Userreport](x: Self) {
     
-    @scala.inline
-    def setUser_report(value: fraudulent | safe): Self = StObject.set(x, "user_report", value.asInstanceOf[js.Any])
+    inline def setUser_report(value: fraudulent | safe): Self = StObject.set(x, "user_report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_reportUndefined: Self = StObject.set(x, "user_report", js.undefined)
+    inline def setUser_reportUndefined: Self = StObject.set(x, "user_report", js.undefined)
   }
 }

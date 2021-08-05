@@ -22,29 +22,22 @@ trait PropertiesQuery
 }
 object PropertiesQuery {
   
-  @scala.inline
-  def apply(): PropertiesQuery = {
+  inline def apply(): PropertiesQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("properties")
     __obj.asInstanceOf[PropertiesQuery]
   }
   
-  @scala.inline
-  implicit class PropertiesQueryMutableBuilder[Self <: PropertiesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: PropertiesQuery](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: properties): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: properties): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

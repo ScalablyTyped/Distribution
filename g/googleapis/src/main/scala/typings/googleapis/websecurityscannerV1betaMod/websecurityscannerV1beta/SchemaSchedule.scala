@@ -24,25 +24,19 @@ trait SchemaSchedule extends StObject {
 }
 object SchemaSchedule {
   
-  @scala.inline
-  def apply(): SchemaSchedule = {
+  inline def apply(): SchemaSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchedule]
   }
   
-  @scala.inline
-  implicit class SchemaScheduleMutableBuilder[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchedule](x: Self) {
     
-    @scala.inline
-    def setIntervalDurationDays(value: Double): Self = StObject.set(x, "intervalDurationDays", value.asInstanceOf[js.Any])
+    inline def setIntervalDurationDays(value: Double): Self = StObject.set(x, "intervalDurationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalDurationDaysUndefined: Self = StObject.set(x, "intervalDurationDays", js.undefined)
+    inline def setIntervalDurationDaysUndefined: Self = StObject.set(x, "intervalDurationDays", js.undefined)
     
-    @scala.inline
-    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
+    inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

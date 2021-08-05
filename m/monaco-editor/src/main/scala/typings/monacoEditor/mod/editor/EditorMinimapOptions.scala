@@ -30,8 +30,7 @@ trait EditorMinimapOptions extends StObject {
 }
 object EditorMinimapOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enabled: Boolean,
     maxColumn: Double,
     renderCharacters: Boolean,
@@ -44,28 +43,20 @@ object EditorMinimapOptions {
     __obj.asInstanceOf[EditorMinimapOptions]
   }
   
-  @scala.inline
-  implicit class EditorMinimapOptionsMutableBuilder[Self <: EditorMinimapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorMinimapOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxColumn(value: Double): Self = StObject.set(x, "maxColumn", value.asInstanceOf[js.Any])
+    inline def setMaxColumn(value: Double): Self = StObject.set(x, "maxColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderCharacters(value: Boolean): Self = StObject.set(x, "renderCharacters", value.asInstanceOf[js.Any])
+    inline def setRenderCharacters(value: Boolean): Self = StObject.set(x, "renderCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSlider(value: always | mouseover): Self = StObject.set(x, "showSlider", value.asInstanceOf[js.Any])
+    inline def setShowSlider(value: always | mouseover): Self = StObject.set(x, "showSlider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSide(value: right | left): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: right | left): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: proportional | fill | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: proportional | fill | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

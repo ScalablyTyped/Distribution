@@ -43,106 +43,73 @@ trait BaseItem
 }
 object BaseItem {
   
-  @scala.inline
-  def apply(): BaseItem = {
+  inline def apply(): BaseItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseItem]
   }
   
-  @scala.inline
-  implicit class BaseItemMutableBuilder[Self <: BaseItem] (val x: Self) extends AnyVal {
+  extension [Self <: BaseItem](x: Self) {
     
-    @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setCreatedByUser(value: NullableOption[User]): Self = StObject.set(x, "createdByUser", value.asInstanceOf[js.Any])
+    inline def setCreatedByUser(value: NullableOption[User]): Self = StObject.set(x, "createdByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUserNull: Self = StObject.set(x, "createdByUser", null)
+    inline def setCreatedByUserNull: Self = StObject.set(x, "createdByUser", null)
     
-    @scala.inline
-    def setCreatedByUserUndefined: Self = StObject.set(x, "createdByUser", js.undefined)
+    inline def setCreatedByUserUndefined: Self = StObject.set(x, "createdByUser", js.undefined)
     
-    @scala.inline
-    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setETag(value: NullableOption[String]): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+    inline def setETag(value: NullableOption[String]): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagNull: Self = StObject.set(x, "eTag", null)
+    inline def setETagNull: Self = StObject.set(x, "eTag", null)
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
+    inline def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
-    @scala.inline
-    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
-    @scala.inline
-    def setLastModifiedByUser(value: NullableOption[User]): Self = StObject.set(x, "lastModifiedByUser", value.asInstanceOf[js.Any])
+    inline def setLastModifiedByUser(value: NullableOption[User]): Self = StObject.set(x, "lastModifiedByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByUserNull: Self = StObject.set(x, "lastModifiedByUser", null)
+    inline def setLastModifiedByUserNull: Self = StObject.set(x, "lastModifiedByUser", null)
     
-    @scala.inline
-    def setLastModifiedByUserUndefined: Self = StObject.set(x, "lastModifiedByUser", js.undefined)
+    inline def setLastModifiedByUserUndefined: Self = StObject.set(x, "lastModifiedByUser", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentReference(value: NullableOption[ItemReference]): Self = StObject.set(x, "parentReference", value.asInstanceOf[js.Any])
+    inline def setParentReference(value: NullableOption[ItemReference]): Self = StObject.set(x, "parentReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentReferenceNull: Self = StObject.set(x, "parentReference", null)
+    inline def setParentReferenceNull: Self = StObject.set(x, "parentReference", null)
     
-    @scala.inline
-    def setParentReferenceUndefined: Self = StObject.set(x, "parentReference", js.undefined)
+    inline def setParentReferenceUndefined: Self = StObject.set(x, "parentReference", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
+    inline def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

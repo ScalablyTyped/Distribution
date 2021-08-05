@@ -26,31 +26,23 @@ trait ANDROID extends StObject {
 }
 object ANDROID {
   
-  @scala.inline
-  def apply(): ANDROID = {
+  inline def apply(): ANDROID = {
     val __obj = js.Dynamic.literal(ANDROID = "android", CROS = "cros", LINUX = "linux", MAC = "mac", OPENBSD = "openbsd", WIN = "win")
     __obj.asInstanceOf[ANDROID]
   }
   
-  @scala.inline
-  implicit class ANDROIDMutableBuilder[Self <: ANDROID] (val x: Self) extends AnyVal {
+  extension [Self <: ANDROID](x: Self) {
     
-    @scala.inline
-    def setANDROID(value: android_): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
+    inline def setANDROID(value: android_): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCROS(value: cros_): Self = StObject.set(x, "CROS", value.asInstanceOf[js.Any])
+    inline def setCROS(value: cros_): Self = StObject.set(x, "CROS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLINUX(value: linux_): Self = StObject.set(x, "LINUX", value.asInstanceOf[js.Any])
+    inline def setLINUX(value: linux_): Self = StObject.set(x, "LINUX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAC(value: mac_): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
+    inline def setMAC(value: mac_): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPENBSD(value: openbsd_): Self = StObject.set(x, "OPENBSD", value.asInstanceOf[js.Any])
+    inline def setOPENBSD(value: openbsd_): Self = StObject.set(x, "OPENBSD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIN(value: win_): Self = StObject.set(x, "WIN", value.asInstanceOf[js.Any])
+    inline def setWIN(value: win_): Self = StObject.set(x, "WIN", value.asInstanceOf[js.Any])
   }
 }

@@ -53,58 +53,41 @@ trait SchemaHold extends StObject {
 }
 object SchemaHold {
   
-  @scala.inline
-  def apply(): SchemaHold = {
+  inline def apply(): SchemaHold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHold]
   }
   
-  @scala.inline
-  implicit class SchemaHoldMutableBuilder[Self <: SchemaHold] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHold](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: js.Array[SchemaHeldAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: js.Array[SchemaHeldAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: SchemaHeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: SchemaHeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
+    inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
+    inline def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
-    @scala.inline
-    def setHoldId(value: String): Self = StObject.set(x, "holdId", value.asInstanceOf[js.Any])
+    inline def setHoldId(value: String): Self = StObject.set(x, "holdId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoldIdUndefined: Self = StObject.set(x, "holdId", js.undefined)
+    inline def setHoldIdUndefined: Self = StObject.set(x, "holdId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrgUnit(value: SchemaHeldOrgUnit): Self = StObject.set(x, "orgUnit", value.asInstanceOf[js.Any])
+    inline def setOrgUnit(value: SchemaHeldOrgUnit): Self = StObject.set(x, "orgUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitUndefined: Self = StObject.set(x, "orgUnit", js.undefined)
+    inline def setOrgUnitUndefined: Self = StObject.set(x, "orgUnit", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaCorpusQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaCorpusQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

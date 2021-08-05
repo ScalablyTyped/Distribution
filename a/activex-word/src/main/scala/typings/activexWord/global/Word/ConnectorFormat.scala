@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ConnectorFormat")
 @js.native
-class ConnectorFormat protected ()
+/* private */ class ConnectorFormat ()
   extends StObject
      with typings.activexWord.Word.ConnectorFormat {
   
@@ -54,7 +54,7 @@ class ConnectorFormat protected ()
   /* CompleteClass */
   var Type: MsoConnectorType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ConnectorFormat_typekey")
   var WordDotConnectorFormat_typekey: typings.activexWord.Word.ConnectorFormat = js.native
 }

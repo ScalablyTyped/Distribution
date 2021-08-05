@@ -9,8 +9,7 @@ trait MobileBroadbandAccount
      with IMobileBroadbandAccount
 object MobileBroadbandAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentDeviceInformation: MobileBroadbandDeviceInformation,
     currentNetwork: MobileBroadbandNetwork,
     networkAccountId: String,

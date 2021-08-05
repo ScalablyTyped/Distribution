@@ -12,19 +12,15 @@ trait ClientLookupValue extends StObject {
 }
 object ClientLookupValue {
   
-  @scala.inline
-  def apply(LookupId: Double, LookupValue: String): ClientLookupValue = {
+  inline def apply(LookupId: Double, LookupValue: String): ClientLookupValue = {
     val __obj = js.Dynamic.literal(LookupId = LookupId.asInstanceOf[js.Any], LookupValue = LookupValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientLookupValue]
   }
   
-  @scala.inline
-  implicit class ClientLookupValueMutableBuilder[Self <: ClientLookupValue] (val x: Self) extends AnyVal {
+  extension [Self <: ClientLookupValue](x: Self) {
     
-    @scala.inline
-    def setLookupId(value: Double): Self = StObject.set(x, "LookupId", value.asInstanceOf[js.Any])
+    inline def setLookupId(value: Double): Self = StObject.set(x, "LookupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupValue(value: String): Self = StObject.set(x, "LookupValue", value.asInstanceOf[js.Any])
+    inline def setLookupValue(value: String): Self = StObject.set(x, "LookupValue", value.asInstanceOf[js.Any])
   }
 }

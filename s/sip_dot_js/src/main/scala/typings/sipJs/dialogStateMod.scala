@@ -35,8 +35,7 @@ object dialogStateMod {
   }
   object DialogState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callId: String,
       early: Boolean,
       id: String,
@@ -52,53 +51,37 @@ object dialogStateMod {
       __obj.asInstanceOf[DialogState]
     }
     
-    @scala.inline
-    implicit class DialogStateMutableBuilder[Self <: DialogState] (val x: Self) extends AnyVal {
+    extension [Self <: DialogState](x: Self) {
       
-      @scala.inline
-      def setCallId(value: String): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
+      inline def setCallId(value: String): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEarly(value: Boolean): Self = StObject.set(x, "early", value.asInstanceOf[js.Any])
+      inline def setEarly(value: Boolean): Self = StObject.set(x, "early", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSequenceNumber(value: Double): Self = StObject.set(x, "localSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setLocalSequenceNumber(value: Double): Self = StObject.set(x, "localSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSequenceNumberUndefined: Self = StObject.set(x, "localSequenceNumber", js.undefined)
+      inline def setLocalSequenceNumberUndefined: Self = StObject.set(x, "localSequenceNumber", js.undefined)
       
-      @scala.inline
-      def setLocalTag(value: String): Self = StObject.set(x, "localTag", value.asInstanceOf[js.Any])
+      inline def setLocalTag(value: String): Self = StObject.set(x, "localTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalURI(value: URI): Self = StObject.set(x, "localURI", value.asInstanceOf[js.Any])
+      inline def setLocalURI(value: URI): Self = StObject.set(x, "localURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteSequenceNumber(value: Double): Self = StObject.set(x, "remoteSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setRemoteSequenceNumber(value: Double): Self = StObject.set(x, "remoteSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteSequenceNumberUndefined: Self = StObject.set(x, "remoteSequenceNumber", js.undefined)
+      inline def setRemoteSequenceNumberUndefined: Self = StObject.set(x, "remoteSequenceNumber", js.undefined)
       
-      @scala.inline
-      def setRemoteTag(value: String): Self = StObject.set(x, "remoteTag", value.asInstanceOf[js.Any])
+      inline def setRemoteTag(value: String): Self = StObject.set(x, "remoteTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteTarget(value: URI): Self = StObject.set(x, "remoteTarget", value.asInstanceOf[js.Any])
+      inline def setRemoteTarget(value: URI): Self = StObject.set(x, "remoteTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteURI(value: URI): Self = StObject.set(x, "remoteURI", value.asInstanceOf[js.Any])
+      inline def setRemoteURI(value: URI): Self = StObject.set(x, "remoteURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
+      inline def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
+      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     }
   }
 }

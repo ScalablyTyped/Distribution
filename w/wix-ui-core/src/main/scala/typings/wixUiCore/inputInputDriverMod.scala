@@ -12,6 +12,5 @@ object inputInputDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inputDriverFactory(hasElementEventTrigger: Element): Focus = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Focus]
+  inline def inputDriverFactory(hasElementEventTrigger: Element): Focus = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Focus]
 }

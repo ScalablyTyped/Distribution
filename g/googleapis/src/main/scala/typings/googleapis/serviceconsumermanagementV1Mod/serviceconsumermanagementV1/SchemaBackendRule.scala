@@ -48,55 +48,39 @@ trait SchemaBackendRule extends StObject {
 }
 object SchemaBackendRule {
   
-  @scala.inline
-  def apply(): SchemaBackendRule = {
+  inline def apply(): SchemaBackendRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendRule]
   }
   
-  @scala.inline
-  implicit class SchemaBackendRuleMutableBuilder[Self <: SchemaBackendRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendRule](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
+    inline def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
     
-    @scala.inline
-    def setJwtAudience(value: String): Self = StObject.set(x, "jwtAudience", value.asInstanceOf[js.Any])
+    inline def setJwtAudience(value: String): Self = StObject.set(x, "jwtAudience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtAudienceUndefined: Self = StObject.set(x, "jwtAudience", js.undefined)
+    inline def setJwtAudienceUndefined: Self = StObject.set(x, "jwtAudience", js.undefined)
     
-    @scala.inline
-    def setMinDeadline(value: Double): Self = StObject.set(x, "minDeadline", value.asInstanceOf[js.Any])
+    inline def setMinDeadline(value: Double): Self = StObject.set(x, "minDeadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDeadlineUndefined: Self = StObject.set(x, "minDeadline", js.undefined)
+    inline def setMinDeadlineUndefined: Self = StObject.set(x, "minDeadline", js.undefined)
     
-    @scala.inline
-    def setOperationDeadline(value: Double): Self = StObject.set(x, "operationDeadline", value.asInstanceOf[js.Any])
+    inline def setOperationDeadline(value: Double): Self = StObject.set(x, "operationDeadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationDeadlineUndefined: Self = StObject.set(x, "operationDeadline", js.undefined)
+    inline def setOperationDeadlineUndefined: Self = StObject.set(x, "operationDeadline", js.undefined)
     
-    @scala.inline
-    def setPathTranslation(value: String): Self = StObject.set(x, "pathTranslation", value.asInstanceOf[js.Any])
+    inline def setPathTranslation(value: String): Self = StObject.set(x, "pathTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathTranslationUndefined: Self = StObject.set(x, "pathTranslation", js.undefined)
+    inline def setPathTranslationUndefined: Self = StObject.set(x, "pathTranslation", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

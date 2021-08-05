@@ -100,8 +100,7 @@ object Editing {
   }
   object BackgroundAudioTrack {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audioEffectDefinitions: IVector[IAudioEffectDefinition],
       delay: Double,
       getAudioEncodingProperties: () => AudioEncodingProperties,
@@ -116,35 +115,25 @@ object Editing {
       __obj.asInstanceOf[BackgroundAudioTrack]
     }
     
-    @scala.inline
-    implicit class BackgroundAudioTrackMutableBuilder[Self <: BackgroundAudioTrack] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundAudioTrack](x: Self) {
       
-      @scala.inline
-      def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
+      inline def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAudioEncodingProperties(value: () => AudioEncodingProperties): Self = StObject.set(x, "getAudioEncodingProperties", js.Any.fromFunction0(value))
+      inline def setGetAudioEncodingProperties(value: () => AudioEncodingProperties): Self = StObject.set(x, "getAudioEncodingProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOriginalDuration(value: Double): Self = StObject.set(x, "originalDuration", value.asInstanceOf[js.Any])
+      inline def setOriginalDuration(value: Double): Self = StObject.set(x, "originalDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimTimeFromEnd(value: Double): Self = StObject.set(x, "trimTimeFromEnd", value.asInstanceOf[js.Any])
+      inline def setTrimTimeFromEnd(value: Double): Self = StObject.set(x, "trimTimeFromEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimTimeFromStart(value: Double): Self = StObject.set(x, "trimTimeFromStart", value.asInstanceOf[js.Any])
+      inline def setTrimTimeFromStart(value: Double): Self = StObject.set(x, "trimTimeFromStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimmedDuration(value: Double): Self = StObject.set(x, "trimmedDuration", value.asInstanceOf[js.Any])
+      inline def setTrimmedDuration(value: Double): Self = StObject.set(x, "trimmedDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: IMap[String, String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: IMap[String, String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,17 +148,14 @@ object Editing {
   }
   object EmbeddedAudioTrack {
     
-    @scala.inline
-    def apply(getAudioEncodingProperties: () => AudioEncodingProperties): EmbeddedAudioTrack = {
+    inline def apply(getAudioEncodingProperties: () => AudioEncodingProperties): EmbeddedAudioTrack = {
       val __obj = js.Dynamic.literal(getAudioEncodingProperties = js.Any.fromFunction0(getAudioEncodingProperties))
       __obj.asInstanceOf[EmbeddedAudioTrack]
     }
     
-    @scala.inline
-    implicit class EmbeddedAudioTrackMutableBuilder[Self <: EmbeddedAudioTrack] (val x: Self) extends AnyVal {
+    extension [Self <: EmbeddedAudioTrack](x: Self) {
       
-      @scala.inline
-      def setGetAudioEncodingProperties(value: () => AudioEncodingProperties): Self = StObject.set(x, "getAudioEncodingProperties", js.Any.fromFunction0(value))
+      inline def setGetAudioEncodingProperties(value: () => AudioEncodingProperties): Self = StObject.set(x, "getAudioEncodingProperties", js.Any.fromFunction0(value))
     }
   }
   
@@ -220,8 +206,7 @@ object Editing {
   }
   object MediaClip {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audioEffectDefinitions: IVector[IAudioEffectDefinition],
       embeddedAudioTracks: IVectorView[EmbeddedAudioTrack],
       endTimeInComposition: Double,
@@ -240,47 +225,33 @@ object Editing {
       __obj.asInstanceOf[MediaClip]
     }
     
-    @scala.inline
-    implicit class MediaClipMutableBuilder[Self <: MediaClip] (val x: Self) extends AnyVal {
+    extension [Self <: MediaClip](x: Self) {
       
-      @scala.inline
-      def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
+      inline def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbeddedAudioTracks(value: IVectorView[EmbeddedAudioTrack]): Self = StObject.set(x, "embeddedAudioTracks", value.asInstanceOf[js.Any])
+      inline def setEmbeddedAudioTracks(value: IVectorView[EmbeddedAudioTrack]): Self = StObject.set(x, "embeddedAudioTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeInComposition(value: Double): Self = StObject.set(x, "endTimeInComposition", value.asInstanceOf[js.Any])
+      inline def setEndTimeInComposition(value: Double): Self = StObject.set(x, "endTimeInComposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetVideoEncodingProperties(value: () => VideoEncodingProperties): Self = StObject.set(x, "getVideoEncodingProperties", js.Any.fromFunction0(value))
+      inline def setGetVideoEncodingProperties(value: () => VideoEncodingProperties): Self = StObject.set(x, "getVideoEncodingProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOriginalDuration(value: Double): Self = StObject.set(x, "originalDuration", value.asInstanceOf[js.Any])
+      inline def setOriginalDuration(value: Double): Self = StObject.set(x, "originalDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedEmbeddedAudioTrackIndex(value: Double): Self = StObject.set(x, "selectedEmbeddedAudioTrackIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedEmbeddedAudioTrackIndex(value: Double): Self = StObject.set(x, "selectedEmbeddedAudioTrackIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeInComposition(value: Double): Self = StObject.set(x, "startTimeInComposition", value.asInstanceOf[js.Any])
+      inline def setStartTimeInComposition(value: Double): Self = StObject.set(x, "startTimeInComposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimTimeFromEnd(value: Double): Self = StObject.set(x, "trimTimeFromEnd", value.asInstanceOf[js.Any])
+      inline def setTrimTimeFromEnd(value: Double): Self = StObject.set(x, "trimTimeFromEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimTimeFromStart(value: Double): Self = StObject.set(x, "trimTimeFromStart", value.asInstanceOf[js.Any])
+      inline def setTrimTimeFromStart(value: Double): Self = StObject.set(x, "trimTimeFromStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimmedDuration(value: Double): Self = StObject.set(x, "trimmedDuration", value.asInstanceOf[js.Any])
+      inline def setTrimmedDuration(value: Double): Self = StObject.set(x, "trimmedDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: IMap[String, String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: IMap[String, String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoEffectDefinitions(value: IVector[IVideoEffectDefinition]): Self = StObject.set(x, "videoEffectDefinitions", value.asInstanceOf[js.Any])
+      inline def setVideoEffectDefinitions(value: IVector[IVideoEffectDefinition]): Self = StObject.set(x, "videoEffectDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     }
   }
   
@@ -413,29 +384,22 @@ object Editing {
   }
   object MediaOverlay {
     
-    @scala.inline
-    def apply(audioEnabled: Boolean, clip: MediaClip, delay: Double, opacity: Double, position: Rect): MediaOverlay = {
+    inline def apply(audioEnabled: Boolean, clip: MediaClip, delay: Double, opacity: Double, position: Rect): MediaOverlay = {
       val __obj = js.Dynamic.literal(audioEnabled = audioEnabled.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaOverlay]
     }
     
-    @scala.inline
-    implicit class MediaOverlayMutableBuilder[Self <: MediaOverlay] (val x: Self) extends AnyVal {
+    extension [Self <: MediaOverlay](x: Self) {
       
-      @scala.inline
-      def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
+      inline def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClip(value: MediaClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: MediaClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Rect): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Rect): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -450,20 +414,16 @@ object Editing {
   }
   object MediaOverlayLayer {
     
-    @scala.inline
-    def apply(customCompositorDefinition: IVideoCompositorDefinition, overlays: IVector[MediaOverlay]): MediaOverlayLayer = {
+    inline def apply(customCompositorDefinition: IVideoCompositorDefinition, overlays: IVector[MediaOverlay]): MediaOverlayLayer = {
       val __obj = js.Dynamic.literal(customCompositorDefinition = customCompositorDefinition.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaOverlayLayer]
     }
     
-    @scala.inline
-    implicit class MediaOverlayLayerMutableBuilder[Self <: MediaOverlayLayer] (val x: Self) extends AnyVal {
+    extension [Self <: MediaOverlayLayer](x: Self) {
       
-      @scala.inline
-      def setCustomCompositorDefinition(value: IVideoCompositorDefinition): Self = StObject.set(x, "customCompositorDefinition", value.asInstanceOf[js.Any])
+      inline def setCustomCompositorDefinition(value: IVideoCompositorDefinition): Self = StObject.set(x, "customCompositorDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlays(value: IVector[MediaOverlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+      inline def setOverlays(value: IVector[MediaOverlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     }
   }
 }

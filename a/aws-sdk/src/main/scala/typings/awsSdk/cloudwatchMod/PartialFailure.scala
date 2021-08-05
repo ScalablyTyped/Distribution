@@ -28,37 +28,27 @@ trait PartialFailure extends StObject {
 }
 object PartialFailure {
   
-  @scala.inline
-  def apply(): PartialFailure = {
+  inline def apply(): PartialFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFailure]
   }
   
-  @scala.inline
-  implicit class PartialFailureMutableBuilder[Self <: PartialFailure] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFailure](x: Self) {
     
-    @scala.inline
-    def setExceptionType(value: ExceptionType): Self = StObject.set(x, "ExceptionType", value.asInstanceOf[js.Any])
+    inline def setExceptionType(value: ExceptionType): Self = StObject.set(x, "ExceptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionTypeUndefined: Self = StObject.set(x, "ExceptionType", js.undefined)
+    inline def setExceptionTypeUndefined: Self = StObject.set(x, "ExceptionType", js.undefined)
     
-    @scala.inline
-    def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
-    @scala.inline
-    def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
+    inline def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     
-    @scala.inline
-    def setFailureResource(value: FailureResource): Self = StObject.set(x, "FailureResource", value.asInstanceOf[js.Any])
+    inline def setFailureResource(value: FailureResource): Self = StObject.set(x, "FailureResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureResourceUndefined: Self = StObject.set(x, "FailureResource", js.undefined)
+    inline def setFailureResourceUndefined: Self = StObject.set(x, "FailureResource", js.undefined)
   }
 }

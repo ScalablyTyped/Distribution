@@ -31,23 +31,23 @@ object resizeGroupBaseMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MResizeGroupBase(nextProps: IResizeGroupProps): Unit = js.native
     
-    var _afterComponentRendered: js.Any = js.native
+    /* private */ var _afterComponentRendered: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _hasRenderedContent: js.Any = js.native
+    /* private */ var _hasRenderedContent: js.Any = js.native
     
-    var _initialHiddenDiv: js.Any = js.native
+    /* private */ var _initialHiddenDiv: js.Any = js.native
     
-    var _nextResizeGroupStateProvider: js.Any = js.native
+    /* private */ var _nextResizeGroupStateProvider: js.Any = js.native
     
-    var _onResize: js.Any = js.native
+    /* private */ var _onResize: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _updateHiddenDiv: js.Any = js.native
+    /* private */ var _updateHiddenDiv: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MResizeGroupBase(): Unit = js.native
@@ -61,13 +61,10 @@ object resizeGroupBaseMod {
     def remeasure(): Unit = js.native
   }
   
-  @scala.inline
-  def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]
+  inline def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]
   
-  @scala.inline
-  def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[GetInitialResizeGroupState]
-  @scala.inline
-  def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[GetInitialResizeGroupState]
+  inline def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[GetInitialResizeGroupState]
+  inline def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[GetInitialResizeGroupState]
   
   trait IResizeGroupState extends StObject {
     
@@ -98,38 +95,28 @@ object resizeGroupBaseMod {
   }
   object IResizeGroupState {
     
-    @scala.inline
-    def apply(): IResizeGroupState = {
+    inline def apply(): IResizeGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IResizeGroupState]
     }
     
-    @scala.inline
-    implicit class IResizeGroupStateMutableBuilder[Self <: IResizeGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeGroupState](x: Self) {
       
-      @scala.inline
-      def setDataToMeasure(value: js.Any): Self = StObject.set(x, "dataToMeasure", value.asInstanceOf[js.Any])
+      inline def setDataToMeasure(value: js.Any): Self = StObject.set(x, "dataToMeasure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataToMeasureUndefined: Self = StObject.set(x, "dataToMeasure", js.undefined)
+      inline def setDataToMeasureUndefined: Self = StObject.set(x, "dataToMeasure", js.undefined)
       
-      @scala.inline
-      def setMeasureContainer(value: Boolean): Self = StObject.set(x, "measureContainer", value.asInstanceOf[js.Any])
+      inline def setMeasureContainer(value: Boolean): Self = StObject.set(x, "measureContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasureContainerUndefined: Self = StObject.set(x, "measureContainer", js.undefined)
+      inline def setMeasureContainerUndefined: Self = StObject.set(x, "measureContainer", js.undefined)
       
-      @scala.inline
-      def setRenderedData(value: js.Any): Self = StObject.set(x, "renderedData", value.asInstanceOf[js.Any])
+      inline def setRenderedData(value: js.Any): Self = StObject.set(x, "renderedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedDataUndefined: Self = StObject.set(x, "renderedData", js.undefined)
+      inline def setRenderedDataUndefined: Self = StObject.set(x, "renderedData", js.undefined)
       
-      @scala.inline
-      def setResizeDirection(value: grow | shrink): Self = StObject.set(x, "resizeDirection", value.asInstanceOf[js.Any])
+      inline def setResizeDirection(value: grow | shrink): Self = StObject.set(x, "resizeDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeDirectionUndefined: Self = StObject.set(x, "resizeDirection", js.undefined)
+      inline def setResizeDirectionUndefined: Self = StObject.set(x, "resizeDirection", js.undefined)
     }
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PositioningStrategy extends StObject
 object PositioningStrategy {
   
-  @scala.inline
-  def absolute: typings.popperjsCore.popperjsCoreStrings.absolute = "absolute".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.absolute]
+  inline def absolute: typings.popperjsCore.popperjsCoreStrings.absolute = "absolute".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.absolute]
   
-  @scala.inline
-  def fixed: typings.popperjsCore.popperjsCoreStrings.fixed = "fixed".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.fixed]
+  inline def fixed: typings.popperjsCore.popperjsCoreStrings.fixed = "fixed".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.fixed]
 }

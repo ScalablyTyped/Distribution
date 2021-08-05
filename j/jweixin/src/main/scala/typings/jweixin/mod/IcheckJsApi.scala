@@ -19,22 +19,17 @@ trait IcheckJsApi
 }
 object IcheckJsApi {
   
-  @scala.inline
-  def apply(jsApiList: jsApiList, success: CheckResult => Unit): IcheckJsApi = {
+  inline def apply(jsApiList: jsApiList, success: CheckResult => Unit): IcheckJsApi = {
     val __obj = js.Dynamic.literal(jsApiList = jsApiList.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IcheckJsApi]
   }
   
-  @scala.inline
-  implicit class IcheckJsApiMutableBuilder[Self <: IcheckJsApi] (val x: Self) extends AnyVal {
+  extension [Self <: IcheckJsApi](x: Self) {
     
-    @scala.inline
-    def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
+    inline def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
+    inline def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: CheckResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: CheckResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

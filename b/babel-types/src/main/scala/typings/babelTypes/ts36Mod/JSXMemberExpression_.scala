@@ -20,8 +20,7 @@ trait JSXMemberExpression_
 }
 object JSXMemberExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     `object`: JSXMemberExpression_ | JSXIdentifier_,
@@ -34,16 +33,12 @@ object JSXMemberExpression_ {
     __obj.asInstanceOf[JSXMemberExpression_]
   }
   
-  @scala.inline
-  implicit class JSXMemberExpression_MutableBuilder[Self <: JSXMemberExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXMemberExpression_](x: Self) {
     
-    @scala.inline
-    def setObject(value: JSXMemberExpression_ | JSXIdentifier_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: JSXMemberExpression_ | JSXIdentifier_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: JSXIdentifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: JSXIdentifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: JSXMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

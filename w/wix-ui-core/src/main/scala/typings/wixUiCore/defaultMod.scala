@@ -10,8 +10,7 @@ object defaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avatar(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("avatar")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def avatar(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("avatar")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("wix-ui-core/dist/src/themes/default", "defaultTheme")
   @js.native

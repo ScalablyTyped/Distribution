@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "DayOfWeek")
 @js.native
-class DayOfWeek protected () extends Temporal {
+/* private */ class DayOfWeek () extends Temporal {
   
   def adjustInto(temporal: TemporalAdjuster): this.type = js.native
   
@@ -40,64 +40,53 @@ object DayOfWeek {
   @JSImport("js-joda", "DayOfWeek.FRIDAY")
   @js.native
   def FRIDAY: DayOfWeek = js.native
-  @scala.inline
-  def FRIDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRIDAY")(x.asInstanceOf[js.Any])
+  inline def FRIDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRIDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "DayOfWeek.MONDAY")
   @js.native
   def MONDAY: DayOfWeek = js.native
-  @scala.inline
-  def MONDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONDAY")(x.asInstanceOf[js.Any])
+  inline def MONDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "DayOfWeek.SATURDAY")
   @js.native
   def SATURDAY: DayOfWeek = js.native
-  @scala.inline
-  def SATURDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SATURDAY")(x.asInstanceOf[js.Any])
+  inline def SATURDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SATURDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "DayOfWeek.SUNDAY")
   @js.native
   def SUNDAY: DayOfWeek = js.native
-  @scala.inline
-  def SUNDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUNDAY")(x.asInstanceOf[js.Any])
+  inline def SUNDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUNDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "DayOfWeek.THURSDAY")
   @js.native
   def THURSDAY: DayOfWeek = js.native
-  @scala.inline
-  def THURSDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THURSDAY")(x.asInstanceOf[js.Any])
+  inline def THURSDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THURSDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "DayOfWeek.TUESDAY")
   @js.native
   def TUESDAY: DayOfWeek = js.native
-  @scala.inline
-  def TUESDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TUESDAY")(x.asInstanceOf[js.Any])
+  inline def TUESDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TUESDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "DayOfWeek.WEDNESDAY")
   @js.native
   def WEDNESDAY: DayOfWeek = js.native
-  @scala.inline
-  def WEDNESDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEDNESDAY")(x.asInstanceOf[js.Any])
+  inline def WEDNESDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEDNESDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def from(temporal: TemporalAccessor): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
+  inline def from(temporal: TemporalAccessor): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
   
   /* static member */
-  @scala.inline
-  def of(dayOfWeek: Double): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
+  inline def of(dayOfWeek: Double): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
   
   /* static member */
-  @scala.inline
-  def valueOf_(name: String): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(name.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
+  inline def valueOf_(name: String): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(name.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
   
   /* static member */
-  @scala.inline
-  def values(): js.Array[DayOfWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Array[DayOfWeek]]
+  inline def values(): js.Array[DayOfWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Array[DayOfWeek]]
 }

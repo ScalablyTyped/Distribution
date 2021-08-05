@@ -13,16 +13,13 @@ trait DeleteDBInstanceAutomatedBackupMessage extends StObject {
 }
 object DeleteDBInstanceAutomatedBackupMessage {
   
-  @scala.inline
-  def apply(DbiResourceId: String): DeleteDBInstanceAutomatedBackupMessage = {
+  inline def apply(DbiResourceId: String): DeleteDBInstanceAutomatedBackupMessage = {
     val __obj = js.Dynamic.literal(DbiResourceId = DbiResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBInstanceAutomatedBackupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBInstanceAutomatedBackupMessageMutableBuilder[Self <: DeleteDBInstanceAutomatedBackupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBInstanceAutomatedBackupMessage](x: Self) {
     
-    @scala.inline
-    def setDbiResourceId(value: String): Self = StObject.set(x, "DbiResourceId", value.asInstanceOf[js.Any])
+    inline def setDbiResourceId(value: String): Self = StObject.set(x, "DbiResourceId", value.asInstanceOf[js.Any])
   }
 }

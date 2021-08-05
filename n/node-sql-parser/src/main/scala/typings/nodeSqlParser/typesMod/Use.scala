@@ -15,20 +15,16 @@ trait Use
 }
 object Use {
   
-  @scala.inline
-  def apply(db: String): Use = {
+  inline def apply(db: String): Use = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("use")
     __obj.asInstanceOf[Use]
   }
   
-  @scala.inline
-  implicit class UseMutableBuilder[Self <: Use] (val x: Self) extends AnyVal {
+  extension [Self <: Use](x: Self) {
     
-    @scala.inline
-    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: use): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: use): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

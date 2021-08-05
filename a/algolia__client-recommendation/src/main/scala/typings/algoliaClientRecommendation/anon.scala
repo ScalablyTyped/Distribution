@@ -18,23 +18,18 @@ object anon {
   }
   object EventName {
     
-    @scala.inline
-    def apply(eventName: String, eventType: String, score: Double): EventName = {
+    inline def apply(eventName: String, eventType: String, score: Double): EventName = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventName]
     }
     
-    @scala.inline
-    implicit class EventNameMutableBuilder[Self <: EventName] (val x: Self) extends AnyVal {
+    extension [Self <: EventName](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,23 +43,18 @@ object anon {
   }
   object EventType {
     
-    @scala.inline
-    def apply(eventName: String, eventType: String, score: Double): EventType = {
+    inline def apply(eventName: String, eventType: String, score: Double): EventType = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventType]
     }
     
-    @scala.inline
-    implicit class EventTypeMutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
+    extension [Self <: EventType](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,20 +66,16 @@ object anon {
   }
   object FacetName {
     
-    @scala.inline
-    def apply(facetName: String, score: Double): FacetName = {
+    inline def apply(facetName: String, score: Double): FacetName = {
       val __obj = js.Dynamic.literal(facetName = facetName.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[FacetName]
     }
     
-    @scala.inline
-    implicit class FacetNameMutableBuilder[Self <: FacetName] (val x: Self) extends AnyVal {
+    extension [Self <: FacetName](x: Self) {
       
-      @scala.inline
-      def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
+      inline def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +90,7 @@ object anon {
   }
   object ReadonlyPromiseGetPersona {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[GetPersonalizationStrategyResponse | js.Any],
       `finally`: () => js.Promise[GetPersonalizationStrategyResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -117,17 +102,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseGetPersona]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseGetPersonaMutableBuilder[Self <: ReadonlyPromiseGetPersona] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseGetPersona](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[GetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[GetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[GetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[GetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -142,8 +123,7 @@ object anon {
   }
   object ReadonlyPromiseSetPersona {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[SetPersonalizationStrategyResponse | js.Any],
       `finally`: () => js.Promise[SetPersonalizationStrategyResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -155,17 +135,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseSetPersona]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseSetPersonaMutableBuilder[Self <: ReadonlyPromiseSetPersona] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseSetPersona](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[SetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[SetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -177,20 +153,16 @@ object anon {
   }
   object Score {
     
-    @scala.inline
-    def apply(facetName: String, score: Double): Score = {
+    inline def apply(facetName: String, score: Double): Score = {
       val __obj = js.Dynamic.literal(facetName = facetName.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[Score]
     }
     
-    @scala.inline
-    implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+    extension [Self <: Score](x: Self) {
       
-      @scala.inline
-      def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
+      inline def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
 }

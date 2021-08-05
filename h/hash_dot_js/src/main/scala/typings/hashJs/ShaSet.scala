@@ -28,8 +28,7 @@ trait ShaSet extends StObject {
 }
 object ShaSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sha1: () => Sha1,
     sha224: () => Sha224,
     sha256: () => Sha256,
@@ -40,22 +39,16 @@ object ShaSet {
     __obj.asInstanceOf[ShaSet]
   }
   
-  @scala.inline
-  implicit class ShaSetMutableBuilder[Self <: ShaSet] (val x: Self) extends AnyVal {
+  extension [Self <: ShaSet](x: Self) {
     
-    @scala.inline
-    def setSha1(value: () => Sha1): Self = StObject.set(x, "sha1", js.Any.fromFunction0(value))
+    inline def setSha1(value: () => Sha1): Self = StObject.set(x, "sha1", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha224(value: () => Sha224): Self = StObject.set(x, "sha224", js.Any.fromFunction0(value))
+    inline def setSha224(value: () => Sha224): Self = StObject.set(x, "sha224", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha256(value: () => Sha256): Self = StObject.set(x, "sha256", js.Any.fromFunction0(value))
+    inline def setSha256(value: () => Sha256): Self = StObject.set(x, "sha256", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha384(value: () => Sha384): Self = StObject.set(x, "sha384", js.Any.fromFunction0(value))
+    inline def setSha384(value: () => Sha384): Self = StObject.set(x, "sha384", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha512(value: () => Sha512): Self = StObject.set(x, "sha512", js.Any.fromFunction0(value))
+    inline def setSha512(value: () => Sha512): Self = StObject.set(x, "sha512", js.Any.fromFunction0(value))
   }
 }

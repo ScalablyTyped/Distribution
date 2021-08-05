@@ -74,8 +74,7 @@ object inspection {
   }
   object DefaultFormComponentInspectorModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       HandlerFactories: SafeArray[js.Any],
       HasHelpSection: Boolean,
       IsReadOnly: Boolean,
@@ -90,14 +89,11 @@ object inspection {
       __obj.asInstanceOf[DefaultFormComponentInspectorModel]
     }
     
-    @scala.inline
-    implicit class DefaultFormComponentInspectorModelMutableBuilder[Self <: DefaultFormComponentInspectorModel] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultFormComponentInspectorModel](x: Self) {
       
-      @scala.inline
-      def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+      inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateWithHelpSection(value: (Double, Double) => Unit): Self = StObject.set(x, "createWithHelpSection", js.Any.fromFunction2(value))
+      inline def setCreateWithHelpSection(value: (Double, Double) => Unit): Self = StObject.set(x, "createWithHelpSection", js.Any.fromFunction2(value))
     }
   }
   

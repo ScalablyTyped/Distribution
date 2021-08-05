@@ -237,7 +237,7 @@ object entityManagerEntityManagerMod {
     /**
       * Plain to object transformer used in create and merge operations.
       */
-    var plainObjectToEntityTransformer: PlainObjectToNewEntityTransformer = js.native
+    /* protected */ var plainObjectToEntityTransformer: PlainObjectToNewEntityTransformer = js.native
     
     /**
       * Creates a new entity from the given plain javascript object. If entity already exist in the database, then
@@ -311,7 +311,7 @@ object entityManagerEntityManagerMod {
     /**
       * Once created and then reused by en repositories.
       */
-    var repositories: js.Array[Repository[js.Any]] = js.native
+    /* protected */ var repositories: js.Array[Repository[js.Any]] = js.native
     
     /**
       * Restores entities by a given condition(s).

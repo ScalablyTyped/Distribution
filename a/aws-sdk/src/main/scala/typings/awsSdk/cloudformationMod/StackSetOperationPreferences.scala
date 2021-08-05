@@ -33,46 +33,33 @@ trait StackSetOperationPreferences extends StObject {
 }
 object StackSetOperationPreferences {
   
-  @scala.inline
-  def apply(): StackSetOperationPreferences = {
+  inline def apply(): StackSetOperationPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackSetOperationPreferences]
   }
   
-  @scala.inline
-  implicit class StackSetOperationPreferencesMutableBuilder[Self <: StackSetOperationPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: StackSetOperationPreferences](x: Self) {
     
-    @scala.inline
-    def setFailureToleranceCount(value: FailureToleranceCount): Self = StObject.set(x, "FailureToleranceCount", value.asInstanceOf[js.Any])
+    inline def setFailureToleranceCount(value: FailureToleranceCount): Self = StObject.set(x, "FailureToleranceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureToleranceCountUndefined: Self = StObject.set(x, "FailureToleranceCount", js.undefined)
+    inline def setFailureToleranceCountUndefined: Self = StObject.set(x, "FailureToleranceCount", js.undefined)
     
-    @scala.inline
-    def setFailureTolerancePercentage(value: FailureTolerancePercentage): Self = StObject.set(x, "FailureTolerancePercentage", value.asInstanceOf[js.Any])
+    inline def setFailureTolerancePercentage(value: FailureTolerancePercentage): Self = StObject.set(x, "FailureTolerancePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureTolerancePercentageUndefined: Self = StObject.set(x, "FailureTolerancePercentage", js.undefined)
+    inline def setFailureTolerancePercentageUndefined: Self = StObject.set(x, "FailureTolerancePercentage", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentCount(value: MaxConcurrentCount): Self = StObject.set(x, "MaxConcurrentCount", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentCount(value: MaxConcurrentCount): Self = StObject.set(x, "MaxConcurrentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentCountUndefined: Self = StObject.set(x, "MaxConcurrentCount", js.undefined)
+    inline def setMaxConcurrentCountUndefined: Self = StObject.set(x, "MaxConcurrentCount", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentPercentage(value: MaxConcurrentPercentage): Self = StObject.set(x, "MaxConcurrentPercentage", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentPercentage(value: MaxConcurrentPercentage): Self = StObject.set(x, "MaxConcurrentPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentPercentageUndefined: Self = StObject.set(x, "MaxConcurrentPercentage", js.undefined)
+    inline def setMaxConcurrentPercentageUndefined: Self = StObject.set(x, "MaxConcurrentPercentage", js.undefined)
     
-    @scala.inline
-    def setRegionOrder(value: RegionList): Self = StObject.set(x, "RegionOrder", value.asInstanceOf[js.Any])
+    inline def setRegionOrder(value: RegionList): Self = StObject.set(x, "RegionOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionOrderUndefined: Self = StObject.set(x, "RegionOrder", js.undefined)
+    inline def setRegionOrderUndefined: Self = StObject.set(x, "RegionOrder", js.undefined)
     
-    @scala.inline
-    def setRegionOrderVarargs(value: Region*): Self = StObject.set(x, "RegionOrder", js.Array(value :_*))
+    inline def setRegionOrderVarargs(value: Region*): Self = StObject.set(x, "RegionOrder", js.Array(value :_*))
   }
 }

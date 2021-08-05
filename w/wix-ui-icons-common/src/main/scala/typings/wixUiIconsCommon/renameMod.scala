@@ -22,20 +22,16 @@ object renameMod extends Shortcut {
   }
   object RenameProps {
     
-    @scala.inline
-    def apply(): RenameProps = {
+    inline def apply(): RenameProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenameProps]
     }
     
-    @scala.inline
-    implicit class RenamePropsMutableBuilder[Self <: RenameProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenameProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -24,28 +24,21 @@ trait SchemaListPipelinesResponse extends StObject {
 }
 object SchemaListPipelinesResponse {
   
-  @scala.inline
-  def apply(): SchemaListPipelinesResponse = {
+  inline def apply(): SchemaListPipelinesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPipelinesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListPipelinesResponseMutableBuilder[Self <: SchemaListPipelinesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListPipelinesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPipelines(value: js.Array[SchemaPipeline]): Self = StObject.set(x, "pipelines", value.asInstanceOf[js.Any])
+    inline def setPipelines(value: js.Array[SchemaPipeline]): Self = StObject.set(x, "pipelines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelinesUndefined: Self = StObject.set(x, "pipelines", js.undefined)
+    inline def setPipelinesUndefined: Self = StObject.set(x, "pipelines", js.undefined)
     
-    @scala.inline
-    def setPipelinesVarargs(value: SchemaPipeline*): Self = StObject.set(x, "pipelines", js.Array(value :_*))
+    inline def setPipelinesVarargs(value: SchemaPipeline*): Self = StObject.set(x, "pipelines", js.Array(value :_*))
   }
 }

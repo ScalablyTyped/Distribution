@@ -77,37 +77,31 @@ object mod {
     @JSImport("ua-parser-js", "UAParser.BROWSER")
     @js.native
     def BROWSER: typings.uaParserJs.IUAParser.BROWSER = js.native
-    @scala.inline
-    def BROWSER_=(x: BROWSER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BROWSER")(x.asInstanceOf[js.Any])
+    inline def BROWSER_=(x: BROWSER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BROWSER")(x.asInstanceOf[js.Any])
     
     @JSImport("ua-parser-js", "UAParser.CPU")
     @js.native
     def CPU: typings.uaParserJs.IUAParser.CPU = js.native
-    @scala.inline
-    def CPU_=(x: CPU): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CPU")(x.asInstanceOf[js.Any])
+    inline def CPU_=(x: CPU): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CPU")(x.asInstanceOf[js.Any])
     
     @JSImport("ua-parser-js", "UAParser.DEVICE")
     @js.native
     def DEVICE: typings.uaParserJs.IUAParser.DEVICE = js.native
-    @scala.inline
-    def DEVICE_=(x: DEVICE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE")(x.asInstanceOf[js.Any])
+    inline def DEVICE_=(x: DEVICE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE")(x.asInstanceOf[js.Any])
     
     @JSImport("ua-parser-js", "UAParser.ENGINE")
     @js.native
     def ENGINE: typings.uaParserJs.IUAParser.ENGINE = js.native
-    @scala.inline
-    def ENGINE_=(x: ENGINE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE")(x.asInstanceOf[js.Any])
+    inline def ENGINE_=(x: ENGINE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE")(x.asInstanceOf[js.Any])
     
     @JSImport("ua-parser-js", "UAParser.OS")
     @js.native
     def OS: typings.uaParserJs.IUAParser.OS = js.native
-    @scala.inline
-    def OS_=(x: OS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
+    inline def OS_=(x: OS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
     
     @JSImport("ua-parser-js", "UAParser.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

@@ -71,50 +71,36 @@ object totpMod {
     def verify(opts: Secret): Boolean = js.native
   }
   
-  @scala.inline
-  def totpCheck[T /* <: TOTPOptions_[js.Any] */](token: String, secret: SecretKey, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def totpCheck[T /* <: TOTPOptions_[js.Any] */](token: String, secret: SecretKey, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def totpCheckByEpoch[T /* <: TOTPOptions_[String] */](epochs: js.Array[Double], token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckByEpoch")(epochs.asInstanceOf[js.Any], token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+  inline def totpCheckByEpoch[T /* <: TOTPOptions_[String] */](epochs: js.Array[Double], token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckByEpoch")(epochs.asInstanceOf[js.Any], token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @scala.inline
-  def totpCheckWithWindow[T /* <: TOTPOptions_[String] */](token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+  inline def totpCheckWithWindow[T /* <: TOTPOptions_[String] */](token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @scala.inline
-  def totpCounter(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCounter")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def totpCounter(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCounter")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("@otplib/core/totp", "totpCreateHmacKey")
   @js.native
   val totpCreateHmacKey: CreateHmacKey[HexString] = js.native
   
-  @scala.inline
-  def totpDefaultOptions[T /* <: TOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("totpDefaultOptions")().asInstanceOf[Partial[T]]
+  inline def totpDefaultOptions[T /* <: TOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("totpDefaultOptions")().asInstanceOf[Partial[T]]
   
-  @scala.inline
-  def totpEpochAvailable(epoch: Double, step: Double, win: js.Tuple2[Double, Double]): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
-  @scala.inline
-  def totpEpochAvailable(epoch: Double, step: Double, win: Double): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
+  inline def totpEpochAvailable(epoch: Double, step: Double, win: js.Tuple2[Double, Double]): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
+  inline def totpEpochAvailable(epoch: Double, step: Double, win: Double): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
   
-  @scala.inline
-  def totpKeyuri[T /* <: TOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def totpKeyuri[T /* <: TOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def totpOptions[T /* <: TOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def totpOptions[T /* <: TOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def totpOptionsValidator[T /* <: TOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def totpOptionsValidator[T /* <: TOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def totpPadSecret(secret: String, encoding: KeyEncodings, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpPadSecret")(secret.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def totpPadSecret(secret: String, encoding: KeyEncodings, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpPadSecret")(secret.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def totpTimeRemaining(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeRemaining")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def totpTimeRemaining(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeRemaining")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def totpTimeUsed(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeUsed")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def totpTimeUsed(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeUsed")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def totpToken[T /* <: TOTPOptions_[js.Any] */](secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def totpToken[T /* <: TOTPOptions_[js.Any] */](secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait EpochAvailable extends StObject {
     
@@ -126,29 +112,22 @@ object totpMod {
   }
   object EpochAvailable {
     
-    @scala.inline
-    def apply(current: Double, future: js.Array[Double], past: js.Array[Double]): EpochAvailable = {
+    inline def apply(current: Double, future: js.Array[Double], past: js.Array[Double]): EpochAvailable = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any])
       __obj.asInstanceOf[EpochAvailable]
     }
     
-    @scala.inline
-    implicit class EpochAvailableMutableBuilder[Self <: EpochAvailable] (val x: Self) extends AnyVal {
+    extension [Self <: EpochAvailable](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuture(value: js.Array[Double]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      inline def setFuture(value: js.Array[Double]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFutureVarargs(value: Double*): Self = StObject.set(x, "future", js.Array(value :_*))
+      inline def setFutureVarargs(value: Double*): Self = StObject.set(x, "future", js.Array(value :_*))
       
-      @scala.inline
-      def setPast(value: js.Array[Double]): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
+      inline def setPast(value: js.Array[Double]): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastVarargs(value: Double*): Self = StObject.set(x, "past", js.Array(value :_*))
+      inline def setPastVarargs(value: Double*): Self = StObject.set(x, "past", js.Array(value :_*))
     }
   }
   
@@ -173,8 +152,7 @@ object totpMod {
   }
   object TOTPOptions_ {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       algorithm: HashAlgorithms,
       createDigest: (/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString) => T,
       createHmacKey: (/* algorithm */ HashAlgorithms, /* secret */ SecretKey, /* encoding */ KeyEncodings) => T,
@@ -188,17 +166,13 @@ object totpMod {
       __obj.asInstanceOf[TOTPOptions_[T]]
     }
     
-    @scala.inline
-    implicit class TOTPOptions_MutableBuilder[Self <: TOTPOptions_[?], T] (val x: Self & TOTPOptions_[T]) extends AnyVal {
+    extension [Self <: TOTPOptions_[?], T](x: Self & TOTPOptions_[T]) {
       
-      @scala.inline
-      def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+      inline def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindow(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
 }

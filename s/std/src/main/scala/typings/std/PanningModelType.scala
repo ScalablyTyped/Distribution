@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PanningModelType extends StObject
 object PanningModelType {
   
-  @scala.inline
-  def HRTF: typings.std.stdStrings.HRTF = "HRTF".asInstanceOf[typings.std.stdStrings.HRTF]
+  inline def HRTF: typings.std.stdStrings.HRTF = "HRTF".asInstanceOf[typings.std.stdStrings.HRTF]
   
-  @scala.inline
-  def equalpower: typings.std.stdStrings.equalpower = "equalpower".asInstanceOf[typings.std.stdStrings.equalpower]
+  inline def equalpower: typings.std.stdStrings.equalpower = "equalpower".asInstanceOf[typings.std.stdStrings.equalpower]
 }

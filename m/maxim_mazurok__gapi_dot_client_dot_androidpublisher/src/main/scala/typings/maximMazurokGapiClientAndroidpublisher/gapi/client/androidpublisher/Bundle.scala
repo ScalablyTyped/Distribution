@@ -17,31 +17,23 @@ trait Bundle extends StObject {
 }
 object Bundle {
   
-  @scala.inline
-  def apply(): Bundle = {
+  inline def apply(): Bundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bundle]
   }
   
-  @scala.inline
-  implicit class BundleMutableBuilder[Self <: Bundle] (val x: Self) extends AnyVal {
+  extension [Self <: Bundle](x: Self) {
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
+    inline def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
   }
 }

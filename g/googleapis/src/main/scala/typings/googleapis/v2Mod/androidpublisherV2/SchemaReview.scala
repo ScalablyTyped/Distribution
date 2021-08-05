@@ -23,34 +23,25 @@ trait SchemaReview extends StObject {
 }
 object SchemaReview {
   
-  @scala.inline
-  def apply(): SchemaReview = {
+  inline def apply(): SchemaReview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReview]
   }
   
-  @scala.inline
-  implicit class SchemaReviewMutableBuilder[Self <: SchemaReview] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReview](x: Self) {
     
-    @scala.inline
-    def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
+    inline def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
+    inline def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
     
-    @scala.inline
-    def setComments(value: js.Array[SchemaComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[SchemaComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: SchemaComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: SchemaComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setReviewId(value: String): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
+    inline def setReviewId(value: String): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewIdUndefined: Self = StObject.set(x, "reviewId", js.undefined)
+    inline def setReviewIdUndefined: Self = StObject.set(x, "reviewId", js.undefined)
   }
 }

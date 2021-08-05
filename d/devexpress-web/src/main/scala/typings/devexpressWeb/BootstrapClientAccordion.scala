@@ -25,8 +25,7 @@ trait BootstrapClientAccordion
 }
 object BootstrapClientAccordion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]],
@@ -64,13 +63,10 @@ object BootstrapClientAccordion {
     __obj.asInstanceOf[BootstrapClientAccordion]
   }
   
-  @scala.inline
-  implicit class BootstrapClientAccordionMutableBuilder[Self <: BootstrapClientAccordion] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientAccordion](x: Self) {
     
-    @scala.inline
-    def setSetActiveGroup(value: BootstrapClientAccordionGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
+    inline def setSetActiveGroup(value: BootstrapClientAccordionGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectedItem(value: BootstrapClientAccordionItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
+    inline def setSetSelectedItem(value: BootstrapClientAccordionItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

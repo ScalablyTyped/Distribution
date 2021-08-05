@@ -22,32 +22,24 @@ trait TargetType
 }
 object TargetType {
   
-  @scala.inline
-  def apply(payload: Count): TargetType = {
+  inline def apply(payload: Count): TargetType = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("POP")
     __obj.asInstanceOf[TargetType]
   }
   
-  @scala.inline
-  implicit class TargetTypeMutableBuilder[Self <: TargetType] (val x: Self) extends AnyVal {
+  extension [Self <: TargetType](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Count): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Count): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: POP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: POP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

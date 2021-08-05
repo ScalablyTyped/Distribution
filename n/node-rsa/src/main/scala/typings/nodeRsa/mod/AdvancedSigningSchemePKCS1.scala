@@ -15,19 +15,15 @@ trait AdvancedSigningSchemePKCS1
 }
 object AdvancedSigningSchemePKCS1 {
   
-  @scala.inline
-  def apply(hash: HashingAlgorithm): AdvancedSigningSchemePKCS1 = {
+  inline def apply(hash: HashingAlgorithm): AdvancedSigningSchemePKCS1 = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = "pkcs1")
     __obj.asInstanceOf[AdvancedSigningSchemePKCS1]
   }
   
-  @scala.inline
-  implicit class AdvancedSigningSchemePKCS1MutableBuilder[Self <: AdvancedSigningSchemePKCS1] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedSigningSchemePKCS1](x: Self) {
     
-    @scala.inline
-    def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: pkcs1): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: pkcs1): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

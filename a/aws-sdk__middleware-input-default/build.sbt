@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__middleware-input-default"
-version := "0.1.0-preview.1-0a1e68"
+version := "0.1.0-preview.1-ab6c83"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

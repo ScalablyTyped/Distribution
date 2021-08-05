@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSearchScope extends StObject
 object OlSearchScope {
   
-  @scala.inline
-  def olSearchScopeAllFolders: `1` = 1.asInstanceOf[`1`]
+  inline def olSearchScopeAllFolders: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olSearchScopeAllOutlookItems: `2` = 2.asInstanceOf[`2`]
+  inline def olSearchScopeAllOutlookItems: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olSearchScopeCurrentFolder: `0` = 0.asInstanceOf[`0`]
+  inline def olSearchScopeCurrentFolder: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olSearchScopeSubfolders: `3` = 3.asInstanceOf[`3`]
+  inline def olSearchScopeSubfolders: `3` = 3.asInstanceOf[`3`]
 }

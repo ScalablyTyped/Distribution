@@ -32,37 +32,27 @@ trait SchemaProductData extends StObject {
 }
 object SchemaProductData {
   
-  @scala.inline
-  def apply(): SchemaProductData = {
+  inline def apply(): SchemaProductData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductData]
   }
   
-  @scala.inline
-  implicit class SchemaProductDataMutableBuilder[Self <: SchemaProductData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductData](x: Self) {
     
-    @scala.inline
-    def setItemRevenue(value: Double): Self = StObject.set(x, "itemRevenue", value.asInstanceOf[js.Any])
+    inline def setItemRevenue(value: Double): Self = StObject.set(x, "itemRevenue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemRevenueUndefined: Self = StObject.set(x, "itemRevenue", js.undefined)
+    inline def setItemRevenueUndefined: Self = StObject.set(x, "itemRevenue", js.undefined)
     
-    @scala.inline
-    def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
-    @scala.inline
-    def setProductQuantity(value: String): Self = StObject.set(x, "productQuantity", value.asInstanceOf[js.Any])
+    inline def setProductQuantity(value: String): Self = StObject.set(x, "productQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductQuantityUndefined: Self = StObject.set(x, "productQuantity", js.undefined)
+    inline def setProductQuantityUndefined: Self = StObject.set(x, "productQuantity", js.undefined)
     
-    @scala.inline
-    def setProductSku(value: String): Self = StObject.set(x, "productSku", value.asInstanceOf[js.Any])
+    inline def setProductSku(value: String): Self = StObject.set(x, "productSku", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSkuUndefined: Self = StObject.set(x, "productSku", js.undefined)
+    inline def setProductSkuUndefined: Self = StObject.set(x, "productSku", js.undefined)
   }
 }

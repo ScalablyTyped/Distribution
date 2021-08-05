@@ -12,17 +12,14 @@ object anon {
   }
   object PropertyName {
     
-    @scala.inline
-    def apply(PropertyName: String): PropertyName = {
+    inline def apply(PropertyName: String): PropertyName = {
       val __obj = js.Dynamic.literal(PropertyName = PropertyName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyName]
     }
     
-    @scala.inline
-    implicit class PropertyNameMutableBuilder[Self <: PropertyName] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyName](x: Self) {
       
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
+      inline def setPropertyName(value: String): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
     }
   }
 }

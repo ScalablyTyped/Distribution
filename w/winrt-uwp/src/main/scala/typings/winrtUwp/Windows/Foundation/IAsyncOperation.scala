@@ -24,8 +24,7 @@ trait IAsyncOperation[TResult]
 }
 object IAsyncOperation {
   
-  @scala.inline
-  def apply[TResult](
+  inline def apply[TResult](
     cancel: () => Unit,
     close: () => Unit,
     completed: (/* asyncInfo */ IAsyncOperation[TResult], /* asyncStatus */ AsyncStatus) => Unit,
@@ -38,13 +37,10 @@ object IAsyncOperation {
     __obj.asInstanceOf[IAsyncOperation[TResult]]
   }
   
-  @scala.inline
-  implicit class IAsyncOperationMutableBuilder[Self <: IAsyncOperation[?], TResult] (val x: Self & IAsyncOperation[TResult]) extends AnyVal {
+  extension [Self <: IAsyncOperation[?], TResult](x: Self & IAsyncOperation[TResult]) {
     
-    @scala.inline
-    def setCompleted(value: (/* asyncInfo */ IAsyncOperation[TResult], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[TResult], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => TResult): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => TResult): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
   }
 }

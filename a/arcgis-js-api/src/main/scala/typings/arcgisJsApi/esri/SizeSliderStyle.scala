@@ -26,8 +26,7 @@ trait SizeSliderStyle
 }
 object SizeSliderStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -37,19 +36,14 @@ object SizeSliderStyle {
     __obj.asInstanceOf[SizeSliderStyle]
   }
   
-  @scala.inline
-  implicit class SizeSliderStyleMutableBuilder[Self <: SizeSliderStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSliderStyle](x: Self) {
     
-    @scala.inline
-    def setTrackBackgroundColor(value: Color_): Self = StObject.set(x, "trackBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setTrackBackgroundColor(value: Color_): Self = StObject.set(x, "trackBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackBackgroundColorUndefined: Self = StObject.set(x, "trackBackgroundColor", js.undefined)
+    inline def setTrackBackgroundColorUndefined: Self = StObject.set(x, "trackBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setTrackFillColor(value: Color_): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
+    inline def setTrackFillColor(value: Color_): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
+    inline def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
   }
 }

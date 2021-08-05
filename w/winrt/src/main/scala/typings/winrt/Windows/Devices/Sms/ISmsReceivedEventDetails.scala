@@ -12,19 +12,15 @@ trait ISmsReceivedEventDetails extends StObject {
 }
 object ISmsReceivedEventDetails {
   
-  @scala.inline
-  def apply(deviceId: String, messageIndex: Double): ISmsReceivedEventDetails = {
+  inline def apply(deviceId: String, messageIndex: Double): ISmsReceivedEventDetails = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], messageIndex = messageIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISmsReceivedEventDetails]
   }
   
-  @scala.inline
-  implicit class ISmsReceivedEventDetailsMutableBuilder[Self <: ISmsReceivedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsReceivedEventDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIndex(value: Double): Self = StObject.set(x, "messageIndex", value.asInstanceOf[js.Any])
+    inline def setMessageIndex(value: Double): Self = StObject.set(x, "messageIndex", value.asInstanceOf[js.Any])
   }
 }

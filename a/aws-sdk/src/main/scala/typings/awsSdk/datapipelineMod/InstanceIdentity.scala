@@ -18,25 +18,19 @@ trait InstanceIdentity extends StObject {
 }
 object InstanceIdentity {
   
-  @scala.inline
-  def apply(): InstanceIdentity = {
+  inline def apply(): InstanceIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceIdentity]
   }
   
-  @scala.inline
-  implicit class InstanceIdentityMutableBuilder[Self <: InstanceIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceIdentity](x: Self) {
     
-    @scala.inline
-    def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

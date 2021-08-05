@@ -23,22 +23,17 @@ trait WorkItemStateColor extends StObject {
 }
 object WorkItemStateColor {
   
-  @scala.inline
-  def apply(category: String, color: String, name: String): WorkItemStateColor = {
+  inline def apply(category: String, color: String, name: String): WorkItemStateColor = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemStateColor]
   }
   
-  @scala.inline
-  implicit class WorkItemStateColorMutableBuilder[Self <: WorkItemStateColor] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemStateColor](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

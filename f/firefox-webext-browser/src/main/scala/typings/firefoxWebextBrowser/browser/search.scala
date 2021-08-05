@@ -27,32 +27,24 @@ object search {
   }
   object SearchEngine {
     
-    @scala.inline
-    def apply(isDefault: Boolean, name: String): SearchEngine = {
+    inline def apply(isDefault: Boolean, name: String): SearchEngine = {
       val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchEngine]
     }
     
-    @scala.inline
-    implicit class SearchEngineMutableBuilder[Self <: SearchEngine] (val x: Self) extends AnyVal {
+    extension [Self <: SearchEngine](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
+      inline def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
+      inline def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,29 +61,22 @@ object search {
   }
   object SearchSearchProperties {
     
-    @scala.inline
-    def apply(query: String): SearchSearchProperties = {
+    inline def apply(query: String): SearchSearchProperties = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchSearchProperties]
     }
     
-    @scala.inline
-    implicit class SearchSearchPropertiesMutableBuilder[Self <: SearchSearchProperties] (val x: Self) extends AnyVal {
+    extension [Self <: SearchSearchProperties](x: Self) {
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
 }

@@ -10,28 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(source: String): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
-  @scala.inline
-  def apply(source: String, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: String, opts: ProbeOptions): js.Promise[ProbeResult] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProbeResult]]
+  inline def apply(source: String): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
+  inline def apply(source: String, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: String, opts: ProbeOptions): js.Promise[ProbeResult] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProbeResult]]
   /**
     * Get image size without full download. Supported image types: JPG, GIF, PNG, WebP, BMP, TIFF, SVG, PSD.
     */
-  @scala.inline
-  def apply(source: String, opts: ProbeOptions, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: ReadableStream): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
-  @scala.inline
-  def apply(source: ReadableStream, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: String, opts: ProbeOptions, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: ReadableStream): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
+  inline def apply(source: ReadableStream, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("probe-image-size", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(data: Buffer): ProbeResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(data.asInstanceOf[js.Any]).asInstanceOf[ProbeResult | Null]
+  inline def sync(data: Buffer): ProbeResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(data.asInstanceOf[js.Any]).asInstanceOf[ProbeResult | Null]
   
   type ProbeCallback = js.Function2[/* err */ ProbeError | Null, /* result */ ProbeResult, Unit]
   
@@ -45,26 +38,20 @@ object mod {
   }
   object ProbeError {
     
-    @scala.inline
-    def apply(message: String, name: String): ProbeError = {
+    inline def apply(message: String, name: String): ProbeError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProbeError]
     }
     
-    @scala.inline
-    implicit class ProbeErrorMutableBuilder[Self <: ProbeError] (val x: Self) extends AnyVal {
+    extension [Self <: ProbeError](x: Self) {
       
-      @scala.inline
-      def setCode(value: ECONTENT): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: ECONTENT): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -76,26 +63,20 @@ object mod {
   }
   object ProbeOptions {
     
-    @scala.inline
-    def apply(): ProbeOptions = {
+    inline def apply(): ProbeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProbeOptions]
     }
     
-    @scala.inline
-    implicit class ProbeOptionsMutableBuilder[Self <: ProbeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProbeOptions](x: Self) {
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -119,8 +100,7 @@ object mod {
   }
   object ProbeResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hUnits: String,
       height: Double,
       length: Double,
@@ -135,32 +115,23 @@ object mod {
       __obj.asInstanceOf[ProbeResult]
     }
     
-    @scala.inline
-    implicit class ProbeResultMutableBuilder[Self <: ProbeResult] (val x: Self) extends AnyVal {
+    extension [Self <: ProbeResult](x: Self) {
       
-      @scala.inline
-      def setHUnits(value: String): Self = StObject.set(x, "hUnits", value.asInstanceOf[js.Any])
+      inline def setHUnits(value: String): Self = StObject.set(x, "hUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWUnits(value: String): Self = StObject.set(x, "wUnits", value.asInstanceOf[js.Any])
+      inline def setWUnits(value: String): Self = StObject.set(x, "wUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

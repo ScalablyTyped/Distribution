@@ -73,8 +73,7 @@ trait Reservation extends StObject {
 }
 object Reservation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrencyCode: string,
     Duration: integer,
     DurationUnits: DurationUnits,
@@ -93,46 +92,32 @@ object Reservation {
     __obj.asInstanceOf[Reservation]
   }
   
-  @scala.inline
-  implicit class ReservationMutableBuilder[Self <: Reservation] (val x: Self) extends AnyVal {
+  extension [Self <: Reservation](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: string): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: string): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUnits(value: DurationUnits): Self = StObject.set(x, "DurationUnits", value.asInstanceOf[js.Any])
+    inline def setDurationUnits(value: DurationUnits): Self = StObject.set(x, "DurationUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: string): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: string): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
+    inline def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingDescription(value: string): Self = StObject.set(x, "OfferingDescription", value.asInstanceOf[js.Any])
+    inline def setOfferingDescription(value: string): Self = StObject.set(x, "OfferingDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricePerUnit(value: string): Self = StObject.set(x, "PricePerUnit", value.asInstanceOf[js.Any])
+    inline def setPricePerUnit(value: string): Self = StObject.set(x, "PricePerUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUnits(value: PriceUnits): Self = StObject.set(x, "PriceUnits", value.asInstanceOf[js.Any])
+    inline def setPriceUnits(value: PriceUnits): Self = StObject.set(x, "PriceUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationArn(value: string): Self = StObject.set(x, "ReservationArn", value.asInstanceOf[js.Any])
+    inline def setReservationArn(value: string): Self = StObject.set(x, "ReservationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationName(value: string): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
+    inline def setReservationName(value: string): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationState(value: ReservationState): Self = StObject.set(x, "ReservationState", value.asInstanceOf[js.Any])
+    inline def setReservationState(value: ReservationState): Self = StObject.set(x, "ReservationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceSpecification(value: ResourceSpecification): Self = StObject.set(x, "ResourceSpecification", value.asInstanceOf[js.Any])
+    inline def setResourceSpecification(value: ResourceSpecification): Self = StObject.set(x, "ResourceSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

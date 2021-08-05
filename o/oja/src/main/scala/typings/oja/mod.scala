@@ -112,26 +112,20 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(pending: js.Array[String], queue: js.Array[String]): State = {
+    inline def apply(pending: js.Array[String], queue: js.Array[String]): State = {
       val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setPending(value: js.Array[String]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: js.Array[String]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingVarargs(value: String*): Self = StObject.set(x, "pending", js.Array(value :_*))
+      inline def setPendingVarargs(value: String*): Self = StObject.set(x, "pending", js.Array(value :_*))
       
-      @scala.inline
-      def setQueue(value: js.Array[String]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: js.Array[String]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueVarargs(value: String*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: String*): Self = StObject.set(x, "queue", js.Array(value :_*))
     }
   }
 }

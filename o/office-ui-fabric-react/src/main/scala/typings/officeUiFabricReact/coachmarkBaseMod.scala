@@ -29,55 +29,55 @@ object coachmarkBaseMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MCoachmarkBase(newProps: ICoachmarkProps): Unit = js.native
     
-    var _addListeners: js.Any = js.native
+    /* private */ var _addListeners: js.Any = js.native
     
-    var _addProximityHandler: js.Any = js.native
+    /* private */ var _addProximityHandler: js.Any = js.native
     
-    var _ariaAlertContainer: js.Any = js.native
+    /* private */ var _ariaAlertContainer: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    val _beakDirection: js.Any = js.native
+    /* private */ val _beakDirection: js.Any = js.native
     
-    var _childrenContainer: js.Any = js.native
+    /* private */ var _childrenContainer: js.Any = js.native
     
-    var _dismissOnLostFocus: js.Any = js.native
+    /* private */ var _dismissOnLostFocus: js.Any = js.native
     
     /**
       * The cached HTMLElement reference to the Entity Inner Host
       * element.
       */
-    var _entityHost: js.Any = js.native
+    /* private */ var _entityHost: js.Any = js.native
     
-    var _entityInnerHostElement: js.Any = js.native
+    /* private */ var _entityInnerHostElement: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _getBounds: js.Any = js.native
+    /* private */ var _getBounds: js.Any = js.native
     
-    var _isInsideElement: js.Any = js.native
+    /* private */ var _isInsideElement: js.Any = js.native
     
-    var _onFocusHandler: js.Any = js.native
+    /* private */ var _onFocusHandler: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onPositioned: js.Any = js.native
+    /* private */ var _onPositioned: js.Any = js.native
     
-    var _openCoachmark: js.Any = js.native
+    /* private */ var _openCoachmark: js.Any = js.native
     
-    var _positioningContainer: js.Any = js.native
+    /* private */ var _positioningContainer: js.Any = js.native
     
-    var _setBeakPosition: js.Any = js.native
+    /* private */ var _setBeakPosition: js.Any = js.native
     
-    var _setTargetElementRect: js.Any = js.native
+    /* private */ var _setTargetElementRect: js.Any = js.native
     
     /**
       * The target element the mouse would be in
       * proximity to
       */
-    var _targetElementRect: js.Any = js.native
+    /* private */ var _targetElementRect: js.Any = js.native
     
-    var _translateAnimationContainer: js.Any = js.native
+    /* private */ var _translateAnimationContainer: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCoachmarkBase(): Unit = js.native
@@ -110,8 +110,7 @@ object coachmarkBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.base", "CoachmarkBase.defaultProps")
     @js.native
     def defaultProps: PartialICoachmarkProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialICoachmarkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialICoachmarkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ICoachmarkState extends StObject {
@@ -191,8 +190,7 @@ object coachmarkBaseMod {
   }
   object ICoachmarkState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entityInnerHostRect: IEntityRect,
       isBeaconAnimating: Boolean,
       isCollapsed: Boolean,
@@ -204,74 +202,51 @@ object coachmarkBaseMod {
       __obj.asInstanceOf[ICoachmarkState]
     }
     
-    @scala.inline
-    implicit class ICoachmarkStateMutableBuilder[Self <: ICoachmarkState] (val x: Self) extends AnyVal {
+    extension [Self <: ICoachmarkState](x: Self) {
       
-      @scala.inline
-      def setAlertText(value: String): Self = StObject.set(x, "alertText", value.asInstanceOf[js.Any])
+      inline def setAlertText(value: String): Self = StObject.set(x, "alertText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertTextUndefined: Self = StObject.set(x, "alertText", js.undefined)
+      inline def setAlertTextUndefined: Self = StObject.set(x, "alertText", js.undefined)
       
-      @scala.inline
-      def setBeakBottom(value: String): Self = StObject.set(x, "beakBottom", value.asInstanceOf[js.Any])
+      inline def setBeakBottom(value: String): Self = StObject.set(x, "beakBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakBottomUndefined: Self = StObject.set(x, "beakBottom", js.undefined)
+      inline def setBeakBottomUndefined: Self = StObject.set(x, "beakBottom", js.undefined)
       
-      @scala.inline
-      def setBeakLeft(value: String): Self = StObject.set(x, "beakLeft", value.asInstanceOf[js.Any])
+      inline def setBeakLeft(value: String): Self = StObject.set(x, "beakLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakLeftUndefined: Self = StObject.set(x, "beakLeft", js.undefined)
+      inline def setBeakLeftUndefined: Self = StObject.set(x, "beakLeft", js.undefined)
       
-      @scala.inline
-      def setBeakRight(value: String): Self = StObject.set(x, "beakRight", value.asInstanceOf[js.Any])
+      inline def setBeakRight(value: String): Self = StObject.set(x, "beakRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakRightUndefined: Self = StObject.set(x, "beakRight", js.undefined)
+      inline def setBeakRightUndefined: Self = StObject.set(x, "beakRight", js.undefined)
       
-      @scala.inline
-      def setBeakTop(value: String): Self = StObject.set(x, "beakTop", value.asInstanceOf[js.Any])
+      inline def setBeakTop(value: String): Self = StObject.set(x, "beakTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakTopUndefined: Self = StObject.set(x, "beakTop", js.undefined)
+      inline def setBeakTopUndefined: Self = StObject.set(x, "beakTop", js.undefined)
       
-      @scala.inline
-      def setEntityInnerHostRect(value: IEntityRect): Self = StObject.set(x, "entityInnerHostRect", value.asInstanceOf[js.Any])
+      inline def setEntityInnerHostRect(value: IEntityRect): Self = StObject.set(x, "entityInnerHostRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeaconAnimating(value: Boolean): Self = StObject.set(x, "isBeaconAnimating", value.asInstanceOf[js.Any])
+      inline def setIsBeaconAnimating(value: Boolean): Self = StObject.set(x, "isBeaconAnimating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
+      inline def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
+      inline def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMouseInProximity(value: Boolean): Self = StObject.set(x, "isMouseInProximity", value.asInstanceOf[js.Any])
+      inline def setIsMouseInProximity(value: Boolean): Self = StObject.set(x, "isMouseInProximity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetAlignment(value: RectangleEdge): Self = StObject.set(x, "targetAlignment", value.asInstanceOf[js.Any])
+      inline def setTargetAlignment(value: RectangleEdge): Self = StObject.set(x, "targetAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetAlignmentUndefined: Self = StObject.set(x, "targetAlignment", js.undefined)
+      inline def setTargetAlignmentUndefined: Self = StObject.set(x, "targetAlignment", js.undefined)
       
-      @scala.inline
-      def setTargetPosition(value: RectangleEdge): Self = StObject.set(x, "targetPosition", value.asInstanceOf[js.Any])
+      inline def setTargetPosition(value: RectangleEdge): Self = StObject.set(x, "targetPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetPositionUndefined: Self = StObject.set(x, "targetPosition", js.undefined)
+      inline def setTargetPositionUndefined: Self = StObject.set(x, "targetPosition", js.undefined)
       
-      @scala.inline
-      def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
     }
   }
   
@@ -283,20 +258,16 @@ object coachmarkBaseMod {
   }
   object IEntityRect {
     
-    @scala.inline
-    def apply(height: Double, width: Double): IEntityRect = {
+    inline def apply(height: Double, width: Double): IEntityRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEntityRect]
     }
     
-    @scala.inline
-    implicit class IEntityRectMutableBuilder[Self <: IEntityRect] (val x: Self) extends AnyVal {
+    extension [Self <: IEntityRect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

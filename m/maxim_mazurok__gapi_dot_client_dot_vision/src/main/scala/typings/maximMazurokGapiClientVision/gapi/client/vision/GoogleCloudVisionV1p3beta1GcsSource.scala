@@ -11,19 +11,15 @@ trait GoogleCloudVisionV1p3beta1GcsSource extends StObject {
 }
 object GoogleCloudVisionV1p3beta1GcsSource {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p3beta1GcsSource = {
+  inline def apply(): GoogleCloudVisionV1p3beta1GcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1GcsSource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p3beta1GcsSourceMutableBuilder[Self <: GoogleCloudVisionV1p3beta1GcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p3beta1GcsSource](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

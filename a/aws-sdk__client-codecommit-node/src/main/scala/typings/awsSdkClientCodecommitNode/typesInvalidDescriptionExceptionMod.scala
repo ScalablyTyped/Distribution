@@ -18,17 +18,14 @@ object typesInvalidDescriptionExceptionMod {
   }
   object InvalidDescriptionException {
     
-    @scala.inline
-    def apply(): InvalidDescriptionException = {
+    inline def apply(): InvalidDescriptionException = {
       val __obj = js.Dynamic.literal(name = "InvalidDescriptionException")
       __obj.asInstanceOf[InvalidDescriptionException]
     }
     
-    @scala.inline
-    implicit class InvalidDescriptionExceptionMutableBuilder[Self <: InvalidDescriptionException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidDescriptionException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDescriptionException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

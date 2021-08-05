@@ -14,43 +14,29 @@ object binMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autoMaxBins(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoMaxBins")().asInstanceOf[Double]
-  @scala.inline
-  def autoMaxBins(channel: ExtendedChannel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoMaxBins")(channel.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def autoMaxBins(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoMaxBins")().asInstanceOf[Double]
+  inline def autoMaxBins(channel: ExtendedChannel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoMaxBins")(channel.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def binToString(bin: BinParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("binToString")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def binToString(bin: BinParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("binToString")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def binToString_true(bin: `true`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("binToString")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def binToString_true(bin: `true`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("binToString")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isBinParams(bin: Boolean): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
-  @scala.inline
-  def isBinParams(bin: BinParams): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
+  inline def isBinParams(bin: Boolean): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
+  inline def isBinParams(bin: BinParams): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
   
-  @scala.inline
-  def isBinParams_binned(bin: binned): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
+  inline def isBinParams_binned(bin: binned): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
   
-  @scala.inline
-  def isBinned(bin: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isBinned(bin: BinParams): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBinned(bin: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBinned(bin: BinParams): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBinned_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBinned_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBinning(bin: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isBinning(bin: BinParams): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBinning(bin: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBinning(bin: BinParams): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBinning_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBinning_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSelectionExtent(extent: BinExtent): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
+  inline def isSelectionExtent(extent: BinExtent): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
   
   trait BaseBin extends StObject {
     
@@ -114,65 +100,46 @@ object binMod {
   }
   object BaseBin {
     
-    @scala.inline
-    def apply(): BaseBin = {
+    inline def apply(): BaseBin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseBin]
     }
     
-    @scala.inline
-    implicit class BaseBinMutableBuilder[Self <: BaseBin] (val x: Self) extends AnyVal {
+    extension [Self <: BaseBin](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDivide(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
+      inline def setDivide(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
+      inline def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
       
-      @scala.inline
-      def setMaxbins(value: Double): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
+      inline def setMaxbins(value: Double): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
+      inline def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
       
-      @scala.inline
-      def setMinstep(value: Double): Self = StObject.set(x, "minstep", value.asInstanceOf[js.Any])
+      inline def setMinstep(value: Double): Self = StObject.set(x, "minstep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinstepUndefined: Self = StObject.set(x, "minstep", js.undefined)
+      inline def setMinstepUndefined: Self = StObject.set(x, "minstep", js.undefined)
       
-      @scala.inline
-      def setNice(value: Boolean): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+      inline def setNice(value: Boolean): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+      inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[Double]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Double]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
     }
   }
   
@@ -203,26 +170,20 @@ object binMod {
   }
   object BinParams {
     
-    @scala.inline
-    def apply(): BinParams = {
+    inline def apply(): BinParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BinParams]
     }
     
-    @scala.inline
-    implicit class BinParamsMutableBuilder[Self <: BinParams] (val x: Self) extends AnyVal {
+    extension [Self <: BinParams](x: Self) {
       
-      @scala.inline
-      def setBinned(value: Boolean): Self = StObject.set(x, "binned", value.asInstanceOf[js.Any])
+      inline def setBinned(value: Boolean): Self = StObject.set(x, "binned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinnedUndefined: Self = StObject.set(x, "binned", js.undefined)
+      inline def setBinnedUndefined: Self = StObject.set(x, "binned", js.undefined)
       
-      @scala.inline
-      def setExtent(value: BinExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: BinExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     }
   }
   

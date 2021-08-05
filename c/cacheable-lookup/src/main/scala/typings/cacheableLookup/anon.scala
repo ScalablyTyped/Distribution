@@ -34,29 +34,22 @@ object anon {
   }
   object LookupOptionsalltrue {
     
-    @scala.inline
-    def apply(all: js.UndefOr[Boolean] & `true`): LookupOptionsalltrue = {
+    inline def apply(all: js.UndefOr[Boolean] & `true`): LookupOptionsalltrue = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupOptionsalltrue]
     }
     
-    @scala.inline
-    implicit class LookupOptionsalltrueMutableBuilder[Self <: LookupOptionsalltrue] (val x: Self) extends AnyVal {
+    extension [Self <: LookupOptionsalltrue](x: Self) {
       
-      @scala.inline
-      def setAll(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     }
   }
   

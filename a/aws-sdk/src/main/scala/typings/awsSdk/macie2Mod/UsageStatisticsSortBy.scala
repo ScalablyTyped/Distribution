@@ -18,25 +18,19 @@ trait UsageStatisticsSortBy extends StObject {
 }
 object UsageStatisticsSortBy {
   
-  @scala.inline
-  def apply(): UsageStatisticsSortBy = {
+  inline def apply(): UsageStatisticsSortBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageStatisticsSortBy]
   }
   
-  @scala.inline
-  implicit class UsageStatisticsSortByMutableBuilder[Self <: UsageStatisticsSortBy] (val x: Self) extends AnyVal {
+  extension [Self <: UsageStatisticsSortBy](x: Self) {
     
-    @scala.inline
-    def setKey(value: UsageStatisticsSortKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: UsageStatisticsSortKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
   }
 }

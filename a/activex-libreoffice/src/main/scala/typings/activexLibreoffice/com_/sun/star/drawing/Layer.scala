@@ -36,8 +36,7 @@ trait Layer
 }
 object Layer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsLocked: Boolean,
     IsPrintable: Boolean,
     IsVisible: Boolean,
@@ -58,19 +57,14 @@ object Layer {
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "IsLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "IsLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintable(value: Boolean): Self = StObject.set(x, "IsPrintable", value.asInstanceOf[js.Any])
+    inline def setIsPrintable(value: Boolean): Self = StObject.set(x, "IsPrintable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait XMimeContentTypeFactory
 }
 object XMimeContentTypeFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createMimeContentType: String => XMimeContentType,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XMimeContentTypeFactory {
     __obj.asInstanceOf[XMimeContentTypeFactory]
   }
   
-  @scala.inline
-  implicit class XMimeContentTypeFactoryMutableBuilder[Self <: XMimeContentTypeFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XMimeContentTypeFactory](x: Self) {
     
-    @scala.inline
-    def setCreateMimeContentType(value: String => XMimeContentType): Self = StObject.set(x, "createMimeContentType", js.Any.fromFunction1(value))
+    inline def setCreateMimeContentType(value: String => XMimeContentType): Self = StObject.set(x, "createMimeContentType", js.Any.fromFunction1(value))
   }
 }

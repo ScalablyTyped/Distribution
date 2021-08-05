@@ -19,19 +19,15 @@ trait LockScreenCallEndRequestedEventArgs extends StObject {
 }
 object LockScreenCallEndRequestedEventArgs {
   
-  @scala.inline
-  def apply(deadline: Date, getDeferral: () => LockScreenCallEndCallDeferral): LockScreenCallEndRequestedEventArgs = {
+  inline def apply(deadline: Date, getDeferral: () => LockScreenCallEndCallDeferral): LockScreenCallEndRequestedEventArgs = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[LockScreenCallEndRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class LockScreenCallEndRequestedEventArgsMutableBuilder[Self <: LockScreenCallEndRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: LockScreenCallEndRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => LockScreenCallEndCallDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => LockScreenCallEndCallDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

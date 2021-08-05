@@ -126,14 +126,12 @@ object global {
       val ^ : js.Any = js.native
       
       // methods
-      @scala.inline
-      def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+      inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
       
       @JSGlobal("createjs.FlashAudioPlugin.swfPath")
       @js.native
       def swfPath: String = js.native
-      @scala.inline
-      def swfPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swfPath")(x.asInstanceOf[js.Any])
+      inline def swfPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swfPath")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("createjs.FlashAudioSoundInstance")
@@ -195,23 +193,19 @@ object global {
       @JSGlobal("createjs.FlashPlugin.buildDate")
       @js.native
       def buildDate: String = js.native
-      @scala.inline
-      def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
+      inline def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+      inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
       
       @JSGlobal("createjs.FlashPlugin.swfPath")
       @js.native
       def swfPath: String = js.native
-      @scala.inline
-      def swfPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swfPath")(x.asInstanceOf[js.Any])
+      inline def swfPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swfPath")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.FlashPlugin.version")
       @js.native
       def version: String = js.native
-      @scala.inline
-      def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+      inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("createjs.HTMLAudioPlugin")
@@ -272,12 +266,10 @@ object global {
       @JSGlobal("createjs.HTMLAudioPlugin.MAX_INSTANCES")
       @js.native
       def MAX_INSTANCES: Double = js.native
-      @scala.inline
-      def MAX_INSTANCES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_INSTANCES")(x.asInstanceOf[js.Any])
+      inline def MAX_INSTANCES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_INSTANCES")(x.asInstanceOf[js.Any])
       
       // methods
-      @scala.inline
-      def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+      inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
     }
     
     @JSGlobal("createjs.HTMLAudioSoundInstance")
@@ -334,10 +326,8 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def create(value: js.Any): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
-      @scala.inline
-      def create(value: typings.soundjs.createjs.PlayPropsConfig): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
+      inline def create(value: js.Any): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
+      inline def create(value: typings.soundjs.createjs.PlayPropsConfig): typings.soundjs.createjs.PlayPropsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.PlayPropsConfig]
     }
     
     @JSGlobal("createjs.Sound")
@@ -355,202 +345,152 @@ object global {
       @JSGlobal("createjs.Sound.EXTENSION_MAP")
       @js.native
       def EXTENSION_MAP: js.Object = js.native
-      @scala.inline
-      def EXTENSION_MAP_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTENSION_MAP")(x.asInstanceOf[js.Any])
+      inline def EXTENSION_MAP_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTENSION_MAP")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.INTERRUPT_ANY")
       @js.native
       def INTERRUPT_ANY: String = js.native
-      @scala.inline
-      def INTERRUPT_ANY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_ANY")(x.asInstanceOf[js.Any])
+      inline def INTERRUPT_ANY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_ANY")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.INTERRUPT_EARLY")
       @js.native
       def INTERRUPT_EARLY: String = js.native
-      @scala.inline
-      def INTERRUPT_EARLY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_EARLY")(x.asInstanceOf[js.Any])
+      inline def INTERRUPT_EARLY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_EARLY")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.INTERRUPT_LATE")
       @js.native
       def INTERRUPT_LATE: String = js.native
-      @scala.inline
-      def INTERRUPT_LATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_LATE")(x.asInstanceOf[js.Any])
+      inline def INTERRUPT_LATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_LATE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.INTERRUPT_NONE")
       @js.native
       def INTERRUPT_NONE: String = js.native
-      @scala.inline
-      def INTERRUPT_NONE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_NONE")(x.asInstanceOf[js.Any])
+      inline def INTERRUPT_NONE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT_NONE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.PLAY_FAILED")
       @js.native
       def PLAY_FAILED: String = js.native
-      @scala.inline
-      def PLAY_FAILED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_FAILED")(x.asInstanceOf[js.Any])
+      inline def PLAY_FAILED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_FAILED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.PLAY_FINISHED")
       @js.native
       def PLAY_FINISHED: String = js.native
-      @scala.inline
-      def PLAY_FINISHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_FINISHED")(x.asInstanceOf[js.Any])
+      inline def PLAY_FINISHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_FINISHED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.PLAY_INITED")
       @js.native
       def PLAY_INITED: String = js.native
-      @scala.inline
-      def PLAY_INITED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_INITED")(x.asInstanceOf[js.Any])
+      inline def PLAY_INITED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_INITED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.PLAY_INTERRUPTED")
       @js.native
       def PLAY_INTERRUPTED: String = js.native
-      @scala.inline
-      def PLAY_INTERRUPTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_INTERRUPTED")(x.asInstanceOf[js.Any])
+      inline def PLAY_INTERRUPTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_INTERRUPTED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.PLAY_SUCCEEDED")
       @js.native
       def PLAY_SUCCEEDED: String = js.native
-      @scala.inline
-      def PLAY_SUCCEEDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_SUCCEEDED")(x.asInstanceOf[js.Any])
+      inline def PLAY_SUCCEEDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_SUCCEEDED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.SUPPORTED_EXTENSIONS")
       @js.native
       def SUPPORTED_EXTENSIONS: js.Array[String] = js.native
-      @scala.inline
-      def SUPPORTED_EXTENSIONS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTED_EXTENSIONS")(x.asInstanceOf[js.Any])
+      inline def SUPPORTED_EXTENSIONS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTED_EXTENSIONS")(x.asInstanceOf[js.Any])
       
       // properties
       @JSGlobal("createjs.Sound.activePlugin")
       @js.native
       def activePlugin: js.Object = js.native
-      @scala.inline
-      def activePlugin_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activePlugin")(x.asInstanceOf[js.Any])
+      inline def activePlugin_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activePlugin")(x.asInstanceOf[js.Any])
       
       // EventDispatcher mixins
-      @scala.inline
-      def addEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def addEventListener(
+      inline def addEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def addEventListener(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def addEventListener(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def addEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def addEventListener(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def addEventListener(`type`: String, listener: `0`, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def addEventListener(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def addEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def addEventListener(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def addEventListener(`type`: String, listener: `0`, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       @JSGlobal("createjs.Sound.alternateExtensions")
       @js.native
       def alternateExtensions: js.Array[js.Any] = js.native
-      @scala.inline
-      def alternateExtensions_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alternateExtensions")(x.asInstanceOf[js.Any])
+      inline def alternateExtensions_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alternateExtensions")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.Sound.capabilities")
       @js.native
       def capabilities: js.Any = js.native
-      @scala.inline
-      def capabilities_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capabilities")(x.asInstanceOf[js.Any])
+      inline def capabilities_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capabilities")(x.asInstanceOf[js.Any])
       
       // methods
-      @scala.inline
-      def createInstance(src: String): typings.soundjs.createjs.AbstractSoundInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(src.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.AbstractSoundInstance]
+      inline def createInstance(src: String): typings.soundjs.createjs.AbstractSoundInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(src.asInstanceOf[js.Any]).asInstanceOf[typings.soundjs.createjs.AbstractSoundInstance]
       
       @JSGlobal("createjs.Sound.defaultInterruptBehavior")
       @js.native
       def defaultInterruptBehavior: String = js.native
-      @scala.inline
-      def defaultInterruptBehavior_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInterruptBehavior")(x.asInstanceOf[js.Any])
+      inline def defaultInterruptBehavior_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInterruptBehavior")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def dispatchEvent(eventObj: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def dispatchEvent(eventObj: String, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def dispatchEvent(eventObj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def dispatchEvent(eventObj: js.Object, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def dispatchEvent(eventObj: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def dispatchEvent(eventObj: Event, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def dispatchEvent(eventObj: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def dispatchEvent(eventObj: String, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def dispatchEvent(eventObj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def dispatchEvent(eventObj: js.Object, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def dispatchEvent(eventObj: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def dispatchEvent(eventObj: Event, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def getCapabilities(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapabilities")().asInstanceOf[js.Object]
+      inline def getCapabilities(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapabilities")().asInstanceOf[js.Object]
       
-      @scala.inline
-      def getCapability(key: String): Double | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapability")(key.asInstanceOf[js.Any]).asInstanceOf[Double | Boolean]
+      inline def getCapability(key: String): Double | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapability")(key.asInstanceOf[js.Any]).asInstanceOf[Double | Boolean]
       
-      @scala.inline
-      def getMute(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getMute")().asInstanceOf[Boolean]
+      inline def getMute(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getMute")().asInstanceOf[Boolean]
       
-      @scala.inline
-      def getVolume(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")().asInstanceOf[Double]
+      inline def getVolume(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")().asInstanceOf[Double]
       
-      @scala.inline
-      def hasEventListener(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEventListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def hasEventListener(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEventListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def initializeDefaultPlugins(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeDefaultPlugins")().asInstanceOf[Boolean]
+      inline def initializeDefaultPlugins(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeDefaultPlugins")().asInstanceOf[Boolean]
       
-      @scala.inline
-      def isReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[Boolean]
+      inline def isReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[Boolean]
       
-      @scala.inline
-      def loadComplete(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loadComplete")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def loadComplete(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loadComplete")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       @JSGlobal("createjs.Sound.muted")
       @js.native
       def muted: Boolean = js.native
-      @scala.inline
-      def muted_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("muted")(x.asInstanceOf[js.Any])
+      inline def muted_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("muted")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def off(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(
+      inline def off(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         useCapture: Boolean
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(`type`: String, listener: HandleEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def off(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(`type`: String, listener: HandleEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       // It is necessary for "arguments.callee"
-      @scala.inline
-      def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Boolean,
         data: js.Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
@@ -558,8 +498,7 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
@@ -567,16 +506,14 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
         once: Unit,
         data: js.Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
@@ -584,8 +521,7 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: js.Object,
@@ -593,23 +529,20 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Boolean,
         data: js.Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
@@ -617,8 +550,7 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
@@ -626,16 +558,14 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
         once: Unit,
         data: js.Any
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
@@ -643,8 +573,7 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         scope: Unit,
@@ -652,16 +581,11 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(
+      inline def on(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: js.Object,
@@ -669,8 +593,7 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: js.Object,
@@ -678,10 +601,8 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(
+      inline def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: js.Object,
@@ -689,8 +610,7 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(
+      inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: js.Object,
@@ -698,12 +618,9 @@ object global {
         data: Unit,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(
         `type`: String,
         listener: HandleEvent,
         scope: Unit,
@@ -711,49 +628,28 @@ object global {
         data: js.Any,
         useCapture: Boolean
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
-      @scala.inline
-      def play(
+      inline def play(
         src: String,
         interrupt: js.UndefOr[js.Any],
         delay: js.UndefOr[Double],
@@ -763,120 +659,73 @@ object global {
         pan: js.UndefOr[Double]
       ): typings.soundjs.createjs.AbstractSoundInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("play")(src.asInstanceOf[js.Any], interrupt.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], loop.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pan.asInstanceOf[js.Any])).asInstanceOf[typings.soundjs.createjs.AbstractSoundInstance]
       
-      @scala.inline
-      def registerManifest(manifest: js.Array[js.Object], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerManifest(manifest: js.Array[js.Object], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
-      @scala.inline
-      def registerPlugins(plugins: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def registerPlugins(plugins: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def registerSound(src: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: String, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: String, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: String, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: String, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: String, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: Unit, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: Unit, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: Unit, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: Unit, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: String, id: Unit, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: String, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: String, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: String, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: String, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: String, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: Unit, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: Unit, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: Unit, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: Unit, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def registerSound(src: js.Object, id: Unit, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: String, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: String, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: String, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: String, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: String, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: Unit, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: Unit, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: Unit, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: Unit, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: String, id: Unit, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: String, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: String, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: String, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: String, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: String, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: Unit, data: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: Unit, data: js.Object, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: Unit, data: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: Unit, data: Double, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def registerSound(src: js.Object, id: Unit, data: Unit, basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSound")(src.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
-      @scala.inline
-      def registerSounds(sounds: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSounds")(sounds.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
-      @scala.inline
-      def registerSounds(sounds: js.Array[js.Object], basePath: String): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSounds")(sounds.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+      inline def registerSounds(sounds: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSounds")(sounds.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+      inline def registerSounds(sounds: js.Array[js.Object], basePath: String): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSounds")(sounds.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
       
-      @scala.inline
-      def removeAllEventListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEventListeners")().asInstanceOf[Unit]
-      @scala.inline
-      def removeAllEventListeners(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEventListeners")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def removeAllEventListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEventListeners")().asInstanceOf[Unit]
+      inline def removeAllEventListeners(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEventListeners")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def removeAllSounds(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllSounds")().asInstanceOf[Unit]
+      inline def removeAllSounds(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllSounds")().asInstanceOf[Unit]
       
-      @scala.inline
-      def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(
+      inline def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(
         `type`: String,
         listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
         useCapture: Boolean
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(`type`: String, listener: HandleEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def removeEventListener(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: HandleEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def removeManifest(manifest: js.Array[js.Any], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def removeManifest(manifest: js.Array[js.Any], basePath: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManifest")(manifest.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
-      @scala.inline
-      def removeSound(src: String, basePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSound")(src.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def removeSound(src: js.Object, basePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSound")(src.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def removeSound(src: String, basePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSound")(src.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def removeSound(src: js.Object, basePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSound")(src.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def setMute(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("setMute")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def setMute(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("setMute")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def setVolume(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setVolume(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+      inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
       
       @JSGlobal("createjs.Sound.volume")
       @js.native
       def volume: Double = js.native
-      @scala.inline
-      def volume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volume")(x.asInstanceOf[js.Any])
+      inline def volume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volume")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def willTrigger(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("willTrigger")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def willTrigger(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("willTrigger")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     @JSGlobal("createjs.SoundJS")
@@ -894,14 +743,12 @@ object global {
       @JSGlobal("createjs.SoundJS.buildDate")
       @js.native
       def buildDate: String = js.native
-      @scala.inline
-      def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
+      inline def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.SoundJS.version")
       @js.native
       def version: String = js.native
-      @scala.inline
-      def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+      inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("createjs.WebAudioLoader")
@@ -919,8 +766,7 @@ object global {
       @JSGlobal("createjs.WebAudioLoader.context")
       @js.native
       def context: AudioContext = js.native
-      @scala.inline
-      def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+      inline def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("createjs.WebAudioPlugin")
@@ -983,15 +829,12 @@ object global {
       @JSGlobal("createjs.WebAudioPlugin.context")
       @js.native
       def context: AudioContext = js.native
-      @scala.inline
-      def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+      inline def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
       
       // methods
-      @scala.inline
-      def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+      inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
       
-      @scala.inline
-      def playEmptySound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playEmptySound")().asInstanceOf[Unit]
+      inline def playEmptySound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playEmptySound")().asInstanceOf[Unit]
     }
     
     @JSGlobal("createjs.WebAudioSoundInstance")
@@ -1012,14 +855,12 @@ object global {
       @JSGlobal("createjs.WebAudioSoundInstance.context")
       @js.native
       def context: AudioContext = js.native
-      @scala.inline
-      def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+      inline def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
       
       @JSGlobal("createjs.WebAudioSoundInstance.destinationNode")
       @js.native
       def destinationNode: AudioNode = js.native
-      @scala.inline
-      def destinationNode_=(x: AudioNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destinationNode")(x.asInstanceOf[js.Any])
+      inline def destinationNode_=(x: AudioNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destinationNode")(x.asInstanceOf[js.Any])
     }
   }
 }

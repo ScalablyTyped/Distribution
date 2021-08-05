@@ -85,82 +85,57 @@ trait ITimepickerConfig extends StObject {
 }
 object ITimepickerConfig {
   
-  @scala.inline
-  def apply(): ITimepickerConfig = {
+  inline def apply(): ITimepickerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITimepickerConfig]
   }
   
-  @scala.inline
-  implicit class ITimepickerConfigMutableBuilder[Self <: ITimepickerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ITimepickerConfig](x: Self) {
     
-    @scala.inline
-    def setArrowkeys(value: Boolean): Self = StObject.set(x, "arrowkeys", value.asInstanceOf[js.Any])
+    inline def setArrowkeys(value: Boolean): Self = StObject.set(x, "arrowkeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowkeysUndefined: Self = StObject.set(x, "arrowkeys", js.undefined)
+    inline def setArrowkeysUndefined: Self = StObject.set(x, "arrowkeys", js.undefined)
     
-    @scala.inline
-    def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+    inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
+    inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
     
-    @scala.inline
-    def setMeridians(value: js.Array[String]): Self = StObject.set(x, "meridians", value.asInstanceOf[js.Any])
+    inline def setMeridians(value: js.Array[String]): Self = StObject.set(x, "meridians", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeridiansUndefined: Self = StObject.set(x, "meridians", js.undefined)
+    inline def setMeridiansUndefined: Self = StObject.set(x, "meridians", js.undefined)
     
-    @scala.inline
-    def setMeridiansVarargs(value: String*): Self = StObject.set(x, "meridians", js.Array(value :_*))
+    inline def setMeridiansVarargs(value: String*): Self = StObject.set(x, "meridians", js.Array(value :_*))
     
-    @scala.inline
-    def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+    inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
+    inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
     
-    @scala.inline
-    def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+    inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
-    @scala.inline
-    def setReadonlyInput(value: Boolean): Self = StObject.set(x, "readonlyInput", value.asInstanceOf[js.Any])
+    inline def setReadonlyInput(value: Boolean): Self = StObject.set(x, "readonlyInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyInputUndefined: Self = StObject.set(x, "readonlyInput", js.undefined)
+    inline def setReadonlyInputUndefined: Self = StObject.set(x, "readonlyInput", js.undefined)
     
-    @scala.inline
-    def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+    inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
+    inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
     
-    @scala.inline
-    def setShowMeridian(value: Boolean): Self = StObject.set(x, "showMeridian", value.asInstanceOf[js.Any])
+    inline def setShowMeridian(value: Boolean): Self = StObject.set(x, "showMeridian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMeridianUndefined: Self = StObject.set(x, "showMeridian", js.undefined)
+    inline def setShowMeridianUndefined: Self = StObject.set(x, "showMeridian", js.undefined)
     
-    @scala.inline
-    def setShowSeconds(value: Boolean): Self = StObject.set(x, "showSeconds", value.asInstanceOf[js.Any])
+    inline def setShowSeconds(value: Boolean): Self = StObject.set(x, "showSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSecondsUndefined: Self = StObject.set(x, "showSeconds", js.undefined)
+    inline def setShowSecondsUndefined: Self = StObject.set(x, "showSeconds", js.undefined)
     
-    @scala.inline
-    def setShowSpinners(value: Boolean): Self = StObject.set(x, "showSpinners", value.asInstanceOf[js.Any])
+    inline def setShowSpinners(value: Boolean): Self = StObject.set(x, "showSpinners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSpinnersUndefined: Self = StObject.set(x, "showSpinners", js.undefined)
+    inline def setShowSpinnersUndefined: Self = StObject.set(x, "showSpinners", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
   }
 }

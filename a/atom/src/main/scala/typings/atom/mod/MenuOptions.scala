@@ -17,31 +17,23 @@ trait MenuOptions extends StObject {
 }
 object MenuOptions {
   
-  @scala.inline
-  def apply(label: String): MenuOptions = {
+  inline def apply(label: String): MenuOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuOptions]
   }
   
-  @scala.inline
-  implicit class MenuOptionsMutableBuilder[Self <: MenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MenuOptions](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmenu(value: js.Array[MenuOptions]): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
+    inline def setSubmenu(value: js.Array[MenuOptions]): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
+    inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
-    @scala.inline
-    def setSubmenuVarargs(value: MenuOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
+    inline def setSubmenuVarargs(value: MenuOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
   }
 }

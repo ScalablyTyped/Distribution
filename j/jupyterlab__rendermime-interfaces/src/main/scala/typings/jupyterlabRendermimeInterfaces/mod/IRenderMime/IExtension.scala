@@ -54,55 +54,39 @@ trait IExtension extends StObject {
 }
 object IExtension {
   
-  @scala.inline
-  def apply(id: String, rendererFactory: IRendererFactory): IExtension = {
+  inline def apply(id: String, rendererFactory: IRendererFactory): IExtension = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rendererFactory = rendererFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtension]
   }
   
-  @scala.inline
-  implicit class IExtensionMutableBuilder[Self <: IExtension] (val x: Self) extends AnyVal {
+  extension [Self <: IExtension](x: Self) {
     
-    @scala.inline
-    def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setDocumentWidgetFactoryOptions(value: IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]): Self = StObject.set(x, "documentWidgetFactoryOptions", value.asInstanceOf[js.Any])
+    inline def setDocumentWidgetFactoryOptions(value: IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]): Self = StObject.set(x, "documentWidgetFactoryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentWidgetFactoryOptionsUndefined: Self = StObject.set(x, "documentWidgetFactoryOptions", js.undefined)
+    inline def setDocumentWidgetFactoryOptionsUndefined: Self = StObject.set(x, "documentWidgetFactoryOptions", js.undefined)
     
-    @scala.inline
-    def setDocumentWidgetFactoryOptionsVarargs(value: IDocumentWidgetFactoryOptions*): Self = StObject.set(x, "documentWidgetFactoryOptions", js.Array(value :_*))
+    inline def setDocumentWidgetFactoryOptionsVarargs(value: IDocumentWidgetFactoryOptions*): Self = StObject.set(x, "documentWidgetFactoryOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    inline def setFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+    inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    @scala.inline
-    def setFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
+    inline def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderTimeoutUndefined: Self = StObject.set(x, "renderTimeout", js.undefined)
+    inline def setRenderTimeoutUndefined: Self = StObject.set(x, "renderTimeout", js.undefined)
     
-    @scala.inline
-    def setRendererFactory(value: IRendererFactory): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
+    inline def setRendererFactory(value: IRendererFactory): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
   }
 }

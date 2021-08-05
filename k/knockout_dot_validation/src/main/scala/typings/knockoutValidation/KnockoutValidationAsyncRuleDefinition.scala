@@ -14,8 +14,7 @@ trait KnockoutValidationAsyncRuleDefinition
 }
 object KnockoutValidationAsyncRuleDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     async: Boolean,
     message: String | KnockoutValidationMessageFunction,
     validator: (js.Any, js.Any, KnockoutValidationAsyncCallback) => Unit
@@ -24,13 +23,10 @@ object KnockoutValidationAsyncRuleDefinition {
     __obj.asInstanceOf[KnockoutValidationAsyncRuleDefinition]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationAsyncRuleDefinitionMutableBuilder[Self <: KnockoutValidationAsyncRuleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationAsyncRuleDefinition](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidator(value: (js.Any, js.Any, KnockoutValidationAsyncCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
+    inline def setValidator(value: (js.Any, js.Any, KnockoutValidationAsyncCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
   }
 }

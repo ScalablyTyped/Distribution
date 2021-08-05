@@ -37,36 +37,27 @@ trait TrimExtendParametersProperties extends StObject {
 }
 object TrimExtendParametersProperties {
   
-  @scala.inline
-  def apply(): TrimExtendParametersProperties = {
+  inline def apply(): TrimExtendParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrimExtendParametersProperties]
   }
   
-  @scala.inline
-  implicit class TrimExtendParametersPropertiesMutableBuilder[Self <: TrimExtendParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TrimExtendParametersProperties](x: Self) {
     
-    @scala.inline
-    def setExtendHow(
+    inline def setExtendHow(
       value: `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`
     ): Self = StObject.set(x, "extendHow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendHowUndefined: Self = StObject.set(x, "extendHow", js.undefined)
+    inline def setExtendHowUndefined: Self = StObject.set(x, "extendHow", js.undefined)
     
-    @scala.inline
-    def setPolylines(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
+    inline def setPolylines(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
+    inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
-    @scala.inline
-    def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
+    inline def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
     
-    @scala.inline
-    def setTrimExtendTo(value: PolylineProperties): Self = StObject.set(x, "trimExtendTo", value.asInstanceOf[js.Any])
+    inline def setTrimExtendTo(value: PolylineProperties): Self = StObject.set(x, "trimExtendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimExtendToUndefined: Self = StObject.set(x, "trimExtendTo", js.undefined)
+    inline def setTrimExtendToUndefined: Self = StObject.set(x, "trimExtendTo", js.undefined)
   }
 }

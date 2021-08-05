@@ -129,6 +129,5 @@ object mod {
     var startingLine: Double = js.native
   }
   
-  @scala.inline
-  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringWithSourceMap")(code.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[SourceListMap]
+  inline def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringWithSourceMap")(code.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[SourceListMap]
 }

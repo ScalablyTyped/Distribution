@@ -36,26 +36,20 @@ object products {
   }
   object IPackageDimensions {
     
-    @scala.inline
-    def apply(height: Double, length: Double, weight: Double, width: Double): IPackageDimensions = {
+    inline def apply(height: Double, length: Double, weight: Double, width: Double): IPackageDimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPackageDimensions]
     }
     
-    @scala.inline
-    implicit class IPackageDimensionsMutableBuilder[Self <: IPackageDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: IPackageDimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,8 +147,7 @@ object products {
   }
   object IProduct {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       attributes: js.Array[String],
       caption: String,
@@ -178,80 +171,55 @@ object products {
       __obj.asInstanceOf[IProduct]
     }
     
-    @scala.inline
-    implicit class IProductMutableBuilder[Self <: IProduct] (val x: Self) extends AnyVal {
+    extension [Self <: IProduct](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeactivated_on(value: js.Array[String]): Self = StObject.set(x, "deactivated_on", value.asInstanceOf[js.Any])
+      inline def setDeactivated_on(value: js.Array[String]): Self = StObject.set(x, "deactivated_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeactivated_onVarargs(value: String*): Self = StObject.set(x, "deactivated_on", js.Array(value :_*))
+      inline def setDeactivated_onVarargs(value: String*): Self = StObject.set(x, "deactivated_on", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: product): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: product): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
+      inline def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
+      inline def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkus(value: IList[ISku]): Self = StObject.set(x, "skus", value.asInstanceOf[js.Any])
+      inline def setSkus(value: IList[ISku]): Self = StObject.set(x, "skus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ProductType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ProductType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnit_label(value: String): Self = StObject.set(x, "unit_label", value.asInstanceOf[js.Any])
+      inline def setUnit_label(value: String): Self = StObject.set(x, "unit_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit_labelUndefined: Self = StObject.set(x, "unit_label", js.undefined)
+      inline def setUnit_labelUndefined: Self = StObject.set(x, "unit_label", js.undefined)
       
-      @scala.inline
-      def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,104 +310,72 @@ object products {
   }
   object IProductCreationOptions {
     
-    @scala.inline
-    def apply(name: String): IProductCreationOptions = {
+    inline def apply(name: String): IProductCreationOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProductCreationOptions]
     }
     
-    @scala.inline
-    implicit class IProductCreationOptionsMutableBuilder[Self <: IProductCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IProductCreationOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setDeactivate_on(value: js.Array[String]): Self = StObject.set(x, "deactivate_on", value.asInstanceOf[js.Any])
+      inline def setDeactivate_on(value: js.Array[String]): Self = StObject.set(x, "deactivate_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeactivate_onUndefined: Self = StObject.set(x, "deactivate_on", js.undefined)
+      inline def setDeactivate_onUndefined: Self = StObject.set(x, "deactivate_on", js.undefined)
       
-      @scala.inline
-      def setDeactivate_onVarargs(value: String*): Self = StObject.set(x, "deactivate_on", js.Array(value :_*))
+      inline def setDeactivate_onVarargs(value: String*): Self = StObject.set(x, "deactivate_on", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
+      inline def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
+      inline def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
       
-      @scala.inline
-      def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
+      inline def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippableUndefined: Self = StObject.set(x, "shippable", js.undefined)
+      inline def setShippableUndefined: Self = StObject.set(x, "shippable", js.undefined)
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+      inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
       
-      @scala.inline
-      def setType(value: ProductType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ProductType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnit_label(value: String): Self = StObject.set(x, "unit_label", value.asInstanceOf[js.Any])
+      inline def setUnit_label(value: String): Self = StObject.set(x, "unit_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit_labelUndefined: Self = StObject.set(x, "unit_label", js.undefined)
+      inline def setUnit_labelUndefined: Self = StObject.set(x, "unit_label", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -480,53 +416,38 @@ object products {
   }
   object IProductListOptions {
     
-    @scala.inline
-    def apply(): IProductListOptions = {
+    inline def apply(): IProductListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProductListOptions]
     }
     
-    @scala.inline
-    implicit class IProductListOptionsMutableBuilder[Self <: IProductListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IProductListOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setCreated(value: IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+      inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
+      inline def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippableUndefined: Self = StObject.set(x, "shippable", js.undefined)
+      inline def setShippableUndefined: Self = StObject.set(x, "shippable", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -593,80 +514,56 @@ object products {
   }
   object IProductUpdateOptions {
     
-    @scala.inline
-    def apply(): IProductUpdateOptions = {
+    inline def apply(): IProductUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProductUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IProductUpdateOptionsMutableBuilder[Self <: IProductUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IProductUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setDeactivate_on(value: js.Array[String]): Self = StObject.set(x, "deactivate_on", value.asInstanceOf[js.Any])
+      inline def setDeactivate_on(value: js.Array[String]): Self = StObject.set(x, "deactivate_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeactivate_onUndefined: Self = StObject.set(x, "deactivate_on", js.undefined)
+      inline def setDeactivate_onUndefined: Self = StObject.set(x, "deactivate_on", js.undefined)
       
-      @scala.inline
-      def setDeactivate_onVarargs(value: String*): Self = StObject.set(x, "deactivate_on", js.Array(value :_*))
+      inline def setDeactivate_onVarargs(value: String*): Self = StObject.set(x, "deactivate_on", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
+      inline def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
+      inline def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
       
-      @scala.inline
-      def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
+      inline def setShippable(value: Boolean): Self = StObject.set(x, "shippable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippableUndefined: Self = StObject.set(x, "shippable", js.undefined)
+      inline def setShippableUndefined: Self = StObject.set(x, "shippable", js.undefined)
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+      inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -677,10 +574,8 @@ object products {
   trait ProductType extends StObject
   object ProductType {
     
-    @scala.inline
-    def good: typings.stripe.stripeStrings.good = "good".asInstanceOf[typings.stripe.stripeStrings.good]
+    inline def good: typings.stripe.stripeStrings.good = "good".asInstanceOf[typings.stripe.stripeStrings.good]
     
-    @scala.inline
-    def service: typings.stripe.stripeStrings.service = "service".asInstanceOf[typings.stripe.stripeStrings.service]
+    inline def service: typings.stripe.stripeStrings.service = "service".asInstanceOf[typings.stripe.stripeStrings.service]
   }
 }

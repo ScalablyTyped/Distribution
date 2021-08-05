@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(logRocket: LR): Unit = ^.asInstanceOf[js.Dynamic].apply(logRocket.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(logRocket: LR): Unit = ^.asInstanceOf[js.Dynamic].apply(logRocket.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("logrocket-react", JSImport.Namespace)
   @js.native

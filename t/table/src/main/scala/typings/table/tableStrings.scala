@@ -9,44 +9,37 @@ object tableStrings {
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait honeywell
     extends StObject
        with TableBorderTemplate
-  @scala.inline
-  def honeywell: honeywell = "honeywell".asInstanceOf[honeywell]
+  inline def honeywell: honeywell = "honeywell".asInstanceOf[honeywell]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait norc
     extends StObject
        with TableBorderTemplate
-  @scala.inline
-  def norc: norc = "norc".asInstanceOf[norc]
+  inline def norc: norc = "norc".asInstanceOf[norc]
   
   @js.native
   sealed trait ramac
     extends StObject
        with TableBorderTemplate
-  @scala.inline
-  def ramac: ramac = "ramac".asInstanceOf[ramac]
+  inline def ramac: ramac = "ramac".asInstanceOf[ramac]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait void
     extends StObject
        with TableBorderTemplate
-  @scala.inline
-  def void: void = "void".asInstanceOf[void]
+  inline def void: void = "void".asInstanceOf[void]
 }

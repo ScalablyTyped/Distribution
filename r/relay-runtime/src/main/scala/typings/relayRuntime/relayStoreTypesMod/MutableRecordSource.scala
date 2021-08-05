@@ -21,8 +21,7 @@ trait MutableRecordSource
 }
 object MutableRecordSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     delete: DataID => Unit,
     get: DataID => js.UndefOr[Record | Null],
@@ -38,19 +37,14 @@ object MutableRecordSource {
     __obj.asInstanceOf[MutableRecordSource]
   }
   
-  @scala.inline
-  implicit class MutableRecordSourceMutableBuilder[Self <: MutableRecordSource] (val x: Self) extends AnyVal {
+  extension [Self <: MutableRecordSource](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: DataID => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: DataID => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: DataID => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: DataID => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (DataID, Record) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (DataID, Record) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

@@ -30,8 +30,7 @@ trait UsbEndpointDescriptor extends StObject {
 }
 object UsbEndpointDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBulkInEndpointDescriptor: UsbBulkInEndpointDescriptor,
     asBulkOutEndpointDescriptor: UsbBulkOutEndpointDescriptor,
     asInterruptInEndpointDescriptor: UsbInterruptInEndpointDescriptor,
@@ -44,28 +43,20 @@ object UsbEndpointDescriptor {
     __obj.asInstanceOf[UsbEndpointDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbEndpointDescriptorMutableBuilder[Self <: UsbEndpointDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbEndpointDescriptor](x: Self) {
     
-    @scala.inline
-    def setAsBulkInEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = StObject.set(x, "asBulkInEndpointDescriptor", value.asInstanceOf[js.Any])
+    inline def setAsBulkInEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = StObject.set(x, "asBulkInEndpointDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsBulkOutEndpointDescriptor(value: UsbBulkOutEndpointDescriptor): Self = StObject.set(x, "asBulkOutEndpointDescriptor", value.asInstanceOf[js.Any])
+    inline def setAsBulkOutEndpointDescriptor(value: UsbBulkOutEndpointDescriptor): Self = StObject.set(x, "asBulkOutEndpointDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsInterruptInEndpointDescriptor(value: UsbInterruptInEndpointDescriptor): Self = StObject.set(x, "asInterruptInEndpointDescriptor", value.asInstanceOf[js.Any])
+    inline def setAsInterruptInEndpointDescriptor(value: UsbInterruptInEndpointDescriptor): Self = StObject.set(x, "asInterruptInEndpointDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsInterruptOutEndpointDescriptor(value: UsbInterruptOutEndpointDescriptor): Self = StObject.set(x, "asInterruptOutEndpointDescriptor", value.asInstanceOf[js.Any])
+    inline def setAsInterruptOutEndpointDescriptor(value: UsbInterruptOutEndpointDescriptor): Self = StObject.set(x, "asInterruptOutEndpointDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: UsbTransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: UsbTransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
+    inline def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointType(value: UsbEndpointType): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: UsbEndpointType): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
   }
 }

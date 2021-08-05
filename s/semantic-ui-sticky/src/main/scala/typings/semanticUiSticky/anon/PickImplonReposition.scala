@@ -14,16 +14,13 @@ trait PickImplonReposition extends StObject {
 }
 object PickImplonReposition {
   
-  @scala.inline
-  def apply(onReposition: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonReposition = {
+  inline def apply(onReposition: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonReposition = {
     val __obj = js.Dynamic.literal(onReposition = onReposition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonReposition]
   }
   
-  @scala.inline
-  implicit class PickImplonRepositionMutableBuilder[Self <: PickImplonReposition] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonReposition](x: Self) {
     
-    @scala.inline
-    def setOnReposition(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onReposition", value.asInstanceOf[js.Any])
+    inline def setOnReposition(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onReposition", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait DefinitionRegistrationOptions
      with WorkDoneProgressOptions
 object DefinitionRegistrationOptions {
   
-  @scala.inline
-  def apply(): DefinitionRegistrationOptions = {
+  inline def apply(): DefinitionRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[DefinitionRegistrationOptions]
   }

@@ -15,19 +15,15 @@ trait YAxisStackLabelsAnimationOptions extends StObject {
 }
 object YAxisStackLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): YAxisStackLabelsAnimationOptions = {
+  inline def apply(): YAxisStackLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YAxisStackLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class YAxisStackLabelsAnimationOptionsMutableBuilder[Self <: YAxisStackLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: YAxisStackLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

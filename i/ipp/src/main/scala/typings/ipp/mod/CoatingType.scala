@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoatingType extends StObject
 object CoatingType {
   
-  @scala.inline
-  def archival: typings.ipp.ippStrings.archival = "archival".asInstanceOf[typings.ipp.ippStrings.archival]
+  inline def archival: typings.ipp.ippStrings.archival = "archival".asInstanceOf[typings.ipp.ippStrings.archival]
   
-  @scala.inline
-  def `archival-glossy`: typings.ipp.ippStrings.`archival-glossy` = "archival-glossy".asInstanceOf[typings.ipp.ippStrings.`archival-glossy`]
+  inline def `archival-glossy`: typings.ipp.ippStrings.`archival-glossy` = "archival-glossy".asInstanceOf[typings.ipp.ippStrings.`archival-glossy`]
   
-  @scala.inline
-  def `archival-matte`: typings.ipp.ippStrings.`archival-matte` = "archival-matte".asInstanceOf[typings.ipp.ippStrings.`archival-matte`]
+  inline def `archival-matte`: typings.ipp.ippStrings.`archival-matte` = "archival-matte".asInstanceOf[typings.ipp.ippStrings.`archival-matte`]
   
-  @scala.inline
-  def `archival-semi-gloss`: typings.ipp.ippStrings.`archival-semi-gloss` = "archival-semi-gloss".asInstanceOf[typings.ipp.ippStrings.`archival-semi-gloss`]
+  inline def `archival-semi-gloss`: typings.ipp.ippStrings.`archival-semi-gloss` = "archival-semi-gloss".asInstanceOf[typings.ipp.ippStrings.`archival-semi-gloss`]
   
-  @scala.inline
-  def glossy: typings.ipp.ippStrings.glossy = "glossy".asInstanceOf[typings.ipp.ippStrings.glossy]
+  inline def glossy: typings.ipp.ippStrings.glossy = "glossy".asInstanceOf[typings.ipp.ippStrings.glossy]
   
-  @scala.inline
-  def `high-gloss`: typings.ipp.ippStrings.`high-gloss` = "high-gloss".asInstanceOf[typings.ipp.ippStrings.`high-gloss`]
+  inline def `high-gloss`: typings.ipp.ippStrings.`high-gloss` = "high-gloss".asInstanceOf[typings.ipp.ippStrings.`high-gloss`]
   
-  @scala.inline
-  def matte: typings.ipp.ippStrings.matte = "matte".asInstanceOf[typings.ipp.ippStrings.matte]
+  inline def matte: typings.ipp.ippStrings.matte = "matte".asInstanceOf[typings.ipp.ippStrings.matte]
   
-  @scala.inline
-  def `semi-gloss`: typings.ipp.ippStrings.`semi-gloss` = "semi-gloss".asInstanceOf[typings.ipp.ippStrings.`semi-gloss`]
+  inline def `semi-gloss`: typings.ipp.ippStrings.`semi-gloss` = "semi-gloss".asInstanceOf[typings.ipp.ippStrings.`semi-gloss`]
   
-  @scala.inline
-  def silicone: typings.ipp.ippStrings.silicone = "silicone".asInstanceOf[typings.ipp.ippStrings.silicone]
+  inline def silicone: typings.ipp.ippStrings.silicone = "silicone".asInstanceOf[typings.ipp.ippStrings.silicone]
   
-  @scala.inline
-  def translucent: typings.ipp.ippStrings.translucent = "translucent".asInstanceOf[typings.ipp.ippStrings.translucent]
+  inline def translucent: typings.ipp.ippStrings.translucent = "translucent".asInstanceOf[typings.ipp.ippStrings.translucent]
 }

@@ -18,19 +18,15 @@ trait GetAccessPointRequest extends StObject {
 }
 object GetAccessPointRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Name: AccessPointName): GetAccessPointRequest = {
+  inline def apply(AccountId: AccountId, Name: AccessPointName): GetAccessPointRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessPointRequest]
   }
   
-  @scala.inline
-  implicit class GetAccessPointRequestMutableBuilder[Self <: GetAccessPointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessPointRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

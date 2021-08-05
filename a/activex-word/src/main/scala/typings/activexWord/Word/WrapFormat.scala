@@ -26,13 +26,12 @@ trait WrapFormat extends StObject {
   
   var Type: WdWrapType
   
-  @JSName("Word.WrapFormat_typekey")
+  /* private */ @JSName("Word.WrapFormat_typekey")
   var WordDotWrapFormat_typekey: WrapFormat
 }
 object WrapFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowOverlap: Double,
     Application: Application,
     Creator: Double,
@@ -50,40 +49,28 @@ object WrapFormat {
     __obj.asInstanceOf[WrapFormat]
   }
   
-  @scala.inline
-  implicit class WrapFormatMutableBuilder[Self <: WrapFormat] (val x: Self) extends AnyVal {
+  extension [Self <: WrapFormat](x: Self) {
     
-    @scala.inline
-    def setAllowOverlap(value: Double): Self = StObject.set(x, "AllowOverlap", value.asInstanceOf[js.Any])
+    inline def setAllowOverlap(value: Double): Self = StObject.set(x, "AllowOverlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceBottom(value: Double): Self = StObject.set(x, "DistanceBottom", value.asInstanceOf[js.Any])
+    inline def setDistanceBottom(value: Double): Self = StObject.set(x, "DistanceBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceLeft(value: Double): Self = StObject.set(x, "DistanceLeft", value.asInstanceOf[js.Any])
+    inline def setDistanceLeft(value: Double): Self = StObject.set(x, "DistanceLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceRight(value: Double): Self = StObject.set(x, "DistanceRight", value.asInstanceOf[js.Any])
+    inline def setDistanceRight(value: Double): Self = StObject.set(x, "DistanceRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceTop(value: Double): Self = StObject.set(x, "DistanceTop", value.asInstanceOf[js.Any])
+    inline def setDistanceTop(value: Double): Self = StObject.set(x, "DistanceTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSide(value: WdWrapSideType): Self = StObject.set(x, "Side", value.asInstanceOf[js.Any])
+    inline def setSide(value: WdWrapSideType): Self = StObject.set(x, "Side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdWrapType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdWrapType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotWrapFormat_typekey(value: WrapFormat): Self = StObject.set(x, "Word.WrapFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotWrapFormat_typekey(value: WrapFormat): Self = StObject.set(x, "Word.WrapFormat_typekey", value.asInstanceOf[js.Any])
   }
 }

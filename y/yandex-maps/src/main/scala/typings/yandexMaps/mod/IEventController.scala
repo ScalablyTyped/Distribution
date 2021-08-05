@@ -12,25 +12,19 @@ trait IEventController extends StObject {
 }
 object IEventController {
   
-  @scala.inline
-  def apply(): IEventController = {
+  inline def apply(): IEventController = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEventController]
   }
   
-  @scala.inline
-  implicit class IEventControllerMutableBuilder[Self <: IEventController] (val x: Self) extends AnyVal {
+  extension [Self <: IEventController](x: Self) {
     
-    @scala.inline
-    def setOnStartListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStartListening", js.Any.fromFunction2(value))
+    inline def setOnStartListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStartListening", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnStartListeningUndefined: Self = StObject.set(x, "onStartListening", js.undefined)
+    inline def setOnStartListeningUndefined: Self = StObject.set(x, "onStartListening", js.undefined)
     
-    @scala.inline
-    def setOnStopListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStopListening", js.Any.fromFunction2(value))
+    inline def setOnStopListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStopListening", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnStopListeningUndefined: Self = StObject.set(x, "onStopListening", js.undefined)
+    inline def setOnStopListeningUndefined: Self = StObject.set(x, "onStopListening", js.undefined)
   }
 }

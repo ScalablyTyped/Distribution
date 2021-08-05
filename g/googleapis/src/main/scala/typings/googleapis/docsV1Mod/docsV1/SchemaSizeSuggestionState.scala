@@ -23,25 +23,19 @@ trait SchemaSizeSuggestionState extends StObject {
 }
 object SchemaSizeSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaSizeSuggestionState = {
+  inline def apply(): SchemaSizeSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSizeSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaSizeSuggestionStateMutableBuilder[Self <: SchemaSizeSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSizeSuggestionState](x: Self) {
     
-    @scala.inline
-    def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
+    inline def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightSuggestedUndefined: Self = StObject.set(x, "heightSuggested", js.undefined)
+    inline def setHeightSuggestedUndefined: Self = StObject.set(x, "heightSuggested", js.undefined)
     
-    @scala.inline
-    def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
+    inline def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
+    inline def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
   }
 }

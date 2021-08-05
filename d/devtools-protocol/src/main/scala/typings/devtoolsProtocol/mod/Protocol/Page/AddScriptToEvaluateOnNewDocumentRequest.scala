@@ -17,22 +17,17 @@ trait AddScriptToEvaluateOnNewDocumentRequest extends StObject {
 }
 object AddScriptToEvaluateOnNewDocumentRequest {
   
-  @scala.inline
-  def apply(source: String): AddScriptToEvaluateOnNewDocumentRequest = {
+  inline def apply(source: String): AddScriptToEvaluateOnNewDocumentRequest = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddScriptToEvaluateOnNewDocumentRequest]
   }
   
-  @scala.inline
-  implicit class AddScriptToEvaluateOnNewDocumentRequestMutableBuilder[Self <: AddScriptToEvaluateOnNewDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddScriptToEvaluateOnNewDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldName(value: String): Self = StObject.set(x, "worldName", value.asInstanceOf[js.Any])
+    inline def setWorldName(value: String): Self = StObject.set(x, "worldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldNameUndefined: Self = StObject.set(x, "worldName", js.undefined)
+    inline def setWorldNameUndefined: Self = StObject.set(x, "worldName", js.undefined)
   }
 }

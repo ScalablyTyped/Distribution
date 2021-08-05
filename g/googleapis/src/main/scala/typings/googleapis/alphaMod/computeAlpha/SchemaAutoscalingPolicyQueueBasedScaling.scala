@@ -33,31 +33,23 @@ trait SchemaAutoscalingPolicyQueueBasedScaling extends StObject {
 }
 object SchemaAutoscalingPolicyQueueBasedScaling {
   
-  @scala.inline
-  def apply(): SchemaAutoscalingPolicyQueueBasedScaling = {
+  inline def apply(): SchemaAutoscalingPolicyQueueBasedScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoscalingPolicyQueueBasedScaling]
   }
   
-  @scala.inline
-  implicit class SchemaAutoscalingPolicyQueueBasedScalingMutableBuilder[Self <: SchemaAutoscalingPolicyQueueBasedScaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoscalingPolicyQueueBasedScaling](x: Self) {
     
-    @scala.inline
-    def setAcceptableBacklogPerInstance(value: Double): Self = StObject.set(x, "acceptableBacklogPerInstance", value.asInstanceOf[js.Any])
+    inline def setAcceptableBacklogPerInstance(value: Double): Self = StObject.set(x, "acceptableBacklogPerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptableBacklogPerInstanceUndefined: Self = StObject.set(x, "acceptableBacklogPerInstance", js.undefined)
+    inline def setAcceptableBacklogPerInstanceUndefined: Self = StObject.set(x, "acceptableBacklogPerInstance", js.undefined)
     
-    @scala.inline
-    def setCloudPubSub(value: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub): Self = StObject.set(x, "cloudPubSub", value.asInstanceOf[js.Any])
+    inline def setCloudPubSub(value: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub): Self = StObject.set(x, "cloudPubSub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudPubSubUndefined: Self = StObject.set(x, "cloudPubSub", js.undefined)
+    inline def setCloudPubSubUndefined: Self = StObject.set(x, "cloudPubSub", js.undefined)
     
-    @scala.inline
-    def setSingleWorkerThroughputPerSec(value: Double): Self = StObject.set(x, "singleWorkerThroughputPerSec", value.asInstanceOf[js.Any])
+    inline def setSingleWorkerThroughputPerSec(value: Double): Self = StObject.set(x, "singleWorkerThroughputPerSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleWorkerThroughputPerSecUndefined: Self = StObject.set(x, "singleWorkerThroughputPerSec", js.undefined)
+    inline def setSingleWorkerThroughputPerSecUndefined: Self = StObject.set(x, "singleWorkerThroughputPerSec", js.undefined)
   }
 }

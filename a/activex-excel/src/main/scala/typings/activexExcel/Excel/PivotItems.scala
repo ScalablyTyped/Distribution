@@ -15,7 +15,7 @@ trait PivotItems extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.PivotItems_typekey")
+  /* private */ @JSName("Excel.PivotItems_typekey")
   var ExcelDotPivotItems_typekey: PivotItems = js.native
   
   def Item(Index: String): js.Any = js.native

@@ -36,40 +36,29 @@ trait BasemapGalleryViewModelProperties extends StObject {
 }
 object BasemapGalleryViewModelProperties {
   
-  @scala.inline
-  def apply(): BasemapGalleryViewModelProperties = {
+  inline def apply(): BasemapGalleryViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasemapGalleryViewModelProperties]
   }
   
-  @scala.inline
-  implicit class BasemapGalleryViewModelPropertiesMutableBuilder[Self <: BasemapGalleryViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapGalleryViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setActiveBasemap(value: BasemapProperties): Self = StObject.set(x, "activeBasemap", value.asInstanceOf[js.Any])
+    inline def setActiveBasemap(value: BasemapProperties): Self = StObject.set(x, "activeBasemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveBasemapUndefined: Self = StObject.set(x, "activeBasemap", js.undefined)
+    inline def setActiveBasemapUndefined: Self = StObject.set(x, "activeBasemap", js.undefined)
     
-    @scala.inline
-    def setItems(value: CollectionProperties[BasemapGalleryItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: CollectionProperties[BasemapGalleryItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: BasemapGalleryItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BasemapGalleryItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

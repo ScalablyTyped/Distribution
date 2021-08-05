@@ -16,11 +16,11 @@ object mod {
   class Cache[T /* <: Container[js.Any] */] () extends StObject {
     def this(changes: Changes) = this()
     
-    var _children: js.Any = js.native
+    /* private */ var _children: js.Any = js.native
     
-    var _counters: js.Any = js.native
+    /* private */ var _counters: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
     def add(style: T): Unit = js.native
     
@@ -114,10 +114,8 @@ object mod {
     var style: String = js.native
   }
   
-  @scala.inline
-  def create(): FreeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FreeStyle]
-  @scala.inline
-  def create(changes: Changes): FreeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(changes.asInstanceOf[js.Any]).asInstanceOf[FreeStyle]
+  inline def create(): FreeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FreeStyle]
+  inline def create(changes: Changes): FreeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(changes.asInstanceOf[js.Any]).asInstanceOf[FreeStyle]
   
   trait Changes extends StObject {
     
@@ -129,8 +127,7 @@ object mod {
   }
   object Changes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (Container[js.Any], Double) => Unit,
       change: (Container[js.Any], Double, Double) => Unit,
       remove: (Container[js.Any], Double) => Unit
@@ -139,17 +136,13 @@ object mod {
       __obj.asInstanceOf[Changes]
     }
     
-    @scala.inline
-    implicit class ChangesMutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
+    extension [Self <: Changes](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (Container[js.Any], Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (Container[js.Any], Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChange(value: (Container[js.Any], Double, Double) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
+      inline def setChange(value: (Container[js.Any], Double, Double) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemove(value: (Container[js.Any], Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (Container[js.Any], Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     }
   }
   
@@ -161,20 +154,16 @@ object mod {
   }
   object Container {
     
-    @scala.inline
-    def apply[T](getStyles: () => String, id: String): Container[T] = {
+    inline def apply[T](getStyles: () => String, id: String): Container[T] = {
       val __obj = js.Dynamic.literal(getStyles = js.Any.fromFunction0(getStyles), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Container[T]]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container[?], T] (val x: Self & Container[T]) extends AnyVal {
+    extension [Self <: Container[?], T](x: Self & Container[T]) {
       
-      @scala.inline
-      def setGetStyles(value: () => String): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
+      inline def setGetStyles(value: () => String): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,26 +183,20 @@ object mod {
   }
   object Styles {
     
-    @scala.inline
-    def apply(): Styles = {
+    inline def apply(): Styles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Styles]
     }
     
-    @scala.inline
-    implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
+    extension [Self <: Styles](x: Self) {
       
-      @scala.inline
-      def set$displayName(value: String): Self = StObject.set(x, "$displayName", value.asInstanceOf[js.Any])
+      inline def set$displayName(value: String): Self = StObject.set(x, "$displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$displayNameUndefined: Self = StObject.set(x, "$displayName", js.undefined)
+      inline def set$displayNameUndefined: Self = StObject.set(x, "$displayName", js.undefined)
       
-      @scala.inline
-      def set$unique(value: Boolean): Self = StObject.set(x, "$unique", value.asInstanceOf[js.Any])
+      inline def set$unique(value: Boolean): Self = StObject.set(x, "$unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$uniqueUndefined: Self = StObject.set(x, "$unique", js.undefined)
+      inline def set$uniqueUndefined: Self = StObject.set(x, "$unique", js.undefined)
     }
   }
 }

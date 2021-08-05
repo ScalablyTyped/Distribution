@@ -29,26 +29,20 @@ trait ChartAddSeriesEventObject extends StObject {
 }
 object ChartAddSeriesEventObject {
   
-  @scala.inline
-  def apply(options: SeriesOptionsType, preventDefault: js.Function, target: Chart_): ChartAddSeriesEventObject = {
+  inline def apply(options: SeriesOptionsType, preventDefault: js.Function, target: Chart_): ChartAddSeriesEventObject = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("addSeries")
     __obj.asInstanceOf[ChartAddSeriesEventObject]
   }
   
-  @scala.inline
-  implicit class ChartAddSeriesEventObjectMutableBuilder[Self <: ChartAddSeriesEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAddSeriesEventObject](x: Self) {
     
-    @scala.inline
-    def setOptions(value: SeriesOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SeriesOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: addSeries): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: addSeries): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

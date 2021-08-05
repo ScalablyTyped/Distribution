@@ -15,31 +15,25 @@ trait FontFamilyProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
 }
 object FontFamilyProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FontFamilyProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FontFamilyProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontFamilyProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class FontFamilyPropsMutableBuilder[Self <: FontFamilyProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FontFamilyProps[ThemeType]) extends AnyVal {
+  extension [Self <: FontFamilyProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FontFamilyProps[ThemeType]) {
     
-    @scala.inline
-    def setFontFamily(
+    inline def setFontFamily(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
+    inline def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    @scala.inline
-    def setFontFamilyVarargs(
+    inline def setFontFamilyVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Null)*
     ): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
   }

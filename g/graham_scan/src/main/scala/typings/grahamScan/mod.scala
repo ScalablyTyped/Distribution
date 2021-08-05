@@ -28,20 +28,16 @@ object mod {
   }
   object ConvexHullGrahamScan {
     
-    @scala.inline
-    def apply(addPoint: (Double, Double) => Unit, getHull: () => js.Array[X]): ConvexHullGrahamScan = {
+    inline def apply(addPoint: (Double, Double) => Unit, getHull: () => js.Array[X]): ConvexHullGrahamScan = {
       val __obj = js.Dynamic.literal(addPoint = js.Any.fromFunction2(addPoint), getHull = js.Any.fromFunction0(getHull))
       __obj.asInstanceOf[ConvexHullGrahamScan]
     }
     
-    @scala.inline
-    implicit class ConvexHullGrahamScanMutableBuilder[Self <: ConvexHullGrahamScan] (val x: Self) extends AnyVal {
+    extension [Self <: ConvexHullGrahamScan](x: Self) {
       
-      @scala.inline
-      def setAddPoint(value: (Double, Double) => Unit): Self = StObject.set(x, "addPoint", js.Any.fromFunction2(value))
+      inline def setAddPoint(value: (Double, Double) => Unit): Self = StObject.set(x, "addPoint", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetHull(value: () => js.Array[X]): Self = StObject.set(x, "getHull", js.Any.fromFunction0(value))
+      inline def setGetHull(value: () => js.Array[X]): Self = StObject.set(x, "getHull", js.Any.fromFunction0(value))
     }
   }
 }

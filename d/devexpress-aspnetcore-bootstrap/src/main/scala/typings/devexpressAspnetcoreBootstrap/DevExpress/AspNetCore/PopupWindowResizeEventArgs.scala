@@ -12,16 +12,13 @@ trait PopupWindowResizeEventArgs
 }
 object PopupWindowResizeEventArgs {
   
-  @scala.inline
-  def apply(resizeState: Double, sender: Control, window: BootstrapPopupWindow): PopupWindowResizeEventArgs = {
+  inline def apply(resizeState: Double, sender: Control, window: BootstrapPopupWindow): PopupWindowResizeEventArgs = {
     val __obj = js.Dynamic.literal(resizeState = resizeState.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupWindowResizeEventArgs]
   }
   
-  @scala.inline
-  implicit class PopupWindowResizeEventArgsMutableBuilder[Self <: PopupWindowResizeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PopupWindowResizeEventArgs](x: Self) {
     
-    @scala.inline
-    def setResizeState(value: Double): Self = StObject.set(x, "resizeState", value.asInstanceOf[js.Any])
+    inline def setResizeState(value: Double): Self = StObject.set(x, "resizeState", value.asInstanceOf[js.Any])
   }
 }

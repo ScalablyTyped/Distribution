@@ -23,25 +23,19 @@ trait SetDesiredCapacityType extends StObject {
 }
 object SetDesiredCapacityType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName, DesiredCapacity: AutoScalingGroupDesiredCapacity): SetDesiredCapacityType = {
+  inline def apply(AutoScalingGroupName: ResourceName, DesiredCapacity: AutoScalingGroupDesiredCapacity): SetDesiredCapacityType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], DesiredCapacity = DesiredCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDesiredCapacityType]
   }
   
-  @scala.inline
-  implicit class SetDesiredCapacityTypeMutableBuilder[Self <: SetDesiredCapacityType] (val x: Self) extends AnyVal {
+  extension [Self <: SetDesiredCapacityType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
+    inline def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorCooldown(value: HonorCooldown): Self = StObject.set(x, "HonorCooldown", value.asInstanceOf[js.Any])
+    inline def setHonorCooldown(value: HonorCooldown): Self = StObject.set(x, "HonorCooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorCooldownUndefined: Self = StObject.set(x, "HonorCooldown", js.undefined)
+    inline def setHonorCooldownUndefined: Self = StObject.set(x, "HonorCooldown", js.undefined)
   }
 }

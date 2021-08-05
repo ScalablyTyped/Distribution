@@ -8,11 +8,9 @@ object spectedStrings {
   
   @js.native
   sealed trait Result extends StObject
-  @scala.inline
-  def Result: Result = "Result".asInstanceOf[Result]
+  inline def Result: Result = "Result".asInstanceOf[Result]
   
   @js.native
   sealed trait SpecObject extends StObject
-  @scala.inline
-  def SpecObject: SpecObject = "SpecObject".asInstanceOf[SpecObject]
+  inline def SpecObject: SpecObject = "SpecObject".asInstanceOf[SpecObject]
 }

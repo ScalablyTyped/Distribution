@@ -14,8 +14,7 @@ object emailMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def send(options: Attachments): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def send(options: Attachments): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait MailComposer extends StObject {
@@ -34,20 +33,15 @@ object emailMod {
     @js.native
     val ^ : typings.meteor.emailMod.MailComposerStatic = js.native
     
-    @scala.inline
-    implicit class MailComposerMutableBuilder[Self <: typings.meteor.emailMod.MailComposer] (val x: Self) extends AnyVal {
+    extension [Self <: typings.meteor.emailMod.MailComposer](x: Self) {
       
-      @scala.inline
-      def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
+      inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPipe(value: js.Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
+      inline def setPipe(value: js.Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMessageOption(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setMessageOption", js.Any.fromFunction4(value))
+      inline def setSetMessageOption(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setMessageOption", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setStreamMessage(value: () => Unit): Self = StObject.set(x, "streamMessage", js.Any.fromFunction0(value))
+      inline def setStreamMessage(value: () => Unit): Self = StObject.set(x, "streamMessage", js.Any.fromFunction0(value))
     }
   }
   
@@ -86,8 +80,7 @@ object emailMod {
   }
   object MailComposerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       charset: String,
       encoding: String,
       escapeSMTP: Boolean,
@@ -98,23 +91,17 @@ object emailMod {
       __obj.asInstanceOf[typings.meteor.emailMod.MailComposerOptions]
     }
     
-    @scala.inline
-    implicit class MailComposerOptionsMutableBuilder[Self <: typings.meteor.emailMod.MailComposerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.meteor.emailMod.MailComposerOptions](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeSMTP(value: Boolean): Self = StObject.set(x, "escapeSMTP", value.asInstanceOf[js.Any])
+      inline def setEscapeSMTP(value: Boolean): Self = StObject.set(x, "escapeSMTP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceEmbeddedImages(value: Boolean): Self = StObject.set(x, "forceEmbeddedImages", value.asInstanceOf[js.Any])
+      inline def setForceEmbeddedImages(value: Boolean): Self = StObject.set(x, "forceEmbeddedImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
+      inline def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
     }
   }
   

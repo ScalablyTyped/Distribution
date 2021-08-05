@@ -23,31 +23,23 @@ trait EventInformation extends StObject {
 }
 object EventInformation {
   
-  @scala.inline
-  def apply(): EventInformation = {
+  inline def apply(): EventInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventInformation]
   }
   
-  @scala.inline
-  implicit class EventInformationMutableBuilder[Self <: EventInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EventInformation](x: Self) {
     
-    @scala.inline
-    def setEventDescription(value: String): Self = StObject.set(x, "EventDescription", value.asInstanceOf[js.Any])
+    inline def setEventDescription(value: String): Self = StObject.set(x, "EventDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescriptionUndefined: Self = StObject.set(x, "EventDescription", js.undefined)
+    inline def setEventDescriptionUndefined: Self = StObject.set(x, "EventDescription", js.undefined)
     
-    @scala.inline
-    def setEventSubType(value: String): Self = StObject.set(x, "EventSubType", value.asInstanceOf[js.Any])
+    inline def setEventSubType(value: String): Self = StObject.set(x, "EventSubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSubTypeUndefined: Self = StObject.set(x, "EventSubType", js.undefined)
+    inline def setEventSubTypeUndefined: Self = StObject.set(x, "EventSubType", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

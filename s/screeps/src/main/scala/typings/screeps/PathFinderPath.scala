@@ -38,28 +38,21 @@ trait PathFinderPath extends StObject {
 }
 object PathFinderPath {
   
-  @scala.inline
-  def apply(cost: Double, incomplete: Boolean, ops: Double, path: js.Array[RoomPosition]): PathFinderPath = {
+  inline def apply(cost: Double, incomplete: Boolean, ops: Double, path: js.Array[RoomPosition]): PathFinderPath = {
     val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any], incomplete = incomplete.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathFinderPath]
   }
   
-  @scala.inline
-  implicit class PathFinderPathMutableBuilder[Self <: PathFinderPath] (val x: Self) extends AnyVal {
+  extension [Self <: PathFinderPath](x: Self) {
     
-    @scala.inline
-    def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomplete(value: Boolean): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+    inline def setIncomplete(value: Boolean): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(value: Double): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: Double): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[RoomPosition]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[RoomPosition]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: RoomPosition*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: RoomPosition*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

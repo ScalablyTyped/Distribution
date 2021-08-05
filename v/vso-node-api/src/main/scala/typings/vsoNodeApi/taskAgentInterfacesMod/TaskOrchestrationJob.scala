@@ -28,8 +28,7 @@ trait TaskOrchestrationJob
 }
 object TaskOrchestrationJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     demands: js.Array[js.Any],
     executeAs: IdentityRef,
     executionMode: String,
@@ -44,37 +43,26 @@ object TaskOrchestrationJob {
     __obj.asInstanceOf[TaskOrchestrationJob]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationJobMutableBuilder[Self <: TaskOrchestrationJob] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationJob](x: Self) {
     
-    @scala.inline
-    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
-    @scala.inline
-    def setExecuteAs(value: IdentityRef): Self = StObject.set(x, "executeAs", value.asInstanceOf[js.Any])
+    inline def setExecuteAs(value: IdentityRef): Self = StObject.set(x, "executeAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionMode(value: String): Self = StObject.set(x, "executionMode", value.asInstanceOf[js.Any])
+    inline def setExecutionMode(value: String): Self = StObject.set(x, "executionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTimeout(value: js.Any): Self = StObject.set(x, "executionTimeout", value.asInstanceOf[js.Any])
+    inline def setExecutionTimeout(value: js.Any): Self = StObject.set(x, "executionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasks(value: js.Array[TaskInstance]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[TaskInstance]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: TaskInstance*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TaskInstance*): Self = StObject.set(x, "tasks", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

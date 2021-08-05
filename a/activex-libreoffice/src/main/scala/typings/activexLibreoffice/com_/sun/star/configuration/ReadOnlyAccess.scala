@@ -24,8 +24,7 @@ trait ReadOnlyAccess
 }
 object ReadOnlyAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     create: String => Unit,
     getByHierarchicalName: String => js.Any,
@@ -37,10 +36,8 @@ object ReadOnlyAccess {
     __obj.asInstanceOf[ReadOnlyAccess]
   }
   
-  @scala.inline
-  implicit class ReadOnlyAccessMutableBuilder[Self <: ReadOnlyAccess] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOnlyAccess](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

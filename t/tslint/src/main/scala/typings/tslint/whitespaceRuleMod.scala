@@ -24,19 +24,16 @@ object whitespaceRuleMod {
     @JSImport("tslint/lib/rules/whitespaceRule", "Rule.FAILURE_STRING_INVALID")
     @js.native
     def FAILURE_STRING_INVALID: String = js.native
-    @scala.inline
-    def FAILURE_STRING_INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_INVALID")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_INVALID")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/whitespaceRule", "Rule.FAILURE_STRING_MISSING")
     @js.native
     def FAILURE_STRING_MISSING: String = js.native
-    @scala.inline
-    def FAILURE_STRING_MISSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_MISSING")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_MISSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_MISSING")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/whitespaceRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

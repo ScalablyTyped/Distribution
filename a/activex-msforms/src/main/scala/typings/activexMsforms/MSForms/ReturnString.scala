@@ -6,27 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReturnString extends StObject {
   
-  @JSName("MSForms.ReturnString_typekey")
+  /* private */ @JSName("MSForms.ReturnString_typekey")
   var MSFormsDotReturnString_typekey: ReturnString
   
   var Value: String
 }
 object ReturnString {
   
-  @scala.inline
-  def apply(MSFormsDotReturnString_typekey: ReturnString, Value: String): ReturnString = {
+  inline def apply(MSFormsDotReturnString_typekey: ReturnString, Value: String): ReturnString = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("MSForms.ReturnString_typekey")(MSFormsDotReturnString_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnString]
   }
   
-  @scala.inline
-  implicit class ReturnStringMutableBuilder[Self <: ReturnString] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnString](x: Self) {
     
-    @scala.inline
-    def setMSFormsDotReturnString_typekey(value: ReturnString): Self = StObject.set(x, "MSForms.ReturnString_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotReturnString_typekey(value: ReturnString): Self = StObject.set(x, "MSForms.ReturnString_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

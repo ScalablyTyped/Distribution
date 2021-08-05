@@ -23,6 +23,5 @@ object PlayReadyContentResolver {
     * @return The first service request operation required to resolve the content.
     */
   /* static member */
-  @scala.inline
-  def serviceRequest(contentHeader: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader): IPlayReadyServiceRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceRequest")(contentHeader.asInstanceOf[js.Any]).asInstanceOf[IPlayReadyServiceRequest]
+  inline def serviceRequest(contentHeader: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader): IPlayReadyServiceRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceRequest")(contentHeader.asInstanceOf[js.Any]).asInstanceOf[IPlayReadyServiceRequest]
 }

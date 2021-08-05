@@ -20,8 +20,7 @@ trait MergeStrategy
 }
 object MergeStrategy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Disallowed: MergeStrategySymbol,
     OverwriteChanges: MergeStrategySymbol,
     PreserveChanges: MergeStrategySymbol,
@@ -35,19 +34,14 @@ object MergeStrategy {
     __obj.asInstanceOf[MergeStrategy]
   }
   
-  @scala.inline
-  implicit class MergeStrategyMutableBuilder[Self <: MergeStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: MergeStrategy](x: Self) {
     
-    @scala.inline
-    def setDisallowed(value: MergeStrategySymbol): Self = StObject.set(x, "Disallowed", value.asInstanceOf[js.Any])
+    inline def setDisallowed(value: MergeStrategySymbol): Self = StObject.set(x, "Disallowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteChanges(value: MergeStrategySymbol): Self = StObject.set(x, "OverwriteChanges", value.asInstanceOf[js.Any])
+    inline def setOverwriteChanges(value: MergeStrategySymbol): Self = StObject.set(x, "OverwriteChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveChanges(value: MergeStrategySymbol): Self = StObject.set(x, "PreserveChanges", value.asInstanceOf[js.Any])
+    inline def setPreserveChanges(value: MergeStrategySymbol): Self = StObject.set(x, "PreserveChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipMerge(value: MergeStrategySymbol): Self = StObject.set(x, "SkipMerge", value.asInstanceOf[js.Any])
+    inline def setSkipMerge(value: MergeStrategySymbol): Self = StObject.set(x, "SkipMerge", value.asInstanceOf[js.Any])
   }
 }

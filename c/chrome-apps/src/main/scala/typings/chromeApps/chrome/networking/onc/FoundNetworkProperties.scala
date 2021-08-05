@@ -23,34 +23,25 @@ trait FoundNetworkProperties extends StObject {
 }
 object FoundNetworkProperties {
   
-  @scala.inline
-  def apply(NetworkId: String, Status: String, Technology: String): FoundNetworkProperties = {
+  inline def apply(NetworkId: String, Status: String, Technology: String): FoundNetworkProperties = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Technology = Technology.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoundNetworkProperties]
   }
   
-  @scala.inline
-  implicit class FoundNetworkPropertiesMutableBuilder[Self <: FoundNetworkProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FoundNetworkProperties](x: Self) {
     
-    @scala.inline
-    def setLongName(value: String): Self = StObject.set(x, "LongName", value.asInstanceOf[js.Any])
+    inline def setLongName(value: String): Self = StObject.set(x, "LongName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongNameUndefined: Self = StObject.set(x, "LongName", js.undefined)
+    inline def setLongNameUndefined: Self = StObject.set(x, "LongName", js.undefined)
     
-    @scala.inline
-    def setNetworkId(value: String): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: String): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortName(value: String): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: String): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechnology(value: String): Self = StObject.set(x, "Technology", value.asInstanceOf[js.Any])
+    inline def setTechnology(value: String): Self = StObject.set(x, "Technology", value.asInstanceOf[js.Any])
   }
 }

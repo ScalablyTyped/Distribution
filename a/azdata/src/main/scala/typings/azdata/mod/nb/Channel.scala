@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Channel extends StObject
 object Channel {
   
-  @scala.inline
-  def execute_reply: typings.azdata.azdataStrings.execute_reply = "execute_reply".asInstanceOf[typings.azdata.azdataStrings.execute_reply]
+  inline def execute_reply: typings.azdata.azdataStrings.execute_reply = "execute_reply".asInstanceOf[typings.azdata.azdataStrings.execute_reply]
   
-  @scala.inline
-  def iopub: typings.azdata.azdataStrings.iopub = "iopub".asInstanceOf[typings.azdata.azdataStrings.iopub]
+  inline def iopub: typings.azdata.azdataStrings.iopub = "iopub".asInstanceOf[typings.azdata.azdataStrings.iopub]
   
-  @scala.inline
-  def shell: typings.azdata.azdataStrings.shell = "shell".asInstanceOf[typings.azdata.azdataStrings.shell]
+  inline def shell: typings.azdata.azdataStrings.shell = "shell".asInstanceOf[typings.azdata.azdataStrings.shell]
   
-  @scala.inline
-  def stdin: typings.azdata.azdataStrings.stdin = "stdin".asInstanceOf[typings.azdata.azdataStrings.stdin]
+  inline def stdin: typings.azdata.azdataStrings.stdin = "stdin".asInstanceOf[typings.azdata.azdataStrings.stdin]
 }

@@ -15,16 +15,13 @@ trait PickImplbeforeUnchecked extends StObject {
 }
 object PickImplbeforeUnchecked {
   
-  @scala.inline
-  def apply(beforeUnchecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeUnchecked = {
+  inline def apply(beforeUnchecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeUnchecked = {
     val __obj = js.Dynamic.literal(beforeUnchecked = beforeUnchecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeforeUnchecked]
   }
   
-  @scala.inline
-  implicit class PickImplbeforeUncheckedMutableBuilder[Self <: PickImplbeforeUnchecked] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbeforeUnchecked](x: Self) {
     
-    @scala.inline
-    def setBeforeUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeUnchecked", value.asInstanceOf[js.Any])
+    inline def setBeforeUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeUnchecked", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ object buttonOrMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ButtonOrProps {
     
-    @scala.inline
-    def apply(): ButtonOrProps = {
+    inline def apply(): ButtonOrProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonOrProps]
     }
@@ -39,32 +38,24 @@ object buttonOrMod extends Shortcut {
   }
   object StrictButtonOrProps {
     
-    @scala.inline
-    def apply(): StrictButtonOrProps = {
+    inline def apply(): StrictButtonOrProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictButtonOrProps]
     }
     
-    @scala.inline
-    implicit class StrictButtonOrPropsMutableBuilder[Self <: StrictButtonOrProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictButtonOrProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setText(value: Double | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Double | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   

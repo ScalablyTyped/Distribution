@@ -20,8 +20,7 @@ object objectMod {
        with ObjectConfig
   object ObjectProps {
     
-    @scala.inline
-    def apply(name: String, onChange: ObjectValue => ObjectValue | Unit): ObjectProps = {
+    inline def apply(name: String, onChange: ObjectValue => ObjectValue | Unit): ObjectProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[ObjectProps]
     }

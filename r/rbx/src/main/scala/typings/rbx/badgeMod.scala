@@ -28,10 +28,8 @@ object badgeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  @scala.inline
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/badge", "makeValidatingTransform")
   @js.native
@@ -57,44 +55,32 @@ object badgeMod {
   }
   object BadgeHelpersProps {
     
-    @scala.inline
-    def apply(): BadgeHelpersProps = {
+    inline def apply(): BadgeHelpersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadgeHelpersProps]
     }
     
-    @scala.inline
-    implicit class BadgeHelpersPropsMutableBuilder[Self <: BadgeHelpersProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeHelpersProps](x: Self) {
       
-      @scala.inline
-      def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
+      inline def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
+      inline def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
       
-      @scala.inline
-      def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
+      inline def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
+      inline def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
       
-      @scala.inline
-      def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
+      inline def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
+      inline def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
       
-      @scala.inline
-      def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
+      inline def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
+      inline def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     }
   }
 }

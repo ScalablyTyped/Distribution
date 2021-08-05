@@ -18,19 +18,15 @@ trait ChangeResourceRecordSetsRequest extends StObject {
 }
 object ChangeResourceRecordSetsRequest {
   
-  @scala.inline
-  def apply(ChangeBatch: ChangeBatch, HostedZoneId: ResourceId): ChangeResourceRecordSetsRequest = {
+  inline def apply(ChangeBatch: ChangeBatch, HostedZoneId: ResourceId): ChangeResourceRecordSetsRequest = {
     val __obj = js.Dynamic.literal(ChangeBatch = ChangeBatch.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeResourceRecordSetsRequest]
   }
   
-  @scala.inline
-  implicit class ChangeResourceRecordSetsRequestMutableBuilder[Self <: ChangeResourceRecordSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeResourceRecordSetsRequest](x: Self) {
     
-    @scala.inline
-    def setChangeBatch(value: ChangeBatch): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
+    inline def setChangeBatch(value: ChangeBatch): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
   }
 }

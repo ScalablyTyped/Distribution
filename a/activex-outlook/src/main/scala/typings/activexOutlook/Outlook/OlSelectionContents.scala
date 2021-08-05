@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OlSelectionContents {
   
-  @scala.inline
-  def olConversationHeaders: `1` = 1.asInstanceOf[`1`]
+  inline def olConversationHeaders: `1` = 1.asInstanceOf[`1`]
 }

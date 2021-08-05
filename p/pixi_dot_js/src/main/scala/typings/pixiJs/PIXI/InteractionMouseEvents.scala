@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InteractionMouseEvents extends StObject
 object InteractionMouseEvents {
   
-  @scala.inline
-  def click: typings.pixiJs.pixiJsStrings.click = "click".asInstanceOf[typings.pixiJs.pixiJsStrings.click]
+  inline def click: typings.pixiJs.pixiJsStrings.click = "click".asInstanceOf[typings.pixiJs.pixiJsStrings.click]
   
-  @scala.inline
-  def mousedown: typings.pixiJs.pixiJsStrings.mousedown = "mousedown".asInstanceOf[typings.pixiJs.pixiJsStrings.mousedown]
+  inline def mousedown: typings.pixiJs.pixiJsStrings.mousedown = "mousedown".asInstanceOf[typings.pixiJs.pixiJsStrings.mousedown]
   
-  @scala.inline
-  def mousemove: typings.pixiJs.pixiJsStrings.mousemove = "mousemove".asInstanceOf[typings.pixiJs.pixiJsStrings.mousemove]
+  inline def mousemove: typings.pixiJs.pixiJsStrings.mousemove = "mousemove".asInstanceOf[typings.pixiJs.pixiJsStrings.mousemove]
   
-  @scala.inline
-  def mouseout: typings.pixiJs.pixiJsStrings.mouseout = "mouseout".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseout]
+  inline def mouseout: typings.pixiJs.pixiJsStrings.mouseout = "mouseout".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseout]
   
-  @scala.inline
-  def mouseover: typings.pixiJs.pixiJsStrings.mouseover = "mouseover".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseover]
+  inline def mouseover: typings.pixiJs.pixiJsStrings.mouseover = "mouseover".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseover]
   
-  @scala.inline
-  def mouseup: typings.pixiJs.pixiJsStrings.mouseup = "mouseup".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseup]
+  inline def mouseup: typings.pixiJs.pixiJsStrings.mouseup = "mouseup".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseup]
   
-  @scala.inline
-  def mouseupoutside: typings.pixiJs.pixiJsStrings.mouseupoutside = "mouseupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseupoutside]
+  inline def mouseupoutside: typings.pixiJs.pixiJsStrings.mouseupoutside = "mouseupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseupoutside]
   
-  @scala.inline
-  def rightclick: typings.pixiJs.pixiJsStrings.rightclick = "rightclick".asInstanceOf[typings.pixiJs.pixiJsStrings.rightclick]
+  inline def rightclick: typings.pixiJs.pixiJsStrings.rightclick = "rightclick".asInstanceOf[typings.pixiJs.pixiJsStrings.rightclick]
   
-  @scala.inline
-  def rightdown: typings.pixiJs.pixiJsStrings.rightdown = "rightdown".asInstanceOf[typings.pixiJs.pixiJsStrings.rightdown]
+  inline def rightdown: typings.pixiJs.pixiJsStrings.rightdown = "rightdown".asInstanceOf[typings.pixiJs.pixiJsStrings.rightdown]
   
-  @scala.inline
-  def rightup: typings.pixiJs.pixiJsStrings.rightup = "rightup".asInstanceOf[typings.pixiJs.pixiJsStrings.rightup]
+  inline def rightup: typings.pixiJs.pixiJsStrings.rightup = "rightup".asInstanceOf[typings.pixiJs.pixiJsStrings.rightup]
   
-  @scala.inline
-  def rightupoutside: typings.pixiJs.pixiJsStrings.rightupoutside = "rightupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.rightupoutside]
+  inline def rightupoutside: typings.pixiJs.pixiJsStrings.rightupoutside = "rightupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.rightupoutside]
 }

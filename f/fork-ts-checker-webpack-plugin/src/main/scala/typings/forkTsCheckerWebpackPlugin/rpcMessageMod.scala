@@ -17,34 +17,24 @@ object rpcMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRpcCall[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, index: Double, payload: RpcProcedurePayload[TProcedure]): RpcCall[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcCall")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcCall[TProcedure]]
+  inline def createRpcCall[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, index: Double, payload: RpcProcedurePayload[TProcedure]): RpcCall[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcCall")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcCall[TProcedure]]
   
-  @scala.inline
-  def createRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](procedure: TProcedure, id: Double, `type`: TType, payload: TPayload): RpcMessage[TType, TProcedure, TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessage")(procedure.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
-  @scala.inline
-  def createRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](procedure: TProcedure, id: Double, `type`: TType, payload: TPayload, source: String): RpcMessage[TType, TProcedure, TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessage")(procedure.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
+  inline def createRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](procedure: TProcedure, id: Double, `type`: TType, payload: TPayload): RpcMessage[TType, TProcedure, TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessage")(procedure.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
+  inline def createRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](procedure: TProcedure, id: Double, `type`: TType, payload: TPayload, source: String): RpcMessage[TType, TProcedure, TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessage")(procedure.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
   
-  @scala.inline
-  def createRpcReturn[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, index: Double, payload: RpcProcedureResult[TProcedure]): RpcReturn[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcReturn")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcReturn[TProcedure]]
+  inline def createRpcReturn[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, index: Double, payload: RpcProcedureResult[TProcedure]): RpcReturn[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcReturn")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcReturn[TProcedure]]
   
-  @scala.inline
-  def createRpcThrow[TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TError](procedure: TProcedure, index: Double, payload: RpcRemoteError): RpcThrow[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcThrow")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcThrow[TProcedure]]
+  inline def createRpcThrow[TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TError](procedure: TProcedure, index: Double, payload: RpcRemoteError): RpcThrow[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcThrow")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcThrow[TProcedure]]
   
-  @scala.inline
-  def getRpcMessageKey(message: RpcMessage[String, RpcProcedure[js.Any, js.Any], js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRpcMessageKey")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getRpcMessageKey(message: RpcMessage[String, RpcProcedure[js.Any, js.Any], js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRpcMessageKey")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isRpcCallMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcCall<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcCallMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcCall<TProcedure> */ Boolean]
+  inline def isRpcCallMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcCall<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcCallMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcCall<TProcedure> */ Boolean]
   
-  @scala.inline
-  def isRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcMessage<TType, TProcedure, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcMessage<TType, TProcedure, unknown> */ Boolean]
+  inline def isRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcMessage<TType, TProcedure, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcMessage<TType, TProcedure, unknown> */ Boolean]
   
-  @scala.inline
-  def isRpcReturnMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcReturn<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcReturnMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcReturn<TProcedure> */ Boolean]
+  inline def isRpcReturnMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcReturn<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcReturnMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcReturn<TProcedure> */ Boolean]
   
-  @scala.inline
-  def isRpcThrowMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcThrow<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcThrowMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcThrow<TProcedure> */ Boolean]
+  inline def isRpcThrowMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcThrow<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcThrowMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcThrow<TProcedure> */ Boolean]
   
   type RpcCall[TProcedure /* <: RpcProcedure[js.Any, js.Any] */] = RpcMessage[call, TProcedure, RpcProcedurePayload[TProcedure]]
   
@@ -64,36 +54,27 @@ object rpcMessageMod {
   }
   object RpcMessage {
     
-    @scala.inline
-    def apply[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](id: Double, payload: TPayload, procedure: TProcedure, `type`: TType): RpcMessage[TType, TProcedure, TPayload] = {
+    inline def apply[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](id: Double, payload: TPayload, procedure: TProcedure, `type`: TType): RpcMessage[TType, TProcedure, TPayload] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any], rpc = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
     }
     
-    @scala.inline
-    implicit class RpcMessageMutableBuilder[Self <: RpcMessage[?, ?, ?], TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload] (val x: Self & (RpcMessage[TType, TProcedure, TPayload])) extends AnyVal {
+    extension [Self <: RpcMessage[?, ?, ?], TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](x: Self & (RpcMessage[TType, TProcedure, TPayload])) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: TPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: TPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcedure(value: TProcedure): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+      inline def setProcedure(value: TProcedure): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRpc(value: `true`): Self = StObject.set(x, "rpc", value.asInstanceOf[js.Any])
+      inline def setRpc(value: `true`): Self = StObject.set(x, "rpc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,23 +86,18 @@ object rpcMessageMod {
   }
   object RpcRemoteError {
     
-    @scala.inline
-    def apply(message: String): RpcRemoteError = {
+    inline def apply(message: String): RpcRemoteError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[RpcRemoteError]
     }
     
-    @scala.inline
-    implicit class RpcRemoteErrorMutableBuilder[Self <: RpcRemoteError] (val x: Self) extends AnyVal {
+    extension [Self <: RpcRemoteError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   

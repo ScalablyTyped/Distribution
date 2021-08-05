@@ -17,31 +17,23 @@ trait BubbleDataset
 }
 object BubbleDataset {
   
-  @scala.inline
-  def apply(label: String): BubbleDataset = {
+  inline def apply(label: String): BubbleDataset = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleDataset]
   }
   
-  @scala.inline
-  implicit class BubbleDatasetMutableBuilder[Self <: BubbleDataset] (val x: Self) extends AnyVal {
+  extension [Self <: BubbleDataset](x: Self) {
     
-    @scala.inline
-    def setConfig(value: BubbleDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: BubbleDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[BubbleValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[BubbleValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: BubbleValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: BubbleValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

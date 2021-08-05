@@ -22,38 +22,28 @@ object anon {
   }
   object Base {
     
-    @scala.inline
-    def apply(disp: Double, scale: Double): Base = {
+    inline def apply(disp: Double, scale: Double): Base = {
       val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setBase(value: X86Register): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: X86Register): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
+      inline def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: X86Register): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: X86Register): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegment(value: X86Register): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: X86Register): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+      inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     }
   }
   
@@ -65,23 +55,18 @@ object anon {
   }
   object BaseDisp {
     
-    @scala.inline
-    def apply(disp: Double): BaseDisp = {
+    inline def apply(disp: Double): BaseDisp = {
       val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseDisp]
     }
     
-    @scala.inline
-    implicit class BaseDispMutableBuilder[Self <: BaseDisp] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDisp](x: Self) {
       
-      @scala.inline
-      def setBase(value: MipsRegister): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: MipsRegister): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
+      inline def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,44 +105,32 @@ object anon {
   }
   object Block {
     
-    @scala.inline
-    def apply(): Block = {
+    inline def apply(): Block = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
+      inline def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
       
-      @scala.inline
-      def setCompile(value: Boolean): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
+      inline def setCompile(value: Boolean): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
+      inline def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
       
-      @scala.inline
-      def setExec(value: Boolean): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+      inline def setExec(value: Boolean): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+      inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
       
-      @scala.inline
-      def setRet(value: Boolean): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
+      inline def setRet(value: Boolean): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
+      inline def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
     }
   }
   
@@ -173,32 +146,24 @@ object anon {
   }
   object Disp {
     
-    @scala.inline
-    def apply(disp: Double, scale: Double): Disp = {
+    inline def apply(disp: Double, scale: Double): Disp = {
       val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disp]
     }
     
-    @scala.inline
-    implicit class DispMutableBuilder[Self <: Disp] (val x: Self) extends AnyVal {
+    extension [Self <: Disp](x: Self) {
       
-      @scala.inline
-      def setBase(value: ArmRegister): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: ArmRegister): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
+      inline def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: ArmRegister): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: ArmRegister): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,29 +177,22 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(disp: Double): Index = {
+    inline def apply(disp: Double): Index = {
       val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setBase(value: Arm64Register): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Arm64Register): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
+      inline def setDisp(value: Double): Self = StObject.set(x, "disp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Arm64Register): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Arm64Register): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
   
@@ -246,21 +204,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: ArmShifter, value: Double): Type = {
+    inline def apply(`type`: ArmShifter, value: Double): Type = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: ArmShifter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ArmShifter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,21 +226,17 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(`type`: Arm64Shifter, value: Double): Value = {
+    inline def apply(`type`: Arm64Shifter, value: Double): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setType(value: Arm64Shifter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Arm64Shifter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -379,8 +329,7 @@ object anon {
   }
   object Wrapper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $alloc: MethodDispatcher[js.Object],
       $className: String,
       $dispose: () => Unit,
@@ -395,35 +344,25 @@ object anon {
       __obj.asInstanceOf[Wrapper]
     }
     
-    @scala.inline
-    implicit class WrapperMutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
+    extension [Self <: Wrapper](x: Self) {
       
-      @scala.inline
-      def set$alloc(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$alloc", value.asInstanceOf[js.Any])
+      inline def set$alloc(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$alloc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$className(value: String): Self = StObject.set(x, "$className", value.asInstanceOf[js.Any])
+      inline def set$className(value: String): Self = StObject.set(x, "$className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$dispose(value: () => Unit): Self = StObject.set(x, "$dispose", js.Any.fromFunction0(value))
+      inline def set$dispose(value: () => Unit): Self = StObject.set(x, "$dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set$init(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$init", value.asInstanceOf[js.Any])
+      inline def set$init(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$new(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$new", value.asInstanceOf[js.Any])
+      inline def set$new(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$new", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ownMembers(value: js.Array[String]): Self = StObject.set(x, "$ownMembers", value.asInstanceOf[js.Any])
+      inline def set$ownMembers(value: js.Array[String]): Self = StObject.set(x, "$ownMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ownMembersVarargs(value: String*): Self = StObject.set(x, "$ownMembers", js.Array(value :_*))
+      inline def set$ownMembersVarargs(value: String*): Self = StObject.set(x, "$ownMembers", js.Array(value :_*))
       
-      @scala.inline
-      def set$super(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "$super", value.asInstanceOf[js.Any])
+      inline def set$super(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "$super", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClass(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     }
   }
 }

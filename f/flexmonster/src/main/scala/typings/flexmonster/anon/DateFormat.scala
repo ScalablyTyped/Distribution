@@ -16,37 +16,27 @@ trait DateFormat extends StObject {
 }
 object DateFormat {
   
-  @scala.inline
-  def apply(): DateFormat = {
+  inline def apply(): DateFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateFormat]
   }
   
-  @scala.inline
-  implicit class DateFormatMutableBuilder[Self <: DateFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DateFormat](x: Self) {
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setLiveSearch(value: Boolean): Self = StObject.set(x, "liveSearch", value.asInstanceOf[js.Any])
+    inline def setLiveSearch(value: Boolean): Self = StObject.set(x, "liveSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSearchUndefined: Self = StObject.set(x, "liveSearch", js.undefined)
+    inline def setLiveSearchUndefined: Self = StObject.set(x, "liveSearch", js.undefined)
     
-    @scala.inline
-    def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
+    inline def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneOffsetUndefined: Self = StObject.set(x, "timezoneOffset", js.undefined)
+    inline def setTimezoneOffsetUndefined: Self = StObject.set(x, "timezoneOffset", js.undefined)
     
-    @scala.inline
-    def setWeekOffset(value: Double): Self = StObject.set(x, "weekOffset", value.asInstanceOf[js.Any])
+    inline def setWeekOffset(value: Double): Self = StObject.set(x, "weekOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekOffsetUndefined: Self = StObject.set(x, "weekOffset", js.undefined)
+    inline def setWeekOffsetUndefined: Self = StObject.set(x, "weekOffset", js.undefined)
   }
 }

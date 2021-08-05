@@ -31,8 +31,7 @@ trait ProcessControl
 }
 object ProcessControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDisplayState: () => DisplayState,
     getVisible: () => Boolean,
     reflow: (Boolean, String, String) => Unit,
@@ -43,16 +42,12 @@ object ProcessControl {
     __obj.asInstanceOf[ProcessControl]
   }
   
-  @scala.inline
-  implicit class ProcessControlMutableBuilder[Self <: ProcessControl] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessControl](x: Self) {
     
-    @scala.inline
-    def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
+    inline def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReflow(value: (Boolean, String, String) => Unit): Self = StObject.set(x, "reflow", js.Any.fromFunction3(value))
+    inline def setReflow(value: (Boolean, String, String) => Unit): Self = StObject.set(x, "reflow", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetDisplayState(value: DisplayState => Unit): Self = StObject.set(x, "setDisplayState", js.Any.fromFunction1(value))
+    inline def setSetDisplayState(value: DisplayState => Unit): Self = StObject.set(x, "setDisplayState", js.Any.fromFunction1(value))
   }
 }

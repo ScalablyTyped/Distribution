@@ -22,8 +22,7 @@ object anon {
   }
   object AccessToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessToken: String,
       expiresIn: String,
       secret: String,
@@ -35,26 +34,19 @@ object anon {
       __obj.asInstanceOf[AccessToken]
     }
     
-    @scala.inline
-    implicit class AccessTokenMutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
+    extension [Self <: AccessToken](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession_key(value: Boolean): Self = StObject.set(x, "session_key", value.asInstanceOf[js.Any])
+      inline def setSession_key(value: Boolean): Self = StObject.set(x, "session_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSig(value: String): Self = StObject.set(x, "sig", value.asInstanceOf[js.Any])
+      inline def setSig(value: String): Self = StObject.set(x, "sig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+      inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
     }
   }
 }

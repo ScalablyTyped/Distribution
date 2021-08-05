@@ -18,25 +18,19 @@ trait RetryBuildInput extends StObject {
 }
 object RetryBuildInput {
   
-  @scala.inline
-  def apply(): RetryBuildInput = {
+  inline def apply(): RetryBuildInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryBuildInput]
   }
   
-  @scala.inline
-  implicit class RetryBuildInputMutableBuilder[Self <: RetryBuildInput] (val x: Self) extends AnyVal {
+  extension [Self <: RetryBuildInput](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: String): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: String): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
   }
 }

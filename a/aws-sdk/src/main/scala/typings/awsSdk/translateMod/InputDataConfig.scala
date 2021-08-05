@@ -18,19 +18,15 @@ trait InputDataConfig extends StObject {
 }
 object InputDataConfig {
   
-  @scala.inline
-  def apply(ContentType: ContentType, S3Uri: S3Uri): InputDataConfig = {
+  inline def apply(ContentType: ContentType, S3Uri: S3Uri): InputDataConfig = {
     val __obj = js.Dynamic.literal(ContentType = ContentType.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  @scala.inline
-  implicit class InputDataConfigMutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputDataConfig](x: Self) {
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

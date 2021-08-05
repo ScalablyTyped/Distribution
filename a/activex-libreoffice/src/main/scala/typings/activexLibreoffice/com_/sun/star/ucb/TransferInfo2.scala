@@ -14,16 +14,13 @@ trait TransferInfo2
 }
 object TransferInfo2 {
   
-  @scala.inline
-  def apply(MimeType: String, MoveData: Boolean, NameClash: Double, NewTitle: String, SourceURL: String): TransferInfo2 = {
+  inline def apply(MimeType: String, MoveData: Boolean, NameClash: Double, NewTitle: String, SourceURL: String): TransferInfo2 = {
     val __obj = js.Dynamic.literal(MimeType = MimeType.asInstanceOf[js.Any], MoveData = MoveData.asInstanceOf[js.Any], NameClash = NameClash.asInstanceOf[js.Any], NewTitle = NewTitle.asInstanceOf[js.Any], SourceURL = SourceURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferInfo2]
   }
   
-  @scala.inline
-  implicit class TransferInfo2MutableBuilder[Self <: TransferInfo2] (val x: Self) extends AnyVal {
+  extension [Self <: TransferInfo2](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
   }
 }

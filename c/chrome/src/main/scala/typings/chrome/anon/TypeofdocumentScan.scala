@@ -12,16 +12,13 @@ trait TypeofdocumentScan extends StObject {
 }
 object TypeofdocumentScan {
   
-  @scala.inline
-  def apply(scan: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): TypeofdocumentScan = {
+  inline def apply(scan: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): TypeofdocumentScan = {
     val __obj = js.Dynamic.literal(scan = js.Any.fromFunction2(scan))
     __obj.asInstanceOf[TypeofdocumentScan]
   }
   
-  @scala.inline
-  implicit class TypeofdocumentScanMutableBuilder[Self <: TypeofdocumentScan] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdocumentScan](x: Self) {
     
-    @scala.inline
-    def setScan(value: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
+    inline def setScan(value: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
   }
 }

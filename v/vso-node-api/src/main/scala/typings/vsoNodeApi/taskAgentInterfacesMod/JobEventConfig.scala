@@ -10,16 +10,13 @@ trait JobEventConfig extends StObject {
 }
 object JobEventConfig {
   
-  @scala.inline
-  def apply(timeout: String): JobEventConfig = {
+  inline def apply(timeout: String): JobEventConfig = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobEventConfig]
   }
   
-  @scala.inline
-  implicit class JobEventConfigMutableBuilder[Self <: JobEventConfig] (val x: Self) extends AnyVal {
+  extension [Self <: JobEventConfig](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

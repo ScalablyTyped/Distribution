@@ -12,19 +12,15 @@ trait LabelString extends StObject {
 }
 object LabelString {
   
-  @scala.inline
-  def apply(label: String, value: js.Any => typings.react.mod.global.JSX.Element): LabelString = {
+  inline def apply(label: String, value: js.Any => typings.react.mod.global.JSX.Element): LabelString = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
     __obj.asInstanceOf[LabelString]
   }
   
-  @scala.inline
-  implicit class LabelStringMutableBuilder[Self <: LabelString] (val x: Self) extends AnyVal {
+  extension [Self <: LabelString](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValue(value: js.Any => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

@@ -22,20 +22,16 @@ object addItemMediumMod extends Shortcut {
   }
   object AddItemMediumProps {
     
-    @scala.inline
-    def apply(): AddItemMediumProps = {
+    inline def apply(): AddItemMediumProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddItemMediumProps]
     }
     
-    @scala.inline
-    implicit class AddItemMediumPropsMutableBuilder[Self <: AddItemMediumProps] (val x: Self) extends AnyVal {
+    extension [Self <: AddItemMediumProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

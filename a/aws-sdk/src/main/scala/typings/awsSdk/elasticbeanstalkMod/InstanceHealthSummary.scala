@@ -48,61 +48,43 @@ trait InstanceHealthSummary extends StObject {
 }
 object InstanceHealthSummary {
   
-  @scala.inline
-  def apply(): InstanceHealthSummary = {
+  inline def apply(): InstanceHealthSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceHealthSummary]
   }
   
-  @scala.inline
-  implicit class InstanceHealthSummaryMutableBuilder[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceHealthSummary](x: Self) {
     
-    @scala.inline
-    def setDegraded(value: NullableInteger): Self = StObject.set(x, "Degraded", value.asInstanceOf[js.Any])
+    inline def setDegraded(value: NullableInteger): Self = StObject.set(x, "Degraded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDegradedUndefined: Self = StObject.set(x, "Degraded", js.undefined)
+    inline def setDegradedUndefined: Self = StObject.set(x, "Degraded", js.undefined)
     
-    @scala.inline
-    def setInfo(value: NullableInteger): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: NullableInteger): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
     
-    @scala.inline
-    def setNoData(value: NullableInteger): Self = StObject.set(x, "NoData", value.asInstanceOf[js.Any])
+    inline def setNoData(value: NullableInteger): Self = StObject.set(x, "NoData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataUndefined: Self = StObject.set(x, "NoData", js.undefined)
+    inline def setNoDataUndefined: Self = StObject.set(x, "NoData", js.undefined)
     
-    @scala.inline
-    def setOk(value: NullableInteger): Self = StObject.set(x, "Ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: NullableInteger): Self = StObject.set(x, "Ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkUndefined: Self = StObject.set(x, "Ok", js.undefined)
+    inline def setOkUndefined: Self = StObject.set(x, "Ok", js.undefined)
     
-    @scala.inline
-    def setPending(value: NullableInteger): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: NullableInteger): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
     
-    @scala.inline
-    def setSevere(value: NullableInteger): Self = StObject.set(x, "Severe", value.asInstanceOf[js.Any])
+    inline def setSevere(value: NullableInteger): Self = StObject.set(x, "Severe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSevereUndefined: Self = StObject.set(x, "Severe", js.undefined)
+    inline def setSevereUndefined: Self = StObject.set(x, "Severe", js.undefined)
     
-    @scala.inline
-    def setUnknown(value: NullableInteger): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: NullableInteger): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownUndefined: Self = StObject.set(x, "Unknown", js.undefined)
+    inline def setUnknownUndefined: Self = StObject.set(x, "Unknown", js.undefined)
     
-    @scala.inline
-    def setWarning(value: NullableInteger): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: NullableInteger): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

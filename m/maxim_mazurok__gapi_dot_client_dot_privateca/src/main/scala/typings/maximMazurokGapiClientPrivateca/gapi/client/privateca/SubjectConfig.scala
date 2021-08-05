@@ -17,31 +17,23 @@ trait SubjectConfig extends StObject {
 }
 object SubjectConfig {
   
-  @scala.inline
-  def apply(): SubjectConfig = {
+  inline def apply(): SubjectConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubjectConfig]
   }
   
-  @scala.inline
-  implicit class SubjectConfigMutableBuilder[Self <: SubjectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SubjectConfig](x: Self) {
     
-    @scala.inline
-    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
+    inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
-    @scala.inline
-    def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectAltName(value: SubjectAltNames): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
+    inline def setSubjectAltName(value: SubjectAltNames): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
+    inline def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

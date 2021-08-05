@@ -15,28 +15,21 @@ trait PaginationResultSessionReport
 }
 object PaginationResultSessionReport {
   
-  @scala.inline
-  def apply(): PaginationResultSessionReport = {
+  inline def apply(): PaginationResultSessionReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationResultSessionReport]
   }
   
-  @scala.inline
-  implicit class PaginationResultSessionReportMutableBuilder[Self <: PaginationResultSessionReport] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationResultSessionReport](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[SessionReport]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[SessionReport]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: SessionReport*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: SessionReport*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setMetaData(value: PaginationSettings): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: PaginationSettings): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
   }
 }

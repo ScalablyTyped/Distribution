@@ -26,8 +26,7 @@ trait MultiAtlasFile
 }
 object MultiAtlasFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -50,10 +49,8 @@ object MultiAtlasFile {
     __obj.asInstanceOf[MultiAtlasFile]
   }
   
-  @scala.inline
-  implicit class MultiAtlasFileMutableBuilder[Self <: MultiAtlasFile] (val x: Self) extends AnyVal {
+  extension [Self <: MultiAtlasFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

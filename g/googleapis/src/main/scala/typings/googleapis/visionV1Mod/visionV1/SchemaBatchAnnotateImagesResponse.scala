@@ -16,22 +16,17 @@ trait SchemaBatchAnnotateImagesResponse extends StObject {
 }
 object SchemaBatchAnnotateImagesResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchAnnotateImagesResponse = {
+  inline def apply(): SchemaBatchAnnotateImagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchAnnotateImagesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchAnnotateImagesResponseMutableBuilder[Self <: SchemaBatchAnnotateImagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchAnnotateImagesResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[SchemaAnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SchemaAnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SchemaAnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaAnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

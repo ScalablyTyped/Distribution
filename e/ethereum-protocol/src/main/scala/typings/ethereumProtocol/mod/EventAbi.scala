@@ -19,29 +19,22 @@ trait EventAbi
 }
 object EventAbi {
   
-  @scala.inline
-  def apply(anonymous: Boolean, inputs: js.Array[EventParameter], name: String, `type`: Event): EventAbi = {
+  inline def apply(anonymous: Boolean, inputs: js.Array[EventParameter], name: String, `type`: Event): EventAbi = {
     val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAbi]
   }
   
-  @scala.inline
-  implicit class EventAbiMutableBuilder[Self <: EventAbi] (val x: Self) extends AnyVal {
+  extension [Self <: EventAbi](x: Self) {
     
-    @scala.inline
-    def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: js.Array[EventParameter]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[EventParameter]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: EventParameter*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: EventParameter*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Event): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Event): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

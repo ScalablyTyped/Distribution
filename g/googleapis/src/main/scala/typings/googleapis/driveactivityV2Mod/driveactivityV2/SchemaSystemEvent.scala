@@ -16,19 +16,15 @@ trait SchemaSystemEvent extends StObject {
 }
 object SchemaSystemEvent {
   
-  @scala.inline
-  def apply(): SchemaSystemEvent = {
+  inline def apply(): SchemaSystemEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSystemEvent]
   }
   
-  @scala.inline
-  implicit class SchemaSystemEventMutableBuilder[Self <: SchemaSystemEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSystemEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

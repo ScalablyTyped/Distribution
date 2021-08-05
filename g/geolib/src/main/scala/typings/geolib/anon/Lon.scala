@@ -14,16 +14,13 @@ trait Lon
 }
 object Lon {
   
-  @scala.inline
-  def apply(lon: GeolibLongitudeInputValue): Lon = {
+  inline def apply(lon: GeolibLongitudeInputValue): Lon = {
     val __obj = js.Dynamic.literal(lon = lon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lon]
   }
   
-  @scala.inline
-  implicit class LonMutableBuilder[Self <: Lon] (val x: Self) extends AnyVal {
+  extension [Self <: Lon](x: Self) {
     
-    @scala.inline
-    def setLon(value: GeolibLongitudeInputValue): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+    inline def setLon(value: GeolibLongitudeInputValue): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
   }
 }

@@ -18,10 +18,8 @@ trait MethodMode extends StObject
 object MethodMode {
   
   /** method may be run asynchronously */
-  @scala.inline
-  def ONEWAY: `0` = 0.asInstanceOf[`0`]
+  inline def ONEWAY: `0` = 0.asInstanceOf[`0`]
   
   /** method is run The */
-  @scala.inline
-  def TWOWAY: `1` = 1.asInstanceOf[`1`]
+  inline def TWOWAY: `1` = 1.asInstanceOf[`1`]
 }

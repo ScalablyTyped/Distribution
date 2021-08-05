@@ -17,25 +17,19 @@ trait SendDialogParams
 }
 object SendDialogParams {
   
-  @scala.inline
-  def apply(link: String): SendDialogParams = {
+  inline def apply(link: String): SendDialogParams = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = "send")
     __obj.asInstanceOf[SendDialogParams]
   }
   
-  @scala.inline
-  implicit class SendDialogParamsMutableBuilder[Self <: SendDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: SendDialogParams](x: Self) {
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: send): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: send): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

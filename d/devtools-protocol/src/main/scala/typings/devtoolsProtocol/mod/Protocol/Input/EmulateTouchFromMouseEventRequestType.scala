@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EmulateTouchFromMouseEventRequestType extends StObject
 object EmulateTouchFromMouseEventRequestType {
   
-  @scala.inline
-  def MouseMoved: mouseMoved = "mouseMoved".asInstanceOf[mouseMoved]
+  inline def MouseMoved: mouseMoved = "mouseMoved".asInstanceOf[mouseMoved]
   
-  @scala.inline
-  def MousePressed: mousePressed = "mousePressed".asInstanceOf[mousePressed]
+  inline def MousePressed: mousePressed = "mousePressed".asInstanceOf[mousePressed]
   
-  @scala.inline
-  def MouseReleased: mouseReleased = "mouseReleased".asInstanceOf[mouseReleased]
+  inline def MouseReleased: mouseReleased = "mouseReleased".asInstanceOf[mouseReleased]
   
-  @scala.inline
-  def MouseWheel: mouseWheel = "mouseWheel".asInstanceOf[mouseWheel]
+  inline def MouseWheel: mouseWheel = "mouseWheel".asInstanceOf[mouseWheel]
 }

@@ -33,43 +33,31 @@ trait GetApiKeysRequest extends StObject {
 }
 object GetApiKeysRequest {
   
-  @scala.inline
-  def apply(): GetApiKeysRequest = {
+  inline def apply(): GetApiKeysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetApiKeysRequest]
   }
   
-  @scala.inline
-  implicit class GetApiKeysRequestMutableBuilder[Self <: GetApiKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetApiKeysRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setIncludeValues(value: NullableBoolean): Self = StObject.set(x, "includeValues", value.asInstanceOf[js.Any])
+    inline def setIncludeValues(value: NullableBoolean): Self = StObject.set(x, "includeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeValuesUndefined: Self = StObject.set(x, "includeValues", js.undefined)
+    inline def setIncludeValuesUndefined: Self = StObject.set(x, "includeValues", js.undefined)
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
+    inline def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
+    inline def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

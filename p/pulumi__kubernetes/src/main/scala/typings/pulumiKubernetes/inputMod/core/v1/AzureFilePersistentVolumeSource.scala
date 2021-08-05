@@ -32,31 +32,23 @@ trait AzureFilePersistentVolumeSource extends StObject {
 }
 object AzureFilePersistentVolumeSource {
   
-  @scala.inline
-  def apply(secretName: Input[String], shareName: Input[String]): AzureFilePersistentVolumeSource = {
+  inline def apply(secretName: Input[String], shareName: Input[String]): AzureFilePersistentVolumeSource = {
     val __obj = js.Dynamic.literal(secretName = secretName.asInstanceOf[js.Any], shareName = shareName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureFilePersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class AzureFilePersistentVolumeSourceMutableBuilder[Self <: AzureFilePersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: AzureFilePersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
+    inline def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretNamespace(value: Input[String]): Self = StObject.set(x, "secretNamespace", value.asInstanceOf[js.Any])
+    inline def setSecretNamespace(value: Input[String]): Self = StObject.set(x, "secretNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretNamespaceUndefined: Self = StObject.set(x, "secretNamespace", js.undefined)
+    inline def setSecretNamespaceUndefined: Self = StObject.set(x, "secretNamespace", js.undefined)
     
-    @scala.inline
-    def setShareName(value: Input[String]): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
+    inline def setShareName(value: Input[String]): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
   }
 }

@@ -200,8 +200,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.DYNAMIC_BODY")
     @js.native
     def DYNAMIC_BODY: Double = js.native
-    @scala.inline
-    def DYNAMIC_BODY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC_BODY")(x.asInstanceOf[js.Any])
+    inline def DYNAMIC_BODY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC_BODY")(x.asInstanceOf[js.Any])
     
     object Events {
       
@@ -326,8 +325,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.FACING_DOWN")
     @js.native
     def FACING_DOWN: Double = js.native
-    @scala.inline
-    def FACING_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_DOWN")(x.asInstanceOf[js.Any])
+    inline def FACING_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_DOWN")(x.asInstanceOf[js.Any])
     
     /**
       * Facing left.
@@ -335,8 +333,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.FACING_LEFT")
     @js.native
     def FACING_LEFT: Double = js.native
-    @scala.inline
-    def FACING_LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_LEFT")(x.asInstanceOf[js.Any])
+    inline def FACING_LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_LEFT")(x.asInstanceOf[js.Any])
     
     /**
       * Facing no direction (initial value).
@@ -344,8 +341,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.FACING_NONE")
     @js.native
     def FACING_NONE: Double = js.native
-    @scala.inline
-    def FACING_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_NONE")(x.asInstanceOf[js.Any])
+    inline def FACING_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_NONE")(x.asInstanceOf[js.Any])
     
     /**
       * Facing right.
@@ -353,8 +349,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.FACING_RIGHT")
     @js.native
     def FACING_RIGHT: Double = js.native
-    @scala.inline
-    def FACING_RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_RIGHT")(x.asInstanceOf[js.Any])
+    inline def FACING_RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_RIGHT")(x.asInstanceOf[js.Any])
     
     /**
       * Facing up.
@@ -362,8 +357,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.FACING_UP")
     @js.native
     def FACING_UP: Double = js.native
-    @scala.inline
-    def FACING_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_UP")(x.asInstanceOf[js.Any])
+    inline def FACING_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACING_UP")(x.asInstanceOf[js.Any])
     
     /**
       * The Arcade Physics Factory allows you to easily create Arcade Physics enabled Game Objects.
@@ -388,8 +382,7 @@ object Physics {
     @js.native
     def GROUP_ : Double = js.native
     
-    @scala.inline
-    def GROUP__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP")(x.asInstanceOf[js.Any])
+    inline def GROUP__=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP")(x.asInstanceOf[js.Any])
     
     /**
       * Calculates and returns the horizontal overlap between two arcade physics bodies and sets their properties
@@ -399,8 +392,7 @@ object Physics {
       * @param overlapOnly Is this an overlap only check, or part of separation?
       * @param bias A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).
       */
-    @scala.inline
-    def GetOverlapX(
+    inline def GetOverlapX(
       body1: typings.phaser.Phaser.Physics.Arcade.Body,
       body2: typings.phaser.Phaser.Physics.Arcade.Body,
       overlapOnly: Boolean,
@@ -415,8 +407,7 @@ object Physics {
       * @param overlapOnly Is this an overlap only check, or part of separation?
       * @param bias A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).
       */
-    @scala.inline
-    def GetOverlapY(
+    inline def GetOverlapY(
       body1: typings.phaser.Phaser.Physics.Arcade.Body,
       body2: typings.phaser.Phaser.Physics.Arcade.Body,
       overlapOnly: Boolean,
@@ -808,8 +799,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.STATIC_BODY")
     @js.native
     def STATIC_BODY: Double = js.native
-    @scala.inline
-    def STATIC_BODY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATIC_BODY")(x.asInstanceOf[js.Any])
+    inline def STATIC_BODY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATIC_BODY")(x.asInstanceOf[js.Any])
     
     /**
       * Separates two overlapping bodies on the X-axis (horizontally).
@@ -822,8 +812,7 @@ object Physics {
       * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
       * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
       */
-    @scala.inline
-    def SeparateX(
+    inline def SeparateX(
       body1: typings.phaser.Phaser.Physics.Arcade.Body,
       body2: typings.phaser.Phaser.Physics.Arcade.Body,
       overlapOnly: Boolean,
@@ -841,8 +830,7 @@ object Physics {
       * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
       * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
       */
-    @scala.inline
-    def SeparateY(
+    inline def SeparateY(
       body1: typings.phaser.Phaser.Physics.Arcade.Body,
       body2: typings.phaser.Phaser.Physics.Arcade.Body,
       overlapOnly: Boolean,
@@ -1258,8 +1246,7 @@ object Physics {
     @JSGlobal("Phaser.Physics.Arcade.TILEMAPLAYER")
     @js.native
     def TILEMAPLAYER: Double = js.native
-    @scala.inline
-    def TILEMAPLAYER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILEMAPLAYER")(x.asInstanceOf[js.Any])
+    inline def TILEMAPLAYER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILEMAPLAYER")(x.asInstanceOf[js.Any])
     
     object Tilemap {
       
@@ -1272,24 +1259,21 @@ object Physics {
         * @param tile The Tile to process.
         * @param sprite The Game Object to process with the Tile.
         */
-      @scala.inline
-      def ProcessTileCallbacks(tile: Tile, sprite: typings.phaser.Phaser.GameObjects.Sprite): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessTileCallbacks")(tile.asInstanceOf[js.Any], sprite.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def ProcessTileCallbacks(tile: Tile, sprite: typings.phaser.Phaser.GameObjects.Sprite): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessTileCallbacks")(tile.asInstanceOf[js.Any], sprite.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Internal function to process the separation of a physics body from a tile.
         * @param body The Body object to separate.
         * @param x The x separation amount.
         */
-      @scala.inline
-      def ProcessTileSeparationX(body: typings.phaser.Phaser.Physics.Arcade.Body, x: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessTileSeparationX")(body.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def ProcessTileSeparationX(body: typings.phaser.Phaser.Physics.Arcade.Body, x: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessTileSeparationX")(body.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Internal function to process the separation of a physics body from a tile.
         * @param body The Body object to separate.
         * @param y The y separation amount.
         */
-      @scala.inline
-      def ProcessTileSeparationY(body: typings.phaser.Phaser.Physics.Arcade.Body, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessTileSeparationY")(body.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def ProcessTileSeparationY(body: typings.phaser.Phaser.Physics.Arcade.Body, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessTileSeparationY")(body.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * The core separation function to separate a physics body and a tile.
@@ -1301,8 +1285,7 @@ object Physics {
         * @param tileBias The tile bias value. Populated by the `World.TILE_BIAS` constant.
         * @param isLayer Is this check coming from a TilemapLayer or an array of tiles?
         */
-      @scala.inline
-      def SeparateTile(
+      inline def SeparateTile(
         i: Double,
         body: typings.phaser.Phaser.Physics.Arcade.Body,
         tile: Tile,
@@ -1311,8 +1294,7 @@ object Physics {
         tileBias: Double,
         isLayer: Boolean
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateTile")(i.asInstanceOf[js.Any], body.asInstanceOf[js.Any], tile.asInstanceOf[js.Any], tileWorldRect.asInstanceOf[js.Any], tilemapLayer.asInstanceOf[js.Any], tileBias.asInstanceOf[js.Any], isLayer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def SeparateTile(
+      inline def SeparateTile(
         i: Double,
         body: typings.phaser.Phaser.Physics.Arcade.Body,
         tile: Tile,
@@ -1332,8 +1314,7 @@ object Physics {
         * @param tileBias The tile bias value. Populated by the `World.TILE_BIAS` constant.
         * @param isLayer Is this check coming from a TilemapLayer or an array of tiles?
         */
-      @scala.inline
-      def TileCheckX(
+      inline def TileCheckX(
         body: typings.phaser.Phaser.Physics.Arcade.Body,
         tile: Tile,
         tileLeft: Double,
@@ -1352,8 +1333,7 @@ object Physics {
         * @param tileBias The tile bias value. Populated by the `World.TILE_BIAS` constant.
         * @param isLayer Is this check coming from a TilemapLayer or an array of tiles?
         */
-      @scala.inline
-      def TileCheckY(
+      inline def TileCheckY(
         body: typings.phaser.Phaser.Physics.Arcade.Body,
         tile: Tile,
         tileTop: Double,
@@ -1367,8 +1347,7 @@ object Physics {
         * @param tileWorldRect A rectangle object that defines the tile placement in the world.
         * @param body The body to check for intersection against.
         */
-      @scala.inline
-      def TileIntersectsBody(tileWorldRect: js.Object, body: typings.phaser.Phaser.Physics.Arcade.Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TileIntersectsBody")(tileWorldRect.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def TileIntersectsBody(tileWorldRect: js.Object, body: typings.phaser.Phaser.Physics.Arcade.Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TileIntersectsBody")(tileWorldRect.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
     
     /**
@@ -2060,32 +2039,26 @@ object Physics {
       * @param options A Matter Body configuration object, or an instance of a Matter Body.
       * @param addToWorld Should the newly created body be immediately added to the World? Default true.
       */
-    @scala.inline
-    def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any])).asInstanceOf[GameObject]
-    @scala.inline
-    def MatterGameObject(
+    inline def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any])).asInstanceOf[GameObject]
+    inline def MatterGameObject(
       world: typings.phaser.Phaser.Physics.Matter.World,
       gameObject: GameObject,
       options: Unit,
       addToWorld: Boolean
     ): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any], addToWorld.asInstanceOf[js.Any])).asInstanceOf[GameObject]
-    @scala.inline
-    def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject, options: Body): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GameObject]
-    @scala.inline
-    def MatterGameObject(
+    inline def MatterGameObject(world: typings.phaser.Phaser.Physics.Matter.World, gameObject: GameObject, options: Body): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GameObject]
+    inline def MatterGameObject(
       world: typings.phaser.Phaser.Physics.Matter.World,
       gameObject: GameObject,
       options: Body,
       addToWorld: Boolean
     ): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any], addToWorld.asInstanceOf[js.Any])).asInstanceOf[GameObject]
-    @scala.inline
-    def MatterGameObject(
+    inline def MatterGameObject(
       world: typings.phaser.Phaser.Physics.Matter.World,
       gameObject: GameObject,
       options: MatterBodyConfig
     ): GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MatterGameObject")(world.asInstanceOf[js.Any], gameObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GameObject]
-    @scala.inline
-    def MatterGameObject(
+    inline def MatterGameObject(
       world: typings.phaser.Phaser.Physics.Matter.World,
       gameObject: GameObject,
       options: MatterBodyConfig,
@@ -2170,27 +2143,22 @@ object Physics {
         * @param config The body configuration and fixture (child body) definitions, as exported by PhysicsEditor.
         * @param options An optional Body configuration object that is used to set initial Body properties on creation.
         */
-      @scala.inline
-      def parseBody(x: Double, y: Double, config: js.Object): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[BodyType]
-      @scala.inline
-      def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+      inline def parseBody(x: Double, y: Double, config: js.Object): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+      inline def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
       
       /**
         * Parses an element of the "fixtures" list exported by PhysicsEditor
         * @param fixtureConfig The fixture object to parse.
         */
-      @scala.inline
-      def parseFixture(fixtureConfig: js.Object): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFixture")(fixtureConfig.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
+      inline def parseFixture(fixtureConfig: js.Object): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFixture")(fixtureConfig.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
       
       /**
         * Parses the "vertices" lists exported by PhysicsEditor.
         * @param vertexSets The vertex lists to parse.
         * @param options An optional Body configuration object that is used to set initial Body properties on creation.
         */
-      @scala.inline
-      def parseVertices(vertexSets: js.Array[js.Any]): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
-      @scala.inline
-      def parseVertices(vertexSets: js.Array[js.Any], options: MatterBodyConfig): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
+      inline def parseVertices(vertexSets: js.Array[js.Any]): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
+      inline def parseVertices(vertexSets: js.Array[js.Any], options: MatterBodyConfig): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
     }
     
     /**
@@ -2244,10 +2212,8 @@ object Physics {
         * @param config The body configuration data.
         * @param options An optional Body configuration object that is used to set initial Body properties on creation.
         */
-      @scala.inline
-      def parseBody(x: Double, y: Double, config: js.Object): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[BodyType]
-      @scala.inline
-      def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+      inline def parseBody(x: Double, y: Double, config: js.Object): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+      inline def parseBody(x: Double, y: Double, config: js.Object, options: MatterBodyConfig): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
     }
     
     /**

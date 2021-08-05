@@ -16,25 +16,19 @@ trait ButtonProps
 }
 object ButtonProps {
   
-  @scala.inline
-  def apply(): ButtonProps = {
+  inline def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonProps]
   }
   
-  @scala.inline
-  implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonProps](x: Self) {
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait SetGeolocationOverrideRequest extends StObject {
 }
 object SetGeolocationOverrideRequest {
   
-  @scala.inline
-  def apply(): SetGeolocationOverrideRequest = {
+  inline def apply(): SetGeolocationOverrideRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetGeolocationOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetGeolocationOverrideRequestMutableBuilder[Self <: SetGeolocationOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetGeolocationOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }
 }

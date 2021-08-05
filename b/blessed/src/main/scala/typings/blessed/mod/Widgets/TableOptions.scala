@@ -35,49 +35,35 @@ trait TableOptions
 }
 object TableOptions {
   
-  @scala.inline
-  def apply(): TableOptions = {
+  inline def apply(): TableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableOptions]
   }
   
-  @scala.inline
-  implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setFillCellBorders(value: Boolean): Self = StObject.set(x, "fillCellBorders", value.asInstanceOf[js.Any])
+    inline def setFillCellBorders(value: Boolean): Self = StObject.set(x, "fillCellBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillCellBordersUndefined: Self = StObject.set(x, "fillCellBorders", js.undefined)
+    inline def setFillCellBordersUndefined: Self = StObject.set(x, "fillCellBorders", js.undefined)
     
-    @scala.inline
-    def setNoCellBorders(value: Boolean): Self = StObject.set(x, "noCellBorders", value.asInstanceOf[js.Any])
+    inline def setNoCellBorders(value: Boolean): Self = StObject.set(x, "noCellBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCellBordersUndefined: Self = StObject.set(x, "noCellBorders", js.undefined)
+    inline def setNoCellBordersUndefined: Self = StObject.set(x, "noCellBorders", js.undefined)
     
-    @scala.inline
-    def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

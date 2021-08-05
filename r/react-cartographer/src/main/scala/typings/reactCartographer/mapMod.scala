@@ -59,20 +59,16 @@ object mapMod {
   }
   object MapData {
     
-    @scala.inline
-    def apply(locationLink: js.Any, locationText: String): MapData = {
+    inline def apply(locationLink: js.Any, locationText: String): MapData = {
       val __obj = js.Dynamic.literal(locationLink = locationLink.asInstanceOf[js.Any], locationText = locationText.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapData]
     }
     
-    @scala.inline
-    implicit class MapDataMutableBuilder[Self <: MapData] (val x: Self) extends AnyVal {
+    extension [Self <: MapData](x: Self) {
       
-      @scala.inline
-      def setLocationLink(value: js.Any): Self = StObject.set(x, "locationLink", value.asInstanceOf[js.Any])
+      inline def setLocationLink(value: js.Any): Self = StObject.set(x, "locationLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationText(value: String): Self = StObject.set(x, "locationText", value.asInstanceOf[js.Any])
+      inline def setLocationText(value: String): Self = StObject.set(x, "locationText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +80,16 @@ object mapMod {
   }
   object MapObject {
     
-    @scala.inline
-    def apply(data: MapData, mapId: String): MapObject = {
+    inline def apply(data: MapData, mapId: String): MapObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mapId = mapId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapObject]
     }
     
-    @scala.inline
-    implicit class MapObjectMutableBuilder[Self <: MapObject] (val x: Self) extends AnyVal {
+    extension [Self <: MapObject](x: Self) {
       
-      @scala.inline
-      def setData(value: MapData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: MapData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+      inline def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,8 +129,7 @@ object mapMod {
   }
   object MapProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Double,
       mapId: String,
       provider: yahoo | google | bing,
@@ -151,65 +142,45 @@ object mapMod {
       __obj.asInstanceOf[MapProps]
     }
     
-    @scala.inline
-    implicit class MapPropsMutableBuilder[Self <: MapProps] (val x: Self) extends AnyVal {
+    extension [Self <: MapProps](x: Self) {
       
-      @scala.inline
-      def setAddressLine1(value: String): Self = StObject.set(x, "addressLine1", value.asInstanceOf[js.Any])
+      inline def setAddressLine1(value: String): Self = StObject.set(x, "addressLine1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressLine1Undefined: Self = StObject.set(x, "addressLine1", js.undefined)
+      inline def setAddressLine1Undefined: Self = StObject.set(x, "addressLine1", js.undefined)
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+      inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+      inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
       
-      @scala.inline
-      def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+      inline def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider(value: yahoo | google | bing): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: yahoo | google | bing): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderKey(value: String): Self = StObject.set(x, "providerKey", value.asInstanceOf[js.Any])
+      inline def setProviderKey(value: String): Self = StObject.set(x, "providerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setUseBackgroundImageStyle(value: Boolean): Self = StObject.set(x, "useBackgroundImageStyle", value.asInstanceOf[js.Any])
+      inline def setUseBackgroundImageStyle(value: Boolean): Self = StObject.set(x, "useBackgroundImageStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
 }

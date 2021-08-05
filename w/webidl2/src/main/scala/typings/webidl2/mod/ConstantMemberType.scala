@@ -32,8 +32,7 @@ trait ConstantMemberType
 }
 object ConstantMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
@@ -46,25 +45,18 @@ object ConstantMemberType {
     __obj.asInstanceOf[ConstantMemberType]
   }
   
-  @scala.inline
-  implicit class ConstantMemberTypeMutableBuilder[Self <: ConstantMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: ConstantMemberType](x: Self) {
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: CallbackInterfaceType | InterfaceMixinType | InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: CallbackInterfaceType | InterfaceMixinType | InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: const): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: const): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ValueDescription): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ValueDescription): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

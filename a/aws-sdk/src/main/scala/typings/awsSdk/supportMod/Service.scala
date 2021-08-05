@@ -23,34 +23,25 @@ trait Service extends StObject {
 }
 object Service {
   
-  @scala.inline
-  def apply(): Service = {
+  inline def apply(): Service = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Service]
   }
   
-  @scala.inline
-  implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+  extension [Self <: Service](x: Self) {
     
-    @scala.inline
-    def setCategories(value: CategoryList): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: CategoryList): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setCode(value: ServiceCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ServiceCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setName(value: ServiceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ServiceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

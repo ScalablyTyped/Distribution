@@ -23,34 +23,25 @@ trait ListMedicalVocabulariesResponse extends StObject {
 }
 object ListMedicalVocabulariesResponse {
   
-  @scala.inline
-  def apply(): ListMedicalVocabulariesResponse = {
+  inline def apply(): ListMedicalVocabulariesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMedicalVocabulariesResponse]
   }
   
-  @scala.inline
-  implicit class ListMedicalVocabulariesResponseMutableBuilder[Self <: ListMedicalVocabulariesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMedicalVocabulariesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: VocabularyState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VocabularyState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVocabularies(value: Vocabularies): Self = StObject.set(x, "Vocabularies", value.asInstanceOf[js.Any])
+    inline def setVocabularies(value: Vocabularies): Self = StObject.set(x, "Vocabularies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabulariesUndefined: Self = StObject.set(x, "Vocabularies", js.undefined)
+    inline def setVocabulariesUndefined: Self = StObject.set(x, "Vocabularies", js.undefined)
     
-    @scala.inline
-    def setVocabulariesVarargs(value: VocabularyInfo*): Self = StObject.set(x, "Vocabularies", js.Array(value :_*))
+    inline def setVocabulariesVarargs(value: VocabularyInfo*): Self = StObject.set(x, "Vocabularies", js.Array(value :_*))
   }
 }

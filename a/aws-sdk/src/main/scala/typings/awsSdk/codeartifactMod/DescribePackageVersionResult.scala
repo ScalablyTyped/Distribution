@@ -13,16 +13,13 @@ trait DescribePackageVersionResult extends StObject {
 }
 object DescribePackageVersionResult {
   
-  @scala.inline
-  def apply(packageVersion: PackageVersionDescription): DescribePackageVersionResult = {
+  inline def apply(packageVersion: PackageVersionDescription): DescribePackageVersionResult = {
     val __obj = js.Dynamic.literal(packageVersion = packageVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePackageVersionResult]
   }
   
-  @scala.inline
-  implicit class DescribePackageVersionResultMutableBuilder[Self <: DescribePackageVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePackageVersionResult](x: Self) {
     
-    @scala.inline
-    def setPackageVersion(value: PackageVersionDescription): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
+    inline def setPackageVersion(value: PackageVersionDescription): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
   }
 }

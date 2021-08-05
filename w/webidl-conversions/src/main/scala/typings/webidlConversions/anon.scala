@@ -19,29 +19,22 @@ object anon {
   }
   object BufferSourceOptionsallowS {
     
-    @scala.inline
-    def apply(allowShared: js.UndefOr[Boolean] & js.UndefOr[`false`]): BufferSourceOptionsallowS = {
+    inline def apply(allowShared: js.UndefOr[Boolean] & js.UndefOr[`false`]): BufferSourceOptionsallowS = {
       val __obj = js.Dynamic.literal(allowShared = allowShared.asInstanceOf[js.Any])
       __obj.asInstanceOf[BufferSourceOptionsallowS]
     }
     
-    @scala.inline
-    implicit class BufferSourceOptionsallowSMutableBuilder[Self <: BufferSourceOptionsallowS] (val x: Self) extends AnyVal {
+    extension [Self <: BufferSourceOptionsallowS](x: Self) {
       
-      @scala.inline
-      def setAllowShared(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "allowShared", value.asInstanceOf[js.Any])
+      inline def setAllowShared(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "allowShared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setGlobals(value: Globals): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: Globals): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     }
   }
 }

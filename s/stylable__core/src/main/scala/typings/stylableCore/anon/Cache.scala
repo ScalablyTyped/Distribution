@@ -13,19 +13,15 @@ trait Cache[T /* <: js.Function1[/* repeated */ String, String] */] extends StOb
 }
 object Cache {
   
-  @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ String, String] */](cache: Map[js.Any, js.Any], get: T): Cache[T] = {
+  inline def apply[T /* <: js.Function1[/* repeated */ String, String] */](cache: Map[js.Any, js.Any], get: T): Cache[T] = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cache[T]]
   }
   
-  @scala.inline
-  implicit class CacheMutableBuilder[Self <: Cache[?], T /* <: js.Function1[/* repeated */ String, String] */] (val x: Self & Cache[T]) extends AnyVal {
+  extension [Self <: Cache[?], T /* <: js.Function1[/* repeated */ String, String] */](x: Self & Cache[T]) {
     
-    @scala.inline
-    def setCache(value: Map[js.Any, js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Map[js.Any, js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: T): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: T): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

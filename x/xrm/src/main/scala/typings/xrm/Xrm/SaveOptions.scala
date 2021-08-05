@@ -19,19 +19,15 @@ trait SaveOptions extends StObject {
 }
 object SaveOptions {
   
-  @scala.inline
-  def apply(): SaveOptions = {
+  inline def apply(): SaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveOptions]
   }
   
-  @scala.inline
-  implicit class SaveOptionsMutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveOptions](x: Self) {
     
-    @scala.inline
-    def setUseSchedulingEngine(value: Boolean): Self = StObject.set(x, "UseSchedulingEngine", value.asInstanceOf[js.Any])
+    inline def setUseSchedulingEngine(value: Boolean): Self = StObject.set(x, "UseSchedulingEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSchedulingEngineUndefined: Self = StObject.set(x, "UseSchedulingEngine", js.undefined)
+    inline def setUseSchedulingEngineUndefined: Self = StObject.set(x, "UseSchedulingEngine", js.undefined)
   }
 }

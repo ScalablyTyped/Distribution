@@ -19,8 +19,7 @@ object tableFooterMod extends Shortcut {
        with StrictTableHeaderProps
   object StrictTableFooterProps {
     
-    @scala.inline
-    def apply(): StrictTableFooterProps = {
+    inline def apply(): StrictTableFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTableFooterProps]
     }
@@ -32,8 +31,7 @@ object tableFooterMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TableFooterProps {
     
-    @scala.inline
-    def apply(): TableFooterProps = {
+    inline def apply(): TableFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableFooterProps]
     }

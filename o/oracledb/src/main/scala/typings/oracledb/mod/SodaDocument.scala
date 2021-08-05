@@ -67,8 +67,7 @@ trait SodaDocument extends StObject {
 }
 object SodaDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContent: () => Record[String, js.Any],
     getContentAsBuffer: () => Buffer,
     getContentAsString: () => String,
@@ -79,40 +78,28 @@ object SodaDocument {
     __obj.asInstanceOf[SodaDocument]
   }
   
-  @scala.inline
-  implicit class SodaDocumentMutableBuilder[Self <: SodaDocument] (val x: Self) extends AnyVal {
+  extension [Self <: SodaDocument](x: Self) {
     
-    @scala.inline
-    def setCreatedOn(value: String): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: String): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
+    inline def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     
-    @scala.inline
-    def setGetContent(value: () => Record[String, js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => Record[String, js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentAsBuffer(value: () => Buffer): Self = StObject.set(x, "getContentAsBuffer", js.Any.fromFunction0(value))
+    inline def setGetContentAsBuffer(value: () => Buffer): Self = StObject.set(x, "getContentAsBuffer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentAsString(value: () => String): Self = StObject.set(x, "getContentAsString", js.Any.fromFunction0(value))
+    inline def setGetContentAsString(value: () => String): Self = StObject.set(x, "getContentAsString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ListDatasetImportJobsResponse extends StObject {
 }
 object ListDatasetImportJobsResponse {
   
-  @scala.inline
-  def apply(): ListDatasetImportJobsResponse = {
+  inline def apply(): ListDatasetImportJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDatasetImportJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListDatasetImportJobsResponseMutableBuilder[Self <: ListDatasetImportJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDatasetImportJobsResponse](x: Self) {
     
-    @scala.inline
-    def setDatasetImportJobs(value: DatasetImportJobs): Self = StObject.set(x, "datasetImportJobs", value.asInstanceOf[js.Any])
+    inline def setDatasetImportJobs(value: DatasetImportJobs): Self = StObject.set(x, "datasetImportJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetImportJobsUndefined: Self = StObject.set(x, "datasetImportJobs", js.undefined)
+    inline def setDatasetImportJobsUndefined: Self = StObject.set(x, "datasetImportJobs", js.undefined)
     
-    @scala.inline
-    def setDatasetImportJobsVarargs(value: DatasetImportJobSummary*): Self = StObject.set(x, "datasetImportJobs", js.Array(value :_*))
+    inline def setDatasetImportJobsVarargs(value: DatasetImportJobSummary*): Self = StObject.set(x, "datasetImportJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

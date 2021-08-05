@@ -18,16 +18,13 @@ trait FileOpenDialogCommand
 }
 object FileOpenDialogCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): FileOpenDialogCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): FileOpenDialogCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[FileOpenDialogCommand]
   }
   
-  @scala.inline
-  implicit class FileOpenDialogCommandMutableBuilder[Self <: FileOpenDialogCommand] (val x: Self) extends AnyVal {
+  extension [Self <: FileOpenDialogCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

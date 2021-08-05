@@ -15,19 +15,15 @@ trait ConnectionSession extends StObject {
 }
 object ConnectionSession {
   
-  @scala.inline
-  def apply(close: () => Unit, connectionProfile: ConnectionProfile): ConnectionSession = {
+  inline def apply(close: () => Unit, connectionProfile: ConnectionProfile): ConnectionSession = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), connectionProfile = connectionProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionSession]
   }
   
-  @scala.inline
-  implicit class ConnectionSessionMutableBuilder[Self <: ConnectionSession] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionSession](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConnectionProfile(value: ConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
+    inline def setConnectionProfile(value: ConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
   }
 }

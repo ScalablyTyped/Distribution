@@ -23,28 +23,21 @@ trait UpdateVolumeRequest extends StObject {
 }
 object UpdateVolumeRequest {
   
-  @scala.inline
-  def apply(VolumeId: String): UpdateVolumeRequest = {
+  inline def apply(VolumeId: String): UpdateVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVolumeRequest]
   }
   
-  @scala.inline
-  implicit class UpdateVolumeRequestMutableBuilder[Self <: UpdateVolumeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVolumeRequest](x: Self) {
     
-    @scala.inline
-    def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
+    inline def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPointUndefined: Self = StObject.set(x, "MountPoint", js.undefined)
+    inline def setMountPointUndefined: Self = StObject.set(x, "MountPoint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

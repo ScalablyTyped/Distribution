@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object statsMod {
   
-  @scala.inline
-  def apply(config: js.Any): Bitswap = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Bitswap]
+  inline def apply(config: js.Any): Bitswap = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Bitswap]
   
   @JSImport("ipfs-http-client/dist/src/stats", JSImport.Namespace)
   @js.native

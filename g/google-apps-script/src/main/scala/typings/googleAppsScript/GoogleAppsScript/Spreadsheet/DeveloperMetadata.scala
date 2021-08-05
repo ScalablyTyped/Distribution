@@ -38,8 +38,7 @@ trait DeveloperMetadata extends StObject {
 }
 object DeveloperMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getId: () => Integer,
     getKey: () => String,
     getLocation: () => DeveloperMetadataLocation,
@@ -58,46 +57,32 @@ object DeveloperMetadata {
     __obj.asInstanceOf[DeveloperMetadata]
   }
   
-  @scala.inline
-  implicit class DeveloperMetadataMutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperMetadata](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
+    inline def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocation(value: () => DeveloperMetadataLocation): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => DeveloperMetadataLocation): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => String | Null): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String | Null): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibility(value: () => DeveloperMetadataVisibility): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
+    inline def setGetVisibility(value: () => DeveloperMetadataVisibility): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveToColumn(value: Range => DeveloperMetadata): Self = StObject.set(x, "moveToColumn", js.Any.fromFunction1(value))
+    inline def setMoveToColumn(value: Range => DeveloperMetadata): Self = StObject.set(x, "moveToColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToRow(value: Range => DeveloperMetadata): Self = StObject.set(x, "moveToRow", js.Any.fromFunction1(value))
+    inline def setMoveToRow(value: Range => DeveloperMetadata): Self = StObject.set(x, "moveToRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToSheet(value: Sheet => DeveloperMetadata): Self = StObject.set(x, "moveToSheet", js.Any.fromFunction1(value))
+    inline def setMoveToSheet(value: Sheet => DeveloperMetadata): Self = StObject.set(x, "moveToSheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToSpreadsheet(value: () => DeveloperMetadata): Self = StObject.set(x, "moveToSpreadsheet", js.Any.fromFunction0(value))
+    inline def setMoveToSpreadsheet(value: () => DeveloperMetadata): Self = StObject.set(x, "moveToSpreadsheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetKey(value: String => DeveloperMetadata): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
+    inline def setSetKey(value: String => DeveloperMetadata): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => DeveloperMetadata): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => DeveloperMetadata): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisibility(value: DeveloperMetadataVisibility => DeveloperMetadata): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
+    inline def setSetVisibility(value: DeveloperMetadataVisibility => DeveloperMetadata): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

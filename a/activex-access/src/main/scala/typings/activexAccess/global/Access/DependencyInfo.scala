@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.DependencyInfo")
 @js.native
-class DependencyInfo protected ()
+/* private */ class DependencyInfo ()
   extends StObject
      with typings.activexAccess.Access.DependencyInfo {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.DependencyInfo_typekey")
   var AccessDotDependencyInfo_typekey: typings.activexAccess.Access.DependencyInfo = js.native
   

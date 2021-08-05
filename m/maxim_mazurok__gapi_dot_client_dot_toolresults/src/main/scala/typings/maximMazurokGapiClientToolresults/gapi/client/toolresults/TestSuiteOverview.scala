@@ -38,61 +38,43 @@ trait TestSuiteOverview extends StObject {
 }
 object TestSuiteOverview {
   
-  @scala.inline
-  def apply(): TestSuiteOverview = {
+  inline def apply(): TestSuiteOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestSuiteOverview]
   }
   
-  @scala.inline
-  implicit class TestSuiteOverviewMutableBuilder[Self <: TestSuiteOverview] (val x: Self) extends AnyVal {
+  extension [Self <: TestSuiteOverview](x: Self) {
     
-    @scala.inline
-    def setElapsedTime(value: Duration): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: Duration): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+    inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
+    inline def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
-    @scala.inline
-    def setFlakyCount(value: Double): Self = StObject.set(x, "flakyCount", value.asInstanceOf[js.Any])
+    inline def setFlakyCount(value: Double): Self = StObject.set(x, "flakyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlakyCountUndefined: Self = StObject.set(x, "flakyCount", js.undefined)
+    inline def setFlakyCountUndefined: Self = StObject.set(x, "flakyCount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSkippedCount(value: Double): Self = StObject.set(x, "skippedCount", value.asInstanceOf[js.Any])
+    inline def setSkippedCount(value: Double): Self = StObject.set(x, "skippedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedCountUndefined: Self = StObject.set(x, "skippedCount", js.undefined)
+    inline def setSkippedCountUndefined: Self = StObject.set(x, "skippedCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
-    @scala.inline
-    def setXmlSource(value: FileReference): Self = StObject.set(x, "xmlSource", value.asInstanceOf[js.Any])
+    inline def setXmlSource(value: FileReference): Self = StObject.set(x, "xmlSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlSourceUndefined: Self = StObject.set(x, "xmlSource", js.undefined)
+    inline def setXmlSourceUndefined: Self = StObject.set(x, "xmlSource", js.undefined)
   }
 }

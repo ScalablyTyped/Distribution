@@ -36,8 +36,7 @@ trait Area extends StObject {
 }
 object Area {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     area: Boolean,
     base: Boolean,
     br: Boolean,
@@ -57,49 +56,34 @@ object Area {
     __obj.asInstanceOf[Area]
   }
   
-  @scala.inline
-  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
+  extension [Self <: Area](x: Self) {
     
-    @scala.inline
-    def setArea(value: Boolean): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Boolean): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase(value: Boolean): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Boolean): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBr(value: Boolean): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+    inline def setBr(value: Boolean): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCol(value: Boolean): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Boolean): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: Boolean): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Boolean): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHr(value: Boolean): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+    inline def setHr(value: Boolean): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    inline def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParam(value: Boolean): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: Boolean): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWbr(value: Boolean): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
+    inline def setWbr(value: Boolean): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait VeevaConnectorProfileProperties extends StObject {
 }
 object VeevaConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): VeevaConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): VeevaConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[VeevaConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class VeevaConnectorProfilePropertiesMutableBuilder[Self <: VeevaConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VeevaConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

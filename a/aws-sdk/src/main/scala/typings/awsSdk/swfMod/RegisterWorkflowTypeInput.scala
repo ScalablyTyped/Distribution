@@ -58,64 +58,45 @@ trait RegisterWorkflowTypeInput extends StObject {
 }
 object RegisterWorkflowTypeInput {
   
-  @scala.inline
-  def apply(domain: DomainName, name: Name, version: Version): RegisterWorkflowTypeInput = {
+  inline def apply(domain: DomainName, name: Name, version: Version): RegisterWorkflowTypeInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterWorkflowTypeInput]
   }
   
-  @scala.inline
-  implicit class RegisterWorkflowTypeInputMutableBuilder[Self <: RegisterWorkflowTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterWorkflowTypeInput](x: Self) {
     
-    @scala.inline
-    def setDefaultChildPolicy(value: ChildPolicy): Self = StObject.set(x, "defaultChildPolicy", value.asInstanceOf[js.Any])
+    inline def setDefaultChildPolicy(value: ChildPolicy): Self = StObject.set(x, "defaultChildPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultChildPolicyUndefined: Self = StObject.set(x, "defaultChildPolicy", js.undefined)
+    inline def setDefaultChildPolicyUndefined: Self = StObject.set(x, "defaultChildPolicy", js.undefined)
     
-    @scala.inline
-    def setDefaultExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setDefaultExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", js.undefined)
+    inline def setDefaultExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setDefaultLambdaRole(value: Arn): Self = StObject.set(x, "defaultLambdaRole", value.asInstanceOf[js.Any])
+    inline def setDefaultLambdaRole(value: Arn): Self = StObject.set(x, "defaultLambdaRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLambdaRoleUndefined: Self = StObject.set(x, "defaultLambdaRole", js.undefined)
+    inline def setDefaultLambdaRoleUndefined: Self = StObject.set(x, "defaultLambdaRole", js.undefined)
     
-    @scala.inline
-    def setDefaultTaskList(value: TaskList): Self = StObject.set(x, "defaultTaskList", value.asInstanceOf[js.Any])
+    inline def setDefaultTaskList(value: TaskList): Self = StObject.set(x, "defaultTaskList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTaskListUndefined: Self = StObject.set(x, "defaultTaskList", js.undefined)
+    inline def setDefaultTaskListUndefined: Self = StObject.set(x, "defaultTaskList", js.undefined)
     
-    @scala.inline
-    def setDefaultTaskPriority(value: TaskPriority): Self = StObject.set(x, "defaultTaskPriority", value.asInstanceOf[js.Any])
+    inline def setDefaultTaskPriority(value: TaskPriority): Self = StObject.set(x, "defaultTaskPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTaskPriorityUndefined: Self = StObject.set(x, "defaultTaskPriority", js.undefined)
+    inline def setDefaultTaskPriorityUndefined: Self = StObject.set(x, "defaultTaskPriority", js.undefined)
     
-    @scala.inline
-    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskStartToCloseTimeout", js.undefined)
+    inline def setDefaultTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskStartToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

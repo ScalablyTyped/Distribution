@@ -23,28 +23,21 @@ trait CreateClusterSecurityGroupMessage extends StObject {
 }
 object CreateClusterSecurityGroupMessage {
   
-  @scala.inline
-  def apply(ClusterSecurityGroupName: String, Description: String): CreateClusterSecurityGroupMessage = {
+  inline def apply(ClusterSecurityGroupName: String, Description: String): CreateClusterSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(ClusterSecurityGroupName = ClusterSecurityGroupName.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateClusterSecurityGroupMessageMutableBuilder[Self <: CreateClusterSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setClusterSecurityGroupName(value: String): Self = StObject.set(x, "ClusterSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setClusterSecurityGroupName(value: String): Self = StObject.set(x, "ClusterSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

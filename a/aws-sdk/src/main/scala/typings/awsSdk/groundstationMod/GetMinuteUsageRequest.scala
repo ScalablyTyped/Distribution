@@ -18,19 +18,15 @@ trait GetMinuteUsageRequest extends StObject {
 }
 object GetMinuteUsageRequest {
   
-  @scala.inline
-  def apply(month: Integer, year: Integer): GetMinuteUsageRequest = {
+  inline def apply(month: Integer, year: Integer): GetMinuteUsageRequest = {
     val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMinuteUsageRequest]
   }
   
-  @scala.inline
-  implicit class GetMinuteUsageRequestMutableBuilder[Self <: GetMinuteUsageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMinuteUsageRequest](x: Self) {
     
-    @scala.inline
-    def setMonth(value: Integer): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Integer): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Integer): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Integer): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkInfoBar")
 @js.native
-class OlkInfoBar protected ()
+/* private */ class OlkInfoBar ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkInfoBar {
   
@@ -18,7 +18,7 @@ class OlkInfoBar protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkInfoBar_typekey")
   var OutlookDotOlkInfoBar_typekey: typings.activexOutlook.Outlook.OlkInfoBar = js.native
 }

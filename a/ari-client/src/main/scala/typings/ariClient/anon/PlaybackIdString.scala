@@ -10,16 +10,13 @@ trait PlaybackIdString extends StObject {
 }
 object PlaybackIdString {
   
-  @scala.inline
-  def apply(playbackId: String): PlaybackIdString = {
+  inline def apply(playbackId: String): PlaybackIdString = {
     val __obj = js.Dynamic.literal(playbackId = playbackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackIdString]
   }
   
-  @scala.inline
-  implicit class PlaybackIdStringMutableBuilder[Self <: PlaybackIdString] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackIdString](x: Self) {
     
-    @scala.inline
-    def setPlaybackId(value: String): Self = StObject.set(x, "playbackId", value.asInstanceOf[js.Any])
+    inline def setPlaybackId(value: String): Self = StObject.set(x, "playbackId", value.asInstanceOf[js.Any])
   }
 }

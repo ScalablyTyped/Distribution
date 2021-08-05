@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowV2IntentMessageColumnProperties extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageColumnProperties {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageColumnProperties = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageColumnProperties]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageColumnPropertiesMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageColumnProperties](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
   }
 }

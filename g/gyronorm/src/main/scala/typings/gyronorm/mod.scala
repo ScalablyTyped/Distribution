@@ -30,38 +30,32 @@ object mod {
     @JSImport("gyronorm", "GyroNorm.ACCELERATION")
     @js.native
     def ACCELERATION: String = js.native
-    @scala.inline
-    def ACCELERATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCELERATION")(x.asInstanceOf[js.Any])
+    inline def ACCELERATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCELERATION")(x.asInstanceOf[js.Any])
     
     @JSImport("gyronorm", "GyroNorm.ACCELERATION_INCLUDING_GRAVITY")
     @js.native
     def ACCELERATION_INCLUDING_GRAVITY: String = js.native
-    @scala.inline
-    def ACCELERATION_INCLUDING_GRAVITY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCELERATION_INCLUDING_GRAVITY")(x.asInstanceOf[js.Any])
+    inline def ACCELERATION_INCLUDING_GRAVITY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCELERATION_INCLUDING_GRAVITY")(x.asInstanceOf[js.Any])
     
     @JSImport("gyronorm", "GyroNorm.DEVICE_ORIENTATION")
     @js.native
     def DEVICE_ORIENTATION: String = js.native
-    @scala.inline
-    def DEVICE_ORIENTATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE_ORIENTATION")(x.asInstanceOf[js.Any])
+    inline def DEVICE_ORIENTATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE_ORIENTATION")(x.asInstanceOf[js.Any])
     
     @JSImport("gyronorm", "GyroNorm.GAME")
     @js.native
     def GAME: String = js.native
-    @scala.inline
-    def GAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GAME")(x.asInstanceOf[js.Any])
+    inline def GAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GAME")(x.asInstanceOf[js.Any])
     
     @JSImport("gyronorm", "GyroNorm.ROTATION_RATE")
     @js.native
     def ROTATION_RATE: String = js.native
-    @scala.inline
-    def ROTATION_RATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROTATION_RATE")(x.asInstanceOf[js.Any])
+    inline def ROTATION_RATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROTATION_RATE")(x.asInstanceOf[js.Any])
     
     @JSImport("gyronorm", "GyroNorm.WORLD")
     @js.native
     def WORLD: String = js.native
-    @scala.inline
-    def WORLD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD")(x.asInstanceOf[js.Any])
+    inline def WORLD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD")(x.asInstanceOf[js.Any])
   }
   
   type LogListener = js.Function1[/* data */ LoggerData, Unit]
@@ -74,20 +68,16 @@ object mod {
   }
   object LoggerData {
     
-    @scala.inline
-    def apply(code: Double, message: String): LoggerData = {
+    inline def apply(code: Double, message: String): LoggerData = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerData]
     }
     
-    @scala.inline
-    implicit class LoggerDataMutableBuilder[Self <: LoggerData] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerData](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,21 +89,17 @@ object mod {
   }
   object MotionAndOrientationPayload {
     
-    @scala.inline
-    def apply(dm: Alpha, `do`: Absolute): MotionAndOrientationPayload = {
+    inline def apply(dm: Alpha, `do`: Absolute): MotionAndOrientationPayload = {
       val __obj = js.Dynamic.literal(dm = dm.asInstanceOf[js.Any])
       __obj.updateDynamic("do")(`do`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MotionAndOrientationPayload]
     }
     
-    @scala.inline
-    implicit class MotionAndOrientationPayloadMutableBuilder[Self <: MotionAndOrientationPayload] (val x: Self) extends AnyVal {
+    extension [Self <: MotionAndOrientationPayload](x: Self) {
       
-      @scala.inline
-      def setDm(value: Alpha): Self = StObject.set(x, "dm", value.asInstanceOf[js.Any])
+      inline def setDm(value: Alpha): Self = StObject.set(x, "dm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDo(value: Absolute): Self = StObject.set(x, "do", value.asInstanceOf[js.Any])
+      inline def setDo(value: Absolute): Self = StObject.set(x, "do", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,50 +140,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDecimalCount(value: Double): Self = StObject.set(x, "decimalCount", value.asInstanceOf[js.Any])
+      inline def setDecimalCount(value: Double): Self = StObject.set(x, "decimalCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalCountUndefined: Self = StObject.set(x, "decimalCount", js.undefined)
+      inline def setDecimalCountUndefined: Self = StObject.set(x, "decimalCount", js.undefined)
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setGravityNormalized(value: Boolean): Self = StObject.set(x, "gravityNormalized", value.asInstanceOf[js.Any])
+      inline def setGravityNormalized(value: Boolean): Self = StObject.set(x, "gravityNormalized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityNormalizedUndefined: Self = StObject.set(x, "gravityNormalized", js.undefined)
+      inline def setGravityNormalizedUndefined: Self = StObject.set(x, "gravityNormalized", js.undefined)
       
-      @scala.inline
-      def setLogger(value: /* data */ LoggerData => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+      inline def setLogger(value: /* data */ LoggerData => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setOrientationBase(value: String): Self = StObject.set(x, "orientationBase", value.asInstanceOf[js.Any])
+      inline def setOrientationBase(value: String): Self = StObject.set(x, "orientationBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationBaseUndefined: Self = StObject.set(x, "orientationBase", js.undefined)
+      inline def setOrientationBaseUndefined: Self = StObject.set(x, "orientationBase", js.undefined)
       
-      @scala.inline
-      def setScreenAdjusted(value: Boolean): Self = StObject.set(x, "screenAdjusted", value.asInstanceOf[js.Any])
+      inline def setScreenAdjusted(value: Boolean): Self = StObject.set(x, "screenAdjusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenAdjustedUndefined: Self = StObject.set(x, "screenAdjusted", js.undefined)
+      inline def setScreenAdjustedUndefined: Self = StObject.set(x, "screenAdjusted", js.undefined)
     }
   }
 }

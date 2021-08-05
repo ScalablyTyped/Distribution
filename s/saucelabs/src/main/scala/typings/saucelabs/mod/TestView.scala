@@ -17,31 +17,23 @@ trait TestView
 }
 object TestView {
   
-  @scala.inline
-  def apply(): TestView = {
+  inline def apply(): TestView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestView]
   }
   
-  @scala.inline
-  implicit class TestViewMutableBuilder[Self <: TestView] (val x: Self) extends AnyVal {
+  extension [Self <: TestView](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTestId(value: Id): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
+    inline def setTestId(value: Id): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIdUndefined: Self = StObject.set(x, "testId", js.undefined)
+    inline def setTestIdUndefined: Self = StObject.set(x, "testId", js.undefined)
   }
 }

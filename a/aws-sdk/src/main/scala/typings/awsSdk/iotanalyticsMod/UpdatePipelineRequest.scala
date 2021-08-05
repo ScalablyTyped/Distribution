@@ -18,22 +18,17 @@ trait UpdatePipelineRequest extends StObject {
 }
 object UpdatePipelineRequest {
   
-  @scala.inline
-  def apply(pipelineActivities: PipelineActivities, pipelineName: PipelineName): UpdatePipelineRequest = {
+  inline def apply(pipelineActivities: PipelineActivities, pipelineName: PipelineName): UpdatePipelineRequest = {
     val __obj = js.Dynamic.literal(pipelineActivities = pipelineActivities.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePipelineRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePipelineRequestMutableBuilder[Self <: UpdatePipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePipelineRequest](x: Self) {
     
-    @scala.inline
-    def setPipelineActivities(value: PipelineActivities): Self = StObject.set(x, "pipelineActivities", value.asInstanceOf[js.Any])
+    inline def setPipelineActivities(value: PipelineActivities): Self = StObject.set(x, "pipelineActivities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "pipelineActivities", js.Array(value :_*))
+    inline def setPipelineActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "pipelineActivities", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
   }
 }

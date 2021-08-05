@@ -230,8 +230,7 @@ trait XSingleSelectQueryAnalyzer
 }
 object XSingleSelectQueryAnalyzer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Filter: String,
     Group: String,
     GroupColumns: XIndexAccess,
@@ -262,73 +261,50 @@ object XSingleSelectQueryAnalyzer {
     __obj.asInstanceOf[XSingleSelectQueryAnalyzer]
   }
   
-  @scala.inline
-  implicit class XSingleSelectQueryAnalyzerMutableBuilder[Self <: XSingleSelectQueryAnalyzer] (val x: Self) extends AnyVal {
+  extension [Self <: XSingleSelectQueryAnalyzer](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFilter(value: () => String): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
+    inline def setGetFilter(value: () => String): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroup(value: () => String): Self = StObject.set(x, "getGroup", js.Any.fromFunction0(value))
+    inline def setGetGroup(value: () => String): Self = StObject.set(x, "getGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupColumns(value: () => XIndexAccess): Self = StObject.set(x, "getGroupColumns", js.Any.fromFunction0(value))
+    inline def setGetGroupColumns(value: () => XIndexAccess): Self = StObject.set(x, "getGroupColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHavingClause(value: () => String): Self = StObject.set(x, "getHavingClause", js.Any.fromFunction0(value))
+    inline def setGetHavingClause(value: () => String): Self = StObject.set(x, "getHavingClause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrder(value: () => String): Self = StObject.set(x, "getOrder", js.Any.fromFunction0(value))
+    inline def setGetOrder(value: () => String): Self = StObject.set(x, "getOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrderColumns(value: () => XIndexAccess): Self = StObject.set(x, "getOrderColumns", js.Any.fromFunction0(value))
+    inline def setGetOrderColumns(value: () => XIndexAccess): Self = StObject.set(x, "getOrderColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQuery(value: () => String): Self = StObject.set(x, "getQuery", js.Any.fromFunction0(value))
+    inline def setGetQuery(value: () => String): Self = StObject.set(x, "getQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQueryWithSubstitution(value: () => String): Self = StObject.set(x, "getQueryWithSubstitution", js.Any.fromFunction0(value))
+    inline def setGetQueryWithSubstitution(value: () => String): Self = StObject.set(x, "getQueryWithSubstitution", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStructuredFilter(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getStructuredFilter", js.Any.fromFunction0(value))
+    inline def setGetStructuredFilter(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getStructuredFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStructuredHavingClause(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getStructuredHavingClause", js.Any.fromFunction0(value))
+    inline def setGetStructuredHavingClause(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getStructuredHavingClause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupColumns(value: XIndexAccess): Self = StObject.set(x, "GroupColumns", value.asInstanceOf[js.Any])
+    inline def setGroupColumns(value: XIndexAccess): Self = StObject.set(x, "GroupColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
+    inline def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderColumns(value: XIndexAccess): Self = StObject.set(x, "OrderColumns", value.asInstanceOf[js.Any])
+    inline def setOrderColumns(value: XIndexAccess): Self = StObject.set(x, "OrderColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryWithSubstitution(value: String): Self = StObject.set(x, "QueryWithSubstitution", value.asInstanceOf[js.Any])
+    inline def setQueryWithSubstitution(value: String): Self = StObject.set(x, "QueryWithSubstitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCommand(value: (String, Double) => Unit): Self = StObject.set(x, "setCommand", js.Any.fromFunction2(value))
+    inline def setSetCommand(value: (String, Double) => Unit): Self = StObject.set(x, "setCommand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetQuery(value: String => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
+    inline def setSetQuery(value: String => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStructuredFilter(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "StructuredFilter", value.asInstanceOf[js.Any])
+    inline def setStructuredFilter(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "StructuredFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredHavingClause(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "StructuredHavingClause", value.asInstanceOf[js.Any])
+    inline def setStructuredHavingClause(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "StructuredHavingClause", value.asInstanceOf[js.Any])
   }
 }

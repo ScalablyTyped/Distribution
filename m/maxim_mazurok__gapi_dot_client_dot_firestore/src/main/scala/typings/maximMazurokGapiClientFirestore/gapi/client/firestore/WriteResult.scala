@@ -14,28 +14,21 @@ trait WriteResult extends StObject {
 }
 object WriteResult {
   
-  @scala.inline
-  def apply(): WriteResult = {
+  inline def apply(): WriteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteResult]
   }
   
-  @scala.inline
-  implicit class WriteResultMutableBuilder[Self <: WriteResult] (val x: Self) extends AnyVal {
+  extension [Self <: WriteResult](x: Self) {
     
-    @scala.inline
-    def setTransformResults(value: js.Array[Value]): Self = StObject.set(x, "transformResults", value.asInstanceOf[js.Any])
+    inline def setTransformResults(value: js.Array[Value]): Self = StObject.set(x, "transformResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformResultsUndefined: Self = StObject.set(x, "transformResults", js.undefined)
+    inline def setTransformResultsUndefined: Self = StObject.set(x, "transformResults", js.undefined)
     
-    @scala.inline
-    def setTransformResultsVarargs(value: Value*): Self = StObject.set(x, "transformResults", js.Array(value :_*))
+    inline def setTransformResultsVarargs(value: Value*): Self = StObject.set(x, "transformResults", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

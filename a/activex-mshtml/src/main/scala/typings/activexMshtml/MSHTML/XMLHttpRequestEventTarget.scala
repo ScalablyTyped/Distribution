@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XMLHttpRequestEventTarget extends StObject {
   
-  @JSName("MSHTML.XMLHttpRequestEventTarget_typekey")
+  /* private */ @JSName("MSHTML.XMLHttpRequestEventTarget_typekey")
   var MSHTMLDotXMLHttpRequestEventTarget_typekey: XMLHttpRequestEventTarget
   
   def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
@@ -17,8 +17,7 @@ trait XMLHttpRequestEventTarget extends StObject {
 }
 object XMLHttpRequestEventTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotXMLHttpRequestEventTarget_typekey: XMLHttpRequestEventTarget,
     addEventListener: (String, js.Any, Boolean) => Unit,
     dispatchEvent: IDOMEvent => Boolean,
@@ -29,19 +28,14 @@ object XMLHttpRequestEventTarget {
     __obj.asInstanceOf[XMLHttpRequestEventTarget]
   }
   
-  @scala.inline
-  implicit class XMLHttpRequestEventTargetMutableBuilder[Self <: XMLHttpRequestEventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: XMLHttpRequestEventTarget](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+    inline def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDispatchEvent(value: IDOMEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+    inline def setDispatchEvent(value: IDOMEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSHTMLDotXMLHttpRequestEventTarget_typekey(value: XMLHttpRequestEventTarget): Self = StObject.set(x, "MSHTML.XMLHttpRequestEventTarget_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotXMLHttpRequestEventTarget_typekey(value: XMLHttpRequestEventTarget): Self = StObject.set(x, "MSHTML.XMLHttpRequestEventTarget_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
+    inline def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

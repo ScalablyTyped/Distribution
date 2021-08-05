@@ -23,19 +23,15 @@ trait ColorMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
 }
 object ColorMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): ColorMixins[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): ColorMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorMixins[ES]]
   }
   
-  @scala.inline
-  implicit class ColorMixinsMutableBuilder[Self <: ColorMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ColorMixins[ES]) extends AnyVal {
+  extension [Self <: ColorMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & ColorMixins[ES]) {
     
-    @scala.inline
-    def setColor(value: Color | Gradient | ES): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color | Gradient | ES): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

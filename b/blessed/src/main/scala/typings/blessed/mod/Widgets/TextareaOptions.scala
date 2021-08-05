@@ -18,19 +18,15 @@ trait TextareaOptions
 }
 object TextareaOptions {
   
-  @scala.inline
-  def apply(): TextareaOptions = {
+  inline def apply(): TextareaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextareaOptions]
   }
   
-  @scala.inline
-  implicit class TextareaOptionsMutableBuilder[Self <: TextareaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextareaOptions](x: Self) {
     
-    @scala.inline
-    def setInputOnFocus(value: Boolean): Self = StObject.set(x, "inputOnFocus", value.asInstanceOf[js.Any])
+    inline def setInputOnFocus(value: Boolean): Self = StObject.set(x, "inputOnFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputOnFocusUndefined: Self = StObject.set(x, "inputOnFocus", js.undefined)
+    inline def setInputOnFocusUndefined: Self = StObject.set(x, "inputOnFocus", js.undefined)
   }
 }

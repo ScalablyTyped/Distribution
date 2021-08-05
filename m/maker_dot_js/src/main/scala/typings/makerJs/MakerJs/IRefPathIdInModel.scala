@@ -15,19 +15,15 @@ trait IRefPathIdInModel extends StObject {
 }
 object IRefPathIdInModel {
   
-  @scala.inline
-  def apply(modelContext: IModel, pathId: String): IRefPathIdInModel = {
+  inline def apply(modelContext: IModel, pathId: String): IRefPathIdInModel = {
     val __obj = js.Dynamic.literal(modelContext = modelContext.asInstanceOf[js.Any], pathId = pathId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefPathIdInModel]
   }
   
-  @scala.inline
-  implicit class IRefPathIdInModelMutableBuilder[Self <: IRefPathIdInModel] (val x: Self) extends AnyVal {
+  extension [Self <: IRefPathIdInModel](x: Self) {
     
-    @scala.inline
-    def setModelContext(value: IModel): Self = StObject.set(x, "modelContext", value.asInstanceOf[js.Any])
+    inline def setModelContext(value: IModel): Self = StObject.set(x, "modelContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathId(value: String): Self = StObject.set(x, "pathId", value.asInstanceOf[js.Any])
+    inline def setPathId(value: String): Self = StObject.set(x, "pathId", value.asInstanceOf[js.Any])
   }
 }

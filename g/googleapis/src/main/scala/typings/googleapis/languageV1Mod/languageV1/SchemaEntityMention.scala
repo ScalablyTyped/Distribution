@@ -30,31 +30,23 @@ trait SchemaEntityMention extends StObject {
 }
 object SchemaEntityMention {
   
-  @scala.inline
-  def apply(): SchemaEntityMention = {
+  inline def apply(): SchemaEntityMention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntityMention]
   }
   
-  @scala.inline
-  implicit class SchemaEntityMentionMutableBuilder[Self <: SchemaEntityMention] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntityMention](x: Self) {
     
-    @scala.inline
-    def setSentiment(value: SchemaSentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: SchemaSentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
-    @scala.inline
-    def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

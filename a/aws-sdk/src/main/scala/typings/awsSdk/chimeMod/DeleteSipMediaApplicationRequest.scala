@@ -13,16 +13,13 @@ trait DeleteSipMediaApplicationRequest extends StObject {
 }
 object DeleteSipMediaApplicationRequest {
   
-  @scala.inline
-  def apply(SipMediaApplicationId: NonEmptyString): DeleteSipMediaApplicationRequest = {
+  inline def apply(SipMediaApplicationId: NonEmptyString): DeleteSipMediaApplicationRequest = {
     val __obj = js.Dynamic.literal(SipMediaApplicationId = SipMediaApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSipMediaApplicationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSipMediaApplicationRequestMutableBuilder[Self <: DeleteSipMediaApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSipMediaApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
+    inline def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
   }
 }

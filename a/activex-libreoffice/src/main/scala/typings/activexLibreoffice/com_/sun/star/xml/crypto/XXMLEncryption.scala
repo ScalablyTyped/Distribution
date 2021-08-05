@@ -30,8 +30,7 @@ trait XXMLEncryption
 }
 object XXMLEncryption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     decrypt: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate,
     encrypt: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate,
@@ -42,13 +41,10 @@ object XXMLEncryption {
     __obj.asInstanceOf[XXMLEncryption]
   }
   
-  @scala.inline
-  implicit class XXMLEncryptionMutableBuilder[Self <: XXMLEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLEncryption](x: Self) {
     
-    @scala.inline
-    def setDecrypt(value: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
+    inline def setDecrypt(value: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEncrypt(value: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
+    inline def setEncrypt(value: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
   }
 }

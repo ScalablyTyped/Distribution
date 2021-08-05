@@ -31,37 +31,27 @@ trait SchemaSourceFork extends StObject {
 }
 object SchemaSourceFork {
   
-  @scala.inline
-  def apply(): SchemaSourceFork = {
+  inline def apply(): SchemaSourceFork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceFork]
   }
   
-  @scala.inline
-  implicit class SchemaSourceForkMutableBuilder[Self <: SchemaSourceFork] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceFork](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: SchemaSourceSplitShard): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: SchemaSourceSplitShard): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimarySource(value: SchemaDerivedSource): Self = StObject.set(x, "primarySource", value.asInstanceOf[js.Any])
+    inline def setPrimarySource(value: SchemaDerivedSource): Self = StObject.set(x, "primarySource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimarySourceUndefined: Self = StObject.set(x, "primarySource", js.undefined)
+    inline def setPrimarySourceUndefined: Self = StObject.set(x, "primarySource", js.undefined)
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setResidual(value: SchemaSourceSplitShard): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
+    inline def setResidual(value: SchemaSourceSplitShard): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualSource(value: SchemaDerivedSource): Self = StObject.set(x, "residualSource", value.asInstanceOf[js.Any])
+    inline def setResidualSource(value: SchemaDerivedSource): Self = StObject.set(x, "residualSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualSourceUndefined: Self = StObject.set(x, "residualSource", js.undefined)
+    inline def setResidualSourceUndefined: Self = StObject.set(x, "residualSource", js.undefined)
     
-    @scala.inline
-    def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
+    inline def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
   }
 }

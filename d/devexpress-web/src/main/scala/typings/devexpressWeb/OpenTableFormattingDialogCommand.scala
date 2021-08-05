@@ -18,16 +18,13 @@ trait OpenTableFormattingDialogCommand
 }
 object OpenTableFormattingDialogCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenTableFormattingDialogCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenTableFormattingDialogCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[OpenTableFormattingDialogCommand]
   }
   
-  @scala.inline
-  implicit class OpenTableFormattingDialogCommandMutableBuilder[Self <: OpenTableFormattingDialogCommand] (val x: Self) extends AnyVal {
+  extension [Self <: OpenTableFormattingDialogCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

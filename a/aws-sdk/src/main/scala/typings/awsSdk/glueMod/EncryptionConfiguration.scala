@@ -23,34 +23,25 @@ trait EncryptionConfiguration extends StObject {
 }
 object EncryptionConfiguration {
   
-  @scala.inline
-  def apply(): EncryptionConfiguration = {
+  inline def apply(): EncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigurationMutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setCloudWatchEncryption(value: CloudWatchEncryption): Self = StObject.set(x, "CloudWatchEncryption", value.asInstanceOf[js.Any])
+    inline def setCloudWatchEncryption(value: CloudWatchEncryption): Self = StObject.set(x, "CloudWatchEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchEncryptionUndefined: Self = StObject.set(x, "CloudWatchEncryption", js.undefined)
+    inline def setCloudWatchEncryptionUndefined: Self = StObject.set(x, "CloudWatchEncryption", js.undefined)
     
-    @scala.inline
-    def setJobBookmarksEncryption(value: JobBookmarksEncryption): Self = StObject.set(x, "JobBookmarksEncryption", value.asInstanceOf[js.Any])
+    inline def setJobBookmarksEncryption(value: JobBookmarksEncryption): Self = StObject.set(x, "JobBookmarksEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobBookmarksEncryptionUndefined: Self = StObject.set(x, "JobBookmarksEncryption", js.undefined)
+    inline def setJobBookmarksEncryptionUndefined: Self = StObject.set(x, "JobBookmarksEncryption", js.undefined)
     
-    @scala.inline
-    def setS3Encryption(value: S3EncryptionList): Self = StObject.set(x, "S3Encryption", value.asInstanceOf[js.Any])
+    inline def setS3Encryption(value: S3EncryptionList): Self = StObject.set(x, "S3Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3EncryptionUndefined: Self = StObject.set(x, "S3Encryption", js.undefined)
+    inline def setS3EncryptionUndefined: Self = StObject.set(x, "S3Encryption", js.undefined)
     
-    @scala.inline
-    def setS3EncryptionVarargs(value: S3Encryption*): Self = StObject.set(x, "S3Encryption", js.Array(value :_*))
+    inline def setS3EncryptionVarargs(value: S3Encryption*): Self = StObject.set(x, "S3Encryption", js.Array(value :_*))
   }
 }

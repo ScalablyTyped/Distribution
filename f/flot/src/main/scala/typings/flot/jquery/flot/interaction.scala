@@ -10,19 +10,15 @@ trait interaction extends StObject {
 }
 object interaction {
   
-  @scala.inline
-  def apply(): interaction = {
+  inline def apply(): interaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[interaction]
   }
   
-  @scala.inline
-  implicit class interactionMutableBuilder[Self <: interaction] (val x: Self) extends AnyVal {
+  extension [Self <: interaction](x: Self) {
     
-    @scala.inline
-    def setRedrawOverlayInterval(value: Double): Self = StObject.set(x, "redrawOverlayInterval", value.asInstanceOf[js.Any])
+    inline def setRedrawOverlayInterval(value: Double): Self = StObject.set(x, "redrawOverlayInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedrawOverlayIntervalUndefined: Self = StObject.set(x, "redrawOverlayInterval", js.undefined)
+    inline def setRedrawOverlayIntervalUndefined: Self = StObject.set(x, "redrawOverlayInterval", js.undefined)
   }
 }

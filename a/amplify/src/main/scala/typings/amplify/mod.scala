@@ -23,29 +23,22 @@ object mod extends Shortcut {
   }
   object AjaxSettings {
     
-    @scala.inline
-    def apply(): AjaxSettings = {
+    inline def apply(): AjaxSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AjaxSettings]
     }
     
-    @scala.inline
-    implicit class AjaxSettingsMutableBuilder[Self <: AjaxSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxSettings](x: Self) {
       
-      @scala.inline
-      def setDataMap(value: js.Object | (js.Function1[/* data */ js.Any, js.Object])): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
+      inline def setDataMap(value: js.Object | (js.Function1[/* data */ js.Any, js.Object])): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataMapFunction1(value: /* data */ js.Any => js.Object): Self = StObject.set(x, "dataMap", js.Any.fromFunction1(value))
+      inline def setDataMapFunction1(value: /* data */ js.Any => js.Object): Self = StObject.set(x, "dataMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataMapUndefined: Self = StObject.set(x, "dataMap", js.undefined)
+      inline def setDataMapUndefined: Self = StObject.set(x, "dataMap", js.undefined)
       
-      @scala.inline
-      def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+      inline def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
+      inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
     }
   }
   
@@ -195,19 +188,16 @@ object mod extends Shortcut {
   }
   object Decoders {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       jsSend: (/* data */ js.UndefOr[js.Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]) => Unit
     ): Decoders = {
       val __obj = js.Dynamic.literal(jsSend = js.Any.fromFunction5(jsSend))
       __obj.asInstanceOf[Decoders]
     }
     
-    @scala.inline
-    implicit class DecodersMutableBuilder[Self <: Decoders] (val x: Self) extends AnyVal {
+    extension [Self <: Decoders](x: Self) {
       
-      @scala.inline
-      def setJsSend(
+      inline def setJsSend(
         value: (/* data */ js.UndefOr[js.Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]) => Unit
       ): Self = StObject.set(x, "jsSend", js.Any.fromFunction5(value))
     }
@@ -275,35 +265,26 @@ object mod extends Shortcut {
   }
   object RequestSettings {
     
-    @scala.inline
-    def apply(resourceId: String): RequestSettings = {
+    inline def apply(resourceId: String): RequestSettings = {
       val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestSettings]
     }
     
-    @scala.inline
-    implicit class RequestSettingsMutableBuilder[Self <: RequestSettings] (val x: Self) extends AnyVal {
+    extension [Self <: RequestSettings](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -390,8 +371,7 @@ object mod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       publish: (String, /* repeated */ js.Any) => Boolean,
       request: Request,
       store: Store,
@@ -402,23 +382,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setPublish(value: (String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      inline def setPublish(value: (String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribe(value: Subscribe): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+      inline def setSubscribe(value: Subscribe): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: (String, js.Function) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+      inline def setUnsubscribe(value: (String, js.Function) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     }
   }
   

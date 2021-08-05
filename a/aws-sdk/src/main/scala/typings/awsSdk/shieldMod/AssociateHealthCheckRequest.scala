@@ -18,19 +18,15 @@ trait AssociateHealthCheckRequest extends StObject {
 }
 object AssociateHealthCheckRequest {
   
-  @scala.inline
-  def apply(HealthCheckArn: HealthCheckArn, ProtectionId: ProtectionId): AssociateHealthCheckRequest = {
+  inline def apply(HealthCheckArn: HealthCheckArn, ProtectionId: ProtectionId): AssociateHealthCheckRequest = {
     val __obj = js.Dynamic.literal(HealthCheckArn = HealthCheckArn.asInstanceOf[js.Any], ProtectionId = ProtectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateHealthCheckRequest]
   }
   
-  @scala.inline
-  implicit class AssociateHealthCheckRequestMutableBuilder[Self <: AssociateHealthCheckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateHealthCheckRequest](x: Self) {
     
-    @scala.inline
-    def setHealthCheckArn(value: HealthCheckArn): Self = StObject.set(x, "HealthCheckArn", value.asInstanceOf[js.Any])
+    inline def setHealthCheckArn(value: HealthCheckArn): Self = StObject.set(x, "HealthCheckArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
+    inline def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
   }
 }

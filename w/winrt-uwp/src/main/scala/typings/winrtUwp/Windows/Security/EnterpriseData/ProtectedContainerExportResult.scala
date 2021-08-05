@@ -16,19 +16,15 @@ trait ProtectedContainerExportResult extends StObject {
 }
 object ProtectedContainerExportResult {
   
-  @scala.inline
-  def apply(file: StorageFile, status: ProtectedImportExportStatus): ProtectedContainerExportResult = {
+  inline def apply(file: StorageFile, status: ProtectedImportExportStatus): ProtectedContainerExportResult = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectedContainerExportResult]
   }
   
-  @scala.inline
-  implicit class ProtectedContainerExportResultMutableBuilder[Self <: ProtectedContainerExportResult] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectedContainerExportResult](x: Self) {
     
-    @scala.inline
-    def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ProtectedImportExportStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ProtectedImportExportStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

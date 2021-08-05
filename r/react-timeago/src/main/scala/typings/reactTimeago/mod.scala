@@ -49,63 +49,46 @@ object mod {
   }
   object ReactTimeagoProps {
     
-    @scala.inline
-    def apply[T /* <: ComponentType[js.Object] */](date: String | Double | Date): ReactTimeagoProps[T] = {
+    inline def apply[T /* <: ComponentType[js.Object] */](date: String | Double | Date): ReactTimeagoProps[T] = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTimeagoProps[T]]
     }
     
-    @scala.inline
-    implicit class ReactTimeagoPropsMutableBuilder[Self <: ReactTimeagoProps[?], T /* <: ComponentType[js.Object] */] (val x: Self & ReactTimeagoProps[T]) extends AnyVal {
+    extension [Self <: ReactTimeagoProps[?], T /* <: ComponentType[js.Object] */](x: Self & ReactTimeagoProps[T]) {
       
-      @scala.inline
-      def setComponent(value: String | T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String | T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setDate(value: String | Double | Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String | Double | Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatter(
+      inline def setFormatter(
         value: (/* value */ Double, /* unit */ Unit, /* suffix */ Suffix, /* epochMiliseconds */ Double, /* nextFormatter */ js.UndefOr[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ js.Object
             ]) => ReactNode
       ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
+      inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
+      inline def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
       
-      @scala.inline
-      def setMaxPeriod(value: Double): Self = StObject.set(x, "maxPeriod", value.asInstanceOf[js.Any])
+      inline def setMaxPeriod(value: Double): Self = StObject.set(x, "maxPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPeriodUndefined: Self = StObject.set(x, "maxPeriod", js.undefined)
+      inline def setMaxPeriodUndefined: Self = StObject.set(x, "maxPeriod", js.undefined)
       
-      @scala.inline
-      def setMinPeriod(value: Double): Self = StObject.set(x, "minPeriod", value.asInstanceOf[js.Any])
+      inline def setMinPeriod(value: Double): Self = StObject.set(x, "minPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPeriodUndefined: Self = StObject.set(x, "minPeriod", js.undefined)
+      inline def setMinPeriodUndefined: Self = StObject.set(x, "minPeriod", js.undefined)
       
-      @scala.inline
-      def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+      inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -116,11 +99,9 @@ object mod {
   trait Suffix extends StObject
   object Suffix {
     
-    @scala.inline
-    def ago: typings.reactTimeago.reactTimeagoStrings.ago = "ago".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.ago]
+    inline def ago: typings.reactTimeago.reactTimeagoStrings.ago = "ago".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.ago]
     
-    @scala.inline
-    def `from now`: typings.reactTimeago.reactTimeagoStrings.`from now` = ("from now").asInstanceOf[typings.reactTimeago.reactTimeagoStrings.`from now`]
+    inline def `from now`: typings.reactTimeago.reactTimeagoStrings.`from now` = ("from now").asInstanceOf[typings.reactTimeago.reactTimeagoStrings.`from now`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -135,25 +116,18 @@ object mod {
   trait Unit extends StObject
   object Unit {
     
-    @scala.inline
-    def day: typings.reactTimeago.reactTimeagoStrings.day = "day".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.day]
+    inline def day: typings.reactTimeago.reactTimeagoStrings.day = "day".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.day]
     
-    @scala.inline
-    def hour: typings.reactTimeago.reactTimeagoStrings.hour = "hour".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.hour]
+    inline def hour: typings.reactTimeago.reactTimeagoStrings.hour = "hour".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.hour]
     
-    @scala.inline
-    def minute: typings.reactTimeago.reactTimeagoStrings.minute = "minute".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.minute]
+    inline def minute: typings.reactTimeago.reactTimeagoStrings.minute = "minute".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.minute]
     
-    @scala.inline
-    def month: typings.reactTimeago.reactTimeagoStrings.month = "month".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.month]
+    inline def month: typings.reactTimeago.reactTimeagoStrings.month = "month".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.month]
     
-    @scala.inline
-    def second: typings.reactTimeago.reactTimeagoStrings.second = "second".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.second]
+    inline def second: typings.reactTimeago.reactTimeagoStrings.second = "second".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.second]
     
-    @scala.inline
-    def week: typings.reactTimeago.reactTimeagoStrings.week = "week".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.week]
+    inline def week: typings.reactTimeago.reactTimeagoStrings.week = "week".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.week]
     
-    @scala.inline
-    def year: typings.reactTimeago.reactTimeagoStrings.year = "year".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.year]
+    inline def year: typings.reactTimeago.reactTimeagoStrings.year = "year".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.year]
   }
 }

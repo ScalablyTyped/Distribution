@@ -13,16 +13,13 @@ trait DeleteExternalModelRequest extends StObject {
 }
 object DeleteExternalModelRequest {
   
-  @scala.inline
-  def apply(modelEndpoint: sageMakerEndpointIdentifier): DeleteExternalModelRequest = {
+  inline def apply(modelEndpoint: sageMakerEndpointIdentifier): DeleteExternalModelRequest = {
     val __obj = js.Dynamic.literal(modelEndpoint = modelEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteExternalModelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteExternalModelRequestMutableBuilder[Self <: DeleteExternalModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteExternalModelRequest](x: Self) {
     
-    @scala.inline
-    def setModelEndpoint(value: sageMakerEndpointIdentifier): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
+    inline def setModelEndpoint(value: sageMakerEndpointIdentifier): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
   }
 }

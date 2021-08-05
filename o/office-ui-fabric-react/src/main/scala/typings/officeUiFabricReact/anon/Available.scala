@@ -22,8 +22,7 @@ trait Available extends StObject {
 }
 object Available {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     available: String,
     away: String,
     background: String,
@@ -36,28 +35,20 @@ object Available {
     __obj.asInstanceOf[Available]
   }
   
-  @scala.inline
-  implicit class AvailableMutableBuilder[Self <: Available] (val x: Self) extends AnyVal {
+  extension [Self <: Available](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: String): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: String): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAway(value: String): Self = StObject.set(x, "away", value.asInstanceOf[js.Any])
+    inline def setAway(value: String): Self = StObject.set(x, "away", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusy(value: String): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
+    inline def setBusy(value: String): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnd(value: String): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+    inline def setDnd(value: String): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffline(value: String): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+    inline def setOffline(value: String): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOof(value: String): Self = StObject.set(x, "oof", value.asInstanceOf[js.Any])
+    inline def setOof(value: String): Self = StObject.set(x, "oof", value.asInstanceOf[js.Any])
   }
 }

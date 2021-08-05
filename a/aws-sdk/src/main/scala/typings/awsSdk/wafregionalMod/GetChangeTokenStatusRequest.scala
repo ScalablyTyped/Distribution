@@ -13,16 +13,13 @@ trait GetChangeTokenStatusRequest extends StObject {
 }
 object GetChangeTokenStatusRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken): GetChangeTokenStatusRequest = {
+  inline def apply(ChangeToken: ChangeToken): GetChangeTokenStatusRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChangeTokenStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetChangeTokenStatusRequestMutableBuilder[Self <: GetChangeTokenStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetChangeTokenStatusRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
   }
 }

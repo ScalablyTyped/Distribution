@@ -127,21 +127,16 @@ object topicRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicRuleState): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicRuleState, opts: CustomResourceOptions): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    inline def get(name: String, id: Input[ID]): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    inline def get(name: String, id: Input[ID], state: TopicRuleState): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    inline def get(name: String, id: Input[ID], state: TopicRuleState, opts: CustomResourceOptions): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
     
     /**
       * Returns true if the given object is an instance of TopicRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean]
   }
   
   trait TopicRuleArgs extends StObject {
@@ -213,149 +208,102 @@ object topicRuleMod {
   }
   object TopicRuleArgs {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean], sql: Input[String], sqlVersion: Input[String]): TopicRuleArgs = {
+    inline def apply(enabled: Input[Boolean], sql: Input[String], sqlVersion: Input[String]): TopicRuleArgs = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any], sqlVersion = sqlVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicRuleArgs]
     }
     
-    @scala.inline
-    implicit class TopicRuleArgsMutableBuilder[Self <: TopicRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TopicRuleArgs](x: Self) {
       
-      @scala.inline
-      def setCloudwatchAlarm(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]): Self = StObject.set(x, "cloudwatchAlarm", value.asInstanceOf[js.Any])
+      inline def setCloudwatchAlarm(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]): Self = StObject.set(x, "cloudwatchAlarm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchAlarmUndefined: Self = StObject.set(x, "cloudwatchAlarm", js.undefined)
+      inline def setCloudwatchAlarmUndefined: Self = StObject.set(x, "cloudwatchAlarm", js.undefined)
       
-      @scala.inline
-      def setCloudwatchMetric(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]): Self = StObject.set(x, "cloudwatchMetric", value.asInstanceOf[js.Any])
+      inline def setCloudwatchMetric(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]): Self = StObject.set(x, "cloudwatchMetric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchMetricUndefined: Self = StObject.set(x, "cloudwatchMetric", js.undefined)
+      inline def setCloudwatchMetricUndefined: Self = StObject.set(x, "cloudwatchMetric", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDynamodb(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+      inline def setDynamodb(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+      inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
       
-      @scala.inline
-      def setDynamodbv2s(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]): Self = StObject.set(x, "dynamodbv2s", value.asInstanceOf[js.Any])
+      inline def setDynamodbv2s(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]): Self = StObject.set(x, "dynamodbv2s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbv2sUndefined: Self = StObject.set(x, "dynamodbv2s", js.undefined)
+      inline def setDynamodbv2sUndefined: Self = StObject.set(x, "dynamodbv2s", js.undefined)
       
-      @scala.inline
-      def setDynamodbv2sVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]*): Self = StObject.set(x, "dynamodbv2s", js.Array(value :_*))
+      inline def setDynamodbv2sVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]*): Self = StObject.set(x, "dynamodbv2s", js.Array(value :_*))
       
-      @scala.inline
-      def setElasticsearch(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
+      inline def setElasticsearch(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
+      inline def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorAction(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
+      inline def setErrorAction(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
+      inline def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
       
-      @scala.inline
-      def setFirehose(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
+      inline def setFirehose(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+      inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
       
-      @scala.inline
-      def setIotAnalytics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]): Self = StObject.set(x, "iotAnalytics", value.asInstanceOf[js.Any])
+      inline def setIotAnalytics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]): Self = StObject.set(x, "iotAnalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotAnalyticsUndefined: Self = StObject.set(x, "iotAnalytics", js.undefined)
+      inline def setIotAnalyticsUndefined: Self = StObject.set(x, "iotAnalytics", js.undefined)
       
-      @scala.inline
-      def setIotAnalyticsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]*): Self = StObject.set(x, "iotAnalytics", js.Array(value :_*))
+      inline def setIotAnalyticsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]*): Self = StObject.set(x, "iotAnalytics", js.Array(value :_*))
       
-      @scala.inline
-      def setIotEvents(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
+      inline def setIotEvents(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
+      inline def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
       
-      @scala.inline
-      def setIotEventsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]*): Self = StObject.set(x, "iotEvents", js.Array(value :_*))
+      inline def setIotEventsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]*): Self = StObject.set(x, "iotEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setKinesis(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+      inline def setKinesis(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
+      inline def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
       
-      @scala.inline
-      def setLambda(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+      inline def setLambda(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+      inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRepublish(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]): Self = StObject.set(x, "republish", value.asInstanceOf[js.Any])
+      inline def setRepublish(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]): Self = StObject.set(x, "republish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepublishUndefined: Self = StObject.set(x, "republish", js.undefined)
+      inline def setRepublishUndefined: Self = StObject.set(x, "republish", js.undefined)
       
-      @scala.inline
-      def setS3(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+      inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
       
-      @scala.inline
-      def setSns(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
+      inline def setSns(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
+      inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
       
-      @scala.inline
-      def setSql(value: Input[String]): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+      inline def setSql(value: Input[String]): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlVersion(value: Input[String]): Self = StObject.set(x, "sqlVersion", value.asInstanceOf[js.Any])
+      inline def setSqlVersion(value: Input[String]): Self = StObject.set(x, "sqlVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+      inline def setSqs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
+      inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
       
-      @scala.inline
-      def setStepFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]): Self = StObject.set(x, "stepFunctions", value.asInstanceOf[js.Any])
+      inline def setStepFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]): Self = StObject.set(x, "stepFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepFunctionsUndefined: Self = StObject.set(x, "stepFunctions", js.undefined)
+      inline def setStepFunctionsUndefined: Self = StObject.set(x, "stepFunctions", js.undefined)
       
-      @scala.inline
-      def setStepFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]*): Self = StObject.set(x, "stepFunctions", js.Array(value :_*))
+      inline def setStepFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]*): Self = StObject.set(x, "stepFunctions", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -433,164 +381,112 @@ object topicRuleMod {
   }
   object TopicRuleState {
     
-    @scala.inline
-    def apply(): TopicRuleState = {
+    inline def apply(): TopicRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopicRuleState]
     }
     
-    @scala.inline
-    implicit class TopicRuleStateMutableBuilder[Self <: TopicRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: TopicRuleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCloudwatchAlarm(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]): Self = StObject.set(x, "cloudwatchAlarm", value.asInstanceOf[js.Any])
+      inline def setCloudwatchAlarm(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]): Self = StObject.set(x, "cloudwatchAlarm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchAlarmUndefined: Self = StObject.set(x, "cloudwatchAlarm", js.undefined)
+      inline def setCloudwatchAlarmUndefined: Self = StObject.set(x, "cloudwatchAlarm", js.undefined)
       
-      @scala.inline
-      def setCloudwatchMetric(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]): Self = StObject.set(x, "cloudwatchMetric", value.asInstanceOf[js.Any])
+      inline def setCloudwatchMetric(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]): Self = StObject.set(x, "cloudwatchMetric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchMetricUndefined: Self = StObject.set(x, "cloudwatchMetric", js.undefined)
+      inline def setCloudwatchMetricUndefined: Self = StObject.set(x, "cloudwatchMetric", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDynamodb(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+      inline def setDynamodb(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+      inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
       
-      @scala.inline
-      def setDynamodbv2s(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]): Self = StObject.set(x, "dynamodbv2s", value.asInstanceOf[js.Any])
+      inline def setDynamodbv2s(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]): Self = StObject.set(x, "dynamodbv2s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbv2sUndefined: Self = StObject.set(x, "dynamodbv2s", js.undefined)
+      inline def setDynamodbv2sUndefined: Self = StObject.set(x, "dynamodbv2s", js.undefined)
       
-      @scala.inline
-      def setDynamodbv2sVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]*): Self = StObject.set(x, "dynamodbv2s", js.Array(value :_*))
+      inline def setDynamodbv2sVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]*): Self = StObject.set(x, "dynamodbv2s", js.Array(value :_*))
       
-      @scala.inline
-      def setElasticsearch(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
+      inline def setElasticsearch(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
+      inline def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setErrorAction(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
+      inline def setErrorAction(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
+      inline def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
       
-      @scala.inline
-      def setFirehose(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
+      inline def setFirehose(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+      inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
       
-      @scala.inline
-      def setIotAnalytics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]): Self = StObject.set(x, "iotAnalytics", value.asInstanceOf[js.Any])
+      inline def setIotAnalytics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]): Self = StObject.set(x, "iotAnalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotAnalyticsUndefined: Self = StObject.set(x, "iotAnalytics", js.undefined)
+      inline def setIotAnalyticsUndefined: Self = StObject.set(x, "iotAnalytics", js.undefined)
       
-      @scala.inline
-      def setIotAnalyticsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]*): Self = StObject.set(x, "iotAnalytics", js.Array(value :_*))
+      inline def setIotAnalyticsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]*): Self = StObject.set(x, "iotAnalytics", js.Array(value :_*))
       
-      @scala.inline
-      def setIotEvents(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
+      inline def setIotEvents(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
+      inline def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
       
-      @scala.inline
-      def setIotEventsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]*): Self = StObject.set(x, "iotEvents", js.Array(value :_*))
+      inline def setIotEventsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]*): Self = StObject.set(x, "iotEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setKinesis(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+      inline def setKinesis(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
+      inline def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
       
-      @scala.inline
-      def setLambda(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+      inline def setLambda(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+      inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRepublish(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]): Self = StObject.set(x, "republish", value.asInstanceOf[js.Any])
+      inline def setRepublish(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]): Self = StObject.set(x, "republish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepublishUndefined: Self = StObject.set(x, "republish", js.undefined)
+      inline def setRepublishUndefined: Self = StObject.set(x, "republish", js.undefined)
       
-      @scala.inline
-      def setS3(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+      inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
       
-      @scala.inline
-      def setSns(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
+      inline def setSns(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
+      inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
       
-      @scala.inline
-      def setSql(value: Input[String]): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+      inline def setSql(value: Input[String]): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+      inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
       
-      @scala.inline
-      def setSqlVersion(value: Input[String]): Self = StObject.set(x, "sqlVersion", value.asInstanceOf[js.Any])
+      inline def setSqlVersion(value: Input[String]): Self = StObject.set(x, "sqlVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlVersionUndefined: Self = StObject.set(x, "sqlVersion", js.undefined)
+      inline def setSqlVersionUndefined: Self = StObject.set(x, "sqlVersion", js.undefined)
       
-      @scala.inline
-      def setSqs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+      inline def setSqs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
+      inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
       
-      @scala.inline
-      def setStepFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]): Self = StObject.set(x, "stepFunctions", value.asInstanceOf[js.Any])
+      inline def setStepFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]): Self = StObject.set(x, "stepFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepFunctionsUndefined: Self = StObject.set(x, "stepFunctions", js.undefined)
+      inline def setStepFunctionsUndefined: Self = StObject.set(x, "stepFunctions", js.undefined)
       
-      @scala.inline
-      def setStepFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]*): Self = StObject.set(x, "stepFunctions", js.Array(value :_*))
+      inline def setStepFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]*): Self = StObject.set(x, "stepFunctions", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

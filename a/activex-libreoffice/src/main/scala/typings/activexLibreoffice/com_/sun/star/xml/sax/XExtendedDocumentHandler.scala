@@ -39,8 +39,7 @@ trait XExtendedDocumentHandler
 }
 object XExtendedDocumentHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     allowLineBreak: () => Unit,
     characters: String => Unit,
@@ -62,22 +61,16 @@ object XExtendedDocumentHandler {
     __obj.asInstanceOf[XExtendedDocumentHandler]
   }
   
-  @scala.inline
-  implicit class XExtendedDocumentHandlerMutableBuilder[Self <: XExtendedDocumentHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedDocumentHandler](x: Self) {
     
-    @scala.inline
-    def setAllowLineBreak(value: () => Unit): Self = StObject.set(x, "allowLineBreak", js.Any.fromFunction0(value))
+    inline def setAllowLineBreak(value: () => Unit): Self = StObject.set(x, "allowLineBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComment(value: String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
+    inline def setComment(value: String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndCDATA(value: () => Unit): Self = StObject.set(x, "endCDATA", js.Any.fromFunction0(value))
+    inline def setEndCDATA(value: () => Unit): Self = StObject.set(x, "endCDATA", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartCDATA(value: () => Unit): Self = StObject.set(x, "startCDATA", js.Any.fromFunction0(value))
+    inline def setStartCDATA(value: () => Unit): Self = StObject.set(x, "startCDATA", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnknown(value: String => Unit): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
+    inline def setUnknown(value: String => Unit): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
   }
 }

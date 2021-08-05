@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.EmailSignatureEntries")
 @js.native
-class EmailSignatureEntries protected ()
+/* private */ class EmailSignatureEntries ()
   extends StObject
      with typings.activexWord.Word.EmailSignatureEntries {
   
@@ -28,7 +28,7 @@ class EmailSignatureEntries protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.EmailSignatureEntries_typekey")
   var WordDotEmailSignatureEntries_typekey: typings.activexWord.Word.EmailSignatureEntries = js.native
 }

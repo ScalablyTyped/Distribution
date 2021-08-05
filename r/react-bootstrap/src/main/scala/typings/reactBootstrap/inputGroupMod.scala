@@ -27,8 +27,7 @@ object inputGroupMod {
   @JSImport("react-bootstrap/lib/InputGroup", "Addon")
   @js.native
   def Addon: Instantiable0[typings.reactBootstrap.inputGroupAddonMod.^] = js.native
-  @scala.inline
-  def Addon_=(x: Instantiable0[typings.reactBootstrap.inputGroupAddonMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Addon")(x.asInstanceOf[js.Any])
+  inline def Addon_=(x: Instantiable0[typings.reactBootstrap.inputGroupAddonMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Addon")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/InputGroup", "Button")
@@ -39,8 +38,7 @@ object inputGroupMod {
   @JSImport("react-bootstrap/lib/InputGroup", "Button")
   @js.native
   def Button: Instantiable0[typings.reactBootstrap.inputGroupButtonMod.^] = js.native
-  @scala.inline
-  def Button_=(x: Instantiable0[typings.reactBootstrap.inputGroupButtonMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+  inline def Button_=(x: Instantiable0[typings.reactBootstrap.inputGroupButtonMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
   
   @js.native
   trait InputGroup
@@ -56,26 +54,20 @@ object inputGroupMod {
   }
   object InputGroupProps {
     
-    @scala.inline
-    def apply(): InputGroupProps = {
+    inline def apply(): InputGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputGroupProps]
     }
     
-    @scala.inline
-    implicit class InputGroupPropsMutableBuilder[Self <: InputGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputGroupProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
     }
   }
 }

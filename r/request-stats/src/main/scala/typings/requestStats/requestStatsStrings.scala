@@ -8,11 +8,9 @@ object requestStatsStrings {
   
   @js.native
   sealed trait complete extends StObject
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait request extends StObject
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
+  inline def request: request = "request".asInstanceOf[request]
 }

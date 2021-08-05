@@ -19,26 +19,20 @@ trait NestedPseudoClassNode
 }
 object NestedPseudoClassNode {
   
-  @scala.inline
-  def apply(name: String, nodes: js.Array[SelectorNode]): NestedPseudoClassNode = {
+  inline def apply(name: String, nodes: js.Array[SelectorNode]): NestedPseudoClassNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nested-pseudo-class")
     __obj.asInstanceOf[NestedPseudoClassNode]
   }
   
-  @scala.inline
-  implicit class NestedPseudoClassNodeMutableBuilder[Self <: NestedPseudoClassNode] (val x: Self) extends AnyVal {
+  extension [Self <: NestedPseudoClassNode](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[SelectorNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[SelectorNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: SelectorNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SelectorNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `nested-pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `nested-pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

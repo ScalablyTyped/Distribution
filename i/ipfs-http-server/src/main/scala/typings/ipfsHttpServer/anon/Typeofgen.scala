@@ -12,19 +12,15 @@ trait Typeofgen extends StObject {
 }
 object Typeofgen {
   
-  @scala.inline
-  def apply(handler_3: (js.Any, js.Any) => js.Promise[js.Any], options_6: Typeofoptions6): Typeofgen = {
+  inline def apply(handler_3: (js.Any, js.Any) => js.Promise[js.Any], options_6: Typeofoptions6): Typeofgen = {
     val __obj = js.Dynamic.literal(handler_3 = js.Any.fromFunction2(handler_3), options_6 = options_6.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofgen]
   }
   
-  @scala.inline
-  implicit class TypeofgenMutableBuilder[Self <: Typeofgen] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofgen](x: Self) {
     
-    @scala.inline
-    def setHandler_3(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_3", js.Any.fromFunction2(value))
+    inline def setHandler_3(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_3", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_6(value: Typeofoptions6): Self = StObject.set(x, "options_6", value.asInstanceOf[js.Any])
+    inline def setOptions_6(value: Typeofoptions6): Self = StObject.set(x, "options_6", value.asInstanceOf[js.Any])
   }
 }

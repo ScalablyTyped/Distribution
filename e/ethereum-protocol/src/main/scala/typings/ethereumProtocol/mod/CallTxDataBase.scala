@@ -21,49 +21,35 @@ trait CallTxDataBase extends StObject {
 }
 object CallTxDataBase {
   
-  @scala.inline
-  def apply(): CallTxDataBase = {
+  inline def apply(): CallTxDataBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallTxDataBase]
   }
   
-  @scala.inline
-  implicit class CallTxDataBaseMutableBuilder[Self <: CallTxDataBase] (val x: Self) extends AnyVal {
+  extension [Self <: CallTxDataBase](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setGas(value: Double | String | default): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+    inline def setGas(value: Double | String | default): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGasPrice(value: Double | String | default): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+    inline def setGasPrice(value: Double | String | default): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+    inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
     
-    @scala.inline
-    def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+    inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
     
-    @scala.inline
-    def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double | String | default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String | default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

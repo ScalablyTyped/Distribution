@@ -15,8 +15,7 @@ trait BootstrapClientRibbon
 }
 object BootstrapClientRibbon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTabChanged: ASPxClientEvent[ASPxClientRibbonTabEventHandler[ASPxClientRibbon]],
     AdjustControl: () => Unit,
     CommandExecuted: ASPxClientEvent[ASPxClientRibbonCommandExecutedEventHandler[ASPxClientRibbon]],
@@ -59,10 +58,8 @@ object BootstrapClientRibbon {
     __obj.asInstanceOf[BootstrapClientRibbon]
   }
   
-  @scala.inline
-  implicit class BootstrapClientRibbonMutableBuilder[Self <: BootstrapClientRibbon] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientRibbon](x: Self) {
     
-    @scala.inline
-    def setGetQuickAccessToolbarItem(value: String => ASPxClientRibbonItem): Self = StObject.set(x, "GetQuickAccessToolbarItem", js.Any.fromFunction1(value))
+    inline def setGetQuickAccessToolbarItem(value: String => ASPxClientRibbonItem): Self = StObject.set(x, "GetQuickAccessToolbarItem", js.Any.fromFunction1(value))
   }
 }

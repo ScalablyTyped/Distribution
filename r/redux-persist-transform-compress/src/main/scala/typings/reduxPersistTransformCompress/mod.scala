@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State, Raw](): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
-  @scala.inline
-  def default[State, Raw](
+  inline def default[State, Raw](): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PersistorConfig */ js.Any
   ): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
 }

@@ -44,29 +44,22 @@ object sectionMod {
   }
   object SectionParams {
     
-    @scala.inline
-    def apply(title: String): SectionParams = {
+    inline def apply(title: String): SectionParams = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SectionParams]
     }
     
-    @scala.inline
-    implicit class SectionParamsMutableBuilder[Self <: SectionParams] (val x: Self) extends AnyVal {
+    extension [Self <: SectionParams](x: Self) {
       
-      @scala.inline
-      def setCustomizeAction(value: String): Self = StObject.set(x, "customizeAction", value.asInstanceOf[js.Any])
+      inline def setCustomizeAction(value: String): Self = StObject.set(x, "customizeAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomizeActionUndefined: Self = StObject.set(x, "customizeAction", js.undefined)
+      inline def setCustomizeActionUndefined: Self = StObject.set(x, "customizeAction", js.undefined)
       
-      @scala.inline
-      def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelNull: Self = StObject.set(x, "panel", null)
+      inline def setPanelNull: Self = StObject.set(x, "panel", null)
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     }
   }
 }

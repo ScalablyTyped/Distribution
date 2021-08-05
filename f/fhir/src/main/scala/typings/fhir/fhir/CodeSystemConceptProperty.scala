@@ -78,88 +78,61 @@ trait CodeSystemConceptProperty
 }
 object CodeSystemConceptProperty {
   
-  @scala.inline
-  def apply(code: code): CodeSystemConceptProperty = {
+  inline def apply(code: code): CodeSystemConceptProperty = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSystemConceptProperty]
   }
   
-  @scala.inline
-  implicit class CodeSystemConceptPropertyMutableBuilder[Self <: CodeSystemConceptProperty] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSystemConceptProperty](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
+    inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
+    inline def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
     
-    @scala.inline
-    def setValueCode(value: code): Self = StObject.set(x, "valueCode", value.asInstanceOf[js.Any])
+    inline def setValueCode(value: code): Self = StObject.set(x, "valueCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCodeUndefined: Self = StObject.set(x, "valueCode", js.undefined)
+    inline def setValueCodeUndefined: Self = StObject.set(x, "valueCode", js.undefined)
     
-    @scala.inline
-    def setValueCoding(value: Coding): Self = StObject.set(x, "valueCoding", value.asInstanceOf[js.Any])
+    inline def setValueCoding(value: Coding): Self = StObject.set(x, "valueCoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCodingUndefined: Self = StObject.set(x, "valueCoding", js.undefined)
+    inline def setValueCodingUndefined: Self = StObject.set(x, "valueCoding", js.undefined)
     
-    @scala.inline
-    def setValueDateTime(value: dateTime): Self = StObject.set(x, "valueDateTime", value.asInstanceOf[js.Any])
+    inline def setValueDateTime(value: dateTime): Self = StObject.set(x, "valueDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDateTimeUndefined: Self = StObject.set(x, "valueDateTime", js.undefined)
+    inline def setValueDateTimeUndefined: Self = StObject.set(x, "valueDateTime", js.undefined)
     
-    @scala.inline
-    def setValueInteger(value: integer): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
+    inline def setValueInteger(value: integer): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
+    inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
-    @scala.inline
-    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
+    inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
+    inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
+    inline def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
+    inline def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
     
-    @scala.inline
-    def set_valueCode(value: Element): Self = StObject.set(x, "_valueCode", value.asInstanceOf[js.Any])
+    inline def set_valueCode(value: Element): Self = StObject.set(x, "_valueCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueCodeUndefined: Self = StObject.set(x, "_valueCode", js.undefined)
+    inline def set_valueCodeUndefined: Self = StObject.set(x, "_valueCode", js.undefined)
     
-    @scala.inline
-    def set_valueDateTime(value: Element): Self = StObject.set(x, "_valueDateTime", value.asInstanceOf[js.Any])
+    inline def set_valueDateTime(value: Element): Self = StObject.set(x, "_valueDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueDateTimeUndefined: Self = StObject.set(x, "_valueDateTime", js.undefined)
+    inline def set_valueDateTimeUndefined: Self = StObject.set(x, "_valueDateTime", js.undefined)
     
-    @scala.inline
-    def set_valueInteger(value: Element): Self = StObject.set(x, "_valueInteger", value.asInstanceOf[js.Any])
+    inline def set_valueInteger(value: Element): Self = StObject.set(x, "_valueInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueIntegerUndefined: Self = StObject.set(x, "_valueInteger", js.undefined)
+    inline def set_valueIntegerUndefined: Self = StObject.set(x, "_valueInteger", js.undefined)
     
-    @scala.inline
-    def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
+    inline def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
+    inline def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
   }
 }

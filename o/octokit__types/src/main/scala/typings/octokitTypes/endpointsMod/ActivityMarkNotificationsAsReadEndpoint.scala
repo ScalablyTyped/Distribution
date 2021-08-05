@@ -13,19 +13,15 @@ trait ActivityMarkNotificationsAsReadEndpoint extends StObject {
 }
 object ActivityMarkNotificationsAsReadEndpoint {
   
-  @scala.inline
-  def apply(): ActivityMarkNotificationsAsReadEndpoint = {
+  inline def apply(): ActivityMarkNotificationsAsReadEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityMarkNotificationsAsReadEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivityMarkNotificationsAsReadEndpointMutableBuilder[Self <: ActivityMarkNotificationsAsReadEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityMarkNotificationsAsReadEndpoint](x: Self) {
     
-    @scala.inline
-    def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
+    inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_read_atUndefined: Self = StObject.set(x, "last_read_at", js.undefined)
+    inline def setLast_read_atUndefined: Self = StObject.set(x, "last_read_at", js.undefined)
   }
 }

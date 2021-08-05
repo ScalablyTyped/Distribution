@@ -515,8 +515,7 @@ trait CreateBlob extends StObject {
 }
 object CreateBlob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createBlob: `144`,
     createCommit: `145`,
     createRef: `146`,
@@ -535,46 +534,32 @@ object CreateBlob {
     __obj.asInstanceOf[CreateBlob]
   }
   
-  @scala.inline
-  implicit class CreateBlobMutableBuilder[Self <: CreateBlob] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBlob](x: Self) {
     
-    @scala.inline
-    def setCreateBlob(value: `144`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
+    inline def setCreateBlob(value: `144`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCommit(value: `145`): Self = StObject.set(x, "createCommit", value.asInstanceOf[js.Any])
+    inline def setCreateCommit(value: `145`): Self = StObject.set(x, "createCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRef(value: `146`): Self = StObject.set(x, "createRef", value.asInstanceOf[js.Any])
+    inline def setCreateRef(value: `146`): Self = StObject.set(x, "createRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTag(value: `147`): Self = StObject.set(x, "createTag", value.asInstanceOf[js.Any])
+    inline def setCreateTag(value: `147`): Self = StObject.set(x, "createTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTree(value: `148`): Self = StObject.set(x, "createTree", value.asInstanceOf[js.Any])
+    inline def setCreateTree(value: `148`): Self = StObject.set(x, "createTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRef(value: `149`): Self = StObject.set(x, "deleteRef", value.asInstanceOf[js.Any])
+    inline def setDeleteRef(value: `149`): Self = StObject.set(x, "deleteRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBlob(value: `150`): Self = StObject.set(x, "getBlob", value.asInstanceOf[js.Any])
+    inline def setGetBlob(value: `150`): Self = StObject.set(x, "getBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommit(value: `151`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
+    inline def setGetCommit(value: `151`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRef(value: `152`): Self = StObject.set(x, "getRef", value.asInstanceOf[js.Any])
+    inline def setGetRef(value: `152`): Self = StObject.set(x, "getRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTag(value: `153`): Self = StObject.set(x, "getTag", value.asInstanceOf[js.Any])
+    inline def setGetTag(value: `153`): Self = StObject.set(x, "getTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTree(value: `154`): Self = StObject.set(x, "getTree", value.asInstanceOf[js.Any])
+    inline def setGetTree(value: `154`): Self = StObject.set(x, "getTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListMatchingRefs(value: `155`): Self = StObject.set(x, "listMatchingRefs", value.asInstanceOf[js.Any])
+    inline def setListMatchingRefs(value: `155`): Self = StObject.set(x, "listMatchingRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRef(value: `156`): Self = StObject.set(x, "updateRef", value.asInstanceOf[js.Any])
+    inline def setUpdateRef(value: `156`): Self = StObject.set(x, "updateRef", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait GoogleDevtoolsRemotebuildbotCommandStatus extends StObject {
 }
 object GoogleDevtoolsRemotebuildbotCommandStatus {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildbotCommandStatus = {
+  inline def apply(): GoogleDevtoolsRemotebuildbotCommandStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotCommandStatus]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildbotCommandStatusMutableBuilder[Self <: GoogleDevtoolsRemotebuildbotCommandStatus] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildbotCommandStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

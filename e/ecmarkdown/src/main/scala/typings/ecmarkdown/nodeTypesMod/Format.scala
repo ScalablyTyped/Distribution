@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Format extends StObject
 object Format {
   
-  @scala.inline
-  def pipe: typings.ecmarkdown.ecmarkdownStrings.pipe = "pipe".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.pipe]
+  inline def pipe: typings.ecmarkdown.ecmarkdownStrings.pipe = "pipe".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.pipe]
   
-  @scala.inline
-  def star: typings.ecmarkdown.ecmarkdownStrings.star = "star".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.star]
+  inline def star: typings.ecmarkdown.ecmarkdownStrings.star = "star".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.star]
   
-  @scala.inline
-  def tick: typings.ecmarkdown.ecmarkdownStrings.tick = "tick".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.tick]
+  inline def tick: typings.ecmarkdown.ecmarkdownStrings.tick = "tick".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.tick]
   
-  @scala.inline
-  def tilde: typings.ecmarkdown.ecmarkdownStrings.tilde = "tilde".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.tilde]
+  inline def tilde: typings.ecmarkdown.ecmarkdownStrings.tilde = "tilde".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.tilde]
   
-  @scala.inline
-  def underscore: typings.ecmarkdown.ecmarkdownStrings.underscore = "underscore".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.underscore]
+  inline def underscore: typings.ecmarkdown.ecmarkdownStrings.underscore = "underscore".asInstanceOf[typings.ecmarkdown.ecmarkdownStrings.underscore]
 }

@@ -31,34 +31,25 @@ trait SchemaNotificationSet extends StObject {
 }
 object SchemaNotificationSet {
   
-  @scala.inline
-  def apply(): SchemaNotificationSet = {
+  inline def apply(): SchemaNotificationSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotificationSet]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationSetMutableBuilder[Self <: SchemaNotificationSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotificationSet](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNotification(value: js.Array[SchemaNotification]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: js.Array[SchemaNotification]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
+    inline def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
+    inline def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setNotificationVarargs(value: SchemaNotification*): Self = StObject.set(x, "notification", js.Array(value :_*))
+    inline def setNotificationVarargs(value: SchemaNotification*): Self = StObject.set(x, "notification", js.Array(value :_*))
   }
 }

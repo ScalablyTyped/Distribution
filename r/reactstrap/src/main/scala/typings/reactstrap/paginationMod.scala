@@ -36,44 +36,32 @@ object paginationMod {
   }
   object PaginationProps {
     
-    @scala.inline
-    def apply(): PaginationProps = {
+    inline def apply(): PaginationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationProps]
     }
     
-    @scala.inline
-    implicit class PaginationPropsMutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
+      inline def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
+      inline def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
       
-      @scala.inline
-      def setListTag(value: ElementType[js.Any]): Self = StObject.set(x, "listTag", value.asInstanceOf[js.Any])
+      inline def setListTag(value: ElementType[js.Any]): Self = StObject.set(x, "listTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListTagUndefined: Self = StObject.set(x, "listTag", js.undefined)
+      inline def setListTagUndefined: Self = StObject.set(x, "listTag", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

@@ -63,85 +63,59 @@ trait CreateJobOutput extends StObject {
 }
 object CreateJobOutput {
   
-  @scala.inline
-  def apply(): CreateJobOutput = {
+  inline def apply(): CreateJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateJobOutput]
   }
   
-  @scala.inline
-  implicit class CreateJobOutputMutableBuilder[Self <: CreateJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateJobOutput](x: Self) {
     
-    @scala.inline
-    def setAlbumArt(value: JobAlbumArt): Self = StObject.set(x, "AlbumArt", value.asInstanceOf[js.Any])
+    inline def setAlbumArt(value: JobAlbumArt): Self = StObject.set(x, "AlbumArt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumArtUndefined: Self = StObject.set(x, "AlbumArt", js.undefined)
+    inline def setAlbumArtUndefined: Self = StObject.set(x, "AlbumArt", js.undefined)
     
-    @scala.inline
-    def setCaptions(value: Captions): Self = StObject.set(x, "Captions", value.asInstanceOf[js.Any])
+    inline def setCaptions(value: Captions): Self = StObject.set(x, "Captions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionsUndefined: Self = StObject.set(x, "Captions", js.undefined)
+    inline def setCaptionsUndefined: Self = StObject.set(x, "Captions", js.undefined)
     
-    @scala.inline
-    def setComposition(value: Composition): Self = StObject.set(x, "Composition", value.asInstanceOf[js.Any])
+    inline def setComposition(value: Composition): Self = StObject.set(x, "Composition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositionUndefined: Self = StObject.set(x, "Composition", js.undefined)
+    inline def setCompositionUndefined: Self = StObject.set(x, "Composition", js.undefined)
     
-    @scala.inline
-    def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value :_*))
+    inline def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setPresetId(value: Id): Self = StObject.set(x, "PresetId", value.asInstanceOf[js.Any])
+    inline def setPresetId(value: Id): Self = StObject.set(x, "PresetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetIdUndefined: Self = StObject.set(x, "PresetId", js.undefined)
+    inline def setPresetIdUndefined: Self = StObject.set(x, "PresetId", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Rotate): Self = StObject.set(x, "Rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Rotate): Self = StObject.set(x, "Rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "Rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "Rotate", js.undefined)
     
-    @scala.inline
-    def setSegmentDuration(value: FloatString): Self = StObject.set(x, "SegmentDuration", value.asInstanceOf[js.Any])
+    inline def setSegmentDuration(value: FloatString): Self = StObject.set(x, "SegmentDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDurationUndefined: Self = StObject.set(x, "SegmentDuration", js.undefined)
+    inline def setSegmentDurationUndefined: Self = StObject.set(x, "SegmentDuration", js.undefined)
     
-    @scala.inline
-    def setThumbnailEncryption(value: Encryption): Self = StObject.set(x, "ThumbnailEncryption", value.asInstanceOf[js.Any])
+    inline def setThumbnailEncryption(value: Encryption): Self = StObject.set(x, "ThumbnailEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailEncryptionUndefined: Self = StObject.set(x, "ThumbnailEncryption", js.undefined)
+    inline def setThumbnailEncryptionUndefined: Self = StObject.set(x, "ThumbnailEncryption", js.undefined)
     
-    @scala.inline
-    def setThumbnailPattern(value: ThumbnailPattern): Self = StObject.set(x, "ThumbnailPattern", value.asInstanceOf[js.Any])
+    inline def setThumbnailPattern(value: ThumbnailPattern): Self = StObject.set(x, "ThumbnailPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailPatternUndefined: Self = StObject.set(x, "ThumbnailPattern", js.undefined)
+    inline def setThumbnailPatternUndefined: Self = StObject.set(x, "ThumbnailPattern", js.undefined)
     
-    @scala.inline
-    def setWatermarks(value: JobWatermarks): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
+    inline def setWatermarks(value: JobWatermarks): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
+    inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
     
-    @scala.inline
-    def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
+    inline def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
   }
 }

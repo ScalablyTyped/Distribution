@@ -10,6 +10,5 @@ object isObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isObject(x: js.Any): /* is std.Object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Object */ Boolean]
+  inline def isObject(x: js.Any): /* is std.Object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Object */ Boolean]
 }

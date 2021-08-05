@@ -10,16 +10,13 @@ trait EnumValuesImport extends StObject {
 }
 object EnumValuesImport {
   
-  @scala.inline
-  def apply(enumValues: Import): EnumValuesImport = {
+  inline def apply(enumValues: Import): EnumValuesImport = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesImport]
   }
   
-  @scala.inline
-  implicit class EnumValuesImportMutableBuilder[Self <: EnumValuesImport] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesImport](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Import): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Import): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

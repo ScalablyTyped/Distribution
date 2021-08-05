@@ -17,17 +17,14 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: WizardContext => ReactNode): Children = {
+    inline def apply(children: WizardContext => ReactNode): Children = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: WizardContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: WizardContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -39,20 +36,16 @@ object anon {
   }
   object Render {
     
-    @scala.inline
-    def apply(): Render = {
+    inline def apply(): Render = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Render]
     }
     
-    @scala.inline
-    implicit class RenderMutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
+    extension [Self <: Render](x: Self) {
       
-      @scala.inline
-      def setRender(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

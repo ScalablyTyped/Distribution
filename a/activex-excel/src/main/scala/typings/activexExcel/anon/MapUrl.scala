@@ -17,25 +17,19 @@ trait MapUrl extends StObject {
 }
 object MapUrl {
   
-  @scala.inline
-  def apply(Cancel: Boolean, IsRefresh: Boolean, Map: XmlMap, Url: String): MapUrl = {
+  inline def apply(Cancel: Boolean, IsRefresh: Boolean, Map: XmlMap, Url: String): MapUrl = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapUrl]
   }
   
-  @scala.inline
-  implicit class MapUrlMutableBuilder[Self <: MapUrl] (val x: Self) extends AnyVal {
+  extension [Self <: MapUrl](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRefresh(value: Boolean): Self = StObject.set(x, "IsRefresh", value.asInstanceOf[js.Any])
+    inline def setIsRefresh(value: Boolean): Self = StObject.set(x, "IsRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
+    inline def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

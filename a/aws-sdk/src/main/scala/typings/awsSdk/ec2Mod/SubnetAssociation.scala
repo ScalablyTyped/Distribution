@@ -18,25 +18,19 @@ trait SubnetAssociation extends StObject {
 }
 object SubnetAssociation {
   
-  @scala.inline
-  def apply(): SubnetAssociation = {
+  inline def apply(): SubnetAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetAssociation]
   }
   
-  @scala.inline
-  implicit class SubnetAssociationMutableBuilder[Self <: SubnetAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetAssociation](x: Self) {
     
-    @scala.inline
-    def setState(value: TransitGatewayMulitcastDomainAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TransitGatewayMulitcastDomainAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

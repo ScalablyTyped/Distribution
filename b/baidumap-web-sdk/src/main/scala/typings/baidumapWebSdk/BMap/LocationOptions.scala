@@ -12,25 +12,19 @@ trait LocationOptions extends StObject {
 }
 object LocationOptions {
   
-  @scala.inline
-  def apply(): LocationOptions = {
+  inline def apply(): LocationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationOptions]
   }
   
-  @scala.inline
-  implicit class LocationOptionsMutableBuilder[Self <: LocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocationOptions](x: Self) {
     
-    @scala.inline
-    def setNumPois(value: Double): Self = StObject.set(x, "numPois", value.asInstanceOf[js.Any])
+    inline def setNumPois(value: Double): Self = StObject.set(x, "numPois", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPoisUndefined: Self = StObject.set(x, "numPois", js.undefined)
+    inline def setNumPoisUndefined: Self = StObject.set(x, "numPois", js.undefined)
     
-    @scala.inline
-    def setPoiRadius(value: Double): Self = StObject.set(x, "poiRadius", value.asInstanceOf[js.Any])
+    inline def setPoiRadius(value: Double): Self = StObject.set(x, "poiRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoiRadiusUndefined: Self = StObject.set(x, "poiRadius", js.undefined)
+    inline def setPoiRadiusUndefined: Self = StObject.set(x, "poiRadius", js.undefined)
   }
 }

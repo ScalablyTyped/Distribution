@@ -25,16 +25,14 @@ object ChartLegendPosition {
     *
     * side of the first one.</p>
     */
-  @scala.inline
-  def BOTTOM: `4` = 4.asInstanceOf[`4`]
+  inline def BOTTOM: `4` = 4.asInstanceOf[`4`]
   
   /**
     * displays the chart legend on the left side of the diagram. <p>The second entry in the legend is placed below the first
     *
     * one.</p>
     */
-  @scala.inline
-  def LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def LEFT: `1` = 1.asInstanceOf[`1`]
   
   /**
     * error indicators are not displayed.
@@ -51,22 +49,19 @@ object ChartLegendPosition {
     *
     * displays no regression curve.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * displays the chart legend on the right side of the diagram. <p>The second entry in the legend is placed below the first
     *
     * one.</p>
     */
-  @scala.inline
-  def RIGHT: `3` = 3.asInstanceOf[`3`]
+  inline def RIGHT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * displays the chart legend above the diagram. <p>The second entry in the legend is placed on the right hand
     *
     * side of the first one.</p>
     */
-  @scala.inline
-  def TOP: `2` = 2.asInstanceOf[`2`]
+  inline def TOP: `2` = 2.asInstanceOf[`2`]
 }

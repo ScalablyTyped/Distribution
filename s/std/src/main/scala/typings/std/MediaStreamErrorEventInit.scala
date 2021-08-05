@@ -12,22 +12,17 @@ trait MediaStreamErrorEventInit
 }
 object MediaStreamErrorEventInit {
   
-  @scala.inline
-  def apply(): MediaStreamErrorEventInit = {
+  inline def apply(): MediaStreamErrorEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaStreamErrorEventInit]
   }
   
-  @scala.inline
-  implicit class MediaStreamErrorEventInitMutableBuilder[Self <: MediaStreamErrorEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamErrorEventInit](x: Self) {
     
-    @scala.inline
-    def setError(value: MediaStreamError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MediaStreamError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }
 }

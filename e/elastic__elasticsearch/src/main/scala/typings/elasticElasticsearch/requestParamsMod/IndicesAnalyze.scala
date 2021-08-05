@@ -14,25 +14,19 @@ trait IndicesAnalyze[T]
 }
 object IndicesAnalyze {
   
-  @scala.inline
-  def apply[T](): IndicesAnalyze[T] = {
+  inline def apply[T](): IndicesAnalyze[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndicesAnalyze[T]]
   }
   
-  @scala.inline
-  implicit class IndicesAnalyzeMutableBuilder[Self <: IndicesAnalyze[?], T] (val x: Self & IndicesAnalyze[T]) extends AnyVal {
+  extension [Self <: IndicesAnalyze[?], T](x: Self & IndicesAnalyze[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

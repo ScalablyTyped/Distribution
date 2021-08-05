@@ -8,16 +8,13 @@ object kikBrowserStrings {
   
   @js.native
   sealed trait free extends StObject
-  @scala.inline
-  def free: free = "free".asInstanceOf[free]
+  inline def free: free = "free".asInstanceOf[free]
   
   @js.native
   sealed trait landscape extends StObject
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait portrait extends StObject
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
 }

@@ -15,19 +15,15 @@ trait Mark extends StObject {
 }
 object Mark {
   
-  @scala.inline
-  def apply(mark: String, render: (FormItemInputProps & FormItemInputMiscProps, ErrorList) => ReactNode): Mark = {
+  inline def apply(mark: String, render: (FormItemInputProps & FormItemInputMiscProps, ErrorList) => ReactNode): Mark = {
     val __obj = js.Dynamic.literal(mark = mark.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
     __obj.asInstanceOf[Mark]
   }
   
-  @scala.inline
-  implicit class MarkMutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
+  extension [Self <: Mark](x: Self) {
     
-    @scala.inline
-    def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: (FormItemInputProps & FormItemInputMiscProps, ErrorList) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (FormItemInputProps & FormItemInputMiscProps, ErrorList) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
   }
 }

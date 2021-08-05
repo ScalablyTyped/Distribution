@@ -13,19 +13,15 @@ trait ICoreWindowFlyoutFactory extends StObject {
 }
 object ICoreWindowFlyoutFactory {
   
-  @scala.inline
-  def apply(create: Point => CoreWindowFlyout, createWithTitle: (Point, String) => CoreWindowFlyout): ICoreWindowFlyoutFactory = {
+  inline def apply(create: Point => CoreWindowFlyout, createWithTitle: (Point, String) => CoreWindowFlyout): ICoreWindowFlyoutFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createWithTitle = js.Any.fromFunction2(createWithTitle))
     __obj.asInstanceOf[ICoreWindowFlyoutFactory]
   }
   
-  @scala.inline
-  implicit class ICoreWindowFlyoutFactoryMutableBuilder[Self <: ICoreWindowFlyoutFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreWindowFlyoutFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Point => CoreWindowFlyout): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Point => CoreWindowFlyout): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithTitle(value: (Point, String) => CoreWindowFlyout): Self = StObject.set(x, "createWithTitle", js.Any.fromFunction2(value))
+    inline def setCreateWithTitle(value: (Point, String) => CoreWindowFlyout): Self = StObject.set(x, "createWithTitle", js.Any.fromFunction2(value))
   }
 }

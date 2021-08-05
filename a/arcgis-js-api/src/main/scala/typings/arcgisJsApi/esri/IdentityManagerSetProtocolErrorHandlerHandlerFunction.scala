@@ -26,8 +26,7 @@ trait IdentityManagerSetProtocolErrorHandlerHandlerFunction
 }
 object IdentityManagerSetProtocolErrorHandlerHandlerFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object IdentityManagerSetProtocolErrorHandlerHandlerFunction {
     __obj.asInstanceOf[IdentityManagerSetProtocolErrorHandlerHandlerFunction]
   }
   
-  @scala.inline
-  implicit class IdentityManagerSetProtocolErrorHandlerHandlerFunctionMutableBuilder[Self <: IdentityManagerSetProtocolErrorHandlerHandlerFunction] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityManagerSetProtocolErrorHandlerHandlerFunction](x: Self) {
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+    inline def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
   }
 }

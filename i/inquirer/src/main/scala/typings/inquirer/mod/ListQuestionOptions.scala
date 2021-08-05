@@ -21,19 +21,15 @@ trait ListQuestionOptions[T /* <: Answers */]
 }
 object ListQuestionOptions {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): ListQuestionOptions[T] = {
+  inline def apply[T /* <: Answers */](): ListQuestionOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQuestionOptions[T]]
   }
   
-  @scala.inline
-  implicit class ListQuestionOptionsMutableBuilder[Self <: ListQuestionOptions[?], T /* <: Answers */] (val x: Self & ListQuestionOptions[T]) extends AnyVal {
+  extension [Self <: ListQuestionOptions[?], T /* <: Answers */](x: Self & ListQuestionOptions[T]) {
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
   }
 }

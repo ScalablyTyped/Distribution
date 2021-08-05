@@ -14,22 +14,17 @@ trait CreationOpts extends StObject {
 }
 object CreationOpts {
   
-  @scala.inline
-  def apply(creationOpts: Record[String, js.Any]): CreationOpts = {
+  inline def apply(creationOpts: Record[String, js.Any]): CreationOpts = {
     val __obj = js.Dynamic.literal(creationOpts = creationOpts.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreationOpts]
   }
   
-  @scala.inline
-  implicit class CreationOptsMutableBuilder[Self <: CreationOpts] (val x: Self) extends AnyVal {
+  extension [Self <: CreationOpts](x: Self) {
     
-    @scala.inline
-    def setCreationOpts(value: Record[String, js.Any]): Self = StObject.set(x, "creationOpts", value.asInstanceOf[js.Any])
+    inline def setCreationOpts(value: Record[String, js.Any]): Self = StObject.set(x, "creationOpts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemote(value: RemoteRoom): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: RemoteRoom): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
   }
 }

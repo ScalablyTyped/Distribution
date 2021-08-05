@@ -28,8 +28,7 @@ trait CreateReplicationSubnetGroupMessage extends StObject {
 }
 object CreateReplicationSubnetGroupMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReplicationSubnetGroupDescription: String,
     ReplicationSubnetGroupIdentifier: String,
     SubnetIds: SubnetIdentifierList
@@ -38,28 +37,20 @@ object CreateReplicationSubnetGroupMessage {
     __obj.asInstanceOf[CreateReplicationSubnetGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateReplicationSubnetGroupMessageMutableBuilder[Self <: CreateReplicationSubnetGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReplicationSubnetGroupMessage](x: Self) {
     
-    @scala.inline
-    def setReplicationSubnetGroupDescription(value: String): Self = StObject.set(x, "ReplicationSubnetGroupDescription", value.asInstanceOf[js.Any])
+    inline def setReplicationSubnetGroupDescription(value: String): Self = StObject.set(x, "ReplicationSubnetGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationSubnetGroupIdentifier(value: String): Self = StObject.set(x, "ReplicationSubnetGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setReplicationSubnetGroupIdentifier(value: String): Self = StObject.set(x, "ReplicationSubnetGroupIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIdentifierList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIdentifierList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait ListModelPackagesOutput extends StObject {
 }
 object ListModelPackagesOutput {
   
-  @scala.inline
-  def apply(ModelPackageSummaryList: ModelPackageSummaryList): ListModelPackagesOutput = {
+  inline def apply(ModelPackageSummaryList: ModelPackageSummaryList): ListModelPackagesOutput = {
     val __obj = js.Dynamic.literal(ModelPackageSummaryList = ModelPackageSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListModelPackagesOutput]
   }
   
-  @scala.inline
-  implicit class ListModelPackagesOutputMutableBuilder[Self <: ListModelPackagesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListModelPackagesOutput](x: Self) {
     
-    @scala.inline
-    def setModelPackageSummaryList(value: ModelPackageSummaryList): Self = StObject.set(x, "ModelPackageSummaryList", value.asInstanceOf[js.Any])
+    inline def setModelPackageSummaryList(value: ModelPackageSummaryList): Self = StObject.set(x, "ModelPackageSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageSummaryListVarargs(value: ModelPackageSummary*): Self = StObject.set(x, "ModelPackageSummaryList", js.Array(value :_*))
+    inline def setModelPackageSummaryListVarargs(value: ModelPackageSummary*): Self = StObject.set(x, "ModelPackageSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -19,28 +19,21 @@ trait FullTreegetNodeKeyGetNode extends StObject {
 }
 object FullTreegetNodeKeyGetNode {
   
-  @scala.inline
-  def apply(getNodeKey: /* data */ TreeIndex & TreeNode => String | Double, treeData: js.Array[TreeItem]): FullTreegetNodeKeyGetNode = {
+  inline def apply(getNodeKey: /* data */ TreeIndex & TreeNode => String | Double, treeData: js.Array[TreeItem]): FullTreegetNodeKeyGetNode = {
     val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), treeData = treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullTreegetNodeKeyGetNode]
   }
   
-  @scala.inline
-  implicit class FullTreegetNodeKeyGetNodeMutableBuilder[Self <: FullTreegetNodeKeyGetNode] (val x: Self) extends AnyVal {
+  extension [Self <: FullTreegetNodeKeyGetNode](x: Self) {
     
-    @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
+    inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
+    inline def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

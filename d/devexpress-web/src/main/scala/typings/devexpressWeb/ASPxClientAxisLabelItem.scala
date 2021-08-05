@@ -33,8 +33,7 @@ trait ASPxClientAxisLabelItem
 }
 object ASPxClientAxisLabelItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axis: ASPxClientAxisBase,
     axisValue: js.Any,
     axisValueInternal: Double,
@@ -45,19 +44,14 @@ object ASPxClientAxisLabelItem {
     __obj.asInstanceOf[ASPxClientAxisLabelItem]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxisLabelItemMutableBuilder[Self <: ASPxClientAxisLabelItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxisLabelItem](x: Self) {
     
-    @scala.inline
-    def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisValue(value: js.Any): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
+    inline def setAxisValue(value: js.Any): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisValueInternal(value: Double): Self = StObject.set(x, "axisValueInternal", value.asInstanceOf[js.Any])
+    inline def setAxisValueInternal(value: Double): Self = StObject.set(x, "axisValueInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

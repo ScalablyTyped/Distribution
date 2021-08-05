@@ -43,55 +43,39 @@ trait TypicalBasedOnEventUIParam extends StObject {
 }
 object TypicalBasedOnEventUIParam {
   
-  @scala.inline
-  def apply(): TypicalBasedOnEventUIParam = {
+  inline def apply(): TypicalBasedOnEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypicalBasedOnEventUIParam]
   }
   
-  @scala.inline
-  implicit class TypicalBasedOnEventUIParamMutableBuilder[Self <: TypicalBasedOnEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: TypicalBasedOnEventUIParam](x: Self) {
     
-    @scala.inline
-    def setBasedOn(value: js.Any): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
+    inline def setBasedOn(value: js.Any): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasedOnUndefined: Self = StObject.set(x, "basedOn", js.undefined)
+    inline def setBasedOnUndefined: Self = StObject.set(x, "basedOn", js.undefined)
     
-    @scala.inline
-    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
-    @scala.inline
-    def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSupportingCalculations(value: js.Any): Self = StObject.set(x, "supportingCalculations", value.asInstanceOf[js.Any])
+    inline def setSupportingCalculations(value: js.Any): Self = StObject.set(x, "supportingCalculations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportingCalculationsUndefined: Self = StObject.set(x, "supportingCalculations", js.undefined)
+    inline def setSupportingCalculationsUndefined: Self = StObject.set(x, "supportingCalculations", js.undefined)
   }
 }

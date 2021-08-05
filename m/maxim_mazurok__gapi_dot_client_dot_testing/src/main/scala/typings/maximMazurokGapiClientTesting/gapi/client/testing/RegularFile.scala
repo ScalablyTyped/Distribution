@@ -20,25 +20,19 @@ trait RegularFile extends StObject {
 }
 object RegularFile {
   
-  @scala.inline
-  def apply(): RegularFile = {
+  inline def apply(): RegularFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegularFile]
   }
   
-  @scala.inline
-  implicit class RegularFileMutableBuilder[Self <: RegularFile] (val x: Self) extends AnyVal {
+  extension [Self <: RegularFile](x: Self) {
     
-    @scala.inline
-    def setContent(value: FileReference): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: FileReference): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
+    inline def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePathUndefined: Self = StObject.set(x, "devicePath", js.undefined)
+    inline def setDevicePathUndefined: Self = StObject.set(x, "devicePath", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def `0`: `0` = "0".asInstanceOf[`0`]
+  inline def `0`: `0` = "0".asInstanceOf[`0`]
   
   @js.native
   sealed trait `7`
@@ -30,8 +29,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def `7`: `7` = "7".asInstanceOf[`7`]
+  inline def `7`: `7` = "7".asInstanceOf[`7`]
   
   @js.native
   sealed trait `9`
@@ -42,8 +40,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def `9`: `9` = "9".asInstanceOf[`9`]
+  inline def `9`: `9` = "9".asInstanceOf[`9`]
   
   @js.native
   sealed trait B
@@ -54,8 +51,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def B: B = "B".asInstanceOf[B]
+  inline def B: B = "B".asInstanceOf[B]
   
   @js.native
   sealed trait C
@@ -66,8 +62,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def C: C = "C".asInstanceOf[C]
+  inline def C: C = "C".asInstanceOf[C]
   
   @js.native
   sealed trait F
@@ -78,8 +73,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def F: F = "F".asInstanceOf[F]
+  inline def F: F = "F".asInstanceOf[F]
   
   @js.native
   sealed trait K
@@ -90,8 +84,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def K: K = "K".asInstanceOf[K]
+  inline def K: K = "K".asInstanceOf[K]
   
   @js.native
   sealed trait M
@@ -102,8 +95,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait Null
@@ -114,8 +106,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def Null: Null = "\u0000".asInstanceOf[Null]
+  inline def Null: Null = "\u0000".asInstanceOf[Null]
   
   @js.native
   sealed trait T
@@ -126,8 +117,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def T: T = "T".asInstanceOf[T]
+  inline def T: T = "T".asInstanceOf[T]
   
   @js.native
   sealed trait U
@@ -138,8 +128,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def U: U = "U".asInstanceOf[U]
+  inline def U: U = "U".asInstanceOf[U]
   
   @js.native
   sealed trait V
@@ -150,8 +139,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def V: V = "V".asInstanceOf[V]
+  inline def V: V = "V".asInstanceOf[V]
   
   @js.native
   sealed trait Z
@@ -162,8 +150,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def Z: Z = "Z".asInstanceOf[Z]
+  inline def Z: Z = "Z".asInstanceOf[Z]
   
   @js.native
   sealed trait b_
@@ -174,8 +161,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def b_ : b_ = "b".asInstanceOf[b_]
+  inline def b_ : b_ = "b".asInstanceOf[b_]
   
   @js.native
   sealed trait base10
@@ -185,8 +171,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base10: base10 = "base10".asInstanceOf[base10]
+  inline def base10: base10 = "base10".asInstanceOf[base10]
   
   @js.native
   sealed trait base16
@@ -196,8 +181,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base16: base16 = "base16".asInstanceOf[base16]
+  inline def base16: base16 = "base16".asInstanceOf[base16]
   
   @js.native
   sealed trait base16upper
@@ -207,8 +191,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base16upper: base16upper = "base16upper".asInstanceOf[base16upper]
+  inline def base16upper: base16upper = "base16upper".asInstanceOf[base16upper]
   
   @js.native
   sealed trait base2
@@ -218,8 +201,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base2: base2 = "base2".asInstanceOf[base2]
+  inline def base2: base2 = "base2".asInstanceOf[base2]
   
   @js.native
   sealed trait base32
@@ -229,8 +211,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32: base32 = "base32".asInstanceOf[base32]
+  inline def base32: base32 = "base32".asInstanceOf[base32]
   
   @js.native
   sealed trait base32hex
@@ -240,8 +221,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32hex: base32hex = "base32hex".asInstanceOf[base32hex]
+  inline def base32hex: base32hex = "base32hex".asInstanceOf[base32hex]
   
   @js.native
   sealed trait base32hexpad
@@ -251,8 +231,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32hexpad: base32hexpad = "base32hexpad".asInstanceOf[base32hexpad]
+  inline def base32hexpad: base32hexpad = "base32hexpad".asInstanceOf[base32hexpad]
   
   @js.native
   sealed trait base32hexpadupper
@@ -262,8 +241,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32hexpadupper: base32hexpadupper = "base32hexpadupper".asInstanceOf[base32hexpadupper]
+  inline def base32hexpadupper: base32hexpadupper = "base32hexpadupper".asInstanceOf[base32hexpadupper]
   
   @js.native
   sealed trait base32hexupper
@@ -273,8 +251,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32hexupper: base32hexupper = "base32hexupper".asInstanceOf[base32hexupper]
+  inline def base32hexupper: base32hexupper = "base32hexupper".asInstanceOf[base32hexupper]
   
   @js.native
   sealed trait base32pad
@@ -284,8 +261,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32pad: base32pad = "base32pad".asInstanceOf[base32pad]
+  inline def base32pad: base32pad = "base32pad".asInstanceOf[base32pad]
   
   @js.native
   sealed trait base32padupper
@@ -295,8 +271,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32padupper: base32padupper = "base32padupper".asInstanceOf[base32padupper]
+  inline def base32padupper: base32padupper = "base32padupper".asInstanceOf[base32padupper]
   
   @js.native
   sealed trait base32upper
@@ -306,8 +281,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32upper: base32upper = "base32upper".asInstanceOf[base32upper]
+  inline def base32upper: base32upper = "base32upper".asInstanceOf[base32upper]
   
   @js.native
   sealed trait base32z
@@ -317,8 +291,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base32z: base32z = "base32z".asInstanceOf[base32z]
+  inline def base32z: base32z = "base32z".asInstanceOf[base32z]
   
   @js.native
   sealed trait base36
@@ -328,8 +301,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base36: base36 = "base36".asInstanceOf[base36]
+  inline def base36: base36 = "base36".asInstanceOf[base36]
   
   @js.native
   sealed trait base36upper
@@ -339,8 +311,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base36upper: base36upper = "base36upper".asInstanceOf[base36upper]
+  inline def base36upper: base36upper = "base36upper".asInstanceOf[base36upper]
   
   @js.native
   sealed trait base58btc
@@ -350,8 +321,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base58btc: base58btc = "base58btc".asInstanceOf[base58btc]
+  inline def base58btc: base58btc = "base58btc".asInstanceOf[base58btc]
   
   @js.native
   sealed trait base58flickr
@@ -361,8 +331,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base58flickr: base58flickr = "base58flickr".asInstanceOf[base58flickr]
+  inline def base58flickr: base58flickr = "base58flickr".asInstanceOf[base58flickr]
   
   @js.native
   sealed trait base64
@@ -372,8 +341,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait base64pad
@@ -383,8 +351,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base64pad: base64pad = "base64pad".asInstanceOf[base64pad]
+  inline def base64pad: base64pad = "base64pad".asInstanceOf[base64pad]
   
   @js.native
   sealed trait base64url
@@ -394,8 +361,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base64url: base64url = "base64url".asInstanceOf[base64url]
+  inline def base64url: base64url = "base64url".asInstanceOf[base64url]
   
   @js.native
   sealed trait base64urlpad
@@ -405,8 +371,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base64urlpad: base64urlpad = "base64urlpad".asInstanceOf[base64urlpad]
+  inline def base64urlpad: base64urlpad = "base64urlpad".asInstanceOf[base64urlpad]
   
   @js.native
   sealed trait base8
@@ -416,8 +381,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def base8: base8 = "base8".asInstanceOf[base8]
+  inline def base8: base8 = "base8".asInstanceOf[base8]
   
   @js.native
   sealed trait c_
@@ -428,8 +392,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def c_ : c_ = "c".asInstanceOf[c_]
+  inline def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
   sealed trait f_
@@ -440,8 +403,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def f_ : f_ = "f".asInstanceOf[f_]
+  inline def f_ : f_ = "f".asInstanceOf[f_]
   
   @js.native
   sealed trait h
@@ -452,8 +414,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def h: h = "h".asInstanceOf[h]
+  inline def h: h = "h".asInstanceOf[h]
   
   @js.native
   sealed trait identity
@@ -463,8 +424,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def identity: identity = "identity".asInstanceOf[identity]
+  inline def identity: identity = "identity".asInstanceOf[identity]
   
   @js.native
   sealed trait k_
@@ -475,8 +435,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def k_ : k_ = "k".asInstanceOf[k_]
+  inline def k_ : k_ = "k".asInstanceOf[k_]
   
   @js.native
   sealed trait m_
@@ -487,8 +446,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def m_ : m_ = "m".asInstanceOf[m_]
+  inline def m_ : m_ = "m".asInstanceOf[m_]
   
   @js.native
   sealed trait t_
@@ -499,8 +457,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def t_ : t_ = "t".asInstanceOf[t_]
+  inline def t_ : t_ = "t".asInstanceOf[t_]
   
   @js.native
   sealed trait u_
@@ -511,8 +468,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def u_ : u_ = "u".asInstanceOf[u_]
+  inline def u_ : u_ = "u".asInstanceOf[u_]
   
   @js.native
   sealed trait v_
@@ -523,8 +479,7 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def v_ : v_ = "v".asInstanceOf[v_]
+  inline def v_ : v_ = "v".asInstanceOf[v_]
   
   @js.native
   sealed trait z_
@@ -535,6 +490,5 @@ object multibaseStrings {
        with typings.multibase.constantsMod.BaseCode
        with BaseNameOrCode
        with typings.multibase.typesMod.BaseNameOrCode
-  @scala.inline
-  def z_ : z_ = "z".asInstanceOf[z_]
+  inline def z_ : z_ = "z".asInstanceOf[z_]
 }

@@ -17,19 +17,15 @@ trait IMediaPickerOptions extends StObject {
 }
 object IMediaPickerOptions {
   
-  @scala.inline
-  def apply(callback: js.Function, onlyImages: Boolean): IMediaPickerOptions = {
+  inline def apply(callback: js.Function, onlyImages: Boolean): IMediaPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], onlyImages = onlyImages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaPickerOptions]
   }
   
-  @scala.inline
-  implicit class IMediaPickerOptionsMutableBuilder[Self <: IMediaPickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaPickerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyImages(value: Boolean): Self = StObject.set(x, "onlyImages", value.asInstanceOf[js.Any])
+    inline def setOnlyImages(value: Boolean): Self = StObject.set(x, "onlyImages", value.asInstanceOf[js.Any])
   }
 }

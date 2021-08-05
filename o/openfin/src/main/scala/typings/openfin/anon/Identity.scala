@@ -14,22 +14,17 @@ trait Identity extends StObject {
 }
 object Identity {
   
-  @scala.inline
-  def apply(identity: typings.openfin.identityMod.Identity, response: String, success: Boolean): Identity = {
+  inline def apply(identity: typings.openfin.identityMod.Identity, response: String, success: Boolean): Identity = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
   
-  @scala.inline
-  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+  extension [Self <: Identity](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: typings.openfin.identityMod.Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: typings.openfin.identityMod.Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ trait ARIARoleDefinition extends StObject {
 }
 object ARIARoleDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `abstract`: Boolean,
     baseConcepts: js.Array[ARIARoleRelation],
     childrenPresentational: Boolean,
@@ -52,40 +51,28 @@ object ARIARoleDefinition {
     __obj.asInstanceOf[ARIARoleDefinition]
   }
   
-  @scala.inline
-  implicit class ARIARoleDefinitionMutableBuilder[Self <: ARIARoleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ARIARoleDefinition](x: Self) {
     
-    @scala.inline
-    def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
+    inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "baseConcepts", value.asInstanceOf[js.Any])
+    inline def setBaseConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "baseConcepts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "baseConcepts", js.Array(value :_*))
+    inline def setBaseConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "baseConcepts", js.Array(value :_*))
     
-    @scala.inline
-    def setChildrenPresentational(value: Boolean): Self = StObject.set(x, "childrenPresentational", value.asInstanceOf[js.Any])
+    inline def setChildrenPresentational(value: Boolean): Self = StObject.set(x, "childrenPresentational", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProhibitedProps(value: ARIAPropertyMap): Self = StObject.set(x, "prohibitedProps", value.asInstanceOf[js.Any])
+    inline def setProhibitedProps(value: ARIAPropertyMap): Self = StObject.set(x, "prohibitedProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: ARIAPropertyMap): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: ARIAPropertyMap): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "relatedConcepts", value.asInstanceOf[js.Any])
+    inline def setRelatedConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "relatedConcepts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "relatedConcepts", js.Array(value :_*))
+    inline def setRelatedConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "relatedConcepts", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredProps(value: ARIAPropertyMap): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
+    inline def setRequiredProps(value: ARIAPropertyMap): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperClass(value: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
+    inline def setSuperClass(value: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperClassVarargs(value: (js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole])*): Self = StObject.set(x, "superClass", js.Array(value :_*))
+    inline def setSuperClassVarargs(value: (js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole])*): Self = StObject.set(x, "superClass", js.Array(value :_*))
   }
 }

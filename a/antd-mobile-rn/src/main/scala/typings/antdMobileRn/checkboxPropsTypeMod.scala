@@ -20,32 +20,24 @@ object checkboxPropsTypeMod {
   }
   object CheckboxItemPropsType {
     
-    @scala.inline
-    def apply(): CheckboxItemPropsType = {
+    inline def apply(): CheckboxItemPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxItemPropsType]
     }
     
-    @scala.inline
-    implicit class CheckboxItemPropsTypeMutableBuilder[Self <: CheckboxItemPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxItemPropsType](x: Self) {
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   
@@ -61,38 +53,28 @@ object checkboxPropsTypeMod {
   }
   object CheckboxPropsType {
     
-    @scala.inline
-    def apply(): CheckboxPropsType = {
+    inline def apply(): CheckboxPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxPropsType]
     }
     
-    @scala.inline
-    implicit class CheckboxPropsTypeMutableBuilder[Self <: CheckboxPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxPropsType](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* params */ OnChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* params */ OnChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
   
@@ -102,17 +84,14 @@ object checkboxPropsTypeMod {
   }
   object OnChangeParams {
     
-    @scala.inline
-    def apply(target: Checked): OnChangeParams = {
+    inline def apply(target: Checked): OnChangeParams = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeParams]
     }
     
-    @scala.inline
-    implicit class OnChangeParamsMutableBuilder[Self <: OnChangeParams] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeParams](x: Self) {
       
-      @scala.inline
-      def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

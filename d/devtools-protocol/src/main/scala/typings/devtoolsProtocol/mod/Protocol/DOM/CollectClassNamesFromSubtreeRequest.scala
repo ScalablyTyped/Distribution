@@ -13,16 +13,13 @@ trait CollectClassNamesFromSubtreeRequest extends StObject {
 }
 object CollectClassNamesFromSubtreeRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): CollectClassNamesFromSubtreeRequest = {
+  inline def apply(nodeId: NodeId): CollectClassNamesFromSubtreeRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectClassNamesFromSubtreeRequest]
   }
   
-  @scala.inline
-  implicit class CollectClassNamesFromSubtreeRequestMutableBuilder[Self <: CollectClassNamesFromSubtreeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CollectClassNamesFromSubtreeRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

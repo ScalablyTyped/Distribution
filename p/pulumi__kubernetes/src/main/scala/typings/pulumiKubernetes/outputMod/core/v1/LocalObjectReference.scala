@@ -16,16 +16,13 @@ trait LocalObjectReference extends StObject {
 }
 object LocalObjectReference {
   
-  @scala.inline
-  def apply(name: String): LocalObjectReference = {
+  inline def apply(name: String): LocalObjectReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalObjectReference]
   }
   
-  @scala.inline
-  implicit class LocalObjectReferenceMutableBuilder[Self <: LocalObjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: LocalObjectReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

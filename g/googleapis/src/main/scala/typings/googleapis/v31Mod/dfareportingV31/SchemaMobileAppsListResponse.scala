@@ -27,34 +27,25 @@ trait SchemaMobileAppsListResponse extends StObject {
 }
 object SchemaMobileAppsListResponse {
   
-  @scala.inline
-  def apply(): SchemaMobileAppsListResponse = {
+  inline def apply(): SchemaMobileAppsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMobileAppsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaMobileAppsListResponseMutableBuilder[Self <: SchemaMobileAppsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMobileAppsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMobileApps(value: js.Array[SchemaMobileApp]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
+    inline def setMobileApps(value: js.Array[SchemaMobileApp]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
+    inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    @scala.inline
-    def setMobileAppsVarargs(value: SchemaMobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: SchemaMobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

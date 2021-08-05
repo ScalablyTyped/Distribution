@@ -17,19 +17,16 @@ trait ServerOptions
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     model: AuthorizationCodeModel | ClientCredentialsModel | RefreshTokenModel | PasswordModel | ExtensionModel
   ): ServerOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptions](x: Self) {
     
-    @scala.inline
-    def setModel(
+    inline def setModel(
       value: AuthorizationCodeModel | ClientCredentialsModel | RefreshTokenModel | PasswordModel | ExtensionModel
     ): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

@@ -28,37 +28,27 @@ trait DescribeGlobalReplicationGroupsMessage extends StObject {
 }
 object DescribeGlobalReplicationGroupsMessage {
   
-  @scala.inline
-  def apply(): DescribeGlobalReplicationGroupsMessage = {
+  inline def apply(): DescribeGlobalReplicationGroupsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGlobalReplicationGroupsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalReplicationGroupsMessageMutableBuilder[Self <: DescribeGlobalReplicationGroupsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalReplicationGroupsMessage](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupIdUndefined: Self = StObject.set(x, "GlobalReplicationGroupId", js.undefined)
+    inline def setGlobalReplicationGroupIdUndefined: Self = StObject.set(x, "GlobalReplicationGroupId", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setShowMemberInfo(value: BooleanOptional): Self = StObject.set(x, "ShowMemberInfo", value.asInstanceOf[js.Any])
+    inline def setShowMemberInfo(value: BooleanOptional): Self = StObject.set(x, "ShowMemberInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMemberInfoUndefined: Self = StObject.set(x, "ShowMemberInfo", js.undefined)
+    inline def setShowMemberInfoUndefined: Self = StObject.set(x, "ShowMemberInfo", js.undefined)
   }
 }

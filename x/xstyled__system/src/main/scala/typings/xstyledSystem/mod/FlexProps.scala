@@ -14,27 +14,22 @@ trait FlexProps[TLength] extends StObject {
 }
 object FlexProps {
   
-  @scala.inline
-  def apply[TLength](): FlexProps[TLength] = {
+  inline def apply[TLength](): FlexProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexProps[TLength]]
   }
   
-  @scala.inline
-  implicit class FlexPropsMutableBuilder[Self <: FlexProps[?], TLength] (val x: Self & FlexProps[TLength]) extends AnyVal {
+  extension [Self <: FlexProps[?], TLength](x: Self & FlexProps[TLength]) {
     
-    @scala.inline
-    def setFlex(
+    inline def setFlex(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    @scala.inline
-    def setFlexVarargs(
+    inline def setFlexVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any)*
     ): Self = StObject.set(x, "flex", js.Array(value :_*))
   }

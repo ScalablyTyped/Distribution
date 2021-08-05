@@ -10,8 +10,6 @@ object predicatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNotNullOrUndefined[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")().asInstanceOf[/* is T */ Boolean]
-  @scala.inline
-  def isNotNullOrUndefined[T](value: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
+  inline def isNotNullOrUndefined[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")().asInstanceOf[/* is T */ Boolean]
+  inline def isNotNullOrUndefined[T](value: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
 }

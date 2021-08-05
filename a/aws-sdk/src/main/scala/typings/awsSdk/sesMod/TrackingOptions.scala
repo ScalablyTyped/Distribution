@@ -13,19 +13,15 @@ trait TrackingOptions extends StObject {
 }
 object TrackingOptions {
   
-  @scala.inline
-  def apply(): TrackingOptions = {
+  inline def apply(): TrackingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackingOptions]
   }
   
-  @scala.inline
-  implicit class TrackingOptionsMutableBuilder[Self <: TrackingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TrackingOptions](x: Self) {
     
-    @scala.inline
-    def setCustomRedirectDomain(value: CustomRedirectDomain): Self = StObject.set(x, "CustomRedirectDomain", value.asInstanceOf[js.Any])
+    inline def setCustomRedirectDomain(value: CustomRedirectDomain): Self = StObject.set(x, "CustomRedirectDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRedirectDomainUndefined: Self = StObject.set(x, "CustomRedirectDomain", js.undefined)
+    inline def setCustomRedirectDomainUndefined: Self = StObject.set(x, "CustomRedirectDomain", js.undefined)
   }
 }

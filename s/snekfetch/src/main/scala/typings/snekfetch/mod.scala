@@ -27,213 +27,145 @@ object mod {
   @js.native
   def METHODS_ : js.Array[methods] = js.native
   
-  @scala.inline
-  def METHODS__=(x: js.Array[methods]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METHODS")(x.asInstanceOf[js.Any])
+  inline def METHODS__=(x: js.Array[methods]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METHODS")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def acl(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("acl")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def acl(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("acl")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def acl(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("acl")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def acl(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("acl")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def bind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def bind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def bind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def bind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def checkout(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def checkout(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def checkout(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def checkout(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def connect(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def connect(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def connect(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def connect(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def copy(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def copy(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def copy(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def copy(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def delete(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def delete(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def delete(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def delete(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def get(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def get(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def get(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def get(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def head(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def head(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def head(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def head(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def link(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def link(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def link(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def link(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def lock(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def lock(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def lock(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def lock(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def merge(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def merge(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def merge(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def merge(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def mkactivity(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("mkactivity")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def mkactivity(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("mkactivity")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def mkactivity(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("mkactivity")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def mkactivity(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("mkactivity")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def mkcalendar(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("mkcalendar")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def mkcalendar(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("mkcalendar")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def mkcalendar(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("mkcalendar")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def mkcalendar(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("mkcalendar")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def mkcol(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("mkcol")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def mkcol(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("mkcol")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def mkcol(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("mkcol")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def mkcol(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("mkcol")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def move(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def move(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def move(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def move(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def notify_(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def notify_(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def notify_(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def notify_(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def options(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def options(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def options(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def options(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def patch(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def patch(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def patch(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def patch(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def post(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def post(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def post(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def post(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def propfind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def propfind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def propfind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def propfind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def proppatch(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("proppatch")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def proppatch(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("proppatch")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def proppatch(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("proppatch")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def proppatch(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("proppatch")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def purge(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("purge")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def purge(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("purge")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def purge(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("purge")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def purge(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("purge")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def put(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def put(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def put(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def put(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def rebind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def rebind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def rebind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def rebind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def report(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("report")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def report(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("report")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def report(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("report")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def report(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("report")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def search(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def search(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def search(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def search(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def source(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def source(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def source(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def source(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def subscribe(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def subscribe(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def subscribe(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def subscribe(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def trace(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def trace(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def trace(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def trace(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def unbind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def unbind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def unbind(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def unbind(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def unlink(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def unlink(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def unlink(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def unlink(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def unlock(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def unlock(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def unlock(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def unlock(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
-  @scala.inline
-  def unsubscribe(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
-  @scala.inline
-  def unsubscribe(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
+  inline def unsubscribe(url: String): Snekfetch = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(url.asInstanceOf[js.Any]).asInstanceOf[Snekfetch]
+  inline def unsubscribe(url: String, opts: SnekfetchOptions): Snekfetch = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Snekfetch]
   
   /* static member */
   @JSImport("snekfetch", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Snekfetch extends Readable {
@@ -295,50 +227,36 @@ object mod {
   }
   object SnekfetchOptions {
     
-    @scala.inline
-    def apply(): SnekfetchOptions = {
+    inline def apply(): SnekfetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnekfetchOptions]
     }
     
-    @scala.inline
-    implicit class SnekfetchOptionsMutableBuilder[Self <: SnekfetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SnekfetchOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Object | String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object | String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setQs(value: js.Object): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+      inline def setQs(value: js.Object): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
+      inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Object | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Object | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     }
   }
   
@@ -360,8 +278,7 @@ object mod {
   }
   object SnekfetchResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String | js.Object | Buffer,
       headers: StringDictionary[js.Any],
       ok: Boolean,
@@ -374,29 +291,21 @@ object mod {
       __obj.asInstanceOf[SnekfetchResponse]
     }
     
-    @scala.inline
-    implicit class SnekfetchResponseMutableBuilder[Self <: SnekfetchResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SnekfetchResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | js.Object | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | js.Object | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: Buffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Buffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: ClientRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ClientRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -438,103 +347,70 @@ object mod {
   trait methods extends StObject
   object methods {
     
-    @scala.inline
-    def ACL: typings.snekfetch.snekfetchStrings.ACL = "ACL".asInstanceOf[typings.snekfetch.snekfetchStrings.ACL]
+    inline def ACL: typings.snekfetch.snekfetchStrings.ACL = "ACL".asInstanceOf[typings.snekfetch.snekfetchStrings.ACL]
     
-    @scala.inline
-    def BIND: typings.snekfetch.snekfetchStrings.BIND = "BIND".asInstanceOf[typings.snekfetch.snekfetchStrings.BIND]
+    inline def BIND: typings.snekfetch.snekfetchStrings.BIND = "BIND".asInstanceOf[typings.snekfetch.snekfetchStrings.BIND]
     
-    @scala.inline
-    def CHECKOUT: typings.snekfetch.snekfetchStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.snekfetch.snekfetchStrings.CHECKOUT]
+    inline def CHECKOUT: typings.snekfetch.snekfetchStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.snekfetch.snekfetchStrings.CHECKOUT]
     
-    @scala.inline
-    def CONNECT: typings.snekfetch.snekfetchStrings.CONNECT = "CONNECT".asInstanceOf[typings.snekfetch.snekfetchStrings.CONNECT]
+    inline def CONNECT: typings.snekfetch.snekfetchStrings.CONNECT = "CONNECT".asInstanceOf[typings.snekfetch.snekfetchStrings.CONNECT]
     
-    @scala.inline
-    def COPY: typings.snekfetch.snekfetchStrings.COPY = "COPY".asInstanceOf[typings.snekfetch.snekfetchStrings.COPY]
+    inline def COPY: typings.snekfetch.snekfetchStrings.COPY = "COPY".asInstanceOf[typings.snekfetch.snekfetchStrings.COPY]
     
-    @scala.inline
-    def DELETE: typings.snekfetch.snekfetchStrings.DELETE = "DELETE".asInstanceOf[typings.snekfetch.snekfetchStrings.DELETE]
+    inline def DELETE: typings.snekfetch.snekfetchStrings.DELETE = "DELETE".asInstanceOf[typings.snekfetch.snekfetchStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.snekfetch.snekfetchStrings.GET = "GET".asInstanceOf[typings.snekfetch.snekfetchStrings.GET]
+    inline def GET: typings.snekfetch.snekfetchStrings.GET = "GET".asInstanceOf[typings.snekfetch.snekfetchStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.snekfetch.snekfetchStrings.HEAD = "HEAD".asInstanceOf[typings.snekfetch.snekfetchStrings.HEAD]
+    inline def HEAD: typings.snekfetch.snekfetchStrings.HEAD = "HEAD".asInstanceOf[typings.snekfetch.snekfetchStrings.HEAD]
     
-    @scala.inline
-    def LINK: typings.snekfetch.snekfetchStrings.LINK = "LINK".asInstanceOf[typings.snekfetch.snekfetchStrings.LINK]
+    inline def LINK: typings.snekfetch.snekfetchStrings.LINK = "LINK".asInstanceOf[typings.snekfetch.snekfetchStrings.LINK]
     
-    @scala.inline
-    def LOCK: typings.snekfetch.snekfetchStrings.LOCK = "LOCK".asInstanceOf[typings.snekfetch.snekfetchStrings.LOCK]
+    inline def LOCK: typings.snekfetch.snekfetchStrings.LOCK = "LOCK".asInstanceOf[typings.snekfetch.snekfetchStrings.LOCK]
     
-    @scala.inline
-    def MERGE: typings.snekfetch.snekfetchStrings.MERGE = "MERGE".asInstanceOf[typings.snekfetch.snekfetchStrings.MERGE]
+    inline def MERGE: typings.snekfetch.snekfetchStrings.MERGE = "MERGE".asInstanceOf[typings.snekfetch.snekfetchStrings.MERGE]
     
-    @scala.inline
-    def MKACTIVITY: typings.snekfetch.snekfetchStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.snekfetch.snekfetchStrings.MKACTIVITY]
+    inline def MKACTIVITY: typings.snekfetch.snekfetchStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.snekfetch.snekfetchStrings.MKACTIVITY]
     
-    @scala.inline
-    def MKCALENDAR: typings.snekfetch.snekfetchStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.snekfetch.snekfetchStrings.MKCALENDAR]
+    inline def MKCALENDAR: typings.snekfetch.snekfetchStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.snekfetch.snekfetchStrings.MKCALENDAR]
     
-    @scala.inline
-    def MKCOL: typings.snekfetch.snekfetchStrings.MKCOL = "MKCOL".asInstanceOf[typings.snekfetch.snekfetchStrings.MKCOL]
+    inline def MKCOL: typings.snekfetch.snekfetchStrings.MKCOL = "MKCOL".asInstanceOf[typings.snekfetch.snekfetchStrings.MKCOL]
     
-    @scala.inline
-    def MOVE: typings.snekfetch.snekfetchStrings.MOVE = "MOVE".asInstanceOf[typings.snekfetch.snekfetchStrings.MOVE]
+    inline def MOVE: typings.snekfetch.snekfetchStrings.MOVE = "MOVE".asInstanceOf[typings.snekfetch.snekfetchStrings.MOVE]
     
-    @scala.inline
-    def NOTIFY: typings.snekfetch.snekfetchStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.snekfetch.snekfetchStrings.NOTIFY]
+    inline def NOTIFY: typings.snekfetch.snekfetchStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.snekfetch.snekfetchStrings.NOTIFY]
     
-    @scala.inline
-    def OPTIONS: typings.snekfetch.snekfetchStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.snekfetch.snekfetchStrings.OPTIONS]
+    inline def OPTIONS: typings.snekfetch.snekfetchStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.snekfetch.snekfetchStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.snekfetch.snekfetchStrings.PATCH = "PATCH".asInstanceOf[typings.snekfetch.snekfetchStrings.PATCH]
+    inline def PATCH: typings.snekfetch.snekfetchStrings.PATCH = "PATCH".asInstanceOf[typings.snekfetch.snekfetchStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.snekfetch.snekfetchStrings.POST = "POST".asInstanceOf[typings.snekfetch.snekfetchStrings.POST]
+    inline def POST: typings.snekfetch.snekfetchStrings.POST = "POST".asInstanceOf[typings.snekfetch.snekfetchStrings.POST]
     
-    @scala.inline
-    def PROPFIND: typings.snekfetch.snekfetchStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.snekfetch.snekfetchStrings.PROPFIND]
+    inline def PROPFIND: typings.snekfetch.snekfetchStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.snekfetch.snekfetchStrings.PROPFIND]
     
-    @scala.inline
-    def PROPPATCH: typings.snekfetch.snekfetchStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.snekfetch.snekfetchStrings.PROPPATCH]
+    inline def PROPPATCH: typings.snekfetch.snekfetchStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.snekfetch.snekfetchStrings.PROPPATCH]
     
-    @scala.inline
-    def PURGE: typings.snekfetch.snekfetchStrings.PURGE = "PURGE".asInstanceOf[typings.snekfetch.snekfetchStrings.PURGE]
+    inline def PURGE: typings.snekfetch.snekfetchStrings.PURGE = "PURGE".asInstanceOf[typings.snekfetch.snekfetchStrings.PURGE]
     
-    @scala.inline
-    def PUT: typings.snekfetch.snekfetchStrings.PUT = "PUT".asInstanceOf[typings.snekfetch.snekfetchStrings.PUT]
+    inline def PUT: typings.snekfetch.snekfetchStrings.PUT = "PUT".asInstanceOf[typings.snekfetch.snekfetchStrings.PUT]
     
-    @scala.inline
-    def REBIND: typings.snekfetch.snekfetchStrings.REBIND = "REBIND".asInstanceOf[typings.snekfetch.snekfetchStrings.REBIND]
+    inline def REBIND: typings.snekfetch.snekfetchStrings.REBIND = "REBIND".asInstanceOf[typings.snekfetch.snekfetchStrings.REBIND]
     
-    @scala.inline
-    def REPORT: typings.snekfetch.snekfetchStrings.REPORT = "REPORT".asInstanceOf[typings.snekfetch.snekfetchStrings.REPORT]
+    inline def REPORT: typings.snekfetch.snekfetchStrings.REPORT = "REPORT".asInstanceOf[typings.snekfetch.snekfetchStrings.REPORT]
     
-    @scala.inline
-    def SEARCH: typings.snekfetch.snekfetchStrings.SEARCH = "SEARCH".asInstanceOf[typings.snekfetch.snekfetchStrings.SEARCH]
+    inline def SEARCH: typings.snekfetch.snekfetchStrings.SEARCH = "SEARCH".asInstanceOf[typings.snekfetch.snekfetchStrings.SEARCH]
     
-    @scala.inline
-    def SOURCE: typings.snekfetch.snekfetchStrings.SOURCE = "SOURCE".asInstanceOf[typings.snekfetch.snekfetchStrings.SOURCE]
+    inline def SOURCE: typings.snekfetch.snekfetchStrings.SOURCE = "SOURCE".asInstanceOf[typings.snekfetch.snekfetchStrings.SOURCE]
     
-    @scala.inline
-    def SUBSCRIBE: typings.snekfetch.snekfetchStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.snekfetch.snekfetchStrings.SUBSCRIBE]
+    inline def SUBSCRIBE: typings.snekfetch.snekfetchStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.snekfetch.snekfetchStrings.SUBSCRIBE]
     
-    @scala.inline
-    def TRACE: typings.snekfetch.snekfetchStrings.TRACE = "TRACE".asInstanceOf[typings.snekfetch.snekfetchStrings.TRACE]
+    inline def TRACE: typings.snekfetch.snekfetchStrings.TRACE = "TRACE".asInstanceOf[typings.snekfetch.snekfetchStrings.TRACE]
     
-    @scala.inline
-    def UNBIND: typings.snekfetch.snekfetchStrings.UNBIND = "UNBIND".asInstanceOf[typings.snekfetch.snekfetchStrings.UNBIND]
+    inline def UNBIND: typings.snekfetch.snekfetchStrings.UNBIND = "UNBIND".asInstanceOf[typings.snekfetch.snekfetchStrings.UNBIND]
     
-    @scala.inline
-    def UNLINK: typings.snekfetch.snekfetchStrings.UNLINK = "UNLINK".asInstanceOf[typings.snekfetch.snekfetchStrings.UNLINK]
+    inline def UNLINK: typings.snekfetch.snekfetchStrings.UNLINK = "UNLINK".asInstanceOf[typings.snekfetch.snekfetchStrings.UNLINK]
     
-    @scala.inline
-    def UNLOCK: typings.snekfetch.snekfetchStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.snekfetch.snekfetchStrings.UNLOCK]
+    inline def UNLOCK: typings.snekfetch.snekfetchStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.snekfetch.snekfetchStrings.UNLOCK]
     
-    @scala.inline
-    def UNSUBSCRIBE: typings.snekfetch.snekfetchStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.snekfetch.snekfetchStrings.UNSUBSCRIBE]
+    inline def UNSUBSCRIBE: typings.snekfetch.snekfetchStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.snekfetch.snekfetchStrings.UNSUBSCRIBE]
   }
 }

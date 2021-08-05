@@ -14,25 +14,19 @@ trait DoubleVerifyAppStarRating extends StObject {
 }
 object DoubleVerifyAppStarRating {
   
-  @scala.inline
-  def apply(): DoubleVerifyAppStarRating = {
+  inline def apply(): DoubleVerifyAppStarRating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleVerifyAppStarRating]
   }
   
-  @scala.inline
-  implicit class DoubleVerifyAppStarRatingMutableBuilder[Self <: DoubleVerifyAppStarRating] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleVerifyAppStarRating](x: Self) {
     
-    @scala.inline
-    def setAvoidInsufficientStarRating(value: Boolean): Self = StObject.set(x, "avoidInsufficientStarRating", value.asInstanceOf[js.Any])
+    inline def setAvoidInsufficientStarRating(value: Boolean): Self = StObject.set(x, "avoidInsufficientStarRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidInsufficientStarRatingUndefined: Self = StObject.set(x, "avoidInsufficientStarRating", js.undefined)
+    inline def setAvoidInsufficientStarRatingUndefined: Self = StObject.set(x, "avoidInsufficientStarRating", js.undefined)
     
-    @scala.inline
-    def setAvoidedStarRating(value: String): Self = StObject.set(x, "avoidedStarRating", value.asInstanceOf[js.Any])
+    inline def setAvoidedStarRating(value: String): Self = StObject.set(x, "avoidedStarRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidedStarRatingUndefined: Self = StObject.set(x, "avoidedStarRating", js.undefined)
+    inline def setAvoidedStarRatingUndefined: Self = StObject.set(x, "avoidedStarRating", js.undefined)
   }
 }

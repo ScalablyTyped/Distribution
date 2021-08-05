@@ -18,6 +18,5 @@ object FilterManager {
   @JSImport("ag-grid", "FilterManager.QUICK_FILTER_SEPARATOR")
   @js.native
   def QUICK_FILTER_SEPARATOR: String = js.native
-  @scala.inline
-  def QUICK_FILTER_SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUICK_FILTER_SEPARATOR")(x.asInstanceOf[js.Any])
+  inline def QUICK_FILTER_SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUICK_FILTER_SEPARATOR")(x.asInstanceOf[js.Any])
 }

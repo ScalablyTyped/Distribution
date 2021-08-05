@@ -21,7 +21,7 @@ trait WindowObject extends StObject {
   
   var Height: Double = js.native
   
-  @JSName("InfoPath.WindowObject_typekey")
+  /* private */ @JSName("InfoPath.WindowObject_typekey")
   var InfoPathDotWindowObject_typekey: WindowObject = js.native
   
   var Left: Double = js.native

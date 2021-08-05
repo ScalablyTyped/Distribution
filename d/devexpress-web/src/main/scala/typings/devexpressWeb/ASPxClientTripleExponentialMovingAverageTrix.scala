@@ -23,8 +23,7 @@ trait ASPxClientTripleExponentialMovingAverageTrix
 }
 object ASPxClientTripleExponentialMovingAverageTrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -37,13 +36,10 @@ object ASPxClientTripleExponentialMovingAverageTrix {
     __obj.asInstanceOf[ASPxClientTripleExponentialMovingAverageTrix]
   }
   
-  @scala.inline
-  implicit class ASPxClientTripleExponentialMovingAverageTrixMutableBuilder[Self <: ASPxClientTripleExponentialMovingAverageTrix] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTripleExponentialMovingAverageTrix](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

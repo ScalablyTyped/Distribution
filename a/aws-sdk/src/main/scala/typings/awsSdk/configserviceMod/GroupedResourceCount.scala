@@ -18,19 +18,15 @@ trait GroupedResourceCount extends StObject {
 }
 object GroupedResourceCount {
   
-  @scala.inline
-  def apply(GroupName: StringWithCharLimit256, ResourceCount: Long): GroupedResourceCount = {
+  inline def apply(GroupName: StringWithCharLimit256, ResourceCount: Long): GroupedResourceCount = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], ResourceCount = ResourceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupedResourceCount]
   }
   
-  @scala.inline
-  implicit class GroupedResourceCountMutableBuilder[Self <: GroupedResourceCount] (val x: Self) extends AnyVal {
+  extension [Self <: GroupedResourceCount](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: StringWithCharLimit256): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: StringWithCharLimit256): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceCount(value: Long): Self = StObject.set(x, "ResourceCount", value.asInstanceOf[js.Any])
+    inline def setResourceCount(value: Long): Self = StObject.set(x, "ResourceCount", value.asInstanceOf[js.Any])
   }
 }

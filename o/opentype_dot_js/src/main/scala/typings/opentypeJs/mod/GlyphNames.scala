@@ -13,5 +13,5 @@ class GlyphNames protected () extends StObject {
   
   def nameToGlyphIndex(name: String): Double = js.native
   
-  var names: js.Any = js.native
+  /* private */ var names: js.Any = js.native
 }

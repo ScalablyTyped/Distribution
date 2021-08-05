@@ -13,13 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def arcgisToGeoJSON(arcgis: Geometry): GeometryObject = ^.asInstanceOf[js.Dynamic].applyDynamic("arcgisToGeoJSON")(arcgis.asInstanceOf[js.Any]).asInstanceOf[GeometryObject]
-  @scala.inline
-  def arcgisToGeoJSON(arcgis: Geometry, idAttribute: String): GeometryObject = (^.asInstanceOf[js.Dynamic].applyDynamic("arcgisToGeoJSON")(arcgis.asInstanceOf[js.Any], idAttribute.asInstanceOf[js.Any])).asInstanceOf[GeometryObject]
+  inline def arcgisToGeoJSON(arcgis: Geometry): GeometryObject = ^.asInstanceOf[js.Dynamic].applyDynamic("arcgisToGeoJSON")(arcgis.asInstanceOf[js.Any]).asInstanceOf[GeometryObject]
+  inline def arcgisToGeoJSON(arcgis: Geometry, idAttribute: String): GeometryObject = (^.asInstanceOf[js.Dynamic].applyDynamic("arcgisToGeoJSON")(arcgis.asInstanceOf[js.Any], idAttribute.asInstanceOf[js.Any])).asInstanceOf[GeometryObject]
   
-  @scala.inline
-  def geojsonToArcGIS(geojson: GeoJSON): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("geojsonToArcGIS")(geojson.asInstanceOf[js.Any]).asInstanceOf[Geometry]
-  @scala.inline
-  def geojsonToArcGIS(geojson: GeoJSON, idAttribute: String): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("geojsonToArcGIS")(geojson.asInstanceOf[js.Any], idAttribute.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  inline def geojsonToArcGIS(geojson: GeoJSON): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("geojsonToArcGIS")(geojson.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def geojsonToArcGIS(geojson: GeoJSON, idAttribute: String): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("geojsonToArcGIS")(geojson.asInstanceOf[js.Any], idAttribute.asInstanceOf[js.Any])).asInstanceOf[Geometry]
 }

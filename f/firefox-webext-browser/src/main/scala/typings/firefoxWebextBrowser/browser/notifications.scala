@@ -59,90 +59,63 @@ object notifications {
   }
   object CreateNotificationOptions {
     
-    @scala.inline
-    def apply(message: String, title: String, `type`: TemplateType): CreateNotificationOptions = {
+    inline def apply(message: String, title: String, `type`: TemplateType): CreateNotificationOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateNotificationOptions]
     }
     
-    @scala.inline
-    implicit class CreateNotificationOptionsMutableBuilder[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
+      inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIconMaskUrlUndefined: Self = StObject.set(x, "appIconMaskUrl", js.undefined)
+      inline def setAppIconMaskUrlUndefined: Self = StObject.set(x, "appIconMaskUrl", js.undefined)
       
-      @scala.inline
-      def setButtons(value: js.Array[CreateNotificationOptionsButtons]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[CreateNotificationOptionsButtons]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setButtonsVarargs(value: CreateNotificationOptionsButtons*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: CreateNotificationOptionsButtons*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setContextMessage(value: String): Self = StObject.set(x, "contextMessage", value.asInstanceOf[js.Any])
+      inline def setContextMessage(value: String): Self = StObject.set(x, "contextMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMessageUndefined: Self = StObject.set(x, "contextMessage", js.undefined)
+      inline def setContextMessageUndefined: Self = StObject.set(x, "contextMessage", js.undefined)
       
-      @scala.inline
-      def setEventTime(value: Double): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+      inline def setEventTime(value: Double): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
+      inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+      inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
       
-      @scala.inline
-      def setIsClickable(value: Boolean): Self = StObject.set(x, "isClickable", value.asInstanceOf[js.Any])
+      inline def setIsClickable(value: Boolean): Self = StObject.set(x, "isClickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClickableUndefined: Self = StObject.set(x, "isClickable", js.undefined)
+      inline def setIsClickableUndefined: Self = StObject.set(x, "isClickable", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[NotificationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[NotificationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: NotificationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: NotificationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,23 +127,18 @@ object notifications {
   }
   object CreateNotificationOptionsButtons {
     
-    @scala.inline
-    def apply(title: String): CreateNotificationOptionsButtons = {
+    inline def apply(title: String): CreateNotificationOptionsButtons = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateNotificationOptionsButtons]
     }
     
-    @scala.inline
-    implicit class CreateNotificationOptionsButtonsMutableBuilder[Self <: CreateNotificationOptionsButtons] (val x: Self) extends AnyVal {
+    extension [Self <: CreateNotificationOptionsButtons](x: Self) {
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +152,16 @@ object notifications {
   }
   object NotificationItem {
     
-    @scala.inline
-    def apply(message: String, title: String): NotificationItem = {
+    inline def apply(message: String, title: String): NotificationItem = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationItem]
     }
     
-    @scala.inline
-    implicit class NotificationItemMutableBuilder[Self <: NotificationItem] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationItem](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,11 +172,9 @@ object notifications {
   trait PermissionLevel extends StObject
   object PermissionLevel {
     
-    @scala.inline
-    def denied: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.denied = "denied".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.denied]
+    inline def denied: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.denied = "denied".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.denied]
     
-    @scala.inline
-    def granted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.granted = "granted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.granted]
+    inline def granted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.granted = "granted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.granted]
   }
   
   /* notifications types */
@@ -225,17 +187,13 @@ object notifications {
   trait TemplateType extends StObject
   object TemplateType {
     
-    @scala.inline
-    def basic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic = "basic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic]
+    inline def basic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic = "basic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic]
     
-    @scala.inline
-    def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
+    inline def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
     
-    @scala.inline
-    def list: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list = "list".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list]
+    inline def list: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list = "list".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list]
     
-    @scala.inline
-    def progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress = "progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress]
+    inline def progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress = "progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress]
   }
   
   trait UpdateNotificationOptions extends StObject {
@@ -286,98 +244,68 @@ object notifications {
   }
   object UpdateNotificationOptions {
     
-    @scala.inline
-    def apply(): UpdateNotificationOptions = {
+    inline def apply(): UpdateNotificationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateNotificationOptions]
     }
     
-    @scala.inline
-    implicit class UpdateNotificationOptionsMutableBuilder[Self <: UpdateNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
+      inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIconMaskUrlUndefined: Self = StObject.set(x, "appIconMaskUrl", js.undefined)
+      inline def setAppIconMaskUrlUndefined: Self = StObject.set(x, "appIconMaskUrl", js.undefined)
       
-      @scala.inline
-      def setButtons(value: js.Array[UpdateNotificationOptionsButtons]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[UpdateNotificationOptionsButtons]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setButtonsVarargs(value: UpdateNotificationOptionsButtons*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: UpdateNotificationOptionsButtons*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setContextMessage(value: String): Self = StObject.set(x, "contextMessage", value.asInstanceOf[js.Any])
+      inline def setContextMessage(value: String): Self = StObject.set(x, "contextMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMessageUndefined: Self = StObject.set(x, "contextMessage", js.undefined)
+      inline def setContextMessageUndefined: Self = StObject.set(x, "contextMessage", js.undefined)
       
-      @scala.inline
-      def setEventTime(value: Double): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+      inline def setEventTime(value: Double): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
+      inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+      inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
       
-      @scala.inline
-      def setIsClickable(value: Boolean): Self = StObject.set(x, "isClickable", value.asInstanceOf[js.Any])
+      inline def setIsClickable(value: Boolean): Self = StObject.set(x, "isClickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClickableUndefined: Self = StObject.set(x, "isClickable", js.undefined)
+      inline def setIsClickableUndefined: Self = StObject.set(x, "isClickable", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[NotificationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[NotificationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: NotificationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: NotificationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -389,23 +317,18 @@ object notifications {
   }
   object UpdateNotificationOptionsButtons {
     
-    @scala.inline
-    def apply(title: String): UpdateNotificationOptionsButtons = {
+    inline def apply(title: String): UpdateNotificationOptionsButtons = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateNotificationOptionsButtons]
     }
     
-    @scala.inline
-    implicit class UpdateNotificationOptionsButtonsMutableBuilder[Self <: UpdateNotificationOptionsButtons] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateNotificationOptionsButtons](x: Self) {
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,23 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvConfigOutput]
-  @scala.inline
-  def config(options: DotenvConfigOptions): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvConfigOutput]
+  inline def config(): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvConfigOutput]
+  inline def config(options: DotenvConfigOptions): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvConfigOutput]
   
   @JSImport("dotenv", "load")
   @js.native
   val load: js.Function1[/* options */ js.UndefOr[DotenvConfigOptions], DotenvConfigOutput] = js.native
   
-  @scala.inline
-  def parse(src: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(src: String, options: DotenvParseOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(src: Buffer): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(src: Buffer, options: DotenvParseOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  inline def parse(src: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  inline def parse(src: String, options: DotenvParseOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  inline def parse(src: Buffer): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  inline def parse(src: Buffer, options: DotenvParseOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
   
   trait DotenvConfigOptions extends StObject {
     
@@ -50,32 +44,24 @@ object mod {
   }
   object DotenvConfigOptions {
     
-    @scala.inline
-    def apply(): DotenvConfigOptions = {
+    inline def apply(): DotenvConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvConfigOptions]
     }
     
-    @scala.inline
-    implicit class DotenvConfigOptionsMutableBuilder[Self <: DotenvConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvConfigOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -87,26 +73,20 @@ object mod {
   }
   object DotenvConfigOutput {
     
-    @scala.inline
-    def apply(): DotenvConfigOutput = {
+    inline def apply(): DotenvConfigOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvConfigOutput]
     }
     
-    @scala.inline
-    implicit class DotenvConfigOutputMutableBuilder[Self <: DotenvConfigOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvConfigOutput](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setParsed(value: DotenvParseOutput): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: DotenvParseOutput): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
+      inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     }
   }
   
@@ -119,20 +99,16 @@ object mod {
   }
   object DotenvParseOptions {
     
-    @scala.inline
-    def apply(): DotenvParseOptions = {
+    inline def apply(): DotenvParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvParseOptions]
     }
     
-    @scala.inline
-    implicit class DotenvParseOptionsMutableBuilder[Self <: DotenvParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvParseOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     }
   }
   

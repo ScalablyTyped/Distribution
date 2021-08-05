@@ -13,19 +13,15 @@ trait CreateForecastResponse extends StObject {
 }
 object CreateForecastResponse {
   
-  @scala.inline
-  def apply(): CreateForecastResponse = {
+  inline def apply(): CreateForecastResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateForecastResponse]
   }
   
-  @scala.inline
-  implicit class CreateForecastResponseMutableBuilder[Self <: CreateForecastResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateForecastResponse](x: Self) {
     
-    @scala.inline
-    def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
+    inline def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastArnUndefined: Self = StObject.set(x, "ForecastArn", js.undefined)
+    inline def setForecastArnUndefined: Self = StObject.set(x, "ForecastArn", js.undefined)
   }
 }

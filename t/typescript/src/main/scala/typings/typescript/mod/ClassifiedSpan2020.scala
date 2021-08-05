@@ -12,19 +12,15 @@ trait ClassifiedSpan2020 extends StObject {
 }
 object ClassifiedSpan2020 {
   
-  @scala.inline
-  def apply(classificationType: Double, textSpan: TextSpan): ClassifiedSpan2020 = {
+  inline def apply(classificationType: Double, textSpan: TextSpan): ClassifiedSpan2020 = {
     val __obj = js.Dynamic.literal(classificationType = classificationType.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedSpan2020]
   }
   
-  @scala.inline
-  implicit class ClassifiedSpan2020MutableBuilder[Self <: ClassifiedSpan2020] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifiedSpan2020](x: Self) {
     
-    @scala.inline
-    def setClassificationType(value: Double): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+    inline def setClassificationType(value: Double): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
+    inline def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
   }
 }

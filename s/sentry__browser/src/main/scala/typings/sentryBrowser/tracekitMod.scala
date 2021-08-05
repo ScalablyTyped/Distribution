@@ -10,8 +10,7 @@ object tracekitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeStackTrace(ex: js.Any): StackTrace = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStackTrace")(ex.asInstanceOf[js.Any]).asInstanceOf[StackTrace]
+  inline def computeStackTrace(ex: js.Any): StackTrace = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStackTrace")(ex.asInstanceOf[js.Any]).asInstanceOf[StackTrace]
   
   trait StackFrame extends StObject {
     
@@ -27,38 +26,28 @@ object tracekitMod {
   }
   object StackFrame {
     
-    @scala.inline
-    def apply(args: js.Array[String], func: String, url: String): StackFrame = {
+    inline def apply(args: js.Array[String], func: String, url: String): StackFrame = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], func = func.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], column = null, line = null)
       __obj.asInstanceOf[StackFrame]
     }
     
-    @scala.inline
-    implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+    extension [Self <: StackFrame](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNull: Self = StObject.set(x, "column", null)
+      inline def setColumnNull: Self = StObject.set(x, "column", null)
       
-      @scala.inline
-      def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+      inline def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNull: Self = StObject.set(x, "line", null)
+      inline def setLineNull: Self = StObject.set(x, "line", null)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,38 +65,28 @@ object tracekitMod {
   }
   object StackTrace {
     
-    @scala.inline
-    def apply(message: String, name: String, stack: js.Array[StackFrame]): StackTrace = {
+    inline def apply(message: String, name: String, stack: js.Array[StackFrame]): StackTrace = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackTrace]
     }
     
-    @scala.inline
-    implicit class StackTraceMutableBuilder[Self <: StackTrace] (val x: Self) extends AnyVal {
+    extension [Self <: StackTrace](x: Self) {
       
-      @scala.inline
-      def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+      inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
       
-      @scala.inline
-      def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
+      inline def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[StackFrame]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[StackFrame]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: StackFrame*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: StackFrame*): Self = StObject.set(x, "stack", js.Array(value :_*))
     }
   }
 }

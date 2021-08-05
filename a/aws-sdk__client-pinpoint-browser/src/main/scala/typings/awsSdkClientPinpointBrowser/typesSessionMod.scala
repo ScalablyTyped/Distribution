@@ -30,38 +30,28 @@ object typesSessionMod {
   }
   object Session {
     
-    @scala.inline
-    def apply(): Session = {
+    inline def apply(): Session = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setStartTimestamp(value: String): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartTimestamp(value: String): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
+      inline def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
       
-      @scala.inline
-      def setStopTimestamp(value: String): Self = StObject.set(x, "StopTimestamp", value.asInstanceOf[js.Any])
+      inline def setStopTimestamp(value: String): Self = StObject.set(x, "StopTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopTimestampUndefined: Self = StObject.set(x, "StopTimestamp", js.undefined)
+      inline def setStopTimestampUndefined: Self = StObject.set(x, "StopTimestamp", js.undefined)
     }
   }
   

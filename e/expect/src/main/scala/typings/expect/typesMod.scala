@@ -454,20 +454,16 @@ object typesMod {
   }
   object SyncExpectationResult {
     
-    @scala.inline
-    def apply(message: () => String, pass: Boolean): SyncExpectationResult = {
+    inline def apply(message: () => String, pass: Boolean): SyncExpectationResult = {
       val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncExpectationResult]
     }
     
-    @scala.inline
-    implicit class SyncExpectationResultMutableBuilder[Self <: SyncExpectationResult] (val x: Self) extends AnyVal {
+    extension [Self <: SyncExpectationResult](x: Self) {
       
-      @scala.inline
-      def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+      inline def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
   

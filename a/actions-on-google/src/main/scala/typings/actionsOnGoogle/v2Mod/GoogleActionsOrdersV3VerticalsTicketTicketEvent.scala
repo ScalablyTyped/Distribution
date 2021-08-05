@@ -56,70 +56,49 @@ trait GoogleActionsOrdersV3VerticalsTicketTicketEvent extends StObject {
 }
 object GoogleActionsOrdersV3VerticalsTicketTicketEvent {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsTicketTicketEvent = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsTicketTicketEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketTicketEvent]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsTicketTicketEventMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketTicketEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsTicketTicketEvent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDoorTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "doorTime", value.asInstanceOf[js.Any])
+    inline def setDoorTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "doorTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoorTimeUndefined: Self = StObject.set(x, "doorTime", js.undefined)
+    inline def setDoorTimeUndefined: Self = StObject.set(x, "doorTime", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setEventCharacters(value: js.Array[GoogleActionsOrdersV3VerticalsTicketEventCharacter]): Self = StObject.set(x, "eventCharacters", value.asInstanceOf[js.Any])
+    inline def setEventCharacters(value: js.Array[GoogleActionsOrdersV3VerticalsTicketEventCharacter]): Self = StObject.set(x, "eventCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCharactersUndefined: Self = StObject.set(x, "eventCharacters", js.undefined)
+    inline def setEventCharactersUndefined: Self = StObject.set(x, "eventCharacters", js.undefined)
     
-    @scala.inline
-    def setEventCharactersVarargs(value: GoogleActionsOrdersV3VerticalsTicketEventCharacter*): Self = StObject.set(x, "eventCharacters", js.Array(value :_*))
+    inline def setEventCharactersVarargs(value: GoogleActionsOrdersV3VerticalsTicketEventCharacter*): Self = StObject.set(x, "eventCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsTicketTicketEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3VerticalsTicketTicketEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

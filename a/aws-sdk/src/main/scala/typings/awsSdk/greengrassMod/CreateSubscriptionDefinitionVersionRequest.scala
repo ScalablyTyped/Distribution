@@ -23,31 +23,23 @@ trait CreateSubscriptionDefinitionVersionRequest extends StObject {
 }
 object CreateSubscriptionDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(SubscriptionDefinitionId: string): CreateSubscriptionDefinitionVersionRequest = {
+  inline def apply(SubscriptionDefinitionId: string): CreateSubscriptionDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionDefinitionId = SubscriptionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubscriptionDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSubscriptionDefinitionVersionRequestMutableBuilder[Self <: CreateSubscriptionDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSubscriptionDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptions(value: listOfSubscription): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: listOfSubscription): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
   }
 }

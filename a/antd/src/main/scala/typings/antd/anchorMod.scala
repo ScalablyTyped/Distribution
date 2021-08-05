@@ -25,19 +25,16 @@ object anchorMod {
     @JSImport("antd/lib/anchor", "default.Link")
     @js.native
     def Link: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink = js.native
-    @scala.inline
-    def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
+    inline def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/anchor", "default.contextType")
     @js.native
     def contextType: Context[ConfigConsumerProps] = js.native
-    @scala.inline
-    def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/anchor", "default.defaultProps")
     @js.native
     def defaultProps: Affix = js.native
-    @scala.inline
-    def defaultProps_=(x: Affix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Affix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

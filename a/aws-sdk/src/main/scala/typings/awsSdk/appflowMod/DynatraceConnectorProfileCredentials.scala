@@ -13,16 +13,13 @@ trait DynatraceConnectorProfileCredentials extends StObject {
 }
 object DynatraceConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(apiToken: ApiToken): DynatraceConnectorProfileCredentials = {
+  inline def apply(apiToken: ApiToken): DynatraceConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(apiToken = apiToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynatraceConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class DynatraceConnectorProfileCredentialsMutableBuilder[Self <: DynatraceConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: DynatraceConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setApiToken(value: ApiToken): Self = StObject.set(x, "apiToken", value.asInstanceOf[js.Any])
+    inline def setApiToken(value: ApiToken): Self = StObject.set(x, "apiToken", value.asInstanceOf[js.Any])
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsAnimationPlayState extends StObject
 object styleMsAnimationPlayState {
   
-  @scala.inline
-  def styleMsAnimationPlayStateNotSet: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsAnimationPlayStateNotSet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsAnimationPlayStatePaused: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsAnimationPlayStatePaused: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsAnimationPlayStateRunning: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsAnimationPlayStateRunning: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsAnimationPlayState_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsAnimationPlayState_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

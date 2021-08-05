@@ -28,61 +28,43 @@ trait InToto extends StObject {
 }
 object InToto {
   
-  @scala.inline
-  def apply(): InToto = {
+  inline def apply(): InToto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InToto]
   }
   
-  @scala.inline
-  implicit class InTotoMutableBuilder[Self <: InToto] (val x: Self) extends AnyVal {
+  extension [Self <: InToto](x: Self) {
     
-    @scala.inline
-    def setExpectedCommand(value: js.Array[String]): Self = StObject.set(x, "expectedCommand", value.asInstanceOf[js.Any])
+    inline def setExpectedCommand(value: js.Array[String]): Self = StObject.set(x, "expectedCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedCommandUndefined: Self = StObject.set(x, "expectedCommand", js.undefined)
+    inline def setExpectedCommandUndefined: Self = StObject.set(x, "expectedCommand", js.undefined)
     
-    @scala.inline
-    def setExpectedCommandVarargs(value: String*): Self = StObject.set(x, "expectedCommand", js.Array(value :_*))
+    inline def setExpectedCommandVarargs(value: String*): Self = StObject.set(x, "expectedCommand", js.Array(value :_*))
     
-    @scala.inline
-    def setExpectedMaterials(value: js.Array[ArtifactRule]): Self = StObject.set(x, "expectedMaterials", value.asInstanceOf[js.Any])
+    inline def setExpectedMaterials(value: js.Array[ArtifactRule]): Self = StObject.set(x, "expectedMaterials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedMaterialsUndefined: Self = StObject.set(x, "expectedMaterials", js.undefined)
+    inline def setExpectedMaterialsUndefined: Self = StObject.set(x, "expectedMaterials", js.undefined)
     
-    @scala.inline
-    def setExpectedMaterialsVarargs(value: ArtifactRule*): Self = StObject.set(x, "expectedMaterials", js.Array(value :_*))
+    inline def setExpectedMaterialsVarargs(value: ArtifactRule*): Self = StObject.set(x, "expectedMaterials", js.Array(value :_*))
     
-    @scala.inline
-    def setExpectedProducts(value: js.Array[ArtifactRule]): Self = StObject.set(x, "expectedProducts", value.asInstanceOf[js.Any])
+    inline def setExpectedProducts(value: js.Array[ArtifactRule]): Self = StObject.set(x, "expectedProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedProductsUndefined: Self = StObject.set(x, "expectedProducts", js.undefined)
+    inline def setExpectedProductsUndefined: Self = StObject.set(x, "expectedProducts", js.undefined)
     
-    @scala.inline
-    def setExpectedProductsVarargs(value: ArtifactRule*): Self = StObject.set(x, "expectedProducts", js.Array(value :_*))
+    inline def setExpectedProductsVarargs(value: ArtifactRule*): Self = StObject.set(x, "expectedProducts", js.Array(value :_*))
     
-    @scala.inline
-    def setSigningKeys(value: js.Array[SigningKey]): Self = StObject.set(x, "signingKeys", value.asInstanceOf[js.Any])
+    inline def setSigningKeys(value: js.Array[SigningKey]): Self = StObject.set(x, "signingKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningKeysUndefined: Self = StObject.set(x, "signingKeys", js.undefined)
+    inline def setSigningKeysUndefined: Self = StObject.set(x, "signingKeys", js.undefined)
     
-    @scala.inline
-    def setSigningKeysVarargs(value: SigningKey*): Self = StObject.set(x, "signingKeys", js.Array(value :_*))
+    inline def setSigningKeysVarargs(value: SigningKey*): Self = StObject.set(x, "signingKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
+    inline def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepNameUndefined: Self = StObject.set(x, "stepName", js.undefined)
+    inline def setStepNameUndefined: Self = StObject.set(x, "stepName", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

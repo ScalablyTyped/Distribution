@@ -13,19 +13,15 @@ trait CloudWatchDestination extends StObject {
 }
 object CloudWatchDestination {
   
-  @scala.inline
-  def apply(DimensionConfigurations: CloudWatchDimensionConfigurations): CloudWatchDestination = {
+  inline def apply(DimensionConfigurations: CloudWatchDimensionConfigurations): CloudWatchDestination = {
     val __obj = js.Dynamic.literal(DimensionConfigurations = DimensionConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchDestination]
   }
   
-  @scala.inline
-  implicit class CloudWatchDestinationMutableBuilder[Self <: CloudWatchDestination] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchDestination](x: Self) {
     
-    @scala.inline
-    def setDimensionConfigurations(value: CloudWatchDimensionConfigurations): Self = StObject.set(x, "DimensionConfigurations", value.asInstanceOf[js.Any])
+    inline def setDimensionConfigurations(value: CloudWatchDimensionConfigurations): Self = StObject.set(x, "DimensionConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionConfigurationsVarargs(value: CloudWatchDimensionConfiguration*): Self = StObject.set(x, "DimensionConfigurations", js.Array(value :_*))
+    inline def setDimensionConfigurationsVarargs(value: CloudWatchDimensionConfiguration*): Self = StObject.set(x, "DimensionConfigurations", js.Array(value :_*))
   }
 }

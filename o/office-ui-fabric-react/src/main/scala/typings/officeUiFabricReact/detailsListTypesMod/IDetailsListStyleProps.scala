@@ -23,40 +23,29 @@ trait IDetailsListStyleProps extends StObject {
 }
 object IDetailsListStyleProps {
   
-  @scala.inline
-  def apply(theme: ITheme): IDetailsListStyleProps = {
+  inline def apply(theme: ITheme): IDetailsListStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListStyleProps]
   }
   
-  @scala.inline
-  implicit class IDetailsListStylePropsMutableBuilder[Self <: IDetailsListStyleProps] (val x: Self) extends AnyVal {
+  extension [Self <: IDetailsListStyleProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
+    inline def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
     
-    @scala.inline
-    def setIsHorizontalConstrained(value: Boolean): Self = StObject.set(x, "isHorizontalConstrained", value.asInstanceOf[js.Any])
+    inline def setIsHorizontalConstrained(value: Boolean): Self = StObject.set(x, "isHorizontalConstrained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHorizontalConstrainedUndefined: Self = StObject.set(x, "isHorizontalConstrained", js.undefined)
+    inline def setIsHorizontalConstrainedUndefined: Self = StObject.set(x, "isHorizontalConstrained", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

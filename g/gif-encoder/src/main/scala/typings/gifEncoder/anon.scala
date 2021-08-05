@@ -16,20 +16,16 @@ object anon {
   }
   object HighWaterMark {
     
-    @scala.inline
-    def apply(): HighWaterMark = {
+    inline def apply(): HighWaterMark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighWaterMark]
     }
     
-    @scala.inline
-    implicit class HighWaterMarkMutableBuilder[Self <: HighWaterMark] (val x: Self) extends AnyVal {
+    extension [Self <: HighWaterMark](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     }
   }
   
@@ -50,20 +46,16 @@ object anon {
   }
   object IndexedPixels {
     
-    @scala.inline
-    def apply(indexedPixels: Boolean, palette: Pixels): IndexedPixels = {
+    inline def apply(indexedPixels: Boolean, palette: Pixels): IndexedPixels = {
       val __obj = js.Dynamic.literal(indexedPixels = indexedPixels.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndexedPixels]
     }
     
-    @scala.inline
-    implicit class IndexedPixelsMutableBuilder[Self <: IndexedPixels] (val x: Self) extends AnyVal {
+    extension [Self <: IndexedPixels](x: Self) {
       
-      @scala.inline
-      def setIndexedPixels(value: Boolean): Self = StObject.set(x, "indexedPixels", value.asInstanceOf[js.Any])
+      inline def setIndexedPixels(value: Boolean): Self = StObject.set(x, "indexedPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPalette(value: Pixels): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: Pixels): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     }
   }
 }

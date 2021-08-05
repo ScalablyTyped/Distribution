@@ -34,40 +34,29 @@ trait SecretVolumeSource extends StObject {
 }
 object SecretVolumeSource {
   
-  @scala.inline
-  def apply(): SecretVolumeSource = {
+  inline def apply(): SecretVolumeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecretVolumeSource]
   }
   
-  @scala.inline
-  implicit class SecretVolumeSourceMutableBuilder[Self <: SecretVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: SecretVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDefaultMode(value: Input[Double]): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
+    inline def setDefaultMode(value: Input[Double]): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultModeUndefined: Self = StObject.set(x, "defaultMode", js.undefined)
+    inline def setDefaultModeUndefined: Self = StObject.set(x, "defaultMode", js.undefined)
     
-    @scala.inline
-    def setItems(value: Input[js.Array[Input[KeyToPath]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Input[js.Array[Input[KeyToPath]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Input[KeyToPath]*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Input[KeyToPath]*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
+    inline def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretNameUndefined: Self = StObject.set(x, "secretName", js.undefined)
+    inline def setSecretNameUndefined: Self = StObject.set(x, "secretName", js.undefined)
   }
 }

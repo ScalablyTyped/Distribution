@@ -11,16 +11,13 @@ trait GoogleApiTranslateDetectionListResponse extends StObject {
 }
 object GoogleApiTranslateDetectionListResponse {
   
-  @scala.inline
-  def apply(data: Detections): GoogleApiTranslateDetectionListResponse = {
+  inline def apply(data: Detections): GoogleApiTranslateDetectionListResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiTranslateDetectionListResponse]
   }
   
-  @scala.inline
-  implicit class GoogleApiTranslateDetectionListResponseMutableBuilder[Self <: GoogleApiTranslateDetectionListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiTranslateDetectionListResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Detections): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Detections): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

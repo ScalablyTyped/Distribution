@@ -10,16 +10,13 @@ trait Daily extends StObject {
 }
 object Daily {
   
-  @scala.inline
-  def apply(daily: scala.Double): Daily = {
+  inline def apply(daily: scala.Double): Daily = {
     val __obj = js.Dynamic.literal(daily = daily.asInstanceOf[js.Any])
     __obj.asInstanceOf[Daily]
   }
   
-  @scala.inline
-  implicit class DailyMutableBuilder[Self <: Daily] (val x: Self) extends AnyVal {
+  extension [Self <: Daily](x: Self) {
     
-    @scala.inline
-    def setDaily(value: scala.Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+    inline def setDaily(value: scala.Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
   }
 }

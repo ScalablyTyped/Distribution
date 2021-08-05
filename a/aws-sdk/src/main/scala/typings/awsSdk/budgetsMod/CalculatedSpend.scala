@@ -18,22 +18,17 @@ trait CalculatedSpend extends StObject {
 }
 object CalculatedSpend {
   
-  @scala.inline
-  def apply(ActualSpend: Spend): CalculatedSpend = {
+  inline def apply(ActualSpend: Spend): CalculatedSpend = {
     val __obj = js.Dynamic.literal(ActualSpend = ActualSpend.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculatedSpend]
   }
   
-  @scala.inline
-  implicit class CalculatedSpendMutableBuilder[Self <: CalculatedSpend] (val x: Self) extends AnyVal {
+  extension [Self <: CalculatedSpend](x: Self) {
     
-    @scala.inline
-    def setActualSpend(value: Spend): Self = StObject.set(x, "ActualSpend", value.asInstanceOf[js.Any])
+    inline def setActualSpend(value: Spend): Self = StObject.set(x, "ActualSpend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastedSpend(value: Spend): Self = StObject.set(x, "ForecastedSpend", value.asInstanceOf[js.Any])
+    inline def setForecastedSpend(value: Spend): Self = StObject.set(x, "ForecastedSpend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastedSpendUndefined: Self = StObject.set(x, "ForecastedSpend", js.undefined)
+    inline def setForecastedSpendUndefined: Self = StObject.set(x, "ForecastedSpend", js.undefined)
   }
 }

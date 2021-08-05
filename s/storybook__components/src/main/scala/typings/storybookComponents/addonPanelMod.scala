@@ -12,8 +12,7 @@ object addonPanelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AddonPanel(hasActiveChildren: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(hasActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AddonPanel(hasActiveChildren: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(hasActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait AddonPanelProps extends StObject {
     
@@ -23,23 +22,18 @@ object addonPanelMod {
   }
   object AddonPanelProps {
     
-    @scala.inline
-    def apply(active: Boolean): AddonPanelProps = {
+    inline def apply(active: Boolean): AddonPanelProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddonPanelProps]
     }
     
-    @scala.inline
-    implicit class AddonPanelPropsMutableBuilder[Self <: AddonPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: AddonPanelProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

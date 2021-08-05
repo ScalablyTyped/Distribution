@@ -13,20 +13,16 @@ trait PickUnknownTypetype extends StObject {
 }
 object PickUnknownTypetype {
   
-  @scala.inline
-  def apply(`type`: (ModelToObject[/* "unknown" */ String]) | (/* "unknown" */ String)): PickUnknownTypetype = {
+  inline def apply(`type`: (ModelToObject[/* "unknown" */ String]) | (/* "unknown" */ String)): PickUnknownTypetype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickUnknownTypetype]
   }
   
-  @scala.inline
-  implicit class PickUnknownTypetypeMutableBuilder[Self <: PickUnknownTypetype] (val x: Self) extends AnyVal {
+  extension [Self <: PickUnknownTypetype](x: Self) {
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "unknown" */ String]) | (/* "unknown" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "unknown" */ String]) | (/* "unknown" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

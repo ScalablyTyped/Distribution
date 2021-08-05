@@ -34,8 +34,7 @@ trait Typeoftimeout extends StObject {
 }
 object Typeoftimeout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     editTracksInfo: Double,
     getStatus: Double,
     load: Double,
@@ -54,46 +53,32 @@ object Typeoftimeout {
     __obj.asInstanceOf[Typeoftimeout]
   }
   
-  @scala.inline
-  implicit class TypeoftimeoutMutableBuilder[Self <: Typeoftimeout] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoftimeout](x: Self) {
     
-    @scala.inline
-    def setEditTracksInfo(value: Double): Self = StObject.set(x, "editTracksInfo", value.asInstanceOf[js.Any])
+    inline def setEditTracksInfo(value: Double): Self = StObject.set(x, "editTracksInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStatus(value: Double): Self = StObject.set(x, "getStatus", value.asInstanceOf[js.Any])
+    inline def setGetStatus(value: Double): Self = StObject.set(x, "getStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay(value: Double): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: Double): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueInsert(value: Double): Self = StObject.set(x, "queueInsert", value.asInstanceOf[js.Any])
+    inline def setQueueInsert(value: Double): Self = StObject.set(x, "queueInsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueLoad(value: Double): Self = StObject.set(x, "queueLoad", value.asInstanceOf[js.Any])
+    inline def setQueueLoad(value: Double): Self = StObject.set(x, "queueLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueRemove(value: Double): Self = StObject.set(x, "queueRemove", value.asInstanceOf[js.Any])
+    inline def setQueueRemove(value: Double): Self = StObject.set(x, "queueRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueReorder(value: Double): Self = StObject.set(x, "queueReorder", value.asInstanceOf[js.Any])
+    inline def setQueueReorder(value: Double): Self = StObject.set(x, "queueReorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUpdate(value: Double): Self = StObject.set(x, "queueUpdate", value.asInstanceOf[js.Any])
+    inline def setQueueUpdate(value: Double): Self = StObject.set(x, "queueUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeek(value: Double): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
+    inline def setSeek(value: Double): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVolume(value: Double): Self = StObject.set(x, "setVolume", value.asInstanceOf[js.Any])
+    inline def setSetVolume(value: Double): Self = StObject.set(x, "setVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

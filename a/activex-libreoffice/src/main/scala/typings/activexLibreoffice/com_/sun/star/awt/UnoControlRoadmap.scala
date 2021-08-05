@@ -23,8 +23,7 @@ trait UnoControlRoadmap
      with XItemEventBroadcaster
 object UnoControlRoadmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

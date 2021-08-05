@@ -152,181 +152,123 @@ trait CalendarBaseProps extends StObject {
 }
 object CalendarBaseProps {
   
-  @scala.inline
-  def apply(): CalendarBaseProps = {
+  inline def apply(): CalendarBaseProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalendarBaseProps]
   }
   
-  @scala.inline
-  implicit class CalendarBasePropsMutableBuilder[Self <: CalendarBaseProps] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarBaseProps](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: TCalendarDate): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: TCalendarDate): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    @scala.inline
-    def setDayComponent(value: (Component[DayComponentProps, js.Object, js.Any]) | SFC[DayComponentProps]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
+    inline def setDayComponent(value: (Component[DayComponentProps, js.Object, js.Any]) | SFC[DayComponentProps]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)
+    inline def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)
     
-    @scala.inline
-    def setDisableArrowLeft(value: Boolean): Self = StObject.set(x, "disableArrowLeft", value.asInstanceOf[js.Any])
+    inline def setDisableArrowLeft(value: Boolean): Self = StObject.set(x, "disableArrowLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableArrowLeftUndefined: Self = StObject.set(x, "disableArrowLeft", js.undefined)
+    inline def setDisableArrowLeftUndefined: Self = StObject.set(x, "disableArrowLeft", js.undefined)
     
-    @scala.inline
-    def setDisableArrowRight(value: Boolean): Self = StObject.set(x, "disableArrowRight", value.asInstanceOf[js.Any])
+    inline def setDisableArrowRight(value: Boolean): Self = StObject.set(x, "disableArrowRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableArrowRightUndefined: Self = StObject.set(x, "disableArrowRight", js.undefined)
+    inline def setDisableArrowRightUndefined: Self = StObject.set(x, "disableArrowRight", js.undefined)
     
-    @scala.inline
-    def setDisableMonthChange(value: Boolean): Self = StObject.set(x, "disableMonthChange", value.asInstanceOf[js.Any])
+    inline def setDisableMonthChange(value: Boolean): Self = StObject.set(x, "disableMonthChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMonthChangeUndefined: Self = StObject.set(x, "disableMonthChange", js.undefined)
+    inline def setDisableMonthChangeUndefined: Self = StObject.set(x, "disableMonthChange", js.undefined)
     
-    @scala.inline
-    def setDisabledByDefault(value: Boolean): Self = StObject.set(x, "disabledByDefault", value.asInstanceOf[js.Any])
+    inline def setDisabledByDefault(value: Boolean): Self = StObject.set(x, "disabledByDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledByDefaultUndefined: Self = StObject.set(x, "disabledByDefault", js.undefined)
+    inline def setDisabledByDefaultUndefined: Self = StObject.set(x, "disabledByDefault", js.undefined)
     
-    @scala.inline
-    def setDisplayLoadingIndicator(value: Boolean): Self = StObject.set(x, "displayLoadingIndicator", value.asInstanceOf[js.Any])
+    inline def setDisplayLoadingIndicator(value: Boolean): Self = StObject.set(x, "displayLoadingIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLoadingIndicatorUndefined: Self = StObject.set(x, "displayLoadingIndicator", js.undefined)
+    inline def setDisplayLoadingIndicatorUndefined: Self = StObject.set(x, "displayLoadingIndicator", js.undefined)
     
-    @scala.inline
-    def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
+    inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
+    inline def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
     
-    @scala.inline
-    def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    inline def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
+    inline def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
     
-    @scala.inline
-    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+    inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
-    @scala.inline
-    def setHideArrows(value: Boolean): Self = StObject.set(x, "hideArrows", value.asInstanceOf[js.Any])
+    inline def setHideArrows(value: Boolean): Self = StObject.set(x, "hideArrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideArrowsUndefined: Self = StObject.set(x, "hideArrows", js.undefined)
+    inline def setHideArrowsUndefined: Self = StObject.set(x, "hideArrows", js.undefined)
     
-    @scala.inline
-    def setHideDayNames(value: Boolean): Self = StObject.set(x, "hideDayNames", value.asInstanceOf[js.Any])
+    inline def setHideDayNames(value: Boolean): Self = StObject.set(x, "hideDayNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDayNamesUndefined: Self = StObject.set(x, "hideDayNames", js.undefined)
+    inline def setHideDayNamesUndefined: Self = StObject.set(x, "hideDayNames", js.undefined)
     
-    @scala.inline
-    def setHideExtraDays(value: Boolean): Self = StObject.set(x, "hideExtraDays", value.asInstanceOf[js.Any])
+    inline def setHideExtraDays(value: Boolean): Self = StObject.set(x, "hideExtraDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideExtraDaysUndefined: Self = StObject.set(x, "hideExtraDays", js.undefined)
+    inline def setHideExtraDaysUndefined: Self = StObject.set(x, "hideExtraDays", js.undefined)
     
-    @scala.inline
-    def setMaxDate(value: TCalendarDate): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: TCalendarDate): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+    inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    @scala.inline
-    def setMinDate(value: TCalendarDate): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: TCalendarDate): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+    inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
-    @scala.inline
-    def setMonthFormat(value: String): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
+    inline def setMonthFormat(value: String): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
+    inline def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
     
-    @scala.inline
-    def setOnDayLongPress(value: /* date */ DateObject => Unit): Self = StObject.set(x, "onDayLongPress", js.Any.fromFunction1(value))
+    inline def setOnDayLongPress(value: /* date */ DateObject => Unit): Self = StObject.set(x, "onDayLongPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDayLongPressUndefined: Self = StObject.set(x, "onDayLongPress", js.undefined)
+    inline def setOnDayLongPressUndefined: Self = StObject.set(x, "onDayLongPress", js.undefined)
     
-    @scala.inline
-    def setOnDayPress(value: /* date */ DateObject => Unit): Self = StObject.set(x, "onDayPress", js.Any.fromFunction1(value))
+    inline def setOnDayPress(value: /* date */ DateObject => Unit): Self = StObject.set(x, "onDayPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDayPressUndefined: Self = StObject.set(x, "onDayPress", js.undefined)
+    inline def setOnDayPressUndefined: Self = StObject.set(x, "onDayPress", js.undefined)
     
-    @scala.inline
-    def setOnMonthChange(value: /* date */ DateObject => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
+    inline def setOnMonthChange(value: /* date */ DateObject => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
+    inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
     
-    @scala.inline
-    def setOnPressArrowLeft(value: /* substractMonth */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onPressArrowLeft", js.Any.fromFunction1(value))
+    inline def setOnPressArrowLeft(value: /* substractMonth */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onPressArrowLeft", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressArrowLeftUndefined: Self = StObject.set(x, "onPressArrowLeft", js.undefined)
+    inline def setOnPressArrowLeftUndefined: Self = StObject.set(x, "onPressArrowLeft", js.undefined)
     
-    @scala.inline
-    def setOnPressArrowRight(value: /* addMonth */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onPressArrowRight", js.Any.fromFunction1(value))
+    inline def setOnPressArrowRight(value: /* addMonth */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onPressArrowRight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressArrowRightUndefined: Self = StObject.set(x, "onPressArrowRight", js.undefined)
+    inline def setOnPressArrowRightUndefined: Self = StObject.set(x, "onPressArrowRight", js.undefined)
     
-    @scala.inline
-    def setOnVisibleMonthsChange(value: /* months */ js.Array[DateObject] => Unit): Self = StObject.set(x, "onVisibleMonthsChange", js.Any.fromFunction1(value))
+    inline def setOnVisibleMonthsChange(value: /* months */ js.Array[DateObject] => Unit): Self = StObject.set(x, "onVisibleMonthsChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnVisibleMonthsChangeUndefined: Self = StObject.set(x, "onVisibleMonthsChange", js.undefined)
+    inline def setOnVisibleMonthsChangeUndefined: Self = StObject.set(x, "onVisibleMonthsChange", js.undefined)
     
-    @scala.inline
-    def setRenderArrow(value: /* direction */ left | right => ReactNode): Self = StObject.set(x, "renderArrow", js.Any.fromFunction1(value))
+    inline def setRenderArrow(value: /* direction */ left | right => ReactNode): Self = StObject.set(x, "renderArrow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderArrowUndefined: Self = StObject.set(x, "renderArrow", js.undefined)
+    inline def setRenderArrowUndefined: Self = StObject.set(x, "renderArrow", js.undefined)
     
-    @scala.inline
-    def setRenderHeader(value: /* date */ Date => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
+    inline def setRenderHeader(value: /* date */ Date => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
+    inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     
-    @scala.inline
-    def setShowWeekNumbers(value: Boolean): Self = StObject.set(x, "showWeekNumbers", value.asInstanceOf[js.Any])
+    inline def setShowWeekNumbers(value: Boolean): Self = StObject.set(x, "showWeekNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowWeekNumbersUndefined: Self = StObject.set(x, "showWeekNumbers", js.undefined)
+    inline def setShowWeekNumbersUndefined: Self = StObject.set(x, "showWeekNumbers", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTheme(value: CalendarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: CalendarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setWebAriaLevel(value: Double): Self = StObject.set(x, "webAriaLevel", value.asInstanceOf[js.Any])
+    inline def setWebAriaLevel(value: Double): Self = StObject.set(x, "webAriaLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAriaLevelUndefined: Self = StObject.set(x, "webAriaLevel", js.undefined)
+    inline def setWebAriaLevelUndefined: Self = StObject.set(x, "webAriaLevel", js.undefined)
   }
 }

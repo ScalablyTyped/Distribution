@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateToolEventInfo extends StObject
 object CreateToolEventInfo {
   
-  @scala.inline
-  def CursorUpdateEventInfo(
+  inline def CursorUpdateEventInfo(
     constructor: js.Function,
     coordinates: js.Array[Double],
     hasOwnProperty: PropertyKey => Boolean,
@@ -24,8 +23,7 @@ object CreateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CursorUpdateEventInfo]
   }
   
-  @scala.inline
-  def VertexAddEventInfo(
+  inline def VertexAddEventInfo(
     added: js.Array[Graphic],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,

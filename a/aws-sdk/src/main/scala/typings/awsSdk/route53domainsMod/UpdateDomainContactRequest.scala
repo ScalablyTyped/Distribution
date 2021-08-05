@@ -28,34 +28,25 @@ trait UpdateDomainContactRequest extends StObject {
 }
 object UpdateDomainContactRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): UpdateDomainContactRequest = {
+  inline def apply(DomainName: DomainName): UpdateDomainContactRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainContactRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDomainContactRequestMutableBuilder[Self <: UpdateDomainContactRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainContactRequest](x: Self) {
     
-    @scala.inline
-    def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
+    inline def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminContactUndefined: Self = StObject.set(x, "AdminContact", js.undefined)
+    inline def setAdminContactUndefined: Self = StObject.set(x, "AdminContact", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
+    inline def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrantContactUndefined: Self = StObject.set(x, "RegistrantContact", js.undefined)
+    inline def setRegistrantContactUndefined: Self = StObject.set(x, "RegistrantContact", js.undefined)
     
-    @scala.inline
-    def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
+    inline def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechContactUndefined: Self = StObject.set(x, "TechContact", js.undefined)
+    inline def setTechContactUndefined: Self = StObject.set(x, "TechContact", js.undefined)
   }
 }

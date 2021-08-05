@@ -16,7 +16,7 @@ object xmlHttpRequestEventTargetMod {
     
     def dispatchEvent(event: ProgressEvent): Boolean = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
     var onabort: ProgressEventListener | Null = js.native
     
@@ -44,17 +44,14 @@ object xmlHttpRequestEventTargetMod {
   }
   object ProgressEventListenerObject {
     
-    @scala.inline
-    def apply(handleEvent: ProgressEvent => Unit): ProgressEventListenerObject = {
+    inline def apply(handleEvent: ProgressEvent => Unit): ProgressEventListenerObject = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[ProgressEventListenerObject]
     }
     
-    @scala.inline
-    implicit class ProgressEventListenerObjectMutableBuilder[Self <: ProgressEventListenerObject] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressEventListenerObject](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: ProgressEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: ProgressEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   

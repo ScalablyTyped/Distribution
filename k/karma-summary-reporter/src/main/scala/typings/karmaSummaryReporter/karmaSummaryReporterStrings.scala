@@ -8,16 +8,13 @@ object karmaSummaryReporterStrings {
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait failed extends StObject
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait skipped extends StObject
-  @scala.inline
-  def skipped: skipped = "skipped".asInstanceOf[skipped]
+  inline def skipped: skipped = "skipped".asInstanceOf[skipped]
 }

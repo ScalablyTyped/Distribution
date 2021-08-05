@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppReturnCodeType extends StObject
 object Win32LobAppReturnCodeType {
   
-  @scala.inline
-  def failed: failed_ = "failed".asInstanceOf[failed_]
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
   
-  @scala.inline
-  def hardReboot: typings.microsoftGraph.microsoftGraphStrings.hardReboot = "hardReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hardReboot]
+  inline def hardReboot: typings.microsoftGraph.microsoftGraphStrings.hardReboot = "hardReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hardReboot]
   
-  @scala.inline
-  def retry: typings.microsoftGraph.microsoftGraphStrings.retry = "retry".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.retry]
+  inline def retry: typings.microsoftGraph.microsoftGraphStrings.retry = "retry".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.retry]
   
-  @scala.inline
-  def softReboot: typings.microsoftGraph.microsoftGraphStrings.softReboot = "softReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.softReboot]
+  inline def softReboot: typings.microsoftGraph.microsoftGraphStrings.softReboot = "softReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.softReboot]
   
-  @scala.inline
-  def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
 }

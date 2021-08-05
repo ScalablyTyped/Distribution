@@ -18,22 +18,17 @@ trait RecordMarkerDecisionAttributes extends StObject {
 }
 object RecordMarkerDecisionAttributes {
   
-  @scala.inline
-  def apply(markerName: MarkerName): RecordMarkerDecisionAttributes = {
+  inline def apply(markerName: MarkerName): RecordMarkerDecisionAttributes = {
     val __obj = js.Dynamic.literal(markerName = markerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordMarkerDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class RecordMarkerDecisionAttributesMutableBuilder[Self <: RecordMarkerDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RecordMarkerDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setMarkerName(value: MarkerName): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
+    inline def setMarkerName(value: MarkerName): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
   }
 }

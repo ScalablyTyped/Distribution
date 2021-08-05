@@ -27,40 +27,29 @@ trait ErrorContext extends StObject {
 }
 object ErrorContext {
   
-  @scala.inline
-  def apply(): ErrorContext = {
+  inline def apply(): ErrorContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorContext]
   }
   
-  @scala.inline
-  implicit class ErrorContextMutableBuilder[Self <: ErrorContext] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorContext](x: Self) {
     
-    @scala.inline
-    def setHttpRequest(value: HttpRequestContext): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
+    inline def setHttpRequest(value: HttpRequestContext): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
+    inline def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
     
-    @scala.inline
-    def setReportLocation(value: SourceLocation): Self = StObject.set(x, "reportLocation", value.asInstanceOf[js.Any])
+    inline def setReportLocation(value: SourceLocation): Self = StObject.set(x, "reportLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportLocationUndefined: Self = StObject.set(x, "reportLocation", js.undefined)
+    inline def setReportLocationUndefined: Self = StObject.set(x, "reportLocation", js.undefined)
     
-    @scala.inline
-    def setSourceReferences(value: js.Array[SourceReference]): Self = StObject.set(x, "sourceReferences", value.asInstanceOf[js.Any])
+    inline def setSourceReferences(value: js.Array[SourceReference]): Self = StObject.set(x, "sourceReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceReferencesUndefined: Self = StObject.set(x, "sourceReferences", js.undefined)
+    inline def setSourceReferencesUndefined: Self = StObject.set(x, "sourceReferences", js.undefined)
     
-    @scala.inline
-    def setSourceReferencesVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReferences", js.Array(value :_*))
+    inline def setSourceReferencesVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

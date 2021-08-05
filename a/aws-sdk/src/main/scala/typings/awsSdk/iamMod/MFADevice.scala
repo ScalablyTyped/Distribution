@@ -23,22 +23,17 @@ trait MFADevice extends StObject {
 }
 object MFADevice {
   
-  @scala.inline
-  def apply(EnableDate: dateType, SerialNumber: serialNumberType, UserName: userNameType): MFADevice = {
+  inline def apply(EnableDate: dateType, SerialNumber: serialNumberType, UserName: userNameType): MFADevice = {
     val __obj = js.Dynamic.literal(EnableDate = EnableDate.asInstanceOf[js.Any], SerialNumber = SerialNumber.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MFADevice]
   }
   
-  @scala.inline
-  implicit class MFADeviceMutableBuilder[Self <: MFADevice] (val x: Self) extends AnyVal {
+  extension [Self <: MFADevice](x: Self) {
     
-    @scala.inline
-    def setEnableDate(value: dateType): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
+    inline def setEnableDate(value: dateType): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

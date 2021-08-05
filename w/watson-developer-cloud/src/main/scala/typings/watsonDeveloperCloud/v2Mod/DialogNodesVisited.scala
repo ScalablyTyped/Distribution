@@ -18,31 +18,23 @@ trait DialogNodesVisited extends StObject {
 }
 object DialogNodesVisited {
   
-  @scala.inline
-  def apply(): DialogNodesVisited = {
+  inline def apply(): DialogNodesVisited = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogNodesVisited]
   }
   
-  @scala.inline
-  implicit class DialogNodesVisitedMutableBuilder[Self <: DialogNodesVisited] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodesVisited](x: Self) {
     
-    @scala.inline
-    def setConditions(value: String): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: String): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
+    inline def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialog_nodeUndefined: Self = StObject.set(x, "dialog_node", js.undefined)
+    inline def setDialog_nodeUndefined: Self = StObject.set(x, "dialog_node", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait MapCircleStyle
 }
 object MapCircleStyle {
   
-  @scala.inline
-  def apply(): MapCircleStyle = {
+  inline def apply(): MapCircleStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapCircleStyle]
   }
   
-  @scala.inline
-  implicit class MapCircleStyleMutableBuilder[Self <: MapCircleStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MapCircleStyle](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

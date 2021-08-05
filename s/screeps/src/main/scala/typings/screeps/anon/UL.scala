@@ -10,16 +10,13 @@ trait UL extends StObject {
 }
 object UL {
   
-  @scala.inline
-  def apply(): UL = {
+  inline def apply(): UL = {
     val __obj = js.Dynamic.literal(UL = "G")
     __obj.asInstanceOf[UL]
   }
   
-  @scala.inline
-  implicit class ULMutableBuilder[Self <: UL] (val x: Self) extends AnyVal {
+  extension [Self <: UL](x: Self) {
     
-    @scala.inline
-    def setUL(value: typings.screeps.screepsStrings.G): Self = StObject.set(x, "UL", value.asInstanceOf[js.Any])
+    inline def setUL(value: typings.screeps.screepsStrings.G): Self = StObject.set(x, "UL", value.asInstanceOf[js.Any])
   }
 }

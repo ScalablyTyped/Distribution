@@ -98,8 +98,7 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptHeader: String,
     adaptivePadding: Double,
     arrowScrollAmount: Double,
@@ -150,142 +149,96 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAcceptHeader(value: String): Self = StObject.set(x, "acceptHeader", value.asInstanceOf[js.Any])
+    inline def setAcceptHeader(value: String): Self = StObject.set(x, "acceptHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptivePadding(value: Double): Self = StObject.set(x, "adaptivePadding", value.asInstanceOf[js.Any])
+    inline def setAdaptivePadding(value: Double): Self = StObject.set(x, "adaptivePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowScrollAmount(value: Double): Self = StObject.set(x, "arrowScrollAmount", value.asInstanceOf[js.Any])
+    inline def setArrowScrollAmount(value: Double): Self = StObject.set(x, "arrowScrollAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockMobileMove(value: Boolean): Self = StObject.set(x, "blockMobileMove", value.asInstanceOf[js.Any])
+    inline def setBlockMobileMove(value: Boolean): Self = StObject.set(x, "blockMobileMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoTitle(value: Boolean): Self = StObject.set(x, "enableAutoTitle", value.asInstanceOf[js.Any])
+    inline def setEnableAutoTitle(value: Boolean): Self = StObject.set(x, "enableAutoTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFilename(value: Boolean): Self = StObject.set(x, "enableFilename", value.asInstanceOf[js.Any])
+    inline def setEnableFilename(value: Boolean): Self = StObject.set(x, "enableFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFullscreen(value: Boolean): Self = StObject.set(x, "enableFullscreen", value.asInstanceOf[js.Any])
+    inline def setEnableFullscreen(value: Boolean): Self = StObject.set(x, "enableFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGotoPage(value: Boolean): Self = StObject.set(x, "enableGotoPage", value.asInstanceOf[js.Any])
+    inline def setEnableGotoPage(value: Boolean): Self = StObject.set(x, "enableGotoPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGotoSuggestions(value: Boolean): Self = StObject.set(x, "enableGotoSuggestions", value.asInstanceOf[js.Any])
+    inline def setEnableGotoSuggestions(value: Boolean): Self = StObject.set(x, "enableGotoSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGridControls(value: String): Self = StObject.set(x, "enableGridControls", value.asInstanceOf[js.Any])
+    inline def setEnableGridControls(value: String): Self = StObject.set(x, "enableGridControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGridIcon(value: Boolean): Self = StObject.set(x, "enableGridIcon", value.asInstanceOf[js.Any])
+    inline def setEnableGridIcon(value: Boolean): Self = StObject.set(x, "enableGridIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableImageTitles(value: Boolean): Self = StObject.set(x, "enableImageTitles", value.asInstanceOf[js.Any])
+    inline def setEnableImageTitles(value: Boolean): Self = StObject.set(x, "enableImageTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIndexAsLabel(value: Boolean): Self = StObject.set(x, "enableIndexAsLabel", value.asInstanceOf[js.Any])
+    inline def setEnableIndexAsLabel(value: Boolean): Self = StObject.set(x, "enableIndexAsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableKeyScroll(value: Boolean): Self = StObject.set(x, "enableKeyScroll", value.asInstanceOf[js.Any])
+    inline def setEnableKeyScroll(value: Boolean): Self = StObject.set(x, "enableKeyScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLinkIcon(value: Boolean): Self = StObject.set(x, "enableLinkIcon", value.asInstanceOf[js.Any])
+    inline def setEnableLinkIcon(value: Boolean): Self = StObject.set(x, "enableLinkIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNonPagedVisibilityIcon(value: Boolean): Self = StObject.set(x, "enableNonPagedVisibilityIcon", value.asInstanceOf[js.Any])
+    inline def setEnableNonPagedVisibilityIcon(value: Boolean): Self = StObject.set(x, "enableNonPagedVisibilityIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSpaceScroll(value: Boolean): Self = StObject.set(x, "enableSpaceScroll", value.asInstanceOf[js.Any])
+    inline def setEnableSpaceScroll(value: Boolean): Self = StObject.set(x, "enableSpaceScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableToolbar(value: Boolean): Self = StObject.set(x, "enableToolbar", value.asInstanceOf[js.Any])
+    inline def setEnableToolbar(value: Boolean): Self = StObject.set(x, "enableToolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableZoomControls(value: String): Self = StObject.set(x, "enableZoomControls", value.asInstanceOf[js.Any])
+    inline def setEnableZoomControls(value: String): Self = StObject.set(x, "enableZoomControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillParentHeight(value: Boolean): Self = StObject.set(x, "fillParentHeight", value.asInstanceOf[js.Any])
+    inline def setFillParentHeight(value: Boolean): Self = StObject.set(x, "fillParentHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedHeightGrid(value: Boolean): Self = StObject.set(x, "fixedHeightGrid", value.asInstanceOf[js.Any])
+    inline def setFixedHeightGrid(value: Boolean): Self = StObject.set(x, "fixedHeightGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedPadding(value: Double): Self = StObject.set(x, "fixedPadding", value.asInstanceOf[js.Any])
+    inline def setFixedPadding(value: Double): Self = StObject.set(x, "fixedPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoDirectlyTo(value: Double): Self = StObject.set(x, "goDirectlyTo", value.asInstanceOf[js.Any])
+    inline def setGoDirectlyTo(value: Double): Self = StObject.set(x, "goDirectlyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashParamSuffix(value: String): Self = StObject.set(x, "hashParamSuffix", value.asInstanceOf[js.Any])
+    inline def setHashParamSuffix(value: String): Self = StObject.set(x, "hashParamSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInBookLayout(value: Boolean): Self = StObject.set(x, "inBookLayout", value.asInstanceOf[js.Any])
+    inline def setInBookLayout(value: Boolean): Self = StObject.set(x, "inBookLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInFullscreen(value: Boolean): Self = StObject.set(x, "inFullscreen", value.asInstanceOf[js.Any])
+    inline def setInFullscreen(value: Boolean): Self = StObject.set(x, "inFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInGrid(value: Boolean): Self = StObject.set(x, "inGrid", value.asInstanceOf[js.Any])
+    inline def setInGrid(value: Boolean): Self = StObject.set(x, "inGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPagesPerRow(value: Double): Self = StObject.set(x, "maxPagesPerRow", value.asInstanceOf[js.Any])
+    inline def setMaxPagesPerRow(value: Double): Self = StObject.set(x, "maxPagesPerRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
+    inline def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPagesPerRow(value: Double): Self = StObject.set(x, "minPagesPerRow", value.asInstanceOf[js.Any])
+    inline def setMinPagesPerRow(value: Double): Self = StObject.set(x, "minPagesPerRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomLevel(value: Double): Self = StObject.set(x, "minZoomLevel", value.asInstanceOf[js.Any])
+    inline def setMinZoomLevel(value: Double): Self = StObject.set(x, "minZoomLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectData(value: js.Object | String): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
+    inline def setObjectData(value: js.Object | String): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnGotoSubmit(value: () => js.Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
+    inline def setOnGotoSubmit(value: () => js.Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPageAliasFunction(value: () => js.Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
+    inline def setPageAliasFunction(value: () => js.Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPageAliases(value: js.Object): Self = StObject.set(x, "pageAliases", value.asInstanceOf[js.Any])
+    inline def setPageAliases(value: js.Object): Self = StObject.set(x, "pageAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLoadTimeout(value: Double): Self = StObject.set(x, "pageLoadTimeout", value.asInstanceOf[js.Any])
+    inline def setPageLoadTimeout(value: Double): Self = StObject.set(x, "pageLoadTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesPerRow(value: Double): Self = StObject.set(x, "pagesPerRow", value.asInstanceOf[js.Any])
+    inline def setPagesPerRow(value: Double): Self = StObject.set(x, "pagesPerRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNonPagedPages(value: Boolean): Self = StObject.set(x, "showNonPagedPages", value.asInstanceOf[js.Any])
+    inline def setShowNonPagedPages(value: Boolean): Self = StObject.set(x, "showNonPagedPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrobberTimeout(value: Double): Self = StObject.set(x, "throbberTimeout", value.asInstanceOf[js.Any])
+    inline def setThrobberTimeout(value: Double): Self = StObject.set(x, "throbberTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+    inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+    inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarParentObject(value: js.Object): Self = StObject.set(x, "toolbarParentObject", value.asInstanceOf[js.Any])
+    inline def setToolbarParentObject(value: js.Object): Self = StObject.set(x, "toolbarParentObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticallyOriented(value: Boolean): Self = StObject.set(x, "verticallyOriented", value.asInstanceOf[js.Any])
+    inline def setVerticallyOriented(value: Boolean): Self = StObject.set(x, "verticallyOriented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportMargin(value: Double): Self = StObject.set(x, "viewportMargin", value.asInstanceOf[js.Any])
+    inline def setViewportMargin(value: Double): Self = StObject.set(x, "viewportMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
   }
 }

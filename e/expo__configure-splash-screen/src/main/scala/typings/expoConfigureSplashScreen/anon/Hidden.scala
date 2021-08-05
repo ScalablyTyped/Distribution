@@ -13,25 +13,19 @@ trait Hidden extends StObject {
 }
 object Hidden {
   
-  @scala.inline
-  def apply(): Hidden = {
+  inline def apply(): Hidden = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hidden]
   }
   
-  @scala.inline
-  implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
+  extension [Self <: Hidden](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setStyle(value: SplashScreenStatusBarStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SplashScreenStatusBarStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

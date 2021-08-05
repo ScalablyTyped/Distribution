@@ -12,25 +12,19 @@ trait CompassOptions extends StObject {
 }
 object CompassOptions {
   
-  @scala.inline
-  def apply(): CompassOptions = {
+  inline def apply(): CompassOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompassOptions]
   }
   
-  @scala.inline
-  implicit class CompassOptionsMutableBuilder[Self <: CompassOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompassOptions](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

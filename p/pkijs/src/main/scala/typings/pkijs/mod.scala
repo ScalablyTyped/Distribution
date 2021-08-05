@@ -24,8 +24,7 @@ object mod {
     * @param {ArrayBuffer} signatureBuffer WebCrypto result of "sign" function
     * @returns {ArrayBuffer}
     */
-  @scala.inline
-  def createCMSECDSASignature(signatureBuffer: ArrayBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createCMSECDSASignature")(signatureBuffer.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def createCMSECDSASignature(signatureBuffer: ArrayBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createCMSECDSASignature")(signatureBuffer.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
   /**
     * Create a single ArrayBuffer from CMS ECDSA signature
@@ -33,8 +32,7 @@ object mod {
     * @param {Sequence} cmsSignature ASN.1 SEQUENCE contains CMS ECDSA signature
     * @returns {ArrayBuffer}
     */
-  @scala.inline
-  def createECDSASignatureFromCMS(cmsSignature: Sequence): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createECDSASignatureFromCMS")(cmsSignature.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def createECDSASignatureFromCMS(cmsSignature: Sequence): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createECDSASignatureFromCMS")(cmsSignature.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
   /**
     * Get WebCrypto algorithm by wel-known OID
@@ -42,8 +40,7 @@ object mod {
     * @param {string} oid Wel-known OID to search for
     * @returns {Algorithm}
     */
-  @scala.inline
-  def getAlgorithmByOID(oid: String): Algorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmByOID")(oid.asInstanceOf[js.Any]).asInstanceOf[Algorithm]
+  inline def getAlgorithmByOID(oid: String): Algorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmByOID")(oid.asInstanceOf[js.Any]).asInstanceOf[Algorithm]
   
   /**
     * Get default algorithm parameters for each kind of operation
@@ -52,19 +49,16 @@ object mod {
     * @param {string} operation Kind of operation: "sign", "encrypt", "generatekey", "importkey", "exportkey", "verify"
     * @returns {{ algorithm: Algorithm; usages: KeyUsage[]; }}
     */
-  @scala.inline
-  def getAlgorithmParameters(algorithmName: String, operation: String): typings.pkijs.anon.Algorithm = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmParameters")(algorithmName.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[typings.pkijs.anon.Algorithm]
+  inline def getAlgorithmParameters(algorithmName: String, operation: String): typings.pkijs.anon.Algorithm = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmParameters")(algorithmName.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[typings.pkijs.anon.Algorithm]
   
   /**
     * Get crypto subtle from current "crypto engine" or "undefined"
     *
     * @returns {(SubtleCrypto | undefined)}
     */
-  @scala.inline
-  def getCrypto(): js.UndefOr[SubtleCrypto] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCrypto")().asInstanceOf[js.UndefOr[SubtleCrypto]]
+  inline def getCrypto(): js.UndefOr[SubtleCrypto] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCrypto")().asInstanceOf[js.UndefOr[SubtleCrypto]]
   
-  @scala.inline
-  def getEngine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngine")().asInstanceOf[Engine]
+  inline def getEngine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngine")().asInstanceOf[Engine]
   
   /**
     * Getting hash algorithm by signature algorithm
@@ -72,8 +66,7 @@ object mod {
     * @param {AlgorithmIdentifier} signatureAlgorithm Signature algorithm
     * @returns {string}
     */
-  @scala.inline
-  def getHashAlgorithm(signatureAlgorithm: default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getHashAlgorithm(signatureAlgorithm: default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Get OID for each specific WebCrypto algorithm
@@ -81,8 +74,7 @@ object mod {
     * @param {Algorithm} algorithm
     * @returns {string}
     */
-  @scala.inline
-  def getOIDByAlgorithm(algorithm: Algorithm): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOIDByAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getOIDByAlgorithm(algorithm: Algorithm): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOIDByAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Initialize input Uint8Array by random values (with help from current "crypto engine")
@@ -90,8 +82,7 @@ object mod {
     * @param {ArrayBufferView} view
     * @returns {ArrayBufferView}
     */
-  @scala.inline
-  def getRandomValues(view: ArrayBufferView): ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(view.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView]
+  inline def getRandomValues(view: ArrayBufferView): ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(view.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView]
   
   /**
     * ANS X9.63 Key Derivation Function
@@ -101,8 +92,7 @@ object mod {
     * @param {number} keydatalen Length (!!! in BITS !!!) of used kew derivation function
     * @param {ArrayBuffer} SharedInfo Usually DER encoded "ECC_CMS_SharedInfo" structure
     */
-  @scala.inline
-  def kdf(hashFunction: String, Zbuffer: ArrayBuffer, keydatalen: Double, SharedInfo: ArrayBuffer): js.Thenable[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("kdf")(hashFunction.asInstanceOf[js.Any], Zbuffer.asInstanceOf[js.Any], keydatalen.asInstanceOf[js.Any], SharedInfo.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ArrayBuffer]]
+  inline def kdf(hashFunction: String, Zbuffer: ArrayBuffer, keydatalen: Double, SharedInfo: ArrayBuffer): js.Thenable[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("kdf")(hashFunction.asInstanceOf[js.Any], Zbuffer.asInstanceOf[js.Any], keydatalen.asInstanceOf[js.Any], SharedInfo.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ArrayBuffer]]
   
   /**
     * ANS X9.63 Key Derivation Function having a "Counter" as a parameter
@@ -112,11 +102,9 @@ object mod {
     * @param {number} Counter
     * @param {ArrayBuffer} SharedInfo Usually DER encoded "ECC_CMS_SharedInfo" structure
     */
-  @scala.inline
-  def kdfWithCounter(hashFunction: String, Zbuffer: ArrayBuffer, Counter: Double, SharedInfo: ArrayBuffer): js.Thenable[Counter] = (^.asInstanceOf[js.Dynamic].applyDynamic("kdfWithCounter")(hashFunction.asInstanceOf[js.Any], Zbuffer.asInstanceOf[js.Any], Counter.asInstanceOf[js.Any], SharedInfo.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Counter]]
+  inline def kdfWithCounter(hashFunction: String, Zbuffer: ArrayBuffer, Counter: Double, SharedInfo: ArrayBuffer): js.Thenable[Counter] = (^.asInstanceOf[js.Dynamic].applyDynamic("kdfWithCounter")(hashFunction.asInstanceOf[js.Any], Zbuffer.asInstanceOf[js.Any], Counter.asInstanceOf[js.Any], SharedInfo.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Counter]]
   
-  @scala.inline
-  def setEngine(name: String, crypto: Crypto, subtle: SubtleCrypto): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any], crypto.asInstanceOf[js.Any], subtle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setEngine(name: String, crypto: Crypto, subtle: SubtleCrypto): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any], crypto.asInstanceOf[js.Any], subtle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * String preparation function. In a future here will be realization of algorithm from RFC4518
@@ -124,8 +112,7 @@ object mod {
     * @param {string} inputString JavaScript string. As soon as for each ASN.1 string type we have a specific transformation function here we will work with pure JavaScript string
     * @returns {string} Formated string
     */
-  @scala.inline
-  def stringPrep(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringPrep")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringPrep(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringPrep")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Engine extends StObject {
     
@@ -137,23 +124,18 @@ object mod {
   }
   object Engine {
     
-    @scala.inline
-    def apply(crypto: Crypto, name: String, subtle: SubtleCrypto): Engine = {
+    inline def apply(crypto: Crypto, name: String, subtle: SubtleCrypto): Engine = {
       val __obj = js.Dynamic.literal(crypto = crypto.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtle = subtle.asInstanceOf[js.Any])
       __obj.asInstanceOf[Engine]
     }
     
-    @scala.inline
-    implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+    extension [Self <: Engine](x: Self) {
       
-      @scala.inline
-      def setCrypto(value: Crypto): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
+      inline def setCrypto(value: Crypto): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtle(value: SubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
+      inline def setSubtle(value: SubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
     }
   }
 }

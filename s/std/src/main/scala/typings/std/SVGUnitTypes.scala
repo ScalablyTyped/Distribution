@@ -15,8 +15,7 @@ trait SVGUnitTypes extends StObject {
 }
 object SVGUnitTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double,
     SVG_UNIT_TYPE_UNKNOWN: Double,
     SVG_UNIT_TYPE_USERSPACEONUSE: Double
@@ -25,16 +24,12 @@ object SVGUnitTypes {
     __obj.asInstanceOf[SVGUnitTypes]
   }
   
-  @scala.inline
-  implicit class SVGUnitTypesMutableBuilder[Self <: SVGUnitTypes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGUnitTypes](x: Self) {
     
-    @scala.inline
-    def setSVG_UNIT_TYPE_OBJECTBOUNDINGBOX(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_OBJECTBOUNDINGBOX", value.asInstanceOf[js.Any])
+    inline def setSVG_UNIT_TYPE_OBJECTBOUNDINGBOX(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_OBJECTBOUNDINGBOX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_UNIT_TYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setSVG_UNIT_TYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_UNIT_TYPE_USERSPACEONUSE(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_USERSPACEONUSE", value.asInstanceOf[js.Any])
+    inline def setSVG_UNIT_TYPE_USERSPACEONUSE(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_USERSPACEONUSE", value.asInstanceOf[js.Any])
   }
 }

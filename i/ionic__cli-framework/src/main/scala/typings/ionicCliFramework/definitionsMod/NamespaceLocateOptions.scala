@@ -10,19 +10,15 @@ trait NamespaceLocateOptions extends StObject {
 }
 object NamespaceLocateOptions {
   
-  @scala.inline
-  def apply(): NamespaceLocateOptions = {
+  inline def apply(): NamespaceLocateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamespaceLocateOptions]
   }
   
-  @scala.inline
-  implicit class NamespaceLocateOptionsMutableBuilder[Self <: NamespaceLocateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NamespaceLocateOptions](x: Self) {
     
-    @scala.inline
-    def setUseAliases(value: Boolean): Self = StObject.set(x, "useAliases", value.asInstanceOf[js.Any])
+    inline def setUseAliases(value: Boolean): Self = StObject.set(x, "useAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAliasesUndefined: Self = StObject.set(x, "useAliases", js.undefined)
+    inline def setUseAliasesUndefined: Self = StObject.set(x, "useAliases", js.undefined)
   }
 }

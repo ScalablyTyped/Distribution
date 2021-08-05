@@ -24,40 +24,29 @@ trait SnapshotExtended extends StObject {
 }
 object SnapshotExtended {
   
-  @scala.inline
-  def apply(): SnapshotExtended = {
+  inline def apply(): SnapshotExtended = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotExtended]
   }
   
-  @scala.inline
-  implicit class SnapshotExtendedMutableBuilder[Self <: SnapshotExtended] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotExtended](x: Self) {
     
-    @scala.inline
-    def setConflictingRevisions(value: js.Array[SnapshotRevision]): Self = StObject.set(x, "conflictingRevisions", value.asInstanceOf[js.Any])
+    inline def setConflictingRevisions(value: js.Array[SnapshotRevision]): Self = StObject.set(x, "conflictingRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictingRevisionsUndefined: Self = StObject.set(x, "conflictingRevisions", js.undefined)
+    inline def setConflictingRevisionsUndefined: Self = StObject.set(x, "conflictingRevisions", js.undefined)
     
-    @scala.inline
-    def setConflictingRevisionsVarargs(value: SnapshotRevision*): Self = StObject.set(x, "conflictingRevisions", js.Array(value :_*))
+    inline def setConflictingRevisionsVarargs(value: SnapshotRevision*): Self = StObject.set(x, "conflictingRevisions", js.Array(value :_*))
     
-    @scala.inline
-    def setHasConflictingRevisions(value: Boolean): Self = StObject.set(x, "hasConflictingRevisions", value.asInstanceOf[js.Any])
+    inline def setHasConflictingRevisions(value: Boolean): Self = StObject.set(x, "hasConflictingRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasConflictingRevisionsUndefined: Self = StObject.set(x, "hasConflictingRevisions", js.undefined)
+    inline def setHasConflictingRevisionsUndefined: Self = StObject.set(x, "hasConflictingRevisions", js.undefined)
     
-    @scala.inline
-    def setHeadRevision(value: SnapshotRevision): Self = StObject.set(x, "headRevision", value.asInstanceOf[js.Any])
+    inline def setHeadRevision(value: SnapshotRevision): Self = StObject.set(x, "headRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadRevisionUndefined: Self = StObject.set(x, "headRevision", js.undefined)
+    inline def setHeadRevisionUndefined: Self = StObject.set(x, "headRevision", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

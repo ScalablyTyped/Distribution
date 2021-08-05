@@ -30,67 +30,47 @@ trait CandleStickDatasetConfig
 }
 object CandleStickDatasetConfig {
   
-  @scala.inline
-  def apply(): CandleStickDatasetConfig = {
+  inline def apply(): CandleStickDatasetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CandleStickDatasetConfig]
   }
   
-  @scala.inline
-  implicit class CandleStickDatasetConfigMutableBuilder[Self <: CandleStickDatasetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CandleStickDatasetConfig](x: Self) {
     
-    @scala.inline
-    def setBarSpace(value: Double): Self = StObject.set(x, "barSpace", value.asInstanceOf[js.Any])
+    inline def setBarSpace(value: Double): Self = StObject.set(x, "barSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarSpaceUndefined: Self = StObject.set(x, "barSpace", js.undefined)
+    inline def setBarSpaceUndefined: Self = StObject.set(x, "barSpace", js.undefined)
     
-    @scala.inline
-    def setDecreasingColor(value: Color): Self = StObject.set(x, "decreasingColor", value.asInstanceOf[js.Any])
+    inline def setDecreasingColor(value: Color): Self = StObject.set(x, "decreasingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreasingColorUndefined: Self = StObject.set(x, "decreasingColor", js.undefined)
+    inline def setDecreasingColorUndefined: Self = StObject.set(x, "decreasingColor", js.undefined)
     
-    @scala.inline
-    def setDecreasingPaintStyle(value: CandleStickPaintStyle): Self = StObject.set(x, "decreasingPaintStyle", value.asInstanceOf[js.Any])
+    inline def setDecreasingPaintStyle(value: CandleStickPaintStyle): Self = StObject.set(x, "decreasingPaintStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreasingPaintStyleUndefined: Self = StObject.set(x, "decreasingPaintStyle", js.undefined)
+    inline def setDecreasingPaintStyleUndefined: Self = StObject.set(x, "decreasingPaintStyle", js.undefined)
     
-    @scala.inline
-    def setIncreasingColor(value: Color): Self = StObject.set(x, "increasingColor", value.asInstanceOf[js.Any])
+    inline def setIncreasingColor(value: Color): Self = StObject.set(x, "increasingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreasingColorUndefined: Self = StObject.set(x, "increasingColor", js.undefined)
+    inline def setIncreasingColorUndefined: Self = StObject.set(x, "increasingColor", js.undefined)
     
-    @scala.inline
-    def setIncreasingPaintStyle(value: CandleStickPaintStyle): Self = StObject.set(x, "increasingPaintStyle", value.asInstanceOf[js.Any])
+    inline def setIncreasingPaintStyle(value: CandleStickPaintStyle): Self = StObject.set(x, "increasingPaintStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreasingPaintStyleUndefined: Self = StObject.set(x, "increasingPaintStyle", js.undefined)
+    inline def setIncreasingPaintStyleUndefined: Self = StObject.set(x, "increasingPaintStyle", js.undefined)
     
-    @scala.inline
-    def setNeutralColor(value: Color): Self = StObject.set(x, "neutralColor", value.asInstanceOf[js.Any])
+    inline def setNeutralColor(value: Color): Self = StObject.set(x, "neutralColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeutralColorUndefined: Self = StObject.set(x, "neutralColor", js.undefined)
+    inline def setNeutralColorUndefined: Self = StObject.set(x, "neutralColor", js.undefined)
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorSameAsCandle(value: Boolean): Self = StObject.set(x, "shadowColorSameAsCandle", value.asInstanceOf[js.Any])
+    inline def setShadowColorSameAsCandle(value: Boolean): Self = StObject.set(x, "shadowColorSameAsCandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorSameAsCandleUndefined: Self = StObject.set(x, "shadowColorSameAsCandle", js.undefined)
+    inline def setShadowColorSameAsCandleUndefined: Self = StObject.set(x, "shadowColorSameAsCandle", js.undefined)
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    @scala.inline
-    def setShadowWidth(value: Double): Self = StObject.set(x, "shadowWidth", value.asInstanceOf[js.Any])
+    inline def setShadowWidth(value: Double): Self = StObject.set(x, "shadowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowWidthUndefined: Self = StObject.set(x, "shadowWidth", js.undefined)
+    inline def setShadowWidthUndefined: Self = StObject.set(x, "shadowWidth", js.undefined)
   }
 }

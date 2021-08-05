@@ -13,17 +13,14 @@ trait DummyLayout
 }
 object DummyLayout {
   
-  @scala.inline
-  def apply(): DummyLayout = {
+  inline def apply(): DummyLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("dummy")
     __obj.asInstanceOf[DummyLayout]
   }
   
-  @scala.inline
-  implicit class DummyLayoutMutableBuilder[Self <: DummyLayout] (val x: Self) extends AnyVal {
+  extension [Self <: DummyLayout](x: Self) {
     
-    @scala.inline
-    def setType(value: dummy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dummy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

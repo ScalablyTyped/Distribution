@@ -24,17 +24,14 @@ trait IPathCircle
 }
 object IPathCircle {
   
-  @scala.inline
-  def apply(origin: IPoint, radius: Double, `type`: String): IPathCircle = {
+  inline def apply(origin: IPoint, radius: Double, `type`: String): IPathCircle = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathCircle]
   }
   
-  @scala.inline
-  implicit class IPathCircleMutableBuilder[Self <: IPathCircle] (val x: Self) extends AnyVal {
+  extension [Self <: IPathCircle](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait FieldMaskMask extends StObject {
 }
 object FieldMaskMask {
   
-  @scala.inline
-  def apply(name: String): FieldMaskMask = {
+  inline def apply(name: String): FieldMaskMask = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMaskMask]
   }
   
-  @scala.inline
-  implicit class FieldMaskMaskMutableBuilder[Self <: FieldMaskMask] (val x: Self) extends AnyVal {
+  extension [Self <: FieldMaskMask](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

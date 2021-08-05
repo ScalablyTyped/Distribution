@@ -25,8 +25,7 @@ object canvasMod {
   @js.native
   val checkedFonts: default = js.native
   
-  @scala.inline
-  def createTransformString(transform: Transform): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createTransformString(transform: Transform): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ol/render/canvas", "defaultFillStyle")
   @js.native
@@ -76,8 +75,7 @@ object canvasMod {
   @js.native
   val defaultTextBaseline: String = js.native
   
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
     opacity: Double,
@@ -90,8 +88,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
     opacity: Double,
@@ -104,8 +101,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
     opacity: Double,
@@ -118,8 +114,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
     opacity: Double,
@@ -132,8 +127,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
     opacity: Double,
@@ -146,8 +140,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
     opacity: Double,
@@ -160,8 +153,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
     opacity: Double,
@@ -174,8 +166,7 @@ object canvasMod {
     y: Double,
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawImageOrLabel(
+  inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
     opacity: Double,
@@ -193,23 +184,17 @@ object canvasMod {
   @js.native
   val labelCache: js.Any = js.native
   
-  @scala.inline
-  def measureAndCacheTextWidth(font: String, text: String, cache: StringDictionary[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndCacheTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def measureAndCacheTextWidth(font: String, text: String, cache: StringDictionary[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndCacheTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def measureTextHeight(font: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Size]
+  inline def measureTextHeight(font: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Size]
   
-  @scala.inline
-  def measureTextWidth(font: String, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def measureTextWidth(font: String, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def measureTextWidths(font: String, lines: js.Array[String], widths: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidths")(font.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def measureTextWidths(font: String, lines: js.Array[String], widths: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidths")(font.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def registerFont(fontSpec: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerFont(fontSpec: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def rotateAtOffset(context: CanvasRenderingContext2D, rotation: Double, offsetX: Double, offsetY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAtOffset")(context.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rotateAtOffset(context: CanvasRenderingContext2D, rotation: Double, offsetX: Double, offsetY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAtOffset")(context.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type DeclutterGroup = js.Array[js.Any]
   
@@ -221,17 +206,14 @@ object canvasMod {
   }
   object FillState {
     
-    @scala.inline
-    def apply(fillStyle: ColorLike): FillState = {
+    inline def apply(fillStyle: ColorLike): FillState = {
       val __obj = js.Dynamic.literal(fillStyle = fillStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[FillState]
     }
     
-    @scala.inline
-    implicit class FillStateMutableBuilder[Self <: FillState] (val x: Self) extends AnyVal {
+    extension [Self <: FillState](x: Self) {
       
-      @scala.inline
-      def setFillStyle(value: ColorLike): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+      inline def setFillStyle(value: ColorLike): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,116 +255,80 @@ object canvasMod {
   }
   object FillStrokeState {
     
-    @scala.inline
-    def apply(currentLineDash: js.Array[Double], lineDash: js.Array[Double]): FillStrokeState = {
+    inline def apply(currentLineDash: js.Array[Double], lineDash: js.Array[Double]): FillStrokeState = {
       val __obj = js.Dynamic.literal(currentLineDash = currentLineDash.asInstanceOf[js.Any], lineDash = lineDash.asInstanceOf[js.Any])
       __obj.asInstanceOf[FillStrokeState]
     }
     
-    @scala.inline
-    implicit class FillStrokeStateMutableBuilder[Self <: FillStrokeState] (val x: Self) extends AnyVal {
+    extension [Self <: FillStrokeState](x: Self) {
       
-      @scala.inline
-      def setCurrentFillStyle(value: ColorLike): Self = StObject.set(x, "currentFillStyle", value.asInstanceOf[js.Any])
+      inline def setCurrentFillStyle(value: ColorLike): Self = StObject.set(x, "currentFillStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentFillStyleUndefined: Self = StObject.set(x, "currentFillStyle", js.undefined)
+      inline def setCurrentFillStyleUndefined: Self = StObject.set(x, "currentFillStyle", js.undefined)
       
-      @scala.inline
-      def setCurrentLineCap(value: CanvasLineCap): Self = StObject.set(x, "currentLineCap", value.asInstanceOf[js.Any])
+      inline def setCurrentLineCap(value: CanvasLineCap): Self = StObject.set(x, "currentLineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentLineCapUndefined: Self = StObject.set(x, "currentLineCap", js.undefined)
+      inline def setCurrentLineCapUndefined: Self = StObject.set(x, "currentLineCap", js.undefined)
       
-      @scala.inline
-      def setCurrentLineDash(value: js.Array[Double]): Self = StObject.set(x, "currentLineDash", value.asInstanceOf[js.Any])
+      inline def setCurrentLineDash(value: js.Array[Double]): Self = StObject.set(x, "currentLineDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentLineDashOffset(value: Double): Self = StObject.set(x, "currentLineDashOffset", value.asInstanceOf[js.Any])
+      inline def setCurrentLineDashOffset(value: Double): Self = StObject.set(x, "currentLineDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentLineDashOffsetUndefined: Self = StObject.set(x, "currentLineDashOffset", js.undefined)
+      inline def setCurrentLineDashOffsetUndefined: Self = StObject.set(x, "currentLineDashOffset", js.undefined)
       
-      @scala.inline
-      def setCurrentLineDashVarargs(value: Double*): Self = StObject.set(x, "currentLineDash", js.Array(value :_*))
+      inline def setCurrentLineDashVarargs(value: Double*): Self = StObject.set(x, "currentLineDash", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "currentLineJoin", value.asInstanceOf[js.Any])
+      inline def setCurrentLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "currentLineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentLineJoinUndefined: Self = StObject.set(x, "currentLineJoin", js.undefined)
+      inline def setCurrentLineJoinUndefined: Self = StObject.set(x, "currentLineJoin", js.undefined)
       
-      @scala.inline
-      def setCurrentLineWidth(value: Double): Self = StObject.set(x, "currentLineWidth", value.asInstanceOf[js.Any])
+      inline def setCurrentLineWidth(value: Double): Self = StObject.set(x, "currentLineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentLineWidthUndefined: Self = StObject.set(x, "currentLineWidth", js.undefined)
+      inline def setCurrentLineWidthUndefined: Self = StObject.set(x, "currentLineWidth", js.undefined)
       
-      @scala.inline
-      def setCurrentMiterLimit(value: Double): Self = StObject.set(x, "currentMiterLimit", value.asInstanceOf[js.Any])
+      inline def setCurrentMiterLimit(value: Double): Self = StObject.set(x, "currentMiterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentMiterLimitUndefined: Self = StObject.set(x, "currentMiterLimit", js.undefined)
+      inline def setCurrentMiterLimitUndefined: Self = StObject.set(x, "currentMiterLimit", js.undefined)
       
-      @scala.inline
-      def setCurrentStrokeStyle(value: ColorLike): Self = StObject.set(x, "currentStrokeStyle", value.asInstanceOf[js.Any])
+      inline def setCurrentStrokeStyle(value: ColorLike): Self = StObject.set(x, "currentStrokeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentStrokeStyleUndefined: Self = StObject.set(x, "currentStrokeStyle", js.undefined)
+      inline def setCurrentStrokeStyleUndefined: Self = StObject.set(x, "currentStrokeStyle", js.undefined)
       
-      @scala.inline
-      def setFillStyle(value: ColorLike): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+      inline def setFillStyle(value: ColorLike): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
+      inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
       
-      @scala.inline
-      def setLastStroke(value: Double): Self = StObject.set(x, "lastStroke", value.asInstanceOf[js.Any])
+      inline def setLastStroke(value: Double): Self = StObject.set(x, "lastStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastStrokeUndefined: Self = StObject.set(x, "lastStroke", js.undefined)
+      inline def setLastStrokeUndefined: Self = StObject.set(x, "lastStroke", js.undefined)
       
-      @scala.inline
-      def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+      inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+      inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
       
-      @scala.inline
-      def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
+      inline def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
+      inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
+      inline def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
       
-      @scala.inline
-      def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
       
-      @scala.inline
-      def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+      inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+      inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
       
-      @scala.inline
-      def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+      inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+      inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
       
-      @scala.inline
-      def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+      inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
+      inline def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
       
-      @scala.inline
-      def setStrokeStyle(value: ColorLike): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+      inline def setStrokeStyle(value: ColorLike): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+      inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     }
   }
   
@@ -396,26 +342,20 @@ object canvasMod {
   }
   object Label {
     
-    @scala.inline
-    def apply(contextInstructions: js.Array[String | Double], height: Double, width: Double): Label = {
+    inline def apply(contextInstructions: js.Array[String | Double], height: Double, width: Double): Label = {
       val __obj = js.Dynamic.literal(contextInstructions = contextInstructions.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setContextInstructions(value: js.Array[String | Double]): Self = StObject.set(x, "contextInstructions", value.asInstanceOf[js.Any])
+      inline def setContextInstructions(value: js.Array[String | Double]): Self = StObject.set(x, "contextInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextInstructionsVarargs(value: (String | Double)*): Self = StObject.set(x, "contextInstructions", js.Array(value :_*))
+      inline def setContextInstructionsVarargs(value: (String | Double)*): Self = StObject.set(x, "contextInstructions", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,8 +377,7 @@ object canvasMod {
   }
   object StrokeState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lineCap: CanvasLineCap,
       lineDash: js.Array[Double],
       lineDashOffset: Double,
@@ -451,32 +390,23 @@ object canvasMod {
       __obj.asInstanceOf[StrokeState]
     }
     
-    @scala.inline
-    implicit class StrokeStateMutableBuilder[Self <: StrokeState] (val x: Self) extends AnyVal {
+    extension [Self <: StrokeState](x: Self) {
       
-      @scala.inline
-      def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+      inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
+      inline def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
+      inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
       
-      @scala.inline
-      def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+      inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+      inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+      inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyle(value: ColorLike): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+      inline def setStrokeStyle(value: ColorLike): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -504,71 +434,50 @@ object canvasMod {
   }
   object TextState {
     
-    @scala.inline
-    def apply(font: String, textBaseline: String): TextState = {
+    inline def apply(font: String, textBaseline: String): TextState = {
       val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], textBaseline = textBaseline.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextState]
     }
     
-    @scala.inline
-    implicit class TextStateMutableBuilder[Self <: TextState] (val x: Self) extends AnyVal {
+    extension [Self <: TextState](x: Self) {
       
-      @scala.inline
-      def setBackgroundFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "backgroundFill", value.asInstanceOf[js.Any])
+      inline def setBackgroundFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "backgroundFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundFillUndefined: Self = StObject.set(x, "backgroundFill", js.undefined)
+      inline def setBackgroundFillUndefined: Self = StObject.set(x, "backgroundFill", js.undefined)
       
-      @scala.inline
-      def setBackgroundStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "backgroundStroke", value.asInstanceOf[js.Any])
+      inline def setBackgroundStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "backgroundStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundStrokeUndefined: Self = StObject.set(x, "backgroundStroke", js.undefined)
+      inline def setBackgroundStrokeUndefined: Self = StObject.set(x, "backgroundStroke", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
+      inline def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAngleUndefined: Self = StObject.set(x, "maxAngle", js.undefined)
+      inline def setMaxAngleUndefined: Self = StObject.set(x, "maxAngle", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setScale(value: Size): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Size): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+      inline def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
     }
   }
 }

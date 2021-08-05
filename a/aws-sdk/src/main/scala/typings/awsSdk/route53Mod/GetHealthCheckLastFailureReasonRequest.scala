@@ -13,16 +13,13 @@ trait GetHealthCheckLastFailureReasonRequest extends StObject {
 }
 object GetHealthCheckLastFailureReasonRequest {
   
-  @scala.inline
-  def apply(HealthCheckId: HealthCheckId): GetHealthCheckLastFailureReasonRequest = {
+  inline def apply(HealthCheckId: HealthCheckId): GetHealthCheckLastFailureReasonRequest = {
     val __obj = js.Dynamic.literal(HealthCheckId = HealthCheckId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHealthCheckLastFailureReasonRequest]
   }
   
-  @scala.inline
-  implicit class GetHealthCheckLastFailureReasonRequestMutableBuilder[Self <: GetHealthCheckLastFailureReasonRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHealthCheckLastFailureReasonRequest](x: Self) {
     
-    @scala.inline
-    def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
+    inline def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
   }
 }

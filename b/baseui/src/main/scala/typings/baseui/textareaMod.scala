@@ -38,20 +38,15 @@ object textareaMod {
     @js.native
     val ^ : ADJOINED = js.native
     
-    @scala.inline
-    implicit class ADJOINEDMutableBuilder[Self <: ADJOINED] (val x: Self) extends AnyVal {
+    extension [Self <: ADJOINED](x: Self) {
       
-      @scala.inline
-      def setBoth(value: both): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
+      inline def setBoth(value: both): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: none): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+      inline def setNone(value: none): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,17 +64,13 @@ object textareaMod {
     @js.native
     val ^ : SIZE = js.native
     
-    @scala.inline
-    implicit class SIZEMutableBuilder[Self <: SIZE] (val x: Self) extends AnyVal {
+    extension [Self <: SIZE](x: Self) {
       
-      @scala.inline
-      def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,32 +119,24 @@ object textareaMod {
   }
   object StatefulTextareaProps {
     
-    @scala.inline
-    def apply(): StatefulTextareaProps = {
+    inline def apply(): StatefulTextareaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulTextareaProps]
     }
     
-    @scala.inline
-    implicit class StatefulTextareaPropsMutableBuilder[Self <: StatefulTextareaProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulTextareaProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: scala.Nothing | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: scala.Nothing | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
   
@@ -162,8 +145,7 @@ object textareaMod {
        with BaseInputProps[HTMLTextAreaElement]
   object TextareaProps {
     
-    @scala.inline
-    def apply(): TextareaProps = {
+    inline def apply(): TextareaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextareaProps]
     }

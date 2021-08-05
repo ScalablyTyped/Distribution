@@ -23,31 +23,23 @@ trait CancelMLTaskRunResponse extends StObject {
 }
 object CancelMLTaskRunResponse {
   
-  @scala.inline
-  def apply(): CancelMLTaskRunResponse = {
+  inline def apply(): CancelMLTaskRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelMLTaskRunResponse]
   }
   
-  @scala.inline
-  implicit class CancelMLTaskRunResponseMutableBuilder[Self <: CancelMLTaskRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelMLTaskRunResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
+    inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
+    inline def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
+    inline def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
   }
 }

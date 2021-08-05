@@ -93,8 +93,7 @@ object adapterMod {
   }
   object MDCTabScrollerAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       addScrollAreaClass: String => Unit,
       computeHorizontalScrollbarHeight: () => Double,
@@ -114,50 +113,35 @@ object adapterMod {
       __obj.asInstanceOf[MDCTabScrollerAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTabScrollerAdapterMutableBuilder[Self <: MDCTabScrollerAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabScrollerAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddScrollAreaClass(value: String => Unit): Self = StObject.set(x, "addScrollAreaClass", js.Any.fromFunction1(value))
+      inline def setAddScrollAreaClass(value: String => Unit): Self = StObject.set(x, "addScrollAreaClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComputeHorizontalScrollbarHeight(value: () => Double): Self = StObject.set(x, "computeHorizontalScrollbarHeight", js.Any.fromFunction0(value))
+      inline def setComputeHorizontalScrollbarHeight(value: () => Double): Self = StObject.set(x, "computeHorizontalScrollbarHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComputeScrollAreaClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollAreaClientRect", js.Any.fromFunction0(value))
+      inline def setComputeScrollAreaClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollAreaClientRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComputeScrollContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollContentClientRect", js.Any.fromFunction0(value))
+      inline def setComputeScrollContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollContentClientRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEventTargetMatchesSelector(value: (EventTarget, String) => Boolean): Self = StObject.set(x, "eventTargetMatchesSelector", js.Any.fromFunction2(value))
+      inline def setEventTargetMatchesSelector(value: (EventTarget, String) => Boolean): Self = StObject.set(x, "eventTargetMatchesSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetScrollAreaOffsetWidth(value: () => Double): Self = StObject.set(x, "getScrollAreaOffsetWidth", js.Any.fromFunction0(value))
+      inline def setGetScrollAreaOffsetWidth(value: () => Double): Self = StObject.set(x, "getScrollAreaOffsetWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollAreaScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollAreaScrollLeft", js.Any.fromFunction0(value))
+      inline def setGetScrollAreaScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollAreaScrollLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollContentOffsetWidth(value: () => Double): Self = StObject.set(x, "getScrollContentOffsetWidth", js.Any.fromFunction0(value))
+      inline def setGetScrollContentOffsetWidth(value: () => Double): Self = StObject.set(x, "getScrollContentOffsetWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollContentStyleValue(value: String => String): Self = StObject.set(x, "getScrollContentStyleValue", js.Any.fromFunction1(value))
+      inline def setGetScrollContentStyleValue(value: String => String): Self = StObject.set(x, "getScrollContentStyleValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetScrollAreaScrollLeft(value: Double => Unit): Self = StObject.set(x, "setScrollAreaScrollLeft", js.Any.fromFunction1(value))
+      inline def setSetScrollAreaScrollLeft(value: Double => Unit): Self = StObject.set(x, "setScrollAreaScrollLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetScrollAreaStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setScrollAreaStyleProperty", js.Any.fromFunction2(value))
+      inline def setSetScrollAreaStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setScrollAreaStyleProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetScrollContentStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setScrollContentStyleProperty", js.Any.fromFunction2(value))
+      inline def setSetScrollContentStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setScrollContentStyleProperty", js.Any.fromFunction2(value))
     }
   }
 }

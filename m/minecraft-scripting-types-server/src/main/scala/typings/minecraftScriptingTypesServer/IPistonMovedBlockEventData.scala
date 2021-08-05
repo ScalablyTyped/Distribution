@@ -27,22 +27,17 @@ trait IPistonMovedBlockEventData extends StObject {
 }
 object IPistonMovedBlockEventData {
   
-  @scala.inline
-  def apply(block_position: VectorXYZ, piston_action: String, piston_position: VectorXYZ): IPistonMovedBlockEventData = {
+  inline def apply(block_position: VectorXYZ, piston_action: String, piston_position: VectorXYZ): IPistonMovedBlockEventData = {
     val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], piston_action = piston_action.asInstanceOf[js.Any], piston_position = piston_position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPistonMovedBlockEventData]
   }
   
-  @scala.inline
-  implicit class IPistonMovedBlockEventDataMutableBuilder[Self <: IPistonMovedBlockEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IPistonMovedBlockEventData](x: Self) {
     
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
+    inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPiston_action(value: String): Self = StObject.set(x, "piston_action", value.asInstanceOf[js.Any])
+    inline def setPiston_action(value: String): Self = StObject.set(x, "piston_action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPiston_position(value: VectorXYZ): Self = StObject.set(x, "piston_position", value.asInstanceOf[js.Any])
+    inline def setPiston_position(value: VectorXYZ): Self = StObject.set(x, "piston_position", value.asInstanceOf[js.Any])
   }
 }

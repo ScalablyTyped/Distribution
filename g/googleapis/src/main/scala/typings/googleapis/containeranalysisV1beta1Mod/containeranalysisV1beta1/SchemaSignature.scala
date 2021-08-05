@@ -53,25 +53,19 @@ trait SchemaSignature extends StObject {
 }
 object SchemaSignature {
   
-  @scala.inline
-  def apply(): SchemaSignature = {
+  inline def apply(): SchemaSignature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignature]
   }
   
-  @scala.inline
-  implicit class SchemaSignatureMutableBuilder[Self <: SchemaSignature] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignature](x: Self) {
     
-    @scala.inline
-    def setPublicKeyId(value: String): Self = StObject.set(x, "publicKeyId", value.asInstanceOf[js.Any])
+    inline def setPublicKeyId(value: String): Self = StObject.set(x, "publicKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyIdUndefined: Self = StObject.set(x, "publicKeyId", js.undefined)
+    inline def setPublicKeyIdUndefined: Self = StObject.set(x, "publicKeyId", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

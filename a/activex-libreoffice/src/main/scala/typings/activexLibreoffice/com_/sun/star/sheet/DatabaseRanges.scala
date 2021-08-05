@@ -21,8 +21,7 @@ trait DatabaseRanges
      with XIndexAccess
 object DatabaseRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

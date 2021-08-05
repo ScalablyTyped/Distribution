@@ -15,19 +15,15 @@ trait UpdateConfigurationSetTrackingOptionsRequest extends StObject {
 }
 object UpdateConfigurationSetTrackingOptionsRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName, TrackingOptions: TrackingOptions): UpdateConfigurationSetTrackingOptionsRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName, TrackingOptions: TrackingOptions): UpdateConfigurationSetTrackingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], TrackingOptions = TrackingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationSetTrackingOptionsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationSetTrackingOptionsRequestMutableBuilder[Self <: UpdateConfigurationSetTrackingOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationSetTrackingOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
+    inline def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
   }
 }

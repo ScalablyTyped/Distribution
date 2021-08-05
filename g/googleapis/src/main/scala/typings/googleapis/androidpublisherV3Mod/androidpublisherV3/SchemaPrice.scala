@@ -19,25 +19,19 @@ trait SchemaPrice extends StObject {
 }
 object SchemaPrice {
   
-  @scala.inline
-  def apply(): SchemaPrice = {
+  inline def apply(): SchemaPrice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPrice]
   }
   
-  @scala.inline
-  implicit class SchemaPriceMutableBuilder[Self <: SchemaPrice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPrice](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setPriceMicros(value: String): Self = StObject.set(x, "priceMicros", value.asInstanceOf[js.Any])
+    inline def setPriceMicros(value: String): Self = StObject.set(x, "priceMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceMicrosUndefined: Self = StObject.set(x, "priceMicros", js.undefined)
+    inline def setPriceMicrosUndefined: Self = StObject.set(x, "priceMicros", js.undefined)
   }
 }

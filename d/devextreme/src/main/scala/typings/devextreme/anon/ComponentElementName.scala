@@ -16,31 +16,23 @@ trait ComponentElementName extends StObject {
 }
 object ComponentElementName {
   
-  @scala.inline
-  def apply(): ComponentElementName = {
+  inline def apply(): ComponentElementName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentElementName]
   }
   
-  @scala.inline
-  implicit class ComponentElementNameMutableBuilder[Self <: ComponentElementName] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentElementName](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxGantt): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxGantt): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

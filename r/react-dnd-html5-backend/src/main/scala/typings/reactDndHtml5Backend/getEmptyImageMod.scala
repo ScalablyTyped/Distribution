@@ -11,6 +11,5 @@ object getEmptyImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEmptyImage(): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmptyImage")().asInstanceOf[HTMLImageElement]
+  inline def getEmptyImage(): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmptyImage")().asInstanceOf[HTMLImageElement]
 }

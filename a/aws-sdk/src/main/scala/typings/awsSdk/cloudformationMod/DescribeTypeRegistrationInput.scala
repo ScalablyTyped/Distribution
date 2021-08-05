@@ -13,16 +13,13 @@ trait DescribeTypeRegistrationInput extends StObject {
 }
 object DescribeTypeRegistrationInput {
   
-  @scala.inline
-  def apply(RegistrationToken: RegistrationToken): DescribeTypeRegistrationInput = {
+  inline def apply(RegistrationToken: RegistrationToken): DescribeTypeRegistrationInput = {
     val __obj = js.Dynamic.literal(RegistrationToken = RegistrationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTypeRegistrationInput]
   }
   
-  @scala.inline
-  implicit class DescribeTypeRegistrationInputMutableBuilder[Self <: DescribeTypeRegistrationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTypeRegistrationInput](x: Self) {
     
-    @scala.inline
-    def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
+    inline def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
   }
 }

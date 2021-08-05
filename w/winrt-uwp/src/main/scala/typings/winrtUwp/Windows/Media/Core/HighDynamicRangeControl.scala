@@ -12,16 +12,13 @@ trait HighDynamicRangeControl extends StObject {
 }
 object HighDynamicRangeControl {
   
-  @scala.inline
-  def apply(enabled: Boolean): HighDynamicRangeControl = {
+  inline def apply(enabled: Boolean): HighDynamicRangeControl = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighDynamicRangeControl]
   }
   
-  @scala.inline
-  implicit class HighDynamicRangeControlMutableBuilder[Self <: HighDynamicRangeControl] (val x: Self) extends AnyVal {
+  extension [Self <: HighDynamicRangeControl](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

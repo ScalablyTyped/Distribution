@@ -31,34 +31,24 @@ object WindowAttribute {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BORDER: `16` = 16.asInstanceOf[`16`]
+    inline def BORDER: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def CLOSEABLE: `128` = 128.asInstanceOf[`128`]
+    inline def CLOSEABLE: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def FULLSIZE: `2` = 2.asInstanceOf[`2`]
+    inline def FULLSIZE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MINSIZE: `8` = 8.asInstanceOf[`8`]
+    inline def MINSIZE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def MOVEABLE: `64` = 64.asInstanceOf[`64`]
+    inline def MOVEABLE: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def NODECORATION: `512` = 512.asInstanceOf[`512`]
+    inline def NODECORATION: `512` = 512.asInstanceOf[`512`]
     
-    @scala.inline
-    def OPTIMUMSIZE: `4` = 4.asInstanceOf[`4`]
+    inline def OPTIMUMSIZE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def SHOW: `1` = 1.asInstanceOf[`1`]
+    inline def SHOW: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SIZEABLE: `32` = 32.asInstanceOf[`32`]
+    inline def SIZEABLE: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def SYSTEMDEPENDENT: `256` = 256.asInstanceOf[`256`]
+    inline def SYSTEMDEPENDENT: `256` = 256.asInstanceOf[`256`]
   }
 }

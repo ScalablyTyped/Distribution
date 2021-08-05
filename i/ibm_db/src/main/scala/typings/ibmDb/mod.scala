@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Database]
-  @scala.inline
-  def default(options: Options): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Database]
+  inline def default(): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Database]
+  inline def default(options: Options): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Database]
   
   @JSImport("ibm_db", "Database")
   @js.native
@@ -355,14 +353,12 @@ object mod {
   @JSImport("ibm_db", "FETCH_ARRAY")
   @js.native
   def FETCH_ARRAY: String = js.native
-  @scala.inline
-  def FETCH_ARRAY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FETCH_ARRAY")(x.asInstanceOf[js.Any])
+  inline def FETCH_ARRAY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FETCH_ARRAY")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "FETCH_OBJECT")
   @js.native
   def FETCH_OBJECT: String = js.native
-  @scala.inline
-  def FETCH_OBJECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FETCH_OBJECT")(x.asInstanceOf[js.Any])
+  inline def FETCH_OBJECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FETCH_OBJECT")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "ODBC")
   @js.native
@@ -497,32 +493,27 @@ object mod {
   @JSImport("ibm_db", "SQL_DESTROY")
   @js.native
   def SQL_DESTROY: String = js.native
-  @scala.inline
-  def SQL_DESTROY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_DESTROY")(x.asInstanceOf[js.Any])
+  inline def SQL_DESTROY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_DESTROY")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "SQL_DROP")
   @js.native
   def SQL_DROP: String = js.native
-  @scala.inline
-  def SQL_DROP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_DROP")(x.asInstanceOf[js.Any])
+  inline def SQL_DROP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_DROP")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "SQL_RESET_PARAMS")
   @js.native
   def SQL_RESET_PARAMS: String = js.native
-  @scala.inline
-  def SQL_RESET_PARAMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_RESET_PARAMS")(x.asInstanceOf[js.Any])
+  inline def SQL_RESET_PARAMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_RESET_PARAMS")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "SQL_UNBIND")
   @js.native
   def SQL_UNBIND: String = js.native
-  @scala.inline
-  def SQL_UNBIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_UNBIND")(x.asInstanceOf[js.Any])
+  inline def SQL_UNBIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQL_UNBIND")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "SQSQL_CLOSE")
   @js.native
   def SQSQL_CLOSE: String = js.native
-  @scala.inline
-  def SQSQL_CLOSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQSQL_CLOSE")(x.asInstanceOf[js.Any])
+  inline def SQSQL_CLOSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQSQL_CLOSE")(x.asInstanceOf[js.Any])
   
   @JSImport("ibm_db", "SimpleQueue")
   @js.native
@@ -539,40 +530,25 @@ object mod {
     def push(fn: js.Function2[/* foo */ js.Any, /* bar */ js.Any, Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def close(db: Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def close(db: Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def debug(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def debug(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getElapsedTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getElapsedTime")().asInstanceOf[String]
+  inline def getElapsedTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getElapsedTime")().asInstanceOf[String]
   
-  @scala.inline
-  def open(connStr: String): js.Promise[Database] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Database]]
-  @scala.inline
-  def open(connStr: String, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(connStr: String, options: Options): js.Promise[Database] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Database]]
-  @scala.inline
-  def open(connStr: String, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(connStr: ConnStr): js.Promise[Database] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Database]]
-  @scala.inline
-  def open(connStr: ConnStr, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(connStr: ConnStr, options: Options): js.Promise[Database] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Database]]
-  @scala.inline
-  def open(connStr: ConnStr, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(connStr: String): js.Promise[Database] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Database]]
+  inline def open(connStr: String, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(connStr: String, options: Options): js.Promise[Database] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Database]]
+  inline def open(connStr: String, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(connStr: ConnStr): js.Promise[Database] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Database]]
+  inline def open(connStr: ConnStr, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(connStr: ConnStr, options: Options): js.Promise[Database] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Database]]
+  inline def open(connStr: ConnStr, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def openSync(connStr: String): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any]).asInstanceOf[Database]
-  @scala.inline
-  def openSync(connStr: String, options: Options): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Database]
-  @scala.inline
-  def openSync(connStr: ConnStr): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any]).asInstanceOf[Database]
-  @scala.inline
-  def openSync(connStr: ConnStr, options: Options): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Database]
+  inline def openSync(connStr: String): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any]).asInstanceOf[Database]
+  inline def openSync(connStr: String, options: Options): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Database]
+  inline def openSync(connStr: ConnStr): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any]).asInstanceOf[Database]
+  inline def openSync(connStr: ConnStr, options: Options): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Database]
   
   trait ConnStr extends StObject {
     
@@ -590,8 +566,7 @@ object mod {
   }
   object ConnStr {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DATABASE: String,
       HOSTNAME: String,
       PORT: Double | String,
@@ -603,26 +578,19 @@ object mod {
       __obj.asInstanceOf[ConnStr]
     }
     
-    @scala.inline
-    implicit class ConnStrMutableBuilder[Self <: ConnStr] (val x: Self) extends AnyVal {
+    extension [Self <: ConnStr](x: Self) {
       
-      @scala.inline
-      def setDATABASE(value: String): Self = StObject.set(x, "DATABASE", value.asInstanceOf[js.Any])
+      inline def setDATABASE(value: String): Self = StObject.set(x, "DATABASE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOSTNAME(value: String): Self = StObject.set(x, "HOSTNAME", value.asInstanceOf[js.Any])
+      inline def setHOSTNAME(value: String): Self = StObject.set(x, "HOSTNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPORT(value: Double | String): Self = StObject.set(x, "PORT", value.asInstanceOf[js.Any])
+      inline def setPORT(value: Double | String): Self = StObject.set(x, "PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROTOCOL(value: String): Self = StObject.set(x, "PROTOCOL", value.asInstanceOf[js.Any])
+      inline def setPROTOCOL(value: String): Self = StObject.set(x, "PROTOCOL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPWD(value: String): Self = StObject.set(x, "PWD", value.asInstanceOf[js.Any])
+      inline def setPWD(value: String): Self = StObject.set(x, "PWD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
+      inline def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -640,41 +608,30 @@ object mod {
   }
   object DescribeObject {
     
-    @scala.inline
-    def apply(database: String): DescribeObject = {
+    inline def apply(database: String): DescribeObject = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeObject]
     }
     
-    @scala.inline
-    implicit class DescribeObjectMutableBuilder[Self <: DescribeObject] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeObject](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -694,59 +651,42 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutNull: Self = StObject.set(x, "connectTimeout", null)
+      inline def setConnectTimeoutNull: Self = StObject.set(x, "connectTimeout", null)
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+      inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
       
-      @scala.inline
-      def setFetchMode(value: Double): Self = StObject.set(x, "fetchMode", value.asInstanceOf[js.Any])
+      inline def setFetchMode(value: Double): Self = StObject.set(x, "fetchMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchModeNull: Self = StObject.set(x, "fetchMode", null)
+      inline def setFetchModeNull: Self = StObject.set(x, "fetchMode", null)
       
-      @scala.inline
-      def setFetchModeUndefined: Self = StObject.set(x, "fetchMode", js.undefined)
+      inline def setFetchModeUndefined: Self = StObject.set(x, "fetchMode", js.undefined)
       
-      @scala.inline
-      def setOdbc(value: ODBC): Self = StObject.set(x, "odbc", value.asInstanceOf[js.Any])
+      inline def setOdbc(value: ODBC): Self = StObject.set(x, "odbc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOdbcUndefined: Self = StObject.set(x, "odbc", js.undefined)
+      inline def setOdbcUndefined: Self = StObject.set(x, "odbc", js.undefined)
       
-      @scala.inline
-      def setQueue(value: SimpleQueue | js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: SimpleQueue | js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+      inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
       
-      @scala.inline
-      def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))
       
-      @scala.inline
-      def setSystemNaming(value: Boolean): Self = StObject.set(x, "systemNaming", value.asInstanceOf[js.Any])
+      inline def setSystemNaming(value: Boolean): Self = StObject.set(x, "systemNaming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemNamingUndefined: Self = StObject.set(x, "systemNaming", js.undefined)
+      inline def setSystemNamingUndefined: Self = StObject.set(x, "systemNaming", js.undefined)
     }
   }
   
@@ -764,44 +704,32 @@ object mod {
   }
   object PoolOptions {
     
-    @scala.inline
-    def apply(): PoolOptions = {
+    inline def apply(): PoolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PoolOptions]
     }
     
-    @scala.inline
-    implicit class PoolOptionsMutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PoolOptions](x: Self) {
       
-      @scala.inline
-      def setAutoCleanIdle(value: Boolean): Self = StObject.set(x, "autoCleanIdle", value.asInstanceOf[js.Any])
+      inline def setAutoCleanIdle(value: Boolean): Self = StObject.set(x, "autoCleanIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCleanIdleUndefined: Self = StObject.set(x, "autoCleanIdle", js.undefined)
+      inline def setAutoCleanIdleUndefined: Self = StObject.set(x, "autoCleanIdle", js.undefined)
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setMaxPoolSize(value: Double): Self = StObject.set(x, "maxPoolSize", value.asInstanceOf[js.Any])
+      inline def setMaxPoolSize(value: Double): Self = StObject.set(x, "maxPoolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPoolSizeUndefined: Self = StObject.set(x, "maxPoolSize", js.undefined)
+      inline def setMaxPoolSizeUndefined: Self = StObject.set(x, "maxPoolSize", js.undefined)
       
-      @scala.inline
-      def setSystemNaming(value: js.Any): Self = StObject.set(x, "systemNaming", value.asInstanceOf[js.Any])
+      inline def setSystemNaming(value: js.Any): Self = StObject.set(x, "systemNaming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemNamingUndefined: Self = StObject.set(x, "systemNaming", js.undefined)
+      inline def setSystemNamingUndefined: Self = StObject.set(x, "systemNaming", js.undefined)
     }
   }
 }

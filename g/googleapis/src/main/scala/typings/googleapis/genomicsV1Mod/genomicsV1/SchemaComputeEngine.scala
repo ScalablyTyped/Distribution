@@ -32,40 +32,29 @@ trait SchemaComputeEngine extends StObject {
 }
 object SchemaComputeEngine {
   
-  @scala.inline
-  def apply(): SchemaComputeEngine = {
+  inline def apply(): SchemaComputeEngine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaComputeEngine]
   }
   
-  @scala.inline
-  implicit class SchemaComputeEngineMutableBuilder[Self <: SchemaComputeEngine] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaComputeEngine](x: Self) {
     
-    @scala.inline
-    def setDiskNames(value: js.Array[String]): Self = StObject.set(x, "diskNames", value.asInstanceOf[js.Any])
+    inline def setDiskNames(value: js.Array[String]): Self = StObject.set(x, "diskNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskNamesUndefined: Self = StObject.set(x, "diskNames", js.undefined)
+    inline def setDiskNamesUndefined: Self = StObject.set(x, "diskNames", js.undefined)
     
-    @scala.inline
-    def setDiskNamesVarargs(value: String*): Self = StObject.set(x, "diskNames", js.Array(value :_*))
+    inline def setDiskNamesVarargs(value: String*): Self = StObject.set(x, "diskNames", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

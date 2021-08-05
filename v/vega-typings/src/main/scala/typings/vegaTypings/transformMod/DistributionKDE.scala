@@ -20,31 +20,23 @@ trait DistributionKDE
 }
 object DistributionKDE {
   
-  @scala.inline
-  def apply(field: String | TransformField): DistributionKDE = {
+  inline def apply(field: String | TransformField): DistributionKDE = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = "kde")
     __obj.asInstanceOf[DistributionKDE]
   }
   
-  @scala.inline
-  implicit class DistributionKDEMutableBuilder[Self <: DistributionKDE] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionKDE](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: DataName): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: DataName): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setFunction(value: kde): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: kde): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
   }
 }

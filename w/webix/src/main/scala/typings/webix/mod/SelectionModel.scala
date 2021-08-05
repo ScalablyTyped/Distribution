@@ -30,6 +30,5 @@ trait SelectionModel extends StObject {
 }
 object SelectionModel {
   
-  @scala.inline
-  def apply: SelectionModel = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectionModel").asInstanceOf[SelectionModel]
+  inline def apply: SelectionModel = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectionModel").asInstanceOf[SelectionModel]
 }

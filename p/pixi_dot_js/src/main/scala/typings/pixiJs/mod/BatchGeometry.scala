@@ -23,7 +23,7 @@ class BatchGeometry ()
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _buffer: typings.pixiJs.PIXI.Buffer = js.native
   
   /**
@@ -32,6 +32,6 @@ class BatchGeometry ()
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _indexBuffer: typings.pixiJs.PIXI.Buffer = js.native
 }

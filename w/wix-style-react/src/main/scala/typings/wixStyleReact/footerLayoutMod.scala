@@ -50,98 +50,68 @@ object footerLayoutMod extends Shortcut {
   }
   object FooterLayoutProps {
     
-    @scala.inline
-    def apply(): FooterLayoutProps = {
+    inline def apply(): FooterLayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FooterLayoutProps]
     }
     
-    @scala.inline
-    implicit class FooterLayoutPropsMutableBuilder[Self <: FooterLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: FooterLayoutProps](x: Self) {
       
-      @scala.inline
-      def setBottomChildren(value: ReactNode): Self = StObject.set(x, "bottomChildren", value.asInstanceOf[js.Any])
+      inline def setBottomChildren(value: ReactNode): Self = StObject.set(x, "bottomChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomChildrenUndefined: Self = StObject.set(x, "bottomChildren", js.undefined)
+      inline def setBottomChildrenUndefined: Self = StObject.set(x, "bottomChildren", js.undefined)
       
-      @scala.inline
-      def setButtonsHeight(value: String): Self = StObject.set(x, "buttonsHeight", value.asInstanceOf[js.Any])
+      inline def setButtonsHeight(value: String): Self = StObject.set(x, "buttonsHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsHeightUndefined: Self = StObject.set(x, "buttonsHeight", js.undefined)
+      inline def setButtonsHeightUndefined: Self = StObject.set(x, "buttonsHeight", js.undefined)
       
-      @scala.inline
-      def setCancelPrefixIcon(value: IconElement): Self = StObject.set(x, "cancelPrefixIcon", value.asInstanceOf[js.Any])
+      inline def setCancelPrefixIcon(value: IconElement): Self = StObject.set(x, "cancelPrefixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelPrefixIconUndefined: Self = StObject.set(x, "cancelPrefixIcon", js.undefined)
+      inline def setCancelPrefixIconUndefined: Self = StObject.set(x, "cancelPrefixIcon", js.undefined)
       
-      @scala.inline
-      def setCancelSuffixIcon(value: IconElement): Self = StObject.set(x, "cancelSuffixIcon", value.asInstanceOf[js.Any])
+      inline def setCancelSuffixIcon(value: IconElement): Self = StObject.set(x, "cancelSuffixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelSuffixIconUndefined: Self = StObject.set(x, "cancelSuffixIcon", js.undefined)
+      inline def setCancelSuffixIconUndefined: Self = StObject.set(x, "cancelSuffixIcon", js.undefined)
       
-      @scala.inline
-      def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+      inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
       
-      @scala.inline
-      def setConfirmPrefixIcon(value: IconElement): Self = StObject.set(x, "confirmPrefixIcon", value.asInstanceOf[js.Any])
+      inline def setConfirmPrefixIcon(value: IconElement): Self = StObject.set(x, "confirmPrefixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmPrefixIconUndefined: Self = StObject.set(x, "confirmPrefixIcon", js.undefined)
+      inline def setConfirmPrefixIconUndefined: Self = StObject.set(x, "confirmPrefixIcon", js.undefined)
       
-      @scala.inline
-      def setConfirmSuffixIcon(value: IconElement): Self = StObject.set(x, "confirmSuffixIcon", value.asInstanceOf[js.Any])
+      inline def setConfirmSuffixIcon(value: IconElement): Self = StObject.set(x, "confirmSuffixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmSuffixIconUndefined: Self = StObject.set(x, "confirmSuffixIcon", js.undefined)
+      inline def setConfirmSuffixIconUndefined: Self = StObject.set(x, "confirmSuffixIcon", js.undefined)
       
-      @scala.inline
-      def setConfirmText(value: ReactNode): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
+      inline def setConfirmText(value: ReactNode): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
+      inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
       
-      @scala.inline
-      def setEnableCancel(value: Boolean): Self = StObject.set(x, "enableCancel", value.asInstanceOf[js.Any])
+      inline def setEnableCancel(value: Boolean): Self = StObject.set(x, "enableCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCancelUndefined: Self = StObject.set(x, "enableCancel", js.undefined)
+      inline def setEnableCancelUndefined: Self = StObject.set(x, "enableCancel", js.undefined)
       
-      @scala.inline
-      def setEnableOk(value: Boolean): Self = StObject.set(x, "enableOk", value.asInstanceOf[js.Any])
+      inline def setEnableOk(value: Boolean): Self = StObject.set(x, "enableOk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableOkUndefined: Self = StObject.set(x, "enableOk", js.undefined)
+      inline def setEnableOkUndefined: Self = StObject.set(x, "enableOk", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnOk(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+      inline def setOnOk(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
+      inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
       
-      @scala.inline
-      def setSideActions(value: ReactNode): Self = StObject.set(x, "sideActions", value.asInstanceOf[js.Any])
+      inline def setSideActions(value: ReactNode): Self = StObject.set(x, "sideActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideActionsUndefined: Self = StObject.set(x, "sideActions", js.undefined)
+      inline def setSideActionsUndefined: Self = StObject.set(x, "sideActions", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   

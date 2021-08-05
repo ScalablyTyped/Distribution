@@ -42,49 +42,35 @@ trait SchemaDistributionUpdate extends StObject {
 }
 object SchemaDistributionUpdate {
   
-  @scala.inline
-  def apply(): SchemaDistributionUpdate = {
+  inline def apply(): SchemaDistributionUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDistributionUpdate]
   }
   
-  @scala.inline
-  implicit class SchemaDistributionUpdateMutableBuilder[Self <: SchemaDistributionUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDistributionUpdate](x: Self) {
     
-    @scala.inline
-    def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setHistogram(value: SchemaHistogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
+    inline def setHistogram(value: SchemaHistogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
+    inline def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
     
-    @scala.inline
-    def setMax(value: SchemaSplitInt64): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: SchemaSplitInt64): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: SchemaSplitInt64): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: SchemaSplitInt64): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setSum(value: SchemaSplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: SchemaSplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
+    inline def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
+    inline def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

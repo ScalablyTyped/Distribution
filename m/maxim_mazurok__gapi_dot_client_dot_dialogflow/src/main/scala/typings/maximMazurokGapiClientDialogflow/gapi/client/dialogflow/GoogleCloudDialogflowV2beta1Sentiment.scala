@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowV2beta1Sentiment extends StObject {
 }
 object GoogleCloudDialogflowV2beta1Sentiment {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1Sentiment = {
+  inline def apply(): GoogleCloudDialogflowV2beta1Sentiment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1Sentiment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1SentimentMutableBuilder[Self <: GoogleCloudDialogflowV2beta1Sentiment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1Sentiment](x: Self) {
     
-    @scala.inline
-    def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+    inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
+    inline def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

@@ -22,26 +22,20 @@ trait OrgsSetMembershipForUserEndpoint extends StObject {
 }
 object OrgsSetMembershipForUserEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, username: String): OrgsSetMembershipForUserEndpoint = {
+  inline def apply(org_ : String, username: String): OrgsSetMembershipForUserEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsSetMembershipForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsSetMembershipForUserEndpointMutableBuilder[Self <: OrgsSetMembershipForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsSetMembershipForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: admin | member): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: admin | member): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

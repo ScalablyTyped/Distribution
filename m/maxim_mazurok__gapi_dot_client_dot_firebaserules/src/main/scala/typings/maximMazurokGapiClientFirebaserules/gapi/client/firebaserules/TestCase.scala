@@ -31,52 +31,37 @@ trait TestCase extends StObject {
 }
 object TestCase {
   
-  @scala.inline
-  def apply(): TestCase = {
+  inline def apply(): TestCase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestCase]
   }
   
-  @scala.inline
-  implicit class TestCaseMutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
+  extension [Self <: TestCase](x: Self) {
     
-    @scala.inline
-    def setExpectation(value: String): Self = StObject.set(x, "expectation", value.asInstanceOf[js.Any])
+    inline def setExpectation(value: String): Self = StObject.set(x, "expectation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectationUndefined: Self = StObject.set(x, "expectation", js.undefined)
+    inline def setExpectationUndefined: Self = StObject.set(x, "expectation", js.undefined)
     
-    @scala.inline
-    def setExpressionReportLevel(value: String): Self = StObject.set(x, "expressionReportLevel", value.asInstanceOf[js.Any])
+    inline def setExpressionReportLevel(value: String): Self = StObject.set(x, "expressionReportLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionReportLevelUndefined: Self = StObject.set(x, "expressionReportLevel", js.undefined)
+    inline def setExpressionReportLevelUndefined: Self = StObject.set(x, "expressionReportLevel", js.undefined)
     
-    @scala.inline
-    def setFunctionMocks(value: js.Array[FunctionMock]): Self = StObject.set(x, "functionMocks", value.asInstanceOf[js.Any])
+    inline def setFunctionMocks(value: js.Array[FunctionMock]): Self = StObject.set(x, "functionMocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
+    inline def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
     
-    @scala.inline
-    def setFunctionMocksVarargs(value: FunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
+    inline def setFunctionMocksVarargs(value: FunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
     
-    @scala.inline
-    def setPathEncoding(value: String): Self = StObject.set(x, "pathEncoding", value.asInstanceOf[js.Any])
+    inline def setPathEncoding(value: String): Self = StObject.set(x, "pathEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathEncodingUndefined: Self = StObject.set(x, "pathEncoding", js.undefined)
+    inline def setPathEncodingUndefined: Self = StObject.set(x, "pathEncoding", js.undefined)
     
-    @scala.inline
-    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ object topSites {
   @JSImport("sinon-chrome", "topSites.get")
   @js.native
   def get: SinonChromeStub = js.native
-  @scala.inline
-  def get_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+  inline def get_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
 }

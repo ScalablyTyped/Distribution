@@ -17,31 +17,23 @@ trait AllocationSpecificSKUReservation extends StObject {
 }
 object AllocationSpecificSKUReservation {
   
-  @scala.inline
-  def apply(): AllocationSpecificSKUReservation = {
+  inline def apply(): AllocationSpecificSKUReservation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocationSpecificSKUReservation]
   }
   
-  @scala.inline
-  implicit class AllocationSpecificSKUReservationMutableBuilder[Self <: AllocationSpecificSKUReservation] (val x: Self) extends AnyVal {
+  extension [Self <: AllocationSpecificSKUReservation](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setInUseCount(value: String): Self = StObject.set(x, "inUseCount", value.asInstanceOf[js.Any])
+    inline def setInUseCount(value: String): Self = StObject.set(x, "inUseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUseCountUndefined: Self = StObject.set(x, "inUseCount", js.undefined)
+    inline def setInUseCountUndefined: Self = StObject.set(x, "inUseCount", js.undefined)
     
-    @scala.inline
-    def setInstanceProperties(value: AllocationSpecificSKUAllocationReservedInstanceProperties): Self = StObject.set(x, "instanceProperties", value.asInstanceOf[js.Any])
+    inline def setInstanceProperties(value: AllocationSpecificSKUAllocationReservedInstanceProperties): Self = StObject.set(x, "instanceProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancePropertiesUndefined: Self = StObject.set(x, "instanceProperties", js.undefined)
+    inline def setInstancePropertiesUndefined: Self = StObject.set(x, "instanceProperties", js.undefined)
   }
 }

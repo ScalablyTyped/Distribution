@@ -10,16 +10,13 @@ trait SentimentAnalyzer extends StObject {
 }
 object SentimentAnalyzer {
   
-  @scala.inline
-  def apply(getSentiment: js.Array[String] => Double): SentimentAnalyzer = {
+  inline def apply(getSentiment: js.Array[String] => Double): SentimentAnalyzer = {
     val __obj = js.Dynamic.literal(getSentiment = js.Any.fromFunction1(getSentiment))
     __obj.asInstanceOf[SentimentAnalyzer]
   }
   
-  @scala.inline
-  implicit class SentimentAnalyzerMutableBuilder[Self <: SentimentAnalyzer] (val x: Self) extends AnyVal {
+  extension [Self <: SentimentAnalyzer](x: Self) {
     
-    @scala.inline
-    def setGetSentiment(value: js.Array[String] => Double): Self = StObject.set(x, "getSentiment", js.Any.fromFunction1(value))
+    inline def setGetSentiment(value: js.Array[String] => Double): Self = StObject.set(x, "getSentiment", js.Any.fromFunction1(value))
   }
 }

@@ -22,8 +22,7 @@ trait OrientationSensorReading extends StObject {
 }
 object OrientationSensorReading {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     quaternion: SensorQuaternion,
     rotationMatrix: SensorRotationMatrix,
     timestamp: Date,
@@ -33,19 +32,14 @@ object OrientationSensorReading {
     __obj.asInstanceOf[OrientationSensorReading]
   }
   
-  @scala.inline
-  implicit class OrientationSensorReadingMutableBuilder[Self <: OrientationSensorReading] (val x: Self) extends AnyVal {
+  extension [Self <: OrientationSensorReading](x: Self) {
     
-    @scala.inline
-    def setQuaternion(value: SensorQuaternion): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
+    inline def setQuaternion(value: SensorQuaternion): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationMatrix(value: SensorRotationMatrix): Self = StObject.set(x, "rotationMatrix", value.asInstanceOf[js.Any])
+    inline def setRotationMatrix(value: SensorRotationMatrix): Self = StObject.set(x, "rotationMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYawAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "yawAccuracy", value.asInstanceOf[js.Any])
+    inline def setYawAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "yawAccuracy", value.asInstanceOf[js.Any])
   }
 }

@@ -38,25 +38,20 @@ object mod {
     /* 0 */ val None: typings.windowsProcessTree.mod.ProcessDataFlag.None & Double = js.native
   }
   
-  @scala.inline
-  def getProcessCpuUsage(
+  inline def getProcessCpuUsage(
     processList: js.Array[ProcessInfo],
     callback: js.Function1[/* processListWithCpu */ js.Array[ProcessCpuInfo], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessCpuUsage")(processList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getProcessList(rootPid: Double, callback: js.Function1[/* processList */ js.Array[ProcessInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessList")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getProcessList(
+  inline def getProcessList(rootPid: Double, callback: js.Function1[/* processList */ js.Array[ProcessInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessList")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getProcessList(
     rootPid: Double,
     callback: js.Function1[/* processList */ js.Array[ProcessInfo], Unit],
     flags: ProcessDataFlag
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessList")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessTree")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit], flags: ProcessDataFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessTree")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessTree")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit], flags: ProcessDataFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessTree")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ProcessCpuInfo
     extends StObject
@@ -66,20 +61,16 @@ object mod {
   }
   object ProcessCpuInfo {
     
-    @scala.inline
-    def apply(name: String, pid: Double, ppid: Double): ProcessCpuInfo = {
+    inline def apply(name: String, pid: Double, ppid: Double): ProcessCpuInfo = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessCpuInfo]
     }
     
-    @scala.inline
-    implicit class ProcessCpuInfoMutableBuilder[Self <: ProcessCpuInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessCpuInfo](x: Self) {
       
-      @scala.inline
-      def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+      inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     }
   }
   
@@ -103,35 +94,26 @@ object mod {
   }
   object ProcessInfo {
     
-    @scala.inline
-    def apply(name: String, pid: Double, ppid: Double): ProcessInfo = {
+    inline def apply(name: String, pid: Double, ppid: Double): ProcessInfo = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessInfo]
     }
     
-    @scala.inline
-    implicit class ProcessInfoMutableBuilder[Self <: ProcessInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessInfo](x: Self) {
       
-      @scala.inline
-      def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
+      inline def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
+      inline def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
+      inline def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,38 +131,28 @@ object mod {
   }
   object ProcessTreeNode {
     
-    @scala.inline
-    def apply(children: js.Array[ProcessTreeNode], name: String, pid: Double): ProcessTreeNode = {
+    inline def apply(children: js.Array[ProcessTreeNode], name: String, pid: Double): ProcessTreeNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessTreeNode]
     }
     
-    @scala.inline
-    implicit class ProcessTreeNodeMutableBuilder[Self <: ProcessTreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessTreeNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ProcessTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ProcessTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ProcessTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ProcessTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
+      inline def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
+      inline def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     }
   }
 }

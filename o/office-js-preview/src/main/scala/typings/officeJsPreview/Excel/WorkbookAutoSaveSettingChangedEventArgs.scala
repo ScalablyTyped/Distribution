@@ -23,17 +23,14 @@ trait WorkbookAutoSaveSettingChangedEventArgs extends StObject {
 }
 object WorkbookAutoSaveSettingChangedEventArgs {
   
-  @scala.inline
-  def apply(): WorkbookAutoSaveSettingChangedEventArgs = {
+  inline def apply(): WorkbookAutoSaveSettingChangedEventArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("WorkbookAutoSaveSettingChanged")
     __obj.asInstanceOf[WorkbookAutoSaveSettingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class WorkbookAutoSaveSettingChangedEventArgsMutableBuilder[Self <: WorkbookAutoSaveSettingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookAutoSaveSettingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setType(value: WorkbookAutoSaveSettingChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WorkbookAutoSaveSettingChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

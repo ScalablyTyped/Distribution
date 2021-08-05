@@ -24,8 +24,7 @@ trait ISmsDevice extends StObject {
 }
 object ISmsDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accountPhoneNumber: String,
     calculateLength: SmsTextMessage => SmsEncodedLength,
     cellularClass: CellularClass,
@@ -39,31 +38,22 @@ object ISmsDevice {
     __obj.asInstanceOf[ISmsDevice]
   }
   
-  @scala.inline
-  implicit class ISmsDeviceMutableBuilder[Self <: ISmsDevice] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsDevice](x: Self) {
     
-    @scala.inline
-    def setAccountPhoneNumber(value: String): Self = StObject.set(x, "accountPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setAccountPhoneNumber(value: String): Self = StObject.set(x, "accountPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculateLength(value: SmsTextMessage => SmsEncodedLength): Self = StObject.set(x, "calculateLength", js.Any.fromFunction1(value))
+    inline def setCalculateLength(value: SmsTextMessage => SmsEncodedLength): Self = StObject.set(x, "calculateLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
+    inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatus(value: SmsDeviceStatus): Self = StObject.set(x, "deviceStatus", value.asInstanceOf[js.Any])
+    inline def setDeviceStatus(value: SmsDeviceStatus): Self = StObject.set(x, "deviceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageStore(value: SmsDeviceMessageStore): Self = StObject.set(x, "messageStore", value.asInstanceOf[js.Any])
+    inline def setMessageStore(value: SmsDeviceMessageStore): Self = StObject.set(x, "messageStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsmsdevicestatuschanged(value: js.Any): Self = StObject.set(x, "onsmsdevicestatuschanged", value.asInstanceOf[js.Any])
+    inline def setOnsmsdevicestatuschanged(value: js.Any): Self = StObject.set(x, "onsmsdevicestatuschanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsmsmessagereceived(value: js.Any): Self = StObject.set(x, "onsmsmessagereceived", value.asInstanceOf[js.Any])
+    inline def setOnsmsmessagereceived(value: js.Any): Self = StObject.set(x, "onsmsmessagereceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMessageAsync(value: ISmsMessage => SendSmsMessageOperation): Self = StObject.set(x, "sendMessageAsync", js.Any.fromFunction1(value))
+    inline def setSendMessageAsync(value: ISmsMessage => SendSmsMessageOperation): Self = StObject.set(x, "sendMessageAsync", js.Any.fromFunction1(value))
   }
 }

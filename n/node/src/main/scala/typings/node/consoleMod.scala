@@ -235,41 +235,30 @@ object consoleMod extends Shortcut {
       }
       object ConsoleConstructorOptions {
         
-        @scala.inline
-        def apply(stdout: WritableStream): ConsoleConstructorOptions = {
+        inline def apply(stdout: WritableStream): ConsoleConstructorOptions = {
           val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
           __obj.asInstanceOf[ConsoleConstructorOptions]
         }
         
-        @scala.inline
-        implicit class ConsoleConstructorOptionsMutableBuilder[Self <: ConsoleConstructorOptions] (val x: Self) extends AnyVal {
+        extension [Self <: ConsoleConstructorOptions](x: Self) {
           
-          @scala.inline
-          def setColorMode(value: Boolean | auto): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
+          inline def setColorMode(value: Boolean | auto): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColorModeUndefined: Self = StObject.set(x, "colorMode", js.undefined)
+          inline def setColorModeUndefined: Self = StObject.set(x, "colorMode", js.undefined)
           
-          @scala.inline
-          def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+          inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+          inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
           
-          @scala.inline
-          def setInspectOptions(value: typings.node.NodeJS.InspectOptions): Self = StObject.set(x, "inspectOptions", value.asInstanceOf[js.Any])
+          inline def setInspectOptions(value: typings.node.NodeJS.InspectOptions): Self = StObject.set(x, "inspectOptions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInspectOptionsUndefined: Self = StObject.set(x, "inspectOptions", js.undefined)
+          inline def setInspectOptionsUndefined: Self = StObject.set(x, "inspectOptions", js.undefined)
           
-          @scala.inline
-          def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+          inline def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+          inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
           
-          @scala.inline
-          def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+          inline def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
         }
       }
       
@@ -279,17 +268,14 @@ object consoleMod extends Shortcut {
       }
       object Global {
         
-        @scala.inline
-        def apply(console: Console_): Global = {
+        inline def apply(console: Console_): Global = {
           val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any])
           __obj.asInstanceOf[Global]
         }
         
-        @scala.inline
-        implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+        extension [Self <: Global](x: Self) {
           
-          @scala.inline
-          def setConsole(value: Console_): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+          inline def setConsole(value: Console_): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
         }
       }
     }

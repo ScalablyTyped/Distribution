@@ -49,8 +49,7 @@ trait XChartData
 }
 object XChartData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NotANumber: Double,
     acquire: () => Unit,
     addChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
@@ -64,22 +63,16 @@ object XChartData {
     __obj.asInstanceOf[XChartData]
   }
   
-  @scala.inline
-  implicit class XChartDataMutableBuilder[Self <: XChartData] (val x: Self) extends AnyVal {
+  extension [Self <: XChartData](x: Self) {
     
-    @scala.inline
-    def setAddChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = StObject.set(x, "addChartDataChangeEventListener", js.Any.fromFunction1(value))
+    inline def setAddChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = StObject.set(x, "addChartDataChangeEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNotANumber(value: () => Double): Self = StObject.set(x, "getNotANumber", js.Any.fromFunction0(value))
+    inline def setGetNotANumber(value: () => Double): Self = StObject.set(x, "getNotANumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNotANumber(value: Double => Boolean): Self = StObject.set(x, "isNotANumber", js.Any.fromFunction1(value))
+    inline def setIsNotANumber(value: Double => Boolean): Self = StObject.set(x, "isNotANumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotANumber(value: Double): Self = StObject.set(x, "NotANumber", value.asInstanceOf[js.Any])
+    inline def setNotANumber(value: Double): Self = StObject.set(x, "NotANumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = StObject.set(x, "removeChartDataChangeEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = StObject.set(x, "removeChartDataChangeEventListener", js.Any.fromFunction1(value))
   }
 }

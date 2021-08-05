@@ -13,19 +13,15 @@ trait WindowOptions extends StObject {
 }
 object WindowOptions {
   
-  @scala.inline
-  def apply(): WindowOptions = {
+  inline def apply(): WindowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowOptions]
   }
   
-  @scala.inline
-  implicit class WindowOptionsMutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WindowOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
   }
 }

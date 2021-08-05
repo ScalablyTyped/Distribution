@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.OptionGroup")
 @js.native
-class OptionGroup protected ()
+/* private */ class OptionGroup ()
   extends StObject
      with typings.activexAccess.Access.OptionGroup

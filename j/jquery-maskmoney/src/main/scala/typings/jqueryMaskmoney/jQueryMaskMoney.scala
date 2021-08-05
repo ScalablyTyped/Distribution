@@ -50,62 +50,44 @@ object jQueryMaskMoney {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAffixesStay(value: Boolean): Self = StObject.set(x, "affixesStay", value.asInstanceOf[js.Any])
+      inline def setAffixesStay(value: Boolean): Self = StObject.set(x, "affixesStay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAffixesStayUndefined: Self = StObject.set(x, "affixesStay", js.undefined)
+      inline def setAffixesStayUndefined: Self = StObject.set(x, "affixesStay", js.undefined)
       
-      @scala.inline
-      def setAllowNegative(value: Boolean): Self = StObject.set(x, "allowNegative", value.asInstanceOf[js.Any])
+      inline def setAllowNegative(value: Boolean): Self = StObject.set(x, "allowNegative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNegativeUndefined: Self = StObject.set(x, "allowNegative", js.undefined)
+      inline def setAllowNegativeUndefined: Self = StObject.set(x, "allowNegative", js.undefined)
       
-      @scala.inline
-      def setAllowZero(value: Boolean): Self = StObject.set(x, "allowZero", value.asInstanceOf[js.Any])
+      inline def setAllowZero(value: Boolean): Self = StObject.set(x, "allowZero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowZeroUndefined: Self = StObject.set(x, "allowZero", js.undefined)
+      inline def setAllowZeroUndefined: Self = StObject.set(x, "allowZero", js.undefined)
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
+      inline def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandsUndefined: Self = StObject.set(x, "thousands", js.undefined)
+      inline def setThousandsUndefined: Self = StObject.set(x, "thousands", js.undefined)
     }
   }
 }

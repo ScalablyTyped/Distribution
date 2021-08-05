@@ -48,19 +48,13 @@ object mod {
     def this(num: Double, denom: Double) = this()
   }
   
-  @scala.inline
-  def parse(input: String): typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression]
+  inline def parse(input: String): typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.algebraJs.mod.algebra.js_.Equation | typings.algebraJs.mod.algebra.js_.Expression]
   
-  @scala.inline
-  def toTex(input: js.Array[typings.algebraJs.mod.algebra.js_.Fraction | js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTex(input: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTex(input: typings.algebraJs.mod.algebra.js_.Equation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTex(input: typings.algebraJs.mod.algebra.js_.Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTex(input: typings.algebraJs.mod.algebra.js_.Fraction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTex(input: js.Array[typings.algebraJs.mod.algebra.js_.Fraction | js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTex(input: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTex(input: typings.algebraJs.mod.algebra.js_.Equation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTex(input: typings.algebraJs.mod.algebra.js_.Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTex(input: typings.algebraJs.mod.algebra.js_.Fraction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Term
     extends StObject
@@ -74,8 +68,7 @@ object mod {
   }
   object Term {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coefficient: () => typings.algebraJs.mod.algebra.js_.Fraction,
       coefficients: js.Array[typings.algebraJs.mod.algebra.js_.Fraction],
       variables: js.Array[Variable]
@@ -84,23 +77,17 @@ object mod {
       __obj.asInstanceOf[Term]
     }
     
-    @scala.inline
-    implicit class TermMutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
+    extension [Self <: Term](x: Self) {
       
-      @scala.inline
-      def setCoefficient(value: () => typings.algebraJs.mod.algebra.js_.Fraction): Self = StObject.set(x, "coefficient", js.Any.fromFunction0(value))
+      inline def setCoefficient(value: () => typings.algebraJs.mod.algebra.js_.Fraction): Self = StObject.set(x, "coefficient", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCoefficients(value: js.Array[typings.algebraJs.mod.algebra.js_.Fraction]): Self = StObject.set(x, "coefficients", value.asInstanceOf[js.Any])
+      inline def setCoefficients(value: js.Array[typings.algebraJs.mod.algebra.js_.Fraction]): Self = StObject.set(x, "coefficients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoefficientsVarargs(value: typings.algebraJs.mod.algebra.js_.Fraction*): Self = StObject.set(x, "coefficients", js.Array(value :_*))
+      inline def setCoefficientsVarargs(value: typings.algebraJs.mod.algebra.js_.Fraction*): Self = StObject.set(x, "coefficients", js.Array(value :_*))
       
-      @scala.inline
-      def setVariables(value: js.Array[Variable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Array[Variable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
     }
   }
   
@@ -118,17 +105,14 @@ object mod {
   }
   object Variable {
     
-    @scala.inline
-    def apply(variable: String): Variable = {
+    inline def apply(variable: String): Variable = {
       val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Variable]
     }
     
-    @scala.inline
-    implicit class VariableMutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
+    extension [Self <: Variable](x: Self) {
       
-      @scala.inline
-      def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+      inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,8 +132,7 @@ object mod {
       }
       object Equation {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           lhs: typings.algebraJs.mod.algebra.js_.Expression,
           rhs: typings.algebraJs.mod.algebra.js_.Expression,
           solveFor: String => typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction])
@@ -158,17 +141,13 @@ object mod {
           __obj.asInstanceOf[typings.algebraJs.mod.algebra.js_.Equation]
         }
         
-        @scala.inline
-        implicit class EquationMutableBuilder[Self <: typings.algebraJs.mod.algebra.js_.Equation] (val x: Self) extends AnyVal {
+        extension [Self <: typings.algebraJs.mod.algebra.js_.Equation](x: Self) {
           
-          @scala.inline
-          def setLhs(value: typings.algebraJs.mod.algebra.js_.Expression): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
+          inline def setLhs(value: typings.algebraJs.mod.algebra.js_.Expression): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRhs(value: typings.algebraJs.mod.algebra.js_.Expression): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
+          inline def setRhs(value: typings.algebraJs.mod.algebra.js_.Expression): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSolveFor(
+          inline def setSolveFor(
             value: String => typings.algebraJs.mod.algebra.js_.Fraction | (js.Array[Double | typings.algebraJs.mod.algebra.js_.Fraction])
           ): Self = StObject.set(x, "solveFor", js.Any.fromFunction1(value))
         }

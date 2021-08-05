@@ -25,8 +25,7 @@ trait XYDiagram
      with LineDiagram
 object XYDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     ConstantErrorHigh: Double,

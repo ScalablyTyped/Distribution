@@ -33,8 +33,7 @@ trait XTemplateInstance
 }
 object XTemplateInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TemplateName: String,
     acquire: () => Unit,
     getTemplateName: () => String,
@@ -45,13 +44,10 @@ object XTemplateInstance {
     __obj.asInstanceOf[XTemplateInstance]
   }
   
-  @scala.inline
-  implicit class XTemplateInstanceMutableBuilder[Self <: XTemplateInstance] (val x: Self) extends AnyVal {
+  extension [Self <: XTemplateInstance](x: Self) {
     
-    @scala.inline
-    def setGetTemplateName(value: () => String): Self = StObject.set(x, "getTemplateName", js.Any.fromFunction0(value))
+    inline def setGetTemplateName(value: () => String): Self = StObject.set(x, "getTemplateName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTemplateName(value: String): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: String): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

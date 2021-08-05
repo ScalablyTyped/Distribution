@@ -14,25 +14,19 @@ trait Mixin extends StObject {
 }
 object Mixin {
   
-  @scala.inline
-  def apply(): Mixin = {
+  inline def apply(): Mixin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mixin]
   }
   
-  @scala.inline
-  implicit class MixinMutableBuilder[Self <: Mixin] (val x: Self) extends AnyVal {
+  extension [Self <: Mixin](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -21,43 +21,31 @@ trait SVGCoreAttributes extends StObject {
 }
 object SVGCoreAttributes {
   
-  @scala.inline
-  def apply(): SVGCoreAttributes = {
+  inline def apply(): SVGCoreAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGCoreAttributes]
   }
   
-  @scala.inline
-  implicit class SVGCoreAttributesMutableBuilder[Self <: SVGCoreAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGCoreAttributes](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+    inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+    inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
     
-    @scala.inline
-    def setXmlColonbase(value: String): Self = StObject.set(x, "xml:base", value.asInstanceOf[js.Any])
+    inline def setXmlColonbase(value: String): Self = StObject.set(x, "xml:base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlColonbaseUndefined: Self = StObject.set(x, "xml:base", js.undefined)
+    inline def setXmlColonbaseUndefined: Self = StObject.set(x, "xml:base", js.undefined)
     
-    @scala.inline
-    def setXmlColonlang(value: String): Self = StObject.set(x, "xml:lang", value.asInstanceOf[js.Any])
+    inline def setXmlColonlang(value: String): Self = StObject.set(x, "xml:lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlColonlangUndefined: Self = StObject.set(x, "xml:lang", js.undefined)
+    inline def setXmlColonlangUndefined: Self = StObject.set(x, "xml:lang", js.undefined)
     
-    @scala.inline
-    def setXmlColonspace(value: String): Self = StObject.set(x, "xml:space", value.asInstanceOf[js.Any])
+    inline def setXmlColonspace(value: String): Self = StObject.set(x, "xml:space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlColonspaceUndefined: Self = StObject.set(x, "xml:space", js.undefined)
+    inline def setXmlColonspaceUndefined: Self = StObject.set(x, "xml:space", js.undefined)
   }
 }

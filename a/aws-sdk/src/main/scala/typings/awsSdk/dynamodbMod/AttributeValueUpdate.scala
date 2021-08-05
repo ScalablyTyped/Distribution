@@ -18,25 +18,19 @@ trait AttributeValueUpdate extends StObject {
 }
 object AttributeValueUpdate {
   
-  @scala.inline
-  def apply(): AttributeValueUpdate = {
+  inline def apply(): AttributeValueUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeValueUpdate]
   }
   
-  @scala.inline
-  implicit class AttributeValueUpdateMutableBuilder[Self <: AttributeValueUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeValueUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: AttributeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: AttributeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

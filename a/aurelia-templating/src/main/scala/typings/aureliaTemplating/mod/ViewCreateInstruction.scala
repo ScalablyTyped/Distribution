@@ -18,25 +18,19 @@ trait ViewCreateInstruction extends StObject {
 }
 object ViewCreateInstruction {
   
-  @scala.inline
-  def apply(): ViewCreateInstruction = {
+  inline def apply(): ViewCreateInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewCreateInstruction]
   }
   
-  @scala.inline
-  implicit class ViewCreateInstructionMutableBuilder[Self <: ViewCreateInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: ViewCreateInstruction](x: Self) {
     
-    @scala.inline
-    def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
+    inline def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
+    inline def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
     
-    @scala.inline
-    def setPartReplacements(value: js.Object): Self = StObject.set(x, "partReplacements", value.asInstanceOf[js.Any])
+    inline def setPartReplacements(value: js.Object): Self = StObject.set(x, "partReplacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartReplacementsUndefined: Self = StObject.set(x, "partReplacements", js.undefined)
+    inline def setPartReplacementsUndefined: Self = StObject.set(x, "partReplacements", js.undefined)
   }
 }

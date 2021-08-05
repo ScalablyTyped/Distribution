@@ -37,11 +37,9 @@ object GetBlockRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): GetBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockRequest]
+  inline def deserializeBinary(bytes: Uint8Array): GetBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockRequest]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: GetBlockRequest, reader: BinaryReader): GetBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetBlockRequest]
+  inline def deserializeBinaryFromReader(message: GetBlockRequest, reader: BinaryReader): GetBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetBlockRequest]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.extensions")
   @js.native
@@ -50,17 +48,13 @@ object GetBlockRequest {
   @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: GetBlockRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: GetBlockRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: GetBlockRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: GetBlockRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -70,8 +64,7 @@ object GetBlockRequest {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxBlockSize: String,
       transactionsList: js.Array[typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject]
     ): AsObject = {
@@ -79,17 +72,13 @@ object GetBlockRequest {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setMaxBlockSize(value: String): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
+      inline def setMaxBlockSize(value: String): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsList(value: js.Array[typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject]): Self = StObject.set(x, "transactionsList", value.asInstanceOf[js.Any])
+      inline def setTransactionsList(value: js.Array[typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject]): Self = StObject.set(x, "transactionsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsListVarargs(value: typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value :_*))
+      inline def setTransactionsListVarargs(value: typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value :_*))
     }
   }
 }

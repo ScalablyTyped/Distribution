@@ -23,8 +23,7 @@ trait XDatabaseAccessListener
 }
 object XDatabaseAccessListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveConnectionClosing: EventObject => Boolean,
     connectionChanged: EventObject => Unit,
@@ -37,16 +36,12 @@ object XDatabaseAccessListener {
     __obj.asInstanceOf[XDatabaseAccessListener]
   }
   
-  @scala.inline
-  implicit class XDatabaseAccessListenerMutableBuilder[Self <: XDatabaseAccessListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseAccessListener](x: Self) {
     
-    @scala.inline
-    def setApproveConnectionClosing(value: EventObject => Boolean): Self = StObject.set(x, "approveConnectionClosing", js.Any.fromFunction1(value))
+    inline def setApproveConnectionClosing(value: EventObject => Boolean): Self = StObject.set(x, "approveConnectionClosing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnectionChanged(value: EventObject => Unit): Self = StObject.set(x, "connectionChanged", js.Any.fromFunction1(value))
+    inline def setConnectionChanged(value: EventObject => Unit): Self = StObject.set(x, "connectionChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnectionClosing(value: EventObject => Unit): Self = StObject.set(x, "connectionClosing", js.Any.fromFunction1(value))
+    inline def setConnectionClosing(value: EventObject => Unit): Self = StObject.set(x, "connectionClosing", js.Any.fromFunction1(value))
   }
 }

@@ -11,19 +11,15 @@ trait ConfigFile extends StObject {
 }
 object ConfigFile {
   
-  @scala.inline
-  def apply(): ConfigFile = {
+  inline def apply(): ConfigFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigFile]
   }
   
-  @scala.inline
-  implicit class ConfigFileMutableBuilder[Self <: ConfigFile] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigFile](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

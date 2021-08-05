@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeomAdjustType extends StObject
 object GeomAdjustType {
   
-  @scala.inline
-  def dodge: typings.bizcharts.bizchartsStrings.dodge = "dodge".asInstanceOf[typings.bizcharts.bizchartsStrings.dodge]
+  inline def dodge: typings.bizcharts.bizchartsStrings.dodge = "dodge".asInstanceOf[typings.bizcharts.bizchartsStrings.dodge]
   
-  @scala.inline
-  def jitter: typings.bizcharts.bizchartsStrings.jitter = "jitter".asInstanceOf[typings.bizcharts.bizchartsStrings.jitter]
+  inline def jitter: typings.bizcharts.bizchartsStrings.jitter = "jitter".asInstanceOf[typings.bizcharts.bizchartsStrings.jitter]
   
-  @scala.inline
-  def stack: typings.bizcharts.bizchartsStrings.stack = "stack".asInstanceOf[typings.bizcharts.bizchartsStrings.stack]
+  inline def stack: typings.bizcharts.bizchartsStrings.stack = "stack".asInstanceOf[typings.bizcharts.bizchartsStrings.stack]
   
-  @scala.inline
-  def symmetric: typings.bizcharts.bizchartsStrings.symmetric = "symmetric".asInstanceOf[typings.bizcharts.bizchartsStrings.symmetric]
+  inline def symmetric: typings.bizcharts.bizchartsStrings.symmetric = "symmetric".asInstanceOf[typings.bizcharts.bizchartsStrings.symmetric]
 }

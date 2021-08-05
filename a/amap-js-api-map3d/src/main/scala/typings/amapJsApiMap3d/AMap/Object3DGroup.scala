@@ -17,8 +17,7 @@ trait Object3DGroup[C /* <: Object3D */]
 }
 object Object3DGroup {
   
-  @scala.inline
-  def apply[C /* <: Object3D */](
+  inline def apply[C /* <: Object3D */](
     DEPTH_TEST: Boolean,
     add: C => Unit,
     children: js.Array[C],
@@ -34,19 +33,14 @@ object Object3DGroup {
     __obj.asInstanceOf[Object3DGroup[C]]
   }
   
-  @scala.inline
-  implicit class Object3DGroupMutableBuilder[Self <: Object3DGroup[?], C /* <: Object3D */] (val x: Self & Object3DGroup[C]) extends AnyVal {
+  extension [Self <: Object3DGroup[?], C /* <: Object3D */](x: Self & Object3DGroup[C]) {
     
-    @scala.inline
-    def setAdd(value: C => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: C => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildren(value: js.Array[C]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[C]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: C*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: C*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setRemove(value: C => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: C => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

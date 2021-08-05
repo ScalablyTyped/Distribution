@@ -58,133 +58,91 @@ trait Post
 }
 object Post {
   
-  @scala.inline
-  def apply(): Post = {
+  inline def apply(): Post = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Post]
   }
   
-  @scala.inline
-  implicit class PostMutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
+  extension [Self <: Post](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: NullableOption[js.Array[Attachment]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: NullableOption[js.Array[Attachment]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsNull: Self = StObject.set(x, "attachments", null)
+    inline def setAttachmentsNull: Self = StObject.set(x, "attachments", null)
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyNull: Self = StObject.set(x, "body", null)
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setConversationId(value: NullableOption[String]): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
+    inline def setConversationId(value: NullableOption[String]): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationIdNull: Self = StObject.set(x, "conversationId", null)
+    inline def setConversationIdNull: Self = StObject.set(x, "conversationId", null)
     
-    @scala.inline
-    def setConversationIdUndefined: Self = StObject.set(x, "conversationId", js.undefined)
+    inline def setConversationIdUndefined: Self = StObject.set(x, "conversationId", js.undefined)
     
-    @scala.inline
-    def setConversationThreadId(value: NullableOption[String]): Self = StObject.set(x, "conversationThreadId", value.asInstanceOf[js.Any])
+    inline def setConversationThreadId(value: NullableOption[String]): Self = StObject.set(x, "conversationThreadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationThreadIdNull: Self = StObject.set(x, "conversationThreadId", null)
+    inline def setConversationThreadIdNull: Self = StObject.set(x, "conversationThreadId", null)
     
-    @scala.inline
-    def setConversationThreadIdUndefined: Self = StObject.set(x, "conversationThreadId", js.undefined)
+    inline def setConversationThreadIdUndefined: Self = StObject.set(x, "conversationThreadId", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
+    inline def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setFrom(value: Recipient): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Recipient): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
+    inline def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
+    inline def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
-    @scala.inline
-    def setInReplyTo(value: NullableOption[Post]): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+    inline def setInReplyTo(value: NullableOption[Post]): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInReplyToNull: Self = StObject.set(x, "inReplyTo", null)
+    inline def setInReplyToNull: Self = StObject.set(x, "inReplyTo", null)
     
-    @scala.inline
-    def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
+    inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
     
-    @scala.inline
-    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    inline def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
+    inline def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
     
-    @scala.inline
-    def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
+    inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    @scala.inline
-    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setNewParticipants(value: js.Array[Recipient]): Self = StObject.set(x, "newParticipants", value.asInstanceOf[js.Any])
+    inline def setNewParticipants(value: js.Array[Recipient]): Self = StObject.set(x, "newParticipants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewParticipantsUndefined: Self = StObject.set(x, "newParticipants", js.undefined)
+    inline def setNewParticipantsUndefined: Self = StObject.set(x, "newParticipants", js.undefined)
     
-    @scala.inline
-    def setNewParticipantsVarargs(value: Recipient*): Self = StObject.set(x, "newParticipants", js.Array(value :_*))
+    inline def setNewParticipantsVarargs(value: Recipient*): Self = StObject.set(x, "newParticipants", js.Array(value :_*))
     
-    @scala.inline
-    def setReceivedDateTime(value: String): Self = StObject.set(x, "receivedDateTime", value.asInstanceOf[js.Any])
+    inline def setReceivedDateTime(value: String): Self = StObject.set(x, "receivedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedDateTimeUndefined: Self = StObject.set(x, "receivedDateTime", js.undefined)
+    inline def setReceivedDateTimeUndefined: Self = StObject.set(x, "receivedDateTime", js.undefined)
     
-    @scala.inline
-    def setSender(value: NullableOption[Recipient]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: NullableOption[Recipient]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderNull: Self = StObject.set(x, "sender", null)
+    inline def setSenderNull: Self = StObject.set(x, "sender", null)
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
-    @scala.inline
-    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
+    inline def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
+    inline def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
     
-    @scala.inline
-    def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
+    inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    @scala.inline
-    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
   }
 }

@@ -10,8 +10,7 @@ trait GetBucketCorsOutput
      with typings.awsSdkClientS3Browser.typesGetBucketCorsOutputMod.GetBucketCorsOutput
 object GetBucketCorsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketCorsOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketCorsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketCorsOutput]
   }

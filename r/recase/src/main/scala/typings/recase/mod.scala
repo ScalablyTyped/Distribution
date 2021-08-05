@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(opts: Exceptions): Recase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Recase]
+  inline def create(opts: Exceptions): Recase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Recase]
   
   trait Recase extends StObject {
     
@@ -22,20 +21,16 @@ object mod {
   }
   object Recase {
     
-    @scala.inline
-    def apply(camelCopy: js.Any => js.Any, snakeCopy: js.Any => js.Any): Recase = {
+    inline def apply(camelCopy: js.Any => js.Any, snakeCopy: js.Any => js.Any): Recase = {
       val __obj = js.Dynamic.literal(camelCopy = js.Any.fromFunction1(camelCopy), snakeCopy = js.Any.fromFunction1(snakeCopy))
       __obj.asInstanceOf[Recase]
     }
     
-    @scala.inline
-    implicit class RecaseMutableBuilder[Self <: Recase] (val x: Self) extends AnyVal {
+    extension [Self <: Recase](x: Self) {
       
-      @scala.inline
-      def setCamelCopy(value: js.Any => js.Any): Self = StObject.set(x, "camelCopy", js.Any.fromFunction1(value))
+      inline def setCamelCopy(value: js.Any => js.Any): Self = StObject.set(x, "camelCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSnakeCopy(value: js.Any => js.Any): Self = StObject.set(x, "snakeCopy", js.Any.fromFunction1(value))
+      inline def setSnakeCopy(value: js.Any => js.Any): Self = StObject.set(x, "snakeCopy", js.Any.fromFunction1(value))
     }
   }
 }

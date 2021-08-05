@@ -11,19 +11,15 @@ trait SasPortalMoveDeploymentRequest extends StObject {
 }
 object SasPortalMoveDeploymentRequest {
   
-  @scala.inline
-  def apply(): SasPortalMoveDeploymentRequest = {
+  inline def apply(): SasPortalMoveDeploymentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalMoveDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalMoveDeploymentRequestMutableBuilder[Self <: SasPortalMoveDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalMoveDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
   }
 }

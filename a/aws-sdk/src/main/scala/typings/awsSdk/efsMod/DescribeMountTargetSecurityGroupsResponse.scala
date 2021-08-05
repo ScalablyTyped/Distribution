@@ -13,19 +13,15 @@ trait DescribeMountTargetSecurityGroupsResponse extends StObject {
 }
 object DescribeMountTargetSecurityGroupsResponse {
   
-  @scala.inline
-  def apply(SecurityGroups: SecurityGroups): DescribeMountTargetSecurityGroupsResponse = {
+  inline def apply(SecurityGroups: SecurityGroups): DescribeMountTargetSecurityGroupsResponse = {
     val __obj = js.Dynamic.literal(SecurityGroups = SecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMountTargetSecurityGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeMountTargetSecurityGroupsResponseMutableBuilder[Self <: DescribeMountTargetSecurityGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMountTargetSecurityGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
   }
 }

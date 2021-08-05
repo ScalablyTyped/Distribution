@@ -13,17 +13,14 @@ trait DictionaryType
 }
 object DictionaryType {
   
-  @scala.inline
-  def apply(name: MapperType, `type`: Value): DictionaryType = {
+  inline def apply(name: MapperType, `type`: Value): DictionaryType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryType]
   }
   
-  @scala.inline
-  implicit class DictionaryTypeMutableBuilder[Self <: DictionaryType] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryType](x: Self) {
     
-    @scala.inline
-    def setType(value: Value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -32,24 +32,19 @@ object expoExpoConnectionOptionsMod {
   }
   object ExpoConnectionOptions {
     
-    @scala.inline
-    def apply(database: String, driver: js.Any): ExpoConnectionOptions = {
+    inline def apply(database: String, driver: js.Any): ExpoConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("expo")
       __obj.asInstanceOf[ExpoConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ExpoConnectionOptionsMutableBuilder[Self <: ExpoConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpoConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: expo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: expo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

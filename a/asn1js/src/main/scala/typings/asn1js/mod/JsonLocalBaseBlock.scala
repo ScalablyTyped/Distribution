@@ -19,8 +19,7 @@ trait JsonLocalBaseBlock extends StObject {
 }
 object JsonLocalBaseBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockLength: Double,
     blockName: String,
     error: String,
@@ -31,25 +30,18 @@ object JsonLocalBaseBlock {
     __obj.asInstanceOf[JsonLocalBaseBlock]
   }
   
-  @scala.inline
-  implicit class JsonLocalBaseBlockMutableBuilder[Self <: JsonLocalBaseBlock] (val x: Self) extends AnyVal {
+  extension [Self <: JsonLocalBaseBlock](x: Self) {
     
-    @scala.inline
-    def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+    inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
+    inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBeforeDecode(value: ArrayBuffer): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
+    inline def setValueBeforeDecode(value: ArrayBuffer): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

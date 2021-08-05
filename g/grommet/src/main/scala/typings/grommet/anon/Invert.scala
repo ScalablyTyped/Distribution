@@ -10,19 +10,15 @@ trait Invert extends StObject {
 }
 object Invert {
   
-  @scala.inline
-  def apply(): Invert = {
+  inline def apply(): Invert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invert]
   }
   
-  @scala.inline
-  implicit class InvertMutableBuilder[Self <: Invert] (val x: Self) extends AnyVal {
+  extension [Self <: Invert](x: Self) {
     
-    @scala.inline
-    def setInvert(value: `3`): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: `3`): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
   }
 }

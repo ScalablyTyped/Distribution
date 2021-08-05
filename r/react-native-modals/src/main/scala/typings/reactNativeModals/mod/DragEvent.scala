@@ -16,25 +16,19 @@ trait DragEvent extends StObject {
 }
 object DragEvent {
   
-  @scala.inline
-  def apply(axis: X, layout: Height): DragEvent = {
+  inline def apply(axis: X, layout: Height): DragEvent = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], swipeDirection = null)
     __obj.asInstanceOf[DragEvent]
   }
   
-  @scala.inline
-  implicit class DragEventMutableBuilder[Self <: DragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DragEvent](x: Self) {
     
-    @scala.inline
-    def setAxis(value: X): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: X): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: Height): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Height): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeDirection(value: String): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
+    inline def setSwipeDirection(value: String): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeDirectionNull: Self = StObject.set(x, "swipeDirection", null)
+    inline def setSwipeDirectionNull: Self = StObject.set(x, "swipeDirection", null)
   }
 }

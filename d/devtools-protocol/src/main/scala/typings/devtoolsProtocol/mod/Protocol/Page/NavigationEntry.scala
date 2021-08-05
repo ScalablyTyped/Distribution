@@ -34,28 +34,21 @@ trait NavigationEntry extends StObject {
 }
 object NavigationEntry {
   
-  @scala.inline
-  def apply(id: integer, title: String, transitionType: TransitionType, url: String, userTypedURL: String): NavigationEntry = {
+  inline def apply(id: integer, title: String, transitionType: TransitionType, url: String, userTypedURL: String): NavigationEntry = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], userTypedURL = userTypedURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationEntry]
   }
   
-  @scala.inline
-  implicit class NavigationEntryMutableBuilder[Self <: NavigationEntry] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationEntry](x: Self) {
     
-    @scala.inline
-    def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
+    inline def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTypedURL(value: String): Self = StObject.set(x, "userTypedURL", value.asInstanceOf[js.Any])
+    inline def setUserTypedURL(value: String): Self = StObject.set(x, "userTypedURL", value.asInstanceOf[js.Any])
   }
 }

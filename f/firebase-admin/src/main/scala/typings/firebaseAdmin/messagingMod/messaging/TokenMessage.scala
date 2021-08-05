@@ -13,16 +13,13 @@ trait TokenMessage
 }
 object TokenMessage {
   
-  @scala.inline
-  def apply(token: String): TokenMessage = {
+  inline def apply(token: String): TokenMessage = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenMessage]
   }
   
-  @scala.inline
-  implicit class TokenMessageMutableBuilder[Self <: TokenMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TokenMessage](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

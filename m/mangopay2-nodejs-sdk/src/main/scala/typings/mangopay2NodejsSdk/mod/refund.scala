@@ -22,35 +22,26 @@ object refund {
   }
   object CreatePayInRefund {
     
-    @scala.inline
-    def apply(AuthorId: String): CreatePayInRefund = {
+    inline def apply(AuthorId: String): CreatePayInRefund = {
       val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreatePayInRefund]
     }
     
-    @scala.inline
-    implicit class CreatePayInRefundMutableBuilder[Self <: CreatePayInRefund] (val x: Self) extends AnyVal {
+    extension [Self <: CreatePayInRefund](x: Self) {
       
-      @scala.inline
-      def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+      inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
+      inline def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedFundsUndefined: Self = StObject.set(x, "DebitedFunds", js.undefined)
+      inline def setDebitedFundsUndefined: Self = StObject.set(x, "DebitedFunds", js.undefined)
       
-      @scala.inline
-      def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
+      inline def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeesUndefined: Self = StObject.set(x, "Fees", js.undefined)
+      inline def setFeesUndefined: Self = StObject.set(x, "Fees", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -62,23 +53,18 @@ object refund {
   }
   object CreateTransferRefund {
     
-    @scala.inline
-    def apply(AuthorId: String): CreateTransferRefund = {
+    inline def apply(AuthorId: String): CreateTransferRefund = {
       val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTransferRefund]
     }
     
-    @scala.inline
-    implicit class CreateTransferRefundMutableBuilder[Self <: CreateTransferRefund] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTransferRefund](x: Self) {
       
-      @scala.inline
-      def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+      inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -109,8 +95,7 @@ object refund {
   }
   object RefundData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AuthorId: String,
       CreationDate: Double,
       CreditedFunds: MoneyData,
@@ -134,20 +119,15 @@ object refund {
       __obj.asInstanceOf[RefundData]
     }
     
-    @scala.inline
-    implicit class RefundDataMutableBuilder[Self <: RefundData] (val x: Self) extends AnyVal {
+    extension [Self <: RefundData](x: Self) {
       
-      @scala.inline
-      def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNature(value: REFUND): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
+      inline def setNature(value: REFUND): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefundReason(value: RefundReason): Self = StObject.set(x, "RefundReason", value.asInstanceOf[js.Any])
+      inline def setRefundReason(value: RefundReason): Self = StObject.set(x, "RefundReason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,17 +137,14 @@ object refund {
   }
   object RefundReason {
     
-    @scala.inline
-    def apply(RefundReasonType: RefundReasonType): RefundReason = {
+    inline def apply(RefundReasonType: RefundReasonType): RefundReason = {
       val __obj = js.Dynamic.literal(RefundReasonType = RefundReasonType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefundReason]
     }
     
-    @scala.inline
-    implicit class RefundReasonMutableBuilder[Self <: RefundReason] (val x: Self) extends AnyVal {
+    extension [Self <: RefundReason](x: Self) {
       
-      @scala.inline
-      def setRefundReasonType(value: RefundReasonType): Self = StObject.set(x, "RefundReasonType", value.asInstanceOf[js.Any])
+      inline def setRefundReasonType(value: RefundReasonType): Self = StObject.set(x, "RefundReasonType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,22 +159,16 @@ object refund {
   trait RefundReasonType extends StObject
   object RefundReasonType {
     
-    @scala.inline
-    def BANKACCOUNT_HAS_BEEN_CLOSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_HAS_BEEN_CLOSED = "BANKACCOUNT_HAS_BEEN_CLOSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_HAS_BEEN_CLOSED]
+    inline def BANKACCOUNT_HAS_BEEN_CLOSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_HAS_BEEN_CLOSED = "BANKACCOUNT_HAS_BEEN_CLOSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_HAS_BEEN_CLOSED]
     
-    @scala.inline
-    def BANKACCOUNT_INCORRECT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_INCORRECT = "BANKACCOUNT_INCORRECT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_INCORRECT]
+    inline def BANKACCOUNT_INCORRECT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_INCORRECT = "BANKACCOUNT_INCORRECT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANKACCOUNT_INCORRECT]
     
-    @scala.inline
-    def INITIALIZED_BY_CLIENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INITIALIZED_BY_CLIENT = "INITIALIZED_BY_CLIENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INITIALIZED_BY_CLIENT]
+    inline def INITIALIZED_BY_CLIENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INITIALIZED_BY_CLIENT = "INITIALIZED_BY_CLIENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INITIALIZED_BY_CLIENT]
     
-    @scala.inline
-    def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
+    inline def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
     
-    @scala.inline
-    def OWNER_DO_NOT_MATCH_BANKACCOUNT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OWNER_DO_NOT_MATCH_BANKACCOUNT = "OWNER_DO_NOT_MATCH_BANKACCOUNT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OWNER_DO_NOT_MATCH_BANKACCOUNT]
+    inline def OWNER_DO_NOT_MATCH_BANKACCOUNT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OWNER_DO_NOT_MATCH_BANKACCOUNT = "OWNER_DO_NOT_MATCH_BANKACCOUNT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OWNER_DO_NOT_MATCH_BANKACCOUNT]
     
-    @scala.inline
-    def WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS = "WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS]
+    inline def WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS = "WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS]
   }
 }

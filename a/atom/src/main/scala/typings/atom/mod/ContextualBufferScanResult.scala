@@ -15,8 +15,7 @@ trait ContextualBufferScanResult
 }
 object ContextualBufferScanResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buffer: TextBuffer,
     leadingContextLines: js.Array[String],
     lineText: String,
@@ -33,19 +32,14 @@ object ContextualBufferScanResult {
     __obj.asInstanceOf[ContextualBufferScanResult]
   }
   
-  @scala.inline
-  implicit class ContextualBufferScanResultMutableBuilder[Self <: ContextualBufferScanResult] (val x: Self) extends AnyVal {
+  extension [Self <: ContextualBufferScanResult](x: Self) {
     
-    @scala.inline
-    def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
+    inline def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingContextLinesVarargs(value: String*): Self = StObject.set(x, "leadingContextLines", js.Array(value :_*))
+    inline def setLeadingContextLinesVarargs(value: String*): Self = StObject.set(x, "leadingContextLines", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailingContextLines(value: js.Array[String]): Self = StObject.set(x, "trailingContextLines", value.asInstanceOf[js.Any])
+    inline def setTrailingContextLines(value: js.Array[String]): Self = StObject.set(x, "trailingContextLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingContextLinesVarargs(value: String*): Self = StObject.set(x, "trailingContextLines", js.Array(value :_*))
+    inline def setTrailingContextLinesVarargs(value: String*): Self = StObject.set(x, "trailingContextLines", js.Array(value :_*))
   }
 }

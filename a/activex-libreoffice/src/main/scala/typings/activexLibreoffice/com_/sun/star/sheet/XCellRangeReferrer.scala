@@ -25,8 +25,7 @@ trait XCellRangeReferrer
 }
 object XCellRangeReferrer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReferredCells: XCellRange,
     acquire: () => Unit,
     getReferredCells: () => XCellRange,
@@ -37,13 +36,10 @@ object XCellRangeReferrer {
     __obj.asInstanceOf[XCellRangeReferrer]
   }
   
-  @scala.inline
-  implicit class XCellRangeReferrerMutableBuilder[Self <: XCellRangeReferrer] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangeReferrer](x: Self) {
     
-    @scala.inline
-    def setGetReferredCells(value: () => XCellRange): Self = StObject.set(x, "getReferredCells", js.Any.fromFunction0(value))
+    inline def setGetReferredCells(value: () => XCellRange): Self = StObject.set(x, "getReferredCells", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReferredCells(value: XCellRange): Self = StObject.set(x, "ReferredCells", value.asInstanceOf[js.Any])
+    inline def setReferredCells(value: XCellRange): Self = StObject.set(x, "ReferredCells", value.asInstanceOf[js.Any])
   }
 }

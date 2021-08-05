@@ -11,8 +11,7 @@ trait CardProps
      with ShadowedComponent
 object CardProps {
   
-  @scala.inline
-  def apply(): CardProps = {
+  inline def apply(): CardProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardProps]
   }

@@ -17,31 +17,23 @@ trait RetryOptions extends StObject {
 }
 object RetryOptions {
   
-  @scala.inline
-  def apply(): RetryOptions = {
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryOptions]
   }
   
-  @scala.inline
-  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RetryOptions](x: Self) {
     
-    @scala.inline
-    def setFixedRetryIntervalInMilliseconds(value: Double): Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setFixedRetryIntervalInMilliseconds(value: Double): Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedRetryIntervalInMillisecondsUndefined: Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", js.undefined)
+    inline def setFixedRetryIntervalInMillisecondsUndefined: Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setMaxRetryAttemptCount(value: Double): Self = StObject.set(x, "MaxRetryAttemptCount", value.asInstanceOf[js.Any])
+    inline def setMaxRetryAttemptCount(value: Double): Self = StObject.set(x, "MaxRetryAttemptCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetryAttemptCountUndefined: Self = StObject.set(x, "MaxRetryAttemptCount", js.undefined)
+    inline def setMaxRetryAttemptCountUndefined: Self = StObject.set(x, "MaxRetryAttemptCount", js.undefined)
     
-    @scala.inline
-    def setMaxWaitTimeInSeconds(value: Double): Self = StObject.set(x, "MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxWaitTimeInSeconds(value: Double): Self = StObject.set(x, "MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWaitTimeInSecondsUndefined: Self = StObject.set(x, "MaxWaitTimeInSeconds", js.undefined)
+    inline def setMaxWaitTimeInSecondsUndefined: Self = StObject.set(x, "MaxWaitTimeInSeconds", js.undefined)
   }
 }

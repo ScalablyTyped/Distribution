@@ -12,19 +12,15 @@ trait ScrollOffset extends StObject {
 }
 object ScrollOffset {
   
-  @scala.inline
-  def apply(scrollLeft: Double, scrollTop: Double): ScrollOffset = {
+  inline def apply(scrollLeft: Double, scrollTop: Double): ScrollOffset = {
     val __obj = js.Dynamic.literal(scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollOffset]
   }
   
-  @scala.inline
-  implicit class ScrollOffsetMutableBuilder[Self <: ScrollOffset] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollOffset](x: Self) {
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

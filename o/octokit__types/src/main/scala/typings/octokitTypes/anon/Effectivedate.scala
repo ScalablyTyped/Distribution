@@ -16,25 +16,19 @@ trait Effectivedate extends StObject {
 }
 object Effectivedate {
   
-  @scala.inline
-  def apply(effective_date: String, id: Double, plan: Accountsurl, unit_count: Double): Effectivedate = {
+  inline def apply(effective_date: String, id: Double, plan: Accountsurl, unit_count: Double): Effectivedate = {
     val __obj = js.Dynamic.literal(effective_date = effective_date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], unit_count = unit_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Effectivedate]
   }
   
-  @scala.inline
-  implicit class EffectivedateMutableBuilder[Self <: Effectivedate] (val x: Self) extends AnyVal {
+  extension [Self <: Effectivedate](x: Self) {
     
-    @scala.inline
-    def setEffective_date(value: String): Self = StObject.set(x, "effective_date", value.asInstanceOf[js.Any])
+    inline def setEffective_date(value: String): Self = StObject.set(x, "effective_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: Accountsurl): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: Accountsurl): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit_count(value: Double): Self = StObject.set(x, "unit_count", value.asInstanceOf[js.Any])
+    inline def setUnit_count(value: Double): Self = StObject.set(x, "unit_count", value.asInstanceOf[js.Any])
   }
 }

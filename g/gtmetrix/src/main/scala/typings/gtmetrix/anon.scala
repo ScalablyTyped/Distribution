@@ -22,20 +22,16 @@ object anon {
   }
   object ReadonlyAccountStatus {
     
-    @scala.inline
-    def apply(api_credits: Double, api_refill: Double): ReadonlyAccountStatus = {
+    inline def apply(api_credits: Double, api_refill: Double): ReadonlyAccountStatus = {
       val __obj = js.Dynamic.literal(api_credits = api_credits.asInstanceOf[js.Any], api_refill = api_refill.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyAccountStatus]
     }
     
-    @scala.inline
-    implicit class ReadonlyAccountStatusMutableBuilder[Self <: ReadonlyAccountStatus] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyAccountStatus](x: Self) {
       
-      @scala.inline
-      def setApi_credits(value: Double): Self = StObject.set(x, "api_credits", value.asInstanceOf[js.Any])
+      inline def setApi_credits(value: Double): Self = StObject.set(x, "api_credits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_refill(value: Double): Self = StObject.set(x, "api_refill", value.asInstanceOf[js.Any])
+      inline def setApi_refill(value: Double): Self = StObject.set(x, "api_refill", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,35 +52,26 @@ object anon {
   }
   object ReadonlyBrowserFeatures {
     
-    @scala.inline
-    def apply(browser: String, features: StringDictionary[Boolean], id: Double, name: String, platform: String): ReadonlyBrowserFeatures = {
+    inline def apply(browser: String, features: StringDictionary[Boolean], id: Double, name: String, platform: String): ReadonlyBrowserFeatures = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyBrowserFeatures]
     }
     
-    @scala.inline
-    implicit class ReadonlyBrowserFeaturesMutableBuilder[Self <: ReadonlyBrowserFeatures] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyBrowserFeatures](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+      inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
       
-      @scala.inline
-      def setFeatures(value: StringDictionary[Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: StringDictionary[Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,8 +256,7 @@ object anon {
   }
   object ReadonlyBuffer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BYTES_PER_ELEMENT: Double,
       buffer: ArrayBufferLike,
       byteLength: Double,
@@ -369,145 +355,99 @@ object anon {
       __obj.asInstanceOf[ReadonlyBuffer]
     }
     
-    @scala.inline
-    implicit class ReadonlyBufferMutableBuilder[Self <: ReadonlyBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyBuffer](x: Self) {
       
-      @scala.inline
-      def setBYTES_PER_ELEMENT(value: Double): Self = StObject.set(x, "BYTES_PER_ELEMENT", value.asInstanceOf[js.Any])
+      inline def setBYTES_PER_ELEMENT(value: Double): Self = StObject.set(x, "BYTES_PER_ELEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuffer(value: ArrayBufferLike): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: ArrayBufferLike): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+      inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
+      inline def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompare(value: Uint8Array => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+      inline def setCompare(value: Uint8Array => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopy(value: Uint8Array => Double): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopy(value: Uint8Array => Double): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyWithin(value: (Double, Double) => ReadonlyBuffer): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
+      inline def setCopyWithin(value: (Double, Double) => ReadonlyBuffer): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEntries(value: () => IterableIterator[js.Tuple2[Double, Double]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => IterableIterator[js.Tuple2[Double, Double]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEquals_(value: Uint8Array => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Uint8Array => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvery(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
+      inline def setEvery(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFill(value: String => ReadonlyBuffer): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+      inline def setFill(value: String => ReadonlyBuffer): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Uint8Array): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Uint8Array): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFind(
+      inline def setFind(
         value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => js.UndefOr[Double]
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindIndex(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => Double): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
+      inline def setFindIndex(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => Double): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncludes(value: String => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
+      inline def setIncludes(value: String => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndexOf(value: String => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOf(value: String => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJoin(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
+      inline def setJoin(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeys(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLastIndexOf(value: String => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
+      inline def setLastIndexOf(value: String => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Double] => Uint8Array): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Double] => Uint8Array): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadBigInt64BE(value: () => js.BigInt): Self = StObject.set(x, "readBigInt64BE", js.Any.fromFunction0(value))
+      inline def setReadBigInt64BE(value: () => js.BigInt): Self = StObject.set(x, "readBigInt64BE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadBigInt64LE(value: () => js.BigInt): Self = StObject.set(x, "readBigInt64LE", js.Any.fromFunction0(value))
+      inline def setReadBigInt64LE(value: () => js.BigInt): Self = StObject.set(x, "readBigInt64LE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadBigUInt64BE(value: () => js.BigInt): Self = StObject.set(x, "readBigUInt64BE", js.Any.fromFunction0(value))
+      inline def setReadBigUInt64BE(value: () => js.BigInt): Self = StObject.set(x, "readBigUInt64BE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadBigUInt64LE(value: () => js.BigInt): Self = StObject.set(x, "readBigUInt64LE", js.Any.fromFunction0(value))
+      inline def setReadBigUInt64LE(value: () => js.BigInt): Self = StObject.set(x, "readBigUInt64LE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadDoubleBE(value: () => Double): Self = StObject.set(x, "readDoubleBE", js.Any.fromFunction0(value))
+      inline def setReadDoubleBE(value: () => Double): Self = StObject.set(x, "readDoubleBE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadDoubleLE(value: () => Double): Self = StObject.set(x, "readDoubleLE", js.Any.fromFunction0(value))
+      inline def setReadDoubleLE(value: () => Double): Self = StObject.set(x, "readDoubleLE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadFloatBE(value: () => Double): Self = StObject.set(x, "readFloatBE", js.Any.fromFunction0(value))
+      inline def setReadFloatBE(value: () => Double): Self = StObject.set(x, "readFloatBE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadFloatLE(value: () => Double): Self = StObject.set(x, "readFloatLE", js.Any.fromFunction0(value))
+      inline def setReadFloatLE(value: () => Double): Self = StObject.set(x, "readFloatLE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadInt16BE(value: () => Double): Self = StObject.set(x, "readInt16BE", js.Any.fromFunction0(value))
+      inline def setReadInt16BE(value: () => Double): Self = StObject.set(x, "readInt16BE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadInt16LE(value: () => Double): Self = StObject.set(x, "readInt16LE", js.Any.fromFunction0(value))
+      inline def setReadInt16LE(value: () => Double): Self = StObject.set(x, "readInt16LE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadInt32BE(value: () => Double): Self = StObject.set(x, "readInt32BE", js.Any.fromFunction0(value))
+      inline def setReadInt32BE(value: () => Double): Self = StObject.set(x, "readInt32BE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadInt32LE(value: () => Double): Self = StObject.set(x, "readInt32LE", js.Any.fromFunction0(value))
+      inline def setReadInt32LE(value: () => Double): Self = StObject.set(x, "readInt32LE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadInt8(value: () => Double): Self = StObject.set(x, "readInt8", js.Any.fromFunction0(value))
+      inline def setReadInt8(value: () => Double): Self = StObject.set(x, "readInt8", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadIntBE(value: (Double, Double) => Double): Self = StObject.set(x, "readIntBE", js.Any.fromFunction2(value))
+      inline def setReadIntBE(value: (Double, Double) => Double): Self = StObject.set(x, "readIntBE", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadIntLE(value: (Double, Double) => Double): Self = StObject.set(x, "readIntLE", js.Any.fromFunction2(value))
+      inline def setReadIntLE(value: (Double, Double) => Double): Self = StObject.set(x, "readIntLE", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadUInt16BE(value: () => Double): Self = StObject.set(x, "readUInt16BE", js.Any.fromFunction0(value))
+      inline def setReadUInt16BE(value: () => Double): Self = StObject.set(x, "readUInt16BE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadUInt16LE(value: () => Double): Self = StObject.set(x, "readUInt16LE", js.Any.fromFunction0(value))
+      inline def setReadUInt16LE(value: () => Double): Self = StObject.set(x, "readUInt16LE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadUInt32BE(value: () => Double): Self = StObject.set(x, "readUInt32BE", js.Any.fromFunction0(value))
+      inline def setReadUInt32BE(value: () => Double): Self = StObject.set(x, "readUInt32BE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadUInt32LE(value: () => Double): Self = StObject.set(x, "readUInt32LE", js.Any.fromFunction0(value))
+      inline def setReadUInt32LE(value: () => Double): Self = StObject.set(x, "readUInt32LE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadUInt8(value: () => Double): Self = StObject.set(x, "readUInt8", js.Any.fromFunction0(value))
+      inline def setReadUInt8(value: () => Double): Self = StObject.set(x, "readUInt8", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadUIntBE(value: (Double, Double) => Double): Self = StObject.set(x, "readUIntBE", js.Any.fromFunction2(value))
+      inline def setReadUIntBE(value: (Double, Double) => Double): Self = StObject.set(x, "readUIntBE", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadUIntLE(value: (Double, Double) => Double): Self = StObject.set(x, "readUIntLE", js.Any.fromFunction2(value))
+      inline def setReadUIntLE(value: (Double, Double) => Double): Self = StObject.set(x, "readUIntLE", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReduce(
+      inline def setReduce(
         value: js.Function4[
               /* previousValue */ Double, 
               /* currentValue */ Double, 
@@ -517,8 +457,7 @@ object anon {
             ] => Double
       ): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReduceRight(
+      inline def setReduceRight(
         value: js.Function4[
               /* previousValue */ Double, 
               /* currentValue */ Double, 
@@ -528,107 +467,73 @@ object anon {
             ] => Double
       ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReverse(value: () => ReadonlyBuffer): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverse(value: () => ReadonlyBuffer): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: ArrayLike[Double] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: ArrayLike[Double] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlice(value: () => Buffer): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
+      inline def setSlice(value: () => Buffer): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSome(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
+      inline def setSome(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSort(value: () => ReadonlyBuffer): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
+      inline def setSort(value: () => ReadonlyBuffer): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubarray(value: () => Buffer): Self = StObject.set(x, "subarray", js.Any.fromFunction0(value))
+      inline def setSubarray(value: () => Buffer): Self = StObject.set(x, "subarray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSwap16(value: () => Buffer): Self = StObject.set(x, "swap16", js.Any.fromFunction0(value))
+      inline def setSwap16(value: () => Buffer): Self = StObject.set(x, "swap16", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSwap32(value: () => Buffer): Self = StObject.set(x, "swap32", js.Any.fromFunction0(value))
+      inline def setSwap32(value: () => Buffer): Self = StObject.set(x, "swap32", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSwap64(value: () => Buffer): Self = StObject.set(x, "swap64", js.Any.fromFunction0(value))
+      inline def setSwap64(value: () => Buffer): Self = StObject.set(x, "swap64", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: () => Data): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Data): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValues(value: () => IterableIterator[Double]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => IterableIterator[Double]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWrite(value: String => Double): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Double): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBigInt64BE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigInt64BE", js.Any.fromFunction1(value))
+      inline def setWriteBigInt64BE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigInt64BE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBigInt64LE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigInt64LE", js.Any.fromFunction1(value))
+      inline def setWriteBigInt64LE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigInt64LE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBigUInt64BE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigUInt64BE", js.Any.fromFunction1(value))
+      inline def setWriteBigUInt64BE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigUInt64BE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBigUInt64LE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigUInt64LE", js.Any.fromFunction1(value))
+      inline def setWriteBigUInt64LE(value: js.BigInt => Double): Self = StObject.set(x, "writeBigUInt64LE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteDoubleBE(value: Double => Double): Self = StObject.set(x, "writeDoubleBE", js.Any.fromFunction1(value))
+      inline def setWriteDoubleBE(value: Double => Double): Self = StObject.set(x, "writeDoubleBE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteDoubleLE(value: Double => Double): Self = StObject.set(x, "writeDoubleLE", js.Any.fromFunction1(value))
+      inline def setWriteDoubleLE(value: Double => Double): Self = StObject.set(x, "writeDoubleLE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteFloatBE(value: Double => Double): Self = StObject.set(x, "writeFloatBE", js.Any.fromFunction1(value))
+      inline def setWriteFloatBE(value: Double => Double): Self = StObject.set(x, "writeFloatBE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteFloatLE(value: Double => Double): Self = StObject.set(x, "writeFloatLE", js.Any.fromFunction1(value))
+      inline def setWriteFloatLE(value: Double => Double): Self = StObject.set(x, "writeFloatLE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteInt16BE(value: Double => Double): Self = StObject.set(x, "writeInt16BE", js.Any.fromFunction1(value))
+      inline def setWriteInt16BE(value: Double => Double): Self = StObject.set(x, "writeInt16BE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteInt16LE(value: Double => Double): Self = StObject.set(x, "writeInt16LE", js.Any.fromFunction1(value))
+      inline def setWriteInt16LE(value: Double => Double): Self = StObject.set(x, "writeInt16LE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteInt32BE(value: Double => Double): Self = StObject.set(x, "writeInt32BE", js.Any.fromFunction1(value))
+      inline def setWriteInt32BE(value: Double => Double): Self = StObject.set(x, "writeInt32BE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteInt32LE(value: Double => Double): Self = StObject.set(x, "writeInt32LE", js.Any.fromFunction1(value))
+      inline def setWriteInt32LE(value: Double => Double): Self = StObject.set(x, "writeInt32LE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteInt8(value: Double => Double): Self = StObject.set(x, "writeInt8", js.Any.fromFunction1(value))
+      inline def setWriteInt8(value: Double => Double): Self = StObject.set(x, "writeInt8", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteIntBE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeIntBE", js.Any.fromFunction3(value))
+      inline def setWriteIntBE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeIntBE", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWriteIntLE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeIntLE", js.Any.fromFunction3(value))
+      inline def setWriteIntLE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeIntLE", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWriteUInt16BE(value: Double => Double): Self = StObject.set(x, "writeUInt16BE", js.Any.fromFunction1(value))
+      inline def setWriteUInt16BE(value: Double => Double): Self = StObject.set(x, "writeUInt16BE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUInt16LE(value: Double => Double): Self = StObject.set(x, "writeUInt16LE", js.Any.fromFunction1(value))
+      inline def setWriteUInt16LE(value: Double => Double): Self = StObject.set(x, "writeUInt16LE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUInt32BE(value: Double => Double): Self = StObject.set(x, "writeUInt32BE", js.Any.fromFunction1(value))
+      inline def setWriteUInt32BE(value: Double => Double): Self = StObject.set(x, "writeUInt32BE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUInt32LE(value: Double => Double): Self = StObject.set(x, "writeUInt32LE", js.Any.fromFunction1(value))
+      inline def setWriteUInt32LE(value: Double => Double): Self = StObject.set(x, "writeUInt32LE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUInt8(value: Double => Double): Self = StObject.set(x, "writeUInt8", js.Any.fromFunction1(value))
+      inline def setWriteUInt8(value: Double => Double): Self = StObject.set(x, "writeUInt8", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUIntBE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeUIntBE", js.Any.fromFunction3(value))
+      inline def setWriteUIntBE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeUIntBE", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWriteUIntLE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeUIntLE", js.Any.fromFunction3(value))
+      inline def setWriteUIntLE(value: (Double, Double, Double) => Double): Self = StObject.set(x, "writeUIntLE", js.Any.fromFunction3(value))
     }
   }
   
@@ -643,23 +548,18 @@ object anon {
   }
   object ReadonlyTestBasicInfo {
     
-    @scala.inline
-    def apply(credits_left: Double, poll_state_url: String, test_id: String): ReadonlyTestBasicInfo = {
+    inline def apply(credits_left: Double, poll_state_url: String, test_id: String): ReadonlyTestBasicInfo = {
       val __obj = js.Dynamic.literal(credits_left = credits_left.asInstanceOf[js.Any], poll_state_url = poll_state_url.asInstanceOf[js.Any], test_id = test_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyTestBasicInfo]
     }
     
-    @scala.inline
-    implicit class ReadonlyTestBasicInfoMutableBuilder[Self <: ReadonlyTestBasicInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyTestBasicInfo](x: Self) {
       
-      @scala.inline
-      def setCredits_left(value: Double): Self = StObject.set(x, "credits_left", value.asInstanceOf[js.Any])
+      inline def setCredits_left(value: Double): Self = StObject.set(x, "credits_left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoll_state_url(value: String): Self = StObject.set(x, "poll_state_url", value.asInstanceOf[js.Any])
+      inline def setPoll_state_url(value: String): Self = StObject.set(x, "poll_state_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest_id(value: String): Self = StObject.set(x, "test_id", value.asInstanceOf[js.Any])
+      inline def setTest_id(value: String): Self = StObject.set(x, "test_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -676,29 +576,22 @@ object anon {
   }
   object ReadonlyTestDetails {
     
-    @scala.inline
-    def apply(resources: StringDictionary[String], results: StringDictionary[js.Any], state: String): ReadonlyTestDetails = {
+    inline def apply(resources: StringDictionary[String], results: StringDictionary[js.Any], state: String): ReadonlyTestDetails = {
       val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyTestDetails]
     }
     
-    @scala.inline
-    implicit class ReadonlyTestDetailsMutableBuilder[Self <: ReadonlyTestDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyTestDetails](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResources(value: StringDictionary[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: StringDictionary[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: StringDictionary[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: StringDictionary[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

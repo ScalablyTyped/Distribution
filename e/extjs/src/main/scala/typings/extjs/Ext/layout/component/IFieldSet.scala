@@ -16,19 +16,15 @@ trait IFieldSet
 }
 object IFieldSet {
   
-  @scala.inline
-  def apply(): IFieldSet = {
+  inline def apply(): IFieldSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldSet]
   }
   
-  @scala.inline
-  implicit class IFieldSetMutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldSet](x: Self) {
     
-    @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
+    inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
   }
 }

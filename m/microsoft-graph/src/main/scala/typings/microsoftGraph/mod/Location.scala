@@ -35,85 +35,59 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NullableOption[PhysicalAddress]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NullableOption[PhysicalAddress]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCoordinates(value: NullableOption[OutlookGeoCoordinates]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: NullableOption[OutlookGeoCoordinates]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesNull: Self = StObject.set(x, "coordinates", null)
+    inline def setCoordinatesNull: Self = StObject.set(x, "coordinates", null)
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLocationEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "locationEmailAddress", value.asInstanceOf[js.Any])
+    inline def setLocationEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "locationEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationEmailAddressNull: Self = StObject.set(x, "locationEmailAddress", null)
+    inline def setLocationEmailAddressNull: Self = StObject.set(x, "locationEmailAddress", null)
     
-    @scala.inline
-    def setLocationEmailAddressUndefined: Self = StObject.set(x, "locationEmailAddress", js.undefined)
+    inline def setLocationEmailAddressUndefined: Self = StObject.set(x, "locationEmailAddress", js.undefined)
     
-    @scala.inline
-    def setLocationType(value: NullableOption[LocationType]): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: NullableOption[LocationType]): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeNull: Self = StObject.set(x, "locationType", null)
+    inline def setLocationTypeNull: Self = StObject.set(x, "locationType", null)
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: NullableOption[String]): Self = StObject.set(x, "locationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: NullableOption[String]): Self = StObject.set(x, "locationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriNull: Self = StObject.set(x, "locationUri", null)
+    inline def setLocationUriNull: Self = StObject.set(x, "locationUri", null)
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "locationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "locationUri", js.undefined)
     
-    @scala.inline
-    def setUniqueId(value: NullableOption[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: NullableOption[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueIdNull: Self = StObject.set(x, "uniqueId", null)
+    inline def setUniqueIdNull: Self = StObject.set(x, "uniqueId", null)
     
-    @scala.inline
-    def setUniqueIdType(value: NullableOption[LocationUniqueIdType]): Self = StObject.set(x, "uniqueIdType", value.asInstanceOf[js.Any])
+    inline def setUniqueIdType(value: NullableOption[LocationUniqueIdType]): Self = StObject.set(x, "uniqueIdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueIdTypeNull: Self = StObject.set(x, "uniqueIdType", null)
+    inline def setUniqueIdTypeNull: Self = StObject.set(x, "uniqueIdType", null)
     
-    @scala.inline
-    def setUniqueIdTypeUndefined: Self = StObject.set(x, "uniqueIdType", js.undefined)
+    inline def setUniqueIdTypeUndefined: Self = StObject.set(x, "uniqueIdType", js.undefined)
     
-    @scala.inline
-    def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+    inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
   }
 }

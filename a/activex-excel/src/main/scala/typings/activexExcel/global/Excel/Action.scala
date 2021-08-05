@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Action")
 @js.native
-class Action protected ()
+/* private */ class Action ()
   extends StObject
      with typings.activexExcel.Excel.Action {
   
@@ -27,7 +27,7 @@ class Action protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Action_typekey")
   var ExcelDotAction_typekey: typings.activexExcel.Excel.Action = js.native
   

@@ -13,19 +13,15 @@ trait GetSigningCertificateResponse extends StObject {
 }
 object GetSigningCertificateResponse {
   
-  @scala.inline
-  def apply(): GetSigningCertificateResponse = {
+  inline def apply(): GetSigningCertificateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSigningCertificateResponse]
   }
   
-  @scala.inline
-  implicit class GetSigningCertificateResponseMutableBuilder[Self <: GetSigningCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSigningCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: StringType): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: StringType): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
   }
 }

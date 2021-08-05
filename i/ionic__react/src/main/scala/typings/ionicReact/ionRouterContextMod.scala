@@ -20,8 +20,7 @@ object ionRouterContextMod {
   @js.native
   val IonRouterContext: Context[IonRouterContextState] = js.native
   
-  @scala.inline
-  def useIonRouter(): IonRouterContextState = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonRouter")().asInstanceOf[IonRouterContextState]
+  inline def useIonRouter(): IonRouterContextState = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonRouter")().asInstanceOf[IonRouterContextState]
   
   @js.native
   trait IonRouterContextState extends StObject {

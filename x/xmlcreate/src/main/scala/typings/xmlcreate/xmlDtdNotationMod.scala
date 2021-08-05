@@ -23,28 +23,25 @@ object xmlDtdNotationMod {
   }
   object IXmlDtdNotationOptions {
     
-    @scala.inline
-    def apply(charData: String): IXmlDtdNotationOptions = {
+    inline def apply(charData: String): IXmlDtdNotationOptions = {
       val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlDtdNotationOptions]
     }
     
-    @scala.inline
-    implicit class IXmlDtdNotationOptionsMutableBuilder[Self <: IXmlDtdNotationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlDtdNotationOptions](x: Self) {
       
-      @scala.inline
-      def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
+      inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait XmlDtdNotation[Parent] extends StObject {
     
-    var _charData: js.Any = js.native
+    /* private */ var _charData: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the text of this notation declaration.

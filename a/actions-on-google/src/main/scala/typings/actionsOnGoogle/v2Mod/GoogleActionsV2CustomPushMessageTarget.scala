@@ -31,37 +31,27 @@ trait GoogleActionsV2CustomPushMessageTarget extends StObject {
 }
 object GoogleActionsV2CustomPushMessageTarget {
   
-  @scala.inline
-  def apply(): GoogleActionsV2CustomPushMessageTarget = {
+  inline def apply(): GoogleActionsV2CustomPushMessageTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2CustomPushMessageTarget]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2CustomPushMessageTargetMutableBuilder[Self <: GoogleActionsV2CustomPushMessageTarget] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2CustomPushMessageTarget](x: Self) {
     
-    @scala.inline
-    def setArgument(value: GoogleActionsV2Argument): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: GoogleActionsV2Argument): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+    inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

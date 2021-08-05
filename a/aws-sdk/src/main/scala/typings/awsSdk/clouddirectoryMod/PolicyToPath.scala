@@ -18,28 +18,21 @@ trait PolicyToPath extends StObject {
 }
 object PolicyToPath {
   
-  @scala.inline
-  def apply(): PolicyToPath = {
+  inline def apply(): PolicyToPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyToPath]
   }
   
-  @scala.inline
-  implicit class PolicyToPathMutableBuilder[Self <: PolicyToPath] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyToPath](x: Self) {
     
-    @scala.inline
-    def setPath(value: PathString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: PathString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setPolicies(value: PolicyAttachmentList): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: PolicyAttachmentList): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: PolicyAttachment*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: PolicyAttachment*): Self = StObject.set(x, "Policies", js.Array(value :_*))
   }
 }

@@ -23,55 +23,39 @@ trait PartialClassNameMapSnackbAnchorOriginBottomCenter extends StObject {
 }
 object PartialClassNameMapSnackbAnchorOriginBottomCenter {
   
-  @scala.inline
-  def apply(): PartialClassNameMapSnackbAnchorOriginBottomCenter = {
+  inline def apply(): PartialClassNameMapSnackbAnchorOriginBottomCenter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapSnackbAnchorOriginBottomCenter]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapSnackbAnchorOriginBottomCenterMutableBuilder[Self <: PartialClassNameMapSnackbAnchorOriginBottomCenter] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapSnackbAnchorOriginBottomCenter](x: Self) {
     
-    @scala.inline
-    def setAnchorOriginBottomCenter(value: String): Self = StObject.set(x, "anchorOriginBottomCenter", value.asInstanceOf[js.Any])
+    inline def setAnchorOriginBottomCenter(value: String): Self = StObject.set(x, "anchorOriginBottomCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginBottomCenterUndefined: Self = StObject.set(x, "anchorOriginBottomCenter", js.undefined)
+    inline def setAnchorOriginBottomCenterUndefined: Self = StObject.set(x, "anchorOriginBottomCenter", js.undefined)
     
-    @scala.inline
-    def setAnchorOriginBottomLeft(value: String): Self = StObject.set(x, "anchorOriginBottomLeft", value.asInstanceOf[js.Any])
+    inline def setAnchorOriginBottomLeft(value: String): Self = StObject.set(x, "anchorOriginBottomLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginBottomLeftUndefined: Self = StObject.set(x, "anchorOriginBottomLeft", js.undefined)
+    inline def setAnchorOriginBottomLeftUndefined: Self = StObject.set(x, "anchorOriginBottomLeft", js.undefined)
     
-    @scala.inline
-    def setAnchorOriginBottomRight(value: String): Self = StObject.set(x, "anchorOriginBottomRight", value.asInstanceOf[js.Any])
+    inline def setAnchorOriginBottomRight(value: String): Self = StObject.set(x, "anchorOriginBottomRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginBottomRightUndefined: Self = StObject.set(x, "anchorOriginBottomRight", js.undefined)
+    inline def setAnchorOriginBottomRightUndefined: Self = StObject.set(x, "anchorOriginBottomRight", js.undefined)
     
-    @scala.inline
-    def setAnchorOriginTopCenter(value: String): Self = StObject.set(x, "anchorOriginTopCenter", value.asInstanceOf[js.Any])
+    inline def setAnchorOriginTopCenter(value: String): Self = StObject.set(x, "anchorOriginTopCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginTopCenterUndefined: Self = StObject.set(x, "anchorOriginTopCenter", js.undefined)
+    inline def setAnchorOriginTopCenterUndefined: Self = StObject.set(x, "anchorOriginTopCenter", js.undefined)
     
-    @scala.inline
-    def setAnchorOriginTopLeft(value: String): Self = StObject.set(x, "anchorOriginTopLeft", value.asInstanceOf[js.Any])
+    inline def setAnchorOriginTopLeft(value: String): Self = StObject.set(x, "anchorOriginTopLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginTopLeftUndefined: Self = StObject.set(x, "anchorOriginTopLeft", js.undefined)
+    inline def setAnchorOriginTopLeftUndefined: Self = StObject.set(x, "anchorOriginTopLeft", js.undefined)
     
-    @scala.inline
-    def setAnchorOriginTopRight(value: String): Self = StObject.set(x, "anchorOriginTopRight", value.asInstanceOf[js.Any])
+    inline def setAnchorOriginTopRight(value: String): Self = StObject.set(x, "anchorOriginTopRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginTopRightUndefined: Self = StObject.set(x, "anchorOriginTopRight", js.undefined)
+    inline def setAnchorOriginTopRightUndefined: Self = StObject.set(x, "anchorOriginTopRight", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -36,59 +36,42 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(ack: Boolean, from: String, lc: Double, ts: Double): State = {
+  inline def apply(ack: Boolean, from: String, lc: Double, ts: Double): State = {
     val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], lc = lc.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(null)
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+    inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+    inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
-    @scala.inline
-    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+    inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
+    inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLc(value: Double): Self = StObject.set(x, "lc", value.asInstanceOf[js.Any])
+    inline def setLc(value: Double): Self = StObject.set(x, "lc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ(value: StateQuality): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: StateQuality): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValNull: Self = StObject.set(x, "val", null)
+    inline def setValNull: Self = StObject.set(x, "val", null)
     
-    @scala.inline
-    def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
+    inline def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
   }
 }

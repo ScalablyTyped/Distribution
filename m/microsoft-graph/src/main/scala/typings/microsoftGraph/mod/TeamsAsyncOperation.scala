@@ -37,70 +37,49 @@ trait TeamsAsyncOperation
 }
 object TeamsAsyncOperation {
   
-  @scala.inline
-  def apply(): TeamsAsyncOperation = {
+  inline def apply(): TeamsAsyncOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamsAsyncOperation]
   }
   
-  @scala.inline
-  implicit class TeamsAsyncOperationMutableBuilder[Self <: TeamsAsyncOperation] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAsyncOperation](x: Self) {
     
-    @scala.inline
-    def setAttemptsCount(value: Double): Self = StObject.set(x, "attemptsCount", value.asInstanceOf[js.Any])
+    inline def setAttemptsCount(value: Double): Self = StObject.set(x, "attemptsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptsCountUndefined: Self = StObject.set(x, "attemptsCount", js.undefined)
+    inline def setAttemptsCountUndefined: Self = StObject.set(x, "attemptsCount", js.undefined)
     
-    @scala.inline
-    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setError(value: NullableOption[OperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: NullableOption[OperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setLastActionDateTime(value: String): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
+    inline def setLastActionDateTime(value: String): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
+    inline def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: TeamsAsyncOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: TeamsAsyncOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TeamsAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TeamsAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTargetResourceId(value: NullableOption[String]): Self = StObject.set(x, "targetResourceId", value.asInstanceOf[js.Any])
+    inline def setTargetResourceId(value: NullableOption[String]): Self = StObject.set(x, "targetResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResourceIdNull: Self = StObject.set(x, "targetResourceId", null)
+    inline def setTargetResourceIdNull: Self = StObject.set(x, "targetResourceId", null)
     
-    @scala.inline
-    def setTargetResourceIdUndefined: Self = StObject.set(x, "targetResourceId", js.undefined)
+    inline def setTargetResourceIdUndefined: Self = StObject.set(x, "targetResourceId", js.undefined)
     
-    @scala.inline
-    def setTargetResourceLocation(value: NullableOption[String]): Self = StObject.set(x, "targetResourceLocation", value.asInstanceOf[js.Any])
+    inline def setTargetResourceLocation(value: NullableOption[String]): Self = StObject.set(x, "targetResourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResourceLocationNull: Self = StObject.set(x, "targetResourceLocation", null)
+    inline def setTargetResourceLocationNull: Self = StObject.set(x, "targetResourceLocation", null)
     
-    @scala.inline
-    def setTargetResourceLocationUndefined: Self = StObject.set(x, "targetResourceLocation", js.undefined)
+    inline def setTargetResourceLocationUndefined: Self = StObject.set(x, "targetResourceLocation", js.undefined)
   }
 }

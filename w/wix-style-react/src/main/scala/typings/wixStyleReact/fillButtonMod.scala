@@ -25,11 +25,9 @@ object fillButtonMod {
   trait FillButtonIconSize extends StObject
   object FillButtonIconSize {
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   trait FillButtonProps
@@ -48,44 +46,32 @@ object fillButtonMod {
   }
   object FillButtonProps {
     
-    @scala.inline
-    def apply(): FillButtonProps = {
+    inline def apply(): FillButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FillButtonProps]
     }
     
-    @scala.inline
-    implicit class FillButtonPropsMutableBuilder[Self <: FillButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: FillButtonProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setIconSize(value: FillButtonIconSize): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+      inline def setIconSize(value: FillButtonIconSize): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+      inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
       
-      @scala.inline
-      def setTooltipContent(value: ReactNode): Self = StObject.set(x, "tooltipContent", value.asInstanceOf[js.Any])
+      inline def setTooltipContent(value: ReactNode): Self = StObject.set(x, "tooltipContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
+      inline def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
       
-      @scala.inline
-      def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+      inline def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+      inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
     }
   }
 }

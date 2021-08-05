@@ -13,16 +13,13 @@ trait DescribeEntityRecognizerRequest extends StObject {
 }
 object DescribeEntityRecognizerRequest {
   
-  @scala.inline
-  def apply(EntityRecognizerArn: EntityRecognizerArn): DescribeEntityRecognizerRequest = {
+  inline def apply(EntityRecognizerArn: EntityRecognizerArn): DescribeEntityRecognizerRequest = {
     val __obj = js.Dynamic.literal(EntityRecognizerArn = EntityRecognizerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEntityRecognizerRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEntityRecognizerRequestMutableBuilder[Self <: DescribeEntityRecognizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEntityRecognizerRequest](x: Self) {
     
-    @scala.inline
-    def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
+    inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
   }
 }

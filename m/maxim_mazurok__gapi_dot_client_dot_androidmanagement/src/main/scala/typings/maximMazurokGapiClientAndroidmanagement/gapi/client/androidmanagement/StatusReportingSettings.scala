@@ -41,79 +41,55 @@ trait StatusReportingSettings extends StObject {
 }
 object StatusReportingSettings {
   
-  @scala.inline
-  def apply(): StatusReportingSettings = {
+  inline def apply(): StatusReportingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusReportingSettings]
   }
   
-  @scala.inline
-  implicit class StatusReportingSettingsMutableBuilder[Self <: StatusReportingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: StatusReportingSettings](x: Self) {
     
-    @scala.inline
-    def setApplicationReportingSettings(value: ApplicationReportingSettings): Self = StObject.set(x, "applicationReportingSettings", value.asInstanceOf[js.Any])
+    inline def setApplicationReportingSettings(value: ApplicationReportingSettings): Self = StObject.set(x, "applicationReportingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationReportingSettingsUndefined: Self = StObject.set(x, "applicationReportingSettings", js.undefined)
+    inline def setApplicationReportingSettingsUndefined: Self = StObject.set(x, "applicationReportingSettings", js.undefined)
     
-    @scala.inline
-    def setApplicationReportsEnabled(value: Boolean): Self = StObject.set(x, "applicationReportsEnabled", value.asInstanceOf[js.Any])
+    inline def setApplicationReportsEnabled(value: Boolean): Self = StObject.set(x, "applicationReportsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationReportsEnabledUndefined: Self = StObject.set(x, "applicationReportsEnabled", js.undefined)
+    inline def setApplicationReportsEnabledUndefined: Self = StObject.set(x, "applicationReportsEnabled", js.undefined)
     
-    @scala.inline
-    def setCommonCriteriaModeEnabled(value: Boolean): Self = StObject.set(x, "commonCriteriaModeEnabled", value.asInstanceOf[js.Any])
+    inline def setCommonCriteriaModeEnabled(value: Boolean): Self = StObject.set(x, "commonCriteriaModeEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonCriteriaModeEnabledUndefined: Self = StObject.set(x, "commonCriteriaModeEnabled", js.undefined)
+    inline def setCommonCriteriaModeEnabledUndefined: Self = StObject.set(x, "commonCriteriaModeEnabled", js.undefined)
     
-    @scala.inline
-    def setDeviceSettingsEnabled(value: Boolean): Self = StObject.set(x, "deviceSettingsEnabled", value.asInstanceOf[js.Any])
+    inline def setDeviceSettingsEnabled(value: Boolean): Self = StObject.set(x, "deviceSettingsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceSettingsEnabledUndefined: Self = StObject.set(x, "deviceSettingsEnabled", js.undefined)
+    inline def setDeviceSettingsEnabledUndefined: Self = StObject.set(x, "deviceSettingsEnabled", js.undefined)
     
-    @scala.inline
-    def setDisplayInfoEnabled(value: Boolean): Self = StObject.set(x, "displayInfoEnabled", value.asInstanceOf[js.Any])
+    inline def setDisplayInfoEnabled(value: Boolean): Self = StObject.set(x, "displayInfoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayInfoEnabledUndefined: Self = StObject.set(x, "displayInfoEnabled", js.undefined)
+    inline def setDisplayInfoEnabledUndefined: Self = StObject.set(x, "displayInfoEnabled", js.undefined)
     
-    @scala.inline
-    def setHardwareStatusEnabled(value: Boolean): Self = StObject.set(x, "hardwareStatusEnabled", value.asInstanceOf[js.Any])
+    inline def setHardwareStatusEnabled(value: Boolean): Self = StObject.set(x, "hardwareStatusEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareStatusEnabledUndefined: Self = StObject.set(x, "hardwareStatusEnabled", js.undefined)
+    inline def setHardwareStatusEnabledUndefined: Self = StObject.set(x, "hardwareStatusEnabled", js.undefined)
     
-    @scala.inline
-    def setMemoryInfoEnabled(value: Boolean): Self = StObject.set(x, "memoryInfoEnabled", value.asInstanceOf[js.Any])
+    inline def setMemoryInfoEnabled(value: Boolean): Self = StObject.set(x, "memoryInfoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInfoEnabledUndefined: Self = StObject.set(x, "memoryInfoEnabled", js.undefined)
+    inline def setMemoryInfoEnabledUndefined: Self = StObject.set(x, "memoryInfoEnabled", js.undefined)
     
-    @scala.inline
-    def setNetworkInfoEnabled(value: Boolean): Self = StObject.set(x, "networkInfoEnabled", value.asInstanceOf[js.Any])
+    inline def setNetworkInfoEnabled(value: Boolean): Self = StObject.set(x, "networkInfoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInfoEnabledUndefined: Self = StObject.set(x, "networkInfoEnabled", js.undefined)
+    inline def setNetworkInfoEnabledUndefined: Self = StObject.set(x, "networkInfoEnabled", js.undefined)
     
-    @scala.inline
-    def setPowerManagementEventsEnabled(value: Boolean): Self = StObject.set(x, "powerManagementEventsEnabled", value.asInstanceOf[js.Any])
+    inline def setPowerManagementEventsEnabled(value: Boolean): Self = StObject.set(x, "powerManagementEventsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerManagementEventsEnabledUndefined: Self = StObject.set(x, "powerManagementEventsEnabled", js.undefined)
+    inline def setPowerManagementEventsEnabledUndefined: Self = StObject.set(x, "powerManagementEventsEnabled", js.undefined)
     
-    @scala.inline
-    def setSoftwareInfoEnabled(value: Boolean): Self = StObject.set(x, "softwareInfoEnabled", value.asInstanceOf[js.Any])
+    inline def setSoftwareInfoEnabled(value: Boolean): Self = StObject.set(x, "softwareInfoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareInfoEnabledUndefined: Self = StObject.set(x, "softwareInfoEnabled", js.undefined)
+    inline def setSoftwareInfoEnabledUndefined: Self = StObject.set(x, "softwareInfoEnabled", js.undefined)
     
-    @scala.inline
-    def setSystemPropertiesEnabled(value: Boolean): Self = StObject.set(x, "systemPropertiesEnabled", value.asInstanceOf[js.Any])
+    inline def setSystemPropertiesEnabled(value: Boolean): Self = StObject.set(x, "systemPropertiesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemPropertiesEnabledUndefined: Self = StObject.set(x, "systemPropertiesEnabled", js.undefined)
+    inline def setSystemPropertiesEnabledUndefined: Self = StObject.set(x, "systemPropertiesEnabled", js.undefined)
   }
 }

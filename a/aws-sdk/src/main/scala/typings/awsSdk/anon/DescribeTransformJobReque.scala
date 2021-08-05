@@ -19,22 +19,17 @@ trait DescribeTransformJobReque extends StObject {
 }
 object DescribeTransformJobReque {
   
-  @scala.inline
-  def apply(TransformJobName: TransformJobName): DescribeTransformJobReque = {
+  inline def apply(TransformJobName: TransformJobName): DescribeTransformJobReque = {
     val __obj = js.Dynamic.literal(TransformJobName = TransformJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTransformJobReque]
   }
   
-  @scala.inline
-  implicit class DescribeTransformJobRequeMutableBuilder[Self <: DescribeTransformJobReque] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTransformJobReque](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setTransformJobName(value: TransformJobName): Self = StObject.set(x, "TransformJobName", value.asInstanceOf[js.Any])
+    inline def setTransformJobName(value: TransformJobName): Self = StObject.set(x, "TransformJobName", value.asInstanceOf[js.Any])
   }
 }

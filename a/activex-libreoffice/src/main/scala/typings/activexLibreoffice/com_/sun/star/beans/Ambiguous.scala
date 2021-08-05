@@ -25,19 +25,15 @@ trait Ambiguous[T] extends StObject {
 }
 object Ambiguous {
   
-  @scala.inline
-  def apply[T](IsAmbiguous: Boolean, Value: T): Ambiguous[T] = {
+  inline def apply[T](IsAmbiguous: Boolean, Value: T): Ambiguous[T] = {
     val __obj = js.Dynamic.literal(IsAmbiguous = IsAmbiguous.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ambiguous[T]]
   }
   
-  @scala.inline
-  implicit class AmbiguousMutableBuilder[Self <: Ambiguous[?], T] (val x: Self & Ambiguous[T]) extends AnyVal {
+  extension [Self <: Ambiguous[?], T](x: Self & Ambiguous[T]) {
     
-    @scala.inline
-    def setIsAmbiguous(value: Boolean): Self = StObject.set(x, "IsAmbiguous", value.asInstanceOf[js.Any])
+    inline def setIsAmbiguous(value: Boolean): Self = StObject.set(x, "IsAmbiguous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

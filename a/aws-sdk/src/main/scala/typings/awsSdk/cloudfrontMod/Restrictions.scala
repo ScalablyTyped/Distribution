@@ -13,16 +13,13 @@ trait Restrictions extends StObject {
 }
 object Restrictions {
   
-  @scala.inline
-  def apply(GeoRestriction: GeoRestriction): Restrictions = {
+  inline def apply(GeoRestriction: GeoRestriction): Restrictions = {
     val __obj = js.Dynamic.literal(GeoRestriction = GeoRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Restrictions]
   }
   
-  @scala.inline
-  implicit class RestrictionsMutableBuilder[Self <: Restrictions] (val x: Self) extends AnyVal {
+  extension [Self <: Restrictions](x: Self) {
     
-    @scala.inline
-    def setGeoRestriction(value: GeoRestriction): Self = StObject.set(x, "GeoRestriction", value.asInstanceOf[js.Any])
+    inline def setGeoRestriction(value: GeoRestriction): Self = StObject.set(x, "GeoRestriction", value.asInstanceOf[js.Any])
   }
 }

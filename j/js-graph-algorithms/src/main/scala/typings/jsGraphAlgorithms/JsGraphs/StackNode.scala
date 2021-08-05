@@ -12,22 +12,17 @@ trait StackNode[T] extends StObject {
 }
 object StackNode {
   
-  @scala.inline
-  def apply[T](value: T): StackNode[T] = {
+  inline def apply[T](value: T): StackNode[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[StackNode[T]]
   }
   
-  @scala.inline
-  implicit class StackNodeMutableBuilder[Self <: StackNode[?], T] (val x: Self & StackNode[T]) extends AnyVal {
+  extension [Self <: StackNode[?], T](x: Self & StackNode[T]) {
     
-    @scala.inline
-    def setNext(value: StackNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: StackNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

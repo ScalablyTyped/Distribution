@@ -25,21 +25,18 @@ object Circle {
   @JSImport("fabric", "fabric.Circle.ATTRIBUTE_NAMES")
   @js.native
   def ATTRIBUTE_NAMES: js.Array[String] = js.native
-  @scala.inline
-  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
+  inline def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Returns Circle instance from an SVG element
     * @param element Element to parse
     * @param [options] Options object
     */
-  @scala.inline
-  def fromElement(element: SVGElement, options: ICircleOptions): typings.fabric.fabricImplMod.Circle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Circle]
+  inline def fromElement(element: SVGElement, options: ICircleOptions): typings.fabric.fabricImplMod.Circle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Circle]
   
   /**
     * Returns Circle instance from an object representation
     * @param object Object to create an instance from
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Circle]
+  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Circle]
 }

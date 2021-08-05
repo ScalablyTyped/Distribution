@@ -12,16 +12,13 @@ trait PluginReusePaths
 }
 object PluginReusePaths {
   
-  @scala.inline
-  def apply(reusePaths: Boolean | js.Object): PluginReusePaths = {
+  inline def apply(reusePaths: Boolean | js.Object): PluginReusePaths = {
     val __obj = js.Dynamic.literal(reusePaths = reusePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginReusePaths]
   }
   
-  @scala.inline
-  implicit class PluginReusePathsMutableBuilder[Self <: PluginReusePaths] (val x: Self) extends AnyVal {
+  extension [Self <: PluginReusePaths](x: Self) {
     
-    @scala.inline
-    def setReusePaths(value: Boolean | js.Object): Self = StObject.set(x, "reusePaths", value.asInstanceOf[js.Any])
+    inline def setReusePaths(value: Boolean | js.Object): Self = StObject.set(x, "reusePaths", value.asInstanceOf[js.Any])
   }
 }

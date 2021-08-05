@@ -18,19 +18,15 @@ trait DescribeCertificateRequest extends StObject {
 }
 object DescribeCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateId: CertificateId, DirectoryId: DirectoryId): DescribeCertificateRequest = {
+  inline def apply(CertificateId: CertificateId, DirectoryId: DirectoryId): DescribeCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateId = CertificateId.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCertificateRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCertificateRequestMutableBuilder[Self <: DescribeCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

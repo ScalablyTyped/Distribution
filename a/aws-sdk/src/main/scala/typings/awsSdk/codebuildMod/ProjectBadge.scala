@@ -18,25 +18,19 @@ trait ProjectBadge extends StObject {
 }
 object ProjectBadge {
   
-  @scala.inline
-  def apply(): ProjectBadge = {
+  inline def apply(): ProjectBadge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectBadge]
   }
   
-  @scala.inline
-  implicit class ProjectBadgeMutableBuilder[Self <: ProjectBadge] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectBadge](x: Self) {
     
-    @scala.inline
-    def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
+    inline def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
+    inline def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
     
-    @scala.inline
-    def setBadgeRequestUrl(value: String): Self = StObject.set(x, "badgeRequestUrl", value.asInstanceOf[js.Any])
+    inline def setBadgeRequestUrl(value: String): Self = StObject.set(x, "badgeRequestUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeRequestUrlUndefined: Self = StObject.set(x, "badgeRequestUrl", js.undefined)
+    inline def setBadgeRequestUrlUndefined: Self = StObject.set(x, "badgeRequestUrl", js.undefined)
   }
 }

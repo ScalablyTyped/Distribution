@@ -19,23 +19,18 @@ object anon {
   }
   object Codec {
     
-    @scala.inline
-    def apply(codec: String, hash: Uint8Array, version: `0` | `1`): Codec = {
+    inline def apply(codec: String, hash: Uint8Array, version: `0` | `1`): Codec = {
       val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Codec]
     }
     
-    @scala.inline
-    implicit class CodecMutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
+    extension [Self <: Codec](x: Self) {
       
-      @scala.inline
-      def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+      inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: `0` | `1`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: `0` | `1`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

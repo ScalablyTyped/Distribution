@@ -12,6 +12,5 @@ object WindowEvents {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def on(`type`: String, listener: EventListener): Dispatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Dispatcher]
+  inline def on(`type`: String, listener: EventListener): Dispatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Dispatcher]
 }

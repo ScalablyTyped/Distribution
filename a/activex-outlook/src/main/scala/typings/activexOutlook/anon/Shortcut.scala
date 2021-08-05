@@ -13,8 +13,7 @@ trait Shortcut extends StObject {
 }
 object Shortcut {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     Shortcut: OutlookBarShortcut
   ): Shortcut = {
@@ -22,15 +21,12 @@ object Shortcut {
     __obj.asInstanceOf[Shortcut]
   }
   
-  @scala.inline
-  implicit class ShortcutMutableBuilder[Self <: Shortcut] (val x: Self) extends AnyVal {
+  extension [Self <: Shortcut](x: Self) {
     
-    @scala.inline
-    def setCommandBar(
+    inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
     ): Self = StObject.set(x, "CommandBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "Shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "Shortcut", value.asInstanceOf[js.Any])
   }
 }

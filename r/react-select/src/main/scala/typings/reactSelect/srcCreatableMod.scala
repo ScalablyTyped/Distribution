@@ -41,8 +41,7 @@ object srcCreatableMod {
     @JSImport("react-select/src/Creatable", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/Creatable", "Creatable")
@@ -74,16 +73,14 @@ object srcCreatableMod {
     @JSImport("react-select/src/Creatable", "Creatable.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/Creatable", "defaultProps")
   @js.native
   val defaultProps: Props[js.Any] = js.native
   
-  @scala.inline
-  def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[Creatable[js.Any]]
+  inline def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[Creatable[js.Any]]
   
   trait CreatableProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
@@ -121,52 +118,38 @@ object srcCreatableMod {
   }
   object CreatableProps {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](): CreatableProps[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](): CreatableProps[OptionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreatableProps[OptionType]]
     }
     
-    @scala.inline
-    implicit class CreatablePropsMutableBuilder[Self <: CreatableProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & CreatableProps[OptionType]) extends AnyVal {
+    extension [Self <: CreatableProps[?], OptionType /* <: OptionTypeBase */](x: Self & CreatableProps[OptionType]) {
       
-      @scala.inline
-      def setAllowCreateWhileLoading(value: Boolean): Self = StObject.set(x, "allowCreateWhileLoading", value.asInstanceOf[js.Any])
+      inline def setAllowCreateWhileLoading(value: Boolean): Self = StObject.set(x, "allowCreateWhileLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCreateWhileLoadingUndefined: Self = StObject.set(x, "allowCreateWhileLoading", js.undefined)
+      inline def setAllowCreateWhileLoadingUndefined: Self = StObject.set(x, "allowCreateWhileLoading", js.undefined)
       
-      @scala.inline
-      def setCreateOptionPosition(value: first | last): Self = StObject.set(x, "createOptionPosition", value.asInstanceOf[js.Any])
+      inline def setCreateOptionPosition(value: first | last): Self = StObject.set(x, "createOptionPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateOptionPositionUndefined: Self = StObject.set(x, "createOptionPosition", js.undefined)
+      inline def setCreateOptionPositionUndefined: Self = StObject.set(x, "createOptionPosition", js.undefined)
       
-      @scala.inline
-      def setFormatCreateLabel(value: /* inputValue */ String => ReactNode): Self = StObject.set(x, "formatCreateLabel", js.Any.fromFunction1(value))
+      inline def setFormatCreateLabel(value: /* inputValue */ String => ReactNode): Self = StObject.set(x, "formatCreateLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatCreateLabelUndefined: Self = StObject.set(x, "formatCreateLabel", js.undefined)
+      inline def setFormatCreateLabelUndefined: Self = StObject.set(x, "formatCreateLabel", js.undefined)
       
-      @scala.inline
-      def setGetNewOptionData(value: (/* inputValue */ String, /* optionLabel */ ReactNode) => OptionType): Self = StObject.set(x, "getNewOptionData", js.Any.fromFunction2(value))
+      inline def setGetNewOptionData(value: (/* inputValue */ String, /* optionLabel */ ReactNode) => OptionType): Self = StObject.set(x, "getNewOptionData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNewOptionDataUndefined: Self = StObject.set(x, "getNewOptionData", js.undefined)
+      inline def setGetNewOptionDataUndefined: Self = StObject.set(x, "getNewOptionData", js.undefined)
       
-      @scala.inline
-      def setIsValidNewOption(
+      inline def setIsValidNewOption(
         value: (/* inputValue */ String, /* value */ ValueType[OptionType], /* options */ OptionsType[OptionType] | GroupedOptionsType[OptionType]) => Boolean
       ): Self = StObject.set(x, "isValidNewOption", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsValidNewOptionUndefined: Self = StObject.set(x, "isValidNewOption", js.undefined)
+      inline def setIsValidNewOptionUndefined: Self = StObject.set(x, "isValidNewOption", js.undefined)
       
-      @scala.inline
-      def setOnCreateOption(value: /* inputValue */ String => Unit): Self = StObject.set(x, "onCreateOption", js.Any.fromFunction1(value))
+      inline def setOnCreateOption(value: /* inputValue */ String => Unit): Self = StObject.set(x, "onCreateOption", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCreateOptionUndefined: Self = StObject.set(x, "onCreateOption", js.undefined)
+      inline def setOnCreateOptionUndefined: Self = StObject.set(x, "onCreateOption", js.undefined)
     }
   }
   
@@ -176,8 +159,7 @@ object srcCreatableMod {
        with CreatableProps[OptionType]
   object Props {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props[OptionType]]
     }
@@ -191,26 +173,20 @@ object srcCreatableMod {
   }
   object State {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](options: OptionsType[OptionType]): State[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](options: OptionsType[OptionType]): State[OptionType] = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[State[OptionType]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
+    extension [Self <: State[?], OptionType /* <: OptionTypeBase */](x: Self & State[OptionType]) {
       
-      @scala.inline
-      def setNewOption(value: OptionType): Self = StObject.set(x, "newOption", value.asInstanceOf[js.Any])
+      inline def setNewOption(value: OptionType): Self = StObject.set(x, "newOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewOptionUndefined: Self = StObject.set(x, "newOption", js.undefined)
+      inline def setNewOptionUndefined: Self = StObject.set(x, "newOption", js.undefined)
       
-      @scala.inline
-      def setOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: OptionType*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionType*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
 }

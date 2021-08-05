@@ -62,8 +62,7 @@ trait ASPxClientDashboardItemVisualInteractivityEventArgs
 }
 object ASPxClientDashboardItemVisualInteractivityEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EnableHighlighting: Boolean => Unit,
     GetDefaultSelection: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple],
     GetSelectionMode: () => String,
@@ -78,34 +77,24 @@ object ASPxClientDashboardItemVisualInteractivityEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemVisualInteractivityEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemVisualInteractivityEventArgsMutableBuilder[Self <: ASPxClientDashboardItemVisualInteractivityEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemVisualInteractivityEventArgs](x: Self) {
     
-    @scala.inline
-    def setEnableHighlighting(value: Boolean => Unit): Self = StObject.set(x, "EnableHighlighting", js.Any.fromFunction1(value))
+    inline def setEnableHighlighting(value: Boolean => Unit): Self = StObject.set(x, "EnableHighlighting", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultSelection(value: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple]): Self = StObject.set(x, "GetDefaultSelection", js.Any.fromFunction0(value))
+    inline def setGetDefaultSelection(value: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple]): Self = StObject.set(x, "GetDefaultSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectionMode(value: () => String): Self = StObject.set(x, "GetSelectionMode", js.Any.fromFunction0(value))
+    inline def setGetSelectionMode(value: () => String): Self = StObject.set(x, "GetSelectionMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetAxes(value: () => js.Array[String]): Self = StObject.set(x, "GetTargetAxes", js.Any.fromFunction0(value))
+    inline def setGetTargetAxes(value: () => js.Array[String]): Self = StObject.set(x, "GetTargetAxes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsHighlightingEnabled(value: () => Boolean): Self = StObject.set(x, "IsHighlightingEnabled", js.Any.fromFunction0(value))
+    inline def setIsHighlightingEnabled(value: () => Boolean): Self = StObject.set(x, "IsHighlightingEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultSelection(value: js.Array[ASPxClientDashboardItemDataAxisPointTuple] => Unit): Self = StObject.set(x, "SetDefaultSelection", js.Any.fromFunction1(value))
+    inline def setSetDefaultSelection(value: js.Array[ASPxClientDashboardItemDataAxisPointTuple] => Unit): Self = StObject.set(x, "SetDefaultSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectionMode(value: String => Unit): Self = StObject.set(x, "SetSelectionMode", js.Any.fromFunction1(value))
+    inline def setSetSelectionMode(value: String => Unit): Self = StObject.set(x, "SetSelectionMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTargetAxes(value: js.Array[String] => Unit): Self = StObject.set(x, "SetTargetAxes", js.Any.fromFunction1(value))
+    inline def setSetTargetAxes(value: js.Array[String] => Unit): Self = StObject.set(x, "SetTargetAxes", js.Any.fromFunction1(value))
   }
 }

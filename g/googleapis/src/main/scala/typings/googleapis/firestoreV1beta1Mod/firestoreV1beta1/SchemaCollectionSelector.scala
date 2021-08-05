@@ -23,25 +23,19 @@ trait SchemaCollectionSelector extends StObject {
 }
 object SchemaCollectionSelector {
   
-  @scala.inline
-  def apply(): SchemaCollectionSelector = {
+  inline def apply(): SchemaCollectionSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCollectionSelector]
   }
   
-  @scala.inline
-  implicit class SchemaCollectionSelectorMutableBuilder[Self <: SchemaCollectionSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCollectionSelector](x: Self) {
     
-    @scala.inline
-    def setAllDescendants(value: Boolean): Self = StObject.set(x, "allDescendants", value.asInstanceOf[js.Any])
+    inline def setAllDescendants(value: Boolean): Self = StObject.set(x, "allDescendants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllDescendantsUndefined: Self = StObject.set(x, "allDescendants", js.undefined)
+    inline def setAllDescendantsUndefined: Self = StObject.set(x, "allDescendants", js.undefined)
     
-    @scala.inline
-    def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionIdUndefined: Self = StObject.set(x, "collectionId", js.undefined)
+    inline def setCollectionIdUndefined: Self = StObject.set(x, "collectionId", js.undefined)
   }
 }

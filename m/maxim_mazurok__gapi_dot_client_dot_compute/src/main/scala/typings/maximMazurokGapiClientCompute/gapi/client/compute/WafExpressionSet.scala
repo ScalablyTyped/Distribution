@@ -20,37 +20,27 @@ trait WafExpressionSet extends StObject {
 }
 object WafExpressionSet {
   
-  @scala.inline
-  def apply(): WafExpressionSet = {
+  inline def apply(): WafExpressionSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WafExpressionSet]
   }
   
-  @scala.inline
-  implicit class WafExpressionSetMutableBuilder[Self <: WafExpressionSet] (val x: Self) extends AnyVal {
+  extension [Self <: WafExpressionSet](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setExpressions(value: js.Array[WafExpressionSetExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[WafExpressionSetExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+    inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    @scala.inline
-    def setExpressionsVarargs(value: WafExpressionSetExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: WafExpressionSetExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

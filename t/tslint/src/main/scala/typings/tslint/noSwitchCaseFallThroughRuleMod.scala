@@ -17,9 +17,9 @@ object noSwitchCaseFallThroughRuleMod {
   class NoSwitchCaseFallThroughWalker protected () extends AbstractWalker[Unit] {
     def this(sourceFile: SourceFile, ruleName: String, options: Unit) = this()
     
-    var isFallThroughAllowed: js.Any = js.native
+    /* private */ var isFallThroughAllowed: js.Any = js.native
     
-    var visitSwitchStatement: js.Any = js.native
+    /* private */ var visitSwitchStatement: js.Any = js.native
   }
   
   @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "Rule")
@@ -34,13 +34,11 @@ object noSwitchCaseFallThroughRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FAILURE_STRING(keyword: SyntaxKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(keyword.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING(keyword: SyntaxKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(keyword.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait MutualTlsAuthenticationInput extends StObject {
 }
 object MutualTlsAuthenticationInput {
   
-  @scala.inline
-  def apply(): MutualTlsAuthenticationInput = {
+  inline def apply(): MutualTlsAuthenticationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutualTlsAuthenticationInput]
   }
   
-  @scala.inline
-  implicit class MutualTlsAuthenticationInputMutableBuilder[Self <: MutualTlsAuthenticationInput] (val x: Self) extends AnyVal {
+  extension [Self <: MutualTlsAuthenticationInput](x: Self) {
     
-    @scala.inline
-    def setTruststoreUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "TruststoreUri", value.asInstanceOf[js.Any])
+    inline def setTruststoreUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "TruststoreUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruststoreUriUndefined: Self = StObject.set(x, "TruststoreUri", js.undefined)
+    inline def setTruststoreUriUndefined: Self = StObject.set(x, "TruststoreUri", js.undefined)
     
-    @scala.inline
-    def setTruststoreVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "TruststoreVersion", value.asInstanceOf[js.Any])
+    inline def setTruststoreVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "TruststoreVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruststoreVersionUndefined: Self = StObject.set(x, "TruststoreVersion", js.undefined)
+    inline def setTruststoreVersionUndefined: Self = StObject.set(x, "TruststoreVersion", js.undefined)
   }
 }

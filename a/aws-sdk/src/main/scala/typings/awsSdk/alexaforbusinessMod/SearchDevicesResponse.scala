@@ -23,34 +23,25 @@ trait SearchDevicesResponse extends StObject {
 }
 object SearchDevicesResponse {
   
-  @scala.inline
-  def apply(): SearchDevicesResponse = {
+  inline def apply(): SearchDevicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchDevicesResponse]
   }
   
-  @scala.inline
-  implicit class SearchDevicesResponseMutableBuilder[Self <: SearchDevicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDevicesResponse](x: Self) {
     
-    @scala.inline
-    def setDevices(value: DeviceDataList): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: DeviceDataList): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: DeviceData*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: DeviceData*): Self = StObject.set(x, "Devices", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

@@ -20,34 +20,25 @@ trait ListBonusPaymentsResponse extends StObject {
 }
 object ListBonusPaymentsResponse {
   
-  @scala.inline
-  def apply(): ListBonusPaymentsResponse = {
+  inline def apply(): ListBonusPaymentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBonusPaymentsResponse]
   }
   
-  @scala.inline
-  implicit class ListBonusPaymentsResponseMutableBuilder[Self <: ListBonusPaymentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListBonusPaymentsResponse](x: Self) {
     
-    @scala.inline
-    def setBonusPayments(value: BonusPaymentList): Self = StObject.set(x, "BonusPayments", value.asInstanceOf[js.Any])
+    inline def setBonusPayments(value: BonusPaymentList): Self = StObject.set(x, "BonusPayments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonusPaymentsUndefined: Self = StObject.set(x, "BonusPayments", js.undefined)
+    inline def setBonusPaymentsUndefined: Self = StObject.set(x, "BonusPayments", js.undefined)
     
-    @scala.inline
-    def setBonusPaymentsVarargs(value: BonusPayment*): Self = StObject.set(x, "BonusPayments", js.Array(value :_*))
+    inline def setBonusPaymentsVarargs(value: BonusPayment*): Self = StObject.set(x, "BonusPayments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
   }
 }

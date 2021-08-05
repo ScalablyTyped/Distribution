@@ -20,8 +20,7 @@ trait XDocumentLanguages
 }
 object XDocumentLanguages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDocumentLanguages: (Double, Double) => SafeArray[Locale],
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XDocumentLanguages {
     __obj.asInstanceOf[XDocumentLanguages]
   }
   
-  @scala.inline
-  implicit class XDocumentLanguagesMutableBuilder[Self <: XDocumentLanguages] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentLanguages](x: Self) {
     
-    @scala.inline
-    def setGetDocumentLanguages(value: (Double, Double) => SafeArray[Locale]): Self = StObject.set(x, "getDocumentLanguages", js.Any.fromFunction2(value))
+    inline def setGetDocumentLanguages(value: (Double, Double) => SafeArray[Locale]): Self = StObject.set(x, "getDocumentLanguages", js.Any.fromFunction2(value))
   }
 }

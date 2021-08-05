@@ -23,31 +23,23 @@ trait SetUserPoolMfaConfigResponse extends StObject {
 }
 object SetUserPoolMfaConfigResponse {
   
-  @scala.inline
-  def apply(): SetUserPoolMfaConfigResponse = {
+  inline def apply(): SetUserPoolMfaConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetUserPoolMfaConfigResponse]
   }
   
-  @scala.inline
-  implicit class SetUserPoolMfaConfigResponseMutableBuilder[Self <: SetUserPoolMfaConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetUserPoolMfaConfigResponse](x: Self) {
     
-    @scala.inline
-    def setMfaConfiguration(value: UserPoolMfaType): Self = StObject.set(x, "MfaConfiguration", value.asInstanceOf[js.Any])
+    inline def setMfaConfiguration(value: UserPoolMfaType): Self = StObject.set(x, "MfaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMfaConfigurationUndefined: Self = StObject.set(x, "MfaConfiguration", js.undefined)
+    inline def setMfaConfigurationUndefined: Self = StObject.set(x, "MfaConfiguration", js.undefined)
     
-    @scala.inline
-    def setSmsMfaConfiguration(value: SmsMfaConfigType): Self = StObject.set(x, "SmsMfaConfiguration", value.asInstanceOf[js.Any])
+    inline def setSmsMfaConfiguration(value: SmsMfaConfigType): Self = StObject.set(x, "SmsMfaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMfaConfigurationUndefined: Self = StObject.set(x, "SmsMfaConfiguration", js.undefined)
+    inline def setSmsMfaConfigurationUndefined: Self = StObject.set(x, "SmsMfaConfiguration", js.undefined)
     
-    @scala.inline
-    def setSoftwareTokenMfaConfiguration(value: SoftwareTokenMfaConfigType): Self = StObject.set(x, "SoftwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
+    inline def setSoftwareTokenMfaConfiguration(value: SoftwareTokenMfaConfigType): Self = StObject.set(x, "SoftwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareTokenMfaConfigurationUndefined: Self = StObject.set(x, "SoftwareTokenMfaConfiguration", js.undefined)
+    inline def setSoftwareTokenMfaConfigurationUndefined: Self = StObject.set(x, "SoftwareTokenMfaConfiguration", js.undefined)
   }
 }

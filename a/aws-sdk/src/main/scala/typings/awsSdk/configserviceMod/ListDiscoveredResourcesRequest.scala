@@ -38,49 +38,35 @@ trait ListDiscoveredResourcesRequest extends StObject {
 }
 object ListDiscoveredResourcesRequest {
   
-  @scala.inline
-  def apply(resourceType: ResourceType): ListDiscoveredResourcesRequest = {
+  inline def apply(resourceType: ResourceType): ListDiscoveredResourcesRequest = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDiscoveredResourcesRequest]
   }
   
-  @scala.inline
-  implicit class ListDiscoveredResourcesRequestMutableBuilder[Self <: ListDiscoveredResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDiscoveredResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeDeletedResources(value: Boolean): Self = StObject.set(x, "includeDeletedResources", value.asInstanceOf[js.Any])
+    inline def setIncludeDeletedResources(value: Boolean): Self = StObject.set(x, "includeDeletedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedResourcesUndefined: Self = StObject.set(x, "includeDeletedResources", js.undefined)
+    inline def setIncludeDeletedResourcesUndefined: Self = StObject.set(x, "includeDeletedResources", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceIds(value: ResourceIdList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: ResourceIdList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
+    inline def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
     
-    @scala.inline
-    def setResourceIdsVarargs(value: ResourceId*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: ResourceId*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

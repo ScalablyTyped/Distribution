@@ -33,8 +33,7 @@ trait Whoami
 }
 object Whoami {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientChannelId: String,
     clientDatabaseId: String,
     clientId: String,
@@ -51,40 +50,28 @@ object Whoami {
     __obj.asInstanceOf[Whoami]
   }
   
-  @scala.inline
-  implicit class WhoamiMutableBuilder[Self <: Whoami] (val x: Self) extends AnyVal {
+  extension [Self <: Whoami](x: Self) {
     
-    @scala.inline
-    def setClientChannelId(value: String): Self = StObject.set(x, "clientChannelId", value.asInstanceOf[js.Any])
+    inline def setClientChannelId(value: String): Self = StObject.set(x, "clientChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientDatabaseId(value: String): Self = StObject.set(x, "clientDatabaseId", value.asInstanceOf[js.Any])
+    inline def setClientDatabaseId(value: String): Self = StObject.set(x, "clientDatabaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientLoginName(value: String): Self = StObject.set(x, "clientLoginName", value.asInstanceOf[js.Any])
+    inline def setClientLoginName(value: String): Self = StObject.set(x, "clientLoginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
+    inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientOriginServerId(value: String): Self = StObject.set(x, "clientOriginServerId", value.asInstanceOf[js.Any])
+    inline def setClientOriginServerId(value: String): Self = StObject.set(x, "clientOriginServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUniqueIdentifier(value: String): Self = StObject.set(x, "clientUniqueIdentifier", value.asInstanceOf[js.Any])
+    inline def setClientUniqueIdentifier(value: String): Self = StObject.set(x, "clientUniqueIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverId(value: String): Self = StObject.set(x, "virtualserverId", value.asInstanceOf[js.Any])
+    inline def setVirtualserverId(value: String): Self = StObject.set(x, "virtualserverId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverPort(value: Double): Self = StObject.set(x, "virtualserverPort", value.asInstanceOf[js.Any])
+    inline def setVirtualserverPort(value: Double): Self = StObject.set(x, "virtualserverPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverStatus(value: String): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
+    inline def setVirtualserverStatus(value: String): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverUniqueIdentifier(value: String): Self = StObject.set(x, "virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
+    inline def setVirtualserverUniqueIdentifier(value: String): Self = StObject.set(x, "virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
   }
 }

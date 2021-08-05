@@ -14,27 +14,22 @@ trait BorderBottomProps[TLength] extends StObject {
 }
 object BorderBottomProps {
   
-  @scala.inline
-  def apply[TLength](): BorderBottomProps[TLength] = {
+  inline def apply[TLength](): BorderBottomProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderBottomProps[TLength]]
   }
   
-  @scala.inline
-  implicit class BorderBottomPropsMutableBuilder[Self <: BorderBottomProps[?], TLength] (val x: Self & BorderBottomProps[TLength]) extends AnyVal {
+  extension [Self <: BorderBottomProps[?], TLength](x: Self & BorderBottomProps[TLength]) {
     
-    @scala.inline
-    def setBorderBottom(
+    inline def setBorderBottom(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    @scala.inline
-    def setBorderBottomVarargs(
+    inline def setBorderBottomVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any)*
     ): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
   }

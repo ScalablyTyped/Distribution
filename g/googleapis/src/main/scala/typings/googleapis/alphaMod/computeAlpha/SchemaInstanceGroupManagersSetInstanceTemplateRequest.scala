@@ -15,19 +15,15 @@ trait SchemaInstanceGroupManagersSetInstanceTemplateRequest extends StObject {
 }
 object SchemaInstanceGroupManagersSetInstanceTemplateRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersSetInstanceTemplateRequest = {
+  inline def apply(): SchemaInstanceGroupManagersSetInstanceTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersSetInstanceTemplateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersSetInstanceTemplateRequestMutableBuilder[Self <: SchemaInstanceGroupManagersSetInstanceTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersSetInstanceTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
+    inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
   }
 }

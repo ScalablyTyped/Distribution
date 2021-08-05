@@ -16,22 +16,17 @@ trait SchemaListTriggersResponse extends StObject {
 }
 object SchemaListTriggersResponse {
   
-  @scala.inline
-  def apply(): SchemaListTriggersResponse = {
+  inline def apply(): SchemaListTriggersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListTriggersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListTriggersResponseMutableBuilder[Self <: SchemaListTriggersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListTriggersResponse](x: Self) {
     
-    @scala.inline
-    def setTriggers(value: js.Array[SchemaTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: js.Array[SchemaTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+    inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    @scala.inline
-    def setTriggersVarargs(value: SchemaTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: SchemaTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
   }
 }

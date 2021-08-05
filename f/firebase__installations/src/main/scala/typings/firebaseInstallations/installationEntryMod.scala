@@ -17,20 +17,17 @@ object installationEntryMod {
   trait AuthToken extends StObject
   object AuthToken {
     
-    @scala.inline
-    def CompletedAuthToken(creationTime: Double, expiresIn: Double, token: String): typings.firebaseInstallations.installationEntryMod.CompletedAuthToken = {
+    inline def CompletedAuthToken(creationTime: Double, expiresIn: Double, token: String): typings.firebaseInstallations.installationEntryMod.CompletedAuthToken = {
       val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = 2, token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.CompletedAuthToken]
     }
     
-    @scala.inline
-    def InProgressAuthToken(requestTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressAuthToken = {
+    inline def InProgressAuthToken(requestTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressAuthToken = {
       val __obj = js.Dynamic.literal(requestStatus = 1, requestTime = requestTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.InProgressAuthToken]
     }
     
-    @scala.inline
-    def NotStartedAuthToken(): typings.firebaseInstallations.installationEntryMod.NotStartedAuthToken = {
+    inline def NotStartedAuthToken(): typings.firebaseInstallations.installationEntryMod.NotStartedAuthToken = {
       val __obj = js.Dynamic.literal(requestStatus = 0)
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.NotStartedAuthToken]
     }
@@ -62,26 +59,20 @@ object installationEntryMod {
   }
   object CompletedAuthToken {
     
-    @scala.inline
-    def apply(creationTime: Double, expiresIn: Double, token: String): CompletedAuthToken = {
+    inline def apply(creationTime: Double, expiresIn: Double, token: String): CompletedAuthToken = {
       val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = 2, token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompletedAuthToken]
     }
     
-    @scala.inline
-    implicit class CompletedAuthTokenMutableBuilder[Self <: CompletedAuthToken] (val x: Self) extends AnyVal {
+    extension [Self <: CompletedAuthToken](x: Self) {
       
-      @scala.inline
-      def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestStatus(value: `2`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
+      inline def setRequestStatus(value: `2`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,20 +90,16 @@ object installationEntryMod {
   }
   object InProgressAuthToken {
     
-    @scala.inline
-    def apply(requestTime: Double): InProgressAuthToken = {
+    inline def apply(requestTime: Double): InProgressAuthToken = {
       val __obj = js.Dynamic.literal(requestStatus = 1, requestTime = requestTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[InProgressAuthToken]
     }
     
-    @scala.inline
-    implicit class InProgressAuthTokenMutableBuilder[Self <: InProgressAuthToken] (val x: Self) extends AnyVal {
+    extension [Self <: InProgressAuthToken](x: Self) {
       
-      @scala.inline
-      def setRequestStatus(value: `1`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
+      inline def setRequestStatus(value: `1`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+      inline def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,23 +122,18 @@ object installationEntryMod {
   }
   object InProgressInstallationEntry {
     
-    @scala.inline
-    def apply(fid: String, registrationTime: Double): InProgressInstallationEntry = {
+    inline def apply(fid: String, registrationTime: Double): InProgressInstallationEntry = {
       val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 1, registrationTime = registrationTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[InProgressInstallationEntry]
     }
     
-    @scala.inline
-    implicit class InProgressInstallationEntryMutableBuilder[Self <: InProgressInstallationEntry] (val x: Self) extends AnyVal {
+    extension [Self <: InProgressInstallationEntry](x: Self) {
       
-      @scala.inline
-      def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
+      inline def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationStatus(value: `1`): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
+      inline def setRegistrationStatus(value: `1`): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationTime(value: Double): Self = StObject.set(x, "registrationTime", value.asInstanceOf[js.Any])
+      inline def setRegistrationTime(value: Double): Self = StObject.set(x, "registrationTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,20 +145,17 @@ object installationEntryMod {
   trait InstallationEntry extends StObject
   object InstallationEntry {
     
-    @scala.inline
-    def InProgressInstallationEntry(fid: String, registrationTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry = {
+    inline def InProgressInstallationEntry(fid: String, registrationTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry = {
       val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 1, registrationTime = registrationTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry]
     }
     
-    @scala.inline
-    def RegisteredInstallationEntry(authToken: AuthToken, fid: String, refreshToken: String): typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry = {
+    inline def RegisteredInstallationEntry(authToken: AuthToken, fid: String, refreshToken: String): typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry = {
       val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = 2)
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry]
     }
     
-    @scala.inline
-    def UnregisteredInstallationEntry(fid: String): typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry = {
+    inline def UnregisteredInstallationEntry(fid: String): typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry = {
       val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 0)
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry]
     }
@@ -190,17 +169,14 @@ object installationEntryMod {
   }
   object NotStartedAuthToken {
     
-    @scala.inline
-    def apply(): NotStartedAuthToken = {
+    inline def apply(): NotStartedAuthToken = {
       val __obj = js.Dynamic.literal(requestStatus = 0)
       __obj.asInstanceOf[NotStartedAuthToken]
     }
     
-    @scala.inline
-    implicit class NotStartedAuthTokenMutableBuilder[Self <: NotStartedAuthToken] (val x: Self) extends AnyVal {
+    extension [Self <: NotStartedAuthToken](x: Self) {
       
-      @scala.inline
-      def setRequestStatus(value: `0`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
+      inline def setRequestStatus(value: `0`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,26 +201,20 @@ object installationEntryMod {
   }
   object RegisteredInstallationEntry {
     
-    @scala.inline
-    def apply(authToken: AuthToken, fid: String, refreshToken: String): RegisteredInstallationEntry = {
+    inline def apply(authToken: AuthToken, fid: String, refreshToken: String): RegisteredInstallationEntry = {
       val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = 2)
       __obj.asInstanceOf[RegisteredInstallationEntry]
     }
     
-    @scala.inline
-    implicit class RegisteredInstallationEntryMutableBuilder[Self <: RegisteredInstallationEntry] (val x: Self) extends AnyVal {
+    extension [Self <: RegisteredInstallationEntry](x: Self) {
       
-      @scala.inline
-      def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
+      inline def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationStatus(value: `2`): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
+      inline def setRegistrationStatus(value: `2`): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,14 +226,11 @@ object installationEntryMod {
   trait RequestStatus extends StObject
   object RequestStatus {
     
-    @scala.inline
-    def COMPLETED: `2` = 2.asInstanceOf[`2`]
+    inline def COMPLETED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def IN_PROGRESS: `1` = 1.asInstanceOf[`1`]
+    inline def IN_PROGRESS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NOT_STARTED: `0` = 0.asInstanceOf[`0`]
+    inline def NOT_STARTED: `0` = 0.asInstanceOf[`0`]
   }
   
   trait UnregisteredInstallationEntry
@@ -278,20 +245,16 @@ object installationEntryMod {
   }
   object UnregisteredInstallationEntry {
     
-    @scala.inline
-    def apply(fid: String): UnregisteredInstallationEntry = {
+    inline def apply(fid: String): UnregisteredInstallationEntry = {
       val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 0)
       __obj.asInstanceOf[UnregisteredInstallationEntry]
     }
     
-    @scala.inline
-    implicit class UnregisteredInstallationEntryMutableBuilder[Self <: UnregisteredInstallationEntry] (val x: Self) extends AnyVal {
+    extension [Self <: UnregisteredInstallationEntry](x: Self) {
       
-      @scala.inline
-      def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
+      inline def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationStatus(value: `0`): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
+      inline def setRegistrationStatus(value: `0`): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
     }
   }
 }

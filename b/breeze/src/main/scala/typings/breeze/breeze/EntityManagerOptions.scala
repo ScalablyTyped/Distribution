@@ -22,55 +22,39 @@ trait EntityManagerOptions extends StObject {
 }
 object EntityManagerOptions {
   
-  @scala.inline
-  def apply(): EntityManagerOptions = {
+  inline def apply(): EntityManagerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityManagerOptions]
   }
   
-  @scala.inline
-  implicit class EntityManagerOptionsMutableBuilder[Self <: EntityManagerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EntityManagerOptions](x: Self) {
     
-    @scala.inline
-    def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    inline def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
+    inline def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
     
-    @scala.inline
-    def setKeyGeneratorCtor(value: js.Function): Self = StObject.set(x, "keyGeneratorCtor", value.asInstanceOf[js.Any])
+    inline def setKeyGeneratorCtor(value: js.Function): Self = StObject.set(x, "keyGeneratorCtor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyGeneratorCtorUndefined: Self = StObject.set(x, "keyGeneratorCtor", js.undefined)
+    inline def setKeyGeneratorCtorUndefined: Self = StObject.set(x, "keyGeneratorCtor", js.undefined)
     
-    @scala.inline
-    def setMetadataStore(value: MetadataStore): Self = StObject.set(x, "metadataStore", value.asInstanceOf[js.Any])
+    inline def setMetadataStore(value: MetadataStore): Self = StObject.set(x, "metadataStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataStoreUndefined: Self = StObject.set(x, "metadataStore", js.undefined)
+    inline def setMetadataStoreUndefined: Self = StObject.set(x, "metadataStore", js.undefined)
     
-    @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
+    inline def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
+    inline def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
     
-    @scala.inline
-    def setSaveOptions(value: SaveOptions): Self = StObject.set(x, "saveOptions", value.asInstanceOf[js.Any])
+    inline def setSaveOptions(value: SaveOptions): Self = StObject.set(x, "saveOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveOptionsUndefined: Self = StObject.set(x, "saveOptions", js.undefined)
+    inline def setSaveOptionsUndefined: Self = StObject.set(x, "saveOptions", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setValidationOptions(value: ValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
+    inline def setValidationOptions(value: ValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
+    inline def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeregisterResourceRequest extends StObject {
 }
 object DeregisterResourceRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArnString): DeregisterResourceRequest = {
+  inline def apply(ResourceArn: ResourceArnString): DeregisterResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterResourceRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterResourceRequestMutableBuilder[Self <: DeregisterResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterResourceRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

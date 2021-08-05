@@ -30,34 +30,25 @@ trait AudioFileConfig extends StObject {
 }
 object AudioFileConfig {
   
-  @scala.inline
-  def apply(key: String): AudioFileConfig = {
+  inline def apply(key: String): AudioFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioFileConfig]
   }
   
-  @scala.inline
-  implicit class AudioFileConfigMutableBuilder[Self <: AudioFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AudioFileConfig](x: Self) {
     
-    @scala.inline
-    def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
+    inline def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioContextUndefined: Self = StObject.set(x, "audioContext", js.undefined)
+    inline def setAudioContextUndefined: Self = StObject.set(x, "audioContext", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlConfig(value: String): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
+    inline def setUrlConfig(value: String): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlConfigUndefined: Self = StObject.set(x, "urlConfig", js.undefined)
+    inline def setUrlConfigUndefined: Self = StObject.set(x, "urlConfig", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

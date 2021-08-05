@@ -6,17 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(id: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(id: String, relativeTo: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(id: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(id: String, relativeTo: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("require-relative", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolve(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(id.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def resolve(id: String, relativeTo: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(id.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolve(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(id.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolve(id: String, relativeTo: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(id.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[String]
 }

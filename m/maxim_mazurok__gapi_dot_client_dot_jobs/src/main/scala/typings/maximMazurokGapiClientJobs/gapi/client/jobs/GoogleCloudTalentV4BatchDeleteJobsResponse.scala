@@ -11,22 +11,17 @@ trait GoogleCloudTalentV4BatchDeleteJobsResponse extends StObject {
 }
 object GoogleCloudTalentV4BatchDeleteJobsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4BatchDeleteJobsResponse = {
+  inline def apply(): GoogleCloudTalentV4BatchDeleteJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4BatchDeleteJobsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4BatchDeleteJobsResponseMutableBuilder[Self <: GoogleCloudTalentV4BatchDeleteJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4BatchDeleteJobsResponse](x: Self) {
     
-    @scala.inline
-    def setJobResults(value: js.Array[GoogleCloudTalentV4JobResult]): Self = StObject.set(x, "jobResults", value.asInstanceOf[js.Any])
+    inline def setJobResults(value: js.Array[GoogleCloudTalentV4JobResult]): Self = StObject.set(x, "jobResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobResultsUndefined: Self = StObject.set(x, "jobResults", js.undefined)
+    inline def setJobResultsUndefined: Self = StObject.set(x, "jobResults", js.undefined)
     
-    @scala.inline
-    def setJobResultsVarargs(value: GoogleCloudTalentV4JobResult*): Self = StObject.set(x, "jobResults", js.Array(value :_*))
+    inline def setJobResultsVarargs(value: GoogleCloudTalentV4JobResult*): Self = StObject.set(x, "jobResults", js.Array(value :_*))
   }
 }

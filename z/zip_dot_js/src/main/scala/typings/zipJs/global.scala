@@ -101,38 +101,32 @@ object global {
       extends StObject
          with typings.zipJs.zip.ZipWriter
     
-    @scala.inline
-    def createReader(
+    inline def createReader(
       reader: typings.zipJs.zip.Reader,
       callback: js.Function1[/* zipReader */ typings.zipJs.zip.ZipReader, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReader")(reader.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def createReader(
+    inline def createReader(
       reader: typings.zipJs.zip.Reader,
       callback: js.Function1[/* zipReader */ typings.zipJs.zip.ZipReader, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReader")(reader.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def createWriter(
+    inline def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def createWriter(
+    inline def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def createWriter(
+    inline def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit],
       dontDeflate: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontDeflate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def createWriter(
+    inline def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
       onerror: Unit,
@@ -142,8 +136,7 @@ object global {
     @JSGlobal("zip.useWebWorkers")
     @js.native
     def useWebWorkers: Boolean = js.native
-    @scala.inline
-    def useWebWorkers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useWebWorkers")(x.asInstanceOf[js.Any])
+    inline def useWebWorkers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useWebWorkers")(x.asInstanceOf[js.Any])
     
     object workerScripts {
       
@@ -154,20 +147,17 @@ object global {
       @JSGlobal("zip.workerScripts.deflater")
       @js.native
       def deflater: js.UndefOr[js.Array[String]] = js.native
-      @scala.inline
-      def deflater_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deflater")(x.asInstanceOf[js.Any])
+      inline def deflater_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deflater")(x.asInstanceOf[js.Any])
       
       @JSGlobal("zip.workerScripts.inflater")
       @js.native
       def inflater: js.UndefOr[js.Array[String]] = js.native
-      @scala.inline
-      def inflater_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inflater")(x.asInstanceOf[js.Any])
+      inline def inflater_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inflater")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("zip.workerScriptsPath")
     @js.native
     def workerScriptsPath: String = js.native
-    @scala.inline
-    def workerScriptsPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workerScriptsPath")(x.asInstanceOf[js.Any])
+    inline def workerScriptsPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workerScriptsPath")(x.asInstanceOf[js.Any])
   }
 }

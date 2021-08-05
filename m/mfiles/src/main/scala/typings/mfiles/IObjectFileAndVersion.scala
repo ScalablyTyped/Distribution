@@ -12,19 +12,15 @@ trait IObjectFileAndVersion extends StObject {
 }
 object IObjectFileAndVersion {
   
-  @scala.inline
-  def apply(ObjectFile: IObjectFile, ObjectVersion: IObjectVersionAndProperties): IObjectFileAndVersion = {
+  inline def apply(ObjectFile: IObjectFile, ObjectVersion: IObjectVersionAndProperties): IObjectFileAndVersion = {
     val __obj = js.Dynamic.literal(ObjectFile = ObjectFile.asInstanceOf[js.Any], ObjectVersion = ObjectVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectFileAndVersion]
   }
   
-  @scala.inline
-  implicit class IObjectFileAndVersionMutableBuilder[Self <: IObjectFileAndVersion] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectFileAndVersion](x: Self) {
     
-    @scala.inline
-    def setObjectFile(value: IObjectFile): Self = StObject.set(x, "ObjectFile", value.asInstanceOf[js.Any])
+    inline def setObjectFile(value: IObjectFile): Self = StObject.set(x, "ObjectFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersion(value: IObjectVersionAndProperties): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: IObjectVersionAndProperties): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
   }
 }

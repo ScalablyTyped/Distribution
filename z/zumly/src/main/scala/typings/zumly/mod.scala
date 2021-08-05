@@ -63,35 +63,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(initialView: String, mount: String, views: Record[String, WithRender | String]): Options = {
+    inline def apply(initialView: String, mount: String, views: Record[String, WithRender | String]): Options = {
       val __obj = js.Dynamic.literal(initialView = initialView.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setInitialView(value: String): Self = StObject.set(x, "initialView", value.asInstanceOf[js.Any])
+      inline def setInitialView(value: String): Self = StObject.set(x, "initialView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitions(value: Cover): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+      inline def setTransitions(value: Cover): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+      inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
       
-      @scala.inline
-      def setViews(value: Record[String, WithRender | String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: Record[String, WithRender | String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,8 +100,7 @@ object mod {
   }
   object zumly {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       init: () => js.Promise[Unit],
       zoomIn: Element => js.Promise[Unit],
       zoomLevel: () => Double,
@@ -120,20 +110,15 @@ object mod {
       __obj.asInstanceOf[typings.zumly.mod.zumly]
     }
     
-    @scala.inline
-    implicit class zumlyMutableBuilder[Self <: typings.zumly.mod.zumly] (val x: Self) extends AnyVal {
+    extension [Self <: typings.zumly.mod.zumly](x: Self) {
       
-      @scala.inline
-      def setInit(value: () => js.Promise[Unit]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => js.Promise[Unit]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoomIn(value: Element => js.Promise[Unit]): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
+      inline def setZoomIn(value: Element => js.Promise[Unit]): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomLevel(value: () => Double): Self = StObject.set(x, "zoomLevel", js.Any.fromFunction0(value))
+      inline def setZoomLevel(value: () => Double): Self = StObject.set(x, "zoomLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
+      inline def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
     }
   }
 }

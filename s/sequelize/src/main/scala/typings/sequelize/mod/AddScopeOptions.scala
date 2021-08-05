@@ -16,17 +16,14 @@ trait AddScopeOptions extends StObject {
 }
 object AddScopeOptions {
   
-  @scala.inline
-  def apply(`override`: Boolean): AddScopeOptions = {
+  inline def apply(`override`: Boolean): AddScopeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddScopeOptions]
   }
   
-  @scala.inline
-  implicit class AddScopeOptionsMutableBuilder[Self <: AddScopeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddScopeOptions](x: Self) {
     
-    @scala.inline
-    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
   }
 }

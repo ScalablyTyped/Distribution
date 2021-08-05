@@ -23,22 +23,17 @@ trait LaunchTemplateMetadataOptions extends StObject {
 }
 object LaunchTemplateMetadataOptions {
   
-  @scala.inline
-  def apply(httpEndpoint: String, httpPutResponseHopLimit: Double, httpTokens: String): LaunchTemplateMetadataOptions = {
+  inline def apply(httpEndpoint: String, httpPutResponseHopLimit: Double, httpTokens: String): LaunchTemplateMetadataOptions = {
     val __obj = js.Dynamic.literal(httpEndpoint = httpEndpoint.asInstanceOf[js.Any], httpPutResponseHopLimit = httpPutResponseHopLimit.asInstanceOf[js.Any], httpTokens = httpTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateMetadataOptions]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateMetadataOptionsMutableBuilder[Self <: LaunchTemplateMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setHttpEndpoint(value: String): Self = StObject.set(x, "httpEndpoint", value.asInstanceOf[js.Any])
+    inline def setHttpEndpoint(value: String): Self = StObject.set(x, "httpEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpPutResponseHopLimit(value: Double): Self = StObject.set(x, "httpPutResponseHopLimit", value.asInstanceOf[js.Any])
+    inline def setHttpPutResponseHopLimit(value: Double): Self = StObject.set(x, "httpPutResponseHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpTokens(value: String): Self = StObject.set(x, "httpTokens", value.asInstanceOf[js.Any])
+    inline def setHttpTokens(value: String): Self = StObject.set(x, "httpTokens", value.asInstanceOf[js.Any])
   }
 }

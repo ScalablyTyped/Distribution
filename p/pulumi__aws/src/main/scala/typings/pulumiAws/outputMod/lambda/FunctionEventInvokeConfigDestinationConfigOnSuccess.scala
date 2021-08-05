@@ -13,16 +13,13 @@ trait FunctionEventInvokeConfigDestinationConfigOnSuccess extends StObject {
 }
 object FunctionEventInvokeConfigDestinationConfigOnSuccess {
   
-  @scala.inline
-  def apply(destination: String): FunctionEventInvokeConfigDestinationConfigOnSuccess = {
+  inline def apply(destination: String): FunctionEventInvokeConfigDestinationConfigOnSuccess = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionEventInvokeConfigDestinationConfigOnSuccess]
   }
   
-  @scala.inline
-  implicit class FunctionEventInvokeConfigDestinationConfigOnSuccessMutableBuilder[Self <: FunctionEventInvokeConfigDestinationConfigOnSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionEventInvokeConfigDestinationConfigOnSuccess](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

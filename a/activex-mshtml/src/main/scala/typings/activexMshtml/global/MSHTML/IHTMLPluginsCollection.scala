@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLPluginsCollection")
 @js.native
-class IHTMLPluginsCollection protected ()
+/* private */ class IHTMLPluginsCollection ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLPluginsCollection

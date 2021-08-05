@@ -17,19 +17,15 @@ trait SchemaEncryptionConfig extends StObject {
 }
 object SchemaEncryptionConfig {
   
-  @scala.inline
-  def apply(): SchemaEncryptionConfig = {
+  inline def apply(): SchemaEncryptionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEncryptionConfig]
   }
   
-  @scala.inline
-  implicit class SchemaEncryptionConfigMutableBuilder[Self <: SchemaEncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setGcePdKmsKeyName(value: String): Self = StObject.set(x, "gcePdKmsKeyName", value.asInstanceOf[js.Any])
+    inline def setGcePdKmsKeyName(value: String): Self = StObject.set(x, "gcePdKmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcePdKmsKeyNameUndefined: Self = StObject.set(x, "gcePdKmsKeyName", js.undefined)
+    inline def setGcePdKmsKeyNameUndefined: Self = StObject.set(x, "gcePdKmsKeyName", js.undefined)
   }
 }

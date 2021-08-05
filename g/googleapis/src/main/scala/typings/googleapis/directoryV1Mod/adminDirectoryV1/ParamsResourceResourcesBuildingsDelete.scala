@@ -31,31 +31,23 @@ trait ParamsResourceResourcesBuildingsDelete
 }
 object ParamsResourceResourcesBuildingsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceResourcesBuildingsDelete = {
+  inline def apply(): ParamsResourceResourcesBuildingsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceResourcesBuildingsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceResourcesBuildingsDeleteMutableBuilder[Self <: ParamsResourceResourcesBuildingsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceResourcesBuildingsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
+    inline def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
+    inline def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
   }
 }

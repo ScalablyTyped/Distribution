@@ -42,40 +42,29 @@ trait CountryWhitelist extends StObject {
 }
 object CountryWhitelist {
   
-  @scala.inline
-  def apply(): CountryWhitelist = {
+  inline def apply(): CountryWhitelist = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountryWhitelist]
   }
   
-  @scala.inline
-  implicit class CountryWhitelistMutableBuilder[Self <: CountryWhitelist] (val x: Self) extends AnyVal {
+  extension [Self <: CountryWhitelist](x: Self) {
     
-    @scala.inline
-    def setCountryWhitelist(value: js.Array[String]): Self = StObject.set(x, "countryWhitelist", value.asInstanceOf[js.Any])
+    inline def setCountryWhitelist(value: js.Array[String]): Self = StObject.set(x, "countryWhitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryWhitelistUndefined: Self = StObject.set(x, "countryWhitelist", js.undefined)
+    inline def setCountryWhitelistUndefined: Self = StObject.set(x, "countryWhitelist", js.undefined)
     
-    @scala.inline
-    def setCountryWhitelistVarargs(value: String*): Self = StObject.set(x, "countryWhitelist", js.Array(value :_*))
+    inline def setCountryWhitelistVarargs(value: String*): Self = StObject.set(x, "countryWhitelist", js.Array(value :_*))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setNotWebReady(value: Boolean): Self = StObject.set(x, "notWebReady", value.asInstanceOf[js.Any])
+    inline def setNotWebReady(value: Boolean): Self = StObject.set(x, "notWebReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotWebReadyUndefined: Self = StObject.set(x, "notWebReady", js.undefined)
+    inline def setNotWebReadyUndefined: Self = StObject.set(x, "notWebReady", js.undefined)
   }
 }

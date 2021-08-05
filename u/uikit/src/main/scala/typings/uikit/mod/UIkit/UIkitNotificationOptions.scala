@@ -30,43 +30,31 @@ trait UIkitNotificationOptions extends StObject {
 }
 object UIkitNotificationOptions {
   
-  @scala.inline
-  def apply(): UIkitNotificationOptions = {
+  inline def apply(): UIkitNotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitNotificationOptions]
   }
   
-  @scala.inline
-  implicit class UIkitNotificationOptionsMutableBuilder[Self <: UIkitNotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitNotificationOptions](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPos(value: `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
+    inline def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
     
-    @scala.inline
-    def setStatus(value: primary | success | warning | danger): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: primary | success | warning | danger): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

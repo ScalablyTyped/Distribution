@@ -76,49 +76,33 @@ object Position {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createAfter(item: Item): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createAfter")(item.asInstanceOf[js.Any]).asInstanceOf[Position]
+  inline def createAfter(item: Item): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createAfter")(item.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /* static member */
-  @scala.inline
-  def createAt(itemOrPosition: Item): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def createAt(itemOrPosition: Item, offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createAt(itemOrPosition: Position): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def createAt(itemOrPosition: Position, offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt(itemOrPosition: Item): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createAt(itemOrPosition: Item, offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt(itemOrPosition: Position): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createAt(itemOrPosition: Position, offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createAt_after(itemOrPosition: Item, offset: after): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createAt_after(itemOrPosition: Position, offset: after): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt_after(itemOrPosition: Item, offset: after): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt_after(itemOrPosition: Position, offset: after): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createAt_before(itemOrPosition: Item, offset: before): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createAt_before(itemOrPosition: Position, offset: before): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt_before(itemOrPosition: Item, offset: before): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt_before(itemOrPosition: Position, offset: before): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createAt_end(itemOrPosition: Item, offset: end): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createAt_end(itemOrPosition: Position, offset: end): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt_end(itemOrPosition: Item, offset: end): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAt_end(itemOrPosition: Position, offset: end): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def createBefore(item: Item): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createBefore")(item.asInstanceOf[js.Any]).asInstanceOf[Position]
+  inline def createBefore(item: Item): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createBefore")(item.asInstanceOf[js.Any]).asInstanceOf[Position]
   
-  @scala.inline
-  def createFromParentAndOffset(parent: DocumentFragment, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromParentAndOffset")(parent.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
+  inline def createFromParentAndOffset(parent: DocumentFragment, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromParentAndOffset")(parent.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
   /* static member */
-  @scala.inline
-  def createFromParentAndOffset(parent: Element, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromParentAndOffset")(parent.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
+  inline def createFromParentAndOffset(parent: Element, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromParentAndOffset")(parent.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
   
   /* static member */
-  @scala.inline
-  def createFromPosition(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPosition")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
+  inline def createFromPosition(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPosition")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /* static member */
-  @scala.inline
-  def fromJSON(json: js.Object, doc: Document): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Position]
+  inline def fromJSON(json: js.Object, doc: Document): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Position]
 }

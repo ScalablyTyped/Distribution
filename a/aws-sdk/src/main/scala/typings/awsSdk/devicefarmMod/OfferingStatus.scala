@@ -28,37 +28,27 @@ trait OfferingStatus extends StObject {
 }
 object OfferingStatus {
   
-  @scala.inline
-  def apply(): OfferingStatus = {
+  inline def apply(): OfferingStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OfferingStatus]
   }
   
-  @scala.inline
-  implicit class OfferingStatusMutableBuilder[Self <: OfferingStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OfferingStatus](x: Self) {
     
-    @scala.inline
-    def setEffectiveOn(value: DateTime): Self = StObject.set(x, "effectiveOn", value.asInstanceOf[js.Any])
+    inline def setEffectiveOn(value: DateTime): Self = StObject.set(x, "effectiveOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveOnUndefined: Self = StObject.set(x, "effectiveOn", js.undefined)
+    inline def setEffectiveOnUndefined: Self = StObject.set(x, "effectiveOn", js.undefined)
     
-    @scala.inline
-    def setOffering(value: Offering): Self = StObject.set(x, "offering", value.asInstanceOf[js.Any])
+    inline def setOffering(value: Offering): Self = StObject.set(x, "offering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingUndefined: Self = StObject.set(x, "offering", js.undefined)
+    inline def setOfferingUndefined: Self = StObject.set(x, "offering", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setType(value: OfferingTransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OfferingTransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -44,14 +44,11 @@ object buttonGroupMod {
     @js.native
     val ^ : MODE = js.native
     
-    @scala.inline
-    implicit class MODEMutableBuilder[Self <: MODE] (val x: Self) extends AnyVal {
+    extension [Self <: MODE](x: Self) {
       
-      @scala.inline
-      def setCheckbox(value: checkbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+      inline def setCheckbox(value: checkbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadio(value: radio): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+      inline def setRadio(value: radio): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,11 +70,9 @@ object buttonGroupMod {
     @js.native
     val ^ : STATE_CHANGE_TYPE = js.native
     
-    @scala.inline
-    implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: STATE_CHANGE_TYPE](x: Self) {
       
-      @scala.inline
-      def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,22 +108,18 @@ object buttonGroupMod {
   }
   object ButtonGroupOverrides {
     
-    @scala.inline
-    def apply(): ButtonGroupOverrides = {
+    inline def apply(): ButtonGroupOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonGroupOverrides]
     }
     
-    @scala.inline
-    implicit class ButtonGroupOverridesMutableBuilder[Self <: ButtonGroupOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonGroupOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -162,77 +153,54 @@ object buttonGroupMod {
   }
   object ButtonGroupProps {
     
-    @scala.inline
-    def apply(): ButtonGroupProps = {
+    inline def apply(): ButtonGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonGroupProps]
     }
     
-    @scala.inline
-    implicit class ButtonGroupPropsMutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonGroupProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setKind(value: primary | secondary | tertiary | minimal): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: primary | secondary | tertiary | minimal): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMode(value: checkbox | radio): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: checkbox | radio): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double) => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double) => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: ButtonGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: ButtonGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
       
-      @scala.inline
-      def setShape(value: pill | default_ | square | round | circle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: pill | default_ | square | round | circle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setSize(value: compact | default_ | large_ | mini): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: compact | default_ | large_ | mini): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -242,20 +210,16 @@ object buttonGroupMod {
   }
   object InitialState {
     
-    @scala.inline
-    def apply(selected: Double | js.Array[Double]): InitialState = {
+    inline def apply(selected: Double | js.Array[Double]): InitialState = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialState]
     }
     
-    @scala.inline
-    implicit class InitialStateMutableBuilder[Self <: InitialState] (val x: Self) extends AnyVal {
+    extension [Self <: InitialState](x: Self) {
       
-      @scala.inline
-      def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
     }
   }
   
@@ -265,20 +229,16 @@ object buttonGroupMod {
   }
   object State {
     
-    @scala.inline
-    def apply(selected: js.Array[Double]): State = {
+    inline def apply(selected: js.Array[Double]): State = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setSelected(value: js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
     }
   }
   
@@ -299,28 +259,22 @@ object buttonGroupMod {
   }
   object StatefulButtonGroupProps {
     
-    @scala.inline
-    def apply(): StatefulButtonGroupProps = {
+    inline def apply(): StatefulButtonGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulButtonGroupProps]
     }
     
-    @scala.inline
-    implicit class StatefulButtonGroupPropsMutableBuilder[Self <: StatefulButtonGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulButtonGroupProps](x: Self) {
       
-      @scala.inline
-      def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setStateReducer(
+      inline def setStateReducer(
         value: (/* stateType */ STATE_CHANGE_TYPE, /* nextState */ State, /* currentState */ State) => State
       ): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
 }

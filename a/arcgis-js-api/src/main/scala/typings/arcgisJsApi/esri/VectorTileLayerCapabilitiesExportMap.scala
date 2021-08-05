@@ -19,8 +19,7 @@ trait VectorTileLayerCapabilitiesExportMap
 }
 object VectorTileLayerCapabilitiesExportMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     maxExportTilesCount: Double,
@@ -30,10 +29,8 @@ object VectorTileLayerCapabilitiesExportMap {
     __obj.asInstanceOf[VectorTileLayerCapabilitiesExportMap]
   }
   
-  @scala.inline
-  implicit class VectorTileLayerCapabilitiesExportMapMutableBuilder[Self <: VectorTileLayerCapabilitiesExportMap] (val x: Self) extends AnyVal {
+  extension [Self <: VectorTileLayerCapabilitiesExportMap](x: Self) {
     
-    @scala.inline
-    def setMaxExportTilesCount(value: Double): Self = StObject.set(x, "maxExportTilesCount", value.asInstanceOf[js.Any])
+    inline def setMaxExportTilesCount(value: Double): Self = StObject.set(x, "maxExportTilesCount", value.asInstanceOf[js.Any])
   }
 }

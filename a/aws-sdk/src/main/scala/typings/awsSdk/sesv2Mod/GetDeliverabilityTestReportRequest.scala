@@ -13,16 +13,13 @@ trait GetDeliverabilityTestReportRequest extends StObject {
 }
 object GetDeliverabilityTestReportRequest {
   
-  @scala.inline
-  def apply(ReportId: ReportId): GetDeliverabilityTestReportRequest = {
+  inline def apply(ReportId: ReportId): GetDeliverabilityTestReportRequest = {
     val __obj = js.Dynamic.literal(ReportId = ReportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeliverabilityTestReportRequest]
   }
   
-  @scala.inline
-  implicit class GetDeliverabilityTestReportRequestMutableBuilder[Self <: GetDeliverabilityTestReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeliverabilityTestReportRequest](x: Self) {
     
-    @scala.inline
-    def setReportId(value: ReportId): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: ReportId): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
   }
 }

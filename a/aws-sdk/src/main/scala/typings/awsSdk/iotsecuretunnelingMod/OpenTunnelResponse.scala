@@ -28,37 +28,27 @@ trait OpenTunnelResponse extends StObject {
 }
 object OpenTunnelResponse {
   
-  @scala.inline
-  def apply(): OpenTunnelResponse = {
+  inline def apply(): OpenTunnelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenTunnelResponse]
   }
   
-  @scala.inline
-  implicit class OpenTunnelResponseMutableBuilder[Self <: OpenTunnelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OpenTunnelResponse](x: Self) {
     
-    @scala.inline
-    def setDestinationAccessToken(value: ClientAccessToken): Self = StObject.set(x, "destinationAccessToken", value.asInstanceOf[js.Any])
+    inline def setDestinationAccessToken(value: ClientAccessToken): Self = StObject.set(x, "destinationAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationAccessTokenUndefined: Self = StObject.set(x, "destinationAccessToken", js.undefined)
+    inline def setDestinationAccessTokenUndefined: Self = StObject.set(x, "destinationAccessToken", js.undefined)
     
-    @scala.inline
-    def setSourceAccessToken(value: ClientAccessToken): Self = StObject.set(x, "sourceAccessToken", value.asInstanceOf[js.Any])
+    inline def setSourceAccessToken(value: ClientAccessToken): Self = StObject.set(x, "sourceAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAccessTokenUndefined: Self = StObject.set(x, "sourceAccessToken", js.undefined)
+    inline def setSourceAccessTokenUndefined: Self = StObject.set(x, "sourceAccessToken", js.undefined)
     
-    @scala.inline
-    def setTunnelArn(value: TunnelArn): Self = StObject.set(x, "tunnelArn", value.asInstanceOf[js.Any])
+    inline def setTunnelArn(value: TunnelArn): Self = StObject.set(x, "tunnelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelArnUndefined: Self = StObject.set(x, "tunnelArn", js.undefined)
+    inline def setTunnelArnUndefined: Self = StObject.set(x, "tunnelArn", js.undefined)
     
-    @scala.inline
-    def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
+    inline def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelIdUndefined: Self = StObject.set(x, "tunnelId", js.undefined)
+    inline def setTunnelIdUndefined: Self = StObject.set(x, "tunnelId", js.undefined)
   }
 }

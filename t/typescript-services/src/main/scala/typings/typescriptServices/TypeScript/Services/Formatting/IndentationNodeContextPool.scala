@@ -16,7 +16,7 @@ trait IndentationNodeContextPool extends StObject {
     childIndentationLevelDelta: Double
   ): IndentationNodeContext = js.native
   
-  var nodes: js.Any = js.native
+  /* private */ var nodes: js.Any = js.native
   
   def releaseNode(node: IndentationNodeContext): Unit = js.native
   def releaseNode(node: IndentationNodeContext, recursive: Boolean): Unit = js.native

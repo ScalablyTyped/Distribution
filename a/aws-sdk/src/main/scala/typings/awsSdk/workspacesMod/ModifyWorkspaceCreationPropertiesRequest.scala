@@ -18,19 +18,15 @@ trait ModifyWorkspaceCreationPropertiesRequest extends StObject {
 }
 object ModifyWorkspaceCreationPropertiesRequest {
   
-  @scala.inline
-  def apply(ResourceId: DirectoryId, WorkspaceCreationProperties: WorkspaceCreationProperties): ModifyWorkspaceCreationPropertiesRequest = {
+  inline def apply(ResourceId: DirectoryId, WorkspaceCreationProperties: WorkspaceCreationProperties): ModifyWorkspaceCreationPropertiesRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], WorkspaceCreationProperties = WorkspaceCreationProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyWorkspaceCreationPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyWorkspaceCreationPropertiesRequestMutableBuilder[Self <: ModifyWorkspaceCreationPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyWorkspaceCreationPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceCreationProperties(value: WorkspaceCreationProperties): Self = StObject.set(x, "WorkspaceCreationProperties", value.asInstanceOf[js.Any])
+    inline def setWorkspaceCreationProperties(value: WorkspaceCreationProperties): Self = StObject.set(x, "WorkspaceCreationProperties", value.asInstanceOf[js.Any])
   }
 }

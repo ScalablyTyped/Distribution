@@ -12,25 +12,19 @@ trait SchemaAuthToken extends StObject {
 }
 object SchemaAuthToken {
   
-  @scala.inline
-  def apply(): SchemaAuthToken = {
+  inline def apply(): SchemaAuthToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthToken]
   }
   
-  @scala.inline
-  implicit class SchemaAuthTokenMutableBuilder[Self <: SchemaAuthToken] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthToken](x: Self) {
     
-    @scala.inline
-    def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+    inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
+    inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

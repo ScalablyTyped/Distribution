@@ -22,49 +22,35 @@ trait IChartistAutoScaleAxis
 }
 object IChartistAutoScaleAxis {
   
-  @scala.inline
-  def apply(): IChartistAutoScaleAxis = {
+  inline def apply(): IChartistAutoScaleAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChartistAutoScaleAxis]
   }
   
-  @scala.inline
-  implicit class IChartistAutoScaleAxisMutableBuilder[Self <: IChartistAutoScaleAxis] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistAutoScaleAxis](x: Self) {
     
-    @scala.inline
-    def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
+    inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
-    @scala.inline
-    def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+    inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
     
-    @scala.inline
-    def setOnlyInteger(value: Boolean): Self = StObject.set(x, "onlyInteger", value.asInstanceOf[js.Any])
+    inline def setOnlyInteger(value: Boolean): Self = StObject.set(x, "onlyInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyIntegerUndefined: Self = StObject.set(x, "onlyInteger", js.undefined)
+    inline def setOnlyIntegerUndefined: Self = StObject.set(x, "onlyInteger", js.undefined)
     
-    @scala.inline
-    def setReferenceValue(value: Double): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
+    inline def setReferenceValue(value: Double): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceValueUndefined: Self = StObject.set(x, "referenceValue", js.undefined)
+    inline def setReferenceValueUndefined: Self = StObject.set(x, "referenceValue", js.undefined)
     
-    @scala.inline
-    def setScaleMinSpace(value: Double): Self = StObject.set(x, "scaleMinSpace", value.asInstanceOf[js.Any])
+    inline def setScaleMinSpace(value: Double): Self = StObject.set(x, "scaleMinSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMinSpaceUndefined: Self = StObject.set(x, "scaleMinSpace", js.undefined)
+    inline def setScaleMinSpaceUndefined: Self = StObject.set(x, "scaleMinSpace", js.undefined)
     
-    @scala.inline
-    def setType(value: IAutoScaleAxisStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IAutoScaleAxisStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

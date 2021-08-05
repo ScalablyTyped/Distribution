@@ -123,17 +123,14 @@ object mod {
   }
   object CanvasGradient {
     
-    @scala.inline
-    def apply(addColorStop: (Double, String) => Unit): CanvasGradient = {
+    inline def apply(addColorStop: (Double, String) => Unit): CanvasGradient = {
       val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop))
       __obj.asInstanceOf[CanvasGradient]
     }
     
-    @scala.inline
-    implicit class CanvasGradientMutableBuilder[Self <: CanvasGradient] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasGradient](x: Self) {
       
-      @scala.inline
-      def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
+      inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
     }
   }
   
@@ -156,44 +153,32 @@ object mod {
   }
   object CanvasProps {
     
-    @scala.inline
-    def apply(ref: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): CanvasProps = {
+    inline def apply(ref: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): CanvasProps = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[CanvasProps]
     }
     
-    @scala.inline
-    implicit class CanvasPropsMutableBuilder[Self <: CanvasProps] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasProps](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setOriginWhitelist(value: js.Array[String]): Self = StObject.set(x, "originWhitelist", value.asInstanceOf[js.Any])
+      inline def setOriginWhitelist(value: js.Array[String]): Self = StObject.set(x, "originWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginWhitelistUndefined: Self = StObject.set(x, "originWhitelist", js.undefined)
+      inline def setOriginWhitelistUndefined: Self = StObject.set(x, "originWhitelist", js.undefined)
       
-      @scala.inline
-      def setOriginWhitelistVarargs(value: String*): Self = StObject.set(x, "originWhitelist", js.Array(value :_*))
+      inline def setOriginWhitelistVarargs(value: String*): Self = StObject.set(x, "originWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setRef(value: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* canvas */ Canvas => js.Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* canvas */ Canvas => js.Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -456,86 +441,60 @@ object mod {
   }
   object DOMMatrix2DInit {
     
-    @scala.inline
-    def apply(): DOMMatrix2DInit = {
+    inline def apply(): DOMMatrix2DInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DOMMatrix2DInit]
     }
     
-    @scala.inline
-    implicit class DOMMatrix2DInitMutableBuilder[Self <: DOMMatrix2DInit] (val x: Self) extends AnyVal {
+    extension [Self <: DOMMatrix2DInit](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
       
-      @scala.inline
-      def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+      inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
       
-      @scala.inline
-      def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      @scala.inline
-      def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+      inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
       
-      @scala.inline
-      def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
+      inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM11Undefined: Self = StObject.set(x, "m11", js.undefined)
+      inline def setM11Undefined: Self = StObject.set(x, "m11", js.undefined)
       
-      @scala.inline
-      def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
+      inline def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM12Undefined: Self = StObject.set(x, "m12", js.undefined)
+      inline def setM12Undefined: Self = StObject.set(x, "m12", js.undefined)
       
-      @scala.inline
-      def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
+      inline def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM21Undefined: Self = StObject.set(x, "m21", js.undefined)
+      inline def setM21Undefined: Self = StObject.set(x, "m21", js.undefined)
       
-      @scala.inline
-      def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
+      inline def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM22Undefined: Self = StObject.set(x, "m22", js.undefined)
+      inline def setM22Undefined: Self = StObject.set(x, "m22", js.undefined)
       
-      @scala.inline
-      def setM41(value: Double): Self = StObject.set(x, "m41", value.asInstanceOf[js.Any])
+      inline def setM41(value: Double): Self = StObject.set(x, "m41", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM41Undefined: Self = StObject.set(x, "m41", js.undefined)
+      inline def setM41Undefined: Self = StObject.set(x, "m41", js.undefined)
       
-      @scala.inline
-      def setM42(value: Double): Self = StObject.set(x, "m42", value.asInstanceOf[js.Any])
+      inline def setM42(value: Double): Self = StObject.set(x, "m42", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM42Undefined: Self = StObject.set(x, "m42", js.undefined)
+      inline def setM42Undefined: Self = StObject.set(x, "m42", js.undefined)
     }
   }
 }

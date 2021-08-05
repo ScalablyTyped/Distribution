@@ -23,28 +23,21 @@ trait ExecuteChangeSetInput extends StObject {
 }
 object ExecuteChangeSetInput {
   
-  @scala.inline
-  def apply(ChangeSetName: ChangeSetNameOrId): ExecuteChangeSetInput = {
+  inline def apply(ChangeSetName: ChangeSetNameOrId): ExecuteChangeSetInput = {
     val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteChangeSetInput]
   }
   
-  @scala.inline
-  implicit class ExecuteChangeSetInputMutableBuilder[Self <: ExecuteChangeSetInput] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteChangeSetInput](x: Self) {
     
-    @scala.inline
-    def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
+    inline def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

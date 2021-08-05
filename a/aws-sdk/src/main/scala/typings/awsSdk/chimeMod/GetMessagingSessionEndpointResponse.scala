@@ -13,19 +13,15 @@ trait GetMessagingSessionEndpointResponse extends StObject {
 }
 object GetMessagingSessionEndpointResponse {
   
-  @scala.inline
-  def apply(): GetMessagingSessionEndpointResponse = {
+  inline def apply(): GetMessagingSessionEndpointResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMessagingSessionEndpointResponse]
   }
   
-  @scala.inline
-  implicit class GetMessagingSessionEndpointResponseMutableBuilder[Self <: GetMessagingSessionEndpointResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMessagingSessionEndpointResponse](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: MessagingSessionEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: MessagingSessionEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
   }
 }

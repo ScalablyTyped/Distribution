@@ -18,8 +18,7 @@ trait ListIdentityPoolsResponse extends StObject {
 }
 object ListIdentityPoolsResponse {
   
-  @scala.inline
-  def apply(): ListIdentityPoolsResponse = {
+  inline def apply(): ListIdentityPoolsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIdentityPoolsResponse]
   }
@@ -28,25 +27,18 @@ object ListIdentityPoolsResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: ListIdentityPoolsResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: ListIdentityPoolsResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class ListIdentityPoolsResponseMutableBuilder[Self <: ListIdentityPoolsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityPoolsResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityPools(value: js.Array[IdentityPoolShortDescription]): Self = StObject.set(x, "IdentityPools", value.asInstanceOf[js.Any])
+    inline def setIdentityPools(value: js.Array[IdentityPoolShortDescription]): Self = StObject.set(x, "IdentityPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolsUndefined: Self = StObject.set(x, "IdentityPools", js.undefined)
+    inline def setIdentityPoolsUndefined: Self = StObject.set(x, "IdentityPools", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolsVarargs(value: IdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value :_*))
+    inline def setIdentityPoolsVarargs(value: IdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

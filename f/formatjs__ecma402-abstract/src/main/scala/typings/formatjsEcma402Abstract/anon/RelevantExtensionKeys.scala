@@ -23,8 +23,7 @@ trait RelevantExtensionKeys extends StObject {
 }
 object RelevantExtensionKeys {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availableLocales: Set[String],
     getDefaultLocale: () => String,
     getInternalSlots: RelativeTimeFormat => RelativeTimeFormatInternal,
@@ -35,25 +34,18 @@ object RelevantExtensionKeys {
     __obj.asInstanceOf[RelevantExtensionKeys]
   }
   
-  @scala.inline
-  implicit class RelevantExtensionKeysMutableBuilder[Self <: RelevantExtensionKeys] (val x: Self) extends AnyVal {
+  extension [Self <: RelevantExtensionKeys](x: Self) {
     
-    @scala.inline
-    def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
+    inline def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
+    inline def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInternalSlots(value: RelativeTimeFormat => RelativeTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
+    inline def setGetInternalSlots(value: RelativeTimeFormat => RelativeTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocaleData(value: Record[String, js.UndefOr[LocaleFieldsData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
+    inline def setLocaleData(value: Record[String, js.UndefOr[LocaleFieldsData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
+    inline def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
+    inline def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
   }
 }

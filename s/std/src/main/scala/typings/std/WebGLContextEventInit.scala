@@ -12,19 +12,15 @@ trait WebGLContextEventInit
 }
 object WebGLContextEventInit {
   
-  @scala.inline
-  def apply(): WebGLContextEventInit = {
+  inline def apply(): WebGLContextEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebGLContextEventInit]
   }
   
-  @scala.inline
-  implicit class WebGLContextEventInitMutableBuilder[Self <: WebGLContextEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLContextEventInit](x: Self) {
     
-    @scala.inline
-    def setStatusMessage(value: java.lang.String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: java.lang.String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
   }
 }

@@ -92,8 +92,7 @@ object calendarUniDriverMod {
   }
   object CalendarUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickDay: Date => js.Promise[js.Any],
       clickOnMonthDropdown: () => js.Promise[js.Any],
@@ -140,122 +139,83 @@ object calendarUniDriverMod {
       __obj.asInstanceOf[CalendarUniDriver]
     }
     
-    @scala.inline
-    implicit class CalendarUniDriverMutableBuilder[Self <: CalendarUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickDay(value: Date => js.Promise[js.Any]): Self = StObject.set(x, "clickDay", js.Any.fromFunction1(value))
+      inline def setClickDay(value: Date => js.Promise[js.Any]): Self = StObject.set(x, "clickDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickOnMonthDropdown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnMonthDropdown", js.Any.fromFunction0(value))
+      inline def setClickOnMonthDropdown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnMonthDropdown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnNextMonthButton(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNextMonthButton", js.Any.fromFunction0(value))
+      inline def setClickOnNextMonthButton(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNextMonthButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnNthDay(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNthDay", js.Any.fromFunction1(value))
+      inline def setClickOnNthDay(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNthDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickOnNthDayOfTheMonth(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNthDayOfTheMonth", js.Any.fromFunction1(value))
+      inline def setClickOnNthDayOfTheMonth(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNthDayOfTheMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickOnNthYear(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNthYear", js.Any.fromFunction1(value))
+      inline def setClickOnNthYear(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickOnNthYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickOnPrevMonthButton(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnPrevMonthButton", js.Any.fromFunction0(value))
+      inline def setClickOnPrevMonthButton(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnPrevMonthButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnSelectedDay(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnSelectedDay", js.Any.fromFunction0(value))
+      inline def setClickOnSelectedDay(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnSelectedDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnYearDropdown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnYearDropdown", js.Any.fromFunction0(value))
+      inline def setClickOnYearDropdown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnYearDropdown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClose(value: () => js.Promise[js.Any]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[js.Any]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentMonthWithYear(value: () => js.Promise[String]): Self = StObject.set(x, "getCurrentMonthWithYear", js.Any.fromFunction0(value))
+      inline def setGetCurrentMonthWithYear(value: () => js.Promise[String]): Self = StObject.set(x, "getCurrentMonthWithYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedDay(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getFocusedDay", js.Any.fromFunction0(value))
+      inline def setGetFocusedDay(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getFocusedDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedDayElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getFocusedDayElement", js.Any.fromFunction0(value))
+      inline def setGetFocusedDayElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getFocusedDayElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMonthAndYear(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getMonthAndYear", js.Any.fromFunction0(value))
+      inline def setGetMonthAndYear(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getMonthAndYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMonthCaption(value: () => js.Promise[String]): Self = StObject.set(x, "getMonthCaption", js.Any.fromFunction0(value))
+      inline def setGetMonthCaption(value: () => js.Promise[String]): Self = StObject.set(x, "getMonthCaption", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMonthDropdownDriver(value: () => DropdownLayoutUniDriver): Self = StObject.set(x, "getMonthDropdownDriver", js.Any.fromFunction0(value))
+      inline def setGetMonthDropdownDriver(value: () => DropdownLayoutUniDriver): Self = StObject.set(x, "getMonthDropdownDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMonthDropdownLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getMonthDropdownLabel", js.Any.fromFunction0(value))
+      inline def setGetMonthDropdownLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getMonthDropdownLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNthWeekDayName(value: Double => UniDriver[js.Any]): Self = StObject.set(x, "getNthWeekDayName", js.Any.fromFunction1(value))
+      inline def setGetNthWeekDayName(value: Double => UniDriver[js.Any]): Self = StObject.set(x, "getNthWeekDayName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNumOfSelectedDays(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumOfSelectedDays", js.Any.fromFunction0(value))
+      inline def setGetNumOfSelectedDays(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumOfSelectedDays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumOfVisibleMonths(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumOfVisibleMonths", js.Any.fromFunction0(value))
+      inline def setGetNumOfVisibleMonths(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumOfVisibleMonths", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectedDay(value: () => js.Promise[String]): Self = StObject.set(x, "getSelectedDay", js.Any.fromFunction0(value))
+      inline def setGetSelectedDay(value: () => js.Promise[String]): Self = StObject.set(x, "getSelectedDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectedDays(value: () => js.Promise[Double]): Self = StObject.set(x, "getSelectedDays", js.Any.fromFunction0(value))
+      inline def setGetSelectedDays(value: () => js.Promise[Double]): Self = StObject.set(x, "getSelectedDays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectedYear(value: () => js.Promise[String]): Self = StObject.set(x, "getSelectedYear", js.Any.fromFunction0(value))
+      inline def setGetSelectedYear(value: () => js.Promise[String]): Self = StObject.set(x, "getSelectedYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => js.Function0[js.Promise[String | Null]]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => js.Function0[js.Promise[String | Null]]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetYearDropdownDriver(value: () => DropdownLayoutUniDriver): Self = StObject.set(x, "getYearDropdownDriver", js.Any.fromFunction0(value))
+      inline def setGetYearDropdownDriver(value: () => DropdownLayoutUniDriver): Self = StObject.set(x, "getYearDropdownDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDayActive(value: Date => js.Promise[Boolean]): Self = StObject.set(x, "isDayActive", js.Any.fromFunction1(value))
+      inline def setIsDayActive(value: Date => js.Promise[Boolean]): Self = StObject.set(x, "isDayActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFocusedDayVisuallyUnfocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocusedDayVisuallyUnfocused", js.Any.fromFunction0(value))
+      inline def setIsFocusedDayVisuallyUnfocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocusedDayVisuallyUnfocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHeaderVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHeaderVisible", js.Any.fromFunction0(value))
+      inline def setIsHeaderVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHeaderVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMonthCaptionExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMonthCaptionExists", js.Any.fromFunction0(value))
+      inline def setIsMonthCaptionExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMonthCaptionExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMonthDropdownExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMonthDropdownExists", js.Any.fromFunction0(value))
+      inline def setIsMonthDropdownExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMonthDropdownExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTwoMonthsLayout(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTwoMonthsLayout", js.Any.fromFunction0(value))
+      inline def setIsTwoMonthsLayout(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTwoMonthsLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+      inline def setIsVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsYearCaptionExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isYearCaptionExists", js.Any.fromFunction0(value))
+      inline def setIsYearCaptionExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isYearCaptionExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsYearDropdownExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isYearDropdownExists", js.Any.fromFunction0(value))
+      inline def setIsYearDropdownExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isYearDropdownExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseClickOutside(value: () => js.Promise[Boolean]): Self = StObject.set(x, "mouseClickOutside", js.Any.fromFunction0(value))
+      inline def setMouseClickOutside(value: () => js.Promise[Boolean]): Self = StObject.set(x, "mouseClickOutside", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPressLeftArrow(value: () => js.Promise[js.Any]): Self = StObject.set(x, "pressLeftArrow", js.Any.fromFunction0(value))
+      inline def setPressLeftArrow(value: () => js.Promise[js.Any]): Self = StObject.set(x, "pressLeftArrow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPressRightArrow(value: () => js.Promise[js.Any]): Self = StObject.set(x, "pressRightArrow", js.Any.fromFunction0(value))
+      inline def setPressRightArrow(value: () => js.Promise[js.Any]): Self = StObject.set(x, "pressRightArrow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTriggerKeyDown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "triggerKeyDown", js.Any.fromFunction0(value))
+      inline def setTriggerKeyDown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "triggerKeyDown", js.Any.fromFunction0(value))
     }
   }
 }

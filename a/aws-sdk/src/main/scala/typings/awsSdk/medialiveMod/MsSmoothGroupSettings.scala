@@ -113,124 +113,85 @@ trait MsSmoothGroupSettings extends StObject {
 }
 object MsSmoothGroupSettings {
   
-  @scala.inline
-  def apply(Destination: OutputLocationRef): MsSmoothGroupSettings = {
+  inline def apply(Destination: OutputLocationRef): MsSmoothGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsSmoothGroupSettings]
   }
   
-  @scala.inline
-  implicit class MsSmoothGroupSettingsMutableBuilder[Self <: MsSmoothGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MsSmoothGroupSettings](x: Self) {
     
-    @scala.inline
-    def setAcquisitionPointId(value: string): Self = StObject.set(x, "AcquisitionPointId", value.asInstanceOf[js.Any])
+    inline def setAcquisitionPointId(value: string): Self = StObject.set(x, "AcquisitionPointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquisitionPointIdUndefined: Self = StObject.set(x, "AcquisitionPointId", js.undefined)
+    inline def setAcquisitionPointIdUndefined: Self = StObject.set(x, "AcquisitionPointId", js.undefined)
     
-    @scala.inline
-    def setAudioOnlyTimecodeControl(value: SmoothGroupAudioOnlyTimecodeControl): Self = StObject.set(x, "AudioOnlyTimecodeControl", value.asInstanceOf[js.Any])
+    inline def setAudioOnlyTimecodeControl(value: SmoothGroupAudioOnlyTimecodeControl): Self = StObject.set(x, "AudioOnlyTimecodeControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioOnlyTimecodeControlUndefined: Self = StObject.set(x, "AudioOnlyTimecodeControl", js.undefined)
+    inline def setAudioOnlyTimecodeControlUndefined: Self = StObject.set(x, "AudioOnlyTimecodeControl", js.undefined)
     
-    @scala.inline
-    def setCertificateMode(value: SmoothGroupCertificateMode): Self = StObject.set(x, "CertificateMode", value.asInstanceOf[js.Any])
+    inline def setCertificateMode(value: SmoothGroupCertificateMode): Self = StObject.set(x, "CertificateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateModeUndefined: Self = StObject.set(x, "CertificateMode", js.undefined)
+    inline def setCertificateModeUndefined: Self = StObject.set(x, "CertificateMode", js.undefined)
     
-    @scala.inline
-    def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
+    inline def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
-    @scala.inline
-    def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventId(value: string): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: string): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdMode(value: SmoothGroupEventIdMode): Self = StObject.set(x, "EventIdMode", value.asInstanceOf[js.Any])
+    inline def setEventIdMode(value: SmoothGroupEventIdMode): Self = StObject.set(x, "EventIdMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdModeUndefined: Self = StObject.set(x, "EventIdMode", js.undefined)
+    inline def setEventIdModeUndefined: Self = StObject.set(x, "EventIdMode", js.undefined)
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setEventStopBehavior(value: SmoothGroupEventStopBehavior): Self = StObject.set(x, "EventStopBehavior", value.asInstanceOf[js.Any])
+    inline def setEventStopBehavior(value: SmoothGroupEventStopBehavior): Self = StObject.set(x, "EventStopBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStopBehaviorUndefined: Self = StObject.set(x, "EventStopBehavior", js.undefined)
+    inline def setEventStopBehaviorUndefined: Self = StObject.set(x, "EventStopBehavior", js.undefined)
     
-    @scala.inline
-    def setFilecacheDuration(value: integerMin0): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
+    inline def setFilecacheDuration(value: integerMin0): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
+    inline def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
     
-    @scala.inline
-    def setFragmentLength(value: integerMin1): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
+    inline def setFragmentLength(value: integerMin1): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
+    inline def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
     
-    @scala.inline
-    def setInputLossAction(value: InputLossActionForMsSmoothOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
+    inline def setInputLossAction(value: InputLossActionForMsSmoothOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
+    inline def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
     
-    @scala.inline
-    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
+    inline def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
+    inline def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
     
-    @scala.inline
-    def setRestartDelay(value: integerMin0): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
+    inline def setRestartDelay(value: integerMin0): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
+    inline def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
     
-    @scala.inline
-    def setSegmentationMode(value: SmoothGroupSegmentationMode): Self = StObject.set(x, "SegmentationMode", value.asInstanceOf[js.Any])
+    inline def setSegmentationMode(value: SmoothGroupSegmentationMode): Self = StObject.set(x, "SegmentationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationModeUndefined: Self = StObject.set(x, "SegmentationMode", js.undefined)
+    inline def setSegmentationModeUndefined: Self = StObject.set(x, "SegmentationMode", js.undefined)
     
-    @scala.inline
-    def setSendDelayMs(value: integerMin0Max10000): Self = StObject.set(x, "SendDelayMs", value.asInstanceOf[js.Any])
+    inline def setSendDelayMs(value: integerMin0Max10000): Self = StObject.set(x, "SendDelayMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendDelayMsUndefined: Self = StObject.set(x, "SendDelayMs", js.undefined)
+    inline def setSendDelayMsUndefined: Self = StObject.set(x, "SendDelayMs", js.undefined)
     
-    @scala.inline
-    def setSparseTrackType(value: SmoothGroupSparseTrackType): Self = StObject.set(x, "SparseTrackType", value.asInstanceOf[js.Any])
+    inline def setSparseTrackType(value: SmoothGroupSparseTrackType): Self = StObject.set(x, "SparseTrackType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparseTrackTypeUndefined: Self = StObject.set(x, "SparseTrackType", js.undefined)
+    inline def setSparseTrackTypeUndefined: Self = StObject.set(x, "SparseTrackType", js.undefined)
     
-    @scala.inline
-    def setStreamManifestBehavior(value: SmoothGroupStreamManifestBehavior): Self = StObject.set(x, "StreamManifestBehavior", value.asInstanceOf[js.Any])
+    inline def setStreamManifestBehavior(value: SmoothGroupStreamManifestBehavior): Self = StObject.set(x, "StreamManifestBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamManifestBehaviorUndefined: Self = StObject.set(x, "StreamManifestBehavior", js.undefined)
+    inline def setStreamManifestBehaviorUndefined: Self = StObject.set(x, "StreamManifestBehavior", js.undefined)
     
-    @scala.inline
-    def setTimestampOffset(value: string): Self = StObject.set(x, "TimestampOffset", value.asInstanceOf[js.Any])
+    inline def setTimestampOffset(value: string): Self = StObject.set(x, "TimestampOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampOffsetMode(value: SmoothGroupTimestampOffsetMode): Self = StObject.set(x, "TimestampOffsetMode", value.asInstanceOf[js.Any])
+    inline def setTimestampOffsetMode(value: SmoothGroupTimestampOffsetMode): Self = StObject.set(x, "TimestampOffsetMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampOffsetModeUndefined: Self = StObject.set(x, "TimestampOffsetMode", js.undefined)
+    inline def setTimestampOffsetModeUndefined: Self = StObject.set(x, "TimestampOffsetMode", js.undefined)
     
-    @scala.inline
-    def setTimestampOffsetUndefined: Self = StObject.set(x, "TimestampOffset", js.undefined)
+    inline def setTimestampOffsetUndefined: Self = StObject.set(x, "TimestampOffset", js.undefined)
   }
 }

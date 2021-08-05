@@ -12,25 +12,19 @@ trait SchemaLocalizedString extends StObject {
 }
 object SchemaLocalizedString {
   
-  @scala.inline
-  def apply(): SchemaLocalizedString = {
+  inline def apply(): SchemaLocalizedString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocalizedString]
   }
   
-  @scala.inline
-  implicit class SchemaLocalizedStringMutableBuilder[Self <: SchemaLocalizedString] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocalizedString](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

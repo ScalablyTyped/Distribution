@@ -12,8 +12,7 @@ trait ChangeFloatingObjectRotationCommand
      with ChangeFloatingObjectPropertyCommandBase[Double]
 object ChangeFloatingObjectRotationCommand {
   
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => CommandState[Double]): ChangeFloatingObjectRotationCommand = {
+  inline def apply(execute: Double => Boolean, getState: () => CommandState[Double]): ChangeFloatingObjectRotationCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeFloatingObjectRotationCommand]
   }

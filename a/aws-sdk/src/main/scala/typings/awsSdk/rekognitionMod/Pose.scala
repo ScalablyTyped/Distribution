@@ -23,31 +23,23 @@ trait Pose extends StObject {
 }
 object Pose {
   
-  @scala.inline
-  def apply(): Pose = {
+  inline def apply(): Pose = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pose]
   }
   
-  @scala.inline
-  implicit class PoseMutableBuilder[Self <: Pose] (val x: Self) extends AnyVal {
+  extension [Self <: Pose](x: Self) {
     
-    @scala.inline
-    def setPitch(value: Degree): Self = StObject.set(x, "Pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Degree): Self = StObject.set(x, "Pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "Pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "Pitch", js.undefined)
     
-    @scala.inline
-    def setRoll(value: Degree): Self = StObject.set(x, "Roll", value.asInstanceOf[js.Any])
+    inline def setRoll(value: Degree): Self = StObject.set(x, "Roll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollUndefined: Self = StObject.set(x, "Roll", js.undefined)
+    inline def setRollUndefined: Self = StObject.set(x, "Roll", js.undefined)
     
-    @scala.inline
-    def setYaw(value: Degree): Self = StObject.set(x, "Yaw", value.asInstanceOf[js.Any])
+    inline def setYaw(value: Degree): Self = StObject.set(x, "Yaw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYawUndefined: Self = StObject.set(x, "Yaw", js.undefined)
+    inline def setYawUndefined: Self = StObject.set(x, "Yaw", js.undefined)
   }
 }

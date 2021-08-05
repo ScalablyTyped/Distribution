@@ -18,8 +18,7 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account: scala.Double,
     all: scala.Double,
     collection: scala.Double,
@@ -30,22 +29,16 @@ object Account {
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setAccount(value: scala.Double): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: scala.Double): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: scala.Double): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: scala.Double): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployment(value: scala.Double): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: scala.Double): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

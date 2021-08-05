@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTextTransform extends StObject
 object styleTextTransform {
   
-  @scala.inline
-  def styleTextTransformCapitalize: `1` = 1.asInstanceOf[`1`]
+  inline def styleTextTransformCapitalize: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTextTransformLowercase: `2` = 2.asInstanceOf[`2`]
+  inline def styleTextTransformLowercase: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleTextTransformNone: `4` = 4.asInstanceOf[`4`]
+  inline def styleTextTransformNone: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleTextTransformNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleTextTransformNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTextTransformUppercase: `3` = 3.asInstanceOf[`3`]
+  inline def styleTextTransformUppercase: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleTextTransform_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTextTransform_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

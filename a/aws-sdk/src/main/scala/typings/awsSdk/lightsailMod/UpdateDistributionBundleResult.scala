@@ -10,19 +10,15 @@ trait UpdateDistributionBundleResult extends StObject {
 }
 object UpdateDistributionBundleResult {
   
-  @scala.inline
-  def apply(): UpdateDistributionBundleResult = {
+  inline def apply(): UpdateDistributionBundleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDistributionBundleResult]
   }
   
-  @scala.inline
-  implicit class UpdateDistributionBundleResultMutableBuilder[Self <: UpdateDistributionBundleResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDistributionBundleResult](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

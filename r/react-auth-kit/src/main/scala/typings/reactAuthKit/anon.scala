@@ -21,8 +21,7 @@ object anon {
   }
   object AuthHeader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authHeader: () => String | Null,
       authUser: () => js.Object | Null,
       isAuthenticated: () => Boolean,
@@ -33,23 +32,17 @@ object anon {
       __obj.asInstanceOf[AuthHeader]
     }
     
-    @scala.inline
-    implicit class AuthHeaderMutableBuilder[Self <: AuthHeader] (val x: Self) extends AnyVal {
+    extension [Self <: AuthHeader](x: Self) {
       
-      @scala.inline
-      def setAuthHeader(value: () => String | Null): Self = StObject.set(x, "authHeader", js.Any.fromFunction0(value))
+      inline def setAuthHeader(value: () => String | Null): Self = StObject.set(x, "authHeader", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAuthUser(value: () => js.Object | Null): Self = StObject.set(x, "authUser", js.Any.fromFunction0(value))
+      inline def setAuthUser(value: () => js.Object | Null): Self = StObject.set(x, "authUser", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAuthenticated(value: () => Boolean): Self = StObject.set(x, "isAuthenticated", js.Any.fromFunction0(value))
+      inline def setIsAuthenticated(value: () => Boolean): Self = StObject.set(x, "isAuthenticated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignIn(value: signInFunctionParams => Boolean): Self = StObject.set(x, "signIn", js.Any.fromFunction1(value))
+      inline def setSignIn(value: signInFunctionParams => Boolean): Self = StObject.set(x, "signIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignOut(value: () => Boolean): Self = StObject.set(x, "signOut", js.Any.fromFunction0(value))
+      inline def setSignOut(value: () => Boolean): Self = StObject.set(x, "signOut", js.Any.fromFunction0(value))
     }
   }
 }

@@ -33,37 +33,27 @@ trait SchemaGuardian extends StObject {
 }
 object SchemaGuardian {
   
-  @scala.inline
-  def apply(): SchemaGuardian = {
+  inline def apply(): SchemaGuardian = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGuardian]
   }
   
-  @scala.inline
-  implicit class SchemaGuardianMutableBuilder[Self <: SchemaGuardian] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGuardian](x: Self) {
     
-    @scala.inline
-    def setGuardianId(value: String): Self = StObject.set(x, "guardianId", value.asInstanceOf[js.Any])
+    inline def setGuardianId(value: String): Self = StObject.set(x, "guardianId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuardianIdUndefined: Self = StObject.set(x, "guardianId", js.undefined)
+    inline def setGuardianIdUndefined: Self = StObject.set(x, "guardianId", js.undefined)
     
-    @scala.inline
-    def setGuardianProfile(value: SchemaUserProfile): Self = StObject.set(x, "guardianProfile", value.asInstanceOf[js.Any])
+    inline def setGuardianProfile(value: SchemaUserProfile): Self = StObject.set(x, "guardianProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuardianProfileUndefined: Self = StObject.set(x, "guardianProfile", js.undefined)
+    inline def setGuardianProfileUndefined: Self = StObject.set(x, "guardianProfile", js.undefined)
     
-    @scala.inline
-    def setInvitedEmailAddress(value: String): Self = StObject.set(x, "invitedEmailAddress", value.asInstanceOf[js.Any])
+    inline def setInvitedEmailAddress(value: String): Self = StObject.set(x, "invitedEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedEmailAddressUndefined: Self = StObject.set(x, "invitedEmailAddress", js.undefined)
+    inline def setInvitedEmailAddressUndefined: Self = StObject.set(x, "invitedEmailAddress", js.undefined)
     
-    @scala.inline
-    def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
+    inline def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
+    inline def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
   }
 }

@@ -64,8 +64,7 @@ object dimmerDimmerMod {
        with /* key */ StringDictionary[js.Any]
   object DimmerProps {
     
-    @scala.inline
-    def apply(): DimmerProps = {
+    inline def apply(): DimmerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DimmerProps]
     }
@@ -81,26 +80,20 @@ object dimmerDimmerMod {
   }
   object StrictDimmerProps {
     
-    @scala.inline
-    def apply(): StrictDimmerProps = {
+    inline def apply(): StrictDimmerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictDimmerProps]
     }
     
-    @scala.inline
-    implicit class StrictDimmerPropsMutableBuilder[Self <: StrictDimmerProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictDimmerProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setPage(value: Boolean): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Boolean): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     }
   }
 }

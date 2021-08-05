@@ -50,61 +50,43 @@ trait SchemaTable extends StObject {
 }
 object SchemaTable {
   
-  @scala.inline
-  def apply(): SchemaTable = {
+  inline def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTable]
   }
   
-  @scala.inline
-  implicit class SchemaTableMutableBuilder[Self <: SchemaTable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTable](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setHorizontalBorderRows(value: js.Array[SchemaTableBorderRow]): Self = StObject.set(x, "horizontalBorderRows", value.asInstanceOf[js.Any])
+    inline def setHorizontalBorderRows(value: js.Array[SchemaTableBorderRow]): Self = StObject.set(x, "horizontalBorderRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
+    inline def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
     
-    @scala.inline
-    def setHorizontalBorderRowsVarargs(value: SchemaTableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
+    inline def setHorizontalBorderRowsVarargs(value: SchemaTableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setTableColumns(value: js.Array[SchemaTableColumnProperties]): Self = StObject.set(x, "tableColumns", value.asInstanceOf[js.Any])
+    inline def setTableColumns(value: js.Array[SchemaTableColumnProperties]): Self = StObject.set(x, "tableColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
+    inline def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
     
-    @scala.inline
-    def setTableColumnsVarargs(value: SchemaTableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
+    inline def setTableColumnsVarargs(value: SchemaTableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setTableRows(value: js.Array[SchemaTableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
+    inline def setTableRows(value: js.Array[SchemaTableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
+    inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
     
-    @scala.inline
-    def setTableRowsVarargs(value: SchemaTableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+    inline def setTableRowsVarargs(value: SchemaTableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
     
-    @scala.inline
-    def setVerticalBorderRows(value: js.Array[SchemaTableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
+    inline def setVerticalBorderRows(value: js.Array[SchemaTableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
+    inline def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
     
-    @scala.inline
-    def setVerticalBorderRowsVarargs(value: SchemaTableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
+    inline def setVerticalBorderRowsVarargs(value: SchemaTableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
   }
 }

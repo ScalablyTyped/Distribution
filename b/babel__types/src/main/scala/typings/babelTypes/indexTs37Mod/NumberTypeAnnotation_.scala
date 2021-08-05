@@ -18,17 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object NumberTypeAnnotation_ {
   
-  @scala.inline
-  def apply(): NumberTypeAnnotation_ = {
+  inline def apply(): NumberTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("NumberTypeAnnotation")
     __obj.asInstanceOf[NumberTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class NumberTypeAnnotation_MutableBuilder[Self <: NumberTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: NumberTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: NumberTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NumberTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

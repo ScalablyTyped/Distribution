@@ -14,19 +14,15 @@ trait IndexName extends StObject {
 }
 object IndexName {
   
-  @scala.inline
-  def apply(indexName: String, params: SearchForFacetValuesQueryParams & SearchOptions): IndexName = {
+  inline def apply(indexName: String, params: SearchForFacetValuesQueryParams & SearchOptions): IndexName = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexName]
   }
   
-  @scala.inline
-  implicit class IndexNameMutableBuilder[Self <: IndexName] (val x: Self) extends AnyVal {
+  extension [Self <: IndexName](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: SearchForFacetValuesQueryParams & SearchOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: SearchForFacetValuesQueryParams & SearchOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

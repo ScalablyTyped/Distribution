@@ -30,76 +30,53 @@ trait BasePlaylistConstructorPrCurrentVariant extends StObject {
 }
 object BasePlaylistConstructorPrCurrentVariant {
   
-  @scala.inline
-  def apply(): BasePlaylistConstructorPrCurrentVariant = {
+  inline def apply(): BasePlaylistConstructorPrCurrentVariant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasePlaylistConstructorPrCurrentVariant]
   }
   
-  @scala.inline
-  implicit class BasePlaylistConstructorPrCurrentVariantMutableBuilder[Self <: BasePlaylistConstructorPrCurrentVariant] (val x: Self) extends AnyVal {
+  extension [Self <: BasePlaylistConstructorPrCurrentVariant](x: Self) {
     
-    @scala.inline
-    def setCurrentVariant(value: Double): Self = StObject.set(x, "currentVariant", value.asInstanceOf[js.Any])
+    inline def setCurrentVariant(value: Double): Self = StObject.set(x, "currentVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVariantUndefined: Self = StObject.set(x, "currentVariant", js.undefined)
+    inline def setCurrentVariantUndefined: Self = StObject.set(x, "currentVariant", js.undefined)
     
-    @scala.inline
-    def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
+    inline def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
+    inline def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
     
-    @scala.inline
-    def setSessionDataList(value: js.Array[SessionData]): Self = StObject.set(x, "sessionDataList", value.asInstanceOf[js.Any])
+    inline def setSessionDataList(value: js.Array[SessionData]): Self = StObject.set(x, "sessionDataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDataListUndefined: Self = StObject.set(x, "sessionDataList", js.undefined)
+    inline def setSessionDataListUndefined: Self = StObject.set(x, "sessionDataList", js.undefined)
     
-    @scala.inline
-    def setSessionDataListVarargs(value: SessionData*): Self = StObject.set(x, "sessionDataList", js.Array(value :_*))
+    inline def setSessionDataListVarargs(value: SessionData*): Self = StObject.set(x, "sessionDataList", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionKeyList(value: js.Array[Key]): Self = StObject.set(x, "sessionKeyList", value.asInstanceOf[js.Any])
+    inline def setSessionKeyList(value: js.Array[Key]): Self = StObject.set(x, "sessionKeyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionKeyListUndefined: Self = StObject.set(x, "sessionKeyList", js.undefined)
+    inline def setSessionKeyListUndefined: Self = StObject.set(x, "sessionKeyList", js.undefined)
     
-    @scala.inline
-    def setSessionKeyListVarargs(value: Key*): Self = StObject.set(x, "sessionKeyList", js.Array(value :_*))
+    inline def setSessionKeyListVarargs(value: Key*): Self = StObject.set(x, "sessionKeyList", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    @scala.inline
-    def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+    inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

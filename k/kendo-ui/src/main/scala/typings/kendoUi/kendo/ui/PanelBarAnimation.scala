@@ -12,25 +12,19 @@ trait PanelBarAnimation extends StObject {
 }
 object PanelBarAnimation {
   
-  @scala.inline
-  def apply(): PanelBarAnimation = {
+  inline def apply(): PanelBarAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanelBarAnimation]
   }
   
-  @scala.inline
-  implicit class PanelBarAnimationMutableBuilder[Self <: PanelBarAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: PanelBarAnimation](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: PanelBarAnimationCollapse): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    inline def setCollapse(value: PanelBarAnimationCollapse): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setExpand(value: PanelBarAnimationExpand): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: PanelBarAnimationExpand): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }
 }

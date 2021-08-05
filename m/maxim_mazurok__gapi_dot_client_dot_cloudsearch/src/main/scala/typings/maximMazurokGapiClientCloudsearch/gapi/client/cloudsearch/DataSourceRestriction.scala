@@ -18,28 +18,21 @@ trait DataSourceRestriction extends StObject {
 }
 object DataSourceRestriction {
   
-  @scala.inline
-  def apply(): DataSourceRestriction = {
+  inline def apply(): DataSourceRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceRestriction]
   }
   
-  @scala.inline
-  implicit class DataSourceRestrictionMutableBuilder[Self <: DataSourceRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceRestriction](x: Self) {
     
-    @scala.inline
-    def setFilterOptions(value: js.Array[FilterOptions]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+    inline def setFilterOptions(value: js.Array[FilterOptions]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+    inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
-    @scala.inline
-    def setFilterOptionsVarargs(value: FilterOptions*): Self = StObject.set(x, "filterOptions", js.Array(value :_*))
+    inline def setFilterOptionsVarargs(value: FilterOptions*): Self = StObject.set(x, "filterOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

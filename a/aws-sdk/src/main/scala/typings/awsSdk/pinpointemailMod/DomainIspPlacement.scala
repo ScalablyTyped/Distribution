@@ -33,43 +33,31 @@ trait DomainIspPlacement extends StObject {
 }
 object DomainIspPlacement {
   
-  @scala.inline
-  def apply(): DomainIspPlacement = {
+  inline def apply(): DomainIspPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainIspPlacement]
   }
   
-  @scala.inline
-  implicit class DomainIspPlacementMutableBuilder[Self <: DomainIspPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: DomainIspPlacement](x: Self) {
     
-    @scala.inline
-    def setInboxPercentage(value: Percentage): Self = StObject.set(x, "InboxPercentage", value.asInstanceOf[js.Any])
+    inline def setInboxPercentage(value: Percentage): Self = StObject.set(x, "InboxPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboxPercentageUndefined: Self = StObject.set(x, "InboxPercentage", js.undefined)
+    inline def setInboxPercentageUndefined: Self = StObject.set(x, "InboxPercentage", js.undefined)
     
-    @scala.inline
-    def setInboxRawCount(value: Volume): Self = StObject.set(x, "InboxRawCount", value.asInstanceOf[js.Any])
+    inline def setInboxRawCount(value: Volume): Self = StObject.set(x, "InboxRawCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboxRawCountUndefined: Self = StObject.set(x, "InboxRawCount", js.undefined)
+    inline def setInboxRawCountUndefined: Self = StObject.set(x, "InboxRawCount", js.undefined)
     
-    @scala.inline
-    def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
+    inline def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIspNameUndefined: Self = StObject.set(x, "IspName", js.undefined)
+    inline def setIspNameUndefined: Self = StObject.set(x, "IspName", js.undefined)
     
-    @scala.inline
-    def setSpamPercentage(value: Percentage): Self = StObject.set(x, "SpamPercentage", value.asInstanceOf[js.Any])
+    inline def setSpamPercentage(value: Percentage): Self = StObject.set(x, "SpamPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpamPercentageUndefined: Self = StObject.set(x, "SpamPercentage", js.undefined)
+    inline def setSpamPercentageUndefined: Self = StObject.set(x, "SpamPercentage", js.undefined)
     
-    @scala.inline
-    def setSpamRawCount(value: Volume): Self = StObject.set(x, "SpamRawCount", value.asInstanceOf[js.Any])
+    inline def setSpamRawCount(value: Volume): Self = StObject.set(x, "SpamRawCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpamRawCountUndefined: Self = StObject.set(x, "SpamRawCount", js.undefined)
+    inline def setSpamRawCountUndefined: Self = StObject.set(x, "SpamRawCount", js.undefined)
   }
 }

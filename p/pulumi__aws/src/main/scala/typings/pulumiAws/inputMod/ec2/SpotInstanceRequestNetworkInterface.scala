@@ -24,25 +24,19 @@ trait SpotInstanceRequestNetworkInterface extends StObject {
 }
 object SpotInstanceRequestNetworkInterface {
   
-  @scala.inline
-  def apply(deviceIndex: Input[Double], networkInterfaceId: Input[String]): SpotInstanceRequestNetworkInterface = {
+  inline def apply(deviceIndex: Input[Double], networkInterfaceId: Input[String]): SpotInstanceRequestNetworkInterface = {
     val __obj = js.Dynamic.literal(deviceIndex = deviceIndex.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotInstanceRequestNetworkInterface]
   }
   
-  @scala.inline
-  implicit class SpotInstanceRequestNetworkInterfaceMutableBuilder[Self <: SpotInstanceRequestNetworkInterface] (val x: Self) extends AnyVal {
+  extension [Self <: SpotInstanceRequestNetworkInterface](x: Self) {
     
-    @scala.inline
-    def setDeleteOnTermination(value: Input[Boolean]): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Input[Boolean]): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setDeviceIndex(value: Input[Double]): Self = StObject.set(x, "deviceIndex", value.asInstanceOf[js.Any])
+    inline def setDeviceIndex(value: Input[Double]): Self = StObject.set(x, "deviceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
   }
 }

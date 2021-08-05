@@ -72,73 +72,51 @@ trait SchemaEntityAnnotation extends StObject {
 }
 object SchemaEntityAnnotation {
   
-  @scala.inline
-  def apply(): SchemaEntityAnnotation = {
+  inline def apply(): SchemaEntityAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntityAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaEntityAnnotationMutableBuilder[Self <: SchemaEntityAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntityAnnotation](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setLocations(value: js.Array[SchemaLocationInfo]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[SchemaLocationInfo]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: SchemaLocationInfo*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: SchemaLocationInfo*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+    inline def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
+    inline def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Array[SchemaProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[SchemaProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: SchemaProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SchemaProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setTopicality(value: Double): Self = StObject.set(x, "topicality", value.asInstanceOf[js.Any])
+    inline def setTopicality(value: Double): Self = StObject.set(x, "topicality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicalityUndefined: Self = StObject.set(x, "topicality", js.undefined)
+    inline def setTopicalityUndefined: Self = StObject.set(x, "topicality", js.undefined)
   }
 }

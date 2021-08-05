@@ -14,25 +14,19 @@ trait AccountCount extends StObject {
 }
 object AccountCount {
   
-  @scala.inline
-  def apply(): AccountCount = {
+  inline def apply(): AccountCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountCount]
   }
   
-  @scala.inline
-  implicit class AccountCountMutableBuilder[Self <: AccountCount] (val x: Self) extends AnyVal {
+  extension [Self <: AccountCount](x: Self) {
     
-    @scala.inline
-    def setAccount(value: UserInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: UserInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

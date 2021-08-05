@@ -29,17 +29,17 @@ object remoteConfigMod {
       _logger: Logger
     ) = this()
     
-    val _client: js.Any = js.native
+    /* private */ val _client: js.Any = js.native
     
-    var _initializePromise: js.Any = js.native
+    /* private */ var _initializePromise: js.Any = js.native
     
-    var _isInitializationComplete: js.Any = js.native
+    /* private */ var _isInitializationComplete: js.Any = js.native
     
-    val _logger: js.Any = js.native
+    /* private */ val _logger: js.Any = js.native
     
-    val _storage: js.Any = js.native
+    /* private */ val _storage: js.Any = js.native
     
-    val _storageCache: js.Any = js.native
+    /* private */ val _storageCache: js.Any = js.native
     
     /**
       * Makes the last fetched config available to the getters.

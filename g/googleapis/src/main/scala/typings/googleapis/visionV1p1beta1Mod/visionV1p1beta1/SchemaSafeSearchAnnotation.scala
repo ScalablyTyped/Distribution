@@ -44,43 +44,31 @@ trait SchemaSafeSearchAnnotation extends StObject {
 }
 object SchemaSafeSearchAnnotation {
   
-  @scala.inline
-  def apply(): SchemaSafeSearchAnnotation = {
+  inline def apply(): SchemaSafeSearchAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSafeSearchAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaSafeSearchAnnotationMutableBuilder[Self <: SchemaSafeSearchAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSafeSearchAnnotation](x: Self) {
     
-    @scala.inline
-    def setAdult(value: String): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
+    inline def setAdult(value: String): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdultUndefined: Self = StObject.set(x, "adult", js.undefined)
+    inline def setAdultUndefined: Self = StObject.set(x, "adult", js.undefined)
     
-    @scala.inline
-    def setMedical(value: String): Self = StObject.set(x, "medical", value.asInstanceOf[js.Any])
+    inline def setMedical(value: String): Self = StObject.set(x, "medical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedicalUndefined: Self = StObject.set(x, "medical", js.undefined)
+    inline def setMedicalUndefined: Self = StObject.set(x, "medical", js.undefined)
     
-    @scala.inline
-    def setRacy(value: String): Self = StObject.set(x, "racy", value.asInstanceOf[js.Any])
+    inline def setRacy(value: String): Self = StObject.set(x, "racy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRacyUndefined: Self = StObject.set(x, "racy", js.undefined)
+    inline def setRacyUndefined: Self = StObject.set(x, "racy", js.undefined)
     
-    @scala.inline
-    def setSpoof(value: String): Self = StObject.set(x, "spoof", value.asInstanceOf[js.Any])
+    inline def setSpoof(value: String): Self = StObject.set(x, "spoof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpoofUndefined: Self = StObject.set(x, "spoof", js.undefined)
+    inline def setSpoofUndefined: Self = StObject.set(x, "spoof", js.undefined)
     
-    @scala.inline
-    def setViolence(value: String): Self = StObject.set(x, "violence", value.asInstanceOf[js.Any])
+    inline def setViolence(value: String): Self = StObject.set(x, "violence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolenceUndefined: Self = StObject.set(x, "violence", js.undefined)
+    inline def setViolenceUndefined: Self = StObject.set(x, "violence", js.undefined)
   }
 }

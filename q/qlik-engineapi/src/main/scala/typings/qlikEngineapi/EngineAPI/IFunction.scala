@@ -27,22 +27,17 @@ trait IFunction extends StObject {
 }
 object IFunction {
   
-  @scala.inline
-  def apply(qGroup: FunctionGroupType, qName: String, qSignature: String): IFunction = {
+  inline def apply(qGroup: FunctionGroupType, qName: String, qSignature: String): IFunction = {
     val __obj = js.Dynamic.literal(qGroup = qGroup.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qSignature = qSignature.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFunction]
   }
   
-  @scala.inline
-  implicit class IFunctionMutableBuilder[Self <: IFunction] (val x: Self) extends AnyVal {
+  extension [Self <: IFunction](x: Self) {
     
-    @scala.inline
-    def setQGroup(value: FunctionGroupType): Self = StObject.set(x, "qGroup", value.asInstanceOf[js.Any])
+    inline def setQGroup(value: FunctionGroupType): Self = StObject.set(x, "qGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSignature(value: String): Self = StObject.set(x, "qSignature", value.asInstanceOf[js.Any])
+    inline def setQSignature(value: String): Self = StObject.set(x, "qSignature", value.asInstanceOf[js.Any])
   }
 }

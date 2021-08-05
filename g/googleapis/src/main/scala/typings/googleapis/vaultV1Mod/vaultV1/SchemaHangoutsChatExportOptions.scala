@@ -16,19 +16,15 @@ trait SchemaHangoutsChatExportOptions extends StObject {
 }
 object SchemaHangoutsChatExportOptions {
   
-  @scala.inline
-  def apply(): SchemaHangoutsChatExportOptions = {
+  inline def apply(): SchemaHangoutsChatExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHangoutsChatExportOptions]
   }
   
-  @scala.inline
-  implicit class SchemaHangoutsChatExportOptionsMutableBuilder[Self <: SchemaHangoutsChatExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHangoutsChatExportOptions](x: Self) {
     
-    @scala.inline
-    def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
+    inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
   }
 }

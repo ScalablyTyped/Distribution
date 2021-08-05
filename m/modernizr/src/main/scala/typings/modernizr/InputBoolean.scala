@@ -28,8 +28,7 @@ trait InputBoolean extends StObject {
 }
 object InputBoolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autocomplete: Boolean,
     autofocus: Boolean,
     list: Boolean,
@@ -45,37 +44,26 @@ object InputBoolean {
     __obj.asInstanceOf[InputBoolean]
   }
   
-  @scala.inline
-  implicit class InputBooleanMutableBuilder[Self <: InputBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: InputBoolean](x: Self) {
     
-    @scala.inline
-    def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+    inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
+    inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: Boolean): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: Boolean): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: Boolean): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: Boolean): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Boolean): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Boolean): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

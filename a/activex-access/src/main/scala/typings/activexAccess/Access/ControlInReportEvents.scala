@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ControlInReportEvents extends StObject {
   
-  @JSName("Access._ControlInReportEvents_typekey")
+  /* private */ @JSName("Access._ControlInReportEvents_typekey")
   var AccessDot_ControlInReportEvents_typekey: ControlInReportEvents = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

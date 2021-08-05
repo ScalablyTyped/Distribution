@@ -17,25 +17,19 @@ trait FlashBitmapInstance extends StObject {
 }
 object FlashBitmapInstance {
   
-  @scala.inline
-  def apply(getBits: () => FlashBitmap, hPixels: Double, setBits: FlashBitmap => Unit, vPixels: Double): FlashBitmapInstance = {
+  inline def apply(getBits: () => FlashBitmap, hPixels: Double, setBits: FlashBitmap => Unit, vPixels: Double): FlashBitmapInstance = {
     val __obj = js.Dynamic.literal(getBits = js.Any.fromFunction0(getBits), hPixels = hPixels.asInstanceOf[js.Any], setBits = js.Any.fromFunction1(setBits), vPixels = vPixels.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashBitmapInstance]
   }
   
-  @scala.inline
-  implicit class FlashBitmapInstanceMutableBuilder[Self <: FlashBitmapInstance] (val x: Self) extends AnyVal {
+  extension [Self <: FlashBitmapInstance](x: Self) {
     
-    @scala.inline
-    def setGetBits(value: () => FlashBitmap): Self = StObject.set(x, "getBits", js.Any.fromFunction0(value))
+    inline def setGetBits(value: () => FlashBitmap): Self = StObject.set(x, "getBits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHPixels(value: Double): Self = StObject.set(x, "hPixels", value.asInstanceOf[js.Any])
+    inline def setHPixels(value: Double): Self = StObject.set(x, "hPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetBits(value: FlashBitmap => Unit): Self = StObject.set(x, "setBits", js.Any.fromFunction1(value))
+    inline def setSetBits(value: FlashBitmap => Unit): Self = StObject.set(x, "setBits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVPixels(value: Double): Self = StObject.set(x, "vPixels", value.asInstanceOf[js.Any])
+    inline def setVPixels(value: Double): Self = StObject.set(x, "vPixels", value.asInstanceOf[js.Any])
   }
 }

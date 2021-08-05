@@ -18,28 +18,21 @@ trait GetManagedPrefixListEntriesResult extends StObject {
 }
 object GetManagedPrefixListEntriesResult {
   
-  @scala.inline
-  def apply(): GetManagedPrefixListEntriesResult = {
+  inline def apply(): GetManagedPrefixListEntriesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetManagedPrefixListEntriesResult]
   }
   
-  @scala.inline
-  implicit class GetManagedPrefixListEntriesResultMutableBuilder[Self <: GetManagedPrefixListEntriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetManagedPrefixListEntriesResult](x: Self) {
     
-    @scala.inline
-    def setEntries(value: PrefixListEntrySet): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: PrefixListEntrySet): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: PrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -24,46 +24,33 @@ trait Conversions extends StObject {
 }
 object Conversions {
   
-  @scala.inline
-  def apply(): Conversions = {
+  inline def apply(): Conversions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conversions]
   }
   
-  @scala.inline
-  implicit class ConversionsMutableBuilder[Self <: Conversions] (val x: Self) extends AnyVal {
+  extension [Self <: Conversions](x: Self) {
     
-    @scala.inline
-    def setHtml(value: HtmlSettings): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: HtmlSettings): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setJson_normalizations(value: js.Array[NormalizationOperation]): Self = StObject.set(x, "json_normalizations", value.asInstanceOf[js.Any])
+    inline def setJson_normalizations(value: js.Array[NormalizationOperation]): Self = StObject.set(x, "json_normalizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson_normalizationsUndefined: Self = StObject.set(x, "json_normalizations", js.undefined)
+    inline def setJson_normalizationsUndefined: Self = StObject.set(x, "json_normalizations", js.undefined)
     
-    @scala.inline
-    def setJson_normalizationsVarargs(value: NormalizationOperation*): Self = StObject.set(x, "json_normalizations", js.Array(value :_*))
+    inline def setJson_normalizationsVarargs(value: NormalizationOperation*): Self = StObject.set(x, "json_normalizations", js.Array(value :_*))
     
-    @scala.inline
-    def setPdf(value: PdfSettings): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    inline def setPdf(value: PdfSettings): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
-    @scala.inline
-    def setSegment(value: SegmentSettings): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: SegmentSettings): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
-    @scala.inline
-    def setWord(value: WordSettings): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: WordSettings): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

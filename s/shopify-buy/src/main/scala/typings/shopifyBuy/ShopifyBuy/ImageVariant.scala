@@ -21,8 +21,7 @@ trait ImageVariant
 }
 object ImageVariant {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     dimensions: String,
     id: String | Double,
@@ -38,16 +37,12 @@ object ImageVariant {
     __obj.asInstanceOf[ImageVariant]
   }
   
-  @scala.inline
-  implicit class ImageVariantMutableBuilder[Self <: ImageVariant] (val x: Self) extends AnyVal {
+  extension [Self <: ImageVariant](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageForSize(value: (Image, ImageOptions) => String): Self = StObject.set(x, "imageForSize", js.Any.fromFunction2(value))
+    inline def setImageForSize(value: (Image, ImageOptions) => String): Self = StObject.set(x, "imageForSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -28,73 +28,51 @@ trait CounterStyleHyphen extends StObject {
 }
 object CounterStyleHyphen {
   
-  @scala.inline
-  def apply(): CounterStyleHyphen = {
+  inline def apply(): CounterStyleHyphen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CounterStyleHyphen]
   }
   
-  @scala.inline
-  implicit class CounterStyleHyphenMutableBuilder[Self <: CounterStyleHyphen] (val x: Self) extends AnyVal {
+  extension [Self <: CounterStyleHyphen](x: Self) {
     
-    @scala.inline
-    def `setAdditive-symbols`(value: String): Self = StObject.set(x, "additive-symbols", value.asInstanceOf[js.Any])
+    inline def `setAdditive-symbols`(value: String): Self = StObject.set(x, "additive-symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAdditive-symbolsUndefined`: Self = StObject.set(x, "additive-symbols", js.undefined)
+    inline def `setAdditive-symbolsUndefined`: Self = StObject.set(x, "additive-symbols", js.undefined)
     
-    @scala.inline
-    def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
-    @scala.inline
-    def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
-    @scala.inline
-    def setPad(value: String): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: String): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setRange(value: CounterStyleRangeProperty): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: CounterStyleRangeProperty): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def `setSpeak-as`(value: CounterStyleSpeakAsProperty): Self = StObject.set(x, "speak-as", value.asInstanceOf[js.Any])
+    inline def `setSpeak-as`(value: CounterStyleSpeakAsProperty): Self = StObject.set(x, "speak-as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSpeak-asUndefined`: Self = StObject.set(x, "speak-as", js.undefined)
+    inline def `setSpeak-asUndefined`: Self = StObject.set(x, "speak-as", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
-    @scala.inline
-    def setSymbols(value: String): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: String): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+    inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     
-    @scala.inline
-    def setSystem(value: CounterStyleSystemProperty): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: CounterStyleSystemProperty): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
   }
 }

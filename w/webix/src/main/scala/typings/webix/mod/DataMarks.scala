@@ -26,6 +26,5 @@ trait DataMarks extends StObject {
 }
 object DataMarks {
   
-  @scala.inline
-  def apply: DataMarks = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMarks").asInstanceOf[DataMarks]
+  inline def apply: DataMarks = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMarks").asInstanceOf[DataMarks]
 }

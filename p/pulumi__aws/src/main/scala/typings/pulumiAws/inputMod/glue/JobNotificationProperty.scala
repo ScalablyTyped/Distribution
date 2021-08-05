@@ -14,19 +14,15 @@ trait JobNotificationProperty extends StObject {
 }
 object JobNotificationProperty {
   
-  @scala.inline
-  def apply(): JobNotificationProperty = {
+  inline def apply(): JobNotificationProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobNotificationProperty]
   }
   
-  @scala.inline
-  implicit class JobNotificationPropertyMutableBuilder[Self <: JobNotificationProperty] (val x: Self) extends AnyVal {
+  extension [Self <: JobNotificationProperty](x: Self) {
     
-    @scala.inline
-    def setNotifyDelayAfter(value: Input[Double]): Self = StObject.set(x, "notifyDelayAfter", value.asInstanceOf[js.Any])
+    inline def setNotifyDelayAfter(value: Input[Double]): Self = StObject.set(x, "notifyDelayAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyDelayAfterUndefined: Self = StObject.set(x, "notifyDelayAfter", js.undefined)
+    inline def setNotifyDelayAfterUndefined: Self = StObject.set(x, "notifyDelayAfter", js.undefined)
   }
 }

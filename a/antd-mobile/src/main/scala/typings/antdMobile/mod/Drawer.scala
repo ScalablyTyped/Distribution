@@ -19,6 +19,5 @@ object Drawer {
   @JSImport("antd-mobile", "Drawer.defaultProps")
   @js.native
   def defaultProps: EnableDragHandle = js.native
-  @scala.inline
-  def defaultProps_=(x: EnableDragHandle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: EnableDragHandle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

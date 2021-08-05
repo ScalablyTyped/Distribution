@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def usePosition(watch: Boolean): Accuracy = ^.asInstanceOf[js.Dynamic].applyDynamic("usePosition")(watch.asInstanceOf[js.Any]).asInstanceOf[Accuracy]
-  @scala.inline
-  def usePosition(watch: Boolean, settings: PositionOptions): Accuracy = (^.asInstanceOf[js.Dynamic].applyDynamic("usePosition")(watch.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Accuracy]
+  inline def usePosition(watch: Boolean): Accuracy = ^.asInstanceOf[js.Dynamic].applyDynamic("usePosition")(watch.asInstanceOf[js.Any]).asInstanceOf[Accuracy]
+  inline def usePosition(watch: Boolean, settings: PositionOptions): Accuracy = (^.asInstanceOf[js.Dynamic].applyDynamic("usePosition")(watch.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Accuracy]
   
   trait PositionOptions extends StObject {
     
@@ -42,23 +40,18 @@ object mod {
   }
   object PositionOptions {
     
-    @scala.inline
-    def apply(enableHighAccuracy: Boolean, maximumAge: Double, timeout: Double): PositionOptions = {
+    inline def apply(enableHighAccuracy: Boolean, maximumAge: Double, timeout: Double): PositionOptions = {
       val __obj = js.Dynamic.literal(enableHighAccuracy = enableHighAccuracy.asInstanceOf[js.Any], maximumAge = maximumAge.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[PositionOptions]
     }
     
-    @scala.inline
-    implicit class PositionOptionsMutableBuilder[Self <: PositionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PositionOptions](x: Self) {
       
-      @scala.inline
-      def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
+      inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
+      inline def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
 }

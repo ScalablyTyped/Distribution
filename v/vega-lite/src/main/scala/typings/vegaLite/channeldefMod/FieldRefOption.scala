@@ -35,49 +35,35 @@ trait FieldRefOption extends StObject {
 }
 object FieldRefOption {
   
-  @scala.inline
-  def apply(): FieldRefOption = {
+  inline def apply(): FieldRefOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldRefOption]
   }
   
-  @scala.inline
-  implicit class FieldRefOptionMutableBuilder[Self <: FieldRefOption] (val x: Self) extends AnyVal {
+  extension [Self <: FieldRefOption](x: Self) {
     
-    @scala.inline
-    def setBinSuffix(value: end | range | mid): Self = StObject.set(x, "binSuffix", value.asInstanceOf[js.Any])
+    inline def setBinSuffix(value: end | range | mid): Self = StObject.set(x, "binSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinSuffixUndefined: Self = StObject.set(x, "binSuffix", js.undefined)
+    inline def setBinSuffixUndefined: Self = StObject.set(x, "binSuffix", js.undefined)
     
-    @scala.inline
-    def setExpr(value: datum | parent | datumDotdatum): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: datum | parent | datumDotdatum): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
-    @scala.inline
-    def setForAs(value: Boolean): Self = StObject.set(x, "forAs", value.asInstanceOf[js.Any])
+    inline def setForAs(value: Boolean): Self = StObject.set(x, "forAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForAsUndefined: Self = StObject.set(x, "forAs", js.undefined)
+    inline def setForAsUndefined: Self = StObject.set(x, "forAs", js.undefined)
     
-    @scala.inline
-    def setNofn(value: Boolean): Self = StObject.set(x, "nofn", value.asInstanceOf[js.Any])
+    inline def setNofn(value: Boolean): Self = StObject.set(x, "nofn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNofnUndefined: Self = StObject.set(x, "nofn", js.undefined)
+    inline def setNofnUndefined: Self = StObject.set(x, "nofn", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollBehavior extends StObject
 object ScrollBehavior {
   
-  @scala.inline
-  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
+  inline def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
   
-  @scala.inline
-  def smooth: typings.std.stdStrings.smooth = "smooth".asInstanceOf[typings.std.stdStrings.smooth]
+  inline def smooth: typings.std.stdStrings.smooth = "smooth".asInstanceOf[typings.std.stdStrings.smooth]
 }

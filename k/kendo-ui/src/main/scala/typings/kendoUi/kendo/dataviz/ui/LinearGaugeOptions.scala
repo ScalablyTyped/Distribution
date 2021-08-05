@@ -22,58 +22,41 @@ trait LinearGaugeOptions extends StObject {
 }
 object LinearGaugeOptions {
   
-  @scala.inline
-  def apply(): LinearGaugeOptions = {
+  inline def apply(): LinearGaugeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearGaugeOptions]
   }
   
-  @scala.inline
-  implicit class LinearGaugeOptionsMutableBuilder[Self <: LinearGaugeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGaugeOptions](x: Self) {
     
-    @scala.inline
-    def setGaugeArea(value: LinearGaugeGaugeArea): Self = StObject.set(x, "gaugeArea", value.asInstanceOf[js.Any])
+    inline def setGaugeArea(value: LinearGaugeGaugeArea): Self = StObject.set(x, "gaugeArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaugeAreaUndefined: Self = StObject.set(x, "gaugeArea", js.undefined)
+    inline def setGaugeAreaUndefined: Self = StObject.set(x, "gaugeArea", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPointer(value: js.Array[LinearGaugePointerItem]): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+    inline def setPointer(value: js.Array[LinearGaugePointerItem]): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
+    inline def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
     
-    @scala.inline
-    def setPointerVarargs(value: LinearGaugePointerItem*): Self = StObject.set(x, "pointer", js.Array(value :_*))
+    inline def setPointerVarargs(value: LinearGaugePointerItem*): Self = StObject.set(x, "pointer", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderAs(value: String): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
+    inline def setRenderAs(value: String): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderAsUndefined: Self = StObject.set(x, "renderAs", js.undefined)
+    inline def setRenderAsUndefined: Self = StObject.set(x, "renderAs", js.undefined)
     
-    @scala.inline
-    def setScale(value: LinearGaugeScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: LinearGaugeScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+    inline def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+    inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
   }
 }

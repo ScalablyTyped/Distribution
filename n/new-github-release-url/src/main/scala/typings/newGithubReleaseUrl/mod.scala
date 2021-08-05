@@ -24,8 +24,7 @@ object mod {
   open(url);
   ```
   */
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("new-github-release-url", JSImport.Namespace)
   @js.native
@@ -63,44 +62,32 @@ object mod {
   }
   object BaseOptions {
     
-    @scala.inline
-    def apply(): BaseOptions = {
+    inline def apply(): BaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseOptions]
     }
     
-    @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setIsPrerelease(value: Boolean): Self = StObject.set(x, "isPrerelease", value.asInstanceOf[js.Any])
+      inline def setIsPrerelease(value: Boolean): Self = StObject.set(x, "isPrerelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrereleaseUndefined: Self = StObject.set(x, "isPrerelease", js.undefined)
+      inline def setIsPrereleaseUndefined: Self = StObject.set(x, "isPrerelease", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -117,17 +104,14 @@ object mod {
   }
   object RepoUrlOptions {
     
-    @scala.inline
-    def apply(repoUrl: String): RepoUrlOptions = {
+    inline def apply(repoUrl: String): RepoUrlOptions = {
       val __obj = js.Dynamic.literal(repoUrl = repoUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepoUrlOptions]
     }
     
-    @scala.inline
-    implicit class RepoUrlOptionsMutableBuilder[Self <: RepoUrlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RepoUrlOptions](x: Self) {
       
-      @scala.inline
-      def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
+      inline def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,20 +131,16 @@ object mod {
   }
   object UserRepoOptions {
     
-    @scala.inline
-    def apply(repo: String, user: String): UserRepoOptions = {
+    inline def apply(repo: String, user: String): UserRepoOptions = {
       val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepoOptions]
     }
     
-    @scala.inline
-    implicit class UserRepoOptionsMutableBuilder[Self <: UserRepoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepoOptions](x: Self) {
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

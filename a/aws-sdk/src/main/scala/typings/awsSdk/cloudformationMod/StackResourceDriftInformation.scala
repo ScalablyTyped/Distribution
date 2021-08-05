@@ -18,22 +18,17 @@ trait StackResourceDriftInformation extends StObject {
 }
 object StackResourceDriftInformation {
   
-  @scala.inline
-  def apply(StackResourceDriftStatus: StackResourceDriftStatus): StackResourceDriftInformation = {
+  inline def apply(StackResourceDriftStatus: StackResourceDriftStatus): StackResourceDriftInformation = {
     val __obj = js.Dynamic.literal(StackResourceDriftStatus = StackResourceDriftStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackResourceDriftInformation]
   }
   
-  @scala.inline
-  implicit class StackResourceDriftInformationMutableBuilder[Self <: StackResourceDriftInformation] (val x: Self) extends AnyVal {
+  extension [Self <: StackResourceDriftInformation](x: Self) {
     
-    @scala.inline
-    def setLastCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastCheckTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastCheckTimestampUndefined: Self = StObject.set(x, "LastCheckTimestamp", js.undefined)
+    inline def setLastCheckTimestampUndefined: Self = StObject.set(x, "LastCheckTimestamp", js.undefined)
     
-    @scala.inline
-    def setStackResourceDriftStatus(value: StackResourceDriftStatus): Self = StObject.set(x, "StackResourceDriftStatus", value.asInstanceOf[js.Any])
+    inline def setStackResourceDriftStatus(value: StackResourceDriftStatus): Self = StObject.set(x, "StackResourceDriftStatus", value.asInstanceOf[js.Any])
   }
 }

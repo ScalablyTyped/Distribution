@@ -14,25 +14,19 @@ trait Order extends StObject {
 }
 object Order {
   
-  @scala.inline
-  def apply(): Order = {
+  inline def apply(): Order = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

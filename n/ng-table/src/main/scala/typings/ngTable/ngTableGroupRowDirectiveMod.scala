@@ -11,6 +11,5 @@ object ngTableGroupRowDirectiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ngTableGroupRow(): Controller = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableGroupRow")().asInstanceOf[Controller]
+  inline def ngTableGroupRow(): Controller = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableGroupRow")().asInstanceOf[Controller]
 }

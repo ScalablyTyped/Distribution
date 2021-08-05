@@ -10,16 +10,13 @@ trait AddVirtualAuthenticatorRequest extends StObject {
 }
 object AddVirtualAuthenticatorRequest {
   
-  @scala.inline
-  def apply(options: VirtualAuthenticatorOptions): AddVirtualAuthenticatorRequest = {
+  inline def apply(options: VirtualAuthenticatorOptions): AddVirtualAuthenticatorRequest = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddVirtualAuthenticatorRequest]
   }
   
-  @scala.inline
-  implicit class AddVirtualAuthenticatorRequestMutableBuilder[Self <: AddVirtualAuthenticatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddVirtualAuthenticatorRequest](x: Self) {
     
-    @scala.inline
-    def setOptions(value: VirtualAuthenticatorOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: VirtualAuthenticatorOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

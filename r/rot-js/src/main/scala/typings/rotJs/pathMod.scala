@@ -32,8 +32,7 @@ object pathMod {
         /* options */ js.UndefOr[PartialOptions], 
         typings.rotJs.astarMod.default
       ] = js.native
-    @scala.inline
-    def AStar_=(
+    inline def AStar_=(
       x: Instantiable4[
           /* toX */ Double, 
           /* toY */ Double, 
@@ -59,8 +58,7 @@ object pathMod {
         /* options */ PartialOptions, 
         typings.rotJs.dijkstraMod.default
       ] = js.native
-    @scala.inline
-    def Dijkstra_=(
+    inline def Dijkstra_=(
       x: Instantiable4[
           /* toX */ Double, 
           /* toY */ Double, 

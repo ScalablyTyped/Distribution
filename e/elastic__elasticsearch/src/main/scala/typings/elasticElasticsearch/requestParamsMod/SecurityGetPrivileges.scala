@@ -14,25 +14,19 @@ trait SecurityGetPrivileges
 }
 object SecurityGetPrivileges {
   
-  @scala.inline
-  def apply(): SecurityGetPrivileges = {
+  inline def apply(): SecurityGetPrivileges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGetPrivileges]
   }
   
-  @scala.inline
-  implicit class SecurityGetPrivilegesMutableBuilder[Self <: SecurityGetPrivileges] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGetPrivileges](x: Self) {
     
-    @scala.inline
-    def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

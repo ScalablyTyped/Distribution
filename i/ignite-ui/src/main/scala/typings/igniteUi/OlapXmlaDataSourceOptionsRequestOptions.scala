@@ -26,25 +26,19 @@ trait OlapXmlaDataSourceOptionsRequestOptions
 }
 object OlapXmlaDataSourceOptionsRequestOptions {
   
-  @scala.inline
-  def apply(): OlapXmlaDataSourceOptionsRequestOptions = {
+  inline def apply(): OlapXmlaDataSourceOptionsRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlapXmlaDataSourceOptionsRequestOptions]
   }
   
-  @scala.inline
-  implicit class OlapXmlaDataSourceOptionsRequestOptionsMutableBuilder[Self <: OlapXmlaDataSourceOptionsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OlapXmlaDataSourceOptionsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
+    inline def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

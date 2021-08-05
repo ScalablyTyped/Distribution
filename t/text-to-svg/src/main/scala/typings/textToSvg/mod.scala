@@ -35,8 +35,7 @@ object mod {
     * @param callback called, when instance has been created
     */
   /* static member */
-  @scala.inline
-  def load(url: String, callback: LoadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def load(url: String, callback: LoadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Synchronously load a font from the filesystem and create a TextToSVG instance.
@@ -46,10 +45,8 @@ object mod {
     * @param file path to font file
     */
   /* static member */
-  @scala.inline
-  def loadSync(): TextToSVG = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")().asInstanceOf[TextToSVG]
-  @scala.inline
-  def loadSync(file: String): TextToSVG = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(file.asInstanceOf[js.Any]).asInstanceOf[TextToSVG]
+  inline def loadSync(): TextToSVG = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")().asInstanceOf[TextToSVG]
+  inline def loadSync(file: String): TextToSVG = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(file.asInstanceOf[js.Any]).asInstanceOf[TextToSVG]
   
   /**
     * Text anchor.
@@ -80,62 +77,43 @@ object mod {
   trait Anchor extends StObject
   object Anchor {
     
-    @scala.inline
-    def baseline: typings.textToSvg.textToSvgStrings.baseline = "baseline".asInstanceOf[typings.textToSvg.textToSvgStrings.baseline]
+    inline def baseline: typings.textToSvg.textToSvgStrings.baseline = "baseline".asInstanceOf[typings.textToSvg.textToSvgStrings.baseline]
     
-    @scala.inline
-    def bottom: typings.textToSvg.textToSvgStrings.bottom = "bottom".asInstanceOf[typings.textToSvg.textToSvgStrings.bottom]
+    inline def bottom: typings.textToSvg.textToSvgStrings.bottom = "bottom".asInstanceOf[typings.textToSvg.textToSvgStrings.bottom]
     
-    @scala.inline
-    def center: typings.textToSvg.textToSvgStrings.center = "center".asInstanceOf[typings.textToSvg.textToSvgStrings.center]
+    inline def center: typings.textToSvg.textToSvgStrings.center = "center".asInstanceOf[typings.textToSvg.textToSvgStrings.center]
     
-    @scala.inline
-    def `center baseline`: typings.textToSvg.textToSvgStrings.`center baseline` = ("center baseline").asInstanceOf[typings.textToSvg.textToSvgStrings.`center baseline`]
+    inline def `center baseline`: typings.textToSvg.textToSvgStrings.`center baseline` = ("center baseline").asInstanceOf[typings.textToSvg.textToSvgStrings.`center baseline`]
     
-    @scala.inline
-    def `center bottom`: typings.textToSvg.textToSvgStrings.`center bottom` = ("center bottom").asInstanceOf[typings.textToSvg.textToSvgStrings.`center bottom`]
+    inline def `center bottom`: typings.textToSvg.textToSvgStrings.`center bottom` = ("center bottom").asInstanceOf[typings.textToSvg.textToSvgStrings.`center bottom`]
     
-    @scala.inline
-    def `center middle`: typings.textToSvg.textToSvgStrings.`center middle` = ("center middle").asInstanceOf[typings.textToSvg.textToSvgStrings.`center middle`]
+    inline def `center middle`: typings.textToSvg.textToSvgStrings.`center middle` = ("center middle").asInstanceOf[typings.textToSvg.textToSvgStrings.`center middle`]
     
-    @scala.inline
-    def `center top`: typings.textToSvg.textToSvgStrings.`center top` = ("center top").asInstanceOf[typings.textToSvg.textToSvgStrings.`center top`]
+    inline def `center top`: typings.textToSvg.textToSvgStrings.`center top` = ("center top").asInstanceOf[typings.textToSvg.textToSvgStrings.`center top`]
     
-    @scala.inline
-    def left: typings.textToSvg.textToSvgStrings.left = "left".asInstanceOf[typings.textToSvg.textToSvgStrings.left]
+    inline def left: typings.textToSvg.textToSvgStrings.left = "left".asInstanceOf[typings.textToSvg.textToSvgStrings.left]
     
-    @scala.inline
-    def `left baseline`: typings.textToSvg.textToSvgStrings.`left baseline` = ("left baseline").asInstanceOf[typings.textToSvg.textToSvgStrings.`left baseline`]
+    inline def `left baseline`: typings.textToSvg.textToSvgStrings.`left baseline` = ("left baseline").asInstanceOf[typings.textToSvg.textToSvgStrings.`left baseline`]
     
-    @scala.inline
-    def `left bottom`: typings.textToSvg.textToSvgStrings.`left bottom` = ("left bottom").asInstanceOf[typings.textToSvg.textToSvgStrings.`left bottom`]
+    inline def `left bottom`: typings.textToSvg.textToSvgStrings.`left bottom` = ("left bottom").asInstanceOf[typings.textToSvg.textToSvgStrings.`left bottom`]
     
-    @scala.inline
-    def `left middle`: typings.textToSvg.textToSvgStrings.`left middle` = ("left middle").asInstanceOf[typings.textToSvg.textToSvgStrings.`left middle`]
+    inline def `left middle`: typings.textToSvg.textToSvgStrings.`left middle` = ("left middle").asInstanceOf[typings.textToSvg.textToSvgStrings.`left middle`]
     
-    @scala.inline
-    def `left top`: typings.textToSvg.textToSvgStrings.`left top` = ("left top").asInstanceOf[typings.textToSvg.textToSvgStrings.`left top`]
+    inline def `left top`: typings.textToSvg.textToSvgStrings.`left top` = ("left top").asInstanceOf[typings.textToSvg.textToSvgStrings.`left top`]
     
-    @scala.inline
-    def middle: typings.textToSvg.textToSvgStrings.middle = "middle".asInstanceOf[typings.textToSvg.textToSvgStrings.middle]
+    inline def middle: typings.textToSvg.textToSvgStrings.middle = "middle".asInstanceOf[typings.textToSvg.textToSvgStrings.middle]
     
-    @scala.inline
-    def right: typings.textToSvg.textToSvgStrings.right = "right".asInstanceOf[typings.textToSvg.textToSvgStrings.right]
+    inline def right: typings.textToSvg.textToSvgStrings.right = "right".asInstanceOf[typings.textToSvg.textToSvgStrings.right]
     
-    @scala.inline
-    def `right baseline`: typings.textToSvg.textToSvgStrings.`right baseline` = ("right baseline").asInstanceOf[typings.textToSvg.textToSvgStrings.`right baseline`]
+    inline def `right baseline`: typings.textToSvg.textToSvgStrings.`right baseline` = ("right baseline").asInstanceOf[typings.textToSvg.textToSvgStrings.`right baseline`]
     
-    @scala.inline
-    def `right bottom`: typings.textToSvg.textToSvgStrings.`right bottom` = ("right bottom").asInstanceOf[typings.textToSvg.textToSvgStrings.`right bottom`]
+    inline def `right bottom`: typings.textToSvg.textToSvgStrings.`right bottom` = ("right bottom").asInstanceOf[typings.textToSvg.textToSvgStrings.`right bottom`]
     
-    @scala.inline
-    def `right middle`: typings.textToSvg.textToSvgStrings.`right middle` = ("right middle").asInstanceOf[typings.textToSvg.textToSvgStrings.`right middle`]
+    inline def `right middle`: typings.textToSvg.textToSvgStrings.`right middle` = ("right middle").asInstanceOf[typings.textToSvg.textToSvgStrings.`right middle`]
     
-    @scala.inline
-    def `right top`: typings.textToSvg.textToSvgStrings.`right top` = ("right top").asInstanceOf[typings.textToSvg.textToSvgStrings.`right top`]
+    inline def `right top`: typings.textToSvg.textToSvgStrings.`right top` = ("right top").asInstanceOf[typings.textToSvg.textToSvgStrings.`right top`]
     
-    @scala.inline
-    def top: typings.textToSvg.textToSvgStrings.top = "top".asInstanceOf[typings.textToSvg.textToSvgStrings.top]
+    inline def top: typings.textToSvg.textToSvgStrings.top = "top".asInstanceOf[typings.textToSvg.textToSvgStrings.top]
   }
   
   trait FontOptions extends StObject {
@@ -181,77 +159,54 @@ object mod {
   }
   object FontOptions {
     
-    @scala.inline
-    def apply(): FontOptions = {
+    inline def apply(): FontOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontOptions]
     }
     
-    @scala.inline
-    implicit class FontOptionsMutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FontOptions](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorNull: Self = StObject.set(x, "anchor", null)
+      inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
+      inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+      inline def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKerningNull: Self = StObject.set(x, "kerning", null)
+      inline def setKerningNull: Self = StObject.set(x, "kerning", null)
       
-      @scala.inline
-      def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+      inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
       
-      @scala.inline
-      def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingNull: Self = StObject.set(x, "letterSpacing", null)
+      inline def setLetterSpacingNull: Self = StObject.set(x, "letterSpacing", null)
       
-      @scala.inline
-      def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
-      @scala.inline
-      def setTracking(value: Double): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+      inline def setTracking(value: Double): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackingNull: Self = StObject.set(x, "tracking", null)
+      inline def setTrackingNull: Self = StObject.set(x, "tracking", null)
       
-      @scala.inline
-      def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
+      inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXNull: Self = StObject.set(x, "x", null)
+      inline def setXNull: Self = StObject.set(x, "x", null)
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYNull: Self = StObject.set(x, "y", null)
+      inline def setYNull: Self = StObject.set(x, "y", null)
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -266,23 +221,18 @@ object mod {
   }
   object GenerationOptions {
     
-    @scala.inline
-    def apply(): GenerationOptions = {
+    inline def apply(): GenerationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerationOptions]
     }
     
-    @scala.inline
-    implicit class GenerationOptionsMutableBuilder[Self <: GenerationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerationOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesNull: Self = StObject.set(x, "attributes", null)
+      inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
@@ -306,8 +256,7 @@ object mod {
   }
   object Metrics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ascender: Double,
       baseline: Double,
       descender: Double,
@@ -320,29 +269,21 @@ object mod {
       __obj.asInstanceOf[Metrics]
     }
     
-    @scala.inline
-    implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+    extension [Self <: Metrics](x: Self) {
       
-      @scala.inline
-      def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
+      inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
+      inline def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

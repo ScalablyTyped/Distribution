@@ -22,19 +22,15 @@ trait SchemaGcsDataLocation extends StObject {
 }
 object SchemaGcsDataLocation {
   
-  @scala.inline
-  def apply(): SchemaGcsDataLocation = {
+  inline def apply(): SchemaGcsDataLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGcsDataLocation]
   }
   
-  @scala.inline
-  implicit class SchemaGcsDataLocationMutableBuilder[Self <: SchemaGcsDataLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGcsDataLocation](x: Self) {
     
-    @scala.inline
-    def setGcsUri(value: String): Self = StObject.set(x, "gcsUri", value.asInstanceOf[js.Any])
+    inline def setGcsUri(value: String): Self = StObject.set(x, "gcsUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsUriUndefined: Self = StObject.set(x, "gcsUri", js.undefined)
+    inline def setGcsUriUndefined: Self = StObject.set(x, "gcsUri", js.undefined)
   }
 }

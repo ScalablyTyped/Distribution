@@ -31,8 +31,7 @@ trait ColorFormat
 }
 object ColorFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addGradientRange: (js.Any, js.Any, String, String, String) => Unit,
     addRange: (js.Any, js.Any, String, String) => Unit,
     format: (DataTable, Double) => Unit
@@ -41,13 +40,10 @@ object ColorFormat {
     __obj.asInstanceOf[ColorFormat]
   }
   
-  @scala.inline
-  implicit class ColorFormatMutableBuilder[Self <: ColorFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ColorFormat](x: Self) {
     
-    @scala.inline
-    def setAddGradientRange(value: (js.Any, js.Any, String, String, String) => Unit): Self = StObject.set(x, "addGradientRange", js.Any.fromFunction5(value))
+    inline def setAddGradientRange(value: (js.Any, js.Any, String, String, String) => Unit): Self = StObject.set(x, "addGradientRange", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAddRange(value: (js.Any, js.Any, String, String) => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction4(value))
+    inline def setAddRange(value: (js.Any, js.Any, String, String) => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction4(value))
   }
 }

@@ -31,8 +31,7 @@ trait XDependentTextField
 }
 object XDependentTextField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     TextFieldMaster: XPropertySet,
     acquire: () => Unit,
@@ -51,16 +50,12 @@ object XDependentTextField {
     __obj.asInstanceOf[XDependentTextField]
   }
   
-  @scala.inline
-  implicit class XDependentTextFieldMutableBuilder[Self <: XDependentTextField] (val x: Self) extends AnyVal {
+  extension [Self <: XDependentTextField](x: Self) {
     
-    @scala.inline
-    def setAttachTextFieldMaster(value: XPropertySet => Unit): Self = StObject.set(x, "attachTextFieldMaster", js.Any.fromFunction1(value))
+    inline def setAttachTextFieldMaster(value: XPropertySet => Unit): Self = StObject.set(x, "attachTextFieldMaster", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTextFieldMaster(value: () => XPropertySet): Self = StObject.set(x, "getTextFieldMaster", js.Any.fromFunction0(value))
+    inline def setGetTextFieldMaster(value: () => XPropertySet): Self = StObject.set(x, "getTextFieldMaster", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextFieldMaster(value: XPropertySet): Self = StObject.set(x, "TextFieldMaster", value.asInstanceOf[js.Any])
+    inline def setTextFieldMaster(value: XPropertySet): Self = StObject.set(x, "TextFieldMaster", value.asInstanceOf[js.Any])
   }
 }

@@ -37,9 +37,9 @@ object iamMod {
     def getPolicy(options: GetPolicyOptions): js.Promise[GetPolicyResponse] = js.native
     def getPolicy(options: GetPolicyOptions, callback: GetPolicyCallback): Unit = js.native
     
-    var request_ : js.Any = js.native
+    /* private */ var request_ : js.Any = js.native
     
-    var resourceId_ : js.Any = js.native
+    /* private */ var resourceId_ : js.Any = js.native
     
     def setPolicy(policy: Policy): js.Promise[SetPolicyResponse] = js.native
     def setPolicy(policy: Policy, callback: SetPolicyCallback): Unit = js.native
@@ -70,29 +70,22 @@ object iamMod {
   }
   object Expr {
     
-    @scala.inline
-    def apply(expression: String): Expr = {
+    inline def apply(expression: String): Expr = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expr]
     }
     
-    @scala.inline
-    implicit class ExprMutableBuilder[Self <: Expr] (val x: Self) extends AnyVal {
+    extension [Self <: Expr](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -111,26 +104,20 @@ object iamMod {
   }
   object GetPolicyOptions {
     
-    @scala.inline
-    def apply(): GetPolicyOptions = {
+    inline def apply(): GetPolicyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPolicyOptions]
     }
     
-    @scala.inline
-    implicit class GetPolicyOptionsMutableBuilder[Self <: GetPolicyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetPolicyOptions](x: Self) {
       
-      @scala.inline
-      def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
+      inline def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedPolicyVersionUndefined: Self = StObject.set(x, "requestedPolicyVersion", js.undefined)
+      inline def setRequestedPolicyVersionUndefined: Self = StObject.set(x, "requestedPolicyVersion", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -146,32 +133,24 @@ object iamMod {
   }
   object Policy {
     
-    @scala.inline
-    def apply(bindings: js.Array[PolicyBinding]): Policy = {
+    inline def apply(bindings: js.Array[PolicyBinding]): Policy = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Policy]
     }
     
-    @scala.inline
-    implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
+    extension [Self <: Policy](x: Self) {
       
-      @scala.inline
-      def setBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -185,29 +164,22 @@ object iamMod {
   }
   object PolicyBinding {
     
-    @scala.inline
-    def apply(members: js.Array[String], role: String): PolicyBinding = {
+    inline def apply(members: js.Array[String], role: String): PolicyBinding = {
       val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyBinding]
     }
     
-    @scala.inline
-    implicit class PolicyBindingMutableBuilder[Self <: PolicyBinding] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyBinding](x: Self) {
       
-      @scala.inline
-      def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,20 +196,16 @@ object iamMod {
   }
   object SetPolicyOptions {
     
-    @scala.inline
-    def apply(): SetPolicyOptions = {
+    inline def apply(): SetPolicyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetPolicyOptions]
     }
     
-    @scala.inline
-    implicit class SetPolicyOptionsMutableBuilder[Self <: SetPolicyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetPolicyOptions](x: Self) {
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -256,20 +224,16 @@ object iamMod {
   }
   object TestIamPermissionsOptions {
     
-    @scala.inline
-    def apply(): TestIamPermissionsOptions = {
+    inline def apply(): TestIamPermissionsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestIamPermissionsOptions]
     }
     
-    @scala.inline
-    implicit class TestIamPermissionsOptionsMutableBuilder[Self <: TestIamPermissionsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TestIamPermissionsOptions](x: Self) {
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   

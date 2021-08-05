@@ -15,28 +15,21 @@ trait RequestBodyObject extends StObject {
 }
 object RequestBodyObject {
   
-  @scala.inline
-  def apply(content: StringDictionary[MediaTypeObject]): RequestBodyObject = {
+  inline def apply(content: StringDictionary[MediaTypeObject]): RequestBodyObject = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyObject]
   }
   
-  @scala.inline
-  implicit class RequestBodyObjectMutableBuilder[Self <: RequestBodyObject] (val x: Self) extends AnyVal {
+  extension [Self <: RequestBodyObject](x: Self) {
     
-    @scala.inline
-    def setContent(value: StringDictionary[MediaTypeObject]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: StringDictionary[MediaTypeObject]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

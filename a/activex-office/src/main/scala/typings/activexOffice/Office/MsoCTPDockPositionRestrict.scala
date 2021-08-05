@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoCTPDockPositionRestrict extends StObject
 object MsoCTPDockPositionRestrict {
   
-  @scala.inline
-  def msoCTPDockPositionRestrictNoChange: `1` = 1.asInstanceOf[`1`]
+  inline def msoCTPDockPositionRestrictNoChange: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCTPDockPositionRestrictNoHorizontal: `2` = 2.asInstanceOf[`2`]
+  inline def msoCTPDockPositionRestrictNoHorizontal: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCTPDockPositionRestrictNoVertical: `3` = 3.asInstanceOf[`3`]
+  inline def msoCTPDockPositionRestrictNoVertical: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoCTPDockPositionRestrictNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoCTPDockPositionRestrictNone: `0` = 0.asInstanceOf[`0`]
 }

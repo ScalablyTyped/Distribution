@@ -10,6 +10,5 @@ object pByFractionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fraction: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fraction.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def default(fraction: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fraction.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

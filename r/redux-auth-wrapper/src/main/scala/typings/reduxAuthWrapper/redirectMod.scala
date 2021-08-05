@@ -21,18 +21,15 @@ object redirectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedReduxRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps]]
+  inline def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedReduxRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps]]
   
-  @scala.inline
-  def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): AuthWrapperDecorator[
+  inline def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): AuthWrapperDecorator[
     OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedRouterRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[
     OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
   ]]
   
-  @scala.inline
-  def createOnEnter[State](config: CreateOnEnterConfig[State]): js.Function3[
+  inline def createOnEnter[State](config: CreateOnEnterConfig[State]): js.Function3[
     /* store */ Store[js.Any, AnyAction], 
     /* nextState */ State, 
     /* redirect */ js.Function1[/* location */ LocationDescriptorObject[LocationState], Unit], 
@@ -60,8 +57,7 @@ object redirectMod {
   }
   object ConnectedRouterRedirectConfig {
     
-    @scala.inline
-    def apply[OwnProps, State](
+    inline def apply[OwnProps, State](
       authenticatedSelector: (State, OwnProps) => Boolean,
       redirectPath: String | (StateSelector[State, OwnProps, String])
     ): ConnectedRouterRedirectConfig[OwnProps, State] = {
@@ -69,35 +65,25 @@ object redirectMod {
       __obj.asInstanceOf[ConnectedRouterRedirectConfig[OwnProps, State]]
     }
     
-    @scala.inline
-    implicit class ConnectedRouterRedirectConfigMutableBuilder[Self <: ConnectedRouterRedirectConfig[?, ?], OwnProps, State] (val x: Self & (ConnectedRouterRedirectConfig[OwnProps, State])) extends AnyVal {
+    extension [Self <: ConnectedRouterRedirectConfig[?, ?], OwnProps, State](x: Self & (ConnectedRouterRedirectConfig[OwnProps, State])) {
       
-      @scala.inline
-      def setAllowRedirectBack(value: Boolean | (StateSelector[State, OwnProps, Boolean])): Self = StObject.set(x, "allowRedirectBack", value.asInstanceOf[js.Any])
+      inline def setAllowRedirectBack(value: Boolean | (StateSelector[State, OwnProps, Boolean])): Self = StObject.set(x, "allowRedirectBack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRedirectBackFunction2(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "allowRedirectBack", js.Any.fromFunction2(value))
+      inline def setAllowRedirectBackFunction2(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "allowRedirectBack", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAllowRedirectBackUndefined: Self = StObject.set(x, "allowRedirectBack", js.undefined)
+      inline def setAllowRedirectBackUndefined: Self = StObject.set(x, "allowRedirectBack", js.undefined)
       
-      @scala.inline
-      def setRedirectAction(value: /* location */ Location[LocationState] => Action[js.Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
+      inline def setRedirectAction(value: /* location */ Location[LocationState] => Action[js.Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRedirectActionUndefined: Self = StObject.set(x, "redirectAction", js.undefined)
+      inline def setRedirectActionUndefined: Self = StObject.set(x, "redirectAction", js.undefined)
       
-      @scala.inline
-      def setRedirectPath(value: String | (StateSelector[State, OwnProps, String])): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
+      inline def setRedirectPath(value: String | (StateSelector[State, OwnProps, String])): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectPathFunction2(value: (State, OwnProps) => String): Self = StObject.set(x, "redirectPath", js.Any.fromFunction2(value))
+      inline def setRedirectPathFunction2(value: (State, OwnProps) => String): Self = StObject.set(x, "redirectPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRedirectQueryParamName(value: String): Self = StObject.set(x, "redirectQueryParamName", value.asInstanceOf[js.Any])
+      inline def setRedirectQueryParamName(value: String): Self = StObject.set(x, "redirectQueryParamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectQueryParamNameUndefined: Self = StObject.set(x, "redirectQueryParamName", js.undefined)
+      inline def setRedirectQueryParamNameUndefined: Self = StObject.set(x, "redirectQueryParamName", js.undefined)
     }
   }
   
@@ -117,8 +103,7 @@ object redirectMod {
   }
   object CreateOnEnterConfig {
     
-    @scala.inline
-    def apply[State](
+    inline def apply[State](
       authenticatedSelector: (State, State) => Boolean,
       redirectPath: String | (StateMutateSelector[State, String])
     ): CreateOnEnterConfig[State] = {
@@ -126,38 +111,27 @@ object redirectMod {
       __obj.asInstanceOf[CreateOnEnterConfig[State]]
     }
     
-    @scala.inline
-    implicit class CreateOnEnterConfigMutableBuilder[Self <: CreateOnEnterConfig[?], State] (val x: Self & CreateOnEnterConfig[State]) extends AnyVal {
+    extension [Self <: CreateOnEnterConfig[?], State](x: Self & CreateOnEnterConfig[State]) {
       
-      @scala.inline
-      def setAllowRedirectBack(value: Boolean | (StateMutateSelector[State, Boolean])): Self = StObject.set(x, "allowRedirectBack", value.asInstanceOf[js.Any])
+      inline def setAllowRedirectBack(value: Boolean | (StateMutateSelector[State, Boolean])): Self = StObject.set(x, "allowRedirectBack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRedirectBackFunction2(value: (State, State) => Boolean): Self = StObject.set(x, "allowRedirectBack", js.Any.fromFunction2(value))
+      inline def setAllowRedirectBackFunction2(value: (State, State) => Boolean): Self = StObject.set(x, "allowRedirectBack", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAllowRedirectBackUndefined: Self = StObject.set(x, "allowRedirectBack", js.undefined)
+      inline def setAllowRedirectBackUndefined: Self = StObject.set(x, "allowRedirectBack", js.undefined)
       
-      @scala.inline
-      def setAuthenticatedSelector(value: (State, State) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
+      inline def setAuthenticatedSelector(value: (State, State) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAuthenticatingSelector(value: (State, State) => Boolean): Self = StObject.set(x, "authenticatingSelector", js.Any.fromFunction2(value))
+      inline def setAuthenticatingSelector(value: (State, State) => Boolean): Self = StObject.set(x, "authenticatingSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAuthenticatingSelectorUndefined: Self = StObject.set(x, "authenticatingSelector", js.undefined)
+      inline def setAuthenticatingSelectorUndefined: Self = StObject.set(x, "authenticatingSelector", js.undefined)
       
-      @scala.inline
-      def setRedirectPath(value: String | (StateMutateSelector[State, String])): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
+      inline def setRedirectPath(value: String | (StateMutateSelector[State, String])): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectPathFunction2(value: (State, State) => String): Self = StObject.set(x, "redirectPath", js.Any.fromFunction2(value))
+      inline def setRedirectPathFunction2(value: (State, State) => String): Self = StObject.set(x, "redirectPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRedirectQueryParamName(value: String): Self = StObject.set(x, "redirectQueryParamName", value.asInstanceOf[js.Any])
+      inline def setRedirectQueryParamName(value: String): Self = StObject.set(x, "redirectQueryParamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectQueryParamNameUndefined: Self = StObject.set(x, "redirectQueryParamName", js.undefined)
+      inline def setRedirectQueryParamNameUndefined: Self = StObject.set(x, "redirectQueryParamName", js.undefined)
     }
   }
   
@@ -169,17 +143,14 @@ object redirectMod {
   }
   object InjectedAuthReduxProps {
     
-    @scala.inline
-    def apply(isAuthenticated: Boolean, isAuthenticating: Boolean, redirectPath: String): InjectedAuthReduxProps = {
+    inline def apply(isAuthenticated: Boolean, isAuthenticating: Boolean, redirectPath: String): InjectedAuthReduxProps = {
       val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated.asInstanceOf[js.Any], isAuthenticating = isAuthenticating.asInstanceOf[js.Any], redirectPath = redirectPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectedAuthReduxProps]
     }
     
-    @scala.inline
-    implicit class InjectedAuthReduxPropsMutableBuilder[Self <: InjectedAuthReduxProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedAuthReduxProps](x: Self) {
       
-      @scala.inline
-      def setRedirectPath(value: String): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
+      inline def setRedirectPath(value: String): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,17 +162,14 @@ object redirectMod {
   }
   object InjectedAuthRouterProps {
     
-    @scala.inline
-    def apply[Redirect](isAuthenticated: Boolean, isAuthenticating: Boolean, redirect: Redirect, redirectPath: String): InjectedAuthRouterProps[Redirect] = {
+    inline def apply[Redirect](isAuthenticated: Boolean, isAuthenticating: Boolean, redirect: Redirect, redirectPath: String): InjectedAuthRouterProps[Redirect] = {
       val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated.asInstanceOf[js.Any], isAuthenticating = isAuthenticating.asInstanceOf[js.Any], redirect = redirect.asInstanceOf[js.Any], redirectPath = redirectPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectedAuthRouterProps[Redirect]]
     }
     
-    @scala.inline
-    implicit class InjectedAuthRouterPropsMutableBuilder[Self <: InjectedAuthRouterProps[?], Redirect] (val x: Self & InjectedAuthRouterProps[Redirect]) extends AnyVal {
+    extension [Self <: InjectedAuthRouterProps[?], Redirect](x: Self & InjectedAuthRouterProps[Redirect]) {
       
-      @scala.inline
-      def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     }
   }
   

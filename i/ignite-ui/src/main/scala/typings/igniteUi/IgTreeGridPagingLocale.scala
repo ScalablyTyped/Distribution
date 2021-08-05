@@ -26,25 +26,19 @@ trait IgTreeGridPagingLocale
 }
 object IgTreeGridPagingLocale {
   
-  @scala.inline
-  def apply(): IgTreeGridPagingLocale = {
+  inline def apply(): IgTreeGridPagingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridPagingLocale]
   }
   
-  @scala.inline
-  implicit class IgTreeGridPagingLocaleMutableBuilder[Self <: IgTreeGridPagingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridPagingLocale](x: Self) {
     
-    @scala.inline
-    def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
+    inline def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowLoadingTextUndefined: Self = StObject.set(x, "contextRowLoadingText", js.undefined)
+    inline def setContextRowLoadingTextUndefined: Self = StObject.set(x, "contextRowLoadingText", js.undefined)
     
-    @scala.inline
-    def setContextRowRootText(value: String): Self = StObject.set(x, "contextRowRootText", value.asInstanceOf[js.Any])
+    inline def setContextRowRootText(value: String): Self = StObject.set(x, "contextRowRootText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowRootTextUndefined: Self = StObject.set(x, "contextRowRootText", js.undefined)
+    inline def setContextRowRootTextUndefined: Self = StObject.set(x, "contextRowRootText", js.undefined)
   }
 }

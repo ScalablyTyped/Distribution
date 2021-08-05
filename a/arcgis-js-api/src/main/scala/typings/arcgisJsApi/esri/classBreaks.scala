@@ -20,16 +20,13 @@ trait classBreaks extends StObject {
 }
 object classBreaks {
   
-  @scala.inline
-  def apply(classBreaks: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): classBreaks = {
+  inline def apply(classBreaks: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): classBreaks = {
     val __obj = js.Dynamic.literal(classBreaks = js.Any.fromFunction1(classBreaks))
     __obj.asInstanceOf[classBreaks]
   }
   
-  @scala.inline
-  implicit class classBreaksMutableBuilder[Self <: classBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: classBreaks](x: Self) {
     
-    @scala.inline
-    def setClassBreaks(value: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): Self = StObject.set(x, "classBreaks", js.Any.fromFunction1(value))
+    inline def setClassBreaks(value: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): Self = StObject.set(x, "classBreaks", js.Any.fromFunction1(value))
   }
 }

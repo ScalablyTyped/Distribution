@@ -34,35 +34,26 @@ object topoJSONMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+      inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+      inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
       
-      @scala.inline
-      def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+      inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
+      inline def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
       
-      @scala.inline
-      def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
     }
   }
   

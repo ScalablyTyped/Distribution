@@ -20,9 +20,9 @@ object configurationMod {
        with StaticFeature {
     def this(_client: BaseLanguageClient) = this()
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var getConfiguration: js.Any = js.native
+    /* private */ var getConfiguration: js.Any = js.native
     
     def initialize(): Unit = js.native
   }
@@ -33,22 +33,18 @@ object configurationMod {
   }
   object ConfigurationWorkspaceMiddleware {
     
-    @scala.inline
-    def apply(): ConfigurationWorkspaceMiddleware = {
+    inline def apply(): ConfigurationWorkspaceMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationWorkspaceMiddleware]
     }
     
-    @scala.inline
-    implicit class ConfigurationWorkspaceMiddlewareMutableBuilder[Self <: ConfigurationWorkspaceMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationWorkspaceMiddleware](x: Self) {
       
-      @scala.inline
-      def setConfiguration(
+      inline def setConfiguration(
         value: (/* params */ ConfigurationParams, /* token */ CancellationToken, /* next */ HandlerSignature) => HandlerResult[js.Array[js.Any], Unit]
       ): Self = StObject.set(x, "configuration", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     }
   }
 }

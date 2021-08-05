@@ -19,8 +19,7 @@ trait ExtensionOptions
 }
 object ExtensionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultModelStructureTitle: String,
     extensions: js.Array[String],
     startOnInitialize: Boolean,
@@ -30,22 +29,16 @@ object ExtensionOptions {
     __obj.asInstanceOf[ExtensionOptions]
   }
   
-  @scala.inline
-  implicit class ExtensionOptionsMutableBuilder[Self <: ExtensionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultModelStructureTitle(value: String): Self = StObject.set(x, "defaultModelStructureTitle", value.asInstanceOf[js.Any])
+    inline def setDefaultModelStructureTitle(value: String): Self = StObject.set(x, "defaultModelStructureTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setStartOnInitialize(value: Boolean): Self = StObject.set(x, "startOnInitialize", value.asInstanceOf[js.Any])
+    inline def setStartOnInitialize(value: Boolean): Self = StObject.set(x, "startOnInitialize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewableName(value: String): Self = StObject.set(x, "viewableName", value.asInstanceOf[js.Any])
+    inline def setViewableName(value: String): Self = StObject.set(x, "viewableName", value.asInstanceOf[js.Any])
   }
 }

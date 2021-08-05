@@ -23,8 +23,7 @@ trait ASPxClientHtmlEditorTableElementPropertiesDialog
 }
 object ASPxClientHtmlEditorTableElementPropertiesDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
     GetCancelButton: () => ASPxClientButton,
     GetFormLayout: () => ASPxClientFormLayout,
@@ -36,13 +35,10 @@ object ASPxClientHtmlEditorTableElementPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableElementPropertiesDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableElementPropertiesDialogMutableBuilder[Self <: ASPxClientHtmlEditorTableElementPropertiesDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableElementPropertiesDialog](x: Self) {
     
-    @scala.inline
-    def setGetHorizontalAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHorizontalAlignmentComboBox", js.Any.fromFunction0(value))
+    inline def setGetHorizontalAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHorizontalAlignmentComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVerticalAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetVerticalAlignmentComboBox", js.Any.fromFunction0(value))
+    inline def setGetVerticalAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetVerticalAlignmentComboBox", js.Any.fromFunction0(value))
   }
 }

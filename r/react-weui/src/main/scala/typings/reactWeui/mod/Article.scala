@@ -21,12 +21,10 @@ object Article {
   @JSImport("react-weui", "Article.defaultProps")
   @js.native
   def defaultProps: js.Object = js.native
-  @scala.inline
-  def defaultProps_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-weui", "Article.propTypes")
   @js.native
   def propTypes: js.Object = js.native
-  @scala.inline
-  def propTypes_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

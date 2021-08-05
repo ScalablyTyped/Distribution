@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionState extends StObject
 object ConnectionState {
   
-  @scala.inline
-  def CONNECTED: typings.kurentoClient.kurentoClientStrings.CONNECTED = "CONNECTED".asInstanceOf[typings.kurentoClient.kurentoClientStrings.CONNECTED]
+  inline def CONNECTED: typings.kurentoClient.kurentoClientStrings.CONNECTED = "CONNECTED".asInstanceOf[typings.kurentoClient.kurentoClientStrings.CONNECTED]
   
-  @scala.inline
-  def DISCONNECTED: typings.kurentoClient.kurentoClientStrings.DISCONNECTED = "DISCONNECTED".asInstanceOf[typings.kurentoClient.kurentoClientStrings.DISCONNECTED]
+  inline def DISCONNECTED: typings.kurentoClient.kurentoClientStrings.DISCONNECTED = "DISCONNECTED".asInstanceOf[typings.kurentoClient.kurentoClientStrings.DISCONNECTED]
 }

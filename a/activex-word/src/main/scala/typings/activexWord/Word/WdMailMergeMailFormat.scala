@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMailMergeMailFormat extends StObject
 object WdMailMergeMailFormat {
   
-  @scala.inline
-  def wdMailFormatHTML: `1` = 1.asInstanceOf[`1`]
+  inline def wdMailFormatHTML: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdMailFormatPlainText: `0` = 0.asInstanceOf[`0`]
+  inline def wdMailFormatPlainText: `0` = 0.asInstanceOf[`0`]
 }

@@ -23,34 +23,25 @@ trait Configurations extends StObject {
 }
 object Configurations {
   
-  @scala.inline
-  def apply(): Configurations = {
+  inline def apply(): Configurations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Configurations]
   }
   
-  @scala.inline
-  implicit class ConfigurationsMutableBuilder[Self <: Configurations] (val x: Self) extends AnyVal {
+  extension [Self <: Configurations](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: ConfigurationId): Self = StObject.set(x, "Current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: ConfigurationId): Self = StObject.set(x, "Current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "Current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "Current", js.undefined)
     
-    @scala.inline
-    def setHistory(value: listOfConfigurationId): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
+    inline def setHistory(value: listOfConfigurationId): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
     
-    @scala.inline
-    def setHistoryVarargs(value: ConfigurationId*): Self = StObject.set(x, "History", js.Array(value :_*))
+    inline def setHistoryVarargs(value: ConfigurationId*): Self = StObject.set(x, "History", js.Array(value :_*))
     
-    @scala.inline
-    def setPending(value: ConfigurationId): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: ConfigurationId): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
   }
 }

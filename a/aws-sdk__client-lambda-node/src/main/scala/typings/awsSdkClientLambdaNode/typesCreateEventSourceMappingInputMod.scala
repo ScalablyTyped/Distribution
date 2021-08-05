@@ -70,64 +70,46 @@ object typesCreateEventSourceMappingInputMod {
   }
   object CreateEventSourceMappingInput {
     
-    @scala.inline
-    def apply(EventSourceArn: String, FunctionName: String): CreateEventSourceMappingInput = {
+    inline def apply(EventSourceArn: String, FunctionName: String): CreateEventSourceMappingInput = {
       val __obj = js.Dynamic.literal(EventSourceArn = EventSourceArn.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateEventSourceMappingInput]
     }
     
-    @scala.inline
-    implicit class CreateEventSourceMappingInputMutableBuilder[Self <: CreateEventSourceMappingInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEventSourceMappingInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "BatchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "BatchSize", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
       
-      @scala.inline
-      def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+      inline def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingPosition(value: TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "StartingPosition", value.asInstanceOf[js.Any])
+      inline def setStartingPosition(value: TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "StartingPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingPositionTimestamp(value: Date | String | Double): Self = StObject.set(x, "StartingPositionTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartingPositionTimestamp(value: Date | String | Double): Self = StObject.set(x, "StartingPositionTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingPositionTimestampUndefined: Self = StObject.set(x, "StartingPositionTimestamp", js.undefined)
+      inline def setStartingPositionTimestampUndefined: Self = StObject.set(x, "StartingPositionTimestamp", js.undefined)
       
-      @scala.inline
-      def setStartingPositionUndefined: Self = StObject.set(x, "StartingPosition", js.undefined)
+      inline def setStartingPositionUndefined: Self = StObject.set(x, "StartingPosition", js.undefined)
     }
   }
 }

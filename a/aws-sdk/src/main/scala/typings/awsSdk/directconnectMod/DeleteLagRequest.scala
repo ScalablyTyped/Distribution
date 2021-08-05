@@ -13,16 +13,13 @@ trait DeleteLagRequest extends StObject {
 }
 object DeleteLagRequest {
   
-  @scala.inline
-  def apply(lagId: LagId): DeleteLagRequest = {
+  inline def apply(lagId: LagId): DeleteLagRequest = {
     val __obj = js.Dynamic.literal(lagId = lagId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLagRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLagRequestMutableBuilder[Self <: DeleteLagRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLagRequest](x: Self) {
     
-    @scala.inline
-    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+    inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
   }
 }

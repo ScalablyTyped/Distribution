@@ -34,8 +34,7 @@ trait XRowSetListener
 }
 object XRowSetListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cursorMoved: EventObject => Unit,
     disposing: EventObject => Unit,
@@ -48,16 +47,12 @@ object XRowSetListener {
     __obj.asInstanceOf[XRowSetListener]
   }
   
-  @scala.inline
-  implicit class XRowSetListenerMutableBuilder[Self <: XRowSetListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSetListener](x: Self) {
     
-    @scala.inline
-    def setCursorMoved(value: EventObject => Unit): Self = StObject.set(x, "cursorMoved", js.Any.fromFunction1(value))
+    inline def setCursorMoved(value: EventObject => Unit): Self = StObject.set(x, "cursorMoved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowChanged(value: EventObject => Unit): Self = StObject.set(x, "rowChanged", js.Any.fromFunction1(value))
+    inline def setRowChanged(value: EventObject => Unit): Self = StObject.set(x, "rowChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowSetChanged(value: EventObject => Unit): Self = StObject.set(x, "rowSetChanged", js.Any.fromFunction1(value))
+    inline def setRowSetChanged(value: EventObject => Unit): Self = StObject.set(x, "rowSetChanged", js.Any.fromFunction1(value))
   }
 }

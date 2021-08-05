@@ -12,6 +12,5 @@ object syncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def read(path: String, settings: default): Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Stats]
+  inline def read(path: String, settings: default): Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Stats]
 }

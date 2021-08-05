@@ -27,6 +27,5 @@ object SlowMo {
   @JSImport("gsap", "SlowMo.ease")
   @js.native
   def ease: typings.gsap.gsap.SlowMo = js.native
-  @scala.inline
-  def ease_=(x: typings.gsap.gsap.SlowMo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ease")(x.asInstanceOf[js.Any])
+  inline def ease_=(x: typings.gsap.gsap.SlowMo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ease")(x.asInstanceOf[js.Any])
 }

@@ -87,247 +87,167 @@ trait IEnvelope extends StObject {
 }
 object IEnvelope {
   
-  @scala.inline
-  def apply(): IEnvelope = {
+  inline def apply(): IEnvelope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEnvelope]
   }
   
-  @scala.inline
-  implicit class IEnvelopeMutableBuilder[Self <: IEnvelope] (val x: Self) extends AnyVal {
+  extension [Self <: IEnvelope](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: IAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: IAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentNull: Self = StObject.set(x, "attachment", null)
+    inline def setAttachmentNull: Self = StObject.set(x, "attachment", null)
     
-    @scala.inline
-    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+    inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
-    @scala.inline
-    def setCommandActionComplete(value: ICommandActionComplete): Self = StObject.set(x, "commandActionComplete", value.asInstanceOf[js.Any])
+    inline def setCommandActionComplete(value: ICommandActionComplete): Self = StObject.set(x, "commandActionComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandActionCompleteNull: Self = StObject.set(x, "commandActionComplete", null)
+    inline def setCommandActionCompleteNull: Self = StObject.set(x, "commandActionComplete", null)
     
-    @scala.inline
-    def setCommandActionCompleteUndefined: Self = StObject.set(x, "commandActionComplete", js.undefined)
+    inline def setCommandActionCompleteUndefined: Self = StObject.set(x, "commandActionComplete", js.undefined)
     
-    @scala.inline
-    def setCommandError(value: String): Self = StObject.set(x, "commandError", value.asInstanceOf[js.Any])
+    inline def setCommandError(value: String): Self = StObject.set(x, "commandError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandErrorNull: Self = StObject.set(x, "commandError", null)
+    inline def setCommandErrorNull: Self = StObject.set(x, "commandError", null)
     
-    @scala.inline
-    def setCommandErrorUndefined: Self = StObject.set(x, "commandError", js.undefined)
+    inline def setCommandErrorUndefined: Self = StObject.set(x, "commandError", js.undefined)
     
-    @scala.inline
-    def setCommandGenerateSnippet(value: ICommandGenerateSnippet): Self = StObject.set(x, "commandGenerateSnippet", value.asInstanceOf[js.Any])
+    inline def setCommandGenerateSnippet(value: ICommandGenerateSnippet): Self = StObject.set(x, "commandGenerateSnippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandGenerateSnippetNull: Self = StObject.set(x, "commandGenerateSnippet", null)
+    inline def setCommandGenerateSnippetNull: Self = StObject.set(x, "commandGenerateSnippet", null)
     
-    @scala.inline
-    def setCommandGenerateSnippetUndefined: Self = StObject.set(x, "commandGenerateSnippet", js.undefined)
+    inline def setCommandGenerateSnippetUndefined: Self = StObject.set(x, "commandGenerateSnippet", js.undefined)
     
-    @scala.inline
-    def setCommandInitializeTestCase(value: ICommandInitializeTestCase): Self = StObject.set(x, "commandInitializeTestCase", value.asInstanceOf[js.Any])
+    inline def setCommandInitializeTestCase(value: ICommandInitializeTestCase): Self = StObject.set(x, "commandInitializeTestCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandInitializeTestCaseNull: Self = StObject.set(x, "commandInitializeTestCase", null)
+    inline def setCommandInitializeTestCaseNull: Self = StObject.set(x, "commandInitializeTestCase", null)
     
-    @scala.inline
-    def setCommandInitializeTestCaseUndefined: Self = StObject.set(x, "commandInitializeTestCase", js.undefined)
+    inline def setCommandInitializeTestCaseUndefined: Self = StObject.set(x, "commandInitializeTestCase", js.undefined)
     
-    @scala.inline
-    def setCommandRunAfterTestCaseHook(value: ICommandRunAfterTestCaseHook): Self = StObject.set(x, "commandRunAfterTestCaseHook", value.asInstanceOf[js.Any])
+    inline def setCommandRunAfterTestCaseHook(value: ICommandRunAfterTestCaseHook): Self = StObject.set(x, "commandRunAfterTestCaseHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandRunAfterTestCaseHookNull: Self = StObject.set(x, "commandRunAfterTestCaseHook", null)
+    inline def setCommandRunAfterTestCaseHookNull: Self = StObject.set(x, "commandRunAfterTestCaseHook", null)
     
-    @scala.inline
-    def setCommandRunAfterTestCaseHookUndefined: Self = StObject.set(x, "commandRunAfterTestCaseHook", js.undefined)
+    inline def setCommandRunAfterTestCaseHookUndefined: Self = StObject.set(x, "commandRunAfterTestCaseHook", js.undefined)
     
-    @scala.inline
-    def setCommandRunAfterTestRunHooks(value: ICommandRunAfterTestRunHooks): Self = StObject.set(x, "commandRunAfterTestRunHooks", value.asInstanceOf[js.Any])
+    inline def setCommandRunAfterTestRunHooks(value: ICommandRunAfterTestRunHooks): Self = StObject.set(x, "commandRunAfterTestRunHooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandRunAfterTestRunHooksNull: Self = StObject.set(x, "commandRunAfterTestRunHooks", null)
+    inline def setCommandRunAfterTestRunHooksNull: Self = StObject.set(x, "commandRunAfterTestRunHooks", null)
     
-    @scala.inline
-    def setCommandRunAfterTestRunHooksUndefined: Self = StObject.set(x, "commandRunAfterTestRunHooks", js.undefined)
+    inline def setCommandRunAfterTestRunHooksUndefined: Self = StObject.set(x, "commandRunAfterTestRunHooks", js.undefined)
     
-    @scala.inline
-    def setCommandRunBeforeTestCaseHook(value: ICommandRunBeforeTestCaseHook): Self = StObject.set(x, "commandRunBeforeTestCaseHook", value.asInstanceOf[js.Any])
+    inline def setCommandRunBeforeTestCaseHook(value: ICommandRunBeforeTestCaseHook): Self = StObject.set(x, "commandRunBeforeTestCaseHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandRunBeforeTestCaseHookNull: Self = StObject.set(x, "commandRunBeforeTestCaseHook", null)
+    inline def setCommandRunBeforeTestCaseHookNull: Self = StObject.set(x, "commandRunBeforeTestCaseHook", null)
     
-    @scala.inline
-    def setCommandRunBeforeTestCaseHookUndefined: Self = StObject.set(x, "commandRunBeforeTestCaseHook", js.undefined)
+    inline def setCommandRunBeforeTestCaseHookUndefined: Self = StObject.set(x, "commandRunBeforeTestCaseHook", js.undefined)
     
-    @scala.inline
-    def setCommandRunBeforeTestRunHooks(value: ICommandRunBeforeTestRunHooks): Self = StObject.set(x, "commandRunBeforeTestRunHooks", value.asInstanceOf[js.Any])
+    inline def setCommandRunBeforeTestRunHooks(value: ICommandRunBeforeTestRunHooks): Self = StObject.set(x, "commandRunBeforeTestRunHooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandRunBeforeTestRunHooksNull: Self = StObject.set(x, "commandRunBeforeTestRunHooks", null)
+    inline def setCommandRunBeforeTestRunHooksNull: Self = StObject.set(x, "commandRunBeforeTestRunHooks", null)
     
-    @scala.inline
-    def setCommandRunBeforeTestRunHooksUndefined: Self = StObject.set(x, "commandRunBeforeTestRunHooks", js.undefined)
+    inline def setCommandRunBeforeTestRunHooksUndefined: Self = StObject.set(x, "commandRunBeforeTestRunHooks", js.undefined)
     
-    @scala.inline
-    def setCommandRunTestStep(value: ICommandRunTestStep): Self = StObject.set(x, "commandRunTestStep", value.asInstanceOf[js.Any])
+    inline def setCommandRunTestStep(value: ICommandRunTestStep): Self = StObject.set(x, "commandRunTestStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandRunTestStepNull: Self = StObject.set(x, "commandRunTestStep", null)
+    inline def setCommandRunTestStepNull: Self = StObject.set(x, "commandRunTestStep", null)
     
-    @scala.inline
-    def setCommandRunTestStepUndefined: Self = StObject.set(x, "commandRunTestStep", js.undefined)
+    inline def setCommandRunTestStepUndefined: Self = StObject.set(x, "commandRunTestStep", js.undefined)
     
-    @scala.inline
-    def setCommandStart(value: ICommandStart): Self = StObject.set(x, "commandStart", value.asInstanceOf[js.Any])
+    inline def setCommandStart(value: ICommandStart): Self = StObject.set(x, "commandStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandStartNull: Self = StObject.set(x, "commandStart", null)
+    inline def setCommandStartNull: Self = StObject.set(x, "commandStart", null)
     
-    @scala.inline
-    def setCommandStartUndefined: Self = StObject.set(x, "commandStart", js.undefined)
+    inline def setCommandStartUndefined: Self = StObject.set(x, "commandStart", js.undefined)
     
-    @scala.inline
-    def setGherkinDocument(value: IGherkinDocument): Self = StObject.set(x, "gherkinDocument", value.asInstanceOf[js.Any])
+    inline def setGherkinDocument(value: IGherkinDocument): Self = StObject.set(x, "gherkinDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGherkinDocumentNull: Self = StObject.set(x, "gherkinDocument", null)
+    inline def setGherkinDocumentNull: Self = StObject.set(x, "gherkinDocument", null)
     
-    @scala.inline
-    def setGherkinDocumentUndefined: Self = StObject.set(x, "gherkinDocument", js.undefined)
+    inline def setGherkinDocumentUndefined: Self = StObject.set(x, "gherkinDocument", js.undefined)
     
-    @scala.inline
-    def setHook(value: IHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: IHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookNull: Self = StObject.set(x, "hook", null)
+    inline def setHookNull: Self = StObject.set(x, "hook", null)
     
-    @scala.inline
-    def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
+    inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
     
-    @scala.inline
-    def setPickle(value: IPickle): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
+    inline def setPickle(value: IPickle): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleAccepted(value: IPickleAccepted): Self = StObject.set(x, "pickleAccepted", value.asInstanceOf[js.Any])
+    inline def setPickleAccepted(value: IPickleAccepted): Self = StObject.set(x, "pickleAccepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleAcceptedNull: Self = StObject.set(x, "pickleAccepted", null)
+    inline def setPickleAcceptedNull: Self = StObject.set(x, "pickleAccepted", null)
     
-    @scala.inline
-    def setPickleAcceptedUndefined: Self = StObject.set(x, "pickleAccepted", js.undefined)
+    inline def setPickleAcceptedUndefined: Self = StObject.set(x, "pickleAccepted", js.undefined)
     
-    @scala.inline
-    def setPickleNull: Self = StObject.set(x, "pickle", null)
+    inline def setPickleNull: Self = StObject.set(x, "pickle", null)
     
-    @scala.inline
-    def setPickleRejected(value: IPickleRejected): Self = StObject.set(x, "pickleRejected", value.asInstanceOf[js.Any])
+    inline def setPickleRejected(value: IPickleRejected): Self = StObject.set(x, "pickleRejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleRejectedNull: Self = StObject.set(x, "pickleRejected", null)
+    inline def setPickleRejectedNull: Self = StObject.set(x, "pickleRejected", null)
     
-    @scala.inline
-    def setPickleRejectedUndefined: Self = StObject.set(x, "pickleRejected", js.undefined)
+    inline def setPickleRejectedUndefined: Self = StObject.set(x, "pickleRejected", js.undefined)
     
-    @scala.inline
-    def setPickleUndefined: Self = StObject.set(x, "pickle", js.undefined)
+    inline def setPickleUndefined: Self = StObject.set(x, "pickle", js.undefined)
     
-    @scala.inline
-    def setSource(value: ISource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ISource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStepDefinition(value: IStepDefinition): Self = StObject.set(x, "stepDefinition", value.asInstanceOf[js.Any])
+    inline def setStepDefinition(value: IStepDefinition): Self = StObject.set(x, "stepDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepDefinitionNull: Self = StObject.set(x, "stepDefinition", null)
+    inline def setStepDefinitionNull: Self = StObject.set(x, "stepDefinition", null)
     
-    @scala.inline
-    def setStepDefinitionUndefined: Self = StObject.set(x, "stepDefinition", js.undefined)
+    inline def setStepDefinitionUndefined: Self = StObject.set(x, "stepDefinition", js.undefined)
     
-    @scala.inline
-    def setTestCase(value: ITestCase): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
+    inline def setTestCase(value: ITestCase): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseFinished(value: ITestCaseFinished): Self = StObject.set(x, "testCaseFinished", value.asInstanceOf[js.Any])
+    inline def setTestCaseFinished(value: ITestCaseFinished): Self = StObject.set(x, "testCaseFinished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseFinishedNull: Self = StObject.set(x, "testCaseFinished", null)
+    inline def setTestCaseFinishedNull: Self = StObject.set(x, "testCaseFinished", null)
     
-    @scala.inline
-    def setTestCaseFinishedUndefined: Self = StObject.set(x, "testCaseFinished", js.undefined)
+    inline def setTestCaseFinishedUndefined: Self = StObject.set(x, "testCaseFinished", js.undefined)
     
-    @scala.inline
-    def setTestCaseNull: Self = StObject.set(x, "testCase", null)
+    inline def setTestCaseNull: Self = StObject.set(x, "testCase", null)
     
-    @scala.inline
-    def setTestCasePrepared(value: ITestCasePrepared): Self = StObject.set(x, "testCasePrepared", value.asInstanceOf[js.Any])
+    inline def setTestCasePrepared(value: ITestCasePrepared): Self = StObject.set(x, "testCasePrepared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCasePreparedNull: Self = StObject.set(x, "testCasePrepared", null)
+    inline def setTestCasePreparedNull: Self = StObject.set(x, "testCasePrepared", null)
     
-    @scala.inline
-    def setTestCasePreparedUndefined: Self = StObject.set(x, "testCasePrepared", js.undefined)
+    inline def setTestCasePreparedUndefined: Self = StObject.set(x, "testCasePrepared", js.undefined)
     
-    @scala.inline
-    def setTestCaseStarted(value: ITestCaseStarted): Self = StObject.set(x, "testCaseStarted", value.asInstanceOf[js.Any])
+    inline def setTestCaseStarted(value: ITestCaseStarted): Self = StObject.set(x, "testCaseStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseStartedNull: Self = StObject.set(x, "testCaseStarted", null)
+    inline def setTestCaseStartedNull: Self = StObject.set(x, "testCaseStarted", null)
     
-    @scala.inline
-    def setTestCaseStartedUndefined: Self = StObject.set(x, "testCaseStarted", js.undefined)
+    inline def setTestCaseStartedUndefined: Self = StObject.set(x, "testCaseStarted", js.undefined)
     
-    @scala.inline
-    def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
+    inline def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
     
-    @scala.inline
-    def setTestRunFinished(value: ITestRunFinished): Self = StObject.set(x, "testRunFinished", value.asInstanceOf[js.Any])
+    inline def setTestRunFinished(value: ITestRunFinished): Self = StObject.set(x, "testRunFinished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRunFinishedNull: Self = StObject.set(x, "testRunFinished", null)
+    inline def setTestRunFinishedNull: Self = StObject.set(x, "testRunFinished", null)
     
-    @scala.inline
-    def setTestRunFinishedUndefined: Self = StObject.set(x, "testRunFinished", js.undefined)
+    inline def setTestRunFinishedUndefined: Self = StObject.set(x, "testRunFinished", js.undefined)
     
-    @scala.inline
-    def setTestRunStarted(value: ITestRunStarted): Self = StObject.set(x, "testRunStarted", value.asInstanceOf[js.Any])
+    inline def setTestRunStarted(value: ITestRunStarted): Self = StObject.set(x, "testRunStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRunStartedNull: Self = StObject.set(x, "testRunStarted", null)
+    inline def setTestRunStartedNull: Self = StObject.set(x, "testRunStarted", null)
     
-    @scala.inline
-    def setTestRunStartedUndefined: Self = StObject.set(x, "testRunStarted", js.undefined)
+    inline def setTestRunStartedUndefined: Self = StObject.set(x, "testRunStarted", js.undefined)
     
-    @scala.inline
-    def setTestStepFinished(value: ITestStepFinished): Self = StObject.set(x, "testStepFinished", value.asInstanceOf[js.Any])
+    inline def setTestStepFinished(value: ITestStepFinished): Self = StObject.set(x, "testStepFinished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStepFinishedNull: Self = StObject.set(x, "testStepFinished", null)
+    inline def setTestStepFinishedNull: Self = StObject.set(x, "testStepFinished", null)
     
-    @scala.inline
-    def setTestStepFinishedUndefined: Self = StObject.set(x, "testStepFinished", js.undefined)
+    inline def setTestStepFinishedUndefined: Self = StObject.set(x, "testStepFinished", js.undefined)
     
-    @scala.inline
-    def setTestStepStarted(value: ITestStepStarted): Self = StObject.set(x, "testStepStarted", value.asInstanceOf[js.Any])
+    inline def setTestStepStarted(value: ITestStepStarted): Self = StObject.set(x, "testStepStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStepStartedNull: Self = StObject.set(x, "testStepStarted", null)
+    inline def setTestStepStartedNull: Self = StObject.set(x, "testStepStarted", null)
     
-    @scala.inline
-    def setTestStepStartedUndefined: Self = StObject.set(x, "testStepStarted", js.undefined)
+    inline def setTestStepStartedUndefined: Self = StObject.set(x, "testStepStarted", js.undefined)
   }
 }

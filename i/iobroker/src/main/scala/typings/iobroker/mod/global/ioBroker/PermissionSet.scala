@@ -21,8 +21,7 @@ trait PermissionSet
 }
 object PermissionSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     file: ObjectOperationPermissions,
     groups: js.Array[String],
     `object`: ObjectOperationPermissions,
@@ -35,19 +34,14 @@ object PermissionSet {
     __obj.asInstanceOf[PermissionSet]
   }
   
-  @scala.inline
-  implicit class PermissionSetMutableBuilder[Self <: PermissionSet] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionSet](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setOther(value: Execute): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Execute): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

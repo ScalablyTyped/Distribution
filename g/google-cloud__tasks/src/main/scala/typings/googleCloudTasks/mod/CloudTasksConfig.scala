@@ -24,49 +24,35 @@ trait CloudTasksConfig
 }
 object CloudTasksConfig {
   
-  @scala.inline
-  def apply(): CloudTasksConfig = {
+  inline def apply(): CloudTasksConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudTasksConfig]
   }
   
-  @scala.inline
-  implicit class CloudTasksConfigMutableBuilder[Self <: CloudTasksConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CloudTasksConfig](x: Self) {
     
-    @scala.inline
-    def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
+    inline def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
+    inline def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLibName(value: String): Self = StObject.set(x, "libName", value.asInstanceOf[js.Any])
+    inline def setLibName(value: String): Self = StObject.set(x, "libName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibNameUndefined: Self = StObject.set(x, "libName", js.undefined)
+    inline def setLibNameUndefined: Self = StObject.set(x, "libName", js.undefined)
     
-    @scala.inline
-    def setLibVersion(value: String): Self = StObject.set(x, "libVersion", value.asInstanceOf[js.Any])
+    inline def setLibVersion(value: String): Self = StObject.set(x, "libVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibVersionUndefined: Self = StObject.set(x, "libVersion", js.undefined)
+    inline def setLibVersionUndefined: Self = StObject.set(x, "libVersion", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
-    @scala.inline
-    def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

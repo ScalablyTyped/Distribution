@@ -62,26 +62,20 @@ object jasmine {
   }
   object JQueryEventSpy {
     
-    @scala.inline
-    def apply(eventName: String, handler: JQueryEventObject => js.Any, reset: () => js.Any, selector: String): JQueryEventSpy = {
+    inline def apply(eventName: String, handler: JQueryEventObject => js.Any, reset: () => js.Any, selector: String): JQueryEventSpy = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler), reset = js.Any.fromFunction0(reset), selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[JQueryEventSpy]
     }
     
-    @scala.inline
-    implicit class JQueryEventSpyMutableBuilder[Self <: JQueryEventSpy] (val x: Self) extends AnyVal {
+    extension [Self <: JQueryEventSpy](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: JQueryEventObject => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: JQueryEventObject => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => js.Any): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => js.Any): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,8 +97,7 @@ object jasmine {
   }
   object JSONFixtures {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearCache: () => Unit,
       fixturesPath: String,
       getFixtureData_ : String => js.Any,
@@ -117,29 +110,21 @@ object jasmine {
       __obj.asInstanceOf[JSONFixtures]
     }
     
-    @scala.inline
-    implicit class JSONFixturesMutableBuilder[Self <: JSONFixtures] (val x: Self) extends AnyVal {
+    extension [Self <: JSONFixtures](x: Self) {
       
-      @scala.inline
-      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFixturesPath(value: String): Self = StObject.set(x, "fixturesPath", value.asInstanceOf[js.Any])
+      inline def setFixturesPath(value: String): Self = StObject.set(x, "fixturesPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFixtureData_(value: String => js.Any): Self = StObject.set(x, "getFixtureData_", js.Any.fromFunction1(value))
+      inline def setGetFixtureData_(value: String => js.Any): Self = StObject.set(x, "getFixtureData_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadFixtureIntoCache_(value: String => Unit): Self = StObject.set(x, "loadFixtureIntoCache_", js.Any.fromFunction1(value))
+      inline def setLoadFixtureIntoCache_(value: String => Unit): Self = StObject.set(x, "loadFixtureIntoCache_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProxyCallTo_(value: (String, js.Any) => js.Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
+      inline def setProxyCallTo_(value: (String, js.Any) => js.Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRead(value: /* repeated */ String => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: /* repeated */ String => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     }
   }
   
@@ -155,8 +140,7 @@ object jasmine {
   }
   object JasmineJQuery {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       browserTagCaseIndependentHtml: String => String,
       elementToString: JQuery[HTMLElement] => String,
       events: JasmineJQueryEvents,
@@ -166,20 +150,15 @@ object jasmine {
       __obj.asInstanceOf[JasmineJQuery]
     }
     
-    @scala.inline
-    implicit class JasmineJQueryMutableBuilder[Self <: JasmineJQuery] (val x: Self) extends AnyVal {
+    extension [Self <: JasmineJQuery](x: Self) {
       
-      @scala.inline
-      def setBrowserTagCaseIndependentHtml(value: String => String): Self = StObject.set(x, "browserTagCaseIndependentHtml", js.Any.fromFunction1(value))
+      inline def setBrowserTagCaseIndependentHtml(value: String => String): Self = StObject.set(x, "browserTagCaseIndependentHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementToString(value: JQuery[HTMLElement] => String): Self = StObject.set(x, "elementToString", js.Any.fromFunction1(value))
+      inline def setElementToString(value: JQuery[HTMLElement] => String): Self = StObject.set(x, "elementToString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvents(value: JasmineJQueryEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: JasmineJQueryEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchersClass(value: js.Any): Self = StObject.set(x, "matchersClass", value.asInstanceOf[js.Any])
+      inline def setMatchersClass(value: js.Any): Self = StObject.set(x, "matchersClass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,8 +180,7 @@ object jasmine {
   }
   object JasmineJQueryEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: (String, String) => js.Any,
       cleanUp: () => Unit,
       spyOn: (String, String) => JQueryEventSpy,
@@ -215,29 +193,21 @@ object jasmine {
       __obj.asInstanceOf[JasmineJQueryEvents]
     }
     
-    @scala.inline
-    implicit class JasmineJQueryEventsMutableBuilder[Self <: JasmineJQueryEvents] (val x: Self) extends AnyVal {
+    extension [Self <: JasmineJQueryEvents](x: Self) {
       
-      @scala.inline
-      def setArgs(value: (String, String) => js.Any): Self = StObject.set(x, "args", js.Any.fromFunction2(value))
+      inline def setArgs(value: (String, String) => js.Any): Self = StObject.set(x, "args", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
+      inline def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpyOn(value: (String, String) => JQueryEventSpy): Self = StObject.set(x, "spyOn", js.Any.fromFunction2(value))
+      inline def setSpyOn(value: (String, String) => JQueryEventSpy): Self = StObject.set(x, "spyOn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWasPrevented(value: (String, String) => Boolean): Self = StObject.set(x, "wasPrevented", js.Any.fromFunction2(value))
+      inline def setWasPrevented(value: (String, String) => Boolean): Self = StObject.set(x, "wasPrevented", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWasStopped(value: (String, String) => Boolean): Self = StObject.set(x, "wasStopped", js.Any.fromFunction2(value))
+      inline def setWasStopped(value: (String, String) => Boolean): Self = StObject.set(x, "wasStopped", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWasTriggered(value: (String, String) => Boolean): Self = StObject.set(x, "wasTriggered", js.Any.fromFunction2(value))
+      inline def setWasTriggered(value: (String, String) => Boolean): Self = StObject.set(x, "wasTriggered", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWasTriggeredWith(value: (String, String, js.Any, Env) => Boolean): Self = StObject.set(x, "wasTriggeredWith", js.Any.fromFunction4(value))
+      inline def setWasTriggeredWith(value: (String, String, js.Any, Env) => Boolean): Self = StObject.set(x, "wasTriggeredWith", js.Any.fromFunction4(value))
     }
   }
   
@@ -559,8 +529,7 @@ object jasmine {
   }
   object StyleFixtures {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendLoad: /* repeated */ String => Unit,
       appendSet: String => Unit,
       cleanUp: () => Unit,
@@ -580,50 +549,35 @@ object jasmine {
       __obj.asInstanceOf[StyleFixtures]
     }
     
-    @scala.inline
-    implicit class StyleFixturesMutableBuilder[Self <: StyleFixtures] (val x: Self) extends AnyVal {
+    extension [Self <: StyleFixtures](x: Self) {
       
-      @scala.inline
-      def setAppendLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "appendLoad", js.Any.fromFunction1(value))
+      inline def setAppendLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "appendLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendSet(value: String => Unit): Self = StObject.set(x, "appendSet", js.Any.fromFunction1(value))
+      inline def setAppendSet(value: String => Unit): Self = StObject.set(x, "appendSet", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
+      inline def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateStyle_(value: String => Unit): Self = StObject.set(x, "createStyle_", js.Any.fromFunction1(value))
+      inline def setCreateStyle_(value: String => Unit): Self = StObject.set(x, "createStyle_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFixturesPath(value: String): Self = StObject.set(x, "fixturesPath", value.asInstanceOf[js.Any])
+      inline def setFixturesPath(value: String): Self = StObject.set(x, "fixturesPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFixtureHtml_(value: String => String): Self = StObject.set(x, "getFixtureHtml_", js.Any.fromFunction1(value))
+      inline def setGetFixtureHtml_(value: String => String): Self = StObject.set(x, "getFixtureHtml_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadFixtureIntoCache_(value: String => Unit): Self = StObject.set(x, "loadFixtureIntoCache_", js.Any.fromFunction1(value))
+      inline def setLoadFixtureIntoCache_(value: String => Unit): Self = StObject.set(x, "loadFixtureIntoCache_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeFixtureUrl_(value: String => String): Self = StObject.set(x, "makeFixtureUrl_", js.Any.fromFunction1(value))
+      inline def setMakeFixtureUrl_(value: String => String): Self = StObject.set(x, "makeFixtureUrl_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreload(value: /* repeated */ String => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
+      inline def setPreload(value: /* repeated */ String => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProxyCallTo_(value: (String, js.Any) => js.Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
+      inline def setProxyCallTo_(value: (String, js.Any) => js.Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRead_(value: /* repeated */ String => String): Self = StObject.set(x, "read_", js.Any.fromFunction1(value))
+      inline def setRead_(value: /* repeated */ String => String): Self = StObject.set(x, "read_", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: String => String): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: String => String): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
 }

@@ -28,28 +28,21 @@ trait WorkItemComments extends StObject {
 }
 object WorkItemComments {
   
-  @scala.inline
-  def apply(comments: js.Array[WorkItemComment], count: Double, fromRevisionCount: Double, totalCount: Double): WorkItemComments = {
+  inline def apply(comments: js.Array[WorkItemComment], count: Double, fromRevisionCount: Double, totalCount: Double): WorkItemComments = {
     val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], fromRevisionCount = fromRevisionCount.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemComments]
   }
   
-  @scala.inline
-  implicit class WorkItemCommentsMutableBuilder[Self <: WorkItemComments] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemComments](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[WorkItemComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[WorkItemComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsVarargs(value: WorkItemComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: WorkItemComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromRevisionCount(value: Double): Self = StObject.set(x, "fromRevisionCount", value.asInstanceOf[js.Any])
+    inline def setFromRevisionCount(value: Double): Self = StObject.set(x, "fromRevisionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

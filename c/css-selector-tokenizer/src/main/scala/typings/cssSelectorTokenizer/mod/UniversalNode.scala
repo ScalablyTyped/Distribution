@@ -16,23 +16,18 @@ trait UniversalNode
 }
 object UniversalNode {
   
-  @scala.inline
-  def apply(): UniversalNode = {
+  inline def apply(): UniversalNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("universal")
     __obj.asInstanceOf[UniversalNode]
   }
   
-  @scala.inline
-  implicit class UniversalNodeMutableBuilder[Self <: UniversalNode] (val x: Self) extends AnyVal {
+  extension [Self <: UniversalNode](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setType(value: universal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: universal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

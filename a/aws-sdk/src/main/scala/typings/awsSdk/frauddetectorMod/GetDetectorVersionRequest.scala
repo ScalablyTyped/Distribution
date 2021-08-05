@@ -18,19 +18,15 @@ trait GetDetectorVersionRequest extends StObject {
 }
 object GetDetectorVersionRequest {
   
-  @scala.inline
-  def apply(detectorId: identifier, detectorVersionId: wholeNumberVersionString): GetDetectorVersionRequest = {
+  inline def apply(detectorId: identifier, detectorVersionId: wholeNumberVersionString): GetDetectorVersionRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], detectorVersionId = detectorVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDetectorVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetDetectorVersionRequestMutableBuilder[Self <: GetDetectorVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDetectorVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
   }
 }

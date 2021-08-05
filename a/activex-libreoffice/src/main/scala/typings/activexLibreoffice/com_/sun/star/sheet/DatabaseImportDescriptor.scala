@@ -37,8 +37,7 @@ trait DatabaseImportDescriptor extends StObject {
 }
 object DatabaseImportDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConnectionResource: String,
     DatabaseName: String,
     IsNative: Boolean,
@@ -49,22 +48,16 @@ object DatabaseImportDescriptor {
     __obj.asInstanceOf[DatabaseImportDescriptor]
   }
   
-  @scala.inline
-  implicit class DatabaseImportDescriptorMutableBuilder[Self <: DatabaseImportDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseImportDescriptor](x: Self) {
     
-    @scala.inline
-    def setConnectionResource(value: String): Self = StObject.set(x, "ConnectionResource", value.asInstanceOf[js.Any])
+    inline def setConnectionResource(value: String): Self = StObject.set(x, "ConnectionResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNative(value: Boolean): Self = StObject.set(x, "IsNative", value.asInstanceOf[js.Any])
+    inline def setIsNative(value: Boolean): Self = StObject.set(x, "IsNative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceObject(value: String): Self = StObject.set(x, "SourceObject", value.asInstanceOf[js.Any])
+    inline def setSourceObject(value: String): Self = StObject.set(x, "SourceObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: DataImportMode): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: DataImportMode): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
   }
 }

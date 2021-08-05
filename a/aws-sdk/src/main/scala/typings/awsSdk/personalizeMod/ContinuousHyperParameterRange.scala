@@ -23,31 +23,23 @@ trait ContinuousHyperParameterRange extends StObject {
 }
 object ContinuousHyperParameterRange {
   
-  @scala.inline
-  def apply(): ContinuousHyperParameterRange = {
+  inline def apply(): ContinuousHyperParameterRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContinuousHyperParameterRange]
   }
   
-  @scala.inline
-  implicit class ContinuousHyperParameterRangeMutableBuilder[Self <: ContinuousHyperParameterRange] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousHyperParameterRange](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: ContinuousMaxValue): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: ContinuousMaxValue): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: ContinuousMinValue): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: ContinuousMinValue): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

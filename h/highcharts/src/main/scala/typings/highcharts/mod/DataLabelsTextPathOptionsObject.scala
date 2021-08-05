@@ -19,25 +19,19 @@ trait DataLabelsTextPathOptionsObject extends StObject {
 }
 object DataLabelsTextPathOptionsObject {
   
-  @scala.inline
-  def apply(): DataLabelsTextPathOptionsObject = {
+  inline def apply(): DataLabelsTextPathOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataLabelsTextPathOptionsObject]
   }
   
-  @scala.inline
-  implicit class DataLabelsTextPathOptionsObjectMutableBuilder[Self <: DataLabelsTextPathOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataLabelsTextPathOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

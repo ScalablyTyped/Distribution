@@ -106,8 +106,7 @@ object errors {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def populate(`type`: RawType): StripeError = ^.asInstanceOf[js.Dynamic].applyDynamic("populate")(`type`.asInstanceOf[js.Any]).asInstanceOf[StripeError]
+    inline def populate(`type`: RawType): StripeError = ^.asInstanceOf[js.Dynamic].applyDynamic("populate")(`type`.asInstanceOf[js.Any]).asInstanceOf[StripeError]
   }
   
   @JSImport("stripe", "errors.StripeIdempotencyError")
@@ -159,16 +158,12 @@ object errors {
   trait RawType extends StObject
   object RawType {
     
-    @scala.inline
-    def api_error: typings.stripe.stripeStrings.api_error = "api_error".asInstanceOf[typings.stripe.stripeStrings.api_error]
+    inline def api_error: typings.stripe.stripeStrings.api_error = "api_error".asInstanceOf[typings.stripe.stripeStrings.api_error]
     
-    @scala.inline
-    def card_error: typings.stripe.stripeStrings.card_error = "card_error".asInstanceOf[typings.stripe.stripeStrings.card_error]
+    inline def card_error: typings.stripe.stripeStrings.card_error = "card_error".asInstanceOf[typings.stripe.stripeStrings.card_error]
     
-    @scala.inline
-    def idempotency_error: typings.stripe.stripeStrings.idempotency_error = "idempotency_error".asInstanceOf[typings.stripe.stripeStrings.idempotency_error]
+    inline def idempotency_error: typings.stripe.stripeStrings.idempotency_error = "idempotency_error".asInstanceOf[typings.stripe.stripeStrings.idempotency_error]
     
-    @scala.inline
-    def invalid_request_error: typings.stripe.stripeStrings.invalid_request_error = "invalid_request_error".asInstanceOf[typings.stripe.stripeStrings.invalid_request_error]
+    inline def invalid_request_error: typings.stripe.stripeStrings.invalid_request_error = "invalid_request_error".asInstanceOf[typings.stripe.stripeStrings.invalid_request_error]
   }
 }

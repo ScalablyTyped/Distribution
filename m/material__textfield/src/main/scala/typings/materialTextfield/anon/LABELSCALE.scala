@@ -10,16 +10,13 @@ trait LABELSCALE extends StObject {
 }
 object LABELSCALE {
   
-  @scala.inline
-  def apply(LABEL_SCALE: Double): LABELSCALE = {
+  inline def apply(LABEL_SCALE: Double): LABELSCALE = {
     val __obj = js.Dynamic.literal(LABEL_SCALE = LABEL_SCALE.asInstanceOf[js.Any])
     __obj.asInstanceOf[LABELSCALE]
   }
   
-  @scala.inline
-  implicit class LABELSCALEMutableBuilder[Self <: LABELSCALE] (val x: Self) extends AnyVal {
+  extension [Self <: LABELSCALE](x: Self) {
     
-    @scala.inline
-    def setLABEL_SCALE(value: Double): Self = StObject.set(x, "LABEL_SCALE", value.asInstanceOf[js.Any])
+    inline def setLABEL_SCALE(value: Double): Self = StObject.set(x, "LABEL_SCALE", value.asInstanceOf[js.Any])
   }
 }

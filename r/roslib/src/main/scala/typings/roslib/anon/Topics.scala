@@ -12,25 +12,19 @@ trait Topics extends StObject {
 }
 object Topics {
   
-  @scala.inline
-  def apply(topics: js.Array[java.lang.String], types: js.Array[java.lang.String]): Topics = {
+  inline def apply(topics: js.Array[java.lang.String], types: js.Array[java.lang.String]): Topics = {
     val __obj = js.Dynamic.literal(topics = topics.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topics]
   }
   
-  @scala.inline
-  implicit class TopicsMutableBuilder[Self <: Topics] (val x: Self) extends AnyVal {
+  extension [Self <: Topics](x: Self) {
     
-    @scala.inline
-    def setTopics(value: js.Array[java.lang.String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: js.Array[java.lang.String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicsVarargs(value: java.lang.String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: java.lang.String*): Self = StObject.set(x, "topics", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

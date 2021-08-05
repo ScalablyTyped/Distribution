@@ -18,14 +18,12 @@ object TocPlugin {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildToc(
+  inline def buildToc(
     model: typings.typedoc.reflectionsMod.Reflection,
     trail: js.Array[typings.typedoc.reflectionsMod.Reflection],
     parent: typings.typedoc.navigationItemMod.NavigationItem
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def buildToc(
+  inline def buildToc(
     model: typings.typedoc.reflectionsMod.Reflection,
     trail: js.Array[typings.typedoc.reflectionsMod.Reflection],
     parent: typings.typedoc.navigationItemMod.NavigationItem,

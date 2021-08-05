@@ -28,28 +28,21 @@ trait WindowOpenEvent extends StObject {
 }
 object WindowOpenEvent {
   
-  @scala.inline
-  def apply(url: String, userGesture: Boolean, windowFeatures: js.Array[String], windowName: String): WindowOpenEvent = {
+  inline def apply(url: String, userGesture: Boolean, windowFeatures: js.Array[String], windowName: String): WindowOpenEvent = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], userGesture = userGesture.asInstanceOf[js.Any], windowFeatures = windowFeatures.asInstanceOf[js.Any], windowName = windowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowOpenEvent]
   }
   
-  @scala.inline
-  implicit class WindowOpenEventMutableBuilder[Self <: WindowOpenEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowOpenEvent](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
+    inline def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowFeatures(value: js.Array[String]): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
+    inline def setWindowFeatures(value: js.Array[String]): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowFeaturesVarargs(value: String*): Self = StObject.set(x, "windowFeatures", js.Array(value :_*))
+    inline def setWindowFeaturesVarargs(value: String*): Self = StObject.set(x, "windowFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+    inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
   }
 }

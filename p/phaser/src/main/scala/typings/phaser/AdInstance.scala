@@ -28,25 +28,19 @@ trait AdInstance extends StObject {
 }
 object AdInstance {
   
-  @scala.inline
-  def apply(instance: js.Any, placementID: String, shown: Boolean, video: Boolean): AdInstance = {
+  inline def apply(instance: js.Any, placementID: String, shown: Boolean, video: Boolean): AdInstance = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], placementID = placementID.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdInstance]
   }
   
-  @scala.inline
-  implicit class AdInstanceMutableBuilder[Self <: AdInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AdInstance](x: Self) {
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementID(value: String): Self = StObject.set(x, "placementID", value.asInstanceOf[js.Any])
+    inline def setPlacementID(value: String): Self = StObject.set(x, "placementID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
+    inline def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

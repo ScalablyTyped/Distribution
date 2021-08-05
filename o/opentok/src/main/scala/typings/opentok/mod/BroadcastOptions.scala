@@ -16,31 +16,23 @@ trait BroadcastOptions extends StObject {
 }
 object BroadcastOptions {
   
-  @scala.inline
-  def apply(layout: BroadcastLayoutOptions, outputs: BroadcastOutputOptions): BroadcastOptions = {
+  inline def apply(layout: BroadcastLayoutOptions, outputs: BroadcastOutputOptions): BroadcastOptions = {
     val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastOptions]
   }
   
-  @scala.inline
-  implicit class BroadcastOptionsMutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BroadcastOptions](x: Self) {
     
-    @scala.inline
-    def setLayout(value: BroadcastLayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: BroadcastLayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: BroadcastOutputOptions): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: BroadcastOutputOptions): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

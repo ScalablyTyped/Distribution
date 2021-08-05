@@ -23,25 +23,19 @@ trait GetModelRequest extends StObject {
 }
 object GetModelRequest {
   
-  @scala.inline
-  def apply(modelName: String, restApiId: String): GetModelRequest = {
+  inline def apply(modelName: String, restApiId: String): GetModelRequest = {
     val __obj = js.Dynamic.literal(modelName = modelName.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetModelRequest]
   }
   
-  @scala.inline
-  implicit class GetModelRequestMutableBuilder[Self <: GetModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetModelRequest](x: Self) {
     
-    @scala.inline
-    def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+    inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+    inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
-    @scala.inline
-    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

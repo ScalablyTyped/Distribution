@@ -514,1487 +514,993 @@ object flagFlagMod {
   trait FlagNameValues extends StObject
   object FlagNameValues {
     
-    @scala.inline
-    def ad: typings.semanticUiReact.semanticUiReactStrings.ad = "ad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ad]
+    inline def ad: typings.semanticUiReact.semanticUiReactStrings.ad = "ad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ad]
     
-    @scala.inline
-    def ae: typings.semanticUiReact.semanticUiReactStrings.ae = "ae".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ae]
+    inline def ae: typings.semanticUiReact.semanticUiReactStrings.ae = "ae".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ae]
     
-    @scala.inline
-    def af: typings.semanticUiReact.semanticUiReactStrings.af = "af".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.af]
+    inline def af: typings.semanticUiReact.semanticUiReactStrings.af = "af".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.af]
     
-    @scala.inline
-    def afghanistan: typings.semanticUiReact.semanticUiReactStrings.afghanistan = "afghanistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.afghanistan]
+    inline def afghanistan: typings.semanticUiReact.semanticUiReactStrings.afghanistan = "afghanistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.afghanistan]
     
-    @scala.inline
-    def ag: typings.semanticUiReact.semanticUiReactStrings.ag = "ag".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ag]
+    inline def ag: typings.semanticUiReact.semanticUiReactStrings.ag = "ag".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ag]
     
-    @scala.inline
-    def ai: typings.semanticUiReact.semanticUiReactStrings.ai = "ai".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ai]
+    inline def ai: typings.semanticUiReact.semanticUiReactStrings.ai = "ai".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ai]
     
-    @scala.inline
-    def al: typings.semanticUiReact.semanticUiReactStrings.al = "al".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.al]
+    inline def al: typings.semanticUiReact.semanticUiReactStrings.al = "al".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.al]
     
-    @scala.inline
-    def `aland islands`: typings.semanticUiReact.semanticUiReactStrings.`aland islands` = ("aland islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`aland islands`]
+    inline def `aland islands`: typings.semanticUiReact.semanticUiReactStrings.`aland islands` = ("aland islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`aland islands`]
     
-    @scala.inline
-    def albania: typings.semanticUiReact.semanticUiReactStrings.albania = "albania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.albania]
+    inline def albania: typings.semanticUiReact.semanticUiReactStrings.albania = "albania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.albania]
     
-    @scala.inline
-    def algeria: typings.semanticUiReact.semanticUiReactStrings.algeria = "algeria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.algeria]
+    inline def algeria: typings.semanticUiReact.semanticUiReactStrings.algeria = "algeria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.algeria]
     
-    @scala.inline
-    def am: typings.semanticUiReact.semanticUiReactStrings.am = "am".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.am]
+    inline def am: typings.semanticUiReact.semanticUiReactStrings.am = "am".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.am]
     
-    @scala.inline
-    def america: typings.semanticUiReact.semanticUiReactStrings.america = "america".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.america]
+    inline def america: typings.semanticUiReact.semanticUiReactStrings.america = "america".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.america]
     
-    @scala.inline
-    def `american samoa`: typings.semanticUiReact.semanticUiReactStrings.`american samoa` = ("american samoa").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`american samoa`]
+    inline def `american samoa`: typings.semanticUiReact.semanticUiReactStrings.`american samoa` = ("american samoa").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`american samoa`]
     
-    @scala.inline
-    def an: typings.semanticUiReact.semanticUiReactStrings.an = "an".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.an]
+    inline def an: typings.semanticUiReact.semanticUiReactStrings.an = "an".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.an]
     
-    @scala.inline
-    def andorra: typings.semanticUiReact.semanticUiReactStrings.andorra = "andorra".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.andorra]
+    inline def andorra: typings.semanticUiReact.semanticUiReactStrings.andorra = "andorra".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.andorra]
     
-    @scala.inline
-    def angola: typings.semanticUiReact.semanticUiReactStrings.angola = "angola".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.angola]
+    inline def angola: typings.semanticUiReact.semanticUiReactStrings.angola = "angola".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.angola]
     
-    @scala.inline
-    def anguilla: typings.semanticUiReact.semanticUiReactStrings.anguilla = "anguilla".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.anguilla]
+    inline def anguilla: typings.semanticUiReact.semanticUiReactStrings.anguilla = "anguilla".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.anguilla]
     
-    @scala.inline
-    def antigua: typings.semanticUiReact.semanticUiReactStrings.antigua = "antigua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.antigua]
+    inline def antigua: typings.semanticUiReact.semanticUiReactStrings.antigua = "antigua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.antigua]
     
-    @scala.inline
-    def ao: typings.semanticUiReact.semanticUiReactStrings.ao = "ao".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ao]
+    inline def ao: typings.semanticUiReact.semanticUiReactStrings.ao = "ao".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ao]
     
-    @scala.inline
-    def ar: typings.semanticUiReact.semanticUiReactStrings.ar = "ar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ar]
+    inline def ar: typings.semanticUiReact.semanticUiReactStrings.ar = "ar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ar]
     
-    @scala.inline
-    def argentina: typings.semanticUiReact.semanticUiReactStrings.argentina = "argentina".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.argentina]
+    inline def argentina: typings.semanticUiReact.semanticUiReactStrings.argentina = "argentina".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.argentina]
     
-    @scala.inline
-    def armenia: typings.semanticUiReact.semanticUiReactStrings.armenia = "armenia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.armenia]
+    inline def armenia: typings.semanticUiReact.semanticUiReactStrings.armenia = "armenia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.armenia]
     
-    @scala.inline
-    def aruba: typings.semanticUiReact.semanticUiReactStrings.aruba = "aruba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.aruba]
+    inline def aruba: typings.semanticUiReact.semanticUiReactStrings.aruba = "aruba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.aruba]
     
-    @scala.inline
-    def as: typings.semanticUiReact.semanticUiReactStrings.as = "as".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.as]
+    inline def as: typings.semanticUiReact.semanticUiReactStrings.as = "as".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.as]
     
-    @scala.inline
-    def at: typings.semanticUiReact.semanticUiReactStrings.at = "at".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.at]
+    inline def at: typings.semanticUiReact.semanticUiReactStrings.at = "at".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.at]
     
-    @scala.inline
-    def au: typings.semanticUiReact.semanticUiReactStrings.au = "au".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.au]
+    inline def au: typings.semanticUiReact.semanticUiReactStrings.au = "au".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.au]
     
-    @scala.inline
-    def australia: typings.semanticUiReact.semanticUiReactStrings.australia = "australia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.australia]
+    inline def australia: typings.semanticUiReact.semanticUiReactStrings.australia = "australia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.australia]
     
-    @scala.inline
-    def austria: typings.semanticUiReact.semanticUiReactStrings.austria = "austria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.austria]
+    inline def austria: typings.semanticUiReact.semanticUiReactStrings.austria = "austria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.austria]
     
-    @scala.inline
-    def aw: typings.semanticUiReact.semanticUiReactStrings.aw = "aw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.aw]
+    inline def aw: typings.semanticUiReact.semanticUiReactStrings.aw = "aw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.aw]
     
-    @scala.inline
-    def ax: typings.semanticUiReact.semanticUiReactStrings.ax = "ax".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ax]
+    inline def ax: typings.semanticUiReact.semanticUiReactStrings.ax = "ax".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ax]
     
-    @scala.inline
-    def az: typings.semanticUiReact.semanticUiReactStrings.az = "az".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.az]
+    inline def az: typings.semanticUiReact.semanticUiReactStrings.az = "az".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.az]
     
-    @scala.inline
-    def azerbaijan: typings.semanticUiReact.semanticUiReactStrings.azerbaijan = "azerbaijan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.azerbaijan]
+    inline def azerbaijan: typings.semanticUiReact.semanticUiReactStrings.azerbaijan = "azerbaijan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.azerbaijan]
     
-    @scala.inline
-    def ba: typings.semanticUiReact.semanticUiReactStrings.ba = "ba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ba]
+    inline def ba: typings.semanticUiReact.semanticUiReactStrings.ba = "ba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ba]
     
-    @scala.inline
-    def bahamas: typings.semanticUiReact.semanticUiReactStrings.bahamas = "bahamas".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bahamas]
+    inline def bahamas: typings.semanticUiReact.semanticUiReactStrings.bahamas = "bahamas".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bahamas]
     
-    @scala.inline
-    def bahrain: typings.semanticUiReact.semanticUiReactStrings.bahrain = "bahrain".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bahrain]
+    inline def bahrain: typings.semanticUiReact.semanticUiReactStrings.bahrain = "bahrain".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bahrain]
     
-    @scala.inline
-    def bangladesh: typings.semanticUiReact.semanticUiReactStrings.bangladesh = "bangladesh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bangladesh]
+    inline def bangladesh: typings.semanticUiReact.semanticUiReactStrings.bangladesh = "bangladesh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bangladesh]
     
-    @scala.inline
-    def barbados: typings.semanticUiReact.semanticUiReactStrings.barbados = "barbados".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.barbados]
+    inline def barbados: typings.semanticUiReact.semanticUiReactStrings.barbados = "barbados".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.barbados]
     
-    @scala.inline
-    def bb: typings.semanticUiReact.semanticUiReactStrings.bb = "bb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bb]
+    inline def bb: typings.semanticUiReact.semanticUiReactStrings.bb = "bb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bb]
     
-    @scala.inline
-    def bd: typings.semanticUiReact.semanticUiReactStrings.bd = "bd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bd]
+    inline def bd: typings.semanticUiReact.semanticUiReactStrings.bd = "bd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bd]
     
-    @scala.inline
-    def be: typings.semanticUiReact.semanticUiReactStrings.be = "be".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.be]
+    inline def be: typings.semanticUiReact.semanticUiReactStrings.be = "be".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.be]
     
-    @scala.inline
-    def belarus: typings.semanticUiReact.semanticUiReactStrings.belarus = "belarus".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belarus]
+    inline def belarus: typings.semanticUiReact.semanticUiReactStrings.belarus = "belarus".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belarus]
     
-    @scala.inline
-    def belgium: typings.semanticUiReact.semanticUiReactStrings.belgium = "belgium".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belgium]
+    inline def belgium: typings.semanticUiReact.semanticUiReactStrings.belgium = "belgium".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belgium]
     
-    @scala.inline
-    def belize: typings.semanticUiReact.semanticUiReactStrings.belize = "belize".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belize]
+    inline def belize: typings.semanticUiReact.semanticUiReactStrings.belize = "belize".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belize]
     
-    @scala.inline
-    def benin: typings.semanticUiReact.semanticUiReactStrings.benin = "benin".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.benin]
+    inline def benin: typings.semanticUiReact.semanticUiReactStrings.benin = "benin".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.benin]
     
-    @scala.inline
-    def bermuda: typings.semanticUiReact.semanticUiReactStrings.bermuda = "bermuda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bermuda]
+    inline def bermuda: typings.semanticUiReact.semanticUiReactStrings.bermuda = "bermuda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bermuda]
     
-    @scala.inline
-    def bf: typings.semanticUiReact.semanticUiReactStrings.bf = "bf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bf]
+    inline def bf: typings.semanticUiReact.semanticUiReactStrings.bf = "bf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bf]
     
-    @scala.inline
-    def bg: typings.semanticUiReact.semanticUiReactStrings.bg = "bg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bg]
+    inline def bg: typings.semanticUiReact.semanticUiReactStrings.bg = "bg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bg]
     
-    @scala.inline
-    def bh: typings.semanticUiReact.semanticUiReactStrings.bh = "bh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bh]
+    inline def bh: typings.semanticUiReact.semanticUiReactStrings.bh = "bh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bh]
     
-    @scala.inline
-    def bhutan: typings.semanticUiReact.semanticUiReactStrings.bhutan = "bhutan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bhutan]
+    inline def bhutan: typings.semanticUiReact.semanticUiReactStrings.bhutan = "bhutan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bhutan]
     
-    @scala.inline
-    def bi: typings.semanticUiReact.semanticUiReactStrings.bi = "bi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bi]
+    inline def bi: typings.semanticUiReact.semanticUiReactStrings.bi = "bi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bi]
     
-    @scala.inline
-    def bj: typings.semanticUiReact.semanticUiReactStrings.bj = "bj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bj]
+    inline def bj: typings.semanticUiReact.semanticUiReactStrings.bj = "bj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bj]
     
-    @scala.inline
-    def bm: typings.semanticUiReact.semanticUiReactStrings.bm = "bm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bm]
+    inline def bm: typings.semanticUiReact.semanticUiReactStrings.bm = "bm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bm]
     
-    @scala.inline
-    def bn: typings.semanticUiReact.semanticUiReactStrings.bn = "bn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bn]
+    inline def bn: typings.semanticUiReact.semanticUiReactStrings.bn = "bn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bn]
     
-    @scala.inline
-    def bo: typings.semanticUiReact.semanticUiReactStrings.bo = "bo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bo]
+    inline def bo: typings.semanticUiReact.semanticUiReactStrings.bo = "bo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bo]
     
-    @scala.inline
-    def bolivia: typings.semanticUiReact.semanticUiReactStrings.bolivia = "bolivia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bolivia]
+    inline def bolivia: typings.semanticUiReact.semanticUiReactStrings.bolivia = "bolivia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bolivia]
     
-    @scala.inline
-    def bosnia: typings.semanticUiReact.semanticUiReactStrings.bosnia = "bosnia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bosnia]
+    inline def bosnia: typings.semanticUiReact.semanticUiReactStrings.bosnia = "bosnia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bosnia]
     
-    @scala.inline
-    def botswana: typings.semanticUiReact.semanticUiReactStrings.botswana = "botswana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.botswana]
+    inline def botswana: typings.semanticUiReact.semanticUiReactStrings.botswana = "botswana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.botswana]
     
-    @scala.inline
-    def `bouvet island`: typings.semanticUiReact.semanticUiReactStrings.`bouvet island` = ("bouvet island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bouvet island`]
+    inline def `bouvet island`: typings.semanticUiReact.semanticUiReactStrings.`bouvet island` = ("bouvet island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bouvet island`]
     
-    @scala.inline
-    def br: typings.semanticUiReact.semanticUiReactStrings.br = "br".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.br]
+    inline def br: typings.semanticUiReact.semanticUiReactStrings.br = "br".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.br]
     
-    @scala.inline
-    def brazil: typings.semanticUiReact.semanticUiReactStrings.brazil = "brazil".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brazil]
+    inline def brazil: typings.semanticUiReact.semanticUiReactStrings.brazil = "brazil".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brazil]
     
-    @scala.inline
-    def `british virgin islands`: typings.semanticUiReact.semanticUiReactStrings.`british virgin islands` = ("british virgin islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`british virgin islands`]
+    inline def `british virgin islands`: typings.semanticUiReact.semanticUiReactStrings.`british virgin islands` = ("british virgin islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`british virgin islands`]
     
-    @scala.inline
-    def brunei: typings.semanticUiReact.semanticUiReactStrings.brunei = "brunei".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brunei]
+    inline def brunei: typings.semanticUiReact.semanticUiReactStrings.brunei = "brunei".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brunei]
     
-    @scala.inline
-    def bs: typings.semanticUiReact.semanticUiReactStrings.bs = "bs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bs]
+    inline def bs: typings.semanticUiReact.semanticUiReactStrings.bs = "bs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bs]
     
-    @scala.inline
-    def bt: typings.semanticUiReact.semanticUiReactStrings.bt = "bt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bt]
+    inline def bt: typings.semanticUiReact.semanticUiReactStrings.bt = "bt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bt]
     
-    @scala.inline
-    def bulgaria: typings.semanticUiReact.semanticUiReactStrings.bulgaria = "bulgaria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bulgaria]
+    inline def bulgaria: typings.semanticUiReact.semanticUiReactStrings.bulgaria = "bulgaria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bulgaria]
     
-    @scala.inline
-    def `burkina faso`: typings.semanticUiReact.semanticUiReactStrings.`burkina faso` = ("burkina faso").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`burkina faso`]
+    inline def `burkina faso`: typings.semanticUiReact.semanticUiReactStrings.`burkina faso` = ("burkina faso").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`burkina faso`]
     
-    @scala.inline
-    def burma: typings.semanticUiReact.semanticUiReactStrings.burma = "burma".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.burma]
+    inline def burma: typings.semanticUiReact.semanticUiReactStrings.burma = "burma".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.burma]
     
-    @scala.inline
-    def burundi: typings.semanticUiReact.semanticUiReactStrings.burundi = "burundi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.burundi]
+    inline def burundi: typings.semanticUiReact.semanticUiReactStrings.burundi = "burundi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.burundi]
     
-    @scala.inline
-    def bv: typings.semanticUiReact.semanticUiReactStrings.bv = "bv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bv]
+    inline def bv: typings.semanticUiReact.semanticUiReactStrings.bv = "bv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bv]
     
-    @scala.inline
-    def bw: typings.semanticUiReact.semanticUiReactStrings.bw = "bw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bw]
+    inline def bw: typings.semanticUiReact.semanticUiReactStrings.bw = "bw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bw]
     
-    @scala.inline
-    def by: typings.semanticUiReact.semanticUiReactStrings.by = "by".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.by]
+    inline def by: typings.semanticUiReact.semanticUiReactStrings.by = "by".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.by]
     
-    @scala.inline
-    def bz: typings.semanticUiReact.semanticUiReactStrings.bz = "bz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bz]
+    inline def bz: typings.semanticUiReact.semanticUiReactStrings.bz = "bz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bz]
     
-    @scala.inline
-    def ca: typings.semanticUiReact.semanticUiReactStrings.ca = "ca".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ca]
+    inline def ca: typings.semanticUiReact.semanticUiReactStrings.ca = "ca".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ca]
     
-    @scala.inline
-    def `caicos islands`: typings.semanticUiReact.semanticUiReactStrings.`caicos islands` = ("caicos islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`caicos islands`]
+    inline def `caicos islands`: typings.semanticUiReact.semanticUiReactStrings.`caicos islands` = ("caicos islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`caicos islands`]
     
-    @scala.inline
-    def cambodia: typings.semanticUiReact.semanticUiReactStrings.cambodia = "cambodia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cambodia]
+    inline def cambodia: typings.semanticUiReact.semanticUiReactStrings.cambodia = "cambodia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cambodia]
     
-    @scala.inline
-    def cameroon: typings.semanticUiReact.semanticUiReactStrings.cameroon = "cameroon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cameroon]
+    inline def cameroon: typings.semanticUiReact.semanticUiReactStrings.cameroon = "cameroon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cameroon]
     
-    @scala.inline
-    def canada: typings.semanticUiReact.semanticUiReactStrings.canada = "canada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.canada]
+    inline def canada: typings.semanticUiReact.semanticUiReactStrings.canada = "canada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.canada]
     
-    @scala.inline
-    def `cape verde`: typings.semanticUiReact.semanticUiReactStrings.`cape verde` = ("cape verde").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cape verde`]
+    inline def `cape verde`: typings.semanticUiReact.semanticUiReactStrings.`cape verde` = ("cape verde").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cape verde`]
     
-    @scala.inline
-    def `cayman islands`: typings.semanticUiReact.semanticUiReactStrings.`cayman islands` = ("cayman islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cayman islands`]
+    inline def `cayman islands`: typings.semanticUiReact.semanticUiReactStrings.`cayman islands` = ("cayman islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cayman islands`]
     
-    @scala.inline
-    def cc: typings.semanticUiReact.semanticUiReactStrings.cc = "cc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cc]
+    inline def cc: typings.semanticUiReact.semanticUiReactStrings.cc = "cc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cc]
     
-    @scala.inline
-    def cd: typings.semanticUiReact.semanticUiReactStrings.cd = "cd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cd]
+    inline def cd: typings.semanticUiReact.semanticUiReactStrings.cd = "cd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cd]
     
-    @scala.inline
-    def `central african republic`: typings.semanticUiReact.semanticUiReactStrings.`central african republic` = ("central african republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`central african republic`]
+    inline def `central african republic`: typings.semanticUiReact.semanticUiReactStrings.`central african republic` = ("central african republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`central african republic`]
     
-    @scala.inline
-    def cf: typings.semanticUiReact.semanticUiReactStrings.cf = "cf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cf]
+    inline def cf: typings.semanticUiReact.semanticUiReactStrings.cf = "cf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cf]
     
-    @scala.inline
-    def cg: typings.semanticUiReact.semanticUiReactStrings.cg = "cg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cg]
+    inline def cg: typings.semanticUiReact.semanticUiReactStrings.cg = "cg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cg]
     
-    @scala.inline
-    def ch: typings.semanticUiReact.semanticUiReactStrings.ch = "ch".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ch]
+    inline def ch: typings.semanticUiReact.semanticUiReactStrings.ch = "ch".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ch]
     
-    @scala.inline
-    def chad: typings.semanticUiReact.semanticUiReactStrings.chad = "chad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.chad]
+    inline def chad: typings.semanticUiReact.semanticUiReactStrings.chad = "chad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.chad]
     
-    @scala.inline
-    def chile: typings.semanticUiReact.semanticUiReactStrings.chile = "chile".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.chile]
+    inline def chile: typings.semanticUiReact.semanticUiReactStrings.chile = "chile".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.chile]
     
-    @scala.inline
-    def china: typings.semanticUiReact.semanticUiReactStrings.china = "china".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.china]
+    inline def china: typings.semanticUiReact.semanticUiReactStrings.china = "china".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.china]
     
-    @scala.inline
-    def `christmas island`: typings.semanticUiReact.semanticUiReactStrings.`christmas island` = ("christmas island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`christmas island`]
+    inline def `christmas island`: typings.semanticUiReact.semanticUiReactStrings.`christmas island` = ("christmas island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`christmas island`]
     
-    @scala.inline
-    def ci: typings.semanticUiReact.semanticUiReactStrings.ci = "ci".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ci]
+    inline def ci: typings.semanticUiReact.semanticUiReactStrings.ci = "ci".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ci]
     
-    @scala.inline
-    def ck: typings.semanticUiReact.semanticUiReactStrings.ck = "ck".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ck]
+    inline def ck: typings.semanticUiReact.semanticUiReactStrings.ck = "ck".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ck]
     
-    @scala.inline
-    def cl: typings.semanticUiReact.semanticUiReactStrings.cl = "cl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cl]
+    inline def cl: typings.semanticUiReact.semanticUiReactStrings.cl = "cl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cl]
     
-    @scala.inline
-    def cm: typings.semanticUiReact.semanticUiReactStrings.cm = "cm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cm]
+    inline def cm: typings.semanticUiReact.semanticUiReactStrings.cm = "cm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cm]
     
-    @scala.inline
-    def cn: typings.semanticUiReact.semanticUiReactStrings.cn = "cn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cn]
+    inline def cn: typings.semanticUiReact.semanticUiReactStrings.cn = "cn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cn]
     
-    @scala.inline
-    def co: typings.semanticUiReact.semanticUiReactStrings.co = "co".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.co]
+    inline def co: typings.semanticUiReact.semanticUiReactStrings.co = "co".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.co]
     
-    @scala.inline
-    def `cocos islands`: typings.semanticUiReact.semanticUiReactStrings.`cocos islands` = ("cocos islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cocos islands`]
+    inline def `cocos islands`: typings.semanticUiReact.semanticUiReactStrings.`cocos islands` = ("cocos islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cocos islands`]
     
-    @scala.inline
-    def colombia: typings.semanticUiReact.semanticUiReactStrings.colombia = "colombia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.colombia]
+    inline def colombia: typings.semanticUiReact.semanticUiReactStrings.colombia = "colombia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.colombia]
     
-    @scala.inline
-    def comoros: typings.semanticUiReact.semanticUiReactStrings.comoros = "comoros".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.comoros]
+    inline def comoros: typings.semanticUiReact.semanticUiReactStrings.comoros = "comoros".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.comoros]
     
-    @scala.inline
-    def congo: typings.semanticUiReact.semanticUiReactStrings.congo = "congo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.congo]
+    inline def congo: typings.semanticUiReact.semanticUiReactStrings.congo = "congo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.congo]
     
-    @scala.inline
-    def `congo brazzaville`: typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville` = ("congo brazzaville").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville`]
+    inline def `congo brazzaville`: typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville` = ("congo brazzaville").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville`]
     
-    @scala.inline
-    def `cook islands`: typings.semanticUiReact.semanticUiReactStrings.`cook islands` = ("cook islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cook islands`]
+    inline def `cook islands`: typings.semanticUiReact.semanticUiReactStrings.`cook islands` = ("cook islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cook islands`]
     
-    @scala.inline
-    def `costa rica`: typings.semanticUiReact.semanticUiReactStrings.`costa rica` = ("costa rica").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`costa rica`]
+    inline def `costa rica`: typings.semanticUiReact.semanticUiReactStrings.`costa rica` = ("costa rica").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`costa rica`]
     
-    @scala.inline
-    def `cote divoire`: typings.semanticUiReact.semanticUiReactStrings.`cote divoire` = ("cote divoire").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cote divoire`]
+    inline def `cote divoire`: typings.semanticUiReact.semanticUiReactStrings.`cote divoire` = ("cote divoire").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cote divoire`]
     
-    @scala.inline
-    def cr: typings.semanticUiReact.semanticUiReactStrings.cr = "cr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cr]
+    inline def cr: typings.semanticUiReact.semanticUiReactStrings.cr = "cr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cr]
     
-    @scala.inline
-    def croatia: typings.semanticUiReact.semanticUiReactStrings.croatia = "croatia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.croatia]
+    inline def croatia: typings.semanticUiReact.semanticUiReactStrings.croatia = "croatia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.croatia]
     
-    @scala.inline
-    def cs: typings.semanticUiReact.semanticUiReactStrings.cs = "cs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cs]
+    inline def cs: typings.semanticUiReact.semanticUiReactStrings.cs = "cs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cs]
     
-    @scala.inline
-    def cu: typings.semanticUiReact.semanticUiReactStrings.cu = "cu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cu]
+    inline def cu: typings.semanticUiReact.semanticUiReactStrings.cu = "cu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cu]
     
-    @scala.inline
-    def cuba: typings.semanticUiReact.semanticUiReactStrings.cuba = "cuba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cuba]
+    inline def cuba: typings.semanticUiReact.semanticUiReactStrings.cuba = "cuba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cuba]
     
-    @scala.inline
-    def cv: typings.semanticUiReact.semanticUiReactStrings.cv = "cv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cv]
+    inline def cv: typings.semanticUiReact.semanticUiReactStrings.cv = "cv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cv]
     
-    @scala.inline
-    def cx: typings.semanticUiReact.semanticUiReactStrings.cx = "cx".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cx]
+    inline def cx: typings.semanticUiReact.semanticUiReactStrings.cx = "cx".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cx]
     
-    @scala.inline
-    def cy: typings.semanticUiReact.semanticUiReactStrings.cy = "cy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cy]
+    inline def cy: typings.semanticUiReact.semanticUiReactStrings.cy = "cy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cy]
     
-    @scala.inline
-    def cyprus: typings.semanticUiReact.semanticUiReactStrings.cyprus = "cyprus".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cyprus]
+    inline def cyprus: typings.semanticUiReact.semanticUiReactStrings.cyprus = "cyprus".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cyprus]
     
-    @scala.inline
-    def cz: typings.semanticUiReact.semanticUiReactStrings.cz = "cz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cz]
+    inline def cz: typings.semanticUiReact.semanticUiReactStrings.cz = "cz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cz]
     
-    @scala.inline
-    def `czech republic`: typings.semanticUiReact.semanticUiReactStrings.`czech republic` = ("czech republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`czech republic`]
+    inline def `czech republic`: typings.semanticUiReact.semanticUiReactStrings.`czech republic` = ("czech republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`czech republic`]
     
-    @scala.inline
-    def de: typings.semanticUiReact.semanticUiReactStrings.de = "de".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.de]
+    inline def de: typings.semanticUiReact.semanticUiReactStrings.de = "de".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.de]
     
-    @scala.inline
-    def denmark: typings.semanticUiReact.semanticUiReactStrings.denmark = "denmark".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.denmark]
+    inline def denmark: typings.semanticUiReact.semanticUiReactStrings.denmark = "denmark".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.denmark]
     
-    @scala.inline
-    def dj: typings.semanticUiReact.semanticUiReactStrings.dj = "dj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dj]
+    inline def dj: typings.semanticUiReact.semanticUiReactStrings.dj = "dj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dj]
     
-    @scala.inline
-    def djibouti: typings.semanticUiReact.semanticUiReactStrings.djibouti = "djibouti".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.djibouti]
+    inline def djibouti: typings.semanticUiReact.semanticUiReactStrings.djibouti = "djibouti".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.djibouti]
     
-    @scala.inline
-    def dk: typings.semanticUiReact.semanticUiReactStrings.dk = "dk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dk]
+    inline def dk: typings.semanticUiReact.semanticUiReactStrings.dk = "dk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dk]
     
-    @scala.inline
-    def dm: typings.semanticUiReact.semanticUiReactStrings.dm = "dm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dm]
+    inline def dm: typings.semanticUiReact.semanticUiReactStrings.dm = "dm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dm]
     
-    @scala.inline
-    def `do`: typings.semanticUiReact.semanticUiReactStrings.`do` = "do".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`do`]
+    inline def `do`: typings.semanticUiReact.semanticUiReactStrings.`do` = "do".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`do`]
     
-    @scala.inline
-    def dominica: typings.semanticUiReact.semanticUiReactStrings.dominica = "dominica".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dominica]
+    inline def dominica: typings.semanticUiReact.semanticUiReactStrings.dominica = "dominica".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dominica]
     
-    @scala.inline
-    def `dominican republic`: typings.semanticUiReact.semanticUiReactStrings.`dominican republic` = ("dominican republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`dominican republic`]
+    inline def `dominican republic`: typings.semanticUiReact.semanticUiReactStrings.`dominican republic` = ("dominican republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`dominican republic`]
     
-    @scala.inline
-    def dz: typings.semanticUiReact.semanticUiReactStrings.dz = "dz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dz]
+    inline def dz: typings.semanticUiReact.semanticUiReactStrings.dz = "dz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dz]
     
-    @scala.inline
-    def ec: typings.semanticUiReact.semanticUiReactStrings.ec = "ec".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ec]
+    inline def ec: typings.semanticUiReact.semanticUiReactStrings.ec = "ec".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ec]
     
-    @scala.inline
-    def ecuador: typings.semanticUiReact.semanticUiReactStrings.ecuador = "ecuador".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ecuador]
+    inline def ecuador: typings.semanticUiReact.semanticUiReactStrings.ecuador = "ecuador".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ecuador]
     
-    @scala.inline
-    def ee: typings.semanticUiReact.semanticUiReactStrings.ee = "ee".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ee]
+    inline def ee: typings.semanticUiReact.semanticUiReactStrings.ee = "ee".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ee]
     
-    @scala.inline
-    def eg: typings.semanticUiReact.semanticUiReactStrings.eg = "eg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eg]
+    inline def eg: typings.semanticUiReact.semanticUiReactStrings.eg = "eg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eg]
     
-    @scala.inline
-    def egypt: typings.semanticUiReact.semanticUiReactStrings.egypt = "egypt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.egypt]
+    inline def egypt: typings.semanticUiReact.semanticUiReactStrings.egypt = "egypt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.egypt]
     
-    @scala.inline
-    def eh: typings.semanticUiReact.semanticUiReactStrings.eh = "eh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eh]
+    inline def eh: typings.semanticUiReact.semanticUiReactStrings.eh = "eh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eh]
     
-    @scala.inline
-    def `el salvador`: typings.semanticUiReact.semanticUiReactStrings.`el salvador` = ("el salvador").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`el salvador`]
+    inline def `el salvador`: typings.semanticUiReact.semanticUiReactStrings.`el salvador` = ("el salvador").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`el salvador`]
     
-    @scala.inline
-    def england: typings.semanticUiReact.semanticUiReactStrings.england = "england".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.england]
+    inline def england: typings.semanticUiReact.semanticUiReactStrings.england = "england".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.england]
     
-    @scala.inline
-    def `equatorial guinea`: typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea` = ("equatorial guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea`]
+    inline def `equatorial guinea`: typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea` = ("equatorial guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea`]
     
-    @scala.inline
-    def er: typings.semanticUiReact.semanticUiReactStrings.er = "er".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.er]
+    inline def er: typings.semanticUiReact.semanticUiReactStrings.er = "er".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.er]
     
-    @scala.inline
-    def eritrea: typings.semanticUiReact.semanticUiReactStrings.eritrea = "eritrea".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eritrea]
+    inline def eritrea: typings.semanticUiReact.semanticUiReactStrings.eritrea = "eritrea".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eritrea]
     
-    @scala.inline
-    def es: typings.semanticUiReact.semanticUiReactStrings.es = "es".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.es]
+    inline def es: typings.semanticUiReact.semanticUiReactStrings.es = "es".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.es]
     
-    @scala.inline
-    def estonia: typings.semanticUiReact.semanticUiReactStrings.estonia = "estonia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.estonia]
+    inline def estonia: typings.semanticUiReact.semanticUiReactStrings.estonia = "estonia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.estonia]
     
-    @scala.inline
-    def et: typings.semanticUiReact.semanticUiReactStrings.et = "et".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.et]
+    inline def et: typings.semanticUiReact.semanticUiReactStrings.et = "et".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.et]
     
-    @scala.inline
-    def ethiopia: typings.semanticUiReact.semanticUiReactStrings.ethiopia = "ethiopia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ethiopia]
+    inline def ethiopia: typings.semanticUiReact.semanticUiReactStrings.ethiopia = "ethiopia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ethiopia]
     
-    @scala.inline
-    def eu: typings.semanticUiReact.semanticUiReactStrings.eu = "eu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eu]
+    inline def eu: typings.semanticUiReact.semanticUiReactStrings.eu = "eu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eu]
     
-    @scala.inline
-    def `european union`: typings.semanticUiReact.semanticUiReactStrings.`european union` = ("european union").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`european union`]
+    inline def `european union`: typings.semanticUiReact.semanticUiReactStrings.`european union` = ("european union").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`european union`]
     
-    @scala.inline
-    def `falkland islands`: typings.semanticUiReact.semanticUiReactStrings.`falkland islands` = ("falkland islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`falkland islands`]
+    inline def `falkland islands`: typings.semanticUiReact.semanticUiReactStrings.`falkland islands` = ("falkland islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`falkland islands`]
     
-    @scala.inline
-    def `faroe islands`: typings.semanticUiReact.semanticUiReactStrings.`faroe islands` = ("faroe islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`faroe islands`]
+    inline def `faroe islands`: typings.semanticUiReact.semanticUiReactStrings.`faroe islands` = ("faroe islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`faroe islands`]
     
-    @scala.inline
-    def fi: typings.semanticUiReact.semanticUiReactStrings.fi = "fi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fi]
+    inline def fi: typings.semanticUiReact.semanticUiReactStrings.fi = "fi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fi]
     
-    @scala.inline
-    def fiji: typings.semanticUiReact.semanticUiReactStrings.fiji = "fiji".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fiji]
+    inline def fiji: typings.semanticUiReact.semanticUiReactStrings.fiji = "fiji".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fiji]
     
-    @scala.inline
-    def finland: typings.semanticUiReact.semanticUiReactStrings.finland = "finland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.finland]
+    inline def finland: typings.semanticUiReact.semanticUiReactStrings.finland = "finland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.finland]
     
-    @scala.inline
-    def fj: typings.semanticUiReact.semanticUiReactStrings.fj = "fj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fj]
+    inline def fj: typings.semanticUiReact.semanticUiReactStrings.fj = "fj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fj]
     
-    @scala.inline
-    def fk: typings.semanticUiReact.semanticUiReactStrings.fk = "fk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fk]
+    inline def fk: typings.semanticUiReact.semanticUiReactStrings.fk = "fk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fk]
     
-    @scala.inline
-    def fm: typings.semanticUiReact.semanticUiReactStrings.fm = "fm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fm]
+    inline def fm: typings.semanticUiReact.semanticUiReactStrings.fm = "fm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fm]
     
-    @scala.inline
-    def fo: typings.semanticUiReact.semanticUiReactStrings.fo = "fo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fo]
+    inline def fo: typings.semanticUiReact.semanticUiReactStrings.fo = "fo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fo]
     
-    @scala.inline
-    def fr: typings.semanticUiReact.semanticUiReactStrings.fr = "fr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fr]
+    inline def fr: typings.semanticUiReact.semanticUiReactStrings.fr = "fr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fr]
     
-    @scala.inline
-    def france: typings.semanticUiReact.semanticUiReactStrings.france = "france".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.france]
+    inline def france: typings.semanticUiReact.semanticUiReactStrings.france = "france".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.france]
     
-    @scala.inline
-    def `french guiana`: typings.semanticUiReact.semanticUiReactStrings.`french guiana` = ("french guiana").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french guiana`]
+    inline def `french guiana`: typings.semanticUiReact.semanticUiReactStrings.`french guiana` = ("french guiana").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french guiana`]
     
-    @scala.inline
-    def `french polynesia`: typings.semanticUiReact.semanticUiReactStrings.`french polynesia` = ("french polynesia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french polynesia`]
+    inline def `french polynesia`: typings.semanticUiReact.semanticUiReactStrings.`french polynesia` = ("french polynesia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french polynesia`]
     
-    @scala.inline
-    def `french territories`: typings.semanticUiReact.semanticUiReactStrings.`french territories` = ("french territories").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french territories`]
+    inline def `french territories`: typings.semanticUiReact.semanticUiReactStrings.`french territories` = ("french territories").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french territories`]
     
-    @scala.inline
-    def ga: typings.semanticUiReact.semanticUiReactStrings.ga = "ga".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ga]
+    inline def ga: typings.semanticUiReact.semanticUiReactStrings.ga = "ga".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ga]
     
-    @scala.inline
-    def gabon: typings.semanticUiReact.semanticUiReactStrings.gabon = "gabon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gabon]
+    inline def gabon: typings.semanticUiReact.semanticUiReactStrings.gabon = "gabon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gabon]
     
-    @scala.inline
-    def gambia: typings.semanticUiReact.semanticUiReactStrings.gambia = "gambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gambia]
+    inline def gambia: typings.semanticUiReact.semanticUiReactStrings.gambia = "gambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gambia]
     
-    @scala.inline
-    def gb: typings.semanticUiReact.semanticUiReactStrings.gb = "gb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gb]
+    inline def gb: typings.semanticUiReact.semanticUiReactStrings.gb = "gb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gb]
     
-    @scala.inline
-    def `gb eng`: typings.semanticUiReact.semanticUiReactStrings.`gb eng` = ("gb eng").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb eng`]
+    inline def `gb eng`: typings.semanticUiReact.semanticUiReactStrings.`gb eng` = ("gb eng").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb eng`]
     
-    @scala.inline
-    def `gb sct`: typings.semanticUiReact.semanticUiReactStrings.`gb sct` = ("gb sct").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb sct`]
+    inline def `gb sct`: typings.semanticUiReact.semanticUiReactStrings.`gb sct` = ("gb sct").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb sct`]
     
-    @scala.inline
-    def `gb wls`: typings.semanticUiReact.semanticUiReactStrings.`gb wls` = ("gb wls").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb wls`]
+    inline def `gb wls`: typings.semanticUiReact.semanticUiReactStrings.`gb wls` = ("gb wls").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb wls`]
     
-    @scala.inline
-    def gd: typings.semanticUiReact.semanticUiReactStrings.gd = "gd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gd]
+    inline def gd: typings.semanticUiReact.semanticUiReactStrings.gd = "gd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gd]
     
-    @scala.inline
-    def ge: typings.semanticUiReact.semanticUiReactStrings.ge = "ge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ge]
+    inline def ge: typings.semanticUiReact.semanticUiReactStrings.ge = "ge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ge]
     
-    @scala.inline
-    def georgia: typings.semanticUiReact.semanticUiReactStrings.georgia = "georgia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.georgia]
+    inline def georgia: typings.semanticUiReact.semanticUiReactStrings.georgia = "georgia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.georgia]
     
-    @scala.inline
-    def germany: typings.semanticUiReact.semanticUiReactStrings.germany = "germany".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.germany]
+    inline def germany: typings.semanticUiReact.semanticUiReactStrings.germany = "germany".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.germany]
     
-    @scala.inline
-    def gf: typings.semanticUiReact.semanticUiReactStrings.gf = "gf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gf]
+    inline def gf: typings.semanticUiReact.semanticUiReactStrings.gf = "gf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gf]
     
-    @scala.inline
-    def gh: typings.semanticUiReact.semanticUiReactStrings.gh = "gh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gh]
+    inline def gh: typings.semanticUiReact.semanticUiReactStrings.gh = "gh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gh]
     
-    @scala.inline
-    def ghana: typings.semanticUiReact.semanticUiReactStrings.ghana = "ghana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ghana]
+    inline def ghana: typings.semanticUiReact.semanticUiReactStrings.ghana = "ghana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ghana]
     
-    @scala.inline
-    def gi: typings.semanticUiReact.semanticUiReactStrings.gi = "gi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gi]
+    inline def gi: typings.semanticUiReact.semanticUiReactStrings.gi = "gi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gi]
     
-    @scala.inline
-    def gibraltar: typings.semanticUiReact.semanticUiReactStrings.gibraltar = "gibraltar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gibraltar]
+    inline def gibraltar: typings.semanticUiReact.semanticUiReactStrings.gibraltar = "gibraltar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gibraltar]
     
-    @scala.inline
-    def gl: typings.semanticUiReact.semanticUiReactStrings.gl = "gl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gl]
+    inline def gl: typings.semanticUiReact.semanticUiReactStrings.gl = "gl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gl]
     
-    @scala.inline
-    def gm: typings.semanticUiReact.semanticUiReactStrings.gm = "gm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gm]
+    inline def gm: typings.semanticUiReact.semanticUiReactStrings.gm = "gm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gm]
     
-    @scala.inline
-    def gn: typings.semanticUiReact.semanticUiReactStrings.gn = "gn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gn]
+    inline def gn: typings.semanticUiReact.semanticUiReactStrings.gn = "gn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gn]
     
-    @scala.inline
-    def gp: typings.semanticUiReact.semanticUiReactStrings.gp = "gp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gp]
+    inline def gp: typings.semanticUiReact.semanticUiReactStrings.gp = "gp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gp]
     
-    @scala.inline
-    def gq: typings.semanticUiReact.semanticUiReactStrings.gq = "gq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gq]
+    inline def gq: typings.semanticUiReact.semanticUiReactStrings.gq = "gq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gq]
     
-    @scala.inline
-    def gr: typings.semanticUiReact.semanticUiReactStrings.gr = "gr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gr]
+    inline def gr: typings.semanticUiReact.semanticUiReactStrings.gr = "gr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gr]
     
-    @scala.inline
-    def greece: typings.semanticUiReact.semanticUiReactStrings.greece = "greece".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.greece]
+    inline def greece: typings.semanticUiReact.semanticUiReactStrings.greece = "greece".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.greece]
     
-    @scala.inline
-    def greenland: typings.semanticUiReact.semanticUiReactStrings.greenland = "greenland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.greenland]
+    inline def greenland: typings.semanticUiReact.semanticUiReactStrings.greenland = "greenland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.greenland]
     
-    @scala.inline
-    def grenada: typings.semanticUiReact.semanticUiReactStrings.grenada = "grenada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.grenada]
+    inline def grenada: typings.semanticUiReact.semanticUiReactStrings.grenada = "grenada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.grenada]
     
-    @scala.inline
-    def gs: typings.semanticUiReact.semanticUiReactStrings.gs = "gs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gs]
+    inline def gs: typings.semanticUiReact.semanticUiReactStrings.gs = "gs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gs]
     
-    @scala.inline
-    def gt: typings.semanticUiReact.semanticUiReactStrings.gt = "gt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gt]
+    inline def gt: typings.semanticUiReact.semanticUiReactStrings.gt = "gt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gt]
     
-    @scala.inline
-    def gu: typings.semanticUiReact.semanticUiReactStrings.gu = "gu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gu]
+    inline def gu: typings.semanticUiReact.semanticUiReactStrings.gu = "gu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gu]
     
-    @scala.inline
-    def guadeloupe: typings.semanticUiReact.semanticUiReactStrings.guadeloupe = "guadeloupe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guadeloupe]
+    inline def guadeloupe: typings.semanticUiReact.semanticUiReactStrings.guadeloupe = "guadeloupe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guadeloupe]
     
-    @scala.inline
-    def guam: typings.semanticUiReact.semanticUiReactStrings.guam = "guam".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guam]
+    inline def guam: typings.semanticUiReact.semanticUiReactStrings.guam = "guam".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guam]
     
-    @scala.inline
-    def guatemala: typings.semanticUiReact.semanticUiReactStrings.guatemala = "guatemala".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guatemala]
+    inline def guatemala: typings.semanticUiReact.semanticUiReactStrings.guatemala = "guatemala".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guatemala]
     
-    @scala.inline
-    def guinea: typings.semanticUiReact.semanticUiReactStrings.guinea = "guinea".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guinea]
+    inline def guinea: typings.semanticUiReact.semanticUiReactStrings.guinea = "guinea".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guinea]
     
-    @scala.inline
-    def `guinea-bissau`: typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau` = "guinea-bissau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau`]
+    inline def `guinea-bissau`: typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau` = "guinea-bissau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau`]
     
-    @scala.inline
-    def guyana: typings.semanticUiReact.semanticUiReactStrings.guyana = "guyana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guyana]
+    inline def guyana: typings.semanticUiReact.semanticUiReactStrings.guyana = "guyana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guyana]
     
-    @scala.inline
-    def gw: typings.semanticUiReact.semanticUiReactStrings.gw = "gw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gw]
+    inline def gw: typings.semanticUiReact.semanticUiReactStrings.gw = "gw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gw]
     
-    @scala.inline
-    def gy: typings.semanticUiReact.semanticUiReactStrings.gy = "gy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gy]
+    inline def gy: typings.semanticUiReact.semanticUiReactStrings.gy = "gy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gy]
     
-    @scala.inline
-    def haiti: typings.semanticUiReact.semanticUiReactStrings.haiti = "haiti".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.haiti]
+    inline def haiti: typings.semanticUiReact.semanticUiReactStrings.haiti = "haiti".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.haiti]
     
-    @scala.inline
-    def `heard island`: typings.semanticUiReact.semanticUiReactStrings.`heard island` = ("heard island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`heard island`]
+    inline def `heard island`: typings.semanticUiReact.semanticUiReactStrings.`heard island` = ("heard island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`heard island`]
     
-    @scala.inline
-    def hk: typings.semanticUiReact.semanticUiReactStrings.hk = "hk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hk]
+    inline def hk: typings.semanticUiReact.semanticUiReactStrings.hk = "hk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hk]
     
-    @scala.inline
-    def hm: typings.semanticUiReact.semanticUiReactStrings.hm = "hm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hm]
+    inline def hm: typings.semanticUiReact.semanticUiReactStrings.hm = "hm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hm]
     
-    @scala.inline
-    def hn: typings.semanticUiReact.semanticUiReactStrings.hn = "hn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hn]
+    inline def hn: typings.semanticUiReact.semanticUiReactStrings.hn = "hn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hn]
     
-    @scala.inline
-    def honduras: typings.semanticUiReact.semanticUiReactStrings.honduras = "honduras".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.honduras]
+    inline def honduras: typings.semanticUiReact.semanticUiReactStrings.honduras = "honduras".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.honduras]
     
-    @scala.inline
-    def `hong kong`: typings.semanticUiReact.semanticUiReactStrings.`hong kong` = ("hong kong").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`hong kong`]
+    inline def `hong kong`: typings.semanticUiReact.semanticUiReactStrings.`hong kong` = ("hong kong").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`hong kong`]
     
-    @scala.inline
-    def hr: typings.semanticUiReact.semanticUiReactStrings.hr = "hr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hr]
+    inline def hr: typings.semanticUiReact.semanticUiReactStrings.hr = "hr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hr]
     
-    @scala.inline
-    def ht: typings.semanticUiReact.semanticUiReactStrings.ht = "ht".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ht]
+    inline def ht: typings.semanticUiReact.semanticUiReactStrings.ht = "ht".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ht]
     
-    @scala.inline
-    def hu: typings.semanticUiReact.semanticUiReactStrings.hu = "hu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hu]
+    inline def hu: typings.semanticUiReact.semanticUiReactStrings.hu = "hu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hu]
     
-    @scala.inline
-    def hungary: typings.semanticUiReact.semanticUiReactStrings.hungary = "hungary".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hungary]
+    inline def hungary: typings.semanticUiReact.semanticUiReactStrings.hungary = "hungary".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hungary]
     
-    @scala.inline
-    def iceland: typings.semanticUiReact.semanticUiReactStrings.iceland = "iceland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iceland]
+    inline def iceland: typings.semanticUiReact.semanticUiReactStrings.iceland = "iceland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iceland]
     
-    @scala.inline
-    def id: typings.semanticUiReact.semanticUiReactStrings.id = "id".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.id]
+    inline def id: typings.semanticUiReact.semanticUiReactStrings.id = "id".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.id]
     
-    @scala.inline
-    def ie: typings.semanticUiReact.semanticUiReactStrings.ie = "ie".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ie]
+    inline def ie: typings.semanticUiReact.semanticUiReactStrings.ie = "ie".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ie]
     
-    @scala.inline
-    def il: typings.semanticUiReact.semanticUiReactStrings.il = "il".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.il]
+    inline def il: typings.semanticUiReact.semanticUiReactStrings.il = "il".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.il]
     
-    @scala.inline
-    def in: typings.semanticUiReact.semanticUiReactStrings.in = "in".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.in]
+    inline def in: typings.semanticUiReact.semanticUiReactStrings.in = "in".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.in]
     
-    @scala.inline
-    def india: typings.semanticUiReact.semanticUiReactStrings.india = "india".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.india]
+    inline def india: typings.semanticUiReact.semanticUiReactStrings.india = "india".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.india]
     
-    @scala.inline
-    def `indian ocean territory`: typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory` = ("indian ocean territory").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory`]
+    inline def `indian ocean territory`: typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory` = ("indian ocean territory").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory`]
     
-    @scala.inline
-    def indonesia: typings.semanticUiReact.semanticUiReactStrings.indonesia = "indonesia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.indonesia]
+    inline def indonesia: typings.semanticUiReact.semanticUiReactStrings.indonesia = "indonesia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.indonesia]
     
-    @scala.inline
-    def io: typings.semanticUiReact.semanticUiReactStrings.io = "io".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.io]
+    inline def io: typings.semanticUiReact.semanticUiReactStrings.io = "io".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.io]
     
-    @scala.inline
-    def iq: typings.semanticUiReact.semanticUiReactStrings.iq = "iq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iq]
+    inline def iq: typings.semanticUiReact.semanticUiReactStrings.iq = "iq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iq]
     
-    @scala.inline
-    def ir: typings.semanticUiReact.semanticUiReactStrings.ir = "ir".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ir]
+    inline def ir: typings.semanticUiReact.semanticUiReactStrings.ir = "ir".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ir]
     
-    @scala.inline
-    def iran: typings.semanticUiReact.semanticUiReactStrings.iran = "iran".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iran]
+    inline def iran: typings.semanticUiReact.semanticUiReactStrings.iran = "iran".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iran]
     
-    @scala.inline
-    def iraq: typings.semanticUiReact.semanticUiReactStrings.iraq = "iraq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iraq]
+    inline def iraq: typings.semanticUiReact.semanticUiReactStrings.iraq = "iraq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iraq]
     
-    @scala.inline
-    def ireland: typings.semanticUiReact.semanticUiReactStrings.ireland = "ireland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ireland]
+    inline def ireland: typings.semanticUiReact.semanticUiReactStrings.ireland = "ireland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ireland]
     
-    @scala.inline
-    def is: typings.semanticUiReact.semanticUiReactStrings.is = "is".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.is]
+    inline def is: typings.semanticUiReact.semanticUiReactStrings.is = "is".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.is]
     
-    @scala.inline
-    def israel: typings.semanticUiReact.semanticUiReactStrings.israel = "israel".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.israel]
+    inline def israel: typings.semanticUiReact.semanticUiReactStrings.israel = "israel".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.israel]
     
-    @scala.inline
-    def it: typings.semanticUiReact.semanticUiReactStrings.it = "it".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.it]
+    inline def it: typings.semanticUiReact.semanticUiReactStrings.it = "it".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.it]
     
-    @scala.inline
-    def italy: typings.semanticUiReact.semanticUiReactStrings.italy = "italy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.italy]
+    inline def italy: typings.semanticUiReact.semanticUiReactStrings.italy = "italy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.italy]
     
-    @scala.inline
-    def jamaica: typings.semanticUiReact.semanticUiReactStrings.jamaica = "jamaica".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jamaica]
+    inline def jamaica: typings.semanticUiReact.semanticUiReactStrings.jamaica = "jamaica".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jamaica]
     
-    @scala.inline
-    def `jan mayen`: typings.semanticUiReact.semanticUiReactStrings.`jan mayen` = ("jan mayen").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`jan mayen`]
+    inline def `jan mayen`: typings.semanticUiReact.semanticUiReactStrings.`jan mayen` = ("jan mayen").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`jan mayen`]
     
-    @scala.inline
-    def japan: typings.semanticUiReact.semanticUiReactStrings.japan = "japan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.japan]
+    inline def japan: typings.semanticUiReact.semanticUiReactStrings.japan = "japan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.japan]
     
-    @scala.inline
-    def jm: typings.semanticUiReact.semanticUiReactStrings.jm = "jm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jm]
+    inline def jm: typings.semanticUiReact.semanticUiReactStrings.jm = "jm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jm]
     
-    @scala.inline
-    def jo: typings.semanticUiReact.semanticUiReactStrings.jo = "jo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jo]
+    inline def jo: typings.semanticUiReact.semanticUiReactStrings.jo = "jo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jo]
     
-    @scala.inline
-    def jordan: typings.semanticUiReact.semanticUiReactStrings.jordan = "jordan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jordan]
+    inline def jordan: typings.semanticUiReact.semanticUiReactStrings.jordan = "jordan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jordan]
     
-    @scala.inline
-    def jp: typings.semanticUiReact.semanticUiReactStrings.jp = "jp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jp]
+    inline def jp: typings.semanticUiReact.semanticUiReactStrings.jp = "jp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jp]
     
-    @scala.inline
-    def kazakhstan: typings.semanticUiReact.semanticUiReactStrings.kazakhstan = "kazakhstan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kazakhstan]
+    inline def kazakhstan: typings.semanticUiReact.semanticUiReactStrings.kazakhstan = "kazakhstan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kazakhstan]
     
-    @scala.inline
-    def ke: typings.semanticUiReact.semanticUiReactStrings.ke = "ke".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ke]
+    inline def ke: typings.semanticUiReact.semanticUiReactStrings.ke = "ke".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ke]
     
-    @scala.inline
-    def kenya: typings.semanticUiReact.semanticUiReactStrings.kenya = "kenya".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kenya]
+    inline def kenya: typings.semanticUiReact.semanticUiReactStrings.kenya = "kenya".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kenya]
     
-    @scala.inline
-    def kg: typings.semanticUiReact.semanticUiReactStrings.kg = "kg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kg]
+    inline def kg: typings.semanticUiReact.semanticUiReactStrings.kg = "kg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kg]
     
-    @scala.inline
-    def kh: typings.semanticUiReact.semanticUiReactStrings.kh = "kh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kh]
+    inline def kh: typings.semanticUiReact.semanticUiReactStrings.kh = "kh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kh]
     
-    @scala.inline
-    def ki: typings.semanticUiReact.semanticUiReactStrings.ki = "ki".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ki]
+    inline def ki: typings.semanticUiReact.semanticUiReactStrings.ki = "ki".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ki]
     
-    @scala.inline
-    def kiribati: typings.semanticUiReact.semanticUiReactStrings.kiribati = "kiribati".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kiribati]
+    inline def kiribati: typings.semanticUiReact.semanticUiReactStrings.kiribati = "kiribati".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kiribati]
     
-    @scala.inline
-    def km: typings.semanticUiReact.semanticUiReactStrings.km = "km".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.km]
+    inline def km: typings.semanticUiReact.semanticUiReactStrings.km = "km".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.km]
     
-    @scala.inline
-    def kn: typings.semanticUiReact.semanticUiReactStrings.kn = "kn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kn]
+    inline def kn: typings.semanticUiReact.semanticUiReactStrings.kn = "kn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kn]
     
-    @scala.inline
-    def kp: typings.semanticUiReact.semanticUiReactStrings.kp = "kp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kp]
+    inline def kp: typings.semanticUiReact.semanticUiReactStrings.kp = "kp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kp]
     
-    @scala.inline
-    def kr: typings.semanticUiReact.semanticUiReactStrings.kr = "kr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kr]
+    inline def kr: typings.semanticUiReact.semanticUiReactStrings.kr = "kr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kr]
     
-    @scala.inline
-    def kuwait: typings.semanticUiReact.semanticUiReactStrings.kuwait = "kuwait".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kuwait]
+    inline def kuwait: typings.semanticUiReact.semanticUiReactStrings.kuwait = "kuwait".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kuwait]
     
-    @scala.inline
-    def kw: typings.semanticUiReact.semanticUiReactStrings.kw = "kw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kw]
+    inline def kw: typings.semanticUiReact.semanticUiReactStrings.kw = "kw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kw]
     
-    @scala.inline
-    def ky: typings.semanticUiReact.semanticUiReactStrings.ky = "ky".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ky]
+    inline def ky: typings.semanticUiReact.semanticUiReactStrings.ky = "ky".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ky]
     
-    @scala.inline
-    def kyrgyzstan: typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan = "kyrgyzstan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan]
+    inline def kyrgyzstan: typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan = "kyrgyzstan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan]
     
-    @scala.inline
-    def kz: typings.semanticUiReact.semanticUiReactStrings.kz = "kz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kz]
+    inline def kz: typings.semanticUiReact.semanticUiReactStrings.kz = "kz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kz]
     
-    @scala.inline
-    def la: typings.semanticUiReact.semanticUiReactStrings.la = "la".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.la]
+    inline def la: typings.semanticUiReact.semanticUiReactStrings.la = "la".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.la]
     
-    @scala.inline
-    def laos: typings.semanticUiReact.semanticUiReactStrings.laos = "laos".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.laos]
+    inline def laos: typings.semanticUiReact.semanticUiReactStrings.laos = "laos".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.laos]
     
-    @scala.inline
-    def latvia: typings.semanticUiReact.semanticUiReactStrings.latvia = "latvia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.latvia]
+    inline def latvia: typings.semanticUiReact.semanticUiReactStrings.latvia = "latvia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.latvia]
     
-    @scala.inline
-    def lb: typings.semanticUiReact.semanticUiReactStrings.lb = "lb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lb]
+    inline def lb: typings.semanticUiReact.semanticUiReactStrings.lb = "lb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lb]
     
-    @scala.inline
-    def lc: typings.semanticUiReact.semanticUiReactStrings.lc = "lc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lc]
+    inline def lc: typings.semanticUiReact.semanticUiReactStrings.lc = "lc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lc]
     
-    @scala.inline
-    def lebanon: typings.semanticUiReact.semanticUiReactStrings.lebanon = "lebanon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lebanon]
+    inline def lebanon: typings.semanticUiReact.semanticUiReactStrings.lebanon = "lebanon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lebanon]
     
-    @scala.inline
-    def lesotho: typings.semanticUiReact.semanticUiReactStrings.lesotho = "lesotho".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lesotho]
+    inline def lesotho: typings.semanticUiReact.semanticUiReactStrings.lesotho = "lesotho".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lesotho]
     
-    @scala.inline
-    def li: typings.semanticUiReact.semanticUiReactStrings.li = "li".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.li]
+    inline def li: typings.semanticUiReact.semanticUiReactStrings.li = "li".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.li]
     
-    @scala.inline
-    def liberia: typings.semanticUiReact.semanticUiReactStrings.liberia = "liberia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.liberia]
+    inline def liberia: typings.semanticUiReact.semanticUiReactStrings.liberia = "liberia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.liberia]
     
-    @scala.inline
-    def libya: typings.semanticUiReact.semanticUiReactStrings.libya = "libya".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.libya]
+    inline def libya: typings.semanticUiReact.semanticUiReactStrings.libya = "libya".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.libya]
     
-    @scala.inline
-    def liechtenstein: typings.semanticUiReact.semanticUiReactStrings.liechtenstein = "liechtenstein".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.liechtenstein]
+    inline def liechtenstein: typings.semanticUiReact.semanticUiReactStrings.liechtenstein = "liechtenstein".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.liechtenstein]
     
-    @scala.inline
-    def lithuania: typings.semanticUiReact.semanticUiReactStrings.lithuania = "lithuania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lithuania]
+    inline def lithuania: typings.semanticUiReact.semanticUiReactStrings.lithuania = "lithuania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lithuania]
     
-    @scala.inline
-    def lk: typings.semanticUiReact.semanticUiReactStrings.lk = "lk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lk]
+    inline def lk: typings.semanticUiReact.semanticUiReactStrings.lk = "lk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lk]
     
-    @scala.inline
-    def lr: typings.semanticUiReact.semanticUiReactStrings.lr = "lr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lr]
+    inline def lr: typings.semanticUiReact.semanticUiReactStrings.lr = "lr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lr]
     
-    @scala.inline
-    def ls: typings.semanticUiReact.semanticUiReactStrings.ls = "ls".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ls]
+    inline def ls: typings.semanticUiReact.semanticUiReactStrings.ls = "ls".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ls]
     
-    @scala.inline
-    def lt: typings.semanticUiReact.semanticUiReactStrings.lt = "lt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lt]
+    inline def lt: typings.semanticUiReact.semanticUiReactStrings.lt = "lt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lt]
     
-    @scala.inline
-    def lu: typings.semanticUiReact.semanticUiReactStrings.lu = "lu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lu]
+    inline def lu: typings.semanticUiReact.semanticUiReactStrings.lu = "lu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lu]
     
-    @scala.inline
-    def luxembourg: typings.semanticUiReact.semanticUiReactStrings.luxembourg = "luxembourg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.luxembourg]
+    inline def luxembourg: typings.semanticUiReact.semanticUiReactStrings.luxembourg = "luxembourg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.luxembourg]
     
-    @scala.inline
-    def lv: typings.semanticUiReact.semanticUiReactStrings.lv = "lv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lv]
+    inline def lv: typings.semanticUiReact.semanticUiReactStrings.lv = "lv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lv]
     
-    @scala.inline
-    def ly: typings.semanticUiReact.semanticUiReactStrings.ly = "ly".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ly]
+    inline def ly: typings.semanticUiReact.semanticUiReactStrings.ly = "ly".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ly]
     
-    @scala.inline
-    def ma: typings.semanticUiReact.semanticUiReactStrings.ma = "ma".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ma]
+    inline def ma: typings.semanticUiReact.semanticUiReactStrings.ma = "ma".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ma]
     
-    @scala.inline
-    def macau: typings.semanticUiReact.semanticUiReactStrings.macau = "macau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.macau]
+    inline def macau: typings.semanticUiReact.semanticUiReactStrings.macau = "macau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.macau]
     
-    @scala.inline
-    def macedonia: typings.semanticUiReact.semanticUiReactStrings.macedonia = "macedonia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.macedonia]
+    inline def macedonia: typings.semanticUiReact.semanticUiReactStrings.macedonia = "macedonia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.macedonia]
     
-    @scala.inline
-    def madagascar: typings.semanticUiReact.semanticUiReactStrings.madagascar = "madagascar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.madagascar]
+    inline def madagascar: typings.semanticUiReact.semanticUiReactStrings.madagascar = "madagascar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.madagascar]
     
-    @scala.inline
-    def malawi: typings.semanticUiReact.semanticUiReactStrings.malawi = "malawi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malawi]
+    inline def malawi: typings.semanticUiReact.semanticUiReactStrings.malawi = "malawi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malawi]
     
-    @scala.inline
-    def malaysia: typings.semanticUiReact.semanticUiReactStrings.malaysia = "malaysia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malaysia]
+    inline def malaysia: typings.semanticUiReact.semanticUiReactStrings.malaysia = "malaysia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malaysia]
     
-    @scala.inline
-    def maldives: typings.semanticUiReact.semanticUiReactStrings.maldives = "maldives".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.maldives]
+    inline def maldives: typings.semanticUiReact.semanticUiReactStrings.maldives = "maldives".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.maldives]
     
-    @scala.inline
-    def mali: typings.semanticUiReact.semanticUiReactStrings.mali = "mali".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mali]
+    inline def mali: typings.semanticUiReact.semanticUiReactStrings.mali = "mali".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mali]
     
-    @scala.inline
-    def malta: typings.semanticUiReact.semanticUiReactStrings.malta = "malta".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malta]
+    inline def malta: typings.semanticUiReact.semanticUiReactStrings.malta = "malta".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malta]
     
-    @scala.inline
-    def `marshall islands`: typings.semanticUiReact.semanticUiReactStrings.`marshall islands` = ("marshall islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`marshall islands`]
+    inline def `marshall islands`: typings.semanticUiReact.semanticUiReactStrings.`marshall islands` = ("marshall islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`marshall islands`]
     
-    @scala.inline
-    def martinique: typings.semanticUiReact.semanticUiReactStrings.martinique = "martinique".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.martinique]
+    inline def martinique: typings.semanticUiReact.semanticUiReactStrings.martinique = "martinique".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.martinique]
     
-    @scala.inline
-    def mauritania: typings.semanticUiReact.semanticUiReactStrings.mauritania = "mauritania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mauritania]
+    inline def mauritania: typings.semanticUiReact.semanticUiReactStrings.mauritania = "mauritania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mauritania]
     
-    @scala.inline
-    def mauritius: typings.semanticUiReact.semanticUiReactStrings.mauritius = "mauritius".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mauritius]
+    inline def mauritius: typings.semanticUiReact.semanticUiReactStrings.mauritius = "mauritius".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mauritius]
     
-    @scala.inline
-    def mayotte: typings.semanticUiReact.semanticUiReactStrings.mayotte = "mayotte".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mayotte]
+    inline def mayotte: typings.semanticUiReact.semanticUiReactStrings.mayotte = "mayotte".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mayotte]
     
-    @scala.inline
-    def mc: typings.semanticUiReact.semanticUiReactStrings.mc = "mc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mc]
+    inline def mc: typings.semanticUiReact.semanticUiReactStrings.mc = "mc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mc]
     
-    @scala.inline
-    def md: typings.semanticUiReact.semanticUiReactStrings.md = "md".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.md]
+    inline def md: typings.semanticUiReact.semanticUiReactStrings.md = "md".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.md]
     
-    @scala.inline
-    def me: typings.semanticUiReact.semanticUiReactStrings.me = "me".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.me]
+    inline def me: typings.semanticUiReact.semanticUiReactStrings.me = "me".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.me]
     
-    @scala.inline
-    def mexico: typings.semanticUiReact.semanticUiReactStrings.mexico = "mexico".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mexico]
+    inline def mexico: typings.semanticUiReact.semanticUiReactStrings.mexico = "mexico".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mexico]
     
-    @scala.inline
-    def mg: typings.semanticUiReact.semanticUiReactStrings.mg = "mg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mg]
+    inline def mg: typings.semanticUiReact.semanticUiReactStrings.mg = "mg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mg]
     
-    @scala.inline
-    def mh: typings.semanticUiReact.semanticUiReactStrings.mh = "mh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mh]
+    inline def mh: typings.semanticUiReact.semanticUiReactStrings.mh = "mh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mh]
     
-    @scala.inline
-    def micronesia: typings.semanticUiReact.semanticUiReactStrings.micronesia = "micronesia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.micronesia]
+    inline def micronesia: typings.semanticUiReact.semanticUiReactStrings.micronesia = "micronesia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.micronesia]
     
-    @scala.inline
-    def mk: typings.semanticUiReact.semanticUiReactStrings.mk = "mk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mk]
+    inline def mk: typings.semanticUiReact.semanticUiReactStrings.mk = "mk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mk]
     
-    @scala.inline
-    def ml: typings.semanticUiReact.semanticUiReactStrings.ml = "ml".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ml]
+    inline def ml: typings.semanticUiReact.semanticUiReactStrings.ml = "ml".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ml]
     
-    @scala.inline
-    def mm: typings.semanticUiReact.semanticUiReactStrings.mm = "mm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mm]
+    inline def mm: typings.semanticUiReact.semanticUiReactStrings.mm = "mm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mm]
     
-    @scala.inline
-    def mn: typings.semanticUiReact.semanticUiReactStrings.mn = "mn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mn]
+    inline def mn: typings.semanticUiReact.semanticUiReactStrings.mn = "mn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mn]
     
-    @scala.inline
-    def mo: typings.semanticUiReact.semanticUiReactStrings.mo = "mo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mo]
+    inline def mo: typings.semanticUiReact.semanticUiReactStrings.mo = "mo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mo]
     
-    @scala.inline
-    def moldova: typings.semanticUiReact.semanticUiReactStrings.moldova = "moldova".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.moldova]
+    inline def moldova: typings.semanticUiReact.semanticUiReactStrings.moldova = "moldova".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.moldova]
     
-    @scala.inline
-    def monaco: typings.semanticUiReact.semanticUiReactStrings.monaco = "monaco".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.monaco]
+    inline def monaco: typings.semanticUiReact.semanticUiReactStrings.monaco = "monaco".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.monaco]
     
-    @scala.inline
-    def mongolia: typings.semanticUiReact.semanticUiReactStrings.mongolia = "mongolia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mongolia]
+    inline def mongolia: typings.semanticUiReact.semanticUiReactStrings.mongolia = "mongolia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mongolia]
     
-    @scala.inline
-    def montenegro: typings.semanticUiReact.semanticUiReactStrings.montenegro = "montenegro".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.montenegro]
+    inline def montenegro: typings.semanticUiReact.semanticUiReactStrings.montenegro = "montenegro".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.montenegro]
     
-    @scala.inline
-    def montserrat: typings.semanticUiReact.semanticUiReactStrings.montserrat = "montserrat".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.montserrat]
+    inline def montserrat: typings.semanticUiReact.semanticUiReactStrings.montserrat = "montserrat".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.montserrat]
     
-    @scala.inline
-    def morocco: typings.semanticUiReact.semanticUiReactStrings.morocco = "morocco".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.morocco]
+    inline def morocco: typings.semanticUiReact.semanticUiReactStrings.morocco = "morocco".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.morocco]
     
-    @scala.inline
-    def mozambique: typings.semanticUiReact.semanticUiReactStrings.mozambique = "mozambique".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mozambique]
+    inline def mozambique: typings.semanticUiReact.semanticUiReactStrings.mozambique = "mozambique".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mozambique]
     
-    @scala.inline
-    def mp: typings.semanticUiReact.semanticUiReactStrings.mp = "mp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mp]
+    inline def mp: typings.semanticUiReact.semanticUiReactStrings.mp = "mp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mp]
     
-    @scala.inline
-    def mq: typings.semanticUiReact.semanticUiReactStrings.mq = "mq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mq]
+    inline def mq: typings.semanticUiReact.semanticUiReactStrings.mq = "mq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mq]
     
-    @scala.inline
-    def mr: typings.semanticUiReact.semanticUiReactStrings.mr = "mr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mr]
+    inline def mr: typings.semanticUiReact.semanticUiReactStrings.mr = "mr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mr]
     
-    @scala.inline
-    def ms: typings.semanticUiReact.semanticUiReactStrings.ms = "ms".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ms]
+    inline def ms: typings.semanticUiReact.semanticUiReactStrings.ms = "ms".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ms]
     
-    @scala.inline
-    def mt: typings.semanticUiReact.semanticUiReactStrings.mt = "mt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mt]
+    inline def mt: typings.semanticUiReact.semanticUiReactStrings.mt = "mt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mt]
     
-    @scala.inline
-    def mu: typings.semanticUiReact.semanticUiReactStrings.mu = "mu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mu]
+    inline def mu: typings.semanticUiReact.semanticUiReactStrings.mu = "mu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mu]
     
-    @scala.inline
-    def mv: typings.semanticUiReact.semanticUiReactStrings.mv = "mv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mv]
+    inline def mv: typings.semanticUiReact.semanticUiReactStrings.mv = "mv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mv]
     
-    @scala.inline
-    def mw: typings.semanticUiReact.semanticUiReactStrings.mw = "mw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mw]
+    inline def mw: typings.semanticUiReact.semanticUiReactStrings.mw = "mw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mw]
     
-    @scala.inline
-    def mx: typings.semanticUiReact.semanticUiReactStrings.mx = "mx".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mx]
+    inline def mx: typings.semanticUiReact.semanticUiReactStrings.mx = "mx".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mx]
     
-    @scala.inline
-    def my: typings.semanticUiReact.semanticUiReactStrings.my = "my".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.my]
+    inline def my: typings.semanticUiReact.semanticUiReactStrings.my = "my".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.my]
     
-    @scala.inline
-    def myanmar: typings.semanticUiReact.semanticUiReactStrings.myanmar = "myanmar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.myanmar]
+    inline def myanmar: typings.semanticUiReact.semanticUiReactStrings.myanmar = "myanmar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.myanmar]
     
-    @scala.inline
-    def mz: typings.semanticUiReact.semanticUiReactStrings.mz = "mz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mz]
+    inline def mz: typings.semanticUiReact.semanticUiReactStrings.mz = "mz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mz]
     
-    @scala.inline
-    def na: typings.semanticUiReact.semanticUiReactStrings.na = "na".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.na]
+    inline def na: typings.semanticUiReact.semanticUiReactStrings.na = "na".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.na]
     
-    @scala.inline
-    def namibia: typings.semanticUiReact.semanticUiReactStrings.namibia = "namibia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.namibia]
+    inline def namibia: typings.semanticUiReact.semanticUiReactStrings.namibia = "namibia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.namibia]
     
-    @scala.inline
-    def nauru: typings.semanticUiReact.semanticUiReactStrings.nauru = "nauru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nauru]
+    inline def nauru: typings.semanticUiReact.semanticUiReactStrings.nauru = "nauru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nauru]
     
-    @scala.inline
-    def nc: typings.semanticUiReact.semanticUiReactStrings.nc = "nc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nc]
+    inline def nc: typings.semanticUiReact.semanticUiReactStrings.nc = "nc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nc]
     
-    @scala.inline
-    def ne: typings.semanticUiReact.semanticUiReactStrings.ne = "ne".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ne]
+    inline def ne: typings.semanticUiReact.semanticUiReactStrings.ne = "ne".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ne]
     
-    @scala.inline
-    def nepal: typings.semanticUiReact.semanticUiReactStrings.nepal = "nepal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nepal]
+    inline def nepal: typings.semanticUiReact.semanticUiReactStrings.nepal = "nepal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nepal]
     
-    @scala.inline
-    def netherlands: typings.semanticUiReact.semanticUiReactStrings.netherlands = "netherlands".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.netherlands]
+    inline def netherlands: typings.semanticUiReact.semanticUiReactStrings.netherlands = "netherlands".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.netherlands]
     
-    @scala.inline
-    def `netherlands antilles`: typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles` = ("netherlands antilles").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles`]
+    inline def `netherlands antilles`: typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles` = ("netherlands antilles").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles`]
     
-    @scala.inline
-    def `new caledonia`: typings.semanticUiReact.semanticUiReactStrings.`new caledonia` = ("new caledonia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new caledonia`]
+    inline def `new caledonia`: typings.semanticUiReact.semanticUiReactStrings.`new caledonia` = ("new caledonia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new caledonia`]
     
-    @scala.inline
-    def `new guinea`: typings.semanticUiReact.semanticUiReactStrings.`new guinea` = ("new guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new guinea`]
+    inline def `new guinea`: typings.semanticUiReact.semanticUiReactStrings.`new guinea` = ("new guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new guinea`]
     
-    @scala.inline
-    def `new zealand`: typings.semanticUiReact.semanticUiReactStrings.`new zealand` = ("new zealand").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new zealand`]
+    inline def `new zealand`: typings.semanticUiReact.semanticUiReactStrings.`new zealand` = ("new zealand").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new zealand`]
     
-    @scala.inline
-    def nf: typings.semanticUiReact.semanticUiReactStrings.nf = "nf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nf]
+    inline def nf: typings.semanticUiReact.semanticUiReactStrings.nf = "nf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nf]
     
-    @scala.inline
-    def ng: typings.semanticUiReact.semanticUiReactStrings.ng = "ng".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ng]
+    inline def ng: typings.semanticUiReact.semanticUiReactStrings.ng = "ng".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ng]
     
-    @scala.inline
-    def ni: typings.semanticUiReact.semanticUiReactStrings.ni = "ni".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ni]
+    inline def ni: typings.semanticUiReact.semanticUiReactStrings.ni = "ni".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ni]
     
-    @scala.inline
-    def nicaragua: typings.semanticUiReact.semanticUiReactStrings.nicaragua = "nicaragua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nicaragua]
+    inline def nicaragua: typings.semanticUiReact.semanticUiReactStrings.nicaragua = "nicaragua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nicaragua]
     
-    @scala.inline
-    def niger: typings.semanticUiReact.semanticUiReactStrings.niger = "niger".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.niger]
+    inline def niger: typings.semanticUiReact.semanticUiReactStrings.niger = "niger".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.niger]
     
-    @scala.inline
-    def nigeria: typings.semanticUiReact.semanticUiReactStrings.nigeria = "nigeria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nigeria]
+    inline def nigeria: typings.semanticUiReact.semanticUiReactStrings.nigeria = "nigeria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nigeria]
     
-    @scala.inline
-    def niue: typings.semanticUiReact.semanticUiReactStrings.niue = "niue".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.niue]
+    inline def niue: typings.semanticUiReact.semanticUiReactStrings.niue = "niue".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.niue]
     
-    @scala.inline
-    def nl: typings.semanticUiReact.semanticUiReactStrings.nl = "nl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nl]
+    inline def nl: typings.semanticUiReact.semanticUiReactStrings.nl = "nl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nl]
     
-    @scala.inline
-    def no: typings.semanticUiReact.semanticUiReactStrings.no = "no".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.no]
+    inline def no: typings.semanticUiReact.semanticUiReactStrings.no = "no".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.no]
     
-    @scala.inline
-    def `norfolk island`: typings.semanticUiReact.semanticUiReactStrings.`norfolk island` = ("norfolk island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`norfolk island`]
+    inline def `norfolk island`: typings.semanticUiReact.semanticUiReactStrings.`norfolk island` = ("norfolk island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`norfolk island`]
     
-    @scala.inline
-    def `north korea`: typings.semanticUiReact.semanticUiReactStrings.`north korea` = ("north korea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`north korea`]
+    inline def `north korea`: typings.semanticUiReact.semanticUiReactStrings.`north korea` = ("north korea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`north korea`]
     
-    @scala.inline
-    def `northern mariana islands`: typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands` = ("northern mariana islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands`]
+    inline def `northern mariana islands`: typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands` = ("northern mariana islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands`]
     
-    @scala.inline
-    def norway: typings.semanticUiReact.semanticUiReactStrings.norway = "norway".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.norway]
+    inline def norway: typings.semanticUiReact.semanticUiReactStrings.norway = "norway".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.norway]
     
-    @scala.inline
-    def np: typings.semanticUiReact.semanticUiReactStrings.np = "np".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.np]
+    inline def np: typings.semanticUiReact.semanticUiReactStrings.np = "np".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.np]
     
-    @scala.inline
-    def nr: typings.semanticUiReact.semanticUiReactStrings.nr = "nr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nr]
+    inline def nr: typings.semanticUiReact.semanticUiReactStrings.nr = "nr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nr]
     
-    @scala.inline
-    def nu: typings.semanticUiReact.semanticUiReactStrings.nu = "nu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nu]
+    inline def nu: typings.semanticUiReact.semanticUiReactStrings.nu = "nu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nu]
     
-    @scala.inline
-    def nz: typings.semanticUiReact.semanticUiReactStrings.nz = "nz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nz]
+    inline def nz: typings.semanticUiReact.semanticUiReactStrings.nz = "nz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nz]
     
-    @scala.inline
-    def om: typings.semanticUiReact.semanticUiReactStrings.om = "om".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.om]
+    inline def om: typings.semanticUiReact.semanticUiReactStrings.om = "om".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.om]
     
-    @scala.inline
-    def oman: typings.semanticUiReact.semanticUiReactStrings.oman = "oman".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.oman]
+    inline def oman: typings.semanticUiReact.semanticUiReactStrings.oman = "oman".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.oman]
     
-    @scala.inline
-    def pa: typings.semanticUiReact.semanticUiReactStrings.pa = "pa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pa]
+    inline def pa: typings.semanticUiReact.semanticUiReactStrings.pa = "pa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pa]
     
-    @scala.inline
-    def pakistan: typings.semanticUiReact.semanticUiReactStrings.pakistan = "pakistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pakistan]
+    inline def pakistan: typings.semanticUiReact.semanticUiReactStrings.pakistan = "pakistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pakistan]
     
-    @scala.inline
-    def palau: typings.semanticUiReact.semanticUiReactStrings.palau = "palau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.palau]
+    inline def palau: typings.semanticUiReact.semanticUiReactStrings.palau = "palau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.palau]
     
-    @scala.inline
-    def palestine: typings.semanticUiReact.semanticUiReactStrings.palestine = "palestine".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.palestine]
+    inline def palestine: typings.semanticUiReact.semanticUiReactStrings.palestine = "palestine".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.palestine]
     
-    @scala.inline
-    def panama: typings.semanticUiReact.semanticUiReactStrings.panama = "panama".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.panama]
+    inline def panama: typings.semanticUiReact.semanticUiReactStrings.panama = "panama".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.panama]
     
-    @scala.inline
-    def paraguay: typings.semanticUiReact.semanticUiReactStrings.paraguay = "paraguay".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.paraguay]
+    inline def paraguay: typings.semanticUiReact.semanticUiReactStrings.paraguay = "paraguay".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.paraguay]
     
-    @scala.inline
-    def pe: typings.semanticUiReact.semanticUiReactStrings.pe = "pe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pe]
+    inline def pe: typings.semanticUiReact.semanticUiReactStrings.pe = "pe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pe]
     
-    @scala.inline
-    def peru: typings.semanticUiReact.semanticUiReactStrings.peru = "peru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.peru]
+    inline def peru: typings.semanticUiReact.semanticUiReactStrings.peru = "peru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.peru]
     
-    @scala.inline
-    def pf: typings.semanticUiReact.semanticUiReactStrings.pf = "pf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pf]
+    inline def pf: typings.semanticUiReact.semanticUiReactStrings.pf = "pf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pf]
     
-    @scala.inline
-    def pg: typings.semanticUiReact.semanticUiReactStrings.pg = "pg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pg]
+    inline def pg: typings.semanticUiReact.semanticUiReactStrings.pg = "pg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pg]
     
-    @scala.inline
-    def ph: typings.semanticUiReact.semanticUiReactStrings.ph = "ph".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ph]
+    inline def ph: typings.semanticUiReact.semanticUiReactStrings.ph = "ph".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ph]
     
-    @scala.inline
-    def philippines: typings.semanticUiReact.semanticUiReactStrings.philippines = "philippines".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.philippines]
+    inline def philippines: typings.semanticUiReact.semanticUiReactStrings.philippines = "philippines".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.philippines]
     
-    @scala.inline
-    def `pitcairn islands`: typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands` = ("pitcairn islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands`]
+    inline def `pitcairn islands`: typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands` = ("pitcairn islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands`]
     
-    @scala.inline
-    def pk: typings.semanticUiReact.semanticUiReactStrings.pk = "pk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pk]
+    inline def pk: typings.semanticUiReact.semanticUiReactStrings.pk = "pk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pk]
     
-    @scala.inline
-    def pl: typings.semanticUiReact.semanticUiReactStrings.pl = "pl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pl]
+    inline def pl: typings.semanticUiReact.semanticUiReactStrings.pl = "pl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pl]
     
-    @scala.inline
-    def pm: typings.semanticUiReact.semanticUiReactStrings.pm = "pm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pm]
+    inline def pm: typings.semanticUiReact.semanticUiReactStrings.pm = "pm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pm]
     
-    @scala.inline
-    def pn: typings.semanticUiReact.semanticUiReactStrings.pn = "pn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pn]
+    inline def pn: typings.semanticUiReact.semanticUiReactStrings.pn = "pn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pn]
     
-    @scala.inline
-    def poland: typings.semanticUiReact.semanticUiReactStrings.poland = "poland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.poland]
+    inline def poland: typings.semanticUiReact.semanticUiReactStrings.poland = "poland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.poland]
     
-    @scala.inline
-    def portugal: typings.semanticUiReact.semanticUiReactStrings.portugal = "portugal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.portugal]
+    inline def portugal: typings.semanticUiReact.semanticUiReactStrings.portugal = "portugal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.portugal]
     
-    @scala.inline
-    def pr: typings.semanticUiReact.semanticUiReactStrings.pr = "pr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pr]
+    inline def pr: typings.semanticUiReact.semanticUiReactStrings.pr = "pr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pr]
     
-    @scala.inline
-    def ps: typings.semanticUiReact.semanticUiReactStrings.ps = "ps".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ps]
+    inline def ps: typings.semanticUiReact.semanticUiReactStrings.ps = "ps".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ps]
     
-    @scala.inline
-    def pt: typings.semanticUiReact.semanticUiReactStrings.pt = "pt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pt]
+    inline def pt: typings.semanticUiReact.semanticUiReactStrings.pt = "pt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pt]
     
-    @scala.inline
-    def `puerto rico`: typings.semanticUiReact.semanticUiReactStrings.`puerto rico` = ("puerto rico").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`puerto rico`]
+    inline def `puerto rico`: typings.semanticUiReact.semanticUiReactStrings.`puerto rico` = ("puerto rico").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`puerto rico`]
     
-    @scala.inline
-    def pw: typings.semanticUiReact.semanticUiReactStrings.pw = "pw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pw]
+    inline def pw: typings.semanticUiReact.semanticUiReactStrings.pw = "pw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pw]
     
-    @scala.inline
-    def py: typings.semanticUiReact.semanticUiReactStrings.py = "py".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.py]
+    inline def py: typings.semanticUiReact.semanticUiReactStrings.py = "py".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.py]
     
-    @scala.inline
-    def qa: typings.semanticUiReact.semanticUiReactStrings.qa = "qa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.qa]
+    inline def qa: typings.semanticUiReact.semanticUiReactStrings.qa = "qa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.qa]
     
-    @scala.inline
-    def qatar: typings.semanticUiReact.semanticUiReactStrings.qatar = "qatar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.qatar]
+    inline def qatar: typings.semanticUiReact.semanticUiReactStrings.qatar = "qatar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.qatar]
     
-    @scala.inline
-    def re: typings.semanticUiReact.semanticUiReactStrings.re = "re".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.re]
+    inline def re: typings.semanticUiReact.semanticUiReactStrings.re = "re".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.re]
     
-    @scala.inline
-    def reunion: typings.semanticUiReact.semanticUiReactStrings.reunion = "reunion".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.reunion]
+    inline def reunion: typings.semanticUiReact.semanticUiReactStrings.reunion = "reunion".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.reunion]
     
-    @scala.inline
-    def ro: typings.semanticUiReact.semanticUiReactStrings.ro = "ro".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ro]
+    inline def ro: typings.semanticUiReact.semanticUiReactStrings.ro = "ro".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ro]
     
-    @scala.inline
-    def romania: typings.semanticUiReact.semanticUiReactStrings.romania = "romania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.romania]
+    inline def romania: typings.semanticUiReact.semanticUiReactStrings.romania = "romania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.romania]
     
-    @scala.inline
-    def rs: typings.semanticUiReact.semanticUiReactStrings.rs = "rs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rs]
+    inline def rs: typings.semanticUiReact.semanticUiReactStrings.rs = "rs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rs]
     
-    @scala.inline
-    def ru: typings.semanticUiReact.semanticUiReactStrings.ru = "ru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ru]
+    inline def ru: typings.semanticUiReact.semanticUiReactStrings.ru = "ru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ru]
     
-    @scala.inline
-    def russia: typings.semanticUiReact.semanticUiReactStrings.russia = "russia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.russia]
+    inline def russia: typings.semanticUiReact.semanticUiReactStrings.russia = "russia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.russia]
     
-    @scala.inline
-    def rw: typings.semanticUiReact.semanticUiReactStrings.rw = "rw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rw]
+    inline def rw: typings.semanticUiReact.semanticUiReactStrings.rw = "rw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rw]
     
-    @scala.inline
-    def rwanda: typings.semanticUiReact.semanticUiReactStrings.rwanda = "rwanda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rwanda]
+    inline def rwanda: typings.semanticUiReact.semanticUiReactStrings.rwanda = "rwanda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rwanda]
     
-    @scala.inline
-    def sa: typings.semanticUiReact.semanticUiReactStrings.sa = "sa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sa]
+    inline def sa: typings.semanticUiReact.semanticUiReactStrings.sa = "sa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sa]
     
-    @scala.inline
-    def `saint helena`: typings.semanticUiReact.semanticUiReactStrings.`saint helena` = ("saint helena").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint helena`]
+    inline def `saint helena`: typings.semanticUiReact.semanticUiReactStrings.`saint helena` = ("saint helena").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint helena`]
     
-    @scala.inline
-    def `saint kitts and nevis`: typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis` = ("saint kitts and nevis").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis`]
+    inline def `saint kitts and nevis`: typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis` = ("saint kitts and nevis").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis`]
     
-    @scala.inline
-    def `saint lucia`: typings.semanticUiReact.semanticUiReactStrings.`saint lucia` = ("saint lucia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint lucia`]
+    inline def `saint lucia`: typings.semanticUiReact.semanticUiReactStrings.`saint lucia` = ("saint lucia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint lucia`]
     
-    @scala.inline
-    def `saint pierre`: typings.semanticUiReact.semanticUiReactStrings.`saint pierre` = ("saint pierre").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint pierre`]
+    inline def `saint pierre`: typings.semanticUiReact.semanticUiReactStrings.`saint pierre` = ("saint pierre").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint pierre`]
     
-    @scala.inline
-    def `saint vincent`: typings.semanticUiReact.semanticUiReactStrings.`saint vincent` = ("saint vincent").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint vincent`]
+    inline def `saint vincent`: typings.semanticUiReact.semanticUiReactStrings.`saint vincent` = ("saint vincent").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint vincent`]
     
-    @scala.inline
-    def samoa: typings.semanticUiReact.semanticUiReactStrings.samoa = "samoa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.samoa]
+    inline def samoa: typings.semanticUiReact.semanticUiReactStrings.samoa = "samoa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.samoa]
     
-    @scala.inline
-    def `san marino`: typings.semanticUiReact.semanticUiReactStrings.`san marino` = ("san marino").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`san marino`]
+    inline def `san marino`: typings.semanticUiReact.semanticUiReactStrings.`san marino` = ("san marino").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`san marino`]
     
-    @scala.inline
-    def `sandwich islands`: typings.semanticUiReact.semanticUiReactStrings.`sandwich islands` = ("sandwich islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sandwich islands`]
+    inline def `sandwich islands`: typings.semanticUiReact.semanticUiReactStrings.`sandwich islands` = ("sandwich islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sandwich islands`]
     
-    @scala.inline
-    def `sao tome`: typings.semanticUiReact.semanticUiReactStrings.`sao tome` = ("sao tome").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sao tome`]
+    inline def `sao tome`: typings.semanticUiReact.semanticUiReactStrings.`sao tome` = ("sao tome").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sao tome`]
     
-    @scala.inline
-    def `saudi arabia`: typings.semanticUiReact.semanticUiReactStrings.`saudi arabia` = ("saudi arabia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saudi arabia`]
+    inline def `saudi arabia`: typings.semanticUiReact.semanticUiReactStrings.`saudi arabia` = ("saudi arabia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saudi arabia`]
     
-    @scala.inline
-    def sb: typings.semanticUiReact.semanticUiReactStrings.sb = "sb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sb]
+    inline def sb: typings.semanticUiReact.semanticUiReactStrings.sb = "sb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sb]
     
-    @scala.inline
-    def sc: typings.semanticUiReact.semanticUiReactStrings.sc = "sc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sc]
+    inline def sc: typings.semanticUiReact.semanticUiReactStrings.sc = "sc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sc]
     
-    @scala.inline
-    def scotland: typings.semanticUiReact.semanticUiReactStrings.scotland = "scotland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.scotland]
+    inline def scotland: typings.semanticUiReact.semanticUiReactStrings.scotland = "scotland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.scotland]
     
-    @scala.inline
-    def sd: typings.semanticUiReact.semanticUiReactStrings.sd = "sd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sd]
+    inline def sd: typings.semanticUiReact.semanticUiReactStrings.sd = "sd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sd]
     
-    @scala.inline
-    def se: typings.semanticUiReact.semanticUiReactStrings.se = "se".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.se]
+    inline def se: typings.semanticUiReact.semanticUiReactStrings.se = "se".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.se]
     
-    @scala.inline
-    def senegal: typings.semanticUiReact.semanticUiReactStrings.senegal = "senegal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.senegal]
+    inline def senegal: typings.semanticUiReact.semanticUiReactStrings.senegal = "senegal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.senegal]
     
-    @scala.inline
-    def serbia: typings.semanticUiReact.semanticUiReactStrings.serbia = "serbia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.serbia]
+    inline def serbia: typings.semanticUiReact.semanticUiReactStrings.serbia = "serbia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.serbia]
     
-    @scala.inline
-    def seychelles: typings.semanticUiReact.semanticUiReactStrings.seychelles = "seychelles".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.seychelles]
+    inline def seychelles: typings.semanticUiReact.semanticUiReactStrings.seychelles = "seychelles".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.seychelles]
     
-    @scala.inline
-    def sg: typings.semanticUiReact.semanticUiReactStrings.sg = "sg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sg]
+    inline def sg: typings.semanticUiReact.semanticUiReactStrings.sg = "sg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sg]
     
-    @scala.inline
-    def sh: typings.semanticUiReact.semanticUiReactStrings.sh = "sh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sh]
+    inline def sh: typings.semanticUiReact.semanticUiReactStrings.sh = "sh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sh]
     
-    @scala.inline
-    def si: typings.semanticUiReact.semanticUiReactStrings.si = "si".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.si]
+    inline def si: typings.semanticUiReact.semanticUiReactStrings.si = "si".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.si]
     
-    @scala.inline
-    def `sierra leone`: typings.semanticUiReact.semanticUiReactStrings.`sierra leone` = ("sierra leone").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sierra leone`]
+    inline def `sierra leone`: typings.semanticUiReact.semanticUiReactStrings.`sierra leone` = ("sierra leone").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sierra leone`]
     
-    @scala.inline
-    def singapore: typings.semanticUiReact.semanticUiReactStrings.singapore = "singapore".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.singapore]
+    inline def singapore: typings.semanticUiReact.semanticUiReactStrings.singapore = "singapore".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.singapore]
     
-    @scala.inline
-    def sj: typings.semanticUiReact.semanticUiReactStrings.sj = "sj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sj]
+    inline def sj: typings.semanticUiReact.semanticUiReactStrings.sj = "sj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sj]
     
-    @scala.inline
-    def sk: typings.semanticUiReact.semanticUiReactStrings.sk = "sk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sk]
+    inline def sk: typings.semanticUiReact.semanticUiReactStrings.sk = "sk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sk]
     
-    @scala.inline
-    def sl: typings.semanticUiReact.semanticUiReactStrings.sl = "sl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sl]
+    inline def sl: typings.semanticUiReact.semanticUiReactStrings.sl = "sl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sl]
     
-    @scala.inline
-    def slovakia: typings.semanticUiReact.semanticUiReactStrings.slovakia = "slovakia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.slovakia]
+    inline def slovakia: typings.semanticUiReact.semanticUiReactStrings.slovakia = "slovakia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.slovakia]
     
-    @scala.inline
-    def slovenia: typings.semanticUiReact.semanticUiReactStrings.slovenia = "slovenia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.slovenia]
+    inline def slovenia: typings.semanticUiReact.semanticUiReactStrings.slovenia = "slovenia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.slovenia]
     
-    @scala.inline
-    def sm: typings.semanticUiReact.semanticUiReactStrings.sm = "sm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sm]
+    inline def sm: typings.semanticUiReact.semanticUiReactStrings.sm = "sm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sm]
     
-    @scala.inline
-    def sn: typings.semanticUiReact.semanticUiReactStrings.sn = "sn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sn]
+    inline def sn: typings.semanticUiReact.semanticUiReactStrings.sn = "sn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sn]
     
-    @scala.inline
-    def so: typings.semanticUiReact.semanticUiReactStrings.so = "so".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.so]
+    inline def so: typings.semanticUiReact.semanticUiReactStrings.so = "so".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.so]
     
-    @scala.inline
-    def `solomon islands`: typings.semanticUiReact.semanticUiReactStrings.`solomon islands` = ("solomon islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`solomon islands`]
+    inline def `solomon islands`: typings.semanticUiReact.semanticUiReactStrings.`solomon islands` = ("solomon islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`solomon islands`]
     
-    @scala.inline
-    def somalia: typings.semanticUiReact.semanticUiReactStrings.somalia = "somalia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.somalia]
+    inline def somalia: typings.semanticUiReact.semanticUiReactStrings.somalia = "somalia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.somalia]
     
-    @scala.inline
-    def `south africa`: typings.semanticUiReact.semanticUiReactStrings.`south africa` = ("south africa").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`south africa`]
+    inline def `south africa`: typings.semanticUiReact.semanticUiReactStrings.`south africa` = ("south africa").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`south africa`]
     
-    @scala.inline
-    def `south korea`: typings.semanticUiReact.semanticUiReactStrings.`south korea` = ("south korea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`south korea`]
+    inline def `south korea`: typings.semanticUiReact.semanticUiReactStrings.`south korea` = ("south korea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`south korea`]
     
-    @scala.inline
-    def spain: typings.semanticUiReact.semanticUiReactStrings.spain = "spain".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.spain]
+    inline def spain: typings.semanticUiReact.semanticUiReactStrings.spain = "spain".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.spain]
     
-    @scala.inline
-    def sr: typings.semanticUiReact.semanticUiReactStrings.sr = "sr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sr]
+    inline def sr: typings.semanticUiReact.semanticUiReactStrings.sr = "sr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sr]
     
-    @scala.inline
-    def `sri lanka`: typings.semanticUiReact.semanticUiReactStrings.`sri lanka` = ("sri lanka").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sri lanka`]
+    inline def `sri lanka`: typings.semanticUiReact.semanticUiReactStrings.`sri lanka` = ("sri lanka").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sri lanka`]
     
-    @scala.inline
-    def st: typings.semanticUiReact.semanticUiReactStrings.st = "st".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.st]
+    inline def st: typings.semanticUiReact.semanticUiReactStrings.st = "st".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.st]
     
-    @scala.inline
-    def sudan: typings.semanticUiReact.semanticUiReactStrings.sudan = "sudan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sudan]
+    inline def sudan: typings.semanticUiReact.semanticUiReactStrings.sudan = "sudan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sudan]
     
-    @scala.inline
-    def suriname: typings.semanticUiReact.semanticUiReactStrings.suriname = "suriname".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.suriname]
+    inline def suriname: typings.semanticUiReact.semanticUiReactStrings.suriname = "suriname".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.suriname]
     
-    @scala.inline
-    def sv: typings.semanticUiReact.semanticUiReactStrings.sv = "sv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sv]
+    inline def sv: typings.semanticUiReact.semanticUiReactStrings.sv = "sv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sv]
     
-    @scala.inline
-    def svalbard: typings.semanticUiReact.semanticUiReactStrings.svalbard = "svalbard".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.svalbard]
+    inline def svalbard: typings.semanticUiReact.semanticUiReactStrings.svalbard = "svalbard".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.svalbard]
     
-    @scala.inline
-    def swaziland: typings.semanticUiReact.semanticUiReactStrings.swaziland = "swaziland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.swaziland]
+    inline def swaziland: typings.semanticUiReact.semanticUiReactStrings.swaziland = "swaziland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.swaziland]
     
-    @scala.inline
-    def sweden: typings.semanticUiReact.semanticUiReactStrings.sweden = "sweden".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sweden]
+    inline def sweden: typings.semanticUiReact.semanticUiReactStrings.sweden = "sweden".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sweden]
     
-    @scala.inline
-    def switzerland: typings.semanticUiReact.semanticUiReactStrings.switzerland = "switzerland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.switzerland]
+    inline def switzerland: typings.semanticUiReact.semanticUiReactStrings.switzerland = "switzerland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.switzerland]
     
-    @scala.inline
-    def sy: typings.semanticUiReact.semanticUiReactStrings.sy = "sy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sy]
+    inline def sy: typings.semanticUiReact.semanticUiReactStrings.sy = "sy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sy]
     
-    @scala.inline
-    def syria: typings.semanticUiReact.semanticUiReactStrings.syria = "syria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.syria]
+    inline def syria: typings.semanticUiReact.semanticUiReactStrings.syria = "syria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.syria]
     
-    @scala.inline
-    def sz: typings.semanticUiReact.semanticUiReactStrings.sz = "sz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sz]
+    inline def sz: typings.semanticUiReact.semanticUiReactStrings.sz = "sz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sz]
     
-    @scala.inline
-    def taiwan: typings.semanticUiReact.semanticUiReactStrings.taiwan = "taiwan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.taiwan]
+    inline def taiwan: typings.semanticUiReact.semanticUiReactStrings.taiwan = "taiwan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.taiwan]
     
-    @scala.inline
-    def tajikistan: typings.semanticUiReact.semanticUiReactStrings.tajikistan = "tajikistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tajikistan]
+    inline def tajikistan: typings.semanticUiReact.semanticUiReactStrings.tajikistan = "tajikistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tajikistan]
     
-    @scala.inline
-    def tanzania: typings.semanticUiReact.semanticUiReactStrings.tanzania = "tanzania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tanzania]
+    inline def tanzania: typings.semanticUiReact.semanticUiReactStrings.tanzania = "tanzania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tanzania]
     
-    @scala.inline
-    def tc: typings.semanticUiReact.semanticUiReactStrings.tc = "tc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tc]
+    inline def tc: typings.semanticUiReact.semanticUiReactStrings.tc = "tc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tc]
     
-    @scala.inline
-    def td: typings.semanticUiReact.semanticUiReactStrings.td = "td".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.td]
+    inline def td: typings.semanticUiReact.semanticUiReactStrings.td = "td".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.td]
     
-    @scala.inline
-    def tf: typings.semanticUiReact.semanticUiReactStrings.tf = "tf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tf]
+    inline def tf: typings.semanticUiReact.semanticUiReactStrings.tf = "tf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tf]
     
-    @scala.inline
-    def tg: typings.semanticUiReact.semanticUiReactStrings.tg = "tg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tg]
+    inline def tg: typings.semanticUiReact.semanticUiReactStrings.tg = "tg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tg]
     
-    @scala.inline
-    def th: typings.semanticUiReact.semanticUiReactStrings.th = "th".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.th]
+    inline def th: typings.semanticUiReact.semanticUiReactStrings.th = "th".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.th]
     
-    @scala.inline
-    def thailand: typings.semanticUiReact.semanticUiReactStrings.thailand = "thailand".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.thailand]
+    inline def thailand: typings.semanticUiReact.semanticUiReactStrings.thailand = "thailand".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.thailand]
     
-    @scala.inline
-    def timorleste: typings.semanticUiReact.semanticUiReactStrings.timorleste = "timorleste".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.timorleste]
+    inline def timorleste: typings.semanticUiReact.semanticUiReactStrings.timorleste = "timorleste".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.timorleste]
     
-    @scala.inline
-    def tj: typings.semanticUiReact.semanticUiReactStrings.tj = "tj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tj]
+    inline def tj: typings.semanticUiReact.semanticUiReactStrings.tj = "tj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tj]
     
-    @scala.inline
-    def tk: typings.semanticUiReact.semanticUiReactStrings.tk = "tk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tk]
+    inline def tk: typings.semanticUiReact.semanticUiReactStrings.tk = "tk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tk]
     
-    @scala.inline
-    def tl: typings.semanticUiReact.semanticUiReactStrings.tl = "tl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tl]
+    inline def tl: typings.semanticUiReact.semanticUiReactStrings.tl = "tl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tl]
     
-    @scala.inline
-    def tm: typings.semanticUiReact.semanticUiReactStrings.tm = "tm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tm]
+    inline def tm: typings.semanticUiReact.semanticUiReactStrings.tm = "tm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tm]
     
-    @scala.inline
-    def tn: typings.semanticUiReact.semanticUiReactStrings.tn = "tn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tn]
+    inline def tn: typings.semanticUiReact.semanticUiReactStrings.tn = "tn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tn]
     
-    @scala.inline
-    def to: typings.semanticUiReact.semanticUiReactStrings.to = "to".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.to]
+    inline def to: typings.semanticUiReact.semanticUiReactStrings.to = "to".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.to]
     
-    @scala.inline
-    def togo: typings.semanticUiReact.semanticUiReactStrings.togo = "togo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.togo]
+    inline def togo: typings.semanticUiReact.semanticUiReactStrings.togo = "togo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.togo]
     
-    @scala.inline
-    def tokelau: typings.semanticUiReact.semanticUiReactStrings.tokelau = "tokelau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tokelau]
+    inline def tokelau: typings.semanticUiReact.semanticUiReactStrings.tokelau = "tokelau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tokelau]
     
-    @scala.inline
-    def tonga: typings.semanticUiReact.semanticUiReactStrings.tonga = "tonga".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tonga]
+    inline def tonga: typings.semanticUiReact.semanticUiReactStrings.tonga = "tonga".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tonga]
     
-    @scala.inline
-    def tr: typings.semanticUiReact.semanticUiReactStrings.tr = "tr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tr]
+    inline def tr: typings.semanticUiReact.semanticUiReactStrings.tr = "tr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tr]
     
-    @scala.inline
-    def trinidad: typings.semanticUiReact.semanticUiReactStrings.trinidad = "trinidad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.trinidad]
+    inline def trinidad: typings.semanticUiReact.semanticUiReactStrings.trinidad = "trinidad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.trinidad]
     
-    @scala.inline
-    def tt: typings.semanticUiReact.semanticUiReactStrings.tt = "tt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tt]
+    inline def tt: typings.semanticUiReact.semanticUiReactStrings.tt = "tt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tt]
     
-    @scala.inline
-    def tunisia: typings.semanticUiReact.semanticUiReactStrings.tunisia = "tunisia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tunisia]
+    inline def tunisia: typings.semanticUiReact.semanticUiReactStrings.tunisia = "tunisia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tunisia]
     
-    @scala.inline
-    def turkey: typings.semanticUiReact.semanticUiReactStrings.turkey = "turkey".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.turkey]
+    inline def turkey: typings.semanticUiReact.semanticUiReactStrings.turkey = "turkey".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.turkey]
     
-    @scala.inline
-    def turkmenistan: typings.semanticUiReact.semanticUiReactStrings.turkmenistan = "turkmenistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.turkmenistan]
+    inline def turkmenistan: typings.semanticUiReact.semanticUiReactStrings.turkmenistan = "turkmenistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.turkmenistan]
     
-    @scala.inline
-    def tuvalu: typings.semanticUiReact.semanticUiReactStrings.tuvalu = "tuvalu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tuvalu]
+    inline def tuvalu: typings.semanticUiReact.semanticUiReactStrings.tuvalu = "tuvalu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tuvalu]
     
-    @scala.inline
-    def tv: typings.semanticUiReact.semanticUiReactStrings.tv = "tv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tv]
+    inline def tv: typings.semanticUiReact.semanticUiReactStrings.tv = "tv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tv]
     
-    @scala.inline
-    def tw: typings.semanticUiReact.semanticUiReactStrings.tw = "tw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tw]
+    inline def tw: typings.semanticUiReact.semanticUiReactStrings.tw = "tw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tw]
     
-    @scala.inline
-    def tz: typings.semanticUiReact.semanticUiReactStrings.tz = "tz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tz]
+    inline def tz: typings.semanticUiReact.semanticUiReactStrings.tz = "tz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tz]
     
-    @scala.inline
-    def ua: typings.semanticUiReact.semanticUiReactStrings.ua = "ua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ua]
+    inline def ua: typings.semanticUiReact.semanticUiReactStrings.ua = "ua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ua]
     
-    @scala.inline
-    def uae: typings.semanticUiReact.semanticUiReactStrings.uae = "uae".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uae]
+    inline def uae: typings.semanticUiReact.semanticUiReactStrings.uae = "uae".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uae]
     
-    @scala.inline
-    def ug: typings.semanticUiReact.semanticUiReactStrings.ug = "ug".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ug]
+    inline def ug: typings.semanticUiReact.semanticUiReactStrings.ug = "ug".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ug]
     
-    @scala.inline
-    def uganda: typings.semanticUiReact.semanticUiReactStrings.uganda = "uganda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uganda]
+    inline def uganda: typings.semanticUiReact.semanticUiReactStrings.uganda = "uganda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uganda]
     
-    @scala.inline
-    def uk: typings.semanticUiReact.semanticUiReactStrings.uk = "uk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uk]
+    inline def uk: typings.semanticUiReact.semanticUiReactStrings.uk = "uk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uk]
     
-    @scala.inline
-    def ukraine: typings.semanticUiReact.semanticUiReactStrings.ukraine = "ukraine".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ukraine]
+    inline def ukraine: typings.semanticUiReact.semanticUiReactStrings.ukraine = "ukraine".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ukraine]
     
-    @scala.inline
-    def um: typings.semanticUiReact.semanticUiReactStrings.um = "um".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.um]
+    inline def um: typings.semanticUiReact.semanticUiReactStrings.um = "um".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.um]
     
-    @scala.inline
-    def `united arab emirates`: typings.semanticUiReact.semanticUiReactStrings.`united arab emirates` = ("united arab emirates").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united arab emirates`]
+    inline def `united arab emirates`: typings.semanticUiReact.semanticUiReactStrings.`united arab emirates` = ("united arab emirates").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united arab emirates`]
     
-    @scala.inline
-    def `united kingdom`: typings.semanticUiReact.semanticUiReactStrings.`united kingdom` = ("united kingdom").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united kingdom`]
+    inline def `united kingdom`: typings.semanticUiReact.semanticUiReactStrings.`united kingdom` = ("united kingdom").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united kingdom`]
     
-    @scala.inline
-    def `united states`: typings.semanticUiReact.semanticUiReactStrings.`united states` = ("united states").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united states`]
+    inline def `united states`: typings.semanticUiReact.semanticUiReactStrings.`united states` = ("united states").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united states`]
     
-    @scala.inline
-    def uruguay: typings.semanticUiReact.semanticUiReactStrings.uruguay = "uruguay".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uruguay]
+    inline def uruguay: typings.semanticUiReact.semanticUiReactStrings.uruguay = "uruguay".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uruguay]
     
-    @scala.inline
-    def us: typings.semanticUiReact.semanticUiReactStrings.us = "us".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.us]
+    inline def us: typings.semanticUiReact.semanticUiReactStrings.us = "us".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.us]
     
-    @scala.inline
-    def `us minor islands`: typings.semanticUiReact.semanticUiReactStrings.`us minor islands` = ("us minor islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`us minor islands`]
+    inline def `us minor islands`: typings.semanticUiReact.semanticUiReactStrings.`us minor islands` = ("us minor islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`us minor islands`]
     
-    @scala.inline
-    def `us virgin islands`: typings.semanticUiReact.semanticUiReactStrings.`us virgin islands` = ("us virgin islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`us virgin islands`]
+    inline def `us virgin islands`: typings.semanticUiReact.semanticUiReactStrings.`us virgin islands` = ("us virgin islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`us virgin islands`]
     
-    @scala.inline
-    def uy: typings.semanticUiReact.semanticUiReactStrings.uy = "uy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uy]
+    inline def uy: typings.semanticUiReact.semanticUiReactStrings.uy = "uy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uy]
     
-    @scala.inline
-    def uz: typings.semanticUiReact.semanticUiReactStrings.uz = "uz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uz]
+    inline def uz: typings.semanticUiReact.semanticUiReactStrings.uz = "uz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uz]
     
-    @scala.inline
-    def uzbekistan: typings.semanticUiReact.semanticUiReactStrings.uzbekistan = "uzbekistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uzbekistan]
+    inline def uzbekistan: typings.semanticUiReact.semanticUiReactStrings.uzbekistan = "uzbekistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uzbekistan]
     
-    @scala.inline
-    def va: typings.semanticUiReact.semanticUiReactStrings.va = "va".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.va]
+    inline def va: typings.semanticUiReact.semanticUiReactStrings.va = "va".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.va]
     
-    @scala.inline
-    def vanuatu: typings.semanticUiReact.semanticUiReactStrings.vanuatu = "vanuatu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vanuatu]
+    inline def vanuatu: typings.semanticUiReact.semanticUiReactStrings.vanuatu = "vanuatu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vanuatu]
     
-    @scala.inline
-    def `vatican city`: typings.semanticUiReact.semanticUiReactStrings.`vatican city` = ("vatican city").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`vatican city`]
+    inline def `vatican city`: typings.semanticUiReact.semanticUiReactStrings.`vatican city` = ("vatican city").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`vatican city`]
     
-    @scala.inline
-    def vc: typings.semanticUiReact.semanticUiReactStrings.vc = "vc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vc]
+    inline def vc: typings.semanticUiReact.semanticUiReactStrings.vc = "vc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vc]
     
-    @scala.inline
-    def ve: typings.semanticUiReact.semanticUiReactStrings.ve = "ve".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ve]
+    inline def ve: typings.semanticUiReact.semanticUiReactStrings.ve = "ve".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ve]
     
-    @scala.inline
-    def venezuela: typings.semanticUiReact.semanticUiReactStrings.venezuela = "venezuela".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.venezuela]
+    inline def venezuela: typings.semanticUiReact.semanticUiReactStrings.venezuela = "venezuela".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.venezuela]
     
-    @scala.inline
-    def vg: typings.semanticUiReact.semanticUiReactStrings.vg = "vg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vg]
+    inline def vg: typings.semanticUiReact.semanticUiReactStrings.vg = "vg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vg]
     
-    @scala.inline
-    def vi: typings.semanticUiReact.semanticUiReactStrings.vi = "vi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vi]
+    inline def vi: typings.semanticUiReact.semanticUiReactStrings.vi = "vi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vi]
     
-    @scala.inline
-    def vietnam: typings.semanticUiReact.semanticUiReactStrings.vietnam = "vietnam".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vietnam]
+    inline def vietnam: typings.semanticUiReact.semanticUiReactStrings.vietnam = "vietnam".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vietnam]
     
-    @scala.inline
-    def vn: typings.semanticUiReact.semanticUiReactStrings.vn = "vn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vn]
+    inline def vn: typings.semanticUiReact.semanticUiReactStrings.vn = "vn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vn]
     
-    @scala.inline
-    def vu: typings.semanticUiReact.semanticUiReactStrings.vu = "vu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vu]
+    inline def vu: typings.semanticUiReact.semanticUiReactStrings.vu = "vu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vu]
     
-    @scala.inline
-    def wales: typings.semanticUiReact.semanticUiReactStrings.wales = "wales".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.wales]
+    inline def wales: typings.semanticUiReact.semanticUiReactStrings.wales = "wales".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.wales]
     
-    @scala.inline
-    def `wallis and futuna`: typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna` = ("wallis and futuna").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna`]
+    inline def `wallis and futuna`: typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna` = ("wallis and futuna").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna`]
     
-    @scala.inline
-    def `western sahara`: typings.semanticUiReact.semanticUiReactStrings.`western sahara` = ("western sahara").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`western sahara`]
+    inline def `western sahara`: typings.semanticUiReact.semanticUiReactStrings.`western sahara` = ("western sahara").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`western sahara`]
     
-    @scala.inline
-    def wf: typings.semanticUiReact.semanticUiReactStrings.wf = "wf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.wf]
+    inline def wf: typings.semanticUiReact.semanticUiReactStrings.wf = "wf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.wf]
     
-    @scala.inline
-    def ws: typings.semanticUiReact.semanticUiReactStrings.ws = "ws".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ws]
+    inline def ws: typings.semanticUiReact.semanticUiReactStrings.ws = "ws".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ws]
     
-    @scala.inline
-    def ye: typings.semanticUiReact.semanticUiReactStrings.ye = "ye".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ye]
+    inline def ye: typings.semanticUiReact.semanticUiReactStrings.ye = "ye".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ye]
     
-    @scala.inline
-    def yemen: typings.semanticUiReact.semanticUiReactStrings.yemen = "yemen".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yemen]
+    inline def yemen: typings.semanticUiReact.semanticUiReactStrings.yemen = "yemen".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yemen]
     
-    @scala.inline
-    def yt: typings.semanticUiReact.semanticUiReactStrings.yt = "yt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yt]
+    inline def yt: typings.semanticUiReact.semanticUiReactStrings.yt = "yt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yt]
     
-    @scala.inline
-    def za: typings.semanticUiReact.semanticUiReactStrings.za = "za".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.za]
+    inline def za: typings.semanticUiReact.semanticUiReactStrings.za = "za".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.za]
     
-    @scala.inline
-    def zambia: typings.semanticUiReact.semanticUiReactStrings.zambia = "zambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zambia]
+    inline def zambia: typings.semanticUiReact.semanticUiReactStrings.zambia = "zambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zambia]
     
-    @scala.inline
-    def zimbabwe: typings.semanticUiReact.semanticUiReactStrings.zimbabwe = "zimbabwe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zimbabwe]
+    inline def zimbabwe: typings.semanticUiReact.semanticUiReactStrings.zimbabwe = "zimbabwe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zimbabwe]
     
-    @scala.inline
-    def zm: typings.semanticUiReact.semanticUiReactStrings.zm = "zm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zm]
+    inline def zm: typings.semanticUiReact.semanticUiReactStrings.zm = "zm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zm]
     
-    @scala.inline
-    def zw: typings.semanticUiReact.semanticUiReactStrings.zw = "zw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zw]
+    inline def zw: typings.semanticUiReact.semanticUiReactStrings.zw = "zw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zw]
   }
   
   trait FlagProps
@@ -2003,8 +1509,7 @@ object flagFlagMod {
        with /* key */ StringDictionary[js.Any]
   object FlagProps {
     
-    @scala.inline
-    def apply(name: FlagNameValues): FlagProps = {
+    inline def apply(name: FlagNameValues): FlagProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlagProps]
     }
@@ -2023,29 +1528,22 @@ object flagFlagMod {
   }
   object StrictFlagProps {
     
-    @scala.inline
-    def apply(name: FlagNameValues): StrictFlagProps = {
+    inline def apply(name: FlagNameValues): StrictFlagProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictFlagProps]
     }
     
-    @scala.inline
-    implicit class StrictFlagPropsMutableBuilder[Self <: StrictFlagProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictFlagProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setName(value: FlagNameValues): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: FlagNameValues): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

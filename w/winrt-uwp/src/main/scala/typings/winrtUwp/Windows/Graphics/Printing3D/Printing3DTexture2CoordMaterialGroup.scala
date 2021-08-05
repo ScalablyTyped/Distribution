@@ -19,8 +19,7 @@ trait Printing3DTexture2CoordMaterialGroup extends StObject {
 }
 object Printing3DTexture2CoordMaterialGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     materialGroupId: Double,
     texture: Printing3DModelTexture,
     texture2Coords: IVector[Printing3DTexture2CoordMaterial]
@@ -29,16 +28,12 @@ object Printing3DTexture2CoordMaterialGroup {
     __obj.asInstanceOf[Printing3DTexture2CoordMaterialGroup]
   }
   
-  @scala.inline
-  implicit class Printing3DTexture2CoordMaterialGroupMutableBuilder[Self <: Printing3DTexture2CoordMaterialGroup] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DTexture2CoordMaterialGroup](x: Self) {
     
-    @scala.inline
-    def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
+    inline def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture(value: Printing3DModelTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: Printing3DModelTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture2Coords(value: IVector[Printing3DTexture2CoordMaterial]): Self = StObject.set(x, "texture2Coords", value.asInstanceOf[js.Any])
+    inline def setTexture2Coords(value: IVector[Printing3DTexture2CoordMaterial]): Self = StObject.set(x, "texture2Coords", value.asInstanceOf[js.Any])
   }
 }

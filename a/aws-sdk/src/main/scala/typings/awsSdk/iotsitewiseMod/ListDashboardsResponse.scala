@@ -18,25 +18,19 @@ trait ListDashboardsResponse extends StObject {
 }
 object ListDashboardsResponse {
   
-  @scala.inline
-  def apply(dashboardSummaries: DashboardSummaries): ListDashboardsResponse = {
+  inline def apply(dashboardSummaries: DashboardSummaries): ListDashboardsResponse = {
     val __obj = js.Dynamic.literal(dashboardSummaries = dashboardSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDashboardsResponse]
   }
   
-  @scala.inline
-  implicit class ListDashboardsResponseMutableBuilder[Self <: ListDashboardsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDashboardsResponse](x: Self) {
     
-    @scala.inline
-    def setDashboardSummaries(value: DashboardSummaries): Self = StObject.set(x, "dashboardSummaries", value.asInstanceOf[js.Any])
+    inline def setDashboardSummaries(value: DashboardSummaries): Self = StObject.set(x, "dashboardSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardSummariesVarargs(value: DashboardSummary*): Self = StObject.set(x, "dashboardSummaries", js.Array(value :_*))
+    inline def setDashboardSummariesVarargs(value: DashboardSummary*): Self = StObject.set(x, "dashboardSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

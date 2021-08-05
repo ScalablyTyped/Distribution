@@ -47,8 +47,7 @@ trait ClearOldDataAtStartUp extends StObject {
 }
 object ClearOldDataAtStartUp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearOldDataAtStartUp: Boolean,
     clearOutputTimeout: Double,
     enable: Boolean,
@@ -59,28 +58,20 @@ object ClearOldDataAtStartUp {
     __obj.asInstanceOf[ClearOldDataAtStartUp]
   }
   
-  @scala.inline
-  implicit class ClearOldDataAtStartUpMutableBuilder[Self <: ClearOldDataAtStartUp] (val x: Self) extends AnyVal {
+  extension [Self <: ClearOldDataAtStartUp](x: Self) {
     
-    @scala.inline
-    def setClearOldDataAtStartUp(value: Boolean): Self = StObject.set(x, "clearOldDataAtStartUp", value.asInstanceOf[js.Any])
+    inline def setClearOldDataAtStartUp(value: Boolean): Self = StObject.set(x, "clearOldDataAtStartUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearOutputTimeout(value: Double): Self = StObject.set(x, "clearOutputTimeout", value.asInstanceOf[js.Any])
+    inline def setClearOutputTimeout(value: Double): Self = StObject.set(x, "clearOutputTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelJobs(value: String): Self = StObject.set(x, "labelJobs", value.asInstanceOf[js.Any])
+    inline def setLabelJobs(value: String): Self = StObject.set(x, "labelJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceNull: Self = StObject.set(x, "nonce", null)
+    inline def setNonceNull: Self = StObject.set(x, "nonce", null)
     
-    @scala.inline
-    def setWorkerRefreshInterval(value: Double): Self = StObject.set(x, "workerRefreshInterval", value.asInstanceOf[js.Any])
+    inline def setWorkerRefreshInterval(value: Double): Self = StObject.set(x, "workerRefreshInterval", value.asInstanceOf[js.Any])
   }
 }

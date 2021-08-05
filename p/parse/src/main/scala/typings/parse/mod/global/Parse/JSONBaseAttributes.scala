@@ -14,22 +14,17 @@ trait JSONBaseAttributes extends StObject {
 }
 object JSONBaseAttributes {
   
-  @scala.inline
-  def apply(createdAt: String, objectId: String, updatedAt: String): JSONBaseAttributes = {
+  inline def apply(createdAt: String, objectId: String, updatedAt: String): JSONBaseAttributes = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONBaseAttributes]
   }
   
-  @scala.inline
-  implicit class JSONBaseAttributesMutableBuilder[Self <: JSONBaseAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: JSONBaseAttributes](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

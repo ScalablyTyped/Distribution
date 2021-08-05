@@ -12,19 +12,15 @@ trait ContinuationToken extends StObject {
 }
 object ContinuationToken {
   
-  @scala.inline
-  def apply(nextMarker: String, targetLocation: String): ContinuationToken = {
+  inline def apply(nextMarker: String, targetLocation: String): ContinuationToken = {
     val __obj = js.Dynamic.literal(nextMarker = nextMarker.asInstanceOf[js.Any], targetLocation = targetLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuationToken]
   }
   
-  @scala.inline
-  implicit class ContinuationTokenMutableBuilder[Self <: ContinuationToken] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuationToken](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLocation(value: String): Self = StObject.set(x, "targetLocation", value.asInstanceOf[js.Any])
+    inline def setTargetLocation(value: String): Self = StObject.set(x, "targetLocation", value.asInstanceOf[js.Any])
   }
 }

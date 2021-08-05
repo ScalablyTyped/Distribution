@@ -11,10 +11,8 @@ object getParameterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetParameterResult]]
-  @scala.inline
-  def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetParameterResult]]
+  inline def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetParameterResult]]
+  inline def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetParameterResult]]
   
   trait GetParameterArgs extends StObject {
     
@@ -30,23 +28,18 @@ object getParameterMod {
   }
   object GetParameterArgs {
     
-    @scala.inline
-    def apply(name: String): GetParameterArgs = {
+    inline def apply(name: String): GetParameterArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetParameterArgs]
     }
     
-    @scala.inline
-    implicit class GetParameterArgsMutableBuilder[Self <: GetParameterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetParameterArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithDecryption(value: Boolean): Self = StObject.set(x, "withDecryption", value.asInstanceOf[js.Any])
+      inline def setWithDecryption(value: Boolean): Self = StObject.set(x, "withDecryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithDecryptionUndefined: Self = StObject.set(x, "withDecryption", js.undefined)
+      inline def setWithDecryptionUndefined: Self = StObject.set(x, "withDecryption", js.undefined)
     }
   }
   
@@ -71,39 +64,29 @@ object getParameterMod {
   }
   object GetParameterResult {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String, `type`: String, value: String, version: Double): GetParameterResult = {
+    inline def apply(arn: String, id: String, name: String, `type`: String, value: String, version: Double): GetParameterResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetParameterResult]
     }
     
-    @scala.inline
-    implicit class GetParameterResultMutableBuilder[Self <: GetParameterResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetParameterResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithDecryption(value: Boolean): Self = StObject.set(x, "withDecryption", value.asInstanceOf[js.Any])
+      inline def setWithDecryption(value: Boolean): Self = StObject.set(x, "withDecryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithDecryptionUndefined: Self = StObject.set(x, "withDecryption", js.undefined)
+      inline def setWithDecryptionUndefined: Self = StObject.set(x, "withDecryption", js.undefined)
     }
   }
 }

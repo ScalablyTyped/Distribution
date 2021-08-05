@@ -32,54 +32,54 @@ object retrierMod {
       */
     def this(options: Initial) = this()
     
-    var attempt: js.Any = js.native
+    /* private */ var attempt: js.Any = js.native
     
-    var attemptNum: js.Any = js.native
+    /* private */ var attemptNum: js.Any = js.native
     
     def cancel(): Unit = js.native
     
-    var cleanup: js.Any = js.native
+    /* private */ var cleanup: js.Any = js.native
     
-    var currDelay: js.Any = js.native
+    /* private */ var currDelay: js.Any = js.native
     
     def failed(err: Error): Unit = js.native
     def failed(err: Error, nextAttemptDelayOverride: Double): Unit = js.native
     
-    var inProgress: js.Any = js.native
+    /* private */ var inProgress: js.Any = js.native
     
-    val initialDelay: js.Any = js.native
+    /* private */ val initialDelay: js.Any = js.native
     
-    val maxAttemptsCount: js.Any = js.native
+    /* private */ val maxAttemptsCount: js.Any = js.native
     
-    val maxAttemptsTime: js.Any = js.native
+    /* private */ val maxAttemptsTime: js.Any = js.native
     
-    var maxDelay: js.Any = js.native
+    /* private */ var maxDelay: js.Any = js.native
     
-    val minDelay: js.Any = js.native
+    /* private */ val minDelay: js.Any = js.native
     
-    var nextDelay: js.Any = js.native
+    /* private */ var nextDelay: js.Any = js.native
     
-    var prevDelay: js.Any = js.native
+    /* private */ var prevDelay: js.Any = js.native
     
-    var randomize: js.Any = js.native
+    /* private */ var randomize: js.Any = js.native
     
-    val randomness: js.Any = js.native
+    /* private */ val randomness: js.Any = js.native
     
-    var reject: js.Any = js.native
+    /* private */ var reject: js.Any = js.native
     
-    var resolve: js.Any = js.native
+    /* private */ var resolve: js.Any = js.native
     
     def run[T](handler: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
     
-    var scheduleAttempt: js.Any = js.native
+    /* private */ var scheduleAttempt: js.Any = js.native
     
     def start(): js.Promise[js.Any] = js.native
     
-    var startTimestamp: js.Any = js.native
+    /* private */ var startTimestamp: js.Any = js.native
     
     def succeeded(): Unit = js.native
     def succeeded(arg: js.Any): Unit = js.native
     
-    var timeout: js.Any = js.native
+    /* private */ var timeout: js.Any = js.native
   }
 }

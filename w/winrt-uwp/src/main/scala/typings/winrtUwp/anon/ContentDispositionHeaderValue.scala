@@ -13,19 +13,15 @@ trait ContentDispositionHeaderValue extends StObject {
 }
 object ContentDispositionHeaderValue {
   
-  @scala.inline
-  def apply(contentDispositionHeaderValue: HttpContentDispositionHeaderValue, returnValue: Boolean): ContentDispositionHeaderValue = {
+  inline def apply(contentDispositionHeaderValue: HttpContentDispositionHeaderValue, returnValue: Boolean): ContentDispositionHeaderValue = {
     val __obj = js.Dynamic.literal(contentDispositionHeaderValue = contentDispositionHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentDispositionHeaderValue]
   }
   
-  @scala.inline
-  implicit class ContentDispositionHeaderValueMutableBuilder[Self <: ContentDispositionHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ContentDispositionHeaderValue](x: Self) {
     
-    @scala.inline
-    def setContentDispositionHeaderValue(value: HttpContentDispositionHeaderValue): Self = StObject.set(x, "contentDispositionHeaderValue", value.asInstanceOf[js.Any])
+    inline def setContentDispositionHeaderValue(value: HttpContentDispositionHeaderValue): Self = StObject.set(x, "contentDispositionHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -20,34 +20,25 @@ trait PolicyTopicEntry extends StObject {
 }
 object PolicyTopicEntry {
   
-  @scala.inline
-  def apply(): PolicyTopicEntry = {
+  inline def apply(): PolicyTopicEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyTopicEntry]
   }
   
-  @scala.inline
-  implicit class PolicyTopicEntryMutableBuilder[Self <: PolicyTopicEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyTopicEntry](x: Self) {
     
-    @scala.inline
-    def setEvidences(value: js.Array[PolicyTopicEvidence]): Self = StObject.set(x, "evidences", value.asInstanceOf[js.Any])
+    inline def setEvidences(value: js.Array[PolicyTopicEvidence]): Self = StObject.set(x, "evidences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvidencesUndefined: Self = StObject.set(x, "evidences", js.undefined)
+    inline def setEvidencesUndefined: Self = StObject.set(x, "evidences", js.undefined)
     
-    @scala.inline
-    def setEvidencesVarargs(value: PolicyTopicEvidence*): Self = StObject.set(x, "evidences", js.Array(value :_*))
+    inline def setEvidencesVarargs(value: PolicyTopicEvidence*): Self = StObject.set(x, "evidences", js.Array(value :_*))
     
-    @scala.inline
-    def setHelpCenterUrl(value: String): Self = StObject.set(x, "helpCenterUrl", value.asInstanceOf[js.Any])
+    inline def setHelpCenterUrl(value: String): Self = StObject.set(x, "helpCenterUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpCenterUrlUndefined: Self = StObject.set(x, "helpCenterUrl", js.undefined)
+    inline def setHelpCenterUrlUndefined: Self = StObject.set(x, "helpCenterUrl", js.undefined)
     
-    @scala.inline
-    def setPolicyTopic(value: String): Self = StObject.set(x, "policyTopic", value.asInstanceOf[js.Any])
+    inline def setPolicyTopic(value: String): Self = StObject.set(x, "policyTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTopicUndefined: Self = StObject.set(x, "policyTopic", js.undefined)
+    inline def setPolicyTopicUndefined: Self = StObject.set(x, "policyTopic", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ trait Ast extends StObject {
 }
 object Ast {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ast: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify postcssValueParser.ParsedValue */ js.Any,
     types: js.Array[ExtendsValue]
   ): Ast = {
@@ -22,18 +21,14 @@ object Ast {
     __obj.asInstanceOf[Ast]
   }
   
-  @scala.inline
-  implicit class AstMutableBuilder[Self <: Ast] (val x: Self) extends AnyVal {
+  extension [Self <: Ast](x: Self) {
     
-    @scala.inline
-    def setAst(
+    inline def setAst(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify postcssValueParser.ParsedValue */ js.Any
     ): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[ExtendsValue]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[ExtendsValue]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: ExtendsValue*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: ExtendsValue*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

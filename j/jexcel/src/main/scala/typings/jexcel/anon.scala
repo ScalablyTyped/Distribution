@@ -15,26 +15,20 @@ object anon {
   }
   object Colspan {
     
-    @scala.inline
-    def apply(): Colspan = {
+    inline def apply(): Colspan = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Colspan]
     }
     
-    @scala.inline
-    implicit class ColspanMutableBuilder[Self <: Colspan] (val x: Self) extends AnyVal {
+    extension [Self <: Colspan](x: Self) {
       
-      @scala.inline
-      def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
+      inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
+      inline def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
       
-      @scala.inline
-      def setTitle(value: CellValue): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: CellValue): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -46,20 +40,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: CellValue, name: CellValue): Id = {
+    inline def apply(id: CellValue, name: CellValue): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: CellValue): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: CellValue): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: CellValue): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: CellValue): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

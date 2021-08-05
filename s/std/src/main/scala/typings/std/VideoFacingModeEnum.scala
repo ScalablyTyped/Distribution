@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VideoFacingModeEnum extends StObject
 object VideoFacingModeEnum {
   
-  @scala.inline
-  def environment: typings.std.stdStrings.environment = "environment".asInstanceOf[typings.std.stdStrings.environment]
+  inline def environment: typings.std.stdStrings.environment = "environment".asInstanceOf[typings.std.stdStrings.environment]
   
-  @scala.inline
-  def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
+  inline def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
   
-  @scala.inline
-  def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
+  inline def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
   
-  @scala.inline
-  def user: typings.std.stdStrings.user = "user".asInstanceOf[typings.std.stdStrings.user]
+  inline def user: typings.std.stdStrings.user = "user".asInstanceOf[typings.std.stdStrings.user]
 }

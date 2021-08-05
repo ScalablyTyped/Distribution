@@ -12,28 +12,21 @@ trait RTCIceGatherOptions extends StObject {
 }
 object RTCIceGatherOptions {
   
-  @scala.inline
-  def apply(): RTCIceGatherOptions = {
+  inline def apply(): RTCIceGatherOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCIceGatherOptions]
   }
   
-  @scala.inline
-  implicit class RTCIceGatherOptionsMutableBuilder[Self <: RTCIceGatherOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIceGatherOptions](x: Self) {
     
-    @scala.inline
-    def setGatherPolicy(value: RTCIceGatherPolicy): Self = StObject.set(x, "gatherPolicy", value.asInstanceOf[js.Any])
+    inline def setGatherPolicy(value: RTCIceGatherPolicy): Self = StObject.set(x, "gatherPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatherPolicyUndefined: Self = StObject.set(x, "gatherPolicy", js.undefined)
+    inline def setGatherPolicyUndefined: Self = StObject.set(x, "gatherPolicy", js.undefined)
     
-    @scala.inline
-    def setIceservers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceservers", value.asInstanceOf[js.Any])
+    inline def setIceservers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceservers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceserversUndefined: Self = StObject.set(x, "iceservers", js.undefined)
+    inline def setIceserversUndefined: Self = StObject.set(x, "iceservers", js.undefined)
     
-    @scala.inline
-    def setIceserversVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceservers", js.Array(value :_*))
+    inline def setIceserversVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceservers", js.Array(value :_*))
   }
 }

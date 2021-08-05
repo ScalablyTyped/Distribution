@@ -48,56 +48,40 @@ object typesEdgeMod {
   }
   object Edge {
     
-    @scala.inline
-    def apply(): Edge = {
+    inline def apply(): Edge = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Edge]
     }
     
-    @scala.inline
-    implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+    extension [Self <: Edge](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[Alias] | Iterable[Alias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[Alias] | Iterable[Alias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+      inline def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
+      inline def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+      inline def setResponseTimeHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
+      inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
-      @scala.inline
-      def setSummaryStatistics(value: EdgeStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
+      inline def setSummaryStatistics(value: EdgeStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
+      inline def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
     }
   }
   
@@ -137,50 +121,36 @@ object typesEdgeMod {
   }
   object UnmarshalledEdge {
     
-    @scala.inline
-    def apply(): UnmarshalledEdge = {
+    inline def apply(): UnmarshalledEdge = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEdge]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEdgeMutableBuilder[Self <: UnmarshalledEdge] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEdge](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[UnmarshalledAlias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[UnmarshalledAlias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: UnmarshalledAlias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: UnmarshalledAlias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+      inline def setResponseTimeHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
+      inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
-      @scala.inline
-      def setSummaryStatistics(value: UnmarshalledEdgeStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
+      inline def setSummaryStatistics(value: UnmarshalledEdgeStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
+      inline def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
     }
   }
 }

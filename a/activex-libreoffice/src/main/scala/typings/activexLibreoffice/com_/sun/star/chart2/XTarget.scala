@@ -14,8 +14,7 @@ trait XTarget
 }
 object XTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addDrawElement: () => Unit,
     queryInterface: `type` => js.Any,
@@ -25,10 +24,8 @@ object XTarget {
     __obj.asInstanceOf[XTarget]
   }
   
-  @scala.inline
-  implicit class XTargetMutableBuilder[Self <: XTarget] (val x: Self) extends AnyVal {
+  extension [Self <: XTarget](x: Self) {
     
-    @scala.inline
-    def setAddDrawElement(value: () => Unit): Self = StObject.set(x, "addDrawElement", js.Any.fromFunction0(value))
+    inline def setAddDrawElement(value: () => Unit): Self = StObject.set(x, "addDrawElement", js.Any.fromFunction0(value))
   }
 }

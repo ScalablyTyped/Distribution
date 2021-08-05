@@ -11,7 +11,7 @@ class SlicePipe ()
   extends StObject
      with PipeTransform {
   
-  var supports: js.Any = js.native
+  /* private */ var supports: js.Any = js.native
   
   def transform(value: String, start: Double): String = js.native
   def transform(value: String, start: Double, end: Double): String = js.native

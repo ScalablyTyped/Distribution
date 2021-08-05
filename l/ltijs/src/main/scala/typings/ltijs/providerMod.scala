@@ -100,32 +100,24 @@ object providerMod {
   }
   object DeploymentOptions {
     
-    @scala.inline
-    def apply(): DeploymentOptions = {
+    inline def apply(): DeploymentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeploymentOptions]
     }
     
-    @scala.inline
-    implicit class DeploymentOptionsMutableBuilder[Self <: DeploymentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentOptions](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setServerless(value: Boolean): Self = StObject.set(x, "serverless", value.asInstanceOf[js.Any])
+      inline def setServerless(value: Boolean): Self = StObject.set(x, "serverless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerlessUndefined: Self = StObject.set(x, "serverless", js.undefined)
+      inline def setServerlessUndefined: Self = StObject.set(x, "serverless", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -157,30 +149,24 @@ object providerMod {
   }
   object OnConnectOptions {
     
-    @scala.inline
-    def apply(): OnConnectOptions = {
+    inline def apply(): OnConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnConnectOptions]
     }
     
-    @scala.inline
-    implicit class OnConnectOptionsMutableBuilder[Self <: OnConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnConnectOptions](x: Self) {
       
-      @scala.inline
-      def setInvalidToken(
+      inline def setInvalidToken(
         value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* response */ Response_[js.Any]) => Response_[js.Any]
       ): Self = StObject.set(x, "invalidToken", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalidTokenUndefined: Self = StObject.set(x, "invalidToken", js.undefined)
+      inline def setInvalidTokenUndefined: Self = StObject.set(x, "invalidToken", js.undefined)
       
-      @scala.inline
-      def setSessionTimeout(
+      inline def setSessionTimeout(
         value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* response */ Response_[js.Any]) => Response_[js.Any]
       ): Self = StObject.set(x, "sessionTimeout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+      inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     }
   }
   
@@ -212,86 +198,60 @@ object providerMod {
   }
   object ProviderOptions {
     
-    @scala.inline
-    def apply(): ProviderOptions = {
+    inline def apply(): ProviderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderOptions]
     }
     
-    @scala.inline
-    implicit class ProviderOptionsMutableBuilder[Self <: ProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderOptions](x: Self) {
       
-      @scala.inline
-      def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
+      inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
+      inline def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
       
-      @scala.inline
-      def setCookies(value: SameSite): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: SameSite): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+      inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+      inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
       
-      @scala.inline
-      def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
-      @scala.inline
-      def setInvalidTokenUrl(value: String): Self = StObject.set(x, "invalidTokenUrl", value.asInstanceOf[js.Any])
+      inline def setInvalidTokenUrl(value: String): Self = StObject.set(x, "invalidTokenUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidTokenUrlUndefined: Self = StObject.set(x, "invalidTokenUrl", js.undefined)
+      inline def setInvalidTokenUrlUndefined: Self = StObject.set(x, "invalidTokenUrl", js.undefined)
       
-      @scala.inline
-      def setKeysetUrl(value: String): Self = StObject.set(x, "keysetUrl", value.asInstanceOf[js.Any])
+      inline def setKeysetUrl(value: String): Self = StObject.set(x, "keysetUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysetUrlUndefined: Self = StObject.set(x, "keysetUrl", js.undefined)
+      inline def setKeysetUrlUndefined: Self = StObject.set(x, "keysetUrl", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Boolean): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Boolean): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+      inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
+      inline def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
       
-      @scala.inline
-      def setServerAddon(value: /* app */ Express => Unit): Self = StObject.set(x, "serverAddon", js.Any.fromFunction1(value))
+      inline def setServerAddon(value: /* app */ Express => Unit): Self = StObject.set(x, "serverAddon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerAddonUndefined: Self = StObject.set(x, "serverAddon", js.undefined)
+      inline def setServerAddonUndefined: Self = StObject.set(x, "serverAddon", js.undefined)
       
-      @scala.inline
-      def setSessionTimeoutUrl(value: String): Self = StObject.set(x, "sessionTimeoutUrl", value.asInstanceOf[js.Any])
+      inline def setSessionTimeoutUrl(value: String): Self = StObject.set(x, "sessionTimeoutUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeoutUrlUndefined: Self = StObject.set(x, "sessionTimeoutUrl", js.undefined)
+      inline def setSessionTimeoutUrlUndefined: Self = StObject.set(x, "sessionTimeoutUrl", js.undefined)
       
-      @scala.inline
-      def setSsl(value: Cert): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: Cert): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
-      @scala.inline
-      def setStaticPath(value: String): Self = StObject.set(x, "staticPath", value.asInstanceOf[js.Any])
+      inline def setStaticPath(value: String): Self = StObject.set(x, "staticPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticPathUndefined: Self = StObject.set(x, "staticPath", js.undefined)
+      inline def setStaticPathUndefined: Self = StObject.set(x, "staticPath", js.undefined)
     }
   }
   
@@ -303,26 +263,20 @@ object providerMod {
   }
   object RedirectOptions {
     
-    @scala.inline
-    def apply(): RedirectOptions = {
+    inline def apply(): RedirectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RedirectOptions]
     }
     
-    @scala.inline
-    implicit class RedirectOptionsMutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RedirectOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
+      inline def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
+      inline def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
       
-      @scala.inline
-      def setIsNewResource(value: Boolean): Self = StObject.set(x, "isNewResource", value.asInstanceOf[js.Any])
+      inline def setIsNewResource(value: Boolean): Self = StObject.set(x, "isNewResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNewResourceUndefined: Self = StObject.set(x, "isNewResource", js.undefined)
+      inline def setIsNewResourceUndefined: Self = StObject.set(x, "isNewResource", js.undefined)
     }
   }
   

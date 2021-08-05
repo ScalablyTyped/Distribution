@@ -10,19 +10,15 @@ trait ListTasksResponse extends StObject {
 }
 object ListTasksResponse {
   
-  @scala.inline
-  def apply(tasks: js.Array[TaskInfo]): ListTasksResponse = {
+  inline def apply(tasks: js.Array[TaskInfo]): ListTasksResponse = {
     val __obj = js.Dynamic.literal(tasks = tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTasksResponse]
   }
   
-  @scala.inline
-  implicit class ListTasksResponseMutableBuilder[Self <: ListTasksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTasksResponse](x: Self) {
     
-    @scala.inline
-    def setTasks(value: js.Array[TaskInfo]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[TaskInfo]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: TaskInfo*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TaskInfo*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

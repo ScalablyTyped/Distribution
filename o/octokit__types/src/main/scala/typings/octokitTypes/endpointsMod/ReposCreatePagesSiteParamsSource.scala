@@ -14,22 +14,17 @@ trait ReposCreatePagesSiteParamsSource extends StObject {
 }
 object ReposCreatePagesSiteParamsSource {
   
-  @scala.inline
-  def apply(branch: String): ReposCreatePagesSiteParamsSource = {
+  inline def apply(branch: String): ReposCreatePagesSiteParamsSource = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreatePagesSiteParamsSource]
   }
   
-  @scala.inline
-  implicit class ReposCreatePagesSiteParamsSourceMutableBuilder[Self <: ReposCreatePagesSiteParamsSource] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreatePagesSiteParamsSource](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Slash | Slashdocs): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Slash | Slashdocs): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

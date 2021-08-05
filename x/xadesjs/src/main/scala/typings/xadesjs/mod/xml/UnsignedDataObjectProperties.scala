@@ -13,6 +13,5 @@ class UnsignedDataObjectProperties ()
   extends typings.xadesjs.xmlMod.UnsignedDataObjectProperties
 object UnsignedDataObjectProperties {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.UnsignedDataObjectProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedDataObjectProperties").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.UnsignedDataObjectProperties]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.UnsignedDataObjectProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedDataObjectProperties").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.UnsignedDataObjectProperties]]
 }

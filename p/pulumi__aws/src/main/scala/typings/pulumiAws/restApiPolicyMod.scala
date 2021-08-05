@@ -47,21 +47,16 @@ object restApiPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RestApiPolicyState): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RestApiPolicyState, opts: CustomResourceOptions): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    inline def get(name: String, id: Input[ID]): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    inline def get(name: String, id: Input[ID], state: RestApiPolicyState): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
+    inline def get(name: String, id: Input[ID], state: RestApiPolicyState, opts: CustomResourceOptions): RestApiPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApiPolicy]
     
     /**
       * Returns true if the given object is an instance of RestApiPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean]
   }
   
   trait RestApiPolicyArgs extends StObject {
@@ -75,20 +70,16 @@ object restApiPolicyMod {
   }
   object RestApiPolicyArgs {
     
-    @scala.inline
-    def apply(policy: Input[String], restApiId: Input[String]): RestApiPolicyArgs = {
+    inline def apply(policy: Input[String], restApiId: Input[String]): RestApiPolicyArgs = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestApiPolicyArgs]
     }
     
-    @scala.inline
-    implicit class RestApiPolicyArgsMutableBuilder[Self <: RestApiPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RestApiPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+      inline def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,26 +94,20 @@ object restApiPolicyMod {
   }
   object RestApiPolicyState {
     
-    @scala.inline
-    def apply(): RestApiPolicyState = {
+    inline def apply(): RestApiPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestApiPolicyState]
     }
     
-    @scala.inline
-    implicit class RestApiPolicyStateMutableBuilder[Self <: RestApiPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: RestApiPolicyState](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+      inline def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
+      inline def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
     }
   }
 }

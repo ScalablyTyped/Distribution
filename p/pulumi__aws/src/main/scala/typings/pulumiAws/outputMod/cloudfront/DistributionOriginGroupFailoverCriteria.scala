@@ -13,19 +13,15 @@ trait DistributionOriginGroupFailoverCriteria extends StObject {
 }
 object DistributionOriginGroupFailoverCriteria {
   
-  @scala.inline
-  def apply(statusCodes: js.Array[Double]): DistributionOriginGroupFailoverCriteria = {
+  inline def apply(statusCodes: js.Array[Double]): DistributionOriginGroupFailoverCriteria = {
     val __obj = js.Dynamic.literal(statusCodes = statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOriginGroupFailoverCriteria]
   }
   
-  @scala.inline
-  implicit class DistributionOriginGroupFailoverCriteriaMutableBuilder[Self <: DistributionOriginGroupFailoverCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOriginGroupFailoverCriteria](x: Self) {
     
-    @scala.inline
-    def setStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodesVarargs(value: Double*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
+    inline def setStatusCodesVarargs(value: Double*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
   }
 }

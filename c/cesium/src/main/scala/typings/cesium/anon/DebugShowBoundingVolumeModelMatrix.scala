@@ -13,25 +13,19 @@ trait DebugShowBoundingVolumeModelMatrix extends StObject {
 }
 object DebugShowBoundingVolumeModelMatrix {
   
-  @scala.inline
-  def apply(): DebugShowBoundingVolumeModelMatrix = {
+  inline def apply(): DebugShowBoundingVolumeModelMatrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugShowBoundingVolumeModelMatrix]
   }
   
-  @scala.inline
-  implicit class DebugShowBoundingVolumeModelMatrixMutableBuilder[Self <: DebugShowBoundingVolumeModelMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: DebugShowBoundingVolumeModelMatrix](x: Self) {
     
-    @scala.inline
-    def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    inline def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
+    inline def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
     
-    @scala.inline
-    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
+    inline def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
+    inline def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
   }
 }

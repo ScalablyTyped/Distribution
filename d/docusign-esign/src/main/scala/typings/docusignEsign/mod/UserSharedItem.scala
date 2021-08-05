@@ -31,33 +31,25 @@ trait UserSharedItem extends StObject {
 }
 object UserSharedItem {
   
-  @scala.inline
-  def apply(): UserSharedItem = {
+  inline def apply(): UserSharedItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserSharedItem]
   }
   
-  @scala.inline
-  implicit class UserSharedItemMutableBuilder[Self <: UserSharedItem] (val x: Self) extends AnyVal {
+  extension [Self <: UserSharedItem](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setShared(value: String): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: String): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+    inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
-    @scala.inline
-    def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

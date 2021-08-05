@@ -15,8 +15,7 @@ trait CSSKeyframeRule
 }
 object CSSKeyframeRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CHARSET_RULE: Double,
     FONT_FACE_RULE: Double,
     IMPORT_RULE: Double,
@@ -37,13 +36,10 @@ object CSSKeyframeRule {
     __obj.asInstanceOf[CSSKeyframeRule]
   }
   
-  @scala.inline
-  implicit class CSSKeyframeRuleMutableBuilder[Self <: CSSKeyframeRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSKeyframeRule](x: Self) {
     
-    @scala.inline
-    def setKeyText(value: java.lang.String): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
+    inline def setKeyText(value: java.lang.String): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

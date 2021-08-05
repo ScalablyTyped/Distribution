@@ -13,16 +13,13 @@ trait DescribeMultiplexRequest extends StObject {
 }
 object DescribeMultiplexRequest {
   
-  @scala.inline
-  def apply(MultiplexId: string): DescribeMultiplexRequest = {
+  inline def apply(MultiplexId: string): DescribeMultiplexRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMultiplexRequest]
   }
   
-  @scala.inline
-  implicit class DescribeMultiplexRequestMutableBuilder[Self <: DescribeMultiplexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMultiplexRequest](x: Self) {
     
-    @scala.inline
-    def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
+    inline def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
   }
 }

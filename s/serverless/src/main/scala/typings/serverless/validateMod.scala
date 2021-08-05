@@ -15,14 +15,11 @@ object validateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getHttp[T /* <: js.Object */](event: Http[T], functionName: String): Method | T = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttp")(event.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Method | T]
+  inline def getHttp[T /* <: js.Object */](event: Http[T], functionName: String): Method | T = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttp")(event.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Method | T]
   
-  @scala.inline
-  def getHttpMethod(http: MethodString, functionName: String): HttpMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpMethod")(http.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[HttpMethod]
+  inline def getHttpMethod(http: MethodString, functionName: String): HttpMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpMethod")(http.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[HttpMethod]
   
-  @scala.inline
-  def getHttpPath(http: Path, functionName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpPath")(http.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getHttpPath(http: Path, functionName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpPath")(http.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ApiGatewayEvent extends StObject {
     
@@ -30,17 +27,14 @@ object validateMod {
   }
   object ApiGatewayEvent {
     
-    @scala.inline
-    def apply(http: String | Authorizer): ApiGatewayEvent = {
+    inline def apply(http: String | Authorizer): ApiGatewayEvent = {
       val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiGatewayEvent]
     }
     
-    @scala.inline
-    implicit class ApiGatewayEventMutableBuilder[Self <: ApiGatewayEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ApiGatewayEvent](x: Self) {
       
-      @scala.inline
-      def setHttp(value: String | Authorizer): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: String | Authorizer): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,28 +51,20 @@ object validateMod {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def any: typings.serverless.serverlessStrings.any = "any".asInstanceOf[typings.serverless.serverlessStrings.any]
+    inline def any: typings.serverless.serverlessStrings.any = "any".asInstanceOf[typings.serverless.serverlessStrings.any]
     
-    @scala.inline
-    def delete: typings.serverless.serverlessStrings.delete = "delete".asInstanceOf[typings.serverless.serverlessStrings.delete]
+    inline def delete: typings.serverless.serverlessStrings.delete = "delete".asInstanceOf[typings.serverless.serverlessStrings.delete]
     
-    @scala.inline
-    def get: typings.serverless.serverlessStrings.get = "get".asInstanceOf[typings.serverless.serverlessStrings.get]
+    inline def get: typings.serverless.serverlessStrings.get = "get".asInstanceOf[typings.serverless.serverlessStrings.get]
     
-    @scala.inline
-    def head: typings.serverless.serverlessStrings.head = "head".asInstanceOf[typings.serverless.serverlessStrings.head]
+    inline def head: typings.serverless.serverlessStrings.head = "head".asInstanceOf[typings.serverless.serverlessStrings.head]
     
-    @scala.inline
-    def options: typings.serverless.serverlessStrings.options = "options".asInstanceOf[typings.serverless.serverlessStrings.options]
+    inline def options: typings.serverless.serverlessStrings.options = "options".asInstanceOf[typings.serverless.serverlessStrings.options]
     
-    @scala.inline
-    def patch: typings.serverless.serverlessStrings.patch = "patch".asInstanceOf[typings.serverless.serverlessStrings.patch]
+    inline def patch: typings.serverless.serverlessStrings.patch = "patch".asInstanceOf[typings.serverless.serverlessStrings.patch]
     
-    @scala.inline
-    def post: typings.serverless.serverlessStrings.post = "post".asInstanceOf[typings.serverless.serverlessStrings.post]
+    inline def post: typings.serverless.serverlessStrings.post = "post".asInstanceOf[typings.serverless.serverlessStrings.post]
     
-    @scala.inline
-    def put: typings.serverless.serverlessStrings.put = "put".asInstanceOf[typings.serverless.serverlessStrings.put]
+    inline def put: typings.serverless.serverlessStrings.put = "put".asInstanceOf[typings.serverless.serverlessStrings.put]
   }
 }

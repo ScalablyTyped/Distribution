@@ -20,11 +20,9 @@ object mod {
     def this(message: String, tryNextLink: Boolean) = this()
   }
   
-  @scala.inline
-  def chain[T](providers: Provider[T]*): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(providers.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def chain[T](providers: Provider[T]*): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(providers.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
-  @scala.inline
-  def fromStatic[T](staticValue: T): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStatic")(staticValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def fromStatic[T](staticValue: T): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStatic")(staticValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
   @JSImport("@aws-sdk/property-provider", "memoize")
   @js.native

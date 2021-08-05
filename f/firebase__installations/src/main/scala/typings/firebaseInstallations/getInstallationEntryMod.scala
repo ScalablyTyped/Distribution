@@ -13,8 +13,7 @@ object getInstallationEntryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInstallationEntry(appConfig: AppConfig): js.Promise[InstallationEntryWithRegistrationPromise] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationEntry")(appConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InstallationEntryWithRegistrationPromise]]
+  inline def getInstallationEntry(appConfig: AppConfig): js.Promise[InstallationEntryWithRegistrationPromise] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationEntry")(appConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InstallationEntryWithRegistrationPromise]]
   
   trait InstallationEntryWithRegistrationPromise extends StObject {
     
@@ -25,23 +24,18 @@ object getInstallationEntryMod {
   }
   object InstallationEntryWithRegistrationPromise {
     
-    @scala.inline
-    def apply(installationEntry: InstallationEntry): InstallationEntryWithRegistrationPromise = {
+    inline def apply(installationEntry: InstallationEntry): InstallationEntryWithRegistrationPromise = {
       val __obj = js.Dynamic.literal(installationEntry = installationEntry.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallationEntryWithRegistrationPromise]
     }
     
-    @scala.inline
-    implicit class InstallationEntryWithRegistrationPromiseMutableBuilder[Self <: InstallationEntryWithRegistrationPromise] (val x: Self) extends AnyVal {
+    extension [Self <: InstallationEntryWithRegistrationPromise](x: Self) {
       
-      @scala.inline
-      def setInstallationEntry(value: InstallationEntry): Self = StObject.set(x, "installationEntry", value.asInstanceOf[js.Any])
+      inline def setInstallationEntry(value: InstallationEntry): Self = StObject.set(x, "installationEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationPromise(value: js.Promise[RegisteredInstallationEntry]): Self = StObject.set(x, "registrationPromise", value.asInstanceOf[js.Any])
+      inline def setRegistrationPromise(value: js.Promise[RegisteredInstallationEntry]): Self = StObject.set(x, "registrationPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationPromiseUndefined: Self = StObject.set(x, "registrationPromise", js.undefined)
+      inline def setRegistrationPromiseUndefined: Self = StObject.set(x, "registrationPromise", js.undefined)
     }
   }
 }

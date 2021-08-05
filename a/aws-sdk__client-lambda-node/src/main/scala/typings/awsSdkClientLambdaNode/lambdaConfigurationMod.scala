@@ -146,163 +146,116 @@ object lambdaConfigurationMod {
   }
   object LambdaConfiguration {
     
-    @scala.inline
-    def apply(): LambdaConfiguration = {
+    inline def apply(): LambdaConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LambdaConfiguration]
     }
     
-    @scala.inline
-    implicit class LambdaConfigurationMutableBuilder[Self <: LambdaConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaConfiguration](x: Self) {
       
-      @scala.inline
-      def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
+      inline def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
+      inline def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setDelayDecider(
+      inline def setDelayDecider(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.DelayDecider */ js.Any
       ): Self = StObject.set(x, "delayDecider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayDeciderUndefined: Self = StObject.set(x, "delayDecider", js.undefined)
+      inline def setDelayDeciderUndefined: Self = StObject.set(x, "delayDecider", js.undefined)
       
-      @scala.inline
-      def setEndpoint(
+      inline def setEndpoint(
         value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any) | (Provider[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
             ])
       ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointFunction0(
+      inline def setEndpointFunction0(
         value: () => js.Promise[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndpointProvider(value: js.Any): Self = StObject.set(x, "endpointProvider", value.asInstanceOf[js.Any])
+      inline def setEndpointProvider(value: js.Any): Self = StObject.set(x, "endpointProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointProviderUndefined: Self = StObject.set(x, "endpointProvider", js.undefined)
+      inline def setEndpointProviderUndefined: Self = StObject.set(x, "endpointProvider", js.undefined)
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setHandler(value: /* context */ HandlerExecutionContext => DeserializeHandler[js.Object, js.Object]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: /* context */ HandlerExecutionContext => DeserializeHandler[js.Object, js.Object]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setHttpHandler(
+      inline def setHttpHandler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpHandler<_stream.Readable> */ js.Any
       ): Self = StObject.set(x, "httpHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpHandlerUndefined: Self = StObject.set(x, "httpHandler", js.undefined)
+      inline def setHttpHandlerUndefined: Self = StObject.set(x, "httpHandler", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRetryDecider(
+      inline def setRetryDecider(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.RetryDecider */ js.Any
       ): Self = StObject.set(x, "retryDecider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDeciderUndefined: Self = StObject.set(x, "retryDecider", js.undefined)
+      inline def setRetryDeciderUndefined: Self = StObject.set(x, "retryDecider", js.undefined)
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+      inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
-      @scala.inline
-      def setSigner(value: RequestSigner): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(value: RequestSigner): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
+      inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
+      inline def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
       
-      @scala.inline
-      def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
+      inline def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
+      inline def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
       
-      @scala.inline
-      def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
+      inline def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
       
-      @scala.inline
-      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
+      inline def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
+      inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
       
-      @scala.inline
-      def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
+      inline def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
     }
   }
   
@@ -337,8 +290,7 @@ object lambdaConfigurationMod {
   }
   object LambdaResolvableConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _user_injected_http_handler: js.Any,
       bodyLengthChecker: js.Any => js.UndefOr[Double],
       parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any,
@@ -348,22 +300,17 @@ object lambdaConfigurationMod {
       __obj.asInstanceOf[LambdaResolvableConfiguration]
     }
     
-    @scala.inline
-    implicit class LambdaResolvableConfigurationMutableBuilder[Self <: LambdaResolvableConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaResolvableConfiguration](x: Self) {
       
-      @scala.inline
-      def setBodyLengthChecker(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParser(
+      inline def setParser(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any
       ): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializer(value: () => js.Promise[RequestSerializer[Readable, js.Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
+      inline def setSerializer(value: () => js.Promise[RequestSerializer[Readable, js.Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_user_injected_http_handler(value: js.Any): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
+      inline def set_user_injected_http_handler(value: js.Any): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -455,8 +402,7 @@ object lambdaConfigurationMod {
   }
   object LambdaResolvedConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _user_injected_http_handler: Boolean,
       base64Decoder: /* input */ String => Uint8Array,
       base64Encoder: /* input */ Uint8Array => String,
@@ -484,74 +430,53 @@ object lambdaConfigurationMod {
       __obj.asInstanceOf[LambdaResolvedConfiguration]
     }
     
-    @scala.inline
-    implicit class LambdaResolvedConfigurationMutableBuilder[Self <: LambdaResolvedConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaResolvedConfiguration](x: Self) {
       
-      @scala.inline
-      def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBodyLengthChecker(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndpoint(
+      inline def setEndpoint(
         value: () => js.Promise[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandler(value: /* context */ HandlerExecutionContext => DeserializeHandler[js.Object, js.Object]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: /* context */ HandlerExecutionContext => DeserializeHandler[js.Object, js.Object]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParser(
+      inline def setParser(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any
       ): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSerializer(value: () => js.Promise[RequestSerializer[Readable, js.Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
+      inline def setSerializer(value: () => js.Promise[RequestSerializer[Readable, js.Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigner(value: RequestSigner): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(value: RequestSigner): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
+      inline def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_user_injected_http_handler(value: Boolean): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
+      inline def set_user_injected_http_handler(value: Boolean): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
     }
   }
 }

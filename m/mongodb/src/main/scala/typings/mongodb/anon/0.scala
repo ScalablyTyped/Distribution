@@ -10,19 +10,15 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(): `0` = {
+  inline def apply(): `0` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def set_id(value: js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

@@ -40,37 +40,27 @@ trait MarkerSymbolProperties
 }
 object MarkerSymbolProperties {
   
-  @scala.inline
-  def apply(): MarkerSymbolProperties = {
+  inline def apply(): MarkerSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkerSymbolProperties]
   }
   
-  @scala.inline
-  implicit class MarkerSymbolPropertiesMutableBuilder[Self <: MarkerSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setType(value: `simple-marker` | `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-marker` | `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    inline def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
-    @scala.inline
-    def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    inline def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
   }
 }

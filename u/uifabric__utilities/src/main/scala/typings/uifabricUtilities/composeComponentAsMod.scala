@@ -11,6 +11,5 @@ object composeComponentAsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def composeComponentAs[TProps](outer: IComponentAs[TProps], inner: IComponentAs[TProps]): IComponentAs[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeComponentAs")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[IComponentAs[TProps]]
+  inline def composeComponentAs[TProps](outer: IComponentAs[TProps], inner: IComponentAs[TProps]): IComponentAs[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeComponentAs")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[IComponentAs[TProps]]
 }

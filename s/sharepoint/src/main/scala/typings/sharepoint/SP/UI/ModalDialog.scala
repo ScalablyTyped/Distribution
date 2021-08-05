@@ -16,8 +16,7 @@ trait ModalDialog
 }
 object ModalDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoSize: () => Unit,
     autoSizeSuppressScrollbar: js.Any => Unit,
     close: DialogResult => Unit,
@@ -40,10 +39,8 @@ object ModalDialog {
     __obj.asInstanceOf[ModalDialog]
   }
   
-  @scala.inline
-  implicit class ModalDialogMutableBuilder[Self <: ModalDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialog](x: Self) {
     
-    @scala.inline
-    def setClose(value: DialogResult => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: DialogResult => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
   }
 }

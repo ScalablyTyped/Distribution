@@ -30,31 +30,23 @@ trait ParamsResourceTransferjobsGet
 }
 object ParamsResourceTransferjobsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceTransferjobsGet = {
+  inline def apply(): ParamsResourceTransferjobsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTransferjobsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTransferjobsGetMutableBuilder[Self <: ParamsResourceTransferjobsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTransferjobsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait MappingParameters extends StObject {
 }
 object MappingParameters {
   
-  @scala.inline
-  def apply(): MappingParameters = {
+  inline def apply(): MappingParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MappingParameters]
   }
   
-  @scala.inline
-  implicit class MappingParametersMutableBuilder[Self <: MappingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MappingParameters](x: Self) {
     
-    @scala.inline
-    def setCSVMappingParameters(value: CSVMappingParameters): Self = StObject.set(x, "CSVMappingParameters", value.asInstanceOf[js.Any])
+    inline def setCSVMappingParameters(value: CSVMappingParameters): Self = StObject.set(x, "CSVMappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSVMappingParametersUndefined: Self = StObject.set(x, "CSVMappingParameters", js.undefined)
+    inline def setCSVMappingParametersUndefined: Self = StObject.set(x, "CSVMappingParameters", js.undefined)
     
-    @scala.inline
-    def setJSONMappingParameters(value: JSONMappingParameters): Self = StObject.set(x, "JSONMappingParameters", value.asInstanceOf[js.Any])
+    inline def setJSONMappingParameters(value: JSONMappingParameters): Self = StObject.set(x, "JSONMappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSONMappingParametersUndefined: Self = StObject.set(x, "JSONMappingParameters", js.undefined)
+    inline def setJSONMappingParametersUndefined: Self = StObject.set(x, "JSONMappingParameters", js.undefined)
   }
 }

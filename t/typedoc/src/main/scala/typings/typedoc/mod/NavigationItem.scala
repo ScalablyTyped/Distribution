@@ -163,17 +163,13 @@ object NavigationItem {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(reflection: typings.typedoc.abstractMod.Reflection): typings.typedoc.navigationItemMod.NavigationItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any]).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
-  @scala.inline
-  def create(reflection: typings.typedoc.abstractMod.Reflection, parent: Unit, useShortNames: Boolean): typings.typedoc.navigationItemMod.NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
-  @scala.inline
-  def create(
+  inline def create(reflection: typings.typedoc.abstractMod.Reflection): typings.typedoc.navigationItemMod.NavigationItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any]).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
+  inline def create(reflection: typings.typedoc.abstractMod.Reflection, parent: Unit, useShortNames: Boolean): typings.typedoc.navigationItemMod.NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
+  inline def create(
     reflection: typings.typedoc.abstractMod.Reflection,
     parent: typings.typedoc.navigationItemMod.NavigationItem
   ): typings.typedoc.navigationItemMod.NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
-  @scala.inline
-  def create(
+  inline def create(
     reflection: typings.typedoc.abstractMod.Reflection,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
     useShortNames: Boolean

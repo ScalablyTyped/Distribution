@@ -10,16 +10,13 @@ trait EnumValuesFinishTimeAscending extends StObject {
 }
 object EnumValuesFinishTimeAscending {
   
-  @scala.inline
-  def apply(enumValues: FinishTimeAscending): EnumValuesFinishTimeAscending = {
+  inline def apply(enumValues: FinishTimeAscending): EnumValuesFinishTimeAscending = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFinishTimeAscending]
   }
   
-  @scala.inline
-  implicit class EnumValuesFinishTimeAscendingMutableBuilder[Self <: EnumValuesFinishTimeAscending] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFinishTimeAscending](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FinishTimeAscending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FinishTimeAscending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

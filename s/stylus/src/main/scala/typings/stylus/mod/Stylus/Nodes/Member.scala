@@ -15,8 +15,7 @@ trait Member
 }
 object Member {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -37,13 +36,10 @@ object Member {
     __obj.asInstanceOf[Member]
   }
   
-  @scala.inline
-  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
+  extension [Self <: Member](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Node): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Node): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

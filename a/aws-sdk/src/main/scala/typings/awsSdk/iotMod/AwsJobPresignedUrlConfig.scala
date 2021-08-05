@@ -13,19 +13,15 @@ trait AwsJobPresignedUrlConfig extends StObject {
 }
 object AwsJobPresignedUrlConfig {
   
-  @scala.inline
-  def apply(): AwsJobPresignedUrlConfig = {
+  inline def apply(): AwsJobPresignedUrlConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsJobPresignedUrlConfig]
   }
   
-  @scala.inline
-  implicit class AwsJobPresignedUrlConfigMutableBuilder[Self <: AwsJobPresignedUrlConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AwsJobPresignedUrlConfig](x: Self) {
     
-    @scala.inline
-    def setExpiresInSec(value: ExpiresInSeconds): Self = StObject.set(x, "expiresInSec", value.asInstanceOf[js.Any])
+    inline def setExpiresInSec(value: ExpiresInSeconds): Self = StObject.set(x, "expiresInSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresInSecUndefined: Self = StObject.set(x, "expiresInSec", js.undefined)
+    inline def setExpiresInSecUndefined: Self = StObject.set(x, "expiresInSec", js.undefined)
   }
 }

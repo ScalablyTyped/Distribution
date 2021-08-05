@@ -35,8 +35,7 @@ trait XContentProvider
 }
 object XContentProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     compareContentIds: (XContentIdentifier, XContentIdentifier) => Double,
     queryContent: XContentIdentifier => XContent,
@@ -47,13 +46,10 @@ object XContentProvider {
     __obj.asInstanceOf[XContentProvider]
   }
   
-  @scala.inline
-  implicit class XContentProviderMutableBuilder[Self <: XContentProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XContentProvider](x: Self) {
     
-    @scala.inline
-    def setCompareContentIds(value: (XContentIdentifier, XContentIdentifier) => Double): Self = StObject.set(x, "compareContentIds", js.Any.fromFunction2(value))
+    inline def setCompareContentIds(value: (XContentIdentifier, XContentIdentifier) => Double): Self = StObject.set(x, "compareContentIds", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryContent(value: XContentIdentifier => XContent): Self = StObject.set(x, "queryContent", js.Any.fromFunction1(value))
+    inline def setQueryContent(value: XContentIdentifier => XContent): Self = StObject.set(x, "queryContent", js.Any.fromFunction1(value))
   }
 }

@@ -44,43 +44,31 @@ trait SchemaSecurityPolicyRuleRateLimitOptions extends StObject {
 }
 object SchemaSecurityPolicyRuleRateLimitOptions {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyRuleRateLimitOptions = {
+  inline def apply(): SchemaSecurityPolicyRuleRateLimitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyRuleRateLimitOptions]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyRuleRateLimitOptionsMutableBuilder[Self <: SchemaSecurityPolicyRuleRateLimitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyRuleRateLimitOptions](x: Self) {
     
-    @scala.inline
-    def setBlockDuration(value: Double): Self = StObject.set(x, "blockDuration", value.asInstanceOf[js.Any])
+    inline def setBlockDuration(value: Double): Self = StObject.set(x, "blockDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationUndefined: Self = StObject.set(x, "blockDuration", js.undefined)
+    inline def setBlockDurationUndefined: Self = StObject.set(x, "blockDuration", js.undefined)
     
-    @scala.inline
-    def setConformAction(value: String): Self = StObject.set(x, "conformAction", value.asInstanceOf[js.Any])
+    inline def setConformAction(value: String): Self = StObject.set(x, "conformAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformActionUndefined: Self = StObject.set(x, "conformAction", js.undefined)
+    inline def setConformActionUndefined: Self = StObject.set(x, "conformAction", js.undefined)
     
-    @scala.inline
-    def setEnforceOnKey(value: String): Self = StObject.set(x, "enforceOnKey", value.asInstanceOf[js.Any])
+    inline def setEnforceOnKey(value: String): Self = StObject.set(x, "enforceOnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceOnKeyUndefined: Self = StObject.set(x, "enforceOnKey", js.undefined)
+    inline def setEnforceOnKeyUndefined: Self = StObject.set(x, "enforceOnKey", js.undefined)
     
-    @scala.inline
-    def setExceedAction(value: String): Self = StObject.set(x, "exceedAction", value.asInstanceOf[js.Any])
+    inline def setExceedAction(value: String): Self = StObject.set(x, "exceedAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceedActionUndefined: Self = StObject.set(x, "exceedAction", js.undefined)
+    inline def setExceedActionUndefined: Self = StObject.set(x, "exceedAction", js.undefined)
     
-    @scala.inline
-    def setThresholdRps(value: Double): Self = StObject.set(x, "thresholdRps", value.asInstanceOf[js.Any])
+    inline def setThresholdRps(value: Double): Self = StObject.set(x, "thresholdRps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdRpsUndefined: Self = StObject.set(x, "thresholdRps", js.undefined)
+    inline def setThresholdRpsUndefined: Self = StObject.set(x, "thresholdRps", js.undefined)
   }
 }

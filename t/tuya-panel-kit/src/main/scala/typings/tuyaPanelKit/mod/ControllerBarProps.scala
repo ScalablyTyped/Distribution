@@ -35,64 +35,45 @@ trait ControllerBarProps
 }
 object ControllerBarProps {
   
-  @scala.inline
-  def apply(button: js.Array[ButtonProps]): ControllerBarProps = {
+  inline def apply(button: js.Array[ButtonProps]): ControllerBarProps = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControllerBarProps]
   }
   
-  @scala.inline
-  implicit class ControllerBarPropsMutableBuilder[Self <: ControllerBarProps] (val x: Self) extends AnyVal {
+  extension [Self <: ControllerBarProps](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBackgroundType(value: alpha | pure): Self = StObject.set(x, "backgroundType", value.asInstanceOf[js.Any])
+    inline def setBackgroundType(value: alpha | pure): Self = StObject.set(x, "backgroundType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundTypeUndefined: Self = StObject.set(x, "backgroundType", js.undefined)
+    inline def setBackgroundTypeUndefined: Self = StObject.set(x, "backgroundType", js.undefined)
     
-    @scala.inline
-    def setButton(value: js.Array[ButtonProps]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: js.Array[ButtonProps]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonVarargs(value: ButtonProps*): Self = StObject.set(x, "button", js.Array(value :_*))
+    inline def setButtonVarargs(value: ButtonProps*): Self = StObject.set(x, "button", js.Array(value :_*))
     
-    @scala.inline
-    def setHasBottomBorder(value: Boolean): Self = StObject.set(x, "hasBottomBorder", value.asInstanceOf[js.Any])
+    inline def setHasBottomBorder(value: Boolean): Self = StObject.set(x, "hasBottomBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBottomBorderUndefined: Self = StObject.set(x, "hasBottomBorder", js.undefined)
+    inline def setHasBottomBorderUndefined: Self = StObject.set(x, "hasBottomBorder", js.undefined)
     
-    @scala.inline
-    def setSize(value: large | normal | small | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: large | normal | small | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+    inline def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+    inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     
-    @scala.inline
-    def setType(value: primary | normal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: primary | normal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+    inline def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
+    inline def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
     
-    @scala.inline
-    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
+    inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

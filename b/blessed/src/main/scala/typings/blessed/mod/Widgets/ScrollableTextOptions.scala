@@ -26,37 +26,27 @@ trait ScrollableTextOptions
 }
 object ScrollableTextOptions {
   
-  @scala.inline
-  def apply(): ScrollableTextOptions = {
+  inline def apply(): ScrollableTextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollableTextOptions]
   }
   
-  @scala.inline
-  implicit class ScrollableTextOptionsMutableBuilder[Self <: ScrollableTextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollableTextOptions](x: Self) {
     
-    @scala.inline
-    def setKeys(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setMouse(value: Boolean | js.Function0[Unit]): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Boolean | js.Function0[Unit]): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseFunction0(value: () => Unit): Self = StObject.set(x, "mouse", js.Any.fromFunction0(value))
+    inline def setMouseFunction0(value: () => Unit): Self = StObject.set(x, "mouse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
+    inline def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
-    @scala.inline
-    def setVi(value: Boolean): Self = StObject.set(x, "vi", value.asInstanceOf[js.Any])
+    inline def setVi(value: Boolean): Self = StObject.set(x, "vi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViUndefined: Self = StObject.set(x, "vi", js.undefined)
+    inline def setViUndefined: Self = StObject.set(x, "vi", js.undefined)
   }
 }

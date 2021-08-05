@@ -9,8 +9,7 @@ trait EdgeGestureEventArgs
      with IEdgeGestureEventArgs
 object EdgeGestureEventArgs {
   
-  @scala.inline
-  def apply(kind: EdgeGestureKind): EdgeGestureEventArgs = {
+  inline def apply(kind: EdgeGestureKind): EdgeGestureEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeGestureEventArgs]
   }

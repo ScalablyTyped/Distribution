@@ -41,26 +41,19 @@ object libUtilsMod {
   @js.native
   val ST: Boolean = js.native
   
-  @scala.inline
-  def execOnce[T /* <: js.Function1[/* repeated */ js.Any, ReturnType[T]] */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("execOnce")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def execOnce[T /* <: js.Function1[/* repeated */ js.Any, ReturnType[T]] */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("execOnce")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def formatWithValidation(url: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWithValidation")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatWithValidation(url: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWithValidation")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getDisplayName[P](Component: ComponentType[P]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDisplayName[P](Component: ComponentType[P]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getLocationOrigin(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationOrigin")().asInstanceOf[String]
+  inline def getLocationOrigin(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationOrigin")().asInstanceOf[String]
   
-  @scala.inline
-  def getURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")().asInstanceOf[String]
+  inline def getURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")().asInstanceOf[String]
   
-  @scala.inline
-  def isResSent(res: ServerResponse): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResSent")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isResSent(res: ServerResponse): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResSent")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def loadGetInitialProps[C /* <: BaseContext */, IP, P](App: NextComponentType[C, IP, P], ctx: C): js.Promise[IP] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGetInitialProps")(App.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IP]]
+  inline def loadGetInitialProps[C /* <: BaseContext */, IP, P](App: NextComponentType[C, IP, P], ctx: C): js.Promise[IP] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGetInitialProps")(App.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IP]]
   
   @JSImport("next/dist/next-server/lib/utils", "urlObjectKeys")
   @js.native
@@ -78,8 +71,7 @@ object libUtilsMod {
   }
   object AppContextType {
     
-    @scala.inline
-    def apply[R /* <: NextRouter */](
+    inline def apply[R /* <: NextRouter */](
       AppTree: AppTreeType,
       Component: NextComponentType[NextPageContext, js.Object, js.Object],
       ctx: NextPageContext,
@@ -89,20 +81,15 @@ object libUtilsMod {
       __obj.asInstanceOf[AppContextType[R]]
     }
     
-    @scala.inline
-    implicit class AppContextTypeMutableBuilder[Self <: AppContextType[?], R /* <: NextRouter */] (val x: Self & AppContextType[R]) extends AnyVal {
+    extension [Self <: AppContextType[?], R /* <: NextRouter */](x: Self & AppContextType[R]) {
       
-      @scala.inline
-      def setAppTree(value: AppTreeType): Self = StObject.set(x, "AppTree", value.asInstanceOf[js.Any])
+      inline def setAppTree(value: AppTreeType): Self = StObject.set(x, "AppTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponent(value: NextComponentType[NextPageContext, js.Object, js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: NextComponentType[NextPageContext, js.Object, js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtx(value: NextPageContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: NextPageContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: R): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: R): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,17 +99,14 @@ object libUtilsMod {
   }
   object AppInitialProps {
     
-    @scala.inline
-    def apply(pageProps: js.Any): AppInitialProps = {
+    inline def apply(pageProps: js.Any): AppInitialProps = {
       val __obj = js.Dynamic.literal(pageProps = pageProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInitialProps]
     }
     
-    @scala.inline
-    implicit class AppInitialPropsMutableBuilder[Self <: AppInitialProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppInitialProps](x: Self) {
       
-      @scala.inline
-      def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
+      inline def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,32 +124,24 @@ object libUtilsMod {
   }
   object AppPropsType {
     
-    @scala.inline
-    def apply[R /* <: NextRouter */, P](Component: NextComponentType[NextPageContext, js.Any, P], pageProps: js.Any, router: R): AppPropsType[R, P] = {
+    inline def apply[R /* <: NextRouter */, P](Component: NextComponentType[NextPageContext, js.Any, P], pageProps: js.Any, router: R): AppPropsType[R, P] = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], pageProps = pageProps.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppPropsType[R, P]]
     }
     
-    @scala.inline
-    implicit class AppPropsTypeMutableBuilder[Self <: AppPropsType[?, ?], R /* <: NextRouter */, P] (val x: Self & (AppPropsType[R, P])) extends AnyVal {
+    extension [Self <: AppPropsType[?, ?], R /* <: NextRouter */, P](x: Self & (AppPropsType[R, P])) {
       
-      @scala.inline
-      def setComponent(value: NextComponentType[NextPageContext, js.Any, P]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: NextComponentType[NextPageContext, js.Any, P]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: R): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: R): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__N_SSG(value: Boolean): Self = StObject.set(x, "__N_SSG", value.asInstanceOf[js.Any])
+      inline def set__N_SSG(value: Boolean): Self = StObject.set(x, "__N_SSG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__N_SSGUndefined: Self = StObject.set(x, "__N_SSG", js.undefined)
+      inline def set__N_SSGUndefined: Self = StObject.set(x, "__N_SSG", js.undefined)
       
-      @scala.inline
-      def set__N_SSP(value: Boolean): Self = StObject.set(x, "__N_SSP", value.asInstanceOf[js.Any])
+      inline def set__N_SSP(value: Boolean): Self = StObject.set(x, "__N_SSP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__N_SSPUndefined: Self = StObject.set(x, "__N_SSP", js.undefined)
+      inline def set__N_SSPUndefined: Self = StObject.set(x, "__N_SSP", js.undefined)
     }
   }
   
@@ -181,20 +157,16 @@ object libUtilsMod {
   }
   object BaseContext {
     
-    @scala.inline
-    def apply(): BaseContext = {
+    inline def apply(): BaseContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseContext]
     }
     
-    @scala.inline
-    implicit class BaseContextMutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
+    extension [Self <: BaseContext](x: Self) {
       
-      @scala.inline
-      def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+      inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
     }
   }
   
@@ -208,8 +180,7 @@ object libUtilsMod {
   }
   object DocumentContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AppTree: AppTreeType,
       pathname: String,
       query: ParsedUrlQuery,
@@ -219,11 +190,9 @@ object libUtilsMod {
       __obj.asInstanceOf[DocumentContext]
     }
     
-    @scala.inline
-    implicit class DocumentContextMutableBuilder[Self <: DocumentContext] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentContext](x: Self) {
       
-      @scala.inline
-      def setRenderPage(
+      inline def setRenderPage(
         value: /* options */ js.UndefOr[ComponentsEnhancer] => RenderPageResult | js.Promise[RenderPageResult]
       ): Self = StObject.set(x, "renderPage", js.Any.fromFunction1(value))
     }
@@ -237,23 +206,18 @@ object libUtilsMod {
   }
   object DocumentInitialProps {
     
-    @scala.inline
-    def apply(html: String): DocumentInitialProps = {
+    inline def apply(html: String): DocumentInitialProps = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentInitialProps]
     }
     
-    @scala.inline
-    implicit class DocumentInitialPropsMutableBuilder[Self <: DocumentInitialProps] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentInitialProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: js.Array[ReactElement] | ReactFragment): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[ReactElement] | ReactFragment): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setStylesVarargs(value: ReactElement*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: ReactElement*): Self = StObject.set(x, "styles", js.Array(value :_*))
     }
   }
   
@@ -293,8 +257,7 @@ object libUtilsMod {
   }
   object DocumentProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __NEXT_DATA__ : NEXT_DATA,
       ampPath: String,
       buildManifest: BuildManifest,
@@ -313,68 +276,47 @@ object libUtilsMod {
       __obj.asInstanceOf[DocumentProps]
     }
     
-    @scala.inline
-    implicit class DocumentPropsMutableBuilder[Self <: DocumentProps] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentProps](x: Self) {
       
-      @scala.inline
-      def setAmpPath(value: String): Self = StObject.set(x, "ampPath", value.asInstanceOf[js.Any])
+      inline def setAmpPath(value: String): Self = StObject.set(x, "ampPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
+      inline def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
+      inline def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
       
-      @scala.inline
-      def setBuildManifest(value: BuildManifest): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
+      inline def setBuildManifest(value: BuildManifest): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
+      inline def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerousAsPath(value: String): Self = StObject.set(x, "dangerousAsPath", value.asInstanceOf[js.Any])
+      inline def setDangerousAsPath(value: String): Self = StObject.set(x, "dangerousAsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevOnlyCacheBusterQueryString(value: String): Self = StObject.set(x, "devOnlyCacheBusterQueryString", value.asInstanceOf[js.Any])
+      inline def setDevOnlyCacheBusterQueryString(value: String): Self = StObject.set(x, "devOnlyCacheBusterQueryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocComponentsRendered(value: Head): Self = StObject.set(x, "docComponentsRendered", value.asInstanceOf[js.Any])
+      inline def setDocComponentsRendered(value: Head): Self = StObject.set(x, "docComponentsRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicImports(value: js.Array[ManifestItem]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
+      inline def setDynamicImports(value: js.Array[ManifestItem]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicImportsVarargs(value: ManifestItem*): Self = StObject.set(x, "dynamicImports", js.Array(value :_*))
+      inline def setDynamicImportsVarargs(value: ManifestItem*): Self = StObject.set(x, "dynamicImports", js.Array(value :_*))
       
-      @scala.inline
-      def setHeadTags(value: js.Array[js.Any]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
+      inline def setHeadTags(value: js.Array[js.Any]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadTagsVarargs(value: js.Any*): Self = StObject.set(x, "headTags", js.Array(value :_*))
+      inline def setHeadTagsVarargs(value: js.Any*): Self = StObject.set(x, "headTags", js.Array(value :_*))
       
-      @scala.inline
-      def setHybridAmp(value: Boolean): Self = StObject.set(x, "hybridAmp", value.asInstanceOf[js.Any])
+      inline def setHybridAmp(value: Boolean): Self = StObject.set(x, "hybridAmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
+      inline def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDevelopment(value: Boolean): Self = StObject.set(x, "isDevelopment", value.asInstanceOf[js.Any])
+      inline def setIsDevelopment(value: Boolean): Self = StObject.set(x, "isDevelopment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setUnstable_runtimeJS(value: `false`): Self = StObject.set(x, "unstable_runtimeJS", value.asInstanceOf[js.Any])
+      inline def setUnstable_runtimeJS(value: `false`): Self = StObject.set(x, "unstable_runtimeJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstable_runtimeJSUndefined: Self = StObject.set(x, "unstable_runtimeJS", js.undefined)
+      inline def setUnstable_runtimeJSUndefined: Self = StObject.set(x, "unstable_runtimeJS", js.undefined)
       
-      @scala.inline
-      def set__NEXT_DATA__(value: NEXT_DATA): Self = StObject.set(x, "__NEXT_DATA__", value.asInstanceOf[js.Any])
+      inline def set__NEXT_DATA__(value: NEXT_DATA): Self = StObject.set(x, "__NEXT_DATA__", value.asInstanceOf[js.Any])
     }
   }
   
@@ -424,122 +366,84 @@ object libUtilsMod {
   }
   object NEXT_DATA {
     
-    @scala.inline
-    def apply(buildId: String, page: String, props: Record[String, js.Any], query: ParsedUrlQuery): NEXT_DATA = {
+    inline def apply(buildId: String, page: String, props: Record[String, js.Any], query: ParsedUrlQuery): NEXT_DATA = {
       val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[NEXT_DATA]
     }
     
-    @scala.inline
-    implicit class NEXT_DATAMutableBuilder[Self <: NEXT_DATA] (val x: Self) extends AnyVal {
+    extension [Self <: NEXT_DATA](x: Self) {
       
-      @scala.inline
-      def setAppGip(value: Boolean): Self = StObject.set(x, "appGip", value.asInstanceOf[js.Any])
+      inline def setAppGip(value: Boolean): Self = StObject.set(x, "appGip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppGipUndefined: Self = StObject.set(x, "appGip", js.undefined)
+      inline def setAppGipUndefined: Self = StObject.set(x, "appGip", js.undefined)
       
-      @scala.inline
-      def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
+      inline def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
+      inline def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
       
-      @scala.inline
-      def setAutoExport(value: Boolean): Self = StObject.set(x, "autoExport", value.asInstanceOf[js.Any])
+      inline def setAutoExport(value: Boolean): Self = StObject.set(x, "autoExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoExportUndefined: Self = StObject.set(x, "autoExport", js.undefined)
+      inline def setAutoExportUndefined: Self = StObject.set(x, "autoExport", js.undefined)
       
-      @scala.inline
-      def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+      inline def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomServer(value: Boolean): Self = StObject.set(x, "customServer", value.asInstanceOf[js.Any])
+      inline def setCustomServer(value: Boolean): Self = StObject.set(x, "customServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomServerUndefined: Self = StObject.set(x, "customServer", js.undefined)
+      inline def setCustomServerUndefined: Self = StObject.set(x, "customServer", js.undefined)
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+      inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
       
-      @scala.inline
-      def setDynamicIds(value: js.Array[String]): Self = StObject.set(x, "dynamicIds", value.asInstanceOf[js.Any])
+      inline def setDynamicIds(value: js.Array[String]): Self = StObject.set(x, "dynamicIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicIdsUndefined: Self = StObject.set(x, "dynamicIds", js.undefined)
+      inline def setDynamicIdsUndefined: Self = StObject.set(x, "dynamicIds", js.undefined)
       
-      @scala.inline
-      def setDynamicIdsVarargs(value: String*): Self = StObject.set(x, "dynamicIds", js.Array(value :_*))
+      inline def setDynamicIdsVarargs(value: String*): Self = StObject.set(x, "dynamicIds", js.Array(value :_*))
       
-      @scala.inline
-      def setErr(value: ErrorstatusCodenumberunde): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: ErrorstatusCodenumberunde): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setGip(value: Boolean): Self = StObject.set(x, "gip", value.asInstanceOf[js.Any])
+      inline def setGip(value: Boolean): Self = StObject.set(x, "gip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGipUndefined: Self = StObject.set(x, "gip", js.undefined)
+      inline def setGipUndefined: Self = StObject.set(x, "gip", js.undefined)
       
-      @scala.inline
-      def setGsp(value: Boolean): Self = StObject.set(x, "gsp", value.asInstanceOf[js.Any])
+      inline def setGsp(value: Boolean): Self = StObject.set(x, "gsp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGspUndefined: Self = StObject.set(x, "gsp", js.undefined)
+      inline def setGspUndefined: Self = StObject.set(x, "gsp", js.undefined)
       
-      @scala.inline
-      def setGssp(value: Boolean): Self = StObject.set(x, "gssp", value.asInstanceOf[js.Any])
+      inline def setGssp(value: Boolean): Self = StObject.set(x, "gssp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGsspUndefined: Self = StObject.set(x, "gssp", js.undefined)
+      inline def setGsspUndefined: Self = StObject.set(x, "gssp", js.undefined)
       
-      @scala.inline
-      def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
+      inline def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFallbackUndefined: Self = StObject.set(x, "isFallback", js.undefined)
+      inline def setIsFallbackUndefined: Self = StObject.set(x, "isFallback", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setNextExport(value: Boolean): Self = StObject.set(x, "nextExport", value.asInstanceOf[js.Any])
+      inline def setNextExport(value: Boolean): Self = StObject.set(x, "nextExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextExportUndefined: Self = StObject.set(x, "nextExport", js.undefined)
+      inline def setNextExportUndefined: Self = StObject.set(x, "nextExport", js.undefined)
       
-      @scala.inline
-      def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
+      inline def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
+      inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
     }
   }
   
@@ -640,50 +544,36 @@ object libUtilsMod {
   }
   object NextPageContext {
     
-    @scala.inline
-    def apply(AppTree: AppTreeType, pathname: String, query: ParsedUrlQuery): NextPageContext = {
+    inline def apply(AppTree: AppTreeType, pathname: String, query: ParsedUrlQuery): NextPageContext = {
       val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextPageContext]
     }
     
-    @scala.inline
-    implicit class NextPageContextMutableBuilder[Self <: NextPageContext] (val x: Self) extends AnyVal {
+    extension [Self <: NextPageContext](x: Self) {
       
-      @scala.inline
-      def setAppTree(value: AppTreeType): Self = StObject.set(x, "AppTree", value.asInstanceOf[js.Any])
+      inline def setAppTree(value: AppTreeType): Self = StObject.set(x, "AppTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
+      inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsPathUndefined: Self = StObject.set(x, "asPath", js.undefined)
+      inline def setAsPathUndefined: Self = StObject.set(x, "asPath", js.undefined)
       
-      @scala.inline
-      def setErr(value: ErrorstatusCodenumberunde): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: ErrorstatusCodenumberunde): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrNull: Self = StObject.set(x, "err", null)
+      inline def setErrNull: Self = StObject.set(x, "err", null)
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+      inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
       
-      @scala.inline
-      def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+      inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
     }
   }
   
@@ -701,29 +591,22 @@ object libUtilsMod {
   }
   object NextWebVitalsMetric {
     
-    @scala.inline
-    def apply(id: String, label: String, name: String, startTime: Double, value: Double): NextWebVitalsMetric = {
+    inline def apply(id: String, label: String, name: String, startTime: Double, value: Double): NextWebVitalsMetric = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextWebVitalsMetric]
     }
     
-    @scala.inline
-    implicit class NextWebVitalsMetricMutableBuilder[Self <: NextWebVitalsMetric] (val x: Self) extends AnyVal {
+    extension [Self <: NextWebVitalsMetric](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -740,26 +623,20 @@ object libUtilsMod {
   }
   object RenderPageResult {
     
-    @scala.inline
-    def apply(html: String): RenderPageResult = {
+    inline def apply(html: String): RenderPageResult = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderPageResult]
     }
     
-    @scala.inline
-    implicit class RenderPageResultMutableBuilder[Self <: RenderPageResult] (val x: Self) extends AnyVal {
+    extension [Self <: RenderPageResult](x: Self) {
       
-      @scala.inline
-      def setHead(value: js.Array[Element | Null]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[Element | Null]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setHeadVarargs(value: (Element | Null)*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: (Element | Null)*): Self = StObject.set(x, "head", js.Array(value :_*))
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     }
   }
   

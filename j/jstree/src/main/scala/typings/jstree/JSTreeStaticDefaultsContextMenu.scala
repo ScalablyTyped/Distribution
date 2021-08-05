@@ -52,22 +52,17 @@ trait JSTreeStaticDefaultsContextMenu extends StObject {
 }
 object JSTreeStaticDefaultsContextMenu {
   
-  @scala.inline
-  def apply(items: js.Any, select_node: Boolean, show_at_node: Boolean): JSTreeStaticDefaultsContextMenu = {
+  inline def apply(items: js.Any, select_node: Boolean, show_at_node: Boolean): JSTreeStaticDefaultsContextMenu = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], select_node = select_node.asInstanceOf[js.Any], show_at_node = show_at_node.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsContextMenu]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsContextMenuMutableBuilder[Self <: JSTreeStaticDefaultsContextMenu] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsContextMenu](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect_node(value: Boolean): Self = StObject.set(x, "select_node", value.asInstanceOf[js.Any])
+    inline def setSelect_node(value: Boolean): Self = StObject.set(x, "select_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_at_node(value: Boolean): Self = StObject.set(x, "show_at_node", value.asInstanceOf[js.Any])
+    inline def setShow_at_node(value: Boolean): Self = StObject.set(x, "show_at_node", value.asInstanceOf[js.Any])
   }
 }

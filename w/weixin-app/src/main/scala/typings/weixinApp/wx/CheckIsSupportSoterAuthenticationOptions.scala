@@ -14,19 +14,15 @@ trait CheckIsSupportSoterAuthenticationOptions
 }
 object CheckIsSupportSoterAuthenticationOptions {
   
-  @scala.inline
-  def apply(): CheckIsSupportSoterAuthenticationOptions = {
+  inline def apply(): CheckIsSupportSoterAuthenticationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationOptions]
   }
   
-  @scala.inline
-  implicit class CheckIsSupportSoterAuthenticationOptionsMutableBuilder[Self <: CheckIsSupportSoterAuthenticationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsSupportSoterAuthenticationOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ SupportMode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ SupportMode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

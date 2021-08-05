@@ -37,8 +37,7 @@ trait ASPxClientButtonEditBase
 }
 object ASPxClientButtonEditBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     Focus: () => Unit,
@@ -93,19 +92,14 @@ object ASPxClientButtonEditBase {
     __obj.asInstanceOf[ASPxClientButtonEditBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientButtonEditBaseMutableBuilder[Self <: ASPxClientButtonEditBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientButtonEditBase](x: Self) {
     
-    @scala.inline
-    def setButtonClick(value: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]]): Self = StObject.set(x, "ButtonClick", value.asInstanceOf[js.Any])
+    inline def setButtonClick(value: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]]): Self = StObject.set(x, "ButtonClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetButton(value: Double => js.Any): Self = StObject.set(x, "GetButton", js.Any.fromFunction1(value))
+    inline def setGetButton(value: Double => js.Any): Self = StObject.set(x, "GetButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetButtonVisible(value: Double => Boolean): Self = StObject.set(x, "GetButtonVisible", js.Any.fromFunction1(value))
+    inline def setGetButtonVisible(value: Double => Boolean): Self = StObject.set(x, "GetButtonVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetButtonVisible(value: (Double, Boolean) => Unit): Self = StObject.set(x, "SetButtonVisible", js.Any.fromFunction2(value))
+    inline def setSetButtonVisible(value: (Double, Boolean) => Unit): Self = StObject.set(x, "SetButtonVisible", js.Any.fromFunction2(value))
   }
 }

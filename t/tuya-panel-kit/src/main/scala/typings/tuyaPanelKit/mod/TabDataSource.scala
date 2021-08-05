@@ -22,34 +22,25 @@ trait TabDataSource
 }
 object TabDataSource {
   
-  @scala.inline
-  def apply(value: String): TabDataSource = {
+  inline def apply(value: String): TabDataSource = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabDataSource]
   }
   
-  @scala.inline
-  implicit class TabDataSourceMutableBuilder[Self <: TabDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: TabDataSource](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRenderTab(value: (/* isActive */ Boolean, /* state */ js.Object, /* props */ js.Object) => ReactNode): Self = StObject.set(x, "renderTab", js.Any.fromFunction3(value))
+    inline def setRenderTab(value: (/* isActive */ Boolean, /* state */ js.Object, /* props */ js.Object) => ReactNode): Self = StObject.set(x, "renderTab", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
+    inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

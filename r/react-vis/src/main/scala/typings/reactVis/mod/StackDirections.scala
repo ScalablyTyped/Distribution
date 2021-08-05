@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackDirections extends StObject
 object StackDirections {
   
-  @scala.inline
-  def angle: typings.reactVis.reactVisStrings.angle = "angle".asInstanceOf[typings.reactVis.reactVisStrings.angle]
+  inline def angle: typings.reactVis.reactVisStrings.angle = "angle".asInstanceOf[typings.reactVis.reactVisStrings.angle]
   
-  @scala.inline
-  def color: typings.reactVis.reactVisStrings.color = "color".asInstanceOf[typings.reactVis.reactVisStrings.color]
+  inline def color: typings.reactVis.reactVisStrings.color = "color".asInstanceOf[typings.reactVis.reactVisStrings.color]
   
-  @scala.inline
-  def fill: typings.reactVis.reactVisStrings.fill = "fill".asInstanceOf[typings.reactVis.reactVisStrings.fill]
+  inline def fill: typings.reactVis.reactVisStrings.fill = "fill".asInstanceOf[typings.reactVis.reactVisStrings.fill]
   
-  @scala.inline
-  def opacity: typings.reactVis.reactVisStrings.opacity = "opacity".asInstanceOf[typings.reactVis.reactVisStrings.opacity]
+  inline def opacity: typings.reactVis.reactVisStrings.opacity = "opacity".asInstanceOf[typings.reactVis.reactVisStrings.opacity]
   
-  @scala.inline
-  def radius: typings.reactVis.reactVisStrings.radius = "radius".asInstanceOf[typings.reactVis.reactVisStrings.radius]
+  inline def radius: typings.reactVis.reactVisStrings.radius = "radius".asInstanceOf[typings.reactVis.reactVisStrings.radius]
   
-  @scala.inline
-  def size: typings.reactVis.reactVisStrings.size = "size".asInstanceOf[typings.reactVis.reactVisStrings.size]
+  inline def size: typings.reactVis.reactVisStrings.size = "size".asInstanceOf[typings.reactVis.reactVisStrings.size]
   
-  @scala.inline
-  def stroke: typings.reactVis.reactVisStrings.stroke = "stroke".asInstanceOf[typings.reactVis.reactVisStrings.stroke]
+  inline def stroke: typings.reactVis.reactVisStrings.stroke = "stroke".asInstanceOf[typings.reactVis.reactVisStrings.stroke]
   
-  @scala.inline
-  def x: typings.reactVis.reactVisStrings.x = "x".asInstanceOf[typings.reactVis.reactVisStrings.x]
+  inline def x: typings.reactVis.reactVisStrings.x = "x".asInstanceOf[typings.reactVis.reactVisStrings.x]
   
-  @scala.inline
-  def y: typings.reactVis.reactVisStrings.y = "y".asInstanceOf[typings.reactVis.reactVisStrings.y]
+  inline def y: typings.reactVis.reactVisStrings.y = "y".asInstanceOf[typings.reactVis.reactVisStrings.y]
 }

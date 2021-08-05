@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parameter extends StObject {
   
-  @JSName("DAO.Parameter_typekey")
+  /* private */ @JSName("DAO.Parameter_typekey")
   var DAODotParameter_typekey: Parameter
   
   var Direction: Double
@@ -24,8 +24,7 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DAODotParameter_typekey: Parameter,
     Direction: Double,
     Name: String,
@@ -38,25 +37,18 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setDAODotParameter_typekey(value: Parameter): Self = StObject.set(x, "DAO.Parameter_typekey", value.asInstanceOf[js.Any])
+    inline def setDAODotParameter_typekey(value: Parameter): Self = StObject.set(x, "DAO.Parameter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

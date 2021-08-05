@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldSelectionModeType extends StObject
 object FieldSelectionModeType {
   
-  @scala.inline
-  def AND: typings.qlikEngineapi.qlikEngineapiStrings.AND = "AND".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.AND]
+  inline def AND: typings.qlikEngineapi.qlikEngineapiStrings.AND = "AND".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.AND]
   
-  @scala.inline
-  def NORMAL: typings.qlikEngineapi.qlikEngineapiStrings.NORMAL = "NORMAL".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NORMAL]
+  inline def NORMAL: typings.qlikEngineapi.qlikEngineapiStrings.NORMAL = "NORMAL".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NORMAL]
   
-  @scala.inline
-  def NOT: typings.qlikEngineapi.qlikEngineapiStrings.NOT = "NOT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NOT]
+  inline def NOT: typings.qlikEngineapi.qlikEngineapiStrings.NOT = "NOT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NOT]
 }

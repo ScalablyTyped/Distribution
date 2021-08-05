@@ -46,49 +46,35 @@ trait SchemaCommentThreadSnippet extends StObject {
 }
 object SchemaCommentThreadSnippet {
   
-  @scala.inline
-  def apply(): SchemaCommentThreadSnippet = {
+  inline def apply(): SchemaCommentThreadSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommentThreadSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaCommentThreadSnippetMutableBuilder[Self <: SchemaCommentThreadSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommentThreadSnippet](x: Self) {
     
-    @scala.inline
-    def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
+    inline def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanReplyUndefined: Self = StObject.set(x, "canReply", js.undefined)
+    inline def setCanReplyUndefined: Self = StObject.set(x, "canReply", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+    inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
+    inline def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
     
-    @scala.inline
-    def setTopLevelComment(value: SchemaComment): Self = StObject.set(x, "topLevelComment", value.asInstanceOf[js.Any])
+    inline def setTopLevelComment(value: SchemaComment): Self = StObject.set(x, "topLevelComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLevelCommentUndefined: Self = StObject.set(x, "topLevelComment", js.undefined)
+    inline def setTopLevelCommentUndefined: Self = StObject.set(x, "topLevelComment", js.undefined)
     
-    @scala.inline
-    def setTotalReplyCount(value: Double): Self = StObject.set(x, "totalReplyCount", value.asInstanceOf[js.Any])
+    inline def setTotalReplyCount(value: Double): Self = StObject.set(x, "totalReplyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalReplyCountUndefined: Self = StObject.set(x, "totalReplyCount", js.undefined)
+    inline def setTotalReplyCountUndefined: Self = StObject.set(x, "totalReplyCount", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait RemoveRequestHeader extends StObject {
 }
 object RemoveRequestHeader {
   
-  @scala.inline
-  def apply(name: String): RemoveRequestHeader = {
+  inline def apply(name: String): RemoveRequestHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveRequestHeader]
   }
   
-  @scala.inline
-  implicit class RemoveRequestHeaderMutableBuilder[Self <: RemoveRequestHeader] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveRequestHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

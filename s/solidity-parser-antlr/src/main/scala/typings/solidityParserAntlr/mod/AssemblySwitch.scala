@@ -15,17 +15,14 @@ trait AssemblySwitch
 }
 object AssemblySwitch {
   
-  @scala.inline
-  def apply(): AssemblySwitch = {
+  inline def apply(): AssemblySwitch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblySwitch")
     __obj.asInstanceOf[AssemblySwitch]
   }
   
-  @scala.inline
-  implicit class AssemblySwitchMutableBuilder[Self <: AssemblySwitch] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblySwitch](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

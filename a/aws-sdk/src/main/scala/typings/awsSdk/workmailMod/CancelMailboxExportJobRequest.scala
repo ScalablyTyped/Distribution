@@ -23,22 +23,17 @@ trait CancelMailboxExportJobRequest extends StObject {
 }
 object CancelMailboxExportJobRequest {
   
-  @scala.inline
-  def apply(ClientToken: IdempotencyClientToken, JobId: MailboxExportJobId, OrganizationId: OrganizationId): CancelMailboxExportJobRequest = {
+  inline def apply(ClientToken: IdempotencyClientToken, JobId: MailboxExportJobId, OrganizationId: OrganizationId): CancelMailboxExportJobRequest = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelMailboxExportJobRequest]
   }
   
-  @scala.inline
-  implicit class CancelMailboxExportJobRequestMutableBuilder[Self <: CancelMailboxExportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelMailboxExportJobRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

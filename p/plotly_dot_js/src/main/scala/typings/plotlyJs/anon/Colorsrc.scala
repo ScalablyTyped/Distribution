@@ -20,8 +20,7 @@ trait Colorsrc extends StObject {
 }
 object Colorsrc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: typings.plotlyJs.mod.Color,
     colorsrc: js.Any,
     `type`: radial | horizontal | vertical | none,
@@ -32,22 +31,16 @@ object Colorsrc {
     __obj.asInstanceOf[Colorsrc]
   }
   
-  @scala.inline
-  implicit class ColorsrcMutableBuilder[Self <: Colorsrc] (val x: Self) extends AnyVal {
+  extension [Self <: Colorsrc](x: Self) {
     
-    @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setColorsrc(value: js.Any): Self = StObject.set(x, "colorsrc", value.asInstanceOf[js.Any])
+    inline def setColorsrc(value: js.Any): Self = StObject.set(x, "colorsrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: radial | horizontal | vertical | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: radial | horizontal | vertical | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesrc(value: js.Any): Self = StObject.set(x, "typesrc", value.asInstanceOf[js.Any])
+    inline def setTypesrc(value: js.Any): Self = StObject.set(x, "typesrc", value.asInstanceOf[js.Any])
   }
 }

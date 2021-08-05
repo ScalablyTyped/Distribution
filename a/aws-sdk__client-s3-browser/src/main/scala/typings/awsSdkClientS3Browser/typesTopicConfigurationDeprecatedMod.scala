@@ -48,25 +48,20 @@ object typesTopicConfigurationDeprecatedMod {
   }
   object TopicConfigurationDeprecated {
     
-    @scala.inline
-    def apply(): TopicConfigurationDeprecated = {
+    inline def apply(): TopicConfigurationDeprecated = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopicConfigurationDeprecated]
     }
     
-    @scala.inline
-    implicit class TopicConfigurationDeprecatedMutableBuilder[Self <: TopicConfigurationDeprecated] (val x: Self) extends AnyVal {
+    extension [Self <: TopicConfigurationDeprecated](x: Self) {
       
-      @scala.inline
-      def setEvent(
+      inline def setEvent(
         value: s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
       ): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: (js.Array[
               s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
             ]) | (Iterable[
@@ -74,25 +69,19 @@ object typesTopicConfigurationDeprecatedMod {
             ])
       ): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(
+      inline def setEventsVarargs(
         value: (s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String)*
       ): Self = StObject.set(x, "Events", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "Topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "Topic", js.undefined)
     }
   }
   
@@ -112,27 +101,22 @@ object typesTopicConfigurationDeprecatedMod {
   }
   object UnmarshalledTopicConfigurationDeprecated {
     
-    @scala.inline
-    def apply(): UnmarshalledTopicConfigurationDeprecated = {
+    inline def apply(): UnmarshalledTopicConfigurationDeprecated = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTopicConfigurationDeprecated]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTopicConfigurationDeprecatedMutableBuilder[Self <: UnmarshalledTopicConfigurationDeprecated] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTopicConfigurationDeprecated](x: Self) {
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: js.Array[
               s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
             ]
       ): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(
+      inline def setEventsVarargs(
         value: (s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String)*
       ): Self = StObject.set(x, "Events", js.Array(value :_*))
     }

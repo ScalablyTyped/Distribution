@@ -13,19 +13,15 @@ trait LogicModule extends StObject {
 }
 object LogicModule {
   
-  @scala.inline
-  def apply(logicModule: StylableModule, stylableModule: StylableModule): LogicModule = {
+  inline def apply(logicModule: StylableModule, stylableModule: StylableModule): LogicModule = {
     val __obj = js.Dynamic.literal(logicModule = logicModule.asInstanceOf[js.Any], stylableModule = stylableModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogicModule]
   }
   
-  @scala.inline
-  implicit class LogicModuleMutableBuilder[Self <: LogicModule] (val x: Self) extends AnyVal {
+  extension [Self <: LogicModule](x: Self) {
     
-    @scala.inline
-    def setLogicModule(value: StylableModule): Self = StObject.set(x, "logicModule", value.asInstanceOf[js.Any])
+    inline def setLogicModule(value: StylableModule): Self = StObject.set(x, "logicModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylableModule(value: StylableModule): Self = StObject.set(x, "stylableModule", value.asInstanceOf[js.Any])
+    inline def setStylableModule(value: StylableModule): Self = StObject.set(x, "stylableModule", value.asInstanceOf[js.Any])
   }
 }

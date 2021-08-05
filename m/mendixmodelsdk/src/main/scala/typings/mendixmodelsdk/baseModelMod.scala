@@ -2525,8 +2525,7 @@ object baseModelMod {
   }
   object ConcreteModelElements {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AppServices$AppServiceAction: AppServiceAction,
       AppServices$AppServiceActionParameter: AppServiceActionParameter,
       AppServices$Msd: Msd,
@@ -2786,1697 +2785,1133 @@ object baseModelMod {
       __obj.asInstanceOf[ConcreteModelElements]
     }
     
-    @scala.inline
-    implicit class ConcreteModelElementsMutableBuilder[Self <: ConcreteModelElements] (val x: Self) extends AnyVal {
+    extension [Self <: ConcreteModelElements](x: Self) {
       
-      @scala.inline
-      def setAppServices$AppServiceAction(value: AppServiceAction): Self = StObject.set(x, "AppServices$AppServiceAction", value.asInstanceOf[js.Any])
+      inline def setAppServices$AppServiceAction(value: AppServiceAction): Self = StObject.set(x, "AppServices$AppServiceAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$AppServiceActionParameter(value: AppServiceActionParameter): Self = StObject.set(x, "AppServices$AppServiceActionParameter", value.asInstanceOf[js.Any])
+      inline def setAppServices$AppServiceActionParameter(value: AppServiceActionParameter): Self = StObject.set(x, "AppServices$AppServiceActionParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$Msd(value: Msd): Self = StObject.set(x, "AppServices$Msd", value.asInstanceOf[js.Any])
+      inline def setAppServices$Msd(value: Msd): Self = StObject.set(x, "AppServices$Msd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdAssociation(value: MsdAssociation): Self = StObject.set(x, "AppServices$MsdAssociation", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdAssociation(value: MsdAssociation): Self = StObject.set(x, "AppServices$MsdAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdAttribute(value: MsdAttribute): Self = StObject.set(x, "AppServices$MsdAttribute", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdAttribute(value: MsdAttribute): Self = StObject.set(x, "AppServices$MsdAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdDomainModel(value: MsdDomainModel): Self = StObject.set(x, "AppServices$MsdDomainModel", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdDomainModel(value: MsdDomainModel): Self = StObject.set(x, "AppServices$MsdDomainModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdEntity(value: MsdEntity): Self = StObject.set(x, "AppServices$MsdEntity", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdEntity(value: MsdEntity): Self = StObject.set(x, "AppServices$MsdEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdEnumeration(value: MsdEnumeration): Self = StObject.set(x, "AppServices$MsdEnumeration", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdEnumeration(value: MsdEnumeration): Self = StObject.set(x, "AppServices$MsdEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdEnumerationContainer(value: MsdEnumerationContainer): Self = StObject.set(x, "AppServices$MsdEnumerationContainer", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdEnumerationContainer(value: MsdEnumerationContainer): Self = StObject.set(x, "AppServices$MsdEnumerationContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdEnumerationValue(value: MsdEnumerationValue): Self = StObject.set(x, "AppServices$MsdEnumerationValue", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdEnumerationValue(value: MsdEnumerationValue): Self = StObject.set(x, "AppServices$MsdEnumerationValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdMetadata(value: MsdMetadata): Self = StObject.set(x, "AppServices$MsdMetadata", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdMetadata(value: MsdMetadata): Self = StObject.set(x, "AppServices$MsdMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdMicroflow(value: MsdMicroflow): Self = StObject.set(x, "AppServices$MsdMicroflow", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdMicroflow(value: MsdMicroflow): Self = StObject.set(x, "AppServices$MsdMicroflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdMicroflowParameter(value: MsdMicroflowParameter): Self = StObject.set(x, "AppServices$MsdMicroflowParameter", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdMicroflowParameter(value: MsdMicroflowParameter): Self = StObject.set(x, "AppServices$MsdMicroflowParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdText(value: MsdText): Self = StObject.set(x, "AppServices$MsdText", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdText(value: MsdText): Self = StObject.set(x, "AppServices$MsdText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServices$MsdVersion(value: MsdVersion): Self = StObject.set(x, "AppServices$MsdVersion", value.asInstanceOf[js.Any])
+      inline def setAppServices$MsdVersion(value: MsdVersion): Self = StObject.set(x, "AppServices$MsdVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$BasicParameterType(value: BasicParameterType): Self = StObject.set(x, "CodeActions$BasicParameterType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$BasicParameterType(value: BasicParameterType): Self = StObject.set(x, "CodeActions$BasicParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$BooleanType(value: BooleanType): Self = StObject.set(x, "CodeActions$BooleanType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$BooleanType(value: BooleanType): Self = StObject.set(x, "CodeActions$BooleanType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$ConcreteEntityType(value: ConcreteEntityType): Self = StObject.set(x, "CodeActions$ConcreteEntityType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$ConcreteEntityType(value: ConcreteEntityType): Self = StObject.set(x, "CodeActions$ConcreteEntityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$DateTimeType(value: DateTimeType): Self = StObject.set(x, "CodeActions$DateTimeType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$DateTimeType(value: DateTimeType): Self = StObject.set(x, "CodeActions$DateTimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$DecimalType(value: DecimalType): Self = StObject.set(x, "CodeActions$DecimalType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$DecimalType(value: DecimalType): Self = StObject.set(x, "CodeActions$DecimalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$EntityTypeParameterType(value: EntityTypeParameterType): Self = StObject.set(x, "CodeActions$EntityTypeParameterType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$EntityTypeParameterType(value: EntityTypeParameterType): Self = StObject.set(x, "CodeActions$EntityTypeParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$EnumerationType(value: EnumerationType): Self = StObject.set(x, "CodeActions$EnumerationType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$EnumerationType(value: EnumerationType): Self = StObject.set(x, "CodeActions$EnumerationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$FloatType(value: FloatType): Self = StObject.set(x, "CodeActions$FloatType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$FloatType(value: FloatType): Self = StObject.set(x, "CodeActions$FloatType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$IntegerType(value: IntegerType): Self = StObject.set(x, "CodeActions$IntegerType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$IntegerType(value: IntegerType): Self = StObject.set(x, "CodeActions$IntegerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$ListType(value: ListType): Self = StObject.set(x, "CodeActions$ListType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$ListType(value: ListType): Self = StObject.set(x, "CodeActions$ListType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$MicroflowActionInfo(value: MicroflowActionInfo): Self = StObject.set(x, "CodeActions$MicroflowActionInfo", value.asInstanceOf[js.Any])
+      inline def setCodeActions$MicroflowActionInfo(value: MicroflowActionInfo): Self = StObject.set(x, "CodeActions$MicroflowActionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$ParameterizedEntityType(value: ParameterizedEntityType): Self = StObject.set(x, "CodeActions$ParameterizedEntityType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$ParameterizedEntityType(value: ParameterizedEntityType): Self = StObject.set(x, "CodeActions$ParameterizedEntityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$StringTemplateParameterType(value: StringTemplateParameterType): Self = StObject.set(x, "CodeActions$StringTemplateParameterType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$StringTemplateParameterType(value: StringTemplateParameterType): Self = StObject.set(x, "CodeActions$StringTemplateParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$StringType(value: StringType): Self = StObject.set(x, "CodeActions$StringType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$StringType(value: StringType): Self = StObject.set(x, "CodeActions$StringType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$TypeParameter(value: TypeParameter): Self = StObject.set(x, "CodeActions$TypeParameter", value.asInstanceOf[js.Any])
+      inline def setCodeActions$TypeParameter(value: TypeParameter): Self = StObject.set(x, "CodeActions$TypeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeActions$VoidType(value: VoidType): Self = StObject.set(x, "CodeActions$VoidType", value.asInstanceOf[js.Any])
+      inline def setCodeActions$VoidType(value: VoidType): Self = StObject.set(x, "CodeActions$VoidType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$CustomWidget(value: CustomWidget): Self = StObject.set(x, "CustomWidgets$CustomWidget", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$CustomWidget(value: CustomWidget): Self = StObject.set(x, "CustomWidgets$CustomWidget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$CustomWidgetDatabaseSource(value: CustomWidgetDatabaseSource): Self = StObject.set(x, "CustomWidgets$CustomWidgetDatabaseSource", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$CustomWidgetDatabaseSource(value: CustomWidgetDatabaseSource): Self = StObject.set(x, "CustomWidgets$CustomWidgetDatabaseSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$CustomWidgetType(value: CustomWidgetType): Self = StObject.set(x, "CustomWidgets$CustomWidgetType", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$CustomWidgetType(value: CustomWidgetType): Self = StObject.set(x, "CustomWidgets$CustomWidgetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$CustomWidgetXPathSource(value: CustomWidgetXPathSource): Self = StObject.set(x, "CustomWidgets$CustomWidgetXPathSource", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$CustomWidgetXPathSource(value: CustomWidgetXPathSource): Self = StObject.set(x, "CustomWidgets$CustomWidgetXPathSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetEnumerationValue(value: WidgetEnumerationValue): Self = StObject.set(x, "CustomWidgets$WidgetEnumerationValue", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetEnumerationValue(value: WidgetEnumerationValue): Self = StObject.set(x, "CustomWidgets$WidgetEnumerationValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetObject(value: WidgetObject): Self = StObject.set(x, "CustomWidgets$WidgetObject", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetObject(value: WidgetObject): Self = StObject.set(x, "CustomWidgets$WidgetObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetObjectType(value: WidgetObjectType): Self = StObject.set(x, "CustomWidgets$WidgetObjectType", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetObjectType(value: WidgetObjectType): Self = StObject.set(x, "CustomWidgets$WidgetObjectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetProperty(value: WidgetProperty): Self = StObject.set(x, "CustomWidgets$WidgetProperty", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetProperty(value: WidgetProperty): Self = StObject.set(x, "CustomWidgets$WidgetProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetPropertyType(value: WidgetPropertyType): Self = StObject.set(x, "CustomWidgets$WidgetPropertyType", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetPropertyType(value: WidgetPropertyType): Self = StObject.set(x, "CustomWidgets$WidgetPropertyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetReturnType(value: WidgetReturnType): Self = StObject.set(x, "CustomWidgets$WidgetReturnType", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetReturnType(value: WidgetReturnType): Self = StObject.set(x, "CustomWidgets$WidgetReturnType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetTranslation(value: WidgetTranslation): Self = StObject.set(x, "CustomWidgets$WidgetTranslation", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetTranslation(value: WidgetTranslation): Self = StObject.set(x, "CustomWidgets$WidgetTranslation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetValue(value: WidgetValue): Self = StObject.set(x, "CustomWidgets$WidgetValue", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetValue(value: WidgetValue): Self = StObject.set(x, "CustomWidgets$WidgetValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidgets$WidgetValueType(value: WidgetValueType): Self = StObject.set(x, "CustomWidgets$WidgetValueType", value.asInstanceOf[js.Any])
+      inline def setCustomWidgets$WidgetValueType(value: WidgetValueType): Self = StObject.set(x, "CustomWidgets$WidgetValueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetAccess(value: DataSetAccess): Self = StObject.set(x, "DataSets$DataSetAccess", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetAccess(value: DataSetAccess): Self = StObject.set(x, "DataSets$DataSetAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetColumn(value: DataSetColumn): Self = StObject.set(x, "DataSets$DataSetColumn", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetColumn(value: DataSetColumn): Self = StObject.set(x, "DataSets$DataSetColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetConstraintAccess(value: DataSetConstraintAccess): Self = StObject.set(x, "DataSets$DataSetConstraintAccess", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetConstraintAccess(value: DataSetConstraintAccess): Self = StObject.set(x, "DataSets$DataSetConstraintAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetDateTimeConstraint(value: DataSetDateTimeConstraint): Self = StObject.set(x, "DataSets$DataSetDateTimeConstraint", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetDateTimeConstraint(value: DataSetDateTimeConstraint): Self = StObject.set(x, "DataSets$DataSetDateTimeConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetModuleRoleAccess(value: DataSetModuleRoleAccess): Self = StObject.set(x, "DataSets$DataSetModuleRoleAccess", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetModuleRoleAccess(value: DataSetModuleRoleAccess): Self = StObject.set(x, "DataSets$DataSetModuleRoleAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetNumericConstraint(value: DataSetNumericConstraint): Self = StObject.set(x, "DataSets$DataSetNumericConstraint", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetNumericConstraint(value: DataSetNumericConstraint): Self = StObject.set(x, "DataSets$DataSetNumericConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetObjectConstraint(value: DataSetObjectConstraint): Self = StObject.set(x, "DataSets$DataSetObjectConstraint", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetObjectConstraint(value: DataSetObjectConstraint): Self = StObject.set(x, "DataSets$DataSetObjectConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetParameter(value: DataSetParameter): Self = StObject.set(x, "DataSets$DataSetParameter", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetParameter(value: DataSetParameter): Self = StObject.set(x, "DataSets$DataSetParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$DataSetParameterAccess(value: DataSetParameterAccess): Self = StObject.set(x, "DataSets$DataSetParameterAccess", value.asInstanceOf[js.Any])
+      inline def setDataSets$DataSetParameterAccess(value: DataSetParameterAccess): Self = StObject.set(x, "DataSets$DataSetParameterAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$JavaDataSetSource(value: JavaDataSetSource): Self = StObject.set(x, "DataSets$JavaDataSetSource", value.asInstanceOf[js.Any])
+      inline def setDataSets$JavaDataSetSource(value: JavaDataSetSource): Self = StObject.set(x, "DataSets$JavaDataSetSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets$OqlDataSetSource(value: OqlDataSetSource): Self = StObject.set(x, "DataSets$OqlDataSetSource", value.asInstanceOf[js.Any])
+      inline def setDataSets$OqlDataSetSource(value: OqlDataSetSource): Self = StObject.set(x, "DataSets$OqlDataSetSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$BinaryType(value: BinaryType): Self = StObject.set(x, "DataTypes$BinaryType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$BinaryType(value: BinaryType): Self = StObject.set(x, "DataTypes$BinaryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$BooleanType(value: typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType): Self = StObject.set(x, "DataTypes$BooleanType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$BooleanType(value: typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType): Self = StObject.set(x, "DataTypes$BooleanType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$DateTimeType(value: typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType): Self = StObject.set(x, "DataTypes$DateTimeType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$DateTimeType(value: typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType): Self = StObject.set(x, "DataTypes$DateTimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$DecimalType(value: typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType): Self = StObject.set(x, "DataTypes$DecimalType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$DecimalType(value: typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType): Self = StObject.set(x, "DataTypes$DecimalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$EmptyType(value: EmptyType): Self = StObject.set(x, "DataTypes$EmptyType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$EmptyType(value: EmptyType): Self = StObject.set(x, "DataTypes$EmptyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$EnumerationType(value: typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType): Self = StObject.set(x, "DataTypes$EnumerationType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$EnumerationType(value: typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType): Self = StObject.set(x, "DataTypes$EnumerationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$FloatType(value: typings.mendixmodelsdk.datatypesMod.datatypes.FloatType): Self = StObject.set(x, "DataTypes$FloatType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$FloatType(value: typings.mendixmodelsdk.datatypesMod.datatypes.FloatType): Self = StObject.set(x, "DataTypes$FloatType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$IntegerType(value: typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType): Self = StObject.set(x, "DataTypes$IntegerType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$IntegerType(value: typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType): Self = StObject.set(x, "DataTypes$IntegerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$ListType(value: typings.mendixmodelsdk.datatypesMod.datatypes.ListType): Self = StObject.set(x, "DataTypes$ListType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$ListType(value: typings.mendixmodelsdk.datatypesMod.datatypes.ListType): Self = StObject.set(x, "DataTypes$ListType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$ObjectType(value: ObjectType): Self = StObject.set(x, "DataTypes$ObjectType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$ObjectType(value: ObjectType): Self = StObject.set(x, "DataTypes$ObjectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$StringType(value: typings.mendixmodelsdk.datatypesMod.datatypes.StringType): Self = StObject.set(x, "DataTypes$StringType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$StringType(value: typings.mendixmodelsdk.datatypesMod.datatypes.StringType): Self = StObject.set(x, "DataTypes$StringType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$UnknownType(value: UnknownType): Self = StObject.set(x, "DataTypes$UnknownType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$UnknownType(value: UnknownType): Self = StObject.set(x, "DataTypes$UnknownType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypes$VoidType(value: typings.mendixmodelsdk.datatypesMod.datatypes.VoidType): Self = StObject.set(x, "DataTypes$VoidType", value.asInstanceOf[js.Any])
+      inline def setDataTypes$VoidType(value: typings.mendixmodelsdk.datatypesMod.datatypes.VoidType): Self = StObject.set(x, "DataTypes$VoidType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$ConditionSettings(value: ConditionSettings): Self = StObject.set(x, "DocumentTemplates$ConditionSettings", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$ConditionSettings(value: ConditionSettings): Self = StObject.set(x, "DocumentTemplates$ConditionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DataGrid(value: DataGrid): Self = StObject.set(x, "DocumentTemplates$DataGrid", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DataGrid(value: DataGrid): Self = StObject.set(x, "DocumentTemplates$DataGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DataGridCell(value: DataGridCell): Self = StObject.set(x, "DocumentTemplates$DataGridCell", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DataGridCell(value: DataGridCell): Self = StObject.set(x, "DocumentTemplates$DataGridCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DataGridColumn(value: DataGridColumn): Self = StObject.set(x, "DocumentTemplates$DataGridColumn", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DataGridColumn(value: DataGridColumn): Self = StObject.set(x, "DocumentTemplates$DataGridColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DataView(value: DataView): Self = StObject.set(x, "DocumentTemplates$DataView", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DataView(value: DataView): Self = StObject.set(x, "DocumentTemplates$DataView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DataViewContents(value: DataViewContents): Self = StObject.set(x, "DocumentTemplates$DataViewContents", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DataViewContents(value: DataViewContents): Self = StObject.set(x, "DocumentTemplates$DataViewContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DocumentTemplateParameter(value: DocumentTemplateParameter): Self = StObject.set(x, "DocumentTemplates$DocumentTemplateParameter", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DocumentTemplateParameter(value: DocumentTemplateParameter): Self = StObject.set(x, "DocumentTemplates$DocumentTemplateParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DynamicImageViewer(value: DynamicImageViewer): Self = StObject.set(x, "DocumentTemplates$DynamicImageViewer", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DynamicImageViewer(value: DynamicImageViewer): Self = StObject.set(x, "DocumentTemplates$DynamicImageViewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$DynamicLabel(value: DynamicLabel): Self = StObject.set(x, "DocumentTemplates$DynamicLabel", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$DynamicLabel(value: DynamicLabel): Self = StObject.set(x, "DocumentTemplates$DynamicLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$Footer(value: Footer): Self = StObject.set(x, "DocumentTemplates$Footer", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$Footer(value: Footer): Self = StObject.set(x, "DocumentTemplates$Footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$GridSortBar(value: GridSortBar): Self = StObject.set(x, "DocumentTemplates$GridSortBar", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$GridSortBar(value: GridSortBar): Self = StObject.set(x, "DocumentTemplates$GridSortBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$GridSortItem(value: GridSortItem): Self = StObject.set(x, "DocumentTemplates$GridSortItem", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$GridSortItem(value: GridSortItem): Self = StObject.set(x, "DocumentTemplates$GridSortItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$Header(value: Header): Self = StObject.set(x, "DocumentTemplates$Header", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$Header(value: Header): Self = StObject.set(x, "DocumentTemplates$Header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$LineBreak(value: LineBreak): Self = StObject.set(x, "DocumentTemplates$LineBreak", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$LineBreak(value: LineBreak): Self = StObject.set(x, "DocumentTemplates$LineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$PageBreak(value: PageBreak): Self = StObject.set(x, "DocumentTemplates$PageBreak", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$PageBreak(value: PageBreak): Self = StObject.set(x, "DocumentTemplates$PageBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$StaticImageViewer(value: StaticImageViewer): Self = StObject.set(x, "DocumentTemplates$StaticImageViewer", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$StaticImageViewer(value: StaticImageViewer): Self = StObject.set(x, "DocumentTemplates$StaticImageViewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$StaticLabel(value: StaticLabel): Self = StObject.set(x, "DocumentTemplates$StaticLabel", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$StaticLabel(value: StaticLabel): Self = StObject.set(x, "DocumentTemplates$StaticLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$Style(value: Style): Self = StObject.set(x, "DocumentTemplates$Style", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$Style(value: Style): Self = StObject.set(x, "DocumentTemplates$Style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$Table(value: Table): Self = StObject.set(x, "DocumentTemplates$Table", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$Table(value: Table): Self = StObject.set(x, "DocumentTemplates$Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$TableCell(value: TableCell): Self = StObject.set(x, "DocumentTemplates$TableCell", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$TableCell(value: TableCell): Self = StObject.set(x, "DocumentTemplates$TableCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$TableRow(value: TableRow): Self = StObject.set(x, "DocumentTemplates$TableRow", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$TableRow(value: TableRow): Self = StObject.set(x, "DocumentTemplates$TableRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$TemplateGrid(value: TemplateGrid): Self = StObject.set(x, "DocumentTemplates$TemplateGrid", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$TemplateGrid(value: TemplateGrid): Self = StObject.set(x, "DocumentTemplates$TemplateGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$TemplateGridContents(value: TemplateGridContents): Self = StObject.set(x, "DocumentTemplates$TemplateGridContents", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$TemplateGridContents(value: TemplateGridContents): Self = StObject.set(x, "DocumentTemplates$TemplateGridContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTemplates$Title(value: Title): Self = StObject.set(x, "DocumentTemplates$Title", value.asInstanceOf[js.Any])
+      inline def setDocumentTemplates$Title(value: Title): Self = StObject.set(x, "DocumentTemplates$Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AccessRule(value: AccessRule): Self = StObject.set(x, "DomainModels$AccessRule", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AccessRule(value: AccessRule): Self = StObject.set(x, "DomainModels$AccessRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$Annotation(value: Annotation): Self = StObject.set(x, "DomainModels$Annotation", value.asInstanceOf[js.Any])
+      inline def setDomainModels$Annotation(value: Annotation): Self = StObject.set(x, "DomainModels$Annotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$Association(value: Association): Self = StObject.set(x, "DomainModels$Association", value.asInstanceOf[js.Any])
+      inline def setDomainModels$Association(value: Association): Self = StObject.set(x, "DomainModels$Association", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AssociationCapabilities(value: AssociationCapabilities): Self = StObject.set(x, "DomainModels$AssociationCapabilities", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AssociationCapabilities(value: AssociationCapabilities): Self = StObject.set(x, "DomainModels$AssociationCapabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AssociationDeleteBehavior(value: AssociationDeleteBehavior): Self = StObject.set(x, "DomainModels$AssociationDeleteBehavior", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AssociationDeleteBehavior(value: AssociationDeleteBehavior): Self = StObject.set(x, "DomainModels$AssociationDeleteBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AssociationRef(value: AssociationRef): Self = StObject.set(x, "DomainModels$AssociationRef", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AssociationRef(value: AssociationRef): Self = StObject.set(x, "DomainModels$AssociationRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$Attribute(value: Attribute): Self = StObject.set(x, "DomainModels$Attribute", value.asInstanceOf[js.Any])
+      inline def setDomainModels$Attribute(value: Attribute): Self = StObject.set(x, "DomainModels$Attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AttributeCapabilities(value: AttributeCapabilities): Self = StObject.set(x, "DomainModels$AttributeCapabilities", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AttributeCapabilities(value: AttributeCapabilities): Self = StObject.set(x, "DomainModels$AttributeCapabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AttributeRef(value: AttributeRef): Self = StObject.set(x, "DomainModels$AttributeRef", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AttributeRef(value: AttributeRef): Self = StObject.set(x, "DomainModels$AttributeRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$AutoNumberAttributeType(value: AutoNumberAttributeType): Self = StObject.set(x, "DomainModels$AutoNumberAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$AutoNumberAttributeType(value: AutoNumberAttributeType): Self = StObject.set(x, "DomainModels$AutoNumberAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$BinaryAttributeType(value: BinaryAttributeType): Self = StObject.set(x, "DomainModels$BinaryAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$BinaryAttributeType(value: BinaryAttributeType): Self = StObject.set(x, "DomainModels$BinaryAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$BooleanAttributeType(value: BooleanAttributeType): Self = StObject.set(x, "DomainModels$BooleanAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$BooleanAttributeType(value: BooleanAttributeType): Self = StObject.set(x, "DomainModels$BooleanAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$CalculatedValue(value: CalculatedValue): Self = StObject.set(x, "DomainModels$CalculatedValue", value.asInstanceOf[js.Any])
+      inline def setDomainModels$CalculatedValue(value: CalculatedValue): Self = StObject.set(x, "DomainModels$CalculatedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$CrossAssociation(value: CrossAssociation): Self = StObject.set(x, "DomainModels$CrossAssociation", value.asInstanceOf[js.Any])
+      inline def setDomainModels$CrossAssociation(value: CrossAssociation): Self = StObject.set(x, "DomainModels$CrossAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$CurrencyAttributeType(value: CurrencyAttributeType): Self = StObject.set(x, "DomainModels$CurrencyAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$CurrencyAttributeType(value: CurrencyAttributeType): Self = StObject.set(x, "DomainModels$CurrencyAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$DateTimeAttributeType(value: DateTimeAttributeType): Self = StObject.set(x, "DomainModels$DateTimeAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$DateTimeAttributeType(value: DateTimeAttributeType): Self = StObject.set(x, "DomainModels$DateTimeAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$DecimalAttributeType(value: DecimalAttributeType): Self = StObject.set(x, "DomainModels$DecimalAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$DecimalAttributeType(value: DecimalAttributeType): Self = StObject.set(x, "DomainModels$DecimalAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$DirectEntityRef(value: DirectEntityRef): Self = StObject.set(x, "DomainModels$DirectEntityRef", value.asInstanceOf[js.Any])
+      inline def setDomainModels$DirectEntityRef(value: DirectEntityRef): Self = StObject.set(x, "DomainModels$DirectEntityRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$Entity(value: Entity): Self = StObject.set(x, "DomainModels$Entity", value.asInstanceOf[js.Any])
+      inline def setDomainModels$Entity(value: Entity): Self = StObject.set(x, "DomainModels$Entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EntityCapabilities(value: EntityCapabilities): Self = StObject.set(x, "DomainModels$EntityCapabilities", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EntityCapabilities(value: EntityCapabilities): Self = StObject.set(x, "DomainModels$EntityCapabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EntityKey(value: EntityKey): Self = StObject.set(x, "DomainModels$EntityKey", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EntityKey(value: EntityKey): Self = StObject.set(x, "DomainModels$EntityKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EntityKeyPart(value: EntityKeyPart): Self = StObject.set(x, "DomainModels$EntityKeyPart", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EntityKeyPart(value: EntityKeyPart): Self = StObject.set(x, "DomainModels$EntityKeyPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EntityRefStep(value: EntityRefStep): Self = StObject.set(x, "DomainModels$EntityRefStep", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EntityRefStep(value: EntityRefStep): Self = StObject.set(x, "DomainModels$EntityRefStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EnumerationAttributeType(value: EnumerationAttributeType): Self = StObject.set(x, "DomainModels$EnumerationAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EnumerationAttributeType(value: EnumerationAttributeType): Self = StObject.set(x, "DomainModels$EnumerationAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EqualsToRuleInfo(value: EqualsToRuleInfo): Self = StObject.set(x, "DomainModels$EqualsToRuleInfo", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EqualsToRuleInfo(value: EqualsToRuleInfo): Self = StObject.set(x, "DomainModels$EqualsToRuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$EventHandler(value: EventHandler): Self = StObject.set(x, "DomainModels$EventHandler", value.asInstanceOf[js.Any])
+      inline def setDomainModels$EventHandler(value: EventHandler): Self = StObject.set(x, "DomainModels$EventHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$FloatAttributeType(value: FloatAttributeType): Self = StObject.set(x, "DomainModels$FloatAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$FloatAttributeType(value: FloatAttributeType): Self = StObject.set(x, "DomainModels$FloatAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$Generalization(value: Generalization): Self = StObject.set(x, "DomainModels$Generalization", value.asInstanceOf[js.Any])
+      inline def setDomainModels$Generalization(value: Generalization): Self = StObject.set(x, "DomainModels$Generalization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$HashedStringAttributeType(value: HashedStringAttributeType): Self = StObject.set(x, "DomainModels$HashedStringAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$HashedStringAttributeType(value: HashedStringAttributeType): Self = StObject.set(x, "DomainModels$HashedStringAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$Index(value: Index): Self = StObject.set(x, "DomainModels$Index", value.asInstanceOf[js.Any])
+      inline def setDomainModels$Index(value: Index): Self = StObject.set(x, "DomainModels$Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$IndexedAttribute(value: IndexedAttribute): Self = StObject.set(x, "DomainModels$IndexedAttribute", value.asInstanceOf[js.Any])
+      inline def setDomainModels$IndexedAttribute(value: IndexedAttribute): Self = StObject.set(x, "DomainModels$IndexedAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$IndirectEntityRef(value: IndirectEntityRef): Self = StObject.set(x, "DomainModels$IndirectEntityRef", value.asInstanceOf[js.Any])
+      inline def setDomainModels$IndirectEntityRef(value: IndirectEntityRef): Self = StObject.set(x, "DomainModels$IndirectEntityRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$IntegerAttributeType(value: IntegerAttributeType): Self = StObject.set(x, "DomainModels$IntegerAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$IntegerAttributeType(value: IntegerAttributeType): Self = StObject.set(x, "DomainModels$IntegerAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$LongAttributeType(value: LongAttributeType): Self = StObject.set(x, "DomainModels$LongAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$LongAttributeType(value: LongAttributeType): Self = StObject.set(x, "DomainModels$LongAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$MaxLengthRuleInfo(value: MaxLengthRuleInfo): Self = StObject.set(x, "DomainModels$MaxLengthRuleInfo", value.asInstanceOf[js.Any])
+      inline def setDomainModels$MaxLengthRuleInfo(value: MaxLengthRuleInfo): Self = StObject.set(x, "DomainModels$MaxLengthRuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$MemberAccess(value: MemberAccess): Self = StObject.set(x, "DomainModels$MemberAccess", value.asInstanceOf[js.Any])
+      inline def setDomainModels$MemberAccess(value: MemberAccess): Self = StObject.set(x, "DomainModels$MemberAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$NoGeneralization(value: NoGeneralization): Self = StObject.set(x, "DomainModels$NoGeneralization", value.asInstanceOf[js.Any])
+      inline def setDomainModels$NoGeneralization(value: NoGeneralization): Self = StObject.set(x, "DomainModels$NoGeneralization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$RangeRuleInfo(value: RangeRuleInfo): Self = StObject.set(x, "DomainModels$RangeRuleInfo", value.asInstanceOf[js.Any])
+      inline def setDomainModels$RangeRuleInfo(value: RangeRuleInfo): Self = StObject.set(x, "DomainModels$RangeRuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$RegExRuleInfo(value: RegExRuleInfo): Self = StObject.set(x, "DomainModels$RegExRuleInfo", value.asInstanceOf[js.Any])
+      inline def setDomainModels$RegExRuleInfo(value: RegExRuleInfo): Self = StObject.set(x, "DomainModels$RegExRuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$RequiredRuleInfo(value: RequiredRuleInfo): Self = StObject.set(x, "DomainModels$RequiredRuleInfo", value.asInstanceOf[js.Any])
+      inline def setDomainModels$RequiredRuleInfo(value: RequiredRuleInfo): Self = StObject.set(x, "DomainModels$RequiredRuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$StoredValue(value: StoredValue): Self = StObject.set(x, "DomainModels$StoredValue", value.asInstanceOf[js.Any])
+      inline def setDomainModels$StoredValue(value: StoredValue): Self = StObject.set(x, "DomainModels$StoredValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$StringAttributeType(value: StringAttributeType): Self = StObject.set(x, "DomainModels$StringAttributeType", value.asInstanceOf[js.Any])
+      inline def setDomainModels$StringAttributeType(value: StringAttributeType): Self = StObject.set(x, "DomainModels$StringAttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$UniqueRuleInfo(value: UniqueRuleInfo): Self = StObject.set(x, "DomainModels$UniqueRuleInfo", value.asInstanceOf[js.Any])
+      inline def setDomainModels$UniqueRuleInfo(value: UniqueRuleInfo): Self = StObject.set(x, "DomainModels$UniqueRuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainModels$ValidationRule(value: ValidationRule): Self = StObject.set(x, "DomainModels$ValidationRule", value.asInstanceOf[js.Any])
+      inline def setDomainModels$ValidationRule(value: ValidationRule): Self = StObject.set(x, "DomainModels$ValidationRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerations$Condition(value: Condition): Self = StObject.set(x, "Enumerations$Condition", value.asInstanceOf[js.Any])
+      inline def setEnumerations$Condition(value: Condition): Self = StObject.set(x, "Enumerations$Condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerations$EnumerationValue(value: EnumerationValue): Self = StObject.set(x, "Enumerations$EnumerationValue", value.asInstanceOf[js.Any])
+      inline def setEnumerations$EnumerationValue(value: EnumerationValue): Self = StObject.set(x, "Enumerations$EnumerationValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportMappings$ExportObjectMappingElement(value: ExportObjectMappingElement): Self = StObject.set(x, "ExportMappings$ExportObjectMappingElement", value.asInstanceOf[js.Any])
+      inline def setExportMappings$ExportObjectMappingElement(value: ExportObjectMappingElement): Self = StObject.set(x, "ExportMappings$ExportObjectMappingElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportMappings$ExportValueMappingElement(value: ExportValueMappingElement): Self = StObject.set(x, "ExportMappings$ExportValueMappingElement", value.asInstanceOf[js.Any])
+      inline def setExportMappings$ExportValueMappingElement(value: ExportValueMappingElement): Self = StObject.set(x, "ExportMappings$ExportValueMappingElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$BinaryExpression(value: BinaryExpression): Self = StObject.set(x, "Expressions$BinaryExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$BinaryExpression(value: BinaryExpression): Self = StObject.set(x, "Expressions$BinaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$BooleanLiteral(value: BooleanLiteral): Self = StObject.set(x, "Expressions$BooleanLiteral", value.asInstanceOf[js.Any])
+      inline def setExpressions$BooleanLiteral(value: BooleanLiteral): Self = StObject.set(x, "Expressions$BooleanLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$ConstantRefExpression(value: ConstantRefExpression): Self = StObject.set(x, "Expressions$ConstantRefExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$ConstantRefExpression(value: ConstantRefExpression): Self = StObject.set(x, "Expressions$ConstantRefExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$EmptyLiteral(value: EmptyLiteral): Self = StObject.set(x, "Expressions$EmptyLiteral", value.asInstanceOf[js.Any])
+      inline def setExpressions$EmptyLiteral(value: EmptyLiteral): Self = StObject.set(x, "Expressions$EmptyLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$EnumerationValueRefExpression(value: EnumerationValueRefExpression): Self = StObject.set(x, "Expressions$EnumerationValueRefExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$EnumerationValueRefExpression(value: EnumerationValueRefExpression): Self = StObject.set(x, "Expressions$EnumerationValueRefExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$FloatLiteral(value: FloatLiteral): Self = StObject.set(x, "Expressions$FloatLiteral", value.asInstanceOf[js.Any])
+      inline def setExpressions$FloatLiteral(value: FloatLiteral): Self = StObject.set(x, "Expressions$FloatLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$FunctionCallExpression(value: FunctionCallExpression): Self = StObject.set(x, "Expressions$FunctionCallExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$FunctionCallExpression(value: FunctionCallExpression): Self = StObject.set(x, "Expressions$FunctionCallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$GlobalVariableRef(value: GlobalVariableRef): Self = StObject.set(x, "Expressions$GlobalVariableRef", value.asInstanceOf[js.Any])
+      inline def setExpressions$GlobalVariableRef(value: GlobalVariableRef): Self = StObject.set(x, "Expressions$GlobalVariableRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$IfExpression(value: IfExpression): Self = StObject.set(x, "Expressions$IfExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$IfExpression(value: IfExpression): Self = StObject.set(x, "Expressions$IfExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$IntegerLiteral(value: IntegerLiteral): Self = StObject.set(x, "Expressions$IntegerLiteral", value.asInstanceOf[js.Any])
+      inline def setExpressions$IntegerLiteral(value: IntegerLiteral): Self = StObject.set(x, "Expressions$IntegerLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$NoExpression(value: NoExpression): Self = StObject.set(x, "Expressions$NoExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$NoExpression(value: NoExpression): Self = StObject.set(x, "Expressions$NoExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$NoVariableRef(value: NoVariableRef): Self = StObject.set(x, "Expressions$NoVariableRef", value.asInstanceOf[js.Any])
+      inline def setExpressions$NoVariableRef(value: NoVariableRef): Self = StObject.set(x, "Expressions$NoVariableRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$ParenthesisExpression(value: ParenthesisExpression): Self = StObject.set(x, "Expressions$ParenthesisExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$ParenthesisExpression(value: ParenthesisExpression): Self = StObject.set(x, "Expressions$ParenthesisExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$StringLiteral(value: StringLiteral): Self = StObject.set(x, "Expressions$StringLiteral", value.asInstanceOf[js.Any])
+      inline def setExpressions$StringLiteral(value: StringLiteral): Self = StObject.set(x, "Expressions$StringLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$UnaryExpression(value: UnaryExpression): Self = StObject.set(x, "Expressions$UnaryExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$UnaryExpression(value: UnaryExpression): Self = StObject.set(x, "Expressions$UnaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$UnparsableExpression(value: UnparsableExpression): Self = StObject.set(x, "Expressions$UnparsableExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$UnparsableExpression(value: UnparsableExpression): Self = StObject.set(x, "Expressions$UnparsableExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressions$VariableRefExpression(value: VariableRefExpression): Self = StObject.set(x, "Expressions$VariableRefExpression", value.asInstanceOf[js.Any])
+      inline def setExpressions$VariableRefExpression(value: VariableRefExpression): Self = StObject.set(x, "Expressions$VariableRefExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages$Image(value: Image): Self = StObject.set(x, "Images$Image", value.asInstanceOf[js.Any])
+      inline def setImages$Image(value: Image): Self = StObject.set(x, "Images$Image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportMappings$ImportObjectMappingElement(value: ImportObjectMappingElement): Self = StObject.set(x, "ImportMappings$ImportObjectMappingElement", value.asInstanceOf[js.Any])
+      inline def setImportMappings$ImportObjectMappingElement(value: ImportObjectMappingElement): Self = StObject.set(x, "ImportMappings$ImportObjectMappingElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportMappings$ImportValueMappingElement(value: ImportValueMappingElement): Self = StObject.set(x, "ImportMappings$ImportValueMappingElement", value.asInstanceOf[js.Any])
+      inline def setImportMappings$ImportValueMappingElement(value: ImportValueMappingElement): Self = StObject.set(x, "ImportMappings$ImportValueMappingElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$BasicParameterType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType): Self = StObject.set(x, "JavaActions$BasicParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$BasicParameterType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType): Self = StObject.set(x, "JavaActions$BasicParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$BooleanType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.BooleanType): Self = StObject.set(x, "JavaActions$BooleanType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$BooleanType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.BooleanType): Self = StObject.set(x, "JavaActions$BooleanType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ConcreteEntityType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.ConcreteEntityType): Self = StObject.set(x, "JavaActions$ConcreteEntityType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ConcreteEntityType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.ConcreteEntityType): Self = StObject.set(x, "JavaActions$ConcreteEntityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$DateTimeType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.DateTimeType): Self = StObject.set(x, "JavaActions$DateTimeType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$DateTimeType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.DateTimeType): Self = StObject.set(x, "JavaActions$DateTimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$DecimalType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.DecimalType): Self = StObject.set(x, "JavaActions$DecimalType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$DecimalType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.DecimalType): Self = StObject.set(x, "JavaActions$DecimalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$EntityTypeParameterType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.EntityTypeParameterType): Self = StObject.set(x, "JavaActions$EntityTypeParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$EntityTypeParameterType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.EntityTypeParameterType): Self = StObject.set(x, "JavaActions$EntityTypeParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$EnumerationType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.EnumerationType): Self = StObject.set(x, "JavaActions$EnumerationType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$EnumerationType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.EnumerationType): Self = StObject.set(x, "JavaActions$EnumerationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ExportMappingJavaActionParameterType(value: ExportMappingJavaActionParameterType): Self = StObject.set(x, "JavaActions$ExportMappingJavaActionParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ExportMappingJavaActionParameterType(value: ExportMappingJavaActionParameterType): Self = StObject.set(x, "JavaActions$ExportMappingJavaActionParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ExportMappingParameterType(value: ExportMappingParameterType): Self = StObject.set(x, "JavaActions$ExportMappingParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ExportMappingParameterType(value: ExportMappingParameterType): Self = StObject.set(x, "JavaActions$ExportMappingParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$FloatType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType): Self = StObject.set(x, "JavaActions$FloatType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$FloatType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType): Self = StObject.set(x, "JavaActions$FloatType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ImportMappingJavaActionParameterType(value: ImportMappingJavaActionParameterType): Self = StObject.set(x, "JavaActions$ImportMappingJavaActionParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ImportMappingJavaActionParameterType(value: ImportMappingJavaActionParameterType): Self = StObject.set(x, "JavaActions$ImportMappingJavaActionParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ImportMappingParameterType(value: ImportMappingParameterType): Self = StObject.set(x, "JavaActions$ImportMappingParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ImportMappingParameterType(value: ImportMappingParameterType): Self = StObject.set(x, "JavaActions$ImportMappingParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$IntegerType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.IntegerType): Self = StObject.set(x, "JavaActions$IntegerType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$IntegerType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.IntegerType): Self = StObject.set(x, "JavaActions$IntegerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$JavaActionParameter(value: JavaActionParameter): Self = StObject.set(x, "JavaActions$JavaActionParameter", value.asInstanceOf[js.Any])
+      inline def setJavaActions$JavaActionParameter(value: JavaActionParameter): Self = StObject.set(x, "JavaActions$JavaActionParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ListType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.ListType): Self = StObject.set(x, "JavaActions$ListType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ListType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.ListType): Self = StObject.set(x, "JavaActions$ListType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$MicroflowActionInfo(value: typings.mendixmodelsdk.javaactionsMod.javaactions.MicroflowActionInfo): Self = StObject.set(x, "JavaActions$MicroflowActionInfo", value.asInstanceOf[js.Any])
+      inline def setJavaActions$MicroflowActionInfo(value: typings.mendixmodelsdk.javaactionsMod.javaactions.MicroflowActionInfo): Self = StObject.set(x, "JavaActions$MicroflowActionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$MicroflowJavaActionParameterType(value: MicroflowJavaActionParameterType): Self = StObject.set(x, "JavaActions$MicroflowJavaActionParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$MicroflowJavaActionParameterType(value: MicroflowJavaActionParameterType): Self = StObject.set(x, "JavaActions$MicroflowJavaActionParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$MicroflowParameterType(value: MicroflowParameterType): Self = StObject.set(x, "JavaActions$MicroflowParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$MicroflowParameterType(value: MicroflowParameterType): Self = StObject.set(x, "JavaActions$MicroflowParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$ParameterizedEntityType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType): Self = StObject.set(x, "JavaActions$ParameterizedEntityType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$ParameterizedEntityType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType): Self = StObject.set(x, "JavaActions$ParameterizedEntityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$StringType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.StringType): Self = StObject.set(x, "JavaActions$StringType", value.asInstanceOf[js.Any])
+      inline def setJavaActions$StringType(value: typings.mendixmodelsdk.javaactionsMod.javaactions.StringType): Self = StObject.set(x, "JavaActions$StringType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaActions$TypeParameter(value: typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter): Self = StObject.set(x, "JavaActions$TypeParameter", value.asInstanceOf[js.Any])
+      inline def setJavaActions$TypeParameter(value: typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter): Self = StObject.set(x, "JavaActions$TypeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaScriptActions$JavaScriptActionParameter(value: JavaScriptActionParameter): Self = StObject.set(x, "JavaScriptActions$JavaScriptActionParameter", value.asInstanceOf[js.Any])
+      inline def setJavaScriptActions$JavaScriptActionParameter(value: JavaScriptActionParameter): Self = StObject.set(x, "JavaScriptActions$JavaScriptActionParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaScriptActions$NanoflowJavaScriptActionParameterType(value: NanoflowJavaScriptActionParameterType): Self = StObject.set(x, "JavaScriptActions$NanoflowJavaScriptActionParameterType", value.asInstanceOf[js.Any])
+      inline def setJavaScriptActions$NanoflowJavaScriptActionParameterType(value: NanoflowJavaScriptActionParameterType): Self = StObject.set(x, "JavaScriptActions$NanoflowJavaScriptActionParameterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonStructures$JsonElement(value: JsonElement): Self = StObject.set(x, "JsonStructures$JsonElement", value.asInstanceOf[js.Any])
+      inline def setJsonStructures$JsonElement(value: JsonElement): Self = StObject.set(x, "JsonStructures$JsonElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafka$KafkaMappedValue(value: KafkaMappedValue): Self = StObject.set(x, "Kafka$KafkaMappedValue", value.asInstanceOf[js.Any])
+      inline def setKafka$KafkaMappedValue(value: KafkaMappedValue): Self = StObject.set(x, "Kafka$KafkaMappedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafka$KafkaRemoteEntitySource(value: KafkaRemoteEntitySource): Self = StObject.set(x, "Kafka$KafkaRemoteEntitySource", value.asInstanceOf[js.Any])
+      inline def setKafka$KafkaRemoteEntitySource(value: KafkaRemoteEntitySource): Self = StObject.set(x, "Kafka$KafkaRemoteEntitySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafka$PublishedKafkaResource(value: PublishedKafkaResource): Self = StObject.set(x, "Kafka$PublishedKafkaResource", value.asInstanceOf[js.Any])
+      inline def setKafka$PublishedKafkaResource(value: PublishedKafkaResource): Self = StObject.set(x, "Kafka$PublishedKafkaResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappings$MappingMicroflowCall(value: MappingMicroflowCall): Self = StObject.set(x, "Mappings$MappingMicroflowCall", value.asInstanceOf[js.Any])
+      inline def setMappings$MappingMicroflowCall(value: MappingMicroflowCall): Self = StObject.set(x, "Mappings$MappingMicroflowCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappings$MappingMicroflowParameter(value: MappingMicroflowParameter): Self = StObject.set(x, "Mappings$MappingMicroflowParameter", value.asInstanceOf[js.Any])
+      inline def setMappings$MappingMicroflowParameter(value: MappingMicroflowParameter): Self = StObject.set(x, "Mappings$MappingMicroflowParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenus$MenuItem(value: MenuItem): Self = StObject.set(x, "Menus$MenuItem", value.asInstanceOf[js.Any])
+      inline def setMenus$MenuItem(value: MenuItem): Self = StObject.set(x, "Menus$MenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenus$MenuItemCollection(value: MenuItemCollection): Self = StObject.set(x, "Menus$MenuItemCollection", value.asInstanceOf[js.Any])
+      inline def setMenus$MenuItemCollection(value: MenuItemCollection): Self = StObject.set(x, "Menus$MenuItemCollection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$AssociationElement(value: AssociationElement): Self = StObject.set(x, "MessageDefinitions$AssociationElement", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$AssociationElement(value: AssociationElement): Self = StObject.set(x, "MessageDefinitions$AssociationElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$AttributeElement(value: AttributeElement): Self = StObject.set(x, "MessageDefinitions$AttributeElement", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$AttributeElement(value: AttributeElement): Self = StObject.set(x, "MessageDefinitions$AttributeElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$EntityElement(value: EntityElement): Self = StObject.set(x, "MessageDefinitions$EntityElement", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$EntityElement(value: EntityElement): Self = StObject.set(x, "MessageDefinitions$EntityElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$EntityMessageDefinition(value: EntityMessageDefinition): Self = StObject.set(x, "MessageDefinitions$EntityMessageDefinition", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$EntityMessageDefinition(value: EntityMessageDefinition): Self = StObject.set(x, "MessageDefinitions$EntityMessageDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$ExposedAssociation(value: ExposedAssociation): Self = StObject.set(x, "MessageDefinitions$ExposedAssociation", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$ExposedAssociation(value: ExposedAssociation): Self = StObject.set(x, "MessageDefinitions$ExposedAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$ExposedAttribute(value: ExposedAttribute): Self = StObject.set(x, "MessageDefinitions$ExposedAttribute", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$ExposedAttribute(value: ExposedAttribute): Self = StObject.set(x, "MessageDefinitions$ExposedAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDefinitions$ExposedEntity(value: ExposedEntity): Self = StObject.set(x, "MessageDefinitions$ExposedEntity", value.asInstanceOf[js.Any])
+      inline def setMessageDefinitions$ExposedEntity(value: ExposedEntity): Self = StObject.set(x, "MessageDefinitions$ExposedEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ActionActivity(value: ActionActivity): Self = StObject.set(x, "Microflows$ActionActivity", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ActionActivity(value: ActionActivity): Self = StObject.set(x, "Microflows$ActionActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$AdvancedRequestHandling(value: AdvancedRequestHandling): Self = StObject.set(x, "Microflows$AdvancedRequestHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$AdvancedRequestHandling(value: AdvancedRequestHandling): Self = StObject.set(x, "Microflows$AdvancedRequestHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$AggregateListAction(value: AggregateListAction): Self = StObject.set(x, "Microflows$AggregateListAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$AggregateListAction(value: AggregateListAction): Self = StObject.set(x, "Microflows$AggregateListAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Annotation(value: typings.mendixmodelsdk.microflowsMod.microflows.Annotation): Self = StObject.set(x, "Microflows$Annotation", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Annotation(value: typings.mendixmodelsdk.microflowsMod.microflows.Annotation): Self = StObject.set(x, "Microflows$Annotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$AnnotationFlow(value: AnnotationFlow): Self = StObject.set(x, "Microflows$AnnotationFlow", value.asInstanceOf[js.Any])
+      inline def setMicroflows$AnnotationFlow(value: AnnotationFlow): Self = StObject.set(x, "Microflows$AnnotationFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$AppServiceCallAction(value: AppServiceCallAction): Self = StObject.set(x, "Microflows$AppServiceCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$AppServiceCallAction(value: AppServiceCallAction): Self = StObject.set(x, "Microflows$AppServiceCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$AppServiceCallParameterMapping(value: AppServiceCallParameterMapping): Self = StObject.set(x, "Microflows$AppServiceCallParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$AppServiceCallParameterMapping(value: AppServiceCallParameterMapping): Self = StObject.set(x, "Microflows$AppServiceCallParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$AssociationRetrieveSource(value: AssociationRetrieveSource): Self = StObject.set(x, "Microflows$AssociationRetrieveSource", value.asInstanceOf[js.Any])
+      inline def setMicroflows$AssociationRetrieveSource(value: AssociationRetrieveSource): Self = StObject.set(x, "Microflows$AssociationRetrieveSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$BasicCodeActionParameterValue(value: BasicCodeActionParameterValue): Self = StObject.set(x, "Microflows$BasicCodeActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$BasicCodeActionParameterValue(value: BasicCodeActionParameterValue): Self = StObject.set(x, "Microflows$BasicCodeActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$BasicJavaActionParameterValue(value: BasicJavaActionParameterValue): Self = StObject.set(x, "Microflows$BasicJavaActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$BasicJavaActionParameterValue(value: BasicJavaActionParameterValue): Self = StObject.set(x, "Microflows$BasicJavaActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$BinaryRequestHandling(value: BinaryRequestHandling): Self = StObject.set(x, "Microflows$BinaryRequestHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$BinaryRequestHandling(value: BinaryRequestHandling): Self = StObject.set(x, "Microflows$BinaryRequestHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$BreakEvent(value: BreakEvent): Self = StObject.set(x, "Microflows$BreakEvent", value.asInstanceOf[js.Any])
+      inline def setMicroflows$BreakEvent(value: BreakEvent): Self = StObject.set(x, "Microflows$BreakEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CastAction(value: CastAction): Self = StObject.set(x, "Microflows$CastAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CastAction(value: CastAction): Self = StObject.set(x, "Microflows$CastAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ChangeListAction(value: ChangeListAction): Self = StObject.set(x, "Microflows$ChangeListAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ChangeListAction(value: ChangeListAction): Self = StObject.set(x, "Microflows$ChangeListAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ChangeObjectAction(value: ChangeObjectAction): Self = StObject.set(x, "Microflows$ChangeObjectAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ChangeObjectAction(value: ChangeObjectAction): Self = StObject.set(x, "Microflows$ChangeObjectAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ChangeVariableAction(value: ChangeVariableAction): Self = StObject.set(x, "Microflows$ChangeVariableAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ChangeVariableAction(value: ChangeVariableAction): Self = StObject.set(x, "Microflows$ChangeVariableAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CloseFormAction(value: CloseFormAction): Self = StObject.set(x, "Microflows$CloseFormAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CloseFormAction(value: CloseFormAction): Self = StObject.set(x, "Microflows$CloseFormAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CommitAction(value: CommitAction): Self = StObject.set(x, "Microflows$CommitAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CommitAction(value: CommitAction): Self = StObject.set(x, "Microflows$CommitAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ConstantRange(value: ConstantRange): Self = StObject.set(x, "Microflows$ConstantRange", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ConstantRange(value: ConstantRange): Self = StObject.set(x, "Microflows$ConstantRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Contains(value: Contains): Self = StObject.set(x, "Microflows$Contains", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Contains(value: Contains): Self = StObject.set(x, "Microflows$Contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ContinueEvent(value: ContinueEvent): Self = StObject.set(x, "Microflows$ContinueEvent", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ContinueEvent(value: ContinueEvent): Self = StObject.set(x, "Microflows$ContinueEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CreateListAction(value: CreateListAction): Self = StObject.set(x, "Microflows$CreateListAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CreateListAction(value: CreateListAction): Self = StObject.set(x, "Microflows$CreateListAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CreateObjectAction(value: CreateObjectAction): Self = StObject.set(x, "Microflows$CreateObjectAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CreateObjectAction(value: CreateObjectAction): Self = StObject.set(x, "Microflows$CreateObjectAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CreateVariableAction(value: CreateVariableAction): Self = StObject.set(x, "Microflows$CreateVariableAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CreateVariableAction(value: CreateVariableAction): Self = StObject.set(x, "Microflows$CreateVariableAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CustomRange(value: CustomRange): Self = StObject.set(x, "Microflows$CustomRange", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CustomRange(value: CustomRange): Self = StObject.set(x, "Microflows$CustomRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$CustomRequestHandling(value: CustomRequestHandling): Self = StObject.set(x, "Microflows$CustomRequestHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$CustomRequestHandling(value: CustomRequestHandling): Self = StObject.set(x, "Microflows$CustomRequestHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$DatabaseRetrieveSource(value: DatabaseRetrieveSource): Self = StObject.set(x, "Microflows$DatabaseRetrieveSource", value.asInstanceOf[js.Any])
+      inline def setMicroflows$DatabaseRetrieveSource(value: DatabaseRetrieveSource): Self = StObject.set(x, "Microflows$DatabaseRetrieveSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$DeleteAction(value: DeleteAction): Self = StObject.set(x, "Microflows$DeleteAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$DeleteAction(value: DeleteAction): Self = StObject.set(x, "Microflows$DeleteAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$DocumentTemplateParameterMapping(value: DocumentTemplateParameterMapping): Self = StObject.set(x, "Microflows$DocumentTemplateParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$DocumentTemplateParameterMapping(value: DocumentTemplateParameterMapping): Self = StObject.set(x, "Microflows$DocumentTemplateParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$DownloadFileAction(value: DownloadFileAction): Self = StObject.set(x, "Microflows$DownloadFileAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$DownloadFileAction(value: DownloadFileAction): Self = StObject.set(x, "Microflows$DownloadFileAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$EndEvent(value: EndEvent): Self = StObject.set(x, "Microflows$EndEvent", value.asInstanceOf[js.Any])
+      inline def setMicroflows$EndEvent(value: EndEvent): Self = StObject.set(x, "Microflows$EndEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$EntityTypeCodeActionParameterValue(value: EntityTypeCodeActionParameterValue): Self = StObject.set(x, "Microflows$EntityTypeCodeActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$EntityTypeCodeActionParameterValue(value: EntityTypeCodeActionParameterValue): Self = StObject.set(x, "Microflows$EntityTypeCodeActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$EntityTypeJavaActionParameterValue(value: EntityTypeJavaActionParameterValue): Self = StObject.set(x, "Microflows$EntityTypeJavaActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$EntityTypeJavaActionParameterValue(value: EntityTypeJavaActionParameterValue): Self = StObject.set(x, "Microflows$EntityTypeJavaActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$EnumerationCase(value: EnumerationCase): Self = StObject.set(x, "Microflows$EnumerationCase", value.asInstanceOf[js.Any])
+      inline def setMicroflows$EnumerationCase(value: EnumerationCase): Self = StObject.set(x, "Microflows$EnumerationCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ErrorEvent(value: ErrorEvent): Self = StObject.set(x, "Microflows$ErrorEvent", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ErrorEvent(value: ErrorEvent): Self = StObject.set(x, "Microflows$ErrorEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ExclusiveMerge(value: ExclusiveMerge): Self = StObject.set(x, "Microflows$ExclusiveMerge", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ExclusiveMerge(value: ExclusiveMerge): Self = StObject.set(x, "Microflows$ExclusiveMerge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ExclusiveSplit(value: ExclusiveSplit): Self = StObject.set(x, "Microflows$ExclusiveSplit", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ExclusiveSplit(value: ExclusiveSplit): Self = StObject.set(x, "Microflows$ExclusiveSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ExportMappingJavaActionParameterValue(value: ExportMappingJavaActionParameterValue): Self = StObject.set(x, "Microflows$ExportMappingJavaActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ExportMappingJavaActionParameterValue(value: ExportMappingJavaActionParameterValue): Self = StObject.set(x, "Microflows$ExportMappingJavaActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ExportMappingParameterValue(value: ExportMappingParameterValue): Self = StObject.set(x, "Microflows$ExportMappingParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ExportMappingParameterValue(value: ExportMappingParameterValue): Self = StObject.set(x, "Microflows$ExportMappingParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ExportXmlAction(value: ExportXmlAction): Self = StObject.set(x, "Microflows$ExportXmlAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ExportXmlAction(value: ExportXmlAction): Self = StObject.set(x, "Microflows$ExportXmlAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ExpressionSplitCondition(value: ExpressionSplitCondition): Self = StObject.set(x, "Microflows$ExpressionSplitCondition", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ExpressionSplitCondition(value: ExpressionSplitCondition): Self = StObject.set(x, "Microflows$ExpressionSplitCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$FileDocumentExport(value: FileDocumentExport): Self = StObject.set(x, "Microflows$FileDocumentExport", value.asInstanceOf[js.Any])
+      inline def setMicroflows$FileDocumentExport(value: FileDocumentExport): Self = StObject.set(x, "Microflows$FileDocumentExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Filter(value: Filter): Self = StObject.set(x, "Microflows$Filter", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Filter(value: Filter): Self = StObject.set(x, "Microflows$Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Find(value: Find): Self = StObject.set(x, "Microflows$Find", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Find(value: Find): Self = StObject.set(x, "Microflows$Find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$FormDataPart(value: FormDataPart): Self = StObject.set(x, "Microflows$FormDataPart", value.asInstanceOf[js.Any])
+      inline def setMicroflows$FormDataPart(value: FormDataPart): Self = StObject.set(x, "Microflows$FormDataPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$FormDataRequestHandling(value: FormDataRequestHandling): Self = StObject.set(x, "Microflows$FormDataRequestHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$FormDataRequestHandling(value: FormDataRequestHandling): Self = StObject.set(x, "Microflows$FormDataRequestHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$GenerateDocumentAction(value: GenerateDocumentAction): Self = StObject.set(x, "Microflows$GenerateDocumentAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$GenerateDocumentAction(value: GenerateDocumentAction): Self = StObject.set(x, "Microflows$GenerateDocumentAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Head(value: Head): Self = StObject.set(x, "Microflows$Head", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Head(value: Head): Self = StObject.set(x, "Microflows$Head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$HttpConfiguration(value: HttpConfiguration): Self = StObject.set(x, "Microflows$HttpConfiguration", value.asInstanceOf[js.Any])
+      inline def setMicroflows$HttpConfiguration(value: HttpConfiguration): Self = StObject.set(x, "Microflows$HttpConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$HttpHeaderEntry(value: HttpHeaderEntry): Self = StObject.set(x, "Microflows$HttpHeaderEntry", value.asInstanceOf[js.Any])
+      inline def setMicroflows$HttpHeaderEntry(value: HttpHeaderEntry): Self = StObject.set(x, "Microflows$HttpHeaderEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ImportMappingCall(value: ImportMappingCall): Self = StObject.set(x, "Microflows$ImportMappingCall", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ImportMappingCall(value: ImportMappingCall): Self = StObject.set(x, "Microflows$ImportMappingCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ImportMappingJavaActionParameterValue(value: ImportMappingJavaActionParameterValue): Self = StObject.set(x, "Microflows$ImportMappingJavaActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ImportMappingJavaActionParameterValue(value: ImportMappingJavaActionParameterValue): Self = StObject.set(x, "Microflows$ImportMappingJavaActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ImportMappingParameterValue(value: ImportMappingParameterValue): Self = StObject.set(x, "Microflows$ImportMappingParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ImportMappingParameterValue(value: ImportMappingParameterValue): Self = StObject.set(x, "Microflows$ImportMappingParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ImportXmlAction(value: ImportXmlAction): Self = StObject.set(x, "Microflows$ImportXmlAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ImportXmlAction(value: ImportXmlAction): Self = StObject.set(x, "Microflows$ImportXmlAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$InheritanceCase(value: InheritanceCase): Self = StObject.set(x, "Microflows$InheritanceCase", value.asInstanceOf[js.Any])
+      inline def setMicroflows$InheritanceCase(value: InheritanceCase): Self = StObject.set(x, "Microflows$InheritanceCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$InheritanceSplit(value: InheritanceSplit): Self = StObject.set(x, "Microflows$InheritanceSplit", value.asInstanceOf[js.Any])
+      inline def setMicroflows$InheritanceSplit(value: InheritanceSplit): Self = StObject.set(x, "Microflows$InheritanceSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Intersect(value: Intersect): Self = StObject.set(x, "Microflows$Intersect", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Intersect(value: Intersect): Self = StObject.set(x, "Microflows$Intersect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$JavaActionCallAction(value: JavaActionCallAction): Self = StObject.set(x, "Microflows$JavaActionCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$JavaActionCallAction(value: JavaActionCallAction): Self = StObject.set(x, "Microflows$JavaActionCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$JavaActionParameterMapping(value: JavaActionParameterMapping): Self = StObject.set(x, "Microflows$JavaActionParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$JavaActionParameterMapping(value: JavaActionParameterMapping): Self = StObject.set(x, "Microflows$JavaActionParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$JavaScriptActionCallAction(value: JavaScriptActionCallAction): Self = StObject.set(x, "Microflows$JavaScriptActionCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$JavaScriptActionCallAction(value: JavaScriptActionCallAction): Self = StObject.set(x, "Microflows$JavaScriptActionCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$JavaScriptActionParameterMapping(value: JavaScriptActionParameterMapping): Self = StObject.set(x, "Microflows$JavaScriptActionParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$JavaScriptActionParameterMapping(value: JavaScriptActionParameterMapping): Self = StObject.set(x, "Microflows$JavaScriptActionParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ListEquals(value: ListEquals): Self = StObject.set(x, "Microflows$ListEquals", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ListEquals(value: ListEquals): Self = StObject.set(x, "Microflows$ListEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ListOperationAction(value: ListOperationAction): Self = StObject.set(x, "Microflows$ListOperationAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ListOperationAction(value: ListOperationAction): Self = StObject.set(x, "Microflows$ListOperationAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$LogMessageAction(value: LogMessageAction): Self = StObject.set(x, "Microflows$LogMessageAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$LogMessageAction(value: LogMessageAction): Self = StObject.set(x, "Microflows$LogMessageAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$LoopedActivity(value: LoopedActivity): Self = StObject.set(x, "Microflows$LoopedActivity", value.asInstanceOf[js.Any])
+      inline def setMicroflows$LoopedActivity(value: LoopedActivity): Self = StObject.set(x, "Microflows$LoopedActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MappingRequestHandling(value: MappingRequestHandling): Self = StObject.set(x, "Microflows$MappingRequestHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MappingRequestHandling(value: MappingRequestHandling): Self = StObject.set(x, "Microflows$MappingRequestHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MemberChange(value: MemberChange): Self = StObject.set(x, "Microflows$MemberChange", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MemberChange(value: MemberChange): Self = StObject.set(x, "Microflows$MemberChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowCall(value: MicroflowCall): Self = StObject.set(x, "Microflows$MicroflowCall", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowCall(value: MicroflowCall): Self = StObject.set(x, "Microflows$MicroflowCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowCallAction(value: MicroflowCallAction): Self = StObject.set(x, "Microflows$MicroflowCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowCallAction(value: MicroflowCallAction): Self = StObject.set(x, "Microflows$MicroflowCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowCallParameterMapping(value: MicroflowCallParameterMapping): Self = StObject.set(x, "Microflows$MicroflowCallParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowCallParameterMapping(value: MicroflowCallParameterMapping): Self = StObject.set(x, "Microflows$MicroflowCallParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowJavaActionParameterValue(value: MicroflowJavaActionParameterValue): Self = StObject.set(x, "Microflows$MicroflowJavaActionParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowJavaActionParameterValue(value: MicroflowJavaActionParameterValue): Self = StObject.set(x, "Microflows$MicroflowJavaActionParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowObjectCollection(value: MicroflowObjectCollection): Self = StObject.set(x, "Microflows$MicroflowObjectCollection", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowObjectCollection(value: MicroflowObjectCollection): Self = StObject.set(x, "Microflows$MicroflowObjectCollection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowParameter(value: MicroflowParameter): Self = StObject.set(x, "Microflows$MicroflowParameter", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowParameter(value: MicroflowParameter): Self = StObject.set(x, "Microflows$MicroflowParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowParameterObject(value: MicroflowParameterObject): Self = StObject.set(x, "Microflows$MicroflowParameterObject", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowParameterObject(value: MicroflowParameterObject): Self = StObject.set(x, "Microflows$MicroflowParameterObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$MicroflowParameterValue(value: MicroflowParameterValue): Self = StObject.set(x, "Microflows$MicroflowParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$MicroflowParameterValue(value: MicroflowParameterValue): Self = StObject.set(x, "Microflows$MicroflowParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$NanoflowCall(value: NanoflowCall): Self = StObject.set(x, "Microflows$NanoflowCall", value.asInstanceOf[js.Any])
+      inline def setMicroflows$NanoflowCall(value: NanoflowCall): Self = StObject.set(x, "Microflows$NanoflowCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$NanoflowCallAction(value: NanoflowCallAction): Self = StObject.set(x, "Microflows$NanoflowCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$NanoflowCallAction(value: NanoflowCallAction): Self = StObject.set(x, "Microflows$NanoflowCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$NanoflowCallParameterMapping(value: NanoflowCallParameterMapping): Self = StObject.set(x, "Microflows$NanoflowCallParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$NanoflowCallParameterMapping(value: NanoflowCallParameterMapping): Self = StObject.set(x, "Microflows$NanoflowCallParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$NanoflowParameter(value: NanoflowParameter): Self = StObject.set(x, "Microflows$NanoflowParameter", value.asInstanceOf[js.Any])
+      inline def setMicroflows$NanoflowParameter(value: NanoflowParameter): Self = StObject.set(x, "Microflows$NanoflowParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$NoCase(value: NoCase): Self = StObject.set(x, "Microflows$NoCase", value.asInstanceOf[js.Any])
+      inline def setMicroflows$NoCase(value: NoCase): Self = StObject.set(x, "Microflows$NoCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$OpenUserTaskAction(value: OpenUserTaskAction): Self = StObject.set(x, "Microflows$OpenUserTaskAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$OpenUserTaskAction(value: OpenUserTaskAction): Self = StObject.set(x, "Microflows$OpenUserTaskAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$PrimitiveTypedTemplateArgument(value: PrimitiveTypedTemplateArgument): Self = StObject.set(x, "Microflows$PrimitiveTypedTemplateArgument", value.asInstanceOf[js.Any])
+      inline def setMicroflows$PrimitiveTypedTemplateArgument(value: PrimitiveTypedTemplateArgument): Self = StObject.set(x, "Microflows$PrimitiveTypedTemplateArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ProxyConfiguration(value: ProxyConfiguration): Self = StObject.set(x, "Microflows$ProxyConfiguration", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ProxyConfiguration(value: ProxyConfiguration): Self = StObject.set(x, "Microflows$ProxyConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$PushToClientAction(value: PushToClientAction): Self = StObject.set(x, "Microflows$PushToClientAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$PushToClientAction(value: PushToClientAction): Self = StObject.set(x, "Microflows$PushToClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RestCallAction(value: RestCallAction): Self = StObject.set(x, "Microflows$RestCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RestCallAction(value: RestCallAction): Self = StObject.set(x, "Microflows$RestCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ResultHandling(value: ResultHandling): Self = StObject.set(x, "Microflows$ResultHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ResultHandling(value: ResultHandling): Self = StObject.set(x, "Microflows$ResultHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RetrieveAction(value: RetrieveAction): Self = StObject.set(x, "Microflows$RetrieveAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RetrieveAction(value: RetrieveAction): Self = StObject.set(x, "Microflows$RetrieveAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RollbackAction(value: RollbackAction): Self = StObject.set(x, "Microflows$RollbackAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RollbackAction(value: RollbackAction): Self = StObject.set(x, "Microflows$RollbackAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RuleCall(value: RuleCall): Self = StObject.set(x, "Microflows$RuleCall", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RuleCall(value: RuleCall): Self = StObject.set(x, "Microflows$RuleCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RuleCallParameterMapping(value: RuleCallParameterMapping): Self = StObject.set(x, "Microflows$RuleCallParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RuleCallParameterMapping(value: RuleCallParameterMapping): Self = StObject.set(x, "Microflows$RuleCallParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RuleParameter(value: RuleParameter): Self = StObject.set(x, "Microflows$RuleParameter", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RuleParameter(value: RuleParameter): Self = StObject.set(x, "Microflows$RuleParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$RuleSplitCondition(value: RuleSplitCondition): Self = StObject.set(x, "Microflows$RuleSplitCondition", value.asInstanceOf[js.Any])
+      inline def setMicroflows$RuleSplitCondition(value: RuleSplitCondition): Self = StObject.set(x, "Microflows$RuleSplitCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$SequenceFlow(value: SequenceFlow): Self = StObject.set(x, "Microflows$SequenceFlow", value.asInstanceOf[js.Any])
+      inline def setMicroflows$SequenceFlow(value: SequenceFlow): Self = StObject.set(x, "Microflows$SequenceFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$SetTaskOutcomeAction(value: SetTaskOutcomeAction): Self = StObject.set(x, "Microflows$SetTaskOutcomeAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$SetTaskOutcomeAction(value: SetTaskOutcomeAction): Self = StObject.set(x, "Microflows$SetTaskOutcomeAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ShowHomePageAction(value: ShowHomePageAction): Self = StObject.set(x, "Microflows$ShowHomePageAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ShowHomePageAction(value: ShowHomePageAction): Self = StObject.set(x, "Microflows$ShowHomePageAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ShowMessageAction(value: ShowMessageAction): Self = StObject.set(x, "Microflows$ShowMessageAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ShowMessageAction(value: ShowMessageAction): Self = StObject.set(x, "Microflows$ShowMessageAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ShowPageAction(value: ShowPageAction): Self = StObject.set(x, "Microflows$ShowPageAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ShowPageAction(value: ShowPageAction): Self = StObject.set(x, "Microflows$ShowPageAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$SimpleRequestHandling(value: SimpleRequestHandling): Self = StObject.set(x, "Microflows$SimpleRequestHandling", value.asInstanceOf[js.Any])
+      inline def setMicroflows$SimpleRequestHandling(value: SimpleRequestHandling): Self = StObject.set(x, "Microflows$SimpleRequestHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Sort(value: Sort): Self = StObject.set(x, "Microflows$Sort", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Sort(value: Sort): Self = StObject.set(x, "Microflows$Sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$SortItem(value: SortItem): Self = StObject.set(x, "Microflows$SortItem", value.asInstanceOf[js.Any])
+      inline def setMicroflows$SortItem(value: SortItem): Self = StObject.set(x, "Microflows$SortItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$SortItemList(value: SortItemList): Self = StObject.set(x, "Microflows$SortItemList", value.asInstanceOf[js.Any])
+      inline def setMicroflows$SortItemList(value: SortItemList): Self = StObject.set(x, "Microflows$SortItemList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$StartEvent(value: StartEvent): Self = StObject.set(x, "Microflows$StartEvent", value.asInstanceOf[js.Any])
+      inline def setMicroflows$StartEvent(value: StartEvent): Self = StObject.set(x, "Microflows$StartEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$StringTemplate(value: StringTemplate): Self = StObject.set(x, "Microflows$StringTemplate", value.asInstanceOf[js.Any])
+      inline def setMicroflows$StringTemplate(value: StringTemplate): Self = StObject.set(x, "Microflows$StringTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$StringTemplateParameterValue(value: StringTemplateParameterValue): Self = StObject.set(x, "Microflows$StringTemplateParameterValue", value.asInstanceOf[js.Any])
+      inline def setMicroflows$StringTemplateParameterValue(value: StringTemplateParameterValue): Self = StObject.set(x, "Microflows$StringTemplateParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Subtract(value: Subtract): Self = StObject.set(x, "Microflows$Subtract", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Subtract(value: Subtract): Self = StObject.set(x, "Microflows$Subtract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$SynchronizeAction(value: SynchronizeAction): Self = StObject.set(x, "Microflows$SynchronizeAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$SynchronizeAction(value: SynchronizeAction): Self = StObject.set(x, "Microflows$SynchronizeAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Tail(value: Tail): Self = StObject.set(x, "Microflows$Tail", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Tail(value: Tail): Self = StObject.set(x, "Microflows$Tail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$TemplateArgument(value: TemplateArgument): Self = StObject.set(x, "Microflows$TemplateArgument", value.asInstanceOf[js.Any])
+      inline def setMicroflows$TemplateArgument(value: TemplateArgument): Self = StObject.set(x, "Microflows$TemplateArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$TextTemplate(value: TextTemplate): Self = StObject.set(x, "Microflows$TextTemplate", value.asInstanceOf[js.Any])
+      inline def setMicroflows$TextTemplate(value: TextTemplate): Self = StObject.set(x, "Microflows$TextTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$TypedTemplate(value: TypedTemplate): Self = StObject.set(x, "Microflows$TypedTemplate", value.asInstanceOf[js.Any])
+      inline def setMicroflows$TypedTemplate(value: TypedTemplate): Self = StObject.set(x, "Microflows$TypedTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$Union(value: Union): Self = StObject.set(x, "Microflows$Union", value.asInstanceOf[js.Any])
+      inline def setMicroflows$Union(value: Union): Self = StObject.set(x, "Microflows$Union", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$ValidationFeedbackAction(value: ValidationFeedbackAction): Self = StObject.set(x, "Microflows$ValidationFeedbackAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$ValidationFeedbackAction(value: ValidationFeedbackAction): Self = StObject.set(x, "Microflows$ValidationFeedbackAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$VariableExport(value: VariableExport): Self = StObject.set(x, "Microflows$VariableExport", value.asInstanceOf[js.Any])
+      inline def setMicroflows$VariableExport(value: VariableExport): Self = StObject.set(x, "Microflows$VariableExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$WebServiceCallAction(value: WebServiceCallAction): Self = StObject.set(x, "Microflows$WebServiceCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$WebServiceCallAction(value: WebServiceCallAction): Self = StObject.set(x, "Microflows$WebServiceCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$WebServiceOperationAdvancedParameterMapping(value: WebServiceOperationAdvancedParameterMapping): Self = StObject.set(x, "Microflows$WebServiceOperationAdvancedParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$WebServiceOperationAdvancedParameterMapping(value: WebServiceOperationAdvancedParameterMapping): Self = StObject.set(x, "Microflows$WebServiceOperationAdvancedParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$WebServiceOperationSimpleParameterMapping(value: WebServiceOperationSimpleParameterMapping): Self = StObject.set(x, "Microflows$WebServiceOperationSimpleParameterMapping", value.asInstanceOf[js.Any])
+      inline def setMicroflows$WebServiceOperationSimpleParameterMapping(value: WebServiceOperationSimpleParameterMapping): Self = StObject.set(x, "Microflows$WebServiceOperationSimpleParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroflows$WorkflowCallAction(value: WorkflowCallAction): Self = StObject.set(x, "Microflows$WorkflowCallAction", value.asInstanceOf[js.Any])
+      inline def setMicroflows$WorkflowCallAction(value: WorkflowCallAction): Self = StObject.set(x, "Microflows$WorkflowCallAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanoflows$NanoflowParameterValue(value: NanoflowParameterValue): Self = StObject.set(x, "Nanoflows$NanoflowParameterValue", value.asInstanceOf[js.Any])
+      inline def setNanoflows$NanoflowParameterValue(value: NanoflowParameterValue): Self = StObject.set(x, "Nanoflows$NanoflowParameterValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativePages$BottomBarItem(value: BottomBarItem): Self = StObject.set(x, "NativePages$BottomBarItem", value.asInstanceOf[js.Any])
+      inline def setNativePages$BottomBarItem(value: BottomBarItem): Self = StObject.set(x, "NativePages$BottomBarItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativePages$NativeLayoutCallArgument(value: NativeLayoutCallArgument): Self = StObject.set(x, "NativePages$NativeLayoutCallArgument", value.asInstanceOf[js.Any])
+      inline def setNativePages$NativeLayoutCallArgument(value: NativeLayoutCallArgument): Self = StObject.set(x, "NativePages$NativeLayoutCallArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativePages$NativePageClientAction(value: NativePageClientAction): Self = StObject.set(x, "NativePages$NativePageClientAction", value.asInstanceOf[js.Any])
+      inline def setNativePages$NativePageClientAction(value: NativePageClientAction): Self = StObject.set(x, "NativePages$NativePageClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativePages$NativePlaceholder(value: NativePlaceholder): Self = StObject.set(x, "NativePages$NativePlaceholder", value.asInstanceOf[js.Any])
+      inline def setNativePages$NativePlaceholder(value: NativePlaceholder): Self = StObject.set(x, "NativePages$NativePlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation$HomePage(value: HomePage): Self = StObject.set(x, "Navigation$HomePage", value.asInstanceOf[js.Any])
+      inline def setNavigation$HomePage(value: HomePage): Self = StObject.set(x, "Navigation$HomePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation$NativeNavigationProfile(value: NativeNavigationProfile): Self = StObject.set(x, "Navigation$NativeNavigationProfile", value.asInstanceOf[js.Any])
+      inline def setNavigation$NativeNavigationProfile(value: NativeNavigationProfile): Self = StObject.set(x, "Navigation$NativeNavigationProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation$NavigationProfile(value: NavigationProfile): Self = StObject.set(x, "Navigation$NavigationProfile", value.asInstanceOf[js.Any])
+      inline def setNavigation$NavigationProfile(value: NavigationProfile): Self = StObject.set(x, "Navigation$NavigationProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation$OfflineEntityConfig(value: OfflineEntityConfig): Self = StObject.set(x, "Navigation$OfflineEntityConfig", value.asInstanceOf[js.Any])
+      inline def setNavigation$OfflineEntityConfig(value: OfflineEntityConfig): Self = StObject.set(x, "Navigation$OfflineEntityConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation$RoleBasedHomePage(value: RoleBasedHomePage): Self = StObject.set(x, "Navigation$RoleBasedHomePage", value.asInstanceOf[js.Any])
+      inline def setNavigation$RoleBasedHomePage(value: RoleBasedHomePage): Self = StObject.set(x, "Navigation$RoleBasedHomePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation$RoleBasedNativeHomePage(value: RoleBasedNativeHomePage): Self = StObject.set(x, "Navigation$RoleBasedNativeHomePage", value.asInstanceOf[js.Any])
+      inline def setNavigation$RoleBasedNativeHomePage(value: RoleBasedNativeHomePage): Self = StObject.set(x, "Navigation$RoleBasedNativeHomePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ActionButton(value: ActionButton): Self = StObject.set(x, "Pages$ActionButton", value.asInstanceOf[js.Any])
+      inline def setPages$ActionButton(value: ActionButton): Self = StObject.set(x, "Pages$ActionButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$Appearance(value: Appearance): Self = StObject.set(x, "Pages$Appearance", value.asInstanceOf[js.Any])
+      inline def setPages$Appearance(value: Appearance): Self = StObject.set(x, "Pages$Appearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$AssociationSource(value: AssociationSource): Self = StObject.set(x, "Pages$AssociationSource", value.asInstanceOf[js.Any])
+      inline def setPages$AssociationSource(value: AssociationSource): Self = StObject.set(x, "Pages$AssociationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$BackButton(value: BackButton): Self = StObject.set(x, "Pages$BackButton", value.asInstanceOf[js.Any])
+      inline def setPages$BackButton(value: BackButton): Self = StObject.set(x, "Pages$BackButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$CallNanoflowClientAction(value: CallNanoflowClientAction): Self = StObject.set(x, "Pages$CallNanoflowClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$CallNanoflowClientAction(value: CallNanoflowClientAction): Self = StObject.set(x, "Pages$CallNanoflowClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$CallWorkflowClientAction(value: CallWorkflowClientAction): Self = StObject.set(x, "Pages$CallWorkflowClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$CallWorkflowClientAction(value: CallWorkflowClientAction): Self = StObject.set(x, "Pages$CallWorkflowClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$CancelButton(value: CancelButton): Self = StObject.set(x, "Pages$CancelButton", value.asInstanceOf[js.Any])
+      inline def setPages$CancelButton(value: CancelButton): Self = StObject.set(x, "Pages$CancelButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$CancelChangesClientAction(value: CancelChangesClientAction): Self = StObject.set(x, "Pages$CancelChangesClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$CancelChangesClientAction(value: CancelChangesClientAction): Self = StObject.set(x, "Pages$CancelChangesClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$CheckBox(value: CheckBox): Self = StObject.set(x, "Pages$CheckBox", value.asInstanceOf[js.Any])
+      inline def setPages$CheckBox(value: CheckBox): Self = StObject.set(x, "Pages$CheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ClientTemplate(value: ClientTemplate): Self = StObject.set(x, "Pages$ClientTemplate", value.asInstanceOf[js.Any])
+      inline def setPages$ClientTemplate(value: ClientTemplate): Self = StObject.set(x, "Pages$ClientTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ClientTemplateParameter(value: ClientTemplateParameter): Self = StObject.set(x, "Pages$ClientTemplateParameter", value.asInstanceOf[js.Any])
+      inline def setPages$ClientTemplateParameter(value: ClientTemplateParameter): Self = StObject.set(x, "Pages$ClientTemplateParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ClosePageClientAction(value: ClosePageClientAction): Self = StObject.set(x, "Pages$ClosePageClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$ClosePageClientAction(value: ClosePageClientAction): Self = StObject.set(x, "Pages$ClosePageClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ComparisonSearchField(value: ComparisonSearchField): Self = StObject.set(x, "Pages$ComparisonSearchField", value.asInstanceOf[js.Any])
+      inline def setPages$ComparisonSearchField(value: ComparisonSearchField): Self = StObject.set(x, "Pages$ComparisonSearchField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ConditionalEditabilitySettings(value: ConditionalEditabilitySettings): Self = StObject.set(x, "Pages$ConditionalEditabilitySettings", value.asInstanceOf[js.Any])
+      inline def setPages$ConditionalEditabilitySettings(value: ConditionalEditabilitySettings): Self = StObject.set(x, "Pages$ConditionalEditabilitySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ConditionalVisibilitySettings(value: ConditionalVisibilitySettings): Self = StObject.set(x, "Pages$ConditionalVisibilitySettings", value.asInstanceOf[js.Any])
+      inline def setPages$ConditionalVisibilitySettings(value: ConditionalVisibilitySettings): Self = StObject.set(x, "Pages$ConditionalVisibilitySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ConfirmationInfo(value: ConfirmationInfo): Self = StObject.set(x, "Pages$ConfirmationInfo", value.asInstanceOf[js.Any])
+      inline def setPages$ConfirmationInfo(value: ConfirmationInfo): Self = StObject.set(x, "Pages$ConfirmationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$CreateObjectClientAction(value: CreateObjectClientAction): Self = StObject.set(x, "Pages$CreateObjectClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$CreateObjectClientAction(value: CreateObjectClientAction): Self = StObject.set(x, "Pages$CreateObjectClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataGrid(value: typings.mendixmodelsdk.pagesMod.pages.DataGrid): Self = StObject.set(x, "Pages$DataGrid", value.asInstanceOf[js.Any])
+      inline def setPages$DataGrid(value: typings.mendixmodelsdk.pagesMod.pages.DataGrid): Self = StObject.set(x, "Pages$DataGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataGridAddButton(value: DataGridAddButton): Self = StObject.set(x, "Pages$DataGridAddButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataGridAddButton(value: DataGridAddButton): Self = StObject.set(x, "Pages$DataGridAddButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataGridExportToCSVButton(value: DataGridExportToCSVButton): Self = StObject.set(x, "Pages$DataGridExportToCSVButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataGridExportToCSVButton(value: DataGridExportToCSVButton): Self = StObject.set(x, "Pages$DataGridExportToCSVButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataGridExportToExcelButton(value: DataGridExportToExcelButton): Self = StObject.set(x, "Pages$DataGridExportToExcelButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataGridExportToExcelButton(value: DataGridExportToExcelButton): Self = StObject.set(x, "Pages$DataGridExportToExcelButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataGridRemoveButton(value: DataGridRemoveButton): Self = StObject.set(x, "Pages$DataGridRemoveButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataGridRemoveButton(value: DataGridRemoveButton): Self = StObject.set(x, "Pages$DataGridRemoveButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataView(value: typings.mendixmodelsdk.pagesMod.pages.DataView): Self = StObject.set(x, "Pages$DataView", value.asInstanceOf[js.Any])
+      inline def setPages$DataView(value: typings.mendixmodelsdk.pagesMod.pages.DataView): Self = StObject.set(x, "Pages$DataView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataViewActionButton(value: DataViewActionButton): Self = StObject.set(x, "Pages$DataViewActionButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataViewActionButton(value: DataViewActionButton): Self = StObject.set(x, "Pages$DataViewActionButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataViewCancelButton(value: DataViewCancelButton): Self = StObject.set(x, "Pages$DataViewCancelButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataViewCancelButton(value: DataViewCancelButton): Self = StObject.set(x, "Pages$DataViewCancelButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataViewCloseButton(value: DataViewCloseButton): Self = StObject.set(x, "Pages$DataViewCloseButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataViewCloseButton(value: DataViewCloseButton): Self = StObject.set(x, "Pages$DataViewCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataViewControlBar(value: DataViewControlBar): Self = StObject.set(x, "Pages$DataViewControlBar", value.asInstanceOf[js.Any])
+      inline def setPages$DataViewControlBar(value: DataViewControlBar): Self = StObject.set(x, "Pages$DataViewControlBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataViewSaveButton(value: DataViewSaveButton): Self = StObject.set(x, "Pages$DataViewSaveButton", value.asInstanceOf[js.Any])
+      inline def setPages$DataViewSaveButton(value: DataViewSaveButton): Self = StObject.set(x, "Pages$DataViewSaveButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DataViewSource(value: DataViewSource): Self = StObject.set(x, "Pages$DataViewSource", value.asInstanceOf[js.Any])
+      inline def setPages$DataViewSource(value: DataViewSource): Self = StObject.set(x, "Pages$DataViewSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DatabaseConstraint(value: DatabaseConstraint): Self = StObject.set(x, "Pages$DatabaseConstraint", value.asInstanceOf[js.Any])
+      inline def setPages$DatabaseConstraint(value: DatabaseConstraint): Self = StObject.set(x, "Pages$DatabaseConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DatePicker(value: DatePicker): Self = StObject.set(x, "Pages$DatePicker", value.asInstanceOf[js.Any])
+      inline def setPages$DatePicker(value: DatePicker): Self = StObject.set(x, "Pages$DatePicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DeleteClientAction(value: DeleteClientAction): Self = StObject.set(x, "Pages$DeleteClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$DeleteClientAction(value: DeleteClientAction): Self = StObject.set(x, "Pages$DeleteClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DesignPropertyValue(value: DesignPropertyValue): Self = StObject.set(x, "Pages$DesignPropertyValue", value.asInstanceOf[js.Any])
+      inline def setPages$DesignPropertyValue(value: DesignPropertyValue): Self = StObject.set(x, "Pages$DesignPropertyValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DivContainer(value: DivContainer): Self = StObject.set(x, "Pages$DivContainer", value.asInstanceOf[js.Any])
+      inline def setPages$DivContainer(value: DivContainer): Self = StObject.set(x, "Pages$DivContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DropDown(value: DropDown): Self = StObject.set(x, "Pages$DropDown", value.asInstanceOf[js.Any])
+      inline def setPages$DropDown(value: DropDown): Self = StObject.set(x, "Pages$DropDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DropDownButton(value: DropDownButton): Self = StObject.set(x, "Pages$DropDownButton", value.asInstanceOf[js.Any])
+      inline def setPages$DropDownButton(value: DropDownButton): Self = StObject.set(x, "Pages$DropDownButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DropDownButtonItem(value: DropDownButtonItem): Self = StObject.set(x, "Pages$DropDownButtonItem", value.asInstanceOf[js.Any])
+      inline def setPages$DropDownButtonItem(value: DropDownButtonItem): Self = StObject.set(x, "Pages$DropDownButtonItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DropDownSearchField(value: DropDownSearchField): Self = StObject.set(x, "Pages$DropDownSearchField", value.asInstanceOf[js.Any])
+      inline def setPages$DropDownSearchField(value: DropDownSearchField): Self = StObject.set(x, "Pages$DropDownSearchField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DynamicImageViewer(value: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): Self = StObject.set(x, "Pages$DynamicImageViewer", value.asInstanceOf[js.Any])
+      inline def setPages$DynamicImageViewer(value: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): Self = StObject.set(x, "Pages$DynamicImageViewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$DynamicText(value: DynamicText): Self = StObject.set(x, "Pages$DynamicText", value.asInstanceOf[js.Any])
+      inline def setPages$DynamicText(value: DynamicText): Self = StObject.set(x, "Pages$DynamicText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$EditPageTemplateType(value: EditPageTemplateType): Self = StObject.set(x, "Pages$EditPageTemplateType", value.asInstanceOf[js.Any])
+      inline def setPages$EditPageTemplateType(value: EditPageTemplateType): Self = StObject.set(x, "Pages$EditPageTemplateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$FileManager(value: FileManager): Self = StObject.set(x, "Pages$FileManager", value.asInstanceOf[js.Any])
+      inline def setPages$FileManager(value: FileManager): Self = StObject.set(x, "Pages$FileManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$FormattingInfo(value: FormattingInfo): Self = StObject.set(x, "Pages$FormattingInfo", value.asInstanceOf[js.Any])
+      inline def setPages$FormattingInfo(value: FormattingInfo): Self = StObject.set(x, "Pages$FormattingInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GlyphIcon(value: GlyphIcon): Self = StObject.set(x, "Pages$GlyphIcon", value.asInstanceOf[js.Any])
+      inline def setPages$GlyphIcon(value: GlyphIcon): Self = StObject.set(x, "Pages$GlyphIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridActionButton(value: GridActionButton): Self = StObject.set(x, "Pages$GridActionButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridActionButton(value: GridActionButton): Self = StObject.set(x, "Pages$GridActionButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridColumn(value: GridColumn): Self = StObject.set(x, "Pages$GridColumn", value.asInstanceOf[js.Any])
+      inline def setPages$GridColumn(value: GridColumn): Self = StObject.set(x, "Pages$GridColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridControlBar(value: GridControlBar): Self = StObject.set(x, "Pages$GridControlBar", value.asInstanceOf[js.Any])
+      inline def setPages$GridControlBar(value: GridControlBar): Self = StObject.set(x, "Pages$GridControlBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridDatabaseSource(value: GridDatabaseSource): Self = StObject.set(x, "Pages$GridDatabaseSource", value.asInstanceOf[js.Any])
+      inline def setPages$GridDatabaseSource(value: GridDatabaseSource): Self = StObject.set(x, "Pages$GridDatabaseSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridDeleteButton(value: GridDeleteButton): Self = StObject.set(x, "Pages$GridDeleteButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridDeleteButton(value: GridDeleteButton): Self = StObject.set(x, "Pages$GridDeleteButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridDeselectAllButton(value: GridDeselectAllButton): Self = StObject.set(x, "Pages$GridDeselectAllButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridDeselectAllButton(value: GridDeselectAllButton): Self = StObject.set(x, "Pages$GridDeselectAllButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridEditButton(value: GridEditButton): Self = StObject.set(x, "Pages$GridEditButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridEditButton(value: GridEditButton): Self = StObject.set(x, "Pages$GridEditButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridNewButton(value: GridNewButton): Self = StObject.set(x, "Pages$GridNewButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridNewButton(value: GridNewButton): Self = StObject.set(x, "Pages$GridNewButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridSearchButton(value: GridSearchButton): Self = StObject.set(x, "Pages$GridSearchButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridSearchButton(value: GridSearchButton): Self = StObject.set(x, "Pages$GridSearchButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridSelectAllButton(value: GridSelectAllButton): Self = StObject.set(x, "Pages$GridSelectAllButton", value.asInstanceOf[js.Any])
+      inline def setPages$GridSelectAllButton(value: GridSelectAllButton): Self = StObject.set(x, "Pages$GridSelectAllButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridSortBar(value: typings.mendixmodelsdk.pagesMod.pages.GridSortBar): Self = StObject.set(x, "Pages$GridSortBar", value.asInstanceOf[js.Any])
+      inline def setPages$GridSortBar(value: typings.mendixmodelsdk.pagesMod.pages.GridSortBar): Self = StObject.set(x, "Pages$GridSortBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridSortItem(value: typings.mendixmodelsdk.pagesMod.pages.GridSortItem): Self = StObject.set(x, "Pages$GridSortItem", value.asInstanceOf[js.Any])
+      inline def setPages$GridSortItem(value: typings.mendixmodelsdk.pagesMod.pages.GridSortItem): Self = StObject.set(x, "Pages$GridSortItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GridXPathSource(value: GridXPathSource): Self = StObject.set(x, "Pages$GridXPathSource", value.asInstanceOf[js.Any])
+      inline def setPages$GridXPathSource(value: GridXPathSource): Self = StObject.set(x, "Pages$GridXPathSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$GroupBox(value: GroupBox): Self = StObject.set(x, "Pages$GroupBox", value.asInstanceOf[js.Any])
+      inline def setPages$GroupBox(value: GroupBox): Self = StObject.set(x, "Pages$GroupBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$Header(value: typings.mendixmodelsdk.pagesMod.pages.Header): Self = StObject.set(x, "Pages$Header", value.asInstanceOf[js.Any])
+      inline def setPages$Header(value: typings.mendixmodelsdk.pagesMod.pages.Header): Self = StObject.set(x, "Pages$Header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$HorizontalSplitPane(value: HorizontalSplitPane): Self = StObject.set(x, "Pages$HorizontalSplitPane", value.asInstanceOf[js.Any])
+      inline def setPages$HorizontalSplitPane(value: HorizontalSplitPane): Self = StObject.set(x, "Pages$HorizontalSplitPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ImageIcon(value: ImageIcon): Self = StObject.set(x, "Pages$ImageIcon", value.asInstanceOf[js.Any])
+      inline def setPages$ImageIcon(value: ImageIcon): Self = StObject.set(x, "Pages$ImageIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ImageUploader(value: ImageUploader): Self = StObject.set(x, "Pages$ImageUploader", value.asInstanceOf[js.Any])
+      inline def setPages$ImageUploader(value: ImageUploader): Self = StObject.set(x, "Pages$ImageUploader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ImageViewerSource(value: ImageViewerSource): Self = StObject.set(x, "Pages$ImageViewerSource", value.asInstanceOf[js.Any])
+      inline def setPages$ImageViewerSource(value: ImageViewerSource): Self = StObject.set(x, "Pages$ImageViewerSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$InputReferenceSetSelector(value: InputReferenceSetSelector): Self = StObject.set(x, "Pages$InputReferenceSetSelector", value.asInstanceOf[js.Any])
+      inline def setPages$InputReferenceSetSelector(value: InputReferenceSetSelector): Self = StObject.set(x, "Pages$InputReferenceSetSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$Label(value: Label): Self = StObject.set(x, "Pages$Label", value.asInstanceOf[js.Any])
+      inline def setPages$Label(value: Label): Self = StObject.set(x, "Pages$Label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LayoutCall(value: LayoutCall): Self = StObject.set(x, "Pages$LayoutCall", value.asInstanceOf[js.Any])
+      inline def setPages$LayoutCall(value: LayoutCall): Self = StObject.set(x, "Pages$LayoutCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LayoutCallArgument(value: LayoutCallArgument): Self = StObject.set(x, "Pages$LayoutCallArgument", value.asInstanceOf[js.Any])
+      inline def setPages$LayoutCallArgument(value: LayoutCallArgument): Self = StObject.set(x, "Pages$LayoutCallArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LayoutGrid(value: LayoutGrid): Self = StObject.set(x, "Pages$LayoutGrid", value.asInstanceOf[js.Any])
+      inline def setPages$LayoutGrid(value: LayoutGrid): Self = StObject.set(x, "Pages$LayoutGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LayoutGridColumn(value: LayoutGridColumn): Self = StObject.set(x, "Pages$LayoutGridColumn", value.asInstanceOf[js.Any])
+      inline def setPages$LayoutGridColumn(value: LayoutGridColumn): Self = StObject.set(x, "Pages$LayoutGridColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LayoutGridRow(value: LayoutGridRow): Self = StObject.set(x, "Pages$LayoutGridRow", value.asInstanceOf[js.Any])
+      inline def setPages$LayoutGridRow(value: LayoutGridRow): Self = StObject.set(x, "Pages$LayoutGridRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LayoutParameter(value: LayoutParameter): Self = StObject.set(x, "Pages$LayoutParameter", value.asInstanceOf[js.Any])
+      inline def setPages$LayoutParameter(value: LayoutParameter): Self = StObject.set(x, "Pages$LayoutParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LinkButton(value: LinkButton): Self = StObject.set(x, "Pages$LinkButton", value.asInstanceOf[js.Any])
+      inline def setPages$LinkButton(value: LinkButton): Self = StObject.set(x, "Pages$LinkButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ListView(value: ListView): Self = StObject.set(x, "Pages$ListView", value.asInstanceOf[js.Any])
+      inline def setPages$ListView(value: ListView): Self = StObject.set(x, "Pages$ListView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ListViewDatabaseSource(value: ListViewDatabaseSource): Self = StObject.set(x, "Pages$ListViewDatabaseSource", value.asInstanceOf[js.Any])
+      inline def setPages$ListViewDatabaseSource(value: ListViewDatabaseSource): Self = StObject.set(x, "Pages$ListViewDatabaseSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ListViewSearch(value: ListViewSearch): Self = StObject.set(x, "Pages$ListViewSearch", value.asInstanceOf[js.Any])
+      inline def setPages$ListViewSearch(value: ListViewSearch): Self = StObject.set(x, "Pages$ListViewSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ListViewTemplate(value: ListViewTemplate): Self = StObject.set(x, "Pages$ListViewTemplate", value.asInstanceOf[js.Any])
+      inline def setPages$ListViewTemplate(value: ListViewTemplate): Self = StObject.set(x, "Pages$ListViewTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ListViewXPathSource(value: ListViewXPathSource): Self = StObject.set(x, "Pages$ListViewXPathSource", value.asInstanceOf[js.Any])
+      inline def setPages$ListViewXPathSource(value: ListViewXPathSource): Self = StObject.set(x, "Pages$ListViewXPathSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ListenTargetSource(value: ListenTargetSource): Self = StObject.set(x, "Pages$ListenTargetSource", value.asInstanceOf[js.Any])
+      inline def setPages$ListenTargetSource(value: ListenTargetSource): Self = StObject.set(x, "Pages$ListenTargetSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LoginButton(value: LoginButton): Self = StObject.set(x, "Pages$LoginButton", value.asInstanceOf[js.Any])
+      inline def setPages$LoginButton(value: LoginButton): Self = StObject.set(x, "Pages$LoginButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LoginIdTextBox(value: LoginIdTextBox): Self = StObject.set(x, "Pages$LoginIdTextBox", value.asInstanceOf[js.Any])
+      inline def setPages$LoginIdTextBox(value: LoginIdTextBox): Self = StObject.set(x, "Pages$LoginIdTextBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$LogoutButton(value: LogoutButton): Self = StObject.set(x, "Pages$LogoutButton", value.asInstanceOf[js.Any])
+      inline def setPages$LogoutButton(value: LogoutButton): Self = StObject.set(x, "Pages$LogoutButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MasterDetail(value: MasterDetail): Self = StObject.set(x, "Pages$MasterDetail", value.asInstanceOf[js.Any])
+      inline def setPages$MasterDetail(value: MasterDetail): Self = StObject.set(x, "Pages$MasterDetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MasterDetailDetailRegion(value: MasterDetailDetailRegion): Self = StObject.set(x, "Pages$MasterDetailDetailRegion", value.asInstanceOf[js.Any])
+      inline def setPages$MasterDetailDetailRegion(value: MasterDetailDetailRegion): Self = StObject.set(x, "Pages$MasterDetailDetailRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MasterDetailMasterRegion(value: MasterDetailMasterRegion): Self = StObject.set(x, "Pages$MasterDetailMasterRegion", value.asInstanceOf[js.Any])
+      inline def setPages$MasterDetailMasterRegion(value: MasterDetailMasterRegion): Self = StObject.set(x, "Pages$MasterDetailMasterRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MenuBar(value: MenuBar): Self = StObject.set(x, "Pages$MenuBar", value.asInstanceOf[js.Any])
+      inline def setPages$MenuBar(value: MenuBar): Self = StObject.set(x, "Pages$MenuBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MenuDocumentSource(value: MenuDocumentSource): Self = StObject.set(x, "Pages$MenuDocumentSource", value.asInstanceOf[js.Any])
+      inline def setPages$MenuDocumentSource(value: MenuDocumentSource): Self = StObject.set(x, "Pages$MenuDocumentSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MicroflowClientAction(value: MicroflowClientAction): Self = StObject.set(x, "Pages$MicroflowClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$MicroflowClientAction(value: MicroflowClientAction): Self = StObject.set(x, "Pages$MicroflowClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MicroflowParameterMapping(value: MicroflowParameterMapping): Self = StObject.set(x, "Pages$MicroflowParameterMapping", value.asInstanceOf[js.Any])
+      inline def setPages$MicroflowParameterMapping(value: MicroflowParameterMapping): Self = StObject.set(x, "Pages$MicroflowParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MicroflowSettings(value: MicroflowSettings): Self = StObject.set(x, "Pages$MicroflowSettings", value.asInstanceOf[js.Any])
+      inline def setPages$MicroflowSettings(value: MicroflowSettings): Self = StObject.set(x, "Pages$MicroflowSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$MicroflowSource(value: MicroflowSource): Self = StObject.set(x, "Pages$MicroflowSource", value.asInstanceOf[js.Any])
+      inline def setPages$MicroflowSource(value: MicroflowSource): Self = StObject.set(x, "Pages$MicroflowSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NanoflowParameterMapping(value: NanoflowParameterMapping): Self = StObject.set(x, "Pages$NanoflowParameterMapping", value.asInstanceOf[js.Any])
+      inline def setPages$NanoflowParameterMapping(value: NanoflowParameterMapping): Self = StObject.set(x, "Pages$NanoflowParameterMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NanoflowSource(value: NanoflowSource): Self = StObject.set(x, "Pages$NanoflowSource", value.asInstanceOf[js.Any])
+      inline def setPages$NanoflowSource(value: NanoflowSource): Self = StObject.set(x, "Pages$NanoflowSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NativeLayoutContent(value: NativeLayoutContent): Self = StObject.set(x, "Pages$NativeLayoutContent", value.asInstanceOf[js.Any])
+      inline def setPages$NativeLayoutContent(value: NativeLayoutContent): Self = StObject.set(x, "Pages$NativeLayoutContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NavigationList(value: NavigationList): Self = StObject.set(x, "Pages$NavigationList", value.asInstanceOf[js.Any])
+      inline def setPages$NavigationList(value: NavigationList): Self = StObject.set(x, "Pages$NavigationList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NavigationListItem(value: NavigationListItem): Self = StObject.set(x, "Pages$NavigationListItem", value.asInstanceOf[js.Any])
+      inline def setPages$NavigationListItem(value: NavigationListItem): Self = StObject.set(x, "Pages$NavigationListItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NavigationSource(value: NavigationSource): Self = StObject.set(x, "Pages$NavigationSource", value.asInstanceOf[js.Any])
+      inline def setPages$NavigationSource(value: NavigationSource): Self = StObject.set(x, "Pages$NavigationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NavigationTree(value: NavigationTree): Self = StObject.set(x, "Pages$NavigationTree", value.asInstanceOf[js.Any])
+      inline def setPages$NavigationTree(value: NavigationTree): Self = StObject.set(x, "Pages$NavigationTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NewButton(value: NewButton): Self = StObject.set(x, "Pages$NewButton", value.asInstanceOf[js.Any])
+      inline def setPages$NewButton(value: NewButton): Self = StObject.set(x, "Pages$NewButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$NoClientAction(value: NoClientAction): Self = StObject.set(x, "Pages$NoClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$NoClientAction(value: NoClientAction): Self = StObject.set(x, "Pages$NoClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OfflineSchema(value: OfflineSchema): Self = StObject.set(x, "Pages$OfflineSchema", value.asInstanceOf[js.Any])
+      inline def setPages$OfflineSchema(value: OfflineSchema): Self = StObject.set(x, "Pages$OfflineSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OfflineSchemaFetchInstruction(value: OfflineSchemaFetchInstruction): Self = StObject.set(x, "Pages$OfflineSchemaFetchInstruction", value.asInstanceOf[js.Any])
+      inline def setPages$OfflineSchemaFetchInstruction(value: OfflineSchemaFetchInstruction): Self = StObject.set(x, "Pages$OfflineSchemaFetchInstruction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OnClickEnlarge(value: OnClickEnlarge): Self = StObject.set(x, "Pages$OnClickEnlarge", value.asInstanceOf[js.Any])
+      inline def setPages$OnClickEnlarge(value: OnClickEnlarge): Self = StObject.set(x, "Pages$OnClickEnlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OnClickMicroflow(value: OnClickMicroflow): Self = StObject.set(x, "Pages$OnClickMicroflow", value.asInstanceOf[js.Any])
+      inline def setPages$OnClickMicroflow(value: OnClickMicroflow): Self = StObject.set(x, "Pages$OnClickMicroflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OnClickNothing(value: OnClickNothing): Self = StObject.set(x, "Pages$OnClickNothing", value.asInstanceOf[js.Any])
+      inline def setPages$OnClickNothing(value: OnClickNothing): Self = StObject.set(x, "Pages$OnClickNothing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OpenLinkClientAction(value: OpenLinkClientAction): Self = StObject.set(x, "Pages$OpenLinkClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$OpenLinkClientAction(value: OpenLinkClientAction): Self = StObject.set(x, "Pages$OpenLinkClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OpenUserTaskClientAction(value: OpenUserTaskClientAction): Self = StObject.set(x, "Pages$OpenUserTaskClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$OpenUserTaskClientAction(value: OpenUserTaskClientAction): Self = StObject.set(x, "Pages$OpenUserTaskClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$OpenWorkflowClientAction(value: OpenWorkflowClientAction): Self = StObject.set(x, "Pages$OpenWorkflowClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$OpenWorkflowClientAction(value: OpenWorkflowClientAction): Self = StObject.set(x, "Pages$OpenWorkflowClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$PageClientAction(value: PageClientAction): Self = StObject.set(x, "Pages$PageClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$PageClientAction(value: PageClientAction): Self = StObject.set(x, "Pages$PageClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$PageForSpecialization(value: PageForSpecialization): Self = StObject.set(x, "Pages$PageForSpecialization", value.asInstanceOf[js.Any])
+      inline def setPages$PageForSpecialization(value: PageForSpecialization): Self = StObject.set(x, "Pages$PageForSpecialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$PageSettings(value: PageSettings): Self = StObject.set(x, "Pages$PageSettings", value.asInstanceOf[js.Any])
+      inline def setPages$PageSettings(value: PageSettings): Self = StObject.set(x, "Pages$PageSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$PageVariable(value: PageVariable): Self = StObject.set(x, "Pages$PageVariable", value.asInstanceOf[js.Any])
+      inline def setPages$PageVariable(value: PageVariable): Self = StObject.set(x, "Pages$PageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$PasswordTextBox(value: PasswordTextBox): Self = StObject.set(x, "Pages$PasswordTextBox", value.asInstanceOf[js.Any])
+      inline def setPages$PasswordTextBox(value: PasswordTextBox): Self = StObject.set(x, "Pages$PasswordTextBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$Placeholder(value: Placeholder): Self = StObject.set(x, "Pages$Placeholder", value.asInstanceOf[js.Any])
+      inline def setPages$Placeholder(value: Placeholder): Self = StObject.set(x, "Pages$Placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$RadioButtonGroup(value: RadioButtonGroup): Self = StObject.set(x, "Pages$RadioButtonGroup", value.asInstanceOf[js.Any])
+      inline def setPages$RadioButtonGroup(value: RadioButtonGroup): Self = StObject.set(x, "Pages$RadioButtonGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$RangeSearchField(value: RangeSearchField): Self = StObject.set(x, "Pages$RangeSearchField", value.asInstanceOf[js.Any])
+      inline def setPages$RangeSearchField(value: RangeSearchField): Self = StObject.set(x, "Pages$RangeSearchField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ReferenceSelector(value: ReferenceSelector): Self = StObject.set(x, "Pages$ReferenceSelector", value.asInstanceOf[js.Any])
+      inline def setPages$ReferenceSelector(value: ReferenceSelector): Self = StObject.set(x, "Pages$ReferenceSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ReferenceSetSelector(value: ReferenceSetSelector): Self = StObject.set(x, "Pages$ReferenceSetSelector", value.asInstanceOf[js.Any])
+      inline def setPages$ReferenceSetSelector(value: ReferenceSetSelector): Self = StObject.set(x, "Pages$ReferenceSetSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ReferenceSetSource(value: ReferenceSetSource): Self = StObject.set(x, "Pages$ReferenceSetSource", value.asInstanceOf[js.Any])
+      inline def setPages$ReferenceSetSource(value: ReferenceSetSource): Self = StObject.set(x, "Pages$ReferenceSetSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$RegularPageTemplateType(value: RegularPageTemplateType): Self = StObject.set(x, "Pages$RegularPageTemplateType", value.asInstanceOf[js.Any])
+      inline def setPages$RegularPageTemplateType(value: RegularPageTemplateType): Self = StObject.set(x, "Pages$RegularPageTemplateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$RetrievalQuery(value: RetrievalQuery): Self = StObject.set(x, "Pages$RetrievalQuery", value.asInstanceOf[js.Any])
+      inline def setPages$RetrievalQuery(value: RetrievalQuery): Self = StObject.set(x, "Pages$RetrievalQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$RetrievalQueryParameter(value: RetrievalQueryParameter): Self = StObject.set(x, "Pages$RetrievalQueryParameter", value.asInstanceOf[js.Any])
+      inline def setPages$RetrievalQueryParameter(value: RetrievalQueryParameter): Self = StObject.set(x, "Pages$RetrievalQueryParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$RetrievalSchema(value: RetrievalSchema): Self = StObject.set(x, "Pages$RetrievalSchema", value.asInstanceOf[js.Any])
+      inline def setPages$RetrievalSchema(value: RetrievalSchema): Self = StObject.set(x, "Pages$RetrievalSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SaveButton(value: SaveButton): Self = StObject.set(x, "Pages$SaveButton", value.asInstanceOf[js.Any])
+      inline def setPages$SaveButton(value: SaveButton): Self = StObject.set(x, "Pages$SaveButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SaveChangesClientAction(value: SaveChangesClientAction): Self = StObject.set(x, "Pages$SaveChangesClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$SaveChangesClientAction(value: SaveChangesClientAction): Self = StObject.set(x, "Pages$SaveChangesClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ScrollContainer(value: ScrollContainer): Self = StObject.set(x, "Pages$ScrollContainer", value.asInstanceOf[js.Any])
+      inline def setPages$ScrollContainer(value: ScrollContainer): Self = StObject.set(x, "Pages$ScrollContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ScrollContainerRegion(value: ScrollContainerRegion): Self = StObject.set(x, "Pages$ScrollContainerRegion", value.asInstanceOf[js.Any])
+      inline def setPages$ScrollContainerRegion(value: ScrollContainerRegion): Self = StObject.set(x, "Pages$ScrollContainerRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SearchBar(value: SearchBar): Self = StObject.set(x, "Pages$SearchBar", value.asInstanceOf[js.Any])
+      inline def setPages$SearchBar(value: SearchBar): Self = StObject.set(x, "Pages$SearchBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SelectButton(value: SelectButton): Self = StObject.set(x, "Pages$SelectButton", value.asInstanceOf[js.Any])
+      inline def setPages$SelectButton(value: SelectButton): Self = StObject.set(x, "Pages$SelectButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SelectPageTemplateType(value: SelectPageTemplateType): Self = StObject.set(x, "Pages$SelectPageTemplateType", value.asInstanceOf[js.Any])
+      inline def setPages$SelectPageTemplateType(value: SelectPageTemplateType): Self = StObject.set(x, "Pages$SelectPageTemplateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SelectorDatabaseSource(value: SelectorDatabaseSource): Self = StObject.set(x, "Pages$SelectorDatabaseSource", value.asInstanceOf[js.Any])
+      inline def setPages$SelectorDatabaseSource(value: SelectorDatabaseSource): Self = StObject.set(x, "Pages$SelectorDatabaseSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SelectorMicroflowSource(value: SelectorMicroflowSource): Self = StObject.set(x, "Pages$SelectorMicroflowSource", value.asInstanceOf[js.Any])
+      inline def setPages$SelectorMicroflowSource(value: SelectorMicroflowSource): Self = StObject.set(x, "Pages$SelectorMicroflowSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SelectorXPathSource(value: SelectorXPathSource): Self = StObject.set(x, "Pages$SelectorXPathSource", value.asInstanceOf[js.Any])
+      inline def setPages$SelectorXPathSource(value: SelectorXPathSource): Self = StObject.set(x, "Pages$SelectorXPathSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SetTaskOutcomeClientAction(value: SetTaskOutcomeClientAction): Self = StObject.set(x, "Pages$SetTaskOutcomeClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$SetTaskOutcomeClientAction(value: SetTaskOutcomeClientAction): Self = StObject.set(x, "Pages$SetTaskOutcomeClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SidebarToggleButton(value: SidebarToggleButton): Self = StObject.set(x, "Pages$SidebarToggleButton", value.asInstanceOf[js.Any])
+      inline def setPages$SidebarToggleButton(value: SidebarToggleButton): Self = StObject.set(x, "Pages$SidebarToggleButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SignOutClientAction(value: SignOutClientAction): Self = StObject.set(x, "Pages$SignOutClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$SignOutClientAction(value: SignOutClientAction): Self = StObject.set(x, "Pages$SignOutClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SimpleMenuBar(value: SimpleMenuBar): Self = StObject.set(x, "Pages$SimpleMenuBar", value.asInstanceOf[js.Any])
+      inline def setPages$SimpleMenuBar(value: SimpleMenuBar): Self = StObject.set(x, "Pages$SimpleMenuBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SnippetCall(value: SnippetCall): Self = StObject.set(x, "Pages$SnippetCall", value.asInstanceOf[js.Any])
+      inline def setPages$SnippetCall(value: SnippetCall): Self = StObject.set(x, "Pages$SnippetCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SnippetCallWidget(value: SnippetCallWidget): Self = StObject.set(x, "Pages$SnippetCallWidget", value.asInstanceOf[js.Any])
+      inline def setPages$SnippetCallWidget(value: SnippetCallWidget): Self = StObject.set(x, "Pages$SnippetCallWidget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$StaticImageViewer(value: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): Self = StObject.set(x, "Pages$StaticImageViewer", value.asInstanceOf[js.Any])
+      inline def setPages$StaticImageViewer(value: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): Self = StObject.set(x, "Pages$StaticImageViewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$StaticOrDynamicString(value: StaticOrDynamicString): Self = StObject.set(x, "Pages$StaticOrDynamicString", value.asInstanceOf[js.Any])
+      inline def setPages$StaticOrDynamicString(value: StaticOrDynamicString): Self = StObject.set(x, "Pages$StaticOrDynamicString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SyncButton(value: SyncButton): Self = StObject.set(x, "Pages$SyncButton", value.asInstanceOf[js.Any])
+      inline def setPages$SyncButton(value: SyncButton): Self = StObject.set(x, "Pages$SyncButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$SyncClientAction(value: SyncClientAction): Self = StObject.set(x, "Pages$SyncClientAction", value.asInstanceOf[js.Any])
+      inline def setPages$SyncClientAction(value: SyncClientAction): Self = StObject.set(x, "Pages$SyncClientAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TabContainer(value: TabContainer): Self = StObject.set(x, "Pages$TabContainer", value.asInstanceOf[js.Any])
+      inline def setPages$TabContainer(value: TabContainer): Self = StObject.set(x, "Pages$TabContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TabPage(value: TabPage): Self = StObject.set(x, "Pages$TabPage", value.asInstanceOf[js.Any])
+      inline def setPages$TabPage(value: TabPage): Self = StObject.set(x, "Pages$TabPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$Table(value: typings.mendixmodelsdk.pagesMod.pages.Table): Self = StObject.set(x, "Pages$Table", value.asInstanceOf[js.Any])
+      inline def setPages$Table(value: typings.mendixmodelsdk.pagesMod.pages.Table): Self = StObject.set(x, "Pages$Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TableCell(value: typings.mendixmodelsdk.pagesMod.pages.TableCell): Self = StObject.set(x, "Pages$TableCell", value.asInstanceOf[js.Any])
+      inline def setPages$TableCell(value: typings.mendixmodelsdk.pagesMod.pages.TableCell): Self = StObject.set(x, "Pages$TableCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TableColumn(value: TableColumn): Self = StObject.set(x, "Pages$TableColumn", value.asInstanceOf[js.Any])
+      inline def setPages$TableColumn(value: TableColumn): Self = StObject.set(x, "Pages$TableColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TableRow(value: typings.mendixmodelsdk.pagesMod.pages.TableRow): Self = StObject.set(x, "Pages$TableRow", value.asInstanceOf[js.Any])
+      inline def setPages$TableRow(value: typings.mendixmodelsdk.pagesMod.pages.TableRow): Self = StObject.set(x, "Pages$TableRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TemplateGrid(value: typings.mendixmodelsdk.pagesMod.pages.TemplateGrid): Self = StObject.set(x, "Pages$TemplateGrid", value.asInstanceOf[js.Any])
+      inline def setPages$TemplateGrid(value: typings.mendixmodelsdk.pagesMod.pages.TemplateGrid): Self = StObject.set(x, "Pages$TemplateGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TemplateGridContents(value: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): Self = StObject.set(x, "Pages$TemplateGridContents", value.asInstanceOf[js.Any])
+      inline def setPages$TemplateGridContents(value: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): Self = StObject.set(x, "Pages$TemplateGridContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TemplatePlaceholder(value: TemplatePlaceholder): Self = StObject.set(x, "Pages$TemplatePlaceholder", value.asInstanceOf[js.Any])
+      inline def setPages$TemplatePlaceholder(value: TemplatePlaceholder): Self = StObject.set(x, "Pages$TemplatePlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TextArea(value: TextArea): Self = StObject.set(x, "Pages$TextArea", value.asInstanceOf[js.Any])
+      inline def setPages$TextArea(value: TextArea): Self = StObject.set(x, "Pages$TextArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$TextBox(value: TextBox): Self = StObject.set(x, "Pages$TextBox", value.asInstanceOf[js.Any])
+      inline def setPages$TextBox(value: TextBox): Self = StObject.set(x, "Pages$TextBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$Title(value: typings.mendixmodelsdk.pagesMod.pages.Title): Self = StObject.set(x, "Pages$Title", value.asInstanceOf[js.Any])
+      inline def setPages$Title(value: typings.mendixmodelsdk.pagesMod.pages.Title): Self = StObject.set(x, "Pages$Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$UserTaskTemplateType(value: UserTaskTemplateType): Self = StObject.set(x, "Pages$UserTaskTemplateType", value.asInstanceOf[js.Any])
+      inline def setPages$UserTaskTemplateType(value: UserTaskTemplateType): Self = StObject.set(x, "Pages$UserTaskTemplateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$ValidationMessage(value: ValidationMessage): Self = StObject.set(x, "Pages$ValidationMessage", value.asInstanceOf[js.Any])
+      inline def setPages$ValidationMessage(value: ValidationMessage): Self = StObject.set(x, "Pages$ValidationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$VerticalFlow(value: VerticalFlow): Self = StObject.set(x, "Pages$VerticalFlow", value.asInstanceOf[js.Any])
+      inline def setPages$VerticalFlow(value: VerticalFlow): Self = StObject.set(x, "Pages$VerticalFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$VerticalSplitPane(value: VerticalSplitPane): Self = StObject.set(x, "Pages$VerticalSplitPane", value.asInstanceOf[js.Any])
+      inline def setPages$VerticalSplitPane(value: VerticalSplitPane): Self = StObject.set(x, "Pages$VerticalSplitPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$WebLayoutContent(value: WebLayoutContent): Self = StObject.set(x, "Pages$WebLayoutContent", value.asInstanceOf[js.Any])
+      inline def setPages$WebLayoutContent(value: WebLayoutContent): Self = StObject.set(x, "Pages$WebLayoutContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$WidgetValidation(value: WidgetValidation): Self = StObject.set(x, "Pages$WidgetValidation", value.asInstanceOf[js.Any])
+      inline def setPages$WidgetValidation(value: WidgetValidation): Self = StObject.set(x, "Pages$WidgetValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages$WorkflowOverviewTemplateType(value: WorkflowOverviewTemplateType): Self = StObject.set(x, "Pages$WorkflowOverviewTemplateType", value.asInstanceOf[js.Any])
+      inline def setPages$WorkflowOverviewTemplateType(value: WorkflowOverviewTemplateType): Self = StObject.set(x, "Pages$WorkflowOverviewTemplateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjects$OneTimeConversionMarker(value: OneTimeConversionMarker): Self = StObject.set(x, "Projects$OneTimeConversionMarker", value.asInstanceOf[js.Any])
+      inline def setProjects$OneTimeConversionMarker(value: OneTimeConversionMarker): Self = StObject.set(x, "Projects$OneTimeConversionMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$BasicReport(value: BasicReport): Self = StObject.set(x, "Reports$BasicReport", value.asInstanceOf[js.Any])
+      inline def setReports$BasicReport(value: BasicReport): Self = StObject.set(x, "Reports$BasicReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$BasicReportAggregate(value: BasicReportAggregate): Self = StObject.set(x, "Reports$BasicReportAggregate", value.asInstanceOf[js.Any])
+      inline def setReports$BasicReportAggregate(value: BasicReportAggregate): Self = StObject.set(x, "Reports$BasicReportAggregate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$BasicReportColumn(value: BasicReportColumn): Self = StObject.set(x, "Reports$BasicReportColumn", value.asInstanceOf[js.Any])
+      inline def setReports$BasicReportColumn(value: BasicReportColumn): Self = StObject.set(x, "Reports$BasicReportColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportButton(value: ReportButton): Self = StObject.set(x, "Reports$ReportButton", value.asInstanceOf[js.Any])
+      inline def setReports$ReportButton(value: ReportButton): Self = StObject.set(x, "Reports$ReportButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportChart(value: ReportChart): Self = StObject.set(x, "Reports$ReportChart", value.asInstanceOf[js.Any])
+      inline def setReports$ReportChart(value: ReportChart): Self = StObject.set(x, "Reports$ReportChart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportChartSeries(value: ReportChartSeries): Self = StObject.set(x, "Reports$ReportChartSeries", value.asInstanceOf[js.Any])
+      inline def setReports$ReportChartSeries(value: ReportChartSeries): Self = StObject.set(x, "Reports$ReportChartSeries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportDateRangeField(value: ReportDateRangeField): Self = StObject.set(x, "Reports$ReportDateRangeField", value.asInstanceOf[js.Any])
+      inline def setReports$ReportDateRangeField(value: ReportDateRangeField): Self = StObject.set(x, "Reports$ReportDateRangeField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportDateRangeSelector(value: ReportDateRangeSelector): Self = StObject.set(x, "Reports$ReportDateRangeSelector", value.asInstanceOf[js.Any])
+      inline def setReports$ReportDateRangeSelector(value: ReportDateRangeSelector): Self = StObject.set(x, "Reports$ReportDateRangeSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportDropDown(value: ReportDropDown): Self = StObject.set(x, "Reports$ReportDropDown", value.asInstanceOf[js.Any])
+      inline def setReports$ReportDropDown(value: ReportDropDown): Self = StObject.set(x, "Reports$ReportDropDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportPane(value: ReportPane): Self = StObject.set(x, "Reports$ReportPane", value.asInstanceOf[js.Any])
+      inline def setReports$ReportPane(value: ReportPane): Self = StObject.set(x, "Reports$ReportPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportZoomInfo(value: ReportZoomInfo): Self = StObject.set(x, "Reports$ReportZoomInfo", value.asInstanceOf[js.Any])
+      inline def setReports$ReportZoomInfo(value: ReportZoomInfo): Self = StObject.set(x, "Reports$ReportZoomInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReports$ReportZoomMapping(value: ReportZoomMapping): Self = StObject.set(x, "Reports$ReportZoomMapping", value.asInstanceOf[js.Any])
+      inline def setReports$ReportZoomMapping(value: ReportZoomMapping): Self = StObject.set(x, "Reports$ReportZoomMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$CorsConfiguration(value: CorsConfiguration): Self = StObject.set(x, "Rest$CorsConfiguration", value.asInstanceOf[js.Any])
+      inline def setRest$CorsConfiguration(value: CorsConfiguration): Self = StObject.set(x, "Rest$CorsConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$MetadataReference(value: MetadataReference): Self = StObject.set(x, "Rest$MetadataReference", value.asInstanceOf[js.Any])
+      inline def setRest$MetadataReference(value: MetadataReference): Self = StObject.set(x, "Rest$MetadataReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$ODataKey(value: ODataKey): Self = StObject.set(x, "Rest$ODataKey", value.asInstanceOf[js.Any])
+      inline def setRest$ODataKey(value: ODataKey): Self = StObject.set(x, "Rest$ODataKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$ODataKeyPart(value: ODataKeyPart): Self = StObject.set(x, "Rest$ODataKeyPart", value.asInstanceOf[js.Any])
+      inline def setRest$ODataKeyPart(value: ODataKeyPart): Self = StObject.set(x, "Rest$ODataKeyPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$ODataMappedValue(value: ODataMappedValue): Self = StObject.set(x, "Rest$ODataMappedValue", value.asInstanceOf[js.Any])
+      inline def setRest$ODataMappedValue(value: ODataMappedValue): Self = StObject.set(x, "Rest$ODataMappedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$ODataRemoteAssociationSource(value: ODataRemoteAssociationSource): Self = StObject.set(x, "Rest$ODataRemoteAssociationSource", value.asInstanceOf[js.Any])
+      inline def setRest$ODataRemoteAssociationSource(value: ODataRemoteAssociationSource): Self = StObject.set(x, "Rest$ODataRemoteAssociationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$ODataRemoteEntitySource(value: ODataRemoteEntitySource): Self = StObject.set(x, "Rest$ODataRemoteEntitySource", value.asInstanceOf[js.Any])
+      inline def setRest$ODataRemoteEntitySource(value: ODataRemoteEntitySource): Self = StObject.set(x, "Rest$ODataRemoteEntitySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$PublishedRestResource(value: PublishedRestResource): Self = StObject.set(x, "Rest$PublishedRestResource", value.asInstanceOf[js.Any])
+      inline def setRest$PublishedRestResource(value: PublishedRestResource): Self = StObject.set(x, "Rest$PublishedRestResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$PublishedRestServiceOperation(value: PublishedRestServiceOperation): Self = StObject.set(x, "Rest$PublishedRestServiceOperation", value.asInstanceOf[js.Any])
+      inline def setRest$PublishedRestServiceOperation(value: PublishedRestServiceOperation): Self = StObject.set(x, "Rest$PublishedRestServiceOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$PublishedRestServiceResource(value: PublishedRestServiceResource): Self = StObject.set(x, "Rest$PublishedRestServiceResource", value.asInstanceOf[js.Any])
+      inline def setRest$PublishedRestServiceResource(value: PublishedRestServiceResource): Self = StObject.set(x, "Rest$PublishedRestServiceResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest$RestOperationParameter(value: RestOperationParameter): Self = StObject.set(x, "Rest$RestOperationParameter", value.asInstanceOf[js.Any])
+      inline def setRest$RestOperationParameter(value: RestOperationParameter): Self = StObject.set(x, "Rest$RestOperationParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity$DemoUser(value: DemoUser): Self = StObject.set(x, "Security$DemoUser", value.asInstanceOf[js.Any])
+      inline def setSecurity$DemoUser(value: DemoUser): Self = StObject.set(x, "Security$DemoUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity$FileDocumentAccessRuleContainer(value: FileDocumentAccessRuleContainer): Self = StObject.set(x, "Security$FileDocumentAccessRuleContainer", value.asInstanceOf[js.Any])
+      inline def setSecurity$FileDocumentAccessRuleContainer(value: FileDocumentAccessRuleContainer): Self = StObject.set(x, "Security$FileDocumentAccessRuleContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity$ImageAccessRuleContainer(value: ImageAccessRuleContainer): Self = StObject.set(x, "Security$ImageAccessRuleContainer", value.asInstanceOf[js.Any])
+      inline def setSecurity$ImageAccessRuleContainer(value: ImageAccessRuleContainer): Self = StObject.set(x, "Security$ImageAccessRuleContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity$ModuleRole(value: ModuleRole): Self = StObject.set(x, "Security$ModuleRole", value.asInstanceOf[js.Any])
+      inline def setSecurity$ModuleRole(value: ModuleRole): Self = StObject.set(x, "Security$ModuleRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity$PasswordPolicySettings(value: PasswordPolicySettings): Self = StObject.set(x, "Security$PasswordPolicySettings", value.asInstanceOf[js.Any])
+      inline def setSecurity$PasswordPolicySettings(value: PasswordPolicySettings): Self = StObject.set(x, "Security$PasswordPolicySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity$UserRole(value: UserRole): Self = StObject.set(x, "Security$UserRole", value.asInstanceOf[js.Any])
+      inline def setSecurity$UserRole(value: UserRole): Self = StObject.set(x, "Security$UserRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$ActionActivityDefaultColor(value: ActionActivityDefaultColor): Self = StObject.set(x, "Settings$ActionActivityDefaultColor", value.asInstanceOf[js.Any])
+      inline def setSettings$ActionActivityDefaultColor(value: ActionActivityDefaultColor): Self = StObject.set(x, "Settings$ActionActivityDefaultColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$Certificate(value: Certificate): Self = StObject.set(x, "Settings$Certificate", value.asInstanceOf[js.Any])
+      inline def setSettings$Certificate(value: Certificate): Self = StObject.set(x, "Settings$Certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$CertificateSettings(value: CertificateSettings): Self = StObject.set(x, "Settings$CertificateSettings", value.asInstanceOf[js.Any])
+      inline def setSettings$CertificateSettings(value: CertificateSettings): Self = StObject.set(x, "Settings$CertificateSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$Configuration(value: Configuration): Self = StObject.set(x, "Settings$Configuration", value.asInstanceOf[js.Any])
+      inline def setSettings$Configuration(value: Configuration): Self = StObject.set(x, "Settings$Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$ConfigurationSettings(value: ConfigurationSettings): Self = StObject.set(x, "Settings$ConfigurationSettings", value.asInstanceOf[js.Any])
+      inline def setSettings$ConfigurationSettings(value: ConfigurationSettings): Self = StObject.set(x, "Settings$ConfigurationSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$ConstantValue(value: ConstantValue): Self = StObject.set(x, "Settings$ConstantValue", value.asInstanceOf[js.Any])
+      inline def setSettings$ConstantValue(value: ConstantValue): Self = StObject.set(x, "Settings$ConstantValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$CustomSetting(value: CustomSetting): Self = StObject.set(x, "Settings$CustomSetting", value.asInstanceOf[js.Any])
+      inline def setSettings$CustomSetting(value: CustomSetting): Self = StObject.set(x, "Settings$CustomSetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$IntegrationProjectSettingsPart(value: IntegrationProjectSettingsPart): Self = StObject.set(x, "Settings$IntegrationProjectSettingsPart", value.asInstanceOf[js.Any])
+      inline def setSettings$IntegrationProjectSettingsPart(value: IntegrationProjectSettingsPart): Self = StObject.set(x, "Settings$IntegrationProjectSettingsPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$JavaActionsSettings(value: JavaActionsSettings): Self = StObject.set(x, "Settings$JavaActionsSettings", value.asInstanceOf[js.Any])
+      inline def setSettings$JavaActionsSettings(value: JavaActionsSettings): Self = StObject.set(x, "Settings$JavaActionsSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$Language(value: Language): Self = StObject.set(x, "Settings$Language", value.asInstanceOf[js.Any])
+      inline def setSettings$Language(value: Language): Self = StObject.set(x, "Settings$Language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$LanguageSettings(value: LanguageSettings): Self = StObject.set(x, "Settings$LanguageSettings", value.asInstanceOf[js.Any])
+      inline def setSettings$LanguageSettings(value: LanguageSettings): Self = StObject.set(x, "Settings$LanguageSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$ModelerSettings(value: ModelerSettings): Self = StObject.set(x, "Settings$ModelerSettings", value.asInstanceOf[js.Any])
+      inline def setSettings$ModelerSettings(value: ModelerSettings): Self = StObject.set(x, "Settings$ModelerSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$RuntimeSettings(value: RuntimeSettings): Self = StObject.set(x, "Settings$RuntimeSettings", value.asInstanceOf[js.Any])
+      inline def setSettings$RuntimeSettings(value: RuntimeSettings): Self = StObject.set(x, "Settings$RuntimeSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$WebUIProjectSettingsPart(value: WebUIProjectSettingsPart): Self = StObject.set(x, "Settings$WebUIProjectSettingsPart", value.asInstanceOf[js.Any])
+      inline def setSettings$WebUIProjectSettingsPart(value: WebUIProjectSettingsPart): Self = StObject.set(x, "Settings$WebUIProjectSettingsPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings$WorkflowsProjectSettingsPart(value: WorkflowsProjectSettingsPart): Self = StObject.set(x, "Settings$WorkflowsProjectSettingsPart", value.asInstanceOf[js.Any])
+      inline def setSettings$WorkflowsProjectSettingsPart(value: WorkflowsProjectSettingsPart): Self = StObject.set(x, "Settings$WorkflowsProjectSettingsPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTexts$SystemText(value: SystemText): Self = StObject.set(x, "Texts$SystemText", value.asInstanceOf[js.Any])
+      inline def setTexts$SystemText(value: SystemText): Self = StObject.set(x, "Texts$SystemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTexts$Text(value: Text): Self = StObject.set(x, "Texts$Text", value.asInstanceOf[js.Any])
+      inline def setTexts$Text(value: Text): Self = StObject.set(x, "Texts$Text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTexts$Translation(value: Translation): Self = StObject.set(x, "Texts$Translation", value.asInstanceOf[js.Any])
+      inline def setTexts$Translation(value: Translation): Self = StObject.set(x, "Texts$Translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$DataAssociation(value: DataAssociation): Self = StObject.set(x, "WebServices$DataAssociation", value.asInstanceOf[js.Any])
+      inline def setWebServices$DataAssociation(value: DataAssociation): Self = StObject.set(x, "WebServices$DataAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$DataAttribute(value: DataAttribute): Self = StObject.set(x, "WebServices$DataAttribute", value.asInstanceOf[js.Any])
+      inline def setWebServices$DataAttribute(value: DataAttribute): Self = StObject.set(x, "WebServices$DataAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$DataEntity(value: DataEntity): Self = StObject.set(x, "WebServices$DataEntity", value.asInstanceOf[js.Any])
+      inline def setWebServices$DataEntity(value: DataEntity): Self = StObject.set(x, "WebServices$DataEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$OperationInfo(value: OperationInfo): Self = StObject.set(x, "WebServices$OperationInfo", value.asInstanceOf[js.Any])
+      inline def setWebServices$OperationInfo(value: OperationInfo): Self = StObject.set(x, "WebServices$OperationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$PartEncoding(value: PartEncoding): Self = StObject.set(x, "WebServices$PartEncoding", value.asInstanceOf[js.Any])
+      inline def setWebServices$PartEncoding(value: PartEncoding): Self = StObject.set(x, "WebServices$PartEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$PublishedOperation(value: PublishedOperation): Self = StObject.set(x, "WebServices$PublishedOperation", value.asInstanceOf[js.Any])
+      inline def setWebServices$PublishedOperation(value: PublishedOperation): Self = StObject.set(x, "WebServices$PublishedOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$PublishedParameter(value: PublishedParameter): Self = StObject.set(x, "WebServices$PublishedParameter", value.asInstanceOf[js.Any])
+      inline def setWebServices$PublishedParameter(value: PublishedParameter): Self = StObject.set(x, "WebServices$PublishedParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$RpcMessagePartElement(value: RpcMessagePartElement): Self = StObject.set(x, "WebServices$RpcMessagePartElement", value.asInstanceOf[js.Any])
+      inline def setWebServices$RpcMessagePartElement(value: RpcMessagePartElement): Self = StObject.set(x, "WebServices$RpcMessagePartElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$RpcOperationElement(value: RpcOperationElement): Self = StObject.set(x, "WebServices$RpcOperationElement", value.asInstanceOf[js.Any])
+      inline def setWebServices$RpcOperationElement(value: RpcOperationElement): Self = StObject.set(x, "WebServices$RpcOperationElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$ServiceInfo(value: ServiceInfo): Self = StObject.set(x, "WebServices$ServiceInfo", value.asInstanceOf[js.Any])
+      inline def setWebServices$ServiceInfo(value: ServiceInfo): Self = StObject.set(x, "WebServices$ServiceInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$SystemIdDataAttribute(value: SystemIdDataAttribute): Self = StObject.set(x, "WebServices$SystemIdDataAttribute", value.asInstanceOf[js.Any])
+      inline def setWebServices$SystemIdDataAttribute(value: SystemIdDataAttribute): Self = StObject.set(x, "WebServices$SystemIdDataAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$VersionedService(value: VersionedService): Self = StObject.set(x, "WebServices$VersionedService", value.asInstanceOf[js.Any])
+      inline def setWebServices$VersionedService(value: VersionedService): Self = StObject.set(x, "WebServices$VersionedService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$WsdlDescription(value: WsdlDescription): Self = StObject.set(x, "WebServices$WsdlDescription", value.asInstanceOf[js.Any])
+      inline def setWebServices$WsdlDescription(value: WsdlDescription): Self = StObject.set(x, "WebServices$WsdlDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServices$WsdlEntry(value: WsdlEntry): Self = StObject.set(x, "WebServices$WsdlEntry", value.asInstanceOf[js.Any])
+      inline def setWebServices$WsdlEntry(value: WsdlEntry): Self = StObject.set(x, "WebServices$WsdlEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$BooleanSplitOutcome(value: BooleanSplitOutcome): Self = StObject.set(x, "Workflows$BooleanSplitOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$BooleanSplitOutcome(value: BooleanSplitOutcome): Self = StObject.set(x, "Workflows$BooleanSplitOutcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$CallMicroflowTask(value: CallMicroflowTask): Self = StObject.set(x, "Workflows$CallMicroflowTask", value.asInstanceOf[js.Any])
+      inline def setWorkflows$CallMicroflowTask(value: CallMicroflowTask): Self = StObject.set(x, "Workflows$CallMicroflowTask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$CallWorkflowActivity(value: CallWorkflowActivity): Self = StObject.set(x, "Workflows$CallWorkflowActivity", value.asInstanceOf[js.Any])
+      inline def setWorkflows$CallWorkflowActivity(value: CallWorkflowActivity): Self = StObject.set(x, "Workflows$CallWorkflowActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$EndWorkflowActivity(value: EndWorkflowActivity): Self = StObject.set(x, "Workflows$EndWorkflowActivity", value.asInstanceOf[js.Any])
+      inline def setWorkflows$EndWorkflowActivity(value: EndWorkflowActivity): Self = StObject.set(x, "Workflows$EndWorkflowActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$EnumerationValueSplitOutcome(value: EnumerationValueSplitOutcome): Self = StObject.set(x, "Workflows$EnumerationValueSplitOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$EnumerationValueSplitOutcome(value: EnumerationValueSplitOutcome): Self = StObject.set(x, "Workflows$EnumerationValueSplitOutcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$ExclusiveSplitActivity(value: ExclusiveSplitActivity): Self = StObject.set(x, "Workflows$ExclusiveSplitActivity", value.asInstanceOf[js.Any])
+      inline def setWorkflows$ExclusiveSplitActivity(value: ExclusiveSplitActivity): Self = StObject.set(x, "Workflows$ExclusiveSplitActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$Flow(value: Flow): Self = StObject.set(x, "Workflows$Flow", value.asInstanceOf[js.Any])
+      inline def setWorkflows$Flow(value: Flow): Self = StObject.set(x, "Workflows$Flow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$ParallelSplitActivity(value: ParallelSplitActivity): Self = StObject.set(x, "Workflows$ParallelSplitActivity", value.asInstanceOf[js.Any])
+      inline def setWorkflows$ParallelSplitActivity(value: ParallelSplitActivity): Self = StObject.set(x, "Workflows$ParallelSplitActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$ParallelSplitOutcome(value: ParallelSplitOutcome): Self = StObject.set(x, "Workflows$ParallelSplitOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$ParallelSplitOutcome(value: ParallelSplitOutcome): Self = StObject.set(x, "Workflows$ParallelSplitOutcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$UserTask(value: UserTask): Self = StObject.set(x, "Workflows$UserTask", value.asInstanceOf[js.Any])
+      inline def setWorkflows$UserTask(value: UserTask): Self = StObject.set(x, "Workflows$UserTask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$WorkflowTaskOutcome(value: WorkflowTaskOutcome): Self = StObject.set(x, "Workflows$WorkflowTaskOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$WorkflowTaskOutcome(value: WorkflowTaskOutcome): Self = StObject.set(x, "Workflows$WorkflowTaskOutcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflows$XPathBasedUserSource(value: XPathBasedUserSource): Self = StObject.set(x, "Workflows$XPathBasedUserSource", value.asInstanceOf[js.Any])
+      inline def setWorkflows$XPathBasedUserSource(value: XPathBasedUserSource): Self = StObject.set(x, "Workflows$XPathBasedUserSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlSchemas$XmlElement(value: XmlElement): Self = StObject.set(x, "XmlSchemas$XmlElement", value.asInstanceOf[js.Any])
+      inline def setXmlSchemas$XmlElement(value: XmlElement): Self = StObject.set(x, "XmlSchemas$XmlElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlSchemas$XmlSchemaEntry(value: XmlSchemaEntry): Self = StObject.set(x, "XmlSchemas$XmlSchemaEntry", value.asInstanceOf[js.Any])
+      inline def setXmlSchemas$XmlSchemaEntry(value: XmlSchemaEntry): Self = StObject.set(x, "XmlSchemas$XmlSchemaEntry", value.asInstanceOf[js.Any])
     }
   }
   

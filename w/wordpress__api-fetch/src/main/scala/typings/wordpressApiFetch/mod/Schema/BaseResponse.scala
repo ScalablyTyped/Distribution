@@ -14,22 +14,17 @@ trait BaseResponse extends StObject {
 }
 object BaseResponse {
   
-  @scala.inline
-  def apply(_links: Record[String, js.Array[Dictk]]): BaseResponse = {
+  inline def apply(_links: Record[String, js.Array[Dictk]]): BaseResponse = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseResponse]
   }
   
-  @scala.inline
-  implicit class BaseResponseMutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BaseResponse](x: Self) {
     
-    @scala.inline
-    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    inline def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)
+    inline def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)
     
-    @scala.inline
-    def set_links(value: Record[String, js.Array[Dictk]]): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Record[String, js.Array[Dictk]]): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

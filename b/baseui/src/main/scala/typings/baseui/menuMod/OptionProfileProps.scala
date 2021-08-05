@@ -31,8 +31,7 @@ trait OptionProfileProps
 }
 object OptionProfileProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getProfileItemImg: js.Any => String | ComponentType[js.Any],
     getProfileItemImgText: js.Any => String,
     getProfileItemLabels: js.Any => Body,
@@ -42,43 +41,30 @@ object OptionProfileProps {
     __obj.asInstanceOf[OptionProfileProps]
   }
   
-  @scala.inline
-  implicit class OptionProfilePropsMutableBuilder[Self <: OptionProfileProps] (val x: Self) extends AnyVal {
+  extension [Self <: OptionProfileProps](x: Self) {
     
-    @scala.inline
-    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
+    inline def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isHighlightedUndefined: Self = StObject.set(x, "$isHighlighted", js.undefined)
+    inline def set$isHighlightedUndefined: Self = StObject.set(x, "$isHighlighted", js.undefined)
     
-    @scala.inline
-    def setGetChildMenu(value: /* item */ js.Any => ReactNode): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
+    inline def setGetChildMenu(value: /* item */ js.Any => ReactNode): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChildMenuUndefined: Self = StObject.set(x, "getChildMenu", js.undefined)
+    inline def setGetChildMenuUndefined: Self = StObject.set(x, "getChildMenu", js.undefined)
     
-    @scala.inline
-    def setGetProfileItemImg(value: js.Any => String | ComponentType[js.Any]): Self = StObject.set(x, "getProfileItemImg", js.Any.fromFunction1(value))
+    inline def setGetProfileItemImg(value: js.Any => String | ComponentType[js.Any]): Self = StObject.set(x, "getProfileItemImg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProfileItemImgText(value: js.Any => String): Self = StObject.set(x, "getProfileItemImgText", js.Any.fromFunction1(value))
+    inline def setGetProfileItemImgText(value: js.Any => String): Self = StObject.set(x, "getProfileItemImgText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProfileItemLabels(value: js.Any => Body): Self = StObject.set(x, "getProfileItemLabels", js.Any.fromFunction1(value))
+    inline def setGetProfileItemLabels(value: js.Any => Body): Self = StObject.set(x, "getProfileItemLabels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrides(value: ListItemProfile): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: ListItemProfile): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setResetMenu(value: () => Unit): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
+    inline def setResetMenu(value: () => Unit): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetMenuUndefined: Self = StObject.set(x, "resetMenu", js.undefined)
+    inline def setResetMenuUndefined: Self = StObject.set(x, "resetMenu", js.undefined)
   }
 }

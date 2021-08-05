@@ -18,25 +18,19 @@ trait GetFindingsRequest extends StObject {
 }
 object GetFindingsRequest {
   
-  @scala.inline
-  def apply(findingIds: listOfString): GetFindingsRequest = {
+  inline def apply(findingIds: listOfString): GetFindingsRequest = {
     val __obj = js.Dynamic.literal(findingIds = findingIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsRequest]
   }
   
-  @scala.inline
-  implicit class GetFindingsRequestMutableBuilder[Self <: GetFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setFindingIds(value: listOfString): Self = StObject.set(x, "findingIds", value.asInstanceOf[js.Any])
+    inline def setFindingIds(value: listOfString): Self = StObject.set(x, "findingIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdsVarargs(value: string*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
+    inline def setFindingIdsVarargs(value: string*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
+    inline def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
   }
 }

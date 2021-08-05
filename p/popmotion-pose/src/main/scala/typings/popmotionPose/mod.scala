@@ -13,6 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Element, config: DomPopmotionConfig): DomPopmotionPoser = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[DomPopmotionPoser]
+  inline def default(element: Element, config: DomPopmotionConfig): DomPopmotionPoser = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[DomPopmotionPoser]
 }

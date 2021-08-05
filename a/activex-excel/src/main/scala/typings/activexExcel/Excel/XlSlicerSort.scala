@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSlicerSort extends StObject
 object XlSlicerSort {
   
-  @scala.inline
-  def xlSlicerSortAscending: `2` = 2.asInstanceOf[`2`]
+  inline def xlSlicerSortAscending: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlSlicerSortDataSourceOrder: `1` = 1.asInstanceOf[`1`]
+  inline def xlSlicerSortDataSourceOrder: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSlicerSortDescending: `3` = 3.asInstanceOf[`3`]
+  inline def xlSlicerSortDescending: `3` = 3.asInstanceOf[`3`]
 }

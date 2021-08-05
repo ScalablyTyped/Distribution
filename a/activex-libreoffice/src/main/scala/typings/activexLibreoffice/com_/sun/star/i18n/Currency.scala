@@ -40,8 +40,7 @@ trait Currency extends StObject {
 }
 object Currency {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BankSymbol: String,
     DecimalPlaces: Double,
     Default: Boolean,
@@ -54,28 +53,20 @@ object Currency {
     __obj.asInstanceOf[Currency]
   }
   
-  @scala.inline
-  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+  extension [Self <: Currency](x: Self) {
     
-    @scala.inline
-    def setBankSymbol(value: String): Self = StObject.set(x, "BankSymbol", value.asInstanceOf[js.Any])
+    inline def setBankSymbol(value: String): Self = StObject.set(x, "BankSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalPlaces(value: Double): Self = StObject.set(x, "DecimalPlaces", value.asInstanceOf[js.Any])
+    inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "DecimalPlaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedInCompatibleFormatCodes(value: Boolean): Self = StObject.set(x, "UsedInCompatibleFormatCodes", value.asInstanceOf[js.Any])
+    inline def setUsedInCompatibleFormatCodes(value: Boolean): Self = StObject.set(x, "UsedInCompatibleFormatCodes", value.asInstanceOf[js.Any])
   }
 }

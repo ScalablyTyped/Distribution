@@ -23,26 +23,20 @@ object anon {
   }
   object Cards {
     
-    @scala.inline
-    def apply(cards: js.Array[Card], key: Double, navigationState: NavigationState[Params]): Cards = {
+    inline def apply(cards: js.Array[Card], key: Double, navigationState: NavigationState[Params]): Cards = {
       val __obj = js.Dynamic.literal(cards = cards.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cards]
     }
     
-    @scala.inline
-    implicit class CardsMutableBuilder[Self <: Cards] (val x: Self) extends AnyVal {
+    extension [Self <: Cards](x: Self) {
       
-      @scala.inline
-      def setCards(value: js.Array[Card]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+      inline def setCards(value: js.Array[Card]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardsVarargs(value: Card*): Self = StObject.set(x, "cards", js.Array(value :_*))
+      inline def setCardsVarargs(value: Card*): Self = StObject.set(x, "cards", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[Params]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[Params]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +46,14 @@ object anon {
   }
   object ForceSync {
     
-    @scala.inline
-    def apply(): ForceSync = {
+    inline def apply(): ForceSync = {
       val __obj = js.Dynamic.literal(forceSync = false)
       __obj.asInstanceOf[ForceSync]
     }
     
-    @scala.inline
-    implicit class ForceSyncMutableBuilder[Self <: ForceSync] (val x: Self) extends AnyVal {
+    extension [Self <: ForceSync](x: Self) {
       
-      @scala.inline
-      def setForceSync(value: `false`): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
+      inline def setForceSync(value: `false`): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,8 +71,7 @@ object anon {
   }
   object LoadedTabs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loadedTabs: js.Array[String],
       navigationState: NavigationState[TestID],
       rootIndex: Double,
@@ -92,29 +82,21 @@ object anon {
       __obj.asInstanceOf[LoadedTabs]
     }
     
-    @scala.inline
-    implicit class LoadedTabsMutableBuilder[Self <: LoadedTabs] (val x: Self) extends AnyVal {
+    extension [Self <: LoadedTabs](x: Self) {
       
-      @scala.inline
-      def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
+      inline def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value :_*))
+      inline def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value :_*))
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[TestID]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[TestID]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIndex(value: Double): Self = StObject.set(x, "rootIndex", value.asInstanceOf[js.Any])
+      inline def setRootIndex(value: Double): Self = StObject.set(x, "rootIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsHistory(value: NumberDictionary[js.Array[Location[LocationState]]]): Self = StObject.set(x, "tabsHistory", value.asInstanceOf[js.Any])
+      inline def setTabsHistory(value: NumberDictionary[js.Array[Location[LocationState]]]): Self = StObject.set(x, "tabsHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
   
@@ -126,26 +108,20 @@ object anon {
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -157,26 +133,20 @@ object anon {
   }
   object TestID {
     
-    @scala.inline
-    def apply(): TestID = {
+    inline def apply(): TestID = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestID]
     }
     
-    @scala.inline
-    implicit class TestIDMutableBuilder[Self <: TestID] (val x: Self) extends AnyVal {
+    extension [Self <: TestID](x: Self) {
       
-      @scala.inline
-      def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+      inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+      inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

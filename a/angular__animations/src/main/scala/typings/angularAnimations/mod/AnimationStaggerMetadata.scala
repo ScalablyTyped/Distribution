@@ -20,8 +20,7 @@ trait AnimationStaggerMetadata
 }
 object AnimationStaggerMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animation: AnimationMetadata | js.Array[AnimationMetadata],
     timings: String | Double,
     `type`: AnimationMetadataType
@@ -31,16 +30,12 @@ object AnimationStaggerMetadata {
     __obj.asInstanceOf[AnimationStaggerMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationStaggerMetadataMutableBuilder[Self <: AnimationStaggerMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStaggerMetadata](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
+    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
     
-    @scala.inline
-    def setTimings(value: String | Double): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
+    inline def setTimings(value: String | Double): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
   }
 }

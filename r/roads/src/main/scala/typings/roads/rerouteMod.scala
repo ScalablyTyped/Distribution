@@ -11,6 +11,5 @@ object rerouteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(key: String, road: typings.roads.roadMod.default): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], road.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  inline def default(key: String, road: typings.roads.roadMod.default): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], road.asInstanceOf[js.Any])).asInstanceOf[Middleware]
 }

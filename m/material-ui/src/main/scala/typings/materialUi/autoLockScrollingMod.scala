@@ -25,17 +25,14 @@ object autoLockScrollingMod {
   }
   object AutoLockScrollingProps {
     
-    @scala.inline
-    def apply(lock: Boolean): AutoLockScrollingProps = {
+    inline def apply(lock: Boolean): AutoLockScrollingProps = {
       val __obj = js.Dynamic.literal(lock = lock.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoLockScrollingProps]
     }
     
-    @scala.inline
-    implicit class AutoLockScrollingPropsMutableBuilder[Self <: AutoLockScrollingProps] (val x: Self) extends AnyVal {
+    extension [Self <: AutoLockScrollingProps](x: Self) {
       
-      @scala.inline
-      def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     }
   }
 }

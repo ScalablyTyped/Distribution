@@ -28,7 +28,7 @@ object synclistMod {
     def getPage(): js.Promise[RestPaginator[SyncListDescriptor]] = js.native
     def getPage(args: js.Any): js.Promise[RestPaginator[SyncListDescriptor]] = js.native
     
-    val services: js.Any = js.native
+    /* private */ val services: js.Any = js.native
   }
   
   trait SyncListServices extends StObject {
@@ -39,20 +39,16 @@ object synclistMod {
   }
   object SyncListServices {
     
-    @scala.inline
-    def apply(network: Network, session: Session): SyncListServices = {
+    inline def apply(network: Network, session: Session): SyncListServices = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncListServices]
     }
     
-    @scala.inline
-    implicit class SyncListServicesMutableBuilder[Self <: SyncListServices] (val x: Self) extends AnyVal {
+    extension [Self <: SyncListServices](x: Self) {
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }
   }
 }

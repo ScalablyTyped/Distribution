@@ -16,29 +16,20 @@ object mod {
     * @param barcodeText Text to be rendered.
     * @param barcodeOptions Options used for rendering.
     */
-  @scala.inline
-  def apply(svg: String, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: String, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: HTMLCanvasElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: HTMLCanvasElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: HTMLImageElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: HTMLImageElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: SVGElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(svg: SVGElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: String, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: String, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: HTMLCanvasElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: HTMLCanvasElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: HTMLImageElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: HTMLImageElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: SVGElement, barcodeText: String): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svg: SVGElement, barcodeText: String, barcodeOptions: JsBarcodeOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(svg.asInstanceOf[js.Any], barcodeText.asInstanceOf[js.Any], barcodeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("jsbarcode", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getModule(name: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModule")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def getModule(name: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModule")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
   trait JsBarcodeOptions extends StObject {
     
@@ -84,131 +75,90 @@ object mod {
   }
   object JsBarcodeOptions {
     
-    @scala.inline
-    def apply(format: String): JsBarcodeOptions = {
+    inline def apply(format: String): JsBarcodeOptions = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsBarcodeOptions]
     }
     
-    @scala.inline
-    implicit class JsBarcodeOptionsMutableBuilder[Self <: JsBarcodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsBarcodeOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setDisplayValue(value: Boolean): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+      inline def setDisplayValue(value: Boolean): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayValueUndefined: Self = StObject.set(x, "displayValue", js.undefined)
+      inline def setDisplayValueUndefined: Self = StObject.set(x, "displayValue", js.undefined)
       
-      @scala.inline
-      def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+      inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+      inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontOptions(value: String): Self = StObject.set(x, "fontOptions", value.asInstanceOf[js.Any])
+      inline def setFontOptions(value: String): Self = StObject.set(x, "fontOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontOptionsUndefined: Self = StObject.set(x, "fontOptions", js.undefined)
+      inline def setFontOptionsUndefined: Self = StObject.set(x, "fontOptions", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+      inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+      inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      @scala.inline
-      def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      @scala.inline
-      def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      @scala.inline
-      def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextMargin(value: Double): Self = StObject.set(x, "textMargin", value.asInstanceOf[js.Any])
+      inline def setTextMargin(value: Double): Self = StObject.set(x, "textMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMarginUndefined: Self = StObject.set(x, "textMargin", js.undefined)
+      inline def setTextMarginUndefined: Self = StObject.set(x, "textMargin", js.undefined)
       
-      @scala.inline
-      def setTextPosition(value: String): Self = StObject.set(x, "textPosition", value.asInstanceOf[js.Any])
+      inline def setTextPosition(value: String): Self = StObject.set(x, "textPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextPositionUndefined: Self = StObject.set(x, "textPosition", js.undefined)
+      inline def setTextPositionUndefined: Self = StObject.set(x, "textPosition", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setValid(value: /* valid */ Boolean => Unit): Self = StObject.set(x, "valid", js.Any.fromFunction1(value))
+      inline def setValid(value: /* valid */ Boolean => Unit): Self = StObject.set(x, "valid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

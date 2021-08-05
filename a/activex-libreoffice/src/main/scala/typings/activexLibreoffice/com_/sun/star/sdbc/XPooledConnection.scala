@@ -46,8 +46,7 @@ trait XPooledConnection
 }
 object XPooledConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: XConnection,
     acquire: () => Unit,
     getConnection: () => XConnection,
@@ -58,13 +57,10 @@ object XPooledConnection {
     __obj.asInstanceOf[XPooledConnection]
   }
   
-  @scala.inline
-  implicit class XPooledConnectionMutableBuilder[Self <: XPooledConnection] (val x: Self) extends AnyVal {
+  extension [Self <: XPooledConnection](x: Self) {
     
-    @scala.inline
-    def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
+    inline def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
   }
 }

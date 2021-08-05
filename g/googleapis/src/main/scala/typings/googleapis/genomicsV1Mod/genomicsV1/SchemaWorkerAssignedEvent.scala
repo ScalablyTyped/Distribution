@@ -21,25 +21,19 @@ trait SchemaWorkerAssignedEvent extends StObject {
 }
 object SchemaWorkerAssignedEvent {
   
-  @scala.inline
-  def apply(): SchemaWorkerAssignedEvent = {
+  inline def apply(): SchemaWorkerAssignedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerAssignedEvent]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerAssignedEventMutableBuilder[Self <: SchemaWorkerAssignedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerAssignedEvent](x: Self) {
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

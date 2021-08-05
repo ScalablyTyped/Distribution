@@ -41,49 +41,35 @@ trait VirtualAuthenticatorOptions extends StObject {
 }
 object VirtualAuthenticatorOptions {
   
-  @scala.inline
-  def apply(protocol: AuthenticatorProtocol, transport: AuthenticatorTransport): VirtualAuthenticatorOptions = {
+  inline def apply(protocol: AuthenticatorProtocol, transport: AuthenticatorTransport): VirtualAuthenticatorOptions = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualAuthenticatorOptions]
   }
   
-  @scala.inline
-  implicit class VirtualAuthenticatorOptionsMutableBuilder[Self <: VirtualAuthenticatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualAuthenticatorOptions](x: Self) {
     
-    @scala.inline
-    def setAutomaticPresenceSimulation(value: Boolean): Self = StObject.set(x, "automaticPresenceSimulation", value.asInstanceOf[js.Any])
+    inline def setAutomaticPresenceSimulation(value: Boolean): Self = StObject.set(x, "automaticPresenceSimulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticPresenceSimulationUndefined: Self = StObject.set(x, "automaticPresenceSimulation", js.undefined)
+    inline def setAutomaticPresenceSimulationUndefined: Self = StObject.set(x, "automaticPresenceSimulation", js.undefined)
     
-    @scala.inline
-    def setHasLargeBlob(value: Boolean): Self = StObject.set(x, "hasLargeBlob", value.asInstanceOf[js.Any])
+    inline def setHasLargeBlob(value: Boolean): Self = StObject.set(x, "hasLargeBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLargeBlobUndefined: Self = StObject.set(x, "hasLargeBlob", js.undefined)
+    inline def setHasLargeBlobUndefined: Self = StObject.set(x, "hasLargeBlob", js.undefined)
     
-    @scala.inline
-    def setHasResidentKey(value: Boolean): Self = StObject.set(x, "hasResidentKey", value.asInstanceOf[js.Any])
+    inline def setHasResidentKey(value: Boolean): Self = StObject.set(x, "hasResidentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasResidentKeyUndefined: Self = StObject.set(x, "hasResidentKey", js.undefined)
+    inline def setHasResidentKeyUndefined: Self = StObject.set(x, "hasResidentKey", js.undefined)
     
-    @scala.inline
-    def setHasUserVerification(value: Boolean): Self = StObject.set(x, "hasUserVerification", value.asInstanceOf[js.Any])
+    inline def setHasUserVerification(value: Boolean): Self = StObject.set(x, "hasUserVerification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUserVerificationUndefined: Self = StObject.set(x, "hasUserVerification", js.undefined)
+    inline def setHasUserVerificationUndefined: Self = StObject.set(x, "hasUserVerification", js.undefined)
     
-    @scala.inline
-    def setIsUserVerified(value: Boolean): Self = StObject.set(x, "isUserVerified", value.asInstanceOf[js.Any])
+    inline def setIsUserVerified(value: Boolean): Self = StObject.set(x, "isUserVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserVerifiedUndefined: Self = StObject.set(x, "isUserVerified", js.undefined)
+    inline def setIsUserVerifiedUndefined: Self = StObject.set(x, "isUserVerified", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: AuthenticatorProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: AuthenticatorProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransport(value: AuthenticatorTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: AuthenticatorTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
   }
 }

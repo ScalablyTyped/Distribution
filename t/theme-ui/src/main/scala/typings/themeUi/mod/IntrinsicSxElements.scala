@@ -91,8 +91,7 @@ trait IntrinsicSxElements extends StObject {
 }
 object IntrinsicSxElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProps,
     b: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps,
     blockquote: (DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]) & SxProps,
@@ -127,98 +126,68 @@ object IntrinsicSxElements {
     __obj.asInstanceOf[IntrinsicSxElements]
   }
   
-  @scala.inline
-  implicit class IntrinsicSxElementsMutableBuilder[Self <: IntrinsicSxElements] (val x: Self) extends AnyVal {
+  extension [Self <: IntrinsicSxElements](x: Self) {
     
-    @scala.inline
-    def setA(value: (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProps): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProps): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockquote(value: (DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+    inline def setBlockquote(value: (DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiv(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+    inline def setDiv(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEm(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+    inline def setEm(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH1(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+    inline def setH1(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH2(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+    inline def setH2(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH3(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+    inline def setH3(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH4(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+    inline def setH4(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH5(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+    inline def setH5(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH6(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+    inline def setH6(value: (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHr(value: (DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]) & SxProps): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+    inline def setHr(value: (DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]) & SxProps): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+    inline def setI(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImg(value: (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]) & SxProps): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    inline def setImg(value: (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]) & SxProps): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineCode(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
+    inline def setInlineCode(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLi(value: (DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]) & SxProps): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+    inline def setLi(value: (DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]) & SxProps): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOl(value: (DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]) & SxProps): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+    inline def setOl(value: (DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]) & SxProps): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: (DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]) & SxProps): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: (DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]) & SxProps): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPre(value: (DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) & SxProps): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: (DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) & SxProps): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrong(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+    inline def setStrong(value: (DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable(value: (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]) & SxProps): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]) & SxProps): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTd(
+    inline def setTd(
       value: (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]) & SxProps
     ): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTh(
+    inline def setTh(
       value: (DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]) & SxProps
     ): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThematicBreak(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "thematicBreak", value.asInstanceOf[js.Any])
+    inline def setThematicBreak(value: (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps): Self = StObject.set(x, "thematicBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTr(value: (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]) & SxProps): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]) & SxProps): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUl(value: (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]) & SxProps): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+    inline def setUl(value: (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]) & SxProps): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
   }
 }

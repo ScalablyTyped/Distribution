@@ -14,19 +14,15 @@ trait ResourceSelector extends StObject {
 }
 object ResourceSelector {
   
-  @scala.inline
-  def apply(): ResourceSelector = {
+  inline def apply(): ResourceSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceSelector]
   }
   
-  @scala.inline
-  implicit class ResourceSelectorMutableBuilder[Self <: ResourceSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceSelector](x: Self) {
     
-    @scala.inline
-    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+    inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+    inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
   }
 }

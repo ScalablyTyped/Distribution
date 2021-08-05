@@ -19,19 +19,15 @@ trait DeploymentGroupEcsService extends StObject {
 }
 object DeploymentGroupEcsService {
   
-  @scala.inline
-  def apply(clusterName: Input[String], serviceName: Input[String]): DeploymentGroupEcsService = {
+  inline def apply(clusterName: Input[String], serviceName: Input[String]): DeploymentGroupEcsService = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupEcsService]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupEcsServiceMutableBuilder[Self <: DeploymentGroupEcsService] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupEcsService](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

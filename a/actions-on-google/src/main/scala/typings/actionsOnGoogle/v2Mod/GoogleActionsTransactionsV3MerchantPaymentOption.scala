@@ -24,34 +24,25 @@ trait GoogleActionsTransactionsV3MerchantPaymentOption extends StObject {
 }
 object GoogleActionsTransactionsV3MerchantPaymentOption {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3MerchantPaymentOption = {
+  inline def apply(): GoogleActionsTransactionsV3MerchantPaymentOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3MerchantPaymentOption]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3MerchantPaymentOptionMutableBuilder[Self <: GoogleActionsTransactionsV3MerchantPaymentOption] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3MerchantPaymentOption](x: Self) {
     
-    @scala.inline
-    def setDefaultMerchantPaymentMethodId(value: String): Self = StObject.set(x, "defaultMerchantPaymentMethodId", value.asInstanceOf[js.Any])
+    inline def setDefaultMerchantPaymentMethodId(value: String): Self = StObject.set(x, "defaultMerchantPaymentMethodId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMerchantPaymentMethodIdUndefined: Self = StObject.set(x, "defaultMerchantPaymentMethodId", js.undefined)
+    inline def setDefaultMerchantPaymentMethodIdUndefined: Self = StObject.set(x, "defaultMerchantPaymentMethodId", js.undefined)
     
-    @scala.inline
-    def setManagePaymentMethodUrl(value: String): Self = StObject.set(x, "managePaymentMethodUrl", value.asInstanceOf[js.Any])
+    inline def setManagePaymentMethodUrl(value: String): Self = StObject.set(x, "managePaymentMethodUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagePaymentMethodUrlUndefined: Self = StObject.set(x, "managePaymentMethodUrl", js.undefined)
+    inline def setManagePaymentMethodUrlUndefined: Self = StObject.set(x, "managePaymentMethodUrl", js.undefined)
     
-    @scala.inline
-    def setMerchantPaymentMethod(value: js.Array[GoogleActionsTransactionsV3MerchantPaymentMethod]): Self = StObject.set(x, "merchantPaymentMethod", value.asInstanceOf[js.Any])
+    inline def setMerchantPaymentMethod(value: js.Array[GoogleActionsTransactionsV3MerchantPaymentMethod]): Self = StObject.set(x, "merchantPaymentMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantPaymentMethodUndefined: Self = StObject.set(x, "merchantPaymentMethod", js.undefined)
+    inline def setMerchantPaymentMethodUndefined: Self = StObject.set(x, "merchantPaymentMethod", js.undefined)
     
-    @scala.inline
-    def setMerchantPaymentMethodVarargs(value: GoogleActionsTransactionsV3MerchantPaymentMethod*): Self = StObject.set(x, "merchantPaymentMethod", js.Array(value :_*))
+    inline def setMerchantPaymentMethodVarargs(value: GoogleActionsTransactionsV3MerchantPaymentMethod*): Self = StObject.set(x, "merchantPaymentMethod", js.Array(value :_*))
   }
 }

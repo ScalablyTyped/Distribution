@@ -10,9 +10,9 @@ object tokenizerMod {
   @js.native
   class Tokenizer () extends StObject {
     
-    var WhitespaceRegExp: js.Any = js.native
+    /* private */ var WhitespaceRegExp: js.Any = js.native
     
-    var WordDividerRegExp: js.Any = js.native
+    /* private */ var WordDividerRegExp: js.Any = js.native
     
     /* private */ def shouldCreateNewToken(token: js.Any, newCharacter: js.Any): js.Any = js.native
     

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VppTokenAccountType extends StObject
 object VppTokenAccountType {
   
-  @scala.inline
-  def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
+  inline def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
   
-  @scala.inline
-  def education: typings.microsoftGraph.microsoftGraphStrings.education = "education".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.education]
+  inline def education: typings.microsoftGraph.microsoftGraphStrings.education = "education".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.education]
 }

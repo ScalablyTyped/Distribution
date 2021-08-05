@@ -28,28 +28,21 @@ trait UpdateUserDefinedFunctionRequest extends StObject {
 }
 object UpdateUserDefinedFunctionRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, FunctionInput: UserDefinedFunctionInput, FunctionName: NameString): UpdateUserDefinedFunctionRequest = {
+  inline def apply(DatabaseName: NameString, FunctionInput: UserDefinedFunctionInput, FunctionName: NameString): UpdateUserDefinedFunctionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], FunctionInput = FunctionInput.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserDefinedFunctionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserDefinedFunctionRequestMutableBuilder[Self <: UpdateUserDefinedFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserDefinedFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionInput(value: UserDefinedFunctionInput): Self = StObject.set(x, "FunctionInput", value.asInstanceOf[js.Any])
+    inline def setFunctionInput(value: UserDefinedFunctionInput): Self = StObject.set(x, "FunctionInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
   }
 }

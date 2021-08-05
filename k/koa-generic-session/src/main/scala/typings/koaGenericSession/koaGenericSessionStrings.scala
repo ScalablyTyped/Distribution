@@ -8,16 +8,13 @@ object koaGenericSessionStrings {
   
   @js.native
   sealed trait lax extends StObject
-  @scala.inline
-  def lax: lax = "lax".asInstanceOf[lax]
+  inline def lax: lax = "lax".asInstanceOf[lax]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait strict extends StObject
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Clear {
     
-    @scala.inline
-    def apply(clear: () => Unit): Clear = {
+    inline def apply(clear: () => Unit): Clear = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
       __obj.asInstanceOf[Clear]
     }
     
-    @scala.inline
-    implicit class ClearMutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
+    extension [Self <: Clear](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
   }
 }

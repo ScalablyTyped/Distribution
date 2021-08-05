@@ -18,25 +18,19 @@ trait BucketPolicy extends StObject {
 }
 object BucketPolicy {
   
-  @scala.inline
-  def apply(): BucketPolicy = {
+  inline def apply(): BucketPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketPolicy]
   }
   
-  @scala.inline
-  implicit class BucketPolicyMutableBuilder[Self <: BucketPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BucketPolicy](x: Self) {
     
-    @scala.inline
-    def setAllowsPublicReadAccess(value: boolean): Self = StObject.set(x, "allowsPublicReadAccess", value.asInstanceOf[js.Any])
+    inline def setAllowsPublicReadAccess(value: boolean): Self = StObject.set(x, "allowsPublicReadAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowsPublicReadAccessUndefined: Self = StObject.set(x, "allowsPublicReadAccess", js.undefined)
+    inline def setAllowsPublicReadAccessUndefined: Self = StObject.set(x, "allowsPublicReadAccess", js.undefined)
     
-    @scala.inline
-    def setAllowsPublicWriteAccess(value: boolean): Self = StObject.set(x, "allowsPublicWriteAccess", value.asInstanceOf[js.Any])
+    inline def setAllowsPublicWriteAccess(value: boolean): Self = StObject.set(x, "allowsPublicWriteAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowsPublicWriteAccessUndefined: Self = StObject.set(x, "allowsPublicWriteAccess", js.undefined)
+    inline def setAllowsPublicWriteAccessUndefined: Self = StObject.set(x, "allowsPublicWriteAccess", js.undefined)
   }
 }

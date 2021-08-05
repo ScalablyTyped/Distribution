@@ -119,8 +119,7 @@ object errorMapMod {
   }
   object IErrorMapEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String,
       text: js.Any => String
     ): IErrorMapEntry = {
@@ -128,38 +127,29 @@ object errorMapMod {
       __obj.asInstanceOf[IErrorMapEntry]
     }
     
-    @scala.inline
-    implicit class IErrorMapEntryMutableBuilder[Self <: IErrorMapEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IErrorMapEntry](x: Self) {
       
-      @scala.inline
-      def setCategory(
+      inline def setCategory(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCategory * / any */ String
       ): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
+      inline def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsUrlUndefined: Self = StObject.set(x, "docsUrl", js.undefined)
+      inline def setDocsUrlUndefined: Self = StObject.set(x, "docsUrl", js.undefined)
       
-      @scala.inline
-      def setLevel(
+      inline def setLevel(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
       ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

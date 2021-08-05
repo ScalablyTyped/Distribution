@@ -73,8 +73,7 @@ trait DockingPanel extends StObject {
 }
 object DockingPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (js.Object, String, js.Function0[Unit]) => Unit,
     addVisibilityListener: js.Function1[/* state */ Boolean, Unit] => Unit,
     closer: HTMLElement,
@@ -110,97 +109,66 @@ object DockingPanel {
     __obj.asInstanceOf[DockingPanel]
   }
   
-  @scala.inline
-  implicit class DockingPanelMutableBuilder[Self <: DockingPanel] (val x: Self) extends AnyVal {
+  extension [Self <: DockingPanel](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (js.Object, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+    inline def setAddEventListener(value: (js.Object, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddVisibilityListener(value: js.Function1[/* state */ Boolean, Unit] => Unit): Self = StObject.set(x, "addVisibilityListener", js.Any.fromFunction1(value))
+    inline def setAddVisibilityListener(value: js.Function1[/* state */ Boolean, Unit] => Unit): Self = StObject.set(x, "addVisibilityListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloser(value: HTMLElement): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
+    inline def setCloser(value: HTMLElement): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCloseButton(value: () => HTMLElement): Self = StObject.set(x, "createCloseButton", js.Any.fromFunction0(value))
+    inline def setCreateCloseButton(value: () => HTMLElement): Self = StObject.set(x, "createCloseButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateFooter(value: () => HTMLElement): Self = StObject.set(x, "createFooter", js.Any.fromFunction0(value))
+    inline def setCreateFooter(value: () => HTMLElement): Self = StObject.set(x, "createFooter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateScrollContainer(value: ScrollContainerOptions => Unit): Self = StObject.set(x, "createScrollContainer", js.Any.fromFunction1(value))
+    inline def setCreateScrollContainer(value: ScrollContainerOptions => Unit): Self = StObject.set(x, "createScrollContainer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTitleBar(value: String => HTMLElement): Self = StObject.set(x, "createTitleBar", js.Any.fromFunction1(value))
+    inline def setCreateTitleBar(value: String => HTMLElement): Self = StObject.set(x, "createTitleBar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFooter(value: HTMLElement): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: HTMLElement): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContainerBoundingRect(value: () => ClientRect): Self = StObject.set(x, "getContainerBoundingRect", js.Any.fromFunction0(value))
+    inline def setGetContainerBoundingRect(value: () => ClientRect): Self = StObject.set(x, "getContainerBoundingRect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentSize(value: () => ContentSize): Self = StObject.set(x, "getContentSize", js.Any.fromFunction0(value))
+    inline def setGetContentSize(value: () => ContentSize): Self = StObject.set(x, "getContentSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+    inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitializeCloseHandler(value: HTMLElement => Unit): Self = StObject.set(x, "initializeCloseHandler", js.Any.fromFunction1(value))
+    inline def setInitializeCloseHandler(value: HTMLElement => Unit): Self = StObject.set(x, "initializeCloseHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitializeMoveHandlers(value: HTMLElement => Unit): Self = StObject.set(x, "initializeMoveHandlers", js.Any.fromFunction1(value))
+    inline def setInitializeMoveHandlers(value: HTMLElement => Unit): Self = StObject.set(x, "initializeMoveHandlers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEndMove(value: (MouseEvent, Double, Double) => Unit): Self = StObject.set(x, "onEndMove", js.Any.fromFunction3(value))
+    inline def setOnEndMove(value: (MouseEvent, Double, Double) => Unit): Self = StObject.set(x, "onEndMove", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnMove(value: (MouseEvent, Double, Double) => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction3(value))
+    inline def setOnMove(value: (MouseEvent, Double, Double) => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnStartMove(value: (MouseEvent, Double, Double) => Unit): Self = StObject.set(x, "onStartMove", js.Any.fromFunction3(value))
+    inline def setOnStartMove(value: (MouseEvent, Double, Double) => Unit): Self = StObject.set(x, "onStartMove", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnTitleClick(value: Event => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction1(value))
+    inline def setOnTitleClick(value: Event => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTitleDoubleClick(value: Event => Unit): Self = StObject.set(x, "onTitleDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnTitleDoubleClick(value: Event => Unit): Self = StObject.set(x, "onTitleDoubleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEventListener(value: (js.Object, String, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
+    inline def setRemoveEventListener(value: (js.Object, String, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResizeToContent(value: ResizeOptions => Unit): Self = StObject.set(x, "resizeToContent", js.Any.fromFunction1(value))
+    inline def setResizeToContent(value: ResizeOptions => Unit): Self = StObject.set(x, "resizeToContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollContainer(value: HTMLElement): Self = StObject.set(x, "scrollContainer", value.asInstanceOf[js.Any])
+    inline def setScrollContainer(value: HTMLElement): Self = StObject.set(x, "scrollContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTitle(value: (String, DockingPanelOptions) => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction2(value))
+    inline def setSetTitle(value: (String, DockingPanelOptions) => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: HTMLElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: HTMLElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLabel(value: String): Self = StObject.set(x, "titleLabel", value.asInstanceOf[js.Any])
+    inline def setTitleLabel(value: String): Self = StObject.set(x, "titleLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
+    inline def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisibilityChanged(value: () => Unit): Self = StObject.set(x, "visibilityChanged", js.Any.fromFunction0(value))
+    inline def setVisibilityChanged(value: () => Unit): Self = StObject.set(x, "visibilityChanged", js.Any.fromFunction0(value))
   }
 }

@@ -12,25 +12,19 @@ trait PromptToInstall extends StObject {
 }
 object PromptToInstall {
   
-  @scala.inline
-  def apply(): PromptToInstall = {
+  inline def apply(): PromptToInstall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PromptToInstall]
   }
   
-  @scala.inline
-  implicit class PromptToInstallMutableBuilder[Self <: PromptToInstall] (val x: Self) extends AnyVal {
+  extension [Self <: PromptToInstall](x: Self) {
     
-    @scala.inline
-    def setPromptToInstall(value: Boolean): Self = StObject.set(x, "promptToInstall", value.asInstanceOf[js.Any])
+    inline def setPromptToInstall(value: Boolean): Self = StObject.set(x, "promptToInstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptToInstallRefusalMsg(value: String): Self = StObject.set(x, "promptToInstallRefusalMsg", value.asInstanceOf[js.Any])
+    inline def setPromptToInstallRefusalMsg(value: String): Self = StObject.set(x, "promptToInstallRefusalMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptToInstallRefusalMsgUndefined: Self = StObject.set(x, "promptToInstallRefusalMsg", js.undefined)
+    inline def setPromptToInstallRefusalMsgUndefined: Self = StObject.set(x, "promptToInstallRefusalMsg", js.undefined)
     
-    @scala.inline
-    def setPromptToInstallUndefined: Self = StObject.set(x, "promptToInstall", js.undefined)
+    inline def setPromptToInstallUndefined: Self = StObject.set(x, "promptToInstall", js.undefined)
   }
 }

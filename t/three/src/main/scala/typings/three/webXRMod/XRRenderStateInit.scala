@@ -16,37 +16,27 @@ trait XRRenderStateInit extends StObject {
 }
 object XRRenderStateInit {
   
-  @scala.inline
-  def apply(): XRRenderStateInit = {
+  inline def apply(): XRRenderStateInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XRRenderStateInit]
   }
   
-  @scala.inline
-  implicit class XRRenderStateInitMutableBuilder[Self <: XRRenderStateInit] (val x: Self) extends AnyVal {
+  extension [Self <: XRRenderStateInit](x: Self) {
     
-    @scala.inline
-    def setBaseLayer(value: XRWebGLLayer): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
+    inline def setBaseLayer(value: XRWebGLLayer): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLayerUndefined: Self = StObject.set(x, "baseLayer", js.undefined)
+    inline def setBaseLayerUndefined: Self = StObject.set(x, "baseLayer", js.undefined)
     
-    @scala.inline
-    def setDepthFar(value: Double): Self = StObject.set(x, "depthFar", value.asInstanceOf[js.Any])
+    inline def setDepthFar(value: Double): Self = StObject.set(x, "depthFar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthFarUndefined: Self = StObject.set(x, "depthFar", js.undefined)
+    inline def setDepthFarUndefined: Self = StObject.set(x, "depthFar", js.undefined)
     
-    @scala.inline
-    def setDepthNear(value: Double): Self = StObject.set(x, "depthNear", value.asInstanceOf[js.Any])
+    inline def setDepthNear(value: Double): Self = StObject.set(x, "depthNear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthNearUndefined: Self = StObject.set(x, "depthNear", js.undefined)
+    inline def setDepthNearUndefined: Self = StObject.set(x, "depthNear", js.undefined)
     
-    @scala.inline
-    def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
+    inline def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineVerticalFieldOfViewUndefined: Self = StObject.set(x, "inlineVerticalFieldOfView", js.undefined)
+    inline def setInlineVerticalFieldOfViewUndefined: Self = StObject.set(x, "inlineVerticalFieldOfView", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait Reloaded extends StObject {
 }
 object Reloaded {
   
-  @scala.inline
-  def apply(reloaded: Boolean): Reloaded = {
+  inline def apply(reloaded: Boolean): Reloaded = {
     val __obj = js.Dynamic.literal(reloaded = reloaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reloaded]
   }
   
-  @scala.inline
-  implicit class ReloadedMutableBuilder[Self <: Reloaded] (val x: Self) extends AnyVal {
+  extension [Self <: Reloaded](x: Self) {
     
-    @scala.inline
-    def setReloaded(value: Boolean): Self = StObject.set(x, "reloaded", value.asInstanceOf[js.Any])
+    inline def setReloaded(value: Boolean): Self = StObject.set(x, "reloaded", value.asInstanceOf[js.Any])
   }
 }

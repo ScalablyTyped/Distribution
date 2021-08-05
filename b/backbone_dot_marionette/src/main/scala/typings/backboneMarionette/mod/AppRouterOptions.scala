@@ -25,31 +25,23 @@ trait AppRouterOptions extends StObject {
 }
 object AppRouterOptions {
   
-  @scala.inline
-  def apply(): AppRouterOptions = {
+  inline def apply(): AppRouterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppRouterOptions]
   }
   
-  @scala.inline
-  implicit class AppRouterOptionsMutableBuilder[Self <: AppRouterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppRouterOptions](x: Self) {
     
-    @scala.inline
-    def setAppRoutes(value: AppRoutes): Self = StObject.set(x, "appRoutes", value.asInstanceOf[js.Any])
+    inline def setAppRoutes(value: AppRoutes): Self = StObject.set(x, "appRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppRoutesUndefined: Self = StObject.set(x, "appRoutes", js.undefined)
+    inline def setAppRoutesUndefined: Self = StObject.set(x, "appRoutes", js.undefined)
     
-    @scala.inline
-    def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: AppRoutes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: AppRoutes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
   }
 }

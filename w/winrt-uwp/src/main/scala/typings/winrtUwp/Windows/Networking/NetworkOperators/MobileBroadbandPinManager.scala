@@ -20,8 +20,7 @@ trait MobileBroadbandPinManager extends StObject {
 }
 object MobileBroadbandPinManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPin: MobileBroadbandPinType => MobileBroadbandPin,
     supportedPins: IVectorView[MobileBroadbandPinType]
   ): MobileBroadbandPinManager = {
@@ -29,13 +28,10 @@ object MobileBroadbandPinManager {
     __obj.asInstanceOf[MobileBroadbandPinManager]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandPinManagerMutableBuilder[Self <: MobileBroadbandPinManager] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandPinManager](x: Self) {
     
-    @scala.inline
-    def setGetPin(value: MobileBroadbandPinType => MobileBroadbandPin): Self = StObject.set(x, "getPin", js.Any.fromFunction1(value))
+    inline def setGetPin(value: MobileBroadbandPinType => MobileBroadbandPin): Self = StObject.set(x, "getPin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedPins(value: IVectorView[MobileBroadbandPinType]): Self = StObject.set(x, "supportedPins", value.asInstanceOf[js.Any])
+    inline def setSupportedPins(value: IVectorView[MobileBroadbandPinType]): Self = StObject.set(x, "supportedPins", value.asInstanceOf[js.Any])
   }
 }

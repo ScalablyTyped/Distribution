@@ -12,12 +12,9 @@ object LineMap1 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): typings.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScriptSnapshot")(scriptSnapshot.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.LineMap]
+  inline def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): typings.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScriptSnapshot")(scriptSnapshot.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.LineMap]
   
-  @scala.inline
-  def fromSimpleText(text: ISimpleText): typings.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSimpleText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.LineMap]
+  inline def fromSimpleText(text: ISimpleText): typings.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSimpleText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.LineMap]
   
-  @scala.inline
-  def fromString(text: String): typings.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.LineMap]
+  inline def fromString(text: String): typings.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.LineMap]
 }

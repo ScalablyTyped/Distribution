@@ -15,16 +15,10 @@ object fetchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromFetch(input: String): Observable[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[Response]]
-  @scala.inline
-  def fromFetch(input: String, init: RequestInit): Observable[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[Response]]
-  @scala.inline
-  def fromFetch(input: Request): Observable[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[Response]]
-  @scala.inline
-  def fromFetch(input: Request, init: RequestInit): Observable[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[Response]]
-  @scala.inline
-  def fromFetch[T](input: String, init: RequestInit & Selector[T]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  @scala.inline
-  def fromFetch[T](input: Request, init: RequestInit & Selector[T]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromFetch(input: String): Observable[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[Response]]
+  inline def fromFetch(input: String, init: RequestInit): Observable[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[Response]]
+  inline def fromFetch(input: Request): Observable[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[Response]]
+  inline def fromFetch(input: Request, init: RequestInit): Observable[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[Response]]
+  inline def fromFetch[T](input: String, init: RequestInit & Selector[T]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromFetch[T](input: Request, init: RequestInit & Selector[T]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

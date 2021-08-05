@@ -16,23 +16,18 @@ trait BracketsPlain
 }
 object BracketsPlain {
   
-  @scala.inline
-  def apply(children: js.Array[CssNodePlain]): BracketsPlain = {
+  inline def apply(children: js.Array[CssNodePlain]): BracketsPlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Brackets")
     __obj.asInstanceOf[BracketsPlain]
   }
   
-  @scala.inline
-  implicit class BracketsPlainMutableBuilder[Self <: BracketsPlain] (val x: Self) extends AnyVal {
+  extension [Self <: BracketsPlain](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Brackets): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Brackets): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

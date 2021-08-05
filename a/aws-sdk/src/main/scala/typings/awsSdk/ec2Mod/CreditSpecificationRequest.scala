@@ -13,16 +13,13 @@ trait CreditSpecificationRequest extends StObject {
 }
 object CreditSpecificationRequest {
   
-  @scala.inline
-  def apply(CpuCredits: String): CreditSpecificationRequest = {
+  inline def apply(CpuCredits: String): CreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(CpuCredits = CpuCredits.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditSpecificationRequest]
   }
   
-  @scala.inline
-  implicit class CreditSpecificationRequestMutableBuilder[Self <: CreditSpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreditSpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
   }
 }

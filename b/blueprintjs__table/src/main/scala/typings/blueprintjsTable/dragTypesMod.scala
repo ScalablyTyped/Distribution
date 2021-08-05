@@ -38,8 +38,7 @@ object dragTypesMod {
   }
   object ICoordinateData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activation: IClientCoordinates,
       current: IClientCoordinates,
       delta: IClientCoordinates,
@@ -50,23 +49,17 @@ object dragTypesMod {
       __obj.asInstanceOf[ICoordinateData]
     }
     
-    @scala.inline
-    implicit class ICoordinateDataMutableBuilder[Self <: ICoordinateData] (val x: Self) extends AnyVal {
+    extension [Self <: ICoordinateData](x: Self) {
       
-      @scala.inline
-      def setActivation(value: IClientCoordinates): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: IClientCoordinates): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent(value: IClientCoordinates): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: IClientCoordinates): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta(value: IClientCoordinates): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: IClientCoordinates): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast(value: IClientCoordinates): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: IClientCoordinates): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: IClientCoordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: IClientCoordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,56 +120,40 @@ object dragTypesMod {
   }
   object IDragHandler {
     
-    @scala.inline
-    def apply(): IDragHandler = {
+    inline def apply(): IDragHandler = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDragHandler]
     }
     
-    @scala.inline
-    implicit class IDragHandlerMutableBuilder[Self <: IDragHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IDragHandler](x: Self) {
       
-      @scala.inline
-      def setOnActivate(value: /* event */ MouseEvent => Boolean): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
+      inline def setOnActivate(value: /* event */ MouseEvent => Boolean): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
+      inline def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+      inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnDragEnd(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
+      inline def setOnDragEnd(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragMove(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Unit): Self = StObject.set(x, "onDragMove", js.Any.fromFunction2(value))
+      inline def setOnDragMove(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Unit): Self = StObject.set(x, "onDragMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
+      inline def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+      inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     }
   }
 }

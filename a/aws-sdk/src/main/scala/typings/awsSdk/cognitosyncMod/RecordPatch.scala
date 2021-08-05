@@ -33,34 +33,25 @@ trait RecordPatch extends StObject {
 }
 object RecordPatch {
   
-  @scala.inline
-  def apply(Key: RecordKey, Op: Operation, SyncCount: Long): RecordPatch = {
+  inline def apply(Key: RecordKey, Op: Operation, SyncCount: Long): RecordPatch = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Op = Op.asInstanceOf[js.Any], SyncCount = SyncCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordPatch]
   }
   
-  @scala.inline
-  implicit class RecordPatchMutableBuilder[Self <: RecordPatch] (val x: Self) extends AnyVal {
+  extension [Self <: RecordPatch](x: Self) {
     
-    @scala.inline
-    def setDeviceLastModifiedDate(value: Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastModifiedDate(value: Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
+    inline def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setKey(value: RecordKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: RecordKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: Operation): Self = StObject.set(x, "Op", value.asInstanceOf[js.Any])
+    inline def setOp(value: Operation): Self = StObject.set(x, "Op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncCount(value: Long): Self = StObject.set(x, "SyncCount", value.asInstanceOf[js.Any])
+    inline def setSyncCount(value: Long): Self = StObject.set(x, "SyncCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: RecordValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RecordValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

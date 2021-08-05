@@ -16,25 +16,19 @@ trait ExtraRightPx extends StObject {
 }
 object ExtraRightPx {
   
-  @scala.inline
-  def apply(extraLeftPx: Double, extraRightPx: Double, notePx: Double, width: Double): ExtraRightPx = {
+  inline def apply(extraLeftPx: Double, extraRightPx: Double, notePx: Double, width: Double): ExtraRightPx = {
     val __obj = js.Dynamic.literal(extraLeftPx = extraLeftPx.asInstanceOf[js.Any], extraRightPx = extraRightPx.asInstanceOf[js.Any], notePx = notePx.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraRightPx]
   }
   
-  @scala.inline
-  implicit class ExtraRightPxMutableBuilder[Self <: ExtraRightPx] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraRightPx](x: Self) {
     
-    @scala.inline
-    def setExtraLeftPx(value: Double): Self = StObject.set(x, "extraLeftPx", value.asInstanceOf[js.Any])
+    inline def setExtraLeftPx(value: Double): Self = StObject.set(x, "extraLeftPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraRightPx(value: Double): Self = StObject.set(x, "extraRightPx", value.asInstanceOf[js.Any])
+    inline def setExtraRightPx(value: Double): Self = StObject.set(x, "extraRightPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotePx(value: Double): Self = StObject.set(x, "notePx", value.asInstanceOf[js.Any])
+    inline def setNotePx(value: Double): Self = StObject.set(x, "notePx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

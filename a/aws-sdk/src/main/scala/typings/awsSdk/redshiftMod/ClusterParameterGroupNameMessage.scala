@@ -18,25 +18,19 @@ trait ClusterParameterGroupNameMessage extends StObject {
 }
 object ClusterParameterGroupNameMessage {
   
-  @scala.inline
-  def apply(): ClusterParameterGroupNameMessage = {
+  inline def apply(): ClusterParameterGroupNameMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterParameterGroupNameMessage]
   }
   
-  @scala.inline
-  implicit class ClusterParameterGroupNameMessageMutableBuilder[Self <: ClusterParameterGroupNameMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterParameterGroupNameMessage](x: Self) {
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
+    inline def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
     
-    @scala.inline
-    def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
+    inline def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
+    inline def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
   }
 }

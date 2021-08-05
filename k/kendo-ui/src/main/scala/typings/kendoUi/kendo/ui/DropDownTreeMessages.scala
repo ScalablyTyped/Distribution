@@ -14,31 +14,23 @@ trait DropDownTreeMessages extends StObject {
 }
 object DropDownTreeMessages {
   
-  @scala.inline
-  def apply(): DropDownTreeMessages = {
+  inline def apply(): DropDownTreeMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownTreeMessages]
   }
   
-  @scala.inline
-  implicit class DropDownTreeMessagesMutableBuilder[Self <: DropDownTreeMessages] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownTreeMessages](x: Self) {
     
-    @scala.inline
-    def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setDeleteTag(value: String): Self = StObject.set(x, "deleteTag", value.asInstanceOf[js.Any])
+    inline def setDeleteTag(value: String): Self = StObject.set(x, "deleteTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTagUndefined: Self = StObject.set(x, "deleteTag", js.undefined)
+    inline def setDeleteTagUndefined: Self = StObject.set(x, "deleteTag", js.undefined)
     
-    @scala.inline
-    def setSingleTag(value: String): Self = StObject.set(x, "singleTag", value.asInstanceOf[js.Any])
+    inline def setSingleTag(value: String): Self = StObject.set(x, "singleTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleTagUndefined: Self = StObject.set(x, "singleTag", js.undefined)
+    inline def setSingleTagUndefined: Self = StObject.set(x, "singleTag", js.undefined)
   }
 }

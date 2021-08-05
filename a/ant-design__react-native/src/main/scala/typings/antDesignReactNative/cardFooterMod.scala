@@ -26,8 +26,7 @@ object cardFooterMod {
     @JSImport("@ant-design/react-native/lib/card/CardFooter", "default.defaultProps")
     @js.native
     def defaultProps: Style = js.native
-    @scala.inline
-    def defaultProps_=(x: Style): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Style): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -43,23 +42,18 @@ object cardFooterMod {
   }
   object CardFooterProps {
     
-    @scala.inline
-    def apply(): CardFooterProps = {
+    inline def apply(): CardFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardFooterProps]
     }
     
-    @scala.inline
-    implicit class CardFooterPropsMutableBuilder[Self <: CardFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardFooterProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -71,26 +65,20 @@ object cardFooterMod {
   }
   object CardFooterPropsType {
     
-    @scala.inline
-    def apply(): CardFooterPropsType = {
+    inline def apply(): CardFooterPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardFooterPropsType]
     }
     
-    @scala.inline
-    implicit class CardFooterPropsTypeMutableBuilder[Self <: CardFooterPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CardFooterPropsType](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     }
   }
 }

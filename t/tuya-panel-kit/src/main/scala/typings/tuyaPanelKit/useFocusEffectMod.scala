@@ -10,8 +10,7 @@ object useFocusEffectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type EffectCallback = js.Function0[js.UndefOr[Unit | js.Function0[Unit]]]
 }

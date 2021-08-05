@@ -13,16 +13,13 @@ trait DeleteCorsConfigurationRequest extends StObject {
 }
 object DeleteCorsConfigurationRequest {
   
-  @scala.inline
-  def apply(ApiId: string): DeleteCorsConfigurationRequest = {
+  inline def apply(ApiId: string): DeleteCorsConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCorsConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCorsConfigurationRequestMutableBuilder[Self <: DeleteCorsConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCorsConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
   }
 }

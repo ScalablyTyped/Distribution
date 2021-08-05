@@ -38,55 +38,39 @@ trait Update extends StObject {
 }
 object Update {
   
-  @scala.inline
-  def apply(): Update = {
+  inline def apply(): Update = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Update]
   }
   
-  @scala.inline
-  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+  extension [Self <: Update](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setErrors(value: ErrorDetails): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: ErrorDetails): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ErrorDetail*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorDetail*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParams(value: UpdateParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: UpdateParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setParamsVarargs(value: UpdateParam*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: UpdateParam*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: UpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: UpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: UpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

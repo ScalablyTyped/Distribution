@@ -12,19 +12,15 @@ trait AppsCheckAuthorizationEndpoint extends StObject {
 }
 object AppsCheckAuthorizationEndpoint {
   
-  @scala.inline
-  def apply(access_token: String, client_id: String): AppsCheckAuthorizationEndpoint = {
+  inline def apply(access_token: String, client_id: String): AppsCheckAuthorizationEndpoint = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsCheckAuthorizationEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsCheckAuthorizationEndpointMutableBuilder[Self <: AppsCheckAuthorizationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsCheckAuthorizationEndpoint](x: Self) {
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
   }
 }

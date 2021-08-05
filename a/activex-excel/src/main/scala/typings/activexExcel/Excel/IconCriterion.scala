@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IconCriterion extends StObject {
   
-  @JSName("Excel.IconCriterion_typekey")
+  /* private */ @JSName("Excel.IconCriterion_typekey")
   var ExcelDotIconCriterion_typekey: IconCriterion
   
   var Icon: XlIcon
@@ -21,8 +21,7 @@ trait IconCriterion extends StObject {
 }
 object IconCriterion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExcelDotIconCriterion_typekey: IconCriterion,
     Icon: XlIcon,
     Index: Double,
@@ -35,25 +34,18 @@ object IconCriterion {
     __obj.asInstanceOf[IconCriterion]
   }
   
-  @scala.inline
-  implicit class IconCriterionMutableBuilder[Self <: IconCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: IconCriterion](x: Self) {
     
-    @scala.inline
-    def setExcelDotIconCriterion_typekey(value: IconCriterion): Self = StObject.set(x, "Excel.IconCriterion_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotIconCriterion_typekey(value: IconCriterion): Self = StObject.set(x, "Excel.IconCriterion_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: XlIcon): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: XlIcon): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlConditionValueTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlConditionValueTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double | String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

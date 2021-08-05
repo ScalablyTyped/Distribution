@@ -51,8 +51,7 @@ trait Sorts extends StObject {
 }
 object Sorts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, Double) => Dynatable,
     clear: () => Unit,
     functions: SortsFunctions,
@@ -65,28 +64,20 @@ object Sorts {
     __obj.asInstanceOf[Sorts]
   }
   
-  @scala.inline
-  implicit class SortsMutableBuilder[Self <: Sorts] (val x: Self) extends AnyVal {
+  extension [Self <: Sorts](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, Double) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, Double) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFunctions(value: SortsFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: SortsFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuessType(value: (js.Any, js.Any, String) => String): Self = StObject.set(x, "guessType", js.Any.fromFunction3(value))
+    inline def setGuessType(value: (js.Any, js.Any, String) => String): Self = StObject.set(x, "guessType", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
+    inline def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

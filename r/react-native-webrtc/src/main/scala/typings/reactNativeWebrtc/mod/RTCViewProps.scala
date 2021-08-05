@@ -21,40 +21,29 @@ trait RTCViewProps extends StObject {
 }
 object RTCViewProps {
   
-  @scala.inline
-  def apply(streamURL: String): RTCViewProps = {
+  inline def apply(streamURL: String): RTCViewProps = {
     val __obj = js.Dynamic.literal(streamURL = streamURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCViewProps]
   }
   
-  @scala.inline
-  implicit class RTCViewPropsMutableBuilder[Self <: RTCViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: RTCViewProps](x: Self) {
     
-    @scala.inline
-    def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+    inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
-    @scala.inline
-    def setObjectFit(value: contain | cover): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+    inline def setObjectFit(value: contain | cover): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
+    inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
-    @scala.inline
-    def setStreamURL(value: String): Self = StObject.set(x, "streamURL", value.asInstanceOf[js.Any])
+    inline def setStreamURL(value: String): Self = StObject.set(x, "streamURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
+    inline def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
+    inline def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
   }
 }

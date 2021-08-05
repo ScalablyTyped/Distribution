@@ -29,8 +29,7 @@ trait XLoadEventListener
 }
 object XLoadEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     loadCancelled: XFrameLoader => Unit,
@@ -42,13 +41,10 @@ object XLoadEventListener {
     __obj.asInstanceOf[XLoadEventListener]
   }
   
-  @scala.inline
-  implicit class XLoadEventListenerMutableBuilder[Self <: XLoadEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XLoadEventListener](x: Self) {
     
-    @scala.inline
-    def setLoadCancelled(value: XFrameLoader => Unit): Self = StObject.set(x, "loadCancelled", js.Any.fromFunction1(value))
+    inline def setLoadCancelled(value: XFrameLoader => Unit): Self = StObject.set(x, "loadCancelled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadFinished(value: XFrameLoader => Unit): Self = StObject.set(x, "loadFinished", js.Any.fromFunction1(value))
+    inline def setLoadFinished(value: XFrameLoader => Unit): Self = StObject.set(x, "loadFinished", js.Any.fromFunction1(value))
   }
 }

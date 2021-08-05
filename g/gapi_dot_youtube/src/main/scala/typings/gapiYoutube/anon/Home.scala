@@ -53,64 +53,45 @@ trait Home extends StObject {
 }
 object Home {
   
-  @scala.inline
-  def apply(part: String): Home = {
+  inline def apply(part: String): Home = {
     val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
     __obj.asInstanceOf[Home]
   }
   
-  @scala.inline
-  implicit class HomeMutableBuilder[Self <: Home] (val x: Self) extends AnyVal {
+  extension [Self <: Home](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setHome(value: Boolean): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+    inline def setHome(value: Boolean): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
+    inline def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
+    inline def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
+    inline def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedAfter(value: String): Self = StObject.set(x, "publishedAfter", value.asInstanceOf[js.Any])
+    inline def setPublishedAfter(value: String): Self = StObject.set(x, "publishedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedAfterUndefined: Self = StObject.set(x, "publishedAfter", js.undefined)
+    inline def setPublishedAfterUndefined: Self = StObject.set(x, "publishedAfter", js.undefined)
     
-    @scala.inline
-    def setPublishedBefore(value: String): Self = StObject.set(x, "publishedBefore", value.asInstanceOf[js.Any])
+    inline def setPublishedBefore(value: String): Self = StObject.set(x, "publishedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedBeforeUndefined: Self = StObject.set(x, "publishedBefore", js.undefined)
+    inline def setPublishedBeforeUndefined: Self = StObject.set(x, "publishedBefore", js.undefined)
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

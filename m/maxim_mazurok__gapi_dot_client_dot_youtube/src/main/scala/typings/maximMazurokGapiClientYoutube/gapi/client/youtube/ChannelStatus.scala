@@ -21,43 +21,31 @@ trait ChannelStatus extends StObject {
 }
 object ChannelStatus {
   
-  @scala.inline
-  def apply(): ChannelStatus = {
+  inline def apply(): ChannelStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelStatus]
   }
   
-  @scala.inline
-  implicit class ChannelStatusMutableBuilder[Self <: ChannelStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelStatus](x: Self) {
     
-    @scala.inline
-    def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
+    inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLinkedUndefined: Self = StObject.set(x, "isLinked", js.undefined)
+    inline def setIsLinkedUndefined: Self = StObject.set(x, "isLinked", js.undefined)
     
-    @scala.inline
-    def setLongUploadsStatus(value: String): Self = StObject.set(x, "longUploadsStatus", value.asInstanceOf[js.Any])
+    inline def setLongUploadsStatus(value: String): Self = StObject.set(x, "longUploadsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongUploadsStatusUndefined: Self = StObject.set(x, "longUploadsStatus", js.undefined)
+    inline def setLongUploadsStatusUndefined: Self = StObject.set(x, "longUploadsStatus", js.undefined)
     
-    @scala.inline
-    def setMadeForKids(value: Boolean): Self = StObject.set(x, "madeForKids", value.asInstanceOf[js.Any])
+    inline def setMadeForKids(value: Boolean): Self = StObject.set(x, "madeForKids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMadeForKidsUndefined: Self = StObject.set(x, "madeForKids", js.undefined)
+    inline def setMadeForKidsUndefined: Self = StObject.set(x, "madeForKids", js.undefined)
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
+    inline def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
     
-    @scala.inline
-    def setSelfDeclaredMadeForKids(value: Boolean): Self = StObject.set(x, "selfDeclaredMadeForKids", value.asInstanceOf[js.Any])
+    inline def setSelfDeclaredMadeForKids(value: Boolean): Self = StObject.set(x, "selfDeclaredMadeForKids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfDeclaredMadeForKidsUndefined: Self = StObject.set(x, "selfDeclaredMadeForKids", js.undefined)
+    inline def setSelfDeclaredMadeForKidsUndefined: Self = StObject.set(x, "selfDeclaredMadeForKids", js.undefined)
   }
 }

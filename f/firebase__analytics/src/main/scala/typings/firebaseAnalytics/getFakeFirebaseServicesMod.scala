@@ -13,17 +13,11 @@ object getFakeFirebaseServicesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
-  @scala.inline
-  def getFakeApp(fakeAppParams: ApiKey): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(fakeAppParams.asInstanceOf[js.Any]).asInstanceOf[FirebaseApp]
+  inline def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
+  inline def getFakeApp(fakeAppParams: ApiKey): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(fakeAppParams.asInstanceOf[js.Any]).asInstanceOf[FirebaseApp]
   
-  @scala.inline
-  def getFakeInstallations(): FirebaseInstallations = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")().asInstanceOf[FirebaseInstallations]
-  @scala.inline
-  def getFakeInstallations(fid: String): FirebaseInstallations = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")(fid.asInstanceOf[js.Any]).asInstanceOf[FirebaseInstallations]
-  @scala.inline
-  def getFakeInstallations(fid: String, onFidResolve: js.Function): FirebaseInstallations = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")(fid.asInstanceOf[js.Any], onFidResolve.asInstanceOf[js.Any])).asInstanceOf[FirebaseInstallations]
-  @scala.inline
-  def getFakeInstallations(fid: Unit, onFidResolve: js.Function): FirebaseInstallations = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")(fid.asInstanceOf[js.Any], onFidResolve.asInstanceOf[js.Any])).asInstanceOf[FirebaseInstallations]
+  inline def getFakeInstallations(): FirebaseInstallations = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")().asInstanceOf[FirebaseInstallations]
+  inline def getFakeInstallations(fid: String): FirebaseInstallations = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")(fid.asInstanceOf[js.Any]).asInstanceOf[FirebaseInstallations]
+  inline def getFakeInstallations(fid: String, onFidResolve: js.Function): FirebaseInstallations = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")(fid.asInstanceOf[js.Any], onFidResolve.asInstanceOf[js.Any])).asInstanceOf[FirebaseInstallations]
+  inline def getFakeInstallations(fid: Unit, onFidResolve: js.Function): FirebaseInstallations = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeInstallations")(fid.asInstanceOf[js.Any], onFidResolve.asInstanceOf[js.Any])).asInstanceOf[FirebaseInstallations]
 }

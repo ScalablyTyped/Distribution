@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestRedirect extends StObject
 object RequestRedirect {
   
-  @scala.inline
-  def error: typings.std.stdStrings.error = "error".asInstanceOf[typings.std.stdStrings.error]
+  inline def error: typings.std.stdStrings.error = "error".asInstanceOf[typings.std.stdStrings.error]
   
-  @scala.inline
-  def follow: typings.std.stdStrings.follow = "follow".asInstanceOf[typings.std.stdStrings.follow]
+  inline def follow: typings.std.stdStrings.follow = "follow".asInstanceOf[typings.std.stdStrings.follow]
   
-  @scala.inline
-  def manual: typings.std.stdStrings.manual = "manual".asInstanceOf[typings.std.stdStrings.manual]
+  inline def manual: typings.std.stdStrings.manual = "manual".asInstanceOf[typings.std.stdStrings.manual]
 }

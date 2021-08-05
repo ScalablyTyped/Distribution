@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ControlSetKey extends StObject
 object ControlSetKey {
   
-  @scala.inline
-  def default: typings.yandexMaps.yandexMapsStrings.default = "default".asInstanceOf[typings.yandexMaps.yandexMapsStrings.default]
+  inline def default: typings.yandexMaps.yandexMapsStrings.default = "default".asInstanceOf[typings.yandexMaps.yandexMapsStrings.default]
   
-  @scala.inline
-  def largeMapDefaultSet: typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet]
+  inline def largeMapDefaultSet: typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet]
   
-  @scala.inline
-  def mediumMapDefaultSet: typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet]
+  inline def mediumMapDefaultSet: typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet]
   
-  @scala.inline
-  def smallMapDefaultSet: typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet]
+  inline def smallMapDefaultSet: typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet]
 }

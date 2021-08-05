@@ -12,19 +12,15 @@ trait SerializationMethod extends StObject {
 }
 object SerializationMethod {
   
-  @scala.inline
-  def apply(): SerializationMethod = {
+  inline def apply(): SerializationMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SerializationMethod]
   }
   
-  @scala.inline
-  implicit class SerializationMethodMutableBuilder[Self <: SerializationMethod] (val x: Self) extends AnyVal {
+  extension [Self <: SerializationMethod](x: Self) {
     
-    @scala.inline
-    def setSerializationMethod(value: normal | pretty): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
+    inline def setSerializationMethod(value: normal | pretty): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
+    inline def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
   }
 }

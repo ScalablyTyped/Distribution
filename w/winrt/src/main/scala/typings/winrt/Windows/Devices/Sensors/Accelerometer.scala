@@ -9,8 +9,7 @@ trait Accelerometer
      with IAccelerometer
 object Accelerometer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => AccelerometerReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,

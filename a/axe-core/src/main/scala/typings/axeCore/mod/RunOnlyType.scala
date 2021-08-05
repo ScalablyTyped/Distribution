@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RunOnlyType extends StObject
 object RunOnlyType {
   
-  @scala.inline
-  def rule: typings.axeCore.axeCoreStrings.rule = "rule".asInstanceOf[typings.axeCore.axeCoreStrings.rule]
+  inline def rule: typings.axeCore.axeCoreStrings.rule = "rule".asInstanceOf[typings.axeCore.axeCoreStrings.rule]
   
-  @scala.inline
-  def rules: typings.axeCore.axeCoreStrings.rules = "rules".asInstanceOf[typings.axeCore.axeCoreStrings.rules]
+  inline def rules: typings.axeCore.axeCoreStrings.rules = "rules".asInstanceOf[typings.axeCore.axeCoreStrings.rules]
   
-  @scala.inline
-  def tag: typings.axeCore.axeCoreStrings.tag = "tag".asInstanceOf[typings.axeCore.axeCoreStrings.tag]
+  inline def tag: typings.axeCore.axeCoreStrings.tag = "tag".asInstanceOf[typings.axeCore.axeCoreStrings.tag]
   
-  @scala.inline
-  def tags: typings.axeCore.axeCoreStrings.tags = "tags".asInstanceOf[typings.axeCore.axeCoreStrings.tags]
+  inline def tags: typings.axeCore.axeCoreStrings.tags = "tags".asInstanceOf[typings.axeCore.axeCoreStrings.tags]
 }

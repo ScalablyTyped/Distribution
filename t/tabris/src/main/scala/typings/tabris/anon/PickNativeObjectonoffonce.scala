@@ -57,8 +57,7 @@ trait PickNativeObjectonoffonce extends StObject {
 }
 object PickNativeObjectonoffonce {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
     once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
@@ -68,25 +67,20 @@ object PickNativeObjectonoffonce {
     __obj.asInstanceOf[PickNativeObjectonoffonce]
   }
   
-  @scala.inline
-  implicit class PickNativeObjectonoffonceMutableBuilder[Self <: PickNativeObjectonoffonce] (val x: Self) extends AnyVal {
+  extension [Self <: PickNativeObjectonoffonce](x: Self) {
     
-    @scala.inline
-    def setOff(
+    inline def setOff(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
     ): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
     ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnce(
+    inline def setOnce(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
     ): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTrigger(value: /* type */ String => PickNativeObjectonoffonce): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
+    inline def setTrigger(value: /* type */ String => PickNativeObjectonoffonce): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
   }
 }

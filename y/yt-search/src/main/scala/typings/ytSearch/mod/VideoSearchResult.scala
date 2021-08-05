@@ -35,8 +35,7 @@ trait VideoSearchResult extends StObject {
 }
 object VideoSearchResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ago: String,
     author: Author,
     description: String,
@@ -55,46 +54,32 @@ object VideoSearchResult {
     __obj.asInstanceOf[VideoSearchResult]
   }
   
-  @scala.inline
-  implicit class VideoSearchResultMutableBuilder[Self <: VideoSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSearchResult](x: Self) {
     
-    @scala.inline
-    def setAgo(value: String): Self = StObject.set(x, "ago", value.asInstanceOf[js.Any])
+    inline def setAgo(value: String): Self = StObject.set(x, "ago", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: Author): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Author): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViews(value: Double): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: Double): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }
 }

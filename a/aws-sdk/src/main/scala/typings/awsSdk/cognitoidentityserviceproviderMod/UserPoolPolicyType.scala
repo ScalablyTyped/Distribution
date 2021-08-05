@@ -13,19 +13,15 @@ trait UserPoolPolicyType extends StObject {
 }
 object UserPoolPolicyType {
   
-  @scala.inline
-  def apply(): UserPoolPolicyType = {
+  inline def apply(): UserPoolPolicyType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolPolicyType]
   }
   
-  @scala.inline
-  implicit class UserPoolPolicyTypeMutableBuilder[Self <: UserPoolPolicyType] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolPolicyType](x: Self) {
     
-    @scala.inline
-    def setPasswordPolicy(value: PasswordPolicyType): Self = StObject.set(x, "PasswordPolicy", value.asInstanceOf[js.Any])
+    inline def setPasswordPolicy(value: PasswordPolicyType): Self = StObject.set(x, "PasswordPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordPolicyUndefined: Self = StObject.set(x, "PasswordPolicy", js.undefined)
+    inline def setPasswordPolicyUndefined: Self = StObject.set(x, "PasswordPolicy", js.undefined)
   }
 }

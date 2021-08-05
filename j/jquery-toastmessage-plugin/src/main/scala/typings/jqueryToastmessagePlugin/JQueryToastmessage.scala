@@ -18,17 +18,13 @@ object JQueryToastmessage {
   trait ShowToastCommand extends StObject
   object ShowToastCommand {
     
-    @scala.inline
-    def showErrorToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showErrorToast = "showErrorToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showErrorToast]
+    inline def showErrorToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showErrorToast = "showErrorToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showErrorToast]
     
-    @scala.inline
-    def showNoticeToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showNoticeToast = "showNoticeToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showNoticeToast]
+    inline def showNoticeToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showNoticeToast = "showNoticeToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showNoticeToast]
     
-    @scala.inline
-    def showSuccessToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showSuccessToast = "showSuccessToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showSuccessToast]
+    inline def showSuccessToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showSuccessToast = "showSuccessToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showSuccessToast]
     
-    @scala.inline
-    def showWarningToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showWarningToast = "showWarningToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showWarningToast]
+    inline def showWarningToast: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showWarningToast = "showWarningToast".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showWarningToast]
   }
   
   trait ToastOptions extends StObject {
@@ -70,62 +66,44 @@ object JQueryToastmessage {
   }
   object ToastOptions {
     
-    @scala.inline
-    def apply(): ToastOptions = {
+    inline def apply(): ToastOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastOptions]
     }
     
-    @scala.inline
-    implicit class ToastOptionsMutableBuilder[Self <: ToastOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ToastOptions](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+      inline def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
+      inline def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setInEffectDuration(value: Double): Self = StObject.set(x, "inEffectDuration", value.asInstanceOf[js.Any])
+      inline def setInEffectDuration(value: Double): Self = StObject.set(x, "inEffectDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInEffectDurationUndefined: Self = StObject.set(x, "inEffectDuration", js.undefined)
+      inline def setInEffectDurationUndefined: Self = StObject.set(x, "inEffectDuration", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ToastPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ToastPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStayTime(value: Double): Self = StObject.set(x, "stayTime", value.asInstanceOf[js.Any])
+      inline def setStayTime(value: Double): Self = StObject.set(x, "stayTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStayTimeUndefined: Self = StObject.set(x, "stayTime", js.undefined)
+      inline def setStayTimeUndefined: Self = StObject.set(x, "stayTime", js.undefined)
       
-      @scala.inline
-      def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setType(value: ToastType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ToastType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -140,23 +118,17 @@ object JQueryToastmessage {
   trait ToastPosition extends StObject
   object ToastPosition {
     
-    @scala.inline
-    def `middle-center`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-center` = "middle-center".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-center`]
+    inline def `middle-center`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-center` = "middle-center".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-center`]
     
-    @scala.inline
-    def `middle-left`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-left` = "middle-left".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-left`]
+    inline def `middle-left`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-left` = "middle-left".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-left`]
     
-    @scala.inline
-    def `middle-right`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-right` = "middle-right".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-right`]
+    inline def `middle-right`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-right` = "middle-right".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`middle-right`]
     
-    @scala.inline
-    def `top-center`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-center` = "top-center".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-center`]
+    inline def `top-center`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-center` = "top-center".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-center`]
     
-    @scala.inline
-    def `top-left`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-left` = "top-left".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-left`]
+    inline def `top-left`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-left` = "top-left".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-left`]
     
-    @scala.inline
-    def `top-right`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-right` = "top-right".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-right`]
+    inline def `top-right`: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-right` = "top-right".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.`top-right`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -168,17 +140,13 @@ object JQueryToastmessage {
   trait ToastType extends StObject
   object ToastType {
     
-    @scala.inline
-    def error: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.error = "error".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.error]
+    inline def error: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.error = "error".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.error]
     
-    @scala.inline
-    def notice: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.notice = "notice".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.notice]
+    inline def notice: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.notice = "notice".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.notice]
     
-    @scala.inline
-    def success: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.success = "success".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.success]
+    inline def success: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.success = "success".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.success]
     
-    @scala.inline
-    def warning: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.warning = "warning".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.warning]
+    inline def warning: typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.warning = "warning".asInstanceOf[typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.warning]
   }
   
   @js.native

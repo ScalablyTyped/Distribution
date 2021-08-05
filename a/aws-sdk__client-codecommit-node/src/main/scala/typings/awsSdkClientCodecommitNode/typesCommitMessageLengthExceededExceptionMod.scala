@@ -18,17 +18,14 @@ object typesCommitMessageLengthExceededExceptionMod {
   }
   object CommitMessageLengthExceededException {
     
-    @scala.inline
-    def apply(): CommitMessageLengthExceededException = {
+    inline def apply(): CommitMessageLengthExceededException = {
       val __obj = js.Dynamic.literal(name = "CommitMessageLengthExceededException")
       __obj.asInstanceOf[CommitMessageLengthExceededException]
     }
     
-    @scala.inline
-    implicit class CommitMessageLengthExceededExceptionMutableBuilder[Self <: CommitMessageLengthExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: CommitMessageLengthExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitMessageLengthExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

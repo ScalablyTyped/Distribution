@@ -13,16 +13,13 @@ trait GetHostnameSuggestionRequest extends StObject {
 }
 object GetHostnameSuggestionRequest {
   
-  @scala.inline
-  def apply(LayerId: String): GetHostnameSuggestionRequest = {
+  inline def apply(LayerId: String): GetHostnameSuggestionRequest = {
     val __obj = js.Dynamic.literal(LayerId = LayerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostnameSuggestionRequest]
   }
   
-  @scala.inline
-  implicit class GetHostnameSuggestionRequestMutableBuilder[Self <: GetHostnameSuggestionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostnameSuggestionRequest](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
   }
 }

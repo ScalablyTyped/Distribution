@@ -18,25 +18,19 @@ trait TagOutput extends StObject {
 }
 object TagOutput {
   
-  @scala.inline
-  def apply(): TagOutput = {
+  inline def apply(): TagOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagOutput]
   }
   
-  @scala.inline
-  implicit class TagOutputMutableBuilder[Self <: TagOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TagOutput](x: Self) {
     
-    @scala.inline
-    def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

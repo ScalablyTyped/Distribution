@@ -35,31 +35,23 @@ trait SchemaSchedule extends StObject {
 }
 object SchemaSchedule {
   
-  @scala.inline
-  def apply(): SchemaSchedule = {
+  inline def apply(): SchemaSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchedule]
   }
   
-  @scala.inline
-  implicit class SchemaScheduleMutableBuilder[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchedule](x: Self) {
     
-    @scala.inline
-    def setScheduleEndDate(value: SchemaDate): Self = StObject.set(x, "scheduleEndDate", value.asInstanceOf[js.Any])
+    inline def setScheduleEndDate(value: SchemaDate): Self = StObject.set(x, "scheduleEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleEndDateUndefined: Self = StObject.set(x, "scheduleEndDate", js.undefined)
+    inline def setScheduleEndDateUndefined: Self = StObject.set(x, "scheduleEndDate", js.undefined)
     
-    @scala.inline
-    def setScheduleStartDate(value: SchemaDate): Self = StObject.set(x, "scheduleStartDate", value.asInstanceOf[js.Any])
+    inline def setScheduleStartDate(value: SchemaDate): Self = StObject.set(x, "scheduleStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleStartDateUndefined: Self = StObject.set(x, "scheduleStartDate", js.undefined)
+    inline def setScheduleStartDateUndefined: Self = StObject.set(x, "scheduleStartDate", js.undefined)
     
-    @scala.inline
-    def setStartTimeOfDay(value: SchemaTimeOfDay): Self = StObject.set(x, "startTimeOfDay", value.asInstanceOf[js.Any])
+    inline def setStartTimeOfDay(value: SchemaTimeOfDay): Self = StObject.set(x, "startTimeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOfDayUndefined: Self = StObject.set(x, "startTimeOfDay", js.undefined)
+    inline def setStartTimeOfDayUndefined: Self = StObject.set(x, "startTimeOfDay", js.undefined)
   }
 }

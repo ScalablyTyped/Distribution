@@ -14,25 +14,19 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(percent: Double, transferred: Double): Progress = {
+  inline def apply(percent: Double, transferred: Double): Progress = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any], total = null)
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNull: Self = StObject.set(x, "total", null)
+    inline def setTotalNull: Self = StObject.set(x, "total", null)
     
-    @scala.inline
-    def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
+    inline def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
   }
 }

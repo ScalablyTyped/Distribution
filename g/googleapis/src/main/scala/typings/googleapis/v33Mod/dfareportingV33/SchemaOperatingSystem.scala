@@ -37,43 +37,31 @@ trait SchemaOperatingSystem extends StObject {
 }
 object SchemaOperatingSystem {
   
-  @scala.inline
-  def apply(): SchemaOperatingSystem = {
+  inline def apply(): SchemaOperatingSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperatingSystem]
   }
   
-  @scala.inline
-  implicit class SchemaOperatingSystemMutableBuilder[Self <: SchemaOperatingSystem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperatingSystem](x: Self) {
     
-    @scala.inline
-    def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
+    inline def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
+    inline def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
     
-    @scala.inline
-    def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+    inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+    inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+    inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

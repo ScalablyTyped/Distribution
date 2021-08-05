@@ -35,8 +35,7 @@ object replaceableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isReplaceable(obj1: js.Any, obj2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReplaceable")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isReplaceable(obj1: js.Any, obj2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReplaceable")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   trait Replaceable extends StObject {
@@ -53,8 +52,7 @@ object replaceableMod {
   }
   object Replaceable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEach: ReplaceableForEachCallBack => Unit,
       get: js.Any => js.Any,
       `object`: js.Any,
@@ -67,23 +65,17 @@ object replaceableMod {
       __obj.asInstanceOf[Replaceable]
     }
     
-    @scala.inline
-    implicit class ReplaceableMutableBuilder[Self <: Replaceable] (val x: Self) extends AnyVal {
+    extension [Self <: Replaceable](x: Self) {
       
-      @scala.inline
-      def setForEach(value: ReplaceableForEachCallBack => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: ReplaceableForEachCallBack => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

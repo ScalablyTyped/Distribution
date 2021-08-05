@@ -26,54 +26,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _PermissionNoPrompt extends StObject
 object _PermissionNoPrompt {
   
-  @scala.inline
-  def activityLog: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activityLog = "activityLog".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activityLog]
+  inline def activityLog: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activityLog = "activityLog".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activityLog]
   
-  @scala.inline
-  def alarms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.alarms = "alarms".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.alarms]
+  inline def alarms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.alarms = "alarms".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.alarms]
   
-  @scala.inline
-  def captivePortal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.captivePortal = "captivePortal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.captivePortal]
+  inline def captivePortal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.captivePortal = "captivePortal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.captivePortal]
   
-  @scala.inline
-  def contextMenus: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextMenus = "contextMenus".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextMenus]
+  inline def contextMenus: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextMenus = "contextMenus".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextMenus]
   
-  @scala.inline
-  def contextualIdentities: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextualIdentities = "contextualIdentities".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextualIdentities]
+  inline def contextualIdentities: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextualIdentities = "contextualIdentities".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.contextualIdentities]
   
-  @scala.inline
-  def dns: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dns = "dns".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dns]
+  inline def dns: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dns = "dns".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dns]
   
-  @scala.inline
-  def geckoProfiler: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geckoProfiler = "geckoProfiler".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geckoProfiler]
+  inline def geckoProfiler: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geckoProfiler = "geckoProfiler".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geckoProfiler]
   
-  @scala.inline
-  def identity: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.identity = "identity".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.identity]
+  inline def identity: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.identity = "identity".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.identity]
   
-  @scala.inline
-  def menus: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menus = "menus".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menus]
+  inline def menus: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menus = "menus".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menus]
   
-  @scala.inline
-  def mozillaAddons: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mozillaAddons = "mozillaAddons".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mozillaAddons]
+  inline def mozillaAddons: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mozillaAddons = "mozillaAddons".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mozillaAddons]
   
-  @scala.inline
-  def networkStatus: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.networkStatus = "networkStatus".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.networkStatus]
+  inline def networkStatus: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.networkStatus = "networkStatus".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.networkStatus]
   
-  @scala.inline
-  def normandyAddonStudy: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normandyAddonStudy = "normandyAddonStudy".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normandyAddonStudy]
+  inline def normandyAddonStudy: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normandyAddonStudy = "normandyAddonStudy".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normandyAddonStudy]
   
-  @scala.inline
-  def storage: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage = "storage".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage]
+  inline def storage: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage = "storage".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage]
   
-  @scala.inline
-  def telemetry: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.telemetry = "telemetry".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.telemetry]
+  inline def telemetry: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.telemetry = "telemetry".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.telemetry]
   
-  @scala.inline
-  def theme: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme = "theme".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme]
+  inline def theme: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme = "theme".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme]
   
-  @scala.inline
-  def unlimitedStorage: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlimitedStorage = "unlimitedStorage".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlimitedStorage]
+  inline def unlimitedStorage: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlimitedStorage = "unlimitedStorage".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlimitedStorage]
   
-  @scala.inline
-  def urlbar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urlbar = "urlbar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urlbar]
+  inline def urlbar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urlbar = "urlbar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urlbar]
 }

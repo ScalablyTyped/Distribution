@@ -16,25 +16,19 @@ trait Tarballurl extends StObject {
 }
 object Tarballurl {
   
-  @scala.inline
-  def apply(commit: ShaUrl, name: String, tarball_url: String, zipball_url: String): Tarballurl = {
+  inline def apply(commit: ShaUrl, name: String, tarball_url: String, zipball_url: String): Tarballurl = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tarball_url = tarball_url.asInstanceOf[js.Any], zipball_url = zipball_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tarballurl]
   }
   
-  @scala.inline
-  implicit class TarballurlMutableBuilder[Self <: Tarballurl] (val x: Self) extends AnyVal {
+  extension [Self <: Tarballurl](x: Self) {
     
-    @scala.inline
-    def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarball_url(value: String): Self = StObject.set(x, "tarball_url", value.asInstanceOf[js.Any])
+    inline def setTarball_url(value: String): Self = StObject.set(x, "tarball_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipball_url(value: String): Self = StObject.set(x, "zipball_url", value.asInstanceOf[js.Any])
+    inline def setZipball_url(value: String): Self = StObject.set(x, "zipball_url", value.asInstanceOf[js.Any])
   }
 }

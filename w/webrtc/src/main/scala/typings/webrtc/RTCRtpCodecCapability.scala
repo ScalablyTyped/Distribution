@@ -11,16 +11,13 @@ trait RTCRtpCodecCapability extends StObject {
 }
 object RTCRtpCodecCapability {
   
-  @scala.inline
-  def apply(mimeType: String): RTCRtpCodecCapability = {
+  inline def apply(mimeType: String): RTCRtpCodecCapability = {
     val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpCodecCapability]
   }
   
-  @scala.inline
-  implicit class RTCRtpCodecCapabilityMutableBuilder[Self <: RTCRtpCodecCapability] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpCodecCapability](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

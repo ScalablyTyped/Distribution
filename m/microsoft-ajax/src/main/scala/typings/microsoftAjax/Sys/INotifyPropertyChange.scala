@@ -26,19 +26,15 @@ trait INotifyPropertyChange extends StObject {
 }
 object INotifyPropertyChange {
   
-  @scala.inline
-  def apply(add_propertyChanged: js.Function => Unit, remove_propertyChanged: js.Function => Unit): INotifyPropertyChange = {
+  inline def apply(add_propertyChanged: js.Function => Unit, remove_propertyChanged: js.Function => Unit): INotifyPropertyChange = {
     val __obj = js.Dynamic.literal(add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged))
     __obj.asInstanceOf[INotifyPropertyChange]
   }
   
-  @scala.inline
-  implicit class INotifyPropertyChangeMutableBuilder[Self <: INotifyPropertyChange] (val x: Self) extends AnyVal {
+  extension [Self <: INotifyPropertyChange](x: Self) {
     
-    @scala.inline
-    def setAdd_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "add_propertyChanged", js.Any.fromFunction1(value))
+    inline def setAdd_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "add_propertyChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "remove_propertyChanged", js.Any.fromFunction1(value))
+    inline def setRemove_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "remove_propertyChanged", js.Any.fromFunction1(value))
   }
 }

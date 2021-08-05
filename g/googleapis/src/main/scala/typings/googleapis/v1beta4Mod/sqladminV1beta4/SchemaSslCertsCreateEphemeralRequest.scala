@@ -16,19 +16,15 @@ trait SchemaSslCertsCreateEphemeralRequest extends StObject {
 }
 object SchemaSslCertsCreateEphemeralRequest {
   
-  @scala.inline
-  def apply(): SchemaSslCertsCreateEphemeralRequest = {
+  inline def apply(): SchemaSslCertsCreateEphemeralRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSslCertsCreateEphemeralRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSslCertsCreateEphemeralRequestMutableBuilder[Self <: SchemaSslCertsCreateEphemeralRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSslCertsCreateEphemeralRequest](x: Self) {
     
-    @scala.inline
-    def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
+    inline def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic_keyUndefined: Self = StObject.set(x, "public_key", js.undefined)
+    inline def setPublic_keyUndefined: Self = StObject.set(x, "public_key", js.undefined)
   }
 }

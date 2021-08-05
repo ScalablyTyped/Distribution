@@ -16,31 +16,23 @@ trait TableHTMLAttributes[T]
 }
 object TableHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): TableHTMLAttributes[T] = {
+  inline def apply[T](): TableHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class TableHTMLAttributesMutableBuilder[Self <: TableHTMLAttributes[?], T] (val x: Self & TableHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: TableHTMLAttributes[?], T](x: Self & TableHTMLAttributes[T]) {
     
-    @scala.inline
-    def setCellPadding(value: Double | String): Self = StObject.set(x, "cellPadding", value.asInstanceOf[js.Any])
+    inline def setCellPadding(value: Double | String): Self = StObject.set(x, "cellPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellPaddingUndefined: Self = StObject.set(x, "cellPadding", js.undefined)
+    inline def setCellPaddingUndefined: Self = StObject.set(x, "cellPadding", js.undefined)
     
-    @scala.inline
-    def setCellSpacing(value: Double | String): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+    inline def setCellSpacing(value: Double | String): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+    inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

@@ -18,19 +18,16 @@ trait DocumentSymbolProvider extends StObject {
 }
 object DocumentSymbolProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDocumentSymbols: (TextDocument, CancellationToken) => ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
   ): DocumentSymbolProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSymbols = js.Any.fromFunction2(provideDocumentSymbols))
     __obj.asInstanceOf[DocumentSymbolProvider]
   }
   
-  @scala.inline
-  implicit class DocumentSymbolProviderMutableBuilder[Self <: DocumentSymbolProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSymbolProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDocumentSymbols(
+    inline def setProvideDocumentSymbols(
       value: (TextDocument, CancellationToken) => ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
     ): Self = StObject.set(x, "provideDocumentSymbols", js.Any.fromFunction2(value))
   }

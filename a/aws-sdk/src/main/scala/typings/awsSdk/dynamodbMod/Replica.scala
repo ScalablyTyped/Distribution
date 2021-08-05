@@ -13,19 +13,15 @@ trait Replica extends StObject {
 }
 object Replica {
   
-  @scala.inline
-  def apply(): Replica = {
+  inline def apply(): Replica = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Replica]
   }
   
-  @scala.inline
-  implicit class ReplicaMutableBuilder[Self <: Replica] (val x: Self) extends AnyVal {
+  extension [Self <: Replica](x: Self) {
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
   }
 }

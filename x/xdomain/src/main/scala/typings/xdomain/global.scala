@@ -9,6 +9,5 @@ object global {
   @JSGlobal("xdomain")
   @js.native
   def xdomain: IXDomain = js.native
-  @scala.inline
-  def xdomain_=(x: IXDomain): Unit = js.Dynamic.global.updateDynamic("xdomain")(x.asInstanceOf[js.Any])
+  inline def xdomain_=(x: IXDomain): Unit = js.Dynamic.global.updateDynamic("xdomain")(x.asInstanceOf[js.Any])
 }

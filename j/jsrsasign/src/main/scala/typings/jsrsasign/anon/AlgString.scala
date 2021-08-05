@@ -10,16 +10,13 @@ trait AlgString extends StObject {
 }
 object AlgString {
   
-  @scala.inline
-  def apply(alg: String): AlgString = {
+  inline def apply(alg: String): AlgString = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgString]
   }
   
-  @scala.inline
-  implicit class AlgStringMutableBuilder[Self <: AlgString] (val x: Self) extends AnyVal {
+  extension [Self <: AlgString](x: Self) {
     
-    @scala.inline
-    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
   }
 }

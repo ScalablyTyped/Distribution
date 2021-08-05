@@ -18,19 +18,15 @@ trait ListEventTypesFilter extends StObject {
 }
 object ListEventTypesFilter {
   
-  @scala.inline
-  def apply(Name: ListEventTypesFilterName, Value: ListEventTypesFilterValue): ListEventTypesFilter = {
+  inline def apply(Name: ListEventTypesFilterName, Value: ListEventTypesFilterValue): ListEventTypesFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEventTypesFilter]
   }
   
-  @scala.inline
-  implicit class ListEventTypesFilterMutableBuilder[Self <: ListEventTypesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ListEventTypesFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: ListEventTypesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ListEventTypesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ListEventTypesFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ListEventTypesFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

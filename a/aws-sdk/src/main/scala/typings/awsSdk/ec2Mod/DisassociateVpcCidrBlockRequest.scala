@@ -13,16 +13,13 @@ trait DisassociateVpcCidrBlockRequest extends StObject {
 }
 object DisassociateVpcCidrBlockRequest {
   
-  @scala.inline
-  def apply(AssociationId: VpcCidrAssociationId): DisassociateVpcCidrBlockRequest = {
+  inline def apply(AssociationId: VpcCidrAssociationId): DisassociateVpcCidrBlockRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateVpcCidrBlockRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateVpcCidrBlockRequestMutableBuilder[Self <: DisassociateVpcCidrBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateVpcCidrBlockRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: VpcCidrAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: VpcCidrAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
   }
 }

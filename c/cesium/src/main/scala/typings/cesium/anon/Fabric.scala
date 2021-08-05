@@ -20,43 +20,31 @@ trait Fabric extends StObject {
 }
 object Fabric {
   
-  @scala.inline
-  def apply(fabric: js.Any): Fabric = {
+  inline def apply(fabric: js.Any): Fabric = {
     val __obj = js.Dynamic.literal(fabric = fabric.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fabric]
   }
   
-  @scala.inline
-  implicit class FabricMutableBuilder[Self <: Fabric] (val x: Self) extends AnyVal {
+  extension [Self <: Fabric](x: Self) {
     
-    @scala.inline
-    def setFabric(value: js.Any): Self = StObject.set(x, "fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: js.Any): Self = StObject.set(x, "fabric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnificationFilter(value: TextureMagnificationFilter): Self = StObject.set(x, "magnificationFilter", value.asInstanceOf[js.Any])
+    inline def setMagnificationFilter(value: TextureMagnificationFilter): Self = StObject.set(x, "magnificationFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnificationFilterUndefined: Self = StObject.set(x, "magnificationFilter", js.undefined)
+    inline def setMagnificationFilterUndefined: Self = StObject.set(x, "magnificationFilter", js.undefined)
     
-    @scala.inline
-    def setMinificationFilter(value: TextureMinificationFilter): Self = StObject.set(x, "minificationFilter", value.asInstanceOf[js.Any])
+    inline def setMinificationFilter(value: TextureMinificationFilter): Self = StObject.set(x, "minificationFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinificationFilterUndefined: Self = StObject.set(x, "minificationFilter", js.undefined)
+    inline def setMinificationFilterUndefined: Self = StObject.set(x, "minificationFilter", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean | (js.Function1[/* material */ typings.cesium.mod.Material, Boolean])): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean | (js.Function1[/* material */ typings.cesium.mod.Material, Boolean])): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentFunction1(value: /* material */ typings.cesium.mod.Material => Boolean): Self = StObject.set(x, "translucent", js.Any.fromFunction1(value))
+    inline def setTranslucentFunction1(value: /* material */ typings.cesium.mod.Material => Boolean): Self = StObject.set(x, "translucent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait Client extends StObject {
 }
 object Client {
   
-  @scala.inline
-  def apply(client: typings.braintreeWeb.clientMod.Client): Client = {
+  inline def apply(client: typings.braintreeWeb.clientMod.Client): Client = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
   
-  @scala.inline
-  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+  extension [Self <: Client](x: Self) {
     
-    @scala.inline
-    def setClient(value: typings.braintreeWeb.clientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: typings.braintreeWeb.clientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
   }
 }

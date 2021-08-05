@@ -11,22 +11,17 @@ trait SearchDomainsResponse extends StObject {
 }
 object SearchDomainsResponse {
   
-  @scala.inline
-  def apply(): SearchDomainsResponse = {
+  inline def apply(): SearchDomainsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchDomainsResponse]
   }
   
-  @scala.inline
-  implicit class SearchDomainsResponseMutableBuilder[Self <: SearchDomainsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDomainsResponse](x: Self) {
     
-    @scala.inline
-    def setRegisterParameters(value: js.Array[RegisterParameters]): Self = StObject.set(x, "registerParameters", value.asInstanceOf[js.Any])
+    inline def setRegisterParameters(value: js.Array[RegisterParameters]): Self = StObject.set(x, "registerParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterParametersUndefined: Self = StObject.set(x, "registerParameters", js.undefined)
+    inline def setRegisterParametersUndefined: Self = StObject.set(x, "registerParameters", js.undefined)
     
-    @scala.inline
-    def setRegisterParametersVarargs(value: RegisterParameters*): Self = StObject.set(x, "registerParameters", js.Array(value :_*))
+    inline def setRegisterParametersVarargs(value: RegisterParameters*): Self = StObject.set(x, "registerParameters", js.Array(value :_*))
   }
 }

@@ -11,19 +11,15 @@ trait TryGetLockOptions extends StObject {
 }
 object TryGetLockOptions {
   
-  @scala.inline
-  def apply(): TryGetLockOptions = {
+  inline def apply(): TryGetLockOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TryGetLockOptions]
   }
   
-  @scala.inline
-  implicit class TryGetLockOptionsMutableBuilder[Self <: TryGetLockOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TryGetLockOptions](x: Self) {
     
-    @scala.inline
-    def setSourceEvent(value: Event): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+    inline def setSourceEvent(value: Event): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEventUndefined: Self = StObject.set(x, "sourceEvent", js.undefined)
+    inline def setSourceEventUndefined: Self = StObject.set(x, "sourceEvent", js.undefined)
   }
 }

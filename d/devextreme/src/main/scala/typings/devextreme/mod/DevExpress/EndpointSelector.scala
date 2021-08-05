@@ -13,16 +13,13 @@ trait EndpointSelector extends StObject {
 }
 object EndpointSelector {
   
-  @scala.inline
-  def apply(urlFor: String => String): EndpointSelector = {
+  inline def apply(urlFor: String => String): EndpointSelector = {
     val __obj = js.Dynamic.literal(urlFor = js.Any.fromFunction1(urlFor))
     __obj.asInstanceOf[EndpointSelector]
   }
   
-  @scala.inline
-  implicit class EndpointSelectorMutableBuilder[Self <: EndpointSelector] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointSelector](x: Self) {
     
-    @scala.inline
-    def setUrlFor(value: String => String): Self = StObject.set(x, "urlFor", js.Any.fromFunction1(value))
+    inline def setUrlFor(value: String => String): Self = StObject.set(x, "urlFor", js.Any.fromFunction1(value))
   }
 }

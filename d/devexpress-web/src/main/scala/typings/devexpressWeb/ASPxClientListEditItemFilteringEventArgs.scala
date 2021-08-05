@@ -28,22 +28,17 @@ trait ASPxClientListEditItemFilteringEventArgs
 }
 object ASPxClientListEditItemFilteringEventArgs {
   
-  @scala.inline
-  def apply(filter: String, isFit: Boolean, item: ASPxClientListEditItem): ASPxClientListEditItemFilteringEventArgs = {
+  inline def apply(filter: String, isFit: Boolean, item: ASPxClientListEditItem): ASPxClientListEditItemFilteringEventArgs = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], isFit = isFit.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientListEditItemFilteringEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientListEditItemFilteringEventArgsMutableBuilder[Self <: ASPxClientListEditItemFilteringEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientListEditItemFilteringEventArgs](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFit(value: Boolean): Self = StObject.set(x, "isFit", value.asInstanceOf[js.Any])
+    inline def setIsFit(value: Boolean): Self = StObject.set(x, "isFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ASPxClientListEditItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientListEditItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ListSchemaVersionsResponse extends StObject {
 }
 object ListSchemaVersionsResponse {
   
-  @scala.inline
-  def apply(): ListSchemaVersionsResponse = {
+  inline def apply(): ListSchemaVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSchemaVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListSchemaVersionsResponseMutableBuilder[Self <: ListSchemaVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSchemaVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaVersions(value: listOfSchemaVersionSummary): Self = StObject.set(x, "SchemaVersions", value.asInstanceOf[js.Any])
+    inline def setSchemaVersions(value: listOfSchemaVersionSummary): Self = StObject.set(x, "SchemaVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
+    inline def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionsVarargs(value: SchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
+    inline def setSchemaVersionsVarargs(value: SchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
   }
 }

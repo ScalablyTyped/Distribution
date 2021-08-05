@@ -14,22 +14,17 @@ trait ReturnTypeGetCertificateResponse extends StObject {
 }
 object ReturnTypeGetCertificateResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetCertificateRequest], returnType: GetCertificateResponse): ReturnTypeGetCertificateResponse = {
+  inline def apply(paramsType: js.Array[GetCertificateRequest], returnType: GetCertificateResponse): ReturnTypeGetCertificateResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetCertificateResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetCertificateResponseMutableBuilder[Self <: ReturnTypeGetCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetCertificateRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetCertificateRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetCertificateRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetCertificateRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetCertificateResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetCertificateResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

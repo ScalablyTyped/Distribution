@@ -21,29 +21,22 @@ object MatchList {
   }
   object MatchList {
     
-    @scala.inline
-    def apply(endIndex: Double, matches: js.Array[MatchReference], startIndex: Double, totalGames: Double): typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList = {
+    inline def apply(endIndex: Double, matches: js.Array[MatchReference], startIndex: Double, totalGames: Double): typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList = {
       val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], totalGames = totalGames.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList]
     }
     
-    @scala.inline
-    implicit class MatchListMutableBuilder[Self <: typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList] (val x: Self) extends AnyVal {
+    extension [Self <: typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList](x: Self) {
       
-      @scala.inline
-      def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+      inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatches(value: js.Array[MatchReference]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[MatchReference]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: MatchReference*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: MatchReference*): Self = StObject.set(x, "matches", js.Array(value :_*))
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalGames(value: Double): Self = StObject.set(x, "totalGames", value.asInstanceOf[js.Any])
+      inline def setTotalGames(value: Double): Self = StObject.set(x, "totalGames", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,8 +62,7 @@ object MatchList {
   }
   object MatchReference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       champion: Double,
       lane: String,
       matchId: Double,
@@ -85,35 +77,25 @@ object MatchList {
       __obj.asInstanceOf[MatchReference]
     }
     
-    @scala.inline
-    implicit class MatchReferenceMutableBuilder[Self <: MatchReference] (val x: Self) extends AnyVal {
+    extension [Self <: MatchReference](x: Self) {
       
-      @scala.inline
-      def setChampion(value: Double): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
+      inline def setChampion(value: Double): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLane(value: String): Self = StObject.set(x, "lane", value.asInstanceOf[js.Any])
+      inline def setLane(value: String): Self = StObject.set(x, "lane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchId(value: Double): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
+      inline def setMatchId(value: Double): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlateformId(value: String): Self = StObject.set(x, "plateformId", value.asInstanceOf[js.Any])
+      inline def setPlateformId(value: String): Self = StObject.set(x, "plateformId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeason(value: String): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: String): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

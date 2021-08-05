@@ -68,41 +68,30 @@ object mod {
   }
   object BodyProps {
     
-    @scala.inline
-    def apply(rowKey: String, rows: js.Array[js.Any]): BodyProps = {
+    inline def apply(rowKey: String, rows: js.Array[js.Any]): BodyProps = {
       val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyProps]
     }
     
-    @scala.inline
-    implicit class BodyPropsMutableBuilder[Self <: BodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: BodyProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnRow(value: (/* row */ js.Any, /* props */ RowIndexNumber) => js.Any): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
+      inline def setOnRow(value: (/* row */ js.Any, /* props */ RowIndexNumber) => js.Any): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRowUndefined: Self = StObject.set(x, "onRow", js.undefined)
+      inline def setOnRowUndefined: Self = StObject.set(x, "onRow", js.undefined)
       
-      @scala.inline
-      def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+      inline def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -122,41 +111,30 @@ object mod {
   }
   object Column {
     
-    @scala.inline
-    def apply(): Column = {
+    inline def apply(): Column = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setCell(value: Formatters): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Formatters): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+      inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[Column]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Column]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: Column*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Column*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setHeader(value: Draggable): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Draggable): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     }
   }
   
@@ -178,35 +156,26 @@ object mod {
   }
   object HeaderProps {
     
-    @scala.inline
-    def apply(): HeaderProps = {
+    inline def apply(): HeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderProps]
     }
     
-    @scala.inline
-    implicit class HeaderPropsMutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHeaderRows(value: js.Array[Column]): Self = StObject.set(x, "headerRows", value.asInstanceOf[js.Any])
+      inline def setHeaderRows(value: js.Array[Column]): Self = StObject.set(x, "headerRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
+      inline def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
       
-      @scala.inline
-      def setHeaderRowsVarargs(value: Column*): Self = StObject.set(x, "headerRows", js.Array(value :_*))
+      inline def setHeaderRowsVarargs(value: Column*): Self = StObject.set(x, "headerRows", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -222,38 +191,28 @@ object mod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply(columns: js.Array[Column]): ProviderProps = {
+    inline def apply(columns: js.Array[Column]): ProviderProps = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderProps]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderers(value: Renderers): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+      inline def setRenderers(value: Renderers): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
+      inline def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
       
-      @scala.inline
-      def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -267,35 +226,26 @@ object mod {
   }
   object Renderers {
     
-    @scala.inline
-    def apply(): Renderers = {
+    inline def apply(): Renderers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Renderers]
     }
     
-    @scala.inline
-    implicit class RenderersMutableBuilder[Self <: Renderers] (val x: Self) extends AnyVal {
+    extension [Self <: Renderers](x: Self) {
       
-      @scala.inline
-      def setBody(value: Row): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Row): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Cell): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Cell): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setTable(value: String | js.Function0[Element]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String | js.Function0[Element]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableFunction0(value: () => Element): Self = StObject.set(x, "table", js.Any.fromFunction0(value))
+      inline def setTableFunction0(value: () => Element): Self = StObject.set(x, "table", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     }
   }
 }

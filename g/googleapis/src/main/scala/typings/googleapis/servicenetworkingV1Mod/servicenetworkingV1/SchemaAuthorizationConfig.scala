@@ -20,19 +20,15 @@ trait SchemaAuthorizationConfig extends StObject {
 }
 object SchemaAuthorizationConfig {
   
-  @scala.inline
-  def apply(): SchemaAuthorizationConfig = {
+  inline def apply(): SchemaAuthorizationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthorizationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAuthorizationConfigMutableBuilder[Self <: SchemaAuthorizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthorizationConfig](x: Self) {
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait Stats extends StObject {
 }
 object Stats {
   
-  @scala.inline
-  def apply(stats: `0`): Stats = {
+  inline def apply(stats: `0`): Stats = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
   
-  @scala.inline
-  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+  extension [Self <: Stats](x: Self) {
     
-    @scala.inline
-    def setStats(value: `0`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: `0`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

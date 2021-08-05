@@ -36,28 +36,21 @@ trait ConfigMapNodeConfigSource extends StObject {
 }
 object ConfigMapNodeConfigSource {
   
-  @scala.inline
-  def apply(kubeletConfigKey: String, name: String, namespace: String, resourceVersion: String, uid: String): ConfigMapNodeConfigSource = {
+  inline def apply(kubeletConfigKey: String, name: String, namespace: String, resourceVersion: String, uid: String): ConfigMapNodeConfigSource = {
     val __obj = js.Dynamic.literal(kubeletConfigKey = kubeletConfigKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapNodeConfigSource]
   }
   
-  @scala.inline
-  implicit class ConfigMapNodeConfigSourceMutableBuilder[Self <: ConfigMapNodeConfigSource] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapNodeConfigSource](x: Self) {
     
-    @scala.inline
-    def setKubeletConfigKey(value: String): Self = StObject.set(x, "kubeletConfigKey", value.asInstanceOf[js.Any])
+    inline def setKubeletConfigKey(value: String): Self = StObject.set(x, "kubeletConfigKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

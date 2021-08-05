@@ -13,19 +13,15 @@ trait MultipleQueriesResponse[TObject] extends StObject {
 }
 object MultipleQueriesResponse {
   
-  @scala.inline
-  def apply[TObject](results: js.Array[SearchResponse[TObject]]): MultipleQueriesResponse[TObject] = {
+  inline def apply[TObject](results: js.Array[SearchResponse[TObject]]): MultipleQueriesResponse[TObject] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleQueriesResponse[TObject]]
   }
   
-  @scala.inline
-  implicit class MultipleQueriesResponseMutableBuilder[Self <: MultipleQueriesResponse[?], TObject] (val x: Self & MultipleQueriesResponse[TObject]) extends AnyVal {
+  extension [Self <: MultipleQueriesResponse[?], TObject](x: Self & MultipleQueriesResponse[TObject]) {
     
-    @scala.inline
-    def setResults(value: js.Array[SearchResponse[TObject]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchResponse[TObject]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SearchResponse[TObject]*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchResponse[TObject]*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

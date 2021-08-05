@@ -25,16 +25,13 @@ trait DatabaseParameterEvent
 }
 object DatabaseParameterEvent {
   
-  @scala.inline
-  def apply(Parameters: XIndexAccess, Source: XInterface): DatabaseParameterEvent = {
+  inline def apply(Parameters: XIndexAccess, Source: XInterface): DatabaseParameterEvent = {
     val __obj = js.Dynamic.literal(Parameters = Parameters.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseParameterEvent]
   }
   
-  @scala.inline
-  implicit class DatabaseParameterEventMutableBuilder[Self <: DatabaseParameterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseParameterEvent](x: Self) {
     
-    @scala.inline
-    def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

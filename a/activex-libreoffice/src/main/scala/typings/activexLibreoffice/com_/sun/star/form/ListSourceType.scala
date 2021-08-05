@@ -27,26 +27,20 @@ trait ListSourceType extends StObject
 object ListSourceType {
   
   /** The control should be filled with the results of a database query. */
-  @scala.inline
-  def QUERY: `2` = 2.asInstanceOf[`2`]
+  inline def QUERY: `2` = 2.asInstanceOf[`2`]
   
   /** The control should be filled with the results of a database statement. */
-  @scala.inline
-  def SQL: `3` = 3.asInstanceOf[`3`]
+  inline def SQL: `3` = 3.asInstanceOf[`3`]
   
   /** The control should be filled with the results of a database statement, which is not evaluated by the database engine. */
-  @scala.inline
-  def SQLPASSTHROUGH: `4` = 4.asInstanceOf[`4`]
+  inline def SQLPASSTHROUGH: `4` = 4.asInstanceOf[`4`]
   
   /** The control should be filled with the data of a table. */
-  @scala.inline
-  def TABLE: `1` = 1.asInstanceOf[`1`]
+  inline def TABLE: `1` = 1.asInstanceOf[`1`]
   
   /** The control should be filled with the field names of a database table. */
-  @scala.inline
-  def TABLEFIELDS: `5` = 5.asInstanceOf[`5`]
+  inline def TABLEFIELDS: `5` = 5.asInstanceOf[`5`]
   
   /** The control should be filled with a list of string values. */
-  @scala.inline
-  def VALUELIST: `0` = 0.asInstanceOf[`0`]
+  inline def VALUELIST: `0` = 0.asInstanceOf[`0`]
 }

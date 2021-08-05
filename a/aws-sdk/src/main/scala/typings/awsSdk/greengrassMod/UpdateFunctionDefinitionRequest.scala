@@ -18,22 +18,17 @@ trait UpdateFunctionDefinitionRequest extends StObject {
 }
 object UpdateFunctionDefinitionRequest {
   
-  @scala.inline
-  def apply(FunctionDefinitionId: string): UpdateFunctionDefinitionRequest = {
+  inline def apply(FunctionDefinitionId: string): UpdateFunctionDefinitionRequest = {
     val __obj = js.Dynamic.literal(FunctionDefinitionId = FunctionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFunctionDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFunctionDefinitionRequestMutableBuilder[Self <: UpdateFunctionDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFunctionDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -33,43 +33,31 @@ trait CreateWorldTemplateRequest extends StObject {
 }
 object CreateWorldTemplateRequest {
   
-  @scala.inline
-  def apply(): CreateWorldTemplateRequest = {
+  inline def apply(): CreateWorldTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateWorldTemplateRequest]
   }
   
-  @scala.inline
-  implicit class CreateWorldTemplateRequestMutableBuilder[Self <: CreateWorldTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorldTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setName(value: TemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: TemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
     
-    @scala.inline
-    def setTemplateLocation(value: TemplateLocation): Self = StObject.set(x, "templateLocation", value.asInstanceOf[js.Any])
+    inline def setTemplateLocation(value: TemplateLocation): Self = StObject.set(x, "templateLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateLocationUndefined: Self = StObject.set(x, "templateLocation", js.undefined)
+    inline def setTemplateLocationUndefined: Self = StObject.set(x, "templateLocation", js.undefined)
   }
 }

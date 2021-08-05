@@ -15,20 +15,16 @@ object AjaxFileKnockout {
   }
   object IFileInputWrapper {
     
-    @scala.inline
-    def apply(fileSelected: () => Boolean, getElement: () => HTMLInputElement): IFileInputWrapper = {
+    inline def apply(fileSelected: () => Boolean, getElement: () => HTMLInputElement): IFileInputWrapper = {
       val __obj = js.Dynamic.literal(fileSelected = js.Any.fromFunction0(fileSelected), getElement = js.Any.fromFunction0(getElement))
       __obj.asInstanceOf[IFileInputWrapper]
     }
     
-    @scala.inline
-    implicit class IFileInputWrapperMutableBuilder[Self <: IFileInputWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: IFileInputWrapper](x: Self) {
       
-      @scala.inline
-      def setFileSelected(value: () => Boolean): Self = StObject.set(x, "fileSelected", js.Any.fromFunction0(value))
+      inline def setFileSelected(value: () => Boolean): Self = StObject.set(x, "fileSelected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLInputElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLInputElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     }
   }
 }

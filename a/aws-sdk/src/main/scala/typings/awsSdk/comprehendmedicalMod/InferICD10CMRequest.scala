@@ -13,16 +13,13 @@ trait InferICD10CMRequest extends StObject {
 }
 object InferICD10CMRequest {
   
-  @scala.inline
-  def apply(Text: OntologyLinkingBoundedLengthString): InferICD10CMRequest = {
+  inline def apply(Text: OntologyLinkingBoundedLengthString): InferICD10CMRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferICD10CMRequest]
   }
   
-  @scala.inline
-  implicit class InferICD10CMRequestMutableBuilder[Self <: InferICD10CMRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InferICD10CMRequest](x: Self) {
     
-    @scala.inline
-    def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

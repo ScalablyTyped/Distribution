@@ -33,43 +33,31 @@ trait ListSkillsRequest extends StObject {
 }
 object ListSkillsRequest {
   
-  @scala.inline
-  def apply(): ListSkillsRequest = {
+  inline def apply(): ListSkillsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSkillsRequest]
   }
   
-  @scala.inline
-  implicit class ListSkillsRequestMutableBuilder[Self <: ListSkillsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSkillsRequest](x: Self) {
     
-    @scala.inline
-    def setEnablementType(value: EnablementTypeFilter): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
+    inline def setEnablementType(value: EnablementTypeFilter): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablementTypeUndefined: Self = StObject.set(x, "EnablementType", js.undefined)
+    inline def setEnablementTypeUndefined: Self = StObject.set(x, "EnablementType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: SkillListMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: SkillListMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
     
-    @scala.inline
-    def setSkillType(value: SkillTypeFilter): Self = StObject.set(x, "SkillType", value.asInstanceOf[js.Any])
+    inline def setSkillType(value: SkillTypeFilter): Self = StObject.set(x, "SkillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillTypeUndefined: Self = StObject.set(x, "SkillType", js.undefined)
+    inline def setSkillTypeUndefined: Self = StObject.set(x, "SkillType", js.undefined)
   }
 }

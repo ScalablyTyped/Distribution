@@ -16,8 +16,7 @@ object storageMod {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getItem: String => String | Null | (js.Promise[String | Null]),
       removeItem: String => Unit | js.Promise[Unit],
       setItem: (String, String) => Unit | js.Promise[Unit]
@@ -26,17 +25,13 @@ object storageMod {
       __obj.asInstanceOf[Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+    extension [Self <: Storage](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: String => String | Null | (js.Promise[String | Null])): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => String | Null | (js.Promise[String | Null])): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItem(value: String => Unit | js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => Unit | js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => Unit | js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => Unit | js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

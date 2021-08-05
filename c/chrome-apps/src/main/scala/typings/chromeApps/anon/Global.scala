@@ -25,31 +25,23 @@ trait Global extends StObject {
 }
 object Global {
   
-  @scala.inline
-  def apply(): Global = {
+  inline def apply(): Global = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Global]
   }
   
-  @scala.inline
-  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+  extension [Self <: Global](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    @scala.inline
-    def setSuggested_key(value: Chromeos): Self = StObject.set(x, "suggested_key", value.asInstanceOf[js.Any])
+    inline def setSuggested_key(value: Chromeos): Self = StObject.set(x, "suggested_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggested_keyUndefined: Self = StObject.set(x, "suggested_key", js.undefined)
+    inline def setSuggested_keyUndefined: Self = StObject.set(x, "suggested_key", js.undefined)
   }
 }

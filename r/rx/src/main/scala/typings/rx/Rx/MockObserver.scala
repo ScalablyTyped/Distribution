@@ -12,8 +12,7 @@ trait MockObserver[T]
 }
 object MockObserver {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asObserver: () => Observer[T],
     checked: () => CheckedObserver[T],
     makeSafe: IDisposable => Observer[T],
@@ -28,13 +27,10 @@ object MockObserver {
     __obj.asInstanceOf[MockObserver[T]]
   }
   
-  @scala.inline
-  implicit class MockObserverMutableBuilder[Self <: MockObserver[?], T] (val x: Self & MockObserver[T]) extends AnyVal {
+  extension [Self <: MockObserver[?], T](x: Self & MockObserver[T]) {
     
-    @scala.inline
-    def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Recorded*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Recorded*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait UpdateEnrollmentStatusResponse extends StObject {
 }
 object UpdateEnrollmentStatusResponse {
   
-  @scala.inline
-  def apply(): UpdateEnrollmentStatusResponse = {
+  inline def apply(): UpdateEnrollmentStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateEnrollmentStatusResponse]
   }
   
-  @scala.inline
-  implicit class UpdateEnrollmentStatusResponseMutableBuilder[Self <: UpdateEnrollmentStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEnrollmentStatusResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

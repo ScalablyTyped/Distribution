@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object swarmMod {
   
-  @scala.inline
-  def apply(config: js.Any): Connect = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Connect]
+  inline def apply(config: js.Any): Connect = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Connect]
   
   @JSImport("ipfs-http-client/dist/src/swarm", JSImport.Namespace)
   @js.native

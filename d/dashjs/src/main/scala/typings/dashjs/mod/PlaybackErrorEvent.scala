@@ -16,20 +16,16 @@ trait PlaybackErrorEvent
 }
 object PlaybackErrorEvent {
   
-  @scala.inline
-  def apply(error: String): PlaybackErrorEvent = {
+  inline def apply(error: String): PlaybackErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("playbackError")
     __obj.asInstanceOf[PlaybackErrorEvent]
   }
   
-  @scala.inline
-  implicit class PlaybackErrorEventMutableBuilder[Self <: PlaybackErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: playbackError): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: playbackError): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

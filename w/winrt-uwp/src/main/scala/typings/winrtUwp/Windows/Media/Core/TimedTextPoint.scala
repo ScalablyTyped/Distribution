@@ -18,22 +18,17 @@ trait TimedTextPoint extends StObject {
 }
 object TimedTextPoint {
   
-  @scala.inline
-  def apply(unit: TimedTextUnit, x: Double, y: Double): TimedTextPoint = {
+  inline def apply(unit: TimedTextUnit, x: Double, y: Double): TimedTextPoint = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedTextPoint]
   }
   
-  @scala.inline
-  implicit class TimedTextPointMutableBuilder[Self <: TimedTextPoint] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextPoint](x: Self) {
     
-    @scala.inline
-    def setUnit(value: TimedTextUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: TimedTextUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

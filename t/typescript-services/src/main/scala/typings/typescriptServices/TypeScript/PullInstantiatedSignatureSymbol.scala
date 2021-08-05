@@ -9,7 +9,7 @@ trait PullInstantiatedSignatureSymbol
   extends StObject
      with PullSignatureSymbol {
   
-  var _typeParameterArgumentMap: js.Any = js.native
+  /* private */ var _typeParameterArgumentMap: js.Any = js.native
   
   /* InferMemberOverrides */
   override def getIsSpecialized(): Boolean = js.native

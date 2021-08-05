@@ -20,19 +20,15 @@ trait PolygonDrawActionProperties
 }
 object PolygonDrawActionProperties {
   
-  @scala.inline
-  def apply(): PolygonDrawActionProperties = {
+  inline def apply(): PolygonDrawActionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolygonDrawActionProperties]
   }
   
-  @scala.inline
-  implicit class PolygonDrawActionPropertiesMutableBuilder[Self <: PolygonDrawActionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonDrawActionProperties](x: Self) {
     
-    @scala.inline
-    def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

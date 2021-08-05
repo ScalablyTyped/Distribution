@@ -9,8 +9,7 @@ trait GetBucketEncryptionInput
      with typings.awsSdkClientS3Browser.typesGetBucketEncryptionInputMod.GetBucketEncryptionInput
 object GetBucketEncryptionInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketEncryptionInput = {
+  inline def apply(Bucket: String): GetBucketEncryptionInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketEncryptionInput]
   }

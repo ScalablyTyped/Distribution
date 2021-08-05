@@ -14,22 +14,17 @@ trait BindingTarget extends StObject {
 }
 object BindingTarget {
   
-  @scala.inline
-  def apply(options: js.Any, source: js.Any, target: js.Any): BindingTarget = {
+  inline def apply(options: js.Any, source: js.Any, target: js.Any): BindingTarget = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingTarget]
   }
   
-  @scala.inline
-  implicit class BindingTargetMutableBuilder[Self <: BindingTarget] (val x: Self) extends AnyVal {
+  extension [Self <: BindingTarget](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

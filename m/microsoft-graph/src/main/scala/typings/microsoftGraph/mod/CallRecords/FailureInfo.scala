@@ -15,28 +15,21 @@ trait FailureInfo extends StObject {
 }
 object FailureInfo {
   
-  @scala.inline
-  def apply(): FailureInfo = {
+  inline def apply(): FailureInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureInfo]
   }
   
-  @scala.inline
-  implicit class FailureInfoMutableBuilder[Self <: FailureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FailureInfo](x: Self) {
     
-    @scala.inline
-    def setReason(value: NullableOption[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: NullableOption[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonNull: Self = StObject.set(x, "reason", null)
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setStage(value: FailureStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: FailureStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

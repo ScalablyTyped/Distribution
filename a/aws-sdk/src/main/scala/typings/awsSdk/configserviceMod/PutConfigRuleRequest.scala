@@ -18,25 +18,19 @@ trait PutConfigRuleRequest extends StObject {
 }
 object PutConfigRuleRequest {
   
-  @scala.inline
-  def apply(ConfigRule: ConfigRule): PutConfigRuleRequest = {
+  inline def apply(ConfigRule: ConfigRule): PutConfigRuleRequest = {
     val __obj = js.Dynamic.literal(ConfigRule = ConfigRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigRuleRequest]
   }
   
-  @scala.inline
-  implicit class PutConfigRuleRequestMutableBuilder[Self <: PutConfigRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigRuleRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRule(value: ConfigRule): Self = StObject.set(x, "ConfigRule", value.asInstanceOf[js.Any])
+    inline def setConfigRule(value: ConfigRule): Self = StObject.set(x, "ConfigRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -16,22 +16,17 @@ trait Department extends StObject {
 }
 object Department {
   
-  @scala.inline
-  def apply(id: Double, name: String, status: online | offline): Department = {
+  inline def apply(id: Double, name: String, status: online | offline): Department = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Department]
   }
   
-  @scala.inline
-  implicit class DepartmentMutableBuilder[Self <: Department] (val x: Self) extends AnyVal {
+  extension [Self <: Department](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: online | offline): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: online | offline): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

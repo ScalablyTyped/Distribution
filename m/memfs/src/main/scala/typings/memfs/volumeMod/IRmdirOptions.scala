@@ -10,19 +10,15 @@ trait IRmdirOptions extends StObject {
 }
 object IRmdirOptions {
   
-  @scala.inline
-  def apply(): IRmdirOptions = {
+  inline def apply(): IRmdirOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRmdirOptions]
   }
   
-  @scala.inline
-  implicit class IRmdirOptionsMutableBuilder[Self <: IRmdirOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRmdirOptions](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

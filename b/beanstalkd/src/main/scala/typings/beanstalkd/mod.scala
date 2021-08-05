@@ -47,8 +47,7 @@ object mod {
       * @param command The command to prepare.
       * @param expected The expected reply.
       */
-    @scala.inline
-    def addCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Prepare a command which will be applied on the Client.
@@ -56,8 +55,7 @@ object mod {
       * @param command The command to prepare.
       * @param expected The expected reply.
       */
-    @scala.inline
-    def addYamlCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addYamlCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addYamlCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addYamlCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   type ArgsType[T] = js.Any
@@ -75,8 +73,7 @@ object mod {
   }
   object BasicReader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer,
       parseData: String => js.Any
     ): BasicReader = {
@@ -84,16 +81,13 @@ object mod {
       __obj.asInstanceOf[BasicReader]
     }
     
-    @scala.inline
-    implicit class BasicReaderMutableBuilder[Self <: BasicReader] (val x: Self) extends AnyVal {
+    extension [Self <: BasicReader](x: Self) {
       
-      @scala.inline
-      def setHandle(
+      inline def setHandle(
         value: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer
       ): Self = StObject.set(x, "handle", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setParseData(value: String => js.Any): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
+      inline def setParseData(value: String => js.Any): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
     }
   }
   
@@ -105,17 +99,14 @@ object mod {
   }
   object BasicWriter {
     
-    @scala.inline
-    def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): BasicWriter = {
+    inline def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): BasicWriter = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], handle = js.Any.fromFunction3(handle))
       __obj.asInstanceOf[BasicWriter]
     }
     
-    @scala.inline
-    implicit class BasicWriterMutableBuilder[Self <: BasicWriter] (val x: Self) extends AnyVal {
+    extension [Self <: BasicWriter](x: Self) {
       
-      @scala.inline
-      def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
+      inline def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
     }
   }
   
@@ -137,8 +128,7 @@ object mod {
   }
   object BeanstalkdCaller {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       call: (js.Any, ArgsType[
           /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
         ]) => (MergePromise[
@@ -151,11 +141,9 @@ object mod {
       __obj.asInstanceOf[BeanstalkdCaller]
     }
     
-    @scala.inline
-    implicit class BeanstalkdCallerMutableBuilder[Self <: BeanstalkdCaller] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdCaller](x: Self) {
       
-      @scala.inline
-      def setCall(
+      inline def setCall(
         value: (js.Any, ArgsType[
               /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
             ]) => (MergePromise[
@@ -471,17 +459,13 @@ object mod {
   trait BeanstalkdJobState extends StObject
   object BeanstalkdJobState {
     
-    @scala.inline
-    def buried: typings.beanstalkd.beanstalkdStrings.buried = "buried".asInstanceOf[typings.beanstalkd.beanstalkdStrings.buried]
+    inline def buried: typings.beanstalkd.beanstalkdStrings.buried = "buried".asInstanceOf[typings.beanstalkd.beanstalkdStrings.buried]
     
-    @scala.inline
-    def delayed: typings.beanstalkd.beanstalkdStrings.delayed = "delayed".asInstanceOf[typings.beanstalkd.beanstalkdStrings.delayed]
+    inline def delayed: typings.beanstalkd.beanstalkdStrings.delayed = "delayed".asInstanceOf[typings.beanstalkd.beanstalkdStrings.delayed]
     
-    @scala.inline
-    def ready: typings.beanstalkd.beanstalkdStrings.ready = "ready".asInstanceOf[typings.beanstalkd.beanstalkdStrings.ready]
+    inline def ready: typings.beanstalkd.beanstalkdStrings.ready = "ready".asInstanceOf[typings.beanstalkd.beanstalkdStrings.ready]
     
-    @scala.inline
-    def reserved: typings.beanstalkd.beanstalkdStrings.reserved = "reserved".asInstanceOf[typings.beanstalkd.beanstalkdStrings.reserved]
+    inline def reserved: typings.beanstalkd.beanstalkdStrings.reserved = "reserved".asInstanceOf[typings.beanstalkd.beanstalkdStrings.reserved]
   }
   
   trait BeanstalkdJobStats extends StObject {
@@ -537,8 +521,7 @@ object mod {
   }
   object BeanstalkdJobStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       age: Double,
       buries: Double,
       delay: Double,
@@ -559,50 +542,35 @@ object mod {
       __obj.asInstanceOf[BeanstalkdJobStats]
     }
     
-    @scala.inline
-    implicit class BeanstalkdJobStatsMutableBuilder[Self <: BeanstalkdJobStats] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdJobStats](x: Self) {
       
-      @scala.inline
-      def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+      inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuries(value: Double): Self = StObject.set(x, "buries", value.asInstanceOf[js.Any])
+      inline def setBuries(value: Double): Self = StObject.set(x, "buries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKicks(value: Double): Self = StObject.set(x, "kicks", value.asInstanceOf[js.Any])
+      inline def setKicks(value: Double): Self = StObject.set(x, "kicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPri(value: Double): Self = StObject.set(x, "pri", value.asInstanceOf[js.Any])
+      inline def setPri(value: Double): Self = StObject.set(x, "pri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleases(value: Double): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
+      inline def setReleases(value: Double): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReserves(value: Double): Self = StObject.set(x, "reserves", value.asInstanceOf[js.Any])
+      inline def setReserves(value: Double): Self = StObject.set(x, "reserves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTime-left`(value: Double): Self = StObject.set(x, "time-left", value.asInstanceOf[js.Any])
+      inline def `setTime-left`(value: Double): Self = StObject.set(x, "time-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeouts(value: Double): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
+      inline def setTimeouts(value: Double): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtr(value: Double): Self = StObject.set(x, "ttr", value.asInstanceOf[js.Any])
+      inline def setTtr(value: Double): Self = StObject.set(x, "ttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTube(value: String): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
+      inline def setTube(value: String): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
     }
   }
   
@@ -634,8 +602,7 @@ object mod {
   }
   object BeanstalkdProtocol {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (String, String) => Unit,
       addCommand: String => Unit,
       addReply: String => Unit,
@@ -653,46 +620,33 @@ object mod {
       __obj.asInstanceOf[BeanstalkdProtocol]
     }
     
-    @scala.inline
-    implicit class BeanstalkdProtocolMutableBuilder[Self <: BeanstalkdProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdProtocol](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddCommand(value: String => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
+      inline def setAddCommand(value: String => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddReply(value: String => Unit): Self = StObject.set(x, "addReply", js.Any.fromFunction1(value))
+      inline def setAddReply(value: String => Unit): Self = StObject.set(x, "addReply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddType(value: (String, js.Any) => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction2(value))
+      inline def setAddType(value: (String, js.Any) => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBuild(value: (String, js.Array[js.Any], String) => Buffer): Self = StObject.set(x, "build", js.Any.fromFunction3(value))
+      inline def setBuild(value: (String, js.Array[js.Any], String) => Buffer): Self = StObject.set(x, "build", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBuildCommand(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildCommand", js.Any.fromFunction2(value))
+      inline def setBuildCommand(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildCommand", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBuildPut(value: js.Array[js.Any] => Buffer): Self = StObject.set(x, "buildPut", js.Any.fromFunction1(value))
+      inline def setBuildPut(value: js.Array[js.Any] => Buffer): Self = StObject.set(x, "buildPut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuildreply(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildreply", js.Any.fromFunction2(value))
+      inline def setBuildreply(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildreply", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParse(
+      inline def setParse(
         value: (Buffer, String) => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null]
       ): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseCommand(value: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | Null]): Self = StObject.set(x, "parseCommand", js.Any.fromFunction1(value))
+      inline def setParseCommand(value: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | Null]): Self = StObject.set(x, "parseCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseReply(value: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolReply | Null]): Self = StObject.set(x, "parseReply", js.Any.fromFunction1(value))
+      inline def setParseReply(value: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolReply | Null]): Self = StObject.set(x, "parseReply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -704,23 +658,18 @@ object mod {
   }
   object BeanstalkdProtocolCommand {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], command: String): BeanstalkdProtocolCommand = {
+    inline def apply(args: js.Array[js.Any], command: String): BeanstalkdProtocolCommand = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeanstalkdProtocolCommand]
     }
     
-    @scala.inline
-    implicit class BeanstalkdProtocolCommandMutableBuilder[Self <: BeanstalkdProtocolCommand] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdProtocolCommand](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     }
   }
   
@@ -732,23 +681,18 @@ object mod {
   }
   object BeanstalkdProtocolReply {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], reply: String): BeanstalkdProtocolReply = {
+    inline def apply(args: js.Array[js.Any], reply: String): BeanstalkdProtocolReply = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeanstalkdProtocolReply]
     }
     
-    @scala.inline
-    implicit class BeanstalkdProtocolReplyMutableBuilder[Self <: BeanstalkdProtocolReply] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdProtocolReply](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setReply(value: String): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: String): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
     }
   }
   
@@ -903,8 +847,7 @@ object mod {
   }
   object BeanstalkdStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `binlog-current-index`: Double,
       `binlog-max-size`: Double,
       `binlog-oldest-index`: Double,
@@ -1000,155 +943,105 @@ object mod {
       __obj.asInstanceOf[BeanstalkdStats]
     }
     
-    @scala.inline
-    implicit class BeanstalkdStatsMutableBuilder[Self <: BeanstalkdStats] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdStats](x: Self) {
       
-      @scala.inline
-      def `setBinlog-current-index`(value: Double): Self = StObject.set(x, "binlog-current-index", value.asInstanceOf[js.Any])
+      inline def `setBinlog-current-index`(value: Double): Self = StObject.set(x, "binlog-current-index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBinlog-max-size`(value: Double): Self = StObject.set(x, "binlog-max-size", value.asInstanceOf[js.Any])
+      inline def `setBinlog-max-size`(value: Double): Self = StObject.set(x, "binlog-max-size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBinlog-oldest-index`(value: Double): Self = StObject.set(x, "binlog-oldest-index", value.asInstanceOf[js.Any])
+      inline def `setBinlog-oldest-index`(value: Double): Self = StObject.set(x, "binlog-oldest-index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBinlog-records-migrated`(value: Double): Self = StObject.set(x, "binlog-records-migrated", value.asInstanceOf[js.Any])
+      inline def `setBinlog-records-migrated`(value: Double): Self = StObject.set(x, "binlog-records-migrated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBinlog-records-written`(value: Double): Self = StObject.set(x, "binlog-records-written", value.asInstanceOf[js.Any])
+      inline def `setBinlog-records-written`(value: Double): Self = StObject.set(x, "binlog-records-written", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-bury`(value: Double): Self = StObject.set(x, "cmd-bury", value.asInstanceOf[js.Any])
+      inline def `setCmd-bury`(value: Double): Self = StObject.set(x, "cmd-bury", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-delete`(value: Double): Self = StObject.set(x, "cmd-delete", value.asInstanceOf[js.Any])
+      inline def `setCmd-delete`(value: Double): Self = StObject.set(x, "cmd-delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-ignore`(value: Double): Self = StObject.set(x, "cmd-ignore", value.asInstanceOf[js.Any])
+      inline def `setCmd-ignore`(value: Double): Self = StObject.set(x, "cmd-ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-kick`(value: Double): Self = StObject.set(x, "cmd-kick", value.asInstanceOf[js.Any])
+      inline def `setCmd-kick`(value: Double): Self = StObject.set(x, "cmd-kick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-list-tube-used`(value: Double): Self = StObject.set(x, "cmd-list-tube-used", value.asInstanceOf[js.Any])
+      inline def `setCmd-list-tube-used`(value: Double): Self = StObject.set(x, "cmd-list-tube-used", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-list-tubes`(value: Double): Self = StObject.set(x, "cmd-list-tubes", value.asInstanceOf[js.Any])
+      inline def `setCmd-list-tubes`(value: Double): Self = StObject.set(x, "cmd-list-tubes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-list-tubes-watched`(value: Double): Self = StObject.set(x, "cmd-list-tubes-watched", value.asInstanceOf[js.Any])
+      inline def `setCmd-list-tubes-watched`(value: Double): Self = StObject.set(x, "cmd-list-tubes-watched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-pause-tube`(value: Double): Self = StObject.set(x, "cmd-pause-tube", value.asInstanceOf[js.Any])
+      inline def `setCmd-pause-tube`(value: Double): Self = StObject.set(x, "cmd-pause-tube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-peek`(value: Double): Self = StObject.set(x, "cmd-peek", value.asInstanceOf[js.Any])
+      inline def `setCmd-peek`(value: Double): Self = StObject.set(x, "cmd-peek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-peek-buried`(value: Double): Self = StObject.set(x, "cmd-peek-buried", value.asInstanceOf[js.Any])
+      inline def `setCmd-peek-buried`(value: Double): Self = StObject.set(x, "cmd-peek-buried", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-peek-delayed`(value: Double): Self = StObject.set(x, "cmd-peek-delayed", value.asInstanceOf[js.Any])
+      inline def `setCmd-peek-delayed`(value: Double): Self = StObject.set(x, "cmd-peek-delayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-peek-ready`(value: Double): Self = StObject.set(x, "cmd-peek-ready", value.asInstanceOf[js.Any])
+      inline def `setCmd-peek-ready`(value: Double): Self = StObject.set(x, "cmd-peek-ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-put`(value: Double): Self = StObject.set(x, "cmd-put", value.asInstanceOf[js.Any])
+      inline def `setCmd-put`(value: Double): Self = StObject.set(x, "cmd-put", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-release`(value: Double): Self = StObject.set(x, "cmd-release", value.asInstanceOf[js.Any])
+      inline def `setCmd-release`(value: Double): Self = StObject.set(x, "cmd-release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-reserve`(value: Double): Self = StObject.set(x, "cmd-reserve", value.asInstanceOf[js.Any])
+      inline def `setCmd-reserve`(value: Double): Self = StObject.set(x, "cmd-reserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-stats`(value: Double): Self = StObject.set(x, "cmd-stats", value.asInstanceOf[js.Any])
+      inline def `setCmd-stats`(value: Double): Self = StObject.set(x, "cmd-stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-stats-job`(value: Double): Self = StObject.set(x, "cmd-stats-job", value.asInstanceOf[js.Any])
+      inline def `setCmd-stats-job`(value: Double): Self = StObject.set(x, "cmd-stats-job", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-stats-tube`(value: Double): Self = StObject.set(x, "cmd-stats-tube", value.asInstanceOf[js.Any])
+      inline def `setCmd-stats-tube`(value: Double): Self = StObject.set(x, "cmd-stats-tube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-use`(value: Double): Self = StObject.set(x, "cmd-use", value.asInstanceOf[js.Any])
+      inline def `setCmd-use`(value: Double): Self = StObject.set(x, "cmd-use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-watch`(value: Double): Self = StObject.set(x, "cmd-watch", value.asInstanceOf[js.Any])
+      inline def `setCmd-watch`(value: Double): Self = StObject.set(x, "cmd-watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-connections`(value: Double): Self = StObject.set(x, "current-connections", value.asInstanceOf[js.Any])
+      inline def `setCurrent-connections`(value: Double): Self = StObject.set(x, "current-connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-buried`(value: Double): Self = StObject.set(x, "current-jobs-buried", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-buried`(value: Double): Self = StObject.set(x, "current-jobs-buried", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-delayed`(value: Double): Self = StObject.set(x, "current-jobs-delayed", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-delayed`(value: Double): Self = StObject.set(x, "current-jobs-delayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-ready`(value: Double): Self = StObject.set(x, "current-jobs-ready", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-ready`(value: Double): Self = StObject.set(x, "current-jobs-ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-reserved`(value: Double): Self = StObject.set(x, "current-jobs-reserved", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-reserved`(value: Double): Self = StObject.set(x, "current-jobs-reserved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-urgent`(value: Double): Self = StObject.set(x, "current-jobs-urgent", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-urgent`(value: Double): Self = StObject.set(x, "current-jobs-urgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-producers`(value: Double): Self = StObject.set(x, "current-producers", value.asInstanceOf[js.Any])
+      inline def `setCurrent-producers`(value: Double): Self = StObject.set(x, "current-producers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-tubes`(value: Double): Self = StObject.set(x, "current-tubes", value.asInstanceOf[js.Any])
+      inline def `setCurrent-tubes`(value: Double): Self = StObject.set(x, "current-tubes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-waiting`(value: Double): Self = StObject.set(x, "current-waiting", value.asInstanceOf[js.Any])
+      inline def `setCurrent-waiting`(value: Double): Self = StObject.set(x, "current-waiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-workers`(value: Double): Self = StObject.set(x, "current-workers", value.asInstanceOf[js.Any])
+      inline def `setCurrent-workers`(value: Double): Self = StObject.set(x, "current-workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraining(value: Boolean): Self = StObject.set(x, "draining", value.asInstanceOf[js.Any])
+      inline def setDraining(value: Boolean): Self = StObject.set(x, "draining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setJob-timeouts`(value: Double): Self = StObject.set(x, "job-timeouts", value.asInstanceOf[js.Any])
+      inline def `setJob-timeouts`(value: Double): Self = StObject.set(x, "job-timeouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMax-job-size`(value: Double): Self = StObject.set(x, "max-job-size", value.asInstanceOf[js.Any])
+      inline def `setMax-job-size`(value: Double): Self = StObject.set(x, "max-job-size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRusage-stime`(value: Double): Self = StObject.set(x, "rusage-stime", value.asInstanceOf[js.Any])
+      inline def `setRusage-stime`(value: Double): Self = StObject.set(x, "rusage-stime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRusage-utime`(value: Double): Self = StObject.set(x, "rusage-utime", value.asInstanceOf[js.Any])
+      inline def `setRusage-utime`(value: Double): Self = StObject.set(x, "rusage-utime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTotal-connections`(value: Double): Self = StObject.set(x, "total-connections", value.asInstanceOf[js.Any])
+      inline def `setTotal-connections`(value: Double): Self = StObject.set(x, "total-connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTotal-jobs`(value: Double): Self = StObject.set(x, "total-jobs", value.asInstanceOf[js.Any])
+      inline def `setTotal-jobs`(value: Double): Self = StObject.set(x, "total-jobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUptime(value: Double): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+      inline def setUptime(value: Double): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1198,8 +1091,7 @@ object mod {
   }
   object BeanstalkdTubeStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `cmd-delete`: Double,
       `cmd-pause-tube`: Double,
       `current-jobs-buried`: Double,
@@ -1231,50 +1123,35 @@ object mod {
       __obj.asInstanceOf[BeanstalkdTubeStats]
     }
     
-    @scala.inline
-    implicit class BeanstalkdTubeStatsMutableBuilder[Self <: BeanstalkdTubeStats] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdTubeStats](x: Self) {
       
-      @scala.inline
-      def `setCmd-delete`(value: Double): Self = StObject.set(x, "cmd-delete", value.asInstanceOf[js.Any])
+      inline def `setCmd-delete`(value: Double): Self = StObject.set(x, "cmd-delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCmd-pause-tube`(value: Double): Self = StObject.set(x, "cmd-pause-tube", value.asInstanceOf[js.Any])
+      inline def `setCmd-pause-tube`(value: Double): Self = StObject.set(x, "cmd-pause-tube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-buried`(value: Double): Self = StObject.set(x, "current-jobs-buried", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-buried`(value: Double): Self = StObject.set(x, "current-jobs-buried", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-delayed`(value: Double): Self = StObject.set(x, "current-jobs-delayed", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-delayed`(value: Double): Self = StObject.set(x, "current-jobs-delayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-ready`(value: Double): Self = StObject.set(x, "current-jobs-ready", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-ready`(value: Double): Self = StObject.set(x, "current-jobs-ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-reserved`(value: Double): Self = StObject.set(x, "current-jobs-reserved", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-reserved`(value: Double): Self = StObject.set(x, "current-jobs-reserved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-jobs-urgent`(value: Double): Self = StObject.set(x, "current-jobs-urgent", value.asInstanceOf[js.Any])
+      inline def `setCurrent-jobs-urgent`(value: Double): Self = StObject.set(x, "current-jobs-urgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-using`(value: Double): Self = StObject.set(x, "current-using", value.asInstanceOf[js.Any])
+      inline def `setCurrent-using`(value: Double): Self = StObject.set(x, "current-using", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-waiting`(value: Double): Self = StObject.set(x, "current-waiting", value.asInstanceOf[js.Any])
+      inline def `setCurrent-waiting`(value: Double): Self = StObject.set(x, "current-waiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCurrent-watching`(value: Double): Self = StObject.set(x, "current-watching", value.asInstanceOf[js.Any])
+      inline def `setCurrent-watching`(value: Double): Self = StObject.set(x, "current-watching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPause-time-left`(value: Double): Self = StObject.set(x, "pause-time-left", value.asInstanceOf[js.Any])
+      inline def `setPause-time-left`(value: Double): Self = StObject.set(x, "pause-time-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTotal-jobs`(value: Double): Self = StObject.set(x, "total-jobs", value.asInstanceOf[js.Any])
+      inline def `setTotal-jobs`(value: Double): Self = StObject.set(x, "total-jobs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1290,17 +1167,14 @@ object mod {
   }
   object Writer {
     
-    @scala.inline
-    def apply(command: String): Writer = {
+    inline def apply(command: String): Writer = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[Writer]
     }
     
-    @scala.inline
-    implicit class WriterMutableBuilder[Self <: Writer] (val x: Self) extends AnyVal {
+    extension [Self <: Writer](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1309,8 +1183,7 @@ object mod {
        with BasicReader
   object YamlReader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer,
       parseData: String => js.Any
     ): YamlReader = {

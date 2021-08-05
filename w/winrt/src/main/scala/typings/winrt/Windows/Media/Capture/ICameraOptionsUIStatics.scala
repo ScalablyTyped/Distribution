@@ -10,16 +10,13 @@ trait ICameraOptionsUIStatics extends StObject {
 }
 object ICameraOptionsUIStatics {
   
-  @scala.inline
-  def apply(show: MediaCapture => Unit): ICameraOptionsUIStatics = {
+  inline def apply(show: MediaCapture => Unit): ICameraOptionsUIStatics = {
     val __obj = js.Dynamic.literal(show = js.Any.fromFunction1(show))
     __obj.asInstanceOf[ICameraOptionsUIStatics]
   }
   
-  @scala.inline
-  implicit class ICameraOptionsUIStaticsMutableBuilder[Self <: ICameraOptionsUIStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICameraOptionsUIStatics](x: Self) {
     
-    @scala.inline
-    def setShow(value: MediaCapture => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: MediaCapture => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

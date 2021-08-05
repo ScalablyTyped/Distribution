@@ -21,8 +21,7 @@ object mod {
   }
   object HexbinHoverHandler {
     
-    @scala.inline
-    def apply(mouseout: (HexbinLayer_, js.Any) => Unit, mouseover: (HexbinLayer_, js.Any) => Unit): HexbinHoverHandler = {
+    inline def apply(mouseout: (HexbinLayer_, js.Any) => Unit, mouseover: (HexbinLayer_, js.Any) => Unit): HexbinHoverHandler = {
       val __obj = js.Dynamic.literal(mouseout = js.Any.fromFunction2(mouseout), mouseover = js.Any.fromFunction2(mouseover))
       __obj.asInstanceOf[HexbinHoverHandler]
     }
@@ -31,20 +30,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def compound(v: CompoundOptions): CompoundHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("compound")(v.asInstanceOf[js.Any]).asInstanceOf[CompoundHoverHandler]
+    inline def compound(v: CompoundOptions): CompoundHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("compound")(v.asInstanceOf[js.Any]).asInstanceOf[CompoundHoverHandler]
     
-    @scala.inline
-    def none(): NoneHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[NoneHoverHandler]
+    inline def none(): NoneHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[NoneHoverHandler]
     
-    @scala.inline
-    def resizeFill(): ResizeFillHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeFill")().asInstanceOf[ResizeFillHoverHandler]
+    inline def resizeFill(): ResizeFillHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeFill")().asInstanceOf[ResizeFillHoverHandler]
     
-    @scala.inline
-    def resizeScale(v: ResizeScaleOptions): ResizeScaleHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeScale")(v.asInstanceOf[js.Any]).asInstanceOf[ResizeScaleHoverHandler]
+    inline def resizeScale(v: ResizeScaleOptions): ResizeScaleHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeScale")(v.asInstanceOf[js.Any]).asInstanceOf[ResizeScaleHoverHandler]
     
-    @scala.inline
-    def tooltip(v: TooltipOptions): TooltipHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(v.asInstanceOf[js.Any]).asInstanceOf[TooltipHoverHandler]
+    inline def tooltip(v: TooltipOptions): TooltipHoverHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(v.asInstanceOf[js.Any]).asInstanceOf[TooltipHoverHandler]
     
     type CompoundHoverHandler = HexbinHoverHandler
     
@@ -54,31 +48,24 @@ object mod {
     }
     object CompoundOptions {
       
-      @scala.inline
-      def apply(handlers: js.Array[HexbinHoverHandler]): CompoundOptions = {
+      inline def apply(handlers: js.Array[HexbinHoverHandler]): CompoundOptions = {
         val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any])
         __obj.asInstanceOf[CompoundOptions]
       }
       
-      @scala.inline
-      implicit class CompoundOptionsMutableBuilder[Self <: CompoundOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CompoundOptions](x: Self) {
         
-        @scala.inline
-        def setHandlers(value: js.Array[HexbinHoverHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+        inline def setHandlers(value: js.Array[HexbinHoverHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandlersVarargs(value: HexbinHoverHandler*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+        inline def setHandlersVarargs(value: HexbinHoverHandler*): Self = StObject.set(x, "handlers", js.Array(value :_*))
       }
     }
     
-    @scala.inline
-    implicit class HexbinHoverHandlerMutableBuilder[Self <: HexbinHoverHandler] (val x: Self) extends AnyVal {
+    extension [Self <: HexbinHoverHandler](x: Self) {
       
-      @scala.inline
-      def setMouseout(value: (HexbinLayer_, js.Any) => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction2(value))
+      inline def setMouseout(value: (HexbinLayer_, js.Any) => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseover(value: (HexbinLayer_, js.Any) => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction2(value))
+      inline def setMouseover(value: (HexbinLayer_, js.Any) => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction2(value))
     }
     
     type NoneHoverHandler = HexbinHoverHandler
@@ -93,17 +80,14 @@ object mod {
     }
     object ResizeScaleOptions {
       
-      @scala.inline
-      def apply(radiusScale: Double): ResizeScaleOptions = {
+      inline def apply(radiusScale: Double): ResizeScaleOptions = {
         val __obj = js.Dynamic.literal(radiusScale = radiusScale.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResizeScaleOptions]
       }
       
-      @scala.inline
-      implicit class ResizeScaleOptionsMutableBuilder[Self <: ResizeScaleOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ResizeScaleOptions](x: Self) {
         
-        @scala.inline
-        def setRadiusScale(value: Double): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
+        inline def setRadiusScale(value: Double): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
       }
     }
     
@@ -115,26 +99,21 @@ object mod {
     }
     object TooltipOptions {
       
-      @scala.inline
-      def apply(tooltipContent: js.Any => String): TooltipOptions = {
+      inline def apply(tooltipContent: js.Any => String): TooltipOptions = {
         val __obj = js.Dynamic.literal(tooltipContent = js.Any.fromFunction1(tooltipContent))
         __obj.asInstanceOf[TooltipOptions]
       }
       
-      @scala.inline
-      implicit class TooltipOptionsMutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TooltipOptions](x: Self) {
         
-        @scala.inline
-        def setTooltipContent(value: js.Any => String): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction1(value))
+        inline def setTooltipContent(value: js.Any => String): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction1(value))
       }
     }
   }
   
-  @scala.inline
-  def hexbinLayer(config: js.UndefOr[HexbinLayerConfig]): HexbinLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hexbinLayer")(config.asInstanceOf[js.Any]).asInstanceOf[HexbinLayer_]
+  inline def hexbinLayer(config: js.UndefOr[HexbinLayerConfig]): HexbinLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hexbinLayer")(config.asInstanceOf[js.Any]).asInstanceOf[HexbinLayer_]
   
-  @scala.inline
-  def pingLayer(config: js.UndefOr[PingLayerConfig]): PingLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pingLayer")(config.asInstanceOf[js.Any]).asInstanceOf[PingLayer_]
+  inline def pingLayer(config: js.UndefOr[PingLayerConfig]): PingLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pingLayer")(config.asInstanceOf[js.Any]).asInstanceOf[PingLayer_]
   
   trait HexbinLayerConfig extends StObject {
     
@@ -156,65 +135,46 @@ object mod {
   }
   object HexbinLayerConfig {
     
-    @scala.inline
-    def apply(): HexbinLayerConfig = {
+    inline def apply(): HexbinLayerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HexbinLayerConfig]
     }
     
-    @scala.inline
-    implicit class HexbinLayerConfigMutableBuilder[Self <: HexbinLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HexbinLayerConfig](x: Self) {
       
-      @scala.inline
-      def setColorRange(value: js.Array[String]): Self = StObject.set(x, "colorRange", value.asInstanceOf[js.Any])
+      inline def setColorRange(value: js.Array[String]): Self = StObject.set(x, "colorRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorRangeUndefined: Self = StObject.set(x, "colorRange", js.undefined)
+      inline def setColorRangeUndefined: Self = StObject.set(x, "colorRange", js.undefined)
       
-      @scala.inline
-      def setColorRangeVarargs(value: String*): Self = StObject.set(x, "colorRange", js.Array(value :_*))
+      inline def setColorRangeVarargs(value: String*): Self = StObject.set(x, "colorRange", js.Array(value :_*))
       
-      @scala.inline
-      def setColorScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "colorScaleExtent", value.asInstanceOf[js.Any])
+      inline def setColorScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "colorScaleExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorScaleExtentUndefined: Self = StObject.set(x, "colorScaleExtent", js.undefined)
+      inline def setColorScaleExtentUndefined: Self = StObject.set(x, "colorScaleExtent", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPointerEvents(value: String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      inline def setPointerEvents(value: String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+      inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
+      inline def setRadiusRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusRangeUndefined: Self = StObject.set(x, "radiusRange", js.undefined)
+      inline def setRadiusRangeUndefined: Self = StObject.set(x, "radiusRange", js.undefined)
       
-      @scala.inline
-      def setRadiusScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "radiusScaleExtent", value.asInstanceOf[js.Any])
+      inline def setRadiusScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "radiusScaleExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusScaleExtentUndefined: Self = StObject.set(x, "radiusScaleExtent", js.undefined)
+      inline def setRadiusScaleExtentUndefined: Self = StObject.set(x, "radiusScaleExtent", js.undefined)
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -293,44 +253,32 @@ object mod {
   }
   object PingLayerConfig {
     
-    @scala.inline
-    def apply(): PingLayerConfig = {
+    inline def apply(): PingLayerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PingLayerConfig]
     }
     
-    @scala.inline
-    implicit class PingLayerConfigMutableBuilder[Self <: PingLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PingLayerConfig](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+      inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+      inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
       
-      @scala.inline
-      def setOpacityRange(value: js.Array[Double]): Self = StObject.set(x, "opacityRange", value.asInstanceOf[js.Any])
+      inline def setOpacityRange(value: js.Array[Double]): Self = StObject.set(x, "opacityRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityRangeUndefined: Self = StObject.set(x, "opacityRange", js.undefined)
+      inline def setOpacityRangeUndefined: Self = StObject.set(x, "opacityRange", js.undefined)
       
-      @scala.inline
-      def setOpacityRangeVarargs(value: Double*): Self = StObject.set(x, "opacityRange", js.Array(value :_*))
+      inline def setOpacityRangeVarargs(value: Double*): Self = StObject.set(x, "opacityRange", js.Array(value :_*))
       
-      @scala.inline
-      def setRadiusRange(value: js.Array[Double]): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
+      inline def setRadiusRange(value: js.Array[Double]): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusRangeUndefined: Self = StObject.set(x, "radiusRange", js.undefined)
+      inline def setRadiusRangeUndefined: Self = StObject.set(x, "radiusRange", js.undefined)
       
-      @scala.inline
-      def setRadiusRangeVarargs(value: Double*): Self = StObject.set(x, "radiusRange", js.Array(value :_*))
+      inline def setRadiusRangeVarargs(value: Double*): Self = StObject.set(x, "radiusRange", js.Array(value :_*))
     }
   }
   

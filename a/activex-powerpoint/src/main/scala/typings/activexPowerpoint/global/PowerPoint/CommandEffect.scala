@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CommandEffect")
 @js.native
-class CommandEffect protected ()
+/* private */ class CommandEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CommandEffect {
   
@@ -20,7 +20,7 @@ class CommandEffect protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.CommandEffect_typekey")
   var PowerPointDotCommandEffect_typekey: typings.activexPowerpoint.PowerPoint.CommandEffect = js.native
   

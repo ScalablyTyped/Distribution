@@ -18,19 +18,15 @@ trait AssociationFilter extends StObject {
 }
 object AssociationFilter {
   
-  @scala.inline
-  def apply(key: AssociationFilterKey, value: AssociationFilterValue): AssociationFilter = {
+  inline def apply(key: AssociationFilterKey, value: AssociationFilterValue): AssociationFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationFilter]
   }
   
-  @scala.inline
-  implicit class AssociationFilterMutableBuilder[Self <: AssociationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: AssociationFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: AssociationFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: AssociationFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AssociationFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

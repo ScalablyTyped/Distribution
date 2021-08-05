@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(): typings.firebaseAdmin.authMod.auth.Auth = typings.firebaseAdmin.authMod.auth.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebaseAdmin.authMod.auth.Auth]
-@scala.inline
-def apply(app: typings.firebaseAdmin.firebaseNamespaceApiMod.app.App): typings.firebaseAdmin.authMod.auth.Auth = typings.firebaseAdmin.authMod.auth.^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAdmin.authMod.auth.Auth]
+inline def apply(): typings.firebaseAdmin.authMod.auth.Auth = typings.firebaseAdmin.authMod.auth.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebaseAdmin.authMod.auth.Auth]
+inline def apply(app: typings.firebaseAdmin.firebaseNamespaceApiMod.app.App): typings.firebaseAdmin.authMod.auth.Auth = typings.firebaseAdmin.authMod.auth.^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAdmin.authMod.auth.Auth]
 
 /**
   * Identifies a second factor type.

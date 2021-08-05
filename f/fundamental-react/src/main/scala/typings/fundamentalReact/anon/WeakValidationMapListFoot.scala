@@ -12,19 +12,15 @@ trait WeakValidationMapListFoot extends StObject {
 }
 object WeakValidationMapListFoot {
   
-  @scala.inline
-  def apply(): WeakValidationMapListFoot = {
+  inline def apply(): WeakValidationMapListFoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapListFoot]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapListFootMutableBuilder[Self <: WeakValidationMapListFoot] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapListFoot](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
   }
 }

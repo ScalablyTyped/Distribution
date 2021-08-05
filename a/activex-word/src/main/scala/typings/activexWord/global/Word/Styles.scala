@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Styles")
 @js.native
-class Styles protected ()
+/* private */ class Styles ()
   extends StObject
      with typings.activexWord.Word.Styles

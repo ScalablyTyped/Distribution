@@ -38,49 +38,35 @@ trait AwsCodeBuildProjectDetails extends StObject {
 }
 object AwsCodeBuildProjectDetails {
   
-  @scala.inline
-  def apply(): AwsCodeBuildProjectDetails = {
+  inline def apply(): AwsCodeBuildProjectDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCodeBuildProjectDetails]
   }
   
-  @scala.inline
-  implicit class AwsCodeBuildProjectDetailsMutableBuilder[Self <: AwsCodeBuildProjectDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCodeBuildProjectDetails](x: Self) {
     
-    @scala.inline
-    def setEncryptionKey(value: NonEmptyString): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: NonEmptyString): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: AwsCodeBuildProjectEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: AwsCodeBuildProjectEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: NonEmptyString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: NonEmptyString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
     
-    @scala.inline
-    def setSource(value: AwsCodeBuildProjectSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: AwsCodeBuildProjectSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setVpcConfig(value: AwsCodeBuildProjectVpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: AwsCodeBuildProjectVpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

@@ -18,10 +18,8 @@ trait ChartDataRowSource extends StObject
 object ChartDataRowSource {
   
   /** values displayed as data rows are taken from the columns of the data source. */
-  @scala.inline
-  def COLUMNS: `1` = 1.asInstanceOf[`1`]
+  inline def COLUMNS: `1` = 1.asInstanceOf[`1`]
   
   /** values displayed as data rows are taken from the rows of the data source. */
-  @scala.inline
-  def ROWS: `0` = 0.asInstanceOf[`0`]
+  inline def ROWS: `0` = 0.asInstanceOf[`0`]
 }

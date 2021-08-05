@@ -16,22 +16,17 @@ trait SchemaRemoveHeldAccountsRequest extends StObject {
 }
 object SchemaRemoveHeldAccountsRequest {
   
-  @scala.inline
-  def apply(): SchemaRemoveHeldAccountsRequest = {
+  inline def apply(): SchemaRemoveHeldAccountsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRemoveHeldAccountsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRemoveHeldAccountsRequestMutableBuilder[Self <: SchemaRemoveHeldAccountsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRemoveHeldAccountsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
   }
 }

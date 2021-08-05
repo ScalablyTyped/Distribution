@@ -20,37 +20,27 @@ trait Limits extends StObject {
 }
 object Limits {
   
-  @scala.inline
-  def apply(): Limits = {
+  inline def apply(): Limits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Limits]
   }
   
-  @scala.inline
-  implicit class LimitsMutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
+  extension [Self <: Limits](x: Self) {
     
-    @scala.inline
-    def setAdditionalLimits(value: AdditionalLimitList): Self = StObject.set(x, "AdditionalLimits", value.asInstanceOf[js.Any])
+    inline def setAdditionalLimits(value: AdditionalLimitList): Self = StObject.set(x, "AdditionalLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalLimitsUndefined: Self = StObject.set(x, "AdditionalLimits", js.undefined)
+    inline def setAdditionalLimitsUndefined: Self = StObject.set(x, "AdditionalLimits", js.undefined)
     
-    @scala.inline
-    def setAdditionalLimitsVarargs(value: AdditionalLimit*): Self = StObject.set(x, "AdditionalLimits", js.Array(value :_*))
+    inline def setAdditionalLimitsVarargs(value: AdditionalLimit*): Self = StObject.set(x, "AdditionalLimits", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceLimits(value: InstanceLimits): Self = StObject.set(x, "InstanceLimits", value.asInstanceOf[js.Any])
+    inline def setInstanceLimits(value: InstanceLimits): Self = StObject.set(x, "InstanceLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceLimitsUndefined: Self = StObject.set(x, "InstanceLimits", js.undefined)
+    inline def setInstanceLimitsUndefined: Self = StObject.set(x, "InstanceLimits", js.undefined)
     
-    @scala.inline
-    def setStorageTypes(value: StorageTypeList): Self = StObject.set(x, "StorageTypes", value.asInstanceOf[js.Any])
+    inline def setStorageTypes(value: StorageTypeList): Self = StObject.set(x, "StorageTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTypesUndefined: Self = StObject.set(x, "StorageTypes", js.undefined)
+    inline def setStorageTypesUndefined: Self = StObject.set(x, "StorageTypes", js.undefined)
     
-    @scala.inline
-    def setStorageTypesVarargs(value: StorageType*): Self = StObject.set(x, "StorageTypes", js.Array(value :_*))
+    inline def setStorageTypesVarargs(value: StorageType*): Self = StObject.set(x, "StorageTypes", js.Array(value :_*))
   }
 }

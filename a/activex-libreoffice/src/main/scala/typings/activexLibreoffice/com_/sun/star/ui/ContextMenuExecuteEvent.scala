@@ -25,8 +25,7 @@ trait ContextMenuExecuteEvent extends StObject {
 }
 object ContextMenuExecuteEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionTriggerContainer: XIndexContainer,
     ExecutePosition: Point,
     Selection: XSelectionSupplier,
@@ -36,19 +35,14 @@ object ContextMenuExecuteEvent {
     __obj.asInstanceOf[ContextMenuExecuteEvent]
   }
   
-  @scala.inline
-  implicit class ContextMenuExecuteEventMutableBuilder[Self <: ContextMenuExecuteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenuExecuteEvent](x: Self) {
     
-    @scala.inline
-    def setActionTriggerContainer(value: XIndexContainer): Self = StObject.set(x, "ActionTriggerContainer", value.asInstanceOf[js.Any])
+    inline def setActionTriggerContainer(value: XIndexContainer): Self = StObject.set(x, "ActionTriggerContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutePosition(value: Point): Self = StObject.set(x, "ExecutePosition", value.asInstanceOf[js.Any])
+    inline def setExecutePosition(value: Point): Self = StObject.set(x, "ExecutePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: XSelectionSupplier): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: XSelectionSupplier): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceWindow(value: XWindow): Self = StObject.set(x, "SourceWindow", value.asInstanceOf[js.Any])
+    inline def setSourceWindow(value: XWindow): Self = StObject.set(x, "SourceWindow", value.asInstanceOf[js.Any])
   }
 }

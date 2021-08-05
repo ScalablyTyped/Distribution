@@ -23,26 +23,20 @@ trait EphemeralKeyInfo extends StObject {
 }
 object EphemeralKeyInfo {
   
-  @scala.inline
-  def apply(size: Double, `type`: String): EphemeralKeyInfo = {
+  inline def apply(size: Double, `type`: String): EphemeralKeyInfo = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EphemeralKeyInfo]
   }
   
-  @scala.inline
-  implicit class EphemeralKeyInfoMutableBuilder[Self <: EphemeralKeyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EphemeralKeyInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

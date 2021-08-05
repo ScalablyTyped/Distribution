@@ -83,67 +83,47 @@ trait NavigationOptions extends StObject {
 }
 object NavigationOptions {
   
-  @scala.inline
-  def apply(): NavigationOptions = {
+  inline def apply(): NavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationOptions]
   }
   
-  @scala.inline
-  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotationsOptions(value: AnnotationsOptions | NavigationAnnotationsOptions): Self = StObject.set(x, "annotationsOptions", value.asInstanceOf[js.Any])
+    inline def setAnnotationsOptions(value: AnnotationsOptions | NavigationAnnotationsOptions): Self = StObject.set(x, "annotationsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsOptionsUndefined: Self = StObject.set(x, "annotationsOptions", js.undefined)
+    inline def setAnnotationsOptionsUndefined: Self = StObject.set(x, "annotationsOptions", js.undefined)
     
-    @scala.inline
-    def setBindings(value: NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsClassName(value: String): Self = StObject.set(x, "bindingsClassName", value.asInstanceOf[js.Any])
+    inline def setBindingsClassName(value: String): Self = StObject.set(x, "bindingsClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsClassNameUndefined: Self = StObject.set(x, "bindingsClassName", js.undefined)
+    inline def setBindingsClassNameUndefined: Self = StObject.set(x, "bindingsClassName", js.undefined)
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setButtonOptions(value: NavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
+    inline def setButtonOptions(value: NavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
+    inline def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
     
-    @scala.inline
-    def setEvents(value: NavigationEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: NavigationEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setIconsURL(value: String): Self = StObject.set(x, "iconsURL", value.asInstanceOf[js.Any])
+    inline def setIconsURL(value: String): Self = StObject.set(x, "iconsURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsURLUndefined: Self = StObject.set(x, "iconsURL", js.undefined)
+    inline def setIconsURLUndefined: Self = StObject.set(x, "iconsURL", js.undefined)
     
-    @scala.inline
-    def setMenuItemHoverStyle(value: CSSObject): Self = StObject.set(x, "menuItemHoverStyle", value.asInstanceOf[js.Any])
+    inline def setMenuItemHoverStyle(value: CSSObject): Self = StObject.set(x, "menuItemHoverStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItemHoverStyleUndefined: Self = StObject.set(x, "menuItemHoverStyle", js.undefined)
+    inline def setMenuItemHoverStyleUndefined: Self = StObject.set(x, "menuItemHoverStyle", js.undefined)
     
-    @scala.inline
-    def setMenuItemStyle(value: CSSObject): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
+    inline def setMenuItemStyle(value: CSSObject): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
+    inline def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
     
-    @scala.inline
-    def setMenuStyle(value: CSSObject): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+    inline def setMenuStyle(value: CSSObject): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
+    inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
   }
 }

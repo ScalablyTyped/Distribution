@@ -24,55 +24,39 @@ trait PartialStyleRulesTouchRip extends StObject {
 }
 object PartialStyleRulesTouchRip {
   
-  @scala.inline
-  def apply(): PartialStyleRulesTouchRip = {
+  inline def apply(): PartialStyleRulesTouchRip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesTouchRip]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesTouchRipMutableBuilder[Self <: PartialStyleRulesTouchRip] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesTouchRip](x: Self) {
     
-    @scala.inline
-    def setChild(value: CSSProperties): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+    inline def setChild(value: CSSProperties): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildLeaving(value: CSSProperties): Self = StObject.set(x, "childLeaving", value.asInstanceOf[js.Any])
+    inline def setChildLeaving(value: CSSProperties): Self = StObject.set(x, "childLeaving", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildLeavingUndefined: Self = StObject.set(x, "childLeaving", js.undefined)
+    inline def setChildLeavingUndefined: Self = StObject.set(x, "childLeaving", js.undefined)
     
-    @scala.inline
-    def setChildPulsate(value: CSSProperties): Self = StObject.set(x, "childPulsate", value.asInstanceOf[js.Any])
+    inline def setChildPulsate(value: CSSProperties): Self = StObject.set(x, "childPulsate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPulsateUndefined: Self = StObject.set(x, "childPulsate", js.undefined)
+    inline def setChildPulsateUndefined: Self = StObject.set(x, "childPulsate", js.undefined)
     
-    @scala.inline
-    def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
+    inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
-    @scala.inline
-    def setRipple(value: CSSProperties): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+    inline def setRipple(value: CSSProperties): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRipplePulsate(value: CSSProperties): Self = StObject.set(x, "ripplePulsate", value.asInstanceOf[js.Any])
+    inline def setRipplePulsate(value: CSSProperties): Self = StObject.set(x, "ripplePulsate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRipplePulsateUndefined: Self = StObject.set(x, "ripplePulsate", js.undefined)
+    inline def setRipplePulsateUndefined: Self = StObject.set(x, "ripplePulsate", js.undefined)
     
-    @scala.inline
-    def setRippleUndefined: Self = StObject.set(x, "ripple", js.undefined)
+    inline def setRippleUndefined: Self = StObject.set(x, "ripple", js.undefined)
     
-    @scala.inline
-    def setRippleVisible(value: CSSProperties): Self = StObject.set(x, "rippleVisible", value.asInstanceOf[js.Any])
+    inline def setRippleVisible(value: CSSProperties): Self = StObject.set(x, "rippleVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleVisibleUndefined: Self = StObject.set(x, "rippleVisible", js.undefined)
+    inline def setRippleVisibleUndefined: Self = StObject.set(x, "rippleVisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

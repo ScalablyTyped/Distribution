@@ -21,25 +21,19 @@ trait SchemaServiceAccountDelegationInfo extends StObject {
 }
 object SchemaServiceAccountDelegationInfo {
   
-  @scala.inline
-  def apply(): SchemaServiceAccountDelegationInfo = {
+  inline def apply(): SchemaServiceAccountDelegationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServiceAccountDelegationInfo]
   }
   
-  @scala.inline
-  implicit class SchemaServiceAccountDelegationInfoMutableBuilder[Self <: SchemaServiceAccountDelegationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServiceAccountDelegationInfo](x: Self) {
     
-    @scala.inline
-    def setFirstPartyPrincipal(value: SchemaFirstPartyPrincipal): Self = StObject.set(x, "firstPartyPrincipal", value.asInstanceOf[js.Any])
+    inline def setFirstPartyPrincipal(value: SchemaFirstPartyPrincipal): Self = StObject.set(x, "firstPartyPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPartyPrincipalUndefined: Self = StObject.set(x, "firstPartyPrincipal", js.undefined)
+    inline def setFirstPartyPrincipalUndefined: Self = StObject.set(x, "firstPartyPrincipal", js.undefined)
     
-    @scala.inline
-    def setThirdPartyPrincipal(value: SchemaThirdPartyPrincipal): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
+    inline def setThirdPartyPrincipal(value: SchemaThirdPartyPrincipal): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
+    inline def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
   }
 }

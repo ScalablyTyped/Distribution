@@ -11,7 +11,7 @@ object visibilityMonitorMod {
   @js.native
   class VisibilityMonitor () extends EventEmitter {
     
-    var visible_ : js.Any = js.native
+    /* private */ var visible_ : js.Any = js.native
   }
   /* static members */
   object VisibilityMonitor {
@@ -20,7 +20,6 @@ object visibilityMonitorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getInstance(): VisibilityMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[VisibilityMonitor]
+    inline def getInstance(): VisibilityMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[VisibilityMonitor]
   }
 }

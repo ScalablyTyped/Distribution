@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PermissionMode extends StObject
 object PermissionMode {
   
-  @scala.inline
-  def All: typings.documentdb.documentdbStrings.All = "All".asInstanceOf[typings.documentdb.documentdbStrings.All]
+  inline def All: typings.documentdb.documentdbStrings.All = "All".asInstanceOf[typings.documentdb.documentdbStrings.All]
   
-  @scala.inline
-  def None: typings.documentdb.documentdbStrings.None = "None".asInstanceOf[typings.documentdb.documentdbStrings.None]
+  inline def None: typings.documentdb.documentdbStrings.None = "None".asInstanceOf[typings.documentdb.documentdbStrings.None]
   
-  @scala.inline
-  def Read: typings.documentdb.documentdbStrings.Read = "Read".asInstanceOf[typings.documentdb.documentdbStrings.Read]
+  inline def Read: typings.documentdb.documentdbStrings.Read = "Read".asInstanceOf[typings.documentdb.documentdbStrings.Read]
 }

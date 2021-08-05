@@ -24,8 +24,7 @@ trait XProperty
 }
 object XProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsProperty: Property,
     acquire: () => Unit,
     getAsProperty: () => Property,
@@ -36,13 +35,10 @@ object XProperty {
     __obj.asInstanceOf[XProperty]
   }
   
-  @scala.inline
-  implicit class XPropertyMutableBuilder[Self <: XProperty] (val x: Self) extends AnyVal {
+  extension [Self <: XProperty](x: Self) {
     
-    @scala.inline
-    def setAsProperty(value: Property): Self = StObject.set(x, "AsProperty", value.asInstanceOf[js.Any])
+    inline def setAsProperty(value: Property): Self = StObject.set(x, "AsProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAsProperty(value: () => Property): Self = StObject.set(x, "getAsProperty", js.Any.fromFunction0(value))
+    inline def setGetAsProperty(value: () => Property): Self = StObject.set(x, "getAsProperty", js.Any.fromFunction0(value))
   }
 }

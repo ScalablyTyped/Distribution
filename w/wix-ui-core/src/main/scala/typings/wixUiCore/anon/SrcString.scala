@@ -12,8 +12,7 @@ trait SrcString extends StObject {
 }
 object SrcString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     src: String,
     status: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ImageStatus */ js.Any
   ): SrcString = {
@@ -21,14 +20,11 @@ object SrcString {
     __obj.asInstanceOf[SrcString]
   }
   
-  @scala.inline
-  implicit class SrcStringMutableBuilder[Self <: SrcString] (val x: Self) extends AnyVal {
+  extension [Self <: SrcString](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(
+    inline def setStatus(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ImageStatus */ js.Any
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

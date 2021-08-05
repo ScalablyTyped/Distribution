@@ -24,19 +24,15 @@ trait ChangePageColorCommand
 }
 object ChangePageColorCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => CommandState[String]): ChangePageColorCommand = {
+  inline def apply(execute: String => Boolean, getState: () => CommandState[String]): ChangePageColorCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangePageColorCommand]
   }
   
-  @scala.inline
-  implicit class ChangePageColorCommandMutableBuilder[Self <: ChangePageColorCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePageColorCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

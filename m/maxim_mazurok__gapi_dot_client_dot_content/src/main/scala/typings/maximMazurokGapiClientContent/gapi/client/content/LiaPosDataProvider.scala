@@ -14,25 +14,19 @@ trait LiaPosDataProvider extends StObject {
 }
 object LiaPosDataProvider {
   
-  @scala.inline
-  def apply(): LiaPosDataProvider = {
+  inline def apply(): LiaPosDataProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiaPosDataProvider]
   }
   
-  @scala.inline
-  implicit class LiaPosDataProviderMutableBuilder[Self <: LiaPosDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: LiaPosDataProvider](x: Self) {
     
-    @scala.inline
-    def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
+    inline def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
+    inline def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
     
-    @scala.inline
-    def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
+    inline def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
+    inline def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
   }
 }

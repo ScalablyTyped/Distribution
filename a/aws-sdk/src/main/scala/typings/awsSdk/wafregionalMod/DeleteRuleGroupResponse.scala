@@ -13,19 +13,15 @@ trait DeleteRuleGroupResponse extends StObject {
 }
 object DeleteRuleGroupResponse {
   
-  @scala.inline
-  def apply(): DeleteRuleGroupResponse = {
+  inline def apply(): DeleteRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRuleGroupResponse]
   }
   
-  @scala.inline
-  implicit class DeleteRuleGroupResponseMutableBuilder[Self <: DeleteRuleGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRuleGroupResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

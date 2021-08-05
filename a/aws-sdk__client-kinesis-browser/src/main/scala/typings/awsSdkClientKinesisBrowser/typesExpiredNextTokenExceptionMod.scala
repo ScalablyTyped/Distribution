@@ -18,17 +18,14 @@ object typesExpiredNextTokenExceptionMod {
   }
   object ExpiredNextTokenException {
     
-    @scala.inline
-    def apply(): ExpiredNextTokenException = {
+    inline def apply(): ExpiredNextTokenException = {
       val __obj = js.Dynamic.literal(name = "ExpiredNextTokenException")
       __obj.asInstanceOf[ExpiredNextTokenException]
     }
     
-    @scala.inline
-    implicit class ExpiredNextTokenExceptionMutableBuilder[Self <: ExpiredNextTokenException] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiredNextTokenException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredNextTokenException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -43,20 +40,16 @@ object typesExpiredNextTokenExceptionMod {
   }
   object ExpiredNextTokenExceptionDetails {
     
-    @scala.inline
-    def apply(): ExpiredNextTokenExceptionDetails = {
+    inline def apply(): ExpiredNextTokenExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpiredNextTokenExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ExpiredNextTokenExceptionDetailsMutableBuilder[Self <: ExpiredNextTokenExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiredNextTokenExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

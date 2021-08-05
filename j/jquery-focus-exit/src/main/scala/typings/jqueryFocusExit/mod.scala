@@ -19,23 +19,18 @@ object mod {
   }
   object FocusElements {
     
-    @scala.inline
-    def apply(gainedFocus: HTMLElement): FocusElements = {
+    inline def apply(gainedFocus: HTMLElement): FocusElements = {
       val __obj = js.Dynamic.literal(gainedFocus = gainedFocus.asInstanceOf[js.Any])
       __obj.asInstanceOf[FocusElements]
     }
     
-    @scala.inline
-    implicit class FocusElementsMutableBuilder[Self <: FocusElements] (val x: Self) extends AnyVal {
+    extension [Self <: FocusElements](x: Self) {
       
-      @scala.inline
-      def setGainedFocus(value: HTMLElement): Self = StObject.set(x, "gainedFocus", value.asInstanceOf[js.Any])
+      inline def setGainedFocus(value: HTMLElement): Self = StObject.set(x, "gainedFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLostFocus(value: HTMLElement): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
+      inline def setLostFocus(value: HTMLElement): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLostFocusUndefined: Self = StObject.set(x, "lostFocus", js.undefined)
+      inline def setLostFocusUndefined: Self = StObject.set(x, "lostFocus", js.undefined)
     }
   }
   

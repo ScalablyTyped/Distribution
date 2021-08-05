@@ -14,31 +14,23 @@ trait Buttons extends StObject {
 }
 object Buttons {
   
-  @scala.inline
-  def apply(message: String): Buttons = {
+  inline def apply(message: String): Buttons = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buttons]
   }
   
-  @scala.inline
-  implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
+  extension [Self <: Buttons](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setDetailedMessage(value: String): Self = StObject.set(x, "detailedMessage", value.asInstanceOf[js.Any])
+    inline def setDetailedMessage(value: String): Self = StObject.set(x, "detailedMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedMessageUndefined: Self = StObject.set(x, "detailedMessage", js.undefined)
+    inline def setDetailedMessageUndefined: Self = StObject.set(x, "detailedMessage", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

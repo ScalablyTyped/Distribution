@@ -20,8 +20,7 @@ trait Betweenlines extends StObject {
 }
 object Betweenlines {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     between_lines: Boolean,
     code: String,
     shift_down: Double,
@@ -33,25 +32,18 @@ object Betweenlines {
     __obj.asInstanceOf[Betweenlines]
   }
   
-  @scala.inline
-  implicit class BetweenlinesMutableBuilder[Self <: Betweenlines] (val x: Self) extends AnyVal {
+  extension [Self <: Betweenlines](x: Self) {
     
-    @scala.inline
-    def setBetween_lines(value: Boolean): Self = StObject.set(x, "between_lines", value.asInstanceOf[js.Any])
+    inline def setBetween_lines(value: Boolean): Self = StObject.set(x, "between_lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_down(value: Double): Self = StObject.set(x, "shift_down", value.asInstanceOf[js.Any])
+    inline def setShift_down(value: Double): Self = StObject.set(x, "shift_down", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
+    inline def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_up(value: Double): Self = StObject.set(x, "shift_up", value.asInstanceOf[js.Any])
+    inline def setShift_up(value: Double): Self = StObject.set(x, "shift_up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

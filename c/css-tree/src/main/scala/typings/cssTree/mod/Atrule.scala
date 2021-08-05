@@ -20,32 +20,24 @@ trait Atrule
 }
 object Atrule {
   
-  @scala.inline
-  def apply(name: String): Atrule = {
+  inline def apply(name: String): Atrule = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], block = null, prelude = null)
     __obj.updateDynamic("type")("Atrule")
     __obj.asInstanceOf[Atrule]
   }
   
-  @scala.inline
-  implicit class AtruleMutableBuilder[Self <: Atrule] (val x: Self) extends AnyVal {
+  extension [Self <: Atrule](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNull: Self = StObject.set(x, "block", null)
+    inline def setBlockNull: Self = StObject.set(x, "block", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrelude(value: AtrulePrelude | Raw): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
+    inline def setPrelude(value: AtrulePrelude | Raw): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreludeNull: Self = StObject.set(x, "prelude", null)
+    inline def setPreludeNull: Self = StObject.set(x, "prelude", null)
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Atrule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Atrule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

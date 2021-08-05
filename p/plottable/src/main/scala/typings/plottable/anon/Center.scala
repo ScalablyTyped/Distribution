@@ -17,22 +17,17 @@ trait Center extends StObject {
 }
 object Center {
   
-  @scala.inline
-  def apply(): Center = {
+  inline def apply(): Center = {
     val __obj = js.Dynamic.literal(center = "center", left = "left", right = "right")
     __obj.asInstanceOf[Center]
   }
   
-  @scala.inline
-  implicit class CenterMutableBuilder[Self <: Center] (val x: Self) extends AnyVal {
+  extension [Self <: Center](x: Self) {
     
-    @scala.inline
-    def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,25 @@ object titleMod {
       */
     def this(options: IOptions[T]) = this()
     
-    var _caption: js.Any = js.native
+    /* private */ var _caption: js.Any = js.native
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _className: js.Any = js.native
+    /* private */ var _className: js.Any = js.native
     
-    var _closable: js.Any = js.native
+    /* private */ var _closable: js.Any = js.native
     
-    var _dataset: js.Any = js.native
+    /* private */ var _dataset: js.Any = js.native
     
-    var _icon: js.Any = js.native
+    /* private */ var _icon: js.Any = js.native
     
-    var _iconClass: js.Any = js.native
+    /* private */ var _iconClass: js.Any = js.native
     
-    var _iconLabel: js.Any = js.native
+    /* private */ var _iconLabel: js.Any = js.native
     
-    var _label: js.Any = js.native
+    /* private */ var _label: js.Any = js.native
     
-    var _mnemonic: js.Any = js.native
+    /* private */ var _mnemonic: js.Any = js.native
     
     /**
       * Get the caption for the title.
@@ -254,77 +254,54 @@ object titleMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T](owner: T): IOptions[T] = {
+      inline def apply[T](owner: T): IOptions[T] = {
         val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+        inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+        inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+        inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
         
-        @scala.inline
-        def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+        inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+        inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
         
-        @scala.inline
-        def setIcon(value: IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+        inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
         
-        @scala.inline
-        def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
+        inline def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
         
-        @scala.inline
-        def setIconRenderer(value: IRenderer): Self = StObject.set(x, "iconRenderer", value.asInstanceOf[js.Any])
+        inline def setIconRenderer(value: IRenderer): Self = StObject.set(x, "iconRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconRendererUndefined: Self = StObject.set(x, "iconRenderer", js.undefined)
+        inline def setIconRendererUndefined: Self = StObject.set(x, "iconRenderer", js.undefined)
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setMnemonic(value: Double): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+        inline def setMnemonic(value: Double): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
+        inline def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
         
-        @scala.inline
-        def setOwner(value: T): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+        inline def setOwner(value: T): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       }
     }
   }

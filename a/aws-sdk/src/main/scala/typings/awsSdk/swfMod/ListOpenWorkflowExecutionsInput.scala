@@ -48,55 +48,39 @@ trait ListOpenWorkflowExecutionsInput extends StObject {
 }
 object ListOpenWorkflowExecutionsInput {
   
-  @scala.inline
-  def apply(domain: DomainName, startTimeFilter: ExecutionTimeFilter): ListOpenWorkflowExecutionsInput = {
+  inline def apply(domain: DomainName, startTimeFilter: ExecutionTimeFilter): ListOpenWorkflowExecutionsInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], startTimeFilter = startTimeFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOpenWorkflowExecutionsInput]
   }
   
-  @scala.inline
-  implicit class ListOpenWorkflowExecutionsInputMutableBuilder[Self <: ListOpenWorkflowExecutionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListOpenWorkflowExecutionsInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionFilter(value: WorkflowExecutionFilter): Self = StObject.set(x, "executionFilter", value.asInstanceOf[js.Any])
+    inline def setExecutionFilter(value: WorkflowExecutionFilter): Self = StObject.set(x, "executionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionFilterUndefined: Self = StObject.set(x, "executionFilter", js.undefined)
+    inline def setExecutionFilterUndefined: Self = StObject.set(x, "executionFilter", js.undefined)
     
-    @scala.inline
-    def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
+    inline def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
+    inline def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+    inline def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
+    inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
     
-    @scala.inline
-    def setStartTimeFilter(value: ExecutionTimeFilter): Self = StObject.set(x, "startTimeFilter", value.asInstanceOf[js.Any])
+    inline def setStartTimeFilter(value: ExecutionTimeFilter): Self = StObject.set(x, "startTimeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFilter(value: TagFilter): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
+    inline def setTagFilter(value: TagFilter): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
+    inline def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
     
-    @scala.inline
-    def setTypeFilter(value: WorkflowTypeFilter): Self = StObject.set(x, "typeFilter", value.asInstanceOf[js.Any])
+    inline def setTypeFilter(value: WorkflowTypeFilter): Self = StObject.set(x, "typeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFilterUndefined: Self = StObject.set(x, "typeFilter", js.undefined)
+    inline def setTypeFilterUndefined: Self = StObject.set(x, "typeFilter", js.undefined)
   }
 }

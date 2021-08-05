@@ -32,25 +32,19 @@ trait SystemMemoryInfo extends StObject {
 }
 object SystemMemoryInfo {
   
-  @scala.inline
-  def apply(free: Double, swapFree: Double, swapTotal: Double, total: Double): SystemMemoryInfo = {
+  inline def apply(free: Double, swapFree: Double, swapTotal: Double, total: Double): SystemMemoryInfo = {
     val __obj = js.Dynamic.literal(free = free.asInstanceOf[js.Any], swapFree = swapFree.asInstanceOf[js.Any], swapTotal = swapTotal.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemMemoryInfo]
   }
   
-  @scala.inline
-  implicit class SystemMemoryInfoMutableBuilder[Self <: SystemMemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMemoryInfo](x: Self) {
     
-    @scala.inline
-    def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
+    inline def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapFree(value: Double): Self = StObject.set(x, "swapFree", value.asInstanceOf[js.Any])
+    inline def setSwapFree(value: Double): Self = StObject.set(x, "swapFree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapTotal(value: Double): Self = StObject.set(x, "swapTotal", value.asInstanceOf[js.Any])
+    inline def setSwapTotal(value: Double): Self = StObject.set(x, "swapTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

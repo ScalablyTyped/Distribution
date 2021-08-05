@@ -99,8 +99,7 @@ object mod extends Shortcut {
       }
       object Assertion {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           afterDate: Date => Assertion,
           afterTime: Date => Assertion,
           beforeDate: Date => Assertion,
@@ -115,35 +114,25 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Assertion]
         }
         
-        @scala.inline
-        implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+        extension [Self <: Assertion](x: Self) {
           
-          @scala.inline
-          def setAfterDate(value: Date => Assertion): Self = StObject.set(x, "afterDate", js.Any.fromFunction1(value))
+          inline def setAfterDate(value: Date => Assertion): Self = StObject.set(x, "afterDate", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setAfterTime(value: Date => Assertion): Self = StObject.set(x, "afterTime", js.Any.fromFunction1(value))
+          inline def setAfterTime(value: Date => Assertion): Self = StObject.set(x, "afterTime", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setBeforeDate(value: Date => Assertion): Self = StObject.set(x, "beforeDate", js.Any.fromFunction1(value))
+          inline def setBeforeDate(value: Date => Assertion): Self = StObject.set(x, "beforeDate", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setBeforeTime(value: Date => Assertion): Self = StObject.set(x, "beforeTime", js.Any.fromFunction1(value))
+          inline def setBeforeTime(value: Date => Assertion): Self = StObject.set(x, "beforeTime", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setCloseToTime(value: (Date, Double) => Assertion): Self = StObject.set(x, "closeToTime", js.Any.fromFunction2(value))
+          inline def setCloseToTime(value: (Date, Double) => Assertion): Self = StObject.set(x, "closeToTime", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setEqualDate(value: Date => Assertion): Self = StObject.set(x, "equalDate", js.Any.fromFunction1(value))
+          inline def setEqualDate(value: Date => Assertion): Self = StObject.set(x, "equalDate", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setEqualTime(value: Date => Assertion): Self = StObject.set(x, "equalTime", js.Any.fromFunction1(value))
+          inline def setEqualTime(value: Date => Assertion): Self = StObject.set(x, "equalTime", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setWithinDate(value: (Date, Date) => Assertion): Self = StObject.set(x, "withinDate", js.Any.fromFunction2(value))
+          inline def setWithinDate(value: (Date, Date) => Assertion): Self = StObject.set(x, "withinDate", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setWithinTime(value: (Date, Date) => Assertion): Self = StObject.set(x, "withinTime", js.Any.fromFunction2(value))
+          inline def setWithinTime(value: (Date, Date) => Assertion): Self = StObject.set(x, "withinTime", js.Any.fromFunction2(value))
         }
       }
     }
@@ -154,17 +143,14 @@ object mod extends Shortcut {
     }
     object Date {
       
-      @scala.inline
-      def apply(should: Assertion): Date = {
+      inline def apply(should: Assertion): Date = {
         val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
         __obj.asInstanceOf[Date]
       }
       
-      @scala.inline
-      implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+      extension [Self <: Date](x: Self) {
         
-        @scala.inline
-        def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
+        inline def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
       }
     }
   }

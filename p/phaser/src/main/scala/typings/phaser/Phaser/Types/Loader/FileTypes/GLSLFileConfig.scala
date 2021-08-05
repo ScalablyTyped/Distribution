@@ -34,40 +34,29 @@ trait GLSLFileConfig extends StObject {
 }
 object GLSLFileConfig {
   
-  @scala.inline
-  def apply(key: String): GLSLFileConfig = {
+  inline def apply(key: String): GLSLFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GLSLFileConfig]
   }
   
-  @scala.inline
-  implicit class GLSLFileConfigMutableBuilder[Self <: GLSLFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GLSLFileConfig](x: Self) {
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaderType(value: String): Self = StObject.set(x, "shaderType", value.asInstanceOf[js.Any])
+    inline def setShaderType(value: String): Self = StObject.set(x, "shaderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaderTypeUndefined: Self = StObject.set(x, "shaderType", js.undefined)
+    inline def setShaderTypeUndefined: Self = StObject.set(x, "shaderType", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

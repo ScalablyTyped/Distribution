@@ -14,19 +14,15 @@ trait `5` extends StObject {
 }
 object `5` {
   
-  @scala.inline
-  def apply(): `5` = {
+  inline def apply(): `5` = {
     val __obj = js.Dynamic.literal(mediaType = "A", name = "unassigned")
     __obj.asInstanceOf[`5`]
   }
   
-  @scala.inline
-  implicit class `5MutableBuilder`[Self <: `5`] (val x: Self) extends AnyVal {
+  extension [Self <: `5`](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: A): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: A): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: unassigned): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: unassigned): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

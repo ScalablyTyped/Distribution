@@ -98,104 +98,72 @@ object Bootstrap3Typeahead {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAddItem(value: js.Object): Self = StObject.set(x, "addItem", value.asInstanceOf[js.Any])
+      inline def setAddItem(value: js.Object): Self = StObject.set(x, "addItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddItemUndefined: Self = StObject.set(x, "addItem", js.undefined)
+      inline def setAddItemUndefined: Self = StObject.set(x, "addItem", js.undefined)
       
-      @scala.inline
-      def setAfterSelect(value: js.ThisFunction1[/* this */ Typeahead, /* item */ String | js.Object, Unit]): Self = StObject.set(x, "afterSelect", value.asInstanceOf[js.Any])
+      inline def setAfterSelect(value: js.ThisFunction1[/* this */ Typeahead, /* item */ String | js.Object, Unit]): Self = StObject.set(x, "afterSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterSelectUndefined: Self = StObject.set(x, "afterSelect", js.undefined)
+      inline def setAfterSelectUndefined: Self = StObject.set(x, "afterSelect", js.undefined)
       
-      @scala.inline
-      def setAppendTo(value: JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      @scala.inline
-      def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
+      inline def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
+      inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDisplayText(value: /* item */ String | Name => String): Self = StObject.set(x, "displayText", js.Any.fromFunction1(value))
+      inline def setDisplayText(value: /* item */ String | Name => String): Self = StObject.set(x, "displayText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+      inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
       
-      @scala.inline
-      def setFitToElement(value: Boolean): Self = StObject.set(x, "fitToElement", value.asInstanceOf[js.Any])
+      inline def setFitToElement(value: Boolean): Self = StObject.set(x, "fitToElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitToElementUndefined: Self = StObject.set(x, "fitToElement", js.undefined)
+      inline def setFitToElementUndefined: Self = StObject.set(x, "fitToElement", js.undefined)
       
-      @scala.inline
-      def setHighlighter(value: /* item */ String => String): Self = StObject.set(x, "highlighter", js.Any.fromFunction1(value))
+      inline def setHighlighter(value: /* item */ String => String): Self = StObject.set(x, "highlighter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHighlighterUndefined: Self = StObject.set(x, "highlighter", js.undefined)
+      inline def setHighlighterUndefined: Self = StObject.set(x, "highlighter", js.undefined)
       
-      @scala.inline
-      def setItems(value: Double | all): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Double | all): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setMatcher(value: /* item */ String => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
+      inline def setMatcher(value: /* item */ String => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+      inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      @scala.inline
-      def setScrollHeight(value: Double | js.Function0[Double]): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double | js.Function0[Double]): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeightFunction0(value: () => Double): Self = StObject.set(x, "scrollHeight", js.Any.fromFunction0(value))
+      inline def setScrollHeightFunction0(value: () => Double): Self = StObject.set(x, "scrollHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
+      inline def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
       
-      @scala.inline
-      def setShowHintOnFocus(value: Boolean | all): Self = StObject.set(x, "showHintOnFocus", value.asInstanceOf[js.Any])
+      inline def setShowHintOnFocus(value: Boolean | all): Self = StObject.set(x, "showHintOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHintOnFocusUndefined: Self = StObject.set(x, "showHintOnFocus", js.undefined)
+      inline def setShowHintOnFocusUndefined: Self = StObject.set(x, "showHintOnFocus", js.undefined)
       
-      @scala.inline
-      def setSorter(value: /* items */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "sorter", js.Any.fromFunction1(value))
+      inline def setSorter(value: /* items */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "sorter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
+      inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
       
-      @scala.inline
-      def setSource(
+      inline def setSource(
         value: (js.Array[js.Object | String]) | (js.Function2[
               /* query */ js.UndefOr[String], 
               /* process */ js.UndefOr[js.Function1[/* callback */ js.Any, String | (js.Array[js.Object | String])]], 
@@ -203,22 +171,17 @@ object Bootstrap3Typeahead {
             ])
       ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFunction2(
+      inline def setSourceFunction2(
         value: (/* query */ js.UndefOr[String], /* process */ js.UndefOr[js.Function1[/* callback */ js.Any, String | (js.Array[js.Object | String])]]) => Unit
       ): Self = StObject.set(x, "source", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setSourceVarargs(value: (js.Object | String)*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: (js.Object | String)*): Self = StObject.set(x, "source", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdater(value: /* item */ String => String): Self = StObject.set(x, "updater", js.Any.fromFunction1(value))
+      inline def setUpdater(value: /* item */ String => String): Self = StObject.set(x, "updater", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+      inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
     }
   }
   
@@ -231,20 +194,16 @@ object Bootstrap3Typeahead {
   }
   object Typeahead {
     
-    @scala.inline
-    def apply($element: JQuery, options: Options): Typeahead = {
+    inline def apply($element: JQuery, options: Options): Typeahead = {
       val __obj = js.Dynamic.literal($element = $element.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeahead]
     }
     
-    @scala.inline
-    implicit class TypeaheadMutableBuilder[Self <: Typeahead] (val x: Self) extends AnyVal {
+    extension [Self <: Typeahead](x: Self) {
       
-      @scala.inline
-      def set$element(value: JQuery): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
+      inline def set$element(value: JQuery): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,16 +13,13 @@ trait CodeCommitCodeDestination extends StObject {
 }
 object CodeCommitCodeDestination {
   
-  @scala.inline
-  def apply(name: RepositoryName): CodeCommitCodeDestination = {
+  inline def apply(name: RepositoryName): CodeCommitCodeDestination = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeCommitCodeDestination]
   }
   
-  @scala.inline
-  implicit class CodeCommitCodeDestinationMutableBuilder[Self <: CodeCommitCodeDestination] (val x: Self) extends AnyVal {
+  extension [Self <: CodeCommitCodeDestination](x: Self) {
     
-    @scala.inline
-    def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

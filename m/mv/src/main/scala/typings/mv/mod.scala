@@ -26,26 +26,20 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
+      inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
+      inline def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
       
-      @scala.inline
-      def setMkdirp(value: Boolean): Self = StObject.set(x, "mkdirp", value.asInstanceOf[js.Any])
+      inline def setMkdirp(value: Boolean): Self = StObject.set(x, "mkdirp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMkdirpUndefined: Self = StObject.set(x, "mkdirp", js.undefined)
+      inline def setMkdirpUndefined: Self = StObject.set(x, "mkdirp", js.undefined)
     }
   }
   

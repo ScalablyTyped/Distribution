@@ -35,29 +35,21 @@ object mod {
     @js.native
     val ^ : LabelStatic = js.native
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAdd(value: Map_ => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAdd(value: Map_ => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemove(value: Map_ => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      inline def setOnRemove(value: Map_ => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetContent(value: String => Label): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+      inline def setSetContent(value: String => Label): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLatLng(value: LatLng_ => Label): Self = StObject.set(x, "setLatLng", js.Any.fromFunction1(value))
+      inline def setSetLatLng(value: LatLng_ => Label): Self = StObject.set(x, "setLatLng", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
+      inline def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateZIndex(value: Double => Unit): Self = StObject.set(x, "updateZIndex", js.Any.fromFunction1(value))
+      inline def setUpdateZIndex(value: Double => Unit): Self = StObject.set(x, "updateZIndex", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,20 +78,16 @@ object mod {
   }
   object CircleMarkerOptions {
     
-    @scala.inline
-    def apply(): CircleMarkerOptions = {
+    inline def apply(): CircleMarkerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircleMarkerOptions]
     }
     
-    @scala.inline
-    implicit class CircleMarkerOptionsMutableBuilder[Self <: CircleMarkerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CircleMarkerOptions](x: Self) {
       
-      @scala.inline
-      def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
+      inline def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
+      inline def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
     }
   }
   
@@ -122,20 +110,16 @@ object mod {
   }
   object IconOptions {
     
-    @scala.inline
-    def apply(): IconOptions = {
+    inline def apply(): IconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconOptions]
     }
     
-    @scala.inline
-    implicit class IconOptionsMutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IconOptions](x: Self) {
       
-      @scala.inline
-      def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
+      inline def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
+      inline def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
     }
   }
   
@@ -160,62 +144,44 @@ object mod {
   }
   object LabelOptions {
     
-    @scala.inline
-    def apply(): LabelOptions = {
+    inline def apply(): LabelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelOptions]
     }
     
-    @scala.inline
-    implicit class LabelOptionsMutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LabelOptions](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setNoHide(value: Boolean): Self = StObject.set(x, "noHide", value.asInstanceOf[js.Any])
+      inline def setNoHide(value: Boolean): Self = StObject.set(x, "noHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoHideUndefined: Self = StObject.set(x, "noHide", js.undefined)
+      inline def setNoHideUndefined: Self = StObject.set(x, "noHide", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Point_): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Point_): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+      inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+      inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
       
-      @scala.inline
-      def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
+      inline def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
+      inline def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
     }
   }
   
@@ -264,20 +230,16 @@ object mod {
   }
   object PathOptions {
     
-    @scala.inline
-    def apply(): PathOptions = {
+    inline def apply(): PathOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathOptions]
     }
     
-    @scala.inline
-    implicit class PathOptionsMutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathOptions](x: Self) {
       
-      @scala.inline
-      def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
+      inline def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
+      inline def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
     }
   }
 }

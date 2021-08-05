@@ -11,16 +11,13 @@ trait Har extends StObject {
 }
 object Har {
   
-  @scala.inline
-  def apply(log: Log): Har = {
+  inline def apply(log: Log): Har = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
     __obj.asInstanceOf[Har]
   }
   
-  @scala.inline
-  implicit class HarMutableBuilder[Self <: Har] (val x: Self) extends AnyVal {
+  extension [Self <: Har](x: Self) {
     
-    @scala.inline
-    def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait ComponentBuilder[T /* <: Component */] extends StObject {
 }
 object ComponentBuilder {
   
-  @scala.inline
-  def apply[T /* <: Component */](
+  inline def apply[T /* <: Component */](
     component: () => T,
     withProperties: js.Any => ComponentBuilder[T],
     withValidation: js.Function1[/* component */ T, Boolean] => ComponentBuilder[T]
@@ -24,16 +23,12 @@ object ComponentBuilder {
     __obj.asInstanceOf[ComponentBuilder[T]]
   }
   
-  @scala.inline
-  implicit class ComponentBuilderMutableBuilder[Self <: ComponentBuilder[?], T /* <: Component */] (val x: Self & ComponentBuilder[T]) extends AnyVal {
+  extension [Self <: ComponentBuilder[?], T /* <: Component */](x: Self & ComponentBuilder[T]) {
     
-    @scala.inline
-    def setComponent(value: () => T): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
+    inline def setComponent(value: () => T): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithProperties(value: js.Any => ComponentBuilder[T]): Self = StObject.set(x, "withProperties", js.Any.fromFunction1(value))
+    inline def setWithProperties(value: js.Any => ComponentBuilder[T]): Self = StObject.set(x, "withProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithValidation(value: js.Function1[/* component */ T, Boolean] => ComponentBuilder[T]): Self = StObject.set(x, "withValidation", js.Any.fromFunction1(value))
+    inline def setWithValidation(value: js.Function1[/* component */ T, Boolean] => ComponentBuilder[T]): Self = StObject.set(x, "withValidation", js.Any.fromFunction1(value))
   }
 }

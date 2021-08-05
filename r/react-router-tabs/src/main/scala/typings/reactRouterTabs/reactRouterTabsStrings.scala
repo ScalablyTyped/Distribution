@@ -11,41 +11,35 @@ object reactRouterTabsStrings {
   sealed trait date
     extends StObject
        with AriaCurrent
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait location
     extends StObject
        with AriaCurrent
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
   sealed trait page
     extends StObject
        with AriaCurrent
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait step
     extends StObject
        with AriaCurrent
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
   sealed trait time
     extends StObject
        with AriaCurrent
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait `true`
     extends StObject
        with AriaCurrent
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
 }

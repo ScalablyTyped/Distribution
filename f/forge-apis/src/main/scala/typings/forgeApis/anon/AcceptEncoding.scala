@@ -13,25 +13,19 @@ trait AcceptEncoding extends StObject {
 }
 object AcceptEncoding {
   
-  @scala.inline
-  def apply(): AcceptEncoding = {
+  inline def apply(): AcceptEncoding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceptEncoding]
   }
   
-  @scala.inline
-  implicit class AcceptEncodingMutableBuilder[Self <: AcceptEncoding] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptEncoding](x: Self) {
     
-    @scala.inline
-    def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
+    inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
+    inline def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
     
-    @scala.inline
-    def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
+    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
   }
 }

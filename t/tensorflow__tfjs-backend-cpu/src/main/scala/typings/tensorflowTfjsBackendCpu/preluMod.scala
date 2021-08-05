@@ -13,8 +13,7 @@ object preluMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prelu(args: InputsPreluInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def prelu(args: InputsPreluInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Prelu", "preluConfig")
   @js.native

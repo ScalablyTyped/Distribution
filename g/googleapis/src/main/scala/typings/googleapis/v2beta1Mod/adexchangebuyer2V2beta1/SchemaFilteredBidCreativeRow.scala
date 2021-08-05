@@ -27,31 +27,23 @@ trait SchemaFilteredBidCreativeRow extends StObject {
 }
 object SchemaFilteredBidCreativeRow {
   
-  @scala.inline
-  def apply(): SchemaFilteredBidCreativeRow = {
+  inline def apply(): SchemaFilteredBidCreativeRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilteredBidCreativeRow]
   }
   
-  @scala.inline
-  implicit class SchemaFilteredBidCreativeRowMutableBuilder[Self <: SchemaFilteredBidCreativeRow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilteredBidCreativeRow](x: Self) {
     
-    @scala.inline
-    def setBidCount(value: SchemaMetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
+    inline def setBidCount(value: SchemaMetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
+    inline def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
     
-    @scala.inline
-    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+    inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
-    @scala.inline
-    def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
+    inline def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
+    inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
   }
 }

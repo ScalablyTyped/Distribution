@@ -24,8 +24,7 @@ trait RevocationAndRenewalItem extends StObject {
 }
 object RevocationAndRenewalItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerHash: String,
     name: String,
     publicKeyHash: String,
@@ -36,22 +35,16 @@ object RevocationAndRenewalItem {
     __obj.asInstanceOf[RevocationAndRenewalItem]
   }
   
-  @scala.inline
-  implicit class RevocationAndRenewalItemMutableBuilder[Self <: RevocationAndRenewalItem] (val x: Self) extends AnyVal {
+  extension [Self <: RevocationAndRenewalItem](x: Self) {
     
-    @scala.inline
-    def setHeaderHash(value: String): Self = StObject.set(x, "headerHash", value.asInstanceOf[js.Any])
+    inline def setHeaderHash(value: String): Self = StObject.set(x, "headerHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyHash(value: String): Self = StObject.set(x, "publicKeyHash", value.asInstanceOf[js.Any])
+    inline def setPublicKeyHash(value: String): Self = StObject.set(x, "publicKeyHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasons(value: RevocationAndRenewalReasons): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: RevocationAndRenewalReasons): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalId(value: String): Self = StObject.set(x, "renewalId", value.asInstanceOf[js.Any])
+    inline def setRenewalId(value: String): Self = StObject.set(x, "renewalId", value.asInstanceOf[js.Any])
   }
 }

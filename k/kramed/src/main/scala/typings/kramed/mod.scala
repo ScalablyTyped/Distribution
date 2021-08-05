@@ -167,82 +167,58 @@ object mod {
   }
   object KramedOptions {
     
-    @scala.inline
-    def apply(): KramedOptions = {
+    inline def apply(): KramedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KramedOptions]
     }
     
-    @scala.inline
-    implicit class KramedOptionsMutableBuilder[Self <: KramedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KramedOptions](x: Self) {
       
-      @scala.inline
-      def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+      inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+      inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
       
-      @scala.inline
-      def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+      inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
       
-      @scala.inline
-      def setHighlight(
+      inline def setHighlight(
         value: (/* code */ String, /* lang */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => String
       ): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
+      inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
+      inline def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
       
-      @scala.inline
-      def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
+      inline def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
+      inline def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: KramedRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: KramedRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setSmartLists(value: Boolean): Self = StObject.set(x, "smartLists", value.asInstanceOf[js.Any])
+      inline def setSmartLists(value: Boolean): Self = StObject.set(x, "smartLists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartListsUndefined: Self = StObject.set(x, "smartLists", js.undefined)
+      inline def setSmartListsUndefined: Self = StObject.set(x, "smartLists", js.undefined)
       
-      @scala.inline
-      def setSmartypants(value: Boolean): Self = StObject.set(x, "smartypants", value.asInstanceOf[js.Any])
+      inline def setSmartypants(value: Boolean): Self = StObject.set(x, "smartypants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartypantsUndefined: Self = StObject.set(x, "smartypants", js.undefined)
+      inline def setSmartypantsUndefined: Self = StObject.set(x, "smartypants", js.undefined)
       
-      @scala.inline
-      def setTables(value: Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+      inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     }
   }
   
@@ -252,17 +228,14 @@ object mod {
   }
   object KramedParser {
     
-    @scala.inline
-    def apply(parse: js.Array[js.Any] => String): KramedParser = {
+    inline def apply(parse: js.Array[js.Any] => String): KramedParser = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[KramedParser]
     }
     
-    @scala.inline
-    implicit class KramedParserMutableBuilder[Self <: KramedParser] (val x: Self) extends AnyVal {
+    extension [Self <: KramedParser](x: Self) {
       
-      @scala.inline
-      def setParse(value: js.Array[js.Any] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: js.Array[js.Any] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
   
@@ -308,8 +281,7 @@ object mod {
   }
   object KramedRenderer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blockquote: String => String,
       br: () => String,
       code: (String, String) => String,
@@ -334,65 +306,45 @@ object mod {
       __obj.asInstanceOf[KramedRenderer]
     }
     
-    @scala.inline
-    implicit class KramedRendererMutableBuilder[Self <: KramedRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: KramedRenderer](x: Self) {
       
-      @scala.inline
-      def setBlockquote(value: String => String): Self = StObject.set(x, "blockquote", js.Any.fromFunction1(value))
+      inline def setBlockquote(value: String => String): Self = StObject.set(x, "blockquote", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBr(value: () => String): Self = StObject.set(x, "br", js.Any.fromFunction0(value))
+      inline def setBr(value: () => String): Self = StObject.set(x, "br", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCode(value: (String, String) => String): Self = StObject.set(x, "code", js.Any.fromFunction2(value))
+      inline def setCode(value: (String, String) => String): Self = StObject.set(x, "code", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCodespan(value: String => String): Self = StObject.set(x, "codespan", js.Any.fromFunction1(value))
+      inline def setCodespan(value: String => String): Self = StObject.set(x, "codespan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDel(value: String => String): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      inline def setDel(value: String => String): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEm(value: String => String): Self = StObject.set(x, "em", js.Any.fromFunction1(value))
+      inline def setEm(value: String => String): Self = StObject.set(x, "em", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeading(value: (String, Double, String) => String): Self = StObject.set(x, "heading", js.Any.fromFunction3(value))
+      inline def setHeading(value: (String, Double, String) => String): Self = StObject.set(x, "heading", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHr(value: () => String): Self = StObject.set(x, "hr", js.Any.fromFunction0(value))
+      inline def setHr(value: () => String): Self = StObject.set(x, "hr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHtml(value: String => String): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
+      inline def setHtml(value: String => String): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImage(value: (String, String, String) => String): Self = StObject.set(x, "image", js.Any.fromFunction3(value))
+      inline def setImage(value: (String, String, String) => String): Self = StObject.set(x, "image", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLink(value: (String, String, String) => String): Self = StObject.set(x, "link", js.Any.fromFunction3(value))
+      inline def setLink(value: (String, String, String) => String): Self = StObject.set(x, "link", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setList(value: (String, Boolean) => String): Self = StObject.set(x, "list", js.Any.fromFunction2(value))
+      inline def setList(value: (String, Boolean) => String): Self = StObject.set(x, "list", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setListitem(value: String => String): Self = StObject.set(x, "listitem", js.Any.fromFunction1(value))
+      inline def setListitem(value: String => String): Self = StObject.set(x, "listitem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParagraph(value: String => String): Self = StObject.set(x, "paragraph", js.Any.fromFunction1(value))
+      inline def setParagraph(value: String => String): Self = StObject.set(x, "paragraph", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStrong(value: String => String): Self = StObject.set(x, "strong", js.Any.fromFunction1(value))
+      inline def setStrong(value: String => String): Self = StObject.set(x, "strong", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTable(value: (String, String) => String): Self = StObject.set(x, "table", js.Any.fromFunction2(value))
+      inline def setTable(value: (String, String) => String): Self = StObject.set(x, "table", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTablecell(value: (String, Align) => String): Self = StObject.set(x, "tablecell", js.Any.fromFunction2(value))
+      inline def setTablecell(value: (String, Align) => String): Self = StObject.set(x, "tablecell", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTablerow(value: String => String): Self = StObject.set(x, "tablerow", js.Any.fromFunction1(value))
+      inline def setTablerow(value: String => String): Self = StObject.set(x, "tablerow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setText(value: String => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: String => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     }
   }
   

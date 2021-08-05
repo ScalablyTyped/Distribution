@@ -11,16 +11,13 @@ trait PickImplshowNoResults extends StObject {
 }
 object PickImplshowNoResults {
   
-  @scala.inline
-  def apply(showNoResults: Boolean): PickImplshowNoResults = {
+  inline def apply(showNoResults: Boolean): PickImplshowNoResults = {
     val __obj = js.Dynamic.literal(showNoResults = showNoResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplshowNoResults]
   }
   
-  @scala.inline
-  implicit class PickImplshowNoResultsMutableBuilder[Self <: PickImplshowNoResults] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplshowNoResults](x: Self) {
     
-    @scala.inline
-    def setShowNoResults(value: Boolean): Self = StObject.set(x, "showNoResults", value.asInstanceOf[js.Any])
+    inline def setShowNoResults(value: Boolean): Self = StObject.set(x, "showNoResults", value.asInstanceOf[js.Any])
   }
 }

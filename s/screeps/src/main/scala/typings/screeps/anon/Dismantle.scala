@@ -10,16 +10,13 @@ trait Dismantle extends StObject {
 }
 object Dismantle {
   
-  @scala.inline
-  def apply(): Dismantle = {
+  inline def apply(): Dismantle = {
     val __obj = js.Dynamic.literal(dismantle = 2)
     __obj.asInstanceOf[Dismantle]
   }
   
-  @scala.inline
-  implicit class DismantleMutableBuilder[Self <: Dismantle] (val x: Self) extends AnyVal {
+  extension [Self <: Dismantle](x: Self) {
     
-    @scala.inline
-    def setDismantle(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "dismantle", value.asInstanceOf[js.Any])
+    inline def setDismantle(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "dismantle", value.asInstanceOf[js.Any])
   }
 }

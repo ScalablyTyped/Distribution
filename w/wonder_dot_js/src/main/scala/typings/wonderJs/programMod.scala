@@ -68,7 +68,6 @@ object programMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Program]
+    inline def create(): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Program]
   }
 }

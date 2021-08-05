@@ -22,19 +22,15 @@ trait GetAttributeQueryOptions
 }
 object GetAttributeQueryOptions {
   
-  @scala.inline
-  def apply(): GetAttributeQueryOptions = {
+  inline def apply(): GetAttributeQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAttributeQueryOptions]
   }
   
-  @scala.inline
-  implicit class GetAttributeQueryOptionsMutableBuilder[Self <: GetAttributeQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetAttributeQueryOptions](x: Self) {
     
-    @scala.inline
-    def setMethod(value: getAttributeQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: getAttributeQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

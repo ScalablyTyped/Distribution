@@ -34,38 +34,28 @@ object viewWindowsPropsMod {
   }
   object IViewWindowsProps {
     
-    @scala.inline
-    def apply(): IViewWindowsProps = {
+    inline def apply(): IViewWindowsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IViewWindowsProps]
     }
     
-    @scala.inline
-    implicit class IViewWindowsPropsMutableBuilder[Self <: IViewWindowsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IViewWindowsProps](x: Self) {
       
-      @scala.inline
-      def setAcceptsKeyboardFocus(value: Boolean): Self = StObject.set(x, "acceptsKeyboardFocus", value.asInstanceOf[js.Any])
+      inline def setAcceptsKeyboardFocus(value: Boolean): Self = StObject.set(x, "acceptsKeyboardFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptsKeyboardFocusUndefined: Self = StObject.set(x, "acceptsKeyboardFocus", js.undefined)
+      inline def setAcceptsKeyboardFocusUndefined: Self = StObject.set(x, "acceptsKeyboardFocus", js.undefined)
       
-      @scala.inline
-      def setAccessibilityPosInSet(value: Double): Self = StObject.set(x, "accessibilityPosInSet", value.asInstanceOf[js.Any])
+      inline def setAccessibilityPosInSet(value: Double): Self = StObject.set(x, "accessibilityPosInSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityPosInSetUndefined: Self = StObject.set(x, "accessibilityPosInSet", js.undefined)
+      inline def setAccessibilityPosInSetUndefined: Self = StObject.set(x, "accessibilityPosInSet", js.undefined)
       
-      @scala.inline
-      def setAccessibilitySetSize(value: Double): Self = StObject.set(x, "accessibilitySetSize", value.asInstanceOf[js.Any])
+      inline def setAccessibilitySetSize(value: Double): Self = StObject.set(x, "accessibilitySetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilitySetSizeUndefined: Self = StObject.set(x, "accessibilitySetSize", js.undefined)
+      inline def setAccessibilitySetSizeUndefined: Self = StObject.set(x, "accessibilitySetSize", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

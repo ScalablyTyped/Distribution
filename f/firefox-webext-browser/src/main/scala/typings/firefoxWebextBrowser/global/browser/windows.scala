@@ -33,38 +33,28 @@ object windows {
   val WINDOW_ID_NONE: Double = js.native
   
   /** Creates (opens) a new browser with any optional sizing, position or default URL provided. */
-  @scala.inline
-  def create(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Window]]
-  @scala.inline
-  def create(createData: CreateCreateData): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
+  inline def create(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Window]]
+  inline def create(createData: CreateCreateData): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   
   /* windows functions */
   /** Gets details about a window. */
-  @scala.inline
-  def get(windowId: Double): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
-  @scala.inline
-  def get(windowId: Double, getInfo: GetInfo): js.Promise[Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any], getInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Window]]
+  inline def get(windowId: Double): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
+  inline def get(windowId: Double, getInfo: GetInfo): js.Promise[Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any], getInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Window]]
   
   /**
     * Gets all windows.
     * @param [getInfo] Specifies properties used to filter the `windows.Window` returned and to determine whether they should contain a list of the `tabs.Tab` objects.
     */
-  @scala.inline
-  def getAll(): js.Promise[js.Array[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[js.Array[Window]]]
-  @scala.inline
-  def getAll(getInfo: GetAllGetInfo): js.Promise[js.Array[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(getInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Window]]]
+  inline def getAll(): js.Promise[js.Array[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[js.Array[Window]]]
+  inline def getAll(getInfo: GetAllGetInfo): js.Promise[js.Array[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(getInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Window]]]
   
   /** Gets the current window. */
-  @scala.inline
-  def getCurrent(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[Window]]
-  @scala.inline
-  def getCurrent(getInfo: GetInfo): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(getInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
+  inline def getCurrent(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[Window]]
+  inline def getCurrent(getInfo: GetInfo): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(getInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   
   /** Gets the window that was most recently focused — typically the window 'on top'. */
-  @scala.inline
-  def getLastFocused(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocused")().asInstanceOf[js.Promise[Window]]
-  @scala.inline
-  def getLastFocused(getInfo: GetInfo): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocused")(getInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
+  inline def getLastFocused(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocused")().asInstanceOf[js.Promise[Window]]
+  inline def getLastFocused(getInfo: GetInfo): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocused")(getInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   
   /* windows events */
   /**
@@ -92,12 +82,10 @@ object windows {
   val onRemoved: WebExtEvent[js.Function1[/* windowId */ Double, Unit]] = js.native
   
   /** Removes (closes) a window, and all the tabs inside it. */
-  @scala.inline
-  def remove(windowId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def remove(windowId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Updates the properties of a window. Specify only the properties that you want to change; unspecified properties will be left unchanged.
     */
-  @scala.inline
-  def update(windowId: Double, updateInfo: UpdateUpdateInfo): js.Promise[Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Window]]
+  inline def update(windowId: Double, updateInfo: UpdateUpdateInfo): js.Promise[Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Window]]
 }

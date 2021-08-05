@@ -28,37 +28,27 @@ trait PublicKey extends StObject {
 }
 object PublicKey {
   
-  @scala.inline
-  def apply(): PublicKey = {
+  inline def apply(): PublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKey](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
+    inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemCrc32c(value: String): Self = StObject.set(x, "pemCrc32c", value.asInstanceOf[js.Any])
+    inline def setPemCrc32c(value: String): Self = StObject.set(x, "pemCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemCrc32cUndefined: Self = StObject.set(x, "pemCrc32c", js.undefined)
+    inline def setPemCrc32cUndefined: Self = StObject.set(x, "pemCrc32c", js.undefined)
     
-    @scala.inline
-    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
+    inline def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
   }
 }

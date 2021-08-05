@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExchangeTradeFinalStatus extends StObject
 object ExchangeTradeFinalStatus {
   
-  @scala.inline
-  def ERROR: typings.invityApi.invityApiStrings.ERROR = "ERROR".asInstanceOf[typings.invityApi.invityApiStrings.ERROR]
+  inline def ERROR: typings.invityApi.invityApiStrings.ERROR = "ERROR".asInstanceOf[typings.invityApi.invityApiStrings.ERROR]
   
-  @scala.inline
-  def KYC: typings.invityApi.invityApiStrings.KYC = "KYC".asInstanceOf[typings.invityApi.invityApiStrings.KYC]
+  inline def KYC: typings.invityApi.invityApiStrings.KYC = "KYC".asInstanceOf[typings.invityApi.invityApiStrings.KYC]
   
-  @scala.inline
-  def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
+  inline def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
 }

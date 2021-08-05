@@ -20,43 +20,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: Unit, path: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: Unit, path: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: Unit, path: Unit, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: ConfigContext): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: ConfigContext, path: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: ConfigContext, path: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(ctx: ConfigContext, path: Unit, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: Unit, path: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: Unit, path: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: Unit, path: Unit, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: ConfigContext): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: ConfigContext, path: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: ConfigContext, path: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(ctx: ConfigContext, path: Unit, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   @JSImport("postcss-load-config", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: Unit, path: String): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: Unit, path: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: Unit, path: Unit, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: ConfigContext): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: ConfigContext, path: String): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: ConfigContext, path: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def sync(ctx: ConfigContext, path: Unit, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def sync(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Result]
+  inline def sync(ctx: Unit, path: String): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def sync(ctx: Unit, path: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def sync(ctx: Unit, path: Unit, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def sync(ctx: ConfigContext): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def sync(ctx: ConfigContext, path: String): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def sync(ctx: ConfigContext, path: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def sync(ctx: ConfigContext, path: Unit, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
   // The full shape of the ConfigContext.
   /* Inlined postcss-load-config.postcss-load-config.Context & postcss-load-config.postcss-load-config.ProcessOptionsPreload & postcss-load-config.postcss-load-config.RemainingProcessOptions */
@@ -80,68 +64,48 @@ object mod {
   }
   object ConfigContext {
     
-    @scala.inline
-    def apply(): ConfigContext = {
+    inline def apply(): ConfigContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigContext]
     }
     
-    @scala.inline
-    implicit class ConfigContextMutableBuilder[Self <: ConfigContext] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigContext](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setParser(value: String | Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: String | Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserFunction2(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+      inline def setParserFunction2(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setStringifier(value: String | Stringifier): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
+      inline def setStringifier(value: String | Stringifier): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringifierFunction2(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
+      inline def setStringifierFunction2(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
+      inline def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
       
-      @scala.inline
-      def setSyntax(value: String | Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+      inline def setSyntax(value: String | Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -154,26 +118,20 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(): Context = {
+    inline def apply(): Context = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   
@@ -190,38 +148,28 @@ object mod {
   }
   object ProcessOptionsPreload {
     
-    @scala.inline
-    def apply(): ProcessOptionsPreload = {
+    inline def apply(): ProcessOptionsPreload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProcessOptionsPreload]
     }
     
-    @scala.inline
-    implicit class ProcessOptionsPreloadMutableBuilder[Self <: ProcessOptionsPreload] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessOptionsPreload](x: Self) {
       
-      @scala.inline
-      def setParser(value: String | Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: String | Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserFunction2(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+      inline def setParserFunction2(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setStringifier(value: String | Stringifier): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
+      inline def setStringifier(value: String | Stringifier): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringifierFunction2(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
+      inline def setStringifierFunction2(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
+      inline def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
       
-      @scala.inline
-      def setSyntax(value: String | Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+      inline def setSyntax(value: String | Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     }
   }
   
@@ -237,32 +185,24 @@ object mod {
   }
   object RemainingProcessOptions {
     
-    @scala.inline
-    def apply(): RemainingProcessOptions = {
+    inline def apply(): RemainingProcessOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemainingProcessOptions]
     }
     
-    @scala.inline
-    implicit class RemainingProcessOptionsMutableBuilder[Self <: RemainingProcessOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemainingProcessOptions](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -276,26 +216,20 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(file: String, options: ProcessOptions, plugins: js.Array[ResultPlugin]): Result = {
+    inline def apply(file: String, options: ProcessOptions, plugins: js.Array[ResultPlugin]): Result = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ProcessOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ProcessOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugins(value: js.Array[ResultPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[ResultPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: ResultPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: ResultPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
   

@@ -18,19 +18,15 @@ trait PutResolverRulePolicyRequest extends StObject {
 }
 object PutResolverRulePolicyRequest {
   
-  @scala.inline
-  def apply(Arn: Arn, ResolverRulePolicy: ResolverRulePolicy): PutResolverRulePolicyRequest = {
+  inline def apply(Arn: Arn, ResolverRulePolicy: ResolverRulePolicy): PutResolverRulePolicyRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ResolverRulePolicy = ResolverRulePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResolverRulePolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutResolverRulePolicyRequestMutableBuilder[Self <: PutResolverRulePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResolverRulePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRulePolicy(value: ResolverRulePolicy): Self = StObject.set(x, "ResolverRulePolicy", value.asInstanceOf[js.Any])
+    inline def setResolverRulePolicy(value: ResolverRulePolicy): Self = StObject.set(x, "ResolverRulePolicy", value.asInstanceOf[js.Any])
   }
 }

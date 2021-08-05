@@ -80,17 +80,14 @@ object anon {
   }
   object TypeofScriptSnapshot {
     
-    @scala.inline
-    def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
+    inline def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
       val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    @scala.inline
-    implicit class TypeofScriptSnapshotMutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofScriptSnapshot](x: Self) {
       
-      @scala.inline
-      def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+      inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
   }
 }

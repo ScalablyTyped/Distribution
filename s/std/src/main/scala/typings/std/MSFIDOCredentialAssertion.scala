@@ -18,8 +18,7 @@ trait MSFIDOCredentialAssertion
 }
 object MSFIDOCredentialAssertion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     algorithm: java.lang.String | Algorithm,
     attestation: js.Any,
     id: java.lang.String,
@@ -32,22 +31,16 @@ object MSFIDOCredentialAssertion {
     __obj.asInstanceOf[MSFIDOCredentialAssertion]
   }
   
-  @scala.inline
-  implicit class MSFIDOCredentialAssertionMutableBuilder[Self <: MSFIDOCredentialAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: MSFIDOCredentialAssertion](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: java.lang.String | Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: java.lang.String | Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttestation(value: js.Any): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
+    inline def setAttestation(value: js.Any): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: java.lang.String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: java.lang.String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportHints(value: js.Array[MSTransportType]): Self = StObject.set(x, "transportHints", value.asInstanceOf[js.Any])
+    inline def setTransportHints(value: js.Array[MSTransportType]): Self = StObject.set(x, "transportHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportHintsVarargs(value: MSTransportType*): Self = StObject.set(x, "transportHints", js.Array(value :_*))
+    inline def setTransportHintsVarargs(value: MSTransportType*): Self = StObject.set(x, "transportHints", js.Array(value :_*))
   }
 }

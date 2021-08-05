@@ -13,19 +13,15 @@ trait StartSessionResult extends StObject {
 }
 object StartSessionResult {
   
-  @scala.inline
-  def apply(): StartSessionResult = {
+  inline def apply(): StartSessionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSessionResult]
   }
   
-  @scala.inline
-  implicit class StartSessionResultMutableBuilder[Self <: StartSessionResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartSessionResult](x: Self) {
     
-    @scala.inline
-    def setSessionToken(value: SessionToken): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: SessionToken): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
+    inline def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
   }
 }

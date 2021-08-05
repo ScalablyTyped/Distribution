@@ -16,20 +16,16 @@ object rowBufferInterfaceMod {
   }
   object RowBufferInterface {
     
-    @scala.inline
-    def apply(columnData: StringDictionary[Count], rowCount: Double): RowBufferInterface = {
+    inline def apply(columnData: StringDictionary[Count], rowCount: Double): RowBufferInterface = {
       val __obj = js.Dynamic.literal(columnData = columnData.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowBufferInterface]
     }
     
-    @scala.inline
-    implicit class RowBufferInterfaceMutableBuilder[Self <: RowBufferInterface] (val x: Self) extends AnyVal {
+    extension [Self <: RowBufferInterface](x: Self) {
       
-      @scala.inline
-      def setColumnData(value: StringDictionary[Count]): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
+      inline def setColumnData(value: StringDictionary[Count]): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     }
   }
 }

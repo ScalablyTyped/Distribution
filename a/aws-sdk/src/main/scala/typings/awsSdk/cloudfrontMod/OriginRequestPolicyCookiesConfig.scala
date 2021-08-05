@@ -15,22 +15,17 @@ trait OriginRequestPolicyCookiesConfig extends StObject {
 }
 object OriginRequestPolicyCookiesConfig {
   
-  @scala.inline
-  def apply(CookieBehavior: OriginRequestPolicyCookieBehavior): OriginRequestPolicyCookiesConfig = {
+  inline def apply(CookieBehavior: OriginRequestPolicyCookieBehavior): OriginRequestPolicyCookiesConfig = {
     val __obj = js.Dynamic.literal(CookieBehavior = CookieBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicyCookiesConfig]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicyCookiesConfigMutableBuilder[Self <: OriginRequestPolicyCookiesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicyCookiesConfig](x: Self) {
     
-    @scala.inline
-    def setCookieBehavior(value: OriginRequestPolicyCookieBehavior): Self = StObject.set(x, "CookieBehavior", value.asInstanceOf[js.Any])
+    inline def setCookieBehavior(value: OriginRequestPolicyCookieBehavior): Self = StObject.set(x, "CookieBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: CookieNames): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: CookieNames): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesUndefined: Self = StObject.set(x, "Cookies", js.undefined)
+    inline def setCookiesUndefined: Self = StObject.set(x, "Cookies", js.undefined)
   }
 }

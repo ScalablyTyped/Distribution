@@ -14,8 +14,7 @@ trait TimingConfig extends StObject {
 }
 object TimingConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Adaptable[Double],
     easing: /* value */ Adaptable[Double] => AnimatedNode[Double],
     toValue: Adaptable[Double]
@@ -24,22 +23,16 @@ object TimingConfig {
     __obj.asInstanceOf[TimingConfig]
   }
   
-  @scala.inline
-  implicit class TimingConfigMutableBuilder[Self <: TimingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TimingConfig](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Adaptable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Adaptable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "duration", js.Array(value :_*))
+    inline def setDurationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "duration", js.Array(value :_*))
     
-    @scala.inline
-    def setEasing(value: /* value */ Adaptable[Double] => AnimatedNode[Double]): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+    inline def setEasing(value: /* value */ Adaptable[Double] => AnimatedNode[Double]): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToValue(value: Adaptable[Double]): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+    inline def setToValue(value: Adaptable[Double]): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToValueVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "toValue", js.Array(value :_*))
+    inline def setToValueVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "toValue", js.Array(value :_*))
   }
 }

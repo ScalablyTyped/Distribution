@@ -14,22 +14,17 @@ trait Execute extends StObject {
 }
 object Execute {
   
-  @scala.inline
-  def apply(execute: Boolean, http: Boolean, sendto: Boolean): Execute = {
+  inline def apply(execute: Boolean, http: Boolean, sendto: Boolean): Execute = {
     val __obj = js.Dynamic.literal(execute = execute.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], sendto = sendto.asInstanceOf[js.Any])
     __obj.asInstanceOf[Execute]
   }
   
-  @scala.inline
-  implicit class ExecuteMutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
+  extension [Self <: Execute](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+    inline def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendto(value: Boolean): Self = StObject.set(x, "sendto", value.asInstanceOf[js.Any])
+    inline def setSendto(value: Boolean): Self = StObject.set(x, "sendto", value.asInstanceOf[js.Any])
   }
 }

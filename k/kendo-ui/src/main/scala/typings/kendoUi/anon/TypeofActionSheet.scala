@@ -15,19 +15,15 @@ trait TypeofActionSheet extends StObject {
 }
 object TypeofActionSheet {
   
-  @scala.inline
-  def apply(extend: js.Object => ActionSheet, fn: ActionSheet): TypeofActionSheet = {
+  inline def apply(extend: js.Object => ActionSheet, fn: ActionSheet): TypeofActionSheet = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofActionSheet]
   }
   
-  @scala.inline
-  implicit class TypeofActionSheetMutableBuilder[Self <: TypeofActionSheet] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofActionSheet](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ActionSheet): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ActionSheet): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ActionSheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ActionSheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

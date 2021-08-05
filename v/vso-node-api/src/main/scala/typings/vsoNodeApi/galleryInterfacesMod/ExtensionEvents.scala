@@ -29,8 +29,7 @@ trait ExtensionEvents extends StObject {
 }
 object ExtensionEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: StringDictionary[js.Array[ExtensionEvent]],
     extensionId: String,
     extensionName: String,
@@ -40,19 +39,14 @@ object ExtensionEvents {
     __obj.asInstanceOf[ExtensionEvents]
   }
   
-  @scala.inline
-  implicit class ExtensionEventsMutableBuilder[Self <: ExtensionEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionEvents](x: Self) {
     
-    @scala.inline
-    def setEvents(value: StringDictionary[js.Array[ExtensionEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: StringDictionary[js.Array[ExtensionEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+    inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ object optionMod {
   @js.native
   val Option: ComponentType[OptionProps[js.Any]] = js.native
   
-  @scala.inline
-  def optionCSS(state: State): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("optionCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def optionCSS(state: State): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("optionCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   trait InnerProps extends StObject {
     
@@ -49,8 +48,7 @@ object optionMod {
   }
   object InnerProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       key: String,
       onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
@@ -62,26 +60,19 @@ object optionMod {
       __obj.asInstanceOf[InnerProps]
     }
     
-    @scala.inline
-    implicit class InnerPropsMutableBuilder[Self <: InnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: InnerProps](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMove(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOver(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,23 +124,18 @@ object optionMod {
   }
   object State {
     
-    @scala.inline
-    def apply(isDisabled: Boolean, isFocused: Boolean, isSelected: Boolean): State = {
+    inline def apply(isDisabled: Boolean, isFocused: Boolean, isSelected: Boolean): State = {
       val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     }
   }
 }

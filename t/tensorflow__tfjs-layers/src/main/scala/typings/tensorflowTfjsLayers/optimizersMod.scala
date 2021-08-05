@@ -11,6 +11,5 @@ object optimizersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOptimizer(identifier: String): Optimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptimizer")(identifier.asInstanceOf[js.Any]).asInstanceOf[Optimizer]
+  inline def getOptimizer(identifier: String): Optimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptimizer")(identifier.asInstanceOf[js.Any]).asInstanceOf[Optimizer]
 }

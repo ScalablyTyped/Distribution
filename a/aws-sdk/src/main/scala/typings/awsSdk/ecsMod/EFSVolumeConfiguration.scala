@@ -33,40 +33,29 @@ trait EFSVolumeConfiguration extends StObject {
 }
 object EFSVolumeConfiguration {
   
-  @scala.inline
-  def apply(fileSystemId: String): EFSVolumeConfiguration = {
+  inline def apply(fileSystemId: String): EFSVolumeConfiguration = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EFSVolumeConfiguration]
   }
   
-  @scala.inline
-  implicit class EFSVolumeConfigurationMutableBuilder[Self <: EFSVolumeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EFSVolumeConfiguration](x: Self) {
     
-    @scala.inline
-    def setAuthorizationConfig(value: EFSAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
+    inline def setAuthorizationConfig(value: EFSAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
+    inline def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+    inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
+    inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
     
-    @scala.inline
-    def setTransitEncryption(value: EFSTransitEncryption): Self = StObject.set(x, "transitEncryption", value.asInstanceOf[js.Any])
+    inline def setTransitEncryption(value: EFSTransitEncryption): Self = StObject.set(x, "transitEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitEncryptionPort(value: BoxedInteger): Self = StObject.set(x, "transitEncryptionPort", value.asInstanceOf[js.Any])
+    inline def setTransitEncryptionPort(value: BoxedInteger): Self = StObject.set(x, "transitEncryptionPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitEncryptionPortUndefined: Self = StObject.set(x, "transitEncryptionPort", js.undefined)
+    inline def setTransitEncryptionPortUndefined: Self = StObject.set(x, "transitEncryptionPort", js.undefined)
     
-    @scala.inline
-    def setTransitEncryptionUndefined: Self = StObject.set(x, "transitEncryption", js.undefined)
+    inline def setTransitEncryptionUndefined: Self = StObject.set(x, "transitEncryption", js.undefined)
   }
 }

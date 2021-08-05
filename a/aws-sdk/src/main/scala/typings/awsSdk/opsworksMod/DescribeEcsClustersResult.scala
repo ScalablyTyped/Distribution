@@ -18,28 +18,21 @@ trait DescribeEcsClustersResult extends StObject {
 }
 object DescribeEcsClustersResult {
   
-  @scala.inline
-  def apply(): DescribeEcsClustersResult = {
+  inline def apply(): DescribeEcsClustersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEcsClustersResult]
   }
   
-  @scala.inline
-  implicit class DescribeEcsClustersResultMutableBuilder[Self <: DescribeEcsClustersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEcsClustersResult](x: Self) {
     
-    @scala.inline
-    def setEcsClusters(value: EcsClusters): Self = StObject.set(x, "EcsClusters", value.asInstanceOf[js.Any])
+    inline def setEcsClusters(value: EcsClusters): Self = StObject.set(x, "EcsClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcsClustersUndefined: Self = StObject.set(x, "EcsClusters", js.undefined)
+    inline def setEcsClustersUndefined: Self = StObject.set(x, "EcsClusters", js.undefined)
     
-    @scala.inline
-    def setEcsClustersVarargs(value: EcsCluster*): Self = StObject.set(x, "EcsClusters", js.Array(value :_*))
+    inline def setEcsClustersVarargs(value: EcsCluster*): Self = StObject.set(x, "EcsClusters", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

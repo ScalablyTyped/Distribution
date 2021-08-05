@@ -127,97 +127,67 @@ trait WidgetEditableListOptions[T] extends StObject {
 }
 object WidgetEditableListOptions {
   
-  @scala.inline
-  def apply[T](): WidgetEditableListOptions[T] = {
+  inline def apply[T](): WidgetEditableListOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidgetEditableListOptions[T]]
   }
   
-  @scala.inline
-  implicit class WidgetEditableListOptionsMutableBuilder[Self <: WidgetEditableListOptions[?], T] (val x: Self & WidgetEditableListOptions[T]) extends AnyVal {
+  extension [Self <: WidgetEditableListOptions[?], T](x: Self & WidgetEditableListOptions[T]) {
     
-    @scala.inline
-    def setAddButtons(value: Boolean | String): Self = StObject.set(x, "addButtons", value.asInstanceOf[js.Any])
+    inline def setAddButtons(value: Boolean | String): Self = StObject.set(x, "addButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddButtonsUndefined: Self = StObject.set(x, "addButtons", js.undefined)
+    inline def setAddButtonsUndefined: Self = StObject.set(x, "addButtons", js.undefined)
     
-    @scala.inline
-    def setAddItem(value: (/* row */ JQuery[HTMLElement], /* index */ Double, /* data */ T) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
+    inline def setAddItem(value: (/* row */ JQuery[HTMLElement], /* index */ Double, /* data */ T) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddItemUndefined: Self = StObject.set(x, "addItem", js.undefined)
+    inline def setAddItemUndefined: Self = StObject.set(x, "addItem", js.undefined)
     
-    @scala.inline
-    def setConnectWith(value: Selector): Self = StObject.set(x, "connectWith", value.asInstanceOf[js.Any])
+    inline def setConnectWith(value: Selector): Self = StObject.set(x, "connectWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectWithUndefined: Self = StObject.set(x, "connectWith", js.undefined)
+    inline def setConnectWithUndefined: Self = StObject.set(x, "connectWith", js.undefined)
     
-    @scala.inline
-    def setFilter(value: /* data */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* data */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setHeader(value: HTMLElement | JQuery[HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: HTMLElement | JQuery[HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setRemovable(value: Boolean): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
+    inline def setRemovable(value: Boolean): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovableUndefined: Self = StObject.set(x, "removable", js.undefined)
+    inline def setRemovableUndefined: Self = StObject.set(x, "removable", js.undefined)
     
-    @scala.inline
-    def setRemoveItem(value: /* data */ T => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: /* data */ T => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveItemUndefined: Self = StObject.set(x, "removeItem", js.undefined)
+    inline def setRemoveItemUndefined: Self = StObject.set(x, "removeItem", js.undefined)
     
-    @scala.inline
-    def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
+    inline def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResizeItem(value: (/* row */ JQuery[HTMLElement], /* index */ Double) => Unit): Self = StObject.set(x, "resizeItem", js.Any.fromFunction2(value))
+    inline def setResizeItem(value: (/* row */ JQuery[HTMLElement], /* index */ Double) => Unit): Self = StObject.set(x, "resizeItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResizeItemUndefined: Self = StObject.set(x, "resizeItem", js.undefined)
+    inline def setResizeItemUndefined: Self = StObject.set(x, "resizeItem", js.undefined)
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setScrollOnAdd(value: Boolean): Self = StObject.set(x, "scrollOnAdd", value.asInstanceOf[js.Any])
+    inline def setScrollOnAdd(value: Boolean): Self = StObject.set(x, "scrollOnAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOnAddUndefined: Self = StObject.set(x, "scrollOnAdd", js.undefined)
+    inline def setScrollOnAddUndefined: Self = StObject.set(x, "scrollOnAdd", js.undefined)
     
-    @scala.inline
-    def setSort(value: (/* itemDataA */ T, /* itemDataB */ T) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (/* itemDataA */ T, /* itemDataB */ T) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSortItems(value: /* items */ js.Array[JQuery[HTMLElement]] => Unit): Self = StObject.set(x, "sortItems", js.Any.fromFunction1(value))
+    inline def setSortItems(value: /* items */ js.Array[JQuery[HTMLElement]] => Unit): Self = StObject.set(x, "sortItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortItemsUndefined: Self = StObject.set(x, "sortItems", js.undefined)
+    inline def setSortItemsUndefined: Self = StObject.set(x, "sortItems", js.undefined)
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortable(value: Boolean | Selector): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    inline def setSortable(value: Boolean | Selector): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
   }
 }

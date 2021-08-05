@@ -14,17 +14,14 @@ trait ICardListOptions
 }
 object ICardListOptions {
   
-  @scala.inline
-  def apply(): ICardListOptions = {
+  inline def apply(): ICardListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")("card")
     __obj.asInstanceOf[ICardListOptions]
   }
   
-  @scala.inline
-  implicit class ICardListOptionsMutableBuilder[Self <: ICardListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICardListOptions](x: Self) {
     
-    @scala.inline
-    def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

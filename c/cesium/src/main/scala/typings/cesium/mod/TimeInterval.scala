@@ -44,64 +44,42 @@ object TimeInterval {
   @JSImport("cesium", "TimeInterval.EMPTY")
   @js.native
   def EMPTY: TimeInterval = js.native
-  @scala.inline
-  def EMPTY_=(x: TimeInterval): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
+  inline def EMPTY_=(x: TimeInterval): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def clone_(): TimeInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")().asInstanceOf[TimeInterval]
-  @scala.inline
-  def clone_(timeInterval: Unit, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(timeInterval.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
-  @scala.inline
-  def clone_(timeInterval: TimeInterval): TimeInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(timeInterval.asInstanceOf[js.Any]).asInstanceOf[TimeInterval]
-  @scala.inline
-  def clone_(timeInterval: TimeInterval, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(timeInterval.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
+  inline def clone_(): TimeInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")().asInstanceOf[TimeInterval]
+  inline def clone_(timeInterval: Unit, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(timeInterval.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
+  inline def clone_(timeInterval: TimeInterval): TimeInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(timeInterval.asInstanceOf[js.Any]).asInstanceOf[TimeInterval]
+  inline def clone_(timeInterval: TimeInterval, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(timeInterval.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
   
   /* static member */
-  @scala.inline
-  def contains(timeInterval: TimeInterval, julianDate: JulianDate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(timeInterval.asInstanceOf[js.Any], julianDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(timeInterval: TimeInterval, julianDate: JulianDate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(timeInterval.asInstanceOf[js.Any], julianDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: Unit, right: Unit, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: Unit, right: TimeInterval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: Unit, right: TimeInterval, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: TimeInterval): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: TimeInterval, right: Unit, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: TimeInterval, right: TimeInterval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: TimeInterval, right: TimeInterval, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  inline def equals_(left: Unit, right: Unit, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: Unit, right: TimeInterval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: Unit, right: TimeInterval, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: TimeInterval): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def equals_(left: TimeInterval, right: Unit, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: TimeInterval, right: TimeInterval): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: TimeInterval, right: TimeInterval, dataComparer: DataComparer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], dataComparer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def fromIso8601(options: IsStartIncluded): TimeInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIso8601")(options.asInstanceOf[js.Any]).asInstanceOf[TimeInterval]
-  @scala.inline
-  def fromIso8601(options: IsStartIncluded, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIso8601")(options.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
+  inline def fromIso8601(options: IsStartIncluded): TimeInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIso8601")(options.asInstanceOf[js.Any]).asInstanceOf[TimeInterval]
+  inline def fromIso8601(options: IsStartIncluded, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIso8601")(options.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
   
   /* static member */
-  @scala.inline
-  def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
-  @scala.inline
-  def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval, mergeCallback: MergeCallback): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any], mergeCallback.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
+  inline def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
+  inline def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval, mergeCallback: MergeCallback): TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any], mergeCallback.asInstanceOf[js.Any])).asInstanceOf[TimeInterval]
   
   /* static member */
-  @scala.inline
-  def toIso8601(timeInterval: TimeInterval): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIso8601")(timeInterval.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toIso8601(timeInterval: TimeInterval, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toIso8601")(timeInterval.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toIso8601(timeInterval: TimeInterval): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIso8601")(timeInterval.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toIso8601(timeInterval: TimeInterval, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toIso8601")(timeInterval.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type DataComparer = js.Function2[/* leftData */ js.Any, /* rightData */ js.Any, Boolean]
   

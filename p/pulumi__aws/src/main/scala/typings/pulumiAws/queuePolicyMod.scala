@@ -51,21 +51,16 @@ object queuePolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueuePolicyState): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueuePolicyState, opts: CustomResourceOptions): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
+    inline def get(name: String, id: Input[ID]): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
+    inline def get(name: String, id: Input[ID], state: QueuePolicyState): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
+    inline def get(name: String, id: Input[ID], state: QueuePolicyState, opts: CustomResourceOptions): QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueuePolicy]
     
     /**
       * Returns true if the given object is an instance of QueuePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean]
   }
   
   trait QueuePolicyArgs extends StObject {
@@ -82,20 +77,16 @@ object queuePolicyMod {
   }
   object QueuePolicyArgs {
     
-    @scala.inline
-    def apply(policy: Input[String | PolicyDocument], queueUrl: Input[String]): QueuePolicyArgs = {
+    inline def apply(policy: Input[String | PolicyDocument], queueUrl: Input[String]): QueuePolicyArgs = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], queueUrl = queueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueuePolicyArgs]
     }
     
-    @scala.inline
-    implicit class QueuePolicyArgsMutableBuilder[Self <: QueuePolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: QueuePolicyArgs](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrl(value: Input[String]): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
+      inline def setQueueUrl(value: Input[String]): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,26 +104,20 @@ object queuePolicyMod {
   }
   object QueuePolicyState {
     
-    @scala.inline
-    def apply(): QueuePolicyState = {
+    inline def apply(): QueuePolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueuePolicyState]
     }
     
-    @scala.inline
-    implicit class QueuePolicyStateMutableBuilder[Self <: QueuePolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: QueuePolicyState](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setQueueUrl(value: Input[String]): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
+      inline def setQueueUrl(value: Input[String]): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrlUndefined: Self = StObject.set(x, "queueUrl", js.undefined)
+      inline def setQueueUrlUndefined: Self = StObject.set(x, "queueUrl", js.undefined)
     }
   }
 }

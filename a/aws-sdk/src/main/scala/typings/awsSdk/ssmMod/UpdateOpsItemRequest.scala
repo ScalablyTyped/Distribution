@@ -63,85 +63,59 @@ trait UpdateOpsItemRequest extends StObject {
 }
 object UpdateOpsItemRequest {
   
-  @scala.inline
-  def apply(OpsItemId: OpsItemId): UpdateOpsItemRequest = {
+  inline def apply(OpsItemId: OpsItemId): UpdateOpsItemRequest = {
     val __obj = js.Dynamic.literal(OpsItemId = OpsItemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOpsItemRequest]
   }
   
-  @scala.inline
-  implicit class UpdateOpsItemRequestMutableBuilder[Self <: UpdateOpsItemRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOpsItemRequest](x: Self) {
     
-    @scala.inline
-    def setCategory(value: OpsItemCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: OpsItemCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
-    @scala.inline
-    def setDescription(value: OpsItemDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: OpsItemDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setNotifications(value: OpsItemNotifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: OpsItemNotifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
-    @scala.inline
-    def setNotificationsVarargs(value: OpsItemNotification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: OpsItemNotification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationalData(value: OpsItemOperationalData): Self = StObject.set(x, "OperationalData", value.asInstanceOf[js.Any])
+    inline def setOperationalData(value: OpsItemOperationalData): Self = StObject.set(x, "OperationalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationalDataToDelete(value: OpsItemOpsDataKeysList): Self = StObject.set(x, "OperationalDataToDelete", value.asInstanceOf[js.Any])
+    inline def setOperationalDataToDelete(value: OpsItemOpsDataKeysList): Self = StObject.set(x, "OperationalDataToDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationalDataToDeleteUndefined: Self = StObject.set(x, "OperationalDataToDelete", js.undefined)
+    inline def setOperationalDataToDeleteUndefined: Self = StObject.set(x, "OperationalDataToDelete", js.undefined)
     
-    @scala.inline
-    def setOperationalDataToDeleteVarargs(value: String*): Self = StObject.set(x, "OperationalDataToDelete", js.Array(value :_*))
+    inline def setOperationalDataToDeleteVarargs(value: String*): Self = StObject.set(x, "OperationalDataToDelete", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationalDataUndefined: Self = StObject.set(x, "OperationalData", js.undefined)
+    inline def setOperationalDataUndefined: Self = StObject.set(x, "OperationalData", js.undefined)
     
-    @scala.inline
-    def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
+    inline def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: OpsItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: OpsItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setRelatedOpsItems(value: RelatedOpsItems): Self = StObject.set(x, "RelatedOpsItems", value.asInstanceOf[js.Any])
+    inline def setRelatedOpsItems(value: RelatedOpsItems): Self = StObject.set(x, "RelatedOpsItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedOpsItemsUndefined: Self = StObject.set(x, "RelatedOpsItems", js.undefined)
+    inline def setRelatedOpsItemsUndefined: Self = StObject.set(x, "RelatedOpsItems", js.undefined)
     
-    @scala.inline
-    def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = StObject.set(x, "RelatedOpsItems", js.Array(value :_*))
+    inline def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = StObject.set(x, "RelatedOpsItems", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverity(value: OpsItemSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: OpsItemSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OpsItemStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OpsItemStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTitle(value: OpsItemTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: OpsItemTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

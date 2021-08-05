@@ -40,35 +40,26 @@ object legendComponentMod {
   }
   object LegendComponentProps {
     
-    @scala.inline
-    def apply(): LegendComponentProps = {
+    inline def apply(): LegendComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LegendComponentProps]
     }
     
-    @scala.inline
-    implicit class LegendComponentPropsMutableBuilder[Self <: LegendComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: LegendComponentProps](x: Self) {
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
+      inline def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
+      inline def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
       
-      @scala.inline
-      def setSelections(value: js.Array[String]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+      inline def setSelections(value: js.Array[String]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionsUndefined: Self = StObject.set(x, "selections", js.undefined)
+      inline def setSelectionsUndefined: Self = StObject.set(x, "selections", js.undefined)
       
-      @scala.inline
-      def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value :_*))
+      inline def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value :_*))
     }
   }
   

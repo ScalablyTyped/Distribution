@@ -11,16 +11,13 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(): `4` = {
+  inline def apply(): `4` = {
     val __obj = js.Dynamic.literal(name = "gitRemote")
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setName(value: gitRemote): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: gitRemote): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

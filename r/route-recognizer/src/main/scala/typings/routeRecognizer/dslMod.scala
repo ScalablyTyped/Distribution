@@ -11,10 +11,8 @@ object dslMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: RouteRecognizer */](callback: MatchCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default[T /* <: RouteRecognizer */](
+  inline def default[T /* <: RouteRecognizer */](callback: MatchCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[T /* <: RouteRecognizer */](
     callback: MatchCallback,
     addRouteCallback: js.Function2[/* routeRecognizer */ T, /* routes */ js.Array[Route], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], addRouteCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -44,26 +42,20 @@ object dslMod {
   }
   object Delegate {
     
-    @scala.inline
-    def apply(): Delegate = {
+    inline def apply(): Delegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Delegate]
     }
     
-    @scala.inline
-    implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
+    extension [Self <: Delegate](x: Self) {
       
-      @scala.inline
-      def setContextEntered(value: (/* context */ String, /* route */ MatchDSL) => Unit): Self = StObject.set(x, "contextEntered", js.Any.fromFunction2(value))
+      inline def setContextEntered(value: (/* context */ String, /* route */ MatchDSL) => Unit): Self = StObject.set(x, "contextEntered", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContextEnteredUndefined: Self = StObject.set(x, "contextEntered", js.undefined)
+      inline def setContextEnteredUndefined: Self = StObject.set(x, "contextEntered", js.undefined)
       
-      @scala.inline
-      def setWillAddRoute(value: (/* context */ js.UndefOr[String], /* route */ String) => String): Self = StObject.set(x, "willAddRoute", js.Any.fromFunction2(value))
+      inline def setWillAddRoute(value: (/* context */ js.UndefOr[String], /* route */ String) => String): Self = StObject.set(x, "willAddRoute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWillAddRouteUndefined: Self = StObject.set(x, "willAddRoute", js.undefined)
+      inline def setWillAddRouteUndefined: Self = StObject.set(x, "willAddRoute", js.undefined)
     }
   }
   
@@ -92,35 +84,26 @@ object dslMod {
   }
   object Route {
     
-    @scala.inline
-    def apply(path: String): Route = {
+    inline def apply(path: String): Route = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+    extension [Self <: Route](x: Self) {
       
-      @scala.inline
-      def setHandler(value: Opaque): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Opaque): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerNull: Self = StObject.set(x, "handler", null)
+      inline def setHandlerNull: Self = StObject.set(x, "handler", null)
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: js.Array[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: js.Array[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setQueryParamsVarargs(value: String*): Self = StObject.set(x, "queryParams", js.Array(value :_*))
+      inline def setQueryParamsVarargs(value: String*): Self = StObject.set(x, "queryParams", js.Array(value :_*))
     }
   }
   
@@ -132,23 +115,18 @@ object dslMod {
   }
   object RouteRecognizer {
     
-    @scala.inline
-    def apply(add: js.Array[Route] => Unit): RouteRecognizer = {
+    inline def apply(add: js.Array[Route] => Unit): RouteRecognizer = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
       __obj.asInstanceOf[RouteRecognizer]
     }
     
-    @scala.inline
-    implicit class RouteRecognizerMutableBuilder[Self <: RouteRecognizer] (val x: Self) extends AnyVal {
+    extension [Self <: RouteRecognizer](x: Self) {
       
-      @scala.inline
-      def setAdd(value: js.Array[Route] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: js.Array[Route] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+      inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     }
   }
   

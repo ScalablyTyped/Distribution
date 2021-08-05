@@ -16,34 +16,25 @@ trait QueryRelationsFilter extends StObject {
 }
 object QueryRelationsFilter {
   
-  @scala.inline
-  def apply(): QueryRelationsFilter = {
+  inline def apply(): QueryRelationsFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRelationsFilter]
   }
   
-  @scala.inline
-  implicit class QueryRelationsFilterMutableBuilder[Self <: QueryRelationsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRelationsFilter](x: Self) {
     
-    @scala.inline
-    def setDocument_ids(value: js.Array[String]): Self = StObject.set(x, "document_ids", value.asInstanceOf[js.Any])
+    inline def setDocument_ids(value: js.Array[String]): Self = StObject.set(x, "document_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idsUndefined: Self = StObject.set(x, "document_ids", js.undefined)
+    inline def setDocument_idsUndefined: Self = StObject.set(x, "document_ids", js.undefined)
     
-    @scala.inline
-    def setDocument_idsVarargs(value: String*): Self = StObject.set(x, "document_ids", js.Array(value :_*))
+    inline def setDocument_idsVarargs(value: String*): Self = StObject.set(x, "document_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setEntity_types(value: QueryFilterType): Self = StObject.set(x, "entity_types", value.asInstanceOf[js.Any])
+    inline def setEntity_types(value: QueryFilterType): Self = StObject.set(x, "entity_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity_typesUndefined: Self = StObject.set(x, "entity_types", js.undefined)
+    inline def setEntity_typesUndefined: Self = StObject.set(x, "entity_types", js.undefined)
     
-    @scala.inline
-    def setRelation_types(value: QueryFilterType): Self = StObject.set(x, "relation_types", value.asInstanceOf[js.Any])
+    inline def setRelation_types(value: QueryFilterType): Self = StObject.set(x, "relation_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelation_typesUndefined: Self = StObject.set(x, "relation_types", js.undefined)
+    inline def setRelation_typesUndefined: Self = StObject.set(x, "relation_types", js.undefined)
   }
 }

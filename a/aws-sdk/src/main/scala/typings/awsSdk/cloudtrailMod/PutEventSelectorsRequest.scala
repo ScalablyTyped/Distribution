@@ -18,22 +18,17 @@ trait PutEventSelectorsRequest extends StObject {
 }
 object PutEventSelectorsRequest {
   
-  @scala.inline
-  def apply(EventSelectors: EventSelectors, TrailName: String): PutEventSelectorsRequest = {
+  inline def apply(EventSelectors: EventSelectors, TrailName: String): PutEventSelectorsRequest = {
     val __obj = js.Dynamic.literal(EventSelectors = EventSelectors.asInstanceOf[js.Any], TrailName = TrailName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventSelectorsRequest]
   }
   
-  @scala.inline
-  implicit class PutEventSelectorsRequestMutableBuilder[Self <: PutEventSelectorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventSelectorsRequest](x: Self) {
     
-    @scala.inline
-    def setEventSelectors(value: EventSelectors): Self = StObject.set(x, "EventSelectors", value.asInstanceOf[js.Any])
+    inline def setEventSelectors(value: EventSelectors): Self = StObject.set(x, "EventSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSelectorsVarargs(value: EventSelector*): Self = StObject.set(x, "EventSelectors", js.Array(value :_*))
+    inline def setEventSelectorsVarargs(value: EventSelector*): Self = StObject.set(x, "EventSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
+    inline def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
   }
 }

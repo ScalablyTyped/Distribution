@@ -15,19 +15,15 @@ trait TypeofMultiSelect extends StObject {
 }
 object TypeofMultiSelect {
   
-  @scala.inline
-  def apply(extend: js.Object => MultiSelect, fn: MultiSelect): TypeofMultiSelect = {
+  inline def apply(extend: js.Object => MultiSelect, fn: MultiSelect): TypeofMultiSelect = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMultiSelect]
   }
   
-  @scala.inline
-  implicit class TypeofMultiSelectMutableBuilder[Self <: TypeofMultiSelect] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofMultiSelect](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => MultiSelect): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => MultiSelect): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: MultiSelect): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: MultiSelect): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -23,19 +23,15 @@ trait SetPropertyTolerantFailed extends StObject {
 }
 object SetPropertyTolerantFailed {
   
-  @scala.inline
-  def apply(Name: String, Result: Double): SetPropertyTolerantFailed = {
+  inline def apply(Name: String, Result: Double): SetPropertyTolerantFailed = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPropertyTolerantFailed]
   }
   
-  @scala.inline
-  implicit class SetPropertyTolerantFailedMutableBuilder[Self <: SetPropertyTolerantFailed] (val x: Self) extends AnyVal {
+  extension [Self <: SetPropertyTolerantFailed](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

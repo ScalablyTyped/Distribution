@@ -9,6 +9,5 @@ object global {
   @JSGlobal("WikitudePlugin")
   @js.native
   def WikitudePlugin: typings.comWikitudePhonegapWikitudeplugin.WikitudePlugin = js.native
-  @scala.inline
-  def WikitudePlugin_=(x: WikitudePlugin): Unit = js.Dynamic.global.updateDynamic("WikitudePlugin")(x.asInstanceOf[js.Any])
+  inline def WikitudePlugin_=(x: WikitudePlugin): Unit = js.Dynamic.global.updateDynamic("WikitudePlugin")(x.asInstanceOf[js.Any])
 }

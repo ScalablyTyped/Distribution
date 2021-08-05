@@ -14,22 +14,17 @@ trait AttachSessionOptions
 }
 object AttachSessionOptions {
   
-  @scala.inline
-  def apply(sessionId: String): AttachSessionOptions = {
+  inline def apply(sessionId: String): AttachSessionOptions = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachSessionOptions]
   }
   
-  @scala.inline
-  implicit class AttachSessionOptionsMutableBuilder[Self <: AttachSessionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AttachSessionOptions](x: Self) {
     
-    @scala.inline
-    def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
+    inline def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsW3CUndefined: Self = StObject.set(x, "isW3C", js.undefined)
+    inline def setIsW3CUndefined: Self = StObject.set(x, "isW3C", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

@@ -66,106 +66,73 @@ trait WorkItemStatus extends StObject {
 }
 object WorkItemStatus {
   
-  @scala.inline
-  def apply(): WorkItemStatus = {
+  inline def apply(): WorkItemStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkItemStatus]
   }
   
-  @scala.inline
-  implicit class WorkItemStatusMutableBuilder[Self <: WorkItemStatus] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemStatus](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
-    @scala.inline
-    def setCounterUpdates(value: js.Array[CounterUpdate]): Self = StObject.set(x, "counterUpdates", value.asInstanceOf[js.Any])
+    inline def setCounterUpdates(value: js.Array[CounterUpdate]): Self = StObject.set(x, "counterUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterUpdatesUndefined: Self = StObject.set(x, "counterUpdates", js.undefined)
+    inline def setCounterUpdatesUndefined: Self = StObject.set(x, "counterUpdates", js.undefined)
     
-    @scala.inline
-    def setCounterUpdatesVarargs(value: CounterUpdate*): Self = StObject.set(x, "counterUpdates", js.Array(value :_*))
+    inline def setCounterUpdatesVarargs(value: CounterUpdate*): Self = StObject.set(x, "counterUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setDynamicSourceSplit(value: DynamicSourceSplit): Self = StObject.set(x, "dynamicSourceSplit", value.asInstanceOf[js.Any])
+    inline def setDynamicSourceSplit(value: DynamicSourceSplit): Self = StObject.set(x, "dynamicSourceSplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicSourceSplitUndefined: Self = StObject.set(x, "dynamicSourceSplit", js.undefined)
+    inline def setDynamicSourceSplitUndefined: Self = StObject.set(x, "dynamicSourceSplit", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[Status]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Status]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: Status*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Status*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricUpdates(value: js.Array[MetricUpdate]): Self = StObject.set(x, "metricUpdates", value.asInstanceOf[js.Any])
+    inline def setMetricUpdates(value: js.Array[MetricUpdate]): Self = StObject.set(x, "metricUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUpdatesUndefined: Self = StObject.set(x, "metricUpdates", js.undefined)
+    inline def setMetricUpdatesUndefined: Self = StObject.set(x, "metricUpdates", js.undefined)
     
-    @scala.inline
-    def setMetricUpdatesVarargs(value: MetricUpdate*): Self = StObject.set(x, "metricUpdates", js.Array(value :_*))
+    inline def setMetricUpdatesVarargs(value: MetricUpdate*): Self = StObject.set(x, "metricUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setProgress(value: ApproximateProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ApproximateProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setReportIndex(value: String): Self = StObject.set(x, "reportIndex", value.asInstanceOf[js.Any])
+    inline def setReportIndex(value: String): Self = StObject.set(x, "reportIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIndexUndefined: Self = StObject.set(x, "reportIndex", js.undefined)
+    inline def setReportIndexUndefined: Self = StObject.set(x, "reportIndex", js.undefined)
     
-    @scala.inline
-    def setReportedProgress(value: ApproximateReportedProgress): Self = StObject.set(x, "reportedProgress", value.asInstanceOf[js.Any])
+    inline def setReportedProgress(value: ApproximateReportedProgress): Self = StObject.set(x, "reportedProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportedProgressUndefined: Self = StObject.set(x, "reportedProgress", js.undefined)
+    inline def setReportedProgressUndefined: Self = StObject.set(x, "reportedProgress", js.undefined)
     
-    @scala.inline
-    def setRequestedLeaseDuration(value: String): Self = StObject.set(x, "requestedLeaseDuration", value.asInstanceOf[js.Any])
+    inline def setRequestedLeaseDuration(value: String): Self = StObject.set(x, "requestedLeaseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedLeaseDurationUndefined: Self = StObject.set(x, "requestedLeaseDuration", js.undefined)
+    inline def setRequestedLeaseDurationUndefined: Self = StObject.set(x, "requestedLeaseDuration", js.undefined)
     
-    @scala.inline
-    def setSourceFork(value: SourceFork): Self = StObject.set(x, "sourceFork", value.asInstanceOf[js.Any])
+    inline def setSourceFork(value: SourceFork): Self = StObject.set(x, "sourceFork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceForkUndefined: Self = StObject.set(x, "sourceFork", js.undefined)
+    inline def setSourceForkUndefined: Self = StObject.set(x, "sourceFork", js.undefined)
     
-    @scala.inline
-    def setSourceOperationResponse(value: SourceOperationResponse): Self = StObject.set(x, "sourceOperationResponse", value.asInstanceOf[js.Any])
+    inline def setSourceOperationResponse(value: SourceOperationResponse): Self = StObject.set(x, "sourceOperationResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceOperationResponseUndefined: Self = StObject.set(x, "sourceOperationResponse", js.undefined)
+    inline def setSourceOperationResponseUndefined: Self = StObject.set(x, "sourceOperationResponse", js.undefined)
     
-    @scala.inline
-    def setStopPosition(value: Position): Self = StObject.set(x, "stopPosition", value.asInstanceOf[js.Any])
+    inline def setStopPosition(value: Position): Self = StObject.set(x, "stopPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPositionUndefined: Self = StObject.set(x, "stopPosition", js.undefined)
+    inline def setStopPositionUndefined: Self = StObject.set(x, "stopPosition", js.undefined)
     
-    @scala.inline
-    def setTotalThrottlerWaitTimeSeconds(value: Double): Self = StObject.set(x, "totalThrottlerWaitTimeSeconds", value.asInstanceOf[js.Any])
+    inline def setTotalThrottlerWaitTimeSeconds(value: Double): Self = StObject.set(x, "totalThrottlerWaitTimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalThrottlerWaitTimeSecondsUndefined: Self = StObject.set(x, "totalThrottlerWaitTimeSeconds", js.undefined)
+    inline def setTotalThrottlerWaitTimeSecondsUndefined: Self = StObject.set(x, "totalThrottlerWaitTimeSeconds", js.undefined)
     
-    @scala.inline
-    def setWorkItemId(value: String): Self = StObject.set(x, "workItemId", value.asInstanceOf[js.Any])
+    inline def setWorkItemId(value: String): Self = StObject.set(x, "workItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemIdUndefined: Self = StObject.set(x, "workItemId", js.undefined)
+    inline def setWorkItemIdUndefined: Self = StObject.set(x, "workItemId", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlApplyLocation extends StObject
 object htmlApplyLocation {
   
-  @scala.inline
-  def htmlApplyLocationInside: `0` = 0.asInstanceOf[`0`]
+  inline def htmlApplyLocationInside: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlApplyLocationOutside: `1` = 1.asInstanceOf[`1`]
+  inline def htmlApplyLocationOutside: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlApplyLocation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlApplyLocation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

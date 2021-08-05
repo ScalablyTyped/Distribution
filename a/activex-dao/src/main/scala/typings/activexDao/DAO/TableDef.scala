@@ -43,7 +43,7 @@ trait TableDef extends StObject {
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
-  @JSName("DAO.TableDef_typekey")
+  /* private */ @JSName("DAO.TableDef_typekey")
   var DAODotTableDef_typekey: TableDef = js.native
   
   val DateCreated: VarDate = js.native

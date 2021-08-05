@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataType extends StObject
 object DataType {
   
-  @scala.inline
-  def boolean: typings.nodal.nodalStrings.boolean = "boolean".asInstanceOf[typings.nodal.nodalStrings.boolean]
+  inline def boolean: typings.nodal.nodalStrings.boolean = "boolean".asInstanceOf[typings.nodal.nodalStrings.boolean]
   
-  @scala.inline
-  def currency: typings.nodal.nodalStrings.currency = "currency".asInstanceOf[typings.nodal.nodalStrings.currency]
+  inline def currency: typings.nodal.nodalStrings.currency = "currency".asInstanceOf[typings.nodal.nodalStrings.currency]
   
-  @scala.inline
-  def datetime: typings.nodal.nodalStrings.datetime = "datetime".asInstanceOf[typings.nodal.nodalStrings.datetime]
+  inline def datetime: typings.nodal.nodalStrings.datetime = "datetime".asInstanceOf[typings.nodal.nodalStrings.datetime]
   
-  @scala.inline
-  def float: typings.nodal.nodalStrings.float = "float".asInstanceOf[typings.nodal.nodalStrings.float]
+  inline def float: typings.nodal.nodalStrings.float = "float".asInstanceOf[typings.nodal.nodalStrings.float]
   
-  @scala.inline
-  def int: typings.nodal.nodalStrings.int = "int".asInstanceOf[typings.nodal.nodalStrings.int]
+  inline def int: typings.nodal.nodalStrings.int = "int".asInstanceOf[typings.nodal.nodalStrings.int]
   
-  @scala.inline
-  def json: typings.nodal.nodalStrings.json = "json".asInstanceOf[typings.nodal.nodalStrings.json]
+  inline def json: typings.nodal.nodalStrings.json = "json".asInstanceOf[typings.nodal.nodalStrings.json]
   
-  @scala.inline
-  def serial: typings.nodal.nodalStrings.serial = "serial".asInstanceOf[typings.nodal.nodalStrings.serial]
+  inline def serial: typings.nodal.nodalStrings.serial = "serial".asInstanceOf[typings.nodal.nodalStrings.serial]
   
-  @scala.inline
-  def string: typings.nodal.nodalStrings.string = "string".asInstanceOf[typings.nodal.nodalStrings.string]
+  inline def string: typings.nodal.nodalStrings.string = "string".asInstanceOf[typings.nodal.nodalStrings.string]
   
-  @scala.inline
-  def text: typings.nodal.nodalStrings.text = "text".asInstanceOf[typings.nodal.nodalStrings.text]
+  inline def text: typings.nodal.nodalStrings.text = "text".asInstanceOf[typings.nodal.nodalStrings.text]
 }

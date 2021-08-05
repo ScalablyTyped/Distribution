@@ -35,91 +35,63 @@ trait PartialClassNameMapInputC extends StObject {
 }
 object PartialClassNameMapInputC {
   
-  @scala.inline
-  def apply(): PartialClassNameMapInputC = {
+  inline def apply(): PartialClassNameMapInputC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapInputC]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapInputCMutableBuilder[Self <: PartialClassNameMapInputC] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapInputC](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+    inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    @scala.inline
-    def setFormControl(value: String): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
+    inline def setFormControl(value: String): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
+    inline def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
     
-    @scala.inline
-    def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMarginDense(value: String): Self = StObject.set(x, "inputMarginDense", value.asInstanceOf[js.Any])
+    inline def setInputMarginDense(value: String): Self = StObject.set(x, "inputMarginDense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMarginDenseUndefined: Self = StObject.set(x, "inputMarginDense", js.undefined)
+    inline def setInputMarginDenseUndefined: Self = StObject.set(x, "inputMarginDense", js.undefined)
     
-    @scala.inline
-    def setInputMultiline(value: String): Self = StObject.set(x, "inputMultiline", value.asInstanceOf[js.Any])
+    inline def setInputMultiline(value: String): Self = StObject.set(x, "inputMultiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMultilineUndefined: Self = StObject.set(x, "inputMultiline", js.undefined)
+    inline def setInputMultilineUndefined: Self = StObject.set(x, "inputMultiline", js.undefined)
     
-    @scala.inline
-    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    inline def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTypeSearch(value: String): Self = StObject.set(x, "inputTypeSearch", value.asInstanceOf[js.Any])
+    inline def setInputTypeSearch(value: String): Self = StObject.set(x, "inputTypeSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTypeSearchUndefined: Self = StObject.set(x, "inputTypeSearch", js.undefined)
+    inline def setInputTypeSearchUndefined: Self = StObject.set(x, "inputTypeSearch", js.undefined)
     
-    @scala.inline
-    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    inline def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

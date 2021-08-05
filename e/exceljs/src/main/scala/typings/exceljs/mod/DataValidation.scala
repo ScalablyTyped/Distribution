@@ -36,77 +36,54 @@ trait DataValidation extends StObject {
 }
 object DataValidation {
   
-  @scala.inline
-  def apply(formulae: js.Array[js.Any], `type`: list | whole | decimal | date | textLength | custom): DataValidation = {
+  inline def apply(formulae: js.Array[js.Any], `type`: list | whole | decimal | date | textLength | custom): DataValidation = {
     val __obj = js.Dynamic.literal(formulae = formulae.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidation]
   }
   
-  @scala.inline
-  implicit class DataValidationMutableBuilder[Self <: DataValidation] (val x: Self) extends AnyVal {
+  extension [Self <: DataValidation](x: Self) {
     
-    @scala.inline
-    def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
+    inline def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowBlankUndefined: Self = StObject.set(x, "allowBlank", js.undefined)
+    inline def setAllowBlankUndefined: Self = StObject.set(x, "allowBlank", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStyle(value: String): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
+    inline def setErrorStyle(value: String): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
+    inline def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
     
-    @scala.inline
-    def setErrorTitle(value: String): Self = StObject.set(x, "errorTitle", value.asInstanceOf[js.Any])
+    inline def setErrorTitle(value: String): Self = StObject.set(x, "errorTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTitleUndefined: Self = StObject.set(x, "errorTitle", js.undefined)
+    inline def setErrorTitleUndefined: Self = StObject.set(x, "errorTitle", js.undefined)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFormulae(value: js.Array[js.Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
+    inline def setFormulae(value: js.Array[js.Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))
+    inline def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: DataValidationOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: DataValidationOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptTitle(value: String): Self = StObject.set(x, "promptTitle", value.asInstanceOf[js.Any])
+    inline def setPromptTitle(value: String): Self = StObject.set(x, "promptTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptTitleUndefined: Self = StObject.set(x, "promptTitle", js.undefined)
+    inline def setPromptTitleUndefined: Self = StObject.set(x, "promptTitle", js.undefined)
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    @scala.inline
-    def setShowErrorMessage(value: Boolean): Self = StObject.set(x, "showErrorMessage", value.asInstanceOf[js.Any])
+    inline def setShowErrorMessage(value: Boolean): Self = StObject.set(x, "showErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowErrorMessageUndefined: Self = StObject.set(x, "showErrorMessage", js.undefined)
+    inline def setShowErrorMessageUndefined: Self = StObject.set(x, "showErrorMessage", js.undefined)
     
-    @scala.inline
-    def setShowInputMessage(value: Boolean): Self = StObject.set(x, "showInputMessage", value.asInstanceOf[js.Any])
+    inline def setShowInputMessage(value: Boolean): Self = StObject.set(x, "showInputMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInputMessageUndefined: Self = StObject.set(x, "showInputMessage", js.undefined)
+    inline def setShowInputMessageUndefined: Self = StObject.set(x, "showInputMessage", js.undefined)
     
-    @scala.inline
-    def setType(value: list | whole | decimal | date | textLength | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: list | whole | decimal | date | textLength | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

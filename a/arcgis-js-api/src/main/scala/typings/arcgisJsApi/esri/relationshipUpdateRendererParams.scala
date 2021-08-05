@@ -54,8 +54,7 @@ trait relationshipUpdateRendererParams
 }
 object relationshipUpdateRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colors: js.Array[Color_],
     constructor: js.Function,
     field1: relationshipUpdateRendererParamsField1,
@@ -69,31 +68,22 @@ object relationshipUpdateRendererParams {
     __obj.asInstanceOf[relationshipUpdateRendererParams]
   }
   
-  @scala.inline
-  implicit class relationshipUpdateRendererParamsMutableBuilder[Self <: relationshipUpdateRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: relationshipUpdateRendererParams](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setField1(value: relationshipUpdateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
+    inline def setField1(value: relationshipUpdateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField2(value: relationshipUpdateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
+    inline def setField2(value: relationshipUpdateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
+    inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }
 }

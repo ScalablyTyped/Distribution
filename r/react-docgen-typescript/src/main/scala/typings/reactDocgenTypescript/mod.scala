@@ -23,28 +23,18 @@ object mod {
     def this(program: Program, opts: ParserOptions) = this()
   }
   
-  @scala.inline
-  def getDefaultExportForFile(source: SourceFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExportForFile")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDefaultExportForFile(source: SourceFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExportForFile")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(filePathOrPaths: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
-  @scala.inline
-  def parse(filePathOrPaths: String, parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
-  @scala.inline
-  def parse(filePathOrPaths: js.Array[String]): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
-  @scala.inline
-  def parse(filePathOrPaths: js.Array[String], parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: String, parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: js.Array[String]): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: js.Array[String], parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
   
-  @scala.inline
-  def withCompilerOptions(compilerOptions: CompilerOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any]).asInstanceOf[FileParser]
-  @scala.inline
-  def withCompilerOptions(compilerOptions: CompilerOptions, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
+  inline def withCompilerOptions(compilerOptions: CompilerOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any]).asInstanceOf[FileParser]
+  inline def withCompilerOptions(compilerOptions: CompilerOptions, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
   
-  @scala.inline
-  def withCustomConfig(tsconfigPath: String, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCustomConfig")(tsconfigPath.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
+  inline def withCustomConfig(tsconfigPath: String, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCustomConfig")(tsconfigPath.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
   
-  @scala.inline
-  def withDefaultConfig(): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")().asInstanceOf[FileParser]
-  @scala.inline
-  def withDefaultConfig(parserOpts: ParserOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(parserOpts.asInstanceOf[js.Any]).asInstanceOf[FileParser]
+  inline def withDefaultConfig(): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")().asInstanceOf[FileParser]
+  inline def withDefaultConfig(parserOpts: ParserOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(parserOpts.asInstanceOf[js.Any]).asInstanceOf[FileParser]
 }

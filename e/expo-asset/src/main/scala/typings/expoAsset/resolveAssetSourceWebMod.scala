@@ -10,8 +10,7 @@ object resolveAssetSourceWebMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(source: js.Any): js.UndefOr[
+  inline def default(source: js.Any): js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedAssetSource */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedAssetSource */ js.Any
@@ -21,8 +20,7 @@ object resolveAssetSourceWebMod {
   @js.native
   val pickScale: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof AssetSourceResolver.pickScale */ js.Any = js.native
   
-  @scala.inline
-  def setCustomSourceTransformer(
+  inline def setCustomSourceTransformer(
     transformer: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AssetSourceResolver */ /* resolver */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedAssetSource */ js.Any

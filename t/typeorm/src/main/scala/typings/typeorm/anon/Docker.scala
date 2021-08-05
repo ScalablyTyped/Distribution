@@ -10,16 +10,13 @@ trait Docker extends StObject {
 }
 object Docker {
   
-  @scala.inline
-  def apply(docker: Boolean): Docker = {
+  inline def apply(docker: Boolean): Docker = {
     val __obj = js.Dynamic.literal(docker = docker.asInstanceOf[js.Any])
     __obj.asInstanceOf[Docker]
   }
   
-  @scala.inline
-  implicit class DockerMutableBuilder[Self <: Docker] (val x: Self) extends AnyVal {
+  extension [Self <: Docker](x: Self) {
     
-    @scala.inline
-    def setDocker(value: Boolean): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
+    inline def setDocker(value: Boolean): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
   }
 }

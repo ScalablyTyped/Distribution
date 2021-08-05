@@ -10,8 +10,7 @@ trait SymmetricKeyAlgorithmProvider
      with ISymmetricKeyAlgorithmProvider
 object SymmetricKeyAlgorithmProvider {
   
-  @scala.inline
-  def apply(algorithmName: String, blockLength: Double, createSymmetricKey: IBuffer => CryptographicKey): SymmetricKeyAlgorithmProvider = {
+  inline def apply(algorithmName: String, blockLength: Double, createSymmetricKey: IBuffer => CryptographicKey): SymmetricKeyAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], blockLength = blockLength.asInstanceOf[js.Any], createSymmetricKey = js.Any.fromFunction1(createSymmetricKey))
     __obj.asInstanceOf[SymmetricKeyAlgorithmProvider]
   }

@@ -48,46 +48,33 @@ trait DistributionOrigin extends StObject {
 }
 object DistributionOrigin {
   
-  @scala.inline
-  def apply(domainName: Input[String], originId: Input[String]): DistributionOrigin = {
+  inline def apply(domainName: Input[String], originId: Input[String]): DistributionOrigin = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], originId = originId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOrigin]
   }
   
-  @scala.inline
-  implicit class DistributionOriginMutableBuilder[Self <: DistributionOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOrigin](x: Self) {
     
-    @scala.inline
-    def setCustomHeaders(value: Input[js.Array[Input[DistributionOriginCustomHeader]]]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: Input[js.Array[Input[DistributionOriginCustomHeader]]]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+    inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
-    @scala.inline
-    def setCustomHeadersVarargs(value: Input[DistributionOriginCustomHeader]*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
+    inline def setCustomHeadersVarargs(value: Input[DistributionOriginCustomHeader]*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomOriginConfig(value: Input[DistributionOriginCustomOriginConfig]): Self = StObject.set(x, "customOriginConfig", value.asInstanceOf[js.Any])
+    inline def setCustomOriginConfig(value: Input[DistributionOriginCustomOriginConfig]): Self = StObject.set(x, "customOriginConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomOriginConfigUndefined: Self = StObject.set(x, "customOriginConfig", js.undefined)
+    inline def setCustomOriginConfigUndefined: Self = StObject.set(x, "customOriginConfig", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
+    inline def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPath(value: Input[String]): Self = StObject.set(x, "originPath", value.asInstanceOf[js.Any])
+    inline def setOriginPath(value: Input[String]): Self = StObject.set(x, "originPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPathUndefined: Self = StObject.set(x, "originPath", js.undefined)
+    inline def setOriginPathUndefined: Self = StObject.set(x, "originPath", js.undefined)
     
-    @scala.inline
-    def setS3OriginConfig(value: Input[DistributionOriginS3OriginConfig]): Self = StObject.set(x, "s3OriginConfig", value.asInstanceOf[js.Any])
+    inline def setS3OriginConfig(value: Input[DistributionOriginS3OriginConfig]): Self = StObject.set(x, "s3OriginConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3OriginConfigUndefined: Self = StObject.set(x, "s3OriginConfig", js.undefined)
+    inline def setS3OriginConfigUndefined: Self = StObject.set(x, "s3OriginConfig", js.undefined)
   }
 }

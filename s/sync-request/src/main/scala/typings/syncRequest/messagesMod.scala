@@ -20,26 +20,20 @@ object messagesMod {
   }
   object Req {
     
-    @scala.inline
-    def apply(m: HttpVerb, u: String): Req = {
+    inline def apply(m: HttpVerb, u: String): Req = {
       val __obj = js.Dynamic.literal(m = m.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
       __obj.asInstanceOf[Req]
     }
     
-    @scala.inline
-    implicit class ReqMutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
+    extension [Self <: Req](x: Self) {
       
-      @scala.inline
-      def setM(value: HttpVerb): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: HttpVerb): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setO(value: MessageOptions): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
+      inline def setO(value: MessageOptions): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOUndefined: Self = StObject.set(x, "o", js.undefined)
+      inline def setOUndefined: Self = StObject.set(x, "o", js.undefined)
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,26 +49,20 @@ object messagesMod {
   }
   object Res {
     
-    @scala.inline
-    def apply(b: Buffer | String, h: IncomingHttpHeaders, s: Double, u: String): Res = {
+    inline def apply(b: Buffer | String, h: IncomingHttpHeaders, s: Double, u: String): Res = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
       __obj.asInstanceOf[Res]
     }
     
-    @scala.inline
-    implicit class ResMutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
+    extension [Self <: Res](x: Self) {
       
-      @scala.inline
-      def setB(value: Buffer | String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Buffer | String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: IncomingHttpHeaders): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: IncomingHttpHeaders): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     }
   }
 }

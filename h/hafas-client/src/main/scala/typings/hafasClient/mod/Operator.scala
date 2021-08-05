@@ -15,23 +15,18 @@ trait Operator extends StObject {
 }
 object Operator {
   
-  @scala.inline
-  def apply(id: String, name: String): Operator = {
+  inline def apply(id: String, name: String): Operator = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("operator")
     __obj.asInstanceOf[Operator]
   }
   
-  @scala.inline
-  implicit class OperatorMutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
+  extension [Self <: Operator](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

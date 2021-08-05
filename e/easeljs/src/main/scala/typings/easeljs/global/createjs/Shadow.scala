@@ -34,6 +34,5 @@ object Shadow {
   @JSGlobal("createjs.Shadow.identity")
   @js.native
   def identity: typings.easeljs.createjs.Shadow = js.native
-  @scala.inline
-  def identity_=(x: typings.easeljs.createjs.Shadow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
+  inline def identity_=(x: typings.easeljs.createjs.Shadow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
 }

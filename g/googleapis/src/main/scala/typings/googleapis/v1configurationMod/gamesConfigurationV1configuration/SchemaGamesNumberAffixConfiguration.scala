@@ -49,49 +49,35 @@ trait SchemaGamesNumberAffixConfiguration extends StObject {
 }
 object SchemaGamesNumberAffixConfiguration {
   
-  @scala.inline
-  def apply(): SchemaGamesNumberAffixConfiguration = {
+  inline def apply(): SchemaGamesNumberAffixConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGamesNumberAffixConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaGamesNumberAffixConfigurationMutableBuilder[Self <: SchemaGamesNumberAffixConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGamesNumberAffixConfiguration](x: Self) {
     
-    @scala.inline
-    def setFew(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+    inline def setFew(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+    inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
     
-    @scala.inline
-    def setMany(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+    inline def setMany(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+    inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
     
-    @scala.inline
-    def setOne(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+    inline def setOne(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+    inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
     
-    @scala.inline
-    def setOther(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+    inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     
-    @scala.inline
-    def setTwo(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+    inline def setTwo(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+    inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
     
-    @scala.inline
-    def setZero(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+    inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

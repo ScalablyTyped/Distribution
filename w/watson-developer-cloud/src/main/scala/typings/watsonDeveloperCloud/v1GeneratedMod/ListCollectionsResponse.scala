@@ -12,22 +12,17 @@ trait ListCollectionsResponse extends StObject {
 }
 object ListCollectionsResponse {
   
-  @scala.inline
-  def apply(): ListCollectionsResponse = {
+  inline def apply(): ListCollectionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCollectionsResponse]
   }
   
-  @scala.inline
-  implicit class ListCollectionsResponseMutableBuilder[Self <: ListCollectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCollectionsResponse](x: Self) {
     
-    @scala.inline
-    def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionsUndefined: Self = StObject.set(x, "collections", js.undefined)
+    inline def setCollectionsUndefined: Self = StObject.set(x, "collections", js.undefined)
     
-    @scala.inline
-    def setCollectionsVarargs(value: Collection*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: Collection*): Self = StObject.set(x, "collections", js.Array(value :_*))
   }
 }

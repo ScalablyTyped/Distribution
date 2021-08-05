@@ -11,13 +11,9 @@ object platformUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
-  @scala.inline
-  def isMac(platformOverride: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(platformOverride.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
+  inline def isMac(platformOverride: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(platformOverride.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isModKeyPressed(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModKeyPressed")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isModKeyPressed(event: KeyboardEvent, platformOverride: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModKeyPressed")(event.asInstanceOf[js.Any], platformOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isModKeyPressed(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModKeyPressed")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isModKeyPressed(event: KeyboardEvent, platformOverride: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModKeyPressed")(event.asInstanceOf[js.Any], platformOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

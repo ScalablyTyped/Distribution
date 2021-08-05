@@ -35,8 +35,7 @@ trait Context[TInputs] extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply[TInputs](
+  inline def apply[TInputs](
     client: Client,
     device: Device,
     factory: Factory,
@@ -54,46 +53,32 @@ object Context {
     __obj.asInstanceOf[Context[TInputs]]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context[?], TInputs] (val x: Self & Context[TInputs]) extends AnyVal {
+  extension [Self <: Context[?], TInputs](x: Self & Context[TInputs]) {
     
-    @scala.inline
-    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactory(value: Factory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: Factory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatting(value: Formatting): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
+    inline def setFormatting(value: Formatting): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: Navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: Navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: TInputs): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TInputs): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedProperties(value: js.Array[String]): Self = StObject.set(x, "updatedProperties", value.asInstanceOf[js.Any])
+    inline def setUpdatedProperties(value: js.Array[String]): Self = StObject.set(x, "updatedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedPropertiesVarargs(value: String*): Self = StObject.set(x, "updatedProperties", js.Array(value :_*))
+    inline def setUpdatedPropertiesVarargs(value: String*): Self = StObject.set(x, "updatedProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setUserSettings(value: UserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
+    inline def setUserSettings(value: UserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtils(value: Utility): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+    inline def setUtils(value: Utility): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAPI(value: WebApi): Self = StObject.set(x, "webAPI", value.asInstanceOf[js.Any])
+    inline def setWebAPI(value: WebApi): Self = StObject.set(x, "webAPI", value.asInstanceOf[js.Any])
   }
 }

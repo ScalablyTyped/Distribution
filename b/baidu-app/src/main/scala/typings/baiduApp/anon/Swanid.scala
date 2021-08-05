@@ -10,16 +10,13 @@ trait Swanid extends StObject {
 }
 object Swanid {
   
-  @scala.inline
-  def apply(swanid: String): Swanid = {
+  inline def apply(swanid: String): Swanid = {
     val __obj = js.Dynamic.literal(swanid = swanid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Swanid]
   }
   
-  @scala.inline
-  implicit class SwanidMutableBuilder[Self <: Swanid] (val x: Self) extends AnyVal {
+  extension [Self <: Swanid](x: Self) {
     
-    @scala.inline
-    def setSwanid(value: String): Self = StObject.set(x, "swanid", value.asInstanceOf[js.Any])
+    inline def setSwanid(value: String): Self = StObject.set(x, "swanid", value.asInstanceOf[js.Any])
   }
 }

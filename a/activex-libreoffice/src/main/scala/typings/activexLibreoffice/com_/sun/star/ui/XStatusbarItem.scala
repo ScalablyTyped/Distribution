@@ -65,8 +65,7 @@ trait XStatusbarItem extends StObject {
 }
 object XStatusbarItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleName: String,
     Command: String,
     HelpText: String,
@@ -84,43 +83,30 @@ object XStatusbarItem {
     __obj.asInstanceOf[XStatusbarItem]
   }
   
-  @scala.inline
-  implicit class XStatusbarItemMutableBuilder[Self <: XStatusbarItem] (val x: Self) extends AnyVal {
+  extension [Self <: XStatusbarItem](x: Self) {
     
-    @scala.inline
-    def setAccessibleName(value: String): Self = StObject.set(x, "AccessibleName", value.asInstanceOf[js.Any])
+    inline def setAccessibleName(value: String): Self = StObject.set(x, "AccessibleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: Double): Self = StObject.set(x, "ItemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: Double): Self = StObject.set(x, "ItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemRect(value: Rectangle): Self = StObject.set(x, "ItemRect", value.asInstanceOf[js.Any])
+    inline def setItemRect(value: Rectangle): Self = StObject.set(x, "ItemRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickHelpText(value: String): Self = StObject.set(x, "QuickHelpText", value.asInstanceOf[js.Any])
+    inline def setQuickHelpText(value: String): Self = StObject.set(x, "QuickHelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
+    inline def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyle(value: Double): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Double): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

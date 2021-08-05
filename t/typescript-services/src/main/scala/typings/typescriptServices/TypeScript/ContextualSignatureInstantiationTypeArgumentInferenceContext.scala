@@ -8,14 +8,13 @@ trait ContextualSignatureInstantiationTypeArgumentInferenceContext
   extends StObject
      with TypeArgumentInferenceContext {
   
-  var contextualSignature: js.Any
+  /* private */ var contextualSignature: js.Any
   
-  var shouldFixContextualSignatureParameterTypes: js.Any
+  /* private */ var shouldFixContextualSignatureParameterTypes: js.Any
 }
 object ContextualSignatureInstantiationTypeArgumentInferenceContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _finalizeInferredTypeArguments: () => js.Array[PullTypeSymbol],
     addCandidateForInference: (PullTypeParameterSymbol, PullTypeSymbol) => Unit,
     addInferenceRoot: PullTypeParameterSymbol => Unit,
@@ -37,13 +36,10 @@ object ContextualSignatureInstantiationTypeArgumentInferenceContext {
     __obj.asInstanceOf[ContextualSignatureInstantiationTypeArgumentInferenceContext]
   }
   
-  @scala.inline
-  implicit class ContextualSignatureInstantiationTypeArgumentInferenceContextMutableBuilder[Self <: ContextualSignatureInstantiationTypeArgumentInferenceContext] (val x: Self) extends AnyVal {
+  extension [Self <: ContextualSignatureInstantiationTypeArgumentInferenceContext](x: Self) {
     
-    @scala.inline
-    def setContextualSignature(value: js.Any): Self = StObject.set(x, "contextualSignature", value.asInstanceOf[js.Any])
+    inline def setContextualSignature(value: js.Any): Self = StObject.set(x, "contextualSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldFixContextualSignatureParameterTypes(value: js.Any): Self = StObject.set(x, "shouldFixContextualSignatureParameterTypes", value.asInstanceOf[js.Any])
+    inline def setShouldFixContextualSignatureParameterTypes(value: js.Any): Self = StObject.set(x, "shouldFixContextualSignatureParameterTypes", value.asInstanceOf[js.Any])
   }
 }

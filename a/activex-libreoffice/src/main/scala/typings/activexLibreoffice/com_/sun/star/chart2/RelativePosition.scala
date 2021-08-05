@@ -41,22 +41,17 @@ trait RelativePosition extends StObject {
 }
 object RelativePosition {
   
-  @scala.inline
-  def apply(Anchor: Alignment, Primary: Double, Secondary: Double): RelativePosition = {
+  inline def apply(Anchor: Alignment, Primary: Double, Secondary: Double): RelativePosition = {
     val __obj = js.Dynamic.literal(Anchor = Anchor.asInstanceOf[js.Any], Primary = Primary.asInstanceOf[js.Any], Secondary = Secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativePosition]
   }
   
-  @scala.inline
-  implicit class RelativePositionMutableBuilder[Self <: RelativePosition] (val x: Self) extends AnyVal {
+  extension [Self <: RelativePosition](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Alignment): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Alignment): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary(value: Double): Self = StObject.set(x, "Secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Double): Self = StObject.set(x, "Secondary", value.asInstanceOf[js.Any])
   }
 }

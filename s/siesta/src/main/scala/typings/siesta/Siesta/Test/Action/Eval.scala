@@ -16,19 +16,15 @@ trait Eval
 }
 object Eval {
   
-  @scala.inline
-  def apply(): Eval = {
+  inline def apply(): Eval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Eval]
   }
   
-  @scala.inline
-  implicit class EvalMutableBuilder[Self <: Eval] (val x: Self) extends AnyVal {
+  extension [Self <: Eval](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

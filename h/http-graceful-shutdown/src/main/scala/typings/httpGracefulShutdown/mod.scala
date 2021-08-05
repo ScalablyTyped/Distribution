@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(server: js.Any): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
-  @scala.inline
-  def apply(server: js.Any, options: Options): js.Function0[js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  inline def apply(server: js.Any): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  inline def apply(server: js.Any, options: Options): js.Function0[js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Promise[Unit]]]
   
   @JSImport("http-graceful-shutdown", JSImport.Namespace)
   @js.native
@@ -29,44 +27,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
+      inline def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
+      inline def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
       
-      @scala.inline
-      def setFinally(value: () => Unit): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => Unit): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinallyUndefined: Self = StObject.set(x, "finally", js.undefined)
+      inline def setFinallyUndefined: Self = StObject.set(x, "finally", js.undefined)
       
-      @scala.inline
-      def setOnShutdown(value: /* signal */ String => js.Promise[Unit]): Self = StObject.set(x, "onShutdown", js.Any.fromFunction1(value))
+      inline def setOnShutdown(value: /* signal */ String => js.Promise[Unit]): Self = StObject.set(x, "onShutdown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShutdownUndefined: Self = StObject.set(x, "onShutdown", js.undefined)
+      inline def setOnShutdownUndefined: Self = StObject.set(x, "onShutdown", js.undefined)
       
-      @scala.inline
-      def setSignals(value: String): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+      inline def setSignals(value: String): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+      inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

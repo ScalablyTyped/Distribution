@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineJoinType extends StObject
 object LineJoinType {
   
-  @scala.inline
-  def bevel: typings.baiduApp.baiduAppStrings.bevel = "bevel".asInstanceOf[typings.baiduApp.baiduAppStrings.bevel]
+  inline def bevel: typings.baiduApp.baiduAppStrings.bevel = "bevel".asInstanceOf[typings.baiduApp.baiduAppStrings.bevel]
   
-  @scala.inline
-  def miter: typings.baiduApp.baiduAppStrings.miter = "miter".asInstanceOf[typings.baiduApp.baiduAppStrings.miter]
+  inline def miter: typings.baiduApp.baiduAppStrings.miter = "miter".asInstanceOf[typings.baiduApp.baiduAppStrings.miter]
   
-  @scala.inline
-  def round: typings.baiduApp.baiduAppStrings.round = "round".asInstanceOf[typings.baiduApp.baiduAppStrings.round]
+  inline def round: typings.baiduApp.baiduAppStrings.round = "round".asInstanceOf[typings.baiduApp.baiduAppStrings.round]
 }

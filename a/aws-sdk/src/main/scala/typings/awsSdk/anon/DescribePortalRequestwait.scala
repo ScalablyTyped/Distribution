@@ -19,22 +19,17 @@ trait DescribePortalRequestwait extends StObject {
 }
 object DescribePortalRequestwait {
   
-  @scala.inline
-  def apply(portalId: ID): DescribePortalRequestwait = {
+  inline def apply(portalId: ID): DescribePortalRequestwait = {
     val __obj = js.Dynamic.literal(portalId = portalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePortalRequestwait]
   }
   
-  @scala.inline
-  implicit class DescribePortalRequestwaitMutableBuilder[Self <: DescribePortalRequestwait] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePortalRequestwait](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait Layers extends StObject {
 }
 object Layers {
   
-  @scala.inline
-  def apply(): Layers = {
+  inline def apply(): Layers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Layers]
   }
   
-  @scala.inline
-  implicit class LayersMutableBuilder[Self <: Layers] (val x: Self) extends AnyVal {
+  extension [Self <: Layers](x: Self) {
     
-    @scala.inline
-    def setLayers(value: js.Array[VolumeAnnotationsVersion]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[VolumeAnnotationsVersion]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: VolumeAnnotationsVersion*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: VolumeAnnotationsVersion*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

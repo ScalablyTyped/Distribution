@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPrintErrors extends StObject
 object XlPrintErrors {
   
-  @scala.inline
-  def xlPrintErrorsBlank: `1` = 1.asInstanceOf[`1`]
+  inline def xlPrintErrorsBlank: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlPrintErrorsDash: `2` = 2.asInstanceOf[`2`]
+  inline def xlPrintErrorsDash: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPrintErrorsDisplayed: `0` = 0.asInstanceOf[`0`]
+  inline def xlPrintErrorsDisplayed: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlPrintErrorsNA: `3` = 3.asInstanceOf[`3`]
+  inline def xlPrintErrorsNA: `3` = 3.asInstanceOf[`3`]
 }

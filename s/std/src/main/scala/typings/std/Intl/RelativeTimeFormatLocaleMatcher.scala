@@ -18,9 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelativeTimeFormatLocaleMatcher extends StObject
 object RelativeTimeFormatLocaleMatcher {
   
-  @scala.inline
-  def `best fit`: typings.std.stdStrings.`best fit` = ("best fit").asInstanceOf[typings.std.stdStrings.`best fit`]
+  inline def `best fit`: typings.std.stdStrings.`best fit` = ("best fit").asInstanceOf[typings.std.stdStrings.`best fit`]
   
-  @scala.inline
-  def lookup: typings.std.stdStrings.lookup = "lookup".asInstanceOf[typings.std.stdStrings.lookup]
+  inline def lookup: typings.std.stdStrings.lookup = "lookup".asInstanceOf[typings.std.stdStrings.lookup]
 }

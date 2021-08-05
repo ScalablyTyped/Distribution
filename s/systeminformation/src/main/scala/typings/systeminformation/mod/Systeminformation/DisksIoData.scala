@@ -22,8 +22,7 @@ trait DisksIoData extends StObject {
 }
 object DisksIoData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ms: Double,
     rIO: Double,
     rIO_sec: Double,
@@ -36,28 +35,20 @@ object DisksIoData {
     __obj.asInstanceOf[DisksIoData]
   }
   
-  @scala.inline
-  implicit class DisksIoDataMutableBuilder[Self <: DisksIoData] (val x: Self) extends AnyVal {
+  extension [Self <: DisksIoData](x: Self) {
     
-    @scala.inline
-    def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+    inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIO(value: Double): Self = StObject.set(x, "rIO", value.asInstanceOf[js.Any])
+    inline def setRIO(value: Double): Self = StObject.set(x, "rIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIO_sec(value: Double): Self = StObject.set(x, "rIO_sec", value.asInstanceOf[js.Any])
+    inline def setRIO_sec(value: Double): Self = StObject.set(x, "rIO_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTIO(value: Double): Self = StObject.set(x, "tIO", value.asInstanceOf[js.Any])
+    inline def setTIO(value: Double): Self = StObject.set(x, "tIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTIO_sec(value: Double): Self = StObject.set(x, "tIO_sec", value.asInstanceOf[js.Any])
+    inline def setTIO_sec(value: Double): Self = StObject.set(x, "tIO_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIO(value: Double): Self = StObject.set(x, "wIO", value.asInstanceOf[js.Any])
+    inline def setWIO(value: Double): Self = StObject.set(x, "wIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIO_sec(value: Double): Self = StObject.set(x, "wIO_sec", value.asInstanceOf[js.Any])
+    inline def setWIO_sec(value: Double): Self = StObject.set(x, "wIO_sec", value.asInstanceOf[js.Any])
   }
 }

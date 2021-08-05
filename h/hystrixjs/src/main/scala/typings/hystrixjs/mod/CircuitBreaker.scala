@@ -16,8 +16,7 @@ trait CircuitBreaker extends StObject {
 }
 object CircuitBreaker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowRequest: () => Boolean,
     allowSingleTest: () => Boolean,
     isOpen: () => Boolean,
@@ -27,19 +26,14 @@ object CircuitBreaker {
     __obj.asInstanceOf[CircuitBreaker]
   }
   
-  @scala.inline
-  implicit class CircuitBreakerMutableBuilder[Self <: CircuitBreaker] (val x: Self) extends AnyVal {
+  extension [Self <: CircuitBreaker](x: Self) {
     
-    @scala.inline
-    def setAllowRequest(value: () => Boolean): Self = StObject.set(x, "allowRequest", js.Any.fromFunction0(value))
+    inline def setAllowRequest(value: () => Boolean): Self = StObject.set(x, "allowRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAllowSingleTest(value: () => Boolean): Self = StObject.set(x, "allowSingleTest", js.Any.fromFunction0(value))
+    inline def setAllowSingleTest(value: () => Boolean): Self = StObject.set(x, "allowSingleTest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+    inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkSuccess(value: () => Unit): Self = StObject.set(x, "markSuccess", js.Any.fromFunction0(value))
+    inline def setMarkSuccess(value: () => Unit): Self = StObject.set(x, "markSuccess", js.Any.fromFunction0(value))
   }
 }

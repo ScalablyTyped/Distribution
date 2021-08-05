@@ -12,19 +12,15 @@ trait CellRichTextValue
 }
 object CellRichTextValue {
   
-  @scala.inline
-  def apply(richText: js.Array[RichText]): CellRichTextValue = {
+  inline def apply(richText: js.Array[RichText]): CellRichTextValue = {
     val __obj = js.Dynamic.literal(richText = richText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellRichTextValue]
   }
   
-  @scala.inline
-  implicit class CellRichTextValueMutableBuilder[Self <: CellRichTextValue] (val x: Self) extends AnyVal {
+  extension [Self <: CellRichTextValue](x: Self) {
     
-    @scala.inline
-    def setRichText(value: js.Array[RichText]): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
+    inline def setRichText(value: js.Array[RichText]): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichTextVarargs(value: RichText*): Self = StObject.set(x, "richText", js.Array(value :_*))
+    inline def setRichTextVarargs(value: RichText*): Self = StObject.set(x, "richText", js.Array(value :_*))
   }
 }

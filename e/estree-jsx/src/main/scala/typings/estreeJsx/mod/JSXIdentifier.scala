@@ -17,20 +17,16 @@ trait JSXIdentifier
 }
 object JSXIdentifier {
   
-  @scala.inline
-  def apply(name: String): JSXIdentifier = {
+  inline def apply(name: String): JSXIdentifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[JSXIdentifier]
   }
   
-  @scala.inline
-  implicit class JSXIdentifierMutableBuilder[Self <: JSXIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: JSXIdentifier](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

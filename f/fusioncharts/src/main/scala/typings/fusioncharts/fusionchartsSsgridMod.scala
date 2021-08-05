@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fusionchartsSsgridMod {
   
-  @scala.inline
-  def apply(H: FusionChartStatic): FusionChartStatic = ^.asInstanceOf[js.Dynamic].apply(H.asInstanceOf[js.Any]).asInstanceOf[FusionChartStatic]
+  inline def apply(H: FusionChartStatic): FusionChartStatic = ^.asInstanceOf[js.Dynamic].apply(H.asInstanceOf[js.Any]).asInstanceOf[FusionChartStatic]
   
   @JSImport("fusioncharts/fusioncharts.ssgrid", JSImport.Namespace)
   @js.native

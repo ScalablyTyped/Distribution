@@ -20,28 +20,21 @@ trait ToImgopts extends StObject {
 }
 object ToImgopts {
   
-  @scala.inline
-  def apply(format: jpeg | png | webp | svg, height: Double, width: Double): ToImgopts = {
+  inline def apply(format: jpeg | png | webp | svg, height: Double, width: Double): ToImgopts = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToImgopts]
   }
   
-  @scala.inline
-  implicit class ToImgoptsMutableBuilder[Self <: ToImgopts] (val x: Self) extends AnyVal {
+  extension [Self <: ToImgopts](x: Self) {
     
-    @scala.inline
-    def setFormat(value: jpeg | png | webp | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpeg | png | webp | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

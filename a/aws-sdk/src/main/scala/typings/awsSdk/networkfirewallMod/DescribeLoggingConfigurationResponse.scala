@@ -15,25 +15,19 @@ trait DescribeLoggingConfigurationResponse extends StObject {
 }
 object DescribeLoggingConfigurationResponse {
   
-  @scala.inline
-  def apply(): DescribeLoggingConfigurationResponse = {
+  inline def apply(): DescribeLoggingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLoggingConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLoggingConfigurationResponseMutableBuilder[Self <: DescribeLoggingConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoggingConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
+    inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
+    inline def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
-    @scala.inline
-    def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
+    inline def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigurationUndefined: Self = StObject.set(x, "LoggingConfiguration", js.undefined)
+    inline def setLoggingConfigurationUndefined: Self = StObject.set(x, "LoggingConfiguration", js.undefined)
   }
 }

@@ -33,37 +33,27 @@ trait ActionType extends StObject {
 }
 object ActionType {
   
-  @scala.inline
-  def apply(id: ActionTypeId, inputArtifactDetails: ArtifactDetails, outputArtifactDetails: ArtifactDetails): ActionType = {
+  inline def apply(id: ActionTypeId, inputArtifactDetails: ArtifactDetails, outputArtifactDetails: ArtifactDetails): ActionType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], inputArtifactDetails = inputArtifactDetails.asInstanceOf[js.Any], outputArtifactDetails = outputArtifactDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionType]
   }
   
-  @scala.inline
-  implicit class ActionTypeMutableBuilder[Self <: ActionType] (val x: Self) extends AnyVal {
+  extension [Self <: ActionType](x: Self) {
     
-    @scala.inline
-    def setActionConfigurationProperties(value: ActionConfigurationPropertyList): Self = StObject.set(x, "actionConfigurationProperties", value.asInstanceOf[js.Any])
+    inline def setActionConfigurationProperties(value: ActionConfigurationPropertyList): Self = StObject.set(x, "actionConfigurationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionConfigurationPropertiesUndefined: Self = StObject.set(x, "actionConfigurationProperties", js.undefined)
+    inline def setActionConfigurationPropertiesUndefined: Self = StObject.set(x, "actionConfigurationProperties", js.undefined)
     
-    @scala.inline
-    def setActionConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "actionConfigurationProperties", js.Array(value :_*))
+    inline def setActionConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "actionConfigurationProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: ActionTypeId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ActionTypeId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "inputArtifactDetails", value.asInstanceOf[js.Any])
+    inline def setInputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "inputArtifactDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "outputArtifactDetails", value.asInstanceOf[js.Any])
+    inline def setOutputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "outputArtifactDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: ActionTypeSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: ActionTypeSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
   }
 }

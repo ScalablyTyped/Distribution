@@ -15,22 +15,17 @@ trait SketchMSGraphicsContextSettings extends StObject {
 }
 object SketchMSGraphicsContextSettings {
   
-  @scala.inline
-  def apply(blendMode: SketchMSGraphicsContextSettingsBlendMode, opacity: Double): SketchMSGraphicsContextSettings = {
+  inline def apply(blendMode: SketchMSGraphicsContextSettingsBlendMode, opacity: Double): SketchMSGraphicsContextSettings = {
     val __obj = js.Dynamic.literal(_class = "graphicsContextSettings", blendMode = blendMode.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSGraphicsContextSettings]
   }
   
-  @scala.inline
-  implicit class SketchMSGraphicsContextSettingsMutableBuilder[Self <: SketchMSGraphicsContextSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSGraphicsContextSettings](x: Self) {
     
-    @scala.inline
-    def setBlendMode(value: SketchMSGraphicsContextSettingsBlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    inline def setBlendMode(value: SketchMSGraphicsContextSettingsBlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: graphicsContextSettings): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: graphicsContextSettings): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

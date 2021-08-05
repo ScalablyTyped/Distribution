@@ -43,46 +43,33 @@ trait SliceViewModelProperties extends StObject {
 }
 object SliceViewModelProperties {
   
-  @scala.inline
-  def apply(): SliceViewModelProperties = {
+  inline def apply(): SliceViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliceViewModelProperties]
   }
   
-  @scala.inline
-  implicit class SliceViewModelPropertiesMutableBuilder[Self <: SliceViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SliceViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setExcludeGroundSurface(value: Boolean): Self = StObject.set(x, "excludeGroundSurface", value.asInstanceOf[js.Any])
+    inline def setExcludeGroundSurface(value: Boolean): Self = StObject.set(x, "excludeGroundSurface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeGroundSurfaceUndefined: Self = StObject.set(x, "excludeGroundSurface", js.undefined)
+    inline def setExcludeGroundSurfaceUndefined: Self = StObject.set(x, "excludeGroundSurface", js.undefined)
     
-    @scala.inline
-    def setExcludedLayers(value: CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]): Self = StObject.set(x, "excludedLayers", value.asInstanceOf[js.Any])
+    inline def setExcludedLayers(value: CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]): Self = StObject.set(x, "excludedLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedLayersUndefined: Self = StObject.set(x, "excludedLayers", js.undefined)
+    inline def setExcludedLayersUndefined: Self = StObject.set(x, "excludedLayers", js.undefined)
     
-    @scala.inline
-    def setExcludedLayersVarargs(value: (LayerProperties | BuildingComponentSublayerProperties)*): Self = StObject.set(x, "excludedLayers", js.Array(value :_*))
+    inline def setExcludedLayersVarargs(value: (LayerProperties | BuildingComponentSublayerProperties)*): Self = StObject.set(x, "excludedLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setShape(value: SlicePlaneProperties): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: SlicePlaneProperties): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setTiltEnabled(value: Boolean): Self = StObject.set(x, "tiltEnabled", value.asInstanceOf[js.Any])
+    inline def setTiltEnabled(value: Boolean): Self = StObject.set(x, "tiltEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltEnabledUndefined: Self = StObject.set(x, "tiltEnabled", js.undefined)
+    inline def setTiltEnabledUndefined: Self = StObject.set(x, "tiltEnabled", js.undefined)
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

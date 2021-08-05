@@ -24,8 +24,7 @@ trait XRecycler
 }
 object XRecycler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -35,10 +34,8 @@ object XRecycler {
     __obj.asInstanceOf[XRecycler]
   }
   
-  @scala.inline
-  implicit class XRecyclerMutableBuilder[Self <: XRecycler] (val x: Self) extends AnyVal {
+  extension [Self <: XRecycler](x: Self) {
     
-    @scala.inline
-    def setTrashContent(value: (XCommandProcessor, XContentIdentifier) => Unit): Self = StObject.set(x, "trashContent", js.Any.fromFunction2(value))
+    inline def setTrashContent(value: (XCommandProcessor, XContentIdentifier) => Unit): Self = StObject.set(x, "trashContent", js.Any.fromFunction2(value))
   }
 }

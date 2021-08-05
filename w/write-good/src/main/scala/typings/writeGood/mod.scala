@@ -11,10 +11,8 @@ object mod {
   /**
     * Returns a list of violations in the supplied `text`.
     */
-  @scala.inline
-  def apply(text: String): js.Array[Problem] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Problem]]
-  @scala.inline
-  def apply(text: String, options: Options): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
+  inline def apply(text: String): js.Array[Problem] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Problem]]
+  inline def apply(text: String, options: Options): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
   
   @JSImport("write-good", JSImport.Namespace)
   @js.native
@@ -53,68 +51,48 @@ object mod {
   }
   object DefaultChecks {
     
-    @scala.inline
-    def apply(): DefaultChecks = {
+    inline def apply(): DefaultChecks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultChecks]
     }
     
-    @scala.inline
-    implicit class DefaultChecksMutableBuilder[Self <: DefaultChecks] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultChecks](x: Self) {
       
-      @scala.inline
-      def setAdverb(value: Boolean): Self = StObject.set(x, "adverb", value.asInstanceOf[js.Any])
+      inline def setAdverb(value: Boolean): Self = StObject.set(x, "adverb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdverbUndefined: Self = StObject.set(x, "adverb", js.undefined)
+      inline def setAdverbUndefined: Self = StObject.set(x, "adverb", js.undefined)
       
-      @scala.inline
-      def setCliches(value: Boolean): Self = StObject.set(x, "cliches", value.asInstanceOf[js.Any])
+      inline def setCliches(value: Boolean): Self = StObject.set(x, "cliches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClichesUndefined: Self = StObject.set(x, "cliches", js.undefined)
+      inline def setClichesUndefined: Self = StObject.set(x, "cliches", js.undefined)
       
-      @scala.inline
-      def setEprime(value: Boolean): Self = StObject.set(x, "eprime", value.asInstanceOf[js.Any])
+      inline def setEprime(value: Boolean): Self = StObject.set(x, "eprime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEprimeUndefined: Self = StObject.set(x, "eprime", js.undefined)
+      inline def setEprimeUndefined: Self = StObject.set(x, "eprime", js.undefined)
       
-      @scala.inline
-      def setIllusion(value: Boolean): Self = StObject.set(x, "illusion", value.asInstanceOf[js.Any])
+      inline def setIllusion(value: Boolean): Self = StObject.set(x, "illusion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIllusionUndefined: Self = StObject.set(x, "illusion", js.undefined)
+      inline def setIllusionUndefined: Self = StObject.set(x, "illusion", js.undefined)
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
       
-      @scala.inline
-      def setSo(value: Boolean): Self = StObject.set(x, "so", value.asInstanceOf[js.Any])
+      inline def setSo(value: Boolean): Self = StObject.set(x, "so", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoUndefined: Self = StObject.set(x, "so", js.undefined)
+      inline def setSoUndefined: Self = StObject.set(x, "so", js.undefined)
       
-      @scala.inline
-      def setThereIs(value: Boolean): Self = StObject.set(x, "thereIs", value.asInstanceOf[js.Any])
+      inline def setThereIs(value: Boolean): Self = StObject.set(x, "thereIs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThereIsUndefined: Self = StObject.set(x, "thereIs", js.undefined)
+      inline def setThereIsUndefined: Self = StObject.set(x, "thereIs", js.undefined)
       
-      @scala.inline
-      def setTooWordy(value: Boolean): Self = StObject.set(x, "tooWordy", value.asInstanceOf[js.Any])
+      inline def setTooWordy(value: Boolean): Self = StObject.set(x, "tooWordy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooWordyUndefined: Self = StObject.set(x, "tooWordy", js.undefined)
+      inline def setTooWordyUndefined: Self = StObject.set(x, "tooWordy", js.undefined)
       
-      @scala.inline
-      def setWeasel(value: Boolean): Self = StObject.set(x, "weasel", value.asInstanceOf[js.Any])
+      inline def setWeasel(value: Boolean): Self = StObject.set(x, "weasel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeaselUndefined: Self = StObject.set(x, "weasel", js.undefined)
+      inline def setWeaselUndefined: Self = StObject.set(x, "weasel", js.undefined)
     }
   }
   
@@ -133,29 +111,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChecks(value: CustomChecks): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+      inline def setChecks(value: CustomChecks): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+      inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
   
@@ -172,23 +143,18 @@ object mod {
   }
   object Problem {
     
-    @scala.inline
-    def apply(index: Double, offset: Double, reason: String): Problem = {
+    inline def apply(index: Double, offset: Double, reason: String): Problem = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[Problem]
     }
     
-    @scala.inline
-    implicit class ProblemMutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
+    extension [Self <: Problem](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
 }

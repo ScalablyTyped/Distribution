@@ -22,19 +22,15 @@ trait IngressClassSpec extends StObject {
 }
 object IngressClassSpec {
   
-  @scala.inline
-  def apply(controller: String, parameters: TypedLocalObjectReference): IngressClassSpec = {
+  inline def apply(controller: String, parameters: TypedLocalObjectReference): IngressClassSpec = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngressClassSpec]
   }
   
-  @scala.inline
-  implicit class IngressClassSpecMutableBuilder[Self <: IngressClassSpec] (val x: Self) extends AnyVal {
+  extension [Self <: IngressClassSpec](x: Self) {
     
-    @scala.inline
-    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: TypedLocalObjectReference): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TypedLocalObjectReference): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }
 }

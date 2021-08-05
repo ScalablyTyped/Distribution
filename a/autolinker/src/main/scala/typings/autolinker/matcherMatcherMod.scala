@@ -24,7 +24,7 @@ object matcherMatcherMod {
       * Reference to the AnchorTagBuilder instance to use to generate HTML tags
       * for {@link Autolinker.match.Match Matches}.
       */
-    var __jsduckDummyDocProp: js.Any = js.native
+    /* private */ var __jsduckDummyDocProp: js.Any = js.native
     
     /**
       * Parses the input `text` and returns the array of {@link Autolinker.match.Match Matches}
@@ -36,7 +36,7 @@ object matcherMatcherMod {
       */
     def parseMatches(text: String): js.Array[Match] = js.native
     
-    var tagBuilder: AnchorTagBuilder = js.native
+    /* protected */ var tagBuilder: AnchorTagBuilder = js.native
   }
   
   trait MatcherConfig extends StObject {
@@ -45,17 +45,14 @@ object matcherMatcherMod {
   }
   object MatcherConfig {
     
-    @scala.inline
-    def apply(tagBuilder: AnchorTagBuilder): MatcherConfig = {
+    inline def apply(tagBuilder: AnchorTagBuilder): MatcherConfig = {
       val __obj = js.Dynamic.literal(tagBuilder = tagBuilder.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatcherConfig]
     }
     
-    @scala.inline
-    implicit class MatcherConfigMutableBuilder[Self <: MatcherConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MatcherConfig](x: Self) {
       
-      @scala.inline
-      def setTagBuilder(value: AnchorTagBuilder): Self = StObject.set(x, "tagBuilder", value.asInstanceOf[js.Any])
+      inline def setTagBuilder(value: AnchorTagBuilder): Self = StObject.set(x, "tagBuilder", value.asInstanceOf[js.Any])
     }
   }
 }

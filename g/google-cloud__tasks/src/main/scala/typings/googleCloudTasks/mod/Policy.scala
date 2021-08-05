@@ -14,25 +14,19 @@ trait Policy extends StObject {
 }
 object Policy {
   
-  @scala.inline
-  def apply(bindings: js.Array[Binding], etag: String, version: Double): Policy = {
+  inline def apply(bindings: js.Array[Binding], etag: String, version: Double): Policy = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
   
-  @scala.inline
-  implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
+  extension [Self <: Policy](x: Self) {
     
-    @scala.inline
-    def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait WindowsInformationProtectionIPRangeCollection extends StObject {
 }
 object WindowsInformationProtectionIPRangeCollection {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionIPRangeCollection = {
+  inline def apply(): WindowsInformationProtectionIPRangeCollection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionIPRangeCollection]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionIPRangeCollectionMutableBuilder[Self <: WindowsInformationProtectionIPRangeCollection] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionIPRangeCollection](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setRanges(value: js.Array[IpRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[IpRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: IpRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: IpRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

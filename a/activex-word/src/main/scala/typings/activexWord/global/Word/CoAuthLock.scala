@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CoAuthLock")
 @js.native
-class CoAuthLock protected ()
+/* private */ class CoAuthLock ()
   extends StObject
      with typings.activexWord.Word.CoAuthLock {
   
@@ -35,7 +35,7 @@ class CoAuthLock protected ()
   /* CompleteClass */
   override def Unlock(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CoAuthLock_typekey")
   var WordDotCoAuthLock_typekey: typings.activexWord.Word.CoAuthLock = js.native
 }

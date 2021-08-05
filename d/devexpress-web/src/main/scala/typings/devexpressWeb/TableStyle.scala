@@ -18,16 +18,13 @@ trait TableStyle
 }
 object TableStyle {
   
-  @scala.inline
-  def apply(isDeleted: Boolean, name: String, parent: TableStyle): TableStyle = {
+  inline def apply(isDeleted: Boolean, name: String, parent: TableStyle): TableStyle = {
     val __obj = js.Dynamic.literal(isDeleted = isDeleted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStyle]
   }
   
-  @scala.inline
-  implicit class TableStyleMutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TableStyle](x: Self) {
     
-    @scala.inline
-    def setParent(value: TableStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TableStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

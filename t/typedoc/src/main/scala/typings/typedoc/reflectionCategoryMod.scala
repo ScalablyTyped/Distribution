@@ -16,7 +16,7 @@ object reflectionCategoryMod {
     
     var children: js.Array[Reflection] = js.native
     
-    var getAllChildrenHaveOwnDocument: js.Any = js.native
+    /* private */ var getAllChildrenHaveOwnDocument: js.Any = js.native
     
     var title: String = js.native
   }

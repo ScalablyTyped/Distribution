@@ -33,37 +33,27 @@ trait TrustedAdvisorResourceDetail extends StObject {
 }
 object TrustedAdvisorResourceDetail {
   
-  @scala.inline
-  def apply(metadata: StringList, resourceId: String, status: String): TrustedAdvisorResourceDetail = {
+  inline def apply(metadata: StringList, resourceId: String, status: String): TrustedAdvisorResourceDetail = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorResourceDetail]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorResourceDetailMutableBuilder[Self <: TrustedAdvisorResourceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorResourceDetail](x: Self) {
     
-    @scala.inline
-    def setIsSuppressed(value: Boolean): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
+    inline def setIsSuppressed(value: Boolean): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuppressedUndefined: Self = StObject.set(x, "isSuppressed", js.undefined)
+    inline def setIsSuppressedUndefined: Self = StObject.set(x, "isSuppressed", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

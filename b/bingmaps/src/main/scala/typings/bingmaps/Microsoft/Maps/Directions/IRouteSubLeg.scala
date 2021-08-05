@@ -21,25 +21,19 @@ trait IRouteSubLeg extends StObject {
 }
 object IRouteSubLeg {
   
-  @scala.inline
-  def apply(actualEnd: Location, actualStart: Location, endDescription: String, startDescription: String): IRouteSubLeg = {
+  inline def apply(actualEnd: Location, actualStart: Location, endDescription: String, startDescription: String): IRouteSubLeg = {
     val __obj = js.Dynamic.literal(actualEnd = actualEnd.asInstanceOf[js.Any], actualStart = actualStart.asInstanceOf[js.Any], endDescription = endDescription.asInstanceOf[js.Any], startDescription = startDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouteSubLeg]
   }
   
-  @scala.inline
-  implicit class IRouteSubLegMutableBuilder[Self <: IRouteSubLeg] (val x: Self) extends AnyVal {
+  extension [Self <: IRouteSubLeg](x: Self) {
     
-    @scala.inline
-    def setActualEnd(value: Location): Self = StObject.set(x, "actualEnd", value.asInstanceOf[js.Any])
+    inline def setActualEnd(value: Location): Self = StObject.set(x, "actualEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualStart(value: Location): Self = StObject.set(x, "actualStart", value.asInstanceOf[js.Any])
+    inline def setActualStart(value: Location): Self = StObject.set(x, "actualStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDescription(value: String): Self = StObject.set(x, "endDescription", value.asInstanceOf[js.Any])
+    inline def setEndDescription(value: String): Self = StObject.set(x, "endDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDescription(value: String): Self = StObject.set(x, "startDescription", value.asInstanceOf[js.Any])
+    inline def setStartDescription(value: String): Self = StObject.set(x, "startDescription", value.asInstanceOf[js.Any])
   }
 }

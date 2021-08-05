@@ -13,16 +13,13 @@ trait CancelExportTaskMessage extends StObject {
 }
 object CancelExportTaskMessage {
   
-  @scala.inline
-  def apply(ExportTaskIdentifier: String): CancelExportTaskMessage = {
+  inline def apply(ExportTaskIdentifier: String): CancelExportTaskMessage = {
     val __obj = js.Dynamic.literal(ExportTaskIdentifier = ExportTaskIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelExportTaskMessage]
   }
   
-  @scala.inline
-  implicit class CancelExportTaskMessageMutableBuilder[Self <: CancelExportTaskMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CancelExportTaskMessage](x: Self) {
     
-    @scala.inline
-    def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
+    inline def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
   }
 }

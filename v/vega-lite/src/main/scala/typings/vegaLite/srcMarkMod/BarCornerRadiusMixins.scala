@@ -15,19 +15,15 @@ trait BarCornerRadiusMixins[ES /* <: ExprOrSignalRef */] extends StObject {
 }
 object BarCornerRadiusMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprOrSignalRef */](): BarCornerRadiusMixins[ES] = {
+  inline def apply[ES /* <: ExprOrSignalRef */](): BarCornerRadiusMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarCornerRadiusMixins[ES]]
   }
   
-  @scala.inline
-  implicit class BarCornerRadiusMixinsMutableBuilder[Self <: BarCornerRadiusMixins[?], ES /* <: ExprOrSignalRef */] (val x: Self & BarCornerRadiusMixins[ES]) extends AnyVal {
+  extension [Self <: BarCornerRadiusMixins[?], ES /* <: ExprOrSignalRef */](x: Self & BarCornerRadiusMixins[ES]) {
     
-    @scala.inline
-    def setCornerRadiusEnd(value: Double | ES): Self = StObject.set(x, "cornerRadiusEnd", value.asInstanceOf[js.Any])
+    inline def setCornerRadiusEnd(value: Double | ES): Self = StObject.set(x, "cornerRadiusEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusEndUndefined: Self = StObject.set(x, "cornerRadiusEnd", js.undefined)
+    inline def setCornerRadiusEndUndefined: Self = StObject.set(x, "cornerRadiusEnd", js.undefined)
   }
 }

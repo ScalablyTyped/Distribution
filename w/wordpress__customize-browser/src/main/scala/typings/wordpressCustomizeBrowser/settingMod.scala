@@ -40,23 +40,18 @@ object settingMod {
   }
   object SettingOptions {
     
-    @scala.inline
-    def apply(dirty: Boolean, previewer: Previewer[String], transport: String): SettingOptions = {
+    inline def apply(dirty: Boolean, previewer: Previewer[String], transport: String): SettingOptions = {
       val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], previewer = previewer.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingOptions]
     }
     
-    @scala.inline
-    implicit class SettingOptionsMutableBuilder[Self <: SettingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SettingOptions](x: Self) {
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewer(value: Previewer[String]): Self = StObject.set(x, "previewer", value.asInstanceOf[js.Any])
+      inline def setPreviewer(value: Previewer[String]): Self = StObject.set(x, "previewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     }
   }
 }

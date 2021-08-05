@@ -27,8 +27,7 @@ trait DocumentDataSource
      with XDocumentDataSource
 object DocumentDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmarks: XNameAccess,
     DatabaseDocument: XOfficeDatabaseDocument,
     Info: SafeArray[PropertyValue],

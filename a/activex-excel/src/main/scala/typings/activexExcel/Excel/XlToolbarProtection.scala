@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlToolbarProtection extends StObject
 object XlToolbarProtection {
   
-  @scala.inline
-  def xlNoButtonChanges: `1` = 1.asInstanceOf[`1`]
+  inline def xlNoButtonChanges: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlNoChanges: `4` = 4.asInstanceOf[`4`]
+  inline def xlNoChanges: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlNoDockingChanges: `3` = 3.asInstanceOf[`3`]
+  inline def xlNoDockingChanges: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlNoShapeChanges: `2` = 2.asInstanceOf[`2`]
+  inline def xlNoShapeChanges: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlToolbarProtectionNone: `-4143` = -4143.asInstanceOf[`-4143`]
+  inline def xlToolbarProtectionNone: `-4143` = -4143.asInstanceOf[`-4143`]
 }

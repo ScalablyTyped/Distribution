@@ -22,52 +22,37 @@ trait ServiceSpec
 }
 object ServiceSpec {
   
-  @scala.inline
-  def apply(): ServiceSpec = {
+  inline def apply(): ServiceSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceSpec]
   }
   
-  @scala.inline
-  implicit class ServiceSpecMutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSpec](x: Self) {
     
-    @scala.inline
-    def setEndpointSpec(value: EndpointSpec): Self = StObject.set(x, "EndpointSpec", value.asInstanceOf[js.Any])
+    inline def setEndpointSpec(value: EndpointSpec): Self = StObject.set(x, "EndpointSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointSpecUndefined: Self = StObject.set(x, "EndpointSpec", js.undefined)
+    inline def setEndpointSpecUndefined: Self = StObject.set(x, "EndpointSpec", js.undefined)
     
-    @scala.inline
-    def setMode(value: ServiceMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ServiceMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setNetworks(value: js.Array[NetworkAttachmentConfig]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: js.Array[NetworkAttachmentConfig]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
+    inline def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
-    @scala.inline
-    def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value :_*))
     
-    @scala.inline
-    def setRollbackConfig(value: UpdateConfig): Self = StObject.set(x, "RollbackConfig", value.asInstanceOf[js.Any])
+    inline def setRollbackConfig(value: UpdateConfig): Self = StObject.set(x, "RollbackConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollbackConfigUndefined: Self = StObject.set(x, "RollbackConfig", js.undefined)
+    inline def setRollbackConfigUndefined: Self = StObject.set(x, "RollbackConfig", js.undefined)
     
-    @scala.inline
-    def setTaskTemplate(value: TaskSpec): Self = StObject.set(x, "TaskTemplate", value.asInstanceOf[js.Any])
+    inline def setTaskTemplate(value: TaskSpec): Self = StObject.set(x, "TaskTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTemplateUndefined: Self = StObject.set(x, "TaskTemplate", js.undefined)
+    inline def setTaskTemplateUndefined: Self = StObject.set(x, "TaskTemplate", js.undefined)
     
-    @scala.inline
-    def setUpdateConfig(value: UpdateConfig): Self = StObject.set(x, "UpdateConfig", value.asInstanceOf[js.Any])
+    inline def setUpdateConfig(value: UpdateConfig): Self = StObject.set(x, "UpdateConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateConfigUndefined: Self = StObject.set(x, "UpdateConfig", js.undefined)
+    inline def setUpdateConfigUndefined: Self = StObject.set(x, "UpdateConfig", js.undefined)
   }
 }

@@ -13,31 +13,23 @@ trait TimelineFormatOption extends StObject {
 }
 object TimelineFormatOption {
   
-  @scala.inline
-  def apply(): TimelineFormatOption = {
+  inline def apply(): TimelineFormatOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineFormatOption]
   }
   
-  @scala.inline
-  implicit class TimelineFormatOptionMutableBuilder[Self <: TimelineFormatOption] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFormatOption](x: Self) {
     
-    @scala.inline
-    def setMajorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "majorLabels", value.asInstanceOf[js.Any])
+    inline def setMajorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "majorLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorLabelsFunction3(value: (/* date */ Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "majorLabels", js.Any.fromFunction3(value))
+    inline def setMajorLabelsFunction3(value: (/* date */ Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "majorLabels", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMajorLabelsUndefined: Self = StObject.set(x, "majorLabels", js.undefined)
+    inline def setMajorLabelsUndefined: Self = StObject.set(x, "majorLabels", js.undefined)
     
-    @scala.inline
-    def setMinorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "minorLabels", value.asInstanceOf[js.Any])
+    inline def setMinorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "minorLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorLabelsFunction3(value: (/* date */ Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "minorLabels", js.Any.fromFunction3(value))
+    inline def setMinorLabelsFunction3(value: (/* date */ Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "minorLabels", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMinorLabelsUndefined: Self = StObject.set(x, "minorLabels", js.undefined)
+    inline def setMinorLabelsUndefined: Self = StObject.set(x, "minorLabels", js.undefined)
   }
 }

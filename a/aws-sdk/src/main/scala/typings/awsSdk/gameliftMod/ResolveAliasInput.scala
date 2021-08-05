@@ -13,16 +13,13 @@ trait ResolveAliasInput extends StObject {
 }
 object ResolveAliasInput {
   
-  @scala.inline
-  def apply(AliasId: AliasIdOrArn): ResolveAliasInput = {
+  inline def apply(AliasId: AliasIdOrArn): ResolveAliasInput = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveAliasInput]
   }
   
-  @scala.inline
-  implicit class ResolveAliasInputMutableBuilder[Self <: ResolveAliasInput] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveAliasInput](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
   }
 }

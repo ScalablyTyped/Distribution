@@ -13,19 +13,15 @@ trait SchemaAddressable extends StObject {
 }
 object SchemaAddressable {
   
-  @scala.inline
-  def apply(): SchemaAddressable = {
+  inline def apply(): SchemaAddressable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddressable]
   }
   
-  @scala.inline
-  implicit class SchemaAddressableMutableBuilder[Self <: SchemaAddressable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddressable](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
   }
 }

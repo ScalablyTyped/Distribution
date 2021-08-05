@@ -11,16 +11,13 @@ trait Screen[Options, NavigationScreenPropType] extends StObject {
 }
 object Screen {
   
-  @scala.inline
-  def apply[Options, NavigationScreenPropType](screen: NavigationComponent[Options, NavigationScreenPropType]): Screen[Options, NavigationScreenPropType] = {
+  inline def apply[Options, NavigationScreenPropType](screen: NavigationComponent[Options, NavigationScreenPropType]): Screen[Options, NavigationScreenPropType] = {
     val __obj = js.Dynamic.literal(screen = screen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Screen[Options, NavigationScreenPropType]]
   }
   
-  @scala.inline
-  implicit class ScreenMutableBuilder[Self <: Screen[?, ?], Options, NavigationScreenPropType] (val x: Self & (Screen[Options, NavigationScreenPropType])) extends AnyVal {
+  extension [Self <: Screen[?, ?], Options, NavigationScreenPropType](x: Self & (Screen[Options, NavigationScreenPropType])) {
     
-    @scala.inline
-    def setScreen(value: NavigationComponent[Options, NavigationScreenPropType]): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: NavigationComponent[Options, NavigationScreenPropType]): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
   }
 }

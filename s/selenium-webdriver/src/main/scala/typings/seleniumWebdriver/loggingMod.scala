@@ -95,8 +95,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.ALL")
     @js.native
     def ALL: Level = js.native
-    @scala.inline
-    def ALL_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
+    inline def ALL_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
     
     /**
       * Log messages with a level of `700` or higher.
@@ -105,8 +104,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.DEBUG")
     @js.native
     def DEBUG: Level = js.native
-    @scala.inline
-    def DEBUG_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+    inline def DEBUG_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
     
     /**
       * Log messages with a level of `500` or higher.
@@ -123,8 +121,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.FINER")
     @js.native
     def FINER: Level = js.native
-    @scala.inline
-    def FINER_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINER")(x.asInstanceOf[js.Any])
+    inline def FINER_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINER")(x.asInstanceOf[js.Any])
     
     /**
       * Log messages with a level of `300` or higher.
@@ -133,11 +130,9 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.FINEST")
     @js.native
     def FINEST: Level = js.native
-    @scala.inline
-    def FINEST_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINEST")(x.asInstanceOf[js.Any])
+    inline def FINEST_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINEST")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FINE_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINE")(x.asInstanceOf[js.Any])
+    inline def FINE_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINE")(x.asInstanceOf[js.Any])
     
     /**
       * Log messages with a level of `800` or higher.
@@ -146,8 +141,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.INFO")
     @js.native
     def INFO: Level = js.native
-    @scala.inline
-    def INFO_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
+    inline def INFO_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates no log messages should be recorded.
@@ -156,8 +150,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.OFF")
     @js.native
     def OFF: Level = js.native
-    @scala.inline
-    def OFF_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFF")(x.asInstanceOf[js.Any])
+    inline def OFF_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFF")(x.asInstanceOf[js.Any])
     
     /**
       * Log messages with a level of `1000` or higher.
@@ -166,8 +159,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.SEVERE")
     @js.native
     def SEVERE: Level = js.native
-    @scala.inline
-    def SEVERE_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEVERE")(x.asInstanceOf[js.Any])
+    inline def SEVERE_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEVERE")(x.asInstanceOf[js.Any])
     
     /**
       * Log messages with a level of `900` or higher.
@@ -176,8 +168,7 @@ object loggingMod {
     @JSImport("selenium-webdriver/lib/logging", "Level.WARNING")
     @js.native
     def WARNING: Level = js.native
-    @scala.inline
-    def WARNING_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
+    inline def WARNING_=(x: Level): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("selenium-webdriver/lib/logging", "LogManager")
@@ -366,28 +357,19 @@ object loggingMod {
   @js.native
   val Type: IType = js.native
   
-  @scala.inline
-  def addConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")().asInstanceOf[Unit]
-  @scala.inline
-  def addConsoleHandler(opt_logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")().asInstanceOf[Unit]
+  inline def addConsoleHandler(opt_logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getLevel(nameOrValue: String): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[Level]
-  @scala.inline
-  def getLevel(nameOrValue: Double): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[Level]
+  inline def getLevel(nameOrValue: String): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[Level]
+  inline def getLevel(nameOrValue: Double): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[Level]
   
-  @scala.inline
-  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
-  @scala.inline
-  def getLogger(name: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(name.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  inline def getLogger(name: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(name.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  @scala.inline
-  def installConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installConsoleHandler")().asInstanceOf[Unit]
+  inline def installConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installConsoleHandler")().asInstanceOf[Unit]
   
-  @scala.inline
-  def removeConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")().asInstanceOf[Unit]
-  @scala.inline
-  def removeConsoleHandler(opt_logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")().asInstanceOf[Unit]
+  inline def removeConsoleHandler(opt_logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IEntryJSON extends StObject {
     
@@ -401,27 +383,21 @@ object loggingMod {
   }
   object IEntryJSON {
     
-    @scala.inline
-    def apply(level: String, message: String, timestamp: Double, `type`: String): IEntryJSON = {
+    inline def apply(level: String, message: String, timestamp: Double, `type`: String): IEntryJSON = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEntryJSON]
     }
     
-    @scala.inline
-    implicit class IEntryJSONMutableBuilder[Self <: IEntryJSON] (val x: Self) extends AnyVal {
+    extension [Self <: IEntryJSON](x: Self) {
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -444,29 +420,22 @@ object loggingMod {
   }
   object IType {
     
-    @scala.inline
-    def apply(BROWSER: String, CLIENT: String, DRIVER: String, PERFORMANCE: String, SERVER: String): IType = {
+    inline def apply(BROWSER: String, CLIENT: String, DRIVER: String, PERFORMANCE: String, SERVER: String): IType = {
       val __obj = js.Dynamic.literal(BROWSER = BROWSER.asInstanceOf[js.Any], CLIENT = CLIENT.asInstanceOf[js.Any], DRIVER = DRIVER.asInstanceOf[js.Any], PERFORMANCE = PERFORMANCE.asInstanceOf[js.Any], SERVER = SERVER.asInstanceOf[js.Any])
       __obj.asInstanceOf[IType]
     }
     
-    @scala.inline
-    implicit class ITypeMutableBuilder[Self <: IType] (val x: Self) extends AnyVal {
+    extension [Self <: IType](x: Self) {
       
-      @scala.inline
-      def setBROWSER(value: String): Self = StObject.set(x, "BROWSER", value.asInstanceOf[js.Any])
+      inline def setBROWSER(value: String): Self = StObject.set(x, "BROWSER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLIENT(value: String): Self = StObject.set(x, "CLIENT", value.asInstanceOf[js.Any])
+      inline def setCLIENT(value: String): Self = StObject.set(x, "CLIENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDRIVER(value: String): Self = StObject.set(x, "DRIVER", value.asInstanceOf[js.Any])
+      inline def setDRIVER(value: String): Self = StObject.set(x, "DRIVER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPERFORMANCE(value: String): Self = StObject.set(x, "PERFORMANCE", value.asInstanceOf[js.Any])
+      inline def setPERFORMANCE(value: String): Self = StObject.set(x, "PERFORMANCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSERVER(value: String): Self = StObject.set(x, "SERVER", value.asInstanceOf[js.Any])
+      inline def setSERVER(value: String): Self = StObject.set(x, "SERVER", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -24,58 +24,41 @@ trait DPlayerDanmaku extends StObject {
 }
 object DPlayerDanmaku {
   
-  @scala.inline
-  def apply(api: String, id: String): DPlayerDanmaku = {
+  inline def apply(api: String, id: String): DPlayerDanmaku = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerDanmaku]
   }
   
-  @scala.inline
-  implicit class DPlayerDanmakuMutableBuilder[Self <: DPlayerDanmaku] (val x: Self) extends AnyVal {
+  extension [Self <: DPlayerDanmaku](x: Self) {
     
-    @scala.inline
-    def setAddition(value: js.Array[String]): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+    inline def setAddition(value: js.Array[String]): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
+    inline def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
     
-    @scala.inline
-    def setAdditionVarargs(value: String*): Self = StObject.set(x, "addition", js.Array(value :_*))
+    inline def setAdditionVarargs(value: String*): Self = StObject.set(x, "addition", js.Array(value :_*))
     
-    @scala.inline
-    def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
-    @scala.inline
-    def setUnlimited(value: Boolean): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
+    inline def setUnlimited(value: Boolean): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
+    inline def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

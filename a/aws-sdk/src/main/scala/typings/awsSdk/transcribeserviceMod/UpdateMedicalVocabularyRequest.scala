@@ -23,25 +23,19 @@ trait UpdateMedicalVocabularyRequest extends StObject {
 }
 object UpdateMedicalVocabularyRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, VocabularyName: VocabularyName): UpdateMedicalVocabularyRequest = {
+  inline def apply(LanguageCode: LanguageCode, VocabularyName: VocabularyName): UpdateMedicalVocabularyRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], VocabularyName = VocabularyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMedicalVocabularyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMedicalVocabularyRequestMutableBuilder[Self <: UpdateMedicalVocabularyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMedicalVocabularyRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFileUri(value: Uri): Self = StObject.set(x, "VocabularyFileUri", value.asInstanceOf[js.Any])
+    inline def setVocabularyFileUri(value: Uri): Self = StObject.set(x, "VocabularyFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFileUriUndefined: Self = StObject.set(x, "VocabularyFileUri", js.undefined)
+    inline def setVocabularyFileUriUndefined: Self = StObject.set(x, "VocabularyFileUri", js.undefined)
     
-    @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
+    inline def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
   }
 }

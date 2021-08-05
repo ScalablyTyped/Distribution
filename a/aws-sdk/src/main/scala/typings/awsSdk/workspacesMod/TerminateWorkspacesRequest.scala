@@ -13,19 +13,15 @@ trait TerminateWorkspacesRequest extends StObject {
 }
 object TerminateWorkspacesRequest {
   
-  @scala.inline
-  def apply(TerminateWorkspaceRequests: TerminateWorkspaceRequests): TerminateWorkspacesRequest = {
+  inline def apply(TerminateWorkspaceRequests: TerminateWorkspaceRequests): TerminateWorkspacesRequest = {
     val __obj = js.Dynamic.literal(TerminateWorkspaceRequests = TerminateWorkspaceRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateWorkspacesRequest]
   }
   
-  @scala.inline
-  implicit class TerminateWorkspacesRequestMutableBuilder[Self <: TerminateWorkspacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateWorkspacesRequest](x: Self) {
     
-    @scala.inline
-    def setTerminateWorkspaceRequests(value: TerminateWorkspaceRequests): Self = StObject.set(x, "TerminateWorkspaceRequests", value.asInstanceOf[js.Any])
+    inline def setTerminateWorkspaceRequests(value: TerminateWorkspaceRequests): Self = StObject.set(x, "TerminateWorkspaceRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateWorkspaceRequestsVarargs(value: TerminateRequest*): Self = StObject.set(x, "TerminateWorkspaceRequests", js.Array(value :_*))
+    inline def setTerminateWorkspaceRequestsVarargs(value: TerminateRequest*): Self = StObject.set(x, "TerminateWorkspaceRequests", js.Array(value :_*))
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientProcessingModeEventArgs
 }
 object ASPxClientProcessingModeEventArgs {
   
-  @scala.inline
-  def apply(processOnServer: Boolean): ASPxClientProcessingModeEventArgs = {
+  inline def apply(processOnServer: Boolean): ASPxClientProcessingModeEventArgs = {
     val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientProcessingModeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientProcessingModeEventArgsMutableBuilder[Self <: ASPxClientProcessingModeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientProcessingModeEventArgs](x: Self) {
     
-    @scala.inline
-    def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
+    inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }
 }

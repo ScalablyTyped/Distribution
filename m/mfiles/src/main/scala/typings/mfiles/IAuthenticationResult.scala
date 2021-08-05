@@ -14,8 +14,7 @@ trait IAuthenticationResult extends StObject {
 }
 object IAuthenticationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Intermediate: IAuthenticationResultIntermediate,
     ServerFinal: IAuthenticationResultServerFinal,
     VaultFinal: IAuthenticationResultVaultFinal
@@ -24,16 +23,12 @@ object IAuthenticationResult {
     __obj.asInstanceOf[IAuthenticationResult]
   }
   
-  @scala.inline
-  implicit class IAuthenticationResultMutableBuilder[Self <: IAuthenticationResult] (val x: Self) extends AnyVal {
+  extension [Self <: IAuthenticationResult](x: Self) {
     
-    @scala.inline
-    def setIntermediate(value: IAuthenticationResultIntermediate): Self = StObject.set(x, "Intermediate", value.asInstanceOf[js.Any])
+    inline def setIntermediate(value: IAuthenticationResultIntermediate): Self = StObject.set(x, "Intermediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerFinal(value: IAuthenticationResultServerFinal): Self = StObject.set(x, "ServerFinal", value.asInstanceOf[js.Any])
+    inline def setServerFinal(value: IAuthenticationResultServerFinal): Self = StObject.set(x, "ServerFinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultFinal(value: IAuthenticationResultVaultFinal): Self = StObject.set(x, "VaultFinal", value.asInstanceOf[js.Any])
+    inline def setVaultFinal(value: IAuthenticationResultVaultFinal): Self = StObject.set(x, "VaultFinal", value.asInstanceOf[js.Any])
   }
 }

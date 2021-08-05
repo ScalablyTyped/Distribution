@@ -28,25 +28,19 @@ trait KindPlaylistId extends StObject {
 }
 object KindPlaylistId {
   
-  @scala.inline
-  def apply(channelId: String, kind: String, playlistId: String, videoId: String): KindPlaylistId = {
+  inline def apply(channelId: String, kind: String, playlistId: String, videoId: String): KindPlaylistId = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], playlistId = playlistId.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[KindPlaylistId]
   }
   
-  @scala.inline
-  implicit class KindPlaylistIdMutableBuilder[Self <: KindPlaylistId] (val x: Self) extends AnyVal {
+  extension [Self <: KindPlaylistId](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
+    inline def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

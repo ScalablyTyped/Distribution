@@ -13,9 +13,9 @@ object keyTrieMod {
     def this(weakness: Boolean) = this()
     def this(weakness: Boolean, makeData: js.Function1[/* array */ js.Array[js.Any], K]) = this()
     
-    var data: js.Any = js.native
+    /* private */ var data: js.Any = js.native
     
-    var getChildTrie: js.Any = js.native
+    /* private */ var getChildTrie: js.Any = js.native
     
     def lookup[T /* <: js.Array[js.Any] */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param array because its type T is not an array type */ array: T
@@ -23,12 +23,12 @@ object keyTrieMod {
     
     def lookupArray[T /* <: IArguments | js.Array[js.Any] */](array: T): K = js.native
     
-    var makeData: js.Any = js.native
+    /* private */ var makeData: js.Any = js.native
     
-    var strong: js.Any = js.native
+    /* private */ var strong: js.Any = js.native
     
-    var weak: js.Any = js.native
+    /* private */ var weak: js.Any = js.native
     
-    var weakness: js.Any = js.native
+    /* private */ var weakness: js.Any = js.native
   }
 }

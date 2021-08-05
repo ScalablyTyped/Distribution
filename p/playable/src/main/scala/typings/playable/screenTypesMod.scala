@@ -55,8 +55,7 @@ object screenTypesMod {
   }
   object IScreen {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -69,29 +68,21 @@ object screenTypesMod {
       __obj.asInstanceOf[IScreen]
     }
     
-    @scala.inline
-    implicit class IScreenMutableBuilder[Self <: IScreen] (val x: Self) extends AnyVal {
+    extension [Self <: IScreen](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideCursor(value: () => Unit): Self = StObject.set(x, "hideCursor", js.Any.fromFunction0(value))
+      inline def setHideCursor(value: () => Unit): Self = StObject.set(x, "hideCursor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetVideoViewMode(value: VideoViewMode => Unit): Self = StObject.set(x, "setVideoViewMode", js.Any.fromFunction1(value))
+      inline def setSetVideoViewMode(value: VideoViewMode => Unit): Self = StObject.set(x, "setVideoViewMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowCursor(value: () => Unit): Self = StObject.set(x, "showCursor", js.Any.fromFunction0(value))
+      inline def setShowCursor(value: () => Unit): Self = StObject.set(x, "showCursor", js.Any.fromFunction0(value))
     }
   }
   
@@ -101,20 +92,16 @@ object screenTypesMod {
   }
   object IScreenAPI {
     
-    @scala.inline
-    def apply(): IScreenAPI = {
+    inline def apply(): IScreenAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScreenAPI]
     }
     
-    @scala.inline
-    implicit class IScreenAPIMutableBuilder[Self <: IScreenAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IScreenAPI](x: Self) {
       
-      @scala.inline
-      def setSetVideoViewMode(value: /* viewMode */ VideoViewMode => Unit): Self = StObject.set(x, "setVideoViewMode", js.Any.fromFunction1(value))
+      inline def setSetVideoViewMode(value: /* viewMode */ VideoViewMode => Unit): Self = StObject.set(x, "setVideoViewMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetVideoViewModeUndefined: Self = StObject.set(x, "setVideoViewMode", js.undefined)
+      inline def setSetVideoViewModeUndefined: Self = StObject.set(x, "setVideoViewMode", js.undefined)
     }
   }
   
@@ -126,8 +113,7 @@ object screenTypesMod {
   }
   object IScreenViewCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onWrapperMouseClick: EventListenerOrEventListenerObject,
       onWrapperMouseDblClick: EventListenerOrEventListenerObject
     ): IScreenViewCallbacks = {
@@ -135,20 +121,15 @@ object screenTypesMod {
       __obj.asInstanceOf[IScreenViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IScreenViewCallbacksMutableBuilder[Self <: IScreenViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IScreenViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnWrapperMouseClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onWrapperMouseClick", value.asInstanceOf[js.Any])
+      inline def setOnWrapperMouseClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onWrapperMouseClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnWrapperMouseClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onWrapperMouseClick", js.Any.fromFunction1(value))
+      inline def setOnWrapperMouseClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onWrapperMouseClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWrapperMouseDblClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onWrapperMouseDblClick", value.asInstanceOf[js.Any])
+      inline def setOnWrapperMouseDblClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onWrapperMouseDblClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnWrapperMouseDblClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onWrapperMouseDblClick", js.Any.fromFunction1(value))
+      inline def setOnWrapperMouseDblClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onWrapperMouseDblClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -162,23 +143,18 @@ object screenTypesMod {
   }
   object IScreenViewConfig {
     
-    @scala.inline
-    def apply(callbacks: IScreenViewCallbacks, nativeControls: Boolean, playbackViewElement: HTMLElement): IScreenViewConfig = {
+    inline def apply(callbacks: IScreenViewCallbacks, nativeControls: Boolean, playbackViewElement: HTMLElement): IScreenViewConfig = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], nativeControls = nativeControls.asInstanceOf[js.Any], playbackViewElement = playbackViewElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScreenViewConfig]
     }
     
-    @scala.inline
-    implicit class IScreenViewConfigMutableBuilder[Self <: IScreenViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IScreenViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IScreenViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IScreenViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeControls(value: Boolean): Self = StObject.set(x, "nativeControls", value.asInstanceOf[js.Any])
+      inline def setNativeControls(value: Boolean): Self = StObject.set(x, "nativeControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaybackViewElement(value: HTMLElement): Self = StObject.set(x, "playbackViewElement", value.asInstanceOf[js.Any])
+      inline def setPlaybackViewElement(value: HTMLElement): Self = StObject.set(x, "playbackViewElement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,8 +184,7 @@ object screenTypesMod {
   }
   object IScreenViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blurMode: String,
       fillMode: String,
       hidden: String,
@@ -226,41 +201,29 @@ object screenTypesMod {
       __obj.asInstanceOf[IScreenViewStyles]
     }
     
-    @scala.inline
-    implicit class IScreenViewStylesMutableBuilder[Self <: IScreenViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IScreenViewStyles](x: Self) {
       
-      @scala.inline
-      def setBlurMode(value: String): Self = StObject.set(x, "blurMode", value.asInstanceOf[js.Any])
+      inline def setBlurMode(value: String): Self = StObject.set(x, "blurMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+      inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenCursor(value: String): Self = StObject.set(x, "hiddenCursor", value.asInstanceOf[js.Any])
+      inline def setHiddenCursor(value: String): Self = StObject.set(x, "hiddenCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalStripes(value: String): Self = StObject.set(x, "horizontalStripes", value.asInstanceOf[js.Any])
+      inline def setHorizontalStripes(value: String): Self = StObject.set(x, "horizontalStripes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularMode(value: String): Self = StObject.set(x, "regularMode", value.asInstanceOf[js.Any])
+      inline def setRegularMode(value: String): Self = StObject.set(x, "regularMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenBottomBackground(value: String): Self = StObject.set(x, "screenBottomBackground", value.asInstanceOf[js.Any])
+      inline def setScreenBottomBackground(value: String): Self = StObject.set(x, "screenBottomBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenTopBackground(value: String): Self = StObject.set(x, "screenTopBackground", value.asInstanceOf[js.Any])
+      inline def setScreenTopBackground(value: String): Self = StObject.set(x, "screenTopBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalStripes(value: String): Self = StObject.set(x, "verticalStripes", value.asInstanceOf[js.Any])
+      inline def setVerticalStripes(value: String): Self = StObject.set(x, "verticalStripes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

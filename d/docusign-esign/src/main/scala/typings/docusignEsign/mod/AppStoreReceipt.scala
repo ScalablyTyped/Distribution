@@ -18,25 +18,19 @@ trait AppStoreReceipt extends StObject {
 }
 object AppStoreReceipt {
   
-  @scala.inline
-  def apply(): AppStoreReceipt = {
+  inline def apply(): AppStoreReceipt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppStoreReceipt]
   }
   
-  @scala.inline
-  implicit class AppStoreReceiptMutableBuilder[Self <: AppStoreReceipt] (val x: Self) extends AnyVal {
+  extension [Self <: AppStoreReceipt](x: Self) {
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setReceiptData(value: String): Self = StObject.set(x, "receiptData", value.asInstanceOf[js.Any])
+    inline def setReceiptData(value: String): Self = StObject.set(x, "receiptData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptDataUndefined: Self = StObject.set(x, "receiptData", js.undefined)
+    inline def setReceiptDataUndefined: Self = StObject.set(x, "receiptData", js.undefined)
   }
 }

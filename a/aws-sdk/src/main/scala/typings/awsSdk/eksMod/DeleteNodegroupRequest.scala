@@ -18,19 +18,15 @@ trait DeleteNodegroupRequest extends StObject {
 }
 object DeleteNodegroupRequest {
   
-  @scala.inline
-  def apply(clusterName: String, nodegroupName: String): DeleteNodegroupRequest = {
+  inline def apply(clusterName: String, nodegroupName: String): DeleteNodegroupRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNodegroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNodegroupRequestMutableBuilder[Self <: DeleteNodegroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNodegroupRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
   }
 }

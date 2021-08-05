@@ -27,17 +27,14 @@ object anon {
   }
   object Delete {
     
-    @scala.inline
-    def apply(delete: () => js.Promise[Unit]): Delete = {
+    inline def apply(delete: () => js.Promise[Unit]): Delete = {
       val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
       __obj.asInstanceOf[Delete]
     }
     
-    @scala.inline
-    implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+    extension [Self <: Delete](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,32 +48,24 @@ object anon {
   }
   object Details {
     
-    @scala.inline
-    def apply(): Details = {
+    inline def apply(): Details = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Details]
     }
     
-    @scala.inline
-    implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+    extension [Self <: Details](x: Self) {
       
-      @scala.inline
-      def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

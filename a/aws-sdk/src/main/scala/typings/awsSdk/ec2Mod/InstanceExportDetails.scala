@@ -18,25 +18,19 @@ trait InstanceExportDetails extends StObject {
 }
 object InstanceExportDetails {
   
-  @scala.inline
-  def apply(): InstanceExportDetails = {
+  inline def apply(): InstanceExportDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceExportDetails]
   }
   
-  @scala.inline
-  implicit class InstanceExportDetailsMutableBuilder[Self <: InstanceExportDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceExportDetails](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setTargetEnvironment(value: ExportEnvironment): Self = StObject.set(x, "TargetEnvironment", value.asInstanceOf[js.Any])
+    inline def setTargetEnvironment(value: ExportEnvironment): Self = StObject.set(x, "TargetEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetEnvironmentUndefined: Self = StObject.set(x, "TargetEnvironment", js.undefined)
+    inline def setTargetEnvironmentUndefined: Self = StObject.set(x, "TargetEnvironment", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait StandardLines extends StObject {
 }
 object StandardLines {
   
-  @scala.inline
-  def apply(getCount: () => Double, getLine: Double => StandardLine): StandardLines = {
+  inline def apply(getCount: () => Double, getLine: Double => StandardLine): StandardLines = {
     val __obj = js.Dynamic.literal(getCount = js.Any.fromFunction0(getCount), getLine = js.Any.fromFunction1(getLine))
     __obj.asInstanceOf[StandardLines]
   }
   
-  @scala.inline
-  implicit class StandardLinesMutableBuilder[Self <: StandardLines] (val x: Self) extends AnyVal {
+  extension [Self <: StandardLines](x: Self) {
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLine(value: Double => StandardLine): Self = StObject.set(x, "getLine", js.Any.fromFunction1(value))
+    inline def setGetLine(value: Double => StandardLine): Self = StObject.set(x, "getLine", js.Any.fromFunction1(value))
   }
 }

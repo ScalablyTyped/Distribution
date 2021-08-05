@@ -23,22 +23,17 @@ trait DeleteSessionRequest extends StObject {
 }
 object DeleteSessionRequest {
   
-  @scala.inline
-  def apply(botAlias: BotAlias, botName: BotName, userId: UserId): DeleteSessionRequest = {
+  inline def apply(botAlias: BotAlias, botName: BotName, userId: UserId): DeleteSessionRequest = {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSessionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSessionRequestMutableBuilder[Self <: DeleteSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSessionRequest](x: Self) {
     
-    @scala.inline
-    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
+    inline def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

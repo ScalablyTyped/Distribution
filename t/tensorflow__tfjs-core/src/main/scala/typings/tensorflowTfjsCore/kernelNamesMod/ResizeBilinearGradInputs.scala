@@ -11,19 +11,15 @@ trait ResizeBilinearGradInputs extends StObject {
 }
 object ResizeBilinearGradInputs {
   
-  @scala.inline
-  def apply(): ResizeBilinearGradInputs = {
+  inline def apply(): ResizeBilinearGradInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeBilinearGradInputs]
   }
   
-  @scala.inline
-  implicit class ResizeBilinearGradInputsMutableBuilder[Self <: ResizeBilinearGradInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeBilinearGradInputs](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
   }
 }

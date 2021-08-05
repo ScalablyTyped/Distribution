@@ -18,22 +18,17 @@ trait SetVisibleToAllUsersInput extends StObject {
 }
 object SetVisibleToAllUsersInput {
   
-  @scala.inline
-  def apply(JobFlowIds: XmlStringList, VisibleToAllUsers: Boolean): SetVisibleToAllUsersInput = {
+  inline def apply(JobFlowIds: XmlStringList, VisibleToAllUsers: Boolean): SetVisibleToAllUsersInput = {
     val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any], VisibleToAllUsers = VisibleToAllUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVisibleToAllUsersInput]
   }
   
-  @scala.inline
-  implicit class SetVisibleToAllUsersInputMutableBuilder[Self <: SetVisibleToAllUsersInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetVisibleToAllUsersInput](x: Self) {
     
-    @scala.inline
-    def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
+    inline def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
+    inline def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
+    inline def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
   }
 }

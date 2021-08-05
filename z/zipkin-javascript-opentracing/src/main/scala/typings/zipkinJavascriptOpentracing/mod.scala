@@ -30,33 +30,28 @@ object mod {
   @JSImport("zipkin-javascript-opentracing", "FORMAT_BINARY")
   @js.native
   def FORMAT_BINARY: String = js.native
-  @scala.inline
-  def FORMAT_BINARY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_BINARY")(x.asInstanceOf[js.Any])
+  inline def FORMAT_BINARY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_BINARY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("zipkin-javascript-opentracing", "FORMAT_HTTP_HEADERS")
   @js.native
   def FORMAT_HTTP_HEADERS: String = js.native
-  @scala.inline
-  def FORMAT_HTTP_HEADERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_HTTP_HEADERS")(x.asInstanceOf[js.Any])
+  inline def FORMAT_HTTP_HEADERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_HTTP_HEADERS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("zipkin-javascript-opentracing", "FORMAT_TEXT_MAP")
   @js.native
   def FORMAT_TEXT_MAP: String = js.native
-  @scala.inline
-  def FORMAT_TEXT_MAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_TEXT_MAP")(x.asInstanceOf[js.Any])
+  inline def FORMAT_TEXT_MAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_TEXT_MAP")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def makeOptional(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptional")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def makeOptional(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptional")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object prototypeNamespace {
     
     object extract {
       
-      @scala.inline
-      def apply(format: js.Any, carrier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def apply(format: js.Any, carrier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.extract")
       @js.native
@@ -65,8 +60,7 @@ object mod {
     
     object inject {
       
-      @scala.inline
-      def apply(span: js.Any, format: js.Any, carrier: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(span: js.Any, format: js.Any, carrier: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.inject")
       @js.native
@@ -75,8 +69,7 @@ object mod {
     
     object startSpan {
       
-      @scala.inline
-      def apply(name: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def apply(name: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.startSpan")
       @js.native
@@ -94,8 +87,7 @@ object mod {
   }
   object zipkinJavascriptOpentracing {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extract: (js.Any, js.Any) => js.Any,
       inject: (js.Any, js.Any, js.Any) => Unit,
       startSpan: (js.Any, /* repeated */ js.Any) => js.Any
@@ -104,17 +96,13 @@ object mod {
       __obj.asInstanceOf[typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing]
     }
     
-    @scala.inline
-    implicit class zipkinJavascriptOpentracingMutableBuilder[Self <: typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing] (val x: Self) extends AnyVal {
+    extension [Self <: typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing](x: Self) {
       
-      @scala.inline
-      def setExtract(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
+      inline def setExtract(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInject(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
+      inline def setInject(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStartSpan(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "startSpan", js.Any.fromFunction2(value))
+      inline def setStartSpan(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "startSpan", js.Any.fromFunction2(value))
     }
   }
 }

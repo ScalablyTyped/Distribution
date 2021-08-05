@@ -22,20 +22,16 @@ object attachementMod extends Shortcut {
   }
   object AttachementProps {
     
-    @scala.inline
-    def apply(): AttachementProps = {
+    inline def apply(): AttachementProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttachementProps]
     }
     
-    @scala.inline
-    implicit class AttachementPropsMutableBuilder[Self <: AttachementProps] (val x: Self) extends AnyVal {
+    extension [Self <: AttachementProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

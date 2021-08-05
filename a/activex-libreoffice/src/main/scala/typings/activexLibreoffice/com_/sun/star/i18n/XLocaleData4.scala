@@ -26,8 +26,7 @@ trait XLocaleData4
 }
 object XLocaleData4 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllInstalledLocaleNames: SafeArray[Locale],
     acquire: () => Unit,
     getAllCalendars: Locale => SafeArray[Calendar],
@@ -52,10 +51,8 @@ object XLocaleData4 {
     __obj.asInstanceOf[XLocaleData4]
   }
   
-  @scala.inline
-  implicit class XLocaleData4MutableBuilder[Self <: XLocaleData4] (val x: Self) extends AnyVal {
+  extension [Self <: XLocaleData4](x: Self) {
     
-    @scala.inline
-    def setGetDateAcceptancePatterns(value: Locale => SafeArray[String]): Self = StObject.set(x, "getDateAcceptancePatterns", js.Any.fromFunction1(value))
+    inline def setGetDateAcceptancePatterns(value: Locale => SafeArray[String]): Self = StObject.set(x, "getDateAcceptancePatterns", js.Any.fromFunction1(value))
   }
 }

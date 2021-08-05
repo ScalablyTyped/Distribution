@@ -40,22 +40,17 @@ trait DispatchDescriptor extends StObject {
 }
 object DispatchDescriptor {
   
-  @scala.inline
-  def apply(FeatureURL: URL, FrameName: String, SearchFlags: Double): DispatchDescriptor = {
+  inline def apply(FeatureURL: URL, FrameName: String, SearchFlags: Double): DispatchDescriptor = {
     val __obj = js.Dynamic.literal(FeatureURL = FeatureURL.asInstanceOf[js.Any], FrameName = FrameName.asInstanceOf[js.Any], SearchFlags = SearchFlags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchDescriptor]
   }
   
-  @scala.inline
-  implicit class DispatchDescriptorMutableBuilder[Self <: DispatchDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchDescriptor](x: Self) {
     
-    @scala.inline
-    def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
+    inline def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameName(value: String): Self = StObject.set(x, "FrameName", value.asInstanceOf[js.Any])
+    inline def setFrameName(value: String): Self = StObject.set(x, "FrameName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFlags(value: Double): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
+    inline def setSearchFlags(value: Double): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
   }
 }

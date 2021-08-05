@@ -15,20 +15,16 @@ object mod {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(): MapOptions = {
+    inline def apply(): MapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setFullscreenControl(value: `true` | PseudoFullscreen): Self = StObject.set(x, "fullscreenControl", value.asInstanceOf[js.Any])
+      inline def setFullscreenControl(value: `true` | PseudoFullscreen): Self = StObject.set(x, "fullscreenControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenControlUndefined: Self = StObject.set(x, "fullscreenControl", js.undefined)
+      inline def setFullscreenControlUndefined: Self = StObject.set(x, "fullscreenControl", js.undefined)
     }
   }
 }

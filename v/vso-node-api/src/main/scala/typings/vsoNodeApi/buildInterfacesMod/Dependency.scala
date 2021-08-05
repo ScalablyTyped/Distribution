@@ -18,19 +18,15 @@ trait Dependency extends StObject {
 }
 object Dependency {
   
-  @scala.inline
-  def apply(event: String, scope: String): Dependency = {
+  inline def apply(event: String, scope: String): Dependency = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dependency]
   }
   
-  @scala.inline
-  implicit class DependencyMutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
+  extension [Self <: Dependency](x: Self) {
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

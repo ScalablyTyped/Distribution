@@ -10,19 +10,15 @@ trait RemoveWhereFilters extends StObject {
 }
 object RemoveWhereFilters {
   
-  @scala.inline
-  def apply(): RemoveWhereFilters = {
+  inline def apply(): RemoveWhereFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveWhereFilters]
   }
   
-  @scala.inline
-  implicit class RemoveWhereFiltersMutableBuilder[Self <: RemoveWhereFilters] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveWhereFilters](x: Self) {
     
-    @scala.inline
-    def setRemoveWhereFilters(value: Boolean): Self = StObject.set(x, "removeWhereFilters", value.asInstanceOf[js.Any])
+    inline def setRemoveWhereFilters(value: Boolean): Self = StObject.set(x, "removeWhereFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveWhereFiltersUndefined: Self = StObject.set(x, "removeWhereFilters", js.undefined)
+    inline def setRemoveWhereFiltersUndefined: Self = StObject.set(x, "removeWhereFilters", js.undefined)
   }
 }

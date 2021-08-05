@@ -12,14 +12,10 @@ object getRegionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRegions(): js.Promise[GetRegionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")().asInstanceOf[js.Promise[GetRegionsResult]]
-  @scala.inline
-  def getRegions(args: Unit, opts: InvokeOptions): js.Promise[GetRegionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionsResult]]
-  @scala.inline
-  def getRegions(args: GetRegionsArgs): js.Promise[GetRegionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegionsResult]]
-  @scala.inline
-  def getRegions(args: GetRegionsArgs, opts: InvokeOptions): js.Promise[GetRegionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionsResult]]
+  inline def getRegions(): js.Promise[GetRegionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")().asInstanceOf[js.Promise[GetRegionsResult]]
+  inline def getRegions(args: Unit, opts: InvokeOptions): js.Promise[GetRegionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionsResult]]
+  inline def getRegions(args: GetRegionsArgs): js.Promise[GetRegionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegionsResult]]
+  inline def getRegions(args: GetRegionsArgs, opts: InvokeOptions): js.Promise[GetRegionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionsResult]]
   
   trait GetRegionsArgs extends StObject {
     
@@ -35,29 +31,22 @@ object getRegionsMod {
   }
   object GetRegionsArgs {
     
-    @scala.inline
-    def apply(): GetRegionsArgs = {
+    inline def apply(): GetRegionsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetRegionsArgs]
     }
     
-    @scala.inline
-    implicit class GetRegionsArgsMutableBuilder[Self <: GetRegionsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRegionsArgs](x: Self) {
       
-      @scala.inline
-      def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
+      inline def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
+      inline def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[GetRegionsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetRegionsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetRegionsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetRegionsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     }
   }
   
@@ -79,38 +68,28 @@ object getRegionsMod {
   }
   object GetRegionsResult {
     
-    @scala.inline
-    def apply(id: String, names: js.Array[String]): GetRegionsResult = {
+    inline def apply(id: String, names: js.Array[String]): GetRegionsResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRegionsResult]
     }
     
-    @scala.inline
-    implicit class GetRegionsResultMutableBuilder[Self <: GetRegionsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRegionsResult](x: Self) {
       
-      @scala.inline
-      def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
+      inline def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
+      inline def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetRegionsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetRegionsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetRegionsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetRegionsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     }
   }
 }

@@ -13,16 +13,13 @@ trait StartPreciseCoverageResponse extends StObject {
 }
 object StartPreciseCoverageResponse {
   
-  @scala.inline
-  def apply(timestamp: Double): StartPreciseCoverageResponse = {
+  inline def apply(timestamp: Double): StartPreciseCoverageResponse = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPreciseCoverageResponse]
   }
   
-  @scala.inline
-  implicit class StartPreciseCoverageResponseMutableBuilder[Self <: StartPreciseCoverageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartPreciseCoverageResponse](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

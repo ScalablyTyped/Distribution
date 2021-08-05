@@ -15,6 +15,5 @@ object registerKnobsMod {
   @js.native
   val manager: default = js.native
   
-  @scala.inline
-  def registerKnobs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKnobs")().asInstanceOf[Unit]
+  inline def registerKnobs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKnobs")().asInstanceOf[Unit]
 }

@@ -26,23 +26,18 @@ object redshift {
   }
   object ClusterLogging {
     
-    @scala.inline
-    def apply(bucketName: String, enable: Boolean, s3KeyPrefix: String): ClusterLogging = {
+    inline def apply(bucketName: String, enable: Boolean, s3KeyPrefix: String): ClusterLogging = {
       val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], s3KeyPrefix = s3KeyPrefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterLogging]
     }
     
-    @scala.inline
-    implicit class ClusterLoggingMutableBuilder[Self <: ClusterLogging] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterLogging](x: Self) {
       
-      @scala.inline
-      def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,29 +60,22 @@ object redshift {
   }
   object ClusterSnapshotCopy {
     
-    @scala.inline
-    def apply(destinationRegion: String): ClusterSnapshotCopy = {
+    inline def apply(destinationRegion: String): ClusterSnapshotCopy = {
       val __obj = js.Dynamic.literal(destinationRegion = destinationRegion.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterSnapshotCopy]
     }
     
-    @scala.inline
-    implicit class ClusterSnapshotCopyMutableBuilder[Self <: ClusterSnapshotCopy] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterSnapshotCopy](x: Self) {
       
-      @scala.inline
-      def setDestinationRegion(value: String): Self = StObject.set(x, "destinationRegion", value.asInstanceOf[js.Any])
+      inline def setDestinationRegion(value: String): Self = StObject.set(x, "destinationRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantName(value: String): Self = StObject.set(x, "grantName", value.asInstanceOf[js.Any])
+      inline def setGrantName(value: String): Self = StObject.set(x, "grantName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantNameUndefined: Self = StObject.set(x, "grantName", js.undefined)
+      inline def setGrantNameUndefined: Self = StObject.set(x, "grantName", js.undefined)
       
-      @scala.inline
-      def setRetentionPeriod(value: Double): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriod(value: Double): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+      inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
     }
   }
   
@@ -105,20 +93,16 @@ object redshift {
   }
   object ParameterGroupParameter {
     
-    @scala.inline
-    def apply(name: String, value: String): ParameterGroupParameter = {
+    inline def apply(name: String, value: String): ParameterGroupParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParameterGroupParameter]
     }
     
-    @scala.inline
-    implicit class ParameterGroupParameterMutableBuilder[Self <: ParameterGroupParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ParameterGroupParameter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,26 +126,20 @@ object redshift {
   }
   object SecurityGroupIngress {
     
-    @scala.inline
-    def apply(securityGroupName: String, securityGroupOwnerId: String): SecurityGroupIngress = {
+    inline def apply(securityGroupName: String, securityGroupOwnerId: String): SecurityGroupIngress = {
       val __obj = js.Dynamic.literal(securityGroupName = securityGroupName.asInstanceOf[js.Any], securityGroupOwnerId = securityGroupOwnerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecurityGroupIngress]
     }
     
-    @scala.inline
-    implicit class SecurityGroupIngressMutableBuilder[Self <: SecurityGroupIngress] (val x: Self) extends AnyVal {
+    extension [Self <: SecurityGroupIngress](x: Self) {
       
-      @scala.inline
-      def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+      inline def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
+      inline def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupName(value: String): Self = StObject.set(x, "securityGroupName", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupName(value: String): Self = StObject.set(x, "securityGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupOwnerId(value: String): Self = StObject.set(x, "securityGroupOwnerId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupOwnerId(value: String): Self = StObject.set(x, "securityGroupOwnerId", value.asInstanceOf[js.Any])
     }
   }
 }

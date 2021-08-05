@@ -13,19 +13,15 @@ trait ListGitHubAccountTokenNamesInput extends StObject {
 }
 object ListGitHubAccountTokenNamesInput {
   
-  @scala.inline
-  def apply(): ListGitHubAccountTokenNamesInput = {
+  inline def apply(): ListGitHubAccountTokenNamesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGitHubAccountTokenNamesInput]
   }
   
-  @scala.inline
-  implicit class ListGitHubAccountTokenNamesInputMutableBuilder[Self <: ListGitHubAccountTokenNamesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGitHubAccountTokenNamesInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

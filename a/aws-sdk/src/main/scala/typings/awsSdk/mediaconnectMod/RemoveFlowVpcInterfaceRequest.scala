@@ -18,19 +18,15 @@ trait RemoveFlowVpcInterfaceRequest extends StObject {
 }
 object RemoveFlowVpcInterfaceRequest {
   
-  @scala.inline
-  def apply(FlowArn: string, VpcInterfaceName: string): RemoveFlowVpcInterfaceRequest = {
+  inline def apply(FlowArn: string, VpcInterfaceName: string): RemoveFlowVpcInterfaceRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], VpcInterfaceName = VpcInterfaceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveFlowVpcInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class RemoveFlowVpcInterfaceRequestMutableBuilder[Self <: RemoveFlowVpcInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveFlowVpcInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
+    inline def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
   }
 }

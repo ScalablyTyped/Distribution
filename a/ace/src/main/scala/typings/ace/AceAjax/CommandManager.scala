@@ -20,8 +20,7 @@ trait CommandManager extends StObject {
 }
 object CommandManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCommand: EditorCommand => Unit,
     addCommands: js.Array[EditorCommand] => Unit,
     byName: js.Any,
@@ -33,25 +32,18 @@ object CommandManager {
     __obj.asInstanceOf[CommandManager]
   }
   
-  @scala.inline
-  implicit class CommandManagerMutableBuilder[Self <: CommandManager] (val x: Self) extends AnyVal {
+  extension [Self <: CommandManager](x: Self) {
     
-    @scala.inline
-    def setAddCommand(value: EditorCommand => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
+    inline def setAddCommand(value: EditorCommand => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddCommands(value: js.Array[EditorCommand] => Unit): Self = StObject.set(x, "addCommands", js.Any.fromFunction1(value))
+    inline def setAddCommands(value: js.Array[EditorCommand] => Unit): Self = StObject.set(x, "addCommands", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setByName(value: js.Any): Self = StObject.set(x, "byName", value.asInstanceOf[js.Any])
+    inline def setByName(value: js.Any): Self = StObject.set(x, "byName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExec(value: (String, Editor, js.Any) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
+    inline def setExec(value: (String, Editor, js.Any) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
   }
 }

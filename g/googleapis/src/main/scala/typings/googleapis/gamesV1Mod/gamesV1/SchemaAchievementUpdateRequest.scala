@@ -43,43 +43,31 @@ trait SchemaAchievementUpdateRequest extends StObject {
 }
 object SchemaAchievementUpdateRequest {
   
-  @scala.inline
-  def apply(): SchemaAchievementUpdateRequest = {
+  inline def apply(): SchemaAchievementUpdateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementUpdateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementUpdateRequestMutableBuilder[Self <: SchemaAchievementUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
+    inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
+    inline def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
     
-    @scala.inline
-    def setIncrementPayload(value: SchemaGamesAchievementIncrement): Self = StObject.set(x, "incrementPayload", value.asInstanceOf[js.Any])
+    inline def setIncrementPayload(value: SchemaGamesAchievementIncrement): Self = StObject.set(x, "incrementPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementPayloadUndefined: Self = StObject.set(x, "incrementPayload", js.undefined)
+    inline def setIncrementPayloadUndefined: Self = StObject.set(x, "incrementPayload", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSetStepsAtLeastPayload(value: SchemaGamesAchievementSetStepsAtLeast): Self = StObject.set(x, "setStepsAtLeastPayload", value.asInstanceOf[js.Any])
+    inline def setSetStepsAtLeastPayload(value: SchemaGamesAchievementSetStepsAtLeast): Self = StObject.set(x, "setStepsAtLeastPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetStepsAtLeastPayloadUndefined: Self = StObject.set(x, "setStepsAtLeastPayload", js.undefined)
+    inline def setSetStepsAtLeastPayloadUndefined: Self = StObject.set(x, "setStepsAtLeastPayload", js.undefined)
     
-    @scala.inline
-    def setUpdateType(value: String): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
+    inline def setUpdateType(value: String): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTypeUndefined: Self = StObject.set(x, "updateType", js.undefined)
+    inline def setUpdateTypeUndefined: Self = StObject.set(x, "updateType", js.undefined)
   }
 }

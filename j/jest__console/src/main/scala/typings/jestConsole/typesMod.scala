@@ -22,24 +22,19 @@ object typesMod {
   }
   object LogEntry {
     
-    @scala.inline
-    def apply(message: LogMessage, origin: String, `type`: LogType): LogEntry = {
+    inline def apply(message: LogMessage, origin: String, `type`: LogType): LogEntry = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogEntry]
     }
     
-    @scala.inline
-    implicit class LogEntryMutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
+    extension [Self <: LogEntry](x: Self) {
       
-      @scala.inline
-      def setMessage(value: LogMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: LogMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: LogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: LogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,40 +59,28 @@ object typesMod {
   trait LogType extends StObject
   object LogType {
     
-    @scala.inline
-    def assert: typings.jestConsole.jestConsoleStrings.assert = "assert".asInstanceOf[typings.jestConsole.jestConsoleStrings.assert]
+    inline def assert: typings.jestConsole.jestConsoleStrings.assert = "assert".asInstanceOf[typings.jestConsole.jestConsoleStrings.assert]
     
-    @scala.inline
-    def count: typings.jestConsole.jestConsoleStrings.count = "count".asInstanceOf[typings.jestConsole.jestConsoleStrings.count]
+    inline def count: typings.jestConsole.jestConsoleStrings.count = "count".asInstanceOf[typings.jestConsole.jestConsoleStrings.count]
     
-    @scala.inline
-    def debug: typings.jestConsole.jestConsoleStrings.debug = "debug".asInstanceOf[typings.jestConsole.jestConsoleStrings.debug]
+    inline def debug: typings.jestConsole.jestConsoleStrings.debug = "debug".asInstanceOf[typings.jestConsole.jestConsoleStrings.debug]
     
-    @scala.inline
-    def dir: typings.jestConsole.jestConsoleStrings.dir = "dir".asInstanceOf[typings.jestConsole.jestConsoleStrings.dir]
+    inline def dir: typings.jestConsole.jestConsoleStrings.dir = "dir".asInstanceOf[typings.jestConsole.jestConsoleStrings.dir]
     
-    @scala.inline
-    def dirxml: typings.jestConsole.jestConsoleStrings.dirxml = "dirxml".asInstanceOf[typings.jestConsole.jestConsoleStrings.dirxml]
+    inline def dirxml: typings.jestConsole.jestConsoleStrings.dirxml = "dirxml".asInstanceOf[typings.jestConsole.jestConsoleStrings.dirxml]
     
-    @scala.inline
-    def error: typings.jestConsole.jestConsoleStrings.error = "error".asInstanceOf[typings.jestConsole.jestConsoleStrings.error]
+    inline def error: typings.jestConsole.jestConsoleStrings.error = "error".asInstanceOf[typings.jestConsole.jestConsoleStrings.error]
     
-    @scala.inline
-    def group: typings.jestConsole.jestConsoleStrings.group = "group".asInstanceOf[typings.jestConsole.jestConsoleStrings.group]
+    inline def group: typings.jestConsole.jestConsoleStrings.group = "group".asInstanceOf[typings.jestConsole.jestConsoleStrings.group]
     
-    @scala.inline
-    def groupCollapsed: typings.jestConsole.jestConsoleStrings.groupCollapsed = "groupCollapsed".asInstanceOf[typings.jestConsole.jestConsoleStrings.groupCollapsed]
+    inline def groupCollapsed: typings.jestConsole.jestConsoleStrings.groupCollapsed = "groupCollapsed".asInstanceOf[typings.jestConsole.jestConsoleStrings.groupCollapsed]
     
-    @scala.inline
-    def info: typings.jestConsole.jestConsoleStrings.info = "info".asInstanceOf[typings.jestConsole.jestConsoleStrings.info]
+    inline def info: typings.jestConsole.jestConsoleStrings.info = "info".asInstanceOf[typings.jestConsole.jestConsoleStrings.info]
     
-    @scala.inline
-    def log: typings.jestConsole.jestConsoleStrings.log = "log".asInstanceOf[typings.jestConsole.jestConsoleStrings.log]
+    inline def log: typings.jestConsole.jestConsoleStrings.log = "log".asInstanceOf[typings.jestConsole.jestConsoleStrings.log]
     
-    @scala.inline
-    def time: typings.jestConsole.jestConsoleStrings.time = "time".asInstanceOf[typings.jestConsole.jestConsoleStrings.time]
+    inline def time: typings.jestConsole.jestConsoleStrings.time = "time".asInstanceOf[typings.jestConsole.jestConsoleStrings.time]
     
-    @scala.inline
-    def warn: typings.jestConsole.jestConsoleStrings.warn = "warn".asInstanceOf[typings.jestConsole.jestConsoleStrings.warn]
+    inline def warn: typings.jestConsole.jestConsoleStrings.warn = "warn".asInstanceOf[typings.jestConsole.jestConsoleStrings.warn]
   }
 }

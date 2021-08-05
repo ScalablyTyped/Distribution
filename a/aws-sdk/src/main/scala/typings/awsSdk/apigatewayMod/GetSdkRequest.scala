@@ -28,28 +28,21 @@ trait GetSdkRequest extends StObject {
 }
 object GetSdkRequest {
   
-  @scala.inline
-  def apply(restApiId: String, sdkType: String, stageName: String): GetSdkRequest = {
+  inline def apply(restApiId: String, sdkType: String, stageName: String): GetSdkRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any], sdkType = sdkType.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSdkRequest]
   }
   
-  @scala.inline
-  implicit class GetSdkRequestMutableBuilder[Self <: GetSdkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSdkRequest](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkType(value: String): Self = StObject.set(x, "sdkType", value.asInstanceOf[js.Any])
+    inline def setSdkType(value: String): Self = StObject.set(x, "sdkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
   }
 }

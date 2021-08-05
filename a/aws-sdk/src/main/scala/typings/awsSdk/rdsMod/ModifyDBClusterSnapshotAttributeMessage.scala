@@ -28,37 +28,27 @@ trait ModifyDBClusterSnapshotAttributeMessage extends StObject {
 }
 object ModifyDBClusterSnapshotAttributeMessage {
   
-  @scala.inline
-  def apply(AttributeName: String, DBClusterSnapshotIdentifier: String): ModifyDBClusterSnapshotAttributeMessage = {
+  inline def apply(AttributeName: String, DBClusterSnapshotIdentifier: String): ModifyDBClusterSnapshotAttributeMessage = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], DBClusterSnapshotIdentifier = DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBClusterSnapshotAttributeMessage]
   }
   
-  @scala.inline
-  implicit class ModifyDBClusterSnapshotAttributeMessageMutableBuilder[Self <: ModifyDBClusterSnapshotAttributeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyDBClusterSnapshotAttributeMessage](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesToAdd(value: AttributeValueList): Self = StObject.set(x, "ValuesToAdd", value.asInstanceOf[js.Any])
+    inline def setValuesToAdd(value: AttributeValueList): Self = StObject.set(x, "ValuesToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesToAddUndefined: Self = StObject.set(x, "ValuesToAdd", js.undefined)
+    inline def setValuesToAddUndefined: Self = StObject.set(x, "ValuesToAdd", js.undefined)
     
-    @scala.inline
-    def setValuesToAddVarargs(value: String*): Self = StObject.set(x, "ValuesToAdd", js.Array(value :_*))
+    inline def setValuesToAddVarargs(value: String*): Self = StObject.set(x, "ValuesToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setValuesToRemove(value: AttributeValueList): Self = StObject.set(x, "ValuesToRemove", value.asInstanceOf[js.Any])
+    inline def setValuesToRemove(value: AttributeValueList): Self = StObject.set(x, "ValuesToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesToRemoveUndefined: Self = StObject.set(x, "ValuesToRemove", js.undefined)
+    inline def setValuesToRemoveUndefined: Self = StObject.set(x, "ValuesToRemove", js.undefined)
     
-    @scala.inline
-    def setValuesToRemoveVarargs(value: String*): Self = StObject.set(x, "ValuesToRemove", js.Array(value :_*))
+    inline def setValuesToRemoveVarargs(value: String*): Self = StObject.set(x, "ValuesToRemove", js.Array(value :_*))
   }
 }

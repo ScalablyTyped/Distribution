@@ -14,17 +14,14 @@ trait _empty
 }
 object _empty {
   
-  @scala.inline
-  def apply(EqualssignEqualssign: js.Tuple2[js.Any, js.Any]): _empty = {
+  inline def apply(EqualssignEqualssign: js.Tuple2[js.Any, js.Any]): _empty = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("==")(EqualssignEqualssign.asInstanceOf[js.Any])
     __obj.asInstanceOf[_empty]
   }
   
-  @scala.inline
-  implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+  extension [Self <: _empty](x: Self) {
     
-    @scala.inline
-    def setEqualssignEqualssign(value: js.Tuple2[js.Any, js.Any]): Self = StObject.set(x, "==", value.asInstanceOf[js.Any])
+    inline def setEqualssignEqualssign(value: js.Tuple2[js.Any, js.Any]): Self = StObject.set(x, "==", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait GetSecurityInfoOptions extends StObject {
 }
 object GetSecurityInfoOptions {
   
-  @scala.inline
-  def apply(): GetSecurityInfoOptions = {
+  inline def apply(): GetSecurityInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSecurityInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetSecurityInfoOptionsMutableBuilder[Self <: GetSecurityInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityInfoOptions](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: Boolean): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: Boolean): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
+    inline def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
     
-    @scala.inline
-    def setRawDER(value: Boolean): Self = StObject.set(x, "rawDER", value.asInstanceOf[js.Any])
+    inline def setRawDER(value: Boolean): Self = StObject.set(x, "rawDER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawDERUndefined: Self = StObject.set(x, "rawDER", js.undefined)
+    inline def setRawDERUndefined: Self = StObject.set(x, "rawDER", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait Audit extends StObject {
 }
 object Audit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     details: StringDictionary[js.Object],
     displayValue: String,
@@ -46,37 +45,26 @@ object Audit {
     __obj.asInstanceOf[Audit]
   }
   
-  @scala.inline
-  implicit class AuditMutableBuilder[Self <: Audit] (val x: Self) extends AnyVal {
+  extension [Self <: Audit](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: StringDictionary[js.Object]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: StringDictionary[js.Object]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+    inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: js.Object): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: js.Object): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreDisplayMode(value: String): Self = StObject.set(x, "scoreDisplayMode", value.asInstanceOf[js.Any])
+    inline def setScoreDisplayMode(value: String): Self = StObject.set(x, "scoreDisplayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Object): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Object): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
   }
 }

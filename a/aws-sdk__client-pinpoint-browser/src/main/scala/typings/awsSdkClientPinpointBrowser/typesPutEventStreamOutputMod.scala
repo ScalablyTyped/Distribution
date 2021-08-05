@@ -26,20 +26,16 @@ object typesPutEventStreamOutputMod {
   }
   object PutEventStreamOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): PutEventStreamOutput = {
+    inline def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): PutEventStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventStream = EventStream.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutEventStreamOutput]
     }
     
-    @scala.inline
-    implicit class PutEventStreamOutputMutableBuilder[Self <: PutEventStreamOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutEventStreamOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventStream(value: UnmarshalledEventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
+      inline def setEventStream(value: UnmarshalledEventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
     }
   }
 }

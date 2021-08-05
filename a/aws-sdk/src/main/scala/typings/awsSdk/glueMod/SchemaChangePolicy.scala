@@ -18,25 +18,19 @@ trait SchemaChangePolicy extends StObject {
 }
 object SchemaChangePolicy {
   
-  @scala.inline
-  def apply(): SchemaChangePolicy = {
+  inline def apply(): SchemaChangePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChangePolicy]
   }
   
-  @scala.inline
-  implicit class SchemaChangePolicyMutableBuilder[Self <: SchemaChangePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChangePolicy](x: Self) {
     
-    @scala.inline
-    def setDeleteBehavior(value: DeleteBehavior): Self = StObject.set(x, "DeleteBehavior", value.asInstanceOf[js.Any])
+    inline def setDeleteBehavior(value: DeleteBehavior): Self = StObject.set(x, "DeleteBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteBehaviorUndefined: Self = StObject.set(x, "DeleteBehavior", js.undefined)
+    inline def setDeleteBehaviorUndefined: Self = StObject.set(x, "DeleteBehavior", js.undefined)
     
-    @scala.inline
-    def setUpdateBehavior(value: UpdateBehavior): Self = StObject.set(x, "UpdateBehavior", value.asInstanceOf[js.Any])
+    inline def setUpdateBehavior(value: UpdateBehavior): Self = StObject.set(x, "UpdateBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateBehaviorUndefined: Self = StObject.set(x, "UpdateBehavior", js.undefined)
+    inline def setUpdateBehaviorUndefined: Self = StObject.set(x, "UpdateBehavior", js.undefined)
   }
 }

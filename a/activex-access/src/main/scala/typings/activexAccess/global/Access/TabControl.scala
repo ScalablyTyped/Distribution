@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.TabControl")
 @js.native
-class TabControl protected ()
+/* private */ class TabControl ()
   extends StObject
      with typings.activexAccess.Access.TabControl

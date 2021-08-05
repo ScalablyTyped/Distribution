@@ -18,19 +18,15 @@ trait CreateDashboardResponse extends StObject {
 }
 object CreateDashboardResponse {
   
-  @scala.inline
-  def apply(dashboardArn: ARN, dashboardId: ID): CreateDashboardResponse = {
+  inline def apply(dashboardArn: ARN, dashboardId: ID): CreateDashboardResponse = {
     val __obj = js.Dynamic.literal(dashboardArn = dashboardArn.asInstanceOf[js.Any], dashboardId = dashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDashboardResponse]
   }
   
-  @scala.inline
-  implicit class CreateDashboardResponseMutableBuilder[Self <: CreateDashboardResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDashboardResponse](x: Self) {
     
-    @scala.inline
-    def setDashboardArn(value: ARN): Self = StObject.set(x, "dashboardArn", value.asInstanceOf[js.Any])
+    inline def setDashboardArn(value: ARN): Self = StObject.set(x, "dashboardArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
   }
 }

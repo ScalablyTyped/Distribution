@@ -24,25 +24,19 @@ trait ParamsResourceProjectsModelsVersionsGet
 }
 object ParamsResourceProjectsModelsVersionsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsModelsVersionsGet = {
+  inline def apply(): ParamsResourceProjectsModelsVersionsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsModelsVersionsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsModelsVersionsGetMutableBuilder[Self <: ParamsResourceProjectsModelsVersionsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsModelsVersionsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

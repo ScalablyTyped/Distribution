@@ -11,16 +11,13 @@ trait GetScaleSuccessCallbackResult extends StObject {
 }
 object GetScaleSuccessCallbackResult {
   
-  @scala.inline
-  def apply(scale: Double): GetScaleSuccessCallbackResult = {
+  inline def apply(scale: Double): GetScaleSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScaleSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetScaleSuccessCallbackResultMutableBuilder[Self <: GetScaleSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetScaleSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

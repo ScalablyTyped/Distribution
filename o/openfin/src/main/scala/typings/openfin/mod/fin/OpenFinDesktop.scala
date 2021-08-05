@@ -26,8 +26,7 @@ trait OpenFinDesktop extends StObject {
 }
 object OpenFinDesktop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: OpenFinApplicationStatic,
     ExternalApplication: OpenFinExternalApplicationStatic,
     Frame: OpenFinFrameStatic,
@@ -42,34 +41,24 @@ object OpenFinDesktop {
     __obj.asInstanceOf[OpenFinDesktop]
   }
   
-  @scala.inline
-  implicit class OpenFinDesktopMutableBuilder[Self <: OpenFinDesktop] (val x: Self) extends AnyVal {
+  extension [Self <: OpenFinDesktop](x: Self) {
     
-    @scala.inline
-    def setApplication(value: OpenFinApplicationStatic): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: OpenFinApplicationStatic): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalApplication(value: OpenFinExternalApplicationStatic): Self = StObject.set(x, "ExternalApplication", value.asInstanceOf[js.Any])
+    inline def setExternalApplication(value: OpenFinExternalApplicationStatic): Self = StObject.set(x, "ExternalApplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: OpenFinFrameStatic): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: OpenFinFrameStatic): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalHotkey(value: OpenFinGlobalHotkey): Self = StObject.set(x, "GlobalHotkey", value.asInstanceOf[js.Any])
+    inline def setGlobalHotkey(value: OpenFinGlobalHotkey): Self = StObject.set(x, "GlobalHotkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterApplicationBus(value: OpenFinInterApplicationBus): Self = StObject.set(x, "InterApplicationBus", value.asInstanceOf[js.Any])
+    inline def setInterApplicationBus(value: OpenFinInterApplicationBus): Self = StObject.set(x, "InterApplicationBus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "main", js.Any.fromFunction1(value))
+    inline def setMain(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "main", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotification(value: OpenFinNotificationStatic): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: OpenFinNotificationStatic): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: OpenFinSystem): Self = StObject.set(x, "System", value.asInstanceOf[js.Any])
+    inline def setSystem(value: OpenFinSystem): Self = StObject.set(x, "System", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: OpenFinWindowStatic): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: OpenFinWindowStatic): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait ImageComponentProperties
      with ComponentWithIcon
 object ImageComponentProperties {
   
-  @scala.inline
-  def apply(): ImageComponentProperties = {
+  inline def apply(): ImageComponentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageComponentProperties]
   }

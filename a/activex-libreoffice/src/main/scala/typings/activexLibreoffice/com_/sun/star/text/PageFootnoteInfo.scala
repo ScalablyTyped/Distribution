@@ -34,8 +34,7 @@ trait PageFootnoteInfo extends StObject {
 }
 object PageFootnoteInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FootnoteBottomDistance: Double,
     FootnoteHeight: Double,
     FootnoteSeparatorLineAdjust: HorizontalAdjust,
@@ -48,28 +47,20 @@ object PageFootnoteInfo {
     __obj.asInstanceOf[PageFootnoteInfo]
   }
   
-  @scala.inline
-  implicit class PageFootnoteInfoMutableBuilder[Self <: PageFootnoteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PageFootnoteInfo](x: Self) {
     
-    @scala.inline
-    def setFootnoteBottomDistance(value: Double): Self = StObject.set(x, "FootnoteBottomDistance", value.asInstanceOf[js.Any])
+    inline def setFootnoteBottomDistance(value: Double): Self = StObject.set(x, "FootnoteBottomDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteHeight(value: Double): Self = StObject.set(x, "FootnoteHeight", value.asInstanceOf[js.Any])
+    inline def setFootnoteHeight(value: Double): Self = StObject.set(x, "FootnoteHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteSeparatorLineAdjust(value: HorizontalAdjust): Self = StObject.set(x, "FootnoteSeparatorLineAdjust", value.asInstanceOf[js.Any])
+    inline def setFootnoteSeparatorLineAdjust(value: HorizontalAdjust): Self = StObject.set(x, "FootnoteSeparatorLineAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteSeparatorLinePenWidth(value: Double): Self = StObject.set(x, "FootnoteSeparatorLinePenWidth", value.asInstanceOf[js.Any])
+    inline def setFootnoteSeparatorLinePenWidth(value: Double): Self = StObject.set(x, "FootnoteSeparatorLinePenWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteSeparatorLineWidth(value: Double): Self = StObject.set(x, "FootnoteSeparatorLineWidth", value.asInstanceOf[js.Any])
+    inline def setFootnoteSeparatorLineWidth(value: Double): Self = StObject.set(x, "FootnoteSeparatorLineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteSeparatorLineWidthPercent(value: Double): Self = StObject.set(x, "FootnoteSeparatorLineWidthPercent", value.asInstanceOf[js.Any])
+    inline def setFootnoteSeparatorLineWidthPercent(value: Double): Self = StObject.set(x, "FootnoteSeparatorLineWidthPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteTopDistance(value: Double): Self = StObject.set(x, "FootnoteTopDistance", value.asInstanceOf[js.Any])
+    inline def setFootnoteTopDistance(value: Double): Self = StObject.set(x, "FootnoteTopDistance", value.asInstanceOf[js.Any])
   }
 }

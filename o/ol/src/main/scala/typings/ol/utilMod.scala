@@ -14,9 +14,7 @@ object utilMod {
   @js.native
   val VERSION: String = js.native
   
-  @scala.inline
-  def `abstract`(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abstract")().asInstanceOf[js.Any]
+  inline def `abstract`(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abstract")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getUid(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUid(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -23,31 +23,23 @@ trait UserInfo extends StObject {
 }
 object UserInfo {
   
-  @scala.inline
-  def apply(): UserInfo = {
+  inline def apply(): UserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserInfo]
   }
   
-  @scala.inline
-  implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfo](x: Self) {
     
-    @scala.inline
-    def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+    inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarUrlUndefined: Self = StObject.set(x, "avatarUrl", js.undefined)
+    inline def setAvatarUrlUndefined: Self = StObject.set(x, "avatarUrl", js.undefined)
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+    inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
-    @scala.inline
-    def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+    inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
+    inline def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
   }
 }

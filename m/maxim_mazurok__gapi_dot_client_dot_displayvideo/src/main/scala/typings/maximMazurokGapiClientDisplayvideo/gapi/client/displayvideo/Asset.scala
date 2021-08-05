@@ -14,25 +14,19 @@ trait Asset extends StObject {
 }
 object Asset {
   
-  @scala.inline
-  def apply(): Asset = {
+  inline def apply(): Asset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Asset]
   }
   
-  @scala.inline
-  implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
+  extension [Self <: Asset](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+    inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
+    inline def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
   }
 }

@@ -32,25 +32,19 @@ trait ISelectionRange extends StObject {
 }
 object ISelectionRange {
   
-  @scala.inline
-  def apply(firstIndex: Double, firstKey: js.Any, lastIndex: Double, lastKey: js.Any): ISelectionRange = {
+  inline def apply(firstIndex: Double, firstKey: js.Any, lastIndex: Double, lastKey: js.Any): ISelectionRange = {
     val __obj = js.Dynamic.literal(firstIndex = firstIndex.asInstanceOf[js.Any], firstKey = firstKey.asInstanceOf[js.Any], lastIndex = lastIndex.asInstanceOf[js.Any], lastKey = lastKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectionRange]
   }
   
-  @scala.inline
-  implicit class ISelectionRangeMutableBuilder[Self <: ISelectionRange] (val x: Self) extends AnyVal {
+  extension [Self <: ISelectionRange](x: Self) {
     
-    @scala.inline
-    def setFirstIndex(value: Double): Self = StObject.set(x, "firstIndex", value.asInstanceOf[js.Any])
+    inline def setFirstIndex(value: Double): Self = StObject.set(x, "firstIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstKey(value: js.Any): Self = StObject.set(x, "firstKey", value.asInstanceOf[js.Any])
+    inline def setFirstKey(value: js.Any): Self = StObject.set(x, "firstKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+    inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastKey(value: js.Any): Self = StObject.set(x, "lastKey", value.asInstanceOf[js.Any])
+    inline def setLastKey(value: js.Any): Self = StObject.set(x, "lastKey", value.asInstanceOf[js.Any])
   }
 }

@@ -25,19 +25,16 @@ trait ImageEditorStatic extends StObject {
 }
 object ImageEditorStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cropImage: (String, ImageCropData, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Object, Unit]) => Unit
   ): ImageEditorStatic = {
     val __obj = js.Dynamic.literal(cropImage = js.Any.fromFunction4(cropImage))
     __obj.asInstanceOf[ImageEditorStatic]
   }
   
-  @scala.inline
-  implicit class ImageEditorStaticMutableBuilder[Self <: ImageEditorStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEditorStatic](x: Self) {
     
-    @scala.inline
-    def setCropImage(
+    inline def setCropImage(
       value: (String, ImageCropData, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Object, Unit]) => Unit
     ): Self = StObject.set(x, "cropImage", js.Any.fromFunction4(value))
   }

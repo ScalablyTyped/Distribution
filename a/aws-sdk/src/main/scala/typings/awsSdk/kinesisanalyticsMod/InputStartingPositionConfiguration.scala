@@ -13,19 +13,15 @@ trait InputStartingPositionConfiguration extends StObject {
 }
 object InputStartingPositionConfiguration {
   
-  @scala.inline
-  def apply(): InputStartingPositionConfiguration = {
+  inline def apply(): InputStartingPositionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputStartingPositionConfiguration]
   }
   
-  @scala.inline
-  implicit class InputStartingPositionConfigurationMutableBuilder[Self <: InputStartingPositionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: InputStartingPositionConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputStartingPosition(value: InputStartingPosition): Self = StObject.set(x, "InputStartingPosition", value.asInstanceOf[js.Any])
+    inline def setInputStartingPosition(value: InputStartingPosition): Self = StObject.set(x, "InputStartingPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStartingPositionUndefined: Self = StObject.set(x, "InputStartingPosition", js.undefined)
+    inline def setInputStartingPositionUndefined: Self = StObject.set(x, "InputStartingPosition", js.undefined)
   }
 }

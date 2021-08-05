@@ -15,31 +15,23 @@ trait AllowPrevious extends StObject {
 }
 object AllowPrevious {
   
-  @scala.inline
-  def apply(): AllowPrevious = {
+  inline def apply(): AllowPrevious = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowPrevious]
   }
   
-  @scala.inline
-  implicit class AllowPreviousMutableBuilder[Self <: AllowPrevious] (val x: Self) extends AnyVal {
+  extension [Self <: AllowPrevious](x: Self) {
     
-    @scala.inline
-    def setAllowPrevious(value: Boolean): Self = StObject.set(x, "allowPrevious", value.asInstanceOf[js.Any])
+    inline def setAllowPrevious(value: Boolean): Self = StObject.set(x, "allowPrevious", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPreviousUndefined: Self = StObject.set(x, "allowPrevious", js.undefined)
+    inline def setAllowPreviousUndefined: Self = StObject.set(x, "allowPrevious", js.undefined)
     
-    @scala.inline
-    def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
+    inline def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
+    inline def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
     
-    @scala.inline
-    def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
+    inline def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
+    inline def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
   }
 }

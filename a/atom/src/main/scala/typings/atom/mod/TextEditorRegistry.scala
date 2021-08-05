@@ -47,8 +47,7 @@ trait TextEditorRegistry extends StObject {
 }
 object TextEditorRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: TextEditor => Disposable,
     clear: () => Unit,
     clearGrammarOverride: TextEditor => Unit,
@@ -63,34 +62,24 @@ object TextEditorRegistry {
     __obj.asInstanceOf[TextEditorRegistry]
   }
   
-  @scala.inline
-  implicit class TextEditorRegistryMutableBuilder[Self <: TextEditorRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorRegistry](x: Self) {
     
-    @scala.inline
-    def setAdd(value: TextEditor => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: TextEditor => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearGrammarOverride(value: TextEditor => Unit): Self = StObject.set(x, "clearGrammarOverride", js.Any.fromFunction1(value))
+    inline def setClearGrammarOverride(value: TextEditor => Unit): Self = StObject.set(x, "clearGrammarOverride", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetGrammarOverride(value: TextEditor => String | Null): Self = StObject.set(x, "getGrammarOverride", js.Any.fromFunction1(value))
+    inline def setGetGrammarOverride(value: TextEditor => String | Null): Self = StObject.set(x, "getGrammarOverride", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaintainConfig(value: TextEditor => Disposable): Self = StObject.set(x, "maintainConfig", js.Any.fromFunction1(value))
+    inline def setMaintainConfig(value: TextEditor => Disposable): Self = StObject.set(x, "maintainConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaintainGrammar(value: TextEditor => Disposable): Self = StObject.set(x, "maintainGrammar", js.Any.fromFunction1(value))
+    inline def setMaintainGrammar(value: TextEditor => Disposable): Self = StObject.set(x, "maintainGrammar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObserve(value: js.Function1[/* editor */ TextEditor, Unit] => Disposable): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+    inline def setObserve(value: js.Function1[/* editor */ TextEditor, Unit] => Disposable): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: TextEditor => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: TextEditor => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGrammarOverride(value: (TextEditor, String) => Unit): Self = StObject.set(x, "setGrammarOverride", js.Any.fromFunction2(value))
+    inline def setSetGrammarOverride(value: (TextEditor, String) => Unit): Self = StObject.set(x, "setGrammarOverride", js.Any.fromFunction2(value))
   }
 }

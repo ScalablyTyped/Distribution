@@ -77,41 +77,30 @@ object BetterCurryModule {
   }
   object DelegateOptions {
     
-    @scala.inline
-    def apply(): DelegateOptions = {
+    inline def apply(): DelegateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DelegateOptions]
     }
     
-    @scala.inline
-    implicit class DelegateOptionsMutableBuilder[Self <: DelegateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DelegateOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
+      inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
+      inline def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   

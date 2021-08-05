@@ -16,19 +16,15 @@ trait MobileBroadbandDeviceServiceCommandResult extends StObject {
 }
 object MobileBroadbandDeviceServiceCommandResult {
   
-  @scala.inline
-  def apply(responseData: IBuffer, statusCode: Double): MobileBroadbandDeviceServiceCommandResult = {
+  inline def apply(responseData: IBuffer, statusCode: Double): MobileBroadbandDeviceServiceCommandResult = {
     val __obj = js.Dynamic.literal(responseData = responseData.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandDeviceServiceCommandResult]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandDeviceServiceCommandResultMutableBuilder[Self <: MobileBroadbandDeviceServiceCommandResult] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandDeviceServiceCommandResult](x: Self) {
     
-    @scala.inline
-    def setResponseData(value: IBuffer): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+    inline def setResponseData(value: IBuffer): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

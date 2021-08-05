@@ -13,25 +13,19 @@ trait BodyContent extends StObject {
 }
 object BodyContent {
   
-  @scala.inline
-  def apply(customize: Boolean): BodyContent = {
+  inline def apply(customize: Boolean): BodyContent = {
     val __obj = js.Dynamic.literal(customize = customize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyContent]
   }
   
-  @scala.inline
-  implicit class BodyContentMutableBuilder[Self <: BodyContent] (val x: Self) extends AnyVal {
+  extension [Self <: BodyContent](x: Self) {
     
-    @scala.inline
-    def setBodyContent(value: js.Object | ReactElement): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
+    inline def setBodyContent(value: js.Object | ReactElement): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyContentNull: Self = StObject.set(x, "bodyContent", null)
+    inline def setBodyContentNull: Self = StObject.set(x, "bodyContent", null)
     
-    @scala.inline
-    def setBodyContentUndefined: Self = StObject.set(x, "bodyContent", js.undefined)
+    inline def setBodyContentUndefined: Self = StObject.set(x, "bodyContent", js.undefined)
     
-    @scala.inline
-    def setCustomize(value: Boolean): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
+    inline def setCustomize(value: Boolean): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
   }
 }

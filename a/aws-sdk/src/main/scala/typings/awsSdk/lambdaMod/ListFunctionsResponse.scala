@@ -18,28 +18,21 @@ trait ListFunctionsResponse extends StObject {
 }
 object ListFunctionsResponse {
   
-  @scala.inline
-  def apply(): ListFunctionsResponse = {
+  inline def apply(): ListFunctionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFunctionsResponse]
   }
   
-  @scala.inline
-  implicit class ListFunctionsResponseMutableBuilder[Self <: ListFunctionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFunctionsResponse](x: Self) {
     
-    @scala.inline
-    def setFunctions(value: FunctionList): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: FunctionList): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
-    @scala.inline
-    def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Functions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

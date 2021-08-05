@@ -53,55 +53,39 @@ trait SchemaCompany extends StObject {
 }
 object SchemaCompany {
   
-  @scala.inline
-  def apply(): SchemaCompany = {
+  inline def apply(): SchemaCompany = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompany]
   }
   
-  @scala.inline
-  implicit class SchemaCompanyMutableBuilder[Self <: SchemaCompany] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompany](x: Self) {
     
-    @scala.inline
-    def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "adminEmails", value.asInstanceOf[js.Any])
+    inline def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "adminEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminEmailsUndefined: Self = StObject.set(x, "adminEmails", js.undefined)
+    inline def setAdminEmailsUndefined: Self = StObject.set(x, "adminEmails", js.undefined)
     
-    @scala.inline
-    def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "adminEmails", js.Array(value :_*))
+    inline def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "adminEmails", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanyId(value: String): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
+    inline def setCompanyId(value: String): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyIdUndefined: Self = StObject.set(x, "companyId", js.undefined)
+    inline def setCompanyIdUndefined: Self = StObject.set(x, "companyId", js.undefined)
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwnerEmails(value: js.Array[String]): Self = StObject.set(x, "ownerEmails", value.asInstanceOf[js.Any])
+    inline def setOwnerEmails(value: js.Array[String]): Self = StObject.set(x, "ownerEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerEmailsUndefined: Self = StObject.set(x, "ownerEmails", js.undefined)
+    inline def setOwnerEmailsUndefined: Self = StObject.set(x, "ownerEmails", js.undefined)
     
-    @scala.inline
-    def setOwnerEmailsVarargs(value: String*): Self = StObject.set(x, "ownerEmails", js.Array(value :_*))
+    inline def setOwnerEmailsVarargs(value: String*): Self = StObject.set(x, "ownerEmails", js.Array(value :_*))
     
-    @scala.inline
-    def setTermsStatus(value: String): Self = StObject.set(x, "termsStatus", value.asInstanceOf[js.Any])
+    inline def setTermsStatus(value: String): Self = StObject.set(x, "termsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsStatusUndefined: Self = StObject.set(x, "termsStatus", js.undefined)
+    inline def setTermsStatusUndefined: Self = StObject.set(x, "termsStatus", js.undefined)
   }
 }

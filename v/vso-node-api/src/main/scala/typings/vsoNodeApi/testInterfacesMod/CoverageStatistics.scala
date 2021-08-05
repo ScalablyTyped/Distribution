@@ -18,8 +18,7 @@ trait CoverageStatistics extends StObject {
 }
 object CoverageStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blocksCovered: Double,
     blocksNotCovered: Double,
     linesCovered: Double,
@@ -30,22 +29,16 @@ object CoverageStatistics {
     __obj.asInstanceOf[CoverageStatistics]
   }
   
-  @scala.inline
-  implicit class CoverageStatisticsMutableBuilder[Self <: CoverageStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: CoverageStatistics](x: Self) {
     
-    @scala.inline
-    def setBlocksCovered(value: Double): Self = StObject.set(x, "blocksCovered", value.asInstanceOf[js.Any])
+    inline def setBlocksCovered(value: Double): Self = StObject.set(x, "blocksCovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksNotCovered(value: Double): Self = StObject.set(x, "blocksNotCovered", value.asInstanceOf[js.Any])
+    inline def setBlocksNotCovered(value: Double): Self = StObject.set(x, "blocksNotCovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesCovered(value: Double): Self = StObject.set(x, "linesCovered", value.asInstanceOf[js.Any])
+    inline def setLinesCovered(value: Double): Self = StObject.set(x, "linesCovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesNotCovered(value: Double): Self = StObject.set(x, "linesNotCovered", value.asInstanceOf[js.Any])
+    inline def setLinesNotCovered(value: Double): Self = StObject.set(x, "linesNotCovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesPartiallyCovered(value: Double): Self = StObject.set(x, "linesPartiallyCovered", value.asInstanceOf[js.Any])
+    inline def setLinesPartiallyCovered(value: Double): Self = StObject.set(x, "linesPartiallyCovered", value.asInstanceOf[js.Any])
   }
 }

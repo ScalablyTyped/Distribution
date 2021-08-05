@@ -11,9 +11,7 @@ object cryptoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hash160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def hash160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def hmacSHA512(key: Buffer, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSHA512")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def hmacSHA512(key: Buffer, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSHA512")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

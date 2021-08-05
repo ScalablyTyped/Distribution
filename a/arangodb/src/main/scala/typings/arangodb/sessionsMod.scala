@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sessionsMod {
   
-  @scala.inline
-  def apply(options: SessionsOptions): SessionsMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionsMiddleware]
+  inline def apply(options: SessionsOptions): SessionsMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionsMiddleware]
   
   @JSImport("@arangodb/foxx/sessions", JSImport.Namespace)
   @js.native
@@ -29,8 +28,7 @@ object sessionsMod {
   }
   object SessionsOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       storage: SessionStorage | String | Collection[js.Any],
       transport: SessionTransport | js.Array[SessionTransport] | cookie | header
     ): SessionsOptions = {
@@ -38,23 +36,17 @@ object sessionsMod {
       __obj.asInstanceOf[SessionsOptions]
     }
     
-    @scala.inline
-    implicit class SessionsOptionsMutableBuilder[Self <: SessionsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionsOptions](x: Self) {
       
-      @scala.inline
-      def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
+      inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
+      inline def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
       
-      @scala.inline
-      def setStorage(value: SessionStorage | String | Collection[js.Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: SessionStorage | String | Collection[js.Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: SessionTransport | js.Array[SessionTransport] | cookie | header): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: SessionTransport | js.Array[SessionTransport] | cookie | header): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportVarargs(value: SessionTransport*): Self = StObject.set(x, "transport", js.Array(value :_*))
+      inline def setTransportVarargs(value: SessionTransport*): Self = StObject.set(x, "transport", js.Array(value :_*))
     }
   }
 }

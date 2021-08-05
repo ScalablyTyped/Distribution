@@ -17,28 +17,21 @@ trait ListViewsResponse extends StObject {
 }
 object ListViewsResponse {
   
-  @scala.inline
-  def apply(): ListViewsResponse = {
+  inline def apply(): ListViewsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListViewsResponse]
   }
   
-  @scala.inline
-  implicit class ListViewsResponseMutableBuilder[Self <: ListViewsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListViewsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setViews(value: js.Array[LogView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[LogView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+    inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    @scala.inline
-    def setViewsVarargs(value: LogView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: LogView*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

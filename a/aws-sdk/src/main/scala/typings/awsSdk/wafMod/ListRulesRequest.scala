@@ -18,25 +18,19 @@ trait ListRulesRequest extends StObject {
 }
 object ListRulesRequest {
   
-  @scala.inline
-  def apply(): ListRulesRequest = {
+  inline def apply(): ListRulesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRulesRequest]
   }
   
-  @scala.inline
-  implicit class ListRulesRequestMutableBuilder[Self <: ListRulesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRulesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

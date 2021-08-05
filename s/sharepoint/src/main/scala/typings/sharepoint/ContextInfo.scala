@@ -160,8 +160,7 @@ trait ContextInfo
 }
 object ContextInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowCreateFolder: Boolean,
     AllowGridMode: Boolean,
     BasePermissions: js.Any,
@@ -239,223 +238,150 @@ object ContextInfo {
     __obj.asInstanceOf[ContextInfo]
   }
   
-  @scala.inline
-  implicit class ContextInfoMutableBuilder[Self <: ContextInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContextInfo](x: Self) {
     
-    @scala.inline
-    def setAllowCreateFolder(value: Boolean): Self = StObject.set(x, "AllowCreateFolder", value.asInstanceOf[js.Any])
+    inline def setAllowCreateFolder(value: Boolean): Self = StObject.set(x, "AllowCreateFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowGridMode(value: Boolean): Self = StObject.set(x, "AllowGridMode", value.asInstanceOf[js.Any])
+    inline def setAllowGridMode(value: Boolean): Self = StObject.set(x, "AllowGridMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePermissions(value: js.Any): Self = StObject.set(x, "BasePermissions", value.asInstanceOf[js.Any])
+    inline def setBasePermissions(value: js.Any): Self = StObject.set(x, "BasePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanShareLinkForNewDocument(value: Boolean): Self = StObject.set(x, "CanShareLinkForNewDocument", value.asInstanceOf[js.Any])
+    inline def setCanShareLinkForNewDocument(value: Boolean): Self = StObject.set(x, "CanShareLinkForNewDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascadeDeleteWarningMessage(value: String): Self = StObject.set(x, "CascadeDeleteWarningMessage", value.asInstanceOf[js.Any])
+    inline def setCascadeDeleteWarningMessage(value: String): Self = StObject.set(x, "CascadeDeleteWarningMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClvp(value: js.Any): Self = StObject.set(x, "clvp", value.asInstanceOf[js.Any])
+    inline def setClvp(value: js.Any): Self = StObject.set(x, "clvp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypesEnabled(value: Boolean): Self = StObject.set(x, "ContentTypesEnabled", value.asInstanceOf[js.Any])
+    inline def setContentTypesEnabled(value: Boolean): Self = StObject.set(x, "ContentTypesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtxId(value: Double): Self = StObject.set(x, "ctxId", value.asInstanceOf[js.Any])
+    inline def setCtxId(value: Double): Self = StObject.set(x, "ctxId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtxType(value: js.Any): Self = StObject.set(x, "ctxType", value.asInstanceOf[js.Any])
+    inline def setCtxType(value: js.Any): Self = StObject.set(x, "ctxType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSelectedItems(value: Boolean): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
+    inline def setCurrentSelectedItems(value: Boolean): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUserId(value: Double): Self = StObject.set(x, "CurrentUserId", value.asInstanceOf[js.Any])
+    inline def setCurrentUserId(value: Double): Self = StObject.set(x, "CurrentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUserIsSiteAdmin(value: Boolean): Self = StObject.set(x, "CurrentUserIsSiteAdmin", value.asInstanceOf[js.Any])
+    inline def setCurrentUserIsSiteAdmin(value: Boolean): Self = StObject.set(x, "CurrentUserIsSiteAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictSel(value: js.Any): Self = StObject.set(x, "dictSel", value.asInstanceOf[js.Any])
+    inline def setDictSel(value: js.Any): Self = StObject.set(x, "dictSel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFormUrl(value: String): Self = StObject.set(x, "displayFormUrl", value.asInstanceOf[js.Any])
+    inline def setDisplayFormUrl(value: String): Self = StObject.set(x, "displayFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditFormUrl(value: String): Self = StObject.set(x, "editFormUrl", value.asInstanceOf[js.Any])
+    inline def setEditFormUrl(value: String): Self = StObject.set(x, "editFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMinorVersions(value: Boolean): Self = StObject.set(x, "EnableMinorVersions", value.asInstanceOf[js.Any])
+    inline def setEnableMinorVersions(value: Boolean): Self = StObject.set(x, "EnableMinorVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeFromOfflineClient(value: Boolean): Self = StObject.set(x, "ExcludeFromOfflineClient", value.asInstanceOf[js.Any])
+    inline def setExcludeFromOfflineClient(value: Boolean): Self = StObject.set(x, "ExcludeFromOfflineClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalDataList(value: Boolean): Self = StObject.set(x, "ExternalDataList", value.asInstanceOf[js.Any])
+    inline def setExternalDataList(value: Boolean): Self = StObject.set(x, "ExternalDataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasRelatedCascadeLists(value: Boolean): Self = StObject.set(x, "HasRelatedCascadeLists", value.asInstanceOf[js.Any])
+    inline def setHasRelatedCascadeLists(value: Boolean): Self = StObject.set(x, "HasRelatedCascadeLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpPath(value: String): Self = StObject.set(x, "HttpPath", value.asInstanceOf[js.Any])
+    inline def setHttpPath(value: String): Self = StObject.set(x, "HttpPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRoot(value: String): Self = StObject.set(x, "HttpRoot", value.asInstanceOf[js.Any])
+    inline def setHttpRoot(value: String): Self = StObject.set(x, "HttpRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesPath(value: String): Self = StObject.set(x, "imagesPath", value.asInstanceOf[js.Any])
+    inline def setImagesPath(value: String): Self = StObject.set(x, "imagesPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInGridFullRender(value: Boolean): Self = StObject.set(x, "inGridFullRender", value.asInstanceOf[js.Any])
+    inline def setInGridFullRender(value: Boolean): Self = StObject.set(x, "inGridFullRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInGridMode(value: Boolean): Self = StObject.set(x, "inGridMode", value.asInstanceOf[js.Any])
+    inline def setInGridMode(value: Boolean): Self = StObject.set(x, "inGridMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAppWeb(value: Boolean): Self = StObject.set(x, "IsAppWeb", value.asInstanceOf[js.Any])
+    inline def setIsAppWeb(value: Boolean): Self = StObject.set(x, "IsAppWeb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClientRendering(value: Boolean): Self = StObject.set(x, "IsClientRendering", value.asInstanceOf[js.Any])
+    inline def setIsClientRendering(value: Boolean): Self = StObject.set(x, "IsClientRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsForceCheckout(value: Boolean): Self = StObject.set(x, "isForceCheckout", value.asInstanceOf[js.Any])
+    inline def setIsForceCheckout(value: Boolean): Self = StObject.set(x, "isForceCheckout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsModerated(value: Boolean): Self = StObject.set(x, "isModerated", value.asInstanceOf[js.Any])
+    inline def setIsModerated(value: Boolean): Self = StObject.set(x, "isModerated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPortalTemplate(value: Boolean): Self = StObject.set(x, "isPortalTemplate", value.asInstanceOf[js.Any])
+    inline def setIsPortalTemplate(value: Boolean): Self = StObject.set(x, "isPortalTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVersions(value: Boolean): Self = StObject.set(x, "isVersions", value.asInstanceOf[js.Any])
+    inline def setIsVersions(value: Boolean): Self = StObject.set(x, "isVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWebEditorPreview(value: Boolean): Self = StObject.set(x, "isWebEditorPreview", value.asInstanceOf[js.Any])
+    inline def setIsWebEditorPreview(value: Boolean): Self = StObject.set(x, "isWebEditorPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRowIndexSelected(value: Double): Self = StObject.set(x, "LastRowIndexSelected", value.asInstanceOf[js.Any])
+    inline def setLastRowIndexSelected(value: Double): Self = StObject.set(x, "LastRowIndexSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSelectableRowIdx(value: Double): Self = StObject.set(x, "LastSelectableRowIdx", value.asInstanceOf[js.Any])
+    inline def setLastSelectableRowIdx(value: Double): Self = StObject.set(x, "LastSelectableRowIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSelectedItemIID(value: Double): Self = StObject.set(x, "LastSelectedItemIID", value.asInstanceOf[js.Any])
+    inline def setLastSelectedItemIID(value: Double): Self = StObject.set(x, "LastSelectedItemIID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeavingGridMode(value: Boolean): Self = StObject.set(x, "leavingGridMode", value.asInstanceOf[js.Any])
+    inline def setLeavingGridMode(value: Boolean): Self = StObject.set(x, "leavingGridMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListBaseType(value: Double): Self = StObject.set(x, "listBaseType", value.asInstanceOf[js.Any])
+    inline def setListBaseType(value: Double): Self = StObject.set(x, "listBaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListData(value: js.Any): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
+    inline def setListData(value: js.Any): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListName(value: String): Self = StObject.set(x, "listName", value.asInstanceOf[js.Any])
+    inline def setListName(value: String): Self = StObject.set(x, "listName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSchema(value: ListSchema): Self = StObject.set(x, "ListSchema", value.asInstanceOf[js.Any])
+    inline def setListSchema(value: ListSchema): Self = StObject.set(x, "ListSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTemplate(value: String): Self = StObject.set(x, "listTemplate", value.asInstanceOf[js.Any])
+    inline def setListTemplate(value: String): Self = StObject.set(x, "listTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTitle(value: String): Self = StObject.set(x, "ListTitle", value.asInstanceOf[js.Any])
+    inline def setListTitle(value: String): Self = StObject.set(x, "ListTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUrlDir(value: String): Self = StObject.set(x, "listUrlDir", value.asInstanceOf[js.Any])
+    inline def setListUrlDir(value: String): Self = StObject.set(x, "listUrlDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingAsyncData(value: Boolean): Self = StObject.set(x, "loadingAsyncData", value.asInstanceOf[js.Any])
+    inline def setLoadingAsyncData(value: Boolean): Self = StObject.set(x, "loadingAsyncData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerationStatus(value: Double): Self = StObject.set(x, "ModerationStatus", value.asInstanceOf[js.Any])
+    inline def setModerationStatus(value: Double): Self = StObject.set(x, "ModerationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewFormUrl(value: String): Self = StObject.set(x, "newFormUrl", value.asInstanceOf[js.Any])
+    inline def setNewFormUrl(value: String): Self = StObject.set(x, "newFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewWOPIDocumentEnabled(value: Boolean): Self = StObject.set(x, "NewWOPIDocumentEnabled", value.asInstanceOf[js.Any])
+    inline def setNewWOPIDocumentEnabled(value: Boolean): Self = StObject.set(x, "NewWOPIDocumentEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewWOPIDocumentUrl(value: String): Self = StObject.set(x, "NewWOPIDocumentUrl", value.asInstanceOf[js.Any])
+    inline def setNewWOPIDocumentUrl(value: String): Self = StObject.set(x, "NewWOPIDocumentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoGroupCollapse(value: Boolean): Self = StObject.set(x, "noGroupCollapse", value.asInstanceOf[js.Any])
+    inline def setNoGroupCollapse(value: Boolean): Self = StObject.set(x, "noGroupCollapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRefreshFailed(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onRefreshFailed", js.Any.fromFunction3(value))
+    inline def setOnRefreshFailed(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onRefreshFailed", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOverrideDeleteConfirmation(value: String): Self = StObject.set(x, "overrideDeleteConfirmation", value.asInstanceOf[js.Any])
+    inline def setOverrideDeleteConfirmation(value: String): Self = StObject.set(x, "overrideDeleteConfirmation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideFilterQstring(value: String): Self = StObject.set(x, "overrideFilterQstring", value.asInstanceOf[js.Any])
+    inline def setOverrideFilterQstring(value: String): Self = StObject.set(x, "overrideFilterQstring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUrl(value: String): Self = StObject.set(x, "PortalUrl", value.asInstanceOf[js.Any])
+    inline def setPortalUrl(value: String): Self = StObject.set(x, "PortalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveView(value: Boolean): Self = StObject.set(x, "recursiveView", value.asInstanceOf[js.Any])
+    inline def setRecursiveView(value: Boolean): Self = StObject.set(x, "recursiveView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecycleBinEnabled(value: Double): Self = StObject.set(x, "RecycleBinEnabled", value.asInstanceOf[js.Any])
+    inline def setRecycleBinEnabled(value: Double): Self = StObject.set(x, "RecycleBinEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootFolder(value: String): Self = StObject.set(x, "rootFolder", value.asInstanceOf[js.Any])
+    inline def setRootFolder(value: String): Self = StObject.set(x, "rootFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootFolderForDisplay(value: String): Self = StObject.set(x, "rootFolderForDisplay", value.asInstanceOf[js.Any])
+    inline def setRootFolderForDisplay(value: String): Self = StObject.set(x, "rootFolderForDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowFocusTimerID(value: Double): Self = StObject.set(x, "RowFocusTimerID", value.asInstanceOf[js.Any])
+    inline def setRowFocusTimerID(value: Double): Self = StObject.set(x, "RowFocusTimerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAllCbx(value: HTMLElement): Self = StObject.set(x, "SelectAllCbx", value.asInstanceOf[js.Any])
+    inline def setSelectAllCbx(value: HTMLElement): Self = StObject.set(x, "SelectAllCbx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendToLocationName(value: String): Self = StObject.set(x, "SendToLocationName", value.asInstanceOf[js.Any])
+    inline def setSendToLocationName(value: String): Self = StObject.set(x, "SendToLocationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendToLocationUrl(value: String): Self = StObject.set(x, "SendToLocationUrl", value.asInstanceOf[js.Any])
+    inline def setSendToLocationUrl(value: String): Self = StObject.set(x, "SendToLocationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
+    inline def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteTemplateId(value: Double): Self = StObject.set(x, "SiteTemplateId", value.asInstanceOf[js.Any])
+    inline def setSiteTemplateId(value: Double): Self = StObject.set(x, "SiteTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteTitle(value: String): Self = StObject.set(x, "SiteTitle", value.asInstanceOf[js.Any])
+    inline def setSiteTitle(value: String): Self = StObject.set(x, "SiteTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateInitDone(value: Boolean): Self = StObject.set(x, "StateInitDone", value.asInstanceOf[js.Any])
+    inline def setStateInitDone(value: Boolean): Self = StObject.set(x, "StateInitDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCbxFocusHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "TableCbxFocusHandler", js.Any.fromFunction2(value))
+    inline def setTableCbxFocusHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "TableCbxFocusHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTableMouseoverHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "TableMouseoverHandler", js.Any.fromFunction2(value))
+    inline def setTableMouseoverHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "TableMouseoverHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTotalListItems(value: Double): Self = StObject.set(x, "TotalListItems", value.asInstanceOf[js.Any])
+    inline def setTotalListItems(value: Double): Self = StObject.set(x, "TotalListItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerEnabled(value: Boolean): Self = StObject.set(x, "verEnabled", value.asInstanceOf[js.Any])
+    inline def setVerEnabled(value: Boolean): Self = StObject.set(x, "verEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowsAssociated(value: Boolean): Self = StObject.set(x, "WorkflowsAssociated", value.asInstanceOf[js.Any])
+    inline def setWorkflowsAssociated(value: Boolean): Self = StObject.set(x, "WorkflowsAssociated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWpq(value: String): Self = StObject.set(x, "wpq", value.asInstanceOf[js.Any])
+    inline def setWpq(value: String): Self = StObject.set(x, "wpq", value.asInstanceOf[js.Any])
   }
 }

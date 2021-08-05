@@ -16,8 +16,7 @@ trait IThumbnailProperties extends StObject {
 }
 object IThumbnailProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     originalHeight: Double,
     originalWidth: Double,
     returnedSmallerCachedSize: Boolean,
@@ -28,19 +27,14 @@ object IThumbnailProperties {
     __obj.asInstanceOf[IThumbnailProperties]
   }
   
-  @scala.inline
-  implicit class IThumbnailPropertiesMutableBuilder[Self <: IThumbnailProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IThumbnailProperties](x: Self) {
     
-    @scala.inline
-    def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
+    inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
+    inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnedSmallerCachedSize(value: Boolean): Self = StObject.set(x, "returnedSmallerCachedSize", value.asInstanceOf[js.Any])
+    inline def setReturnedSmallerCachedSize(value: Boolean): Self = StObject.set(x, "returnedSmallerCachedSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ThumbnailType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ThumbnailType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

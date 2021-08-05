@@ -23,25 +23,19 @@ trait AssetDestinationEntry extends StObject {
 }
 object AssetDestinationEntry {
   
-  @scala.inline
-  def apply(AssetId: Id, Bucket: string): AssetDestinationEntry = {
+  inline def apply(AssetId: Id, Bucket: string): AssetDestinationEntry = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDestinationEntry]
   }
   
-  @scala.inline
-  implicit class AssetDestinationEntryMutableBuilder[Self <: AssetDestinationEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AssetDestinationEntry](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

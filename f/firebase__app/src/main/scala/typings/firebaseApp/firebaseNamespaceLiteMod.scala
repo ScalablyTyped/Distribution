@@ -11,6 +11,5 @@ object firebaseNamespaceLiteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFirebaseNamespaceLite(): FirebaseNamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createFirebaseNamespaceLite")().asInstanceOf[FirebaseNamespace]
+  inline def createFirebaseNamespaceLite(): FirebaseNamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createFirebaseNamespaceLite")().asInstanceOf[FirebaseNamespace]
 }

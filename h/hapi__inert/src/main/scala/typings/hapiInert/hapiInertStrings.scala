@@ -8,21 +8,17 @@ object hapiInertStrings {
   
   @js.native
   sealed trait attachment extends StObject
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
+  inline def attachment: attachment = "attachment".asInstanceOf[attachment]
   
   @js.native
   sealed trait hash extends StObject
-  @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
+  inline def hash: hash = "hash".asInstanceOf[hash]
   
   @js.native
   sealed trait `inline` extends StObject
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait simple extends StObject
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
+  inline def simple: simple = "simple".asInstanceOf[simple]
 }

@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(topNode: HTMLElement, lastNode: HTMLInputElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(topNode: HTMLElement, lastNode: HTMLInputElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object constants {
     
@@ -39,40 +38,26 @@ object mod {
     val FOCUS_GROUP: /* "data-focus-lock" */ String = js.native
   }
   
-  @scala.inline
-  def focusInside(topNode: js.Array[HTMLElement]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def focusInside(topNode: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusInside(topNode: js.Array[HTMLElement]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusInside(topNode: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def focusIsHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusIsHidden")().asInstanceOf[Boolean]
+  inline def focusIsHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusIsHidden")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def focusMerge(topNode: js.Array[HTMLElement]): js.UndefOr[NodeIndex | Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeIndex | Node]]
-  @scala.inline
-  def focusMerge(topNode: js.Array[HTMLElement], lastNode: HTMLInputElement): js.UndefOr[NodeIndex | Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeIndex | Node]]
-  @scala.inline
-  def focusMerge(topNode: HTMLElement): js.UndefOr[NodeIndex | Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeIndex | Node]]
-  @scala.inline
-  def focusMerge(topNode: HTMLElement, lastNode: HTMLInputElement): js.UndefOr[NodeIndex | Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeIndex | Node]]
+  inline def focusMerge(topNode: js.Array[HTMLElement]): js.UndefOr[NodeIndex | Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeIndex | Node]]
+  inline def focusMerge(topNode: js.Array[HTMLElement], lastNode: HTMLInputElement): js.UndefOr[NodeIndex | Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeIndex | Node]]
+  inline def focusMerge(topNode: HTMLElement): js.UndefOr[NodeIndex | Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeIndex | Node]]
+  inline def focusMerge(topNode: HTMLElement, lastNode: HTMLInputElement): js.UndefOr[NodeIndex | Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeIndex | Node]]
   
-  @scala.inline
-  def focusNextElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def focusNextElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def focusNextElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def focusNextElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def focusPrevElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def focusPrevElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAllAffectedNodes(node: js.Array[HTMLElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
-  @scala.inline
-  def getAllAffectedNodes(node: HTMLElement): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getAllAffectedNodes(node: js.Array[HTMLElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getAllAffectedNodes(node: HTMLElement): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
   
-  @scala.inline
-  def getFocusabledIn(topNode: HTMLElement): js.Array[FocusableIn] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusabledIn")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[FocusableIn]]
+  inline def getFocusabledIn(topNode: HTMLElement): js.Array[FocusableIn] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusabledIn")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[FocusableIn]]
   
   object tabHook {
     
@@ -80,10 +65,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[Unit]
+    inline def attach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[Unit]
     
-    @scala.inline
-    def detach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")().asInstanceOf[Unit]
+    inline def detach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")().asInstanceOf[Unit]
   }
 }

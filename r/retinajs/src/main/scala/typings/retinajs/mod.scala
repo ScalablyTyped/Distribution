@@ -21,10 +21,8 @@ object mod {
   // function manualSwapImage(image: any, hdsrc: string): void;
   // function getImages(images: any[] | null): any[];
   // function cleanBgImg(img: any): any;
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(images: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(images: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("retinajs", JSImport.Namespace)
   @js.native

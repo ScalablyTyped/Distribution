@@ -23,34 +23,25 @@ trait DescribeConfigurationAggregatorsRequest extends StObject {
 }
 object DescribeConfigurationAggregatorsRequest {
   
-  @scala.inline
-  def apply(): DescribeConfigurationAggregatorsRequest = {
+  inline def apply(): DescribeConfigurationAggregatorsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigurationAggregatorsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationAggregatorsRequestMutableBuilder[Self <: DescribeConfigurationAggregatorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationAggregatorsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregatorNames(value: ConfigurationAggregatorNameList): Self = StObject.set(x, "ConfigurationAggregatorNames", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregatorNames(value: ConfigurationAggregatorNameList): Self = StObject.set(x, "ConfigurationAggregatorNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationAggregatorNamesUndefined: Self = StObject.set(x, "ConfigurationAggregatorNames", js.undefined)
+    inline def setConfigurationAggregatorNamesUndefined: Self = StObject.set(x, "ConfigurationAggregatorNames", js.undefined)
     
-    @scala.inline
-    def setConfigurationAggregatorNamesVarargs(value: ConfigurationAggregatorName*): Self = StObject.set(x, "ConfigurationAggregatorNames", js.Array(value :_*))
+    inline def setConfigurationAggregatorNamesVarargs(value: ConfigurationAggregatorName*): Self = StObject.set(x, "ConfigurationAggregatorNames", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

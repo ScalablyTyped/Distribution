@@ -20,37 +20,27 @@ trait CreateMediaRecorderOption extends StObject {
 }
 object CreateMediaRecorderOption {
   
-  @scala.inline
-  def apply(): CreateMediaRecorderOption = {
+  inline def apply(): CreateMediaRecorderOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMediaRecorderOption]
   }
   
-  @scala.inline
-  implicit class CreateMediaRecorderOptionMutableBuilder[Self <: CreateMediaRecorderOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMediaRecorderOption](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+    inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    @scala.inline
-    def setGop(value: Double): Self = StObject.set(x, "gop", value.asInstanceOf[js.Any])
+    inline def setGop(value: Double): Self = StObject.set(x, "gop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopUndefined: Self = StObject.set(x, "gop", js.undefined)
+    inline def setGopUndefined: Self = StObject.set(x, "gop", js.undefined)
     
-    @scala.inline
-    def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
+    inline def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
   }
 }

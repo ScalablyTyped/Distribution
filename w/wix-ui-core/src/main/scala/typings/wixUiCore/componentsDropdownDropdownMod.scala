@@ -32,14 +32,12 @@ object componentsDropdownDropdownMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def areSelectedIdsEqual(selectedIds1: js.Any, selectedIds2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSelectedIdsEqual")(selectedIds1.asInstanceOf[js.Any], selectedIds2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def areSelectedIdsEqual(selectedIds1: js.Any, selectedIds2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSelectedIdsEqual")(selectedIds1.asInstanceOf[js.Any], selectedIds2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("wix-ui-core/dist/standalone/src/components/dropdown/Dropdown", "Dropdown.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/dist/standalone/src/components/dropdown/Dropdown", "DropdownComponent")
@@ -60,7 +58,7 @@ object componentsDropdownDropdownMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDropdownComponent(prevProps: DropdownProps): Unit = js.native
     
-    var dropdownContentRef: js.Any = js.native
+    /* private */ var dropdownContentRef: js.Any = js.native
     
     def getSelectedOption(): Option & IDOMid = js.native
     
@@ -95,14 +93,12 @@ object componentsDropdownDropdownMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def areSelectedIdsEqual(selectedIds1: js.Any, selectedIds2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSelectedIdsEqual")(selectedIds1.asInstanceOf[js.Any], selectedIds2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def areSelectedIdsEqual(selectedIds1: js.Any, selectedIds2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areSelectedIdsEqual")(selectedIds1.asInstanceOf[js.Any], selectedIds2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("wix-ui-core/dist/standalone/src/components/dropdown/Dropdown", "DropdownComponent.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined std.Pick<wix-ui-core.wix-ui-core/dist/standalone/src/components/popover.PopoverProps, 'fixed' | 'flip' | 'moveBy'> & {  data-hook :string | undefined,   placement :wix-ui-core.wix-ui-core/dist/standalone/src/components/popover.Placement,   showArrow :boolean | undefined,   children :react.react.ReactNode,   options :std.Array<wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown-option.Option>,   openTrigger :wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown/constants.OPEN_TRIGGER_TYPE,   onOptionHover :(option : wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown-option.Option & wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown-content.IDOMid | null): void | undefined, onSelect (option : wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown-option.Option | null): void,   onContentMouseDown :(e : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): void | undefined,   onDeselect :(option : wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown-option.Option | null): void | undefined,   onExpandedChange :(isExpanded : boolean): void | undefined,   initialSelectedIds :std.Array<string | number>,   onInitialSelectedOptionsSet :(options : std.Array<wix-ui-core.wix-ui-core/dist/standalone/src/components/dropdown-option.Option>): void | undefined,   multi :boolean | undefined,   fixedHeader :react.react.ReactNode | undefined,   fixedFooter :react.react.ReactNode | undefined,   disabled :boolean | undefined,   timeout :number | undefined,   forceContentElementVisibility :boolean | undefined,   style :object | undefined,   role :string | undefined,   id :string | undefined,   contentId :string | undefined,   allowReselect :boolean | undefined,   optionsContainerZIndex :number | undefined,   dynamicWidth :boolean | undefined,   appendTo :wix-ui-core.wix-ui-core/dist/standalone/src/components/popover.AppendTo | undefined,   className :string | undefined} */
@@ -207,23 +203,18 @@ object componentsDropdownDropdownMod {
   }
   object DropdownState {
     
-    @scala.inline
-    def apply(isOpen: Boolean, selectedIds: js.Array[String | Double]): DropdownState = {
+    inline def apply(isOpen: Boolean, selectedIds: js.Array[String | Double]): DropdownState = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], selectedIds = selectedIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropdownState]
     }
     
-    @scala.inline
-    implicit class DropdownStateMutableBuilder[Self <: DropdownState] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownState](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIds(value: js.Array[String | Double]): Self = StObject.set(x, "selectedIds", value.asInstanceOf[js.Any])
+      inline def setSelectedIds(value: js.Array[String | Double]): Self = StObject.set(x, "selectedIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "selectedIds", js.Array(value :_*))
+      inline def setSelectedIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "selectedIds", js.Array(value :_*))
     }
   }
 }

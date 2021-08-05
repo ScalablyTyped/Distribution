@@ -13,16 +13,13 @@ trait DeleteRemoteAccessSessionRequest extends StObject {
 }
 object DeleteRemoteAccessSessionRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): DeleteRemoteAccessSessionRequest = {
+  inline def apply(arn: AmazonResourceName): DeleteRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRemoteAccessSessionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRemoteAccessSessionRequestMutableBuilder[Self <: DeleteRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRemoteAccessSessionRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

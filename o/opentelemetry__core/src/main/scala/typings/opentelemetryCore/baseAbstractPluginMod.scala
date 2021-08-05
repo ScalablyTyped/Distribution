@@ -20,23 +20,23 @@ object baseAbstractPluginMod {
     def this(_tracerName: String) = this()
     def this(_tracerName: String, _tracerVersion: String) = this()
     
-    val _basedir: js.UndefOr[String] = js.native
+    /* protected */ val _basedir: js.UndefOr[String] = js.native
     
-    var _config: PluginConfig = js.native
+    /* protected */ var _config: PluginConfig = js.native
     
-    var _internalFilesExports: StringDictionary[js.Any] = js.native
+    /* protected */ var _internalFilesExports: StringDictionary[js.Any] = js.native
     
-    val _internalFilesList: js.UndefOr[PluginInternalFiles] = js.native
+    /* protected */ val _internalFilesList: js.UndefOr[PluginInternalFiles] = js.native
     
-    var _logger: Logger = js.native
+    /* protected */ var _logger: Logger = js.native
     
-    var _moduleExports: T = js.native
+    /* protected */ var _moduleExports: T = js.native
     
-    var _tracer: Tracer = js.native
+    /* protected */ var _tracer: Tracer = js.native
     
-    val _tracerName: String = js.native
+    /* protected */ val _tracerName: String = js.native
     
-    val _tracerVersion: js.UndefOr[String] = js.native
+    /* protected */ val _tracerVersion: js.UndefOr[String] = js.native
     
     /* protected */ def patch(): T = js.native
     

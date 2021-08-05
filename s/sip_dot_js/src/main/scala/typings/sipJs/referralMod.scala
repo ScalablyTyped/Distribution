@@ -23,9 +23,9 @@ object referralMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    var incomingReferRequest: js.Any = js.native
+    /* private */ var incomingReferRequest: js.Any = js.native
     
-    var inviter: js.Any = js.native
+    /* private */ var inviter: js.Any = js.native
     
     /**
       * Creates an inviter which may be used to send an out of dialog INVITE request.
@@ -56,6 +56,6 @@ object referralMod {
     /** Incoming REFER request message. */
     def request: IncomingRequestMessage = js.native
     
-    var session: js.Any = js.native
+    /* private */ var session: js.Any = js.native
   }
 }

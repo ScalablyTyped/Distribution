@@ -23,22 +23,17 @@ trait CreatePlatformApplicationInput extends StObject {
 }
 object CreatePlatformApplicationInput {
   
-  @scala.inline
-  def apply(Attributes: MapStringToString, Name: String, Platform: String): CreatePlatformApplicationInput = {
+  inline def apply(Attributes: MapStringToString, Name: String, Platform: String): CreatePlatformApplicationInput = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlatformApplicationInput]
   }
   
-  @scala.inline
-  implicit class CreatePlatformApplicationInputMutableBuilder[Self <: CreatePlatformApplicationInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlatformApplicationInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
   }
 }

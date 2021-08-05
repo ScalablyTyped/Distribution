@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object implementationMod {
   
-  @scala.inline
-  def apply(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[js.Any]]]
-  @scala.inline
-  def apply[T /* <: Array[js.Any] */](iterable: PromiseTuple[T]): js.Promise[PromiseResultTuple[T]] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResultTuple[T]]]
-  @scala.inline
-  def apply[T](iterable: Iterable[js.Promise[T] | T]): js.Promise[js.Array[PromiseResult[T, js.Any]]] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PromiseResult[T, js.Any]]]]
+  inline def apply(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def apply[T /* <: Array[js.Any] */](iterable: PromiseTuple[T]): js.Promise[PromiseResultTuple[T]] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResultTuple[T]]]
+  inline def apply[T](iterable: Iterable[js.Promise[T] | T]): js.Promise[js.Array[PromiseResult[T, js.Any]]] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PromiseResult[T, js.Any]]]]
   
   @JSImport("promise.allsettled/implementation", JSImport.Namespace)
   @js.native

@@ -9,6 +9,5 @@ object global {
   @JSGlobal("traceback")
   @js.native
   def traceback: TracebackStatic = js.native
-  @scala.inline
-  def traceback_=(x: TracebackStatic): Unit = js.Dynamic.global.updateDynamic("traceback")(x.asInstanceOf[js.Any])
+  inline def traceback_=(x: TracebackStatic): Unit = js.Dynamic.global.updateDynamic("traceback")(x.asInstanceOf[js.Any])
 }

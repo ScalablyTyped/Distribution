@@ -18,8 +18,7 @@ trait IVaultSharedLinkOperations extends StObject {
 }
 object IVaultSharedLinkOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreateSharedLink: ISharedLinkInfo => ISharedLinkInfo,
     DeleteSharedLink: String => Unit,
     GetSharedLink: String => ISharedLinkInfo,
@@ -30,22 +29,16 @@ object IVaultSharedLinkOperations {
     __obj.asInstanceOf[IVaultSharedLinkOperations]
   }
   
-  @scala.inline
-  implicit class IVaultSharedLinkOperationsMutableBuilder[Self <: IVaultSharedLinkOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultSharedLinkOperations](x: Self) {
     
-    @scala.inline
-    def setCreateSharedLink(value: ISharedLinkInfo => ISharedLinkInfo): Self = StObject.set(x, "CreateSharedLink", js.Any.fromFunction1(value))
+    inline def setCreateSharedLink(value: ISharedLinkInfo => ISharedLinkInfo): Self = StObject.set(x, "CreateSharedLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteSharedLink(value: String => Unit): Self = StObject.set(x, "DeleteSharedLink", js.Any.fromFunction1(value))
+    inline def setDeleteSharedLink(value: String => Unit): Self = StObject.set(x, "DeleteSharedLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSharedLink(value: String => ISharedLinkInfo): Self = StObject.set(x, "GetSharedLink", js.Any.fromFunction1(value))
+    inline def setGetSharedLink(value: String => ISharedLinkInfo): Self = StObject.set(x, "GetSharedLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSharedLinks(value: Double => ISharedLinkInfos): Self = StObject.set(x, "GetSharedLinks", js.Any.fromFunction1(value))
+    inline def setGetSharedLinks(value: Double => ISharedLinkInfos): Self = StObject.set(x, "GetSharedLinks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSharedLinksByObject(value: IObjID => ISharedLinkInfos): Self = StObject.set(x, "GetSharedLinksByObject", js.Any.fromFunction1(value))
+    inline def setGetSharedLinksByObject(value: IObjID => ISharedLinkInfos): Self = StObject.set(x, "GetSharedLinksByObject", js.Any.fromFunction1(value))
   }
 }

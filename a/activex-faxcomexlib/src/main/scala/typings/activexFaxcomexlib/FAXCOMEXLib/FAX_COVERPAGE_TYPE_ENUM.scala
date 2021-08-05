@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_COVERPAGE_TYPE_ENUM extends StObject
 object FAX_COVERPAGE_TYPE_ENUM {
   
-  @scala.inline
-  def fcptLOCAL: `1` = 1.asInstanceOf[`1`]
+  inline def fcptLOCAL: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fcptNONE: `0` = 0.asInstanceOf[`0`]
+  inline def fcptNONE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fcptSERVER: `2` = 2.asInstanceOf[`2`]
+  inline def fcptSERVER: `2` = 2.asInstanceOf[`2`]
 }

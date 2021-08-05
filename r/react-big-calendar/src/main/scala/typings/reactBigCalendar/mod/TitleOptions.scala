@@ -15,25 +15,19 @@ trait TitleOptions
 }
 object TitleOptions {
   
-  @scala.inline
-  def apply(formats: js.Array[DateFormat]): TitleOptions = {
+  inline def apply(formats: js.Array[DateFormat]): TitleOptions = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleOptions]
   }
   
-  @scala.inline
-  implicit class TitleOptionsMutableBuilder[Self <: TitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TitleOptions](x: Self) {
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    @scala.inline
-    def setFormats(value: js.Array[DateFormat]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: js.Array[DateFormat]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsVarargs(value: DateFormat*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: DateFormat*): Self = StObject.set(x, "formats", js.Array(value :_*))
   }
 }

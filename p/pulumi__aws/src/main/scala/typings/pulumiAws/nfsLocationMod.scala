@@ -69,21 +69,16 @@ object nfsLocationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NfsLocationState): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    inline def get(name: String, id: Input[ID]): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    inline def get(name: String, id: Input[ID], state: NfsLocationState): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    inline def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
     
     /**
       * Returns true if the given object is an instance of NfsLocation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean]
   }
   
   trait NfsLocationArgs extends StObject {
@@ -110,8 +105,7 @@ object nfsLocationMod {
   }
   object NfsLocationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onPremConfig: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig],
       serverHostname: Input[String],
       subdirectory: Input[String]
@@ -120,23 +114,17 @@ object nfsLocationMod {
       __obj.asInstanceOf[NfsLocationArgs]
     }
     
-    @scala.inline
-    implicit class NfsLocationArgsMutableBuilder[Self <: NfsLocationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NfsLocationArgs](x: Self) {
       
-      @scala.inline
-      def setOnPremConfig(value: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]): Self = StObject.set(x, "onPremConfig", value.asInstanceOf[js.Any])
+      inline def setOnPremConfig(value: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]): Self = StObject.set(x, "onPremConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
+      inline def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -171,50 +159,36 @@ object nfsLocationMod {
   }
   object NfsLocationState {
     
-    @scala.inline
-    def apply(): NfsLocationState = {
+    inline def apply(): NfsLocationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NfsLocationState]
     }
     
-    @scala.inline
-    implicit class NfsLocationStateMutableBuilder[Self <: NfsLocationState] (val x: Self) extends AnyVal {
+    extension [Self <: NfsLocationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setOnPremConfig(value: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]): Self = StObject.set(x, "onPremConfig", value.asInstanceOf[js.Any])
+      inline def setOnPremConfig(value: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]): Self = StObject.set(x, "onPremConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPremConfigUndefined: Self = StObject.set(x, "onPremConfig", js.undefined)
+      inline def setOnPremConfigUndefined: Self = StObject.set(x, "onPremConfig", js.undefined)
       
-      @scala.inline
-      def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
+      inline def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerHostnameUndefined: Self = StObject.set(x, "serverHostname", js.undefined)
+      inline def setServerHostnameUndefined: Self = StObject.set(x, "serverHostname", js.undefined)
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait GetShardIteratorOutput extends StObject {
 }
 object GetShardIteratorOutput {
   
-  @scala.inline
-  def apply(): GetShardIteratorOutput = {
+  inline def apply(): GetShardIteratorOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetShardIteratorOutput]
   }
   
-  @scala.inline
-  implicit class GetShardIteratorOutputMutableBuilder[Self <: GetShardIteratorOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetShardIteratorOutput](x: Self) {
     
-    @scala.inline
-    def setShardIterator(value: ShardIterator): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
+    inline def setShardIterator(value: ShardIterator): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardIteratorUndefined: Self = StObject.set(x, "ShardIterator", js.undefined)
+    inline def setShardIteratorUndefined: Self = StObject.set(x, "ShardIterator", js.undefined)
   }
 }

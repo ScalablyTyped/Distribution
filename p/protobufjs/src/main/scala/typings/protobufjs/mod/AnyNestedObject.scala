@@ -16,40 +16,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnyNestedObject extends StObject
 object AnyNestedObject {
   
-  @scala.inline
-  def IEnum(values: StringDictionary[Double]): typings.protobufjs.mod.IEnum = {
+  inline def IEnum(values: StringDictionary[Double]): typings.protobufjs.mod.IEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IEnum]
   }
   
-  @scala.inline
-  def IExtensionField(extend: String, id: Double, `type`: String): typings.protobufjs.mod.IExtensionField = {
+  inline def IExtensionField(extend: String, id: Double, `type`: String): typings.protobufjs.mod.IExtensionField = {
     val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IExtensionField]
   }
   
-  @scala.inline
-  def IExtensionMapField(extend: String, id: Double, keyType: String, `type`: String): typings.protobufjs.mod.IExtensionMapField = {
+  inline def IExtensionMapField(extend: String, id: Double, keyType: String, `type`: String): typings.protobufjs.mod.IExtensionMapField = {
     val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IExtensionMapField]
   }
   
-  @scala.inline
-  def INamespace(): typings.protobufjs.mod.INamespace = {
+  inline def INamespace(): typings.protobufjs.mod.INamespace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.protobufjs.mod.INamespace]
   }
   
-  @scala.inline
-  def IService(methods: StringDictionary[IMethod]): typings.protobufjs.mod.IService = {
+  inline def IService(methods: StringDictionary[IMethod]): typings.protobufjs.mod.IService = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IService]
   }
   
-  @scala.inline
-  def IType(fields: StringDictionary[IField]): typings.protobufjs.mod.IType = {
+  inline def IType(fields: StringDictionary[IField]): typings.protobufjs.mod.IType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IType]
   }

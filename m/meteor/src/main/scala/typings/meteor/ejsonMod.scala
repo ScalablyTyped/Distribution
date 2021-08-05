@@ -17,8 +17,7 @@ object ejsonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addType(
+    inline def addType(
       name: String,
       factory: js.Function1[
           /* val */ typings.meteor.ejsonMod.JSONable, 
@@ -26,33 +25,23 @@ object ejsonMod {
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addType")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def clone_[T](`val`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`val`.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def clone_[T](`val`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`val`.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @scala.inline
-    def equals_(a: typings.meteor.ejsonMod.EJSON, b: typings.meteor.ejsonMod.EJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def equals_(a: typings.meteor.ejsonMod.EJSON, b: typings.meteor.ejsonMod.EJSON, options: KeyOrderSensitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals_(a: typings.meteor.ejsonMod.EJSON, b: typings.meteor.ejsonMod.EJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals_(a: typings.meteor.ejsonMod.EJSON, b: typings.meteor.ejsonMod.EJSON, options: KeyOrderSensitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromJSONValue(`val`: typings.meteor.ejsonMod.JSONable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def fromJSONValue(`val`: typings.meteor.ejsonMod.JSONable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def isBinary(x: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBinary(x: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def newBinary(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("newBinary")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def newBinary(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("newBinary")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def parse(str: String): typings.meteor.ejsonMod.EJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[typings.meteor.ejsonMod.EJSON]
+    inline def parse(str: String): typings.meteor.ejsonMod.EJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[typings.meteor.ejsonMod.EJSON]
     
-    @scala.inline
-    def stringify(`val`: typings.meteor.ejsonMod.EJSON): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def stringify(`val`: typings.meteor.ejsonMod.EJSON, options: Canonical): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(`val`: typings.meteor.ejsonMod.EJSON): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(`val`: typings.meteor.ejsonMod.EJSON, options: Canonical): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def toJSONValue(`val`: typings.meteor.ejsonMod.EJSON): typings.meteor.ejsonMod.JSONable = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.meteor.ejsonMod.JSONable]
+    inline def toJSONValue(`val`: typings.meteor.ejsonMod.EJSON): typings.meteor.ejsonMod.JSONable = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.meteor.ejsonMod.JSONable]
   }
   type EJSON = typings.meteor.ejsonMod.EJSONable
   
@@ -72,32 +61,24 @@ object ejsonMod {
   }
   object EJSONableCustomType {
     
-    @scala.inline
-    def apply(toJSONValue: () => typings.meteor.ejsonMod.JSONable, typeName: () => String): typings.meteor.ejsonMod.EJSONableCustomType = {
+    inline def apply(toJSONValue: () => typings.meteor.ejsonMod.JSONable, typeName: () => String): typings.meteor.ejsonMod.EJSONableCustomType = {
       val __obj = js.Dynamic.literal(toJSONValue = js.Any.fromFunction0(toJSONValue), typeName = js.Any.fromFunction0(typeName))
       __obj.asInstanceOf[typings.meteor.ejsonMod.EJSONableCustomType]
     }
     
-    @scala.inline
-    implicit class EJSONableCustomTypeMutableBuilder[Self <: typings.meteor.ejsonMod.EJSONableCustomType] (val x: Self) extends AnyVal {
+    extension [Self <: typings.meteor.ejsonMod.EJSONableCustomType](x: Self) {
       
-      @scala.inline
-      def setClone_(value: () => typings.meteor.ejsonMod.EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+      inline def setClone_(value: () => typings.meteor.ejsonMod.EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: /* other */ js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: /* other */ js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setToJSONValue(value: () => typings.meteor.ejsonMod.JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
+      inline def setToJSONValue(value: () => typings.meteor.ejsonMod.JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
+      inline def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
     }
   }
   

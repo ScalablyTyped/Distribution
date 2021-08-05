@@ -10,8 +10,7 @@ trait NetworkOperatorNotificationEventDetails
      with INetworkOperatorNotificationEventDetails
 object NetworkOperatorNotificationEventDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     encodingType: Double,
     message: String,
     networkAccountId: String,

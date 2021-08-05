@@ -30,8 +30,7 @@ trait AnalyticalTreeBindingAdapter extends StObject {
 }
 object AnalyticalTreeBindingAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNumberOfExpandedLevels: () => Double,
     hasTotaledMeasures: () => Boolean,
     setNumberOfExpandedLevels: Double => Unit
@@ -40,16 +39,12 @@ object AnalyticalTreeBindingAdapter {
     __obj.asInstanceOf[AnalyticalTreeBindingAdapter]
   }
   
-  @scala.inline
-  implicit class AnalyticalTreeBindingAdapterMutableBuilder[Self <: AnalyticalTreeBindingAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticalTreeBindingAdapter](x: Self) {
     
-    @scala.inline
-    def setGetNumberOfExpandedLevels(value: () => Double): Self = StObject.set(x, "getNumberOfExpandedLevels", js.Any.fromFunction0(value))
+    inline def setGetNumberOfExpandedLevels(value: () => Double): Self = StObject.set(x, "getNumberOfExpandedLevels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasTotaledMeasures(value: () => Boolean): Self = StObject.set(x, "hasTotaledMeasures", js.Any.fromFunction0(value))
+    inline def setHasTotaledMeasures(value: () => Boolean): Self = StObject.set(x, "hasTotaledMeasures", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNumberOfExpandedLevels(value: Double => Unit): Self = StObject.set(x, "setNumberOfExpandedLevels", js.Any.fromFunction1(value))
+    inline def setSetNumberOfExpandedLevels(value: Double => Unit): Self = StObject.set(x, "setNumberOfExpandedLevels", js.Any.fromFunction1(value))
   }
 }

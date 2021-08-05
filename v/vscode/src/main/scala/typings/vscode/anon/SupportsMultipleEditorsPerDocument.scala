@@ -30,25 +30,19 @@ trait SupportsMultipleEditorsPerDocument extends StObject {
 }
 object SupportsMultipleEditorsPerDocument {
   
-  @scala.inline
-  def apply(): SupportsMultipleEditorsPerDocument = {
+  inline def apply(): SupportsMultipleEditorsPerDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportsMultipleEditorsPerDocument]
   }
   
-  @scala.inline
-  implicit class SupportsMultipleEditorsPerDocumentMutableBuilder[Self <: SupportsMultipleEditorsPerDocument] (val x: Self) extends AnyVal {
+  extension [Self <: SupportsMultipleEditorsPerDocument](x: Self) {
     
-    @scala.inline
-    def setSupportsMultipleEditorsPerDocument(value: Boolean): Self = StObject.set(x, "supportsMultipleEditorsPerDocument", value.asInstanceOf[js.Any])
+    inline def setSupportsMultipleEditorsPerDocument(value: Boolean): Self = StObject.set(x, "supportsMultipleEditorsPerDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMultipleEditorsPerDocumentUndefined: Self = StObject.set(x, "supportsMultipleEditorsPerDocument", js.undefined)
+    inline def setSupportsMultipleEditorsPerDocumentUndefined: Self = StObject.set(x, "supportsMultipleEditorsPerDocument", js.undefined)
     
-    @scala.inline
-    def setWebviewOptions(value: WebviewPanelOptions): Self = StObject.set(x, "webviewOptions", value.asInstanceOf[js.Any])
+    inline def setWebviewOptions(value: WebviewPanelOptions): Self = StObject.set(x, "webviewOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebviewOptionsUndefined: Self = StObject.set(x, "webviewOptions", js.undefined)
+    inline def setWebviewOptionsUndefined: Self = StObject.set(x, "webviewOptions", js.undefined)
   }
 }

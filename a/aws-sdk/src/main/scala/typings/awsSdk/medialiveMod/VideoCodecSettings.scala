@@ -16,37 +16,27 @@ trait VideoCodecSettings extends StObject {
 }
 object VideoCodecSettings {
   
-  @scala.inline
-  def apply(): VideoCodecSettings = {
+  inline def apply(): VideoCodecSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoCodecSettings]
   }
   
-  @scala.inline
-  implicit class VideoCodecSettingsMutableBuilder[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoCodecSettings](x: Self) {
     
-    @scala.inline
-    def setFrameCaptureSettings(value: FrameCaptureSettings): Self = StObject.set(x, "FrameCaptureSettings", value.asInstanceOf[js.Any])
+    inline def setFrameCaptureSettings(value: FrameCaptureSettings): Self = StObject.set(x, "FrameCaptureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCaptureSettingsUndefined: Self = StObject.set(x, "FrameCaptureSettings", js.undefined)
+    inline def setFrameCaptureSettingsUndefined: Self = StObject.set(x, "FrameCaptureSettings", js.undefined)
     
-    @scala.inline
-    def setH264Settings(value: H264Settings): Self = StObject.set(x, "H264Settings", value.asInstanceOf[js.Any])
+    inline def setH264Settings(value: H264Settings): Self = StObject.set(x, "H264Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH264SettingsUndefined: Self = StObject.set(x, "H264Settings", js.undefined)
+    inline def setH264SettingsUndefined: Self = StObject.set(x, "H264Settings", js.undefined)
     
-    @scala.inline
-    def setH265Settings(value: H265Settings): Self = StObject.set(x, "H265Settings", value.asInstanceOf[js.Any])
+    inline def setH265Settings(value: H265Settings): Self = StObject.set(x, "H265Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH265SettingsUndefined: Self = StObject.set(x, "H265Settings", js.undefined)
+    inline def setH265SettingsUndefined: Self = StObject.set(x, "H265Settings", js.undefined)
     
-    @scala.inline
-    def setMpeg2Settings(value: Mpeg2Settings): Self = StObject.set(x, "Mpeg2Settings", value.asInstanceOf[js.Any])
+    inline def setMpeg2Settings(value: Mpeg2Settings): Self = StObject.set(x, "Mpeg2Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpeg2SettingsUndefined: Self = StObject.set(x, "Mpeg2Settings", js.undefined)
+    inline def setMpeg2SettingsUndefined: Self = StObject.set(x, "Mpeg2Settings", js.undefined)
   }
 }

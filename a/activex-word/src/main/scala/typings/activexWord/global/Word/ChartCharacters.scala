@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartCharacters")
 @js.native
-class ChartCharacters protected ()
+/* private */ class ChartCharacters ()
   extends StObject
      with typings.activexWord.Word.ChartCharacters {
   
@@ -40,7 +40,7 @@ class ChartCharacters protected ()
   /* CompleteClass */
   var Text: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ChartCharacters_typekey")
   var WordDotChartCharacters_typekey: typings.activexWord.Word.ChartCharacters = js.native
 }

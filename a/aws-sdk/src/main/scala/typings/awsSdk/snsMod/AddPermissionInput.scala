@@ -28,31 +28,23 @@ trait AddPermissionInput extends StObject {
 }
 object AddPermissionInput {
   
-  @scala.inline
-  def apply(AWSAccountId: DelegatesList, ActionName: ActionsList, Label: label, TopicArn: topicARN): AddPermissionInput = {
+  inline def apply(AWSAccountId: DelegatesList, ActionName: ActionsList, Label: label, TopicArn: topicARN): AddPermissionInput = {
     val __obj = js.Dynamic.literal(AWSAccountId = AWSAccountId.asInstanceOf[js.Any], ActionName = ActionName.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionInput]
   }
   
-  @scala.inline
-  implicit class AddPermissionInputMutableBuilder[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddPermissionInput](x: Self) {
     
-    @scala.inline
-    def setAWSAccountId(value: DelegatesList): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
+    inline def setAWSAccountId(value: DelegatesList): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAWSAccountIdVarargs(value: delegate*): Self = StObject.set(x, "AWSAccountId", js.Array(value :_*))
+    inline def setAWSAccountIdVarargs(value: delegate*): Self = StObject.set(x, "AWSAccountId", js.Array(value :_*))
     
-    @scala.inline
-    def setActionName(value: ActionsList): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: ActionsList): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameVarargs(value: action*): Self = StObject.set(x, "ActionName", js.Array(value :_*))
+    inline def setActionNameVarargs(value: action*): Self = StObject.set(x, "ActionName", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

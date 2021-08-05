@@ -8,11 +8,9 @@ object sparklyStrings {
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait fire extends StObject
-  @scala.inline
-  def fire: fire = "fire".asInstanceOf[fire]
+  inline def fire: fire = "fire".asInstanceOf[fire]
 }

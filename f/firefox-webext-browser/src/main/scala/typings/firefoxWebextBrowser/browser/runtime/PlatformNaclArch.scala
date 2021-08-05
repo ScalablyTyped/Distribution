@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlatformNaclArch extends StObject
 object PlatformNaclArch {
   
-  @scala.inline
-  def arm: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm = "arm".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm]
+  inline def arm: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm = "arm".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm]
   
-  @scala.inline
-  def `x86-32`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32` = "x86-32".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32`]
+  inline def `x86-32`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32` = "x86-32".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32`]
   
-  @scala.inline
-  def `x86-64`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64` = "x86-64".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64`]
+  inline def `x86-64`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64` = "x86-64".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64`]
 }

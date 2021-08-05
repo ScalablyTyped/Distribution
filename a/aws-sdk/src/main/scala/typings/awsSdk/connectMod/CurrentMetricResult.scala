@@ -18,28 +18,21 @@ trait CurrentMetricResult extends StObject {
 }
 object CurrentMetricResult {
   
-  @scala.inline
-  def apply(): CurrentMetricResult = {
+  inline def apply(): CurrentMetricResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentMetricResult]
   }
   
-  @scala.inline
-  implicit class CurrentMetricResultMutableBuilder[Self <: CurrentMetricResult] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentMetricResult](x: Self) {
     
-    @scala.inline
-    def setCollections(value: CurrentMetricDataCollections): Self = StObject.set(x, "Collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: CurrentMetricDataCollections): Self = StObject.set(x, "Collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionsUndefined: Self = StObject.set(x, "Collections", js.undefined)
+    inline def setCollectionsUndefined: Self = StObject.set(x, "Collections", js.undefined)
     
-    @scala.inline
-    def setCollectionsVarargs(value: CurrentMetricData*): Self = StObject.set(x, "Collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: CurrentMetricData*): Self = StObject.set(x, "Collections", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
   }
 }

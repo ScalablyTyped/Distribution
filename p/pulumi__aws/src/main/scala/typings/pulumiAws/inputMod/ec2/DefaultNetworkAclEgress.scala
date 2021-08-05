@@ -56,8 +56,7 @@ trait DefaultNetworkAclEgress extends StObject {
 }
 object DefaultNetworkAclEgress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: Input[String],
     fromPort: Input[Double],
     protocol: Input[String],
@@ -68,46 +67,32 @@ object DefaultNetworkAclEgress {
     __obj.asInstanceOf[DefaultNetworkAclEgress]
   }
   
-  @scala.inline
-  implicit class DefaultNetworkAclEgressMutableBuilder[Self <: DefaultNetworkAclEgress] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultNetworkAclEgress](x: Self) {
     
-    @scala.inline
-    def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+    inline def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
+    inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
     
-    @scala.inline
-    def setFromPort(value: Input[Double]): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: Input[Double]): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcmpCode(value: Input[Double]): Self = StObject.set(x, "icmpCode", value.asInstanceOf[js.Any])
+    inline def setIcmpCode(value: Input[Double]): Self = StObject.set(x, "icmpCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcmpCodeUndefined: Self = StObject.set(x, "icmpCode", js.undefined)
+    inline def setIcmpCodeUndefined: Self = StObject.set(x, "icmpCode", js.undefined)
     
-    @scala.inline
-    def setIcmpType(value: Input[Double]): Self = StObject.set(x, "icmpType", value.asInstanceOf[js.Any])
+    inline def setIcmpType(value: Input[Double]): Self = StObject.set(x, "icmpType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcmpTypeUndefined: Self = StObject.set(x, "icmpType", js.undefined)
+    inline def setIcmpTypeUndefined: Self = StObject.set(x, "icmpType", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlock(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlock(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
+    inline def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNo(value: Input[Double]): Self = StObject.set(x, "ruleNo", value.asInstanceOf[js.Any])
+    inline def setRuleNo(value: Input[Double]): Self = StObject.set(x, "ruleNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPort(value: Input[Double]): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: Input[Double]): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
   }
 }

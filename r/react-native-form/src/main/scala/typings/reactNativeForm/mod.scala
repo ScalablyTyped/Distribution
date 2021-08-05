@@ -27,23 +27,18 @@ object mod {
   }
   object FormProps {
     
-    @scala.inline
-    def apply(ref: String): FormProps = {
+    inline def apply(ref: String): FormProps = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormProps]
     }
     
-    @scala.inline
-    implicit class FormPropsMutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormProps](x: Self) {
       
-      @scala.inline
-      def setCustomFields(value: StringDictionary[CallbackProp]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+      inline def setCustomFields(value: StringDictionary[CallbackProp]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+      inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
 }

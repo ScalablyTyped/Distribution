@@ -26,32 +26,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object VariableDeclaration_ {
   
-  @scala.inline
-  def apply(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const): VariableDeclaration_ = {
+  inline def apply(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const): VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration_]
   }
   
-  @scala.inline
-  implicit class VariableDeclaration_MutableBuilder[Self <: VariableDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: VariableDeclaration_](x: Self) {
     
-    @scala.inline
-    def setDeclarations(value: js.Array[VariableDeclarator_]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[VariableDeclarator_]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsVarargs(value: VariableDeclarator_ *): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: VariableDeclarator_ *): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
-    @scala.inline
-    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
+    inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclareNull: Self = StObject.set(x, "declare", null)
+    inline def setDeclareNull: Self = StObject.set(x, "declare", null)
     
-    @scala.inline
-    def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MethodType extends StObject
 object MethodType {
   
-  @scala.inline
-  def Constructor: `1` = 1.asInstanceOf[`1`]
+  inline def Constructor: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Instance: `3` = 3.asInstanceOf[`3`]
+  inline def Instance: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Static: `2` = 2.asInstanceOf[`2`]
+  inline def Static: `2` = 2.asInstanceOf[`2`]
 }

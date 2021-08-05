@@ -10,19 +10,15 @@ trait ModifyDBSnapshotResult extends StObject {
 }
 object ModifyDBSnapshotResult {
   
-  @scala.inline
-  def apply(): ModifyDBSnapshotResult = {
+  inline def apply(): ModifyDBSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyDBSnapshotResult]
   }
   
-  @scala.inline
-  implicit class ModifyDBSnapshotResultMutableBuilder[Self <: ModifyDBSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyDBSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setDBSnapshot(value: DBSnapshot): Self = StObject.set(x, "DBSnapshot", value.asInstanceOf[js.Any])
+    inline def setDBSnapshot(value: DBSnapshot): Self = StObject.set(x, "DBSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSnapshotUndefined: Self = StObject.set(x, "DBSnapshot", js.undefined)
+    inline def setDBSnapshotUndefined: Self = StObject.set(x, "DBSnapshot", js.undefined)
   }
 }

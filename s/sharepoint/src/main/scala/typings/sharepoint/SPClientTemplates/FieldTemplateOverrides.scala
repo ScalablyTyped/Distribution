@@ -20,37 +20,27 @@ trait FieldTemplateOverrides extends StObject {
 }
 object FieldTemplateOverrides {
   
-  @scala.inline
-  def apply(): FieldTemplateOverrides = {
+  inline def apply(): FieldTemplateOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldTemplateOverrides]
   }
   
-  @scala.inline
-  implicit class FieldTemplateOverridesMutableBuilder[Self <: FieldTemplateOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: FieldTemplateOverrides](x: Self) {
     
-    @scala.inline
-    def setDisplayForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "DisplayForm", js.Any.fromFunction1(value))
+    inline def setDisplayForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "DisplayForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayFormUndefined: Self = StObject.set(x, "DisplayForm", js.undefined)
+    inline def setDisplayFormUndefined: Self = StObject.set(x, "DisplayForm", js.undefined)
     
-    @scala.inline
-    def setEditForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "EditForm", js.Any.fromFunction1(value))
+    inline def setEditForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "EditForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEditFormUndefined: Self = StObject.set(x, "EditForm", js.undefined)
+    inline def setEditFormUndefined: Self = StObject.set(x, "EditForm", js.undefined)
     
-    @scala.inline
-    def setNewForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "NewForm", js.Any.fromFunction1(value))
+    inline def setNewForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "NewForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewFormUndefined: Self = StObject.set(x, "NewForm", js.undefined)
+    inline def setNewFormUndefined: Self = StObject.set(x, "NewForm", js.undefined)
     
-    @scala.inline
-    def setView(value: /* renderContext */ RenderContextFieldInView => String): Self = StObject.set(x, "View", js.Any.fromFunction1(value))
+    inline def setView(value: /* renderContext */ RenderContextFieldInView => String): Self = StObject.set(x, "View", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
   }
 }

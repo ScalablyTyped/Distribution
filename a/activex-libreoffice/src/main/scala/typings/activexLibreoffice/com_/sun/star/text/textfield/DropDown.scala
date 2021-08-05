@@ -36,8 +36,7 @@ trait DropDown
 }
 object DropDown {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -69,16 +68,12 @@ object DropDown {
     __obj.asInstanceOf[DropDown]
   }
   
-  @scala.inline
-  implicit class DropDownMutableBuilder[Self <: DropDown] (val x: Self) extends AnyVal {
+  extension [Self <: DropDown](x: Self) {
     
-    @scala.inline
-    def setItems(value: SafeArray[String]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: SafeArray[String]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItem(value: String): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: String): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
   }
 }

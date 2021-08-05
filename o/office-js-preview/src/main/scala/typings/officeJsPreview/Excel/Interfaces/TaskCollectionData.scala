@@ -11,22 +11,17 @@ trait TaskCollectionData extends StObject {
 }
 object TaskCollectionData {
   
-  @scala.inline
-  def apply(): TaskCollectionData = {
+  inline def apply(): TaskCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskCollectionData]
   }
   
-  @scala.inline
-  implicit class TaskCollectionDataMutableBuilder[Self <: TaskCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: TaskCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[TaskData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[TaskData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: TaskData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TaskData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

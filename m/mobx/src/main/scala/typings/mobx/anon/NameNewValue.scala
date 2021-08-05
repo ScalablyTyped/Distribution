@@ -22,27 +22,21 @@ trait NameNewValue[T]
 }
 object NameNewValue {
   
-  @scala.inline
-  def apply[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: update | add): NameNewValue[T] = {
+  inline def apply[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: update | add): NameNewValue[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameNewValue[T]]
   }
   
-  @scala.inline
-  implicit class NameNewValueMutableBuilder[Self <: NameNewValue[?], T] (val x: Self & NameNewValue[T]) extends AnyVal {
+  extension [Self <: NameNewValue[?], T](x: Self & NameNewValue[T]) {
     
-    @scala.inline
-    def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: update | add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: update | add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

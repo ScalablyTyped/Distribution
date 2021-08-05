@@ -22,26 +22,20 @@ object exporter {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.exporter.IColumnDef = {
+    inline def apply(): typings.uiGrid.mod.exporter.IColumnDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.exporter.IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.exporter.IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.exporter.IColumnDef](x: Self) {
       
-      @scala.inline
-      def setExporterPdfAlign(value: String): Self = StObject.set(x, "exporterPdfAlign", value.asInstanceOf[js.Any])
+      inline def setExporterPdfAlign(value: String): Self = StObject.set(x, "exporterPdfAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfAlignUndefined: Self = StObject.set(x, "exporterPdfAlign", js.undefined)
+      inline def setExporterPdfAlignUndefined: Self = StObject.set(x, "exporterPdfAlign", js.undefined)
       
-      @scala.inline
-      def setExporterSuppressExport(value: Boolean): Self = StObject.set(x, "exporterSuppressExport", value.asInstanceOf[js.Any])
+      inline def setExporterSuppressExport(value: Boolean): Self = StObject.set(x, "exporterSuppressExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterSuppressExportUndefined: Self = StObject.set(x, "exporterSuppressExport", js.undefined)
+      inline def setExporterSuppressExportUndefined: Self = StObject.set(x, "exporterSuppressExport", js.undefined)
     }
   }
   
@@ -69,20 +63,16 @@ object exporter {
   }
   object IGridExporterApi {
     
-    @scala.inline
-    def apply(csvExport: (String, String) => Unit, pdfExport: (String, String) => Unit): IGridExporterApi = {
+    inline def apply(csvExport: (String, String) => Unit, pdfExport: (String, String) => Unit): IGridExporterApi = {
       val __obj = js.Dynamic.literal(csvExport = js.Any.fromFunction2(csvExport), pdfExport = js.Any.fromFunction2(pdfExport))
       __obj.asInstanceOf[IGridExporterApi]
     }
     
-    @scala.inline
-    implicit class IGridExporterApiMutableBuilder[Self <: IGridExporterApi] (val x: Self) extends AnyVal {
+    extension [Self <: IGridExporterApi](x: Self) {
       
-      @scala.inline
-      def setCsvExport(value: (String, String) => Unit): Self = StObject.set(x, "csvExport", js.Any.fromFunction2(value))
+      inline def setCsvExport(value: (String, String) => Unit): Self = StObject.set(x, "csvExport", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPdfExport(value: (String, String) => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction2(value))
+      inline def setPdfExport(value: (String, String) => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction2(value))
     }
   }
   
@@ -311,181 +301,124 @@ object exporter {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply[TEntity](): typings.uiGrid.mod.exporter.IGridOptions[TEntity] = {
+    inline def apply[TEntity](): typings.uiGrid.mod.exporter.IGridOptions[TEntity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.exporter.IGridOptions[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.exporter.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.exporter.IGridOptions[TEntity]) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.exporter.IGridOptions[?], TEntity](x: Self & typings.uiGrid.mod.exporter.IGridOptions[TEntity]) {
       
-      @scala.inline
-      def setExporterAllDataFn(value: () => IPromise[js.Array[TEntity]]): Self = StObject.set(x, "exporterAllDataFn", js.Any.fromFunction0(value))
+      inline def setExporterAllDataFn(value: () => IPromise[js.Array[TEntity]]): Self = StObject.set(x, "exporterAllDataFn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExporterAllDataFnUndefined: Self = StObject.set(x, "exporterAllDataFn", js.undefined)
+      inline def setExporterAllDataFnUndefined: Self = StObject.set(x, "exporterAllDataFn", js.undefined)
       
-      @scala.inline
-      def setExporterAllDataPromise(value: () => IPromise[js.Array[TEntity]]): Self = StObject.set(x, "exporterAllDataPromise", js.Any.fromFunction0(value))
+      inline def setExporterAllDataPromise(value: () => IPromise[js.Array[TEntity]]): Self = StObject.set(x, "exporterAllDataPromise", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExporterAllDataPromiseUndefined: Self = StObject.set(x, "exporterAllDataPromise", js.undefined)
+      inline def setExporterAllDataPromiseUndefined: Self = StObject.set(x, "exporterAllDataPromise", js.undefined)
       
-      @scala.inline
-      def setExporterCsvColumnSeparator(value: String): Self = StObject.set(x, "exporterCsvColumnSeparator", value.asInstanceOf[js.Any])
+      inline def setExporterCsvColumnSeparator(value: String): Self = StObject.set(x, "exporterCsvColumnSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterCsvColumnSeparatorUndefined: Self = StObject.set(x, "exporterCsvColumnSeparator", js.undefined)
+      inline def setExporterCsvColumnSeparatorUndefined: Self = StObject.set(x, "exporterCsvColumnSeparator", js.undefined)
       
-      @scala.inline
-      def setExporterCsvFilename(value: String): Self = StObject.set(x, "exporterCsvFilename", value.asInstanceOf[js.Any])
+      inline def setExporterCsvFilename(value: String): Self = StObject.set(x, "exporterCsvFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterCsvFilenameUndefined: Self = StObject.set(x, "exporterCsvFilename", js.undefined)
+      inline def setExporterCsvFilenameUndefined: Self = StObject.set(x, "exporterCsvFilename", js.undefined)
       
-      @scala.inline
-      def setExporterFieldCallback(
+      inline def setExporterFieldCallback(
         value: (/* grid */ IGridInstanceOf[TEntity], /* row */ IGridRowOf[TEntity], /* col */ IGridColumnOf[TEntity], /* value */ js.Any) => js.Any
       ): Self = StObject.set(x, "exporterFieldCallback", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setExporterFieldCallbackUndefined: Self = StObject.set(x, "exporterFieldCallback", js.undefined)
+      inline def setExporterFieldCallbackUndefined: Self = StObject.set(x, "exporterFieldCallback", js.undefined)
       
-      @scala.inline
-      def setExporterHeaderFilter(value: /* displayName */ String => String): Self = StObject.set(x, "exporterHeaderFilter", js.Any.fromFunction1(value))
+      inline def setExporterHeaderFilter(value: /* displayName */ String => String): Self = StObject.set(x, "exporterHeaderFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExporterHeaderFilterUndefined: Self = StObject.set(x, "exporterHeaderFilter", js.undefined)
+      inline def setExporterHeaderFilterUndefined: Self = StObject.set(x, "exporterHeaderFilter", js.undefined)
       
-      @scala.inline
-      def setExporterHeaderFilterUseName(value: Boolean): Self = StObject.set(x, "exporterHeaderFilterUseName", value.asInstanceOf[js.Any])
+      inline def setExporterHeaderFilterUseName(value: Boolean): Self = StObject.set(x, "exporterHeaderFilterUseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterHeaderFilterUseNameUndefined: Self = StObject.set(x, "exporterHeaderFilterUseName", js.undefined)
+      inline def setExporterHeaderFilterUseNameUndefined: Self = StObject.set(x, "exporterHeaderFilterUseName", js.undefined)
       
-      @scala.inline
-      def setExporterMenuCsv(value: Boolean): Self = StObject.set(x, "exporterMenuCsv", value.asInstanceOf[js.Any])
+      inline def setExporterMenuCsv(value: Boolean): Self = StObject.set(x, "exporterMenuCsv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterMenuCsvUndefined: Self = StObject.set(x, "exporterMenuCsv", js.undefined)
+      inline def setExporterMenuCsvUndefined: Self = StObject.set(x, "exporterMenuCsv", js.undefined)
       
-      @scala.inline
-      def setExporterMenuExcel(value: Boolean): Self = StObject.set(x, "exporterMenuExcel", value.asInstanceOf[js.Any])
+      inline def setExporterMenuExcel(value: Boolean): Self = StObject.set(x, "exporterMenuExcel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterMenuExcelUndefined: Self = StObject.set(x, "exporterMenuExcel", js.undefined)
+      inline def setExporterMenuExcelUndefined: Self = StObject.set(x, "exporterMenuExcel", js.undefined)
       
-      @scala.inline
-      def setExporterMenuItemOrder(value: Double): Self = StObject.set(x, "exporterMenuItemOrder", value.asInstanceOf[js.Any])
+      inline def setExporterMenuItemOrder(value: Double): Self = StObject.set(x, "exporterMenuItemOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterMenuItemOrderUndefined: Self = StObject.set(x, "exporterMenuItemOrder", js.undefined)
+      inline def setExporterMenuItemOrderUndefined: Self = StObject.set(x, "exporterMenuItemOrder", js.undefined)
       
-      @scala.inline
-      def setExporterMenuLabel(value: String): Self = StObject.set(x, "exporterMenuLabel", value.asInstanceOf[js.Any])
+      inline def setExporterMenuLabel(value: String): Self = StObject.set(x, "exporterMenuLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterMenuLabelUndefined: Self = StObject.set(x, "exporterMenuLabel", js.undefined)
+      inline def setExporterMenuLabelUndefined: Self = StObject.set(x, "exporterMenuLabel", js.undefined)
       
-      @scala.inline
-      def setExporterMenuPdf(value: Boolean): Self = StObject.set(x, "exporterMenuPdf", value.asInstanceOf[js.Any])
+      inline def setExporterMenuPdf(value: Boolean): Self = StObject.set(x, "exporterMenuPdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterMenuPdfUndefined: Self = StObject.set(x, "exporterMenuPdf", js.undefined)
+      inline def setExporterMenuPdfUndefined: Self = StObject.set(x, "exporterMenuPdf", js.undefined)
       
-      @scala.inline
-      def setExporterOlderExcelCompatibility(value: Boolean): Self = StObject.set(x, "exporterOlderExcelCompatibility", value.asInstanceOf[js.Any])
+      inline def setExporterOlderExcelCompatibility(value: Boolean): Self = StObject.set(x, "exporterOlderExcelCompatibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterOlderExcelCompatibilityUndefined: Self = StObject.set(x, "exporterOlderExcelCompatibility", js.undefined)
+      inline def setExporterOlderExcelCompatibilityUndefined: Self = StObject.set(x, "exporterOlderExcelCompatibility", js.undefined)
       
-      @scala.inline
-      def setExporterPdfCustomFormatter(value: /* docDefinition */ js.Any => js.Any): Self = StObject.set(x, "exporterPdfCustomFormatter", js.Any.fromFunction1(value))
+      inline def setExporterPdfCustomFormatter(value: /* docDefinition */ js.Any => js.Any): Self = StObject.set(x, "exporterPdfCustomFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExporterPdfCustomFormatterUndefined: Self = StObject.set(x, "exporterPdfCustomFormatter", js.undefined)
+      inline def setExporterPdfCustomFormatterUndefined: Self = StObject.set(x, "exporterPdfCustomFormatter", js.undefined)
       
-      @scala.inline
-      def setExporterPdfDefaultStyle(value: js.Any): Self = StObject.set(x, "exporterPdfDefaultStyle", value.asInstanceOf[js.Any])
+      inline def setExporterPdfDefaultStyle(value: js.Any): Self = StObject.set(x, "exporterPdfDefaultStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfDefaultStyleUndefined: Self = StObject.set(x, "exporterPdfDefaultStyle", js.undefined)
+      inline def setExporterPdfDefaultStyleUndefined: Self = StObject.set(x, "exporterPdfDefaultStyle", js.undefined)
       
-      @scala.inline
-      def setExporterPdfFilename(value: String): Self = StObject.set(x, "exporterPdfFilename", value.asInstanceOf[js.Any])
+      inline def setExporterPdfFilename(value: String): Self = StObject.set(x, "exporterPdfFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfFilenameUndefined: Self = StObject.set(x, "exporterPdfFilename", js.undefined)
+      inline def setExporterPdfFilenameUndefined: Self = StObject.set(x, "exporterPdfFilename", js.undefined)
       
-      @scala.inline
-      def setExporterPdfFooter(value: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfFooter", value.asInstanceOf[js.Any])
+      inline def setExporterPdfFooter(value: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfFooterFunction2(value: (/* currentPage */ Double, /* pageCount */ Double) => String): Self = StObject.set(x, "exporterPdfFooter", js.Any.fromFunction2(value))
+      inline def setExporterPdfFooterFunction2(value: (/* currentPage */ Double, /* pageCount */ Double) => String): Self = StObject.set(x, "exporterPdfFooter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExporterPdfFooterUndefined: Self = StObject.set(x, "exporterPdfFooter", js.undefined)
+      inline def setExporterPdfFooterUndefined: Self = StObject.set(x, "exporterPdfFooter", js.undefined)
       
-      @scala.inline
-      def setExporterPdfHeader(value: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfHeader", value.asInstanceOf[js.Any])
+      inline def setExporterPdfHeader(value: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfHeaderFunction2(value: (/* currentPage */ Double, /* pageCount */ Double) => String): Self = StObject.set(x, "exporterPdfHeader", js.Any.fromFunction2(value))
+      inline def setExporterPdfHeaderFunction2(value: (/* currentPage */ Double, /* pageCount */ Double) => String): Self = StObject.set(x, "exporterPdfHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExporterPdfHeaderUndefined: Self = StObject.set(x, "exporterPdfHeader", js.undefined)
+      inline def setExporterPdfHeaderUndefined: Self = StObject.set(x, "exporterPdfHeader", js.undefined)
       
-      @scala.inline
-      def setExporterPdfMaxGridWidth(value: Double): Self = StObject.set(x, "exporterPdfMaxGridWidth", value.asInstanceOf[js.Any])
+      inline def setExporterPdfMaxGridWidth(value: Double): Self = StObject.set(x, "exporterPdfMaxGridWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfMaxGridWidthUndefined: Self = StObject.set(x, "exporterPdfMaxGridWidth", js.undefined)
+      inline def setExporterPdfMaxGridWidthUndefined: Self = StObject.set(x, "exporterPdfMaxGridWidth", js.undefined)
       
-      @scala.inline
-      def setExporterPdfOrientation(value: String): Self = StObject.set(x, "exporterPdfOrientation", value.asInstanceOf[js.Any])
+      inline def setExporterPdfOrientation(value: String): Self = StObject.set(x, "exporterPdfOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfOrientationUndefined: Self = StObject.set(x, "exporterPdfOrientation", js.undefined)
+      inline def setExporterPdfOrientationUndefined: Self = StObject.set(x, "exporterPdfOrientation", js.undefined)
       
-      @scala.inline
-      def setExporterPdfPageSize(value: String): Self = StObject.set(x, "exporterPdfPageSize", value.asInstanceOf[js.Any])
+      inline def setExporterPdfPageSize(value: String): Self = StObject.set(x, "exporterPdfPageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfPageSizeUndefined: Self = StObject.set(x, "exporterPdfPageSize", js.undefined)
+      inline def setExporterPdfPageSizeUndefined: Self = StObject.set(x, "exporterPdfPageSize", js.undefined)
       
-      @scala.inline
-      def setExporterPdfTableHeaderStyle(value: js.Any): Self = StObject.set(x, "exporterPdfTableHeaderStyle", value.asInstanceOf[js.Any])
+      inline def setExporterPdfTableHeaderStyle(value: js.Any): Self = StObject.set(x, "exporterPdfTableHeaderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfTableHeaderStyleUndefined: Self = StObject.set(x, "exporterPdfTableHeaderStyle", js.undefined)
+      inline def setExporterPdfTableHeaderStyleUndefined: Self = StObject.set(x, "exporterPdfTableHeaderStyle", js.undefined)
       
-      @scala.inline
-      def setExporterPdfTableLayout(value: js.Any): Self = StObject.set(x, "exporterPdfTableLayout", value.asInstanceOf[js.Any])
+      inline def setExporterPdfTableLayout(value: js.Any): Self = StObject.set(x, "exporterPdfTableLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfTableLayoutUndefined: Self = StObject.set(x, "exporterPdfTableLayout", js.undefined)
+      inline def setExporterPdfTableLayoutUndefined: Self = StObject.set(x, "exporterPdfTableLayout", js.undefined)
       
-      @scala.inline
-      def setExporterPdfTableStyle(value: js.Any): Self = StObject.set(x, "exporterPdfTableStyle", value.asInstanceOf[js.Any])
+      inline def setExporterPdfTableStyle(value: js.Any): Self = StObject.set(x, "exporterPdfTableStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterPdfTableStyleUndefined: Self = StObject.set(x, "exporterPdfTableStyle", js.undefined)
+      inline def setExporterPdfTableStyleUndefined: Self = StObject.set(x, "exporterPdfTableStyle", js.undefined)
       
-      @scala.inline
-      def setExporterSuppressColumns(value: js.Array[String]): Self = StObject.set(x, "exporterSuppressColumns", value.asInstanceOf[js.Any])
+      inline def setExporterSuppressColumns(value: js.Array[String]): Self = StObject.set(x, "exporterSuppressColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterSuppressColumnsUndefined: Self = StObject.set(x, "exporterSuppressColumns", js.undefined)
+      inline def setExporterSuppressColumnsUndefined: Self = StObject.set(x, "exporterSuppressColumns", js.undefined)
       
-      @scala.inline
-      def setExporterSuppressColumnsVarargs(value: String*): Self = StObject.set(x, "exporterSuppressColumns", js.Array(value :_*))
+      inline def setExporterSuppressColumnsVarargs(value: String*): Self = StObject.set(x, "exporterSuppressColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setExporterSuppressMenu(value: Boolean): Self = StObject.set(x, "exporterSuppressMenu", value.asInstanceOf[js.Any])
+      inline def setExporterSuppressMenu(value: Boolean): Self = StObject.set(x, "exporterSuppressMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterSuppressMenuUndefined: Self = StObject.set(x, "exporterSuppressMenu", js.undefined)
+      inline def setExporterSuppressMenuUndefined: Self = StObject.set(x, "exporterSuppressMenu", js.undefined)
     }
   }
   
@@ -500,20 +433,16 @@ object exporter {
   }
   object IGridRow {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.exporter.IGridRow = {
+    inline def apply(): typings.uiGrid.mod.exporter.IGridRow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.exporter.IGridRow]
     }
     
-    @scala.inline
-    implicit class IGridRowMutableBuilder[Self <: typings.uiGrid.mod.exporter.IGridRow] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.exporter.IGridRow](x: Self) {
       
-      @scala.inline
-      def setExporterEnableExporting(value: Boolean): Self = StObject.set(x, "exporterEnableExporting", value.asInstanceOf[js.Any])
+      inline def setExporterEnableExporting(value: Boolean): Self = StObject.set(x, "exporterEnableExporting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterEnableExportingUndefined: Self = StObject.set(x, "exporterEnableExporting", js.undefined)
+      inline def setExporterEnableExportingUndefined: Self = StObject.set(x, "exporterEnableExporting", js.undefined)
     }
   }
   
@@ -541,8 +470,7 @@ object exporter {
   }
   object IUiGridExporterConstants {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ALL: String,
       BUTTON_LABEL: String,
       CSV_CONTENT: String,
@@ -555,29 +483,21 @@ object exporter {
       __obj.asInstanceOf[IUiGridExporterConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridExporterConstantsMutableBuilder[Self <: IUiGridExporterConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridExporterConstants](x: Self) {
       
-      @scala.inline
-      def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
+      inline def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBUTTON_LABEL(value: String): Self = StObject.set(x, "BUTTON_LABEL", value.asInstanceOf[js.Any])
+      inline def setBUTTON_LABEL(value: String): Self = StObject.set(x, "BUTTON_LABEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCSV_CONTENT(value: String): Self = StObject.set(x, "CSV_CONTENT", value.asInstanceOf[js.Any])
+      inline def setCSV_CONTENT(value: String): Self = StObject.set(x, "CSV_CONTENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFILE_NAME(value: String): Self = StObject.set(x, "FILE_NAME", value.asInstanceOf[js.Any])
+      inline def setFILE_NAME(value: String): Self = StObject.set(x, "FILE_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+      inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSELECTED(value: String): Self = StObject.set(x, "SELECTED", value.asInstanceOf[js.Any])
+      inline def setSELECTED(value: String): Self = StObject.set(x, "SELECTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVISIBLE(value: String): Self = StObject.set(x, "VISIBLE", value.asInstanceOf[js.Any])
+      inline def setVISIBLE(value: String): Self = StObject.set(x, "VISIBLE", value.asInstanceOf[js.Any])
     }
   }
 }

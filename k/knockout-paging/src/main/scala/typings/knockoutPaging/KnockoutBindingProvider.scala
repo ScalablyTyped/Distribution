@@ -22,25 +22,19 @@ trait KnockoutBindingProvider extends StObject {
 }
 object KnockoutBindingProvider {
   
-  @scala.inline
-  def apply(getBindings: (Node, KnockoutBindingContext) => js.Object, nodeHasBindings: Node => Boolean): KnockoutBindingProvider = {
+  inline def apply(getBindings: (Node, KnockoutBindingContext) => js.Object, nodeHasBindings: Node => Boolean): KnockoutBindingProvider = {
     val __obj = js.Dynamic.literal(getBindings = js.Any.fromFunction2(getBindings), nodeHasBindings = js.Any.fromFunction1(nodeHasBindings))
     __obj.asInstanceOf[KnockoutBindingProvider]
   }
   
-  @scala.inline
-  implicit class KnockoutBindingProviderMutableBuilder[Self <: KnockoutBindingProvider] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutBindingProvider](x: Self) {
     
-    @scala.inline
-    def setGetBindingAccessors(value: (/* node */ Node, /* bindingContext */ KnockoutBindingContext) => StringDictionary[String]): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
+    inline def setGetBindingAccessors(value: (/* node */ Node, /* bindingContext */ KnockoutBindingContext) => StringDictionary[String]): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBindingAccessorsUndefined: Self = StObject.set(x, "getBindingAccessors", js.undefined)
+    inline def setGetBindingAccessorsUndefined: Self = StObject.set(x, "getBindingAccessors", js.undefined)
     
-    @scala.inline
-    def setGetBindings(value: (Node, KnockoutBindingContext) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
+    inline def setGetBindings(value: (Node, KnockoutBindingContext) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNodeHasBindings(value: Node => Boolean): Self = StObject.set(x, "nodeHasBindings", js.Any.fromFunction1(value))
+    inline def setNodeHasBindings(value: Node => Boolean): Self = StObject.set(x, "nodeHasBindings", js.Any.fromFunction1(value))
   }
 }

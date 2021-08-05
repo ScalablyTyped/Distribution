@@ -16,22 +16,17 @@ trait SchemaTranslationsListResponse extends StObject {
 }
 object SchemaTranslationsListResponse {
   
-  @scala.inline
-  def apply(): SchemaTranslationsListResponse = {
+  inline def apply(): SchemaTranslationsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTranslationsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaTranslationsListResponseMutableBuilder[Self <: SchemaTranslationsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTranslationsListResponse](x: Self) {
     
-    @scala.inline
-    def setTranslations(value: js.Array[SchemaTranslationsResource]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: js.Array[SchemaTranslationsResource]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    @scala.inline
-    def setTranslationsVarargs(value: SchemaTranslationsResource*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: SchemaTranslationsResource*): Self = StObject.set(x, "translations", js.Array(value :_*))
   }
 }

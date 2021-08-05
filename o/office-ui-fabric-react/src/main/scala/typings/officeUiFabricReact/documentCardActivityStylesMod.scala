@@ -21,46 +21,38 @@ object documentCardActivityStylesMod {
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.activity")
     @js.native
     def activity: String = js.native
-    @scala.inline
-    def activity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activity")(x.asInstanceOf[js.Any])
+    inline def activity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activity")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.avatar")
     @js.native
     def avatar: String = js.native
-    @scala.inline
-    def avatar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("avatar")(x.asInstanceOf[js.Any])
+    inline def avatar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("avatar")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.avatars")
     @js.native
     def avatars: String = js.native
-    @scala.inline
-    def avatars_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("avatars")(x.asInstanceOf[js.Any])
+    inline def avatars_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("avatars")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.details")
     @js.native
     def details: String = js.native
-    @scala.inline
-    def details_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("details")(x.asInstanceOf[js.Any])
+    inline def details_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("details")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.multiplePeople")
     @js.native
     def multiplePeople: String = js.native
-    @scala.inline
-    def multiplePeople_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiplePeople")(x.asInstanceOf[js.Any])
+    inline def multiplePeople_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiplePeople")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.name")
     @js.native
     def name: String = js.native
-    @scala.inline
-    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "DocumentCardActivityGlobalClassNames.root")
     @js.native
     def root: String = js.native
-    @scala.inline
-    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+    inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getStyles(props: IDocumentCardActivityStyleProps): IDocumentCardActivityStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardActivityStyles]
+  inline def getStyles(props: IDocumentCardActivityStyleProps): IDocumentCardActivityStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardActivityStyles]
 }

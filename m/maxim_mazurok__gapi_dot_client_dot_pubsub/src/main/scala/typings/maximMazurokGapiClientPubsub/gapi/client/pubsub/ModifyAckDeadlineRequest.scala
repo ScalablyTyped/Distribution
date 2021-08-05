@@ -19,28 +19,21 @@ trait ModifyAckDeadlineRequest extends StObject {
 }
 object ModifyAckDeadlineRequest {
   
-  @scala.inline
-  def apply(): ModifyAckDeadlineRequest = {
+  inline def apply(): ModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyAckDeadlineRequest]
   }
   
-  @scala.inline
-  implicit class ModifyAckDeadlineRequestMutableBuilder[Self <: ModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyAckDeadlineRequest](x: Self) {
     
-    @scala.inline
-    def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    inline def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
+    inline def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
     
-    @scala.inline
-    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
+    inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
+    inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    @scala.inline
-    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
   }
 }

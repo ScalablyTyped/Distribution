@@ -28,34 +28,25 @@ trait EvaluateOnExit extends StObject {
 }
 object EvaluateOnExit {
   
-  @scala.inline
-  def apply(action: RetryAction): EvaluateOnExit = {
+  inline def apply(action: RetryAction): EvaluateOnExit = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateOnExit]
   }
   
-  @scala.inline
-  implicit class EvaluateOnExitMutableBuilder[Self <: EvaluateOnExit] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluateOnExit](x: Self) {
     
-    @scala.inline
-    def setAction(value: RetryAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RetryAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExitCode(value: String): Self = StObject.set(x, "onExitCode", value.asInstanceOf[js.Any])
+    inline def setOnExitCode(value: String): Self = StObject.set(x, "onExitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExitCodeUndefined: Self = StObject.set(x, "onExitCode", js.undefined)
+    inline def setOnExitCodeUndefined: Self = StObject.set(x, "onExitCode", js.undefined)
     
-    @scala.inline
-    def setOnReason(value: String): Self = StObject.set(x, "onReason", value.asInstanceOf[js.Any])
+    inline def setOnReason(value: String): Self = StObject.set(x, "onReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReasonUndefined: Self = StObject.set(x, "onReason", js.undefined)
+    inline def setOnReasonUndefined: Self = StObject.set(x, "onReason", js.undefined)
     
-    @scala.inline
-    def setOnStatusReason(value: String): Self = StObject.set(x, "onStatusReason", value.asInstanceOf[js.Any])
+    inline def setOnStatusReason(value: String): Self = StObject.set(x, "onStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStatusReasonUndefined: Self = StObject.set(x, "onStatusReason", js.undefined)
+    inline def setOnStatusReasonUndefined: Self = StObject.set(x, "onStatusReason", js.undefined)
   }
 }

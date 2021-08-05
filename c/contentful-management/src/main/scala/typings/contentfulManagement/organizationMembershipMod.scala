@@ -15,11 +15,9 @@ object organizationMembershipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapOrganizationMembership(http: AxiosInstance, data: OrganizationMembershipProps): OrganizationMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[OrganizationMembership]
+  inline def wrapOrganizationMembership(http: AxiosInstance, data: OrganizationMembershipProps): OrganizationMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[OrganizationMembership]
   
-  @scala.inline
-  def wrapOrganizationMembershipCollection(http: AxiosInstance, data: CollectionProp[OrganizationMembershipProps]): Collection[OrganizationMembership, OrganizationMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[OrganizationMembership, OrganizationMembershipProps]]
+  inline def wrapOrganizationMembershipCollection(http: AxiosInstance, data: CollectionProp[OrganizationMembershipProps]): Collection[OrganizationMembership, OrganizationMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[OrganizationMembership, OrganizationMembershipProps]]
   
   trait OrganizationMembership
     extends StObject
@@ -67,8 +65,7 @@ object organizationMembershipMod {
   }
   object OrganizationMembership {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       role: String,
       status: Boolean,
@@ -80,14 +77,11 @@ object organizationMembershipMod {
       __obj.asInstanceOf[OrganizationMembership]
     }
     
-    @scala.inline
-    implicit class OrganizationMembershipMutableBuilder[Self <: OrganizationMembership] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationMembership](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[OrganizationMembership]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[OrganizationMembership]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -110,23 +104,18 @@ object organizationMembershipMod {
   }
   object OrganizationMembershipProps {
     
-    @scala.inline
-    def apply(role: String, status: Boolean, sys: MetaSysProps): OrganizationMembershipProps = {
+    inline def apply(role: String, status: Boolean, sys: MetaSysProps): OrganizationMembershipProps = {
       val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationMembershipProps]
     }
     
-    @scala.inline
-    implicit class OrganizationMembershipPropsMutableBuilder[Self <: OrganizationMembershipProps] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationMembershipProps](x: Self) {
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

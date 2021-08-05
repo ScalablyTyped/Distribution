@@ -14,22 +14,17 @@ trait FieldTest extends StObject {
 }
 object FieldTest {
   
-  @scala.inline
-  def apply(field: Group, test: String, value: Unit): FieldTest = {
+  inline def apply(field: Group, test: String, value: Unit): FieldTest = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldTest]
   }
   
-  @scala.inline
-  implicit class FieldTestMutableBuilder[Self <: FieldTest] (val x: Self) extends AnyVal {
+  extension [Self <: FieldTest](x: Self) {
     
-    @scala.inline
-    def setField(value: Group): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: Group): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

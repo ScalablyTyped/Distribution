@@ -37,8 +37,7 @@ object Location {
     * @param location2 The second location to test.
     * @returns True if both locations are equivalent.
     */
-  @scala.inline
-  def areEqual(
+  inline def areEqual(
     location1: typings.bingmaps.Microsoft.Maps.Location,
     location2: typings.bingmaps.Microsoft.Maps.Location
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEqual")(location1.asInstanceOf[js.Any], location2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -48,22 +47,19 @@ object Location {
     * @param source A Location or Location-like object that contains the same properties.
     * @returns A copy of the map location.
     */
-  @scala.inline
-  def cloneFrom(source: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFrom")(source.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def cloneFrom(source: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFrom")(source.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
   
   /**
     * Normalizes the longitude by wrapping it around the earth.
     * @param longitude The input longitude.
     * @returns The longitude normalized to within -180 and +180.
     */
-  @scala.inline
-  def normalizeLongitude(longitude: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLongitude")(longitude.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def normalizeLongitude(longitude: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLongitude")(longitude.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Parses a location string of the form "lat,long".
     * @param str The location string.
     * @returns The parsed location or null otherwise.
     */
-  @scala.inline
-  def parseLatLong(str: String): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLatLong")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def parseLatLong(str: String): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLatLong")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
 }

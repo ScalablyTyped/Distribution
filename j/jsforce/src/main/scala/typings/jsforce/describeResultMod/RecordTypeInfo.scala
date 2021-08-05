@@ -23,8 +23,7 @@ trait RecordTypeInfo extends StObject {
 }
 object RecordTypeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     available: Boolean,
     defaultRecordTypeMapping: Boolean,
     master: Boolean,
@@ -36,34 +35,24 @@ object RecordTypeInfo {
     __obj.asInstanceOf[RecordTypeInfo]
   }
   
-  @scala.inline
-  implicit class RecordTypeInfoMutableBuilder[Self <: RecordTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RecordTypeInfo](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRecordTypeMapping(value: Boolean): Self = StObject.set(x, "defaultRecordTypeMapping", value.asInstanceOf[js.Any])
+    inline def setDefaultRecordTypeMapping(value: Boolean): Self = StObject.set(x, "defaultRecordTypeMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperName(value: maybe[String]): Self = StObject.set(x, "developerName", value.asInstanceOf[js.Any])
+    inline def setDeveloperName(value: maybe[String]): Self = StObject.set(x, "developerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperNameNull: Self = StObject.set(x, "developerName", null)
+    inline def setDeveloperNameNull: Self = StObject.set(x, "developerName", null)
     
-    @scala.inline
-    def setDeveloperNameUndefined: Self = StObject.set(x, "developerName", js.undefined)
+    inline def setDeveloperNameUndefined: Self = StObject.set(x, "developerName", js.undefined)
     
-    @scala.inline
-    def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordTypeId(value: String): Self = StObject.set(x, "recordTypeId", value.asInstanceOf[js.Any])
+    inline def setRecordTypeId(value: String): Self = StObject.set(x, "recordTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
   }
 }

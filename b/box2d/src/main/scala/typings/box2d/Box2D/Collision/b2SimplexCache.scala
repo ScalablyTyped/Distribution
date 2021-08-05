@@ -28,31 +28,23 @@ trait b2SimplexCache extends StObject {
 }
 object b2SimplexCache {
   
-  @scala.inline
-  def apply(count: Double, indexA: js.Array[Double], indexB: js.Array[Double], metric: Double): b2SimplexCache = {
+  inline def apply(count: Double, indexA: js.Array[Double], indexB: js.Array[Double], metric: Double): b2SimplexCache = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], indexA = indexA.asInstanceOf[js.Any], indexB = indexB.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2SimplexCache]
   }
   
-  @scala.inline
-  implicit class b2SimplexCacheMutableBuilder[Self <: b2SimplexCache] (val x: Self) extends AnyVal {
+  extension [Self <: b2SimplexCache](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexA(value: js.Array[Double]): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
+    inline def setIndexA(value: js.Array[Double]): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexAVarargs(value: Double*): Self = StObject.set(x, "indexA", js.Array(value :_*))
+    inline def setIndexAVarargs(value: Double*): Self = StObject.set(x, "indexA", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexB(value: js.Array[Double]): Self = StObject.set(x, "indexB", value.asInstanceOf[js.Any])
+    inline def setIndexB(value: js.Array[Double]): Self = StObject.set(x, "indexB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexBVarargs(value: Double*): Self = StObject.set(x, "indexB", js.Array(value :_*))
+    inline def setIndexBVarargs(value: Double*): Self = StObject.set(x, "indexB", js.Array(value :_*))
     
-    @scala.inline
-    def setMetric(value: Double): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Double): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
   }
 }

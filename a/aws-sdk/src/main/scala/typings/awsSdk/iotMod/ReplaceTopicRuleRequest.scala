@@ -18,19 +18,15 @@ trait ReplaceTopicRuleRequest extends StObject {
 }
 object ReplaceTopicRuleRequest {
   
-  @scala.inline
-  def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload): ReplaceTopicRuleRequest = {
+  inline def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload): ReplaceTopicRuleRequest = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any], topicRulePayload = topicRulePayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceTopicRuleRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceTopicRuleRequestMutableBuilder[Self <: ReplaceTopicRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceTopicRuleRequest](x: Self) {
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicRulePayload(value: TopicRulePayload): Self = StObject.set(x, "topicRulePayload", value.asInstanceOf[js.Any])
+    inline def setTopicRulePayload(value: TopicRulePayload): Self = StObject.set(x, "topicRulePayload", value.asInstanceOf[js.Any])
   }
 }

@@ -167,20 +167,16 @@ object mod {
   }
   object CommandOptionRegex {
     
-    @scala.inline
-    def apply(callback: () => Unit, regexp: RegExp): CommandOptionRegex = {
+    inline def apply(callback: () => Unit, regexp: RegExp): CommandOptionRegex = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), regexp = regexp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandOptionRegex]
     }
     
-    @scala.inline
-    implicit class CommandOptionRegexMutableBuilder[Self <: CommandOptionRegex] (val x: Self) extends AnyVal {
+    extension [Self <: CommandOptionRegex](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,35 +195,25 @@ object mod {
   trait Events extends StObject
   object Events {
     
-    @scala.inline
-    def end: typings.annyang.annyangStrings.end = "end".asInstanceOf[typings.annyang.annyangStrings.end]
+    inline def end: typings.annyang.annyangStrings.end = "end".asInstanceOf[typings.annyang.annyangStrings.end]
     
-    @scala.inline
-    def error: typings.annyang.annyangStrings.error = "error".asInstanceOf[typings.annyang.annyangStrings.error]
+    inline def error: typings.annyang.annyangStrings.error = "error".asInstanceOf[typings.annyang.annyangStrings.error]
     
-    @scala.inline
-    def errorNetwork: typings.annyang.annyangStrings.errorNetwork = "errorNetwork".asInstanceOf[typings.annyang.annyangStrings.errorNetwork]
+    inline def errorNetwork: typings.annyang.annyangStrings.errorNetwork = "errorNetwork".asInstanceOf[typings.annyang.annyangStrings.errorNetwork]
     
-    @scala.inline
-    def errorPermissionBlocked: typings.annyang.annyangStrings.errorPermissionBlocked = "errorPermissionBlocked".asInstanceOf[typings.annyang.annyangStrings.errorPermissionBlocked]
+    inline def errorPermissionBlocked: typings.annyang.annyangStrings.errorPermissionBlocked = "errorPermissionBlocked".asInstanceOf[typings.annyang.annyangStrings.errorPermissionBlocked]
     
-    @scala.inline
-    def errorPermissionDenied: typings.annyang.annyangStrings.errorPermissionDenied = "errorPermissionDenied".asInstanceOf[typings.annyang.annyangStrings.errorPermissionDenied]
+    inline def errorPermissionDenied: typings.annyang.annyangStrings.errorPermissionDenied = "errorPermissionDenied".asInstanceOf[typings.annyang.annyangStrings.errorPermissionDenied]
     
-    @scala.inline
-    def result: typings.annyang.annyangStrings.result = "result".asInstanceOf[typings.annyang.annyangStrings.result]
+    inline def result: typings.annyang.annyangStrings.result = "result".asInstanceOf[typings.annyang.annyangStrings.result]
     
-    @scala.inline
-    def resultMatch: typings.annyang.annyangStrings.resultMatch = "resultMatch".asInstanceOf[typings.annyang.annyangStrings.resultMatch]
+    inline def resultMatch: typings.annyang.annyangStrings.resultMatch = "resultMatch".asInstanceOf[typings.annyang.annyangStrings.resultMatch]
     
-    @scala.inline
-    def resultNoMatch: typings.annyang.annyangStrings.resultNoMatch = "resultNoMatch".asInstanceOf[typings.annyang.annyangStrings.resultNoMatch]
+    inline def resultNoMatch: typings.annyang.annyangStrings.resultNoMatch = "resultNoMatch".asInstanceOf[typings.annyang.annyangStrings.resultNoMatch]
     
-    @scala.inline
-    def soundstart: typings.annyang.annyangStrings.soundstart = "soundstart".asInstanceOf[typings.annyang.annyangStrings.soundstart]
+    inline def soundstart: typings.annyang.annyangStrings.soundstart = "soundstart".asInstanceOf[typings.annyang.annyangStrings.soundstart]
     
-    @scala.inline
-    def start: typings.annyang.annyangStrings.start = "start".asInstanceOf[typings.annyang.annyangStrings.start]
+    inline def start: typings.annyang.annyangStrings.start = "start".asInstanceOf[typings.annyang.annyangStrings.start]
   }
   
   trait StartOptions extends StObject {
@@ -244,26 +230,20 @@ object mod {
   }
   object StartOptions {
     
-    @scala.inline
-    def apply(): StartOptions = {
+    inline def apply(): StartOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartOptions]
     }
     
-    @scala.inline
-    implicit class StartOptionsMutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StartOptions](x: Self) {
       
-      @scala.inline
-      def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
+      inline def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRestartUndefined: Self = StObject.set(x, "autoRestart", js.undefined)
+      inline def setAutoRestartUndefined: Self = StObject.set(x, "autoRestart", js.undefined)
       
-      @scala.inline
-      def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+      inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+      inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     }
   }
 }

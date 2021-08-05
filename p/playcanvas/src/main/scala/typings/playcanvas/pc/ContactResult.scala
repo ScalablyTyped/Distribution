@@ -25,22 +25,17 @@ trait ContactResult extends StObject {
 }
 object ContactResult {
   
-  @scala.inline
-  def apply(contacts: js.Array[ContactPoint], other: Entity): ContactResult = {
+  inline def apply(contacts: js.Array[ContactPoint], other: Entity): ContactResult = {
     val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactResult]
   }
   
-  @scala.inline
-  implicit class ContactResultMutableBuilder[Self <: ContactResult] (val x: Self) extends AnyVal {
+  extension [Self <: ContactResult](x: Self) {
     
-    @scala.inline
-    def setContacts(value: js.Array[ContactPoint]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: js.Array[ContactPoint]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactsVarargs(value: ContactPoint*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: ContactPoint*): Self = StObject.set(x, "contacts", js.Array(value :_*))
     
-    @scala.inline
-    def setOther(value: Entity): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Entity): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
   }
 }

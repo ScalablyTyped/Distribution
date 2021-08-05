@@ -17,23 +17,17 @@ object resolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createResolver(target: GrpcUri, listener: ResolverListener, options: ChannelOptions): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Resolver]
+  inline def createResolver(target: GrpcUri, listener: ResolverListener, options: ChannelOptions): Resolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Resolver]
   
-  @scala.inline
-  def getDefaultAuthority(target: GrpcUri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAuthority")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDefaultAuthority(target: GrpcUri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAuthority")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def mapUriDefaultScheme(target: GrpcUri): GrpcUri | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("mapUriDefaultScheme")(target.asInstanceOf[js.Any]).asInstanceOf[GrpcUri | Null]
+  inline def mapUriDefaultScheme(target: GrpcUri): GrpcUri | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("mapUriDefaultScheme")(target.asInstanceOf[js.Any]).asInstanceOf[GrpcUri | Null]
   
-  @scala.inline
-  def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
+  inline def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
   
-  @scala.inline
-  def registerDefaultScheme(scheme: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerDefaultScheme(scheme: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResolver")(scheme.asInstanceOf[js.Any], resolverClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResolver")(scheme.asInstanceOf[js.Any], resolverClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Resolver extends StObject {
     
@@ -47,17 +41,14 @@ object resolverMod {
   }
   object Resolver {
     
-    @scala.inline
-    def apply(updateResolution: () => Unit): Resolver = {
+    inline def apply(updateResolution: () => Unit): Resolver = {
       val __obj = js.Dynamic.literal(updateResolution = js.Any.fromFunction0(updateResolution))
       __obj.asInstanceOf[Resolver]
     }
     
-    @scala.inline
-    implicit class ResolverMutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
+    extension [Self <: Resolver](x: Self) {
       
-      @scala.inline
-      def setUpdateResolution(value: () => Unit): Self = StObject.set(x, "updateResolution", js.Any.fromFunction0(value))
+      inline def setUpdateResolution(value: () => Unit): Self = StObject.set(x, "updateResolution", js.Any.fromFunction0(value))
     }
   }
   

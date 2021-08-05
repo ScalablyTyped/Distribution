@@ -37,7 +37,7 @@ object hotkeysEventsMod {
   class HotkeysEvents protected () extends StObject {
     def this(scope: HotkeyScope) = this()
     
-    var actions: js.Any = js.native
+    /* private */ var actions: js.Any = js.native
     
     def clear(): Unit = js.native
     
@@ -47,13 +47,13 @@ object hotkeysEventsMod {
     
     def handleKeyUp(e: KeyboardEvent): Unit = js.native
     
-    var invokeNamedCallbackIfComboRecognized: js.Any = js.native
+    /* private */ var invokeNamedCallbackIfComboRecognized: js.Any = js.native
     
-    var isScope: js.Any = js.native
+    /* private */ var isScope: js.Any = js.native
     
-    var isTextInput: js.Any = js.native
+    /* private */ var isTextInput: js.Any = js.native
     
-    var scope: js.Any = js.native
+    /* private */ var scope: js.Any = js.native
     
     def setHotkeys(props: IHotkeysPropschildrenReacChildren): Unit = js.native
   }
@@ -66,20 +66,16 @@ object hotkeysEventsMod {
   }
   object IHotkeyAction {
     
-    @scala.inline
-    def apply(combo: IKeyCombo, props: IHotkeyProps): IHotkeyAction = {
+    inline def apply(combo: IKeyCombo, props: IHotkeyProps): IHotkeyAction = {
       val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHotkeyAction]
     }
     
-    @scala.inline
-    implicit class IHotkeyActionMutableBuilder[Self <: IHotkeyAction] (val x: Self) extends AnyVal {
+    extension [Self <: IHotkeyAction](x: Self) {
       
-      @scala.inline
-      def setCombo(value: IKeyCombo): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
+      inline def setCombo(value: IKeyCombo): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: IHotkeyProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: IHotkeyProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

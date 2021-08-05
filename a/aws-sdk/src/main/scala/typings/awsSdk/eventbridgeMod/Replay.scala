@@ -53,67 +53,47 @@ trait Replay extends StObject {
 }
 object Replay {
   
-  @scala.inline
-  def apply(): Replay = {
+  inline def apply(): Replay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Replay]
   }
   
-  @scala.inline
-  implicit class ReplayMutableBuilder[Self <: Replay] (val x: Self) extends AnyVal {
+  extension [Self <: Replay](x: Self) {
     
-    @scala.inline
-    def setEventEndTime(value: Timestamp): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
+    inline def setEventEndTime(value: Timestamp): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEndTimeUndefined: Self = StObject.set(x, "EventEndTime", js.undefined)
+    inline def setEventEndTimeUndefined: Self = StObject.set(x, "EventEndTime", js.undefined)
     
-    @scala.inline
-    def setEventLastReplayedTime(value: Timestamp): Self = StObject.set(x, "EventLastReplayedTime", value.asInstanceOf[js.Any])
+    inline def setEventLastReplayedTime(value: Timestamp): Self = StObject.set(x, "EventLastReplayedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLastReplayedTimeUndefined: Self = StObject.set(x, "EventLastReplayedTime", js.undefined)
+    inline def setEventLastReplayedTimeUndefined: Self = StObject.set(x, "EventLastReplayedTime", js.undefined)
     
-    @scala.inline
-    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+    inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+    inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
-    @scala.inline
-    def setEventStartTime(value: Timestamp): Self = StObject.set(x, "EventStartTime", value.asInstanceOf[js.Any])
+    inline def setEventStartTime(value: Timestamp): Self = StObject.set(x, "EventStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStartTimeUndefined: Self = StObject.set(x, "EventStartTime", js.undefined)
+    inline def setEventStartTimeUndefined: Self = StObject.set(x, "EventStartTime", js.undefined)
     
-    @scala.inline
-    def setReplayEndTime(value: Timestamp): Self = StObject.set(x, "ReplayEndTime", value.asInstanceOf[js.Any])
+    inline def setReplayEndTime(value: Timestamp): Self = StObject.set(x, "ReplayEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplayEndTimeUndefined: Self = StObject.set(x, "ReplayEndTime", js.undefined)
+    inline def setReplayEndTimeUndefined: Self = StObject.set(x, "ReplayEndTime", js.undefined)
     
-    @scala.inline
-    def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
+    inline def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplayNameUndefined: Self = StObject.set(x, "ReplayName", js.undefined)
+    inline def setReplayNameUndefined: Self = StObject.set(x, "ReplayName", js.undefined)
     
-    @scala.inline
-    def setReplayStartTime(value: Timestamp): Self = StObject.set(x, "ReplayStartTime", value.asInstanceOf[js.Any])
+    inline def setReplayStartTime(value: Timestamp): Self = StObject.set(x, "ReplayStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplayStartTimeUndefined: Self = StObject.set(x, "ReplayStartTime", js.undefined)
+    inline def setReplayStartTimeUndefined: Self = StObject.set(x, "ReplayStartTime", js.undefined)
     
-    @scala.inline
-    def setState(value: ReplayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ReplayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: ReplayStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: ReplayStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

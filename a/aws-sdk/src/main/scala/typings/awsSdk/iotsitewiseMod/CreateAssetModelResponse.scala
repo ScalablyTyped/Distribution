@@ -23,22 +23,17 @@ trait CreateAssetModelResponse extends StObject {
 }
 object CreateAssetModelResponse {
   
-  @scala.inline
-  def apply(assetModelArn: ARN, assetModelId: ID, assetModelStatus: AssetModelStatus): CreateAssetModelResponse = {
+  inline def apply(assetModelArn: ARN, assetModelId: ID, assetModelStatus: AssetModelStatus): CreateAssetModelResponse = {
     val __obj = js.Dynamic.literal(assetModelArn = assetModelArn.asInstanceOf[js.Any], assetModelId = assetModelId.asInstanceOf[js.Any], assetModelStatus = assetModelStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssetModelResponse]
   }
   
-  @scala.inline
-  implicit class CreateAssetModelResponseMutableBuilder[Self <: CreateAssetModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAssetModelResponse](x: Self) {
     
-    @scala.inline
-    def setAssetModelArn(value: ARN): Self = StObject.set(x, "assetModelArn", value.asInstanceOf[js.Any])
+    inline def setAssetModelArn(value: ARN): Self = StObject.set(x, "assetModelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
+    inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelStatus(value: AssetModelStatus): Self = StObject.set(x, "assetModelStatus", value.asInstanceOf[js.Any])
+    inline def setAssetModelStatus(value: AssetModelStatus): Self = StObject.set(x, "assetModelStatus", value.asInstanceOf[js.Any])
   }
 }

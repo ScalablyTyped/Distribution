@@ -22,8 +22,7 @@ trait IPropertyDefAdmin extends StObject {
 }
 object IPropertyDefAdmin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowAutomaticPermissions: Boolean,
     AutomaticValue: IAutomaticValue,
     Clone: () => IPropertyDefAdmin,
@@ -36,28 +35,20 @@ object IPropertyDefAdmin {
     __obj.asInstanceOf[IPropertyDefAdmin]
   }
   
-  @scala.inline
-  implicit class IPropertyDefAdminMutableBuilder[Self <: IPropertyDefAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyDefAdmin](x: Self) {
     
-    @scala.inline
-    def setAllowAutomaticPermissions(value: Boolean): Self = StObject.set(x, "AllowAutomaticPermissions", value.asInstanceOf[js.Any])
+    inline def setAllowAutomaticPermissions(value: Boolean): Self = StObject.set(x, "AllowAutomaticPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticValue(value: IAutomaticValue): Self = StObject.set(x, "AutomaticValue", value.asInstanceOf[js.Any])
+    inline def setAutomaticValue(value: IAutomaticValue): Self = StObject.set(x, "AutomaticValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IPropertyDefAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyDefAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNamedValueNamespaces(value: INamedValueNamespaces): Self = StObject.set(x, "NamedValueNamespaces", value.asInstanceOf[js.Any])
+    inline def setNamedValueNamespaces(value: INamedValueNamespaces): Self = StObject.set(x, "NamedValueNamespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDef(value: IPropertyDef): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
+    inline def setPropertyDef(value: IPropertyDef): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
+    inline def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidation(value: IValidation): Self = StObject.set(x, "Validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: IValidation): Self = StObject.set(x, "Validation", value.asInstanceOf[js.Any])
   }
 }

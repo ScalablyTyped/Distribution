@@ -14,25 +14,19 @@ trait VpnGatewayStatusHighAvailabilityRequirementState extends StObject {
 }
 object VpnGatewayStatusHighAvailabilityRequirementState {
   
-  @scala.inline
-  def apply(): VpnGatewayStatusHighAvailabilityRequirementState = {
+  inline def apply(): VpnGatewayStatusHighAvailabilityRequirementState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnGatewayStatusHighAvailabilityRequirementState]
   }
   
-  @scala.inline
-  implicit class VpnGatewayStatusHighAvailabilityRequirementStateMutableBuilder[Self <: VpnGatewayStatusHighAvailabilityRequirementState] (val x: Self) extends AnyVal {
+  extension [Self <: VpnGatewayStatusHighAvailabilityRequirementState](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUnsatisfiedReason(value: String): Self = StObject.set(x, "unsatisfiedReason", value.asInstanceOf[js.Any])
+    inline def setUnsatisfiedReason(value: String): Self = StObject.set(x, "unsatisfiedReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsatisfiedReasonUndefined: Self = StObject.set(x, "unsatisfiedReason", js.undefined)
+    inline def setUnsatisfiedReasonUndefined: Self = StObject.set(x, "unsatisfiedReason", js.undefined)
   }
 }

@@ -33,15 +33,11 @@ object mod {
   @js.native
   val ROUTINE_PROMISE_ACTION: String = js.native
   
-  @scala.inline
-  def bindPromiseCreators(promiseCreators: NumberDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): NumberDictionary[BoundPromiseCreator[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[NumberDictionary[BoundPromiseCreator[js.Object]]]
-  @scala.inline
-  def bindPromiseCreators(promiseCreators: StringDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): StringDictionary[BoundPromiseCreator[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[BoundPromiseCreator[js.Object]]]
-  @scala.inline
-  def bindPromiseCreators[TPayload](promiseCreator: PromiseCreator[TPayload], dispatch: Dispatch[AnyAction]): BoundPromiseCreator[TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[BoundPromiseCreator[TPayload]]
+  inline def bindPromiseCreators(promiseCreators: NumberDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): NumberDictionary[BoundPromiseCreator[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[NumberDictionary[BoundPromiseCreator[js.Object]]]
+  inline def bindPromiseCreators(promiseCreators: StringDictionary[PromiseCreator[js.Object]], dispatch: Dispatch[AnyAction]): StringDictionary[BoundPromiseCreator[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[BoundPromiseCreator[js.Object]]]
+  inline def bindPromiseCreators[TPayload](promiseCreator: PromiseCreator[TPayload], dispatch: Dispatch[AnyAction]): BoundPromiseCreator[TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindPromiseCreators")(promiseCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[BoundPromiseCreator[TPayload]]
   
-  @scala.inline
-  def bindRoutineToReduxForm[TFormData, TProps](
+  inline def bindRoutineToReduxForm[TFormData, TProps](
     routine: Routine[
       ActionFunction1[
         ReduxFormPayload[TFormData, TProps], 
@@ -53,8 +49,7 @@ object mod {
       ActionCreatorFunction[js.Any, js.Any]
     ]
   ): FormSubmitHandler[TFormData, TProps, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindRoutineToReduxForm")(routine.asInstanceOf[js.Any]).asInstanceOf[FormSubmitHandler[TFormData, TProps, String]]
-  @scala.inline
-  def bindRoutineToReduxForm[TFormData, TProps](
+  inline def bindRoutineToReduxForm[TFormData, TProps](
     routine: Routine[
       ActionFunction1[
         ReduxFormPayload[TFormData, TProps], 
@@ -68,40 +63,29 @@ object mod {
     noSuccessPayload: Boolean
   ): FormSubmitHandler[TFormData, TProps, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindRoutineToReduxForm")(routine.asInstanceOf[js.Any], noSuccessPayload.asInstanceOf[js.Any])).asInstanceOf[FormSubmitHandler[TFormData, TProps, String]]
   
-  @scala.inline
-  def createRoutine[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any]).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]]]
-  @scala.inline
-  def createRoutine[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
-  @scala.inline
-  def createRoutine[Meta](typePrefix: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
-  @scala.inline
-  def createRoutine[Payload](typePrefix: String, payloadCreator: ActionFunction0[Payload]): UnifiedRoutine[ActionFunction0[Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction0[Action[Payload]]]]
-  @scala.inline
-  def createRoutine[Payload, Arg1](typePrefix: String, payloadCreator: ActionFunction1[Arg1, Payload]): UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]]]
-  @scala.inline
-  def createRoutine[Payload, Meta](
+  inline def createRoutine[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any]).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]]]
+  inline def createRoutine[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
+  inline def createRoutine[Meta](typePrefix: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
+  inline def createRoutine[Payload](typePrefix: String, payloadCreator: ActionFunction0[Payload]): UnifiedRoutine[ActionFunction0[Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction0[Action[Payload]]]]
+  inline def createRoutine[Payload, Arg1](typePrefix: String, payloadCreator: ActionFunction1[Arg1, Payload]): UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]]]
+  inline def createRoutine[Payload, Meta](
     typePrefix: String,
     payloadCreator: ActionFunctionAny[Payload],
     metaCreator: ActionFunctionAny[Meta]
   ): UnifiedRoutine[ActionFunctionAny[ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunctionAny[ActionMeta[Payload, Meta]]]]
-  @scala.inline
-  def createRoutine[Payload, Meta, Arg1](
+  inline def createRoutine[Payload, Meta, Arg1](
     typePrefix: String,
     payloadCreator: ActionFunction1[Arg1, Payload],
     metaCreator: ActionFunction1[Arg1, Meta]
   ): UnifiedRoutine[ActionFunction1[Arg1, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction1[Arg1, ActionMeta[Payload, Meta]]]]
-  @scala.inline
-  def createRoutine[Payload, Arg1, Arg2](typePrefix: String, payloadCreator: ActionFunction2[Arg1, Arg2, Payload]): UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]]]
-  @scala.inline
-  def createRoutine[Payload, Meta, Arg1, Arg2](
+  inline def createRoutine[Payload, Arg1, Arg2](typePrefix: String, payloadCreator: ActionFunction2[Arg1, Arg2, Payload]): UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction2[Arg1, Arg2, Action[Payload]]]]
+  inline def createRoutine[Payload, Meta, Arg1, Arg2](
     typePrefix: String,
     payloadCreator: ActionFunction2[Arg1, Arg2, Payload],
     metaCreator: ActionFunction2[Arg1, Arg2, Meta]
   ): UnifiedRoutine[ActionFunction2[Arg1, Arg2, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction2[Arg1, Arg2, ActionMeta[Payload, Meta]]]]
-  @scala.inline
-  def createRoutine[Payload, Arg1, Arg2, Arg3](typePrefix: String, payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload]): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]]]
-  @scala.inline
-  def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
+  inline def createRoutine[Payload, Arg1, Arg2, Arg3](typePrefix: String, payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload]): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]]]
+  inline def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: Null,
     metaCreator: FULFILL[
@@ -194,8 +178,7 @@ object mod {
       ResolveFunctionArg4Type[TFulfillMetaCreator]
     ]
   ]]
-  @scala.inline
-  def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
+  inline def createRoutine[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: Unit,
     metaCreator: FULFILL[
@@ -288,16 +271,13 @@ object mod {
       ResolveFunctionArg4Type[TFulfillMetaCreator]
     ]
   ]]
-  @scala.inline
-  def createRoutine[Payload, Meta, Arg1, Arg2, Arg3](
+  inline def createRoutine[Payload, Meta, Arg1, Arg2, Arg3](
     typePrefix: String,
     payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload],
     metaCreator: ActionFunction3[Arg1, Arg2, Arg3, Meta]
   ): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, ActionMeta[Payload, Meta]]]]
-  @scala.inline
-  def createRoutine[Payload, Arg1, Arg2, Arg3, Arg4](typePrefix: String, payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload]): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]]]
-  @scala.inline
-  def createRoutine[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](
+  inline def createRoutine[Payload, Arg1, Arg2, Arg3, Arg4](typePrefix: String, payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload]): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, Action[Payload]]]]
+  inline def createRoutine[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](
     typePrefix: String,
     payloadCreator: FAILURE_[
       TTriggerPayloadCreator, 
@@ -389,14 +369,12 @@ object mod {
       ResolveFunctionArg4Type[TFulfillPayloadCreator]
     ]
   ]]
-  @scala.inline
-  def createRoutine[Payload, Meta, Arg1, Arg2, Arg3, Arg4](
+  inline def createRoutine[Payload, Meta, Arg1, Arg2, Arg3, Arg4](
     typePrefix: String,
     payloadCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Payload],
     metaCreator: ActionFunction4[Arg1, Arg2, Arg3, Arg4, Meta]
   ): UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction4[Arg1, Arg2, Arg3, Arg4, ActionMeta[Payload, Meta]]]]
-  @scala.inline
-  def createRoutine[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
+  inline def createRoutine[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: FAILURE_[
       TTriggerPayloadCreator, 
@@ -516,11 +494,9 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def promisifyRoutine(routine: RoutineActionCreatorFunct): PromiseCreator[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyRoutine")(routine.asInstanceOf[js.Any]).asInstanceOf[PromiseCreator[js.Object]]
+  inline def promisifyRoutine(routine: RoutineActionCreatorFunct): PromiseCreator[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyRoutine")(routine.asInstanceOf[js.Any]).asInstanceOf[PromiseCreator[js.Object]]
   
-  @scala.inline
-  def routinePromiseWatcherSaga(): IterableIterator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("routinePromiseWatcherSaga")().asInstanceOf[IterableIterator[js.Any]]
+  inline def routinePromiseWatcherSaga(): IterableIterator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("routinePromiseWatcherSaga")().asInstanceOf[IterableIterator[js.Any]]
   
   type ActionCreatorFunction[Payload, Meta] = ActionFunctionAny[Action[Payload] | (ActionMeta[Payload, Meta])]
   
@@ -536,20 +512,16 @@ object mod {
   }
   object ReduxFormPayload {
     
-    @scala.inline
-    def apply[TFormData, TProps](props: TProps, values: TFormData): ReduxFormPayload[TFormData, TProps] = {
+    inline def apply[TFormData, TProps](props: TProps, values: TFormData): ReduxFormPayload[TFormData, TProps] = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReduxFormPayload[TFormData, TProps]]
     }
     
-    @scala.inline
-    implicit class ReduxFormPayloadMutableBuilder[Self <: ReduxFormPayload[?, ?], TFormData, TProps] (val x: Self & (ReduxFormPayload[TFormData, TProps])) extends AnyVal {
+    extension [Self <: ReduxFormPayload[?, ?], TFormData, TProps](x: Self & (ReduxFormPayload[TFormData, TProps])) {
       
-      @scala.inline
-      def setProps(value: TProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: TProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: TFormData): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: TFormData): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -587,20 +559,15 @@ object mod {
   trait RoutineStages extends StObject
   object RoutineStages {
     
-    @scala.inline
-    def FAILURE: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FAILURE = "FAILURE".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FAILURE]
+    inline def FAILURE: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FAILURE = "FAILURE".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FAILURE]
     
-    @scala.inline
-    def FULFILL: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FULFILL = "FULFILL".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FULFILL]
+    inline def FULFILL: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FULFILL = "FULFILL".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.FULFILL]
     
-    @scala.inline
-    def REQUEST: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.REQUEST = "REQUEST".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.REQUEST]
+    inline def REQUEST: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.REQUEST = "REQUEST".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.REQUEST]
     
-    @scala.inline
-    def SUCCESS: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.SUCCESS]
+    inline def SUCCESS: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.SUCCESS]
     
-    @scala.inline
-    def TRIGGER: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.TRIGGER = "TRIGGER".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.TRIGGER]
+    inline def TRIGGER: typings.reduxSagaRoutines.reduxSagaRoutinesStrings.TRIGGER = "TRIGGER".asInstanceOf[typings.reduxSagaRoutines.reduxSagaRoutinesStrings.TRIGGER]
   }
   
   type UnifiedRoutine[TActionCreator] = Routine[TActionCreator, TActionCreator, TActionCreator, TActionCreator, TActionCreator]
